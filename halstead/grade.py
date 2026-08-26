@@ -365,14 +365,24 @@ def numbers():
     print(run("number_report.py", BOOK))
 
 
+def constructions():
+    rule("6. REPEATED CONSTRUCTIONS, AGAINST THE CORPUS")
+    print(run("tics.py"))
+
+
+def absolutes():
+    rule("7. ABSOLUTE WORDS")
+    print(run("absolutes.py"))
+
+
 def voice():
-    rule("6. VOICE SEPARATION")
+    rule("8. VOICE SEPARATION")
     print(run("voice_separation.py", "--prose"))
     print(run("voice_separation.py", "--chat"))
 
 
 def integrity():
-    rule("7. INTEGRITY")
+    rule("9. INTEGRITY")
     for label, script, args in (
             ("Character-sheet quotations not found in the manuscript",
              "verify_citations.py", ()),
@@ -381,10 +391,71 @@ def integrity():
             ("Em dashes and the hard-line-break convention",
              "check_edits.py", ())):
         out = run(script, *args)
-        tail = [l for l in out.split("\n") if l.strip()][-3:]
+        lines = [l for l in out.split("\n") if l.strip()]
         print(f"\n  {label}")
-        for l in tail:
+        for l in lines:
             print(f"    {l}")
+
+
+class Tee:
+    """Print a section and keep it, so the scorecard can read what failed."""
+
+    def __init__(self):
+        self.lines = []
+
+    def run(self, fn):
+        import contextlib
+        import io
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            fn()
+        out = buf.getvalue()
+        print(out, end="")
+        self.lines.extend(out.split("\n"))
+
+
+# A measure has failed if one of these appears on its line. Each script says
+# so in its own words, which is why this is a list rather than one pattern.
+FAIL_MARKERS = (
+    r"\bFAIL\b",
+    r":\s*(?:UNDER|OVER)\b",
+    r"\bCUT \d+%",
+    r"^\s*\d+ \(",            # the band table's under-floor chapters
+    r"[1-9]\d* problem\(s\)",
+    r"[1-9]\d* not found in the manuscript",
+    r"^\s*[1-9]\d* flagged across",
+    r"\bover corpus max\b",
+    r"\bof \d+ still over target",
+)
+
+SKIP = (r"^\s*0 problem", r"^\s*0 flagged", r"0 not found")
+
+
+def scorecard(seen):
+    """One list of everything that did not pass, so nothing hides in 500 lines."""
+    rule("SCORECARD: WHAT IS STILL PASSING, AND WHAT IS NOT")
+    bad, context = [], ""
+    for line in seen:
+        s = line.rstrip()
+        if not s.strip():
+            continue
+        if re.match(r"^\d+\. [A-Z]", s.strip()):
+            context = s.strip()
+            continue
+        if any(re.search(p, s) for p in SKIP):
+            continue
+        if any(re.search(p, s) for p in FAIL_MARKERS):
+            bad.append((context, s.strip()))
+    if not bad:
+        print("\n  nothing failing.\n")
+        return
+    last = None
+    for ctx, line in bad:
+        if ctx != last:
+            print(f"\n  {ctx or 'unsectioned'}")
+            last = ctx
+        print(f"    {line}")
+    print(f"\n  {len(bad)} measures not passing.\n")
 
 
 def main():
@@ -404,19 +475,22 @@ def main():
     if not BOOK.exists():
         sys.exit(f"{BOOK.name} is missing; run build_manuscript.py first")
 
-    table()
+    tee = Tee()
+    tee.run(table)
     if a.table:
         return
-    targets()
+    tee.run(targets)
     if a.targets:
         return
-    grade_vs_corpus()
-    dialogue()
-    numbers()
+    tee.run(grade_vs_corpus)
+    tee.run(dialogue)
+    tee.run(numbers)
+    tee.run(constructions)
+    tee.run(absolutes)
     if not a.brief:
-        voice()
-    integrity()
-    print()
+        tee.run(voice)
+    tee.run(integrity)
+    scorecard(tee.lines)
 
 
 if __name__ == "__main__":

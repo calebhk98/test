@@ -22,7 +22,7 @@ They stay a couple of hours, long enough for Sam to want to know whether the den
 
 "I'd act like it was a secret if it were my car. I'd have a whole story ready for anyone who noticed it. Different story every time."
 
-"You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour. You'd have charged," Ruth says.
+Ruth says, "You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour. You'd have charged."
 
 The coffee cup goes a quarter turn on the table under her hand, and then another.
 
@@ -62,7 +62,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "Say a sentence with it in that comes from somewhere other than a play, then, if it's so ordinary."
 
-"Hither, thither, and yon," Sam says. "That's three sentences, and you only asked for one, so I win twice over."
+"Hither, thither, and yon," Sam says. "That's three sentences, but you only asked for one, so I win twice over."
 
 "You just said hither yourself, not even a moment ago, which is the whole argument, right there, coming out of your own mouth."
 
@@ -78,9 +78,9 @@ The men come out a few blocks later, between two parked cars, seven of them in a
 
 Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense. She puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley. She's choosing between them when Sam says it.
 
-"Hang on," Sam says. "Let me have this one."
+Sam says, "Hang on. Let me have this one."
 
-"They're adults." Ruth stays put. "Three guns."
+Ruth stays put. "They're adults. Three guns."
 
 "There's seven of them, and I'm basically one myself. That's fair." He is already unhooking his thumbs from his pockets. "I've fought people my whole life. None of them were adults, and none of them were strangers."
 
@@ -108,11 +108,11 @@ He finds the third gun on a man who spent the whole fight standing back, takes i
 
 "Should we report them to the police?" Ruth says.
 
-"Sure." Nadia keeps her eyes on the man in front of her. "And then there's a police report with four names on it, and the school reads it, and everybody finds out we went over the fence. That's not detention. That's home, and not coming back."
+Nadia keeps her eyes on the man in front of her. "Sure. And then there's a police report with four names on it, and the school reads it, and everybody finds out we went over the fence. That's not detention. That's home, and not coming back."
 
 "What if they report it?"
 
-"They're going to walk into a station and say what?" Nadia stands, wiping her hands down her jeans. "That somebody robbed them of a robbery?"
+Nadia stands, wiping her hands down her jeans. "They're going to walk into a station and say what? That somebody robbed them of a robbery?"
 
 Ruth stands. "Then that's it."
 
@@ -126,21 +126,21 @@ Sam hasn't moved. He is looking at the seven of them on the ground the way you l
 
 "No, Ruth, I mean that was nothing. Like, literally, not that it took a little effort, it took nothing. Even if it was only seven, it should have taken something. I should have gotten some experience, gotten hit once, they could have fired once. I mean, they're seven adults, Ruth. Why was it nothing?"
 
-"It was going to be nothing," Chloe says. "You could see it from where we were standing."
+Chloe says, "It was going to be nothing. You could see it from where we were standing."
 
 Sam looks up. "How."
 
-"They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, and they stood like that the whole way in." She counts it off flat, not unkindly. "None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers."
+She counts it off flat, not unkindly. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, and they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers."
 
 Nadia stops with her hand on the fence. "What's that got to do with it?"
 
-"If you had one usable skill," Chloe says, "any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning; that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
+Chloe says, "If you had one usable skill, any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning; that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
 
 Sam takes it in silence for a second.
 
 "The guns are supposed to make it harder, since that's the whole point of carrying it in the first place," he says.
 
-"A gun's a prop unless you actually use it, and all of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it. She shrugs. "They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
+Ruth has her bag back on her shoulder and the strap settled across it, and shrugs. "A gun's a prop unless you actually use it, but all of them just stood there holding theirs. They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
 
 "Fine, say that was too easy." Sam puts his hands up and lets them drop again. "So who do I actually fight, then?"
 
@@ -148,15 +148,15 @@ Sam takes it in silence for a second.
 
 Sam stops walking altogether, a foot off the kerb. "What, are you actually serious right now?"
 
-"She's fifty, for a start," Ruth says. "She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
+Ruth says, "She's fifty, for a start. She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
 
-"That's thirty-four years of being in situations," Nadia says, "against your sixteen, most of which were spent at school."
+Nadia says, "That's thirty-four years of being in situations, against your sixteen, most of which were spent at school."
 
 Sam thinks about it for a good deal longer than the joke needs, and then answers it straight. "She'd take me apart before I even got a hand up, and everyone here knows it."
 
-"The waitress would take you apart," Nadia agrees, "and she wouldn't even set the coffee pot down to do it."
+Nadia agrees, "The waitress would take you apart, and she wouldn't even set the coffee pot down to do it."
 
-"Any of us could say the same, not just him," Ruth says, "and she'd probably enjoy it, too."
+Ruth says, "Any of us could say the same, not just him, and she'd probably enjoy it, too."
 
 Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
 

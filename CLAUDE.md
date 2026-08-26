@@ -31,7 +31,7 @@ Run from `halstead/`.
 
 | script | question |
 | --- | --- |
-| `grade.py` | everything below, in one report. Start here. |
+| `grade.py` | everything below, in one report, ending in a scorecard of every measure that is not passing. Start here, and read the scorecard first. |
 | `build_manuscript.py` | regenerate `HALSTEAD.md` from `chapters/` |
 | `check_edits.py` | em dashes, curly quotes, the paragraph convention, word count |
 | `prose_grade.py` | per-chapter reading grade, Lexile, sentence and paragraph shape |
@@ -44,9 +44,17 @@ Run from `halstead/`.
 | `prose_check.py` | verdict language in the character sheets |
 | `verify_citations.py` | quotations in reference docs against the chapters |
 
+Every script above is called by `grade.py`. Nothing measures anything unless it
+is in that report: `style_report.py` held the conjunction rates and the tic scan
+for weeks while nothing called it, and 74 trailing explanatory clauses collected
+without anyone seeing a number.
+
 **Run the measures after a pass, not only before one.** An earlier pass in this
 repository lowered the corpus maturity score from 91 to 83 and nobody noticed
-until the author asked.
+until the author asked. Another broke long sentences into short ones and pushed
+`sentence opens She/He + verb` from 123 to 203 per 100,000 against a target of
+120. A pass is not finished until `grade.py` has run and the scorecard is no
+worse than it was.
 
 ## Character sheets
 

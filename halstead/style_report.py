@@ -276,37 +276,98 @@ CORPUS_NOTE = {'and': 'corpus 2.29 to 5.09, median 3.34',
 
 
 def summarise(paths):
-    """The conjunction table and tic counts for the whole book, one block."""
+    """Every measure in this script, over the whole book, in one block.
+
+    report() prints the same measures for one chapter and then lists every tic
+    hit, which runs to hundreds of lines across thirty-six chapters. This is
+    the same content with the tics counted rather than listed, so grade.py can
+    carry it.
+    """
     text = '\n'.join(load(p) for p in paths)
     body = '\n'.join(l for l in text.split('\n') if not l.startswith('#'))
+    all_paras = paras_of(body)
+    sents_all = [s for p_ in all_paras for s in sents(p_)]
+    sl = [len(words(s)) for s in sents_all]
+    spp = [len(sents(p_)) for p_ in all_paras]
+    wl = [len(x) for x in words(body)]
     w = [x.lower() for x in words(body)]
     n = len(w)
     counts = Counter(w)
 
-    print("\n  conjunction     count      rate    target            ")
-    print("  " + "-" * 62)
+    def verdict(ok):
+        return 'ok' if ok else 'FAIL'
+
+    print(f"\n  {len(w):,} words   {len(all_paras):,} paragraphs   "
+          f"{len(sents_all):,} sentences")
+
+    mo = Counter(sl).most_common(1)[0][0]
+    me, mn, sd = median(sl), fmean(sl), stdev(sl)
+    cv = 100 * sd / mn
+    print("\n  WORDS PER SENTENCE")
+    print(f"    mode {mo}   median {me:g}   mean {mn:.2f}   sd {sd:.2f}   "
+          f"CV {cv:.1f}%   max {max(sl)}")
+    print(f"    mode<median<mean {verdict(mo < me < mn):<6}"
+          f"mean 11-18 {verdict(11 <= mn <= 18):<6}"
+          f"CV 68-100% {verdict(68 <= cv <= 100)}")
+    for name, f_, lo, hi in [('under 10', lambda v: v < 10, 35, 45),
+                             ('10-20', lambda v: 10 <= v < 20, 30, 35),
+                             ('20-35', lambda v: 20 <= v <= 35, 15, 20),
+                             ('over 35', lambda v: v > 35, 0, 5)]:
+        pct = 100 * sum(1 for v in sl if f_(v)) / len(sl)
+        print(f"    {name:<10}{pct:>6.1f}%   target {lo}-{hi}%   "
+              f"{verdict(lo <= pct <= hi)}")
+
+    qw = sum(len(words(m)) for m in re.findall(r'"([^"]+)"', body))
+    print(f"\n  QUOTED  {100 * qw / n:.1f}%   target ~30%")
+
+    sp = [len(words(s)) for s in sents_all if s.lstrip().startswith('"')]
+    na = [len(words(s)) for s in sents_all if not s.lstrip().startswith('"')]
+    print("\n  SPOKEN vs NARRATION")
+    if sp:
+        print(f"    spoken     mean {fmean(sp):5.2f} words  ({len(sp):5d} sentences)")
+    if na:
+        print(f"    narration  mean {fmean(na):5.2f} words  ({len(na):5d} sentences)")
+        short = 100 * sum(1 for v in na if v < 10) / len(na)
+        print(f"    narration under 10 words  {short:.1f}%   target <40%   "
+              f"{verdict(short < 40)}")
+
+    print(f"\n  SENTENCES PER PARAGRAPH  mean {fmean(spp):.2f}   "
+          f"median {median(spp):g}   max {max(spp)}")
+    print(f"    {'bucket':>8}{'this':>8}{'YA':>8}")
+    for name, f_, ya in [('1', lambda v: v == 1, 36.7), ('2', lambda v: v == 2, 24.0),
+                         ('3', lambda v: v == 3, 15.1), ('4', lambda v: v == 4, 8.0),
+                         ('5', lambda v: v == 5, 5.9),
+                         ('6-7', lambda v: 6 <= v <= 7, 5.3),
+                         ('8-9', lambda v: 8 <= v <= 9, 2.2),
+                         ('10+', lambda v: v >= 10, 2.8)]:
+        print(f"    {name:>8}{100 * sum(1 for v in spp if f_(v)) / len(spp):>7.1f}%"
+              f"{ya:>7.1f}%")
+
+    print(f"\n  WORD LENGTH  mean {fmean(wl):.2f}   "
+          f"7+ chars {100 * sum(1 for x in wl if x >= 7) / len(wl):.1f}%")
+
+    print("\n  CONJUNCTIONS")
     for k, lo, hi in CONJ_TARGET:
         pct = 100 * counts[k] / n
-        verdict = 'ok' if lo <= pct <= hi else 'FAIL'
-        note = CORPUS_NOTE.get(k, '')
-        print(f"  {k:<12}{counts[k]:>7}{pct:>10.2f}%   {lo}-{hi}%   "
-              f"{verdict:<6}{note}")
-    all_paras = paras_of(body)
-    sents_all = [s for p_ in all_paras for s in sents(p_)]
-    # Rule 1 governs the narrator. A character explaining something to another
-    # character is dialogue and is allowed, so the quoted spans come out of
-    # each sentence and the tics are matched on what is left.
-    narration = [re.sub(r'"[^"]*"', ' ', s) for s in sents_all]
+        print(f"    {k:<10}{counts[k]:>7}{pct:>9.2f}%   target {lo}-{hi}%   "
+              f"{verdict(lo <= pct <= hi):<6}{CORPUS_NOTE.get(k, '')}")
     multi = sum(1 for s in sents_all
                 if len(re.findall(r'\band\b', s.lower())) >= 2)
-    print(f"  {'2+ and':<12}{multi:>7}{100 * multi / len(sents_all):>10.1f}%   "
-          f"under 10%   {'ok' if 100 * multi / len(sents_all) < 10 else 'FAIL'}")
+    mpct = 100 * multi / len(sents_all)
+    print(f"    {'2+ and':<10}{multi:>7}{mpct:>9.1f}%   target <10%    "
+          f"{verdict(mpct < 10)}")
 
-    print("\n  tic scan, narration only (quoted spans removed)")
+    breaks = len([x for x in text.split('\n') if set(x.strip()) == {'_'}])
+    print(f"\n  SECTION BREAKS  {breaks} across {len(paths)} chapters   "
+          f"target 2-6 each")
+
+    # Rule 1 governs the narrator, so quoted spans come out before matching.
+    narration = [re.sub(r'"[^"]*"', ' ', s) for s in sents_all]
+    print("\n  TIC SCAN, narration only (quoted spans removed)")
     for rx, name in TICS:
         hits = sum(1 for s in narration if re.search(rx, s, re.I))
         if hits:
-            print(f"    {name:<38}{hits:>5}")
+            print(f"    {name:<40}{hits:>5}")
 
 
 def paras_of(body):

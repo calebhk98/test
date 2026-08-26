@@ -22,11 +22,11 @@ In August her mom is standing at the counter sorting through the mail, while Chl
 
 "From camp. He was in my class the whole month and built the bridge with me. And he swims two lengths straight through."
 
-"Oh, of course we can call him, honey, that's no trouble at all," her mom says, putting the envelope down and looking pleased about it in a way that puzzles Chloe. "What's his number?"
+"Oh, of course we can call him, honey, that's no trouble at all. What's his number," her mom says, putting the envelope down and looking pleased about it in a way that puzzles Chloe.
 
 Chloe's mouth opens, then stays open a beat too long. "A number was extra. I always just asked him myself, in person."
 
-"That's all right, we can look him up, because everybody is in the book," her mom says, getting the phone book out from under the microwave and opening it on the counter while she looks at Chloe. "What's his last name, sweetie, since that will get us there faster than the first name will?"
+"That's all right, we can look him up, because everybody is in the book. What's his last name, sweetie, since that will get us there faster than the first name will," her mom says, getting the phone book out from under the microwave and opening it on the counter while she looks at Chloe.
 
 Chloe opens her mouth, then closes it, and goes upstairs to sit on the end of her bed and try to remember. Sam says the "and a half" after his age every time; sleeps with his window open, which he mentioned more than once; has a sister, or possibly a cousin, who plays soccer, though she is still unsure which; swims two lengths straight through, a fact that came up at dinner most days for a month; and thinks he is funny, which she can still hear, the short bark of it and then his hand over his mouth.
 
@@ -50,7 +50,7 @@ Her mom's eyes come up. "It's OK, the last names can go, because we can just ask
 
 Somebody at the school picks up on the second ring, and Chloe gets close, straining to hear. Her mom gives their name, then Chloe's, confirms yes, that's her, and settles into a long stretch of listening, her weight going onto one foot and then the other.
 
-"Right, no, I understand that," she says, and listens again. "What I'm asking instead is whether it can go the other way, so that if I give you our number you can pass it along to them, and then it is entirely up to those families whether they do anything with it."
+"Right, no, I understand that. What I'm asking instead is whether it can go the other way, so that if I give you our number you can pass it along to them, and then it is entirely up to those families whether they do anything with it," she says, and listens again.
 
 "Okay, yes, that works, thank you: Chloe Kessler." She says their number. "And she'd have been in with a Sam, a Ruth, a Kavi and a girl called Priya, in the same room the whole time, if that helps you find her. Can you just let them know that Chloe would like to talk to them? Thank you very much." And she hangs up.
 
@@ -88,7 +88,7 @@ ________________
 
 Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for weeks, carries it in with both hands, hugged against her chest instead of held out to hand over.
 
-"There she is," the librarian says, taking it and tsking as she turns the date card over. "It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait?"
+"There she is. It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait," the librarian says, taking it and tsking as she turns the date card over.
 
 "Twice. I'd have gone for a third, only there wasn't any time left in the month," she says, already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did."
 
@@ -96,7 +96,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
-The librarian waits until she has actually run out, looking at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But it is still four at a time, like in June, and the new ones came in this morning and are still on the cart, so go on and pick something good."
+The librarian waits until she has actually run out, looking at her over the top of the card. "That's a real month, that is. But it is still four at a time, like in June, and the new ones came in this morning and are still on the cart, so go on and pick something good," she says, and puts the stamp down.
 
 Chloe takes her four off the cart, still catching her breath, and finishes two of them by Friday.
 
@@ -116,7 +116,7 @@ ________________
 
 The shoebox has foil taped all over it, and in the second week Ms. Vance stands it up on the front desk where everybody can see it.
 
-"So this is a time capsule, and everybody is writing something today, on the paper I'm handing out now, and it goes in this box, then I tape the box shut and it goes up on top of that cabinet," she says, reaching up to knock a knuckle against the cabinet. "Then it stays shut until we are in fifth grade, not this year and not next year, however much anybody wants to peek."
+"So this is a time capsule, and everybody is writing something today, on the paper I'm handing out now, and it goes in this box, then I tape the box shut and it goes up on top of that cabinet. Then it stays shut until we are in fifth grade, not this year and not next year, however much anybody wants to peek," she says, reaching up to knock a knuckle against the cabinet.
 
 Everybody talks at once, and it takes the room a long time to come down.
 
@@ -126,7 +126,7 @@ Chloe is already leaning over her own paper with the pencil going before anybody
 
 "What was that, Chloe, and can you say it again so the rest of us can hear it too?"
 
-"Because you won't be you. You'll be somebody older. They won't remember doing any of this. So it's exactly like sending a package to a person you have yet to meet," she says, and keeps going, faster now, one foot hooked around the leg of her chair. "Except it's got your name on it. So they have to open it, asked for it or not."
+"Because you won't be you. You'll be somebody older. They won't remember doing any of this. So it's exactly like sending a package to a person you have yet to meet. Except it's got your name on it. So they have to open it, asked for it or not," she says, and keeps going, faster now, one foot hooked around the leg of her chair.
 
 Kayleigh Burns has turned around in her chair to say it: "Why do you talk like that? It's like you're reading it off a card or something."
 
@@ -184,11 +184,11 @@ Her mom starts on the school in the last week of September.
 
 Coming down for water, Chloe gets the end of a call, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 
-"Third grade, okay, so third grade is the floor, whatever the testing comes out at," she says, and listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is, but what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year."
+"Third grade, okay, so third grade is the floor, whatever the testing comes out at. No, I know what the policy is, you've told me what the policy is, but what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year," she says, and listens, the pen tapping twice against the counter.
 
 Whatever comes back takes a long time.
 
-"And the testing window is in the spring, only the spring, with no way around that part of it," she says, writing something down on the back of an envelope. "So we test her in the spring, for a program that starts the following fall, which is over a year from now, and she is in second grade right now."
+"And the testing window is in the spring, only the spring, with no way around that part of it. So we test her in the spring, for a program that starts the following fall, which is over a year from now, and she is in second grade right now," she says, writing something down on the back of an envelope.
 
 Her mom says thank you at the end of it, puts the phone down, and stands there with her hand still on it, until she turns and finds Chloe still in the doorway.
 
@@ -212,6 +212,6 @@ The answer, whatever it is, refuses to come out of her.
 
 Chloe moves her head from side to side with it still down on her arms.
 
-"Okay, that's okay, take all the time you need," Ms. Vance says, staying down there on the floor. "And when you're ready, can you tell me what it is."
+"Okay, that's okay, take all the time you need. And when you're ready, can you tell me what it is," Ms. Vance says, staying down there on the floor.
 
 "I don't know," Chloe says. "I don't..." She tries to stop, but she can't.

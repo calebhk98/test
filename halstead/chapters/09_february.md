@@ -2,7 +2,7 @@
 
 *February 2013 – March 2013*
 
-February goes by with the telephone silent, and the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very end, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, and the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words, and Chloe finishes the words in no time, then colours the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October, and at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
+February goes by with the telephone silent, and the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very end, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words, and Chloe finishes the words in no time, but then colours the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October, and at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
 
 Home from school, she goes upstairs with her coat still on, so that when her mom comes up to say that dinner is in ten minutes she finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -10,7 +10,7 @@ The crying is still ahead of her, and she is sitting in the gap with a fistful o
 
 "Chloe, honey, what are you doing down there on the floor?"
 
-Then it comes out of her all at once and she can't get one word of it out whole, so what comes out is please, over and over, in pieces, in the gaps where she can get any air.
+Then it comes out of her all at once, but she can't get one word of it out whole, so what comes out is please, over and over, in pieces, in the gaps where she can get any air.
 
 "Please. I'll be good, I'll be so good, please."
 
@@ -48,9 +48,9 @@ Chloe can't answer that, because school, the sheets, and Kayleigh Burns are each
 
 "This," she says, with her face against her mother's collarbone. "This, this, all of this."
 
-Her mother holds her on the floor for a long time after she has stopped, and neither of them gets up off it, dinner going by unmentioned by either of them. Her dad appears in the doorway at some point with a dishcloth in his hand, her mother looks up at him, he goes back down, and from the floor there is only his feet on the kitchen tile, back and forth, no pan, no water.
+Her mother holds her on the floor for a long time after she has stopped, and neither of them gets up off it, dinner going by unmentioned by either of them. Her dad appears in the doorway at some point with a dishcloth in his hand, her mother looks up at him, he goes back down, but from the floor there is only his feet on the kitchen tile, back and forth, no pan, no water.
 
-Later, when she is in bed and supposed to be asleep, her parents are at the kitchen table with the door mostly shut, and their voices come up through the part of the floor that's thin.
+Later, when she is in bed and supposed to be asleep, her parents are at the kitchen table with the door mostly shut, but their voices come up through the part of the floor that's thin.
 
 "She said take my birthday, Dave, and she's seven years old, and she stood there in that gap and offered up her own birthday like it was money she'd saved."
 
@@ -106,7 +106,7 @@ Twenty seconds after running upstairs she is back down, stopped on the third ste
 
 She runs back up.
 
-Her parents sit in the living room and listen to her going back and forth over their heads for a long time: drawers opening and shutting, something heavy getting dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, and she catches only the end of it, clear enough.
+Her parents sit in the living room and listen to her going back and forth over their heads for a long time: drawers opening and shutting, something heavy getting dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, but she catches only the end of it, clear enough.
 
 "That's her, that's what she's actually like."
 
@@ -122,7 +122,7 @@ The house comes up in April, on a Saturday, with Chloe up the road at the Peters
 
 "I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds."
 
-Dave rubs a hand over his face. "Then give me one reason, because I have been sitting here trying to think of one and I can't."
+Dave rubs a hand over his face. "Then give me one reason, because I have been sitting here trying to think of one, but I can't."
 
 "Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
 
@@ -156,6 +156,6 @@ Chloe talks for the whole drive. She talks about the room she'd have and whether
 
 Her dad carries her bag in and puts it at the bottom of the stairs. She goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she has been told not to.
 
-Out the kitchen window, her mother is still sitting in the car with the engine off and the lights with it, and she has yet to open the door on her side.
+Out the kitchen window, her mother is still sitting in the car with the engine off and the lights with it, but she has yet to open the door on her side.
 
 Chloe watches her through the window, until her dad says something from the other room about whether anybody wants toast, and she goes.

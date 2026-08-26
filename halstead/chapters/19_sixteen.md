@@ -32,7 +32,7 @@ Kavi looks at the board, then at her, then back at the board, his own row a few 
 
 "It's fine, the numbers are the numbers, and saying either of them twice just leaves them exactly where they were. You didn't do anything to me by passing it." She takes the list in again, her weight settled square on both feet, then steps back from the board to let somebody else in.
 
-Fifty-two in the year pass and thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past all day.
+Fifty-two in the year pass, but thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past all day.
 
 Bex passed, and comes the length of that hall to find her before dinner, saying it from halfway down.
 
@@ -54,11 +54,11 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "All of them follow from the answer once you've got the answer. Anyone who can read the second line can work out the rest for themselves in a moment, the way I did. Writing it out afterwards is just me proving I can hold a pen."
 
-"They follow if the person reading has your head and has already done the working you skipped. A marker with a stack of these in front of him has about ten seconds a page, and that is not enough time to rebuild your reasoning for you. He is also not allowed to give you a mark for something you did not write down."
+"They follow if the person reading has your head and has already done the working you skipped. A marker with a stack of these in front of him has about ten seconds a page, but that is not enough time to rebuild your reasoning for you. He is also not allowed to give you a mark for something you did not write down."
 
 "Whoever marks this already knows all of it. It's contract law and not a mystery, and there is exactly one rule that could possibly apply to a shed sitting in a yard for two weeks. He knew the answer before he opened the paper."
 
-"I would like you to sit down while I say the rest of it, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, and the man marking your paper was somebody else entirely." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
+"I would like you to sit down while I say the rest of it, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
 Chloe reads the rows twice, then looks up at him and back down at them.
 
@@ -78,7 +78,7 @@ People are getting up out of their chairs as she goes back to hers, unhurried, h
 
 In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
-"Two out of four, and the ones you're missing are the ones that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information and finds it's what he already had. That is worse for you than leaving the line out."
+"Two out of four, and the ones you're missing are the ones that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out."
 
 "It's the same sentence, just restated so it sounds like it's adding something."
 
@@ -126,7 +126,7 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 "Paper on Thursday, same as the last few."
 
-"You've had a paper on Thursday for weeks." He is banking the fire down for the night, working with his back to her. "Tongs on the rack. The ones you made. Take them with you."
+He is banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks. Tongs on the rack. The ones you made. Take them with you."
 
 The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
 
@@ -142,7 +142,7 @@ Her mother watches that from the kitchen window a while before she comes out.
 
 "Like what? I can't think what there'd even be to do out here." Chloe keeps her eyes shut against the sun and delivers the whole answer in the direction of the garage roof.
 
-"There's a shelf in the garage your father's been meaning to put up since March, and at this rate it'll still be leaning against the wall at Christmas." Her mother sets a glass of iced tea down on the step beside her. "Or skip it entirely. I'm not asking you to put up a shelf, I'm asking whether you actually want to sit still this much."
+Her mother sets a glass of iced tea down on the step beside her. "There's a shelf in the garage your father's been meaning to put up since March, and at this rate it'll still be leaning against the wall at Christmas. Or skip it entirely. I'm not asking you to put up a shelf, I'm asking whether you actually want to sit still this much."
 
 "I could put up a shelf. I just haven't wanted to move more than I have to since I got home."
 
@@ -150,17 +150,17 @@ Her mother watches that from the kitchen window a while before she comes out.
 
 Her father asks about Sam instead of about her classes.
 
-"He's on forty percent, on the range." Chloe has the glass on the step beside her, sweating a ring into the wood. "He's been there since he started, and it's the number that hasn't moved in all that time no matter what he tries. It slides straight off him like it belongs to somebody else. I have watched him read it off the board and go straight in to lunch."
+Chloe has the glass on the step beside her, sweating a ring into the wood. "He's on forty percent, on the range. He's been there since he started, and it's the number that hasn't moved in all that time no matter what he tries. It slides straight off him like it belongs to somebody else. I have watched him read it off the board and go straight in to lunch."
 
 "How does it not touch him, forty percent year after year? I'd have packed the whole thing in by now, or I'd have made your mother listen to it every night at this table for a year."
 
-"That's what I asked him, more or less word for word, standing right outside the range." Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "He said he knows, and that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it instead, because Ruth's on ninety-one and apparently that's more my speed."
+Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, and that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it instead, because Ruth's on ninety-one and apparently that's more my speed."
 
 Her father laughs at that, head back, longer than the joke should carry him.
 
 "Is she, though, or is that just the face she puts on for you?"
 
-"Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating." Chloe has both hands off the step now. "She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time. She has never once said so out loud and she has never once been late."
+Chloe has both hands off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time. She has never once said so out loud and she has never once been late."
 
 "Why does she keep doing it, then, if the range itself bores her that badly?"
 

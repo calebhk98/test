@@ -4,7 +4,7 @@
 
 Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, again and again, to things Chloe can't make out from where she is sitting.
 
-Her mom winds the phone cord around her fingers. "No, I appreciate you calling, because most people wouldn't have. She's been like this since August, and it's about her, not about you or the house, she was completely fine in July and then school started."
+Her mom winds the phone cord around her fingers. "No, I appreciate you calling, because most people wouldn't have. She's been like this since August, and it's about her, not about you or the house, she was completely fine in July, but then school started."
 
 Chloe goes back up before the call is finished.
 
@@ -12,7 +12,7 @@ The appointment is the following Wednesday, for which her mom takes the whole af
 
 "So tell me what's going on, and start wherever you like. There's no order I need it in."
 
-Her mom is sitting right on the front edge of the chair, and she has the whole list ready in order, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, and there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." Her hands come apart and smooth an imaginary crease out of her skirt.
+Her mom is sitting right on the front edge of the chair, and she has the whole list ready in order, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." Her hands come apart and smooth an imaginary crease out of her skirt.
 
 "Chloe, is that right, is that how it's actually been?"
 
@@ -102,7 +102,7 @@ Chloe pulls the covers up over her knees and holds them there with both hands.
 
 "Is it Halstead? Is it finally happening?"
 
-Her mom puts a hand flat on the covers over Chloe's shin and leaves it there. "It's a thing at your school, on Thursdays, starting after the break, and it is the only thing in that building that isn't what you're already sitting through. It's an hour, and it isn't the classroom. So I want you in it, whatever it turns out to be."
+Her mom puts a hand flat on the covers over Chloe's shin and leaves it there. "It's a thing at your school, on Thursdays, starting after the break, and it is the only thing in that building that isn't what you're already sitting through. It's an hour, but it isn't the classroom. So I want you in it, whatever it turns out to be."
 
 "Can I go to Halstead instead of it, though?"
 
@@ -114,7 +114,7 @@ Chloe barely sleeps that night, and gets up twice to check that the note about i
 
 There are nine kids and a cart with shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER. Mrs. Prahl wheels it in after lunch, spends a while getting them out of classrooms all over the building and into chairs, then learns every name before they have settled, after which she uses them, every time.
 
-She holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, and knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it."
+She holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, but knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it."
 
 Chloe has it before Mrs. Prahl has finished reading it out, so she waits, because you wait. A boy called Dev gets there about ninety seconds later and does it up on the board with arrows, and Mrs. Prahl makes a real thing out of it.
 
@@ -122,7 +122,7 @@ There are twelve on the sheet, of which Chloe does most in the first stretch bef
 
 Then she waits.
 
-What she is waiting for is the turn, because at camp there was a point in every single thing where it stopped being easy, and you sat there with your ears going hot, and then either you got it or somebody did the rectangle again. For most of an hour now she has been braced for that point, and it hasn't come, and the hour is nearly over.
+What she is waiting for is the turn, because at camp there was a point in every single thing where it stopped being easy, and you sat there with your ears going hot, and then either you got it or somebody did the rectangle again. For most of an hour now she has been braced for that point, but it hasn't come, and the hour is nearly over.
 
 Her hand is still half up. "When does it get harder? I keep waiting for the part where it gets hard."
 
@@ -148,7 +148,7 @@ Her mom says put your jacket on and Chloe says no, and her mom says put it on. T
 
 "Chloe."
 
-"You do, you want me to stay here and be sad. You could just say yes to Halstead. You could say it right now. It takes one second to say it. And you won't say it."
+"You do, you want me to stay here and be sad. You could just say yes to Halstead. You could say it right now. It takes one second to say it. But you won't say it."
 
 Her mom's hand closes on the edge of the counter. "It's not one second, Chloe, I've thought about this a lot longer than you know. Every night since the letter came."
 
@@ -156,7 +156,7 @@ Her mom's hand closes on the edge of the counter. "It's not one second, Chloe, I
 
 Her mom's mouth goes tight at the corner, an arm's length away, and Chloe keeps going anyway, her voice climbing over it.
 
-"You do, you hate me, and Dad says yes and you're the one who says no, and I hate you, I hate you so much."
+"You do, you hate me, and Dad says yes, but you're the one who says no, and I hate you, I hate you so much."
 
 She goes upstairs and slams the door so hard the frame jumps.
 
@@ -166,7 +166,7 @@ At dinner her mother passes her the bread, asks whether she wants more milk, and
 
 So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice, and Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else, and Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
 
-On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, and keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. When Mrs. Prahl asks the following Thursday how she got on with it, Chloe says she's still working on it, and Mrs. Prahl says that's absolutely fine, take your time.
+On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, but keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. When Mrs. Prahl asks the following Thursday how she got on with it, Chloe says she's still working on it, and Mrs. Prahl says that's absolutely fine, take your time.
 
 She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. She wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
@@ -206,7 +206,7 @@ Her dad is in the doorway with his arms folded up against the cold. "She likes i
 
 "She does," her mom says. "She really does. Look at her go."
 
-At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows all of them. Her cousin Dana asks how school is, and Chloe says it's good. Dana asks whether she's still reading all the time, and Chloe says some. Then Dana turns to talk to somebody else, so Chloe eats her potatoes.
+At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows all of them. Her cousin Dana asks how school is, and Chloe says it's good. Dana asks whether she's still reading all the time, but Chloe says some. Then Dana turns to talk to somebody else, so Chloe eats her potatoes.
 
 She stops asking in January.
 
