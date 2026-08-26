@@ -266,10 +266,11 @@ mare is due and the mare keeps her own hours.
 **The calibration error.** Every gifted child in fiction grows up overestimating
 the gap between themselves and everyone else. These children grow up
 underestimating it, and the mechanism is exact and visible: they are scored
-against ninety-one peers, all year, every year, in ten subjects at once, and the
-difficulty is set so that people at the top of the human range collect Cs. Sam
-is the best fighter in the year and reports himself as a forty-percent marksman.
-Ruth shoots ninety-one and finds it tedious. Chloe is ninetieth of ninety at
+against ninety-one peers, all year, every year, in every subject on the sheet at
+once, and the difficulty is set so that people at the top of the human range
+collect Cs. Sam is the best fighter in the year and reports himself as a
+forty-percent marksman. Ruth shoots ninety-one on the same range and finds it
+tedious. Chloe is ninetieth of ninety at
 drawing. Priya finished sixty-fourth. None of them ever builds an identity
 around being the best in the room, because there is always somebody in the room
 who is better at the specific thing, and the room is the only measuring

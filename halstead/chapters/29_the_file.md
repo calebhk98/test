@@ -66,7 +66,7 @@ ________________
 
 Theo sits back.
 
-He was twelve that year. The morning after he remembers, which is to say he remembers that there had been a drill overnight, and that four people had been on it and one of them was Chloe, and that everyone was annoyed about it because it was a school night and the alarm had caught them all flat-footed, and that by lunchtime the conversation had moved on to something else.
+He was twelve that year. The morning after is what he remembers, which is to say he remembers that there had been a drill overnight, and that four people had been on it and one of them was Chloe, and that everyone was annoyed about it because it was a school night and the alarm had caught them all flat-footed, and that by lunchtime the conversation had moved on to something else.
 
 He read the grade sheet on the board like everyone else, harsh, he'd thought at the time.
 
