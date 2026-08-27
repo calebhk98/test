@@ -134,8 +134,6 @@ ________________
 
 Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end.
 
-A man two doors up asks over the fence how the school is, and Chloe gives him the year: which subjects moved, what the forge is, why the languages go in the order they go in, what she is bad at and how bad. He waits until she is finished, says the school sounds like a lot, and goes back to his hose.
-
 The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working one board every day.
 
 Her mother watches that from the kitchen window a while before she comes out.

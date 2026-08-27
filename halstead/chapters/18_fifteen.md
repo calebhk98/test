@@ -112,6 +112,8 @@ Hark puts the last envelope down. "You are going to lose money in your life." He
 
 The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
+Priya asks her across the table how the range is going. She gets the run of zeroes, the November card, what the wind does at the far end and what she thinks it does, the thing Voss said that she has decided is not true, and where she is going to be by March. Then Priya gives her the same length back about a mare, and Sam, who asked nothing, gives them both his week.
+
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral; he argues about the rate for twenty minutes, but loses. Then he tells her she has to see the barn first, so she goes on the Saturday, finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
 Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.

@@ -2755,6 +2755,8 @@ Chloe works with Iyad in chemistry for a term after that, during which he is car
 
 Sam spends the whole year on the overhang.
 
+Ruth asks her at dinner how the languages are going, and Chloe gives her all of it: which of the two is moving and which has stalled, where the stalling is, what she has tried against it, the thing Mrs. Sun said in October that she has only just understood, and what she is going to do about the tones. Ruth eats through the whole of it, says the tone problem sounds like the thing she had with the ablative, and gives her back an account of that at about the same length. Nobody at the table looks up.
+
 There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
 Sam gets over it on the eleventh of May, with thirty people at the bottom, because he has spent days telling everybody he is going to do it that afternoon.
@@ -3013,7 +3015,7 @@ More go in before the break, but they are the essays they have been since Octobe
 
 "I know," Chloe says. "There's a chair, but I've been looking at it."
 
-"What is it you're reading, anyway," her grandmother says, and Chloe tells her: who wrote the two of them and which is which, what the argument is about, why the second one is the harder read and where it stops being about courts at all. It takes a while. Her grandmother listens to the whole of it with her hand on the door frame, says, "Well, that's something," and puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
+Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
 
 The Tuesday is in the second week of February.
 
@@ -3115,6 +3117,8 @@ Chloe has her own pages in the bag under the desk and leaves them in it. After t
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 
 Art history is in the spring. In February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998.
+
+Kavi asks whether the essay went in all right, meaning yes or no, and gets the two ways of measuring the age of the universe, why they disagree, which one she would bet on and why she would not bet much, and where in the fortnight she stopped being sure. He waits for the end of it, then tells her which of the two he would bet on, and they are still on it when the plates go.
 
 Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the same picture in both of those numbers, and it sat in a room untouched the whole way between them. Nobody touched it, nobody even opened the case, and the price still went up while it just sat there doing nothing."
 
@@ -4214,6 +4218,8 @@ Hark puts the last envelope down. "You are going to lose money in your life." He
 
 The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
+Priya asks her across the table how the range is going. She gets the run of zeroes, the November card, what the wind does at the far end and what she thinks it does, the thing Voss said that she has decided is not true, and where she is going to be by March. Then Priya gives her the same length back about a mare, and Sam, who asked nothing, gives them both his week.
+
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral; he argues about the rate for twenty minutes, but loses. Then he tells her she has to see the barn first, so she goes on the Saturday, finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
 Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
@@ -4446,8 +4452,6 @@ The tongs go home to the hook on the back of her door, beside the bag she made i
 ________________
 
 Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end.
-
-A man two doors up asks over the fence how the school is, and Chloe gives him the year: which subjects moved, what the forge is, why the languages go in the order they go in, what she is bad at and how bad. He waits until she is finished, says the school sounds like a lot, and goes back to his hose.
 
 The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working one board every day.
 
@@ -5207,7 +5211,7 @@ Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word 
 
 Chloe gets caught on her way past, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
 
-Dana is in the chair along from her, on her phone until Chloe gets that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks, and Chloe tells her: that it finished about an hour ago, what the last week of it was, which of the exams she is still turning over, that Georgetown is August and why she picked it over the other one. "That's good," Dana says, and turns to the woman on her other side to say something about the parking.
+Dana is in the chair along from her, on her phone until Chloe gets that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks, and Chloe tells her it finished about an hour ago, and that Georgetown is August. "That's good," Dana says, and turns to the woman on her other side to say something about the parking.
 
 The third she catches is a stranger to Chloe, a girl from another family's cluster of chairs entirely, in a gown still cinched with somebody's binder clip. By the time the girl has extracted herself and gone to find her own people, Chloe's grandmother turns to Meg with the satisfaction she'd bring to a verdict on a roast. "You all seem like very nice young people," she says, to the field at large.
 
