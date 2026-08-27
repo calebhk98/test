@@ -71,3 +71,52 @@ Do not edit them; report only if you have something new.
 
 - **"furious"** in chapter 5 and **"relieved"** in chapter 7, as named states.
 - **Amberg's long job offer** in chapter 22.
+
+---
+
+## Checked against the text and refuted
+
+Not author rulings. These are findings from the audit round of 2026-08-27 that
+were checked line by line against the current chapters and do not reproduce.
+Recorded so they stop circulating. If you find one of these again, you are
+reading a stale report, not the manuscript.
+
+**Marek's chapter 16 scene contradicts his sheet.** It does the opposite. The
+sheet's YES clause reads: *"asked directly why the paper matters, he argues
+that a written record and the work are two different objects and answers by
+offering more of the work in place of it, cheerfully and without rancor."*
+Chapter 16 line 21 is that clause almost word for word. The claimed "cold monk
+making a principled stand" is not in the scene: he apologises for the ruler, he
+apologises for the papers, he apologises for the noise, he loses the thread to
+something Beatriz asked him, and he stops when Chloe says fine. The sheet's NO
+clause is *arguing the rule is stupid*, which he never does.
+
+**Chloe and Kavi use Ruth's "exclusive" name-drop.** There is no such thing.
+`_DIFFERENTIATION.md` says in its own words that a signature is characteristic,
+not exclusive, and names this exact construction as the example, because an
+agent acting on the exclusive reading rewrote other people's good lines once
+already.
+
+**Odile breaks her sheet's "bare, a number and nothing else" register.** That
+rule does not exist. It was removed from every sheet after it cost Odile her
+line, along with cold, clinical, logical, detached and affectless.
+
+**Sam hedges in the chapter 24 chat.** The quote given, *"i dont think its
+measuring anything,"* is not in the book. The line is *"its not measuring
+anything"* — flat, unhedged, and followed by *"its just meant to be fun,"*
+which is the sheet's own "saying the same true thing again."
+
+**Nobody comes back for Priya's two prisoners.** Chapter 36 line 79 is about
+them and nothing else, for a full paragraph, entirely in logistics: the knee
+that wants ice twice a day, the onion on the edge of the plate, and the one who
+takes the plate out of her hands by the Saturday.
+
+**Owen leaves on a Tuesday in one chapter and a Saturday in another.** Three
+different events. He is crying by the kitchens on the Thursday, his mother's
+car is outside on the Saturday, and Chloe finds the stripped bed on the
+Wednesday of the second week. Nothing collides.
+
+**Chapter 2's assessment line is the narrator supplying a comparison.** It is
+inside quotation marks. Ben is saying it, it is his job to say it, and he
+qualifies it in the same breath: *"on the talking and reasoning she's at the
+top of it, but on the speed she's ordinary."*
