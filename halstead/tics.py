@@ -47,6 +47,12 @@ TARGETS = {
     "hedged exact (about N)": 18.0,
     "eyes on / eyes down": 12.0,
     "hand(s) flat": 10.0,
+    # Same target as its sibling gesture above, on the docstring's rule of
+    # roughly a third of the current rate. 37 uses across 22 chapters, 31.4 per
+    # 100,000, against a corpus median of zero and a maximum of 7.2: the book
+    # uses it four times as often as the most hand-heavy of 23 novels, and the
+    # median novel never uses it at all.
+    "both hands": 10.0,
     "'the whole/rest of it'": 10.0,
     "turning an object": 6.0,
     "announced withholding": 3.0,
@@ -74,6 +80,10 @@ PATTERNS = {
 
     "hedged exact (about N)": r"\babout (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty|a hundred)\b",
     "hand(s) flat":          r"\bhands? (?:flat|pressed flat)\b|\bflat on the (?:table|counter|desk|bench|wall|floor)\b",
+    # The sibling gesture. hand(s) flat got a row and a target and was cut back
+    # to it; this one was never measured and stands at 37 uses across 22
+    # chapters. Nothing measures anything unless it is in this report.
+    "both hands":            r"\bboth hands\b",
     "the word 'flat'":       r"\bflat(?:ly)?\b",
     "'the way you/she would'": r"\bthe way (?:you|she|he|they|somebody|a person|anybody)\b",
     "announced withholding": r"\bkeeps? (?:it|that|the rest of it|them) to (?:him|her|them)sel(?:f|ves)\b|\bkept (?:it|that) to (?:him|her)self\b",
