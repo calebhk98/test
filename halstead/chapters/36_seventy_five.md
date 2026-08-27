@@ -60,7 +60,7 @@ priya: i took them off the grass on the way past. i was not crossing a field emp
 
 theo: and then
 
-priya: then the darts, which is the bit i keep coming back to. you do not put those in a person, because a person watches you raise it and steps left
+priya: then the darts. thats the bit i keep coming back to. you do not put those in a person, because a person watches you raise it and steps left
 
 priya: they got one in on the third go
 
@@ -82,7 +82,7 @@ The room over the feed merchant's has a window and a door onto an outside stair,
 
 priya: they are american. they say agency and they will not say which one
 
-priya: four days and i have almost nothing out of the pair of them so far, which is about what i expected
+priya: four days and i have almost nothing out of the pair of them so far. about what i expected
 
 priya: it is also a great deal less than i expected. i cannot get those two to sit together
 

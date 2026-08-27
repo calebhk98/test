@@ -148,4 +148,4 @@ theo: still the stupidest thing any of us has ever done
 
 theo: in
 
-The government has already decided to trust her with things it keeps far from most people, but she's about to spend that trust on a file it always meant to keep sealed from her too. What that actually costs her she works through exactly once, on the drive home from the office the week the document arrives, and the thought ends in about as long as it takes a light to change.
+She holds a clearance for things the government keeps away from most people, and she is about to spend it on a file it meant to keep sealed from her too. What that costs her she works through once, on the drive home the week the document arrives, and the thought ends in about as long as it takes a light to change.

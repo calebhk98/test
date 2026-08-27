@@ -6837,7 +6837,7 @@ ________________
 
 Theo sits back.
 
-Theo was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, everyone annoyed about it because it was a school night and the alarm had caught them all flat-footed, and by lunchtime the conversation moved on to something else.
+Theo was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, the whole year stood out on the grass on a school night with the alarm having caught them flat-footed, and by lunchtime the conversation moved on to something else.
 
 He read the grade sheet on the board like everyone else, harsh, he'd thought at the time.
 
@@ -7055,7 +7055,7 @@ The tally she keeps is private instead of public: every problem set returned wit
 
 A professor breaks it: she likes him, genuinely, and in office hours he cannot follow her past the third step of her reasoning, and he says so, then asks her to go back.
 
-His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
+His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
 
 "Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
 
@@ -7435,7 +7435,7 @@ theo: still the stupidest thing any of us has ever done
 
 theo: in
 
-The government has already decided to trust her with things it keeps far from most people, but she's about to spend that trust on a file it always meant to keep sealed from her too. What that actually costs her she works through exactly once, on the drive home from the office the week the document arrives, and the thought ends in about as long as it takes a light to change.
+She holds a clearance for things the government keeps away from most people, and she is about to spend it on a file it meant to keep sealed from her too. What that costs her she works through once, on the drive home the week the document arrives, and the thought ends in about as long as it takes a light to change.
 
 
 ## Chapter Thirty-Four: The Files
@@ -7714,7 +7714,7 @@ priya: i took them off the grass on the way past. i was not crossing a field emp
 
 theo: and then
 
-priya: then the darts, which is the bit i keep coming back to. you do not put those in a person, because a person watches you raise it and steps left
+priya: then the darts. thats the bit i keep coming back to. you do not put those in a person, because a person watches you raise it and steps left
 
 priya: they got one in on the third go
 
@@ -7736,7 +7736,7 @@ The room over the feed merchant's has a window and a door onto an outside stair,
 
 priya: they are american. they say agency and they will not say which one
 
-priya: four days and i have almost nothing out of the pair of them so far, which is about what i expected
+priya: four days and i have almost nothing out of the pair of them so far. about what i expected
 
 priya: it is also a great deal less than i expected. i cannot get those two to sit together
 
