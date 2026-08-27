@@ -124,8 +124,6 @@ The library gets her about once a week now, because most evenings there are peop
 
 ________________
 
-________________
-
 DEFENSIVE WATCH - SCORING
 
 They do not enter a building.
