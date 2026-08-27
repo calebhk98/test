@@ -232,7 +232,12 @@ def report(path, label):
           f"{'PASS' if 2 <= _br <= 6 else 'FAIL'}")
 
     # tic scan
-    print("\nTIC SCAN")
+    # Rule 1 governs the narrator, so quoted spans come out before matching,
+    # exactly as summarise() does it. Without this the per-chapter report hands
+    # a fixing agent every character's own explanatory clause as a violation,
+    # which is how a character's line gets "corrected" into something flatter
+    # than the author wrote.
+    print("\nTIC SCAN, narration only (quoted spans removed)")
     _pats = [
         (r'which is (?:the|what|how|why|a|his|her|its)\b', 'narrator evaluation'),
         (r',\s+which is ', 'trailing explanatory clause'),
@@ -242,7 +247,10 @@ def report(path, label):
     ]
     _hits = 0
     for p_ in paras:
-        for s in sents(p_):
+        # Strip at paragraph level, not sentence level. A speech that runs to
+        # several sentences leaves its interior sentences carrying no quote
+        # mark at all, so a per-sentence strip cannot see they are dialogue.
+        for s in sents(narration_of(p_)):
             for rx, name in _pats:
                 if re.search(rx, s, re.I):
                     print(f"  [{name}] {s[:110]}")
@@ -250,6 +258,29 @@ def report(path, label):
     if not _hits:
         print("  none found")
 
+
+
+
+def narration_of(para):
+    """A paragraph with everything spoken taken out of it.
+
+    Rule 1 governs the narrator, so both forms of speech come out before any
+    tic is matched. Two things bite here and both have sent fixing agents at
+    lines the narrator never wrote:
+
+    Quoted speech is stripped at paragraph level rather than sentence level,
+    because a speech that runs to several sentences leaves its interior
+    sentences carrying no quote mark at all.
+
+    Group-chat lines (``priya: does anyone know ...``) carry no quote marks
+    either, and there are several hundred of them across the late chapters.
+    Scanned raw they read as narration, which is how a character's own chat
+    message gets reported as the narrator addressing the reader.
+    """
+    para = re.sub(r'"[^"]*"', ' ', para)
+    kept = [ln for ln in para.split('\n')
+            if not re.match(r'^[a-z][a-z0-9_]*: ', ln.strip())]
+    return '\n'.join(kept)
 
 
 TICS = [
@@ -370,7 +401,10 @@ def summarise(paths):
           f"target 2-6 each")
 
     # Rule 1 governs the narrator, so quoted spans come out before matching.
-    narration = [re.sub(r'"[^"]*"', ' ', s) for s in sents_all]
+    # Strip at paragraph level, not sentence level. A speech that runs to
+    # several sentences leaves its interior sentences carrying no quote mark at
+    # all, so a per-sentence strip counts a character's own words as narration.
+    narration = [s for p_ in all_paras for s in sents(narration_of(p_))]
     print("\n  TIC SCAN, narration only (quoted spans removed)")
     for rx, name in TICS:
         hits = sum(1 for s in narration if re.search(rx, s, re.I))
