@@ -120,3 +120,29 @@ Wednesday of the second week. Nothing collides.
 inside quotation marks. Ben is saying it, it is his job to say it, and he
 qualifies it in the same breath: *"on the talking and reasoning she's at the
 top of it, but on the speed she's ordinary."*
+
+---
+
+## Author rulings, 2026-08-27
+
+**Priya's "a fifteen" in chapter 36 is not literal.** It is the school's own
+shorthand for the age-grade an opponent fights at, and the chapter says *men*
+where it matters. An agent read it as literal children. The author: *"It's fine
+if readers make mistakes, as long as the book itself is correct."* Do not
+rewrite it and do not add an explanation of the convention.
+
+**A dorm is an apartment.** Ruth in a dorm room in chapter 33 and an apartment
+in 32 and 35 is not a contradiction. Ruled, stays.
+
+**Chloe's clearance does not produce a cost.** Three separate reports wanted
+friction, a scene, or a visible price for spending it. There isn't one and
+there is not going to be one. Do not add a beat, a hesitation, or a
+consequence.
+
+**Chapter 10 reading harder than chapter 18 is fine.** F-K 8.0 at six against
+6.9 at fifteen. Ruled, stays. Do not flatten chapter 10 to fix a curve.
+
+**"Instead", "leaves it", and "puts it back down" are capped, not targeted.**
+The author: *"I think they are about 2x more passive than they should be. I
+don't want to increase it."* Each is set in `tics.py` at half the rate it was
+measured at. A number under the cap is not room to add more.

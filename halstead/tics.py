@@ -53,12 +53,24 @@ TARGETS = {
     # uses it four times as often as the most hand-heavy of 23 novels, and the
     # median novel never uses it at all.
     "both hands": 10.0,
-    # Corpus max is 3.3 and the median novel never does it once. Target is that
-    # maximum: no more of the formula than the most preference-stating of 23
-    # published novels. The bare word 'rather' is deliberately left untargeted -
-    # at 95.8 against a corpus median of 72.6 it is ordinary English, and it is
-    # the formula rather than the word that the author can hear.
-    "'I'd rather X than Y'": 3.0,
+    # A cap at a quarter of the rate it was found at, on the author's call.
+    # That lands under the corpus maximum of 3.3 as well, in a corpus where the
+    # median novel never uses the formula once. The bare word 'rather' is
+    # deliberately left untargeted - at 95.8 against a corpus median of 72.6 it
+    # is ordinary English, and it is the formula rather than the word that the
+    # author can hear.
+    "'I'd rather X than Y'": 2.0,
+
+    # Declining to act. These three are CAPS, not targets: the author's ruling
+    # is "about 2x more passive than they should be, and I don't want to
+    # increase it," so each is set at half the rate it was found at. Do not
+    # read a number under the cap as room to add more. The other three shapes
+    # that were measured came back fine and are not tracked: says nothing ran
+    # at a fifth of the corpus maximum, so the characters are not quiet - it is
+    # the physical and decision beats that had narrowed, not the talking.
+    "cap: leaves it / lets it go": 13.3,
+    "cap: puts it back down": 29.4,
+    "cap: does X instead": 53.5,
     "'the whole/rest of it'": 10.0,
     "turning an object": 6.0,
     "announced withholding": 3.0,
@@ -96,6 +108,15 @@ PATTERNS = {
     # speakers, which is what makes it read as house voice rather than anyone's
     # character. Counted two ways: the whole word, and the formula itself.
     "the word 'rather'":     r"\brather\b",
+    "cap: leaves it / lets it go":
+        r"\b(?:leaves?|left)\s+(?:it|that|them|the\s+\w+)\s+(?:there|alone|where|at\s+that|be)\b"
+        r"|\blets?\s+(?:it|that|them)\s+(?:go|sit|stand|lie|drop|rest)\b"
+        r"|\blet\s+(?:it|that|them)\s+(?:go|sit|stand|lie|drop|rest)\b",
+    "cap: puts it back down":
+        r"\b(?:puts?|put|sets?|set|lays?|laid|places?)\s+(?:it|them|the\s+\w+|his\s+\w+|her\s+\w+)"
+        r"\s+(?:back\s+)?down\b"
+        r"|\b(?:puts?|put|sets?|set)\s+(?:it|them|the\s+\w+)\s+back\b",
+    "cap: does X instead":   r"\binstead\b",
     "'I'd rather X than Y'": r"\b(?:I'?d|I would|he'?d|she'?d|they'?d)\s+rather\b[^.;!?]{0,80}\bthan\b",
     "the word 'flat'":       r"\bflat(?:ly)?\b",
     "'the way you/she would'": r"\bthe way (?:you|she|he|they|somebody|a person|anybody)\b",

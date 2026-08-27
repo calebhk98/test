@@ -26,8 +26,6 @@ What comes from where:
                        manuscript.
   prose_check.py       PROSE_RULES violations in the character sheets.
   quote_length.py      sentences per quotation, against the corpus.
-  passivity.py         how often a character handles a thing and declines to
-                       act on it, against the corpus.
   style_report.py      conjunction rates and the narrator tic scan.
   check_edits.py       em dashes and the hard-line-break convention.
 
@@ -405,19 +403,14 @@ def absolutes():
     print(run("absolutes.py"))
 
 
-def passivity():
-    rule("8. DECLINING TO ACT, AGAINST THE CORPUS")
-    print(run("passivity.py"))
-
-
 def voice():
-    rule("9. VOICE SEPARATION")
+    rule("8. VOICE SEPARATION")
     print(run("voice_separation.py", "--prose"))
     print(run("voice_separation.py", "--chat"))
 
 
 def integrity():
-    rule("10. INTEGRITY")
+    rule("9. INTEGRITY")
     for label, script, args in (
             ("Character-sheet quotations not found in the manuscript",
              "verify_citations.py", ()),
@@ -544,7 +537,6 @@ def main():
     tee.run(numbers)
     tee.run(constructions)
     tee.run(absolutes)
-    tee.run(passivity)
     if not a.brief:
         tee.run(voice)
     tee.run(integrity)
