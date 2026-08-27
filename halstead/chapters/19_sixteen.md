@@ -60,7 +60,7 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "I would like you to sit down while I say the rest, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely, and he only had the words you actually gave him to work with." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
-Chloe reads the rows twice, then looks up at him and back down at them.
+Chloe goes down the rows and back up them, then looks up at him and back down at them.
 
 ________________
 
@@ -108,7 +108,7 @@ In October she sits the bar again, the retake for everyone who failed in April, 
 
 A question near the end is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
-This time she passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
+This time she passes by twenty-two, and she checks the number against the line above it before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 

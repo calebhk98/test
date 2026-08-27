@@ -106,7 +106,7 @@ Still filing the edge. "The forge. Low building past the kitchens, and they're i
 
 ________________
 
-The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words. Iyad has the hat, going round the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased before he has finished reading it. Kavi gets one about juries, reads it twice, and announces that he has drawn the boring one and would like a swap. Priya gets whether a person can consent to something they cannot leave, puts it face down on the table, and asks who wants it.
+The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words. Iyad has the hat, going round the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased before he has finished reading it. Kavi gets one about juries, sits with it a minute, and announces that he has drawn the boring one and would like a swap. Priya gets whether a person can consent to something they cannot leave, puts it face down on the table, and asks who wants it.
 
 Chloe unfolds hers.
 

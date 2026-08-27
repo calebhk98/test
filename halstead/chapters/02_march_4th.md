@@ -320,4 +320,4 @@ She still knows all twenty-eight of their names, but not one of them has needed 
 
 On the last day they clean out their desks, where she finds a handful of pencils, somebody else's bracelet, a permission slip from October, and the library book, which she returns that afternoon, ahead of the summer due date. Kayleigh Burns hugs everybody at the door, while Chloe watches from beside her desk with both straps of her backpack already on.
 
-Her report card comes in an envelope a week later, saying she is meeting expectations in all areas, and under comments, where the teacher writes, it says Chloe is a pleasure to have in class. Her mom reads it twice, then puts it on the refrigerator under the magnet shaped like a strawberry, where the sticky note used to be.
+Her report card comes in an envelope a week later, saying she is meeting expectations in all areas, and under comments, where the teacher writes, it says Chloe is a pleasure to have in class. Her mom holds onto it a while, then puts it on the refrigerator under the magnet shaped like a strawberry, where the sticky note used to be.

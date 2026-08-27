@@ -629,7 +629,7 @@ She still knows all twenty-eight of their names, but not one of them has needed 
 
 On the last day they clean out their desks, where she finds a handful of pencils, somebody else's bracelet, a permission slip from October, and the library book, which she returns that afternoon, ahead of the summer due date. Kayleigh Burns hugs everybody at the door, while Chloe watches from beside her desk with both straps of her backpack already on.
 
-Her report card comes in an envelope a week later, saying she is meeting expectations in all areas, and under comments, where the teacher writes, it says Chloe is a pleasure to have in class. Her mom reads it twice, then puts it on the refrigerator under the magnet shaped like a strawberry, where the sticky note used to be.
+Her report card comes in an envelope a week later, saying she is meeting expectations in all areas, and under comments, where the teacher writes, it says Chloe is a pleasure to have in class. Her mom holds onto it a while, then puts it on the refrigerator under the magnet shaped like a strawberry, where the sticky note used to be.
 
 
 ## Chapter Three: The Letter
@@ -3142,7 +3142,7 @@ Still filing the edge. "The forge. Low building past the kitchens, and they're i
 
 ________________
 
-The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words. Iyad has the hat, going round the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased before he has finished reading it. Kavi gets one about juries, reads it twice, and announces that he has drawn the boring one and would like a swap. Priya gets whether a person can consent to something they cannot leave, puts it face down on the table, and asks who wants it.
+The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words. Iyad has the hat, going round the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased before he has finished reading it. Kavi gets one about juries, sits with it a minute, and announces that he has drawn the boring one and would like a swap. Priya gets whether a person can consent to something they cannot leave, puts it face down on the table, and asks who wants it.
 
 Chloe unfolds hers.
 
@@ -3674,7 +3674,7 @@ In February she offers to read the 1981 paper and mark him on that. Politely, at
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
-The December sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
+The December sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she stands with it a while in the corridor, folds it into quarters and pockets it rather than binning it.
 
 A week later she stops at the mathematics office on her way past and asks how a blank column is handled at the end of the year, in the flattest words she can find for it and with no name anywhere in the question. The woman at the desk tells her: the column is scored as submitted work, an absent submission scores nothing, the scheme has no other entry available for it, and a student teacher records what is on the page rather than what is not. It takes under a minute and it answers everything she asked. Chloe thanks her and goes.
 
@@ -4379,7 +4379,7 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "I would like you to sit down while I say the rest, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely, and he only had the words you actually gave him to work with." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
-Chloe reads the rows twice, then looks up at him and back down at them.
+Chloe goes down the rows and back up them, then looks up at him and back down at them.
 
 ________________
 
@@ -4427,7 +4427,7 @@ In October she sits the bar again, the retake for everyone who failed in April, 
 
 A question near the end is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
-This time she passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
+This time she passes by twenty-two, and she checks the number against the line above it before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
@@ -4873,7 +4873,7 @@ Chloe puts her pen down and leaves it down.
 
 Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open. "You cut it three times. Read the last one. It came back before I'd shut the laptop."
 
-Chloe reads it twice and finds it clean, and Ruth reads it after her and agrees. That closes there, and both of them keep their seats.
+Chloe goes through it and finds it clean, and Ruth goes through it after her and agrees. That closes there, and both of them keep their seats.
 
 Ruth's own advice is to send an application twice and change one thing, so in the last week of March Nadia answers a listing twice inside the hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first stays silent to the end of the month.
 
@@ -7301,7 +7301,7 @@ What arrives is a document rather than a chat message, twelve pages, written at 
 
 The target is the unit Theo already told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder, and the document is mostly about the second problem, not the first.
 
-Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
+Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
 
 The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they already have a file on their own school that's a dozen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
 
@@ -7625,7 +7625,7 @@ ________________
 
 Ruth starts typing, stops, and starts again before she sends anything.
 
-She's on the floor of her own apartment when it lands, shoes off, back against the couch, because a room has always suited her better than a chair. The group chat is open on her phone and the rules are open on the laptop balanced against her knees, the document Chloe wrote and that Ruth has read often enough now to find any clause in it without the search bar. Her hand goes to page seven before she's decided to send it there, the way it finds a light switch in her own house in the dark. The paragraph is short enough to take in without scrolling. Any one of them can end it, no vote required and no explanation owed to anyone else, all of it stopped inside the hour. The lines have sat on that page since Chloe wrote them, because everything Chloe builds with a limit in it comes with the door out already built into the design. Ruth reads them twice, the clinical pass she'd give a proof she was checking rather than one she'd written herself, looking for the place it breaks. It holds. It says exactly what it has always said. The laptop closes, the phone comes back up, and she types into the chat instead of the clause.
+She's on the floor of her own apartment when it lands, shoes off, back against the couch, because a room has always suited her better than a chair. The group chat is open on her phone and the rules are open on the laptop balanced against her knees, the document Chloe wrote and that Ruth has read often enough now to find any clause in it without the search bar. Her hand goes to page seven before she's decided to send it there, the way it finds a light switch in her own house in the dark. The paragraph is short enough to take in without scrolling. Any one of them can end it, no vote required and no explanation owed to anyone else, all of it stopped inside the hour. The lines have sat on that page since Chloe wrote them, because everything Chloe builds with a limit in it comes with the door out already built into the design. Ruth goes through them slowly, the clinical pass she'd give a proof she was checking rather than one she'd written herself, looking for the place it breaks. It holds. It says exactly what it has always said. The laptop closes, the phone comes back up, and she types into the chat instead of the clause.
 
 ruth: so he doesnt know we know
 

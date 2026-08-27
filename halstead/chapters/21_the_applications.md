@@ -194,7 +194,7 @@ Chloe puts her pen down and leaves it down.
 
 Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open. "You cut it three times. Read the last one. It came back before I'd shut the laptop."
 
-Chloe reads it twice and finds it clean, and Ruth reads it after her and agrees. That closes there, and both of them keep their seats.
+Chloe goes through it and finds it clean, and Ruth goes through it after her and agrees. That closes there, and both of them keep their seats.
 
 Ruth's own advice is to send an application twice and change one thing, so in the last week of March Nadia answers a listing twice inside the hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first stays silent to the end of the month.
 

@@ -42,7 +42,7 @@ In February she offers to read the 1981 paper and mark him on that. Politely, at
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
-The December sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
+The December sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she stands with it a while in the corridor, folds it into quarters and pockets it rather than binning it.
 
 A week later she stops at the mathematics office on her way past and asks how a blank column is handled at the end of the year, in the flattest words she can find for it and with no name anywhere in the question. The woman at the desk tells her: the column is scored as submitted work, an absent submission scores nothing, the scheme has no other entry available for it, and a student teacher records what is on the page rather than what is not. It takes under a minute and it answers everything she asked. Chloe thanks her and goes.
 

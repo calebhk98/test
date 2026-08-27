@@ -35,6 +35,7 @@ NUMBER_TARGET = {
 }
 TARGETS = {
     "habit stated for the reader": 0.0,
+    "reads it twice": 3.5,
 
     "the word 'same'": 125.0,
     "sentence opens She/He + verb": 120.0,
@@ -57,6 +58,13 @@ PATTERNS = {
     # constantly, for different people for different actions, and it is talking
     # to the reader. It tells you an action is characteristic instead of letting
     # the repetition do it. Target 0: there is no good instance of it.
+    # Thirteen instances at 10.5 per 100,000, against a corpus median of zero
+    # and a maximum of 1.58. A whole-book reader stopped counting past twenty
+    # and called it a house tell rather than observed behaviour. Target is
+    # roughly twice the corpus maximum, which leaves room for the beats where
+    # re-reading is the point.
+    "reads it twice":
+        r"read(?:s|)\s+(?:it|them|the\s+\w+)\s+(?:twice|a\s+(?:second|third)\s+time)",
     "habit stated for the reader":
         r"\b(?:the way|as)\s+(?:he|she|they)\s+"
         r"(?:(?:always|normally|usually|invariably|generally)\s+\w+"
