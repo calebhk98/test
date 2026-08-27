@@ -200,7 +200,9 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 "Do the second one every time," Ruth says.
 
-Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself." "Fine." "Every time."
+Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself."
+
+"Fine," Ruth says. "Every time."
 
 ________________
 
@@ -248,6 +250,6 @@ Ruth comes the rest of the way in and sits on the floor across from Chloe, worki
 
 "It's on their site, though, in writing, where anyone can look it up," Chloe says.
 
-"It's on their site," Ruth says, "and it still isn't a real number, because both of those can be true at once, the site and the lie on it. Somebody writes that sentence for a living and nobody anywhere has to check it."
+"It's on their site," Ruth says, "and it still isn't a real number all the same, because both of those can be true at once."
 
 Twice in the week Chloe takes the letters out and counts them; both times the count holds. Then there's an exam on Thursday and a language report due the Monday after, and the letters go back in the drawer and stay there.

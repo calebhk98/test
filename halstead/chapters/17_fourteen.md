@@ -46,7 +46,7 @@ Self defense is three rounds an hour, with one person standing in the middle whi
 
 "My average is forty-five," Chloe says, getting her feet under her on the third attempt, still holding Odile's arm and grinning at her. "So run me again and let me see whether I can beat it."
 
-Kowalczyk, still writing up the board, says, "That's the last round." "So it's pairs for the rest of the hour."
+Kowalczyk, still writing up the board, says, "That's the last round. So it's pairs for the rest of the hour."
 
 "I'm ten seconds off a minute, though, and I want another go at it."
 

@@ -3881,7 +3881,7 @@ Self defense is three rounds an hour, with one person standing in the middle whi
 
 "My average is forty-five," Chloe says, getting her feet under her on the third attempt, still holding Odile's arm and grinning at her. "So run me again and let me see whether I can beat it."
 
-Kowalczyk, still writing up the board, says, "That's the last round." "So it's pairs for the rest of the hour."
+Kowalczyk, still writing up the board, says, "That's the last round. So it's pairs for the rest of the hour."
 
 "I'm ten seconds off a minute, though, and I want another go at it."
 
@@ -4578,9 +4578,9 @@ The men come out a few blocks later, between two parked cars, seven of them in a
 
 Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense, and she puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley, and she's choosing between them when Sam says it.
 
-Sam says, "Hang on." "Let me have this one."
+Sam says, "Hang on." Then, with his eyes still on the men: "Let me have this one."
 
-Ruth stays put. "They're adults." "Three guns."
+Ruth stays put. "They're adults," she says. "Three guns."
 
 "There's seven of them, and I'm basically one myself. That's fair." He is already unhooking his thumbs from his pockets. "I've fought people my whole life. None of them were adults, and none of them were strangers."
 
@@ -4875,7 +4875,9 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 "Do the second one every time," Ruth says.
 
-Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself." "Fine." "Every time."
+Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself."
+
+"Fine," Ruth says. "Every time."
 
 ________________
 
@@ -4923,7 +4925,7 @@ Ruth comes the rest of the way in and sits on the floor across from Chloe, worki
 
 "It's on their site, though, in writing, where anyone can look it up," Chloe says.
 
-"It's on their site," Ruth says, "and it still isn't a real number, because both of those can be true at once, the site and the lie on it. Somebody writes that sentence for a living and nobody anywhere has to check it."
+"It's on their site," Ruth says, "and it still isn't a real number all the same, because both of those can be true at once."
 
 Twice in the week Chloe takes the letters out and counts them; both times the count holds. Then there's an exam on Thursday and a language report due the Monday after, and the letters go back in the drawer and stay there.
 
@@ -4956,7 +4958,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him; 
 
 "Whatever's already in that folder is probably enough for you. I haven't got anything you'd want to write down on top of it."
 
-"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty. The review happens every March, same as everyone else's, and the raise is whatever the review says it is, nothing negotiated separately for you. Everybody on staff signed something close to this same sheet at some point, and every single person on that staff is still here, still doing the work, still getting the same review everyone else gets, and nobody has ever come back to this office asking for the terms to be any different, because the terms are the same terms for everybody who ever sat in that chair, and the day they stop being the same for everybody is the day this whole arrangement stops meaning anything at all, to you or to the next person who sits down in front of this folder after you, and this office would rather lose a candidate over an honest answer than keep a candidate on terms it isn't willing to give the next person as well."
+"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty. The review happens every March, same as everyone else's, and the raise is whatever the review says it is, nothing negotiated separately for you. Everybody on staff signed something close to this same sheet, and nobody has ever come back to this office asking for different terms."
 
 "Here?"
 
