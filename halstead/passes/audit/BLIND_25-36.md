@@ -206,3 +206,27 @@ Method: one chapter, then the review, then the next. No revisiting earlier entri
 
 9. **What do you expect next?** The actual access and read of the file, almost certainly in the next chapter or two — and given Chloe's clearance is explicitly flagged in the closing lines as the thing she's about to spend on this, I expect her professional exposure specifically to become a major point of tension once (if) anything is noticed.
 
+---
+
+## Chapter 34 — The Files
+
+*(Per instructions, paraphrasing rather than quoting long stretches of this one.)*
+
+1. **What happened?** All seven read the file at once, each alone. It's ninety-one dossiers going back to 2013 — thorough, mostly mundane, and openly clueless about how the group communicates or who's actually behind the school. The gut-punch is a four-year-old incident report describing, from the watchers' side, the exact night of the earlier shopping-cart / parking-lot mugging the reader already lived through with the group (the Waffle House, the trolley, the seven armed men): every camera in range came back unrecoverable exactly where the kids appear, the watching unit's own footage included, filed as "no known method." Ruth realizes, in real time, in the chat, that the device is one she built in a single weekend at thirteen purely to dodge detention — meaning a bored teenager's hobby project defeated professional federal surveillance and nobody, on either side, knew it until this moment.
+
+2. **Whose chapter was this? Who is the main character now?** True ensemble — seven parallel readings stitched together by the chat, no single center. It plays like the culmination of the entire rotating-POV structure this run has been building.
+
+3. **What is their IQ? Has your estimate changed?** Yes, sharply, and this is the single most extreme data point in the book: a thirteen-year-old's unpressured weekend fix for a school curfew problem turns out to have defeated dedicated government surveillance hardware she didn't know existed, and it's still an open, unsolved mystery to trained analysts four years later. That's not "smarter than average," that's a difference in kind stated as plainly as the book has ever stated anything.
+
+4. **Are they behaving like real people in their twenties?** Yes — Eli's steady, unbroken tapping rhythm on the kitchen table rather than a dramatic reaction, Ruth staring at the ceiling instead of typing, Kavi's flat "read that back" are all genuinely well-observed responses to a very specific, very believable kind of vertigo: not fear exactly, but the floor moving under a fact you thought you already knew.
+
+5. **Do they know they are unusual yet?** This is the chapter where the question stops being answerable even by them. Ruth's "how good are we" gets asked twice, directly, to Eli, and his answer — "I have never once been at the top of a room in my life" — is the most honest and most unsettling line in the run: even inside their own closed, mutually-calibrated cohort, nobody has ever had reliable external data on where the ceiling actually is.
+
+6. **Did you believe everything in this chapter?** The emotional beats, completely — this is some of the best writing in the book. The mechanics strained my credulity for the first time in a while, though: a homemade RF/jamming rig defeating not just nearby phone cameras but every camera in a radius, including a professional surveillance unit's own recording equipment, specifically and only in the frames where the kids appear, is closer to a superpower than a plausible extension of anything shown earlier (the box in Chapter 16 was pitched as "eight ugly things thrown at once," not this precise or this total). It's the first moment the book asked me to take something on faith rather than earn it.
+
+7. **Is the book hiding something, or steering you?** Very much — the "believed to be in contact... method unknown" standing line, and the single annotated word on Kavi's file ("continuity"), both read like planted threads for whatever comes in the final chapters, and the unresolved "no known method" line is clearly going to matter again.
+
+8. **Anything annoying, repetitive, or novice?** The seven-parallel-openings structure risks feeling like a checklist but the chapter earns it by giving each person one distinct, specific gesture rather than a generic beat. My one real complaint is upstream of style: the surveillance-defeating device edges the book toward the "Mary Sue" territory the closing questions ask about directly — up to now the group's exceptional feats have all had visible mechanism and cost; this one is closer to magic.
+
+9. **What do you expect next?** I expect the finale to deal with the fallout of this discovery rather than a new investigation — either confronting whoever built and funded the school, or reckoning with what it means that a government unit has been quietly, ineffectually watching them for over a decade with a mandate nobody has cancelled.
+
