@@ -177,7 +177,7 @@ More go in before the break, but they are the essays they have been since Octobe
 
 "I know," Chloe says. "There's a chair, but I've been looking at it."
 
-Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
+"What is it you're reading, anyway," her grandmother says, and Chloe tells her: who wrote the two of them and which is which, what the argument is about, why the second one is the harder read and where it stops being about courts at all. It takes a while. Her grandmother listens to the whole of it with her hand on the door frame, says, "Well, that's something," and puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
 
 The Tuesday is in the second week of February.
 

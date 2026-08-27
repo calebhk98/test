@@ -2,7 +2,7 @@
 
 *September 2023*
 
-The chat is five years old. They wrote the encryption themselves, mostly to keep a teacher from reading it while they arranged getting out of the building, and none of them has ever used another.
+The chat is five years old. They wrote the encryption themselves, mostly to keep a teacher from reading what they said to each other over a shoulder at dinner, and none of them has ever used another.
 
 This is the first September when all of them are somewhere else. Eli, a long way from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, a coastline away from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for hundreds, an hour from the apartment she rents.
 

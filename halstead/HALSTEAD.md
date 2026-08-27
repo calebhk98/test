@@ -3013,7 +3013,7 @@ More go in before the break, but they are the essays they have been since Octobe
 
 "I know," Chloe says. "There's a chair, but I've been looking at it."
 
-Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
+"What is it you're reading, anyway," her grandmother says, and Chloe tells her: who wrote the two of them and which is which, what the argument is about, why the second one is the harder read and where it stops being about courts at all. It takes a while. Her grandmother listens to the whole of it with her hand on the door frame, says, "Well, that's something," and puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
 
 The Tuesday is in the second week of February.
 
@@ -3716,7 +3716,7 @@ With both hands she takes the lid off and turns it toward Chloe. Inside is a cir
 
 The box goes in the drawer under Ruth's window and stays there.
 
-Getting out of the building on a Saturday is a thing you arrange on a Thursday; in October the arranging stops working three weeks running, so on the third the duty teacher stops at the end of the long table, says she hopes the bus into town is a comfortable one, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
+Everything gets arranged on their phones, and in October the duty teacher stops at the end of the long table, says she is sure Mrs. Okonkwo would be delighted to hear what her handwriting reminds them of, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
 
 Kavi has the first version running by the end of the month on the school's own machines, because a service inside the building looks like every other service in it, and Ruth writes the encryption herself out of the term's material rather than lifting something already tested.
 
@@ -3732,17 +3732,17 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 "It has to look like what this network is already full of, which is a hundred and sixty machines checking in with each other about the weather every few minutes."
 
-That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
+That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds, and it is still holding at Christmas.
 
-Bex has the day out loud before the bus is off the gravel, the hardware place first because it shuts at noon, then food, then everything after that, and she revises it twice before the main road, moving the food and then moving the food back.
+Bex has the Saturday out loud before breakfast is cleared, the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that, and she revises it twice before the plates are stacked, moving the kitchens and then moving them back.
 
-"If we get the later bus home we're," Chloe says.
+"If we leave the workshop till after, we're," Chloe says.
 
-"Walking the last bit in the dark, which is the whole reason we're on the earlier bus, so that's settled," Bex says, and goes down the aisle holding the rail to tell the rest of them.
+"Doing it in the dark with the good lamp already signed out, which is the whole reason it goes first, so that's settled," Bex says, and goes down the table to tell the rest of them.
 
-Chloe has the seat behind the driver and keeps it the whole way in; in town she does the hardware place while the rest of them are still on the pavement outside settling the order of the afternoon.
+Chloe gets to the workshop before the technician has the shutter all the way up, and does what she came for while the rest of them are still out in the corridor settling the order of the afternoon.
 
-The plan works, all of it, including the food.
+The plan works, all of it, including the kitchens.
 
 Formal epistemology starts with a sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards for a minute with her bag still open before she goes on to German.
 
@@ -4446,6 +4446,8 @@ The tongs go home to the hook on the back of her door, beside the bag she made i
 ________________
 
 Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end.
+
+A man two doors up asks over the fence how the school is, and Chloe gives him the year: which subjects moved, what the forge is, why the languages go in the order they go in, what she is bad at and how bad. He waits until she is finished, says the school sounds like a lot, and goes back to his hose.
 
 The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working one board every day.
 
@@ -5205,7 +5207,7 @@ Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word 
 
 Chloe gets caught on her way past, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
 
-Dana is in the chair along from her, on her phone until Chloe gets that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks, and Chloe tells her it finished about an hour ago, and that Georgetown is August. "That's good," Dana says, and turns to the woman on her other side to say something about the parking.
+Dana is in the chair along from her, on her phone until Chloe gets that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks, and Chloe tells her: that it finished about an hour ago, what the last week of it was, which of the exams she is still turning over, that Georgetown is August and why she picked it over the other one. "That's good," Dana says, and turns to the woman on her other side to say something about the parking.
 
 The third she catches is a stranger to Chloe, a girl from another family's cluster of chairs entirely, in a gown still cinched with somebody's binder clip. By the time the girl has extracted herself and gone to find her own people, Chloe's grandmother turns to Meg with the satisfaction she'd bring to a verdict on a roast. "You all seem like very nice young people," she says, to the field at large.
 
@@ -5336,7 +5338,7 @@ So she takes Georgetown, but the two years everyone else is calling a wait becom
 
 *September 2023*
 
-The chat is five years old. They wrote the encryption themselves, mostly to keep a teacher from reading it while they arranged getting out of the building, and none of them has ever used another.
+The chat is five years old. They wrote the encryption themselves, mostly to keep a teacher from reading what they said to each other over a shoulder at dinner, and none of them has ever used another.
 
 This is the first September when all of them are somewhere else. Eli, a long way from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, a coastline away from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for hundreds, an hour from the apartment she rents.
 
