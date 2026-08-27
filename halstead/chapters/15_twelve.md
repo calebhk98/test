@@ -144,7 +144,7 @@ ________________
 
 At the bottom, in that typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
-Chloe is annoyed when the alarm wakes her, the small one that sits in her ear and means watch, at four in the morning. She's pulled a watch at this hour before, but this is the first one nobody posted beforehand, and she's in the corridor in seconds, Kavi already there.
+The alarm wakes her at four in the morning, the small one that sits in her ear and means watch. She's pulled a watch at this hour before, but this is the first one nobody posted beforehand, and she's in the corridor in seconds, Kavi already there.
 
 "I saw it, I was still up. There's four of them, they're at the loading side, they came over the fence about a minute ago."
 

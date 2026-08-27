@@ -136,7 +136,7 @@ The reading takes days. On the Tuesday she goes at it all afternoon and most of 
 
 On the Wednesday she builds the other side, because a man writing in 1961 makes the case she cannot get past, and it takes most of the day to get him into a single place and see the shape of it. There is a hole in the middle of what he says, but he walks straight past it, so she writes the missing piece in herself, on his side of the page, since knocking down the weak version afterward would be doing his job for him. Then she finds the objections that open cracks in what he has built, and answers all of them.
 
-By Thursday afternoon she has stopped being angry and started being interested.
+By Thursday afternoon she has stopped arguing with the page and started following it.
 
 It goes in on the Monday, twenty-eight pages of it, but Hearn gives it back a week later with a B on the front.
 

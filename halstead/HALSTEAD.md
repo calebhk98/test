@@ -3170,7 +3170,7 @@ The reading takes days. On the Tuesday she goes at it all afternoon and most of 
 
 On the Wednesday she builds the other side, because a man writing in 1961 makes the case she cannot get past, and it takes most of the day to get him into a single place and see the shape of it. There is a hole in the middle of what he says, but he walks straight past it, so she writes the missing piece in herself, on his side of the page, since knocking down the weak version afterward would be doing his job for him. Then she finds the objections that open cracks in what he has built, and answers all of them.
 
-By Thursday afternoon she has stopped being angry and started being interested.
+By Thursday afternoon she has stopped arguing with the page and started following it.
 
 It goes in on the Monday, twenty-eight pages of it, but Hearn gives it back a week later with a B on the front.
 
@@ -3399,7 +3399,7 @@ ________________
 
 At the bottom, in that typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
-Chloe is annoyed when the alarm wakes her, the small one that sits in her ear and means watch, at four in the morning. She's pulled a watch at this hour before, but this is the first one nobody posted beforehand, and she's in the corridor in seconds, Kavi already there.
+The alarm wakes her at four in the morning, the small one that sits in her ear and means watch. She's pulled a watch at this hour before, but this is the first one nobody posted beforehand, and she's in the corridor in seconds, Kavi already there.
 
 "I saw it, I was still up. There's four of them, they're at the loading side, they came over the fence about a minute ago."
 
@@ -3853,15 +3853,15 @@ Although she is steady enough prone by then, kneeling and standing come in befor
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card instead of the clay.
 
-"It's seven and about a fifth," Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
+"It's seven and about a fifth," Halloran says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
-"The card says what it says, Aymar," Voss says, keeping his eyes on the range.
+"The card says what it says, Halloran," Voss says, keeping his eyes on the range.
 
 "That card was printed before somebody fitted a new head on the throwing arm, so run a count off the card and you're early every time, all the way down."
 
-Voss looks at the stopwatch for about as long as it takes him to decide whether Aymar is right, and what he says at the end is, "Firing point four, you're up."
+Voss looks at the stopwatch for about as long as it takes him to decide whether Halloran is right, and what he says at the end is, "Firing point four, you're up."
 
-A different card is taped to the bench later that week with a different number on it, and Ruth spends the rest of the term making sure people know the stopwatch it came off was Aymar's. Kavi catches up with Chloe on the path afterward, walking backward with his kit hitched on a hip.
+A different card is taped to the bench later that week with a different number on it, and Ruth spends the rest of the term making sure people know the stopwatch it came off was Halloran's. Kavi catches up with Chloe on the path afterward, walking backward with his kit hitched on a hip.
 
 "How's that supposed to work with two people, though?"
 
@@ -4114,7 +4114,7 @@ Voss lets them look at it for a while, and when he does start he starts with the
 
 "That is a turret, and it puts a live round down the lane on a cycle you can set a watch by. Left to right, sixty metres of open ground, in front of you, behind the glass, and you will be firing across its path on a count you take off the mechanism." He gives them a moment with that. "The target is the round. Not the turret, not a clay, not a plate hung off a rope. You are shooting the bullet."
 
-Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
+Halloran asks why, out loud, in the tone of somebody asking on behalf of ninety people.
 
 "Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second. You will spend most of it missing by the width of a dime before you ever hit that dime on purpose, and there is no shortcut through that part, not for anybody who has ever stood on this range. Put the rifle down when your arm shakes. Pick it back up when it doesn't."
 

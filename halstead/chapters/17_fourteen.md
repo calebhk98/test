@@ -18,15 +18,15 @@ Although she is steady enough prone by then, kneeling and standing come in befor
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card instead of the clay.
 
-"It's seven and about a fifth," Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
+"It's seven and about a fifth," Halloran says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
-"The card says what it says, Aymar," Voss says, keeping his eyes on the range.
+"The card says what it says, Halloran," Voss says, keeping his eyes on the range.
 
 "That card was printed before somebody fitted a new head on the throwing arm, so run a count off the card and you're early every time, all the way down."
 
-Voss looks at the stopwatch for about as long as it takes him to decide whether Aymar is right, and what he says at the end is, "Firing point four, you're up."
+Voss looks at the stopwatch for about as long as it takes him to decide whether Halloran is right, and what he says at the end is, "Firing point four, you're up."
 
-A different card is taped to the bench later that week with a different number on it, and Ruth spends the rest of the term making sure people know the stopwatch it came off was Aymar's. Kavi catches up with Chloe on the path afterward, walking backward with his kit hitched on a hip.
+A different card is taped to the bench later that week with a different number on it, and Ruth spends the rest of the term making sure people know the stopwatch it came off was Halloran's. Kavi catches up with Chloe on the path afterward, walking backward with his kit hitched on a hip.
 
 "How's that supposed to work with two people, though?"
 
