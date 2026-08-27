@@ -53,6 +53,12 @@ TARGETS = {
     # uses it four times as often as the most hand-heavy of 23 novels, and the
     # median novel never uses it at all.
     "both hands": 10.0,
+    # Corpus max is 3.3 and the median novel never does it once. Target is that
+    # maximum: no more of the formula than the most preference-stating of 23
+    # published novels. The bare word 'rather' is deliberately left untargeted -
+    # at 95.8 against a corpus median of 72.6 it is ordinary English, and it is
+    # the formula rather than the word that the author can hear.
+    "'I'd rather X than Y'": 3.0,
     "'the whole/rest of it'": 10.0,
     "turning an object": 6.0,
     "announced withholding": 3.0,
@@ -84,6 +90,13 @@ PATTERNS = {
     # to it; this one was never measured and stands at 37 uses across 22
     # chapters. Nothing measures anything unless it is in this report.
     "both hands":            r"\bboth hands\b",
+    # The author, by ear: "I'd rather tell you that plainly than X. IDK how to
+    # search for that, but everytime I see it, I can tell." It is a stated
+    # preference with the rejected alternative attached, and it is spread across
+    # speakers, which is what makes it read as house voice rather than anyone's
+    # character. Counted two ways: the whole word, and the formula itself.
+    "the word 'rather'":     r"\brather\b",
+    "'I'd rather X than Y'": r"\b(?:I'?d|I would|he'?d|she'?d|they'?d)\s+rather\b[^.;!?]{0,80}\bthan\b",
     "the word 'flat'":       r"\bflat(?:ly)?\b",
     "'the way you/she would'": r"\bthe way (?:you|she|he|they|somebody|a person|anybody)\b",
     "announced withholding": r"\bkeeps? (?:it|that|the rest of it|them) to (?:him|her|them)sel(?:f|ves)\b|\bkept (?:it|that) to (?:him|her)self\b",
