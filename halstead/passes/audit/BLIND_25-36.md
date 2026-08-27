@@ -230,3 +230,25 @@ Method: one chapter, then the review, then the next. No revisiting earlier entri
 
 9. **What do you expect next?** I expect the finale to deal with the fallout of this discovery rather than a new investigation — either confronting whoever built and funded the school, or reckoning with what it means that a government unit has been quietly, ineffectually watching them for over a decade with a mandate nobody has cancelled.
 
+---
+
+## Chapter 35 — Nine Minutes
+
+1. **What happened?** Eli and Kavi's covert monitoring tool goes dark for exactly nine minutes, three times over six weeks, and comes back byte-for-byte identical every time — invisible to every log except the specific, paranoid, watcher-distrusts-the-watched system Kavi built precisely to catch this kind of thing. The group concludes someone found the tool, inspected it, and put it back rather than killing it, following it, or feeding it garbage — the one option that only makes sense if that someone doesn't realize anyone would notice it was ever gone. Per their own written rules, the response is to do nothing and give no sign of having noticed.
+
+2. **Whose chapter was this? Who is the main character now?** Weighted toward Eli and Kavi, the two who actually built and monitor the tool, with the rest of the group checking in through the chat — the most technically focused chapter in the run, and the tensest.
+
+3. **What is their IQ? Has your estimate changed?** Yes, in a very specific and well-earned way: this chapter quantifies a rival's skill level relative to theirs rather than just their own. Whoever did this is good enough to defeat every ordinary log and leave the tool in a state indistinguishable from untouched — but not good enough to beat a specifically designed double-blind verification system, and careless enough to repeat the identical nine-minute window twice, which reads as "measured" rather than "clumsy" and therefore traceable. Eli's flat verdict — "he's very slightly wrong about how good we are" — is the most confident, least anxious claim of superiority anyone in the book has made yet, and it's backed by real technical reasoning rather than assertion.
+
+4. **Are they behaving like real people in their twenties?** Yes, and quietly so — Eli working through the dread by simply continuing to work, shirt off in a hot apartment with a fan aimed at his neck; Ruth reopening the stop-clause page "the way she'd find a light switch in her own house in the dark" rather than acting on it; Theo closing his laptop the instant before he's let himself finish the thought. Nobody panics, nobody grandstands, and that restraint reads as more frightening than a bigger reaction would have.
+
+5. **Do they know they are unusual yet?** Yes, fully, and this chapter shows the flip side of Chapter 31's crisis — where Ruth once doubted whether the gap between them and ordinary people was real, here the group calmly outmaneuvers what reads like a serious, resourced adversary and treats the win as expected rather than remarkable.
+
+6. **Did you believe everything in this chapter?** Yes — more than the previous chapter. The tradecraft here (parallel independent logs, "logs that agree read closer to a fact," a watcher built specifically to distrust a clean report) is precise without showing off, and it restores some of the credibility Chapter 34's camera-erasing device had stretched.
+
+7. **Is the book hiding something, or steering you?** Very directly — the whole chapter exists to establish that someone competent now knows about them, and that the group's chosen strategy is silence. That's clearly a fuse being lit for the final chapter.
+
+8. **Anything annoying, repetitive, or novice?** Minimal. The three-incidents-then-group-reaction structure is a little mechanical but doesn't overstay itself, and the chapter is otherwise tightly controlled.
+
+9. **What do you expect next?** With only one chapter left, I expect either a direct confrontation with whoever is on the other end of this — plausibly the founder himself, given Chapter 32's single-person financial fingerprint — or a final chapter that deliberately declines to resolve it, which given everything else this book has done deliberately, wouldn't surprise me.
+
