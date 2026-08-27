@@ -3851,15 +3851,15 @@ Although she is steady enough prone by then, kneeling and standing come in befor
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card instead of the clay.
 
-"It's seven and about a fifth," Halloran says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
+"It's seven and about a fifth," Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
-"The card says what it says, Halloran," Voss says, keeping his eyes on the range.
+"The card says what it says, Aymar," Voss says, keeping his eyes on the range.
 
 "That card was printed before somebody fitted a new head on the throwing arm, so run a count off the card and you're early every time, all the way down."
 
-Voss looks at the stopwatch for about as long as it takes him to decide whether Halloran is right, and what he says at the end is, "Firing point four, you're up."
+Voss looks at the stopwatch for about as long as it takes him to decide whether Aymar is right, and what he says at the end is, "Firing point four, you're up."
 
-A different card is taped to the bench later that week with a different number on it, and Ruth spends the rest of the term making sure people know the stopwatch it came off was Halloran's. Kavi catches up with Chloe on the path afterward, walking backward with his kit hitched on a hip.
+A different card is taped to the bench later that week with a different number on it, and Ruth spends the rest of the term making sure people know the stopwatch it came off was Aymar's. "He's got my last name," she says, when Chloe asks why she keeps bringing it up. "So he's mine. Those are the rules." Kavi catches up with Chloe on the path afterward, walking backward with his kit hitched on a hip.
 
 "How's that supposed to work with two people, though?"
 
@@ -4112,7 +4112,7 @@ Voss lets them look at it for a while, and when he does start he starts with the
 
 "That is a turret, and it puts a live round down the lane on a cycle you can set a watch by. Left to right, sixty metres of open ground, in front of you, behind the glass, and you will be firing across its path on a count you take off the mechanism." He gives them a moment with that. "The target is the round. Not the turret, not a clay, not a plate hung off a rope. You are shooting the bullet."
 
-Halloran asks why, out loud, in the tone of somebody asking on behalf of ninety people.
+Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
 
 "Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second. You will spend most of it missing by the width of a dime before you ever hit that dime on purpose, and there is no shortcut through that part, not for anybody who has ever stood on this range. Put the rifle down when your arm shakes. Pick it back up when it doesn't."
 

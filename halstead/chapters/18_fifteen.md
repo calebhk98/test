@@ -10,7 +10,7 @@ Voss lets them look at it for a while, and when he does start he starts with the
 
 "That is a turret, and it puts a live round down the lane on a cycle you can set a watch by. Left to right, sixty metres of open ground, in front of you, behind the glass, and you will be firing across its path on a count you take off the mechanism." He gives them a moment with that. "The target is the round. Not the turret, not a clay, not a plate hung off a rope. You are shooting the bullet."
 
-Halloran asks why, out loud, in the tone of somebody asking on behalf of ninety people.
+Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
 
 "Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second. You will spend most of it missing by the width of a dime before you ever hit that dime on purpose, and there is no shortcut through that part, not for anybody who has ever stood on this range. Put the rifle down when your arm shakes. Pick it back up when it doesn't."
 
