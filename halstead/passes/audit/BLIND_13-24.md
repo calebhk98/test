@@ -185,3 +185,29 @@ Method: chapters 1–12 read straight through with no notes, as a reader's memor
 **11. What do you expect next?** I expect the summer listlessness to matter — either as ordinary burnout that passes, or as the first sign of something the book has been building toward with all the psychological-appointment history from the early chapters. I also expect Marek to reappear again given how deliberately the book keeps returning to him.
 
 ---
+
+## Chapter 20 -- The Parking Lot
+
+**1. What happened?** Chloe, Ruth, Sam, and Nadia use their accumulated hacking, surveillance-defeat, and infiltration skills to sneak off campus at night for waffles at a diner, and on the walk back are confronted by seven armed muggers. Sam asks to fight them alone, does, and dispatches all seven in twenty-two seconds without a scratch; the group then gives first aid to the unconscious men and leaves without reporting it, reasoning that a police report would expose the whole excursion.
+
+**2. How old is the main character now?** Sixteen — the chapter falls inside chapter 19's dated span (April 2022–June 2023) and no age is disputed.
+
+**3. IQ?** Not a factor in this chapter's central set piece at all — the fight is entirely physical competence, and Chloe's actual intellectual contribution is her post-fight read of the muggers ("if you had one usable skill... you'd be doing something else with your evenings"), which is a sharp, cold, and slightly unpleasant piece of analysis rather than a warm one.
+
+**4. Is she behaving like a real person of that age?** The diner scene beforehand is the best "these are teenagers" writing in the whole book — the waffle ritual, the shopping-cart stunt, the pedantic argument about "hither," Ruth's brother's letter landing quietly in the middle of banter. It's genuinely funny and warm and reads true. Then the mugging happens and nothing about the response is age-plausible in any direction: no fear, no adrenaline crash, no shakiness afterward, just competent triage and a debrief about tactics, followed by walking home arguing about a waitress. Real sixteen-year-olds who fight off seven armed adults do not process it this calmly by the next paragraph.
+
+**5. Does she think she is smart? Do her friends?** This chapter is one of the more openly unflattering ones about how the group thinks of outsiders. Chloe's assessment of the muggers — calling them, in the text's own word, "retarded" for not having a "usable skill" — reads as callous and classist in a way I don't think the book intends to flag as a character flaw; it's delivered as simply correct, and nobody at the table pushes back on either the word or the sneer behind it. That's the ugliest the protagonist has been allowed to sound in the whole book, and I don't think it was meant to land that way.
+
+**6. How hard is the work, compared to what someone that age normally does? Would an adult find it hard?** Beating seven armed men, three with guns drawn, in twenty-two seconds without injury is not hard for Sam in the text — it's presented as almost insultingly easy, which is the point of the scene, but it means the "how hard is this" question stops making sense here. This isn't hard schoolwork anymore; it's action-movie choreography, and no real person of any age or training does this to seven-to-one armed odds and walks away clean.
+
+**7. Did you believe everything in this chapter?** The night-out logistics (camera loops, badge cloning, patrol timing) I believed as an extension of skills the book has spent six chapters establishing. I did not believe the fight itself as a physical event — three drawn guns against one teenager ending in twenty-two seconds with zero shots fired and zero injuries strains credulity past where "these kids are extraordinary" can carry it — and I did not believe the group's total emotional flatness afterward, giving first aid and bantering about a waitress minutes after nearly being shot.
+
+**8. Is the book hiding something from you, or steering you? What?** Yes — the group's calculus for not reporting an armed robbery to the police ("that's home, and not coming back") is presented as obviously correct, and I'm meant to nod along, but it's actually a chilling thing for four teenagers to decide on their own: seven armed men are now free to rob someone who won't be able to fight back. The book doesn't examine that cost at all, and I think it's steering me toward admiring the tactics rather than questioning the ethics.
+
+**9. What reading level is the prose?** Same clean, plain-sentence style as ever; this chapter is dialogue-heavy and easy to read, probably one of the more accessible chapters simply because it isn't loaded with technical vocabulary.
+
+**10. Anything annoying, repetitive, or that felt like a novice wrote it?** The use of "retarded" as a casual insult stood out badly to me — not because a teenager wouldn't say it, but because the narrative voice doesn't seem to register it as a character note at all, and in a book this controlled about word choice everywhere else, it reads like an oversight rather than a deliberate character flaw being shown to the reader.
+
+**11. What do you expect next?** I expect this incident to either come back (the muggers, the missing gun parts, someone noticing) or to be quietly dropped, and I'm watching for which. I also expect the pattern of "no consequence, no fear response, immediate joke" to eventually break, because emotional flatness this consistent across this many escalating chapters is starting to feel like a structural choice I don't yet understand rather than an accident.
+
+---
