@@ -32,6 +32,13 @@ import statistics as st
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+
+# The group chat is not in files of its own. It is written inside the ordinary
+# chapters, as name-prefixed lines, across eleven of them from chapter 24 on.
+# This was an empty list, so collect_chat() iterated over nothing and the group
+# chat reported "nothing with at least 8 lines" every time it was run - several
+# hundred lines of the back third of the book, unmeasured, in the one instrument
+# built to answer whether the cast sounds alike.
 CHAT_FILES = []
 # Only these seven ever post in the group chat.
 CAST = ["chloe", "ruth", "sam", "kavi", "nadia", "eli", "theo"]
@@ -68,10 +75,16 @@ def normalise(t):
     return t.replace('“', '"').replace('”', '"')
 
 
+def chat_sources(root):
+    """Every file the chat is actually written in."""
+    files = sorted((root / "chapters").glob("*.md"))
+    files += [root / n for n in CHAT_FILES if (root / n).is_file()]
+    return files
+
+
 def collect_chat(root):
     out = collections.defaultdict(list)
-    for name in CHAT_FILES:
-        f = root / name
+    for f in chat_sources(root):
         if not f.is_file():
             continue
         for line in f.read_text(encoding="utf-8").split("\n"):
