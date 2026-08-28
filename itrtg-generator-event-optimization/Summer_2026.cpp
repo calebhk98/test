@@ -21,35 +21,35 @@ using namespace std;
 typedef long long ll;
 
 // USER SETTINGS ---------------------------------------------------------------------
-const int EVENT_DURATION_DAYS = 10;
-const int EVENT_DURATION_HOURS = 17;
-const int EVENT_DURATION_MINUTES = 2;
-const int EVENT_DURATION_SECONDS = 50;
+const int EVENT_DURATION_DAYS = 8;
+const int EVENT_DURATION_HOURS = 18;
+const int EVENT_DURATION_MINUTES = 28;
+const int EVENT_DURATION_SECONDS = 12;
 const int UNLOCKED_PETS = 130;
 const int DLs = 16045;
 const int AL = 372;
 
 array<int, 25> currentLevels = { 
     // Current Production Levels
-    13, 20, 20,
-    16, 13, 20,
-    7, 10, 9,
-    8, 2, 8, 
+    17, 23, 22,
+    21, 14, 24,
+    8, 12, 10,
+    12, 3, 12, 
     
     // Current Speed Levels
     10, 10, 10,
     10, 10, 10,
-    7, 10, 8,
-    7, 2, 8,
+    9, 10, 10,
+    10, 2, 10,
     
     0 // Dummy placeholder. Keep 0
 };
 array<double, 12> resourceCounts = { 
     // Current resource counts
-    2335000, 9210000, 3841000, 
-    1665000, 1218000, 1860000, 
-    5379000/((500.0+DLs)/5.0), 979316, 5099,
-    14134/(0.5+AL/100.0), 61, 3817/(UNLOCKED_PETS/100.0)
+    5334000, 21025000, 8286000, 
+    3515000, 2376000, 4186000, 
+    17058000/((500.0+DLs)/5.0), 2298000, 16351,
+    71695/(0.5+AL/100.0), 192, 15419/(UNLOCKED_PETS/100.0)
 };
 
 // Your current upgrade path/the path you want to optimize. If left blank, a random path will be generated.
@@ -630,6 +630,7 @@ bool tryInsertUpgrade(OptimizationPackage& package, SearchContext& context) {
 bool tryRemoveUpgrade(OptimizationPackage& package, SearchContext& context) {
 
     int pathLength = package.path.size() - 1;
+    if (pathLength < 2) { package.deadRemove = true; return false; } // nothing meaningful left to remove
 
     uniform_int_distribution<> swapDist(0, pathLength - 2);
     int startPos = swapDist(package.randomEngine);
@@ -658,6 +659,7 @@ bool tryRemoveUpgrade(OptimizationPackage& package, SearchContext& context) {
 bool tryReplaceUpgrade(OptimizationPackage& package, SearchContext& context) {
 
     int pathLength = package.path.size();
+    if (pathLength < 1) return false;
 
     uniform_int_distribution<> positionDist(0, pathLength - 1); // -1 because we access index, not insert
     int startPosition = positionDist(package.randomEngine);
@@ -703,6 +705,7 @@ bool trySwapUpgrades(OptimizationPackage& package, SearchContext& context) {
         return false;
     }
 
+    if (searchLength < 1) return false;
     uniform_int_distribution<> swapDist(0, searchLength - 1);
     int startPos = swapDist(package.randomEngine);
     ensureSnapshots(package, context);
@@ -750,6 +753,7 @@ bool tryRotateSubsequences(OptimizationPackage& package, SearchContext& context)
 
     // Pick a Random Subsequence Rage [rangeStart, rangeEnd]
     // We need at least 3 items to perform meaningful rotation (2 items is just a swap)
+    if (maxIndex < 2) return false;
     uniform_int_distribution<> startDist(0, maxIndex - 2);
     int rangeStart = startDist(package.randomEngine);
 
@@ -792,6 +796,7 @@ bool exhaustRotateSubsequences(OptimizationPackage& package, SearchContext& cont
     int maxIndex = pathLength - 1;
     double testScore;
 
+    if (maxIndex < 2) return false;
     uniform_int_distribution<> startOffsetDist(0, maxIndex - 2);
     int startOffset = startOffsetDist(package.randomEngine);
     ensureSnapshots(package, context);
