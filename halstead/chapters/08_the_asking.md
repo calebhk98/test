@@ -68,7 +68,7 @@ There are more of them than will go in a line: the bridge going over sideways al
 
 "It was hard," she says. Dr. Ammons writes that down, underlines part of it, and the rest of the hour goes quiet around it, only the clock moving now, while Chloe's feet find the floor again and settle against the tile beneath the couch.
 
-In the car her mom holds the wheel with both hands, the engine off.
+In the car her mom holds the wheel, the engine off.
 
 "What did she say about me?"
 
@@ -98,7 +98,7 @@ There is a program in the building. It is one hour, on a Thursday, with a woman 
 
 Her mom says, "I asked her that too. She told me how much you'd get out of it."
 
-Chloe pulls the covers up over her knees and holds them there with both hands.
+Chloe pulls the covers up over her knees and holds them there.
 
 "Is it Halstead?" Chloe's hands are still fisted in the covers. "Is it finally happening?"
 

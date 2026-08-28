@@ -38,7 +38,7 @@ Sam puts his fork down before he asks it. "How old is he now?"
 
 "What are you going to tell him?"
 
-"I'll tell him about the waffles here instead, since that's a story he can actually picture." She says it evenly, but she is looking at the cup and not at any of them.
+"I'll tell him about the waffles here, since that's a story he can actually picture." She says it evenly, but she is looking at the cup and not at any of them.
 
 Sam has the syrup upside down over his second plate, timing the pour and counting under his breath. "Weeks of it starting Friday, so is anybody actually doing anything with the summer, or is it the usual."
 
@@ -54,7 +54,7 @@ Chloe has the next part of that ready, but gets as far as the first word of it.
 
 Chloe takes her hand off the table and puts it in her lap; by the time anybody answers, Nadia is back to dividing the bill.
 
-Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He puts the card down and leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
+Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
 "It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and every dictionary in every library would need rewriting every few years just to keep up with what people happen to like the sound of," Ruth says.
 
@@ -142,7 +142,7 @@ Sam takes it in silence for a second.
 
 Ruth has her bag back on her shoulder, the strap settled across it, and shrugs. "A gun's a prop unless you actually use it, but all of them just stood there holding theirs. They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
 
-"Fine, say that was too easy." Sam puts his hands up and lets them drop again. "So who do I actually fight, then?"
+"Fine, say that was too easy. So who do I actually fight, then?"
 
 "Go back and fight the waitress," Nadia says.
 
@@ -164,7 +164,7 @@ ________________
 
 They're back over the fence a few minutes later, Chloe's camera loop already unwinding itself toward normal, and the corridor is empty and quiet the whole way to their own doors.
 
-Chloe sets her shoes down by the door, laces still knotted from being kicked off rather than untied, and lies on top of the covers for a while before she gets under them.
+Chloe's shoes sit by the door, laces still knotted from being kicked off rather than untied, and she lies on top of the covers for a while before she gets under them.
 
 ________________
 

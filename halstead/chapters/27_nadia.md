@@ -238,7 +238,7 @@ Whoever answers the second question properly gets a longer interview than the sc
 
 The ones she already has are the ones who answered it.
 
-A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine, but none of it's theirs, and I'd rather fix the part that's actually broken than sign my name to the rest of it." She writes the ceiling herself that night.
+A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine, but none of it's theirs, and I'd rather fix the part that's actually broken." She writes the ceiling herself that night.
 
 Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts.
 
@@ -246,7 +246,7 @@ Bev drives out on her own on a Saturday in April to five employers Nadia had yet
 
 "I made it up in the car on the way over. The first of them asked me what happens if it doesn't work and I had nothing to say to him, so I gave him a month. The second never asked, but I said it anyway."
 
-"Keep it, and it goes into the template tonight." She rolls it in that evening and leaves it there.
+"Keep it, and it goes into the template tonight." She rolls it in that evening.
 
 Manny finds the generator marking a whole category wrong, weeks of it, and comes to her with the fix in hand rather than the finished job. Nadia reads the mail standing up, tells him to put it out, and is onto the next thing inside a minute.
 

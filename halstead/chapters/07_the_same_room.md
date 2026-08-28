@@ -60,7 +60,7 @@ ________________
 
 Chloe waits for the phone, day after day.
 
-Instead of her room, she takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she is up and across the floor before the first ring finishes if she is anywhere near it. Twice she gets it on the second ring, once on the first: her grandmother, a man asking for her dad, a woman who wants to know whether her dad is the registered owner of the vehicle. Each time she says the call is for somebody else and hands it over, then sits back down with the book open where it was before, and on the ninth day her mom tells her that these things can take weeks.
+She takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she is up and across the floor before the first ring finishes if she is anywhere near it. Twice she gets it on the second ring, once on the first: her grandmother, a man asking for her dad, a woman who wants to know whether her dad is the registered owner of the vehicle. Each time she says the call is for somebody else and hands it over, then sits back down with the book open where it was before, and on the ninth day her mom tells her that these things can take weeks.
 
 "How many weeks, though? I want an actual number," Chloe says, standing at the counter with the book still open against her chest.
 
@@ -86,7 +86,7 @@ Before she answers, her mom looks out her own window, and her dad's hands come u
 
 ________________
 
-Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for weeks, carries it in with both hands, hugged against her chest instead of held out to hand over.
+Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for weeks, carries it in hugged against her chest instead of held out to hand over.
 
 "There she is." The librarian takes it and tsks, turning the date card over. "It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait."
 
@@ -96,7 +96,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
-The librarian waits until she has actually run out, looking at her over the top of the card. "That's a real month, that is. But it is still four at a time, like in June, and the new ones came in this morning and are still on the cart, so go on and pick something good," she says, and puts the stamp down.
+The librarian waits until she has actually run out, looking at her over the top of the card. "That's a real month, that is. But it is still four at a time, like in June, and the new ones came in this morning and are still on the cart, so go on and pick something good," she says.
 
 Chloe takes her four off the cart, still catching her breath, and finishes two of them by Friday.
 

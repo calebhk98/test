@@ -32,7 +32,7 @@ The paperwork comes first, the electronic questionnaire for national security po
 
 Then he calls, the second week of October, to set a time; the Friday night before goes on straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
 
-Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 Before he asks her anything, he tells her what the visit is for: a full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
@@ -54,7 +54,7 @@ At that he looks up, once, the pen briefly still against the page. "That's young
 
 "It is. My mother thought so too, and she is the reason it took a year to arrange. She wanted somebody to say out loud that I could come home whenever I asked to, and nobody would put that in writing for her, so she drove up and stood in the building until they said it to her face."
 
-Rather than press her for more he lets it sit there and moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
+Rather than press her for more he moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
 
 Chloe does, a level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
@@ -112,7 +112,7 @@ Before the funding he mentions the reference interviews, all of them done now, a
 
 He doesn't confirm it, but he doesn't deny it either, and he writes something down before he goes on.
 
-The funding is what he asks about: who the school's principal donor is, name or foundation, anything at all, and he waits while she actually thinks about it instead of answering fast to be done with it.
+The funding is what he asks about: who the school's principal donor is, name or foundation, anything at all, and he waits while she actually thinks about it.
 
 "I have no idea," Chloe says. "Whoever pays for it stayed background noise my whole life there. If you're a child, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." She turns the coffee mug a quarter turn on the table, the only thing she's done with her hands all visit.
 

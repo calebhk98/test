@@ -6,7 +6,7 @@ Mr. Amberg runs the exit interviews himself, fifteen minutes each, a dozen stude
 
 The rest of April carries on exactly as scheduled around it: the twelves still have History first thing every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
 
-What changes is dinner, because by the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except the whole table is comparing decisions instead of scores, a stranger thing to sit through with a fork in hand. A boy from the materials wing tells the whole table at dinner about turning it down outright, about his mother and the decade of silence if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. People laugh, and he goes back to his tray and lets the subject close there for the night, and the table lets it go without asking him the number. A younger girl comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed, and the boys next to her let her have it, volume included, so the whole end of the table stays on it, openly, for the rest of the meal.
+What changes is dinner, because by the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except the whole table is comparing decisions, a stranger thing to sit through with a fork in hand. A boy from the materials wing tells the whole table at dinner about turning it down outright, about his mother and the decade of silence if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. People laugh, and he goes back to his tray and lets the subject close there for the night, and the table lets it go without asking him the number. A younger girl comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed, and the boys next to her let her have it, volume included, so the whole end of the table stays on it, openly, for the rest of the meal.
 
 Iyad has the next day's running order in his head before the sheet is taped up, and gives it to the table by name, in order, down the whole list, while the plates are still going round. Then he goes round the ones who have already been in and asks how it went, and whether they have told anybody at home yet, and in the morning the roster goes up outside the staff office and every name is where he put it.
 
@@ -26,17 +26,17 @@ His office holds a desk, two chairs, and a small clock turned to face only him; 
 
 "Whatever's already in that folder is probably enough for you. I haven't got anything you'd want to write down on top of it."
 
-"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty. The review happens every March, same as everyone else's, and the raise is whatever the review says it is, nothing negotiated separately for you. Everybody on staff signed something close to this same sheet, and nobody has ever come back to this office asking for different terms."
+"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty. The review happens every March, same as everyone else's, and the raise is whatever the review says it is, nothing negotiated separately for you. Everybody on staff signed something close to this same sheet, and nobody has ever come back to this office asking for different terms."
 
 "Here?"
 
 "Here."
 
-Feet square on the floor, she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
+Feet square on the floor, she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin, and gone back to the forge every Thursday for years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
 
 "I don't think so," she says.
 
-Mr. Amberg's pen stops moving, and he sets it down instead of writing with it, a thing she has seen him do perhaps twice in all her years here.
+Mr. Amberg's pen stops moving, and he sets it down, a thing she has seen him do perhaps twice in all her years here.
 
 "Reason?"
 
@@ -70,7 +70,7 @@ The list comes in the order he gives everybody: research and the salary and the 
 
 "Reason?"
 
-"I'd be good at a few hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped. Nobody at a desk in this building has ever rung me up wanting a price, and until somebody does, the desk is just a desk with my name on a folder somewhere near it, and I'd rather be at a different desk than pretend that's the job, because a desk with nobody calling it isn't a job, it's just furniture with my name near it."
+"I'd be good at a few hours a month of that job." Her hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped. Nobody at a desk in this building has ever rung me up wanting a price, and until somebody does, the desk is just a desk with my name on a folder somewhere near it, and I'd rather be at a different desk, because a desk with nobody calling it isn't a job, it's just furniture with my name near it."
 
 Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
 
@@ -122,13 +122,13 @@ In the evening she finds him in the network room, back against the radiator by t
 
 "But it's school," she says. "Same building, same people, and the whole point is finding out if any of this holds up somewhere else. You'd never know afterwards whether it was you or the building."
 
-"It stopped being school for me a while ago, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against. Nobody in that room knows the answer either. That is the difference and it is the whole difference." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong, because it was still unchecked. That's a research problem, not a classroom one, because a classroom's whole job is already knowing." He gives her the look he saves for a mark scheme, and says the next part in the register he'd use to correct a wrong exponent. "It's a lab that also has children in it."
+"It stopped being school for me a while ago, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against. Nobody in that room knows the answer either. That is the difference and it is the whole difference." "I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong, because it was still unchecked. That's a research problem, not a classroom one, because a classroom's whole job is already knowing." He gives her the look he saves for a mark scheme, and says the next part in the register he'd use to correct a wrong exponent. "It's a lab that also has children in it."
 
 Chloe watches him get back to work, the slow half-turn of the wrist stripping the next foot of cable, and lets him get on with it.
 
 ________________
 
-Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice everything else on the list gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, puts his fork down for it, waits, gets an answer, and puts that in with the rest.
+Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice everything else on the list gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, waits, gets an answer, and puts that in with the rest.
 
 Chloe is up the kitchen-end stairs before the pudding goes round.
 
@@ -144,7 +144,7 @@ A beat, and the pacing on the other end of the line stops. "No to what? What hap
 
 "What kind of job, exactly, and what would you even be doing?"
 
-Chloe gives it to her in the order Amberg gave it to her. "Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would."
+Chloe gives it to her in the order Amberg gave it to her. "Research, full time, starting the day I'd have gone to a dorm. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would."
 
 The silence on the line runs long enough, unbroken by the usual kitchen noise, for Chloe to check the screen and be sure the call is still live.
 
@@ -160,7 +160,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
 
-"Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's all of it. That's everything that was on the desk."
+"Research, full time, starting the day I'd have gone to a dorm. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's all of it. That's everything that was on the desk."
 
 Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up. I'm not going to sit here being careful about it and let your mother be the somebody who says so. I've said harder things to you than this over smaller money, and I'm not about to start being careful now."
 
@@ -214,4 +214,4 @@ Her mother's voice, when it comes back, has the edge she uses reading the fine p
 
 "Okay," her mother says back, and there's the small click of her hanging up first.
 
-Chloe sits there a while longer with the phone gone dark in her lap, running the call back once from the start before she can put it down for the night, and then gets up to find something to eat, with the phone still in her hand and the screen gone dark against her palm.
+Chloe sits there a while longer with the phone gone dark in her lap, running the call back once from the start, and then gets up to find something to eat, with the phone still in her hand and the screen gone dark against her palm.

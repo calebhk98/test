@@ -4,11 +4,11 @@
 
 In the school office there is a folder about Chloe, who is six, started by her kindergarten teacher last year and added to by Mrs. Aldana every few weeks since September, though Chloe has been told about neither.
 
-What she knows instead is that her mom is on the phone in the kitchen most evenings now, standing at the counter with a hand pressed flat against her forehead.
+What she knows is that her mom is on the phone in the kitchen most evenings now, standing at the counter with a hand pressed flat against her forehead.
 
 "No, I understand that, I'm just asking what the next step is, because I have asked twice and both times the answer was that we wait." She listens through more of it before the phone clicks over to her mom's other ear. "Okay, but she is a small child, and a piece of paper saying what you already said to me is a piece of paper, not a next step. Send me the part where something is actually different, or don't send me anything at all."
 
-On the other side of the wall Chloe sits on the living room floor with a book open in front of her, listening instead of reading.
+On the other side of the wall Chloe sits on the living room floor with a book open in front of her, listening.
 
 Her mom listens again, longer this time, before the rest comes out.
 
@@ -24,15 +24,15 @@ Because the pattern is already found, she writes the answer and then sits with t
 
 Mrs. Aldana waits for everybody to finish before moving on, but somebody is always still going, so Bryce Dolan is still counting on his fingers long after Chloe stops watching him.
 
-You are allowed to read once you finish the sheet, and Chloe, who has decided against finishing it, looks out the window instead.
+You are allowed to read once you finish the sheet, and Chloe, who has decided against finishing it, looks out the window.
 
-In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof so that he can use both hands, and he gets the boxes in, shuts the trunk but drives off with the cup still up there, so that Chloe is about an inch out of her seat, watching it ride across the asphalt, when she hears her name.
+In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof, and he gets the boxes in, shuts the trunk but drives off with the cup still up there, so that Chloe is about an inch out of her seat, watching it ride across the asphalt, when she hears her name.
 
 "Chloe." Mrs. Aldana is at the end of her desk, looking down at a worksheet with a few answers on it and the rest blank. "What was the question?"
 
 The question has already happened somewhere behind her, while she was out in the parking lot with the coffee cup.
 
-"I don't know," she says, working her heel back into her shoe under the desk, and looks at the worksheet instead of at Mrs. Aldana.
+"I don't know," she says, working her heel back into her shoe under the desk, and looks at the worksheet.
 
 "That's what I thought." Mrs. Aldana taps the worksheet twice and walks back to the front, and she has no reason to come down the row again, because Chloe does the rest of the sheet in the time that is left and gets them all right.
 
@@ -166,7 +166,7 @@ Her mom turns a page.
 
 "She also says you have some trouble focusing, which is the part I want to talk about, since the reading part is already fine. The reading is fine. What I keep turning over at night is whether anybody in that building has time to work out why."
 
-The parking lot, the boxes, the question that had already happened without her: all of it is true, but Chloe watches the streetlights come across the ceiling instead of saying so.
+The parking lot, the boxes, the question that had already happened without her: all of it is true, but Chloe watches the streetlights come across the ceiling.
 
 "Do you have trouble focusing?"
 
@@ -188,7 +188,7 @@ There is a pencil line on the wall beside the scale with a date written under it
 
 The doctor looks in her ears and down her throat, then has her follow his finger with her eyes only, which she is good at.
 
-Then her mom says she has been having a hard time at school, and he rolls his chair around to face Chloe instead of the computer.
+Then her mom says she has been having a hard time at school, and he rolls his chair around to face Chloe.
 
 "Do you get in trouble at school?"
 
@@ -262,7 +262,7 @@ Then she turns to chapter nine and is well into it when Mrs. Aldana says her nam
 
 The thing to do is say okay, turn back and be on the right page before anybody notices, which Chloe knows.
 
-What she says instead is that she already read chapter nine on Tuesday, all of it, so going back just means listening to a part she already knows how it ends.
+What she says is that she already read chapter nine on Tuesday, all of it, so going back just means listening to a part she already knows how it ends.
 
 Some of the children laugh, not with her, before Mrs. Aldana comes down the row, takes the book gently by the spine, then puts it on her own desk for the rest of the day.
 
@@ -284,7 +284,7 @@ That night at dinner she tells them, and it takes about a minute and a half.
 
 "I know, that's what she said. But I already finished the whole book on Tuesday. Waiting for everybody else to catch up just feels like the whole week standing still."
 
-Her mom says she probably just wants everybody on the same page, literally, then laughs at her own joke, and Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing.
+Her mom says she probably just wants everybody on the same page, literally, then laughs at her own joke, and Chloe laughs too, because it's her mom, while her dad does the noise he does.
 
 Then the corner of her mom's mouth drops and stays down, but she gets up and starts the dishes before anybody at the table has finished eating.
 

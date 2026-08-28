@@ -8,7 +8,7 @@ Sixteen weeks means a different thing to each of them, all of them doing somethi
 
 Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring, sitting in the places where a badly maintained reconciliation job would sit and moving just as slowly, so it reads as ordinary and not as anything that searches. None of them have that kind of patience. But the program does.
 
-Eli builds his half after his own shift ends, at a desk under a window that looks onto a parking structure, three monitors going and a cup of coffee he refills more from habit than thirst. The two-finger rhythm he's had for years goes against the desk edge, faster whenever a line of the design won't sit right, and through most of the build it keeps not sitting right: every version he throws at his own test environment behaves like exactly what it is, a thing that goes looking, while a reconciliation job just sits there, moving at the speed a bored auditor would skim straight past. The polling interval gets rewritten again and again before it finally reads as tired instead of curious, and the version he keeps is committed at 3:14 a.m. on a Tuesday that will have him back at his employer's desk before the morning is out.
+Eli builds his half after his own shift ends, at a desk under a window that looks onto a parking structure, three monitors going and a cup of coffee he refills more from habit than thirst. The two-finger rhythm he's had for years goes against the desk edge, faster whenever a line of the design won't sit right, and through most of the build it keeps not sitting right: every version he throws at his own test environment behaves like exactly what it is, a thing that goes looking, while a reconciliation job just sits there, moving at the speed a bored auditor would skim straight past. The polling interval gets rewritten again and again before it finally reads as tired, and the version he keeps is committed at 3:14 a.m. on a Tuesday that will have him back at his employer's desk before the morning is out.
 
 Kavi builds his half in the lab he's had since he stayed on, a converted classroom with a window painted shut and a corkboard of Sanskrit verb charts that have hung there for years. Rather than the live feed he works from Eli's logs, turning a data cable over in his free hand while he reads and setting it back exactly where he picked it up. The watcher carries a simpler job than Eli's worm does; it only has to notice, quietly, the day the worm stops behaving like a reconciliation job and starts behaving like a person who found something, and say so to exactly one person before it says so to anyone else. Testing comes first, against years of his own old coursework logs, because it's the only slow, boring, badly-behaved dataset he already has lying around, and the watcher moves onto Eli's live feed only once it's gone a full week treating his own late-night habits as unremarkable.
 
@@ -34,7 +34,7 @@ There's no name. There's no bank with a name on it. But what there is, once Kavi
 
 Kavi does the actual stacking on a whiteboard he wheels into the corner of his lab, one line a decision, a color for each currency, taped index cards for the ones still missing a clean date. As much of the work happens on the back of the whiteboard as on the front, cards corrected over and over until the run finally holds in order, and by the end of January the board reads less like a timeline than like a single continuous decision wearing different currencies at different times.
 
-The three of them get on a call to look at the board properly in the second week of January, Ruth taking notes for once instead of talking, Eli reading currency codes off Kavi's screen faster than the others can follow, Kavi correcting him twice on a code before he starts reading them right. The shape resists being more than a single person no matter how they turn it, and by the time the call ends, it has stopped being a shared problem and become Ruth's.
+The three of them get on a call to look at the board properly in the second week of January, Ruth taking notes for once, Eli reading currency codes off Kavi's screen faster than the others can follow, Kavi correcting him twice on a code before he starts reading them right. The shape resists being more than a single person no matter how they turn it, and by the time the call ends, it has stopped being a shared problem and become Ruth's.
 
 Ruth is the one who argues it into a proof.
 
@@ -74,7 +74,7 @@ eli: and the other 0.01
 
 ruth: is me being humble
 
-Eli reads it standing up, phone in one hand, his other hand already going through its tap against the kitchen counter before he notices he's started it. It's the middle of the night in Ohio, and he stays up with it rather than going back to bed. Kavi reads it lying on the floor of his lab under the whiteboard, but picks up a marker anyway to add another line to the board himself before he sets it back down at the angle he found it in.
+Eli reads it standing up, phone in one hand, his other hand already going through its tap against the kitchen counter before he notices he's started it. It's the middle of the night in Ohio, and he stays up with it rather than going back to bed. Kavi reads it lying on the floor of his lab under the whiteboard, but picks up a marker anyway to add another line to the board himself.
 
 ________________
 
@@ -90,7 +90,7 @@ kavi: who though. needs motive and funding.
 
 nadia: the government tracks everything. if anyone has a file its them
 
-Minutes pass before Theo posts again. Those minutes go where anything with real weight goes with him: laptop closed with both hands, out onto the back steps of his apartment building, phone still in his pocket. Partway through he comes back inside, sets a full glass of water next to the keyboard, and sits back down at the desk before he lets himself reopen the thread.
+Minutes pass before Theo posts again. Those minutes go where anything with real weight goes with him: laptop closed, out onto the back steps of his apartment building, phone still in his pocket. Partway through he comes back inside, sets a full glass of water next to the keyboard, and sits back down at the desk before he lets himself reopen the thread.
 
 theo: ok
 
@@ -110,7 +110,7 @@ theo: i said dont repeat it, i didnt say it was small
 
 kavi: a state doesnt leave four operators walking. thats not their risk tolerance
 
-ruth: this isnt new, sam, it just means there were two attempts instead of one
+ruth: this isnt new, sam, it just means there were two attempts
 
 nadia: they caught four operators once
 

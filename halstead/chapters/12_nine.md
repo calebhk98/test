@@ -36,7 +36,7 @@ Chloe reads her own sheet again on the stairs, for a different reason, and then 
 
 Sam looks up with a fork in his hand.
 
-With both hands flat on the table, she is up on her toes. "Dance is *gone*, and so is drawing. Both of them, they're not on it anywhere, I checked the back of the sheet, and then I checked it again. That's it. I am never doing either of those again as long as I live."
+With her hands flat on the table, she is up on her toes. "Dance is *gone*, and so is drawing. Both of them, they're not on it anywhere, I checked the back of the sheet, and then I checked it again. That's it. I am never doing either of those again as long as I live."
 
 "I liked dance," Sam says.
 
@@ -72,7 +72,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "Small result, so round it down, because a room that size is basically noise dressed up as a finding."
 
-"Small is the wrong word, because that is the size of result a room that small hands you by accident, which is the entire-" Chloe stops, because Sam has both hands over his ears now, humming. "We're nearly done, so give us a minute and you get your ears back."
+"Small is the wrong word, because that is the size of result a room that small hands you by accident, which is the entire-" Chloe stops, because Sam has his hands over his ears now, humming. "We're nearly done, so give us a minute and you get your ears back."
 
 "You said that on Monday too, word for word, and you say it every time you lose this argument."
 
@@ -112,7 +112,7 @@ ________________
 
 Bex Alcantar arrives at the end of your sentence before you get there and finishes it for you, and the ending she puts on it is usually the ending it was going to have.
 
-In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
+In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
 
 Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
 
@@ -194,7 +194,7 @@ Her father starts to answer but stops with the page half turned, then goes back 
 
 "That's what I couldn't get. I couldn't work out what breaking it would look like."
 
-Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it. Every deliverable is worded so it can't be checked against anything, and every milestone describes the effort instead of the result."
+Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it. Every deliverable is worded so it can't be checked against anything, and every milestone describes the effort."
 
 "No idea, I only got as far as that one."
 

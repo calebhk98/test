@@ -2,7 +2,7 @@
 
 *September 2017 – January 2018*
 
-The forge is a low building past the kitchens, open Thursdays and most of Sunday, with the doors open in all weather, so the heat reaches her a good way out along with the smell of coke and scale. In the first week of September she walks down for a chisel and stays the whole afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, her own tongs on the rack above it, and a habit of missing dinner, so on the fourth time that month Sam waits in the doorway in his coat until she puts the work down, and she talks at him the whole way back across the grass with a burn on her wrist she keeps to herself.
+The forge is a low building past the kitchens, open Thursdays and most of Sunday, with the doors open in all weather, so the heat reaches her a good way out along with the smell of coke and scale. In the first week of September she walks down for a chisel and stays the whole afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, her own tongs on the rack above it, and a habit of missing dinner, so on the fourth time that month Sam waits in the doorway in his coat, and she talks at him the whole way back across the grass with a burn on her wrist she keeps to herself.
 
 Pruitt runs the place off a whiteboard carrying the Thursday names and a list of low stock. For the first month the men work around her and leave her alone, so she has no way of telling whether any of it is right until the second week of October, when he passes behind her with an armful of bar.
 
@@ -66,7 +66,7 @@ Kavi pushes up off the floor and gets his back against the radiator. "Then do it
 
 "Get somebody off the corridor to do the plates," Sam says. "Then none of us knows anything."
 
-"And then they're standing in a kitchen at midnight holding the answer with no reason at all to be careful with it, and they'll say it, or they'll pull a face at the wrong moment and we'll all read it off them, and the thing we're actually testing is whether Sam can taste a Wednesday, so Sam has to be in the room and not knowing," Priya says, and puts her chin down on her arms.
+"And then they're standing in a kitchen at midnight holding the answer with no reason at all to be careful with it, and they'll say it, or they'll pull a face at the wrong moment and we'll all read it off them, and the thing we're actually testing is whether Sam can taste a Wednesday, so Sam has to be in the room and not knowing," Priya says.
 
 "So the cutter swaps," Ruth says.
 
@@ -118,7 +118,7 @@ Saturday afternoon is the stock count: a clipboard between them, shelves of tinn
 
 "Sam," Ruth says, pointing at the floor with her chin. "They're by your foot."
 
-They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases instead of tins, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to nineteen and gets the cooler done before dinner.
+They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to nineteen and gets the cooler done before dinner.
 
 The library gets her about once a week now, because most evenings there are people in the third floor common room with a game spread over the table and a space kept for her at it.
 
@@ -282,7 +282,7 @@ The man looks at him, his jaw working once. "I don't know," he says.
 
 "See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it instead of listening. The bolt cutters wrong for that fence, the boots wrong, all of it wrong in one direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it comes out no different either way. The second man's chest going up and down a few feet away sits on that list with the bolt cutters.
+Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it. The bolt cutters wrong for that fence, the boots wrong, all of it wrong in one direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it comes out no different either way. The second man's chest going up and down a few feet away sits on that list with the bolt cutters.
 
 Sinclair arrives with two other adults and a trolley, stops at the corner, and looks at the four men tied along the corridor wall, at the bags, and at the four kids sitting on the floor near them, arms crossed. "Who's monitoring?"
 
@@ -358,7 +358,7 @@ Her mother holds her look, then picks her knife back up and starts eating, but h
 
 "Your hands go first," she says, turning hers over on the cloth to look at them. "You lose the small things before the big ones, but you feel quicker right up until somebody times you."
 
-Her father puts his glass down and turns it a half turn on the cloth. "So how do you catch it, then?"
+Her father turns his glass a half turn on the cloth. "So how do you catch it, then?"
 
 Chloe opens her mouth, but to say what the small things are she has to start with the release, and the release needs the count, and the count needs the field and the lanes and the sixty degrees, while her father waits with his hand on the glass.
 

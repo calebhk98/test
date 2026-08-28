@@ -66,7 +66,7 @@ The edge of her hand goes across the top of her own shoulder.
 
 Priya tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
 
-Chloe keeps both hands still in her lap and lets it run, end to end.
+Chloe keeps her hands still in her lap and lets it run, end to end.
 
 Then Priya says goodnight, and inside a minute she is asleep.
 
@@ -82,7 +82,7 @@ Her mom picks up in the middle of the first ring.
 
 The hotel is half a mile away, but by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed.
 
-Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far to leave the door open, her face turned into a spare pillow that smells like the hotel's detergent instead of their own.
+Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far to leave the door open, her face turned into a spare pillow that smells like the hotel's detergent.
 
 "Do you want to talk about it?"
 
@@ -92,7 +92,7 @@ Her mom is still in her shoes, sitting on the arm of the chair by the window.
 
 Her mom gets up, turns the other bed down, and sits on the end of it.
 
-"Do you want me to talk about something instead."
+"Do you want me to talk about something."
 
 "Yes. Anything."
 
@@ -182,7 +182,7 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "You're agreeing at me," Sam says, and pushes his tray a couple of inches away.
 
-Chloe has a whole sentence about the lid ready, but she lets it go.
+Chloe has a whole sentence about the lid ready.
 
 On the fourth night she gets as far as the phone and stands there with her hand on it, until a kid comes up behind her to ask if she is using it, so she says no, then goes back upstairs, where Priya is still awake.
 
@@ -198,7 +198,7 @@ Chloe says yes.
 
 "I know, the lady said it in the room with the chairs."
 
-"I know she did. I wrote it down," her mom says, looking at the doorframe instead of at Chloe.
+"I know she did. I wrote it down," her mom says, looking at the doorframe.
 
 ________________
 
@@ -228,7 +228,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 Sam tries twice more to get back into it but loses the thread both times, with a couple of the other children laughing outright by the second try.
 
-So he stops trying, picks up his pencil, and starts drawing his own volcano in the margin instead, going on about it as though that were what he had meant to be doing all along.
+So he stops trying, picks up his pencil, and starts drawing his own volcano in the margin, going on about it as though that were what he had meant to be doing all along.
 
 ________________
 

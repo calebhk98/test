@@ -52,7 +52,7 @@ Under his breath he counts himself down, and pulls the bar off the ground.
 
 The score is six hundred.
 
-The grader adds the column a second time with the pen held clear of the paper, checking rather than writing, then puts the total down in ink, then looks up from the clipboard.
+The grader adds the column a second time with the pen held clear of the paper, checking rather than writing, then looks up from the clipboard.
 
 "You have done this before somewhere."
 
@@ -74,7 +74,7 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Did you play ball or something, to put up a number like that on a cold morning? Because a guy in second platoon reckons most of those events were brand new to you."
 
-"They were. Boarding school." Sam, with most of a roll in his hand, is reaching past Okoro for the pitcher with the other. "I was middling there, so if you want a real number off me you can have my range number instead. Forty percent, every year I was there, sitting there whatever I tried on it."
+"They were. Boarding school." Sam, with most of a roll in his hand, is reaching past Okoro for the pitcher with the other. "I was middling there, so if you want a real number off me you can have my range number. Forty percent, every year I was there, sitting there whatever I tried on it."
 
 "Forty percent of what, though?"
 
@@ -116,7 +116,7 @@ The explanation survives a week of examination, after which he stops examining i
 
 ________________
 
-September is tactical foot marches, progressively longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids; Sam sets his straps once at the trailhead and leaves them alone from there. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
+September is tactical foot marches, progressively longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids; Sam sets his straps once at the trailhead. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
 
 Land navigation occupies October, daylight first and afterward in darkness, a scorecard, temperatures low enough that the cadre distribute an extra layer before anybody thinks to ask for one; Sam logs all of his the first time out, then walks back onto the course with men from his squad who are a point down, still arguing over a stream crossing on their board.
 

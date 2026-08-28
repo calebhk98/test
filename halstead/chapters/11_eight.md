@@ -52,7 +52,7 @@ In the third week Chloe tries to teach her mother Spanish at the counter, with t
 
 Chloe is sitting on the counter with her heels against the cupboard door. "The first part's right, but it's the middle that goes wrong, because you keep putting the weight on the wrong bit, and that turns it into a different word, so just do the one word on its own. Están."
 
-Her mother says just that word, then says it over, and each time it comes out as a word that means something else, so that by the third go they are both laughing hard enough that Chloe has to get down off the counter, and her mother ends up on a kitchen chair, wheezing, both hands over her face.
+Her mother says just that word, then says it over, and each time it comes out as a word that means something else, so that by the third go they are both laughing hard enough that Chloe has to get down off the counter, and her mother ends up on a kitchen chair, wheezing.
 
 "Say something else, a whole sentence this time, and I'll do the whole sentence back at you."
 
@@ -86,7 +86,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the second she knows."
 
-Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp with both hands and the coffee table before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
+Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
 Her grandmother says, "She's put on weight since I saw her, and I mean that as a good thing, not a complaint."
 
@@ -96,7 +96,7 @@ Her grandmother says, "She's put on weight since I saw her, and I mean that as a
 
 "I know," her mother says, keeping her voice down to match, because the door is open and Chloe is close enough to hear every word.
 
-Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, goes back through, and finishes about the bridge, which came second in the room. But at dinner she eats half of what is on her plate and lays the fork down across what's left.
+Chloe stands against the wall by the door with the glass and tugs her shirt loose from her shorts once, goes back through, and finishes about the bridge, which came second in the room. But at dinner she eats half of what is on her plate.
 
 "I've had enough."
 
@@ -158,7 +158,7 @@ Drawing is Thursdays, and in the second term, while they spend the term on hands
 
 "It's supposed to be a hand, I've been drawing them since January."
 
-"No, I mean that's a hand, Chloe, and the thumb's even the right size this time. Last term you were drawing mittens." Ruth puts it back down and carries on to the door.
+"No, I mean that's a hand, Chloe, and the thumb's even the right size this time. Last term you were drawing mittens." Ruth carries on to the door.
 
 At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
 
@@ -172,7 +172,7 @@ A boy comes out of it ahead of her with the door swinging behind him, and behind
 
 Mrs. Okonkwo squares the sheets against the desk. "I know you're not, but it's still no, and it would be no if you came in here about all five. You've got it on Fridays until June."
 
-Chloe takes hold of the edge of the desk with both hands and stays standing. "Then can I move teams on the Wednesday instead? That's a swap and not a drop. I'd still be doing the hour with everybody else."
+Chloe takes hold of the edge of the desk and stays standing. "Then can I move teams on the Wednesday instead? That's a swap and not a drop. I'd still be doing the hour with everybody else."
 
 "Which team are you on."
 

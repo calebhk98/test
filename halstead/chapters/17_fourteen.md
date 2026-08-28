@@ -16,7 +16,7 @@ Kavi is on the next mat with his chin on his forearms, watching the flag. "Six w
 
 Although she is steady enough prone by then, kneeling and standing come in before the end of the month, then a hundred metres, then a hundred metres in a crosswind with somebody reading it off the wind flag for her, until in November the target goes onto a rope and swings, so that the count starts to matter again. That week Odile burns the inside of her hand on an ejection port, and because the scab pulls every time she opens her fingers she is still holding the palm up across the breakfast table in December.
 
-A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card instead of the clay.
+A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card.
 
 "It's seven and about a fifth," Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
@@ -140,7 +140,7 @@ Chloe has the arrival sheets and nothing yet to put into them, so she sits in th
 
 Ruth pulls the chair round without getting off it. "Then it's picking the road up at all of them and I need to know that, and now I can't, because you've made that box different from the rest of them. Do your own end again, or go to bed, or go and find me something to eat, and leave mine alone."
 
-Chloe puts it back, and goes and finds her something to eat.
+Chloe goes and finds her something to eat.
 
 The run is in the afternoon block on the last Thursday in March. A man from the staff walks out past the top posts with the plate under his arm, a hand-sized square of stock Chloe brought up from the forge in February with the corners taken off it so the sound would be identical every time; he goes over the rise where none of them can see him and stays there. Nadia has a person at every post with a thermometer and Odile on the near mark with the watch; then there is nothing to do at all for twenty minutes.
 
@@ -200,7 +200,7 @@ Priya counts it off on the tabletop. "At breakfast, in the queue, holding a tray
 
 "He said, 'Do you want to do something?', and when she said 'What?' he told her he'd think about it and get back to her," Odile says.
 
-Ruth puts her fork down and leaves it down. "He'd think about it, when he had a whole Thursday afternoon and every building on this campus in front of him, and do you know how many things there are to do here? He's the only person who's ever got over that wall and he couldn't think of one."
+Ruth puts her fork down. "He'd think about it, when he had a whole Thursday afternoon and every building on this campus in front of him, and do you know how many things there are to do here? He's the only person who's ever got over that wall and he couldn't think of one."
 
 Priya says, "He's got a lake, Kavi. A lake and a boat shed."
 
@@ -210,7 +210,7 @@ Ruth takes it up with him directly on Friday; Sam hears her out with his chin on
 
 ________________
 
-Winter break, second night. Her mother is standing at the end of the table with a dish in both hands and Chloe is halfway through the story about Odile's scar.
+Winter break, second night. Her mother is standing at the end of the table with a dish and Chloe is halfway through the story about Odile's scar.
 
 "Odile's got a scar on her hand now. She held it up by the ejection port and it burned her, but now she keeps showing everybody, like it's a medal."
 
@@ -226,7 +226,7 @@ Her mother's hands stop on the dish while Chloe reaches past her for the beans. 
 
 Chloe stops with the spoon in the beans while her mother stands there, still holding the dish.
 
-Chloe shakes her head fast and sets the spoon back. "Oh. No, it's fine, Mom, it's completely fine. It's a range. Everyone stands on a line facing the same way, there's a man behind you the entire time, and if you turn round with it in your hands he takes it off you and you're done for the term. Nobody's ever even close to anything."
+Chloe shakes her head fast. "Oh. No, it's fine, Mom, it's completely fine. It's a range. Everyone stands on a line facing the same way, there's a man behind you the entire time, and if you turn round with it in your hands he takes it off you and you're done for the term. Nobody's ever even close to anything."
 
 "Chloe. Why is this the first I'm hearing about it?"
 
@@ -256,7 +256,7 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "I thought you knew. I thought it was fine," he says.
 
-Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen gets a few minutes and the plates get stacked instead; that turns out to be as much of the sentence as the room can hold.
+Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen gets a few minutes and the plates get stacked; that turns out to be as much of the sentence as the room can hold.
 
 Her mother comes back in and asks whether anybody wants the pie warmed up; her father and Chloe both say yes at once. The game comes on, and they eat in front of it, with her mother coming to sit on the arm of his chair for the second half.
 

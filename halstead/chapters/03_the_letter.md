@@ -20,7 +20,7 @@ After reading it again and again in the driveway, with the rest of the mail goin
 
 "Can you go where, honey?"
 
-Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom instead of for herself, because she has been thinking about how to do this since the middle of the afternoon.
+Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom, because she has been thinking about how to do this since the middle of the afternoon.
 
 Her mom reads it, then reads it again, her eyes going back to one spot on the page, staying there longer, before she reads it a third time and hands it across the table with her eyes still on the page.
 
@@ -30,13 +30,13 @@ Her dad takes it and reads it in his free hand, still eating.
 
 "See what."
 
-Her dad puts the fork down to hold it with both. "No. This is the first I've heard of it, and I've been sitting here the whole time you have."
+"No. This is the first I've heard of it, and I've been sitting here the whole time you have."
 
 "So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool. I don't even give it to the pediatrician's office unless they ask twice."
 
 "Well, how would anybody," her dad says, setting the letter back down between them.
 
-"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night. I've got the letter in my hand and the phone right here, so there's no reason we're still talking about this instead of just calling."
+"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night. I've got the letter in my hand and the phone right here, so there's no reason we're still talking about this."
 
 "I'm asking you." Her mom's hand is flat on the table now. "You've had it about as long as I have."
 
@@ -126,7 +126,7 @@ Her mom takes her hand off the phone.
 
 "She answered everything else so fast I ran out of things to ask her. I asked her what happens in the middle of the night and she was answering before I finished. Nobody has that ready unless people ask it a lot."
 
-Her mom pulls out a chair and stands behind it, both hands on the back.
+Her mom pulls out a chair and stands behind it.
 
 "There's over a hundred children, and that's just this summer. She said they run it every year and they have never once not filled it."
 
@@ -184,7 +184,7 @@ It takes them nine days, her mom's position being that it is that far away, nobo
 
 Her dad's position is that all of that is true but she should go anyway. They have some version of that argument on the fourth day, the sixth day, and the eighth, until on the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
 
-"You already know what you're going to say," her dad says, and sets his coffee down, untouched.
+"You already know what you're going to say," her dad says.
 
 "That's not fair."
 
@@ -216,7 +216,7 @@ On the Thursday before they go she takes her books back, and gets up on her toes
 
 Chloe has the argument already worked out. "I'm going away for a month, to a camp. So I wanted to ask something. I don't take any out the whole time I'm gone. That's four weeks of four. Can I have sixteen at the end?"
 
-The librarian puts the stamp down.
+The librarian looks up.
 
 "That's not how it works, honey, because it resets every time you come in, so it is still four however long you wait. It isn't a bank. You can't save them up."
 

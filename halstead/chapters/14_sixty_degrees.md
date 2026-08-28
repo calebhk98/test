@@ -20,7 +20,7 @@ Bell puts a hand out flat and holds it. "At the top the arrow has stopped climbi
 
 "So how are we supposed to know when to let go of it?"
 
-Bell turns the metronome on. "Keep your eyes off each other. Off the whole time, both ends. You count instead."
+Bell turns the metronome on. "Keep your eyes off each other. Off the whole time, both ends. You count."
 
 ________________
 
@@ -130,7 +130,7 @@ Her fork is in her hand and still unused. "It's a stupid question because it's g
 
 A shrug at her. "Then go and do it properly. If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes."
 
-Chloe puts her fork down, but she keeps looking at the table.
+She keeps looking at the table.
 
 "That's annoying," Chloe says. "Now I have to go and build the thing I came in here to say was wrong."
 
@@ -150,7 +150,7 @@ Between the second floor and the third, she finds Ruth on the stairs.
 
 "On twice the length," Ruth says. "You did double the words, but he took a grade off you for it."
 
-Chloe holds the pages in both hands and goes up the stairs backwards. "That's beside the point of why I'm annoyed. He's got page eight and page twenty-two, the places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those were the only ones in the whole thing."
+Chloe holds the pages and goes up the stairs backwards. "That's beside the point of why I'm annoyed. He's got page eight and page twenty-two, the places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those were the only ones in the whole thing."
 
 "So what you're telling me is he's right."
 
@@ -158,7 +158,7 @@ Chloe holds the pages in both hands and goes up the stairs backwards. "That's be
 
 At Christmas her mother asks what she has been working on.
 
-"There was a big essay in November, on whether the area bombing was the right call," Chloe says, holding a plate in both hands with the water going cold in the sink.
+"There was a big essay in November, on whether the area bombing was the right call," Chloe says, holding a plate with the water going cold in the sink.
 
 "Which bombing was this?"
 

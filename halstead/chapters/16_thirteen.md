@@ -84,7 +84,7 @@ Ruth and Kavi took cryptography and networks last year, which puts Ruth three mo
 
 "What is it, though? You're not usually up here at this hour."
 
-With both hands she takes the lid off and turns it toward Chloe. Inside is a circuit board, a battery taped down the side, and a coil of wire folded to make it fit. "It goes looking for recorders, anything on any network in range that's recording video, and about half are still on the password they shipped with, so it tries those first. For the changed ones it does everything else at once, cracking, sniffing, brute force, and others besides," Ruth says, watching Chloe's face the whole time. "It runs the lot together and takes whichever arrives first, so it's eight ugly things in a box and not one clever thing, and one of them is always working. Once it's in, it writes noise into the recording every so often, over part of the file." She puts the lid back on and tucks it under her arm. "Delete a file and somebody notices a file is missing. Make it noisy for a bit and that's a camera being a camera."
+She takes the lid off and turns it toward Chloe. Inside is a circuit board, a battery taped down the side, and a coil of wire folded to make it fit. "It goes looking for recorders, anything on any network in range that's recording video, and about half are still on the password they shipped with, so it tries those first. For the changed ones it does everything else at once, cracking, sniffing, brute force, and others besides," Ruth says, watching Chloe's face the whole time. "It runs the lot together and takes whichever arrives first, so it's eight ugly things in a box and not one clever thing, and one of them is always working. Once it's in, it writes noise into the recording every so often, over part of the file. Delete a file and somebody notices a file is missing. Make it noisy for a bit and that's a camera being a camera."
 
 The box goes in the drawer under Ruth's window and stays there.
 
@@ -96,7 +96,7 @@ Kavi has the first version running by the end of the month on the school's own m
 
 Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had. A library is a thing everybody else in the world has a copy of too."
 
-Chloe breaks it inside a week, but the encryption holds the whole way: what she gets instead is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
+Chloe breaks it inside a week, but the encryption holds the whole way: what she gets is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 
 The log goes on the table between them, folded to the column that matters. "Every word in there is sealed, which is completely true, but it's still finished. Knowing what we said is beside her point. What she wants is that this table said something to each other at ten on Thursday and then went missing off breakfast on Saturday."
 
@@ -118,7 +118,7 @@ The plan works, all of it, including the kitchens.
 
 Formal epistemology starts with a sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards for a minute with her bag still open before she goes on to German.
 
-Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the mathematics tells her what to do against somebody playing properly while Kavi has spent his whole life playing the person instead of the board.
+Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the mathematics tells her what to do against somebody playing properly while Kavi has spent his whole life playing the person.
 
 "You went left again, and you went left last time as well."
 
@@ -134,7 +134,7 @@ ________________
 
 A Russian piece in February covers a bridge that came down in December; she read an English piece on that bridge in January, leaving her two accounts of one commission: the English one reports a design fault in the bearings, while the Russian one reports overloading by a contractor, and names him. Both describe a single report, so one of them is wrong, and from where she is sitting she has no way of telling which. A third pair on an unrelated story does it again, and then she goes looking for a fourth.
 
-Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk with both hands.
+Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk.
 
 He sits on the desk. "You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and each of those is a rule somebody wrote down before you got here. So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the examination this country uses to check whether a person knows it, and every citizen in this room ought to pass it."
 
@@ -194,7 +194,7 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 "It's four millimetres proud," her father says. "On a back step, but the step still holds a foot."
 
-"But I cut it," she says. "I'd rather fix it now than know it's there every time I go up."
+"But I cut it," she says. "I don't want to know it's there every time I go up."
 
 Already reaching for the next board, his attention is on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
 

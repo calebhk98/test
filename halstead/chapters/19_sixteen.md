@@ -66,7 +66,7 @@ ________________
 
 "Two of you, brothers, one of you has sold something belonging to the other." The drama teacher points at whoever is nearest the door and declines to explain the exercise further. "Go."
 
-Sam is up in half a second and talks without stopping for air, while Chloe goes up the following week and stops twice inside the first thirty seconds, because both times she can hear the scene coming a few lines out and wants to be standing at the good line already instead of walking through the ordinary line to get to it.
+Sam is up in half a second and talks without stopping for air, while Chloe goes up the following week and stops twice inside the first thirty seconds, because both times she can hear the scene coming a few lines out and wants to be standing at the good line already.
 
 "You're editing, cutting the road to the good line the second you can hear it coming." The teacher is already looking past her at the room.
 
@@ -110,13 +110,13 @@ A question near the end is a rented forklift, and she has the answer in her seco
 
 This time she passes by twenty-two, and she checks the number against the line above it before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
-In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
+In November she sits in the library with something else open in front of her, thinking about April; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
 In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, in order, with the mark schemes clipped behind.
 
 He keeps them a fortnight. What comes back is the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
 
-"That's better than theirs," he says, delighted with it, already going. "Do that instead."
+"That's better than theirs," he says, delighted with it, already going. "Do that."
 
 That evening, before she starts anything else, she works it, and it takes her the whole evening.
 
@@ -148,19 +148,19 @@ Her mother sets a glass of iced tea down on the step beside her. "There's a shel
 
 "You could." She sits on the step above her for about a minute, watching the wasp Chloe's been watching, then gets up and goes back inside, leaving the subject closed for now.
 
-Her father asks about Sam instead of about her classes.
+Her father asks about Sam.
 
 Chloe has the glass on the step beside her, sweating a ring into the wood. "He's on forty percent, on the range. He's been there since he started, and it's the number that hasn't moved in all that time no matter what he tries. It slides straight off him like it belongs to somebody else. I have watched him read it off the board and go straight in to lunch, like the board was somebody else's homework he'd already finished checking."
 
 "How does it not touch him, forty percent year after year? I'd have packed the whole thing in by now, or I'd have made your mother listen to it every night at this table for a year."
 
-Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it instead, because Ruth's on ninety-one and apparently that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him."
+Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it, because Ruth's on ninety-one and apparently that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him."
 
 Her father laughs at that, head back, longer than the joke should carry him.
 
 "Is she, though, or is that just the face she puts on for you?"
 
-Chloe has both hands off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time, she has never once said so out loud, and she has never once been late, not even the Saturday her own bus broke down some way short of the school and she walked the rest of it, clipboard under her arm the whole way, and set the targets up herself before anybody noticed she'd been late at all."
+Chloe's hands are off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time, she has never once said so out loud, and she has never once been late, not even the Saturday her own bus broke down some way short of the school and she walked the rest of it, clipboard under her arm the whole way, and set the targets up herself before anybody noticed she'd been late at all."
 
 "Why does she keep doing it, then, if the range itself bores her that badly?"
 
@@ -176,7 +176,7 @@ Chloe puts her heels up on the lower step and takes her time with that.
 
 "Why would she do that? Costing herself the negotiation to hand it to somebody else seems like a strange way to spend two minutes of already knowing, unless the negotiation itself was never really the point for her."
 
-"Because the boy in the room before her was going to get it otherwise, and she'd rather it went to Nadia than to him, even if that cost her something herself. She hasn't said a word about it since. As far as I can tell Nadia still doesn't know, and Priya's not going to be the person who tells her, so it stays exactly where it is."
+"Because the boy in the room before her was going to get it otherwise, and she wanted it to go to Nadia, even if that cost her something herself. She hasn't said a word about it since. As far as I can tell Nadia still doesn't know, and Priya's not going to be the person who tells her, so it stays exactly where it is."
 
 "So what are Priya and Nadia like at a table together now?" her father says, and the question stops her with the glass halfway up.
 

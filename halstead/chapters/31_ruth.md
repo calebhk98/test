@@ -12,7 +12,7 @@ Advising sends her back to the department, and the department sends her to advis
 
 A woman in the department office finally reads the whole folder, not just the top page, and squares it back together in order before she answers.
 
-"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either, and there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here, and none of it was wasted, it just wasn't going to change what's already been decided, and I'd rather tell you that plainly than let you keep climbing those stairs for nothing, coming back with the same folder and the same question and getting the same answer from whoever's sitting at this desk that week."
+"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either, and there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here, and none of it was wasted, it just wasn't going to change what's already been decided."
 
 "That can't be right. The material in the opening weeks belongs to a course pitched years behind where a school like this ought to be placing me. I sat a diagnostic in August and I would like to know what it was actually for."
 
@@ -46,7 +46,7 @@ ________________
 
 For most of a year, she holds that.
 
-The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively, and thirty days from the visit has already passed, so you should have called this morning instead of tonight." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
+The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively, and thirty days from the visit has already passed, so you should have called this morning." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
 
@@ -54,7 +54,7 @@ The proof gets fixed, the thanks given, and then, halfway to the door with his b
 
 "No," she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
 
-The tally she keeps is private instead of public: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it.
+The tally she keeps is private: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it.
 
 A professor breaks it: she likes him, genuinely, and in office hours he cannot follow her past the third step of her reasoning, and he says so, then asks her to go back.
 
@@ -72,13 +72,13 @@ At the first he nods, but at the second the nod does not arrive, and he sits bac
 
 "Goes to zero how."
 
-"Because there is nothing left out at the edge for it to cancel against. The function is already gone by the time you get out that far, so there's nothing left standing on either side of the line to argue about." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation." She lets it sit for a second. "It's an absence."
+"Because there is nothing left out at the edge for it to cancel against. The function is already gone by the time you get out that far, so there's nothing left standing on either side of the line to argue about." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation." "It's an absence."
 
 "Shorter."
 
 "The tail dies before the boundary does."
 
-From there he goes back up through it, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen, and sets it down on the desk between them.
+From there he goes back up through it, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen.
 
 "That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. But you went off and found the sentence." He is already reading down the next question on his list, with the pen back up in his hand for it.
 
@@ -92,11 +92,11 @@ Over the following months she goes and finds the numbers herself, and they all s
 
 The first is the easiest to find and the hardest to sit with. A government survey breaks down what percentage of adults report speaking a second language fluently, and she goes through the methodology again before she believes the figure: it's so far under what she'd assumed that she suspects, at first, the study of undercounting people like the ones she grew up around. But the count is accurate. It's describing the country she's living in now rather than the one she came from.
 
-The rest of them she works through like that, at a carrel on the fourth floor with her laptop propped on a stack of books because the desk lamp only clears the screen propped that high. Adult reading levels get checked against grade-level texts she remembers assigning to the twelves back at Halstead; a fractions benchmark from a testing organization gets checked against a worksheet she still has saved from her own first years there. Each search takes an evening, and each ends where the last one ended. A few minutes before the library asks everyone to leave she closes the laptop, walks back across an empty campus, and runs the number over instead of anything else that happened that day.
+The rest of them she works through like that, at a carrel on the fourth floor with her laptop propped on a stack of books because the desk lamp only clears the screen propped that high. Adult reading levels get checked against grade-level texts she remembers assigning to the twelves back at Halstead; a fractions benchmark from a testing organization gets checked against a worksheet she still has saved from her own first years there. Each search takes an evening, and each ends where the last one ended. A few minutes before the library asks everyone to leave she closes the laptop, walks back across an empty campus, and runs the number over.
 
 Second language. Reading level. Fractions. Each of them goes into the chat, but she watches somebody make a joke inside a minute and move on.
 
-What she types out is fuller than what actually goes up: drafts that spell out the methodology, the sample size, why this is different from being slow at Portuguese. Most of the drafts die before sending, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts instead reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
+What she types out is fuller than what actually goes up: drafts that spell out the methodology, the sample size, why this is different from being slow at Portuguese. Most of the drafts die before sending, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
 
 In April she stops posting, because she has understood what the numbers add up to and would rather somebody else say it first.
 

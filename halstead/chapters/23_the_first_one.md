@@ -42,7 +42,7 @@ After, on the grass, with a paper cup of lemonade:
 
 Her dad works his way through a full memory card, most of it good, and lowers the camera long enough to ask her one real question. "So who's actually driving up in August, you or one of us?"
 
-"Probably me," Chloe says. "I want the car for the fall anyway. I'd rather do the drive on my own than have all of us in it working out what to say."
+"Probably me," Chloe says. "I want the car for the fall anyway. I'd rather do the drive on my own."
 
 "Huh," he says, and lifts the camera again.
 
@@ -128,7 +128,7 @@ A beat passes before she puts the proposal on the counter. "You have them from s
 
 His eyes go to the ledger, then to the shop. "Four applications a week until then. Every week, in the book, where I can see them."
 
-"Two a week, written up properly instead of pasted."
+"Two a week, written up properly."
 
 "Four."
 
@@ -140,7 +140,7 @@ Across the counter his hand goes out, the way he closes with a supplier, and she
 
 Her father keeps hold of her hand a second past where she lets go of his. Then she takes the invoice off the counter, finds the line he has been reading for twenty minutes, and tells him the supplier has billed him twice for one case of blades.
 
-The complaint goes to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it, but lets it drop.
+The complaint goes to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it.
 
 Between the middle of May and the second week of June she asks sixty-one employers, in person, working down a list arranged by street, but nine of them agree, all of them customers of her father's. It goes up days after the gowns are returned with all of them on it. The first month produces a few dozen registered users and exactly one hire, but the hire is a man who already had the job and used the site to fill in the application form.
 

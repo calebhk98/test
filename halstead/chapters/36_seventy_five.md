@@ -106,8 +106,6 @@ priya: three vans that came back empty gets you thirty
 
 ruth: it gets you thirty if you think you are collecting a person
 
-Kavi puts the marker down on the tray with the cap still in his other hand.
-
 priya: what am i then
 
 ruth: at the things you were doing on tuesday you are somewhere in the top ten percent of people alive
@@ -126,7 +124,7 @@ priya: ruth i finished sixty-fourth out of ninety-one. bottom third four years r
 
 priya: but thank you for the heads up, genuinely
 
-The chat lets it go there. Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, but sends a single line instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, but what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
+Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, but sends a single line instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, but what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
 
 priya: although
 

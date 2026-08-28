@@ -198,7 +198,7 @@ theo: it IS nice. its also insane
 
 ________________
 
-Sam gets half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and whatever's left of it goes to the chat instead of a call home. Tonight it's this.
+Sam gets half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and whatever's left of it goes to the chat. Tonight it's this.
 
 sam: does anyone elses job do trust falls
 
@@ -498,6 +498,6 @@ kavi: i know that too. i asked twice
 
 chloe: fine
 
-Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading instead. The offer sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
+Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading. The offer sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
 
 The chat moves on within minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.

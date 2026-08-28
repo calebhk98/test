@@ -6,7 +6,7 @@ Everything here moves at the speed of whoever finishes first, and in the first w
 
 When Chloe finishes a page and looks up, half the table is already working down the next page, and by the time she catches them Ruth is ahead again. The next thing arrives the moment the last is done, all morning and all afternoon, so that Tuesday goes past without any of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
 
-She had expected the speed to feel like a punishment, but it feels instead like being let out, though she cannot stop checking where everybody else has got to on the page.
+She had expected the speed to feel like a punishment, but it feels like being let out, though she cannot stop checking where everybody else has got to on the page.
 
 Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end. Where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the ones after it, and all of them together had taken about as long as she now has to answer in.
 
@@ -76,7 +76,7 @@ Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew 
 
 "Which of them do you flip. The first or the second," Owen says, from the end of the row.
 
-"The second. Always the second," Mr. Baptiste says, and puts the marker down on the ledge. "Now tell me why. Why not the first."
+"The second. Always the second," Mr. Baptiste says. "Now tell me why. Why not the first."
 
 Owen looks at the board, then down at his sheet, then at the board again. "I've lost the thread of it."
 
@@ -102,7 +102,7 @@ Owen goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 Around them the rest of the class is already standing, chairs scraping, Sam's bag over his shoulder before Mr. Baptiste has finished the sentence, while Chloe sits in the middle of it and watches a conversation go on over her head about a question she asked first. Her ears stay hot for an hour afterward, through the break and through most of the lesson after it.
 
-The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. A second try gets her no further, so Chloe draws it a third time with her own numbers instead of his, because his numbers have been sitting in her head since the lesson and taking her nowhere: three quarters divided by an eighth. Shading three quarters of a rectangle, she rules the eighths straight down across it, top to bottom, all eight, and counts how many land inside the shaded part.
+The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. A second try gets her no further, so Chloe draws it a third time with her own numbers, because his numbers have been sitting in her head since the lesson and taking her nowhere: three quarters divided by an eighth. Shading three quarters of a rectangle, she rules the eighths straight down across it, top to bottom, all eight, and counts how many land inside the shaded part.
 
 Six.
 
@@ -168,7 +168,7 @@ Ruth is at the end of the table with her chin on her hand, pushing one piece of 
 
 "She didn't ask you, specifically, she asked the whole table, and everybody sitting at it could have answered, not only you."
 
-"She asked the table. I was sitting at the table," Ruth says, and puts her fork down instead of eating what is on it.
+"She asked the table. I was sitting at the table," Ruth says.
 
 Chloe's own fork stops halfway to her mouth, questions backed up behind it: whether anybody went into the stairwell after him, whether he had to say it out loud to somebody before they would let him go, and how long it was between the saying and his mom being at the door.
 

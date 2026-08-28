@@ -74,7 +74,7 @@ Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 "What?" Ruth says. "What are you talking about?"
 
-Up on her knees, both hands out, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots."
+Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots."
 
 "That's not it," Ruth says. "None of this was in the briefing."
 
@@ -133,7 +133,7 @@ Twenty minutes later Iyad has it at the far end of the table with a phrase of hi
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 
-Music runs both ways at once. Half the hour is by ear and half is notation, with one man teaching both, sliding between them and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays a run of bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
+Music runs both ways at once. Half the hour is by ear and half is notation, with one man teaching both, sliding between them and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays a run of bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
 
 ________________
 
@@ -153,7 +153,7 @@ She is nodding before he has finished. "Steel says it, textiles said it, and som
 
 "So how do you actually sort the real ones from the ones just saying it for cover?"
 
-She takes a roll and puts it down again. "I said you look at whether you could rebuild it in a war and how long it'd take. It's what I had, and it's thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
+"I said you look at whether you could rebuild it in a war and how long it'd take. It's what I had, and it's thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
 
 He turns round in his chair properly. "No, hold on," he says. "You've got most of an argument there. What happens if it's five years and the war's two? Does it still look smart partway through, or only in the year you signed it?"
 
@@ -177,11 +177,11 @@ More go in before the break, but they are the essays they have been since Octobe
 
 "I know," Chloe says. "There's a chair, but I've been looking at it."
 
-Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
+Her grandmother puts a plate down on the carpet inside the doorway. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
 
 The Tuesday is in the second week of February.
 
-In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes toward that place instead of round it. The last line goes down late, and there is an hour before lights out, which she spends on a book she picked herself.
+In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes toward that place. The last line goes down late, and there is an hour before lights out, which she spends on a book she picked herself.
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with minutes to go, and leaves it exactly as it is.
 

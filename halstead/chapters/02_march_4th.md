@@ -2,7 +2,7 @@
 
 *March 2012 – June 2012*
 
-The waiting room has a fish tank with no fish in it, only water, the little plastic castle, the bubbles coming up in a line from the filter, so Chloe puts both hands on the glass to look along the gravel, in case they are under something.
+The waiting room has a fish tank with no fish in it, only water, the little plastic castle, the bubbles coming up in a line from the filter, so Chloe puts her hands on the glass to look along the gravel, in case they are under something.
 
 The gravel is only gravel.
 
@@ -18,11 +18,11 @@ The form the office gave her mom runs to several pages, so Chloe comes back to t
 
 "What about me, though, like what part of me? Apparently you know how I feel about stuff. That's the first I've heard of it."
 
-Her mom stops, looks at the clipboard, then at Chloe, then puts the pen down on the papers.
+Her mom stops, looks at the clipboard, then at Chloe.
 
-"I'm doing my best guess on some of these, because I only get to see the outside of you, so I'd rather guess honestly than skip a question. If I get it wrong, you can tell me afterward and I'll change it," she says.
+"I'm doing my best guess on some of these, because I only get to see the outside of you, so I guess honestly. If I get it wrong, you can tell me afterward and I'll change it," she says.
 
-Her dad is at work. That morning he tried to move two things but managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it's fine, it's a Wednesday. Chloe had held his sleeve a second longer than the door needed. She doesn't know whether this is the kind of appointment you bring a dad to, so she reads the waiting room instead.
+Her dad is at work. That morning he tried to move two things but managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it's fine, it's a Wednesday. Chloe had held his sleeve a second longer than the door needed. She doesn't know whether this is the kind of appointment you bring a dad to, so she reads the waiting room.
 
 There is a poster about handwashing in English with the Spanish underneath, which she tries first.
 
@@ -88,7 +88,7 @@ Chloe sits up a little, waiting to find out if that counts extra. Ben stops writ
 
 Pairs keep coming until he turns the sheet over and finds the end of them. Then he opens a drawer and comes back with a thicker book, another colour down the spine, and reads pairs out of that one, off a page she can see the shape of but not the words on.
 
-Those go on a while, and when he stops he puts that book back in the drawer instead of on the table with the rest.
+Those go on a while, and when he stops he puts that book back in the drawer.
 
 ________________
 
@@ -200,7 +200,7 @@ Chloe goes back over what she said and can't find the part that was wrong, so sh
 
 Chloe says it again with a person climbing in a window in it.
 
-They keep coming, wallets on the ground, smoke at night and lines painted on a road. Every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen instead, and the pen moves the same amount whatever she says.
+They keep coming, wallets on the ground, smoke at night and lines painted on a road. Every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen, and the pen moves the same amount whatever she says.
 
 ________________
 
@@ -212,11 +212,11 @@ By then her stomach is loud enough that she covers it with her forearm, and she 
 
 "You can say yes, you know."
 
-"I know. Do we stop, though? Or do we just do a different one?" Chloe asks, and he lets it go and switches to something easier for a bit.
+"I know. Do we stop, though? Or do we just do a different one?" Chloe asks, and he switches to something easier for a bit.
 
 At the end he caps his pen and puts the last card back in its box. "You worked really hard."
 
-Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, but asks the question underneath instead.
+Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, but asks the question underneath.
 
 "The one with the marks, does everybody finish it?"
 
@@ -274,11 +274,11 @@ Chloe looks at her shoes and holds still, in case moving is the thing that makes
 
 ________________
 
-In the car her mom puts both hands on the wheel, checks the mirror, checks it a second time, and starts it.
+In the car her mom puts her hands on the wheel, checks the mirror, checks it a second time, and starts it.
 
 "So you're all good. Everything's great, he thinks you're doing just fine," she says, pulling out of the parking spot.
 
-Chloe says okay, both hands holding the seatbelt away from her neck.
+Chloe says okay, holding the seatbelt away from her neck.
 
 "Do you want to know what he said?"
 
@@ -300,9 +300,9 @@ Her mom pulls off when the car behind them does something with its horn. "It's a
 
 "He didn't give me a number," her mom says to the windshield.
 
-But a word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seatbelt instead of saying so, because they are having a nice time.
+But a word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seatbelt, because they are having a nice time.
 
-They get ice cream, unheard of on a Wednesday, and she eats it in the car, where some of it goes on the seat and her mom tells her to let it go.
+They get ice cream, unheard of on a Wednesday, and she eats it in the car, where some of it goes on the seat.
 
 ________________
 
@@ -310,7 +310,7 @@ After the appointment, nothing changes.
 
 On March 5th it is the same worksheet, the problems sitting after the one that tells you how it works, and Bryce Dolan counting on his fingers. Mrs. Aldana keeps grading at her desk, and when she asks Chloe once, in April, whether everything is all right at home, Chloe says yes.
 
-Some days she asks to play four square and gets a round in before the ball goes somewhere else without her, so she sits on the wall with her library book until the bell instead of asking again.
+Some days she asks to play four square and gets a round in before the ball goes somewhere else without her, so she sits on the wall with her library book until the bell.
 
 What she works out that month is bigger than the pencil trick: finish first, sit still, keep your answers short, and the room leaves you alone, the teacher included. It works in reading and in math, every day until the end of the year.
 

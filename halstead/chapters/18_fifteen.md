@@ -108,7 +108,7 @@ On each of the next Thursdays she sits on that mat after the room empties, runni
 
 ________________
 
-Hark puts the last envelope down. "You are going to lose money in your life." He waits, both hands flat on the desk. "Everybody does. You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
+Hark puts the last envelope down. "You are going to lose money in your life." He waits, hands flat on the desk. "Everybody does. You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
 
 The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
@@ -164,7 +164,7 @@ Priya says at dinner that the lock held, which Ruth calls the wrong sentence bef
 
 So the phone stops holding anything.
 
-Kavi does the work over a few evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset instead of a box. Close the window and there is a clean pane of glass in your pocket with a login sitting on it. Take the phone off somebody and what you are holding is a phone.
+Kavi does the work over a few evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset. Close the window and there is a clean pane of glass in your pocket with a login sitting on it. Take the phone off somebody and what you are holding is a phone.
 
 "Then the drawer's got the login, and the login is the whole thing all over again, only in a smaller box."
 

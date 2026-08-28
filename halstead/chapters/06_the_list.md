@@ -10,7 +10,7 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 
 "Somebody must have taken it, because a letter that lists transportation has somebody in mind."
 
-"This is my second time in this room and that bus has stayed a rumour both times," the woman next to him says, both hands round a cup of coffee gone cold.
+"This is my second time in this room and that bus has stayed a rumour both times," the woman next to him says, hands round a cup of coffee gone cold.
 
 "It exists, because they showed me a photograph of it with a driver next to it," somebody says, and somebody laughs.
 
@@ -34,7 +34,7 @@ Several of them answer at once: "They said they have a list."
 
 "They told us the list is a good list," the woman says, "which leaves the whole question of good at what."
 
-"She's top of her reading group at home," somebody's mother says to the table generally, finding a spot on the wood instead of anyone's face.
+"She's top of her reading group at home," somebody's mother says to the table generally, finding a spot on the wood.
 
 "Here it buys you a paper plate and a seat at this table," the first man says, and gets up on his own to find the coffee pot.
 
@@ -72,7 +72,7 @@ Then the wood shop, and the safety goggles sized for somebody bigger. Then what 
 
 "Then there's the computers, and that's actually two entirely different things, the first being that you type the words in yourself instead of dragging coloured blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into. It's enormous and they keep it freezing cold on purpose. The machines throw off so much heat the heat would cook them. And a woman who works in there took us through the whole arrangement, down to the water pipes under the floor," she says, counting them off on her fingers.
 
-Then the robot arm on the second floor, which picks a block up and puts it down again for as long as you stand there watching it.
+Then the robot arm on the second floor, which picks a block up for as long as you stand there watching it.
 
 Then chess, which Sam is also better at.
 
@@ -86,7 +86,7 @@ Then the wood shop again, and the goggles again, in almost the words she used be
 
 Her plate has gone cold in front of her, barely touched, but she talks straight on through it, leaning in far enough that her shoulder ends up against his arm.
 
-Her dad sets his fork down and laces his fingers on the table in front of him.
+Her dad laces his fingers on the table in front of him.
 
 "How many days is it you've actually been here now?"
 
@@ -144,7 +144,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "Half a phone call is half a phone call, but the other half is the half where they say the thing."
 
-Ruth picks the knot out of one shoelace with both thumbs instead of answering him.
+Ruth picks the knot out of one shoelace with both thumbs.
 
 "My parents already asked, on the third day of the month," Kavi says.
 

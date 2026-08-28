@@ -18,7 +18,7 @@ Her room has a bed, a desk, a window, and a girl from Michigan named Fen whose r
 
 Ruth sits on the end of Fen's bed with her shoes on and talks the whole time Chloe takes to unpack: Priya arrived in January and is on second floor; a boy in their year broke his wrist in February doing something everybody has a different account of; the bread is good on Wednesdays and Fridays, though everybody on the floor has a theory about why, and no two theories match. Chloe goes to the window between armfuls of socks, keeping her hands off the sill and the rocks on it. The glass has the whole approach in it: the gravel loop, the front of the building in grey stone that goes to brick above the second floor, and past the mown grass a road with trees on the far side of it. She came in under all of that an hour ago but never once looked up. At the bottom of the bag is the envelope with her name on it, which goes into the desk drawer under a folder.
 
-"What's your last name, spelled out? I want to get it right the first time instead of guessing at it for a month. I already have a list going and I'm not doing it twice."
+"What's your last name, spelled out? I want to get it right the first time. I already have a list going and I'm not doing it twice."
 
 Ruth watches her write it on the inside cover of a notebook. "Aymar. A, Y, M, A, R. Why bother, when everyone at camp already said it wrong and I let them?"
 
@@ -54,7 +54,7 @@ That gets her sitting up. "By size, smallest closest to the door, and if two loo
 
 "Why do you bother, if you're leaving the room in August?"
 
-"I'm not leaving them behind, I'm taking them with me and starting the sill again wherever I go next." She puts it back exactly where it came from, sure of the spot.
+"I'm not leaving them behind, I'm taking them with me and starting the sill again wherever I go next."
 
 She's asleep before Chloe thinks of anything else to ask, and the radiator does what Fen said it would, twice, with Chloe awake for both performances.
 
@@ -142,7 +142,7 @@ Her mother laughs at that, properly, for longer than the answer deserves, but it
 
 "Are you happy there, actually happy, not just doing fine?"
 
-Chloe sits down on the floor of the alcove instead of answering, the cord stretched as far as it goes, her back against the strip of wall gone smooth and pale at shoulder height where everybody leans. The pool. Ruth. The library that's open all night, the desk always empty. Her mother waits, letting the quiet sit on the line.
+Chloe sits down on the floor of the alcove, the cord stretched as far as it goes, her back against the strip of wall gone smooth and pale at shoulder height where everybody leans. The pool. Ruth. The library that's open all night, the desk always empty. Her mother waits, letting the quiet sit on the line.
 
 "Yes," Chloe says.
 

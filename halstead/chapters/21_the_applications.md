@@ -16,7 +16,7 @@ Chloe is on the floor with the printed list of deadlines in her lap, going down 
 
 "What happens if they all say no, all of them at once," she says, not quite a question.
 
-"Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
+"Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once.
 
 Chloe's list runs to fourteen: the Ivies, the state school, her mother's college, the community college, a place in Michigan because Fen said the winters there are worth seeing once, Georgetown, up twice in a week and still on the list because the second time it was a language department, and another she picks off a phone screen in a few minutes after lights-out because it came up on the page beside the Michigan listing.
 
@@ -68,7 +68,7 @@ Without looking up, she tabs to the next box. "I'm applying everywhere this week
 
 "Any of them where somebody calls in wanting a price and I'm the one who answers the phone. Everything else is the building it happens in, the name on the door, the paperwork behind the counter, none of it the actual job."
 
-A second prompt asks about a place that changed her; Chloe cannot get the forge down to the limit either, so she writes about the reservoir instead, a few miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out well under the limit with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
+A second prompt asks about a place that changed her; Chloe cannot get the forge down to the limit either, so she writes about the reservoir, a few miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out well under the limit with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
 
 For the college her mother went to, the prompt asks why this school specifically, and Chloe writes the short, honest answer: her mother still has a sweatshirt from it, worn soft at the cuffs, at the back of a closet, and has always assumed Chloe would end up there too.
 
@@ -84,7 +84,7 @@ The caller declines and hangs up first.
 
 Then somebody reads the essays, and what everybody notices first is the graduate-level prose, while what everybody thinks first is ghostwriting: ninety-one applicants from a single school, all at such a level, is a mill or a very good teacher with a template. A review committee, reading blind, spends most of a meeting on the transfer-cohort theory before somebody checks the birth years.
 
-An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people; she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
+An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people; she reads the sentence twice, and reads it a third time before she picks up the phone.
 
 "Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
 
@@ -94,13 +94,13 @@ Her colleague reads it standing in the doorway, still holding his own coffee. "I
 
 By that afternoon every file from the school is flagged, and by January there are open files on Halstead at more than thirty institutions.
 
-What breaks it open further is the papers: three applicants have listed research on their applications, a line each, unelaborated. The school confirms all of them exist, with real titles, real dates, indexed where papers get indexed, and it will not send a copy to anyone who asks; what it offers instead is a chair.
+What breaks it open further is the papers: three applicants have listed research on their applications, a line each, unelaborated. The school confirms all of them exist, with real titles, real dates, indexed where papers get indexed, and it will not send a copy to anyone who asks; what it offers is a chair.
 
 A representative may come and read the paper in a room, on paper, for as long as they like, with somebody in the room throughout. No phone and no bag go in. The school provides the paper, a pencil, and as much notepaper as anybody wants; everything written in the room is read before it leaves. A committee calls the terms unworkable in an internal email, forwarded twice before somebody decides declining is simpler than arguing; another leaves its follow-up requests to gather dust. Five accept.
 
 The room is small and windowless, a lamp over a table, and the Caltech representative sits down early and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water mid-morning.
 
-By noon he has filled sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, but it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. Late in the afternoon he sets it down, looks at the wall a while, and picks it back up.
+By noon he has filled sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, but it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over. Late in the afternoon he sets it down, looks at the wall a while, and picks it back up.
 
 Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
@@ -148,7 +148,7 @@ He asks who did the geometry.
 
 Chloe is a few seats down with a plate in front of her. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, and what she tells him is what is written on the back of the April drawing.
 
-The drawing lives in a folder Nadia keeps. Chloe gets it out that evening and reads her own working off it, looking for the Thursday she carried it in to breakfast, and whether Bex was at that table, and Bex was at that table, and at that point Chloe was still saying the thing out loud instead of putting her name on the front of a page.
+The drawing lives in a folder Nadia keeps. Chloe gets it out that evening and reads her own working off it, looking for the Thursday she carried it in to breakfast, and whether Bex was at that table, and Bex was at that table, and at that point Chloe was still saying the thing out loud.
 
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. Asking what watch is, he gets walked through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 
@@ -166,7 +166,7 @@ The Duke representative, who'd collected "Sport," then "Athletics," then "Recrea
 
 "That's not a well-formed question," Ruth says, typing on. "Hardest by what measure, and compared to what? Hardest in the week it happened, or hardest to keep doing? Those have different answers and I don't know which of them you came here for."
 
-"Pick the measure you'd defend, then, and we'll go by that. I'd rather have yours than mine."
+"Pick the measure you'd defend, then, and we'll go by that. I'd rather use yours."
 
 Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part. The hard part was turning up on the ninetieth Saturday with nothing new to say about any of it. Sustained is harder to fake than hard." She opens the laptop back up.
 
@@ -188,7 +188,7 @@ The notebook is shut under her hand, and she pushes her sleeves up, a second goi
 
 "Chloe writes four pages when they ask for six hundred."
 
-Chloe puts her pen down and leaves it down.
+Chloe's pen stays where it landed.
 
 "Down to the limit, in the end. I cut it."
 
@@ -206,7 +206,7 @@ Nadia writes the Tuesday call into the column and rules a line under it. "Then t
 
 ________________
 
-Decisions arrive across March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands late on a Tuesday afternoon, in the middle of something else, while Kavi stays up past midnight for a posting first thing the next morning instead, and is awake for it too, phone in hand before he's out of bed.
+Decisions arrive across March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands late on a Tuesday afternoon, in the middle of something else, while Kavi stays up past midnight for a posting first thing the next morning, and is awake for it too, phone in hand before he's out of bed.
 
 In the common room Chloe has the phone flat on her knee, going down her own list of which have posted and which have not, counting under her breath.
 
