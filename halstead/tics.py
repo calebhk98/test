@@ -60,6 +60,11 @@ TARGETS = {
     # is ordinary English, and it is the formula rather than the word that the
     # author can hear.
     "'I'd rather X than Y'": 2.0,
+    # 142.8 per 100,000 against a corpus median of 0.0 and a maximum of 50.5:
+    # nearly three times the most explanation-heavy of 23 novels, in a corpus
+    # where the median novel never does it. Target is a third of the measured
+    # rate, per the rule above, which lands just under that maximum.
+    "', because' inside speech": 48.0,
 
     # Declining to act. These three are CAPS, not targets: the author's ruling
     # is "about 2x more passive than they should be, and I don't want to
@@ -108,6 +113,15 @@ PATTERNS = {
     # speakers, which is what makes it read as house voice rather than anyone's
     # character. Counted two ways: the whole word, and the formula itself.
     "the word 'rather'":     r"\brather\b",
+    # Characters explaining themselves inside their own speech. Found
+    # independently by three scene-audit agents in three different chapters,
+    # each naming it a top-three item, and shared across the mother, the
+    # librarian, a teacher, Sam and Chloe - which is house voice reaching into
+    # dialogue rather than anybody's character. The narration-only tic scan in
+    # style_report.py could never see it: it strips quoted spans first, which
+    # is correct for rule 1 and blind to exactly this.
+    "', because' inside speech":
+        r'"[^"]{20,400}?,\s+because\b',
     "cap: leaves it / lets it go":
         r"\b(?:leaves?|left)\s+(?:it|that|them|the\s+\w+)\s+(?:there|alone|where|at\s+that|be)\b"
         r"|\blets?\s+(?:it|that|them)\s+(?:go|sit|stand|lie|drop|rest)\b"
