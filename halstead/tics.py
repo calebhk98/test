@@ -120,8 +120,13 @@ PATTERNS = {
     # dialogue rather than anybody's character. The narration-only tic scan in
     # style_report.py could never see it: it strips quoted spans first, which
     # is correct for rule 1 and blind to exactly this.
+    # Matches both punctuations on purpose. Splitting a compound question so the
+    # question mark lands correctly turns ", because" into "? Because" and moved
+    # five instances out of sight of this row without removing one word of the
+    # habit. A measure a punctuation change can defeat is not measuring the
+    # habit, it is measuring the comma.
     "', because' inside speech":
-        r'"[^"]{20,400}?,\s+because\b',
+        r'"[^"]{20,400}?[,?]\s+[Bb]ecause\b',
     "cap: leaves it / lets it go":
         r"\b(?:leaves?|left)\s+(?:it|that|them|the\s+\w+)\s+(?:there|alone|where|at\s+that|be)\b"
         r"|\blets?\s+(?:it|that|them)\s+(?:go|sit|stand|lie|drop|rest)\b"
