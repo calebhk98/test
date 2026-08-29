@@ -190,7 +190,10 @@ def main():
 
     print("\n  words per quotation, against " + ", ".join(PEER_BOOKS))
     print("  bands are whole rows from those four books, never mixed percentiles")
-    print(f"    {'mean':<22}{book['wmean']:>7.1f}    peers 17.0-27.8   "
+    # Two decimals, not one. At 17.947 against a floor of 18.0 the one-decimal
+    # form printed "18.0 ... target 18-24 ... FAIL", which reads as a broken
+    # script rather than as a near miss.
+    print(f"    {'mean':<22}{book['wmean']:>7.2f}   peers 17.0-27.8   "
           f"target {lo:.0f}-{hi:.0f}    {band(book['wmean'], lo, hi)}")
     print(f"    {'median':<22}{book['wmed']:>7.0f}")
     print(f"    {'variation (CV %)':<22}{book['wcv']:>7.0f}    peers 113-152     "
