@@ -26,6 +26,7 @@ What comes from where:
                        manuscript.
   prose_check.py       PROSE_RULES violations in the character sheets.
   quote_length.py      sentences per quotation, against the corpus.
+  banned_phrases.py    phrases the author has ruled out by name.
   style_report.py      conjunction rates and the narrator tic scan.
   check_edits.py       em dashes and the hard-line-break convention.
 
@@ -334,7 +335,11 @@ def targets():
         low = sorted((r for r in got if r[1] < floor), key=lambda r: r[1])
         high = sorted((r for r in got if r[3] > FK_MAX), key=lambda r: -r[3])
         mark = "" if avg >= floor else "  <-- band under floor"
-        names = ", ".join(f"{r[0][:2]} ({r[1]:.1f})" for r in low) or "none"
+        # Three decimals in the failing list. At 5.496 against a floor of 5.5
+        # both the one- and two-decimal forms printed "5.5" under a floor
+        # printed as 5.5, which reads as a broken script rather than a near
+        # miss. A chapter named here should show why it was named.
+        names = ", ".join(f"{r[0][:2]} ({r[1]:.3f})" for r in low) or "none"
         print(f"  {str(lo) + '-' + str(hi):<12}{len(got):<12}{floor:>7.1f}{avg:>9.2f}{mark}")
         print(f"  {'':<12}{'':<12}{'':>7}{'':>9}   {names}")
         if high:
@@ -403,14 +408,19 @@ def absolutes():
     print(run("absolutes.py"))
 
 
+def banned():
+    rule("8. RULED-OUT PHRASES")
+    print(run("banned_phrases.py"))
+
+
 def voice():
-    rule("8. VOICE SEPARATION")
+    rule("9. VOICE SEPARATION")
     print(run("voice_separation.py", "--prose"))
     print(run("voice_separation.py", "--chat"))
 
 
 def integrity():
-    rule("9. INTEGRITY")
+    rule("10. INTEGRITY")
     for label, script, args in (
             ("Character-sheet quotations not found in the manuscript",
              "verify_citations.py", ()),
@@ -537,6 +547,7 @@ def main():
     tee.run(numbers)
     tee.run(constructions)
     tee.run(absolutes)
+    tee.run(banned)
     if not a.brief:
         tee.run(voice)
     tee.run(integrity)
