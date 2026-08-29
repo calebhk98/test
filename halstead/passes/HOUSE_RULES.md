@@ -53,7 +53,12 @@ This is the commonest way the rule gets broken, and it survives every pass
 because the first half of the sentence is legitimate. A camera observation is
 made, and then a tail is bolted on telling the reader what to take from it.
 
-Every one of these is from this manuscript and every one of them fails:
+Every one of these was in this manuscript and every one of them failed.
+All six have since been repaired, checked against the chapters on
+2026-08-29. They are kept here as the shape to recognise, not as work
+outstanding: do not go looking for them in the text, and do not treat a
+sentence as broken because it resembles one. The **bold** part is what
+had to come out in each case.
 
 - a rail at chair height **so the chairs cannot reach the plaster**
 - a light that throws everything back off the glass, **so the bottom of a
