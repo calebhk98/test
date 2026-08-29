@@ -80,7 +80,7 @@ Amberg writes for a while. "The eighty saying no are going to college in Septemb
 
 "Which took a day."
 
-The next question comes at the page rather than at her. "How many applications."
+The next question comes at the page rather than at her. "How many applications?"
 
 "Two hundred and one since November. Thirteen answers. Ten of them came out of software in the small hours, and one arrived eight minutes after a form that took me fifty."
 
@@ -102,7 +102,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked, because checking the rest of it before there's anything to check would just be a way of not starting."
 
-"What do your parents say."
+"What do your parents say?"
 
 "I haven't told them."
 
@@ -178,7 +178,7 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 "I'm not saying I think I'm good, only that I don't know, and I'd rather find out than get paid not to."
 
-A pause, and then her father again, quieter. "What happens if you change your mind. Is the door still open in a year? Five?"
+A pause, and then her father again, quieter. "What happens if you change your mind? Is the door still open in a year? Five?"
 
 "That's not something I asked him, because my head was still on the room and the desk, not on whatever might happen years from now. I should have asked him. It didn't come into my head at all until you just said it."
 

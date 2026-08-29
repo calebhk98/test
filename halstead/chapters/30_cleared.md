@@ -64,7 +64,7 @@ The classes come after that, all of them, mathematics through politics through t
 
 "From that year on." His pen doesn't stop. "Mathematics, to the year below me. Seven of them the first year, but one of them failed."
 
-"Whose column does that go in."
+"Whose column does that go in?"
 
 "Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose."
 

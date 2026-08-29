@@ -553,11 +553,6 @@ the point where the answer is useful.
 - Sits the bar at sixteen and passes first time. Admitted to MIT, Caltech and
   Chicago, and is the only member of the core group who takes the school's offer
   to stay on as a researcher instead of leaving.
-- Appears in chapters 04, 05, 06, 10 through 19, and 21 through 35. Outside his
-  introduction and chapter 15 he averages well under two lines a chapter, which
-  is a real structural issue: either give him presence in ordinary ensemble
-  scenes or lean into what the text supports, which is silence except when a
-  mechanism is on the table.
 - Home, body, interior life and the small stuff on this sheet are built outward
   from two real hooks in the manuscript and none of it has reached the page yet.
   None of it contradicts what is there.

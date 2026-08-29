@@ -16,7 +16,7 @@ Then the card, carrying its grids of figures and listing the checkpoints between
 
 "You'll be moving between these on foot, at night," the sergeant says, tapping the card once against the table. "There's an opposing element working the ground the whole way between them. They're briefed to take you if they can, and they pick their own timing rather than yours, so plan on them finding you before you find them."
 
-"How many of them, Sergeant."
+"How many of them, Sergeant?"
 
 "More than you." The sergeant taps the card again. "Move along, Marsh."
 
@@ -84,7 +84,7 @@ The rifle is coming round before he has decided anything whatever about it, and 
 
 Sam comes up out of the cut and stands there in the open with his own harness going into the last hour before dawn, but the man who shot him comes up out of the weed line thirty feet back, so low to the ground on the way up that Sam hears him a full second before he can find him.
 
-"How long were you in there."
+"How long were you in there?"
 
 "Since nine."
 
@@ -114,7 +114,7 @@ Sam's turn comes third. Instead of calling him up to the front, the major leaves
 
 The next part he reads the way a form gets read.
 
-"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well." Now he looks up. "What is the contact rule on this exercise, Private Marsh."
+"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
 
 "There is no hand-to-hand, sir." Sam doesn't look away. "At any range."
 
@@ -132,7 +132,7 @@ The major looks at him for a second, then writes on the top sheet, unhurried. Th
 
 "Any questions," the major says at the end, closing the clipboard.
 
-"Yes, sir." Sam sits forward, the ruck creaking under his boot. "Was that it, sir, or is that the practice one and there's a real one after it."
+"Yes, sir." Sam sits forward, the ruck creaking under his boot. "Was that it, sir, or is that the practice one and there's a real one after it?"
 
 A few chairs forward of him, somebody's head comes round.
 
@@ -146,7 +146,7 @@ The major regards him across the width of the room for a while, laser pointer of
 
 The major opens the clipboard again, at a page he has had shut all afternoon.
 
-"Twenty minutes at that fence before you fired. Where did you learn that, Private Marsh."
+"Twenty minutes at that fence before you fired. Where did you learn that, Private Marsh?"
 
 "School, sir."
 

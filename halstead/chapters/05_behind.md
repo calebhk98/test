@@ -74,9 +74,9 @@ Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew 
 
 "Can you do the rectangle again, from the start," Marisol says, and he redraws it exactly as before, line for line.
 
-"Which of them do you flip. The first or the second," Owen says, from the end of the row.
+"Which of them do you flip? The first or the second," Owen says, from the end of the row.
 
-"The second. Always the second," Mr. Baptiste says. "Now tell me why. Why not the first."
+"The second. Always the second," Mr. Baptiste says. "Now tell me why. Why not the first?"
 
 Owen looks at the board, then down at his sheet, then at the board again. "I've lost the thread of it."
 

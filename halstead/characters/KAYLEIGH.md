@@ -359,8 +359,4 @@ only.
 - Schooling: first grade under Mrs Aldana at age six, second grade under Ms
   Vance at age seven, in a table group with Bryce Dolan and a boy called Aiden
   R.
-- She never attends Halstead and appears in no chapter after her second-grade
-  one; a later mention is only Chloe's internal accounting, not a scene she is
-  present in.
-- Appears in: chapters/01_before.md, chapters/02_march_4th.md,
-  chapters/07_the_same_room.md, and chapters/09_february.md (named only).
+- She never attends Halstead and

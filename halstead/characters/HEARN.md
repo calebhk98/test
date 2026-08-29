@@ -357,7 +357,7 @@ no document, and never counts anything out loud.
 *Facts a writer must not contradict. Nothing here characterises him. Delete this section and
 the sheet is still complete.*
 
-**Appears in:** chapters/13_ten_pages.md and chapters/14_sixty_degrees.md, speaking.
+**md and chapters/14_sixty_degrees.md, speaking.
 Referenced in chapters/21_the_applications.md.
 
 **Continuity:** Full name Walter Hearn, called Mr. Hearn or Hearn; nobody under eighteen uses

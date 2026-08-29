@@ -480,6 +480,3 @@ told to a stranger unprompted, it is not Fen's.
   collection, which is not on the catalogue.
 - Housing: rooms with Chloe on the third floor from age eight; second floor
   with a girl from Maine by that September.
-- Appears in: chapters/10_april.md, chapters/11_eight.md,
-  chapters/18_fifteen.md (named in a transaction, not present as a scene),
-  chapters/21_the_applications.md (named in passing).

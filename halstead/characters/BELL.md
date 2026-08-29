@@ -340,7 +340,7 @@ he will build a whole session around one idea.
 *Facts a writer must not contradict. Nothing here characterises him. Delete this section and the sheet
 is still complete.*
 
-**Appears in:** chapters/11_eight.md, chapters/13_ten_pages.md, chapters/14_sixty_degrees.md and
+**md, chapters/13_ten_pages.md, chapters/14_sixty_degrees.md and
 chapters/15_twelve.md.
 
 **Continuity:** Full name Desmond Bell, called Bell or Coach Bell; nobody under eighteen uses a staff

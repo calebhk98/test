@@ -346,4 +346,3 @@ the other's manner.
 - A different character, also called Deb, appears earlier as a swim instructor
   at a summer camp. Name collisions are fine where they are rare, and this one
   is rare, so both keep the name and neither should be renamed.
-- Appears in: chapters/28_nineteen.md, in two summarised passages.

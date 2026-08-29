@@ -340,7 +340,7 @@ back, not even the reason he wanted it.
 *Facts a writer must not contradict. Nothing here characterises him. Delete this section and the sheet
 is still complete.*
 
-**Appears in:** chapters/14_sixty_degrees.md and chapters/15_twelve.md, speaking.
+**md and chapters/15_twelve.md, speaking.
 
 **Continuity:** Full name Marcus Sinclair, called Sinclair; nobody under eighteen uses a staff first
 name at this school. Male. Divorced, one adult son. Teaching is a handful of hours a week and the rest

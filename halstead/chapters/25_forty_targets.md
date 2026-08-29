@@ -12,7 +12,7 @@ The schedule he has had since childhood, and lost over the summer, reappears on 
 
 Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no visible interest in owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on every blanket by eye from across the aisle, stopping finally at Sam's.
 
-"Marsh. What is this supposed to be."
+"Marsh. What is this supposed to be?"
 
 "Blanket, Drill Sergeant."
 
@@ -34,7 +34,7 @@ By the end of the first week Sam has asked a succession of people how long the e
 
 "Then you're infantry. Then you go to a unit, and you do the whole business again in worse weather with better equipment. Eventually somebody hands you a platoon of your own and you become the problem."
 
-"Right, but what's this for. When does the real one start."
+"Right, but what's this for. When does the real one start?"
 
 On the Friday he puts the question to Ruiz, at parade rest at the conclusion of an evening formation, and Ruiz takes a long, unhurried look at him before responding to any part of it.
 

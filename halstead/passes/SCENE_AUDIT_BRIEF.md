@@ -33,7 +33,30 @@ is not. If a sentence has nothing wrong with it, write "No issue" and move on.
 
 ### 1. Scenes
 
-Split the chapter into its scenes. For each one:
+**A scene is not a section break.** The first wave of this audit got this
+wrong: every agent took the `________________` marks as the scene boundaries
+and reported four or five scenes in chapters that have a dozen. The author,
+on one of those reports:
+
+> Chloe finds an envelope addressed to her personally at the mailbox, opens it
+> badly, and reads a one-page letter. She brings it to dinner. Her parents read
+> it in turn, argue briefly, and give her a non-answer. She asks again once
+> more on Sunday and then stops asking. That is what, 4 scenes?
+
+A scene is a continuous stretch of one time and one place with one action
+running through it. When the place changes, or the clock jumps, or a new thing
+starts happening, that is a new scene — whether or not a break mark says so.
+
+So: **one section break may contain four scenes, and one scene may run across
+a break.** Find the real ones. Number them yourself and give each a location
+and a time, because that is what forces the boundary to be honest.
+
+The word other readers have used for the result of getting this wrong is
+*vignettes*: a chapter that reads as a string of short disconnected pieces
+rather than as scenes. If the chapter you have is a string of vignettes, say
+so, say how many, and say which of them belong together.
+
+For each scene:
 
 - A sentence or two on what appears to happen.
 - **Content:** what happens, in order, flat and factual.
@@ -82,7 +105,10 @@ Paragraphs should be cut to beats, not one every two sentences.
 ### 4. The chapter whole
 
 After every scene: does each scene need to exist? Can any be combined, and if
-so, how, concretely? Chapter 1 went from thirteen sections to five. Two scenes
+so, how, concretely? Count the scenes you actually found and give the average
+length in paragraphs. A chapter of nine pages wants four to six scenes; if you
+have found twelve at under a page each, that is the vignette problem and the
+merge section is the most important thing in your report. Chapter 1 went from thirteen sections to five. Two scenes
 doing the same job with the same character merge into one pattern rather than
 two anecdotes. Say what a merge would look like, not just that one is possible.
 

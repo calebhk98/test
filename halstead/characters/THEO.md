@@ -608,8 +608,3 @@ certainly not.
 - Continuity: he was at school the night of an armed intrusion at around age
   twelve, understood it at the time as an unannounced overnight drill, and did
   not learn otherwise until he read the file as an adult.
-- Appears in: chapters/13_ten_pages.md (narration only);
-  chapters/23_the_first_one.md (narration), chapters/24_the_chat.md,
-  chapters/29_the_file.md; chapters/32_the_money.md,
-  chapters/33_the_other_one.md, chapters/34_the_files.md,
-  chapters/35_nine_minutes.md.

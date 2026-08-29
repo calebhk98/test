@@ -138,7 +138,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "That's not what she said. She said it's a whole different day, with different people doing the looking."
 
-"You were on the wrong side of a door for that call. How would you know what she said."
+"You were on the wrong side of a door for that call. How would you know what she said?"
 
 "I heard half of it through the door. That's half more than you heard. Then Mom noticed I was there. And half a fact still beats a whole guess, so I'm not taking any of it back. You weren't even there, Sam, so you don't get an opinion on how much of a door I was standing behind."
 

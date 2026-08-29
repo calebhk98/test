@@ -401,4 +401,3 @@ volume on purpose because she thinks the room needs it.
   she graduates with the rest of the cohort.
 - She passes the bar examination the year the cohort first sits it; Chloe does
   not, and retakes it.
-- Appears in: chapters 12, 13, 14, 16, 17, 19, 21 and 23.

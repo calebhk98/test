@@ -42,7 +42,7 @@ Her mother is down on the floor with her by then, in the gap, with both arms rou
 
 "I can't do it anymore," she says, and it is a whole sentence, and she gets it out twice. "I can't do it anymore, I can't do any of it."
 
-"Do what, because you have to tell me what it is and then I'll fix it, whatever it is."
+"Do what? Because you have to tell me what it is and then I'll fix it, whatever it is."
 
 Chloe can't answer that, because school, the sheets, and Kayleigh Burns are each a piece of it, each too small to be it. The word for the whole thing is nowhere in her.
 

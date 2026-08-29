@@ -326,7 +326,4 @@ in time. He is reporting a trend; she is reporting a fact.
 - Schooling: first grade under Mrs Aldana at age six, second grade under Ms
   Vance at age seven, in a table group with Kayleigh Burns and a boy called
   Aiden R.
-- He never attends Halstead and appears in no chapter after his second-grade
-  one.
-- Appears in: chapters/01_before.md and chapters/02_march_4th.md (narration
-  only), and chapters/07_the_same_room.md, his only speaking appearance.
+- He never attends Halstead and

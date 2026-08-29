@@ -291,7 +291,7 @@ rather than at the person's own good.
 
 Delete this section and the sheet above still stands.
 
-- Full name Marcus Whitaker. Appears in chapters/30_cleared.md only.
+- Full name Marcus Whitaker.md only.
 - Six years as an Army criminal investigator, then federal background
   investigation, specialising in candidates with unconventional educational
   histories.

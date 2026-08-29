@@ -580,6 +580,4 @@ not Sam's.
   assessment twice. A sergeant named Ruiz shouts at him for four weeks and is
   never a speaking character; Sam likes him enormously.
 - Verbal tic that ages out: adding and a half after his age at camp. It does not
-  recur after the camp chapters and another character remembers it months later.
-- Appears in chapters 04, 05, 06, 07 (mentioned only), 10 through 20, and 21
-  through 35. Chapters 25 and 26 are his viewpoint.
+  recur once he is past twelve, and another character remembers it months later.

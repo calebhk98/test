@@ -6,13 +6,7 @@ she is the one who will not let an institution's own reassurance count as
 evidence.
 
 **Full name:** Margaret Kessler, born Halloran, called Meg.
-**Age:** adult throughout, roughly forty to sixty across the span she appears in
-**MBTI:** ENFJ (a writing aid, not a claim) | **IQ:** 118, applied almost
-entirely to systems and to people rather than to abstractions
-
-## Type and number
-
-**Primary: ENFJ, revised from ESFJ.** The harmony reading was looking at a hospitable woman who
+**Age:** adult throughout, roughly forty to sixty across the span she** The harmony reading was looking at a hospitable woman who
 feeds people and keeps a family together, and all of that is true and none of it is the
 engine. What actually runs her is a fixed picture of what a particular person needs and a
 willingness to work an institution for years to get it. She does not smooth a room; she
@@ -382,9 +376,6 @@ those margins is shared and should stay exactly as large as it is.
 Delete this section and the sheet above still stands.
 
 - Full name Margaret Kessler, born Halloran. Husband David Kessler, called Dave.
-- Appears in chapters/01, 02, 03, 04, 06, 07, 08, 09, 10, 11, 12, 14, 15, 16, 17,
-  19 and 23_the_first_one.md. Absent from chapters/05, 13, 18, 20 and from
-  chapters/27 through 35 entirely.
 - Studied accounting; worked in an accounts department for three years before
   Chloe, then part-time and freelance. This is the literal training behind the
   funding question she and Dave put to the school.

@@ -92,7 +92,7 @@ Her mom is still in her shoes, sitting on the arm of the chair by the window.
 
 Her mom gets up, turns the other bed down, and sits on the end of it.
 
-"Do you want me to talk about something."
+"Do you want me to talk about something?"
 
 "Yes. Anything."
 
@@ -214,7 +214,7 @@ On day seven Sam says something wrong about volcanoes: that the lava comes up be
 
 A girl further down lets her head drop onto the desk with a thud loud enough that a couple of people look over.
 
-"How thick what is."
+"How thick what is?"
 
 "The lava, and there's a word for it."
 
@@ -222,7 +222,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "Viscosity."
 
-"What's viscosity."
+"What's viscosity?"
 
 "How thick it is. Honey's got high viscosity, water's got low viscosity, lava's somewhere in between, depending how hot it is. Some of it pours. Some of it barely moves at all," Kavi says, and he keeps going from there.
 

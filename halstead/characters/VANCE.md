@@ -346,7 +346,7 @@ people, and Laura is the one who goes to the floor and stays there.
 *Facts a writer must not contradict. Nothing here characterises her. Delete this section
 and the sheet is still complete.*
 
-**Appears in:** chapters/07_the_same_room.md, speaking, across two scenes. Referenced only,
+**md, speaking, across two scenes. Referenced only,
 without dialogue, in chapters/08_the_asking.md.
 
 **Continuity:** Full name Laura Vance, age 31. Second-grade teacher, five years in, class

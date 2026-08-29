@@ -342,7 +342,7 @@ there.
 *Facts a writer must not contradict. Nothing here characterises her. Delete this section and the
 sheet is still complete.*
 
-**Appears in:** chapters/08_the_asking.md only.
+**md only.
 
 **Continuity:** Full name Diane Prahl, called Mrs. Prahl. Age 39. Married, two children past
 elementary age, eight prior years as a classroom second-grade teacher. Graduate endorsement in

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Flag banned constructions and negative framing in the character sheets.
+"""Flag banned constructions, negative framing, and book references in the sheets.
 
 PROSE_RULES.md rules 1 and 2 ban two families of construction. Rule 1 covers
 sentences whose work is a verdict on correctness or ranking. Rule 2 covers
@@ -23,7 +23,8 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SKIP = {"_TEMPLATE.md", "_CALIBRATION.md", "_ALLOCATIONS.md", "_DIFFERENTIATION.md"}
+SKIP = {"_TEMPLATE.md", "_CALIBRATION.md", "_ALLOCATIONS.md", "_DIFFERENTIATION.md",
+        "_SHEET_RULES.md", "_APPEARANCES.md"}
 
 # Rule 1. A verdict standing in for a reason. The trailing boundary keeps
 # "that is correcting" and "this is rightly famous for" out of the results.
@@ -53,6 +54,23 @@ NEGATION = [
     (r"\bnot (?:a|an|the) \w+ (?:but|so much as) (?:a|an|the)\b", "not-A-but-B"),
     (r"\b(?:which|that) is not (?:to say|the same as)\b", "undercut"),
     (r"\bwithout (?:being|reading as) \w+ about it\b", "undercut"),
+]
+
+
+# Rule 3. A sheet is about the person, not about this book. The author: "you
+# can't use characters/DAVE.md in a ghost book, if it mentions this book." A
+# surname or a birth month survives being moved to a haunted house; a chapter
+# number does not. Twenty sheets carried a navigation block naming chapters
+# before this check existed, permitted by an older version of _SHEET_RULES.md
+# and caught by nothing. They are in _APPEARANCES.md now.
+BOOK_REFERENCE = [
+    (r"\bchapters?\s+\d", "chapter reference"),
+    (r"\bchapters?\s+(?:one|two|three|four|five|six|seven|eight|nine|ten|"
+     r"eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|"
+     r"nineteen|twenty)\b", "chapter reference"),
+    (r"\bappears in\b", "navigation"),
+    (r"\bthe (?:camp|school) chapters\b", "chapter reference"),
+    (r"\b(?:his|her|their) viewpoint chapters?\b", "chapter reference"),
 ]
 
 
@@ -106,15 +124,17 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("sheets", nargs="*", type=Path)
     ap.add_argument("--root", type=Path, default=HERE)
-    ap.add_argument("--rule", type=int, choices=(1, 2), help="check only this rule")
+    ap.add_argument("--rule", type=int, choices=(1, 2, 3), help="check only this rule")
     ap.add_argument("--show", action="store_true", help="print the whole sentence")
     a = ap.parse_args()
 
-    rules = VERDICT + NEGATION
+    rules = VERDICT + NEGATION + BOOK_REFERENCE
     if a.rule == 1:
         rules = VERDICT
     elif a.rule == 2:
         rules = NEGATION
+    elif a.rule == 3:
+        rules = BOOK_REFERENCE
 
     files = a.sheets or sorted((a.root / "characters").glob("*.md"))
     total = 0

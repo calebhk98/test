@@ -338,7 +338,7 @@ matter end there.
 *Facts a writer must not contradict. Nothing here characterises him. Delete this section and
 the sheet is still complete.*
 
-**Appears in:** chapters/05_behind.md, speaking. Referenced, without dialogue, in
+**md, speaking. Referenced, without dialogue, in
 chapters/06_the_list.md and chapters/08_the_asking.md.
 
 **Continuity:** Full name Étienne Baptiste, called Mr. Baptiste; nobody under eighteen uses

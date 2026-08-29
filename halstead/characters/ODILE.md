@@ -245,7 +245,7 @@ somebody's gear, or walks a sequence through with them again, within the hour.
 
 ## Stuck, bored, and wrong in public
 
-Short, because she is, and because she appears in few rooms. A task, a group and
+Short, because she is, and because she A task, a group and
 somebody in charge is all any of it needs.
 
 **Stuck.** She does it with her hands until it works. Two hundred repetitions of
@@ -556,9 +556,6 @@ or feeling rather than addressing them at all.
 - Admitted to every school she applied to. Her application mentioned the
   ten-on-one drill only in passing, as background, and that offhand mention is
   what an admissions officer catches.
-- Appears in: chapters/14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md,
-  17_fourteen.md, 18_fifteen.md; chapters/21_the_applications.md (narration
-  only).
 - Two earlier proposals for this character were cut and should not be
   reinstated: that she argued for and won the combined language year, and that
   she has a private fear of water.

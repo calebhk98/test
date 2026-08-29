@@ -257,7 +257,7 @@ Introducing himself as Ben, he asks what he should call her, then sits down on a
 
 "No, and there is no passing number either. I am watching how you do things rather than whether you get them. If you get stuck on one, I want to see what you try next, not whether you get there," he says straight away, the answer already lined up.
 
-Chloe looks at him hard and files the last part with everything else adults say when they want you to sit still.
+Chloe looks at him hard. The last part sounds like the things adults say when they want you to sit still.
 
 ________________
 
@@ -883,7 +883,7 @@ Her mom is still in her shoes, sitting on the arm of the chair by the window.
 
 Her mom gets up, turns the other bed down, and sits on the end of it.
 
-"Do you want me to talk about something."
+"Do you want me to talk about something?"
 
 "Yes. Anything."
 
@@ -1005,7 +1005,7 @@ On day seven Sam says something wrong about volcanoes: that the lava comes up be
 
 A girl further down lets her head drop onto the desk with a thud loud enough that a couple of people look over.
 
-"How thick what is."
+"How thick what is?"
 
 "The lava, and there's a word for it."
 
@@ -1013,7 +1013,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "Viscosity."
 
-"What's viscosity."
+"What's viscosity?"
 
 "How thick it is. Honey's got high viscosity, water's got low viscosity, lava's somewhere in between, depending how hot it is. Some of it pours. Some of it barely moves at all," Kavi says, and he keeps going from there.
 
@@ -1128,9 +1128,9 @@ Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew 
 
 "Can you do the rectangle again, from the start," Marisol says, and he redraws it exactly as before, line for line.
 
-"Which of them do you flip. The first or the second," Owen says, from the end of the row.
+"Which of them do you flip? The first or the second," Owen says, from the end of the row.
 
-"The second. Always the second," Mr. Baptiste says. "Now tell me why. Why not the first."
+"The second. Always the second," Mr. Baptiste says. "Now tell me why. Why not the first?"
 
 Owen looks at the board, then down at his sheet, then at the board again. "I've lost the thread of it."
 
@@ -1417,7 +1417,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "That's not what she said. She said it's a whole different day, with different people doing the looking."
 
-"You were on the wrong side of a door for that call. How would you know what she said."
+"You were on the wrong side of a door for that call. How would you know what she said?"
 
 "I heard half of it through the door. That's half more than you heard. Then Mom noticed I was there. And half a fact still beats a whole guess, so I'm not taking any of it back. You weren't even there, Sam, so you don't get an opinion on how much of a door I was standing behind."
 
@@ -1628,7 +1628,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did."
 
-"Did it now, because that is something to be pleased with."
+"Did it now, because that is something to be pleased with?"
 
 "And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
@@ -1742,11 +1742,11 @@ The crying is loud enough that chairs scrape all along the row as everybody turn
 
 The answer, whatever it is, refuses to come out of her.
 
-"Are you hurt anywhere, is something actually hurting, because that's the first thing I have to rule out."
+"Are you hurt anywhere? Is something actually hurting? Because that's the first thing I have to rule out."
 
 "No."
 
-"Did somebody say something to you, because you can tell me if they did, and you are safe either way."
+"Did somebody say something to you? Because you can tell me if they did, and you are safe either way."
 
 Chloe moves her head from side to side with it still down on her arms.
 
@@ -1787,21 +1787,21 @@ Dr. Ammons writes a line before the next question, and asks it in exactly the vo
 
 Dr. Ammons stops writing and puts the pen down on top of the pad.
 
-"Tell me about the program, all of it, from the beginning. Who runs it."
+"Tell me about the program, all of it, from the beginning. Who runs it?"
 
 Her mom says, "It's a school, and they run a month of it every summer. They teach right through it. She had classes, and a hall, and a roommate."
 
-"Did she stay there overnight."
+"Did she stay there overnight?"
 
 "The whole time," her mom says. "Every night of it."
 
-"How far is it from the house."
+"How far is it from the house?"
 
 "Half a day in the car."
 
 Every question goes to her mother, and Chloe sits through it.
 
-"Were the same adults with her the whole time, or did they change over."
+"Were the same adults with her the whole time, or did they change over?"
 
 Chloe's hand stops on the thread.
 
@@ -1809,7 +1809,7 @@ Chloe's hand stops on the thread.
 
 The questions keep coming in that voice, working down through who ran it, how they found her, whether Chloe came back different, in what way, and starting when.
 
-"Did anything happen to her there."
+"Did anything happen to her there?"
 
 "Everything about it was good, she absolutely loved every single day of it. She came back talking about it and she has not stopped. I don't know what you think happened there, but nothing did, and I have gone over it more than once looking for it."
 
@@ -2024,7 +2024,7 @@ Her mother is down on the floor with her by then, in the gap, with both arms rou
 
 "I can't do it anymore," she says, and it is a whole sentence, and she gets it out twice. "I can't do it anymore, I can't do any of it."
 
-"Do what, because you have to tell me what it is and then I'll fix it, whatever it is."
+"Do what? Because you have to tell me what it is and then I'll fix it, whatever it is."
 
 Chloe can't answer that, because school, the sheets, and Kayleigh Burns are each a piece of it, each too small to be it. The word for the whole thing is nowhere in her.
 
@@ -2247,7 +2247,7 @@ The mathematics thing happens in the third week of May, on a problem she has had
 
 It comes to her in the shower on the Wednesday, and she stands there until the water goes cold, and next morning reaches the room early, where Ruth is already at the board.
 
-"You got it." Ruth doesn't put the marker down. "Which way did you go, because there are two ways through it and one of them is horrible."
+"You got it." Ruth doesn't put the marker down. "Which way did you go? Because there are two ways through it and one of them is horrible."
 
 Chloe tells her all of it, out of order and twice in places, and Ruth listens the whole way through before putting her own working next to it.
 
@@ -2390,7 +2390,7 @@ In week three she comes in well past curfew, to find her mother standing in the 
 
 "That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in."
 
-Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you."
+Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you?"
 
 "That isn't an answer, that's the same sentence said louder with a different building in it."
 
@@ -2400,7 +2400,7 @@ Then there is the thing Chloe has not built at all, then the stairs, then the do
 
 Her mother stays in the hall, then goes through to the kitchen, where her father comes in from the garage.
 
-"What was that, I could hear the two of you all the way out in the garage."
+"What was that? I could hear the two of you all the way out in the garage."
 
 Her mother turns the tap on, then off again, the sink empty under it. "Curfew, the usual fight, except she had it all loaded before I opened my mouth. She had the library one ready to go, and she's been sitting on it since Tuesday, waiting for me to hand her a reason to use it."
 
@@ -2496,7 +2496,7 @@ Mrs. Okonkwo squares the sheets against the desk. "I know you're not, but it's s
 
 Chloe takes hold of the edge of the desk and stays standing. "Then can I move teams on the Wednesday instead? That's a swap and not a drop. I'd still be doing the hour with everybody else."
 
-"Which team are you on."
+"Which team are you on?"
 
 "The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it. But they don't pass. I've kept count."
 
@@ -2619,7 +2619,7 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Water. That's the only thing that turns it that particular grey, and it's nowhere on your reagent list."
 
-"Where did it come from, though, I only used what was on the list this time."
+"Where did it come from, though? I only used what was on the list this time."
 
 "Glassware, reagent, or you, take your pick, because it is always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes already on the next bench.
 
@@ -2679,7 +2679,7 @@ The stables are a walk past the north field, cinder path most of the way and mud
 
 "That's Cricket, she's fine, as long as you stand where she can see you."
 
-"Where is it, exactly, that she can't see me, I want to know the actual blind spot."
+"Where is it, exactly, that she can't see me? I want to know the actual blind spot."
 
 Priya walks up to the horse's nose from a few feet out, and the head swings sideways to get a proper look at her. "Straight in front, that's the blind spot on a horse this size. Straight in front is where they actually can't see you at all. She's putting me in one eye. That's her eyes, not her being dramatic."
 
@@ -3869,7 +3869,7 @@ They lay a hundred and sixty metres of it down the long field on the Saturday in
 
 Kavi's clock lands on the Tuesday with the run on the Thursday, and every recording Ruth has tuned against came off the old clock, so all of it goes again from the start. Odile and Sam go out into the dark after dinner and put the sound on the field for her, over and over, off the marks. Odile comes back in at the end of it with her hands gone red.
 
-"How many more do you want."
+"How many more do you want?"
 
 "Sixty," Ruth says.
 
@@ -4922,7 +4922,7 @@ Amberg writes for a while. "The eighty saying no are going to college in Septemb
 
 "Which took a day."
 
-The next question comes at the page rather than at her. "How many applications."
+The next question comes at the page rather than at her. "How many applications?"
 
 "Two hundred and one since November. Thirteen answers. Ten of them came out of software in the small hours, and one arrived eight minutes after a form that took me fifty."
 
@@ -4944,7 +4944,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked, because checking the rest of it before there's anything to check would just be a way of not starting."
 
-"What do your parents say."
+"What do your parents say?"
 
 "I haven't told them."
 
@@ -5020,7 +5020,7 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 "I'm not saying I think I'm good, only that I don't know, and I'd rather find out than get paid not to."
 
-A pause, and then her father again, quieter. "What happens if you change your mind. Is the door still open in a year? Five?"
+A pause, and then her father again, quieter. "What happens if you change your mind? Is the door still open in a year? Five?"
 
 "That's not something I asked him, because my head was still on the room and the desk, not on whatever might happen years from now. I should have asked him. It didn't come into my head at all until you just said it."
 
@@ -5528,7 +5528,7 @@ The statements are out on his desk, squared against the edge of it. "It's the po
 
 "I can't do two days on a balance this size. If something comes back on a Thursday it's my name on the exception and not the policy's."
 
-"What size does it take."
+"What size does it take?"
 
 "Twenty thousand. Held in the account, not passing through it."
 
@@ -5763,7 +5763,7 @@ The schedule he has had since childhood, and lost over the summer, reappears on 
 
 Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no visible interest in owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on every blanket by eye from across the aisle, stopping finally at Sam's.
 
-"Marsh. What is this supposed to be."
+"Marsh. What is this supposed to be?"
 
 "Blanket, Drill Sergeant."
 
@@ -5785,7 +5785,7 @@ By the end of the first week Sam has asked a succession of people how long the e
 
 "Then you're infantry. Then you go to a unit, and you do the whole business again in worse weather with better equipment. Eventually somebody hands you a platoon of your own and you become the problem."
 
-"Right, but what's this for. When does the real one start."
+"Right, but what's this for. When does the real one start?"
 
 On the Friday he puts the question to Ruiz, at parade rest at the conclusion of an evening formation, and Ruiz takes a long, unhurried look at him before responding to any part of it.
 
@@ -5990,7 +5990,7 @@ Then the card, carrying its grids of figures and listing the checkpoints between
 
 "You'll be moving between these on foot, at night," the sergeant says, tapping the card once against the table. "There's an opposing element working the ground the whole way between them. They're briefed to take you if they can, and they pick their own timing rather than yours, so plan on them finding you before you find them."
 
-"How many of them, Sergeant."
+"How many of them, Sergeant?"
 
 "More than you." The sergeant taps the card again. "Move along, Marsh."
 
@@ -6058,7 +6058,7 @@ The rifle is coming round before he has decided anything whatever about it, and 
 
 Sam comes up out of the cut and stands there in the open with his own harness going into the last hour before dawn, but the man who shot him comes up out of the weed line thirty feet back, so low to the ground on the way up that Sam hears him a full second before he can find him.
 
-"How long were you in there."
+"How long were you in there?"
 
 "Since nine."
 
@@ -6088,7 +6088,7 @@ Sam's turn comes third. Instead of calling him up to the front, the major leaves
 
 The next part he reads the way a form gets read.
 
-"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well." Now he looks up. "What is the contact rule on this exercise, Private Marsh."
+"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
 
 "There is no hand-to-hand, sir." Sam doesn't look away. "At any range."
 
@@ -6106,7 +6106,7 @@ The major looks at him for a second, then writes on the top sheet, unhurried. Th
 
 "Any questions," the major says at the end, closing the clipboard.
 
-"Yes, sir." Sam sits forward, the ruck creaking under his boot. "Was that it, sir, or is that the practice one and there's a real one after it."
+"Yes, sir." Sam sits forward, the ruck creaking under his boot. "Was that it, sir, or is that the practice one and there's a real one after it?"
 
 A few chairs forward of him, somebody's head comes round.
 
@@ -6120,7 +6120,7 @@ The major regards him across the width of the room for a while, laser pointer of
 
 The major opens the clipboard again, at a page he has had shut all afternoon.
 
-"Twenty minutes at that fence before you fired. Where did you learn that, Private Marsh."
+"Twenty minutes at that fence before you fired. Where did you learn that, Private Marsh?"
 
 "School, sir."
 
@@ -6850,7 +6850,7 @@ The classes come after that, all of them, mathematics through politics through t
 
 "From that year on." His pen doesn't stop. "Mathematics, to the year below me. Seven of them the first year, but one of them failed."
 
-"Whose column does that go in."
+"Whose column does that go in?"
 
 "Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose."
 

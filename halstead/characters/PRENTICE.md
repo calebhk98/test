@@ -275,7 +275,7 @@ what matters with the pen.
 Delete this section and the sheet above still stands.
 
 - Full name Dr. Benjamin Prentice; he offers Chloe his first name and she calls
-  him Ben. Appears in chapters/02_march_4th.md only.
+  him Ben.md only.
 - Runs a full cognitive battery on Chloe over about two hours when she is six:
   block design, vocabulary, similarities, digit span, timed coding, a timed
   cancellation task, picture completion, story recall, judgement questions,

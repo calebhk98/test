@@ -412,4 +412,3 @@ was asked; Marek answers a different and larger question immediately.
 - He asks the year above for their practice papers before an examination he
   will sit a year early, keeps them a fortnight, and returns them unread with a
   harder version of one of the questions written on the back.
-- Appears in: chapters 15, 16, 17, 19, 21 and 23.

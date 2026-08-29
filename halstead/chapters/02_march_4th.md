@@ -42,7 +42,7 @@ Introducing himself as Ben, he asks what he should call her, then sits down on a
 
 "No, and there is no passing number either. I am watching how you do things rather than whether you get them. If you get stuck on one, I want to see what you try next, not whether you get there," he says straight away, the answer already lined up.
 
-Chloe looks at him hard and files the last part with everything else adults say when they want you to sit still.
+Chloe looks at him hard. The last part sounds like the things adults say when they want you to sit still.
 
 ________________
 

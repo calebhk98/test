@@ -337,5 +337,3 @@ happened, that reasoning belongs to whoever is doing the telling, not to Owen.
 - He has no directly quoted line anywhere. Everything connected to him arrives
   through somebody else.
 - Four more children leave in the weeks after he does.
-- Appears in: chapters/05_behind.md, and chapters/10_april.md, where he is
-  discussed but not present.

@@ -372,7 +372,7 @@ for an audience. When he solves something, the room he pictures is empty.
 ## Body and physical business
 
 Slight rather than thin, narrow through the shoulders, the build that
-disappears in a group photograph. Bad posture, shoulders forward, angled toward
+dis Bad posture, shoulders forward, angled toward
 whatever he is fixing rather than toward the person he is talking to. A face
 unremarkable in the same register as the house.
 
@@ -641,7 +641,3 @@ If nobody in the room is slightly worse off for the line, it is Sam's.
   Mandarin, Hebrew, Korean, Japanese, Romanian, Serbian, Ukrainian, Georgian.
   Known for Georgian.
 - Adult employment: a corporate security team, and later the group's own work.
-- Appears in: chapters/16_thirteen.md; chapters/23_the_first_one.md
-  (narration), chapters/24_the_chat.md; chapters/27_nadia.md,
-  chapters/32_the_money.md, chapters/33_the_other_one.md,
-  chapters/34_the_files.md, chapters/35_nine_minutes.md.

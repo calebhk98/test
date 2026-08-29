@@ -407,4 +407,3 @@ yet.
   would work with him again.
 - He is the one who organises the cohort after they leave, by email and by
   name, and he is still doing it years afterwards.
-- Appears in: chapters 12, 13, 16, 17, 18, 22, 23 and 24.

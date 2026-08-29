@@ -282,7 +282,7 @@ The statements are out on his desk, squared against the edge of it. "It's the po
 
 "I can't do two days on a balance this size. If something comes back on a Thursday it's my name on the exception and not the policy's."
 
-"What size does it take."
+"What size does it take?"
 
 "Twenty thousand. Held in the account, not passing through it."
 

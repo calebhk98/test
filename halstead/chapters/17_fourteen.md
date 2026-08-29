@@ -126,7 +126,7 @@ They lay a hundred and sixty metres of it down the long field on the Saturday in
 
 Kavi's clock lands on the Tuesday with the run on the Thursday, and every recording Ruth has tuned against came off the old clock, so all of it goes again from the start. Odile and Sam go out into the dark after dinner and put the sound on the field for her, over and over, off the marks. Odile comes back in at the end of it with her hands gone red.
 
-"How many more do you want."
+"How many more do you want?"
 
 "Sixty," Ruth says.
 

@@ -976,7 +976,3 @@ what should happen next.
   attract users and she rebuilds it into something else. Team size, product
   shape and timeline are set by `passes/nadia/REVISION_NOTES.md`, which this
   sheet defers to entirely and deliberately does not restate.
-- Appears in: chapters/13_ten_pages.md, chapters/14_sixty_degrees.md,
-  chapters/16_thirteen.md, chapters/19_sixteen.md,
-  chapters/20_the_parking_lot.md, and chapters/21_the_applications.md through
-  chapters/36_seventy_five.md.

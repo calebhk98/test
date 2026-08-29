@@ -339,7 +339,7 @@ letting the matter end there.
 *Facts a writer must not contradict. Nothing here characterises him. Delete this section and
 the sheet is still complete.*
 
-**Appears in:** chapters/04_pluto.md, speaking. Present, without dialogue, in
+**md, speaking. Present, without dialogue, in
 chapters/05_behind.md.
 
 **Continuity:** Full name Aaron Doyle, called Mr. Doyle; nobody under eighteen uses a staff

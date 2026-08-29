@@ -73,13 +73,22 @@ find the moment.
 - **Age and change**: how each of the above differs at the ages they appear,
   since several of these people are on the page from six to twenty-one.
 
-## What may stay book-specific
+## Nothing book-specific stays
 
-One short, clearly separated section at the bottom for navigation only: which
-chapters they appear in, and any hard facts of continuity a writer must not
-contradict, such as a surname, a birth month, or a relationship. Facts, not
-characterisation, and no quotations.
+The sheet is about the person, not about this book. It carries no chapter
+numbers, no section references, and no navigation. The author's ruling, in his
+own words: *"you can't use characters/DAVE.md in a ghost book, if it mentions
+this book. The character files are supposed to be about the character, not the
+book."*
 
-**The sheet must still be complete and correct if that section is deleted.**
-That is the check: delete it, read what is left, and see whether you could
-write the character into a haunted house.
+An earlier version of this file allowed one clearly separated navigation
+section at the bottom listing which chapters a person appeared in. Twenty
+sheets had one. They are now in `_APPEARANCES.md`, which is the only place
+that kind of thing belongs.
+
+Hard facts of continuity may stay, because they are facts about the person and
+survive the move: a surname, a birth month, who is related to whom, what
+somebody's parents do. Those are not book references. A chapter number is.
+
+The test is unchanged. Read the sheet and see whether you could write the
+character into a haunted house.

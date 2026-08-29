@@ -343,7 +343,7 @@ her hands are busy with something else entirely.
 *Facts a writer must not contradict. Nothing here characterises her. Delete this section and
 the sheet is still complete.*
 
-**Appears in:** chapters/13_ten_pages.md, chapters/17_fourteen.md and chapters/18_fifteen.md,
+**md, chapters/17_fourteen.md and chapters/18_fifteen.md,
 speaking.
 
 **Continuity:** Full name Bogumiła Kowalczyk, called Kowalczyk by everyone under eighteen;

@@ -92,7 +92,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did."
 
-"Did it now, because that is something to be pleased with."
+"Did it now, because that is something to be pleased with?"
 
 "And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
@@ -206,11 +206,11 @@ The crying is loud enough that chairs scrape all along the row as everybody turn
 
 The answer, whatever it is, refuses to come out of her.
 
-"Are you hurt anywhere, is something actually hurting, because that's the first thing I have to rule out."
+"Are you hurt anywhere? Is something actually hurting? Because that's the first thing I have to rule out."
 
 "No."
 
-"Did somebody say something to you, because you can tell me if they did, and you are safe either way."
+"Did somebody say something to you? Because you can tell me if they did, and you are safe either way."
 
 Chloe moves her head from side to side with it still down on her arms.
 

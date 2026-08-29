@@ -80,7 +80,7 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Water. That's the only thing that turns it that particular grey, and it's nowhere on your reagent list."
 
-"Where did it come from, though, I only used what was on the list this time."
+"Where did it come from, though? I only used what was on the list this time."
 
 "Glassware, reagent, or you, take your pick, because it is always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes already on the next bench.
 
@@ -140,7 +140,7 @@ The stables are a walk past the north field, cinder path most of the way and mud
 
 "That's Cricket, she's fine, as long as you stand where she can see you."
 
-"Where is it, exactly, that she can't see me, I want to know the actual blind spot."
+"Where is it, exactly, that she can't see me? I want to know the actual blind spot."
 
 Priya walks up to the horse's nose from a few feet out, and the head swings sideways to get a proper look at her. "Straight in front, that's the blind spot on a horse this size. Straight in front is where they actually can't see you at all. She's putting me in one eye. That's her eyes, not her being dramatic."
 

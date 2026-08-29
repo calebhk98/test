@@ -68,7 +68,7 @@ In week three she comes in well past curfew, to find her mother standing in the 
 
 "That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in."
 
-Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you."
+Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you?"
 
 "That isn't an answer, that's the same sentence said louder with a different building in it."
 
@@ -78,7 +78,7 @@ Then there is the thing Chloe has not built at all, then the stairs, then the do
 
 Her mother stays in the hall, then goes through to the kitchen, where her father comes in from the garage.
 
-"What was that, I could hear the two of you all the way out in the garage."
+"What was that? I could hear the two of you all the way out in the garage."
 
 Her mother turns the tap on, then off again, the sink empty under it. "Curfew, the usual fight, except she had it all loaded before I opened my mouth. She had the library one ready to go, and she's been sitting on it since Tuesday, waiting for me to hand her a reason to use it."
 
@@ -174,7 +174,7 @@ Mrs. Okonkwo squares the sheets against the desk. "I know you're not, but it's s
 
 Chloe takes hold of the edge of the desk and stays standing. "Then can I move teams on the Wednesday instead? That's a swap and not a drop. I'd still be doing the hour with everybody else."
 
-"Which team are you on."
+"Which team are you on?"
 
 "The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it. But they don't pass. I've kept count."
 

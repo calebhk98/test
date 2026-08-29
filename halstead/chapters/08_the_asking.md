@@ -30,21 +30,21 @@ Dr. Ammons writes a line before the next question, and asks it in exactly the vo
 
 Dr. Ammons stops writing and puts the pen down on top of the pad.
 
-"Tell me about the program, all of it, from the beginning. Who runs it."
+"Tell me about the program, all of it, from the beginning. Who runs it?"
 
 Her mom says, "It's a school, and they run a month of it every summer. They teach right through it. She had classes, and a hall, and a roommate."
 
-"Did she stay there overnight."
+"Did she stay there overnight?"
 
 "The whole time," her mom says. "Every night of it."
 
-"How far is it from the house."
+"How far is it from the house?"
 
 "Half a day in the car."
 
 Every question goes to her mother, and Chloe sits through it.
 
-"Were the same adults with her the whole time, or did they change over."
+"Were the same adults with her the whole time, or did they change over?"
 
 Chloe's hand stops on the thread.
 
@@ -52,7 +52,7 @@ Chloe's hand stops on the thread.
 
 The questions keep coming in that voice, working down through who ran it, how they found her, whether Chloe came back different, in what way, and starting when.
 
-"Did anything happen to her there."
+"Did anything happen to her there?"
 
 "Everything about it was good, she absolutely loved every single day of it. She came back talking about it and she has not stopped. I don't know what you think happened there, but nothing did, and I have gone over it more than once looking for it."
 

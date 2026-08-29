@@ -5,13 +5,7 @@ his own daughter, and has spent twenty years married to somebody who works the
 other way round.
 
 **Full name:** David Kessler, called Dave.
-**Age:** adult throughout, roughly forty to sixty across the span he appears in
-**MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** 112, concentrated almost
-entirely in one narrow and very sharp faculty
-
-## Type and number
-
-**Primary: ISTJ.** Unchanged, and the reason to state it rather than assume it is that
+**Age:** adult throughout, roughly forty to sixty across the span he** Unchanged, and the reason to state it rather than assume it is that
 this cast already carries several careful, procedural, dutiful people and he needs to be
 the plainest of them. He is the type in its least glamorous form: concrete, verifying,
 loyal, slow to commit and immovable afterwards, with a strong sense of what a person in
@@ -374,9 +368,6 @@ Delete this section and the sheet above still stands.
 
 - Full name David Kessler. Wife Margaret Kessler, called Meg; he uses her name
   out loud, she uses his.
-- Appears in chapters/01, 03, 06, 09, 11, 12, 13, 14, 15, 16, 17, 18, 19, and
-  23_the_first_one.md (present, no dialogue). Absent from chapters/02, 05, 07,
-  10, 20, and from chapters/27 through 35 entirely.
 - Bachelor's in economics, barely used since. Works at a mid-sized professional
   services company in a research-adjacent department that circulates papers.
 - An only child; his parents are living, distant, and never appear on the page.

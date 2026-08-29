@@ -629,5 +629,3 @@ running.
   ninety-one percent on the intercept drill. Strong at forensic and statistical
   reasoning, networks and cryptography, and triage under pressure.
 - Attends MIT from October 2023.
-- Appears in chapters 04, 05, 06, 07, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20,
-  21, 24, 26, 27, and 31 through 35. Chapter 31 is hers.

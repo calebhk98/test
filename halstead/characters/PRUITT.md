@@ -329,8 +329,6 @@ Delete this section and the sheet above still stands.
 - Runs the forge, a freely chosen elective, open Thursdays and most of Sunday,
   ungraded and unrecorded. No formal assessment for it exists anywhere in the
   book.
-- Appears in chapters/15_twelve.md, chapters/17_fourteen.md,
-  chapters/19_sixteen.md. Chloe is twelve at the first and sixteen at the last.
 - He speaks to her twice in those four years, both times a correction in passing.
   Her first month there passes without him addressing her at all.
 - Widower, no children. Lives on campus in the forge building. Takes outside

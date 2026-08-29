@@ -837,5 +837,3 @@ complete without this section.*
 - `CURRICULUM_GRID.md` is her personal timetable, not a description of what the school
   teaches everyone. Six tracks are shared school-wide; the specific language each year, the
   two rotating academic slots and both afternoon blocks are hers.
-- Appears in chapters/01_before.md through chapters/20_the_parking_lot.md as point of view
-  throughout, and in chapters/21_the_applications.md through chapters/35_nine_minutes.md.

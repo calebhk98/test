@@ -349,7 +349,7 @@ never counts anything out loud.
 *Facts a writer must not contradict. Nothing here characterises him. Delete this section and
 the sheet is still complete.*
 
-**Appears in:** chapters/16_thirteen.md, chapters/19_sixteen.md and chapters/22_the_offer.md,
+**md, chapters/19_sixteen.md and chapters/22_the_offer.md,
 speaking.
 
 **Continuity:** Full name Julian Amberg, called Mr. Amberg; nobody under eighteen uses a

@@ -596,8 +596,3 @@ somebody she has never met.
   for Quechua.
 - Afternoon blocks: riding, pottery, weaving, choir.
 - She takes a gap year in South America after graduating.
-- Appears in: chapters/04_pluto.md, 05_behind.md, 06_the_list.md,
-  07_the_same_room.md, 10_april.md, 12_nine.md, 13_ten_pages.md,
-  14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md,
-  18_fifteen.md, 19_sixteen.md, and chapters/21_the_applications.md through
-  chapters/29_the_file.md.

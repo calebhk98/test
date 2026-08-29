@@ -347,7 +347,7 @@ a back.
 *Facts a writer must not contradict. Nothing here characterises her. Delete this section
 and the sheet is still complete.*
 
-**Appears in:** chapters/01_before.md, speaking. Referenced afterward, without new
+**md, speaking. Referenced afterward, without new
 dialogue, in chapters/02_march_4th.md, chapters/04_pluto.md, chapters/05_behind.md and
 chapters/07_the_same_room.md.
 
