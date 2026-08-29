@@ -375,7 +375,7 @@ Delete this section and the sheet above still stands.
 - Full name David Kessler. Wife Margaret Kessler, called Meg; he uses her name
   out loud, she uses his.
 - Appears in chapters/01, 03, 06, 09, 11, 12, 13, 14, 15, 16, 17, 18, 19, and
-  23_the_first_one.md (present, no dialogue). Absent from chapters/02, 05, 07, 08,
+  23_the_first_one.md (present, no dialogue). Absent from chapters/02, 05, 07,
   10, 20, and from chapters/27 through 35 entirely.
 - Bachelor's in economics, barely used since. Works at a mid-sized professional
   services company in a research-adjacent department that circulates papers.
