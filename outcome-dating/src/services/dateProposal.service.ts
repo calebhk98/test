@@ -17,6 +17,7 @@ import * as voucherService from './voucher.service.js';
 import * as conversationService from './conversation.service.js';
 import * as notificationService from './notification.service.js';
 import * as trustService from './trust.service.js';
+import * as postDateFeedbackService from './postDateFeedback.service.js';
 
 /**
  * dateProposal.service — the §13-§15 date proposal orchestrator. This is
@@ -272,6 +273,26 @@ async function recordTrustEventBestEffort(ctx: Ctx, input: trustService.RecordTr
     await trustService.recordTrustEvent(ctx, input);
   } catch (err) {
     ctx.logger.warn('dateProposal.trust_event_failed', { eventType: input.eventType, userId: input.userId, err: describeError(err) });
+  }
+}
+
+/**
+ * Post-date check-in hook (postDateFeedback.service.ts, additive — see
+ * that module's own doc for the full timing design). Eagerly evaluates
+ * whether either participant is due an initial check-in prompt the
+ * moment this proposal actually reaches `completed`/`completed_unverified`
+ * — a responsiveness nicety only; `postDateFeedbackService
+ * #runCheckInPromptSweep` independently re-derives the same decision from
+ * `date_proposals` on its own schedule (and is what catches tickets that
+ * never reach either of the two call sites below at all). Best-effort:
+ * a prompt-scheduling hiccup must never roll back an already-persisted
+ * date-proposal status change.
+ */
+async function ensureCheckInPromptSentBestEffort(ctx: Ctx, dateProposalId: string): Promise<void> {
+  try {
+    await postDateFeedbackService.ensureCheckInPromptSent(ctx, dateProposalId);
+  } catch (err) {
+    ctx.logger.warn('dateProposal.check_in_prompt_failed', { dateProposalId, err: describeError(err) });
   }
 }
 

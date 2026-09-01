@@ -103,6 +103,8 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'POST', path: '/date-proposals/:dateProposalId/cancel', spec: '§24.8, §14.7', role: 'user' },
   { method: 'POST', path: '/date-proposals/:dateProposalId/confirm-attendance', spec: '§24.8, §15.4', role: 'user' },
   { method: 'POST', path: '/date-proposals/:dateProposalId/feedback', spec: '§15.4, §26.2 (addition)', role: 'user', addition: true },
+  { method: 'POST', path: '/date-proposals/:dateProposalId/check-in', spec: 'post-date check-in (product-owner addition — see postDateFeedback.service.ts)', role: 'user', addition: true },
+  { method: 'GET', path: '/date-proposals/:dateProposalId/check-in', spec: 'post-date check-in (product-owner addition — see postDateFeedback.service.ts)', role: 'user', addition: true },
 
   // ---- §24.9 Tickets ----
   { method: 'GET', path: '/tickets', spec: '§24.9, §15.1', role: 'user' },

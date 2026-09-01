@@ -3,6 +3,9 @@ import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as venueService from '../../services/venue.service.js';
 import * as dateProposalService from '../../services/dateProposal.service.js';
+import * as postDateFeedbackService from '../../services/postDateFeedback.service.js';
+import { CHECK_IN_OUTCOMES, SAFETY_FLAG_LEVELS, WOULD_MEET_AGAIN_VALUES } from '../../services/postDateFeedback.service.js';
+import { serializeCheckIn } from '../serializers/feedback.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { coerceDate, parseOrThrow, requireUuidParam } from '../validation.js';
@@ -22,6 +25,17 @@ const FeedbackBodySchema = z.object({
   positive: z.boolean(),
   wouldMeetAgain: z.boolean().optional(),
   safetyConcern: z.boolean().optional(),
+  notes: z.string().optional(),
+});
+
+// Post-date check-in (postDateFeedback.service.ts, additive). Distinct
+// path from the legacy `/feedback` above — see that service's module doc
+// for why the two coexist rather than one replacing the other in place.
+const CheckInBodySchema = z.object({
+  outcome: z.enum(CHECK_IN_OUTCOMES),
+  wouldMeetAgain: z.enum(WOULD_MEET_AGAIN_VALUES).optional(),
+  safetyFlag: z.enum(SAFETY_FLAG_LEVELS).optional(),
+  safetyDetails: z.string().optional(),
   notes: z.string().optional(),
 });
 
@@ -84,5 +98,18 @@ export function registerDateRoutes(app: FastifyInstance, deps: AppDeps): void {
     const dateProposalId = requireUuidParam(req.params, 'dateProposalId');
     const body = parseOrThrow(FeedbackBodySchema, req.body);
     reply.status(201).send(await dateProposalService.submitPostDateFeedback(req.ctx!, dateProposalId, body));
+  });
+
+  app.post('/date-proposals/:dateProposalId/check-in', auth, async (req, reply) => {
+    const dateProposalId = requireUuidParam(req.params, 'dateProposalId');
+    const body = parseOrThrow(CheckInBodySchema, req.body);
+    const checkIn = await postDateFeedbackService.submitCheckIn(req.ctx!, dateProposalId, body);
+    reply.status(201).send(serializeCheckIn(checkIn));
+  });
+
+  app.get('/date-proposals/:dateProposalId/check-in', auth, async (req, reply) => {
+    const dateProposalId = requireUuidParam(req.params, 'dateProposalId');
+    const checkIn = await postDateFeedbackService.getMyCheckIn(req.ctx!, dateProposalId);
+    reply.send(serializeCheckIn(checkIn));
   });
 }

@@ -398,7 +398,7 @@ test('a verified phone number never leaks through /me, /profiles/:id, /discovery
     method: 'POST',
     url: `/conversations/${conversationId}/messages`,
     headers: authHeader(alice.accessToken),
-    payload: { body: 'Message from the phone owner.' },
+    payload: { body: 'Hello from the number owner, hope you are well.' },
   });
 
   const matchesRes = await t.app.inject({ method: 'GET', url: '/matches', headers: authHeader(bob.accessToken) });
