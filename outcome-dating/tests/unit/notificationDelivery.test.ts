@@ -26,6 +26,21 @@ after(async () => {
   await teardownTestDatabase();
 });
 
+// Every test gets its own 2-hour-wide clock "slot", strictly separated from
+// every other test's slot. All tests share one Postgres database (and run
+// sequentially in this file), so an outbox row a test deliberately leaves
+// in a non-terminal state (e.g. `failed_retryable` mid-backoff) is a real
+// row another test's `runNotificationDeliveryWorker` call could otherwise
+// sweep up if their clocks' absolute due-timestamps happened to overlap.
+// 2 hours comfortably exceeds this build's largest window (max retry
+// backoff caps at 1h, coalescing caps at 10min), so no test can ever
+// observe another test's row as "due".
+let testSlot = 0;
+function slotClock(): Date {
+  testSlot += 1;
+  return new Date(Date.UTC(2026, 1, 1, 0, 0, 0, 0) + testSlot * 2 * 60 * 60 * 1000);
+}
+
 async function registerToken(userId: string, token: string, clock?: ManualClock): Promise<void> {
   const ctx = buildCtx({ actor: userActor(userId), ...(clock ? { clock } : {}) });
   await registerDeviceToken(ctx, { platform: 'ios', deviceId: `d-${token}`, pushToken: token });
@@ -37,7 +52,7 @@ async function registerToken(userId: string, token: string, clock?: ManualClock)
 
 test('a new match (interest accepted) produces exactly one delivered push', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-match', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -59,7 +74,7 @@ test('a new match (interest accepted) produces exactly one delivered push', asyn
 
 test('a new message received produces exactly one delivered push', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-message', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -86,7 +101,7 @@ test('a new message received produces exactly one delivered push', async () => {
 
 test('a date proposal received produces exactly one delivered push', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-date', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -111,7 +126,7 @@ test('a date proposal received produces exactly one delivered push', async () =>
 
 test('preferences suppress a channel, and the gate lives in delivery, not at enqueue time', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-pref', clock);
   const userCtx = buildCtx({ actor: userActor(user), clock });
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
@@ -148,7 +163,7 @@ test('preferences suppress a channel, and the gate lives in delivery, not at enq
 
 test('coalescing: five messages in a burst produce exactly one push, not five', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T09:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-burst', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -182,7 +197,7 @@ test('coalescing: five messages in a burst produce exactly one push, not five', 
 
 test('coalescing: a steady stream cannot postpone delivery past the hard cap', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T09:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-cap', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -213,7 +228,7 @@ test('coalescing: a steady stream cannot postpone delivery past the hard cap', a
 
 test('deduplication: enqueueing the same dedupKey twice (a retried domain operation) never double-notifies', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-dedup', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -248,7 +263,7 @@ test('deduplication: enqueueing the same dedupKey twice (a retried domain operat
 
 test('content preview OFF (default): no message body/preview text is ever sent to the push provider', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-preview-off', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -273,7 +288,7 @@ test('content preview OFF (default): no message body/preview text is ever sent t
 
 test('content preview ON (explicit opt-in): a single coalesced message may include truncated preview text', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-preview-on', clock);
   const userCtx = buildCtx({ actor: userActor(user), clock });
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
@@ -298,7 +313,7 @@ test('content preview ON (explicit opt-in): a single coalesced message may inclu
 
 test('content preview: a coalesced batch of more than one message never shows a preview, even when opted in', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-preview-plural', clock);
   const userCtx = buildCtx({ actor: userActor(user), clock });
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
@@ -329,7 +344,7 @@ test('content preview: a coalesced batch of more than one message never shows a 
 
 test('a push-sender outage does not fail or roll back the domain transaction that raised the notification', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-outage', clock);
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -375,11 +390,20 @@ test('a push-sender outage does not fail or roll back the domain transaction tha
   );
   assert.equal(outboxRows[0]!.status, 'failed_retryable');
   assert.equal(outboxRows[0]!.attempt_count, 1);
+
+  // Clean up: this row is deliberately left non-terminal (that's the point
+  // of the assertion above) with a due time only ~30s out. Left alone, any
+  // LATER test in this file — whose clock, by construction, always reads
+  // later than this one's — would immediately see it as due and sweep it
+  // into an unrelated assertion. Every other test in this file resolves
+  // its own rows to a terminal status before finishing; this one can't
+  // (that's what it's testing), so it deletes them explicitly instead.
+  await pool.query('DELETE FROM notification_outbox WHERE user_id = $1', [user]);
 });
 
 test('a push-sender outage retries with backoff and reaches a terminal "dead" state — no infinite retry loop', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-fail_send-loop', clock); // FakePushSender: "fail_send" substring -> always fails
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 
@@ -423,7 +447,7 @@ test('a push-sender outage retries with backoff and reaches a terminal "dead" st
 
 test('an invalid/unregistered token reported by the sender during delivery is pruned automatically', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-02-01T12:00:00.000Z'));
+  const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-invalid_token-marker', clock); // FakePushSender: "invalid_token" substring
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
 

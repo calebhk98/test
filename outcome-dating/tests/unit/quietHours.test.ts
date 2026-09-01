@@ -140,8 +140,11 @@ test('safety_notice bypasses quiet hours entirely and is delivered immediately',
   const result = await runNotificationDeliveryWorker(sysCtx, { push, email });
 
   assert.equal(result.held, 0, 'a safety notice must never be held for quiet hours');
-  assert.equal(result.sent, 1);
+  // Safety notices are also never gated by channel preference (file doc),
+  // so both the push and email outbox rows deliver immediately here.
+  assert.equal(result.sent, 2);
   assert.equal(push.sent.length, 1);
+  assert.equal(email.sent.length, 1);
 });
 
 test('a non-safety event for a user with quiet hours disabled (the default) delivers immediately at any local hour', async () => {

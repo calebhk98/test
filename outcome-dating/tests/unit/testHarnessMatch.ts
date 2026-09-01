@@ -25,7 +25,7 @@ import * as paymentService from '../../src/services/payment.service.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
 
-const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/odate_match';
+const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);

@@ -46,6 +46,14 @@ function kinds(events: timelineService.TimelineEvent[]): string[] {
   return events.map((e) => e.kind);
 }
 
+/** Typed `.find` for a specific date-proposal event kind — an explicit type predicate, since a plain `e.kind === 'x'` arrow does not narrow `.find`'s result here. */
+function findKind<K extends timelineService.DateProposalEventKind>(
+  events: timelineService.TimelineEvent[],
+  kind: K,
+): (timelineService.TimelineDateProposalEvent & { kind: K }) | undefined {
+  return events.find((e): e is timelineService.TimelineDateProposalEvent & { kind: K } => e.kind === kind);
+}
+
 // =====================================================================
 // A proposed date shows up IN the conversation for both participants,
 // identically ordered.
@@ -81,17 +89,14 @@ test('a proposed date appears in both participants\' timelines, identically orde
   assert.deepEqual(proposerTimeline, recipientTimeline);
 
   assert.deepEqual(kinds(proposerTimeline.items), ['date_proposed', 'message', 'message']);
-  const proposedEvent = proposerTimeline.items.find((e) => e.kind === 'date_proposed')!;
-  assert.equal(proposedEvent.kind, 'date_proposed');
-  if (proposedEvent.kind !== 'message') {
-    assert.equal(proposedEvent.dateProposalId, proposal.id);
-    assert.equal(proposedEvent.venueName, 'The Daily Grind');
-    assert.equal(proposedEvent.status, 'pending_acceptance');
-    assert.equal(proposedEvent.scheduledStart, scheduledStart.toISOString());
-    assert.equal(proposedEvent.hasTicket, false);
-    assert.equal(proposedEvent.proposerId, proposer);
-    assert.equal(proposedEvent.recipientId, recipient);
-  }
+  const proposedEvent = findKind(proposerTimeline.items, 'date_proposed')!;
+  assert.equal(proposedEvent.dateProposalId, proposal.id);
+  assert.equal(proposedEvent.venueName, 'The Daily Grind');
+  assert.equal(proposedEvent.status, 'pending_acceptance');
+  assert.equal(proposedEvent.scheduledStart, scheduledStart.toISOString());
+  assert.equal(proposedEvent.hasTicket, false);
+  assert.equal(proposedEvent.proposerId, proposer);
+  assert.equal(proposedEvent.recipientId, recipient);
 
   // No payment card data, no exact venue coordinates, no voucher payload
   // on any event — structural allowlist check.
@@ -137,17 +142,17 @@ test('the full accept -> ticket -> complete lifecycle appears as distinct events
   // Chronological (this timeline is newest-first) -> reverse to read as a story.
   assert.deepEqual([...proposalKinds].reverse(), ['date_proposed', 'date_accepted', 'date_ticketed', 'date_completed']);
 
-  const ticketed = timeline.items.find((e) => e.kind === 'date_ticketed');
-  const completed = timeline.items.find((e) => e.kind === 'date_completed');
-  assert.ok(ticketed && ticketed.kind !== 'message' && ticketed.hasTicket === true);
-  assert.ok(completed && completed.kind !== 'message' && completed.hasTicket === true);
-  assert.ok(completed && completed.kind !== 'message' && completed.status === 'completed');
+  const ticketed = findKind(timeline.items, 'date_ticketed');
+  const completed = findKind(timeline.items, 'date_completed');
+  assert.ok(ticketed && ticketed.hasTicket === true);
+  assert.ok(completed && completed.hasTicket === true);
+  assert.ok(completed && completed.status === 'completed');
 
-  const proposedAfterCompletion = timeline.items.find((e) => e.kind === 'date_proposed');
-  assert.ok(proposedAfterCompletion && proposedAfterCompletion.kind !== 'message' && proposedAfterCompletion.hasTicket === false);
+  const proposedAfterCompletion = findKind(timeline.items, 'date_proposed');
+  assert.ok(proposedAfterCompletion && proposedAfterCompletion.hasTicket === false);
   // Even though the proposal has since completed, the "proposed" card
   // still reflects the status AS OF that moment, not the current one.
-  assert.ok(proposedAfterCompletion && proposedAfterCompletion.kind !== 'message' && proposedAfterCompletion.status === 'pending_acceptance');
+  assert.ok(proposedAfterCompletion && proposedAfterCompletion.status === 'pending_acceptance');
 });
 
 test('an expired proposal produces a date_expired event', async () => {
@@ -171,9 +176,9 @@ test('an expired proposal produces a date_expired event', async () => {
   await dateProposalService.expireDuePendingProposals(makeCtx(db, systemActor('expiry-test')));
 
   const timeline = await timelineService.getConversationTimeline(makeCtx(db, userActor(proposer)), conversationId);
-  const expired = timeline.items.find((e) => e.kind === 'date_expired');
-  assert.ok(expired && expired.kind !== 'message' && expired.dateProposalId === proposal.id);
-  assert.ok(expired && expired.kind !== 'message' && expired.status === 'expired');
+  const expired = findKind(timeline.items, 'date_expired');
+  assert.ok(expired && expired.dateProposalId === proposal.id);
+  assert.ok(expired && expired.status === 'expired');
 });
 
 test('a canceled-before-acceptance proposal produces a date_canceled event', async () => {
@@ -196,8 +201,8 @@ test('a canceled-before-acceptance proposal produces a date_canceled event', asy
   await dateProposalService.cancelDateProposal(makeCtx(db, userActor(proposer), { payments: processor }), proposal.id);
 
   const timeline = await timelineService.getConversationTimeline(makeCtx(db, userActor(recipient)), conversationId);
-  const canceled = timeline.items.find((e) => e.kind === 'date_canceled');
-  assert.ok(canceled && canceled.kind !== 'message' && canceled.dateProposalId === proposal.id);
+  const canceled = findKind(timeline.items, 'date_canceled');
+  assert.ok(canceled && canceled.dateProposalId === proposal.id);
 });
 
 test('a recipient auth failure produces a date_payment_failed event, derived from the ledger', async () => {
@@ -223,10 +228,10 @@ test('a recipient auth failure produces a date_payment_failed event, derived fro
   assert.equal(failed.status, 'payment_failed');
 
   const timeline = await timelineService.getConversationTimeline(makeCtx(db, userActor(proposer)), conversationId);
-  const paymentFailed = timeline.items.find((e) => e.kind === 'date_payment_failed');
+  const paymentFailed = findKind(timeline.items, 'date_payment_failed');
   assert.ok(paymentFailed, 'expected a date_payment_failed event derived from the payment_ledger');
-  assert.ok(paymentFailed && paymentFailed.kind !== 'message' && paymentFailed.dateProposalId === proposal.id);
-  assert.ok(paymentFailed && paymentFailed.kind !== 'message' && paymentFailed.status === 'payment_failed');
+  assert.ok(paymentFailed && paymentFailed.dateProposalId === proposal.id);
+  assert.ok(paymentFailed && paymentFailed.status === 'payment_failed');
   // Both sides see it (consistency requirement).
   const recipientTimeline = await timelineService.getConversationTimeline(makeCtx(db, userActor(recipient)), conversationId);
   assert.ok(recipientTimeline.items.some((e) => e.kind === 'date_payment_failed'));
