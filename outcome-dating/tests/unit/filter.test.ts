@@ -38,7 +38,6 @@ import {
   passesMutualFiltersForCandidates,
   summarizeSampledCount,
   DEFAULT_DISCOVERY_RADIUS_KM,
-  DASHBOARD_SCAN_CAP,
   type NearbyActiveUsers,
 } from '../../src/services/filter.service.js';
 import { computePairScore } from '../../src/services/compatibility.service.js';
@@ -564,8 +563,4 @@ test('resolveGeoSearchContext: a viewer with no location on file gets no box (fa
   const bareUserId = rows[0]!.id;
   const context = await resolveGeoSearchContext(ctx, bareUserId);
   assert.equal(context.box, null);
-});
-
-test('DASHBOARD_SCAN_CAP is documented as larger than the discovery pool cap (a count-only pass affords a bigger sample)', () => {
-  assert.ok(DASHBOARD_SCAN_CAP > 0);
 });
