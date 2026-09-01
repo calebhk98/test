@@ -849,6 +849,7 @@ export async function resolveGeoSearchContext(ctx: Ctx, userId: string): Promise
   };
 }
 
+/** Unbounded, whole-platform population — kept ONLY for `previewPoolSizeWithUnsetPolicy` below, which must stay an exact count (including users with no `profiles` row at all — see that function's doc). Everything else (`countUsersMatchingMyFilters`/`countUsersWhoseFiltersIMatch`) now goes through `listNearbyActiveUserIds` instead — see the SCALE FIX note below. */
 async function listOtherActiveUserIds(ctx: Ctx, userId: string): Promise<string[]> {
   const { rows } = await ctx.db.query<{ id: string }>(
     `SELECT id FROM users WHERE status = 'active' AND id <> $1`,
@@ -857,24 +858,112 @@ async function listOtherActiveUserIds(ctx: Ctx, userId: string): Promise<string[
   return rows.map((r) => r.id);
 }
 
-/** Count of other active users who pass the given user's filters — feeds `discovery.service.ts#getRealityDashboard` (spec §9.3). */
-export async function countUsersMatchingMyFilters(ctx: Ctx, userId: string): Promise<number> {
-  const others = await listOtherActiveUserIds(ctx, userId);
-  let count = 0;
-  for (const candidateId of others) {
-    if (await subjectPassesFiltersOf(ctx, candidateId, userId)) count++;
-  }
-  return count;
+// =====================================================================
+// SCALE FIX (docs/scale-and-sources.md Part 1, §1.1.3/§1.9): the reality
+// dashboard's X/Y counts scanned literally every active user on the
+// platform, with no gate at all — worse than discovery, which at least
+// had the (weak) completeness/photo/block gate. Bounded "the same way"
+// as discovery now means: same geographic box (`resolveGeoSearchContext`
+// — reusing the viewer's own location + effective search radius exactly
+// as `loadCandidatePool` does), same hard cap, same batched filter
+// evaluation. `DASHBOARD_SCAN_CAP` is larger than
+// `discovery.service.ts#MAX_CANDIDATE_POOL_SIZE` because a count-only
+// pass is cheaper per candidate than assembling a full ranked card
+// (no compatibility scoring, no tag lookup, no photo join) — see this
+// build's report for the measured cost of each.
+//
+// HONESTY UNDER TRUNCATION: `RealityDashboard` (`domain/types.ts`, not
+// owned by this build) is three plain numbers with no room for an
+// `approximate: boolean` flag — flagged in this build's report as the
+// ideal follow-up for whoever next owns that file. Until then, dishonesty
+// is avoided the other way: below the cap, the count is EXACT (a full
+// scan of the (now geographically bounded, still typically-everyone-in-
+// range) population, not a sample) — the estimator only activates once
+// the geographic population itself exceeds the cap, and even then it is
+// a documented, unbiased estimate (sample match-rate × true population
+// size in the box, both measured from real queries, never a guess), not
+// a silently-wrong exact-looking number. `ctx.logger.warn` fires whenever
+// the estimator is used, so truncation is at least observable
+// server-side even though the API response itself cannot say so.
+// =====================================================================
+
+/** Larger than the discovery pool cap — see block comment above for why a count-only pass affords a bigger sample. */
+export const DASHBOARD_SCAN_CAP = 5000;
+
+export interface NearbyActiveUsers {
+  ids: string[];
+  truncated: boolean;
+  /** Exact count of active users in the geographic box (a single indexed aggregate query — O(1) round trips even though it touches every row in the box), independent of how many ids were actually returned/capped. Used to scale a truncated sample back up to a population estimate. */
+  totalActiveInRadius: number;
 }
 
-/** Count of other active users whose filters the given user passes — the other half of the §9.3 dashboard. */
-export async function countUsersWhoseFiltersIMatch(ctx: Ctx, userId: string): Promise<number> {
-  const others = await listOtherActiveUserIds(ctx, userId);
-  let count = 0;
-  for (const candidateId of others) {
-    if (await subjectPassesFiltersOf(ctx, userId, candidateId)) count++;
+/**
+ * Active users near `userId` (status + geography only — no completeness/
+ * photo/block gate; matches the ORIGINAL `listOtherActiveUserIds`
+ * population for X/Y other than the new geographic bound, which is the
+ * fix, not an accidental narrowing — see block comment above), ordered
+ * most-recently-active first, capped at `cap`. `truncated` is true only
+ * when the true in-box population exceeds `cap`.
+ */
+async function listNearbyActiveUserIds(ctx: Ctx, userId: string, cap: number): Promise<NearbyActiveUsers> {
+  const geo = await resolveGeoSearchContext(ctx, userId);
+
+  const params: unknown[] = [userId];
+  let geoClause = '';
+  if (geo.box) {
+    params.push(geo.box.latMin, geo.box.latMax, geo.box.lon1Min, geo.box.lon1Max, geo.box.lon2Min, geo.box.lon2Max);
+    geoClause = `
+       AND p.latitude BETWEEN $2 AND $3
+       AND (p.longitude BETWEEN $4 AND $5 OR p.longitude BETWEEN $6 AND $7)`;
   }
-  return count;
+
+  const { rows: totalRows } = await ctx.db.query<{ count: string }>(
+    `SELECT count(*)::text AS count
+     FROM users u JOIN profiles p ON p.user_id = u.id
+     WHERE u.status = 'active' AND u.id <> $1${geoClause}`,
+    params,
+  );
+  const totalActiveInRadius = Number(totalRows[0]!.count);
+
+  const limitParamIndex = params.length + 1;
+  const { rows } = await ctx.db.query<{ id: string }>(
+    `SELECT u.id
+     FROM users u JOIN profiles p ON p.user_id = u.id
+     WHERE u.status = 'active' AND u.id <> $1${geoClause}
+     ORDER BY u.last_active_at DESC, u.id ASC
+     LIMIT $${limitParamIndex}`,
+    [...params, cap + 1],
+  );
+  const truncated = rows.length > cap;
+  return { ids: rows.slice(0, cap).map((r) => r.id), truncated, totalActiveInRadius };
+}
+
+/** See `listNearbyActiveUserIds`'s "HONESTY UNDER TRUNCATION" note: exact below the cap, an unbiased sample-rate estimate above it, with a `logger.warn` so truncation is at least server-observable. Exported (takes its inputs as plain data, no I/O) so the estimator's math can be unit-tested directly without seeding `DASHBOARD_SCAN_CAP`-plus rows into a real database — see `tests/unit/filter.test.ts`. */
+export function summarizeSampledCount(ctx: Ctx, logContext: string, matchingInSample: number, nearby: NearbyActiveUsers): number {
+  if (!nearby.truncated) return matchingInSample;
+  const rate = nearby.ids.length > 0 ? matchingInSample / nearby.ids.length : 0;
+  const estimate = Math.round(rate * nearby.totalActiveInRadius);
+  ctx.logger.warn(
+    `${logContext}: geographic population (${nearby.totalActiveInRadius}) exceeds the dashboard scan cap (${DASHBOARD_SCAN_CAP}); ` +
+      `returning an estimate (sample match rate ${(rate * 100).toFixed(1)}% over ${nearby.ids.length} sampled users, scaled to the true in-radius population) rather than an exact count.`,
+  );
+  return estimate;
+}
+
+/** Count of other active (geographically nearby) users who pass the given user's filters — feeds `discovery.service.ts#getRealityDashboard` (spec §9.3) "X". */
+export async function countUsersMatchingMyFilters(ctx: Ctx, userId: string): Promise<number> {
+  const nearby = await listNearbyActiveUserIds(ctx, userId, DASHBOARD_SCAN_CAP);
+  if (nearby.ids.length === 0) return 0;
+  const results = await evaluateFilterPairsBatch(ctx, nearby.ids.map((id) => ({ subjectId: id, ownerId: userId })));
+  return summarizeSampledCount(ctx, 'countUsersMatchingMyFilters', results.filter(Boolean).length, nearby);
+}
+
+/** Count of other active (geographically nearby) users whose filters the given user passes — the "Y" half of the §9.3 dashboard. */
+export async function countUsersWhoseFiltersIMatch(ctx: Ctx, userId: string): Promise<number> {
+  const nearby = await listNearbyActiveUserIds(ctx, userId, DASHBOARD_SCAN_CAP);
+  if (nearby.ids.length === 0) return 0;
+  const results = await evaluateFilterPairsBatch(ctx, nearby.ids.map((id) => ({ subjectId: userId, ownerId: id })));
+  return summarizeSampledCount(ctx, 'countUsersWhoseFiltersIMatch', results.filter(Boolean).length, nearby);
 }
 
 // =====================================================================
@@ -883,13 +972,26 @@ export async function countUsersWhoseFiltersIMatch(ctx: Ctx, userId: string): Pr
 // =====================================================================
 
 /**
- * Same population and gating as `countUsersMatchingMyFilters` (the "X"
- * reality-dashboard count: how many other active users pass `userId`'s
- * enabled filters), except `filterKey`'s `excludeIfUnset` is temporarily
- * overridden to `excludeIfUnsetOverride` for this computation only —
- * nothing is written to `hard_filters`. Lets a caller show, e.g., "turning
- * on 'must have height set' would cost you N candidates" before the user
- * flips the toggle for real via `updateMyFilters`.
+ * Same population and gating as the ORIGINAL (pre-scale-fix)
+ * `countUsersMatchingMyFilters` — deliberately NOT geo-bounded, unlike
+ * that function now: this preview must count EVERY other active user
+ * (including one with no `profiles` row at all, which can't be placed in
+ * any geographic box) because it exists to answer "exactly how many
+ * candidates would this toggle cost me", and a geographically-narrowed
+ * answer to that question would be a different, smaller, and wrong
+ * number — see `tests/unit/profileAttributes.test.ts`'s exact-count
+ * assertion for this function. `filterKey`'s `excludeIfUnset` is
+ * temporarily overridden to `excludeIfUnsetOverride` for this computation
+ * only — nothing is written to `hard_filters`.
+ *
+ * Still gets the SCALE FIX's other half, though: the N+1 (one query per
+ * candidate, one more per that candidate's enabled filter) is gone — the
+ * whole population's attributes are fetched in a fixed small number of
+ * batched queries (same `loadProfilesBatch`/`loadAnswersBatch` machinery
+ * as `evaluateFilterPairsBatch`, just inlined here since the per-call
+ * `unsetPolicyOverride` isn't something that generic batch function
+ * takes a parameter for) — so this remains O(1) ROUND TRIPS even though
+ * it is still, deliberately, O(all active users) ROWS SCANNED.
  *
  * `filterKey` need not currently exist among `userId`'s filters; if it
  * doesn't, the override has no effect and this returns the same count as
@@ -904,11 +1006,29 @@ export async function previewPoolSizeWithUnsetPolicy(
   excludeIfUnsetOverride: boolean,
 ): Promise<number> {
   const others = await listOtherActiveUserIds(ctx, userId);
+  if (others.length === 0) return 0;
+
+  const { rows: ownFilterRows } = await ctx.db.query<HardFilterRow>(
+    `SELECT user_id, filter_key, operator, value, exclude_if_unset FROM hard_filters WHERE user_id = $1 AND enabled = true`,
+    [userId],
+  );
+  const filters = ownFilterRows.map((f) =>
+    f.filter_key === filterKey ? { ...f, exclude_if_unset: excludeIfUnsetOverride } : f,
+  );
+
+  const maps = await loadAttributeMapsFor(ctx, others, filters);
+
   let count = 0;
   for (const candidateId of others) {
-    if (await subjectPassesFiltersOf(ctx, candidateId, userId, { filterKey, excludeIfUnset: excludeIfUnsetOverride })) {
-      count++;
+    let passes = true;
+    for (const f of filters) {
+      const value = resolveAttributeValueFromMaps(candidateId, userId, f.filter_key, maps);
+      if (!evaluateFilter({ operator: f.operator, value: f.value }, value, f.exclude_if_unset)) {
+        passes = false;
+        break;
+      }
     }
+    if (passes) count++;
   }
   return count;
 }

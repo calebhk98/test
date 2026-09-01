@@ -261,6 +261,37 @@ async function upsertScore(ctx: Ctx, userId: string, candidateId: string, score:
 }
 
 /**
+ * SCALE FIX (docs/scale-and-sources.md Part 1, §1.2.1 last paragraph):
+ * `getScoresForCandidates` used to call `upsertScore` once per candidate,
+ * sequentially, inside its loop — one write round trip per candidate on
+ * EVERY discovery request, riding along with (and adding to) §1.1.2's
+ * per-candidate read cost. This writes the whole batch as ONE
+ * multi-row upsert (`unnest` over the candidate/score arrays) instead,
+ * so this function's write cost is O(1) round trips regardless of how
+ * many candidates it scored — same fix shape as
+ * `filter.service#evaluateFilterPairsBatch`, applied to a write instead
+ * of a read. Also used by `refreshScoresForUser` (this file, still
+ * O(all-active-users) rows read/scored — geographically bounding THAT
+ * candidate list is out of this build's scope, see this build's report —
+ * but its write side is now batched too, for free, since it calls this
+ * same function).
+ */
+async function upsertScoresBatch(ctx: Ctx, userId: string, scores: Map<string, number>): Promise<void> {
+  if (scores.size === 0) return;
+  const candidateIds = [...scores.keys()];
+  const values = candidateIds.map((id) => scores.get(id)!);
+  await ctx.db.query(
+    `INSERT INTO compatibility_scores (user_id, candidate_id, score, computed_at)
+     SELECT $1, c.candidate_id, c.score, $4
+     FROM unnest($2::uuid[], $3::double precision[]) AS c(candidate_id, score)
+     ON CONFLICT (user_id, candidate_id) DO UPDATE SET
+       score = EXCLUDED.score,
+       computed_at = EXCLUDED.computed_at`,
+    [userId, candidateIds, values, ctx.clock.now()],
+  );
+}
+
+/**
  * On-demand score for one candidate pair (spec §16.3: "For MVP, compute
  * score on demand for candidates"). Always recomputes from current
  * `answers` — this module deliberately does not implement a staleness
@@ -315,8 +346,8 @@ export async function getScoresForCandidates(ctx: Ctx, userId: string, candidate
     const candidateAnswers = answersByCandidate.get(candidateId) ?? [];
     const { score } = computePairScore(userAAnswers, candidateAnswers, questions, scoringConfig.minSharedQuestions, scoringConfig.noDataDefaultScore);
     result.set(candidateId, score);
-    await upsertScore(ctx, userId, candidateId, score);
   }
+  await upsertScoresBatch(ctx, userId, result);
 
   return result;
 }

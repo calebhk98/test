@@ -182,24 +182,69 @@ test('admin mutations across venues/questions/feature-flags all write audit rows
 });
 
 test('§18.1: moderation pipeline runs to completion with zero admin endpoints called', async () => {
-  const reporter = await registerUser(t);
   const reported = await registerUser(t);
 
-  // Threshold defaults: restriction at score 50; minor_suspected forces an
-  // immediate suspension regardless of score (§18.3/§18.5) -- exercised
-  // here with zero admin involvement, per C-18.1.1/C-4.3.7.
-  const res = await t.app.inject({
+  // SAF-1 fix (docs/risk-review.md): a single, uncorroborated
+  // minor_suspected report used to force an immediate suspension on its
+  // own -- a one-click weapon letting any account suspend any other with
+  // one unverified report. That has been deliberately fixed: one credible
+  // report now applies only a fast, reversible interim restriction, and
+  // it takes >= moderation.minor_suspected_min_corroborating_reporters
+  // (default 2) DISTINCT, non-clustered credible reports before automated
+  // suspension applies. This test used to assert the OLD ("one report ->
+  // suspension") behavior; it is updated here to assert the fixed
+  // behavior instead, per test-audit.md's item 6 -- not reverted back to
+  // the vulnerable version.
+  //
+  // A report only counts as "credible" from an account at least
+  // moderation.minor_suspected_reporter_min_account_age_hours old (default
+  // 24h) -- backdate `users.created_at` directly (same technique
+  // `tests/unit/safetyFixes.test.ts` uses) rather than advancing this
+  // suite's shared clock, which every other test in this file also reads.
+  async function backdatedCredibleReporter(daysOld: number) {
+    const reporter = await registerUser(t);
+    await t.pool.query(`UPDATE users SET created_at = $1 WHERE id = $2`, [
+      new Date(t.clock.now().getTime() - daysOld * 24 * 60 * 60 * 1000),
+      reporter.userId,
+    ]);
+    return reporter;
+  }
+
+  const reporter1 = await backdatedCredibleReporter(90);
+  const res1 = await t.app.inject({
     method: 'POST',
     url: '/reports',
-    headers: authHeader(reporter.accessToken),
+    headers: authHeader(reporter1.accessToken),
     payload: { reportedId: reported.userId, category: 'minor_suspected', details: 'concern' },
   });
-  assert.equal(res.statusCode, 201);
+  assert.equal(res1.statusCode, 201);
 
-  const { rows } = await t.pool.query(`SELECT action FROM moderation_actions WHERE user_id = $1 ORDER BY created_at DESC LIMIT 1`, [
-    reported.userId,
-  ]);
-  assert.equal(rows[0]?.action, 'suspension');
+  const afterFirst = await t.pool.query(
+    `SELECT action, reason FROM moderation_actions WHERE user_id = $1 ORDER BY created_at DESC LIMIT 1`,
+    [reported.userId],
+  );
+  assert.equal(afterFirst.rows[0]?.action, 'restriction', 'one credible report: a fast, reversible interim restriction, never suspension');
+  assert.equal(afterFirst.rows[0]?.reason, 'minor_suspected_report_interim_protective_action');
+
+  // A second, DISTINCT, non-clustered credible reporter (a different
+  // account-age bucket so no account-creation-proximity clustering
+  // signal fires either) corroborates the signal -- this is the "still
+  // suspends quickly" half of the fix.
+  const reporter2 = await backdatedCredibleReporter(45);
+  const res2 = await t.app.inject({
+    method: 'POST',
+    url: '/reports',
+    headers: authHeader(reporter2.accessToken),
+    payload: { reportedId: reported.userId, category: 'minor_suspected', details: 'also concerning' },
+  });
+  assert.equal(res2.statusCode, 201);
+
+  const afterSecond = await t.pool.query(
+    `SELECT action, reason FROM moderation_actions WHERE user_id = $1 ORDER BY created_at DESC LIMIT 1`,
+    [reported.userId],
+  );
+  assert.equal(afterSecond.rows[0]?.action, 'suspension', 'two corroborating credible reports must still suspend fast');
+  assert.equal(afterSecond.rows[0]?.reason, 'minor_suspected_report_immediate_protective_action');
 });
 
 test('§30.6.1: admin can mark a venue inactive', async () => {

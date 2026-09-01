@@ -2,10 +2,15 @@ import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
 import { ValidationError } from '../lib/errors.js';
 import type { Block, DiscoveryCandidate, Page, RealityDashboard, TrustLevel } from '../domain/types.js';
-import { passesMutualFilters, countUsersMatchingMyFilters, countUsersWhoseFiltersIMatch } from './filter.service.js';
+import {
+  passesMutualFilters,
+  countUsersMatchingMyFilters,
+  countUsersWhoseFiltersIMatch,
+  passesMutualFiltersForCandidates,
+  resolveGeoSearchContext,
+} from './filter.service.js';
 import { getScoresForCandidates } from './compatibility.service.js';
 import { isVisibleInDiscovery } from './moderation.service.js';
-import { resolveVisibleTagsFor } from './question.service.js';
 import * as photoExperiment from './photoExperiment.service.js';
 import { approximateDistanceBetween } from '../domain/units/distance.js';
 
@@ -112,6 +117,23 @@ export const MIN_PROFILE_COMPLETENESS_FOR_DISCOVERY = 50;
 const DEFAULT_PAGE_LIMIT = 20;
 const MAX_PAGE_LIMIT = 100;
 
+/**
+ * SCALE FIX (docs/scale-and-sources.md Part 1, §1.1.1/§1.9 fix #3): a hard
+ * ceiling on how many rows `loadCandidatePool` will ever pull back for one
+ * request, regardless of how many people are geographically in range.
+ * Several times `MAX_PAGE_LIMIT` so a request can still page a handful of
+ * screens deep without hitting the wall, but not "the whole metro area" —
+ * combined with the geographic bound (`filter.service#resolveGeoSearchContext`)
+ * this is what makes `computeRankedCandidatePool`'s cost (queries AND
+ * in-memory ranking work) bounded per request instead of O(eligible
+ * platform population). Ordering ties into the cap: the pool query is
+ * `ORDER BY last_active_at DESC, id ASC LIMIT` this many, so when a
+ * geographic pool exceeds the cap, the most-recently-active users are the
+ * ones considered (a documented, intentional policy choice, not an
+ * arbitrary truncation — see this build's report).
+ */
+export const MAX_CANDIDATE_POOL_SIZE = 500;
+
 function clampLimit(limit: number | undefined): number {
   if (limit === undefined || !Number.isFinite(limit) || limit <= 0) return DEFAULT_PAGE_LIMIT;
   return Math.min(Math.floor(limit), MAX_PAGE_LIMIT);
@@ -143,8 +165,52 @@ interface CandidatePoolRow {
   distance_precision_floor_km: number | null;
 }
 
+/**
+ * SCALE FIX (docs/scale-and-sources.md Part 1, §1.1.1/§1.1.4 fix #1 and
+ * §1.9 fix #3): this used to be "every eligible user on the platform, no
+ * `LIMIT`, no geography" — the single biggest scalability defect the
+ * review found, and the root cause of §1.1.2's per-candidate loop being
+ * catastrophic (it had an unbounded pool to loop over). Now:
+ *
+ *   1. GEOGRAPHY FIRST: a lat/long bounding-box prefilter
+ *      (`filter.service#resolveGeoSearchContext`/`boundingBoxForRadius`),
+ *      sized from the viewer's own `distance_km` filter (or a documented
+ *      default) — see that module's SCALE FIX doc for why a box, not a
+ *      new extension. When the viewer has no location on file, there is
+ *      no box to build (nothing to be "near"), so this falls back to
+ *      cap-only bounding — still never unbounded, see `MAX_CANDIDATE_POOL_SIZE`.
+ *   2. Also moderation's rules 1-2 folded straight into the WHERE clause
+ *      (`NOT u.shadowbanned AND NOT u.suspended`, on top of the existing
+ *      `u.status = 'active'`) — this is EXACTLY what
+ *      `moderation.service#isVisibleInDiscovery` checks (same three
+ *      columns, same logic), just evaluated once per row here instead of
+ *      once per candidate in a follow-up query loop (§1.1.2's first
+ *      per-candidate round trip, now gone).
+ *   3. `ORDER BY last_active_at DESC, id ASC LIMIT MAX_CANDIDATE_POOL_SIZE`
+ *      — the query itself, not application code, decides which rows are
+ *      even worth fetching once the (already geographically narrow) pool
+ *      still exceeds the cap.
+ *
+ * None of this changes WHO is a legitimate candidate — the completeness/
+ * photo/block gates are untouched, and the geographic box is provably
+ * never narrower than the viewer's own stated distance preference (see
+ * `boundingBoxForRadius`'s doc) — it only changes how much work one
+ * request does to find them.
+ */
 async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidatePoolRow[]> {
   const minProfileCompleteness = await ctx.config.get('discovery.min_profile_completeness');
+  const geo = await resolveGeoSearchContext(ctx, viewerId);
+
+  const params: unknown[] = [viewerId, minProfileCompleteness];
+  let geoClause = '';
+  if (geo.box) {
+    params.push(geo.box.latMin, geo.box.latMax, geo.box.lon1Min, geo.box.lon1Max, geo.box.lon2Min, geo.box.lon2Max);
+    geoClause = `
+       AND p.latitude BETWEEN $3 AND $4
+       AND (p.longitude BETWEEN $5 AND $6 OR p.longitude BETWEEN $7 AND $8)`;
+  }
+  const limitParamIndex = params.length + 1;
+
   const { rows } = await ctx.db.query<CandidatePoolRow>(
     `SELECT
        u.id,
@@ -165,13 +231,17 @@ async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidateP
        ON ph.user_id = u.id AND ph.is_primary AND ph.moderation_status = 'approved'
      WHERE u.id <> $1
        AND u.status = 'active'
+       AND NOT u.shadowbanned
+       AND NOT u.suspended
        AND p.profile_completeness >= $2
        AND EXISTS (SELECT 1 FROM user_photos ap WHERE ap.user_id = u.id AND ap.moderation_status = 'approved')
        AND NOT EXISTS (
          SELECT 1 FROM blocks b
          WHERE (b.blocker_id = $1 AND b.blocked_id = u.id) OR (b.blocker_id = u.id AND b.blocked_id = $1)
-       )`,
-    [viewerId, minProfileCompleteness],
+       )${geoClause}
+     ORDER BY u.last_active_at DESC, u.id ASC
+     LIMIT $${limitParamIndex}`,
+    [...params, MAX_CANDIDATE_POOL_SIZE],
   );
   return rows;
 }
@@ -246,12 +316,91 @@ async function loadViewerOwnTagIds(ctx: Ctx, viewerId: string): Promise<Set<stri
   return new Set(rows.map((r) => r.tag_id));
 }
 
+interface CandidateTagRow {
+  user_id: string;
+  tag_id: string;
+  visibility: 'public' | 'private_reciprocal' | 'hidden';
+  name: string;
+}
+
+/**
+ * Batched equivalent of `question.service#resolveVisibleTagsFor`, called
+ * once per candidate in the original per-row loop (§1.1.2's third
+ * per-candidate round trip) — replaced here with ONE query covering every
+ * survivor, per the same "batch it, don't index it, there's nothing to
+ * index" reasoning the review gave for the other two per-candidate gates.
+ * `question.service.ts` is not owned by this build, so this does not call
+ * that function — it re-derives the exact same visibility rule directly
+ * against `user_tags`/`interest_tags` (a cross-domain direct table read,
+ * the same pattern this file's own top-of-file doc already establishes
+ * for `profiles`/`user_photos`/`interests`/`conversations`). MUST stay
+ * behaviorally identical to `resolveVisibleTagsFor`'s non-owner branch:
+ * `hidden` never visible; `private_reciprocal` visible only when the
+ * viewer holds the same tag; `public` always visible; and (matching the
+ * original call site, not `resolveVisibleTagsFor` in general) the
+ * "shared" tag additionally requires the viewer to hold that exact tag,
+ * which collapses to "visible AND viewer has it" — see inline comment.
+ */
+async function loadSharedTagsForSurvivors(
+  ctx: Ctx,
+  candidateIds: string[],
+  viewerTagIds: Set<string>,
+): Promise<Map<string, string | null>> {
+  const result = new Map<string, string | null>();
+  if (candidateIds.length === 0) return result;
+
+  const { rows } = await ctx.db.query<CandidateTagRow>(
+    `SELECT ut.user_id, ut.tag_id, ut.visibility, it.name
+     FROM user_tags ut
+     JOIN interest_tags it ON it.id = ut.tag_id
+     WHERE ut.user_id = ANY($1::uuid[])
+     ORDER BY ut.user_id, it.name`,
+    [candidateIds],
+  );
+
+  const byCandidate = new Map<string, CandidateTagRow[]>();
+  for (const row of rows) {
+    const list = byCandidate.get(row.user_id);
+    if (list) list.push(row);
+    else byCandidate.set(row.user_id, [row]);
+  }
+
+  for (const candidateId of candidateIds) {
+    const tagRows = byCandidate.get(candidateId) ?? [];
+    // visible-to-viewer AND viewer holds it too (the "shared" requirement)
+    // — for a `public` tag the visibility half is always true, so this
+    // reduces to `viewerTagIds.has(tagId)`; for `private_reciprocal` both
+    // halves are the same check, so writing it once here is not a
+    // simplification of the rule, just of this already-equivalent case.
+    const shared = tagRows.find((r) => r.visibility !== 'hidden' && viewerTagIds.has(r.tag_id));
+    result.set(candidateId, shared?.name ?? null);
+  }
+  return result;
+}
+
 /**
  * The full §10.2 gate + §16.3 scoring + ranking-field assembly for every
  * candidate eligible to appear in `viewerId`'s discovery grid, unsorted.
  * Both `getDiscoveryGrid` (paginates the sorted result) and
  * `getRealityDashboard` (`Z` = `.length`) build on this shared pipeline so
  * they can never disagree about who is in the pool.
+ *
+ * SCALE FIX (docs/scale-and-sources.md Part 1, §1.1.2/§1.1.4 fix #2): the
+ * per-candidate loop that used to sit here — one `isVisibleInDiscovery`
+ * call, one `passesMutualFilters` call (itself 2+ more queries), one
+ * `resolveVisibleTagsFor` call, ALL sequentially, PER CANDIDATE — is gone.
+ * Moderation's rules 1-2 are enforced inside `loadCandidatePool`'s SQL
+ * (see that function's doc); rules 7-8 (mutual hard filters) and the
+ * shared-tag lookup are each now ONE batched call
+ * (`filter.service#passesMutualFiltersForCandidates`,
+ * `loadSharedTagsForSurvivors` above) covering the WHOLE pool at once, in
+ * a fixed number of queries regardless of pool size. Every invariant is
+ * unchanged: rules 7-8 are still strictly enforced and never overridden by
+ * scoring (this function still filters BEFORE `getScoresForCandidates` is
+ * ever called), and the capacity gates (rules 5-6) still run before
+ * anything else, exactly as before — only the mechanism (batched vs.
+ * looped) changed, not the order of gates relative to each other or to
+ * scoring.
  */
 async function computeRankedCandidatePool(ctx: Ctx, viewerId: string): Promise<DiscoveryRankingInput[]> {
   const pool = await loadCandidatePool(ctx, viewerId);
@@ -272,29 +421,24 @@ async function computeRankedCandidatePool(ctx: Ctx, viewerId: string): Promise<D
   // see domain/units/distance.ts#approximateDistanceBetween's module doc.
   const distanceBucketKm = await ctx.config.get('privacy.distance_bucket_km');
 
-  const survivors: CandidatePoolRow[] = [];
-  const sharedTagByCandidate = new Map<string, string | null>();
+  // §10.2 rules 5-6: incoming pending interests / active conversations <
+  // cap. Pure, batched-data lookups already loaded above — no I/O here.
+  const withinCapacity = pool.filter(
+    (row) => (pendingCounts.get(row.id) ?? 0) < incomingLimit && (activeConvCounts.get(row.id) ?? 0) < activeConvLimit,
+  );
+  if (withinCapacity.length === 0) return [];
 
-  for (const row of pool) {
-    // §10.2 rule 5: incoming pending interests < cap.
-    if ((pendingCounts.get(row.id) ?? 0) >= incomingLimit) continue;
-    // §10.2 rule 6: active conversations < cap.
-    if ((activeConvCounts.get(row.id) ?? 0) >= activeConvLimit) continue;
-    // §10.2 rules 1-2: active/not shadowbanned/not suspended.
-    if (!(await isVisibleInDiscovery(ctx, row.id))) continue;
-    // §10.2 rules 7-8: mutual hard filters (spec §9.1 — the invariant this whole module exists to protect).
-    if (!(await passesMutualFilters(ctx, viewerId, row.id))) continue;
-
-    survivors.push(row);
-
-    // §10.1 "maybe one shared interest" — §8.4-respecting: only tags this
-    // viewer is actually allowed to see, intersected with the viewer's own.
-    const visibleTags = await resolveVisibleTagsFor(ctx, viewerId, row.id);
-    const shared = visibleTags.find((t) => viewerTagIds.has(t.tagId));
-    sharedTagByCandidate.set(row.id, shared?.name ?? null);
-  }
-
+  // §10.2 rules 7-8: mutual hard filters (spec §9.1 — the invariant this
+  // whole module exists to protect), batched across the whole pool in one
+  // call instead of one `passesMutualFilters` call per candidate.
+  const passingFilterIds = await passesMutualFiltersForCandidates(ctx, viewerId, withinCapacity.map((r) => r.id));
+  const survivors = withinCapacity.filter((row) => passingFilterIds.has(row.id));
   if (survivors.length === 0) return [];
+
+  // §10.1 "maybe one shared interest" — §8.4-respecting: only tags this
+  // viewer is actually allowed to see, intersected with the viewer's own.
+  // Batched across every survivor in one query (was one call per survivor).
+  const sharedTagByCandidate = await loadSharedTagsForSurvivors(ctx, survivors.map((r) => r.id), viewerTagIds);
 
   const scores = await getScoresForCandidates(ctx, viewerId, survivors.map((r) => r.id));
 

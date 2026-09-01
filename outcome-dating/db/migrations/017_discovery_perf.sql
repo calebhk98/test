@@ -1,0 +1,67 @@
+-- 017_discovery_perf.sql
+--
+-- Discovery/reality-dashboard scalability fix (docs/scale-and-sources.md
+-- Part 1, §1.1/§1.3/§1.9 fix #1). Owned entirely by this build; does not
+-- alter or drop anything from any earlier migration, and no earlier
+-- migration is edited.
+--
+-- THE PROBLEM (see docs/scale-and-sources.md for the full numbers):
+-- `discovery.service.ts#loadCandidatePool` and
+-- `filter.service.ts#listOtherActiveUserIds` (feeding the reality
+-- dashboard) both selected essentially every eligible/active user on the
+-- entire platform, with no geographic bound and no LIMIT, then walked
+-- that pool one row at a time over sequential DB round trips. This
+-- breaks the whole application (not just discovery) at a few thousand to
+-- low tens-of-thousands of active users, because each slow discovery
+-- request holds a connection from the 10-connection pool
+-- (`src/db/pool.ts`) for its entire multi-second-to-minutes duration.
+--
+-- THE FIX (application-layer half lives in discovery.service.ts /
+-- filter.service.ts — this migration is the schema half it depends on):
+-- bound the candidate pool geographically FIRST, before any per-candidate
+-- work happens, using a plain lat/long bounding-box prefilter
+-- (`filter.service.ts#boundingBoxForRadius`), and cap+order the result so
+-- a request never evaluates more candidates than the documented ceiling
+-- (`discovery.service.ts#MAX_CANDIDATE_POOL_SIZE`,
+-- `filter.service.ts#DASHBOARD_SCAN_CAP`).
+--
+-- WHY NO POSTGIS / earthdistance / cube EXTENSION: the only extension
+-- this codebase has ever loaded is `pgcrypto` (001_init.sql). A bounding
+-- BOX (not a circle — a box that fully contains the circle of the
+-- intended radius, so it can only ever admit extra rows for the existing
+-- exact `haversineKm` check downstream to correctly reject, never wrongly
+-- exclude a real candidate) needs nothing more exotic than a composite
+-- btree index on two plain `double precision` columns. That is enough to
+-- turn "every active user on the platform" into "active users within a
+-- few hundred km of the viewer" at an index-range-scan cost, which is the
+-- actual win being bought here — see this build's report for the
+-- measured query-count and latency numbers before/after. Adding a new
+-- extension dependency (install/availability per environment, admin
+-- privileges to `CREATE EXTENSION`) would buy index-native circle/
+-- polygon queries this codebase has no present use for; a composite
+-- btree is the smallest change that fixes the actual defect.
+--
+-- Both indexes are plain `CREATE INDEX` (not CONCURRENTLY) — consistent
+-- with every prior migration in this file set, all of which run inside
+-- migrate.ts's per-file transaction (CONCURRENTLY cannot run inside a
+-- transaction block at all). This is a dev/test-scale codebase (see
+-- scripts/pg-dev.sh); a production rollout of this migration against a
+-- large, already-loaded `profiles`/`users` table would want the
+-- CONCURRENTLY + separate-transaction variant instead, flagged here for
+-- whoever owns that rollout.
+
+-- Bounding-box prefilter for `profiles.latitude`/`profiles.longitude`.
+-- Composite (not two separate single-column indexes) so a single index
+-- range scan can narrow on both axes at once for the common
+-- (non-antimeridian, non-polar) box shape
+-- `boundingBoxForRadius` produces.
+CREATE INDEX idx_profiles_lat_lon ON profiles (latitude, longitude);
+
+-- Lets `... WHERE status = 'active' ... ORDER BY last_active_at DESC LIMIT
+-- $cap` (both `loadCandidatePool` in discovery.service.ts and
+-- `listNearbyActiveUserIds` in filter.service.ts use this exact shape) be
+-- served by an index scan that stops at the cap, instead of a sequential
+-- scan of every active user followed by a full sort. `idx_users_status`
+-- (001_init.sql) already exists but doesn't carry `last_active_at`, so it
+-- cannot serve the ORDER BY without a separate sort step.
+CREATE INDEX idx_users_status_last_active ON users (status, last_active_at DESC);

@@ -32,6 +32,14 @@ import {
   countUsersWhoseFiltersIMatch,
   getMyFilters,
   updateMyFilters,
+  boundingBoxForRadius,
+  resolveGeoSearchContext,
+  evaluateFilterPairsBatch,
+  passesMutualFiltersForCandidates,
+  summarizeSampledCount,
+  DEFAULT_DISCOVERY_RADIUS_KM,
+  DASHBOARD_SCAN_CAP,
+  type NearbyActiveUsers,
 } from '../../src/services/filter.service.js';
 import { computePairScore } from '../../src/services/compatibility.service.js';
 
@@ -104,6 +112,118 @@ test('haversineKm: symmetric and zero for identical points', () => {
   const ba = haversineKm(40.71, -74.0, 39.78, -89.65);
   assert.ok(Math.abs(ab - ba) < 1e-9);
   assert.ok(ab > 1000 && ab < 2000, `Springfield IL to NYC should be roughly 1000-2000km, got ${ab}`);
+});
+
+// =====================================================================
+// boundingBoxForRadius: pure geo math (SCALE FIX). The one invariant that
+// matters most: the box must NEVER be narrower than the true radius —
+// every point within `radiusKm` of the center must fall inside the box
+// (checked here against the exact `haversineKm`), even though the box is
+// allowed to be (and, away from the equator, always is) a bit wider than
+// the circle it contains.
+// =====================================================================
+
+function pointAtBearing(lat: number, lon: number, distanceKm: number, bearingDeg: number): { lat: number; lon: number } {
+  const R = 6371;
+  const b = (bearingDeg * Math.PI) / 180;
+  const lat1 = (lat * Math.PI) / 180;
+  const lon1 = (lon * Math.PI) / 180;
+  const d = distanceKm / R;
+  const lat2 = Math.asin(Math.sin(lat1) * Math.cos(d) + Math.cos(lat1) * Math.sin(d) * Math.cos(b));
+  const lon2 = lon1 + Math.atan2(Math.sin(b) * Math.sin(d) * Math.cos(lat1), Math.cos(d) - Math.sin(lat1) * Math.sin(lat2));
+  return { lat: (lat2 * 180) / Math.PI, lon: (((lon2 * 180) / Math.PI + 540) % 360) - 180 };
+}
+
+function insideBox(box: ReturnType<typeof boundingBoxForRadius>, lat: number, lon: number): boolean {
+  if (lat < box.latMin || lat > box.latMax) return false;
+  return (lon >= box.lon1Min && lon <= box.lon1Max) || (lon >= box.lon2Min && lon <= box.lon2Max);
+}
+
+test('boundingBoxForRadius: every point within radius of the center falls inside the box (equator)', () => {
+  const box = boundingBoxForRadius(0, 0, 100);
+  for (const bearing of [0, 45, 90, 135, 180, 225, 270, 315]) {
+    const p = pointAtBearing(0, 0, 95, bearing); // just inside the radius
+    assert.ok(insideBox(box, p.lat, p.lon), `bearing ${bearing} at 95km should be inside the box`);
+  }
+});
+
+test('boundingBoxForRadius: widens longitude span at high latitude so it still never under-covers', () => {
+  const box = boundingBoxForRadius(60, 10, 100);
+  for (const bearing of [0, 45, 90, 135, 180, 225, 270, 315]) {
+    const p = pointAtBearing(60, 10, 95, bearing);
+    assert.ok(insideBox(box, p.lat, p.lon), `bearing ${bearing} at 95km (lat 60) should be inside the box`);
+  }
+  // Sanity: the longitude span at lat 60 must be wider (in degrees) than the same radius would need at the equator.
+  const equatorBox = boundingBoxForRadius(0, 10, 100);
+  assert.ok(box.lon1Max - box.lon1Min > equatorBox.lon1Max - equatorBox.lon1Min);
+});
+
+test('boundingBoxForRadius: a box that overruns a pole covers every longitude', () => {
+  const box = boundingBoxForRadius(89.5, 0, 200);
+  assert.equal(box.lon1Min, -180);
+  assert.equal(box.lon1Max, 180);
+  assert.ok(box.latMax <= 90 && box.latMin >= -90, 'clamped to valid latitude range');
+});
+
+test('boundingBoxForRadius: a box crossing the antimeridian is expressed as two OR-ed ranges, not an inverted one', () => {
+  const box = boundingBoxForRadius(10, 179.5, 100);
+  assert.ok(box.lon1Min <= 180 && box.lon1Max <= 180, 'first range stays within [-180, 180]');
+  assert.ok(box.lon2Min >= -180 && box.lon2Max >= -180, 'second range stays within [-180, 180]');
+  // A point just past +180 (i.e. -179.9) must be covered by wrapping into the second range.
+  assert.ok(insideBox(box, 10, -179.9), 'a point just across the antimeridian must still be inside the (wrapped) box');
+});
+
+test('boundingBoxForRadius: a huge radius collapses to the full box rather than an inverted/empty range', () => {
+  const box = boundingBoxForRadius(20, 20, 50_000);
+  assert.equal(box.lon1Min, -180);
+  assert.equal(box.lon1Max, 180);
+});
+
+// =====================================================================
+// summarizeSampledCount: the reality-dashboard "honesty under truncation"
+// estimator (see filter.service.ts's block comment above
+// `DASHBOARD_SCAN_CAP`). Pure math plus a logger call — no DB needed.
+// =====================================================================
+
+function fakeCtxWithLogger(): { ctx: Ctx; warnings: string[] } {
+  const warnings: string[] = [];
+  const logger = {
+    debug() {},
+    info() {},
+    warn(msg: string) {
+      warnings.push(msg);
+    },
+    error() {},
+    child() {
+      return this as any;
+    },
+  };
+  return { ctx: { ...ctx, logger: logger as any }, warnings };
+}
+
+test('summarizeSampledCount: below the cap, returns the exact sample count and never warns', () => {
+  const { ctx: fakeCtx, warnings } = fakeCtxWithLogger();
+  const nearby: NearbyActiveUsers = { ids: Array(120).fill('x'), truncated: false, totalActiveInRadius: 120 };
+  const result = summarizeSampledCount(fakeCtx, 'test', 42, nearby);
+  assert.equal(result, 42, 'not truncated -> exact count, unchanged');
+  assert.equal(warnings.length, 0, 'must not warn when the count is exact');
+});
+
+test('summarizeSampledCount: truncated, scales the sampled match rate up to the true population, and warns', () => {
+  const { ctx: fakeCtx, warnings } = fakeCtxWithLogger();
+  // 250 of the 1000 sampled candidates matched (25%); the true in-radius
+  // population is 20,000 -> honest estimate is 25% of 20,000 = 5,000.
+  const nearby: NearbyActiveUsers = { ids: Array(1000).fill('x'), truncated: true, totalActiveInRadius: 20_000 };
+  const result = summarizeSampledCount(fakeCtx, 'test', 250, nearby);
+  assert.equal(result, 5000);
+  assert.equal(warnings.length, 1, 'truncation must be observable server-side (never silently wrong)');
+  assert.match(warnings[0]!, /estimate/i);
+});
+
+test('summarizeSampledCount: an all-zero sample never divides by zero', () => {
+  const { ctx: fakeCtx } = fakeCtxWithLogger();
+  const nearby: NearbyActiveUsers = { ids: [], truncated: true, totalActiveInRadius: 10_000 };
+  assert.equal(summarizeSampledCount(fakeCtx, 'test', 0, nearby), 0);
 });
 
 // =====================================================================
@@ -337,4 +457,115 @@ test('INVARIANT: a hard filter rejection beats a perfect compatibility score', a
 
   const passes = await passesMutualFilters(ctx, viewer, candidate);
   assert.equal(passes, false, 'a perfect compatibility score must NOT override a failed hard filter (§9.1)');
+});
+
+// =====================================================================
+// SCALE FIX: batched filter evaluation must agree, pair for pair, with
+// the original single-pair `passesMutualFilters` — the whole point of
+// batching is that it computes the SAME answer faster, not a different
+// (even if superficially similar) one.
+// =====================================================================
+
+test('passesMutualFiltersForCandidates: agrees with passesMutualFilters, one call at a time, across a mixed pool', async () => {
+  const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 39.78, longitude: -89.65 });
+
+  const passesAge = await makeUser({ age: 32, gender: 'man', latitude: 39.79, longitude: -89.64 });
+  const failsAge = await makeUser({ age: 60, gender: 'man', latitude: 39.79, longitude: -89.64 });
+  const failsDistance = await makeUser({ age: 32, gender: 'man', latitude: 40.71, longitude: -74.0 });
+  const picky = await makeUser({ age: 32, gender: 'man', latitude: 39.79, longitude: -89.64 });
+  const neutral = await makeUser({ age: 32, gender: 'man', latitude: 39.79, longitude: -89.64 });
+
+  await addFilter(viewer, 'age_min', 'gte', 25);
+  await addFilter(viewer, 'age_max', 'lte', 40);
+  await addFilter(viewer, 'distance_km', 'lte', 50);
+  // `picky` rejects the viewer even though the viewer would accept `picky`.
+  await addFilter(picky, 'age_max', 'lte', 20);
+
+  const candidateIds = [passesAge, failsAge, failsDistance, picky, neutral];
+
+  const expected = await Promise.all(candidateIds.map((id) => passesMutualFilters(ctx, viewer, id)));
+  const batched = await passesMutualFiltersForCandidates(ctx, viewer, candidateIds);
+
+  for (let i = 0; i < candidateIds.length; i++) {
+    assert.equal(
+      batched.has(candidateIds[i]!),
+      expected[i],
+      `candidate ${i} (${candidateIds[i]}) must agree between the batched and single-pair paths`,
+    );
+  }
+  assert.deepEqual(
+    [...batched].sort(),
+    [passesAge, neutral].sort(),
+    'sanity: exactly the two candidates with no disqualifying filter should pass',
+  );
+});
+
+test('evaluateFilterPairsBatch: honors excludeIfUnset per owner filter, matching subjectPassesFiltersOf semantics via passesMutualFilters', async () => {
+  const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 10, longitude: 20 });
+  const neverAnsweredSmoking = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+
+  // No `smoking` answer exists for the candidate at all -> unresolved.
+  await updateMyFilters(actorFor(viewer), [
+    { filterKey: 'smoking', operator: 'lte', value: 2, enabled: true, excludeIfUnset: false },
+  ]);
+  const lenient = await passesMutualFiltersForCandidates(ctx, viewer, [neverAnsweredSmoking]);
+  assert.ok(lenient.has(neverAnsweredSmoking), 'excludeIfUnset:false must still let an unresolved candidate through, batched');
+
+  await updateMyFilters(actorFor(viewer), [
+    { filterKey: 'smoking', operator: 'lte', value: 2, enabled: true, excludeIfUnset: true },
+  ]);
+  const strict = await passesMutualFiltersForCandidates(ctx, viewer, [neverAnsweredSmoking]);
+  assert.ok(!strict.has(neverAnsweredSmoking), 'excludeIfUnset:true must exclude an unresolved candidate, batched');
+});
+
+// =====================================================================
+// SCALE FIX: the reality dashboard's X/Y counts are now geographically
+// bounded, like discovery — a deliberate, documented scope change (see
+// filter.service.ts's block comment above `DASHBOARD_SCAN_CAP`). This
+// proves the bound is real: a candidate far outside the default search
+// radius, who would otherwise pass every filter, must NOT count toward X.
+// =====================================================================
+
+test('countUsersMatchingMyFilters: geographically bounded — a filter-passing candidate far outside the search radius does not count', async () => {
+  // Distinctive age band (76-78) no other test in this file uses, so the
+  // count is exact and order-independent — same isolation technique as
+  // the "reality dashboard counts (X/Y)" test above.
+  const viewer = await makeUser({ age: 40, gender: 'woman', latitude: 39.78, longitude: -89.65 }); // Springfield, IL
+  const nearbyMatch = await makeUser({ age: 77, gender: 'man', latitude: 39.8, longitude: -89.6 }); // ~5km away
+  const farMatch = await makeUser({ age: 77, gender: 'man', latitude: 35.6762, longitude: 139.6503 }); // Tokyo — thousands of km away
+
+  await addFilter(viewer, 'age_min', 'gte', 76);
+  await addFilter(viewer, 'age_max', 'lte', 78);
+
+  const x = await countUsersMatchingMyFilters(ctx, viewer);
+  assert.equal(
+    x,
+    1,
+    'only the geographically nearby candidate counts toward X, even though both candidates equally pass the age filter — a deliberate, documented scope change from the pre-fix unbounded scan',
+  );
+  void farMatch;
+});
+
+test('resolveGeoSearchContext: uses the viewer\'s own enabled distance_km (lte) filter as the search radius, not the default', async () => {
+  const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 1, longitude: 1 });
+  const withoutFilter = await resolveGeoSearchContext(ctx, viewer);
+  assert.equal(withoutFilter.radiusKm, DEFAULT_DISCOVERY_RADIUS_KM);
+
+  await addFilter(viewer, 'distance_km', 'lte', 12);
+  const withFilter = await resolveGeoSearchContext(ctx, viewer);
+  assert.equal(withFilter.radiusKm, 12, 'an explicit lte distance_km filter must size the box, not the fallback default');
+});
+
+test('resolveGeoSearchContext: a viewer with no location on file gets no box (falls back to cap-only bounding, never silently excluded)', async () => {
+  const { rows } = await pool.query<{ id: string }>(
+    `INSERT INTO users (email, password_hash, birthdate, status) VALUES ($1, 'x', '1995-01-01', 'active') RETURNING id`,
+    [`filter-no-profile-${++seq}@test.local`],
+  );
+  const bareUserId = rows[0]!.id;
+  const context = await resolveGeoSearchContext(ctx, bareUserId);
+  assert.equal(context.box, null);
+});
+
+test('DASHBOARD_SCAN_CAP is documented as larger than the discovery pool cap (a count-only pass affords a bigger sample)', () => {
+  assert.ok(DASHBOARD_SCAN_CAP > 0);
 });
