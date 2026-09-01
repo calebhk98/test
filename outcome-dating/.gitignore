@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.pgdata/
+.pglog
+*.log
+.env
+coverage/

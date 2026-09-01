@@ -1,0 +1,35 @@
+{
+  "name": "outcome-dating",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Outcome-Aligned Dating App backend (foundation layer).",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "migrate": "tsx src/db/migrate.ts",
+    "seed": "tsx src/seed.ts",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "pg:start": "bash scripts/pg-dev.sh start",
+    "pg:stop": "bash scripts/pg-dev.sh stop",
+    "pg:reset": "bash scripts/pg-dev.sh reset"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "fastify": "^4.28.1",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.5.4",
+    "@types/pg": "^8.11.6",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
