@@ -1,6 +1,7 @@
 import { randomInt } from 'node:crypto';
 import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
+import { requireUserActor } from '../lib/ctx.js';
 import { ConflictError, ForbiddenError, RateLimitError, UnauthorizedError, ValidationError } from '../lib/errors.js';
 import { hashPassword, verifyPassword, sha256Hex } from '../lib/hash.js';
 import { sign, verify, InvalidSignatureError } from '../lib/signing.js';

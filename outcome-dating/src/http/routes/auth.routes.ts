@@ -35,6 +35,10 @@ const ForgotPasswordBodySchema = z.object({ email: z.string() });
 const ResetPasswordBodySchema = z.object({ resetToken: z.string(), newPassword: z.string() });
 const VerifyEmailBodySchema = z.object({ token: z.string() });
 
+// Optional phone number (build correction — see auth.service.ts module doc).
+const RequestPhoneBodySchema = z.object({ phoneNumber: z.string(), country: z.string() });
+const VerifyPhoneBodySchema = z.object({ code: z.string() });
+
 export function registerAuthRoutes(app: FastifyInstance, deps: AppDeps, limiter: InMemoryRateLimiter): void {
   // §19.2 device/network-abuse rate limiting on the three endpoints most
   // valuable to a bot: credential stuffing, account-creation spam, and
@@ -115,5 +119,41 @@ export function registerAuthRoutes(app: FastifyInstance, deps: AppDeps, limiter:
     const body = parseOrThrow(VerifyEmailBodySchema, req.body);
     await authService.verifyEmail(systemCtx(deps, 'http.auth.verify_email'), { token: body.token });
     reply.status(204).send();
+  });
+
+  // ---- Optional phone number (build correction — never mandatory; see
+  // auth.service.ts module doc). All four require an authenticated user —
+  // a phone is something a logged-in account manages, never a registration
+  // input. Responses are built inline here rather than through
+  // `src/http/serializers/*` — `getMyPhoneStatus` already returns a masked,
+  // owner-only view (never the full E.164 number, see its own doc), so
+  // there is nothing left for a serializer layer to strip. ----
+  app.post('/auth/phone', { preHandler: authenticate(deps) }, async (req, reply) => {
+    const body = parseOrThrow(RequestPhoneBodySchema, req.body);
+    await authService.requestPhoneVerification(req.ctx!, { phoneNumber: body.phoneNumber, country: body.country });
+    reply.status(202).send({ status: 'ok' });
+  });
+
+  app.post('/auth/phone/verify', { preHandler: authenticate(deps) }, async (req, reply) => {
+    const body = parseOrThrow(VerifyPhoneBodySchema, req.body);
+    await authService.verifyPhone(req.ctx!, { code: body.code });
+    reply.status(204).send();
+  });
+
+  app.delete('/auth/phone', { preHandler: authenticate(deps) }, async (req, reply) => {
+    await authService.removePhone(req.ctx!);
+    reply.status(204).send();
+  });
+
+  app.get('/auth/phone', { preHandler: authenticate(deps) }, async (req, reply) => {
+    const status = await authService.getMyPhoneStatus(req.ctx!);
+    reply.send({
+      hasPhone: status.hasPhone,
+      verified: status.verified,
+      countryCode: status.countryCode,
+      last2: status.last2,
+      addedAt: status.addedAt ? status.addedAt.toISOString() : null,
+      verifiedAt: status.verifiedAt ? status.verifiedAt.toISOString() : null,
+    });
   });
 }

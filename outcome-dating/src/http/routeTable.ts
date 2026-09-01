@@ -30,6 +30,11 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'POST', path: '/auth/reset-password', spec: '§24.1', role: 'public' },
   { method: 'POST', path: '/auth/verify-email', spec: '§6.2 (auth.service addition)', role: 'public', addition: true },
   { method: 'POST', path: '/auth/resend-verification', spec: '§6.2 (auth.service addition)', role: 'user', addition: true },
+  // Optional phone number (build correction — never mandatory; auth.service addition).
+  { method: 'POST', path: '/auth/phone', spec: '§5.2/§5.3 (auth.service addition)', role: 'user', addition: true },
+  { method: 'POST', path: '/auth/phone/verify', spec: '§5.2/§5.3 (auth.service addition)', role: 'user', addition: true },
+  { method: 'DELETE', path: '/auth/phone', spec: '§5.2/§5.3 (auth.service addition)', role: 'user', addition: true },
+  { method: 'GET', path: '/auth/phone', spec: '§5.2/§5.3 (auth.service addition)', role: 'user', addition: true },
 
   // ---- §24.2 Profile ----
   { method: 'GET', path: '/me', spec: '§24.2', role: 'user' },
