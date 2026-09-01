@@ -30,6 +30,7 @@ import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { writeAdminAudit } from '../audit.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
+import { serializeAdminQuestion } from '../serializers/questions.js';
 
 const VenueCategorySchema = z.enum([
   'coffee', 'dessert', 'drinks', 'walk', 'museum', 'arcade', 'live_music', 'comedy', 'class_activity', 'food_market',
@@ -47,19 +48,16 @@ const CreateVenueBodySchema = z.object({
 });
 const UpdateVenueBodySchema = CreateVenueBodySchema.partial().extend({ active: z.boolean().optional() });
 
-const CreateQuestionBodySchema = z.object({
-  slug: z.string(),
-  category: z.string(),
-  questionText: z.string(),
-  selfLeftLabel: z.string(),
-  selfRightLabel: z.string(),
-  partnerLeftLabel: z.string(),
-  partnerRightLabel: z.string(),
-  weight: z.number(),
-  polarity: z.enum(['standard', 'reversed']),
-  sensitive: z.boolean(),
-});
-const UpdateQuestionBodySchema = CreateQuestionBodySchema.partial().extend({ active: z.boolean().optional() });
+// §27 item 3 (question manager) body shapes: src/services/question.service.ts
+// `CreateQuestionBankInput` / `UpdateQuestionBankInput` — the ONE typed
+// question bank (question_bank/user_question_answers) per the
+// question-system cutover (see that file's file-level CUTOVER doc). Full
+// shape validation (including the discriminated-union `typeDef` per
+// question type, and the "no section mark in user-visible text" guard) is
+// the SERVICE's job, not this route layer's — same "route layer only
+// handles params/query, the service validates the body" pattern
+// `src/http/routes/questions.routes.ts` already uses for `PUT /me/answers`.
+const ListQuestionBankQuerySchema = z.object({ includeInactive: z.coerce.boolean().optional() });
 
 const SetConfigBodySchema = z.object({ key: z.string(), value: z.unknown() });
 const SetFlagBodySchema = z.object({

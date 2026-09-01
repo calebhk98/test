@@ -60,6 +60,52 @@ export function serializeQuestionBankPage(page: QuestionBankPage): QuestionBankP
   return { items: page.items.map(serializeQuestionCard), nextCursor: page.nextCursor };
 }
 
+// =====================================================================
+// Admin question-manager view (§27 item 3) — repointed to the ONE typed
+// question bank per the question-system cutover (see
+// src/services/question.service.ts's file-level CUTOVER doc). Unlike
+// `QuestionCardView` (the end-user-facing card, which deliberately
+// withholds `baseWeight`/`answerRateHint`/`active`), an admin managing the
+// bank needs the FULL definition — including versioning, active state,
+// and the scoring-tuning fields end users never see — so this is a
+// separate, deliberately wider, allowlist rather than reusing
+// `QuestionCardView`.
+// =====================================================================
+
+export interface AdminQuestionView {
+  id: string;
+  slug: string;
+  version: number;
+  category: string;
+  subcategory: string | null;
+  tags: string[];
+  questionText: string;
+  typeDef: QuestionDefinition['typeDef'];
+  presentation: QuestionDefinition['presentation'];
+  baseWeight: number;
+  sensitive: boolean;
+  active: boolean;
+  answerRateHint: number;
+}
+
+export function serializeAdminQuestion(q: QuestionDefinition): AdminQuestionView {
+  return {
+    id: q.id,
+    slug: q.slug,
+    version: q.version,
+    category: q.category,
+    subcategory: q.subcategory,
+    tags: q.tags,
+    questionText: q.questionText,
+    typeDef: q.typeDef,
+    presentation: q.presentation,
+    baseWeight: q.baseWeight,
+    sensitive: q.sensitive,
+    active: q.active,
+    answerRateHint: q.answerRateHint,
+  };
+}
+
 export interface MyAnswerView {
   questionSlug: string;
   status: QuestionAnswerRecord['status'];

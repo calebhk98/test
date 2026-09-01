@@ -49,6 +49,10 @@ test('every RETENTION_POLICIES entry carries a written-down reasoning (no policy
   }
 });
 
+test('RETENTION_POLICIES count matches docs/retention.md\'s "Enforced policies" table row count — keeps the code and the privacy-review doc from silently drifting apart', () => {
+  assert.equal(RETENTION_POLICIES.length, 12);
+});
+
 // -------------------------------------------------------------------------
 // Boundary correctness — one representative delete policy, one anonymize
 // policy, each with a row just inside the window (must survive) and one
