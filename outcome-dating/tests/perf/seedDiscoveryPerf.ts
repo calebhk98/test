@@ -43,6 +43,19 @@ function pick<T>(rng: () => number, arr: readonly T[]): T {
   return arr[Math.floor(rng() * arr.length)]!;
 }
 
+/**
+ * Real cities are not uniformly sized — and the benchmark needs at least
+ * one metro dense enough, on its own, to exceed
+ * `filter.service#DASHBOARD_SCAN_CAP` (so the reality dashboard's
+ * truncation/estimation path is actually exercised, not just its exact
+ * below-the-cap path). New York gets roughly half of every seeded user;
+ * the rest split the other five cities.
+ */
+function pickCity(rng: () => number): City {
+  if (rng() < 0.5) return CITIES[0]!; // New York
+  return pick(rng, CITIES.slice(1));
+}
+
 /** Deterministic, seedable PRNG (mulberry32) — reproducible benchmark runs across machines/CI, no external dependency. */
 function mulberry32(seed: number): () => number {
   let a = seed;
@@ -120,7 +133,7 @@ export async function seedDiscoveryPerfData(
 
     for (let i = 0; i < n; i++) {
       const id = randomUUID();
-      const city = pick(rng, CITIES);
+      const city = pickCity(rng);
       const lat = jitter(rng, city.lat, 0.9); // up to ~100km spread within/around the metro
       const lon = jitter(rng, city.lon, 0.9);
       userIds.push(id);
