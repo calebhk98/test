@@ -3,7 +3,7 @@ import { createHmac, timingSafeEqual } from 'node:crypto';
 /**
  * A small HMAC-SHA256 "compact token" format shared by:
  *  - auth access/refresh tokens (spec §24.1, §28.2), and
- *  - the voucher QR payload (spec §15.2 — "signed JWT or similar signed token").
+ *  - the voucher QR payload (spec §15.2, "signed JWT or similar signed token").
  *
  * We deliberately do NOT pull in a JWT library: the spec only requires a
  * *signed* token, and a minimal `base64url(json).base64url(hmac)` format
@@ -45,7 +45,7 @@ export class InvalidSignatureError extends Error {
 
 /**
  * Verify and decode a compact token produced by `sign`. Throws
- * `InvalidSignatureError` on any structural or signature mismatch — callers
+ * `InvalidSignatureError` on any structural or signature mismatch, callers
  * should catch and translate to `UnauthorizedError` (auth tokens) or a
  * voucher-specific rejection, as appropriate for their context.
  */

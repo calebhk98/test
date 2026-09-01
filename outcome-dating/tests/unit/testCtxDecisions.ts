@@ -2,7 +2,7 @@
  * Shared test scaffolding for the decision-layer's own unit tests
  * (venue settlement, no_show/disputed automated resolution, and the
  * misc config/threshold decisions). Mirrors `tests/unit/testHarness.ts`'s
- * shape (Agent D's dateProposal/payment/voucher harness) — each test FILE
+ * shape (Agent D's dateProposal/payment/voucher harness), each test FILE
  * gets its own dedicated Postgres database, created fresh in `before` and
  * dropped in `after`, namespaced under `odate_decisions_*` per the task's
  * "use your own database" instruction (this harness is NOT
@@ -24,7 +24,7 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item). */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item). */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {

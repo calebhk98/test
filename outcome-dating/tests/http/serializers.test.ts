@@ -1,5 +1,5 @@
 /**
- * Serializer-level privacy-invariant tests — one per invariant named in the
+ * Serializer-level privacy-invariant tests, one per invariant named in the
  * task brief: no exact coordinates (§7.1/§28.5), no card numbers (§28.4),
  * no reporter identity ever (§30.9), no raw trust weights (§6.3), no like
  * counts/popularity/boost fields (§10.1). Each test asserts on the actual

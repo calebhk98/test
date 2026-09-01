@@ -1,9 +1,9 @@
 /**
- * tests/http/admin.test.ts — HTTP coverage for `src/http/routes/admin.routes.ts`'s
+ * tests/http/admin.test.ts, HTTP coverage for `src/http/routes/admin.routes.ts`'s
  * §27 item 3 question manager (`GET/POST /admin/questions`,
  * `PATCH /admin/questions/:id`), repointed at the ONE typed question bank
  * (question_bank/user_question_answers, db/migrations/008_questions.sql)
- * per the question-system cutover — see question.service.ts's file-level
+ * per the question-system cutover, see question.service.ts's file-level
  * CUTOVER doc.
  *
  * Uses the shared `tests/http/testServer.ts` harness (same
@@ -15,7 +15,7 @@
  *   - an admin can create a question with the typed bank's full shape
  *     (type, options/typeDef, category/tags, sensitivity, baseWeight) and
  *     it is immediately visible via the ONE bank a user actually answers
- *     (`GET /questions`) — the headline proof that this panel no longer
+ *     (`GET /questions`), the headline proof that this panel no longer
  *     grows a second, unscored bank.
  *   - editing a question inserts a NEW version rather than mutating in
  *     place (question_bank's versioning invariant), and the OLD version
@@ -127,13 +127,13 @@ test('POST /admin/questions: creates a question in the ONE typed bank, and it is
   assert.equal(created.sensitive, true);
   assert.equal(created.baseWeight, 1);
   // Internal scoring-tuning fields end users never see are absent from
-  // the CLIENT-facing question card, but present in the admin view —
+  // the CLIENT-facing question card, but present in the admin view,
   // sanity-check the admin view actually carries them (see
   // serializers/questions.ts's AdminQuestionView vs QuestionCardView).
   assert.deepEqual(created.typeDef, SCALE_TYPE_DEF);
 
   // The user-facing route (`GET /questions`, driven by
-  // `question.service#listActiveQuestionBank`) must see it too — same
+  // `question.service#listActiveQuestionBank`) must see it too, same
   // bank, not a shadow copy.
   const user = await registerUser(t);
   const listRes = await t.app.inject({ method: 'GET', url: '/questions?limit=200', headers: authHeader(user.accessToken) });
@@ -162,12 +162,12 @@ test('POST /admin/questions: every field the typed bank needs (type, options, im
   assert.equal(createRes.statusCode, 201);
   const created = JSON.parse(createRes.body) as { typeDef: unknown; presentation: string };
   assert.deepEqual(created.typeDef, typeDef);
-  // A two-option single_choice question must be flagged `ladder` — the
+  // A two-option single_choice question must be flagged `ladder`, the
   // client-rendering signal a client must never infer itself.
   assert.equal(created.presentation, 'ladder');
 });
 
-test('POST /admin/questions: a duplicate slug is rejected (409) — an admin cannot recreate the same concept under a second definition', async () => {
+test('POST /admin/questions: a duplicate slug is rejected (409), an admin cannot recreate the same concept under a second definition', async () => {
   const admin = await makeAdminUser();
   const slug = `admin_dup_${Date.now()}`;
 
@@ -217,7 +217,7 @@ test('PATCH /admin/questions/:id: editing a question inserts a NEW version and r
   assert.notEqual(updated.id, created.id, 'a new version is a NEW row, not the same row mutated in place');
   assert.equal(updated.questionText, 'Revised wording');
 
-  // Only the new version is "current" — GET /admin/questions (default:
+  // Only the new version is "current", GET /admin/questions (default:
   // includeInactive so retired/older rows are still visible to an admin)
   // must show the revised text under this slug exactly once, not twice.
   const listRes = await t.app.inject({ method: 'GET', url: '/admin/questions', headers: authHeader(admin.accessToken) });

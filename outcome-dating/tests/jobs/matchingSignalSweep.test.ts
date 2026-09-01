@@ -1,5 +1,5 @@
 /**
- * `matching_signal_sweep` job — thin wrapper around
+ * `matching_signal_sweep` job, thin wrapper around
  * `postDateFeedback.service#runMatchingSignalSweep`. Full divergence-math
  * / suggestion-creation coverage lives in
  * `tests/unit/postDateFeedback.test.ts` (owned elsewhere); this file
@@ -26,7 +26,7 @@ after(async () => {
   await teardownTestDb(db);
 });
 
-/** `userId` gets 3 `happened_good` post_date_feedback rows against 3 distinct partners/proposals — enough to clear MIN_GOOD_DATES_FOR_MATCHING_SIGNAL. */
+/** `userId` gets 3 `happened_good` post_date_feedback rows against 3 distinct partners/proposals, enough to clear MIN_GOOD_DATES_FOR_MATCHING_SIGNAL. */
 async function insertGoodDateHistory(userId: string, count = 3): Promise<void> {
   const venueId = await createVenue(db);
   const now = db.clock.now();

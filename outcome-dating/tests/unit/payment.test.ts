@@ -37,7 +37,7 @@ after(async () => {
 
 async function proposalId(): Promise<string> {
   // date_proposals rows are owned by dateProposal.service in production,
-  // but payment_holds only foreign-keys to date_proposals.id — insert a
+  // but payment_holds only foreign-keys to date_proposals.id, insert a
   // minimal row directly so these tests can stay focused on the payment
   // lifecycle without depending on dateProposal.service's own logic.
   const proposerId = await createUser(db);
@@ -104,7 +104,7 @@ test('authorizeHold: no payment method on file fails without calling the process
   assert.equal(hold.failureReason, 'no_payment_method');
 });
 
-test('authorizeHold: idempotent on retry — does not re-call the processor or duplicate the ledger entry', async () => {
+test('authorizeHold: idempotent on retry, does not re-call the processor or duplicate the ledger entry', async () => {
   const dpId = await proposalId();
   const userId = await createUser(db);
   await createPaymentMethod(db, userId, 'tok_good');
@@ -168,7 +168,7 @@ test('captureHold: processor decline leaves the hold failed with an audit-trail 
   assert.equal(captureEntries[0]!.amountCents, 0, 'a failed capture moved no money, so the audit entry records 0 cents');
 });
 
-test('captureHold: REPLAYED capture is idempotent — no double charge, exactly one ledger row', async () => {
+test('captureHold: REPLAYED capture is idempotent, no double charge, exactly one ledger row', async () => {
   const dpId = await proposalId();
   const userId = await createUser(db);
   await createPaymentMethod(db, userId, 'tok_good');
@@ -179,8 +179,8 @@ test('captureHold: REPLAYED capture is idempotent — no double charge, exactly 
   const first = await paymentService.captureHold(ctx, authorized.id);
   assert.equal(first.status, 'captured');
 
-  // Simulate a replayed capture — e.g. a retried request or a duplicated
-  // webhook-triggered call — hitting the exact same hold id again.
+  // Simulate a replayed capture, e.g. a retried request or a duplicated
+  // webhook-triggered call, hitting the exact same hold id again.
   const second = await paymentService.captureHold(ctx, authorized.id);
   assert.equal(second.status, 'captured');
   assert.equal(second.capturedAt?.getTime(), first.capturedAt?.getTime());
@@ -245,7 +245,7 @@ test('refundHold: full refund transitions the hold to refunded', async () => {
   assert.equal(refundEntries[0]!.amountCents, 2000);
 });
 
-test('refundHold: cumulative partial refunds — repeating the same partial amount is idempotent, a larger target refunds only the delta', async () => {
+test('refundHold: cumulative partial refunds, repeating the same partial amount is idempotent, a larger target refunds only the delta', async () => {
   const dpId = await proposalId();
   const userId = await createUser(db);
   await createPaymentMethod(db, userId, 'tok_good');
@@ -304,7 +304,7 @@ test('handleProcessorWebhook: a replayed webhook event does not double-record', 
   assert.equal(captureEntries.length, 1, 'a replayed webhook must not write a second ledger row');
 });
 
-test('ledger: insert-only API surface — no update/delete function is exported', () => {
+test('ledger: insert-only API surface, no update/delete function is exported', () => {
   const exported = ledgerService as unknown as Record<string, unknown>;
   assert.equal(typeof exported['updateEntry'], 'undefined');
   assert.equal(typeof exported['deleteEntry'], 'undefined');

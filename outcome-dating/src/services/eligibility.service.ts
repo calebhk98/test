@@ -2,19 +2,19 @@ import type { Ctx } from '../lib/ctx.js';
 import { passesMutualFilters } from './filter.service.js';
 
 /**
- * eligibility.service — the ONE shared mutual-eligibility evaluation
+ * eligibility.service, the ONE shared mutual-eligibility evaluation
  * every enforcement layer calls, so the two guarantees the product owner
  * actually asked for (never let a doomed interest be SENT; if one slips
  * through anyway, REFUSE it) can never drift out of sync with each other
  * or with what discovery already does.
  *
  * Spec: §9 (filters), §9.4 (mutual filter requirement), §11 (interests).
- * This build's addition — no single spec section, product-owner request
+ * This build's addition, no single spec section, product-owner request
  * from user testing (see the task brief this build implements).
  *
  * ---------------------------------------------------------------------
  * CORRECTION (product owner, after the original build shipped): the
- * original design had a THIRD, automatic layer — any time a recipient's
+ * original design had a THIRD, automatic layer, any time a recipient's
  * filters changed, every PENDING incoming interest their new filters now
  * excluded was retroactively auto-declined. That was wrong and has been
  * removed. People narrow and widen their filters for ordinary reasons
@@ -22,7 +22,7 @@ import { passesMutualFilters } from './filter.service.js';
  * changing a filter must never destroy a relationship or a pending like
  * that already exists. `interest.service.ts#previewFilterCleanup` /
  * `runFilterCleanup` still exist and still use this same evaluation, but
- * only as an action a user deliberately takes on their own inbox — never
+ * only as an action a user deliberately takes on their own inbox, never
  * as a side effect of saving a filter change, and never on a schedule.
  * See `interest.service.ts`'s file-level doc for the current shape.
  * ---------------------------------------------------------------------
@@ -31,27 +31,27 @@ import { passesMutualFilters } from './filter.service.js';
  *   1. Discovery (`discovery.service.ts`, owned by another agent, NOT
  *      modified by this build) already gates on
  *      `filter.service#passesMutualFilters` directly before a candidate
- *      is ever scored — this file wraps that exact same function rather
+ *      is ever scored, this file wraps that exact same function rather
  *      than reimplementing it, so Layer 1 and Layer 2 are provably the
  *      same check. See this build's report for the verification test
  *      (`tests/unit/eligibility.test.ts`) proving discovery's mutual
  *      exclusion holds both directions.
  *   2. `interest.service.ts#sendInterest` (Layer 2) calls
- *      `evaluateMutualEligibility` fresh — never from a cached discovery
- *      grid — immediately before creating the interest row, and refuses
+ *      `evaluateMutualEligibility` fresh, never from a cached discovery
+ *      grid, immediately before creating the interest row, and refuses
  *      the send (no row created, so no outgoing slot/daily-quota
  *      consumed) if the recipient's hard filters would exclude the
  *      sender, or vice versa.
  *
  * A user-invoked inbox cleanup (`interest.service.ts#previewFilterCleanup`
  * / `runFilterCleanup`) also calls this same function, on demand, against
- * that one user's own PENDING incoming interests — see that file. It is
+ * that one user's own PENDING incoming interests, see that file. It is
  * never called automatically from a filter update or from any job.
  *
  * WHY THIS WRAPS `filter.service#passesMutualFilters` RATHER THAN
  * `discovery.service#isProfileVisibleTo`: the latter also folds in
  * capacity limits, moderation visibility, and blocking (§10.2's full
- * nine-point list) — genuinely relevant to whether a candidate is SHOWN,
+ * nine-point list), genuinely relevant to whether a candidate is SHOWN,
  * but not what "would this recipient's own stated deal breakers
  * auto-decline this interest" means. A momentarily-full inbox or an
  * account mid-shadowban-review is not a filter mismatch, and conflating
@@ -60,26 +60,26 @@ import { passesMutualFilters } from './filter.service.js';
  * prevent, and (b) auto-decline pending interests in Layer 3 every time
  * unrelated capacity/moderation state fluctuates, which is not what "your
  * filters changed" means. `sendInterest` already separately enforces the
- * capacity rules (outgoing/incoming/daily caps) — see that file.
+ * capacity rules (outgoing/incoming/daily caps), see that file.
  *
  * CANDIDATE ATTRIBUTE SOURCING / PREFERENCE-MODEL INDEPENDENCE: this
  * function evaluates the durable, enforced `hard_filters` ROWS via
- * `passesMutualFilters` — never raw `answers`/preference rows directly.
+ * `passesMutualFilters`, never raw `answers`/preference rows directly.
  * A concurrent build is replacing how a preference is captured (a VALUE
  * plus an IMPORTANCE, `irrelevant` … `deal_breaker`, with a
  * `deal_breaker` importance deriving a `hard_filters` row). This file
  * makes no assumption about that capture step at all: as long as a
  * deal-breaker preference continues to derive a row in `hard_filters`
  * with the existing `{user_id, filter_key, operator, value, enabled,
- * exclude_if_unset}` shape — which is `filter.service.ts`'s documented
- * contract, unchanged by this build — mutual-eligibility enforcement
+ * exclude_if_unset}` shape, which is `filter.service.ts`'s documented
+ * contract, unchanged by this build, mutual-eligibility enforcement
  * keeps working with zero changes here, regardless of how many more ways
  * preferences get captured upstream of that row.
  */
 
 /**
  * Result of one fresh mutual-eligibility evaluation between two users.
- * Deliberately just a boolean plus a diagnostic flag — never *which*
+ * Deliberately just a boolean plus a diagnostic flag, never *which*
  * filter/attribute caused a `false`, so nothing downstream can leak that
  * even if it tried (see `interest.service.ts`'s refusal-copy handling,
  * which never even receives more than this).
@@ -90,7 +90,7 @@ export interface EligibilityResult {
   /**
    * False only when the underlying evaluation itself threw (a transient
    * DB/query error, not "the check ran and said no"). Callers use this to
-   * log/alert without changing the fail-open outcome — see this
+   * log/alert without changing the fail-open outcome, see this
    * function's own doc for the fail-open reasoning. `eligible` is always
    * `true` when `evaluatedOk` is `false`.
    */
@@ -99,7 +99,7 @@ export interface EligibilityResult {
 
 /**
  * Fresh, uncached §9.4 mutual-filter evaluation between `userId` and
- * `candidateId` — always re-reads `hard_filters` (via
+ * `candidateId`, always re-reads `hard_filters` (via
  * `filter.service#passesMutualFilters`) at call time. Never accepts or
  * consults a cached discovery grid, snapshot, or prior result: the whole
  * point of Layers 2/3 is to catch cases where a stale grid, a direct
@@ -107,7 +107,7 @@ export interface EligibilityResult {
  * interest through.
  *
  * ---------------------------------------------------------------------
- * FAIL-OPEN DECISION (deliberate, not an oversight — task brief asks for
+ * FAIL-OPEN DECISION (deliberate, not an oversight, task brief asks for
  * this to be documented):
  * ---------------------------------------------------------------------
  * If `passesMutualFilters` throws, this function returns
@@ -116,7 +116,7 @@ export interface EligibilityResult {
  *
  *   - A false REFUSAL at send time (treating an evaluation error as
  *     "ineligible") silently blocks a legitimate interest behind the
- *     exact same generic copy as a real filter mismatch — the sender has
+ *     exact same generic copy as a real filter mismatch, the sender has
  *     no way to tell a transient bug from a real deal-breaker, and no
  *     recourse. That is a worse outcome than the interest going through.
  *   - A false ALLOW is not a permanent hole: the user-invoked cleanup
@@ -125,10 +125,10 @@ export interface EligibilityResult {
  *     against their current filters, safe to re-run, and re-evaluates
  *     every PENDING interest's eligibility again on demand. A doomed
  *     interest that slipped past Layer 2 only because of a transient
- *     evaluation error can be caught that way — with the sender's slot
+ *     evaluation error can be caught that way, with the sender's slot
  *     freed and (per `interest.service.ts`'s `decline_origin = 'auto'`)
  *     zero trust impact, exactly as if Layer 2 had caught it in the first
- *     place — but only if and when the recipient chooses to run it. This
+ *     place, but only if and when the recipient chooses to run it. This
  *     function does not, on its own, guarantee such a row is ever
  *     revisited; that tradeoff (a possibly-doomed interest sits pending,
  *     visible to its recipient, until they act) is the deliberate result
@@ -136,15 +136,15 @@ export interface EligibilityResult {
  *     that silently blocks or destroys a legitimate interest is worse
  *     than one sitting pending a little longer.
  *   - This mirrors the codebase's existing posture elsewhere (e.g.
- *     `filter.service.ts`'s `excludeIfUnset` defaulting `false` — "don't
- *     silently vanish a legitimate user" — for optional fields) of
+ *     `filter.service.ts`'s `excludeIfUnset` defaulting `false`, "don't
+ *     silently vanish a legitimate user", for optional fields) of
  *     preferring to leave things alone on a hiccup over a first layer
  *     that blocks everything on any hiccup.
  *
  * Fail-CLOSED (treating an error as ineligible) would be the wrong
  * default here regardless: it would silently block a legitimate sender
  * behind the exact same generic copy as a real filter mismatch, with no
- * recourse — worse than leaving the pair to resolve normally.
+ * recourse, worse than leaving the pair to resolve normally.
  */
 export async function evaluateMutualEligibility(
   ctx: Ctx,

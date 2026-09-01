@@ -70,7 +70,7 @@ test('issueVoucher: creates a voucher with a signed QR payload matching §15.2 e
   assert.ok(!/card|last4|token/i.test(serialized), 'no payment card data should ever appear in the QR payload');
 });
 
-test('issueVoucher: idempotent — a second call for the same date proposal returns the same voucher', async () => {
+test('issueVoucher: idempotent, a second call for the same date proposal returns the same voucher', async () => {
   const proposal = await ticketedProposal();
   const ctx = makeCtx(db, systemActor());
 
@@ -89,7 +89,7 @@ test('verifyQrPayload: a tampered payload is rejected', async () => {
   const voucher = await voucherService.issueVoucher(ctx, proposal.id);
 
   const [payloadPart, sigPart] = voucher.qrPayload.split('.');
-  // Flip the decoded payload's voucher_id but keep the original signature —
+  // Flip the decoded payload's voucher_id but keep the original signature,
   // a forged/tampered token.
   const decodedPayload = JSON.parse(Buffer.from(payloadPart!, 'base64url').toString('utf8'));
   decodedPayload.voucher_id = 'attacker-controlled-id';
@@ -158,7 +158,7 @@ test('cancelVoucher: cancels an issued voucher; rejects canceling an already-red
   await assert.rejects(() => voucherService.cancelVoucher(ctx, voucher2.id), ConflictError);
 });
 
-test('getVoucher / listMyVouchers: access control — a non-participant cannot view the voucher, participants can', async () => {
+test('getVoucher / listMyVouchers: access control, a non-participant cannot view the voucher, participants can', async () => {
   const proposal = await ticketedProposal();
   const systemCtx = makeCtx(db, systemActor());
   const voucher = await voucherService.issueVoucher(systemCtx, proposal.id);

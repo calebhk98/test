@@ -10,7 +10,7 @@ import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
 
-/** §30.1 exact static copy for an empty discovery grid — never generated, always this string. */
+/** §30.1 exact static copy for an empty discovery grid, never generated, always this string. */
 export const NO_CANDIDATES_MESSAGE = 'No candidates currently match your filters. Try widening distance or age range.';
 
 const ReportCategorySchema = z.enum([
@@ -68,7 +68,7 @@ export function registerDiscoveryRoutes(app: FastifyInstance, deps: AppDeps): vo
     const body = parseOrThrow(ReportBodySchema, req.body);
     const report = await reportService.submitReport(req.ctx!, { reportedId: userId, ...body });
     // §30.9: the reporter's own confirmation of THEIR OWN report obviously
-    // includes their own id (they already know it) — but never anything
+    // includes their own id (they already know it), but never anything
     // about how it will read to the reported user, and no other route ever
     // echoes `reporterId` back to anyone else. See reports.routes.ts.
     reply.status(201).send(report);

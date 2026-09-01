@@ -1,19 +1,19 @@
 /**
- * src/jobs/scheduler.ts — a small in-process scheduler (no Redis/queue,
+ * src/jobs/scheduler.ts, a small in-process scheduler (no Redis/queue,
  * per INTERFACES.md's "no Redis" simplification), with a clean seam for a
  * real queue later: every job is already a plain `(ctx: Ctx) => Promise<T>`
  * (see `src/jobs/types.ts`), so swapping this class for e.g. a BullMQ
  * worker is a matter of re-wiring `JobScheduler#start`'s `setInterval` to
- * a queue consumer — no job body changes.
+ * a queue consumer, no job body changes.
  *
  * CONCURRENCY SAFETY: each job run is wrapped in a Postgres advisory lock
  * (`pg_try_advisory_lock`), keyed by a hash of the job name. This makes a
  * run safe against BOTH (a) this process's own interval firing again
  * before the previous run finished, and (b) a second process (e.g. a
  * `jobs:start` daemon plus a one-off `jobs:run` CLI invocation, or two
- * horizontally-scaled instances) racing the same job — a run that can't
+ * horizontally-scaled instances) racing the same job, a run that can't
  * acquire the lock is skipped, not queued or retried, since every job body
- * is itself idempotent (status-guarded UPDATEs — see each `src/jobs/*.job.ts`
+ * is itself idempotent (status-guarded UPDATEs, see each `src/jobs/*.job.ts`
  * file's doc) and will simply pick up whatever's still due on its next
  * scheduled tick.
  */

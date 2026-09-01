@@ -11,12 +11,12 @@
 -- window somewhere between 3,000 and 10,000 active users, and the table
 -- itself is estimated at ~175TB at a million users.
 --
--- THE FIX (application-layer half lives in compatibility.service.ts — this
+-- THE FIX (application-layer half lives in compatibility.service.ts, this
 -- migration is the schema half it depends on): materialize scores only for
 -- pairs that are geographically plausible AND recently active, reusing the
 -- same bounding-box idea `filter.service.ts#boundingBoxForRadius` already
 -- established for discovery (see that module's own `017_discovery_perf.sql`
--- migration for the fuller rationale — this one does not repeat it). The
+-- migration for the fuller rationale, this one does not repeat it). The
 -- geo self-join in `compatibility.service.ts` is written as a single
 -- LATERAL query against `users`/`profiles` directly, so it already benefits
 -- from `idx_profiles_lat_lon` and `idx_users_status_last_active`
@@ -27,7 +27,7 @@
 -- now a real, per-run query pattern, not a one-off. Every existing index on
 -- `compatibility_scores` is keyed by `user_id` first (the PK `(user_id,
 -- candidate_id)`, and `idx_compatibility_scores_user_score (user_id, score
--- DESC)`) — there has never been an index usable for "which rows mention
+-- DESC)`), there has never been an index usable for "which rows mention
 -- this id as the *candidate*", which the eviction delete needs (a
 -- since-materialized-but-now-ineligible user must be purged regardless of
 -- which column they show up in, because every pair is stored in both

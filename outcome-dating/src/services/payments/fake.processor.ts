@@ -24,7 +24,7 @@ import type {
  *   contains "fail_capture"    -> authorize() succeeds, capture() fails
  *   anything else              -> succeeds at every step
  *
- * State lives in a `Map` on the instance — one `FakeProcessor` instance is
+ * State lives in a `Map` on the instance, one `FakeProcessor` instance is
  * one isolated "processor account". Tests that need isolation should
  * construct a fresh instance rather than sharing a singleton.
  */

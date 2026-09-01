@@ -15,7 +15,7 @@
  * plumbing.
  *
  * Field names are camelCase; DB columns are snake_case. Money is always
- * `*Cents: number` (bigint minor units — see INTERFACES.md invariant).
+ * `*Cents: number` (bigint minor units, see INTERFACES.md invariant).
  * Ids are plain `string` (uuid).
  */
 
@@ -41,7 +41,7 @@ export interface User {
   lastActiveAt: Date;
 }
 
-/** Public-safe user summary — never includes email/passwordHash. */
+/** Public-safe user summary, never includes email/passwordHash. */
 export interface PublicUserSummary {
   id: string;
   displayName: string;
@@ -62,7 +62,7 @@ export interface AccessTokenPayload {
 export interface RefreshTokenPayload {
   sub: string; // userId
   kind: 'refresh';
-  /** Refresh token family/session id — rotating a refresh token keeps this the same so reuse-after-rotation is detectable. */
+  /** Refresh token family/session id, rotating a refresh token keeps this the same so reuse-after-rotation is detectable. */
   sessionId: string;
   iat: number;
   exp: number;
@@ -84,7 +84,7 @@ export interface Profile {
   displayName: string;
   bio: string;
   city: string | null;
-  /** True coordinates. Never sent to other users directly — see `toApproximateDistanceKm`. */
+  /** True coordinates. Never sent to other users directly, see `toApproximateDistanceKm`. */
   latitude: number | null;
   longitude: number | null;
   locationFuzzed: boolean;
@@ -132,7 +132,7 @@ export interface PhotoRecommendation {
   photoId: string;
   currentPosition: number;
   recommendedPosition: number;
-  /** e.g. "42% more accepted matches" (spec §7.3 example copy — static template, not generated). */
+  /** e.g. "42% more accepted matches" (spec §7.3 example copy, static template, not generated). */
   acceptedInterestLiftPercent: number;
 }
 
@@ -201,7 +201,7 @@ export interface HardFilter {
   userId: string;
   filterKey: string;
   operator: FilterOperator;
-  value: unknown; // number | string | array — shape depends on filterKey
+  value: unknown; // number | string | array, shape depends on filterKey
   enabled: boolean;
   updatedAt: Date;
 }
@@ -253,9 +253,9 @@ export interface CompatibilityScoreRow {
 export interface BehavioralPromptSuggestion {
   id: string;
   userId: string;
-  /** The question this behavior pattern suggests asking — MUST be presented, never auto-answered (§17 rule 1). */
+  /** The question this behavior pattern suggests asking, MUST be presented, never auto-answered (§17 rule 1). */
   questionId: string;
-  /** e.g. "tag" | "category" — what pattern triggered the suggestion, for the static template copy. */
+  /** e.g. "tag" | "category", what pattern triggered the suggestion, for the static template copy. */
   triggerKind: string;
   triggerLabel: string;
   createdAt: Date;
@@ -380,7 +380,7 @@ export interface Notification {
   userId: string;
   eventType: NotificationEventType;
   channel: NotificationChannel;
-  /** Key into the static copy template table — NEVER generated text (spec §1, §20). */
+  /** Key into the static copy template table, NEVER generated text (spec §1, §20). */
   templateKey: string;
   payload: Record<string, unknown>;
   status: NotificationStatus;
@@ -436,11 +436,11 @@ export interface VenueStaffMember {
 }
 
 // =====================================================================
-// Venue settlements — decision-layer addition (see docs/conformance.md
+// Venue settlements, decision-layer addition (see docs/conformance.md
 // OQ-8, db/migrations/007_decisions.sql). §15.4 says an unverified date
 // "does not automatically settle venue payment" and §13.2/§23.16 give
 // every venue a `margin_percent`, but the original spec defines no payout
-// mechanism — this is it.
+// mechanism, this is it.
 // =====================================================================
 
 export type VenueSettlementStatus = 'settled' | 'failed';
@@ -455,7 +455,7 @@ export interface VenueSettlement {
   marginPercentApplied: number;
   /** `Math.floor(grossEscrowCents * marginPercentApplied / 100)`. */
   venuePayoutCents: number;
-  /** `grossEscrowCents - venuePayoutCents` — always exact: `venuePayoutCents + platformCents === grossEscrowCents`. */
+  /** `grossEscrowCents - venuePayoutCents`, always exact: `venuePayoutCents + platformCents === grossEscrowCents`. */
   platformCents: number;
   status: VenueSettlementStatus;
   /** Coarse settlement bucket, e.g. `"2026-01"` (UTC year-month at settlement time). */
@@ -566,7 +566,7 @@ export interface PaymentHold {
 
 /**
  * `venue_payout` is a decision-layer addition (see docs/conformance.md
- * OQ-8) — a venue settlement's payout to the venue itself, distinct from
+ * OQ-8), a venue settlement's payout to the venue itself, distinct from
  * the six user-facing types the original spec (§14.8) enumerates.
  */
 export type LedgerEntryType = 'authorization' | 'capture' | 'release' | 'refund' | 'dispute' | 'chargeback' | 'venue_payout';
@@ -574,7 +574,7 @@ export type LedgerEntryType = 'authorization' | 'capture' | 'release' | 'refund'
 export interface LedgerEntry {
   /**
    * Null only for `type: 'venue_payout'` rows, which pay a venue
-   * (`venueId`) rather than a user — every other entry type always carries
+   * (`venueId`) rather than a user, every other entry type always carries
    * a non-null `userId` and a null `venueId`, unchanged from the original
    * contract.
    */

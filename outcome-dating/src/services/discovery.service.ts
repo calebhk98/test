@@ -15,7 +15,7 @@ import * as photoExperiment from './photoExperiment.service.js';
 import { approximateDistanceBetween } from '../domain/units/distance.js';
 
 /**
- * discovery.service — the discovery grid, visibility rules, the §9.3
+ * discovery.service, the discovery grid, visibility rules, the §9.3
  * reality dashboard, and block/report entry points (both live under
  * `/profiles/{userId}/...` in §24.5, alongside discovery).
  * Spec: §10, §9.3, §24.5.
@@ -24,24 +24,24 @@ import { approximateDistanceBetween } from '../domain/units/distance.js';
  *
  * `getDiscoveryGrid` composes four other modules and MUST call them in
  * this order/role (see INTERFACES.md invariants table):
- *   1. `filter.service#passesMutualFilters` — hard gate, spec §9.1/§16.1.
+ *   1. `filter.service#passesMutualFilters`, hard gate, spec §9.1/§16.1.
  *   2. `moderation.service#isVisibleInDiscovery` (shadowban/suspension) and
  *      the capacity rules (§10.2 rules 5-6: incoming interest/active
- *      conversation caps) — also hard gates, not sorting.
- *   3. `compatibility.service#getScoresForCandidates` — sort key only
+ *      conversation caps), also hard gates, not sorting.
+ *   3. `compatibility.service#getScoresForCandidates`, sort key only
  *      (§10.3); MUST NOT remove anyone (§10.3 "No compatibility threshold
  *      hides users").
  *   4. Tie-break by trust score, profile completeness, recent activity,
  *      response rate (§10.3), in that order.
  *
  * Blocking is bidirectional for visibility purposes (spec §10.2 rule 9)
- * even though `blocks` rows are directional — `isEitherBlocked` checks
+ * even though `blocks` rows are directional, `isEitherBlocked` checks
  * both directions.
  *
  * CROSS-DOMAIN TABLE READS: this module reads `profiles`/`user_photos`/
  * `interests`/`conversations` directly via SQL rather than through a
  * service call. INTERFACES.md's "may call" column for `discovery.service`
- * is `filter, compatibility, trust, moderation, photoExperiment` — it does
+ * is `filter, compatibility, trust, moderation, photoExperiment`, it does
  * NOT list `interest`/`conversation`/`profile`, yet §10.2 rules 3-6 need
  * exactly that data (profile completeness, photo approval, pending-interest
  * count, active-conversation count) and no sanctioned service call exposes
@@ -50,20 +50,20 @@ import { approximateDistanceBetween } from '../domain/units/distance.js';
  * violation) match the pattern already established elsewhere in this
  * codebase (e.g. `compatibility.service` reading `answers`/`questions`
  * directly). "trust score" for the §10.3 tie-break is likewise read
- * directly from `users.trust_score` — `trust.service.ts` has no bulk/
+ * directly from `users.trust_score`, `trust.service.ts` has no bulk/
  * other-user read function to call instead (its exports are all
  * caller's-own-data: `getMyTrustSummary`, `recordTrustEvent`, ...).
  *
  * SIGNATURE ADDITION (flagged): this file calls
  * `question.service#resolveVisibleTagsFor` to populate
  * `DiscoveryCandidate.sharedInterestTag` (§10.1 "maybe one shared
- * interest") — see the "SIGNATURE ADDITION" note at the top of
+ * interest"), see the "SIGNATURE ADDITION" note at the top of
  * `question.service.ts` for why that function exists and why this edge
  * isn't in INTERFACES.md's authoritative call-graph diagram either.
  */
 
 // =====================================================================
-// Pure ranking (exported for direct unit testing without a DB — see
+// Pure ranking (exported for direct unit testing without a DB, see
 // tests/unit/discovery.test.ts).
 // =====================================================================
 
@@ -78,7 +78,7 @@ export interface DiscoveryRankingInput {
 /**
  * §10.3 sort: compatibility DESC, then trust score, profile completeness,
  * recent activity, response rate, all DESC, as tie-breakers in that order.
- * Pure and total — never removes an entry (§10.3/§16.1 "no compatibility
+ * Pure and total, never removes an entry (§10.3/§16.1 "no compatibility
  * threshold hides users": filtering happens upstream, in
  * `computeRankedCandidatePool`, before this function ever sees a
  * candidate). A candidate with `compatibilityScore === 0` sorts strictly
@@ -108,7 +108,7 @@ export function sortDiscoveryCandidates(inputs: DiscoveryRankingInput[]): Discov
 // config.service.ts` was outside this agent's file-ownership boundary
 // during the parallel build). It is now backed by the real
 // `discovery.min_profile_completeness` config key (default still `50`,
-// unchanged) — `loadCandidatePool`/`isProfileVisibleTo` read it from
+// unchanged), `loadCandidatePool`/`isProfileVisibleTo` read it from
 // `ctx.config`. This constant is kept, still equal to the config default,
 // only as a fallback for any call site that can't await `ctx.config`.
 // =====================================================================
@@ -122,7 +122,7 @@ const MAX_PAGE_LIMIT = 100;
  * ceiling on how many rows `loadCandidatePool` will ever pull back for one
  * request, regardless of how many people are geographically in range.
  * Several times `MAX_PAGE_LIMIT` so a request can still page a handful of
- * screens deep without hitting the wall, but not "the whole metro area" —
+ * screens deep without hitting the wall, but not "the whole metro area",
  * combined with the geographic bound (`filter.service#resolveGeoSearchContext`)
  * this is what makes `computeRankedCandidatePool`'s cost (queries AND
  * in-memory ranking work) bounded per request instead of O(eligible
@@ -130,7 +130,7 @@ const MAX_PAGE_LIMIT = 100;
  * `ORDER BY last_active_at DESC, id ASC LIMIT` this many, so when a
  * geographic pool exceeds the cap, the most-recently-active users are the
  * ones considered (a documented, intentional policy choice, not an
- * arbitrary truncation — see this build's report).
+ * arbitrary truncation, see this build's report).
  */
 export const MAX_CANDIDATE_POOL_SIZE = 500;
 
@@ -161,40 +161,40 @@ interface CandidatePoolRow {
   profile_completeness: number;
   primary_photo_id: string | null;
   primary_photo_url: string | null;
-  /** SAF-2 fix: this candidate's own opted-in distance-precision floor, if set — see `profile.service.ts#UpdateProfileInput.distancePrecisionFloorKm`. */
+  /** SAF-2 fix: this candidate's own opted-in distance-precision floor, if set, see `profile.service.ts#UpdateProfileInput.distancePrecisionFloorKm`. */
   distance_precision_floor_km: number | null;
 }
 
 /**
  * SCALE FIX (docs/scale-and-sources.md Part 1, §1.1.1/§1.1.4 fix #1 and
  * §1.9 fix #3): this used to be "every eligible user on the platform, no
- * `LIMIT`, no geography" — the single biggest scalability defect the
+ * `LIMIT`, no geography", the single biggest scalability defect the
  * review found, and the root cause of §1.1.2's per-candidate loop being
  * catastrophic (it had an unbounded pool to loop over). Now:
  *
  *   1. GEOGRAPHY FIRST: a lat/long bounding-box prefilter
  *      (`filter.service#resolveGeoSearchContext`/`boundingBoxForRadius`),
  *      sized from the viewer's own `distance_km` filter (or a documented
- *      default) — see that module's SCALE FIX doc for why a box, not a
+ *      default), see that module's SCALE FIX doc for why a box, not a
  *      new extension. When the viewer has no location on file, there is
  *      no box to build (nothing to be "near"), so this falls back to
- *      cap-only bounding — still never unbounded, see `MAX_CANDIDATE_POOL_SIZE`.
+ *      cap-only bounding, still never unbounded, see `MAX_CANDIDATE_POOL_SIZE`.
  *   2. Also moderation's rules 1-2 folded straight into the WHERE clause
  *      (`NOT u.shadowbanned AND NOT u.suspended`, on top of the existing
- *      `u.status = 'active'`) — this is EXACTLY what
+ *      `u.status = 'active'`), this is EXACTLY what
  *      `moderation.service#isVisibleInDiscovery` checks (same three
  *      columns, same logic), just evaluated once per row here instead of
  *      once per candidate in a follow-up query loop (§1.1.2's first
  *      per-candidate round trip, now gone).
  *   3. `ORDER BY last_active_at DESC, id ASC LIMIT MAX_CANDIDATE_POOL_SIZE`
- *      — the query itself, not application code, decides which rows are
+ * the query itself, not application code, decides which rows are
  *      even worth fetching once the (already geographically narrow) pool
  *      still exceeds the cap.
  *
- * None of this changes WHO is a legitimate candidate — the completeness/
+ * None of this changes WHO is a legitimate candidate, the completeness/
  * photo/block gates are untouched, and the geographic box is provably
  * never narrower than the viewer's own stated distance preference (see
- * `boundingBoxForRadius`'s doc) — it only changes how much work one
+ * `boundingBoxForRadius`'s doc), it only changes how much work one
  * request does to find them.
  */
 async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidatePoolRow[]> {
@@ -275,7 +275,7 @@ async function loadActiveConversationCounts(ctx: Ctx, candidateIds: string[]): P
 /**
  * §10.3 "response rate" tie-break, per candidate as an interest *recipient*:
  * (accepted + declined) / (accepted + declined + expired). `canceled` (the
- * sender withdrew) is excluded from the denominator — the recipient never
+ * sender withdrew) is excluded from the denominator, the recipient never
  * had an opportunity to respond, so it shouldn't count against them.
  * Candidates with no resolved history default to 0 (last-resort tie-break;
  * documented as the simplest defensible default rather than an
@@ -326,11 +326,11 @@ interface CandidateTagRow {
 /**
  * Batched equivalent of `question.service#resolveVisibleTagsFor`, called
  * once per candidate in the original per-row loop (§1.1.2's third
- * per-candidate round trip) — replaced here with ONE query covering every
+ * per-candidate round trip), replaced here with ONE query covering every
  * survivor, per the same "batch it, don't index it, there's nothing to
  * index" reasoning the review gave for the other two per-candidate gates.
  * `question.service.ts` is not owned by this build, so this does not call
- * that function — it re-derives the exact same visibility rule directly
+ * that function, it re-derives the exact same visibility rule directly
  * against `user_tags`/`interest_tags` (a cross-domain direct table read,
  * the same pattern this file's own top-of-file doc already establishes
  * for `profiles`/`user_photos`/`interests`/`conversations`). MUST stay
@@ -339,7 +339,7 @@ interface CandidateTagRow {
  * viewer holds the same tag; `public` always visible; and (matching the
  * original call site, not `resolveVisibleTagsFor` in general) the
  * "shared" tag additionally requires the viewer to hold that exact tag,
- * which collapses to "visible AND viewer has it" — see inline comment.
+ * which collapses to "visible AND viewer has it", see inline comment.
  */
 async function loadSharedTagsForSurvivors(
   ctx: Ctx,
@@ -368,7 +368,7 @@ async function loadSharedTagsForSurvivors(
   for (const candidateId of candidateIds) {
     const tagRows = byCandidate.get(candidateId) ?? [];
     // visible-to-viewer AND viewer holds it too (the "shared" requirement)
-    // — for a `public` tag the visibility half is always true, so this
+    // for a `public` tag the visibility half is always true, so this
     // reduces to `viewerTagIds.has(tagId)`; for `private_reciprocal` both
     // halves are the same check, so writing it once here is not a
     // simplification of the rule, just of this already-equivalent case.
@@ -386,9 +386,9 @@ async function loadSharedTagsForSurvivors(
  * they can never disagree about who is in the pool.
  *
  * SCALE FIX (docs/scale-and-sources.md Part 1, §1.1.2/§1.1.4 fix #2): the
- * per-candidate loop that used to sit here — one `isVisibleInDiscovery`
+ * per-candidate loop that used to sit here, one `isVisibleInDiscovery`
  * call, one `passesMutualFilters` call (itself 2+ more queries), one
- * `resolveVisibleTagsFor` call, ALL sequentially, PER CANDIDATE — is gone.
+ * `resolveVisibleTagsFor` call, ALL sequentially, PER CANDIDATE, is gone.
  * Moderation's rules 1-2 are enforced inside `loadCandidatePool`'s SQL
  * (see that function's doc); rules 7-8 (mutual hard filters) and the
  * shared-tag lookup are each now ONE batched call
@@ -398,7 +398,7 @@ async function loadSharedTagsForSurvivors(
  * unchanged: rules 7-8 are still strictly enforced and never overridden by
  * scoring (this function still filters BEFORE `getScoresForCandidates` is
  * ever called), and the capacity gates (rules 5-6) still run before
- * anything else, exactly as before — only the mechanism (batched vs.
+ * anything else, exactly as before, only the mechanism (batched vs.
  * looped) changed, not the order of gates relative to each other or to
  * scoring.
  */
@@ -417,25 +417,25 @@ async function computeRankedCandidatePool(ctx: Ctx, viewerId: string): Promise<D
 
   const incomingLimit = await ctx.config.get('interest.incoming_pending_limit');
   const activeConvLimit = await ctx.config.get('chat.active_limit');
-  // SAF-2 fix: the config-driven platform default bucket, fetched once —
+  // SAF-2 fix: the config-driven platform default bucket, fetched once,
   // see domain/units/distance.ts#approximateDistanceBetween's module doc.
   const distanceBucketKm = await ctx.config.get('privacy.distance_bucket_km');
 
   // §10.2 rules 5-6: incoming pending interests / active conversations <
-  // cap. Pure, batched-data lookups already loaded above — no I/O here.
+  // cap. Pure, batched-data lookups already loaded above, no I/O here.
   const withinCapacity = pool.filter(
     (row) => (pendingCounts.get(row.id) ?? 0) < incomingLimit && (activeConvCounts.get(row.id) ?? 0) < activeConvLimit,
   );
   if (withinCapacity.length === 0) return [];
 
-  // §10.2 rules 7-8: mutual hard filters (spec §9.1 — the invariant this
+  // §10.2 rules 7-8: mutual hard filters (spec §9.1, the invariant this
   // whole module exists to protect), batched across the whole pool in one
   // call instead of one `passesMutualFilters` call per candidate.
   const passingFilterIds = await passesMutualFiltersForCandidates(ctx, viewerId, withinCapacity.map((r) => r.id));
   const survivors = withinCapacity.filter((row) => passingFilterIds.has(row.id));
   if (survivors.length === 0) return [];
 
-  // §10.1 "maybe one shared interest" — §8.4-respecting: only tags this
+  // §10.1 "maybe one shared interest", §8.4-respecting: only tags this
   // viewer is actually allowed to see, intersected with the viewer's own.
   // Batched across every survivor in one query (was one call per survivor).
   const sharedTagByCandidate = await loadSharedTagsForSurvivors(ctx, survivors.map((r) => r.id), viewerTagIds);
@@ -445,7 +445,7 @@ async function computeRankedCandidatePool(ctx: Ctx, viewerId: string): Promise<D
   return survivors.map((row) => {
     // SAF-2 fix: ONE shared distance function (domain/units/distance.ts),
     // same bucketing + per-viewer-pair jitter as profile.service.ts's
-    // profile-page distance — see that module's doc for why two
+    // profile-page distance, see that module's doc for why two
     // inconsistent, unjittered functions were the vulnerability.
     const approximateDistanceKm = approximateDistanceBetween(
       { id: viewerId, latitude: viewerProfile.latitude, longitude: viewerProfile.longitude },
@@ -488,7 +488,7 @@ export interface DiscoveryGridParams {
  * candidate is excluded by the §10.2 rule-5 capacity check inside
  * `computeRankedCandidatePool` before it ever reaches sorting.
  *
- * Does NOT itself call `recordDiscoveryImpression` — call that once per
+ * Does NOT itself call `recordDiscoveryImpression`, call that once per
  * card actually rendered to the viewer (e.g. scrolled into view), not for
  * every row a page happens to return, so impression counts reflect what
  * was actually seen (feeds Agent A's photo A/B stats, §7.3).
@@ -528,7 +528,7 @@ export async function recordDiscoveryImpression(ctx: Ctx, candidateUserId: strin
   );
   if (primaryPhotoId) {
     // `photoExperiment.recordImpression` itself decides whether this photo
-    // is part of an active experiment (>=3 photos, flag on, §7.3 rule 1) —
+    // is part of an active experiment (>=3 photos, flag on, §7.3 rule 1),
     // this call site doesn't duplicate that judgment, it just always
     // forwards when a primary photo was actually shown.
     await photoExperiment.recordImpression(ctx, { candidateUserId, photoId: primaryPhotoId });

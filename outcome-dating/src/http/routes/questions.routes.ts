@@ -1,5 +1,5 @@
 /**
- * §24.3 Questions routes — the ONE typed question bank
+ * §24.3 Questions routes, the ONE typed question bank
  * (db/migrations/008_questions.sql). Replaces the old flat 1-5
  * self/partner-pair bank's routes entirely; see
  * src/services/question.service.ts's file-level CUTOVER doc for exactly
@@ -7,7 +7,7 @@
  *
  * `GET /questions`, `GET /me/answers`, `PUT /me/answers` are the three
  * paths `tests/http/routeTable.test.ts` hardcodes as required §24.3
- * routes — kept at those exact paths/methods, repointed to the new bank
+ * routes, kept at those exact paths/methods, repointed to the new bank
  * underneath. Every other route here is an addition (see routeTable.ts).
  */
 import type { FastifyInstance } from 'fastify';
@@ -48,7 +48,7 @@ export function registerQuestionsRoutes(app: FastifyInstance, deps: AppDeps): vo
     reply.send(serializeQuestionBankPage(page));
   });
 
-  // Addition — "what should we ask this user next" (src/domain/questions/selector.ts).
+  // Addition, "what should we ask this user next" (src/domain/questions/selector.ts).
   app.get('/questions/next', auth, async (req, reply) => {
     const query = parseOrThrow(NextQuestionsQuerySchema, req.query);
     const questions = await questionService.selectNextQuestionsForMe(req.ctx!, { count: query.count });
@@ -64,7 +64,7 @@ export function registerQuestionsRoutes(app: FastifyInstance, deps: AppDeps): vo
 
   // Body shape: src/services/question.service.ts#PutQuestionAnswerInput
   // (slug, status, and either ladderPosition or preferenceValue+importance
-  // for an "answered" status) — validated by `putMyQuestionAnswer` itself
+  // for an "answered" status), validated by `putMyQuestionAnswer` itself
   // (see src/http/validation.ts's file doc: bodies are validated by the
   // service, this route layer only handles params/query).
   app.put('/me/answers', auth, async (req, reply) => {

@@ -1,5 +1,5 @@
 /**
- * tests/unit/deletion.test.ts — PRIV-1 fix proof: `profile.service#
+ * tests/unit/deletion.test.ts, PRIV-1 fix proof: `profile.service#
  * deleteMyAccount` actually erases personal data, table by table, rather
  * than merely flipping a status column. See that function's own "PRIV-1
  * FIX" doc comment for the full retention policy this file asserts.
@@ -9,7 +9,7 @@
  * databases odate_safety_<suite>" instruction).
  *
  * Every assertion below reads the ACTUAL ROWS in each table after
- * deletion (never just `users.status`) — per the brief's "test what
+ * deletion (never just `users.status`), per the brief's "test what
  * actually remains in each table, table by table".
  */
 import { test, before, after } from 'node:test';
@@ -29,7 +29,7 @@ import * as profile from '../../src/services/profile.service.js';
 import { DELETED_MESSAGE_PLACEHOLDER } from '../../src/services/profile.service.js';
 
 // ---------------------------------------------------------------------
-// Self-contained DB/ctx setup — see module doc.
+// Self-contained DB/ctx setup, see module doc.
 // ---------------------------------------------------------------------
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
@@ -112,7 +112,7 @@ async function insertProfile(ctx: Ctx, userId: string): Promise<void> {
 }
 
 // ONE typed question bank (question_bank/user_question_answers,
-// db/migrations/008_questions.sql) — this used to create a row in the OLD
+// db/migrations/008_questions.sql), this used to create a row in the OLD
 // `questions` table; that table (and `answers`) is gone as of
 // db/migrations/022_drop_old_question_bank.sql, so these fixture helpers
 // now target the typed bank `deleteMyAccount` itself was repointed to.
@@ -127,7 +127,7 @@ async function insertQuestion(ctx: Ctx, sensitive: boolean): Promise<string> {
   return id;
 }
 
-/** Returns `questionId`'s slug — the actual key `user_question_answers` is keyed on (see that table's own doc: PK is `(user_id, question_slug)`, not `(user_id, question_bank_id)`). */
+/** Returns `questionId`'s slug, the actual key `user_question_answers` is keyed on (see that table's own doc: PK is `(user_id, question_slug)`, not `(user_id, question_bank_id)`). */
 async function insertAnswer(ctx: Ctx, userId: string, questionId: string): Promise<void> {
   const { rows } = await ctx.db.query<{ slug: string }>('SELECT slug FROM question_bank WHERE id = $1', [questionId]);
   const slug = rows[0]!.slug;
@@ -223,7 +223,7 @@ async function insertModerationAction(ctx: Ctx, userId: string): Promise<void> {
 }
 
 // =========================================================================
-// Full fixture builder — one user with data in every table PRIV-1 names,
+// Full fixture builder, one user with data in every table PRIV-1 names,
 // plus the retained (financial/safety) tables, plus a conversation
 // partner whose own data must survive completely untouched.
 // =========================================================================
@@ -315,7 +315,7 @@ test('deleteMyAccount: erases this user\'s own message content but leaves the co
     'SELECT count(*)::int AS n FROM messages WHERE conversation_id = $1',
     [fx.conversationId],
   );
-  assert.equal(stillFindable[0].n, 2, 'both messages still exist as rows — only the deleted user\'s content was scrubbed, nothing was deleted out from under the partner');
+  assert.equal(stillFindable[0].n, 2, 'both messages still exist as rows, only the deleted user\'s content was scrubbed, nothing was deleted out from under the partner');
 });
 
 test('deleteMyAccount: retains financial/ledger records untouched (payment_holds, payment_ledger)', async () => {
@@ -332,7 +332,7 @@ test('deleteMyAccount: retains financial/ledger records untouched (payment_holds
   const holdsAfter = (await ctx.db.query('SELECT * FROM payment_holds WHERE user_id = $1 ORDER BY id', [fx.userId])).rows;
   const ledgerAfter = (await ctx.db.query('SELECT * FROM payment_ledger WHERE user_id = $1 ORDER BY id', [fx.userId])).rows;
   assert.deepEqual(holdsAfter, holdsBefore, 'payment_holds rows must survive deletion byte-for-byte');
-  assert.deepEqual(ledgerAfter, ledgerBefore, 'payment_ledger rows must survive deletion byte-for-byte — §14.8 immutable ledger');
+  assert.deepEqual(ledgerAfter, ledgerBefore, 'payment_ledger rows must survive deletion byte-for-byte, §14.8 immutable ledger');
 });
 
 test('deleteMyAccount: retains the moderation/safety audit trail (reports, trust_events, moderation_actions) so ban evasion cannot be laundered by self-deleting', async () => {
@@ -392,7 +392,7 @@ test('deleteMyAccount: profile fields (including the new distance_precision_floo
   assert.notEqual(sessionRows[0].revoked_at, null);
 });
 
-test('deleteMyAccount: idempotent — running it twice produces the exact same end state and never errors', async () => {
+test('deleteMyAccount: idempotent, running it twice produces the exact same end state and never errors', async () => {
   const ctx = buildCtx();
   const fx = await buildFixture(ctx);
   const userCtx = buildCtx({ actor: userActor(fx.userId) });

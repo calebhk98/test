@@ -1,10 +1,10 @@
 /**
- * tests/unit/retention.test.ts — src/services/retention.service.ts.
+ * tests/unit/retention.test.ts, src/services/retention.service.ts.
  *
  * Covers: each class expiring at its window boundary and not before,
  * financial + safety records surviving untouched, batching honoured,
  * idempotent re-runs, and a large backlog never exceeding the per-run
- * cap. `ctx.clock` (a ManualClock) drives every cutoff — no real waiting.
+ * cap. `ctx.clock` (a ManualClock) drives every cutoff, no real waiting.
  */
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
@@ -49,12 +49,12 @@ test('every RETENTION_POLICIES entry carries a written-down reasoning (no policy
   }
 });
 
-test('RETENTION_POLICIES count matches docs/retention.md\'s "Enforced policies" table row count — keeps the code and the privacy-review doc from silently drifting apart', () => {
+test('RETENTION_POLICIES count matches docs/retention.md\'s "Enforced policies" table row count, keeps the code and the privacy-review doc from silently drifting apart', () => {
   assert.equal(RETENTION_POLICIES.length, 12);
 });
 
 // -------------------------------------------------------------------------
-// Boundary correctness — one representative delete policy, one anonymize
+// Boundary correctness, one representative delete policy, one anonymize
 // policy, each with a row just inside the window (must survive) and one
 // just past it (must be gone/anonymized) after a single sweep at NOW.
 // -------------------------------------------------------------------------
@@ -167,11 +167,11 @@ test('anonymize policy: device_fingerprints keeps reputation_score/is_vpn, clear
     [id],
   );
   assert.deepEqual(after[0]!.metadata, {}, 'raw metadata payload is cleared');
-  assert.equal(after[0]!.is_vpn, true, 'derived classification (is_vpn) survives — this is anonymize, not delete');
+  assert.equal(after[0]!.is_vpn, true, 'derived classification (is_vpn) survives, this is anonymize, not delete');
   assert.equal(after[0]!.reputation_score, 12, 'derived classification (reputation_score) survives');
 });
 
-test('anonymize policy: dormant chat content — active conversations are never touched at any age; archived ones past 730 days get placeholder bodies, row and conversation survive', async () => {
+test('anonymize policy: dormant chat content, active conversations are never touched at any age; archived ones past 730 days get placeholder bodies, row and conversation survive', async () => {
   const userA = await createUser(pool);
   const userB = await createUser(pool);
   const userC = await createUser(pool);
@@ -202,7 +202,7 @@ test('anonymize policy: dormant chat content — active conversations are never 
   assert.notEqual(archivedMsgs[0]!.body, 'a dormant secret');
   assert.match(archivedMsgs[0]!.body, /no longer available/i);
 
-  // The row and the conversation itself both survive — this is anonymize, not delete.
+  // The row and the conversation itself both survive, this is anonymize, not delete.
   const { rows: stillThere } = await pool.query(`SELECT id FROM conversations WHERE id = $1`, [archivedConvoId]);
   assert.equal(stillThere.length, 1);
 });
@@ -217,7 +217,7 @@ test('financial and safety audit tables are never touched by a full sweep, howev
   const clock = new ManualClock(NOW);
   const ctx = buildCtx({ actor: systemActor(), clock });
 
-  const ancient = addDays(NOW, -3650); // 10 years old — older than every window this file defines
+  const ancient = addDays(NOW, -3650); // 10 years old, older than every window this file defines
 
   const venueId = await createVenue(pool);
   const conversationId = await createConversation(pool, userId, otherUser, 'established', { createdAt: ancient });
@@ -250,7 +250,7 @@ test('financial and safety audit tables are never touched by a full sweep, howev
 
   for (const table of RETAINED_FOREVER_TABLES) {
     const { rows } = await pool.query<{ count: string }>(`SELECT count(*)::text AS count FROM ${table}`);
-    assert.equal(Number(rows[0]!.count), before[table], `${table} row count changed — this table must be retained forever`);
+    assert.equal(Number(rows[0]!.count), before[table], `${table} row count changed, this table must be retained forever`);
   }
 });
 
@@ -272,7 +272,7 @@ test('batching: a run stops at the batch boundary, and a second run finishes the
     ]);
   }
 
-  // Force exactly one batch by capping maxBatchesPerRun to 1 via a direct policy call — runRetentionPolicy uses the
+  // Force exactly one batch by capping maxBatchesPerRun to 1 via a direct policy call, runRetentionPolicy uses the
   // registered policy's own maxBatchesPerRun (50), which would finish this small backlog in one run, so instead this
   // asserts the *first single batch* only ever touches batchSize rows, then a second batch gets the remainder.
   const { rowCount: firstBatch } = await ctx.db.query(
@@ -308,7 +308,7 @@ test('idempotent re-run: running the same policy twice against an already-proces
   assert.ok(first.affected >= 10);
 
   const second = await runRetentionPolicy(ctx, 'discovery_impressions');
-  assert.equal(second.affected, 0, 'nothing left to delete — the second run is a costless no-op');
+  assert.equal(second.affected, 0, 'nothing left to delete, the second run is a costless no-op');
   assert.equal(second.exhausted, true);
 });
 

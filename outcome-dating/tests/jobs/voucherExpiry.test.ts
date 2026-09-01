@@ -1,5 +1,5 @@
 /**
- * §25.8 Voucher Expiry job — boundary + idempotent re-run (mirrors
+ * §25.8 Voucher Expiry job, boundary + idempotent re-run (mirrors
  * C-25.8.1 / C-15.SM.L2).
  */
 import { test, before, after } from 'node:test';

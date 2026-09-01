@@ -1,9 +1,9 @@
 /**
- * src/http/serializers/interests.ts — `GET /interests/incoming`/`outgoing`,
+ * src/http/serializers/interests.ts, `GET /interests/incoming`/`outgoing`,
  * enriched (docs/ux-api-review.md §6). Wraps
  * `interest.service#EnrichedInterestItem` (already the counterpart's
  * `displayName`/`primaryPhotoUrl`/`age`/`approximateDistanceKm`, with the
- * internal-only `policySnapshot` already dropped at the service layer) —
+ * internal-only `policySnapshot` already dropped at the service layer),
  * this file only turns `Date` into an ISO-8601 string, same convention as
  * every other list serializer in this codebase.
  */

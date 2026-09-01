@@ -1,8 +1,8 @@
 /**
- * User stats page routes (product owner addition — see stats.service.ts's
+ * User stats page routes (product owner addition, see stats.service.ts's
  * module doc for the privacy rules enforced upstream of every one of
  * these). Every route requires an authenticated regular user and only
- * ever answers for that user's own id — none of these take a `userId`
+ * ever answers for that user's own id, none of these take a `userId`
  * param.
  */
 import type { FastifyInstance } from 'fastify';

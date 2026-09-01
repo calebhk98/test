@@ -30,7 +30,7 @@ after(async () => {
 });
 
 // This suite registers many accounts across scenarios against one shared
-// in-process rate limiter (§19.2) — reset it between tests so an earlier
+// in-process rate limiter (§19.2), reset it between tests so an earlier
 // scenario's registrations never spuriously 429 a later, unrelated one.
 // `tests/http/rateLimit.test.ts` is where the limiter's own behavior is
 // actually exercised.

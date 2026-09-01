@@ -1,5 +1,5 @@
 /**
- * §25.8 Voucher Expiry job. "Expire vouchers after configurable period." —
+ * §25.8 Voucher Expiry job. "Expire vouchers after configurable period.",
  * exactly `voucher.service#expireDueVouchers`
  * (`UPDATE vouchers SET status='expired' WHERE status='issued' AND
  * expires_at < now`, itself already baking in

@@ -5,7 +5,7 @@
 -- corresponds to one ranked item. Every constraint added here has a
 -- matching "bad state is rejected" test in tests/unit/integrity.test.ts.
 --
--- Two ranked items are NOT fully closed by this migration, on purpose —
+-- Two ranked items are NOT fully closed by this migration, on purpose,
 -- both because the safe fix requires editing a file outside this build's
 -- ownership. See the comments at the bottom of each relevant section for
 -- exactly why, and what the follow-up change is.
@@ -24,7 +24,7 @@
 -- shares the SAME write statement as `submitCheckIn` (see
 -- postDateFeedback.service.ts). There is exactly one place in the
 -- codebase that writes outcome/safety data to this table now, and it
--- never writes `positive` at all — new rows only ever get `outcome`.
+-- never writes `positive` at all, new rows only ever get `outcome`.
 --
 -- `positive` is kept (not dropped): src/services/stats.service.ts and
 -- src/jobs/statsAggregation.job.ts (both owned by the stats agent, out of
@@ -43,7 +43,7 @@
 --   (b) Backfill `safety_flag` from the legacy `safety_concern` boolean
 --       for the same historical rows, so a flagged legacy row is at
 --       least visible as a 'concern' going forward. This does NOT
---       retroactively file a report (see report_id, left NULL) — auto-
+--       retroactively file a report (see report_id, left NULL), auto-
 --       filing a report for a historical flag with no live corroboration
 --       context would be a behavior change with real consequences, not a
 --       normalization fix.
@@ -51,7 +51,7 @@
 --       that has both set, so a future second writer (should one ever
 --       reappear) cannot recreate a contradictory row: `positive = true`
 --       must pair with `outcome = 'happened_good'`, `positive = false`
---       with `outcome = 'happened_bad'` — the same pairing the backfill
+--       with `outcome = 'happened_bad'`, the same pairing the backfill
 --       uses and the same one statsAggregation.job.ts already treats as
 --       equivalent. Any other pairing (e.g. positive = true with
 --       outcome = 'happened_bad', the literal "both good and bad at
@@ -87,13 +87,13 @@ ALTER TABLE post_date_feedback
 -- checks `status = 'active'`). `suspended` is read directly in a few more
 -- places (discovery.service.ts's candidate-pool query, auth.service.ts's
 -- returned user shape, profile.routes.ts's admin view) but never as the
--- SOLE gate — `status` is checked first, or alongside it, everywhere it
+-- SOLE gate, `status` is checked first, or alongside it, everywhere it
 -- matters.
 --
 -- `suspended` cannot simply be dropped and derived: `src/seed.ts`,
 -- `src/services/auth.service.ts`, and several test fixtures outside this
 -- build's ownership (e.g. tests/unit/testCtxAgentE.ts's `insertUser`)
--- explicitly INSERT a `suspended` value as one of the row's columns —
+-- explicitly INSERT a `suspended` value as one of the row's columns,
 -- turning it into a GENERATED column would make every one of those
 -- INSERTs fail outright (Postgres refuses an explicit value for a
 -- generated column, even the "correct" one), which is a much larger,
@@ -108,7 +108,7 @@ ALTER TABLE post_date_feedback
 -- discovery.test.ts's `makeUser('suspended')` helper (around line 213)
 -- inserts `status = 'suspended'` without ever setting `suspended = true`
 -- (the column is omitted from that INSERT entirely, so it defaults to
--- false) — precisely the disagreement this constraint exists to reject.
+-- false), precisely the disagreement this constraint exists to reject.
 -- That test currently passes only because nothing enforced the pairing;
 -- after this migration its fixture INSERT will fail with a constraint
 -- violation. The fix is a one-line change to that helper (also set
@@ -125,7 +125,7 @@ ALTER TABLE users
 -- =========================================================================
 --
 -- NOT fixed with a table-level constraint (CHECK, generated column, or
--- trigger) on `users` itself — see trust.service.ts#recalculateTrustScore
+-- trigger) on `users` itself, see trust.service.ts#recalculateTrustScore
 -- for the fix that WAS made there, and the reasoning below for why a
 -- table-level one was deliberately not added on top.
 --
@@ -136,7 +136,7 @@ ALTER TABLE users
 -- forbids a GENERATED ALWAYS AS expression from reading any table but
 -- the row's own (SQL standard restriction, not a Postgres limitation to
 -- work around), so a generated column literally cannot consult
--- `config_entries`. The same restriction applies to a CHECK constraint —
+-- `config_entries`. The same restriction applies to a CHECK constraint,
 -- Postgres rejects a CHECK expression that references another table at
 -- all, config-driven bounds or not. So neither of the two purely
 -- declarative options is available here; only a function/trigger that
@@ -169,7 +169,7 @@ ALTER TABLE users
 -- those fixtures' chosen tier back to whatever the DEFAULT trust_score
 -- (usually 50, "standard") maps to, which is a silent, hard-to-diagnose
 -- behavior change across a large number of files this build may not
--- touch — worse than leaving the gap open for a hypothetical future
+-- touch, worse than leaving the gap open for a hypothetical future
 -- second writer that does not exist today.
 
 CREATE OR REPLACE FUNCTION trust_level_for_score(p_trust_score integer)
@@ -197,7 +197,7 @@ $$;
 -- =========================================================================
 --
 -- `interests` is a true one-shot state machine (pending -> exactly one
--- terminal status, never revisited — verified against every write site in
+-- terminal status, never revisited, verified against every write site in
 -- interest.service.ts: sendInterest, acceptInterest, atomicTransition
 -- (decline/cancel), autoDeclineOne, expireDuePendingInterests all stamp
 -- exactly one of the four terminal timestamp columns and only from
@@ -211,7 +211,7 @@ $$;
 -- seedScaleCurve.ts (around line 224) seeds `interests` rows with status
 -- and `accepted_at` drawn from two INDEPENDENT `random()` calls, so a
 -- meaningful fraction of seeded rows will have `status = 'accepted'` with
--- `accepted_at IS NULL` or vice versa — this is the exact bug class this
+-- `accepted_at IS NULL` or vice versa, this is the exact bug class this
 -- constraint exists to reject, now caught in a performance-seeding
 -- script that plainly never meant to create it. tests/perf/** is outside
 -- this build's ownership (owned by the agent on tests/perf/ and
@@ -235,7 +235,7 @@ ALTER TABLE interests
 -- earlier ones; payment_holds: authorized -> captured, and captured ->
 -- refunded, likewise keep the earlier stamp). A row "claiming to be
 -- ticketed" legitimately still has accepted_at AND charged_at non-null
--- from its own earlier, real transitions — a bijective constraint like
+-- from its own earlier, real transitions, a bijective constraint like
 -- the one above would be WRONG here, not just strict.
 --
 -- The safe subset actually added below is deliberately narrow, chosen
@@ -244,8 +244,8 @@ ALTER TABLE interests
 -- which must have every downstream timestamp NULL (this is exactly
 -- docs/normalization.md's own literal example: "status='pending' [not
 -- yet accepted] with accepted_at set"), and (b) a small number of
--- specific statuses where every legitimate writer — production code AND
--- every test fixture found — already always sets that status's own
+-- specific statuses where every legitimate writer, production code AND
+-- every test fixture found, already always sets that status's own
 -- timestamp, so the forward direction is safe to require too.
 --
 -- date_proposals: only `dateProposal.service.ts` (this build's own file)
@@ -263,14 +263,14 @@ ALTER TABLE interests
 -- forward requirement for accepted/charged/ticketed/completed/disputed/
 -- no_show/completed_unverified would reject the overwhelming majority of
 -- those fixtures. So only the pre-acceptance states (draft,
--- pending_acceptance — nothing has happened to the proposal yet, so
+-- pending_acceptance, nothing has happened to the proposal yet, so
 -- every timestamp must be NULL) and declined/expired/canceled/refunded
--- (each reachable only via a single dedicated stamp — declined_at,
+-- (each reachable only via a single dedicated stamp, declined_at,
 -- expired_at, or canceled_at, which `timeline.service.ts` itself already
 -- relies on `canceled_at` covering both canceled AND refunded, per
 -- dateProposal.service.ts's own comment on that reuse) are constrained.
 -- 'completed'/'ticketed'/'accepted'/'charged'/etc. carry no requirement
--- at all under this narrower constraint set — including this build's own
+-- at all under this narrower constraint set, including this build's own
 -- tests/http/feedback.test.ts / tests/unit/postDateFeedback.test.ts
 -- fixtures, which create 'completed'/'ticketed' rows with no timestamps
 -- set and need no change for this migration.
@@ -307,7 +307,7 @@ ALTER TABLE date_proposals
 -- tests/jobs/venuePayoutSettlement.test.ts (around line 44) creates a
 -- `captured` hold with only `captured_at` set (no `authorized_at`), and
 -- tests/unit/deletion.test.ts (around line 193) creates a `captured` hold
--- with NEITHER timestamp set — both outside this build's ownership, both
+-- with NEITHER timestamp set, both outside this build's ownership, both
 -- would fail a forward requirement on `captured`.
 
 ALTER TABLE payment_holds
@@ -333,7 +333,7 @@ ALTER TABLE payment_holds
 --
 --   1. `INSERT INTO notification_dedup_log (dedup_key, outbox_id, ...)
 --      VALUES ($1, $2, ...) ON CONFLICT (dedup_key) DO NOTHING` where
---      `$2` is `claimId = newId()` — a freshly generated uuid that does
+--      `$2` is `claimId = newId()`, a freshly generated uuid that does
 --      NOT correspond to any `notification_outbox` row yet. This is a
 --      deliberate "claim the dedup key first" idempotency trick (see that
 --      file's own step-1 comment), not a bug, but it means `outbox_id`
@@ -344,7 +344,7 @@ ALTER TABLE payment_holds
 --      outbox_id = $2 WHERE dedup_key = $1` backfill the real id.
 --
 -- `ctx.db` at this call site is the raw pool in the common case (no
--- surrounding `withTransaction` — confirmed no such wrapper exists at or
+-- surrounding `withTransaction`, confirmed no such wrapper exists at or
 -- above every `enqueueNotification` call site), so each of those two
 -- statements commits independently. A `DEFERRABLE INITIALLY DEFERRED`
 -- constraint does not help: without an enclosing transaction, each
@@ -358,13 +358,13 @@ ALTER TABLE payment_holds
 -- step 1 (the column would need `DROP NOT NULL`, which this migration
 -- could do), keep the existing step-3 UPDATE to backfill the real id
 -- (already written to tolerate an update after the fact), and only then
--- add `REFERENCES notification_outbox (id) ON DELETE SET NULL` — SET
+-- add `REFERENCES notification_outbox (id) ON DELETE SET NULL`, SET
 -- NULL, not CASCADE, because retention.service.ts prunes
 -- `notification_outbox` and `notification_dedup_log` on two INDEPENDENT
 -- 30-day schedules keyed off each table's own `created_at`
 -- (retention.service.ts's own comment: dedup_log's retention is
 -- deliberately "a generous multiple of the outbox's own retry/backoff
 -- horizon", i.e. it is meant to be able to outlive the outbox row it
--- guards) — CASCADE would delete the dedup-key guard at the same moment
+-- guards), CASCADE would delete the dedup-key guard at the same moment
 -- as the outbox row, which is exactly the case that comment says must
 -- not happen.

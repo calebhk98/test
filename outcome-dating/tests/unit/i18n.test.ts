@@ -1,5 +1,5 @@
 /**
- * tests/unit/i18n.test.ts — locale negotiation, the copy catalog's
+ * tests/unit/i18n.test.ts, locale negotiation, the copy catalog's
  * fallback chain, pluralisation, currency formatting for a non-dollar
  * currency, "missing translation degrades rather than shows a key", and
  * the question-bank localization attachment
@@ -110,7 +110,7 @@ test('translate: renders real, different text for the worked second locale (es)'
   assert.equal(result.usedFallback, false);
 });
 
-test('translate: a missing translation (unshipped locale) degrades to the English fallback — never a thrown error, never the raw key', () => {
+test('translate: a missing translation (unshipped locale) degrades to the English fallback, never a thrown error, never the raw key', () => {
   const result = translate('de', 'discovery.emptyState.title'); // 'de' is registered but has zero catalog entries
   assert.equal(result.text, 'No candidates currently match your filters.');
   assert.equal(result.resolvedLocale, 'en');
@@ -121,10 +121,10 @@ test('translate: a missing translation (unshipped locale) degrades to the Englis
 test('translate: a region variant with no exact catalog falls back through its base language before English', () => {
   const result = translate('es-MX', 'discovery.emptyState.title');
   assert.equal(result.resolvedLocale, 'es', 'falls back to the base "es" catalog, not straight to "en"');
-  assert.equal(result.usedFallback, true, 'still counts as a fallback — the requested tag was "es-MX", not "es"');
+  assert.equal(result.usedFallback, true, 'still counts as a fallback, the requested tag was "es-MX", not "es"');
 });
 
-test('translate: an unknown catalog key throws — an authoring bug, not a runtime condition to hide', () => {
+test('translate: an unknown catalog key throws, an authoring bug, not a runtime condition to hide', () => {
   assert.throws(() => translate('en', 'this.key.does.not.exist'));
 });
 
@@ -163,13 +163,13 @@ test('pluralCategory: the underlying mechanism handles a language with more than
   assert.equal(pluralCategory(1, 'ar'), 'one');
   assert.equal(pluralCategory(2, 'ar'), 'two');
   assert.equal(pluralCategory(11, 'ar'), 'many');
-  // English only ever distinguishes 'one' from 'other' — contrast case.
+  // English only ever distinguishes 'one' from 'other', contrast case.
   assert.equal(pluralCategory(1, 'en'), 'one');
   assert.equal(pluralCategory(11, 'en'), 'other');
 });
 
 // -------------------------------------------------------------------------
-// Currency — a non-dollar currency, correctly formatted
+// Currency, a non-dollar currency, correctly formatted
 // -------------------------------------------------------------------------
 
 test('formatMoney: a non-dollar currency (EUR) formats with locale-correct symbol placement and grouping', () => {
@@ -240,7 +240,7 @@ test('getQuestionTranslation: no row yet -> null, and localizeQuestionDefinition
   assert.deepEqual(localizeQuestionDefinition(def, translation), def);
 });
 
-test('getQuestionTranslation: requesting the base locale ("en") never queries a translation row at all — the base row IS the English text', async () => {
+test('getQuestionTranslation: requesting the base locale ("en") never queries a translation row at all, the base row IS the English text', async () => {
   const { id } = await insertQuestionBankRow();
   const ctx = buildCtx({ actor: systemActor() });
   const translation = await getQuestionTranslation(ctx, id, 'en');
@@ -259,10 +259,10 @@ test('upsertQuestionTranslation + localizeQuestionDefinition: question text and 
   const partial = await getQuestionTranslation(ctx, id, 'es');
   const partialLocalized = localizeQuestionDefinition(def, partial);
   const partialScale = partialLocalized.typeDef as ScaleDefinition;
-  assert.equal(partialLocalized.questionText, def.questionText, 'question text not yet translated — falls back to English');
+  assert.equal(partialLocalized.questionText, def.questionText, 'question text not yet translated, falls back to English');
   assert.equal(partialScale.minLabel, 'Nada importante');
   assert.equal(partialScale.maxLabel, 'Muy importante');
-  assert.equal(partialScale.midLabel, 'Neutral', 'midLabel not yet translated — falls back to the original English label');
+  assert.equal(partialScale.midLabel, 'Neutral', 'midLabel not yet translated, falls back to the original English label');
 
   // Then: the question text arrives too, merged with the existing label translations (not overwritten).
   await upsertQuestionTranslation(ctx, id, 'es', { questionText: '¿Qué tan importante es el ejercicio regular para ti?' });
@@ -312,7 +312,7 @@ test('localizeQuestionDefinition: single_choice option labels localize by the ST
   assert.deepEqual(
     options.map((o) => o.key),
     ['yes', 'no'],
-    'option keys never change — only labels do',
+    'option keys never change, only labels do',
   );
 });
 
@@ -326,5 +326,5 @@ test('getQuestionTranslations: batch form resolves each id independently in one 
 
   const map = await getQuestionTranslations(ctx, [q1.id, q2.id], 'es');
   assert.equal(map.get(q1.id)?.questionText, 'Pregunta uno traducida.');
-  assert.equal(map.has(q2.id), false, 'no translation row exists for q2 — absent from the map, not a null entry');
+  assert.equal(map.has(q2.id), false, 'no translation row exists for q2, absent from the map, not a null entry');
 });

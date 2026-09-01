@@ -28,7 +28,7 @@ import { buildServer } from '../../src/http/server.js';
 import type { AppDeps } from '../../src/http/deps.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item): this suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `odate_http_<suite>` name is only unique within a single run. */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item): this suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `odate_http_<suite>` name is only unique within a single run. */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
@@ -97,7 +97,7 @@ export interface RegisteredUser {
   refreshToken: string;
 }
 
-/** Registers a fresh account via the real `/auth/register` route and returns its tokens — the realistic path every other helper builds on. */
+/** Registers a fresh account via the real `/auth/register` route and returns its tokens, the realistic path every other helper builds on. */
 export async function registerUser(t: TestApp, overrides?: { email?: string; city?: string }): Promise<RegisteredUser> {
   const email = overrides?.email ?? uniqueEmail();
   const res = await t.app.inject({
@@ -122,12 +122,12 @@ export function authHeader(token: string): { authorization: string } {
   return { authorization: `Bearer ${token}` };
 }
 
-/** Clears the app's shared §19.2 rate-limit counters — call between test cases in any suite that registers/logs-in more accounts than the per-IP limits allow (the limiter's own behavior is exercised by `tests/http/rateLimit.test.ts`, not by every other suite incidentally hitting it). */
+/** Clears the app's shared §19.2 rate-limit counters, call between test cases in any suite that registers/logs-in more accounts than the per-IP limits allow (the limiter's own behavior is exercised by `tests/http/rateLimit.test.ts`, not by every other suite incidentally hitting it). */
 export function resetRateLimiter(t: TestApp): void {
   t.app.rateLimiter.reset();
 }
 
-/** Grants `userId` the admin role (direct DB write — there is no self-service "become admin" HTTP route, by design; §4.3 admins are provisioned operationally). */
+/** Grants `userId` the admin role (direct DB write, there is no self-service "become admin" HTTP route, by design; §4.3 admins are provisioned operationally). */
 export async function makeAdmin(t: TestApp, userId: string): Promise<void> {
   await t.pool.query(`INSERT INTO admin_users (user_id, active) VALUES ($1, true) ON CONFLICT DO NOTHING`, [userId]);
 }
@@ -159,7 +159,7 @@ export async function createVenue(t: TestApp, overrides?: { active?: boolean; na
  * (question_bank/user_question_answers, db/migrations/008_questions.sql)
  * for tests that need a question on the books quickly, bypassing the
  * admin routes (`tests/http/admin.test.ts` is the dedicated coverage for
- * those). Replaces this file's OLD `INSERT INTO questions` helper — that
+ * those). Replaces this file's OLD `INSERT INTO questions` helper, that
  * table no longer exists (db/migrations/022_drop_old_question_bank.sql).
  */
 export async function insertQuestion(
@@ -176,7 +176,7 @@ export async function insertQuestion(
   return rows[0]!.id;
 }
 
-/** Fills in a minimally-complete profile + a verified payment method + enough answers/photos for `userId` to be discoverable and able to propose a paid date — used by the end-to-end happy-path test so it doesn't have to re-derive discovery's completeness/photo gates inline. */
+/** Fills in a minimally-complete profile + a verified payment method + enough answers/photos for `userId` to be discoverable and able to propose a paid date, used by the end-to-end happy-path test so it doesn't have to re-derive discovery's completeness/photo gates inline. */
 export async function completeOnboarding(
   t: TestApp,
   token: string,
@@ -210,11 +210,11 @@ export async function completeOnboarding(
     if (res.statusCode !== 201) throw new Error(`photo upload failed: ${res.statusCode} ${res.body}`);
   }
 
-  // CUTOVER NOTE (question-system-cutover build, reported — this file is
+  // CUTOVER NOTE (question-system-cutover build, reported, this file is
   // outside that build's file-ownership boundary and was otherwise left
   // untouched): `GET /questions`/`PUT /me/answers` now serve the ONE typed
   // question bank (paginated `{items, nextCursor}`; one typed
-  // value+importance answer per PUT, not an array of bare 1-5 pairs) —
+  // value+importance answer per PUT, not an array of bare 1-5 pairs),
   // see src/services/question.service.ts's file-level CUTOVER doc. This
   // helper is shared by several HTTP suites (`happyPath.test.ts`,
   // `matches.test.ts`, `serializers.test.ts`, `wiring.test.ts`,
@@ -222,7 +222,7 @@ export async function completeOnboarding(
   // books for a "complete" onboarding, so it was repointed at the new
   // shape rather than left calling an API that no longer returns what it
   // expects (a flat array from `GET /questions`, an array body accepted
-  // by `PUT /me/answers`) — both would otherwise throw inside this helper
+  // by `PUT /me/answers`), both would otherwise throw inside this helper
   // for every caller.
   const questionsRes = await t.app.inject({ method: 'GET', url: '/questions?limit=10', headers: authHeader(token) });
   const questionsBody = JSON.parse(questionsRes.body) as {

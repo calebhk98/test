@@ -1,10 +1,10 @@
 /**
  * §25.5 Photo A/B Stats job. "Aggregate impressions and accepted interests.
- * Update photo ranking." — exactly
+ * Update photo ranking.", exactly
  * `photoExperiment.service#refreshAllRecommendations`: for every user with
  * >=3 approved photos and the `photo_ab_testing` flag on, recomputes the
  * significance-guarded recommendation (ranked by accepted-interest rate,
- * never raw impressions — see that module's `computeRecommendation` doc)
+ * never raw impressions, see that module's `computeRecommendation` doc)
  * and upserts a `pending` `photo_recommendations` row.
  */
 import type { Ctx } from '../lib/ctx.js';

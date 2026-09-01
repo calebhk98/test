@@ -4,11 +4,11 @@
  * individually below and in `src/http/routeTable.ts`).
  *
  * EVERY MUTATING ROUTE HERE CALLS `writeAdminAudit` AFTER THE UNDERLYING
- * SERVICE CALL SUCCEEDS (spec §4.3, §28.6, C-28.6.1) — this is the
+ * SERVICE CALL SUCCEEDS (spec §4.3, §28.6, C-28.6.1), this is the
  * enforcement point for "every admin mutation writes admin_audit_log" from
  * the task brief. Read-only routes do not (nothing changed to audit).
  *
- * Admin is NEVER required for moderation to function (spec §18.1) — no
+ * Admin is NEVER required for moderation to function (spec §18.1), no
  * route in this file is on the moderation pipeline's own call path
  * (`report.submitReport` → `moderation.recordAutomatedFlag` →
  * `moderation.applyThresholds` all run without any admin involvement, see
@@ -49,12 +49,12 @@ const CreateVenueBodySchema = z.object({
 const UpdateVenueBodySchema = CreateVenueBodySchema.partial().extend({ active: z.boolean().optional() });
 
 // §27 item 3 (question manager) body shapes: src/services/question.service.ts
-// `CreateQuestionBankInput` / `UpdateQuestionBankInput` — the ONE typed
+// `CreateQuestionBankInput` / `UpdateQuestionBankInput`, the ONE typed
 // question bank (question_bank/user_question_answers) per the
 // question-system cutover (see that file's file-level CUTOVER doc). Full
 // shape validation (including the discriminated-union `typeDef` per
 // question type, and the "no section mark in user-visible text" guard) is
-// the SERVICE's job, not this route layer's — same "route layer only
+// the SERVICE's job, not this route layer's, same "route layer only
 // handles params/query, the service validates the body" pattern
 // `src/http/routes/questions.routes.ts` already uses for `PUT /me/answers`.
 const ListQuestionBankQuerySchema = z.object({ includeInactive: z.coerce.boolean().optional() });
@@ -117,7 +117,7 @@ export function registerAdminRoutes(app: FastifyInstance, deps: AppDeps): void {
   // ---- §27 item 3: Question manager ----
   //
   // Repointed to the ONE typed question bank (`question_bank`/
-  // `user_question_answers`, db/migrations/008_questions.sql) — this used
+  // `user_question_answers`, db/migrations/008_questions.sql), this used
   // to create/edit rows in the OLD `questions` table, which the product
   // never scores or shows to a user answering `GET /questions`; an admin
   // using the old panel could recreate the exact "asked about the same
@@ -128,7 +128,7 @@ export function registerAdminRoutes(app: FastifyInstance, deps: AppDeps): void {
   //
   // `:id` in the PATCH path is kept literally (not renamed `:slug`) only
   // because `tests/http/routeTable.test.ts` (frozen, not owned by this
-  // build) hardcodes the exact path string `/admin/questions/:id` — the
+  // build) hardcodes the exact path string `/admin/questions/:id`, the
   // typed bank's admin update is actually keyed by SLUG (editing inserts a
   // new version rather than mutating in place, see
   // `question.service#adminUpdateQuestionBankEntry`'s doc), so the value
@@ -137,7 +137,7 @@ export function registerAdminRoutes(app: FastifyInstance, deps: AppDeps): void {
     const query = parseOrThrow(ListQuestionBankQuerySchema, req.query);
     // Admins managing the bank need to see inactive/retired questions too
     // (to review or reactivate them), not just what's currently offered to
-    // users — default to the full bank unless the caller asks to narrow it.
+    // users, default to the full bank unless the caller asks to narrow it.
     const items = await questionService.adminListQuestionBank(req.ctx!, {
       includeInactive: query.includeInactive ?? true,
     });
@@ -186,7 +186,7 @@ export function registerAdminRoutes(app: FastifyInstance, deps: AppDeps): void {
     reply.status(201).send(created);
   });
 
-  // Addition — conformance C-30.6.1 explicitly requires this route ("admin
+  // Addition, conformance C-30.6.1 explicitly requires this route ("admin
   // marks a venue inactive after it closes"); §24.13's literal list omits
   // it but §27 item 4 ("venue manager") implies update capability.
   app.patch('/admin/venues/:id', auth, async (req, reply) => {
@@ -256,7 +256,7 @@ export function registerAdminRoutes(app: FastifyInstance, deps: AppDeps): void {
   });
 
   // §4.3.6 addition: admin-only, logged dispute-override path (refund or
-  // release a specific hold outside the normal cancellation flow) — "only
+  // release a specific hold outside the normal cancellation flow), "only
   // where legally necessary", gated to admin and audited.
   app.post('/admin/payment-holds/:paymentHoldId/refund', auth, async (req, reply) => {
     const paymentHoldId = requireUuidParam(req.params, 'paymentHoldId');
@@ -299,10 +299,10 @@ async function scalarCount(ctx: import('../../lib/ctx.js').Ctx, sql: string, par
 
 /**
  * §26.1/§26.2 core + quality metrics, plus the §27 report-trend/
- * date-completion/photo-A/B/funnel views folded into one response —
+ * date-completion/photo-A/B/funnel views folded into one response,
  * documented in `routeTable.ts` as covering those four §27 items via this
  * one endpoint rather than four near-identical new routes. Never reachable
- * by a non-admin actor (C-26.3) — this function is only ever called from
+ * by a non-admin actor (C-26.3), this function is only ever called from
  * the admin-gated route above.
  */
 async function buildAnalyticsOverview(ctx: import('../../lib/ctx.js').Ctx): Promise<Record<string, unknown>> {

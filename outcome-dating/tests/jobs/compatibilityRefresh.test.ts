@@ -1,17 +1,17 @@
 /**
- * §25.4 Compatibility Score Refresh job — nightly full recompute of
+ * §25.4 Compatibility Score Refresh job, nightly full recompute of
  * `compatibility_scores`, run through the actual job function.
  *
- * CUTOVER NOTE (question-system-cutover build, reported — this file is
+ * CUTOVER NOTE (question-system-cutover build, reported, this file is
  * outside that build's file-ownership boundary and `src/jobs/**` is
  * explicitly off limits to edit): `compatibility.service.ts#refreshAllScores`
- * (called by `runCompatibilityRefreshJob` below, itself unmodified — a
+ * (called by `runCompatibilityRefreshJob` below, itself unmodified, a
  * one-line wrapper) now scores exclusively from the ONE typed question
- * bank (`question_bank`/`user_question_answers` —
+ * bank (`question_bank`/`user_question_answers`,
  * db/migrations/008_questions.sql), not the old `questions`/`answers`
  * pair. This file's fixtures were repointed at the new bank so its
  * assertions (a perfect shared answer set scores 1.0; changing an answer
- * changes the materialized score on the next nightly run) still hold —
+ * changes the materialized score on the next nightly run) still hold,
  * see src/services/question.service.ts's file-level CUTOVER doc for the
  * full accounting of what moved and why.
  */

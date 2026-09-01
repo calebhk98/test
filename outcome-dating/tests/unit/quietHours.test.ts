@@ -110,7 +110,7 @@ test('a notification raised during quiet hours is HELD, then delivered right aft
   // Still inside the window an hour later: still held.
   clock.advanceHours(1);
   const stillHeld = await runNotificationDeliveryWorker(sysCtx, { push, email });
-  assert.equal(stillHeld.processed, 0, 'not due yet — the held row\'s next_attempt_at is still in the future');
+  assert.equal(stillHeld.processed, 0, 'not due yet, the held row\'s next_attempt_at is still in the future');
 
   // Jump past quiet hours end.
   clock.set(new Date('2026-04-02T08:00:01.000Z'));
@@ -149,7 +149,7 @@ test('safety_notice bypasses quiet hours entirely and is delivered immediately',
 
 test('a non-safety event for a user with quiet hours disabled (the default) delivers immediately at any local hour', async () => {
   const user = await insertUser(pool);
-  const clock = new ManualClock(new Date('2026-04-01T03:00:00.000Z')); // 3am — would be "quiet" under a typical window, but none is configured
+  const clock = new ManualClock(new Date('2026-04-01T03:00:00.000Z')); // 3am, would be "quiet" under a typical window, but none is configured
   const userCtx = buildCtx({ actor: userActor(user), clock });
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' }, clock });
   await registerDeviceToken(userCtx, { platform: 'android', deviceId: 'd', pushToken: 'tok-nodefault' });

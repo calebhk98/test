@@ -29,7 +29,7 @@ export async function closePool(): Promise<void> {
 /**
  * A query-capable handle. Both `pg.Pool` and `pg.PoolClient` satisfy this,
  * so code that receives a `DbClient` works whether it's running outside a
- * transaction (pool) or inside one (checked-out client) — see
+ * transaction (pool) or inside one (checked-out client), see
  * `withTransaction` in src/db/tx.ts and `Ctx.db` in src/lib/ctx.ts.
  */
 export type DbClient = Pick<pg.Pool | pg.PoolClient, 'query'>;

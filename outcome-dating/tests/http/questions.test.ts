@@ -1,5 +1,5 @@
 /**
- * tests/http/questions.test.ts — end-to-end HTTP coverage for the ONE
+ * tests/http/questions.test.ts, end-to-end HTTP coverage for the ONE
  * typed question bank (db/migrations/008_questions.sql), driven through
  * the real routes (`src/http/routes/questions.routes.ts`) via
  * `app.inject`, not the service layer directly (that's
@@ -13,11 +13,11 @@
  *      the ladder shortcut.
  *   4. A `deal_breaker` answer persists a real, enabled hard filter
  *      (`GET /me/filters`), and softening it retracts (disables) that
- *      filter — the requirement #3 proof from the task brief.
+ *      filter, the requirement #3 proof from the task brief.
  *   5. `GET /me/filters` never excludes a candidate for an unset
  *      attribute unless the toggle is explicitly turned on (verified via
  *      the derived filter's `excludeIfUnset: true`, matching
- *      dealBreakers.ts's documented rule — unset stays included
+ *      dealBreakers.ts's documented rule, unset stays included
  *      everywhere else).
  *   6. Tag intensity + avoid-tags routes round-trip.
  */
@@ -43,7 +43,7 @@ interface BankQuestionOpts {
   baseWeight?: number;
 }
 
-/** Inserts a typed-bank question directly, bypassing the admin routes — `tests/http/admin.test.ts` is the dedicated coverage for `POST /admin/questions`/`PATCH /admin/questions/:id`; this file only needs bank rows to already exist. */
+/** Inserts a typed-bank question directly, bypassing the admin routes, `tests/http/admin.test.ts` is the dedicated coverage for `POST /admin/questions`/`PATCH /admin/questions/:id`; this file only needs bank rows to already exist. */
 async function insertBankQuestion(opts: BankQuestionOpts): Promise<string> {
   const { rows } = await t.pool.query<{ id: string }>(
     `INSERT INTO question_bank (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
@@ -73,7 +73,7 @@ const FIVE_CHOICE_TYPE_DEF = {
   ],
 };
 
-test('GET /questions: paginated — a small limit returns fewer items than the full seeded set, with a usable cursor', async () => {
+test('GET /questions: paginated, a small limit returns fewer items than the full seeded set, with a usable cursor', async () => {
   for (let i = 0; i < 5; i++) {
     await insertBankQuestion({ slug: `page-q-${i}-${Date.now()}`, typeDef: SCALE_TYPE_DEF });
   }
@@ -96,7 +96,7 @@ test('GET /questions: paginated — a small limit returns fewer items than the f
   for (const item of secondBody.items) assert.ok(!firstIds.has(item.id), 'page 2 must not repeat a page 1 item');
 });
 
-test('GET /questions: every item carries an explicit presentation — ladder for a two-option single_choice, value_importance otherwise', async () => {
+test('GET /questions: every item carries an explicit presentation, ladder for a two-option single_choice, value_importance otherwise', async () => {
   const binarySlug = `ladder-q-${Date.now()}`;
   const fiveSlug = `five-q-${Date.now()}`;
   await insertBankQuestion({ slug: binarySlug, typeDef: BINARY_CHOICE_TYPE_DEF });
@@ -194,7 +194,7 @@ test('GET /questions/next: never returns a question the user already answered', 
 });
 
 // =====================================================================
-// Deal-breaker filter persistence (task brief requirement #3) — a
+// Deal-breaker filter persistence (task brief requirement #3), a
 // deal_breaker answer must produce a real, enabled hard_filters row via
 // GET /me/filters; softening the answer must retract it.
 // =====================================================================
@@ -226,9 +226,9 @@ test('a deal_breaker answer persists an enabled qb: hard filter with excludeIfUn
   assert.equal(derived!.operator, 'in');
   assert.deepEqual(derived!.value, ['no']);
   // requirement #3: unset attributes stay INCLUDED by default everywhere
-  // EXCEPT where the deal breaker itself explicitly opts into strictness —
+  // EXCEPT where the deal breaker itself explicitly opts into strictness,
   // a deal-breaker-derived filter is exactly that explicit opt-in.
-  assert.equal(derived!.excludeIfUnset, true, 'a deal-breaker-derived filter must exclude an unresolved (never-answered) candidate — that is the point of a deal breaker');
+  assert.equal(derived!.excludeIfUnset, true, 'a deal-breaker-derived filter must exclude an unresolved (never-answered) candidate: that is the point of a deal breaker');
 
   // Soften the same question to a non-deal-breaker importance.
   await t.app.inject({
@@ -241,7 +241,7 @@ test('a deal_breaker answer persists an enabled qb: hard filter with excludeIfUn
   const afterSoften = await t.app.inject({ method: 'GET', url: '/me/filters', headers: authHeader(user.accessToken) });
   const filtersAfterSoften = JSON.parse(afterSoften.body) as Array<{ filterKey: string; enabled: boolean }>;
   const retracted = filtersAfterSoften.find((f) => f.filterKey === `qb:${slug}`);
-  assert.ok(retracted, 'the row is retracted (disabled), not deleted — updateMyFilters only ever upserts');
+  assert.ok(retracted, 'the row is retracted (disabled), not deleted, updateMyFilters only ever upserts');
   assert.equal(retracted!.enabled, false, 'softening a deal breaker must retract (disable) its derived hard filter');
 });
 

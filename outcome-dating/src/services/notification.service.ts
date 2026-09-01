@@ -6,7 +6,7 @@ import { newId } from '../lib/ids.js';
 import type { Notification, NotificationChannel, NotificationEventType, NotificationStatus, Page } from '../domain/types.js';
 
 /**
- * notification.service — §20 notifications.
+ * notification.service, §20 notifications.
  * Spec: §20.
  *
  * Owning agent: C.
@@ -14,13 +14,13 @@ import type { Notification, NotificationChannel, NotificationEventType, Notifica
  * HARD INVARIANT (spec §1 rule 9, §20 "All notification text must be
  * static or template-based. No generated natural language."): every
  * notification is rendered client-side (or by a push/email sender) from
- * `templateKey` + `payload` — this service NEVER constructs free-text
+ * `templateKey` + `payload`, this service NEVER constructs free-text
  * copy. `NOTIFICATION_TEMPLATES` is the fixed registry of allowed
  * `(eventType -> default templateKey)` pairs; `notify` rejects any
  * `templateKey` (default or caller-supplied) that isn't one of this
  * registry's *values*, and separately rejects a payload that tries to
  * carry free-text prose under a common footgun key (`body`/`text`/
- * `message`/`html`/`copy`/`content`) — payloads may only carry structured
+ * `message`/`html`/`copy`/`content`), payloads may only carry structured
  * data (ids, enums, numbers) for the static template to interpolate.
  *
  * This module is intentionally a leaf: it takes fully-formed event data
@@ -30,11 +30,11 @@ import type { Notification, NotificationChannel, NotificationEventType, Notifica
  * creating a cycle.
  */
 
-/** Fixed event -> default template key mapping (spec §20.1 event list x static-copy constraint). Real copy strings live in the client/email-renderer, not here — this registry is the contract for which key goes with which event. `Record<NotificationEventType, string>` also guarantees, at the type level, exactly one entry per event. */
+/** Fixed event -> default template key mapping (spec §20.1 event list x static-copy constraint). Real copy strings live in the client/email-renderer, not here, this registry is the contract for which key goes with which event. `Record<NotificationEventType, string>` also guarantees, at the type level, exactly one entry per event. */
 export const NOTIFICATION_TEMPLATES: Record<NotificationEventType, string> = {
   interest_received: 'interest_received_v1',
   interest_accepted: 'interest_accepted_v1',
-  interest_declined: 'interest_declined_generic_v1', // spec §11.4 "They passed on this match." — deliberately generic
+  interest_declined: 'interest_declined_generic_v1', // spec §11.4 "They passed on this match.", deliberately generic
   interest_expiring_soon: 'interest_expiring_soon_v1',
   chat_opened: 'chat_opened_v1',
   date_proposal_received: 'date_proposal_received_v1',
@@ -65,7 +65,7 @@ const VALID_TEMPLATE_KEYS: ReadonlySet<string> = new Set(Object.values(NOTIFICAT
 /**
  * Payload keys that would smuggle free-text prose into what must stay a
  * structured-data-only object (spec §1 rule 9, §20). Rejected outright by
- * `notify` — content comes from the static template the client renders,
+ * `notify`, content comes from the static template the client renders,
  * never from anything in `payload`.
  */
 const FORBIDDEN_PAYLOAD_KEYS = ['body', 'text', 'message', 'html', 'copy', 'content'] as const;
@@ -125,13 +125,13 @@ function decodeCursor(cursor: string): { createdAt: Date; id: string } {
   return { createdAt: new Date(iso), id };
 }
 
-/** Creates and enqueues one notification. §20.2 "Do not use SMS by default" — `channel` is restricted to push/email/in_app at the type level, so SMS isn't representable here. */
+/** Creates and enqueues one notification. §20.2 "Do not use SMS by default", `channel` is restricted to push/email/in_app at the type level, so SMS isn't representable here. */
 export async function notify(ctx: Ctx, input: NotifyInput): Promise<Notification> {
   const parsed = NotifyInputSchema.parse(input);
   const templateKey = parsed.templateKey ?? NOTIFICATION_TEMPLATES[parsed.eventType];
 
   if (!VALID_TEMPLATE_KEYS.has(templateKey)) {
-    throw new ValidationError('This notification could not be sent — its content template was not recognized.', {
+    throw new ValidationError('This notification could not be sent, its content template was not recognized.', {
       templateKey,
       eventType: parsed.eventType,
     });
@@ -141,7 +141,7 @@ export async function notify(ctx: Ctx, input: NotifyInput): Promise<Notification
   for (const key of FORBIDDEN_PAYLOAD_KEYS) {
     if (key in payload) {
       throw new ValidationError(
-        `Notification payload must not contain a free-text "${key}" field — content comes from the static template, never from payload prose.`,
+        `Notification payload must not contain a free-text "${key}" field, content comes from the static template, never from payload prose.`,
       );
     }
   }
@@ -209,10 +209,10 @@ export async function markNotificationRead(ctx: Ctx, notificationId: string): Pr
   const existingRow = existing[0];
   if (!existingRow) throw new NotFoundError(`Notification ${notificationId} not found.`);
   if (existingRow.user_id !== userId) throw new ForbiddenError('Not your notification.');
-  // else: already read — idempotent no-op.
+  // else: already read, idempotent no-op.
 }
 
-/** Delivers all 'pending' notifications for the given channel (push/email sender integration point — actual transport is out of scope for the foundation layer). */
+/** Delivers all 'pending' notifications for the given channel (push/email sender integration point, actual transport is out of scope for the foundation layer). */
 export async function deliverPending(ctx: Ctx, channel: NotificationChannel): Promise<{ sent: number; failed: number }> {
   if (ctx.actor.type !== 'system' && ctx.actor.type !== 'admin') {
     throw new ForbiddenError('Only a system job or an admin may trigger notification delivery.');
@@ -227,7 +227,7 @@ export async function deliverPending(ctx: Ctx, channel: NotificationChannel): Pr
 
   const ids = rows.map((r) => r.id);
   // Real push/email transport is out of scope for the foundation layer
-  // (see INTERFACES.md "what's real vs. stubbed") — this simulates a
+  // (see INTERFACES.md "what's real vs. stubbed"), this simulates a
   // successful hand-off to whichever sender integration lands later.
   await ctx.db.query(`UPDATE notifications SET status = 'sent', sent_at = $2 WHERE id = ANY($1::uuid[])`, [ids, now]);
   return { sent: ids.length, failed: 0 };

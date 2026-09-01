@@ -1,9 +1,9 @@
 /**
  * Public surface of the notification DELIVERY layer. Raising services
  * (interest/conversation/dateProposal/message/trust/moderation) should
- * only ever need `enqueueNotification` from here — everything else is for
+ * only ever need `enqueueNotification` from here, everything else is for
  * the jobs worker, the HTTP layer's device/preference/quiet-hours
- * endpoints (owned elsewhere — not wired by this build, see the report),
+ * endpoints (owned elsewhere, not wired by this build, see the report),
  * and tests.
  */
 
@@ -49,7 +49,7 @@ import { FakeEmailSender } from './adapters/fake.email.js';
 import { FakeSmsSender } from './adapters/fake.sms.js';
 import type { NotificationSenders } from './delivery.js';
 
-/** Convenience dev/test senders — deterministic in-memory fakes, no credentials required. Production wiring (choosing FCM/APNs/SES/Twilio vs these fakes) is the jobs/index.ts owner's call; see this build's report for the exact env-driven switch to add there. */
+/** Convenience dev/test senders, deterministic in-memory fakes, no credentials required. Production wiring (choosing FCM/APNs/SES/Twilio vs these fakes) is the jobs/index.ts owner's call; see this build's report for the exact env-driven switch to add there. */
 export function defaultDevSenders(): NotificationSenders {
   return { push: new FakePushSender(), email: new FakeEmailSender(), sms: new FakeSmsSender() };
 }

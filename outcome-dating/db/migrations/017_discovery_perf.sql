@@ -17,7 +17,7 @@
 -- (`src/db/pool.ts`) for its entire multi-second-to-minutes duration.
 --
 -- THE FIX (application-layer half lives in discovery.service.ts /
--- filter.service.ts — this migration is the schema half it depends on):
+-- filter.service.ts, this migration is the schema half it depends on):
 -- bound the candidate pool geographically FIRST, before any per-candidate
 -- work happens, using a plain lat/long bounding-box prefilter
 -- (`filter.service.ts#boundingBoxForRadius`), and cap+order the result so
@@ -27,21 +27,21 @@
 --
 -- WHY NO POSTGIS / earthdistance / cube EXTENSION: the only extension
 -- this codebase has ever loaded is `pgcrypto` (001_init.sql). A bounding
--- BOX (not a circle — a box that fully contains the circle of the
+-- BOX (not a circle, a box that fully contains the circle of the
 -- intended radius, so it can only ever admit extra rows for the existing
 -- exact `haversineKm` check downstream to correctly reject, never wrongly
 -- exclude a real candidate) needs nothing more exotic than a composite
 -- btree index on two plain `double precision` columns. That is enough to
 -- turn "every active user on the platform" into "active users within a
 -- few hundred km of the viewer" at an index-range-scan cost, which is the
--- actual win being bought here — see this build's report for the
+-- actual win being bought here, see this build's report for the
 -- measured query-count and latency numbers before/after. Adding a new
 -- extension dependency (install/availability per environment, admin
 -- privileges to `CREATE EXTENSION`) would buy index-native circle/
 -- polygon queries this codebase has no present use for; a composite
 -- btree is the smallest change that fixes the actual defect.
 --
--- Both indexes are plain `CREATE INDEX` (not CONCURRENTLY) — consistent
+-- Both indexes are plain `CREATE INDEX` (not CONCURRENTLY), consistent
 -- with every prior migration in this file set, all of which run inside
 -- migrate.ts's per-file transaction (CONCURRENTLY cannot run inside a
 -- transaction block at all). This is a dev/test-scale codebase (see

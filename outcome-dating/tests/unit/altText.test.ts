@@ -1,11 +1,11 @@
 /**
- * tests/unit/altText.test.ts — the accessibility suite:
+ * tests/unit/altText.test.ts, the accessibility suite:
  *
- *   1. photo alt text (src/services/photoAltText.service.ts) — travels
+ *   1. photo alt text (src/services/photoAltText.service.ts), travels
  *      with the photo everywhere it's fetched, ownership-checked,
  *      clearable, batch-readable.
  *   2. every status carries a non-colour label
- *      (src/domain/i18n/statusLabels.ts) — full domain coverage, tone is
+ *      (src/domain/i18n/statusLabels.ts), full domain coverage, tone is
  *      never a colour name, labels degrade to English rather than
  *      throwing for an untranslated locale.
  *   3. static-scan guards mirroring tests/unit/copyGuard.test.ts's own
@@ -67,7 +67,7 @@ test('setPhotoAltText: rejects someone else\'s photo with NotFoundError, not sil
   await assert.rejects(() => setPhotoAltText(ctx, photoId, { altText: 'Someone else\'s photo.' }), NotFoundError);
 });
 
-test('setPhotoAltText: rejects empty/whitespace-only text — a photo should read as "not described", never "described with nothing"', async () => {
+test('setPhotoAltText: rejects empty/whitespace-only text, a photo should read as "not described", never "described with nothing"', async () => {
   const userId = await createUser(pool);
   const photoId = await createPhoto(pool, userId);
   const ctx = buildCtx({ actor: userActor(userId) });
@@ -87,7 +87,7 @@ test('clearPhotoAltText: withdraws a description back to null, distinct from nev
   assert.equal(fetched?.altText, null);
 });
 
-test('getAltTextForPhotos: batch read returns every requested photo, described or not, in one call — the shape any serializer needs to make alt text travel with the photo', async () => {
+test('getAltTextForPhotos: batch read returns every requested photo, described or not, in one call, the shape any serializer needs to make alt text travel with the photo', async () => {
   const userId = await createUser(pool);
   const described = await createPhoto(pool, userId, { isPrimary: true });
   const undescribed = await createPhoto(pool, userId, { isPrimary: false });
@@ -176,7 +176,7 @@ test('describeStatus: an unshipped locale degrades to the English label rather t
   assert.equal(result.label, 'Trusted', 'falls back to English, not a thrown error or a raw key');
 });
 
-test('describeStatus: an unknown (domain, value) pair throws — a code bug, not a runtime condition to hide', () => {
+test('describeStatus: an unknown (domain, value) pair throws, a code bug, not a runtime condition to hide', () => {
   assert.throws(() => describeStatus('trustLevel', 'nonexistent_level', 'en'));
 });
 
@@ -195,7 +195,7 @@ test('no abbreviation-shaped labels in STATUS_REGISTRY (a screen reader must be 
 // 3a. No emoji / symbol-only meaning in this build's own copy catalog.
 // -------------------------------------------------------------------------
 
-/** Matches any character in a Unicode emoji block — deliberately broad (better to over-flag during authoring than ship an emoji that slips through a narrower range). */
+/** Matches any character in a Unicode emoji block, deliberately broad (better to over-flag during authoring than ship an emoji that slips through a narrower range). */
 const EMOJI_PATTERN = /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{1F000}-\u{1F0FF}\u{2190}-\u{21FF}\u{2B00}-\u{2BFF}]/u;
 
 test('the copy catalog contains no emoji or symbol standing in for meaning', () => {
@@ -220,7 +220,7 @@ test('the status label registry also contains no emoji or symbol standing in for
 });
 
 // -------------------------------------------------------------------------
-// 3b. Structured, not pre-formatted, values — regression guard.
+// 3b. Structured, not pre-formatted, values, regression guard.
 // Same static-scan technique as tests/unit/copyGuard.test.ts: extract every
 // quoted string literal from src/http/serializers/**, fail if one looks
 // like a pre-rendered relative-time string a server should never emit.
@@ -248,7 +248,7 @@ function extractStringLiterals(source: string): string[] {
   return literals;
 }
 
-test('no serializer emits a pre-rendered relative-time string — timestamps stay structured ISO-8601 (regression guard, property already held before this build)', () => {
+test('no serializer emits a pre-rendered relative-time string, timestamps stay structured ISO-8601 (regression guard, property already held before this build)', () => {
   const violations: Array<{ file: string; literal: string }> = [];
   for (const file of listTsFiles(SERIALIZERS_DIR)) {
     for (const literal of extractStringLiterals(readFileSync(file, 'utf8'))) {

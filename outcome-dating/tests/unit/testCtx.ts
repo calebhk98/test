@@ -1,9 +1,9 @@
 /**
  * Shared test setup for Agent A's unit tests (auth/profile/photo/photoExperiment).
- * Not part of INTERFACES.md's frozen list — a local helper the three
+ * Not part of INTERFACES.md's frozen list, a local helper the three
  * `tests/unit/*.test.ts` files share to avoid duplicating DB bootstrap.
  *
- * Uses a dedicated `odate_agent_a` database (per the build brief — never
+ * Uses a dedicated `odate_agent_a` database (per the build brief, never
  * touches `outcome_dating`/`outcome_dating_test`, which siblings/the
  * foundation smoke test use) so this agent's tests can run independently
  * of, and concurrently with, sibling agents' own test databases on the
@@ -23,13 +23,13 @@ import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-/** Base name for this agent's test databases — each of the (separately-processed, per Node's default test-file isolation) `tests/unit/*.test.ts` files must still pass its own unique `suffix` to `setupTestDatabase`, or two of *this agent's own* test files running concurrently will race DROP/CREATE DATABASE against each other on the shared dev Postgres cluster. */
+/** Base name for this agent's test databases, each of the (separately-processed, per Node's default test-file isolation) `tests/unit/*.test.ts` files must still pass its own unique `suffix` to `setupTestDatabase`, or two of *this agent's own* test files running concurrently will race DROP/CREATE DATABASE against each other on the shared dev Postgres cluster. */
 const AGENT_A_DB_BASE_NAME = 'odate_agent_a';
 /**
  * Per-process random suffix, appended to every database name below. A
  * `<prefix>_<suffix>` name is unique WITHIN one `npm test` run (Node's
  * test runner gives each `*.test.ts` file its own process), but every
- * harness in this repo previously computed the same name on every run —
+ * harness in this repo previously computed the same name on every run,
  * so two *overlapping* `npm test` invocations (this repo's test suite is
  * routinely run by more than one agent at once against the same shared
  * dev Postgres cluster on port 55433) would DROP a database the other
@@ -91,7 +91,7 @@ export interface BuildCtxOptions {
   now?: Date;
 }
 
-/** Builds a fresh Ctx bound to the shared test pool. `clock` is a fresh ManualClock per call unless `now` is supplied — pass the same `Date` across calls if a test needs a shared clock instance (use `ctx.clock` directly then). */
+/** Builds a fresh Ctx bound to the shared test pool. `clock` is a fresh ManualClock per call unless `now` is supplied, pass the same `Date` across calls if a test needs a shared clock instance (use `ctx.clock` directly then). */
 export function buildCtx(opts: BuildCtxOptions = {}): Ctx {
   const pool = getTestPool();
   const clock = new ManualClock(opts.now ?? new Date());

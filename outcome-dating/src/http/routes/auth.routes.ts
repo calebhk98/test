@@ -1,5 +1,5 @@
 /**
- * §24.1 Auth routes. All public (no bearer token) — this is the one route
+ * §24.1 Auth routes. All public (no bearer token), this is the one route
  * group the conformance plan (C-24.1) requires be reachable with no prior
  * access token.
  */
@@ -18,7 +18,7 @@ const RegisterBodySchema = z.object({
   email: z.string(),
   password: z.string(),
   birthdate: z.string(),
-  /** §5.1 rule 4 — spec-facing field name; translated to `RegisterInput.acceptedTermsAt` below. */
+  /** §5.1 rule 4, spec-facing field name; translated to `RegisterInput.acceptedTermsAt` below. */
   termsAccepted: z.boolean(),
   city: z.string().optional(),
   locationPermission: z.boolean().optional(),
@@ -35,7 +35,7 @@ const ForgotPasswordBodySchema = z.object({ email: z.string() });
 const ResetPasswordBodySchema = z.object({ resetToken: z.string(), newPassword: z.string() });
 const VerifyEmailBodySchema = z.object({ token: z.string() });
 
-// Optional phone number (build correction — see auth.service.ts module doc).
+// Optional phone number (build correction, see auth.service.ts module doc).
 const RequestPhoneBodySchema = z.object({ phoneNumber: z.string(), country: z.string() });
 const VerifyPhoneBodySchema = z.object({ code: z.string() });
 
@@ -94,7 +94,7 @@ export function registerAuthRoutes(app: FastifyInstance, deps: AppDeps, limiter:
     authAbuseGuard('forgot-password', 5)(req);
     const body = parseOrThrow(ForgotPasswordBodySchema, req.body);
     await authService.forgotPassword(systemCtx(deps, 'http.auth.forgot_password'), { email: body.email });
-    // Always 202, regardless of whether the email exists — auth.service
+    // Always 202, regardless of whether the email exists, auth.service
     // itself never leaks that; the route must not either.
     reply.status(202).send({ status: 'ok' });
   });
@@ -121,11 +121,11 @@ export function registerAuthRoutes(app: FastifyInstance, deps: AppDeps, limiter:
     reply.status(204).send();
   });
 
-  // ---- Optional phone number (build correction — never mandatory; see
-  // auth.service.ts module doc). All four require an authenticated user —
+  // ---- Optional phone number (build correction, never mandatory; see
+  // auth.service.ts module doc). All four require an authenticated user,
   // a phone is something a logged-in account manages, never a registration
   // input. Responses are built inline here rather than through
-  // `src/http/serializers/*` — `getMyPhoneStatus` already returns a masked,
+  // `src/http/serializers/*`, `getMyPhoneStatus` already returns a masked,
   // owner-only view (never the full E.164 number, see its own doc), so
   // there is nothing left for a serializer layer to strip. ----
   app.post('/auth/phone', { preHandler: authenticate(deps) }, async (req, reply) => {

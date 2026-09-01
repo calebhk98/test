@@ -1,5 +1,5 @@
 /**
- * src/config/adapters.ts — explicit, exhaustive environment-driven adapter
+ * src/config/adapters.ts, explicit, exhaustive environment-driven adapter
  * selection, plus the production fail-fast guard built on top of it.
  *
  * PROBLEM THIS FILE CLOSES (see docs/scale-and-sources.md Part 2, and the
@@ -9,8 +9,8 @@
  *   env.PAYMENT_PROCESSOR === 'stripe' ? new StripeProcessor(...) : new FakeProcessor()
  *
  * which silently resolves to the fake/in-memory adapter for ANY value of
- * the env var — unset, misspelled, or simply forgotten in a deployment
- * manifest — including in production. `StubMediaModerationAdapter` was
+ * the env var, unset, misspelled, or simply forgotten in a deployment
+ * manifest, including in production. `StubMediaModerationAdapter` was
  * worse: it was wired with no env switch at all. Nothing refused to start;
  * a misconfigured production deployment looked, and ran, exactly like a
  * healthy one.
@@ -20,11 +20,11 @@
  * 1. Selection here is a function of `env.NODE_ENV`, not of the
  *    provider-name env var alone. Every `selectX`/`describeX` pair below
  *    switches on `env.NODE_ENV` with all three branches written out and a
- *    compile-time-enforced `assertNever` default — adding a fourth
+ *    compile-time-enforced `assertNever` default, adding a fourth
  *    `NODE_ENV` value (or a new capability, by copying this shape) forces
  *    every switch to be revisited; there is no default arm a new case can
  *    silently fall into. Outside production, the fake/in-memory/stub
- *    adapter is *always* selected — no configuration required, per the
+ *    adapter is *always* selected, no configuration required, per the
  *    build brief's "fakes must remain the effortless default outside
  *    production" rule. Inside production, the provider-name env var is
  *    read, but an unset/fake/unimplemented value is a hard error, never a
@@ -35,15 +35,15 @@
  *    misconfiguration in a single pass instead of a restart-per-error
  *    loop. It is called explicitly at process startup (`src/index.ts`)
  *    and is also enforced independently, per capability, by `buildDeps`
- *    (`src/http/deps.ts`) via the `selectX` functions themselves — so
+ *    (`src/http/deps.ts`) via the `selectX` functions themselves, so
  *    even a future caller that forgets to invoke the guard still cannot
  *    end up with a production `AppDeps` wired to a fake adapter.
  *
  * MEDIA MODERATION SPECIAL CASE: no real `ImageModerationPort`
  * implementation exists anywhere in this codebase yet (only
- * `StubMediaModerationAdapter` does — see docs/scale-and-sources.md
+ * `StubMediaModerationAdapter` does, see docs/scale-and-sources.md
  * §2.3/§2.6). `MEDIA_MODERATION_PROVIDER` is the configuration seam this
- * file adds so a real provider CAN be selected once one exists — but
+ * file adds so a real provider CAN be selected once one exists, but
  * today, selecting anything (stub or otherwise) fails in production,
  * which is the correct, honest behavior: per the doc's own conclusion,
  * "treat photo moderation as off in any environment reachable by real
@@ -51,7 +51,7 @@
  * `selectMediaModerationAdapter` below.
  *
  * NO SECRET VALUE IS EVER PLACED IN A `ReadinessEntry`, A THROWN ERROR
- * MESSAGE, OR A LOG LINE — every check below reports only booleans,
+ * MESSAGE, OR A LOG LINE, every check below reports only booleans,
  * lengths, and provider names. See `tests/unit/productionGuard.test.ts`'s
  * "never leaks a secret value" tests.
  */
@@ -72,25 +72,25 @@ import type { SmsSender } from '../services/notifications/ports/sms.port.js';
 import { FakeSmsSender } from '../services/notifications/adapters/fake.sms.js';
 import { TwilioSmsSender } from '../services/notifications/adapters/twilio.sms.js';
 
-/** Exhaustiveness helper: a call site that reaches this has an un-handled case — TypeScript rejects the call unless `x` is provably `never`, i.e. every declared case has already been handled above it. */
+/** Exhaustiveness helper: a call site that reaches this has an un-handled case, TypeScript rejects the call unless `x` is provably `never`, i.e. every declared case has already been handled above it. */
 function assertNever(x: never): never {
-  throw new Error(`adapters.ts: unreachable case reached (${JSON.stringify(x)}) — a value was added without a corresponding branch.`);
+  throw new Error(`adapters.ts: unreachable case reached (${JSON.stringify(x)}), a value was added without a corresponding branch.`);
 }
 
 // The literal insecure/local defaults this guard refuses to run on in
-// production. Mirrors the `.default(...)` values in `env.ts` — kept as
+// production. Mirrors the `.default(...)` values in `env.ts`, kept as
 // named constants here (rather than re-imported) because `env.ts`
 // intentionally has no dependency on this file.
 const DEV_DEFAULT_AUTH_SECRET = 'dev-insecure-secret-change-me';
 const DEV_DEFAULT_DATABASE_URL = 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 
-/** Minimum acceptable length for a production HMAC-SHA256 signing secret (`src/lib/signing.ts`) — 32 chars is a conservative floor for 256-bit-class key material, not a hard cryptographic requirement for the string encoding used. */
+/** Minimum acceptable length for a production HMAC-SHA256 signing secret (`src/lib/signing.ts`), 32 chars is a conservative floor for 256-bit-class key material, not a hard cryptographic requirement for the string encoding used. */
 const MIN_SECRET_LENGTH = 32;
 
 export interface ReadinessEntry {
   /** Stable machine-readable capability id, e.g. "payments", "mediaModeration". */
   capability: string;
-  /** The adapter's own `.name` (or a short status token for non-adapter checks) — never a secret value. */
+  /** The adapter's own `.name` (or a short status token for non-adapter checks), never a secret value. */
   selected: string;
   /** True when the active/attempted choice is a fake, stub, or in-memory implementation. */
   isFake: boolean;
@@ -139,7 +139,7 @@ function describePayments(env: Env): ReadinessEntry {
           selected: env.PAYMENT_PROCESSOR,
           isFake: env.PAYMENT_PROCESSOR === 'fake',
           ok: false,
-          detail: `PAYMENT_PROCESSOR="${env.PAYMENT_PROCESSOR}" — production requires PAYMENT_PROCESSOR=stripe. Running "fake" in production means date proposals get "authorized," tickets get issued, and venues get recorded as paid while no money ever moves.`,
+          detail: `PAYMENT_PROCESSOR="${env.PAYMENT_PROCESSOR}", production requires PAYMENT_PROCESSOR=stripe. Running "fake" in production means date proposals get "authorized," tickets get issued, and venues get recorded as paid while no money ever moves.`,
         };
       }
       const missing = [!env.STRIPE_SECRET_KEY && 'STRIPE_SECRET_KEY', !env.STRIPE_WEBHOOK_SECRET && 'STRIPE_WEBHOOK_SECRET'].filter(
@@ -180,7 +180,7 @@ export function selectPaymentProcessor(env: Env): PaymentProcessor {
 // a future agent implements a real adapter and calls
 // `registerMediaModerationProvider('vision_api', (env) => new
 // VisionApiAdapter(...))` (e.g. from that adapter's own module, imported
-// once from `src/http/deps.ts`) — nothing about the selection/guard logic
+// once from `src/http/deps.ts`), nothing about the selection/guard logic
 // below needs to change. The registry starts empty, which is exactly why
 // production can never select a real media-moderation adapter today: none
 // has been registered, matching docs/scale-and-sources.md §2.3/§2.6's
@@ -220,7 +220,7 @@ function describeMedia(env: Env): ReadinessEntry {
           isFake: true,
           ok: false,
           detail:
-            'MEDIA_MODERATION_PROVIDER is unset (or "stub") — the stub adapter approves virtually any photo by URL heuristic alone and MUST NOT run in production: it would approve real nudity, weapons, and illegal-content photos the product is required to block. Implement a real ImageModerationPort adapter, register it with registerMediaModerationProvider(...) in src/config/adapters.ts, then set MEDIA_MODERATION_PROVIDER to select it.',
+            'MEDIA_MODERATION_PROVIDER is unset (or "stub"), the stub adapter approves virtually any photo by URL heuristic alone and MUST NOT run in production: it would approve real nudity, weapons, and illegal-content photos the product is required to block. Implement a real ImageModerationPort adapter, register it with registerMediaModerationProvider(...) in src/config/adapters.ts, then set MEDIA_MODERATION_PROVIDER to select it.',
         };
       }
       if (!mediaModerationProviders.has(provider)) {
@@ -239,7 +239,7 @@ function describeMedia(env: Env): ReadinessEntry {
   }
 }
 
-/** Selects the `ImageModerationPort` for `env.NODE_ENV`. Throws in production unless a real provider has been registered via `registerMediaModerationProvider` — see the module doc above. */
+/** Selects the `ImageModerationPort` for `env.NODE_ENV`. Throws in production unless a real provider has been registered via `registerMediaModerationProvider`, see the module doc above. */
 export function selectMediaModerationAdapter(env: Env): ImageModerationPort {
   switch (env.NODE_ENV) {
     case 'development':
@@ -277,7 +277,7 @@ function describePush(env: Env): ReadinessEntry {
             selected: 'fake',
             isFake: true,
             ok: false,
-            detail: 'PUSH_PROVIDER=fake (or unset) — refusing to run the fake push sender in production. Set PUSH_PROVIDER=fcm or PUSH_PROVIDER=apns.',
+            detail: 'PUSH_PROVIDER=fake (or unset), refusing to run the fake push sender in production. Set PUSH_PROVIDER=fcm or PUSH_PROVIDER=apns.',
           };
         case 'fcm':
           if (!env.FCM_SERVICE_ACCOUNT_JSON) {
@@ -352,7 +352,7 @@ function describeEmail(env: Env): ReadinessEntry {
             selected: 'fake',
             isFake: true,
             ok: false,
-            detail: 'EMAIL_PROVIDER=fake (or unset) — refusing to run the fake email sender in production. Set EMAIL_PROVIDER=ses.',
+            detail: 'EMAIL_PROVIDER=fake (or unset), refusing to run the fake email sender in production. Set EMAIL_PROVIDER=ses.',
           };
         case 'ses': {
           const missing = [!env.SES_REGION && 'SES_REGION', !env.SES_FROM_ADDRESS && 'SES_FROM_ADDRESS'].filter((x): x is string => Boolean(x));
@@ -410,7 +410,7 @@ function describeSms(env: Env): ReadinessEntry {
             selected: 'fake',
             isFake: true,
             ok: false,
-            detail: 'SMS_PROVIDER=fake (or unset) — refusing to run the fake SMS sender in production. Set SMS_PROVIDER=twilio.',
+            detail: 'SMS_PROVIDER=fake (or unset), refusing to run the fake SMS sender in production. Set SMS_PROVIDER=twilio.',
           };
         case 'twilio': {
           const missing = [!env.TWILIO_ACCOUNT_SID && 'TWILIO_ACCOUNT_SID', !env.TWILIO_AUTH_TOKEN && 'TWILIO_AUTH_TOKEN', !env.TWILIO_FROM_NUMBER && 'TWILIO_FROM_NUMBER'].filter(
@@ -458,7 +458,7 @@ export function selectSmsSender(env: Env): SmsSender {
 
 // ---------------------------------------------------------------------
 // Secrets and the database connection (not adapter selections, but the
-// same "silent insecure default in production" failure pattern —
+// same "silent insecure default in production" failure pattern,
 // docs/scale-and-sources.md §2.4).
 // ---------------------------------------------------------------------
 
@@ -506,7 +506,7 @@ function describeVoucherSecret(env: Env): ReadinessEntry {
       isFake: false,
       ok: false,
       detail:
-        'VOUCHER_QR_SECRET is not set. In production it must be a dedicated secret, separate from AUTH_TOKEN_SECRET — a leaked venue-facing QR secret must never be usable to mint auth tokens — so it must not silently fall back to AUTH_TOKEN_SECRET the way it does outside production.',
+        'VOUCHER_QR_SECRET is not set. In production it must be a dedicated secret, separate from AUTH_TOKEN_SECRET, a leaked venue-facing QR secret must never be usable to mint auth tokens, so it must not silently fall back to AUTH_TOKEN_SECRET the way it does outside production.',
     };
   }
   if (env.VOUCHER_QR_SECRET.length < MIN_SECRET_LENGTH) {
@@ -551,7 +551,7 @@ function describeDatabase(env: Env): ReadinessEntry {
     return { capability, selected: 'invalid', isFake: false, ok: false, detail: 'DATABASE_URL is not a valid URL.' };
   }
   if (parsed.protocol !== 'postgres:' && parsed.protocol !== 'postgresql:') {
-    return { capability, selected: 'invalid', isFake: false, ok: false, detail: `DATABASE_URL has scheme "${parsed.protocol}" — expected postgres:// or postgresql://.` };
+    return { capability, selected: 'invalid', isFake: false, ok: false, detail: `DATABASE_URL has scheme "${parsed.protocol}", expected postgres:// or postgresql://.` };
   }
   return { capability, selected: 'configured', isFake: false, ok: true, detail: 'DATABASE_URL is set to a non-default value.' };
 }
@@ -560,7 +560,7 @@ function describeDatabase(env: Env): ReadinessEntry {
 // Aggregate report + guard
 // ---------------------------------------------------------------------
 
-/** Builds the full per-capability readiness report for `env`. Never throws, and never includes a secret value — safe to log or serve over HTTP as-is. */
+/** Builds the full per-capability readiness report for `env`. Never throws, and never includes a secret value, safe to log or serve over HTTP as-is. */
 export function buildReadinessReport(env: Env): ReadinessReport {
   const entries: ReadinessEntry[] = [
     describePayments(env),
@@ -584,7 +584,7 @@ export function buildReadinessReport(env: Env): ReadinessReport {
  * The startup fail-fast guard. Builds the readiness report and, only when
  * `env.NODE_ENV==='production'` and one or more capabilities are not
  * ready, throws a single `ProductionConfigError` naming every problem at
- * once. Outside production this never throws — it only returns the report
+ * once. Outside production this never throws, it only returns the report
  * (still useful to log, so an operator can see which fakes are active in
  * dev/test too).
  */

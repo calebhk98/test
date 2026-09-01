@@ -1,5 +1,5 @@
 /**
- * tests/unit/integrity.test.ts — proves every constraint added by
+ * tests/unit/integrity.test.ts, proves every constraint added by
  * db/migrations/025_integrity.sql actually rejects the bad state it
  * names, not merely that the good state still works. See that file and
  * docs/normalization.md for the full reasoning behind each choice
@@ -8,7 +8,7 @@
  *
  * Self-contained database setup (own `odate_integrity_<suite>` database,
  * per the build brief), independent of the other agents' shared test
- * harnesses — this file spans tables/constraints that cut across more
+ * harnesses, this file spans tables/constraints that cut across more
  * than one agent's usual territory (users, interests, date_proposals,
  * payment_holds, post_date_feedback), so it does not adopt any one of
  * them.
@@ -82,7 +82,7 @@ async function assertCheckViolation(fn: () => Promise<unknown>, label: string): 
     fn,
     (err: unknown) => {
       const code = (err as { code?: string }).code;
-      assert.equal(code, '23514', `${label}: expected a check_violation (23514), got ${code} — ${(err as Error).message}`);
+      assert.equal(code, '23514', `${label}: expected a check_violation (23514), got ${code}, ${(err as Error).message}`);
       return true;
     },
     `${label}: expected the insert/update to be rejected, but it succeeded`,
@@ -188,16 +188,16 @@ test('the legacy feedback path and the check-in path now share one write stateme
     `SELECT positive, outcome FROM post_date_feedback WHERE date_proposal_id = $1 AND user_id = $2`,
     [dp, alice],
   );
-  assert.equal(afterLegacy[0]!.positive, null, 'submitLegacyFeedback never writes the positive column any more — only outcome');
+  assert.equal(afterLegacy[0]!.positive, null, 'submitLegacyFeedback never writes the positive column any more, only outcome');
   assert.equal(afterLegacy[0]!.outcome, 'happened_good');
 
-  // Same user, same date, now through the check-in path with the OPPOSITE outcome — this used to be a second independent writer.
+  // Same user, same date, now through the check-in path with the OPPOSITE outcome, this used to be a second independent writer.
   await postDateFeedbackService.submitCheckIn(aliceCtx, dp, { outcome: 'happened_bad' });
   const { rows: afterCheckIn } = await pool.query<{ positive: boolean | null; outcome: string | null }>(
     `SELECT positive, outcome FROM post_date_feedback WHERE date_proposal_id = $1 AND user_id = $2`,
     [dp, alice],
   );
-  assert.equal(afterCheckIn[0]!.outcome, 'happened_bad', 'the later call wins — one row, one writer, no contradiction possible');
+  assert.equal(afterCheckIn[0]!.outcome, 'happened_bad', 'the later call wins, one row, one writer, no contradiction possible');
   assert.equal(afterCheckIn[0]!.positive, null, 'positive was never touched by either call, so there is nothing left to disagree with outcome');
 });
 
@@ -249,7 +249,7 @@ test('recalculateTrustScore always writes a trust_score/trust_level pair the DB 
   const { rows: expected1 } = await pool.query<{ level: string }>(`SELECT trust_level_for_score($1) AS level`, [row1[0]!.trust_score]);
   assert.equal(row1[0]!.trust_level, expected1[0]!.level, 'the stored trust_level must always equal what trust_level_for_score derives from the stored trust_score');
 
-  // Retune the bands, then recalculate again — the newly-written pair must reflect the NEW bands, not the ones at insert time.
+  // Retune the bands, then recalculate again, the newly-written pair must reflect the NEW bands, not the ones at insert time.
   await ctx.config.set('trust.level_standard_min', 0, 'test-admin');
   await ctx.config.set('trust.level_trusted_min', row1[0]!.trust_score, 'test-admin'); // exactly at the user's current score
   const result2 = await trustService.recalculateTrustScore(userCtx, userId);

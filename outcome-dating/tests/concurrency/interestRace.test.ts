@@ -8,11 +8,11 @@
  * the ordinary post-hoc illegal-transition guard, not a race. The one
  * genuinely concurrent pattern already in the suite is
  * `tests/jobs/scheduler.test.ts`'s `Promise.all`-based advisory-lock
- * test — this file applies that same pattern (via `Promise.allSettled`,
+ * test, this file applies that same pattern (via `Promise.allSettled`,
  * since here we expect exactly one side to reject) to the interest
  * machine `interest.service.ts` already protects with a single atomic
  * `UPDATE ... WHERE status = 'pending'` (a compare-and-swap, not a
- * read-then-write), so this is expected to genuinely pass — it is the
+ * read-then-write), so this is expected to genuinely pass, it is the
  * proof that CAS pattern actually holds under real concurrency, not just
  * in the sequential tests that were already there.
  */
@@ -68,7 +68,7 @@ test('C-11.4.SM.I6: concurrent accept + decline of the SAME interest resolves to
     outgoing!.status === 'accepted' || outgoing!.status === 'declined',
     'must land on exactly one terminal state, never neither and never both',
   );
-  // Whichever call actually won must match the row's final status —
+  // Whichever call actually won must match the row's final status,
   // proves the "winner" promise and the persisted state agree, not just
   // that some promise resolved.
   if (a.status === 'fulfilled') assert.equal(outgoing!.status, 'accepted');

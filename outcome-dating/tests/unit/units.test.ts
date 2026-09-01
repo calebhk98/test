@@ -1,16 +1,16 @@
 /**
- * Unit tests for src/domain/units/ — pure, no I/O, no database (every
+ * Unit tests for src/domain/units/, pure, no I/O, no database (every
  * function under test is a pure function of its inputs).
  *
  * Covers:
  *   - round-trip conversion stability across the plausible height/weight/
- *     distance ranges (converting to imperial and back must not drift —
+ *     distance ranges (converting to imperial and back must not drift,
  *     tested as idempotency of the display-rounded round trip, which is
  *     the correct formalization of "stable": the FIRST conversion may
  *     round, but re-applying the round trip to an already-rounded value
  *     must reproduce the same value, forever).
  *   - a compile-time (`@ts-expect-error`) proof that a value in one unit
- *     cannot be used where another is expected — this is the "structural
+ *     cannot be used where another is expected, this is the "structural
  *     guarantee" the product owner asked for: if branding ever regresses,
  *     `npx tsc --noEmit` fails the build, not just this test file.
  *   - formatting output shapes (feet+inches, whole km/mi, etc).
@@ -55,17 +55,17 @@ test('branded types make unit mixing a compile-time error (and this test proves 
   const distanceMiles = miles(3);
   const heightCm = centimetres(180);
 
-  // @ts-expect-error — a Miles value cannot be assigned where Kilometres is expected, even though both are `number` at runtime.
+  // @ts-expect-error, a Miles value cannot be assigned where Kilometres is expected, even though both are `number` at runtime.
   const mixedDistance: Kilometres = distanceMiles;
-  // @ts-expect-error — a Kilometres value cannot be assigned where Miles is expected (the mismatch is symmetric).
+  // @ts-expect-error, a Kilometres value cannot be assigned where Miles is expected (the mismatch is symmetric).
   const mixedDistance2: Miles = distanceKm;
-  // @ts-expect-error — a raw number literal cannot be assigned where a branded Centimetres is expected; it must go through centimetres().
+  // @ts-expect-error, a raw number literal cannot be assigned where a branded Centimetres is expected; it must go through centimetres().
   const rawNumberAsHeight: Centimetres = 180;
-  // @ts-expect-error — a Centimetres value cannot be assigned where Grams is expected (different dimensions entirely).
+  // @ts-expect-error, a Centimetres value cannot be assigned where Grams is expected (different dimensions entirely).
   const heightAsWeight: Grams = heightCm;
 
   // These are type-error-only checks; nothing above should ever actually
-  // run (that's what @ts-expect-error guarantees at compile time — if any
+  // run (that's what @ts-expect-error guarantees at compile time, if any
   // of those lines stopped being an error, `npx tsc --noEmit` fails).
   // The assertion below is just so this is a real, executing test.
   assert.ok(typeof mixedDistance === 'number');
@@ -105,7 +105,7 @@ test('distance: exact km<->mi round trip is stable to floating-point precision a
   }
 });
 
-test('distance: the DISPLAY (rounded) round trip is idempotent — converting to imperial and back never keeps drifting', () => {
+test('distance: the DISPLAY (rounded) round trip is idempotent, converting to imperial and back never keeps drifting', () => {
   for (let km = 0; km <= 20000; km += 91) {
     const original = kilometres(km);
     const firstDisplay = toDisplayDistance(original, 'imperial');

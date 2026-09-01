@@ -1,12 +1,12 @@
 /**
- * src/http/serializers/timeline.ts — the merged conversation timeline wire
+ * src/http/serializers/timeline.ts, the merged conversation timeline wire
  * view.
  *
  * Explicit allowlist over `timeline.service#TimelineEvent` (same
  * discipline `serializers/discovery.ts`/`serializers/profile.ts` already
  * use). Doubles as the enforcement point for `timeline.service.ts`'s own
- * documented omissions — no payment card data, no exact venue
- * coordinates, no raw voucher payload — by construction: this file names
+ * documented omissions, no payment card data, no exact venue
+ * coordinates, no raw voucher payload, by construction: this file names
  * every field it forwards, so a field never listed here can never reach
  * the wire even if the service type grew one by accident.
  */

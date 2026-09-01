@@ -7,7 +7,7 @@ import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
 
-// §11.3 "no free text before match" — this schema structurally has no
+// §11.3 "no free text before match", this schema structurally has no
 // message/body field, so a client cannot smuggle one through even by
 // accident (interest.service.ts's own signature enforces the same thing
 // one layer down).
@@ -22,7 +22,7 @@ export function registerInterestRoutes(app: FastifyInstance, deps: AppDeps): voi
   });
 
   // Enriched with the counterpart's displayName/primaryPhotoUrl/age/
-  // approximateDistanceKm (docs/ux-api-review.md §6 — the "who liked me"
+  // approximateDistanceKm (docs/ux-api-review.md §6, the "who liked me"
   // screen was otherwise a bare-id list plus one profile call per row).
   app.get('/interests/outgoing', auth, async (req, reply) => {
     const query = parseOrThrow(paginationQuerySchema, req.query);

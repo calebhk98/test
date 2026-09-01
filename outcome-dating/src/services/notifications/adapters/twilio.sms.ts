@@ -2,14 +2,14 @@ import { NotImplementedError } from '../../../lib/errors.js';
 import type { SmsSendParams, SmsSendResult, SmsSender } from '../ports/sms.port.js';
 
 /**
- * Twilio adapter for `SmsSender` (§20.2-shaped SMS channel — Twilio is the
+ * Twilio adapter for `SmsSender` (§20.2-shaped SMS channel, Twilio is the
  * standard choice for programmable SMS).
  *
  * Documented STUB, exactly like `FcmPushSender`/`SesEmailSender`/
  * `src/services/payments/stripe.processor.ts`: the `twilio` npm SDK is
  * deliberately NOT a dependency of this foundation layer, so every method
  * throws `NotImplementedError`. The JSDoc on `send` is the exact contract a
- * real implementation must satisfy — installing `twilio` and supplying
+ * real implementation must satisfy, installing `twilio` and supplying
  * `TWILIO_ACCOUNT_SID`/`TWILIO_AUTH_TOKEN`/`TWILIO_FROM_NUMBER` (or
  * equivalent) should be the only change needed.
  *
@@ -24,10 +24,10 @@ export class TwilioSmsSender implements SmsSender {
 
   /**
    * Real implementation: render `params.templateKey` + `params.data`
-   * through this build's own (non-generative — spec §1 rule 9) static SMS
-   * template layer to get final message text — capped to a single-segment
+   * through this build's own (non-generative, spec §1 rule 9) static SMS
+   * template layer to get final message text, capped to a single-segment
    * length where the template allows it, since every extra 160-char
-   * segment is its own billed message — then:
+   * segment is its own billed message, then:
    *
    * ```
    * const message = await twilioClient.messages.create({
@@ -38,8 +38,8 @@ export class TwilioSmsSender implements SmsSender {
    * ```
    *
    * There is no "data-only, client-rendered" option for SMS the way there
-   * is for push (`FcmPushSender`'s doc) — the carrier delivers exactly the
-   * text sent, so the rendering step above (never raw payload prose — see
+   * is for push (`FcmPushSender`'s doc), the carrier delivers exactly the
+   * text sent, so the rendering step above (never raw payload prose, see
    * `outbox.ts`'s `assertPrivacySafePayload` and `templateKey`/`data`
    * discipline) is this adapter's own responsibility, not deferred to a
    * client app.

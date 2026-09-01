@@ -9,7 +9,7 @@ import type { CategoryPrefs, NotificationCategory } from './types.js';
  * Per-user, per-category, per-channel notification preferences (build
  * brief: "A preference per event category and per channel (push, email,
  * in-app), defaulting to sensible values"). No row for (user, category)
- * means "use the default below" — the same convention
+ * means "use the default below", the same convention
  * `config.service.ts`'s `config_entries` uses, chosen for the same
  * reason: a brand-new user needs no seeding pass for this to behave
  * correctly.
@@ -19,10 +19,10 @@ import type { CategoryPrefs, NotificationCategory } from './types.js';
  *    owner explicitly named as push-primary), email OFF (push is the
  *    primary channel for an app-first product), in-app ON.
  *  - account_activity (chat lifecycle, payments, tickets, reminders,
- *    trust level — everything else in §20.1's event list): push and
- *    in-app ON, email ON too — these are the closest thing to a receipt
+ *    trust level, everything else in §20.1's event list): push and
+ *    in-app ON, email ON too, these are the closest thing to a receipt
  *    (payment hold, ticket issued) and are worth a durable email copy.
- *  - marketing: everything OFF (spec §29 "marketing opt-out" — this is
+ *  - marketing: everything OFF (spec §29 "marketing opt-out", this is
  *    the opt-out already applied by default, not something a user has to
  *    find a switch for).
  *
@@ -30,7 +30,7 @@ import type { CategoryPrefs, NotificationCategory } from './types.js';
  * account_activity (build correction: optional phone -> optional, opt-in
  * SMS). Two independent reasons stack here, either alone would be enough:
  * (1) most users have no verified phone on file at all, so it couldn't
- * deliver regardless, and (2) SMS costs real money per message — nothing
+ * deliver regardless, and (2) SMS costs real money per message, nothing
  * should ever cost the product money without the user explicitly asking
  * for it, unlike push/email which are free to default on.
  */
@@ -63,7 +63,7 @@ export async function getMyNotificationPreferences(ctx: Ctx): Promise<Record<Not
 
 /**
  * Internal (system) read of every category's resolved preference for
- * `userId` — used by `delivery.ts`'s gate. Not actor-gated to "self"
+ * `userId`, used by `delivery.ts`'s gate. Not actor-gated to "self"
  * (system actor calling on behalf of an arbitrary recipient), matching
  * `devices.listActiveDeviceTokensForUser`'s trust boundary.
  */
@@ -83,7 +83,7 @@ export async function getPreferencesForUser(ctx: Ctx, userId: string): Promise<R
   return result;
 }
 
-/** Resolves just one category's preference for `userId` — the single row `delivery.ts` actually needs per outbox item. */
+/** Resolves just one category's preference for `userId`, the single row `delivery.ts` actually needs per outbox item. */
 export async function getCategoryPreferenceForUser(ctx: Ctx, userId: string, category: NotificationCategory): Promise<CategoryPrefs> {
   const { rows } = await ctx.db.query<PrefRow>(
     `SELECT category, push, email, in_app, sms FROM notification_preferences WHERE user_id = $1 AND category = $2`,
@@ -100,14 +100,14 @@ const UpdatePreferenceSchema = z.object({
 });
 
 /**
- * Updates the calling user's preference for one category. Partial —
+ * Updates the calling user's preference for one category. Partial,
  * omitted fields keep their current (or default) value. This is the ONLY
  * place a caller can change what gets delivered; there is deliberately no
  * "send anyway" flag anywhere in `outbox.ts`/`delivery.ts` (build brief:
  * "Preferences must never be bypassable by a caller passing a flag").
  *
  * Turning `sms` ON is rejected up front unless the caller already has a
- * VERIFIED phone number — a friendlier, earlier error than silently
+ * VERIFIED phone number, a friendlier, earlier error than silently
  * persisting a preference that can never actually fire. This is a UX
  * convenience only, never the enforcement point: `delivery.ts` re-checks
  * for a verified phone live on every send, because a phone can be removed
@@ -150,7 +150,7 @@ export async function updateMyNotificationPreference(
 }
 
 // =========================================================================
-// Content preview opt-in (lock-screen preview text — default OFF)
+// Content preview opt-in (lock-screen preview text, default OFF)
 // =========================================================================
 
 export async function getMyContentPreviewSetting(ctx: Ctx): Promise<boolean> {
@@ -158,7 +158,7 @@ export async function getMyContentPreviewSetting(ctx: Ctx): Promise<boolean> {
   return getContentPreviewForUser(ctx, userId);
 }
 
-/** Internal (system) read — default false (opt-IN, build brief: "a lock-screen preview is visible to anyone holding the phone"). */
+/** Internal (system) read, default false (opt-IN, build brief: "a lock-screen preview is visible to anyone holding the phone"). */
 export async function getContentPreviewForUser(ctx: Ctx, userId: string): Promise<boolean> {
   const { rows } = await ctx.db.query<{ enabled: boolean }>(
     `SELECT enabled FROM notification_content_preview WHERE user_id = $1`,

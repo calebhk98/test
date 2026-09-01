@@ -13,7 +13,7 @@
  * original test set: `getDiscoveryGrid`/`getRealityDashboard` are now
  * exercised end-to-end (the note this file used to carry about
  * `moderation.service#isVisibleInDiscovery` being an unimplemented stub is
- * stale — that landed separately) — proving the batched candidate-pool
+ * stale, that landed separately), proving the batched candidate-pool
  * pipeline (`computeRankedCandidatePool`) still enforces all nine §10.2
  * visibility rules, still never lets a compatibility score override a
  * failed hard filter, still never hides a zero-compatibility candidate,
@@ -89,11 +89,11 @@ test('sortDiscoveryCandidates: sorts by compatibility score descending', () => {
   assert.deepEqual(sorted.map((c) => c.userId), ['high', 'mid', 'low']);
 });
 
-test('INVARIANT (§10.3/§16.1): a 0-compatibility candidate who passes filters still appears, just last — no threshold hides anyone', () => {
+test('INVARIANT (§10.3/§16.1): a 0-compatibility candidate who passes filters still appears, just last, no threshold hides anyone', () => {
   const inputs = [
     ranked(candidate({ userId: 'good-match', compatibilityScore: 0.8 })),
     ranked(candidate({ userId: 'ok-match', compatibilityScore: 0.4 })),
-    // Zero compatibility — still passed every hard filter to get this far
+    // Zero compatibility, still passed every hard filter to get this far
     // (this function is only ever called on an already-filtered pool; see
     // computeRankedCandidatePool). Sorting must never remove it.
     ranked(candidate({ userId: 'zero-match', compatibilityScore: 0 })),
@@ -305,7 +305,7 @@ interface FullUserOptions {
   shadowbanned?: boolean;
 }
 
-/** A full user + profile (+ approved primary photo by default) — everything `loadCandidatePool`'s weak gate requires, so a candidate is excluded ONLY by whatever this test deliberately varies. */
+/** A full user + profile (+ approved primary photo by default), everything `loadCandidatePool`'s weak gate requires, so a candidate is excluded ONLY by whatever this test deliberately varies. */
 async function makeFullUser(opts: FullUserOptions = {}): Promise<string> {
   seq++;
   const { rows } = await pool.query<{ id: string }>(
@@ -408,7 +408,7 @@ test('getDiscoveryGrid: all nine §10.2 visibility rules are still enforced by t
   for (const [label, candidateId] of Object.entries(excluded)) {
     assert.ok(!shownIds.has(candidateId), `${label}: must NOT appear in the discovery grid`);
     // The batched pool-gate must agree with the traceable single-candidate
-    // path for the same rule (rule 1 is checked separately above — its own
+    // path for the same rule (rule 1 is checked separately above, its own
     // isProfileVisibleTo test already covers it without shadowban/photo
     // noise; skip it here to avoid a redundant, slower assertion).
     if (label !== 'rule1_inactive') {
@@ -429,14 +429,14 @@ test('getDiscoveryGrid: a zero-compatibility candidate who passes every filter s
   const goodMatch = await makeFullUser({ gender: 'man' });
   const zeroMatch = await makeFullUser({ gender: 'man' });
 
-  // CUTOVER NOTE (question-system-cutover build, reported — this file is
+  // CUTOVER NOTE (question-system-cutover build, reported, this file is
   // outside that build's file-ownership boundary and was otherwise left
   // untouched): `compatibility.service.ts` now scores exclusively from the
-  // ONE typed question bank (`question_bank`/`user_question_answers` —
+  // ONE typed question bank (`question_bank`/`user_question_answers`,
   // db/migrations/008_questions.sql), not the OLD `questions`/`answers`
   // pair this fixture used to plant. Repointed at the new bank so
   // `goodMatch` actually produces a non-zero, better-than-`zeroMatch`
-  // score again — see src/services/question.service.ts's file-level
+  // score again, see src/services/question.service.ts's file-level
   // CUTOVER doc for the full accounting.
   for (let i = 0; i < 3; i++) {
     const slug = `disc-zero-q${i}-${seq}`;
@@ -462,7 +462,7 @@ test('getDiscoveryGrid: a zero-compatibility candidate who passes every filter s
   const byId = new Map(grid.items.map((c, i) => [c.userId, i]));
 
   assert.ok(byId.has(goodMatch), 'the well-matched candidate must appear');
-  assert.ok(byId.has(zeroMatch), 'the zero-compatibility candidate must still appear — no compatibility threshold hides anyone');
+  assert.ok(byId.has(zeroMatch), 'the zero-compatibility candidate must still appear, no compatibility threshold hides anyone');
   assert.ok(byId.get(zeroMatch)! > byId.get(goodMatch)!, 'the zero-compatibility candidate must sort after the well-matched one');
   const zeroCandidate = grid.items.find((c) => c.userId === zeroMatch)!;
   assert.equal(zeroCandidate.compatibilityScore, 0);
@@ -472,7 +472,7 @@ test('getDiscoveryGrid: a perfect compatibility score never overrides a failed h
   const viewer = await makeFullUser({ age: 30, gender: 'woman' });
   const candidate = await makeFullUser({ age: 50, gender: 'man' }); // outside the age filter set below
 
-  // See CUTOVER NOTE above the previous test — repointed at the typed bank.
+  // See CUTOVER NOTE above the previous test, repointed at the typed bank.
   for (let i = 0; i < 3; i++) {
     const slug = `disc-invariant-q${i}-${seq}`;
     const { rows } = await pool.query<{ id: string }>(
@@ -499,7 +499,7 @@ test('getDiscoveryGrid: a perfect compatibility score never overrides a failed h
   );
 });
 
-test('getDiscoveryGrid: geographic bounding — a candidate far outside the search radius is excluded, a nearby one is included', async () => {
+test('getDiscoveryGrid: geographic bounding, a candidate far outside the search radius is excluded, a nearby one is included', async () => {
   const viewer = await makeFullUser({ latitude: 39.78, longitude: -89.65 }); // Springfield, IL, no distance_km filter -> DEFAULT_DISCOVERY_RADIUS_KM
   const nearby = await makeFullUser({ gender: 'man', latitude: 39.8, longitude: -89.6 }); // ~5km away
   const farAway = await makeFullUser({ gender: 'man', latitude: 35.6762, longitude: 139.6503 }); // Tokyo
@@ -513,7 +513,7 @@ test('getDiscoveryGrid: geographic bounding — a candidate far outside the sear
 
 test('getDiscoveryGrid: geographic bounding uses the viewer\'s OWN distance_km filter, not just the default, so it never narrows below what the viewer asked for', async () => {
   const viewer = await makeFullUser({ latitude: 0, longitude: 0 });
-  // ~200km from (0,0) — inside a 300km viewer preference, outside the DEFAULT_DISCOVERY_RADIUS_KM (160km) default.
+  // ~200km from (0,0), inside a 300km viewer preference, outside the DEFAULT_DISCOVERY_RADIUS_KM (160km) default.
   const farButWithinViewersOwnFilter = await makeFullUser({ gender: 'man', latitude: 1.8, longitude: 0 });
   await setHardFilter(viewer, 'distance_km', 'lte', 300);
 
@@ -540,12 +540,12 @@ test('getDiscoveryGrid: the geographic bounding-box prefilter does not make a sh
   assert.equal(
     card!.approximateDistanceKm,
     expected,
-    'must be exactly the SAF-2 coarse-bucketed + pair-jittered value — same function, same inputs, unaffected by the new SQL bounding box',
+    'must be exactly the SAF-2 coarse-bucketed + pair-jittered value, same function, same inputs, unaffected by the new SQL bounding box',
   );
 
   // The precision guarantee this test exists to prove: the exposed value
   // must land on the documented coarse bucket grid (a multiple of the
-  // effective bucket width — `approximateDistanceBetween` always rounds to
+  // effective bucket width, `approximateDistanceBetween` always rounds to
   // one), never an arbitrary-precision exact figure. If the SQL bounding
   // box change had somehow leaked real coordinates into what's shown,
   // this would fail (the exact haversine distance essentially never lands
@@ -560,11 +560,11 @@ test('getDiscoveryGrid: the geographic bounding-box prefilter does not make a sh
   );
 });
 
-test('getDiscoveryGrid: pagination — two pages of limit 1 cover the same candidates, in the same order, as one page of limit 2', async () => {
+test('getDiscoveryGrid: pagination, two pages of limit 1 cover the same candidates, in the same order, as one page of limit 2', async () => {
   // Distinctive age band, isolating this test's pool from every other
   // makeFullUser candidate already sitting in this shared per-file test
   // database (same isolation technique as filter.test.ts's reality-
-  // dashboard test) — this test cares about ORDERING STABILITY across
+  // dashboard test), this test cares about ORDERING STABILITY across
   // pages, which an accidental extra leftover candidate could otherwise
   // shuffle in or out of a 2-item page non-deterministically.
   const viewer = await makeFullUser({ gender: 'woman', age: 40 });
@@ -599,7 +599,7 @@ test('getDiscoveryGrid: never returns more than MAX_CANDIDATE_POOL_SIZE candidat
   assert.ok(MAX_CANDIDATE_POOL_SIZE > 0);
 });
 
-test('getRealityDashboard: end-to-end — Z (mutualMatchPool) matches the same batched pool getDiscoveryGrid ranks', async () => {
+test('getRealityDashboard: end-to-end, Z (mutualMatchPool) matches the same batched pool getDiscoveryGrid ranks', async () => {
   const viewer = await makeFullUser({ gender: 'woman' });
   await makeFullUser({ gender: 'man' });
   await makeFullUser({ gender: 'man' });

@@ -11,7 +11,7 @@ import type { QuietHours } from './types.js';
  *
  * Policy for a notification raised DURING quiet hours: HOLD it and
  * deliver right after quiet hours end (see config.ts
- * `NOTIFICATION_CONFIG.quietHours.policy` for the justification) — except
+ * `NOTIFICATION_CONFIG.quietHours.policy` for the justification), except
  * for the small bypass list in `config.ts` `quietHoursBypassEvents`
  * (today: `safety_notice` only), which is delivered immediately
  * regardless of the recipient's local time.
@@ -35,7 +35,7 @@ export async function getMyQuietHours(ctx: Ctx): Promise<QuietHours> {
   return getQuietHoursForUser(ctx, userId);
 }
 
-/** Internal (system) read — used by `delivery.ts`'s gate for an arbitrary recipient. */
+/** Internal (system) read, used by `delivery.ts`'s gate for an arbitrary recipient. */
 export async function getQuietHoursForUser(ctx: Ctx, userId: string): Promise<QuietHours> {
   const { rows } = await ctx.db.query<QuietHoursRow>(
     `SELECT enabled, start_minute, end_minute, timezone FROM notification_quiet_hours WHERE user_id = $1`,
@@ -93,7 +93,7 @@ function localMinuteOfDay(date: Date, timezone: string): number {
  * local time. Handles an overnight window (`startMinute > endMinute`,
  * e.g. 22:00 -> 08:00) via wraparound. A disabled window, or a
  * zero-length window (`startMinute === endMinute`), is always "not
- * quiet" — a zero-length window is indistinguishable from "no window" and
+ * quiet", a zero-length window is indistinguishable from "no window" and
  * treated the same rather than as "quiet all day", so a user can never
  * accidentally silence themselves permanently via a data-entry slip.
  */
@@ -110,7 +110,7 @@ export function isWithinQuietHours(qh: QuietHours, now: Date): boolean {
  * The next instant (>= `now`) at which `qh`'s window will have ended,
  * used as the held outbox row's `next_attempt_at`. Computed as "minutes
  * from now until local time == endMinute", which assumes the UTC offset
- * for `qh.timezone` does not change between `now` and that instant — true
+ * for `qh.timezone` does not change between `now` and that instant, true
  * the overwhelming majority of the time (a quiet-hours window is at most
  * ~24h long) but can be off by up to an hour on the specific night a DST
  * transition falls inside the window. Documented, accepted limitation for

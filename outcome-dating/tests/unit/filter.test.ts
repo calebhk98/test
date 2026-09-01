@@ -10,7 +10,7 @@
  * The headline invariant this file exists to prove (spec §9.1 / the task
  * brief's "hard filters beat a perfect compatibility score"): a candidate
  * who fails a hard filter must never pass `passesMutualFilters`, no matter
- * how compatible they would otherwise be — see the last test below.
+ * how compatible they would otherwise be, see the last test below.
  */
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
@@ -75,12 +75,12 @@ test('evaluateFilter: in operator', () => {
 });
 
 // A `multi_choice` deal-breaker-derived row's `candidateValue` is itself an
-// ARRAY (the candidate's self-held option set) — see
+// ARRAY (the candidate's self-held option set), see
 // src/domain/questions/dealBreakers.ts's (now-resolved) "RESOLVED
 // LIMITATION" note. `in` special-cases this as OVERLAP, not scalar
 // membership, so it must actually match "at least one shared element"
 // rather than always failing (the old, unfixed behavior).
-test('evaluateFilter: in operator — an array candidateValue is OVERLAP semantics (multi_choice deal breaker), not scalar membership', () => {
+test('evaluateFilter: in operator, an array candidateValue is OVERLAP semantics (multi_choice deal breaker), not scalar membership', () => {
   assert.equal(
     evaluateFilter({ operator: 'in', value: ['spanish', 'french'] }, ['spanish', 'mandarin']),
     true,
@@ -101,14 +101,14 @@ test('evaluateFilter: in operator — an array candidateValue is OVERLAP semanti
 });
 
 // UPDATED by the units/physical-attributes build (product-owner
-// correction — see filter.service.ts's file-level "MISSING/UNRESOLVED
+// correction, see filter.service.ts's file-level "MISSING/UNRESOLVED
 // VALUES" note): an unresolved candidate value no longer fails closed
 // UNCONDITIONALLY. `evaluateFilter` gained a third `excludeIfUnset`
 // parameter; passing it explicitly still gives EXACTLY the original
 // fail-closed behavior this test used to assert unconditionally (see the
 // first two assertions below, unchanged in spirit), but the DEFAULT when
 // it is omitted flipped from "always fails closed" to "never excludes on
-// an unresolved value" — a brand-new account that hasn't filled a field
+// an unresolved value", a brand-new account that hasn't filled a field
 // in yet must not silently vanish from every other user's results. The
 // original two-argument assertions are kept, retitled and re-pointed at
 // the new default, rather than deleted, so this file still proves both
@@ -118,14 +118,14 @@ test('evaluateFilter: excludeIfUnset:true still fails closed on an unresolved (u
   assert.equal(evaluateFilter({ operator: 'in', value: ['a', 'b'] }, undefined, true), false);
 });
 
-test('evaluateFilter: the default (excludeIfUnset omitted) no longer fails closed on an unresolved value — it passes', () => {
+test('evaluateFilter: the default (excludeIfUnset omitted) no longer fails closed on an unresolved value, it passes', () => {
   assert.equal(evaluateFilter({ operator: 'gte', value: 0 }, undefined), true);
   assert.equal(evaluateFilter({ operator: 'in', value: ['a', 'b'] }, undefined), true);
   // Explicit false is identical to the default, spelled out.
   assert.equal(evaluateFilter({ operator: 'gte', value: 0 }, undefined, false), true);
 });
 
-test('evaluateFilter: excludeIfUnset never affects a RESOLVED value — only undefined is special-cased', () => {
+test('evaluateFilter: excludeIfUnset never affects a RESOLVED value, only undefined is special-cased', () => {
   assert.equal(evaluateFilter({ operator: 'gte', value: 21 }, 25, true), true);
   assert.equal(evaluateFilter({ operator: 'gte', value: 21 }, 15, true), false);
   assert.equal(evaluateFilter({ operator: 'eq', value: null }, null, true), true, 'a resolved null is compared normally, not treated as unresolved');
@@ -141,7 +141,7 @@ test('haversineKm: symmetric and zero for identical points', () => {
 
 // =====================================================================
 // boundingBoxForRadius: pure geo math (SCALE FIX). The one invariant that
-// matters most: the box must NEVER be narrower than the true radius —
+// matters most: the box must NEVER be narrower than the true radius,
 // every point within `radiusKm` of the center must fall inside the box
 // (checked here against the exact `haversineKm`), even though the box is
 // allowed to be (and, away from the equator, always is) a bit wider than
@@ -207,7 +207,7 @@ test('boundingBoxForRadius: a huge radius collapses to the full box rather than 
 // =====================================================================
 // summarizeSampledCount: the reality-dashboard "honesty under truncation"
 // estimator (see filter.service.ts's block comment above
-// `DASHBOARD_SCAN_CAP`). Pure math plus a logger call — no DB needed.
+// `DASHBOARD_SCAN_CAP`). Pure math plus a logger call, no DB needed.
 // =====================================================================
 
 function fakeCtxWithLogger(): { ctx: Ctx; warnings: string[] } {
@@ -371,7 +371,7 @@ test('passesMutualFilters: age/distance/gender filters gate correctly in both di
   assert.equal(await passesMutualFilters(ctx, viewer, tooOld), false, 'candidate outside age_max must fail');
 });
 
-test('passesMutualFilters: mutual — candidate\'s own filters can reject the viewer even when the viewer\'s filters would accept the candidate', async () => {
+test('passesMutualFilters: mutual, candidate\'s own filters can reject the viewer even when the viewer\'s filters would accept the candidate', async () => {
   const viewer = await makeUser({ age: 45, gender: 'woman', latitude: 39.78, longitude: -89.65 });
   const picky = await makeUser({ age: 30, gender: 'man', latitude: 39.79, longitude: -89.64 });
 
@@ -408,8 +408,8 @@ test('reality dashboard counts (X/Y) are genuinely different queries, not the sa
   const y = await countUsersWhoseFiltersIMatch(ctx, userId);
 
   // X is exactly this test's 3 in-band users, PLUS any earlier test's users
-  // who happen to also fall in 91-95 (there are none — no other test in
-  // this file uses that age band) — assert against a live count rather
+  // who happen to also fall in 91-95 (there are none, no other test in
+  // this file uses that age band), assert against a live count rather
   // than a hardcoded total, so the test is robust to run order/other tests'
   // fixtures while still proving X counts a real, narrow, filter-gated set.
   const { rows: expectedXRows } = await pool.query<{ count: string }>(
@@ -421,7 +421,7 @@ test('reality dashboard counts (X/Y) are genuinely different queries, not the sa
 
   // No candidate has any filters of their own, so every other active user
   // in the whole database (not just this test's 5) trivially passes an
-  // empty filter set for Y — genuinely a different query/answer than X,
+  // empty filter set for Y, genuinely a different query/answer than X,
   // and strictly larger since it also includes the 2 out-of-band users.
   assert.ok(y > x, 'Y = people whose (empty) filters I match must include the out-of-band users too, so Y > X here');
   assert.notEqual(x, y);
@@ -435,7 +435,7 @@ test('INVARIANT: a hard filter rejection beats a perfect compatibility score', a
   // Give both users identical answers on 3 (typed-bank) questions -> a
   // perfect (1.0) compatibility score. CUTOVER: compatibility.service.ts
   // now scores exclusively from `question_bank`/`user_question_answers`
-  // (see that file's file-level CUTOVER doc) — this used to build the OLD
+  // (see that file's file-level CUTOVER doc), this used to build the OLD
   // `questions`/`answers` fixtures directly; it now inserts typed-bank
   // rows instead.
   const questions: Array<{ id: string; slug: string }> = [];
@@ -457,7 +457,7 @@ test('INVARIANT: a hard filter rejection beats a perfect compatibility score', a
     }
   }
 
-  // Confirm the compatibility score really is perfect (1.0) — the filter
+  // Confirm the compatibility score really is perfect (1.0), the filter
   // rejection below must win despite this, not because compatibility also
   // happens to be low.
   const questionDefs = questions.map((q) => ({
@@ -487,7 +487,7 @@ test('INVARIANT: a hard filter rejection beats a perfect compatibility score', a
 
 // =====================================================================
 // SCALE FIX: batched filter evaluation must agree, pair for pair, with
-// the original single-pair `passesMutualFilters` — the whole point of
+// the original single-pair `passesMutualFilters`, the whole point of
 // batching is that it computes the SAME answer faster, not a different
 // (even if superficially similar) one.
 // =====================================================================
@@ -526,7 +526,7 @@ test('passesMutualFiltersForCandidates: agrees with passesMutualFilters, one cal
   );
 });
 
-/** Inserts a typed-bank `scale` (min=1,max=5) question and returns its slug — shared by the `qb:`-prefixed filter tests below. */
+/** Inserts a typed-bank `scale` (min=1,max=5) question and returns its slug, shared by the `qb:`-prefixed filter tests below. */
 async function makeBankScaleQuestion(slug: string): Promise<void> {
   await pool.query(
     `INSERT INTO question_bank (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
@@ -555,7 +555,7 @@ test('evaluateFilterPairsBatch: honors excludeIfUnset per owner filter for a qb:
 });
 
 test(
-  'evaluateFilterPairsBatch: a bare (non-qb:, non-structured) filter key is always UNRESOLVED — the OLD bank\'s ' +
+  'evaluateFilterPairsBatch: a bare (non-qb:, non-structured) filter key is always UNRESOLVED, the OLD bank\'s ' +
     'bare-slug resolution has been removed entirely (see filter.service.ts\'s QUESTION-SYSTEM CUTOVER doc; the OLD ' +
     '`questions`/`answers` tables it used to read no longer exist, db/migrations/022_drop_old_question_bank.sql)',
   async () => {
@@ -563,7 +563,7 @@ test(
     const candidate = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
 
     // Plant a REAL typed-bank answer under this exact (unprefixed) slug, to
-    // prove a bare filter key does NOT reach it — only `qb:${slug}` would
+    // prove a bare filter key does NOT reach it, only `qb:${slug}` would
     // (see the next test). This is the namespace-strictness half of the
     // removal: a bare key isn't merely "nothing answers it in this test",
     // it structurally cannot resolve against the typed bank at all.
@@ -592,7 +592,7 @@ test(
     const excluded = await passesMutualFiltersForCandidates(ctx, viewer, [candidate]);
     assert.ok(
       !excluded.has(candidate),
-      'unresolved + excludeIfUnset:true must exclude the candidate — if the bare key had resolved the real answer (self_value=1), lte 2 would have PASSED it instead',
+      'unresolved + excludeIfUnset:true must exclude the candidate, if the bare key had resolved the real answer (self_value=1), lte 2 would have PASSED it instead',
     );
   },
 );
@@ -623,19 +623,19 @@ test('evaluateFilterPairsBatch: a qb:-prefixed key resolves a REAL answer (not j
 
 // =====================================================================
 // SCALE FIX: the reality dashboard's X/Y counts are now geographically
-// bounded, like discovery — a deliberate, documented scope change (see
+// bounded, like discovery, a deliberate, documented scope change (see
 // filter.service.ts's block comment above `DASHBOARD_SCAN_CAP`). This
 // proves the bound is real: a candidate far outside the default search
 // radius, who would otherwise pass every filter, must NOT count toward X.
 // =====================================================================
 
-test('countUsersMatchingMyFilters: geographically bounded — a filter-passing candidate far outside the search radius does not count', async () => {
+test('countUsersMatchingMyFilters: geographically bounded, a filter-passing candidate far outside the search radius does not count', async () => {
   // Distinctive age band (76-78) no other test in this file uses, so the
-  // count is exact and order-independent — same isolation technique as
+  // count is exact and order-independent, same isolation technique as
   // the "reality dashboard counts (X/Y)" test above.
   const viewer = await makeUser({ age: 40, gender: 'woman', latitude: 39.78, longitude: -89.65 }); // Springfield, IL
   const nearbyMatch = await makeUser({ age: 77, gender: 'man', latitude: 39.8, longitude: -89.6 }); // ~5km away
-  const farMatch = await makeUser({ age: 77, gender: 'man', latitude: 35.6762, longitude: 139.6503 }); // Tokyo — thousands of km away
+  const farMatch = await makeUser({ age: 77, gender: 'man', latitude: 35.6762, longitude: 139.6503 }); // Tokyo, thousands of km away
 
   await addFilter(viewer, 'age_min', 'gte', 76);
   await addFilter(viewer, 'age_max', 'lte', 78);
@@ -644,7 +644,7 @@ test('countUsersMatchingMyFilters: geographically bounded — a filter-passing c
   assert.equal(
     x,
     1,
-    'only the geographically nearby candidate counts toward X, even though both candidates equally pass the age filter — a deliberate, documented scope change from the pre-fix unbounded scan',
+    'only the geographically nearby candidate counts toward X, even though both candidates equally pass the age filter, a deliberate, documented scope change from the pre-fix unbounded scan',
   );
   void farMatch;
 });

@@ -1,10 +1,10 @@
 /**
- * tests/http/trustExposure.test.ts — end-to-end proof for docs/duplication.md
+ * tests/http/trustExposure.test.ts, end-to-end proof for docs/duplication.md
  * finding 1 (the trust-score exposure gate).
  *
  * Before the fix: `GET /me/trust` gated the numeric `trustScore` field
  * through an ad-hoc, unseeded, per-user feature flag
- * (`expose_trust_score_to_user`) that nothing in this codebase ever set —
+ * (`expose_trust_score_to_user`) that nothing in this codebase ever set,
  * the documented `trust.expose_raw_score` config key
  * (`trust.service#shouldExposeRawTrustScore`, whose own doc comment calls
  * it "the single source of truth for the display gate") was never
@@ -12,7 +12,7 @@
  * zero effect on the live response.
  *
  * This is deliberately an HTTP test that drives the REAL route via
- * `app.inject`, not a unit test of the gate function in isolation — a unit
+ * `app.inject`, not a unit test of the gate function in isolation, a unit
  * test of `shouldExposeRawTrustScore` already existed
  * (`tests/unit/decisionsConfig.test.ts`) and passed the whole time the
  * route ignored it, which is exactly the blind spot this test closes.
@@ -41,7 +41,7 @@ test('GET /me/trust: trustScore is hidden by default (trust.expose_raw_score def
   assert.equal('trustScore' in body, false, 'trustScore must be withheld by default');
 });
 
-test('GET /me/trust: setting trust.expose_raw_score=true makes trustScore appear, and =false hides it again — the documented config key actually controls the live response', async () => {
+test('GET /me/trust: setting trust.expose_raw_score=true makes trustScore appear, and =false hides it again, the documented config key actually controls the live response', async () => {
   const user = await registerUser(t);
 
   // 1. Default: hidden.
@@ -49,7 +49,7 @@ test('GET /me/trust: setting trust.expose_raw_score=true makes trustScore appear
   assert.equal('trustScore' in JSON.parse(before1.body), false);
 
   // 2. Admin flips the DOCUMENTED key on. This is the exact control an
-  //    operator has — no route/serializer code path other than this key
+  //    operator has, no route/serializer code path other than this key
   //    should be able to move the field.
   await t.deps.config.set('trust.expose_raw_score', true, 'test-admin');
 
@@ -60,7 +60,7 @@ test('GET /me/trust: setting trust.expose_raw_score=true makes trustScore appear
   assert.equal(typeof bodyAfter1.trustScore, 'number');
   assert.ok(bodyAfter1.trustScore! >= 0 && bodyAfter1.trustScore! <= 100);
 
-  // 3. Flip it back off — must disappear again, proving the gate is live
+  // 3. Flip it back off, must disappear again, proving the gate is live
   //    in both directions, not just "on by accident".
   await t.deps.config.set('trust.expose_raw_score', false, 'test-admin');
 

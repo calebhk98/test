@@ -109,7 +109,7 @@ test('setMyTagIntensity / getMyTagIntensities: round-trips and upserts', async (
   assert.equal(intensities.length, 1);
   assert.equal(intensities[0]!.intensity, 'occasionally');
 
-  // "I bake" daily vs. once a quarter are different — updating must
+  // "I bake" daily vs. once a quarter are different, updating must
   // overwrite, not accumulate a second row for the same tag.
   await questionService.setMyTagIntensity(ctxFor(userActor(userId)), tagId, 'daily');
   intensities = await questionService.getMyTagIntensities(ctxFor(userActor(userId)));
@@ -156,7 +156,7 @@ test('setMyAvoidTags: unknown tag id is a NotFoundError, and nothing is written'
 });
 
 // =====================================================================
-// passesAvoidTagFilterFor — "do not show me people who list astrology"
+// passesAvoidTagFilterFor, "do not show me people who list astrology"
 // behaves like a hard filter (exclusion), tested end-to-end against real
 // user_tags/user_avoid_tags rows.
 // =====================================================================
@@ -187,7 +187,7 @@ test('passesAvoidTagFilterFor: passes when there is no overlap between either si
   assert.equal(result.passes, true);
 });
 
-test('passesAvoidTagFilterFor: bidirectional — a candidate avoiding the viewer\'s tag also excludes', async () => {
+test('passesAvoidTagFilterFor: bidirectional, a candidate avoiding the viewer\'s tag also excludes', async () => {
   const viewer = await makeUser();
   const candidate = await makeUser();
   const crossfit = await makeTag('CrossFit');

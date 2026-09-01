@@ -1,6 +1,6 @@
 /**
  * Post-date check-in prompt sweep. Thin wrapper around
- * `postDateFeedback.service#runCheckInPromptSweep` — prompts both
+ * `postDateFeedback.service#runCheckInPromptSweep`, prompts both
  * participants of a date whose `scheduled_end` has passed to submit their
  * check-in, and sends a reminder if they haven't responded (see that
  * function's own doc). No domain logic here.

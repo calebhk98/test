@@ -16,7 +16,7 @@ after(async () => {
 
 // A real, fixed "today" (not an arbitrary test date) so birthdates computed
 // relative to it also satisfy the DB's `users_min_age` CHECK constraint,
-// which uses real wall-clock CURRENT_DATE — see auth.service.ts's comment
+// which uses real wall-clock CURRENT_DATE, see auth.service.ts's comment
 // on why `register`'s age gate must never depend on that constraint firing
 // the same way the app-level check does.
 const TODAY = new Date();
@@ -240,7 +240,7 @@ test('forgotPassword + resetPassword: end-to-end token consumption changes the p
   const { rows } = await pool.query('SELECT token_hash FROM password_reset_tokens WHERE user_id = $1', [user.id]);
   assert.equal(rows.length, 1);
 
-  // We only ever store the *hash* server-side (never the raw token) — the
+  // We only ever store the *hash* server-side (never the raw token), the
   // test drives resetPassword by seeding a token whose hash it controls,
   // exactly like a real "click the emailed link" flow would.
   const rawToken = 'test-reset-token-12345';

@@ -1,5 +1,5 @@
 /**
- * §25.2 Date Proposal Expiry job — boundary behavior (mirrors C-14.6.1) and
+ * §25.2 Date Proposal Expiry job, boundary behavior (mirrors C-14.6.1) and
  * idempotent re-run, run through the actual job function.
  */
 import { test, before, after } from 'node:test';

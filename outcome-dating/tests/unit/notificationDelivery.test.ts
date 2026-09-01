@@ -69,7 +69,7 @@ test('a new match (interest accepted) produces exactly one delivered push', asyn
 
   assert.equal(result.sent, 1, 'exactly one channel (push) should have delivered');
   assert.equal(push.sent.length, 1);
-  assert.equal(email.sent.length, 0, 'email defaults OFF for the match category — push is the primary channel');
+  assert.equal(email.sent.length, 0, 'email defaults OFF for the match category, push is the primary channel');
 });
 
 test('a new message received produces exactly one delivered push', async () => {
@@ -121,7 +121,7 @@ test('a date proposal received produces exactly one delivered push', async () =>
 });
 
 // =========================================================================
-// Preferences suppress a channel — enforced in the delivery path only
+// Preferences suppress a channel, enforced in the delivery path only
 // =========================================================================
 
 test('preferences suppress a channel, and the gate lives in delivery, not at enqueue time', async () => {
@@ -133,7 +133,7 @@ test('preferences suppress a channel, and the gate lives in delivery, not at enq
 
   await updateMyNotificationPreference(userCtx, 'match', { push: false });
 
-  // enqueueNotification takes no "force"/"bypass preference" flag at all —
+  // enqueueNotification takes no "force"/"bypass preference" flag at all,
   // there is nothing for a careless call site to get wrong here.
   const enqueued = await enqueueNotification(sysCtx, {
     userId: user,
@@ -148,7 +148,7 @@ test('preferences suppress a channel, and the gate lives in delivery, not at enq
   const result = await runNotificationDeliveryWorker(sysCtx, { push, email });
 
   // Both the push row (explicitly turned off above) and the email row
-  // (match's default is email:false regardless) are dropped here — the
+  // (match's default is email:false regardless) are dropped here, the
   // point under test is that push specifically was never attempted.
   assert.equal(result.droppedPreference, 2);
   assert.equal(push.sent.length, 0, 'push must not be attempted once the user has turned it off for this category');
@@ -386,7 +386,7 @@ test('a push-sender outage does not fail or roll back the domain transaction tha
   const result = await runNotificationDeliveryWorker(sysCtx, { push: outage, email });
   // Two rows are due (push + email, both from the same enqueue call); the
   // point under test is that the THROWING push sender doesn't abort
-  // processing of either row — the email row (dropped_preference, match's
+  // processing of either row, the email row (dropped_preference, match's
   // default) still resolves normally in the same batch.
   assert.equal(result.processed, 2, 'the worker itself must not throw or abort when the sender throws');
   assert.equal(outage.calls, 1);
@@ -400,15 +400,15 @@ test('a push-sender outage does not fail or roll back the domain transaction tha
 
   // Clean up: this row is deliberately left non-terminal (that's the point
   // of the assertion above) with a due time only ~30s out. Left alone, any
-  // LATER test in this file — whose clock, by construction, always reads
-  // later than this one's — would immediately see it as due and sweep it
+  // LATER test in this file, whose clock, by construction, always reads
+  // later than this one's, would immediately see it as due and sweep it
   // into an unrelated assertion. Every other test in this file resolves
   // its own rows to a terminal status before finishing; this one can't
   // (that's what it's testing), so it deletes them explicitly instead.
   await pool.query('DELETE FROM notification_outbox WHERE user_id = $1', [user]);
 });
 
-test('a push-sender outage retries with backoff and reaches a terminal "dead" state — no infinite retry loop', async () => {
+test('a push-sender outage retries with backoff and reaches a terminal "dead" state, no infinite retry loop', async () => {
   const user = await insertUser(pool);
   const clock = new ManualClock(slotClock());
   await registerToken(user, 'tok-fail_send-loop', clock); // FakePushSender: "fail_send" substring -> always fails
@@ -442,7 +442,7 @@ test('a push-sender outage retries with backoff and reaches a terminal "dead" st
   assert.equal(rows[0]!.status, 'dead');
   assert.equal(rows[0]!.attempt_count, 5);
 
-  // And it stays dead — running the worker again must not pick it up or retry it further.
+  // And it stays dead, running the worker again must not pick it up or retry it further.
   clock.advanceMs(10 * 60 * 60 * 1000);
   const afterDead = await runNotificationDeliveryWorker(sysCtx, { push, email });
   assert.equal(afterDead.processed, 0, 'a dead row must never be retried again');

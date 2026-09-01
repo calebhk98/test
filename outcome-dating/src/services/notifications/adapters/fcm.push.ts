@@ -3,14 +3,14 @@ import type { PushSendParams, PushSendResult, PushSender } from '../ports/push.p
 
 /**
  * Firebase Cloud Messaging adapter for `PushSender` (spec §20.2 push
- * channel — FCM is the standard choice for Android and covers web push
+ * channel, FCM is the standard choice for Android and covers web push
  * too).
  *
  * This is a documented STUB, exactly like
  * `src/services/payments/stripe.processor.ts`: the `firebase-admin` npm
  * SDK is deliberately NOT a dependency of this foundation layer, so every
  * method throws `NotImplementedError`. The JSDoc on `send` is the exact
- * contract a real implementation must satisfy — installing
+ * contract a real implementation must satisfy, installing
  * `firebase-admin` and supplying `FIREBASE_SERVICE_ACCOUNT_JSON` (or
  * equivalent) should be the only change needed.
  *
@@ -29,7 +29,7 @@ export class FcmPushSender implements PushSender {
    * ```
    * await admin.messaging().send({
    *   token: params.token,
-   *   data: params.data,               // DATA-ONLY message — no `notification` field.
+   *   data: params.data,               // DATA-ONLY message, no `notification` field.
    *   android: { collapseKey: params.collapseKey, priority: 'high' },
    *   webpush: params.collapseKey ? { headers: { Topic: params.collapseKey } } : undefined,
    * });
@@ -38,7 +38,7 @@ export class FcmPushSender implements PushSender {
    * Sending a data-only message (never the `notification` field) is
    * deliberate, not an oversight: FCM's `notification` field is rendered
    * directly by the OS from whatever strings you put in it, bypassing the
-   * app's own template rendering — that would make it trivial to
+   * app's own template rendering, that would make it trivial to
    * accidentally leak `previewText`-style content to a recipient who
    * opted OUT of lock-screen previews (build brief's privacy rule). Data-
    * only messages always go through the client app's own notification

@@ -8,21 +8,21 @@ import type { Page, VenueSettlement, VenueSettlementStatus } from '../domain/typ
 import * as ledger from './ledger.service.js';
 
 /**
- * venueSettlement.service — venue payout settlement.
+ * venueSettlement.service, venue payout settlement.
  * Spec: §15.4 (venue payment "does not automatically settle" for an
- * unverified date, implying it DOES settle for a verified one — see
+ * unverified date, implying it DOES settle for a verified one, see
  * docs/conformance.md Open Question OQ-8, resolved by product), §13.2/
  * §23.16 (`venues.margin_percent`).
  *
  * Decision-layer addition (not part of the original 5-agent parallel
- * build) — the spec gives every venue a `margin_percent` but never defines
+ * build), the spec gives every venue a `margin_percent` but never defines
  * a payout mechanism, ledger type, schema, or endpoint. This module is
  * that mechanism.
  *
  * EARNING RULE (the whole point of §15.4): a date proposal earns venue
- * settlement ONLY when BOTH of these hold —
+ * settlement ONLY when BOTH of these hold,
  *   1. `date_proposals.status = 'completed'` (venue-VERIFIED completion,
- *      §15.3 — set only by `dateProposal.service#markCompletedByRedemption`,
+ *      §15.3, set only by `dateProposal.service#markCompletedByRedemption`,
  *      itself only called from `redemption.service.ts` after a real venue
  *      scan/manual-code redemption).
  *   2. A `venue_redemptions` row actually exists for that proposal's
@@ -33,21 +33,21 @@ import * as ledger from './ledger.service.js';
  * `refunded`, and `disputed` proposals are excluded by construction: the
  * settlement-candidate query below filters on `status = 'completed'` AND
  * the redemption join, so none of those statuses is ever even a candidate
- * row — see `tests/unit/venueSettlement.test.ts` for the negative-case
+ * row, see `tests/unit/venueSettlement.test.ts` for the negative-case
  * proof against each one (that IS the point of this design, per §15.4).
  *
  * PAYOUT MATH (integer minor units only, per INTERFACES.md's money
  * invariant): `venuePayoutCents = Math.floor(grossCents * marginPercent /
- * 100)`, `platformCents = grossCents - venuePayoutCents` — computed by
+ * 100)`, `platformCents = grossCents - venuePayoutCents`, computed by
  * subtraction from the gross, not by a second `Math.floor` call, so
  * `venuePayoutCents + platformCents === grossCents` holds EXACTLY, always
  * (see `computeVenuePayout`, unit-tested directly for the rounding case
- * where `marginPercent` doesn't divide evenly into cents — the same
+ * where `marginPercent` doesn't divide evenly into cents, the same
  * "round down, in the platform's favor" rule `payment.service.ts` uses
  * for refunds, §14.7/OQ-6).
  *
  * IDEMPOTENCY: `venue_settlements.date_proposal_id` is `UNIQUE` (see
- * `db/migrations/007_decisions.sql`) — one settlement per date proposal,
+ * `db/migrations/007_decisions.sql`), one settlement per date proposal,
  * ever. `settleDueVenuePayouts` re-checks for an existing row inside the
  * same transaction as the insert (`ON CONFLICT (date_proposal_id) DO
  * NOTHING`) so a retried/concurrent run never double-pays; the caller-
@@ -64,7 +64,7 @@ import * as ledger from './ledger.service.js';
  * + `LedgerEntryType`, see domain/types.ts).
  *
  * NOT REGISTERED AS A JOB: this module exports `settleDueVenuePayouts`
- * (the job body) but does not itself schedule anything — `src/jobs/**` is
+ * (the job body) but does not itself schedule anything, `src/jobs/**` is
  * owned by a different, concurrently-working agent. See the final report
  * for the exact function name/signature to wire up.
  */
@@ -102,7 +102,7 @@ async function grossCapturedCentsForProposal(ctx: Ctx, dateProposalId: string): 
 /**
  * Pure payout split for one date proposal's gross captured escrow. Exported
  * directly so the "payout + platform === gross, exactly" invariant and the
- * floor-rounding rule are unit-testable without a database — this is
+ * floor-rounding rule are unit-testable without a database, this is
  * exactly where a rounding bug would hide (spec's own "money hazard" note,
  * mirrored from `dateProposal.service#percentOfCents`'s doc).
  */
@@ -164,7 +164,7 @@ async function settleOneDateProposal(
   return withTransaction(async (db) => {
     const txCtx = withDb(ctx, db);
 
-    // Re-check inside the transaction — the caller's candidate list was
+    // Re-check inside the transaction, the caller's candidate list was
     // read outside any lock, so a concurrent settlement run could have
     // already inserted a row for this proposal in between.
     const { rows: existing } = await db.query<{ id: string }>(
@@ -174,7 +174,7 @@ async function settleOneDateProposal(
     if (existing[0]) return null;
 
     const grossCents = await grossCapturedCentsForProposal(txCtx, dateProposalId);
-    if (grossCents <= 0) return null; // nothing captured to settle — should not happen for a 'completed' proposal, but never pay out of nothing.
+    if (grossCents <= 0) return null; // nothing captured to settle, should not happen for a 'completed' proposal, but never pay out of nothing.
 
     const { venuePayoutCents, platformCents } = computeVenuePayout(grossCents, marginPercent);
     const now = txCtx.clock.now();
@@ -215,7 +215,7 @@ export interface SettleDueVenuePayoutsResult {
 }
 
 /**
- * The job body (§25-style automated job — see this module's header for why
+ * The job body (§25-style automated job, see this module's header for why
  * it is NOT registered in `src/jobs/**` here). Finds every `completed`,
  * venue-redeemed date proposal without an existing settlement and settles
  * each one exactly once. Safe to call repeatedly/concurrently: idempotent
@@ -236,7 +236,7 @@ export async function settleDueVenuePayouts(ctx: Ctx): Promise<SettleDueVenuePay
   return result;
 }
 
-/** Settles one specific, already-`completed`+redeemed date proposal on demand (e.g. an admin "settle now" action). Idempotent — a no-op (`null`) if not eligible or already settled. */
+/** Settles one specific, already-`completed`+redeemed date proposal on demand (e.g. an admin "settle now" action). Idempotent, a no-op (`null`) if not eligible or already settled. */
 export async function settleOneDateProposalById(ctx: Ctx, dateProposalId: string): Promise<VenueSettlement | null> {
   if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('That is not a valid id.');
 
@@ -261,7 +261,7 @@ function requireAdminOrSystemActor(ctx: Ctx): void {
   }
 }
 
-/** Admin payout view (spec §27-style admin surface — mirrors `ledger.service#listEntriesForUser`'s pagination shape). Omit `venueId` to list across all venues. */
+/** Admin payout view (spec §27-style admin surface, mirrors `ledger.service#listEntriesForUser`'s pagination shape). Omit `venueId` to list across all venues. */
 export async function listVenueSettlements(
   ctx: Ctx,
   params?: { venueId?: string; cursor?: string; limit?: number },
@@ -291,7 +291,7 @@ export async function listVenueSettlements(
   return { items: page.map(mapSettlement), nextCursor: hasMore ? String(offset + limit) : null };
 }
 
-/** Sum of `venuePayoutCents` for `venueId` across every settlement (admin/venue-dashboard convenience — spec §13.2 margin reporting). */
+/** Sum of `venuePayoutCents` for `venueId` across every settlement (admin/venue-dashboard convenience, spec §13.2 margin reporting). */
 export async function totalSettledPayoutForVenue(ctx: Ctx, venueId: string): Promise<number> {
   requireAdminOrSystemActor(ctx);
   if (!z.string().uuid().safeParse(venueId).success) throw new ValidationError('That is not a valid id.');

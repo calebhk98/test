@@ -1,27 +1,27 @@
 /**
- * copyGuard.test.ts — build-failing scan for spec citations/section marks
+ * copyGuard.test.ts, build-failing scan for spec citations/section marks
  * leaking into user-visible strings (docs/ux-api-review.md §14: "Spec
  * section references baked into the string", "Raw parameter/internal-name
  * leaks"). Users have no access to the specification and must never see
  * one of its section numbers or the literal word "spec" used as a
  * citation.
  *
- * SCOPE: every `.ts` file under `src/services/**` and `src/http/**` —
+ * SCOPE: every `.ts` file under `src/services/**` and `src/http/**`,
  * this is where a string can become part of `error.message` (sent
  * verbatim to the client, see `src/http/errors.ts`) or become static
- * user-facing copy — EXCEPT two files that hold spec citations as
+ * user-facing copy, EXCEPT two files that hold spec citations as
  * internal, never-serialized audit metadata by design, not user copy:
  *
- *   - `src/http/routeTable.ts` — its own header explains its `spec`
+ *   - `src/http/routeTable.ts`, its own header explains its `spec`
  *     column is "the route -> spec-section coverage table," read only by
  *     `tests/http/routeTable.test.ts`; never sent to an HTTP client.
- *   - `src/config/config.service.ts` — its `specSection` field is
+ *   - `src/config/config.service.ts`, its `specSection` field is
  *     internal config-registry metadata, never returned by any route.
  *
  * `src/jobs/**` is also out of scope: a job's `description` is operator/
  * CLI-facing (`jobs:run`, process logs), never reachable by an app user.
  *
- * HOW THE SCAN WORKS: this is a real lexical scan, not a spot check — it
+ * HOW THE SCAN WORKS: this is a real lexical scan, not a spot check, it
  * extracts every single-, double-, and backtick-quoted string/template
  * literal from each in-scope file's raw source (comments are naturally
  * excluded: `§`/`spec` inside a `//` or `/* *\/` comment is never inside a
@@ -40,7 +40,7 @@ const SRC_ROOT = join(import.meta.dirname, '..', '..', 'src');
 
 const SCAN_DIRS = ['services', 'http'];
 
-/** Files whose spec citations are documented, never-serialized internal audit metadata — see file doc above. */
+/** Files whose spec citations are documented, never-serialized internal audit metadata, see file doc above. */
 const EXEMPT_FILES = new Set(['src/http/routeTable.ts', 'src/config/config.service.ts']);
 
 function listTsFiles(dir: string): string[] {
@@ -66,7 +66,7 @@ function listTsFiles(dir: string): string[] {
  * mistaken for a comment start).
  *
  * This step exists specifically because this codebase's JSDoc comments
- * constantly use `` `backtick code formatting` `` for identifiers — a
+ * constantly use `` `backtick code formatting` `` for identifiers, a
  * naive "just regex-match quoted literals over the raw file" pass (this
  * scanner's first draft) mistakes those comment-internal backticks for
  * template-literal delimiters and then eats everything up to the NEXT
@@ -122,7 +122,7 @@ function stripComments(source: string): string {
 /**
  * Extracts the raw contents of every single/double/backtick-quoted
  * string or template literal in `source` (comments must already be
- * stripped — see `stripComments` above — or a comment-internal backtick
+ * stripped, see `stripComments` above, or a comment-internal backtick
  * will be misread as a literal delimiter).
  */
 function extractStringLiterals(source: string): string[] {
@@ -144,7 +144,7 @@ export interface CopyViolation {
   literal: string;
 }
 
-/** Runs the scan over an arbitrary list of `{ file, source }` pairs — factored out so the test below can run it both against the real tree and against a deliberate fixture violation, proving this is a live scan. */
+/** Runs the scan over an arbitrary list of `{ file, source }` pairs, factored out so the test below can run it both against the real tree and against a deliberate fixture violation, proving this is a live scan. */
 export function scanForSpecLeaks(sources: Array<{ file: string; source: string }>): CopyViolation[] {
   const violations: CopyViolation[] = [];
   for (const { file, source } of sources) {

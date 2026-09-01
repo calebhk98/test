@@ -3,7 +3,7 @@
  * changes. Update materialized compatibility scores." The on-answer-change
  * path already runs synchronously inside
  * `question.service#putMyAnswers` -> `compatibility.refreshScoresForUser`
- * (see that file); this job is the "nightly" half —
+ * (see that file); this job is the "nightly" half,
  * `compatibility.service#refreshAllScores`, an idempotent full recompute
  * (upserts every unordered active-user pair's `compatibility_scores` row
  * from current `answers`).

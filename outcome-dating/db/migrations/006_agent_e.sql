@@ -10,7 +10,7 @@
 -- and `reports` is reporter-submitted structured reports only (§23.22).
 -- `moderation.computeModerationScore` (spec §18.5) needs a durable,
 -- queryable log of every raw signal that has been ingested for a user so
--- it can be summed — this table is that log.
+-- it can be summed, this table is that log.
 --
 -- Append-only, same shape as `trust_events` (§23.24) for the same reason:
 -- "why is this user's moderation score what it is" must be reconstructable

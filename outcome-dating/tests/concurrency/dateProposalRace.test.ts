@@ -4,10 +4,10 @@
  *
  * test-audit.md Finding 3 named this gap directly: "a genuinely
  * concurrent double-accept (e.g. a client retry racing the original
- * request) is never tested for double-capture — only sequential
+ * request) is never tested for double-capture, only sequential
  * idempotent-retry ... is covered." Unlike `interest.service.ts` (see
  * `tests/concurrency/interestRace.test.ts`), `acceptDateProposal` and
- * `cancelDateProposal` are NOT single atomic CAS updates — they read the
+ * `cancelDateProposal` are NOT single atomic CAS updates, they read the
  * proposal row, then perform several separately-committing checkpoints
  * (payment authorize/capture/refund calls), by design, for crash
  * resumability (see `dateProposal.service.ts`'s module header). Writing
@@ -100,7 +100,7 @@ test('concurrent accept of the SAME date proposal: exactly one winner reaches ti
   });
   assert.equal(proposed.status, 'pending_acceptance');
 
-  // Two concurrent "accept" calls for the same recipient — e.g. a
+  // Two concurrent "accept" calls for the same recipient, e.g. a
   // double-tap or a client retry racing the original request.
   const [a, b] = await Promise.allSettled([
     dateProposalService.acceptDateProposal(recipientCtx, proposed.id),
@@ -120,7 +120,7 @@ test('concurrent accept of the SAME date proposal: exactly one winner reaches ti
   assert.equal(finalStatus, 'ticketed', 'the winner must have carried the flow all the way through to ticketed');
 
   const reloaded = await dateProposalService.getDateProposal(proposerCtx, proposed.id);
-  assert.equal(reloaded.status, 'ticketed', 'the persisted state must agree with the winner — never stuck mid-flow, never double-applied');
+  assert.equal(reloaded.status, 'ticketed', 'the persisted state must agree with the winner, never stuck mid-flow, never double-applied');
 
   // The money assertion: each side captured EXACTLY ONCE, not twice.
   assert.equal(await captureEntryCount(proposed.id, pair.proposerId), 1, 'the proposer must be captured exactly once, never double-captured by the race');
@@ -148,7 +148,7 @@ test('concurrent cancel of the SAME ticketed date proposal (full-refund window):
   // Move to exactly the full-refund boundary (>= cutoff hours out).
   db.clock.set(new Date(scheduledStart.getTime() - 24 * 60 * 60 * 1000));
 
-  // Both participants race to cancel at once — a real scenario (either
+  // Both participants race to cancel at once, a real scenario (either
   // side may cancel per §14.7) and the "refund plus cancel" race: the
   // winner's cancel must trigger the refund exactly once.
   const [a, b] = await Promise.allSettled([
@@ -166,7 +166,7 @@ test('concurrent cancel of the SAME ticketed date proposal (full-refund window):
   assert.equal(finalStatus, 'refunded');
 
   // The money assertion: nets to zero, from EXACTLY one capture and
-  // EXACTLY one refund per side — not a double-refund driving the ledger
+  // EXACTLY one refund per side, not a double-refund driving the ledger
   // negative, and not a no-op leaving money captured.
   const ctx = makeCtx(db, systemActor());
   const proposerEntries = await ledgerService.listEntriesForDateProposal(ctx, proposed.id);
@@ -174,6 +174,6 @@ test('concurrent cancel of the SAME ticketed date proposal (full-refund window):
   const recipientRefunds = proposerEntries.filter((e) => e.userId === pair.recipientId && e.type === 'refund');
   assert.equal(proposerRefunds.length, 1, 'the proposer must be refunded exactly once, never twice by the race');
   assert.equal(recipientRefunds.length, 1, 'the recipient must be refunded exactly once, never twice by the race');
-  assert.equal(await captureLedgerTotal(proposed.id, pair.proposerId), 0, 'fully refunded nets to zero — not negative from a double-refund');
+  assert.equal(await captureLedgerTotal(proposed.id, pair.proposerId), 0, 'fully refunded nets to zero, not negative from a double-refund');
   assert.equal(await captureLedgerTotal(proposed.id, pair.recipientId), 0);
 });

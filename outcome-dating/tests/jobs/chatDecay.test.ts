@@ -1,5 +1,5 @@
 /**
- * §25.3 Chat Cooling/Archival job — the 72h/14d/21d thresholds and the
+ * §25.3 Chat Cooling/Archival job, the 72h/14d/21d thresholds and the
  * "never archive established" invariant (mirrors C-25.3.1, C-12.6.*,
  * C-12.6.4), run through the actual job function.
  */

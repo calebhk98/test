@@ -1,10 +1,10 @@
 /**
  * Shared test setup for this build's three suites
- * (tests/unit/retention.test.ts, i18n.test.ts, altText.test.ts) — same
+ * (tests/unit/retention.test.ts, i18n.test.ts, altText.test.ts), same
  * shape as tests/unit/testCtx.ts (Agent A's own helper) and
  * tests/unit/testCtxAgentE.ts/testCtxEligibility.ts/testCtxDecisions.ts
  * (every other agent's), just for this build's own tables. Not part of
- * INTERFACES.md's frozen list — a local helper these three files share to
+ * INTERFACES.md's frozen list, a local helper these three files share to
  * avoid duplicating DB bootstrap, following this repo's established
  * per-agent convention.
  *
@@ -27,7 +27,7 @@ import type { Actor, Ctx } from '../../src/lib/ctx.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const DB_BASE_NAME = 'odate_retention';
-/** Per-process random suffix — see testCtx.ts's own longer note on why this closes a cross-run database-name-collision race when this repo's suite is run by more than one agent at once. */
+/** Per-process random suffix, see testCtx.ts's own longer note on why this closes a cross-run database-name-collision race when this repo's suite is run by more than one agent at once. */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
@@ -79,7 +79,7 @@ export interface BuildCtxOptions {
   clock?: ManualClock;
 }
 
-/** Builds a fresh Ctx bound to the shared test pool. Pass `clock` to share one ManualClock instance across several `buildCtx` calls (so advancing it in one Ctx is visible to another) — otherwise a fresh clock is created from `now` (or the current time). */
+/** Builds a fresh Ctx bound to the shared test pool. Pass `clock` to share one ManualClock instance across several `buildCtx` calls (so advancing it in one Ctx is visible to another), otherwise a fresh clock is created from `now` (or the current time). */
 export function buildCtx(opts: BuildCtxOptions = {}): Ctx {
   const pool = getTestPool();
   const clock = opts.clock ?? new ManualClock(opts.now ?? new Date());
@@ -105,7 +105,7 @@ export function userActor(userId: string): Actor {
 }
 
 let emailCounter = 0;
-/** Inserts a minimal `users` row and returns its id — every test table this build's suites touch FKs to `users(id)`. */
+/** Inserts a minimal `users` row and returns its id, every test table this build's suites touch FKs to `users(id)`. */
 export async function createUser(pool: pg.Pool, overrides?: { createdAt?: Date }): Promise<string> {
   emailCounter += 1;
   const id = randomUUID();
@@ -150,7 +150,7 @@ export async function createVenue(pool: pg.Pool): Promise<string> {
   return rows[0]!.id;
 }
 
-/** Inserts a minimal `date_proposals` row — `payment_ledger` requires a real (NOT NULL) `date_proposal_id`, so a "financial record survives" test needs one to attach to. */
+/** Inserts a minimal `date_proposals` row, `payment_ledger` requires a real (NOT NULL) `date_proposal_id`, so a "financial record survives" test needs one to attach to. */
 export async function createDateProposal(pool: pg.Pool, conversationId: string, proposerId: string, recipientId: string, venueId: string): Promise<string> {
   const now = new Date();
   const { rows } = await pool.query<{ id: string }>(

@@ -19,20 +19,20 @@ import type { QuestionAnswerState, QuestionDefinition } from './types.js';
  *      wrapper around `deriveDealBreakerFilterRows` below, exported from
  *      question.service.ts) whenever a user's new-bank answers change.
  *   2. Pass the result straight to `filter.service#updateMyFilters(ctx, rows)`
- *      — mirroring how `question.service#putMyAnswers` already calls
+ * mirroring how `question.service#putMyAnswers` already calls
  *      `compatibility.service#refreshScoresForUser` as a side effect
  *      today. This project's ownership boundary keeps that wiring out of
  *      this agent's hands (filter.service.ts is off limits), so it is
  *      NOT called automatically from anywhere in this file/PR.
  *   3. A stale deal-breaker filter (the user changes their preference
  *      from a deal breaker to something softer) must be retracted, not
- *      just left in place — `updateMyFilters` upserts by `filterKey`, so
+ *      just left in place, `updateMyFilters` upserts by `filterKey`, so
  *      the wiring agent also needs a `disabled`/removed row emitted for
  *      any `qb:*` filter key that no longer has a corresponding deal
  *      breaker (this module's `deriveDealBreakerFilterRows` only emits
  *      currently-active deal breakers; the caller is responsible for
  *      diffing against previously-derived keys and disabling ones that
- *      dropped out — see `RETIRED-KEY NOTE` below for the exact
+ *      dropped out, see `RETIRED-KEY NOTE` below for the exact
  *      shape to use).
  *
  * FILTER-KEY NAMESPACE: every derived filter key is prefixed `qb:` (e.g.
@@ -40,7 +40,7 @@ import type { QuestionAnswerState, QuestionDefinition } from './types.js';
  * old-schema `questions.slug` value that `filter.service.ts`'s default
  * `resolveAttributeValue` case already resolves against the OLD
  * `answers`/`questions` tables (see filter.service.ts's file-level
- * "CANDIDATE ATTRIBUTE SOURCING" note) — a `qb:`-prefixed key is
+ * "CANDIDATE ATTRIBUTE SOURCING" note), a `qb:`-prefixed key is
  * guaranteed to fall through that default case and currently resolve to
  * `undefined` (fail-closed) until `filter.service.ts` is extended with a
  * `qb:`-aware branch that reads `user_question_answers` (see the
@@ -49,13 +49,13 @@ import type { QuestionAnswerState, QuestionDefinition } from './types.js';
  * RESOLVED LIMITATION (multi_choice, `in` operator): `filter.service.ts`'s
  * `evaluateFilter` 'in' operator used to be `value.some(v => deepEqual(v,
  * candidateValue))`, which only ever worked when `candidateValue` was a
- * SCALAR (one array entry) — it could never correctly express a
+ * SCALAR (one array entry), it could never correctly express a
  * `multi_choice` deal breaker's "must include at least one of these"
  * semantics (see `isAcceptable`/typeHandlers.ts) against a candidate whose
  * `self_value` is itself an array. `filter.service.ts`'s 'in' operator now
  * special-cases an array `candidateValue` as OVERLAP ("shares at least one
- * element with `value`") rather than scalar membership — exactly this
- * row's semantics — so the row derived below is exact, not approximate.
+ * element with `value`") rather than scalar membership, exactly this
+ * row's semantics, so the row derived below is exact, not approximate.
  */
 
 export type DealBreakerFilterOperator = 'eq' | 'gte' | 'lte' | 'in';
@@ -72,14 +72,14 @@ export interface DealBreakerFilterRow {
    * them through. filter.service.ts's `UpdateFilterInput.excludeIfUnset`
    * (see that file's "MISSING/UNRESOLVED VALUES" note, added by the
    * sibling agent who owns that file) already documents this exact
-   * expectation for filters this module derives — passed through
+   * expectation for filters this module derives, passed through
    * explicitly here so the caller doesn't need to know to set it.
    */
   excludeIfUnset: true;
   /**
    * True when `filter.service.ts`'s current operator set cannot express
    * this row exactly. Always `false`/absent as of the `evaluateFilter`
-   * 'in'-operator overlap fix (see RESOLVED LIMITATION above) — kept on
+   * 'in'-operator overlap fix (see RESOLVED LIMITATION above), kept on
    * the type (rather than removed) so a future operator gap has somewhere
    * to signal from without a breaking type change.
    */
@@ -98,10 +98,10 @@ export interface DealBreakerFilterRow {
  * make a `qb:`-prefixed key resolve correctly it needs a new branch that,
  * given `filterKey.slice(3)` as a `question_bank` slug, reads the
  * candidate's CURRENT `user_question_answers` row for that slug and
- * returns its `self_value` — `undefined` if absent (fail-closed, same
+ * returns its `self_value`, `undefined` if absent (fail-closed, same
  * convention `loadSelfAnswerBySlug` already uses) or if `status !==
  * 'answered'` (an unanswered/skipped/`prefer_not_to_say` self value can't
- * be resolved to compare — deliberately: this is exactly what makes
+ * be resolved to compare, deliberately: this is exactly what makes
  * `prefer_not_to_say` able to fail a deal-breaker filter, since
  * `evaluateFilter` treats `undefined` as always failing).
  */
@@ -122,7 +122,7 @@ export function deriveDealBreakerFilterRowsForQuestion(
       return [{ filterKey: key, operator: 'in', value: preferenceValue, enabled: true, excludeIfUnset: true }];
     }
     case 'multi_choice': {
-      // See RESOLVED LIMITATION above — `evaluateFilter`'s 'in' operator
+      // See RESOLVED LIMITATION above, `evaluateFilter`'s 'in' operator
       // now treats an array `candidateValue` as "must overlap this set",
       // so this row is exact.
       return [{ filterKey: key, operator: 'in', value: preferenceValue, enabled: true, excludeIfUnset: true }];
@@ -138,7 +138,7 @@ export function deriveDealBreakerFilterRowsForQuestion(
   }
 }
 
-/** Derives every deal-breaker filter row implied by a user's full answer set. Pure — no I/O; `question.service#getMyDealBreakerFilterRows` is the I/O-performing wrapper. */
+/** Derives every deal-breaker filter row implied by a user's full answer set. Pure, no I/O; `question.service#getMyDealBreakerFilterRows` is the I/O-performing wrapper. */
 export function deriveDealBreakerFilterRows(
   questions: QuestionDefinition[],
   answersBySlug: Map<string, QuestionAnswerState>,
@@ -154,7 +154,7 @@ export function deriveDealBreakerFilterRows(
 
 // =====================================================================
 // Pure deal-breaker EVALUATION (independent of filter.service.ts's own
-// hard_filters persistence/resolution — see file doc). Exercises the
+// hard_filters persistence/resolution, see file doc). Exercises the
 // exact semantics `RESOLUTION NOTE` above documents for
 // `filter.service.ts` to eventually implement, so those semantics are
 // directly unit-tested here even though filter.service.ts is off limits.
@@ -169,11 +169,11 @@ export interface DealBreakerCheckResult {
 /**
  * Does `candidateAnswer` satisfy `viewerAnswer`'s deal breaker on this
  * question? `undefined`/non-`answered` self-values on the candidate side
- * (never answered, skipped, or `prefer_not_to_say`) FAIL CLOSED — the
+ * (never answered, skipped, or `prefer_not_to_say`) FAIL CLOSED, the
  * candidate is treated as not satisfying the deal breaker, matching
  * `filter.service.ts`'s existing fail-closed convention and the task
  * brief's rule "`prefer_not_to_say` ... can still fail another user's
- * deal-breaker filter — filters win."
+ * deal-breaker filter, filters win."
  */
 function candidateSatisfiesDealBreaker(
   question: QuestionDefinition,
@@ -189,7 +189,7 @@ function candidateSatisfiesDealBreaker(
  * Evaluates every deal breaker `viewerAnswersBySlug` states against
  * `candidateAnswersBySlug`. This is the pure semantic a later agent wires
  * into `filter.service.ts#passesMutualFilters` (or a `qb:`-aware
- * extension of it) — see file doc.
+ * extension of it), see file doc.
  */
 export function evaluateDealBreakers(
   questions: QuestionDefinition[],

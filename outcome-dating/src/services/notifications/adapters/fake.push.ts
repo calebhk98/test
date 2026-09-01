@@ -2,7 +2,7 @@ import { newId } from '../../../lib/ids.js';
 import type { PushSendParams, PushSendResult, PushSender } from '../ports/push.port.js';
 
 /**
- * In-memory, deterministic `PushSender` for dev and tests — same shape as
+ * In-memory, deterministic `PushSender` for dev and tests, same shape as
  * `src/services/payments/fake.processor.ts`'s `FakeProcessor`: magic
  * substrings in the input (here, `token`) select behavior deterministically
  * instead of randomness, so failure paths are exercisable without mocking:
@@ -12,8 +12,8 @@ import type { PushSendParams, PushSendResult, PushSender } from '../ports/push.p
  *   anything else                   -> status: 'sent'
  *
  * Every attempted send is recorded in `sent` (including failures, so tests
- * can assert on send COUNT for coalescing — e.g. "5 messages -> exactly 1
- * PushSender.send call" — as well as on content). One instance is one
+ * can assert on send COUNT for coalescing, e.g. "5 messages -> exactly 1
+ * PushSender.send call", as well as on content). One instance is one
  * isolated "device fleet"; construct a fresh one per test.
  */
 export class FakePushSender implements PushSender {

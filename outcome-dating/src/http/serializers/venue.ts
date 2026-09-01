@@ -1,13 +1,13 @@
 /**
- * src/http/serializers/venue.ts — every response shape reachable by a
+ * src/http/serializers/venue.ts, every response shape reachable by a
  * `venue_staff` actor.
  *
  * HARD INVARIANT (spec §4.2, C-4.2.4/5/6): venue staff MUST NOT see chats,
  * emails, or payment card/hold data. `redemption.service.ts`'s own
  * `RedeemResult` (`{voucher, redemption, dateProposal}`) is already narrow
  * by construction (its module doc: "never touches `messages`, `users.email`,
- * or `payment_methods`/`payment_holds`") — but `DateProposal` itself still
- * carries `proposerId`/`recipientId` (bare ids, not emails — harmless) and
+ * or `payment_methods`/`payment_holds`"), but `DateProposal` itself still
+ * carries `proposerId`/`recipientId` (bare ids, not emails, harmless) and
  * `policySnapshot` (config values, not money the venue needs to see). This
  * serializer is the explicit allowlist that is the ACTUAL enforcement
  * point: every field a venue-staff response can carry is named here, so
@@ -15,7 +15,7 @@
  * instead of auditing every domain type this module touches.
  *
  * Participant NAMES (not ids, not emails) come from `profiles.display_name`
- * via a direct, read-only query — `profile.service.ts` has no
+ * via a direct, read-only query, `profile.service.ts` has no
  * "look up display names for a set of user ids" export, and this is
  * exactly the kind of narrow cross-domain read the rest of the codebase
  * already does directly (e.g. `discovery.service.ts` reading `profiles`
@@ -48,7 +48,7 @@ export interface VenueDateProposalView {
   scheduledStart: string;
   scheduledEnd: string;
   status: DateProposal['status'];
-  /** Display names only — never email, never a bare id lookup the client could correlate to PII (spec §15.1 "user names"). */
+  /** Display names only, never email, never a bare id lookup the client could correlate to PII (spec §15.1 "user names"). */
   participantNames: string[];
 }
 
@@ -109,7 +109,7 @@ export interface VenueUpcomingVoucherView {
   participantNames: string[];
 }
 
-/** `GET /venue/vouchers` — upcoming (not-yet-redeemed) vouchers for the caller's venue only (spec §4.2 "view upcoming vouchers for their venue"). */
+/** `GET /venue/vouchers`, upcoming (not-yet-redeemed) vouchers for the caller's venue only (spec §4.2 "view upcoming vouchers for their venue"). */
 export async function listUpcomingVouchersForVenue(ctx: Ctx, venueId: string): Promise<VenueUpcomingVoucherView[]> {
   const { rows } = await ctx.db.query<VenueUpcomingVoucherRow>(
     `SELECT v.id AS voucher_id, v.code, v.status, dp.scheduled_start, dp.scheduled_end, dp.id AS date_proposal_id,

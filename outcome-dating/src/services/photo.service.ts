@@ -5,29 +5,29 @@ import { NotFoundError, ValidationError } from '../lib/errors.js';
 import type { PhotoModerationStatus, UserPhoto } from '../domain/types.js';
 
 /**
- * photo.service — photo upload, ordering, and moderation.
+ * photo.service, photo upload, ordering, and moderation.
  * Spec: §7.2 (requirements), §24.2 (routes).
  *
  * Owning agent: A.
  *
  * Invariants:
  *  - Every upload is analyzed via `ctx.media` (`ImageModerationPort`,
- *    `src/services/media/*`) before the row is marked 'approved' — never
+ *    `src/services/media/*`) before the row is marked 'approved', never
  *    trust client-supplied moderation status.
  *  - A photo in the primary slot MUST have `faceDetected: true` from that
- *    analysis, or it's rejected (spec §7.2 rule 2) — this module is the
+ *    analysis, or it's rejected (spec §7.2 rule 2), this module is the
  *    enforcement point; `discovery.service.ts`'s visibility rule ("has at
  *    least one approved photo", §10.2 rule 4) just reads the resulting
  *    `moderation_status`.
  *  - Duplicate/scam detection (§7.2 rule 4, §18.2) compares the new
- *    photo's `perceptualHash` against other users' `user_photos` rows —
+ *    photo's `perceptualHash` against other users' `user_photos` rows,
  *    this module owns that query; `ctx.media` only produces the hash for
  *    one image.
  *  - `uq_user_photos_one_primary` (partial unique index) enforces "at most
  *    one primary photo" at the DB layer; `setPrimaryPhoto` must
  *    unset-then-set within one transaction to satisfy it.
  *  - Zero human moderation (§18.1): nudity/weapons/illegal content always
- *    resolves to 'rejected' immediately from `ctx.media`'s verdict — there
+ *    resolves to 'rejected' immediately from `ctx.media`'s verdict, there
  *    is no "pending human review" state written anywhere in this file.
  */
 
@@ -93,7 +93,7 @@ export async function uploadPhoto(ctx: Ctx, input: UploadPhotoInput): Promise<Us
   );
   const existingCount = Number(existingRows[0]?.count ?? 0);
   const nextPosition = (existingRows[0]?.max_position ?? -1) + 1;
-  // The first photo a user ever uploads is the primary-candidate — it's
+  // The first photo a user ever uploads is the primary-candidate, it's
   // the one the "first photo must contain a visible face" gate (§7.2 rule
   // 2) applies to. Later uploads are never auto-primary; promotion happens
   // explicitly via `setPrimaryPhoto`, which re-runs this same gate.
@@ -146,7 +146,7 @@ export async function deletePhoto(ctx: Ctx, photoId: string): Promise<void> {
     // Promote the next best candidate: lowest position, already-approved,
     // and (per §7.2 rule 2) already known to have a detected face from its
     // own analysis. If none qualifies, the user has no primary until they
-    // pick one via `setPrimaryPhoto` — never auto-promote a faceless photo.
+    // pick one via `setPrimaryPhoto`, never auto-promote a faceless photo.
     const { rows: candidateRows } = await ctx.db.query<{ id: string }>(
       `SELECT id FROM user_photos WHERE user_id = $1 AND moderation_status = 'approved' AND face_detected = true ORDER BY position ASC LIMIT 1`,
       [userId],
@@ -210,7 +210,7 @@ export async function setPrimaryPhoto(ctx: Ctx, photoId: string): Promise<UserPh
   return mapPhoto(rows[0]!);
 }
 
-/** Persist a new photo order (position 0..n-1). Does not change which photo is primary — see `setPrimaryPhoto`. */
+/** Persist a new photo order (position 0..n-1). Does not change which photo is primary, see `setPrimaryPhoto`. */
 export async function reorderPhotos(ctx: Ctx, orderedPhotoIds: string[]): Promise<UserPhoto[]> {
   const { userId } = requireUserActor(ctx);
 
@@ -221,7 +221,7 @@ export async function reorderPhotos(ctx: Ctx, orderedPhotoIds: string[]): Promis
   const requestedIds = new Set(orderedPhotoIds);
 
   if (existingIds.size !== requestedIds.size || [...existingIds].some((id) => !requestedIds.has(id))) {
-    throw new ValidationError('That list of photos doesn’t match your current photos — refresh and try again.');
+    throw new ValidationError('That list of photos doesn’t match your current photos, refresh and try again.');
   }
 
   for (let i = 0; i < orderedPhotoIds.length; i++) {

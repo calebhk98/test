@@ -1,6 +1,6 @@
 /**
  * Admin stats page routes (product owner addition). Admin-only, and EVERY
- * request here — reads included, not just mutations — writes an
+ * request here, reads included, not just mutations, writes an
  * `admin_audit_log` row via `writeAdminAudit`: this page aggregates the
  * platform's full operational and financial history, and the task brief
  * calls for every access to be logged, a deliberately stronger bar than

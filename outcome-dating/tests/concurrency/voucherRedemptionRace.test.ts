@@ -7,10 +7,10 @@
  * `dateProposalRace.test.ts`), `redemption.service.ts#runRedemption`
  * already does this correctly: the whole redemption runs inside one
  * `withTransaction`, opened with `SELECT ... FROM vouchers WHERE id = $1
- * FOR UPDATE` — a real row lock, not a read-then-write race. This test is
+ * FOR UPDATE`, a real row lock, not a read-then-write race. This test is
  * the genuine-concurrency proof of that (test-audit.md Finding 3's
- * pattern, copied from `tests/jobs/scheduler.test.ts`), and — unlike the
- * dateProposal accept/cancel races — is expected to pass against the
+ * pattern, copied from `tests/jobs/scheduler.test.ts`), and, unlike the
+ * dateProposal accept/cancel races, is expected to pass against the
  * code exactly as it already stands; no source change was needed here.
  */
 import { test, before, after } from 'node:test';
@@ -75,7 +75,7 @@ test('concurrent redemption of the SAME voucher: exactly one winner, never doubl
   const staffCtx = makeCtx(db, venueStaffActor(staffRows[0]!.id, venueId), { payments: processor });
 
   // Two venue-staff devices scan the SAME QR at (effectively) the same
-  // instant — a real scenario (a phone double-tap, two staff terminals).
+  // instant, a real scenario (a phone double-tap, two staff terminals).
   const [a, b] = await Promise.allSettled([
     redemptionService.redeemByStaff(staffCtx, { qrPayload: voucher!.qrPayload }),
     redemptionService.redeemByStaff(staffCtx, { qrPayload: voucher!.qrPayload }),

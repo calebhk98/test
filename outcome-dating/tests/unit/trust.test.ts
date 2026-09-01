@@ -13,7 +13,7 @@ after(async () => {
 });
 
 // =====================================================================
-// §6.1 level boundaries — every edge named in the task brief.
+// §6.1 level boundaries, every edge named in the task brief.
 // =====================================================================
 test('levelForScore: every §6.1 boundary is exactly right', async () => {
   const ctx = buildCtx();
@@ -95,7 +95,7 @@ test('recalculateTrustScore: state factors (verified email/payment/profile) cont
 });
 
 // =====================================================================
-// §6.3 user-facing explanation — must never leak weights.
+// §6.3 user-facing explanation, must never leak weights.
 // =====================================================================
 test('getMyTrustSummary shows actionable items and recent negative events, never raw weights', async () => {
   const ctx = buildCtx();
@@ -108,13 +108,13 @@ test('getMyTrustSummary shows actionable items and recent negative events, never
   const summary = await trust.getMyTrustSummary(buildCtx({ actor: userActor(userId) }));
 
   // Structural proof weights cannot leak: TrustSummary's own shape has no
-  // numeric factor/weight fields at all — only these four keys exist.
+  // numeric factor/weight fields at all, only these four keys exist.
   assert.deepEqual(Object.keys(summary).sort(), ['actionableImprovements', 'recentNegativeEvents', 'trustLevel', 'trustScore'].sort());
 
   assert.ok(summary.actionableImprovements.length > 0);
   for (const item of summary.actionableImprovements) {
     assert.equal(typeof item, 'string');
-    // Static template strings only — no interpolated numbers (a weight
+    // Static template strings only, no interpolated numbers (a weight
     // leaking in would show up as a digit in the copy).
     assert.doesNotMatch(item, /\d/);
   }
@@ -142,7 +142,7 @@ test('the internal breakdown type is structurally distinct from TrustSummary (we
   const ctx = buildCtx();
   const userId = await insertUser(ctx, { trustScore: 50, createdAt: new Date() });
   const summary = await trust.getMyTrustSummary(buildCtx({ actor: userActor(userId) }));
-  // TrustSummary has no 'stateFactors'/'base'/'rawScore' keys — those only
+  // TrustSummary has no 'stateFactors'/'base'/'rawScore' keys, those only
   // exist on InternalTrustBreakdown, which getMyTrustSummary never returns.
   assert.equal('stateFactors' in summary, false);
   assert.equal('base' in summary, false);
@@ -209,7 +209,7 @@ test('§6.4 vs §12.3 precedence: linksPerHourLimitFor tracks the same trust.lin
   assert.equal((await trust.can(ctx, 'send_links', { trustLevel: 'limited' })).linkMode, 'blocked');
   assert.equal((await trust.can(ctx, 'send_links', { trustLevel: 'standard' })).linkMode, 'warn');
 
-  // Retune the boundary to 'trusted' — both the numeric per-hour bucket
+  // Retune the boundary to 'trusted', both the numeric per-hour bucket
   // AND the clickability gate must move together, proving they share one
   // source of truth rather than two independently-hardcoded comparisons.
   await ctx.config.set('trust.link_min_level', 'trusted', 'test-admin');
@@ -245,7 +245,7 @@ test('finding 2 fix: retuning trust.link_min_level moves message.linkLimitForCal
   // standard_trust cap and clickable-with-warning links. Each assertion
   // below builds a FRESH Ctx (a fresh, uncached ConfigService instance)
   // so it always reads the live config row rather than an instance-local
-  // cache from before the retune — this project's ConfigService caches
+  // cache from before the retune, this project's ConfigService caches
   // per-instance, not globally (see config.service.ts#get).
   const standardBefore = buildCtx({ actor: userActor('33333333-3333-3333-3333-333333333333', 'standard') });
   assert.equal(await message.linkLimitForCaller(standardBefore), 5);

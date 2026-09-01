@@ -4,20 +4,20 @@ import { ForbiddenError, NotFoundError, ValidationError } from '../lib/errors.js
 import type { Venue, VenueCategory, VenueTimeSlot } from '../domain/types.js';
 
 /**
- * venue.service — the venue directory.
+ * venue.service, the venue directory.
  * Spec: §13.2, §24.8 (`GET /venues`), §27 (admin venue manager).
  *
  * Owning agent: D.
  *
  * Invariants:
  *  - `category` is restricted to the exact §13.2 list at the DB layer
- *    (CHECK constraint) and the type layer (`VenueCategory` union) —
+ *    (CHECK constraint) and the type layer (`VenueCategory` union),
  *    admins can only add venues in these categories in MVP; a "new venue
  *    categories" expansion is feature-flagged (spec §22) and would extend
  *    both, not bypass either.
  *  - `adminUpdateVenue({ active: false })` (spec §30.6 "venue closes")
  *    must not be blocked by existing `date_proposals` referencing the
- *    venue — deactivation only affects future proposal creation
+ *    venue, deactivation only affects future proposal creation
  *    (`dateProposal.service#proposeDate` must reject `venueId`s for
  *    inactive venues); it does not cancel existing tickets. Refund/
  *    reschedule for already-ticketed dates at a since-closed venue is

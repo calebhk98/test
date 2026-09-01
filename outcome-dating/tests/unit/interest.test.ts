@@ -29,12 +29,12 @@ async function makeUser(): Promise<string> {
 }
 
 // =====================================================================
-// §11.3 — structurally impossible to attach free text before match.
+// §11.3, structurally impossible to attach free text before match.
 // =====================================================================
 
 function _typeOnly_cannotAttachMessageToSendInterest(ctx: Ctx, recipientId: string) {
   // @ts-expect-error sendInterest's signature is (ctx, recipientId: string)
-  // — there is no options object, so a caller cannot pass a `message`
+  // there is no options object, so a caller cannot pass a `message`
   // field even by mistake. This is a compile-time guarantee (spec §11.3),
   // not a runtime-validated one; the surrounding function is never called.
   return interestService.sendInterest(ctx, recipientId, { message: 'hi there' });
@@ -98,7 +98,7 @@ test('legal transition: pending -> expired via the §25.1 job, and it frees the 
 });
 
 // =====================================================================
-// Illegal transitions — every one must throw InterestTransitionError
+// Illegal transitions, every one must throw InterestTransitionError
 // (except ownership/not-found, which get their own typed errors).
 // =====================================================================
 
@@ -247,7 +247,7 @@ test('daily outgoing cap is enforced against a lowered live config value', async
 });
 
 // =====================================================================
-// Policy-snapshot immutability across a config change (spec §21.3 — MUST).
+// Policy-snapshot immutability across a config change (spec §21.3, MUST).
 // =====================================================================
 
 test('policy snapshot immutability: an interest keeps the expiry it was created under even after config changes', async () => {
@@ -260,7 +260,7 @@ test('policy snapshot immutability: an interest keeps the expiry it was created 
   const recipient2 = await makeUser();
   // Deliberately share `adminCtx.config`'s ConfigService instance (rather
   // than calling `buildCtx` again, which would build a second instance
-  // with its own independent in-memory cache) — this test is about
+  // with its own independent in-memory cache), this test is about
   // whether an *already-created interest* observes a config change, not
   // about cross-instance cache coherency (out of scope per
   // config.service.ts's own docs).

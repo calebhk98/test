@@ -70,7 +70,7 @@ test('a token moving to a new user (shared/resold device) cuts the previous owne
   assert.equal(newTokens.length, 1);
   assert.equal(newTokens[0]!.pushToken, 'tok-shared');
 
-  // And there is exactly one physical row, not two — no lingering ghost row under the old owner.
+  // And there is exactly one physical row, not two, no lingering ghost row under the old owner.
   const { rows } = await pool.query('SELECT user_id FROM device_tokens WHERE push_token = $1', ['tok-shared']);
   assert.equal(rows.length, 1);
   assert.equal(rows[0]!.user_id, newOwner);

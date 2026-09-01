@@ -1,12 +1,12 @@
 /**
- * src/http/serializers/stats.ts — explicit, field-by-field allowlist views
+ * src/http/serializers/stats.ts, explicit, field-by-field allowlist views
  * for both stats pages (never a raw spread of a service return value into
  * `reply.send`), following the same discipline
  * `src/http/serializers/trust.ts` documents: a service return type can
  * grow a new field over time, and an allowlist here is what stops that
  * field reaching an HTTP response unreviewed.
  *
- * This file only reshapes/renames — it makes no privacy decisions of its
+ * This file only reshapes/renames, it makes no privacy decisions of its
  * own (those are enforced upstream, in `stats.service.ts`/
  * `adminStats.service.ts`: small-cohort suppression, no trust weights, no
  * per-person data, aggregates-only for admin). Its job is narrower and

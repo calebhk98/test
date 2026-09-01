@@ -5,8 +5,8 @@
  * `excludeIfUnset` per-filter toggle (including its pool-count preview).
  *
  * Uses its own dedicated Postgres database (`odate_units_profileattributes`
- * — lowercase: an unquoted `CREATE DATABASE` identifier is case-folded by
- * Postgres, so the name used to reconnect must already be lowercase — per
+ * lowercase: an unquoted `CREATE DATABASE` identifier is case-folded by
+ * Postgres, so the name used to reconnect must already be lowercase, per
  * the build brief: one database per test file, `odate_units_<suite>`
  * naming, never shared with a sibling agent's own test database).
  */
@@ -110,7 +110,7 @@ async function makeUserWithProfile(overrides: Partial<profile.UpdateProfileInput
 // Profile fields: storage, optionality.
 // =====================================================================
 
-test('updateMyProfile: height/weight/bodyType/unitPreference are optional — a profile with none of them set is valid', async () => {
+test('updateMyProfile: height/weight/bodyType/unitPreference are optional, a profile with none of them set is valid', async () => {
   const userId = await makeUserWithProfile();
   const p = await profile.getMyProfile(actorFor(userId));
   assert.equal(p.heightCm, null);
@@ -130,7 +130,7 @@ test('updateMyProfile: stores height/weight/bodyType canonically and round-trips
 
 test('updateMyProfile: rejects an out-of-range height/weight and an unknown bodyType', async () => {
   // `UpdateProfileSchema.parse(...)` (not `safeParse`) is this codebase's
-  // established convention across every service — see auth.service.ts,
+  // established convention across every service, see auth.service.ts,
   // appeal.service.ts, dateProposal.service.ts, filter.service.ts, etc.,
   // all of which let a raw `ZodError` propagate on invalid input rather
   // than wrapping it in `ValidationError`. This build's new fields follow
@@ -153,7 +153,7 @@ test('updateMyProfile: rejects an out-of-range height/weight and an unknown body
         gender: 'woman',
         seeking: 'man',
         relationshipIntention: 'long_term',
-        // @ts-expect-error — deliberately an invalid bodyType to prove the zod schema rejects it at runtime.
+        // @ts-expect-error, deliberately an invalid bodyType to prove the zod schema rejects it at runtime.
         bodyType: 'not-a-real-body-type',
       }),
     ZodError,
@@ -220,7 +220,7 @@ test('PublicProfileView: height and bodyType are always present (no hide toggle 
 // =====================================================================
 
 test('height filter compares canonical centimetres regardless of either user\'s unitPreference', async () => {
-  // Viewer prefers imperial, candidate prefers metric — neither preference
+  // Viewer prefers imperial, candidate prefers metric, neither preference
   // may leak into the comparison, which must be pure centimetres either way.
   const viewer = await makeUserWithProfile({ unitPreference: 'imperial' });
   const tallEnough = await makeUserWithProfile({ heightCm: 183, unitPreference: 'metric' }); // 6'0"
@@ -272,7 +272,7 @@ test('updateMyFilters: rejects a body_type filter value outside the canonical BO
 // =====================================================================
 // Missing optional attributes + excludeIfUnset: default false (included)
 // for every filter key, toggled true (excluded) only on explicit request
-// — including a simulated deal-breaker-derived filter.
+// including a simulated deal-breaker-derived filter.
 // =====================================================================
 
 for (const key of ['height_cm', 'weight_g', 'body_type'] as const) {
@@ -334,7 +334,7 @@ test('a simulated deal-breaker-derived filter defaults to INCLUDING an unset val
   // "Deal breaker" filters are derived by another agent's code
   // (src/domain/questions/), but from filter.service's point of view a
   // deal-breaker-derived row is just an UpdateFilterInput like any other
-  // — this simulates that derivation calling updateMyFilters directly.
+  // this simulates that derivation calling updateMyFilters directly.
   const viewer = await makeUserWithProfile();
   const neverAnswered = await makeUserWithProfile(); // no user_question_answers row at all -> unresolved for any qb:-prefixed key
 
@@ -374,18 +374,18 @@ test('previewPoolSizeWithUnsetPolicy: shows the cost of turning excludeIfUnset o
 
   // The viewer's only enabled filter is height_cm, so the delta between
   // the two previews is EXACTLY the count of other active users whose
-  // height_cm is unresolved (NULL) — flipping excludeIfUnset changes
+  // height_cm is unresolved (NULL), flipping excludeIfUnset changes
   // nothing about how a RESOLVED height is compared, only how an
   // unresolved one is treated. Computed live (not hardcoded) because
   // this is a per-FILE shared database: earlier tests in this file have
   // already created other users, most of them also height-unset, so the
-  // real delta is larger than just this test's own 2 fixtures — the
+  // real delta is larger than just this test's own 2 fixtures, the
   // point being tested is that it equals the live count, not a fixed
   // small number (mirrors filter.test.ts's own "reality dashboard"
   // test's live-query style for the same reason).
   // LEFT JOIN (not JOIN): a user with NO profile row at all also resolves
   // as unset for height_cm (loadProfile returns undefined), and a couple
-  // of earlier tests in this file create bare users with no profile —
+  // of earlier tests in this file create bare users with no profile,
   // those must be counted here too, or this query would undercount
   // relative to what previewPoolSizeWithUnsetPolicy actually iterates
   // (every active user, profile or not).

@@ -25,7 +25,7 @@ async function createUser(): Promise<string> {
 }
 
 // `photo.service`'s duplicate/scam detection (§7.2 rule 4) keys off the
-// image URL's perceptual hash — the stub adapter hashes the URL itself
+// image URL's perceptual hash, the stub adapter hashes the URL itself
 // when it's not a `dup:<n>` URL (see stub.adapter.ts's doc comment). Two
 // *different* tests uploading the literal same plain URL would therefore
 // look like a cross-user duplicate to the very code under test. Every
@@ -39,7 +39,7 @@ function uniqueUrl(tag: string): string {
   return `https://example.test/${tag}-${urlCounter}.jpg`;
 }
 
-test('uploadPhoto: first photo is the primary-candidate — a clean photo with a face is approved and primary', async () => {
+test('uploadPhoto: first photo is the primary-candidate, a clean photo with a face is approved and primary', async () => {
   const userId = await createUser();
   const ctx = buildCtx({ now: NOW, actor: userActor(userId) });
 
@@ -60,7 +60,7 @@ test('uploadPhoto: first photo without a detected face is rejected, never queued
   assert.equal(uploaded.moderationStatus, 'rejected');
   assert.equal(uploaded.isPrimary, false);
   assert.equal(uploaded.faceDetected, false);
-  // 'pending' would imply a human-review queue — zero human moderation (§18.1).
+  // 'pending' would imply a human-review queue, zero human moderation (§18.1).
   assert.notEqual(uploaded.moderationStatus, 'pending');
 });
 
@@ -133,9 +133,9 @@ test('setPrimaryPhoto: rejects a photo that has no detected face (re-analyzed as
 
   await photo.uploadPhoto(ctx, { imageUrl: uniqueUrl('first') });
   // Uploaded as a *secondary* photo, so its own upload analysis never
-  // required a face — but promoting it to primary must re-check that gate.
+  // required a face, but promoting it to primary must re-check that gate.
   const faceless = await photo.uploadPhoto(ctx, { imageUrl: uniqueUrl('noface-secondary') });
-  // As a *secondary* upload, the face gate never applied — it's approved.
+  // As a *secondary* upload, the face gate never applied, it's approved.
   assert.equal(faceless.moderationStatus, 'approved');
   assert.equal(faceless.faceDetected, false);
 
@@ -203,7 +203,7 @@ test('reorderPhotos: persists a new position order without changing who is prima
     reordered.map((p) => p.position),
     [0, 1, 2],
   );
-  // `a` is still the one marked primary — reordering never changes that.
+  // `a` is still the one marked primary, reordering never changes that.
   const primary = reordered.find((p) => p.isPrimary);
   assert.equal(primary?.id, a.id);
 });
@@ -245,7 +245,7 @@ test('findDuplicateOwners: excludes the caller and non-approved photos', async (
   const ctxC = buildCtx({ now: NOW, actor: userActor(userC) });
 
   const a = await photo.uploadPhoto(ctxA, { imageUrl: 'https://example.test/dup:x2.jpg' });
-  // userB's copy is rejected outright (nsfw) even though it shares the hash — not counted as an "approved" duplicate owner.
+  // userB's copy is rejected outright (nsfw) even though it shares the hash, not counted as an "approved" duplicate owner.
   await photo.uploadPhoto(ctxB, { imageUrl: 'https://example.test/dup:x2-nsfw.jpg' });
   const c = await photo.uploadPhoto(ctxC, { imageUrl: 'https://example.test/dup:x2.jpg' });
 

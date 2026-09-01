@@ -1,5 +1,5 @@
 /**
- * src/http/routes/i18n.routes.ts — locale discovery + per-user locale
+ * src/http/routes/i18n.routes.ts, locale discovery + per-user locale
  * preference (task brief: "Locale negotiation per user, honouring a
  * stored preference over a request header").
  *
@@ -9,7 +9,7 @@
  * `/me/*` route in this codebase uses (see devices.routes.ts).
  *
  * Storage is a dedicated `user_locale_preferences` table (this build's
- * own migration), not a `users`/`profiles` column — see that migration's
+ * own migration), not a `users`/`profiles` column, see that migration's
  * own doc for why. Kept inline in this route file rather than a separate
  * service module: two small, single-table queries, no business logic
  * beyond validation, and this build's file list names exactly this one
@@ -26,11 +26,11 @@ import { requireUserActor } from '../../lib/ctx.js';
 /**
  * A permissive BCP-47-shaped tag: 2-3 lowercase letters, optionally
  * followed by "-" and a 2-4 alphanumeric region/script subtag (covers
- * every `LOCALE_REGISTRY` entry — "en", "es", "pt-BR" — and any future
+ * every `LOCALE_REGISTRY` entry, "en", "es", "pt-BR", and any future
  * one without a migration/code change). Deliberately not validated
  * against `LOCALE_REGISTRY` itself: storing a preference for a locale
- * this backend hasn't shipped real copy for yet is legal and safe — see
- * translate.ts's fallback chain — a client should not be blocked from
+ * this backend hasn't shipped real copy for yet is legal and safe, see
+ * translate.ts's fallback chain, a client should not be blocked from
  * recording "the user asked for French" the day France support is only
  * "needs_translation".
  */

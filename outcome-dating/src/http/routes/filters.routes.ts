@@ -29,14 +29,14 @@ export function registerFilterRoutes(app: FastifyInstance, deps: AppDeps): void 
     // Zod's `.unknown()` field type-infers as optional (`value?: unknown`)
     // even though every element in the array is always given a `value` key
     // by the client (possibly `null`/`undefined` as a legitimate value, not
-    // a missing key) — rebuild each element explicitly so the resulting
+    // a missing key), rebuild each element explicitly so the resulting
     // array structurally satisfies `UpdateFilterInput`'s required `value`.
     const input = body.map((f) => ({ filterKey: f.filterKey, operator: f.operator, value: f.value, enabled: f.enabled }));
     reply.send(await filterService.updateMyFilters(req.ctx!, input));
   });
 
   // ---------------------------------------------------------------------
-  // Opt-in pending-interest cleanup (product-owner correction — addition,
+  // Opt-in pending-interest cleanup (product-owner correction, addition,
   // no spec section: saving a filter change above never touches an
   // existing interest on its own; a user who wants their inbox tidied up
   // after narrowing their filters asks for that explicitly, here, and

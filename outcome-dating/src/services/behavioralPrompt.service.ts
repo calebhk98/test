@@ -12,18 +12,18 @@ import {
 } from './question.service.js';
 
 /**
- * behavioralPrompt.service — §17 behavioral question triggers.
+ * behavioralPrompt.service, §17 behavioral question triggers.
  * Spec: §17.
  *
  * Owning agent: B.
  *
  * Invariants (spec §17 rules 1-4, restated because they're easy to
  * violate accidentally):
- *  1. Never write a new-bank answer from a detected pattern — only
+ *  1. Never write a new-bank answer from a detected pattern, only
  *     `question.service#putMyQuestionAnswer` (driven by an explicit user
  *     response) may do that.
  *  2. Never change compatibility sorting based on a detected pattern
- *     alone — `compatibility.service.ts` only ever scores from
+ *     alone, `compatibility.service.ts` only ever scores from
  *     `user_question_answers` rows a user themselves wrote via
  *     `putMyQuestionAnswer`.
  *  3. A suggestion must be surfaced to the user, not applied silently.
@@ -36,10 +36,10 @@ import {
  * repeatedly accepts profiles with a specific tag...") is about the
  * *reacting* user's accept/decline behavior toward the *other* party's
  * interest tags, on interests where the reacting user is EITHER sender or
- * recipient — "matched with" in the example copy means the interest
+ * recipient, "matched with" in the example copy means the interest
  * reached a decision (`accepted`/`declined`), regardless of who sent it.
- * Tags are read through `question.service#resolveVisibleTagsFor` — the
- * §8.4 reciprocal-disclosure gate — so a pattern is only ever built from
+ * Tags are read through `question.service#resolveVisibleTagsFor`, the
+ * §8.4 reciprocal-disclosure gate, so a pattern is only ever built from
  * tags this user was actually allowed to see, never a `private_reciprocal`
  * tag they don't hold themselves. A tag is linked to a candidate question
  * by normalized-name-equals-slug (e.g. interest tag "Hiking" -> question
@@ -51,7 +51,7 @@ import {
  * CUTOVER NOTE (question-system retirement build): this file now targets
  * the ONE typed question bank (db/migrations/008_questions.sql,
  * `question.service.ts`'s `question_bank`/`user_question_answers`)
- * exclusively — the old `questions`/`answers` tables it used to read/write
+ * exclusively, the old `questions`/`answers` tables it used to read/write
  * via `question.service#putMyAnswers` are gone (see
  * `db/migrations/022_drop_old_question_bank.sql`). Two consequences of the
  * new model worth flagging explicitly rather than papering over:
@@ -63,17 +63,17 @@ import {
  *      "no linkable question -> skip, don't invent one" behavior.
  *
  *   2. ANSWERING A SUGGESTION NOW NEEDS AN IMPORTANCE THE OLD MODEL NEVER
- *      HAD, AND THE ONE LIVE HTTP CALLER CANNOT SUPPLY IT — flagged rather
+ *      HAD, AND THE ONE LIVE HTTP CALLER CANNOT SUPPLY IT, flagged rather
  *      than papered over with a fabricated default (see
  *      `question.service.ts`'s own `008_questions.sql` migration-choice
  *      doc for why this codebase specifically refuses to invent importance
  *      data). `src/http/routes/profile.routes.ts` (outside this build's
  *      ownership boundary, not touched) still calls `respondToSuggestion`
- *      with only `{ skipped, selfValue, partnerValue }` — its own
+ *      with only `{ skipped, selfValue, partnerValue }`, its own
  *      `RespondSuggestionBodySchema` has no `importance` field and cannot
  *      be extended from here. `SuggestionResponse` below keeps those exact
  *      field names for that caller to keep compiling (`partnerValue` is
- *      treated as the new bank's `preferenceValue` — the same "what you
+ *      treated as the new bank's `preferenceValue`, the same "what you
  *      want in a partner" meaning it always had), and adds the new,
  *      genuinely-required `importance`/`ladderPosition` fields the old
  *      shape has no way to populate. Concretely:
@@ -82,7 +82,7 @@ import {
  *        - ANSWERING one through that endpoint no longer succeeds:
  *          `respondToSuggestion` throws a `ValidationError` naming exactly
  *          what's missing, rather than silently defaulting `importance` to
- *          some invented value. This is a genuine, reported behavior gap —
+ *          some invented value. This is a genuine, reported behavior gap,
  *          the fix is extending `profile.routes.ts`'s schema to collect
  *          `importance` (and, for a ladder-presentation question,
  *          `ladderPosition`) from the client, which is outside this
@@ -91,7 +91,7 @@ import {
  *          future client update, or a direct `question.service` caller)
  *          gets the full, real typed-bank answer recorded, including the
  *          usual `refreshScoresForUser`/`syncDealBreakerFilters` side
- *          effects — see `putMyQuestionAnswer`'s own doc.
+ *          effects, see `putMyQuestionAnswer`'s own doc.
  */
 
 /**
@@ -100,7 +100,7 @@ import {
  * pattern worth asking about. Spec §17 doesn't name a threshold; this is a
  * deliberately conservative placeholder constant (see
  * `compatibility.service.ts#DEFAULT_MIN_SHARED_QUESTIONS` for the parallel
- * note on why this isn't `ctx.config` — same file-ownership boundary).
+ * note on why this isn't `ctx.config`, same file-ownership boundary).
  */
 export const MIN_PATTERN_ACCEPT_COUNT = 3;
 
@@ -137,7 +137,7 @@ function normalizeForSlugMatch(name: string): string {
     .replace(/^_+|_+$/g, '');
 }
 
-/** Scans a user's recent accepted/declined interests for a pattern (e.g. a shared interest_tag) worth asking about, and records a suggestion row if one isn't already pending for that trigger. Does not itself notify the user — `notification.service.ts` handles delivery. */
+/** Scans a user's recent accepted/declined interests for a pattern (e.g. a shared interest_tag) worth asking about, and records a suggestion row if one isn't already pending for that trigger. Does not itself notify the user, `notification.service.ts` handles delivery. */
 export async function detectPatternsForUser(ctx: Ctx, userId: string): Promise<BehavioralPromptSuggestion[]> {
   const enabled = await ctx.flags.isEnabled(KNOWN_FLAGS.BEHAVIORAL_QUESTION_PROMPTS, { userId });
   if (!enabled) return [];
@@ -176,12 +176,12 @@ export async function detectPatternsForUser(ctx: Ctx, userId: string): Promise<B
     const tagName = tagNames.get(tagId)!;
     const slug = normalizeForSlugMatch(tagName);
 
-    // Current + active row in the ONE typed bank — see this file's
+    // Current + active row in the ONE typed bank, see this file's
     // CUTOVER NOTE. Same "no linkable question -> skip, don't invent one"
     // behavior as the old `SELECT id FROM questions WHERE slug = $1 AND
     // active = true` lookup this replaces.
     const question = await getCurrentQuestionBySlug(ctx, slug);
-    if (!question) continue; // no linkable question — nothing to suggest asking
+    if (!question) continue; // no linkable question, nothing to suggest asking
 
     const { rows: insertedRows } = await ctx.db.query<SuggestionRow>(
       `INSERT INTO behavioral_prompt_suggestions (user_id, question_id, trigger_kind, trigger_label, status, created_at)
@@ -209,30 +209,30 @@ export interface SuggestionResponse {
   skipped: boolean;
   /**
    * Field names (`selfValue`/`partnerValue`) deliberately kept from the OLD
-   * 1-5 shape — see this file's CUTOVER NOTE: `src/http/routes/profile.routes.ts`
+   * 1-5 shape, see this file's CUTOVER NOTE: `src/http/routes/profile.routes.ts`
    * (outside this build's ownership boundary) constructs this object with
    * exactly these two field names, and renaming them would break that
    * caller's compile. `partnerValue` is treated as the new bank's
-   * `preferenceValue` — the same "what you want in a partner" meaning it
+   * `preferenceValue`, the same "what you want in a partner" meaning it
    * always had.
    */
   selfValue?: unknown;
   partnerValue?: unknown;
   /**
    * The new bank's required third axis (see `question.service#putMyQuestionAnswer`'s
-   * "value + importance, never a bare number" invariant) — genuinely new,
+   * "value + importance, never a bare number" invariant), genuinely new,
    * not something the old model had an equivalent of. NOT settable through
    * `profile.routes.ts`'s current body schema; see this file's CUTOVER
    * NOTE for the resulting, reported behavior gap.
    */
   importance?: ImportanceLevel;
-  /** Alternative to `partnerValue`+`importance` for a ladder-presentation question — see `putMyQuestionAnswer`'s doc. Same "not reachable from `profile.routes.ts` today" caveat as `importance`. */
+  /** Alternative to `partnerValue`+`importance` for a ladder-presentation question, see `putMyQuestionAnswer`'s doc. Same "not reachable from `profile.routes.ts` today" caveat as `importance`. */
   ladderPosition?: LadderPosition;
 }
 
 /**
  * Records the user's explicit response. If not skipped, forwards to
- * `question.service#putMyQuestionAnswer` — this module never writes a
+ * `question.service#putMyQuestionAnswer`, this module never writes a
  * new-bank answer directly (rule 1).
  *
  * See this file's CUTOVER NOTE for why a response driven purely by the OLD
@@ -269,14 +269,14 @@ export async function respondToSuggestion(ctx: Ctx, suggestionId: string, respon
   }
   if (response.ladderPosition === undefined && (response.partnerValue === undefined || response.importance === undefined)) {
     throw new ValidationError(
-      'Answering this suggestion requires an importance (or a ladder position, on a ladder-presentation question) — ' +
+      'Answering this suggestion requires an importance (or a ladder position, on a ladder-presentation question), ' +
         'this caller only supplied a value, which the typed question bank can no longer accept on its own.',
       { suggestionId },
     );
   }
 
   // `suggestion.question_id` is the question_bank id that was CURRENT when
-  // this suggestion was created — resolve it back to its stable slug so we
+  // this suggestion was created, resolve it back to its stable slug so we
   // can answer against whatever is current NOW (the bank may have been
   // re-versioned since), exactly like every other `putMyQuestionAnswer`
   // caller.
@@ -287,7 +287,7 @@ export async function respondToSuggestion(ctx: Ctx, suggestionId: string, respon
 
   // Rule 1: the only write to a new-bank answer happens inside
   // `question.service#putMyQuestionAnswer`, driven by this explicit user
-  // response — never here directly.
+  // response, never here directly.
   await putMyQuestionAnswer(ctx, {
     slug,
     status: 'answered',

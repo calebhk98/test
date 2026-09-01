@@ -1,4 +1,4 @@
-/** §24.12 Reports route (generic `POST /reports`, distinct from `POST /profiles/{userId}/report` in discovery.routes.ts — both call the same service). */
+/** §24.12 Reports route (generic `POST /reports`, distinct from `POST /profiles/{userId}/report` in discovery.routes.ts, both call the same service). */
 import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as reportService from '../../services/report.service.js';

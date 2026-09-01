@@ -3,19 +3,19 @@
  * major events occur: report, date completed, payment failure, profile
  * change, verification change."
  *
- * The synchronous paths already exist for SOME of these five triggers —
+ * The synchronous paths already exist for SOME of these five triggers,
  * `moderation.service#applyThresholds` and `appeal.service#resolveAppeal`
  * call `trust.recalculateTrustScore` immediately after writing their
  * `trust_events` row. But `dateProposal.service.ts` (date-completed,
  * no-show, payment-failure-adjacent trust signals) and
  * `redemption.service.ts` (date-completed) only call
- * `trust.service#recordTrustEvent` — appending the event — and never
+ * `trust.service#recordTrustEvent`, appending the event, and never
  * `recalculateTrustScore` (see those two files' own trust-event call
  * sites), so a user's `users.trust_score`/`trust_level` can silently drift
  * behind their actual `trust_events` history between an admin-facing
  * moderation action and this job's next run. This job is that catch-up
  * pass: every user with at least one `trust_events` row gets a fresh,
- * idempotent `trust.recalculateTrustScore` — safe to re-run constantly
+ * idempotent `trust.recalculateTrustScore`, safe to re-run constantly
  * since that function is a pure "recompute from history and persist"
  * operation, not an incremental delta.
  *

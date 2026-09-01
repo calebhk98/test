@@ -1,7 +1,7 @@
 /**
  * Deterministic dev/test seed data.
  *
- * Writes directly via SQL rather than through the (stub) service layer —
+ * Writes directly via SQL rather than through the (stub) service layer,
  * every `src/services/*.service.ts` body throws `NotImplementedError`
  * until parallel agents fill them in, so this script can't depend on them.
  * It seeds exactly the rows those agents' bodies and the smoke test need:
@@ -13,7 +13,7 @@
  * choice, so re-running `npm run seed` against a fresh DB always produces
  * byte-identical data. Idempotent-ish: seeding twice against the same DB
  * without a reset will fail on unique constraints (email, slug, ...) by
- * design — this is dev/test seed data, not an upsert.
+ * design, this is dev/test seed data, not an upsert.
  *
  * Usage: `npm run seed` (run migrations first: `npm run migrate`).
  */
@@ -58,7 +58,7 @@ function shuffle<T>(arr: readonly T[]): T[] {
 }
 
 // =====================================================================
-// THE question bank (redesigned compatibility question system —
+// THE question bank (redesigned compatibility question system,
 // question-system cutover). 65 questions across 9 categories: lifestyle,
 // values, relationship_intentions, family, social_energy, health_habits,
 // interests, communication, logistics. Written into `question_bank`
@@ -66,30 +66,30 @@ function shuffle<T>(arr: readonly T[]): T[] {
 //
 // CUTOVER: this file used to ALSO seed a second, OLDER 26-question, 6-
 // category bank (`questions`/`answers`, a flat 1-5 self/partner pair) here
-// — including `has_children`/`wants_children`/`religion`/`family_closeness`,
+// including `has_children`/`wants_children`/`religion`/`family_closeness`,
 // each a duplicate of a concept the typed bank below already covers under
 // its own slug (`children_intention`, `religious_practice`,
-// `family_closeness` again — the exact collision the product owner
+// `family_closeness` again, the exact collision the product owner
 // flagged: "asked users about children and religion three or four
 // separate times because each surface defined its own version"). That old
-// bank is no longer seeded AT ALL — a fresh install has zero
+// bank is no longer seeded AT ALL, a fresh install has zero
 // `questions`/`answers` rows, so there is nothing left to duplicate
 // anything in the typed bank below. See
 // src/services/question.service.ts's file-level "CUTOVER" doc for why the
 // `questions`/`answers` TABLES themselves still exist in the schema
 // (three files outside this build's ownership boundary still depend on
-// them) even though nothing here — or anywhere else this build owns —
+// them) even though nothing here, or anywhere else this build owns,
 // writes a row into them anymore.
 //
 // Every question here picks the type that actually fits its data:
 //   - `scale` only where a labelled MIDPOINT is honestly meaningful,
 //   - `single_choice` for mutually-exclusive categories (fixes the old
-//     "kids: 1-5" bug — see `children_intention` below),
+//     "kids: 1-5" bug, see `children_intention` below),
 //   - `multi_choice` for pick-any-number questions,
 //   - `frequency` for genuinely frequency-shaped habits, with concrete
 //     anchors, never a bare 1-5.
 // No question text or option label references a section number or any
-// spec document — user-visible strings are plain language throughout.
+// spec document, user-visible strings are plain language throughout.
 // =====================================================================
 
 function option(key: string, label: string): { key: string; label: string } {
@@ -153,7 +153,7 @@ const NEW_QUESTION_BANK: NewQuestionSeed[] = [
     slug: 'sleep_schedule',
     category: 'lifestyle',
     questionText: 'Are you more of a night owl or an early bird?',
-    typeDef: scaleType('Night owl — most productive late at night', 'Early bird — most productive at dawn', 'No strong preference either way'),
+    typeDef: scaleType('Night owl, most productive late at night', 'Early bird, most productive at dawn', 'No strong preference either way'),
     baseWeight: 0.6,
   },
   {
@@ -440,7 +440,7 @@ const NEW_QUESTION_BANK: NewQuestionSeed[] = [
     baseWeight: 0.7,
   },
 
-  // ---- social_energy (6) — fixes the old "no coherent scale" bug: real
+  // ---- social_energy (6), fixes the old "no coherent scale" bug: real
   // behavioural frequency/scale anchors, not a mood rating.
   {
     slug: 'recharge_frequency',
@@ -784,8 +784,8 @@ const NEW_QUESTION_BANK: NewQuestionSeed[] = [
       type: 'single_choice',
       options: [
         option('own_a_car', 'I own a car'),
-        option('no_car_use_transit', 'No car — I rely on public transit or rideshare'),
-        option('no_car_walk_bike', 'No car — I mostly walk or bike'),
+        option('no_car_use_transit', 'No car, I rely on public transit or rideshare'),
+        option('no_car_walk_bike', 'No car, I mostly walk or bike'),
       ],
     },
     baseWeight: 0.3,
@@ -846,7 +846,7 @@ const NEW_QUESTION_BANK: NewQuestionSeed[] = [
 /**
  * Generates a plausible (selfValue, preferenceValue) pair for one typed
  * question, matching the exact shapes typeHandlers.ts validates
- * (src/domain/questions/typeHandlers.ts) — a scalar for scale/frequency/
+ * (src/domain/questions/typeHandlers.ts), a scalar for scale/frequency/
  * single_choice-self, a set for single_choice-preference/multi_choice.
  * Seed data bypasses the zod/service validation path for speed (like the
  * rest of this file), so staying shape-correct here matters.
@@ -874,7 +874,7 @@ function randomAnswerValuesForType(typeDef: QuestionTypeDefinition): { selfValue
 }
 
 // =====================================================================
-// Interest tags (§8.4) — a mix, some naturally stigma-prone (good for
+// Interest tags (§8.4), a mix, some naturally stigma-prone (good for
 // exercising private/reciprocal visibility once that path is implemented).
 // =====================================================================
 const INTEREST_TAGS: Array<{ name: string; category: string; publicDescription: string }> = [
@@ -896,7 +896,7 @@ const INTEREST_TAGS: Array<{ name: string; category: string; publicDescription: 
 ];
 
 // =====================================================================
-// §13.2 venues — 8 across the category list.
+// §13.2 venues, 8 across the category list.
 // =====================================================================
 const VENUES: Array<{
   name: string;
@@ -945,7 +945,7 @@ async function main(): Promise<void> {
   await flags.seedKnownFlags();
 
   // CUTOVER: the OLD 26-question bank (`questions` table) is no longer
-  // seeded at all — see this file's file-level CUTOVER note above and
+  // seeded at all, see this file's file-level CUTOVER note above and
   // question.service.ts's for why the table still exists in the schema
   // but is deliberately left empty by every fresh seed.
   console.log('Seeding question bank...');
@@ -1076,7 +1076,7 @@ async function main(): Promise<void> {
     );
 
     // CUTOVER: no OLD-bank answers are seeded (see file-level CUTOVER
-    // note) — every seeded answer below is against the ONE typed bank.
+    // note), every seeded answer below is against the ONE typed bank.
 
     // Tags: 2-5 tags per user, mostly public, sometimes private_reciprocal.
     const userTagIds = shuffle(tagIds).slice(0, randInt(2, 5));

@@ -3,7 +3,7 @@
  *
  * Every §25 job is a plain `(ctx: Ctx) => Promise<T>` (see
  * `src/jobs/types.ts`), so tests call it directly against a `Ctx` built
- * here with a `ManualClock` — no scheduler, no waiting on real time, per
+ * here with a `ManualClock`, no scheduler, no waiting on real time, per
  * the task brief ("tests invoke it directly with a controlled clock rather
  * than waiting"). `JobScheduler` itself (advisory locking, interval
  * wiring) is exercised separately in `tests/jobs/scheduler.test.ts`.
@@ -25,7 +25,7 @@ import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item). */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item). */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {

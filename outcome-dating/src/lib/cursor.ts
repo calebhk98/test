@@ -1,12 +1,12 @@
 /**
- * src/lib/cursor.ts — shared `(timestamp, id)` keyset-pagination cursor
+ * src/lib/cursor.ts, shared `(timestamp, id)` keyset-pagination cursor
  * codec.
  *
  * Every list endpoint that pages newest-first over a `(created_at, id)` (or
  * equivalent) ordering encodes its cursor the same way:
  * `base64url("<ISO-8601 timestamp>|<id>")`. Before this module existed,
  * five services each hand-rolled their own `encodeCursor`/`decodeCursor`
- * pair against that identical wire format — and they'd already drifted:
+ * pair against that identical wire format, and they'd already drifted:
  * `timeline.service.ts` and `matches.service.ts` checked the decoded date
  * for `Invalid Date` and threw a clean `ValidationError`; `notification`,
  * `message`, and `interest` did not, so a malformed-but-parseable cursor
@@ -24,11 +24,11 @@
  *
  * Adopting this module changes no already-issued cursor's wire format for
  * a service that already uses the plain `base64url("iso|id")` scheme
- * (notification/message/interest/matches/timeline) — it only tightens
+ * (notification/message/interest/matches/timeline), it only tightens
  * validation. `ledger.service.ts` uses a different, JSON-array wire format
  * and ID-only schemes (`question.service.ts`) or offset-integer cursors
  * (`discovery`/`trust#listMyTrustEvents`/`moderation`/`venueSettlement`)
- * are out of scope for this helper — see docs/duplication.md findings 3/4/8.
+ * are out of scope for this helper, see docs/duplication.md findings 3/4/8.
  */
 import { ValidationError } from './errors.js';
 
@@ -46,8 +46,8 @@ export function encodeTimestampIdCursor(ts: Date, id: string): string {
 
 /**
  * Decodes and STRICTLY validates a cursor produced by
- * `encodeTimestampIdCursor`. Throws `ValidationError` — never returns a
- * value that would let an invalid `Date` reach a query — for:
+ * `encodeTimestampIdCursor`. Throws `ValidationError`, never returns a
+ * value that would let an invalid `Date` reach a query, for:
  *  - a non-string input (wrong type: number, null, undefined, object, ...)
  *  - an empty string
  *  - a string that, once base64url-decoded, has no `|` separator, or has
@@ -55,7 +55,7 @@ export function encodeTimestampIdCursor(ts: Date, id: string): string {
  *    whole field; tampering that corrupted the delimiter)
  *  - a timestamp component that does not parse to a valid `Date` (a
  *    literal `"null"`/`"undefined"`/garbage date, or any other corrupted-
- *    but-decodable timestamp) — this is the check three of the five
+ *    but-decodable timestamp), this is the check three of the five
  *    pre-existing per-service decoders were missing.
  *
  * Deliberately accepts `unknown` (not `string`) so callers can hand it a

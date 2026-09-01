@@ -8,19 +8,19 @@ import type { Logger } from '../lib/logger.js';
  * Flags support:
  *  - a hard on/off (`enabled`),
  *  - a percentage rollout (`rollout_percent`, 0-100) with **deterministic
- *    per-user bucketing** — the same user always lands in the same bucket
+ *    per-user bucketing**, the same user always lands in the same bucket
  *    for a given flag, so their experience doesn't flicker between calls,
  *    and rollout can be dialed up without re-bucketing already-included
  *    users,
- *  - segment targeting (`segments`) — if non-empty, the caller's segment
+ *  - segment targeting (`segments`), if non-empty, the caller's segment
  *    list must intersect it.
  *
  * Bucketing: `sha256(flagKey + ":" + userId)`'s first 4 bytes, mod 100.
- * Pure function of (key, userId) — no randomness, no DB state — so it's
+ * Pure function of (key, userId), no randomness, no DB state, so it's
  * trivially unit-testable and stable across restarts/instances.
  */
 
-/** Flags named explicitly in the spec (§22). Admins may also define ad-hoc flags (§27), so `isEnabled`/`setFlag` accept any string key — these are just typed convenience constants for call sites. */
+/** Flags named explicitly in the spec (§22). Admins may also define ad-hoc flags (§27), so `isEnabled`/`setFlag` accept any string key, these are just typed convenience constants for call sites. */
 export const KNOWN_FLAGS = {
   PHOTO_AB_TESTING: 'photo_ab_testing',
   BEHAVIORAL_QUESTION_PROMPTS: 'behavioral_question_prompts',
@@ -104,7 +104,7 @@ export class FlagsService {
 
   /**
    * Resolve whether `key` is on for this evaluation context. Unknown flags
-   * (no row) default to **off** — a flag must be explicitly created (even
+   * (no row) default to **off**, a flag must be explicitly created (even
    * disabled) before it can be turned on, so nothing risky ships by
    * accident from a missing seed row.
    */

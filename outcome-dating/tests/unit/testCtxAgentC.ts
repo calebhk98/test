@@ -1,11 +1,11 @@
 /**
  * Shared test setup for Agent C's unit tests (interest/chat/textscan).
- * Not part of INTERFACES.md's frozen list — a local helper the
+ * Not part of INTERFACES.md's frozen list, a local helper the
  * `tests/unit/{interest,chat,notification}.test.ts` files share to avoid
- * duplicating DB bootstrap (`textscan.test.ts` needs none of this — it
+ * duplicating DB bootstrap (`textscan.test.ts` needs none of this, it
  * tests pure functions only).
  *
- * Uses a dedicated `odate_agent_c` database (per the build brief — never
+ * Uses a dedicated `odate_agent_c` database (per the build brief, never
  * touches `outcome_dating`/`outcome_dating_test`/other agents' `odate_*`
  * databases). Node's built-in test runner runs separate `*.test.ts` files
  * concurrently in separate processes by default, so each suite gets its
@@ -27,7 +27,7 @@ import type { TrustLevel } from '../../src/domain/types.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const AGENT_C_DB_PREFIX = 'odate_agent_c';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — this repo's test suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `<prefix>_<suite>` name is only unique WITHIN one run, not across overlapping runs; this closes that race at its root. */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), this repo's test suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `<prefix>_<suite>` name is only unique WITHIN one run, not across overlapping runs; this closes that race at its root. */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
@@ -101,7 +101,7 @@ export function userActor(userId: string, trustLevel: TrustLevel = 'standard'): 
 
 let userSeq = 0;
 
-/** Inserts a minimal `users` row (no profile — none of Agent C's tables FK to `profiles`) and returns its id. */
+/** Inserts a minimal `users` row (no profile, none of Agent C's tables FK to `profiles`) and returns its id. */
 export async function insertUser(pool: pg.Pool, opts: { trustLevel?: TrustLevel; email?: string } = {}): Promise<string> {
   userSeq += 1;
   const email = opts.email ?? `agent-c-user-${userSeq}-${Date.now()}@test.local`;

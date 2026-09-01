@@ -27,7 +27,7 @@ export function registerTrustRoutes(app: FastifyInstance, deps: AppDeps): void {
     reply.send(await trustService.listMyTrustEvents(req.ctx!, query));
   });
 
-  // `trust.service#can()` was built and tested but had no route — a
+  // `trust.service#can()` was built and tested but had no route, a
   // client had no way to know an action was disabled without attempting
   // it and parsing a 403 (docs/ux-api-review.md §11).
   app.get('/me/capabilities', auth, async (req, reply) => {

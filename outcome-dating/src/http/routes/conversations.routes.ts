@@ -2,7 +2,7 @@
  * §24.7 Conversations routes.
  *
  * ROLE BOUNDARY (spec §4.2, C-4.2.4): every route here is `requireRole('user')`
- * only — a venue-staff or admin token gets a 403 `forbidden` before any
+ * only, a venue-staff or admin token gets a 403 `forbidden` before any
  * handler runs, enforced by `src/http/auth.ts`. This is the primary "venue
  * staff cannot see chats" gate; `redemption.service.ts`'s own structural
  * narrowness (never touching `messages`) is the second, independent layer.
@@ -58,7 +58,7 @@ export function registerConversationRoutes(app: FastifyInstance, deps: AppDeps):
     reply.status(204).send();
   });
 
-  // Product-owner finding #2/#3 — see timeline.service.ts. Addition, not a
+  // Product-owner finding #2/#3, see timeline.service.ts. Addition, not a
   // literal §24.7 route: merged messages + date-proposal lifecycle events
   // for one conversation, cursor-paginated.
   app.get('/conversations/:conversationId/timeline', auth, async (req, reply) => {

@@ -15,35 +15,35 @@ import type { ExtendedNotificationEventType, NotificationBucket, NotificationOut
 /**
  * The delivery worker (build brief: "a delivery worker function taking
  * Ctx"). This is what the jobs agent should schedule on a short interval
- * (e.g. every 15-30s — frequent enough that the message coalescing
+ * (e.g. every 15-30s, frequent enough that the message coalescing
  * debounce, default 90s, is the actual bottleneck on latency, not the
  * poll interval).
  *
  * Reads due `notification_outbox` rows (status queued/held_quiet_hours/
  * failed_retryable with `next_attempt_at <= now`), and for each one:
  *
- *  1. Category gate — `safety` bypasses this entirely (never
+ *  1. Category gate, `safety` bypasses this entirely (never
  *     user-configurable); everything else is dropped (terminal, no
  *     retry) if the recipient has that category+channel turned off. THIS
- *     is where preferences are enforced — never at the call site (build
+ *     is where preferences are enforced, never at the call site (build
  *     brief).
- *  2. Quiet-hours gate — `safety_notice` (config.ts
+ *  2. Quiet-hours gate, `safety_notice` (config.ts
  *     `quietHoursBypassEvents`) bypasses; everything else still inside
  *     the recipient's local quiet window is HELD (`held_quiet_hours`,
  *     rescheduled to the window's end) rather than dropped (config.ts
  *     policy + justification).
- *  3. Transport — resolves the final template+data (message events pick
+ *  3. Transport, resolves the final template+data (message events pick
  *     their template here, not at enqueue, because the coalesced count
  *     and preview preference can both still change up to the last
  *     moment) and calls the injected `PushSender`/`EmailSender`.
- *  4. Result handling — `sent` marks the row done; `invalid_token` prunes
+ *  4. Result handling, `sent` marks the row done; `invalid_token` prunes
  *     the device and (if it was the only device) drops with no retry;
  *     `invalid_recipient` (email) is terminal (dead) with no retry;
  *     `failed` retries with exponential backoff up to
  *     `NOTIFICATION_CONFIG.retry.maxAttempts`, then goes `dead`.
  *
  * A push/email outage therefore only ever produces `failed_retryable`/
- * `dead` OUTBOX rows — it can never throw back into, or roll back, the
+ * `dead` OUTBOX rows, it can never throw back into, or roll back, the
  * domain transaction that called `enqueueNotification`, because that
  * transaction has already committed by the time this worker ever runs
  * (build brief: "a push failure never rolls back or blocks the domain
@@ -54,7 +54,7 @@ export interface NotificationSenders {
   push: PushSender;
   email: EmailSender;
   /**
-   * Optional — a deployment that hasn't wired real SMS delivery yet can
+   * Optional, a deployment that hasn't wired real SMS delivery yet can
    * still run this worker for push/email. In practice this is never
    * actually exercised unset: `outbox.ts` only ever creates an `sms`
    * channel row for a recipient who is both opted in AND has a verified
@@ -75,7 +75,7 @@ export interface DeliveryWorkerResult {
   dead: number;
   droppedPreference: number;
   droppedNoTarget: number;
-  /** SMS-only: this user had already hit `NOTIFICATION_CONFIG.sms.maxPerUserPerDay` — see `deliverSms`. */
+  /** SMS-only: this user had already hit `NOTIFICATION_CONFIG.sms.maxPerUserPerDay`, see `deliverSms`. */
   droppedRateLimited: number;
   prunedTokens: number;
 }
@@ -159,7 +159,7 @@ export async function runNotificationDeliveryWorker(
       await processOne(ctx, row, senders, now, result);
     } catch (err) {
       // Never let one row's unexpected failure abort the rest of the
-      // batch — leave it on its lease (it will be re-picked-up once the
+      // batch, leave it on its lease (it will be re-picked-up once the
       // lease expires) and move on.
       ctx.logger.error('notifications.delivery_row_failed', {
         outboxId: row.id,
@@ -197,7 +197,7 @@ async function processOne(
   const bypassesQuietHours = (NOTIFICATION_CONFIG.quietHoursBypassEvents as readonly string[]).includes(row.event_type);
   const isSafety = row.category === 'safety';
 
-  // ---- 1. Preference gate (never bypassable — safety excepted by design, see file doc) ----
+  // ---- 1. Preference gate (never bypassable, safety excepted by design, see file doc) ----
   if (!isSafety) {
     const pref = await getCategoryPreferenceForUser(ctx, row.user_id, row.category as Exclude<NotificationBucket, 'safety'>);
     const channelAllowed = row.channel === 'push' ? pref.push : row.channel === 'email' ? pref.email : pref.sms;
@@ -210,7 +210,7 @@ async function processOne(
 
   // ---- 1b. SMS-only: a verified phone is required at SEND time, not just
   // at enqueue time (`outbox.ts`'s `smsEligible` pre-filter is a cost
-  // optimization, never the authoritative gate) — this is what makes
+  // optimization, never the authoritative gate), this is what makes
   // "remove your phone" immediately stop SMS delivery even for a row that
   // was already queued while the phone was still verified. Same
   // `dropped_no_target` outcome as push with zero enabled devices / email
@@ -306,7 +306,7 @@ async function deliverPush(
       });
     } catch (err) {
       // A thrown error is a real transport/infrastructure outage (port
-      // contract, push.port.ts) — caught here so one row's provider
+      // contract, push.port.ts), caught here so one row's provider
       // exception can never crash the whole delivery batch. Treated
       // exactly like a returned `status: 'failed'`.
       ctx.logger.warn('notifications.push_send_threw', { outboxId: row.id, error: err instanceof Error ? err.message : String(err) });
@@ -330,7 +330,7 @@ async function deliverPush(
   }
 
   if (!anyTransientFailure) {
-    // Every token was invalid and has now been pruned — nothing left to retry against.
+    // Every token was invalid and has now been pruned, nothing left to retry against.
     await setStatus(ctx, row.id, 'dropped_no_target', {}, now);
     result.droppedNoTarget += 1;
     return;
@@ -377,7 +377,7 @@ async function deliverEmail(
   await retryOrDie(ctx, row, sendResult.failureReason ?? 'email transport failure', now, result);
 }
 
-/** Count of this user's `sent` SMS in the trailing 24h — the cost cap's live counter (`NOTIFICATION_CONFIG.sms.maxPerUserPerDay`). Counts `delivered_at`, not `created_at`: what costs money is a message actually going out, not one merely being queued. */
+/** Count of this user's `sent` SMS in the trailing 24h, the cost cap's live counter (`NOTIFICATION_CONFIG.sms.maxPerUserPerDay`). Counts `delivered_at`, not `created_at`: what costs money is a message actually going out, not one merely being queued. */
 async function countSmsSentInTrailing24h(ctx: Ctx, userId: string, now: Date): Promise<number> {
   const windowStart = new Date(now.getTime() - 24 * 60 * 60 * 1000);
   const { rows } = await ctx.db.query<{ count: string }>(
@@ -397,7 +397,7 @@ async function deliverSms(
   now: Date,
   result: DeliveryWorkerResult,
 ): Promise<void> {
-  // Cost cap (build brief: "note any per-user rate cap you add") — checked
+  // Cost cap (build brief: "note any per-user rate cap you add"), checked
   // AFTER the preference/verified-phone gates above (no point counting
   // against the cap for a message that wouldn't have sent anyway) but
   // BEFORE ever calling the sender, so a capped user's overflow messages
@@ -413,7 +413,7 @@ async function deliverSms(
   if (!phone) {
     // Re-checked here too (not just in processOne's 1b gate above) only
     // because this function can in principle be called directly by a
-    // future caller/test without going through that gate — belt and
+    // future caller/test without going through that gate, belt and
     // braces, not reachable in the normal worker path.
     await setStatus(ctx, row.id, 'dropped_no_target', {}, now);
     result.droppedNoTarget += 1;

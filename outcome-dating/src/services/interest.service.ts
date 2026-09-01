@@ -14,7 +14,7 @@ import { evaluateMutualEligibility } from './eligibility.service.js';
 import * as profileService from './profile.service.js';
 
 /**
- * interest.service — match interests.
+ * interest.service, match interests.
  * Spec: §11, §24.6, §25.1 (expiry job).
  *
  * Owning agent: C.
@@ -22,70 +22,70 @@ import * as profileService from './profile.service.js';
  * Invariants:
  *  - `sendInterest` snapshots policy via
  *    `ctx.config.snapshotPolicy(INTEREST_POLICY_KEYS)` (spec §21.3) into
- *    `interests.policy_snapshot` at creation time — the interest's own
+ *    `interests.policy_snapshot` at creation time, the interest's own
  *    expiry MUST use the snapshotted `interest.expiry_hours`, never a
  *    later-updated config value (spec §21.4 "existing keep original").
  *    The outgoing/incoming pending caps are 'live'-scoped in the config
- *    registry (see config.service.ts's per-key `scope`), so — unlike
- *    expiry — cap *enforcement* always re-reads the current value; only
+ *    registry (see config.service.ts's per-key `scope`), so, unlike
+ *    expiry, cap *enforcement* always re-reads the current value; only
  *    the stored `policy_snapshot` object is a point-in-time record.
  *  - Enforces, at send time: outgoing pending limit, daily outgoing limit,
  *    and (on the recipient's side) that the recipient's incoming pending
- *    count and active-conversation count are below their limits — mirrors
+ *    count and active-conversation count are below their limits, mirrors
  *    the discovery visibility rule (§10.2 rules 5-6) so an interest can
  *    never be sent to someone whose inbox/chat load is already full. This
  *    is enforced here via `conversation.countActiveConversationsForUser`
  *    (same agent) rather than `discovery.service#isProfileVisibleTo`
- *    (Agent B, still a stub at the time of writing) — see this module's
+ *    (Agent B, still a stub at the time of writing), see this module's
  *    section of the final report for the cross-agent wiring note.
  *  - INVARIANT: `acceptInterest` MUST create (or reuse) exactly one
  *    `conversations` row in the same transaction as the status flip to
- *    'accepted' — see `conversation.service#getOrCreateConversation`. A
+ *    'accepted', see `conversation.service#getOrCreateConversation`. A
  *    caller must never observe `interest.status === 'accepted'` without a
  *    conversation existing.
  *  - `declineInterest` never surfaces the decliner's reasoning to the
  *    sender beyond the generic "They passed on this match." template
- *    (spec §11.4) — that copy lives in `notification.service.ts`'s
+ *    (spec §11.4), that copy lives in `notification.service.ts`'s
  *    template registry, not here.
  *  - §11.3 "no free text before match": `sendInterest`'s signature is
- *    `(ctx, recipientId: string)` — there is no options object and no
+ *    `(ctx, recipientId: string)`, there is no options object and no
  *    field anywhere on this call for a message. That is a structural
  *    guarantee (a caller cannot pass free text even by mistake), not a
  *    validated-away one.
  *
  * ---------------------------------------------------------------------
  * MUTUAL-ELIGIBILITY ENFORCEMENT (this build; product-owner requirement
- * from user testing — see this build's report):
+ * from user testing, see this build's report):
  * ---------------------------------------------------------------------
  * §9.1/§9.4's hard-filter guarantee ("filters MUST be enforced strictly",
  * "mutual filter passing") is discovery's job at browse time (Layer 1,
- * `discovery.service.ts`, unmodified by this build — verified, not
+ * `discovery.service.ts`, unmodified by this build, verified, not
  * rebuilt, by `tests/unit/eligibility.test.ts`). But a stale grid, or a
  * direct profile link, bypasses Layer 1 entirely. One more layer closes
  * that gap, built on the shared check in
  * `eligibility.service.ts#evaluateMutualEligibility` (which itself just
- * wraps `filter.service#passesMutualFilters` — never a second, divergent
+ * wraps `filter.service#passesMutualFilters`, never a second, divergent
  * implementation):
  *
  *  - LAYER 2 (`sendInterest`, below): re-evaluates mutual eligibility
  *    FRESH, immediately before the interest row is inserted. If the
  *    recipient's current hard filters would exclude the sender (or vice
- *    versa), NO ROW IS CREATED — so the sender's outgoing-pending slot
+ *    versa), NO ROW IS CREATED, so the sender's outgoing-pending slot
  *    and daily quota are never consumed by a refused send (both are
  *    counted by querying existing rows; nothing to free if nothing was
- *    written). The refusal is `RECIPIENT_UNAVAILABLE_MESSAGE` — the
+ *    written). The refusal is `RECIPIENT_UNAVAILABLE_MESSAGE`, the
  *    EXACT SAME static copy and error shape already used for "recipient
  *    inbox full"/"recipient at conversation cap" a few lines below, on
  *    purpose: an attacker probing someone's filters by sending interests
  *    and reading error text cannot distinguish "your filters exclude
  *    them", "their inbox is full", or "they're at their chat cap" from
- *    each other, let alone learn *which* filter/attribute was involved —
+ *    each other, let alone learn *which* filter/attribute was involved,
  *    `evaluateMutualEligibility` never returns that detail even
  *    internally. This only ever affects an interest that does not exist
- *    yet — it never touches a row already sitting in the table.
+ *    yet, it never touches a row already sitting in the table.
  *
  * ---------------------------------------------------------------------
- * CORRECTION (product owner, after the original build shipped) — read
+ * CORRECTION (product owner, after the original build shipped), read
  * this before touching anything below labeled "cleanup":
  * ---------------------------------------------------------------------
  * The original build also had a "Layer 3": any time a recipient's
@@ -97,19 +97,19 @@ import * as profileService from './profile.service.js';
  *
  * The reasoning, preserved here so it isn't rediscovered the hard way:
  * people change their filters constantly, for completely ordinary
- * reasons — someone overwhelmed by too many options narrows things down
+ * reasons, someone overwhelmed by too many options narrows things down
  * for a while, then widens the filter back out later. A filter is a
  * statement about what a person wants to see going FORWARD; it is not,
  * and must never become, a retroactive judgment on interests that
  * already exist. Auto-declining on a filter change destroys pending
  * likes and (had it ever run against something already accepted, which
- * it never did — see the test coverage) would have put conversations at
+ * it never did, see the test coverage) would have put conversations at
  * risk too, for a reason the other person never did anything wrong to
  * cause. That is a materially worse outcome than a slightly-stale inbox.
  *
- * What auto-decline was ever actually FOR — keeping a new batch of
+ * What auto-decline was ever actually FOR, keeping a new batch of
  * incoming likes close to a "yes" so ten likes reads as ten real
- * prospects, not a chore — is fully delivered by LAYER 2 above, which
+ * prospects, not a chore, is fully delivered by LAYER 2 above, which
  * only ever refuses a send that hasn't happened yet. Nothing already
  * sitting in a recipient's inbox needs to be touched for that guarantee
  * to hold.
@@ -117,21 +117,21 @@ import * as profileService from './profile.service.js';
  * What's left of the old Layer 3 is `previewFilterCleanup` /
  * `runFilterCleanup` at the bottom of this file: a real capability (a
  * user narrowed their filters and genuinely wants to tidy a now-stale
- * inbox), but now strictly OPT-IN — a user deliberately invokes it on
+ * inbox), but now strictly OPT-IN, a user deliberately invokes it on
  * their own inbox (see `src/http/routes/filters.routes.ts`'s
  * `/me/filters/cleanup*` routes), it is never called as a side effect of
  * `filter.service.ts#updateMyFilters` or anything else, and nothing
- * schedules it (`src/jobs/**` has no entry for it — there is nothing to
+ * schedules it (`src/jobs/**` has no entry for it, there is nothing to
  * schedule). `decline_origin = 'auto'` (see
  * `db/migrations/010_eligibility.sql`) is still stamped on a row this
  * declines, distinguishing a user-invoked cleanup decline from a real
  * `'human'` recipient decline, so trust scoring/analytics can tell them
  * apart and a cleanup decline never feeds the sender's trust score
- * negatively — exactly the same non-punitive treatment the old Layer 3
+ * negatively, exactly the same non-punitive treatment the old Layer 3
  * gave it, just now only ever triggered by the recipient's own
  * deliberate action. The sender sees the identical generic
  * `interest_declined` notification either way (§11.4 "They passed on
- * this match.") — `decline_origin` is never read by, or exposed through,
+ * this match."), `decline_origin` is never read by, or exposed through,
  * any Interest-shaped return value in this file.
  */
 
@@ -162,14 +162,14 @@ export class InterestTransitionError extends ConflictError {
   readonly attempted: InterestStatus;
 
   constructor(interestId: string, fromStatus: InterestStatus, attempted: InterestStatus) {
-    // Plain sentence for the wire (`message` reaches the client verbatim —
-    // see src/http/errors.ts) — the internal state names/set notation this
-    // used to interpolate directly (`cannot move from "x" to "y" — only
+    // Plain sentence for the wire (`message` reaches the client verbatim,
+    // see src/http/errors.ts), the internal state names/set notation this
+    // used to interpolate directly (`cannot move from "x" to "y", only
     // {a, b, c} are reachable from...`) read like a debug log line, not
     // something a person should see. The full `fromStatus`/`attempted`
     // detail is still available on `details` for a client that wants to
     // branch on it programmatically, just not narrated in `message`.
-    super('This interest request can no longer be changed — it has already been responded to, canceled, or has expired.', {
+    super('This interest request can no longer be changed, it has already been responded to, canceled, or has expired.', {
       interestId,
       fromStatus,
       attempted,
@@ -181,7 +181,7 @@ export class InterestTransitionError extends ConflictError {
 }
 
 // ---------------------------------------------------------------------
-// Static copy (spec §11.4, §30.2) — never generated, always these exact strings.
+// Static copy (spec §11.4, §30.2), never generated, always these exact strings.
 // ---------------------------------------------------------------------
 
 /** §30.2 exact copy for "user reaches outgoing interest limit". */
@@ -210,10 +210,10 @@ interface InterestRow {
   /**
    * `'human'` for a real recipient decline, `'auto'` for a recipient's
    * own deliberately-invoked `runFilterCleanup` (see the file-level
-   * "CORRECTION" note — never written as a side effect of a filter
+   * "CORRECTION" note, never written as a side effect of a filter
    * update or by any job), `null` for every non-declined row (see
    * `db/migrations/010_eligibility.sql`). Deliberately NOT read by
-   * `mapRow` below — this column is internal bookkeeping for trust
+   * `mapRow` below, this column is internal bookkeeping for trust
    * scoring/analytics (read directly off this table, same pattern
    * `discovery.service.ts` already uses), never part of the `Interest`
    * shape returned to any caller, so a sender can never learn from any
@@ -309,13 +309,13 @@ export async function sendInterest(ctx: Ctx, recipientId: string): Promise<Inter
 
   // LAYER 2 mutual-eligibility gate (see file-level "MUTUAL-ELIGIBILITY
   // ENFORCEMENT" note): checked BEFORE any of the capacity queries below,
-  // and — critically — before the INSERT further down, so a refused send
+  // and, critically, before the INSERT further down, so a refused send
   // never consumes the sender's outgoing-pending slot or daily quota.
   // Fresh evaluation every call, never a cached discovery grid.
   const eligibility = await evaluateMutualEligibility(ctx, userId, parsedRecipientId);
   if (!eligibility.eligible) {
     // Deliberately the SAME message/shape as the capacity-based refusals
-    // below (`RECIPIENT_UNAVAILABLE_MESSAGE`) — see file-level doc: this
+    // below (`RECIPIENT_UNAVAILABLE_MESSAGE`), see file-level doc: this
     // must never let a sender distinguish "your filters exclude them"
     // from any other reason a send didn't go through, and must never
     // name a filter key or attribute.
@@ -326,7 +326,7 @@ export async function sendInterest(ctx: Ctx, recipientId: string): Promise<Inter
 
   // Decision-layer addition (Open Question OQ-4, see docs/conformance.md):
   // §6.4's "Send interests: limited" restriction table cell now has a
-  // concrete, smaller cap for Limited-trust senders —
+  // concrete, smaller cap for Limited-trust senders,
   // `trust.outgoingInterestPendingLimitFor` buckets on trustLevel so this
   // module doesn't re-derive the trust-tier comparison itself (same
   // pattern as `trust.linksPerHourLimitFor`).
@@ -436,42 +436,42 @@ export async function listIncoming(ctx: Ctx, params?: { cursor?: string; limit?:
 }
 
 // ---------------------------------------------------------------------
-// listOutgoingEnriched / listIncomingEnriched — the "who liked me" /
+// listOutgoingEnriched / listIncomingEnriched, the "who liked me" /
 // "your sent likes" screen, with the counterpart's display name/primary
 // photo/age/distance attached (docs/ux-api-review.md §6: the bare
 // `listOutgoing`/`listIncoming` above force a client into one
-// `GET /profiles/:userId` per row to render this screen — one of the two
+// `GET /profiles/:userId` per row to render this screen, one of the two
 // highest-traffic screens in the product).
 //
 // SHARED, NOT DUPLICATED: this reuses `profile.service#getPublicProfile`
 // verbatim, the exact same value `GET /profiles/:userId` returns and the
 // exact same function `matches.service.ts#listMyMatches` already calls
-// for its own row enrichment — never a hand-rolled second profile view.
+// for its own row enrichment, never a hand-rolled second profile view.
 // That inherits, for free, the same guarantees `matches.service.ts`'s own
 // module doc calls out: never leaks raw coordinates, 404s/omits a
 // deleted or blocked counterpart. A row whose counterpart has become
 // unreachable that way is DROPPED from the page rather than failing the
-// whole list — identical semantics to `matches.service.ts#listMyMatches`,
+// whole list, identical semantics to `matches.service.ts#listMyMatches`,
 // mirrored deliberately rather than reimplemented, per the task's "do
-// not duplicate this logic — share it."
+// not duplicate this logic, share it."
 //
-// `policySnapshot` (internal config values — `interest.expiry_hours`,
+// `policySnapshot` (internal config values, `interest.expiry_hours`,
 // the outgoing/incoming pending caps) is deliberately NOT included on
 // this enriched shape: it is pure noise the client never uses (see the
 // same review finding), unlike the base `listOutgoing`/`listIncoming`
-// above (kept unchanged — see this file's own frozen `Interest` return
-// type — for the internal/test callers that still need it).
+// above (kept unchanged, see this file's own frozen `Interest` return
+// type, for the internal/test callers that still need it).
 //
 // `listOutgoing`/`listIncoming` above are UNCHANGED (still return the
-// bare `Interest`, `policySnapshot` included) — this is deliberately a
+// bare `Interest`, `policySnapshot` included), this is deliberately a
 // new, additive pair of exports, not a signature change, since those two
 // functions' existing return shape is depended on elsewhere (internal
-// callers, and — frozen — `INTERFACES.md`'s original module contract).
+// callers, and, frozen, `INTERFACES.md`'s original module contract).
 // ---------------------------------------------------------------------
 
 export interface EnrichedInterestItem {
   id: string;
-  /** The other participant on this row — the recipient for an outgoing interest, the sender for an incoming one. */
+  /** The other participant on this row, the recipient for an outgoing interest, the sender for an incoming one. */
   counterpartUserId: string;
   status: InterestStatus;
   displayName: string;
@@ -491,7 +491,7 @@ async function enrichPage(ctx: Ctx, page: Page<Interest>, counterpartOf: (intere
   for (const interest of page.items) {
     const counterpartUserId = counterpartOf(interest);
     // See section doc: a block (either direction) or a deleted
-    // counterpart account makes this row unreachable — drop it rather
+    // counterpart account makes this row unreachable, drop it rather
     // than fail the whole page, exactly like matches.service.ts.
     let profile: Awaited<ReturnType<typeof profileService.getPublicProfile>>;
     try {
@@ -518,13 +518,13 @@ async function enrichPage(ctx: Ctx, page: Page<Interest>, counterpartOf: (intere
   return { items, nextCursor: page.nextCursor };
 }
 
-/** `GET /interests/outgoing`, enriched — see section doc above. */
+/** `GET /interests/outgoing`, enriched, see section doc above. */
 export async function listOutgoingEnriched(ctx: Ctx, params?: { cursor?: string; limit?: number }): Promise<Page<EnrichedInterestItem>> {
   const page = await listOutgoing(ctx, params);
   return enrichPage(ctx, page, (interest) => interest.recipientId);
 }
 
-/** `GET /interests/incoming`, enriched — see section doc above. */
+/** `GET /interests/incoming`, enriched, see section doc above. */
 export async function listIncomingEnriched(ctx: Ctx, params?: { cursor?: string; limit?: number }): Promise<Page<EnrichedInterestItem>> {
   const page = await listIncoming(ctx, params);
   return enrichPage(ctx, page, (interest) => interest.senderId);
@@ -563,7 +563,7 @@ export async function acceptInterest(
       if (!existing) throw new NotFoundError(`Interest ${interestId} not found.`);
       if (existing.recipient_id !== userId) throw new ForbiddenError('Only the recipient can accept this interest.');
       if (existing.status !== 'pending') throw new InterestTransitionError(interestId, existing.status, 'accepted');
-      // status is still 'pending' in the row but expires_at has passed —
+      // status is still 'pending' in the row but expires_at has passed,
       // the expiry job (§25.1) just hasn't swept it yet. Treat exactly
       // like an already-expired interest (spec §11.4): reject.
       throw new InterestTransitionError(interestId, 'expired', 'accepted');
@@ -610,7 +610,7 @@ async function atomicTransition(
   const now = ctx.clock.now();
   const roleColumn = role === 'sender' ? 'sender_id' : 'recipient_id';
   // `to === 'declined'` is always the RECIPIENT explicitly declining via
-  // this path (see `declineInterest` below) — the opt-in filter-cleanup
+  // this path (see `declineInterest` below), the opt-in filter-cleanup
   // decline never goes through `atomicTransition`, it has its own UPDATE
   // that stamps `decline_origin = 'auto'` instead (see
   // `runFilterCleanup`/`autoDeclineOne` below). So a real human decline
@@ -636,7 +636,7 @@ async function atomicTransition(
   if (existing.status !== 'pending') {
     throw new InterestTransitionError(interestId, existing.status, to);
   }
-  // Still 'pending' but past expires_at — see the identical note in acceptInterest.
+  // Still 'pending' but past expires_at, see the identical note in acceptInterest.
   throw new InterestTransitionError(interestId, 'expired', to);
 }
 
@@ -648,7 +648,7 @@ export async function declineInterest(ctx: Ctx, interestId: string): Promise<Int
   const interest = mapRow(row);
 
   // §11.4: the sender only ever sees the generic "They passed on this
-  // match." template — no decliner reasoning or identity-beyond-what-they
+  // match." template, no decliner reasoning or identity-beyond-what-they
   // already know goes into this payload.
   await notificationService.notify(ctx, {
     userId: interest.senderId,
@@ -684,26 +684,26 @@ export async function expireDuePendingInterests(ctx: Ctx): Promise<{ expired: nu
   );
   // The sender's outgoing slot is freed automatically: `sendInterest`'s cap
   // check counts `status = 'pending'` rows only, so a row that just flipped
-  // to 'expired' stops counting against the cap the instant this commits —
+  // to 'expired' stops counting against the cap the instant this commits,
   // no separate bookkeeping needed (spec §11.4, §25.1).
   return { expired: rows.length };
 }
 
 // ---------------------------------------------------------------------
 // Opt-in inbox cleanup (see file-level "CORRECTION" note above). Two
-// functions only, both scoped to the CALLING user's own inbox — neither
+// functions only, both scoped to the CALLING user's own inbox, neither
 // takes a `recipientId` parameter, so neither can be pointed at anyone
 // else's interests:
 //
-//   - `previewFilterCleanup` — read-only, no mutation. Tells the caller
+//   - `previewFilterCleanup`, read-only, no mutation. Tells the caller
 //     how many of their own PENDING incoming interests their CURRENT
 //     filters would decline, so they can see the count BEFORE deciding
 //     to run it.
-//   - `runFilterCleanup` — actually declines exactly that set.
+//   - `runFilterCleanup`, actually declines exactly that set.
 //
 // Neither is called from anywhere else in this codebase:
 // `filter.service.ts#updateMyFilters` has no reference to either, and
-// `src/jobs/**` has no entry for either — a user must explicitly invoke
+// `src/jobs/**` has no entry for either, a user must explicitly invoke
 // one (see `src/http/routes/filters.routes.ts`'s `/me/filters/cleanup*`
 // routes) for anything to happen. Not a §25 job in INTERFACES.md's
 // original list, and deliberately never becomes one.
@@ -714,7 +714,7 @@ interface PendingIncomingRow {
   sender_id: string;
 }
 
-/** Every PENDING interest addressed to `recipientId` — just enough (`id`, `sender_id`) to re-check eligibility and decline per row without pulling full `Interest` data this never returns to anyone. */
+/** Every PENDING interest addressed to `recipientId`, just enough (`id`, `sender_id`) to re-check eligibility and decline per row without pulling full `Interest` data this never returns to anyone. */
 async function loadPendingIncoming(ctx: Ctx, recipientId: string): Promise<PendingIncomingRow[]> {
   const { rows } = await ctx.db.query<PendingIncomingRow>(
     `SELECT id, sender_id FROM interests WHERE recipient_id = $1 AND status = 'pending'`,
@@ -726,12 +726,12 @@ async function loadPendingIncoming(ctx: Ctx, recipientId: string): Promise<Pendi
 /**
  * Declines exactly one interest with `decline_origin = 'auto'`, guarded
  * atomically by `WHERE status = 'pending'` (same discipline as
- * `atomicTransition`) — if the row was concurrently accepted, canceled,
+ * `atomicTransition`), if the row was concurrently accepted, canceled,
  * expired, or already declined by the time this UPDATE runs, it matches
  * zero rows and this is a silent no-op (idempotent: nothing left to do).
  * Notifies the sender with the IDENTICAL generic `interest_declined`
  * event/template a real human decline uses (§11.4 "They passed on this
- * match.") — `decline_origin` never appears in the notification payload,
+ * match."), `decline_origin` never appears in the notification payload,
  * so the sender cannot learn this was a cleanup decline rather than a
  * personal one.
  */
@@ -756,8 +756,8 @@ async function autoDeclineOne(ctx: Ctx, interestId: string, senderId: string): P
 /**
  * Read-only preview for the opt-in inbox cleanup: re-evaluates every one
  * of the CALLING user's own PENDING incoming interests against their
- * CURRENT hard filters — via the exact same
- * `eligibility.service#evaluateMutualEligibility` Layer 2 relies on — and
+ * CURRENT hard filters, via the exact same
+ * `eligibility.service#evaluateMutualEligibility` Layer 2 relies on, and
  * counts how many a `runFilterCleanup` call would decline right now.
  * Never writes anything; safe to call as often as the user opens their
  * filter-cleanup screen, including immediately after saving a filter
@@ -770,7 +770,7 @@ export async function previewFilterCleanup(ctx: Ctx): Promise<{ wouldDecline: nu
   let wouldDecline = 0;
   for (const row of pending) {
     const { eligible } = await evaluateMutualEligibility(ctx, row.sender_id, userId);
-    // `eligible` is also `true` when evaluation errored (fail-open — see
+    // `eligible` is also `true` when evaluation errored (fail-open, see
     // eligibility.service.ts's doc): either way, don't count this row as
     // "would decline" rather than risk overstating what cleanup would do.
     if (!eligible) wouldDecline++;
@@ -781,20 +781,20 @@ export async function previewFilterCleanup(ctx: Ctx): Promise<{ wouldDecline: nu
 /**
  * Executes the opt-in inbox cleanup the user just previewed: declines
  * every one of the CALLING user's own PENDING incoming interests that
- * their CURRENT hard filters exclude, and leaves every other row —
+ * their CURRENT hard filters exclude, and leaves every other row,
  * eligible pending interests, and anything already accepted/declined/
- * expired/canceled — completely untouched. Only ever invoked explicitly
+ * expired/canceled, completely untouched. Only ever invoked explicitly
  * (see the section-level note above); never a consequence of a filter
  * update, never scheduled.
  *
  * An interest that was eligible when sent and REMAINS eligible is never
- * written to at all (no UPDATE even attempted) — it survives untouched,
+ * written to at all (no UPDATE even attempted), it survives untouched,
  * including its `status`/`declined_at`/`decline_origin` all staying
  * exactly as they were.
  *
  * IDEMPOTENT / SAFE TO RE-RUN: only ever reads/writes rows currently
  * `status = 'pending'`; a row this call declines is no longer pending, so
- * calling this again — filters unchanged, or changed again — is always a
+ * calling this again, filters unchanged, or changed again, is always a
  * no-op for that row. Fresh per-interest evaluation (not batched) matches
  * `filter.service.ts#subjectPassesFiltersOf`'s existing per-candidate
  * query pattern; introducing a bulk mutual-filter primitive there is out
@@ -806,7 +806,7 @@ export async function runFilterCleanup(ctx: Ctx): Promise<{ declined: number }> 
   let declined = 0;
   for (const row of pending) {
     const { eligible } = await evaluateMutualEligibility(ctx, row.sender_id, userId);
-    // `eligible` is also `true` when evaluation errored (fail-open — see
+    // `eligible` is also `true` when evaluation errored (fail-open, see
     // eligibility.service.ts's doc): either way, leave this row pending
     // untouched rather than risk declining a legitimate interest.
     if (eligible) continue;

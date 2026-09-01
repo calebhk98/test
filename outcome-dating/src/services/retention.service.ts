@@ -1,9 +1,9 @@
 /**
- * src/services/retention.service.ts — the data-retention policy registry
+ * src/services/retention.service.ts, the data-retention policy registry
  * and its batched enforcement engine.
  *
  * See docs/retention.md for the full table (window, action, reasoning)
- * this file implements — that document and `RETENTION_POLICIES` below
+ * this file implements, that document and `RETENTION_POLICIES` below
  * MUST stay in sync; `tests/unit/retention.test.ts` asserts the policy
  * COUNT matches so the doc can't silently drift.
  *
@@ -11,26 +11,26 @@
  *
  *  - Per data class, either DELETE (the class has no legitimate reason to
  *    survive past its window) or ANONYMIZE (the row/aggregate needs to
- *    keep existing — a conversation's timeline, a device's reputation
- *    score — but its personally-identifying content doesn't need to).
+ *    keep existing, a conversation's timeline, a device's reputation
+ *    score, but its personally-identifying content doesn't need to).
  *    Every policy below says explicitly which.
  *
  *  - BOUNDED, BATCHED, IDEMPOTENT (task brief: "cannot lock the database
  *    by deleting millions of rows in one statement"). Each policy deletes
  *    or anonymizes `batchSize` rows at a time (one `DELETE`/`UPDATE ...
- *    WHERE id IN (SELECT ... LIMIT $batchSize)` statement per batch —
+ *    WHERE id IN (SELECT ... LIMIT $batchSize)` statement per batch,
  *    short-lived, small lock footprint, never a table-wide sweep in one
  *    transaction), and stops after `maxBatchesPerRun` batches even if
- *    more rows still match — so one scheduled tick can never balloon into
+ *    more rows still match, so one scheduled tick can never balloon into
  *    an unbounded scan of a huge backlog. A capped run just means slower
  *    catch-up, never lost work: the NEXT run's query re-selects whatever
  *    still matches the same age cutoff (computed fresh from `ctx.clock`
  *    each run), so nothing needs to remember where a prior run stopped.
  *    Re-running a policy against a database it already fully processed
- *    matches zero rows and is a costless no-op — that's the whole
+ *    matches zero rows and is a costless no-op, that's the whole
  *    idempotency story, no separate "already ran" bookkeeping needed.
  *
- *  - `ctx.clock` drives every cutoff — never `Date.now()`/`new Date()` —
+ *  - `ctx.clock` drives every cutoff, never `Date.now()`/`new Date()`,
  *    so tests move a `ManualClock` to the window boundary instead of
  *    waiting on real time (task brief).
  *
@@ -39,13 +39,13 @@
  *    sensitive profile content (answers, tags, filters, photos) the
  *    moment they delete their account, and already draws the exact
  *    "financial + safety audit trail survive, everything else doesn't"
- *    boundary this file's RETAINED_FOREVER list below repeats verbatim —
+ *    boundary this file's RETAINED_FOREVER list below repeats verbatim,
  *    see that function's own extensive doc for the reasoning (ban-evasion
  *    resistance, tax/dispute obligations). This file's job is the
  *    complementary one: the logs/events/impressions that accumulate for
  *    EVERY user (deleted or not) over ordinary use, which no single
  *    "user deleted their account" action ever touches because they're
- *    not gated on account status at all — a still-active user's own
+ *    not gated on account status at all, a still-active user's own
  *    90-day-old login history is exactly as much a liability as a
  *    deleted user's. Same boundary, different trigger (age, not a user
  *    action).
@@ -57,13 +57,13 @@ import { DELETED_MESSAGE_PLACEHOLDER } from './profile.service.js';
 export type RetentionAction = 'delete' | 'anonymize';
 
 export interface RetentionPolicy {
-  /** Stable identifier — also the row/log key an operator greps for. */
+  /** Stable identifier, also the row/log key an operator greps for. */
   name: string;
   /** The data class in plain words, for docs/retention.md's table. */
   dataClass: string;
   action: RetentionAction;
   windowDays: number;
-  /** Why this window and not a different one — the "reasoning written down" the task brief asks for. Kept alongside the code, not just in docs/retention.md, so the two can never drift silently out of sync (tests/unit/retention.test.ts asserts every policy has one). */
+  /** Why this window and not a different one, the "reasoning written down" the task brief asks for. Kept alongside the code, not just in docs/retention.md, so the two can never drift silently out of sync (tests/unit/retention.test.ts asserts every policy has one). */
   reasoning: string;
   batchSize: number;
   maxBatchesPerRun: number;
@@ -71,7 +71,7 @@ export interface RetentionPolicy {
   runBatch: (ctx: Ctx, cutoff: Date, batchSize: number) => Promise<number>;
 }
 
-/** Batch-deletes rows from `table` whose `ageColumn` is older than `cutoff`, keyed by `idColumn` (that table's primary key — `id` for every table below except `notification_dedup_log`, whose primary key is `dedup_key`; there is no bind-parameter syntax for a SQL identifier, so both are always one of the compile-time literals in `PrunableTable`/`PRUNABLE_ID_COLUMNS` below, never anything derived from request input). */
+/** Batch-deletes rows from `table` whose `ageColumn` is older than `cutoff`, keyed by `idColumn` (that table's primary key, `id` for every table below except `notification_dedup_log`, whose primary key is `dedup_key`; there is no bind-parameter syntax for a SQL identifier, so both are always one of the compile-time literals in `PrunableTable`/`PRUNABLE_ID_COLUMNS` below, never anything derived from request input). */
 async function batchDeleteByAgeColumn(ctx: Ctx, table: PrunableTable, ageColumn: string, cutoff: Date, batchSize: number): Promise<number> {
   const idColumn = PRUNABLE_ID_COLUMNS[table];
   const { rowCount } = await ctx.db.query(
@@ -86,7 +86,7 @@ async function batchDeleteByAgeColumn(ctx: Ctx, table: PrunableTable, ageColumn:
 
 /**
  * Closed allowlist of tables this file is allowed to run
- * `batchDeleteByAgeColumn` against — table/column names are interpolated
+ * `batchDeleteByAgeColumn` against, table/column names are interpolated
  * into the SQL text above (Postgres has no bind-parameter syntax for an
  * identifier), so this union is what keeps that safe: every value is a
  * compile-time literal from this file, never anything derived from
@@ -101,7 +101,7 @@ type PrunableTable =
   | 'message_flags'
   | 'notification_dedup_log';
 
-/** Each `PrunableTable`'s primary-key column — `id` for every table except `notification_dedup_log`, whose PK is `dedup_key` (db/migrations/011_notifications.sql). */
+/** Each `PrunableTable`'s primary-key column, `id` for every table except `notification_dedup_log`, whose PK is `dedup_key` (db/migrations/011_notifications.sql). */
 const PRUNABLE_ID_COLUMNS: Record<PrunableTable, string> = {
   email_verification_tokens: 'id',
   password_reset_tokens: 'id',
@@ -116,7 +116,7 @@ const DEFAULT_BATCH_SIZE = 500;
 const DEFAULT_MAX_BATCHES_PER_RUN = 50; // 25,000 rows/policy/run at the default batch size
 
 // =========================================================================
-// Policies whose data has NO legitimate reason to outlive a short window —
+// Policies whose data has NO legitimate reason to outlive a short window,
 // see docs/retention.md for the full narrative version of each.
 // =========================================================================
 
@@ -132,7 +132,7 @@ const verificationCodePolicies: RetentionPolicy[] = (
   action: 'delete' as const,
   windowDays: 7,
   reasoning:
-    'A one-time code/token is worthless the moment it expires — it cannot be replayed, and the account action it would have authorized already requires a fresh one. The 7-day buffer past expires_at (rather than deleting the instant it expires) exists purely for support debugging ("did this ever get issued/consumed?"), not because the code itself has any value past expiry.',
+    'A one-time code/token is worthless the moment it expires, it cannot be replayed, and the account action it would have authorized already requires a fresh one. The 7-day buffer past expires_at (rather than deleting the instant it expires) exists purely for support debugging ("did this ever get issued/consumed?"), not because the code itself has any value past expiry.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: (ctx, cutoff, batchSize) => batchDeleteByAgeColumn(ctx, table, 'expires_at', cutoff, batchSize),
@@ -144,7 +144,7 @@ const authEventsPolicy: RetentionPolicy = {
   action: 'delete',
   windowDays: 90,
   reasoning:
-    'user_auth_events is a raw per-login signal carrying an IP address and device fingerprint — exactly the "raw device and IP signals" the task brief names as needing a short window. Its only consumers are near-term fraud/anomaly detection (recent login velocity, new-device alerts); anything durable it should have contributed to (trust score, a moderation flag) has already been written to trust_events/automated_moderation_flags — both retained forever, see RETAINED_FOREVER below — by the time this window closes, so deleting the raw event loses no audit capability.',
+    'user_auth_events is a raw per-login signal carrying an IP address and device fingerprint, exactly the "raw device and IP signals" the task brief names as needing a short window. Its only consumers are near-term fraud/anomaly detection (recent login velocity, new-device alerts); anything durable it should have contributed to (trust score, a moderation flag) has already been written to trust_events/automated_moderation_flags, both retained forever, see RETAINED_FOREVER below, by the time this window closes, so deleting the raw event loses no audit capability.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: (ctx, cutoff, batchSize) => batchDeleteByAgeColumn(ctx, 'user_auth_events', 'login_at', cutoff, batchSize),
@@ -156,7 +156,7 @@ const discoveryEventsPolicy: RetentionPolicy = {
   action: 'delete',
   windowDays: 30,
   reasoning:
-    'discovery_events is a pure impression log — one row per card shown, at high volume, with no per-row value past the short window photo A/B testing (photo_experiments, a separate bounded aggregate table, see docs/retention.md) and near-term "recently viewed" style features actually use. Kept only 30 days: long enough for those, far short of becoming a year-over-year behavioral history of who looked at whom.',
+    'discovery_events is a pure impression log, one row per card shown, at high volume, with no per-row value past the short window photo A/B testing (photo_experiments, a separate bounded aggregate table, see docs/retention.md) and near-term "recently viewed" style features actually use. Kept only 30 days: long enough for those, far short of becoming a year-over-year behavioral history of who looked at whom.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: (ctx, cutoff, batchSize) => batchDeleteByAgeColumn(ctx, 'discovery_events', 'created_at', cutoff, batchSize),
@@ -168,7 +168,7 @@ const messageFlagsPolicy: RetentionPolicy = {
   action: 'delete',
   windowDays: 180,
   reasoning:
-    'message_flags is granular, high-volume, automated evidence about ONE message (flag_type + severity) — distinct from the curated safety DECISION trail (moderation_actions, automated_moderation_flags, reports, appeals — all retained forever, see RETAINED_FOREVER) that these signals feed into. messages.analysis_flags already carries a denormalized summary on the message row itself (db/migrations/001_init.sql), so pruning the granular per-flag rows after 180 days loses no safety-relevant summary — only the redundant detail rows.',
+    'message_flags is granular, high-volume, automated evidence about ONE message (flag_type + severity), distinct from the curated safety DECISION trail (moderation_actions, automated_moderation_flags, reports, appeals, all retained forever, see RETAINED_FOREVER) that these signals feed into. messages.analysis_flags already carries a denormalized summary on the message row itself (db/migrations/001_init.sql), so pruning the granular per-flag rows after 180 days loses no safety-relevant summary, only the redundant detail rows.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: (ctx, cutoff, batchSize) => batchDeleteByAgeColumn(ctx, 'message_flags', 'created_at', cutoff, batchSize),
@@ -180,13 +180,13 @@ const notificationDedupLogPolicy: RetentionPolicy = {
   action: 'delete',
   windowDays: 30,
   reasoning:
-    'notification_dedup_log exists solely so a retried domain operation cannot double-enqueue a notification (notifications/outbox.ts) — its useful life is exactly as long as the outbox row it guards could plausibly still be retried, which is on the order of days, not months. Kept 30 days as a generous multiple of the outbox\'s own retry/backoff horizon.',
+    'notification_dedup_log exists solely so a retried domain operation cannot double-enqueue a notification (notifications/outbox.ts), its useful life is exactly as long as the outbox row it guards could plausibly still be retried, which is on the order of days, not months. Kept 30 days as a generous multiple of the outbox\'s own retry/backoff horizon.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: (ctx, cutoff, batchSize) => batchDeleteByAgeColumn(ctx, 'notification_dedup_log', 'created_at', cutoff, batchSize),
 };
 
-/** Terminal `notification_outbox` statuses — a row in any of these will never be picked up by the delivery worker again (see db/migrations/011_notifications.sql / 015_phone.sql's CHECK constraints for the full status set); `queued`/`held_quiet_hours`/`failed_retryable` are deliberately excluded because those rows are still live work. */
+/** Terminal `notification_outbox` statuses, a row in any of these will never be picked up by the delivery worker again (see db/migrations/011_notifications.sql / 015_phone.sql's CHECK constraints for the full status set); `queued`/`held_quiet_hours`/`failed_retryable` are deliberately excluded because those rows are still live work. */
 const TERMINAL_OUTBOX_STATUSES = ['sent', 'dead', 'dropped_preference', 'dropped_no_target', 'dropped_rate_limited'] as const;
 
 const notificationOutboxPolicy: RetentionPolicy = {
@@ -195,7 +195,7 @@ const notificationOutboxPolicy: RetentionPolicy = {
   action: 'delete',
   windowDays: 30,
   reasoning:
-    'notification_outbox is the push/email delivery QUEUE, not user-visible history (that\'s the notifications table below) — once a row reaches a terminal status it is pure operational exhaust. 30 days is enough for delivery-pipeline debugging (why did this push never arrive?) without the queue growing forever at send volume.',
+    'notification_outbox is the push/email delivery QUEUE, not user-visible history (that\'s the notifications table below), once a row reaches a terminal status it is pure operational exhaust. 30 days is enough for delivery-pipeline debugging (why did this push never arrive?) without the queue growing forever at send volume.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: async (ctx, cutoff, batchSize) => {
@@ -218,7 +218,7 @@ const deliveredNotificationsPolicy: RetentionPolicy = {
   action: 'delete',
   windowDays: 90,
   reasoning:
-    'notifications is the user-visible in-app notification center (notification.service.ts) — its historical value drops sharply once an event is old news, but unlike the delivery-pipeline tables above it IS something a user might scroll back through, hence the longer 90-day window (vs. 30 for pure pipeline exhaust). status = \'pending\' rows are never touched by this policy regardless of age — a pending notification is still live work, not history.',
+    'notifications is the user-visible in-app notification center (notification.service.ts), its historical value drops sharply once an event is old news, but unlike the delivery-pipeline tables above it IS something a user might scroll back through, hence the longer 90-day window (vs. 30 for pure pipeline exhaust). status = \'pending\' rows are never touched by this policy regardless of age, a pending notification is still live work, not history.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: async (ctx, cutoff, batchSize) => {
@@ -241,7 +241,7 @@ const refreshSessionsPolicy: RetentionPolicy = {
   action: 'delete',
   windowDays: 30,
   reasoning:
-    'A refresh_sessions row already past its expires_at, or explicitly revoked, can never again be used to mint an access token (auth.service.ts) — it is inert the moment either condition holds. 30 days past that point is a security-incident-investigation buffer ("was this session active around the time of report X"), not a functional need.',
+    'A refresh_sessions row already past its expires_at, or explicitly revoked, can never again be used to mint an access token (auth.service.ts), it is inert the moment either condition holds. 30 days past that point is a security-incident-investigation buffer ("was this session active around the time of report X"), not a functional need.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: async (ctx, cutoff, batchSize) => {
@@ -259,7 +259,7 @@ const refreshSessionsPolicy: RetentionPolicy = {
 };
 
 // =========================================================================
-// Policies that ANONYMIZE rather than delete — the row/aggregate needs to
+// Policies that ANONYMIZE rather than delete, the row/aggregate needs to
 // keep existing for integrity reasons, but its identifying payload doesn't.
 // =========================================================================
 
@@ -269,7 +269,7 @@ const deviceFingerprintPolicy: RetentionPolicy = {
   action: 'anonymize',
   windowDays: 180,
   reasoning:
-    'device_fingerprints is an AGGREGATE reputation record shared across every account that has ever used that device — unlike user_auth_events (one account, raw, short window), deleting it outright would erase abuse-pattern memory a still-active bad device deserves to keep. So this anonymizes, not deletes: after 180 days of no activity (last_seen_at), the free-form `metadata` jsonb payload (the actual raw signal blob) is cleared while `reputation_score`/`is_vpn`/`is_emulator` — already-derived classification outputs, not raw identifying data — are left intact, preserving the aggregate\'s abuse-detection value without an unbounded-retention raw-data liability.',
+    'device_fingerprints is an AGGREGATE reputation record shared across every account that has ever used that device, unlike user_auth_events (one account, raw, short window), deleting it outright would erase abuse-pattern memory a still-active bad device deserves to keep. So this anonymizes, not deletes: after 180 days of no activity (last_seen_at), the free-form `metadata` jsonb payload (the actual raw signal blob) is cleared while `reputation_score`/`is_vpn`/`is_emulator`, already-derived classification outputs, not raw identifying data, are left intact, preserving the aggregate\'s abuse-detection value without an unbounded-retention raw-data liability.',
   batchSize: DEFAULT_BATCH_SIZE,
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: async (ctx, cutoff, batchSize) => {
@@ -293,8 +293,8 @@ const dormantChatContentPolicy: RetentionPolicy = {
   action: 'anonymize',
   windowDays: 730,
   reasoning:
-    'Messages are core relationship content a still-active pair of users would reasonably expect to keep — nothing here touches an active/cooling/established conversation, at any age. Only conversations chatDecay.job.ts has already marked \'archived\' (dormant — no date resulted, decayed from inactivity) for a full 2 years get their message BODIES overwritten, one message at a time, with the exact same static placeholder (DELETED_MESSAGE_PLACEHOLDER) profile.service.ts#deleteMyAccount already uses for a deleted user\'s own messages — same "erase content, keep the row" policy this codebase already committed to, applied on an age trigger instead of a delete-my-account trigger. The conversation row, its timeline metadata, and the OTHER participant\'s ability to see the thread existed are all left untouched, exactly like that function\'s own boundary. Caveat documented in docs/retention.md: conversation.service.ts allows a new mutual match to resurrect an \'archived\' conversation (status -> \'active\') — if that happens more than 2 years after archival, the resurrected thread\'s old history reads as placeholder text, the same visual result a user already sees today when the OTHER party in a conversation has deleted their account.',
-  batchSize: 200, // smaller than the flat-table default — this one joins conversations, so a batch does more work per row
+    'Messages are core relationship content a still-active pair of users would reasonably expect to keep, nothing here touches an active/cooling/established conversation, at any age. Only conversations chatDecay.job.ts has already marked \'archived\' (dormant, no date resulted, decayed from inactivity) for a full 2 years get their message BODIES overwritten, one message at a time, with the exact same static placeholder (DELETED_MESSAGE_PLACEHOLDER) profile.service.ts#deleteMyAccount already uses for a deleted user\'s own messages, same "erase content, keep the row" policy this codebase already committed to, applied on an age trigger instead of a delete-my-account trigger. The conversation row, its timeline metadata, and the OTHER participant\'s ability to see the thread existed are all left untouched, exactly like that function\'s own boundary. Caveat documented in docs/retention.md: conversation.service.ts allows a new mutual match to resurrect an \'archived\' conversation (status -> \'active\'), if that happens more than 2 years after archival, the resurrected thread\'s old history reads as placeholder text, the same visual result a user already sees today when the OTHER party in a conversation has deleted their account.',
+  batchSize: 200, // smaller than the flat-table default, this one joins conversations, so a batch does more work per row
   maxBatchesPerRun: DEFAULT_MAX_BATCHES_PER_RUN,
   runBatch: async (ctx, cutoff, batchSize) => {
     const { rowCount } = await ctx.db.query(
@@ -326,7 +326,7 @@ export const RETENTION_POLICIES: RetentionPolicy[] = [
 ];
 
 /**
- * Data classes deliberately retained forever — no policy above touches
+ * Data classes deliberately retained forever, no policy above touches
  * them, and none should. Repeats (does not re-decide)
  * `profile.service.ts#deleteMyAccount`'s own documented boundary:
  *
@@ -337,14 +337,14 @@ export const RETENTION_POLICIES: RetentionPolicy[] = [
  *   - SAFETY AUDIT TRAIL: reports, moderation_actions, trust_events,
  *     appeals, automated_moderation_flags. Deleting a user's own history
  *     here on any timer would let a suspended/banned user launder their
- *     record simply by staying quiet long enough — the exact ban-evasion
+ *     record simply by staying quiet long enough, the exact ban-evasion
  *     hole deleteMyAccount's own doc calls out by name. This is why
  *     `message_flags` (granular, per-message, superseded by a summary
- *     already on the message row — see messageFlagsPolicy above) gets a
+ *     already on the message row, see messageFlagsPolicy above) gets a
  *     window while these five do not: those are the DECISION trail this
  *     one just feeds.
  *   - admin_audit_log: not part of the safety trail proper, but the same
- *     reasoning applies one level up — an admin action log that could be
+ *     reasoning applies one level up, an admin action log that could be
  *     aged out would undermine the accountability it exists to provide.
  *
  * Exported (not just documented) so a test can assert the retention
@@ -363,16 +363,16 @@ export const RETAINED_FOREVER_TABLES: readonly string[] = [
 
 /**
  * Data this file deliberately does NOT enforce a window on, WITHOUT
- * claiming it should live forever either — see docs/retention.md's "out
+ * claiming it should live forever either, see docs/retention.md's "out
  * of scope" section for the full reasoning per table. In short:
  *   - photo_experiments, photo_recommendations: bounded aggregates
  *     (O(1) rows per user×photo, not one row per event) that already
  *     cascade-delete the moment the photo they reference is removed
- *     (user_photos ... ON DELETE CASCADE) — there is no independent
+ *     (user_photos ... ON DELETE CASCADE), there is no independent
  *     unbounded-growth problem to solve here.
  *   - compatibility_scores: also a bounded, continuously-upserted
  *     aggregate (compatibilityRefresh.job.ts), and actively owned by a
- *     concurrent build cutting the compatibility system over right now —
+ *     concurrent build cutting the compatibility system over right now,
  *     left alone to avoid the two builds' automated jobs racing each
  *     other on the same table.
  *   - question_bank, user_question_answers, and everything under
@@ -382,7 +382,7 @@ export const RETAINED_FOREVER_TABLES: readonly string[] = [
  *   - users, profiles, answers, user_tags, hard_filters, user_photos:
  *     already governed by the account-deletion boundary
  *     (profile.service.ts#deleteMyAccount) on a USER ACTION trigger, not
- *     an age trigger — bounded per-user data (roughly one row per
+ *     an age trigger, bounded per-user data (roughly one row per
  *     user×question, not a log), not the "accumulates forever" problem
  *     this file targets.
  */
@@ -431,7 +431,7 @@ async function runOnePolicy(ctx: Ctx, policy: RetentionPolicy, now: Date): Promi
 }
 
 /**
- * Runs every policy once, each bounded to its own `maxBatchesPerRun` —
+ * Runs every policy once, each bounded to its own `maxBatchesPerRun`,
  * this is the whole job (see src/jobs/retention.job.ts). Policies run
  * sequentially and independently: one policy's rows exhausting early
  * never borrows headroom from another's cap, and a later policy running
@@ -452,7 +452,7 @@ export async function runRetentionSweep(ctx: Ctx): Promise<RetentionSweepResult>
   return { ranAt: now, policies: results, totalAffected };
 }
 
-/** Runs a single named policy (by `RetentionPolicy.name`) — used by tests that want to exercise one class in isolation without paying for every other policy's queries in the same test. Throws if `name` doesn't match any registered policy (a test typo, not a runtime condition). */
+/** Runs a single named policy (by `RetentionPolicy.name`), used by tests that want to exercise one class in isolation without paying for every other policy's queries in the same test. Throws if `name` doesn't match any registered policy (a test typo, not a runtime condition). */
 export async function runRetentionPolicy(ctx: Ctx, name: string): Promise<RetentionPolicyRunResult> {
   const policy = RETENTION_POLICIES.find((p) => p.name === name);
   if (!policy) throw new Error(`retention.service: unknown policy "${name}"`);

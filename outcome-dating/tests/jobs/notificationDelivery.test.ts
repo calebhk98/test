@@ -1,5 +1,5 @@
 /**
- * `notification_delivery` job — thin wrapper around
+ * `notification_delivery` job, thin wrapper around
  * `notifications/delivery.ts#runNotificationDeliveryWorker`, resolving its
  * push/email/SMS senders the same environment-driven way every other
  * external-integration port is selected (`src/config/adapters.ts`). This

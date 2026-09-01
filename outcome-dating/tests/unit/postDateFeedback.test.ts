@@ -11,10 +11,10 @@
  * Every service exercised here (dateProposal-adjacent tables via raw SQL
  * setup, report.service.ts, trust.service.ts, moderation.service.ts,
  * notification.service.ts, behavioral_prompt_suggestions) is the real,
- * fully-implemented sibling code — nothing is mocked. Date proposals are
+ * fully-implemented sibling code, nothing is mocked. Date proposals are
  * inserted directly via SQL rather than driven through
  * `dateProposal.service#proposeDate/acceptDateProposal` (that state
- * machine has its own dedicated test file, `dateProposal.test.ts`) — this
+ * machine has its own dedicated test file, `dateProposal.test.ts`), this
  * file only needs a `date_proposals` row in a given status, not to
  * re-prove the payment/escrow flow that gets it there.
  */
@@ -107,7 +107,7 @@ async function insertUser(trustLevel: TrustLevel = 'standard'): Promise<string> 
   return rows[0]!.id;
 }
 
-/** Find-or-create — some tests insert more than one date proposal for the same pair, and `conversations` has a UNIQUE(user_a_id, user_b_id) constraint. */
+/** Find-or-create, some tests insert more than one date proposal for the same pair, and `conversations` has a UNIQUE(user_a_id, user_b_id) constraint. */
 async function insertConversation(userAId: string, userBId: string): Promise<string> {
   const [a, b] = userAId < userBId ? [userAId, userBId] : [userBId, userAId];
   const { rows } = await pool.query<{ id: string }>(
@@ -137,7 +137,7 @@ interface InsertProposalOpts {
   scheduledEnd?: Date;
 }
 
-/** Inserts a `date_proposals` row directly at whatever status/timing a test needs — see module doc for why this bypasses `dateProposal.service`'s own state machine. */
+/** Inserts a `date_proposals` row directly at whatever status/timing a test needs, see module doc for why this bypasses `dateProposal.service`'s own state machine. */
 async function insertDateProposal(proposerId: string, recipientId: string, opts: InsertProposalOpts = {}): Promise<{ id: string; conversationId: string }> {
   const conversationId = await insertConversation(proposerId, recipientId);
   const venue = await insertVenue();
@@ -162,7 +162,7 @@ interface TestQuestion {
   slug: string;
 }
 
-/** Inserts a `scale`-type row into the ONE typed question bank (question_bank/user_question_answers, db/migrations/008_questions.sql) — replaces the OLD `questions` table this used to target. */
+/** Inserts a `scale`-type row into the ONE typed question bank (question_bank/user_question_answers, db/migrations/008_questions.sql), replaces the OLD `questions` table this used to target. */
 async function insertQuestion(slug: string): Promise<TestQuestion> {
   const typeDefinition = { type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' };
   const { rows } = await pool.query<{ id: string }>(
@@ -174,7 +174,7 @@ async function insertQuestion(slug: string): Promise<TestQuestion> {
   return { id: rows[0]!.id, slug };
 }
 
-/** `selfValue`/`preferenceValue` are the new bank's self/preference axis on a `scale` question (1-5) — direct replacement for the OLD `answers.self_value`/`answers.partner_value` this used to write. */
+/** `selfValue`/`preferenceValue` are the new bank's self/preference axis on a `scale` question (1-5), direct replacement for the OLD `answers.self_value`/`answers.partner_value` this used to write. */
 async function upsertAnswer(userId: string, question: TestQuestion, selfValue: number, preferenceValue: number): Promise<void> {
   await pool.query(
     `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
@@ -198,7 +198,7 @@ test('a single participant submitting a check-in is fully effective without the 
   assert.equal(view.outcome, 'happened_good');
   assert.equal(view.reportFiled, false);
 
-  // B never submits anything — the effect on B (the OTHER party) must
+  // B never submits anything, the effect on B (the OTHER party) must
   // already be fully in place from A's single submission.
   const bEvents = await trustEventsFor(b);
   const positive = bEvents.filter((e) => e.event_type === TRUST_EVENT_TYPES.POSITIVE_POST_DATE_FEEDBACK);
@@ -240,7 +240,7 @@ test('happened_bad produces a negative trust event for the other party, weighted
   assert.equal(negative.length, 1);
   assert.ok(negative[0]!.delta < 0, 'happened_bad must cost the other party some trust');
   assert.ok(negative[0]!.delta > -4, 'a standard-trust rater is weighted down from the unweighted base delta');
-  // Safety isolation extends to ordinary outcome trust events too — no
+  // Safety isolation extends to ordinary outcome trust events too, no
   // correlatable dateProposalId in metadata.
   assert.deepEqual(negative[0]!.metadata, {});
 });
@@ -259,7 +259,7 @@ test('happened_fine produces a small positive trust event, distinct in size from
   const goodEvents = await trustEventsFor(goodB);
   assert.equal(fineEvents[0]!.delta, 2);
   assert.equal(goodEvents[0]!.delta, 5);
-  assert.ok(goodEvents[0]!.delta > fineEvents[0]!.delta, 'happened_good must count for more than happened_fine — not collapsed into one score');
+  assert.ok(goodEvents[0]!.delta > fineEvents[0]!.delta, 'happened_good must count for more than happened_fine, not collapsed into one score');
 });
 
 test('outcome effects fire once at first submission and do not re-fire on a later edit (bounds repeated-toggle abuse)', async () => {
@@ -317,12 +317,12 @@ test('safetyFlag "incident" routes into report.service/moderation immediately, w
     'SELECT reporter_id, reported_id, category FROM reports WHERE reported_id = $1',
     [b],
   );
-  assert.equal(reportRows.length, 1, 'exactly one report.service report must exist — the user never had to also file one manually');
+  assert.equal(reportRows.length, 1, 'exactly one report.service report must exist, the user never had to also file one manually');
   assert.equal(reportRows[0]!.reporter_id, a);
   assert.equal(reportRows[0]!.category, 'unsafe_behavior');
 
   // Proof it reached the ACTUAL moderation machinery (not just a `reports`
-  // row) — report.service#submitReport's own call to
+  // row), report.service#submitReport's own call to
   // moderation.recordAutomatedFlag, never reimplemented here.
   const { rows: flagRows } = await pool.query('SELECT signal_type, weight FROM automated_moderation_flags WHERE user_id = $1', [b]);
   assert.equal(flagRows.length, 1);
@@ -377,7 +377,7 @@ test('an "incident" safety flag scores at least as high as an ordinary manually-
   assert.ok(checkInWeight >= strangerWeight, `check-in-originated report (${checkInWeight}) should score >= an ordinary stranger report (${strangerWeight})`);
 });
 
-test('safetyFlag "concern" alone does NOT file a report — only corroboration by a second, independent flagger does', async () => {
+test('safetyFlag "concern" alone does NOT file a report, only corroboration by a second, independent flagger does', async () => {
   const a = await insertUser();
   const b = await insertUser();
   const c = await insertUser();
@@ -426,7 +426,7 @@ test('the reported party cannot read the safety flag/details through any export 
     safetyDetails: 'a specific safety detail only A wrote',
   });
 
-  // B has no check-in of their own — getMyCheckIn is hard-scoped to the
+  // B has no check-in of their own, getMyCheckIn is hard-scoped to the
   // CALLER's own row, so it structurally cannot return A's.
   await assert.rejects(() => postDateFeedback.getMyCheckIn(ctxFor(userActor(b)), dateProposalId), NotFoundError);
 
@@ -440,7 +440,7 @@ test('the reported party cannot read the safety flag/details through any export 
   // A safety flag CAN legitimately end up producing the same generic
   // `safety_notice` moderation notification an ordinary manually-filed
   // unsafe_behavior report would also produce (report.service.ts's own,
-  // pre-existing behavior — not reimplemented or amplified here). The
+  // pre-existing behavior, not reimplemented or amplified here). The
   // isolation guarantee is INDISTINGUISHABILITY, not literal silence:
   // assert whatever B received carries nothing naming "check-in"/
   // "post-date", and none of the submitter's free text.
@@ -464,7 +464,7 @@ test('a NON-safety check-in never notifies the other party at all (no timing sid
   await postDateFeedback.submitCheckIn(ctxFor(userActor(a)), dateProposalId, { outcome: 'happened_bad' });
 
   const { rows: bNotifications } = await pool.query('SELECT event_type FROM notifications WHERE user_id = $1', [b]);
-  assert.equal(bNotifications.length, 0, 'an ordinary (non-safety) check-in must never notify the other party — nothing observable happens to them at all');
+  assert.equal(bNotifications.length, 0, 'an ordinary (non-safety) check-in must never notify the other party, nothing observable happens to them at all');
 });
 
 test('a safety flag never changes the date proposal state the other party can read', async () => {
@@ -529,7 +529,7 @@ test('a low-trust rater\'s negative rating counts for less than a high-trust rat
 });
 
 // =====================================================================
-// Timing: prompt after scheduled end, with a window, and a reminder —
+// Timing: prompt after scheduled end, with a window, and a reminder,
 // never endlessly.
 // =====================================================================
 
@@ -537,11 +537,11 @@ test('a low-trust rater\'s negative rating counts for less than a high-trust rat
  * These prompt-sweep tests deliberately assert against the specific
  * `post_date_feedback_prompts` rows for THIS test's own date proposal/
  * users, rather than `runCheckInPromptSweep`'s aggregate return counters
- * — the sweep scans the whole `date_proposals` table, and this file's
+ * the sweep scans the whole `date_proposals` table, and this file's
  * earlier tests share the same database and the same advancing
  * `ManualClock`, so by the time later tests run, plenty of unrelated
  * `completed` proposals from earlier tests are ALSO legitimately
- * sweep-eligible. That is real, correct sweep behavior, not a bug — the
+ * sweep-eligible. That is real, correct sweep behavior, not a bug, the
  * per-row assertions below are what actually isolates this test's claim.
  */
 async function promptRowFor(dateProposalId: string, userId: string): Promise<{ prompt_count: number } | undefined> {
@@ -562,16 +562,16 @@ test('check-in prompt fires only after the delay window, sends exactly one remin
 
   const sysCtx = ctxFor({ type: 'system', job: 'test' });
 
-  // Too soon — the initial delay hasn't elapsed yet.
+  // Too soon, the initial delay hasn't elapsed yet.
   await postDateFeedback.runCheckInPromptSweep(sysCtx);
-  assert.equal(await promptRowFor(dateProposalId, a), undefined, 'no prompt row yet — too soon after scheduled_end');
+  assert.equal(await promptRowFor(dateProposalId, a), undefined, 'no prompt row yet, too soon after scheduled_end');
 
   clock.advanceHours(4); // past the initial delay
   await postDateFeedback.runCheckInPromptSweep(sysCtx);
   assert.equal((await promptRowFor(dateProposalId, a))?.prompt_count, 1, 'A should get the initial prompt');
   assert.equal((await promptRowFor(dateProposalId, b))?.prompt_count, 1, 'B should get the initial prompt');
 
-  // Immediately again — no reminder due yet, no duplicate initial prompt.
+  // Immediately again, no reminder due yet, no duplicate initial prompt.
   await postDateFeedback.runCheckInPromptSweep(sysCtx);
   assert.equal((await promptRowFor(dateProposalId, a))?.prompt_count, 1);
 
@@ -580,11 +580,11 @@ test('check-in prompt fires only after the delay window, sends exactly one remin
   assert.equal((await promptRowFor(dateProposalId, a))?.prompt_count, 2, 'exactly one reminder');
   assert.equal((await promptRowFor(dateProposalId, b))?.prompt_count, 2);
 
-  // Advance well past the reminder delay again — must NOT prompt a third
+  // Advance well past the reminder delay again, must NOT prompt a third
   // time ("do not prompt endlessly").
   clock.advanceHours(200);
   await postDateFeedback.runCheckInPromptSweep(sysCtx);
-  assert.equal((await promptRowFor(dateProposalId, a))?.prompt_count, 2, 'stays at 2 forever — no third prompt');
+  assert.equal((await promptRowFor(dateProposalId, a))?.prompt_count, 2, 'stays at 2 forever, no third prompt');
   assert.equal((await promptRowFor(dateProposalId, b))?.prompt_count, 2);
 });
 
@@ -601,7 +601,7 @@ test('a check-in prompt stops once the user has actually submitted, and never fi
   clock.advanceHours(4);
   const sysCtx = ctxFor({ type: 'system', job: 'test' });
   await postDateFeedback.runCheckInPromptSweep(sysCtx);
-  assert.equal(await promptRowFor(dateProposalId, a), undefined, 'A already checked in — never even gets a prompt row');
+  assert.equal(await promptRowFor(dateProposalId, a), undefined, 'A already checked in, never even gets a prompt row');
   assert.equal((await promptRowFor(dateProposalId, b))?.prompt_count, 1, 'B, who has not checked in, gets prompted');
 
   // A stale proposal whose window has already fully elapsed must never be prompted at all.
@@ -641,7 +641,7 @@ test('the matching-signal sweep creates a pending behavioral_prompt_suggestions 
   await upsertAnswer(user, question, 3, 1);
 
   // ...but every one of their GOOD dates was with a partner who scores
-  // HIGH (5) — a real divergence between stated preference and what
+  // HIGH (5), a real divergence between stated preference and what
   // actually correlates with a good outcome.
   for (let i = 0; i < postDateFeedback.MIN_GOOD_DATES_FOR_MATCHING_SIGNAL; i++) {
     const partner = await insertUser();
@@ -667,7 +667,7 @@ test('the matching-signal sweep creates a pending behavioral_prompt_suggestions 
   assert.equal((rows[0] as { trigger_kind: string }).trigger_kind, 'post_date_outcome');
   assert.equal((rows[0] as { question_id: string }).question_id, question.id);
 
-  // The user's stated answer must be byte-for-byte unchanged — this
+  // The user's stated answer must be byte-for-byte unchanged, this
   // module never silently rewrites `user_question_answers` or sorting.
   const afterAnswer = await pool.query(
     'SELECT self_value, preference_value FROM user_question_answers WHERE user_id = $1 AND question_slug = $2',
@@ -684,7 +684,7 @@ test('the matching-signal sweep creates nothing for a user with too few good-out
   const question = await insertQuestion(`matching-signal-small-${Date.now()}`);
   await upsertAnswer(user, question, 3, 3);
 
-  // Only ONE good date — below MIN_GOOD_DATES_FOR_MATCHING_SIGNAL.
+  // Only ONE good date, below MIN_GOOD_DATES_FOR_MATCHING_SIGNAL.
   const partner = await insertUser();
   await upsertAnswer(partner, question, 3, 3); // and no divergence anyway
   const { id } = await insertDateProposal(user, partner);

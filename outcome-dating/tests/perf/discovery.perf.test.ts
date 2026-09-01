@@ -6,10 +6,10 @@
  * reintroducing the N+1 this build removed.
  *
  * Runs against its own dedicated database (`odate_perf_discovery`, per
- * this build's `odate_perf_<suite>` naming convention — see the task
+ * this build's `odate_perf_<suite>` naming convention, see the task
  * brief), seeded with a realistic multi-city dataset via
  * `seedDiscoveryPerf.ts` (tens of thousands of users, several cities,
- * varied hard filters and answered questions — NOT one homogeneous blob).
+ * varied hard filters and answered questions, NOT one homogeneous blob).
  *
  * Two things are proven here, both load-bearing for the "worst
  * scalability defect" fix:
@@ -17,7 +17,7 @@
  *   1. QUERY COUNT DOES NOT GROW WITH POOL SIZE. A query-counting
  *      `DbClient` wraps the real pool; `getDiscoveryGrid`/
  *      `getRealityDashboard` are called for several different viewers
- *      (different cities, different local population sizes — one
+ *      (different cities, different local population sizes, one
  *      deliberately in the densest seeded metro, see
  *      `seedDiscoveryPerf.ts#pickCity`) and the query count for EACH is
  *      asserted against the same fixed ceiling. If a future change
@@ -26,12 +26,12 @@
  *      latency alone.
  *   2. LATENCY AT REALISTIC SCALE. Wall-clock time for the same calls is
  *      measured and printed (not just asserted under a generous ceiling)
- *      — this build's report quotes these numbers directly, per the task
+ * this build's report quotes these numbers directly, per the task
  *      brief's "a performance claim without a measurement is not a
  *      result".
  *
  * What this file does NOT do: re-run the ORIGINAL unbounded/N+1 code at
- * this scale to produce a literal "before" measurement — at 20,000+
+ * this scale to produce a literal "before" measurement, at 20,000+
  * candidates the original code is credibly estimated (see
  * docs/scale-and-sources.md §1.1.2's own worked table) to take tens of
  * seconds to minutes PER REQUEST while holding a connection the whole
@@ -41,9 +41,9 @@
  * comes from a smaller, still-real, still-measured comparison (see the
  * "N+1 elimination, measured directly" test below, which calls the
  * UNCHANGED single-pair `passesMutualFilters`/`isVisibleInDiscovery`
- * functions in a loop — i.e. literally the old per-candidate pattern,
+ * functions in a loop, i.e. literally the old per-candidate pattern,
  * still present and used elsewhere in this codebase for single-candidate
- * call sites — against the same seeded data the new batched path uses).
+ * call sites, against the same seeded data the new batched path uses).
  */
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
@@ -78,14 +78,14 @@ let pool: pg.Pool;
 let ctx: Ctx;
 let seededUsers: SeededUser[] = [];
 
-/** Wraps a real pg.Pool's `query` to count calls — the "queries per page" instrument the task brief asks for. */
+/** Wraps a real pg.Pool's `query` to count calls, the "queries per page" instrument the task brief asks for. */
 function countingDb(realPool: pg.Pool): { db: DbClient; count: () => number; reset: () => void } {
   let n = 0;
   return {
     db: {
       query: ((...args: unknown[]) => {
         n++;
-        // @ts-expect-error — forwarding pg.Pool#query's overloaded signature verbatim.
+        // @ts-expect-error, forwarding pg.Pool#query's overloaded signature verbatim.
         return realPool.query(...args);
       }) as DbClient['query'],
     },
@@ -136,7 +136,7 @@ function actorFor(userId: string): Ctx {
   return { ...ctx, actor: { type: 'user', userId, trustLevel: 'standard' } };
 }
 
-/** A handful of representative viewers: several from the deliberately-oversized New York population, one from each smaller city — proves the query/latency story holds regardless of local pool size, not just for one lucky sample. */
+/** A handful of representative viewers: several from the deliberately-oversized New York population, one from each smaller city, proves the query/latency story holds regardless of local pool size, not just for one lucky sample. */
 function sampleViewers(): SeededUser[] {
   const byCity = new Map<string, SeededUser[]>();
   for (const u of seededUsers) {
@@ -154,15 +154,15 @@ function sampleViewers(): SeededUser[] {
 
 // A generous but MEANINGFUL ceiling: comfortably above the actual
 // measured cost (see console output / this build's report for the real
-// number), but nowhere close to "grows with pool size" — the whole point
+// number), but nowhere close to "grows with pool size", the whole point
 // is that this number is the same whether the pool has 50 or 12,000
 // candidates in it. If a future change makes one query per candidate
 // again, this fails almost immediately at this dataset's scale, long
 // before anyone notices from latency alone.
 const MAX_QUERIES_PER_DISCOVERY_PAGE = 30;
 // The dashboard costs roughly 2x a discovery page's query budget (X and Y
-// each run their own geo-bounded batched scan, concurrently with Z —
-// which IS a full discovery-pool computation) — see the measured numbers
+// each run their own geo-bounded batched scan, concurrently with Z,
+// which IS a full discovery-pool computation), see the measured numbers
 // in this build's report.
 const MAX_QUERIES_PER_DASHBOARD_CALL = 40;
 
@@ -179,7 +179,7 @@ test(
     for (const viewer of viewers) {
       const viewerCtx = { ...actorFor(viewer.id), db };
       // Warm-up call: primes ConfigService's per-key cache (config rarely
-      // changes in production; steady-state is the fair comparison — see
+      // changes in production; steady-state is the fair comparison, see
       // the "cold" call measured separately below for the first-ever-call cost).
       await getDiscoveryGrid(viewerCtx, { limit: 20 });
 
@@ -192,7 +192,7 @@ test(
       results.push({ city: viewer.city.name, queries, ms, items: page.items.length });
       assert.ok(
         queries <= MAX_QUERIES_PER_DISCOVERY_PAGE,
-        `${viewer.city.name} (pool candidate near ${page.items.length} shown): ${queries} queries exceeds the ${MAX_QUERIES_PER_DISCOVERY_PAGE} ceiling — an N+1 has likely been reintroduced`,
+        `${viewer.city.name} (pool candidate near ${page.items.length} shown): ${queries} queries exceeds the ${MAX_QUERIES_PER_DISCOVERY_PAGE} ceiling, an N+1 has likely been reintroduced`,
       );
     }
 
@@ -284,7 +284,7 @@ test(
     );
 
     // New York was seeded with ~50% of all users specifically so its
-    // in-radius population exceeds DASHBOARD_SCAN_CAP — this is a direct
+    // in-radius population exceeds DASHBOARD_SCAN_CAP, this is a direct
     // check that the estimator path is real, not just theoretically
     // reachable, by capturing the `logger.warn` `summarizeSampledCount`
     // fires only when truncated.
@@ -308,7 +308,7 @@ test(
   async () => {
     // A modest, still-tractable pool size for the legacy loop (thousands
     // of sequential round trips at 24,000-candidate scale would make this
-    // one test itself take longer than the rest of the suite combined —
+    // one test itself take longer than the rest of the suite combined,
     // see this file's top-of-file doc for why the literal 24k-scale
     // "before" number is cited from docs/scale-and-sources.md's own
     // estimate instead of re-measured here). This still directly proves

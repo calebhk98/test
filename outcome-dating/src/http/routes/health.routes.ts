@@ -1,8 +1,8 @@
 /**
- * src/http/routes/health.routes.ts — operator-facing startup readiness.
+ * src/http/routes/health.routes.ts, operator-facing startup readiness.
  *
  * `GET /healthz` (registered directly in `src/http/server.ts`, not here)
- * is the public, unauthenticated liveness probe — it must stay a trivial
+ * is the public, unauthenticated liveness probe, it must stay a trivial
  * "is the process up" check for load balancers and must never leak
  * configuration.
  *
@@ -10,14 +10,14 @@
  * production-guard build brief asks for: "a single structured summary
  * ... expose it on an operator-facing endpoint that does not leak secrets
  * and is not reachable by ordinary users." It reuses
- * `buildReadinessReport` — the exact same per-capability report logged at
- * startup (`src/index.ts`) — so an operator can confirm live, without a
+ * `buildReadinessReport`, the exact same per-capability report logged at
+ * startup (`src/index.ts`), so an operator can confirm live, without a
  * redeploy or a log search, whether the running process is on fakes.
  * `admin`-only (`requireRole('admin')`, same pattern as every other
- * `src/http/routes/admin.routes.ts` route) — never reachable by a plain
+ * `src/http/routes/admin.routes.ts` route), never reachable by a plain
  * user or venue-staff token. Every field in `ReadinessEntry` is a
  * provider name, a boolean, or a secret-free status string
- * (`src/config/adapters.ts`'s own doc/tests guarantee this) — nothing
+ * (`src/config/adapters.ts`'s own doc/tests guarantee this), nothing
  * here can leak an actual secret value.
  */
 import type { FastifyInstance } from 'fastify';

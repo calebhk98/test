@@ -1,7 +1,7 @@
 /**
  * Decision 2 unit tests (see docs/conformance.md Open Question OQ-3):
  * `sweepTicketedCompletionWindows` (dateProposal.service.ts) and
- * `resolveDueDisputes` (disputeResolution.service.ts) — what actually
+ * `resolveDueDisputes` (disputeResolution.service.ts), what actually
  * produces `no_show`, and how `disputed` gets resolved, both with zero
  * human input (spec §18.1).
  */
@@ -24,13 +24,13 @@ import {
 } from './testCtxDecisions.js';
 
 let db: TestDb;
-// ONE shared FakeProcessor for the whole file — deliberately, not one per
+// ONE shared FakeProcessor for the whole file, deliberately, not one per
 // pair: `sweepTicketedCompletionWindows`/`resolveDueDisputes` are called
 // with a single `system`-actor Ctx that scans every ticketed/disputed
 // proposal in the database regardless of which test created it, so its
 // `ctx.payments` must be able to resolve EVERY pair's holds, not just one
 // pair's. Sharing one `FakeProcessor` instance (keyed internally by
-// idempotency key / processor intent id, never by pair) is safe — see
+// idempotency key / processor intent id, never by pair) is safe, see
 // `sweepCtx` below.
 let sharedProcessor: FakeProcessor;
 
@@ -116,7 +116,7 @@ async function notificationCount(userId: string, eventType: string): Promise<num
 }
 
 // =====================================================================
-// sweepTicketedCompletionWindows — zero confirmations -> no_show
+// sweepTicketedCompletionWindows, zero confirmations -> no_show
 // =====================================================================
 
 test('sweepTicketedCompletionWindows: zero confirmations after the window closes -> no_show for both parties automatically, no human input', async () => {
@@ -161,7 +161,7 @@ test('sweepTicketedCompletionWindows: with a non-zero no_show_refund_percent, bo
     [dateProposalId],
   );
   // no_show_refund_percent is the percent REFUNDED back to the no-show
-  // party (40% here -> 800 of 2000 refunded, 1200 forfeited) — not fully
+  // party (40% here -> 800 of 2000 refunded, 1200 forfeited), not fully
   // refunded, so status stays 'captured' per payment.service#refundHold's
   // "only 'refunded' once the FULL amount has been refunded" rule.
   assert.equal(rows.length, 2);
@@ -190,13 +190,13 @@ test('sweepTicketedCompletionWindows: the window still being open leaves a ticke
   // Clean up: this file's clock is shared and monotonic across every test
   // below, so a proposal deliberately left 'ticketed' here would otherwise
   // become "due" and get swept up by a LATER test once enough cumulative
-  // time has passed — cancel it now so later tests' own sweep results stay
+  // time has passed, cancel it now so later tests' own sweep results stay
   // scoped to what they themselves created.
   await dateProposalService.cancelDateProposal(pair.proposerCtx, dateProposalId);
 });
 
 // =====================================================================
-// sweepTicketedCompletionWindows — exactly one confirmation -> disputed,
+// sweepTicketedCompletionWindows, exactly one confirmation -> disputed,
 // with nobody ever calling confirmAttendance again after the deadline.
 // =====================================================================
 
@@ -206,7 +206,7 @@ test('sweepTicketedCompletionWindows: exactly one confirmation, window elapsed, 
   db.clock.advanceHours(3); // past scheduledStart, registers a confirmation early
   await dateProposalService.confirmAttendance(pair.proposerCtx, dateProposalId);
 
-  db.clock.advanceHours(76); // total ~79h from creation — well past the 76h deadline; the recipient never confirms and nobody calls confirmAttendance again
+  db.clock.advanceHours(76); // total ~79h from creation, well past the 76h deadline; the recipient never confirms and nobody calls confirmAttendance again
   const result = await dateProposalService.sweepTicketedCompletionWindows(sweepCtx());
   assert.equal(result.autoDisputed, 1);
   assert.equal(result.autoNoShow, 0);
@@ -217,7 +217,7 @@ test('sweepTicketedCompletionWindows: exactly one confirmation, window elapsed, 
   assert.equal(await notificationCount(pair.recipientId, 'date_disputed'), 1);
 
   // Clean up: resolve this dispute now rather than leaving it lingering
-  // 'disputed'+unresolved — this file's clock is shared and monotonic, so
+  // 'disputed'+unresolved, this file's clock is shared and monotonic, so
   // an unresolved dispute here would otherwise become "due" for
   // `resolveDueDisputes` partway through a LATER test and contaminate that
   // test's own aggregate `resolved` count.
@@ -226,7 +226,7 @@ test('sweepTicketedCompletionWindows: exactly one confirmation, window elapsed, 
 });
 
 // =====================================================================
-// resolveDueDisputes — automated dispute resolution, no human step.
+// resolveDueDisputes, automated dispute resolution, no human step.
 // =====================================================================
 
 async function reachDisputedState(pair: Pair, confirmingCtx: ReturnType<typeof makeCtx>): Promise<string> {
@@ -241,7 +241,7 @@ async function reachDisputedState(pair: Pair, confirmingCtx: ReturnType<typeof m
   return dateProposalId;
 }
 
-test('resolveDueDisputes: after dispute_auto_resolve_hours, files an implicit no_show report against the non-confirming party and records a negative trust event — with zero human input', async () => {
+test('resolveDueDisputes: after dispute_auto_resolve_hours, files an implicit no_show report against the non-confirming party and records a negative trust event, with zero human input', async () => {
   const pair = await setupPair();
   const dateProposalId = await reachDisputedState(pair, pair.proposerCtx); // proposer confirmed; recipient did not
 
@@ -253,7 +253,7 @@ test('resolveDueDisputes: after dispute_auto_resolve_hours, files an implicit no
   const result = await disputeResolutionService.resolveDueDisputes(sweepCtx());
   assert.equal(result.resolved, 1);
 
-  // Status stays 'disputed' — terminal per §13.3; only the side effects fired.
+  // Status stays 'disputed', terminal per §13.3; only the side effects fired.
   const proposal = await dateProposalService.getDateProposal(sweepCtx(), dateProposalId);
   assert.equal(proposal.status, 'disputed');
 
@@ -310,17 +310,17 @@ test('end-to-end no-human-input proof: ticketed -> (nobody scans, nobody confirm
   db.clock.advanceHours(3);
   await dateProposalService.confirmAttendance(pair.proposerCtx, dateProposalId); // one participant confirms; this is a normal user action, not an admin one
 
-  db.clock.advanceHours(76); // total ~79h — past the 76h no-scan-window deadline
+  db.clock.advanceHours(76); // total ~79h, past the 76h no-scan-window deadline
   const systemCtx = sweepCtx();
   const sweep = await dateProposalService.sweepTicketedCompletionWindows(systemCtx);
   assert.equal(sweep.autoDisputed, 1);
 
-  db.clock.advanceHours(73); // total ~152h — past the 148h dispute-auto-resolve deadline
+  db.clock.advanceHours(73); // total ~152h, past the 148h dispute-auto-resolve deadline
   const resolution = await disputeResolutionService.resolveDueDisputes(systemCtx);
   assert.equal(resolution.resolved, 1);
 
   // Every state-changing call above used only a `user` actor's own
-  // attendance confirmation and `system`-actor sweeps — never `admin`.
+  // attendance confirmation and `system`-actor sweeps, never `admin`.
   const proposal = await dateProposalService.getDateProposal(systemCtx, dateProposalId);
   assert.equal(proposal.status, 'disputed');
 });

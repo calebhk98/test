@@ -3,11 +3,11 @@
  *
  * `src/config/config.service.ts` (§21) is the real home for tunable
  * business variables, and every key below is written the way that
- * registry's entries are (name, default, one-line reason) — but
+ * registry's entries are (name, default, one-line reason), but
  * `config.service.ts` is out of this build's file-ownership boundary
  * (another agent's file; see the build brief's DO-NOT-TOUCH list), so
  * these live here as documented local constants instead. Each comment
- * names the exact `ConfigKeyRegistry` key it should become — see this
+ * names the exact `ConfigKeyRegistry` key it should become, see this
  * build's report, which lists them for whoever owns that file next.
  */
 
@@ -19,7 +19,7 @@ export const NOTIFICATION_CONFIG = {
      * hours end) rather than DROP it.
      *
      * Justification: a dropped match/message/date-request notification is
-     * gone forever — the user opens the app later to a normal-looking
+     * gone forever, the user opens the app later to a normal-looking
      * inbox with no idea anything happened overnight, which is a worse
      * outcome than a push arriving a few hours late. Holding costs
      * nothing but a few hours of latency and is trivially reversible
@@ -30,7 +30,7 @@ export const NOTIFICATION_CONFIG = {
   },
 
   /**
-   * Event types that bypass quiet hours entirely — delivered the moment
+   * Event types that bypass quiet hours entirely, delivered the moment
    * they're due regardless of the recipient's local time. Deliberately a
    * short, explicit list: only `safety_notice` (spec §20.1's safety
    * channel) is time-critical enough to interrupt a user's night; a match,
@@ -46,14 +46,14 @@ export const NOTIFICATION_CONFIG = {
      * the same conversation before it elapses resets the timer (up to the
      * cap below) instead of firing its own push. This is what turns "5
      * messages in a minute" into one "3 new messages from Alex" push
-     * (build brief) — the single biggest lever on uninstall rate for a
+     * (build brief), the single biggest lever on uninstall rate for a
      * chat-heavy app. Would become
      * `notifications.message_coalesce_debounce_seconds`.
      */
     coalesceDebounceSeconds: 90,
     /**
      * Hard cap on how long a coalescing window may keep postponing
-     * delivery, measured from the FIRST message in the batch — guarantees
+     * delivery, measured from the FIRST message in the batch, guarantees
      * a chatty burst still notifies within 10 minutes rather than being
      * pushed back indefinitely by a steady stream of messages. Would
      * become `notifications.message_coalesce_max_wait_seconds`.
@@ -65,13 +65,13 @@ export const NOTIFICATION_CONFIG = {
    * SMS-only tunables (build correction: optional phone number -> optional,
    * opt-in SMS channel). Every value here exists because SMS is the one
    * transport channel with a real per-message dollar cost, unlike push
-   * (free) or email (effectively free at this product's scale) — see
+   * (free) or email (effectively free at this product's scale), see
    * `outbox.ts`'s SMS eligibility gate and `delivery.ts`'s cap.
    */
   sms: {
     /**
      * `message_received`'s coalescing debounce/max-wait, but for the `sms`
-     * channel specifically — deliberately LONGER than push's
+     * channel specifically, deliberately LONGER than push's
      * `message.coalesceDebounceSeconds`/`coalesceMaxWaitSeconds` above
      * (90s / 600s), so a burst of chat messages batches into fewer, later
      * SMS sends than it does pushes: cost awareness applied directly to
@@ -87,7 +87,7 @@ export const NOTIFICATION_CONFIG = {
      * `delivery.ts` immediately before every SMS send (counts
      * `notification_outbox` rows with `channel = 'sms'`, `status = 'sent'`,
      * `delivered_at` in the last 24h). Once hit, further-due SMS for that
-     * user are marked `dropped_rate_limited` (terminal — never retried;
+     * user are marked `dropped_rate_limited` (terminal, never retried;
      * the user's push/email/in-app copies of the same events are
      * unaffected) rather than silently queuing forever, so one very chatty
      * day for one user can never turn into an unbounded SMS bill. Would
@@ -110,7 +110,7 @@ export const NOTIFICATION_CONFIG = {
   contentPreview: {
     /**
      * Default for "may a push show raw message text on the lock screen".
-     * OFF by default — a lock-screen preview is visible to anyone holding
+     * OFF by default, a lock-screen preview is visible to anyone holding
      * the phone (build brief). Would become
      * `notifications.content_preview_default_enabled`.
      */

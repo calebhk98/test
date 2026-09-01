@@ -9,31 +9,31 @@ import { getEnv } from '../config/env.js';
 import type { Voucher, VoucherQrPayload, VoucherStatus } from '../domain/types.js';
 
 /**
- * voucher.service — the ticket/voucher lifecycle.
+ * voucher.service, the ticket/voucher lifecycle.
  * Spec: §15.1, §15.2, §23.20, §24.9, §25.8 (expiry job).
  *
  * Owning agent: D.
  *
  * INVARIANT (spec §14.4, restated as the ticket-specific rule):
  * `issueVoucher` may only be called by `dateProposal.service.ts` after
- * BOTH `payment_holds` rows for the proposal are `captured` — this module
+ * BOTH `payment_holds` rows for the proposal are `captured`, this module
  * does not itself verify that (it trusts its caller), but the caller MUST,
  * and the two calls belong in the same transaction: a `date_proposals` row
  * must never reach `status = 'ticketed'` without a corresponding
  * `vouchers` row existing, and vice versa. `issueVoucher` is idempotent on
- * `date_proposal_id` (the table's own UNIQUE constraint) — a retried call
+ * `date_proposal_id` (the table's own UNIQUE constraint), a retried call
  * returns the already-issued voucher rather than erroring.
  *
  * QR payload: `sign<VoucherQrPayload>(payload, secret)` from
  * `src/lib/signing.ts` (spec §15.2's "signed JWT or similar signed
  * token"). The payload never includes payment card data, user emails, or
- * chat content (spec §15.2, §4.2) — only ids and an expiry, matching
+ * chat content (spec §15.2, §4.2), only ids and an expiry, matching
  * `VoucherQrPayload` exactly (`voucher_id`, `venue_id`, `date_proposal_id`,
  * `expires_at`).
  *
  * SIGNING SECRET (decision-layer update): vouchers now sign with their own
  * `VOUCHER_QR_SECRET` (added to `src/config/env.ts`), not the shared
- * `AUTH_TOKEN_SECRET` — key separation, so a leaked QR secret (exposed to
+ * `AUTH_TOKEN_SECRET`, key separation, so a leaked QR secret (exposed to
  * venue-side hardware/apps) can never mint an auth token. `voucherSecret()`
  * falls back to `AUTH_TOKEN_SECRET` when `VOUCHER_QR_SECRET` is unset (dev/
  * test default) so nothing needs a new required env var to keep working;
@@ -41,7 +41,7 @@ import type { Voucher, VoucherQrPayload, VoucherStatus } from '../domain/types.j
  *
  * `voucher.expiry_hours_after_date_end` is a `scope: 'snapshot'` config
  * key (spec §21.3/§21.4) with nowhere to persist a JSON snapshot on the
- * `vouchers` row (§23.20 has no `policy_snapshot` column) — the snapshot
+ * `vouchers` row (§23.20 has no `policy_snapshot` column), the snapshot
  * semantics are instead realized by computing `expires_at` once, at
  * `issueVoucher` time, from the *current* config value and baking it into
  * the concrete timestamp column. A later `config.set` changes future
@@ -100,7 +100,7 @@ export async function issueVoucher(ctx: Ctx, dateProposalId: string): Promise<Vo
   if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('That is not a valid id.');
 
   const { rows: existingRows } = await ctx.db.query<VoucherRow>(`SELECT * FROM vouchers WHERE date_proposal_id = $1`, [dateProposalId]);
-  if (existingRows[0]) return mapVoucher(existingRows[0]); // idempotent — already issued
+  if (existingRows[0]) return mapVoucher(existingRows[0]); // idempotent, already issued
 
   const { rows: proposalRows } = await ctx.db.query<{ venue_id: string; scheduled_end: Date }>(
     `SELECT venue_id, scheduled_end FROM date_proposals WHERE id = $1`,
@@ -130,7 +130,7 @@ export async function issueVoucher(ctx: Ctx, dateProposalId: string): Promise<Vo
   );
   if (rows[0]) return mapVoucher(rows[0]);
 
-  // Lost a race against a concurrent issuer for the same proposal — fetch what won.
+  // Lost a race against a concurrent issuer for the same proposal, fetch what won.
   const { rows: winner } = await ctx.db.query<VoucherRow>(`SELECT * FROM vouchers WHERE date_proposal_id = $1`, [dateProposalId]);
   return mapVoucher(winner[0]!);
 }
@@ -152,7 +152,7 @@ export async function getVoucher(ctx: Ctx, voucherId: string): Promise<Voucher> 
   return mapVoucher(rows[0]);
 }
 
-/** `GET /tickets` — every voucher for a proposal the caller participated in. */
+/** `GET /tickets`, every voucher for a proposal the caller participated in. */
 export async function listMyVouchers(ctx: Ctx): Promise<Voucher[]> {
   const { userId } = requireUserActor(ctx);
   const { rows } = await ctx.db.query<VoucherRow>(
@@ -168,7 +168,7 @@ export async function listMyVouchers(ctx: Ctx): Promise<Voucher[]> {
 /**
  * Verifies the HMAC signature and decodes the payload (spec §15.2). Throws
  * `InvalidSignatureError` (from `src/lib/signing.ts`) if the signature is
- * invalid/tampered — does NOT check `status`/expiry itself (that's
+ * invalid/tampered, does NOT check `status`/expiry itself (that's
  * `redemption.service.ts`'s job, since a validly-signed-but-expired/
  * already-redeemed voucher is a different failure mode than a forged one).
  */
@@ -176,13 +176,13 @@ export function verifyQrPayload(ctx: Ctx, compactToken: string): VoucherQrPayloa
   return verify<VoucherQrPayload>(compactToken, voucherSecret());
 }
 
-/** §25.8 job: expire `issued` vouchers past `voucher.expiry_hours_after_date_end` from their proposal's `scheduled_end` — realized here simply as `expires_at < ctx.clock.now()`, since `expires_at` already bakes that policy in at issuance time. */
+/** §25.8 job: expire `issued` vouchers past `voucher.expiry_hours_after_date_end` from their proposal's `scheduled_end`, realized here simply as `expires_at < ctx.clock.now()`, since `expires_at` already bakes that policy in at issuance time. */
 export async function expireDueVouchers(ctx: Ctx): Promise<{ expired: number }> {
   const { rowCount } = await ctx.db.query(`UPDATE vouchers SET status = 'expired' WHERE status = 'issued' AND expires_at < $1`, [ctx.clock.now()]);
   return { expired: rowCount ?? 0 };
 }
 
-/** Cancels an issued (not yet redeemed) voucher — called by `dateProposal.service.ts` on a post-ticketing cancellation/refund (spec §14.7, §15). Throws ConflictError if not currently 'issued'. */
+/** Cancels an issued (not yet redeemed) voucher, called by `dateProposal.service.ts` on a post-ticketing cancellation/refund (spec §14.7, §15). Throws ConflictError if not currently 'issued'. */
 export async function cancelVoucher(ctx: Ctx, voucherId: string): Promise<Voucher> {
   if (!z.string().uuid().safeParse(voucherId).success) throw new ValidationError('That is not a valid id.');
   const { rows } = await ctx.db.query<VoucherRow>(`SELECT * FROM vouchers WHERE id = $1`, [voucherId]);
@@ -201,7 +201,7 @@ export async function cancelVoucher(ctx: Ctx, voucherId: string): Promise<Vouche
 /**
  * Transitions `status: 'issued' -> 'redeemed'` and stamps `redeemed_at`.
  * Only `redemption.service.ts` should call this, immediately after
- * inserting the `venue_redemptions` row, in the same transaction — so this
+ * inserting the `venue_redemptions` row, in the same transaction, so this
  * function deliberately uses `ctx.db` as given and never opens its own
  * transaction. Throws ConflictError if not currently 'issued' (already
  * redeemed/expired/canceled) or if past `expires_at`.

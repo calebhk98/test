@@ -1,5 +1,5 @@
 /**
- * TEST-ONLY helper. Not imported by any production code path — exists
+ * TEST-ONLY helper. Not imported by any production code path, exists
  * here (inside `src/services/notifications/**`, this build's owned
  * directory) rather than under `tests/unit/` because this build's file
  * ownership only extends to three specific new test files there

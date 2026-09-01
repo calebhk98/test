@@ -1,6 +1,6 @@
 /**
  * §15.4 Dispute Auto-Resolution job. Thin wrapper around
- * `disputeResolution.service#resolveDueDisputes` — every `disputed` date
+ * `disputeResolution.service#resolveDueDisputes`, every `disputed` date
  * proposal past `date.dispute_auto_resolve_hours` gets resolved exactly
  * once (idempotent via `date_proposals.dispute_resolved_at`, see that
  * module's own doc). No domain logic lives here.

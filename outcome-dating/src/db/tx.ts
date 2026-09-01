@@ -6,7 +6,7 @@ import { getPool, type DbClient } from './pool.js';
  * throw) and hands it a `DbClient` bound to the checked-out connection.
  * Every multi-statement write path (interest acceptance -> conversation
  * creation, date proposal capture -> ticket issuance, voucher redemption ->
- * conversation established + trust event, etc — see INTERFACES.md
+ * conversation established + trust event, etc, see INTERFACES.md
  * invariants) MUST go through this rather than issuing separate pool
  * queries, or partial failure can leave the DB inconsistent.
  */

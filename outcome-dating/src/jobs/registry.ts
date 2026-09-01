@@ -1,5 +1,5 @@
 /**
- * src/jobs/registry.ts — the full §25 job inventory, keyed by name for
+ * src/jobs/registry.ts, the full §25 job inventory, keyed by name for
  * `jobs:run <name>` (CLI) and `JobScheduler#start` (all of them, on their
  * own interval).
  */

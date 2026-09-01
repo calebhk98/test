@@ -1,5 +1,5 @@
 /**
- * `dispute_auto_resolution` job — thin wrapper around
+ * `dispute_auto_resolution` job, thin wrapper around
  * `disputeResolution.service#resolveDueDisputes` (§15.4). Full behavior
  * (implicit report filing, trust event recording) is covered by
  * `tests/unit/dateOutcomeSweep.test.ts` (owned elsewhere); this file
@@ -41,7 +41,7 @@ async function insertDisputedProposal(): Promise<{ id: string; confirming: strin
     [conversationId, a, b, venueId, scheduledStart, scheduledEnd, POLICY],
   );
   const id = rows[0]!.id;
-  // `a` confirmed attendance, `b` did not — the report targets `b`.
+  // `a` confirmed attendance, `b` did not, the report targets `b`.
   await db.pool.query(`INSERT INTO date_attendance_confirmations (date_proposal_id, user_id) VALUES ($1, $2)`, [id, a]);
   return { id, confirming: a, nonConfirming: b };
 }

@@ -6,7 +6,7 @@
 -- suggestions. `moderation_actions`/`trust_events`/`notifications` are all
 -- the wrong shape (they're not "a question we want to ask the user and are
 -- waiting on an explicit yes/skip response to"). This is genuinely new
--- schema, not a repurposing of an existing table — hence a new migration
+-- schema, not a repurposing of an existing table, hence a new migration
 -- rather than editing 001_init.sql (frozen) or a sibling's 002/006.
 -- Nothing here alters or drops anything from an earlier migration.
 
@@ -14,8 +14,8 @@
 -- behavioral_prompt_suggestions                                      §17
 -- One row per (user, question, trigger) suggestion `detectPatternsForUser`
 -- has surfaced. `status` tracks the explicit response the spec requires
--- (§17 rules 1+3: never assume, always ask explicitly; rule 4: skippable)
--- — there is no path anywhere in `behavioralPrompt.service.ts` that writes
+-- (§17 rules 1+3: never assume, always ask explicitly; rule 4: skippable).
+-- There is no path anywhere in `behavioralPrompt.service.ts` that writes
 -- to `answers` directly; `respondToSuggestion` forwards a non-skip
 -- response to `question.service#putMyAnswers` and only then marks this row
 -- `answered`.
@@ -34,7 +34,7 @@ CREATE TABLE behavioral_prompt_suggestions (
 
 CREATE INDEX idx_behavioral_prompt_suggestions_user ON behavioral_prompt_suggestions (user_id, status);
 
--- At most one *pending* suggestion per (user, question) — re-triggering the
+-- At most one *pending* suggestion per (user, question), re-triggering the
 -- same pattern while one is already awaiting a response is a no-op, not a
 -- duplicate row (a new one may be created again once the existing one is
 -- answered/skipped).

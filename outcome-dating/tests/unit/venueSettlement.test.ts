@@ -1,7 +1,7 @@
 /**
- * venueSettlement.service.ts unit tests (Decision 1 — see docs/conformance.md
+ * venueSettlement.service.ts unit tests (Decision 1, see docs/conformance.md
  * Open Question OQ-8). Drives real `dateProposal.service`/`redemption.service`
- * flows against a real Postgres DB — `conversation`/`notification`/`trust`
+ * flows against a real Postgres DB, `conversation`/`notification`/`trust`
  * are the real, complete implementations (no mocking needed; the parallel
  * build's stub period is over).
  */
@@ -94,7 +94,7 @@ async function redeemViaStaff(pair: Pair, dateProposalId: string): Promise<void>
 }
 
 // =====================================================================
-// Payout math (pure, no DB) — the rounding hazard.
+// Payout math (pure, no DB), the rounding hazard.
 // =====================================================================
 
 test('computeVenuePayout: payout + platform === gross, exactly, even when margin does not divide evenly into cents', () => {
@@ -112,7 +112,7 @@ test('computeVenuePayout: whole-percent case divides exactly', () => {
   assert.equal(result.venuePayoutCents + result.platformCents, 4000);
 });
 
-test('computeVenuePayout: 0% margin pays the venue nothing; 100% pays the venue everything — sum still exact', () => {
+test('computeVenuePayout: 0% margin pays the venue nothing; 100% pays the venue everything, sum still exact', () => {
   assert.deepEqual(venueSettlementService.computeVenuePayout(4000, 0), { venuePayoutCents: 0, platformCents: 4000 });
   assert.deepEqual(venueSettlementService.computeVenuePayout(4000, 100), { venuePayoutCents: 4000, platformCents: 0 });
 });
@@ -188,11 +188,11 @@ test('settleOneDateProposalById: settles a specific eligible proposal on demand,
   assert.equal(first!.venuePayoutCents, 800); // floor(4000 * 20 / 100)
 
   const second = await venueSettlementService.settleOneDateProposalById(ctx, dateProposalId);
-  assert.equal(second, null, 'already settled — idempotent no-op');
+  assert.equal(second, null, 'already settled, idempotent no-op');
 });
 
 // =====================================================================
-// Admin payout view — access control + listing.
+// Admin payout view, access control + listing.
 // =====================================================================
 
 test('listVenueSettlements: admin/system can list; a regular user cannot', async () => {
@@ -212,7 +212,7 @@ test('listVenueSettlements: admin/system can list; a regular user cannot', async
 });
 
 // =====================================================================
-// Negative cases — this is the whole point of §15.4: every one of these
+// Negative cases, this is the whole point of §15.4: every one of these
 // terminal statuses must NOT settle.
 // =====================================================================
 
@@ -267,7 +267,7 @@ test('canceled (inside the full-refund cutoff, post-acceptance) does NOT settle 
 test('refunded (outside the full-refund cutoff, post-acceptance) does NOT settle venue payment', async () => {
   const pair = await setupPair();
   const dateProposalId = await ticketedFlow(pair, 100);
-  db.clock.advanceHours(75); // now 25h before scheduledStart — outside (more than) the 24h cutoff
+  db.clock.advanceHours(75); // now 25h before scheduledStart, outside (more than) the 24h cutoff
   const refunded = await dateProposalService.cancelDateProposal(pair.proposerCtx, dateProposalId);
   assert.equal(refunded.status, 'refunded');
 

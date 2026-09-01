@@ -5,7 +5,7 @@
  * `GET /me/capabilities`, the enriched interests list, the enriched
  * tickets list, and the physical-attribute round trip on
  * `PATCH`/`GET /me/profile`. Driven entirely via `app.inject`, real
- * routes, real services — no mocking. Uses the shared
+ * routes, real services, no mocking. Uses the shared
  * `tests/http/testServer.ts` harness (owned by the API/HTTP agent,
  * imported not edited), same as every other `tests/http/*` suite.
  */
@@ -239,7 +239,7 @@ test('GET /me/capabilities: propose_date becomes allowed once a verified payment
   const capabilities = JSON.parse(res.body) as Record<string, { allowed: boolean }>;
   // completeOnboarding's default account is standard trust, which never
   // needed a payment method to be `allowed` for propose_date in the
-  // first place (the gate only bites Limited trust) — this asserts the
+  // first place (the gate only bites Limited trust), this asserts the
   // route reaches trust.service#can() with a real hasVerifiedPaymentMethod
   // signal either way, never throwing.
   assert.equal(capabilities.propose_date!.allowed, true);
@@ -293,7 +293,7 @@ test('PATCH /me/profile heightCm/weightG/bodyType/unitPreference/distancePrecisi
     url: '/me/profile',
     headers: authHeader(alice.accessToken),
     payload: {
-      // Base required fields — this is alice's first-ever profile write,
+      // Base required fields, this is alice's first-ever profile write,
       // so `profile.service#updateMyProfile` requires the full required
       // set (no prior row to fall back on).
       displayName: 'RoundTripAlice',
@@ -346,7 +346,7 @@ test('PATCH /me/profile heightCm/weightG/bodyType/unitPreference/distancePrecisi
 // Enriched GET /tickets
 // =====================================================================
 
-test('GET /tickets is denormalized with venue name/address and the proposal schedule — no per-ticket venue/date-proposal follow-up call needed', async () => {
+test('GET /tickets is denormalized with venue name/address and the proposal schedule, no per-ticket venue/date-proposal follow-up call needed', async () => {
   const alice = await registerUser(t);
   const bob = await registerUser(t);
   await completeOnboarding(t, alice.accessToken, { displayName: 'TixAlice', gender: 'woman', seeking: 'man' });
@@ -397,7 +397,7 @@ test('GET /tickets is denormalized with venue name/address and the proposal sche
 });
 
 // =====================================================================
-// New-message notification (item 6 — message.service was not previously
+// New-message notification (item 6, message.service was not previously
 // permitted to call the notification layer at all, so message_received
 // never fired; see INTERFACES.md's updated `message ─▶ notification` edge)
 // =====================================================================

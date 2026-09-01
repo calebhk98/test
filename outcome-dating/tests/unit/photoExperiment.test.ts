@@ -53,7 +53,7 @@ async function enablePhotoAbTesting(): Promise<void> {
 }
 
 // =====================================================================
-// computeRecommendation — pure significance-guard logic
+// computeRecommendation, pure significance-guard logic
 // =====================================================================
 
 test('computeRecommendation: requires at least 3 photos', () => {
@@ -67,7 +67,7 @@ test('computeRecommendation: requires at least 3 photos', () => {
 test('computeRecommendation: below the impression floor produces no recommendation, regardless of apparent lift', () => {
   const rec = computeRecommendation([
     { photoId: 'primary', position: 0, impressions: 2, interestsAccepted: 0 },
-    { photoId: 'challenger', position: 1, impressions: 2, interestsAccepted: 1 }, // 50% "rate" on n=2 — noise, not signal
+    { photoId: 'challenger', position: 1, impressions: 2, interestsAccepted: 1 }, // 50% "rate" on n=2, noise, not signal
     { photoId: 'third', position: 2, impressions: 100, interestsAccepted: 10 },
   ]);
   assert.equal(rec, null, 'the primary itself lacks enough impressions to establish a baseline');
@@ -88,7 +88,7 @@ test('computeRecommendation: recommends the photo with the best significant lift
   const rec = computeRecommendation([
     // Primary: high impressions, mediocre accept rate.
     { photoId: 'primary', position: 0, impressions: 200, interestsAccepted: 10 }, // 5%
-    // Huge raw impressions/views but a WORSE rate — must never win on views alone.
+    // Huge raw impressions/views but a WORSE rate, must never win on views alone.
     { photoId: 'high-views-low-rate', position: 1, impressions: 1000, interestsAccepted: 20 }, // 2%
     // Fewer impressions than the "high views" one, but a clearly better rate.
     { photoId: 'best-rate', position: 2, impressions: 150, interestsAccepted: 30 }, // 20%
@@ -169,7 +169,7 @@ test('refreshAllRecommendations: does nothing for a user with the photo_ab_testi
   const userId = await createUser();
   const photos = await uploadApprovedPhotos(userId, 3);
   await seedStats(userId, photos[0]!.id, 200, 10); // primary, 5%
-  await seedStats(userId, photos[1]!.id, 200, 60); // 30% — would clearly win if the flag were on
+  await seedStats(userId, photos[1]!.id, 200, 60); // 30%, would clearly win if the flag were on
   await seedStats(userId, photos[2]!.id, 200, 10);
 
   const systemCtx = buildCtx({ now: NOW });

@@ -19,7 +19,7 @@ import type {
  * dependency of this foundation layer (keeps `npm install`/`tsc` green
  * with zero external service credentials), so every method throws
  * `NotImplementedError`. The JSDoc on each method is the exact contract
- * the real implementation must satisfy — a future agent adding real Stripe
+ * the real implementation must satisfy, a future agent adding real Stripe
  * support should need to change only this file, install `stripe`, and
  * supply `STRIPE_SECRET_KEY`/`STRIPE_WEBHOOK_SECRET` (see .env.example).
  *
@@ -39,7 +39,7 @@ export class StripeProcessor implements PaymentProcessor {
    * { idempotencyKey: params.idempotencyKey })`.
    *
    * `capture_method: 'manual'` is what makes this an authorization hold
-   * rather than an immediate charge (spec §14.2 Step 1/2) — Stripe
+   * rather than an immediate charge (spec §14.2 Step 1/2), Stripe
    * authorizes and holds the funds but does not transfer them until a
    * later `capture`. Map the returned PaymentIntent's `status`:
    * `requires_capture` -> `{ status: 'authorized' }`; anything indicating
@@ -57,7 +57,7 @@ export class StripeProcessor implements PaymentProcessor {
    * Real implementation: `stripe.paymentIntents.capture(params.processorIntentId,
    * params.amountCents !== undefined ? { amount_to_capture: params.amountCents } : {},
    * { idempotencyKey: params.idempotencyKey })` (spec §14.2 Step 3, only
-   * called once both sides' holds are authorized — see
+   * called once both sides' holds are authorized, see
    * `dateProposal.service.ts`). Map `status === 'succeeded'` ->
    * `{ status: 'captured', capturedAmountCents: intent.amount_received }`;
    * a caught error -> `{ status: 'failed', failureReason: error.code }`.
@@ -69,7 +69,7 @@ export class StripeProcessor implements PaymentProcessor {
   /**
    * Real implementation: `stripe.paymentIntents.cancel(params.processorIntentId,
    * { cancellation_reason: 'requested_by_customer' }, { idempotencyKey:
-   * params.idempotencyKey })` — releases an authorized-but-not-captured
+   * params.idempotencyKey })`, releases an authorized-but-not-captured
    * hold (spec §14.5, §14.6). Only valid while the intent is still in a
    * cancelable state (`requires_capture`, `requires_payment_method`,
    * `requires_confirmation`); a caught `StripeInvalidRequestError` for an
@@ -101,6 +101,6 @@ export class StripeProcessor implements PaymentProcessor {
 // `payment_intent.payment_failed` / `charge.refunded` /
 // `charge.dispute.created` events against `payment_holds`/`payment_ledger`
 // by `processor_intent_id`. This lives in the HTTP layer (owned by
-// whichever agent wires up Fastify routes), not in this port — it calls
+// whichever agent wires up Fastify routes), not in this port, it calls
 // back into `ledger.service.ts` and `dateProposal.service.ts`, it doesn't
 // implement `PaymentProcessor`.

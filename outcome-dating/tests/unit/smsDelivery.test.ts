@@ -1,11 +1,11 @@
 /**
  * The SMS notification channel (build correction: an OPTIONAL, verified
- * phone number may back an OPT-IN SMS channel — see auth.service.ts's
+ * phone number may back an OPT-IN SMS channel, see auth.service.ts's
  * module doc and preferences.ts/delivery.ts/outbox.ts in this same
  * directory).
  *
  * Reuses `notifications/testSupport.ts` (this build's own sibling-owned
- * harness — same file `notificationDelivery.test.ts`/`quietHours.test.ts`
+ * harness, same file `notificationDelivery.test.ts`/`quietHours.test.ts`
  * already use, not modified here) for its `odate_notif_<suite>` database
  * bootstrap and `buildCtx`/`insertUser` helpers.
  */
@@ -109,7 +109,7 @@ test('enqueueNotification: creates no sms row at all when the recipient has not 
 test('enqueueNotification: creates no sms row when opted in but the phone is unverified', async () => {
   const user = await insertUser(pool);
   const ctx = buildCtx({ actor: userActor(user) });
-  // Request but never verify — cannot even turn the preference on (previous
+  // Request but never verify, cannot even turn the preference on (previous
   // test), but simulate the defensive case directly at the outbox level too.
   await authService.requestPhoneVerification(ctx, { phoneNumber: '+14155559002', country: 'US' });
 
@@ -132,7 +132,7 @@ test('enqueueNotification: creates an sms row when opted in AND verified, and it
   const ctx = buildCtx({ actor: userActor(user) });
   await giveVerifiedPhone(ctx, user, '+14155559003');
   // account_activity is the one category that defaults BOTH push and email
-  // ON (preferences.ts) — using it here means the "push drops (no device
+  // ON (preferences.ts), using it here means the "push drops (no device
   // token), email + sms both deliver" story below isn't an artifact of a
   // category-specific default, just of the device-token gap.
   await updateMyNotificationPreference(ctx, 'account_activity', { sms: true });
@@ -157,11 +157,11 @@ test('enqueueNotification: creates an sms row when opted in AND verified, and it
   assert.equal(sms.sent[0]!.toE164, '+14155559003');
 });
 
-test('safety_notice can never have an sms row — safety is not a configurable category', async () => {
+test('safety_notice can never have an sms row, safety is not a configurable category', async () => {
   const user = await insertUser(pool);
   const ctx = buildCtx({ actor: userActor(user) });
   await giveVerifiedPhone(ctx, user, '+14155559004');
-  // No category preference exists for 'safety' at all (types.ts) — nothing to opt into.
+  // No category preference exists for 'safety' at all (types.ts), nothing to opt into.
 
   const sysCtx = buildCtx({ actor: { type: 'system', job: 'test' } });
   await enqueueNotification(sysCtx, { userId: user, eventType: 'safety_notice', dedupKey: `safety_notice:${user}`, payload: {} });
@@ -236,13 +236,13 @@ test('message_received: a two-message burst produces 2 separate pushes but only 
     payload: { senderFirstName: 'Alex' },
   });
 
-  // Past push's 90s debounce, well before sms's 300s — push fires, sms doesn't.
+  // Past push's 90s debounce, well before sms's 300s, push fires, sms doesn't.
   clock.advanceMs(91_000);
   let result = await runNotificationDeliveryWorker(sysCtx, { push, email, sms });
   assert.equal(push.sent.length, 1, 'first push fires on its own debounce');
-  assert.equal(sms.sent.length, 0, 'sms is still coalescing — nowhere near its own, longer window yet');
+  assert.equal(sms.sent.length, 0, 'sms is still coalescing, nowhere near its own, longer window yet');
 
-  // Message 2, same conversation — a fresh push row (the first is 'sent',
+  // Message 2, same conversation, a fresh push row (the first is 'sent',
   // terminal) but MERGES into the still-'queued' sms row.
   await enqueueNotification(sysCtx, {
     userId: user,
@@ -255,13 +255,13 @@ test('message_received: a two-message burst produces 2 separate pushes but only 
   clock.advanceMs(91_000); // t = 182s: past push row 2's debounce, still before sms's
   result = await runNotificationDeliveryWorker(sysCtx, { push, email, sms });
   assert.equal(push.sent.length, 2, 'second message gets its own separate push');
-  assert.equal(sms.sent.length, 0, 'sms has still not fired — both messages are still batched into one pending sms');
+  assert.equal(sms.sent.length, 0, 'sms has still not fired, both messages are still batched into one pending sms');
 
   // Jump well past the sms window's own (longer) deadline.
   clock.advanceMs(400_000);
   result = await runNotificationDeliveryWorker(sysCtx, { push, email, sms });
   assert.equal(sms.sent.length, 1, 'both messages finally go out as exactly ONE coalesced sms');
-  assert.equal(push.sent.length, 2, 'push count is unaffected by the sms window — still 2, never merged down');
+  assert.equal(push.sent.length, 2, 'push count is unaffected by the sms window, still 2, never merged down');
   void result;
 });
 
@@ -277,7 +277,7 @@ test('per-user daily sms cap: further SMS for the same user are dropped_rate_lim
   await updateMyNotificationPreference(userCtx, 'account_activity', { sms: true });
 
   // Seed the cap directly (avoids the test needing to actually run
-  // maxPerUserPerDay real deliveries) — `NOTIFICATION_CONFIG.sms.maxPerUserPerDay`
+  // maxPerUserPerDay real deliveries), `NOTIFICATION_CONFIG.sms.maxPerUserPerDay`
   // rows already 'sent' with delivered_at inside the trailing 24h window
   // `deliverSms` checks.
   const { maxPerUserPerDay } = NOTIFICATION_CONFIG.sms;
@@ -341,7 +341,7 @@ test('sms for message_received never carries preview text unless the recipient o
   const sms1 = new FakeSmsSender();
   await runNotificationDeliveryWorker(sysCtx, { push: push1, email: email1, sms: sms1 });
   assert.equal(sms1.sent.length, 1);
-  assert.equal('previewText' in sms1.sent[0]!.data, false, 'content preview defaults OFF — no message text in the sms payload');
+  assert.equal('previewText' in sms1.sent[0]!.data, false, 'content preview defaults OFF, no message text in the sms payload');
 
   // Opt into previews, then repeat with a fresh event.
   const { updateMyContentPreviewSetting } = await import('../../src/services/notifications/preferences.js');
@@ -365,7 +365,7 @@ test('sms for message_received never carries preview text unless the recipient o
 
 // =====================================================================
 // Privacy-safe payload discipline applies to sms-eligible events too
-// (shared code path — smoke-tested here for confidence).
+// (shared code path, smoke-tested here for confidence).
 // =====================================================================
 
 test('a forbidden payload key (e.g. raw prose, reporter identity) is rejected regardless of sms eligibility', async () => {

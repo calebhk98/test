@@ -3,7 +3,7 @@
  * redemption surface (`/venue/*`).
  *
  * ROLE BOUNDARY: `/tickets*` is `requireRole('user')`; `/venue/*` is
- * `requireRole('venue_staff')` — a regular user hitting `/venue/redeem`
+ * `requireRole('venue_staff')`, a regular user hitting `/venue/redeem`
  * gets 403 (C-4.RBAC.2), and every `/venue/*` response is built through
  * `src/http/serializers/venue.ts`'s explicit allowlist (never a bare
  * `Voucher`/`DateProposal` spread), which is the serializer-level half of
@@ -26,7 +26,7 @@ export function registerTicketRoutes(app: FastifyInstance, deps: AppDeps): void 
   const venueAuth = { preHandler: [authenticate(deps), requireRole('venue_staff')] };
 
   // Denormalized with venue name/address + the proposal's schedule
-  // (docs/ux-api-review.md §10 — the wallet screen otherwise needs a
+  // (docs/ux-api-review.md §10, the wallet screen otherwise needs a
   // per-ticket venue lookup plus a per-ticket date-proposal lookup just
   // to render "Coffee at The Daily Grind, Sat 6:00 PM").
   app.get('/tickets', userAuth, async (req, reply) => {

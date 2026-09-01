@@ -1,12 +1,12 @@
 /**
- * src/http/errors.ts — maps the typed `AppError` hierarchy
+ * src/http/errors.ts, maps the typed `AppError` hierarchy
  * (`src/lib/errors.ts`, frozen/shared infra) plus raw Zod errors onto a
  * single, stable HTTP error envelope:
  *
  *   { "error": { "code": "validation_error", "message": "...", "details"?: ... } }
  *
  * Every route handler in this codebase is expected to let a thrown
- * `AppError` (or `ZodError`) propagate — Fastify's `setErrorHandler` (wired
+ * `AppError` (or `ZodError`) propagate, Fastify's `setErrorHandler` (wired
  * in `server.ts`) is the ONE place that translates it into a response, so
  * every route gets the same envelope/status mapping for free rather than
  * each handler hand-rolling try/catch.
@@ -46,14 +46,14 @@ export function fastifyErrorHandler(err: unknown, req: FastifyRequest, reply: Fa
 
   if (err instanceof NotImplementedError) {
     // A service this build depends on hasn't landed its body yet (payments
-    // agent may still be in flight — see task brief). Surface as 503 with a
+    // agent may still be in flight, see task brief). Surface as 503 with a
     // stable code rather than a raw 500/stack trace.
     reply.status(503).send(envelope('not_implemented', err.message));
     return;
   }
 
   // Fastify's own request-level errors (malformed JSON body, etc.) carry a
-  // `statusCode`/`code` — honor them if present rather than collapsing
+  // `statusCode`/`code`, honor them if present rather than collapsing
   // everything to 500.
   const maybeFastifyErr = err as { statusCode?: number; code?: string; message?: string };
   if (typeof maybeFastifyErr.statusCode === 'number' && maybeFastifyErr.statusCode >= 400 && maybeFastifyErr.statusCode < 500) {

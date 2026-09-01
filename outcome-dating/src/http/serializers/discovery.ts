@@ -1,11 +1,11 @@
 /**
- * src/http/serializers/discovery.ts — the discovery grid card.
+ * src/http/serializers/discovery.ts, the discovery grid card.
  *
  * Explicit allowlist enforcing spec §10.1's negative list at the wire
  * boundary: no `likeCount`, no `popularityScore`, no `boosted`/badge field,
  * no exact coordinates (only the already-fuzzed `approximateDistanceKm`),
  * and at most one `sharedInterestTag` (never an array). `discovery.service`'s
- * `DiscoveryCandidate` type structurally has none of these fields today —
+ * `DiscoveryCandidate` type structurally has none of these fields today,
  * this serializer is the last-line-of-defence guarantee that stays true
  * even if that type ever grows one by accident.
  */
@@ -34,7 +34,7 @@ export function serializeDiscoveryCandidate(c: DiscoveryCandidate): DiscoveryCar
     // spec doesn't require exposing the raw number to the viewer),
     // profileCompleteness (internal ranking signal), likeCount/popularity/
     // boosted (do not exist on the domain type and must never be added
-    // here either — spec §10.1, §1 rule 14/15).
+    // here either, spec §10.1, §1 rule 14/15).
   };
 }
 

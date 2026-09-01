@@ -75,7 +75,7 @@ export class PaymentError extends AppError {
 /**
  * Marks a stub body in the foundation layer. Parallel agents replace the
  * body that throws this; the signature and JSDoc above it are the contract.
- * Deliberately NOT an AppError subclass — it must never be caught and
+ * Deliberately NOT an AppError subclass, it must never be caught and
  * turned into a graceful API response. It should crash loudly in dev/test
  * so an unimplemented path is never mistaken for a working one.
  */

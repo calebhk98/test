@@ -1,5 +1,5 @@
 /**
- * §25.6 Trust Score Recalculation job — catches up `users.trust_score`/
+ * §25.6 Trust Score Recalculation job, catches up `users.trust_score`/
  * `trust_level` from `trust_events` history for users whose triggering
  * service call only appended an event without recalculating synchronously
  * (see the job file's own doc for which paths those are). Idempotent
@@ -21,7 +21,7 @@ after(async () => {
   await teardownTestDb(db);
 });
 
-// The job scans every user with any recorded trust_events row — reset
+// The job scans every user with any recorded trust_events row, reset
 // between tests so an earlier test's fixture user doesn't inflate a later
 // test's `usersRecalculated` aggregate count.
 afterEach(async () => {

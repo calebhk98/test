@@ -1,13 +1,13 @@
 /**
- * src/http/auth.ts — the auth middleware: turns a bearer access token into
+ * src/http/auth.ts, the auth middleware: turns a bearer access token into
  * a fully-formed `Ctx` (with the correct `Actor`), and the role guards that
  * enforce the three-role boundary (§4) on top of it.
  *
  * ROLE RESOLUTION: `auth.service#login`/`register` (owned by Agent A, not
- * modified here) issue tokens for `users` rows only — there is no
+ * modified here) issue tokens for `users` rows only, there is no
  * "role"-flavored token. A token's bearer's role is instead resolved fresh
  * on every request by checking the `admin_users`/`venue_staff` tables
- * (§4.2/§4.3 — "venue staff are users with elevated, venue-scoped access"),
+ * (§4.2/§4.3, "venue staff are users with elevated, venue-scoped access"),
  * admin taking precedence over venue-staff over plain user. This is
  * deliberate: it means revoking an admin's admin-ness (setting
  * `admin_users.active = false`) takes effect on their very next request,
@@ -28,7 +28,7 @@ declare module 'fastify' {
   }
 }
 
-/** Resolves the `Actor` for an authenticated `userId` — see module doc for precedence. */
+/** Resolves the `Actor` for an authenticated `userId`, see module doc for precedence. */
 export async function resolveActor(deps: AppDeps, userId: string): Promise<Actor> {
   const { rows: adminRows } = await deps.pool.query<{ id: string }>(
     `SELECT id FROM admin_users WHERE user_id = $1 AND active = true LIMIT 1`,
@@ -36,7 +36,7 @@ export async function resolveActor(deps: AppDeps, userId: string): Promise<Actor
   );
   if (adminRows[0]) {
     // `adminId` is deliberately the underlying `users.id`, not
-    // `admin_users.id` — `admin_audit_log.admin_user_id` (schema in
+    // `admin_users.id`, `admin_audit_log.admin_user_id` (schema in
     // db/migrations/001_init.sql) is a FK to `users(id)`, so this is the
     // value every audit-log write (`src/http/audit.ts`) needs.
     return { type: 'admin', adminId: userId };
@@ -82,7 +82,7 @@ export function authenticate(deps: AppDeps) {
 export function requireRole(...allowed: Array<Actor['type']>) {
   return async (req: FastifyRequest, _reply: FastifyReply): Promise<void> => {
     if (!req.ctx) {
-      // Programmer error (route wired requireRole without authenticate) —
+      // Programmer error (route wired requireRole without authenticate),
       // fail safe as unauthorized rather than silently allowing through.
       throw new UnauthorizedError('Not authenticated.');
     }

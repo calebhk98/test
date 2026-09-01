@@ -12,7 +12,7 @@ import type { QuestionAnswerState, QuestionDefinition } from './types.js';
  * schema for now. `scoreQuestionContribution` below is the pure function
  * a later agent should call ONCE PER QUESTION, per candidate pair, to
  * replace that computation for questions living in the new typed bank
- * (`question_bank` / `user_question_answers` — db/migrations/008_questions.sql).
+ * (`question_bank` / `user_question_answers`, db/migrations/008_questions.sql).
  * It performs no I/O and imports nothing from `src/services/**`.
  *
  * EXACT CALL SIGNATURE:
@@ -24,7 +24,7 @@ import type { QuestionAnswerState, QuestionDefinition } from './types.js';
  *   ): QuestionScoreContribution
  *
  * `QuestionAnswerState` bundles status + selfValue + preferenceValue +
- * importance for one user on one question (see types.ts) — "two users'
+ * importance for one user on one question (see types.ts), "two users'
  * typed answers + importance + question definition" from the brief is
  * exactly `(question, userA, userB)`.
  *
@@ -50,7 +50,7 @@ export type ExclusionReason =
   | 'deal_breaker';
 
 export interface QuestionScoreContribution {
-  /** True iff this question contributes nothing to a weighted score — see `reason`. */
+  /** True iff this question contributes nothing to a weighted score, see `reason`. */
   excluded: boolean;
   /** Why excluded; undefined when `excluded` is false. */
   reason?: ExclusionReason;
@@ -70,16 +70,16 @@ function excluded(reason: ExclusionReason): QuestionScoreContribution {
  * Exclusion rules (in order):
  *   1. An inactive question never contributes (`reason: 'not_active'`).
  *   2. Any of the three non-answer states (`unanswered`, `skipped`,
- *      `prefer_not_to_say`) on EITHER side excludes the question — "None
+ *      `prefer_not_to_say`) on EITHER side excludes the question, "None
  *      of the three contribute to scoring... This applies to ALL
  *      questions" (task brief). `prefer_not_to_say` is neutral for
  *      SCORING specifically; it can still fail another user's
- *      deal-breaker filter (see dealBreakers.ts) — that's a separate,
+ *      deal-breaker filter (see dealBreakers.ts), that's a separate,
  *      upstream mechanism, not something this function does.
- *   3. `irrelevant` importance on either side excludes the question — "I
+ *   3. `irrelevant` importance on either side excludes the question, "I
  *      don't care" must not contribute weight or satisfaction, full stop.
  *   4. `deal_breaker` importance on either side excludes the question
- *      from WEIGHTED SCORING — it is enforced as a hard filter instead
+ *      from WEIGHTED SCORING, it is enforced as a hard filter instead
  *      (see dealBreakers.ts), never as a very-heavy scoring term. This is
  *      what keeps "filters are strictly enforced and never overridden by
  *      scoring" true: scoring simply never sees a deal breaker.
@@ -98,7 +98,7 @@ function excluded(reason: ExclusionReason): QuestionScoreContribution {
  *   )
  *
  * so `scoreQuestionContribution(q, a, b)` and `scoreQuestionContribution(q, b, a)`
- * always produce identical `satisfaction`/`weight` — verified directly in
+ * always produce identical `satisfaction`/`weight`, verified directly in
  * tests/unit/questionScoring.test.ts.
  */
 export function scoreQuestionContribution(
@@ -137,11 +137,11 @@ export function scoreQuestionContribution(
 }
 
 /**
- * Convenience accumulator over a whole question set — sums
+ * Convenience accumulator over a whole question set, sums
  * `scoreQuestionContribution` the same way `computePairScore` sums its
  * per-question terms, so a caller (or test) can get a single 0-1 score
  * without hand-rolling the reduction. `compatibility.service.ts` is free
- * to inline this shape itself instead of importing it — it's provided so
+ * to inline this shape itself instead of importing it, it's provided so
  * the accumulation logic itself is pure-tested here rather than only ever
  * exercised inline inside someone else's file.
  */

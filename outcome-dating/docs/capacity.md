@@ -104,24 +104,25 @@ sizes are separate btree entries, not shared with heap.
 | `profiles` | 8.0B (1:1) | ~300B | 2.4TB | +0.6TB | ~3.0TB |
 | `messages` | 400B (50/user, assumed) | ~200B | 80TB | +40TB | ~120TB |
 | `interests` | 160B (20/user, assumed) | ~200B | 32TB | +24TB | ~56TB |
-| `discovery_events` | 117T (20/day x 2yr retention, assumed) | ~110B | 12.8PB | +9.3PB | ~22PB |
+| `discovery_events` | 4.8T (20/day x 30-day retention) | ~110B | ~526TB | +~382TB | ~0.9PB |
 | `compatibility_scores` (if ever fully materialized) | 6.4x10^19 (n^2) | ~72B+90B idx | n/a | n/a | **~10 zettabytes: physically impossible at any hardware budget** |
 
 `compatibility_scores` is not a bigger-hardware problem, it's an arithmetic
 one: doubling users quadruples pairs. This is why the nightly full-refresh job
 must stay geo-scoped/on-demand (already the direction of this build's
 discovery fix) and never materialize globally, confirmed independently by
-`docs/scale-and-sources.md` §1.2.1's own (smaller-scale) estimate, which this
-number is consistent with (their ~175TB at 1M users x 64,000,000 population²
-scaling factor lands in the same zettabyte range).
+`docs/scale-and-sources.md`'s own (smaller-scale) estimate, which this number
+is consistent with.
 
-`discovery_events` (impression logging, no retention policy in the schema
-today) is the single largest realistic table, bigger than every other table
-combined by 2-3 orders of magnitude, because it is one row per CARD SHOWN,
-not per user. This is the "impression count" the task brief specifically
-flagged, and unlike `messages`/`interests` it has no natural per-user ceiling
-without an explicit retention/partitioning policy (`docs/scale-and-sources.md`
-§1.5 already names it as needing time-based partitioning).
+`discovery_events` (impression logging) is still the largest realistic table
+by a wide margin, because it is one row per card shown, not per user. It is
+**not**, however, unbounded: `docs/retention.md`'s `discovery_events` policy
+deletes rows after 30 days (`src/services/retention.service.ts`, run hourly
+by `retention_sweep`), so this table's size is bounded by active population x
+events/day x 30 days, not by total-ever-registered users or platform
+lifetime. That is what keeps the estimate above at under a petabyte instead
+of the double-digit-petabyte figure an earlier pass of this document
+computed by assuming a 2-year, unbounded accumulation.
 
 **Write throughput.** A single Postgres primary sustaining even the
 CONSERVATIVE end of `messages` alone (4x10^11 messages / 10-year platform
@@ -145,8 +146,7 @@ independent of app-tier instance count.
    §1.2/§1.6): nightly compatibility full-refresh job (O(n²)), in-process
    rate limiter/config cache once more than one app instance runs.
 2. **Tens of thousands to low millions of users**: single Postgres primary's
-   write budget and 10-connection pool (§4 above); `discovery_events`
-   growing unbounded with no retention policy.
+   write budget and 10-connection pool (§4 above).
 3. **Low millions to tens of millions**: `messages`/`interests`/
    `discovery_events` need time/hash partitioning; read replicas needed per
    region.

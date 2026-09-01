@@ -2,14 +2,14 @@
  * HTTP tests for the post-date check-in routes
  * (`POST`/`GET /date-proposals/:dateProposalId/check-in`,
  * postDateFeedback.service.ts). Driven entirely via `app.inject`, real
- * routes, real services — no mocking. Uses the shared `tests/http/
+ * routes, real services, no mocking. Uses the shared `tests/http/
  * testServer.ts` harness (owned by the API/HTTP agent, imported not
  * edited) for account registration, same as every other `tests/http/*`
  * suite.
  *
  * Date proposals are inserted directly via SQL (bypassing the
  * interest -> conversation -> propose -> accept -> capture flow, which
- * has its own dedicated coverage elsewhere) — this file is about the
+ * has its own dedicated coverage elsewhere), this file is about the
  * check-in routes themselves, not re-proving the payment/escrow state
  * machine.
  */
@@ -103,7 +103,7 @@ test('POST then GET /date-proposals/:id/check-in round-trips the submitter\'s ow
   assert.equal(fetched.id, posted.id);
 });
 
-test('GET /date-proposals/:id/check-in is 404 for a participant who never submitted — one-sided is the normal case, not an error', async () => {
+test('GET /date-proposals/:id/check-in is 404 for a participant who never submitted, one-sided is the normal case, not an error', async () => {
   const alice = await registerUser(t);
   const bob = await registerUser(t);
   const proposal = await insertProposal(alice.userId, bob.userId);
@@ -142,7 +142,7 @@ test('a non-participant cannot submit or read a check-in for a date they were no
     url: `/date-proposals/${proposal.id}/check-in`,
     headers: authHeader(stranger.accessToken),
   });
-  assert.equal(getRes.statusCode, 404); // never checked in themselves either — same 404 as any other non-submitter, not a distinguishing 403
+  assert.equal(getRes.statusCode, 404); // never checked in themselves either, same 404 as any other non-submitter, not a distinguishing 403
 });
 
 test('the four outcome categories all round-trip distinctly over HTTP (never collapsed into one score)', async () => {
@@ -163,7 +163,7 @@ test('the four outcome categories all round-trip distinctly over HTTP (never col
   }
 });
 
-test('a safety flag is never observable by the other party through ANY HTTP surface — not the check-in route, not the date-proposal view, not their own trust events', async () => {
+test('a safety flag is never observable by the other party through ANY HTTP surface, not the check-in route, not the date-proposal view, not their own trust events', async () => {
   const alice = await registerUser(t);
   const bob = await registerUser(t);
   const proposal = await insertProposal(alice.userId, bob.userId);
@@ -179,7 +179,7 @@ test('a safety flag is never observable by the other party through ANY HTTP surf
   assert.equal(posted.safetyFlag, 'incident'); // alice, the submitter, sees her own answer plainly
   assert.equal(posted.safetyDetails, 'a very specific http-only safety detail');
 
-  // Bob (the reported party) cannot fetch a check-in — he has none of his own.
+  // Bob (the reported party) cannot fetch a check-in, he has none of his own.
   const bobCheckIn = await t.app.inject({ method: 'GET', url: `/date-proposals/${proposal.id}/check-in`, headers: authHeader(bob.accessToken) });
   assert.equal(bobCheckIn.statusCode, 404);
   assert.ok(!bobCheckIn.body.includes('very specific http-only safety detail'));
@@ -225,7 +225,7 @@ test('submitting a check-in requires the date to have started, and only accepts 
   assert.equal(wrongStatus.statusCode, 409);
 });
 
-test('submitCheckIn input is Zod-validated over HTTP — an invalid outcome/safetyFlag is rejected with a typed validation error', async () => {
+test('submitCheckIn input is Zod-validated over HTTP, an invalid outcome/safetyFlag is rejected with a typed validation error', async () => {
   const alice = await registerUser(t);
   const bob = await registerUser(t);
   const proposal = await insertProposal(alice.userId, bob.userId);
@@ -244,20 +244,20 @@ test('submitCheckIn input is Zod-validated over HTTP — an invalid outcome/safe
 // INTEGRITY FIX (normalization audit item 1): this test used to be titled
 // "...coexist without clobbering each other's data" and only proved the
 // two routes wrote disjoint columns without contradicting on the fields
-// they shared — it never proved a contradictory row was actually
+// they shared, it never proved a contradictory row was actually
 // impossible, because at the time it wasn't: the legacy route wrote
 // `positive` completely independently of `outcome`, so a user really
 // could end up with a row saying the date went well AND badly at once.
 // That was the exact bug docs/normalization.md item 1 flags. The legacy
 // route no longer has its own writer (see postDateFeedback.service.ts#
-// submitLegacyFeedback and dateProposal.service.ts's retirement note) —
+// submitLegacyFeedback and dateProposal.service.ts's retirement note),
 // both routes now funnel into the SAME upsert, so the two calls below
 // simply overwrite one row in submission order, and `positive` is never
 // written by either call any more. Kept as one test (not renamed away
 // from "legacy" entirely) because it still proves the two routes are
 // interchangeable views onto the one row a caller might hit in either
 // order.
-test('the legacy feedback route and the check-in route write the SAME row through the SAME path — no contradiction is possible in either call order', async () => {
+test('the legacy feedback route and the check-in route write the SAME row through the SAME path, no contradiction is possible in either call order', async () => {
   const alice = await registerUser(t);
   const bob = await registerUser(t);
   const proposal = await insertProposal(alice.userId, bob.userId);
@@ -274,15 +274,15 @@ test('the legacy feedback route and the check-in route write the SAME row throug
     method: 'POST',
     url: `/date-proposals/${proposal.id}/check-in`,
     headers: authHeader(alice.accessToken),
-    payload: { outcome: 'happened_good', safetyFlag: 'none' }, // check-in says "went well" — the exact contradiction this item exists to close
+    payload: { outcome: 'happened_good', safetyFlag: 'none' }, // check-in says "went well", the exact contradiction this item exists to close
   });
   assert.equal(checkInRes.statusCode, 201);
 
   const getRes = await t.app.inject({ method: 'GET', url: `/date-proposals/${proposal.id}/check-in`, headers: authHeader(alice.accessToken) });
   const body = JSON.parse(getRes.body) as { outcome: string };
-  assert.equal(body.outcome, 'happened_good', 'the later call always wins cleanly — one row, one writer, nothing left over from the earlier call to disagree with it');
+  assert.equal(body.outcome, 'happened_good', 'the later call always wins cleanly, one row, one writer, nothing left over from the earlier call to disagree with it');
 
-  // The row itself has no leftover `positive` value to contradict `outcome` — the legacy route never writes that column any more.
+  // The row itself has no leftover `positive` value to contradict `outcome`, the legacy route never writes that column any more.
   const { rows } = await t.pool.query<{ positive: boolean | null; outcome: string }>(
     `SELECT positive, outcome FROM post_date_feedback WHERE date_proposal_id = $1 AND user_id = $2`,
     [proposal.id, alice.userId],

@@ -8,20 +8,20 @@ import * as trust from './trust.service.js';
 import * as notification from './notification.service.js';
 
 /**
- * appeal.service — automated appeals against a moderation restriction.
+ * appeal.service, automated appeals against a moderation restriction.
  * Spec: §18.6, §24.11 (`POST /me/trust/appeal`).
  *
  * Owning agent: E.
  *
  * HARD INVARIANT (spec §18.1/§18.6, "no human moderation means appeals
  * must be automated"): `resolveAppeal`'s decision must come from a
- * verifiable automated signal per `method` — liveness check result,
+ * verifiable automated signal per `method`, liveness check result,
  * payment-method verification status, cooldown elapsed, or existing
- * account signals (spec §18.6 steps 1-4) — never a manual review queue.
+ * account signals (spec §18.6 steps 1-4), never a manual review queue.
  * `submitAppeal` calls `resolveAppeal` SYNCHRONOUSLY before returning, so
  * the DB's transient `status = 'pending'` row (the schema's default,
  * needed because `appeals` has no "instant" status) never escapes this
- * module as a value a caller could observe mid-flight — every `Appeal`
+ * module as a value a caller could observe mid-flight, every `Appeal`
  * this module hands back is already `'approved'` or `'rejected'`.
  *
  * `submitAppeal` enforces `moderation.appeal_cooldown_hours` (config) has
@@ -30,7 +30,7 @@ import * as notification from './notification.service.js';
  * `checkCooldownElapsed`. `checkCooldownElapsed` also considers the most
  * recent PRIOR appeal's resolution time (not just the original
  * moderation action), so a user who submits and fails an appeal must
- * wait out the cooldown again before trying once more — this is the
+ * wait out the cooldown again before trying once more, this is the
  * "repeated failed appeals must not be spammable" rate limit.
  *
  * On approval, `resolveAppeal` restores the account (clears
@@ -47,7 +47,7 @@ export interface SubmitAppealInput {
   /** The moderation_actions row being appealed. Omit to appeal the user's current overall restriction if there's exactly one active one. */
   moderationActionId?: string;
   method: AppealMethod;
-  /** Evidence payload shape depends on `method` — e.g. a liveness-check session id, a payment_method id just verified. */
+  /** Evidence payload shape depends on `method`, e.g. a liveness-check session id, a payment_method id just verified. */
   evidence?: Record<string, unknown>;
 }
 
@@ -116,7 +116,7 @@ export async function submitAppeal(ctx: Ctx, input: SubmitAppealInput): Promise<
   );
   const appeal = rows[0]!;
 
-  // Resolve synchronously — see module doc: no path returns a caller a
+  // Resolve synchronously, see module doc: no path returns a caller a
   // 'pending' appeal that is actually waiting on a human.
   return resolveAppeal(ctx, appeal.id);
 }
@@ -155,7 +155,7 @@ async function evaluateAutomatedSignal(ctx: Ctx, appeal: AppealRow): Promise<boo
 
       // Safety carve-out: never auto-restore via generic account signals
       // if a minor-suspicion report is on file (spec §18.3 "maximum
-      // severity") — that category requires a stronger signal than
+      // severity"), that category requires a stronger signal than
       // "account looks fine", if it's ever to be lifted automatically at
       // all.
       const { rows: minorRows } = await ctx.db.query<{ count: string }>(
@@ -179,7 +179,7 @@ export async function resolveAppeal(ctx: Ctx, appealId: string): Promise<Appeal>
   const existing = rows[0];
   if (!existing) throw new NotFoundError(`Appeal ${appealId} not found.`);
   if (existing.status !== 'pending') {
-    // Already resolved — resolving twice is a no-op, not a re-decision.
+    // Already resolved, resolving twice is a no-op, not a re-decision.
     return rowToAppeal(existing);
   }
 
@@ -208,7 +208,7 @@ export async function resolveAppeal(ctx: Ctx, appealId: string): Promise<Appeal>
     } else if (triggeringAction === 'suspension') {
       await ctx.db.query(`UPDATE users SET suspended = false, shadowbanned = false, status = 'active' WHERE id = $1`, [updated.user_id]);
     }
-    // 'restriction'/'warning' have no dedicated boolean to clear — restored
+    // 'restriction'/'warning' have no dedicated boolean to clear, restored
     // purely via the positive trust event + recalculation below, which is
     // also what lifts the §6.4 Limited-tier restrictions for shadowban/
     // suspension cases once the level itself recovers.
@@ -221,7 +221,7 @@ export async function resolveAppeal(ctx: Ctx, appealId: string): Promise<Appeal>
     });
     await trust.recalculateTrustScore(ctx, updated.user_id);
   }
-  // Rejected: deliberately no trust_event write — a failed appeal is not
+  // Rejected: deliberately no trust_event write, a failed appeal is not
   // itself a new violation (see module doc).
 
   try {

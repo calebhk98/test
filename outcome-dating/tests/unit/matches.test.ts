@@ -1,6 +1,6 @@
 /**
  * matches.service.ts unit tests. Product-owner finding #1: "You cannot see
- * your matches" — a match list, click-through data, ordering, and cursor
+ * your matches", a match list, click-through data, ordering, and cursor
  * pagination including a never-messaged match.
  */
 import { test, before, after } from 'node:test';
@@ -63,7 +63,7 @@ test('a match appears in the list as soon as an interest is accepted', async () 
   assert.ok(item.lastActivityAt);
 
   // Click-through: no raw coordinate anywhere on the row, only the
-  // already-bucketed distance — same guarantee `profile.service` makes.
+  // already-bucketed distance, same guarantee `profile.service` makes.
   assert.equal(typeof item.approximateDistanceKm, 'number');
   assert.ok(!('latitude' in item));
   assert.ok(!('longitude' in item));

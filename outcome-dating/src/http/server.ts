@@ -1,8 +1,8 @@
 /**
- * src/http/server.ts — builds (but does not start) the Fastify application.
+ * src/http/server.ts, builds (but does not start) the Fastify application.
  *
  * `buildServer(deps)` is the single entry point both `src/index.ts`'s
- * `serve` command and every `tests/http/*.test.ts` file use — tests call
+ * `serve` command and every `tests/http/*.test.ts` file use, tests call
  * `app.inject(...)` directly against the returned instance (no real
  * network socket, no port binding), per the task brief.
  *
@@ -48,7 +48,7 @@ export function buildServer(deps: AppDeps): FastifyInstance {
   app.decorateRequest('ctx', undefined);
   // Exposed mainly for `tests/http/*.test.ts`, which register many
   // accounts per file against one shared limiter instance and need to
-  // reset counters between scenarios — production code never calls this.
+  // reset counters between scenarios, production code never calls this.
   app.decorate('rateLimiter', limiter);
   app.setErrorHandler(fastifyErrorHandler);
 

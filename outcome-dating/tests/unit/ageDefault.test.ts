@@ -1,6 +1,6 @@
 /**
  * Unit tests for filter.service.ts's age-range suggested default ("half
- * your age plus seven" — product decision, no § reference).
+ * your age plus seven", product decision, no § reference).
  *
  * Uses its own dedicated Postgres database (`odate_units_ageDefault`, per
  * the build brief: one database per test file, `odate_units_<suite>`
@@ -24,7 +24,7 @@ import { suggestedAgeRange, applySuggestedAgeRangeIfUnset, getMyFilters, updateM
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 // Lowercase: an unquoted CREATE DATABASE identifier is case-folded by
 // Postgres, but the `dbname` connection parameter used to reconnect below
-// is taken literally — a mixed-case name here would create one database
+// is taken literally, a mixed-case name here would create one database
 // and then fail to find it on reconnect.
 const TEST_DB_NAME = 'odate_units_agedefault';
 
@@ -130,7 +130,7 @@ test('applySuggestedAgeRangeIfUnset: writes the suggested age_min/age_max when t
   assert.equal(ageMin!.enabled, true);
 });
 
-test('applySuggestedAgeRangeIfUnset: is a no-op once the user has an age_min/age_max filter (their own value, or a prior suggestion) — never silently reapplied', async () => {
+test('applySuggestedAgeRangeIfUnset: is a no-op once the user has an age_min/age_max filter (their own value, or a prior suggestion), never silently reapplied', async () => {
   const userId = await makeUser(30);
   const userCtx = actorFor(userId);
 
@@ -167,7 +167,7 @@ test('applySuggestedAgeRangeIfUnset: also a no-op after the user edits away ONLY
   assert.equal(applied, null);
 
   const after = await getMyFilters(userCtx);
-  assert.equal(after.find((f) => f.filterKey === 'age_min'), undefined, 'age_min must still not exist — it was never silently added');
+  assert.equal(after.find((f) => f.filterKey === 'age_min'), undefined, 'age_min must still not exist, it was never silently added');
   assert.equal(after.find((f) => f.filterKey === 'age_max')!.value, 99);
 });
 

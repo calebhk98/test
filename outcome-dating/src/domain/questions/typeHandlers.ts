@@ -11,7 +11,7 @@ import type {
 /**
  * Per-type behavior, registered once here and never switched on again
  * elsewhere. This is the extension point: adding a fifth `QuestionType`
- * means adding one `QuestionTypeHandler` entry to `TYPE_HANDLERS` below —
+ * means adding one `QuestionTypeHandler` entry to `TYPE_HANDLERS` below,
  * `scoring.ts` and `selector.ts` call `getTypeHandler(type)` and never
  * hardcode a list of types themselves.
  */
@@ -21,7 +21,7 @@ export interface QuestionTypeHandler {
   type: QuestionType;
   /** Parses/validates a raw self-value (what the user IS/DOES) against a question's type definition. */
   validateSelfValue(def: QuestionTypeDefinition, raw: unknown): ValidationResult;
-  /** Parses/validates a raw preference-value (what the user WANTS) against a question's type definition. Shape differs from selfValue for single_choice (a set, not a scalar — see types.ts). */
+  /** Parses/validates a raw preference-value (what the user WANTS) against a question's type definition. Shape differs from selfValue for single_choice (a set, not a scalar, see types.ts). */
   validatePreferenceValue(def: QuestionTypeDefinition, raw: unknown): ValidationResult;
   /**
    * 0..1: how well does `selfValue` (candidate's own answer) satisfy
@@ -31,7 +31,7 @@ export interface QuestionTypeHandler {
    */
   satisfaction(def: QuestionTypeDefinition, selfValue: unknown, preferenceValue: unknown): number;
   /**
-   * Binary, zero-tolerance acceptability check — used only to derive
+   * Binary, zero-tolerance acceptability check, used only to derive
    * deal-breaker filters (dealBreakers.ts). A deal breaker has no
    * gradation: either `selfValue` is acceptable or the candidate is
    * excluded, so this is intentionally NOT "satisfaction >= threshold".

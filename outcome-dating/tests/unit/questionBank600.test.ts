@@ -1,6 +1,6 @@
 /**
  * Bank-at-scale test: generates 600+ questions directly via SQL (bypassing
- * the admin zod-validation path purely for fixture-generation speed —
+ * the admin zod-validation path purely for fixture-generation speed,
  * production writes always go through adminCreateQuestionBankEntry, which
  * question.service.test.ts already exercises) and proves:
  *   - `listActiveQuestionBank` pages the bank without loading it all at
@@ -53,7 +53,7 @@ before(async () => {
   pool = getPool();
   clock = new ManualClock(new Date('2026-06-01T12:00:00Z'));
 
-  // Bulk-insert 650 scale questions directly (fast fixture setup — the
+  // Bulk-insert 650 scale questions directly (fast fixture setup, the
   // admin zod path is already covered elsewhere).
   const values: string[] = [];
   const params: unknown[] = [];
@@ -139,12 +139,12 @@ test('listActiveQuestionBank: paging through all 650 rows visits each exactly on
   } while (cursor);
 
   assert.equal(seen.size, BANK_SIZE);
-  assert.ok(maxPageMs < 200, `a single page took ${maxPageMs}ms — paging must not be scanning the whole bank per request`);
+  assert.ok(maxPageMs < 200, `a single page took ${maxPageMs}ms, paging must not be scanning the whole bank per request`);
 });
 
 test('selectNextQuestionsForMe: fast for a user with 650 available / 40 answered', async () => {
   const userId = await makeUser();
-  // Answer 40 of them directly (skip the full validation path for speed —
+  // Answer 40 of them directly (skip the full validation path for speed,
   // putMyQuestionAnswer's validation itself is covered in
   // question.service.test.ts).
   const { rows: toAnswer } = await pool.query<{ id: string; slug: string }>(
@@ -206,7 +206,7 @@ test('sparse cross-user scoring at scale: two users overlapping on only ~5 of 65
   ]);
 
   // aggregateQuestionScores keys per-question by QuestionDefinition.id,
-  // but getAnswerStatesForUser keys by slug — bridge via a slug->id map
+  // but getAnswerStatesForUser keys by slug, bridge via a slug->id map
   // (exactly what a real caller scoring a pair would also need to do).
   function reindexBySlugToId(definitions: QuestionDefinition[], states: Map<string, QuestionAnswerState>): Map<string, QuestionAnswerState> {
     const out = new Map<string, QuestionAnswerState>();

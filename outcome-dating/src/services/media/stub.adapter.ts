@@ -4,7 +4,7 @@ import type { ImageModerationPort, PhotoAnalysisInput, PhotoAnalysisResult } fro
 /**
  * No-ML stand-in for `ImageModerationPort` (spec §7.2 "no human moderation
  * assumed" combined with the MVP constraint of no generative/ML models).
- * Behavior is a pure, deterministic function of `imageUrl` — same URL
+ * Behavior is a pure, deterministic function of `imageUrl`, same URL
  * always analyzes the same way, so seed data and tests are reproducible
  * without a real vision model:
  *

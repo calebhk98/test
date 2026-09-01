@@ -12,11 +12,11 @@ import type { DevicePlatform, DeviceTokenRow } from './types.js';
  * Two invariants this file is entirely responsible for:
  *
  *  1. Re-registering the SAME (platform, pushToken) never duplicates a
- *     row — `registerDeviceToken`'s `ON CONFLICT (platform, push_token)`
+ *     row, `registerDeviceToken`'s `ON CONFLICT (platform, push_token)`
  *     upsert (011_notifications.sql) guarantees this at the DB level, not
  *     just in application logic.
  *  2. A token moving to a NEW user (shared/resold device) cuts the
- *     previous owner off immediately — because it's the same physical row
+ *     previous owner off immediately, because it's the same physical row
  *     being reassigned (not a new row alongside an old one), the previous
  *     owner's `listActiveDeviceTokensForUser` simply stops returning it
  *     the instant the new registration commits. There is no separate
@@ -86,7 +86,7 @@ export async function registerDeviceToken(ctx: Ctx, input: RegisterDeviceInput):
   return mapRow(rows[0]!);
 }
 
-/** Disables (but does not delete) a device token — e.g. explicit logout on that device. Only the owning user may do this. */
+/** Disables (but does not delete) a device token, e.g. explicit logout on that device. Only the owning user may do this. */
 export async function unregisterDeviceToken(ctx: Ctx, pushToken: string): Promise<void> {
   const { userId } = requireUserActor(ctx);
   await ctx.db.query(`UPDATE device_tokens SET enabled = false WHERE push_token = $1 AND user_id = $2`, [
@@ -102,7 +102,7 @@ export async function listMyDeviceTokens(ctx: Ctx): Promise<DeviceTokenRow[]> {
 
 /**
  * Internal (system/delivery-worker) read: every enabled device token for
- * `userId`. Not actor-gated to "self" — `delivery.ts` calls this for
+ * `userId`. Not actor-gated to "self", `delivery.ts` calls this for
  * arbitrary recipients as `system`, same trust boundary as
  * `notification.service.ts#deliverPending`.
  */
@@ -126,7 +126,7 @@ export async function listActiveDeviceTokensForUser(
  * Prunes a token the sender reported as invalid/unregistered (build
  * brief: "invalid or unregistered tokens reported back by the sender must
  * be pruned automatically"). Deletes outright rather than merely
- * disabling — an invalid token is permanently dead at the provider, so
+ * disabling, an invalid token is permanently dead at the provider, so
  * there is nothing worth keeping around. System-only; called by
  * `delivery.ts` right after a `PushSender.send` returns
  * `status: 'invalid_token'`.

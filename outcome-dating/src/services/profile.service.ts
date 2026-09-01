@@ -9,47 +9,47 @@ import { resolveDefaultUnitPreference, unitPreferenceSchema, type UnitPreference
 import { approximateDistanceBetween } from '../domain/units/distance.js';
 
 /**
- * profile.service — the user-editable profile (§7.1) and the public view
+ * profile.service, the user-editable profile (§7.1) and the public view
  * of another user's profile.
  * Spec: §7.1, §24.2, §9.4 (completeness), §28.5/§7.1 (location privacy).
  *
  * Owning agent: A.
  *
  * Invariant: `latitude`/`longitude` on `profiles` are NEVER returned by
- * `getPublicProfile` — only `approximateDistanceKm`, computed server-side
+ * `getPublicProfile`, only `approximateDistanceKm`, computed server-side
  * and coarsened (spec §7.1 "Exact location MUST NOT be shown", §28.5).
  * `getMyProfile` (the owner viewing their own data) is the one place true
  * coordinates may be returned. This is enforced structurally, not just by
  * convention: `PublicProfileView` (below) has no coordinate fields at all,
  * and `getPublicProfile` is the only function in this file that returns
- * that type — there is no code path that can accidentally leak a
+ * that type, there is no code path that can accidentally leak a
  * candidate's raw lat/long, because the type it hands back cannot carry one.
  *
  * Beyond the frozen export list (`getMyProfile`, `updateMyProfile`,
  * `getPublicProfile`, `computeProfileCompleteness`), this file adds
- * `deleteMyAccount` and `exportMyData` (§29 privacy requirements — account
+ * `deleteMyAccount` and `exportMyData` (§29 privacy requirements, account
  * deletion + data export). INTERFACES.md's module table doesn't enumerate
  * these for `profile.service`, but nothing in the "may call" graph lists
  * another service importing from `profile.service` (only the reverse:
  * `profile -> discovery`), so adding exports here cannot break a sibling's
  * compile. Flagged in the build report for the API agent to route.
  *
- * PHYSICAL ATTRIBUTES + UNITS (this build; no § reference — product
+ * PHYSICAL ATTRIBUTES + UNITS (this build; no § reference, product
  * decision, `db/migrations/009_units_attributes.sql`). `profiles` gains
- * `height_cm`/`weight_g` (both optional, both canonical — see
+ * `height_cm`/`weight_g` (both optional, both canonical, see
  * `src/domain/units/`, never a display unit), `weight_visible` (whether
- * `weight_g` appears on `PublicProfileView` at all — see that type's own
- * doc below), `body_type` (optional, categorical — `src/domain/units/
+ * `weight_g` appears on `PublicProfileView` at all, see that type's own
+ * doc below), `body_type` (optional, categorical, `src/domain/units/
  * bodyType.ts`), and `unit_preference` (`'metric' | 'imperial'`,
  * presentation-only: changing it NEVER rewrites `height_cm`/`weight_g`,
  * see `tests/unit/profileAttributes.test.ts`). `Profile` (`domain/
  * types.ts`, not owned by this agent) predates these fields, so
- * `getMyProfile`/`updateMyProfile` return `ProfileWithAttributes` below —
- * a strict superset of `Profile` — rather than editing that file; every
+ * `getMyProfile`/`updateMyProfile` return `ProfileWithAttributes` below,
+ * a strict superset of `Profile`, rather than editing that file; every
  * existing caller typed against `Profile` keeps compiling unchanged
  * (structural typing, extra fields on the returned object are not a type
  * error). `http/serializers/profile.ts` (frozen, `src/http/**`) does not
- * yet forward these new fields to the wire — flagged in this build's
+ * yet forward these new fields to the wire, flagged in this build's
  * report for that agent to wire in.
  */
 
@@ -63,15 +63,15 @@ export interface UpdateProfileInput {
   gender?: string;
   seeking?: string;
   relationshipIntention?: string;
-  /** Canonical whole centimetres (see `src/domain/units/height.ts`). Optional — a blank height must not exclude the user from anyone's results unless a viewer's height filter has `excludeIfUnset: true` (see `filter.service.ts`). */
+  /** Canonical whole centimetres (see `src/domain/units/height.ts`). Optional, a blank height must not exclude the user from anyone's results unless a viewer's height filter has `excludeIfUnset: true` (see `filter.service.ts`). */
   heightCm?: number;
   /** Canonical whole grams (see `src/domain/units/weight.ts`). Optional, same non-exclusion default as `heightCm`. */
   weightG?: number;
-  /** Whether `weightG` appears on this user's `PublicProfileView` at all. Defaults to `true` (visible) — see that type's doc for why "hidden" means fully omitted, not sent-and-masked. */
+  /** Whether `weightG` appears on this user's `PublicProfileView` at all. Defaults to `true` (visible), see that type's doc for why "hidden" means fully omitted, not sent-and-masked. */
   weightVisible?: boolean;
-  /** Self-described, categorical — see `src/domain/units/bodyType.ts`. Optional. */
+  /** Self-described, categorical, see `src/domain/units/bodyType.ts`. Optional. */
   bodyType?: BodyType;
-  /** Presentation-only — see this file's module doc "PHYSICAL ATTRIBUTES + UNITS". Never affects a stored measure. */
+  /** Presentation-only, see this file's module doc "PHYSICAL ATTRIBUTES + UNITS". Never affects a stored measure. */
   unitPreference?: UnitPreference;
   /**
    * SAF-2 fix: an optional per-user floor on how coarse the distance
@@ -79,24 +79,24 @@ export interface UpdateProfileInput {
    * platform default (`domain/units/distance.ts#DEFAULT_DISTANCE_BUCKET_KM`).
    * Setting e.g. `25` never lets `approximateDistanceBetween` report this
    * user's distance any more precisely than a 25km bucket, regardless of
-   * the platform default — "a per-user precision floor for anyone who
-   * wants it". Only ever widens (never narrows) the effective bucket —
+   * the platform default, "a per-user precision floor for anyone who
+   * wants it". Only ever widens (never narrows) the effective bucket,
    * see `buildPublicProfileView`/`discovery.service.ts#loadCandidatePool`.
    */
   distancePrecisionFloorKm?: number | null;
   /**
    * Required to be `true` when the patch touches a "critical" field
-   * (currently: gender, seeking, relationshipIntention, age — the fields
+   * (currently: gender, seeking, relationshipIntention, age, the fields
    * that most directly change who the user matches with) on an *existing*
    * profile (spec §30.8 "Show confirmation before saving critical fields").
    * Omitted/false on a critical-field patch throws a `ValidationError`
-   * carrying `details.requiresConfirmation` and the static warning copy —
+   * carrying `details.requiresConfirmation` and the static warning copy,
    * never generated text.
    */
   confirmCriticalChange?: boolean;
 }
 
-/** Richer than a discovery.DiscoveryCandidate card: full bio, prompts, tags, photos — but still location-fuzzed (§7.1). */
+/** Richer than a discovery.DiscoveryCandidate card: full bio, prompts, tags, photos, but still location-fuzzed (§7.1). */
 export interface PublicProfileView {
   userId: string;
   displayName: string;
@@ -105,16 +105,16 @@ export interface PublicProfileView {
   bio: string;
   photoUrls: string[];
   trustLevel: TrustLevel;
-  /** Public + reciprocally-visible tags only (§8.4) — never a tag the viewer doesn't share when it's `private_reciprocal`. */
+  /** Public + reciprocally-visible tags only (§8.4), never a tag the viewer doesn't share when it's `private_reciprocal`. */
   visibleInterestTagNames: string[];
-  /** Canonical whole centimetres, or `null` if unset. Always present when set — height has no per-user hide toggle (only weight does; see `weightG` below). */
+  /** Canonical whole centimetres, or `null` if unset. Always present when set, height has no per-user hide toggle (only weight does; see `weightG` below). */
   heightCm: number | null;
   /** Self-described categorical value, or `null` if unset. */
   bodyType: BodyType | null;
   /**
    * Canonical whole grams. OPTIONAL KEY, not `number | null`: this
    * property is only ever set on the returned object when the profile
-   * owner has `weightVisible: true` AND has actually set a weight —
+   * owner has `weightVisible: true` AND has actually set a weight,
    * `buildPublicProfileView` never assigns it otherwise. This mirrors the
    * `latitude`/`longitude` discipline this file's own module doc
    * documents for location: a hidden weight is not sent-and-hidden, it is
@@ -127,7 +127,7 @@ export interface PublicProfileView {
 
 /**
  * `Profile` (`domain/types.ts`, not owned by this agent) plus this
- * build's physical-attribute/unit fields — see the module doc
+ * build's physical-attribute/unit fields, see the module doc
  * "PHYSICAL ATTRIBUTES + UNITS". A strict superset, never edited in
  * place: `getMyProfile`/`updateMyProfile` return this instead of bare
  * `Profile` so every existing field stays exactly where callers typed
@@ -143,11 +143,11 @@ export interface ProfileWithAttributes extends Profile {
   distancePrecisionFloorKm: number | null;
 }
 
-/** §30.8 static warning copy — never generated text. Mirrors the spec's own example ("This answer may significantly change your matches.") for the profile-field-change case. */
+/** §30.8 static warning copy, never generated text. Mirrors the spec's own example ("This answer may significantly change your matches.") for the profile-field-change case. */
 export const CRITICAL_FIELD_CHANGE_WARNING =
   'This change may significantly change your matches.';
 
-/** Profile fields whose change requires explicit confirmation (§30.8) — they most directly drive matching/filtering. */
+/** Profile fields whose change requires explicit confirmation (§30.8), they most directly drive matching/filtering. */
 const CRITICAL_FIELDS = ['gender', 'seeking', 'relationshipIntention', 'age'] as const;
 type CriticalField = (typeof CRITICAL_FIELDS)[number];
 
@@ -162,7 +162,7 @@ const UpdateProfileSchema = z.object({
   seeking: z.string().trim().min(1).max(50).optional(),
   relationshipIntention: z.string().trim().min(1).max(50).optional(),
   // Bounds mirror db/migrations/009_units_attributes.sql's CHECK
-  // constraints exactly — kept in sync deliberately (see that migration's
+  // constraints exactly, kept in sync deliberately (see that migration's
   // comment) so an out-of-range value is rejected here, at the validation
   // boundary, with a ValidationError, rather than surfacing as an opaque
   // Postgres constraint-violation error.
@@ -173,7 +173,7 @@ const UpdateProfileSchema = z.object({
   unitPreference: unitPreferenceSchema.optional(),
   // 1km-500km: below 1 is meaningless (finer than the platform default
   // ever goes) and above 500 is not "your own city", it's "hide it
-  // entirely" — that's what leaving latitude/longitude unset already does.
+  // entirely", that's what leaving latitude/longitude unset already does.
   distancePrecisionFloorKm: z.number().int().min(1).max(500).nullable().optional(),
   confirmCriticalChange: z.boolean().optional(),
 });
@@ -278,7 +278,7 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
       });
     }
   } else {
-    // First-time profile creation requires the full required field set —
+    // First-time profile creation requires the full required field set,
     // there is no "prior value" to change, so no confirmation applies, but
     // every NOT NULL column needs a value.
     const required: Array<keyof typeof parsed> = ['displayName', 'age', 'gender', 'seeking', 'relationshipIntention'];
@@ -298,7 +298,7 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
     gender: parsed.gender ?? existing?.gender,
     seeking: parsed.seeking ?? existing?.seeking,
     relationshipIntention: parsed.relationshipIntention ?? existing?.relationship_intention,
-    // Optional physical attributes — never required (see UpdateProfileSchema/`required` above), so `existing` may be absent and the field simply stays null.
+    // Optional physical attributes, never required (see UpdateProfileSchema/`required` above), so `existing` may be absent and the field simply stays null.
     heightCm: parsed.heightCm ?? existing?.height_cm ?? null,
     weightG: parsed.weightG ?? existing?.weight_g ?? null,
     weightVisible: parsed.weightVisible ?? existing?.weight_visible ?? true,
@@ -306,7 +306,7 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
     distancePrecisionFloorKm:
       parsed.distancePrecisionFloorKm !== undefined ? parsed.distancePrecisionFloorKm : (existing?.distance_precision_floor_km ?? null),
     // No country/locale field exists on this table to infer from (see
-    // src/domain/units/preference.ts) — resolveDefaultUnitPreference(null)
+    // src/domain/units/preference.ts), resolveDefaultUnitPreference(null)
     // always yields the documented static default (metric) today.
     unitPreference: parsed.unitPreference ?? existing?.unit_preference ?? resolveDefaultUnitPreference(null),
   };
@@ -368,7 +368,7 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
 /**
  * SAF-2 fix: distance is computed by exactly one function
  * (`domain/units/distance.ts#approximateDistanceBetween`), shared with
- * `discovery.service.ts` — this file no longer has its own bucketing
+ * `discovery.service.ts`, this file no longer has its own bucketing
  * implementation. `bucketKm` is the config-driven platform default
  * (`privacy.distance_bucket_km`) widened to at least the TARGET's own
  * opted-in precision floor, never the viewer's (a viewer cannot make
@@ -390,11 +390,11 @@ async function distanceToTarget(
  * Fetch another user's profile as the caller would see it. Throws
  * `NotFoundError` if the target doesn't exist; throws `ForbiddenError` if
  * the caller has blocked or is blocked by the target (mirrors the
- * discovery visibility rule, spec §10.2 rule 9) — viewing a full profile
+ * discovery visibility rule, spec §10.2 rule 9), viewing a full profile
  * page should not be a backdoor around a block.
  *
  * Split into a thin wrapper (`getPublicProfile`, does the block check via
- * `discovery.service` — the sole cross-module call this file makes) and
+ * `discovery.service`, the sole cross-module call this file makes) and
  * `buildPublicProfileView` (everything else: lookups, distance bucketing,
  * tag visibility). The split is deliberate, not just style: it lets this
  * module's own tests exercise every bit of *this* file's logic against a
@@ -417,7 +417,7 @@ export async function getPublicProfile(ctx: Ctx, targetUserId: string): Promise<
   return buildPublicProfileView(ctx, viewerId, targetUserId);
 }
 
-/** See `getPublicProfile`'s doc comment for why this is a separate export. Performs no block check of its own — callers other than `getPublicProfile` are responsible for that. */
+/** See `getPublicProfile`'s doc comment for why this is a separate export. Performs no block check of its own, callers other than `getPublicProfile` are responsible for that. */
 export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetUserId: string): Promise<PublicProfileView> {
   const { rows: userRows } = await ctx.db.query<{ status: string; trust_level: TrustLevel }>(
     `SELECT status, trust_level FROM users WHERE id = $1`,
@@ -475,7 +475,7 @@ export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetU
     bodyType: targetProfile.body_type as BodyType | null,
   };
   // See PublicProfileView's own doc: `weightG` is only ever ASSIGNED when
-  // visible+set — never assigned-then-nulled — so a hidden/unset weight is
+  // visible+set, never assigned-then-nulled, so a hidden/unset weight is
   // structurally absent from `view`, not merely masked.
   if (targetProfile.weight_visible && targetProfile.weight_g != null) {
     view.weightG = targetProfile.weight_g;
@@ -494,13 +494,13 @@ export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetU
  * §25 nightly jobs can recompute without going through the update path.
  *
  * Deterministic weighted formula (documented here as the single source of
- * truth — no hidden magic elsewhere):
+ * truth, no hidden magic elsewhere):
  *
  *   - display name set (non-empty)                          15
  *   - bio is at least 20 characters                          15
  *   - city set                                                10
  *   - core required fields present (age/gender/seeking/       10
- *     relationshipIntention — always true once a profile row
+ *     relationshipIntention, always true once a profile row
  *     exists, since those columns are NOT NULL; kept as an
  *     explicit weight for forward-compatibility if that ever
  *     changes to a staged/partial profile flow)
@@ -530,12 +530,12 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
   if (approvedPhotos >= 3) score += 10;
 
   // ONE typed question bank (question_bank/user_question_answers,
-  // db/migrations/008_questions.sql) — counts only rows with
+  // db/migrations/008_questions.sql), counts only rows with
   // `status = 'answered'`, not every row that merely exists (a `skipped`/
   // `prefer_not_to_say` row is not an "answered compatibility question"
   // per this function's own doc above, whereas the OLD `answers` table
   // this replaced had no status concept and counted every row
-  // unconditionally, including a "prefer not to say" — see this build's
+  // unconditionally, including a "prefer not to say", see this build's
   // report for that behavior-refinement note).
   const { rows: answerCountRows } = await ctx.db.query<{ count: string }>(
     `SELECT count(*)::text AS count FROM user_question_answers WHERE user_id = $1 AND status = 'answered'`,
@@ -553,7 +553,7 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
 }
 
 // =====================================================================
-// Account deletion + data export (§29) — additions beyond the frozen list.
+// Account deletion + data export (§29), additions beyond the frozen list.
 // =====================================================================
 
 /**
@@ -561,8 +561,8 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  *
  * Before this fix, deletion only ever touched `users` (status flip),
  * `profiles` (display fields wiped), `user_photos` (deleted), and
- * `refresh_sessions` (revoked) — the compatibility-question answers table
- * (including every `sensitive:true` question — religion, drug use,
+ * `refresh_sessions` (revoked), the compatibility-question answers table
+ * (including every `sensitive:true` question, religion, drug use,
  * sexuality-adjacent lifestyle), `user_tags` (including
  * `private_reciprocal` tags that can reveal stigmatized interests),
  * `hard_filters`, and full `messages` content all survived indefinitely,
@@ -582,14 +582,14 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  *                           `sensitive:true` question's self/preference
  *                           value (this was `answers`, the OLD question
  *                           bank's table, before the question-system
- *                           cutover retired it — same erasure, repointed
+ *                           cutover retired it, same erasure, repointed
  *                           at the ONE typed bank that replaced it). This
- *                           is the single biggest gap PRIV-1 named — it is
+ *                           is the single biggest gap PRIV-1 named, it is
  *                           erased, not anonymised, because there is no
  *                           legitimate reason to retain it in any form
  *                           once the account is gone.
  *   - user_tags:            HARD-DELETED, every row (public AND
- *                           private_reciprocal — both can reveal a
+ *                           private_reciprocal, both can reveal a
  *                           stigmatized interest, per PRIV-3).
  *   - hard_filters:         HARD-DELETED, every row.
  *   - messages:              the DELETED USER'S OWN message bodies are
@@ -600,7 +600,7 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  *                           left completely untouched.
  *
  * MESSAGE-RETENTION POLICY (the "documented policy" the brief asks for):
- * ERASE CONTENT, KEEP ATTRIBUTION — chosen over the alternative
+ * ERASE CONTENT, KEEP ATTRIBUTION, chosen over the alternative
  * (deleting/hiding the row and leaving a synthetic "deleted user" byline)
  * because deleting `messages` rows or archiving `conversations` out from
  * under the other participant is exactly the "must not corrupt the other
@@ -614,7 +614,7 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  * "who sent this" concept.
  *
  * DELIBERATELY RETAINED (not this function's job, and not safe to erase):
- *   - payment_holds / payment_ledger: financial/ledger records — §14.8
+ *   - payment_holds / payment_ledger: financial/ledger records, §14.8
  *     ledger is explicitly immutable, and payment records are the kind of
  *     "genuinely must be retained" data the brief calls out by name (tax/
  *     dispute/audit obligations survive account deletion in most
@@ -622,11 +622,11 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  *   - reports / moderation_actions / trust_events: the platform's safety
  *     audit trail. Erasing a target's or reporter's history on deletion
  *     would let a suspended/banned user launder their record by
- *     self-deleting and re-registering — directly undermining SAF-1/SAF-5
+ *     self-deleting and re-registering, directly undermining SAF-1/SAF-5
  *     ban-evasion resistance. These rows reference a `user_id` whose
  *     profile is already anonymised by this function, so no display name/
  *     bio/photo/answer survives through them.
- *   - appeals: same reasoning as moderation_actions — part of the
+ *   - appeals: same reasoning as moderation_actions, part of the
  *     automated-moderation audit trail, not personal profile content.
  *   - discovery_events / photo_experiments / compatibility_scores: out of
  *     this fix's scope (PRIV-1, as filed, names `answers`, `messages`,
@@ -637,7 +637,7 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  * IDEMPOTENT / SAFE TO RE-RUN: every statement below is naturally
  * idempotent (UPDATE ... to a fixed value, DELETE FROM ... WHERE user_id
  * = $1 on rows that may already be gone, an UPDATE guarded by `<> $2` so
- * re-running never re-writes what it already wrote) — calling this twice
+ * re-running never re-writes what it already wrote), calling this twice
  * for the same user produces the exact same end state as calling it once,
  * with no error either time. See `tests/unit/deletion.test.ts`.
  */
@@ -670,10 +670,10 @@ export async function deleteMyAccount(ctx: Ctx): Promise<void> {
   // ---- PRIV-1 fix: the previously-untouched tables ----
 
   // Sensitive-category compatibility answers (§8.2/§8.5 "sensitive: true"
-  // questions included) — full erasure, not anonymisation: there is no
+  // questions included), full erasure, not anonymisation: there is no
   // retention justification for these once the account is gone. The ONE
   // typed question bank (question_bank/user_question_answers,
-  // db/migrations/008_questions.sql) — the OLD `answers` table this used
+  // db/migrations/008_questions.sql), the OLD `answers` table this used
   // to target no longer exists (db/migrations/022_drop_old_question_bank.sql).
   await ctx.db.query(`DELETE FROM user_question_answers WHERE user_id = $1`, [userId]);
 
@@ -684,7 +684,7 @@ export async function deleteMyAccount(ctx: Ctx): Promise<void> {
   // This user's own hard-filter preferences.
   await ctx.db.query(`DELETE FROM hard_filters WHERE user_id = $1`, [userId]);
 
-  // This user's own message content, in every conversation — see the
+  // This user's own message content, in every conversation, see the
   // "MESSAGE-RETENTION POLICY" note above for why the row/conversation
   // itself is left in place. `body <> $2` makes the statement a genuine
   // no-op (not just a same-value rewrite) on a second run.

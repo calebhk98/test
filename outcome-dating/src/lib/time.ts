@@ -3,7 +3,7 @@
  * or `new Date()` directly. Pass a `Clock` through `Ctx` (see src/lib/ctx.ts)
  * and services read time from it. Tests use `FixedClock`/`ManualClock` to
  * control expiry (interest expiry, date-proposal expiry, chat decay,
- * voucher expiry — spec §25) deterministically.
+ * voucher expiry, spec §25) deterministically.
  */
 export interface Clock {
   /** Current time. */

@@ -6,7 +6,7 @@ import * as trust from './trust.service.js';
 import * as notification from './notification.service.js';
 
 /**
- * moderation.service — automated moderation scoring and actions.
+ * moderation.service, automated moderation scoring and actions.
  * Spec: §18 (except §18.6 appeals, in `appeal.service.ts`), §24.13,
  * §25.7 (recalculation job).
  *
@@ -15,33 +15,33 @@ import * as notification from './notification.service.js';
  * HARD INVARIANT (spec §18.1, restated as Definition of Done #17): the
  * system assumes ZERO human moderators. Every function here must resolve
  * to an outcome (none/warning/restriction/shadowban/suspension) purely
- * from automated signals — there is no "escalate to a human queue" return
+ * from automated signals, there is no "escalate to a human queue" return
  * value anywhere in this module's contract. `ModerationActionType` itself
  * has no "pending_review"-shaped member, so this is enforced at the type
- * level, not just by convention — see `tests/unit/moderation.test.ts`
+ * level, not just by convention, see `tests/unit/moderation.test.ts`
  * ("the action pipeline reaches a terminal decision with no human input")
  * for a runtime proof of the same thing.
  *
  * ---------------------------------------------------------------------
- * WHERE THE SCORE COMES FROM (coordination note — resolves an ambiguity
+ * WHERE THE SCORE COMES FROM (coordination note, resolves an ambiguity
  * between this module's and report.service.ts's frozen doc comments):
  * ---------------------------------------------------------------------
  * `report.service#submitReport` computes that report's weight via
  * `scoreReport` and pushes it here via `recordAutomatedFlag`
- * (`signalType: 'user_report'`) at submission time — see report.service.ts.
+ * (`signalType: 'user_report'`) at submission time, see report.service.ts.
  * `computeModerationScore` therefore does NOT re-walk `report.listReportsAgainst`
  * and re-sum `scoreReport` itself (that would double-count every report);
  * it purely sums `automated_moderation_flags.weight` for the user, which
  * already reflects every report (via the flag report.service pushed) plus
  * any other automated signal recorded directly through `recordAutomatedFlag`
  * (message velocity, device reputation, no-shows, negative post-date
- * feedback — spec §18.2 — for whichever future caller ends up wired to
+ * feedback, spec §18.2, for whichever future caller ends up wired to
  * observe those; none of `message`/`dateProposal`/`redemption`.service is
  * on the "may call" graph into `moderation` yet, so in the MVP the
  * practical source is reports). This module DOES use the `moderation ─▶
  * report` graph edge, but for a narrower purpose: `applyThresholds` calls
  * `report.assessMinorSuspected` to evaluate the `minor_suspected` category
- * (spec §18.3/§18.5 "maximum severity, immediate protective action") —
+ * (spec §18.3/§18.5 "maximum severity, immediate protective action"),
  * see report.service.ts's "SAF-1 FIX" module doc for the full
  * corroboration model this now applies (a lone, uncorroborated report no
  * longer suspends anyone by itself; see SAF-1 in docs/risk-review.md).
@@ -50,7 +50,7 @@ import * as notification from './notification.service.js';
  *
  * `applyThresholds` reads its cutoffs from config
  * (`moderation.auto_restriction_score`, `moderation.auto_shadowban_score`,
- * `moderation.auto_suspension_score` — all 'live' scope per §21.4, so a
+ * `moderation.auto_suspension_score`, all 'live' scope per §21.4, so a
  * threshold change applies to the next run, not retroactively to past
  * actions) and compares against `computeModerationScore`. `applyThresholds`
  * is this module's only writer of `moderation_actions` and of
@@ -58,32 +58,32 @@ import * as notification from './notification.service.js';
  *
  * RESTRICTION EFFECTS (§18.4 "reduced discovery visibility, fewer
  * outgoing interests, links disabled, extra verification required"): a
- * `restriction` action carries no dedicated boolean column of its own —
+ * `restriction` action carries no dedicated boolean column of its own,
  * `applyThresholds` realizes it by pushing a large negative
  * `trust.service` event and forcing a synchronous `recalculateTrustScore`,
  * which (per §6.4's restriction table, already enforced by
  * `trust.service#can`/`canSendClickableLinks`) is what actually reduces a
  * user's discovery visibility, interest quota, and link clickability once
  * their level drops to Limited. This module doesn't need a parallel
- * "restricted" flag propagated to `interest`/`discovery`.service —
+ * "restricted" flag propagated to `interest`/`discovery`.service,
  * trust level IS the restriction mechanism for those three effects.
  * "Extra verification required" has no consuming code path yet in the
  * MVP; it's recorded in the `moderation_actions.metadata` for
  * traceability and future wiring.
  *
  * `isVisibleInDiscovery` is `discovery.service.ts`'s hard gate for
- * shadowban/suspension (spec §10.2 rules 1-2) — it reads
+ * shadowban/suspension (spec §10.2 rules 1-2), it reads
  * `users.status`/`shadowbanned`, it does not recompute the score. Per
- * spec §30.4, this is deliberately the ONLY thing a shadowban touches —
+ * spec §30.4, this is deliberately the ONLY thing a shadowban touches,
  * an existing conversation is untouched by anything in this file.
  */
 
 // =====================================================================
-// Internal action model (never exposed with weights — `ModerationAction`
+// Internal action model (never exposed with weights, `ModerationAction`
 // from domain/types.ts, the frozen return type, carries `score`/`reason`/
 // `metadata` for admin auditability per spec §18.4/§23.23, which is fine:
 // unlike trust's weighting formula, §18 has no "don't expose the
-// mechanism" requirement — admins explicitly need this for §4.3/§27.)
+// mechanism" requirement, admins explicitly need this for §4.3/§27.)
 // =====================================================================
 
 const ACTION_SEVERITY: Record<ModerationActionType, number> = {
@@ -95,10 +95,10 @@ const ACTION_SEVERITY: Record<ModerationActionType, number> = {
 };
 const SEVERITY_ACTION: ModerationActionType[] = ['none', 'warning', 'restriction', 'shadowban', 'suspension'];
 
-/** Internal-only, not derived from config (no §21.4 key exists for a "warning" cutoff — only restriction/shadowban/suspension are named there) — a fixed fraction of the (configurable) restriction threshold. */
+/** Internal-only, not derived from config (no §21.4 key exists for a "warning" cutoff, only restriction/shadowban/suspension are named there), a fixed fraction of the (configurable) restriction threshold. */
 const WARNING_SCORE_RATIO = 0.5;
 
-/** Trust-score deltas pushed on each action (spec §6.2 "reports" as a negative factor arrives at trust.service exactly here — see trust.service.ts's module doc for why raw non-actioned reports don't move trust on their own). */
+/** Trust-score deltas pushed on each action (spec §6.2 "reports" as a negative factor arrives at trust.service exactly here, see trust.service.ts's module doc for why raw non-actioned reports don't move trust on their own). */
 const TRUST_DELTA_FOR_ACTION: Partial<Record<ModerationActionType, number>> = {
   warning: -5,
   restriction: -20,
@@ -112,9 +112,9 @@ const TRUST_EVENT_TYPE_FOR_ACTION: Partial<Record<ModerationActionType, string>>
   suspension: trust.TRUST_EVENT_TYPES.MODERATION_SUSPENSION,
 };
 
-/** Static reason strings (spec §1/§20 "no generated prose" applies here in spirit too — `moderation_actions.reason` is an audit-log field, not user copy, but it's still a fixed vocabulary, never interpolated free text). */
+/** Static reason strings (spec §1/§20 "no generated prose" applies here in spirit too, `moderation_actions.reason` is an audit-log field, not user copy, but it's still a fixed vocabulary, never interpolated free text). */
 const REASON_MINOR_SUSPECTED = 'minor_suspected_report_immediate_protective_action';
-/** SAF-1 fix: the fast, reversible interim action applied on an uncorroborated (but credible-reporter) minor_suspected signal — see `report.service.ts`'s "SAF-1 FIX" module doc for the full model. Distinct reason from `REASON_MINOR_SUSPECTED` so the audit trail (and any caller reading `moderation_actions.reason`) can tell "this was the fast-but-reversible step" apart from "this was the corroborated, decisive one" at a glance. */
+/** SAF-1 fix: the fast, reversible interim action applied on an uncorroborated (but credible-reporter) minor_suspected signal, see `report.service.ts`'s "SAF-1 FIX" module doc for the full model. Distinct reason from `REASON_MINOR_SUSPECTED` so the audit trail (and any caller reading `moderation_actions.reason`) can tell "this was the fast-but-reversible step" apart from "this was the corroborated, decisive one" at a glance. */
 const REASON_MINOR_SUSPECTED_INTERIM = 'minor_suspected_report_interim_protective_action';
 const REASON_SCORE_THRESHOLD = 'automated_score_threshold_crossed';
 
@@ -133,7 +133,7 @@ const AutomatedFlagSchema = z.object({
   metadata: z.record(z.unknown()).optional(),
 });
 
-/** Ingests one automated signal (not a user report — see `report.service.ts` for those, though report.service is itself the primary caller of this function). Does not itself apply an action; `applyThresholds` (called after, by the same request path or the §25.7 job) does. */
+/** Ingests one automated signal (not a user report, see `report.service.ts` for those, though report.service is itself the primary caller of this function). Does not itself apply an action; `applyThresholds` (called after, by the same request path or the §25.7 job) does. */
 export async function recordAutomatedFlag(ctx: Ctx, input: AutomatedFlagInput): Promise<void> {
   const parsed = AutomatedFlagSchema.parse(input);
   await ctx.db.query(
@@ -143,7 +143,7 @@ export async function recordAutomatedFlag(ctx: Ctx, input: AutomatedFlagInput): 
   );
 }
 
-/** Sums recorded automated flags for `userId` (spec §18.5) — see module doc for why this does not separately re-walk `report.listReportsAgainst`. Pure aggregation — no writes. */
+/** Sums recorded automated flags for `userId` (spec §18.5), see module doc for why this does not separately re-walk `report.listReportsAgainst`. Pure aggregation, no writes. */
 export async function computeModerationScore(ctx: Ctx, userId: string): Promise<number> {
   const { rows } = await ctx.db.query<{ sum: string | null }>(
     'SELECT COALESCE(sum(weight), 0)::text AS sum FROM automated_moderation_flags WHERE user_id = $1',
@@ -219,7 +219,7 @@ export async function applyThresholds(ctx: Ctx, userId: string): Promise<Moderat
       minorSuspected.weightedScore >= minorSuspensionScore
     ) {
       // Corroborated by multiple independent, non-clustered credible
-      // reporters AND the combined weighted score clears the bar — this
+      // reporters AND the combined weighted score clears the bar, this
       // is the "genuine signal still acts decisively and fast" case.
       // Never reachable from a single report, regardless of its
       // reporter's trust level (see module doc: the corroborating-
@@ -228,7 +228,7 @@ export async function applyThresholds(ctx: Ctx, userId: string): Promise<Moderat
       minorSuspectedAction = 'suspension';
       minorSuspectedReason = REASON_MINOR_SUSPECTED;
     } else {
-      // Uncorroborated (or not yet enough independent reporters/score) —
+      // Uncorroborated (or not yet enough independent reporters/score),
       // fast, reversible protective action instead of termination.
       minorSuspectedAction = interimAction;
       minorSuspectedReason = REASON_MINOR_SUSPECTED_INTERIM;
@@ -239,7 +239,7 @@ export async function applyThresholds(ctx: Ctx, userId: string): Promise<Moderat
   // involved at all, deliberately does NOT drive `minorSuspectedAction`
   // here. Unlike every other report category, `minor_suspected` reports
   // are deliberately excluded from `computeModerationScore`'s general
-  // flag pool entirely (see `report.service#submitReport`'s own note) —
+  // flag pool entirely (see `report.service#submitReport`'s own note),
   // this category's escalation is governed exclusively by this
   // corroboration model, never by the ordinary score ladder, so a single
   // report (from any reporter, however trusted) cannot reach suspension
@@ -363,7 +363,7 @@ export async function listModerationActions(ctx: Ctx, userId?: string, params?: 
   return { items: page.map(rowToModerationAction), nextCursor: hasMore ? String(offset + limit) : null };
 }
 
-/** `discovery.service.ts`'s hard gate: false if `userId` is shadowbanned or suspended (spec §10.2 rules 1-2, §18.4). Reads `users` state only — deliberately does not touch `conversations`/`messages` (spec §30.4: an existing conversation must survive a shadowban). */
+/** `discovery.service.ts`'s hard gate: false if `userId` is shadowbanned or suspended (spec §10.2 rules 1-2, §18.4). Reads `users` state only, deliberately does not touch `conversations`/`messages` (spec §30.4: an existing conversation must survive a shadowban). */
 export async function isVisibleInDiscovery(ctx: Ctx, userId: string): Promise<boolean> {
   const { rows } = await ctx.db.query<{ status: string; shadowbanned: boolean; suspended: boolean }>(
     'SELECT status, shadowbanned, suspended FROM users WHERE id = $1',

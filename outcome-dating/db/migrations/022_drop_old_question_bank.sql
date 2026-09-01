@@ -22,18 +22,18 @@
 --
 -- ORDER OF OPERATIONS BELOW:
 --   1. Repoint `behavioral_prompt_suggestions.question_id`'s foreign key
---      from `questions(id)` to `question_bank(id)` — this table
+--      from `questions(id)` to `question_bank(id)`, this table
 --      (003_agent_b.sql, not owned by this build, so altered rather than
 --      edited in place per this codebase's own migration convention) is
 --      the ONE place a foreign key into the old bank survived outside
 --      `answers` itself. `behavioralPrompt.service.ts` and
 --      `postDateFeedback.service.ts` now write a `question_bank` id into
---      this column (see their own CUTOVER notes) — the constraint has to
+--      this column (see their own CUTOVER notes), the constraint has to
 --      point at the table that id space now belongs to.
 --
 --      Every EXISTING row is cleared first. This table only ever holds
 --      SKIPPABLE, ephemeral suggestion prompts (never a stored user
---      answer — see behavioralPrompt.service.ts's own rule 1/rule 3), so
+--      answer, see behavioralPrompt.service.ts's own rule 1/rule 3), so
 --      clearing it loses nothing but a pending nudge the next detection
 --      sweep will happily recreate; keeping a row whose `question_id`
 --      still pointed at the OLD bank's id space would leave it dangling
@@ -43,7 +43,7 @@
 --   2. Clean up `hard_filters` rows keyed on a bare OLD-bank slug.
 --      `filter.service.ts`'s bare-slug resolution path (the read-
 --      compatibility shim 019 and filter.service.ts's own file doc
---      describe at length) has been removed in this build — a bare,
+--      describe at length) has been removed in this build, a bare,
 --      non-`qb:`-prefixed, non-structured filter key now resolves to
 --      NOTHING (see filter.service.ts's updated CANDIDATE ATTRIBUTE
 --      SOURCING doc), rather than erroring. Left in place, such a row
@@ -52,7 +52,7 @@
 --      it outright and documenting the removal here. A structured
 --      attribute key (age_min/age_max/distance_km/gender_preference/
 --      relationship_intention/height_cm/weight_g/body_type) is never
---      touched — those never resolved against the old bank in the first
+--      touched, those never resolved against the old bank in the first
 --      place. This is a DELETE, not a migration to an equivalent `qb:`
 --      key, because there is no reliable equivalence to migrate to: the
 --      old bank's slug space and the typed bank's slug space were never
@@ -62,7 +62,7 @@
 --      user's filter at a DIFFERENT, unintended typed-bank question that
 --      happens to share a slug. A user who had a bare-slug filter set
 --      before this migration will see it disappear from `GET /me/filters`
---      after upgrading, exactly as if they had disabled it — the
+--      after upgrading, exactly as if they had disabled it, the
 --      documented cleanup this migration's header promises.
 --
 --   3. Drop `answers` (has the only other foreign key into `questions`),

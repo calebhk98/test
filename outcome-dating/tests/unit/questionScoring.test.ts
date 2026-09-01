@@ -1,7 +1,7 @@
 /**
  * Pure-function unit tests for src/domain/questions/**.
  *
- * No database — everything under test here is pure (scoring.ts,
+ * No database, everything under test here is pure (scoring.ts,
  * importance.ts, typeHandlers.ts, ladder.ts, selector.ts, dealBreakers.ts,
  * tags.ts). DB-backed tests for the service-layer wrappers live in
  * tests/unit/question.service.test.ts.
@@ -208,7 +208,7 @@ test('importance: documented multiplier ordering irrelevant < slight < important
   assert.ok(IMPORTANCE_MULTIPLIER.irrelevant < IMPORTANCE_MULTIPLIER.slight);
   assert.ok(IMPORTANCE_MULTIPLIER.slight < IMPORTANCE_MULTIPLIER.important);
   assert.ok(IMPORTANCE_MULTIPLIER.important < IMPORTANCE_MULTIPLIER.critical);
-  // deal_breaker is deliberately NOT "higher than critical" — it is off
+  // deal_breaker is deliberately NOT "higher than critical", it is off
   // the scoring axis entirely (see importance.ts doc).
   assert.equal(IMPORTANCE_MULTIPLIER.deal_breaker, 0);
 });
@@ -220,7 +220,7 @@ test('importance: every level has a documented multiplier', () => {
 });
 
 // =====================================================================
-// scoreQuestionContribution — importance semantics
+// scoreQuestionContribution, importance semantics
 // =====================================================================
 
 test('scoreQuestionContribution: irrelevant on either side excludes the question entirely (zero weight, no satisfaction)', () => {
@@ -330,7 +330,7 @@ test('scale: satisfaction is 1 minus normalized distance', () => {
   assert.ok(Math.abs(result.satisfaction! - 0.5) < 1e-9);
 });
 
-test('single_choice: satisfaction is binary — in the acceptable set or not, no midpoint fuzziness', () => {
+test('single_choice: satisfaction is binary, in the acceptable set or not, no midpoint fuzziness', () => {
   const q = singleChoiceQuestion();
   // A has_kids_want_more, wants a partner who also has_kids_want_more or has_kids_no_more.
   const a = answeredState('has_kids_want_more', ['has_kids_want_more', 'has_kids_no_more'], 'critical');
@@ -371,7 +371,7 @@ test('frequency: ordinal distance, concrete anchors, not a bare number', () => {
 });
 
 // =====================================================================
-// aggregateQuestionScores — end-to-end accumulation with sparse overlap
+// aggregateQuestionScores, end-to-end accumulation with sparse overlap
 // =====================================================================
 
 test('aggregateQuestionScores: two users overlapping on only a handful of (600-question-bank-sized) questions', () => {
@@ -463,7 +463,7 @@ test('ladder: don\'t care maps to irrelevant; both deal-breaker ends map to deal
 
   const preferNo = ladderPositionToPreference(def, 1);
   const preferYes = ladderPositionToPreference(def, 3);
-  // "the middle two map to the intermediate importance levels" — not irrelevant, not deal_breaker.
+  // "the middle two map to the intermediate importance levels", not irrelevant, not deal_breaker.
   assert.notEqual(preferNo.importance, 'irrelevant');
   assert.notEqual(preferNo.importance, 'deal_breaker');
   assert.notEqual(preferYes.importance, 'irrelevant');
@@ -538,7 +538,7 @@ test('selector: a skip older than the cooldown becomes eligible again', () => {
   assert.ok(selected.some((s) => s.question.slug === 'bank-0'));
 });
 
-test('selector: category-balances — under-represented categories are prioritized', () => {
+test('selector: category-balances, under-represented categories are prioritized', () => {
   const bank = makeBank(20, ['lifestyle', 'values']);
   const now = new Date('2026-06-01T00:00:00Z');
   // User has answered 5 lifestyle questions and 0 values questions.
@@ -582,11 +582,11 @@ test('selector: performance does not degrade badly as the bank grows (600 -> 600
 
   // 10x the questions should not cost anywhere near 10x quadratic blowup
   // (O(n log n) predicts roughly ~11-12x, not e.g. 100x for O(n^2)).
-  assert.ok(bigMs < smallMs * 40 + 20, `bank 10x larger took ${bigMs}ms vs ${smallMs}ms for the smaller bank — looks superlinear`);
+  assert.ok(bigMs < smallMs * 40 + 20, `bank 10x larger took ${bigMs}ms vs ${smallMs}ms for the smaller bank, looks superlinear`);
 });
 
 // =====================================================================
-// Deal breakers — derivation + evaluation
+// Deal breakers, derivation + evaluation
 // =====================================================================
 
 test('deriveDealBreakerFilterRowsForQuestion: no filter for a non-deal-breaker answer', () => {
@@ -644,7 +644,7 @@ test('evaluateDealBreakers: candidate failing the deal breaker fails, and is nam
   assert.deepEqual(result.failedSlugs, ['kids']);
 });
 
-test('evaluateDealBreakers: prefer_not_to_say on the candidate side still fails the viewer\'s deal breaker — filters win', () => {
+test('evaluateDealBreakers: prefer_not_to_say on the candidate side still fails the viewer\'s deal breaker, filters win', () => {
   const q = singleChoiceQuestion({ slug: 'kids' });
   const viewer = new Map<string, QuestionAnswerState>([['kids', answeredState(null, ['has_kids_want_more'], 'deal_breaker')]]);
   const candidate = new Map<string, QuestionAnswerState>([['kids', preferNotToSayState()]]);

@@ -1,13 +1,13 @@
 /**
  * Shared test setup for Agent E's unit tests (trust/moderation/report/appeal).
- * Not part of INTERFACES.md's frozen list — a local helper the
+ * Not part of INTERFACES.md's frozen list, a local helper the
  * `tests/unit/{trust,moderation,report,appeal}.test.ts` files share to
  * avoid duplicating DB bootstrap. Mirrors the shape of Agent A's
  * `tests/unit/testCtx.ts` (same pattern, kept as a separate file rather
  * than a shared import so each agent's test suite stays independently
  * runnable and neither owns a file outside their own list).
  *
- * Uses a dedicated `odate_agent_e` database (per the build brief — never
+ * Uses a dedicated `odate_agent_e` database (per the build brief, never
  * touches `outcome_dating`/`outcome_dating_test`/other agents' `odate_*`
  * databases) so this agent's tests can run independently of, and
  * concurrently with, sibling agents' own test databases on the same
@@ -29,7 +29,7 @@ import type { TrustLevel } from '../../src/domain/types.js';
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 /** Base name from the build brief ("Use your OWN database odate_agent_e"). Node's test runner runs separate `*.test.ts` files concurrently in separate processes by default, so each of this agent's four suites gets its own `odate_agent_e_<suite>` database (see `setupTestDatabase`'s `suite` param) rather than racing DROP/CREATE DATABASE against each other on one shared name. */
 const AGENT_E_DB_PREFIX = 'odate_agent_e';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item), which a bare `<prefix>_<suite>` name is exposed to whenever more than one agent runs this suite against the shared dev Postgres cluster at once. */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item), which a bare `<prefix>_<suite>` name is exposed to whenever more than one agent runs this suite against the shared dev Postgres cluster at once. */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
@@ -165,9 +165,9 @@ export async function insertConversation(ctx: Ctx, userAId: string, userBId: str
 /**
  * Inserts a `user_auth_events` row carrying a device fingerprint, for
  * anti-brigading tests. `ipAddress` is an additive optional param (SAF-6
- * fix — see report.service.ts's multi-signal cluster correlation, which
+ * fix, see report.service.ts's multi-signal cluster correlation, which
  * treats the server-observed IP as a second, independent signal from the
- * client-supplied fingerprint) — every pre-existing call site that omits
+ * client-supplied fingerprint), every pre-existing call site that omits
  * it is unaffected.
  */
 export async function insertAuthEvent(ctx: Ctx, userId: string, deviceFingerprint: string, ipAddress?: string): Promise<void> {

@@ -1,5 +1,5 @@
 /**
- * tests/perf/seedDiscoveryPerf.ts — benchmark data generator for
+ * tests/perf/seedDiscoveryPerf.ts, benchmark data generator for
  * tests/perf/discovery.perf.test.ts.
  *
  * Builds a "realistic" dataset per the task brief: tens of thousands of
@@ -9,7 +9,7 @@
  * scoring are exercised too, not just the candidate-pool query alone).
  *
  * Every insert here is BULK (`unnest` over arrays, chunked), never a
- * per-row round trip — seeding 20,000+ users one row at a time would
+ * per-row round trip, seeding 20,000+ users one row at a time would
  * itself take longer than the thing this build fixed. This file exists
  * purely to make a benchmark dataset fast; it is not part of the
  * production code path and intentionally does not reuse
@@ -25,7 +25,7 @@ export interface City {
   lon: number;
 }
 
-/** Six real, geographically distant metro areas — far enough apart that a ~160km default search radius around one never reaches another. */
+/** Six real, geographically distant metro areas, far enough apart that a ~160km default search radius around one never reaches another. */
 export const CITIES: City[] = [
   { name: 'New York', lat: 40.7128, lon: -74.006 },
   { name: 'Los Angeles', lat: 34.0522, lon: -118.2437 },
@@ -44,7 +44,7 @@ function pick<T>(rng: () => number, arr: readonly T[]): T {
 }
 
 /**
- * Real cities are not uniformly sized — and the benchmark needs at least
+ * Real cities are not uniformly sized, and the benchmark needs at least
  * one metro dense enough, on its own, to exceed
  * `filter.service#DASHBOARD_SCAN_CAP` (so the reality dashboard's
  * truncation/estimation path is actually exercised, not just its exact
@@ -56,7 +56,7 @@ function pickCity(rng: () => number): City {
   return pick(rng, CITIES.slice(1));
 }
 
-/** Deterministic, seedable PRNG (mulberry32) — reproducible benchmark runs across machines/CI, no external dependency. */
+/** Deterministic, seedable PRNG (mulberry32), reproducible benchmark runs across machines/CI, no external dependency. */
 function mulberry32(seed: number): () => number {
   let a = seed;
   return function () {
@@ -68,7 +68,7 @@ function mulberry32(seed: number): () => number {
   };
 }
 
-/** ~1 degree of latitude/longitude jitter is on the order of 0-110km — spreads users across (and sometimes just past) a single metro's usual search radius, which is the point: some same-city users should still fall outside a viewer's default radius, some cross-city users should not (they never do at these distances, but the jitter still exercises the box's edges honestly). */
+/** ~1 degree of latitude/longitude jitter is on the order of 0-110km, spreads users across (and sometimes just past) a single metro's usual search radius, which is the point: some same-city users should still fall outside a viewer's default radius, some cross-city users should not (they never do at these distances, but the jitter still exercises the box's edges honestly). */
 function jitter(rng: () => number, center: number, maxDegrees: number): number {
   return center + (rng() - 0.5) * 2 * maxDegrees;
 }
@@ -87,7 +87,7 @@ export interface SeedResult {
 
 /**
  * Seeds `userCount` users spread across `CITIES`, each with a profile, an
- * approved primary photo (~90% of users — the rest exercise the "no
+ * approved primary photo (~90% of users, the rest exercise the "no
  * approved photo" gate), a random subset of `questionCount` answered
  * questions, and hard filters on a realistic fraction of users
  * (age range, distance, gender preference). Returns enough to pick a
@@ -100,10 +100,10 @@ export async function seedDiscoveryPerfData(
   const rng = mulberry32(opts.seed ?? 42);
   const questionCount = opts.questionCount ?? 10;
 
-  // ---- questions (the ONE typed question bank — db/migrations/008_questions.sql).
+  // ---- questions (the ONE typed question bank, db/migrations/008_questions.sql).
   // CUTOVER NOTE: this used to seed the OLD `questions` table (flat 1-5
   // self/partner pair, no type/importance). That table is retired
-  // (db/migrations/019_question_cutover.sql) — this perf helper now seeds
+  // (db/migrations/019_question_cutover.sql), this perf helper now seeds
   // `question_bank` (all `scale` type, min=1/max=5, mirroring the old
   // bank's numeric range closely enough that this benchmark's shape is
   // unchanged) so `compatRefresh.perf.test.ts` still has realistic answer
@@ -251,7 +251,7 @@ export async function seedDiscoveryPerfData(
     // self/preference value pair (mirrors the old self/partner 1-5 pair),
     // and a uniform `important` importance (every seeded answer
     // contributes to scoring, same as the old bank's unconditional
-    // contribution — no `irrelevant`/`deal_breaker` variety needed for a
+    // contribution, no `irrelevant`/`deal_breaker` variety needed for a
     // volume/perf benchmark).
     const ansUsers: string[] = [];
     const ansSlugs: string[] = [];

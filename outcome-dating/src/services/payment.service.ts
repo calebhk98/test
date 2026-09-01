@@ -8,7 +8,7 @@ import type { PaymentHold, PaymentHoldStatus, PaymentMethodSummary } from '../do
 import * as ledger from './ledger.service.js';
 
 /**
- * payment.service — payment methods (§24.10) and the hold lifecycle
+ * payment.service, payment methods (§24.10) and the hold lifecycle
  * (authorize/capture/release/refund) that wraps `ctx.payments`
  * (`PaymentProcessor`, spec §14).
  *
@@ -16,7 +16,7 @@ import * as ledger from './ledger.service.js';
  *
  * INVARIANT (the central one in this whole spec, §14.3): a user is never
  * charged unless BOTH holds on a date proposal are authorized.
- * `authorizeHold` only ever authorizes — it never captures. Capturing both
+ * `authorizeHold` only ever authorizes, it never captures. Capturing both
  * sides is `dateProposal.service.ts`'s job, calling `captureHold` for each
  * only after confirming both `payment_holds` rows are `authorized`. This
  * module contains no "capture both" convenience function.
@@ -25,7 +25,7 @@ import * as ledger from './ledger.service.js';
  * reading of "run every multi-step money operation in one DB transaction"
  * would try to wrap an entire authorize-then-persist (or capture-then-
  * persist) sequence, including the `ctx.payments` network call, inside one
- * `BEGIN...COMMIT`. That's not meaningful — a Postgres transaction can't
+ * `BEGIN...COMMIT`. That's not meaningful, a Postgres transaction can't
  * make an external HTTP call to the processor atomic with a local write,
  * and holding a DB transaction open across a network call is bad practice
  * regardless. So the granularity actually used here is:
@@ -34,14 +34,14 @@ import * as ledger from './ledger.service.js';
  *      transaction,
  *   2. once that call returns, open ONE short-lived `withTransaction` that
  *      persists BOTH the `payment_holds` status transition AND the
- *      matching `ledger.recordEntry` row together, atomically — a hold
+ *      matching `ledger.recordEntry` row together, atomically, a hold
  *      status change must never be persisted without its ledger entry, or
  *      vice versa (this is the "one DB transaction" the module owns).
  *
  * If the process dies between step 1 and step 2, the processor has moved
  * money (or released/refunded it) with no local record yet. That gap is
  * exactly what `ledger.service#reconcileWithProcessor` (spec §25.9) exists
- * to find and flag — it is never silently "fixed" by retrying inside this
+ * to find and flag, it is never silently "fixed" by retrying inside this
  * module, per the "never auto-corrects financial state" rule.
  *
  * Every hold-lifecycle function here is idempotent/resumable: given the
@@ -49,7 +49,7 @@ import * as ledger from './ledger.service.js';
  * calling it again after it already reached its target state is a safe
  * no-op that neither re-calls the processor nor writes a second ledger
  * row. This is what makes a crash-and-retry, or a replayed webhook, safe
- * (spec's "idempotency" requirement) — see `handleProcessorWebhook` too.
+ * (spec's "idempotency" requirement), see `handleProcessorWebhook` too.
  *
  * `dateProposal.service.ts` is this module's only caller for the hold
  * lifecycle; it references holds/amounts by id and cents, never reaching
@@ -187,7 +187,7 @@ export async function deletePaymentMethod(ctx: Ctx, paymentMethodId: string): Pr
   if (!rowCount) throw new NotFoundError('Payment method not found');
 }
 
-/** Note the frozen signature takes an explicit `userId`, not the current actor — `dateProposal.service.ts` needs the proposer's *and* the recipient's default method, only one of whom is `ctx.actor`. */
+/** Note the frozen signature takes an explicit `userId`, not the current actor, `dateProposal.service.ts` needs the proposer's *and* the recipient's default method, only one of whom is `ctx.actor`. */
 export async function getDefaultPaymentMethod(ctx: Ctx, userId: string): Promise<PaymentMethodSummary | null> {
   if (!z.string().uuid().safeParse(userId).success) throw new ValidationError('userId must be a uuid');
 
@@ -227,7 +227,7 @@ const TERMINAL_OR_ADVANCED_HOLD_STATUSES: readonly PaymentHoldStatus[] = ['autho
  * `authorized` or beyond, returns it unchanged without calling the
  * processor again. On processor decline, persists `status = 'failed'` and
  * still records the 'authorization' ledger entry with the failure noted in
- * metadata (spec §14.8 — the attempt is part of the audit trail even when
+ * metadata (spec §14.8, the attempt is part of the audit trail even when
  * declined).
  */
 export async function authorizeHold(ctx: Ctx, input: AuthorizeHoldInput): Promise<PaymentHold> {
@@ -262,7 +262,7 @@ export async function authorizeHold(ctx: Ctx, input: AuthorizeHoldInput): Promis
   return persistAuthorizeResult(ctx, parsed, result);
 }
 
-/** `getDefaultPaymentMethod` returns the PII-safe `PaymentMethodSummary` (no raw token) — this loads the actual `processor_token` for the one call site allowed to see it: handing it to `ctx.payments`. */
+/** `getDefaultPaymentMethod` returns the PII-safe `PaymentMethodSummary` (no raw token), this loads the actual `processor_token` for the one call site allowed to see it: handing it to `ctx.payments`. */
 async function tokenFor(ctx: Ctx, method: PaymentMethodSummary): Promise<string> {
   const { rows } = await ctx.db.query<{ processor_token: string }>(`SELECT processor_token FROM payment_methods WHERE id = $1`, [method.id]);
   return rows[0]?.processor_token ?? '';
@@ -332,7 +332,7 @@ export async function captureHold(ctx: Ctx, paymentHoldId: string): Promise<Paym
   }
   if (!hold.processor_intent_id) throw new PaymentError('Hold has no processor intent to capture');
 
-  // Mark in-flight before the network call — a crash after this point but
+  // Mark in-flight before the network call, a crash after this point but
   // before the result is persisted is visible to reconciliation as a hold
   // stuck in 'capture_pending' rather than silently looking untouched.
   if (hold.status === 'authorized') {
@@ -368,7 +368,7 @@ export async function captureHold(ctx: Ctx, paymentHoldId: string): Promise<Paym
   }, getPool());
 }
 
-/** Releases (voids) an authorized-but-not-captured hold. Idempotent: a hold already `released` is returned unchanged. Never throws on a processor decline — declines are logged and the hold is left in its current status so a retry (or reconciliation) can resolve it (spec §14.5, §14.6). */
+/** Releases (voids) an authorized-but-not-captured hold. Idempotent: a hold already `released` is returned unchanged. Never throws on a processor decline, declines are logged and the hold is left in its current status so a retry (or reconciliation) can resolve it (spec §14.5, §14.6). */
 export async function releaseHold(ctx: Ctx, paymentHoldId: string): Promise<PaymentHold> {
   const hold = await loadHold(ctx, paymentHoldId);
   if (hold.status === 'released') return mapHold(hold);
@@ -417,19 +417,19 @@ export async function releaseHold(ctx: Ctx, paymentHoldId: string): Promise<Paym
  *
  * ROUNDING RULE (see `dateProposal.service.ts` for where percentages are
  * turned into cents): any percentage-to-cents conversion happens at the
- * CALLER, using `Math.floor(amountCents * percent / 100)` — round DOWN,
+ * CALLER, using `Math.floor(amountCents * percent / 100)`, round DOWN,
  * always in the platform's favor, never refund a fraction of a cent more
  * than the policy strictly implies. This function itself only ever
  * receives already-computed integer cents.
  *
  * IDEMPOTENCY: cumulative refunded cents for a hold is derived by summing
  * this hold's successful `payment_ledger` 'refund' rows (no separate
- * `refunded_amount_cents` column exists — see schema). A refund call is
+ * `refunded_amount_cents` column exists, see schema). A refund call is
  * only ever attempted for the *remaining* un-refunded delta, so calling
  * `refundHold(ctx, id, 2000)` twice in a row refunds 2000 cents once, not
- * 4000 — the second call sees `alreadyRefunded >= target` and no-ops.
+ * 4000, the second call sees `alreadyRefunded >= target` and no-ops.
  * A refund attempt that fails at the processor is logged, not recorded in
- * the ledger — only successful money movement is ever summed as "already
+ * the ledger, only successful money movement is ever summed as "already
  * refunded", so a failed attempt can safely be retried later without
  * under- or over-counting.
  */
@@ -455,7 +455,7 @@ export async function refundHold(ctx: Ctx, paymentHoldId: string, amountCents?: 
     .reduce((sum, e) => sum + e.amountCents, 0);
 
   if (alreadyRefunded >= target) {
-    return mapHold(hold); // idempotent no-op — nothing left to refund toward this target
+    return mapHold(hold); // idempotent no-op, nothing left to refund toward this target
   }
   const toRefundNow = target - alreadyRefunded;
 
@@ -509,18 +509,18 @@ const WebhookEventSchema = z.object({
 });
 
 /**
- * Entry point for `POST /webhooks/payments` (spec §24.10) — reconciles an
+ * Entry point for `POST /webhooks/payments` (spec §24.10), reconciles an
  * inbound processor event against local `payment_holds` state. The route
  * handler verifies the webhook signature before calling this; this
  * function trusts its input (still zod-validates *shape*, not authenticity).
  *
  * Idempotent: before writing anything, checks whether a ledger row for
- * this hold/type/reference already exists and no-ops if so — a webhook
+ * this hold/type/reference already exists and no-ops if so, a webhook
  * redelivery (the same Stripe event id retried, or two webhooks racing a
  * direct `captureHold`/`refundHold` call) can never double-record.
  *
  * Only touches `payment_holds`/`payment_ledger` (this module's own
- * domain) — it deliberately does NOT reach into `dateProposal.service.ts`
+ * domain), it deliberately does NOT reach into `dateProposal.service.ts`
  * to escalate a dispute/chargeback to the proposal's status, since
  * `payment -> ledger` is the only sanctioned outgoing edge for this module
  * (INTERFACES.md's call graph); calling back into `dateProposal.service`
@@ -545,7 +545,7 @@ export async function handleProcessorWebhook(ctx: Ctx, event: unknown): Promise<
     `SELECT 1 FROM payment_ledger WHERE payment_hold_id = $1 AND type = $2 AND processor_reference = $3 LIMIT 1`,
     [hold.id, ledgerType, reference],
   );
-  if (dupRows.length > 0) return; // already recorded — replayed webhook, no-op
+  if (dupRows.length > 0) return; // already recorded, replayed webhook, no-op
 
   await withTransaction(async (db) => {
     const amount = parsed.amountCents ?? Number(hold.amount_cents);
@@ -558,7 +558,7 @@ export async function handleProcessorWebhook(ctx: Ctx, event: unknown): Promise<
       await db.query(`UPDATE payment_holds SET status = 'refunded', refunded_at = $2 WHERE id = $1`, [hold.id, ctx.clock.now()]);
     }
     // dispute/dispute-closed intentionally leave payment_holds.status alone
-    // — there is no 'disputed' PaymentHoldStatus (§23.18); only the ledger
+    // there is no 'disputed' PaymentHoldStatus (§23.18); only the ledger
     // records the event.
 
     const txCtx = { ...ctx, db };

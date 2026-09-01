@@ -1,19 +1,19 @@
 import type { QuestionDefinition } from './types.js';
 
 /**
- * The selector only ever reads these five fields — never a question's
+ * The selector only ever reads these five fields, never a question's
  * full type definition/labels/options. `QuestionDefinition` satisfies
  * this structurally, so a caller with full definitions in hand can pass
  * them straight through, but `question.service.ts`'s selector wrapper
  * queries only these columns for the whole active bank rather than
  * pulling every row's `type_definition` jsonb (irrelevant to selection,
- * and the more expensive column at 600+ rows) — see the module's
+ * and the more expensive column at 600+ rows), see the module's
  * COMPLEXITY note below.
  */
 export type SelectableQuestion = Pick<QuestionDefinition, 'id' | 'slug' | 'category' | 'active' | 'baseWeight' | 'answerRateHint'>;
 
 /**
- * "What should we ask this user next?" — a prioritized, pure, in-memory
+ * "What should we ask this user next?", a prioritized, pure, in-memory
  * selector. No I/O: `question.service.ts`'s wrapper loads the active
  * question bank plus this one user's answer/skip history and calls
  * `selectNextQuestions` with plain data.
@@ -25,30 +25,30 @@ export type SelectableQuestion = Pick<QuestionDefinition, 'id' | 'slug' | 'categ
  *         + INFO_VALUE_WEIGHT    * normalizedInfoValue(question)
  *         + CATEGORY_BALANCE_WEIGHT * categoryDeficit(question.category)
  *
- *   - `answerRateHint` (0-1, on `QuestionDefinition` — see types.ts):
- *     "high-answer-rate" — a question most users actually answer (rather
+ *   - `answerRateHint` (0-1, on `QuestionDefinition`, see types.ts):
+ *     "high-answer-rate", a question most users actually answer (rather
  *     than skip) is worth asking sooner, since a skipped question earns
  *     nothing.
  *   - `normalizedInfoValue`: `question.baseWeight` scaled into 0-1 across
  *     the candidate set (min-max normalized within THIS call, not a
  *     global constant, so it stays meaningful regardless of what scale
- *     `baseWeight` happens to be authored on) — "high-information":
+ *     `baseWeight` happens to be authored on), "high-information":
  *     product has already told us via `baseWeight` how much a question
  *     matters to matching.
  *   - `categoryDeficit(category)`: how under-represented `category` is in
  *     this user's answered set relative to its share of the whole active
- *     bank — `max(0, bankShare(category) - answeredShare(category))`.
+ *     bank, `max(0, bankShare(category) - answeredShare(category))`.
  *     Keeps the asked set roughly proportional to the bank's category mix
  *     ("category-balanced") instead of exhausting one category before
  *     ever touching another.
  *
  * EXCLUSION (never returned):
  *   - inactive questions,
- *   - already `answered` or `prefer_not_to_say` (settled — the three
+ *   - already `answered` or `prefer_not_to_say` (settled, the three
  *     non-answer states in types.ts do NOT include these; only a real
  *     answer or an explicit refusal retires a question from the queue),
  *   - `skipped` more recently than `skipCooldownDays` ago (default
- *     `DEFAULT_SKIP_COOLDOWN_DAYS`) — "never repeating skipped questions
+ *     `DEFAULT_SKIP_COOLDOWN_DAYS`), "never repeating skipped questions
  *     too soon". A skip older than the cooldown becomes eligible again
  *     (people's willingness to answer changes) but is not further
  *     boosted or penalized beyond that.
@@ -56,12 +56,12 @@ export type SelectableQuestion = Pick<QuestionDefinition, 'id' | 'slug' | 'categ
  * COMPLEXITY: let Q = number of active questions in the bank (the task's
  * "600+" scenario) and H = size of this one user's answer/skip history
  * (bounded by however many of those Q questions they've touched, so
- * H <= Q always — the task's "40 answered" is comfortably inside that).
+ * H <= Q always, the task's "40 answered" is comfortably inside that).
  * `selectNextQuestions` is O(Q log Q) time (one pass building per-category
  * aggregates in O(Q), one score computation per candidate in O(Q), one
  * sort of the surviving candidates in O(Q log Q)) and O(Q) space. It does
  * NOT scan any other user's data and does NOT depend on total answer
- * volume across the whole user base — only on the size of the bank and of
+ * volume across the whole user base, only on the size of the bank and of
  * the single caller's own history. See
  * tests/unit/questionScoring.test.ts's "600+ question bank" perf test,
  * which asserts wall-clock time stays low and roughly linear-ish as Q

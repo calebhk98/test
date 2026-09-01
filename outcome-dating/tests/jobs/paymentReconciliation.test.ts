@@ -1,5 +1,5 @@
 /**
- * §25.9 Payment Reconciliation job — flags (never auto-corrects) mismatches
+ * §25.9 Payment Reconciliation job, flags (never auto-corrects) mismatches
  * between local `payment_holds`/`payment_ledger` state, mirroring
  * C-25.9.1.
  */

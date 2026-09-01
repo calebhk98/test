@@ -1,5 +1,5 @@
 /**
- * tests/unit/distancePrivacy.test.ts — SAF-2 fix proof:
+ * tests/unit/distancePrivacy.test.ts, SAF-2 fix proof:
  * `domain/units/distance.ts#approximateDistanceBetween` is the single
  * distance function every surface uses, and it actually resists the
  * documented trilateration attack (sample a target's reported distance
@@ -8,7 +8,7 @@
  * comment.
  *
  * Most of this file is pure (no I/O) since `approximateDistanceBetween`
- * itself has none — only the final section, proving discovery.service.ts
+ * itself has none, only the final section, proving discovery.service.ts
  * and profile.service.ts report the IDENTICAL number for the same pair,
  * needs a database. Owns its own dedicated database
  * (`odate_safety_distanceprivacy`, per the build brief).
@@ -31,7 +31,7 @@ import * as profile from '../../src/services/profile.service.js';
 import * as discovery from '../../src/services/discovery.service.js';
 
 // =========================================================================
-// Local flat-earth projection + least-squares multilateration — a
+// Local flat-earth projection + least-squares multilateration, a
 // deliberately simple, standard implementation of exactly the attack
 // docs/risk-review.md's SAF-2 finding describes ("create N accounts at
 // known coordinates, record the reported distance from each, solve").
@@ -94,7 +94,7 @@ function distanceBetweenPoints(a: Point, b: Point): number {
   return Math.hypot(a.x - b.x, a.y - b.y);
 }
 
-/** 8 vantage points on a ring around the origin, radius km — the attacker's known-coordinate fake accounts. */
+/** 8 vantage points on a ring around the origin, radius km, the attacker's known-coordinate fake accounts. */
 function ringOfVantagePoints(centerLat: number, centerLon: number, radiusKm: number, n: number): { lat: number; lon: number }[] {
   const out: { lat: number; lon: number }[] = [];
   for (let i = 0; i < n; i++) {
@@ -118,7 +118,7 @@ test('SAF-2 adversarial: multi-account trilateration (known vantage points, repo
 
   const targetPoint = project(targetLat, targetLon, targetLat, targetLon); // {0,0} by construction
 
-  // ---- CONTROL: validate the attack methodology itself is sound —
+  // ---- CONTROL: validate the attack methodology itself is sound,
   // solving with EXACT (unbucketed, unjittered) distances must recover
   // the target's true location almost perfectly. If this control fails,
   // the "attack" below would be meaningless. ----
@@ -144,17 +144,17 @@ test('SAF-2 adversarial: multi-account trilateration (known vantage points, repo
   assert.ok(reportedDistances.every((d) => d !== null), 'every vantage point has coordinates set, so every call must return a number');
 
   const attackEstimate = multilaterate(reportedPoints, reportedDistances as number[]);
-  assert.ok(attackEstimate, 'the solve itself still produces SOME estimate — that is expected; the point is how far off it is');
+  assert.ok(attackEstimate, 'the solve itself still produces SOME estimate: that is expected; the point is how far off it is');
   const attackErrorKm = distanceBetweenPoints(attackEstimate!, targetPoint);
 
   // The fix's job is to make that estimate USELESS, not merely "off by a
   // little". Require it to be off by at least half the bucket width, and
   // by at least an order of magnitude worse than the (near-zero) control
-  // error — i.e. street-level recovery has been destroyed, not just
+  // error, i.e. street-level recovery has been destroyed, not just
   // slightly degraded.
   assert.ok(
     attackErrorKm >= DEFAULT_DISTANCE_BUCKET_KM / 2,
-    `trilateration against the approximate/jittered distance must miss by at least half a bucket width (${DEFAULT_DISTANCE_BUCKET_KM / 2}km) — got ${attackErrorKm}km`,
+    `trilateration against the approximate/jittered distance must miss by at least half a bucket width (${DEFAULT_DISTANCE_BUCKET_KM / 2}km), got ${attackErrorKm}km`,
   );
   assert.ok(
     attackErrorKm > exactErrorKm * 10,
@@ -162,7 +162,7 @@ test('SAF-2 adversarial: multi-account trilateration (known vantage points, repo
   );
 });
 
-test('SAF-2 adversarial: a SECOND, independently-run attack (different attacker account IDs) against the SAME target recovers a DIFFERENT wrong location — the offsets do not average out into the truth', () => {
+test('SAF-2 adversarial: a SECOND, independently-run attack (different attacker account IDs) against the SAME target recovers a DIFFERENT wrong location, the offsets do not average out into the truth', () => {
   const targetLat = 34.0522;
   const targetLon = -118.2437;
   const targetId = 'target-user-2';
@@ -190,7 +190,7 @@ test('SAF-2 adversarial: a SECOND, independently-run attack (different attacker 
   const disagreement = distanceBetweenPoints(estimateA!, estimateB!);
 
   assert.ok(errorA >= DEFAULT_DISTANCE_BUCKET_KM / 2 || errorB >= DEFAULT_DISTANCE_BUCKET_KM / 2, 'at least one independent attack campaign must miss substantially');
-  assert.ok(disagreement > 0.1, 'two independent attacker account sets must not converge on the same (wrong or right) location — the per-pair offset is what prevents combining campaigns to average out the noise');
+  assert.ok(disagreement > 0.1, 'two independent attacker account sets must not converge on the same (wrong or right) location, the per-pair offset is what prevents combining campaigns to average out the noise');
 });
 
 // =========================================================================
@@ -209,7 +209,7 @@ test('approximateDistanceBetween: two different viewer accounts standing at the 
   const target = { id: 'shared-target', latitude: 51.5074, longitude: -0.1278 };
   const sameSpot = { latitude: 51.51, longitude: -0.13 };
   // Not asserting any specific pair MUST differ (a hash collision on the
-  // modulus is legitimately possible) — asserting the mechanism CAN
+  // modulus is legitimately possible), asserting the mechanism CAN
   // decorrelate them, proven by trying enough distinct viewer ids that at
   // least one reported value differs from the rest.
   const values = new Set<number>();
@@ -234,14 +234,14 @@ test('approximateDistanceBetween: a wider bucketKm produces a coarser (never fin
   assert.ok(narrow !== null && wide !== null);
   // True distance is ~10km. A 1km bucket (+/- up to 2 jitter steps) must
   // land close to it; a 50km bucket can only land on a multiple of 50
-  // (0, 50, 100, ...) — necessarily a much worse fit to the true value.
+  // (0, 50, 100, ...), necessarily a much worse fit to the true value.
   assert.ok(Math.abs(narrow! - 10) <= 2, `narrow bucket should stay close to the true distance, got ${narrow}`);
   assert.ok(Math.abs(wide! - 10) >= 10, `wide bucket must not resemble 1km precision, got ${wide}`);
 });
 
 test('approximateDistanceBetween: never negative', () => {
   const viewer = { id: 'v', latitude: 0, longitude: 0 };
-  const target = { id: 't', latitude: 0.0001, longitude: 0.0001 }; // extremely close — a naive offset could go negative without clamping
+  const target = { id: 't', latitude: 0.0001, longitude: 0.0001 }; // extremely close, a naive offset could go negative without clamping
   for (let i = 0; i < 50; i++) {
     const d = approximateDistanceBetween({ id: `v${i}`, latitude: 0, longitude: 0 }, target);
     assert.ok(d !== null && d >= 0, `distance must never be negative, got ${d}`);
@@ -250,7 +250,7 @@ test('approximateDistanceBetween: never negative', () => {
 
 // =========================================================================
 // Integration: profile.service.ts and discovery.service.ts must report
-// the IDENTICAL figure for the same viewer/target pair — the "ONE
+// the IDENTICAL figure for the same viewer/target pair, the "ONE
 // function" requirement, proven end-to-end rather than just by both
 // importing the same symbol.
 // =========================================================================
@@ -346,5 +346,5 @@ test('integration: discovery.service.ts and profile.service.ts report the exact 
 
   const profileView = await profile.buildPublicProfileView(ctx, viewerId, targetId);
 
-  assert.equal(profileView.approximateDistanceKm, card!.approximateDistanceKm, 'discovery grid and profile page must report the IDENTICAL distance figure — one shared function, not two');
+  assert.equal(profileView.approximateDistanceKm, card!.approximateDistanceKm, 'discovery grid and profile page must report the IDENTICAL distance figure, one shared function, not two');
 });

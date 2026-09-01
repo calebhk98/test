@@ -1,9 +1,9 @@
 /**
- * src/http/serializers/tickets.ts — the wallet/ticket list, denormalized.
+ * src/http/serializers/tickets.ts, the wallet/ticket list, denormalized.
  *
  * `voucher.service#listMyVouchers`/`getVoucher` return a bare `Voucher`
  * (`id`, `dateProposalId`, `venueId`, `code`, `qrPayload`, `status`,
- * `issuedAt`, `expiresAt`, `redeemedAt`) — no venue name/address and no
+ * `issuedAt`, `expiresAt`, `redeemedAt`), no venue name/address and no
  * date/time, since those live on `venues`/`date_proposals`, not
  * `vouchers`. Rendering a wallet screen ("Coffee at The Daily Grind, Sat
  * 6:00 PM") for M tickets against that shape means one
@@ -15,7 +15,7 @@
  * and the same way `timeline.service.ts` denormalizes `venueName` onto a
  * date-proposal event in chat: one direct, read-only, batched join query
  * (never per-row), never a second/parallel `Venue`-shaped return from
- * `voucher.service.ts` itself — that file's frozen `may call` list has no
+ * `voucher.service.ts` itself, that file's frozen `may call` list has no
  * edge to `venue`, so the join lives here at the HTTP layer instead,
  * exactly like `serializers/venue.ts`'s own precedent.
  */
@@ -79,7 +79,7 @@ const TICKET_SELECT = `SELECT v.id, v.date_proposal_id, v.venue_id, ven.name AS 
   JOIN date_proposals dp ON dp.id = v.date_proposal_id
   JOIN venues ven ON ven.id = v.venue_id`;
 
-/** `GET /tickets` — every voucher for a proposal the caller participated in, with venue name/address and the proposal's schedule denormalized onto each row (see file doc). */
+/** `GET /tickets`, every voucher for a proposal the caller participated in, with venue name/address and the proposal's schedule denormalized onto each row (see file doc). */
 export async function listMyTickets(ctx: Ctx): Promise<MyTicketView[]> {
   const { userId } = requireUserActor(ctx);
   const { rows } = await ctx.db.query<TicketRow>(
@@ -91,7 +91,7 @@ export async function listMyTickets(ctx: Ctx): Promise<MyTicketView[]> {
 
 /**
  * `GET /tickets/:ticketId`, enriched. Reuses `voucher.service#getVoucher`
- * purely for its authorization check (participant-or-admin-or-system —
+ * purely for its authorization check (participant-or-admin-or-system,
  * see that function's `assertCanViewVoucher`) before running the enriched
  * join, so the "who may view this ticket" rule stays defined in exactly
  * one place.

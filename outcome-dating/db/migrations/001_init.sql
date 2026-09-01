@@ -1,5 +1,5 @@
 -- 001_init.sql
--- Outcome-Aligned Dating App — initial schema.
+-- Outcome-Aligned Dating App, initial schema.
 -- Source: SPEC.md §23 (26-table schema) plus tables the spec implies but
 -- does not enumerate there (each noted below with its justifying section).
 --
@@ -58,7 +58,7 @@ CREATE INDEX idx_user_auth_events_user_id ON user_auth_events (user_id, login_at
 CREATE INDEX idx_user_auth_events_fingerprint ON user_auth_events (device_fingerprint);
 
 -- =========================================================================
--- device_fingerprints  (implied: "device/auth signals" — §6.2, §19.2)
+-- device_fingerprints  (implied: "device/auth signals", §6.2, §19.2)
 -- Aggregate reputation per device, distinct from the per-login event log
 -- above. Feeds the trust score ("consistent location/device behavior") and
 -- moderation signals ("suspicious device/IP signals").
@@ -234,7 +234,7 @@ CREATE INDEX idx_discovery_events_viewer ON discovery_events (viewer_user_id, cr
 CREATE INDEX idx_discovery_events_candidate ON discovery_events (candidate_user_id, created_at DESC);
 
 -- =========================================================================
--- compatibility_scores  (§16.3 — precomputed pairwise scores)
+-- compatibility_scores  (§16.3, precomputed pairwise scores)
 -- Explicitly given a schema by the spec (§16.3) for the nightly/incremental
 -- refresh job (§25.4), even though it lives outside the §23 table list.
 -- =========================================================================
@@ -269,7 +269,7 @@ CREATE TABLE interests (
   CONSTRAINT interests_not_self CHECK (sender_id <> recipient_id)
 );
 
--- One pending interest per (sender, recipient) pair — re-sending after
+-- One pending interest per (sender, recipient) pair, re-sending after
 -- decline/expiry/cancel is allowed, but not while one is already pending.
 CREATE UNIQUE INDEX uq_interests_pending_pair
   ON interests (sender_id, recipient_id) WHERE status = 'pending';
@@ -359,7 +359,7 @@ CREATE TABLE venues (
 CREATE INDEX idx_venues_category_active ON venues (category) WHERE active;
 
 -- =========================================================================
--- venue_staff  (implied — §4.2 "Venue Staff" role)
+-- venue_staff  (implied, §4.2 "Venue Staff" role)
 -- Venue staff are users with elevated, venue-scoped, narrowly-permissioned
 -- access (can redeem vouchers; cannot see chats/emails/card details).
 -- =========================================================================
@@ -376,7 +376,7 @@ CREATE TABLE venue_staff (
 CREATE INDEX idx_venue_staff_venue_id ON venue_staff (venue_id) WHERE active;
 
 -- =========================================================================
--- admin_users  (implied — §4.3 "Admin" role)
+-- admin_users  (implied, §4.3 "Admin" role)
 -- =========================================================================
 CREATE TABLE admin_users (
   id          uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -425,7 +425,7 @@ CREATE INDEX idx_date_proposals_expiry_job ON date_proposals (status, created_at
 CREATE INDEX idx_date_proposals_venue ON date_proposals (venue_id, scheduled_start);
 
 -- =========================================================================
--- date_attendance_confirmations  (implied — §15.4 no-scan fallback)
+-- date_attendance_confirmations  (implied, §15.4 no-scan fallback)
 -- Tracks each user's self-reported attendance confirmation, independent
 -- from the (separate, quality-oriented) post_date_feedback below.
 -- =========================================================================
@@ -444,7 +444,7 @@ CREATE TABLE payment_holds (
   id                    uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   date_proposal_id      uuid NOT NULL REFERENCES date_proposals (id),
   user_id               uuid NOT NULL REFERENCES users (id),
-  processor             text NOT NULL, -- e.g. "fake" | "stripe" — see PaymentProcessor port
+  processor             text NOT NULL, -- e.g. "fake" | "stripe", see PaymentProcessor port
   processor_intent_id   text,
   amount_cents          bigint NOT NULL CHECK (amount_cents >= 0),
   currency              text NOT NULL DEFAULT 'usd',
@@ -469,7 +469,7 @@ CREATE INDEX idx_payment_holds_status ON payment_holds (status);
 -- =========================================================================
 -- 19. payment_ledger                                                §23.19
 -- Immutable: application code MUST only INSERT here, never UPDATE/DELETE
--- (§14.8 "immutable ledger"). No ON DELETE CASCADE from users — financial
+-- (§14.8 "immutable ledger"). No ON DELETE CASCADE from users, financial
 -- records are retained even if the user's profile is later anonymized
 -- (§29).
 -- =========================================================================
@@ -492,7 +492,7 @@ CREATE INDEX idx_payment_ledger_date_proposal ON payment_ledger (date_proposal_i
 CREATE INDEX idx_payment_ledger_type ON payment_ledger (type);
 
 -- =========================================================================
--- payment_methods (implied — §24.10 payment-methods endpoints, §28.4)
+-- payment_methods (implied, §24.10 payment-methods endpoints, §28.4)
 -- Stores only processor-side tokens/references, never card numbers.
 -- =========================================================================
 CREATE TABLE payment_methods (
@@ -543,7 +543,7 @@ CREATE TABLE venue_redemptions (
 CREATE INDEX idx_venue_redemptions_voucher ON venue_redemptions (voucher_id);
 
 -- =========================================================================
--- post_date_feedback  (implied — §2, §15.4, §26.2 "post-date positive feedback rate")
+-- post_date_feedback  (implied, §2, §15.4, §26.2 "post-date positive feedback rate")
 -- Distinct from date_attendance_confirmations: this is quality feedback
 -- collected once attendance is already established (via redemption or the
 -- no-scan fallback), not a completion signal itself.
@@ -589,7 +589,7 @@ CREATE INDEX idx_reports_reported_id ON reports (reported_id, created_at DESC);
 CREATE INDEX idx_reports_reporter_id ON reports (reporter_id, created_at DESC);
 
 -- =========================================================================
--- blocks  (implied — §4.1 "report/block users", §10.2, §18.2 "block count")
+-- blocks  (implied, §4.1 "report/block users", §10.2, §18.2 "block count")
 -- =========================================================================
 CREATE TABLE blocks (
   id           uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -620,7 +620,7 @@ CREATE TABLE moderation_actions (
 CREATE INDEX idx_moderation_actions_user_id ON moderation_actions (user_id, created_at DESC);
 
 -- =========================================================================
--- appeals  (implied — §18.6 automated appeals)
+-- appeals  (implied, §18.6 automated appeals)
 -- =========================================================================
 CREATE TABLE appeals (
   id                     uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -655,7 +655,7 @@ CREATE TABLE trust_events (
 CREATE INDEX idx_trust_events_user_id ON trust_events (user_id, created_at DESC);
 
 -- =========================================================================
--- notifications  (implied — §20 notification system)
+-- notifications  (implied, §20 notification system)
 -- =========================================================================
 CREATE TABLE notifications (
   id           uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -668,7 +668,7 @@ CREATE TABLE notifications (
                    'post_date_feedback_request', 'chat_cooling', 'trust_level_changed', 'safety_notice'
                  )), -- §20.1
   channel      text NOT NULL CHECK (channel IN ('push', 'email', 'in_app')), -- §20.2
-  template_key text NOT NULL, -- static/template copy key — never generated text (§1, §20)
+  template_key text NOT NULL, -- static/template copy key, never generated text (§1, §20)
   payload      jsonb NOT NULL DEFAULT '{}'::jsonb,
   status       text NOT NULL DEFAULT 'pending'
                  CHECK (status IN ('pending', 'sent', 'failed', 'read')),
@@ -704,7 +704,7 @@ CREATE TABLE feature_flags (
 );
 
 -- =========================================================================
--- admin_audit_log  (implied — §4.3, §21.2, §27, §28.6 "log admin actions")
+-- admin_audit_log  (implied, §4.3, §21.2, §27, §28.6 "log admin actions")
 -- =========================================================================
 CREATE TABLE admin_audit_log (
   id              uuid PRIMARY KEY DEFAULT gen_random_uuid(),

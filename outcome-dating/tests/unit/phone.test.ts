@@ -1,10 +1,10 @@
 /**
- * Optional phone number lifecycle (build correction — see
+ * Optional phone number lifecycle (build correction, see
  * `auth.service.ts`'s module doc: a phone number must never be MANDATORY
  * for anything, but an OPTIONAL, verified-by-one-time-code phone number is
  * fully supported).
  *
- * Reuses `tests/http/testServer.ts` (read-only import — not owned by this
+ * Reuses `tests/http/testServer.ts` (read-only import, not owned by this
  * build, never modified here) as the harness for this whole file rather
  * than hand-rolling a second database bootstrap: it already gives a real
  * migrated database, a real Fastify app (needed for the "never leaks
@@ -57,7 +57,7 @@ function systemCtx() {
   return ctxWithActor(t.deps, { type: 'system', job: 'test' }, t.pool);
 }
 
-/** Overwrites the caller's current pending code's hash so the test can drive `verifyPhone` without knowing the randomly-generated raw code — same "seed a known hash directly" pattern `auth.test.ts` already uses for email verification/password reset tokens. */
+/** Overwrites the caller's current pending code's hash so the test can drive `verifyPhone` without knowing the randomly-generated raw code, same "seed a known hash directly" pattern `auth.test.ts` already uses for email verification/password reset tokens. */
 async function seedKnownCode(userId: string, code: string): Promise<void> {
   await t.pool.query(
     `UPDATE phone_verification_codes SET code_hash = $2 WHERE user_id = $1 AND consumed_at IS NULL`,
@@ -139,7 +139,7 @@ test('verifyPhone: exhausting the attempt cap rejects even the correct code, unt
   for (let i = 0; i < 5; i++) {
     await assert.rejects(() => authService.verifyPhone(ctx, { code: '999999' }), UnauthorizedError);
   }
-  // The cap (5) is now exhausted — even the right code is refused, and the
+  // The cap (5) is now exhausted, even the right code is refused, and the
   // refusal is a RateLimitError (not UnauthorizedError), so a client can
   // tell "you're locked out" apart from "that guess was wrong".
   await assert.rejects(() => authService.verifyPhone(ctx, { code: '222222' }), RateLimitError);
@@ -263,7 +263,7 @@ test('getVerifiedPhoneForUser: readable by the user themselves or `system`, neve
   );
 });
 
-test('getMyPhoneStatus: never returns the full number — only the last 2 digits', async () => {
+test('getMyPhoneStatus: never returns the full number, only the last 2 digits', async () => {
   const alice = await freshUser();
   const ctx = userCtx(alice.userId);
   await authService.requestPhoneVerification(ctx, { phoneNumber: '+14155559876', country: 'US' });
@@ -469,7 +469,7 @@ test('static allowlist audit: no file under src/http/serializers/ mentions "phon
     const source = readFileSync(join(serializersDir, file), 'utf8');
     assert.ok(
       !/phone/i.test(source),
-      `${file} mentions "phone" — every serializer is an explicit field allowlist (see each file's own doc comment); ` +
+      `${file} mentions "phone", every serializer is an explicit field allowlist (see each file's own doc comment); ` +
         'a phone number must never be named in any of them, since it must never reach another user or leave via any wire response',
     );
   }

@@ -16,7 +16,7 @@ import type { ChoiceOption, ImportanceLevel, QuestionPresentation, QuestionTypeD
  *   4: Deal breaker: <option B>
  *
  * `scale`, `frequency`, and `multi_choice` questions (and `single_choice`
- * questions with more than two options) are NOT ladder-eligible — their
+ * questions with more than two options) are NOT ladder-eligible, their
  * value dimension has more than two directions, so there is no single
  * "which side, how far" axis to collapse onto. Those keep the separate
  * value + importance controls (`QuestionPresentation = 'value_importance'`).
@@ -24,7 +24,7 @@ import type { ChoiceOption, ImportanceLevel, QuestionPresentation, QuestionTypeD
  * The ladder is purely a PRESENTATION convenience: `ladderPositionToPreference`
  * / `preferenceToLadderPosition` are lossless, round-tripping bijections
  * onto the exact same (preferenceValue, importance) pair the two-control
- * form would produce — scoring.ts never knows or cares which presentation
+ * form would produce, scoring.ts never knows or cares which presentation
  * produced its inputs (see questionScoring.test.ts "ladder vs. two-control
  * presentations score identically").
  */
@@ -38,7 +38,7 @@ export function isLadderEligible(typeDef: QuestionTypeDefinition): typeDef is Si
   return typeDef.type === 'single_choice' && typeDef.options.length === 2;
 }
 
-/** The single server-computed source of truth for `QuestionDefinition.presentation` — never inferred client-side (see types.ts `QuestionPresentation`). */
+/** The single server-computed source of truth for `QuestionDefinition.presentation`, never inferred client-side (see types.ts `QuestionPresentation`). */
 export function presentationFor(typeDef: QuestionTypeDefinition): QuestionPresentation {
   return isLadderEligible(typeDef) ? 'ladder' : 'value_importance';
 }
@@ -51,7 +51,7 @@ function requireLadderEligible(def: SingleChoiceDefinition): [ChoiceOption, Choi
 }
 
 /**
- * User-facing ladder copy, built from the question's own option labels —
+ * User-facing ladder copy, built from the question's own option labels,
  * plain language, no bare numbers, no section references. Index matches
  * `LadderPosition` (0-4).
  */
@@ -76,14 +76,14 @@ export interface LadderPreference {
  * (every position produces a result).
  *
  *   - Both deal-breaker ends (0, 4) map to importance `deal_breaker`, with
- *     the value narrowed to whichever side was picked — the position
+ *     the value narrowed to whichever side was picked, the position
  *     determines WHICH option is required, not just that one is.
  *   - `Don't care` (2) maps to importance `irrelevant`; both options are
- *     recorded as acceptable (matches "irrelevant contributes nothing" —
+ *     recorded as acceptable (matches "irrelevant contributes nothing",
  *     the value is moot once importance is irrelevant, but a concrete,
  *     total value is still stored rather than a null so the shape stays
  *     uniform with every other single_choice preference).
- *   - The two "Prefer" positions (1, 3) map to importance `important` —
+ *   - The two "Prefer" positions (1, 3) map to importance `important`,
  *     a real, moderate preference; not a mild "slight" nudge and not a
  *     hard exclusion.
  */
@@ -108,7 +108,7 @@ export function ladderPositionToPreference(def: SingleChoiceDefinition, position
  * `ladderPositionToPreference`; returns `null` for a pair that has no
  * ladder representation (e.g. importance `slight`/`critical`, which the
  * ladder never produces and the two-control form must be used for
- * instead — this is expected and not an error, just "not
+ * instead, this is expected and not an error, just "not
  * ladder-representable").
  */
 export function preferenceToLadderPosition(
@@ -133,5 +133,5 @@ export function preferenceToLadderPosition(
     return null;
   }
 
-  return null; // 'slight' / 'critical' — not producible by the ladder
+  return null; // 'slight' / 'critical', not producible by the ladder
 }

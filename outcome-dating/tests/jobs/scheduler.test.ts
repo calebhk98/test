@@ -1,5 +1,5 @@
 /**
- * `JobScheduler` — the advisory-lock concurrency guard (a job run that
+ * `JobScheduler`, the advisory-lock concurrency guard (a job run that
  * can't acquire its lock is skipped, not queued/retried) and the job
  * registry (`jobs:run <name>` lookup surface).
  */
@@ -39,7 +39,7 @@ function makeDeps(): AppDeps {
 /**
  * Resilient to ADDITIVE registration: registering a new job must never
  * break this test (an exact-length/exact-list `deepEqual` against
- * `ALL_JOBS` would, and did — this used to hardcode the full list, which
+ * `ALL_JOBS` would, and did, this used to hardcode the full list, which
  * broke every time a new job was registered). Still FAILS if a
  * previously-registered, spec-stable job name disappears (a subset check,
  * not "any jobs at all exist"), and still guards the registry invariant

@@ -24,18 +24,18 @@ import type { Actor, Ctx } from '../../src/lib/ctx.js';
 // The admin connection used to DROP/CREATE this file's own per-suite
 // databases must itself point at a database that is guaranteed to exist
 // (Postgres requires connecting to SOME real database to run DDL against
-// others). This used to default to a literal `odate_agent_d` — a
+// others). This used to default to a literal `odate_agent_d`, a
 // database nothing in this codebase ever explicitly creates, so the very
 // first admin connection here was silently relying on it already existing
 // by accident of some earlier manual run; drop that database once (as
-// happened while diagnosing the cross-run database-name-collision race —
+// happened while diagnosing the cross-run database-name-collision race,
 // test-audit.md's database-race item) and every one of this file's own
 // test suites fails immediately with no way to recover. `outcome_dating`
 // is the one database `scripts/pg-dev.sh start` actually guarantees
-// exists — every sibling harness in this repo already anchors on it for
+// exists, every sibling harness in this repo already anchors on it for
 // exactly this reason.
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item): this suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `<prefix>_<suffix>` name is only unique within a single run. */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item): this suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `<prefix>_<suffix>` name is only unique within a single run. */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {

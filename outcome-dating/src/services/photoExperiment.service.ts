@@ -5,25 +5,25 @@ import { KNOWN_FLAGS } from '../config/flags.service.js';
 import type { PhotoExperimentStats, PhotoRecommendation } from '../domain/types.js';
 
 /**
- * photoExperiment.service — photo A/B testing.
+ * photoExperiment.service, photo A/B testing.
  * Spec: §7.3, §24.2 (`GET /me/photo-test-results`), §25.5 (nightly stats job).
  *
  * Owning agent: A.
  *
  * Invariants:
  *  - Gated behind the `photo_ab_testing` feature flag
- *    (`ctx.flags.isEnabled(KNOWN_FLAGS.PHOTO_AB_TESTING, ...)`, spec §22) —
+ *    (`ctx.flags.isEnabled(KNOWN_FLAGS.PHOTO_AB_TESTING, ...)`, spec §22),
  *    a user with the flag off never gets a randomized primary photo.
  *  - Only runs when a user has >= 3 photos (spec §7.3 rule 1).
  *  - The success metric is `interestsAccepted`, never raw `impressions` or
- *    profile views (spec §7.3 rule 4) — `computeRecommendation` must rank
+ *    profile views (spec §7.3 rule 4), `computeRecommendation` must rank
  *    on accepted-interest rate.
  *  - Reordering is never silent: `applyRecommendation` requires an
  *    explicit user approval unless product has flipped a config value for
  *    automatic reordering (spec §7.3 "user should be able to approve or
  *    reject ... unless product decides automatic reordering is preferred").
  *
- * Significance guard (documented here — the single source of truth for
+ * Significance guard (documented here, the single source of truth for
  * these three numbers): a challenger photo is only ever recommended once
  * it, AND the current primary, individually clear `MIN_IMPRESSIONS_FOR_SIGNIFICANCE`
  * impressions (below that a binomial accept-rate estimate at typical
@@ -32,7 +32,7 @@ import type { PhotoExperimentStats, PhotoRecommendation } from '../domain/types.
  * one lucky accept out of two impressions can't produce a 50% "lift"), and
  * its accept-rate lift over the primary is at least `MIN_LIFT_FRACTION`.
  * This is a threshold guard, not a real significance test (no MVP
- * dependency on a stats library) — documented so it can be swapped for a
+ * dependency on a stats library), documented so it can be swapped for a
  * proper two-proportion test later without touching call sites. These are
  * file-local constants rather than `config.service.ts` keys because that
  * registry is shared infra outside this agent's ownership; promoting them
@@ -43,10 +43,10 @@ import type { PhotoExperimentStats, PhotoRecommendation } from '../domain/types.
 
 const MIN_IMPRESSIONS_FOR_SIGNIFICANCE = 30;
 const MIN_ACCEPTED_FOR_SIGNIFICANCE = 3;
-/** Minimum relative lift (challenger accept-rate vs primary's), as a fraction — 0.15 = 15%. */
+/** Minimum relative lift (challenger accept-rate vs primary's), as a fraction, 0.15 = 15%. */
 const MIN_LIFT_FRACTION = 0.15;
 
-/** Ad-hoc feature flag (not in `KNOWN_FLAGS` — see `flags.service.ts` doc: "admins may also define ad-hoc flags"). Off by default (no seeded row = `isEnabled` returns false), matching the spec's default of user-approved reordering. */
+/** Ad-hoc feature flag (not in `KNOWN_FLAGS`, see `flags.service.ts` doc: "admins may also define ad-hoc flags"). Off by default (no seeded row = `isEnabled` returns false), matching the spec's default of user-approved reordering. */
 const AUTO_REORDER_FLAG_KEY = 'photo_ab_auto_reorder';
 
 // =====================================================================
@@ -156,7 +156,7 @@ export interface PhotoRankingInput {
 }
 
 /**
- * Pure ranking/significance function — no I/O, easy to unit-test directly.
+ * Pure ranking/significance function, no I/O, easy to unit-test directly.
  * Returns the single best-supported recommendation (challenger vs current
  * primary, i.e. `position === 0`), or `null` if fewer than 3 photos, no
  * primary, or nothing clears the significance guard documented above.
@@ -242,7 +242,7 @@ interface RecommendationRow {
   lift_percent: number;
 }
 
-/** `GET /me/photo-test-results` — current recommendation(s), if the experiment has enough data. Reads persisted `photo_recommendations` rows (populated by `refreshAllRecommendations`), not a fresh recompute per call. */
+/** `GET /me/photo-test-results`, current recommendation(s), if the experiment has enough data. Reads persisted `photo_recommendations` rows (populated by `refreshAllRecommendations`), not a fresh recompute per call. */
 export async function getMyPhotoTestResults(ctx: Ctx): Promise<PhotoRecommendation[]> {
   const { userId } = requireUserActor(ctx);
 
@@ -325,7 +325,7 @@ async function fetchPendingRecommendation(ctx: Ctx, userId: string, photoId: str
   return row;
 }
 
-/** User approves a recommendation — reorders photos, setting `recommendedPosition`'s photo as primary if position 0. */
+/** User approves a recommendation, reorders photos, setting `recommendedPosition`'s photo as primary if position 0. */
 export async function approveRecommendation(ctx: Ctx, photoId: string): Promise<void> {
   const { userId } = requireUserActor(ctx);
   await fetchPendingRecommendation(ctx, userId, photoId);

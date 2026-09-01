@@ -1,7 +1,7 @@
 /**
  * HTTP tests for the `/matches` and `/conversations/:id/timeline` routes
  * (product-owner findings #1-#4). Driven entirely via `app.inject`, real
- * routes, real services — no mocking.
+ * routes, real services, no mocking.
  */
 import { test, before, after, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
@@ -29,7 +29,7 @@ after(async () => {
 });
 
 // Many scenarios register several accounts against one shared in-process
-// rate limiter (§19.2) — reset it between tests, same pattern
+// rate limiter (§19.2), reset it between tests, same pattern
 // `tests/http/roles.test.ts` uses.
 beforeEach(() => {
   resetRateLimiter(t);
@@ -164,7 +164,7 @@ test('a proposed date shows up in the conversation timeline over HTTP, with time
   const iso8601 = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/;
   assert.match(conversation.createdAt, iso8601);
   assert.match(conversation.lastMessageAt!, iso8601);
-  // Conversation age is trivially client-derivable from an ISO timestamp —
+  // Conversation age is trivially client-derivable from an ISO timestamp,
   // the server sends the raw instant, never a pre-formatted "x hours ago"
   // relative string (spec: let the client localize).
   const ageMs = t.clock.now().getTime() - new Date(conversation.createdAt).getTime();

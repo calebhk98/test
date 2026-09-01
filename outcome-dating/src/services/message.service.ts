@@ -12,7 +12,7 @@ import { enqueueNotification } from './notifications/index.js';
 import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.js';
 
 /**
- * message.service — in-conversation messaging.
+ * message.service, in-conversation messaging.
  * Spec: §12.2-§12.5, §24.7.
  *
  * Owning agent: C.
@@ -22,28 +22,28 @@ import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.
  *    throws `ForbiddenError` unless the conversation's status is one of
  *    `active`, `cooling`, `established` (never for a conversation the
  *    caller isn't a participant of, and never for `archived`).
- *  - Plain text + emoji only for MVP (spec §12.2) — `MessageBodySchema` is
+ *  - Plain text + emoji only for MVP (spec §12.2), `MessageBodySchema` is
  *    a plain string with a length bound; there is no attachment/media
  *    field anywhere on this function's signature or on `Message` to
- *    validate, because none exists — adding one would be the actual
+ *    validate, because none exists, adding one would be the actual
  *    violation, not a missing check here.
  *  - Every send calls `textscan.service#scanText`, persists any
  *    `message_flags` rows, and enforces `chat.max_messages_per_hour` and
  *    the trust-tiered `chat.max_links_per_hour_*` config (spec §12.3,
- *    §19.4) — messages are never blocked for flagged *content* by default
+ *    §19.4), messages are never blocked for flagged *content* by default
  *    (spec §19.3), only rate-limited on raw throughput.
- *  - Off-app handles/links are never blocked outright (spec §12.5) — a
+ *  - Off-app handles/links are never blocked outright (spec §12.5), a
  *    flagged message still sends, with `notification`'s static banner
  *    template attached via `analysisFlags` + a `safety_notice`
  *    notification whose `payload.reason` picks between the two static
- *    banner copies (never a new template per situation — see
+ *    banner copies (never a new template per situation, see
  *    `notification.service.ts`'s "exactly one template per event"
  *    invariant).
  *  - Link *clickability* (spec §19.4) has nowhere to live on the frozen
  *    `Message`/`TextScanResult` domain types, so it is not persisted as a
  *    boolean. Instead it is folded into `message_flags.severity` for the
  *    `link` flag: severity 1 = clickable-eligible, severity 2 = present
- *    but must render as plain (non-clickable) text — see
+ *    but must render as plain (non-clickable) text, see
  *    `LINK_NOT_CLICKABLE_SEVERITY` below for the single place this
  *    convention is defined.
  */
@@ -52,7 +52,7 @@ const OPEN_STATUSES: ReadonlySet<string> = new Set(['active', 'cooling', 'establ
 const MAX_MESSAGE_LENGTH = 4000;
 
 // Plain text + emoji only (spec §12.2). A `string` schema with a length
-// bound is the entire content contract — there is no way to smuggle an
+// bound is the entire content contract, there is no way to smuggle an
 // attachment through this validator because there is no field for one.
 const MessageBodySchema = z
   .string()
@@ -92,7 +92,7 @@ function mapRow(row: MessageRow): Message {
  * the configurable `trust.link_min_level` (rather than a hardcoded
  * `=== 'limited'` comparison), so retuning that one key moves this send-time
  * cap and the render-time clickability gate (`trustService.canSendClickableLinks`,
- * called below) together — see trust.service.ts's "§6.4 vs §12.3 PRECEDENCE"
+ * called below) together, see trust.service.ts's "§6.4 vs §12.3 PRECEDENCE"
  * comment on `can()`, and docs/duplication.md finding 2, which this fixes:
  * this function used to re-derive its own hardcoded `'limited'` boundary,
  * so retuning `trust.link_min_level` moved link clickability but silently
@@ -107,7 +107,7 @@ export async function linkLimitForCaller(ctx: Ctx): Promise<number> {
  * First word of the sender's own display name, for the `message_received`
  * notification's `senderFirstName` payload field (see
  * `notifications/delivery.ts#resolveTemplateAndData`). A direct,
- * read-only query against `profiles` — the same "narrow cross-domain
+ * read-only query against `profiles`, the same "narrow cross-domain
  * read" pattern `serializers/venue.ts#displayNamesFor` already uses for
  * an identical need, rather than a new `profile.service.ts` export for
  * one call site (this module has no "may call profile" edge, and adding
@@ -141,10 +141,10 @@ export async function sendMessage(ctx: Ctx, conversationId: string, body: string
   const scan = textscan.scanText(ctx, validBody);
 
   // §19.4 link-clickability. Resolved via `trust.service#canSendClickableLinks`
-  // — never re-derived from a raw trust-level comparison here (that would
+  // never re-derived from a raw trust-level comparison here (that would
   // be reimplementing trust scoring). Fails CLOSED (non-clickable) on any
   // error from that call, including `trust.service.ts` still being an
-  // unimplemented stub in this parallel build — a safe default, not a
+  // unimplemented stub in this parallel build, a safe default, not a
   // testing workaround: if the trust subsystem is unavailable, the correct
   // behavior is "don't render links clickable," not "assume the best."
   let linkNotClickable = false;
@@ -195,12 +195,12 @@ export async function sendMessage(ctx: Ctx, conversationId: string, body: string
   await ctx.db.query(`UPDATE conversations SET last_message_at = $2 WHERE id = $1`, [conversationId, now]);
 
   // New-message notification (docs/ux-api-review.md §13: "there is no way
-  // for a client to know a new message arrived without polling" —
+  // for a client to know a new message arrived without polling",
   // `message_received` had nowhere to fire from since this module wasn't
   // permitted to call the notification layer at all; see INTERFACES.md's
   // updated `message ─▶ notification` edge). Routed through
   // `notifications/index#enqueueNotification`, never `notification.service
-  // #notify` directly — `message_received` isn't in that frozen event
+  // #notify` directly, `message_received` isn't in that frozen event
   // enum (see notification.service.ts's own doc), and enqueueNotification
   // is the one place that applies the coalescing/preference/quiet-hours
   // pipeline this event needs (five messages while you're away should
@@ -210,12 +210,12 @@ export async function sendMessage(ctx: Ctx, conversationId: string, body: string
     await enqueueNotification(ctx, {
       userId: recipientId,
       eventType: 'message_received',
-      // Convention: `${eventType}:${entityId}` — this specific message,
+      // Convention: `${eventType}:${entityId}`, this specific message,
       // so a retried send can never double-enqueue for the same row.
       dedupKey: `message_received:${id}`,
       // Convention (notifications/outbox.ts's own doc): groups every
       // undelivered message notification for this (recipient,
-      // conversation) into one coalesced push — "5 messages -> 1 push" —
+      // conversation) into one coalesced push, "5 messages -> 1 push",
       // instead of one push per message.
       coalescingKey: `message:${recipientId}:${conversationId}`,
       payload: {
@@ -226,7 +226,7 @@ export async function sendMessage(ctx: Ctx, conversationId: string, body: string
     });
   } catch (err) {
     // Best-effort, like every other notification call site in this
-    // codebase — a notification-layer hiccup must never fail or roll
+    // codebase, a notification-layer hiccup must never fail or roll
     // back an otherwise-successful send.
     ctx.logger.warn('message.enqueue_notification_failed', {
       messageId: id,
@@ -235,7 +235,7 @@ export async function sendMessage(ctx: Ctx, conversationId: string, body: string
     });
   }
 
-  // §19.3/§12.5: nothing above this point can block the send — flags are
+  // §19.3/§12.5: nothing above this point can block the send, flags are
   // recorded, and at most a static safety-notice banner is attached.
   // Raising the moderation score from repeated flags is
   // `moderation.service.ts`'s job (Agent E), fed by the `message_flags`

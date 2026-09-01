@@ -5,7 +5,7 @@
  *
  * Every service this build's tests exercise (`interest`, `conversation`,
  * `message`, `profile`, `venue`, `payment`, `dateProposal`, `discovery`)
- * is the real, fully-implemented sibling-agent code — no mocking. Per the
+ * is the real, fully-implemented sibling-agent code, no mocking. Per the
  * task brief ("use your own Postgres databases (`odate_match_<suite>`)"),
  * every db name is namespaced under `odate_match_*`, one per test FILE
  * (each gets its own `suite` string) so concurrently-run test files never
@@ -27,7 +27,7 @@ import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item). */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item). */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
@@ -105,7 +105,7 @@ export function venueStaffActor(venueStaffId: string, venueId: string): Actor {
 
 let userCounter = 0;
 
-/** Inserts a minimal `users` row and returns its id — no profile (see `createUserWithProfile` for that). */
+/** Inserts a minimal `users` row and returns its id, no profile (see `createUserWithProfile` for that). */
 export async function createUser(db: TestDb, overrides?: { email?: string; trustLevel?: TrustLevel }): Promise<string> {
   userCounter += 1;
   const email = overrides?.email ?? `test-match-user-${userCounter}-${Date.now()}@example.test`;
@@ -121,7 +121,7 @@ export async function createUser(db: TestDb, overrides?: { email?: string; trust
 /**
  * Inserts a user AND a complete-enough profile (via the real
  * `profile.service#updateMyProfile`, never a hand-rolled `profiles`
- * INSERT — so it can never drift from what that service actually expects
+ * INSERT, so it can never drift from what that service actually expects
  * on the row). Returns the userId; `lat`/`lon` default apart so
  * `approximateDistanceKm` is a real, non-null, non-zero number by default.
  */

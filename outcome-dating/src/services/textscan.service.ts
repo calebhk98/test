@@ -2,14 +2,14 @@ import type { Ctx } from '../lib/ctx.js';
 import type { MessageFlagType, TextScanResult } from '../domain/types.js';
 
 /**
- * textscan.service — non-LLM message text analysis.
+ * textscan.service, non-LLM message text analysis.
  * Spec: §12.4, §18.2, §19.3, §19.4.
  *
  * Owning agent: C.
  *
  * HARD INVARIANT (spec §1 rule 9, §12.4, §19.3): regex/keyword/rate-based
  * heuristics ONLY. No LLM call of any kind belongs in this file or
- * anything it calls — this is the one module in the codebase where that
+ * anything it calls, this is the one module in the codebase where that
  * constraint is most tempting to break (it "smells like" an NLP task) and
  * most important not to.
  *
@@ -19,12 +19,12 @@ import type { MessageFlagType, TextScanResult } from '../domain/types.js';
  * the caller's trust level against `chat.max_links_per_hour_*`, showing
  * the §12.5 static banner). `ctx` is accepted (and currently unused) only
  * to keep the signature stable if a future revision wants config-driven
- * pattern lists — do not read `ctx.db`/network from here; that would
+ * pattern lists, do not read `ctx.db`/network from here; that would
  * violate "no I/O".
  *
  * Detection categories (spec §19.3): crypto, gift cards, wire transfer,
  * cashapp/venmo/zelle, emergency money, investment offers, telegram/
- * whatsapp links, adult-content promotion — plus §23.15's flag_type set
+ * whatsapp links, adult-content promotion, plus §23.15's flag_type set
  * (external_contact, money_request, link, crypto, spam_pattern,
  * abuse_pattern). `PATTERN_GROUPS` below is the exported, testable list of
  * regexes backing each flag_type; extend it rather than inlining new
@@ -48,14 +48,14 @@ export interface PatternGroup {
  * False-positive notes (see tests/unit/textscan.test.ts):
  *  - The phone-number patterns require a classic 3-3-4 digit grouping (or
  *    a leading "+" international run) rather than "any long run of
- *    digits/separators" — a loose version of that regex matches dotted
+ *    digits/separators", a loose version of that regex matches dotted
  *    dates like "3.15.2026" (a 1-2-4 grouping), which is exactly the kind
  *    of false positive spec §19.3 warns against ("Some normal users share
- *    links or social handles... Blocking creates bad UX" — the same logic
+ *    links or social handles... Blocking creates bad UX", the same logic
  *    applies to over-flagging).
  *  - "cash app"/"venmo"/etc. still match as a plain substring regardless
  *    of surrounding context (e.g. a "my cash app of tea"-style pun on "my
- *    cup of tea") — regexes cannot understand puns, so this is expected
+ *    cup of tea"), regexes cannot understand puns, so this is expected
  *    to flag. That's fine per spec §19.3: matches never block sending by
  *    default, they only flag internally, so an ambiguous/near-miss match
  *    costs nothing but a low-severity flag row.
@@ -73,7 +73,7 @@ export const PATTERN_GROUPS: PatternGroup[] = [
       /\b(instagram|insta|ig)\b[:\s@]*[\w.]+/i,
       /\b(snap(chat)?|telegram|whatsapp|wa\.me|t\.me)\b/i,
       // Classic 3-3-4 grouping: 555-123-4567 / (555) 123-4567 / 555.123.4567.
-      // Deliberately NOT a loose "any long digit run" — that false-positives
+      // Deliberately NOT a loose "any long digit run", that false-positives
       // on dotted dates like "3.15.2026" (a 1-2-4 grouping, not 3-3-4).
       /(?<!\d)(\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}(?!\d)/,
       // Bare international run, e.g. +14155552671.
@@ -114,7 +114,7 @@ export const PATTERN_GROUPS: PatternGroup[] = [
 /**
  * Reason codes for the §12.5/§19.3 safety banner. `message.service.ts`
  * maps this into the single static `safety_notice` notification template's
- * `payload.reason` — it is NOT itself a notification template key, so the
+ * `payload.reason`, it is NOT itself a notification template key, so the
  * "exactly one static template per event" invariant
  * (`notification.service.ts#NOTIFICATION_TEMPLATES`) stays intact even
  * though there are two distinct banner situations.
@@ -125,7 +125,7 @@ export const SCAM_RISK_BANNER_REASON = 'scam_risk' as const;
 /**
  * Scan one message body and return every matching flag plus whether a
  * §12.5 safety banner should render. Per spec §19.3/§12.5, matches never
- * block sending by default — that policy decision belongs to
+ * block sending by default, that policy decision belongs to
  * `message.service.ts`, not here.
  */
 export function scanText(ctx: Ctx, body: string): TextScanResult {
@@ -136,7 +136,7 @@ export function scanText(ctx: Ctx, body: string): TextScanResult {
     for (const pattern of group.patterns) {
       const match = pattern.exec(body);
       if (match) {
-        // One flag per group per message is enough — multiple patterns in
+        // One flag per group per message is enough, multiple patterns in
         // the same group matching the same message shouldn't produce
         // duplicate flag rows of the same type.
         flags.push({ type: group.flagType, severity: group.severity, matchedPattern: pattern.source });
@@ -175,7 +175,7 @@ export function extractFirstLink(body: string): string | null {
 }
 
 /**
- * Curated allowlist for the §19.4 "known domain" check — not exhaustive,
+ * Curated allowlist for the §19.4 "known domain" check, not exhaustive,
  * just enough to distinguish common legitimate destinations from anything
  * else. A domain LIST heuristic (spec §12.4), never inferred by a model.
  */
@@ -195,7 +195,7 @@ export const KNOWN_SAFE_DOMAINS: ReadonlySet<string> = new Set([
   'eventbrite.com',
 ]);
 
-/** Extracts a lowercased, `www.`-stripped hostname from a URL or bare domain-like token. Best-effort/pure — never throws, returns null on anything unparseable. */
+/** Extracts a lowercased, `www.`-stripped hostname from a URL or bare domain-like token. Best-effort/pure, never throws, returns null on anything unparseable. */
 export function extractDomain(text: string): string | null {
   const withScheme = /^https?:\/\//i.test(text) ? text : `https://${text}`;
   try {
@@ -209,7 +209,7 @@ export function extractDomain(text: string): string | null {
 export interface LinkPresentationInput {
   url: string;
   /**
-   * Resolved by the caller via `trust.service#canSendClickableLinks` —
+   * Resolved by the caller via `trust.service#canSendClickableLinks`,
    * this function never re-derives that decision from a raw trust level
    * (spec direction: "call it, do not reimplement scoring").
    */
@@ -228,7 +228,7 @@ export interface LinkPresentationDecision {
  * Pure §19.4 presentation decision for one detected link: not clickable
  * for low-trust senders (or once the sender's hourly link quota is spent);
  * clickable-with-a-warning for an unrecognized domain otherwise. Never
- * modifies the message body — the caller renders the raw text as-is and
+ * modifies the message body, the caller renders the raw text as-is and
  * uses this decision only for how to *present* it.
  */
 export function decideLinkPresentation(input: LinkPresentationInput): LinkPresentationDecision {

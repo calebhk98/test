@@ -1,5 +1,5 @@
 /**
- * §25.5 Photo A/B Stats job — aggregates impressions/accepted interests
+ * §25.5 Photo A/B Stats job, aggregates impressions/accepted interests
  * into a per-user photo recommendation, ranked by accepted-interest rate
  * (never raw impressions, per C-7.3.4), gated behind the `photo_ab_testing`
  * flag.

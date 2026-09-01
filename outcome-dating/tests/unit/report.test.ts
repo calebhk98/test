@@ -53,12 +53,12 @@ test('submitReport never exposes the reporter identity in a way reachable by the
 
   // The only export that could plausibly be reachable from the REPORTED
   // user's side is `countRecentReportsAgainst` (a bare number, no
-  // reporter id at all) — assert its shape carries nothing identifying.
+  // reporter id at all), assert its shape carries nothing identifying.
   const count = await report.countRecentReportsAgainst(ctx, reportedId, 30);
   assert.equal(typeof count, 'number');
 });
 
-test('submitReport preserves the referenced conversation for automated investigation (spec §30.9) — no archive/mutation', async () => {
+test('submitReport preserves the referenced conversation for automated investigation (spec §30.9), no archive/mutation', async () => {
   const ctx = buildCtx();
   const reporterId = await insertUser(ctx);
   const reportedId = await insertUser(ctx);
@@ -115,7 +115,7 @@ test('scoreReport: a report from an actual match (shared conversation) outweighs
   assert.ok(matched > stranger);
 });
 
-test('scoreReport: recency matters — an old report scores lower than a fresh one, but never to zero', async () => {
+test('scoreReport: recency matters, an old report scores lower than a fresh one, but never to zero', async () => {
   const ctx = buildCtx();
   const reporterId = await insertUser(ctx);
   const reportedId = await insertUser(ctx);
@@ -151,7 +151,7 @@ test('scoreReport: repeated prior reports against the same target raise the weig
 });
 
 // =====================================================================
-// Anti-brigading discount — the explicitly required test (spec §18.5
+// Anti-brigading discount, the explicitly required test (spec §18.5
 // "Reason: Prevent brigading and false positives").
 // =====================================================================
 test('anti-brigading: reports from reporters sharing a device fingerprint are diminishingly weighted', async () => {
@@ -194,7 +194,7 @@ test('anti-brigading: reports from unrelated devices are NOT discounted by each 
   await report.submitReport(ctx1, { reportedId, category: 'harassment' });
 
   const reporter2 = await insertUser(ctx);
-  await insertAuthEvent(ctx, reporter2, 'device-B'); // different device — not the same cluster
+  await insertAuthEvent(ctx, reporter2, 'device-B'); // different device, not the same cluster
   const shape = { conversationId: null, messageId: null, category: 'harassment' as const, severity: 4, details: null, createdAt: ctx.clock.now() };
   const score = await report.scoreReport(ctx, { ...shape, id: 'x', reporterId: reporter2, reportedId });
 
@@ -231,7 +231,7 @@ test('countRecentReportsAgainst only counts reports within the window', async ()
 
   // Look at the count from a vantage point well after the report was
   // filed (the row's created_at is the DB's own real wall clock, not
-  // `ctx.clock` — advance a fresh ManualClock forward from "now" so the
+  // `ctx.clock`, advance a fresh ManualClock forward from "now" so the
   // window boundary is unambiguous either way, rather than racing a
   // same-instant comparison).
   const laterCtx = buildCtx({ now: new Date(Date.now() + 40 * 24 * 60 * 60 * 1000) });

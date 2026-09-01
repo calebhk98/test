@@ -2,15 +2,15 @@
  * Unit tests for the opt-in pending-interest cleanup
  * (`interest.service.ts#previewFilterCleanup` / `runFilterCleanup`),
  * built on the same `eligibility.service.ts#evaluateMutualEligibility`
- * Layer 2 uses. Own database (`odate_elig_autodecline`) — see
+ * Layer 2 uses. Own database (`odate_elig_autodecline`), see
  * `testCtxEligibility.ts`.
  *
  * ---------------------------------------------------------------------
- * PRODUCT-OWNER CORRECTION — read this before changing anything here:
+ * PRODUCT-OWNER CORRECTION, read this before changing anything here:
  * ---------------------------------------------------------------------
  * This file used to test a THIRD enforcement layer: `sweepAutoDecline-
  * ForRecipient`/`sweepAutoDeclineAll`, which auto-declined a recipient's
- * PENDING incoming interests the instant their filters changed —
+ * PENDING incoming interests the instant their filters changed,
  * intended to run automatically, inline, right after every filter save.
  * That was wrong: people narrow and widen their filters for ordinary
  * reasons, and doing so must never destroy a pending like or put a
@@ -19,28 +19,28 @@
  * The FIRST test below used to be named
  * "sweepAutoDeclineForRecipient: declines exactly the interests the
  * recipient's NEW filter now excludes, leaves the rest pending" and
- * asserted the opposite of what it asserts now — it drove a filter
+ * asserted the opposite of what it asserts now, it drove a filter
  * change straight into an auto-decline and checked that the excluded
  * interest ended up 'declined'. It has been INVERTED: it now drives the
  * exact same filter change through the real `filter.service#updateMyFilters`
- * call and asserts every pending interest — the one the new filter would
- * exclude included — is still 'pending' afterward, because a filter
+ * call and asserts every pending interest, the one the new filter would
+ * exclude included, is still 'pending' afterward, because a filter
  * change alone must never decline anything. See
- * 'a filter change alone never declines anything — every pending
+ * 'a filter change alone never declines anything, every pending
  * interest survives, `updateMyFilters` has no such side effect' below.
  *
  * What the old sweep was ever actually FOR (keeping a recipient's NEW
- * incoming likes close to a "yes") is Layer 2's job — see
- * `eligibility.test.ts` — and is untouched by this correction: Layer 2
+ * incoming likes close to a "yes") is Layer 2's job, see
+ * `eligibility.test.ts`, and is untouched by this correction: Layer 2
  * only ever refuses a send that has not happened yet.
  *
- * The remaining capability — a user who genuinely wants to tidy their
- * inbox after narrowing their filters — survives as `previewFilterCleanup`
+ * The remaining capability, a user who genuinely wants to tidy their
+ * inbox after narrowing their filters, survives as `previewFilterCleanup`
  * (read-only count, so the UI can say "this would decline N" before
  * anyone confirms) and `runFilterCleanup` (the actual decline), both
  * scoped to the calling user's own inbox, both callable ONLY by explicit
  * user action (see `src/http/routes/filters.routes.ts`'s
- * `/me/filters/cleanup*` routes) — never from a filter update, never
+ * `/me/filters/cleanup*` routes), never from a filter update, never
  * from a job. `sweepAutoDeclineAll` (the periodic/all-recipients variant)
  * has been deleted outright: there is no longer any background sweep for
  * it to serve, and a per-user opt-in action has no "all recipients" form.
@@ -107,7 +107,7 @@ async function trustScore(userId: string): Promise<number> {
 // change, on its own, must never decline anything.
 // =====================================================================
 
-test('a filter change alone never declines anything — every pending interest survives, `updateMyFilters` has no such side effect', async () => {
+test('a filter change alone never declines anything, every pending interest survives, `updateMyFilters` has no such side effect', async () => {
   const pool = getTestPool();
   const recipient = await makeUser(pool, { age: 30 });
   const senderWouldNowFail = await makeUser(pool, { age: 30 });
@@ -115,7 +115,7 @@ test('a filter change alone never declines anything — every pending interest s
   await setSelfAnswer(pool, senderWouldNowFail, 'has_children', 5); // "has kids"
   await setSelfAnswer(pool, senderStillEligible, 'has_children', 1); // "no kids"
 
-  // Both interests sent BEFORE the recipient had any filter at all — both legitimately eligible at send time.
+  // Both interests sent BEFORE the recipient had any filter at all, both legitimately eligible at send time.
   const iWouldNowFail = await interestService.sendInterest(ctxFor(senderWouldNowFail), recipient);
   const iEligible = await interestService.sendInterest(ctxFor(senderStillEligible), recipient);
   assert.equal(iWouldNowFail.status, 'pending');
@@ -128,9 +128,9 @@ test('a filter change alone never declines anything — every pending interest s
   ]);
 
   // Nothing about either interest changed. No decline, no notification,
-  // no trust impact — `updateMyFilters` touched only `hard_filters`.
+  // no trust impact, `updateMyFilters` touched only `hard_filters`.
   const stillFailsRow = await interestStatus(iWouldNowFail.id);
-  assert.equal(stillFailsRow.status, 'pending', 'the now-excluded interest must remain pending — a filter change must never auto-decline it');
+  assert.equal(stillFailsRow.status, 'pending', 'the now-excluded interest must remain pending, a filter change must never auto-decline it');
   assert.equal(stillFailsRow.declineOrigin, null);
   assert.equal(stillFailsRow.declinedAt, null);
 
@@ -140,9 +140,9 @@ test('a filter change alone never declines anything — every pending interest s
 
   // A fresh Layer-2 preview of the same recipient's inbox nonetheless
   // shows the mismatch is real (proves this isn't passing merely because
-  // the filter never took effect) — it just isn't acted on automatically.
+  // the filter never took effect), it just isn't acted on automatically.
   const preview = await interestService.previewFilterCleanup(ctxFor(recipient));
-  assert.equal(preview.wouldDecline, 1, 'the filter really did take effect — the cleanup preview can see the now-ineligible interest, it just was not auto-run');
+  assert.equal(preview.wouldDecline, 1, 'the filter really did take effect, the cleanup preview can see the now-ineligible interest, it just was not auto-run');
 });
 
 test('changing filters never touches a conversation: an already-accepted interest and its conversation survive a filter change that would exclude the other party', async () => {
@@ -166,7 +166,7 @@ test('changing filters never touches a conversation: an already-accepted interes
 });
 
 // =====================================================================
-// previewFilterCleanup — read-only, tells the user the count BEFORE
+// previewFilterCleanup, read-only, tells the user the count BEFORE
 // anything is declined.
 // =====================================================================
 
@@ -185,7 +185,7 @@ test('previewFilterCleanup reports how many pending interests would be declined,
   const preview = await interestService.previewFilterCleanup(ctxFor(recipient));
   assert.equal(preview.wouldDecline, 1);
 
-  // Calling preview again changes nothing — it never writes.
+  // Calling preview again changes nothing, it never writes.
   const previewAgain = await interestService.previewFilterCleanup(ctxFor(recipient));
   assert.equal(previewAgain.wouldDecline, 1);
 
@@ -198,7 +198,7 @@ test('previewFilterCleanup reports how many pending interests would be declined,
 });
 
 // =====================================================================
-// runFilterCleanup — the explicit, user-invoked decline.
+// runFilterCleanup, the explicit, user-invoked decline.
 // =====================================================================
 
 test('runFilterCleanup: declines exactly the pending interests the CALLING user\'s current filters exclude, leaves the rest pending', async () => {
@@ -267,7 +267,7 @@ test('a human decline is stamped decline_origin = "human", distinct from a clean
   assert.equal(row.declineOrigin, 'human');
 });
 
-test('the sender-visible Interest shape never carries decline_origin — cleanup vs human is not observable via listOutgoing', async () => {
+test('the sender-visible Interest shape never carries decline_origin, cleanup vs human is not observable via listOutgoing', async () => {
   const pool = getTestPool();
   const recipient = await makeUser(pool, { age: 30 });
   const sender = await makeUser(pool, { age: 30 });
@@ -358,7 +358,7 @@ test('runFilterCleanup never touches a non-pending interest (accepted survives a
   const { interest: accepted } = await interestService.acceptInterest(ctxFor(recipient), interest.id);
   assert.equal(accepted.status, 'accepted');
 
-  // Recipient tightens filters AFTER already accepting — an existing
+  // Recipient tightens filters AFTER already accepting, an existing
   // match must not be retroactively affected, cleanup included.
   await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
   const result = await interestService.runFilterCleanup(ctxFor(recipient));
@@ -368,7 +368,7 @@ test('runFilterCleanup never touches a non-pending interest (accepted survives a
   assert.equal(row.status, 'accepted');
 });
 
-test('runFilterCleanup only ever acts on the CALLING user\'s own inbox — it takes no recipientId to point at someone else\'s', async () => {
+test('runFilterCleanup only ever acts on the CALLING user\'s own inbox, it takes no recipientId to point at someone else\'s', async () => {
   const pool = getTestPool();
   const recipient = await makeUser(pool, { age: 30 });
   const otherUser = await makeUser(pool, { age: 30 });
@@ -379,7 +379,7 @@ test('runFilterCleanup only ever acts on the CALLING user\'s own inbox — it ta
   await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
 
   // otherUser has a pending interest of their own, unaffected by
-  // recipient's filter — running cleanup as otherUser must not touch
+  // recipient's filter, running cleanup as otherUser must not touch
   // recipient's inbox at all.
   const result = await interestService.runFilterCleanup(ctxFor(otherUser));
   assert.equal(result.declined, 0);
@@ -413,7 +413,7 @@ test('runFilterCleanup uses ctx.clock for declined_at, not the wall clock', asyn
 
 // =====================================================================
 // The scenario the product owner specifically asked to be proven: narrow
-// drastically, then widen back — pending interests and conversations
+// drastically, then widen back, pending interests and conversations
 // intact the entire time.
 // =====================================================================
 
@@ -462,15 +462,15 @@ test('narrowing filters drastically and then widening them back again leaves eve
   ]);
   await assertEverythingIntact();
 
-  // A preview at this point proves the narrowing genuinely took effect —
-  // both pending interests WOULD be declined by an explicit cleanup —
+  // A preview at this point proves the narrowing genuinely took effect,
+  // both pending interests WOULD be declined by an explicit cleanup,
   // it just wasn't run.
   const previewAfterNarrow = await interestService.previewFilterCleanup(ctxFor(recipient));
   assert.equal(previewAfterNarrow.wouldDecline, 2);
   await assertEverythingIntact();
 
   // 2) Narrow again, differently (overwriting the same filter key, plus
-  // adding a second deal-breaker) — still nothing touched.
+  // adding a second deal-breaker), still nothing touched.
   await filterService.updateMyFilters(ctxFor(recipient), [
     { filterKey: 'qb:has_children', operator: 'eq', value: 999, enabled: true },
     { filterKey: 'age_min', operator: 'gte', value: 90, enabled: true },
@@ -490,7 +490,7 @@ test('narrowing filters drastically and then widening them back again leaves eve
   assert.equal(previewAfterWiden.wouldDecline, 0);
   await assertEverythingIntact();
 
-  // And the pending interests are still fully actionable — the recipient
+  // And the pending interests are still fully actionable, the recipient
   // can still accept one, proving they were never silently harmed.
   const { interest: acceptedB, conversation: conversationB } = await interestService.acceptInterest(
     ctxFor(recipient),

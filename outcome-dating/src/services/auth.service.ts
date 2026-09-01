@@ -10,69 +10,69 @@ import { getEnv } from '../config/env.js';
 import type { AccessTokenPayload, AuthTokens, RefreshTokenPayload, User, UserStatus } from '../domain/types.js';
 
 /**
- * auth.service — account creation, login, and token lifecycle.
+ * auth.service, account creation, login, and token lifecycle.
  * Spec: §5 (signup/verification), §24.1 (routes), §28.1-§28.2 (password/token security).
  *
  * Owning agent: A.
  *
  * Invariants this module MUST uphold (see INTERFACES.md):
- *  - No phone number or government ID is ever required (§5.2, §5.3) — a
+ *  - No phone number or government ID is ever required (§5.2, §5.3), a
  *    corrected reading of that rule, worth spelling out precisely: it does
  *    NOT mean no phone number anywhere, it means a phone number must never
  *    be MANDATORY for any flow (not registration, not sending an interest,
- *    not proposing a date, not appearing in discovery — nothing but the
+ *    not proposing a date, not appearing in discovery, nothing but the
  *    SMS channel itself). An OPTIONAL, user-added, verified-by-one-time-code
  *    phone number is fully supported below (`requestPhoneVerification` /
- *    `verifyPhone` / `removePhone` / `getMyPhoneStatus`) — not requiring
+ *    `verifyPhone` / `removePhone` / `getMyPhoneStatus`), not requiring
  *    one is what keeps the product usable for the growing share of real
  *    users who don't carry a conventional phone number; not OFFERING one
  *    would just mean nobody who wants SMS notifications can have them.
  *    `tests/unit/phone.test.ts`'s "phone-less core loop" test is the
  *    executable proof of the MANDATORY half of this invariant.
  *  - `register` rejects under-18 signups (also enforced by the `users_min_age`
- *    DB check constraint — this is defense in depth, not the only gate).
- *  - Passwords are hashed with `src/lib/hash.ts` (bcrypt) — the plaintext
+ *    DB check constraint, this is defense in depth, not the only gate).
+ *  - Passwords are hashed with `src/lib/hash.ts` (bcrypt), the plaintext
  *    password never reaches storage or logs.
  *  - `refresh` rotates the refresh token (old one is invalidated) so reuse
  *    of a stolen-then-superseded refresh token is detectable (§28.2).
  *
  * Callers: every other module receives an already-authenticated `Ctx`
  * (HTTP middleware calls `verifyAccessToken` once per request and builds
- * `ctx.actor` from the result) — no other service should import this
+ * `ctx.actor` from the result), no other service should import this
  * module.
  *
  * Beyond the frozen export list, this file adds `requestEmailVerification`
- * and `verifyEmail` (§6.2 email-verification trust signal — "issue/consume"
+ * and `verifyEmail` (§6.2 email-verification trust signal, "issue/consume"
  * per the build brief). Nothing in INTERFACES.md's "may call" graph lists
  * anyone importing `auth.service`, so these additions are safe: they don't
  * change any signature another agent's code depends on. The API agent
  * needs to wire routes for these two (e.g. `POST /auth/verify-email`,
- * `POST /auth/resend-verification`) — flagged in the build report.
+ * `POST /auth/resend-verification`), flagged in the build report.
  *
  * Also beyond the frozen export list (this build): the optional-phone
- * lifecycle — `requestPhoneVerification`, `verifyPhone`, `removePhone`,
- * `getMyPhoneStatus` (self-service, masked) — plus `getVerifiedPhoneForUser`,
+ * lifecycle, `requestPhoneVerification`, `verifyPhone`, `removePhone`,
+ * `getMyPhoneStatus` (self-service, masked), plus `getVerifiedPhoneForUser`,
  * an internal (system-or-self) read the `notifications/**` SMS channel
  * calls to resolve a send target and to gate SMS eligibility, exactly the
  * trust boundary `devices.ts#listActiveDeviceTokensForUser` and
  * `preferences.ts#getContentPreviewForUser` already use for their own
  * cross-module internal reads. Wired to HTTP as `POST /auth/phone`,
  * `POST /auth/phone/verify`, `DELETE /auth/phone`, `GET /auth/phone` in
- * `src/http/routes/auth.routes.ts` (this same build — additive routes,
+ * `src/http/routes/auth.routes.ts` (this same build, additive routes,
  * see `routeTable.ts`).
  *
  * Phone verification delivery follows the exact same "issue token/code,
- * never actually send it — that's out of scope for this leaf module"
+ * never actually send it, that's out of scope for this leaf module"
  * pattern `requestEmailVerification`/`forgotPassword` already establish
  * below: the raw one-time code is hashed before it ever touches the
  * database (same discipline as `email_verification_tokens.token_hash` /
  * `password_reset_tokens.token_hash`) and is never logged or returned to
  * the caller. A production deployment wires the actual SMS send (through
  * `notifications/**`'s `SmsSender` port, or a dedicated transactional path
- * — a one-time code is time-critical in a way that argues against routing
+ * a one-time code is time-critical in a way that argues against routing
  * it through the coalescing/preference/quiet-hours pipeline built for
  * ordinary event notifications) the same way real email delivery for
- * `requestEmailVerification`/`forgotPassword` still needs wiring — flagged
+ * `requestEmailVerification`/`forgotPassword` still needs wiring, flagged
  * in this build's report, not a gap unique to phone.
  */
 
@@ -85,12 +85,12 @@ import type { AccessTokenPayload, AuthTokens, RefreshTokenPayload, User, UserSta
 const PASSWORD_RESET_TOKEN_TTL_HOURS = 2;
 const EMAIL_VERIFICATION_TOKEN_TTL_HOURS = 48;
 
-// ---- Phone verification (optional phone number — see module doc) ----
+// ---- Phone verification (optional phone number, see module doc) ----
 /** A one-time code is short-lived: long enough to receive and type an SMS, short enough that a leaked/intercepted old code is worthless quickly. */
 const PHONE_VERIFICATION_CODE_TTL_MINUTES = 10;
-/** Wrong-code attempts allowed against one issued code before it's dead and a fresh one (via `requestPhoneVerification`) is required — caps brute-forcing a 6-digit code (1e6 space) to a vanishingly small success probability. */
+/** Wrong-code attempts allowed against one issued code before it's dead and a fresh one (via `requestPhoneVerification`) is required, caps brute-forcing a 6-digit code (1e6 space) to a vanishingly small success probability. */
 const PHONE_VERIFICATION_MAX_ATTEMPTS = 5;
-/** Max `requestPhoneVerification` calls (i.e. codes issued/SMS notionally sent) per user within the window below — the "rate-limited" half of the build brief's "verification by one-time code, rate-limited, with expiry and a cap on attempts". */
+/** Max `requestPhoneVerification` calls (i.e. codes issued/SMS notionally sent) per user within the window below, the "rate-limited" half of the build brief's "verification by one-time code, rate-limited, with expiry and a cap on attempts". */
 const PHONE_VERIFICATION_MAX_REQUESTS_PER_WINDOW = 5;
 const PHONE_VERIFICATION_REQUEST_WINDOW_MINUTES = 60;
 
@@ -189,7 +189,7 @@ function mapUser(row: UserRow): User {
 // Age (§5.1 "at least 18 years old", computed from birthdate)
 // =====================================================================
 
-/** Whole years between `birthdate` (YYYY-MM-DD) and `asOf`, both treated as UTC calendar dates — exact-18-today passes, one day short fails. */
+/** Whole years between `birthdate` (YYYY-MM-DD) and `asOf`, both treated as UTC calendar dates, exact-18-today passes, one day short fails. */
 export function calculateAge(birthdate: string, asOf: Date): number {
   const [by, bm, bd] = birthdate.split('-').map(Number) as [number, number, number];
   const ay = asOf.getUTCFullYear();
@@ -213,11 +213,11 @@ function issueTokens(ctx: Ctx, userId: string, sessionId: string): AuthTokens {
   const accessExpSec = nowSec + env.ACCESS_TOKEN_TTL_MINUTES * 60;
   const refreshExpSec = nowSec + env.REFRESH_TOKEN_TTL_DAYS * 24 * 60 * 60;
 
-  // `jti` (a random nonce, not part of the domain `*TokenPayload` shape —
+  // `jti` (a random nonce, not part of the domain `*TokenPayload` shape,
   // added structurally here rather than by editing the shared
   // `domain/types.ts`) guarantees two tokens signed within the same clock
   // second are never byte-identical. Without it, two rotations in the same
-  // second (a real possibility — this is exactly what `refresh` does twice
+  // second (a real possibility, this is exactly what `refresh` does twice
   // in a row) would produce the *same* compact token both times, which
   // would silently defeat reuse detection (the "old" and "new" refresh
   // token would be indistinguishable). `verify<...Payload>` below simply
@@ -256,7 +256,7 @@ async function createRefreshSession(ctx: Ctx, userId: string): Promise<AuthToken
 
 /**
  * Create a new account. Requires §5.1's five fields; enforces the §5.1
- * minimum age of 18. Does NOT create a `profiles` row — profile setup is a
+ * minimum age of 18. Does NOT create a `profiles` row, profile setup is a
  * separate step (`profile.service.ts`) per the Phase 1 exit criteria
  * ("user can register" is distinct from "user can create profile").
  */
@@ -275,10 +275,10 @@ export async function register(ctx: Ctx, input: RegisterInput): Promise<{ user: 
     throw new ValidationError('acceptedTermsAt cannot be in the future.');
   }
 
-  // §5.1 "MUST be at least 18 years old" — app-level gate, checked against
+  // §5.1 "MUST be at least 18 years old", app-level gate, checked against
   // ctx.clock (never Date.now()) so tests control "today". This is a hard
   // short-circuit before any DB write; the `users_min_age` CHECK constraint
-  // (which uses real wall-clock CURRENT_DATE) is defense in depth only —
+  // (which uses real wall-clock CURRENT_DATE) is defense in depth only,
   // this check must never rely on that constraint to catch anything.
   const age = calculateAge(parsed.birthdate, ctx.clock.now());
   if (age < MIN_AGE_YEARS) {
@@ -331,7 +331,7 @@ export async function login(ctx: Ctx, input: LoginInput): Promise<{ user: User; 
   }
   const success = Boolean(row) && passwordOk && row!.status === 'active';
 
-  // §23.2 user_auth_events — recorded for both success and failure so the
+  // §23.2 user_auth_events, recorded for both success and failure so the
   // trust/moderation agents can see login attempts, per §6.2/§18.2 device
   // and velocity signals. `user_id` is null for an unknown email.
   await ctx.db.query(
@@ -364,7 +364,7 @@ export async function logout(ctx: Ctx, input: { refreshToken: string }): Promise
   try {
     payload = verify<RefreshTokenPayload>(input.refreshToken, authSecret());
   } catch {
-    // Logging out with an already-garbage token is a no-op, not an error —
+    // Logging out with an already-garbage token is a no-op, not an error,
     // the caller's goal (no valid session) is already achieved.
     return;
   }
@@ -459,7 +459,7 @@ export async function forgotPassword(ctx: Ctx, input: { email: string }): Promis
     [userId, tokenHash, ctx.clock.now(), expiresAt],
   );
 
-  // Delivery (emailing `rawToken`) is out of scope for this leaf module —
+  // Delivery (emailing `rawToken`) is out of scope for this leaf module,
   // a real deployment wires this through an email sender. Never log the
   // raw token (it's a bearer credential for the account).
   ctx.logger.info('auth.password_reset_requested', { userId });
@@ -513,7 +513,7 @@ async function createEmailVerificationToken(ctx: Ctx, userId: string): Promise<{
   return { token: rawToken, expiresAt };
 }
 
-/** (Re)issues an email verification token for the logged-in caller. Not part of INTERFACES.md's frozen export list — see module doc. */
+/** (Re)issues an email verification token for the logged-in caller. Not part of INTERFACES.md's frozen export list, see module doc. */
 export async function requestEmailVerification(ctx: Ctx): Promise<void> {
   if (ctx.actor.type !== 'user') {
     throw new ForbiddenError('Only an authenticated user can request email verification.');
@@ -522,7 +522,7 @@ export async function requestEmailVerification(ctx: Ctx): Promise<void> {
   ctx.logger.info('auth.email_verification_requested', { userId: ctx.actor.userId });
 }
 
-/** Consumes an email verification token, marking the account's email verified. Not part of INTERFACES.md's frozen export list — see module doc. */
+/** Consumes an email verification token, marking the account's email verified. Not part of INTERFACES.md's frozen export list, see module doc. */
 export async function verifyEmail(ctx: Ctx, input: { token: string }): Promise<void> {
   const tokenHash = sha256Hex(input.token);
 
@@ -554,7 +554,7 @@ export async function verifyEmail(ctx: Ctx, input: { token: string }): Promise<v
  * Verify a compact access token (see `src/lib/signing.ts`) and return the
  * subject. HTTP middleware calls this once per authenticated request to
  * build `ctx.actor`. Throws `UnauthorizedError` (not `InvalidSignatureError`
- * — that's an implementation detail this function should catch and
+ * that's an implementation detail this function should catch and
  * translate) on any invalid/expired token.
  */
 export async function verifyAccessToken(ctx: Ctx, accessToken: string): Promise<{ userId: string }> {
@@ -584,7 +584,7 @@ export async function verifyAccessToken(ctx: Ctx, accessToken: string): Promise<
 }
 
 // =====================================================================
-// Optional phone number (build correction — see module doc)
+// Optional phone number (build correction, see module doc)
 //
 // Lives with the account (this file), not the profile: `user_phones`
 // (015_phone.sql) is a separate table auth.service.ts owns outright, the
@@ -595,8 +595,8 @@ export async function verifyAccessToken(ctx: Ctx, accessToken: string): Promise<
 // =====================================================================
 
 function normalizePhoneE164(raw: string): string {
-  // Strip the punctuation people commonly type/paste — spaces, hyphens,
-  // dots, parens — but do NOT attempt to infer a country calling code from
+  // Strip the punctuation people commonly type/paste, spaces, hyphens,
+  // dots, parens, but do NOT attempt to infer a country calling code from
   // a national-format number (that needs a phone-number-parsing library
   // this foundation layer deliberately doesn't depend on). The client is
   // expected to send an already-E.164-shaped number; `country` is supplied
@@ -609,7 +609,7 @@ const COUNTRY_CODE_REGEX = /^[A-Z]{2}$/;
 
 const RequestPhoneVerificationSchema = z.object({
   phoneNumber: z.string().trim().min(3).max(20),
-  /** ISO 3166-1 alpha-2, e.g. "US" — stored alongside the E.164 number (build brief: "store it normalised (E.164) with the country"). */
+  /** ISO 3166-1 alpha-2, e.g. "US", stored alongside the E.164 number (build brief: "store it normalised (E.164) with the country"). */
   country: z
     .string()
     .trim()
@@ -627,10 +627,10 @@ export interface RequestPhoneVerificationInput {
 }
 
 /**
- * Masked, self-service view of the calling user's own phone state — never
+ * Masked, self-service view of the calling user's own phone state, never
  * the full number (see module doc / build report: "never expose it to
  * another user" is enforced here even more strictly, by never returning
- * the full number through ANY route, including the owner's own — the
+ * the full number through ANY route, including the owner's own, the
  * owner already knows the number they typed, so a `last2` confirmation
  * plus verification status is enough UI feedback without ever putting the
  * full E.164 value on the wire).
@@ -639,7 +639,7 @@ export interface PhoneStatusView {
   hasPhone: boolean;
   verified: boolean;
   countryCode: string | null;
-  /** Last 2 digits of the E.164 number only — e.g. "34" for "+14155551234". Never the full number. */
+  /** Last 2 digits of the E.164 number only, e.g. "34" for "+14155551234". Never the full number. */
   last2: string | null;
   addedAt: Date | null;
   verifiedAt: Date | null;
@@ -655,7 +655,7 @@ interface UserPhoneRow {
 }
 
 function generatePhoneVerificationCode(): string {
-  // 6 numeric digits, zero-padded — the conventional SMS OTP shape. Not
+  // 6 numeric digits, zero-padded, the conventional SMS OTP shape. Not
   // `newHumanCode` (lib/ids.ts): that alphabet is base32 letters+digits,
   // meant to be read off a screen and typed by hand (voucher codes); an
   // SMS code should be the digits-only shape every phone keypad/autofill
@@ -666,11 +666,11 @@ function generatePhoneVerificationCode(): string {
 /**
  * (Re)issues a one-time verification code for `input.phoneNumber` (rate-
  * limited, see `PHONE_VERIFICATION_MAX_REQUESTS_PER_WINDOW`). Always resets
- * `user_phones.verified_at` to NULL for the calling user — adding a number
+ * `user_phones.verified_at` to NULL for the calling user, adding a number
  * for the first time and changing an already-verified number are the same
  * operation, and both require a fresh code, never carrying over a prior
  * verification. Delivery of the actual SMS is out of scope for this leaf
- * module (see module doc) — the raw code is never returned or logged.
+ * module (see module doc), the raw code is never returned or logged.
  */
 export async function requestPhoneVerification(ctx: Ctx, input: RequestPhoneVerificationInput): Promise<void> {
   const { userId } = requireUserActor(ctx);
@@ -696,7 +696,7 @@ export async function requestPhoneVerification(ctx: Ctx, input: RequestPhoneVeri
   }
 
   // A VERIFIED number already claimed by a different account can't be
-  // re-claimed here — matches the DB-level partial unique index
+  // re-claimed here, matches the DB-level partial unique index
   // (015_phone.sql) but checked first for a clean, typed error rather than
   // surfacing a raw constraint violation.
   const { rows: claimedRows } = await ctx.db.query<{ user_id: string }>(
@@ -708,7 +708,7 @@ export async function requestPhoneVerification(ctx: Ctx, input: RequestPhoneVeri
   }
 
   // Any code still pending for this user (for whatever number it was
-  // issued against) is now stale — a fresh request always supersedes it,
+  // issued against) is now stale, a fresh request always supersedes it,
   // so it can never later be used to "verify" a number the user has since
   // changed away from.
   await ctx.db.query(
@@ -734,7 +734,7 @@ export async function requestPhoneVerification(ctx: Ctx, input: RequestPhoneVeri
     [userId, e164, codeHash, now, expiresAt],
   );
 
-  // Never log `code` itself — it's a bearer credential for this step, same
+  // Never log `code` itself, it's a bearer credential for this step, same
   // rule as the password-reset/email-verification raw tokens above.
   ctx.logger.info('auth.phone_verification_requested', { userId });
 }
@@ -789,12 +789,12 @@ export async function verifyPhone(ctx: Ctx, input: { code: string }): Promise<vo
   // Deliberately NOT wired here: bumping trust score for a verified phone.
   // `trust.service.ts` is outside this build's file-ownership boundary and
   // its own "may call" graph does not list auth.service among the modules
-  // wired to push `trust_events` — see this build's report for the
+  // wired to push `trust_events`, see this build's report for the
   // suggested weight and why it's a report, not a direct edit.
 }
 
 /**
- * Removes the calling user's phone number — as easy as adding one (a
+ * Removes the calling user's phone number, as easy as adding one (a
  * single call, no confirmation flow beyond auth), and the entire
  * "immediately disable SMS" story: `notifications/delivery.ts` re-checks
  * `getVerifiedPhoneForUser` live on every SMS send, so deleting this row
@@ -826,7 +826,7 @@ function mapPhoneStatus(row: UserPhoneRow | undefined): PhoneStatusView {
   };
 }
 
-/** Self-service, masked phone status for the calling user (never the full number — see `PhoneStatusView` doc). */
+/** Self-service, masked phone status for the calling user (never the full number, see `PhoneStatusView` doc). */
 export async function getMyPhoneStatus(ctx: Ctx): Promise<PhoneStatusView> {
   const { userId } = requireUserActor(ctx);
   const { rows } = await ctx.db.query<UserPhoneRow>('SELECT * FROM user_phones WHERE user_id = $1', [userId]);
@@ -835,14 +835,14 @@ export async function getMyPhoneStatus(ctx: Ctx): Promise<PhoneStatusView> {
 
 /**
  * Internal (system, or the user themselves) read of a user's currently
- * VERIFIED phone, full E.164 value included — the one place the full
+ * VERIFIED phone, full E.164 value included, the one place the full
  * number is ever returned by this module, and only to a caller who is
  * either `system` or that same user, never another user. This is what
  * `notifications/**` calls to (a) decide SMS eligibility for an event
- * (`outbox.ts`) and (b) resolve the actual send target (`delivery.ts`) —
+ * (`outbox.ts`) and (b) resolve the actual send target (`delivery.ts`),
  * same trust boundary as `devices.ts#listActiveDeviceTokensForUser` /
  * `preferences.ts#getContentPreviewForUser`. Returns `null` for no phone,
- * an unverified phone, or a phone that's since been removed — callers
+ * an unverified phone, or a phone that's since been removed, callers
  * never need to check `verified_at` themselves.
  */
 export async function getVerifiedPhoneForUser(

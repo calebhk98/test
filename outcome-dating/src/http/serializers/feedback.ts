@@ -1,11 +1,11 @@
 /**
- * src/http/serializers/feedback.ts — `POST`/`GET .../check-in` response
+ * src/http/serializers/feedback.ts, `POST`/`GET .../check-in` response
  * shape.
  *
  * This is the explicit allowlist point for the post-date check-in's
  * safety-isolation guarantee (see postDateFeedback.service.ts's module
  * doc, "SAFETY ISOLATION"): every field a check-in response can ever
- * carry is named here, by explicit field access, never a spread — so
+ * carry is named here, by explicit field access, never a spread, so
  * "does this leak anything to anyone but the submitter" is answerable by
  * reading this one small function.
  *
@@ -15,7 +15,7 @@
  * `WHERE user_id = <the calling actor>`) that ever produces the OTHER
  * participant's row for a request to reach this serializer with. Safety
  * isolation here is structural, not a field this function withholds
- * conditionally — there is deliberately no "if this isn't the owner,
+ * conditionally, there is deliberately no "if this isn't the owner,
  * hide safetyFlag" branch, because the caller can never be anyone but the
  * owner in the first place.
  */

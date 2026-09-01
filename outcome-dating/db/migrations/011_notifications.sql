@@ -2,7 +2,7 @@
 --
 -- Notification DELIVERY build (this build; "NOTIFICATION DELIVERY" agent).
 -- notification.service.ts (§20, another agent's file, read-only to this
--- build) already owns the `notifications` table from 001_init.sql — the
+-- build) already owns the `notifications` table from 001_init.sql, the
 -- in-app notification center's source of truth. This migration does NOT
 -- touch that table or any table owned by another agent's migration; it
 -- adds five new tables that the delivery pipeline
@@ -26,7 +26,7 @@ CREATE TABLE device_tokens (
   user_id       uuid NOT NULL REFERENCES users (id) ON DELETE CASCADE,
   platform      text NOT NULL CHECK (platform IN ('ios', 'android', 'web')),
   -- Stable per-install identifier (vendor/installation id), kept for
-  -- observability/debugging only — NOT part of the uniqueness key below.
+  -- observability/debugging only, NOT part of the uniqueness key below.
   device_id     text NOT NULL,
   push_token    text NOT NULL,
   enabled       boolean NOT NULL DEFAULT true,
@@ -40,8 +40,8 @@ CREATE TABLE device_tokens (
   -- not duplicate"). It is ALSO the mechanism that makes a token moving
   -- to a new user (shared/resold device) safe: the row's `user_id` is
   -- reassigned in place, so the previous owner's next
-  -- "which tokens belong to me" query simply no longer returns this row
-  -- — there is no separate revoke step to forget, and no window where
+  -- "which tokens belong to me" query simply no longer returns this row.
+  -- There is no separate revoke step to forget, and no window where
   -- two users both appear to own the token.
   CONSTRAINT device_tokens_platform_token_key UNIQUE (platform, push_token)
 );
@@ -53,8 +53,8 @@ CREATE INDEX idx_device_tokens_device ON device_tokens (user_id, device_id);
 -- notification_preferences (per user x category channel toggles)
 -- =========================================================================
 -- Absence of a row for (user_id, category) means "use the code-level
--- default" (src/services/notifications/preferences.ts DEFAULT_PREFERENCES)
--- — same "no row = default" convention config_entries uses (§21), so a
+-- default" (src/services/notifications/preferences.ts DEFAULT_PREFERENCES),
+-- the same "no row = default" convention config_entries uses (§21), so a
 -- brand-new user needs no seeding pass. 'safety' is deliberately NOT a
 -- legal value here: safety_notice is not user-configurable (see
 -- outbox.ts) so no preference row can ever apply to it.
@@ -71,7 +71,7 @@ CREATE TABLE notification_preferences (
 -- =========================================================================
 -- notification_quiet_hours (per-user local-time quiet window, §20 delivery policy)
 -- =========================================================================
--- Absence of a row means quiet hours are OFF (24/7 delivery allowed) —
+-- Absence of a row means quiet hours are OFF (24/7 delivery allowed),
 -- matches `enabled` defaulting to false below, so an explicit row is only
 -- ever written once a user actually sets a window.
 CREATE TABLE notification_quiet_hours (
@@ -91,7 +91,7 @@ CREATE TABLE notification_quiet_hours (
 -- =========================================================================
 -- notification_content_preview (lock-screen preview opt-in; default OFF)
 -- =========================================================================
--- Absence of a row means previews are OFF — a lock-screen preview is
+-- Absence of a row means previews are OFF, a lock-screen preview is
 -- visible to anyone holding the phone, so this is an opt-IN, never
 -- opt-out (build brief).
 CREATE TABLE notification_content_preview (
@@ -117,7 +117,7 @@ CREATE TABLE notification_dedup_log (
 -- notification_outbox (the actual push/email delivery queue)
 -- =========================================================================
 -- One row per (user, coalescing group, channel) currently in flight.
--- `channel` is deliberately only 'push' | 'email' here — the in-app
+-- `channel` is deliberately only 'push' | 'email' here, the in-app
 -- notification center is notification.service.ts's `notifications` table
 -- (§20), which enqueueNotification calls into directly for canonical
 -- event types; it is not re-modeled in this outbox (see outbox.ts doc).
@@ -125,7 +125,7 @@ CREATE TABLE notification_outbox (
   id                uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id           uuid NOT NULL REFERENCES users (id) ON DELETE CASCADE,
   -- Superset of notification.service.ts's NotificationEventType plus
-  -- 'message_received' (not in that frozen enum — see this build's
+  -- 'message_received' (not in that frozen enum, see this build's
   -- report). Stored as free text, not a CHECK-constrained enum, so this
   -- table never needs a migration to add an event the delivery layer
   -- wants to support ahead of the shared enum catching up.

@@ -93,7 +93,7 @@ const TREND_MAX_WEEKS = 52;
 const RESPONSE_TIME_CONVERSATION_LIMIT = 30;
 const RESPONSE_TIME_MESSAGE_LIMIT = 2000;
 
-/** A count of OTHER people, suppressed below `MIN_SUPPRESSIBLE_COHORT` — see module doc. */
+/** A count of OTHER people, suppressed below `MIN_SUPPRESSIBLE_COHORT`, see module doc. */
 export interface SuppressibleCount {
   value: number | null;
   suppressed: boolean;
@@ -110,7 +110,7 @@ function rate(numerator: number, denominator: number): number | null {
 }
 
 // =====================================================================
-// Funnel + completeness + response behaviour + date outcomes — one
+// Funnel + completeness + response behaviour + date outcomes, one
 // composite call, all bounded per-user queries.
 // =====================================================================
 
@@ -215,7 +215,7 @@ export interface UserCompleteness {
   profileCompleteness: number;
   questionsAnswered: number;
   questionsAvailable: number;
-  /** Static, non-numeric-weight copy — never the scoring formula. */
+  /** Static, non-numeric-weight copy, never the scoring formula. */
   note: string;
 }
 
@@ -230,7 +230,7 @@ export async function getMyCompleteness(ctx: Ctx): Promise<UserCompleteness> {
     profileCompleteness,
     questionsAnswered: Number(answeredRow.rows[0]?.n ?? '0'),
     questionsAvailable: Number(availableRow.rows[0]?.n ?? '0'),
-    note: 'A fuller profile and more answered questions give the matching system more to work with — they help you be discovered by, and matched with, more compatible people.',
+    note: 'A fuller profile and more answered questions give the matching system more to work with, they help you be discovered by, and matched with, more compatible people.',
   };
 }
 
@@ -316,7 +316,7 @@ export interface DateOutcomeSummary {
 export async function getMyDateOutcomes(ctx: Ctx): Promise<DateOutcomeSummary> {
   const { userId } = requireUserActor(ctx);
 
-  // Deliberately selects ONLY outcome/positive/would_meet_again — never
+  // Deliberately selects ONLY outcome/positive/would_meet_again, never
   // safety_flag/safety_details/notes/report_id, even for the row's own
   // owner. See module doc.
   const { rows } = await ctx.db.query<{ outcome: string | null; positive: boolean | null; would_meet_again: boolean | null }>(
@@ -345,7 +345,7 @@ export interface UserStatsOverview {
   generatedAt: Date;
 }
 
-/** One composite call for the main stats page — all four sections above, run in parallel. */
+/** One composite call for the main stats page, all four sections above, run in parallel. */
 export async function getMyStatsOverview(ctx: Ctx): Promise<UserStatsOverview> {
   requireUserActor(ctx); // fail fast/uniformly before issuing any query
   const [funnel, completeness, responseBehaviour, dateOutcomes] = await Promise.all([
@@ -358,7 +358,7 @@ export async function getMyStatsOverview(ctx: Ctx): Promise<UserStatsOverview> {
 }
 
 // =====================================================================
-// Trends over time — the user against their OWN past, never against
+// Trends over time, the user against their OWN past, never against
 // anyone else.
 // =====================================================================
 
@@ -422,7 +422,7 @@ export async function getMyStatsTrends(ctx: Ctx, opts?: { weeks?: number }): Pro
 }
 
 // =====================================================================
-// Photo performance — accepted-interest rate is the metric, never raw
+// Photo performance, accepted-interest rate is the metric, never raw
 // impressions/views (see photoExperiment.service.ts's own invariant,
 // reused here rather than re-derived).
 // =====================================================================
@@ -432,7 +432,7 @@ export interface PhotoStatEntry {
   impressions: number;
   interestsSent: number;
   interestsAccepted: number;
-  /** interestsAccepted / impressions — the metric this product deliberately ranks on, not raw impressions. Null if too few impressions to be meaningful. */
+  /** interestsAccepted / impressions, the metric this product deliberately ranks on, not raw impressions. Null if too few impressions to be meaningful. */
   acceptedInterestRate: number | null;
   recommended: boolean;
 }

@@ -1,5 +1,5 @@
 /**
- * tests/unit/safetyFixes.test.ts — SAF-1 (minor_suspected corroboration)
+ * tests/unit/safetyFixes.test.ts, SAF-1 (minor_suspected corroboration)
  * and SAF-6 (multi-signal anti-brigading) proofs, per docs/risk-review.md.
  *
  * Self-contained: this file owns its OWN dedicated Postgres database
@@ -35,7 +35,7 @@ import * as moderation from '../../src/services/moderation.service.js';
 import { ForbiddenError } from '../../src/lib/errors.js';
 
 // ---------------------------------------------------------------------
-// Self-contained DB/ctx setup (see module doc — deliberately NOT shared
+// Self-contained DB/ctx setup (see module doc, deliberately NOT shared
 // with any other agent's test helper file).
 // ---------------------------------------------------------------------
 
@@ -126,13 +126,13 @@ async function insertCredibleReporter(ctx: Ctx, trustLevel: TrustLevel = 'truste
 }
 
 // =========================================================================
-// SAF-1 — minor_suspected corroboration model.
+// SAF-1, minor_suspected corroboration model.
 // =========================================================================
 
 test('SAF-1: a single report from a brand-new, low-trust reporter never suspends, and never even applies the interim action', async () => {
   const ctx = buildCtx();
   const reportedId = await insertUser(ctx);
-  // Brand new (createdAt ~ now) AND limited trust — fails BOTH credibility gates.
+  // Brand new (createdAt ~ now) AND limited trust, fails BOTH credibility gates.
   const reporterId = await insertUser(ctx, { trustLevel: 'limited', createdAt: new Date() });
   const reporterCtx = buildCtx({ actor: userActor(reporterId, 'limited') });
 
@@ -141,13 +141,13 @@ test('SAF-1: a single report from a brand-new, low-trust reporter never suspends
   const page = await moderation.listModerationActions(ctx, reportedId);
   // Strongest possible outcome: no credible signal at all means the
   // minor_suspected fast path never fires, and (per the SAF-1 fix) this
-  // category is excluded from the general score ladder entirely — so NO
+  // category is excluded from the general score ladder entirely, so NO
   // moderation action is taken at all, not even a warning.
-  assert.equal(page.items.length, 0, 'must never take any action — let alone suspend — on one uncredible report');
+  assert.equal(page.items.length, 0, 'must never take any action, let alone suspend, on one uncredible report');
   assert.equal(await moderation.isVisibleInDiscovery(ctx, reportedId), true);
 });
 
-test('SAF-1: a single report — even from the most credible possible reporter — applies only the fast interim action, never suspension', async () => {
+test('SAF-1: a single report, even from the most credible possible reporter, applies only the fast interim action, never suspension', async () => {
   const ctx = buildCtx();
   const reportedId = await insertUser(ctx);
   const reporterId = await insertCredibleReporter(ctx, 'elite', 365);
@@ -177,7 +177,7 @@ test('SAF-1: two independent, non-clustered, credible reporters escalate to susp
   assert.equal(await moderation.isVisibleInDiscovery(ctx, reportedId), false);
 });
 
-test('SAF-1: a brigade of sock-puppets sharing IP + creation-time proximity (but each a DIFFERENT device fingerprint) is collapsed to ONE corroborator, not N — stays at restriction', async () => {
+test('SAF-1: a brigade of sock-puppets sharing IP + creation-time proximity (but each a DIFFERENT device fingerprint) is collapsed to ONE corroborator, not N, stays at restriction', async () => {
   const ctx = buildCtx();
   const reportedId = await insertUser(ctx);
   const sharedIp = '203.0.113.7';
@@ -185,7 +185,7 @@ test('SAF-1: a brigade of sock-puppets sharing IP + creation-time proximity (but
 
   for (let i = 0; i < 4; i++) {
     const reporterId = await insertUser(ctx, { trustLevel: 'trusted', createdAt: burstCreatedAt });
-    // A DIFFERENT fingerprint every time — the exact SAF-6 evasion attempt —
+    // A DIFFERENT fingerprint every time, the exact SAF-6 evasion attempt,
     // but the SAME server-observed IP and the same account-creation burst.
     await insertAuthEvent(ctx, reporterId, `spoofed-fingerprint-${i}`, sharedIp);
     await report.submitReport(buildCtx({ actor: userActor(reporterId, 'trusted') }), { reportedId, category: 'minor_suspected' });
@@ -212,7 +212,7 @@ test('SAF-1: reports from genuinely unrelated credible reporters (no shared IP/f
   assert.equal(page.items[0]?.action, 'suspension');
 });
 
-test('SAF-1: false-report consequence — marking a minor_suspected report unfounded penalizes the reporter and durably lowers their future credibility', async () => {
+test('SAF-1: false-report consequence, marking a minor_suspected report unfounded penalizes the reporter and durably lowers their future credibility', async () => {
   const ctx = buildCtx();
   const reportedId = await insertUser(ctx);
   const reporterId = await insertCredibleReporter(ctx, 'trusted', 365);
@@ -250,7 +250,7 @@ test('SAF-1: recordReportOutcome is admin/system-only', async () => {
 });
 
 // =========================================================================
-// SAF-6 — multi-signal anti-brigading (general, not minor_suspected-specific).
+// SAF-6, multi-signal anti-brigading (general, not minor_suspected-specific).
 // =========================================================================
 
 test('SAF-6: varying the device fingerprint alone no longer evades the anti-brigading discount when other signals still correlate', async () => {
@@ -292,7 +292,7 @@ test('SAF-6: varying the device fingerprint alone no longer evades the anti-brig
   assert.ok(clusteredScore < unrelatedScore, 'three fingerprint-varied but IP/timing-correlated reporters must still be discounted relative to a genuinely unrelated reporter');
 });
 
-test('SAF-6: findClusteredPriorReporters requires MULTIPLE weak signals — a shared fingerprint alone (no other correlation) does not cross the cluster threshold', async () => {
+test('SAF-6: findClusteredPriorReporters requires MULTIPLE weak signals, a shared fingerprint alone (no other correlation) does not cross the cluster threshold', async () => {
   const ctx = buildCtx();
   const reportedId = await insertUser(ctx);
 

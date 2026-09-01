@@ -2,35 +2,35 @@ import type { ImportanceLevel } from './types.js';
 
 /**
  * Replaces the old `1 + abs(partner_answer - 3) * 0.25` extremity
- * heuristic (compatibility.service.ts) — importance is now STATED by the
+ * heuristic (compatibility.service.ts), importance is now STATED by the
  * user, not inferred from how extreme their preference value looks.
  *
  * Documented multiplier per level, applied as
  * `questionWeight = baseWeight * multiplier(importance)` (see
  * scoring.ts):
  *
- *   irrelevant   -> 0    "I don't care" — removes the question from
+ *   irrelevant   -> 0    "I don't care", removes the question from
  *                        scoring entirely (zero weight AND excluded, so
  *                        it can never contribute even a zero-weighted
  *                        term that some averaging formula might treat
  *                        specially).
- *   slight       -> 0.5  Mild preference — counts, but half as much as
+ *   slight       -> 0.5  Mild preference, counts, but half as much as
  *                        the baseline.
- *   important    -> 1.0  Baseline — the "I have a real preference"
+ *   important    -> 1.0  Baseline, the "I have a real preference"
  *                        default, equivalent to the old model's neutral
  *                        weight.
- *   critical     -> 2.0  Strong preference — double weight, but still a
+ *   critical     -> 2.0  Strong preference, double weight, but still a
  *                        matter of degree (a bad match here can be
  *                        outweighed by enough other good matches).
  *   deal_breaker -> 0    NOT a very-large weight. A deal breaker is not
- *                        "critical but more so" — it is a different KIND
+ *                        "critical but more so", it is a different KIND
  *                        of preference: pass/fail, not gradation. It
  *                        contributes zero weight to the weighted-average
  *                        score (see scoring.ts `excluded: true`,
  *                        `reason: 'deal_breaker'`) and instead becomes a
  *                        hard filter (see dealBreakers.ts) that excludes
  *                        a non-matching candidate outright, upstream of
- *                        scoring — "filters are strictly enforced and
+ *                        scoring, "filters are strictly enforced and
  *                        never overridden by scoring" only holds if
  *                        scoring never gets a vote on a deal breaker.
  *
@@ -47,7 +47,7 @@ export const IMPORTANCE_MULTIPLIER: Record<ImportanceLevel, number> = {
   deal_breaker: 0,
 };
 
-/** Importance levels that remove a question from weighted scoring outright (zero weight, `excluded: true`). Both share multiplier 0, but for different reasons — see the module doc above. */
+/** Importance levels that remove a question from weighted scoring outright (zero weight, `excluded: true`). Both share multiplier 0, but for different reasons, see the module doc above. */
 export function isScoringExcludedImportance(importance: ImportanceLevel): boolean {
   return importance === 'irrelevant' || importance === 'deal_breaker';
 }

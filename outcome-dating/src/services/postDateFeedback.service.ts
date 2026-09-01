@@ -12,26 +12,26 @@ import * as trustService from './trust.service.js';
 import * as notificationService from './notification.service.js';
 
 /**
- * postDateFeedback.service — the post-date check-in.
+ * postDateFeedback.service, the post-date check-in.
  *
- * Product framing (not a spec section — a direct product-owner ask):
+ * Product framing (not a spec section, a direct product-owner ask):
  * "There 100% needs to be a post-date check-in. We need to know how it
  * went, not just for safety, but also for potential future matches." This
  * module is the one place all three purposes meet, and its entire design
  * is about keeping them from corrupting each other:
  *
- *   1. SAFETY  — `safetyFlag`/`safetyDetails`. Routed into the existing
- *      `report.service#submitReport` machinery (never reimplemented —
+ *   1. SAFETY, `safetyFlag`/`safetyDetails`. Routed into the existing
+ *      `report.service#submitReport` machinery (never reimplemented,
  *      see "SAFETY ROUTING" below) and NEVER returned by any export here
  *      to anyone but the row's own submitter. See "SAFETY ISOLATION".
- *   2. OUTCOME TRUTH  — `outcome`, one of exactly four values
+ *   2. OUTCOME TRUTH, `outcome`, one of exactly four values
  *      (`did_not_happen` / `happened_bad` / `happened_fine` /
  *      `happened_good`), never collapsed into a single satisfaction
  *      score. Each has its own, deliberately different, platform effect
- *      — see "OUTCOME EFFECTS".
- *   3. FUTURE MATCHING SIGNAL  — `runMatchingSignalSweep`, which never
+ * see "OUTCOME EFFECTS".
+ *   3. FUTURE MATCHING SIGNAL, `runMatchingSignalSweep`, which never
  *      writes a `user_question_answers` row directly and only ever creates a *pending*
- *      `behavioral_prompt_suggestions` row (the existing §17 mechanism —
+ *      `behavioral_prompt_suggestions` row (the existing §17 mechanism,
  *      see behavioralPrompt.service.ts) for the user to explicitly answer
  *      or skip.
  *
@@ -52,7 +52,7 @@ import * as notificationService from './notification.service.js';
  * backward compatibility (dates.routes.ts), but it is now a thin
  * translator that calls `submitLegacyFeedback` below, which funnels into
  * the exact same write statement, trust-effect, and safety-routing logic
- * as `submitCheckIn` — there is exactly ONE place in the codebase that
+ * as `submitCheckIn`, there is exactly ONE place in the codebase that
  * writes outcome/safety data to `post_date_feedback` now.
  * db/migrations/025_integrity.sql additionally adds a CHECK constraint
  * tying `positive` and `outcome` together so a disagreeing pair is
@@ -60,7 +60,7 @@ import * as notificationService from './notification.service.js';
  *
  * `submitCheckIn` reads `date_proposals` directly (existence/participant/
  * status/timing) rather than calling `dateProposal.service#getDateProposal`
- * — `dateProposal.service.ts` itself calls INTO this module (the two
+ * `dateProposal.service.ts` itself calls INTO this module (the two
  * completion hooks below), so this module deliberately never imports
  * back from it, avoiding a module-cycle. Reading `date_proposals` (and
  * `users`, `user_question_answers`, `question_bank`) directly is the same
@@ -75,61 +75,61 @@ import * as notificationService from './notification.service.js';
  * Nothing here ever waits for, or requires, both participants to submit.
  * Every effect (trust delta, safety report, prompt bookkeeping, matching
  * signal) is computed from a SINGLE row the moment it exists. Most dates
- * will only ever get one side's check-in — that is the expected case, not
+ * will only ever get one side's check-in: that is the expected case, not
  * a degraded one.
  *
  * ---------------------------------------------------------------------
  * OUTCOME EFFECTS (§ "must lead to very different platform actions")
  * ---------------------------------------------------------------------
- *   did_not_happen  — no trust effect on either party. A single-sided
+ *   did_not_happen, no trust effect on either party. A single-sided
  *     "it didn't happen" claim is exactly the kind of thing a retaliating
  *     or embarrassed user could file about a real date, so on its own it
  *     changes nothing about the other party's trust score. (It IS still
- *     stored — it's the product's own "did dates actually happen" truth
- *     signal — just not auto-scored against anyone. Corroboration/
+ *     stored, it's the product's own "did dates actually happen" truth
+ *     signal, just not auto-scored against anyone. Corroboration/
  *     dispute handling for a contested "did it happen" already exists
- *     as its own thing, `disputeResolution.service.ts` — this module
+ *     as its own thing, `disputeResolution.service.ts`, this module
  *     deliberately does not build a second one.)
- *   happened_bad    — a small NEGATIVE trust event for the other party,
- *     weighted down for retaliation risk — see "RETALIATION RESISTANCE".
- *     Never, by itself, routes to moderation/report — a subjectively bad
+ *   happened_bad, a small NEGATIVE trust event for the other party,
+ *     weighted down for retaliation risk, see "RETALIATION RESISTANCE".
+ *     Never, by itself, routes to moderation/report, a subjectively bad
  *     date is not a safety problem (that's `safetyFlag`'s job, entirely
  *     independent of `outcome`).
- *   happened_fine   — a small POSITIVE trust event for the other party.
- *   happened_good   — a larger POSITIVE trust event for the other party,
+ *   happened_fine, a small POSITIVE trust event for the other party.
+ *   happened_good, a larger POSITIVE trust event for the other party,
  *     and the input the matching-signal sweep looks for patterns in.
  *
  * ---------------------------------------------------------------------
  * RETALIATION RESISTANCE (rejected person rating out of spite)
  * ---------------------------------------------------------------------
  * Chosen mitigations, deliberately layered rather than relying on one:
- *   1. ASYMMETRY — only `happened_bad` can ever cost the other party
+ *   1. ASYMMETRY, only `happened_bad` can ever cost the other party
  *      anything, and it is capped small (see `BASE_NEGATIVE_DELTA`);
  *      `happened_bad` NEVER reaches moderation/report on its own, unlike
  *      a safety flag, which always does. A spiteful "bad date" rating can
  *      cost trust points, never an account restriction.
- *   2. WEIGHT BY THE RATER'S OWN TRUST — `NEGATIVE_WEIGHT_BY_TRUST`,
+ *   2. WEIGHT BY THE RATER'S OWN TRUST, `NEGATIVE_WEIGHT_BY_TRUST`,
  *      mirroring (independently, since report.service's own multiplier
  *      table is private to that file) the same "trusted reporters count
  *      more" idea `report.service#REPORTER_TRUST_MULTIPLIER` already
  *      uses for reports.
- *   3. SERIAL-NEGATIVE DAMPING — a rater whose recent outcome history is
+ *   3. SERIAL-NEGATIVE DAMPING, a rater whose recent outcome history is
  *      overwhelmingly `happened_bad` (>`HIGH_NEGATIVE_RATE_THRESHOLD` of
  *      their last `NEGATIVE_HISTORY_WINDOW` rated dates) has their
  *      negative weight further multiplied down by `SERIAL_NEGATIVE_
- *      DAMPING` — someone rating every date badly reads as a
+ *      DAMPING`, someone rating every date badly reads as a
  *      venting/retaliation pattern, not a string of genuinely bad dates,
  *      and is discounted accordingly (mirrors report.service's own
  *      anti-brigading instinct, applied to a single serial rater instead
  *      of a cluster).
- *   4. LOCKED AT FIRST SUBMISSION — the trust effect for `outcome` fires
+ *   4. LOCKED AT FIRST SUBMISSION, the trust effect for `outcome` fires
  *      exactly once per (date_proposal_id, user_id), on the row's true
- *      first INSERT (detected via the `xmax = 0` Postgres idiom — see
+ *      first INSERT (detected via the `xmax = 0` Postgres idiom, see
  *      `submitCheckIn`), never again on a later edit to the same row. A
  *      user can still edit their own notes/safety fields afterward, but
  *      cannot toggle `outcome` back and forth to apply repeated trust
  *      damage.
- *   5. SAFETY-FLAG CORROORATION FOR THE MILD TIER — see "SAFETY ROUTING".
+ *   5. SAFETY-FLAG CORROORATION FOR THE MILD TIER, see "SAFETY ROUTING".
  *
  * ---------------------------------------------------------------------
  * SAFETY ROUTING (must route into moderation, must carry more weight than
@@ -137,13 +137,13 @@ import * as notificationService from './notification.service.js';
  * ---------------------------------------------------------------------
  * `safetyFlag: 'incident'` (an immediate, credible, serious concern)
  * routes into `report.service#submitReport` (category `unsafe_behavior`
- * — the highest-severity category legitimately applicable here; the
+ * the highest-severity category legitimately applicable here; the
  * other very-high category, `minor_suspected`, has a specific,
  * unrelated, corroboration-gated fast path in report.service.ts that this
- * module must not misuse) THE MOMENT it is first submitted — no
+ * module must not misuse) THE MOMENT it is first submitted, no
  * corroboration required, mirroring the spec's own "act immediately on a
  * credible severe signal" instinct. This module NEVER reimplements
- * `scoreReport` — it only ever calls `submitReport`, which already scores
+ * `scoreReport`, it only ever calls `submitReport`, which already scores
  * category + reporter trust + the relationship multiplier (a completed
  * date guarantees `hasRelationship` is true, i.e. the FULL multiplier, not
  * the discounted stranger-report one) + prior-report history + recency.
@@ -154,12 +154,12 @@ import * as notificationService from './notification.service.js';
  * way to, without touching report.service.ts) hand-tune its weight
  * further.
  *
- * `safetyFlag: 'concern'` (milder — "something felt off") does NOT file a
+ * `safetyFlag: 'concern'` (milder, "something felt off") does NOT file a
  * report on its own. A single spiteful "concern" flag from a rejected
  * date must not be able to trigger a report by itself. Instead it is
  * recorded, and `countDistinctSafetyFlaggersAgainst` checks whether the
  * SAME reported user has now accumulated `CONCERN_CORROBORATION_
- * THRESHOLD` (2) or more DISTINCT flaggers (across different dates) —
+ * THRESHOLD` (2) or more DISTINCT flaggers (across different dates),
  * once corroborated by a second independent person, the report files
  * automatically on that corroborating submission. This is the same
  * "one report alone can't hurt someone; independent corroboration can"
@@ -167,7 +167,7 @@ import * as notificationService from './notification.service.js';
  * here for the mild safety tier instead of rebuilt from scratch.
  *
  * Either way, the reporter is always the check-in submitter (`ctx.actor`)
- * and `reportedId` is always the other date participant — the user never
+ * and `reportedId` is always the other date participant, the user never
  * has to separately open a report form.
  *
  * ---------------------------------------------------------------------
@@ -175,29 +175,29 @@ import * as notificationService from './notification.service.js';
  * aggregate, not inferable from timing or observable behavior)
  * ---------------------------------------------------------------------
  *   - `safetyFlag`/`safetyDetails` are returned ONLY by `getMyCheckIn`/
- *     `submitCheckIn`, both scoped to `WHERE user_id = <the caller>` —
+ *     `submitCheckIn`, both scoped to `WHERE user_id = <the caller>`,
  *     structurally impossible for the other participant to read, since
  *     no export here ever accepts "give me the other side's row".
  *   - The trust events this module records directly (`recordTrustEvent`
  *     for `outcome`) NEVER carry `dateProposalId`, `safetyFlag`, or any
- *     other correlatable identifier in `metadata` — `{}` every time (see
+ *     other correlatable identifier in `metadata`, `{}` every time (see
  *     `applyOutcomeTrustEffectBestEffort`). A user reading their OWN
  *     `GET /me/trust/events` (a route this module does not own) can see a
  *     generic "negative post-date feedback" line, per spec §6.3's own
  *     transparency example, but can never pin it to a specific date or
  *     partner.
  *   - A safety flag reaches the reported party, if at all, exactly the
- *     way ANY other user-filed `unsafe_behavior` report would — through
+ *     way ANY other user-filed `unsafe_behavior` report would, through
  *     `report.service.ts`'s own guarantee that reporter identity is never
  *     exposed to the reported user (see that file's module doc). Nothing
  *     in this module adds a distinguishing "this came from a post-date
  *     check-in" marker anywhere user-visible, so a report that originated
  *     here is indistinguishable, from the reported party's side, from one
  *     any stranger could have filed manually. That indistinguishability
- *     — not a separate access-control rule — is what makes a safety
+ * not a separate access-control rule, is what makes a safety
  *     answer unobservable: there is no code path, anywhere, that renders
  *     "post-date check-in" as a string reachable by the reported user.
- *   - Submitting a check-in — of ANY kind, safety or not — never
+ *   - Submitting a check-in, of ANY kind, safety or not, never
  *     notifies the other party. There is no `notify(otherUserId, ...)`
  *     call anywhere in this file. This removes the timing side-channel
  *     the brief calls out explicitly: nothing observable happens to the
@@ -205,26 +205,26 @@ import * as notificationService from './notification.service.js';
  *     at the moment a check-in (safety or otherwise) is submitted.
  *   - `submitCheckIn` never writes to `date_proposals.status` or any
  *     other field the other participant's own `GET /date-proposals/:id`
- *     response would surface — a safety flag cannot be inferred from a
+ *     response would surface, a safety flag cannot be inferred from a
  *     status change either.
  *
  * ---------------------------------------------------------------------
- * MATCHING SIGNAL (§17 behavioral-prompt mechanism — never silently
+ * MATCHING SIGNAL (§17 behavioral-prompt mechanism, never silently
  * changes stated answers/sorting, only ever an explicit skippable
  * question)
  * ---------------------------------------------------------------------
  * `runMatchingSignalSweep` looks, per user, for a compatibility question
  * (in the ONE typed question bank, `question_bank`/`user_question_answers`
- * — db/migrations/008_questions.sql) where the AVERAGE divergence between
+ * db/migrations/008_questions.sql) where the AVERAGE divergence between
  * what that user says they want (`user_question_answers.preference_value`)
  * and what their `happened_good`-rated dates' partners actually reported
  * about themselves on that same question
- * (`user_question_answers.self_value`) is large — i.e. "the dates you rate
+ * (`user_question_answers.self_value`) is large, i.e. "the dates you rate
  * as GOOD tend not to match what you said you want, on this specific
  * axis". Divergence is `1 - satisfaction`, using EXACTLY the same
  * `src/domain/questions/typeHandlers.ts#satisfaction` function
  * `compatibility.service.ts` scores matches with (0 = perfectly satisfies,
- * 1 = fully diverges) — this is what lets the sweep work uniformly across
+ * 1 = fully diverges), this is what lets the sweep work uniformly across
  * every question TYPE (`scale`, `single_choice`, `multi_choice`,
  * `frequency`), unlike the OLD bank's flat 1-5 numeric diff, which was
  * only ever meaningful for a plain numeric scale. When the average
@@ -232,16 +232,16 @@ import * as notificationService from './notification.service.js';
  * `MIN_GOOD_DATES_FOR_MATCHING_SIGNAL` good-outcome dates, it inserts
  * exactly one `pending` row into the EXISTING `behavioral_prompt_
  * suggestions` table (same table, same conflict target, same `status`
- * lifecycle as behavioralPrompt.service.ts's own tag-based trigger — this
+ * lifecycle as behavioralPrompt.service.ts's own tag-based trigger, this
  * is "feed the existing mechanism", not a parallel one). It NEVER calls
  * `question.service#putMyQuestionAnswer` and NEVER writes to
- * `user_question_answers` — turning a suggestion into a real answer, or
+ * `user_question_answers`, turning a suggestion into a real answer, or
  * skipping it, is entirely `behavioralPrompt.service#respondToSuggestion`'s
  * job, driven by the user's own explicit response, exactly as §17
  * requires.
  *
  * ---------------------------------------------------------------------
- * TIMING (prompt after scheduled end, with a window, and a reminder — do
+ * TIMING (prompt after scheduled end, with a window, and a reminder, do
  * not prompt endlessly; ctx.clock throughout)
  * ---------------------------------------------------------------------
  * See `runCheckInPromptSweep`/`ensureCheckInPromptSent`. Local constants
@@ -280,7 +280,7 @@ export interface PostDateCheckIn {
 function boolToTriState(v: boolean | null): WouldMeetAgain | null {
   if (v === true) return 'yes';
   if (v === false) return 'no';
-  return null; // covers both "unsure" and "not applicable" (did_not_happen) — deliberately indistinguishable, same as §8.5's "prefer not to say" null.
+  return null; // covers both "unsure" and "not applicable" (did_not_happen), deliberately indistinguishable, same as §8.5's "prefer not to say" null.
 }
 
 function triStateToBool(v: WouldMeetAgain | undefined): boolean | null {
@@ -297,7 +297,7 @@ function describeError(err: unknown): string {
 // submitCheckIn / getMyCheckIn
 //
 // Deliberately NEVER gated behind KNOWN_FLAGS.POST_DATE_FEEDBACK (unlike
-// the prompt sweep and the matching-signal sweep below) — a feature flag
+// the prompt sweep and the matching-signal sweep below), a feature flag
 // must never be able to silently swallow a safety report. Only the
 // PROACTIVE nudging and the discretionary matching-signal derivation are
 // flag-gated; the endpoint that actually accepts a check-in always works.
@@ -345,7 +345,7 @@ function toCheckInView(row: CheckInRow): PostDateCheckIn {
 /**
  * Submit (or update) the caller's own post-date check-in for one date
  * proposal. Usable the instant the date is ticketed/resolved, by either
- * participant, independently — see module doc "ONE-SIDED BY DEFAULT".
+ * participant, independently, see module doc "ONE-SIDED BY DEFAULT".
  */
 interface CheckInProposalRow {
   id: string;
@@ -356,7 +356,7 @@ interface CheckInProposalRow {
   scheduled_start: Date;
 }
 
-/** Existence/participant check on `date_proposals`, read directly rather than via `dateProposal.service#getDateProposal` — see module doc for why (avoiding a module cycle). Mirrors that function's own NotFoundError/ForbiddenError contract exactly. */
+/** Existence/participant check on `date_proposals`, read directly rather than via `dateProposal.service#getDateProposal`, see module doc for why (avoiding a module cycle). Mirrors that function's own NotFoundError/ForbiddenError contract exactly. */
 async function loadCheckInProposal(ctx: Ctx, dateProposalId: string, userId: string): Promise<CheckInProposalRow> {
   const { rows } = await ctx.db.query<CheckInProposalRow>(
     `SELECT id, conversation_id, proposer_id, recipient_id, status, scheduled_start FROM date_proposals WHERE id = $1`,
@@ -376,7 +376,7 @@ async function loadCheckInProposal(ctx: Ctx, dateProposalId: string, userId: str
  * trust effect, and safety-flag routing. Both `submitCheckIn` (the
  * primary, fully-gated entry point) and `submitLegacyFeedback` (the
  * `POST /date-proposals/:id/feedback` compatibility shim) call this
- * after their own, different, eligibility checks — see module doc
+ * after their own, different, eligibility checks, see module doc
  * "INTEGRITY FIX". Nothing else in this codebase writes these columns.
  */
 async function writeCheckInRow(
@@ -413,7 +413,7 @@ async function writeCheckInRow(
   }
 
   // Safety routing can still fire on a later edit (escalating from 'none'
-  // to a flag, or from 'concern' to 'incident') — see module doc "SAFETY
+  // to a flag, or from 'concern' to 'incident'), see module doc "SAFETY
   // ROUTING". Guarded by `report_id IS NULL` so a declared incident is
   // only ever routed once.
   if (parsed.safetyFlag !== 'none' && row.report_id === null) {
@@ -454,7 +454,7 @@ export async function submitCheckIn(ctx: Ctx, dateProposalId: string, input: unk
 }
 
 // =====================================================================
-// submitLegacyFeedback — backs the retired `POST
+// submitLegacyFeedback, backs the retired `POST
 // /date-proposals/:id/feedback` route (dates.routes.ts). See module doc
 // "INTEGRITY FIX". Preserves the legacy endpoint's own (looser, no
 // scheduled-start timing gate) eligibility check exactly as
@@ -465,7 +465,7 @@ export async function submitCheckIn(ctx: Ctx, dateProposalId: string, input: unk
 // `outcome` axis using the same equivalence
 // `src/jobs/statsAggregation.job.ts` already assumes between the two
 // columns (`positive = true` <-> `outcome = 'happened_good'`,
-// `positive = false` <-> `outcome = 'happened_bad'`) — see
+// `positive = false` <-> `outcome = 'happened_bad'`), see
 // db/migrations/025_integrity.sql for the same mapping applied to
 // historical rows.
 // =====================================================================
@@ -496,7 +496,7 @@ export async function submitLegacyFeedback(ctx: Ctx, dateProposalId: string, inp
   return writeCheckInRow(ctx, dateProposalId, proposal, userId, parsed);
 }
 
-/** The caller's own check-in for one date proposal, if they've submitted one via `submitCheckIn`. Never the other participant's — see module doc "SAFETY ISOLATION" (the scoping here is what makes that structural, not a permission check someone could get wrong). */
+/** The caller's own check-in for one date proposal, if they've submitted one via `submitCheckIn`. Never the other participant's, see module doc "SAFETY ISOLATION" (the scoping here is what makes that structural, not a permission check someone could get wrong). */
 export async function getMyCheckIn(ctx: Ctx, dateProposalId: string): Promise<PostDateCheckIn> {
   const { userId } = requireUserActor(ctx);
   const { rows } = await ctx.db.query<CheckInRow>(
@@ -553,7 +553,7 @@ async function applyOutcomeTrustEffectBestEffort(
         userId: input.targetUserId,
         eventType: trustService.TRUST_EVENT_TYPES.POSITIVE_POST_DATE_FEEDBACK,
         delta: POSITIVE_FINE_DELTA,
-        metadata: {}, // deliberately no dateProposalId/identifying info — see module doc "SAFETY ISOLATION"
+        metadata: {}, // deliberately no dateProposalId/identifying info, see module doc "SAFETY ISOLATION"
       });
       return;
     }
@@ -569,7 +569,7 @@ async function applyOutcomeTrustEffectBestEffort(
     // happened_bad
     const weight = await negativeFeedbackRetaliationWeight(ctx, input.raterId);
     const delta = Math.round(BASE_NEGATIVE_DELTA * weight);
-    if (delta === 0) return; // fully dampened (e.g. a low-trust serial negative rater) — no-op rather than a zero-delta audit row
+    if (delta === 0) return; // fully dampened (e.g. a low-trust serial negative rater), no-op rather than a zero-delta audit row
     await trustService.recordTrustEvent(ctx, {
       userId: input.targetUserId,
       eventType: trustService.TRUST_EVENT_TYPES.NEGATIVE_POST_DATE_FEEDBACK,
@@ -597,7 +597,7 @@ function buildSafetyReportDetails(kind: 'incident' | 'concern_corroborated', use
   return userDetails ? `${prefix} ${userDetails}` : prefix;
 }
 
-/** Distinct submitters who have flagged ANY non-'none' safety concern against `reportedId`, across all of their own dates with that person — the corroboration count for the mild ('concern') tier. See module doc "SAFETY ROUTING". */
+/** Distinct submitters who have flagged ANY non-'none' safety concern against `reportedId`, across all of their own dates with that person, the corroboration count for the mild ('concern') tier. See module doc "SAFETY ROUTING". */
 async function countDistinctSafetyFlaggersAgainst(ctx: Ctx, reportedId: string, excludeUserId: string): Promise<number> {
   const { rows } = await ctx.db.query<{ count: string }>(
     `SELECT count(DISTINCT pdf.user_id)::text AS count
@@ -611,7 +611,7 @@ async function countDistinctSafetyFlaggersAgainst(ctx: Ctx, reportedId: string, 
   return Number(rows[0]?.count ?? '0');
 }
 
-/** Returns the filed report's id, or null if nothing was (yet) filed (a non-corroborated 'concern'). Never reimplements report.service#scoreReport — only ever calls submitReport. */
+/** Returns the filed report's id, or null if nothing was (yet) filed (a non-corroborated 'concern'). Never reimplements report.service#scoreReport, only ever calls submitReport. */
 async function routeSafetyFlag(
   ctx: Ctx,
   input: {
@@ -632,7 +632,7 @@ async function routeSafetyFlag(
     return report.id;
   }
 
-  // 'concern' — corroboration-gated, see module doc "SAFETY ROUTING".
+  // 'concern', corroboration-gated, see module doc "SAFETY ROUTING".
   const priorDistinctFlaggers = await countDistinctSafetyFlaggersAgainst(ctx, input.reportedId, input.submitterId);
   if (priorDistinctFlaggers + 1 < CONCERN_CORROBORATION_THRESHOLD) return null;
 
@@ -659,7 +659,7 @@ async function routeSafetyFlagBestEffort(
   try {
     return await routeSafetyFlag(ctx, input);
   } catch (err) {
-    // Logged at error, not warn — unlike an ordinary best-effort side
+    // Logged at error, not warn, unlike an ordinary best-effort side
     // effect (a notification, say), a safety flag that fails to route
     // is the one failure mode in this file worth being loud about.
     ctx.logger.error('postDateFeedback.safety_routing_failed', {
@@ -672,7 +672,7 @@ async function routeSafetyFlagBestEffort(
 }
 
 // =====================================================================
-// Timing — prompt after scheduled end, with a window, and a reminder.
+// Timing, prompt after scheduled end, with a window, and a reminder.
 // Do not prompt endlessly. ctx.clock throughout, never Date.now()/new
 // Date() directly.
 // =====================================================================
@@ -699,7 +699,7 @@ async function notifyBestEffort(ctx: Ctx, input: notificationService.NotifyInput
   }
 }
 
-/** One participant's prompt/reminder decision for one date proposal. Idempotent and safe to call repeatedly with any clock — see module doc "TIMING". */
+/** One participant's prompt/reminder decision for one date proposal. Idempotent and safe to call repeatedly with any clock, see module doc "TIMING". */
 async function maybePromptParticipant(ctx: Ctx, row: PromptableProposalRow, userId: string, now: Date): Promise<'prompted' | 'reminded' | 'skipped'> {
   const enabled = await ctx.flags.isEnabled(KNOWN_FLAGS.POST_DATE_FEEDBACK, { userId });
   if (!enabled) return 'skipped';
@@ -708,7 +708,7 @@ async function maybePromptParticipant(ctx: Ctx, row: PromptableProposalRow, user
     `SELECT 1 FROM post_date_feedback WHERE date_proposal_id = $1 AND user_id = $2 AND outcome IS NOT NULL`,
     [row.id, userId],
   );
-  if (existingFeedback.length > 0) return 'skipped'; // already checked in — nothing to prompt for
+  if (existingFeedback.length > 0) return 'skipped'; // already checked in, nothing to prompt for
 
   if (hoursBetween(row.scheduled_end, now) > MAX_PROMPT_WINDOW_DAYS * 24) return 'skipped'; // "do not prompt endlessly"
 
@@ -730,7 +730,7 @@ async function maybePromptParticipant(ctx: Ctx, row: PromptableProposalRow, user
     return 'prompted';
   }
 
-  if (existing.prompt_count >= MAX_PROMPTS_PER_USER) return 'skipped'; // already sent the one reminder — stop for good
+  if (existing.prompt_count >= MAX_PROMPTS_PER_USER) return 'skipped'; // already sent the one reminder, stop for good
   if (!existing.last_prompted_at || hoursBetween(existing.last_prompted_at, now) < REMINDER_DELAY_HOURS) return 'skipped'; // not due yet
 
   await notifyBestEffort(ctx, { userId, eventType: 'post_date_feedback_request', channel: 'in_app', payload: { dateProposalId: row.id } });
@@ -745,12 +745,12 @@ async function maybePromptParticipant(ctx: Ctx, row: PromptableProposalRow, user
  * Eagerly evaluates the prompt decision for both participants of one date
  * proposal, right now, per `ctx.clock`. Called (best-effort, additively)
  * from the two `dateProposal.service.ts` sites where a proposal actually
- * reaches `completed`/`completed_unverified` — see that file's two
+ * reaches `completed`/`completed_unverified`, see that file's two
  * one-line hooks. Purely a responsiveness nicety: `runCheckInPromptSweep`
  * below applies the exact same gating/timing independently and will catch
  * anything this misses (including tickets that never got confirmed at
- * all — the "did the date even happen" case this module cares about most
- * — which never call this function).
+ * all, the "did the date even happen" case this module cares about most
+ * which never call this function).
  */
 export async function ensureCheckInPromptSent(ctx: Ctx, dateProposalId: string): Promise<void> {
   const { rows } = await ctx.db.query<PromptableProposalRow>(
@@ -771,11 +771,11 @@ export interface CheckInPromptSweepResult {
 }
 
 /**
- * The general sweep — meant to be wired into `src/jobs/*` by whichever
+ * The general sweep, meant to be wired into `src/jobs/*` by whichever
  * agent owns that directory (outside this module's edit scope; see build
  * report). Scans every `date_proposals` row that ever reached `ticketed`
  * and whose `scheduled_end` falls within the prompt window, for BOTH
- * participants independently — including proposals that never got
+ * participants independently, including proposals that never got
  * confirmed/completed at all, which is exactly the "the date might not
  * have happened" case a completion-only hook would miss entirely.
  */
@@ -802,7 +802,7 @@ export async function runCheckInPromptSweep(ctx: Ctx): Promise<CheckInPromptSwee
 }
 
 // =====================================================================
-// Matching signal — feeds the EXISTING §17 behavioral_prompt_suggestions
+// Matching signal, feeds the EXISTING §17 behavioral_prompt_suggestions
 // mechanism (behavioralPrompt.service.ts). See module doc "MATCHING
 // SIGNAL". Gated behind BOTH KNOWN_FLAGS.POST_DATE_FEEDBACK (this data
 // comes from post-date feedback) and KNOWN_FLAGS.BEHAVIORAL_QUESTION_
@@ -815,7 +815,7 @@ export const MIN_GOOD_DATES_FOR_MATCHING_SIGNAL = 3;
 // `1 - satisfaction`, and `satisfaction` is always 0..1 regardless of
 // question type). 0.5 is the direct normalization of the OLD bank's
 // threshold (an absolute diff of 2, out of that bank's fixed 0-4 range on
-// a 1-5 scale question -> 2/4 = 0.5) — same real-world strictness, just
+// a 1-5 scale question -> 2/4 = 0.5), same real-world strictness, just
 // expressed on the new bank's type-agnostic scale.
 const MATCHING_SIGNAL_DIVERGENCE_THRESHOLD = 0.5;
 
@@ -871,11 +871,11 @@ async function createMatchingSignalSuggestion(ctx: Ctx, userId: string): Promise
   if (!best) return false;
 
   // Same table, same conflict target as behavioralPrompt.service#detectPatternsForUser
-  // — this IS the existing mechanism, not a parallel one. Never writes to
+  // this IS the existing mechanism, not a parallel one. Never writes to
   // `user_question_answers`; the suggestion is presented and can be
   // skipped, exactly like the tag-triggered kind
   // (behavioralPrompt.service#respondToSuggestion). `question_id` here is
-  // a `question_bank` id (current version at detection time) — see
+  // a `question_bank` id (current version at detection time), see
   // `db/migrations/022_drop_old_question_bank.sql` for the FK repoint.
   const { rows: inserted } = await ctx.db.query<{ id: string }>(
     `INSERT INTO behavioral_prompt_suggestions (user_id, question_id, trigger_kind, trigger_label, status, created_at)
@@ -892,7 +892,7 @@ export interface MatchingSignalSweepResult {
   suggestionsCreated: number;
 }
 
-/** Meant to be wired into `src/jobs/*` alongside `runCheckInPromptSweep` — outside this module's edit scope. See build report. */
+/** Meant to be wired into `src/jobs/*` alongside `runCheckInPromptSweep`, outside this module's edit scope. See build report. */
 export async function runMatchingSignalSweep(ctx: Ctx): Promise<MatchingSignalSweepResult> {
   const { rows: candidateRows } = await ctx.db.query<{ user_id: string }>(
     `SELECT user_id FROM post_date_feedback
@@ -915,7 +915,7 @@ export async function runMatchingSignalSweep(ctx: Ctx): Promise<MatchingSignalSw
     if (await createMatchingSignalSuggestion(ctx, userId)) suggestionsCreated++;
 
     // Mark considered rows processed regardless of whether a suggestion
-    // was created this round, so the sweep does bounded work — see
+    // was created this round, so the sweep does bounded work, see
     // module doc "MATCHING SIGNAL".
     await ctx.db.query(
       `UPDATE post_date_feedback SET matching_signal_processed_at = $2

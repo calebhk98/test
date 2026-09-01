@@ -1,5 +1,5 @@
 /**
- * §25.1 Interest Expiry job — boundary behavior and idempotent re-run.
+ * §25.1 Interest Expiry job, boundary behavior and idempotent re-run.
  * Mirrors conformance C-25.1.1 / C-11.4.5-6, run through the actual job
  * function (not the inline service call).
  */

@@ -45,10 +45,10 @@ test('ConfigKeyRegistry: date.dispute_auto_resolve_hours is a snapshot-scope key
 });
 
 // =====================================================================
-// VOUCHER_QR_SECRET — key separation from AUTH_TOKEN_SECRET.
+// VOUCHER_QR_SECRET, key separation from AUTH_TOKEN_SECRET.
 // =====================================================================
 
-test('VOUCHER_QR_SECRET: when set, it is a genuinely different secret from AUTH_TOKEN_SECRET — a token signed with one does not verify against the other', () => {
+test('VOUCHER_QR_SECRET: when set, it is a genuinely different secret from AUTH_TOKEN_SECRET, a token signed with one does not verify against the other', () => {
   const savedAuth = process.env.AUTH_TOKEN_SECRET;
   const savedVoucher = process.env.VOUCHER_QR_SECRET;
   try {
@@ -124,10 +124,10 @@ test('discovery.min_profile_completeness: raising the config threshold excludes 
   );
 
   const ctx = makeCtx(db, userActor(viewerId));
-  assert.equal(await discoveryService.isProfileVisibleTo(ctx, viewerId, candidateId), true, 'default threshold (50) — a 60-complete profile is visible');
+  assert.equal(await discoveryService.isProfileVisibleTo(ctx, viewerId, candidateId), true, 'default threshold (50), a 60-complete profile is visible');
 
   await db.config.set('discovery.min_profile_completeness', 70, 'test-admin');
-  assert.equal(await discoveryService.isProfileVisibleTo(ctx, viewerId, candidateId), false, 'raised threshold (70) — the same profile is now excluded');
+  assert.equal(await discoveryService.isProfileVisibleTo(ctx, viewerId, candidateId), false, 'raised threshold (70), the same profile is now excluded');
 
   await db.config.set('discovery.min_profile_completeness', 50, 'test-admin'); // restore default
 });
@@ -182,7 +182,7 @@ test('interest.outgoing_pending_limit_limited_tier: a Limited-trust sender hits 
   const limitedCtx = makeCtx(db, userActor(limitedSenderId, 'limited'));
   const standardCtx = makeCtx(db, userActor(standardSenderId, 'standard'));
 
-  // Send 2 (the Limited-tier default cap) — both should succeed.
+  // Send 2 (the Limited-tier default cap), both should succeed.
   for (let i = 0; i < 2; i++) {
     await interestService.sendInterest(limitedCtx, await createUser(db));
     await interestService.sendInterest(standardCtx, await createUser(db));
@@ -190,5 +190,5 @@ test('interest.outgoing_pending_limit_limited_tier: a Limited-trust sender hits 
   // 3rd for the Limited sender is rejected; the Standard sender still has headroom (cap 5).
   const anotherRecipientId = await createUser(db);
   await assert.rejects(() => interestService.sendInterest(limitedCtx, anotherRecipientId), RateLimitError);
-  await interestService.sendInterest(standardCtx, await createUser(db)); // 3rd — fine for Standard
+  await interestService.sendInterest(standardCtx, await createUser(db)); // 3rd, fine for Standard
 });

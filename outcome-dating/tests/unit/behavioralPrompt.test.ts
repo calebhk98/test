@@ -14,7 +14,7 @@
  *      `questions` table.
  *   2. Skipping a suggestion still works exactly as before.
  *   3. Answering a suggestion through the OLD `{selfValue, partnerValue}`
- *      shape ALONE (no importance/ladderPosition) now throws — the
+ *      shape ALONE (no importance/ladderPosition) now throws, the
  *      reported, genuine behavior gap this build could not paper over
  *      without inventing an importance value.
  *   4. Answering with a real importance (or ladderPosition) succeeds and
@@ -142,7 +142,7 @@ const LADDER_TYPE_DEF = {
   ],
 };
 
-/** Inserts a `question_bank` row directly — bypasses the admin routes (`tests/http/admin.test.ts` covers those). */
+/** Inserts a `question_bank` row directly, bypasses the admin routes (`tests/http/admin.test.ts` covers those). */
 async function insertBankQuestion(slug: string, typeDef: unknown = SCALE_TYPE_DEF): Promise<TestQuestion> {
   const { rows } = await pool.query<{ id: string }>(
     `INSERT INTO question_bank (slug, version, is_current, category, question_type, question_text, type_definition, active)
@@ -254,7 +254,7 @@ test('respondToSuggestion: skipping records status=skipped and writes no answer'
 });
 
 test(
-  'respondToSuggestion: answering with only the OLD {selfValue, partnerValue} shape (no importance/ladderPosition) throws — ' +
+  'respondToSuggestion: answering with only the OLD {selfValue, partnerValue} shape (no importance/ladderPosition) throws, ' +
     'the typed bank cannot accept a value-only answer, and this build refuses to invent an importance to paper over it (see CUTOVER NOTE)',
   async () => {
     const user = await insertUser();

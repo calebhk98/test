@@ -1,8 +1,8 @@
 /**
- * src/http/validation.ts — small shared Zod schemas/helpers for route
+ * src/http/validation.ts, small shared Zod schemas/helpers for route
  * params and query strings. Request BODIES are validated by the service
  * functions themselves (every `src/services/*.service.ts` function already
- * parses its input with Zod and throws the shared `ValidationError` — see
+ * parses its input with Zod and throws the shared `ValidationError`, see
  * INTERFACES.md), so this file only covers the two things services never
  * see directly: URL path params and query strings, both delivered by
  * Fastify as loosely-typed string maps.
@@ -12,7 +12,7 @@ import { ValidationError } from '../lib/errors.js';
 
 /**
  * Extracts and validates a single uuid path param by name. Deliberately
- * NOT `z.object({ [name]: z.string().uuid() })` — a computed property key
+ * NOT `z.object({ [name]: z.string().uuid() })`, a computed property key
  * makes Zod (and TS) type the result as an index signature
  * (`{ [x: string]: string }`), which under this project's
  * `noUncheckedIndexedAccess` compiler option infers every access as

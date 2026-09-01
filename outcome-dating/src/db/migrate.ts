@@ -2,7 +2,7 @@
  * Tiny migration runner. Applies db/migrations/*.sql in filename order,
  * each inside its own transaction, and records applied filenames in a
  * `schema_migrations` table so re-running is a no-op. No down-migrations,
- * no framework — this is intentionally minimal for MVP (spec §32 just
+ * no framework, this is intentionally minimal for MVP (spec §32 just
  * requires "relational database", not a specific migration tool).
  *
  * Usage: `npm run migrate` (reads DATABASE_URL via src/config/env.ts).

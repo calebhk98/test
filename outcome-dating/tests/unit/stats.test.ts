@@ -67,7 +67,7 @@ after(async () => {
   await adminPool.end();
 });
 
-/** Every fixture-driven test below assumes it owns a clean database — truncate everything this build's tables (and every table its fixtures touch) depend on before each test, so tests never leak state into one another. */
+/** Every fixture-driven test below assumes it owns a clean database, truncate everything this build's tables (and every table its fixtures touch) depend on before each test, so tests never leak state into one another. */
 const TRUNCATE_TABLES = [
   'stats_user_cache',
   'stats_aggregation_runs',
@@ -113,7 +113,7 @@ beforeEach(async () => {
 });
 
 // =====================================================================
-// Fixture helpers — raw SQL, deliberately bypassing every other agent's
+// Fixture helpers, raw SQL, deliberately bypassing every other agent's
 // service layer (which enforces flows this build must not depend on).
 // =====================================================================
 
@@ -354,7 +354,7 @@ function adminActor(adminId: string): Actor {
   return { type: 'admin', adminId };
 }
 
-/** Wraps a Ctx's `db.query` to count calls — proves boundedness without depending on exact numbers changing every time an unrelated implementation detail shifts. */
+/** Wraps a Ctx's `db.query` to count calls, proves boundedness without depending on exact numbers changing every time an unrelated implementation detail shifts. */
 function countingCtx(ctx: Ctx): { ctx: Ctx; count: () => number } {
   let n = 0;
   const wrapped: Ctx = {
@@ -428,7 +428,7 @@ test('adminStats.service accepts an admin actor', async () => {
 });
 
 // =====================================================================
-// Aggregation job correctness — hand-computed fixture.
+// Aggregation job correctness, hand-computed fixture.
 // =====================================================================
 
 test('statsAggregation job: daily rollup matches hand-computed counts and money is exact', async () => {
@@ -496,7 +496,7 @@ test('statsAggregation job: daily rollup matches hand-computed counts and money 
   assert.ok(result.daysUpserted > 0);
 
   // Bounded query count: one grouped query per metric/source table plus a
-  // bounded per-day upsert loop — NOT a function of how many event rows
+  // bounded per-day upsert loop, NOT a function of how many event rows
   // exist. Generous ceiling so unrelated refactors don't make this flaky,
   // but still catches an accidental N+1 regression.
   assert.ok(count() < 150, `expected a bounded query count, got ${count()}`);

@@ -4,21 +4,21 @@ import { ValidationError } from '../lib/errors.js';
 import type { LedgerEntry, LedgerEntryType, Page } from '../domain/types.js';
 
 /**
- * ledger.service — the immutable payment ledger.
+ * ledger.service, the immutable payment ledger.
  * Spec: §14.8, §27 (admin payment ledger viewer), §25.9 (reconciliation).
  *
  * Owning agent: D.
  *
  * HARD INVARIANT: `payment_ledger` rows are INSERT-only. This module
- * exposes no update/delete function on purpose — correcting a mistaken
+ * exposes no update/delete function on purpose, correcting a mistaken
  * entry means inserting a new offsetting entry (e.g. a `refund` row),
  * never mutating history. `payment.service.ts` is the only caller that
  * should invoke `recordEntry`, always from inside the same transaction as
  * the `payment_holds` status change it documents (see
- * `payment.service.ts` invariants) — a ledger entry must never exist for
+ * `payment.service.ts` invariants), a ledger entry must never exist for
  * a state the corresponding hold didn't actually reach.
  *
- * `recordEntry` deliberately does NOT open its own DB transaction — it
+ * `recordEntry` deliberately does NOT open its own DB transaction, it
  * issues a single INSERT against `ctx.db`, whatever that is bound to. This
  * is what lets `payment.service.ts` pair a `payment_holds` UPDATE and a
  * `payment_ledger` INSERT atomically inside its own `withTransaction`
@@ -32,13 +32,13 @@ const LEDGER_TYPES: readonly LedgerEntryType[] = [
   'refund',
   'dispute',
   'chargeback',
-  'venue_payout', // decision-layer addition — see docs/conformance.md OQ-8
+  'venue_payout', // decision-layer addition, see docs/conformance.md OQ-8
 ];
 
 const RecordEntrySchema = z
   .object({
     // Nullable/optional: a `type: 'venue_payout'` entry pays a venue, not a
-    // user (decision-layer addition — see db/migrations/007_decisions.sql's
+    // user (decision-layer addition, see db/migrations/007_decisions.sql's
     // `payment_ledger_payee_check`; every pre-existing entry type still
     // requires a real `userId`, enforced below rather than at the schema
     // shape level so the error message is clearer than a generic union
@@ -104,10 +104,10 @@ function mapEntry(row: LedgerRow): LedgerEntry {
 /**
  * `created_at` here is deliberately left to the column's own SQL `now()`
  * default rather than `ctx.clock.now()` (unlike every business-state
- * timestamp elsewhere in Agent D's code — see `dateProposal.service.ts`/
+ * timestamp elsewhere in Agent D's code, see `dateProposal.service.ts`/
  * `payment.service.ts`). The ledger is a forensic, append-only audit trail
  * (§14.8) whose ordering must reflect the real order writes physically
- * happened in, not a test's simulated business clock — several money
+ * happened in, not a test's simulated business clock, several money
  * operations record multiple ledger rows back-to-back with a `ManualClock`
  * that hasn't advanced between them, and `ORDER BY created_at` is how
  * `listEntriesForDateProposal`/reconciliation recover chronological order.
@@ -209,16 +209,16 @@ interface HoldForReconciliation {
 
 /**
  * §25.9 job: compare processor-reported state against local
- * `payment_holds`/`payment_ledger` and flag mismatches for admin review —
+ * `payment_holds`/`payment_ledger` and flag mismatches for admin review,
  * NEVER auto-corrects financial state (spec §14.8, this module's header).
  *
  * The `PaymentProcessor` port (spec's own design) does not expose a
- * generic "look up an intent by id" method — only authorize/capture/
+ * generic "look up an intent by id" method, only authorize/capture/
  * cancel/refund, each of which would itself mutate processor state, which
  * a read-only reconciliation pass must never do. `FakeProcessor` exposes a
  * `_debugGetIntent` escape hatch for tests/dev; a real Stripe adapter would
  * add a dedicated read method (e.g. `retrieveIntent`) to the port when
- * reconciliation goes live in production — that is a port-signature change
+ * reconciliation goes live in production: that is a port-signature change
  * outside this file's authority, so this function reconciles what it can
  * without one: it flags any *locally inconsistent* state (a ledger entry
  * whose implied hold status doesn't match `payment_holds.status`, or a
@@ -245,7 +245,7 @@ export async function reconcileWithProcessor(ctx: Ctx, params?: { since?: Date }
       [hold.id],
     );
     // A 'capture' ledger row with amount 0 is the audit trail of a
-    // *declined* capture attempt (see `payment.service#captureHold`) — it
+    // *declined* capture attempt (see `payment.service#captureHold`), it
     // moved no money, so it must not be treated as evidence the hold
     // should be 'captured'.
     const capturedEntries = ledgerRows.filter((r) => r.type === 'capture' && Number(r.amount_cents) > 0);
@@ -283,7 +283,7 @@ export async function reconcileWithProcessor(ctx: Ctx, params?: { since?: Date }
 
     // Cross-check against the live processor state where the port allows it
     // (FakeProcessor's debug hook; a production adapter would use its own
-    // read method here instead — see function-level doc).
+    // read method here instead, see function-level doc).
     const debugGetIntent = (ctx.payments as { _debugGetIntent?: (id: string) => { status: string; capturedAmountCents: number } | undefined })._debugGetIntent;
     if (debugGetIntent && hold.processor_intent_id) {
       const intent = debugGetIntent.call(ctx.payments, hold.processor_intent_id);

@@ -9,7 +9,7 @@
  * Coverage:
  *  - role gating (no token -> 401; wrong role -> 403)
  *  - every admin stats access writes an admin_audit_log row (task brief:
- *    "every access audited like other admin routes" — a deliberately
+ *    "every access audited like other admin routes", a deliberately
  *    stronger bar than admin.routes.ts's read-routes-are-not-audited
  *    convention, see adminStats.routes.ts's module doc)
  *  - privacy: a user's own stats page never contains another identifiable

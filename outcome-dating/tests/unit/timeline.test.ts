@@ -46,7 +46,7 @@ function kinds(events: timelineService.TimelineEvent[]): string[] {
   return events.map((e) => e.kind);
 }
 
-/** Typed `.find` for a specific date-proposal event kind — an explicit type predicate, since a plain `e.kind === 'x'` arrow does not narrow `.find`'s result here. */
+/** Typed `.find` for a specific date-proposal event kind, an explicit type predicate, since a plain `e.kind === 'x'` arrow does not narrow `.find`'s result here. */
 function findKind<K extends timelineService.DateProposalEventKind>(
   events: timelineService.TimelineEvent[],
   kind: K,
@@ -99,7 +99,7 @@ test('a proposed date appears in both participants\' timelines, identically orde
   assert.equal(proposedEvent.recipientId, recipient);
 
   // No payment card data, no exact venue coordinates, no voucher payload
-  // on any event — structural allowlist check.
+  // on any event, structural allowlist check.
   for (const e of proposerTimeline.items) {
     const keys = Object.keys(e);
     for (const forbidden of ['latitude', 'longitude', 'qrPayload', 'processorIntentId', 'last4', 'cardNumber']) {
@@ -238,7 +238,7 @@ test('a recipient auth failure produces a date_payment_failed event, derived fro
 });
 
 // =====================================================================
-// Declining leaves the chat intact — verify and lock it down.
+// Declining leaves the chat intact, verify and lock it down.
 // =====================================================================
 
 test('declining a date proposal leaves the conversation active, messageable, and produces a date_declined event', async () => {

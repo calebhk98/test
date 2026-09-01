@@ -17,7 +17,7 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 
 // `scanText` is pure/synchronous but still takes a Ctx per its frozen
-// signature — this fixture never touches a DB.
+// signature, this fixture never touches a DB.
 function fakeCtx(): Ctx {
   const clock = new ManualClock(new Date('2026-01-01T00:00:00.000Z'));
   const logger = createSilentLogger();
@@ -34,7 +34,7 @@ function fakeCtx(): Ctx {
 }
 
 // =====================================================================
-// PATTERN_GROUPS coverage — every §19.3 category maps to a flag_type.
+// PATTERN_GROUPS coverage, every §19.3 category maps to a flag_type.
 // =====================================================================
 
 test('PATTERN_GROUPS covers every §23.15 flag_type at least once', () => {
@@ -45,7 +45,7 @@ test('PATTERN_GROUPS covers every §23.15 flag_type at least once', () => {
 });
 
 // =====================================================================
-// True positives — one per §19.3 category.
+// True positives, one per §19.3 category.
 // =====================================================================
 
 test('scanText: detects an Instagram handle as external_contact', () => {
@@ -89,12 +89,12 @@ test('scanText: a URL embedded inside an otherwise normal sentence is still dete
 });
 
 // =====================================================================
-// False-positive guards — the three explicitly required cases.
+// False-positive guards, the three explicitly required cases.
 // =====================================================================
 
-test('scanText: "my cash app of tea"-style near-miss still flags (regex cannot read puns) but NEVER blocks — flag internally, never refuse the send', () => {
+test('scanText: "my cash app of tea"-style near-miss still flags (regex cannot read puns) but NEVER blocks, flag internally, never refuse the send', () => {
   const result = scanText(fakeCtx(), "Honestly reality TV is not my cash app of tea.");
-  // It's fine — arguably correct — that the literal substring "cash app"
+  // It's fine, arguably correct, that the literal substring "cash app"
   // still matches; the spec's actual invariant is that this can never
   // block sending (§19.3 "Do not block the message automatically by
   // default"), only flag. `message.service.ts`'s own tests confirm the
@@ -149,7 +149,7 @@ test('extractDomain normalizes scheme and www', () => {
 });
 
 // =====================================================================
-// decideLinkPresentation — pure §19.4 presentation logic.
+// decideLinkPresentation, pure §19.4 presentation logic.
 // =====================================================================
 
 test('decideLinkPresentation: not clickable when the trust gate says no', () => {

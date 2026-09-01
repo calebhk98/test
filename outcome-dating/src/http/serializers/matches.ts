@@ -1,8 +1,8 @@
 /**
- * src/http/serializers/matches.ts — the `/matches` list/detail wire view.
+ * src/http/serializers/matches.ts, the `/matches` list/detail wire view.
  *
  * Explicit allowlist over `matches.service#MatchListItem` (same discipline
- * `serializers/discovery.ts`/`serializers/profile.ts` already use) — even
+ * `serializers/discovery.ts`/`serializers/profile.ts` already use), even
  * though that type has no unsafe field today, this is the one place a
  * future field added to it would have to also be added HERE before it
  * could reach the wire, rather than leaking by an accidental spread.

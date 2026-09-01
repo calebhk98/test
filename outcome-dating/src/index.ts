@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * src/index.ts — the process entrypoint/CLI.
+ * src/index.ts, the process entrypoint/CLI.
  *
  * Usage:
  *   node dist/index.js serve          # HTTP API + background job scheduler
@@ -10,7 +10,7 @@
  *   node dist/index.js jobs:start     # run the job scheduler only (no HTTP server)
  *
  * Every command builds its own `AppDeps` (real Postgres pool, `SystemClock`,
- * the configured `PaymentProcessor`/`ImageModerationPort` — see
+ * the configured `PaymentProcessor`/`ImageModerationPort`, see
  * `src/http/deps.ts`) rather than sharing process-wide singletons across
  * commands, since only one command ever runs per process invocation.
  */
@@ -28,7 +28,7 @@ async function cmdServe(): Promise<void> {
   const env = getEnv();
   // Fail fast: in production, refuse to start on any fake/stub adapter,
   // missing/default secret, or unconfigured database (src/config/adapters.ts).
-  // Never a warning that scrolls past — a hard failure, before anything
+  // Never a warning that scrolls past, a hard failure, before anything
   // else (a DB pool, an HTTP listener, the job scheduler) is created.
   const readiness = runProductionGuard(env);
   const deps = buildDeps();
@@ -99,7 +99,7 @@ async function cmdJobsStart(): Promise<void> {
   deps.logger.info('startup.readiness_report', readiness as unknown as Record<string, unknown>);
   deps.logger.info('jobs.scheduler_started', { jobs: ALL_JOBS.map((j) => j.name) });
 
-  // The scheduler's own timers are unref'd (see JobScheduler#start's doc —
+  // The scheduler's own timers are unref'd (see JobScheduler#start's doc,
   // that's correct when embedded inside `serve`, whose HTTP listener keeps
   // the process alive on its own). A standalone jobs-only process needs its
   // own keep-alive, and a clean way to exit on Ctrl-C / SIGTERM.

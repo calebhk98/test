@@ -1,6 +1,6 @@
 /**
  * Future-matching-signal sweep. Thin wrapper around
- * `postDateFeedback.service#runMatchingSignalSweep` — for a user with
+ * `postDateFeedback.service#runMatchingSignalSweep`, for a user with
  * enough `happened_good` post-date check-ins, generates a behavioral
  * question-answer suggestion (see that function's own doc). No domain
  * logic here.

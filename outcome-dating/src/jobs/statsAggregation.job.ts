@@ -1,8 +1,8 @@
 /**
- * src/jobs/statsAggregation.job.ts — the rollup job both stats pages read
+ * src/jobs/statsAggregation.job.ts, the rollup job both stats pages read
  * from, so neither page ever scans raw event history at request time.
  *
- * STRATEGY ("bounded time window, pre-aggregation, documented freshness" —
+ * STRATEGY ("bounded time window, pre-aggregation, documented freshness",
  * see this build's report for the measured cost):
  *
  *  1. `stats_platform_daily` (one row per UTC calendar day, admin page):
@@ -10,34 +10,34 @@
  *     (`TRAILING_WINDOW_DAYS`, default 35 days including today) and
  *     overwrites those days' rows outright. Days older than the window are
  *     never touched again. This assumes every source row's terminal state
- *     settles well within the window — true here: interests expire/get
+ *     settles well within the window, true here: interests expire/get
  *     answered in days, date proposals resolve in days-to-a-couple-weeks
  *     (see `dateProposalExpiry.job.ts`/`ticketedCompletionSweep.job.ts`).
  *     Each metric is computed with exactly ONE grouped, indexed,
  *     day-range query across the whole window (`date-range WHERE` +
- *     `GROUP BY day`) — never a per-day loop of queries — so the read side
+ *     `GROUP BY day`), never a per-day loop of queries, so the read side
  *     is O(number of metrics) round trips, not O(window days) or O(all
  *     history). The write side is a bounded per-day UPSERT loop (at most
  *     `TRAILING_WINDOW_DAYS + 1` single-row writes).
  *
- *     A cold start (the table is empty — first deploy) additionally
+ *     A cold start (the table is empty, first deploy) additionally
  *     backfills every day of platform history ONCE, in the same
  *     one-query-per-metric shape (just a wider window). This is a
  *     one-time cost paid once at rollout, not a recurring per-request or
- *     even a recurring per-run cost — documented explicitly so it is
+ *     even a recurring per-run cost, documented explicitly so it is
  *     never confused with the steady-state trailing-window behavior above.
  *
  *  2. `stats_cohort_retention` (one row per registration-day cohort, admin
  *     page): same shape, bounded to `RETENTION_WINDOW_DAYS` (default 60)
  *     trailing cohorts, one grouped query. Retention is measured against
  *     `users.last_active_at` (a single snapshot column, not a full
- *     activity log — see the migration file's comment on that table for
+ *     activity log, see the migration file's comment on that table for
  *     why) as "was this user still active at least N days into their
- *     tenure" — an honest, clearly-labeled proxy, not a precise
+ *     tenure", an honest, clearly-labeled proxy, not a precise
  *     daily-active reconstruction.
  *
  *  3. `stats_platform_gauges` (running metrics that are not naturally
- *     day-bucketed sums — currently just the repeat-date rate, which needs
+ *     day-bucketed sums, currently just the repeat-date rate, which needs
  *     a per-user distinct count across a window rather than a per-day
  *     count): one grouped query bounded to `GAUGE_LOOKBACK_DAYS` (default
  *     ~2 years) of `date_proposals.scheduled_end`.
@@ -58,7 +58,7 @@
  * stats services surface the most recent run's `run_at` so a viewer always
  * sees an honest "as of" time rather than an implied-live number. Default
  * scheduler interval (`registry.ts`) is 15 minutes, so data is stale by at
- * most that long — acceptable for a page product describes as "opened
+ * most that long, acceptable for a page product describes as "opened
  * casually," never wired to anything that needs real-time truth (money
  * reconciliation reads `payment_ledger` directly in a test to prove the
  * rollup matches it exactly, not to prove it's instantaneous).
@@ -145,7 +145,7 @@ interface SimpleMetric {
 }
 
 /**
- * One grouped, indexed, day-range query per metric — see module doc.
+ * One grouped, indexed, day-range query per metric, see module doc.
  * `tsColumn` is the event's own transition timestamp (never a mutable
  * "last updated" column for anything that can transition more than once),
  * so a row is bucketed into exactly the day it actually happened, and
@@ -184,7 +184,7 @@ function simpleMetrics(): SimpleMetric[] {
   ];
 }
 
-/** post_date_feedback covers both the legacy boolean and the newer 4-way outcome in one pass (see the file this reads, both are mutually exclusive per row — never both non-null). */
+/** post_date_feedback covers both the legacy boolean and the newer 4-way outcome in one pass (see the file this reads, both are mutually exclusive per row, never both non-null). */
 const FEEDBACK_SQL = `
   SELECT to_char(created_at AT TIME ZONE 'UTC', 'YYYY-MM-DD') AS day,
     count(*) FILTER (WHERE positive = true OR outcome = 'happened_good')::bigint AS pos,
@@ -313,7 +313,7 @@ async function aggregateRetention(ctx: Ctx, windowStart: Date, windowEndExclusiv
 /**
  * Repeat-date rate gauge: of users with >=1 completed date (in the
  * lookback window), what fraction have >=2? One grouped query, bounded by
- * `GAUGE_LOOKBACK_DAYS` of `scheduled_end` (indexed) — cost scales with
+ * `GAUGE_LOOKBACK_DAYS` of `scheduled_end` (indexed), cost scales with
  * completed-date volume in that window, not total user count.
  */
 const REPEAT_DATE_SQL = `

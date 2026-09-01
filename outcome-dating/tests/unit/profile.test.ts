@@ -95,10 +95,10 @@ test('computeProfileCompleteness: matches the documented weighted formula as fie
 
   // 5 answered questions -> +15 = 95. ONE typed question bank
   // (question_bank/user_question_answers, db/migrations/008_questions.sql)
-  // — replaces the OLD `questions`/`answers` tables this used to insert
+  // replaces the OLD `questions`/`answers` tables this used to insert
   // into directly (db/migrations/022_drop_old_question_bank.sql drops
   // both). `computeProfileCompleteness` counts only `status = 'answered'`
-  // rows — see that function's own doc for why this is a deliberate,
+  // rows, see that function's own doc for why this is a deliberate,
   // slightly narrower (more correct) mapping than the OLD bank's
   // "any row counts" behavior.
   const { rows: questionRows } = await pool.query<{ id: string; slug: string }>(
@@ -368,7 +368,7 @@ test('exportMyData: returns account/profile/photo data without the password hash
 
 test('getPublicProfile: consults discovery.isEitherBlocked before returning a profile', async () => {
   // discovery.isEitherBlocked is a stub owned by agent B (still throws
-  // NotImplementedError as of this writing) — this only asserts
+  // NotImplementedError as of this writing), this only asserts
   // profile.service actually calls through to it and propagates whatever
   // it does today, proving the block-check wiring exists, without
   // asserting on agent B's (not-yet-implemented) blocking logic itself.

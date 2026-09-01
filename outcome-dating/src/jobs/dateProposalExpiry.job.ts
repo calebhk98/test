@@ -1,6 +1,6 @@
 /**
  * §25.2 Date Proposal Expiry job. "Find pending date proposals past
- * acceptance expiry. Set to expired. Release proposer hold." — exactly
+ * acceptance expiry. Set to expired. Release proposer hold.", exactly
  * `dateProposal.service#expireDuePendingProposals`, which per-row checks
  * `policySnapshot['date.accept_expiry_hours']` (never live config, per the
  * §21.3 snapshot invariant) and calls `payment.releaseHold` only for a

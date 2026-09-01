@@ -1,5 +1,5 @@
 /**
- * `check_in_prompt_sweep` job — thin wrapper around
+ * `check_in_prompt_sweep` job, thin wrapper around
  * `postDateFeedback.service#runCheckInPromptSweep`. Full timing-matrix
  * coverage lives in `tests/unit/postDateFeedback.test.ts` (owned
  * elsewhere); this file proves the job is reachable, runs, and is
@@ -30,7 +30,7 @@ async function insertTicketedProposal(): Promise<string> {
   const conversationId = await createConversation(db, a, b);
   const venueId = await createVenue(db);
   const now = db.clock.now();
-  // scheduled_end 4 hours ago — past the 3h initial-prompt delay, well
+  // scheduled_end 4 hours ago, past the 3h initial-prompt delay, well
   // inside the 14-day prompt window.
   const scheduledStart = new Date(now.getTime() - 5 * 60 * 60 * 1000);
   const scheduledEnd = new Date(now.getTime() - 4 * 60 * 60 * 1000);

@@ -7,23 +7,23 @@ import * as conversationService from './conversation.service.js';
 import * as profileService from './profile.service.js';
 
 /**
- * matches.service — "your matches" list (product-owner finding #1: "You
+ * matches.service, "your matches" list (product-owner finding #1: "You
  * cannot see your matches.").
  *
  * Not part of INTERFACES.md's frozen module table (this whole feature is a
- * post-foundation addition) — this file's own header documents its "may
+ * post-foundation addition), this file's own header documents its "may
  * call" boundary the same way a frozen module's INTERFACES.md row would:
  *
  *   matches -> conversation (read only: `getConversation` for the
  *              single-match lookup's participant/existence check),
- *              profile (read only: `getPublicProfile`, reused verbatim —
+ *              profile (read only: `getPublicProfile`, reused verbatim,
  *              never a parallel profile shape, see below)
  *
  * WHAT COUNTS AS A "MATCH": every row in `conversations` the caller is a
  * participant of. A `conversations` row is created in exactly one place in
- * this codebase — `conversation.service#getOrCreateConversation`, called
+ * this codebase, `conversation.service#getOrCreateConversation`, called
  * only from `interest.service#acceptInterest` inside its own transaction
- * (see INTERFACES.md's call graph and that module's own header) — so its
+ * (see INTERFACES.md's call graph and that module's own header), so its
  * mere existence already encodes "a mutually accepted interest happened
  * between these two users." There is no second, weaker notion of "match"
  * to reconcile here; this file adds no new table and stores no new state.
@@ -31,8 +31,8 @@ import * as profileService from './profile.service.js';
  * PROFILE REUSE (product-owner finding #1's "click-through to full
  * profile"): each row's `displayName`/`primaryPhotoUrl`/
  * `approximateDistanceKm` are read directly off
- * `profile.service#getPublicProfile` — the exact same value the client
- * would get back from `GET /profiles/:userId` — never a hand-rolled
+ * `profile.service#getPublicProfile`, the exact same value the client
+ * would get back from `GET /profiles/:userId`, never a hand-rolled
  * second view. That function already (a) throws if either side has
  * blocked the other (b) never returns raw coordinates, only the
  * server-bucketed `approximateDistanceKm` (c) 404s a deleted account. This
@@ -41,18 +41,18 @@ import * as profileService from './profile.service.js';
  * leak anything the existing view withholds" a structural guarantee, not a
  * convention this file has to remember to uphold. A row whose target user
  * became unreachable that way (blocked either direction, or deleted) is
- * silently OMITTED from the page rather than erroring the whole list —
+ * silently OMITTED from the page rather than erroring the whole list,
  * see `listMyMatches` below.
  *
  * ORDERING RULE (documented once, here, since the task asked for it):
  *   sort key = COALESCE(last_message_at, created_at), DESC.
  * "Most recent activity first" for a conversation that has messages means
- * exactly what it says — the last message's time. For a conversation with
+ * exactly what it says, the last message's time. For a conversation with
  * NO messages yet (a brand-new match nobody has said anything in), there
  * is no message activity to sort by, so it sorts by ITS OWN match time
  * instead. Concretely: a match made ten minutes ago with zero messages
  * sorts ABOVE a conversation whose last message was yesterday, because ten
- * minutes ago is more recent than yesterday — a new match is never buried
+ * minutes ago is more recent than yesterday, a new match is never buried
  * under older, quieter conversations just because nobody has typed
  * anything yet. This is the identical rule
  * `conversation.service#listMyConversations` already uses for its own
@@ -69,7 +69,7 @@ export interface MatchListItem {
   displayName: string;
   primaryPhotoUrl: string | null;
   approximateDistanceKm: number | null;
-  /** When the mutual match happened — `conversations.created_at` (ISO-8601 UTC). */
+  /** When the mutual match happened, `conversations.created_at` (ISO-8601 UTC). */
   matchedAt: string;
   conversationStatus: ConversationStatus;
   /** Truncated to `MESSAGE_PREVIEW_MAX_CHARS`; `null` if nobody has sent a message yet. */
@@ -78,7 +78,7 @@ export interface MatchListItem {
   lastMessageAt: string | null;
   /** Messages sent to the caller in this conversation that the caller has not yet read. */
   unreadCount: number;
-  /** `COALESCE(lastMessageAt, matchedAt)` — the sort key, exposed so a client never has to re-derive it. ISO-8601 UTC. */
+  /** `COALESCE(lastMessageAt, matchedAt)`, the sort key, exposed so a client never has to re-derive it. ISO-8601 UTC. */
   lastActivityAt: string;
 }
 
@@ -131,8 +131,8 @@ export interface ListMyMatchesParams {
  * Every conversation the caller is a participant of (i.e. every match),
  * most-recent-activity-first (see module doc), cursor-paginated. A row is
  * silently dropped from the page (never surfaced as a partial-list error)
- * when `profile.service#getPublicProfile` refuses it — either side has
- * blocked the other, or the matched account was deleted — which can make
+ * when `profile.service#getPublicProfile` refuses it, either side has
+ * blocked the other, or the matched account was deleted, which can make
  * a page shorter than `limit` even while `nextCursor` is non-null; a
  * client should keep paging on a non-null cursor rather than assume a
  * short page means "no more data."
@@ -170,7 +170,7 @@ export async function listMyMatches(ctx: Ctx, params?: ListMyMatchesParams): Pro
     const matchedUserId = row.user_a_id === userId ? row.user_b_id : row.user_a_id;
 
     // See module doc "PROFILE REUSE": a block (either direction) or a
-    // deleted target account makes this row unreachable — drop it rather
+    // deleted target account makes this row unreachable, drop it rather
     // than fail the whole page.
     let profile: Awaited<ReturnType<typeof profileService.getPublicProfile>>;
     try {
@@ -209,7 +209,7 @@ export async function listMyMatches(ctx: Ctx, params?: ListMyMatchesParams): Pro
 }
 
 /**
- * Single-match detail — authorizes participancy via
+ * Single-match detail, authorizes participancy via
  * `conversation.service#getConversation` (throws `NotFoundError` for a
  * conversation the caller isn't in, same "don't leak existence" behavior
  * every other lookup in this codebase uses) and otherwise builds the exact

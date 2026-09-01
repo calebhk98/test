@@ -1,5 +1,5 @@
 /**
- * `venue_payout_settlement` job — thin wrapper around
+ * `venue_payout_settlement` job, thin wrapper around
  * `venueSettlement.service#settleDueVenuePayouts` (§15.4/§13.2). The
  * settlement math itself is unit-tested in `tests/unit/venueSettlement.test.ts`
  * (owned elsewhere); this file only proves the job is reachable, actually

@@ -3,7 +3,7 @@ import type { NotificationEventType } from '../../domain/types.js';
 /**
  * Local types for the notification DELIVERY layer (push/email/device
  * registration/preferences/quiet hours). Deliberately NOT added to
- * `src/domain/types.ts` — that file is frozen shared infrastructure this
+ * `src/domain/types.ts`, that file is frozen shared infrastructure this
  * build does not own, and `notification.service.ts`'s
  * `NotificationEventType` enum is likewise frozen (another agent owns that
  * file). See this build's report for the one-line addition
@@ -18,7 +18,7 @@ export type DevicePlatform = 'ios' | 'android' | 'web';
 export type ExtendedNotificationEventType = NotificationEventType | 'message_received';
 
 /**
- * The delivery pipeline's own channel set. 'in_app' is NOT a member here —
+ * The delivery pipeline's own channel set. 'in_app' is NOT a member here,
  * the in-app notification center is `notification.service.ts`'s
  * `notifications` table, which `enqueueNotification` calls into directly
  * for canonical event types (see outbox.ts). This outbox only ever queues
@@ -26,7 +26,7 @@ export type ExtendedNotificationEventType = NotificationEventType | 'message_rec
  * delivery.
  *
  * 'sms' (build correction: an OPTIONAL, verified phone number may back an
- * opt-in SMS channel — never a required one, see auth.service.ts module
+ * opt-in SMS channel, never a required one, see auth.service.ts module
  * doc) is added the same way `message_received` was added to
  * `ExtendedNotificationEventType` above: this is this build's own local
  * superset, not a change to any frozen shared type.
@@ -35,7 +35,7 @@ export type NotificationOutboxChannel = 'push' | 'email' | 'sms';
 
 /**
  * Preference categories a user can configure. 'safety' is deliberately NOT
- * a member — safety_notice is never user-configurable (see outbox.ts
+ * a member, safety_notice is never user-configurable (see outbox.ts
  * `EVENT_CATEGORY` and the quiet-hours bypass list).
  */
 export type NotificationCategory = 'match' | 'message' | 'date_request' | 'account_activity' | 'marketing';
@@ -51,7 +51,7 @@ export type OutboxStatus =
   | 'dead'
   | 'dropped_preference'
   | 'dropped_no_target'
-  /** SMS-only, terminal, never retried: this user already hit `NOTIFICATION_CONFIG.sms.maxPerUserPerDay` (delivery.ts) — a cost cap, not a transport failure. */
+  /** SMS-only, terminal, never retried: this user already hit `NOTIFICATION_CONFIG.sms.maxPerUserPerDay` (delivery.ts), a cost cap, not a transport failure. */
   | 'dropped_rate_limited';
 
 export interface OutboxRow {
@@ -90,10 +90,10 @@ export interface CategoryPrefs {
   inApp: boolean;
   /**
    * Defaults to `false` for every category (see `preferences.ts`
-   * `DEFAULT_PREFERENCES`) — unlike push/email, no category ever defaults
+   * `DEFAULT_PREFERENCES`), unlike push/email, no category ever defaults
    * SMS on, because every send costs real money and requires a verified
    * phone number the user chose to add. Turning this on for a category is
-   * necessary but not sufficient for that category's SMS to actually send —
+   * necessary but not sufficient for that category's SMS to actually send,
    * `delivery.ts` also requires a currently-verified phone at send time.
    */
   sms: boolean;

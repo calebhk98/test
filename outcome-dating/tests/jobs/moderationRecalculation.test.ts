@@ -1,5 +1,5 @@
 /**
- * §25.7 Moderation Score Recalculation job — aggregates automated flags
+ * §25.7 Moderation Score Recalculation job, aggregates automated flags
  * and applies restrictions/shadowbans/suspensions fully automatically
  * (mirrors C-25.7.1 / C-18.5.W1), with an idempotent re-run that does not
  * re-apply an already-applied action.
@@ -20,7 +20,7 @@ after(async () => {
   await teardownTestDb(db);
 });
 
-// The job scans every user with any recorded flag/report — reset between
+// The job scans every user with any recorded flag/report, reset between
 // tests so an earlier test's fixture user doesn't inflate a later test's
 // `usersEvaluated`/`actionsApplied` aggregate counts. Per-row assertions
 // (a specific user's own `moderation_actions`) are unaffected either way.

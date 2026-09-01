@@ -3,7 +3,7 @@ import type { PushSendParams, PushSendResult, PushSender } from '../ports/push.p
 
 /**
  * Apple Push Notification service adapter for `PushSender` (spec §20.2
- * push channel — required for iOS).
+ * push channel, required for iOS).
  *
  * Documented STUB, same pattern as `fcm.push.ts` and
  * `src/services/payments/stripe.processor.ts`: no APNs SDK/HTTP2 client is
@@ -38,7 +38,7 @@ export class ApnsPushSender implements PushSender {
    *   authorization: `bearer ${signedProviderJwt}`,     // ES256 JWT, keyId/teamId/signingKey, cached ~55min
    * },
    * body: {
-   *   aps: { 'content-available': 1 },   // silent/background — no `alert` field, same
+   *   aps: { 'content-available': 1 },   // silent/background, no `alert` field, same
    *                                       // data-only reasoning as fcm.push.ts: the CLIENT
    *                                       // renders templateKey+data locally, never Apple.
    *   templateKey: params.templateKey,

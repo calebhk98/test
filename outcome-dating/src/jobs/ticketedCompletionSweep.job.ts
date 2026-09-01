@@ -1,6 +1,6 @@
 /**
  * §15.4 Ticketed Completion Window Sweep job. Thin wrapper around
- * `dateProposal.service#sweepTicketedCompletionWindows` — every `ticketed`
+ * `dateProposal.service#sweepTicketedCompletionWindows`, every `ticketed`
  * proposal whose no-scan confirmation window has closed is moved to
  * `no_show` (zero confirmations) or `disputed` (exactly one), automatically
  * and idempotently (see that function's own doc). No domain logic here.

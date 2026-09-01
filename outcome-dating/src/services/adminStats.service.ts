@@ -1,20 +1,20 @@
 /**
- * src/services/adminStats.service.ts — the ADMIN-facing "stats page"
- * (product owner: "1 for admins... should allow tons of data" — the
+ * src/services/adminStats.service.ts, the ADMIN-facing "stats page"
+ * (product owner: "1 for admins... should allow tons of data", the
  * operational/product-health metrics list: registrations, verified
  * emails, completed profiles, impressions, interests sent/accepted,
  * conversations, date proposals/completions, voucher redemptions,
  * refunds, no-shows, reports, blocks, shadowbans, retention by cohort,
- * plus the quality metrics — accepted-interest rate, date completion
+ * plus the quality metrics, accepted-interest rate, date completion
  * rate, positive feedback rate, report rate per thousand messages,
  * no-show rate, refund rate, chat-to-date conversion, repeat date rate).
  *
  * ADMIN-ONLY, AUDITED: every exported function here requires an admin
  * actor (`requireAdminActor`) as defense in depth (the HTTP layer already
- * gates `/admin/stats/*` behind `requireRole('admin')` — see
+ * gates `/admin/stats/*` behind `requireRole('admin')`, see
  * `adminStats.routes.ts`), and every route that calls into this file
  * writes an `admin_audit_log` row for the READ itself, not just for
- * mutations — a deliberately stronger bar than the sibling
+ * mutations, a deliberately stronger bar than the sibling
  * `admin.routes.ts` convention (which only audits writes), because this
  * page aggregates the platform's full operational and financial history
  * and product explicitly asked for every access to be logged.
@@ -23,18 +23,18 @@
  * free-text `details`, post-date `notes`/`safety_details`, or any other
  * column that would let an admin read a private conversation through this
  * page. Every query below is a `count(*)`/`sum(...)` over a rollup table
- * or a `GROUP BY` count — never a row-level SELECT of message content.
+ * or a `GROUP BY` count, never a row-level SELECT of message content.
  *
  * PERFORMANCE / FRESHNESS: this file reads exclusively from the small
  * rollup tables `statsAggregation.job.ts` maintains
  * (`stats_platform_daily`, `stats_cohort_retention`,
- * `stats_platform_gauges`, `stats_aggregation_runs`) — at most a few
+ * `stats_platform_gauges`, `stats_aggregation_runs`), at most a few
  * thousand rows regardless of how large `users`/`messages`/`interests`
  * etc. have grown, so every query here is a bounded aggregate over a
  * small table, not a scan of platform history. The three exceptions are
  * `verifiedEmailsNow`/`profilesCompletedNow`/`shadowbannedNow`, which are
  * live, cheap, INDEX-ONLY point counts (see the partial indexes in
- * `db/migrations/020_stats.sql`) rather than rollup reads — they are
+ * `db/migrations/020_stats.sql`) rather than rollup reads, they are
  * current-state gauges, not historical flow, and a partial index makes
  * "how many rows are currently true" cheap independent of total table
  * size. Every response carries `freshness` (the rollup job's last run) so
@@ -47,7 +47,7 @@ import { DAILY_COLUMNS } from '../jobs/statsAggregation.job.js';
 import type { DailyRow } from '../jobs/statsAggregation.job.js';
 
 export const DEFAULT_WINDOW_DAYS = 30;
-export const MAX_WINDOW_DAYS = 3653; // ~10 years — still just summing one row per day
+export const MAX_WINDOW_DAYS = 3653; // ~10 years, still just summing one row per day
 const RETENTION_LIST_DAYS = 60;
 
 function requireAdminActor(ctx: Ctx): void {
@@ -66,7 +66,7 @@ export interface StatsWindow {
   isAllTime: boolean;
 }
 
-/** `windowDays` is inclusive of today; `'all'` sums every rollup day ever written (still cheap — one row per day, not per event). */
+/** `windowDays` is inclusive of today; `'all'` sums every rollup day ever written (still cheap, one row per day, not per event). */
 export function resolveWindow(now: Date, windowDays: number | 'all'): StatsWindow {
   const endDay = utcDayKey(now);
   if (windowDays === 'all') {
@@ -186,11 +186,11 @@ function ratio(numerator: number, denominator: number): number | null {
 }
 
 /**
- * The full admin overview — bundles core/money/quality/freshness in one
+ * The full admin overview, bundles core/money/quality/freshness in one
  * call so the page loads in one round trip from the client's perspective,
  * mirroring the existing `/admin/analytics/overview` pattern this build
  * is additive to (that route stays owned by its original agent; this is a
- * separate, richer, rollup-backed surface — see this build's report).
+ * separate, richer, rollup-backed surface, see this build's report).
  */
 export async function getOverview(ctx: Ctx, opts?: { windowDays?: number | 'all' }): Promise<AdminStatsOverview> {
   requireAdminActor(ctx);

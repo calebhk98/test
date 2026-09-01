@@ -1,5 +1,5 @@
 /**
- * `ticketed_completion_sweep` job — thin wrapper around
+ * `ticketed_completion_sweep` job, thin wrapper around
  * `dateProposal.service#sweepTicketedCompletionWindows` (§15.4). Full
  * outcome-math coverage lives in `tests/unit/dateOutcomeSweep.test.ts`
  * (owned elsewhere); this file proves the job is reachable, runs, and is

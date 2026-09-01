@@ -66,7 +66,7 @@ const UpdateProfileBodySchema = z.object({
   relationshipIntention: z.string().optional(),
   // These six were accepted by `profile.service#updateMyProfile`'s own
   // schema all along but silently stripped here (a `z.object` with no
-  // matching key drops it, no error) — a client could set a height and
+  // matching key drops it, no error), a client could set a height and
   // the write would 200 with nothing actually saved. Fixed alongside the
   // read-side gap in `serializers/profile.ts` (docs/ux-api-review.md §3b).
   heightCm: z.number().int().min(100).max(250).optional(),
@@ -142,7 +142,7 @@ export function registerProfileRoutes(app: FastifyInstance, deps: AppDeps): void
 
   // ---- Photos (§7.2) ----
   // `photo.service#listMyPhotos` was fully built and tested but had no
-  // route — the own-profile photo grid had no way to reload on app
+  // route, the own-profile photo grid had no way to reload on app
   // relaunch (docs/ux-api-review.md §3a).
   app.get('/me/photos', auth, async (req, reply) => {
     reply.send(await photoService.listMyPhotos(req.ctx!));

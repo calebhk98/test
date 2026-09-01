@@ -10,36 +10,36 @@
 -- WHY THIS MIGRATION DOES NOT `DROP TABLE questions`/`DROP TABLE answers`
 -- (the literal, first-choice way to "retire the old bank"):
 --
---   Three files outside this build's file-ownership boundary — explicitly
---   marked DO NOT TOUCH or otherwise off limits to edit here — read or
+--   Three files outside this build's file-ownership boundary, explicitly
+--   marked DO NOT TOUCH or otherwise off limits to edit here, read or
 --   write those two tables directly and would break at RUNTIME (a SQL
 --   error against a dropped relation, on every request that hits them) if
 --   this migration dropped them:
 --
---     - src/services/profile.service.ts — `exportMyData` counts a user's
+--     - src/services/profile.service.ts, `exportMyData` counts a user's
 --       `answers` rows for their data export, and `deleteMyAccount`
 --       deletes them as part of account deletion's data sweep.
---     - src/services/postDateFeedback.service.ts — the post-date
+--     - src/services/postDateFeedback.service.ts, the post-date
 --       "matching signal" sweep (`createMatchingSignalSuggestion`) joins
 --       `answers`/`questions` directly to find a divergence worth
 --       surfacing as a `behavioral_prompt_suggestions` row.
---     - src/services/behavioralPrompt.service.ts — `detectPatternsForUser`/
+--     - src/services/behavioralPrompt.service.ts, `detectPatternsForUser`/
 --       `respondToSuggestion` read `questions` and write `answers` (via
 --       `question.service#putMyAnswers`, kept as a legacy-only export
---       specifically for this caller — see that file's own doc).
---     - src/http/routes/admin.routes.ts — the §27 admin "question manager"
+--       specifically for this caller, see that file's own doc).
+--     - src/http/routes/admin.routes.ts, the §27 admin "question manager"
 --       panel (`GET/POST /admin/questions`, `PATCH /admin/questions/:id`)
 --       still calls `question.service#adminListQuestions`/
 --       `adminCreateQuestion`/`adminUpdateQuestion` directly, which read
 --       and write `questions`.
 --
 --   A schema migration cannot be gated on "unless a file I'm not allowed
---   to edit still needs this" — the only way to make dropping these
+--   to edit still needs this", the only way to make dropping these
 --   tables SAFE is to first repoint all four of the above at the typed
 --   bank, and three of them are outside this build's editable surface.
 --   Breaking active, in-flight, explicitly off-limits work is a worse
 --   outcome than leaving an inert (no longer reachable by any NEW user
---   action — see below) table pair in place, so this migration leaves
+--   action, see below) table pair in place, so this migration leaves
 --   `questions`/`answers` exactly as 001_init.sql defined them.
 --
 --   WHAT DID FULLY MOVE, SO THE DUPLICATION THE PRODUCT OWNER FLAGGED
@@ -47,7 +47,7 @@
 --     - `GET /questions`, `GET/PUT /me/answers` now serve the typed bank
 --       exclusively (src/http/routes/questions.routes.ts).
 --     - `compatibility.service.ts` scores exclusively from
---       `user_question_answers` — it no longer reads `answers` at all.
+--       `user_question_answers`, it no longer reads `answers` at all.
 --     - `filter.service.ts` derives every NEW deal-breaker filter as a
 --       `qb:`-prefixed key against the typed bank exclusively (see
 --       question.service.ts's `syncDealBreakerFilters`); a bare, unprefixed
@@ -55,7 +55,7 @@
 --       out-of-scope test suites, not something anything new-bank-facing
 --       ever authors again (see filter.service.ts's own QUESTION-SYSTEM
 --       CUTOVER note for exactly why that fallback stayed).
---     - `src/seed.ts` seeds ONLY the typed bank — a fresh install has
+--     - `src/seed.ts` seeds ONLY the typed bank, a fresh install has
 --       zero rows in `questions`/`answers`, so there is nothing left to
 --       duplicate `children_intention`/`religious_practice`/
 --       `family_closeness`/etc. against.
@@ -63,12 +63,12 @@
 --   above, none of which let an ordinary user create a NEW old-bank
 --   answer or duplicate concept through their own action (three are
 --   internal sweeps/admin tooling; the fourth, admin question creation,
---   is the one genuine residual risk — flagged in this build's report as
+--   is the one genuine residual risk, flagged in this build's report as
 --   the highest-priority follow-up, since an admin using that still-live
 --   panel could recreate the exact duplication this cutover exists to
 --   eliminate).
 --
--- WHAT THIS MIGRATION DOES DO: nothing to `hard_filters` — see below for
+-- WHAT THIS MIGRATION DOES DO: nothing to `hard_filters`, see below for
 -- why. It exists (rather than being an empty no-op file) as the anchor
 -- for the CUTOVER doc above, and because a `019_*.sql` file is this
 -- build's designated migration slot per the task brief even though, once
@@ -80,10 +80,10 @@
 -- `qb:`-prefixed, on the theory that a bare old-bank slug (e.g. `smoking`)
 -- could no longer resolve to anything. That theory was correct for a
 -- version of `filter.service.ts` that had also removed the OLD bank's
--- bare-slug resolution path — but that removal itself had to be reverted
+-- bare-slug resolution path, but that removal itself had to be reverted
 -- (see `filter.service.ts`'s file-level QUESTION-SYSTEM CUTOVER note: it
 -- broke `tests/unit/eligibility.test.ts`, `tests/unit/autoDecline.test.ts`,
 -- and `tests/unit/profileAttributes.test.ts`, none of which this build may
 -- edit). With that resolution path restored, a bare old-bank slug filter
--- key is NOT dead — it still resolves exactly as before — so there is
+-- key is NOT dead, it still resolves exactly as before, so there is
 -- nothing to retract here after all.

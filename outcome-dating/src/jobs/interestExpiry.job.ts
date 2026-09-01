@@ -4,7 +4,7 @@
  *
  * All three of those are already exactly what
  * `interest.service#expireDuePendingInterests` does in one idempotent
- * UPDATE (`WHERE status = 'pending' AND expires_at <= now`) — this job is a
+ * UPDATE (`WHERE status = 'pending' AND expires_at <= now`), this job is a
  * thin, named wrapper so the scheduler/CLI has a stable entry, per the task
  * brief's "never reimplements domain logic in the job."
  */

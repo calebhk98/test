@@ -1,5 +1,5 @@
 /**
- * tests/unit/productionGuard.test.ts — the production fail-fast guard
+ * tests/unit/productionGuard.test.ts, the production fail-fast guard
  * (`runProductionGuard`, `src/config/adapters.ts`), invoked at startup
  * from `src/index.ts`.
  *
@@ -12,7 +12,7 @@
  * environments are never affected by any of this, no matter how broken
  * their config looks.
  *
- * No database is needed — `runProductionGuard` is a pure function of
+ * No database is needed, `runProductionGuard` is a pure function of
  * `Env`.
  */
 import { test, before, after } from 'node:test';
@@ -89,7 +89,7 @@ const TWILIO_AUTH_TOKEN = `${SECRET_MARKER}_twilio_auth`;
 
 const REAL_MEDIA_PROVIDER_NAME = 'test_real_provider';
 
-/** A fully, correctly configured production deployment — the baseline every single-failure test starts from and un-does exactly one field of. */
+/** A fully, correctly configured production deployment, the baseline every single-failure test starts from and un-does exactly one field of. */
 const VALID_PRODUCTION_ENV: Record<string, string> = {
   NODE_ENV: 'production',
   DATABASE_URL: 'postgres://prod_user:prod_pass@prod-db.internal:5432/outcome_dating_prod',
@@ -112,7 +112,7 @@ const VALID_PRODUCTION_ENV: Record<string, string> = {
 
 // The whole suite registers a stand-in "real" media moderation provider
 // under REAL_MEDIA_PROVIDER_NAME so VALID_PRODUCTION_ENV can be genuinely
-// fully valid (see adapters.ts's registry design) — without this, media
+// fully valid (see adapters.ts's registry design), without this, media
 // moderation would fail every test in this file, since no real provider
 // ships in this codebase yet.
 const STAND_IN_MEDIA_ADAPTER: ImageModerationPort = {
@@ -167,7 +167,7 @@ test('inverse: development is unaffected even with every insecure default left i
   withEnv(
     {
       NODE_ENV: 'development',
-      // Deliberately every field either unset or at its worst value —
+      // Deliberately every field either unset or at its worst value,
       // none of this should matter outside production.
       AUTH_TOKEN_SECRET: undefined,
       VOUCHER_QR_SECRET: undefined,
@@ -181,7 +181,7 @@ test('inverse: development is unaffected even with every insecure default left i
     () => {
       const report = runProductionGuard(getEnv());
       assert.equal(report.environment, 'development');
-      // Every fake is active — that's fine and expected outside production.
+      // Every fake is active, that's fine and expected outside production.
       assert.ok(report.entries.some((e) => e.capability === 'payments' && e.isFake));
     },
   );
@@ -333,7 +333,7 @@ test('never leaks a secret value: buildReadinessReport (what the /admin/system-r
     assert.doesNotMatch(json, new RegExp(SECRET_MARKER));
     assert.doesNotMatch(json, new RegExp(TWILIO_AUTH_TOKEN.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
   });
-  // Failing case — the secrets that ARE set (e.g. STRIPE_SECRET_KEY, still
+  // Failing case, the secrets that ARE set (e.g. STRIPE_SECRET_KEY, still
   // present while STRIPE_WEBHOOK_SECRET is the thing that's missing) must
   // still never appear in the report.
   withEnv({ ...VALID_PRODUCTION_ENV, STRIPE_WEBHOOK_SECRET: undefined }, () => {
@@ -343,7 +343,7 @@ test('never leaks a secret value: buildReadinessReport (what the /admin/system-r
     } catch (err) {
       assert.ok(err instanceof ProductionConfigError);
     }
-    // buildReadinessReport itself never throws — use it directly too, the
+    // buildReadinessReport itself never throws, use it directly too, the
     // same way the /admin/system-readiness route does.
     const report = buildReadinessReport(getEnv());
     const json = JSON.stringify(report);

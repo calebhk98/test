@@ -1,8 +1,8 @@
 /**
  * §15.4/§13.2 Venue Payout Settlement job. Thin wrapper around
- * `venueSettlement.service#settleDueVenuePayouts` — every `completed`,
+ * `venueSettlement.service#settleDueVenuePayouts`, every `completed`,
  * venue-redeemed date proposal without an existing settlement gets one,
- * exactly once (idempotent — see that module's own doc). No domain logic
+ * exactly once (idempotent, see that module's own doc). No domain logic
  * lives here; this file only gives the scheduler/CLI a stable name and
  * interval, same pattern as every other `src/jobs/*.job.ts` file.
  */

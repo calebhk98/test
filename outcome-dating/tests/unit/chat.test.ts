@@ -22,7 +22,7 @@ async function makeUser(trustLevel: 'limited' | 'standard' | 'trusted' | 'elite'
   return insertUser(pool, { trustLevel });
 }
 
-/** Directly creates an 'active' conversation row, bypassing interest.service (out of this file's scope — interest.test.ts already covers acceptInterest -> conversation wiring). */
+/** Directly creates an 'active' conversation row, bypassing interest.service (out of this file's scope, interest.test.ts already covers acceptInterest -> conversation wiring). */
 async function makeConversation(
   ctx: Ctx,
   userAId: string,
@@ -32,7 +32,7 @@ async function makeConversation(
 }
 
 // =====================================================================
-// getOrCreateConversation — canonical ordering + idempotency.
+// getOrCreateConversation, canonical ordering + idempotency.
 // =====================================================================
 
 test('getOrCreateConversation: canonical ordering holds regardless of argument order', async () => {
@@ -68,7 +68,7 @@ test('getOrCreateConversation: reactivates an archived conversation for the same
 // §12.6-vs-§12.7 precedence: established always wins, unconditionally.
 // =====================================================================
 
-test('establishConversation is idempotent and terminal — a second call and getOrCreateConversation both leave it untouched', async () => {
+test('establishConversation is idempotent and terminal, a second call and getOrCreateConversation both leave it untouched', async () => {
   const u1 = await makeUser();
   const u2 = await makeUser();
   const clock = new ManualClock(new Date('2026-01-03T00:00:00.000Z'));
@@ -127,7 +127,7 @@ test('established conversations are excluded from the active-conversation count'
 // Decay boundaries at exactly 72h / 14d / 21d.
 // =====================================================================
 
-test('decay job: prompts at 72h, cools at 14d, archives at 21d — and never touches a conversation with a date proposal', async () => {
+test('decay job: prompts at 72h, cools at 14d, archives at 21d, and never touches a conversation with a date proposal', async () => {
   const clock = new ManualClock(new Date('2026-02-01T00:00:00.000Z'));
   const jobCtx = buildCtx({ actor: { type: 'system', job: 'chat_decay' }, clock });
 
@@ -142,7 +142,7 @@ test('decay job: prompts at 72h, cools at 14d, archives at 21d — and never tou
   const b2 = await makeUser();
   const convB = await makeConversation(jobCtx, b1, b2);
   await messageService.sendMessage(buildCtx({ actor: userActor(b1), clock }), convB.id, 'first message in B');
-  // date_proposals.venue_id FKs to venues — insert a throwaway venue first.
+  // date_proposals.venue_id FKs to venues, insert a throwaway venue first.
   const { rows: venueRows } = await pool.query<{ id: string }>(
     `INSERT INTO venues (name, address, latitude, longitude, category, active, margin_percent, redemption_method)
      VALUES ('Test Venue', '1 Test St', 0, 0, 'coffee', true, 0, 'qr_scan') RETURNING id`,
@@ -190,7 +190,7 @@ test('decay job: prompts at 72h, cools at 14d, archives at 21d — and never tou
 });
 
 // =====================================================================
-// message.service — chat unlock, rate limits, textscan wiring.
+// message.service, chat unlock, rate limits, textscan wiring.
 // =====================================================================
 
 test('sendMessage: rejects when the conversation is not open (archived)', async () => {
@@ -245,7 +245,7 @@ test('sendMessage: a flagged message still sends (never blocked by content) and 
   assert.ok(rows.length > 0);
 });
 
-test('sendMessage: 120/hr rate limit boundary — 120th send ok, 121st refused', async () => {
+test('sendMessage: 120/hr rate limit boundary, 120th send ok, 121st refused', async () => {
   const u1 = await makeUser();
   const u2 = await makeUser();
   const clock = new ManualClock(new Date('2026-03-05T00:00:00.000Z'));
@@ -276,10 +276,10 @@ test('sendMessage: a limited-trust sender\'s link is flagged non-clickable (spec
     [message.id, 'link'],
   );
   // Resolved via trust.service#canSendClickableLinks (called, not
-  // reimplemented) — a Limited-trust sender's link must never render
+  // reimplemented), a Limited-trust sender's link must never render
   // clickable, encoded here as severity 2 (see message.service.ts's
   // LINK_NOT_CLICKABLE_SEVERITY convention; the message itself still
-  // sends either way — §19.3 never blocks on content).
+  // sends either way, §19.3 never blocks on content).
   assert.equal(rows[0]!.severity, 2);
 });
 

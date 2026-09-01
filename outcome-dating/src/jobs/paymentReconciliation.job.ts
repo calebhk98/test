@@ -1,7 +1,7 @@
 /**
  * §25.9 Payment Reconciliation job. "Compare processor webhooks with local
- * ledger. Flag mismatches." — exactly `ledger.service#reconcileWithProcessor`,
- * which NEVER auto-corrects financial state (see that function's own doc —
+ * ledger. Flag mismatches.", exactly `ledger.service#reconcileWithProcessor`,
+ * which NEVER auto-corrects financial state (see that function's own doc,
  * the immutable-ledger invariant), only reports mismatches. This wrapper's
  * only added behavior is logging each flagged mismatch at `warn` level so
  * it's visible in process logs/observability even before an admin views

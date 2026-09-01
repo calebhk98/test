@@ -1,5 +1,5 @@
 /**
- * `POST /webhooks/payments` — signature verification (C-24.5) and
+ * `POST /webhooks/payments`, signature verification (C-24.5) and
  * idempotency (§25.9) at the HTTP boundary. `payment.handleProcessorWebhook`
  * itself is already idempotent (dup-ledger-row check); this file proves the
  * ROUTE also rejects an unsigned/bad-signature request before that function

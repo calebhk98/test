@@ -2,13 +2,13 @@
  * Foundation smoke test.
  *
  * Boots the local dev Postgres (assumes `scripts/pg-dev.sh start` has
- * already been run — see package.json `pretest`-free `test` script;
+ * already been run, see package.json `pretest`-free `test` script;
  * CI/dev should run `npm run pg:start && npm run test`), runs migrations
  * against a dedicated `outcome_dating_test` database, seeds it, and
  * asserts:
  *   1. migrations apply cleanly and are idempotent,
  *   2. the config service returns every §21.4 default,
- *   3. `snapshotPolicy` is stable — two calls with no config change in
+ *   3. `snapshotPolicy` is stable, two calls with no config change in
  *      between return deep-equal objects, and a subsequent `set` does NOT
  *      retroactively change an already-captured snapshot,
  *   4. the seed module runs end-to-end and produces the expected row
@@ -62,7 +62,7 @@ before(async () => {
 after(async () => {
   await pool.end();
   // `runMigrations`/`seed` use the shared singleton pool (src/db/pool.ts),
-  // which by now holds open connections to the test DB — close it too, or
+  // which by now holds open connections to the test DB, close it too, or
   // DROP DATABASE below fails with "being accessed by other users".
   await closePool();
   await adminPool.query(`DROP DATABASE IF EXISTS ${TEST_DB_NAME}`);
@@ -103,7 +103,7 @@ test('config service returns every §21.4 default', async () => {
   assert.equal(await config.get('moderation.auto_shadowban_score'), 80);
   assert.equal(await config.get('trust.link_min_level'), 'standard');
 
-  // No row exists yet for any key — `get` must fall back to the registry
+  // No row exists yet for any key, `get` must fall back to the registry
   // default rather than throwing or returning undefined.
   for (const [key, value] of Object.entries(CONFIG_DEFAULTS)) {
     assert.equal(await config.get(key as keyof typeof CONFIG_DEFAULTS), value, `default mismatch for ${key}`);
@@ -148,7 +148,7 @@ test('feature flags service resolves deterministically per user', async () => {
     results.add(await flags.isEnabled(KNOWN_FLAGS.PHOTO_AB_TESTING, { userId: `user-${i}` }));
   }
   // With 25 distinct users at a 50% rollout, expect a mix of true/false
-  // (not all-or-nothing) — proves bucketing is actually per-user, not a
+  // (not all-or-nothing), proves bucketing is actually per-user, not a
   // single coin flip for the whole flag.
   assert.ok(results.has(true) && results.has(false), 'expected a mix of enabled/disabled across users at 50% rollout');
 
@@ -163,10 +163,10 @@ test('feature flags service resolves deterministically per user', async () => {
 test('seed runs end-to-end and produces expected data', async () => {
   await seed();
 
-  // CUTOVER NOTE (question-system-cutover build, reported — this file is
+  // CUTOVER NOTE (question-system-cutover build, reported, this file is
   // outside that build's file-ownership boundary and was otherwise left
   // untouched): `src/seed.ts` now seeds ONLY the ONE typed question bank
-  // (`question_bank`, db/migrations/008_questions.sql) — the OLD
+  // (`question_bank`, db/migrations/008_questions.sql), the OLD
   // `questions` table is deliberately seeded with nothing (see
   // src/services/question.service.ts's file-level CUTOVER doc for why the
   // table still exists in the schema but is never written to by a fresh

@@ -1,7 +1,7 @@
 /**
  * Unit tests for compatibility.service.ts.
  *
- * `computePairScore` is pure — most of this file exercises it directly
+ * `computePairScore` is pure, most of this file exercises it directly
  * with hand-computed arithmetic against
  * `src/domain/questions/scoring.ts#scoreQuestionContribution`'s documented
  * formula (satisfaction = mean of both directions' handler.satisfaction;
@@ -14,9 +14,9 @@
  * CUTOVER: this file used to build `Question`/`Answer` fixtures (the OLD
  * flat 1-5 self/partner-pair bank) and assert against the OLD §16.2
  * formula. `compatibility.service.ts` now scores exclusively from the
- * typed question bank (`question_bank`/`user_question_answers` —
+ * typed question bank (`question_bank`/`user_question_answers`,
  * db/migrations/008_questions.sql) via
- * `src/domain/questions/scoring.ts#aggregateQuestionScores` — every
+ * `src/domain/questions/scoring.ts#aggregateQuestionScores`, every
  * fixture below is a `QuestionDefinition` + `QuestionAnswerState` instead.
  */
 import { test, before, after } from 'node:test';
@@ -42,7 +42,7 @@ import {
 } from '../../src/services/compatibility.service.js';
 
 // =====================================================================
-// Fixtures — a `scale` (min=1,max=5) QuestionDefinition, matching the old
+// Fixtures, a `scale` (min=1,max=5) QuestionDefinition, matching the old
 // worked-example fixtures' 1-5 shape closely enough to keep the hand-
 // computed arithmetic below easy to follow, but going through the real
 // typed-bank type system (typeHandlers.ts's scale `satisfaction` is
@@ -66,7 +66,7 @@ function scaleQuestion(overrides: Partial<QuestionDefinition> & { id: string; ba
   };
 }
 
-/** `answeredState(self, preference, importance)` keyed by question id — the shape `computePairScore` expects (see compatibility.service.ts's own `reKeyAnswersBySlugToCurrentId` doc). */
+/** `answeredState(self, preference, importance)` keyed by question id, the shape `computePairScore` expects (see compatibility.service.ts's own `reKeyAnswersBySlugToCurrentId` doc). */
 function answers(pairs: Array<[string, number, number, QuestionAnswerState['importance']]>): Map<string, QuestionAnswerState> {
   const map = new Map<string, QuestionAnswerState>();
   for (const [questionId, self, pref, importance] of pairs) {
@@ -80,17 +80,17 @@ function answers(pairs: Array<[string, number, number, QuestionAnswerState['impo
 // =====================================================================
 
 test('computePairScore: worked 3-question example (hand-computed against scoring.ts\'s documented formula)', () => {
-  // Q1 — baseWeight 1, importance 'important' both sides (multiplier 1 each).
+  // Q1, baseWeight 1, importance 'important' both sides (multiplier 1 each).
   //   A: self=5 pref=5. B: self=5 pref=5.
   //   satisfaction(A.self,B.pref) = 1 - |5-5|/4 = 1 ; satisfaction(B.self,A.pref) = 1
   //   satisfaction = (1+1)/2 = 1 ; weight = 1 * (1+1)/2 = 1
   //
-  // Q2 — baseWeight 1, importance 'important' both sides.
+  // Q2, baseWeight 1, importance 'important' both sides.
   //   A: self=1 pref=1. B: self=5 pref=5.
   //   satisfaction(A.self=1,B.pref=5) = 1 - 4/4 = 0 ; satisfaction(B.self=5,A.pref=1) = 0
   //   satisfaction = 0 ; weight = 1
   //
-  // Q3 — baseWeight 3, importance 'important' both sides.
+  // Q3, baseWeight 3, importance 'important' both sides.
   //   A: self=3 pref=3. B: self=3 pref=3. satisfaction = 1 ; weight = 3
   //
   // score = sum(satisfaction*weight) / sum(weight) = (1*1 + 0*1 + 1*3) / (1+1+3) = 4/5 = 0.8
@@ -150,7 +150,7 @@ test('computePairScore: symmetric under swapping the two users\' argument order'
   );
 });
 
-test('computePairScore: importance multiplier — a critical preference weighs a question more than an important one, and irrelevant contributes nothing', () => {
+test('computePairScore: importance multiplier, a critical preference weighs a question more than an important one, and irrelevant contributes nothing', () => {
   // Two otherwise-identical-satisfaction questions (satisfaction=1 for
   // both), differing only in stated importance.
   //   Q_critical: both sides 'critical' (multiplier 2) -> weight = 1*2 = 2
@@ -201,7 +201,7 @@ test('computePairScore: deal_breaker is excluded from weighted scoring, never a 
 
 test('computePairScore: too few shared scoreable questions defaults score to 0', () => {
   const questions = [scaleQuestion({ id: 'q1', baseWeight: 1 }), scaleQuestion({ id: 'q2', baseWeight: 1 }), scaleQuestion({ id: 'q3', baseWeight: 1 })];
-  // Only q1 is answered by both — 1 shared question, but minSharedQuestions=3.
+  // Only q1 is answered by both, 1 shared question, but minSharedQuestions=3.
   const a = answers([
     ['q1', 5, 5, 'important'],
     ['q2', 5, 5, 'important'],
@@ -224,7 +224,7 @@ test('computePairScore: unanswered/skipped/prefer_not_to_say on either side excl
     ['q1', answeredState(3, 3, 'important')],
     ['q2', answeredState(5, 5, 'important')],
     ['q3', answeredState(5, 5, 'important')],
-    // q3 present but B never got a q1 row at all is covered implicitly —
+    // q3 present but B never got a q1 row at all is covered implicitly,
     // q1 is excluded here purely by A's prefer_not_to_say, regardless of B.
   ]);
 
@@ -323,7 +323,7 @@ async function setAnswer(userId: string, slug: string, questionBankId: string, s
   );
 }
 
-/** Like `makeUser`, but also gives the user a located profile and an explicit `last_active_at` — what the bounded refresh (see compatibility.service.ts's SCALE FIX doc) needs to consider someone eligible/geographically placeable. */
+/** Like `makeUser`, but also gives the user a located profile and an explicit `last_active_at`, what the bounded refresh (see compatibility.service.ts's SCALE FIX doc) needs to consider someone eligible/geographically placeable. */
 async function makeUserWithLocation(email: string, lat: number, lon: number, lastActiveAt: Date): Promise<string> {
   const { rows } = await pool.query<{ id: string }>(
     `INSERT INTO users (email, password_hash, birthdate, status, last_active_at) VALUES ($1, 'x', '1995-01-01', 'active', $2) RETURNING id`,
@@ -358,7 +358,7 @@ test('getScore: computes and upserts a compatibility_scores row for a pair with 
   assert.ok(Math.abs(rows[0]!.score - 1) < 1e-9);
 });
 
-test('getScore: a deal-breaker mismatch scores like any other excluded question — hard exclusion happens in filter.service.ts, not here', async () => {
+test('getScore: a deal-breaker mismatch scores like any other excluded question, hard exclusion happens in filter.service.ts, not here', async () => {
   const userA = await makeUser('compat-db-a@test.local');
   const userB = await makeUser('compat-db-b@test.local');
   const qs = await Promise.all([makeQuestion(), makeQuestion(), makeQuestion()]);
@@ -372,7 +372,7 @@ test('getScore: a deal-breaker mismatch scores like any other excluded question 
     [userA, qs[0]!.slug],
   );
 
-  // Fewer than DEFAULT_MIN_SHARED_QUESTIONS(3) scoreable questions remain (2), so score defaults to 0 —
+  // Fewer than DEFAULT_MIN_SHARED_QUESTIONS(3) scoreable questions remain (2), so score defaults to 0,
   // proving the deal breaker was excluded from the weighted average rather than counted as a perfect or terrible term.
   const score = await getScore(ctx, userA, userB);
   assert.equal(score, 0);
@@ -395,7 +395,7 @@ test('getScoresForCandidates: batches multiple candidates and upserts each row',
 });
 
 // =====================================================================
-// Bounded-refresh tests (this build's SCALE FIX — see compatibility.service.ts's
+// Bounded-refresh tests (this build's SCALE FIX, see compatibility.service.ts's
 // file-level doc). Perf/scale is measured separately in
 // tests/perf/compatRefresh.perf.test.ts; these prove the four hard
 // requirements at DB-verifiable (not just estimated) scale: semantics
@@ -409,7 +409,7 @@ test('refreshAllScores: materialized scores match computePairScore run directly 
   const near1 = await makeUserWithLocation('sem-near1@test.local', 40.7128, -74.006, now);
   const near2 = await makeUserWithLocation('sem-near2@test.local', 40.72, -74.01, now);
   const near3 = await makeUserWithLocation('sem-near3@test.local', 40.7, -73.99, now);
-  // One user in Sydney — thousands of km outside the default refresh radius of the New York cluster.
+  // One user in Sydney, thousands of km outside the default refresh radius of the New York cluster.
   const far = await makeUserWithLocation('sem-far@test.local', -33.8688, 151.2093, now);
 
   const qs = await Promise.all([makeQuestion(1), makeQuestion(2), makeQuestion(1)]);
@@ -441,7 +441,7 @@ test('refreshAllScores: materialized scores match computePairScore run directly 
 
   // Every pair within the New York cluster must be materialized, BOTH
   // directions, and must match `computePairScore` invoked directly on the
-  // exact same inputs — proving the bounded refresh's SQL/orchestration
+  // exact same inputs, proving the bounded refresh's SQL/orchestration
   // routes the right two users' answers into the unchanged scoring
   // formula, not just that the formula itself is correct (already covered
   // by the pure tests above).
@@ -462,7 +462,7 @@ test('refreshAllScores: materialized scores match computePairScore run directly 
   }
 
   // The geographically distant (Sydney) pair must NOT be pre-materialized
-  // by the bounded nightly refresh — this is the whole point of the
+  // by the bounded nightly refresh, this is the whole point of the
   // bound, and the thing this test would catch regressing back to
   // unbounded O(n^2) behavior.
   const { rows: farRowBefore } = await pool.query(
@@ -472,7 +472,7 @@ test('refreshAllScores: materialized scores match computePairScore run directly 
   assert.equal(farRowBefore.length, 0, 'a geographically distant pair must not be pre-materialized by the bounded nightly refresh');
 
   // COLD PATH: it must still be exactly scoreable on demand (hard
-  // requirement — "anything evicted or never materialized must still be
+  // requirement, "anything evicted or never materialized must still be
   // scoreable on demand"), and the on-demand value must match the exact
   // same pure computation used above.
   const expectedFar = computePairScore(questions, answersFor(near1), answersFor(far), DEFAULT_MIN_SHARED_QUESTIONS).score;
@@ -534,12 +534,12 @@ test('refreshAllScores: idempotent re-run, and a user who falls outside the acti
   );
   assert.ok(Math.abs(scoreRowsAfterRerun[0]!.score - 1) < 1e-9);
 
-  // Move the clock forward past the activity window — `a`/`b`'s
+  // Move the clock forward past the activity window, `a`/`b`'s
   // `last_active_at` (fixed at the earlier `now`) is now stale, so both
   // fall out of eligibility. Every row touching either of them must be
   // evicted, not merely left un-refreshed (hard requirement: this is what
   // keeps `compatibility_scores`'s size bounded by the ACTIVE population
-  // rather than the platform's total historical user count — see
+  // rather than the platform's total historical user count, see
   // compatibility.service.ts's file-level SCALE FIX doc).
   clock.advanceDays(45);
   await refreshAllScores(ctx);
@@ -575,5 +575,5 @@ test('refreshAllScores: writes symmetric rows for every active pair', async () =
 // NOTE: "answering a new-bank question refreshes materialized scores" (the
 // `refreshScoresForUser` side effect `question.service#putMyQuestionAnswer`
 // now triggers) is exercised end-to-end in tests/unit/question.service.test.ts
-// and tests/http/questions.test.ts, not here — this file only covers the
+// and tests/http/questions.test.ts, not here, this file only covers the
 // pure/DB primitives compatibility.service.ts itself exports.

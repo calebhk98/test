@@ -1,5 +1,5 @@
 /**
- * tests/unit/cursor.test.ts — src/lib/cursor.ts, the shared
+ * tests/unit/cursor.test.ts, src/lib/cursor.ts, the shared
  * `(timestamp, id)` cursor codec extracted per docs/duplication.md finding
  * 3 (three of six pagination endpoints validated a malformed cursor's date
  * and three silently let an `Invalid Date` reach a SQL query, turning
@@ -13,7 +13,7 @@
  *     switched onto this helper as part of the same fix) turns a malformed
  *     cursor into a typed `ValidationError` (status 400) rather than a raw
  *     DB error (which the shared HTTP error handler, src/http/errors.ts,
- *     would otherwise turn into an unintended 500) — the exact bug this
+ *     would otherwise turn into an unintended 500), the exact bug this
  *     helper closes.
  */
 import { test, before, after } from 'node:test';
@@ -82,7 +82,7 @@ test('decodeTimestampIdCursor: tampered cursor (flipped interior character) is r
   const tampered = chars.join('');
   // Tampering either corrupts the structure/date (-> throws) or happens to
   // still decode to *some* valid (ts, id) pair (base64url has no checksum,
-  // so this is possible) — either way it must never throw anything other
+  // so this is possible), either way it must never throw anything other
   // than a typed ValidationError, and it must never produce an Invalid Date.
   try {
     const decoded = decodeTimestampIdCursor(tampered);
@@ -131,7 +131,7 @@ test('adopting endpoint (message.listMessages): a malformed cursor is a typed Va
     () => message.listMessages(ctx, conversationId, { cursor: badCursor }),
     (err: unknown) => {
       // Must be the typed AppError whose `.status` (src/http/errors.ts's
-      // fastifyErrorHandler forwards this verbatim) is 400 — never a raw
+      // fastifyErrorHandler forwards this verbatim) is 400, never a raw
       // RangeError/other untyped error, which the same handler maps to 500.
       assert.ok(err instanceof ValidationError, `expected ValidationError, got ${(err as Error)?.constructor?.name}`);
       assert.equal((err as ValidationError).status, 400);

@@ -11,7 +11,7 @@
  * shipped, so every trust/notification assertion below was only proving
  * `dateProposal.service.ts` called *something* shaped like the fake, not
  * that it was correctly wired to production code (test-audit.md Finding
- * 1). The mocks are gone — every service this file exercises
+ * 1). The mocks are gone, every service this file exercises
  * (`conversation`, `notification`, `trust`, `venue`, `payment`, `ledger`,
  * `voucher`) is the real, fully-implemented code; nothing is faked.
  *
@@ -19,7 +19,7 @@
  * (`FakeProcessor`) representing ONE external processor account. Every
  * `Ctx` built for actors who share a date proposal (proposer, recipient,
  * the admin/system/venue-staff actor that later acts on it) MUST be given
- * the SAME `FakeProcessor` instance — two different instances would be two
+ * the SAME `FakeProcessor` instance, two different instances would be two
  * different "processors" that don't know about each other's intents. Every
  * helper below threads one shared `processor` through a whole flow.
  */
@@ -172,7 +172,7 @@ test('proposeDate: rejects a non-participant, and an inactive venue', async () =
   // check. This assertion used to expect ForbiddenError, which only held
   // under this file's old mock.module() fake for conversation.service.ts
   // (a fake that, unlike the real service, returned the row regardless of
-  // participant) — real code was never exercised. Removing that stale mock
+  // participant), real code was never exercised. Removing that stale mock
   // (test-audit.md Finding 1) surfaced the mismatch; the real, real-service
   // behavior below is the intended, more enumeration-safe one, so the test
   // is updated to match it rather than weakened or the production code
@@ -245,13 +245,13 @@ test('happy path: propose -> accept -> capture -> ticket -> redeem -> completed 
   assert.equal(await captureLedgerTotal(proposed.id, pair.proposerId), 2000);
   assert.equal(await captureLedgerTotal(proposed.id, pair.recipientId), 2000);
 
-  // Staff-facing result carries no chat/email/card data (spec §4.2) — the
+  // Staff-facing result carries no chat/email/card data (spec §4.2), the
   // fields simply don't exist on these types.
   assert.deepEqual(Object.keys(result).sort(), ['dateProposal', 'redemption', 'voucher'].sort());
 });
 
 // =====================================================================
-// §14.5 failure paths — nobody is ever charged alone
+// §14.5 failure paths, nobody is ever charged alone
 // =====================================================================
 
 test('§14.5: proposer authorization fails -> payment_failed, nobody captured', async () => {
@@ -285,7 +285,7 @@ test('§14.5: capture fails for the proposer -> payment_failed AND the recipient
   const pair = await setupPair({ proposer: 'tok_fail_capture' });
 
   const proposed = await dateProposalService.proposeDate(pair.proposerCtx, { conversationId: pair.conversationId, venueId: pair.venueId, ...futureRange(72) });
-  assert.equal(proposed.status, 'pending_acceptance'); // authorize succeeded — fail_capture only trips capture()
+  assert.equal(proposed.status, 'pending_acceptance'); // authorize succeeded, fail_capture only trips capture()
 
   const result = await dateProposalService.acceptDateProposal(pair.recipientCtx, proposed.id);
   assert.equal(result.status, 'payment_failed');
@@ -307,7 +307,7 @@ test('§14.5/§30.5: capture fails for the recipient AFTER the proposer already 
   assert.equal(proposerHold?.status, 'refunded', 'money moved for the proposer, so undoing it must be a refund, not a release');
   assert.equal((await holdRow(pair.recipientId, proposed.id))?.status, 'failed');
 
-  assert.equal(await captureLedgerTotal(proposed.id, pair.proposerId), 0, 'captured then fully refunded nets to zero — the proposer was not left charged alone');
+  assert.equal(await captureLedgerTotal(proposed.id, pair.proposerId), 0, 'captured then fully refunded nets to zero, the proposer was not left charged alone');
   assert.equal(await captureLedgerTotal(proposed.id, pair.recipientId), 0);
 });
 
@@ -338,7 +338,7 @@ test('§14.6: an un-accepted proposal expires after accept_expiry_hours and rele
 });
 
 // =====================================================================
-// §14.7 cancellation — the 24h full-refund cutoff boundary, both sides
+// §14.7 cancellation, the 24h full-refund cutoff boundary, both sides
 // =====================================================================
 
 interface Flow {
@@ -370,19 +370,19 @@ test('§14.7 boundary: canceling at EXACTLY 24h before the date is a full refund
   assert.equal((await holdRow(flow.proposerId, flow.proposalId))?.status, 'refunded');
   assert.equal((await holdRow(flow.recipientId, flow.proposalId))?.status, 'refunded');
   assert.equal(await captureLedgerTotal(flow.proposalId, flow.proposerId), 0, 'fully refunded nets to zero for the proposer');
-  assert.equal(await captureLedgerTotal(flow.proposalId, flow.recipientId), 0, 'fully refunded nets to zero for the recipient too — both sides');
+  assert.equal(await captureLedgerTotal(flow.proposalId, flow.recipientId), 0, 'fully refunded nets to zero for the recipient too, both sides');
 });
 
 test('§14.7 boundary: canceling just INSIDE 24h before the date applies the (default 0%) late-cancel policy instead', async () => {
   const flow = await ticketedFlow(100);
-  // 23.5 hours before scheduledStart — inside the cutoff.
+  // 23.5 hours before scheduledStart, inside the cutoff.
   db.clock.set(new Date(flow.scheduledStart.getTime() - 23.5 * 60 * 60 * 1000));
 
   const ctx = makeCtx(db, userActor(flow.recipientId), { payments: flow.processor });
   const canceled = await dateProposalService.cancelDateProposal(ctx, flow.proposalId);
   assert.equal(canceled.status, 'canceled', 'inside the cutoff, the outcome is "canceled", not "refunded"');
 
-  assert.equal((await holdRow(flow.proposerId, flow.proposalId))?.status, 'captured', 'default late_cancel_refund_percent is 0 — no refund is issued, the hold stays captured');
+  assert.equal((await holdRow(flow.proposerId, flow.proposalId))?.status, 'captured', 'default late_cancel_refund_percent is 0, no refund is issued, the hold stays captured');
   assert.equal((await holdRow(flow.recipientId, flow.proposalId))?.status, 'captured');
   assert.equal(await captureLedgerTotal(flow.proposalId, flow.proposerId), 2000);
   assert.equal(await captureLedgerTotal(flow.proposalId, flow.recipientId), 2000);
@@ -414,7 +414,7 @@ test('illegal transitions are rejected with ConflictError', async () => {
 });
 
 // =====================================================================
-// markNoShow — asymmetric refund (no-show forfeits, the other party is
+// markNoShow, asymmetric refund (no-show forfeits, the other party is
 // made whole)
 // =====================================================================
 
@@ -425,7 +425,7 @@ test('markNoShow: the no-show party forfeits per policy, the other party is refu
   const updated = await dateProposalService.markNoShow(adminCtx, flow.proposalId, flow.proposerId);
   assert.equal(updated.status, 'no_show');
 
-  assert.equal((await holdRow(flow.proposerId, flow.proposalId))?.status, 'captured', 'default no_show_refund_percent is 0 — the no-show party is not refunded');
+  assert.equal((await holdRow(flow.proposerId, flow.proposalId))?.status, 'captured', 'default no_show_refund_percent is 0, the no-show party is not refunded');
   assert.equal((await holdRow(flow.recipientId, flow.proposalId))?.status, 'refunded', 'the party who showed up is made whole');
   assert.equal(await captureLedgerTotal(flow.proposalId, flow.recipientId), 0);
   assert.equal(await captureLedgerTotal(flow.proposalId, flow.proposerId), 2000);
@@ -467,7 +467,7 @@ test('§15.4: both users confirming within the window yields completed_unverifie
   );
   assert.equal(redemptionRows[0]!.count, '0');
 
-  // Both users' escrow is still fully captured — the fallback path never touches payment.
+  // Both users' escrow is still fully captured, the fallback path never touches payment.
   assert.equal(await captureLedgerTotal(flow.proposalId, flow.proposerId), 2000);
   assert.equal(await captureLedgerTotal(flow.proposalId, flow.recipientId), 2000);
 });

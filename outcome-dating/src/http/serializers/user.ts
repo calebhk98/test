@@ -1,6 +1,6 @@
 /**
- * src/http/serializers/user.ts — the account-level (`/me`) view. Never
- * includes `passwordHash` — this is the last-line-of-defence guarantee for
+ * src/http/serializers/user.ts, the account-level (`/me`) view. Never
+ * includes `passwordHash`, this is the last-line-of-defence guarantee for
  * that invariant: even if a future route handler carelessly spreads a raw
  * `User` domain object into a response, going through this function instead
  * (an explicit field allowlist, not a spread) makes leaking the hash a

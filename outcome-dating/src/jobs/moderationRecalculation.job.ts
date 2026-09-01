@@ -1,7 +1,7 @@
 /**
  * §25.7 Moderation Score Recalculation job. "Aggregate reports and
  * automated flags. Apply restrictions/shadowbans when thresholds crossed."
- * — exactly `moderation.service#runModerationRecalculation`, which already
+ * exactly `moderation.service#runModerationRecalculation`, which already
  * does the full select-every-flagged-user + `applyThresholds` loop
  * (idempotent: `applyThresholds` only writes a new `moderation_actions` row
  * when the target severity is strictly higher than the user's current

@@ -21,7 +21,7 @@ import * as trustService from './trust.service.js';
 import * as postDateFeedbackService from './postDateFeedback.service.js';
 
 /**
- * dateProposal.service — the §13-§15 date proposal orchestrator. This is
+ * dateProposal.service, the §13-§15 date proposal orchestrator. This is
  * the module every other payment/voucher/conversation piece ultimately
  * serves; it owns the state machine in §13.3 and the payment choreography
  * in §14.2.
@@ -30,16 +30,16 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  * Owning agent: D.
  *
  * STATE MACHINE (spec §13.3 + `completed_unverified` from §15.4). See
- * `ALLOWED_TRANSITIONS` below for the literal, enforced table — every
+ * `ALLOWED_TRANSITIONS` below for the literal, enforced table, every
  * status-changing function checks it (via `assertTransition` or the
  * equivalent inline resumability check in `acceptDateProposal`) and throws
  * `ConflictError` on an illegal transition. All nine "resting" states other
  * than the five in-flight ones (`draft`, `pending_acceptance`, `accepted`,
- * `charged`) are effectively terminal (empty transition lists) — see the
+ * `charged`) are effectively terminal (empty transition lists), see the
  * table for the two deliberate exceptions kept open for defensive/race
  * reasons (`accepted`/`charged` can still be canceled/refunded).
  *
- * PROCESSOR-CALL / DB-TRANSACTION ORDERING — the single most important
+ * PROCESSOR-CALL / DB-TRANSACTION ORDERING, the single most important
  * design decision in this file, spelled out because it looks, at first
  * glance, like it violates "one DB transaction per money operation":
  *
@@ -51,7 +51,7 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  *   `date_proposals` status writes in one giant transaction, because:
  *
  *     1. A Postgres transaction cannot make an external HTTP call
- *        (`ctx.payments.*`) atomic with a local write — wrapping the calls
+ *        (`ctx.payments.*`) atomic with a local write, wrapping the calls
  *        in `BEGIN...COMMIT` would only add a false sense of safety while
  *        holding a connection open across slow network calls.
  *     2. Every one of those three calls, plus every proposal-status write
@@ -62,12 +62,12 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  *        real, inspectable, RESUMABLE state (`status = 'accepted'`,
  *        proposer hold `captured`, recipient hold `authorized`) rather
  *        than a rolled-back black hole. Calling `acceptDateProposal` again
- *        (or a retry job) picks up exactly where it left off — it will not
+ *        (or a retry job) picks up exactly where it left off, it will not
  *        re-authorize, and will not re-capture, the sides that already
  *        succeeded.
  *     3. Any gap this still leaves between "processor moved money" and
  *        "local DB reflects it" is exactly what `ledger.service#
- *        reconcileWithProcessor` (§25.9) exists to detect and flag — never
+ *        reconcileWithProcessor` (§25.9) exists to detect and flag, never
  *        silently auto-corrected, per that module's invariant.
  *
  *   Within `acceptDateProposal`, the THE central invariant (nobody is
@@ -75,8 +75,8 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  *   by a transaction boundary: capture A is only attempted after A and B
  *   are BOTH `authorized`; if capture A fails, B (still merely authorized)
  *   is released; if capture B fails after A already captured, A is
- *   REFUNDED (not released — it already moved real money, so undoing it
- *   is a refund, not a cancel) — see the §14.5 failure branches inline.
+ *   REFUNDED (not released, it already moved real money, so undoing it
+ *   is a refund, not a cancel), see the §14.5 failure branches inline.
  *
  * NOTIFICATIONS/TRUST ARE BEST-EFFORT, NEVER BLOCKING: `notifyBestEffort`/
  * `recordTrustEventBestEffort` below catch and log rather than propagate.
@@ -84,7 +84,7 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  * pipeline or trust-scoring outage must never be able to roll back (or
  * even fail) a financial state transition that already succeeded at the
  * processor. `conversation.establishConversation` in `confirmAttendance`
- * is the one cross-module call that is NOT best-effort — spec §15.4 states
+ * is the one cross-module call that is NOT best-effort, spec §15.4 states
  * "conversation = established" as a definite outcome of that path, so it
  * is called (and must succeed) BEFORE the proposal's own status is
  * persisted as `completed_unverified`, so a failure there leaves the
@@ -93,7 +93,7 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  *
  * NOTIFICATION EVENT GAP (RESOLVED, decision layer): `NotificationEventType`
  * used to have no event for "date canceled/refunded/disputed/no-show/
- * completed" — only `date_proposal_received`, `date_accepted`,
+ * completed", only `date_proposal_received`, `date_accepted`,
  * `payment_hold_authorized`, `payment_failed`, and `ticket_issued` existed.
  * Five events (`date_canceled`, `date_refunded`, `date_disputed`,
  * `date_no_show`, `date_completed`) plus their static templates have since
@@ -105,9 +105,9 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  * DECISION-LAYER ADDITIONS (see docs/conformance.md Open Question OQ-3):
  * `sweepTicketedCompletionWindows` and `listDisputesAwaitingAutoResolution`/
  * `markDisputeResolved` below implement "what actually sets `no_show` and
- * how `disputed` gets resolved" — the original spec never said. Both are
+ * how `disputed` gets resolved", the original spec never said. Both are
  * pure additions to this file's existing state machine/call graph (no new
- * "may call" edges) — the one piece of dispute auto-resolution that DOES
+ * "may call" edges), the one piece of dispute auto-resolution that DOES
  * need a new edge (filing an implicit report via `report.service.ts`) lives
  * in the separate `disputeResolution.service.ts` instead; see that file's
  * header for why.
@@ -116,7 +116,7 @@ import * as postDateFeedbackService from './postDateFeedback.service.js';
  * "get the hold for this user on this proposal" function (only
  * `authorizeHold`/`captureHold`/`releaseHold`/`refundHold`, all addressed
  * by hold id). Since this file needs that lookup purely to find an id to
- * pass to those functions — never to mutate state directly — it reads
+ * pass to those functions, never to mutate state directly, it reads
  * `payment_holds` with a plain `SELECT` (see `getHoldRow` below). This is
  * safe specifically because both `payment.service.ts` and this file are
  * owned by the same agent (D) and every actual status mutation still goes
@@ -150,12 +150,12 @@ const ALLOWED_TRANSITIONS: Record<DateProposalStatus, readonly DateProposalStatu
 
 function assertTransition(current: DateProposalStatus, next: DateProposalStatus): void {
   if (!ALLOWED_TRANSITIONS[current].includes(next)) {
-    // Plain sentence for the wire — `message` reaches the client verbatim
+    // Plain sentence for the wire, `message` reaches the client verbatim
     // (see src/http/errors.ts), so the raw internal state names and
     // arrow notation this used to interpolate directly (`'accepted' ->
     // 'refunded'`) never should have. `current`/`next` stay available on
     // `details` for a client that wants to branch on them programmatically.
-    throw new ConflictError('This date can no longer be updated — its status has already moved on.', { current, next });
+    throw new ConflictError('This date can no longer be updated, its status has already moved on.', { current, next });
   }
 }
 
@@ -216,7 +216,7 @@ async function loadProposalRow(ctx: Ctx, dateProposalId: string): Promise<DatePr
   return rows[0];
 }
 
-/** Every timestamp column here is stamped from `ctx.clock.now()`, never SQL `now()` — see INTERFACES.md's "ctx.clock for ALL time" rule. Using the DB's own wall clock would silently diverge from `ManualClock`-driven expiry/cutoff tests (and, in principle, from any future non-`SystemClock` production clock). */
+/** Every timestamp column here is stamped from `ctx.clock.now()`, never SQL `now()`, see INTERFACES.md's "ctx.clock for ALL time" rule. Using the DB's own wall clock would silently diverge from `ManualClock`-driven expiry/cutoff tests (and, in principle, from any future non-`SystemClock` production clock). */
 async function setStatus(ctx: Ctx, dateProposalId: string, status: DateProposalStatus, timestampColumn?: string): Promise<DateProposalRow> {
   const sql = timestampColumn
     ? `UPDATE date_proposals SET status = $2, ${timestampColumn} = $3 WHERE id = $1 RETURNING *`
@@ -232,19 +232,19 @@ async function setStatus(ctx: Ctx, dateProposalId: string, status: DateProposalS
  * `cancelDateProposal`, `markNoShow`). Each of those reads the proposal
  * row, then performs several *separately-committing* checkpoints (payment
  * authorize/capture/refund calls, each in its own `payment.service.ts`
- * transaction, on purpose — see this file's module header on resumability
+ * transaction, on purpose, see this file's module header on resumability
  * after a crash), rather than one enclosing transaction. That is exactly
  * right for crash-resumability, but it means two truly concurrent calls
  * for the SAME date proposal (a client double-submit, a retried request
  * racing the original) can both read the same starting status and both
- * carry out the money-moving side effects — a real double-capture /
+ * carry out the money-moving side effects, a real double-capture /
  * double-refund bug, not merely a hypothetical one (test-audit.md
  * Finding 3's "never tested for double-capture", made concrete by
  * `tests/concurrency/dateProposalRace.test.ts`).
  *
  * The fix is a `pg_try_advisory_lock` keyed by the date proposal id, held
  * for the whole call and released in `finally` on a dedicated connection
- * — this mirrors `src/jobs/scheduler.ts`'s job-level lock, the one
+ * this mirrors `src/jobs/scheduler.ts`'s job-level lock, the one
  * concurrency-safety pattern already proven correct and copied by the
  * audit. It does not wrap `ctx.db` in a transaction (that would defeat
  * the resumability property above); it only ensures at most one call is
@@ -302,7 +302,7 @@ async function getHoldRow(ctx: Ctx, dateProposalId: string, userId: string): Pro
   return rows[0];
 }
 
-/** vouchers read helper — same reasoning as `getHoldRow` (voucher.service.ts exposes no "find by date proposal" lookup; cancellation needs one). */
+/** vouchers read helper, same reasoning as `getHoldRow` (voucher.service.ts exposes no "find by date proposal" lookup; cancellation needs one). */
 async function getVoucherRow(ctx: Ctx, dateProposalId: string): Promise<{ id: string; status: string } | undefined> {
   const { rows } = await ctx.db.query<{ id: string; status: string }>(
     `SELECT id, status FROM vouchers WHERE date_proposal_id = $1`,
@@ -332,11 +332,11 @@ async function recordTrustEventBestEffort(ctx: Ctx, input: trustService.RecordTr
 }
 
 /**
- * Post-date check-in hook (postDateFeedback.service.ts, additive — see
+ * Post-date check-in hook (postDateFeedback.service.ts, additive, see
  * that module's own doc for the full timing design). Eagerly evaluates
  * whether either participant is due an initial check-in prompt the
  * moment this proposal actually reaches `completed`/`completed_unverified`
- * — a responsiveness nicety only; `postDateFeedbackService
+ * a responsiveness nicety only; `postDateFeedbackService
  * #runCheckInPromptSweep` independently re-derives the same decision from
  * `date_proposals` on its own schedule (and is what catches tickets that
  * never reach either of the two call sites below at all). Best-effort:
@@ -355,13 +355,13 @@ function describeError(err: unknown): string {
   return err instanceof Error ? err.message : String(err);
 }
 
-/** Rounding rule for every percentage-of-escrow refund in this file: round DOWN, always in the platform's favor — see `payment.service#refundHold`'s doc for the full rationale. */
+/** Rounding rule for every percentage-of-escrow refund in this file: round DOWN, always in the platform's favor, see `payment.service#refundHold`'s doc for the full rationale. */
 function percentOfCents(amountCents: number, percent: number): number {
   return Math.floor((amountCents * percent) / 100);
 }
 
 // =====================================================================
-// proposeDate — §14.2 Step 1
+// proposeDate, §14.2 Step 1
 // =====================================================================
 
 const ProposeDateSchema = z
@@ -417,7 +417,7 @@ export async function proposeDate(ctx: Ctx, input: ProposeDateInput): Promise<Da
       parsed.optionalNote ?? null,
       JSON.stringify(policySnapshot),
       escrowAmountCents,
-      ctx.clock.now(), // explicit, not the column's SQL `now()` default — see setStatus's doc comment
+      ctx.clock.now(), // explicit, not the column's SQL `now()` default, see setStatus's doc comment
     ],
   );
   const created = rows[0]!;
@@ -444,7 +444,7 @@ export async function proposeDate(ctx: Ctx, input: ProposeDateInput): Promise<Da
 }
 
 // =====================================================================
-// acceptDateProposal — §14.2 Steps 2-4, §14.5
+// acceptDateProposal, §14.2 Steps 2-4, §14.5
 // =====================================================================
 
 /**
@@ -453,7 +453,7 @@ export async function proposeDate(ctx: Ctx, input: ProposeDateInput): Promise<Da
  * the recipient's authorization fails, releases the proposer's hold and
  * sets `payment_failed` (spec §14.5). If a capture fails after both
  * authorizations succeeded, releases/refunds ALL holds and sets
- * `payment_failed` (spec §14.5 "Capture fails after authorization") — see
+ * `payment_failed` (spec §14.5 "Capture fails after authorization"), see
  * module header for the release-vs-refund distinction and the resumable,
  * multi-checkpoint design of this function.
  */
@@ -501,7 +501,7 @@ async function acceptDateProposalLocked(ctx: Ctx, dateProposalId: string): Promi
 
   // ---- Step 3: capture both holds, only now that both are authorized ----
   const proposerHold = await getHoldRow(ctx, dateProposalId, row.proposer_id);
-  if (!proposerHold) throw new PaymentError('Proposer hold is missing — cannot capture');
+  if (!proposerHold) throw new PaymentError('Proposer hold is missing, cannot capture');
 
   const captureA = await paymentService.captureHold(ctx, proposerHold.id);
   if (captureA.status !== 'captured') {
@@ -515,11 +515,11 @@ async function acceptDateProposalLocked(ctx: Ctx, dateProposalId: string): Promi
   }
 
   const recipientHoldRow = await getHoldRow(ctx, dateProposalId, row.recipient_id);
-  if (!recipientHoldRow) throw new PaymentError('Recipient hold is missing — cannot capture');
+  if (!recipientHoldRow) throw new PaymentError('Recipient hold is missing, cannot capture');
 
   const captureB = await paymentService.captureHold(ctx, recipientHoldRow.id);
   if (captureB.status !== 'captured') {
-    // Proposer's side already moved real money — undo with a refund, not a
+    // Proposer's side already moved real money, undo with a refund, not a
     // release (§30.5 "do not charge one side alone").
     await paymentService.refundHold(ctx, proposerHold.id);
     assertTransition('accepted', 'payment_failed');
@@ -529,7 +529,7 @@ async function acceptDateProposalLocked(ctx: Ctx, dateProposalId: string): Promi
     return mapProposal(failed);
   }
 
-  // ---- Step 4: both captured — charge, then ticket ----
+  // ---- Step 4: both captured, charge, then ticket ----
   assertTransition('accepted', 'charged');
   current = await setStatus(ctx, dateProposalId, 'charged', 'charged_at');
 
@@ -565,7 +565,7 @@ async function declineDateProposalLocked(ctx: Ctx, dateProposalId: string): Prom
 }
 
 // =====================================================================
-// cancelDateProposal — §14.7
+// cancelDateProposal, §14.7
 // =====================================================================
 
 /**
@@ -579,7 +579,7 @@ async function declineDateProposalLocked(ctx: Ctx, dateProposalId: string): Prom
  *    `late_cancel_refund_percent` (0 by default), `status = 'canceled'`.
  *
  * Either participant may cancel (spec §14.7 "Either user cancels"); an
- * admin actor may also cancel on behalf of the pair — this is the path
+ * admin actor may also cancel on behalf of the pair, this is the path
  * that realizes spec §30.6 ("venue closes after date accepted... allow
  * refund") since no separate admin-only function was allocated for that.
  */
@@ -631,7 +631,7 @@ async function cancelDateProposalLocked(ctx: Ctx, dateProposalId: string): Promi
   const finalStatus: DateProposalStatus = isFullRefund ? 'refunded' : 'canceled';
   assertTransition(row.status, finalStatus);
   // Neither 'refunded' nor a bare late-cancel has a dedicated timestamp
-  // column in §23.17 — `canceled_at` is reused for both as "when this
+  // column in §23.17, `canceled_at` is reused for both as "when this
   // cancel-family transition happened".
   const updated = await setStatus(ctx, dateProposalId, finalStatus, 'canceled_at');
   const eventType = finalStatus === 'refunded' ? 'date_refunded' : 'date_canceled';
@@ -641,16 +641,16 @@ async function cancelDateProposalLocked(ctx: Ctx, dateProposalId: string): Promi
 }
 
 // =====================================================================
-// confirmAttendance — §15.4 no-scan fallback
+// confirmAttendance, §15.4 no-scan fallback
 // =====================================================================
 
 /**
  * §15.4 no-scan fallback. Records the caller's confirmation. If both
  * users have confirmed within `date.no_scan_confirmation_hours` of
  * `scheduledEnd`: `status = 'completed_unverified'` and
- * `conversation.service#establishConversation` is called — this does NOT
+ * `conversation.service#establishConversation` is called, this does NOT
  * settle venue payment (spec §15.4 "does not automatically settle venue
- * payment") — see module header for why `establishConversation` is called
+ * payment"), see module header for why `establishConversation` is called
  * BEFORE the status write, not best-effort after it. If the window elapses
  * with only one confirmation: `status = 'disputed'`.
  */
@@ -699,7 +699,7 @@ export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promi
 }
 
 // =====================================================================
-// submitPostDateFeedback — RETIRED (integrity audit item 1).
+// submitPostDateFeedback, RETIRED (integrity audit item 1).
 //
 // This used to run its own INSERT/UPDATE against post_date_feedback,
 // writing only `positive`/`would_meet_again`/`safety_concern`/`notes`,
@@ -719,7 +719,7 @@ export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promi
 // legacy body into a check-in and calls
 // postDateFeedbackService#submitLegacyFeedback, which funnels into the
 // exact same write statement/trust/safety-routing path as
-// `submitCheckIn` — see that file for the one remaining writer. A
+// `submitCheckIn`, see that file for the one remaining writer. A
 // db/migrations/025_integrity.sql CHECK constraint additionally makes a
 // disagreeing (`positive`, `outcome`) pair impossible at the database
 // level, in case any future code path writes `positive` again.
@@ -737,7 +737,7 @@ export async function getDateProposal(ctx: Ctx, dateProposalId: string): Promise
 }
 
 // =====================================================================
-// expireDuePendingProposals — §25.2 job
+// expireDuePendingProposals, §25.2 job
 // =====================================================================
 
 /** §25.2 job: pending_acceptance proposals past `policySnapshot['date.accept_expiry_hours']` -> 'expired', release the proposer's hold. */
@@ -811,10 +811,10 @@ async function markNoShowLocked(ctx: Ctx, dateProposalId: string, noShowUserId: 
  * Called by `redemption.service.ts` only, immediately after a successful
  * venue scan, in the same transaction as the `venue_redemptions` insert
  * and `voucher.service#markRedeemed`. Sets `status = 'completed'` and
- * `completed_at` — NOT `completed_unverified` (that's the separate
+ * `completed_at`, NOT `completed_unverified` (that's the separate
  * no-scan path via `confirmAttendance`). Establishing the conversation and
  * firing trust events are `redemption.service.ts`'s responsibility, not
- * this function's. Uses `ctx.db` exactly as given — never opens its own
+ * this function's. Uses `ctx.db` exactly as given, never opens its own
  * transaction, and never calls `ctx.payments` (no processor interaction
  * belongs on the redemption path itself; venue settlement is out of the
  * user-facing escrow's scope, see `redemption.service.ts`).
@@ -830,7 +830,7 @@ export async function markCompletedByRedemption(ctx: Ctx, dateProposalId: string
 }
 
 // =====================================================================
-// sweepTicketedCompletionWindows — §15.4 / Open Question OQ-3
+// sweepTicketedCompletionWindows, §15.4 / Open Question OQ-3
 // =====================================================================
 
 export interface SweepTicketedCompletionWindowsResult {
@@ -842,25 +842,25 @@ export interface SweepTicketedCompletionWindowsResult {
  * Decision-layer addition (OQ-3, see this file's module doc and
  * docs/conformance.md): for every `ticketed` proposal whose no-scan
  * confirmation window (`scheduled_end + policySnapshot['date.no_scan_confirmation_hours']`)
- * has closed with the venue never having scanned —
+ * has closed with the venue never having scanned,
  *
  *   - ZERO attendance confirmations from either party -> `no_show`,
  *     automatically. Refund follows the FROZEN policy snapshot
  *     (`date.no_show_refund_percent`), applied symmetrically to BOTH
- *     participants' captured escrow — unlike the admin/system-driven
+ *     participants' captured escrow, unlike the admin/system-driven
  *     `markNoShow` above (which names one specific at-fault party and
  *     makes the other whole), nobody here proved attendance at all, so
  *     there is no "the other party showed up" fact to refund in full.
  *   - EXACTLY ONE confirmation -> `disputed` (spec §15.4). This is the
  *     same rule `confirmAttendance` already applies inline, duplicated
  *     here because that check only fires when the CONFIRMING user happens
- *     to call `confirmAttendance` again after the deadline — this sweep
+ *     to call `confirmAttendance` again after the deadline, this sweep
  *     is what makes the transition happen even if nobody calls back at
  *     all, which is the actual "no human step anywhere" requirement
  *     (spec §18.1).
  *   - Two-or-more confirmations should be unreachable here (already
  *     handled inline, transitioning straight to `completed_unverified`)
- *     — skipped defensively rather than throwing.
+ * skipped defensively rather than throwing.
  *
  * Idempotent/safe to re-run with any clock: only `status = 'ticketed'`
  * rows are ever candidates, and both outcomes above move the row OUT of
@@ -923,10 +923,10 @@ async function autoMarkNoShowBothParties(ctx: Ctx, row: DateProposalRow): Promis
 }
 
 // =====================================================================
-// Automated dispute resolution lookups — §15.4 / Open Question OQ-3
+// Automated dispute resolution lookups, §15.4 / Open Question OQ-3
 //
 // The actual resolving (filing an implicit report via report.service.ts)
-// lives in the separate `disputeResolution.service.ts` — see that file's
+// lives in the separate `disputeResolution.service.ts`, see that file's
 // header for why it isn't here. These two functions are the read/write
 // primitives it composes: a read-only lookup of what's due, and an
 // idempotency marker `disputeResolution.service.ts` sets once it has
@@ -970,7 +970,7 @@ export async function listDisputesAwaitingAutoResolution(ctx: Ctx): Promise<Disp
 }
 
 /**
- * Idempotency marker only — `disputed` stays a terminal `DateProposalStatus`
+ * Idempotency marker only, `disputed` stays a terminal `DateProposalStatus`
  * (spec §13.3); this does not change `status`. Safe to call twice (a
  * second call is a no-op via `COALESCE`).
  */

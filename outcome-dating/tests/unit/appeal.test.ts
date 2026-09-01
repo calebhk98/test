@@ -142,7 +142,7 @@ test('repeated failed appeals are rate-limited: a second attempt right after a r
   const first = await appeal.submitAppeal(userCtx, { method: 'liveness_check', evidence: { passed: false } });
   assert.equal(first.status, 'rejected');
 
-  // Immediately try again — must be blocked by the cooldown anchored on
+  // Immediately try again, must be blocked by the cooldown anchored on
   // the just-rejected appeal, not just the original moderation action.
   await assert.rejects(() => appeal.submitAppeal(userCtx, { method: 'liveness_check', evidence: { livenessSessionId: 'sess_2', passed: true } }));
 
@@ -154,7 +154,7 @@ test('repeated failed appeals are rate-limited: a second attempt right after a r
 // =====================================================================
 // No human step anywhere.
 // =====================================================================
-test('submitAppeal never returns a pending appeal — every result is already a terminal approved/rejected decision', async () => {
+test('submitAppeal never returns a pending appeal, every result is already a terminal approved/rejected decision', async () => {
   const clock = new ManualClock(new Date());
   const setupCtx = buildCtx({ clock });
   const userId = await insertUser(setupCtx);

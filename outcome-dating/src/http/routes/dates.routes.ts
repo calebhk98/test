@@ -29,7 +29,7 @@ const FeedbackBodySchema = z.object({
 });
 
 // Post-date check-in (postDateFeedback.service.ts, additive). Distinct
-// path from the legacy `/feedback` above — see that service's module doc
+// path from the legacy `/feedback` above, see that service's module doc
 // for why the two coexist rather than one replacing the other in place.
 const CheckInBodySchema = z.object({
   outcome: z.enum(CHECK_IN_OUTCOMES),
@@ -47,7 +47,7 @@ export function registerDateRoutes(app: FastifyInstance, deps: AppDeps): void {
     reply.send(await venueService.listActiveVenues(req.ctx!, category ? { category } : undefined));
   });
 
-  // `venue.service#getVenue` was fully built and tested but had no route —
+  // `venue.service#getVenue` was fully built and tested but had no route,
   // resolving one ticket's venue meant fetching the entire active-venue
   // list and filtering client-side (docs/ux-api-review.md §10).
   app.get('/venues/:venueId', auth, async (req, reply) => {

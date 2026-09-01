@@ -13,7 +13,7 @@ import type { EmailSendParams, EmailSendResult, EmailSender } from '../ports/ema
  * constructor signature doesn't need to change later:
  * `new SesEmailSender({ region: getEnv().SES_REGION, fromAddress: getEnv().SES_FROM_ADDRESS })`
  * (credentials themselves come from the standard AWS credential chain, not
- * a constructor argument — never hardcode a secret key here).
+ * a constructor argument, never hardcode a secret key here).
  */
 export class SesEmailSender implements EmailSender {
   readonly name = 'ses';
@@ -22,7 +22,7 @@ export class SesEmailSender implements EmailSender {
 
   /**
    * Real implementation: render `params.templateKey` + `params.data`
-   * through this build's own (non-generative — spec §1 rule 9) static
+   * through this build's own (non-generative, spec §1 rule 9) static
    * email template layer to get a subject+HTML+text body, then:
    *
    * ```

@@ -12,13 +12,13 @@ import * as conversationService from './conversation.service.js';
 import * as trustService from './trust.service.js';
 
 /**
- * redemption.service — venue-side voucher redemption.
+ * redemption.service, venue-side voucher redemption.
  * Spec: §15.3, §24.9 (`POST /tickets/{ticketId}/redeem`,
  * `POST /venue/redeem`).
  *
  * Owning agent: D.
  *
- * This is the top of its own small dependency chain — it orchestrates
+ * This is the top of its own small dependency chain, it orchestrates
  * `voucher.service`, `dateProposal.service`, `conversation.service`, and
  * `trust.service` (all one-directional; none of them call back into this
  * module), all inside a single `withTransaction`:
@@ -34,14 +34,14 @@ import * as trustService from './trust.service.js';
  *
  * INVARIANT (actor scoping, spec §4.2): `redeemByStaff` requires
  * `ctx.actor.type === 'venue_staff'` and that actor's `venueId` must match
- * the voucher's `venue_id` — venue staff cannot redeem another venue's
+ * the voucher's `venue_id`, venue staff cannot redeem another venue's
  * tickets. `RedeemResult` (`Voucher`/`VenueRedemption`/`DateProposal`) has
- * no field for chats, emails, or payment card details by construction —
+ * no field for chats, emails, or payment card details by construction,
  * this module never queries `messages`, `users.email`, `payment_holds`, or
  * `payment_methods` at all, so there is nothing to accidentally leak.
  *
  * Venue settlement (§13.2 "margin percentage") is intentionally NOT
- * touched here — nothing in this module calls `ctx.payments` or
+ * touched here, nothing in this module calls `ctx.payments` or
  * `payment.service.ts`. The user-facing escrow was already fully captured
  * back in `dateProposal.acceptDateProposal` (§14.2 Step 3); a real venue
  * payout pipeline (paying the venue its margin-adjusted share) would be a
@@ -51,7 +51,7 @@ import * as trustService from './trust.service.js';
  * no-scan `confirmAttendance` path (owned by `dateProposal.service.ts`)
  * never writes a `venue_redemptions` row at all, so whatever downstream
  * process eventually pays venues from that table simply never sees an
- * unverified date — no separate "don't pay" flag is needed.
+ * unverified date, no separate "don't pay" flag is needed.
  */
 
 export interface RedeemInput {
@@ -170,7 +170,7 @@ export async function redeemByStaff(ctx: Ctx, input: RedeemInput): Promise<Redee
 /**
  * User-initiated variant (`POST /tickets/{ticketId}/redeem`, spec §24.9).
  * The resulting state transition is identical to `redeemByStaff` minus the
- * venue-staff actor check — `venue_staff_id` on the resulting
+ * venue-staff actor check, `venue_staff_id` on the resulting
  * `venue_redemptions` row is null for this path. `ticketId` is a voucher
  * id; the caller must be a participant in that voucher's date proposal.
  */
@@ -194,7 +194,7 @@ export async function redeemBySelf(ctx: Ctx, ticketId: string, input: RedeemInpu
   if (resolved.voucherId && resolved.voucherId !== ticketId) {
     throw new ValidationError('qrPayload does not match this ticket');
   }
-  // Force resolution to this ticket id regardless of code/QR ambiguity —
+  // Force resolution to this ticket id regardless of code/QR ambiguity,
   // the route param is authoritative for which voucher is being redeemed.
   return runRedemption(ctx, { voucherId: ticketId, code: null, method: resolved.method }, null);
 }

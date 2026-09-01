@@ -1,5 +1,5 @@
 /**
- * tests/unit/adapterSelection.test.ts — `src/config/adapters.ts`'s
+ * tests/unit/adapterSelection.test.ts, `src/config/adapters.ts`'s
  * per-environment selection functions and the readiness report they feed.
  *
  * Companion to tests/unit/productionGuard.test.ts, which covers the
@@ -12,7 +12,7 @@
  * asked for) works both empty (today's real state) and populated (proving
  * the seam is real, not aspirational).
  *
- * No database is needed for any test in this file — every function under
+ * No database is needed for any test in this file, every function under
  * test is a pure function of `Env`.
  */
 import { test } from 'node:test';
@@ -30,7 +30,7 @@ import {
 } from '../../src/config/adapters.js';
 import type { ImageModerationPort, PhotoAnalysisInput, PhotoAnalysisResult } from '../../src/services/media/moderation.port.js';
 
-/** Saves the given env var keys, applies `overrides` (a value of `undefined` deletes the key), resets the cached `Env`, runs `fn`, then restores every saved key and resets the cache again — mirrors the pattern already used in tests/unit/decisionsConfig.test.ts. */
+/** Saves the given env var keys, applies `overrides` (a value of `undefined` deletes the key), resets the cached `Env`, runs `fn`, then restores every saved key and resets the cache again, mirrors the pattern already used in tests/unit/decisionsConfig.test.ts. */
 async function withEnv<T>(overrides: Record<string, string | undefined>, fn: () => T | Promise<T>): Promise<T> {
   const saved: Record<string, string | undefined> = {};
   for (const key of Object.keys(overrides)) saved[key] = process.env[key];
@@ -178,7 +178,7 @@ test('selectSmsSender: production with SMS_PROVIDER=twilio and credentials retur
 });
 
 // =====================================================================
-// Media moderation provider registry — the "configuration seam".
+// Media moderation provider registry, the "configuration seam".
 // =====================================================================
 
 test('media moderation registry: empty registry means selectMediaModerationAdapter always throws in production, for any provider name', async () => {

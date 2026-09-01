@@ -9,7 +9,7 @@
  * Runs against its own dedicated database (`odate_compat_perf`, per the
  * task brief's `odate_compat_<suite>` naming convention), seeded with a
  * realistic multi-city dataset via the EXISTING `tests/perf/seedDiscoveryPerf.ts`
- * helper (reused, not reimplemented, per the task brief — it already
+ * helper (reused, not reimplemented, per the task brief, it already
  * builds >= 20,000 users across six real, geographically distant metros
  * with varied answered questions, which is exactly what this benchmark
  * needs and no more).
@@ -27,7 +27,7 @@
  *      used to have) is run at two small subset sizes to demonstrate the
  *      quadratic trend directly, then the measured per-pair cost is used
  *      to extrapolate an honest "this is what the full seeded scale would
- *      have cost" figure — reproducing the actual O(n^2) runtime at
+ *      have cost" figure, reproducing the actual O(n^2) runtime at
  *      20,000+ users here would make this suite itself take hours, which
  *      is exactly the failure being fixed (same reasoning
  *      `discovery.perf.test.ts` already documents for its own "before"
@@ -35,7 +35,7 @@
  *   3. ROW COUNT IS BOUNDED, NOT QUADRATIC: the materialized table's row
  *      count after a full run is compared against what the OLD algorithm
  *      would have produced (`activeUsers * (activeUsers - 1)`) at the same
- *      seeded scale, and asserted to be smaller by orders of magnitude —
+ *      seeded scale, and asserted to be smaller by orders of magnitude,
  *      the direct, measured proof of the storage-ceiling fix (§1.2.1's
  *      ~175TB-at-1M-users estimate).
  *
@@ -89,7 +89,7 @@ before(async () => {
 
   const logger = createSilentLogger();
   // A fixed "now" close to real wall-clock time so every seeded user
-  // (seeded with `last_active_at` within the last 14 days of REAL now —
+  // (seeded with `last_active_at` within the last 14 days of REAL now,
   // see seedDiscoveryPerf.ts) falls inside the refresh's activity window.
   const clock = new ManualClock(new Date());
   ctx = {
@@ -128,20 +128,20 @@ async function compatibilityScoresRowCount(): Promise<number> {
 
 // =====================================================================
 // "Before" reference: the OLD O(n^2) algorithm, reproduced locally
-// (test-only — not exported from compatibility.service.ts, which no
+// (test-only, not exported from compatibility.service.ts, which no
 // longer contains this shape at all) so its quadratic trend can be
 // measured directly at small scale rather than merely asserted. Calls the
 // exact same, unchanged `computePairScore` the new bounded refresh calls
-// — this is purely the OLD SCHEDULING or the pairs it iterates over, not
+// this is purely the OLD SCHEDULING or the pairs it iterates over, not
 // a different scoring algorithm.
 //
 // CUTOVER NOTE: `computePairScore` now takes `QuestionDefinition[]` +
 // per-user `Map<questionId, QuestionAnswerState>` (the typed question
-// bank — db/migrations/008_questions.sql) instead of the old flat
+// bank, db/migrations/008_questions.sql) instead of the old flat
 // `Question[]`/`Answer[]` shape; this helper's DB reads were updated to
 // match (`question_bank`/`user_question_answers`, the same tables
 // `seedDiscoveryPerf.ts` now seeds), but its O(n^2) SCHEDULING shape
-// below — the thing this test measures — is untouched.
+// below, the thing this test measures, is untouched.
 // =====================================================================
 interface QuestionBankRow {
   id: string;
@@ -242,7 +242,7 @@ test(
 
     // Deliberately small (a real, single-row-round-trip-per-write
     // reproduction of the OLD algorithm at n=480 already costs ~2 minutes
-    // measured on this environment — see the calibration note in this
+    // measured on this environment, see the calibration note in this
     // build's report; n=800+ would make this one test alone take longer
     // than discovery.perf.test.ts's entire suite for no extra evidence).
     const small = ids.slice(0, 120);
@@ -262,7 +262,7 @@ test(
 
     // Extrapolate an honest "what the old algorithm would have cost at
     // this suite's full seeded scale" using the MEASURED per-pair cost
-    // (averaged across both samples) rather than reproducing it — see
+    // (averaged across both samples) rather than reproducing it, see
     // this file's top-of-file doc for why reproducing it here is
     // deliberately avoided.
     const activeUsers = await activeUserCount();
@@ -279,11 +279,11 @@ test(
         `pairs actually grew ${(largePairs / smallPairs).toFixed(2)}x, total_ms grew ${(largeResult.ms / smallResult.ms).toFixed(2)}x\n` +
         `  EXTRAPOLATED "before" at this suite's full seeded scale (n=${activeUsers} active users, ${fullScalePairs.toLocaleString()} pairs, ` +
         `at the measured ${avgMsPerPair.toFixed(4)} ms/pair): ${extrapolatedFullScaleMs.toLocaleString()} ms ` +
-        `(~${extrapolatedFullScaleHours.toFixed(1)} hours) — see this build's report for how this compares to the actual, measured "after" below.`,
+        `(~${extrapolatedFullScaleHours.toFixed(1)} hours), see this build's report for how this compares to the actual, measured "after" below.`,
     );
 
     // The core O(n^2) claim, proven directly rather than assumed: pair
-    // count must have grown roughly as n^2 (allow a wide tolerance —
+    // count must have grown roughly as n^2 (allow a wide tolerance,
     // this is a real measurement with real scheduler/GC noise, not a
     // synthetic one, so we assert direction and rough magnitude, not an
     // exact constant).
@@ -293,7 +293,7 @@ test(
 );
 
 test(
-  `NEW bounded refreshAllScores: runtime and row count at full seeded scale (${USER_COUNT} users) — the "after" number`,
+  `NEW bounded refreshAllScores: runtime and row count at full seeded scale (${USER_COUNT} users), the "after" number`,
   { timeout: 600_000 },
   async () => {
     await pool.query('DELETE FROM compatibility_scores');
@@ -320,18 +320,18 @@ test(
     // Finished at all, well inside a 24h window, at this suite's full
     // seeded scale (docs/scale-and-sources.md §1.2.1: the OLD algorithm
     // was already estimated to exceed 24h somewhere between 3,000 and
-    // 10,000 active users — this suite seeds well past that).
+    // 10,000 active users, this suite seeds well past that).
     // 1 hour, not the job's actual 24h budget: a real ceiling this loose
     // is a sanity check against a regression back toward O(n^2) (which
     // would blow well past it), not a claim that a nightly job needs to
-    // race a 5-minute clock — see this build's report for the actual
+    // race a 5-minute clock, see this build's report for the actual
     // measured number at this scale.
     assert.ok(ms < 3_600_000, `bounded refresh should comfortably finish within a fraction of the 24h nightly window at ${activeUsers} active users; took ${ms}ms`);
 
     // The storage-ceiling proof: row count must be bounded by (active
     // users x a small constant), NOT by active_users^2. `oldAlgorithmPairs * 2`
     // is what the OLD unbounded design would have written at this same
-    // active-user count — the new design must be smaller by at least an
+    // active-user count, the new design must be smaller by at least an
     // order of magnitude at this seeded scale.
     assert.ok(
       rowCount < oldAlgorithmPairs * 2 * 0.1,
@@ -349,5 +349,5 @@ test('NEW bounded refreshAllScores: a second run (idempotent, unchanged clock/da
   const after = await compatibilityScoresRowCount();
 
   console.log(`[compatRefresh.perf] second (idempotent) run at full seeded scale: ${ms}ms, row count ${before.toLocaleString()} -> ${after.toLocaleString()}`);
-  assert.equal(after, before, 're-running with unchanged data must not grow the table — this is what keeps the nightly job safe to re-run/retry');
+  assert.equal(after, before, 're-running with unchanged data must not grow the table, this is what keeps the nightly job safe to re-run/retry');
 });

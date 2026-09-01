@@ -23,12 +23,12 @@ const EnvSchema = z.object({
   /**
    * Decision-layer addition: a dedicated signing secret for voucher QR
    * payloads, separate from `AUTH_TOKEN_SECRET` (spec §15.2). Key
-   * separation matters here — a leaked QR secret (exposed to venue
+   * separation matters here, a leaked QR secret (exposed to venue
    * hardware/apps, printed on receipts, scanned in public) must not be
    * usable to mint auth tokens. Optional so dev/test keep working without
    * setting it: `voucher.service.ts#voucherSecret()` falls back to
    * `AUTH_TOKEN_SECRET` when unset, logging that it did so is unnecessary
-   * noise for local/test — the fallback is the documented, intended
+   * noise for local/test, the fallback is the documented, intended
    * behavior there, not a silent footgun.
    */
   VOUCHER_QR_SECRET: z.string().min(1).optional(),
@@ -42,10 +42,10 @@ const EnvSchema = z.object({
    * `src/services/media/moderation.port.ts`). Deliberately a free-form
    * identifier, not a closed enum: unlike payments/push/email/sms, no real
    * adapter exists in this codebase yet (only `StubMediaModerationAdapter`
-   * does) — see `src/config/adapters.ts#selectMediaModerationAdapter` and
+   * does), see `src/config/adapters.ts#selectMediaModerationAdapter` and
    * docs/scale-and-sources.md Part 2.3. Defaults to `'stub'`, which is the
    * only value that ever constructs successfully, and only outside
-   * production — the production guard (`src/config/adapters.ts`) refuses
+   * production, the production guard (`src/config/adapters.ts`) refuses
    * to start with `'stub'` (or with any other value, since nothing else is
    * implemented yet) when `NODE_ENV==='production'`.
    */

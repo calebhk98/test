@@ -5,28 +5,28 @@ import type { DateProposalStatus, Page } from '../domain/types.js';
 import * as conversationService from './conversation.service.js';
 
 /**
- * timeline.service — the merged conversation timeline (product-owner
+ * timeline.service, the merged conversation timeline (product-owner
  * finding #2/#3: "a date proposal is invisible in the chat" / "declining
  * is ambiguous").
  *
- * Not part of INTERFACES.md's frozen module table — a post-foundation
+ * Not part of INTERFACES.md's frozen module table, a post-foundation
  * addition. Its own "may call" boundary:
  *
  *   timeline -> conversation (read only: `getConversation`, for the
- *               participant/existence authorization check — identical
+ *               participant/existence authorization check, identical
  *               guard every other conversation-scoped read in this
  *               codebase uses)
  *
  * Everything else this file needs (`messages`, `date_proposals`,
  * `payment_ledger`, `venues`) is read directly with plain SQL, in ONE
- * query per page — see "WHY ONE SQL QUERY, NOT N SERVICE CALLS" below.
+ * query per page, see "WHY ONE SQL QUERY, NOT N SERVICE CALLS" below.
  *
  * =====================================================================
- * EVENT MODEL — DERIVED, NOT DUPLICATED
+ * EVENT MODEL, DERIVED, NOT DUPLICATED
  * =====================================================================
  * Every date-proposal lifecycle event is read straight off the SAME
  * `date_proposals` row `dateProposal.service.ts` (read-only to this
- * build) already maintains — `created_at`/`accepted_at`/`declined_at`/
+ * build) already maintains, `created_at`/`accepted_at`/`declined_at`/
  * `expired_at`/`canceled_at`/`ticketed_at`/`completed_at`. There is no
  * second table storing "a date was proposed/accepted/..." as its own
  * fact; a timeline row is a VIEW over columns that already exist, so it
@@ -35,7 +35,7 @@ import * as conversationService from './conversation.service.js';
  *
  * The one exception, and why it needed one: `payment_failed` (spec §13.3)
  * is the only proposal status with NO timestamp column at all on
- * `date_proposals` — `dateProposal.service.ts#setStatus` is called for it
+ * `date_proposals`, `dateProposal.service.ts#setStatus` is called for it
  * with no `timestampColumn` argument (see that file). Since that file is
  * read-only to this build, there was no way to add
  * `payment_failed_at` and have it ever get stamped. Rather than invent a
@@ -44,22 +44,22 @@ import * as conversationService from './conversation.service.js';
  * timestamp that ALREADY exists for exactly this transition:
  * `payment.service.ts#authorizeHold`/`captureHold` unconditionally record
  * a `payment_ledger` row for both success AND failure (see that module's
- * doc — "the attempt is part of the audit trail even when declined").
+ * doc, "the attempt is part of the audit trail even when declined").
  * The failing `authorization`/`capture` ledger row's `created_at` is
  * written in the SAME synchronous call, immediately before
- * `dateProposal.service.ts` persists `status = 'payment_failed'` — so it
+ * `dateProposal.service.ts` persists `status = 'payment_failed'`, so it
  * is, in practice, the payment-failure moment. See the caveat below.
  *
  * CAVEAT (documented, not hidden): `payment_ledger.created_at` is
  * deliberately the column's own SQL `now()` default, NOT `ctx.clock.now()`
- * — `ledger.service.ts`'s own header explains why (the ledger is a
+ * `ledger.service.ts`'s own header explains why (the ledger is a
  * forensic audit trail that must reflect real physical write order, not a
  * test's simulated clock). Every OTHER timestamp this file reads
  * (`date_proposals.*_at`, `messages.created_at`) IS `ctx.clock`-stamped.
  * In production (`SystemClock`) this is a no-op distinction. In a test
  * using `ManualClock` set away from real wall-clock time, a
  * `payment_failed` event's `occurredAt` will not necessarily interleave
- * correctly against `ManualClock`-driven neighbors — a pre-existing
+ * correctly against `ManualClock`-driven neighbors, a pre-existing
  * constraint of `ledger.service.ts`'s design (see its header) that this
  * file inherits rather than introduces, since neither
  * `dateProposal.service.ts` nor `ledger.service.ts` is this build's to
@@ -69,8 +69,8 @@ import * as conversationService from './conversation.service.js';
  * siblings.
  *
  * SCOPE (deliberate, documented): `no_show` and `disputed` (spec §13.3)
- * are likewise stamped nowhere on `date_proposals`, and — unlike
- * `payment_failed` — correspond to no reliable, uniquely-matchable
+ * are likewise stamped nowhere on `date_proposals`, and, unlike
+ * `payment_failed`, correspond to no reliable, uniquely-matchable
  * `payment_ledger` row either (a no-show may refund $0 on the no-show
  * side, and a dispute involves no payment operation at all). The task's
  * required lifecycle-event list (proposed / accepted / declined /
@@ -83,7 +83,7 @@ import * as conversationService from './conversation.service.js';
  * `refunded` gets its own event type (`date_refunded`, distinct from
  * `date_canceled`) even though both share the same `canceled_at` column
  * (`dateProposal.service.ts#cancelDateProposal` reuses one column for
- * both terminal outcomes — see that file) — this file branches on the
+ * both terminal outcomes, see that file), this file branches on the
  * row's current `status` to label the shared timestamp correctly rather
  * than collapsing a full refund and a bare cancellation into one copy.
  *
@@ -94,7 +94,7 @@ import * as conversationService from './conversation.service.js';
  * differently-sized streams: potentially thousands of messages, and a
  * handful of date-proposal lifecycle events per proposal. Cursor
  * pagination over their MERGE has to be a single ordered sequence, computed
- * where the data lives — fetching "all messages" into memory to merge in
+ * where the data lives, fetching "all messages" into memory to merge in
  * JS would defeat the entire point of pagination. So this file builds one
  * `UNION ALL` of every (kind, occurred_at) pair for the conversation, then
  * applies the identical keyset-pagination pattern every other cursor in
@@ -104,22 +104,22 @@ import * as conversationService from './conversation.service.js';
  * `event_key` (`kind || ':' || id`) exists because the same
  * `dateProposalId` legitimately appears as the anchor for several
  * DIFFERENT rows (its `proposed` row and its `accepted` row share an id
- * but are different events) — `kind` disambiguates them for the tie-break.
+ * but are different events), `kind` disambiguates them for the tie-break.
  *
  * Only the PAGE actually being returned (≤ `limit` rows) triggers a
  * second, small batch-hydration query per referenced proposal/venue/
- * message id — never a full-table scan.
+ * message id, never a full-table scan.
  *
  * =====================================================================
  * CONSISTENCY ACROSS PARTICIPANTS
  * =====================================================================
- * The underlying query is keyed only by `conversationId` — it does not
+ * The underlying query is keyed only by `conversationId`, it does not
  * branch on `ctx.actor`/viewer identity at all (viewer-relative rendering,
  * e.g. "you proposed this" vs "they proposed this", is left to the client
  * comparing `proposerId`/`senderId` against its own userId, exactly how
  * `message.service.ts#Message.senderId` already works). So the proposer
  * and the recipient necessarily see the identical set of events in the
- * identical order — there is no code path that could show one side an
+ * identical order, there is no code path that could show one side an
  * event the other doesn't get. `tests/unit/timeline.test.ts` asserts this
  * directly (fetch as both participants, compare).
  *
@@ -128,15 +128,15 @@ import * as conversationService from './conversation.service.js';
  * =====================================================================
  * No payment card data (no `payment_holds`/`payment_methods` columns are
  * ever read here), no exact venue coordinates (`venues.latitude`/
- * `longitude` are never selected — only `name`; the task's own field list
+ * `longitude` are never selected, only `name`; the task's own field list
  * for a proposal card is "venue name, the date and time, and the current
  * status"), and no raw voucher payload/QR/signature (no `vouchers` row is
- * ever read — "a ticket exists" is derived purely from
+ * ever read, "a ticket exists" is derived purely from
  * `date_proposals.ticketed_at` being non-null as of a given event's
  * timestamp, via `hasTicket` below, never from the voucher table itself).
  *
  * Every system event card is STATIC, typed data (`kind` + structured
- * fields like `venueName`/`scheduledStart`/`status`) — this file emits no
+ * fields like `venueName`/`scheduledStart`/`status`), this file emits no
  * prose string anywhere. Rendering "Date proposed at The Daily Grind,
  * Sat 6:00 PM" (or any other copy) from those typed fields is the
  * client's job, exactly like `notification.service.ts`'s
@@ -167,7 +167,7 @@ export interface TimelineMessageEvent {
 
 export interface TimelineDateProposalEvent {
   kind: DateProposalEventKind;
-  /** `date_proposals.id` — stable across every event this one proposal produces. */
+  /** `date_proposals.id`, stable across every event this one proposal produces. */
   id: string;
   occurredAt: string; // ISO-8601 UTC
   conversationId: string;
@@ -179,7 +179,7 @@ export interface TimelineDateProposalEvent {
   scheduledEnd: string; // ISO-8601 UTC
   /** The proposal's status AS OF this specific event (see module doc), not necessarily its current status. */
   status: DateProposalStatus;
-  /** Whether a ticket existed as of this event's moment — `ticketed_at IS NOT NULL AND ticketed_at <= occurredAt`. Never the voucher's own payload/QR — see module doc. */
+  /** Whether a ticket existed as of this event's moment, `ticketed_at IS NOT NULL AND ticketed_at <= occurredAt`. Never the voucher's own payload/QR, see module doc. */
   hasTicket: boolean;
 }
 
@@ -217,7 +217,7 @@ interface MessageHydrationRow {
 }
 
 // =====================================================================
-// Cursor pagination (private to this module — same pattern as every
+// Cursor pagination (private to this module, same pattern as every
 // other cursor in this codebase; see module doc "WHY ONE SQL QUERY").
 // =====================================================================
 
@@ -249,8 +249,8 @@ export interface GetConversationTimelineParams {
 }
 
 // Every UNION branch below shares this shape: (proposal_id, message_id, kind, occurred_at).
-// `date_payment_failed` is derived from `payment_ledger` — see module doc
-// "EVENT MODEL — DERIVED, NOT DUPLICATED" for exactly why and its caveat.
+// `date_payment_failed` is derived from `payment_ledger`, see module doc
+// "EVENT MODEL, DERIVED, NOT DUPLICATED" for exactly why and its caveat.
 const MERGED_EVENTS_CTE = `
   WITH events AS (
     SELECT dp.id AS proposal_id, NULL::uuid AS message_id, 'date_proposed'::text AS kind, dp.created_at AS occurred_at
@@ -307,12 +307,12 @@ const MERGED_EVENTS_CTE = `
 `;
 
 /**
- * One merged, chronologically-ordered (newest-first — same DESC
+ * One merged, chronologically-ordered (newest-first, same DESC
  * convention `message.service.ts#listMessages` already uses, so this
  * endpoint and `GET /conversations/:id/messages` never disagree about
  * pagination direction), cursor-paginated stream of every message and
  * date-proposal lifecycle event in `conversationId`. Authorization: only
- * a participant may read it — `conversation.service#getConversation`
+ * a participant may read it, `conversation.service#getConversation`
  * throws `NotFoundError` for a non-participant/non-existent conversation
  * and `ForbiddenError` for a non-`user` actor (venue staff/admin), which
  * is exactly the "can't tell a chat exists from the outside" + "venue
@@ -412,7 +412,7 @@ export async function getConversationTimeline(ctx: Ctx, conversationId: string, 
 }
 
 /**
- * The status label for one event, as of THAT event — not necessarily the
+ * The status label for one event, as of THAT event, not necessarily the
  * proposal's current status (a `date_proposed` card for a since-completed
  * date still says "pending_acceptance", the status it actually had at
  * that moment). See module doc's `date_proposed` caveat for the one rare
@@ -439,7 +439,7 @@ function statusForEvent(kind: DateProposalEventKind, dp: DateProposalHydrationRo
       return 'payment_failed';
     case 'date_completed':
       // `completed_at` is shared by both terminal outcomes (§15.3 scan vs
-      // §15.4 no-scan fallback) — the row's own current status is exactly
+      // §15.4 no-scan fallback), the row's own current status is exactly
       // 'completed' or 'completed_unverified' by the time this fires, so
       // reading it directly (rather than guessing) is correct, not a
       // "current status leaking backward" case like the others above.

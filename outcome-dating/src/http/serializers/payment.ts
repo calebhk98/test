@@ -1,12 +1,12 @@
 /**
- * src/http/serializers/payment.ts — payment method / ledger views.
+ * src/http/serializers/payment.ts, payment method / ledger views.
  *
  * Spec §28.4 "do not store card numbers"; `PaymentMethodSummary` (domain
  * type) already structurally carries only `brand`/`last4`/processor
- * metadata, never a raw token or PAN — this is the explicit-allowlist
+ * metadata, never a raw token or PAN, this is the explicit-allowlist
  * last line of defence on top of that, and the one place a venue-staff
  * response is guaranteed to never reach (no route wires this serializer
- * for a venue-staff-authenticated request — see `src/http/auth.ts`'s role
+ * for a venue-staff-authenticated request, see `src/http/auth.ts`'s role
  * guards and C-4.2.6).
  */
 import type { LedgerEntry, PaymentMethodSummary } from '../../domain/types.js';

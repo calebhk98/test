@@ -1,15 +1,15 @@
 /**
  * §20 Notification Delivery job. Thin wrapper around
- * `notifications/delivery.ts#runNotificationDeliveryWorker` — the one
+ * `notifications/delivery.ts#runNotificationDeliveryWorker`, the one
  * piece of the notification pipeline nothing was scheduling (see the
  * wiring build's report: `runNotificationDeliveryWorker` was fully built
  * and tested but registered in no job, so a queued push/email/SMS
  * notification was never actually sent). No domain logic lives here: the
  * worker itself owns every gating decision (preferences, quiet hours,
- * retry/backoff) — this file only resolves which `PushSender`/
+ * retry/backoff), this file only resolves which `PushSender`/
  * `EmailSender`/`SmsSender` to hand it, using the exact same
  * environment-driven selection `src/http/deps.ts` uses for every other
- * external-integration port (`src/config/adapters.ts` — fakes outside
+ * external-integration port (`src/config/adapters.ts`, fakes outside
  * production, a hard failure on a misconfigured production deployment,
  * never a silent fake-in-production fallback).
  *

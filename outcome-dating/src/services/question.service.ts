@@ -29,13 +29,13 @@ import type {
 import { passesAvoidTagFilter } from '../domain/questions/tags.js';
 
 /**
- * question.service — THE compatibility question bank and per-user answers.
+ * question.service, THE compatibility question bank and per-user answers.
  * Spec: §8, §24.3 (routes), §27 (admin question manager).
  *
  * Owning agent: B (question-system cutover build); finished by the
  * follow-up retirement build (see below).
  *
- * CUTOVER (question-system unification) — COMPLETE. This file used to
+ * CUTOVER (question-system unification), COMPLETE. This file used to
  * also own a SECOND, OLDER question bank (`questions`/`answers`, a flat
  * 1-5 self/partner pair with no type or importance information). Every
  * surface now uses the ONE typed bank below exclusively:
@@ -44,12 +44,12 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  *   - `compatibility.service.ts` scores exclusively from the typed bank
  *     (`user_question_answers`).
  *   - `filter.service.ts` resolves every non-structured filter key
- *     exclusively against the typed bank (`qb:`-prefixed filter keys) —
+ *     exclusively against the typed bank (`qb:`-prefixed filter keys),
  *     the old bank's bare-slug resolution shim has been removed.
  *   - `src/http/routes/admin.routes.ts`'s §27 admin question-manager panel
  *     (`GET/POST /admin/questions`, `PATCH /admin/questions/:id`) now
  *     calls `adminListQuestionBank`/`adminCreateQuestionBankEntry`/
- *     `adminUpdateQuestionBankEntry` below — an admin can no longer create
+ *     `adminUpdateQuestionBankEntry` below, an admin can no longer create
  *     or edit a question in a bank the product never scores.
  *   - `src/services/behavioralPrompt.service.ts` detects patterns and
  *     records/answers suggestions against the typed bank
@@ -65,24 +65,24 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  *   - `src/seed.ts` seeds ONLY the typed bank.
  *   - The old `putMyAnswers`/`adminListQuestions`/`adminCreateQuestion`/
  *     `adminUpdateQuestion` functions and their `questions`/`answers` row
- *     mappings are deleted outright — nothing in this codebase calls the
+ *     mappings are deleted outright, nothing in this codebase calls the
  *     old bank's read or write path anymore, and
  *     `db/migrations/022_drop_old_question_bank.sql` drops both tables.
  *     See that migration's header for the full retirement accounting.
  *
  * Invariants:
- *  - A question's PREFERENCE is always a VALUE + an IMPORTANCE — never a
+ *  - A question's PREFERENCE is always a VALUE + an IMPORTANCE, never a
  *    bare number pretending to be both (see src/domain/questions/types.ts).
  *  - Every question is skippable, and every question accepts an explicit
  *    `prefer_not_to_say` refusal, regardless of whether it's flagged
- *    `sensitive` — see `putMyQuestionAnswer`'s own doc.
+ *    `sensitive`, see `putMyQuestionAnswer`'s own doc.
  *  - `putMyQuestionAnswer` is the ONLY write path for a new-bank answer,
  *    and it is what drives BOTH side effects spec §25.4/the deal-breaker
  *    design require: refreshing this user's materialized compatibility
  *    scores (`compatibility.service#refreshScoresForUser`), and syncing
  *    this user's deal-breaker-derived hard filters
  *    (`filter.service#updateMyFilters`, via `getMyDealBreakerFilterRows`
- *    below) — see `syncDealBreakerFilters`.
+ *    below), see `syncDealBreakerFilters`.
  *
  * SIGNATURE ADDITION (flagged per "Keep stub signatures; minimal changes
  * only, flagged loudly"): `resolveVisibleTagsFor` below is NOT one of the
@@ -93,7 +93,7 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  * INTERFACES.md's table owns `user_tags`/`interest_tags` CRUD or
  * visibility at all, and `discovery.service.ts`'s `DiscoveryCandidate`
  * type has a `sharedInterestTag` field that needs exactly this logic to
- * populate. `discovery.service.ts` (also owned by this agent) calls it —
+ * populate. `discovery.service.ts` (also owned by this agent) calls it,
  * that edge is not in INTERFACES.md's authoritative call-graph diagram
  * either. Both additions are confined to files this agent owns and change
  * no frozen signature; flagged in the handoff report as a coordination
@@ -102,7 +102,7 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  */
 
 // =====================================================================
-// §8.4 private tags — reciprocal disclosure (see SIGNATURE ADDITION note
+// §8.4 private tags, reciprocal disclosure (see SIGNATURE ADDITION note
 // at the top of this file).
 // =====================================================================
 
@@ -116,12 +116,12 @@ export interface VisibleTag {
  * The single function anything displaying `targetUserId`'s interest tags
  * to `viewerUserId` MUST go through (§8.4). Visibility rules per
  * `user_tags.visibility`:
- *   - `public` — always visible to anyone.
- *   - `private_reciprocal` — visible to `viewerUserId` only if `viewerUserId`
+ *   - `public`, always visible to anyone.
+ *   - `private_reciprocal`, visible to `viewerUserId` only if `viewerUserId`
  *     also holds a `user_tags` row for that same tag (any visibility level
- *     of their own copy — reciprocity is about the shared fact of holding
+ *     of their own copy, reciprocity is about the shared fact of holding
  *     the tag, not about the viewer's own privacy choice for it).
- *   - `hidden` — never visible to anyone else.
+ *   - `hidden`, never visible to anyone else.
  * `viewerUserId === targetUserId` is treated as the profile owner viewing
  * their own tags: everything is returned, including `hidden` ones.
  */
@@ -164,7 +164,7 @@ export async function resolveVisibleTagsFor(ctx: Ctx, viewerUserId: string, targ
 // =====================================================================
 // NEW QUESTION BANK (typed questions, value+importance preferences).
 //
-// Everything below this line is ADDITIVE — it does not change any
+// Everything below this line is ADDITIVE, it does not change any
 // function/type above. The old `questions`/`answers` tables and every
 // function above keep working exactly as before for
 // `compatibility.service.ts` / `filter.service.ts` /
@@ -179,7 +179,7 @@ export async function resolveVisibleTagsFor(ctx: Ctx, viewerUserId: string, targ
 
 const NO_SECTION_MARK = /§/;
 
-/** Every user-visible string in the new bank goes through this — see task brief "no question text, option label, or any other user-visible string may contain a section mark". */
+/** Every user-visible string in the new bank goes through this, see task brief "no question text, option label, or any other user-visible string may contain a section mark". */
 function userFacingText(maxLen: number) {
   return z
     .string()
@@ -201,7 +201,7 @@ const choiceOptionInputSchema = z.object({
 
 // NOTE: `.refine()` on an individual member would wrap it in `ZodEffects`,
 // which `z.discriminatedUnion` rejects (it requires every member to stay a
-// plain `ZodObject` so it can read `.shape` for the discriminant) — so the
+// plain `ZodObject` so it can read `.shape` for the discriminant), so the
 // scale-specific "max > min" / "even span" checks are applied to the
 // UNION as a whole below instead, gated on `d.type !== 'scale'`.
 const scaleTypeDefSchema = z.object({
@@ -284,7 +284,7 @@ async function loadCurrentQuestionsBySlug(ctx: Ctx, slugs: string[]): Promise<Ma
 }
 
 // =====================================================================
-// Client-facing paged listing — "paging/lookup must not load the whole
+// Client-facing paged listing, "paging/lookup must not load the whole
 // bank per request" (task brief). Cursor is the last-seen row id;
 // O(log n) index lookup via idx_question_bank_paging / the primary key,
 // not an offset scan, so page N costs the same as page 1 regardless of
@@ -338,7 +338,7 @@ export async function getCurrentQuestionBySlug(ctx: Ctx, slug: string): Promise<
  * `question_bank` id at some earlier point (e.g.
  * `behavioralPrompt.service.ts` pinning a suggestion to the version that
  * was current when the pattern was detected) and later needs to act on
- * "whatever is current for that question now" — the normal
+ * "whatever is current for that question now", the normal
  * `getCurrentQuestionBySlug` lookup, keyed off the slug this returns.
  * Returns `null` if no `question_bank` row has ever had this id.
  */
@@ -348,7 +348,7 @@ export async function getQuestionBankSlugById(ctx: Ctx, id: string): Promise<str
 }
 
 // =====================================================================
-// Answers — value + importance, three non-answer states.
+// Answers, value + importance, three non-answer states.
 // =====================================================================
 
 export interface QuestionAnswerRecord {
@@ -389,7 +389,7 @@ function answerRecordFromRow(row: UserQuestionAnswerRow): QuestionAnswerRecord {
   };
 }
 
-/** Converts a persisted answer record into the pure domain's `QuestionAnswerState` shape (src/domain/questions/types.ts) — what `scoreQuestionContribution`/`evaluateDealBreakers`/the selector all consume. */
+/** Converts a persisted answer record into the pure domain's `QuestionAnswerState` shape (src/domain/questions/types.ts), what `scoreQuestionContribution`/`evaluateDealBreakers`/the selector all consume. */
 export function toAnswerState(record: Pick<QuestionAnswerRecord, 'status' | 'selfValue' | 'preferenceValue' | 'importance'>): QuestionAnswerState {
   return {
     status: record.status,
@@ -408,7 +408,7 @@ export async function getMyQuestionAnswers(ctx: Ctx): Promise<QuestionAnswerReco
 /**
  * Every new-bank answer for one user, keyed by question slug, in the
  * pure domain's `QuestionAnswerState` shape. A slug with no row is
- * simply absent from the map — callers (the selector wrapper, a later
+ * simply absent from the map, callers (the selector wrapper, a later
  * compatibility-scoring integration) treat an absent entry as
  * `unanswered`, matching `types.ts`'s "absence of a row IS the
  * unanswered state" convention.
@@ -476,33 +476,33 @@ async function persistAnswer(
 }
 
 /**
- * Records one answer to a new-bank question — `status: 'answered'`
+ * Records one answer to a new-bank question, `status: 'answered'`
  * requires `selfValue` plus EITHER (`preferenceValue` + `importance`) OR
  * `ladderPosition` (only accepted when the question's `presentation` is
- * `'ladder'` — see src/domain/questions/ladder.ts). `status: 'skipped'`
- * or `'prefer_not_to_say'` must not include any of those four fields —
+ * `'ladder'`, see src/domain/questions/ladder.ts). `status: 'skipped'`
+ * or `'prefer_not_to_say'` must not include any of those four fields,
  * "always skippable" carries no value/importance to reject or coerce.
  *
  * Every question is always skippable/refusable regardless of `sensitive`
- * — there is no sensitive-questions-only gate on `prefer_not_to_say` here
+ * there is no sensitive-questions-only gate on `prefer_not_to_say` here
  * (task brief: "This applies to ALL questions, not just ones flagged
  * sensitive").
  *
- * SIDE EFFECTS (both now wired — spec §25.4 "on major answer changes" and
+ * SIDE EFFECTS (both now wired, spec §25.4 "on major answer changes" and
  * the deal-breaker filter seam, previously left for "a later agent"; that
  * agent is this build):
- *   1. `compatibility.service#refreshScoresForUser` — recomputes this
+ *   1. `compatibility.service#refreshScoresForUser`, recomputes this
  *      user's materialized compatibility scores against their bounded
  *      geographic/activity-window neighbor set (see that function's own
  *      doc). Mirrors exactly how the old `putMyAnswers` used to trigger
  *      this.
- *   2. `syncDealBreakerFilters` (below) — re-derives this user's
+ *   2. `syncDealBreakerFilters` (below), re-derives this user's
  *      deal-breaker-implied hard filters via `getMyDealBreakerFilterRows`
  *      and persists them through `filter.service#updateMyFilters`,
  *      retracting (disabling, not deleting) any previously-derived `qb:*`
  *      filter that no longer corresponds to a current deal breaker (e.g.
  *      the user softened a deal breaker to "critical", or changed their
- *      answer entirely) — see that function's own doc for exactly how the
+ *      answer entirely), see that function's own doc for exactly how the
  *      retraction diff works.
  * Both run unconditionally (every status, not just `'answered'`) because
  * EITHER side effect can matter no matter which direction an edit goes:
@@ -585,11 +585,11 @@ export async function putMyQuestionAnswer(ctx: Ctx, input: PutQuestionAnswerInpu
     result = await persistAnswer(ctx, userId, question, 'answered', selfResult.value, prefResult.value, importance, now);
   }
 
-  // spec §25.4 "on major answer changes" — refresh this user's materialized
+  // spec §25.4 "on major answer changes", refresh this user's materialized
   // compatibility scores.
   await refreshScoresForUser(ctx, userId);
   // Deal-breaker filter seam (src/domain/questions/dealBreakers.ts's file
-  // doc) — keep `hard_filters` in sync with this user's CURRENT
+  // doc), keep `hard_filters` in sync with this user's CURRENT
   // deal-breaker answers, including retracting one that just stopped being
   // a deal breaker.
   await syncDealBreakerFilters(ctx);
@@ -598,7 +598,7 @@ export async function putMyQuestionAnswer(ctx: Ctx, input: PutQuestionAnswerInpu
 }
 
 // =====================================================================
-// "What should we ask next?" — I/O wrapper around
+// "What should we ask next?", I/O wrapper around
 // src/domain/questions/selector.ts#selectNextQuestions.
 // =====================================================================
 
@@ -612,10 +612,10 @@ const MAX_NEXT_QUESTIONS_COUNT = 50;
 
 /**
  * Loads the whole active current bank's selector-relevant columns
- * (see `SelectableQuestion` — never the heavier `type_definition` jsonb)
+ * (see `SelectableQuestion`, never the heavier `type_definition` jsonb)
  * plus this one user's answer/skip history, and returns up to
  * `opts.count` full `QuestionDefinition`s (definitions ARE fetched in
- * full here, but only for the handful actually selected — see
+ * full here, but only for the handful actually selected, see
  * selector.ts's COMPLEXITY note for why the bank-wide pass stays cheap).
  */
 export async function selectNextQuestionsForMe(ctx: Ctx, opts?: NextQuestionsOptions): Promise<QuestionDefinition[]> {
@@ -661,7 +661,7 @@ export async function selectNextQuestionsForMe(ctx: Ctx, opts?: NextQuestionsOpt
 }
 
 // =====================================================================
-// Deal-breaker filter derivation — THE FILTER SEAM (see
+// Deal-breaker filter derivation, THE FILTER SEAM (see
 // src/domain/questions/dealBreakers.ts's file doc for exactly what a
 // later agent must call to persist these against filter.service.ts).
 // =====================================================================
@@ -673,7 +673,7 @@ export async function selectNextQuestionsForMe(ctx: Ctx, opts?: NextQuestionsOpt
  * already accepts). Pure derivation lives in
  * `src/domain/questions/dealBreakers.ts#deriveDealBreakerFilterRows`;
  * this is just the I/O to load the inputs it needs. Does NOT call
- * `filter.service.ts` itself — see that module's file doc for exactly
+ * `filter.service.ts` itself, see that module's file doc for exactly
  * what a later agent must call with this function's result.
  */
 export async function getMyDealBreakerFilterRows(ctx: Ctx): Promise<DealBreakerFilterRow[]> {
@@ -715,7 +715,7 @@ export async function getMyDealBreakerFilterRows(ctx: Ctx): Promise<DealBreakerF
 /**
  * Persists the caller's CURRENT deal-breaker-implied filters through
  * `filter.service#updateMyFilters`, and RETRACTS (disables, never
- * deletes — `updateMyFilters` only ever upserts) any previously-derived
+ * deletes, `updateMyFilters` only ever upserts) any previously-derived
  * `qb:*` filter that no longer corresponds to a current deal breaker.
  *
  * This is the "wiring agent" call `src/domain/questions/dealBreakers.ts`'s
@@ -723,17 +723,17 @@ export async function getMyDealBreakerFilterRows(ctx: Ctx): Promise<DealBreakerF
  * enabled right now; every OTHER `qb:`-prefixed row already sitting in
  * `hard_filters` for this user is, by construction, only ever written by
  * this same function (the `qb:` namespace exists specifically so nothing
- * else writes it — see dealBreakers.ts's FILTER-KEY NAMESPACE note), so
+ * else writes it, see dealBreakers.ts's FILTER-KEY NAMESPACE note), so
  * any such row not in the current derived set is stale and gets
- * `enabled: false` here rather than being left in place — a stale
+ * `enabled: false` here rather than being left in place, a stale
  * deal-breaker filter that used to be "critical" and is now merely
  * "important" must stop excluding candidates, not keep doing so silently.
  * A user's non-`qb:` filters (age, distance, gender, ...) are never
  * touched by this function.
  *
  * A no-op (no `updateMyFilters` call at all) when there is nothing to
- * enable and nothing to retract, so calling this on every answer change —
- * even one with no deal-breaker involvement at all — costs one extra read
+ * enable and nothing to retract, so calling this on every answer change,
+ * even one with no deal-breaker involvement at all, costs one extra read
  * and no write in the common case.
  */
 async function syncDealBreakerFilters(ctx: Ctx): Promise<void> {
@@ -768,7 +768,7 @@ async function syncDealBreakerFilters(ctx: Ctx): Promise<void> {
 }
 
 // =====================================================================
-// Tag intensity + avoidance — see src/domain/questions/tags.ts for the
+// Tag intensity + avoidance, see src/domain/questions/tags.ts for the
 // pure math and exactly what a later agent must call from
 // discovery.service.ts to enforce/use these.
 // =====================================================================
@@ -848,7 +848,7 @@ export async function getMyAvoidTagIds(ctx: Ctx): Promise<string[]> {
  * I/O wrapper around `src/domain/questions/tags.ts#passesAvoidTagFilter`
  * for one candidate pair. See that function's doc for exactly where a
  * later agent should call this from `discovery.service.ts` (the same
- * gating point as `filter.service#passesMutualFilters`, before scoring —
+ * gating point as `filter.service#passesMutualFilters`, before scoring,
  * never as a post-hoc filter over an already-sorted/scored list).
  */
 export async function passesAvoidTagFilterFor(ctx: Ctx, userId: string, otherUserId: string): Promise<{ passes: boolean; violatingTagIds: string[] }> {
@@ -867,7 +867,7 @@ export async function passesAvoidTagFilterFor(ctx: Ctx, userId: string, otherUse
 }
 
 // =====================================================================
-// Admin bank management — versioned create/update. Editing NEVER mutates
+// Admin bank management, versioned create/update. Editing NEVER mutates
 // a `question_bank` row in place; it inserts a new version and flips
 // `is_current` (see db/migrations/008_questions.sql) so answers already
 // pinned to the old version keep their original meaning.
@@ -957,7 +957,7 @@ export async function adminCreateQuestionBankEntry(ctx: Ctx, input: CreateQuesti
  * Creates a new version of `slug`, flips the previous version's
  * `is_current` to false, and returns the new current definition. This is
  * two sequential statements, not one atomic transaction (matching the
- * rest of this file's — and the codebase's — established pattern of not
+ * rest of this file's, and the codebase's, established pattern of not
  * wrapping every multi-statement service write in `withTransaction`; see
  * `src/db/tx.ts`). Acceptable here because this is an admin-only, rare,
  * append-mostly operation: the narrow failure window between the two

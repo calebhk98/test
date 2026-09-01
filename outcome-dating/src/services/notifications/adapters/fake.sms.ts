@@ -2,7 +2,7 @@ import { newId } from '../../../lib/ids.js';
 import type { SmsSendParams, SmsSendResult, SmsSender } from '../ports/sms.port.js';
 
 /**
- * In-memory, deterministic `SmsSender` for dev and tests — same shape and
+ * In-memory, deterministic `SmsSender` for dev and tests, same shape and
  * same magic-substring convention as `FakePushSender`/`FakeEmailSender`:
  *
  *   toE164 contains "invalid_number"  -> status: 'invalid_number'
@@ -10,8 +10,8 @@ import type { SmsSendParams, SmsSendResult, SmsSender } from '../ports/sms.port.
  *   anything else                     -> status: 'sent'
  *
  * Every attempted send is recorded in `sent` (including failures), so
- * tests can assert on send COUNT for coalescing/cost-cap behavior — e.g.
- * "12 match events in a day -> at most N SmsSender.send calls" — as well
+ * tests can assert on send COUNT for coalescing/cost-cap behavior, e.g.
+ * "12 match events in a day -> at most N SmsSender.send calls", as well
  * as on content. One instance is one isolated "carrier connection";
  * construct a fresh one per test.
  */

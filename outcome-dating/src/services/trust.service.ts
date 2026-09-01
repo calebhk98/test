@@ -7,48 +7,48 @@ import * as notification from './notification.service.js';
 export type { TrustLevel };
 
 /**
- * trust.service — the §6 trust score/level and its visibility into
+ * trust.service, the §6 trust score/level and its visibility into
  * "why is my level limited".
  * Spec: §6, §24.11, §25.6 (recalculation job).
  *
  * Owning agent: E.
  *
  * ---------------------------------------------------------------------
- * SCORING MODEL (internal — see report to orchestrator for the numbers;
+ * SCORING MODEL (internal, see report to orchestrator for the numbers;
  * NEVER returned by any user-facing export in this file)
  * ---------------------------------------------------------------------
  * `recalculateTrustScore` composes two additive layers on top of a fixed
  * base, then clamps to [0,100]:
  *
- *  1. STATE factors (`computeStateFactors`) — read live from `users`,
+ *  1. STATE factors (`computeStateFactors`), read live from `users`,
  *     `profiles`, `payment_methods`, `user_photos` at recalculation time.
  *     These are current-status facts (verified email, verified payment
  *     method, profile completeness, account age, and a "clean record"
  *     bonus for zero negative trust_events in the last 90 days) rather
  *     than one-off events, and no other service is wired (per
- *     INTERFACES.md's call graph) to push them as `trust_events` — only
+ *     INTERFACES.md's call graph) to push them as `trust_events`, only
  *     `trust.service.ts` itself can observe "is my email verified right
  *     now", so re-deriving them fresh every recalculation (rather than
  *     trying to keep an event log in sync with them) is what makes this
  *     recomputation idempotent and safe to re-run any time (spec §25.6).
  *
- *  2. EVENT factors — `sum(trust_events.delta)` for the user, all time.
+ *  2. EVENT factors, `sum(trust_events.delta)` for the user, all time.
  *     This is the append-only log spec §6 describes ("recomputed rather
  *     than mutated in place, so the why is always reconstructable") and
  *     is how the REST of §6.2's factors reach the score: completed dates,
  *     positive/negative post-date feedback, no-shows, payment failures/
  *     chargebacks, and moderation actions/appeal outcomes all arrive here
  *     as `trust_events` rows pushed by the module that is actually
- *     wired (per the "may call" graph) to observe them —
+ *     wired (per the "may call" graph) to observe them,
  *     `dateProposal.service` (dateProposal ─▶ trust), `redemption.service`
  *     (redemption ─▶ trust), `moderation.service` (moderation ─▶ trust),
  *     and `appeal.service` (appeal ─▶ trust). `trust.service.ts` does not
- *     — and structurally cannot, per the call graph — read `messages`,
+ * and structurally cannot, per the call graph, read `messages`,
  *     `date_proposals`, or `reports` itself to derive these; it only
  *     knows what's been recorded via `recordTrustEvent`.
  *
  * `TRUST_EVENT_TYPES` below is the recommended vocabulary other agents'
- * `recordTrustEvent` calls should use — the *delta value* is always
+ * `recordTrustEvent` calls should use, the *delta value* is always
  * caller-supplied (frozen signature: `RecordTrustEventInput.delta` is
  * required, not derived from `eventType` here), but using these exact
  * strings lets `getMyTrustSummary`'s "recent negative events" rendering
@@ -57,7 +57,7 @@ export type { TrustLevel };
  * Invariants:
  *  - `getMyTrustSummary` MUST show actionable items and recent negative
  *    events (spec §6.3 example) and MUST NOT expose the exact weighting
- *    formula — `actionableImprovements`/`recentNegativeEvents` are static
+ *    formula, `actionableImprovements`/`recentNegativeEvents` are static
  *    template strings keyed off which factors are missing/present, never
  *    raw factor weights.
  *  - `levelForScore` reads the boundaries from config
@@ -65,32 +65,32 @@ export type { TrustLevel };
  *    `trust.level_elite_min`) rather than hardcoding §6.1's table, so an
  *    admin can retune them (spec §21 "config-driven variables").
  *  - `recalculateTrustScore` is the only function that writes
- *    `users.trust_score`/`trust_level` — it must derive the new score from
+ *    `users.trust_score`/`trust_level`, it must derive the new score from
  *    the full `trust_events` history (or an incremental delta plus prior
  *    score; implementation's choice) and record *why* via
  *    `recordTrustEvent`, never adjust the column directly elsewhere.
  *  - A trust_level change fires a `trust_level_changed` notification
- *    (spec §20.1) — that call belongs in `recalculateTrustScore`.
+ *    (spec §20.1), that call belongs in `recalculateTrustScore`.
  *  - `canSendLinks`/link-clickability is governed by `trust.link_min_level`
- *    (spec §6.4, §19.4) — `message.service.ts` calls this rather than
+ *    (spec §6.4, §19.4), `message.service.ts` calls this rather than
  *    re-deriving the comparison.
  *
  * ---------------------------------------------------------------------
  * NEW EXPORTS beyond the frozen INTERFACES.md list (flagged loudly for
- * cross-agent coordination — nothing frozen was removed or changed):
+ * cross-agent coordination, nothing frozen was removed or changed):
  * ---------------------------------------------------------------------
- *  - `can(ctx, action, subject)` — the single total capability check the
+ *  - `can(ctx, action, subject)`, the single total capability check the
  *    task brief asks trust.service to expose for §6.4. Agent C
  *    (interest/message services) and the API/HTTP layer are the intended
  *    callers.
- *  - `linksPerHourLimitFor(ctx, trustLevel)` — ties §6.4's clickability
+ *  - `linksPerHourLimitFor(ctx, trustLevel)`, ties §6.4's clickability
  *    tier to §12.3's per-hour numeric link cap so the two can't drift out
  *    of sync when an admin retunes `trust.link_min_level`. See the
  *    "§6.4 vs §12.3 precedence" comment on `can()` below.
  */
 
 // =====================================================================
-// Recognized trust_events vocabulary (recommendation, not enforcement —
+// Recognized trust_events vocabulary (recommendation, not enforcement,
 // event_type is a free-text column; unrecognized values still count
 // toward the score via their delta, they just render generically in
 // `recentNegativeEvents`).
@@ -109,7 +109,7 @@ export const TRUST_EVENT_TYPES = {
   APPEAL_APPROVED: 'appeal_approved',
 } as const;
 
-/** Static, non-generated label for a recognized negative event_type (spec §1/§20 "no generated prose"). Unrecognized types fall back to a generic label — never crashes on an unexpected string from another service. */
+/** Static, non-generated label for a recognized negative event_type (spec §1/§20 "no generated prose"). Unrecognized types fall back to a generic label, never crashes on an unexpected string from another service. */
 const NEGATIVE_EVENT_LABELS: Record<string, string> = {
   [TRUST_EVENT_TYPES.NO_SHOW]: 'missed date',
   [TRUST_EVENT_TYPES.NEGATIVE_POST_DATE_FEEDBACK]: 'negative post-date feedback',
@@ -123,7 +123,7 @@ const NEGATIVE_EVENT_LABELS: Record<string, string> = {
 const GENERIC_NEGATIVE_LABEL = 'report or automated safety flag';
 
 const LEVEL_RANK: Record<TrustLevel, number> = { limited: 0, standard: 1, trusted: 2, elite: 3 };
-const TRUST_SCORE_BASE = 50; // matches users.trust_score DEFAULT in 001_init.sql — a new account starts neutral.
+const TRUST_SCORE_BASE = 50; // matches users.trust_score DEFAULT in 001_init.sql, a new account starts neutral.
 
 // ---- internal, never-exposed state-factor weights (see module doc above) ----
 const WEIGHT_VERIFIED_EMAIL = 8;
@@ -140,7 +140,7 @@ const CLEAN_RECORD_MIN_ACCOUNT_AGE_DAYS = 14;
  * Deliberately NOT exported alongside a public API surface, and
  * deliberately a *different shape* from `TrustSummary` (domain/types.ts)
  * so there is no accidental code path that could serialize this straight
- * into an HTTP response — spec §6.3 "Do not expose the exact formula."
+ * into an HTTP response, spec §6.3 "Do not expose the exact formula."
  * Useful for admin tooling / tests that need to assert *why* a score is
  * what it is.
  */
@@ -341,7 +341,7 @@ const RecordTrustEventSchema = z.object({
   metadata: z.record(z.unknown()).optional(),
 });
 
-/** Appends one `trust_events` row. Does NOT recompute `trust_score` itself — callers that need the recomputation to happen synchronously should call `recalculateTrustScore` afterward (spec §25.6 lists exactly which events trigger it: report, date completed, payment failure, profile change, verification change). */
+/** Appends one `trust_events` row. Does NOT recompute `trust_score` itself, callers that need the recomputation to happen synchronously should call `recalculateTrustScore` afterward (spec §25.6 lists exactly which events trigger it: report, date completed, payment failure, profile change, verification change). */
 export async function recordTrustEvent(ctx: Ctx, input: RecordTrustEventInput): Promise<TrustEvent> {
   const parsed = RecordTrustEventSchema.parse(input);
 
@@ -368,12 +368,12 @@ export async function recordTrustEvent(ctx: Ctx, input: RecordTrustEventInput): 
  * INTEGRITY FIX (normalization audit item 3): `trust_level` used to be
  * computed here in TypeScript (`breakdown.level`, via `levelForScore`
  * reading `ctx.config`) and passed down as a literal alongside
- * `trust_score` in the UPDATE — two separate values, from two separate
+ * `trust_score` in the UPDATE, two separate values, from two separate
  * computations, that happened to agree only because this one function is
  * disciplined about it. The write below instead derives `trust_level`
  * from `trust_score` INSIDE the same UPDATE statement, via the
  * `trust_level_for_score` SQL function (db/migrations/025_integrity.sql)
- * — the database computes the pair from one input, in one statement,
+ * the database computes the pair from one input, in one statement,
  * reading `config_entries` live, so this function's own possibly-stale
  * `ctx.config` cache can never disagree with what actually lands in the
  * row. `trust_level_for_score` mirrors `levelForScore`'s bands exactly
@@ -381,7 +381,7 @@ export async function recordTrustEvent(ctx: Ctx, input: RecordTrustEventInput): 
  * across a config change without needing a schema migration (unlike a
  * GENERATED column, which Postgres forbids from consulting another
  * table, and unlike a CHECK constraint, which Postgres forbids from
- * referencing another table at all — a config-driven bound genuinely
+ * referencing another table at all, a config-driven bound genuinely
  * cannot be expressed as either). This closes the gap for the one real
  * production writer; see the build report for why a table-level
  * constraint forcing EVERY write (including test fixtures that
@@ -404,7 +404,7 @@ export async function recalculateTrustScore(ctx: Ctx, userId: string): Promise<{
     // Best-effort: a notification-delivery hiccup must never roll back an
     // already-persisted trust score change (notification.service.ts is a
     // leaf owned by a sibling agent and may not be implemented yet during
-    // parallel development — see module doc above).
+    // parallel development, see module doc above).
     try {
       await notification.notify(ctx, {
         userId,
@@ -425,9 +425,9 @@ export async function recalculateTrustScore(ctx: Ctx, userId: string): Promise<{
  * whether the numeric `trustScore` may be shown to the user at all, as
  * opposed to `trustLevel` alone (spec §6.1 "not shown as an exact number
  * unless product explicitly decides otherwise"). `getMyTrustSummary`
- * itself deliberately keeps its frozen contract — it always returns both
+ * itself deliberately keeps its frozen contract, it always returns both
  * fields (see this file's own module doc, and `TrustSummary.trustScore`'s
- * doc comment in domain/types.ts: "service always returns it") — so tests
+ * doc comment in domain/types.ts: "service always returns it"), so tests
  * and other server-side consumers of the full breakdown are unaffected.
  * This is the single source of truth for the *display* gate: the HTTP
  * layer should call this before deciding whether to serialize `trustScore`
@@ -460,8 +460,8 @@ async function levelMeetsLinkMinimum(ctx: Ctx, level: TrustLevel): Promise<boole
 }
 
 // =====================================================================
-// `can()` — §6.4 capability matrix. NEW export (not in the frozen
-// INTERFACES.md list) — see module doc header for why, and flag this to
+// `can()`, §6.4 capability matrix. NEW export (not in the frozen
+// INTERFACES.md list), see module doc header for why, and flag this to
 // Agent C (interest.service, message.service) and the API/HTTP layer as a
 // new call surface to wire up.
 // =====================================================================
@@ -470,23 +470,23 @@ export type TrustGatedAction = 'browse' | 'send_interest' | 'chat' | 'send_links
 
 export interface CapabilitySubject {
   trustLevel: TrustLevel;
-  /** Only consulted for `propose_date` — §6.4 "Date proposals: requires payment method at Limited". */
+  /** Only consulted for `propose_date`, §6.4 "Date proposals: requires payment method at Limited". */
   hasVerifiedPaymentMethod?: boolean;
 }
 
 export interface CapabilityDecision {
   allowed: boolean;
-  /** Present (and true) when `allowed` but under a reduced quota — §6.4 "Send interests: limited" for Limited trust. Callers apply their own reduced numeric cap (e.g. `interest.service.ts`'s own config-driven limit); this flag only signals *that* a reduction applies. */
+  /** Present (and true) when `allowed` but under a reduced quota, §6.4 "Send interests: limited" for Limited trust. Callers apply their own reduced numeric cap (e.g. `interest.service.ts`'s own config-driven limit); this flag only signals *that* a reduction applies. */
   limited?: boolean;
   /** Only meaningful for `send_links`. */
   linkMode?: 'blocked' | 'warn' | 'clickable';
-  /** Static, stable reason code — safe to show to the user, carries no weights. */
+  /** Static, stable reason code, safe to show to the user, carries no weights. */
   reasonCode?: 'payment_method_required' | 'reduced_quota_low_trust' | 'links_disabled_low_trust' | 'links_warning_standard_trust';
 }
 
 /**
  * Single total capability check for the §6.4 restriction table. Every
- * branch is exhaustive and returns a decision — there is no action this
+ * branch is exhaustive and returns a decision, there is no action this
  * function can be asked about that it doesn't have an answer for.
  *
  * ---------------------------------------------------------------------
@@ -499,7 +499,7 @@ export interface CapabilityDecision {
  * order:
  *
  *   1. SEND-TIME (§12.3, `message.service.ts`, not this file): "may this
- *      message containing N links be sent at all right now?" — a rate
+ *      message containing N links be sent at all right now?", a rate
  *      limit keyed on a volume of links per rolling hour. This gate runs
  *      FIRST, before the message is persisted.
  *   2. RENDER-TIME (§6.4/§19.4, `canSendClickableLinks`/`can()` here):
@@ -508,7 +508,7 @@ export interface CapabilityDecision {
  *      concern, independent of how many links were sent.
  *
  *   A link that fails gate 1 is never sent, so gate 2 never runs for it.
- *   A link that passes gate 1 always still goes through gate 2 — passing
+ *   A link that passes gate 1 always still goes through gate 2, passing
  *   the rate limit does not make a Limited-trust user's links clickable.
  *
  *   The actual "tension": §12.3's config keys hardcode a binary
@@ -519,7 +519,7 @@ export interface CapabilityDecision {
  *   silently stay pinned to the literal 'limited' level unless it is
  *   ALSO derived from `trust.link_min_level`. Precedence: this module's
  *   level-vs-`trust.link_min_level` comparison is authoritative for
- *   BOTH concerns' bucket boundary — `linksPerHourLimitFor` below is the
+ *   BOTH concerns' bucket boundary, `linksPerHourLimitFor` below is the
  *   function `message.service.ts` should call (instead of re-deriving
  *   its own "is this user low-trust" comparison) so retuning
  *   `trust.link_min_level` moves both the clickability rule and the
@@ -580,11 +580,11 @@ export async function linksPerHourLimitFor(ctx: Ctx, trustLevel: TrustLevel): Pr
 /**
  * Decision-layer addition (Open Question OQ-4, see docs/conformance.md):
  * §6.4's "Send interests: limited" restriction-table cell for Limited
- * trust never had a concrete number — only the shared, all-tiers
+ * trust never had a concrete number, only the shared, all-tiers
  * `interest.outgoing_pending_limit` (5) existed. `interest.service.ts`
  * should call this instead of reading `interest.outgoing_pending_limit`
  * unconditionally, so a Limited-trust user's effective cap is the
- * (smaller) `interest.outgoing_pending_limit_limited_tier` — mirrors
+ * (smaller) `interest.outgoing_pending_limit_limited_tier`, mirrors
  * `linksPerHourLimitFor`'s same trust-tier-bucketing pattern above.
  */
 export async function outgoingInterestPendingLimitFor(ctx: Ctx, trustLevel: TrustLevel): Promise<number> {

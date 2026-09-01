@@ -7,7 +7,7 @@
  * tag intensity/avoidance CRUD lives in tests/unit/tags.test.ts.
  *
  * Runs against a dedicated `odate_questions_service` database (its own
- * DB per the task brief — "one database per test file").
+ * DB per the task brief, "one database per test file").
  */
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
@@ -49,7 +49,7 @@ before(async () => {
   clock = new ManualClock(new Date('2026-06-01T12:00:00Z'));
 
   // family_closeness is used by several independent tests below (selector,
-  // deal-breaker derivation, versioning) — seeded once up front so test
+  // deal-breaker derivation, versioning), seeded once up front so test
   // order doesn't matter for which test happens to create it first.
   await questionService.adminCreateQuestionBankEntry(ctxFor(adminActor()), CLOSENESS_INPUT);
 });
@@ -262,7 +262,7 @@ test('putMyQuestionAnswer: cannot combine ladderPosition with explicit preferenc
 });
 
 // =====================================================================
-// listActiveQuestionBank — paging
+// listActiveQuestionBank, paging
 // =====================================================================
 
 test('listActiveQuestionBank: pages without duplicates or gaps', async () => {
@@ -352,7 +352,7 @@ test('adminUpdateQuestionBankEntry: creates a new version, keeps old version row
   assert.equal(originalDef!.version, 1);
   assert.equal(before.questionBankId, originalDef!.id);
 
-  // Edit the question — new midpoint label, new version.
+  // Edit the question, new midpoint label, new version.
   const updated = await questionService.adminUpdateQuestionBankEntry(ctxFor(adminActor()), 'family_closeness', {
     typeDef: {
       type: 'scale',
@@ -371,7 +371,7 @@ test('adminUpdateQuestionBankEntry: creates a new version, keeps old version row
   assert.equal(currentDef!.version, 2);
 
   // The user's EXISTING answer, taken before the edit, must still be
-  // pinned to the ORIGINAL (v1) question_bank row — editing a question
+  // pinned to the ORIGINAL (v1) question_bank row, editing a question
   // must not silently change what an existing answer meant.
   const answers = await questionService.getMyQuestionAnswers(ctxFor(userActor(userId)));
   const closenessAnswer = answers.find((a) => a.questionSlug === 'family_closeness')!;

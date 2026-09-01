@@ -11,7 +11,7 @@
 -- rollup tables are populated by a background job that re-aggregates a
 -- bounded trailing time window on every run (default 35 days for the
 -- daily platform rollup, 60 days for retention cohorts), using ONE
--- indexed, grouped query per source table/metric per run — never a
+-- indexed, grouped query per source table/metric per run, never a
 -- per-day loop and never an unbounded full-history scan. The indexes
 -- added below are exactly what makes each of those grouped queries a
 -- bounded index-range scan instead of a sequential scan.
@@ -26,7 +26,7 @@
 
 CREATE INDEX IF NOT EXISTS idx_users_created_at ON users (created_at);
 -- Cheap, index-only "current total" gauges (count of matching rows via a
--- partial index, not a sequential scan of the whole table) — see
+-- partial index, not a sequential scan of the whole table), see
 -- adminStats.service.ts's currentGaugeCounts.
 CREATE INDEX IF NOT EXISTS idx_users_email_verified_partial ON users (id) WHERE email_verified_at IS NOT NULL;
 CREATE INDEX IF NOT EXISTS idx_users_email_verified_at_range ON users (email_verified_at) WHERE email_verified_at IS NOT NULL;
@@ -47,7 +47,7 @@ CREATE INDEX IF NOT EXISTS idx_date_proposals_created_at ON date_proposals (crea
 CREATE INDEX IF NOT EXISTS idx_date_proposals_accepted_at ON date_proposals (accepted_at) WHERE accepted_at IS NOT NULL;
 CREATE INDEX IF NOT EXISTS idx_date_proposals_completed_at ON date_proposals (completed_at) WHERE completed_at IS NOT NULL;
 -- `scheduled_end` is the bucketing key for statuses with no dedicated
--- transition-timestamp column (no_show, disputed, refunded — see the job
+-- transition-timestamp column (no_show, disputed, refunded, see the job
 -- file for why) and for the repeat-date-rate gauge.
 CREATE INDEX IF NOT EXISTS idx_date_proposals_scheduled_end ON date_proposals (scheduled_end);
 CREATE INDEX IF NOT EXISTS idx_date_proposals_status_scheduled_end ON date_proposals (status, scheduled_end);
@@ -63,7 +63,7 @@ CREATE INDEX IF NOT EXISTS idx_post_date_feedback_created_at ON post_date_feedba
 CREATE INDEX IF NOT EXISTS idx_messages_created_at ON messages (created_at);
 
 -- =========================================================================
--- stats_platform_daily — one row per calendar day (UTC), admin stats page.
+-- stats_platform_daily, one row per calendar day (UTC), admin stats page.
 -- Every column is a COUNT (or cents sum) of events whose own timestamp
 -- fell on that day. Rows in the trailing rollup window are fully
 -- overwritten (UPSERT) on every job run; older rows are frozen (never
@@ -102,10 +102,10 @@ CREATE TABLE stats_platform_daily (
 );
 
 -- =========================================================================
--- stats_cohort_retention — one row per registration-day cohort. Retention
+-- stats_cohort_retention, one row per registration-day cohort. Retention
 -- is measured against `users.last_active_at` (the only activity signal
 -- available at the point this was built without adding a new activity-log
--- table to a file outside this build's ownership boundary) — an honest
+-- table to a file outside this build's ownership boundary), an honest
 -- proxy ("was this user still active at least N days into their tenure"),
 -- documented as such rather than presented as a precise daily-active
 -- measurement. See the job file for the exact query.
@@ -120,7 +120,7 @@ CREATE TABLE stats_cohort_retention (
 );
 
 -- =========================================================================
--- stats_platform_gauges — small key/value table for running metrics that
+-- stats_platform_gauges, small key/value table for running metrics that
 -- are not naturally day-bucketed sums (e.g. repeat-date rate, which needs
 -- a per-user distinct-count across a window, not a per-day count).
 -- =========================================================================
@@ -131,7 +131,7 @@ CREATE TABLE stats_platform_gauges (
 );
 
 -- =========================================================================
--- stats_aggregation_runs — freshness/observability log for the rollup job.
+-- stats_aggregation_runs, freshness/observability log for the rollup job.
 -- The admin stats page surfaces the most recent row so "as of" staleness
 -- is always honestly visible rather than implied to be live.
 -- =========================================================================
@@ -147,12 +147,12 @@ CREATE TABLE stats_aggregation_runs (
 CREATE INDEX idx_stats_aggregation_runs_run_at ON stats_aggregation_runs (run_at DESC);
 
 -- =========================================================================
--- stats_user_cache — cache-aside store for the more expensive parts of the
+-- stats_user_cache, cache-aside store for the more expensive parts of the
 -- USER stats page (currently: per-filter "what would widening this cost
 -- me" pool estimates, which require several bounded-but-nontrivial
 -- discovery-pool evaluations). Computed lazily on first request per user,
 -- reused until stale. Never holds anything about a SECOND identifiable
--- user — every cached payload is scoped to (and only ever read back for)
+-- user, every cached payload is scoped to (and only ever read back for)
 -- the one user_id it belongs to.
 -- =========================================================================
 CREATE TABLE stats_user_cache (

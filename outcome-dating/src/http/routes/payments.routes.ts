@@ -2,19 +2,19 @@
  * §24.10 Payments routes: user-facing payment methods, and the processor
  * webhook (§24.10, §25.9).
  *
- * WEBHOOK SIGNATURE VERIFICATION (spec §24.10, C-24.5 — "validates the
+ * WEBHOOK SIGNATURE VERIFICATION (spec §24.10, C-24.5, "validates the
  * processor's webhook signature before trusting the payload"): the payload
  * must carry an `X-Webhook-Signature` header equal to
  * `hex(hmac-sha256(secret, JSON.stringify(body)))`. `secret` is
  * `STRIPE_WEBHOOK_SECRET` when `PAYMENT_PROCESSOR=stripe` (the real
  * production secret); for the MVP `fake` processor there is no real
- * processor-issued secret to check against, so — mirroring
+ * processor-issued secret to check against, so, mirroring
  * `voucher.service.ts`'s own documented choice to reuse `AUTH_TOKEN_SECRET`
  * rather than invent a new env var outside this agent's ownership of
- * `src/config/env.ts` — the same secret is reused here for the dev/test
+ * `src/config/env.ts`, the same secret is reused here for the dev/test
  * path. Either way, a request with a missing or incorrect signature is
  * rejected with 401 BEFORE `payment.handleProcessorWebhook` ever sees the
- * body — the handler is never the only path that can move money on an
+ * body, the handler is never the only path that can move money on an
  * unverified request.
  */
 import type { FastifyInstance } from 'fastify';
@@ -73,8 +73,8 @@ export function registerPaymentRoutes(app: FastifyInstance, deps: AppDeps): void
     reply.status(204).send();
   });
 
-  // Public (no bearer token — the processor calls this, not a logged-in
-  // user) but signature-gated. §25.9: idempotent — `handleProcessorWebhook`
+  // Public (no bearer token, the processor calls this, not a logged-in
+  // user) but signature-gated. §25.9: idempotent, `handleProcessorWebhook`
   // itself no-ops on a replayed event (dup ledger-row check).
   app.post('/webhooks/payments', async (req, reply) => {
     const signature = req.headers['x-webhook-signature'];

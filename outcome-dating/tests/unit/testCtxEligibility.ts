@@ -1,13 +1,13 @@
 /**
  * Shared test setup for this build's mutual-eligibility-enforcement unit
  * tests (`eligibility.test.ts`, `autoDecline.test.ts`). Not part of
- * INTERFACES.md's frozen list — a local helper, same pattern as
+ * INTERFACES.md's frozen list, a local helper, same pattern as
  * `testCtxAgentC.ts`/`testCtx.ts` (one per agent/build), so these two
  * files don't duplicate DB bootstrap.
  *
  * Uses dedicated `odate_elig_<suite>` databases (per this build's task
- * brief — never touches `outcome_dating`/`outcome_dating_test`/other
- * agents' `odate_*` databases) — one database per test FILE (`suite`
+ * brief, never touches `outcome_dating`/`outcome_dating_test`/other
+ * agents' `odate_*` databases), one database per test FILE (`suite`
  * unique per file) since Node's test runner runs separate `*.test.ts`
  * files concurrently in separate processes by default.
  */
@@ -26,7 +26,7 @@ import type { TrustLevel } from '../../src/domain/types.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const DB_PREFIX = 'odate_elig';
-/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item). */
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item). */
 const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
@@ -111,7 +111,7 @@ export interface MakeUserOpts {
 /**
  * Inserts a `users` + `profiles` row (both are needed here, unlike
  * `testCtxAgentC.ts`'s `insertUser`, because filter evaluation reads
- * `profiles` — see `filter.service.ts`'s "CANDIDATE ATTRIBUTE SOURCING"
+ * `profiles`, see `filter.service.ts`'s "CANDIDATE ATTRIBUTE SOURCING"
  * note) and returns the new user's id.
  */
 export async function makeUser(pool: pg.Pool, opts: MakeUserOpts = {}): Promise<string> {
@@ -138,7 +138,7 @@ export async function makeUser(pool: pg.Pool, opts: MakeUserOpts = {}): Promise<
       opts.relationshipIntention ?? 'long_term',
     ],
   );
-  // An approved photo — every user in these fixtures needs one to be
+  // An approved photo, every user in these fixtures needs one to be
   // visible in discovery at all (§10.2 rule 4), so the Layer-1
   // verification test's discovery calls behave realistically.
   await pool.query(
@@ -149,7 +149,7 @@ export async function makeUser(pool: pg.Pool, opts: MakeUserOpts = {}): Promise<
   return userId;
 }
 
-/** Sets/replaces one enabled hard filter row for `userId` directly (bypassing `filter.service.ts#updateMyFilters`, which is another agent's file this build only calls, never edits — but a raw insert is equally valid per `hard_filters`' schema and lets tests set up fixtures without going through the full Zod-validated service call). `excludeIfUnset` defaults to `true` (fail-closed), matching a deal-breaker-derived filter row per this build's task brief. */
+/** Sets/replaces one enabled hard filter row for `userId` directly (bypassing `filter.service.ts#updateMyFilters`, which is another agent's file this build only calls, never edits, but a raw insert is equally valid per `hard_filters`' schema and lets tests set up fixtures without going through the full Zod-validated service call). `excludeIfUnset` defaults to `true` (fail-closed), matching a deal-breaker-derived filter row per this build's task brief. */
 export async function setHardFilter(
   pool: pg.Pool,
   userId: string,
@@ -171,7 +171,7 @@ export async function setHardFilter(
 /**
  * Inserts a `has_children`/`wants_children`/etc self-answer for `userId`
  * into the ONE typed question bank (`question_bank`/`user_question_answers`,
- * db/migrations/008_questions.sql) — creates the backing `question_bank`
+ * db/migrations/008_questions.sql), creates the backing `question_bank`
  * row too if it doesn't exist yet (test DBs run migrations only, no seed
  * data). `selfValue` is a 1-5 integer on a `scale`-type question, mirroring
  * the OLD bank's 1-5 `answers.self_value` scale exactly (spec §8.1) so
@@ -180,14 +180,14 @@ export async function setHardFilter(
  * "yes"/true by convention.
  *
  * `preferenceValue`/`importance` are filled with a placeholder (the same
- * value as `selfValue`, `importance: 'slight'`) — every eligibility/
+ * value as `selfValue`, `importance: 'slight'`), every eligibility/
  * auto-decline test that calls this only ever reads the answer back via
  * `filter.service.ts`'s `qb:`-prefixed SELF-value resolution (never
  * preference/importance/compatibility scoring), so a placeholder here is
  * inert, not a fabricated user statement standing in for a real one.
  *
  * A caller resolves this answer through `filter.service.ts` via the
- * `qb:<slug>` filter-key form (e.g. `qb:has_children`) — see that file's
+ * `qb:<slug>` filter-key form (e.g. `qb:has_children`), see that file's
  * CANDIDATE ATTRIBUTE SOURCING note; `slug` itself (this function's
  * parameter) stays bare.
  */
