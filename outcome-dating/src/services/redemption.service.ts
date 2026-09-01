@@ -133,10 +133,10 @@ async function runRedemption(ctx: Ctx, resolved: { voucherId: string | null; cod
     }
 
     const { rows: redemptionRows } = await db.query<VenueRedemptionRow>(
-      `INSERT INTO venue_redemptions (voucher_id, venue_id, venue_staff_id, method)
-       VALUES ($1, $2, $3, $4)
+      `INSERT INTO venue_redemptions (voucher_id, venue_id, venue_staff_id, method, created_at)
+       VALUES ($1, $2, $3, $4, $5)
        RETURNING *`,
-      [voucherRow.id, voucherRow.venue_id, venueStaffId, resolved.method],
+      [voucherRow.id, voucherRow.venue_id, venueStaffId, resolved.method, ctx.clock.now()],
     );
     const redemption = redemptionRows[0]!;
 

@@ -534,7 +534,7 @@ test('§15.4: only one user confirming, after the confirmation window elapses, y
   const proposerCtx = makeCtx(db, userActor(flow.proposerId), { payments: flow.processor });
   await dateProposalService.confirmAttendance(proposerCtx, flow.proposalId);
 
-  db.clock.advanceHours(73); // past the default 72h no_scan_confirmation_hours window
+  db.clock.advanceHours(75); // comfortably past the default 72h no_scan_confirmation_hours window (measured from scheduledEnd, itself 2h after this flow's already-3h-advanced "now")
   const result = await dateProposalService.confirmAttendance(proposerCtx, flow.proposalId);
   assert.equal(result.dateProposal.status, 'disputed');
 });
