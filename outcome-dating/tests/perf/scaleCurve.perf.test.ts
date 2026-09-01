@@ -35,6 +35,7 @@ import assert from 'node:assert/strict';
 import pg from 'pg';
 import { runMigrations } from '../../src/db/migrate.js';
 import { closePool, getPool } from '../../src/db/pool.js';
+import { _resetEnvCacheForTests } from '../../src/config/env.js';
 import type { DbClient } from '../../src/db/pool.js';
 import { ConfigService } from '../../src/config/config.service.js';
 import { FlagsService } from '../../src/config/flags.service.js';
@@ -124,6 +125,7 @@ for (const scale of SCALES) {
       await adminPool.query(`DROP DATABASE IF EXISTS ${dbName}`);
       await adminPool.query(`CREATE DATABASE ${dbName}`);
       process.env.DATABASE_URL = withDbName(BASE_URL, dbName);
+      _resetEnvCacheForTests();
       await runMigrations();
       const pool = getPool();
 
@@ -165,6 +167,7 @@ for (const scale of SCALES) {
 
       await closePool();
       process.env.DATABASE_URL = BASE_URL;
+      _resetEnvCacheForTests();
       await adminPool.query(`DROP DATABASE IF EXISTS ${dbName}`);
 
       assert.ok(true, 'scale point recorded — flatness is asserted once, after every scale has run');
