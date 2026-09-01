@@ -147,7 +147,10 @@ test('preferences suppress a channel, and the gate lives in delivery, not at enq
   const email = new FakeEmailSender();
   const result = await runNotificationDeliveryWorker(sysCtx, { push, email });
 
-  assert.equal(result.droppedPreference, 1);
+  // Both the push row (explicitly turned off above) and the email row
+  // (match's default is email:false regardless) are dropped here — the
+  // point under test is that push specifically was never attempted.
+  assert.equal(result.droppedPreference, 2);
   assert.equal(push.sent.length, 0, 'push must not be attempted once the user has turned it off for this category');
 
   const { rows } = await pool.query<{ status: string }>(
@@ -381,7 +384,11 @@ test('a push-sender outage does not fail or roll back the domain transaction tha
   const email = new FakeEmailSender();
 
   const result = await runNotificationDeliveryWorker(sysCtx, { push: outage, email });
-  assert.equal(result.processed, 1, 'the worker itself must not throw or abort when the sender throws');
+  // Two rows are due (push + email, both from the same enqueue call); the
+  // point under test is that the THROWING push sender doesn't abort
+  // processing of either row — the email row (dropped_preference, match's
+  // default) still resolves normally in the same batch.
+  assert.equal(result.processed, 2, 'the worker itself must not throw or abort when the sender throws');
   assert.equal(outage.calls, 1);
 
   const { rows: outboxRows } = await pool.query<{ status: string; attempt_count: number }>(
