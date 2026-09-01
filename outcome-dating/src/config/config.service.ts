@@ -286,6 +286,85 @@ export const ConfigKeyRegistry = {
     description: 'Hours after a date proposal enters `disputed` (itself scheduled_end + no_scan_confirmation_hours) before automated resolution runs: an implicit no-show report is filed against the non-confirming party via report.service, feeding trust recalculation (spec §15.4 "automated handling... according to policy" — Open Question OQ-3\'s resolution).',
     specSection: '§15.4, §18.5',
   }),
+
+  // ---- Risk-review remediation (docs/risk-review.md SAF-1/SAF-6/SAF-2) additions ----
+  'moderation.minor_suspected_min_corroborating_reporters': key({
+    schema: z.number().int().min(1),
+    default: 2,
+    scope: 'live',
+    description: 'Minimum number of DISTINCT, non-clustered, credible reporters who must each independently file a minor_suspected report against the same target before automated SUSPENSION applies. Below this, a fast interim protective action (moderation.minor_suspected_interim_action) applies instead, but the account is never terminated on one uncorroborated report.',
+    specSection: 'SAF-1',
+  }),
+  'moderation.minor_suspected_suspension_score': key({
+    schema: z.number().min(0),
+    default: 120,
+    scope: 'live',
+    description: 'Combined credibility-weighted score (see report.service#scoreReport, summed across corroborating minor_suspected reports from credible reporters only) required, together with the corroborating-reporter-count gate above, before automated suspension applies.',
+    specSection: 'SAF-1',
+  }),
+  'moderation.minor_suspected_interim_action': key({
+    schema: z.enum(['restriction', 'shadowban']),
+    default: 'restriction' as const,
+    scope: 'live',
+    description: 'Fast, reversible protective action applied immediately on ANY minor_suspected report from a credible reporter, pending corroboration/automated verification — preserves the spec\'s "act immediately" intent without an irreversible-feeling suspension on one unverified signal.',
+    specSection: 'SAF-1',
+  }),
+  'moderation.minor_suspected_reporter_min_account_age_hours': key({
+    schema: z.number().min(0),
+    default: 24,
+    scope: 'live',
+    description: 'A reporter\'s account must be at least this old (hours) for their minor_suspected report to count as "credible" — excludes a brand-new, just-created account from single-handedly triggering the fast interim action or counting toward suspension corroboration.',
+    specSection: 'SAF-1',
+  }),
+  'moderation.minor_suspected_reporter_credibility_trust_floor': key({
+    schema: trustLevel,
+    default: 'standard' as const,
+    scope: 'live',
+    description: 'Minimum trust_level a reporter must hold for their minor_suspected report to count as "credible" (see moderation.minor_suspected_reporter_min_account_age_hours\'s sibling gates).',
+    specSection: 'SAF-1',
+  }),
+  'moderation.minor_suspected_reporter_max_prior_unfounded': key({
+    schema: z.number().int().min(0),
+    default: 0,
+    scope: 'live',
+    description: 'A reporter with more than this many of their own past minor_suspected reports marked `outcome = \'unfounded\'` (see report.service#recordReportOutcome) is treated as "previously abusive" and excluded from credibility — their reports still exist and still feed the general moderation score, they just cannot single-handedly trigger the fast interim action or count toward suspension corroboration.',
+    specSection: 'SAF-1',
+  }),
+  'moderation.false_minor_suspected_report_trust_penalty': key({
+    schema: z.number().max(0),
+    default: -30,
+    scope: 'live',
+    description: 'Trust-score delta applied to a REPORTER when one of their minor_suspected reports is later marked `outcome = \'unfounded\'` (report.service#recordReportOutcome) — the "false reports carry consequences for the reporter" half of the SAF-1 fix.',
+    specSection: 'SAF-1',
+  }),
+  'moderation.brigade_cluster_score_threshold': key({
+    schema: z.number().min(0),
+    default: 3,
+    scope: 'live',
+    description: 'Combined weighted-signal score (shared device fingerprint, shared server-observed IP, account-creation-time proximity, report-timing proximity, shared behavioral history with the target, account-graph proximity — see report.service#findClusteredPriorReporters) at/above which two reporters are treated as the same cluster for anti-brigading purposes. Deliberately requires MULTIPLE weak signals, not one — a spoofable client-supplied fingerprint alone (weight 1) can never reach this threshold by itself.',
+    specSection: 'SAF-6',
+  }),
+  'moderation.brigade_account_creation_window_minutes': key({
+    schema: z.number().min(0),
+    default: 10,
+    scope: 'live',
+    description: 'Two reporter accounts created within this many minutes of each other contribute the "account creation proximity" signal toward the anti-brigading cluster score (spec §19.2 "suspicious device/IP signals", extended to creation-pattern per the SAF-6 fix).',
+    specSection: 'SAF-6',
+  }),
+  'moderation.brigade_report_timing_window_minutes': key({
+    schema: z.number().min(0),
+    default: 60,
+    scope: 'live',
+    description: 'Two reports against the same target filed within this many minutes of each other contribute the "report timing correlation" signal toward the anti-brigading cluster score.',
+    specSection: 'SAF-6',
+  }),
+  'privacy.distance_bucket_km': key({
+    schema: z.number().positive(),
+    default: 8,
+    scope: 'live',
+    description: 'Default coarse bucket width (km) for the single shared approximate-distance function (domain/units/distance.ts#approximateDistanceBetween), used by every surface that shows a user their distance to another. A profile\'s own distance_precision_floor_km (if set) can only widen this further for that profile, never narrow it.',
+    specSection: 'SAF-2',
+  }),
 } as const;
 
 export type ConfigKey = keyof typeof ConfigKeyRegistry;

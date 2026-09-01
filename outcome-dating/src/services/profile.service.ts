@@ -6,6 +6,7 @@ import type { Profile, TrustLevel } from '../domain/types.js';
 import * as discovery from './discovery.service.js';
 import { BODY_TYPES, type BodyType } from '../domain/units/bodyType.js';
 import { resolveDefaultUnitPreference, unitPreferenceSchema, type UnitPreference } from '../domain/units/preference.js';
+import { approximateDistanceBetween } from '../domain/units/distance.js';
 
 /**
  * profile.service — the user-editable profile (§7.1) and the public view
@@ -73,6 +74,17 @@ export interface UpdateProfileInput {
   /** Presentation-only — see this file's module doc "PHYSICAL ATTRIBUTES + UNITS". Never affects a stored measure. */
   unitPreference?: UnitPreference;
   /**
+   * SAF-2 fix: an optional per-user floor on how coarse the distance
+   * OTHER users see to this profile must be. `null`/omitted uses the
+   * platform default (`domain/units/distance.ts#DEFAULT_DISTANCE_BUCKET_KM`).
+   * Setting e.g. `25` never lets `approximateDistanceBetween` report this
+   * user's distance any more precisely than a 25km bucket, regardless of
+   * the platform default — "a per-user precision floor for anyone who
+   * wants it". Only ever widens (never narrows) the effective bucket —
+   * see `buildPublicProfileView`/`discovery.service.ts#loadCandidatePool`.
+   */
+  distancePrecisionFloorKm?: number | null;
+  /**
    * Required to be `true` when the patch touches a "critical" field
    * (currently: gender, seeking, relationshipIntention, age — the fields
    * that most directly change who the user matches with) on an *existing*
@@ -127,6 +139,8 @@ export interface ProfileWithAttributes extends Profile {
   weightVisible: boolean;
   bodyType: BodyType | null;
   unitPreference: UnitPreference;
+  /** See `UpdateProfileInput.distancePrecisionFloorKm`. `null` = use the platform default bucket. */
+  distancePrecisionFloorKm: number | null;
 }
 
 /** §30.8 static warning copy — never generated text. Mirrors the spec's own example ("This answer may significantly change your matches.") for the profile-field-change case. */
@@ -157,6 +171,10 @@ const UpdateProfileSchema = z.object({
   weightVisible: z.boolean().optional(),
   bodyType: z.enum(BODY_TYPES).optional(),
   unitPreference: unitPreferenceSchema.optional(),
+  // 1km-500km: below 1 is meaningless (finer than the platform default
+  // ever goes) and above 500 is not "your own city", it's "hide it
+  // entirely" — that's what leaving latitude/longitude unset already does.
+  distancePrecisionFloorKm: z.number().int().min(1).max(500).nullable().optional(),
   confirmCriticalChange: z.boolean().optional(),
 });
 
@@ -183,6 +201,7 @@ interface ProfileRow {
   weight_visible: boolean;
   body_type: string | null;
   unit_preference: string;
+  distance_precision_floor_km: number | null;
 }
 
 function mapProfile(row: ProfileRow): ProfileWithAttributes {
@@ -205,11 +224,12 @@ function mapProfile(row: ProfileRow): ProfileWithAttributes {
     weightVisible: row.weight_visible,
     bodyType: row.body_type as BodyType | null,
     unitPreference: row.unit_preference as UnitPreference,
+    distancePrecisionFloorKm: row.distance_precision_floor_km,
   };
 }
 
 const PROFILE_ROW_COLUMNS =
-  'user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at, height_cm, weight_g, weight_visible, body_type, unit_preference';
+  'user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at, height_cm, weight_g, weight_visible, body_type, unit_preference, distance_precision_floor_km';
 
 async function fetchProfileRow(ctx: Ctx, userId: string): Promise<ProfileRow | undefined> {
   const { rows } = await ctx.db.query<ProfileRow>(
@@ -283,6 +303,8 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
     weightG: parsed.weightG ?? existing?.weight_g ?? null,
     weightVisible: parsed.weightVisible ?? existing?.weight_visible ?? true,
     bodyType: parsed.bodyType ?? existing?.body_type ?? null,
+    distancePrecisionFloorKm:
+      parsed.distancePrecisionFloorKm !== undefined ? parsed.distancePrecisionFloorKm : (existing?.distance_precision_floor_km ?? null),
     // No country/locale field exists on this table to infer from (see
     // src/domain/units/preference.ts) — resolveDefaultUnitPreference(null)
     // always yields the documented static default (metric) today.
@@ -292,8 +314,8 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
   const now = ctx.clock.now();
 
   const { rows } = await ctx.db.query<ProfileRow>(
-    `INSERT INTO profiles (user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at, height_cm, weight_g, weight_visible, body_type, unit_preference)
-     VALUES ($1, $2, $3, $4, $5, $6, true, $7, $8, $9, $10, 0, $11, $12, $13, $14, $15, $16)
+    `INSERT INTO profiles (user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at, height_cm, weight_g, weight_visible, body_type, unit_preference, distance_precision_floor_km)
+     VALUES ($1, $2, $3, $4, $5, $6, true, $7, $8, $9, $10, 0, $11, $12, $13, $14, $15, $16, $17)
      ON CONFLICT (user_id) DO UPDATE SET
        display_name = EXCLUDED.display_name,
        bio = EXCLUDED.bio,
@@ -309,7 +331,8 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
        weight_g = EXCLUDED.weight_g,
        weight_visible = EXCLUDED.weight_visible,
        body_type = EXCLUDED.body_type,
-       unit_preference = EXCLUDED.unit_preference
+       unit_preference = EXCLUDED.unit_preference,
+       distance_precision_floor_km = EXCLUDED.distance_precision_floor_km
      RETURNING ${PROFILE_ROW_COLUMNS}`,
     [
       userId,
@@ -328,6 +351,7 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
       merged.weightVisible,
       merged.bodyType,
       merged.unitPreference,
+      merged.distancePrecisionFloorKm,
     ],
   );
 
@@ -341,27 +365,25 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
 // getPublicProfile
 // =====================================================================
 
-const EARTH_RADIUS_KM = 6371;
-/** Round to the nearest 5km bucket — an "approximate distance", never exact (§7.1, §28.5). */
-const DISTANCE_BUCKET_KM = 5;
-
-function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
-  const toRad = (deg: number) => (deg * Math.PI) / 180;
-  const dLat = toRad(lat2 - lat1);
-  const dLon = toRad(lon2 - lon1);
-  const a =
-    Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return EARTH_RADIUS_KM * c;
-}
-
-function approximateDistanceKm(
-  a: { latitude: number | null; longitude: number | null },
-  b: { latitude: number | null; longitude: number | null },
-): number | null {
-  if (a.latitude == null || a.longitude == null || b.latitude == null || b.longitude == null) return null;
-  const exact = haversineKm(a.latitude, a.longitude, b.latitude, b.longitude);
-  return Math.round(exact / DISTANCE_BUCKET_KM) * DISTANCE_BUCKET_KM;
+/**
+ * SAF-2 fix: distance is computed by exactly one function
+ * (`domain/units/distance.ts#approximateDistanceBetween`), shared with
+ * `discovery.service.ts` — this file no longer has its own bucketing
+ * implementation. `bucketKm` is the config-driven platform default
+ * (`privacy.distance_bucket_km`) widened to at least the TARGET's own
+ * opted-in precision floor, never the viewer's (a viewer cannot make
+ * someone else's distance more precise by asking for one).
+ */
+async function distanceToTarget(
+  ctx: Ctx,
+  viewer: { latitude: number | null; longitude: number | null },
+  viewerId: string,
+  target: { latitude: number | null; longitude: number | null; distance_precision_floor_km?: number | null },
+  targetId: string,
+): Promise<number | null> {
+  const platformDefaultKm = await ctx.config.get('privacy.distance_bucket_km');
+  const bucketKm = Math.max(platformDefaultKm, target.distance_precision_floor_km ?? 0);
+  return approximateDistanceBetween({ id: viewerId, ...viewer }, { id: targetId, ...target }, { bucketKm });
 }
 
 /**
@@ -432,11 +454,19 @@ export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetU
     [targetUserId, viewerId],
   );
 
+  const approximateDistanceKm = await distanceToTarget(
+    ctx,
+    viewerProfile ?? { latitude: null, longitude: null },
+    viewerId,
+    targetProfile,
+    targetUserId,
+  );
+
   const view: PublicProfileView = {
     userId: targetUserId,
     displayName: targetProfile.display_name,
     age: targetProfile.age,
-    approximateDistanceKm: approximateDistanceKm(viewerProfile ?? { latitude: null, longitude: null }, targetProfile),
+    approximateDistanceKm,
     bio: targetProfile.bio,
     photoUrls: photoRows.map((r) => r.image_url),
     trustLevel: userRow.trust_level,
@@ -519,16 +549,87 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
 // =====================================================================
 
 /**
- * §29 account deletion: removes the profile from discovery (status flips
- * to 'deleted', which every visibility check in this codebase gates on),
- * blocks new messages (same status flip — `message.service`/
- * `conversation.service` are expected to check `users.status`, flagged in
- * the build report), retains financial rows (this function never touches
- * `payment_holds`/`payment_ledger` — not this module's tables, and nothing
- * here deletes them), and anonymizes the analytics surface this module
- * owns (profile display fields wiped, photos removed so no image survives
- * in discovery caches).
+ * §29 account deletion / PRIV-1 FIX.
+ *
+ * Before this fix, deletion only ever touched `users` (status flip),
+ * `profiles` (display fields wiped), `user_photos` (deleted), and
+ * `refresh_sessions` (revoked) — `answers` (including every
+ * `sensitive:true` question — religion, drug use, sexuality-adjacent
+ * lifestyle), `user_tags` (including `private_reciprocal` tags that can
+ * reveal stigmatized interests), `hard_filters`, and full `messages`
+ * content all survived indefinitely, keyed to a `user_id` that still
+ * existed in every one of those tables. A "deleted" account's sensitive
+ * data and private chat content persisted forever.
+ *
+ * WHAT THIS FUNCTION NOW DOES, table by table:
+ *   - users:              status -> 'deleted' (unchanged from before).
+ *   - profiles:            display fields wiped, coordinates/physical
+ *                           attributes/precision floor nulled (unchanged
+ *                           from before, extended to the new
+ *                           `distance_precision_floor_km` column).
+ *   - user_photos:          hard-deleted (unchanged from before).
+ *   - refresh_sessions:     revoked (unchanged from before).
+ *   - answers:              HARD-DELETED, every row, including every
+ *                           `sensitive:true` question's self/partner
+ *                           value. This is the single biggest gap PRIV-1
+ *                           named — it is erased, not anonymised, because
+ *                           there is no legitimate reason to retain it in
+ *                           any form once the account is gone.
+ *   - user_tags:            HARD-DELETED, every row (public AND
+ *                           private_reciprocal — both can reveal a
+ *                           stigmatized interest, per PRIV-3).
+ *   - hard_filters:         HARD-DELETED, every row.
+ *   - messages:              the DELETED USER'S OWN message bodies are
+ *                           overwritten with a static placeholder
+ *                           (`DELETED_MESSAGE_PLACEHOLDER`); the
+ *                           `conversations`/`messages` ROWS themselves,
+ *                           and the OTHER participant's own messages, are
+ *                           left completely untouched.
+ *
+ * MESSAGE-RETENTION POLICY (the "documented policy" the brief asks for):
+ * ERASE CONTENT, KEEP ATTRIBUTION — chosen over the alternative
+ * (deleting/hiding the row and leaving a synthetic "deleted user" byline)
+ * because deleting `messages` rows or archiving `conversations` out from
+ * under the other participant is exactly the "must not corrupt the other
+ * party's conversation" failure mode the brief warns against: the other
+ * user's own conversation thread, their own messages, and the
+ * conversation's timeline metadata (created_at/first_date_completed_at/
+ * etc.) all stay exactly as they were. Only the erased user's own words
+ * are gone. `profiles.display_name` already reads 'Deleted user' after
+ * this function runs, so the byline naturally attributes those now-empty
+ * messages to a deleted account without this file needing a second
+ * "who sent this" concept.
+ *
+ * DELIBERATELY RETAINED (not this function's job, and not safe to erase):
+ *   - payment_holds / payment_ledger: financial/ledger records — §14.8
+ *     ledger is explicitly immutable, and payment records are the kind of
+ *     "genuinely must be retained" data the brief calls out by name (tax/
+ *     dispute/audit obligations survive account deletion in most
+ *     jurisdictions). Never touched by this function, same as before.
+ *   - reports / moderation_actions / trust_events: the platform's safety
+ *     audit trail. Erasing a target's or reporter's history on deletion
+ *     would let a suspended/banned user launder their record by
+ *     self-deleting and re-registering — directly undermining SAF-1/SAF-5
+ *     ban-evasion resistance. These rows reference a `user_id` whose
+ *     profile is already anonymised by this function, so no display name/
+ *     bio/photo/answer survives through them.
+ *   - appeals: same reasoning as moderation_actions — part of the
+ *     automated-moderation audit trail, not personal profile content.
+ *   - discovery_events / photo_experiments / compatibility_scores: out of
+ *     this fix's scope (PRIV-1, as filed, names `answers`, `messages`,
+ *     `user_tags`, `hard_filters` specifically) and owned by services
+ *     this build does not touch; flagged for a follow-up retention-window
+ *     pass (see PRIV-5) rather than folded in here.
+ *
+ * IDEMPOTENT / SAFE TO RE-RUN: every statement below is naturally
+ * idempotent (UPDATE ... to a fixed value, DELETE FROM ... WHERE user_id
+ * = $1 on rows that may already be gone, an UPDATE guarded by `<> $2` so
+ * re-running never re-writes what it already wrote) — calling this twice
+ * for the same user produces the exact same end state as calling it once,
+ * with no error either time. See `tests/unit/deletion.test.ts`.
  */
+export const DELETED_MESSAGE_PLACEHOLDER = 'This message is no longer available.';
+
 export async function deleteMyAccount(ctx: Ctx): Promise<void> {
   const { userId } = requireUserActor(ctx);
   const now = ctx.clock.now();
@@ -536,7 +637,11 @@ export async function deleteMyAccount(ctx: Ctx): Promise<void> {
   await ctx.db.query(`UPDATE users SET status = 'deleted', last_active_at = $2 WHERE id = $1`, [userId, now]);
 
   await ctx.db.query(
-    `UPDATE profiles SET display_name = 'Deleted user', bio = '', city = NULL, latitude = NULL, longitude = NULL, height_cm = NULL, weight_g = NULL, body_type = NULL, updated_at = $2 WHERE user_id = $1`,
+    `UPDATE profiles
+        SET display_name = 'Deleted user', bio = '', city = NULL, latitude = NULL, longitude = NULL,
+            height_cm = NULL, weight_g = NULL, body_type = NULL, distance_precision_floor_km = NULL,
+            updated_at = $2
+      WHERE user_id = $1`,
     [userId, now],
   );
 
@@ -547,6 +652,29 @@ export async function deleteMyAccount(ctx: Ctx): Promise<void> {
   await ctx.db.query(`UPDATE refresh_sessions SET revoked_at = $2 WHERE user_id = $1 AND revoked_at IS NULL`, [
     userId,
     now,
+  ]);
+
+  // ---- PRIV-1 fix: the previously-untouched tables ----
+
+  // Sensitive-category compatibility answers (§8.2/§8.5 "sensitive: true"
+  // questions included) — full erasure, not anonymisation: there is no
+  // retention justification for these once the account is gone.
+  await ctx.db.query(`DELETE FROM answers WHERE user_id = $1`, [userId]);
+
+  // Interest tags, including private_reciprocal ones (§8.4) that can
+  // reveal a stigmatized interest to anyone who happens to share it.
+  await ctx.db.query(`DELETE FROM user_tags WHERE user_id = $1`, [userId]);
+
+  // This user's own hard-filter preferences.
+  await ctx.db.query(`DELETE FROM hard_filters WHERE user_id = $1`, [userId]);
+
+  // This user's own message content, in every conversation — see the
+  // "MESSAGE-RETENTION POLICY" note above for why the row/conversation
+  // itself is left in place. `body <> $2` makes the statement a genuine
+  // no-op (not just a same-value rewrite) on a second run.
+  await ctx.db.query(`UPDATE messages SET body = $2, analysis_flags = '[]'::jsonb WHERE sender_id = $1 AND body <> $2`, [
+    userId,
+    DELETED_MESSAGE_PLACEHOLDER,
   ]);
 }
 

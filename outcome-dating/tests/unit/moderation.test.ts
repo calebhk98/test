@@ -98,25 +98,48 @@ test('applyThresholds only escalates: a second call at the same score is a no-op
 
 // =====================================================================
 // §18.3/§18.5 "minor suspected" = maximum severity, immediate protective
-// action, overriding whatever the plain score alone would warrant.
+// action — SAF-1 FIX: a single report no longer instantly suspends
+// anyone; see report.service.ts's "SAF-1 FIX" module doc for the full
+// corroboration model, and tests/unit/safetyFixes.test.ts for the
+// exhaustive both-directions proof this brief requires. These two tests
+// just keep this file's own suite honest about the new contract.
 // =====================================================================
-test('minor_suspected report forces an immediate suspension even though the raw score alone would only warrant restriction', async () => {
+test('minor_suspected: a single report — even from a well-established, trusted, matched reporter — applies the fast interim restriction, never an immediate suspension', async () => {
   const ctx = buildCtx();
-  const reporterId = await insertUser(ctx);
+  const longAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000);
+  const reporterId = await insertUser(ctx, { trustLevel: 'elite', createdAt: longAgo });
   const reportedId = await insertUser(ctx);
-  const reporterCtx = buildCtx({ actor: userActor(reporterId) });
-
-  // No relationship, standard trust, first report: raw score computes to
-  // well below the 80/95 shadowban/suspension thresholds (~60) — see
-  // report.test.ts for the exact figure — proving the override, not the
-  // plain score, is what drives this outcome.
-  const rawScoreOnly = 100 /* category weight */ * 1.0 /* standard trust */ * 0.6 /* no relationship */;
-  assert.ok(rawScoreOnly < 80, 'sanity check: the raw score alone should not reach the shadowban threshold');
+  await insertConversation(ctx, reporterId, reportedId); // established relationship — as credible a lone report as this system can produce
+  const reporterCtx = buildCtx({ actor: userActor(reporterId, 'elite') });
 
   await report.submitReport(reporterCtx, { reportedId, category: 'minor_suspected' });
 
   const page = await moderation.listModerationActions(ctx, reportedId);
-  assert.equal(page.items[0]?.action, 'suspension');
+  assert.equal(page.items[0]?.action, 'restriction', 'one report must never terminate an account, however credible its reporter');
+  assert.equal(page.items[0]?.reason, 'minor_suspected_report_interim_protective_action');
+  // Restriction is real and immediate (reduced visibility), not a no-op:
+  assert.equal(await moderation.isVisibleInDiscovery(ctx, reportedId), true, 'restriction alone does not hide from discovery — only shadowban/suspension do; the protective effect here is the interest/link restriction trust.service enforces');
+});
+
+test('minor_suspected: two independent, non-clustered, credible reporters escalate straight to suspension on the second report', async () => {
+  const ctx = buildCtx();
+  const reportedId = await insertUser(ctx);
+
+  // Deliberately spaced createdAt (well outside the anti-brigading
+  // account-creation-proximity window) and no shared device/IP/
+  // conversation between the two reporters — two GENUINELY independent
+  // people, not a brigade wearing two accounts.
+  const reporter1 = await insertUser(ctx, { trustLevel: 'trusted', createdAt: new Date(Date.now() - 90 * 24 * 60 * 60 * 1000) });
+  const reporter1Ctx = buildCtx({ actor: userActor(reporter1, 'trusted') });
+  await report.submitReport(reporter1Ctx, { reportedId, category: 'minor_suspected' });
+  assert.equal((await moderation.listModerationActions(ctx, reportedId)).items[0]?.action, 'restriction');
+
+  const reporter2 = await insertUser(ctx, { trustLevel: 'trusted', createdAt: new Date(Date.now() - 60 * 24 * 60 * 60 * 1000) });
+  const reporter2Ctx = buildCtx({ actor: userActor(reporter2, 'trusted') });
+  await report.submitReport(reporter2Ctx, { reportedId, category: 'minor_suspected' });
+
+  const page = await moderation.listModerationActions(ctx, reportedId);
+  assert.equal(page.items[0]?.action, 'suspension', 'a second, independent, credible corroborating report must escalate fast — same call, no waiting');
   assert.equal(page.items[0]?.reason, 'minor_suspected_report_immediate_protective_action');
   assert.equal(await moderation.isVisibleInDiscovery(ctx, reportedId), false);
 });

@@ -160,10 +160,17 @@ export async function insertConversation(ctx: Ctx, userAId: string, userBId: str
   return id;
 }
 
-/** Inserts a `user_auth_events` row carrying a device fingerprint, for anti-brigading tests. */
-export async function insertAuthEvent(ctx: Ctx, userId: string, deviceFingerprint: string): Promise<void> {
+/**
+ * Inserts a `user_auth_events` row carrying a device fingerprint, for
+ * anti-brigading tests. `ipAddress` is an additive optional param (SAF-6
+ * fix — see report.service.ts's multi-signal cluster correlation, which
+ * treats the server-observed IP as a second, independent signal from the
+ * client-supplied fingerprint) — every pre-existing call site that omits
+ * it is unaffected.
+ */
+export async function insertAuthEvent(ctx: Ctx, userId: string, deviceFingerprint: string, ipAddress?: string): Promise<void> {
   await ctx.db.query(
-    `INSERT INTO user_auth_events (user_id, device_fingerprint, success) VALUES ($1, $2, true)`,
-    [userId, deviceFingerprint],
+    `INSERT INTO user_auth_events (user_id, device_fingerprint, ip_address, success) VALUES ($1, $2, $3, true)`,
+    [userId, deviceFingerprint, ipAddress ?? null],
   );
 }

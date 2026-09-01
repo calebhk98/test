@@ -1,9 +1,10 @@
 import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
-import { ValidationError } from '../lib/errors.js';
+import { ForbiddenError, NotFoundError, ValidationError } from '../lib/errors.js';
 import type { Report, ReportCategory, TrustLevel } from '../domain/types.js';
 import * as moderation from './moderation.service.js';
+import * as trust from './trust.service.js';
 
 /**
  * report.service — structured user reports.
@@ -95,17 +96,54 @@ const RECENCY_MULTIPLIER_FLOOR = 0.3;
 /**
  * ANTI-BRIGADING DISCOUNT (spec §18.5 "duplicate report from same social
  * cluster = reduced weight" — the explicit stated reason for this design,
- * spec §18.5 "Reason: Prevent brigading and false positives"). "Cluster"
- * is approximated via shared device fingerprint: if N other reporters who
- * share a device fingerprint with THIS reporter have already reported the
- * same target, this report's weight is discounted by `1 / (1 + N)` — the
- * first report from a cluster counts fully, the second counts at half
- * weight, the third at a third, and so on. Floored so a large brigade
- * can't drive an individual report's contribution to exactly zero (it can
- * still tip a score given enough volume, just each additional one from
- * the same cluster matters much less).
+ * spec §18.5 "Reason: Prevent brigading and false positives"). If N other
+ * reporters who are in the SAME CLUSTER as this reporter (see
+ * `findClusteredPriorReporters` below) have already reported the same
+ * target, this report's weight is discounted by `1 / (1 + N)` — the first
+ * report from a cluster counts fully, the second counts at half weight,
+ * the third at a third, and so on. Floored so a large brigade can't drive
+ * an individual report's contribution to exactly zero (it can still tip a
+ * score given enough volume, just each additional one from the same
+ * cluster matters much less).
+ *
+ * SAF-6 FIX — what "cluster" means changed. Before this fix, "cluster"
+ * was ONLY "shares a `device_fingerprint` with this reporter" — and
+ * `device_fingerprint` is a client-supplied, never-verified string
+ * (`auth.service.ts`'s own schema marks it `.optional()`, and nothing
+ * derives it server-side). An attacker sends a different fingerprint
+ * string per fake account and the discount never applies — it fails
+ * exactly when it's needed, and (per SAF-1) that failure used to feed
+ * straight into an instant, uncorroborated suspension.
+ *
+ * `findClusteredPriorReporters` now treats the client fingerprint as an
+ * untrusted HINT ONLY — one weak signal among several the client cannot
+ * unilaterally control:
+ *   - shared device fingerprint            (client-supplied — weak alone)
+ *   - shared SERVER-OBSERVED IP address    (`user_auth_events.ip_address`)
+ *   - account-creation-time proximity      (`users.created_at`)
+ *   - report-timing correlation            (both reports' `created_at`)
+ *   - shared behavioral history WITH THE TARGET (both reporters have/had
+ *     a conversation with the person they're both reporting)
+ *   - account-graph proximity              (the two reporters know each
+ *     other directly, OR have both reported some other third party
+ *     before — a repeat joint-reporting pattern)
+ * Each contributes a fixed weight (see the `CLUSTER_SIGNAL_WEIGHT_*`
+ * constants); two reporters are only treated as the same cluster once
+ * their COMBINED signal weight clears `moderation.brigade_cluster_score_
+ * threshold` (config, default 3) — the fingerprint signal alone (weight
+ * 1) can never reach that on its own, so varying it per fake account no
+ * longer evades the discount by itself. Combining several weak signals
+ * this way is deliberately harder to spoof end-to-end than defeating any
+ * one strong-looking signal (the old design's mistake).
  */
 const CLUSTER_DISCOUNT_FLOOR = 0.15;
+
+const CLUSTER_SIGNAL_WEIGHT_FINGERPRINT = 1; // client-supplied — weak, see module doc above
+const CLUSTER_SIGNAL_WEIGHT_IP = 2; // server-observed
+const CLUSTER_SIGNAL_WEIGHT_ACCOUNT_CREATION_PROXIMITY = 2;
+const CLUSTER_SIGNAL_WEIGHT_REPORT_TIMING_PROXIMITY = 1;
+const CLUSTER_SIGNAL_WEIGHT_SHARED_TARGET_HISTORY = 2;
+const CLUSTER_SIGNAL_WEIGHT_ACCOUNT_GRAPH_PROXIMITY = 3;
 
 export interface SubmitReportInput {
   reportedId: string;
@@ -257,22 +295,107 @@ async function hasRelationship(ctx: Ctx, reporterId: string, reportedId: string)
   return Number(rows[0]?.count ?? '0') > 0;
 }
 
-/** Anti-brigading: counts prior reports against `reportedId`, filed before `beforeCreatedAt`, by OTHER reporters who share a device fingerprint with `reporterId` (via `user_auth_events`, spec §19.2/§23.2). */
-async function countSameClusterPriorReports(ctx: Ctx, reporterId: string, reportedId: string, beforeCreatedAt: Date): Promise<number> {
-  const { rows } = await ctx.db.query<{ count: string }>(
-    `SELECT count(DISTINCT r.reporter_id)::text AS count
+export interface ClusteredPriorReporter {
+  reporterId: string;
+  clusterScore: number;
+}
+
+/**
+ * SAF-6 fix: every OTHER reporter who has ALREADY reported `reportedId`
+ * (any category — a coordinated actor spreading reports across several
+ * categories to look less coordinated is still the same cluster) before
+ * `beforeCreatedAt`, paired with a combined weighted-signal "cluster
+ * score" against `reporterId` — see this file's anti-brigading module
+ * doc above for what each signal means. Returns only those whose combined
+ * score clears `moderation.brigade_cluster_score_threshold`; the raw
+ * per-signal breakdown never leaves this function (nothing downstream
+ * needs it, and exposing it would hand a would-be brigade a tuning
+ * oracle).
+ */
+export async function findClusteredPriorReporters(
+  ctx: Ctx,
+  reporterId: string,
+  reportedId: string,
+  beforeCreatedAt: Date,
+): Promise<ClusteredPriorReporter[]> {
+  const [threshold, creationWindowMinutes, timingWindowMinutes] = await Promise.all([
+    ctx.config.get('moderation.brigade_cluster_score_threshold'),
+    ctx.config.get('moderation.brigade_account_creation_window_minutes'),
+    ctx.config.get('moderation.brigade_report_timing_window_minutes'),
+  ]);
+
+  const { rows } = await ctx.db.query<{ reporter_id: string; cluster_score: number }>(
+    `WITH target_reporters AS (
+       SELECT DISTINCT r.reporter_id, r.created_at AS report_created_at
        FROM reports r
-       JOIN user_auth_events uae ON uae.user_id = r.reporter_id AND uae.device_fingerprint IS NOT NULL
-      WHERE r.reported_id = $1
-        AND r.reporter_id <> $2
-        AND r.created_at < $3
-        AND uae.device_fingerprint IN (
-          SELECT device_fingerprint FROM user_auth_events
-           WHERE user_id = $2 AND device_fingerprint IS NOT NULL
-        )`,
-    [reportedId, reporterId, beforeCreatedAt],
+       WHERE r.reported_id = $1 AND r.reporter_id <> $2 AND r.created_at < $3
+     )
+     SELECT
+       tr.reporter_id,
+       (
+         (CASE WHEN EXISTS (
+            SELECT 1 FROM user_auth_events me
+            JOIN user_auth_events other
+              ON other.device_fingerprint = me.device_fingerprint AND other.user_id = tr.reporter_id
+            WHERE me.user_id = $2 AND me.device_fingerprint IS NOT NULL
+          ) THEN $4 ELSE 0 END)
+         +
+         (CASE WHEN EXISTS (
+            SELECT 1 FROM user_auth_events me
+            JOIN user_auth_events other
+              ON other.ip_address = me.ip_address AND other.user_id = tr.reporter_id
+            WHERE me.user_id = $2 AND me.ip_address IS NOT NULL
+          ) THEN $5 ELSE 0 END)
+         +
+         (CASE WHEN EXISTS (
+            SELECT 1 FROM users me, users other
+            WHERE me.id = $2 AND other.id = tr.reporter_id
+              AND abs(EXTRACT(EPOCH FROM (me.created_at - other.created_at))) <= $6
+          ) THEN $7 ELSE 0 END)
+         +
+         (CASE WHEN abs(EXTRACT(EPOCH FROM ($3::timestamptz - tr.report_created_at))) <= $8
+          THEN $9 ELSE 0 END)
+         +
+         (CASE WHEN
+            EXISTS (SELECT 1 FROM conversations c1 WHERE (c1.user_a_id = $2 AND c1.user_b_id = $1) OR (c1.user_a_id = $1 AND c1.user_b_id = $2))
+            AND
+            EXISTS (SELECT 1 FROM conversations c2 WHERE (c2.user_a_id = tr.reporter_id AND c2.user_b_id = $1) OR (c2.user_a_id = $1 AND c2.user_b_id = tr.reporter_id))
+          THEN $10 ELSE 0 END)
+         +
+         (CASE WHEN
+            EXISTS (SELECT 1 FROM conversations c3 WHERE (c3.user_a_id = $2 AND c3.user_b_id = tr.reporter_id) OR (c3.user_a_id = tr.reporter_id AND c3.user_b_id = $2))
+            OR
+            EXISTS (
+              SELECT 1 FROM reports r1 JOIN reports r2 ON r1.reported_id = r2.reported_id
+              WHERE r1.reporter_id = $2 AND r2.reporter_id = tr.reporter_id AND r1.reported_id <> $1
+            )
+          THEN $11 ELSE 0 END)
+       ) AS cluster_score
+     FROM target_reporters tr`,
+    [
+      reportedId,
+      reporterId,
+      beforeCreatedAt,
+      CLUSTER_SIGNAL_WEIGHT_FINGERPRINT,
+      CLUSTER_SIGNAL_WEIGHT_IP,
+      creationWindowMinutes * 60,
+      CLUSTER_SIGNAL_WEIGHT_ACCOUNT_CREATION_PROXIMITY,
+      timingWindowMinutes * 60,
+      CLUSTER_SIGNAL_WEIGHT_REPORT_TIMING_PROXIMITY,
+      CLUSTER_SIGNAL_WEIGHT_SHARED_TARGET_HISTORY,
+      CLUSTER_SIGNAL_WEIGHT_ACCOUNT_GRAPH_PROXIMITY,
+    ],
   );
-  return Number(rows[0]?.count ?? '0');
+
+  return rows
+    .filter((r) => Number(r.cluster_score) >= threshold)
+    .map((r) => ({ reporterId: r.reporter_id, clusterScore: Number(r.cluster_score) }));
+}
+
+/** Anti-brigading: counts prior reports against `reportedId`, filed before `beforeCreatedAt`, by OTHER reporters in the same cluster as `reporterId` — see `findClusteredPriorReporters`. */
+async function countSameClusterPriorReports(ctx: Ctx, reporterId: string, reportedId: string, beforeCreatedAt: Date): Promise<number> {
+  const clustered = await findClusteredPriorReporters(ctx, reporterId, reportedId, beforeCreatedAt);
+  return clustered.length;
 }
 
 /**
@@ -305,4 +428,245 @@ export async function scoreReport(ctx: Ctx, report: Report): Promise<number> {
 
   const score = categoryWeight * trustMult * relationshipMultiplier * previousReportsMultiplier * recencyMultiplier * clusterMultiplier;
   return Math.round(score * 100) / 100;
+}
+
+// =========================================================================
+// SAF-1 FIX — minor_suspected corroboration model.
+//
+// Before this fix, `moderation.service#applyThresholds` suspended an
+// account the instant ANY report with `category = 'minor_suspected'`
+// existed against it — no score threshold, no reporter-credibility check,
+// no corroboration. That preserved the spec's right instinct (§18.3/
+// §18.5: this category is maximum severity, act immediately, don't wait
+// for score accumulation) but implemented it as a one-click weapon: any
+// account, however new or untrustworthy, could suspend anyone else for
+// free with a single report.
+//
+// THE MODEL below keeps the "act immediately, act decisively" intent for
+// a REAL signal while removing the single-report kill switch:
+//
+//   1. CREDIBILITY GATE (`reporterCredibility`). A report only counts
+//      toward the fast path at all if its reporter is currently
+//      "credible": trust_level at/above a configurable floor, account
+//      older than a configurable minimum age, and not "previously
+//      abusive" (more than a configurable number of their own past
+//      minor_suspected reports have been marked `outcome = 'unfounded'`,
+//      see `recordReportOutcome`). A report from a non-credible reporter
+//      still exists, still feeds `computeModerationScore` via the
+//      ordinary automated flag `submitReport` records — it just can't
+//      single-handedly trigger this category's special fast path.
+//
+//   2. IMMEDIATE, BUT REVERSIBLE, PROTECTIVE ACTION. The moment even ONE
+//      credible report exists, `moderation.service#applyThresholds`
+//      applies `moderation.minor_suspected_interim_action` (default:
+//      `restriction` — reduced discovery visibility, fewer outgoing
+//      interests, links disabled, extra verification required, see that
+//      module's own doc) IMMEDIATELY, synchronously, same call. This is
+//      the "preserve fast protective action" half of the fix — nobody
+//      has to wait for corroboration before SOMETHING protective happens.
+//      Critically, `restriction` is not `suspension`: it's the same
+//      action tier the ordinary score ladder already uses for a much
+//      lower-confidence signal, and it's fully reachable through the
+//      existing automated appeal path (`appeal.service.ts`) for anyone
+//      wrongly caught by it.
+//
+//   3. SUSPENSION REQUIRES CORROBORATION. Automated suspension for this
+//      category requires BOTH: (a) at least
+//      `moderation.minor_suspected_min_corroborating_reporters` (default
+//      2) DISTINCT credible reporters who are NOT in the same brigading
+//      cluster as each other (see `findClusteredPriorReporters` — this is
+//      exactly where the SAF-6 fix does its second job: a brigade of
+//      sock-puppets filing the same report from spoofed-fingerprint
+//      accounts gets counted as ONE cluster, not N corroborators), AND
+//      (b) their combined credibility-weighted score (`scoreReport`,
+//      summed) at/above `moderation.minor_suspected_suspension_score`.
+//      A single report — no matter how trusted its reporter — can never
+//      cross the corroborating-reporter-count gate alone, so it can never
+//      terminate an account by itself. Once genuine corroboration
+//      arrives (a second independent, non-clustered credible reporter),
+//      `applyThresholds` escalates from restriction straight to
+//      suspension on that very call — still fast, still decisive, now
+//      actually verified.
+//
+//   4. CONSEQUENCES FOR FALSE REPORTS (`recordReportOutcome`). When a
+//      minor_suspected report is later established as unfounded (the
+//      natural trigger: an appeal against the action it caused is
+//      approved — flagged below for `appeal.service.ts` to wire in, see
+//      that export's own doc), the REPORTER (not the target) takes a
+//      configurable negative trust event, AND that report's `outcome`
+//      permanently lowers their future credibility for this category via
+//      the `priorUnfoundedCount` gate in step 1 — closing the loop so
+//      abusing this category repeatedly gets progressively less effective
+//      instead of staying free.
+//
+// See `tests/unit/safetyFixes.test.ts` for both required proofs: a lone,
+// uncorroborated, low-credibility report does NOT suspend, and a
+// corroborated/high-credibility signal still acts fast and decisively.
+// =========================================================================
+
+const TRUST_LEVEL_RANK: Record<TrustLevel, number> = { limited: 0, standard: 1, trusted: 2, elite: 3 };
+
+export interface ReporterCredibility {
+  trustLevel: TrustLevel;
+  accountAgeHours: number;
+  priorUnfoundedCount: number;
+  /** trust_level >= floor AND account age >= minimum AND priorUnfoundedCount <= cap — see module doc above. */
+  isCredible: boolean;
+}
+
+/** Evaluates one reporter's current credibility for the minor_suspected fast path, as of `atCreatedAt` (the report's own timestamp — never "now", so re-evaluating an old report later doesn't retroactively change what already happened). */
+export async function reporterCredibility(ctx: Ctx, reporterId: string, atCreatedAt: Date): Promise<ReporterCredibility> {
+  const [trustFloor, minAgeHours, maxPriorUnfounded] = await Promise.all([
+    ctx.config.get('moderation.minor_suspected_reporter_credibility_trust_floor'),
+    ctx.config.get('moderation.minor_suspected_reporter_min_account_age_hours'),
+    ctx.config.get('moderation.minor_suspected_reporter_max_prior_unfounded'),
+  ]);
+
+  const { rows } = await ctx.db.query<{ trust_level: TrustLevel; created_at: Date }>(
+    'SELECT trust_level, created_at FROM users WHERE id = $1',
+    [reporterId],
+  );
+  const u = rows[0];
+  const trustLevel = u?.trust_level ?? 'standard';
+  const accountAgeHours = u ? Math.max(0, (atCreatedAt.getTime() - u.created_at.getTime()) / (60 * 60 * 1000)) : 0;
+
+  const { rows: unfoundedRows } = await ctx.db.query<{ count: string }>(
+    `SELECT count(*)::text AS count FROM reports WHERE reporter_id = $1 AND category = 'minor_suspected' AND outcome = 'unfounded'`,
+    [reporterId],
+  );
+  const priorUnfoundedCount = Number(unfoundedRows[0]?.count ?? '0');
+
+  const isCredible =
+    TRUST_LEVEL_RANK[trustLevel] >= TRUST_LEVEL_RANK[trustFloor] &&
+    accountAgeHours >= minAgeHours &&
+    priorUnfoundedCount <= maxPriorUnfounded;
+
+  return { trustLevel, accountAgeHours, priorUnfoundedCount, isCredible };
+}
+
+export interface MinorSuspectedAssessment {
+  /** Any minor_suspected report at all exists against this user, credible or not — purely informational. */
+  hasAnyReport: boolean;
+  /** At least one minor_suspected report comes from a currently-credible reporter — this is what drives the immediate interim protective action. */
+  hasCredibleSignal: boolean;
+  /** Sum of `scoreReport` over minor_suspected reports from CREDIBLE reporters only. */
+  weightedScore: number;
+  /** Count of distinct credible reporters, after collapsing anyone in the same brigading cluster as an already-counted reporter down to one — see `findClusteredPriorReporters`. This is the number that must clear `moderation.minor_suspected_min_corroborating_reporters` before suspension is considered. */
+  distinctCredibleCorroborators: number;
+}
+
+/** The full SAF-1 assessment for one user — see this section's module doc. `moderation.service#applyThresholds` is the only caller in the MVP call graph. */
+export async function assessMinorSuspected(ctx: Ctx, userId: string): Promise<MinorSuspectedAssessment> {
+  const { rows } = await ctx.db.query<{
+    id: string;
+    reporter_id: string;
+    reported_id: string;
+    conversation_id: string | null;
+    message_id: string | null;
+    category: ReportCategory;
+    severity: number;
+    details: string | null;
+    created_at: Date;
+  }>(
+    `SELECT id, reporter_id, reported_id, conversation_id, message_id, category, severity, details, created_at
+       FROM reports WHERE reported_id = $1 AND category = 'minor_suspected' ORDER BY created_at ASC`,
+    [userId],
+  );
+  const reports = rows.map(rowToReport);
+
+  if (reports.length === 0) {
+    return { hasAnyReport: false, hasCredibleSignal: false, weightedScore: 0, distinctCredibleCorroborators: 0 };
+  }
+
+  const credibilityByReporter = new Map<string, ReporterCredibility>();
+  for (const r of reports) {
+    if (!credibilityByReporter.has(r.reporterId)) {
+      credibilityByReporter.set(r.reporterId, await reporterCredibility(ctx, r.reporterId, r.createdAt));
+    }
+  }
+
+  const credibleReports = reports.filter((r) => credibilityByReporter.get(r.reporterId)!.isCredible);
+
+  let weightedScore = 0;
+  for (const r of credibleReports) {
+    weightedScore += await scoreReport(ctx, r);
+  }
+
+  // Greedy clustering, chronological: a credible reporter only earns a
+  // NEW corroborator seat if they are not in the same brigading cluster
+  // as a reporter already counted (see findClusteredPriorReporters —
+  // shared device fingerprint alone is far too weak a signal to satisfy
+  // this on its own after the SAF-6 fix).
+  const representativeReporterIds: string[] = [];
+  for (const r of credibleReports) {
+    const clusteredWithThisReporter = new Set(
+      (await findClusteredPriorReporters(ctx, r.reporterId, userId, r.createdAt)).map((c) => c.reporterId),
+    );
+    const alreadyRepresented = representativeReporterIds.some((id) => clusteredWithThisReporter.has(id));
+    if (!alreadyRepresented) {
+      representativeReporterIds.push(r.reporterId);
+    }
+  }
+
+  return {
+    hasAnyReport: true,
+    hasCredibleSignal: credibleReports.length > 0,
+    weightedScore: Math.round(weightedScore * 100) / 100,
+    distinctCredibleCorroborators: representativeReporterIds.length,
+  };
+}
+
+export type ReportOutcome = 'confirmed' | 'unfounded';
+
+/** trust.service event type for a reporter penalized under `recordReportOutcome` below — not in `trust.service.ts#TRUST_EVENT_TYPES` (that module's "recommended vocabulary" list is owned by a different agent); an unrecognized event type still records and displays fine there under its documented generic fallback label. */
+const FALSE_MINOR_SUSPECTED_REPORT_EVENT_TYPE = 'false_minor_suspected_report';
+
+/**
+ * SAF-1 fix, consequence half: marks a single report's `outcome`. When a
+ * `minor_suspected` report is marked `'unfounded'`, applies
+ * `moderation.false_minor_suspected_report_trust_penalty` (a negative
+ * delta, config-driven) as a trust event against the REPORTER, and —
+ * because `reporterCredibility` above counts `outcome = 'unfounded'`
+ * rows — durably lowers that reporter's future credibility for this
+ * category. This is the "false reports carry consequences for the
+ * reporter" requirement; without it, a bad-faith reporter who gets
+ * caught pays no price and can simply try again.
+ *
+ * ADMIN-ONLY FOR NOW: restricted to an `admin` or `system` actor. The
+ * natural automated trigger — an appeal against a minor_suspected-
+ * triggered action being approved, i.e. the account is reinstated — lives
+ * in `appeal.service.ts`, which is outside this build's file-ownership
+ * boundary; flagged in the build report for that agent to call this
+ * function from `resolveAppeal` on approval. The mechanism itself is
+ * fully implemented and independently tested here
+ * (`tests/unit/safetyFixes.test.ts`) so a human moderator (or that future
+ * automated caller) can use it correctly today via the same admin surface
+ * §4.3/§27 already grants read access to moderation data through.
+ */
+export async function recordReportOutcome(ctx: Ctx, reportId: string, outcome: ReportOutcome): Promise<void> {
+  if (ctx.actor.type !== 'admin' && ctx.actor.type !== 'system') {
+    throw new ForbiddenError('Only an admin or system actor may record a report outcome.');
+  }
+  const now = ctx.clock.now();
+
+  const { rows } = await ctx.db.query<{ id: string; reporter_id: string; category: ReportCategory }>(
+    `UPDATE reports SET outcome = $2, outcome_recorded_at = $3 WHERE id = $1
+     RETURNING id, reporter_id, category`,
+    [reportId, outcome, now],
+  );
+  const row = rows[0];
+  if (!row) {
+    throw new NotFoundError('Report not found.');
+  }
+
+  if (outcome === 'unfounded' && row.category === 'minor_suspected') {
+    const penalty = await ctx.config.get('moderation.false_minor_suspected_report_trust_penalty');
+    await trust.recordTrustEvent(ctx, {
+      userId: row.reporter_id,
+      eventType: FALSE_MINOR_SUSPECTED_REPORT_EVENT_TYPE,
+      delta: penalty,
+      metadata: { reportId: row.id },
+    });
+    await trust.recalculateTrustScore(ctx, row.reporter_id);
+  }
 }

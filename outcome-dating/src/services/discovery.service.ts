@@ -2,11 +2,12 @@ import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
 import { ValidationError } from '../lib/errors.js';
 import type { Block, DiscoveryCandidate, Page, RealityDashboard, TrustLevel } from '../domain/types.js';
-import { passesMutualFilters, countUsersMatchingMyFilters, countUsersWhoseFiltersIMatch, haversineKm } from './filter.service.js';
+import { passesMutualFilters, countUsersMatchingMyFilters, countUsersWhoseFiltersIMatch } from './filter.service.js';
 import { getScoresForCandidates } from './compatibility.service.js';
 import { isVisibleInDiscovery } from './moderation.service.js';
 import { resolveVisibleTagsFor } from './question.service.js';
 import * as photoExperiment from './photoExperiment.service.js';
+import { approximateDistanceBetween } from '../domain/units/distance.js';
 
 /**
  * discovery.service — the discovery grid, visibility rules, the §9.3
@@ -138,6 +139,8 @@ interface CandidatePoolRow {
   profile_completeness: number;
   primary_photo_id: string | null;
   primary_photo_url: string | null;
+  /** SAF-2 fix: this candidate's own opted-in distance-precision floor, if set — see `profile.service.ts#UpdateProfileInput.distancePrecisionFloorKm`. */
+  distance_precision_floor_km: number | null;
 }
 
 async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidatePoolRow[]> {
@@ -153,6 +156,7 @@ async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidateP
        p.latitude,
        p.longitude,
        p.profile_completeness,
+       p.distance_precision_floor_km,
        ph.id AS primary_photo_id,
        ph.image_url AS primary_photo_url
      FROM users u
@@ -242,11 +246,6 @@ async function loadViewerOwnTagIds(ctx: Ctx, viewerId: string): Promise<Set<stri
   return new Set(rows.map((r) => r.tag_id));
 }
 
-/** Rounds a distance in km to the nearest whole km — an approximate value only (spec §7.1/§28.5: never expose exact coordinates or a precise distance). */
-function toApproximateDistanceKm(km: number): number {
-  return Math.round(km);
-}
-
 /**
  * The full §10.2 gate + §16.3 scoring + ranking-field assembly for every
  * candidate eligible to appear in `viewerId`'s discovery grid, unsorted.
@@ -269,6 +268,9 @@ async function computeRankedCandidatePool(ctx: Ctx, viewerId: string): Promise<D
 
   const incomingLimit = await ctx.config.get('interest.incoming_pending_limit');
   const activeConvLimit = await ctx.config.get('chat.active_limit');
+  // SAF-2 fix: the config-driven platform default bucket, fetched once —
+  // see domain/units/distance.ts#approximateDistanceBetween's module doc.
+  const distanceBucketKm = await ctx.config.get('privacy.distance_bucket_km');
 
   const survivors: CandidatePoolRow[] = [];
   const sharedTagByCandidate = new Map<string, string | null>();
@@ -297,10 +299,15 @@ async function computeRankedCandidatePool(ctx: Ctx, viewerId: string): Promise<D
   const scores = await getScoresForCandidates(ctx, viewerId, survivors.map((r) => r.id));
 
   return survivors.map((row) => {
-    const approximateDistanceKm =
-      row.latitude != null && row.longitude != null && viewerProfile.latitude != null && viewerProfile.longitude != null
-        ? toApproximateDistanceKm(haversineKm(viewerProfile.latitude, viewerProfile.longitude, row.latitude, row.longitude))
-        : null;
+    // SAF-2 fix: ONE shared distance function (domain/units/distance.ts),
+    // same bucketing + per-viewer-pair jitter as profile.service.ts's
+    // profile-page distance — see that module's doc for why two
+    // inconsistent, unjittered functions were the vulnerability.
+    const approximateDistanceKm = approximateDistanceBetween(
+      { id: viewerId, latitude: viewerProfile.latitude, longitude: viewerProfile.longitude },
+      { id: row.id, latitude: row.latitude, longitude: row.longitude },
+      { bucketKm: Math.max(distanceBucketKm, row.distance_precision_floor_km ?? 0) },
+    );
 
     const candidate: DiscoveryCandidate = {
       userId: row.id,

@@ -39,10 +39,14 @@ import * as notification from './notification.service.js';
  * observe those; none of `message`/`dateProposal`/`redemption`.service is
  * on the "may call" graph into `moderation` yet, so in the MVP the
  * practical source is reports). This module DOES use the `moderation ─▶
- * report` graph edge, but for a narrower purpose: `applyThresholds` reads
- * `report.listReportsAgainst` directly to check for a `minor_suspected`
- * category report (spec §18.3/§18.5 "maximum severity, immediate
- * protective action") — a lookup, not a re-score.
+ * report` graph edge, but for a narrower purpose: `applyThresholds` calls
+ * `report.assessMinorSuspected` to evaluate the `minor_suspected` category
+ * (spec §18.3/§18.5 "maximum severity, immediate protective action") —
+ * see report.service.ts's "SAF-1 FIX" module doc for the full
+ * corroboration model this now applies (a lone, uncorroborated report no
+ * longer suspends anyone by itself; see SAF-1 in docs/risk-review.md).
+ * This is a credibility/corroboration lookup across the reporter graph,
+ * not a re-derivation of `computeModerationScore`'s own number.
  *
  * `applyThresholds` reads its cutoffs from config
  * (`moderation.auto_restriction_score`, `moderation.auto_shadowban_score`,
@@ -110,6 +114,8 @@ const TRUST_EVENT_TYPE_FOR_ACTION: Partial<Record<ModerationActionType, string>>
 
 /** Static reason strings (spec §1/§20 "no generated prose" applies here in spirit too — `moderation_actions.reason` is an audit-log field, not user copy, but it's still a fixed vocabulary, never interpolated free text). */
 const REASON_MINOR_SUSPECTED = 'minor_suspected_report_immediate_protective_action';
+/** SAF-1 fix: the fast, reversible interim action applied on an uncorroborated (but credible-reporter) minor_suspected signal — see `report.service.ts`'s "SAF-1 FIX" module doc for the full model. Distinct reason from `REASON_MINOR_SUSPECTED` so the audit trail (and any caller reading `moderation_actions.reason`) can tell "this was the fast-but-reversible step" apart from "this was the corroborated, decisive one" at a glance. */
+const REASON_MINOR_SUSPECTED_INTERIM = 'minor_suspected_report_interim_protective_action';
 const REASON_SCORE_THRESHOLD = 'automated_score_threshold_crossed';
 
 export interface AutomatedFlagInput {
@@ -144,11 +150,6 @@ export async function computeModerationScore(ctx: Ctx, userId: string): Promise<
     [userId],
   );
   return Number(rows[0]?.sum ?? '0');
-}
-
-async function hasMinorSuspectedReport(ctx: Ctx, userId: string): Promise<boolean> {
-  const reports = await report.listReportsAgainst(ctx, userId);
-  return reports.some((r) => r.category === 'minor_suspected');
 }
 
 async function currentActionLevel(ctx: Ctx, userId: string): Promise<number> {
@@ -188,29 +189,67 @@ export async function applyThresholds(ctx: Ctx, userId: string): Promise<Moderat
   ]);
   const warningThreshold = restrictionThreshold * WARNING_SCORE_RATIO;
 
-  const minorSuspected = await hasMinorSuspectedReport(ctx, userId);
+  // ---- ordinary score-ladder action (unchanged from before this fix) ----
+  let scoreBasedAction: ModerationActionType;
+  if (score >= suspensionThreshold) {
+    scoreBasedAction = 'suspension';
+  } else if (score >= shadowbanThreshold) {
+    scoreBasedAction = 'shadowban';
+  } else if (score >= restrictionThreshold) {
+    scoreBasedAction = 'restriction';
+  } else if (score >= warningThreshold) {
+    scoreBasedAction = 'warning';
+  } else {
+    scoreBasedAction = 'none';
+  }
 
+  // ---- SAF-1 fix: minor_suspected corroboration model (see
+  // report.service.ts's "SAF-1 FIX" module doc for the full model) ----
+  const minorSuspected = await report.assessMinorSuspected(ctx, userId);
+  let minorSuspectedAction: ModerationActionType = 'none';
+  let minorSuspectedReason: string = REASON_MINOR_SUSPECTED_INTERIM;
+  if (minorSuspected.hasCredibleSignal) {
+    const [minCorroborators, minorSuspensionScore, interimAction] = await Promise.all([
+      ctx.config.get('moderation.minor_suspected_min_corroborating_reporters'),
+      ctx.config.get('moderation.minor_suspected_suspension_score'),
+      ctx.config.get('moderation.minor_suspected_interim_action'),
+    ]);
+    if (
+      minorSuspected.distinctCredibleCorroborators >= minCorroborators &&
+      minorSuspected.weightedScore >= minorSuspensionScore
+    ) {
+      // Corroborated by multiple independent, non-clustered credible
+      // reporters AND the combined weighted score clears the bar — this
+      // is the "genuine signal still acts decisively and fast" case.
+      // Never reachable from a single report, regardless of its
+      // reporter's trust level (see module doc: the corroborating-
+      // reporter-count gate is a hard floor of 1, i.e. never satisfied by
+      // exactly one report).
+      minorSuspectedAction = 'suspension';
+      minorSuspectedReason = REASON_MINOR_SUSPECTED;
+    } else {
+      // Uncorroborated (or not yet enough independent reporters/score) —
+      // fast, reversible protective action instead of termination.
+      minorSuspectedAction = interimAction;
+      minorSuspectedReason = REASON_MINOR_SUSPECTED_INTERIM;
+    }
+  }
+  // A minor_suspected report from a non-credible (brand-new, untrusted,
+  // or previously-abusive) reporter, with no credible reporter yet
+  // involved at all, deliberately does NOT drive `minorSuspectedAction`
+  // here — it still exists on the `reports` row and still fed
+  // `computeModerationScore` via `submitReport`'s ordinary automated
+  // flag, so `scoreBasedAction` can still act on it through the normal
+  // ladder; it just never gets this category's special-cased fast path.
+
+  // ---- combine: never LESS protective than either path alone ----
   let targetAction: ModerationActionType;
   let reason: string;
-  if (minorSuspected) {
-    // §18.3/§18.5: "minor suspected" is maximum severity with immediate
-    // protective action, regardless of the accumulated score.
-    targetAction = 'suspension';
-    reason = REASON_MINOR_SUSPECTED;
-  } else if (score >= suspensionThreshold) {
-    targetAction = 'suspension';
-    reason = REASON_SCORE_THRESHOLD;
-  } else if (score >= shadowbanThreshold) {
-    targetAction = 'shadowban';
-    reason = REASON_SCORE_THRESHOLD;
-  } else if (score >= restrictionThreshold) {
-    targetAction = 'restriction';
-    reason = REASON_SCORE_THRESHOLD;
-  } else if (score >= warningThreshold) {
-    targetAction = 'warning';
-    reason = REASON_SCORE_THRESHOLD;
+  if (ACTION_SEVERITY[minorSuspectedAction] >= ACTION_SEVERITY[scoreBasedAction]) {
+    targetAction = minorSuspectedAction;
+    reason = minorSuspectedAction === 'none' ? REASON_SCORE_THRESHOLD : minorSuspectedReason;
   } else {
-    targetAction = 'none';
+    targetAction = scoreBasedAction;
     reason = REASON_SCORE_THRESHOLD;
   }
 
