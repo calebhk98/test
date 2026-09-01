@@ -14,6 +14,7 @@ import { z } from 'zod';
 import * as voucherService from '../../services/voucher.service.js';
 import * as redemptionService from '../../services/redemption.service.js';
 import { serializeVenueRedeemResult, listUpcomingVouchersForVenue } from '../serializers/venue.js';
+import { listMyTickets, getMyTicket } from '../serializers/tickets.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { parseOrThrow, requireUuidParam } from '../validation.js';
@@ -24,13 +25,17 @@ export function registerTicketRoutes(app: FastifyInstance, deps: AppDeps): void 
   const userAuth = { preHandler: [authenticate(deps), requireRole('user')] };
   const venueAuth = { preHandler: [authenticate(deps), requireRole('venue_staff')] };
 
+  // Denormalized with venue name/address + the proposal's schedule
+  // (docs/ux-api-review.md §10 — the wallet screen otherwise needs a
+  // per-ticket venue lookup plus a per-ticket date-proposal lookup just
+  // to render "Coffee at The Daily Grind, Sat 6:00 PM").
   app.get('/tickets', userAuth, async (req, reply) => {
-    reply.send(await voucherService.listMyVouchers(req.ctx!));
+    reply.send(await listMyTickets(req.ctx!));
   });
 
   app.get('/tickets/:ticketId', userAuth, async (req, reply) => {
     const ticketId = requireUuidParam(req.params, 'ticketId');
-    reply.send(await voucherService.getVoucher(req.ctx!, ticketId));
+    reply.send(await getMyTicket(req.ctx!, ticketId, voucherService.getVoucher));
   });
 
   app.post('/tickets/:ticketId/redeem', userAuth, async (req, reply) => {

@@ -128,6 +128,13 @@ export function registerProfileRoutes(app: FastifyInstance, deps: AppDeps): void
   });
 
   // ---- Photos (§7.2) ----
+  // `photo.service#listMyPhotos` was fully built and tested but had no
+  // route — the own-profile photo grid had no way to reload on app
+  // relaunch (docs/ux-api-review.md §3a).
+  app.get('/me/photos', auth, async (req, reply) => {
+    reply.send(await photoService.listMyPhotos(req.ctx!));
+  });
+
   app.post('/me/photos', auth, async (req, reply) => {
     const body = parseOrThrow(UploadPhotoBodySchema, req.body);
     reply.status(201).send(await photoService.uploadPhoto(req.ctx!, body));

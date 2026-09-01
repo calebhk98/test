@@ -36,17 +36,23 @@ function makeDeps(): AppDeps {
   };
 }
 
-test('the registry lists all 9 §25 jobs by their spec-stable names', () => {
+test('the registry lists all 15 jobs by their spec-stable names', () => {
   const names = ALL_JOBS.map((j) => j.name).sort();
   assert.deepEqual(names, [
     'chat_decay',
+    'check_in_prompt_sweep',
     'compatibility_score_refresh',
     'date_proposal_expiry',
+    'dispute_auto_resolution',
     'interest_expiry',
+    'matching_signal_sweep',
     'moderation_score_recalculation',
+    'notification_delivery',
     'payment_reconciliation',
     'photo_ab_stats',
+    'ticketed_completion_sweep',
     'trust_score_recalculation',
+    'venue_payout_settlement',
     'voucher_expiry',
   ]);
 });

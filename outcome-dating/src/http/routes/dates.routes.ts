@@ -47,6 +47,14 @@ export function registerDateRoutes(app: FastifyInstance, deps: AppDeps): void {
     reply.send(await venueService.listActiveVenues(req.ctx!, category ? { category } : undefined));
   });
 
+  // `venue.service#getVenue` was fully built and tested but had no route —
+  // resolving one ticket's venue meant fetching the entire active-venue
+  // list and filtering client-side (docs/ux-api-review.md §10).
+  app.get('/venues/:venueId', auth, async (req, reply) => {
+    const venueId = requireUuidParam(req.params, 'venueId');
+    reply.send(await venueService.getVenue(req.ctx!, venueId));
+  });
+
   app.get('/venues/:venueId/time-slots', auth, async (req, reply) => {
     const venueId = requireUuidParam(req.params, 'venueId');
     const q = req.query as { from?: string; to?: string };

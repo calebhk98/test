@@ -43,6 +43,7 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'GET', path: '/me/data-export', spec: '§29 (profile.service addition)', role: 'user', addition: true },
   { method: 'GET', path: '/me/profile', spec: '§24.2, §7.1', role: 'user' },
   { method: 'PATCH', path: '/me/profile', spec: '§24.2, §7.1, §30.8', role: 'user' },
+  { method: 'GET', path: '/me/photos', spec: '§7.2 (addition — photo.service#listMyPhotos was built but unrouted, see docs/ux-api-review.md §3a)', role: 'user', addition: true },
   { method: 'POST', path: '/me/photos', spec: '§24.2, §7.2', role: 'user' },
   { method: 'DELETE', path: '/me/photos/:photoId', spec: '§24.2, §7.2', role: 'user' },
   { method: 'POST', path: '/me/photos/:photoId/primary', spec: '§7.2 (addition)', role: 'user', addition: true },
@@ -95,6 +96,7 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
 
   // ---- §24.8 Dates ----
   { method: 'GET', path: '/venues', spec: '§24.8, §13.2', role: 'user' },
+  { method: 'GET', path: '/venues/:venueId', spec: '§13.2 (addition — venue.service#getVenue was built but unrouted, see docs/ux-api-review.md §10)', role: 'user', addition: true },
   { method: 'GET', path: '/venues/:venueId/time-slots', spec: '§13.2 (addition)', role: 'user', addition: true },
   { method: 'POST', path: '/conversations/:conversationId/date-proposals', spec: '§24.8, §13, §14.2', role: 'user' },
   { method: 'GET', path: '/date-proposals/:dateProposalId', spec: '§24.8', role: 'user' },

@@ -13,6 +13,12 @@ import { trustRecalculationJob } from './trustRecalculation.job.js';
 import { moderationRecalculationJob } from './moderationRecalculation.job.js';
 import { voucherExpiryJob } from './voucherExpiry.job.js';
 import { paymentReconciliationJob } from './paymentReconciliation.job.js';
+import { venuePayoutSettlementJob } from './venuePayoutSettlement.job.js';
+import { disputeAutoResolutionJob } from './disputeAutoResolution.job.js';
+import { ticketedCompletionSweepJob } from './ticketedCompletionSweep.job.js';
+import { checkInPromptSweepJob } from './checkInPromptSweep.job.js';
+import { matchingSignalSweepJob } from './matchingSignalSweep.job.js';
+import { notificationDeliveryJob } from './notificationDelivery.job.js';
 
 export const ALL_JOBS: JobDefinition[] = [
   interestExpiryJob,
@@ -24,6 +30,12 @@ export const ALL_JOBS: JobDefinition[] = [
   moderationRecalculationJob,
   voucherExpiryJob,
   paymentReconciliationJob,
+  venuePayoutSettlementJob,
+  disputeAutoResolutionJob,
+  ticketedCompletionSweepJob,
+  checkInPromptSweepJob,
+  matchingSignalSweepJob,
+  notificationDeliveryJob,
 ];
 
 export function findJob(name: string): JobDefinition | undefined {
@@ -40,4 +52,10 @@ export {
   moderationRecalculationJob,
   voucherExpiryJob,
   paymentReconciliationJob,
+  venuePayoutSettlementJob,
+  disputeAutoResolutionJob,
+  ticketedCompletionSweepJob,
+  checkInPromptSweepJob,
+  matchingSignalSweepJob,
+  notificationDeliveryJob,
 };
