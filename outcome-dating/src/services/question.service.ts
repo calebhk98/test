@@ -14,7 +14,6 @@ import {
   selectNextQuestions,
 } from '../domain/questions/index.js';
 import type {
-  AnswerStatus,
   DealBreakerFilterRow,
   ImportanceLevel,
   LadderPosition,

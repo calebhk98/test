@@ -129,7 +129,17 @@ export async function runNotificationDeliveryWorker(
 
   for (const row of rows) {
     result.processed += 1;
-    await processOne(ctx, row, senders, now, result);
+    try {
+      await processOne(ctx, row, senders, now, result);
+    } catch (err) {
+      // Never let one row's unexpected failure abort the rest of the
+      // batch — leave it on its lease (it will be re-picked-up once the
+      // lease expires) and move on.
+      ctx.logger.error('notifications.delivery_row_failed', {
+        outboxId: row.id,
+        error: err instanceof Error ? err.message : String(err),
+      });
+    }
   }
 
   return result;
@@ -240,13 +250,24 @@ async function deliverPush(
   let sentOk = false;
   let anyTransientFailure = false;
   for (const token of tokens) {
-    const sendResult = await push.send({
-      token: token.pushToken,
-      platform: token.platform,
-      templateKey,
-      data,
-      collapseKey: row.id,
-    });
+    let sendResult;
+    try {
+      sendResult = await push.send({
+        token: token.pushToken,
+        platform: token.platform,
+        templateKey,
+        data,
+        collapseKey: row.id,
+      });
+    } catch (err) {
+      // A thrown error is a real transport/infrastructure outage (port
+      // contract, push.port.ts) — caught here so one row's provider
+      // exception can never crash the whole delivery batch. Treated
+      // exactly like a returned `status: 'failed'`.
+      ctx.logger.warn('notifications.push_send_threw', { outboxId: row.id, error: err instanceof Error ? err.message : String(err) });
+      anyTransientFailure = true;
+      continue;
+    }
     if (sendResult.status === 'sent') {
       sentOk = true;
     } else if (sendResult.status === 'invalid_token') {
@@ -290,7 +311,14 @@ async function deliverEmail(
     return;
   }
 
-  const sendResult = await email.send({ toEmail, templateKey, data });
+  let sendResult;
+  try {
+    sendResult = await email.send({ toEmail, templateKey, data });
+  } catch (err) {
+    ctx.logger.warn('notifications.email_send_threw', { outboxId: row.id, error: err instanceof Error ? err.message : String(err) });
+    await retryOrDie(ctx, row, err instanceof Error ? err.message : 'email transport error', now, result);
+    return;
+  }
   if (sendResult.status === 'sent') {
     await setStatus(ctx, row.id, 'sent', { deliveredAt: now }, now);
     result.sent += 1;
