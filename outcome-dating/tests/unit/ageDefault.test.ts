@@ -22,7 +22,11 @@ import type { Ctx } from '../../src/lib/ctx.js';
 import { suggestedAgeRange, applySuggestedAgeRangeIfUnset, getMyFilters, updateMyFilters } from '../../src/services/filter.service.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-const TEST_DB_NAME = 'odate_units_ageDefault';
+// Lowercase: an unquoted CREATE DATABASE identifier is case-folded by
+// Postgres, but the `dbname` connection parameter used to reconnect below
+// is taken literally — a mixed-case name here would create one database
+// and then fail to find it on reconnect.
+const TEST_DB_NAME = 'odate_units_agedefault';
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
