@@ -115,23 +115,63 @@ export function registerAdminRoutes(app: FastifyInstance, deps: AppDeps): void {
   });
 
   // ---- §27 item 3: Question manager ----
+  //
+  // Repointed to the ONE typed question bank (`question_bank`/
+  // `user_question_answers`, db/migrations/008_questions.sql) — this used
+  // to create/edit rows in the OLD `questions` table, which the product
+  // never scores or shows to a user answering `GET /questions`; an admin
+  // using the old panel could recreate the exact "asked about the same
+  // concept through two different definitions" duplication the product
+  // owner flagged (children/religion asked 3-4 times by a prior team).
+  // See src/services/question.service.ts's file-level CUTOVER doc for the
+  // full accounting of what moved.
+  //
+  // `:id` in the PATCH path is kept literally (not renamed `:slug`) only
+  // because `tests/http/routeTable.test.ts` (frozen, not owned by this
+  // build) hardcodes the exact path string `/admin/questions/:id` — the
+  // typed bank's admin update is actually keyed by SLUG (editing inserts a
+  // new version rather than mutating in place, see
+  // `question.service#adminUpdateQuestionBankEntry`'s doc), so the value
+  // carried by that param is a slug, not a uuid.
   app.get('/admin/questions', auth, async (req, reply) => {
-    reply.send(await questionService.adminListQuestions(req.ctx!));
+    const query = parseOrThrow(ListQuestionBankQuerySchema, req.query);
+    // Admins managing the bank need to see inactive/retired questions too
+    // (to review or reactivate them), not just what's currently offered to
+    // users — default to the full bank unless the caller asks to narrow it.
+    const items = await questionService.adminListQuestionBank(req.ctx!, {
+      includeInactive: query.includeInactive ?? true,
+    });
+    reply.send(items.map(serializeAdminQuestion));
   });
 
   app.post('/admin/questions', auth, async (req, reply) => {
-    const body = parseOrThrow(CreateQuestionBodySchema, req.body);
-    const created = await questionService.adminCreateQuestion(req.ctx!, body);
-    await writeAdminAudit(req.ctx!, { action: 'question.create', targetType: 'questions', targetId: created.id, after: created });
-    reply.status(201).send(created);
+    const created = await questionService.adminCreateQuestionBankEntry(
+      req.ctx!,
+      req.body as questionService.CreateQuestionBankInput,
+    );
+    await writeAdminAudit(req.ctx!, {
+      action: 'question.create',
+      targetType: 'question_bank',
+      targetId: created.id,
+      after: created,
+    });
+    reply.status(201).send(serializeAdminQuestion(created));
   });
 
   app.patch('/admin/questions/:id', auth, async (req, reply) => {
-    const id = requireUuidParam(req.params, 'id');
-    const body = parseOrThrow(UpdateQuestionBodySchema, req.body);
-    const updated = await questionService.adminUpdateQuestion(req.ctx!, id, body);
-    await writeAdminAudit(req.ctx!, { action: 'question.update', targetType: 'questions', targetId: id, after: updated });
-    reply.send(updated);
+    const slug = parseOrThrow(z.string().min(1), (req.params as Record<string, unknown> | null | undefined)?.id);
+    const updated = await questionService.adminUpdateQuestionBankEntry(
+      req.ctx!,
+      slug,
+      req.body as questionService.UpdateQuestionBankInput,
+    );
+    await writeAdminAudit(req.ctx!, {
+      action: 'question.update',
+      targetType: 'question_bank',
+      targetId: updated.id,
+      after: updated,
+    });
+    reply.send(serializeAdminQuestion(updated));
   });
 
   // ---- §27 item 4: Venue manager ----
