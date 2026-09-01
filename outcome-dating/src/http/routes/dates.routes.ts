@@ -102,10 +102,19 @@ export function registerDateRoutes(app: FastifyInstance, deps: AppDeps): void {
     reply.send(await dateProposalService.confirmAttendance(req.ctx!, dateProposalId));
   });
 
+  // Legacy compatibility shim (integrity audit item 1, normalization.md).
+  // `dateProposal.service#submitPostDateFeedback` (the old, independent
+  // writer of `positive`/`safety_concern`) is retired; this route now
+  // translates its request body and delegates to
+  // `postDateFeedbackService#submitLegacyFeedback`, which funnels into
+  // the SAME write path as `POST .../check-in` below. See that
+  // function's doc for why the route stays but the old service function
+  // does not.
   app.post('/date-proposals/:dateProposalId/feedback', auth, async (req, reply) => {
     const dateProposalId = requireUuidParam(req.params, 'dateProposalId');
     const body = parseOrThrow(FeedbackBodySchema, req.body);
-    reply.status(201).send(await dateProposalService.submitPostDateFeedback(req.ctx!, dateProposalId, body));
+    const checkIn = await postDateFeedbackService.submitLegacyFeedback(req.ctx!, dateProposalId, body);
+    reply.status(201).send(serializeCheckIn(checkIn));
   });
 
   app.post('/date-proposals/:dateProposalId/check-in', auth, async (req, reply) => {

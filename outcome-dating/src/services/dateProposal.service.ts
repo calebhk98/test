@@ -11,7 +11,6 @@ import type {
   DateProposal,
   DateProposalPolicySnapshot,
   DateProposalStatus,
-  PostDateFeedback,
 } from '../domain/types.js';
 import * as venueService from './venue.service.js';
 import * as paymentService from './payment.service.js';
@@ -700,63 +699,31 @@ export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promi
 }
 
 // =====================================================================
-// submitPostDateFeedback
+// submitPostDateFeedback — RETIRED (integrity audit item 1).
+//
+// This used to run its own INSERT/UPDATE against post_date_feedback,
+// writing only `positive`/`would_meet_again`/`safety_concern`/`notes`,
+// completely independent of postDateFeedback.service.ts#submitCheckIn's
+// own upsert of `outcome`/`safety_flag`/`safety_details`. Two independent
+// writers on the same (date_proposal_id, user_id) row, each owning a
+// disjoint column subset, is exactly how a row ended up saying the date
+// went well (`positive = true`) and badly (`outcome = 'happened_bad'`)
+// at once, with nothing to stop it, and how the legacy path bypassed
+// safety routing entirely (no report ever filed from a `safety_concern`
+// flag).
+//
+// The function is gone; there is no code in this codebase that writes
+// `post_date_feedback` outside postDateFeedback.service.ts's single
+// upsert any more. `POST /date-proposals/:id/feedback` still exists as
+// an HTTP-compatible shim (see dates.routes.ts) that translates the
+// legacy body into a check-in and calls
+// postDateFeedbackService#submitLegacyFeedback, which funnels into the
+// exact same write statement/trust/safety-routing path as
+// `submitCheckIn` — see that file for the one remaining writer. A
+// db/migrations/025_integrity.sql CHECK constraint additionally makes a
+// disagreeing (`positive`, `outcome`) pair impossible at the database
+// level, in case any future code path writes `positive` again.
 // =====================================================================
-
-interface PostDateFeedbackRow {
-  id: string;
-  date_proposal_id: string;
-  user_id: string;
-  positive: boolean;
-  would_meet_again: boolean | null;
-  safety_concern: boolean;
-  notes: string | null;
-  created_at: Date;
-}
-
-function mapFeedback(row: PostDateFeedbackRow): PostDateFeedback {
-  return {
-    id: row.id,
-    dateProposalId: row.date_proposal_id,
-    userId: row.user_id,
-    positive: row.positive,
-    wouldMeetAgain: row.would_meet_again,
-    safetyConcern: row.safety_concern,
-    notes: row.notes,
-    createdAt: row.created_at,
-  };
-}
-
-const FeedbackInputSchema = z.object({
-  positive: z.boolean(),
-  wouldMeetAgain: z.boolean().optional(),
-  safetyConcern: z.boolean().optional(),
-  notes: z.string().max(2000).optional(),
-});
-
-export async function submitPostDateFeedback(
-  ctx: Ctx,
-  dateProposalId: string,
-  input: { positive: boolean; wouldMeetAgain?: boolean; safetyConcern?: boolean; notes?: string },
-): Promise<PostDateFeedback> {
-  const row = await loadProposalRow(ctx, dateProposalId);
-  const userId = assertParticipant(ctx, row);
-  if (row.status !== 'completed' && row.status !== 'completed_unverified') {
-    throw new ConflictError('Post-date feedback can only be submitted for a completed date');
-  }
-  const parsed = FeedbackInputSchema.parse(input);
-
-  const { rows } = await ctx.db.query<PostDateFeedbackRow>(
-    `INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, would_meet_again, safety_concern, notes)
-     VALUES ($1, $2, $3, $4, $5, $6)
-     ON CONFLICT (date_proposal_id, user_id) DO UPDATE SET
-       positive = EXCLUDED.positive, would_meet_again = EXCLUDED.would_meet_again,
-       safety_concern = EXCLUDED.safety_concern, notes = EXCLUDED.notes
-     RETURNING *`,
-    [dateProposalId, userId, parsed.positive, parsed.wouldMeetAgain ?? null, parsed.safetyConcern ?? false, parsed.notes ?? null],
-  );
-  return mapFeedback(rows[0]!);
-}
 
 // =====================================================================
 // getDateProposal

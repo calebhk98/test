@@ -21,6 +21,7 @@ import pg from 'pg';
 import { randomUUID } from 'node:crypto';
 import { runMigrations } from '../../src/db/migrate.js';
 import { closePool, getPool } from '../../src/db/pool.js';
+import type { DbClient } from '../../src/db/pool.js';
 import { ConfigService } from '../../src/config/config.service.js';
 import { FlagsService } from '../../src/config/flags.service.js';
 import { ManualClock } from '../../src/lib/time.js';
@@ -28,10 +29,12 @@ import { createSilentLogger } from '../../src/lib/logger.js';
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
+import { withDb } from '../../src/lib/ctx.js';
 import { ForbiddenError } from '../../src/lib/errors.js';
 
 import * as statsService from '../../src/services/stats.service.js';
 import * as adminStatsService from '../../src/services/adminStats.service.js';
+import * as filterService from '../../src/services/filter.service.js';
 import { runStatsAggregationJob } from '../../src/jobs/statsAggregation.job.js';
 import { readFileSync } from 'node:fs';
 
@@ -827,19 +830,24 @@ test('getMyFilterCosts: suppresses small other-person cohorts, and caches for re
   }
 
   const ctx = buildCtx(userActor(me), now);
-  const first = await statsService.getMyFilterCosts(ctx, pool);
+  const first = await statsService.getMyFilterCosts(ctx);
   assert.equal(first.fromCache, false);
   assert.equal(first.currentPool.suppressed, true);
   assert.equal(first.currentPool.value, null);
   const filterEntry = first.perFilter.find((f) => f.filterKey === 'age_min');
   assert.ok(filterEntry);
   assert.equal(filterEntry!.additionalCandidatesIfRemoved.suppressed, true);
+  assert.equal(first.candidatesFailingTwoOrMore.suppressed, true);
+  assert.equal(first.costliestFilter, null, 'the one enabled filter is suppressed, so there is no number to name it by');
 
-  const second = await statsService.getMyFilterCosts(ctx, pool);
+  const second = await statsService.getMyFilterCosts(ctx);
   assert.equal(second.fromCache, true);
 
   // Structural privacy check: nothing in the payload is keyed by another
-  // person's id, only counts.
+  // person's id, only counts. `rawPool` (the pre-suppression numbers
+  // getMyPoolVenn reuses) is a service-layer-only field, never serialized,
+  // but it too must never carry an id -- it's a plain {number, number,
+  // number}, so this same blanket check already covers it.
   const json = JSON.stringify(first);
   assert.ok(!json.includes(me));
 });
@@ -858,15 +866,316 @@ test('getMyFilterCosts: shows an exact number once the excluded population clear
   }
 
   const ctx = buildCtx(userActor(me), now);
-  const result = await statsService.getMyFilterCosts(ctx, pool, { forceRefresh: true });
+  const result = await statsService.getMyFilterCosts(ctx, { forceRefresh: true });
   const filterEntry = result.perFilter.find((f) => f.filterKey === 'age_min');
   assert.ok(filterEntry);
   assert.equal(filterEntry!.additionalCandidatesIfRemoved.suppressed, false);
   assert.equal(filterEntry!.additionalCandidatesIfRemoved.value, 8);
+  assert.equal(result.costliestFilter?.filterKey, 'age_min');
+  assert.equal(result.candidatesFailingTwoOrMore.value, 0, 'only one filter is enabled, so nobody can fail two or more');
 
-  // The scratch transaction never actually disabled the filter.
+  // The one-pass computation never writes to hard_filters at all (unlike
+  // the earlier scratch-transaction design, which flipped a real row and
+  // relied on a rollback to undo it).
   const { rows } = await pool.query(`SELECT enabled FROM hard_filters WHERE user_id = $1 AND filter_key = 'age_min'`, [me]);
   assert.equal(rows[0].enabled, true);
+});
+
+// =====================================================================
+// Filter widening: one-pass rewrite, proof of equivalence, and measured
+// before/after query counts (see this build's report for the numbers).
+// =====================================================================
+
+/** Counts every `.query()` call made through `db`, without changing its behaviour. Used to measure both the pre-optimization (scratch-rollback-per-filter) and the current (one-pass) query cost against the identical fixture. */
+function countingDb(db: DbClient, counter: { n: number }): DbClient {
+  return {
+    query: ((...args: unknown[]) => {
+      counter.n += 1;
+      // @ts-expect-error — forwarding pg's overloaded Pool/PoolClient#query signature verbatim (same shim tests/perf/discovery.perf.test.ts's own countingDb uses).
+      return db.query(...args);
+    }) as DbClient['query'],
+  };
+}
+
+/**
+ * A faithful reproduction of `getMyFilterCosts`'s PRE-OPTIMIZATION body
+ * (one full `countUsersMatchingMyFilters` search per enabled filter,
+ * each with that filter temporarily disabled inside a transaction that
+ * is always rolled back) -- kept here, not in production code, purely as
+ * the "before" side of the equivalence/measurement proof below. Returns
+ * the same `additionalCandidatesIfRemoved` numbers the current
+ * implementation exposes as `perFilter`, unsuppressed, so the test can
+ * compare exact integers rather than two already-suppressed views.
+ */
+async function oldStyleFilterCosts(
+  ctx: Ctx,
+  rawPool: pg.Pool,
+  userId: string,
+  filterKeys: string[],
+  counter?: { n: number },
+): Promise<Map<string, number>> {
+  // When `counter` is given, EVERY query this function issues (the
+  // baseline search, and every BEGIN/UPDATE/search/ROLLBACK inside the
+  // per-filter loop) is counted through it -- not just the ones that
+  // happen to go through `ctx.db` -- so the measurement below reflects
+  // the true number of round trips the pre-optimization design made.
+  const baselineDb = counter ? countingDb(ctx.db, counter) : ctx.db;
+  const baseline = await filterService.countUsersMatchingMyFilters(withDb(ctx, baselineDb), userId);
+
+  const additional = new Map<string, number>();
+  for (const filterKey of filterKeys) {
+    const client = await rawPool.connect();
+    const clientDb = counter ? countingDb(client, counter) : client;
+    try {
+      await clientDb.query('BEGIN');
+      await clientDb.query(`UPDATE hard_filters SET enabled = false WHERE user_id = $1 AND filter_key = $2`, [userId, filterKey]);
+      const withoutCount = await filterService.countUsersMatchingMyFilters(withDb(ctx, clientDb), userId);
+      additional.set(filterKey, Math.max(0, withoutCount - baseline));
+    } finally {
+      await clientDb.query('ROLLBACK').catch(() => {});
+      client.release();
+    }
+  }
+  return additional;
+}
+
+/** Builds a 4-way fixture with every combination of "fails filter A", "fails filter B" present in numbers comfortably clear of `MIN_SUPPRESSIBLE_COHORT`, so both the equivalence proof and the query-count measurement below exercise overlapping filter failures, not just an all-or-nothing case. */
+async function seedOverlappingFilterFixture(now: Date): Promise<{ me: string; expected: { ageOnly: number; genderOnly: number; twoOrMore: number; neither: number } }> {
+  const me = await insertUser({ createdAt: now });
+  await insertProfile(me, { completeness: 100 });
+  await pool.query(`UPDATE profiles SET latitude = 40, longitude = 40 WHERE user_id = $1`, [me]);
+  await insertHardFilter(me, 'age_min', 'gte', 25);
+  await insertHardFilter(me, 'gender_preference', 'eq', 'woman');
+
+  async function seedCandidate(age: number, gender: string): Promise<void> {
+    const id = await insertUser({ createdAt: now });
+    await insertProfile(id, { completeness: 100 });
+    await pool.query(`UPDATE profiles SET latitude = 40, longitude = 40, age = $2, gender = $3 WHERE user_id = $1`, [id, age, gender]);
+  }
+
+  const neither = 5; // age >= 25, gender = woman: passes both
+  const ageOnly = 6; // age < 25 (fails age_min), gender = woman: fails ONLY age_min
+  const genderOnly = 5; // age >= 25, gender = man: fails ONLY gender_preference
+  const twoOrMore = 6; // age < 25, gender = man: fails both
+
+  for (let i = 0; i < neither; i++) await seedCandidate(30, 'woman');
+  for (let i = 0; i < ageOnly; i++) await seedCandidate(20, 'woman');
+  for (let i = 0; i < genderOnly; i++) await seedCandidate(30, 'man');
+  for (let i = 0; i < twoOrMore; i++) await seedCandidate(20, 'man');
+
+  return { me, expected: { ageOnly, genderOnly, twoOrMore, neither } };
+}
+
+test('getMyFilterCosts: the one-pass rewrite matches the pre-optimization per-filter search exactly, on a fixture with overlapping filter failures', async () => {
+  const now = new Date('2026-04-01T00:00:00.000Z');
+  const { me, expected } = await seedOverlappingFilterFixture(now);
+  const ctx = buildCtx(userActor(me), now);
+
+  const reference = await oldStyleFilterCosts(ctx, pool, me, ['age_min', 'gender_preference']);
+  assert.equal(reference.get('age_min'), expected.ageOnly);
+  assert.equal(reference.get('gender_preference'), expected.genderOnly);
+
+  const result = await statsService.getMyFilterCosts(ctx, { forceRefresh: true });
+
+  for (const [filterKey, expectedAdditional] of reference) {
+    const entry = result.perFilter.find((f) => f.filterKey === filterKey);
+    assert.ok(entry, `expected a perFilter entry for ${filterKey}`);
+    assert.equal(entry!.additionalCandidatesIfRemoved.value, expectedAdditional, `${filterKey}: one-pass result must equal the pre-optimization search`);
+    assert.equal(entry!.additionalCandidatesIfRemoved.suppressed, false);
+  }
+  assert.equal(result.candidatesFailingTwoOrMore.value, expected.twoOrMore);
+  assert.equal(result.currentPool.value, expected.neither);
+  assert.equal(result.costliestFilter?.filterKey, 'age_min', 'age_min (6) opens up more candidates than gender_preference (5)');
+});
+
+test('getMyFilterCosts: measured query counts, one-pass rewrite versus the pre-optimization per-filter search', async () => {
+  const now = new Date('2026-04-02T00:00:00.000Z');
+  const { me } = await seedOverlappingFilterFixture(now);
+  const ctxBase = buildCtx(userActor(me), now);
+
+  // OLD: one full geo-bounded search per enabled filter, inside a
+  // scratch transaction that is always rolled back.
+  const oldCounter = { n: 0 };
+  const oldStart = Date.now();
+  await oldStyleFilterCosts(ctxBase, pool, me, ['age_min', 'gender_preference'], oldCounter);
+  const oldMs = Date.now() - oldStart;
+
+  // NEW: one pass over the same candidate sample, classifying every
+  // candidate by exactly which filters it fails.
+  const newCounter = { n: 0 };
+  const newCtx = withDb(ctxBase, countingDb(pool, newCounter));
+  const newStart = Date.now();
+  await statsService.getMyFilterCosts(newCtx, { forceRefresh: true });
+  const newMs = Date.now() - newStart;
+
+  console.log(
+    `[getMyFilterCosts perf] 2 filters: old-style per-filter search = ${oldCounter.n} queries / ${oldMs}ms; ` +
+      `one-pass rewrite (includes the mandatory reality-dashboard call both approaches need) = ${newCounter.n} queries / ${newMs}ms`,
+  );
+
+  assert.ok(oldCounter.n > newCounter.n, 'the one-pass rewrite must issue fewer queries than one full search per filter');
+
+  // Confirm the OLD approach's cost actually scales with filter count
+  // (the defect this build fixes) by re-running it with a THIRD filter
+  // added, on a fresh candidate sample so the added filter has real
+  // candidates to search against.
+  await insertHardFilter(me, 'relationship_intention', 'eq', 'long_term');
+  const oldCounter3 = { n: 0 };
+  await oldStyleFilterCosts(ctxBase, pool, me, ['age_min', 'gender_preference', 'relationship_intention'], oldCounter3);
+  console.log(`[getMyFilterCosts perf] 3 filters: old-style per-filter search = ${oldCounter3.n} queries`);
+  assert.ok(oldCounter3.n > oldCounter.n, 'old-style cost must grow when a filter is added');
+
+  // ...while the one-pass rewrite's query count does NOT grow with the
+  // number of enabled filters (it is bounded by the candidate sample and
+  // the fixed number of batched loads, not by filter count).
+  const newCounter3 = { n: 0 };
+  const newCtx3 = withDb(ctxBase, countingDb(pool, newCounter3));
+  await statsService.getMyFilterCosts(newCtx3, { forceRefresh: true });
+  console.log(`[getMyFilterCosts perf] 3 filters: one-pass rewrite = ${newCounter3.n} queries`);
+  assert.equal(newCounter3.n, newCounter.n, 'the one-pass rewrite issues the SAME number of queries regardless of how many filters are enabled');
+});
+
+test('getMyComparisons: without a location on file, every regional comparison is insufficient_data rather than a misleading global average', async () => {
+  const now = new Date('2026-04-03T00:00:00.000Z');
+  const me = await insertUser({ createdAt: now });
+  await insertProfile(me, { completeness: 100 }); // no latitude/longitude set
+
+  const ctx = buildCtx(userActor(me), now);
+  const comparisons = await statsService.getMyComparisons(ctx);
+
+  assert.equal(comparisons.hasLocation, false);
+  assert.equal(comparisons.questionsAnswered.position, 'insufficient_data');
+  assert.equal(comparisons.questionsAnswered.regionTypical, null);
+  assert.equal(comparisons.filterStrictness.position, 'insufficient_data');
+  assert.deepEqual(comparisons.tagPrevalence, []);
+});
+
+test('getMyComparisons: positions the caller against the regional typical band, and reports tag prevalence excluding the caller\'s own row', async () => {
+  const now = new Date('2026-04-04T00:00:00.000Z');
+
+  // Regional population: 9 people near (20, 20), with a spread of
+  // questions-answered counts so the interquartile band is meaningful.
+  const answeredCounts = [2, 4, 6, 8, 10, 12, 14, 16, 18];
+  const tagRows = await pool.query<{ id: string }>(
+    `INSERT INTO interest_tags (name, category) VALUES ('Hiking', 'outdoors') RETURNING id`,
+  );
+  const tagId = tagRows.rows[0]!.id;
+
+  for (const n of answeredCounts) {
+    const uid = await insertUser({ createdAt: now });
+    await insertProfile(uid, { completeness: 100 });
+    await pool.query(`UPDATE profiles SET latitude = 20, longitude = 20 WHERE user_id = $1`, [uid]);
+    for (let i = 0; i < n; i++) {
+      await pool.query(
+        `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, answered_at)
+         VALUES ($1, $2, gen_random_uuid(), 'skipped', now())`,
+        [uid, `q-${i}`],
+      );
+    }
+  }
+  // 6 of the 9 also hold the "Hiking" tag (publicly), clearing the
+  // suppression threshold on its own.
+  const { rows: regionUsers } = await pool.query<{ user_id: string }>(
+    `SELECT user_id FROM profiles WHERE latitude = 20 AND longitude = 20`,
+  );
+  for (const { user_id } of regionUsers.slice(0, 6)) {
+    await pool.query(`INSERT INTO user_tags (user_id, tag_id, visibility) VALUES ($1, $2, 'public')`, [user_id, tagId]);
+  }
+
+  await runStatsAggregationJob(buildCtx({ type: 'system', job: 'stats_aggregation' }, now));
+
+  // The caller: also in the region, answered fewer questions than
+  // everyone else seeded above, and also holds the Hiking tag.
+  const me = await insertUser({ createdAt: now });
+  await insertProfile(me, { completeness: 100 });
+  await pool.query(`UPDATE profiles SET latitude = 20, longitude = 20 WHERE user_id = $1`, [me]);
+  await pool.query(`INSERT INTO user_tags (user_id, tag_id, visibility) VALUES ($1, $2, 'public')`, [me, tagId]);
+
+  const ctx = buildCtx(userActor(me), now);
+  const comparisons = await statsService.getMyComparisons(ctx);
+
+  assert.equal(comparisons.hasLocation, true);
+  assert.equal(comparisons.questionsAnswered.mine, 0);
+  assert.equal(comparisons.questionsAnswered.position, 'below_typical', 'answering nothing is below every seeded neighbour');
+  assert.ok(typeof comparisons.questionsAnswered.regionTypical === 'number');
+
+  const hiking = comparisons.tagPrevalence.find((t) => t.tagId === tagId);
+  assert.ok(hiking);
+  assert.equal(hiking!.tagName, 'Hiking');
+  // 6 holders in the rollup, minus the caller's own (public) row -> 5 others.
+  assert.equal(hiking!.nearbyHolders.suppressed, false);
+  assert.equal(hiking!.nearbyHolders.value, 5);
+
+  // Privacy: nothing here is keyed by another person's id.
+  const json = JSON.stringify(comparisons);
+  for (const { user_id } of regionUsers) {
+    assert.ok(!json.includes(user_id), 'a comparisons payload must never contain another person\'s id');
+  }
+});
+
+test('getMyComparisons: a tag held by too few nearby people is suppressed like any other small cohort', async () => {
+  const now = new Date('2026-04-05T00:00:00.000Z');
+  const tagRows = await pool.query<{ id: string }>(
+    `INSERT INTO interest_tags (name, category) VALUES ('Ferret Husbandry', 'niche') RETURNING id`,
+  );
+  const tagId = tagRows.rows[0]!.id;
+
+  // A large-enough region population (clears MIN_SUPPRESSIBLE_COHORT for
+  // the region itself) but only 2 of them hold the rare tag.
+  for (let i = 0; i < 6; i++) {
+    const uid = await insertUser({ createdAt: now });
+    await insertProfile(uid, { completeness: 100 });
+    await pool.query(`UPDATE profiles SET latitude = -8, longitude = 100 WHERE user_id = $1`, [uid]);
+    if (i < 2) {
+      await pool.query(`INSERT INTO user_tags (user_id, tag_id, visibility) VALUES ($1, $2, 'public')`, [uid, tagId]);
+    }
+  }
+
+  await runStatsAggregationJob(buildCtx({ type: 'system', job: 'stats_aggregation' }, now));
+
+  const me = await insertUser({ createdAt: now });
+  await insertProfile(me, { completeness: 100 });
+  await pool.query(`UPDATE profiles SET latitude = -8, longitude = 100 WHERE user_id = $1`, [me]);
+  await pool.query(`INSERT INTO user_tags (user_id, tag_id, visibility) VALUES ($1, $2, 'public')`, [me, tagId]);
+
+  const ctx = buildCtx(userActor(me), now);
+  const comparisons = await statsService.getMyComparisons(ctx);
+
+  const rare = comparisons.tagPrevalence.find((t) => t.tagId === tagId);
+  assert.ok(rare);
+  // 2 holders total, minus the caller's own row = 1 other -- below
+  // MIN_SUPPRESSIBLE_COHORT.
+  assert.equal(rare!.nearbyHolders.suppressed, true);
+  assert.equal(rare!.nearbyHolders.value, null);
+});
+
+// =====================================================================
+// Pool Venn.
+// =====================================================================
+
+test('getMyPoolVenn: reshapes the same numbers getMyFilterCosts already computes, region sizes and intersection agree', async () => {
+  const now = new Date('2026-04-06T00:00:00.000Z');
+  const { me } = await seedOverlappingFilterFixture(now);
+  const ctx = buildCtx(userActor(me), now);
+
+  const costs = await statsService.getMyFilterCosts(ctx, { forceRefresh: true });
+  const venn = await statsService.getMyPoolVenn(ctx);
+
+  assert.equal(venn.setA.count.value, costs.currentPool.value);
+  assert.equal(venn.setA.count.suppressed, costs.currentPool.suppressed);
+  assert.equal(venn.intersection.count.value, costs.mutualMatchPool.value);
+});
+
+test('getMyPoolVennSvg: renders a well-formed, self-contained SVG with a screen-reader text alternative', async () => {
+  const now = new Date('2026-04-07T00:00:00.000Z');
+  const { me } = await seedOverlappingFilterFixture(now);
+  const ctx = buildCtx(userActor(me), now);
+
+  const svg = await statsService.getMyPoolVennSvg(ctx);
+  assert.ok(svg.startsWith('<svg'));
+  assert.match(svg, /<title id="venn-title">/);
+  assert.match(svg, /<desc id="venn-desc">/);
+  assert.ok(!svg.includes(me), 'the SVG must never contain a user id');
 });
 
 test('getMyPhotoStats: ranks by accepted-interest rate, not raw impressions', async () => {

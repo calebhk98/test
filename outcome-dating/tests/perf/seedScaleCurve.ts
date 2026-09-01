@@ -1,5 +1,5 @@
 /**
- * tests/perf/seedScaleCurve.ts — benchmark data generator for
+ * tests/perf/seedScaleCurve.ts, benchmark data generator for
  * tests/perf/scaleCurve.perf.test.ts.
  *
  * PURPOSE: unlike `seedDiscoveryPerf.ts` (which proves cost is flat across
@@ -9,14 +9,14 @@
  * on the platform, once the viewer's OWN local population is held fixed?
  *
  * To test that honestly, "the viewer's city" must NOT grow when "total
- * users" grows — otherwise a flat-looking local population and a flat
+ * users" grows, otherwise a flat-looking local population and a flat
  * total population are the same variable, and the proof is circular. So
  * this seeder fixes `HOME_POPULATION` users in one city (`HOME_CITY`) on
  * every run, and puts the REST of `totalUserCount` in the other, distant
  * cities ("elsewhere"). `HOME_CITY` is Chicago specifically because it is
  * >1,000km from every other seeded city (New York and Philadelphia, at
  * ~130km apart, are too close to each other to safely serve as a fixed
- * "home" against an "elsewhere" that might include the other one) — see
+ * "home" against an "elsewhere" that might include the other one), see
  * `seedDiscoveryPerf.ts#CITIES`. All bounding-box radii used by the app
  * default to 160km (`filter.service.ts#DEFAULT_DISCOVERY_RADIUS_KM`), so
  * >1,000km separation means an "elsewhere" user can never land inside the
@@ -33,7 +33,7 @@ import { CITIES, type City } from './seedDiscoveryPerf.js';
 export const HOME_CITY: City = CITIES.find((c) => c.name === 'Chicago')!;
 const ELSEWHERE_CITIES: City[] = CITIES.filter((c) => c.name !== 'Chicago');
 
-/** Fixed on every run, regardless of `totalUserCount` — the whole point (see file doc). Comfortably below both `MAX_CANDIDATE_POOL_SIZE` (500) and `DASHBOARD_SCAN_CAP` (5000), so every scale exercises the same EXACT (non-estimator) path — the estimator/truncation path is already covered by `discovery.perf.test.ts`'s New York scenario; this file's job is the population-independence axis, not truncation. */
+/** Fixed on every run, regardless of `totalUserCount`, the whole point (see file doc). Comfortably below both `MAX_CANDIDATE_POOL_SIZE` (500) and `DASHBOARD_SCAN_CAP` (5000), so every scale exercises the same EXACT (non-estimator) path, the estimator/truncation path is already covered by `discovery.perf.test.ts`'s New York scenario; this file's job is the population-independence axis, not truncation. */
 const HOME_POPULATION = 400;
 const MATCH_COUNT = 25;
 const MESSAGES_PER_MATCH = 6;
@@ -139,7 +139,7 @@ async function insertUserBatch(
  * wires up a realistic slice of a single home viewer's own activity
  * (matches/messages/interests/filters) so `matches`/`conversation
  * timeline`/`stats` read paths have real, viewer-scoped data to read at
- * every scale — none of which is sized off `totalUserCount`, which is
+ * every scale, none of which is sized off `totalUserCount`, which is
  * exactly the point: those paths should cost the same at every scale
  * because their own inputs never grow with it.
  */

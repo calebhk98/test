@@ -1,35 +1,56 @@
 /**
- * src/services/stats.service.ts — the USER-facing "stats page" (product
+ * src/services/stats.service.ts: the USER-facing "stats page" (product
  * owner: "1 for admins and 1 for users... tucked away, but should allow
  * tons of data"). Every function here answers only for the CALLING user
  * (`requireUserActor(ctx)`), never for anyone else.
  *
  * PRIVACY, enforced by construction (not by a serializer allowlist bolted
- * on afterward — see docs/risk-review.md and docs/ux-product-review.md,
+ * on afterward, see docs/risk-review.md and docs/ux-product-review.md,
  * both read before this file was designed):
  *
  *  - No query in this file ever returns another user's id, name, photo, or
  *    any per-candidate row. Every "how many other people" number is a
- *    COUNT, never a list — `discovery_events`/`interests`/etc. are always
- *    aggregated, never joined out to another person's profile.
+ *    COUNT, never a list (discovery_events/interests/etc. are always
+ *    aggregated, never joined out to another person's profile).
  *  - `MIN_SUPPRESSIBLE_COHORT`: any count that describes a population of
  *    OTHER people (not the caller's own activity) below this size is
- *    withheld (`suppressed: true`, no number) rather than shown — see
+ *    withheld (`suppressed: true`, no number) rather than shown, see
  *    `suppressSmallCohort`. A pool of 1-4 nearby people is small enough
  *    that showing the exact number risks the viewer identifying who it
- *    is, especially after narrowing filters further.
+ *    is, especially after narrowing filters further. This is the ONE
+ *    suppression rule in this file; every comparison added below (region
+ *    typical questions answered, region typical filter strictness, tag
+ *    prevalence, the pool Venn) reuses it rather than inventing a second
+ *    threshold.
  *  - Nothing here reads or derives the trust-score weighting
  *    (`trust.service.ts`'s own module doc: "NEVER returned by any
  *    user-facing export"). This file does not import trust.service at
- *    all, deliberately — trust has its own page
+ *    all, deliberately: trust has its own page
  *    (`GET /me/trust`/`serializeTrustSummary`) and that boundary is not
  *    redrawn here.
- *  - No ranking/percentile/"top X%" anywhere — every comparison in this
- *    file is the caller against their OWN past (a trend over time), never
- *    against other users. There is no query anywhere below that computes
- *    a percentile or rank.
+ *  - COMPARISONS ARE AGGREGATE-VERSUS-AGGREGATE, NEVER PERSON-VERSUS-
+ *    PERSON, AND NEVER A POPULARITY SIGNAL: the product owner asked for
+ *    comparison against the average (how you compare against typical,
+ *    how many people share an interest, how strict your filters are),
+ *    and product review (docs/ux-product-review.md) is equally clear
+ *    this product has deliberately no popularity signal: no like counts,
+ *    no boosts, no rank among peers. The line drawn here: every
+ *    comparison is (a) the caller's own count against a regional MEDIAN
+ *    and interquartile band, reduced to a coarse "below typical / typical
+ *    / above typical" position, never a numeric percentile or rank, and
+ *    (b) always about the caller's OWN behaviour or choices, their own
+ *    effort (questions answered) or their own settings (filter
+ *    strictness, which single filter costs them the most candidates, how
+ *    common their own interest tags are nearby). Nothing here compares,
+ *    ranks, or benchmarks how OTHERS responded to the caller (profile
+ *    views, interests received, acceptance rate, photo performance)
+ *    against a population: that would be a desirability score wearing a
+ *    stats-page costume, not a behaviour comparison, and every one of
+ *    those numbers stays exactly what it always was, the caller's own
+ *    count/rate over time, never set against anyone else. See this
+ *    build's report for the full reasoning behind where that line sits.
  *  - `post_date_feedback.safety_flag`/`safety_details`/`notes` are never
- *    selected here, even for the row's own owner — see
+ *    selected here, even for the row's own owner, see
  *    `postDateFeedback.service.ts`'s isolation guarantee for those two
  *    columns; this file stays out of that boundary entirely rather than
  *    re-deciding it.
@@ -37,23 +58,32 @@
  * PERFORMANCE: every query below is scoped to the calling user's own rows
  * via an existing index (`sender_id`/`recipient_id`/`user_id`/
  * `viewer_user_id`/`candidate_user_id`), so cost scales with ONE user's
- * activity, not the platform's — cheap regardless of total platform size,
+ * activity, not the platform's, cheap regardless of total platform size,
  * unlike the admin page (which needs `statsAggregation.job.ts`'s rollup
  * tables because IT aggregates over everyone). The one genuinely expensive
- * piece — "how many people would each filter open up" — reuses
- * `filter.service.ts`'s already-bounded (`DASHBOARD_SCAN_CAP`) reality-
- * dashboard machinery and is cached per user for
- * `FILTER_COST_CACHE_TTL_MS` (see `getMyFilterCosts`) rather than
- * recomputed on every casual page open. See this build's report for
- * measured query counts/timings.
+ * piece, "how many people would each filter open up", makes ONE pass over
+ * a geographically-bounded (`filterService.DASHBOARD_SCAN_CAP`) candidate
+ * sample and classifies every candidate by exactly which of the caller's
+ * filters it fails, rather than the earlier design's one full pool search
+ * per filter (see `computeFilterFailureBreakdown`'s doc for the query-
+ * count math). Results are cached per user for `FILTER_COST_CACHE_TTL_MS`
+ * (see `getMyFilterCosts`) rather than recomputed on every casual page
+ * open, and the pool Venn (`getMyPoolVenn`) reuses that same cache instead
+ * of paying for its own reality-dashboard computation. The region
+ * comparisons (`getMyComparisons`) read one small precomputed rollup row
+ * (`stats_region_activity`/`stats_region_tag_prevalence`, written by
+ * `statsAggregation.job.ts`) rather than scanning any population live.
+ * See this build's report for measured query counts/timings.
  */
-import type pg from 'pg';
 import type { Ctx } from '../lib/ctx.js';
-import { requireUserActor, withDb } from '../lib/ctx.js';
+import { requireUserActor } from '../lib/ctx.js';
+import type { FilterOperator } from '../domain/types.js';
 import * as filterService from './filter.service.js';
 import * as discoveryService from './discovery.service.js';
 import * as photoExperimentService from './photoExperiment.service.js';
 import { computeProfileCompleteness } from './profile.service.js';
+import * as statsVenn from './statsVenn.js';
+import { regionKeyFor } from '../jobs/statsAggregation.job.js';
 
 export const MIN_SUPPRESSIBLE_COHORT = 5;
 const FILTER_COST_CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
@@ -433,19 +463,38 @@ export async function getMyPhotoStats(ctx: Ctx): Promise<UserPhotoStats> {
 }
 
 // =====================================================================
-// Filter cost — "how many people does this filter exclude, and what
+// Filter cost: "how many people does this filter exclude, and what
 // would widening it open up." Reuses the reality dashboard's already-
-// bounded machinery (filter.service.ts#countUsersMatchingMyFilters,
-// discovery.service.ts#getRealityDashboard); the per-filter breakdown
-// asks the SAME bounded question once per enabled filter with that one
-// filter temporarily (and non-destructively) disabled inside a
-// transaction that is always rolled back, never committed — see
-// `withScratchRollback` below. Cached per user for `FILTER_COST_CACHE_TTL_MS`.
+// bounded machinery for the three headline numbers
+// (discovery.service.ts#getRealityDashboard), and answers the per-filter
+// breakdown with ONE pass over a geographically-bounded candidate sample
+// (see `computeFilterFailureBreakdown` below) instead of the earlier
+// design's one full pool search per enabled filter. Cached per user for
+// `FILTER_COST_CACHE_TTL_MS`.
+//
+// ATTRIBUTE-RESOLUTION DUPLICATION, ON PURPOSE, DOCUMENTED: the one-pass
+// computation needs to know, for a given filter key, which candidate
+// attribute to compare against (a `profiles` column, a haversine distance,
+// or a `qb:`-prefixed question-bank answer). `filter.service.ts` already
+// has exactly this logic (`STRUCTURED_ATTRIBUTE_KEYS`,
+// `resolveAttributeValueFromMaps`, `loadProfilesBatch`,
+// `loadQuestionBankAnswersBatch`), but keeps it private, and this build's
+// file-ownership boundary does not include that file. The pure comparison
+// semantics (`evaluateFilter`) and the distance formula (`haversineKm`)
+// ARE exported and are reused verbatim below, so the only thing
+// duplicated here is the small, stable "which column does this filter key
+// read from" routing table and the two batched SELECTs that load it, not
+// the actual filter-matching logic. If filter.service.ts's owner can
+// later export `resolveAttributeValueFromMaps`/`loadAttributeMapsFor` (or
+// add a dedicated `evaluateFilterPairsBatchPerFilter` that returns a
+// per-filter breakdown directly), this duplication goes away entirely;
+// noted in this build's report as the requested new export rather than
+// editing that file directly.
 // =====================================================================
 
 export interface FilterCostEntry {
   filterKey: string;
-  /** Candidates that would additionally pass if this one filter were removed, all else unchanged. Suppressed (never shown as a raw number) below `MIN_SUPPRESSIBLE_COHORT`. */
+  /** Candidates that would additionally pass if this one filter, and only this one, were removed (i.e. candidates failing this filter and nothing else). Suppressed (never shown as a raw number) below `MIN_SUPPRESSIBLE_COHORT`. */
   additionalCandidatesIfRemoved: SuppressibleCount;
 }
 
@@ -454,80 +503,578 @@ export interface UserFilterCosts {
   whoseFiltersIMatch: SuppressibleCount;
   mutualMatchPool: SuppressibleCount;
   perFilter: FilterCostEntry[];
+  /** Candidates failing two or more of the caller's enabled filters at once, i.e. candidates no SINGLE filter relaxation would recover. Same suppression rule as every other cross-person count. */
+  candidatesFailingTwoOrMore: SuppressibleCount;
+  /** The single enabled filter whose removal would open up the most candidates, or null if there are no enabled filters or every candidate's numbers are suppressed. Convenience view over `perFilter`, not a new computation. */
+  costliestFilter: FilterCostEntry | null;
   computedAt: Date;
   fromCache: boolean;
+  /**
+   * The three reality-dashboard counts BEFORE suppression, kept only so
+   * `getMyPoolVenn` can derive the Venn's five region sizes without
+   * re-running `discoveryService.getRealityDashboard` (the expensive
+   * part of this whole payload) a second time. Same sensitivity as
+   * `currentPool`/`whoseFiltersIMatch`/`mutualMatchPool` above (a count of
+   * other people, scoped to this one user's own cache row, never a list),
+   * and never spread into an HTTP response: `serializeUserFilterCosts`
+   * (src/http/serializers/stats.ts) does not include it.
+   */
+  rawPool: statsVenn.PoolVennCounts;
 }
 
-async function withScratchRollback<T>(pool: pg.Pool, fn: (client: pg.PoolClient) => Promise<T>): Promise<T> {
-  const client = await pool.connect();
-  try {
-    await client.query('BEGIN');
-    return await fn(client);
-  } finally {
-    await client.query('ROLLBACK').catch(() => {});
-    client.release();
-  }
-}
-
-async function readFilterCostCache(ctx: Ctx, userId: string): Promise<UserFilterCosts | null> {
-  const { rows } = await ctx.db.query<{ computed_at: Date; payload: UserFilterCosts }>(
-    `SELECT computed_at, payload FROM stats_user_cache WHERE user_id = $1 AND cache_key = 'filter_costs'`,
-    [userId],
+async function readStatsCache<T extends { computedAt: Date }>(ctx: Ctx, userId: string, cacheKey: string, ttlMs: number): Promise<T | null> {
+  const { rows } = await ctx.db.query<{ computed_at: Date; payload: T }>(
+    `SELECT computed_at, payload FROM stats_user_cache WHERE user_id = $1 AND cache_key = $2`,
+    [userId, cacheKey],
   );
   const row = rows[0];
   if (!row) return null;
-  if (ctx.clock.now().getTime() - row.computed_at.getTime() > FILTER_COST_CACHE_TTL_MS) return null;
-  return { ...row.payload, computedAt: new Date(row.computed_at), fromCache: true };
+  if (ctx.clock.now().getTime() - row.computed_at.getTime() > ttlMs) return null;
+  return { ...row.payload, computedAt: new Date(row.computed_at) };
 }
 
-async function writeFilterCostCache(ctx: Ctx, userId: string, payload: UserFilterCosts): Promise<void> {
+async function writeStatsCache<T>(ctx: Ctx, userId: string, cacheKey: string, payload: T): Promise<void> {
   await ctx.db.query(
     `INSERT INTO stats_user_cache (user_id, cache_key, computed_at, payload)
-     VALUES ($1, 'filter_costs', $2, $3::jsonb)
+     VALUES ($1, $2, $3, $4::jsonb)
      ON CONFLICT (user_id, cache_key) DO UPDATE SET computed_at = excluded.computed_at, payload = excluded.payload`,
-    [userId, ctx.clock.now(), JSON.stringify(payload)],
+    [userId, cacheKey, ctx.clock.now(), JSON.stringify(payload)],
   );
 }
 
-export async function getMyFilterCosts(ctx: Ctx, pool: pg.Pool, opts?: { forceRefresh?: boolean }): Promise<UserFilterCosts> {
+/** Mirrors filter.service.ts's private `STRUCTURED_ATTRIBUTE_KEYS` (see the DUPLICATION note above). Anything not in this set is a `qb:`-prefixed question-bank slug lookup. */
+const STRUCTURED_FILTER_KEYS: ReadonlySet<string> = new Set([
+  'age_min',
+  'age_max',
+  'distance_km',
+  'gender_preference',
+  'relationship_intention',
+  'height_cm',
+  'weight_g',
+  'body_type',
+]);
+
+interface FilterEvalProfile {
+  age: number | null;
+  gender: string | null;
+  relationshipIntention: string | null;
+  latitude: number | null;
+  longitude: number | null;
+  heightCm: number | null;
+  weightG: number | null;
+  weightVisible: boolean;
+  bodyType: string | null;
+}
+
+/** Batched profile load for filter evaluation, same columns as filter.service.ts's private `loadProfilesBatch`. */
+async function loadFilterEvalProfiles(ctx: Ctx, userIds: string[]): Promise<Map<string, FilterEvalProfile>> {
+  const map = new Map<string, FilterEvalProfile>();
+  const ids = [...new Set(userIds)];
+  if (ids.length === 0) return map;
+  const { rows } = await ctx.db.query<{
+    user_id: string;
+    age: number;
+    gender: string;
+    relationship_intention: string;
+    latitude: number | null;
+    longitude: number | null;
+    height_cm: number | null;
+    weight_g: number | null;
+    weight_visible: boolean;
+    body_type: string | null;
+  }>(
+    `SELECT user_id, age, gender, relationship_intention, latitude, longitude, height_cm, weight_g, weight_visible, body_type
+     FROM profiles WHERE user_id = ANY($1::uuid[])`,
+    [ids],
+  );
+  for (const row of rows) {
+    map.set(row.user_id, {
+      age: row.age,
+      gender: row.gender,
+      relationshipIntention: row.relationship_intention,
+      latitude: row.latitude,
+      longitude: row.longitude,
+      heightCm: row.height_cm,
+      weightG: row.weight_g,
+      weightVisible: row.weight_visible,
+      bodyType: row.body_type,
+    });
+  }
+  return map;
+}
+
+/** Batched question-bank answer load for filter evaluation, same shape and same `status = 'answered'` rule as filter.service.ts's private `loadQuestionBankAnswersBatch`. */
+async function loadFilterEvalAnswers(ctx: Ctx, userIds: string[], slugs: string[]): Promise<Map<string, Map<string, unknown>>> {
+  const map = new Map<string, Map<string, unknown>>();
+  const ids = [...new Set(userIds)];
+  if (ids.length === 0 || slugs.length === 0) return map;
+  const { rows } = await ctx.db.query<{ user_id: string; question_slug: string; status: string; self_value: unknown }>(
+    `SELECT user_id, question_slug, status, self_value
+     FROM user_question_answers
+     WHERE user_id = ANY($1::uuid[]) AND question_slug = ANY($2::text[])`,
+    [ids, slugs],
+  );
+  for (const row of rows) {
+    if (row.status !== 'answered') continue;
+    let perUser = map.get(row.user_id);
+    if (!perUser) {
+      perUser = new Map();
+      map.set(row.user_id, perUser);
+    }
+    perUser.set(row.question_slug, row.self_value);
+  }
+  return map;
+}
+
+/** Same resolution filter.service.ts's private `resolveAttributeValueFromMaps` performs, switch case for switch case (see the DUPLICATION note above for why this lives here too). */
+function resolveFilterAttributeValue(
+  subjectId: string,
+  ownerId: string,
+  filterKey: string,
+  profiles: Map<string, FilterEvalProfile>,
+  answers: Map<string, Map<string, unknown>>,
+): unknown {
+  if (!STRUCTURED_FILTER_KEYS.has(filterKey)) {
+    if (!filterKey.startsWith('qb:')) return undefined;
+    const slug = filterKey.slice(3);
+    const perUser = answers.get(subjectId);
+    if (!perUser || !perUser.has(slug)) return undefined;
+    return perUser.get(slug);
+  }
+  switch (filterKey) {
+    case 'age_min':
+    case 'age_max':
+      return profiles.get(subjectId)?.age ?? undefined;
+    case 'distance_km': {
+      const subject = profiles.get(subjectId);
+      const owner = profiles.get(ownerId);
+      if (subject?.latitude == null || subject?.longitude == null || owner?.latitude == null || owner?.longitude == null) {
+        return undefined;
+      }
+      return filterService.haversineKm(subject.latitude, subject.longitude, owner.latitude, owner.longitude);
+    }
+    case 'gender_preference':
+      return profiles.get(subjectId)?.gender ?? undefined;
+    case 'relationship_intention':
+      return profiles.get(subjectId)?.relationshipIntention ?? undefined;
+    case 'height_cm':
+      return profiles.get(subjectId)?.heightCm ?? undefined;
+    case 'weight_g': {
+      const profile = profiles.get(subjectId);
+      if (!profile || !profile.weightVisible || profile.weightG == null) return undefined;
+      return profile.weightG;
+    }
+    case 'body_type':
+      return profiles.get(subjectId)?.bodyType ?? undefined;
+    default:
+      return undefined;
+  }
+}
+
+interface NearbyActiveUsersForFilterEval {
+  ids: string[];
+  truncated: boolean;
+  totalActiveInRadius: number;
+}
+
+/**
+ * Same population, same geographic bounding box, same `DASHBOARD_SCAN_CAP`
+ * cap, and same two-query shape (count + capped select) as
+ * filter.service.ts's private `listNearbyActiveUserIds`, built here from
+ * that file's EXPORTED `resolveGeoSearchContext` rather than duplicating
+ * the box math itself. Keeping this population identical to the one
+ * `discoveryService.getRealityDashboard`'s `matchesMyFilters` count uses
+ * is what makes `computeFilterFailureBreakdown`'s zero-failures bucket
+ * agree with that number (see this build's report for the equivalence
+ * proof).
+ */
+async function loadNearbyActiveUsersForFilterEval(ctx: Ctx, userId: string, cap: number): Promise<NearbyActiveUsersForFilterEval> {
+  const geo = await filterService.resolveGeoSearchContext(ctx, userId);
+
+  const params: unknown[] = [userId];
+  let geoClause = '';
+  if (geo.box) {
+    params.push(geo.box.latMin, geo.box.latMax, geo.box.lon1Min, geo.box.lon1Max, geo.box.lon2Min, geo.box.lon2Max);
+    geoClause = `
+       AND p.latitude BETWEEN $2 AND $3
+       AND (p.longitude BETWEEN $4 AND $5 OR p.longitude BETWEEN $6 AND $7)`;
+  }
+
+  const { rows: totalRows } = await ctx.db.query<{ count: string }>(
+    `SELECT count(*)::text AS count
+     FROM users u JOIN profiles p ON p.user_id = u.id
+     WHERE u.status = 'active' AND u.id <> $1${geoClause}`,
+    params,
+  );
+  const totalActiveInRadius = Number(totalRows[0]!.count);
+
+  const limitParamIndex = params.length + 1;
+  const { rows } = await ctx.db.query<{ id: string }>(
+    `SELECT u.id
+     FROM users u JOIN profiles p ON p.user_id = u.id
+     WHERE u.status = 'active' AND u.id <> $1${geoClause}
+     ORDER BY u.last_active_at DESC, u.id ASC
+     LIMIT $${limitParamIndex}`,
+    [...params, cap + 1],
+  );
+  const truncated = rows.length > cap;
+  return { ids: rows.slice(0, cap).map((r) => r.id), truncated, totalActiveInRadius };
+}
+
+interface EnabledFilterRow {
+  filter_key: string;
+  operator: FilterOperator;
+  value: unknown;
+  exclude_if_unset: boolean;
+}
+
+/**
+ * The optimization this build's report measures: ONE pass over the
+ * geographically-bounded candidate sample, evaluating every one of the
+ * caller's enabled filters against every candidate, instead of the
+ * earlier design's one full `countUsersMatchingMyFilters` search PER
+ * enabled filter (each of those itself a fresh geo query plus a batched
+ * evaluation, run inside a scratch transaction that flipped a real
+ * `hard_filters` row and rolled the flip back).
+ *
+ * For each candidate this tracks exactly which of the caller's filters it
+ * fails (stopping early once a second failure is seen, since this build
+ * only needs "0", "exactly 1 (and which one)", or "2+"): a candidate
+ * failing NO filters is in the baseline pool already (reflected in
+ * `discoveryService.getRealityDashboard`'s `matchesMyFilters`, not
+ * counted again here); a candidate failing EXACTLY ONE filter F is
+ * precisely a candidate `additionalCandidatesIfRemoved` for F must count
+ * (removing F alone would let them through, since they already pass every
+ * other filter); a candidate failing TWO OR MORE is a candidate no single
+ * filter relaxation can recover, which is exactly
+ * `candidatesFailingTwoOrMore`. Query count: 1 (this user's own geo box,
+ * via `resolveGeoSearchContext`) + 2 (`loadNearbyActiveUsersForFilterEval`)
+ * + up to 2 (`loadFilterEvalProfiles`/`loadFilterEvalAnswers`, run in
+ * parallel) = at most 5 queries total, REGARDLESS of how many filters are
+ * enabled (bounded by `MAX_FILTERS_EVALUATED` either way) or how large the
+ * candidate sample is (bounded by `DASHBOARD_SCAN_CAP`) -- the earlier
+ * design's cost grew linearly with the enabled-filter count instead.
+ */
+async function computeFilterFailureBreakdown(
+  ctx: Ctx,
+  userId: string,
+  filterRows: EnabledFilterRow[],
+): Promise<{ perFilter: FilterCostEntry[]; candidatesFailingTwoOrMore: SuppressibleCount }> {
+  if (filterRows.length === 0) {
+    return { perFilter: [], candidatesFailingTwoOrMore: suppressSmallCohort(0) };
+  }
+
+  const nearby = await loadNearbyActiveUsersForFilterEval(ctx, userId, filterService.DASHBOARD_SCAN_CAP);
+  if (nearby.ids.length === 0) {
+    return {
+      perFilter: filterRows.map((f) => ({ filterKey: f.filter_key, additionalCandidatesIfRemoved: suppressSmallCohort(0) })),
+      candidatesFailingTwoOrMore: suppressSmallCohort(0),
+    };
+  }
+
+  const qbSlugs = [...new Set(filterRows.filter((f) => f.filter_key.startsWith('qb:')).map((f) => f.filter_key.slice(3)))];
+  const allIds = [...nearby.ids, userId];
+  const [profiles, answers] = await Promise.all([
+    loadFilterEvalProfiles(ctx, allIds),
+    qbSlugs.length > 0 ? loadFilterEvalAnswers(ctx, allIds, qbSlugs) : Promise.resolve(new Map<string, Map<string, unknown>>()),
+  ]);
+
+  const failingOnlyCountByFilter = new Map<string, number>();
+  let failingTwoOrMoreInSample = 0;
+
+  for (const candidateId of nearby.ids) {
+    let failingCount = 0;
+    let onlyFailedKey: string | null = null;
+    for (const f of filterRows) {
+      const value = resolveFilterAttributeValue(candidateId, userId, f.filter_key, profiles, answers);
+      const passes = filterService.evaluateFilter({ operator: f.operator, value: f.value }, value, f.exclude_if_unset);
+      if (passes) continue;
+      failingCount += 1;
+      if (failingCount === 1) onlyFailedKey = f.filter_key;
+      else break; // already know this candidate is in the "two or more" bucket
+    }
+    if (failingCount === 1 && onlyFailedKey) {
+      failingOnlyCountByFilter.set(onlyFailedKey, (failingOnlyCountByFilter.get(onlyFailedKey) ?? 0) + 1);
+    } else if (failingCount >= 2) {
+      failingTwoOrMoreInSample += 1;
+    }
+  }
+
+  const perFilter: FilterCostEntry[] = filterRows.map((f) => {
+    const inSample = failingOnlyCountByFilter.get(f.filter_key) ?? 0;
+    const estimate = filterService.summarizeSampledCount(ctx, `getMyFilterCosts:${f.filter_key}`, inSample, nearby);
+    return { filterKey: f.filter_key, additionalCandidatesIfRemoved: suppressSmallCohort(estimate) };
+  });
+
+  const twoOrMoreEstimate = filterService.summarizeSampledCount(ctx, 'getMyFilterCosts:twoOrMore', failingTwoOrMoreInSample, nearby);
+  return { perFilter, candidatesFailingTwoOrMore: suppressSmallCohort(twoOrMoreEstimate) };
+}
+
+function pickCostliestFilter(perFilter: FilterCostEntry[]): FilterCostEntry | null {
+  let best: FilterCostEntry | null = null;
+  for (const entry of perFilter) {
+    const value = entry.additionalCandidatesIfRemoved.value;
+    if (value === null) continue;
+    if (!best || value > (best.additionalCandidatesIfRemoved.value ?? -1)) best = entry;
+  }
+  return best;
+}
+
+export interface GetMyFilterCostsOpts {
+  forceRefresh?: boolean;
+}
+
+/** True for a plain `{ forceRefresh?: boolean }` options object, false for anything with a `query` method (a `pg.Pool`/`pg.PoolClient`) -- see `getMyFilterCosts`'s doc for why this distinction exists at all. */
+function isFilterCostsOpts(v: unknown): v is GetMyFilterCostsOpts {
+  return typeof v === 'object' && v !== null && !('query' in (v as Record<string, unknown>));
+}
+
+/**
+ * `secondArg` accepts EITHER the real `opts` (the current, intended
+ * calling convention: `getMyFilterCosts(ctx, { forceRefresh: true })`) OR
+ * a legacy `pg.Pool`/`pg.PoolClient` in that position, with `opts` then
+ * passed as a third argument. That second shape only exists because this
+ * build's file-ownership boundary does not include
+ * `tests/perf/scaleCurve.perf.test.ts` (owned by the scale-testing build
+ * running concurrently), which still calls the pre-optimization
+ * three-argument form (`getMyFilterCosts(ctx, pool, opts)`) from before
+ * this build removed the scratch-transaction rollback that needed a raw
+ * pool. Accepting and ignoring it here keeps that file compiling without
+ * this build editing a test outside its ownership; every call site this
+ * build owns uses the plain two-argument form.
+ */
+export async function getMyFilterCosts(
+  ctx: Ctx,
+  secondArg?: unknown,
+  legacyOpts?: GetMyFilterCostsOpts,
+): Promise<UserFilterCosts> {
+  const opts: GetMyFilterCostsOpts | undefined = legacyOpts ?? (isFilterCostsOpts(secondArg) ? secondArg : undefined);
   const { userId } = requireUserActor(ctx);
 
   if (!opts?.forceRefresh) {
-    const cached = await readFilterCostCache(ctx, userId);
-    if (cached) return cached;
+    const cached = await readStatsCache<UserFilterCosts>(ctx, userId, 'filter_costs', FILTER_COST_CACHE_TTL_MS);
+    if (cached) return { ...cached, fromCache: true };
   }
 
   const [reality, filterRows] = await Promise.all([
     discoveryService.getRealityDashboard(ctx),
-    ctx.db.query<{ filter_key: string }>(
-      `SELECT filter_key FROM hard_filters WHERE user_id = $1 AND enabled = true ORDER BY filter_key ASC LIMIT $2`,
+    ctx.db.query<EnabledFilterRow>(
+      `SELECT filter_key, operator, value, exclude_if_unset FROM hard_filters WHERE user_id = $1 AND enabled = true ORDER BY filter_key ASC LIMIT $2`,
       [userId, MAX_FILTERS_EVALUATED],
     ),
   ]);
 
-  const baseline = reality.matchesMyFilters;
-  const perFilter: FilterCostEntry[] = [];
-  for (const { filter_key: filterKey } of filterRows.rows) {
-    const withoutCount = await withScratchRollback(pool, async (client) => {
-      await client.query(`UPDATE hard_filters SET enabled = false WHERE user_id = $1 AND filter_key = $2`, [
-        userId,
-        filterKey,
-      ]);
-      return filterService.countUsersMatchingMyFilters(withDb(ctx, client), userId);
-    });
-    const additional = Math.max(0, withoutCount - baseline);
-    perFilter.push({ filterKey, additionalCandidatesIfRemoved: suppressSmallCohort(additional) });
-  }
+  const { perFilter, candidatesFailingTwoOrMore } = await computeFilterFailureBreakdown(ctx, userId, filterRows.rows);
 
   const payload: UserFilterCosts = {
     currentPool: suppressSmallCohort(reality.matchesMyFilters),
     whoseFiltersIMatch: suppressSmallCohort(reality.whoseFiltersIMatch),
     mutualMatchPool: suppressSmallCohort(reality.mutualMatchPool),
     perFilter,
+    candidatesFailingTwoOrMore,
+    costliestFilter: pickCostliestFilter(perFilter),
     computedAt: ctx.clock.now(),
     fromCache: false,
+    rawPool: {
+      matchesMyFilters: reality.matchesMyFilters,
+      whoseFiltersIMatch: reality.whoseFiltersIMatch,
+      mutualMatchPool: reality.mutualMatchPool,
+    },
   };
 
-  await writeFilterCostCache(ctx, userId, payload);
+  await writeStatsCache(ctx, userId, 'filter_costs', payload);
   return payload;
+}
+
+// =====================================================================
+// Pool Venn: the same three reality-dashboard counts `getMyFilterCosts`
+// already computes, reshaped into a proper two-set Venn (set sizes,
+// intersection, and what sits outside each set) plus a small
+// self-contained accessible SVG rendering of it. See statsVenn.ts for the
+// pure data/rendering logic; this section is just wiring plus caching.
+// =====================================================================
+
+/** Cached implicitly: reads (and, on a cold cache, writes) the SAME `filter_costs` cache entry `getMyFilterCosts` uses, so a page that loads both the filter-cost view and the Venn on one visit pays for `discoveryService.getRealityDashboard` at most once. */
+export async function getMyPoolVenn(ctx: Ctx): Promise<statsVenn.PoolVennData> {
+  requireUserActor(ctx);
+  const costs = await getMyFilterCosts(ctx);
+  return statsVenn.computePoolVenn(costs.rawPool, suppressSmallCohort);
+}
+
+/** `renderPoolVennSvg`'s numbers are exactly `getMyPoolVenn`'s numbers, nothing computed only for the picture -- see statsVenn.ts's own doc on why that matters for a screen reader. */
+export async function getMyPoolVennSvg(ctx: Ctx): Promise<string> {
+  const data = await getMyPoolVenn(ctx);
+  return statsVenn.renderPoolVennSvg(data);
+}
+
+// =====================================================================
+// Peer comparisons: the caller's own behaviour/choices against a
+// geographically-scoped regional typical, read from the small rollup
+// `statsAggregation.job.ts` maintains (`stats_region_activity`/
+// `stats_region_tag_prevalence`) rather than scanned live. See this
+// file's module doc, "COMPARISONS ARE AGGREGATE-VERSUS-AGGREGATE", for
+// where the line between a useful and a harmful comparison sits, and why
+// nothing about how OTHERS responded to the caller is compared here.
+// =====================================================================
+
+export type DistributionPosition = 'below_typical' | 'typical' | 'above_typical' | 'insufficient_data';
+
+export interface QuestionsAnsweredComparison {
+  mine: number;
+  /** Regional median, rounded to the nearest whole question. Null when the region has too little data to compare against (see `MIN_SUPPRESSIBLE_COHORT`). */
+  regionTypical: number | null;
+  position: DistributionPosition;
+}
+
+export interface FilterStrictnessComparison {
+  myEnabledFilterCount: number;
+  regionTypicalEnabledFilterCount: number | null;
+  position: DistributionPosition;
+  costliestFilter: FilterCostEntry | null;
+}
+
+export interface TagPrevalenceEntry {
+  tagId: string;
+  tagName: string;
+  /** Other people near the caller who also hold this tag (the caller's own row, if any, is excluded). Suppressed below `MIN_SUPPRESSIBLE_COHORT`, same rule as every other cross-person count in this file. */
+  nearbyHolders: SuppressibleCount;
+}
+
+export interface UserStatsComparisons {
+  /** False when the caller has no location on file -- every comparison below is then `insufficient_data`/empty rather than falling back to a global (and, for a local product, misleading) average. */
+  hasLocation: boolean;
+  /** The regional population these comparisons are drawn from. Coarser and computed differently than `currentPool`/`whoseFiltersIMatch` above (a precomputed grid cell, not a live per-viewer radius) -- see statsAggregation.job.ts's `REGION_GRID_DEGREES`. */
+  regionPopulation: SuppressibleCount;
+  questionsAnswered: QuestionsAnsweredComparison;
+  filterStrictness: FilterStrictnessComparison;
+  tagPrevalence: TagPrevalenceEntry[];
+  computedAt: Date;
+}
+
+function positionFromBand(mine: number, p25: number | null, p75: number | null): DistributionPosition {
+  if (p25 === null || p75 === null) return 'insufficient_data';
+  if (mine < p25) return 'below_typical';
+  if (mine > p75) return 'above_typical';
+  return 'typical';
+}
+
+function toNullableNumber(v: string | null): number | null {
+  return v === null ? null : Number(v);
+}
+
+interface RegionActivityRow {
+  user_count: number;
+  questions_answered_median: string | null;
+  questions_answered_p25: string | null;
+  questions_answered_p75: string | null;
+  enabled_filters_median: string | null;
+  enabled_filters_p25: string | null;
+  enabled_filters_p75: string | null;
+}
+
+export async function getMyComparisons(ctx: Ctx): Promise<UserStatsComparisons> {
+  const { userId } = requireUserActor(ctx);
+  const now = ctx.clock.now();
+
+  const [profileRow, questionsRow, filterCountRow, myTagRows, costs] = await Promise.all([
+    ctx.db.query<{ latitude: number | null; longitude: number | null }>(
+      `SELECT latitude, longitude FROM profiles WHERE user_id = $1`,
+      [userId],
+    ),
+    ctx.db.query<{ n: string }>(`SELECT count(*)::text AS n FROM user_question_answers WHERE user_id = $1`, [userId]),
+    ctx.db.query<{ n: string }>(`SELECT count(*)::text AS n FROM hard_filters WHERE user_id = $1 AND enabled = true`, [userId]),
+    ctx.db.query<{ tag_id: string; visibility: string; name: string }>(
+      `SELECT ut.tag_id, ut.visibility, it.name
+       FROM user_tags ut JOIN interest_tags it ON it.id = ut.tag_id
+       WHERE ut.user_id = $1`,
+      [userId],
+    ),
+    getMyFilterCosts(ctx),
+  ]);
+
+  const myQuestionsAnswered = Number(questionsRow.rows[0]?.n ?? '0');
+  const myEnabledFilterCount = Number(filterCountRow.rows[0]?.n ?? '0');
+  const costliestFilter = costs.costliestFilter;
+  const profile = profileRow.rows[0];
+
+  if (!profile || profile.latitude == null || profile.longitude == null) {
+    return {
+      hasLocation: false,
+      regionPopulation: suppressSmallCohort(0),
+      questionsAnswered: { mine: myQuestionsAnswered, regionTypical: null, position: 'insufficient_data' },
+      filterStrictness: {
+        myEnabledFilterCount,
+        regionTypicalEnabledFilterCount: null,
+        position: 'insufficient_data',
+        costliestFilter,
+      },
+      tagPrevalence: [],
+      computedAt: now,
+    };
+  }
+
+  const regionKey = regionKeyFor(profile.latitude, profile.longitude);
+  const { rows: regionRows } = await ctx.db.query<RegionActivityRow>(
+    `SELECT user_count, questions_answered_median, questions_answered_p25, questions_answered_p75,
+            enabled_filters_median, enabled_filters_p25, enabled_filters_p75
+     FROM stats_region_activity WHERE region_key = $1`,
+    [regionKey],
+  );
+  const region = regionRows[0];
+  const regionUserCount = region?.user_count ?? 0;
+  const regionHasEnoughData = region !== undefined && regionUserCount >= MIN_SUPPRESSIBLE_COHORT;
+
+  const questionsAnswered: QuestionsAnsweredComparison = regionHasEnoughData
+    ? {
+        mine: myQuestionsAnswered,
+        regionTypical:
+          region!.questions_answered_median === null ? null : Math.round(Number(region!.questions_answered_median)),
+        position: positionFromBand(
+          myQuestionsAnswered,
+          toNullableNumber(region!.questions_answered_p25),
+          toNullableNumber(region!.questions_answered_p75),
+        ),
+      }
+    : { mine: myQuestionsAnswered, regionTypical: null, position: 'insufficient_data' };
+
+  const filterStrictness: FilterStrictnessComparison = regionHasEnoughData
+    ? {
+        myEnabledFilterCount,
+        regionTypicalEnabledFilterCount:
+          region!.enabled_filters_median === null ? null : Math.round(Number(region!.enabled_filters_median)),
+        position: positionFromBand(
+          myEnabledFilterCount,
+          toNullableNumber(region!.enabled_filters_p25),
+          toNullableNumber(region!.enabled_filters_p75),
+        ),
+        costliestFilter,
+      }
+    : { myEnabledFilterCount, regionTypicalEnabledFilterCount: null, position: 'insufficient_data', costliestFilter };
+
+  let tagPrevalence: TagPrevalenceEntry[] = [];
+  if (myTagRows.rows.length > 0) {
+    const tagIds = myTagRows.rows.map((r) => r.tag_id);
+    const { rows: prevalenceRows } = await ctx.db.query<{ tag_id: string; user_count: number }>(
+      `SELECT tag_id, user_count FROM stats_region_tag_prevalence WHERE region_key = $1 AND tag_id = ANY($2::uuid[])`,
+      [regionKey, tagIds],
+    );
+    const prevalenceByTag = new Map(prevalenceRows.map((r) => [r.tag_id, r.user_count]));
+    tagPrevalence = myTagRows.rows.map((t) => {
+      const raw = prevalenceByTag.get(t.tag_id) ?? 0;
+      // The rollup counts the caller's own row too, if their tag wasn't
+      // hidden -- subtract self so "nearby holders" means OTHER people,
+      // matching every other SuppressibleCount in this file.
+      const others = Math.max(0, raw - (t.visibility === 'hidden' ? 0 : 1));
+      return { tagId: t.tag_id, tagName: t.name, nearbyHolders: suppressSmallCohort(others) };
+    });
+  }
+
+  return {
+    hasLocation: true,
+    regionPopulation: suppressSmallCohort(regionUserCount),
+    questionsAnswered,
+    filterStrictness,
+    tagPrevalence,
+    computedAt: now,
+  };
 }

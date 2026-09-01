@@ -361,20 +361,46 @@ export async function recordTrustEvent(ctx: Ctx, input: RecordTrustEventInput): 
   return rowToTrustEvent(rows[0]!);
 }
 
-/** §25.6: recompute `trust_score`/`trust_level` for one user from their event history, persist, and notify on a level change. */
+/**
+ * §25.6: recompute `trust_score`/`trust_level` for one user from their
+ * event history, persist, and notify on a level change.
+ *
+ * INTEGRITY FIX (normalization audit item 3): `trust_level` used to be
+ * computed here in TypeScript (`breakdown.level`, via `levelForScore`
+ * reading `ctx.config`) and passed down as a literal alongside
+ * `trust_score` in the UPDATE — two separate values, from two separate
+ * computations, that happened to agree only because this one function is
+ * disciplined about it. The write below instead derives `trust_level`
+ * from `trust_score` INSIDE the same UPDATE statement, via the
+ * `trust_level_for_score` SQL function (db/migrations/025_integrity.sql)
+ * — the database computes the pair from one input, in one statement,
+ * reading `config_entries` live, so this function's own possibly-stale
+ * `ctx.config` cache can never disagree with what actually lands in the
+ * row. `trust_level_for_score` mirrors `levelForScore`'s bands exactly
+ * and re-reads `config_entries` on every call, so it stays correct
+ * across a config change without needing a schema migration (unlike a
+ * GENERATED column, which Postgres forbids from consulting another
+ * table, and unlike a CHECK constraint, which Postgres forbids from
+ * referencing another table at all — a config-driven bound genuinely
+ * cannot be expressed as either). This closes the gap for the one real
+ * production writer; see the build report for why a table-level
+ * constraint forcing EVERY write (including test fixtures that
+ * deliberately set `trust_level` independent of `trust_score` to pin a
+ * tier for unrelated test setup) was not added on top.
+ */
 export async function recalculateTrustScore(ctx: Ctx, userId: string): Promise<{ trustScore: number; trustLevel: TrustLevel }> {
   const before = await ctx.db.query<{ trust_level: TrustLevel }>('SELECT trust_level FROM users WHERE id = $1', [userId]);
   const previousLevel = before.rows[0]?.trust_level;
 
   const breakdown = await computeBreakdown(ctx, userId);
 
-  await ctx.db.query('UPDATE users SET trust_score = $1, trust_level = $2 WHERE id = $3', [
-    breakdown.clampedScore,
-    breakdown.level,
-    userId,
-  ]);
+  const { rows: updatedRows } = await ctx.db.query<{ trust_level: TrustLevel }>(
+    'UPDATE users SET trust_score = $1, trust_level = trust_level_for_score($1) WHERE id = $2 RETURNING trust_level',
+    [breakdown.clampedScore, userId],
+  );
+  const newLevel = updatedRows[0]!.trust_level;
 
-  if (previousLevel && previousLevel !== breakdown.level) {
+  if (previousLevel && previousLevel !== newLevel) {
     // Best-effort: a notification-delivery hiccup must never roll back an
     // already-persisted trust score change (notification.service.ts is a
     // leaf owned by a sibling agent and may not be implemented yet during
@@ -384,14 +410,14 @@ export async function recalculateTrustScore(ctx: Ctx, userId: string): Promise<{
         userId,
         eventType: 'trust_level_changed',
         channel: 'in_app',
-        payload: { previousLevel, newLevel: breakdown.level },
+        payload: { previousLevel, newLevel },
       });
     } catch (err) {
       ctx.logger.warn('trust.recalculateTrustScore: notify failed', { userId, err: (err as Error).message });
     }
   }
 
-  return { trustScore: breakdown.clampedScore, trustLevel: breakdown.level };
+  return { trustScore: breakdown.clampedScore, trustLevel: newLevel };
 }
 
 /**

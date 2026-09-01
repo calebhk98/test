@@ -11,19 +11,35 @@
  * `adminStats.service.ts`: small-cohort suppression, no trust weights, no
  * per-person data, aggregates-only for admin). Its job is narrower and
  * mechanical: never let a field the service layer didn't intend to expose
- * ride along by accident.
+ * ride along by accident. `serializeUserFilterCosts` is the sharpest
+ * example of that job actually mattering: `UserFilterCosts` carries a
+ * `rawPool` field for `getMyPoolVenn` to reuse internally, and this
+ * allowlist is the one thing standing between that pre-suppression number
+ * and an HTTP response.
  */
 import type {
   UserStatsOverview,
   UserStatsTrends,
   UserPhotoStats,
   UserFilterCosts,
+  FilterCostEntry,
+  UserStatsComparisons,
   SuppressibleCount,
 } from '../../services/stats.service.js';
+import type { PoolVennData, PoolVennRegion } from '../../services/statsVenn.js';
 import type { AdminStatsOverview, AdminRetention } from '../../services/adminStats.service.js';
 
 function suppressible(c: SuppressibleCount): { value: number | null; suppressed: boolean } {
   return { value: c.value, suppressed: c.suppressed };
+}
+
+interface FilterCostEntryView {
+  filterKey: string;
+  additionalCandidatesIfRemoved: { value: number | null; suppressed: boolean };
+}
+
+function filterCostEntry(f: FilterCostEntry): FilterCostEntryView {
+  return { filterKey: f.filterKey, additionalCandidatesIfRemoved: suppressible(f.additionalCandidatesIfRemoved) };
 }
 
 export interface UserStatsOverviewView {
@@ -66,9 +82,16 @@ export interface UserFilterCostsView {
   currentPool: { value: number | null; suppressed: boolean };
   whoseFiltersIMatch: { value: number | null; suppressed: boolean };
   mutualMatchPool: { value: number | null; suppressed: boolean };
-  perFilter: Array<{ filterKey: string; additionalCandidatesIfRemoved: { value: number | null; suppressed: boolean } }>;
+  perFilter: FilterCostEntryView[];
+  candidatesFailingTwoOrMore: { value: number | null; suppressed: boolean };
+  costliestFilter: FilterCostEntryView | null;
   computedAt: Date;
   fromCache: boolean;
+  // Deliberately no `rawPool` field here: `UserFilterCosts.rawPool` exists
+  // only so `stats.service.ts#getMyPoolVenn` can reuse this same cached
+  // computation without a second reality-dashboard call -- it is pre-
+  // suppression, unlike every field above, and this allowlist is what
+  // keeps it from ever reaching an HTTP response.
 }
 
 export function serializeUserFilterCosts(costs: UserFilterCosts): UserFilterCostsView {
@@ -76,12 +99,74 @@ export function serializeUserFilterCosts(costs: UserFilterCosts): UserFilterCost
     currentPool: suppressible(costs.currentPool),
     whoseFiltersIMatch: suppressible(costs.whoseFiltersIMatch),
     mutualMatchPool: suppressible(costs.mutualMatchPool),
-    perFilter: costs.perFilter.map((f) => ({
-      filterKey: f.filterKey,
-      additionalCandidatesIfRemoved: suppressible(f.additionalCandidatesIfRemoved),
-    })),
+    perFilter: costs.perFilter.map(filterCostEntry),
+    candidatesFailingTwoOrMore: suppressible(costs.candidatesFailingTwoOrMore),
+    costliestFilter: costs.costliestFilter ? filterCostEntry(costs.costliestFilter) : null,
     computedAt: costs.computedAt,
     fromCache: costs.fromCache,
+  };
+}
+
+interface PoolVennRegionView {
+  label: string;
+  count: { value: number | null; suppressed: boolean };
+}
+
+function vennRegion(r: PoolVennRegion): PoolVennRegionView {
+  return { label: r.label, count: suppressible(r.count) };
+}
+
+export interface UserPoolVennView {
+  setA: PoolVennRegionView;
+  setB: PoolVennRegionView;
+  intersection: PoolVennRegionView;
+  onlyA: PoolVennRegionView;
+  onlyB: PoolVennRegionView;
+}
+
+export function serializeUserPoolVenn(data: PoolVennData): UserPoolVennView {
+  return {
+    setA: vennRegion(data.setA),
+    setB: vennRegion(data.setB),
+    intersection: vennRegion(data.intersection),
+    onlyA: vennRegion(data.onlyA),
+    onlyB: vennRegion(data.onlyB),
+  };
+}
+
+export interface UserStatsComparisonsView {
+  hasLocation: boolean;
+  regionPopulation: { value: number | null; suppressed: boolean };
+  questionsAnswered: UserStatsComparisons['questionsAnswered'];
+  filterStrictness: {
+    myEnabledFilterCount: number;
+    regionTypicalEnabledFilterCount: number | null;
+    position: UserStatsComparisons['filterStrictness']['position'];
+    costliestFilter: FilterCostEntryView | null;
+  };
+  tagPrevalence: Array<{ tagId: string; tagName: string; nearbyHolders: { value: number | null; suppressed: boolean } }>;
+  computedAt: Date;
+}
+
+export function serializeUserStatsComparisons(comparisons: UserStatsComparisons): UserStatsComparisonsView {
+  return {
+    hasLocation: comparisons.hasLocation,
+    regionPopulation: suppressible(comparisons.regionPopulation),
+    questionsAnswered: comparisons.questionsAnswered,
+    filterStrictness: {
+      myEnabledFilterCount: comparisons.filterStrictness.myEnabledFilterCount,
+      regionTypicalEnabledFilterCount: comparisons.filterStrictness.regionTypicalEnabledFilterCount,
+      position: comparisons.filterStrictness.position,
+      costliestFilter: comparisons.filterStrictness.costliestFilter
+        ? filterCostEntry(comparisons.filterStrictness.costliestFilter)
+        : null,
+    },
+    tagPrevalence: comparisons.tagPrevalence.map((t) => ({
+      tagId: t.tagId,
+      tagName: t.tagName,
+      nearbyHolders: suppressible(t.nearbyHolders),
+    })),
+    computedAt: comparisons.computedAt,
   };
 }
 

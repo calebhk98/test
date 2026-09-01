@@ -9,18 +9,18 @@
  *      could reach (discovery grid, reality dashboard, a profile view,
  *      the matches list, a conversation timeline, and both stats calls),
  *      the SAME fixed home-city population is seeded at three different
- *      TOTAL platform sizes (1,000 / 10,000 / 50,000 — the rest of each
+ *      TOTAL platform sizes (1,000 / 10,000 / 50,000, the rest of each
  *      total lives in cities >1,000km from the viewer's own, so it can
- *      never enter the viewer's geographic box — see
+ *      never enter the viewer's geographic box, see
  *      `seedScaleCurve.ts`'s file doc for why Chicago). If a path's cost
  *      is genuinely a function of "people near me," not "people," its
  *      latency curve across these three runs should be flat. This is the
  *      generalization of `discovery.perf.test.ts`'s "same city, different
  *      total pool" proof to the actual axis the capacity task asks about:
  *      "same viewer, different REST-OF-PLATFORM size."
- *   2. GROWTH CURVE FOR EXTRAPOLATION. `getSeedingMs`/the printed table
+ *   2. GROWTH CURVE FOR EXTRAPOLATION. The seed-timing console output below
  *      also gives docs/capacity.md real numbers to extrapolate FROM (e.g.
- *      seed throughput, row counts) rather than assert from nothing — see
+ *      seed throughput, row counts) rather than assert from nothing; see
  *      that doc's arithmetic, which cites this file's console output
  *      directly.
  *
@@ -72,7 +72,7 @@ function countingDb(realPool: pg.Pool): { db: DbClient; count: () => number; res
     db: {
       query: ((...args: unknown[]) => {
         n++;
-        // @ts-expect-error — forwarding pg.Pool#query's overloaded signature verbatim.
+        // @ts-expect-error, forwarding pg.Pool#query's overloaded signature verbatim.
         return realPool.query(...args);
       }) as DbClient['query'],
     },
@@ -170,7 +170,7 @@ for (const scale of SCALES) {
       _resetEnvCacheForTests();
       await adminPool.query(`DROP DATABASE IF EXISTS ${dbName}`);
 
-      assert.ok(true, 'scale point recorded — flatness is asserted once, after every scale has run');
+      assert.ok(true, 'scale point recorded, flatness is asserted once, after every scale has run');
     },
   );
 }
@@ -189,7 +189,7 @@ test('scale curve: print the measured table and assert flatness across populatio
   // FLATNESS ASSERTION: query count must never grow with total population
   // (it may vary slightly path-to-path for reasons unrelated to N, e.g.
   // cache warm state, but must not trend upward across scales) and
-  // latency must stay within a generous constant-factor band — generous
+  // latency must stay within a generous constant-factor band, generous
   // because real Postgres latency at fixed row counts still has run to
   // run noise, disk cache warmth, and (as total DB size grows across
   // scales) marginally larger indexes to plan around even for a query
@@ -203,14 +203,14 @@ test('scale curve: print the measured table and assert flatness across populatio
 
     assert.ok(
       last.queries <= first.queries + 2,
-      `${path}: query count grew from ${first.queries} (N=${first.scale}) to ${last.queries} (N=${last.scale}) — cost should not grow with total population`,
+      `${path}: query count grew from ${first.queries} (N=${first.scale}) to ${last.queries} (N=${last.scale}), cost should not grow with total population`,
     );
 
     const minMs = Math.max(1, Math.min(...rows.map((r) => r.ms)));
     const maxMs = Math.max(...rows.map((r) => r.ms));
     assert.ok(
       maxMs / minMs <= MAX_LATENCY_RATIO,
-      `${path}: latency ranged from ${minMs}ms to ${maxMs}ms across scales ${JSON.stringify(rows.map((r) => [r.scale, r.ms]))} — ratio ${(maxMs / minMs).toFixed(1)}x exceeds the ${MAX_LATENCY_RATIO}x flatness ceiling`,
+      `${path}: latency ranged from ${minMs}ms to ${maxMs}ms across scales ${JSON.stringify(rows.map((r) => [r.scale, r.ms]))}, ratio ${(maxMs / minMs).toFixed(1)}x exceeds the ${MAX_LATENCY_RATIO}x flatness ceiling`,
     );
   }
 });

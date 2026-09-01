@@ -42,6 +42,18 @@
  *     count): one grouped query bounded to `GAUGE_LOOKBACK_DAYS` (default
  *     ~2 years) of `date_proposals.scheduled_end`.
  *
+ *  4. `stats_region_activity` / `stats_region_tag_prevalence` (024_stats_
+ *     comparisons.sql, user page's peer-comparison section): unlike 1-3,
+ *     these are not time-windowed — a comparison needs a snapshot of the
+ *     WHOLE current active population's distribution, not a trailing
+ *     window. Every run TRUNCATEs both tables and repopulates them with
+ *     one grouped `INSERT ... SELECT` each (never a per-region write
+ *     loop), bucketing every active user with a location into a coarse
+ *     geographic cell (see `REGION_GRID_DEGREES`/`regionKeyFor`) and
+ *     computing per-region medians/quartiles and tag counts in that one
+ *     pass. See `db/migrations/024_stats_comparisons.sql`'s own header for
+ *     the privacy rules this pair of tables follows.
+ *
  * FRESHNESS: every run appends one `stats_aggregation_runs` row. Both
  * stats services surface the most recent run's `run_at` so a viewer always
  * sees an honest "as of" time rather than an implied-live number. Default
@@ -51,11 +63,14 @@
  * reconciliation reads `payment_ledger` directly in a test to prove the
  * rollup matches it exactly, not to prove it's instantaneous).
  *
- * The per-user stats page does NOT read from these tables — a user's own
- * activity is already a small, indexed slice (their own rows, via the
- * existing `sender_id`/`recipient_id`/`user_id` indexes), so querying it
- * live is cheap regardless of platform size. See `stats.service.ts`'s own
- * module doc.
+ * The per-user stats page mostly does NOT read from these tables — a
+ * user's own activity is already a small, indexed slice (their own rows,
+ * via the existing `sender_id`/`recipient_id`/`user_id` indexes), so
+ * querying it live is cheap regardless of platform size. The one
+ * exception is the peer-comparison section above (point 4): "how does my
+ * activity compare to typical" is inherently a question about everyone
+ * else, so it is the one part of the user page that reads a rollup rather
+ * than computing live — see `stats.service.ts`'s own module doc.
  */
 import type { Ctx } from '../lib/ctx.js';
 import type { JobDefinition } from './types.js';
@@ -192,6 +207,8 @@ export interface StatsAggregationResult {
   windowEndDay: string;
   daysUpserted: number;
   cohortsUpserted: number;
+  regionsUpserted: number;
+  tagRowsUpserted: number;
   durationMs: number;
   backfilled: boolean;
 }
@@ -326,6 +343,86 @@ async function aggregateGauges(ctx: Ctx, now: Date): Promise<void> {
   );
 }
 
+// =====================================================================
+// Region comparisons (024_stats_comparisons.sql, user page's peer-
+// comparison section). See that migration's header and this file's
+// module doc, point 4, for the full write-up.
+// =====================================================================
+
+/** Side of a coarse geographic grid cell, in degrees. ~220km at the equator, coarser toward the poles as longitude compresses -- deliberately rougher than filter.service.ts's per-viewer radius box, because this groups EVERY user in one pass rather than answering one viewer's query at a time. Never returned to a client -- an internal join key only. */
+export const REGION_GRID_DEGREES = 2;
+
+/** Must stay behaviorally identical to `regionKeySqlExpr` below -- both compute the same coarse grid cell from a latitude/longitude pair, one in SQL (for the rollup writer) and one in JS (for the read path resolving a single viewer's own cell against the rollup). */
+export function regionKeyFor(latitude: number, longitude: number): string {
+  return `${Math.floor(latitude / REGION_GRID_DEGREES)}:${Math.floor(longitude / REGION_GRID_DEGREES)}`;
+}
+
+/** SQL form of `regionKeyFor`, evaluated against `latitude`/`longitude` columns on table alias `alias`. */
+function regionKeySqlExpr(alias: string): string {
+  return `(floor(${alias}.latitude / ${REGION_GRID_DEGREES})::int::text || ':' || floor(${alias}.longitude / ${REGION_GRID_DEGREES})::int::text)`;
+}
+
+/** Active users with a known location -- the population every region aggregate below is grouped over. `questionsAnswered` here intentionally counts every `user_question_answers` row regardless of status, matching `stats.service.ts#getMyCompleteness`'s own definition of "questions answered" (skipped/prefer_not_to_say rows count as attempted), so a viewer's own number and the regional typical number mean the same thing. */
+function regionPopulationCte(): string {
+  return `
+    pop AS (
+      SELECT u.id AS user_id, ${regionKeySqlExpr('p')} AS region_key
+      FROM users u JOIN profiles p ON p.user_id = u.id
+      WHERE u.status = 'active' AND p.latitude IS NOT NULL AND p.longitude IS NOT NULL
+    )`;
+}
+
+/** One TRUNCATE + one grouped INSERT..SELECT -- the write side never loops per region, so its round-trip count stays fixed regardless of how many distinct regions exist. */
+async function aggregateRegionActivity(ctx: Ctx): Promise<number> {
+  await ctx.db.query('TRUNCATE stats_region_activity');
+  const result = await ctx.db.query(`
+    INSERT INTO stats_region_activity (
+      region_key, user_count,
+      questions_answered_median, questions_answered_p25, questions_answered_p75,
+      enabled_filters_median, enabled_filters_p25, enabled_filters_p75, computed_at
+    )
+    WITH ${regionPopulationCte()},
+    qa AS (SELECT user_id, count(*) AS n FROM user_question_answers GROUP BY user_id),
+    ef AS (SELECT user_id, count(*) AS n FROM hard_filters WHERE enabled GROUP BY user_id)
+    SELECT
+      pop.region_key,
+      count(*)::int AS user_count,
+      percentile_cont(0.5) WITHIN GROUP (ORDER BY coalesce(qa.n, 0)) AS questions_answered_median,
+      percentile_cont(0.25) WITHIN GROUP (ORDER BY coalesce(qa.n, 0)) AS questions_answered_p25,
+      percentile_cont(0.75) WITHIN GROUP (ORDER BY coalesce(qa.n, 0)) AS questions_answered_p75,
+      percentile_cont(0.5) WITHIN GROUP (ORDER BY coalesce(ef.n, 0)) AS enabled_filters_median,
+      percentile_cont(0.25) WITHIN GROUP (ORDER BY coalesce(ef.n, 0)) AS enabled_filters_p25,
+      percentile_cont(0.75) WITHIN GROUP (ORDER BY coalesce(ef.n, 0)) AS enabled_filters_p75,
+      now()
+    FROM pop
+    LEFT JOIN qa ON qa.user_id = pop.user_id
+    LEFT JOIN ef ON ef.user_id = pop.user_id
+    GROUP BY pop.region_key`);
+  return result.rowCount ?? 0;
+}
+
+/** Same one-truncate-plus-one-insert shape as `aggregateRegionActivity`. Only tags a user chose to make visible beyond just themselves ('public' or 'private_reciprocal') count toward the region's prevalence numbers -- see 024_stats_comparisons.sql's PRIVACY note for why a 'hidden' tag is excluded even though only a count, never an identity, would ever be exposed. */
+async function aggregateRegionTagPrevalence(ctx: Ctx): Promise<number> {
+  await ctx.db.query('TRUNCATE stats_region_tag_prevalence');
+  const result = await ctx.db.query(`
+    INSERT INTO stats_region_tag_prevalence (region_key, tag_id, user_count, computed_at)
+    WITH ${regionPopulationCte()}
+    SELECT pop.region_key, ut.tag_id, count(*)::int AS user_count, now()
+    FROM user_tags ut
+    JOIN pop ON pop.user_id = ut.user_id
+    WHERE ut.visibility <> 'hidden'
+    GROUP BY pop.region_key, ut.tag_id`);
+  return result.rowCount ?? 0;
+}
+
+async function aggregateRegionComparisons(ctx: Ctx): Promise<{ regionsUpserted: number; tagRowsUpserted: number }> {
+  const [regionsUpserted, tagRowsUpserted] = await Promise.all([
+    aggregateRegionActivity(ctx),
+    aggregateRegionTagPrevalence(ctx),
+  ]);
+  return { regionsUpserted, tagRowsUpserted };
+}
+
 export async function runStatsAggregationJob(ctx: Ctx): Promise<StatsAggregationResult> {
   const start = Date.now();
   const now = ctx.clock.now();
@@ -344,9 +441,10 @@ export async function runStatsAggregationJob(ctx: Ctx): Promise<StatsAggregation
   const retentionWindowStart = addUtcDays(todayStart, -(RETENTION_WINDOW_DAYS - 1));
   const retentionStart = backfilled && windowStart < retentionWindowStart ? windowStart : retentionWindowStart;
 
-  const [daysUpserted, cohortsUpserted] = await Promise.all([
+  const [daysUpserted, cohortsUpserted, regionComparisons] = await Promise.all([
     aggregateDailyWindow(ctx, windowStart, windowEndExclusive),
     aggregateRetention(ctx, retentionStart, windowEndExclusive),
+    aggregateRegionComparisons(ctx),
   ]);
   await aggregateGauges(ctx, now);
 
@@ -362,6 +460,8 @@ export async function runStatsAggregationJob(ctx: Ctx): Promise<StatsAggregation
     windowEndDay: utcDayKey(addUtcDays(windowEndExclusive, -1)),
     daysUpserted,
     cohortsUpserted,
+    regionsUpserted: regionComparisons.regionsUpserted,
+    tagRowsUpserted: regionComparisons.tagRowsUpserted,
     durationMs,
     backfilled,
   };
@@ -369,7 +469,7 @@ export async function runStatsAggregationJob(ctx: Ctx): Promise<StatsAggregation
 
 export const statsAggregationJob: JobDefinition = {
   name: 'stats_aggregation',
-  description: 'Re-aggregates a bounded trailing window of platform activity into stats_platform_daily / stats_cohort_retention / stats_platform_gauges for the admin and user stats pages.',
+  description: 'Re-aggregates a bounded trailing window of platform activity into stats_platform_daily / stats_cohort_retention / stats_platform_gauges / stats_region_activity / stats_region_tag_prevalence for the admin and user stats pages.',
   intervalMs: 15 * 60 * 1000, // 15 minutes
   run: runStatsAggregationJob,
 };
