@@ -1,40 +1,63 @@
 import type { Ctx } from '../lib/ctx.js';
 import { addDays } from '../lib/time.js';
-import type { Answer, AnswerValue, CompatibilityScoreRow, Question, QuestionPolarity } from '../domain/types.js';
+import type { CompatibilityScoreRow } from '../domain/types.js';
 import { boundingBoxForRadius, DEFAULT_DISCOVERY_RADIUS_KM } from './filter.service.js';
+import { aggregateQuestionScores, presentationFor } from '../domain/questions/index.js';
+import type {
+  ImportanceLevel,
+  QuestionAnswerState,
+  QuestionDefinition,
+  QuestionType,
+  QuestionTypeDefinition,
+} from '../domain/questions/index.js';
 
 /**
- * compatibility.service — the §16.2 scoring formula and its storage.
+ * compatibility.service — pairwise compatibility scoring and its storage.
  * Spec: §16, §25.4 (nightly refresh job).
  *
- * Owning agent: B.
+ * Owning agent: B (question-system cutover build).
  *
  * INVARIANT: this module SORTS; it never decides who is eligible to be
  * seen. `discovery.service.ts` calls `getScore`/`getScoresForCandidates`
  * only after `filter.service.ts#passesMutualFilters` has already gated the
  * candidate pool (spec §16.1, §9.1).
  *
- * `computePairScore` is a pure function of two users' answers + the
- * question bank — no I/O — so it's directly unit-testable against the
- * worked example in spec §16.2. `getScore`/`refreshScoresForUser` are the
- * I/O-performing wrappers that read `answers`, call `computePairScore`,
- * and read/write the `compatibility_scores` materialization (spec §16.3).
+ * CUTOVER (question-system unification): this module used to read the OLD
+ * `questions`/`answers` tables (a flat 1-5 self/partner pair with no type
+ * or importance information) and implement its own §16.2 formula inline.
+ * Both are retired — db/migrations/019_question_cutover.sql drops those
+ * tables outright. `computePairScore` below is now a thin, still-pure
+ * wrapper around `src/domain/questions/scoring.ts#aggregateQuestionScores`
+ * (built and fully unit-tested independently — see that file and
+ * `tests/unit/questionScoring.test.ts`), and every I/O helper in this file
+ * reads the NEW `question_bank` / `user_question_answers` tables
+ * (db/migrations/008_questions.sql) instead. There is exactly one
+ * question bank now; nothing in this file reads `questions`/`answers`.
+ *
+ * `computePairScore` is a pure function of two users' typed answers + the
+ * active question bank — no I/O — so it stays directly unit-testable.
+ * `getScore`/`getScoresForCandidates`/`refreshScoresForUser`/
+ * `refreshAllScores` are the I/O-performing wrappers that read
+ * `question_bank`/`user_question_answers`, call `computePairScore`, and
+ * read/write the `compatibility_scores` materialization (spec §16.3).
  *
  * LEAF MODULE: per INTERFACES.md's module table, `compatibility.service`'s
- * "May call" column is blank — it is a leaf that reads `answers`/
- * `questions` directly and calls no other service module. In particular it
- * does NOT call `filter.service` even though the stub JSDoc for
- * `refreshScoresForUser` (frozen, written before this file was
- * implemented) says "against every candidate that currently passes their
- * mutual filters" — that would require importing `filter.service`, which
- * the authoritative call-graph forbids for this module. Read literally:
- * `refreshScoresForUser`/`refreshAllScores` (re)compute the score for every
- * *other active user*, unfiltered; `discovery.service.ts` (which is
- * sanctioned to call both `filter` and `compatibility`) is what actually
- * combines a filter-passed candidate set with these scores at read time.
- * Flagged in the handoff report as a stub-doc/call-graph conflict I
- * resolved in favor of the call-graph (the document says it is
- * authoritative).
+ * "May call" column is blank — it is a leaf that reads the question bank
+ * and its answers directly and calls no other SERVICE module (the
+ * SCALE FIX AMENDMENT note below documents the one, deliberate, pure-only
+ * exception). It does NOT call `filter.service#passesMutualFilters` or
+ * `question.service.ts` — `discovery.service.ts` (sanctioned to call both
+ * `filter` and `compatibility`) is what combines a filter-passed candidate
+ * set with these scores at read time. It also does not enforce deal
+ * breakers itself: a `deal_breaker`-importance answer is excluded from
+ * WEIGHTED SCORING by `scoreQuestionContribution` (see scoring.ts) and
+ * enforced as a hard filter entirely through `filter.service.ts`'s
+ * `hard_filters` table instead (populated by
+ * `question.service#getMyDealBreakerFilterRows` +
+ * `filter.service#updateMyFilters` — see question.service.ts's
+ * `putMyQuestionAnswer`). "Filters are strictly enforced and never
+ * overridden by scoring" holds because scoring never even sees a deal
+ * breaker as a scored term.
  *
  * SCALE FIX AMENDMENT (docs/scale-and-sources.md Part 1, §1.2/§1.9 fix #3
  * — see the "bounded nightly materialization" doc further down this file):
@@ -56,85 +79,133 @@ import { boundingBoxForRadius, DEFAULT_DISCOVERY_RADIUS_KM } from './filter.serv
  * two copies together) is exactly the "same formula, two maintained
  * copies" duplication pattern docs/scale-and-sources.md §3.4 already
  * flags as a drift risk elsewhere in this codebase, for a much cheaper
- * `import`.
+ * `import`. This module ALSO now imports pure, no-I/O helpers from
+ * `../domain/questions/index.js` (the shared question-scoring domain
+ * layer) — that import is not a service dependency at all (that directory
+ * contains zero I/O, per its own module docs) and is the intended
+ * integration seam `scoring.ts` was built for.
  */
 
 // =====================================================================
-// Row <-> domain mapping (reads `answers`/`questions` directly — this
-// module owns no other service dependency, see LEAF MODULE note above).
+// Row <-> domain mapping (reads `question_bank`/`user_question_answers`
+// directly — this module owns no other service dependency, see LEAF
+// MODULE note above). Deliberately duplicated, in miniature, from
+// question.service.ts's own row mapping rather than importing it — this
+// module stays a leaf that never calls into another service.
 // =====================================================================
 
-interface QuestionRow {
+interface QuestionBankRow {
   id: string;
   slug: string;
+  version: number;
   category: string;
+  subcategory: string | null;
+  tags: string[];
+  question_type: QuestionType;
   question_text: string;
-  self_left_label: string;
-  self_right_label: string;
-  partner_left_label: string;
-  partner_right_label: string;
-  weight: number;
-  polarity: QuestionPolarity;
+  type_definition: QuestionTypeDefinition;
+  base_weight: number;
   sensitive: boolean;
   active: boolean;
-  created_at: Date;
-  updated_at: Date;
+  answer_rate_hint: number;
 }
 
-function questionFromRow(row: QuestionRow): Question {
+function questionDefinitionFromRow(row: QuestionBankRow): QuestionDefinition {
   return {
     id: row.id,
     slug: row.slug,
+    version: row.version,
     category: row.category,
+    subcategory: row.subcategory,
+    tags: row.tags,
     questionText: row.question_text,
-    selfLeftLabel: row.self_left_label,
-    selfRightLabel: row.self_right_label,
-    partnerLeftLabel: row.partner_left_label,
-    partnerRightLabel: row.partner_right_label,
-    weight: row.weight,
-    polarity: row.polarity,
+    typeDef: row.type_definition,
+    presentation: presentationFor(row.type_definition),
+    baseWeight: row.base_weight,
     sensitive: row.sensitive,
     active: row.active,
-    createdAt: row.created_at,
-    updatedAt: row.updated_at,
+    answerRateHint: row.answer_rate_hint,
   };
 }
 
-interface AnswerRow {
+/** The whole active, current question bank — every question a score could possibly be computed over. */
+async function loadActiveCurrentQuestions(ctx: Ctx): Promise<QuestionDefinition[]> {
+  const { rows } = await ctx.db.query<QuestionBankRow>(
+    `SELECT id, slug, version, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint
+     FROM question_bank WHERE is_current = true AND active = true`,
+  );
+  return rows.map(questionDefinitionFromRow);
+}
+
+interface UserQuestionAnswerRow {
   user_id: string;
-  question_id: string;
-  self_value: AnswerValue;
-  partner_value: AnswerValue;
-  updated_at: Date;
+  question_slug: string;
+  status: 'skipped' | 'prefer_not_to_say' | 'answered';
+  self_value: unknown | null;
+  preference_value: unknown | null;
+  importance: ImportanceLevel | null;
 }
 
-function answerFromRow(row: AnswerRow): Answer {
-  return {
-    userId: row.user_id,
-    questionId: row.question_id,
-    selfValue: row.self_value,
-    partnerValue: row.partner_value,
-    updatedAt: row.updated_at,
-  };
-}
-
-async function loadActiveQuestions(ctx: Ctx): Promise<Question[]> {
-  const { rows } = await ctx.db.query<QuestionRow>('SELECT * FROM questions WHERE active = true');
-  return rows.map(questionFromRow);
-}
-
-async function loadAnswersForUser(ctx: Ctx, userId: string): Promise<Answer[]> {
-  const { rows } = await ctx.db.query<AnswerRow>('SELECT * FROM answers WHERE user_id = $1', [userId]);
-  return rows.map(answerFromRow);
+/** Batched load of every involved user's new-bank answers, keyed first by user id then by question SLUG (the stable identity across question versions — see db/migrations/008_questions.sql). One round trip regardless of how many users are asked for. */
+async function loadAnswerStatesBySlugForUsers(ctx: Ctx, userIds: string[]): Promise<Map<string, Map<string, QuestionAnswerState>>> {
+  const result = new Map<string, Map<string, QuestionAnswerState>>();
+  const ids = [...new Set(userIds)];
+  if (ids.length === 0) return result;
+  const { rows } = await ctx.db.query<UserQuestionAnswerRow>(
+    `SELECT user_id, question_slug, status, self_value, preference_value, importance
+     FROM user_question_answers WHERE user_id = ANY($1::uuid[])`,
+    [ids],
+  );
+  for (const row of rows) {
+    let perUser = result.get(row.user_id);
+    if (!perUser) {
+      perUser = new Map();
+      result.set(row.user_id, perUser);
+    }
+    perUser.set(row.question_slug, {
+      status: row.status,
+      selfValue: row.self_value,
+      preferenceValue: row.preference_value,
+      importance: row.importance,
+    });
+  }
+  return result;
 }
 
 /**
- * Minimum number of questions both users must have *fully* answered
- * (non-null self AND partner value on both sides) before a score is
- * computed at all — below this, score defaults to
- * `compatibility.no_data_default_score` (spec §16.2 last paragraph;
- * Open Question OQ-2's resolution: `0`, not an ambiguous "neutral" — see
- * docs/conformance.md).
+ * Re-keys one user's slug-keyed answers onto the CURRENT bank's per-question
+ * `id`s — what `aggregateQuestionScores`/`scoreQuestionContribution` (keyed
+ * by `QuestionDefinition.id`, the exact pinned version) expect. A user who
+ * answered a since-edited (older) version of a question is matched onto the
+ * CURRENT version's id here by slug — slug is the stable cross-version
+ * identity the selector and deal-breaker derivation already key off (see
+ * selector.ts/dealBreakers.ts); their stored self/preference/importance
+ * values still apply verbatim (a version bump is normally a wording/label
+ * edit, not a retroactive reinterpretation of what the user already said).
+ * A slug with no entry in `questions` (the question was retired/deactivated
+ * since they answered) is simply dropped — `aggregateQuestionScores` only
+ * ever visits questions in its `questions` argument, so a stray answer to a
+ * no-longer-active question can never affect a score either way.
+ */
+function reKeyAnswersBySlugToCurrentId(
+  bySlug: Map<string, QuestionAnswerState> | undefined,
+  questions: QuestionDefinition[],
+): Map<string, QuestionAnswerState> {
+  const result = new Map<string, QuestionAnswerState>();
+  if (!bySlug) return result;
+  for (const q of questions) {
+    const state = bySlug.get(q.slug);
+    if (state) result.set(q.id, state);
+  }
+  return result;
+}
+
+/**
+ * Minimum number of questions both users must have a scoreable (non-excluded
+ * — see scoring.ts) shared answer on before a score is computed at all —
+ * below this, score defaults to `compatibility.no_data_default_score` (spec
+ * §16.2 last paragraph; Open Question OQ-2's resolution: `0`, not an
+ * ambiguous "neutral" — see docs/conformance.md).
  *
  * DECISION-LAYER UPDATE: this used to be a local constant because
  * `src/config/config.service.ts` was outside this agent's file-ownership
@@ -152,123 +223,60 @@ export const DEFAULT_MIN_SHARED_QUESTIONS = 3;
 export const DEFAULT_NO_DATA_SCORE = 0;
 
 export interface PerQuestionSatisfaction {
-  questionId: string;
+  questionId: string; // question_bank.id (current version)
+  slug: string;
   pairSatisfaction: number; // 0-1
-  questionWeight: number; // base_weight * importance_multiplier
+  questionWeight: number; // base_weight * importance multiplier (see scoring.ts)
 }
 
 export interface CompatibilityBreakdown {
-  score: number; // 0-1; 0 if too few shared answered questions (§16.2 last paragraph)
+  score: number; // 0-1; noDataDefaultScore if too few shared SCOREABLE questions (§16.2 last paragraph)
   perQuestion: PerQuestionSatisfaction[];
   sharedAnsweredQuestionCount: number;
 }
 
 /**
- * §16.2 reversed-polarity transform, applied to a raw 1-5 value.
- * `transformed = 6 - original`.
- */
-function applyPolarity(value: number, polarity: QuestionPolarity): number {
-  return polarity === 'reversed' ? 6 - value : value;
-}
-
-/**
- * Pure implementation of the §16.2 formula for one ordered pair (A, B).
- * Symmetric by construction (`pair_satisfaction` averages both
- * directions), so `computePairScore(a, b, qs) === computePairScore(b, a, qs)`
- * is an expected property for tests. `null` self/partner values
- * ("prefer not to say", §8.5) are excluded from `sharedAnsweredQuestionCount`
- * and do not contribute to the weighted sum.
+ * Pure per-pair scoring, now delegating the entire per-question contribution
+ * + accumulation to `src/domain/questions/scoring.ts#aggregateQuestionScores`
+ * (see that module for the exact exclusion rules: inactive questions,
+ * `unanswered`/`skipped`/`prefer_not_to_say` on either side, `irrelevant`
+ * importance, and `deal_breaker` importance — none of these contribute
+ * weight or satisfaction here, by design; a deal breaker is enforced
+ * upstream as a hard filter instead, see the LEAF MODULE doc above).
  *
- * A question only contributes if BOTH users answered BOTH sides of it
- * (A.self, A.partner, B.self, B.partner all non-null) — that is what
- * "shared answered question" means here. If any of the four is null (or
- * either user has no `answers` row for the question at all), the question
- * is skipped entirely: no partial/one-sided contribution.
+ * Symmetric by construction (`aggregateQuestionScores`/
+ * `scoreQuestionContribution` average both directions), so
+ * `computePairScore(qs, a, b, ...) === computePairScore(qs, b, a, ...)` is
+ * an expected property, asserted in `tests/unit/compatibility.test.ts`.
  *
- * READING OF THE §16.2 REVERSED-POLARITY TRANSFORM: applied to *all four*
- * values (both users' self AND partner answers) for a reversed-polarity
- * question, before any arithmetic. Note this is mathematically invariant
- * for the final numbers — `abs((6-x)-(6-y)) === abs(x-y)` and
- * `abs((6-x)-3) === abs(x-3)` — so a question's contribution to the score
- * is identical whether or not it is marked reversed, PROVIDED the raw
- * stored values are consistently on whichever scale the flag implies. That
- * is the point of the flag: it lets a question be authored/entered on
- * either scale convention (e.g. "1 = no smoking" vs "1 = smokes heavily")
- * and still combine correctly with every other question — the invariance
- * is what makes `reversed` *safe* to get right or wrong for any single
- * question without it silently corrupting the pair's total score, while
- * still being something the code must apply correctly per-question (get it
- * wrong on `self` values but not `partner` values, for example, and the
- * invariance breaks). Verified in `tests/unit/compatibility.test.ts` by
- * comparing a reversed-polarity question fed mirrored raw values (`6 - x`
- * for every stored value) against the equivalent standard-polarity
- * question fed the original values, and asserting identical scores.
- *
- * READING OF "importance_multiplier ... based on extremity of partner
- * preference" (§16.2): the spec does not say *whose* partner_answer feeds
- * `1 + abs(partner_answer - 3) * 0.25` for a given question, and this
- * function's docstring requires `computePairScore(a,b,qs) ===
- * computePairScore(b,a,qs)` (argument-order symmetry). A single-sided
- * reading (e.g. always A's partner_answer) is NOT symmetric under swapping
- * the two callers' argument order, so it is rejected. This implementation
- * computes the importance multiplier for EACH user's partner_answer to the
- * question and averages the two: `question_weight = base_weight *
- * mean(importance_multiplier(A.partner), importance_multiplier(B.partner))`
- * — i.e. a question is weighted more heavily when *either* party has a
- * strong (non-neutral) preference about it, which also happens to be the
- * only reading consistent with the required symmetry.
+ * `answersA`/`answersB` must be keyed by `QuestionDefinition.id` (the
+ * CURRENT version's id for each question in `questions`) — see
+ * `reKeyAnswersBySlugToCurrentId` above for how the I/O wrappers below
+ * produce that shape from a slug-keyed `user_question_answers` load.
  */
 export function computePairScore(
-  userAAnswers: Answer[],
-  userBAnswers: Answer[],
-  questions: Question[],
+  questions: QuestionDefinition[],
+  answersA: Map<string, QuestionAnswerState>,
+  answersB: Map<string, QuestionAnswerState>,
   minSharedQuestions: number,
   noDataDefaultScore: number = DEFAULT_NO_DATA_SCORE,
 ): CompatibilityBreakdown {
-  const aByQuestion = new Map(userAAnswers.map((a) => [a.questionId, a]));
-  const bByQuestion = new Map(userBAnswers.map((a) => [a.questionId, a]));
+  const bySlug = new Map(questions.map((q) => [q.id, q.slug]));
+  const aggregate = aggregateQuestionScores(questions, answersA, answersB, noDataDefaultScore);
 
   const perQuestion: PerQuestionSatisfaction[] = [];
-  let weightedSum = 0;
-  let weightTotal = 0;
-
-  for (const q of questions) {
-    if (!q.active) continue;
-    const a = aByQuestion.get(q.id);
-    const b = bByQuestion.get(q.id);
-    if (!a || !b) continue;
-    if (a.selfValue == null || a.partnerValue == null || b.selfValue == null || b.partnerValue == null) continue;
-
-    const aSelf = applyPolarity(a.selfValue, q.polarity);
-    const aPartner = applyPolarity(a.partnerValue, q.polarity);
-    const bSelf = applyPolarity(b.selfValue, q.polarity);
-    const bPartner = applyPolarity(b.partnerValue, q.polarity);
-
-    // satisfaction_A_with_B = 1 - abs(A.partner_answer - B.self_answer) / 4
-    const satisfactionAWithB = 1 - Math.abs(aPartner - bSelf) / 4;
-    // satisfaction_B_with_A = 1 - abs(B.partner_answer - A.self_answer) / 4
-    const satisfactionBWithA = 1 - Math.abs(bPartner - aSelf) / 4;
-    const pairSatisfaction = (satisfactionAWithB + satisfactionBWithA) / 2;
-
-    // importance_multiplier = 1 + abs(partner_answer - 3) * 0.25, averaged
-    // across both users' partner_answer — see docstring "READING OF
-    // importance_multiplier" above for why.
-    const importanceA = 1 + Math.abs(aPartner - 3) * 0.25;
-    const importanceB = 1 + Math.abs(bPartner - 3) * 0.25;
-    const importanceMultiplier = (importanceA + importanceB) / 2;
-
-    const questionWeight = q.weight * importanceMultiplier;
-
-    perQuestion.push({ questionId: q.id, pairSatisfaction, questionWeight });
-    weightedSum += pairSatisfaction * questionWeight;
-    weightTotal += questionWeight;
+  for (const { questionId, contribution } of aggregate.contributions) {
+    if (contribution.excluded) continue;
+    perQuestion.push({
+      questionId,
+      slug: bySlug.get(questionId) ?? questionId,
+      pairSatisfaction: contribution.satisfaction!,
+      questionWeight: contribution.weight,
+    });
   }
 
-  const sharedAnsweredQuestionCount = perQuestion.length;
-  const score =
-    sharedAnsweredQuestionCount < minSharedQuestions || weightTotal <= 0
-      ? noDataDefaultScore
-      : weightedSum / weightTotal;
+  const sharedAnsweredQuestionCount = aggregate.scoredQuestionCount;
+  const score = sharedAnsweredQuestionCount < minSharedQuestions ? noDataDefaultScore : aggregate.score;
 
   return { score, perQuestion, sharedAnsweredQuestionCount };
 }
@@ -315,15 +323,6 @@ async function upsertScoresBatch(ctx: Ctx, userId: string, scores: Map<string, n
   );
 }
 
-/**
- * On-demand score for one candidate pair (spec §16.3: "For MVP, compute
- * score on demand for candidates"). Always recomputes from current
- * `answers` — this module deliberately does not implement a staleness
- * window (that would need a new config key; see `DEFAULT_MIN_SHARED_QUESTIONS`
- * comment on the file-ownership constraint) — and upserts the materialized
- * `compatibility_scores` row as a side effect so `refreshAllScores`/direct
- * reads of the table stay consistent with the latest on-demand computation.
- */
 /** Reads the two decision-layer config keys this module's scoring depends on (see `DEFAULT_MIN_SHARED_QUESTIONS`/`DEFAULT_NO_DATA_SCORE` docs above). */
 async function loadScoringConfig(ctx: Ctx): Promise<{ minSharedQuestions: number; noDataDefaultScore: number }> {
   const values = await ctx.config.getMany(['compatibility.min_shared_questions', 'compatibility.no_data_default_score'] as const);
@@ -333,14 +332,25 @@ async function loadScoringConfig(ctx: Ctx): Promise<{ minSharedQuestions: number
   };
 }
 
+/**
+ * On-demand score for one candidate pair (spec §16.3: "For MVP, compute
+ * score on demand for candidates"). Always recomputes from current
+ * `user_question_answers` — this module deliberately does not implement a
+ * staleness window (that would need a new config key; see
+ * `DEFAULT_MIN_SHARED_QUESTIONS` comment on the file-ownership constraint)
+ * — and upserts the materialized `compatibility_scores` row as a side
+ * effect so `refreshAllScores`/direct reads of the table stay consistent
+ * with the latest on-demand computation.
+ */
 export async function getScore(ctx: Ctx, userId: string, candidateId: string): Promise<number> {
-  const [questions, userAAnswers, userBAnswers, scoringConfig] = await Promise.all([
-    loadActiveQuestions(ctx),
-    loadAnswersForUser(ctx, userId),
-    loadAnswersForUser(ctx, candidateId),
+  const [questions, answerMaps, scoringConfig] = await Promise.all([
+    loadActiveCurrentQuestions(ctx),
+    loadAnswerStatesBySlugForUsers(ctx, [userId, candidateId]),
     loadScoringConfig(ctx),
   ]);
-  const { score } = computePairScore(userAAnswers, userBAnswers, questions, scoringConfig.minSharedQuestions, scoringConfig.noDataDefaultScore);
+  const answersA = reKeyAnswersBySlugToCurrentId(answerMaps.get(userId), questions);
+  const answersB = reKeyAnswersBySlugToCurrentId(answerMaps.get(candidateId), questions);
+  const { score } = computePairScore(questions, answersA, answersB, scoringConfig.minSharedQuestions, scoringConfig.noDataDefaultScore);
   await upsertScore(ctx, userId, candidateId, score);
   return score;
 }
@@ -350,25 +360,14 @@ export async function getScoresForCandidates(ctx: Ctx, userId: string, candidate
   const result = new Map<string, number>();
   if (candidateIds.length === 0) return result;
 
-  const questions = await loadActiveQuestions(ctx);
-  const userAAnswers = await loadAnswersForUser(ctx, userId);
+  const questions = await loadActiveCurrentQuestions(ctx);
   const scoringConfig = await loadScoringConfig(ctx);
-
-  const { rows } = await ctx.db.query<AnswerRow>(
-    'SELECT * FROM answers WHERE user_id = ANY($1::uuid[])',
-    [candidateIds],
-  );
-  const answersByCandidate = new Map<string, Answer[]>();
-  for (const row of rows) {
-    const answer = answerFromRow(row);
-    const list = answersByCandidate.get(answer.userId);
-    if (list) list.push(answer);
-    else answersByCandidate.set(answer.userId, [answer]);
-  }
+  const answerMaps = await loadAnswerStatesBySlugForUsers(ctx, [userId, ...candidateIds]);
+  const answersA = reKeyAnswersBySlugToCurrentId(answerMaps.get(userId), questions);
 
   for (const candidateId of candidateIds) {
-    const candidateAnswers = answersByCandidate.get(candidateId) ?? [];
-    const { score } = computePairScore(userAAnswers, candidateAnswers, questions, scoringConfig.minSharedQuestions, scoringConfig.noDataDefaultScore);
+    const answersB = reKeyAnswersBySlugToCurrentId(answerMaps.get(candidateId), questions);
+    const { score } = computePairScore(questions, answersA, answersB, scoringConfig.minSharedQuestions, scoringConfig.noDataDefaultScore);
     result.set(candidateId, score);
   }
   await upsertScoresBatch(ctx, userId, result);
@@ -431,20 +430,20 @@ export async function getScoresForCandidates(ctx: Ctx, userId: string, candidate
 //
 // WHY THIS IS SAFE TO BOUND AT ALL (the staleness trade-off, stated
 // explicitly per the task brief):
-//   - `getScore`/`getScoresForCandidates` (unchanged by this build) ALWAYS
-//     recompute from live `answers` and upsert as a side effect, for
-//     WHATEVER pair `discovery.service.ts` actually asks about — they
-//     never read a score back out of `compatibility_scores` to return it.
-//     A repo-wide search (this build's report) confirms `compatibility_scores`
-//     has no reader anywhere in `src/` today; every consumer of a score
-//     goes through one of these two functions. That means a pair that
-//     falls OUTSIDE tonight's geographic/activity bound is not "serving a
-//     stale score" — it is "not yet computed", and the very next discovery
-//     request that needs it computes it fresh and warms the cache as a
-//     side effect (see the cold-path test in
-//     tests/unit/compatibility.test.ts). Nothing a real user sees is ever
-//     more than one request stale, regardless of what this job did or
-//     didn't materialize last night.
+//   - `getScore`/`getScoresForCandidates` (unchanged shape by this
+//     cutover) ALWAYS recompute from live `user_question_answers` and
+//     upsert as a side effect, for WHATEVER pair `discovery.service.ts`
+//     actually asks about — they never read a score back out of
+//     `compatibility_scores` to return it. A repo-wide search (this
+//     build's report) confirms `compatibility_scores` has no reader
+//     anywhere in `src/` today; every consumer of a score goes through
+//     one of these two functions. That means a pair that falls OUTSIDE
+//     tonight's geographic/activity bound is not "serving a stale score"
+//     — it is "not yet computed", and the very next discovery request
+//     that needs it computes it fresh and warms the cache as a side
+//     effect (see the cold-path test in tests/unit/compatibility.test.ts).
+//     Nothing a real user sees is ever more than one request stale,
+//     regardless of what this job did or didn't materialize last night.
 //   - What DOES stay stale, for up to ~24h, is a MATERIALIZED row nobody
 //     has asked for yet: it reflects last night's answers, not this
 //     morning's edit. That is exactly the product-acceptable case the
@@ -452,13 +451,14 @@ export async function getScoresForCandidates(ctx: Ctx, userId: string, candidate
 //     not a correctness problem" — because the table is a warm-cache
 //     optimization with no current reader, not a source of truth; nothing
 //     about HARD FILTERS is derived from it (that invariant was already
-//     true before this build and is untouched — `filter.service.ts` is
-//     not edited by this build at all).
+//     true before this build and is untouched — `filter.service.ts`'s
+//     `hard_filters` table is a completely separate mechanism).
 //   - `refreshScoresForUser` (still triggered synchronously on every
-//     answer edit, spec §25.4 "on major answer changes") means the
-//     pairs that matter most for freshness — the ones involving a user
-//     who JUST changed an answer — get refreshed immediately, geo-bounded
-//     the same way, not once a night.
+//     answer edit, spec §25.4 "on major answer changes", now wired from
+//     `question.service#putMyQuestionAnswer`) means the pairs that matter
+//     most for freshness — the ones involving a user who JUST changed an
+//     answer — get refreshed immediately, geo-bounded the same way, not
+//     once a night.
 //
 // SAFE-TO-RE-RUN / EVICTION: every run recomputes `activeSince` from
 // `ctx.clock`, deletes every row touching a user who is no longer eligible
@@ -470,6 +470,13 @@ export async function getScoresForCandidates(ctx: Ctx, userId: string, candidate
 // means the table's row count is bounded by (eligible users x K x 2)
 // AFTER EVERY RUN, not by the platform's total historical user count —
 // see this build's report for the measured before/after row counts.
+//
+// NONE OF THIS SECTION CHANGED for the question-system cutover — the
+// activity/geography bounding is entirely schema-independent (it reads
+// `users`/`profiles` only). Only the "load questions" / "load answers" /
+// "score a pair" internals feeding into it were repointed at the new bank
+// (see `loadActiveCurrentQuestions`/`loadAnswerStatesBySlugForUsers`/
+// `computePairScore` above) — the bound itself is preserved exactly.
 // =====================================================================
 
 /**
@@ -676,39 +683,6 @@ function dedupeUnorderedPairs(rawPairs: Iterable<readonly [string, string]>): [s
   return pairs;
 }
 
-/** Batched answer load for an explicit set of user ids (the pairs' involved users), replacing the old per-user sequential loop — one round trip regardless of how many users are involved. */
-async function loadAnswersByUserBatch(ctx: Ctx, userIds: string[]): Promise<Map<string, Answer[]>> {
-  const result = new Map<string, Answer[]>();
-  if (userIds.length === 0) return result;
-  const { rows } = await ctx.db.query<AnswerRow>('SELECT * FROM answers WHERE user_id = ANY($1::uuid[])', [userIds]);
-  for (const row of rows) {
-    const answer = answerFromRow(row);
-    const list = result.get(answer.userId);
-    if (list) list.push(answer);
-    else result.set(answer.userId, [answer]);
-  }
-  return result;
-}
-
-/** Multi-row upsert for an arbitrary list of (possibly unrelated) `(userId, candidateId, score)` triples — the nightly refresh's write path, chunked so one call's parameter arrays never grow unbounded. Same shape/pattern as `upsertScoresBatch` above, generalized because the nightly refresh's pairs don't share one common `userId` the way a single discovery request's candidates do. */
-async function upsertScorePairsBatch(ctx: Ctx, pairs: { userId: string; candidateId: string; score: number }[]): Promise<void> {
-  if (pairs.length === 0) return;
-  const CHUNK = 5000;
-  const now = ctx.clock.now();
-  for (let i = 0; i < pairs.length; i += CHUNK) {
-    const slice = pairs.slice(i, i + CHUNK);
-    await ctx.db.query(
-      `INSERT INTO compatibility_scores (user_id, candidate_id, score, computed_at)
-       SELECT c.user_id, c.candidate_id, c.score, $4
-       FROM unnest($1::uuid[], $2::uuid[], $3::double precision[]) AS c(user_id, candidate_id, score)
-       ON CONFLICT (user_id, candidate_id) DO UPDATE SET
-         score = EXCLUDED.score,
-         computed_at = EXCLUDED.computed_at`,
-      [slice.map((p) => p.userId), slice.map((p) => p.candidateId), slice.map((p) => p.score), now],
-    );
-  }
-}
-
 /**
  * Evicts every `compatibility_scores` row that should not survive this
  * run: either endpoint has fallen out of the activity window (dormant —
@@ -734,15 +708,34 @@ async function evictStaleAndReplace(ctx: Ctx, eligibleIds: string[], activeSince
   );
 }
 
+/** Multi-row upsert for an arbitrary list of (possibly unrelated) `(userId, candidateId, score)` triples — the nightly refresh's write path, chunked so one call's parameter arrays never grow unbounded. Same shape/pattern as `upsertScoresBatch` above, generalized because the nightly refresh's pairs don't share one common `userId` the way a single discovery request's candidates do. */
+async function upsertScorePairsBatch(ctx: Ctx, pairs: { userId: string; candidateId: string; score: number }[]): Promise<void> {
+  if (pairs.length === 0) return;
+  const CHUNK = 5000;
+  const now = ctx.clock.now();
+  for (let i = 0; i < pairs.length; i += CHUNK) {
+    const slice = pairs.slice(i, i + CHUNK);
+    await ctx.db.query(
+      `INSERT INTO compatibility_scores (user_id, candidate_id, score, computed_at)
+       SELECT c.user_id, c.candidate_id, c.score, $4
+       FROM unnest($1::uuid[], $2::uuid[], $3::double precision[]) AS c(user_id, candidate_id, score)
+       ON CONFLICT (user_id, candidate_id) DO UPDATE SET
+         score = EXCLUDED.score,
+         computed_at = EXCLUDED.computed_at`,
+      [slice.map((p) => p.userId), slice.map((p) => p.candidateId), slice.map((p) => p.score), now],
+    );
+  }
+}
+
 /**
  * Recomputes and upserts `compatibility_scores` rows for one user against
  * their bounded set of geographically-nearby (or, with no location on
  * file, most-recently-active platform-wide) active-recent candidates —
  * see the file-level SCALE FIX doc above for the full reasoning and the
  * staleness trade-off. Called after an answer change (spec §25.4 "on
- * major answer changes") via `question.service#putMyAnswers`. Does not
- * filter by mutual hard filters (see LEAF MODULE note at the top of this
- * file — unchanged by this build); that filtering happens in
+ * major answer changes") via `question.service#putMyQuestionAnswer`. Does
+ * not filter by mutual hard filters (see LEAF MODULE note at the top of
+ * this file — unchanged by this build); that filtering happens in
  * `discovery.service.ts`.
  */
 export async function refreshScoresForUser(ctx: Ctx, userId: string): Promise<{ updated: number }> {
@@ -759,8 +752,8 @@ export async function refreshScoresForUser(ctx: Ctx, userId: string): Promise<{ 
  * and every existing caller expect a symmetric table), still computed via
  * the exact same, untouched `computePairScore` (this is a scheduling/
  * storage change, not an algorithm change — the score for a given pair is
- * bit-for-bit what the old nested loop would have produced for that same
- * pair; see `tests/unit/compatibility.test.ts`'s semantics-preservation
+ * bit-for-bit what an unbounded nested loop would have produced for that
+ * same pair; see `tests/unit/compatibility.test.ts`'s semantics-preservation
  * test). Driven entirely by `ctx.clock` (no wall-clock read) and safe to
  * re-run: evicts before inserting, so a second run with unchanged data
  * reproduces the exact same rows rather than accumulating duplicates or
@@ -803,18 +796,23 @@ export async function refreshAllScores(ctx: Ctx): Promise<{ updated: number }> {
     involvedIds.add(b);
   }
 
-  const [questions, scoringConfig, answersByUser] = await Promise.all([
-    loadActiveQuestions(ctx),
+  const [questions, scoringConfig, answersBySlugByUser] = await Promise.all([
+    loadActiveCurrentQuestions(ctx),
     loadScoringConfig(ctx),
-    loadAnswersByUserBatch(ctx, [...involvedIds]),
+    loadAnswerStatesBySlugForUsers(ctx, [...involvedIds]),
   ]);
+
+  const answersByIdByUser = new Map<string, Map<string, QuestionAnswerState>>();
+  for (const uid of involvedIds) {
+    answersByIdByUser.set(uid, reKeyAnswersBySlugToCurrentId(answersBySlugByUser.get(uid), questions));
+  }
 
   const writes: { userId: string; candidateId: string; score: number }[] = [];
   for (const [a, b] of pairs) {
     const { score } = computePairScore(
-      answersByUser.get(a) ?? [],
-      answersByUser.get(b) ?? [],
       questions,
+      answersByIdByUser.get(a) ?? new Map(),
+      answersByIdByUser.get(b) ?? new Map(),
       scoringConfig.minSharedQuestions,
       scoringConfig.noDataDefaultScore,
     );

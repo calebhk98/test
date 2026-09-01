@@ -46,17 +46,16 @@ import type { QuestionAnswerState, QuestionDefinition } from './types.js';
  * `qb:`-aware branch that reads `user_question_answers` (see the
  * `RESOLUTION NOTE` on `deriveDealBreakerFilterRows` below).
  *
- * KNOWN LIMITATION (multi_choice, `in` operator): `filter.service.ts`'s
- * `evaluateFilter` 'in' operator is `value.some(v => deepEqual(v,
- * candidateValue))` — it expects `candidateValue` to be a SCALAR
- * (matches one array entry), not a set. A `multi_choice` deal breaker's
- * "must include at least one of these" semantics (see
- * `isAcceptable`/typeHandlers.ts) has no exact `evaluateFilter` operator
- * today. This module still derives the best available row (`in`,
- * documented as approximate) and flags it via `approximate: true` on the
- * returned row so a later agent knows `filter.service.ts` needs either a
- * new `overlaps` operator or a `qb:`-aware special case for multi_choice
- * before this row is fully correct.
+ * RESOLVED LIMITATION (multi_choice, `in` operator): `filter.service.ts`'s
+ * `evaluateFilter` 'in' operator used to be `value.some(v => deepEqual(v,
+ * candidateValue))`, which only ever worked when `candidateValue` was a
+ * SCALAR (one array entry) — it could never correctly express a
+ * `multi_choice` deal breaker's "must include at least one of these"
+ * semantics (see `isAcceptable`/typeHandlers.ts) against a candidate whose
+ * `self_value` is itself an array. `filter.service.ts`'s 'in' operator now
+ * special-cases an array `candidateValue` as OVERLAP ("shares at least one
+ * element with `value`") rather than scalar membership — exactly this
+ * row's semantics — so the row derived below is exact, not approximate.
  */
 
 export type DealBreakerFilterOperator = 'eq' | 'gte' | 'lte' | 'in';
@@ -77,7 +76,13 @@ export interface DealBreakerFilterRow {
    * explicitly here so the caller doesn't need to know to set it.
    */
   excludeIfUnset: true;
-  /** True when `filter.service.ts`'s current operator set cannot express this exactly — see KNOWN LIMITATION above. Still the best available row; not a reason to drop it. */
+  /**
+   * True when `filter.service.ts`'s current operator set cannot express
+   * this row exactly. Always `false`/absent as of the `evaluateFilter`
+   * 'in'-operator overlap fix (see RESOLVED LIMITATION above) — kept on
+   * the type (rather than removed) so a future operator gap has somewhere
+   * to signal from without a breaking type change.
+   */
   approximate?: boolean;
 }
 
@@ -117,10 +122,10 @@ export function deriveDealBreakerFilterRowsForQuestion(
       return [{ filterKey: key, operator: 'in', value: preferenceValue, enabled: true, excludeIfUnset: true }];
     }
     case 'multi_choice': {
-      // See KNOWN LIMITATION above — `evaluateFilter`'s 'in' does not
-      // correctly express "candidate's array must overlap this set", but
-      // this is the closest existing operator/shape.
-      return [{ filterKey: key, operator: 'in', value: preferenceValue, enabled: true, excludeIfUnset: true, approximate: true }];
+      // See RESOLVED LIMITATION above — `evaluateFilter`'s 'in' operator
+      // now treats an array `candidateValue` as "must overlap this set",
+      // so this row is exact.
+      return [{ filterKey: key, operator: 'in', value: preferenceValue, enabled: true, excludeIfUnset: true }];
     }
     case 'scale':
     case 'frequency': {

@@ -100,20 +100,35 @@ export async function seedDiscoveryPerfData(
   const rng = mulberry32(opts.seed ?? 42);
   const questionCount = opts.questionCount ?? 10;
 
-  // ---- questions (shared question bank) ----
+  // ---- questions (the ONE typed question bank — db/migrations/008_questions.sql).
+  // CUTOVER NOTE: this used to seed the OLD `questions` table (flat 1-5
+  // self/partner pair, no type/importance). That table is retired
+  // (db/migrations/019_question_cutover.sql) — this perf helper now seeds
+  // `question_bank` (all `scale` type, min=1/max=5, mirroring the old
+  // bank's numeric range closely enough that this benchmark's shape is
+  // unchanged) so `compatRefresh.perf.test.ts` still has realistic answer
+  // volume to score against. `discovery.perf.test.ts` never reads
+  // `questionIds`/the question bank directly (it only needs realistic
+  // *volume*, not any specific bank), so this swap is invisible to it. ----
   const questionIds: string[] = [];
+  const questionSlugById = new Map<string, string>();
   {
     const ids: string[] = [];
     const slugs: string[] = [];
+    const typeDefs: string[] = [];
     for (let i = 0; i < questionCount; i++) {
-      ids.push(randomUUID());
-      slugs.push(`perf-q-${i}`);
+      const id = randomUUID();
+      const slug = `perf-q-${i}`;
+      ids.push(id);
+      slugs.push(slug);
+      typeDefs.push(JSON.stringify({ type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' }));
+      questionSlugById.set(id, slug);
     }
     await pool.query(
-      `INSERT INTO questions (id, slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
-       SELECT id, slug, 'perf', slug, 'l', 'r', 'l', 'r', 1 + (row_number() OVER ())::float / 10, 'standard', false, true
-       FROM unnest($1::uuid[], $2::text[]) AS t(id, slug)`,
-      [ids, slugs],
+      `INSERT INTO question_bank (id, slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
+       SELECT id, slug, 1, true, 'perf', NULL, '{}', 'scale', slug, td::jsonb, 1 + (row_number() OVER ())::float / 10, false, true, 0.5
+       FROM unnest($1::uuid[], $2::text[], $3::text[]) AS t(id, slug, td)`,
+      [ids, slugs, typeDefs],
     );
     questionIds.push(...ids);
   }
@@ -231,19 +246,30 @@ export async function seedDiscoveryPerfData(
     }
 
     // Answers: each user answers a random subset of the question bank.
+    // NEW BANK shape (see CUTOVER NOTE above): one `user_question_answers`
+    // row per (user, question slug), `status = 'answered'`, a `scale`
+    // self/preference value pair (mirrors the old self/partner 1-5 pair),
+    // and a uniform `important` importance (every seeded answer
+    // contributes to scoring, same as the old bank's unconditional
+    // contribution — no `irrelevant`/`deal_breaker` variety needed for a
+    // volume/perf benchmark).
     const ansUsers: string[] = [];
-    const ansQuestions: string[] = [];
-    const ansSelf: number[] = [];
-    const ansPartner: number[] = [];
+    const ansSlugs: string[] = [];
+    const ansBankIds: string[] = [];
+    const ansSelf: string[] = [];
+    const ansPref: string[] = [];
+    const ansImportance: string[] = [];
     for (let i = 0; i < n; i++) {
       const id = userIds[i]!;
       const answerCount = Math.floor(rng() * (questionIds.length + 1));
       const shuffled = [...questionIds].sort(() => rng() - 0.5).slice(0, answerCount);
       for (const qId of shuffled) {
         ansUsers.push(id);
-        ansQuestions.push(qId);
-        ansSelf.push(1 + Math.floor(rng() * 5));
-        ansPartner.push(1 + Math.floor(rng() * 5));
+        ansBankIds.push(qId);
+        ansSlugs.push(questionSlugById.get(qId)!);
+        ansSelf.push(JSON.stringify(1 + Math.floor(rng() * 5)));
+        ansPref.push(JSON.stringify(1 + Math.floor(rng() * 5)));
+        ansImportance.push('important');
       }
     }
     if (ansUsers.length > 0) {
@@ -253,9 +279,17 @@ export async function seedDiscoveryPerfData(
       for (let a = 0; a < ansUsers.length; a += ANSWER_CHUNK) {
         const sliceEnd = Math.min(a + ANSWER_CHUNK, ansUsers.length);
         await pool.query(
-          `INSERT INTO answers (user_id, question_id, self_value, partner_value)
-           SELECT u, q, s, p FROM unnest($1::uuid[], $2::uuid[], $3::int[], $4::int[]) AS t(u, q, s, p)`,
-          [ansUsers.slice(a, sliceEnd), ansQuestions.slice(a, sliceEnd), ansSelf.slice(a, sliceEnd), ansPartner.slice(a, sliceEnd)],
+          `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+           SELECT u, slug, qb, 'answered', sv::jsonb, pv::jsonb, imp, now(), now()
+           FROM unnest($1::uuid[], $2::text[], $3::uuid[], $4::text[], $5::text[], $6::text[]) AS t(u, slug, qb, sv, pv, imp)`,
+          [
+            ansUsers.slice(a, sliceEnd),
+            ansSlugs.slice(a, sliceEnd),
+            ansBankIds.slice(a, sliceEnd),
+            ansSelf.slice(a, sliceEnd),
+            ansPref.slice(a, sliceEnd),
+            ansImportance.slice(a, sliceEnd),
+          ],
         );
       }
     }

@@ -59,8 +59,9 @@ import { createSilentLogger } from '../../src/lib/logger.js';
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Ctx } from '../../src/lib/ctx.js';
-import type { Answer, Question } from '../../src/domain/types.js';
 import { computePairScore, refreshAllScores } from '../../src/services/compatibility.service.js';
+import { presentationFor } from '../../src/domain/questions/index.js';
+import type { QuestionAnswerState, QuestionDefinition, QuestionTypeDefinition } from '../../src/domain/questions/index.js';
 import { seedDiscoveryPerfData, CITIES } from './seedDiscoveryPerf.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
@@ -133,56 +134,79 @@ async function compatibilityScoresRowCount(): Promise<number> {
 // exact same, unchanged `computePairScore` the new bounded refresh calls
 // — this is purely the OLD SCHEDULING or the pairs it iterates over, not
 // a different scoring algorithm.
+//
+// CUTOVER NOTE: `computePairScore` now takes `QuestionDefinition[]` +
+// per-user `Map<questionId, QuestionAnswerState>` (the typed question
+// bank — db/migrations/008_questions.sql) instead of the old flat
+// `Question[]`/`Answer[]` shape; this helper's DB reads were updated to
+// match (`question_bank`/`user_question_answers`, the same tables
+// `seedDiscoveryPerf.ts` now seeds), but its O(n^2) SCHEDULING shape
+// below — the thing this test measures — is untouched.
 // =====================================================================
+interface QuestionBankRow {
+  id: string;
+  slug: string;
+  version: number;
+  category: string;
+  subcategory: string | null;
+  tags: string[];
+  question_type: QuestionTypeDefinition['type'];
+  question_text: string;
+  type_definition: QuestionTypeDefinition;
+  base_weight: number;
+  sensitive: boolean;
+  active: boolean;
+  answer_rate_hint: number;
+}
+
+function questionDefinitionFromRow(row: QuestionBankRow): QuestionDefinition {
+  return {
+    id: row.id,
+    slug: row.slug,
+    version: row.version,
+    category: row.category,
+    subcategory: row.subcategory,
+    tags: row.tags,
+    questionText: row.question_text,
+    typeDef: row.type_definition,
+    presentation: presentationFor(row.type_definition),
+    baseWeight: row.base_weight,
+    sensitive: row.sensitive,
+    active: row.active,
+    answerRateHint: row.answer_rate_hint,
+  };
+}
+
 interface LegacyAnswerRow {
-  user_id: string;
-  question_id: string;
-  self_value: Answer['selfValue'];
-  partner_value: Answer['partnerValue'];
-  updated_at: Date;
+  question_slug: string;
+  status: 'skipped' | 'prefer_not_to_say' | 'answered';
+  self_value: unknown;
+  preference_value: unknown;
+  importance: QuestionAnswerState['importance'];
 }
 
 async function legacyRefreshAllScores(subsetUserIds: string[]): Promise<{ updated: number; ms: number }> {
-  const { rows: qRows } = await pool.query<{
-    id: string;
-    slug: string;
-    category: string;
-    question_text: string;
-    self_left_label: string;
-    self_right_label: string;
-    partner_left_label: string;
-    partner_right_label: string;
-    weight: number;
-    polarity: Question['polarity'];
-    sensitive: boolean;
-    active: boolean;
-    created_at: Date;
-    updated_at: Date;
-  }>('SELECT * FROM questions WHERE active = true');
-  const questions: Question[] = qRows.map((r) => ({
-    id: r.id,
-    slug: r.slug,
-    category: r.category,
-    questionText: r.question_text,
-    selfLeftLabel: r.self_left_label,
-    selfRightLabel: r.self_right_label,
-    partnerLeftLabel: r.partner_left_label,
-    partnerRightLabel: r.partner_right_label,
-    weight: r.weight,
-    polarity: r.polarity,
-    sensitive: r.sensitive,
-    active: r.active,
-    createdAt: r.created_at,
-    updatedAt: r.updated_at,
-  }));
+  const { rows: qRows } = await pool.query<QuestionBankRow>(
+    'SELECT * FROM question_bank WHERE is_current = true AND active = true',
+  );
+  const questions: QuestionDefinition[] = qRows.map(questionDefinitionFromRow);
 
-  const answersByUser = new Map<string, Answer[]>();
+  const answersByUser = new Map<string, Map<string, QuestionAnswerState>>();
   for (const id of subsetUserIds) {
-    const { rows } = await pool.query<LegacyAnswerRow>('SELECT * FROM answers WHERE user_id = $1', [id]);
-    answersByUser.set(
-      id,
-      rows.map((r) => ({ userId: r.user_id, questionId: r.question_id, selfValue: r.self_value, partnerValue: r.partner_value, updatedAt: r.updated_at })),
+    const { rows } = await pool.query<LegacyAnswerRow>(
+      'SELECT question_slug, status, self_value, preference_value, importance FROM user_question_answers WHERE user_id = $1',
+      [id],
     );
+    const bySlug = new Map(rows.map((r) => [r.question_slug, { status: r.status, selfValue: r.self_value, preferenceValue: r.preference_value, importance: r.importance }]));
+    // Re-key by CURRENT question_bank id (same convention
+    // compatibility.service.ts's own I/O wrappers use) so it matches what
+    // `computePairScore` expects.
+    const byQuestionId = new Map<string, QuestionAnswerState>();
+    for (const q of questions) {
+      const state = bySlug.get(q.slug);
+      if (state) byQuestionId.set(q.id, state);
+    }
+    answersByUser.set(id, byQuestionId);
   }
 
   const t0 = Date.now();
@@ -191,7 +215,7 @@ async function legacyRefreshAllScores(subsetUserIds: string[]): Promise<{ update
     for (let j = i + 1; j < subsetUserIds.length; j++) {
       const idA = subsetUserIds[i]!;
       const idB = subsetUserIds[j]!;
-      const { score } = computePairScore(answersByUser.get(idA) ?? [], answersByUser.get(idB) ?? [], questions, 3, 0);
+      const { score } = computePairScore(questions, answersByUser.get(idA) ?? new Map(), answersByUser.get(idB) ?? new Map(), 3, 0);
       await pool.query(
         `INSERT INTO compatibility_scores (user_id, candidate_id, score, computed_at) VALUES ($1,$2,$3,now())
          ON CONFLICT (user_id, candidate_id) DO UPDATE SET score = EXCLUDED.score, computed_at = EXCLUDED.computed_at`,

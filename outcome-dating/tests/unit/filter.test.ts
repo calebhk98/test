@@ -74,6 +74,32 @@ test('evaluateFilter: in operator', () => {
   assert.equal(evaluateFilter({ operator: 'in', value: 'not-an-array' }, 'woman'), false);
 });
 
+// A `multi_choice` deal-breaker-derived row's `candidateValue` is itself an
+// ARRAY (the candidate's self-held option set) — see
+// src/domain/questions/dealBreakers.ts's (now-resolved) "RESOLVED
+// LIMITATION" note. `in` special-cases this as OVERLAP, not scalar
+// membership, so it must actually match "at least one shared element"
+// rather than always failing (the old, unfixed behavior).
+test('evaluateFilter: in operator — an array candidateValue is OVERLAP semantics (multi_choice deal breaker), not scalar membership', () => {
+  assert.equal(
+    evaluateFilter({ operator: 'in', value: ['spanish', 'french'] }, ['spanish', 'mandarin']),
+    true,
+    'candidate holds "spanish", which is in the preferred set -> overlap',
+  );
+  assert.equal(
+    evaluateFilter({ operator: 'in', value: ['spanish', 'french'] }, ['mandarin', 'german']),
+    false,
+    'no shared element -> no overlap',
+  );
+  assert.equal(
+    evaluateFilter({ operator: 'in', value: ['spanish', 'french'] }, []),
+    false,
+    'an empty candidate set never overlaps a non-empty preferred set',
+  );
+  // Pre-existing scalar usage (age/gender/body_type/single_choice) must be untouched.
+  assert.equal(evaluateFilter({ operator: 'in', value: ['woman', 'nonbinary'] }, 'woman'), true);
+});
+
 // UPDATED by the units/physical-attributes build (product-owner
 // correction — see filter.service.ts's file-level "MISSING/UNRESOLVED
 // VALUES" note): an unresolved candidate value no longer fails closed
@@ -406,50 +432,51 @@ test('INVARIANT: a hard filter rejection beats a perfect compatibility score', a
   const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 39.78, longitude: -89.65 });
   const candidate = await makeUser({ age: 50, gender: 'man', latitude: 39.78, longitude: -89.65 }); // outside viewer's age filter
 
-  // Give both users identical answers on 3 questions -> a perfect (1.0) compatibility score.
-  const questionIds: string[] = [];
+  // Give both users identical answers on 3 (typed-bank) questions -> a
+  // perfect (1.0) compatibility score. CUTOVER: compatibility.service.ts
+  // now scores exclusively from `question_bank`/`user_question_answers`
+  // (see that file's file-level CUTOVER doc) — this used to build the OLD
+  // `questions`/`answers` fixtures directly; it now inserts typed-bank
+  // rows instead.
+  const questions: Array<{ id: string; slug: string }> = [];
   for (let i = 0; i < 3; i++) {
+    const slug = `invariant-q${i}-${seq}`;
     const { rows } = await pool.query<{ id: string }>(
-      `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
-       VALUES ($1, 'test', $1, 'l', 'r', 'l', 'r', 1, 'standard', false, true) RETURNING id`,
-      [`invariant-q${i}-${seq}`],
+      `INSERT INTO question_bank (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
+       VALUES ($1, 1, true, 'test', NULL, '{}', 'scale', $1, $2::jsonb, 1, false, true, 0.5)
+       RETURNING id`,
+      [slug, JSON.stringify({ type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' })],
     );
-    questionIds.push(rows[0]!.id);
+    questions.push({ id: rows[0]!.id, slug });
     for (const userId of [viewer, candidate]) {
-      await pool.query('INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, 5, 5)', [
-        userId,
-        questionIds[questionIds.length - 1],
-      ]);
+      await pool.query(
+        `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+         VALUES ($1, $2, $3, 'answered', '5'::jsonb, '5'::jsonb, 'important', now(), now())`,
+        [userId, slug, rows[0]!.id],
+      );
     }
   }
 
   // Confirm the compatibility score really is perfect (1.0) — the filter
   // rejection below must win despite this, not because compatibility also
   // happens to be low.
-  const { rows: qRows } = await pool.query(
-    'SELECT id, slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active, created_at, updated_at FROM questions WHERE id = ANY($1::uuid[])',
-    [questionIds],
-  );
-  const { rows: aRows } = await pool.query('SELECT * FROM answers WHERE user_id = $1', [viewer]);
-  const { rows: bRows } = await pool.query('SELECT * FROM answers WHERE user_id = $1', [candidate]);
-  const toAnswer = (r: any) => ({ userId: r.user_id, questionId: r.question_id, selfValue: r.self_value, partnerValue: r.partner_value, updatedAt: r.updated_at });
-  const toQuestion = (r: any) => ({
-    id: r.id,
-    slug: r.slug,
-    category: r.category,
-    questionText: r.question_text,
-    selfLeftLabel: r.self_left_label,
-    selfRightLabel: r.self_right_label,
-    partnerLeftLabel: r.partner_left_label,
-    partnerRightLabel: r.partner_right_label,
-    weight: r.weight,
-    polarity: r.polarity,
-    sensitive: r.sensitive,
-    active: r.active,
-    createdAt: r.created_at,
-    updatedAt: r.updated_at,
-  });
-  const breakdown = computePairScore(aRows.map(toAnswer), bRows.map(toAnswer), qRows.map(toQuestion), 1);
+  const questionDefs = questions.map((q) => ({
+    id: q.id,
+    slug: q.slug,
+    version: 1,
+    category: 'test',
+    subcategory: null,
+    tags: [],
+    questionText: q.slug,
+    typeDef: { type: 'scale' as const, min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' },
+    presentation: 'value_importance' as const,
+    baseWeight: 1,
+    sensitive: false,
+    active: true,
+    answerRateHint: 0.5,
+  }));
+  const answered = new Map(questions.map((q) => [q.id, { status: 'answered' as const, selfValue: 5, preferenceValue: 5, importance: 'important' as const }]));
+  const breakdown = computePairScore(questionDefs, answered, answered, 1);
   assert.ok(Math.abs(breakdown.score - 1) < 1e-9, 'sanity check: compatibility really is perfect (1.0)');
 
   await addFilter(viewer, 'age_max', 'lte', 40);
@@ -499,22 +526,81 @@ test('passesMutualFiltersForCandidates: agrees with passesMutualFilters, one cal
   );
 });
 
-test('evaluateFilterPairsBatch: honors excludeIfUnset per owner filter, matching subjectPassesFiltersOf semantics via passesMutualFilters', async () => {
+/** Inserts a typed-bank `scale` (min=1,max=5) question and returns its slug — shared by the `qb:`-prefixed filter tests below. */
+async function makeBankScaleQuestion(slug: string): Promise<void> {
+  await pool.query(
+    `INSERT INTO question_bank (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
+     VALUES ($1, 1, true, 'test', NULL, '{}', 'scale', $1, $2::jsonb, 1, false, true, 0.5)`,
+    [slug, JSON.stringify({ type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' })],
+  );
+}
+
+test('evaluateFilterPairsBatch: honors excludeIfUnset per owner filter for a qb:-prefixed (typed-bank) key, matching subjectPassesFiltersOf semantics via passesMutualFilters', async () => {
   const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 10, longitude: 20 });
   const neverAnsweredSmoking = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+  await makeBankScaleQuestion(`smoking-${seq}`);
 
-  // No `smoking` answer exists for the candidate at all -> unresolved.
+  // No `smoking-<seq>` answer exists for the candidate at all -> unresolved.
   await updateMyFilters(actorFor(viewer), [
-    { filterKey: 'smoking', operator: 'lte', value: 2, enabled: true, excludeIfUnset: false },
+    { filterKey: `qb:smoking-${seq}`, operator: 'lte', value: 2, enabled: true, excludeIfUnset: false },
   ]);
   const lenient = await passesMutualFiltersForCandidates(ctx, viewer, [neverAnsweredSmoking]);
   assert.ok(lenient.has(neverAnsweredSmoking), 'excludeIfUnset:false must still let an unresolved candidate through, batched');
 
   await updateMyFilters(actorFor(viewer), [
-    { filterKey: 'smoking', operator: 'lte', value: 2, enabled: true, excludeIfUnset: true },
+    { filterKey: `qb:smoking-${seq}`, operator: 'lte', value: 2, enabled: true, excludeIfUnset: true },
   ]);
   const strict = await passesMutualFiltersForCandidates(ctx, viewer, [neverAnsweredSmoking]);
   assert.ok(!strict.has(neverAnsweredSmoking), 'excludeIfUnset:true must exclude an unresolved candidate, batched');
+});
+
+test('evaluateFilterPairsBatch: a bare (non-qb:, non-structured) filter key still resolves against the OLD bank — kept for backward compatibility, see filter.service.ts\'s QUESTION-SYSTEM CUTOVER doc', async () => {
+  const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 10, longitude: 20 });
+  const lowSmoker = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+  const heavySmoker = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+  const neverAnswered = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+
+  const slug = `smoking-legacy-${seq}`;
+  const { rows: qRows } = await pool.query<{ id: string }>(
+    `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
+     VALUES ($1, 'test', $1, 'l', 'r', 'l', 'r', 1, 'standard', false, true) RETURNING id`,
+    [slug],
+  );
+  const questionId = qRows[0]!.id;
+  for (const [userId, value] of [[lowSmoker, 1], [heavySmoker, 5]] as const) {
+    await pool.query('INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, $3, $3)', [userId, questionId, value]);
+  }
+
+  await updateMyFilters(actorFor(viewer), [{ filterKey: slug, operator: 'lte', value: 2, enabled: true, excludeIfUnset: true }]);
+
+  const results = await passesMutualFiltersForCandidates(ctx, viewer, [lowSmoker, heavySmoker, neverAnswered]);
+  assert.ok(results.has(lowSmoker), 'self_value=1 satisfies lte 2 (old-bank resolution still works)');
+  assert.ok(!results.has(heavySmoker), 'self_value=5 fails lte 2');
+  assert.ok(!results.has(neverAnswered), 'excludeIfUnset:true still excludes an unresolved (never-answered) candidate');
+});
+
+test('evaluateFilterPairsBatch: a qb:-prefixed key resolves a REAL answer (not just the unresolved path) and evaluates it correctly', async () => {
+  const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 10, longitude: 20 });
+  const lowSmoker = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+  const heavySmoker = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+  const slug = `smoking-resolved-${seq}`;
+  await makeBankScaleQuestion(slug);
+
+  const { rows: qRows } = await pool.query<{ id: string }>('SELECT id FROM question_bank WHERE slug = $1', [slug]);
+  const questionBankId = qRows[0]!.id;
+  for (const [userId, value] of [[lowSmoker, 1], [heavySmoker, 5]] as const) {
+    await pool.query(
+      `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+       VALUES ($1, $2, $3, 'answered', $4::jsonb, $4::jsonb, 'important', now(), now())`,
+      [userId, slug, questionBankId, JSON.stringify(value)],
+    );
+  }
+
+  await updateMyFilters(actorFor(viewer), [{ filterKey: `qb:${slug}`, operator: 'lte', value: 2, enabled: true, excludeIfUnset: true }]);
+
+  const results = await passesMutualFiltersForCandidates(ctx, viewer, [lowSmoker, heavySmoker]);
+  assert.ok(results.has(lowSmoker), 'self_value=1 satisfies lte 2');
+  assert.ok(!results.has(heavySmoker), 'self_value=5 fails lte 2');
 });
 
 // =====================================================================

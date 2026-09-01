@@ -163,10 +163,19 @@ test('feature flags service resolves deterministically per user', async () => {
 test('seed runs end-to-end and produces expected data', async () => {
   await seed();
 
+  // CUTOVER NOTE (question-system-cutover build, reported — this file is
+  // outside that build's file-ownership boundary and was otherwise left
+  // untouched): `src/seed.ts` now seeds ONLY the ONE typed question bank
+  // (`question_bank`, db/migrations/008_questions.sql) — the OLD
+  // `questions` table is deliberately seeded with nothing (see
+  // src/services/question.service.ts's file-level CUTOVER doc for why the
+  // table still exists in the schema but is never written to by a fresh
+  // seed). This assertion moved from counting `questions` to counting
+  // `question_bank`'s current rows accordingly.
   const counts = await pool.query<{ users: string; questions: string; venues: string; tags: string }>(`
     SELECT
       (SELECT count(*) FROM users)::text AS users,
-      (SELECT count(*) FROM questions)::text AS questions,
+      (SELECT count(*) FROM question_bank WHERE is_current = true)::text AS questions,
       (SELECT count(*) FROM venues)::text AS venues,
       (SELECT count(*) FROM interest_tags)::text AS tags
   `);

@@ -202,12 +202,58 @@ export async function completeOnboarding(
     if (res.statusCode !== 201) throw new Error(`photo upload failed: ${res.statusCode} ${res.body}`);
   }
 
-  const questionsRes = await t.app.inject({ method: 'GET', url: '/questions', headers: authHeader(token) });
-  const questions = JSON.parse(questionsRes.body) as Array<{ id: string }>;
-  const answers = questions.slice(0, Math.max(5, questions.length)).map((q) => ({ questionId: q.id, selfValue: 3, partnerValue: 3 }));
-  if (answers.length > 0) {
-    const answersRes = await t.app.inject({ method: 'PUT', url: '/me/answers', headers: authHeader(token), payload: answers });
-    if (answersRes.statusCode !== 200) throw new Error(`answers failed: ${answersRes.statusCode} ${answersRes.body}`);
+  // CUTOVER NOTE (question-system-cutover build, reported — this file is
+  // outside that build's file-ownership boundary and was otherwise left
+  // untouched): `GET /questions`/`PUT /me/answers` now serve the ONE typed
+  // question bank (paginated `{items, nextCursor}`; one typed
+  // value+importance answer per PUT, not an array of bare 1-5 pairs) —
+  // see src/services/question.service.ts's file-level CUTOVER doc. This
+  // helper is shared by several HTTP suites (`happyPath.test.ts`,
+  // `matches.test.ts`, `serializers.test.ts`, `wiring.test.ts`,
+  // `tests/unit/phone.test.ts`) that need SOME answered questions on the
+  // books for a "complete" onboarding, so it was repointed at the new
+  // shape rather than left calling an API that no longer returns what it
+  // expects (a flat array from `GET /questions`, an array body accepted
+  // by `PUT /me/answers`) — both would otherwise throw inside this helper
+  // for every caller.
+  const questionsRes = await t.app.inject({ method: 'GET', url: '/questions?limit=10', headers: authHeader(token) });
+  const questionsBody = JSON.parse(questionsRes.body) as {
+    items: Array<{
+      slug: string;
+      typeDef:
+        | { type: 'scale' }
+        | { type: 'single_choice' | 'multi_choice'; options: Array<{ key: string }> }
+        | { type: 'frequency'; anchors: Array<{ key: string }> };
+    }>;
+  };
+  for (const q of questionsBody.items.slice(0, 5)) {
+    let selfValue: unknown;
+    let preferenceValue: unknown;
+    switch (q.typeDef.type) {
+      case 'scale':
+        selfValue = 3;
+        preferenceValue = 3;
+        break;
+      case 'single_choice':
+        selfValue = q.typeDef.options[0]!.key;
+        preferenceValue = [q.typeDef.options[0]!.key];
+        break;
+      case 'multi_choice':
+        selfValue = [q.typeDef.options[0]!.key];
+        preferenceValue = [q.typeDef.options[0]!.key];
+        break;
+      case 'frequency':
+        selfValue = q.typeDef.anchors[0]!.key;
+        preferenceValue = q.typeDef.anchors[0]!.key;
+        break;
+    }
+    const answerRes = await t.app.inject({
+      method: 'PUT',
+      url: '/me/answers',
+      headers: authHeader(token),
+      payload: { slug: q.slug, status: 'answered', selfValue, preferenceValue, importance: 'important' },
+    });
+    if (answerRes.statusCode !== 200) throw new Error(`answer failed: ${answerRes.statusCode} ${answerRes.body}`);
   }
 
   const pmRes = await t.app.inject({

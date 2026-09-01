@@ -52,10 +52,50 @@ import { ValidationError } from '../lib/errors.js';
  *     value, so a body-type PREFERENCE is expressed as a SET of
  *     acceptable values via the existing `in` operator, never a numeric
  *     midpoint comparison.
+ *   - a `qb:`-prefixed key (e.g. `qb:children_intention`) resolves against
+ *     the candidate's `user_question_answers.self_value` for the NEW typed
+ *     question bank (db/migrations/008_questions.sql) row whose
+ *     `question_slug` equals `filterKey.slice(3)` — UNRESOLVED unless that
+ *     row's `status = 'answered'` (an unanswered/skipped/
+ *     `prefer_not_to_say` self value can't be compared — this is
+ *     deliberate: it's what lets `prefer_not_to_say` still fail a
+ *     deal-breaker filter, since `evaluateFilter` treats `undefined` as
+ *     failing whenever `excludeIfUnset` is true). The `qb:` namespace is
+ *     populated by `question.service#getMyDealBreakerFilterRows`
+ *     (deal-breaker-derived rows) but is not reserved to it alone: any
+ *     caller of `updateMyFilters` may target `qb:<slug>` directly for a
+ *     non-deal-breaker filter against a new-bank question too.
  *   - every other key (has_children, wants_children, smoking, drinking,
  *     drug_use, religion, and any admin-defined key) resolves against the
- *     candidate's `answers.self_value` for the `questions` row whose
- *     `slug` equals the filter key.
+ *     candidate's OLD-bank `answers.self_value` for the `questions` row
+ *     whose `slug` equals the filter key — see QUESTION-SYSTEM CUTOVER
+ *     note below for why this path, unlike everything the new question-
+ *     bank cutover build owns, is still live here.
+ *
+ * QUESTION-SYSTEM CUTOVER (reported): the redesigned typed question bank
+ * (`question_bank`/`user_question_answers`, `qb:`-prefixed keys above) is
+ * now the ONE bank every user-reachable route, `compatibility.service.ts`,
+ * and new `hard_filters` rows use — see
+ * `src/services/question.service.ts`'s file-level CUTOVER doc. This
+ * file's bare-slug (non-`qb:`) resolution against the OLD `answers`/
+ * `questions` tables was deliberately LEFT IN PLACE rather than removed:
+ * a first attempt at removing it broke several DO-NOT-TOUCH/out-of-
+ * ownership-boundary test suites that plant an old-bank answer via a bare
+ * filter key as their normal way of exercising filter-gated behavior
+ * (`tests/unit/eligibility.test.ts`/`testCtxEligibility.ts` —
+ * `eligibility.service.ts` is explicitly off limits to that build;
+ * `tests/unit/autoDecline.test.ts` — exercises `interest.service.ts`;
+ * `tests/unit/profileAttributes.test.ts`). Removing a resolution path a
+ * live, passing, out-of-scope test suite depends on is a worse outcome
+ * than leaving one extra (inert for any NEW-bank filter, since a `qb:`
+ * key never collides with a bare old-bank slug) resolution branch in
+ * place — same reasoning as that build's decision not to drop the
+ * `questions`/`answers` tables themselves. Nothing new writes a bare
+ * (non-`qb:`) filter key going forward (there is no user-reachable
+ * surface to author one against — `question.service.ts`'s own
+ * deal-breaker derivation only ever emits `qb:`-prefixed keys), so this
+ * is a read-compatibility shim for existing rows/tests, not a second
+ * live write path.
  *
  * MISSING/UNRESOLVED VALUES — the `excludeIfUnset` toggle (product
  * decision, no § reference; supersedes this file's original unconditional
@@ -270,6 +310,19 @@ export function evaluateFilter(
       return !deepEqual(candidateValue, value);
     case 'in': {
       if (!Array.isArray(value)) return false;
+      if (Array.isArray(candidateValue)) {
+        // Overlap semantics: true iff `candidateValue` shares at least one
+        // element with `value`. This is what a `multi_choice` deal-breaker
+        // preference means ("must include at least one of: Spanish,
+        // French") — see src/domain/questions/dealBreakers.ts's
+        // (now-resolved) KNOWN LIMITATION note. A scalar-membership check
+        // (`value.some(v => deepEqual(v, candidateValue))`) can never match
+        // a whole array against one scalar entry, so this branch only ever
+        // activates for an array `candidateValue` — every pre-existing
+        // scalar usage (age/gender/body_type/single_choice) is untouched
+        // by the `else` branch below.
+        return value.some((v) => candidateValue.some((c) => deepEqual(v, c)));
+      }
       return value.some((v) => deepEqual(v, candidateValue));
     }
     case 'gte':
@@ -371,6 +424,31 @@ export function haversineKm(lat1: number, lon1: number, lat2: number, lon2: numb
   return R * c;
 }
 
+/**
+ * Resolves a `qb:`-prefixed filter key's candidate value against the NEW
+ * typed question bank — see the file-level "CANDIDATE ATTRIBUTE SOURCING"
+ * note. Only an `answered` row resolves to a concrete `self_value`;
+ * absent, `skipped`, or `prefer_not_to_say` are all UNRESOLVED
+ * (`undefined`) — deliberately, so `prefer_not_to_say` can still fail a
+ * strict (`excludeIfUnset: true`) deal-breaker filter exactly like an
+ * absent answer does, matching `dealBreakers.ts`'s documented
+ * "RESOLUTION NOTE".
+ */
+async function loadQuestionBankSelfValue(ctx: Ctx, userId: string, slug: string): Promise<unknown> {
+  const { rows } = await ctx.db.query<{ status: string; self_value: unknown }>(
+    `SELECT status, self_value FROM user_question_answers WHERE user_id = $1 AND question_slug = $2`,
+    [userId, slug],
+  );
+  const row = rows[0];
+  if (!row || row.status !== 'answered') return undefined;
+  return row.self_value;
+}
+
+/**
+ * Resolves a BARE (non-`qb:`) filter key's candidate value against the OLD
+ * question bank (`answers` joined to `questions` by slug) — see the
+ * file-level QUESTION-SYSTEM CUTOVER note for why this still exists.
+ */
 async function loadSelfAnswerBySlug(ctx: Ctx, userId: string, slug: string): Promise<number | null | undefined> {
   const { rows } = await ctx.db.query<{ self_value: number | null }>(
     `SELECT a.self_value
@@ -435,7 +513,13 @@ async function resolveAttributeValue(
       return profile?.bodyType ?? undefined;
     }
     default:
-      return loadSelfAnswerBySlug(ctx, subjectUserId, filterKey);
+      // See file-level QUESTION-SYSTEM CUTOVER note — a `qb:`-prefixed key
+      // resolves against the NEW typed bank; anything else falls back to
+      // the OLD bank's bare-slug resolution (kept for out-of-scope test
+      // suites/callers still using that convention).
+      return filterKey.startsWith('qb:')
+        ? loadQuestionBankSelfValue(ctx, subjectUserId, filterKey.slice(3))
+        : loadSelfAnswerBySlug(ctx, subjectUserId, filterKey);
   }
 }
 
@@ -517,8 +601,10 @@ const STRUCTURED_ATTRIBUTE_KEYS: ReadonlySet<string> = new Set([
 
 interface AttributeMaps {
   profiles: Map<string, ProfileLocationAge>;
-  /** userId -> filterKey(slug) -> self_value (may legitimately be `null`; absent key = unresolved, exactly like `loadSelfAnswerBySlug`'s `undefined`). */
-  answers: Map<string, Map<string, number | null>>;
+  /** userId -> question_bank slug -> self_value (typed per question — a number, string, or string[] depending on question type; may legitimately be `null`). Absent key = unresolved (never answered, or answered but not `status = 'answered'`) — exactly like `loadQuestionBankSelfValue`'s `undefined`. Keyed by `qb:`-prefixed filter keys' resolution. */
+  answers: Map<string, Map<string, unknown>>;
+  /** userId -> OLD-bank question slug -> self_value — see file-level QUESTION-SYSTEM CUTOVER note for why this still exists alongside `answers`. Keyed by bare (non-`qb:`) filter keys' resolution. */
+  legacyAnswers: Map<string, Map<string, number | null>>;
 }
 
 /** Batched `loadProfile` — one query for as many users as needed, instead of one query per user. Missing rows are simply absent from the map, exactly like `loadProfile` returning `undefined`. */
@@ -558,8 +644,31 @@ async function loadProfilesBatch(ctx: Ctx, userIds: string[]): Promise<Map<strin
   return map;
 }
 
-/** Batched `loadSelfAnswerBySlug` — one query for as many (user, slug) combinations as needed. `slugs` should already be deduplicated to the filter keys actually in play (see callers). */
-async function loadAnswersBatch(ctx: Ctx, userIds: string[], slugs: string[]): Promise<Map<string, Map<string, number | null>>> {
+/** Batched `loadQuestionBankSelfValue` — one query for as many (user, slug) combinations as needed. `slugs` should already be deduplicated to the `qb:`-prefixed filter keys actually in play, with the prefix stripped (see callers). Only `status = 'answered'` rows are included — see `loadQuestionBankSelfValue`'s doc for why absent/skipped/prefer_not_to_say must stay unresolved rather than resolving to `null`. */
+async function loadQuestionBankAnswersBatch(ctx: Ctx, userIds: string[], slugs: string[]): Promise<Map<string, Map<string, unknown>>> {
+  const map = new Map<string, Map<string, unknown>>();
+  const ids = [...new Set(userIds)];
+  if (ids.length === 0 || slugs.length === 0) return map;
+  const { rows } = await ctx.db.query<{ user_id: string; question_slug: string; status: string; self_value: unknown }>(
+    `SELECT user_id, question_slug, status, self_value
+     FROM user_question_answers
+     WHERE user_id = ANY($1::uuid[]) AND question_slug = ANY($2::text[])`,
+    [ids, slugs],
+  );
+  for (const row of rows) {
+    if (row.status !== 'answered') continue;
+    let perUser = map.get(row.user_id);
+    if (!perUser) {
+      perUser = new Map();
+      map.set(row.user_id, perUser);
+    }
+    perUser.set(row.question_slug, row.self_value);
+  }
+  return map;
+}
+
+/** Batched `loadSelfAnswerBySlug` (OLD bank) — one query for as many (user, slug) combinations as needed. `slugs` should already be deduplicated to the bare filter keys actually in play (see callers). */
+async function loadLegacyAnswersBatch(ctx: Ctx, userIds: string[], slugs: string[]): Promise<Map<string, Map<string, number | null>>> {
   const map = new Map<string, Map<string, number | null>>();
   const ids = [...new Set(userIds)];
   if (ids.length === 0 || slugs.length === 0) return map;
@@ -614,7 +723,15 @@ function resolveAttributeValueFromMaps(
     case 'body_type':
       return maps.profiles.get(subjectUserId)?.bodyType ?? undefined;
     default: {
-      const perUser = maps.answers.get(subjectUserId);
+      // See file-level QUESTION-SYSTEM CUTOVER note — `qb:<slug>` resolves
+      // against the NEW bank; anything else falls back to the OLD bank.
+      if (filterKey.startsWith('qb:')) {
+        const slug = filterKey.slice(3);
+        const perUser = maps.answers.get(subjectUserId);
+        if (!perUser || !perUser.has(slug)) return undefined;
+        return perUser.get(slug);
+      }
+      const perUser = maps.legacyAnswers.get(subjectUserId);
       if (!perUser || !perUser.has(filterKey)) return undefined;
       return perUser.get(filterKey);
     }
@@ -622,15 +739,19 @@ function resolveAttributeValueFromMaps(
 }
 
 async function loadAttributeMapsFor(ctx: Ctx, userIds: string[], filterRows: HardFilterRow[]): Promise<AttributeMaps> {
-  const slugKeys = new Set<string>();
+  const qbSlugs = new Set<string>();
+  const legacySlugs = new Set<string>();
   for (const r of filterRows) {
-    if (!STRUCTURED_ATTRIBUTE_KEYS.has(r.filter_key)) slugKeys.add(r.filter_key);
+    if (STRUCTURED_ATTRIBUTE_KEYS.has(r.filter_key)) continue;
+    if (r.filter_key.startsWith('qb:')) qbSlugs.add(r.filter_key.slice(3));
+    else legacySlugs.add(r.filter_key);
   }
-  const [profiles, answers] = await Promise.all([
+  const [profiles, answers, legacyAnswers] = await Promise.all([
     loadProfilesBatch(ctx, userIds),
-    slugKeys.size > 0 ? loadAnswersBatch(ctx, userIds, [...slugKeys]) : Promise.resolve(new Map<string, Map<string, number | null>>()),
+    qbSlugs.size > 0 ? loadQuestionBankAnswersBatch(ctx, userIds, [...qbSlugs]) : Promise.resolve(new Map<string, Map<string, unknown>>()),
+    legacySlugs.size > 0 ? loadLegacyAnswersBatch(ctx, userIds, [...legacySlugs]) : Promise.resolve(new Map<string, Map<string, number | null>>()),
   ]);
-  return { profiles, answers };
+  return { profiles, answers, legacyAnswers };
 }
 
 export interface FilterCheckPair {

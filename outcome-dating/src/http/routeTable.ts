@@ -54,10 +54,21 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'GET', path: '/me/behavioral-prompts', spec: '§17 (addition)', role: 'user', addition: true },
   { method: 'POST', path: '/me/behavioral-prompts/:suggestionId/respond', spec: '§17 (addition)', role: 'user', addition: true },
 
-  // ---- §24.3 Questions ----
-  { method: 'GET', path: '/questions', spec: '§24.3, §8' , role: 'user' },
-  { method: 'GET', path: '/me/answers', spec: '§24.3, §8', role: 'user' },
-  { method: 'PUT', path: '/me/answers', spec: '§24.3, §8', role: 'user' },
+  // ---- §24.3 Questions — the ONE typed question bank (question-system
+  // cutover; see question.service.ts's file-level CUTOVER doc). The three
+  // paths below are the ones tests/http/routeTable.test.ts hardcodes as
+  // required §24.3 routes; every other entry in this block is an addition
+  // that exposes a piece of the typed bank the old bank had no equivalent
+  // for (paginated bank browsing beyond page 1, next-question selection,
+  // tag intensity, avoid-tags). ----
+  { method: 'GET', path: '/questions', spec: '§24.3, §8 (typed bank, paginated)', role: 'user' },
+  { method: 'GET', path: '/me/answers', spec: '§24.3, §8 (typed bank)', role: 'user' },
+  { method: 'PUT', path: '/me/answers', spec: '§24.3, §8 (typed bank: answer, skip, or prefer-not-to-say one question)', role: 'user' },
+  { method: 'GET', path: '/questions/next', spec: '§8 next-question selector (addition — src/domain/questions/selector.ts)', role: 'user', addition: true },
+  { method: 'GET', path: '/me/tag-intensity', spec: '§8.4 tag intensity (addition — src/domain/questions/tags.ts)', role: 'user', addition: true },
+  { method: 'PUT', path: '/me/tag-intensity/:tagId', spec: '§8.4 tag intensity (addition)', role: 'user', addition: true },
+  { method: 'GET', path: '/me/avoid-tags', spec: '§8.4 avoid-tags (addition — src/domain/questions/tags.ts)', role: 'user', addition: true },
+  { method: 'PUT', path: '/me/avoid-tags', spec: '§8.4 avoid-tags (addition)', role: 'user', addition: true },
 
   // ---- §24.4 Filters ----
   { method: 'GET', path: '/me/filters', spec: '§24.4, §9', role: 'user' },
@@ -158,4 +169,19 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'GET', path: '/devices', spec: '§20 (addition — notifications/devices.ts#listMyDeviceTokens was built but unrouted)', role: 'user', addition: true },
   { method: 'POST', path: '/devices', spec: '§20 (addition — notifications/devices.ts#registerDeviceToken was built but unrouted: without this, push notifications cannot work regardless of configuration)', role: 'user', addition: true },
   { method: 'DELETE', path: '/devices', spec: '§20 (addition — notifications/devices.ts#unregisterDeviceToken was built but unrouted)', role: 'user', addition: true },
+
+  // ---- User stats page (product-owner addition — see stats.service.ts) ----
+  { method: 'GET', path: '/me/stats', spec: 'product-owner addition — user stats page (see stats.service.ts)', role: 'user', addition: true },
+  { method: 'GET', path: '/me/stats/trends', spec: 'product-owner addition — user stats page trend-over-time (see stats.service.ts)', role: 'user', addition: true },
+  { method: 'GET', path: '/me/stats/photos', spec: 'product-owner addition — user stats page photo performance (see stats.service.ts)', role: 'user', addition: true },
+  { method: 'GET', path: '/me/stats/filters', spec: 'product-owner addition — user stats page filter cost (see stats.service.ts)', role: 'user', addition: true },
+
+  // ---- Admin stats page (product-owner addition — see adminStats.service.ts) ----
+  { method: 'GET', path: '/admin/stats/overview', spec: '§26, §27 (addition — richer, rollup-backed admin stats page, see adminStats.service.ts)', role: 'admin', addition: true },
+  { method: 'GET', path: '/admin/stats/retention', spec: '§26, §27 (addition — retention-by-cohort, see adminStats.service.ts)', role: 'admin', addition: true },
+
+  // ---- Localization: locale discovery + per-user preference (product-owner addition — see src/domain/i18n/**, i18n.routes.ts) ----
+  { method: 'GET', path: '/locales', spec: 'localization addition — supported-locale registry, see src/domain/i18n/locales.ts', role: 'public', addition: true },
+  { method: 'GET', path: '/me/locale', spec: 'localization addition — resolves the caller\'s negotiated locale (stored preference over Accept-Language header), see src/domain/i18n/locales.ts#resolveLocale', role: 'user', addition: true },
+  { method: 'PUT', path: '/me/locale', spec: 'localization addition — sets the caller\'s stored locale preference, see i18n.routes.ts', role: 'user', addition: true },
 ];

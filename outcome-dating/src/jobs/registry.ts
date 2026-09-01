@@ -19,6 +19,8 @@ import { ticketedCompletionSweepJob } from './ticketedCompletionSweep.job.js';
 import { checkInPromptSweepJob } from './checkInPromptSweep.job.js';
 import { matchingSignalSweepJob } from './matchingSignalSweep.job.js';
 import { notificationDeliveryJob } from './notificationDelivery.job.js';
+import { statsAggregationJob } from './statsAggregation.job.js';
+import { retentionSweepJob } from './retention.job.js';
 
 export const ALL_JOBS: JobDefinition[] = [
   interestExpiryJob,
@@ -36,6 +38,8 @@ export const ALL_JOBS: JobDefinition[] = [
   checkInPromptSweepJob,
   matchingSignalSweepJob,
   notificationDeliveryJob,
+  statsAggregationJob,
+  retentionSweepJob,
 ];
 
 export function findJob(name: string): JobDefinition | undefined {
@@ -58,4 +62,6 @@ export {
   checkInPromptSweepJob,
   matchingSignalSweepJob,
   notificationDeliveryJob,
+  statsAggregationJob,
+  retentionSweepJob,
 };

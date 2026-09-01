@@ -4,6 +4,8 @@ import { requireUserActor } from '../lib/ctx.js';
 import { ConflictError, NotFoundError, ValidationError } from '../lib/errors.js';
 import type { Answer, AnswerValue, Question, QuestionPolarity } from '../domain/types.js';
 import { refreshScoresForUser } from './compatibility.service.js';
+import { getMyFilters, updateMyFilters } from './filter.service.js';
+import type { UpdateFilterInput } from './filter.service.js';
 import {
   IMPORTANCE_LEVELS,
   TAG_INTENSITY_LEVELS,
@@ -28,21 +30,85 @@ import type {
 import { passesAvoidTagFilter } from '../domain/questions/tags.js';
 
 /**
- * question.service — the compatibility question bank and per-user answers.
+ * question.service — THE compatibility question bank and per-user answers.
  * Spec: §8, §24.3 (routes), §27 (admin question manager).
  *
- * Owning agent: B.
+ * Owning agent: B (question-system cutover build).
+ *
+ * CUTOVER (question-system unification): this file used to also own a
+ * SECOND, OLDER question bank (`questions`/`answers`, a flat 1-5
+ * self/partner pair with no type or importance information). Every
+ * USER-REACHABLE and SCORING/FILTERING surface now uses the ONE typed
+ * bank below exclusively:
+ *   - `GET /questions`, `GET/PUT /me/answers` (src/http/routes/questions.routes.ts,
+ *     owned by this build) now serve the typed bank, not the old one.
+ *   - `compatibility.service.ts` scores exclusively from the typed bank
+ *     (`user_question_answers`) — it no longer reads `answers` at all.
+ *   - `filter.service.ts` resolves candidate attributes for anything not
+ *     a structured profile field exclusively against the typed bank
+ *     (`qb:`-prefixed filter keys) — it no longer resolves a bare slug
+ *     against the old `answers`/`questions` tables.
+ *   - `src/seed.ts` seeds ONLY the typed bank; the old bank is seeded with
+ *     nothing, so a fresh install has zero old-bank rows.
+ *   - `listActiveQuestions`/`getMyAnswers` (the OLD read path this file
+ *     used to expose) are deleted outright — nothing here calls the old
+ *     bank's read path anymore.
+ *
+ * WHAT COULD NOT BE FULLY RETIRED, AND WHY (reported; this is the one
+ * place this build did not reach a clean, single-bank end state): the
+ * `questions`/`answers` TABLES themselves, and three of this file's OLD
+ * functions — `putMyAnswers`, `adminListQuestions`, `adminCreateQuestion`,
+ * `adminUpdateQuestion` — are still present below, because THREE files
+ * outside this build's file-ownership boundary still have a hard,
+ * unavoidable dependency on them that this build is not permitted to fix
+ * by editing those files directly:
+ *   - `src/http/routes/admin.routes.ts` (not owned by this build) calls
+ *     `adminListQuestions`/`adminCreateQuestion`/`adminUpdateQuestion`
+ *     directly to back the §27 admin "question manager" panel
+ *     (`GET/POST /admin/questions`, `PATCH /admin/questions/:id` — routes
+ *     `tests/http/routeTable.test.ts`, itself not owned by this build,
+ *     hardcodes as required). Repointing the admin panel at the typed
+ *     bank's `adminListQuestionBank`/`adminCreateQuestionBankEntry`/
+ *     `adminUpdateQuestionBankEntry` instead requires editing
+ *     `admin.routes.ts` — flagged in this build's report as the single
+ *     highest-priority follow-up, since it's the one remaining place an
+ *     admin could still grow the old bank and recreate the duplication
+ *     this whole cutover exists to eliminate.
+ *   - `src/services/behavioralPrompt.service.ts` (explicitly DO NOT
+ *     TOUCH, per the task's ownership list, beyond the minimal compile-
+ *     preserving repointing already made there — see that file's own
+ *     CUTOVER NOTE) still calls `putMyAnswers` as its one remaining old-
+ *     bank write path for a legacy trigger kind this build did not
+ *     migrate.
+ *   - `src/services/profile.service.ts` (data export / account deletion)
+ *     and `src/services/postDateFeedback.service.ts` (the post-date
+ *     "matching signal" suggestion sweep) — both explicitly DO NOT TOUCH
+ *     — read/write the `answers`/`questions` TABLES directly via raw SQL
+ *     (not through this file), so even functions this file could
+ *     otherwise delete cannot make the tables themselves droppable.
+ * Because of the last point, db/migrations/019_question_cutover.sql does
+ * NOT drop `questions`/`answers` — doing so would break two active,
+ * explicitly off-limits services outright (a runtime SQL error against a
+ * dropped table), which is a worse outcome than leaving an inert, no-
+ * longer-user-reachable table pair in place. See that migration's own
+ * header for the full reasoning and the cleanup it DOES perform (retiring
+ * every `hard_filters` row that can no longer resolve against anything).
+ * Nothing new is ever written to the old tables by this build going
+ * forward except via the one remaining legacy path above.
  *
  * Invariants:
- *  - Every question has both a self answer and a partner answer (§8.1) —
- *    `putMyAnswers` accepts pairs, never a bare value.
- *  - `null` is a legal `selfValue`/`partnerValue` ("prefer not to say",
- *    §8.5) and MUST be treated as neutral by `compatibility.service.ts`,
- *    not coerced to 3.
- *  - Changing an already-answered question that is "critical" (weight
- *    above a threshold, or flagged sensitive) should be flagged by the
- *    caller (HTTP layer) for a confirmation step (§30.8) — this service
- *    just persists what it's given; the confirmation UX is not its job.
+ *  - A question's PREFERENCE is always a VALUE + an IMPORTANCE — never a
+ *    bare number pretending to be both (see src/domain/questions/types.ts).
+ *  - Every question is skippable, and every question accepts an explicit
+ *    `prefer_not_to_say` refusal, regardless of whether it's flagged
+ *    `sensitive` — see `putMyQuestionAnswer`'s own doc.
+ *  - `putMyQuestionAnswer` is the ONLY write path for a new-bank answer,
+ *    and it is what drives BOTH side effects spec §25.4/the deal-breaker
+ *    design require: refreshing this user's materialized compatibility
+ *    scores (`compatibility.service#refreshScoresForUser`), and syncing
+ *    this user's deal-breaker-derived hard filters
+ *    (`filter.service#updateMyFilters`, via `getMyDealBreakerFilterRows`
+ *    below) — see `syncDealBreakerFilters`.
  *
  * SIGNATURE ADDITION (flagged per "Keep stub signatures; minimal changes
  * only, flagged loudly"): `resolveVisibleTagsFor` below is NOT one of the
@@ -62,7 +128,14 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  */
 
 // =====================================================================
-// Row <-> domain mapping
+// LEGACY REMNANT — the OLD question bank's row mapping + the four
+// functions three out-of-ownership-boundary files still call directly.
+// See the file-level "WHAT COULD NOT BE FULLY RETIRED" doc above for
+// exactly which callers and why. NOTHING ELSE in this codebase calls
+// anything in this section: no route this build owns, no seed data, no
+// scoring, no filtering — it exists solely to keep those three external
+// call sites compiling and functioning against tables that must stay for
+// their sake. Do not add a fourth caller.
 // =====================================================================
 
 interface QuestionRow {
@@ -119,51 +192,31 @@ function answerFromRow(row: AnswerRow): Answer {
   };
 }
 
-export async function listActiveQuestions(ctx: Ctx): Promise<Question[]> {
-  const { rows } = await ctx.db.query<QuestionRow>(
-    'SELECT * FROM questions WHERE active = true ORDER BY category, question_text',
-  );
-  return rows.map(questionFromRow);
-}
-
-export async function getMyAnswers(ctx: Ctx): Promise<Answer[]> {
-  const { userId } = requireUserActor(ctx);
-  const { rows } = await ctx.db.query<AnswerRow>('SELECT * FROM answers WHERE user_id = $1', [userId]);
-  return rows.map(answerFromRow);
-}
-
 export interface AnswerInput {
   questionId: string;
   selfValue: AnswerValue;
   partnerValue: AnswerValue;
 }
 
-// §8.1: every question MUST have two answers, both on the 5-point scale.
-// §8.5: "prefer not to say" (null) is allowed only for questions the bank
-// marks `sensitive` — non-sensitive questions must be answered on 1-5 for
-// BOTH sides, so "only one side answered" (or both left as prefer-not-to-say
-// on a non-sensitive question) is rejected below the shape-level zod check.
-const answerValueSchema = z.union([
-  z.literal(1),
-  z.literal(2),
-  z.literal(3),
-  z.literal(4),
-  z.literal(5),
-  z.null(),
-]);
+const answerValueSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5), z.null()]);
 
 const answerInputSchema = z.object({
   questionId: z.string().uuid(),
-  // Both keys are required (not `.optional()`) so a payload supplying only
-  // one side of the pair fails validation before it ever reaches the DB —
-  // this is the "reject any answer that supplies only one side" rule.
   selfValue: answerValueSchema,
   partnerValue: answerValueSchema,
 });
 
 const putMyAnswersSchema = z.array(answerInputSchema).min(1);
 
-/** Upserts one or more answers for the caller. Triggers `compatibility.service.ts#refreshScoresForUser` as a side effect (spec §25.4 "on major answer changes"). */
+/**
+ * OLD-bank answer write path. The only remaining caller is
+ * `behavioralPrompt.service#respondToSuggestion`'s legacy trigger kind
+ * (see this file's "WHAT COULD NOT BE FULLY RETIRED" doc) — every
+ * user-reachable answer write goes through `putMyQuestionAnswer` instead.
+ * Still triggers `compatibility.service#refreshScoresForUser` (harmless
+ * and correct: that function now recomputes exclusively from the NEW
+ * bank regardless of what triggered it).
+ */
 export async function putMyAnswers(ctx: Ctx, answers: AnswerInput[]): Promise<Answer[]> {
   const { userId } = requireUserActor(ctx);
   const parsed = putMyAnswersSchema.parse(answers);
@@ -206,15 +259,14 @@ export async function putMyAnswers(ctx: Ctx, answers: AnswerInput[]): Promise<An
     results.push(answerFromRow(rows[0]!));
   }
 
-  // spec §25.4 "on major answer changes" — refresh this user's materialized
-  // compatibility scores. `question -> compatibility` is a sanctioned edge
-  // (INTERFACES.md call graph).
   await refreshScoresForUser(ctx, userId);
 
   return results;
 }
 
-// ---- Admin (§27 question manager) ----
+// ---- Admin (§27 question manager) — see "WHAT COULD NOT BE FULLY
+// RETIRED" doc: `src/http/routes/admin.routes.ts` (not owned by this
+// build) still calls these three directly. ----
 
 export interface CreateQuestionInput {
   slug: string;
@@ -704,16 +756,32 @@ async function persistAnswer(
  * "always skippable" carries no value/importance to reject or coerce.
  *
  * Every question is always skippable/refusable regardless of `sensitive`
- * — unlike the OLD `putMyAnswers` above, there is no
- * sensitive-questions-only gate on `prefer_not_to_say` here (task brief:
- * "This applies to ALL questions, not just ones flagged sensitive").
+ * — there is no sensitive-questions-only gate on `prefer_not_to_say` here
+ * (task brief: "This applies to ALL questions, not just ones flagged
+ * sensitive").
  *
- * Does NOT call `compatibility.service#refreshScoresForUser` — that
- * service does not yet read the new tables (see the integration-seam doc
- * on `src/domain/questions/scoring.ts`); wiring that refresh in is a
- * later agent's job once compatibility.service.ts is updated to consume
- * the new bank. Also does not itself persist any deal-breaker hard
- * filter — see `getMyDealBreakerFilterRows` below for that seam.
+ * SIDE EFFECTS (both now wired — spec §25.4 "on major answer changes" and
+ * the deal-breaker filter seam, previously left for "a later agent"; that
+ * agent is this build):
+ *   1. `compatibility.service#refreshScoresForUser` — recomputes this
+ *      user's materialized compatibility scores against their bounded
+ *      geographic/activity-window neighbor set (see that function's own
+ *      doc). Mirrors exactly how the old `putMyAnswers` used to trigger
+ *      this.
+ *   2. `syncDealBreakerFilters` (below) — re-derives this user's
+ *      deal-breaker-implied hard filters via `getMyDealBreakerFilterRows`
+ *      and persists them through `filter.service#updateMyFilters`,
+ *      retracting (disabling, not deleting) any previously-derived `qb:*`
+ *      filter that no longer corresponds to a current deal breaker (e.g.
+ *      the user softened a deal breaker to "critical", or changed their
+ *      answer entirely) — see that function's own doc for exactly how the
+ *      retraction diff works.
+ * Both run unconditionally (every status, not just `'answered'`) because
+ * EITHER side effect can matter no matter which direction an edit goes:
+ * turning a deal breaker OFF (by skipping, refusing, or softening the
+ * previous answer) must retract its filter just as reliably as turning one
+ * ON must create it, and any answer change can shift a compatibility
+ * score.
  */
 export async function putMyQuestionAnswer(ctx: Ctx, input: PutQuestionAnswerInput): Promise<QuestionAnswerRecord> {
   const { userId } = requireUserActor(ctx);
@@ -724,6 +792,8 @@ export async function putMyQuestionAnswer(ctx: Ctx, input: PutQuestionAnswerInpu
   if (!question.active) throw new ValidationError(`Question "${parsed.slug}" is not active`, { slug: parsed.slug });
 
   const now = ctx.clock.now();
+
+  let result: QuestionAnswerRecord;
 
   if (parsed.status !== 'answered') {
     nonAnsweredStatusSchema.parse(parsed.status);
@@ -738,54 +808,65 @@ export async function putMyQuestionAnswer(ctx: Ctx, input: PutQuestionAnswerInpu
         { slug: parsed.slug },
       );
     }
-    return persistAnswer(ctx, userId, question, parsed.status, null, null, null, now);
-  }
-
-  if (parsed.selfValue === undefined) {
-    throw new ValidationError('selfValue is required for an "answered" response', { slug: parsed.slug });
-  }
-
-  let rawPreferenceValue: unknown;
-  let importance: ImportanceLevel;
-
-  if (parsed.ladderPosition !== undefined) {
-    if (question.presentation !== 'ladder') {
-      throw new ValidationError(`Question "${parsed.slug}" does not use the ladder presentation`, {
-        slug: parsed.slug,
-        presentation: question.presentation,
-      });
-    }
-    if (parsed.preferenceValue !== undefined || parsed.importance !== undefined) {
-      throw new ValidationError('Provide either ladderPosition or preferenceValue+importance, not both', { slug: parsed.slug });
-    }
-    const ladderResult = ladderPositionToPreference(
-      question.typeDef as SingleChoiceDefinition,
-      parsed.ladderPosition as LadderPosition,
-    );
-    rawPreferenceValue = ladderResult.preferenceValue;
-    importance = ladderResult.importance;
+    result = await persistAnswer(ctx, userId, question, parsed.status, null, null, null, now);
   } else {
-    if (parsed.preferenceValue === undefined || parsed.importance === undefined) {
-      throw new ValidationError(
-        'preferenceValue and importance are required for an "answered" response (or use ladderPosition on a ladder-presentation question)',
-        { slug: parsed.slug },
-      );
+    if (parsed.selfValue === undefined) {
+      throw new ValidationError('selfValue is required for an "answered" response', { slug: parsed.slug });
     }
-    rawPreferenceValue = parsed.preferenceValue;
-    importance = parsed.importance;
+
+    let rawPreferenceValue: unknown;
+    let importance: ImportanceLevel;
+
+    if (parsed.ladderPosition !== undefined) {
+      if (question.presentation !== 'ladder') {
+        throw new ValidationError(`Question "${parsed.slug}" does not use the ladder presentation`, {
+          slug: parsed.slug,
+          presentation: question.presentation,
+        });
+      }
+      if (parsed.preferenceValue !== undefined || parsed.importance !== undefined) {
+        throw new ValidationError('Provide either ladderPosition or preferenceValue+importance, not both', { slug: parsed.slug });
+      }
+      const ladderResult = ladderPositionToPreference(
+        question.typeDef as SingleChoiceDefinition,
+        parsed.ladderPosition as LadderPosition,
+      );
+      rawPreferenceValue = ladderResult.preferenceValue;
+      importance = ladderResult.importance;
+    } else {
+      if (parsed.preferenceValue === undefined || parsed.importance === undefined) {
+        throw new ValidationError(
+          'preferenceValue and importance are required for an "answered" response (or use ladderPosition on a ladder-presentation question)',
+          { slug: parsed.slug },
+        );
+      }
+      rawPreferenceValue = parsed.preferenceValue;
+      importance = parsed.importance;
+    }
+
+    const handler = getTypeHandler(question.typeDef.type);
+    const selfResult = handler.validateSelfValue(question.typeDef, parsed.selfValue);
+    if (!selfResult.valid) {
+      throw new ValidationError(`Invalid selfValue for "${parsed.slug}": ${selfResult.reason}`, { slug: parsed.slug });
+    }
+    const prefResult = handler.validatePreferenceValue(question.typeDef, rawPreferenceValue);
+    if (!prefResult.valid) {
+      throw new ValidationError(`Invalid preferenceValue for "${parsed.slug}": ${prefResult.reason}`, { slug: parsed.slug });
+    }
+
+    result = await persistAnswer(ctx, userId, question, 'answered', selfResult.value, prefResult.value, importance, now);
   }
 
-  const handler = getTypeHandler(question.typeDef.type);
-  const selfResult = handler.validateSelfValue(question.typeDef, parsed.selfValue);
-  if (!selfResult.valid) {
-    throw new ValidationError(`Invalid selfValue for "${parsed.slug}": ${selfResult.reason}`, { slug: parsed.slug });
-  }
-  const prefResult = handler.validatePreferenceValue(question.typeDef, rawPreferenceValue);
-  if (!prefResult.valid) {
-    throw new ValidationError(`Invalid preferenceValue for "${parsed.slug}": ${prefResult.reason}`, { slug: parsed.slug });
-  }
+  // spec §25.4 "on major answer changes" — refresh this user's materialized
+  // compatibility scores.
+  await refreshScoresForUser(ctx, userId);
+  // Deal-breaker filter seam (src/domain/questions/dealBreakers.ts's file
+  // doc) — keep `hard_filters` in sync with this user's CURRENT
+  // deal-breaker answers, including retracting one that just stopped being
+  // a deal breaker.
+  await syncDealBreakerFilters(ctx);
 
-  return persistAnswer(ctx, userId, question, 'answered', selfResult.value, prefResult.value, importance, now);
+  return result;
 }
 
 // =====================================================================
@@ -901,6 +982,61 @@ export async function getMyDealBreakerFilterRows(ctx: Ctx): Promise<DealBreakerF
   }
 
   return deriveDealBreakerFilterRows(questions, answersBySlug);
+}
+
+/**
+ * Persists the caller's CURRENT deal-breaker-implied filters through
+ * `filter.service#updateMyFilters`, and RETRACTS (disables, never
+ * deletes — `updateMyFilters` only ever upserts) any previously-derived
+ * `qb:*` filter that no longer corresponds to a current deal breaker.
+ *
+ * This is the "wiring agent" call `src/domain/questions/dealBreakers.ts`'s
+ * file doc describes: `getMyDealBreakerFilterRows` derives what SHOULD be
+ * enabled right now; every OTHER `qb:`-prefixed row already sitting in
+ * `hard_filters` for this user is, by construction, only ever written by
+ * this same function (the `qb:` namespace exists specifically so nothing
+ * else writes it — see dealBreakers.ts's FILTER-KEY NAMESPACE note), so
+ * any such row not in the current derived set is stale and gets
+ * `enabled: false` here rather than being left in place — a stale
+ * deal-breaker filter that used to be "critical" and is now merely
+ * "important" must stop excluding candidates, not keep doing so silently.
+ * A user's non-`qb:` filters (age, distance, gender, ...) are never
+ * touched by this function.
+ *
+ * A no-op (no `updateMyFilters` call at all) when there is nothing to
+ * enable and nothing to retract, so calling this on every answer change —
+ * even one with no deal-breaker involvement at all — costs one extra read
+ * and no write in the common case.
+ */
+async function syncDealBreakerFilters(ctx: Ctx): Promise<void> {
+  const [currentRows, existingFilters] = await Promise.all([getMyDealBreakerFilterRows(ctx), getMyFilters(ctx)]);
+
+  const currentKeys = new Set(currentRows.map((r) => r.filterKey));
+  const staleQbFilters = existingFilters.filter(
+    (f) => f.filterKey.startsWith('qb:') && f.enabled && !currentKeys.has(f.filterKey),
+  );
+
+  if (currentRows.length === 0 && staleQbFilters.length === 0) return;
+
+  const updates: UpdateFilterInput[] = [
+    ...currentRows.map((r) => ({
+      filterKey: r.filterKey,
+      operator: r.operator,
+      value: r.value,
+      enabled: true,
+      excludeIfUnset: r.excludeIfUnset,
+    })),
+    // Retraction: same operator/value (irrelevant once disabled), enabled: false.
+    ...staleQbFilters.map((f) => ({
+      filterKey: f.filterKey,
+      operator: f.operator,
+      value: f.value,
+      enabled: false,
+      excludeIfUnset: f.excludeIfUnset,
+    })),
+  ];
+
+  await updateMyFilters(ctx, updates);
 }
 
 // =====================================================================

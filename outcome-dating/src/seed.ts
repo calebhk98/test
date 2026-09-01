@@ -58,70 +58,28 @@ function shuffle<T>(arr: readonly T[]): T[] {
 }
 
 // =====================================================================
-// §8 question bank — 26 questions across 6 categories.
-// =====================================================================
-interface QuestionSeed {
-  slug: string;
-  category: string;
-  questionText: string;
-  selfLeftLabel: string;
-  selfRightLabel: string;
-  partnerLeftLabel: string;
-  partnerRightLabel: string;
-  weight: number;
-  polarity: 'standard' | 'reversed';
-  sensitive: boolean;
-}
-
-const QUESTIONS: QuestionSeed[] = [
-  // lifestyle
-  { slug: 'pets', category: 'lifestyle', questionText: 'Pets', selfLeftLabel: 'I do not like pets', selfRightLabel: 'I have pets / love pets', partnerLeftLabel: 'I do not want my partner to have pets', partnerRightLabel: 'Partner must love/have pets', weight: 1.0, polarity: 'standard', sensitive: false },
-  { slug: 'smoking', category: 'lifestyle', questionText: 'Smoking', selfLeftLabel: 'I do not smoke', selfRightLabel: 'I smoke regularly', partnerLeftLabel: 'Partner must not smoke', partnerRightLabel: "Smoking doesn't bother me", weight: 1.5, polarity: 'reversed', sensitive: false },
-  { slug: 'drinking', category: 'lifestyle', questionText: 'Drinking', selfLeftLabel: 'I do not drink', selfRightLabel: 'I drink regularly', partnerLeftLabel: 'Partner should not drink', partnerRightLabel: 'Partner drinks socially or more', weight: 1.0, polarity: 'standard', sensitive: false },
-  { slug: 'drug_use', category: 'lifestyle', questionText: 'Recreational drug use', selfLeftLabel: 'I never use', selfRightLabel: 'I use regularly', partnerLeftLabel: 'Partner must never use', partnerRightLabel: "Doesn't bother me", weight: 1.3, polarity: 'reversed', sensitive: true },
-  { slug: 'fitness', category: 'lifestyle', questionText: 'Fitness / exercise', selfLeftLabel: 'Rarely exercise', selfRightLabel: 'Exercise daily', partnerLeftLabel: 'Fitness not important in partner', partnerRightLabel: 'Partner must be very active', weight: 0.8, polarity: 'standard', sensitive: false },
-  { slug: 'early_late', category: 'lifestyle', questionText: 'Sleep schedule', selfLeftLabel: 'Night owl', selfRightLabel: 'Early bird', partnerLeftLabel: 'Prefer a night owl partner', partnerRightLabel: 'Prefer an early bird partner', weight: 0.5, polarity: 'standard', sensitive: false },
-
-  // family
-  { slug: 'has_children', category: 'family', questionText: 'Do you have children', selfLeftLabel: 'No children', selfRightLabel: 'Have children', partnerLeftLabel: 'Partner must not have children', partnerRightLabel: 'Fine if partner has children', weight: 1.5, polarity: 'standard', sensitive: false },
-  { slug: 'wants_children', category: 'family', questionText: 'Do you want children', selfLeftLabel: 'Do not want children', selfRightLabel: 'Definitely want children', partnerLeftLabel: 'Partner must not want children', partnerRightLabel: 'Partner must want children', weight: 2.0, polarity: 'standard', sensitive: false },
-  { slug: 'family_closeness', category: 'family', questionText: 'Closeness with family', selfLeftLabel: 'Not close with family', selfRightLabel: 'Very close with family', partnerLeftLabel: 'Family closeness not important', partnerRightLabel: 'Partner must be close with family', weight: 0.7, polarity: 'standard', sensitive: false },
-
-  // values
-  { slug: 'religion', category: 'values', questionText: 'Religious practice', selfLeftLabel: 'Not religious', selfRightLabel: 'Very religious', partnerLeftLabel: 'Partner should not be religious', partnerRightLabel: 'Partner must share my faith', weight: 1.4, polarity: 'standard', sensitive: true },
-  { slug: 'politics', category: 'values', questionText: 'Political engagement', selfLeftLabel: 'Not politically engaged', selfRightLabel: 'Very politically engaged', partnerLeftLabel: "Partner's politics don't matter", partnerRightLabel: 'Partner must share my politics', weight: 0.9, polarity: 'standard', sensitive: true },
-  { slug: 'financial_style', category: 'values', questionText: 'Spending vs. saving', selfLeftLabel: 'Free spender', selfRightLabel: 'Careful saver', partnerLeftLabel: 'Prefer a free-spending partner', partnerRightLabel: 'Prefer a careful-saving partner', weight: 1.1, polarity: 'standard', sensitive: false },
-  { slug: 'honesty_directness', category: 'values', questionText: 'Directness in communication', selfLeftLabel: 'Very indirect/gentle', selfRightLabel: 'Very direct/blunt', partnerLeftLabel: 'Prefer a gentle partner', partnerRightLabel: 'Prefer a direct partner', weight: 0.8, polarity: 'standard', sensitive: false },
-  { slug: 'monogamy', category: 'values', questionText: 'Relationship structure', selfLeftLabel: 'Open to non-monogamy', selfRightLabel: 'Strictly monogamous', partnerLeftLabel: 'Open to non-monogamy', partnerRightLabel: 'Must be strictly monogamous', weight: 1.8, polarity: 'standard', sensitive: true },
-
-  // habits
-  { slug: 'cleanliness', category: 'habits', questionText: 'Tidiness', selfLeftLabel: 'Messy', selfRightLabel: 'Very tidy', partnerLeftLabel: "Messiness doesn't bother me", partnerRightLabel: 'Partner must be very tidy', weight: 0.7, polarity: 'standard', sensitive: false },
-  { slug: 'cooking', category: 'habits', questionText: 'Cooking at home', selfLeftLabel: 'Never cook', selfRightLabel: 'Cook most meals', partnerLeftLabel: "Cooking doesn't matter", partnerRightLabel: 'Partner should love cooking', weight: 0.6, polarity: 'standard', sensitive: false },
-  { slug: 'screen_time', category: 'habits', questionText: 'Screen time / gaming', selfLeftLabel: 'Very low screen time', selfRightLabel: 'High screen time / avid gamer', partnerLeftLabel: 'Prefer low screen time partner', partnerRightLabel: "Screen time doesn't matter", weight: 0.6, polarity: 'standard', sensitive: false },
-  { slug: 'spontaneity', category: 'habits', questionText: 'Planning vs. spontaneity', selfLeftLabel: 'Meticulous planner', selfRightLabel: 'Very spontaneous', partnerLeftLabel: 'Prefer a planner partner', partnerRightLabel: 'Prefer a spontaneous partner', weight: 0.7, polarity: 'standard', sensitive: false },
-
-  // social
-  { slug: 'introversion', category: 'social', questionText: 'Introvert vs. extrovert', selfLeftLabel: 'Strong introvert', selfRightLabel: 'Strong extrovert', partnerLeftLabel: 'Prefer an introverted partner', partnerRightLabel: 'Prefer an extroverted partner', weight: 0.9, polarity: 'standard', sensitive: false },
-  { slug: 'social_circle_overlap', category: 'social', questionText: 'Merging friend groups', selfLeftLabel: 'Keep circles separate', selfRightLabel: 'Love merging friend groups', partnerLeftLabel: 'Prefer separate circles', partnerRightLabel: 'Want merged friend groups', weight: 0.4, polarity: 'standard', sensitive: false },
-  { slug: 'humor_style', category: 'social', questionText: 'Sense of humor', selfLeftLabel: 'Dry / sarcastic', selfRightLabel: 'Silly / goofy', partnerLeftLabel: 'Prefer dry/sarcastic humor', partnerRightLabel: 'Prefer silly/goofy humor', weight: 0.5, polarity: 'standard', sensitive: false },
-  { slug: 'affection_style', category: 'social', questionText: 'Physical affection', selfLeftLabel: 'Low affection', selfRightLabel: 'Very affectionate', partnerLeftLabel: 'Prefer low affection partner', partnerRightLabel: 'Partner must be very affectionate', weight: 1.0, polarity: 'standard', sensitive: false },
-
-  // activity / relationship intention
-  { slug: 'hiking', category: 'activity', questionText: 'Hiking / outdoors', selfLeftLabel: 'Not outdoorsy', selfRightLabel: 'Avid hiker/outdoors person', partnerLeftLabel: "Outdoorsiness doesn't matter", partnerRightLabel: 'Partner must love the outdoors', weight: 0.6, polarity: 'standard', sensitive: false },
-  { slug: 'travel', category: 'activity', questionText: 'Travel frequency', selfLeftLabel: 'Rarely travel', selfRightLabel: 'Travel constantly', partnerLeftLabel: 'Prefer a homebody partner', partnerRightLabel: 'Partner must love to travel', weight: 0.7, polarity: 'standard', sensitive: false },
-  { slug: 'nightlife', category: 'activity', questionText: 'Going out / nightlife', selfLeftLabel: 'Prefer staying in', selfRightLabel: 'Love going out', partnerLeftLabel: 'Prefer a homebody partner', partnerRightLabel: 'Partner must love going out', weight: 0.6, polarity: 'standard', sensitive: false },
-  { slug: 'relationship_pace', category: 'activity', questionText: 'Relationship pace', selfLeftLabel: 'Prefer taking things slow', selfRightLabel: 'Prefer moving quickly', partnerLeftLabel: 'Want a partner who takes it slow', partnerRightLabel: 'Want a partner who moves quickly', weight: 1.0, polarity: 'standard', sensitive: false },
-  { slug: 'long_term_intent', category: 'activity', questionText: 'Long-term seriousness', selfLeftLabel: 'Casual dating only', selfRightLabel: 'Looking for marriage', partnerLeftLabel: 'Want a casual partner', partnerRightLabel: 'Want a marriage-minded partner', weight: 1.6, polarity: 'standard', sensitive: false },
-];
-
-// =====================================================================
-// NEW typed question bank (redesigned compatibility question system).
-// 65 questions across 9 categories: lifestyle, values,
-// relationship_intentions, family, social_energy, health_habits,
-// interests, communication, logistics. Written into the NEW
-// `question_bank` table (db/migrations/008_questions.sql) — the OLD
-// `questions` bank above is left exactly as-is (see that migration's
-// file-level "clean break" note for why).
+// THE question bank (redesigned compatibility question system —
+// question-system cutover). 65 questions across 9 categories: lifestyle,
+// values, relationship_intentions, family, social_energy, health_habits,
+// interests, communication, logistics. Written into `question_bank`
+// (db/migrations/008_questions.sql).
+//
+// CUTOVER: this file used to ALSO seed a second, OLDER 26-question, 6-
+// category bank (`questions`/`answers`, a flat 1-5 self/partner pair) here
+// — including `has_children`/`wants_children`/`religion`/`family_closeness`,
+// each a duplicate of a concept the typed bank below already covers under
+// its own slug (`children_intention`, `religious_practice`,
+// `family_closeness` again — the exact collision the product owner
+// flagged: "asked users about children and religion three or four
+// separate times because each surface defined its own version"). That old
+// bank is no longer seeded AT ALL — a fresh install has zero
+// `questions`/`answers` rows, so there is nothing left to duplicate
+// anything in the typed bank below. See
+// src/services/question.service.ts's file-level "CUTOVER" doc for why the
+// `questions`/`answers` TABLES themselves still exist in the schema
+// (three files outside this build's ownership boundary still depend on
+// them) even though nothing here — or anywhere else this build owns —
+// writes a row into them anymore.
 //
 // Every question here picks the type that actually fits its data:
 //   - `scale` only where a labelled MIDPOINT is honestly meaningful,
@@ -986,21 +944,11 @@ async function main(): Promise<void> {
   console.log('Seeding feature flags...');
   await flags.seedKnownFlags();
 
+  // CUTOVER: the OLD 26-question bank (`questions` table) is no longer
+  // seeded at all — see this file's file-level CUTOVER note above and
+  // question.service.ts's for why the table still exists in the schema
+  // but is deliberately left empty by every fresh seed.
   console.log('Seeding question bank...');
-  const questionIds: string[] = [];
-  for (const q of QUESTIONS) {
-    const { rows } = await pool.query<{ id: string }>(
-      `INSERT INTO questions
-         (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
-       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,true)
-       RETURNING id`,
-      [q.slug, q.category, q.questionText, q.selfLeftLabel, q.selfRightLabel, q.partnerLeftLabel, q.partnerRightLabel, q.weight, q.polarity, q.sensitive],
-    );
-    questionIds.push(rows[0]!.id);
-  }
-  console.log(`  ${questionIds.length} questions`);
-
-  console.log('Seeding new typed question bank...');
   const newBank: Array<{ id: string; slug: string; typeDef: QuestionTypeDefinition; sensitive: boolean }> = [];
   for (const q of NEW_QUESTION_BANK) {
     const { rows } = await pool.query<{ id: string }>(
@@ -1127,16 +1075,8 @@ async function main(): Promise<void> {
       [userId, JSON.stringify(ageMin), JSON.stringify(ageMax), JSON.stringify(randInt(10, 100))],
     );
 
-    // Answers: answer 15-22 of the 26 questions.
-    const answeredQuestions = shuffle(questionIds).slice(0, randInt(15, 22));
-    for (const questionId of answeredQuestions) {
-      const selfValue = randInt(1, 5);
-      const partnerValue = randInt(1, 5);
-      await pool.query(
-        `INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1,$2,$3,$4)`,
-        [userId, questionId, selfValue, partnerValue],
-      );
-    }
+    // CUTOVER: no OLD-bank answers are seeded (see file-level CUTOVER
+    // note) — every seeded answer below is against the ONE typed bank.
 
     // Tags: 2-5 tags per user, mostly public, sometimes private_reciprocal.
     const userTagIds = shuffle(tagIds).slice(0, randInt(2, 5));
