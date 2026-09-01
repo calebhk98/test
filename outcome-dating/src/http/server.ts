@@ -28,11 +28,21 @@ import { registerTrustRoutes } from './routes/trust.routes.js';
 import { registerReportRoutes } from './routes/reports.routes.js';
 import { registerAdminRoutes } from './routes/admin.routes.js';
 
+declare module 'fastify' {
+  interface FastifyInstance {
+    rateLimiter: InMemoryRateLimiter;
+  }
+}
+
 export function buildServer(deps: AppDeps): FastifyInstance {
   const app = Fastify({ logger: false });
   const limiter = new InMemoryRateLimiter(deps.clock);
 
   app.decorateRequest('ctx', undefined);
+  // Exposed mainly for `tests/http/*.test.ts`, which register many
+  // accounts per file against one shared limiter instance and need to
+  // reset counters between scenarios — production code never calls this.
+  app.decorate('rateLimiter', limiter);
   app.setErrorHandler(fastifyErrorHandler);
 
   app.get('/healthz', async () => ({ status: 'ok' }));

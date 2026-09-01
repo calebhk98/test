@@ -119,6 +119,11 @@ export function authHeader(token: string): { authorization: string } {
   return { authorization: `Bearer ${token}` };
 }
 
+/** Clears the app's shared §19.2 rate-limit counters — call between test cases in any suite that registers/logs-in more accounts than the per-IP limits allow (the limiter's own behavior is exercised by `tests/http/rateLimit.test.ts`, not by every other suite incidentally hitting it). */
+export function resetRateLimiter(t: TestApp): void {
+  t.app.rateLimiter.reset();
+}
+
 /** Grants `userId` the admin role (direct DB write — there is no self-service "become admin" HTTP route, by design; §4.3 admins are provisioned operationally). */
 export async function makeAdmin(t: TestApp, userId: string): Promise<void> {
   await t.pool.query(`INSERT INTO admin_users (user_id, active) VALUES ($1, true) ON CONFLICT DO NOTHING`, [userId]);

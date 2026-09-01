@@ -89,15 +89,26 @@ import * as trustService from './trust.service.js';
  * proposal safely un-transitioned (still `ticketed`) rather than
  * inconsistent.
  *
- * NOTIFICATION EVENT GAP: `NotificationEventType` (owned by Agent C, frozen
- * in `src/domain/types.ts`) has no event for "date canceled/refunded/
- * disputed/no-show/completed" — only `date_proposal_received`,
- * `date_accepted`, `payment_hold_authorized`, `payment_failed`, and
- * `ticket_issued` exist. This file calls `notify` only at those five
- * points; the other transitions simply have no notification to fire under
- * the current registry. Flagged in the final report as a cross-agent gap
- * (extending `NotificationEventType` + `NOTIFICATION_TEMPLATES` is Agent
- * C's file) rather than worked around here.
+ * NOTIFICATION EVENT GAP (RESOLVED, decision layer): `NotificationEventType`
+ * used to have no event for "date canceled/refunded/disputed/no-show/
+ * completed" — only `date_proposal_received`, `date_accepted`,
+ * `payment_hold_authorized`, `payment_failed`, and `ticket_issued` existed.
+ * Five events (`date_canceled`, `date_refunded`, `date_disputed`,
+ * `date_no_show`, `date_completed`) plus their static templates have since
+ * been added (`src/domain/types.ts`, `notification.service.ts`) and this
+ * file now fires them at the corresponding transitions, including
+ * `cancelDateProposal` and `markNoShow`, which previously sent no
+ * notification at all.
+ *
+ * DECISION-LAYER ADDITIONS (see docs/conformance.md Open Question OQ-3):
+ * `sweepTicketedCompletionWindows` and `listDisputesAwaitingAutoResolution`/
+ * `markDisputeResolved` below implement "what actually sets `no_show` and
+ * how `disputed` gets resolved" — the original spec never said. Both are
+ * pure additions to this file's existing state machine/call graph (no new
+ * "may call" edges) — the one piece of dispute auto-resolution that DOES
+ * need a new edge (filing an implicit report via `report.service.ts`) lives
+ * in the separate `disputeResolution.service.ts` instead; see that file's
+ * header for why.
  *
  * `payment_holds` LOOKUP: `payment.service.ts`'s frozen export list has no
  * "get the hold for this user on this proposal" function (only
@@ -501,6 +512,8 @@ export async function cancelDateProposal(ctx: Ctx, dateProposalId: string): Prom
     const proposerHold = await getHoldRow(ctx, dateProposalId, row.proposer_id);
     if (proposerHold?.status === 'authorized') await paymentService.releaseHold(ctx, proposerHold.id);
     const updated = await setStatus(ctx, dateProposalId, 'canceled', 'canceled_at');
+    await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'date_canceled', channel: 'in_app', payload: { dateProposalId } });
+    await notifyBestEffort(ctx, { userId: row.recipient_id, eventType: 'date_canceled', channel: 'in_app', payload: { dateProposalId } });
     return mapProposal(updated);
   }
 
@@ -533,6 +546,9 @@ export async function cancelDateProposal(ctx: Ctx, dateProposalId: string): Prom
   // column in §23.17 — `canceled_at` is reused for both as "when this
   // cancel-family transition happened".
   const updated = await setStatus(ctx, dateProposalId, finalStatus, 'canceled_at');
+  const eventType = finalStatus === 'refunded' ? 'date_refunded' : 'date_canceled';
+  await notifyBestEffort(ctx, { userId: row.proposer_id, eventType, channel: 'in_app', payload: { dateProposalId } });
+  await notifyBestEffort(ctx, { userId: row.recipient_id, eventType, channel: 'in_app', payload: { dateProposalId } });
   return mapProposal(updated);
 }
 
@@ -721,6 +737,8 @@ export async function markNoShow(ctx: Ctx, dateProposalId: string, noShowUserId:
 
   const updated = await setStatus(ctx, dateProposalId, 'no_show');
   await recordTrustEventBestEffort(ctx, { userId: noShowUserId, eventType: 'no_show', delta: -8, metadata: { dateProposalId } });
+  await notifyBestEffort(ctx, { userId: noShowUserId, eventType: 'date_no_show', channel: 'in_app', payload: { dateProposalId } });
+  await notifyBestEffort(ctx, { userId: otherUserId, eventType: 'date_no_show', channel: 'in_app', payload: { dateProposalId } });
   return mapProposal(updated);
 }
 
@@ -744,5 +762,159 @@ export async function markCompletedByRedemption(ctx: Ctx, dateProposalId: string
   const row = await loadProposalRow(ctx, dateProposalId);
   assertTransition(row.status, 'completed');
   const updated = await setStatus(ctx, dateProposalId, 'completed', 'completed_at');
+  await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'date_completed', channel: 'in_app', payload: { dateProposalId } });
+  await notifyBestEffort(ctx, { userId: row.recipient_id, eventType: 'date_completed', channel: 'in_app', payload: { dateProposalId } });
   return mapProposal(updated);
+}
+
+// =====================================================================
+// sweepTicketedCompletionWindows — §15.4 / Open Question OQ-3
+// =====================================================================
+
+export interface SweepTicketedCompletionWindowsResult {
+  autoNoShow: number;
+  autoDisputed: number;
+}
+
+/**
+ * Decision-layer addition (OQ-3, see this file's module doc and
+ * docs/conformance.md): for every `ticketed` proposal whose no-scan
+ * confirmation window (`scheduled_end + policySnapshot['date.no_scan_confirmation_hours']`)
+ * has closed with the venue never having scanned —
+ *
+ *   - ZERO attendance confirmations from either party -> `no_show`,
+ *     automatically. Refund follows the FROZEN policy snapshot
+ *     (`date.no_show_refund_percent`), applied symmetrically to BOTH
+ *     participants' captured escrow — unlike the admin/system-driven
+ *     `markNoShow` above (which names one specific at-fault party and
+ *     makes the other whole), nobody here proved attendance at all, so
+ *     there is no "the other party showed up" fact to refund in full.
+ *   - EXACTLY ONE confirmation -> `disputed` (spec §15.4). This is the
+ *     same rule `confirmAttendance` already applies inline, duplicated
+ *     here because that check only fires when the CONFIRMING user happens
+ *     to call `confirmAttendance` again after the deadline — this sweep
+ *     is what makes the transition happen even if nobody calls back at
+ *     all, which is the actual "no human step anywhere" requirement
+ *     (spec §18.1).
+ *   - Two-or-more confirmations should be unreachable here (already
+ *     handled inline, transitioning straight to `completed_unverified`)
+ *     — skipped defensively rather than throwing.
+ *
+ * Idempotent/safe to re-run with any clock: only `status = 'ticketed'`
+ * rows are ever candidates, and both outcomes above move the row OUT of
+ * `ticketed`, so a proposal this function has already resolved is never
+ * selected again on a later run.
+ */
+export async function sweepTicketedCompletionWindows(ctx: Ctx): Promise<SweepTicketedCompletionWindowsResult> {
+  const now = ctx.clock.now();
+  const { rows } = await ctx.db.query<DateProposalRow>(`SELECT * FROM date_proposals WHERE status = 'ticketed'`);
+
+  let autoNoShow = 0;
+  let autoDisputed = 0;
+
+  for (const row of rows) {
+    const windowHours = row.policy_snapshot['date.no_scan_confirmation_hours'];
+    const deadline = addHours(row.scheduled_end, windowHours);
+    if (now.getTime() <= deadline.getTime()) continue; // window still open
+
+    const { rows: confirmationRows } = await ctx.db.query<{ user_id: string }>(
+      `SELECT user_id FROM date_attendance_confirmations WHERE date_proposal_id = $1`,
+      [row.id],
+    );
+
+    if (confirmationRows.length === 0) {
+      await autoMarkNoShowBothParties(ctx, row);
+      autoNoShow++;
+    } else if (confirmationRows.length === 1) {
+      assertTransition('ticketed', 'disputed');
+      const updated = await setStatus(ctx, row.id, 'disputed');
+      await notifyBestEffort(ctx, { userId: updated.proposer_id, eventType: 'date_disputed', channel: 'in_app', payload: { dateProposalId: row.id } });
+      await notifyBestEffort(ctx, { userId: updated.recipient_id, eventType: 'date_disputed', channel: 'in_app', payload: { dateProposalId: row.id } });
+      autoDisputed++;
+    }
+  }
+
+  return { autoNoShow, autoDisputed };
+}
+
+async function autoMarkNoShowBothParties(ctx: Ctx, row: DateProposalRow): Promise<void> {
+  const noShowPercent = row.policy_snapshot['date.no_show_refund_percent'];
+
+  for (const participantId of [row.proposer_id, row.recipient_id]) {
+    const hold = await getHoldRow(ctx, row.id, participantId);
+    if (hold?.status === 'captured') {
+      const refundAmount = percentOfCents(Number(hold.amount_cents), noShowPercent);
+      if (refundAmount > 0) await paymentService.refundHold(ctx, hold.id, refundAmount);
+    }
+  }
+
+  const voucher = await getVoucherRow(ctx, row.id);
+  if (voucher && voucher.status === 'issued') await voucherService.cancelVoucher(ctx, voucher.id);
+
+  assertTransition('ticketed', 'no_show');
+  await setStatus(ctx, row.id, 'no_show');
+
+  for (const participantId of [row.proposer_id, row.recipient_id]) {
+    await recordTrustEventBestEffort(ctx, { userId: participantId, eventType: 'no_show', delta: -8, metadata: { dateProposalId: row.id, autoResolved: true } });
+    await notifyBestEffort(ctx, { userId: participantId, eventType: 'date_no_show', channel: 'in_app', payload: { dateProposalId: row.id } });
+  }
+}
+
+// =====================================================================
+// Automated dispute resolution lookups — §15.4 / Open Question OQ-3
+//
+// The actual resolving (filing an implicit report via report.service.ts)
+// lives in the separate `disputeResolution.service.ts` — see that file's
+// header for why it isn't here. These two functions are the read/write
+// primitives it composes: a read-only lookup of what's due, and an
+// idempotency marker `disputeResolution.service.ts` sets once it has
+// finished. Neither reaches outside this file's existing, documented "may
+// call" list.
+// =====================================================================
+
+export interface DisputeAwaitingAutoResolution {
+  dateProposalId: string;
+  conversationId: string;
+  confirmingUserId: string;
+  nonConfirmingUserId: string;
+}
+
+/** `disputed` proposals whose auto-resolve deadline (`scheduled_end + no_scan_confirmation_hours + dispute_auto_resolve_hours`, all from the proposal's own frozen policy snapshot, falling back to live config for a proposal created before `date.dispute_auto_resolve_hours` existed) has passed and have not yet been auto-resolved. */
+export async function listDisputesAwaitingAutoResolution(ctx: Ctx): Promise<DisputeAwaitingAutoResolution[]> {
+  const now = ctx.clock.now();
+  const { rows } = await ctx.db.query<DateProposalRow>(
+    `SELECT * FROM date_proposals WHERE status = 'disputed' AND dispute_resolved_at IS NULL`,
+  );
+
+  const out: DisputeAwaitingAutoResolution[] = [];
+  for (const row of rows) {
+    const windowHours = row.policy_snapshot['date.no_scan_confirmation_hours'];
+    const disputeAutoResolveHours =
+      row.policy_snapshot['date.dispute_auto_resolve_hours'] ?? (await ctx.config.get('date.dispute_auto_resolve_hours'));
+    const deadline = addHours(addHours(row.scheduled_end, windowHours), disputeAutoResolveHours);
+    if (now.getTime() <= deadline.getTime()) continue; // cooldown still running
+
+    const { rows: confirmationRows } = await ctx.db.query<{ user_id: string }>(
+      `SELECT user_id FROM date_attendance_confirmations WHERE date_proposal_id = $1`,
+      [row.id],
+    );
+    const confirmingUserId = confirmationRows[0]?.user_id;
+    if (!confirmingUserId) continue; // defensive: 'disputed' should always carry exactly one confirmation
+    const nonConfirmingUserId = confirmingUserId === row.proposer_id ? row.recipient_id : row.proposer_id;
+
+    out.push({ dateProposalId: row.id, conversationId: row.conversation_id, confirmingUserId, nonConfirmingUserId });
+  }
+  return out;
+}
+
+/**
+ * Idempotency marker only — `disputed` stays a terminal `DateProposalStatus`
+ * (spec §13.3); this does not change `status`. Safe to call twice (a
+ * second call is a no-op via `COALESCE`).
+ */
+export async function markDisputeResolved(ctx: Ctx, dateProposalId: string): Promise<void> {
+  await ctx.db.query(
+    `UPDATE date_proposals SET dispute_resolved_at = COALESCE(dispute_resolved_at, $2) WHERE id = $1`,
+    [dateProposalId, ctx.clock.now()],
+  );
 }
