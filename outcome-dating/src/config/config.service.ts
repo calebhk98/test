@@ -231,6 +231,61 @@ export const ConfigKeyRegistry = {
     description: 'Minimum trust_score for the Elite level.',
     specSection: '§6.1',
   }),
+
+  // ---- Decision-layer additions (see docs/conformance.md's "Open
+  // Questions" section — these close gaps flagged in several agents' own
+  // module docs as "should be config, but config.service.ts is outside my
+  // file-ownership boundary for this pass"; that boundary no longer
+  // applies once the decision layer is being applied). ----
+  'chat.cooling_days': key({
+    schema: z.number().int().positive(),
+    default: 14,
+    scope: 'live',
+    description: 'Days after first message with no date proposal before a conversation moves to "cooling" (the middle §12.6 threshold; date_prompt_hours/pre_date_archive_days already had keys, this one did not).',
+    specSection: '§12.6, §25.3',
+  }),
+  'compatibility.min_shared_questions': key({
+    schema: z.number().int().min(0),
+    default: 3,
+    scope: 'live',
+    description: 'Minimum number of questions both users must have fully answered (both sides, both users) before a compatibility score is computed at all; below this the score defaults to compatibility.no_data_default_score.',
+    specSection: '§16.2',
+  }),
+  'compatibility.no_data_default_score': key({
+    schema: z.number().min(0).max(1),
+    default: 0,
+    scope: 'live',
+    description: 'Compatibility score (0-1) assigned when too few shared answered questions exist to compute a real one (spec §16.2 "too few shared answered questions" — Open Question OQ-2\'s resolution: 0, not neutral).',
+    specSection: '§16.2',
+  }),
+  'discovery.min_profile_completeness': key({
+    schema: z.number().int().min(0).max(100),
+    default: 50,
+    scope: 'live',
+    description: 'Minimum profiles.profile_completeness (0-100) for a profile to be discovery-visible (spec §10.2 rule 3).',
+    specSection: '§10.2',
+  }),
+  'interest.outgoing_pending_limit_limited_tier': key({
+    schema: z.number().int().min(0),
+    default: 2,
+    scope: 'live',
+    description: 'Outgoing pending interest cap for Limited-trust users specifically (spec §6.4\'s unnumbered "limited" restriction-table cell — Open Question OQ-4\'s resolution). Standard trust and above continue to use interest.outgoing_pending_limit.',
+    specSection: '§6.4, §11.2',
+  }),
+  'trust.expose_raw_score': key({
+    schema: z.boolean(),
+    default: false,
+    scope: 'live',
+    description: 'Whether GET /me/trust-shaped responses may surface the exact numeric trustScore rather than trustLevel alone (spec §6.1 "not shown unless product explicitly decides otherwise" — Open Question OQ-7\'s resolution: off by default).',
+    specSection: '§6.1, §6.3',
+  }),
+  'date.dispute_auto_resolve_hours': key({
+    schema: z.number().int().positive(),
+    default: 72,
+    scope: 'snapshot',
+    description: 'Hours after a date proposal enters `disputed` (itself scheduled_end + no_scan_confirmation_hours) before automated resolution runs: an implicit no-show report is filed against the non-confirming party via report.service, feeding trust recalculation (spec §15.4 "automated handling... according to policy" — Open Question OQ-3\'s resolution).',
+    specSection: '§15.4, §18.5',
+  }),
 } as const;
 
 export type ConfigKey = keyof typeof ConfigKeyRegistry;
@@ -255,6 +310,7 @@ export const DATE_PROPOSAL_POLICY_KEYS = [
   'date.late_cancel_refund_percent',
   'date.no_show_refund_percent',
   'date.no_scan_confirmation_hours',
+  'date.dispute_auto_resolve_hours',
 ] as const satisfies readonly ConfigKey[];
 
 type ValuesFor<K extends readonly ConfigKey[]> = { [I in K[number]]: ConfigValue<I> };

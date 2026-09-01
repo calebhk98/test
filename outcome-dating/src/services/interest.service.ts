@@ -9,6 +9,7 @@ import { INTEREST_POLICY_KEYS } from '../config/config.service.js';
 import type { Conversation, Interest, InterestPolicySnapshot, InterestStatus, Page } from '../domain/types.js';
 import * as conversationService from './conversation.service.js';
 import * as notificationService from './notification.service.js';
+import { outgoingInterestPendingLimitFor } from './trust.service.js';
 
 /**
  * interest.service — match interests.
@@ -201,7 +202,7 @@ function decodeCursor(cursor: string): { createdAt: Date; id: string } {
 const RecipientIdSchema = z.string().uuid({ message: 'recipientId must be a UUID.' });
 
 export async function sendInterest(ctx: Ctx, recipientId: string): Promise<Interest> {
-  const { userId } = requireUserActor(ctx);
+  const { userId, trustLevel } = requireUserActor(ctx);
   const parsedRecipientId = RecipientIdSchema.parse(recipientId);
 
   if (parsedRecipientId === userId) {
@@ -210,8 +211,14 @@ export async function sendInterest(ctx: Ctx, recipientId: string): Promise<Inter
 
   const now = ctx.clock.now();
 
+  // Decision-layer addition (Open Question OQ-4, see docs/conformance.md):
+  // §6.4's "Send interests: limited" restriction table cell now has a
+  // concrete, smaller cap for Limited-trust senders —
+  // `trust.outgoingInterestPendingLimitFor` buckets on trustLevel so this
+  // module doesn't re-derive the trust-tier comparison itself (same
+  // pattern as `trust.linksPerHourLimitFor`).
   const [outgoingLimit, dailyLimit, incomingLimitForRecipient, activeConvoLimit] = await Promise.all([
-    ctx.config.get('interest.outgoing_pending_limit'),
+    outgoingInterestPendingLimitFor(ctx, trustLevel),
     ctx.config.get('interest.daily_outgoing_limit'),
     ctx.config.get('interest.incoming_pending_limit'),
     ctx.config.get('chat.active_limit'),

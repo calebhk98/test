@@ -34,19 +34,32 @@ const LEDGER_TYPES: readonly LedgerEntryType[] = [
   'chargeback',
 ];
 
-const RecordEntrySchema = z.object({
-  userId: z.string().uuid(),
-  dateProposalId: z.string().uuid(),
-  paymentHoldId: z.string().uuid().nullable(),
-  type: z.enum(LEDGER_TYPES as [LedgerEntryType, ...LedgerEntryType[]]),
-  amountCents: z.number().int(),
-  currency: z.string().min(1).max(8),
-  processorReference: z.string().nullable(),
-  metadata: z.record(z.unknown()).optional(),
-});
+const RecordEntrySchema = z
+  .object({
+    // Nullable/optional: a `type: 'venue_payout'` entry pays a venue, not a
+    // user (decision-layer addition — see db/migrations/007_decisions.sql's
+    // `payment_ledger_payee_check`; every pre-existing entry type still
+    // requires a real `userId`, enforced below rather than at the schema
+    // shape level so the error message is clearer than a generic union
+    // mismatch).
+    userId: z.string().uuid().nullable(),
+    venueId: z.string().uuid().nullable().optional(),
+    dateProposalId: z.string().uuid(),
+    paymentHoldId: z.string().uuid().nullable(),
+    type: z.enum(LEDGER_TYPES as [LedgerEntryType, ...LedgerEntryType[]]),
+    amountCents: z.number().int(),
+    currency: z.string().min(1).max(8),
+    processorReference: z.string().nullable(),
+    metadata: z.record(z.unknown()).optional(),
+  })
+  .refine((v) => (v.type === 'venue_payout' ? v.venueId != null && v.userId == null : v.userId != null), {
+    message: "type 'venue_payout' requires venueId (and null userId); every other type requires a non-null userId.",
+  });
 
 export interface RecordEntryInput {
-  userId: string;
+  userId: string | null;
+  /** Required (and only meaningful) when `type: 'venue_payout'`. */
+  venueId?: string | null;
   dateProposalId: string;
   paymentHoldId: string | null;
   type: LedgerEntryType;
@@ -58,7 +71,8 @@ export interface RecordEntryInput {
 
 interface LedgerRow {
   id: string;
-  user_id: string;
+  user_id: string | null;
+  venue_id: string | null;
   date_proposal_id: string;
   payment_hold_id: string | null;
   type: LedgerEntryType;
@@ -73,6 +87,7 @@ function mapEntry(row: LedgerRow): LedgerEntry {
   return {
     id: row.id,
     userId: row.user_id,
+    venueId: row.venue_id,
     dateProposalId: row.date_proposal_id,
     paymentHoldId: row.payment_hold_id,
     type: row.type,
@@ -100,11 +115,12 @@ export async function recordEntry(ctx: Ctx, input: RecordEntryInput): Promise<Le
   const parsed = RecordEntrySchema.parse(input);
 
   const { rows } = await ctx.db.query<LedgerRow>(
-    `INSERT INTO payment_ledger (user_id, date_proposal_id, payment_hold_id, type, amount_cents, currency, processor_reference, metadata)
-     VALUES ($1, $2, $3, $4, $5, $6, $7, $8::jsonb)
+    `INSERT INTO payment_ledger (user_id, venue_id, date_proposal_id, payment_hold_id, type, amount_cents, currency, processor_reference, metadata)
+     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9::jsonb)
      RETURNING *`,
     [
       parsed.userId,
+      parsed.venueId ?? null,
       parsed.dateProposalId,
       parsed.paymentHoldId,
       parsed.type,

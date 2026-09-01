@@ -35,6 +35,11 @@ const ALL_EVENT_TYPES: NotificationEventType[] = [
   'chat_cooling',
   'trust_level_changed',
   'safety_notice',
+  'date_canceled',
+  'date_refunded',
+  'date_disputed',
+  'date_no_show',
+  'date_completed',
 ];
 
 test('NOTIFICATION_TEMPLATES has exactly one static template per §20.1 event, and every value looks like a static versioned key (never free text)', () => {

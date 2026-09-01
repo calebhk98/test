@@ -362,7 +362,15 @@ export type NotificationEventType =
   | 'post_date_feedback_request'
   | 'chat_cooling'
   | 'trust_level_changed'
-  | 'safety_notice';
+  | 'safety_notice'
+  // ---- Decision-layer additions (see docs/conformance.md OQ-3): the
+  // original registry had no event for these five date-proposal terminal
+  // transitions, flagged as a gap by dateProposal.service.ts's module doc.
+  | 'date_canceled'
+  | 'date_refunded'
+  | 'date_disputed'
+  | 'date_no_show'
+  | 'date_completed';
 
 export type NotificationChannel = 'push' | 'email' | 'in_app';
 export type NotificationStatus = 'pending' | 'sent' | 'failed' | 'read';
@@ -428,6 +436,36 @@ export interface VenueStaffMember {
 }
 
 // =====================================================================
+// Venue settlements — decision-layer addition (see docs/conformance.md
+// OQ-8, db/migrations/007_decisions.sql). §15.4 says an unverified date
+// "does not automatically settle venue payment" and §13.2/§23.16 give
+// every venue a `margin_percent`, but the original spec defines no payout
+// mechanism — this is it.
+// =====================================================================
+
+export type VenueSettlementStatus = 'settled' | 'failed';
+
+export interface VenueSettlement {
+  id: string;
+  venueId: string;
+  dateProposalId: string;
+  /** Total captured escrow (both participants) this settlement is computed from. */
+  grossEscrowCents: number;
+  /** The venue's `margin_percent` as it stood at settlement time (independent of later venue edits). */
+  marginPercentApplied: number;
+  /** `Math.floor(grossEscrowCents * marginPercentApplied / 100)`. */
+  venuePayoutCents: number;
+  /** `grossEscrowCents - venuePayoutCents` — always exact: `venuePayoutCents + platformCents === grossEscrowCents`. */
+  platformCents: number;
+  status: VenueSettlementStatus;
+  /** Coarse settlement bucket, e.g. `"2026-01"` (UTC year-month at settlement time). */
+  settlementPeriod: string;
+  createdAt: Date;
+  settledAt: Date | null;
+  processorReference: string | null;
+}
+
+// =====================================================================
 // Date proposals (§23.17, §13, §14, §15)
 // =====================================================================
 
@@ -454,6 +492,8 @@ export interface DateProposalPolicySnapshot {
   'date.late_cancel_refund_percent': number;
   'date.no_show_refund_percent': number;
   'date.no_scan_confirmation_hours': number;
+  /** Decision-layer addition (OQ-3): hours after a proposal enters `disputed` (itself `scheduledEnd + no_scan_confirmation_hours`) before automated resolution runs. Optional so proposals created before this key existed still parse. */
+  'date.dispute_auto_resolve_hours'?: number;
 }
 
 export interface DateProposal {
@@ -524,11 +564,24 @@ export interface PaymentHold {
   failureReason: string | null;
 }
 
-export type LedgerEntryType = 'authorization' | 'capture' | 'release' | 'refund' | 'dispute' | 'chargeback';
+/**
+ * `venue_payout` is a decision-layer addition (see docs/conformance.md
+ * OQ-8) — a venue settlement's payout to the venue itself, distinct from
+ * the six user-facing types the original spec (§14.8) enumerates.
+ */
+export type LedgerEntryType = 'authorization' | 'capture' | 'release' | 'refund' | 'dispute' | 'chargeback' | 'venue_payout';
 
 export interface LedgerEntry {
+  /**
+   * Null only for `type: 'venue_payout'` rows, which pay a venue
+   * (`venueId`) rather than a user — every other entry type always carries
+   * a non-null `userId` and a null `venueId`, unchanged from the original
+   * contract.
+   */
+  userId: string | null;
+  /** Set only for `type: 'venue_payout'` rows (see `userId`). */
+  venueId?: string | null;
   id: string;
-  userId: string;
   dateProposalId: string;
   paymentHoldId: string | null;
   type: LedgerEntryType;

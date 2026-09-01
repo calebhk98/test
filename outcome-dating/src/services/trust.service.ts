@@ -394,6 +394,23 @@ export async function recalculateTrustScore(ctx: Ctx, userId: string): Promise<{
   return { trustScore: breakdown.clampedScore, trustLevel: breakdown.level };
 }
 
+/**
+ * Decision-layer addition (Open Question OQ-7, see docs/conformance.md):
+ * whether the numeric `trustScore` may be shown to the user at all, as
+ * opposed to `trustLevel` alone (spec §6.1 "not shown as an exact number
+ * unless product explicitly decides otherwise"). `getMyTrustSummary`
+ * itself deliberately keeps its frozen contract — it always returns both
+ * fields (see this file's own module doc, and `TrustSummary.trustScore`'s
+ * doc comment in domain/types.ts: "service always returns it") — so tests
+ * and other server-side consumers of the full breakdown are unaffected.
+ * This is the single source of truth for the *display* gate: the HTTP
+ * layer should call this before deciding whether to serialize `trustScore`
+ * into a response, rather than re-deriving the config check itself.
+ */
+export async function shouldExposeRawTrustScore(ctx: Ctx): Promise<boolean> {
+  return ctx.config.get('trust.expose_raw_score');
+}
+
 /** Maps a 0-100 score to a level using the configured boundaries (spec §6.1, tunable via §21 config). Pure given the config values, but reads them via `ctx.config`, so it's `async`. */
 export async function levelForScore(ctx: Ctx, score: number): Promise<TrustLevel> {
   const clamped = Math.max(0, Math.min(100, score));
@@ -532,5 +549,21 @@ export async function linksPerHourLimitFor(ctx: Ctx, trustLevel: TrustLevel): Pr
   return meetsMinimum
     ? ctx.config.get('chat.max_links_per_hour_standard_trust')
     : ctx.config.get('chat.max_links_per_hour_low_trust');
+}
+
+/**
+ * Decision-layer addition (Open Question OQ-4, see docs/conformance.md):
+ * §6.4's "Send interests: limited" restriction-table cell for Limited
+ * trust never had a concrete number — only the shared, all-tiers
+ * `interest.outgoing_pending_limit` (5) existed. `interest.service.ts`
+ * should call this instead of reading `interest.outgoing_pending_limit`
+ * unconditionally, so a Limited-trust user's effective cap is the
+ * (smaller) `interest.outgoing_pending_limit_limited_tier` — mirrors
+ * `linksPerHourLimitFor`'s same trust-tier-bucketing pattern above.
+ */
+export async function outgoingInterestPendingLimitFor(ctx: Ctx, trustLevel: TrustLevel): Promise<number> {
+  return trustLevel === 'limited'
+    ? ctx.config.get('interest.outgoing_pending_limit_limited_tier')
+    : ctx.config.get('interest.outgoing_pending_limit');
 }
 

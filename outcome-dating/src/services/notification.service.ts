@@ -48,6 +48,15 @@ export const NOTIFICATION_TEMPLATES: Record<NotificationEventType, string> = {
   chat_cooling: 'chat_cooling_v1',
   trust_level_changed: 'trust_level_changed_v1',
   safety_notice: 'safety_notice_v1',
+  // ---- Decision-layer additions: dateProposal.service.ts's module doc
+  // flagged that no event existed for these five terminal date-proposal
+  // transitions (spec §13.3/§14.7/§15.4, OQ-3's no-human-step resolution
+  // needs to be able to notify both parties).
+  date_canceled: 'date_canceled_v1',
+  date_refunded: 'date_refunded_v1',
+  date_disputed: 'date_disputed_v1',
+  date_no_show: 'date_no_show_v1',
+  date_completed: 'date_completed_v1',
 };
 
 const EVENT_TYPES = Object.keys(NOTIFICATION_TEMPLATES) as [NotificationEventType, ...NotificationEventType[]];

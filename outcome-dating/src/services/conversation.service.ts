@@ -226,21 +226,6 @@ export async function countActiveConversationsForUser(ctx: Ctx, userId: string):
 // runChatDecayJob (§25.3)
 // ---------------------------------------------------------------------
 
-/**
- * §12.6 names three thresholds (72h prompt / 14d cooling / 21d archive),
- * but `config.service.ts`'s `ConfigKeyRegistry` (frozen shared infra, not
- * owned by any one of the five parallel agents) only exposes two of them:
- * `chat.date_prompt_hours` and `chat.pre_date_archive_days`. There is no
- * `chat.cooling_days` key.
- *
- * NEEDED SHARED CHANGE (flagged in the final report): add
- * `'chat.cooling_days'` (default 14, `scope: 'live'`) to
- * `ConfigKeyRegistry`. Until that lands, this local constant carries the
- * spec default so the job is still correct — just not yet admin-tunable
- * for this one threshold the way §21 intends every business variable to be.
- */
-const COOLING_DAYS_FALLBACK = 14;
-
 interface DecayCandidateRow {
   id: string;
   status: ConversationStatus;
@@ -250,11 +235,11 @@ interface DecayCandidateRow {
   has_date_proposal: boolean;
 }
 
-/** §25.3 job: prompt at `chat.date_prompt_hours` since first message with no date proposal, cool at ~`chat.pre_date_archive_days`'s midpoint (see `COOLING_DAYS_FALLBACK` note), archive at the full `chat.pre_date_archive_days`. Config keys are 'live' (spec §21.4) — this job always reads current values. */
+/** §25.3 job: prompt at `chat.date_prompt_hours` since first message with no date proposal, cool at `chat.cooling_days` (decision-layer addition — see `docs/conformance.md`; this used to be a local fallback constant because `chat.cooling_days` didn't exist as a config key), archive at `chat.pre_date_archive_days`. Config keys are 'live' (spec §21.4) — this job always reads current values. */
 export async function runChatDecayJob(ctx: Ctx): Promise<{ prompted: number; cooled: number; archived: number }> {
   const promptHours = await ctx.config.get('chat.date_prompt_hours');
   const archiveDays = await ctx.config.get('chat.pre_date_archive_days');
-  const coolingDays = COOLING_DAYS_FALLBACK;
+  const coolingDays = await ctx.config.get('chat.cooling_days');
   const now = ctx.clock.now();
 
   // §12.7 precedence, encoded at the SQL level: only 'active'/'cooling'

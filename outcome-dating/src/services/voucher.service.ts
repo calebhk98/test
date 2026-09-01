@@ -31,15 +31,13 @@ import type { Voucher, VoucherQrPayload, VoucherStatus } from '../domain/types.j
  * `VoucherQrPayload` exactly (`voucher_id`, `venue_id`, `date_proposal_id`,
  * `expires_at`).
  *
- * SIGNING SECRET: `Ctx` carries no dedicated "signing secret" field, and
- * `src/config/env.ts` (shared infra, not owned by this agent) has no
- * `VOUCHER_QR_SECRET`. Rather than add a new env var to a file outside
- * this agent's ownership without cross-agent coordination, vouchers are
- * signed with the same `AUTH_TOKEN_SECRET` used for auth tokens (both are
- * HMAC-SHA256 compact tokens via the same `sign`/`verify` helpers) — this
- * is noted in the final report as a candidate follow-up (a dedicated
- * voucher secret would let the two token families be rotated
- * independently) rather than made silently.
+ * SIGNING SECRET (decision-layer update): vouchers now sign with their own
+ * `VOUCHER_QR_SECRET` (added to `src/config/env.ts`), not the shared
+ * `AUTH_TOKEN_SECRET` — key separation, so a leaked QR secret (exposed to
+ * venue-side hardware/apps) can never mint an auth token. `voucherSecret()`
+ * falls back to `AUTH_TOKEN_SECRET` when `VOUCHER_QR_SECRET` is unset (dev/
+ * test default) so nothing needs a new required env var to keep working;
+ * production deployments should set `VOUCHER_QR_SECRET` explicitly.
  *
  * `voucher.expiry_hours_after_date_end` is a `scope: 'snapshot'` config
  * key (spec §21.3/§21.4) with nowhere to persist a JSON snapshot on the
@@ -52,7 +50,8 @@ import type { Voucher, VoucherQrPayload, VoucherStatus } from '../domain/types.j
  */
 
 function voucherSecret(): string {
-  return getEnv().AUTH_TOKEN_SECRET;
+  const env = getEnv();
+  return env.VOUCHER_QR_SECRET ?? env.AUTH_TOKEN_SECRET;
 }
 
 interface VoucherRow {

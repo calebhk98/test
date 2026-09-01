@@ -107,20 +107,25 @@ async function loadAnswersForUser(ctx: Ctx, userId: string): Promise<Answer[]> {
 /**
  * Minimum number of questions both users must have *fully* answered
  * (non-null self AND partner value on both sides) before a score is
- * computed at all — below this, score defaults to 0 (spec §16.2 last
- * paragraph, and the `score` JSDoc on `CompatibilityBreakdown` below pins
- * the default to 0, not an ambiguous "neutral").
+ * computed at all — below this, score defaults to
+ * `compatibility.no_data_default_score` (spec §16.2 last paragraph;
+ * Open Question OQ-2's resolution: `0`, not an ambiguous "neutral" — see
+ * docs/conformance.md).
  *
- * Spec §16.2 calls this "config-driven". It should live in
- * `src/config/config.service.ts`'s `ConfigKeyRegistry` (e.g.
- * `compatibility.min_shared_questions`, scope 'live') alongside the other
- * §21.4-style knobs — but that file is shared infrastructure outside this
- * agent's file-ownership boundary for this parallel-build pass (not one of
- * the 5 files this agent owns), so it can't be added here. This constant
- * is the placeholder; flagged loudly in the handoff report as a follow-up
- * for whoever owns `src/config/*`.
+ * DECISION-LAYER UPDATE: this used to be a local constant because
+ * `src/config/config.service.ts` was outside this agent's file-ownership
+ * boundary during the parallel build. It is now backed by the real
+ * `compatibility.min_shared_questions` config key (default still `3`,
+ * unchanged) — `getScore`/`getScoresForCandidates`/`refreshScoresForUser`/
+ * `refreshAllScores` all read it from `ctx.config`. This constant is kept,
+ * still equal to the config default, purely so `computePairScore` (a pure
+ * function with no `ctx`) stays directly unit-testable without a DB —
+ * `tests/unit/compatibility.test.ts` uses it that way.
  */
 export const DEFAULT_MIN_SHARED_QUESTIONS = 3;
+
+/** Config default for `compatibility.no_data_default_score` — see the same note above; kept for `computePairScore`'s pure-function default parameter. */
+export const DEFAULT_NO_DATA_SCORE = 0;
 
 export interface PerQuestionSatisfaction {
   questionId: string;
@@ -194,6 +199,7 @@ export function computePairScore(
   userBAnswers: Answer[],
   questions: Question[],
   minSharedQuestions: number,
+  noDataDefaultScore: number = DEFAULT_NO_DATA_SCORE,
 ): CompatibilityBreakdown {
   const aByQuestion = new Map(userAAnswers.map((a) => [a.questionId, a]));
   const bByQuestion = new Map(userBAnswers.map((a) => [a.questionId, a]));
@@ -237,7 +243,7 @@ export function computePairScore(
   const sharedAnsweredQuestionCount = perQuestion.length;
   const score =
     sharedAnsweredQuestionCount < minSharedQuestions || weightTotal <= 0
-      ? 0
+      ? noDataDefaultScore
       : weightedSum / weightTotal;
 
   return { score, perQuestion, sharedAnsweredQuestionCount };
@@ -263,13 +269,23 @@ async function upsertScore(ctx: Ctx, userId: string, candidateId: string, score:
  * `compatibility_scores` row as a side effect so `refreshAllScores`/direct
  * reads of the table stay consistent with the latest on-demand computation.
  */
+/** Reads the two decision-layer config keys this module's scoring depends on (see `DEFAULT_MIN_SHARED_QUESTIONS`/`DEFAULT_NO_DATA_SCORE` docs above). */
+async function loadScoringConfig(ctx: Ctx): Promise<{ minSharedQuestions: number; noDataDefaultScore: number }> {
+  const values = await ctx.config.getMany(['compatibility.min_shared_questions', 'compatibility.no_data_default_score'] as const);
+  return {
+    minSharedQuestions: values['compatibility.min_shared_questions'],
+    noDataDefaultScore: values['compatibility.no_data_default_score'],
+  };
+}
+
 export async function getScore(ctx: Ctx, userId: string, candidateId: string): Promise<number> {
-  const [questions, userAAnswers, userBAnswers] = await Promise.all([
+  const [questions, userAAnswers, userBAnswers, scoringConfig] = await Promise.all([
     loadActiveQuestions(ctx),
     loadAnswersForUser(ctx, userId),
     loadAnswersForUser(ctx, candidateId),
+    loadScoringConfig(ctx),
   ]);
-  const { score } = computePairScore(userAAnswers, userBAnswers, questions, DEFAULT_MIN_SHARED_QUESTIONS);
+  const { score } = computePairScore(userAAnswers, userBAnswers, questions, scoringConfig.minSharedQuestions, scoringConfig.noDataDefaultScore);
   await upsertScore(ctx, userId, candidateId, score);
   return score;
 }
@@ -281,6 +297,7 @@ export async function getScoresForCandidates(ctx: Ctx, userId: string, candidate
 
   const questions = await loadActiveQuestions(ctx);
   const userAAnswers = await loadAnswersForUser(ctx, userId);
+  const scoringConfig = await loadScoringConfig(ctx);
 
   const { rows } = await ctx.db.query<AnswerRow>(
     'SELECT * FROM answers WHERE user_id = ANY($1::uuid[])',
@@ -296,7 +313,7 @@ export async function getScoresForCandidates(ctx: Ctx, userId: string, candidate
 
   for (const candidateId of candidateIds) {
     const candidateAnswers = answersByCandidate.get(candidateId) ?? [];
-    const { score } = computePairScore(userAAnswers, candidateAnswers, questions, DEFAULT_MIN_SHARED_QUESTIONS);
+    const { score } = computePairScore(userAAnswers, candidateAnswers, questions, scoringConfig.minSharedQuestions, scoringConfig.noDataDefaultScore);
     result.set(candidateId, score);
     await upsertScore(ctx, userId, candidateId, score);
   }
@@ -330,6 +347,7 @@ export async function refreshAllScores(ctx: Ctx): Promise<{ updated: number }> {
   if (ids.length < 2) return { updated: 0 };
 
   const questions = await loadActiveQuestions(ctx);
+  const scoringConfig = await loadScoringConfig(ctx);
   const answersByUser = new Map<string, Answer[]>();
   for (const id of ids) {
     answersByUser.set(id, await loadAnswersForUser(ctx, id));
@@ -344,7 +362,8 @@ export async function refreshAllScores(ctx: Ctx): Promise<{ updated: number }> {
         answersByUser.get(idA) ?? [],
         answersByUser.get(idB) ?? [],
         questions,
-        DEFAULT_MIN_SHARED_QUESTIONS,
+        scoringConfig.minSharedQuestions,
+        scoringConfig.noDataDefaultScore,
       );
       await upsertScore(ctx, idA, idB, score);
       await upsertScore(ctx, idB, idA, score);

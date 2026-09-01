@@ -96,14 +96,16 @@ export function sortDiscoveryCandidates(inputs: DiscoveryRankingInput[]): Discov
 }
 
 // =====================================================================
-// Config-driven-in-spirit constants (see compatibility.service.ts's
-// `DEFAULT_MIN_SHARED_QUESTIONS` comment for why these are local
-// constants rather than `ctx.config` keys: `src/config/config.service.ts`
-// is shared infra outside this agent's file-ownership boundary for this
-// pass). Flagged in the handoff report.
+// §10.2 rule 3 "profile is complete enough" threshold, 0-100.
+//
+// DECISION-LAYER UPDATE: this used to be a local constant (`src/config/
+// config.service.ts` was outside this agent's file-ownership boundary
+// during the parallel build). It is now backed by the real
+// `discovery.min_profile_completeness` config key (default still `50`,
+// unchanged) — `loadCandidatePool`/`isProfileVisibleTo` read it from
+// `ctx.config`. This constant is kept, still equal to the config default,
+// only as a fallback for any call site that can't await `ctx.config`.
 // =====================================================================
-
-/** §10.2 rule 3 "profile is complete enough" threshold, 0-100. */
 export const MIN_PROFILE_COMPLETENESS_FOR_DISCOVERY = 50;
 
 const DEFAULT_PAGE_LIMIT = 20;
@@ -139,6 +141,7 @@ interface CandidatePoolRow {
 }
 
 async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidatePoolRow[]> {
+  const minProfileCompleteness = await ctx.config.get('discovery.min_profile_completeness');
   const { rows } = await ctx.db.query<CandidatePoolRow>(
     `SELECT
        u.id,
@@ -164,7 +167,7 @@ async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidateP
          SELECT 1 FROM blocks b
          WHERE (b.blocker_id = $1 AND b.blocked_id = u.id) OR (b.blocker_id = u.id AND b.blocked_id = $1)
        )`,
-    [viewerId, MIN_PROFILE_COMPLETENESS_FOR_DISCOVERY],
+    [viewerId, minProfileCompleteness],
   );
   return rows;
 }
@@ -398,7 +401,8 @@ export async function isProfileVisibleTo(ctx: Ctx, viewerUserId: string, candida
     [candidateUserId],
   );
   const profile = profileRows[0];
-  if (!profile || profile.profile_completeness < MIN_PROFILE_COMPLETENESS_FOR_DISCOVERY) return false; // rule 3
+  const minProfileCompleteness = await ctx.config.get('discovery.min_profile_completeness');
+  if (!profile || profile.profile_completeness < minProfileCompleteness) return false; // rule 3
 
   const { rows: photoRows } = await ctx.db.query<{ has_approved: boolean }>(
     `SELECT EXISTS(SELECT 1 FROM user_photos WHERE user_id = $1 AND moderation_status = 'approved') AS has_approved`,

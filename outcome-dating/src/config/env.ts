@@ -20,6 +20,19 @@ const EnvSchema = z.object({
   ACCESS_TOKEN_TTL_MINUTES: z.coerce.number().int().positive().default(15),
   REFRESH_TOKEN_TTL_DAYS: z.coerce.number().int().positive().default(30),
 
+  /**
+   * Decision-layer addition: a dedicated signing secret for voucher QR
+   * payloads, separate from `AUTH_TOKEN_SECRET` (spec §15.2). Key
+   * separation matters here — a leaked QR secret (exposed to venue
+   * hardware/apps, printed on receipts, scanned in public) must not be
+   * usable to mint auth tokens. Optional so dev/test keep working without
+   * setting it: `voucher.service.ts#voucherSecret()` falls back to
+   * `AUTH_TOKEN_SECRET` when unset, logging that it did so is unnecessary
+   * noise for local/test — the fallback is the documented, intended
+   * behavior there, not a silent footgun.
+   */
+  VOUCHER_QR_SECRET: z.string().min(1).optional(),
+
   PAYMENT_PROCESSOR: z.enum(['fake', 'stripe']).default('fake'),
   STRIPE_SECRET_KEY: z.string().optional(),
   STRIPE_WEBHOOK_SECRET: z.string().optional(),
