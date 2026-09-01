@@ -536,19 +536,30 @@ test('getDiscoveryGrid: the geographic bounding-box prefilter does not make a sh
   // this would fail (the exact haversine distance essentially never lands
   // exactly on an 8km grid line).
   const bucketKm = 8; // privacy.distance_bucket_km default (see config.service.ts)
+  const shownKm = card!.approximateDistanceKm;
+  assert.ok(shownKm !== null, 'both parties have a location on file, so a distance must be shown');
   assert.equal(
-    Math.round(card!.approximateDistanceKm / bucketKm) * bucketKm,
-    card!.approximateDistanceKm,
+    Math.round(shownKm! / bucketKm) * bucketKm,
+    shownKm,
     'shown distance must fall exactly on the coarse bucket grid, never a raw exact figure',
   );
 });
 
 test('getDiscoveryGrid: pagination — two pages of limit 1 cover the same candidates, in the same order, as one page of limit 2', async () => {
-  const viewer = await makeFullUser({ gender: 'woman' });
-  const a = await makeFullUser({ gender: 'man' });
-  const b = await makeFullUser({ gender: 'man' });
+  // Distinctive age band, isolating this test's pool from every other
+  // makeFullUser candidate already sitting in this shared per-file test
+  // database (same isolation technique as filter.test.ts's reality-
+  // dashboard test) — this test cares about ORDERING STABILITY across
+  // pages, which an accidental extra leftover candidate could otherwise
+  // shuffle in or out of a 2-item page non-deterministically.
+  const viewer = await makeFullUser({ gender: 'woman', age: 40 });
+  const a = await makeFullUser({ gender: 'man', age: 84 });
+  const b = await makeFullUser({ gender: 'man', age: 84 });
+  await setHardFilter(viewer, 'age_min', 'gte', 83);
+  await setHardFilter(viewer, 'age_max', 'lte', 85);
 
   const whole = await getDiscoveryGrid(actorFor(viewer), { limit: 2 });
+  assert.equal(whole.items.length, 2, 'sanity: exactly this test\'s 2 in-band candidates');
   assert.ok(whole.items.map((c) => c.userId).includes(a));
   assert.ok(whole.items.map((c) => c.userId).includes(b));
 

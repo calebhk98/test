@@ -17,6 +17,7 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import pg from 'pg';
+import { randomUUID } from 'node:crypto';
 import { runMigrations } from '../src/db/migrate.js';
 import { closePool } from '../src/db/pool.js';
 import { ConfigService, CONFIG_DEFAULTS, DATE_PROPOSAL_POLICY_KEYS, INTEREST_POLICY_KEYS } from '../src/config/config.service.js';
@@ -26,7 +27,16 @@ import { createSilentLogger } from '../src/lib/logger.js';
 import { seed } from '../src/seed.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
-const TEST_DB_NAME = 'outcome_dating_test';
+// A bare, un-namespaced `outcome_dating_test` was the worst-exposed name
+// in the whole suite for the cross-run database race (test-audit.md's
+// database-race item): every harness in this repo computes its database
+// name deterministically, so two overlapping `npm test` runs (this repo's
+// suite is routinely run by more than one agent at once against the same
+// shared dev Postgres cluster on port 55433) would DROP a database the
+// other still had a live connection to. Folding a fresh per-process
+// random id into the name removes the collision at its root.
+const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
+const TEST_DB_NAME = `outcome_dating_test_${RUN_SUFFIX}`;
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
