@@ -35,17 +35,21 @@ export type { DevicePlatform, ExtendedNotificationEventType, NotificationCategor
 
 export type { PushSender, PushSendParams, PushSendResult } from './ports/push.port.js';
 export type { EmailSender, EmailSendParams, EmailSendResult } from './ports/email.port.js';
+export type { SmsSender, SmsSendParams, SmsSendResult } from './ports/sms.port.js';
 export { FakePushSender } from './adapters/fake.push.js';
 export { FakeEmailSender } from './adapters/fake.email.js';
+export { FakeSmsSender } from './adapters/fake.sms.js';
 export { FcmPushSender } from './adapters/fcm.push.js';
 export { ApnsPushSender } from './adapters/apns.push.js';
 export { SesEmailSender } from './adapters/ses.email.js';
+export { TwilioSmsSender } from './adapters/twilio.sms.js';
 
 import { FakePushSender } from './adapters/fake.push.js';
 import { FakeEmailSender } from './adapters/fake.email.js';
+import { FakeSmsSender } from './adapters/fake.sms.js';
 import type { NotificationSenders } from './delivery.js';
 
-/** Convenience dev/test senders — deterministic in-memory fakes, no credentials required. Production wiring (choosing FCM/APNs/SES vs these fakes) is the jobs/index.ts owner's call; see this build's report for the exact env-driven switch to add there. */
+/** Convenience dev/test senders — deterministic in-memory fakes, no credentials required. Production wiring (choosing FCM/APNs/SES/Twilio vs these fakes) is the jobs/index.ts owner's call; see this build's report for the exact env-driven switch to add there. */
 export function defaultDevSenders(): NotificationSenders {
-  return { push: new FakePushSender(), email: new FakeEmailSender() };
+  return { push: new FakePushSender(), email: new FakeEmailSender(), sms: new FakeSmsSender() };
 }

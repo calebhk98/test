@@ -1,6 +1,7 @@
 import type { Ctx } from '../../lib/ctx.js';
 import { withTransaction } from '../../db/tx.js';
 import { ForbiddenError } from '../../lib/errors.js';
+import { getVerifiedPhoneForUser } from '../auth.service.js';
 import { NOTIFICATION_CONFIG, backoffSeconds } from './config.js';
 import { pruneInvalidToken, listActiveDeviceTokensForUser } from './devices.js';
 import { getCategoryPreferenceForUser, getContentPreviewForUser } from './preferences.js';
@@ -8,6 +9,7 @@ import { isWithinQuietHours, nextQuietHoursEnd, getQuietHoursForUser } from './q
 import { pickMessageTemplate } from './templates.js';
 import type { PushSender } from './ports/push.port.js';
 import type { EmailSender } from './ports/email.port.js';
+import type { SmsSender } from './ports/sms.port.js';
 import type { ExtendedNotificationEventType, NotificationBucket, NotificationOutboxChannel, OutboxStatus } from './types.js';
 
 /**
@@ -51,6 +53,18 @@ import type { ExtendedNotificationEventType, NotificationBucket, NotificationOut
 export interface NotificationSenders {
   push: PushSender;
   email: EmailSender;
+  /**
+   * Optional — a deployment that hasn't wired real SMS delivery yet can
+   * still run this worker for push/email. In practice this is never
+   * actually exercised unset: `outbox.ts` only ever creates an `sms`
+   * channel row for a recipient who is both opted in AND has a verified
+   * phone (see its `smsEligible` gate), so there is normally nothing to
+   * deliver until a real deployment supplies one. If an `sms` row somehow
+   * exists with no sender configured, `deliverSms` treats it as a
+   * transport-not-configured gap (`dropped_no_target`, logged), never a
+   * crash.
+   */
+  sms?: SmsSender;
 }
 
 export interface DeliveryWorkerResult {
@@ -61,6 +75,8 @@ export interface DeliveryWorkerResult {
   dead: number;
   droppedPreference: number;
   droppedNoTarget: number;
+  /** SMS-only: this user had already hit `NOTIFICATION_CONFIG.sms.maxPerUserPerDay` — see `deliverSms`. */
+  droppedRateLimited: number;
   prunedTokens: number;
 }
 
@@ -78,7 +94,17 @@ interface OutboxRowRaw {
 }
 
 function emptyResult(): DeliveryWorkerResult {
-  return { processed: 0, sent: 0, held: 0, retried: 0, dead: 0, droppedPreference: 0, droppedNoTarget: 0, prunedTokens: 0 };
+  return {
+    processed: 0,
+    sent: 0,
+    held: 0,
+    retried: 0,
+    dead: 0,
+    droppedPreference: 0,
+    droppedNoTarget: 0,
+    droppedRateLimited: 0,
+    prunedTokens: 0,
+  };
 }
 
 export async function runNotificationDeliveryWorker(
@@ -174,10 +200,27 @@ async function processOne(
   // ---- 1. Preference gate (never bypassable — safety excepted by design, see file doc) ----
   if (!isSafety) {
     const pref = await getCategoryPreferenceForUser(ctx, row.user_id, row.category as Exclude<NotificationBucket, 'safety'>);
-    const channelAllowed = row.channel === 'push' ? pref.push : pref.email;
+    const channelAllowed = row.channel === 'push' ? pref.push : row.channel === 'email' ? pref.email : pref.sms;
     if (!channelAllowed) {
       await setStatus(ctx, row.id, 'dropped_preference', {}, now);
       result.droppedPreference += 1;
+      return;
+    }
+  }
+
+  // ---- 1b. SMS-only: a verified phone is required at SEND time, not just
+  // at enqueue time (`outbox.ts`'s `smsEligible` pre-filter is a cost
+  // optimization, never the authoritative gate) — this is what makes
+  // "remove your phone" immediately stop SMS delivery even for a row that
+  // was already queued while the phone was still verified. Same
+  // `dropped_no_target` outcome as push with zero enabled devices / email
+  // with no address on file: there is nowhere to send this to, and it is
+  // never worth retrying. ----
+  if (row.channel === 'sms') {
+    const phone = await getVerifiedPhoneForUser(ctx, row.user_id);
+    if (!phone) {
+      await setStatus(ctx, row.id, 'dropped_no_target', {}, now);
+      result.droppedNoTarget += 1;
       return;
     }
   }
@@ -197,8 +240,10 @@ async function processOne(
 
   if (row.channel === 'push') {
     await deliverPush(ctx, row, templateKey, data, senders.push, now, result);
-  } else {
+  } else if (row.channel === 'email') {
     await deliverEmail(ctx, row, templateKey, data, senders.email, now, result);
+  } else {
+    await deliverSms(ctx, row, templateKey, data, senders.sms, now, result);
   }
 }
 
@@ -330,6 +375,77 @@ async function deliverEmail(
     return;
   }
   await retryOrDie(ctx, row, sendResult.failureReason ?? 'email transport failure', now, result);
+}
+
+/** Count of this user's `sent` SMS in the trailing 24h — the cost cap's live counter (`NOTIFICATION_CONFIG.sms.maxPerUserPerDay`). Counts `delivered_at`, not `created_at`: what costs money is a message actually going out, not one merely being queued. */
+async function countSmsSentInTrailing24h(ctx: Ctx, userId: string, now: Date): Promise<number> {
+  const windowStart = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+  const { rows } = await ctx.db.query<{ count: string }>(
+    `SELECT count(*)::text AS count FROM notification_outbox
+      WHERE user_id = $1 AND channel = 'sms' AND status = 'sent' AND delivered_at >= $2`,
+    [userId, windowStart],
+  );
+  return Number(rows[0]?.count ?? '0');
+}
+
+async function deliverSms(
+  ctx: Ctx,
+  row: OutboxRowRaw,
+  templateKey: string,
+  data: Record<string, string>,
+  sms: SmsSender | undefined,
+  now: Date,
+  result: DeliveryWorkerResult,
+): Promise<void> {
+  // Cost cap (build brief: "note any per-user rate cap you add") — checked
+  // AFTER the preference/verified-phone gates above (no point counting
+  // against the cap for a message that wouldn't have sent anyway) but
+  // BEFORE ever calling the sender, so a capped user's overflow messages
+  // never reach the provider (and are never billed) at all.
+  const sentToday = await countSmsSentInTrailing24h(ctx, row.user_id, now);
+  if (sentToday >= NOTIFICATION_CONFIG.sms.maxPerUserPerDay) {
+    await setStatus(ctx, row.id, 'dropped_rate_limited', {}, now);
+    result.droppedRateLimited += 1;
+    return;
+  }
+
+  const phone = await getVerifiedPhoneForUser(ctx, row.user_id);
+  if (!phone) {
+    // Re-checked here too (not just in processOne's 1b gate above) only
+    // because this function can in principle be called directly by a
+    // future caller/test without going through that gate — belt and
+    // braces, not reachable in the normal worker path.
+    await setStatus(ctx, row.id, 'dropped_no_target', {}, now);
+    result.droppedNoTarget += 1;
+    return;
+  }
+
+  if (!sms) {
+    ctx.logger.warn('notifications.sms_sender_not_configured', { outboxId: row.id });
+    await setStatus(ctx, row.id, 'dropped_no_target', {}, now);
+    result.droppedNoTarget += 1;
+    return;
+  }
+
+  let sendResult;
+  try {
+    sendResult = await sms.send({ toE164: phone.e164, templateKey, data });
+  } catch (err) {
+    ctx.logger.warn('notifications.sms_send_threw', { outboxId: row.id, error: err instanceof Error ? err.message : String(err) });
+    await retryOrDie(ctx, row, err instanceof Error ? err.message : 'sms transport error', now, result);
+    return;
+  }
+  if (sendResult.status === 'sent') {
+    await setStatus(ctx, row.id, 'sent', { deliveredAt: now }, now);
+    result.sent += 1;
+    return;
+  }
+  if (sendResult.status === 'invalid_number') {
+    await setStatus(ctx, row.id, 'dead', { lastError: sendResult.failureReason }, now);
+    result.dead += 1;
+    return;
+  }
+  await retryOrDie(ctx, row, sendResult.failureReason ?? 'sms transport failure', now, result);
 }
 
 async function retryOrDie(

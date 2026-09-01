@@ -1,11 +1,14 @@
 import { z } from 'zod';
 import type { Ctx } from '../../lib/ctx.js';
+import { withActor } from '../../lib/ctx.js';
 import { ValidationError } from '../../lib/errors.js';
 import { newId } from '../../lib/ids.js';
 import * as notificationService from '../notification.service.js';
+import { getVerifiedPhoneForUser } from '../auth.service.js';
 import { NOTIFICATION_CONFIG } from './config.js';
+import { getCategoryPreferenceForUser } from './preferences.js';
 import { EVENT_BUCKET, EXTENDED_EVENT_TYPES, isKnownEventType, logicalTemplateKey } from './templates.js';
-import type { ExtendedNotificationEventType, NotificationOutboxChannel } from './types.js';
+import type { ExtendedNotificationEventType, NotificationBucket, NotificationOutboxChannel } from './types.js';
 
 /**
  * `enqueueNotification` — the ONE exported entrypoint every event-raising
@@ -172,6 +175,23 @@ export async function enqueueNotification(ctx: Ctx, input: EnqueueNotificationIn
   // ---- 3. Coalesce-or-create one outbox row per transport channel ----
   const templateKey = logicalTemplateKey(parsed.eventType);
   const channels: NotificationOutboxChannel[] = ['push', 'email'];
+  // 'sms' is added only when it could possibly be delivered: the caller
+  // never decides this (see file doc's "never bypassable by a caller"
+  // rule — that's about who controls the GATE, not about whether the gate
+  // runs here or in delivery.ts). Unlike push/email, which always get a
+  // row regardless of preference, SMS gets a row ONLY when both (a) the
+  // recipient has this category's sms preference on and (b) they
+  // currently have a verified phone — because SMS costs real money per
+  // message, so a row that's `dropped_preference`/`dropped_no_target` a
+  // moment later at delivery time is a cost worth avoiding entirely, not
+  // just a harmless no-op the way it is for the two free channels.
+  // `delivery.ts` still re-checks both conditions live at send time
+  // regardless (state can change between enqueue and delivery — e.g. the
+  // phone gets removed) — this is a cost-saving pre-filter, never the
+  // authoritative gate.
+  if (await smsEligible(ctx, parsed.userId, category)) {
+    channels.push('sms');
+  }
   const outboxIds: string[] = [];
 
   for (const channel of channels) {
@@ -195,6 +215,29 @@ export async function enqueueNotification(ctx: Ctx, input: EnqueueNotificationIn
   ]);
 
   return { deduplicated: false, outboxIds };
+}
+
+/**
+ * `safety` has no configurable category preference at all (see types.ts),
+ * so it structurally can never be SMS-eligible — checked first to avoid an
+ * unnecessary query for the one bucket this can never apply to.
+ *
+ * Runs the two internal reads under a `system` actor rather than
+ * `ctx.actor` as-received: `enqueueNotification`'s caller is very often
+ * acting on behalf of SOMEONE ELSE (Alice sending Bob an interest enqueues
+ * a notification FOR Bob, while `ctx.actor` is still Alice) — exactly the
+ * cross-user internal read `getVerifiedPhoneForUser`'s actor guard exists
+ * to distinguish from a user fetching their own phone. `withActor` only
+ * swaps the actor for this one internal permission check; it does not
+ * change `ctx.db` (still the same, possibly-open, transaction).
+ */
+async function smsEligible(ctx: Ctx, userId: string, category: NotificationBucket): Promise<boolean> {
+  if (category === 'safety') return false;
+  const systemCtx = withActor(ctx, { type: 'system', job: 'notifications.outbox' });
+  const pref = await getCategoryPreferenceForUser(systemCtx, userId, category);
+  if (!pref.sms) return false;
+  const phone = await getVerifiedPhoneForUser(systemCtx, userId);
+  return phone !== null;
 }
 
 interface CoalesceParams {
@@ -229,9 +272,15 @@ interface CoalesceParams {
  * merge path never actually triggers for them).
  */
 async function coalesceOrCreate(ctx: Ctx, params: CoalesceParams): Promise<string> {
-  const { message } = NOTIFICATION_CONFIG;
-  const debounceMs = params.eventType === 'message_received' ? message.coalesceDebounceSeconds * 1000 : 0;
-  const maxWaitMs = params.eventType === 'message_received' ? message.coalesceMaxWaitSeconds * 1000 : 0;
+  const { message, sms } = NOTIFICATION_CONFIG;
+  const isMessageEvent = params.eventType === 'message_received';
+  // SMS coalesces at least as aggressively as push for the same event —
+  // in practice MORE aggressively (build brief: cost awareness), using the
+  // longer `sms.*` window instead of `message.*` (config.ts) whenever this
+  // row's channel is 'sms'. Every other channel keeps the original window.
+  const useSmsWindow = isMessageEvent && params.channel === 'sms';
+  const debounceMs = isMessageEvent ? (useSmsWindow ? sms.coalesceDebounceSeconds : message.coalesceDebounceSeconds) * 1000 : 0;
+  const maxWaitMs = isMessageEvent ? (useSmsWindow ? sms.coalesceMaxWaitSeconds : message.coalesceMaxWaitSeconds) * 1000 : 0;
 
   const { rows: merged } = await ctx.db.query<OutboxIdRow>(
     `UPDATE notification_outbox
