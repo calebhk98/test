@@ -96,7 +96,6 @@ const TRUNCATE_TABLES = [
   'photo_recommendations',
   'user_photos',
   'user_question_answers',
-  'answers',
   'user_tags',
   'admin_audit_log',
   'admin_users',
