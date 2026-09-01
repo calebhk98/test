@@ -19,6 +19,13 @@
  *     (`.pglog`, `*.log`, `coverage/`): not source or documentation.
  *   - Binary files (detected by a failed clean UTF-8 decode): a dash
  *     character inside binary data isn't a copy violation.
+ *   - `SPEC.md` at the repository root: a verbatim copy of the product
+ *     specification the project owner supplied, not a document this
+ *     project authors, and the reference every conformance claim in the
+ *     repository is measured against. Preserved exactly as received,
+ *     punctuation and all; only a file actually named `SPEC.md` sitting
+ *     directly in the repo root is exempted, so a same-named file nested
+ *     somewhere else in the tree is still scanned normally.
  *
  * HOW THE SCAN WORKS: this is a real scan of file contents, not a spot
  * check. Every in-scope file is read as UTF-8 and checked for either
@@ -42,21 +49,28 @@ const LOCKFILE_NAMES = new Set(['package-lock.json', 'yarn.lock', 'pnpm-lock.yam
 
 const DASH_PATTERN = /[\u2013\u2014]/;
 
+/** Externally supplied documents preserved verbatim, keyed by the repo-root-relative path where each one lives, never by bare filename (so a same-named file elsewhere in the tree, if one is ever added, is still scanned normally). Add a file here only when it is content this project received rather than authored, with a one-line reason. */
+const VERBATIM_EXTERNAL_FILES = new Set([
+  'SPEC.md', // the product specification as supplied by the project owner; the reference every conformance claim is measured against, preserved exactly as received.
+]);
+
 function isExcludedFile(name: string): boolean {
   if (LOCKFILE_NAMES.has(name)) return true;
   if (name === '.pglog' || name.endsWith('.log')) return true;
   return false;
 }
 
-/** Recursively lists every in-scope file under `dir`, skipping excluded directories entirely (never descends into them, so a large excluded tree like node_modules costs nothing beyond one stat call per entry). */
-function listScannedFiles(dir: string): string[] {
+/** Recursively lists every in-scope file under `dir`, skipping excluded directories entirely (never descends into them, so a large excluded tree like node_modules costs nothing beyond one stat call per entry). `repoRootRelative` is the path of `dir` relative to `REPO_ROOT` ('' for the root itself), used only to check `VERBATIM_EXTERNAL_FILES` by full path rather than bare name. */
+function listScannedFiles(dir: string, repoRootRelative: string): string[] {
   const out: string[] = [];
   for (const entry of readdirSync(dir)) {
     if (EXCLUDED_DIR_NAMES.has(entry)) continue;
     const full = join(dir, entry);
+    const entryRelative = repoRootRelative ? `${repoRootRelative}/${entry}` : entry;
+    if (VERBATIM_EXTERNAL_FILES.has(entryRelative)) continue;
     const stat = statSync(full);
     if (stat.isDirectory()) {
-      out.push(...listScannedFiles(full));
+      out.push(...listScannedFiles(full, entryRelative));
     } else if (stat.isFile() && !isExcludedFile(entry)) {
       out.push(full);
     }
@@ -87,7 +101,7 @@ export function scanForDashes(sources: Array<{ file: string; source: string }>):
 
 function realTreeSources(): Array<{ file: string; source: string }> {
   const out: Array<{ file: string; source: string }> = [];
-  for (const absPath of listScannedFiles(REPO_ROOT)) {
+  for (const absPath of listScannedFiles(REPO_ROOT, '')) {
     let text: string;
     try {
       const buf = readFileSync(absPath);
@@ -138,4 +152,15 @@ test('dash guard: excluded directories and lockfiles are never scanned', () => {
   assert.ok(EXCLUDED_DIR_NAMES.has('dist'));
   assert.ok(EXCLUDED_DIR_NAMES.has('.pgdata'));
   assert.ok(LOCKFILE_NAMES.has('package-lock.json'));
+});
+
+test('dash guard: root SPEC.md is excluded as externally supplied content, but only at the root', () => {
+  const files = listScannedFiles(REPO_ROOT, '').map((f) => relative(REPO_ROOT, f).split('\\').join('/'));
+  assert.ok(!files.includes('SPEC.md'), 'root SPEC.md must never be scanned, it is preserved verbatim as received');
+  // The exclusion is by full repo-root-relative path, not by bare filename,
+  // so a same-named file nested elsewhere would still be scanned; prove
+  // that with a fixture rather than asserting a negative about the real
+  // tree (which has no nested SPEC.md today, but that isn't what this
+  // guards against drifting).
+  assert.ok(!VERBATIM_EXTERNAL_FILES.has('docs/SPEC.md'), 'the exclusion is keyed by full path, not bare filename');
 });
