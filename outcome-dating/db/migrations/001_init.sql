@@ -352,7 +352,7 @@ CREATE TABLE venues (
   margin_percent     double precision NOT NULL DEFAULT 0 CHECK (margin_percent BETWEEN 0 AND 100),
   time_slot_config   jsonb NOT NULL DEFAULT '{}'::jsonb, -- §13.2 "available time slots"
   redemption_method  text NOT NULL DEFAULT 'qr_scan'
-                       CHECK (redemption_method IN ('qr_scan', 'staff_manual_code')), -- §13.2, §15.3
+                       CHECK (redemption_method IN ('qr_scan', 'manual_code')), -- §13.2, §15.3
   created_at         timestamptz NOT NULL DEFAULT now()
 );
 
