@@ -64,8 +64,16 @@ function assertPrivacySafePayload(eventType: ExtendedNotificationEventType, payl
     // `messagePreviewText` on `message_received` is the one field allowed to carry
     // raw user content — it is only ever surfaced downstream when the
     // recipient has opted into lock-screen previews (preferences.ts,
-    // default OFF); see delivery.ts.
-    if (eventType === 'message_received' && key === 'messagePreviewText') continue;
+    // default OFF); see delivery.ts. Any OTHER event carrying this key is
+    // rejected just as hard as a generic prose field would be — the
+    // exception is scoped to the one event it's documented for, not to
+    // the key name globally.
+    if (key === 'messagePreviewText') {
+      if (eventType === 'message_received') continue;
+      throw new ValidationError(
+        `"messagePreviewText" is only a valid payload field for "message_received" (got "${eventType}").`,
+      );
+    }
 
     if ((FORBIDDEN_PAYLOAD_KEYS as readonly string[]).includes(key)) {
       throw new ValidationError(
