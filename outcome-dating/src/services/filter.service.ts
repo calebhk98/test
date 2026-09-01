@@ -483,6 +483,372 @@ export async function passesMutualFilters(ctx: Ctx, userId: string, candidateId:
   return candidatePassesMine && userPassesCandidates;
 }
 
+// =====================================================================
+// SCALE FIX (docs/scale-and-sources.md Part 1, §1.1.2/§1.1.4 fix #2):
+// batched filter evaluation.
+//
+// `subjectPassesFiltersOf` above is correct but does 1 query for the
+// owner's filter rows PLUS 1 query per enabled filter, per call — fine
+// for a single known pair (that's still how `passesMutualFilters` and
+// `eligibility.service.ts` use it, unchanged), catastrophic when called
+// in a loop over a whole candidate pool. Everything below computes the
+// exact same result (same `resolveAttributeValue` switch, same
+// `evaluateFilter`, reused verbatim) for MANY (subject, owner) pairs at
+// once, in a number of queries that does NOT grow with the number of
+// pairs — see `evaluateFilterPairsBatch`'s doc for the fixed query
+// budget. `discovery.service.ts`'s candidate-pool gate,
+// `countUsersMatchingMyFilters`, and `countUsersWhoseFiltersIMatch` all
+// go through this now; `previewPoolSizeWithUnsetPolicy` uses the same
+// batched attribute maps directly (it needs a per-call `excludeIfUnset`
+// override `evaluateFilterPairsBatch` doesn't take a parameter for).
+// =====================================================================
+
+/** Filter keys resolved straight off a `profiles` row — see `resolveAttributeValue`. Anything not in this set is a slug-based `answers` lookup (the `default` case there). */
+const STRUCTURED_ATTRIBUTE_KEYS: ReadonlySet<string> = new Set([
+  'age_min',
+  'age_max',
+  'distance_km',
+  'gender_preference',
+  'relationship_intention',
+  'height_cm',
+  'weight_g',
+  'body_type',
+]);
+
+interface AttributeMaps {
+  profiles: Map<string, ProfileLocationAge>;
+  /** userId -> filterKey(slug) -> self_value (may legitimately be `null`; absent key = unresolved, exactly like `loadSelfAnswerBySlug`'s `undefined`). */
+  answers: Map<string, Map<string, number | null>>;
+}
+
+/** Batched `loadProfile` — one query for as many users as needed, instead of one query per user. Missing rows are simply absent from the map, exactly like `loadProfile` returning `undefined`. */
+async function loadProfilesBatch(ctx: Ctx, userIds: string[]): Promise<Map<string, ProfileLocationAge>> {
+  const map = new Map<string, ProfileLocationAge>();
+  const ids = [...new Set(userIds)];
+  if (ids.length === 0) return map;
+  const { rows } = await ctx.db.query<{
+    user_id: string;
+    age: number;
+    gender: string;
+    relationship_intention: string;
+    latitude: number | null;
+    longitude: number | null;
+    height_cm: number | null;
+    weight_g: number | null;
+    weight_visible: boolean;
+    body_type: string | null;
+  }>(
+    `SELECT user_id, age, gender, relationship_intention, latitude, longitude, height_cm, weight_g, weight_visible, body_type
+     FROM profiles WHERE user_id = ANY($1::uuid[])`,
+    [ids],
+  );
+  for (const row of rows) {
+    map.set(row.user_id, {
+      age: row.age,
+      gender: row.gender,
+      relationshipIntention: row.relationship_intention,
+      latitude: row.latitude,
+      longitude: row.longitude,
+      heightCm: row.height_cm,
+      weightG: row.weight_g,
+      weightVisible: row.weight_visible,
+      bodyType: row.body_type,
+    });
+  }
+  return map;
+}
+
+/** Batched `loadSelfAnswerBySlug` — one query for as many (user, slug) combinations as needed. `slugs` should already be deduplicated to the filter keys actually in play (see callers). */
+async function loadAnswersBatch(ctx: Ctx, userIds: string[], slugs: string[]): Promise<Map<string, Map<string, number | null>>> {
+  const map = new Map<string, Map<string, number | null>>();
+  const ids = [...new Set(userIds)];
+  if (ids.length === 0 || slugs.length === 0) return map;
+  const { rows } = await ctx.db.query<{ user_id: string; slug: string; self_value: number | null }>(
+    `SELECT a.user_id, q.slug, a.self_value
+     FROM answers a
+     JOIN questions q ON q.id = a.question_id
+     WHERE a.user_id = ANY($1::uuid[]) AND q.slug = ANY($2::text[])`,
+    [ids, slugs],
+  );
+  for (const row of rows) {
+    let perUser = map.get(row.user_id);
+    if (!perUser) {
+      perUser = new Map();
+      map.set(row.user_id, perUser);
+    }
+    perUser.set(row.slug, row.self_value);
+  }
+  return map;
+}
+
+/** Same resolution as `resolveAttributeValue`, but reading from preloaded maps instead of issuing a query — MUST stay behaviorally identical to that function, switch case for switch case, since both exist only because a caller needs this either per-pair (I/O) or batched (maps). */
+function resolveAttributeValueFromMaps(
+  subjectUserId: string,
+  filterOwnerUserId: string,
+  filterKey: string,
+  maps: AttributeMaps,
+): unknown {
+  switch (filterKey) {
+    case 'age_min':
+    case 'age_max':
+      return maps.profiles.get(subjectUserId)?.age ?? undefined;
+    case 'distance_km': {
+      const subject = maps.profiles.get(subjectUserId);
+      const owner = maps.profiles.get(filterOwnerUserId);
+      if (subject?.latitude == null || subject?.longitude == null || owner?.latitude == null || owner?.longitude == null) {
+        return undefined;
+      }
+      return haversineKm(subject.latitude, subject.longitude, owner.latitude, owner.longitude);
+    }
+    case 'gender_preference':
+      return maps.profiles.get(subjectUserId)?.gender ?? undefined;
+    case 'relationship_intention':
+      return maps.profiles.get(subjectUserId)?.relationshipIntention ?? undefined;
+    case 'height_cm':
+      return maps.profiles.get(subjectUserId)?.heightCm ?? undefined;
+    case 'weight_g': {
+      const profile = maps.profiles.get(subjectUserId);
+      if (!profile || !profile.weightVisible || profile.weightG == null) return undefined;
+      return profile.weightG;
+    }
+    case 'body_type':
+      return maps.profiles.get(subjectUserId)?.bodyType ?? undefined;
+    default: {
+      const perUser = maps.answers.get(subjectUserId);
+      if (!perUser || !perUser.has(filterKey)) return undefined;
+      return perUser.get(filterKey);
+    }
+  }
+}
+
+async function loadAttributeMapsFor(ctx: Ctx, userIds: string[], filterRows: HardFilterRow[]): Promise<AttributeMaps> {
+  const slugKeys = new Set<string>();
+  for (const r of filterRows) {
+    if (!STRUCTURED_ATTRIBUTE_KEYS.has(r.filter_key)) slugKeys.add(r.filter_key);
+  }
+  const [profiles, answers] = await Promise.all([
+    loadProfilesBatch(ctx, userIds),
+    slugKeys.size > 0 ? loadAnswersBatch(ctx, userIds, [...slugKeys]) : Promise.resolve(new Map<string, Map<string, number | null>>()),
+  ]);
+  return { profiles, answers };
+}
+
+export interface FilterCheckPair {
+  subjectId: string;
+  ownerId: string;
+}
+
+/**
+ * Evaluates "does `subjectId` satisfy `ownerId`'s enabled hard filters"
+ * for every pair in `pairs`, in a FIXED number of queries regardless of
+ * how many pairs are given: one `hard_filters` fetch for every distinct
+ * owner in the batch, one `profiles` fetch for every distinct subject/
+ * owner id in the batch, and (only if at least one filter key needs it)
+ * one `answers` fetch for every distinct subject/owner id — i.e. at most
+ * 3 queries total, never `O(pairs)`. Returns results in the same order
+ * as `pairs`.
+ */
+export async function evaluateFilterPairsBatch(ctx: Ctx, pairs: FilterCheckPair[]): Promise<boolean[]> {
+  if (pairs.length === 0) return [];
+
+  const ownerIds = [...new Set(pairs.map((p) => p.ownerId))];
+  const { rows: filterRows } = await ctx.db.query<HardFilterRow>(
+    `SELECT user_id, filter_key, operator, value, exclude_if_unset FROM hard_filters WHERE enabled = true AND user_id = ANY($1::uuid[])`,
+    [ownerIds],
+  );
+  const filtersByOwner = new Map<string, HardFilterRow[]>();
+  for (const r of filterRows) {
+    const list = filtersByOwner.get(r.user_id);
+    if (list) list.push(r);
+    else filtersByOwner.set(r.user_id, [r]);
+  }
+
+  const allIds = new Set<string>();
+  for (const p of pairs) {
+    allIds.add(p.subjectId);
+    allIds.add(p.ownerId);
+  }
+  const maps = await loadAttributeMapsFor(ctx, [...allIds], filterRows);
+
+  return pairs.map(({ subjectId, ownerId }) => {
+    const filters = filtersByOwner.get(ownerId) ?? [];
+    for (const f of filters) {
+      const value = resolveAttributeValueFromMaps(subjectId, ownerId, f.filter_key, maps);
+      if (!evaluateFilter({ operator: f.operator, value: f.value }, value, f.exclude_if_unset)) return false;
+    }
+    return true;
+  });
+}
+
+/**
+ * Batched `passesMutualFilters` for a whole candidate pool at once —
+ * `discovery.service.ts`'s replacement for calling `passesMutualFilters`
+ * per candidate in a loop. Same semantics (both directions must pass),
+ * same fixed (≤3-query) cost as `evaluateFilterPairsBatch` regardless of
+ * `candidateIds.length`.
+ */
+export async function passesMutualFiltersForCandidates(
+  ctx: Ctx,
+  viewerId: string,
+  candidateIds: string[],
+): Promise<Set<string>> {
+  const passing = new Set<string>();
+  if (candidateIds.length === 0) return passing;
+
+  const pairs: FilterCheckPair[] = [];
+  for (const candidateId of candidateIds) {
+    pairs.push({ subjectId: candidateId, ownerId: viewerId });
+    pairs.push({ subjectId: viewerId, ownerId: candidateId });
+  }
+  const results = await evaluateFilterPairsBatch(ctx, pairs);
+  for (let i = 0; i < candidateIds.length; i++) {
+    if (results[2 * i] && results[2 * i + 1]) passing.add(candidateIds[i]!);
+  }
+  return passing;
+}
+
+// =====================================================================
+// SCALE FIX (docs/scale-and-sources.md Part 1, §1.3/§1.9 fix #1):
+// geographic bounding.
+//
+// "Who is near me" was implemented as "who exists, filtered client-side
+// after every row is already pulled across the network" — no bound, no
+// index used. `boundingBoxForRadius` computes a plain lat/long bounding
+// BOX (not a circle — a box that fully CONTAINS the circle of the given
+// radius, so it can only ever admit extra candidates for the exact
+// `haversineKm`/mutual-filter check downstream to then correctly reject,
+// never wrongly exclude one that should pass). Deliberately NOT a new
+// Postgres extension (no PostGIS, no earthdistance/cube): a composite
+// btree index on `profiles (latitude, longitude)` is enough to make this
+// box a real index-range prefilter (see
+// `db/migrations/017_discovery_perf.sql`), and it avoids adding an
+// extension dependency this codebase has never had, for a win a plain
+// index already delivers at this codebase's scale (tens of thousands of
+// candidates per city, not billions of geometries) — see this build's
+// report for the measured numbers.
+//
+// This box only ever narrows WHICH ROWS THE QUERY LOOKS AT for
+// performance — it is never the thing that decides whether a candidate
+// is a legitimate match. The exact mutual `distance_km` filter (via
+// `haversineKm`, unchanged, exact-not-jittered — see the CANDIDATE
+// ATTRIBUTE SOURCING note at the top of this file) and the SAF-2 privacy
+// bucketing/jitter (`domain/units/distance.ts`, untouched by this build)
+// both still run exactly as before, on whatever the box lets through.
+// =====================================================================
+
+export interface GeoBox {
+  latMin: number;
+  latMax: number;
+  /** Two longitude ranges, OR'd together, so a box near the antimeridian (±180°) can be expressed without wraparound arithmetic in SQL. Identical (duplicated) range when the box doesn't cross the antimeridian — see below. */
+  lon1Min: number;
+  lon1Max: number;
+  lon2Min: number;
+  lon2Max: number;
+}
+
+const KM_PER_DEGREE_LAT = 111.32;
+
+/**
+ * A lat/long bounding box that fully contains every point within
+ * `radiusKm` of `(lat, lon)`. Pure, no I/O — see `tests/unit/filter.test.ts`
+ * for coverage of the equator/high-latitude/pole/antimeridian cases.
+ *
+ * Handles two edge cases a naive `lat ± d, lon ± d` box gets wrong:
+ *   - Longitude degrees shrink toward the poles (`cos(latitude)`); using
+ *     the box's own most-poleward latitude keeps the box from being too
+ *     NARROW in longitude near a pole (over-narrow would wrongly drop
+ *     real candidates — this function must only ever err toward "too
+ *     wide", never "too narrow").
+ *   - A box whose longitude span crosses ±180° (or one close enough to a
+ *     pole that "east/west" stops being meaningful) is expressed as two
+ *     OR'd ranges rather than silently wrapping into an inverted (empty)
+ *     range.
+ */
+export function boundingBoxForRadius(lat: number, lon: number, radiusKm: number): GeoBox {
+  const radius = Math.max(0.001, radiusKm);
+  const latDelta = radius / KM_PER_DEGREE_LAT;
+  let latMin = lat - latDelta;
+  let latMax = lat + latDelta;
+  const overrunsPole = latMax >= 90 || latMin <= -90;
+  latMin = Math.max(-90, latMin);
+  latMax = Math.min(90, latMax);
+
+  if (overrunsPole) {
+    // Every longitude is within radius of a point this close to a pole.
+    return { latMin, latMax, lon1Min: -180, lon1Max: 180, lon2Min: -180, lon2Max: 180 };
+  }
+
+  const maxAbsLat = Math.max(Math.abs(latMin), Math.abs(latMax));
+  const kmPerDegreeLon = Math.max(0.01, KM_PER_DEGREE_LAT * Math.cos((maxAbsLat * Math.PI) / 180));
+  const lonDelta = radius / kmPerDegreeLon;
+
+  if (lonDelta >= 180) {
+    return { latMin, latMax, lon1Min: -180, lon1Max: 180, lon2Min: -180, lon2Max: 180 };
+  }
+
+  const lonMin = lon - lonDelta;
+  const lonMax = lon + lonDelta;
+
+  if (lonMin < -180) {
+    return { latMin, latMax, lon1Min: -180, lon1Max: lonMax, lon2Min: lonMin + 360, lon2Max: 180 };
+  }
+  if (lonMax > 180) {
+    return { latMin, latMax, lon1Min: lonMin, lon1Max: 180, lon2Min: -180, lon2Max: lonMax - 360 };
+  }
+  return { latMin, latMax, lon1Min: lonMin, lon1Max: lonMax, lon2Min: lonMin, lon2Max: lonMax };
+}
+
+/**
+ * Would-ideally-be-config default search radius (km) used to build the
+ * bounding box when a user has no enabled `distance_km` filter of their
+ * own — same file-ownership-boundary situation as
+ * `discovery.service.ts#MIN_PROFILE_COMPLETENESS_FOR_DISCOVERY` and
+ * `compatibility.service.ts#DEFAULT_MIN_SHARED_QUESTIONS`
+ * (`src/config/config.service.ts` is outside this build's ownership
+ * boundary) — flagged in this build's report as a natural
+ * `discovery.default_search_radius_km` config key for whoever next
+ * touches that file. ~160km ("greater metro area" scale) is wide enough
+ * to be a sane default for someone who hasn't set a preference, without
+ * defeating the whole point of bounding the query.
+ */
+export const DEFAULT_DISCOVERY_RADIUS_KM = 160;
+
+/** The user's own `distance_km` filter value, if enabled and expressed as an upper bound (`lte`/`lt` — the only operators spec §9.2's own examples use for this key and the only ones a "maximum distance" reading makes sense for); `DEFAULT_DISCOVERY_RADIUS_KM` otherwise. Used ONLY to size the bounding box (a performance prefilter) — the exact filter (any operator, including an unusual `gte`/`gt`/`eq`/`neq`/`in`) is still enforced exactly, unchanged, by `evaluateFilterPairsBatch`/`passesMutualFilters` downstream regardless of what this resolves to. */
+async function resolveSearchRadiusKm(ctx: Ctx, userId: string): Promise<number> {
+  const { rows } = await ctx.db.query<{ operator: FilterOperator; value: unknown }>(
+    `SELECT operator, value FROM hard_filters WHERE user_id = $1 AND filter_key = 'distance_km' AND enabled = true`,
+    [userId],
+  );
+  const row = rows[0];
+  if (row && (row.operator === 'lte' || row.operator === 'lt')) {
+    const n = toComparableNumber(row.value);
+    if (n !== undefined && n > 0) return n;
+  }
+  return DEFAULT_DISCOVERY_RADIUS_KM;
+}
+
+export interface GeoSearchContext {
+  latitude: number | null;
+  longitude: number | null;
+  radiusKm: number;
+  /** `null` when `userId` has no location on file — nothing to bound a box around. Callers fall back to cap-only bounding (still no unbounded scan; see `discovery.service.ts#loadCandidatePool`). */
+  box: GeoBox | null;
+}
+
+/** `discovery.service.ts#loadCandidatePool` and this file's own dashboard-count functions both build their geographic prefilter from this — one place that knows "viewer's location + effective search radius -> box". */
+export async function resolveGeoSearchContext(ctx: Ctx, userId: string): Promise<GeoSearchContext> {
+  const [profile, radiusKm] = await Promise.all([loadProfile(ctx, userId), resolveSearchRadiusKm(ctx, userId)]);
+  if (!profile || profile.latitude == null || profile.longitude == null) {
+    return { latitude: null, longitude: null, radiusKm, box: null };
+  }
+  return {
+    latitude: profile.latitude,
+    longitude: profile.longitude,
+    radiusKm,
+    box: boundingBoxForRadius(profile.latitude, profile.longitude, radiusKm),
+  };
+}
+
 async function listOtherActiveUserIds(ctx: Ctx, userId: string): Promise<string[]> {
   const { rows } = await ctx.db.query<{ id: string }>(
     `SELECT id FROM users WHERE status = 'active' AND id <> $1`,
