@@ -213,8 +213,8 @@ let seq = 0;
 async function makeUser(status: 'active' | 'suspended' = 'active'): Promise<string> {
   seq++;
   const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status) VALUES ($1, 'x', '1995-01-01', $2) RETURNING id`,
-    [`discovery-user-${seq}@test.local`, status],
+    `INSERT INTO users (email, password_hash, birthdate, status, suspended) VALUES ($1, 'x', '1995-01-01', $2, $3) RETURNING id`,
+    [`discovery-user-${seq}@test.local`, status, status === 'suspended'],
   );
   return rows[0]!.id;
 }
@@ -309,9 +309,9 @@ interface FullUserOptions {
 async function makeFullUser(opts: FullUserOptions = {}): Promise<string> {
   seq++;
   const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, shadowbanned)
-     VALUES ($1, 'x', '1995-01-01', $2, $3) RETURNING id`,
-    [`disc-full-${seq}@test.local`, opts.status ?? 'active', opts.shadowbanned ?? false],
+    `INSERT INTO users (email, password_hash, birthdate, status, shadowbanned, suspended)
+     VALUES ($1, 'x', '1995-01-01', $2, $3, $4) RETURNING id`,
+    [`disc-full-${seq}@test.local`, opts.status ?? 'active', opts.shadowbanned ?? false, (opts.status ?? 'active') === 'suspended'],
   );
   const userId = rows[0]!.id;
   await pool.query(
