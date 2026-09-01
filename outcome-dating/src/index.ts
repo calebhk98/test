@@ -15,6 +15,7 @@
  * commands, since only one command ever runs per process invocation.
  */
 import { getEnv } from './config/env.js';
+import { runProductionGuard } from './config/adapters.js';
 import { runMigrations } from './db/migrate.js';
 import { closePool } from './db/pool.js';
 import { seed } from './seed.js';
@@ -24,8 +25,14 @@ import { JobScheduler } from './jobs/scheduler.js';
 import { ALL_JOBS, findJob } from './jobs/registry.js';
 
 async function cmdServe(): Promise<void> {
-  const deps = buildDeps();
   const env = getEnv();
+  // Fail fast: in production, refuse to start on any fake/stub adapter,
+  // missing/default secret, or unconfigured database (src/config/adapters.ts).
+  // Never a warning that scrolls past — a hard failure, before anything
+  // else (a DB pool, an HTTP listener, the job scheduler) is created.
+  const readiness = runProductionGuard(env);
+  const deps = buildDeps();
+  deps.logger.info('startup.readiness_report', readiness as unknown as Record<string, unknown>);
   const app = buildServer(deps);
 
   const scheduler = new JobScheduler(deps);
@@ -75,6 +82,7 @@ async function cmdJobsRun(name: string | undefined): Promise<void> {
     return;
   }
 
+  runProductionGuard(getEnv());
   const deps = buildDeps();
   const scheduler = new JobScheduler(deps);
   const result = await scheduler.runJob(name);
@@ -84,9 +92,11 @@ async function cmdJobsRun(name: string | undefined): Promise<void> {
 }
 
 async function cmdJobsStart(): Promise<void> {
+  const readiness = runProductionGuard(getEnv());
   const deps = buildDeps();
   const scheduler = new JobScheduler(deps);
   scheduler.start();
+  deps.logger.info('startup.readiness_report', readiness as unknown as Record<string, unknown>);
   deps.logger.info('jobs.scheduler_started', { jobs: ALL_JOBS.map((j) => j.name) });
 
   // The scheduler's own timers are unref'd (see JobScheduler#start's doc —

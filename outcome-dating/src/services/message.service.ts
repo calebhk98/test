@@ -1,13 +1,14 @@
 import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
-import { ForbiddenError, RateLimitError, ValidationError } from '../lib/errors.js';
+import { ForbiddenError, RateLimitError } from '../lib/errors.js';
 import { newId } from '../lib/ids.js';
 import type { Message, MessageFlagType, Page } from '../domain/types.js';
 import * as textscan from './textscan.service.js';
 import * as trustService from './trust.service.js';
 import * as conversationService from './conversation.service.js';
 import * as notificationService from './notification.service.js';
+import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.js';
 
 /**
  * message.service — in-conversation messaging.
@@ -83,22 +84,22 @@ function mapRow(row: MessageRow): Message {
   };
 }
 
-function encodeCursor(row: { createdAt: Date; id: string }): string {
-  return Buffer.from(`${row.createdAt.toISOString()}|${row.id}`, 'utf8').toString('base64url');
-}
-
-function decodeCursor(cursor: string): { createdAt: Date; id: string } {
-  const [iso, id] = Buffer.from(cursor, 'base64url').toString('utf8').split('|');
-  if (!iso || !id) throw new ValidationError('Invalid pagination cursor.');
-  return { createdAt: new Date(iso), id };
-}
-
-/** Trust-tiered hourly clickable-link quota (spec §12.3, §6.4 "Send links": Limited=no i.e. 0/hr, Standard=5/hr warning-only, Trusted/Elite=unlimited/"yes"). */
-async function linkLimitForCaller(ctx: Ctx): Promise<number> {
+/**
+ * Trust-tiered hourly clickable-link quota (spec §12.3, §6.4 "Send links").
+ *
+ * Delegates to `trust.service#linksPerHourLimitFor`, which buckets against
+ * the configurable `trust.link_min_level` (rather than a hardcoded
+ * `=== 'limited'` comparison), so retuning that one key moves this send-time
+ * cap and the render-time clickability gate (`trustService.canSendClickableLinks`,
+ * called below) together — see trust.service.ts's "§6.4 vs §12.3 PRECEDENCE"
+ * comment on `can()`, and docs/duplication.md finding 2, which this fixes:
+ * this function used to re-derive its own hardcoded `'limited'` boundary,
+ * so retuning `trust.link_min_level` moved link clickability but silently
+ * left the per-hour send cap pinned to the old boundary.
+ */
+export async function linkLimitForCaller(ctx: Ctx): Promise<number> {
   const { trustLevel } = requireUserActor(ctx);
-  if (trustLevel === 'limited') return ctx.config.get('chat.max_links_per_hour_low_trust');
-  if (trustLevel === 'standard') return ctx.config.get('chat.max_links_per_hour_standard_trust');
-  return Number.POSITIVE_INFINITY; // trusted / elite
+  return trustService.linksPerHourLimitFor(ctx, trustLevel);
 }
 
 export async function sendMessage(ctx: Ctx, conversationId: string, body: string): Promise<Message> {
@@ -210,8 +211,8 @@ export async function listMessages(
   const values: unknown[] = [conversationId];
   let cursorClause = '';
   if (parsed.cursor) {
-    const c = decodeCursor(parsed.cursor);
-    values.push(c.createdAt, c.id);
+    const c = decodeTimestampIdCursor(parsed.cursor);
+    values.push(c.ts, c.id);
     cursorClause = `AND (created_at, id) < ($2, $3)`;
   }
   values.push(limit + 1);
@@ -224,7 +225,8 @@ export async function listMessages(
   const hasMore = rows.length > limit;
   const pageRows = hasMore ? rows.slice(0, limit) : rows;
   const items = pageRows.map(mapRow);
-  const nextCursor = hasMore ? encodeCursor(items[items.length - 1]!) : null;
+  const last = items[items.length - 1]!;
+  const nextCursor = hasMore ? encodeTimestampIdCursor(last.createdAt, last.id) : null;
   return { items, nextCursor };
 }
 

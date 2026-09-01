@@ -1,6 +1,7 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import * as trust from '../../src/services/trust.service.js';
+import * as message from '../../src/services/message.service.js';
 import { setupTestDatabase, teardownTestDatabase, buildCtx, userActor, insertUser, insertProfile, insertPaymentMethod } from './testCtxAgentE.js';
 
 before(async () => {
@@ -216,4 +217,58 @@ test('§6.4 vs §12.3 precedence: linksPerHourLimitFor tracks the same trust.lin
   assert.equal((await trust.can(ctx, 'send_links', { trustLevel: 'standard' })).linkMode, 'blocked');
   assert.equal(await trust.linksPerHourLimitFor(ctx, 'trusted'), 5);
   assert.equal((await trust.can(ctx, 'send_links', { trustLevel: 'trusted' })).linkMode, 'warn');
+
+  await ctx.config.set('trust.link_min_level', 'standard', 'test-admin'); // restore default for later tests in this file
+});
+
+// =====================================================================
+// docs/duplication.md finding 2: message.service#linkLimitForCaller used
+// to re-derive its own hardcoded 'limited' boundary instead of calling
+// trust.service#linksPerHourLimitFor, so retuning trust.link_min_level
+// moved link *clickability* but silently left the per-hour *send* cap
+// pinned to the old boundary. Proves the fix: one config key now moves
+// BOTH the numeric per-hour cap (message.service, this test) and the
+// clickability gate (trust.service, tested above) together.
+// =====================================================================
+test('finding 2 fix: message.linkLimitForCaller equals trust.linksPerHourLimitFor for every level, at the default trust.link_min_level', async () => {
+  const ctx = buildCtx({ actor: { type: 'admin', adminId: 'admin-1' } });
+  for (const level of ['limited', 'standard', 'trusted', 'elite'] as const) {
+    const levelCtx = buildCtx({ actor: userActor('22222222-2222-2222-2222-222222222222', level) });
+    assert.equal(await message.linkLimitForCaller(levelCtx), await trust.linksPerHourLimitFor(ctx, level));
+  }
+});
+
+test('finding 2 fix: retuning trust.link_min_level moves message.linkLimitForCaller in lockstep with clickability, not just the render-time gate', async () => {
+  const adminCtx = buildCtx({ actor: { type: 'admin', adminId: 'admin-1' } });
+
+  // Default boundary ('standard'): a Standard-trust user gets the
+  // standard_trust cap and clickable-with-warning links. Each assertion
+  // below builds a FRESH Ctx (a fresh, uncached ConfigService instance)
+  // so it always reads the live config row rather than an instance-local
+  // cache from before the retune — this project's ConfigService caches
+  // per-instance, not globally (see config.service.ts#get).
+  const standardBefore = buildCtx({ actor: userActor('33333333-3333-3333-3333-333333333333', 'standard') });
+  assert.equal(await message.linkLimitForCaller(standardBefore), 5);
+  assert.equal((await trust.can(adminCtx, 'send_links', { trustLevel: 'standard' })).linkMode, 'warn');
+
+  // Retune the ONE config key. Before the fix (finding 2), this moved
+  // clickability but left linkLimitForCaller's hardcoded `=== 'limited'`
+  // comparison untouched, so a demoted 'standard' user could still send
+  // several links per hour even though they no longer render clickable.
+  await adminCtx.config.set('trust.link_min_level', 'trusted', 'test-admin');
+
+  const standardAfter = buildCtx({ actor: userActor('33333333-3333-3333-3333-333333333333', 'standard') });
+  assert.equal(
+    await message.linkLimitForCaller(standardAfter),
+    0,
+    'a Standard-trust user demoted below the retuned trust.link_min_level must fall into the low-trust send cap too',
+  );
+  assert.equal((await trust.can(adminCtx, 'send_links', { trustLevel: 'standard' })).linkMode, 'blocked');
+
+  // A 'trusted' user still meets the new, higher bar.
+  const trustedAfter = buildCtx({ actor: userActor('44444444-4444-4444-4444-444444444444', 'trusted') });
+  assert.equal(await message.linkLimitForCaller(trustedAfter), 5);
+  assert.equal((await trust.can(adminCtx, 'send_links', { trustLevel: 'trusted' })).linkMode, 'warn');
+
+  await adminCtx.config.set('trust.link_min_level', 'standard', 'test-admin'); // restore default
 });

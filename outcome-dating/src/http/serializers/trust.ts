@@ -3,11 +3,19 @@
  *
  * Spec §6.3: "The exact numeric trustScore is NOT shown to the user unless
  * product explicitly decides otherwise (default: level only)." `trustLevel`
- * is always the primary field; `trustScore` is gated behind an ad-hoc
- * feature flag (same pattern as `photoExperiment.service.ts`'s
- * `photo_ab_auto_reorder` — an unseeded flag key defaults to disabled, see
- * `flags.service.ts#isEnabled`), so it is withheld by default and an
- * operator can opt a rollout in without a deploy.
+ * is always the primary field; `trustScore` is gated behind
+ * `trust.service.ts#shouldExposeRawTrustScore`, which reads the documented
+ * `trust.expose_raw_score` config key (default `false`) — the ONLY gate for
+ * this field. `trustScore` is withheld by default and an operator opts it
+ * in by setting that config key, no deploy required.
+ *
+ * (Fixed per docs/duplication.md finding 1: this serializer used to gate
+ * `trustScore` behind an unrelated, unseeded, per-user feature flag
+ * — `expose_trust_score_to_user` — that the live route never reconciled
+ * with `shouldExposeRawTrustScore`'s documented "single source of truth"
+ * contract, so the documented `trust.expose_raw_score` config key had zero
+ * effect on production responses. That flag-based path has been deleted
+ * outright, not left as a second, competing gate.)
  *
  * `TrustSummary.actionableImprovements`/`recentNegativeEvents` are already
  * static template strings with no raw weights (trust.service.ts's own
@@ -16,10 +24,8 @@
  * through unreviewed.
  */
 import type { TrustSummary } from '../../domain/types.js';
-import type { FlagsService } from '../../config/flags.service.js';
-
-/** Ad-hoc flag key (unseeded => defaults off) gating exposure of the raw numeric trustScore, per spec §6.3's "unless product explicitly decides otherwise". */
-export const EXPOSE_TRUST_SCORE_FLAG = 'expose_trust_score_to_user';
+import type { Ctx } from '../../lib/ctx.js';
+import { shouldExposeRawTrustScore } from '../../services/trust.service.js';
 
 export interface TrustSummaryView {
   trustLevel: TrustSummary['trustLevel'];
@@ -28,12 +34,8 @@ export interface TrustSummaryView {
   recentNegativeEvents: string[];
 }
 
-export async function serializeTrustSummary(
-  flags: FlagsService,
-  userId: string,
-  summary: TrustSummary,
-): Promise<TrustSummaryView> {
-  const exposeScore = await flags.isEnabled(EXPOSE_TRUST_SCORE_FLAG, { userId });
+export async function serializeTrustSummary(ctx: Ctx, summary: TrustSummary): Promise<TrustSummaryView> {
+  const exposeScore = await shouldExposeRawTrustScore(ctx);
   const view: TrustSummaryView = {
     trustLevel: summary.trustLevel,
     actionableImprovements: summary.actionableImprovements,

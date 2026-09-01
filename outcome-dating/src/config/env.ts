@@ -36,6 +36,39 @@ const EnvSchema = z.object({
   PAYMENT_PROCESSOR: z.enum(['fake', 'stripe']).default('fake'),
   STRIPE_SECRET_KEY: z.string().optional(),
   STRIPE_WEBHOOK_SECRET: z.string().optional(),
+
+  /**
+   * Which `ImageModerationPort` adapter to use (see
+   * `src/services/media/moderation.port.ts`). Deliberately a free-form
+   * identifier, not a closed enum: unlike payments/push/email/sms, no real
+   * adapter exists in this codebase yet (only `StubMediaModerationAdapter`
+   * does) — see `src/config/adapters.ts#selectMediaModerationAdapter` and
+   * docs/scale-and-sources.md Part 2.3. Defaults to `'stub'`, which is the
+   * only value that ever constructs successfully, and only outside
+   * production — the production guard (`src/config/adapters.ts`) refuses
+   * to start with `'stub'` (or with any other value, since nothing else is
+   * implemented yet) when `NODE_ENV==='production'`.
+   */
+  MEDIA_MODERATION_PROVIDER: z.string().min(1).optional(),
+
+  /** Which `PushSender` adapter to use (`src/services/notifications/ports/push.port.ts`). */
+  PUSH_PROVIDER: z.enum(['fake', 'fcm', 'apns']).default('fake'),
+  FCM_SERVICE_ACCOUNT_JSON: z.string().optional(),
+  APNS_KEY_ID: z.string().optional(),
+  APNS_TEAM_ID: z.string().optional(),
+  APNS_SIGNING_KEY: z.string().optional(),
+  APNS_BUNDLE_ID: z.string().optional(),
+
+  /** Which `EmailSender` adapter to use (`src/services/notifications/ports/email.port.ts`). */
+  EMAIL_PROVIDER: z.enum(['fake', 'ses']).default('fake'),
+  SES_REGION: z.string().optional(),
+  SES_FROM_ADDRESS: z.string().optional(),
+
+  /** Which `SmsSender` adapter to use (`src/services/notifications/ports/sms.port.ts`). */
+  SMS_PROVIDER: z.enum(['fake', 'twilio']).default('fake'),
+  TWILIO_ACCOUNT_SID: z.string().optional(),
+  TWILIO_AUTH_TOKEN: z.string().optional(),
+  TWILIO_FROM_NUMBER: z.string().optional(),
 });
 
 export type Env = z.infer<typeof EnvSchema>;

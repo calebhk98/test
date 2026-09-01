@@ -2,27 +2,18 @@
  * dateProposal.service.ts unit tests. Spec §13, §14, §15.4, §21.3, §30.5.
  *
  * `conversation.service.ts`, `notification.service.ts`, and
- * `trust.service.ts` are owned by sibling agents (C, E) and are stubs
- * (`NotImplementedError`) during this parallel build. Rather than skip
- * testing the (mandatory) cross-module call sites, this file uses Node's
- * built-in ESM module mocking (`node:test`'s `mock.module`, requires
- * `--experimental-test-module-mocks` — see `package.json`'s `test`
- * script) to substitute small, realistic, DB-backed fakes for exactly the
- * three functions this module calls on those services
- * (`conversation.getConversation`/`establishConversation`,
- * `notification.notify`, `trust.recordTrustEvent`). The fakes read/write
- * the real `conversations`/`notifications`/`trust_events` tables so
- * assertions about their effects are genuine, not mocked-away. Every OTHER
- * service this file exercises — `venue`, `payment`, `ledger`, `voucher` —
- * is the real, fully-implemented Agent D code; nothing about the money
- * path is faked.
- *
- * Because the mocks are registered once at module load (top-level, before
- * any `test()` runs) and the module graph is cached process-wide, all
- * `dateProposal`/`redemption` service functions are imported dynamically
- * via `await import(...)` AFTER the mocks are installed — a static
- * `import` at the top of this file would resolve its dependency graph
- * before the mocks exist.
+ * `trust.service.ts` are now fully implemented and are each independently
+ * tested elsewhere (`tests/unit/{chat,notification,trust}.test.ts`). This
+ * file used to substitute hand-written `mock.module()` fakes for those
+ * three services (a workaround from when they were still
+ * `NotImplementedError` stubs mid-parallel-build); that justification no
+ * longer holds, and the fakes were never revisited once the real services
+ * shipped, so every trust/notification assertion below was only proving
+ * `dateProposal.service.ts` called *something* shaped like the fake, not
+ * that it was correctly wired to production code (test-audit.md Finding
+ * 1). The mocks are gone — every service this file exercises
+ * (`conversation`, `notification`, `trust`, `venue`, `payment`, `ledger`,
+ * `voucher`) is the real, fully-implemented code; nothing is faked.
  *
  * IMPORTANT test-construction note: `ctx.payments` is a stateful fake
  * (`FakeProcessor`) representing ONE external processor account. Every
@@ -32,11 +23,9 @@
  * different "processors" that don't know about each other's intents. Every
  * helper below threads one shared `processor` through a whole flow.
  */
-import { test, before, after, mock } from 'node:test';
+import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import type { Ctx } from '../../src/lib/ctx.js';
-import { NotFoundError } from '../../src/lib/errors.js';
-import type { Conversation, Notification, TrustEvent } from '../../src/domain/types.js';
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import {
   setupTestDb,
@@ -52,70 +41,12 @@ import {
   createVenue,
   type TestDb,
 } from './testHarness.js';
-
-// ---------------------------------------------------------------------
-// Realistic, DB-backed fakes for the sibling modules this file calls
-// into. Registered before dateProposal.service.ts/redemption.service.ts
-// are ever imported (see module header).
-// ---------------------------------------------------------------------
-
-async function fakeGetConversation(ctx: Ctx, conversationId: string): Promise<Conversation> {
-  const { rows } = await ctx.db.query<{
-    user_a_id: string; user_b_id: string; status: Conversation['status'];
-    created_at: Date; last_message_at: Date | null; first_date_completed_at: Date | null; archived_at: Date | null;
-  }>(
-    `SELECT user_a_id, user_b_id, status, created_at, last_message_at, first_date_completed_at, archived_at
-     FROM conversations WHERE id = $1`,
-    [conversationId],
-  );
-  if (!rows[0]) throw new NotFoundError('Conversation not found');
-  const r = rows[0];
-  return {
-    id: conversationId, userAId: r.user_a_id, userBId: r.user_b_id, status: r.status,
-    createdAt: r.created_at, lastMessageAt: r.last_message_at, firstDateCompletedAt: r.first_date_completed_at, archivedAt: r.archived_at,
-  };
-}
-
-async function fakeEstablishConversation(ctx: Ctx, conversationId: string): Promise<Conversation> {
-  await ctx.db.query(`UPDATE conversations SET status = 'established', first_date_completed_at = now() WHERE id = $1`, [conversationId]);
-  return fakeGetConversation(ctx, conversationId);
-}
-
-async function fakeNotify(ctx: Ctx, input: { userId: string; eventType: string; channel: string; templateKey?: string; payload?: Record<string, unknown> }): Promise<Notification> {
-  const { rows } = await ctx.db.query<{ id: string; created_at: Date }>(
-    `INSERT INTO notifications (user_id, event_type, channel, template_key, payload) VALUES ($1, $2, $3, $4, $5::jsonb) RETURNING id, created_at`,
-    [input.userId, input.eventType, input.channel, input.templateKey ?? `${input.eventType}_v1`, JSON.stringify(input.payload ?? {})],
-  );
-  return {
-    id: rows[0]!.id, userId: input.userId, eventType: input.eventType as Notification['eventType'], channel: input.channel as Notification['channel'],
-    templateKey: input.templateKey ?? `${input.eventType}_v1`, payload: input.payload ?? {}, status: 'pending', createdAt: rows[0]!.created_at, sentAt: null, readAt: null,
-  };
-}
-
-async function fakeRecordTrustEvent(ctx: Ctx, input: { userId: string; eventType: string; delta: number; metadata?: Record<string, unknown> }): Promise<TrustEvent> {
-  const { rows } = await ctx.db.query<{ id: string; created_at: Date }>(
-    `INSERT INTO trust_events (user_id, event_type, delta, metadata) VALUES ($1, $2, $3, $4::jsonb) RETURNING id, created_at`,
-    [input.userId, input.eventType, input.delta, JSON.stringify(input.metadata ?? {})],
-  );
-  return { id: rows[0]!.id, userId: input.userId, eventType: input.eventType, delta: input.delta, metadata: input.metadata ?? {}, createdAt: rows[0]!.created_at };
-}
-
-mock.module(new URL('../../src/services/conversation.service.ts', import.meta.url), {
-  namedExports: { getConversation: fakeGetConversation, establishConversation: fakeEstablishConversation },
-});
-mock.module(new URL('../../src/services/notification.service.ts', import.meta.url), {
-  namedExports: { notify: fakeNotify },
-});
-mock.module(new URL('../../src/services/trust.service.ts', import.meta.url), {
-  namedExports: { recordTrustEvent: fakeRecordTrustEvent },
-});
-
-const dateProposalService = await import('../../src/services/dateProposal.service.js');
-const redemptionService = await import('../../src/services/redemption.service.js');
-const voucherService = await import('../../src/services/voucher.service.js');
-const ledgerService = await import('../../src/services/ledger.service.js');
-const { ConflictError, ForbiddenError, ValidationError } = await import('../../src/lib/errors.js');
-const { ConfigService } = await import('../../src/config/config.service.js');
+import * as dateProposalService from '../../src/services/dateProposal.service.js';
+import * as redemptionService from '../../src/services/redemption.service.js';
+import * as voucherService from '../../src/services/voucher.service.js';
+import * as ledgerService from '../../src/services/ledger.service.js';
+import { ConflictError, NotFoundError, ValidationError } from '../../src/lib/errors.js';
+import { ConfigService } from '../../src/config/config.service.js';
 
 // ---------------------------------------------------------------------
 
@@ -233,9 +164,22 @@ test('proposeDate: rejects a non-participant, and an inactive venue', async () =
   const pair = await setupPair();
   const strangerId = await createUser(db);
   const strangerCtx = makeCtx(db, userActor(strangerId), { payments: pair.processor });
+  // NotFoundError, not ForbiddenError: conversation.service#getConversation
+  // deliberately returns the same "not found" error for "doesn't exist" and
+  // "exists but you're not a participant" (its own doc comment: "don't leak
+  // existence of a conversation the caller isn't part of"), and proposeDate
+  // calls getConversation before it can ever reach its own participant
+  // check. This assertion used to expect ForbiddenError, which only held
+  // under this file's old mock.module() fake for conversation.service.ts
+  // (a fake that, unlike the real service, returned the row regardless of
+  // participant) — real code was never exercised. Removing that stale mock
+  // (test-audit.md Finding 1) surfaced the mismatch; the real, real-service
+  // behavior below is the intended, more enumeration-safe one, so the test
+  // is updated to match it rather than weakened or the production code
+  // changed to leak existence.
   await assert.rejects(
     () => dateProposalService.proposeDate(strangerCtx, { conversationId: pair.conversationId, venueId: pair.venueId, ...futureRange(100) }),
-    ForbiddenError,
+    NotFoundError,
   );
 
   const inactiveVenue = await createVenue(db, { active: false });

@@ -147,4 +147,5 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'GET', path: '/admin/analytics/overview', spec: '§24.13, §26, §27', role: 'admin' },
   { method: 'POST', path: '/admin/payment-holds/:paymentHoldId/refund', spec: '§4.3.6 dispute override (addition)', role: 'admin', addition: true },
   { method: 'POST', path: '/admin/date-proposals/:dateProposalId/cancel', spec: '§30.6.2 venue-closed refund/cancel path (addition)', role: 'admin', addition: true },
+  { method: 'GET', path: '/admin/system-readiness', spec: 'production-guard startup readiness report (addition — operator-only, see src/config/adapters.ts)', role: 'admin', addition: true },
 ];

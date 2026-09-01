@@ -1,11 +1,10 @@
 import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
-import { ConflictError, NotFoundError } from '../lib/errors.js';
+import { ConflictError, ForbiddenError, NotFoundError } from '../lib/errors.js';
 import { hoursBetween } from '../lib/time.js';
 import { KNOWN_FLAGS } from '../config/flags.service.js';
 import type { TrustLevel } from '../domain/types.js';
-import * as dateProposalService from './dateProposal.service.js';
 import * as reportService from './report.service.js';
 import * as trustService from './trust.service.js';
 import * as notificationService from './notification.service.js';
@@ -50,6 +49,16 @@ import * as notificationService from './notification.service.js';
  * favor of `POST /date-proposals/:id/check-in` below, but that file is
  * outside this module's edit scope beyond the two completion hooks noted
  * below, so it is left in place and flagged in the build report instead.)
+ *
+ * `submitCheckIn` reads `date_proposals` directly (existence/participant/
+ * status/timing) rather than calling `dateProposal.service#getDateProposal`
+ * — `dateProposal.service.ts` itself calls INTO this module (the two
+ * completion hooks below), so this module deliberately never imports
+ * back from it, avoiding a module-cycle. Reading `date_proposals` (and
+ * `users`, `answers`, `questions`) directly is the same "narrow read of a
+ * sibling's table" pattern report.service.ts/trust.service.ts already use
+ * throughout (e.g. `report.service#reporterCredibility` reading
+ * `users.trust_level` directly rather than importing trust.service.ts).
  *
  * ---------------------------------------------------------------------
  * ONE-SIDED BY DEFAULT
@@ -319,23 +328,42 @@ function toCheckInView(row: CheckInRow): PostDateCheckIn {
  * proposal. Usable the instant the date is ticketed/resolved, by either
  * participant, independently — see module doc "ONE-SIDED BY DEFAULT".
  */
+interface CheckInProposalRow {
+  id: string;
+  conversation_id: string;
+  proposer_id: string;
+  recipient_id: string;
+  status: string;
+  scheduled_start: Date;
+}
+
+/** Existence/participant check on `date_proposals`, read directly rather than via `dateProposal.service#getDateProposal` — see module doc for why (avoiding a module cycle). Mirrors that function's own NotFoundError/ForbiddenError contract exactly. */
+async function loadCheckInProposal(ctx: Ctx, dateProposalId: string, userId: string): Promise<CheckInProposalRow> {
+  const { rows } = await ctx.db.query<CheckInProposalRow>(
+    `SELECT id, conversation_id, proposer_id, recipient_id, status, scheduled_start FROM date_proposals WHERE id = $1`,
+    [dateProposalId],
+  );
+  const row = rows[0];
+  if (!row) throw new NotFoundError('Date proposal not found.', { dateProposalId });
+  if (row.proposer_id !== userId && row.recipient_id !== userId) {
+    throw new ForbiddenError('You are not a participant in this date proposal.');
+  }
+  return row;
+}
+
 export async function submitCheckIn(ctx: Ctx, dateProposalId: string, input: unknown): Promise<PostDateCheckIn> {
   const { userId } = requireUserActor(ctx);
   const parsed = SubmitCheckInSchema.parse(input);
 
-  // Reuses dateProposal.service's own participant/existence check
-  // (`getDateProposal` throws NotFoundError/ForbiddenError as
-  // appropriate) rather than re-deriving "is this user allowed to see
-  // this date proposal" — see module doc.
-  const proposal = await dateProposalService.getDateProposal(ctx, dateProposalId);
+  const proposal = await loadCheckInProposal(ctx, dateProposalId, userId);
   if (!ELIGIBLE_CHECK_IN_STATUSES.has(proposal.status)) {
     throw new ConflictError(`Cannot submit a check-in for a date proposal in status '${proposal.status}'.`, { status: proposal.status });
   }
-  if (ctx.clock.now().getTime() < proposal.scheduledStart.getTime()) {
+  if (ctx.clock.now().getTime() < proposal.scheduled_start.getTime()) {
     throw new ConflictError('Cannot submit a check-in before the date has started.');
   }
 
-  const otherUserId = userId === proposal.proposerId ? proposal.recipientId : proposal.proposerId;
+  const otherUserId = userId === proposal.proposer_id ? proposal.recipient_id : proposal.proposer_id;
   const wouldMeetAgainBool = parsed.outcome === 'did_not_happen' ? null : triStateToBool(parsed.wouldMeetAgain);
   const safetyDetails = parsed.safetyFlag === 'none' ? null : (parsed.safetyDetails ?? null);
 
@@ -368,7 +396,7 @@ export async function submitCheckIn(ctx: Ctx, dateProposalId: string, input: unk
   if (parsed.safetyFlag !== 'none' && row.report_id === null) {
     const filedReportId = await routeSafetyFlagBestEffort(ctx, {
       dateProposalId,
-      conversationId: proposal.conversationId,
+      conversationId: proposal.conversation_id,
       submitterId: userId,
       reportedId: otherUserId,
       safetyFlag: parsed.safetyFlag,

@@ -4,7 +4,6 @@ import { z } from 'zod';
 import * as trustService from '../../services/trust.service.js';
 import * as appealService from '../../services/appeal.service.js';
 import { serializeTrustSummary } from '../serializers/trust.js';
-import { requireUserActor } from '../../lib/ctx.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow } from '../validation.js';
@@ -19,9 +18,8 @@ export function registerTrustRoutes(app: FastifyInstance, deps: AppDeps): void {
   const auth = { preHandler: [authenticate(deps), requireRole('user')] };
 
   app.get('/me/trust', auth, async (req, reply) => {
-    const { userId } = requireUserActor(req.ctx!);
     const summary = await trustService.getMyTrustSummary(req.ctx!);
-    reply.send(await serializeTrustSummary(deps.flags, userId, summary));
+    reply.send(await serializeTrustSummary(req.ctx!, summary));
   });
 
   app.get('/me/trust/events', auth, async (req, reply) => {

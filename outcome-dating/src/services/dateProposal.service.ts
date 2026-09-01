@@ -1,9 +1,11 @@
 import { z } from 'zod';
+import { createHash } from 'node:crypto';
 import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
 import { ConflictError, ForbiddenError, NotFoundError, PaymentError, ValidationError } from '../lib/errors.js';
 import { addHours, hoursBetween } from '../lib/time.js';
 import { DATE_PROPOSAL_POLICY_KEYS } from '../config/config.service.js';
+import { getPool } from '../db/pool.js';
 import type {
   AttendanceConfirmation,
   DateProposal,
@@ -220,6 +222,55 @@ async function setStatus(ctx: Ctx, dateProposalId: string, status: DateProposalS
   return rows[0]!;
 }
 
+/**
+ * Per-date-proposal mutual exclusion for the state-mutating, money-moving
+ * entry points below (`acceptDateProposal`, `declineDateProposal`,
+ * `cancelDateProposal`, `markNoShow`). Each of those reads the proposal
+ * row, then performs several *separately-committing* checkpoints (payment
+ * authorize/capture/refund calls, each in its own `payment.service.ts`
+ * transaction, on purpose — see this file's module header on resumability
+ * after a crash), rather than one enclosing transaction. That is exactly
+ * right for crash-resumability, but it means two truly concurrent calls
+ * for the SAME date proposal (a client double-submit, a retried request
+ * racing the original) can both read the same starting status and both
+ * carry out the money-moving side effects — a real double-capture /
+ * double-refund bug, not merely a hypothetical one (test-audit.md
+ * Finding 3's "never tested for double-capture", made concrete by
+ * `tests/concurrency/dateProposalRace.test.ts`).
+ *
+ * The fix is a `pg_try_advisory_lock` keyed by the date proposal id, held
+ * for the whole call and released in `finally` on a dedicated connection
+ * — this mirrors `src/jobs/scheduler.ts`'s job-level lock, the one
+ * concurrency-safety pattern already proven correct and copied by the
+ * audit. It does not wrap `ctx.db` in a transaction (that would defeat
+ * the resumability property above); it only ensures at most one call is
+ * ever "inside" one of these functions for a given date proposal id at a
+ * time. The loser fails fast with a typed `ConflictError` rather than
+ * racing the winner.
+ */
+function dateProposalLockKey(dateProposalId: string): [number, number] {
+  const digest = createHash('sha256').update(`odate_date_proposal:${dateProposalId}`).digest();
+  return [digest.readInt32BE(0), digest.readInt32BE(4)];
+}
+
+async function withDateProposalLock<T>(dateProposalId: string, fn: () => Promise<T>): Promise<T> {
+  const [k1, k2] = dateProposalLockKey(dateProposalId);
+  const client = await getPool().connect();
+  try {
+    const { rows } = await client.query<{ locked: boolean }>('SELECT pg_try_advisory_lock($1, $2) AS locked', [k1, k2]);
+    if (!rows[0]?.locked) {
+      throw new ConflictError('This date proposal is already being modified by a concurrent request.');
+    }
+    try {
+      return await fn();
+    } finally {
+      await client.query('SELECT pg_advisory_unlock($1, $2)', [k1, k2]);
+    }
+  } finally {
+    client.release();
+  }
+}
+
 function assertParticipant(ctx: Ctx, row: DateProposalRow): string {
   const { userId } = requireUserActor(ctx);
   if (row.proposer_id !== userId && row.recipient_id !== userId) {
@@ -403,6 +454,10 @@ export async function proposeDate(ctx: Ctx, input: ProposeDateInput): Promise<Da
  * multi-checkpoint design of this function.
  */
 export async function acceptDateProposal(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
+  return withDateProposalLock(dateProposalId, () => acceptDateProposalLocked(ctx, dateProposalId));
+}
+
+async function acceptDateProposalLocked(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
   const row = await loadProposalRow(ctx, dateProposalId);
   const { userId } = requireUserActor(ctx);
   if (row.recipient_id !== userId) throw new ForbiddenError('Only the recipient can accept a date proposal');
@@ -489,6 +544,10 @@ export async function acceptDateProposal(ctx: Ctx, dateProposalId: string): Prom
 // =====================================================================
 
 export async function declineDateProposal(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
+  return withDateProposalLock(dateProposalId, () => declineDateProposalLocked(ctx, dateProposalId));
+}
+
+async function declineDateProposalLocked(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
   const row = await loadProposalRow(ctx, dateProposalId);
   const { userId } = requireUserActor(ctx);
   if (row.recipient_id !== userId) throw new ForbiddenError('Only the recipient can decline a date proposal');
@@ -521,6 +580,10 @@ export async function declineDateProposal(ctx: Ctx, dateProposalId: string): Pro
  * refund") since no separate admin-only function was allocated for that.
  */
 export async function cancelDateProposal(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
+  return withDateProposalLock(dateProposalId, () => cancelDateProposalLocked(ctx, dateProposalId));
+}
+
+async function cancelDateProposalLocked(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
   const row = await loadProposalRow(ctx, dateProposalId);
   if (ctx.actor.type === 'admin') {
     // allowed regardless of participant check
@@ -618,6 +681,7 @@ export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promi
     const updated = await setStatus(ctx, dateProposalId, 'completed_unverified', 'completed_at');
     await recordTrustEventBestEffort(ctx, { userId: row.proposer_id, eventType: 'completed_date', delta: 3, metadata: { dateProposalId, verified: false } });
     await recordTrustEventBestEffort(ctx, { userId: row.recipient_id, eventType: 'completed_date', delta: 3, metadata: { dateProposalId, verified: false } });
+    await ensureCheckInPromptSentBestEffort(ctx, dateProposalId);
     return { dateProposal: mapProposal(updated), confirmation };
   }
 
@@ -732,6 +796,10 @@ export async function expireDuePendingProposals(ctx: Ctx): Promise<{ expired: nu
 
 /** Admin/automated no-show marking (spec §13.3 `no_show`, feeds `trust.service.ts` negative factors, §6.2). Applies the `no_show_refund_percent` policy from the proposal's own snapshot: the no-show party forfeits that percent (default 0 = forfeits everything); the other party is refunded in full. */
 export async function markNoShow(ctx: Ctx, dateProposalId: string, noShowUserId: string): Promise<DateProposal> {
+  return withDateProposalLock(dateProposalId, () => markNoShowLocked(ctx, dateProposalId, noShowUserId));
+}
+
+async function markNoShowLocked(ctx: Ctx, dateProposalId: string, noShowUserId: string): Promise<DateProposal> {
   if (ctx.actor.type !== 'admin' && ctx.actor.type !== 'system') {
     throw new ForbiddenError('Only admin/system actors can mark a no-show');
   }
@@ -785,6 +853,7 @@ export async function markCompletedByRedemption(ctx: Ctx, dateProposalId: string
   const updated = await setStatus(ctx, dateProposalId, 'completed', 'completed_at');
   await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'date_completed', channel: 'in_app', payload: { dateProposalId } });
   await notifyBestEffort(ctx, { userId: row.recipient_id, eventType: 'date_completed', channel: 'in_app', payload: { dateProposalId } });
+  await ensureCheckInPromptSentBestEffort(ctx, dateProposalId);
   return mapProposal(updated);
 }
 

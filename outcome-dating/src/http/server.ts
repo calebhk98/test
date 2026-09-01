@@ -28,6 +28,7 @@ import { registerPaymentRoutes } from './routes/payments.routes.js';
 import { registerTrustRoutes } from './routes/trust.routes.js';
 import { registerReportRoutes } from './routes/reports.routes.js';
 import { registerAdminRoutes } from './routes/admin.routes.js';
+import { registerHealthRoutes } from './routes/health.routes.js';
 
 declare module 'fastify' {
   interface FastifyInstance {
@@ -62,6 +63,7 @@ export function buildServer(deps: AppDeps): FastifyInstance {
   registerTrustRoutes(app, deps);
   registerReportRoutes(app, deps);
   registerAdminRoutes(app, deps);
+  registerHealthRoutes(app, deps);
 
   return app;
 }

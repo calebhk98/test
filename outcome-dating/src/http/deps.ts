@@ -24,9 +24,7 @@ import { SystemClock } from '../lib/time.js';
 import type { Clock } from '../lib/time.js';
 import { createLogger } from '../lib/logger.js';
 import type { Logger } from '../lib/logger.js';
-import { FakeProcessor } from '../services/payments/fake.processor.js';
-import { StripeProcessor } from '../services/payments/stripe.processor.js';
-import { StubMediaModerationAdapter } from '../services/media/stub.adapter.js';
+import { selectPaymentProcessor, selectMediaModerationAdapter } from '../config/adapters.js';
 import type { PaymentProcessor } from '../services/payments/processor.port.js';
 import type { ImageModerationPort } from '../services/media/moderation.port.js';
 import type { Actor, Ctx } from '../lib/ctx.js';
@@ -55,9 +53,14 @@ export function buildDeps(overrides?: Partial<AppDeps>): AppDeps {
   const logger = overrides?.logger ?? createLogger({ service: 'outcome-dating' });
   const config = overrides?.config ?? new ConfigService(pool, clock, logger);
   const flags = overrides?.flags ?? new FlagsService(pool, logger);
-  const media = overrides?.media ?? new StubMediaModerationAdapter();
-  const payments =
-    overrides?.payments ?? (env.PAYMENT_PROCESSOR === 'stripe' ? new StripeProcessor(env.STRIPE_SECRET_KEY) : new FakeProcessor());
+  // Selection is explicit and total over `env.NODE_ENV` (see
+  // src/config/adapters.ts) — it can never silently resolve to a fake/stub
+  // adapter in production the way a bare `?? new FakeX()` default could.
+  // This is defense-in-depth: `src/index.ts` also runs the full
+  // `runProductionGuard` before calling this, but a fake/stub adapter is
+  // unconstructable here in production regardless of whether that ran.
+  const media = overrides?.media ?? selectMediaModerationAdapter(env);
+  const payments = overrides?.payments ?? selectPaymentProcessor(env);
   return { pool, clock, config, flags, logger, payments, media };
 }
 
