@@ -43,8 +43,8 @@ export function registerStatsRoutes(app: FastifyInstance, deps: AppDeps): void {
   });
 
   // The one route on this page that can be genuinely slow on a cold cache
-  // (a single bounded pass over the candidate pool — see
-  // stats.service.ts#getMyFilterCosts) — `?refresh=true` bypasses the
+  // (a single bounded pass over the candidate pool, see
+  // stats.service.ts#getMyFilterCosts). `?refresh=true` bypasses the
   // 1-hour cache explicitly rather than the page silently recomputing it
   // on every casual open.
   app.get('/me/stats/filters', auth, async (req, reply) => {
@@ -66,7 +66,7 @@ export function registerStatsRoutes(app: FastifyInstance, deps: AppDeps): void {
   });
 
   // A small, self-contained, accessible SVG rendering of the same data
-  // /me/stats/venn returns as JSON — see statsVenn.ts's own doc for the
+  // /me/stats/venn returns as JSON, see statsVenn.ts's own doc for the
   // accessibility guarantees (title/desc text alternative, every number
   // that appears as pixels also available as data from the JSON route
   // above). There is no client in this project to draw the diagram
@@ -76,7 +76,7 @@ export function registerStatsRoutes(app: FastifyInstance, deps: AppDeps): void {
     reply.type('image/svg+xml').send(svg);
   });
 
-  // Peer comparisons — see stats.service.ts's module doc,
+  // Peer comparisons, see stats.service.ts's module doc,
   // "COMPARISONS ARE AGGREGATE-VERSUS-AGGREGATE", for what is and is not
   // compared here and why.
   app.get('/me/stats/comparisons', auth, async (req, reply) => {

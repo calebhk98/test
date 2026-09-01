@@ -241,7 +241,23 @@ test('submitCheckIn input is Zod-validated over HTTP — an invalid outcome/safe
   assert.equal(body.error.code, 'validation_error');
 });
 
-test('the legacy POST /date-proposals/:id/feedback route and the new check-in route coexist without clobbering each other\'s data', async () => {
+// INTEGRITY FIX (normalization audit item 1): this test used to be titled
+// "...coexist without clobbering each other's data" and only proved the
+// two routes wrote disjoint columns without contradicting on the fields
+// they shared — it never proved a contradictory row was actually
+// impossible, because at the time it wasn't: the legacy route wrote
+// `positive` completely independently of `outcome`, so a user really
+// could end up with a row saying the date went well AND badly at once.
+// That was the exact bug docs/normalization.md item 1 flags. The legacy
+// route no longer has its own writer (see postDateFeedback.service.ts#
+// submitLegacyFeedback and dateProposal.service.ts's retirement note) —
+// both routes now funnel into the SAME upsert, so the two calls below
+// simply overwrite one row in submission order, and `positive` is never
+// written by either call any more. Kept as one test (not renamed away
+// from "legacy" entirely) because it still proves the two routes are
+// interchangeable views onto the one row a caller might hit in either
+// order.
+test('the legacy feedback route and the check-in route write the SAME row through the SAME path — no contradiction is possible in either call order', async () => {
   const alice = await registerUser(t);
   const bob = await registerUser(t);
   const proposal = await insertProposal(alice.userId, bob.userId);
@@ -250,7 +266,7 @@ test('the legacy POST /date-proposals/:id/feedback route and the new check-in ro
     method: 'POST',
     url: `/date-proposals/${proposal.id}/feedback`,
     headers: authHeader(alice.accessToken),
-    payload: { positive: true, wouldMeetAgain: true },
+    payload: { positive: false, wouldMeetAgain: false }, // legacy says "went badly"
   });
   assert.equal(legacyRes.statusCode, 201);
 
@@ -258,11 +274,35 @@ test('the legacy POST /date-proposals/:id/feedback route and the new check-in ro
     method: 'POST',
     url: `/date-proposals/${proposal.id}/check-in`,
     headers: authHeader(alice.accessToken),
-    payload: { outcome: 'happened_good', safetyFlag: 'none' },
+    payload: { outcome: 'happened_good', safetyFlag: 'none' }, // check-in says "went well" — the exact contradiction this item exists to close
   });
   assert.equal(checkInRes.statusCode, 201);
 
   const getRes = await t.app.inject({ method: 'GET', url: `/date-proposals/${proposal.id}/check-in`, headers: authHeader(alice.accessToken) });
   const body = JSON.parse(getRes.body) as { outcome: string };
-  assert.equal(body.outcome, 'happened_good', 'the new check-in path must read back correctly regardless of the legacy row sharing the same underlying table');
+  assert.equal(body.outcome, 'happened_good', 'the later call always wins cleanly — one row, one writer, nothing left over from the earlier call to disagree with it');
+
+  // The row itself has no leftover `positive` value to contradict `outcome` — the legacy route never writes that column any more.
+  const { rows } = await t.pool.query<{ positive: boolean | null; outcome: string }>(
+    `SELECT positive, outcome FROM post_date_feedback WHERE date_proposal_id = $1 AND user_id = $2`,
+    [proposal.id, alice.userId],
+  );
+  assert.equal(rows[0]!.positive, null);
+  assert.equal(rows[0]!.outcome, 'happened_good');
+});
+
+test('a database CHECK rejects a contradictory positive/outcome pair even if something writes around the application layer entirely', async () => {
+  const alice = await registerUser(t);
+  const bob = await registerUser(t);
+  const proposal = await insertProposal(alice.userId, bob.userId);
+
+  await assert.rejects(
+    () =>
+      t.pool.query(
+        `INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, outcome) VALUES ($1, $2, true, 'happened_bad')`,
+        [proposal.id, alice.userId],
+      ),
+    (err: unknown) => (err as { code?: string }).code === '23514',
+    'db/migrations/025_integrity.sql\'s CHECK must reject this regardless of which code path attempts it',
+  );
 });

@@ -267,11 +267,24 @@ export interface AdminRetention {
   freshness: AdminFreshness;
 }
 
-/** Bounded to the trailing `RETENTION_LIST_DAYS` (default 60) cohorts — the rollup job itself only maintains that many, see statsAggregation.job.ts. */
+/**
+ * Bounded to the trailing `RETENTION_LIST_DAYS` (default 60) cohorts, since
+ * the rollup job itself only maintains that many, see statsAggregation.job.ts.
+ *
+ * `cohort_size`/`active_d1`/`active_d7`/`active_d30` are `bigint` columns
+ * (widened by db/migrations/023_widen_counters.sql, a concurrent build's
+ * capacity audit), which `pg` returns as STRINGS, not numbers, to avoid
+ * silently truncating a value past `Number.MAX_SAFE_INTEGER`. Every one is
+ * wrapped in `Number(...)` below so `RetentionCohortRow`'s declared
+ * `number` fields are actually numbers on the wire (a raw string count
+ * would otherwise serialize as `"4"` in the JSON response, not `4`), safe
+ * here specifically because a per-day cohort size/active count can never
+ * approach that ceiling.
+ */
 export async function getRetention(ctx: Ctx): Promise<AdminRetention> {
   requireAdminActor(ctx);
   const [{ rows }, fresh] = await Promise.all([
-    ctx.db.query<{ cohort_date: Date; cohort_size: number; active_d1: number; active_d7: number; active_d30: number }>(
+    ctx.db.query<{ cohort_date: Date; cohort_size: string; active_d1: string; active_d7: string; active_d30: string }>(
       `SELECT cohort_date, cohort_size, active_d1, active_d7, active_d30
        FROM stats_cohort_retention
        ORDER BY cohort_date DESC LIMIT $1`,
@@ -280,16 +293,22 @@ export async function getRetention(ctx: Ctx): Promise<AdminRetention> {
     freshness(ctx),
   ]);
 
-  const cohorts: RetentionCohortRow[] = rows.map((r) => ({
-    cohortDate: utcDayKey(r.cohort_date),
-    cohortSize: r.cohort_size,
-    activeD1: r.active_d1,
-    activeD7: r.active_d7,
-    activeD30: r.active_d30,
-    d1Rate: ratio(r.active_d1, r.cohort_size),
-    d7Rate: ratio(r.active_d7, r.cohort_size),
-    d30Rate: ratio(r.active_d30, r.cohort_size),
-  }));
+  const cohorts: RetentionCohortRow[] = rows.map((r) => {
+    const cohortSize = Number(r.cohort_size);
+    const activeD1 = Number(r.active_d1);
+    const activeD7 = Number(r.active_d7);
+    const activeD30 = Number(r.active_d30);
+    return {
+      cohortDate: utcDayKey(r.cohort_date),
+      cohortSize,
+      activeD1,
+      activeD7,
+      activeD30,
+      d1Rate: ratio(activeD1, cohortSize),
+      d7Rate: ratio(activeD7, cohortSize),
+      d30Rate: ratio(activeD30, cohortSize),
+    };
+  });
 
   return { cohorts, freshness: fresh };
 }

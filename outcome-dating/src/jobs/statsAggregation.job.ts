@@ -44,9 +44,9 @@
  *
  *  4. `stats_region_activity` / `stats_region_tag_prevalence` (024_stats_
  *     comparisons.sql, user page's peer-comparison section): unlike 1-3,
- *     these are not time-windowed — a comparison needs a snapshot of the
+ *     these are not time-windowed. A comparison needs a snapshot of the
  *     WHOLE current active population's distribution, not a trailing
- *     window. Every run TRUNCATEs both tables and repopulates them with
+ *     window, so every run TRUNCATEs both tables and repopulates them with
  *     one grouped `INSERT ... SELECT` each (never a per-region write
  *     loop), bucketing every active user with a location into a coarse
  *     geographic cell (see `REGION_GRID_DEGREES`/`regionKeyFor`) and
@@ -63,14 +63,14 @@
  * reconciliation reads `payment_ledger` directly in a test to prove the
  * rollup matches it exactly, not to prove it's instantaneous).
  *
- * The per-user stats page mostly does NOT read from these tables — a
+ * The per-user stats page mostly does NOT read from these tables: a
  * user's own activity is already a small, indexed slice (their own rows,
  * via the existing `sender_id`/`recipient_id`/`user_id` indexes), so
  * querying it live is cheap regardless of platform size. The one
  * exception is the peer-comparison section above (point 4): "how does my
  * activity compare to typical" is inherently a question about everyone
  * else, so it is the one part of the user page that reads a rollup rather
- * than computing live — see `stats.service.ts`'s own module doc.
+ * than computing live, see `stats.service.ts`'s own module doc.
  */
 import type { Ctx } from '../lib/ctx.js';
 import type { JobDefinition } from './types.js';

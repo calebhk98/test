@@ -316,6 +316,21 @@ async function insertHardFilter(userId: string, filterKey: string, operator: str
   );
 }
 
+/** A single reusable `question_bank` row so fixtures that just need `user_question_answers.question_bank_id` to satisfy its foreign key (this file's tests care about the COUNT of answer rows, never the question content) don't have to insert one per slug. `question_slug` is its own independent column, not required to match the referenced row's own `slug`, so the same id can back many different `question_slug` values. */
+let fillerQuestionBankId: string | undefined;
+async function getFillerQuestionBankId(): Promise<string> {
+  if (fillerQuestionBankId) return fillerQuestionBankId;
+  const typeDefinition = { type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' };
+  const { rows } = await pool.query<{ id: string }>(
+    `INSERT INTO question_bank (slug, version, is_current, category, question_type, question_text, type_definition, base_weight, sensitive, active)
+     VALUES ('stats-test-filler', 1, true, 'test', 'scale', 'filler', $1::jsonb, 1, false, true)
+     RETURNING id`,
+    [JSON.stringify(typeDefinition)],
+  );
+  fillerQuestionBankId = rows[0]!.id;
+  return fillerQuestionBankId;
+}
+
 function buildCtx(actor: Actor, now: Date): Ctx {
   const clock = new ManualClock(now);
   const logger = createSilentLogger();
@@ -603,10 +618,13 @@ test('statsAggregation job: retention cohort matches a hand count', async () => 
     return d.toISOString().slice(0, 10);
   }
   const { rows } = await pool.query(`SELECT * FROM stats_cohort_retention WHERE cohort_date = $1`, [dayKey(cohortDay)]);
-  assert.equal(rows[0].cohort_size, 4);
-  assert.equal(rows[0].active_d1, 2); // active1 (35d) and active2 (10d) are >= 1 day later
-  assert.equal(rows[0].active_d7, 2); // both still >= 7 days later
-  assert.equal(rows[0].active_d30, 1); // only active1
+  // cohort_size/active_d1/active_d7/active_d30 are `bigint` columns
+  // (db/migrations/023_widen_counters.sql), which `pg` returns as strings
+  // -- Number(...) here, same reasoning as adminStats.service.ts#getRetention.
+  assert.equal(Number(rows[0].cohort_size), 4);
+  assert.equal(Number(rows[0].active_d1), 2); // active1 (35d) and active2 (10d) are >= 1 day later
+  assert.equal(Number(rows[0].active_d7), 2); // both still >= 7 days later
+  assert.equal(Number(rows[0].active_d30), 1); // only active1
 });
 
 // =====================================================================
@@ -693,6 +711,14 @@ test('adminStats.service.getRetention returns bounded cohorts with correct per-c
   assert.equal(row!.d1Rate, 0.5);
   assert.equal(row!.d7Rate, 0.25);
   assert.equal(row!.d30Rate, 0.1);
+  // These columns are `bigint` (db/migrations/023_widen_counters.sql), so
+  // `pg` returns them as strings -- assert real JS numbers came out the
+  // other end, not "20"/"10"/"5"/"2" strings smuggled through the API.
+  assert.equal(typeof row!.cohortSize, 'number');
+  assert.equal(row!.cohortSize, 20);
+  assert.equal(row!.activeD1, 10);
+  assert.equal(row!.activeD7, 5);
+  assert.equal(row!.activeD30, 2);
 });
 
 // =====================================================================
@@ -872,7 +898,12 @@ test('getMyFilterCosts: shows an exact number once the excluded population clear
   assert.equal(filterEntry!.additionalCandidatesIfRemoved.suppressed, false);
   assert.equal(filterEntry!.additionalCandidatesIfRemoved.value, 8);
   assert.equal(result.costliestFilter?.filterKey, 'age_min');
-  assert.equal(result.candidatesFailingTwoOrMore.value, 0, 'only one filter is enabled, so nobody can fail two or more');
+  // Only one filter is enabled, so nobody CAN fail two or more -- the
+  // true count is 0, which (like any count below MIN_SUPPRESSIBLE_COHORT,
+  // zero included) is still reported as suppressed rather than as a bare
+  // "0", the same rule every other cross-person count in this file uses.
+  assert.equal(result.candidatesFailingTwoOrMore.suppressed, true);
+  assert.equal(result.candidatesFailingTwoOrMore.value, null);
 
   // The one-pass computation never writes to hard_filters at all (unlike
   // the earlier scratch-transaction design, which flipped a real row and
@@ -891,7 +922,7 @@ function countingDb(db: DbClient, counter: { n: number }): DbClient {
   return {
     query: ((...args: unknown[]) => {
       counter.n += 1;
-      // @ts-expect-error — forwarding pg's overloaded Pool/PoolClient#query signature verbatim (same shim tests/perf/discovery.perf.test.ts's own countingDb uses).
+      // @ts-expect-error: forwarding pg's overloaded Pool/PoolClient#query signature verbatim (same shim tests/perf/discovery.perf.test.ts's own countingDb uses).
       return db.query(...args);
     }) as DbClient['query'],
   };
@@ -1061,6 +1092,7 @@ test('getMyComparisons: positions the caller against the regional typical band, 
   );
   const tagId = tagRows.rows[0]!.id;
 
+  const filler = await getFillerQuestionBankId();
   for (const n of answeredCounts) {
     const uid = await insertUser({ createdAt: now });
     await insertProfile(uid, { completeness: 100 });
@@ -1068,8 +1100,8 @@ test('getMyComparisons: positions the caller against the regional typical band, 
     for (let i = 0; i < n; i++) {
       await pool.query(
         `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, answered_at)
-         VALUES ($1, $2, gen_random_uuid(), 'skipped', now())`,
-        [uid, `q-${i}`],
+         VALUES ($1, $2, $3, 'skipped', now())`,
+        [uid, `q-${i}`, filler],
       );
     }
   }

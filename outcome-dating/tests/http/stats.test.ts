@@ -168,6 +168,68 @@ test('GET /me/stats/trends, /me/stats/photos, /me/stats/filters: all 200 for a f
   const filtersBody = JSON.parse(filtersRes.body);
   assert.ok('currentPool' in filtersBody);
   assert.deepEqual(filtersBody.perFilter, []);
+  assert.ok('candidatesFailingTwoOrMore' in filtersBody);
+  assert.equal(filtersBody.costliestFilter, null, 'no filters enabled, so there is nothing to name as costliest');
+});
+
+test('GET /me/stats/venn: 200 with the five-region shape, for a fresh account', async () => {
+  const user = await registerUser(t);
+  const res = await t.app.inject({ method: 'GET', url: '/me/stats/venn', headers: authHeader(user.accessToken) });
+  assert.equal(res.statusCode, 200);
+  const body = JSON.parse(res.body);
+  for (const region of ['setA', 'setB', 'intersection', 'onlyA', 'onlyB']) {
+    assert.ok(region in body, `expected a "${region}" region in the Venn response`);
+    assert.ok('value' in body[region].count && 'suppressed' in body[region].count);
+    assert.equal(typeof body[region].label, 'string');
+  }
+});
+
+test('GET /me/stats/venn.svg: 200, image/svg+xml, a well-formed self-contained SVG with a screen-reader text alternative', async () => {
+  const user = await registerUser(t);
+  const res = await t.app.inject({ method: 'GET', url: '/me/stats/venn.svg', headers: authHeader(user.accessToken) });
+  assert.equal(res.statusCode, 200);
+  assert.ok(res.headers['content-type']?.toString().includes('image/svg+xml'));
+  assert.ok(res.body.startsWith('<svg'));
+  assert.ok(res.body.includes('</svg>'));
+  assert.ok(res.body.includes('<title id="venn-title">'));
+  assert.ok(res.body.includes('<desc id="venn-desc">'));
+});
+
+test('GET /me/stats/comparisons: 200, insufficient_data without a location, positioned once one is set', async () => {
+  const user = await registerUser(t);
+
+  const beforeRes = await t.app.inject({ method: 'GET', url: '/me/stats/comparisons', headers: authHeader(user.accessToken) });
+  assert.equal(beforeRes.statusCode, 200);
+  const before = JSON.parse(beforeRes.body);
+  assert.equal(before.hasLocation, false);
+  assert.equal(before.questionsAnswered.position, 'insufficient_data');
+  assert.deepEqual(before.tagPrevalence, []);
+
+  const profileRes = await t.app.inject({
+    method: 'PATCH',
+    url: '/me/profile',
+    headers: authHeader(user.accessToken),
+    payload: {
+      displayName: 'Casey',
+      city: 'Springfield',
+      latitude: 39.78,
+      longitude: -89.65,
+      age: 28,
+      gender: 'woman',
+      seeking: 'men',
+      relationshipIntention: 'long_term',
+    },
+  });
+  assert.equal(profileRes.statusCode, 200);
+
+  const afterRes = await t.app.inject({ method: 'GET', url: '/me/stats/comparisons', headers: authHeader(user.accessToken) });
+  assert.equal(afterRes.statusCode, 200);
+  const after = JSON.parse(afterRes.body);
+  assert.equal(after.hasLocation, true);
+  // No regional rollup has run yet in this test, so the region row does
+  // not exist -- still a well-formed insufficient_data response, never a
+  // 500 or a misleading global fallback.
+  assert.equal(after.questionsAnswered.position, 'insufficient_data');
 });
 
 test('GET /me/stats/trends: rejects an out-of-range weeks parameter', async () => {
@@ -220,4 +282,15 @@ test('privacy: after a real interaction between two users, /me/stats never conta
 
   const trendsRes = await t.app.inject({ method: 'GET', url: '/me/stats/trends', headers: authHeader(alice.accessToken) });
   assert.ok(!trendsRes.body.includes(bob.userId));
+
+  const vennRes = await t.app.inject({ method: 'GET', url: '/me/stats/venn', headers: authHeader(alice.accessToken) });
+  assert.ok(!vennRes.body.includes(bob.userId));
+
+  const vennSvgRes = await t.app.inject({ method: 'GET', url: '/me/stats/venn.svg', headers: authHeader(alice.accessToken) });
+  assert.ok(!vennSvgRes.body.includes(bob.userId), "alice's Venn SVG must never contain bob's user id");
+  assert.ok(!vennSvgRes.body.includes(bob.email));
+
+  const comparisonsRes = await t.app.inject({ method: 'GET', url: '/me/stats/comparisons', headers: authHeader(alice.accessToken) });
+  assert.ok(!comparisonsRes.body.includes(bob.userId));
+  assert.ok(!comparisonsRes.body.includes(bob.email));
 });

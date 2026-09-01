@@ -1,5 +1,5 @@
 /**
- * src/services/statsVenn.ts — turns the reality dashboard's three counts
+ * src/services/statsVenn.ts: turns the reality dashboard's three counts
  * (matches this user's filters, whose filters this user matches, the
  * mutual pool) into a proper two-set Venn: set sizes, the intersection,
  * and what sits outside each set. Also renders a small, self-contained,
@@ -8,7 +8,7 @@
  *
  * Deliberately has ZERO dependency on stats.service.ts (no import of it,
  * no import of its SuppressibleCount type) even though the two describe
- * the same shape — this keeps the module a pure, independently-testable
+ * the same shape. This keeps the module a pure, independently-testable
  * unit (see tests/unit/statsVenn.test.ts) and avoids a circular import,
  * since stats.service.ts is the one that imports THIS file, not the other
  * way around. `computePoolVenn` takes suppression as an injected function
@@ -20,7 +20,7 @@
  * minus a subset), never a list, never an id. `computePoolVenn` runs the
  * SAME suppression rule over every one of the five derived quantities
  * (both set totals, the intersection, and both "outside" counts) rather
- * than deriving some of them from an already-suppressed value — a
+ * than deriving some of them from an already-suppressed value: a
  * suppressed set total does not silently make a derived count look like
  * an honest zero, it stays its own explicit "too few people to show"
  * result.
@@ -36,7 +36,7 @@ export interface PoolVennCounts {
   matchesMyFilters: number;
   /** Y: other people this user would pass THEIR filters. */
   whoseFiltersIMatch: number;
-  /** Z: the mutual pool (both directions, plus capacity/moderation gates — see discovery.service.ts#getRealityDashboard). Always <= min(X, Y). */
+  /** Z: the mutual pool (both directions, plus capacity/moderation gates, see discovery.service.ts#getRealityDashboard). Always <= min(X, Y). */
   mutualMatchPool: number;
 }
 
@@ -103,11 +103,11 @@ const DEFAULT_HEIGHT = 300;
  * that size without scaling), with every number that appears as pixels
  * ALSO present as a `<title>`/`<desc>` text alternative in the same
  * document (see docs/accessibility.md's "no text embedded in generated
- * imagery without the same values as data" principle — the caller
+ * imagery without the same values as data" principle: the caller
  * additionally gets `PoolVennData` as plain JSON alongside this image,
  * so the numbers are never trapped inside pixels; this SVG's own
  * `<desc>` is the screen-reader path to the same numbers, not the only
- * one). No charting library — five circles/text elements, hand-laid-out.
+ * one). No charting library, just five circles and text elements, hand-laid-out.
  */
 export function renderPoolVennSvg(data: PoolVennData, opts?: VennSvgOptions): string {
   const width = opts?.width ?? DEFAULT_WIDTH;
