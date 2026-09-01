@@ -2,6 +2,7 @@
 import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as interestService from '../../services/interest.service.js';
+import { serializeInterestListPage } from '../serializers/interests.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
@@ -20,14 +21,17 @@ export function registerInterestRoutes(app: FastifyInstance, deps: AppDeps): voi
     reply.status(201).send(await interestService.sendInterest(req.ctx!, body.recipientId));
   });
 
+  // Enriched with the counterpart's displayName/primaryPhotoUrl/age/
+  // approximateDistanceKm (docs/ux-api-review.md §6 — the "who liked me"
+  // screen was otherwise a bare-id list plus one profile call per row).
   app.get('/interests/outgoing', auth, async (req, reply) => {
     const query = parseOrThrow(paginationQuerySchema, req.query);
-    reply.send(await interestService.listOutgoing(req.ctx!, query));
+    reply.send(serializeInterestListPage(await interestService.listOutgoingEnriched(req.ctx!, query)));
   });
 
   app.get('/interests/incoming', auth, async (req, reply) => {
     const query = parseOrThrow(paginationQuerySchema, req.query);
-    reply.send(await interestService.listIncoming(req.ctx!, query));
+    reply.send(serializeInterestListPage(await interestService.listIncomingEnriched(req.ctx!, query)));
   });
 
   app.post('/interests/:interestId/accept', auth, async (req, reply) => {

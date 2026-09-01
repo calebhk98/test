@@ -11,6 +11,7 @@ import * as conversationService from './conversation.service.js';
 import * as notificationService from './notification.service.js';
 import { outgoingInterestPendingLimitFor } from './trust.service.js';
 import { evaluateMutualEligibility } from './eligibility.service.js';
+import * as profileService from './profile.service.js';
 
 /**
  * interest.service — match interests.
@@ -430,6 +431,101 @@ export async function listOutgoing(ctx: Ctx, params?: { cursor?: string; limit?:
 
 export async function listIncoming(ctx: Ctx, params?: { cursor?: string; limit?: number }): Promise<Page<Interest>> {
   return listInterests(ctx, 'recipient', params);
+}
+
+// ---------------------------------------------------------------------
+// listOutgoingEnriched / listIncomingEnriched — the "who liked me" /
+// "your sent likes" screen, with the counterpart's display name/primary
+// photo/age/distance attached (docs/ux-api-review.md §6: the bare
+// `listOutgoing`/`listIncoming` above force a client into one
+// `GET /profiles/:userId` per row to render this screen — one of the two
+// highest-traffic screens in the product).
+//
+// SHARED, NOT DUPLICATED: this reuses `profile.service#getPublicProfile`
+// verbatim, the exact same value `GET /profiles/:userId` returns and the
+// exact same function `matches.service.ts#listMyMatches` already calls
+// for its own row enrichment — never a hand-rolled second profile view.
+// That inherits, for free, the same guarantees `matches.service.ts`'s own
+// module doc calls out: never leaks raw coordinates, 404s/omits a
+// deleted or blocked counterpart. A row whose counterpart has become
+// unreachable that way is DROPPED from the page rather than failing the
+// whole list — identical semantics to `matches.service.ts#listMyMatches`,
+// mirrored deliberately rather than reimplemented, per the task's "do
+// not duplicate this logic — share it."
+//
+// `policySnapshot` (internal config values — `interest.expiry_hours`,
+// the outgoing/incoming pending caps) is deliberately NOT included on
+// this enriched shape: it is pure noise the client never uses (see the
+// same review finding), unlike the base `listOutgoing`/`listIncoming`
+// above (kept unchanged — see this file's own frozen `Interest` return
+// type — for the internal/test callers that still need it).
+//
+// `listOutgoing`/`listIncoming` above are UNCHANGED (still return the
+// bare `Interest`, `policySnapshot` included) — this is deliberately a
+// new, additive pair of exports, not a signature change, since those two
+// functions' existing return shape is depended on elsewhere (internal
+// callers, and — frozen — `INTERFACES.md`'s original module contract).
+// ---------------------------------------------------------------------
+
+export interface EnrichedInterestItem {
+  id: string;
+  /** The other participant on this row — the recipient for an outgoing interest, the sender for an incoming one. */
+  counterpartUserId: string;
+  status: InterestStatus;
+  displayName: string;
+  primaryPhotoUrl: string | null;
+  age: number;
+  approximateDistanceKm: number | null;
+  createdAt: Date;
+  expiresAt: Date;
+  acceptedAt: Date | null;
+  declinedAt: Date | null;
+  canceledAt: Date | null;
+  expiredAt: Date | null;
+}
+
+async function enrichPage(ctx: Ctx, page: Page<Interest>, counterpartOf: (interest: Interest) => string): Promise<Page<EnrichedInterestItem>> {
+  const items: EnrichedInterestItem[] = [];
+  for (const interest of page.items) {
+    const counterpartUserId = counterpartOf(interest);
+    // See section doc: a block (either direction) or a deleted
+    // counterpart account makes this row unreachable — drop it rather
+    // than fail the whole page, exactly like matches.service.ts.
+    let profile: Awaited<ReturnType<typeof profileService.getPublicProfile>>;
+    try {
+      profile = await profileService.getPublicProfile(ctx, counterpartUserId);
+    } catch {
+      continue;
+    }
+    items.push({
+      id: interest.id,
+      counterpartUserId,
+      status: interest.status,
+      displayName: profile.displayName,
+      primaryPhotoUrl: profile.photoUrls[0] ?? null,
+      age: profile.age,
+      approximateDistanceKm: profile.approximateDistanceKm,
+      createdAt: interest.createdAt,
+      expiresAt: interest.expiresAt,
+      acceptedAt: interest.acceptedAt,
+      declinedAt: interest.declinedAt,
+      canceledAt: interest.canceledAt,
+      expiredAt: interest.expiredAt,
+    });
+  }
+  return { items, nextCursor: page.nextCursor };
+}
+
+/** `GET /interests/outgoing`, enriched — see section doc above. */
+export async function listOutgoingEnriched(ctx: Ctx, params?: { cursor?: string; limit?: number }): Promise<Page<EnrichedInterestItem>> {
+  const page = await listOutgoing(ctx, params);
+  return enrichPage(ctx, page, (interest) => interest.recipientId);
+}
+
+/** `GET /interests/incoming`, enriched — see section doc above. */
+export async function listIncomingEnriched(ctx: Ctx, params?: { cursor?: string; limit?: number }): Promise<Page<EnrichedInterestItem>> {
+  const page = await listIncoming(ctx, params);
+  return enrichPage(ctx, page, (interest) => interest.senderId);
 }
 
 // ---------------------------------------------------------------------
