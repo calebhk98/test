@@ -1,6 +1,22 @@
+import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
-import { NotImplementedError } from '../lib/errors.js';
-import type { AttendanceConfirmation, DateProposal, PostDateFeedback } from '../domain/types.js';
+import { requireUserActor } from '../lib/ctx.js';
+import { ConflictError, ForbiddenError, NotFoundError, PaymentError, ValidationError } from '../lib/errors.js';
+import { addHours, hoursBetween } from '../lib/time.js';
+import { DATE_PROPOSAL_POLICY_KEYS } from '../config/config.service.js';
+import type {
+  AttendanceConfirmation,
+  DateProposal,
+  DateProposalPolicySnapshot,
+  DateProposalStatus,
+  PostDateFeedback,
+} from '../domain/types.js';
+import * as venueService from './venue.service.js';
+import * as paymentService from './payment.service.js';
+import * as voucherService from './voucher.service.js';
+import * as conversationService from './conversation.service.js';
+import * as notificationService from './notification.service.js';
+import * as trustService from './trust.service.js';
 
 /**
  * dateProposal.service — the §13-§15 date proposal orchestrator. This is
@@ -11,35 +27,265 @@ import type { AttendanceConfirmation, DateProposal, PostDateFeedback } from '../
  *
  * Owning agent: D.
  *
- * State machine (spec §13.3, plus `completed_unverified` from §15.4):
- *   draft -> pending_acceptance -> accepted -> charged -> ticketed -> completed
- *                                                                   -> completed_unverified (§15.4, no venue scan)
- *   pending_acceptance -> declined | expired | canceled | payment_failed
- *   accepted -> payment_failed | canceled (late, no refund) | refunded (early cancel)
- *   ticketed/completed_unverified -> disputed (only one of two confirms, §15.4) | no_show
+ * STATE MACHINE (spec §13.3 + `completed_unverified` from §15.4). See
+ * `ALLOWED_TRANSITIONS` below for the literal, enforced table — every
+ * status-changing function checks it (via `assertTransition` or the
+ * equivalent inline resumability check in `acceptDateProposal`) and throws
+ * `ConflictError` on an illegal transition. All nine "resting" states other
+ * than the five in-flight ones (`draft`, `pending_acceptance`, `accepted`,
+ * `charged`) are effectively terminal (empty transition lists) — see the
+ * table for the two deliberate exceptions kept open for defensive/race
+ * reasons (`accepted`/`charged` can still be canceled/refunded).
  *
- * INVARIANTS (see INTERFACES.md for the full table):
- *  - §14.3: nobody is charged until BOTH holds are authorized. `proposeDate`
- *    authorizes ONLY the proposer's hold; `acceptDateProposal` authorizes
- *    the recipient's, and ONLY once that succeeds does it call
- *    `payment.service#captureHold` for both sides.
- *  - §14.4/§14 orchestrator rule: `voucher.service#issueVoucher` is called
- *    only after both captures succeed, in the same transaction as the
- *    `status = 'ticketed'` write.
- *  - §14.5: any authorization/capture failure releases whichever hold(s)
- *    already succeeded and sets `status = 'payment_failed'` — never leaves
- *    one side charged while the other isn't.
- *  - §21.3: `policySnapshot` (via
- *    `ctx.config.snapshotPolicy(DATE_PROPOSAL_POLICY_KEYS)`) is captured
- *    once at `proposeDate` and used for every later expiry/refund
- *    calculation on this proposal — never re-read from live config.
- *  - Every status transition here that reaches a terminal-ish state
- *    (`ticketed`, `completed`, `completed_unverified`, `refunded`,
- *    `disputed`) fires the matching `notification.service.ts` event and,
- *    where the spec calls for it (completion), a `trust.service.ts` event
- *    — via `redemption.service.ts` for the venue-scan path, and directly
- *    here for the no-scan `confirmAttendance` path.
+ * PROCESSOR-CALL / DB-TRANSACTION ORDERING — the single most important
+ * design decision in this file, spelled out because it looks, at first
+ * glance, like it violates "one DB transaction per money operation":
+ *
+ *   `acceptDateProposal` makes UP TO THREE separate external processor
+ *   calls (authorize recipient, capture proposer, capture recipient),
+ *   each followed by its OWN short `payment.service.ts`-owned transaction
+ *   that persists that one call's result (hold status + ledger entry)
+ *   atomically. It deliberately does NOT wrap all three calls plus the
+ *   `date_proposals` status writes in one giant transaction, because:
+ *
+ *     1. A Postgres transaction cannot make an external HTTP call
+ *        (`ctx.payments.*`) atomic with a local write — wrapping the calls
+ *        in `BEGIN...COMMIT` would only add a false sense of safety while
+ *        holding a connection open across slow network calls.
+ *     2. Every one of those three calls, plus every proposal-status write
+ *        here, is idempotent/resumable (see `payment.service.ts` and the
+ *        early-return checks in `acceptDateProposal` below). So if the
+ *        process dies between, say, "proposer capture succeeded" and
+ *        "recipient capture attempted", the proposal is left sitting in a
+ *        real, inspectable, RESUMABLE state (`status = 'accepted'`,
+ *        proposer hold `captured`, recipient hold `authorized`) rather
+ *        than a rolled-back black hole. Calling `acceptDateProposal` again
+ *        (or a retry job) picks up exactly where it left off — it will not
+ *        re-authorize, and will not re-capture, the sides that already
+ *        succeeded.
+ *     3. Any gap this still leaves between "processor moved money" and
+ *        "local DB reflects it" is exactly what `ledger.service#
+ *        reconcileWithProcessor` (§25.9) exists to detect and flag — never
+ *        silently auto-corrected, per that module's invariant.
+ *
+ *   Within `acceptDateProposal`, the THE central invariant (nobody is
+ *   charged unless both sides are captured) is enforced by ordering, not
+ *   by a transaction boundary: capture A is only attempted after A and B
+ *   are BOTH `authorized`; if capture A fails, B (still merely authorized)
+ *   is released; if capture B fails after A already captured, A is
+ *   REFUNDED (not released — it already moved real money, so undoing it
+ *   is a refund, not a cancel) — see the §14.5 failure branches inline.
+ *
+ * NOTIFICATIONS/TRUST ARE BEST-EFFORT, NEVER BLOCKING: `notifyBestEffort`/
+ * `recordTrustEventBestEffort` below catch and log rather than propagate.
+ * This is a deliberate design choice, not a shortcut: a notification-
+ * pipeline or trust-scoring outage must never be able to roll back (or
+ * even fail) a financial state transition that already succeeded at the
+ * processor. `conversation.establishConversation` in `confirmAttendance`
+ * is the one cross-module call that is NOT best-effort — spec §15.4 states
+ * "conversation = established" as a definite outcome of that path, so it
+ * is called (and must succeed) BEFORE the proposal's own status is
+ * persisted as `completed_unverified`, so a failure there leaves the
+ * proposal safely un-transitioned (still `ticketed`) rather than
+ * inconsistent.
+ *
+ * NOTIFICATION EVENT GAP: `NotificationEventType` (owned by Agent C, frozen
+ * in `src/domain/types.ts`) has no event for "date canceled/refunded/
+ * disputed/no-show/completed" — only `date_proposal_received`,
+ * `date_accepted`, `payment_hold_authorized`, `payment_failed`, and
+ * `ticket_issued` exist. This file calls `notify` only at those five
+ * points; the other transitions simply have no notification to fire under
+ * the current registry. Flagged in the final report as a cross-agent gap
+ * (extending `NotificationEventType` + `NOTIFICATION_TEMPLATES` is Agent
+ * C's file) rather than worked around here.
+ *
+ * `payment_holds` LOOKUP: `payment.service.ts`'s frozen export list has no
+ * "get the hold for this user on this proposal" function (only
+ * `authorizeHold`/`captureHold`/`releaseHold`/`refundHold`, all addressed
+ * by hold id). Since this file needs that lookup purely to find an id to
+ * pass to those functions — never to mutate state directly — it reads
+ * `payment_holds` with a plain `SELECT` (see `getHoldRow` below). This is
+ * safe specifically because both `payment.service.ts` and this file are
+ * owned by the same agent (D) and every actual status mutation still goes
+ * through the sanctioned `payment.service.ts` functions; it would not be
+ * safe for a different agent's module to do the same.
  */
+
+// =====================================================================
+// State machine
+// =====================================================================
+
+const ALLOWED_TRANSITIONS: Record<DateProposalStatus, readonly DateProposalStatus[]> = {
+  draft: ['pending_acceptance', 'payment_failed'],
+  pending_acceptance: ['accepted', 'declined', 'expired', 'canceled', 'payment_failed'],
+  // 'canceled'/'refunded' here cover the narrow race where cancelDateProposal
+  // runs between acceptDateProposal persisting 'accepted' and it reaching
+  // 'charged' in the same call.
+  accepted: ['charged', 'payment_failed', 'canceled', 'refunded'],
+  charged: ['ticketed', 'canceled', 'refunded'],
+  ticketed: ['completed', 'completed_unverified', 'disputed', 'no_show', 'canceled', 'refunded'],
+  declined: [],
+  expired: [],
+  canceled: [],
+  payment_failed: [],
+  completed: [],
+  completed_unverified: [],
+  no_show: [],
+  refunded: [],
+  disputed: [],
+};
+
+function assertTransition(current: DateProposalStatus, next: DateProposalStatus): void {
+  if (!ALLOWED_TRANSITIONS[current].includes(next)) {
+    throw new ConflictError(`Illegal date proposal transition: '${current}' -> '${next}'`);
+  }
+}
+
+// =====================================================================
+// Row mapping
+// =====================================================================
+
+interface DateProposalRow {
+  id: string;
+  conversation_id: string;
+  proposer_id: string;
+  recipient_id: string;
+  venue_id: string;
+  scheduled_start: Date;
+  scheduled_end: Date;
+  optional_note: string | null;
+  status: DateProposalStatus;
+  policy_snapshot: DateProposalPolicySnapshot;
+  escrow_amount_cents: string;
+  created_at: Date;
+  accepted_at: Date | null;
+  declined_at: Date | null;
+  expired_at: Date | null;
+  canceled_at: Date | null;
+  charged_at: Date | null;
+  ticketed_at: Date | null;
+  completed_at: Date | null;
+}
+
+function mapProposal(row: DateProposalRow): DateProposal {
+  return {
+    id: row.id,
+    conversationId: row.conversation_id,
+    proposerId: row.proposer_id,
+    recipientId: row.recipient_id,
+    venueId: row.venue_id,
+    scheduledStart: row.scheduled_start,
+    scheduledEnd: row.scheduled_end,
+    optionalNote: row.optional_note,
+    status: row.status,
+    policySnapshot: row.policy_snapshot,
+    escrowAmountCents: Number(row.escrow_amount_cents),
+    createdAt: row.created_at,
+    acceptedAt: row.accepted_at,
+    declinedAt: row.declined_at,
+    expiredAt: row.expired_at,
+    canceledAt: row.canceled_at,
+    chargedAt: row.charged_at,
+    ticketedAt: row.ticketed_at,
+    completedAt: row.completed_at,
+  };
+}
+
+async function loadProposalRow(ctx: Ctx, dateProposalId: string): Promise<DateProposalRow> {
+  if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('dateProposalId must be a uuid');
+  const { rows } = await ctx.db.query<DateProposalRow>(`SELECT * FROM date_proposals WHERE id = $1`, [dateProposalId]);
+  if (!rows[0]) throw new NotFoundError('Date proposal not found');
+  return rows[0];
+}
+
+/** Every timestamp column here is stamped from `ctx.clock.now()`, never SQL `now()` — see INTERFACES.md's "ctx.clock for ALL time" rule. Using the DB's own wall clock would silently diverge from `ManualClock`-driven expiry/cutoff tests (and, in principle, from any future non-`SystemClock` production clock). */
+async function setStatus(ctx: Ctx, dateProposalId: string, status: DateProposalStatus, timestampColumn?: string): Promise<DateProposalRow> {
+  const sql = timestampColumn
+    ? `UPDATE date_proposals SET status = $2, ${timestampColumn} = $3 WHERE id = $1 RETURNING *`
+    : `UPDATE date_proposals SET status = $2 WHERE id = $1 RETURNING *`;
+  const params = timestampColumn ? [dateProposalId, status, ctx.clock.now()] : [dateProposalId, status];
+  const { rows } = await ctx.db.query<DateProposalRow>(sql, params);
+  return rows[0]!;
+}
+
+function assertParticipant(ctx: Ctx, row: DateProposalRow): string {
+  const { userId } = requireUserActor(ctx);
+  if (row.proposer_id !== userId && row.recipient_id !== userId) {
+    throw new ForbiddenError('Not a participant in this date proposal');
+  }
+  return userId;
+}
+
+// =====================================================================
+// payment_holds read helper (see module header for why this is a direct
+// SELECT rather than a payment.service.ts export).
+// =====================================================================
+
+interface HoldLookupRow {
+  id: string;
+  status: string;
+  amount_cents: string;
+}
+
+async function getHoldRow(ctx: Ctx, dateProposalId: string, userId: string): Promise<HoldLookupRow | undefined> {
+  const { rows } = await ctx.db.query<HoldLookupRow>(
+    `SELECT id, status, amount_cents FROM payment_holds WHERE date_proposal_id = $1 AND user_id = $2`,
+    [dateProposalId, userId],
+  );
+  return rows[0];
+}
+
+/** vouchers read helper — same reasoning as `getHoldRow` (voucher.service.ts exposes no "find by date proposal" lookup; cancellation needs one). */
+async function getVoucherRow(ctx: Ctx, dateProposalId: string): Promise<{ id: string; status: string } | undefined> {
+  const { rows } = await ctx.db.query<{ id: string; status: string }>(
+    `SELECT id, status FROM vouchers WHERE date_proposal_id = $1`,
+    [dateProposalId],
+  );
+  return rows[0];
+}
+
+// =====================================================================
+// Best-effort side effects (see module header)
+// =====================================================================
+
+async function notifyBestEffort(ctx: Ctx, input: notificationService.NotifyInput): Promise<void> {
+  try {
+    await notificationService.notify(ctx, input);
+  } catch (err) {
+    ctx.logger.warn('dateProposal.notify_failed', { eventType: input.eventType, userId: input.userId, err: describeError(err) });
+  }
+}
+
+async function recordTrustEventBestEffort(ctx: Ctx, input: trustService.RecordTrustEventInput): Promise<void> {
+  try {
+    await trustService.recordTrustEvent(ctx, input);
+  } catch (err) {
+    ctx.logger.warn('dateProposal.trust_event_failed', { eventType: input.eventType, userId: input.userId, err: describeError(err) });
+  }
+}
+
+function describeError(err: unknown): string {
+  return err instanceof Error ? err.message : String(err);
+}
+
+/** Rounding rule for every percentage-of-escrow refund in this file: round DOWN, always in the platform's favor — see `payment.service#refundHold`'s doc for the full rationale. */
+function percentOfCents(amountCents: number, percent: number): number {
+  return Math.floor((amountCents * percent) / 100);
+}
+
+// =====================================================================
+// proposeDate — §14.2 Step 1
+// =====================================================================
+
+const ProposeDateSchema = z
+  .object({
+    conversationId: z.string().uuid(),
+    venueId: z.string().uuid(),
+    scheduledStart: z.date(),
+    scheduledEnd: z.date(),
+    optionalNote: z.string().max(500).optional(),
+  })
+  .refine((v) => v.scheduledEnd > v.scheduledStart, { message: 'scheduledEnd must be after scheduledStart' });
 
 export interface ProposeDateInput {
   conversationId: string;
@@ -51,24 +297,181 @@ export interface ProposeDateInput {
 
 /** Creates the proposal, snapshots policy, and authorizes the proposer's hold. Result status is 'pending_acceptance' on success or 'payment_failed' if authorization is declined (spec §14.2 Step 1). */
 export async function proposeDate(ctx: Ctx, input: ProposeDateInput): Promise<DateProposal> {
-  throw new NotImplementedError('dateProposal.proposeDate');
+  const { userId: proposerId } = requireUserActor(ctx);
+  const parsed = ProposeDateSchema.parse(input);
+
+  const conversation = await conversationService.getConversation(ctx, parsed.conversationId);
+  if (conversation.status !== 'active') {
+    throw new ConflictError('Date proposals can only be created from an active conversation (spec §13.1)');
+  }
+  let recipientId: string;
+  if (conversation.userAId === proposerId) recipientId = conversation.userBId;
+  else if (conversation.userBId === proposerId) recipientId = conversation.userAId;
+  else throw new ForbiddenError('Not a participant in this conversation');
+
+  const venue = await venueService.getVenue(ctx, parsed.venueId);
+  if (!venue.active) throw new ValidationError('Venue is not currently active');
+
+  const policySnapshot = (await ctx.config.snapshotPolicy(DATE_PROPOSAL_POLICY_KEYS)) as DateProposalPolicySnapshot;
+  const escrowAmountCents = policySnapshot['date.escrow_amount_cents'];
+
+  const { rows } = await ctx.db.query<DateProposalRow>(
+    `INSERT INTO date_proposals
+       (conversation_id, proposer_id, recipient_id, venue_id, scheduled_start, scheduled_end, optional_note, status, policy_snapshot, escrow_amount_cents, created_at)
+     VALUES ($1, $2, $3, $4, $5, $6, $7, 'draft', $8::jsonb, $9, $10)
+     RETURNING *`,
+    [
+      parsed.conversationId,
+      proposerId,
+      recipientId,
+      parsed.venueId,
+      parsed.scheduledStart,
+      parsed.scheduledEnd,
+      parsed.optionalNote ?? null,
+      JSON.stringify(policySnapshot),
+      escrowAmountCents,
+      ctx.clock.now(), // explicit, not the column's SQL `now()` default — see setStatus's doc comment
+    ],
+  );
+  const created = rows[0]!;
+
+  const hold = await paymentService.authorizeHold(ctx, {
+    dateProposalId: created.id,
+    userId: proposerId,
+    amountCents: escrowAmountCents,
+    currency: 'usd',
+  });
+
+  if (hold.status !== 'authorized') {
+    assertTransition('draft', 'payment_failed');
+    const failed = await setStatus(ctx, created.id, 'payment_failed');
+    await notifyBestEffort(ctx, { userId: proposerId, eventType: 'payment_failed', channel: 'push', payload: { dateProposalId: created.id } });
+    return mapProposal(failed);
+  }
+
+  assertTransition('draft', 'pending_acceptance');
+  const pending = await setStatus(ctx, created.id, 'pending_acceptance');
+  await notifyBestEffort(ctx, { userId: proposerId, eventType: 'payment_hold_authorized', channel: 'push', payload: { dateProposalId: created.id } });
+  await notifyBestEffort(ctx, { userId: recipientId, eventType: 'date_proposal_received', channel: 'push', payload: { dateProposalId: created.id } });
+  return mapProposal(pending);
 }
+
+// =====================================================================
+// acceptDateProposal — §14.2 Steps 2-4, §14.5
+// =====================================================================
 
 /**
  * Recipient accepts. Authorizes the recipient's hold; if that succeeds,
  * captures BOTH holds and issues the voucher (spec §14.2 Steps 2-4). If
  * the recipient's authorization fails, releases the proposer's hold and
  * sets `payment_failed` (spec §14.5). If a capture fails after both
- * authorizations succeeded, releases ALL holds and sets `payment_failed`
- * (spec §14.5 "Capture fails after authorization").
+ * authorizations succeeded, releases/refunds ALL holds and sets
+ * `payment_failed` (spec §14.5 "Capture fails after authorization") — see
+ * module header for the release-vs-refund distinction and the resumable,
+ * multi-checkpoint design of this function.
  */
 export async function acceptDateProposal(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
-  throw new NotImplementedError('dateProposal.acceptDateProposal');
+  const row = await loadProposalRow(ctx, dateProposalId);
+  const { userId } = requireUserActor(ctx);
+  if (row.recipient_id !== userId) throw new ForbiddenError('Only the recipient can accept a date proposal');
+
+  // Fully idempotent no-op if this call (or an earlier crashed attempt)
+  // already finished the whole flow.
+  if (row.status === 'charged' || row.status === 'ticketed') return mapProposal(row);
+
+  if (row.status !== 'pending_acceptance' && row.status !== 'accepted') {
+    throw new ConflictError(`Cannot accept a date proposal in status '${row.status}'`);
+  }
+
+  // ---- Step 2: authorize the recipient's hold ----
+  const recipientHold = await paymentService.authorizeHold(ctx, {
+    dateProposalId,
+    userId: row.recipient_id,
+    amountCents: Number(row.escrow_amount_cents),
+    currency: 'usd',
+  });
+
+  if (recipientHold.status !== 'authorized') {
+    const proposerHold = await getHoldRow(ctx, dateProposalId, row.proposer_id);
+    if (proposerHold?.status === 'authorized') await paymentService.releaseHold(ctx, proposerHold.id);
+    assertTransition(row.status === 'accepted' ? 'accepted' : 'pending_acceptance', 'payment_failed');
+    const failed = await setStatus(ctx, dateProposalId, 'payment_failed');
+    await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'payment_failed', channel: 'push', payload: { dateProposalId } });
+    await notifyBestEffort(ctx, { userId: row.recipient_id, eventType: 'payment_failed', channel: 'push', payload: { dateProposalId } });
+    return mapProposal(failed);
+  }
+
+  let current = row;
+  if (row.status === 'pending_acceptance') {
+    assertTransition('pending_acceptance', 'accepted');
+    current = await setStatus(ctx, dateProposalId, 'accepted', 'accepted_at');
+    await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'date_accepted', channel: 'push', payload: { dateProposalId } });
+  }
+
+  // ---- Step 3: capture both holds, only now that both are authorized ----
+  const proposerHold = await getHoldRow(ctx, dateProposalId, row.proposer_id);
+  if (!proposerHold) throw new PaymentError('Proposer hold is missing — cannot capture');
+
+  const captureA = await paymentService.captureHold(ctx, proposerHold.id);
+  if (captureA.status !== 'captured') {
+    const recipientHoldRow = await getHoldRow(ctx, dateProposalId, row.recipient_id);
+    if (recipientHoldRow?.status === 'authorized') await paymentService.releaseHold(ctx, recipientHoldRow.id);
+    assertTransition('accepted', 'payment_failed');
+    const failed = await setStatus(ctx, dateProposalId, 'payment_failed');
+    await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'payment_failed', channel: 'push', payload: { dateProposalId } });
+    await notifyBestEffort(ctx, { userId: row.recipient_id, eventType: 'payment_failed', channel: 'push', payload: { dateProposalId } });
+    return mapProposal(failed);
+  }
+
+  const recipientHoldRow = await getHoldRow(ctx, dateProposalId, row.recipient_id);
+  if (!recipientHoldRow) throw new PaymentError('Recipient hold is missing — cannot capture');
+
+  const captureB = await paymentService.captureHold(ctx, recipientHoldRow.id);
+  if (captureB.status !== 'captured') {
+    // Proposer's side already moved real money — undo with a refund, not a
+    // release (§30.5 "do not charge one side alone").
+    await paymentService.refundHold(ctx, proposerHold.id);
+    assertTransition('accepted', 'payment_failed');
+    const failed = await setStatus(ctx, dateProposalId, 'payment_failed');
+    await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'payment_failed', channel: 'push', payload: { dateProposalId } });
+    await notifyBestEffort(ctx, { userId: row.recipient_id, eventType: 'payment_failed', channel: 'push', payload: { dateProposalId } });
+    return mapProposal(failed);
+  }
+
+  // ---- Step 4: both captured — charge, then ticket ----
+  assertTransition('accepted', 'charged');
+  current = await setStatus(ctx, dateProposalId, 'charged', 'charged_at');
+
+  await voucherService.issueVoucher(ctx, dateProposalId);
+
+  assertTransition('charged', 'ticketed');
+  current = await setStatus(ctx, dateProposalId, 'ticketed', 'ticketed_at');
+  await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'ticket_issued', channel: 'push', payload: { dateProposalId } });
+  await notifyBestEffort(ctx, { userId: row.recipient_id, eventType: 'ticket_issued', channel: 'push', payload: { dateProposalId } });
+
+  return mapProposal(current);
 }
 
+// =====================================================================
+// declineDateProposal
+// =====================================================================
+
 export async function declineDateProposal(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
-  throw new NotImplementedError('dateProposal.declineDateProposal');
+  const row = await loadProposalRow(ctx, dateProposalId);
+  const { userId } = requireUserActor(ctx);
+  if (row.recipient_id !== userId) throw new ForbiddenError('Only the recipient can decline a date proposal');
+  assertTransition(row.status, 'declined');
+
+  const proposerHold = await getHoldRow(ctx, dateProposalId, row.proposer_id);
+  if (proposerHold?.status === 'authorized') await paymentService.releaseHold(ctx, proposerHold.id);
+
+  const updated = await setStatus(ctx, dateProposalId, 'declined', 'declined_at');
+  return mapProposal(updated);
 }
+
+// =====================================================================
+// cancelDateProposal — §14.7
+// =====================================================================
 
 /**
  * Cancellation, branching on the §14.7 policy read from the proposal's own
@@ -79,10 +482,63 @@ export async function declineDateProposal(ctx: Ctx, dateProposalId: string): Pro
  *    `status = 'refunded'`.
  *  - after acceptance, inside the cutoff: refund per
  *    `late_cancel_refund_percent` (0 by default), `status = 'canceled'`.
+ *
+ * Either participant may cancel (spec §14.7 "Either user cancels"); an
+ * admin actor may also cancel on behalf of the pair — this is the path
+ * that realizes spec §30.6 ("venue closes after date accepted... allow
+ * refund") since no separate admin-only function was allocated for that.
  */
 export async function cancelDateProposal(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
-  throw new NotImplementedError('dateProposal.cancelDateProposal');
+  const row = await loadProposalRow(ctx, dateProposalId);
+  if (ctx.actor.type === 'admin') {
+    // allowed regardless of participant check
+  } else {
+    assertParticipant(ctx, row);
+  }
+
+  if (row.status === 'pending_acceptance') {
+    assertTransition('pending_acceptance', 'canceled');
+    const proposerHold = await getHoldRow(ctx, dateProposalId, row.proposer_id);
+    if (proposerHold?.status === 'authorized') await paymentService.releaseHold(ctx, proposerHold.id);
+    const updated = await setStatus(ctx, dateProposalId, 'canceled', 'canceled_at');
+    return mapProposal(updated);
+  }
+
+  if (row.status !== 'accepted' && row.status !== 'charged' && row.status !== 'ticketed') {
+    throw new ConflictError(`Cannot cancel a date proposal in status '${row.status}'`);
+  }
+
+  const cutoffHours = row.policy_snapshot['date.full_refund_cutoff_hours'];
+  const lateCancelPercent = row.policy_snapshot['date.late_cancel_refund_percent'];
+  const hoursUntilDate = hoursBetween(ctx.clock.now(), row.scheduled_start);
+  const isFullRefund = hoursUntilDate >= cutoffHours;
+
+  for (const participantId of [row.proposer_id, row.recipient_id]) {
+    const hold = await getHoldRow(ctx, dateProposalId, participantId);
+    if (!hold) continue;
+    if (hold.status === 'captured') {
+      const refundAmount = isFullRefund ? Number(hold.amount_cents) : percentOfCents(Number(hold.amount_cents), lateCancelPercent);
+      if (refundAmount > 0) await paymentService.refundHold(ctx, hold.id, refundAmount);
+    } else if (hold.status === 'authorized') {
+      await paymentService.releaseHold(ctx, hold.id);
+    }
+  }
+
+  const voucher = await getVoucherRow(ctx, dateProposalId);
+  if (voucher && voucher.status === 'issued') await voucherService.cancelVoucher(ctx, voucher.id);
+
+  const finalStatus: DateProposalStatus = isFullRefund ? 'refunded' : 'canceled';
+  assertTransition(row.status, finalStatus);
+  // Neither 'refunded' nor a bare late-cancel has a dedicated timestamp
+  // column in §23.17 — `canceled_at` is reused for both as "when this
+  // cancel-family transition happened".
+  const updated = await setStatus(ctx, dateProposalId, finalStatus, 'canceled_at');
+  return mapProposal(updated);
 }
+
+// =====================================================================
+// confirmAttendance — §15.4 no-scan fallback
+// =====================================================================
 
 /**
  * §15.4 no-scan fallback. Records the caller's confirmation. If both
@@ -90,30 +546,187 @@ export async function cancelDateProposal(ctx: Ctx, dateProposalId: string): Prom
  * `scheduledEnd`: `status = 'completed_unverified'` and
  * `conversation.service#establishConversation` is called — this does NOT
  * settle venue payment (spec §15.4 "does not automatically settle venue
- * payment"). If the window elapses with only one confirmation:
- * `status = 'disputed'`.
+ * payment") — see module header for why `establishConversation` is called
+ * BEFORE the status write, not best-effort after it. If the window elapses
+ * with only one confirmation: `status = 'disputed'`.
  */
 export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promise<{ dateProposal: DateProposal; confirmation: AttendanceConfirmation }> {
-  throw new NotImplementedError('dateProposal.confirmAttendance');
+  const row = await loadProposalRow(ctx, dateProposalId);
+  const userId = assertParticipant(ctx, row);
+  if (row.status !== 'ticketed') {
+    throw new ConflictError(`Cannot confirm attendance for a date proposal in status '${row.status}'`);
+  }
+
+  await ctx.db.query(
+    `INSERT INTO date_attendance_confirmations (date_proposal_id, user_id, confirmed_at)
+     VALUES ($1, $2, $3)
+     ON CONFLICT (date_proposal_id, user_id) DO NOTHING`,
+    [dateProposalId, userId, ctx.clock.now()],
+  );
+
+  const { rows: confirmationRows } = await ctx.db.query<{ user_id: string; confirmed_at: Date }>(
+    `SELECT user_id, confirmed_at FROM date_attendance_confirmations WHERE date_proposal_id = $1`,
+    [dateProposalId],
+  );
+  const myConfirmation = confirmationRows.find((c) => c.user_id === userId)!;
+  const confirmation: AttendanceConfirmation = { dateProposalId, userId, confirmedAt: myConfirmation.confirmed_at };
+
+  const windowHours = row.policy_snapshot['date.no_scan_confirmation_hours'];
+  const deadline = addHours(row.scheduled_end, windowHours);
+  const now = ctx.clock.now();
+
+  if (confirmationRows.length >= 2) {
+    assertTransition('ticketed', 'completed_unverified');
+    await conversationService.establishConversation(ctx, row.conversation_id);
+    const updated = await setStatus(ctx, dateProposalId, 'completed_unverified', 'completed_at');
+    await recordTrustEventBestEffort(ctx, { userId: row.proposer_id, eventType: 'completed_date', delta: 3, metadata: { dateProposalId, verified: false } });
+    await recordTrustEventBestEffort(ctx, { userId: row.recipient_id, eventType: 'completed_date', delta: 3, metadata: { dateProposalId, verified: false } });
+    return { dateProposal: mapProposal(updated), confirmation };
+  }
+
+  if (confirmationRows.length === 1 && now.getTime() > deadline.getTime()) {
+    assertTransition('ticketed', 'disputed');
+    const updated = await setStatus(ctx, dateProposalId, 'disputed');
+    return { dateProposal: mapProposal(updated), confirmation };
+  }
+
+  return { dateProposal: mapProposal(row), confirmation };
 }
 
-export async function submitPostDateFeedback(ctx: Ctx, dateProposalId: string, input: { positive: boolean; wouldMeetAgain?: boolean; safetyConcern?: boolean; notes?: string }): Promise<PostDateFeedback> {
-  throw new NotImplementedError('dateProposal.submitPostDateFeedback');
+// =====================================================================
+// submitPostDateFeedback
+// =====================================================================
+
+interface PostDateFeedbackRow {
+  id: string;
+  date_proposal_id: string;
+  user_id: string;
+  positive: boolean;
+  would_meet_again: boolean | null;
+  safety_concern: boolean;
+  notes: string | null;
+  created_at: Date;
 }
+
+function mapFeedback(row: PostDateFeedbackRow): PostDateFeedback {
+  return {
+    id: row.id,
+    dateProposalId: row.date_proposal_id,
+    userId: row.user_id,
+    positive: row.positive,
+    wouldMeetAgain: row.would_meet_again,
+    safetyConcern: row.safety_concern,
+    notes: row.notes,
+    createdAt: row.created_at,
+  };
+}
+
+const FeedbackInputSchema = z.object({
+  positive: z.boolean(),
+  wouldMeetAgain: z.boolean().optional(),
+  safetyConcern: z.boolean().optional(),
+  notes: z.string().max(2000).optional(),
+});
+
+export async function submitPostDateFeedback(
+  ctx: Ctx,
+  dateProposalId: string,
+  input: { positive: boolean; wouldMeetAgain?: boolean; safetyConcern?: boolean; notes?: string },
+): Promise<PostDateFeedback> {
+  const row = await loadProposalRow(ctx, dateProposalId);
+  const userId = assertParticipant(ctx, row);
+  if (row.status !== 'completed' && row.status !== 'completed_unverified') {
+    throw new ConflictError('Post-date feedback can only be submitted for a completed date');
+  }
+  const parsed = FeedbackInputSchema.parse(input);
+
+  const { rows } = await ctx.db.query<PostDateFeedbackRow>(
+    `INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, would_meet_again, safety_concern, notes)
+     VALUES ($1, $2, $3, $4, $5, $6)
+     ON CONFLICT (date_proposal_id, user_id) DO UPDATE SET
+       positive = EXCLUDED.positive, would_meet_again = EXCLUDED.would_meet_again,
+       safety_concern = EXCLUDED.safety_concern, notes = EXCLUDED.notes
+     RETURNING *`,
+    [dateProposalId, userId, parsed.positive, parsed.wouldMeetAgain ?? null, parsed.safetyConcern ?? false, parsed.notes ?? null],
+  );
+  return mapFeedback(rows[0]!);
+}
+
+// =====================================================================
+// getDateProposal
+// =====================================================================
 
 export async function getDateProposal(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
-  throw new NotImplementedError('dateProposal.getDateProposal');
+  const row = await loadProposalRow(ctx, dateProposalId);
+  if (ctx.actor.type === 'admin' || ctx.actor.type === 'system') return mapProposal(row);
+  assertParticipant(ctx, row);
+  return mapProposal(row);
 }
+
+// =====================================================================
+// expireDuePendingProposals — §25.2 job
+// =====================================================================
 
 /** §25.2 job: pending_acceptance proposals past `policySnapshot['date.accept_expiry_hours']` -> 'expired', release the proposer's hold. */
 export async function expireDuePendingProposals(ctx: Ctx): Promise<{ expired: number }> {
-  throw new NotImplementedError('dateProposal.expireDuePendingProposals');
+  const { rows } = await ctx.db.query<DateProposalRow>(`SELECT * FROM date_proposals WHERE status = 'pending_acceptance'`);
+
+  let expired = 0;
+  const now = ctx.clock.now();
+  for (const row of rows) {
+    const expiryHours = row.policy_snapshot['date.accept_expiry_hours'];
+    const deadline = addHours(row.created_at, expiryHours);
+    if (now.getTime() < deadline.getTime()) continue;
+
+    const proposerHold = await getHoldRow(ctx, row.id, row.proposer_id);
+    if (proposerHold?.status === 'authorized') await paymentService.releaseHold(ctx, proposerHold.id);
+
+    assertTransition('pending_acceptance', 'expired');
+    await setStatus(ctx, row.id, 'expired', 'expired_at');
+    await notifyBestEffort(ctx, { userId: row.proposer_id, eventType: 'payment_failed', channel: 'in_app', payload: { dateProposalId: row.id, reason: 'expired' } });
+    expired++;
+  }
+  return { expired };
 }
 
-/** Admin/automated no-show marking (spec §13.3 `no_show`, feeds `trust.service.ts` negative factors, §6.2). Applies the `no_show_refund_percent` policy from the proposal's own snapshot. */
+// =====================================================================
+// markNoShow
+// =====================================================================
+
+/** Admin/automated no-show marking (spec §13.3 `no_show`, feeds `trust.service.ts` negative factors, §6.2). Applies the `no_show_refund_percent` policy from the proposal's own snapshot: the no-show party forfeits that percent (default 0 = forfeits everything); the other party is refunded in full. */
 export async function markNoShow(ctx: Ctx, dateProposalId: string, noShowUserId: string): Promise<DateProposal> {
-  throw new NotImplementedError('dateProposal.markNoShow');
+  if (ctx.actor.type !== 'admin' && ctx.actor.type !== 'system') {
+    throw new ForbiddenError('Only admin/system actors can mark a no-show');
+  }
+  const row = await loadProposalRow(ctx, dateProposalId);
+  assertTransition(row.status, 'no_show');
+  if (noShowUserId !== row.proposer_id && noShowUserId !== row.recipient_id) {
+    throw new ValidationError('noShowUserId must be a participant in this date proposal');
+  }
+  const otherUserId = noShowUserId === row.proposer_id ? row.recipient_id : row.proposer_id;
+  const noShowPercent = row.policy_snapshot['date.no_show_refund_percent'];
+
+  const noShowHold = await getHoldRow(ctx, dateProposalId, noShowUserId);
+  if (noShowHold?.status === 'captured') {
+    const refundAmount = percentOfCents(Number(noShowHold.amount_cents), noShowPercent);
+    if (refundAmount > 0) await paymentService.refundHold(ctx, noShowHold.id, refundAmount);
+  }
+  const otherHold = await getHoldRow(ctx, dateProposalId, otherUserId);
+  if (otherHold?.status === 'captured') {
+    await paymentService.refundHold(ctx, otherHold.id, Number(otherHold.amount_cents));
+  }
+
+  const voucher = await getVoucherRow(ctx, dateProposalId);
+  if (voucher && voucher.status === 'issued') await voucherService.cancelVoucher(ctx, voucher.id);
+
+  const updated = await setStatus(ctx, dateProposalId, 'no_show');
+  await recordTrustEventBestEffort(ctx, { userId: noShowUserId, eventType: 'no_show', delta: -8, metadata: { dateProposalId } });
+  return mapProposal(updated);
 }
+
+// =====================================================================
+// markCompletedByRedemption
+// =====================================================================
 
 /**
  * Called by `redemption.service.ts` only, immediately after a successful
@@ -122,9 +735,14 @@ export async function markNoShow(ctx: Ctx, dateProposalId: string, noShowUserId:
  * `completed_at` — NOT `completed_unverified` (that's the separate
  * no-scan path via `confirmAttendance`). Establishing the conversation and
  * firing trust events are `redemption.service.ts`'s responsibility, not
- * this function's, since they also apply to actions outside this module's
- * ownership (venue staff identity).
+ * this function's. Uses `ctx.db` exactly as given — never opens its own
+ * transaction, and never calls `ctx.payments` (no processor interaction
+ * belongs on the redemption path itself; venue settlement is out of the
+ * user-facing escrow's scope, see `redemption.service.ts`).
  */
 export async function markCompletedByRedemption(ctx: Ctx, dateProposalId: string): Promise<DateProposal> {
-  throw new NotImplementedError('dateProposal.markCompletedByRedemption');
+  const row = await loadProposalRow(ctx, dateProposalId);
+  assertTransition(row.status, 'completed');
+  const updated = await setStatus(ctx, dateProposalId, 'completed', 'completed_at');
+  return mapProposal(updated);
 }
