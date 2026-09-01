@@ -59,13 +59,12 @@ import { evaluateMutualEligibility } from './eligibility.service.js';
  * §9.1/§9.4's hard-filter guarantee ("filters MUST be enforced strictly",
  * "mutual filter passing") is discovery's job at browse time (Layer 1,
  * `discovery.service.ts`, unmodified by this build — verified, not
- * rebuilt, by `tests/unit/eligibility.test.ts`). But a stale grid, a
- * direct profile link, or the recipient tightening their filters AFTER
- * the sender already saw a since-invalidated card all bypass Layer 1
- * entirely. Two more layers close that gap, both built on the single
- * shared check in `eligibility.service.ts#evaluateMutualEligibility`
- * (which itself just wraps `filter.service#passesMutualFilters` — never
- * a second, divergent implementation):
+ * rebuilt, by `tests/unit/eligibility.test.ts`). But a stale grid, or a
+ * direct profile link, bypasses Layer 1 entirely. One more layer closes
+ * that gap, built on the shared check in
+ * `eligibility.service.ts#evaluateMutualEligibility` (which itself just
+ * wraps `filter.service#passesMutualFilters` — never a second, divergent
+ * implementation):
  *
  *  - LAYER 2 (`sendInterest`, below): re-evaluates mutual eligibility
  *    FRESH, immediately before the interest row is inserted. If the
@@ -81,18 +80,58 @@ import { evaluateMutualEligibility } from './eligibility.service.js';
  *    them", "their inbox is full", or "they're at their chat cap" from
  *    each other, let alone learn *which* filter/attribute was involved —
  *    `evaluateMutualEligibility` never returns that detail even
- *    internally.
- *  - LAYER 3 (`sweepAutoDeclineForRecipient`/`sweepAutoDeclineAll`,
- *    bottom of this file): when a recipient's filters change, any
- *    PENDING incoming interest their new filters now exclude is
- *    auto-declined — `decline_origin = 'auto'` (see
- *    `db/migrations/010_eligibility.sql`) vs `'human'` for a real
- *    recipient decline, so trust scoring/analytics can tell them apart
- *    and an auto-decline never feeds the sender's trust score
- *    negatively. The sender sees the identical generic
- *    `interest_declined` notification either way (§11.4 "They passed on
- *    this match.") — `decline_origin` is never read by, or exposed
- *    through, any Interest-shaped return value in this file.
+ *    internally. This only ever affects an interest that does not exist
+ *    yet — it never touches a row already sitting in the table.
+ *
+ * ---------------------------------------------------------------------
+ * CORRECTION (product owner, after the original build shipped) — read
+ * this before touching anything below labeled "cleanup":
+ * ---------------------------------------------------------------------
+ * The original build also had a "Layer 3": any time a recipient's
+ * filters changed, every PENDING incoming interest their new filters now
+ * excluded was retroactively auto-declined, intended to run inline right
+ * after every filter save. That was a mistake, and it has been removed
+ * along with any wiring that would run it as a consequence of a filter
+ * update.
+ *
+ * The reasoning, preserved here so it isn't rediscovered the hard way:
+ * people change their filters constantly, for completely ordinary
+ * reasons — someone overwhelmed by too many options narrows things down
+ * for a while, then widens the filter back out later. A filter is a
+ * statement about what a person wants to see going FORWARD; it is not,
+ * and must never become, a retroactive judgment on interests that
+ * already exist. Auto-declining on a filter change destroys pending
+ * likes and (had it ever run against something already accepted, which
+ * it never did — see the test coverage) would have put conversations at
+ * risk too, for a reason the other person never did anything wrong to
+ * cause. That is a materially worse outcome than a slightly-stale inbox.
+ *
+ * What auto-decline was ever actually FOR — keeping a new batch of
+ * incoming likes close to a "yes" so ten likes reads as ten real
+ * prospects, not a chore — is fully delivered by LAYER 2 above, which
+ * only ever refuses a send that hasn't happened yet. Nothing already
+ * sitting in a recipient's inbox needs to be touched for that guarantee
+ * to hold.
+ *
+ * What's left of the old Layer 3 is `previewFilterCleanup` /
+ * `runFilterCleanup` at the bottom of this file: a real capability (a
+ * user narrowed their filters and genuinely wants to tidy a now-stale
+ * inbox), but now strictly OPT-IN — a user deliberately invokes it on
+ * their own inbox (see `src/http/routes/filters.routes.ts`'s
+ * `/me/filters/cleanup*` routes), it is never called as a side effect of
+ * `filter.service.ts#updateMyFilters` or anything else, and nothing
+ * schedules it (`src/jobs/**` has no entry for it — there is nothing to
+ * schedule). `decline_origin = 'auto'` (see
+ * `db/migrations/010_eligibility.sql`) is still stamped on a row this
+ * declines, distinguishing a user-invoked cleanup decline from a real
+ * `'human'` recipient decline, so trust scoring/analytics can tell them
+ * apart and a cleanup decline never feeds the sender's trust score
+ * negatively — exactly the same non-punitive treatment the old Layer 3
+ * gave it, just now only ever triggered by the recipient's own
+ * deliberate action. The sender sees the identical generic
+ * `interest_declined` notification either way (§11.4 "They passed on
+ * this match.") — `decline_origin` is never read by, or exposed through,
+ * any Interest-shaped return value in this file.
  */
 
 // ---------------------------------------------------------------------
@@ -166,8 +205,10 @@ interface InterestRow {
   canceled_at: Date | null;
   expired_at: Date | null;
   /**
-   * `'human'` for a real recipient decline, `'auto'` for Layer 3's
-   * retroactive sweep, `null` for every non-declined row (see
+   * `'human'` for a real recipient decline, `'auto'` for a recipient's
+   * own deliberately-invoked `runFilterCleanup` (see the file-level
+   * "CORRECTION" note — never written as a side effect of a filter
+   * update or by any job), `null` for every non-declined row (see
    * `db/migrations/010_eligibility.sql`). Deliberately NOT read by
    * `mapRow` below — this column is internal bookkeeping for trust
    * scoring/analytics (read directly off this table, same pattern
@@ -471,11 +512,11 @@ async function atomicTransition(
   const now = ctx.clock.now();
   const roleColumn = role === 'sender' ? 'sender_id' : 'recipient_id';
   // `to === 'declined'` is always the RECIPIENT explicitly declining via
-  // this path (see `declineInterest` below) — Layer 3's auto-decline
-  // sweep never goes through `atomicTransition`, it has its own UPDATE
+  // this path (see `declineInterest` below) — the opt-in filter-cleanup
+  // decline never goes through `atomicTransition`, it has its own UPDATE
   // that stamps `decline_origin = 'auto'` instead (see
-  // `sweepAutoDeclineForRecipient`). So a real human decline unconditionally
-  // stamps 'human' here.
+  // `runFilterCleanup`/`autoDeclineOne` below). So a real human decline
+  // unconditionally stamps 'human' here.
   const originClause = to === 'declined' ? `, decline_origin = 'human'` : '';
 
   const { rows } = await ctx.db.query<InterestRow>(
@@ -551,10 +592,23 @@ export async function expireDuePendingInterests(ctx: Ctx): Promise<{ expired: nu
 }
 
 // ---------------------------------------------------------------------
-// Layer 3 — retroactive auto-decline sweep (this build; see file-level
-// "MUTUAL-ELIGIBILITY ENFORCEMENT" note above). Not a §25 job in
-// INTERFACES.md's original list — this build's addition, reported to the
-// jobs agent for scheduling (`src/jobs/**` is not owned by this file).
+// Opt-in inbox cleanup (see file-level "CORRECTION" note above). Two
+// functions only, both scoped to the CALLING user's own inbox — neither
+// takes a `recipientId` parameter, so neither can be pointed at anyone
+// else's interests:
+//
+//   - `previewFilterCleanup` — read-only, no mutation. Tells the caller
+//     how many of their own PENDING incoming interests their CURRENT
+//     filters would decline, so they can see the count BEFORE deciding
+//     to run it.
+//   - `runFilterCleanup` — actually declines exactly that set.
+//
+// Neither is called from anywhere else in this codebase:
+// `filter.service.ts#updateMyFilters` has no reference to either, and
+// `src/jobs/**` has no entry for either — a user must explicitly invoke
+// one (see `src/http/routes/filters.routes.ts`'s `/me/filters/cleanup*`
+// routes) for anything to happen. Not a §25 job in INTERFACES.md's
+// original list, and deliberately never becomes one.
 // ---------------------------------------------------------------------
 
 interface PendingIncomingRow {
@@ -562,7 +616,7 @@ interface PendingIncomingRow {
   sender_id: string;
 }
 
-/** Every PENDING interest addressed to `recipientId` — just enough (`id`, `sender_id`) to re-check eligibility and decline per row without pulling full `Interest` data this sweep never returns to anyone. */
+/** Every PENDING interest addressed to `recipientId` — just enough (`id`, `sender_id`) to re-check eligibility and decline per row without pulling full `Interest` data this never returns to anyone. */
 async function loadPendingIncoming(ctx: Ctx, recipientId: string): Promise<PendingIncomingRow[]> {
   const { rows } = await ctx.db.query<PendingIncomingRow>(
     `SELECT id, sender_id FROM interests WHERE recipient_id = $1 AND status = 'pending'`,
@@ -580,7 +634,8 @@ async function loadPendingIncoming(ctx: Ctx, recipientId: string): Promise<Pendi
  * Notifies the sender with the IDENTICAL generic `interest_declined`
  * event/template a real human decline uses (§11.4 "They passed on this
  * match.") — `decline_origin` never appears in the notification payload,
- * so the sender cannot learn this was automatic.
+ * so the sender cannot learn this was a cleanup decline rather than a
+ * personal one.
  */
 async function autoDeclineOne(ctx: Ctx, interestId: string, senderId: string): Promise<boolean> {
   const now = ctx.clock.now();
@@ -601,17 +656,38 @@ async function autoDeclineOne(ctx: Ctx, interestId: string, senderId: string): P
 }
 
 /**
- * LAYER 3, single-recipient form: re-evaluates every one of
- * `recipientId`'s PENDING incoming interests against `recipientId`'s
+ * Read-only preview for the opt-in inbox cleanup: re-evaluates every one
+ * of the CALLING user's own PENDING incoming interests against their
  * CURRENT hard filters — via the exact same
- * `eligibility.service#evaluateMutualEligibility` Layers 1/2 rely on —
- * and auto-declines any sender who no longer passes. Intended to run
- * INLINE, immediately after a filter change commits for this user (spec
- * brief: "expose the same function so it can run inline right after a
- * filter update"). `filter.service.ts#updateMyFilters` is owned by
- * another agent and frozen per INTERFACES.md, so the call site that
- * invokes this after a filter change is NOT wired here — see this
- * build's report for the exact function name/signature to wire in.
+ * `eligibility.service#evaluateMutualEligibility` Layer 2 relies on — and
+ * counts how many a `runFilterCleanup` call would decline right now.
+ * Never writes anything; safe to call as often as the user opens their
+ * filter-cleanup screen, including immediately after saving a filter
+ * change, without side effects. This is what lets the UI say "this would
+ * decline 3 pending likes" BEFORE the user confirms.
+ */
+export async function previewFilterCleanup(ctx: Ctx): Promise<{ wouldDecline: number }> {
+  const { userId } = requireUserActor(ctx);
+  const pending = await loadPendingIncoming(ctx, userId);
+  let wouldDecline = 0;
+  for (const row of pending) {
+    const { eligible } = await evaluateMutualEligibility(ctx, row.sender_id, userId);
+    // `eligible` is also `true` when evaluation errored (fail-open — see
+    // eligibility.service.ts's doc): either way, don't count this row as
+    // "would decline" rather than risk overstating what cleanup would do.
+    if (!eligible) wouldDecline++;
+  }
+  return { wouldDecline };
+}
+
+/**
+ * Executes the opt-in inbox cleanup the user just previewed: declines
+ * every one of the CALLING user's own PENDING incoming interests that
+ * their CURRENT hard filters exclude, and leaves every other row —
+ * eligible pending interests, and anything already accepted/declined/
+ * expired/canceled — completely untouched. Only ever invoked explicitly
+ * (see the section-level note above); never a consequence of a filter
+ * update, never scheduled.
  *
  * An interest that was eligible when sent and REMAINS eligible is never
  * written to at all (no UPDATE even attempted) — it survives untouched,
@@ -626,44 +702,17 @@ async function autoDeclineOne(ctx: Ctx, interestId: string, senderId: string): P
  * query pattern; introducing a bulk mutual-filter primitive there is out
  * of this build's file ownership.
  */
-export async function sweepAutoDeclineForRecipient(ctx: Ctx, recipientId: string): Promise<{ declined: number }> {
-  const pending = await loadPendingIncoming(ctx, recipientId);
+export async function runFilterCleanup(ctx: Ctx): Promise<{ declined: number }> {
+  const { userId } = requireUserActor(ctx);
+  const pending = await loadPendingIncoming(ctx, userId);
   let declined = 0;
   for (const row of pending) {
-    const { eligible } = await evaluateMutualEligibility(ctx, row.sender_id, recipientId);
+    const { eligible } = await evaluateMutualEligibility(ctx, row.sender_id, userId);
     // `eligible` is also `true` when evaluation errored (fail-open — see
     // eligibility.service.ts's doc): either way, leave this row pending
-    // untouched rather than risk auto-declining a legitimate interest.
+    // untouched rather than risk declining a legitimate interest.
     if (eligible) continue;
     if (await autoDeclineOne(ctx, row.id, row.sender_id)) declined++;
   }
   return { declined };
-}
-
-/**
- * LAYER 3, all-recipients form: the periodic/background variant for
- * whichever job scheduler wires it in. `src/jobs/**` is owned by the
- * jobs agent, not this file — see this build's report for the function
- * name to register there; it is intentionally NOT self-registering.
- * Exists as defense-in-depth against the inline call site (above) never
- * firing for some reason (a filter write that bypassed
- * `updateMyFilters`, a missed wiring, a retry gap) — sweeps every
- * recipient who currently has at least one PENDING incoming interest,
- * not just whoever most recently changed their filters.
- *
- * Driven entirely by `ctx.clock`/the DB, no wall-clock reads, so tests
- * can move a `ManualClock` and re-run this deterministically.
- * Idempotent for the same reason `sweepAutoDeclineForRecipient` is —
- * each recipient's sub-sweep only touches its own still-pending rows.
- */
-export async function sweepAutoDeclineAll(ctx: Ctx): Promise<{ recipientsSwept: number; declined: number }> {
-  const { rows } = await ctx.db.query<{ recipient_id: string }>(
-    `SELECT DISTINCT recipient_id FROM interests WHERE status = 'pending'`,
-  );
-  let declined = 0;
-  for (const row of rows) {
-    const result = await sweepAutoDeclineForRecipient(ctx, row.recipient_id);
-    declined += result.declined;
-  }
-  return { recipientsSwept: rows.length, declined };
 }

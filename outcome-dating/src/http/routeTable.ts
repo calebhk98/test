@@ -56,6 +56,8 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   // ---- §24.4 Filters ----
   { method: 'GET', path: '/me/filters', spec: '§24.4, §9', role: 'user' },
   { method: 'PATCH', path: '/me/filters', spec: '§24.4, §9', role: 'user' },
+  { method: 'GET', path: '/me/filters/cleanup-preview', spec: 'product-owner correction (addition) — count-only preview of the opt-in pending-interest cleanup, see interest.service.ts', role: 'user', addition: true },
+  { method: 'POST', path: '/me/filters/cleanup', spec: 'product-owner correction (addition) — explicit, user-invoked pending-interest cleanup; never a side effect of a filter update, see interest.service.ts', role: 'user', addition: true },
 
   // ---- §24.5 Discovery ----
   { method: 'GET', path: '/discovery', spec: '§24.5, §10', role: 'user' },

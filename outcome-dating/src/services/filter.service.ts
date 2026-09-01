@@ -188,7 +188,23 @@ export function defaultExcludeIfUnset(_filterKey: string): boolean {
   return false;
 }
 
-/** Upserts the caller's filters. Does not cap the number of filter slots (spec §9.2 "do not block filter slots"). */
+/**
+ * Upserts the caller's filters. Does not cap the number of filter slots
+ * (spec §9.2 "do not block filter slots").
+ *
+ * DELIBERATELY HAS NO SIDE EFFECT on any existing interest, match, or
+ * conversation (product-owner correction — an earlier build had this
+ * retroactively auto-decline the caller's now-ineligible PENDING
+ * incoming interests; that has been removed, and must not be re-added
+ * here). Saving a filter change is not a judgment on relationships that
+ * already exist — people narrow and widen their filters for ordinary
+ * reasons, and doing so must never destroy a pending like or a
+ * conversation. A user who genuinely wants to tidy their inbox after
+ * narrowing their filters can do that explicitly and separately via
+ * `interest.service.ts#previewFilterCleanup` / `runFilterCleanup` (see
+ * that file's "CORRECTION" note for the full reasoning) — this function
+ * must never call either, or anything like them, itself.
+ */
 export async function updateMyFilters(ctx: Ctx, filters: UpdateFilterInput[]): Promise<HardFilterWithUnsetPolicy[]> {
   const { userId } = requireUserActor(ctx);
   const parsed = z.array(updateFilterInputSchema).parse(filters);

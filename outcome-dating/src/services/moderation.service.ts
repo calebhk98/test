@@ -237,10 +237,13 @@ export async function applyThresholds(ctx: Ctx, userId: string): Promise<Moderat
   // A minor_suspected report from a non-credible (brand-new, untrusted,
   // or previously-abusive) reporter, with no credible reporter yet
   // involved at all, deliberately does NOT drive `minorSuspectedAction`
-  // here — it still exists on the `reports` row and still fed
-  // `computeModerationScore` via `submitReport`'s ordinary automated
-  // flag, so `scoreBasedAction` can still act on it through the normal
-  // ladder; it just never gets this category's special-cased fast path.
+  // here. Unlike every other report category, `minor_suspected` reports
+  // are deliberately excluded from `computeModerationScore`'s general
+  // flag pool entirely (see `report.service#submitReport`'s own note) —
+  // this category's escalation is governed exclusively by this
+  // corroboration model, never by the ordinary score ladder, so a single
+  // report (from any reporter, however trusted) cannot reach suspension
+  // through either door.
 
   // ---- combine: never LESS protective than either path alone ----
   let targetAction: ModerationActionType;

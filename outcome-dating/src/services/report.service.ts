@@ -235,16 +235,31 @@ export async function submitReport(ctx: Ctx, input: SubmitReportInput): Promise<
   // conversation for automated investigation".
   const report = rowToReport(rows[0]!);
 
-  const weight = await scoreReport(ctx, report);
-  await moderation.recordAutomatedFlag(ctx, {
-    userId: report.reportedId,
-    signalType: 'user_report',
-    weight,
-    // reporterId is retained here for automated-investigation traceability
-    // (admin-viewable per §4.3/§27) — never returned to the reported user
-    // by any export in this file or moderation.service.ts.
-    metadata: { reportId: report.id, category: report.category, reporterId: report.reporterId },
-  });
+  // SAF-1 fix: `minor_suspected` deliberately does NOT push a
+  // `recordAutomatedFlag` entry into the general score-ladder pool. That
+  // category's `scoreReport` weight is the highest of any category by a
+  // wide margin (spec §18.3/§18.5's own "maximum severity" instinct) —
+  // feeding it into `computeModerationScore` unconditionally would let a
+  // single high-trust reporter's report cross `moderation.
+  // auto_suspension_score` through the ORDINARY ladder alone, silently
+  // recreating the exact one-report-suspends bug this build fixes, just
+  // through a different door. `moderation.service#applyThresholds` still
+  // evaluates this category on every call via `report.assessMinorSuspected`
+  // (see that function's module doc for the full corroboration model) —
+  // every other category is unaffected and still feeds the general ladder
+  // exactly as before.
+  if (parsed.category !== 'minor_suspected') {
+    const weight = await scoreReport(ctx, report);
+    await moderation.recordAutomatedFlag(ctx, {
+      userId: report.reportedId,
+      signalType: 'user_report',
+      weight,
+      // reporterId is retained here for automated-investigation traceability
+      // (admin-viewable per §4.3/§27) — never returned to the reported user
+      // by any export in this file or moderation.service.ts.
+      metadata: { reportId: report.id, category: report.category, reporterId: report.reporterId },
+    });
+  }
   await moderation.applyThresholds(ctx, report.reportedId);
 
   return report;
