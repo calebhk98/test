@@ -10,6 +10,7 @@
  * same shared dev Postgres cluster.
  */
 import pg from 'pg';
+import { randomUUID } from 'node:crypto';
 import { runMigrations } from '../../src/db/migrate.js';
 import { getPool, closePool } from '../../src/db/pool.js';
 import { ConfigService } from '../../src/config/config.service.js';
@@ -24,6 +25,22 @@ import type { TrustLevel } from '../../src/domain/types.js';
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 /** Base name for this agent's test databases — each of the (separately-processed, per Node's default test-file isolation) `tests/unit/*.test.ts` files must still pass its own unique `suffix` to `setupTestDatabase`, or two of *this agent's own* test files running concurrently will race DROP/CREATE DATABASE against each other on the shared dev Postgres cluster. */
 const AGENT_A_DB_BASE_NAME = 'odate_agent_a';
+/**
+ * Per-process random suffix, appended to every database name below. A
+ * `<prefix>_<suffix>` name is unique WITHIN one `npm test` run (Node's
+ * test runner gives each `*.test.ts` file its own process), but every
+ * harness in this repo previously computed the same name on every run —
+ * so two *overlapping* `npm test` invocations (this repo's test suite is
+ * routinely run by more than one agent at once against the same shared
+ * dev Postgres cluster on port 55433) would DROP a database the other
+ * still had a live connection to, surfacing as an intermittent, run-
+ * dependent "database does not exist" / "terminating connection due to
+ * administrator command" error in whichever run lost the race
+ * (test-audit.md's database-race item). Folding a fresh random id into
+ * the name for the life of this process removes the collision at its
+ * root, without changing any exported signature.
+ */
+const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
@@ -37,7 +54,7 @@ let currentDbName: string | undefined;
 
 /** Ensures `odate_agent_a_<suffix>` exists (fresh schema each run) and runs migrations against it. Call once from a suite's `before`, passing a `suffix` unique to that test file (e.g. `'auth'`, `'profile'`). */
 export async function setupTestDatabase(suffix: string): Promise<pg.Pool> {
-  const dbName = `${AGENT_A_DB_BASE_NAME}_${suffix}`;
+  const dbName = `${AGENT_A_DB_BASE_NAME}_${suffix}_${RUN_SUFFIX}`;
   currentDbName = dbName;
 
   adminPool = new pg.Pool({ connectionString: BASE_URL });

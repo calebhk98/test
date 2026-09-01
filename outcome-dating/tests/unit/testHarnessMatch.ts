@@ -12,6 +12,7 @@
  * race DROP/CREATE DATABASE against the same name.
  */
 import pg from 'pg';
+import { randomUUID } from 'node:crypto';
 import { runMigrations } from '../../src/db/migrate.js';
 import { closePool, getPool } from '../../src/db/pool.js';
 import { ConfigService } from '../../src/config/config.service.js';
@@ -26,6 +27,8 @@ import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item). */
+const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
@@ -43,7 +46,7 @@ export interface TestDb {
 
 /** Creates a fresh, migrated, config/flag-seeded database named `odate_match_<suite>`. */
 export async function setupTestDb(suite: string): Promise<TestDb> {
-  const dbName = `odate_match_${suite}`;
+  const dbName = `odate_match_${suite}_${RUN_SUFFIX}`;
   const adminPool = new pg.Pool({ connectionString: ADMIN_BASE_URL });
   await adminPool.query(
     `SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = $1 AND pid <> pg_backend_pid()`,

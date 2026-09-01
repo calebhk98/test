@@ -13,6 +13,7 @@
  * DATABASE against a shared name.
  */
 import pg from 'pg';
+import { randomUUID } from 'node:crypto';
 import { runMigrations } from '../../src/db/migrate.js';
 import { getPool, closePool } from '../../src/db/pool.js';
 import { ConfigService } from '../../src/config/config.service.js';
@@ -26,6 +27,8 @@ import type { TrustLevel } from '../../src/domain/types.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const AGENT_C_DB_PREFIX = 'odate_agent_c';
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — this repo's test suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `<prefix>_<suite>` name is only unique WITHIN one run, not across overlapping runs; this closes that race at its root. */
+const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
@@ -39,7 +42,7 @@ let dbName: string | undefined;
 
 /** Ensures `odate_agent_c_<suite>` exists (fresh schema each run) and runs migrations against it. Call once from a suite's `before`, with a `suite` name unique per test file so concurrently-run test files never race on the same database. */
 export async function setupTestDatabase(suite: string): Promise<pg.Pool> {
-  dbName = `${AGENT_C_DB_PREFIX}_${suite}`;
+  dbName = `${AGENT_C_DB_PREFIX}_${suite}_${RUN_SUFFIX}`;
   adminPool = new pg.Pool({ connectionString: BASE_URL });
   await adminPool.query(
     `SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = $1 AND pid <> pg_backend_pid()`,

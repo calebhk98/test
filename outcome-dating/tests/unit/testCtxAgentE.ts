@@ -29,6 +29,8 @@ import type { TrustLevel } from '../../src/domain/types.js';
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 /** Base name from the build brief ("Use your OWN database odate_agent_e"). Node's test runner runs separate `*.test.ts` files concurrently in separate processes by default, so each of this agent's four suites gets its own `odate_agent_e_<suite>` database (see `setupTestDatabase`'s `suite` param) rather than racing DROP/CREATE DATABASE against each other on one shared name. */
 const AGENT_E_DB_PREFIX = 'odate_agent_e';
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item), which a bare `<prefix>_<suite>` name is exposed to whenever more than one agent runs this suite against the shared dev Postgres cluster at once. */
+const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
@@ -42,7 +44,7 @@ let dbName: string | undefined;
 
 /** Ensures `odate_agent_e_<suite>` exists (fresh schema each run) and runs migrations against it. Call once from a suite's `before`, with a `suite` name unique per test file (e.g. 'trust', 'moderation') so concurrently-run test files never race on the same database. */
 export async function setupTestDatabase(suite: string): Promise<pg.Pool> {
-  dbName = `${AGENT_E_DB_PREFIX}_${suite}`;
+  dbName = `${AGENT_E_DB_PREFIX}_${suite}_${RUN_SUFFIX}`;
   adminPool = new pg.Pool({ connectionString: BASE_URL });
   await adminPool.query(
     `SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = $1 AND pid <> pg_backend_pid()`,

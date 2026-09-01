@@ -10,6 +10,7 @@
  * Not itself a `*.test.ts` file, so `node --test` does not try to run it.
  */
 import pg from 'pg';
+import { randomUUID } from 'node:crypto';
 import { runMigrations } from '../../src/db/migrate.js';
 import { closePool, getPool } from '../../src/db/pool.js';
 import { ConfigService } from '../../src/config/config.service.js';
@@ -21,6 +22,8 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/odate_agent_d';
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item): this suite is routinely run by more than one agent at once against the same shared dev Postgres cluster, and a bare `<prefix>_<suffix>` name is only unique within a single run. */
+const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
@@ -38,7 +41,7 @@ export interface TestDb {
 
 /** Creates a fresh, migrated, config-seeded database named `odate_agent_d_<suffix>`. */
 export async function setupTestDb(suffix: string): Promise<TestDb> {
-  const dbName = `odate_agent_d_${suffix}`;
+  const dbName = `odate_agent_d_${suffix}_${RUN_SUFFIX}`;
   const adminPool = new pg.Pool({ connectionString: ADMIN_BASE_URL });
   await adminPool.query(`DROP DATABASE IF EXISTS ${dbName}`);
   await adminPool.query(`CREATE DATABASE ${dbName}`);

@@ -12,6 +12,7 @@
  * files concurrently in separate processes by default.
  */
 import pg from 'pg';
+import { randomUUID } from 'node:crypto';
 import { runMigrations } from '../../src/db/migrate.js';
 import { getPool, closePool } from '../../src/db/pool.js';
 import { ConfigService } from '../../src/config/config.service.js';
@@ -25,6 +26,8 @@ import type { TrustLevel } from '../../src/domain/types.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const DB_PREFIX = 'odate_elig';
+/** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note) — closes the cross-run database-name-collision race (test-audit.md's database-race item). */
+const RUN_SUFFIX = randomUUID().replace(/-/g, '').slice(0, 8);
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);
@@ -38,7 +41,7 @@ let dbName: string | undefined;
 
 /** Ensures `odate_elig_<suite>` exists (fresh schema each run) and runs migrations against it. Call once from a suite's `before`, with a `suite` name unique per test file. */
 export async function setupTestDatabase(suite: string): Promise<pg.Pool> {
-  dbName = `${DB_PREFIX}_${suite}`;
+  dbName = `${DB_PREFIX}_${suite}_${RUN_SUFFIX}`;
   adminPool = new pg.Pool({ connectionString: BASE_URL });
   await adminPool.query(
     `SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = $1 AND pid <> pg_backend_pid()`,
