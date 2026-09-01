@@ -185,7 +185,7 @@ export async function respondToSuggestion(ctx: Ctx, suggestionId: string, respon
   }
 
   if (response.selfValue === undefined || response.partnerValue === undefined) {
-    throw new ValidationError('Both selfValue and partnerValue are required when not skipping (§8.1 dual answer)', {
+    throw new ValidationError('Please answer both parts of this question, or skip it for now.', {
       suggestionId,
     });
   }

@@ -185,7 +185,7 @@ export async function putMyAnswers(ctx: Ctx, answers: AnswerInput[]): Promise<An
     }
     if (!question.sensitive && (input.selfValue === null || input.partnerValue === null)) {
       throw new ValidationError(
-        '"Prefer not to say" is only available on sensitive questions (§8.5); both self and partner answers are required here.',
+        '"Prefer not to say" is not an option on this question. Please answer both parts, or skip it for now.',
         { questionId: input.questionId },
       );
     }
@@ -421,7 +421,7 @@ function userFacingText(maxLen: number) {
     .min(1)
     .max(maxLen)
     .refine((s) => !NO_SECTION_MARK.test(s), {
-      message: 'user-facing text must not contain a section mark (§) or reference a spec document',
+      message: 'Question and label text must not contain a section mark or refer to an internal document.',
     });
 }
 
