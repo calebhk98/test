@@ -154,16 +154,24 @@ export async function createVenue(t: TestApp, overrides?: { active?: boolean; na
   return rows[0]!.id;
 }
 
-/** Inserts a question directly (bypassing admin routes) for tests that need answers on the books quickly. */
+/**
+ * Inserts a `scale`-type row directly into the ONE typed question bank
+ * (question_bank/user_question_answers, db/migrations/008_questions.sql)
+ * for tests that need a question on the books quickly, bypassing the
+ * admin routes (`tests/http/admin.test.ts` is the dedicated coverage for
+ * those). Replaces this file's OLD `INSERT INTO questions` helper — that
+ * table no longer exists (db/migrations/022_drop_old_question_bank.sql).
+ */
 export async function insertQuestion(
   t: TestApp,
-  overrides: { slug: string; weight?: number; sensitive?: boolean },
+  overrides: { slug: string; baseWeight?: number; sensitive?: boolean },
 ): Promise<string> {
+  const typeDefinition = { type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' };
   const { rows } = await t.pool.query<{ id: string }>(
-    `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
-     VALUES ($1, 'test', $1, 'left', 'right', 'left', 'right', $2, 'standard', $3, true)
+    `INSERT INTO question_bank (slug, version, is_current, category, question_type, question_text, type_definition, base_weight, sensitive, active)
+     VALUES ($1, 1, true, 'test', 'scale', $1, $2::jsonb, $3, $4, true)
      RETURNING id`,
-    [overrides.slug, overrides.weight ?? 1, overrides.sensitive ?? false],
+    [overrides.slug, JSON.stringify(typeDefinition), overrides.baseWeight ?? 1, overrides.sensitive ?? false],
   );
   return rows[0]!.id;
 }

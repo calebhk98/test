@@ -157,21 +157,31 @@ async function trustEventsFor(userId: string): Promise<Array<{ event_type: strin
   return rows;
 }
 
-async function insertQuestion(slug: string): Promise<string> {
-  const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label)
-     VALUES ($1, 'lifestyle', 'Test question', 'low', 'high', 'low', 'high')
-     RETURNING id`,
-    [slug],
-  );
-  return rows[0]!.id;
+interface TestQuestion {
+  id: string;
+  slug: string;
 }
 
-async function upsertAnswer(userId: string, questionId: string, selfValue: number, partnerValue: number): Promise<void> {
+/** Inserts a `scale`-type row into the ONE typed question bank (question_bank/user_question_answers, db/migrations/008_questions.sql) — replaces the OLD `questions` table this used to target. */
+async function insertQuestion(slug: string): Promise<TestQuestion> {
+  const typeDefinition = { type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' };
+  const { rows } = await pool.query<{ id: string }>(
+    `INSERT INTO question_bank (slug, version, is_current, category, question_type, question_text, type_definition, active)
+     VALUES ($1, 1, true, 'lifestyle', 'scale', 'Test question', $2::jsonb, true)
+     RETURNING id`,
+    [slug, JSON.stringify(typeDefinition)],
+  );
+  return { id: rows[0]!.id, slug };
+}
+
+/** `selfValue`/`preferenceValue` are the new bank's self/preference axis on a `scale` question (1-5) — direct replacement for the OLD `answers.self_value`/`answers.partner_value` this used to write. */
+async function upsertAnswer(userId: string, question: TestQuestion, selfValue: number, preferenceValue: number): Promise<void> {
   await pool.query(
-    `INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, $3, $4)
-     ON CONFLICT (user_id, question_id) DO UPDATE SET self_value = EXCLUDED.self_value, partner_value = EXCLUDED.partner_value`,
-    [userId, questionId, selfValue, partnerValue],
+    `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+     VALUES ($1, $2, $3, 'answered', $4::jsonb, $5::jsonb, 'slight', now(), now())
+     ON CONFLICT (user_id, question_slug) DO UPDATE SET
+       self_value = EXCLUDED.self_value, preference_value = EXCLUDED.preference_value, updated_at = now()`,
+    [userId, question.slug, question.id, JSON.stringify(selfValue), JSON.stringify(preferenceValue)],
   );
 }
 
@@ -621,26 +631,29 @@ test('the prompt sweep sends nothing while the feature flag is disabled', async 
 // Matching signal: produces a question, never a silent change
 // =====================================================================
 
-test('the matching-signal sweep creates a pending behavioral_prompt_suggestions row and never touches answers directly', async () => {
+test('the matching-signal sweep creates a pending behavioral_prompt_suggestions row and never touches user_question_answers directly', async () => {
   await flags.setFlag(KNOWN_FLAGS.POST_DATE_FEEDBACK, { enabled: true, rolloutPercent: 100 });
   await flags.setFlag(KNOWN_FLAGS.BEHAVIORAL_QUESTION_PROMPTS, { enabled: true, rolloutPercent: 100 });
 
   const user = await insertUser();
-  const questionId = await insertQuestion(`matching-signal-${Date.now()}`);
+  const question = await insertQuestion(`matching-signal-${Date.now()}`);
   // User states they want a partner who scores LOW (1) on this axis...
-  await upsertAnswer(user, questionId, 3, 1);
+  await upsertAnswer(user, question, 3, 1);
 
   // ...but every one of their GOOD dates was with a partner who scores
   // HIGH (5) — a real divergence between stated preference and what
   // actually correlates with a good outcome.
   for (let i = 0; i < postDateFeedback.MIN_GOOD_DATES_FOR_MATCHING_SIGNAL; i++) {
     const partner = await insertUser();
-    await upsertAnswer(partner, questionId, 5, 3);
+    await upsertAnswer(partner, question, 5, 3);
     const { id } = await insertDateProposal(user, partner);
     await postDateFeedback.submitCheckIn(ctxFor(userActor(user)), id, { outcome: 'happened_good' });
   }
 
-  const beforeAnswer = await pool.query('SELECT self_value, partner_value FROM answers WHERE user_id = $1 AND question_id = $2', [user, questionId]);
+  const beforeAnswer = await pool.query(
+    'SELECT self_value, preference_value FROM user_question_answers WHERE user_id = $1 AND question_slug = $2',
+    [user, question.slug],
+  );
 
   const result = await postDateFeedback.runMatchingSignalSweep(ctxFor({ type: 'system', job: 'test' }));
   assert.ok(result.suggestionsCreated >= 1);
@@ -652,11 +665,14 @@ test('the matching-signal sweep creates a pending behavioral_prompt_suggestions 
   assert.equal(rows.length, 1);
   assert.equal((rows[0] as { status: string }).status, 'pending', 'must be a pending QUESTION, never an auto-applied answer');
   assert.equal((rows[0] as { trigger_kind: string }).trigger_kind, 'post_date_outcome');
-  assert.equal((rows[0] as { question_id: string }).question_id, questionId);
+  assert.equal((rows[0] as { question_id: string }).question_id, question.id);
 
   // The user's stated answer must be byte-for-byte unchanged — this
-  // module never silently rewrites `answers` or sorting.
-  const afterAnswer = await pool.query('SELECT self_value, partner_value FROM answers WHERE user_id = $1 AND question_id = $2', [user, questionId]);
+  // module never silently rewrites `user_question_answers` or sorting.
+  const afterAnswer = await pool.query(
+    'SELECT self_value, preference_value FROM user_question_answers WHERE user_id = $1 AND question_slug = $2',
+    [user, question.slug],
+  );
   assert.deepEqual(afterAnswer.rows[0], beforeAnswer.rows[0]);
 });
 
@@ -665,12 +681,12 @@ test('the matching-signal sweep creates nothing for a user with too few good-out
   await flags.setFlag(KNOWN_FLAGS.BEHAVIORAL_QUESTION_PROMPTS, { enabled: true, rolloutPercent: 100 });
 
   const user = await insertUser();
-  const questionId = await insertQuestion(`matching-signal-small-${Date.now()}`);
-  await upsertAnswer(user, questionId, 3, 3);
+  const question = await insertQuestion(`matching-signal-small-${Date.now()}`);
+  await upsertAnswer(user, question, 3, 3);
 
   // Only ONE good date — below MIN_GOOD_DATES_FOR_MATCHING_SIGNAL.
   const partner = await insertUser();
-  await upsertAnswer(partner, questionId, 3, 3); // and no divergence anyway
+  await upsertAnswer(partner, question, 3, 3); // and no divergence anyway
   const { id } = await insertDateProposal(user, partner);
   await postDateFeedback.submitCheckIn(ctxFor(userActor(user)), id, { outcome: 'happened_good' });
 

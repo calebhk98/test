@@ -43,7 +43,7 @@ interface BankQuestionOpts {
   baseWeight?: number;
 }
 
-/** Inserts a typed-bank question directly (there is no public HTTP route to author one — §27's admin question manager still edits the OLD bank, see question.service.ts's file-level CUTOVER doc — so this mirrors `tests/http/testServer.ts#insertQuestion`'s pattern for the old bank). */
+/** Inserts a typed-bank question directly, bypassing the admin routes — `tests/http/admin.test.ts` is the dedicated coverage for `POST /admin/questions`/`PATCH /admin/questions/:id`; this file only needs bank rows to already exist. */
 async function insertBankQuestion(opts: BankQuestionOpts): Promise<string> {
   const { rows } = await t.pool.query<{ id: string }>(
     `INSERT INTO question_bank (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)

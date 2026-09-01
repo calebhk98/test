@@ -63,7 +63,7 @@ test('Layer 1 (discovery): A (deal breaker: no kids) never sees B (has kids), an
   const b = await makeUser(pool, { age: 30 });
 
   // A's deal breaker: only match people scoring <= 2 on has_children (i.e. "no kids").
-  await setHardFilter(pool, a, 'has_children', 'lte', 2);
+  await setHardFilter(pool, a, 'qb:has_children', 'lte', 2);
   // B scores 5 on has_children ("has kids").
   await setSelfAnswer(pool, b, 'has_children', 5);
 
@@ -84,7 +84,7 @@ test('Layer 1 (discovery): an eligible pair (no deal breaker in play) DOES see e
   const pool = getTestPool();
   const c = await makeUser(pool, { age: 30 });
   const d = await makeUser(pool, { age: 30 });
-  await setHardFilter(pool, c, 'has_children', 'lte', 2);
+  await setHardFilter(pool, c, 'qb:has_children', 'lte', 2);
   await setSelfAnswer(pool, d, 'has_children', 1); // "no kids" — passes C's filter
 
   const cGrid = await getDiscoveryGrid(ctxFor(c), {});
@@ -99,7 +99,7 @@ test('Layer 2: sendInterest refuses a doomed send (direct link / stale-grid bypa
   const pool = getTestPool();
   const a = await makeUser(pool, { age: 30 });
   const b = await makeUser(pool, { age: 30 });
-  await setHardFilter(pool, a, 'has_children', 'lte', 2);
+  await setHardFilter(pool, a, 'qb:has_children', 'lte', 2);
   await setSelfAnswer(pool, b, 'has_children', 5); // has kids — fails A's filter
 
   // B tries to send an interest straight to A (e.g. via a direct profile
@@ -114,7 +114,7 @@ test('Layer 2: refusal does NOT consume the sender\'s outgoing slot or daily quo
   const pool = getTestPool();
   const sender = await makeUser(pool, { age: 30 });
   const ineligibleRecipient = await makeUser(pool, { age: 30 });
-  await setHardFilter(pool, ineligibleRecipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, ineligibleRecipient, 'qb:has_children', 'lte', 2);
   await setSelfAnswer(pool, sender, 'has_children', 5);
 
   // Two refused sends in a row.
@@ -142,7 +142,7 @@ test('Layer 2: privacy — the refusal is byte-identical (message AND details) n
   await setHardFilter(pool, byAge, 'age_min', 'gte', 99); // sender's age will never satisfy this
 
   const byChildren = await makeUser(pool, { age: 30 });
-  await setHardFilter(pool, byChildren, 'has_children', 'lte', 1);
+  await setHardFilter(pool, byChildren, 'qb:has_children', 'lte', 1);
 
   const byGender = await makeUser(pool, { age: 30 });
   await setHardFilter(pool, byGender, 'gender_preference', 'eq', 'nonbinary');
@@ -174,7 +174,7 @@ test('Layer 2: privacy — the refusal is byte-identical (message AND details) n
   // positive against the *shape* of the response, not its content.)
   assert.equal(caught[0]!.message, interestService.RECIPIENT_UNAVAILABLE_MESSAGE);
   const contentOnly = `${caught[0]!.message} ${JSON.stringify(caught[0]!.details)}`.toLowerCase();
-  for (const forbidden of ['age_min', 'age_max', 'has_children', 'gender_preference', 'filter', '§', 'section']) {
+  for (const forbidden of ['age_min', 'age_max', 'qb:has_children', 'gender_preference', 'filter', '§', 'section']) {
     assert.ok(!contentOnly.includes(forbidden.toLowerCase()), `refusal payload must not mention "${forbidden}": ${contentOnly}`);
   }
 });
@@ -203,7 +203,7 @@ test('evaluateMutualEligibility: ineligible pair returns eligible:false, evaluat
   const pool = getTestPool();
   const a = await makeUser(pool, { age: 30 });
   const b = await makeUser(pool, { age: 30 });
-  await setHardFilter(pool, a, 'has_children', 'lte', 1);
+  await setHardFilter(pool, a, 'qb:has_children', 'lte', 1);
   await setSelfAnswer(pool, b, 'has_children', 5);
   const result = await evaluateMutualEligibility(ctxFor(a), a, b);
   assert.deepEqual(result, { eligible: false, evaluatedOk: true });

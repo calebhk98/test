@@ -3,9 +3,9 @@
  *
  * `evaluateFilter`/`haversineKm` are pure (no I/O). Everything else here
  * (`passesMutualFilters`, the reality-dashboard counts) needs real
- * `hard_filters`/`profiles`/`answers` rows, so it runs against a dedicated
- * Postgres database (`outcome_dating_test_filter`), same pattern as
- * `tests/foundation.test.ts`.
+ * `hard_filters`/`profiles`/`user_question_answers` rows, so it runs
+ * against a dedicated Postgres database (`outcome_dating_test_filter`),
+ * same pattern as `tests/foundation.test.ts`.
  *
  * The headline invariant this file exists to prove (spec §9.1 / the task
  * brief's "hard filters beat a perfect compatibility score"): a candidate
@@ -554,30 +554,48 @@ test('evaluateFilterPairsBatch: honors excludeIfUnset per owner filter for a qb:
   assert.ok(!strict.has(neverAnsweredSmoking), 'excludeIfUnset:true must exclude an unresolved candidate, batched');
 });
 
-test('evaluateFilterPairsBatch: a bare (non-qb:, non-structured) filter key still resolves against the OLD bank — kept for backward compatibility, see filter.service.ts\'s QUESTION-SYSTEM CUTOVER doc', async () => {
-  const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 10, longitude: 20 });
-  const lowSmoker = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
-  const heavySmoker = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
-  const neverAnswered = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
+test(
+  'evaluateFilterPairsBatch: a bare (non-qb:, non-structured) filter key is always UNRESOLVED — the OLD bank\'s ' +
+    'bare-slug resolution has been removed entirely (see filter.service.ts\'s QUESTION-SYSTEM CUTOVER doc; the OLD ' +
+    '`questions`/`answers` tables it used to read no longer exist, db/migrations/022_drop_old_question_bank.sql)',
+  async () => {
+    const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 10, longitude: 20 });
+    const candidate = await makeUser({ age: 30, gender: 'man', latitude: 10, longitude: 20 });
 
-  const slug = `smoking-legacy-${seq}`;
-  const { rows: qRows } = await pool.query<{ id: string }>(
-    `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
-     VALUES ($1, 'test', $1, 'l', 'r', 'l', 'r', 1, 'standard', false, true) RETURNING id`,
-    [slug],
-  );
-  const questionId = qRows[0]!.id;
-  for (const [userId, value] of [[lowSmoker, 1], [heavySmoker, 5]] as const) {
-    await pool.query('INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, $3, $3)', [userId, questionId, value]);
-  }
+    // Plant a REAL typed-bank answer under this exact (unprefixed) slug, to
+    // prove a bare filter key does NOT reach it — only `qb:${slug}` would
+    // (see the next test). This is the namespace-strictness half of the
+    // removal: a bare key isn't merely "nothing answers it in this test",
+    // it structurally cannot resolve against the typed bank at all.
+    const slug = `smoking-legacy-${seq}`;
+    await makeBankScaleQuestion(slug);
+    const { rows: qRows } = await pool.query<{ id: string }>('SELECT id FROM question_bank WHERE slug = $1', [slug]);
+    await pool.query(
+      `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+       VALUES ($1, $2, $3, 'answered', '1'::jsonb, '1'::jsonb, 'important', now(), now())`,
+      [candidate, slug, qRows[0]!.id],
+    );
 
-  await updateMyFilters(actorFor(viewer), [{ filterKey: slug, operator: 'lte', value: 2, enabled: true, excludeIfUnset: true }]);
+    // Bare key, excludeIfUnset:false -> unresolved -> included regardless
+    // of the real answer sitting right there under the same slug.
+    await updateMyFilters(actorFor(viewer), [{ filterKey: slug, operator: 'lte', value: 2, enabled: true, excludeIfUnset: false }]);
+    const included = await passesMutualFiltersForCandidates(ctx, viewer, [candidate]);
+    assert.ok(
+      included.has(candidate),
+      'a bare filter key must never resolve against the typed bank, even when a real answer exists under that exact slug; unresolved + excludeIfUnset:false must include the candidate',
+    );
 
-  const results = await passesMutualFiltersForCandidates(ctx, viewer, [lowSmoker, heavySmoker, neverAnswered]);
-  assert.ok(results.has(lowSmoker), 'self_value=1 satisfies lte 2 (old-bank resolution still works)');
-  assert.ok(!results.has(heavySmoker), 'self_value=5 fails lte 2');
-  assert.ok(!results.has(neverAnswered), 'excludeIfUnset:true still excludes an unresolved (never-answered) candidate');
-});
+    // Bare key, excludeIfUnset:true -> unresolved -> excluded, confirming
+    // the "resolved" branch (which would have passed: self_value=1 <= 2)
+    // never actually ran.
+    await updateMyFilters(actorFor(viewer), [{ filterKey: slug, operator: 'lte', value: 2, enabled: true, excludeIfUnset: true }]);
+    const excluded = await passesMutualFiltersForCandidates(ctx, viewer, [candidate]);
+    assert.ok(
+      !excluded.has(candidate),
+      'unresolved + excludeIfUnset:true must exclude the candidate — if the bare key had resolved the real answer (self_value=1), lte 2 would have PASSED it instead',
+    );
+  },
+);
 
 test('evaluateFilterPairsBatch: a qb:-prefixed key resolves a REAL answer (not just the unresolved path) and evaluates it correctly', async () => {
   const viewer = await makeUser({ age: 30, gender: 'woman', latitude: 10, longitude: 20 });

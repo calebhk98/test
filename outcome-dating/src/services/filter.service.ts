@@ -53,7 +53,7 @@ import { ValidationError } from '../lib/errors.js';
  *     acceptable values via the existing `in` operator, never a numeric
  *     midpoint comparison.
  *   - a `qb:`-prefixed key (e.g. `qb:children_intention`) resolves against
- *     the candidate's `user_question_answers.self_value` for the NEW typed
+ *     the candidate's `user_question_answers.self_value` for the ONE typed
  *     question bank (db/migrations/008_questions.sql) row whose
  *     `question_slug` equals `filterKey.slice(3)` — UNRESOLVED unless that
  *     row's `status = 'answered'` (an unanswered/skipped/
@@ -65,37 +65,32 @@ import { ValidationError } from '../lib/errors.js';
  *     (deal-breaker-derived rows) but is not reserved to it alone: any
  *     caller of `updateMyFilters` may target `qb:<slug>` directly for a
  *     non-deal-breaker filter against a new-bank question too.
- *   - every other key (has_children, wants_children, smoking, drinking,
- *     drug_use, religion, and any admin-defined key) resolves against the
- *     candidate's OLD-bank `answers.self_value` for the `questions` row
- *     whose `slug` equals the filter key — see QUESTION-SYSTEM CUTOVER
- *     note below for why this path, unlike everything the new question-
- *     bank cutover build owns, is still live here.
+ *   - any OTHER key (has_children, wants_children, smoking, drinking,
+ *     drug_use, religion, and any admin-defined key not spelled `qb:...`)
+ *     is always UNRESOLVED. See QUESTION-SYSTEM CUTOVER below — this used
+ *     to be a read-compatibility shim against the OLD `answers`/
+ *     `questions` tables; those tables are gone, and so is the shim.
  *
- * QUESTION-SYSTEM CUTOVER (reported): the redesigned typed question bank
+ * QUESTION-SYSTEM CUTOVER — COMPLETE. The redesigned typed question bank
  * (`question_bank`/`user_question_answers`, `qb:`-prefixed keys above) is
- * now the ONE bank every user-reachable route, `compatibility.service.ts`,
- * and new `hard_filters` rows use — see
+ * the ONE bank every user-reachable route, `compatibility.service.ts`, and
+ * every `hard_filters` row uses — see
  * `src/services/question.service.ts`'s file-level CUTOVER doc. This
  * file's bare-slug (non-`qb:`) resolution against the OLD `answers`/
- * `questions` tables was deliberately LEFT IN PLACE rather than removed:
- * a first attempt at removing it broke several DO-NOT-TOUCH/out-of-
- * ownership-boundary test suites that plant an old-bank answer via a bare
- * filter key as their normal way of exercising filter-gated behavior
- * (`tests/unit/eligibility.test.ts`/`testCtxEligibility.ts` —
- * `eligibility.service.ts` is explicitly off limits to that build;
- * `tests/unit/autoDecline.test.ts` — exercises `interest.service.ts`;
- * `tests/unit/profileAttributes.test.ts`). Removing a resolution path a
- * live, passing, out-of-scope test suite depends on is a worse outcome
- * than leaving one extra (inert for any NEW-bank filter, since a `qb:`
- * key never collides with a bare old-bank slug) resolution branch in
- * place — same reasoning as that build's decision not to drop the
- * `questions`/`answers` tables themselves. Nothing new writes a bare
- * (non-`qb:`) filter key going forward (there is no user-reachable
- * surface to author one against — `question.service.ts`'s own
- * deal-breaker derivation only ever emits `qb:`-prefixed keys), so this
- * is a read-compatibility shim for existing rows/tests, not a second
- * live write path.
+ * `questions` tables has been REMOVED (`db/migrations/022_drop_old_question_bank.sql`
+ * drops both tables). A first attempt at removing this resolution path,
+ * before the tables themselves could be dropped, broke several test
+ * suites that planted an old-bank answer via a bare filter key as their
+ * normal way of exercising filter-gated behavior
+ * (`tests/unit/eligibility.test.ts`/`testCtxEligibility.ts`,
+ * `tests/unit/autoDecline.test.ts`, `tests/unit/profileAttributes.test.ts`)
+ * — those suites have been updated to use the `qb:`-prefixed form against
+ * the typed bank instead (see each file's own history), so removing the
+ * shim now breaks nothing. Any `hard_filters` row that was still keyed on
+ * a bare old-bank slug at the time of the drop is handled by
+ * `db/migrations/022_drop_old_question_bank.sql` itself (see that file's
+ * header for the cleanup and why it's a deletion, not a migration to
+ * `qb:`).
  *
  * MISSING/UNRESOLVED VALUES — the `excludeIfUnset` toggle (product
  * decision, no § reference; supersedes this file's original unconditional
@@ -444,23 +439,6 @@ async function loadQuestionBankSelfValue(ctx: Ctx, userId: string, slug: string)
   return row.self_value;
 }
 
-/**
- * Resolves a BARE (non-`qb:`) filter key's candidate value against the OLD
- * question bank (`answers` joined to `questions` by slug) — see the
- * file-level QUESTION-SYSTEM CUTOVER note for why this still exists.
- */
-async function loadSelfAnswerBySlug(ctx: Ctx, userId: string, slug: string): Promise<number | null | undefined> {
-  const { rows } = await ctx.db.query<{ self_value: number | null }>(
-    `SELECT a.self_value
-     FROM answers a
-     JOIN questions q ON q.id = a.question_id
-     WHERE a.user_id = $1 AND q.slug = $2`,
-    [userId, slug],
-  );
-  if (rows.length === 0) return undefined; // no such question, or candidate never answered it
-  return rows[0]!.self_value; // may legitimately be null ("prefer not to say")
-}
-
 /** Resolves `subjectUserId`'s value for `filterKey`, given `filterOwnerUserId` (needed only for distance, which is relative to the filter owner). */
 async function resolveAttributeValue(
   ctx: Ctx,
@@ -513,13 +491,10 @@ async function resolveAttributeValue(
       return profile?.bodyType ?? undefined;
     }
     default:
-      // See file-level QUESTION-SYSTEM CUTOVER note — a `qb:`-prefixed key
-      // resolves against the NEW typed bank; anything else falls back to
-      // the OLD bank's bare-slug resolution (kept for out-of-scope test
-      // suites/callers still using that convention).
-      return filterKey.startsWith('qb:')
-        ? loadQuestionBankSelfValue(ctx, subjectUserId, filterKey.slice(3))
-        : loadSelfAnswerBySlug(ctx, subjectUserId, filterKey);
+      // See file-level QUESTION-SYSTEM CUTOVER note — only a `qb:`-prefixed
+      // key resolves against the typed bank; anything else is always
+      // unresolved (the OLD bank's bare-slug resolution has been removed).
+      return filterKey.startsWith('qb:') ? loadQuestionBankSelfValue(ctx, subjectUserId, filterKey.slice(3)) : undefined;
   }
 }
 
@@ -603,8 +578,6 @@ interface AttributeMaps {
   profiles: Map<string, ProfileLocationAge>;
   /** userId -> question_bank slug -> self_value (typed per question — a number, string, or string[] depending on question type; may legitimately be `null`). Absent key = unresolved (never answered, or answered but not `status = 'answered'`) — exactly like `loadQuestionBankSelfValue`'s `undefined`. Keyed by `qb:`-prefixed filter keys' resolution. */
   answers: Map<string, Map<string, unknown>>;
-  /** userId -> OLD-bank question slug -> self_value — see file-level QUESTION-SYSTEM CUTOVER note for why this still exists alongside `answers`. Keyed by bare (non-`qb:`) filter keys' resolution. */
-  legacyAnswers: Map<string, Map<string, number | null>>;
 }
 
 /** Batched `loadProfile` — one query for as many users as needed, instead of one query per user. Missing rows are simply absent from the map, exactly like `loadProfile` returning `undefined`. */
@@ -667,29 +640,6 @@ async function loadQuestionBankAnswersBatch(ctx: Ctx, userIds: string[], slugs: 
   return map;
 }
 
-/** Batched `loadSelfAnswerBySlug` (OLD bank) — one query for as many (user, slug) combinations as needed. `slugs` should already be deduplicated to the bare filter keys actually in play (see callers). */
-async function loadLegacyAnswersBatch(ctx: Ctx, userIds: string[], slugs: string[]): Promise<Map<string, Map<string, number | null>>> {
-  const map = new Map<string, Map<string, number | null>>();
-  const ids = [...new Set(userIds)];
-  if (ids.length === 0 || slugs.length === 0) return map;
-  const { rows } = await ctx.db.query<{ user_id: string; slug: string; self_value: number | null }>(
-    `SELECT a.user_id, q.slug, a.self_value
-     FROM answers a
-     JOIN questions q ON q.id = a.question_id
-     WHERE a.user_id = ANY($1::uuid[]) AND q.slug = ANY($2::text[])`,
-    [ids, slugs],
-  );
-  for (const row of rows) {
-    let perUser = map.get(row.user_id);
-    if (!perUser) {
-      perUser = new Map();
-      map.set(row.user_id, perUser);
-    }
-    perUser.set(row.slug, row.self_value);
-  }
-  return map;
-}
-
 /** Same resolution as `resolveAttributeValue`, but reading from preloaded maps instead of issuing a query — MUST stay behaviorally identical to that function, switch case for switch case, since both exist only because a caller needs this either per-pair (I/O) or batched (maps). */
 function resolveAttributeValueFromMaps(
   subjectUserId: string,
@@ -723,35 +673,31 @@ function resolveAttributeValueFromMaps(
     case 'body_type':
       return maps.profiles.get(subjectUserId)?.bodyType ?? undefined;
     default: {
-      // See file-level QUESTION-SYSTEM CUTOVER note — `qb:<slug>` resolves
-      // against the NEW bank; anything else falls back to the OLD bank.
-      if (filterKey.startsWith('qb:')) {
-        const slug = filterKey.slice(3);
-        const perUser = maps.answers.get(subjectUserId);
-        if (!perUser || !perUser.has(slug)) return undefined;
-        return perUser.get(slug);
-      }
-      const perUser = maps.legacyAnswers.get(subjectUserId);
-      if (!perUser || !perUser.has(filterKey)) return undefined;
-      return perUser.get(filterKey);
+      // See file-level QUESTION-SYSTEM CUTOVER note — only `qb:<slug>`
+      // resolves against the typed bank; anything else is always
+      // unresolved.
+      if (!filterKey.startsWith('qb:')) return undefined;
+      const slug = filterKey.slice(3);
+      const perUser = maps.answers.get(subjectUserId);
+      if (!perUser || !perUser.has(slug)) return undefined;
+      return perUser.get(slug);
     }
   }
 }
 
 async function loadAttributeMapsFor(ctx: Ctx, userIds: string[], filterRows: HardFilterRow[]): Promise<AttributeMaps> {
   const qbSlugs = new Set<string>();
-  const legacySlugs = new Set<string>();
   for (const r of filterRows) {
     if (STRUCTURED_ATTRIBUTE_KEYS.has(r.filter_key)) continue;
     if (r.filter_key.startsWith('qb:')) qbSlugs.add(r.filter_key.slice(3));
-    else legacySlugs.add(r.filter_key);
+    // Any other key is always unresolved — see file-level QUESTION-SYSTEM
+    // CUTOVER note — so there is nothing to batch-load for it.
   }
-  const [profiles, answers, legacyAnswers] = await Promise.all([
+  const [profiles, answers] = await Promise.all([
     loadProfilesBatch(ctx, userIds),
     qbSlugs.size > 0 ? loadQuestionBankAnswersBatch(ctx, userIds, [...qbSlugs]) : Promise.resolve(new Map<string, Map<string, unknown>>()),
-    legacySlugs.size > 0 ? loadLegacyAnswersBatch(ctx, userIds, [...legacySlugs]) : Promise.resolve(new Map<string, Map<string, number | null>>()),
   ]);
-  return { profiles, answers, legacyAnswers };
+  return { profiles, answers };
 }
 
 export interface FilterCheckPair {

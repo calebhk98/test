@@ -529,8 +529,16 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
   if (approvedPhotos >= 1) score += 20;
   if (approvedPhotos >= 3) score += 10;
 
+  // ONE typed question bank (question_bank/user_question_answers,
+  // db/migrations/008_questions.sql) — counts only rows with
+  // `status = 'answered'`, not every row that merely exists (a `skipped`/
+  // `prefer_not_to_say` row is not an "answered compatibility question"
+  // per this function's own doc above, whereas the OLD `answers` table
+  // this replaced had no status concept and counted every row
+  // unconditionally, including a "prefer not to say" — see this build's
+  // report for that behavior-refinement note).
   const { rows: answerCountRows } = await ctx.db.query<{ count: string }>(
-    `SELECT count(*)::text AS count FROM answers WHERE user_id = $1`,
+    `SELECT count(*)::text AS count FROM user_question_answers WHERE user_id = $1 AND status = 'answered'`,
     [userId],
   );
   if (Number(answerCountRows[0]?.count ?? 0) >= 5) score += 15;
@@ -553,13 +561,14 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  *
  * Before this fix, deletion only ever touched `users` (status flip),
  * `profiles` (display fields wiped), `user_photos` (deleted), and
- * `refresh_sessions` (revoked) — `answers` (including every
- * `sensitive:true` question — religion, drug use, sexuality-adjacent
- * lifestyle), `user_tags` (including `private_reciprocal` tags that can
- * reveal stigmatized interests), `hard_filters`, and full `messages`
- * content all survived indefinitely, keyed to a `user_id` that still
- * existed in every one of those tables. A "deleted" account's sensitive
- * data and private chat content persisted forever.
+ * `refresh_sessions` (revoked) — the compatibility-question answers table
+ * (including every `sensitive:true` question — religion, drug use,
+ * sexuality-adjacent lifestyle), `user_tags` (including
+ * `private_reciprocal` tags that can reveal stigmatized interests),
+ * `hard_filters`, and full `messages` content all survived indefinitely,
+ * keyed to a `user_id` that still existed in every one of those tables. A
+ * "deleted" account's sensitive data and private chat content persisted
+ * forever.
  *
  * WHAT THIS FUNCTION NOW DOES, table by table:
  *   - users:              status -> 'deleted' (unchanged from before).
@@ -569,12 +578,16 @@ export async function computeProfileCompleteness(ctx: Ctx, userId: string): Prom
  *                           `distance_precision_floor_km` column).
  *   - user_photos:          hard-deleted (unchanged from before).
  *   - refresh_sessions:     revoked (unchanged from before).
- *   - answers:              HARD-DELETED, every row, including every
- *                           `sensitive:true` question's self/partner
- *                           value. This is the single biggest gap PRIV-1
- *                           named — it is erased, not anonymised, because
- *                           there is no legitimate reason to retain it in
- *                           any form once the account is gone.
+ *   - user_question_answers: HARD-DELETED, every row, including every
+ *                           `sensitive:true` question's self/preference
+ *                           value (this was `answers`, the OLD question
+ *                           bank's table, before the question-system
+ *                           cutover retired it — same erasure, repointed
+ *                           at the ONE typed bank that replaced it). This
+ *                           is the single biggest gap PRIV-1 named — it is
+ *                           erased, not anonymised, because there is no
+ *                           legitimate reason to retain it in any form
+ *                           once the account is gone.
  *   - user_tags:            HARD-DELETED, every row (public AND
  *                           private_reciprocal — both can reveal a
  *                           stigmatized interest, per PRIV-3).
@@ -658,8 +671,11 @@ export async function deleteMyAccount(ctx: Ctx): Promise<void> {
 
   // Sensitive-category compatibility answers (§8.2/§8.5 "sensitive: true"
   // questions included) — full erasure, not anonymisation: there is no
-  // retention justification for these once the account is gone.
-  await ctx.db.query(`DELETE FROM answers WHERE user_id = $1`, [userId]);
+  // retention justification for these once the account is gone. The ONE
+  // typed question bank (question_bank/user_question_answers,
+  // db/migrations/008_questions.sql) — the OLD `answers` table this used
+  // to target no longer exists (db/migrations/022_drop_old_question_bank.sql).
+  await ctx.db.query(`DELETE FROM user_question_answers WHERE user_id = $1`, [userId]);
 
   // Interest tags, including private_reciprocal ones (§8.4) that can
   // reveal a stigmatized interest to anyone who happens to share it.

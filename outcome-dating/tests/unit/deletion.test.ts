@@ -111,20 +111,30 @@ async function insertProfile(ctx: Ctx, userId: string): Promise<void> {
   );
 }
 
+// ONE typed question bank (question_bank/user_question_answers,
+// db/migrations/008_questions.sql) — this used to create a row in the OLD
+// `questions` table; that table (and `answers`) is gone as of
+// db/migrations/022_drop_old_question_bank.sql, so these fixture helpers
+// now target the typed bank `deleteMyAccount` itself was repointed to.
 async function insertQuestion(ctx: Ctx, sensitive: boolean): Promise<string> {
   const id = randomUUID();
+  const slug = `slug-${id}`;
   await ctx.db.query(
-    `INSERT INTO questions (id, slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, sensitive)
-     VALUES ($1, $2, 'lifestyle', 'q text', 'left', 'right', 'left', 'right', $3)`,
-    [id, `slug-${id}`, sensitive],
+    `INSERT INTO question_bank (id, slug, version, is_current, category, question_type, question_text, type_definition, sensitive, active)
+     VALUES ($1, $2, 1, true, 'lifestyle', 'scale', 'q text', $3::jsonb, $4, true)`,
+    [id, slug, JSON.stringify({ type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' }), sensitive],
   );
   return id;
 }
 
+/** Returns `questionId`'s slug — the actual key `user_question_answers` is keyed on (see that table's own doc: PK is `(user_id, question_slug)`, not `(user_id, question_bank_id)`). */
 async function insertAnswer(ctx: Ctx, userId: string, questionId: string): Promise<void> {
+  const { rows } = await ctx.db.query<{ slug: string }>('SELECT slug FROM question_bank WHERE id = $1', [questionId]);
+  const slug = rows[0]!.slug;
   await ctx.db.query(
-    `INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, 4, 3)`,
-    [userId, questionId],
+    `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+     VALUES ($1, $2, $3, 'answered', '4'::jsonb, '3'::jsonb, 'slight', now(), now())`,
+    [userId, slug, questionId],
   );
 }
 
@@ -271,7 +281,7 @@ test('deleteMyAccount: erases answers (including sensitive-flagged), user_tags, 
 
   await profile.deleteMyAccount(userCtx);
 
-  const { rows: answerRows } = await ctx.db.query('SELECT * FROM answers WHERE user_id = $1', [fx.userId]);
+  const { rows: answerRows } = await ctx.db.query('SELECT * FROM user_question_answers WHERE user_id = $1', [fx.userId]);
   assert.equal(answerRows.length, 0, 'every answer, including the sensitive-flagged one, must be gone');
 
   const { rows: tagRows } = await ctx.db.query('SELECT * FROM user_tags WHERE user_id = $1', [fx.userId]);
@@ -392,7 +402,7 @@ test('deleteMyAccount: idempotent — running it twice produces the exact same e
   const snapshot = async () => ({
     user: (await ctx.db.query('SELECT * FROM users WHERE id = $1', [fx.userId])).rows[0],
     profile: (await ctx.db.query('SELECT * FROM profiles WHERE user_id = $1', [fx.userId])).rows[0],
-    answers: (await ctx.db.query('SELECT * FROM answers WHERE user_id = $1', [fx.userId])).rows,
+    answers: (await ctx.db.query('SELECT * FROM user_question_answers WHERE user_id = $1', [fx.userId])).rows,
     tags: (await ctx.db.query('SELECT * FROM user_tags WHERE user_id = $1', [fx.userId])).rows,
     filters: (await ctx.db.query('SELECT * FROM hard_filters WHERE user_id = $1', [fx.userId])).rows,
     messages: (await ctx.db.query('SELECT * FROM messages WHERE sender_id = $1', [fx.userId])).rows,
@@ -416,7 +426,7 @@ test("deleteMyAccount: does not touch the OTHER party's own account, profile, an
   const partnerBefore = {
     user: (await ctx.db.query('SELECT * FROM users WHERE id = $1', [fx.partnerId])).rows[0],
     profile: (await ctx.db.query('SELECT * FROM profiles WHERE user_id = $1', [fx.partnerId])).rows[0],
-    answers: (await ctx.db.query('SELECT * FROM answers WHERE user_id = $1', [fx.partnerId])).rows,
+    answers: (await ctx.db.query('SELECT * FROM user_question_answers WHERE user_id = $1', [fx.partnerId])).rows,
     tags: (await ctx.db.query('SELECT * FROM user_tags WHERE user_id = $1', [fx.partnerId])).rows,
   };
 
@@ -426,7 +436,7 @@ test("deleteMyAccount: does not touch the OTHER party's own account, profile, an
   const partnerAfter = {
     user: (await ctx.db.query('SELECT * FROM users WHERE id = $1', [fx.partnerId])).rows[0],
     profile: (await ctx.db.query('SELECT * FROM profiles WHERE user_id = $1', [fx.partnerId])).rows[0],
-    answers: (await ctx.db.query('SELECT * FROM answers WHERE user_id = $1', [fx.partnerId])).rows,
+    answers: (await ctx.db.query('SELECT * FROM user_question_answers WHERE user_id = $1', [fx.partnerId])).rows,
     tags: (await ctx.db.query('SELECT * FROM user_tags WHERE user_id = $1', [fx.partnerId])).rows,
   };
 

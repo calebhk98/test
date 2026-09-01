@@ -168,23 +168,52 @@ export async function setHardFilter(
   );
 }
 
-/** Inserts a `has_children`/`wants_children`/etc self-answer for `userId` — creates the backing `questions` row too if it doesn't exist yet (test DBs run migrations only, no seed data). `selfValue` is the 1-5 scale `answers.self_value` uses (spec §8.1); most boolean-shaped filters in these tests use 1 = "no"/false, 5 = "yes"/true by convention. */
+/**
+ * Inserts a `has_children`/`wants_children`/etc self-answer for `userId`
+ * into the ONE typed question bank (`question_bank`/`user_question_answers`,
+ * db/migrations/008_questions.sql) — creates the backing `question_bank`
+ * row too if it doesn't exist yet (test DBs run migrations only, no seed
+ * data). `selfValue` is a 1-5 integer on a `scale`-type question, mirroring
+ * the OLD bank's 1-5 `answers.self_value` scale exactly (spec §8.1) so
+ * every existing fixture value in these tests keeps meaning what it always
+ * meant; most boolean-shaped filters in these tests use 1 = "no"/false, 5 =
+ * "yes"/true by convention.
+ *
+ * `preferenceValue`/`importance` are filled with a placeholder (the same
+ * value as `selfValue`, `importance: 'slight'`) — every eligibility/
+ * auto-decline test that calls this only ever reads the answer back via
+ * `filter.service.ts`'s `qb:`-prefixed SELF-value resolution (never
+ * preference/importance/compatibility scoring), so a placeholder here is
+ * inert, not a fabricated user statement standing in for a real one.
+ *
+ * A caller resolves this answer through `filter.service.ts` via the
+ * `qb:<slug>` filter-key form (e.g. `qb:has_children`) — see that file's
+ * CANDIDATE ATTRIBUTE SOURCING note; `slug` itself (this function's
+ * parameter) stays bare.
+ */
 export async function setSelfAnswer(pool: pg.Pool, userId: string, slug: string, selfValue: number): Promise<void> {
-  const { rows } = await pool.query<{ id: string }>(`SELECT id FROM questions WHERE slug = $1`, [slug]);
-  let questionId = rows[0]?.id;
-  if (!questionId) {
+  const { rows } = await pool.query<{ id: string }>(`SELECT id FROM question_bank WHERE slug = $1 AND is_current = true`, [slug]);
+  let questionBankId = rows[0]?.id;
+  if (!questionBankId) {
     const inserted = await pool.query<{ id: string }>(
-      `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label)
-       VALUES ($1, 'lifestyle', $1, 'low', 'high', 'low', 'high')
+      `INSERT INTO question_bank (slug, version, is_current, category, question_type, question_text, type_definition, active)
+       VALUES ($1, 1, true, 'lifestyle', 'scale', $1, $2::jsonb, true)
        RETURNING id`,
-      [slug],
+      [slug, JSON.stringify({ type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'moderate' })],
     );
-    questionId = inserted.rows[0]!.id;
+    questionBankId = inserted.rows[0]!.id;
   }
   await pool.query(
-    `INSERT INTO answers (user_id, question_id, self_value, updated_at)
-     VALUES ($1, $2, $3, now())
-     ON CONFLICT (user_id, question_id) DO UPDATE SET self_value = EXCLUDED.self_value, updated_at = now()`,
-    [userId, questionId, selfValue],
+    `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+     VALUES ($1, $2, $3, 'answered', $4::jsonb, $4::jsonb, 'slight', now(), now())
+     ON CONFLICT (user_id, question_slug) DO UPDATE SET
+       question_bank_id = EXCLUDED.question_bank_id,
+       status = EXCLUDED.status,
+       self_value = EXCLUDED.self_value,
+       preference_value = EXCLUDED.preference_value,
+       importance = EXCLUDED.importance,
+       answered_at = EXCLUDED.answered_at,
+       updated_at = EXCLUDED.updated_at`,
+    [userId, slug, questionBankId, selfValue],
   );
 }

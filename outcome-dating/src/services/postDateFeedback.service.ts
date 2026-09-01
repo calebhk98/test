@@ -5,6 +5,8 @@ import { ConflictError, ForbiddenError, NotFoundError } from '../lib/errors.js';
 import { hoursBetween } from '../lib/time.js';
 import { KNOWN_FLAGS } from '../config/flags.service.js';
 import type { TrustLevel } from '../domain/types.js';
+import { getTypeHandler } from '../domain/questions/typeHandlers.js';
+import type { QuestionType, QuestionTypeDefinition } from '../domain/questions/types.js';
 import * as reportService from './report.service.js';
 import * as trustService from './trust.service.js';
 import * as notificationService from './notification.service.js';
@@ -28,7 +30,7 @@ import * as notificationService from './notification.service.js';
  *      score. Each has its own, deliberately different, platform effect
  *      — see "OUTCOME EFFECTS".
  *   3. FUTURE MATCHING SIGNAL  — `runMatchingSignalSweep`, which never
- *      touches `answers` directly and only ever creates a *pending*
+ *      writes a `user_question_answers` row directly and only ever creates a *pending*
  *      `behavioral_prompt_suggestions` row (the existing §17 mechanism —
  *      see behavioralPrompt.service.ts) for the user to explicitly answer
  *      or skip.
@@ -55,10 +57,11 @@ import * as notificationService from './notification.service.js';
  * — `dateProposal.service.ts` itself calls INTO this module (the two
  * completion hooks below), so this module deliberately never imports
  * back from it, avoiding a module-cycle. Reading `date_proposals` (and
- * `users`, `answers`, `questions`) directly is the same "narrow read of a
- * sibling's table" pattern report.service.ts/trust.service.ts already use
- * throughout (e.g. `report.service#reporterCredibility` reading
- * `users.trust_level` directly rather than importing trust.service.ts).
+ * `users`, `user_question_answers`, `question_bank`) directly is the same
+ * "narrow read of a sibling's table" pattern report.service.ts/
+ * trust.service.ts already use throughout (e.g.
+ * `report.service#reporterCredibility` reading `users.trust_level`
+ * directly rather than importing trust.service.ts).
  *
  * ---------------------------------------------------------------------
  * ONE-SIDED BY DEFAULT
@@ -205,21 +208,31 @@ import * as notificationService from './notification.service.js';
  * question)
  * ---------------------------------------------------------------------
  * `runMatchingSignalSweep` looks, per user, for a compatibility question
- * where the AVERAGE divergence between what that user says they want
- * (`answers.partner_value`) and what their `happened_good`-rated dates'
- * partners actually self-rated on that same question
- * (`answers.self_value`) is large — i.e. "the dates you rate as GOOD tend
- * not to match what you said you want, on this specific axis". When that
+ * (in the ONE typed question bank, `question_bank`/`user_question_answers`
+ * — db/migrations/008_questions.sql) where the AVERAGE divergence between
+ * what that user says they want (`user_question_answers.preference_value`)
+ * and what their `happened_good`-rated dates' partners actually reported
+ * about themselves on that same question
+ * (`user_question_answers.self_value`) is large — i.e. "the dates you rate
+ * as GOOD tend not to match what you said you want, on this specific
+ * axis". Divergence is `1 - satisfaction`, using EXACTLY the same
+ * `src/domain/questions/typeHandlers.ts#satisfaction` function
+ * `compatibility.service.ts` scores matches with (0 = perfectly satisfies,
+ * 1 = fully diverges) — this is what lets the sweep work uniformly across
+ * every question TYPE (`scale`, `single_choice`, `multi_choice`,
+ * `frequency`), unlike the OLD bank's flat 1-5 numeric diff, which was
+ * only ever meaningful for a plain numeric scale. When the average
  * crosses `MATCHING_SIGNAL_DIVERGENCE_THRESHOLD` across at least
  * `MIN_GOOD_DATES_FOR_MATCHING_SIGNAL` good-outcome dates, it inserts
  * exactly one `pending` row into the EXISTING `behavioral_prompt_
  * suggestions` table (same table, same conflict target, same `status`
  * lifecycle as behavioralPrompt.service.ts's own tag-based trigger — this
  * is "feed the existing mechanism", not a parallel one). It NEVER calls
- * `question.service#putMyAnswers` and NEVER writes to `answers` — turning
- * a suggestion into a real answer, or skipping it, is entirely
- * `behavioralPrompt.service#respondToSuggestion`'s job, driven by the
- * user's own explicit response, exactly as §17 requires.
+ * `question.service#putMyQuestionAnswer` and NEVER writes to
+ * `user_question_answers` — turning a suggestion into a real answer, or
+ * skipping it, is entirely `behavioralPrompt.service#respondToSuggestion`'s
+ * job, driven by the user's own explicit response, exactly as §17
+ * requires.
  *
  * ---------------------------------------------------------------------
  * TIMING (prompt after scheduled end, with a window, and a reminder — do
@@ -730,59 +743,78 @@ export async function runCheckInPromptSweep(ctx: Ctx): Promise<CheckInPromptSwee
 // =====================================================================
 
 export const MIN_GOOD_DATES_FOR_MATCHING_SIGNAL = 3;
-const MATCHING_SIGNAL_DIVERGENCE_THRESHOLD = 2; // abs diff, out of a possible 0-4 range on the 1-5 answer scale
+// Normalized 0..1 (see module doc "MATCHING SIGNAL": divergence is
+// `1 - satisfaction`, and `satisfaction` is always 0..1 regardless of
+// question type). 0.5 is the direct normalization of the OLD bank's
+// threshold (an absolute diff of 2, out of that bank's fixed 0-4 range on
+// a 1-5 scale question -> 2/4 = 0.5) — same real-world strictness, just
+// expressed on the new bank's type-agnostic scale.
+const MATCHING_SIGNAL_DIVERGENCE_THRESHOLD = 0.5;
 
 interface DivergenceRow {
-  question_id: string;
-  slug: string;
-  partner_value: number;
-  other_self_value: number;
+  question_slug: string;
+  question_bank_id: string;
+  question_type: QuestionType;
+  type_definition: QuestionTypeDefinition;
+  preference_value: unknown;
+  other_self_value: unknown;
 }
 
 /** One candidate user's pass: finds the single question with the largest average good-date divergence and inserts one pending suggestion for it, if any clears the threshold. At most one new suggestion per user per sweep run, to keep prompting bounded. */
 async function createMatchingSignalSuggestion(ctx: Ctx, userId: string): Promise<boolean> {
   const { rows } = await ctx.db.query<DivergenceRow>(
-    `SELECT a_mine.question_id AS question_id, q.slug AS slug, a_mine.partner_value AS partner_value, a_other.self_value AS other_self_value
+    `SELECT a_mine.question_slug AS question_slug,
+            qb.id AS question_bank_id,
+            qb.question_type AS question_type,
+            qb.type_definition AS type_definition,
+            a_mine.preference_value AS preference_value,
+            a_other.self_value AS other_self_value
        FROM post_date_feedback pdf
        JOIN date_proposals dp ON dp.id = pdf.date_proposal_id
-       JOIN answers a_mine ON a_mine.user_id = pdf.user_id
-       JOIN answers a_other ON a_other.question_id = a_mine.question_id
+       JOIN user_question_answers a_mine ON a_mine.user_id = pdf.user_id AND a_mine.status = 'answered'
+       JOIN user_question_answers a_other
+         ON a_other.question_slug = a_mine.question_slug
+        AND a_other.status = 'answered'
         AND a_other.user_id = CASE WHEN dp.proposer_id = pdf.user_id THEN dp.recipient_id ELSE dp.proposer_id END
-       JOIN questions q ON q.id = a_mine.question_id AND q.active = true
+       JOIN question_bank qb ON qb.slug = a_mine.question_slug AND qb.is_current = true AND qb.active = true
       WHERE pdf.user_id = $1
         AND pdf.outcome = 'happened_good'
-        AND pdf.matching_signal_processed_at IS NULL
-        AND a_mine.partner_value IS NOT NULL
-        AND a_other.self_value IS NOT NULL`,
+        AND pdf.matching_signal_processed_at IS NULL`,
     [userId],
   );
 
-  const byQuestion = new Map<string, { slug: string; diffs: number[] }>();
+  const byQuestion = new Map<string, { questionBankId: string; diffs: number[] }>();
   for (const r of rows) {
-    const bucket = byQuestion.get(r.question_id) ?? { slug: r.slug, diffs: [] };
-    bucket.diffs.push(Math.abs(Number(r.partner_value) - Number(r.other_self_value)));
-    byQuestion.set(r.question_id, bucket);
+    const handler = getTypeHandler(r.question_type);
+    const satisfaction = handler.satisfaction(r.type_definition, r.other_self_value, r.preference_value);
+    const divergence = 1 - satisfaction;
+    const bucket = byQuestion.get(r.question_slug) ?? { questionBankId: r.question_bank_id, diffs: [] };
+    bucket.diffs.push(divergence);
+    byQuestion.set(r.question_slug, bucket);
   }
 
-  let best: { questionId: string; slug: string; avgDivergence: number } | undefined;
-  for (const [questionId, { slug, diffs }] of byQuestion) {
+  let best: { questionBankId: string; slug: string; avgDivergence: number } | undefined;
+  for (const [slug, { questionBankId, diffs }] of byQuestion) {
     if (diffs.length < MIN_GOOD_DATES_FOR_MATCHING_SIGNAL) continue;
     const avgDivergence = diffs.reduce((a, b) => a + b, 0) / diffs.length;
     if (avgDivergence < MATCHING_SIGNAL_DIVERGENCE_THRESHOLD) continue;
-    if (!best || avgDivergence > best.avgDivergence) best = { questionId, slug, avgDivergence };
+    if (!best || avgDivergence > best.avgDivergence) best = { questionBankId, slug, avgDivergence };
   }
   if (!best) return false;
 
   // Same table, same conflict target as behavioralPrompt.service#detectPatternsForUser
   // — this IS the existing mechanism, not a parallel one. Never writes to
-  // `answers`; the suggestion is presented and can be skipped, exactly
-  // like the tag-triggered kind (behavioralPrompt.service#respondToSuggestion).
+  // `user_question_answers`; the suggestion is presented and can be
+  // skipped, exactly like the tag-triggered kind
+  // (behavioralPrompt.service#respondToSuggestion). `question_id` here is
+  // a `question_bank` id (current version at detection time) — see
+  // `db/migrations/022_drop_old_question_bank.sql` for the FK repoint.
   const { rows: inserted } = await ctx.db.query<{ id: string }>(
     `INSERT INTO behavioral_prompt_suggestions (user_id, question_id, trigger_kind, trigger_label, status, created_at)
      VALUES ($1, $2, 'post_date_outcome', $3, 'pending', $4)
      ON CONFLICT (user_id, question_id) WHERE status = 'pending' DO NOTHING
      RETURNING id`,
-    [userId, best.questionId, best.slug, ctx.clock.now()],
+    [userId, best.questionBankId, best.slug, ctx.clock.now()],
   );
   return inserted.length > 0;
 }

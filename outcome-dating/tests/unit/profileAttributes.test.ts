@@ -336,10 +336,10 @@ test('a simulated deal-breaker-derived filter defaults to INCLUDING an unset val
   // deal-breaker-derived row is just an UpdateFilterInput like any other
   // — this simulates that derivation calling updateMyFilters directly.
   const viewer = await makeUserWithProfile();
-  const neverAnswered = await makeUserWithProfile(); // no answers row at all -> unresolved for any answer-based key
+  const neverAnswered = await makeUserWithProfile(); // no user_question_answers row at all -> unresolved for any qb:-prefixed key
 
   await updateMyFilters(actorFor(viewer), [
-    { filterKey: 'smoking', operator: 'lte', value: 2, enabled: true }, // excludeIfUnset omitted entirely, as a fresh derivation might do before the user opts in
+    { filterKey: 'qb:smoking', operator: 'lte', value: 2, enabled: true }, // excludeIfUnset omitted entirely, as a fresh derivation might do before the user opts in
   ]);
   assert.equal(
     await passesMutualFilters(ctx, viewer, neverAnswered),
@@ -347,7 +347,7 @@ test('a simulated deal-breaker-derived filter defaults to INCLUDING an unset val
     'a brand-new account that has not answered the underlying question must still be discoverable',
   );
 
-  await updateMyFilters(actorFor(viewer), [{ filterKey: 'smoking', operator: 'lte', value: 2, enabled: true, excludeIfUnset: true }]);
+  await updateMyFilters(actorFor(viewer), [{ filterKey: 'qb:smoking', operator: 'lte', value: 2, enabled: true, excludeIfUnset: true }]);
   assert.equal(
     await passesMutualFilters(ctx, viewer, neverAnswered),
     false,

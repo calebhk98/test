@@ -36,9 +36,20 @@ function makeDeps(): AppDeps {
   };
 }
 
-test('the registry lists all 17 jobs by their spec-stable names', () => {
-  const names = ALL_JOBS.map((j) => j.name).sort();
-  assert.deepEqual(names, [
+/**
+ * Resilient to ADDITIVE registration: registering a new job must never
+ * break this test (an exact-length/exact-list `deepEqual` against
+ * `ALL_JOBS` would, and did — this used to hardcode the full list, which
+ * broke every time a new job was registered). Still FAILS if a
+ * previously-registered, spec-stable job name disappears (a subset check,
+ * not "any jobs at all exist"), and still guards the registry invariant
+ * `findJob` depends on: every name in `ALL_JOBS` is unique.
+ */
+test('the registry lists every spec-stable job by name (at least these; more may be registered) with no duplicate names', () => {
+  const names = ALL_JOBS.map((j) => j.name);
+  const nameSet = new Set(names);
+
+  const expectedJobNames = [
     'chat_decay',
     'check_in_prompt_sweep',
     'compatibility_score_refresh',
@@ -56,7 +67,12 @@ test('the registry lists all 17 jobs by their spec-stable names', () => {
     'trust_score_recalculation',
     'venue_payout_settlement',
     'voucher_expiry',
-  ]);
+  ];
+  for (const expected of expectedJobNames) {
+    assert.ok(nameSet.has(expected), `expected job "${expected}" to still be registered in ALL_JOBS`);
+  }
+
+  assert.equal(nameSet.size, names.length, 'ALL_JOBS must not register the same job name twice (findJob resolves by name)');
 });
 
 test('runJob runs a known job to completion and reports ok:true, not skipped', async () => {

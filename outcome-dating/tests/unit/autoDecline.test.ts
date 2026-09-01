@@ -124,7 +124,7 @@ test('a filter change alone never declines anything — every pending interest s
   // Recipient saves a deal-breaker filter, via the REAL service call,
   // that would exclude senderWouldNowFail were a new interest sent today.
   await filterService.updateMyFilters(ctxFor(recipient), [
-    { filterKey: 'has_children', operator: 'lte', value: 2, enabled: true },
+    { filterKey: 'qb:has_children', operator: 'lte', value: 2, enabled: true },
   ]);
 
   // Nothing about either interest changed. No decline, no notification,
@@ -155,7 +155,7 @@ test('changing filters never touches a conversation: an already-accepted interes
   const { conversation } = await interestService.acceptInterest(ctxFor(recipient), interest.id);
 
   await filterService.updateMyFilters(ctxFor(recipient), [
-    { filterKey: 'has_children', operator: 'lte', value: 2, enabled: true },
+    { filterKey: 'qb:has_children', operator: 'lte', value: 2, enabled: true },
   ]);
 
   const row = await interestStatus(interest.id);
@@ -180,7 +180,7 @@ test('previewFilterCleanup reports how many pending interests would be declined,
 
   const iExcluded = await interestService.sendInterest(ctxFor(senderNowExcluded), recipient);
   const iEligible = await interestService.sendInterest(ctxFor(senderStillEligible), recipient);
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
 
   const preview = await interestService.previewFilterCleanup(ctxFor(recipient));
   assert.equal(preview.wouldDecline, 1);
@@ -214,7 +214,7 @@ test('runFilterCleanup: declines exactly the pending interests the CALLING user\
   assert.equal(iExcluded.status, 'pending');
   assert.equal(iEligible.status, 'pending');
 
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
 
   // The user previews first (what the UI would show before confirming)...
   const preview = await interestService.previewFilterCleanup(ctxFor(recipient));
@@ -239,7 +239,7 @@ test('an interest that was eligible when sent and REMAINS eligible survives runF
   const recipient = await makeUser(pool, { age: 30 });
   const sender = await makeUser(pool, { age: 30 });
   await setSelfAnswer(pool, sender, 'has_children', 1);
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
 
   const interest = await interestService.sendInterest(ctxFor(sender), recipient);
   const before = await interestStatus(interest.id);
@@ -273,7 +273,7 @@ test('the sender-visible Interest shape never carries decline_origin — cleanup
   const sender = await makeUser(pool, { age: 30 });
   await setSelfAnswer(pool, sender, 'has_children', 5);
   const interest = await interestService.sendInterest(ctxFor(sender), recipient);
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
   await interestService.runFilterCleanup(ctxFor(recipient));
 
   const { items } = await interestService.listOutgoing(ctxFor(sender));
@@ -296,7 +296,7 @@ test('runFilterCleanup frees the sender\'s outgoing slot, exactly like any other
   const interest = await interestService.sendInterest(ctxFor(sender), recipient);
   assert.equal(await outgoingPendingCount(sender), 1);
 
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
   await interestService.runFilterCleanup(ctxFor(recipient));
 
   assert.equal(await outgoingPendingCount(sender), 0);
@@ -312,7 +312,7 @@ test('runFilterCleanup does NOT harm the sender\'s trust score', async () => {
 
   const before = await trustScore(sender);
   await interestService.sendInterest(ctxFor(sender), recipient);
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
   await interestService.runFilterCleanup(ctxFor(recipient));
   const after = await trustScore(sender);
 
@@ -333,7 +333,7 @@ test('runFilterCleanup is idempotent: re-running changes nothing further', async
 
   const iA = await interestService.sendInterest(ctxFor(senderA), recipient);
   const iB = await interestService.sendInterest(ctxFor(senderB), recipient);
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
 
   const first = await interestService.runFilterCleanup(ctxFor(recipient));
   assert.equal(first.declined, 2);
@@ -360,7 +360,7 @@ test('runFilterCleanup never touches a non-pending interest (accepted survives a
 
   // Recipient tightens filters AFTER already accepting — an existing
   // match must not be retroactively affected, cleanup included.
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
   const result = await interestService.runFilterCleanup(ctxFor(recipient));
   assert.equal(result.declined, 0);
 
@@ -376,7 +376,7 @@ test('runFilterCleanup only ever acts on the CALLING user\'s own inbox — it ta
   await setSelfAnswer(pool, sender, 'has_children', 5);
 
   const interest = await interestService.sendInterest(ctxFor(sender), recipient);
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
 
   // otherUser has a pending interest of their own, unaffected by
   // recipient's filter — running cleanup as otherUser must not touch
@@ -403,7 +403,7 @@ test('runFilterCleanup uses ctx.clock for declined_at, not the wall clock', asyn
   const recipientCtx = buildCtx({ actor: userActor(recipient), clock: localClock });
 
   const interest = await interestService.sendInterest(senderCtx, recipient);
-  await setHardFilter(pool, recipient, 'has_children', 'lte', 2);
+  await setHardFilter(pool, recipient, 'qb:has_children', 'lte', 2);
   localClock.advanceHours(5);
 
   await interestService.runFilterCleanup(recipientCtx);
@@ -458,7 +458,7 @@ test('narrowing filters drastically and then widening them back again leaves eve
   // remaining pending senders (and would have excluded the now-accepted
   // one too, were it evaluated) if it were ever applied to them.
   await filterService.updateMyFilters(ctxFor(recipient), [
-    { filterKey: 'has_children', operator: 'lte', value: -1, enabled: true }, // excludes every possible self_value (1-5)
+    { filterKey: 'qb:has_children', operator: 'lte', value: -1, enabled: true }, // excludes every possible self_value (1-5)
   ]);
   await assertEverythingIntact();
 
@@ -472,14 +472,14 @@ test('narrowing filters drastically and then widening them back again leaves eve
   // 2) Narrow again, differently (overwriting the same filter key, plus
   // adding a second deal-breaker) — still nothing touched.
   await filterService.updateMyFilters(ctxFor(recipient), [
-    { filterKey: 'has_children', operator: 'eq', value: 999, enabled: true },
+    { filterKey: 'qb:has_children', operator: 'eq', value: 999, enabled: true },
     { filterKey: 'age_min', operator: 'gte', value: 90, enabled: true },
   ]);
   await assertEverythingIntact();
 
   // 3) Widen back out: disable/relax every filter again.
   await filterService.updateMyFilters(ctxFor(recipient), [
-    { filterKey: 'has_children', operator: 'gte', value: 0, enabled: false },
+    { filterKey: 'qb:has_children', operator: 'gte', value: 0, enabled: false },
     { filterKey: 'age_min', operator: 'gte', value: 0, enabled: false },
   ]);
   await assertEverythingIntact();

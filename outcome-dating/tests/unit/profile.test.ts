@@ -93,16 +93,28 @@ test('computeProfileCompleteness: matches the documented weighted formula as fie
   }
   assert.equal(await profile.computeProfileCompleteness(ctx, userId), 80);
 
-  // 5 answered questions -> +15 = 95
-  const { rows: questionRows } = await pool.query<{ id: string }>(
-    `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label)
-     SELECT 'q_' || gs, 'lifestyle', 'Q', 'L', 'R', 'PL', 'PR' FROM generate_series(1,5) gs RETURNING id`,
+  // 5 answered questions -> +15 = 95. ONE typed question bank
+  // (question_bank/user_question_answers, db/migrations/008_questions.sql)
+  // — replaces the OLD `questions`/`answers` tables this used to insert
+  // into directly (db/migrations/022_drop_old_question_bank.sql drops
+  // both). `computeProfileCompleteness` counts only `status = 'answered'`
+  // rows — see that function's own doc for why this is a deliberate,
+  // slightly narrower (more correct) mapping than the OLD bank's
+  // "any row counts" behavior.
+  const { rows: questionRows } = await pool.query<{ id: string; slug: string }>(
+    `INSERT INTO question_bank (slug, version, is_current, category, question_type, question_text, type_definition, active)
+     SELECT 'q_' || gs || '_' || $1, 1, true, 'lifestyle', 'scale', 'Q',
+            '{"type":"scale","min":1,"max":5,"minLabel":"low","maxLabel":"high","midLabel":"mid"}'::jsonb, true
+       FROM generate_series(1,5) gs
+     RETURNING id, slug`,
+    [userId],
   );
   for (const q of questionRows) {
-    await pool.query('INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, 3, 3)', [
-      userId,
-      q.id,
-    ]);
+    await pool.query(
+      `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+       VALUES ($1, $2, $3, 'answered', '3'::jsonb, '3'::jsonb, 'slight', now(), now())`,
+      [userId, q.slug, q.id],
+    );
   }
   assert.equal(await profile.computeProfileCompleteness(ctx, userId), 95);
 

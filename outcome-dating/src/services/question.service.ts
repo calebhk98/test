@@ -2,7 +2,6 @@ import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
 import { ConflictError, NotFoundError, ValidationError } from '../lib/errors.js';
-import type { Answer, AnswerValue, Question, QuestionPolarity } from '../domain/types.js';
 import { refreshScoresForUser } from './compatibility.service.js';
 import { getMyFilters, updateMyFilters } from './filter.service.js';
 import type { UpdateFilterInput } from './filter.service.js';
@@ -33,70 +32,43 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  * question.service — THE compatibility question bank and per-user answers.
  * Spec: §8, §24.3 (routes), §27 (admin question manager).
  *
- * Owning agent: B (question-system cutover build).
+ * Owning agent: B (question-system cutover build); finished by the
+ * follow-up retirement build (see below).
  *
- * CUTOVER (question-system unification): this file used to also own a
- * SECOND, OLDER question bank (`questions`/`answers`, a flat 1-5
- * self/partner pair with no type or importance information). Every
- * USER-REACHABLE and SCORING/FILTERING surface now uses the ONE typed
- * bank below exclusively:
- *   - `GET /questions`, `GET/PUT /me/answers` (src/http/routes/questions.routes.ts,
- *     owned by this build) now serve the typed bank, not the old one.
+ * CUTOVER (question-system unification) — COMPLETE. This file used to
+ * also own a SECOND, OLDER question bank (`questions`/`answers`, a flat
+ * 1-5 self/partner pair with no type or importance information). Every
+ * surface now uses the ONE typed bank below exclusively:
+ *   - `GET /questions`, `GET/PUT /me/answers` (src/http/routes/questions.routes.ts)
+ *     serve the typed bank.
  *   - `compatibility.service.ts` scores exclusively from the typed bank
- *     (`user_question_answers`) — it no longer reads `answers` at all.
- *   - `filter.service.ts` resolves candidate attributes for anything not
- *     a structured profile field exclusively against the typed bank
- *     (`qb:`-prefixed filter keys) — it no longer resolves a bare slug
- *     against the old `answers`/`questions` tables.
- *   - `src/seed.ts` seeds ONLY the typed bank; the old bank is seeded with
- *     nothing, so a fresh install has zero old-bank rows.
- *   - `listActiveQuestions`/`getMyAnswers` (the OLD read path this file
- *     used to expose) are deleted outright — nothing here calls the old
- *     bank's read path anymore.
- *
- * WHAT COULD NOT BE FULLY RETIRED, AND WHY (reported; this is the one
- * place this build did not reach a clean, single-bank end state): the
- * `questions`/`answers` TABLES themselves, and four of this file's OLD
- * functions — `putMyAnswers`, `adminListQuestions`, `adminCreateQuestion`,
- * `adminUpdateQuestion` — are still present below, because FOUR files
- * outside this build's file-ownership boundary still have a hard,
- * unavoidable dependency on them that this build is not permitted to fix
- * by editing those files directly:
- *   - `src/http/routes/admin.routes.ts` (not owned by this build) calls
- *     `adminListQuestions`/`adminCreateQuestion`/`adminUpdateQuestion`
- *     directly to back the §27 admin "question manager" panel
- *     (`GET/POST /admin/questions`, `PATCH /admin/questions/:id` — routes
- *     `tests/http/routeTable.test.ts`, itself not owned by this build,
- *     hardcodes as required). Repointing the admin panel at the typed
- *     bank's `adminListQuestionBank`/`adminCreateQuestionBankEntry`/
- *     `adminUpdateQuestionBankEntry` instead requires editing
- *     `admin.routes.ts` — flagged in this build's report as the single
- *     highest-priority follow-up, since it's the one remaining place an
- *     admin could still grow the old bank and recreate the duplication
- *     this whole cutover exists to eliminate.
- *   - `src/services/behavioralPrompt.service.ts` (explicitly DO NOT
- *     TOUCH, per the task's ownership list, beyond the minimal compile-
- *     preserving repointing already made there — see that file's own
- *     CUTOVER NOTE) still calls `putMyAnswers` as its one remaining old-
- *     bank write path for a legacy trigger kind this build did not
- *     migrate.
- *   - `src/services/profile.service.ts` (data export / account deletion)
- *     and `src/services/postDateFeedback.service.ts` (the post-date
- *     "matching signal" suggestion sweep) — both explicitly DO NOT TOUCH
- *     — read/write the `answers`/`questions` TABLES directly via raw SQL
- *     (not through this file), so even functions this file could
- *     otherwise delete cannot make the tables themselves droppable.
- * Because of the last point, db/migrations/019_question_cutover.sql does
- * NOT drop `questions`/`answers` — doing so would break active,
- * explicitly off-limits/out-of-ownership-boundary code outright (a
- * runtime SQL error against a dropped table), which is a worse outcome
- * than leaving an inert, no-longer-user-reachable table pair in place.
- * See that migration's own header for the full reasoning. Nothing new is
- * ever written to the old tables by this build going forward except via
- * the one remaining legacy path above (`putMyAnswers`, called only from
- * `behavioralPrompt.service.ts`) and whatever an admin does through the
- * still-live `/admin/questions*` panel (the one genuine residual risk —
- * see the `admin.routes.ts` bullet above).
+ *     (`user_question_answers`).
+ *   - `filter.service.ts` resolves every non-structured filter key
+ *     exclusively against the typed bank (`qb:`-prefixed filter keys) —
+ *     the old bank's bare-slug resolution shim has been removed.
+ *   - `src/http/routes/admin.routes.ts`'s §27 admin question-manager panel
+ *     (`GET/POST /admin/questions`, `PATCH /admin/questions/:id`) now
+ *     calls `adminListQuestionBank`/`adminCreateQuestionBankEntry`/
+ *     `adminUpdateQuestionBankEntry` below — an admin can no longer create
+ *     or edit a question in a bank the product never scores.
+ *   - `src/services/behavioralPrompt.service.ts` detects patterns and
+ *     records/answers suggestions against the typed bank
+ *     (`putMyQuestionAnswer`, via `getQuestionBankSlugById` below).
+ *   - `src/services/profile.service.ts` counts/erases
+ *     `user_question_answers` rows (profile completeness, account
+ *     deletion) instead of `answers`.
+ *   - `src/services/postDateFeedback.service.ts`'s matching-signal sweep
+ *     joins `user_question_answers`/`question_bank` and scores divergence
+ *     via `src/domain/questions/typeHandlers.ts#satisfaction` (generalizes
+ *     to every question type, not just `scale`) instead of a raw 1-5
+ *     numeric diff on the old bank.
+ *   - `src/seed.ts` seeds ONLY the typed bank.
+ *   - The old `putMyAnswers`/`adminListQuestions`/`adminCreateQuestion`/
+ *     `adminUpdateQuestion` functions and their `questions`/`answers` row
+ *     mappings are deleted outright — nothing in this codebase calls the
+ *     old bank's read or write path anymore, and
+ *     `db/migrations/022_drop_old_question_bank.sql` drops both tables.
+ *     See that migration's header for the full retirement accounting.
  *
  * Invariants:
  *  - A question's PREFERENCE is always a VALUE + an IMPORTANCE — never a
@@ -128,267 +100,6 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  * point for whoever finalizes INTERFACES.md's graph (either add a
  * `discovery -> question` edge, or give tags their own module next time).
  */
-
-// =====================================================================
-// LEGACY REMNANT — the OLD question bank's row mapping + the four
-// functions three out-of-ownership-boundary files still call directly.
-// See the file-level "WHAT COULD NOT BE FULLY RETIRED" doc above for
-// exactly which callers and why. NOTHING ELSE in this codebase calls
-// anything in this section: no route this build owns, no seed data, no
-// scoring, no filtering — it exists solely to keep those three external
-// call sites compiling and functioning against tables that must stay for
-// their sake. Do not add a fourth caller.
-// =====================================================================
-
-interface QuestionRow {
-  id: string;
-  slug: string;
-  category: string;
-  question_text: string;
-  self_left_label: string;
-  self_right_label: string;
-  partner_left_label: string;
-  partner_right_label: string;
-  weight: number;
-  polarity: QuestionPolarity;
-  sensitive: boolean;
-  active: boolean;
-  created_at: Date;
-  updated_at: Date;
-}
-
-function questionFromRow(row: QuestionRow): Question {
-  return {
-    id: row.id,
-    slug: row.slug,
-    category: row.category,
-    questionText: row.question_text,
-    selfLeftLabel: row.self_left_label,
-    selfRightLabel: row.self_right_label,
-    partnerLeftLabel: row.partner_left_label,
-    partnerRightLabel: row.partner_right_label,
-    weight: row.weight,
-    polarity: row.polarity,
-    sensitive: row.sensitive,
-    active: row.active,
-    createdAt: row.created_at,
-    updatedAt: row.updated_at,
-  };
-}
-
-interface AnswerRow {
-  user_id: string;
-  question_id: string;
-  self_value: AnswerValue;
-  partner_value: AnswerValue;
-  updated_at: Date;
-}
-
-function answerFromRow(row: AnswerRow): Answer {
-  return {
-    userId: row.user_id,
-    questionId: row.question_id,
-    selfValue: row.self_value,
-    partnerValue: row.partner_value,
-    updatedAt: row.updated_at,
-  };
-}
-
-export interface AnswerInput {
-  questionId: string;
-  selfValue: AnswerValue;
-  partnerValue: AnswerValue;
-}
-
-const answerValueSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5), z.null()]);
-
-const answerInputSchema = z.object({
-  questionId: z.string().uuid(),
-  selfValue: answerValueSchema,
-  partnerValue: answerValueSchema,
-});
-
-const putMyAnswersSchema = z.array(answerInputSchema).min(1);
-
-/**
- * OLD-bank answer write path. The only remaining caller is
- * `behavioralPrompt.service#respondToSuggestion`'s legacy trigger kind
- * (see this file's "WHAT COULD NOT BE FULLY RETIRED" doc) — every
- * user-reachable answer write goes through `putMyQuestionAnswer` instead.
- * Still triggers `compatibility.service#refreshScoresForUser` (harmless
- * and correct: that function now recomputes exclusively from the NEW
- * bank regardless of what triggered it).
- */
-export async function putMyAnswers(ctx: Ctx, answers: AnswerInput[]): Promise<Answer[]> {
-  const { userId } = requireUserActor(ctx);
-  const parsed = putMyAnswersSchema.parse(answers);
-
-  const questionIds = parsed.map((a) => a.questionId);
-  const { rows: questionRows } = await ctx.db.query<Pick<QuestionRow, 'id' | 'sensitive' | 'active'>>(
-    'SELECT id, sensitive, active FROM questions WHERE id = ANY($1::uuid[])',
-    [questionIds],
-  );
-  const questionsById = new Map(questionRows.map((q) => [q.id, q]));
-
-  for (const input of parsed) {
-    const question = questionsById.get(input.questionId);
-    if (!question) {
-      throw new NotFoundError(`Unknown question id "${input.questionId}"`, { questionId: input.questionId });
-    }
-    if (!question.active) {
-      throw new ValidationError(`Question "${input.questionId}" is not active`, { questionId: input.questionId });
-    }
-    if (!question.sensitive && (input.selfValue === null || input.partnerValue === null)) {
-      throw new ValidationError(
-        '"Prefer not to say" is not an option on this question. Please answer both parts, or skip it for now.',
-        { questionId: input.questionId },
-      );
-    }
-  }
-
-  const results: Answer[] = [];
-  for (const input of parsed) {
-    const { rows } = await ctx.db.query<AnswerRow>(
-      `INSERT INTO answers (user_id, question_id, self_value, partner_value, updated_at)
-       VALUES ($1, $2, $3, $4, $5)
-       ON CONFLICT (user_id, question_id) DO UPDATE SET
-         self_value = EXCLUDED.self_value,
-         partner_value = EXCLUDED.partner_value,
-         updated_at = EXCLUDED.updated_at
-       RETURNING *`,
-      [userId, input.questionId, input.selfValue, input.partnerValue, ctx.clock.now()],
-    );
-    results.push(answerFromRow(rows[0]!));
-  }
-
-  await refreshScoresForUser(ctx, userId);
-
-  return results;
-}
-
-// ---- Admin (§27 question manager) — see "WHAT COULD NOT BE FULLY
-// RETIRED" doc: `src/http/routes/admin.routes.ts` (not owned by this
-// build) still calls these three directly. ----
-
-export interface CreateQuestionInput {
-  slug: string;
-  category: string;
-  questionText: string;
-  selfLeftLabel: string;
-  selfRightLabel: string;
-  partnerLeftLabel: string;
-  partnerRightLabel: string;
-  weight: number;
-  polarity: 'standard' | 'reversed';
-  sensitive: boolean;
-}
-
-const createQuestionSchema = z.object({
-  slug: z.string().min(1).max(100),
-  category: z.string().min(1).max(100),
-  questionText: z.string().min(1),
-  selfLeftLabel: z.string().min(1),
-  selfRightLabel: z.string().min(1),
-  partnerLeftLabel: z.string().min(1),
-  partnerRightLabel: z.string().min(1),
-  weight: z.number().min(0),
-  polarity: z.enum(['standard', 'reversed']),
-  sensitive: z.boolean(),
-});
-
-function requireAdmin(ctx: Ctx): void {
-  if (ctx.actor.type !== 'admin') {
-    throw new ValidationError('Only admins may manage the question bank', { actorType: ctx.actor.type });
-  }
-}
-
-export async function adminListQuestions(ctx: Ctx): Promise<Question[]> {
-  requireAdmin(ctx);
-  const { rows } = await ctx.db.query<QuestionRow>('SELECT * FROM questions ORDER BY category, question_text');
-  return rows.map(questionFromRow);
-}
-
-export async function adminCreateQuestion(ctx: Ctx, input: CreateQuestionInput): Promise<Question> {
-  requireAdmin(ctx);
-  const parsed = createQuestionSchema.parse(input);
-
-  const { rows } = await ctx.db.query<QuestionRow>(
-    `INSERT INTO questions
-       (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active, created_at, updated_at)
-     VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,true,$11,$11)
-     RETURNING *`,
-    [
-      parsed.slug,
-      parsed.category,
-      parsed.questionText,
-      parsed.selfLeftLabel,
-      parsed.selfRightLabel,
-      parsed.partnerLeftLabel,
-      parsed.partnerRightLabel,
-      parsed.weight,
-      parsed.polarity,
-      parsed.sensitive,
-      ctx.clock.now(),
-    ],
-  );
-  return questionFromRow(rows[0]!);
-}
-
-const updateQuestionSchema = createQuestionSchema.partial().extend({ active: z.boolean().optional() });
-
-export async function adminUpdateQuestion(
-  ctx: Ctx,
-  questionId: string,
-  patch: Partial<CreateQuestionInput> & { active?: boolean },
-): Promise<Question> {
-  requireAdmin(ctx);
-  const parsed = updateQuestionSchema.parse(patch);
-
-  const { rows: existingRows } = await ctx.db.query<QuestionRow>('SELECT * FROM questions WHERE id = $1', [questionId]);
-  const existing = existingRows[0];
-  if (!existing) {
-    throw new NotFoundError(`Question "${questionId}" not found`, { questionId });
-  }
-
-  const merged = {
-    slug: parsed.slug ?? existing.slug,
-    category: parsed.category ?? existing.category,
-    question_text: parsed.questionText ?? existing.question_text,
-    self_left_label: parsed.selfLeftLabel ?? existing.self_left_label,
-    self_right_label: parsed.selfRightLabel ?? existing.self_right_label,
-    partner_left_label: parsed.partnerLeftLabel ?? existing.partner_left_label,
-    partner_right_label: parsed.partnerRightLabel ?? existing.partner_right_label,
-    weight: parsed.weight ?? existing.weight,
-    polarity: parsed.polarity ?? existing.polarity,
-    sensitive: parsed.sensitive ?? existing.sensitive,
-    active: parsed.active ?? existing.active,
-  };
-
-  const { rows } = await ctx.db.query<QuestionRow>(
-    `UPDATE questions SET
-       slug = $2, category = $3, question_text = $4, self_left_label = $5, self_right_label = $6,
-       partner_left_label = $7, partner_right_label = $8, weight = $9, polarity = $10, sensitive = $11,
-       active = $12, updated_at = $13
-     WHERE id = $1
-     RETURNING *`,
-    [
-      questionId,
-      merged.slug,
-      merged.category,
-      merged.question_text,
-      merged.self_left_label,
-      merged.self_right_label,
-      merged.partner_left_label,
-      merged.partner_right_label,
-      merged.weight,
-      merged.polarity,
-      merged.sensitive,
-      merged.active,
-      ctx.clock.now(),
-    ],
-  );
-  return questionFromRow(rows[0]!);
-}
 
 // =====================================================================
 // §8.4 private tags — reciprocal disclosure (see SIGNATURE ADDITION note
@@ -619,6 +330,21 @@ export async function listActiveQuestionBank(
 export async function getCurrentQuestionBySlug(ctx: Ctx, slug: string): Promise<QuestionDefinition | null> {
   const found = await loadCurrentQuestionsBySlug(ctx, [slug]);
   return found.get(slug) ?? null;
+}
+
+/**
+ * Resolves a `question_bank.id` (ANY version, not necessarily the current
+ * one) back to its stable slug. For a caller that only ever stored a
+ * `question_bank` id at some earlier point (e.g.
+ * `behavioralPrompt.service.ts` pinning a suggestion to the version that
+ * was current when the pattern was detected) and later needs to act on
+ * "whatever is current for that question now" — the normal
+ * `getCurrentQuestionBySlug` lookup, keyed off the slug this returns.
+ * Returns `null` if no `question_bank` row has ever had this id.
+ */
+export async function getQuestionBankSlugById(ctx: Ctx, id: string): Promise<string | null> {
+  const { rows } = await ctx.db.query<{ slug: string }>('SELECT slug FROM question_bank WHERE id = $1', [id]);
+  return rows[0]?.slug ?? null;
 }
 
 // =====================================================================
