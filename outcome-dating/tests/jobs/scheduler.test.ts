@@ -36,7 +36,7 @@ function makeDeps(): AppDeps {
   };
 }
 
-test('the registry lists all 15 jobs by their spec-stable names', () => {
+test('the registry lists all 17 jobs by their spec-stable names', () => {
   const names = ALL_JOBS.map((j) => j.name).sort();
   assert.deepEqual(names, [
     'chat_decay',
@@ -50,6 +50,8 @@ test('the registry lists all 15 jobs by their spec-stable names', () => {
     'notification_delivery',
     'payment_reconciliation',
     'photo_ab_stats',
+    'retention_sweep',
+    'stats_aggregation',
     'ticketed_completion_sweep',
     'trust_score_recalculation',
     'venue_payout_settlement',

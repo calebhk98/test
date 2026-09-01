@@ -48,10 +48,13 @@
 --       exclusively (src/http/routes/questions.routes.ts).
 --     - `compatibility.service.ts` scores exclusively from
 --       `user_question_answers` — it no longer reads `answers` at all.
---     - `filter.service.ts` resolves every non-structured filter key
---       exclusively against the typed bank (`qb:`-prefixed keys); a bare
---       old-bank slug (e.g. `smoking`) can no longer resolve to anything
---       (see the cleanup below).
+--     - `filter.service.ts` derives every NEW deal-breaker filter as a
+--       `qb:`-prefixed key against the typed bank exclusively (see
+--       question.service.ts's `syncDealBreakerFilters`); a bare, unprefixed
+--       filter key is a read-compatibility fallback for existing rows and
+--       out-of-scope test suites, not something anything new-bank-facing
+--       ever authors again (see filter.service.ts's own QUESTION-SYSTEM
+--       CUTOVER note for exactly why that fallback stayed).
 --     - `src/seed.ts` seeds ONLY the typed bank — a fresh install has
 --       zero rows in `questions`/`answers`, so there is nothing left to
 --       duplicate `children_intention`/`religious_practice`/

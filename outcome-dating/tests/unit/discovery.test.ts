@@ -429,18 +429,30 @@ test('getDiscoveryGrid: a zero-compatibility candidate who passes every filter s
   const goodMatch = await makeFullUser({ gender: 'man' });
   const zeroMatch = await makeFullUser({ gender: 'man' });
 
-  const questionIds: string[] = [];
+  // CUTOVER NOTE (question-system-cutover build, reported — this file is
+  // outside that build's file-ownership boundary and was otherwise left
+  // untouched): `compatibility.service.ts` now scores exclusively from the
+  // ONE typed question bank (`question_bank`/`user_question_answers` —
+  // db/migrations/008_questions.sql), not the OLD `questions`/`answers`
+  // pair this fixture used to plant. Repointed at the new bank so
+  // `goodMatch` actually produces a non-zero, better-than-`zeroMatch`
+  // score again — see src/services/question.service.ts's file-level
+  // CUTOVER doc for the full accounting.
   for (let i = 0; i < 3; i++) {
+    const slug = `disc-zero-q${i}-${seq}`;
     const { rows } = await pool.query<{ id: string }>(
-      `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
-       VALUES ($1, 'test', $1, 'l', 'r', 'l', 'r', 1, 'standard', false, true) RETURNING id`,
-      [`disc-zero-q${i}-${seq}`],
+      `INSERT INTO question_bank (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
+       VALUES ($1, 1, true, 'test', NULL, '{}', 'scale', $1, $2::jsonb, 1, false, true, 0.5) RETURNING id`,
+      [slug, JSON.stringify({ type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' })],
     );
-    questionIds.push(rows[0]!.id);
-  }
-  for (const qId of questionIds) {
-    await pool.query('INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, 5, 5)', [viewer, qId]);
-    await pool.query('INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, 5, 5)', [goodMatch, qId]);
+    const questionBankId = rows[0]!.id;
+    for (const userId of [viewer, goodMatch]) {
+      await pool.query(
+        `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+         VALUES ($1, $2, $3, 'answered', '5'::jsonb, '5'::jsonb, 'important', now(), now())`,
+        [userId, slug, questionBankId],
+      );
+    }
   }
   // zeroMatch never answers anything -> fewer than `minSharedQuestions`
   // shared answers -> compatibility.service's documented default score (0),
@@ -460,18 +472,21 @@ test('getDiscoveryGrid: a perfect compatibility score never overrides a failed h
   const viewer = await makeFullUser({ age: 30, gender: 'woman' });
   const candidate = await makeFullUser({ age: 50, gender: 'man' }); // outside the age filter set below
 
-  const questionIds: string[] = [];
+  // See CUTOVER NOTE above the previous test — repointed at the typed bank.
   for (let i = 0; i < 3; i++) {
+    const slug = `disc-invariant-q${i}-${seq}`;
     const { rows } = await pool.query<{ id: string }>(
-      `INSERT INTO questions (slug, category, question_text, self_left_label, self_right_label, partner_left_label, partner_right_label, weight, polarity, sensitive, active)
-       VALUES ($1, 'test', $1, 'l', 'r', 'l', 'r', 1, 'standard', false, true) RETURNING id`,
-      [`disc-invariant-q${i}-${seq}`],
+      `INSERT INTO question_bank (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
+       VALUES ($1, 1, true, 'test', NULL, '{}', 'scale', $1, $2::jsonb, 1, false, true, 0.5) RETURNING id`,
+      [slug, JSON.stringify({ type: 'scale', min: 1, max: 5, minLabel: 'low', maxLabel: 'high', midLabel: 'mid' })],
     );
-    questionIds.push(rows[0]!.id);
-  }
-  for (const qId of questionIds) {
+    const questionBankId = rows[0]!.id;
     for (const userId of [viewer, candidate]) {
-      await pool.query('INSERT INTO answers (user_id, question_id, self_value, partner_value) VALUES ($1, $2, 5, 5)', [userId, qId]);
+      await pool.query(
+        `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+         VALUES ($1, $2, $3, 'answered', '5'::jsonb, '5'::jsonb, 'important', now(), now())`,
+        [userId, slug, questionBankId],
+      );
     }
   }
 

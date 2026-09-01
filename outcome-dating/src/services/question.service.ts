@@ -56,9 +56,9 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  *
  * WHAT COULD NOT BE FULLY RETIRED, AND WHY (reported; this is the one
  * place this build did not reach a clean, single-bank end state): the
- * `questions`/`answers` TABLES themselves, and three of this file's OLD
+ * `questions`/`answers` TABLES themselves, and four of this file's OLD
  * functions — `putMyAnswers`, `adminListQuestions`, `adminCreateQuestion`,
- * `adminUpdateQuestion` — are still present below, because THREE files
+ * `adminUpdateQuestion` — are still present below, because FOUR files
  * outside this build's file-ownership boundary still have a hard,
  * unavoidable dependency on them that this build is not permitted to fix
  * by editing those files directly:
@@ -87,14 +87,16 @@ import { passesAvoidTagFilter } from '../domain/questions/tags.js';
  *     (not through this file), so even functions this file could
  *     otherwise delete cannot make the tables themselves droppable.
  * Because of the last point, db/migrations/019_question_cutover.sql does
- * NOT drop `questions`/`answers` — doing so would break two active,
- * explicitly off-limits services outright (a runtime SQL error against a
- * dropped table), which is a worse outcome than leaving an inert, no-
- * longer-user-reachable table pair in place. See that migration's own
- * header for the full reasoning and the cleanup it DOES perform (retiring
- * every `hard_filters` row that can no longer resolve against anything).
- * Nothing new is ever written to the old tables by this build going
- * forward except via the one remaining legacy path above.
+ * NOT drop `questions`/`answers` — doing so would break active,
+ * explicitly off-limits/out-of-ownership-boundary code outright (a
+ * runtime SQL error against a dropped table), which is a worse outcome
+ * than leaving an inert, no-longer-user-reachable table pair in place.
+ * See that migration's own header for the full reasoning. Nothing new is
+ * ever written to the old tables by this build going forward except via
+ * the one remaining legacy path above (`putMyAnswers`, called only from
+ * `behavioralPrompt.service.ts`) and whatever an admin does through the
+ * still-live `/admin/questions*` panel (the one genuine residual risk —
+ * see the `admin.routes.ts` bullet above).
  *
  * Invariants:
  *  - A question's PREFERENCE is always a VALUE + an IMPORTANCE — never a
