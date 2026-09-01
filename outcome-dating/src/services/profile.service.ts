@@ -4,6 +4,8 @@ import { requireUserActor } from '../lib/ctx.js';
 import { ForbiddenError, NotFoundError, ValidationError } from '../lib/errors.js';
 import type { Profile, TrustLevel } from '../domain/types.js';
 import * as discovery from './discovery.service.js';
+import { BODY_TYPES, type BodyType } from '../domain/units/bodyType.js';
+import { resolveDefaultUnitPreference, unitPreferenceSchema, type UnitPreference } from '../domain/units/preference.js';
 
 /**
  * profile.service — the user-editable profile (§7.1) and the public view
@@ -30,6 +32,24 @@ import * as discovery from './discovery.service.js';
  * another service importing from `profile.service` (only the reverse:
  * `profile -> discovery`), so adding exports here cannot break a sibling's
  * compile. Flagged in the build report for the API agent to route.
+ *
+ * PHYSICAL ATTRIBUTES + UNITS (this build; no § reference — product
+ * decision, `db/migrations/009_units_attributes.sql`). `profiles` gains
+ * `height_cm`/`weight_g` (both optional, both canonical — see
+ * `src/domain/units/`, never a display unit), `weight_visible` (whether
+ * `weight_g` appears on `PublicProfileView` at all — see that type's own
+ * doc below), `body_type` (optional, categorical — `src/domain/units/
+ * bodyType.ts`), and `unit_preference` (`'metric' | 'imperial'`,
+ * presentation-only: changing it NEVER rewrites `height_cm`/`weight_g`,
+ * see `tests/unit/profileAttributes.test.ts`). `Profile` (`domain/
+ * types.ts`, not owned by this agent) predates these fields, so
+ * `getMyProfile`/`updateMyProfile` return `ProfileWithAttributes` below —
+ * a strict superset of `Profile` — rather than editing that file; every
+ * existing caller typed against `Profile` keeps compiling unchanged
+ * (structural typing, extra fields on the returned object are not a type
+ * error). `http/serializers/profile.ts` (frozen, `src/http/**`) does not
+ * yet forward these new fields to the wire — flagged in this build's
+ * report for that agent to wire in.
  */
 
 export interface UpdateProfileInput {
@@ -42,6 +62,16 @@ export interface UpdateProfileInput {
   gender?: string;
   seeking?: string;
   relationshipIntention?: string;
+  /** Canonical whole centimetres (see `src/domain/units/height.ts`). Optional — a blank height must not exclude the user from anyone's results unless a viewer's height filter has `excludeIfUnset: true` (see `filter.service.ts`). */
+  heightCm?: number;
+  /** Canonical whole grams (see `src/domain/units/weight.ts`). Optional, same non-exclusion default as `heightCm`. */
+  weightG?: number;
+  /** Whether `weightG` appears on this user's `PublicProfileView` at all. Defaults to `true` (visible) — see that type's doc for why "hidden" means fully omitted, not sent-and-masked. */
+  weightVisible?: boolean;
+  /** Self-described, categorical — see `src/domain/units/bodyType.ts`. Optional. */
+  bodyType?: BodyType;
+  /** Presentation-only — see this file's module doc "PHYSICAL ATTRIBUTES + UNITS". Never affects a stored measure. */
+  unitPreference?: UnitPreference;
   /**
    * Required to be `true` when the patch touches a "critical" field
    * (currently: gender, seeking, relationshipIntention, age — the fields
@@ -65,6 +95,38 @@ export interface PublicProfileView {
   trustLevel: TrustLevel;
   /** Public + reciprocally-visible tags only (§8.4) — never a tag the viewer doesn't share when it's `private_reciprocal`. */
   visibleInterestTagNames: string[];
+  /** Canonical whole centimetres, or `null` if unset. Always present when set — height has no per-user hide toggle (only weight does; see `weightG` below). */
+  heightCm: number | null;
+  /** Self-described categorical value, or `null` if unset. */
+  bodyType: BodyType | null;
+  /**
+   * Canonical whole grams. OPTIONAL KEY, not `number | null`: this
+   * property is only ever set on the returned object when the profile
+   * owner has `weightVisible: true` AND has actually set a weight —
+   * `buildPublicProfileView` never assigns it otherwise. This mirrors the
+   * `latitude`/`longitude` discipline this file's own module doc
+   * documents for location: a hidden weight is not sent-and-hidden, it is
+   * structurally ABSENT from the object a caller receives (`'weightG' in
+   * view` is `false`), so no serializer downstream can leak it by
+   * forgetting to check a flag.
+   */
+  weightG?: number;
+}
+
+/**
+ * `Profile` (`domain/types.ts`, not owned by this agent) plus this
+ * build's physical-attribute/unit fields — see the module doc
+ * "PHYSICAL ATTRIBUTES + UNITS". A strict superset, never edited in
+ * place: `getMyProfile`/`updateMyProfile` return this instead of bare
+ * `Profile` so every existing field stays exactly where callers typed
+ * against `Profile` expect it.
+ */
+export interface ProfileWithAttributes extends Profile {
+  heightCm: number | null;
+  weightG: number | null;
+  weightVisible: boolean;
+  bodyType: BodyType | null;
+  unitPreference: UnitPreference;
 }
 
 /** §30.8 static warning copy — never generated text. Mirrors the spec's own example ("This answer may significantly change your matches.") for the profile-field-change case. */
@@ -85,6 +147,16 @@ const UpdateProfileSchema = z.object({
   gender: z.string().trim().min(1).max(50).optional(),
   seeking: z.string().trim().min(1).max(50).optional(),
   relationshipIntention: z.string().trim().min(1).max(50).optional(),
+  // Bounds mirror db/migrations/009_units_attributes.sql's CHECK
+  // constraints exactly — kept in sync deliberately (see that migration's
+  // comment) so an out-of-range value is rejected here, at the validation
+  // boundary, with a ValidationError, rather than surfacing as an opaque
+  // Postgres constraint-violation error.
+  heightCm: z.number().int().min(100).max(250).optional(),
+  weightG: z.number().int().min(20000).max(300000).optional(),
+  weightVisible: z.boolean().optional(),
+  bodyType: z.enum(BODY_TYPES).optional(),
+  unitPreference: unitPreferenceSchema.optional(),
   confirmCriticalChange: z.boolean().optional(),
 });
 
@@ -106,9 +178,14 @@ interface ProfileRow {
   relationship_intention: string;
   profile_completeness: number;
   updated_at: Date;
+  height_cm: number | null;
+  weight_g: number | null;
+  weight_visible: boolean;
+  body_type: string | null;
+  unit_preference: string;
 }
 
-function mapProfile(row: ProfileRow): Profile {
+function mapProfile(row: ProfileRow): ProfileWithAttributes {
   return {
     userId: row.user_id,
     displayName: row.display_name,
@@ -123,13 +200,20 @@ function mapProfile(row: ProfileRow): Profile {
     relationshipIntention: row.relationship_intention,
     profileCompleteness: row.profile_completeness,
     updatedAt: row.updated_at,
+    heightCm: row.height_cm,
+    weightG: row.weight_g,
+    weightVisible: row.weight_visible,
+    bodyType: row.body_type as BodyType | null,
+    unitPreference: row.unit_preference as UnitPreference,
   };
 }
 
+const PROFILE_ROW_COLUMNS =
+  'user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at, height_cm, weight_g, weight_visible, body_type, unit_preference';
+
 async function fetchProfileRow(ctx: Ctx, userId: string): Promise<ProfileRow | undefined> {
   const { rows } = await ctx.db.query<ProfileRow>(
-    `SELECT user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at
-     FROM profiles WHERE user_id = $1`,
+    `SELECT ${PROFILE_ROW_COLUMNS} FROM profiles WHERE user_id = $1`,
     [userId],
   );
   return rows[0];
@@ -139,7 +223,7 @@ async function fetchProfileRow(ctx: Ctx, userId: string): Promise<ProfileRow | u
 // getMyProfile / updateMyProfile
 // =====================================================================
 
-export async function getMyProfile(ctx: Ctx): Promise<Profile> {
+export async function getMyProfile(ctx: Ctx): Promise<ProfileWithAttributes> {
   const { userId } = requireUserActor(ctx);
   const row = await fetchProfileRow(ctx, userId);
   if (!row) {
@@ -149,7 +233,7 @@ export async function getMyProfile(ctx: Ctx): Promise<Profile> {
 }
 
 /** Upserts the caller's profile and recomputes `profileCompleteness` (§9.4). */
-export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Promise<Profile> {
+export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Promise<ProfileWithAttributes> {
   const { userId } = requireUserActor(ctx);
   const parsed = UpdateProfileSchema.parse(patch);
 
@@ -194,13 +278,22 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
     gender: parsed.gender ?? existing?.gender,
     seeking: parsed.seeking ?? existing?.seeking,
     relationshipIntention: parsed.relationshipIntention ?? existing?.relationship_intention,
+    // Optional physical attributes — never required (see UpdateProfileSchema/`required` above), so `existing` may be absent and the field simply stays null.
+    heightCm: parsed.heightCm ?? existing?.height_cm ?? null,
+    weightG: parsed.weightG ?? existing?.weight_g ?? null,
+    weightVisible: parsed.weightVisible ?? existing?.weight_visible ?? true,
+    bodyType: parsed.bodyType ?? existing?.body_type ?? null,
+    // No country/locale field exists on this table to infer from (see
+    // src/domain/units/preference.ts) — resolveDefaultUnitPreference(null)
+    // always yields the documented static default (metric) today.
+    unitPreference: parsed.unitPreference ?? existing?.unit_preference ?? resolveDefaultUnitPreference(null),
   };
 
   const now = ctx.clock.now();
 
   const { rows } = await ctx.db.query<ProfileRow>(
-    `INSERT INTO profiles (user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at)
-     VALUES ($1, $2, $3, $4, $5, $6, true, $7, $8, $9, $10, 0, $11)
+    `INSERT INTO profiles (user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at, height_cm, weight_g, weight_visible, body_type, unit_preference)
+     VALUES ($1, $2, $3, $4, $5, $6, true, $7, $8, $9, $10, 0, $11, $12, $13, $14, $15, $16)
      ON CONFLICT (user_id) DO UPDATE SET
        display_name = EXCLUDED.display_name,
        bio = EXCLUDED.bio,
@@ -211,8 +304,13 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
        gender = EXCLUDED.gender,
        seeking = EXCLUDED.seeking,
        relationship_intention = EXCLUDED.relationship_intention,
-       updated_at = EXCLUDED.updated_at
-     RETURNING user_id, display_name, bio, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness, updated_at`,
+       updated_at = EXCLUDED.updated_at,
+       height_cm = EXCLUDED.height_cm,
+       weight_g = EXCLUDED.weight_g,
+       weight_visible = EXCLUDED.weight_visible,
+       body_type = EXCLUDED.body_type,
+       unit_preference = EXCLUDED.unit_preference
+     RETURNING ${PROFILE_ROW_COLUMNS}`,
     [
       userId,
       merged.displayName,
@@ -225,6 +323,11 @@ export async function updateMyProfile(ctx: Ctx, patch: UpdateProfileInput): Prom
       merged.seeking,
       merged.relationshipIntention,
       now,
+      merged.heightCm,
+      merged.weightG,
+      merged.weightVisible,
+      merged.bodyType,
+      merged.unitPreference,
     ],
   );
 
@@ -329,7 +432,7 @@ export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetU
     [targetUserId, viewerId],
   );
 
-  return {
+  const view: PublicProfileView = {
     userId: targetUserId,
     displayName: targetProfile.display_name,
     age: targetProfile.age,
@@ -338,7 +441,16 @@ export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetU
     photoUrls: photoRows.map((r) => r.image_url),
     trustLevel: userRow.trust_level,
     visibleInterestTagNames: tagRows.map((r) => r.name),
+    heightCm: targetProfile.height_cm,
+    bodyType: targetProfile.body_type as BodyType | null,
   };
+  // See PublicProfileView's own doc: `weightG` is only ever ASSIGNED when
+  // visible+set — never assigned-then-nulled — so a hidden/unset weight is
+  // structurally absent from `view`, not merely masked.
+  if (targetProfile.weight_visible && targetProfile.weight_g != null) {
+    view.weightG = targetProfile.weight_g;
+  }
+  return view;
 }
 
 // =====================================================================
@@ -424,7 +536,7 @@ export async function deleteMyAccount(ctx: Ctx): Promise<void> {
   await ctx.db.query(`UPDATE users SET status = 'deleted', last_active_at = $2 WHERE id = $1`, [userId, now]);
 
   await ctx.db.query(
-    `UPDATE profiles SET display_name = 'Deleted user', bio = '', city = NULL, latitude = NULL, longitude = NULL, updated_at = $2 WHERE user_id = $1`,
+    `UPDATE profiles SET display_name = 'Deleted user', bio = '', city = NULL, latitude = NULL, longitude = NULL, height_cm = NULL, weight_g = NULL, body_type = NULL, updated_at = $2 WHERE user_id = $1`,
     [userId, now],
   );
 

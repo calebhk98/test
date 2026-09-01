@@ -109,7 +109,9 @@ async function notificationCount(userId: string, eventType: string): Promise<num
 test('sweepTicketedCompletionWindows: zero confirmations after the window closes -> no_show for both parties automatically, no human input', async () => {
   const pair = await setupPair();
   const dateProposalId = await ticketedFlow(pair, 2);
-  db.clock.advanceHours(2 + 72 + 1); // past scheduledEnd + default 72h no_scan_confirmation_hours
+  // Deadline = scheduledEnd (created 2h + 2h duration = 4h from now) + the
+  // default 72h no_scan_confirmation_hours = 76h from now; advance well past it.
+  db.clock.advanceHours(80);
 
   const sweepCtx = makeCtx(db, systemActor());
   const result = await dateProposalService.sweepTicketedCompletionWindows(sweepCtx);
@@ -138,7 +140,7 @@ test('sweepTicketedCompletionWindows: with a non-zero no_show_refund_percent, bo
   await db.config.set('date.no_show_refund_percent', 40, 'test-admin');
   const pair = await setupPair();
   const dateProposalId = await ticketedFlow(pair, 2);
-  db.clock.advanceHours(2 + 72 + 1);
+  db.clock.advanceHours(80); // well past the 76h deadline (see the previous test's comment)
 
   await dateProposalService.sweepTicketedCompletionWindows(makeCtx(db, systemActor()));
 
@@ -183,10 +185,10 @@ test('sweepTicketedCompletionWindows: the window still being open leaves a ticke
 test('sweepTicketedCompletionWindows: exactly one confirmation, window elapsed, nobody calls back -> disputed automatically', async () => {
   const pair = await setupPair();
   const dateProposalId = await ticketedFlow(pair, 2);
-  db.clock.advanceHours(3); // past scheduledEnd
+  db.clock.advanceHours(3); // past scheduledStart, registers a confirmation early
   await dateProposalService.confirmAttendance(pair.proposerCtx, dateProposalId);
 
-  db.clock.advanceHours(72); // window closes; the recipient never confirms and nobody calls confirmAttendance again
+  db.clock.advanceHours(76); // total ~79h from creation — well past the 76h deadline; the recipient never confirms and nobody calls confirmAttendance again
   const result = await dateProposalService.sweepTicketedCompletionWindows(makeCtx(db, systemActor()));
   assert.equal(result.autoDisputed, 1);
   assert.equal(result.autoNoShow, 0);
@@ -203,9 +205,11 @@ test('sweepTicketedCompletionWindows: exactly one confirmation, window elapsed, 
 
 async function reachDisputedState(pair: Pair, confirmingCtx: ReturnType<typeof makeCtx>): Promise<string> {
   const dateProposalId = await ticketedFlow(pair, 2);
-  db.clock.advanceHours(3); // past scheduledEnd
+  db.clock.advanceHours(3); // past scheduledStart, registers one confirmation early
   await dateProposalService.confirmAttendance(confirmingCtx, dateProposalId);
-  db.clock.advanceHours(73); // past the 72h no_scan_confirmation_hours window
+  // Total elapsed since creation must exceed the 76h deadline
+  // (scheduledEnd at +4h, plus the default 72h no_scan_confirmation_hours).
+  db.clock.advanceHours(76);
   const result = await dateProposalService.confirmAttendance(confirmingCtx, dateProposalId);
   assert.equal(result.dateProposal.status, 'disputed');
   return dateProposalId;
@@ -280,12 +284,12 @@ test('end-to-end no-human-input proof: ticketed -> (nobody scans, nobody confirm
   db.clock.advanceHours(3);
   await dateProposalService.confirmAttendance(pair.proposerCtx, dateProposalId); // one participant confirms; this is a normal user action, not an admin one
 
-  db.clock.advanceHours(72 + 1);
+  db.clock.advanceHours(76); // total ~79h — past the 76h no-scan-window deadline
   const systemCtx = makeCtx(db, systemActor());
   const sweep = await dateProposalService.sweepTicketedCompletionWindows(systemCtx);
   assert.equal(sweep.autoDisputed, 1);
 
-  db.clock.advanceHours(72 + 1);
+  db.clock.advanceHours(73); // total ~152h — past the 148h dispute-auto-resolve deadline
   const resolution = await disputeResolutionService.resolveDueDisputes(systemCtx);
   assert.equal(resolution.resolved, 1);
 

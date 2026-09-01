@@ -32,6 +32,7 @@ const LEDGER_TYPES: readonly LedgerEntryType[] = [
   'refund',
   'dispute',
   'chargeback',
+  'venue_payout', // decision-layer addition — see docs/conformance.md OQ-8
 ];
 
 const RecordEntrySchema = z

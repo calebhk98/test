@@ -22,7 +22,7 @@ import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapte
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 
-const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/odate_decisions';
+const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 
 function withDbName(url: string, dbName: string): string {
   const u = new URL(url);

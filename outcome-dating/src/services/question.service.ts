@@ -1,9 +1,32 @@
 import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
-import { NotFoundError, ValidationError } from '../lib/errors.js';
+import { ConflictError, NotFoundError, ValidationError } from '../lib/errors.js';
 import type { Answer, AnswerValue, Question, QuestionPolarity } from '../domain/types.js';
 import { refreshScoresForUser } from './compatibility.service.js';
+import {
+  IMPORTANCE_LEVELS,
+  TAG_INTENSITY_LEVELS,
+  deriveDealBreakerFilterRows,
+  getTypeHandler,
+  ladderPositionToPreference,
+  presentationFor,
+  selectNextQuestions,
+} from '../domain/questions/index.js';
+import type {
+  AnswerStatus,
+  DealBreakerFilterRow,
+  ImportanceLevel,
+  LadderPosition,
+  QuestionAnswerState,
+  QuestionDefinition,
+  QuestionType,
+  QuestionTypeDefinition,
+  SelectableQuestion,
+  SingleChoiceDefinition,
+  TagIntensity,
+} from '../domain/questions/index.js';
+import { passesAvoidTagFilter } from '../domain/questions/tags.js';
 
 /**
  * question.service — the compatibility question bank and per-user answers.

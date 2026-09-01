@@ -70,6 +70,27 @@ export interface FrequencyDefinition {
 export type QuestionTypeDefinition = ScaleDefinition | SingleChoiceDefinition | MultiChoiceDefinition | FrequencyDefinition;
 
 /**
+ * How a client should render this question's value+importance pair.
+ *
+ * `ladder` — a single ordered five-position control ("Deal breaker: no /
+ * Prefer no / Don't care / Prefer yes / Deal breaker: yes") that collapses
+ * the value and importance axes into one control. Only offered for
+ * `single_choice` questions with exactly two options — there is no
+ * "which side" for a scale/frequency/multi_choice question or a
+ * single_choice question with more than two options, so those keep the
+ * two separate controls (see `value_importance` below). See ladder.ts.
+ *
+ * `value_importance` — the two axes are shown as separate controls (a
+ * value picker plus a 5-level importance picker).
+ *
+ * This is computed server-side from a question's type definition (see
+ * `presentationFor` in ladder.ts) and attached to every `QuestionDefinition`
+ * a client receives — a client MUST NOT infer it from `type`/option count
+ * itself, so this field is what it reads instead.
+ */
+export type QuestionPresentation = 'ladder' | 'value_importance';
+
+/**
  * A single immutable version of a question. Editing a question's text or
  * options creates a NEW row with an incremented `version`; the previous
  * row keeps existing (see db/migrations/008_questions.sql
@@ -86,6 +107,8 @@ export interface QuestionDefinition {
   tags: string[];
   questionText: string;
   typeDef: QuestionTypeDefinition;
+  /** Explicit, server-computed — see `QuestionPresentation` above. Never inferred client-side. */
+  presentation: QuestionPresentation;
   /** Base weight before the importance multiplier (see importance.ts). Product-tunable per question, same role as the old `questions.weight` column. */
   baseWeight: number;
   sensitive: boolean;
