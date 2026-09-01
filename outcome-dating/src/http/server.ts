@@ -21,6 +21,7 @@ import { registerFilterRoutes } from './routes/filters.routes.js';
 import { registerDiscoveryRoutes } from './routes/discovery.routes.js';
 import { registerInterestRoutes } from './routes/interests.routes.js';
 import { registerConversationRoutes } from './routes/conversations.routes.js';
+import { registerMatchRoutes } from './routes/matches.routes.js';
 import { registerDateRoutes } from './routes/dates.routes.js';
 import { registerTicketRoutes } from './routes/tickets.routes.js';
 import { registerPaymentRoutes } from './routes/payments.routes.js';
@@ -54,6 +55,7 @@ export function buildServer(deps: AppDeps): FastifyInstance {
   registerDiscoveryRoutes(app, deps);
   registerInterestRoutes(app, deps);
   registerConversationRoutes(app, deps);
+  registerMatchRoutes(app, deps);
   registerDateRoutes(app, deps);
   registerTicketRoutes(app, deps);
   registerPaymentRoutes(app, deps);

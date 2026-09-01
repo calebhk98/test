@@ -24,7 +24,7 @@ import { FlagsService } from './config/flags.service.js';
 import { SystemClock } from './lib/time.js';
 import { createLogger } from './lib/logger.js';
 import { hashPassword } from './lib/hash.js';
-import { IMPORTANCE_LEVELS } from './domain/questions/index.js';
+import { IMPORTANCE_LEVELS, TAG_INTENSITY_LEVELS } from './domain/questions/index.js';
 import type { ImportanceLevel, QuestionTypeDefinition } from './domain/questions/index.js';
 
 // ---- deterministic PRNG (mulberry32) ----
@@ -885,6 +885,36 @@ const NEW_QUESTION_BANK: NewQuestionSeed[] = [
   },
 ];
 
+/**
+ * Generates a plausible (selfValue, preferenceValue) pair for one typed
+ * question, matching the exact shapes typeHandlers.ts validates
+ * (src/domain/questions/typeHandlers.ts) — a scalar for scale/frequency/
+ * single_choice-self, a set for single_choice-preference/multi_choice.
+ * Seed data bypasses the zod/service validation path for speed (like the
+ * rest of this file), so staying shape-correct here matters.
+ */
+function randomAnswerValuesForType(typeDef: QuestionTypeDefinition): { selfValue: unknown; preferenceValue: unknown } {
+  switch (typeDef.type) {
+    case 'scale':
+      return { selfValue: randInt(typeDef.min, typeDef.max), preferenceValue: randInt(typeDef.min, typeDef.max) };
+    case 'frequency':
+      return { selfValue: pick(typeDef.anchors).key, preferenceValue: pick(typeDef.anchors).key };
+    case 'single_choice': {
+      const selfValue = pick(typeDef.options).key;
+      const acceptableCount = randInt(1, Math.min(3, typeDef.options.length));
+      const preferenceValue = shuffle(typeDef.options).slice(0, acceptableCount).map((o) => o.key);
+      return { selfValue, preferenceValue };
+    }
+    case 'multi_choice': {
+      const selfCount = randInt(0, typeDef.options.length);
+      const prefCount = randInt(0, typeDef.options.length);
+      const selfValue = shuffle(typeDef.options).slice(0, selfCount).map((o) => o.key);
+      const preferenceValue = shuffle(typeDef.options).slice(0, prefCount).map((o) => o.key);
+      return { selfValue, preferenceValue };
+    }
+  }
+}
+
 // =====================================================================
 // Interest tags (§8.4) — a mix, some naturally stigma-prone (good for
 // exercising private/reciprocal visibility once that path is implemented).
@@ -969,6 +999,31 @@ async function main(): Promise<void> {
     questionIds.push(rows[0]!.id);
   }
   console.log(`  ${questionIds.length} questions`);
+
+  console.log('Seeding new typed question bank...');
+  const newBank: Array<{ id: string; slug: string; typeDef: QuestionTypeDefinition; sensitive: boolean }> = [];
+  for (const q of NEW_QUESTION_BANK) {
+    const { rows } = await pool.query<{ id: string }>(
+      `INSERT INTO question_bank
+         (slug, version, is_current, category, subcategory, tags, question_type, question_text, type_definition, base_weight, sensitive, active, answer_rate_hint)
+       VALUES ($1, 1, true, $2, $3, $4, $5, $6, $7::jsonb, $8, $9, true, $10)
+       RETURNING id`,
+      [
+        q.slug,
+        q.category,
+        q.subcategory ?? null,
+        q.tags ?? [],
+        q.typeDef.type,
+        q.questionText,
+        JSON.stringify(q.typeDef),
+        q.baseWeight,
+        q.sensitive ?? false,
+        q.answerRateHint ?? 0.5,
+      ],
+    );
+    newBank.push({ id: rows[0]!.id, slug: q.slug, typeDef: q.typeDef, sensitive: q.sensitive ?? false });
+  }
+  console.log(`  ${newBank.length} new-bank questions across ${new Set(NEW_QUESTION_BANK.map((q) => q.category)).size} categories`);
 
   console.log('Seeding interest tags...');
   const tagIds: string[] = [];
@@ -1090,6 +1145,63 @@ async function main(): Promise<void> {
       await pool.query(
         `INSERT INTO user_tags (user_id, tag_id, visibility) VALUES ($1,$2,$3)`,
         [userId, tagId, visibility],
+      );
+    }
+
+    // Tag intensity: roughly half of the tags a user holds get an
+    // intensity ("I bake" daily vs. once a quarter are different).
+    for (const tagId of userTagIds) {
+      if (rng() < 0.5) {
+        await pool.query(
+          `INSERT INTO user_tag_intensity (user_id, tag_id, intensity) VALUES ($1,$2,$3)`,
+          [userId, tagId, pick(TAG_INTENSITY_LEVELS)],
+        );
+      }
+    }
+
+    // Avoid tags: a minority of users avoid 1-2 tags they don't hold
+    // themselves ("do not show me people who list astrology").
+    if (rng() < 0.3) {
+      const avoidCandidates = tagIds.filter((id) => !userTagIds.includes(id));
+      const avoidTagIds = shuffle(avoidCandidates).slice(0, randInt(1, 2));
+      for (const tagId of avoidTagIds) {
+        await pool.query(`INSERT INTO user_avoid_tags (user_id, tag_id) VALUES ($1,$2)`, [userId, tagId]);
+      }
+    }
+
+    // New-bank answers: a subset of the 65 questions, mixing every status
+    // (answered / skipped / prefer_not_to_say) and every importance level
+    // (including irrelevant and deal_breaker) so the new scoring/selector/
+    // deal-breaker paths have realistic data to exercise. Users answer a
+    // SMALL subset, per the task brief, not the whole bank.
+    const questionsToTouch = shuffle(newBank).slice(0, randInt(20, 40));
+    for (const q of questionsToTouch) {
+      const roll = rng();
+      // Sensitive questions get "prefer not to say" noticeably more often.
+      const preferNotToSayThreshold = q.sensitive ? 0.18 : 0.05;
+      if (roll < preferNotToSayThreshold) {
+        await pool.query(
+          `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, answered_at, updated_at)
+           VALUES ($1, $2, $3, 'prefer_not_to_say', now(), now())`,
+          [userId, q.slug, q.id],
+        );
+        continue;
+      }
+      if (roll < preferNotToSayThreshold + 0.1) {
+        await pool.query(
+          `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, answered_at, updated_at)
+           VALUES ($1, $2, $3, 'skipped', now(), now())`,
+          [userId, q.slug, q.id],
+        );
+        continue;
+      }
+
+      const { selfValue, preferenceValue } = randomAnswerValuesForType(q.typeDef);
+      const importance: ImportanceLevel = pick(IMPORTANCE_LEVELS);
+      await pool.query(
+        `INSERT INTO user_question_answers (user_id, question_slug, question_bank_id, status, self_value, preference_value, importance, answered_at, updated_at)
+         VALUES ($1, $2, $3, 'answered', $4::jsonb, $5::jsonb, $6, now(), now())`,
+        [userId, q.slug, q.id, JSON.stringify(selfValue), JSON.stringify(preferenceValue), importance],
       );
     }
   }

@@ -36,8 +36,8 @@ export function pickMessageTemplate(coalescedCount: number, previewAllowed: bool
 /** Every extended event type this build enqueues through, in one place — doubles as the zod enum tuple for input validation (see outbox.ts). */
 export const EXTENDED_EVENT_TYPES = [
   ...(Object.keys(NOTIFICATION_TEMPLATES) as NotificationEventType[]),
-  'message_received',
-] as [ExtendedNotificationEventType, ...ExtendedNotificationEventType[]];
+  'message_received' as const,
+] as unknown as [ExtendedNotificationEventType, ...ExtendedNotificationEventType[]];
 
 const EXTENDED_EVENT_TYPE_SET: ReadonlySet<string> = new Set(EXTENDED_EVENT_TYPES);
 

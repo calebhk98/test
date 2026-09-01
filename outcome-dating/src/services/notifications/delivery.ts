@@ -1,4 +1,5 @@
 import type { Ctx } from '../../lib/ctx.js';
+import { withTransaction } from '../../db/tx.js';
 import { ForbiddenError } from '../../lib/errors.js';
 import { NOTIFICATION_CONFIG, backoffSeconds } from './config.js';
 import { pruneInvalidToken, listActiveDeviceTokensForUser } from './devices.js';
@@ -92,15 +93,37 @@ export async function runNotificationDeliveryWorker(
   const now = ctx.clock.now();
   const limit = opts.limit ?? NOTIFICATION_CONFIG.delivery.batchSize;
 
-  const { rows } = await ctx.db.query<OutboxRowRaw>(
-    `SELECT id, user_id, event_type, category, channel, template_key, payload, coalesced_count, attempt_count, created_at
-     FROM notification_outbox
-     WHERE status IN ('queued', 'held_quiet_hours', 'failed_retryable') AND next_attempt_at <= $1
-     ORDER BY next_attempt_at ASC
-     LIMIT $2
-     FOR UPDATE SKIP LOCKED`,
-    [now, limit],
-  );
+  // Claim the batch inside its own short transaction: SELECT ... FOR
+  // UPDATE SKIP LOCKED both locks the candidate rows against a
+  // concurrently-running worker (a second worker's own FOR UPDATE simply
+  // skips whatever this one is holding) and, by immediately pushing
+  // `next_attempt_at` out to a short lease window before committing,
+  // prevents a row that's mid-delivery (a real network call, which must
+  // happen OUTSIDE any open transaction) from being picked up a second
+  // time. `processOne` below overwrites the lease with the real outcome
+  // once delivery actually finishes.
+  const CLAIM_LEASE_MS = 60_000;
+  const rows = await withTransaction(async (db) => {
+    const { rows: claimed } = await db.query<OutboxRowRaw>(
+      `SELECT id, user_id, event_type, category, channel, template_key, payload, coalesced_count, attempt_count, created_at
+       FROM notification_outbox
+       WHERE status IN ('queued', 'held_quiet_hours', 'failed_retryable') AND next_attempt_at <= $1
+       ORDER BY next_attempt_at ASC
+       LIMIT $2
+       FOR UPDATE SKIP LOCKED`,
+      [now, limit],
+    );
+    if (claimed.length > 0) {
+      const ids = claimed.map((r) => r.id);
+      const leaseUntil = new Date(now.getTime() + CLAIM_LEASE_MS);
+      await db.query(`UPDATE notification_outbox SET next_attempt_at = $2, updated_at = $3 WHERE id = ANY($1::uuid[])`, [
+        ids,
+        leaseUntil,
+        now,
+      ]);
+    }
+    return claimed;
+  });
 
   const result = emptyResult();
 
@@ -140,7 +163,7 @@ async function processOne(
 
   // ---- 1. Preference gate (never bypassable — safety excepted by design, see file doc) ----
   if (!isSafety) {
-    const pref = await getCategoryPreferenceForUser(ctx, row.user_id, row.category);
+    const pref = await getCategoryPreferenceForUser(ctx, row.user_id, row.category as Exclude<NotificationBucket, 'safety'>);
     const channelAllowed = row.channel === 'push' ? pref.push : pref.email;
     if (!channelAllowed) {
       await setStatus(ctx, row.id, 'dropped_preference', {}, now);

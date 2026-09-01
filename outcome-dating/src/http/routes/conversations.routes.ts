@@ -11,9 +11,11 @@ import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as conversationService from '../../services/conversation.service.js';
 import * as messageService from '../../services/message.service.js';
+import * as timelineService from '../../services/timeline.service.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
+import { serializeTimelinePage } from '../serializers/timeline.js';
 
 const SendMessageBodySchema = z.object({ body: z.string() });
 const MarkReadBodySchema = z.object({ uptoMessageId: z.string() });
@@ -54,5 +56,14 @@ export function registerConversationRoutes(app: FastifyInstance, deps: AppDeps):
     const body = parseOrThrow(MarkReadBodySchema, req.body);
     await messageService.markRead(req.ctx!, conversationId, body.uptoMessageId);
     reply.status(204).send();
+  });
+
+  // Product-owner finding #2/#3 — see timeline.service.ts. Addition, not a
+  // literal §24.7 route: merged messages + date-proposal lifecycle events
+  // for one conversation, cursor-paginated.
+  app.get('/conversations/:conversationId/timeline', auth, async (req, reply) => {
+    const conversationId = requireUuidParam(req.params, 'conversationId');
+    const query = parseOrThrow(paginationQuerySchema, req.query);
+    reply.send(serializeTimelinePage(await timelineService.getConversationTimeline(req.ctx!, conversationId, query)));
   });
 }

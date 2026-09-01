@@ -80,6 +80,11 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'POST', path: '/conversations/:conversationId/messages', spec: '§24.7, §12.2-5', role: 'user' },
   { method: 'POST', path: '/conversations/:conversationId/archive', spec: '§24.7, §12.7', role: 'user' },
   { method: 'POST', path: '/conversations/:conversationId/read', spec: '§12.2 (addition)', role: 'user', addition: true },
+  { method: 'GET', path: '/conversations/:conversationId/timeline', spec: '§12, §13 (product-owner addition — merged message + date-proposal timeline)', role: 'user', addition: true },
+
+  // ---- Matches (product-owner addition — see matches.service.ts) ----
+  { method: 'GET', path: '/matches', spec: '§11.4, §24.7 (product-owner addition — "you cannot see your matches")', role: 'user', addition: true },
+  { method: 'GET', path: '/matches/:conversationId', spec: '§11.4, §24.7 (product-owner addition)', role: 'user', addition: true },
 
   // ---- §24.8 Dates ----
   { method: 'GET', path: '/venues', spec: '§24.8, §13.2', role: 'user' },
