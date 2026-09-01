@@ -61,6 +61,41 @@ export const NOTIFICATION_CONFIG = {
     coalesceMaxWaitSeconds: 600,
   },
 
+  /**
+   * SMS-only tunables (build correction: optional phone number -> optional,
+   * opt-in SMS channel). Every value here exists because SMS is the one
+   * transport channel with a real per-message dollar cost, unlike push
+   * (free) or email (effectively free at this product's scale) — see
+   * `outbox.ts`'s SMS eligibility gate and `delivery.ts`'s cap.
+   */
+  sms: {
+    /**
+     * `message_received`'s coalescing debounce/max-wait, but for the `sms`
+     * channel specifically — deliberately LONGER than push's
+     * `message.coalesceDebounceSeconds`/`coalesceMaxWaitSeconds` above
+     * (90s / 600s), so a burst of chat messages batches into fewer, later
+     * SMS sends than it does pushes: cost awareness applied directly to
+     * the one lever this pipeline already had (build brief: "coalescing
+     * must apply at least as aggressively to SMS as to push"). Would
+     * become `notifications.sms_coalesce_debounce_seconds`.
+     */
+    coalesceDebounceSeconds: 300,
+    /** Would become `notifications.sms_coalesce_max_wait_seconds`. */
+    coalesceMaxWaitSeconds: 1800,
+    /**
+     * Hard cap on `sent` SMS per user per rolling 24h, enforced in
+     * `delivery.ts` immediately before every SMS send (counts
+     * `notification_outbox` rows with `channel = 'sms'`, `status = 'sent'`,
+     * `delivered_at` in the last 24h). Once hit, further-due SMS for that
+     * user are marked `dropped_rate_limited` (terminal — never retried;
+     * the user's push/email/in-app copies of the same events are
+     * unaffected) rather than silently queuing forever, so one very chatty
+     * day for one user can never turn into an unbounded SMS bill. Would
+     * become `notifications.sms_max_per_user_per_day`.
+     */
+    maxPerUserPerDay: 20,
+  },
+
   retry: {
     /** Would become `notifications.max_delivery_attempts`. */
     maxAttempts: 5,

@@ -24,8 +24,14 @@ export type ExtendedNotificationEventType = NotificationEventType | 'message_rec
  * for canonical event types (see outbox.ts). This outbox only ever queues
  * transport channels that need real, possibly-failing, possibly-retried
  * delivery.
+ *
+ * 'sms' (build correction: an OPTIONAL, verified phone number may back an
+ * opt-in SMS channel — never a required one, see auth.service.ts module
+ * doc) is added the same way `message_received` was added to
+ * `ExtendedNotificationEventType` above: this is this build's own local
+ * superset, not a change to any frozen shared type.
  */
-export type NotificationOutboxChannel = 'push' | 'email';
+export type NotificationOutboxChannel = 'push' | 'email' | 'sms';
 
 /**
  * Preference categories a user can configure. 'safety' is deliberately NOT
@@ -44,7 +50,9 @@ export type OutboxStatus =
   | 'failed_retryable'
   | 'dead'
   | 'dropped_preference'
-  | 'dropped_no_target';
+  | 'dropped_no_target'
+  /** SMS-only, terminal, never retried: this user already hit `NOTIFICATION_CONFIG.sms.maxPerUserPerDay` (delivery.ts) — a cost cap, not a transport failure. */
+  | 'dropped_rate_limited';
 
 export interface OutboxRow {
   id: string;
@@ -80,6 +88,15 @@ export interface CategoryPrefs {
   push: boolean;
   email: boolean;
   inApp: boolean;
+  /**
+   * Defaults to `false` for every category (see `preferences.ts`
+   * `DEFAULT_PREFERENCES`) — unlike push/email, no category ever defaults
+   * SMS on, because every send costs real money and requires a verified
+   * phone number the user chose to add. Turning this on for a category is
+   * necessary but not sufficient for that category's SMS to actually send —
+   * `delivery.ts` also requires a currently-verified phone at send time.
+   */
+  sms: boolean;
 }
 
 export interface QuietHours {
