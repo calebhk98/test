@@ -24,6 +24,8 @@ import { FlagsService } from './config/flags.service.js';
 import { SystemClock } from './lib/time.js';
 import { createLogger } from './lib/logger.js';
 import { hashPassword } from './lib/hash.js';
+import { IMPORTANCE_LEVELS } from './domain/questions/index.js';
+import type { ImportanceLevel, QuestionTypeDefinition } from './domain/questions/index.js';
 
 // ---- deterministic PRNG (mulberry32) ----
 function mulberry32(seed: number): () => number {
@@ -110,6 +112,777 @@ const QUESTIONS: QuestionSeed[] = [
   { slug: 'nightlife', category: 'activity', questionText: 'Going out / nightlife', selfLeftLabel: 'Prefer staying in', selfRightLabel: 'Love going out', partnerLeftLabel: 'Prefer a homebody partner', partnerRightLabel: 'Partner must love going out', weight: 0.6, polarity: 'standard', sensitive: false },
   { slug: 'relationship_pace', category: 'activity', questionText: 'Relationship pace', selfLeftLabel: 'Prefer taking things slow', selfRightLabel: 'Prefer moving quickly', partnerLeftLabel: 'Want a partner who takes it slow', partnerRightLabel: 'Want a partner who moves quickly', weight: 1.0, polarity: 'standard', sensitive: false },
   { slug: 'long_term_intent', category: 'activity', questionText: 'Long-term seriousness', selfLeftLabel: 'Casual dating only', selfRightLabel: 'Looking for marriage', partnerLeftLabel: 'Want a casual partner', partnerRightLabel: 'Want a marriage-minded partner', weight: 1.6, polarity: 'standard', sensitive: false },
+];
+
+// =====================================================================
+// NEW typed question bank (redesigned compatibility question system).
+// 65 questions across 9 categories: lifestyle, values,
+// relationship_intentions, family, social_energy, health_habits,
+// interests, communication, logistics. Written into the NEW
+// `question_bank` table (db/migrations/008_questions.sql) — the OLD
+// `questions` bank above is left exactly as-is (see that migration's
+// file-level "clean break" note for why).
+//
+// Every question here picks the type that actually fits its data:
+//   - `scale` only where a labelled MIDPOINT is honestly meaningful,
+//   - `single_choice` for mutually-exclusive categories (fixes the old
+//     "kids: 1-5" bug — see `children_intention` below),
+//   - `multi_choice` for pick-any-number questions,
+//   - `frequency` for genuinely frequency-shaped habits, with concrete
+//     anchors, never a bare 1-5.
+// No question text or option label references a section number or any
+// spec document — user-visible strings are plain language throughout.
+// =====================================================================
+
+function option(key: string, label: string): { key: string; label: string } {
+  return { key, label };
+}
+
+/** Reused across every `frequency` question so the bank has one consistent, concrete vocabulary rather than a different ad-hoc scale per question. */
+const FREQUENCY_ANCHORS = [
+  option('never', 'Never'),
+  option('yearly', 'A few times a year'),
+  option('monthly', 'Monthly'),
+  option('weekly', 'Weekly'),
+  option('daily', 'Daily'),
+];
+
+function frequencyType(): QuestionTypeDefinition {
+  return { type: 'frequency', anchors: FREQUENCY_ANCHORS };
+}
+
+function scaleType(minLabel: string, maxLabel: string, midLabel: string): QuestionTypeDefinition {
+  return { type: 'scale', min: 1, max: 5, minLabel, maxLabel, midLabel };
+}
+
+interface NewQuestionSeed {
+  slug: string;
+  category: string;
+  subcategory?: string | null;
+  tags?: string[];
+  questionText: string;
+  typeDef: QuestionTypeDefinition;
+  baseWeight: number;
+  sensitive?: boolean;
+  answerRateHint?: number;
+}
+
+const NEW_QUESTION_BANK: NewQuestionSeed[] = [
+  // ---- lifestyle (8) ----
+  {
+    slug: 'smoking_habit',
+    category: 'lifestyle',
+    questionText: 'Do you smoke?',
+    typeDef: { type: 'single_choice', options: [option('no', 'I do not smoke'), option('yes', 'I smoke')] },
+    baseWeight: 1.5,
+  },
+  {
+    slug: 'drinking_frequency',
+    category: 'lifestyle',
+    questionText: 'How often do you drink alcohol?',
+    typeDef: frequencyType(),
+    baseWeight: 1.0,
+  },
+  {
+    slug: 'recreational_drug_use',
+    category: 'lifestyle',
+    questionText: 'Do you use recreational drugs?',
+    typeDef: { type: 'single_choice', options: [option('no', 'I do not use recreational drugs'), option('yes', 'I use recreational drugs')] },
+    baseWeight: 1.3,
+    sensitive: true,
+  },
+  {
+    slug: 'sleep_schedule',
+    category: 'lifestyle',
+    questionText: 'Are you more of a night owl or an early bird?',
+    typeDef: scaleType('Night owl — most productive late at night', 'Early bird — most productive at dawn', 'No strong preference either way'),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'tidiness',
+    category: 'lifestyle',
+    questionText: 'How tidy do you keep your living space?',
+    typeDef: scaleType('Comfortable with a lived-in, cluttered space', 'Need everything in its place', 'Tidy in shared spaces, relaxed in private ones'),
+    baseWeight: 0.8,
+  },
+  {
+    slug: 'spending_style',
+    category: 'lifestyle',
+    questionText: 'How would you describe your approach to money?',
+    typeDef: scaleType('I spend freely and enjoy the moment', 'I save carefully and plan purchases', 'I balance spending and saving'),
+    baseWeight: 1.0,
+  },
+  {
+    slug: 'cooking_frequency',
+    category: 'lifestyle',
+    questionText: 'How often do you cook a meal from scratch?',
+    typeDef: frequencyType(),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'living_situation',
+    category: 'lifestyle',
+    questionText: 'What is your current living situation?',
+    typeDef: {
+      type: 'single_choice',
+      options: [option('alone', 'I live alone'), option('roommates', 'I live with roommates'), option('family', 'I live with family'), option('partner', 'I live with a partner')],
+    },
+    baseWeight: 0.5,
+  },
+
+  // ---- values (7) ----
+  {
+    slug: 'religious_practice',
+    category: 'values',
+    questionText: 'How central is religion to your daily life?',
+    typeDef: scaleType('Not religious at all', 'Religion guides most of my daily life', 'Religion matters to me but is not central'),
+    baseWeight: 1.4,
+    sensitive: true,
+  },
+  {
+    slug: 'political_engagement',
+    category: 'values',
+    questionText: 'How politically engaged are you?',
+    typeDef: scaleType('I rarely follow or discuss politics', 'I follow and engage with politics closely', 'I stay informed but do not engage deeply'),
+    baseWeight: 0.7,
+    sensitive: true,
+  },
+  {
+    slug: 'monogamy_structure',
+    category: 'values',
+    questionText: 'What relationship structure are you looking for?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('monogamous', 'Monogamous only'),
+        option('open_to_enm', 'Open to ethical non-monogamy'),
+        option('polyamorous', 'Polyamorous'),
+        option('still_figuring_out', 'Still figuring out what works for me'),
+      ],
+    },
+    baseWeight: 1.8,
+    sensitive: true,
+  },
+  {
+    slug: 'honesty_directness',
+    category: 'values',
+    questionText: 'How direct are you when something is bothering you?',
+    typeDef: scaleType('I lead with warmth and soften hard truths', 'I lead with directness, even when it is blunt', 'I adjust my directness to the situation'),
+    baseWeight: 0.7,
+  },
+  {
+    slug: 'environmental_values',
+    category: 'values',
+    questionText: 'How much does sustainability shape your everyday choices?',
+    typeDef: scaleType('Sustainability rarely factors into my choices', 'Sustainability strongly shapes my choices', 'I consider it sometimes, without being strict'),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'life_priorities',
+    category: 'values',
+    questionText: 'What matters most to you right now? Choose all that apply.',
+    typeDef: {
+      type: 'multi_choice',
+      options: [
+        option('career_growth', 'Career growth'),
+        option('family', 'Family'),
+        option('personal_growth', 'Personal growth'),
+        option('financial_security', 'Financial security'),
+        option('creativity', 'Creativity'),
+        option('adventure', 'Adventure'),
+        option('community', 'Community involvement'),
+      ],
+    },
+    baseWeight: 0.9,
+  },
+  {
+    slug: 'conflict_style',
+    category: 'values',
+    questionText: 'When a disagreement comes up, what is your instinct?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('talk_immediately', 'I want to talk it through right away'),
+        option('need_time', 'I need time alone before I can talk it through'),
+        option('avoid', 'I tend to avoid conflict altogether'),
+        option('depends', 'It depends on the situation'),
+      ],
+    },
+    baseWeight: 1.0,
+  },
+
+  // ---- relationship_intentions (7) ----
+  {
+    slug: 'relationship_goal',
+    category: 'relationship_intentions',
+    questionText: 'What are you looking for right now?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('casual', 'Casual dating, no particular destination'),
+        option('long_term', 'A long-term committed relationship'),
+        option('marriage', 'Marriage'),
+        option('not_sure', 'Not sure yet, open to seeing what happens'),
+      ],
+    },
+    baseWeight: 1.8,
+  },
+  {
+    slug: 'relationship_pace',
+    category: 'relationship_intentions',
+    questionText: 'How do you like a new relationship to progress?',
+    typeDef: scaleType('I prefer to take things slowly', 'I prefer to move quickly once I feel a connection', 'I let the relationship set its own pace'),
+    baseWeight: 1.0,
+  },
+  {
+    slug: 'exclusivity_timing',
+    category: 'relationship_intentions',
+    questionText: 'When do you like to define exclusivity?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('early', 'I like to define it early'),
+        option('after_a_while', 'I prefer to wait a while before defining it'),
+        option('mutual_conversation', 'I wait until it comes up naturally in conversation'),
+      ],
+    },
+    baseWeight: 0.9,
+  },
+  {
+    slug: 'cohabitation_timeline',
+    category: 'relationship_intentions',
+    questionText: 'When would you consider moving in with a partner?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('not_interested', 'Not interested in living together'),
+        option('after_engagement', 'Only after getting engaged or married'),
+        option('when_it_feels_right', 'Whenever it feels right, no set timeline'),
+        option('sooner_than_most', 'Sooner than most, if things are going well'),
+      ],
+    },
+    baseWeight: 1.0,
+  },
+  {
+    slug: 'marriage_intention',
+    category: 'relationship_intentions',
+    questionText: 'Is marriage something you want?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('want_marriage', 'I want to get married'),
+        option('open_not_required', 'Open to marriage, but it is not required'),
+        option('do_not_want_marriage', 'I do not want to get married'),
+        option('undecided', 'Undecided'),
+      ],
+    },
+    baseWeight: 1.3,
+  },
+  {
+    slug: 'long_distance_openness',
+    category: 'relationship_intentions',
+    questionText: 'How open are you to a long-distance relationship?',
+    typeDef: scaleType('Not open to long-distance at all', 'Comfortable with long-distance for as long as it takes', 'Open to it for a limited time'),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'dating_multiple_people',
+    category: 'relationship_intentions',
+    questionText: 'Before things are exclusive, how do you approach dating?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('exclusive_only', 'I only date one person at a time'),
+        option('casually_dating_multiple', 'I am comfortable casually dating more than one person until exclusive'),
+      ],
+    },
+    baseWeight: 0.8,
+  },
+
+  // ---- family (7) ----
+  {
+    slug: 'children_intention',
+    category: 'family',
+    questionText: 'Where are you on having children?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('no_kids_no_want', 'No children, and do not want any'),
+        option('no_kids_want', 'No children, but want them'),
+        option('has_kids_want_more', 'Have children, and want more'),
+        option('has_kids_no_more', 'Have children, and do not want more'),
+        option('still_deciding', 'Still deciding'),
+      ],
+    },
+    baseWeight: 2.0,
+  },
+  {
+    slug: 'children_timeline',
+    category: 'family',
+    questionText: 'If you want children (or more children), what is your timeline?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('as_soon_as_possible', 'As soon as possible'),
+        option('within_a_few_years', 'Within the next few years'),
+        option('someday_not_soon', 'Someday, but not soon'),
+        option('not_applicable', 'Not applicable to me'),
+      ],
+    },
+    baseWeight: 1.0,
+  },
+  {
+    slug: 'family_closeness',
+    category: 'family',
+    questionText: 'How close are you with your family?',
+    typeDef: scaleType('Not close with my family', 'Extremely close with my family', 'Moderately close, in touch regularly'),
+    baseWeight: 0.7,
+  },
+  {
+    slug: 'family_holiday_expectations',
+    category: 'family',
+    questionText: 'How much do holidays revolve around family for you?',
+    typeDef: scaleType('I rarely spend holidays with family', 'Holidays with family are non-negotiable for me', 'I split holidays between family and other plans'),
+    baseWeight: 0.5,
+  },
+  {
+    slug: 'coparenting_style',
+    category: 'family',
+    subcategory: 'parenting',
+    questionText: 'If you have or plan to have children, what is your parenting style?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('very_structured', 'A very structured, scheduled parenting style'),
+        option('flexible', 'A flexible, go-with-the-flow parenting style'),
+        option('not_applicable', 'Not applicable to me'),
+      ],
+    },
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'blended_family_openness',
+    category: 'family',
+    questionText: 'How open are you to dating someone who already has children?',
+    typeDef: scaleType('Not open to dating someone with children', 'Very open to dating someone with children', 'Open to it, would need to get to know the situation'),
+    baseWeight: 1.1,
+  },
+  {
+    slug: 'pet_family_role',
+    category: 'family',
+    questionText: 'What role do pets play in your idea of family?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('no_pets_not_interested', 'No pets, and not interested in having any'),
+        option('no_pets_want_some', 'No pets, but would like some'),
+        option('have_pets', 'I have pets and consider them family'),
+      ],
+    },
+    baseWeight: 0.7,
+  },
+
+  // ---- social_energy (6) — fixes the old "no coherent scale" bug: real
+  // behavioural frequency/scale anchors, not a mood rating.
+  {
+    slug: 'recharge_frequency',
+    category: 'social_energy',
+    questionText: 'How often do you spend a full evening alone to recharge?',
+    typeDef: frequencyType(),
+    baseWeight: 0.8,
+  },
+  {
+    slug: 'party_departure_style',
+    category: 'social_energy',
+    questionText: 'At a party or gathering, how long do you usually stay?',
+    typeDef: scaleType('I usually leave within the first hour', 'I usually stay until the very end', 'I usually stay a few hours, then head out'),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'plans_with_friends_frequency',
+    category: 'social_energy',
+    questionText: 'How often do you make plans with friends?',
+    typeDef: frequencyType(),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'large_gatherings_comfort',
+    category: 'social_energy',
+    questionText: 'How do large gatherings affect your energy?',
+    typeDef: scaleType('Large gatherings drain me quickly', 'Large gatherings energize me', 'I enjoy them for a while, then need a break'),
+    baseWeight: 0.7,
+  },
+  {
+    slug: 'initiating_plans',
+    category: 'social_energy',
+    questionText: 'In your friendships, who usually initiates plans?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('usually_me', 'I am usually the one who initiates'),
+        option('usually_others', 'Others usually initiate with me'),
+        option('about_even', 'It is about even'),
+      ],
+    },
+    baseWeight: 0.4,
+  },
+  {
+    slug: 'solo_travel_comfort',
+    category: 'social_energy',
+    questionText: 'How comfortable are you traveling alone?',
+    typeDef: scaleType('I would not travel alone', 'I regularly travel alone and enjoy it', 'I am comfortable with it occasionally'),
+    baseWeight: 0.5,
+  },
+
+  // ---- health_habits (8) ----
+  {
+    slug: 'exercise_frequency',
+    category: 'health_habits',
+    questionText: 'How often do you exercise?',
+    typeDef: frequencyType(),
+    baseWeight: 0.9,
+  },
+  {
+    slug: 'diet_style',
+    category: 'health_habits',
+    questionText: 'Do you follow any particular diet?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('no_restrictions', 'No dietary restrictions'),
+        option('vegetarian', 'Vegetarian'),
+        option('vegan', 'Vegan'),
+        option('pescatarian', 'Pescatarian'),
+        option('other_restriction', 'Other dietary restriction'),
+      ],
+    },
+    baseWeight: 0.5,
+  },
+  {
+    slug: 'sleep_hours',
+    category: 'health_habits',
+    questionText: 'How many hours do you usually sleep a night?',
+    typeDef: scaleType('Usually fewer than 6 hours a night', 'Usually 9 or more hours a night', 'Usually around 7 to 8 hours a night'),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'mental_health_openness',
+    category: 'health_habits',
+    questionText: 'How openly do you talk about mental health?',
+    typeDef: scaleType('I prefer to keep mental health private', 'I am very open about discussing mental health', 'I will discuss it once I feel comfortable'),
+    baseWeight: 0.7,
+    sensitive: true,
+  },
+  {
+    slug: 'therapy_experience',
+    category: 'health_habits',
+    questionText: 'What is your experience with therapy?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('currently_in_therapy', 'Currently in therapy'),
+        option('have_done_therapy', 'Have done therapy in the past'),
+        option('open_not_currently', 'Open to it, not currently in therapy'),
+        option('not_for_me', 'Not something I am interested in'),
+      ],
+    },
+    baseWeight: 0.5,
+    sensitive: true,
+  },
+  {
+    slug: 'substance_free_dating',
+    category: 'health_habits',
+    questionText: 'How important is dating substance-free to you?',
+    typeDef: {
+      type: 'single_choice',
+      options: [option('important_to_me', 'Dating substance-free is important to me'), option('not_a_priority', 'Not a priority either way')],
+    },
+    baseWeight: 0.8,
+    sensitive: true,
+  },
+  {
+    slug: 'outdoor_activity_frequency',
+    category: 'health_habits',
+    questionText: 'How often do you spend time outdoors (hiking, walking, sports)?',
+    typeDef: frequencyType(),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'screen_time',
+    category: 'health_habits',
+    questionText: 'How would you describe your screen time outside of work?',
+    typeDef: scaleType('Very low screen time outside of work', 'High screen time, including gaming or scrolling', 'Moderate screen time'),
+    baseWeight: 0.5,
+  },
+
+  // ---- interests (7) ----
+  {
+    slug: 'languages_spoken',
+    category: 'interests',
+    questionText: 'Which languages do you speak? Choose all that apply.',
+    typeDef: {
+      type: 'multi_choice',
+      options: [
+        option('english', 'English'),
+        option('spanish', 'Spanish'),
+        option('french', 'French'),
+        option('mandarin', 'Mandarin'),
+        option('hindi', 'Hindi'),
+        option('arabic', 'Arabic'),
+        option('portuguese', 'Portuguese'),
+        option('german', 'German'),
+        option('japanese', 'Japanese'),
+        option('other_language', 'Another language'),
+      ],
+    },
+    baseWeight: 0.4,
+  },
+  {
+    slug: 'weekend_activities',
+    category: 'interests',
+    questionText: 'What do you usually do on weekends? Choose all that apply.',
+    typeDef: {
+      type: 'multi_choice',
+      options: [
+        option('hiking', 'Hiking'),
+        option('cooking', 'Cooking'),
+        option('gaming', 'Gaming'),
+        option('reading', 'Reading'),
+        option('live_music', 'Live music'),
+        option('museums', 'Museums'),
+        option('sports', 'Playing or watching sports'),
+        option('board_games', 'Board games'),
+        option('travel', 'Traveling'),
+        option('volunteering', 'Volunteering'),
+      ],
+    },
+    baseWeight: 0.5,
+  },
+  {
+    slug: 'music_taste',
+    category: 'interests',
+    questionText: 'What kinds of music do you enjoy? Choose all that apply.',
+    typeDef: {
+      type: 'multi_choice',
+      options: [
+        option('pop', 'Pop'),
+        option('rock', 'Rock'),
+        option('hip_hop', 'Hip hop'),
+        option('electronic', 'Electronic'),
+        option('classical', 'Classical'),
+        option('jazz', 'Jazz'),
+        option('country', 'Country'),
+        option('indie', 'Indie'),
+        option('world_music', 'World music'),
+      ],
+    },
+    baseWeight: 0.3,
+  },
+  {
+    slug: 'reading_frequency',
+    category: 'interests',
+    questionText: 'How often do you read for pleasure?',
+    typeDef: frequencyType(),
+    baseWeight: 0.4,
+  },
+  {
+    slug: 'creative_hobby_involvement',
+    category: 'interests',
+    questionText: 'How big a part of your life are creative hobbies (art, music, writing, etc.)?',
+    typeDef: scaleType('I rarely make time for creative hobbies', 'Creative hobbies are a big part of my life', 'I dabble in creative hobbies now and then'),
+    baseWeight: 0.4,
+  },
+  {
+    slug: 'sports_fandom',
+    category: 'interests',
+    questionText: 'How much do you follow sports?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('avid_fan', 'Avid fan, I follow regularly'),
+        option('casual_fan', 'Casual fan, I watch occasionally'),
+        option('not_a_fan', 'Not into sports'),
+      ],
+    },
+    baseWeight: 0.3,
+  },
+  {
+    slug: 'travel_frequency',
+    category: 'interests',
+    questionText: 'How often do you travel somewhere new?',
+    typeDef: frequencyType(),
+    baseWeight: 0.6,
+  },
+
+  // ---- communication (7) ----
+  {
+    slug: 'texting_frequency_expectation',
+    category: 'communication',
+    questionText: 'How much texting do you expect while getting to know someone?',
+    typeDef: scaleType('I am fine with infrequent texting between dates', 'I like frequent texting throughout the day', 'A check-in once or twice a day feels right'),
+    baseWeight: 0.8,
+  },
+  {
+    slug: 'love_language',
+    category: 'communication',
+    questionText: 'How do you most like to give and receive affection? Choose all that apply.',
+    typeDef: {
+      type: 'multi_choice',
+      options: [
+        option('words_of_affirmation', 'Words of affirmation'),
+        option('quality_time', 'Quality time'),
+        option('acts_of_service', 'Acts of service'),
+        option('physical_touch', 'Physical touch'),
+        option('gifts', 'Thoughtful gifts'),
+      ],
+    },
+    baseWeight: 0.9,
+  },
+  {
+    slug: 'conflict_resolution_timing',
+    category: 'communication',
+    questionText: 'When there is a disagreement, when do you want to talk about it?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('address_immediately', 'Right away'),
+        option('need_a_cooldown', 'After a cooldown period'),
+        option('varies', 'It depends on the situation'),
+      ],
+    },
+    baseWeight: 0.9,
+  },
+  {
+    slug: 'phone_call_comfort',
+    category: 'communication',
+    questionText: 'How do you feel about phone calls versus texting?',
+    typeDef: scaleType('I avoid phone calls, I prefer texting', 'I much prefer calling over texting', 'I am comfortable with either'),
+    baseWeight: 0.4,
+  },
+  {
+    slug: 'public_affection_comfort',
+    category: 'communication',
+    questionText: 'How comfortable are you with public displays of affection?',
+    typeDef: scaleType('I prefer to avoid public displays of affection', 'I am very comfortable with public affection', 'A little is fine, nothing excessive'),
+    baseWeight: 0.6,
+  },
+  {
+    slug: 'directness_receiving_feedback',
+    category: 'communication',
+    questionText: 'How do you like to receive feedback from a partner?',
+    typeDef: scaleType('Delivered gently, with cushioning', 'Delivered directly, no cushioning', 'Depends on the topic'),
+    baseWeight: 0.5,
+  },
+  {
+    slug: 'social_media_sharing',
+    category: 'communication',
+    questionText: 'How openly do you share your relationships on social media?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('very_private', 'I keep my relationships off social media'),
+        option('occasional_posts', 'I post occasionally about my relationship'),
+        option('openly_share', 'I openly share my relationship on social media'),
+      ],
+    },
+    baseWeight: 0.4,
+  },
+
+  // ---- logistics (8) ----
+  {
+    slug: 'max_travel_distance_for_dates',
+    category: 'logistics',
+    questionText: 'How far are you willing to travel for a date?',
+    typeDef: scaleType('I prefer to stay within a short distance', 'I am happy to travel a long way for the right person', 'I am comfortable with a moderate distance'),
+    baseWeight: 0.5,
+  },
+  {
+    slug: 'work_schedule',
+    category: 'logistics',
+    questionText: 'What does your typical work schedule look like?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('standard_hours', 'Standard daytime hours'),
+        option('nights_or_shifts', 'Nights or rotating shifts'),
+        option('flexible_remote', 'Flexible or remote schedule'),
+        option('irregular_freelance', 'Irregular freelance schedule'),
+      ],
+    },
+    baseWeight: 0.5,
+  },
+  {
+    slug: 'relocation_openness',
+    category: 'logistics',
+    questionText: 'How open are you to relocating for a relationship?',
+    typeDef: scaleType('Not open to relocating for a relationship', 'Very open to relocating for the right relationship', 'Open to it under the right circumstances'),
+    baseWeight: 0.9,
+  },
+  {
+    slug: 'car_ownership',
+    category: 'logistics',
+    questionText: 'How do you usually get around?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('own_a_car', 'I own a car'),
+        option('no_car_use_transit', 'No car — I rely on public transit or rideshare'),
+        option('no_car_walk_bike', 'No car — I mostly walk or bike'),
+      ],
+    },
+    baseWeight: 0.3,
+  },
+  {
+    slug: 'financial_merging_expectation',
+    category: 'logistics',
+    questionText: 'In a serious relationship, how do you expect finances to work?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('keep_fully_separate', 'Keep finances fully separate'),
+        option('merge_some', 'Merge some shared expenses, keep the rest separate'),
+        option('merge_fully', 'Merge finances fully'),
+        option('not_sure', 'Not sure yet'),
+      ],
+    },
+    baseWeight: 1.0,
+  },
+  {
+    slug: 'date_planning_style',
+    category: 'logistics',
+    questionText: 'When it comes to planning a date, what do you prefer?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('i_like_to_plan', 'I like to plan the details myself'),
+        option('prefer_spontaneous', 'I prefer spontaneous, unplanned dates'),
+        option('happy_either_way', 'Happy either way'),
+      ],
+    },
+    baseWeight: 0.4,
+  },
+  {
+    slug: 'schedule_flexibility',
+    category: 'logistics',
+    questionText: 'How flexible is your schedule for seeing someone?',
+    typeDef: scaleType('My schedule is fixed and hard to change', 'My schedule is very flexible', 'Somewhat flexible, with some fixed commitments'),
+    baseWeight: 0.5,
+  },
+  {
+    slug: 'preferred_date_time',
+    category: 'logistics',
+    questionText: 'When do you most prefer to go on dates?',
+    typeDef: {
+      type: 'single_choice',
+      options: [
+        option('weekday_evenings', 'Weekday evenings'),
+        option('weekend_daytime', 'Weekend daytime'),
+        option('weekend_evenings', 'Weekend evenings'),
+        option('flexible_anytime', 'Flexible, anytime works'),
+      ],
+    },
+    baseWeight: 0.3,
+  },
 ];
 
 // =====================================================================
