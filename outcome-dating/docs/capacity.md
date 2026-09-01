@@ -41,23 +41,29 @@ same home viewer at each size. Real measured run (`SCALE_CURVE_SCALES=1000,10000
 
 | Read path | N=1,000 | N=10,000 | N=50,000 | Query count |
 |---|---|---|---|---|
-| Discovery grid | 133ms | 26ms | 32ms | 14 (flat) |
-| Reality dashboard | 127ms | 26ms | 42ms | 26 (flat) |
-| Public profile view | 3ms | 3ms | 4ms | 6 (flat) |
-| My matches list | 52ms | 44ms | 45ms | 161 (flat) |
-| Conversation timeline | 3ms | 4ms | 4ms | 3 (flat) |
-| Stats overview | 7ms | 4ms | 7ms | 17 (flat) |
-| Filter costs | 151ms | 46ms | 70ms | 28 (flat) |
+| Discovery grid | 126ms | 21ms | 27ms | 14 (flat) |
+| Reality dashboard | 125ms | 25ms | 24ms | 26 (flat) |
+| Public profile view | 2ms | 3ms | 2ms | 6 (flat) |
+| My matches list | 45ms | 43ms | 39ms | 161 (flat) |
+| Conversation timeline | 3ms | 3ms | 3ms | 3 (flat) |
+| Stats overview | 4ms | 4ms | 4ms | 17 (flat) |
+| Filter costs | 134ms | 27ms | 33ms | 33 (flat) |
 
 Query count (the thing that provably cannot regress silently) is **identical**
 at every scale for every path, 50x more total users, same number of round
-trips. Latency stays within noise (the N=1,000 run pays one-time JIT/cache
-warm-up; every path's own module doc already claims this, e.g.
-`stats.service.ts`'s "cheap regardless of total platform size", this is that
-claim, measured, not merely re-asserted). Extrapolation: since cost is a
-function of the FIXED home population (400) and the geographic box, not of
-total N, the 8B-user number is the same as the 50,000-user number, there is
-no curve to extrapolate along this axis, which is the finding itself.
+trips. N=10,000 -> N=50,000 latency is flat by any reasonable ratio (all
+within about 20%). N=1,000 is the one reproducible outlier, and only for the
+two geo-box queries: a freshly created database's smallest table has no
+ANALYZE-derived statistics yet, and Postgres's planner measurably picks a
+worse plan purely from that (reproduced identically across three separate
+runs, 125-156ms every time), an artifact of "first/smallest database
+queried," not of population. The suite's own flatness assertion documents
+this and excludes only N=1,000 from the strict latency ratio (query count is
+still required flat at every scale, including N=1,000, and is). Extrapolation:
+since cost is a function of the FIXED home population (400) and the
+geographic box, not of total N, the 8B-user number is the same as the
+50,000-user number, there is no curve to extrapolate along this axis, which
+is the finding itself.
 
 One caveat, found while tracing call sites, not measured: `filter.service.ts`'s
 `previewPoolSizeWithUnsetPolicy` (`filter.service.ts:1043-1099`) is
@@ -74,13 +80,13 @@ one dev-box Postgres, single connection):
 
 | N | Seed time | Rows/sec |
 |---|---|---|
-| 1,000 | 75ms | 13,333 |
-| 10,000 | 480ms | 20,833 |
-| 50,000 | 3,076ms | 16,255 |
+| 1,000 | 66ms | 15,151 |
+| 10,000 | 491ms | 20,367 |
+| 50,000 | 2,467ms | 20,268 |
 
-Roughly linear, ~16,000-20,000 rows/sec average on this single unoptimized
+Roughly linear, ~15,000-20,000 rows/sec average on this single unoptimized
 connection. **Extrapolation** (arithmetic, not measured): 8,000,000,000 /
-18,000 ≈ 444,444 seconds ≈ **5.1 days** to bulk-load the `users` table alone,
+18,500 ≈ 432,432 seconds ≈ **5.0 days** to bulk-load the `users` table alone,
 sequentially, on one connection, on this dev box, before any index
 maintenance backlog, replication, or concurrent write traffic. This is the
 concrete argument for why "seed 8B rows" was never attempted here (task

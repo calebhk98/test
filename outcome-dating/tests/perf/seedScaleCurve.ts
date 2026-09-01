@@ -108,9 +108,15 @@ async function insertUserBatch(
       all.push({ id, latitude: lats[i]!, longitude: lons[i]! });
     }
 
+    // `status`/`suspended` must agree (025_integrity.sql's
+    // `users_status_suspended_agree` CHECK: `(status = 'suspended') =
+    // suspended`). Every seeded user is `active`, so `suspended` is
+    // explicitly `false` here rather than left to the column default,
+    // both columns visibly tied to the one literal status this seeder
+    // ever writes.
     await pool.query(
-      `INSERT INTO users (id, email, password_hash, birthdate, status, last_active_at)
-       SELECT id, email, 'x', '1995-01-01', 'active', now() - (floor(random() * 60 * 24 * 14) || ' minutes')::interval
+      `INSERT INTO users (id, email, password_hash, birthdate, status, suspended, last_active_at)
+       SELECT id, email, 'x', '1995-01-01', 'active', false, now() - (floor(random() * 60 * 24 * 14) || ' minutes')::interval
        FROM unnest($1::uuid[], $2::text[]) AS u(id, email)`,
       [ids, emails],
     );
@@ -220,11 +226,16 @@ export async function seedScaleCurveData(pool: pg.Pool, totalUserCount: number, 
       .map((u) => u.id);
 
     if (outgoingTargets.length > 0) {
+      // `status` and `accepted_at` must agree (025_integrity.sql's
+      // `interests_status_timestamp_agree` CHECK): draw ONE random value
+      // per row (`is_accepted`, in a subquery) and derive both columns
+      // from it, rather than two independent `random()` calls that could
+      // disagree.
       await pool.query(
         `INSERT INTO interests (sender_id, recipient_id, status, policy_snapshot, created_at, expires_at, accepted_at)
-         SELECT $1::uuid, r, CASE WHEN random() < 0.4 THEN 'accepted' ELSE 'pending' END, '{}'::jsonb, now(), now() + interval '7 days',
-                CASE WHEN random() < 0.4 THEN now() ELSE NULL END
-         FROM unnest($2::uuid[]) AS t(r)`,
+         SELECT $1::uuid, r, CASE WHEN is_accepted THEN 'accepted' ELSE 'pending' END, '{}'::jsonb, now(), now() + interval '7 days',
+                CASE WHEN is_accepted THEN now() ELSE NULL END
+         FROM (SELECT r, random() < 0.4 AS is_accepted FROM unnest($2::uuid[]) AS t(r)) draws`,
         [viewer.id, outgoingTargets],
       );
     }
