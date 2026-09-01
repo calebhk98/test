@@ -25,7 +25,9 @@
  */
 import type { TrustSummary } from '../../domain/types.js';
 import type { Ctx } from '../../lib/ctx.js';
-import { shouldExposeRawTrustScore } from '../../services/trust.service.js';
+import { requireUserActor } from '../../lib/ctx.js';
+import { shouldExposeRawTrustScore, can, type CapabilityDecision, type TrustGatedAction } from '../../services/trust.service.js';
+import { getDefaultPaymentMethod } from '../../services/payment.service.js';
 
 export interface TrustSummaryView {
   trustLevel: TrustSummary['trustLevel'];
@@ -43,4 +45,25 @@ export async function serializeTrustSummary(ctx: Ctx, summary: TrustSummary): Pr
   };
   if (exposeScore) view.trustScore = summary.trustScore;
   return view;
+}
+
+/**
+ * `GET /me/capabilities` — `trust.service#can()` was fully built (a
+ * capability check with safe, user-displayable `reasonCode`s) but never
+ * called from any route (docs/ux-api-review.md §11), so a client had no
+ * way to gray out a button with a reason instead of letting a user tap
+ * something that would 403. Every `TrustGatedAction` is evaluated up
+ * front so a client can pre-render every disabled state in one call.
+ */
+const TRUST_GATED_ACTIONS: readonly TrustGatedAction[] = ['browse', 'send_interest', 'chat', 'send_links', 'propose_date'];
+
+export type MyCapabilitiesView = Record<TrustGatedAction, CapabilityDecision>;
+
+export async function getMyCapabilities(ctx: Ctx): Promise<MyCapabilitiesView> {
+  const { userId, trustLevel } = requireUserActor(ctx);
+  const defaultMethod = await getDefaultPaymentMethod(ctx, userId);
+  const subject = { trustLevel, hasVerifiedPaymentMethod: defaultMethod?.verifiedAt != null };
+
+  const entries = await Promise.all(TRUST_GATED_ACTIONS.map(async (action) => [action, await can(ctx, action, subject)] as const));
+  return Object.fromEntries(entries) as MyCapabilitiesView;
 }

@@ -3,7 +3,7 @@ import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as trustService from '../../services/trust.service.js';
 import * as appealService from '../../services/appeal.service.js';
-import { serializeTrustSummary } from '../serializers/trust.js';
+import { serializeTrustSummary, getMyCapabilities } from '../serializers/trust.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow } from '../validation.js';
@@ -25,6 +25,13 @@ export function registerTrustRoutes(app: FastifyInstance, deps: AppDeps): void {
   app.get('/me/trust/events', auth, async (req, reply) => {
     const query = parseOrThrow(paginationQuerySchema, req.query);
     reply.send(await trustService.listMyTrustEvents(req.ctx!, query));
+  });
+
+  // `trust.service#can()` was built and tested but had no route — a
+  // client had no way to know an action was disabled without attempting
+  // it and parsing a 403 (docs/ux-api-review.md §11).
+  app.get('/me/capabilities', auth, async (req, reply) => {
+    reply.send(await getMyCapabilities(req.ctx!));
   });
 
   app.post('/me/trust/appeal', auth, async (req, reply) => {

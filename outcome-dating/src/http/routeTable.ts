@@ -123,6 +123,7 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'POST', path: '/webhooks/payments', spec: '§24.10, §25.9', role: 'public' },
 
   // ---- §24.11 Trust ----
+  { method: 'GET', path: '/me/capabilities', spec: '§6.4 (addition — trust.service#can() was built but unrouted, see docs/ux-api-review.md §11)', role: 'user', addition: true },
   { method: 'GET', path: '/me/trust', spec: '§24.11, §6.1, §6.3', role: 'user' },
   { method: 'GET', path: '/me/trust/events', spec: '§24.11, §6.3', role: 'user' },
   { method: 'POST', path: '/me/trust/appeal', spec: '§24.11, §18.6', role: 'user' },
