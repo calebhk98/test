@@ -287,8 +287,8 @@ test('phone-less core loop: register -> answers -> filters -> discovery -> inter
   const alice = await registerUser(t);
   const bob = await registerUser(t);
 
-  await completeOnboarding(t, alice.accessToken, { displayName: 'AliceNoPhone', gender: 'woman', seeking: 'man' });
-  await completeOnboarding(t, bob.accessToken, { displayName: 'BobNoPhone', gender: 'man', seeking: 'woman' });
+  await completeOnboarding(t, alice.accessToken, { displayName: 'AliceCoreLoop', gender: 'woman', seeking: 'man' });
+  await completeOnboarding(t, bob.accessToken, { displayName: 'BobCoreLoop', gender: 'man', seeking: 'woman' });
 
   const filtersRes = await t.app.inject({
     method: 'PATCH',
@@ -328,7 +328,7 @@ test('phone-less core loop: register -> answers -> filters -> discovery -> inter
   });
   assert.equal(messageRes.statusCode, 201);
 
-  const venueId = await createVenue(t, { name: 'No-Phone Cafe' });
+  const venueId = await createVenue(t, { name: 'Core Loop Cafe' });
   const scheduledStart = new Date(t.clock.now().getTime() + 3 * 24 * 60 * 60 * 1000);
   const scheduledEnd = new Date(scheduledStart.getTime() + 60 * 60 * 1000);
   const proposeRes = await t.app.inject({
@@ -412,6 +412,51 @@ test('a verified phone number never leaks through /me, /profiles/:id, /discovery
   });
   assert.equal(timelineRes.statusCode, 200);
   assertNoLeak('GET /conversations/:id/timeline', timelineRes.body);
+});
+
+test('HTTP routes: POST /auth/phone -> POST /auth/phone/verify -> GET /auth/phone -> DELETE /auth/phone round trip', async () => {
+  const alice = await registerUser(t);
+
+  const addRes = await t.app.inject({
+    method: 'POST',
+    url: '/auth/phone',
+    headers: authHeader(alice.accessToken),
+    payload: { phoneNumber: '+14155551313', country: 'US' },
+  });
+  assert.equal(addRes.statusCode, 202);
+
+  let statusRes = await t.app.inject({ method: 'GET', url: '/auth/phone', headers: authHeader(alice.accessToken) });
+  assert.equal(statusRes.statusCode, 200);
+  let statusBody = JSON.parse(statusRes.body) as { hasPhone: boolean; verified: boolean; last2: string };
+  assert.equal(statusBody.hasPhone, true);
+  assert.equal(statusBody.verified, false);
+  assert.equal(statusBody.last2, '13');
+  assert.ok(!JSON.stringify(statusBody).includes('5551313'), 'GET /auth/phone must never return the full number');
+
+  await seedKnownCode(alice.userId, '424242');
+  const verifyRes = await t.app.inject({
+    method: 'POST',
+    url: '/auth/phone/verify',
+    headers: authHeader(alice.accessToken),
+    payload: { code: '424242' },
+  });
+  assert.equal(verifyRes.statusCode, 204);
+
+  statusRes = await t.app.inject({ method: 'GET', url: '/auth/phone', headers: authHeader(alice.accessToken) });
+  statusBody = JSON.parse(statusRes.body) as { hasPhone: boolean; verified: boolean; last2: string };
+  assert.equal(statusBody.verified, true);
+
+  const removeRes = await t.app.inject({ method: 'DELETE', url: '/auth/phone', headers: authHeader(alice.accessToken) });
+  assert.equal(removeRes.statusCode, 204);
+
+  statusRes = await t.app.inject({ method: 'GET', url: '/auth/phone', headers: authHeader(alice.accessToken) });
+  statusBody = JSON.parse(statusRes.body) as { hasPhone: boolean; verified: boolean; last2: string };
+  assert.equal(statusBody.hasPhone, false);
+});
+
+test('HTTP routes: /auth/phone requires authentication', async () => {
+  const res = await t.app.inject({ method: 'POST', url: '/auth/phone', payload: { phoneNumber: '+14155551313', country: 'US' } });
+  assert.equal(res.statusCode, 401);
 });
 
 test('static allowlist audit: no file under src/http/serializers/ mentions "phone" at all', () => {
