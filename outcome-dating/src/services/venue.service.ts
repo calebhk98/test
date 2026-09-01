@@ -121,7 +121,7 @@ export async function listActiveVenues(ctx: Ctx, params?: { category?: VenueCate
 }
 
 export async function getVenue(ctx: Ctx, venueId: string): Promise<Venue> {
-  if (!z.string().uuid().safeParse(venueId).success) throw new ValidationError('venueId must be a uuid');
+  if (!z.string().uuid().safeParse(venueId).success) throw new ValidationError('That is not a valid id.');
   const { rows } = await ctx.db.query<VenueRow>(`SELECT * FROM venues WHERE id = $1`, [venueId]);
   if (!rows[0]) throw new NotFoundError('Venue not found');
   return mapVenue(rows[0]);
@@ -199,7 +199,7 @@ const UpdateVenueSchema = CreateVenueSchema.partial().extend({ active: z.boolean
 
 export async function adminUpdateVenue(ctx: Ctx, venueId: string, patch: Partial<CreateVenueInput> & { active?: boolean }): Promise<Venue> {
   requireAdminActor(ctx);
-  if (!z.string().uuid().safeParse(venueId).success) throw new ValidationError('venueId must be a uuid');
+  if (!z.string().uuid().safeParse(venueId).success) throw new ValidationError('That is not a valid id.');
   const parsed = UpdateVenueSchema.parse(patch);
 
   const sets: string[] = [];

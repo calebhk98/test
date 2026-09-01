@@ -151,7 +151,12 @@ const ALLOWED_TRANSITIONS: Record<DateProposalStatus, readonly DateProposalStatu
 
 function assertTransition(current: DateProposalStatus, next: DateProposalStatus): void {
   if (!ALLOWED_TRANSITIONS[current].includes(next)) {
-    throw new ConflictError(`Illegal date proposal transition: '${current}' -> '${next}'`);
+    // Plain sentence for the wire — `message` reaches the client verbatim
+    // (see src/http/errors.ts), so the raw internal state names and
+    // arrow notation this used to interpolate directly (`'accepted' ->
+    // 'refunded'`) never should have. `current`/`next` stay available on
+    // `details` for a client that wants to branch on them programmatically.
+    throw new ConflictError('This date can no longer be updated — its status has already moved on.', { current, next });
   }
 }
 
@@ -206,7 +211,7 @@ function mapProposal(row: DateProposalRow): DateProposal {
 }
 
 async function loadProposalRow(ctx: Ctx, dateProposalId: string): Promise<DateProposalRow> {
-  if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('dateProposalId must be a uuid');
+  if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('That is not a valid id.');
   const { rows } = await ctx.db.query<DateProposalRow>(`SELECT * FROM date_proposals WHERE id = $1`, [dateProposalId]);
   if (!rows[0]) throw new NotFoundError('Date proposal not found');
   return rows[0];
@@ -385,7 +390,7 @@ export async function proposeDate(ctx: Ctx, input: ProposeDateInput): Promise<Da
 
   const conversation = await conversationService.getConversation(ctx, parsed.conversationId);
   if (conversation.status !== 'active') {
-    throw new ConflictError('Date proposals can only be created from an active conversation (spec §13.1)');
+    throw new ConflictError('You can only propose a date inside an active conversation.');
   }
   let recipientId: string;
   if (conversation.userAId === proposerId) recipientId = conversation.userBId;
@@ -467,7 +472,7 @@ async function acceptDateProposalLocked(ctx: Ctx, dateProposalId: string): Promi
   if (row.status === 'charged' || row.status === 'ticketed') return mapProposal(row);
 
   if (row.status !== 'pending_acceptance' && row.status !== 'accepted') {
-    throw new ConflictError(`Cannot accept a date proposal in status '${row.status}'`);
+    throw new ConflictError('This date proposal can no longer be accepted.', { status: row.status });
   }
 
   // ---- Step 2: authorize the recipient's hold ----
@@ -602,7 +607,7 @@ async function cancelDateProposalLocked(ctx: Ctx, dateProposalId: string): Promi
   }
 
   if (row.status !== 'accepted' && row.status !== 'charged' && row.status !== 'ticketed') {
-    throw new ConflictError(`Cannot cancel a date proposal in status '${row.status}'`);
+    throw new ConflictError('This date proposal can no longer be canceled.', { status: row.status });
   }
 
   const cutoffHours = row.policy_snapshot['date.full_refund_cutoff_hours'];
@@ -654,7 +659,7 @@ export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promi
   const row = await loadProposalRow(ctx, dateProposalId);
   const userId = assertParticipant(ctx, row);
   if (row.status !== 'ticketed') {
-    throw new ConflictError(`Cannot confirm attendance for a date proposal in status '${row.status}'`);
+    throw new ConflictError('Attendance can no longer be confirmed for this date.', { status: row.status });
   }
 
   await ctx.db.query(

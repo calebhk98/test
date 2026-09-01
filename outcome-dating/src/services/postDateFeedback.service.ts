@@ -357,7 +357,7 @@ export async function submitCheckIn(ctx: Ctx, dateProposalId: string, input: unk
 
   const proposal = await loadCheckInProposal(ctx, dateProposalId, userId);
   if (!ELIGIBLE_CHECK_IN_STATUSES.has(proposal.status)) {
-    throw new ConflictError(`Cannot submit a check-in for a date proposal in status '${proposal.status}'.`, { status: proposal.status });
+    throw new ConflictError('A check-in can’t be submitted for this date right now.', { status: proposal.status });
   }
   if (ctx.clock.now().getTime() < proposal.scheduled_start.getTime()) {
     throw new ConflictError('Cannot submit a check-in before the date has started.');

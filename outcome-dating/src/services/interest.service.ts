@@ -162,12 +162,14 @@ export class InterestTransitionError extends ConflictError {
   readonly attempted: InterestStatus;
 
   constructor(interestId: string, fromStatus: InterestStatus, attempted: InterestStatus) {
-    const legal = INTEREST_TRANSITIONS[fromStatus];
-    const reason =
-      legal.size === 0
-        ? `"${fromStatus}" is a terminal state`
-        : `only {${[...legal].join(', ')}} are reachable from "${fromStatus}"`;
-    super(`Interest ${interestId} cannot move from "${fromStatus}" to "${attempted}" — ${reason}.`, {
+    // Plain sentence for the wire (`message` reaches the client verbatim —
+    // see src/http/errors.ts) — the internal state names/set notation this
+    // used to interpolate directly (`cannot move from "x" to "y" — only
+    // {a, b, c} are reachable from...`) read like a debug log line, not
+    // something a person should see. The full `fromStatus`/`attempted`
+    // detail is still available on `details` for a client that wants to
+    // branch on it programmatically, just not narrated in `message`.
+    super('This interest request can no longer be changed — it has already been responded to, canceled, or has expired.', {
       interestId,
       fromStatus,
       attempted,
@@ -295,7 +297,7 @@ function decodeCursor(cursor: string): { createdAt: Date; id: string } {
 // sendInterest
 // ---------------------------------------------------------------------
 
-const RecipientIdSchema = z.string().uuid({ message: 'recipientId must be a UUID.' });
+const RecipientIdSchema = z.string().uuid({ message: 'That is not a valid id.' });
 
 export async function sendInterest(ctx: Ctx, recipientId: string): Promise<Interest> {
   const { userId, trustLevel } = requireUserActor(ctx);
@@ -532,7 +534,7 @@ export async function listIncomingEnriched(ctx: Ctx, params?: { cursor?: string;
 // acceptInterest
 // ---------------------------------------------------------------------
 
-const InterestIdSchema = z.string().uuid({ message: 'interestId must be a UUID.' });
+const InterestIdSchema = z.string().uuid({ message: 'That is not a valid id.' });
 
 export async function acceptInterest(
   ctx: Ctx,

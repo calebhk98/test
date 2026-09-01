@@ -97,7 +97,7 @@ async function loadDateProposalForVoucher(ctx: Ctx, dateProposalId: string): Pro
 
 /** Called by `dateProposal.service.ts` only, after both holds are captured (see module header). */
 export async function issueVoucher(ctx: Ctx, dateProposalId: string): Promise<Voucher> {
-  if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('dateProposalId must be a uuid');
+  if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('That is not a valid id.');
 
   const { rows: existingRows } = await ctx.db.query<VoucherRow>(`SELECT * FROM vouchers WHERE date_proposal_id = $1`, [dateProposalId]);
   if (existingRows[0]) return mapVoucher(existingRows[0]); // idempotent — already issued
@@ -145,7 +145,7 @@ async function assertCanViewVoucher(ctx: Ctx, dateProposalId: string): Promise<v
 }
 
 export async function getVoucher(ctx: Ctx, voucherId: string): Promise<Voucher> {
-  if (!z.string().uuid().safeParse(voucherId).success) throw new ValidationError('voucherId must be a uuid');
+  if (!z.string().uuid().safeParse(voucherId).success) throw new ValidationError('That is not a valid id.');
   const { rows } = await ctx.db.query<VoucherRow>(`SELECT * FROM vouchers WHERE id = $1`, [voucherId]);
   if (!rows[0]) throw new NotFoundError('Voucher not found');
   await assertCanViewVoucher(ctx, rows[0].date_proposal_id);
@@ -184,12 +184,12 @@ export async function expireDueVouchers(ctx: Ctx): Promise<{ expired: number }> 
 
 /** Cancels an issued (not yet redeemed) voucher — called by `dateProposal.service.ts` on a post-ticketing cancellation/refund (spec §14.7, §15). Throws ConflictError if not currently 'issued'. */
 export async function cancelVoucher(ctx: Ctx, voucherId: string): Promise<Voucher> {
-  if (!z.string().uuid().safeParse(voucherId).success) throw new ValidationError('voucherId must be a uuid');
+  if (!z.string().uuid().safeParse(voucherId).success) throw new ValidationError('That is not a valid id.');
   const { rows } = await ctx.db.query<VoucherRow>(`SELECT * FROM vouchers WHERE id = $1`, [voucherId]);
   const voucher = rows[0];
   if (!voucher) throw new NotFoundError('Voucher not found');
   if (voucher.status === 'canceled') return mapVoucher(voucher); // idempotent
-  if (voucher.status !== 'issued') throw new ConflictError(`Cannot cancel a voucher in status '${voucher.status}'`);
+  if (voucher.status !== 'issued') throw new ConflictError('This ticket can no longer be canceled.', { status: voucher.status });
 
   const { rows: updated } = await ctx.db.query<VoucherRow>(
     `UPDATE vouchers SET status = 'canceled' WHERE id = $1 AND status = 'issued' RETURNING *`,
@@ -207,11 +207,11 @@ export async function cancelVoucher(ctx: Ctx, voucherId: string): Promise<Vouche
  * redeemed/expired/canceled) or if past `expires_at`.
  */
 export async function markRedeemed(ctx: Ctx, voucherId: string): Promise<Voucher> {
-  if (!z.string().uuid().safeParse(voucherId).success) throw new ValidationError('voucherId must be a uuid');
+  if (!z.string().uuid().safeParse(voucherId).success) throw new ValidationError('That is not a valid id.');
   const { rows } = await ctx.db.query<VoucherRow>(`SELECT * FROM vouchers WHERE id = $1 FOR UPDATE`, [voucherId]);
   const voucher = rows[0];
   if (!voucher) throw new NotFoundError('Voucher not found');
-  if (voucher.status !== 'issued') throw new ConflictError(`Cannot redeem a voucher in status '${voucher.status}'`);
+  if (voucher.status !== 'issued') throw new ConflictError('This ticket can no longer be redeemed.', { status: voucher.status });
   if (voucher.expires_at.getTime() < ctx.clock.now().getTime()) throw new ConflictError('Voucher has expired');
 
   const { rows: updated } = await ctx.db.query<VoucherRow>(

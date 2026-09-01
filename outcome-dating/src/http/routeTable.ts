@@ -151,4 +151,11 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'POST', path: '/admin/payment-holds/:paymentHoldId/refund', spec: '§4.3.6 dispute override (addition)', role: 'admin', addition: true },
   { method: 'POST', path: '/admin/date-proposals/:dateProposalId/cancel', spec: '§30.6.2 venue-closed refund/cancel path (addition)', role: 'admin', addition: true },
   { method: 'GET', path: '/admin/system-readiness', spec: 'production-guard startup readiness report (addition — operator-only, see src/config/adapters.ts)', role: 'admin', addition: true },
+
+  // ---- Notification centre + device registration (§20.2 in-app channel, C-20.2.1; addition — see docs/ux-api-review.md §13) ----
+  { method: 'GET', path: '/notifications', spec: '§20.2 (addition — notification.service#listMyNotifications was built but unrouted)', role: 'user', addition: true },
+  { method: 'POST', path: '/notifications/:notificationId/read', spec: '§20.2 (addition — notification.service#markNotificationRead was built but unrouted)', role: 'user', addition: true },
+  { method: 'GET', path: '/devices', spec: '§20 (addition — notifications/devices.ts#listMyDeviceTokens was built but unrouted)', role: 'user', addition: true },
+  { method: 'POST', path: '/devices', spec: '§20 (addition — notifications/devices.ts#registerDeviceToken was built but unrouted: without this, push notifications cannot work regardless of configuration)', role: 'user', addition: true },
+  { method: 'DELETE', path: '/devices', spec: '§20 (addition — notifications/devices.ts#unregisterDeviceToken was built but unrouted)', role: 'user', addition: true },
 ];

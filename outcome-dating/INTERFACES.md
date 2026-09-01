@@ -42,7 +42,7 @@ must stay green.
 | `behavioralPrompt.service` | B | `detectPatternsForUser`, `listPendingSuggestions`, `respondToSuggestion` | §17, §22 | `question` (`putMyAnswers`, never `answers` directly), `ctx.flags` |
 | `interest.service` | C | `sendInterest`, `listOutgoing`, `listIncoming`, `acceptInterest`, `declineInterest`, `cancelInterest`, `expireDuePendingInterests` | §11, §21.3, §24.6, §25.1 | `conversation` (`getOrCreateConversation`), `notification`, `photoExperiment`, `discovery` (capacity check), `ctx.config` |
 | `conversation.service` | C | `getOrCreateConversation`, `listMyConversations`, `getConversation`, `archiveConversation`, `establishConversation`, `runChatDecayJob` | §12.1, §12.6-7, §23.13, §24.7, §25.3 | `notification` |
-| `message.service` | C | `sendMessage`, `listMessages`, `markRead`, `countMessagesInLastHour`, `countLinksInLastHour` | §12.2-5, §24.7 | `textscan`, `trust` (`canSendClickableLinks`), `conversation` (status check) |
+| `message.service` | C | `sendMessage`, `listMessages`, `markRead`, `countMessagesInLastHour`, `countLinksInLastHour` | §12.2-5, §24.7 | `textscan`, `trust` (`canSendClickableLinks`), `conversation` (status check), `notification` (`notify` for the existing `safety_notice` banner; `notifications/index#enqueueNotification` for `message_received`, added by the wiring build — see docs/ux-api-review.md §13's finding that new-message notifications never fired because this edge was not yet permitted) |
 | `textscan.service` | C | `scanText` (pure), `PATTERN_GROUPS` (const) | §12.4, §18.2, §19.3-4 | — (leaf, no I/O) |
 | `notification.service` | C | `notify`, `listMyNotifications`, `markNotificationRead`, `deliverPending`, `NOTIFICATION_TEMPLATES` (const) | §20 | — (leaf; every module calls *into* this one) |
 | `venue.service` | D | `listActiveVenues`, `getVenue`, `listAvailableTimeSlots`, `adminListVenues`, `adminCreateVenue`, `adminUpdateVenue` | §13.2, §24.8, §27, §30.6 | — (leaf) |
@@ -63,7 +63,7 @@ Reading the "may call" column as a graph, the only edges are:
 ```
 discovery ─▶ filter, compatibility, trust, moderation, photoExperiment
 interest ─▶ conversation, notification, photoExperiment, discovery
-message ─▶ textscan, trust, conversation
+message ─▶ textscan, trust, conversation, notification
 dateProposal ─▶ venue, payment, voucher, conversation, notification, trust
 redemption ─▶ voucher, dateProposal, conversation, trust
 moderation ─▶ report, trust, notification

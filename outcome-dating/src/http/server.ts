@@ -29,6 +29,8 @@ import { registerTrustRoutes } from './routes/trust.routes.js';
 import { registerReportRoutes } from './routes/reports.routes.js';
 import { registerAdminRoutes } from './routes/admin.routes.js';
 import { registerHealthRoutes } from './routes/health.routes.js';
+import { registerNotificationRoutes } from './routes/notifications.routes.js';
+import { registerDeviceRoutes } from './routes/devices.routes.js';
 
 declare module 'fastify' {
   interface FastifyInstance {
@@ -64,6 +66,8 @@ export function buildServer(deps: AppDeps): FastifyInstance {
   registerReportRoutes(app, deps);
   registerAdminRoutes(app, deps);
   registerHealthRoutes(app, deps);
+  registerNotificationRoutes(app, deps);
+  registerDeviceRoutes(app, deps);
 
   return app;
 }

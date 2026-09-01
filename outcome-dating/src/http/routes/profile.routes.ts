@@ -13,6 +13,8 @@ import * as behavioralPromptService from '../../services/behavioralPrompt.servic
 import { ConflictError, NotFoundError, ValidationError } from '../../lib/errors.js';
 import { requireUserActor } from '../../lib/ctx.js';
 import type { User } from '../../domain/types.js';
+import { BODY_TYPES } from '../../domain/units/bodyType.js';
+import { unitPreferenceSchema } from '../../domain/units/preference.js';
 import { serializeMe } from '../serializers/user.js';
 import { serializeMyProfile } from '../serializers/profile.js';
 import type { AppDeps } from '../deps.js';
@@ -62,6 +64,17 @@ const UpdateProfileBodySchema = z.object({
   gender: z.string().optional(),
   seeking: z.string().optional(),
   relationshipIntention: z.string().optional(),
+  // These six were accepted by `profile.service#updateMyProfile`'s own
+  // schema all along but silently stripped here (a `z.object` with no
+  // matching key drops it, no error) — a client could set a height and
+  // the write would 200 with nothing actually saved. Fixed alongside the
+  // read-side gap in `serializers/profile.ts` (docs/ux-api-review.md §3b).
+  heightCm: z.number().int().min(100).max(250).optional(),
+  weightG: z.number().int().min(20000).max(300000).optional(),
+  weightVisible: z.boolean().optional(),
+  bodyType: z.enum(BODY_TYPES).optional(),
+  unitPreference: unitPreferenceSchema.optional(),
+  distancePrecisionFloorKm: z.number().int().min(1).max(500).nullable().optional(),
   confirmCriticalChange: z.boolean().optional(),
 });
 const UploadPhotoBodySchema = z.object({ imageUrl: z.string() });

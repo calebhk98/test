@@ -20,7 +20,7 @@ import { createSilentLogger } from '../../src/lib/logger.js';
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Ctx } from '../../src/lib/ctx.js';
-import type { Answer, Question } from '../../src/domain/types.js';
+import type { Answer, AnswerValue, Question } from '../../src/domain/types.js';
 import {
   computePairScore,
   getScore,
@@ -288,6 +288,21 @@ async function setAnswer(userId: string, questionId: string, selfValue: number, 
   );
 }
 
+/** Like `makeUser`, but also gives the user a located profile and an explicit `last_active_at` — what the bounded refresh (see compatibility.service.ts's SCALE FIX doc) needs to consider someone eligible/geographically placeable. */
+async function makeUserWithLocation(email: string, lat: number, lon: number, lastActiveAt: Date): Promise<string> {
+  const { rows } = await pool.query<{ id: string }>(
+    `INSERT INTO users (email, password_hash, birthdate, status, last_active_at) VALUES ($1, 'x', '1995-01-01', 'active', $2) RETURNING id`,
+    [email, lastActiveAt],
+  );
+  const userId = rows[0]!.id;
+  await pool.query(
+    `INSERT INTO profiles (user_id, display_name, bio, age, gender, seeking, relationship_intention, profile_completeness, latitude, longitude)
+     VALUES ($1, 'Test', 'A long enough bio for completeness purposes.', 25, 'nonbinary', 'everyone', 'long_term', 100, $2, $3)`,
+    [userId, lat, lon],
+  );
+  return userId;
+}
+
 test('getScore: computes and upserts a compatibility_scores row for a pair with enough shared questions', async () => {
   const userA = await makeUser('compat-a@test.local');
   const userB = await makeUser('compat-b@test.local');
@@ -322,6 +337,153 @@ test('getScoresForCandidates: batches multiple candidates and upserts each row',
   const scores = await getScoresForCandidates(ctx, viewer, [c1, c2]);
   assert.equal(scores.size, 2);
   assert.ok(scores.get(c1)! > scores.get(c2)!, 'c1 (matching) should score higher than c2 (opposite)');
+});
+
+// =====================================================================
+// Bounded-refresh tests (this build's SCALE FIX — see compatibility.service.ts's
+// file-level doc). Perf/scale is measured separately in
+// tests/perf/compatRefresh.perf.test.ts; these prove the four hard
+// requirements at DB-verifiable (not just estimated) scale: semantics
+// unchanged, the cold path works, eviction bounds storage, and re-running
+// is idempotent.
+// =====================================================================
+
+test('refreshAllScores: materialized scores match computePairScore run directly on the same inputs (semantics-preservation proof), and a geographically distant pair is left for the cold path', async () => {
+  const now = ctx.clock.now();
+  // Three users clustered in New York (well within the default refresh radius of each other).
+  const near1 = await makeUserWithLocation('sem-near1@test.local', 40.7128, -74.006, now);
+  const near2 = await makeUserWithLocation('sem-near2@test.local', 40.72, -74.01, now);
+  const near3 = await makeUserWithLocation('sem-near3@test.local', 40.7, -73.99, now);
+  // One user in Sydney — thousands of km outside the default refresh radius of the New York cluster.
+  const far = await makeUserWithLocation('sem-far@test.local', -33.8688, 151.2093, now);
+
+  const qIds = await Promise.all([makeQuestion('sem-q1', 1), makeQuestion('sem-q2', 2), makeQuestion('sem-q3', 1)]);
+  const weights = [1, 2, 1];
+  const questions: Question[] = qIds.map((id, i) => question({ id, weight: weights[i]! }));
+
+  const raw: Record<string, [AnswerValue, AnswerValue][]> = {
+    [near1]: [[5, 4], [2, 3], [4, 5]],
+    [near2]: [[3, 5], [4, 2], [5, 1]],
+    [near3]: [[1, 1], [5, 5], [2, 4]],
+    [far]: [[4, 4], [1, 2], [3, 3]],
+  };
+  for (const [userId, values] of Object.entries(raw)) {
+    for (let i = 0; i < qIds.length; i++) {
+      await setAnswer(userId, qIds[i]!, values[i]![0]! as number, values[i]![1]! as number);
+    }
+  }
+  function answersFor(userId: string): Answer[] {
+    return qIds.map((qId, i) => answer(userId, qId, raw[userId]![i]![0]!, raw[userId]![i]![1]!));
+  }
+
+  await refreshAllScores(ctx);
+
+  // Every pair within the New York cluster must be materialized, BOTH
+  // directions, and must match `computePairScore` invoked directly on the
+  // exact same `Answer[]`/`Question[]` inputs — proving the bounded
+  // refresh's SQL/orchestration routes the right two users' answers into
+  // the unchanged scoring formula, not just that the formula itself is
+  // correct (already covered by the pure tests above).
+  for (const [a, b] of [[near1, near2], [near1, near3], [near2, near3]] as const) {
+    const expected = computePairScore(answersFor(a), answersFor(b), questions, DEFAULT_MIN_SHARED_QUESTIONS).score;
+    const { rows: fwd } = await pool.query<{ score: number }>(
+      'SELECT score FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+      [a, b],
+    );
+    const { rows: bwd } = await pool.query<{ score: number }>(
+      'SELECT score FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+      [b, a],
+    );
+    assert.equal(fwd.length, 1, `${a} -> ${b} should be materialized by the bounded refresh (both geographically near)`);
+    assert.equal(bwd.length, 1, `${b} -> ${a} should be materialized (symmetric)`);
+    assert.ok(Math.abs(fwd[0]!.score - expected) < 1e-9, `forward score mismatch: got ${fwd[0]!.score}, expected ${expected}`);
+    assert.ok(Math.abs(bwd[0]!.score - expected) < 1e-9, `backward score mismatch: got ${bwd[0]!.score}, expected ${expected}`);
+  }
+
+  // The geographically distant (Sydney) pair must NOT be pre-materialized
+  // by the bounded nightly refresh — this is the whole point of the
+  // bound, and the thing this test would catch regressing back to
+  // unbounded O(n^2) behavior.
+  const { rows: farRowBefore } = await pool.query(
+    'SELECT 1 FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+    [near1, far],
+  );
+  assert.equal(farRowBefore.length, 0, 'a geographically distant pair must not be pre-materialized by the bounded nightly refresh');
+
+  // COLD PATH: it must still be exactly scoreable on demand (hard
+  // requirement — "anything evicted or never materialized must still be
+  // scoreable on demand"), and the on-demand value must match the exact
+  // same pure computation used above.
+  const expectedFar = computePairScore(answersFor(near1), answersFor(far), questions, DEFAULT_MIN_SHARED_QUESTIONS).score;
+  const onDemand = await getScore(ctx, near1, far);
+  assert.ok(Math.abs(onDemand - expectedFar) < 1e-9, `cold-path on-demand score mismatch: got ${onDemand}, expected ${expectedFar}`);
+
+  // ...and computing it on demand must warm the cache as a side effect
+  // (getScore's documented contract, unchanged by this build).
+  const { rows: farRowAfter } = await pool.query<{ score: number }>(
+    'SELECT score FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+    [near1, far],
+  );
+  assert.equal(farRowAfter.length, 1, 'on-demand getScore must upsert the row as a caching side effect once computed');
+  assert.ok(Math.abs(farRowAfter[0]!.score - expectedFar) < 1e-9);
+});
+
+test('refreshAllScores: idempotent re-run, and a user who falls outside the activity window has every materialized row evicted', async () => {
+  const clock = ctx.clock as ManualClock;
+  const now = clock.now();
+  const a = await makeUserWithLocation('evict-a@test.local', 34.0522, -118.2437, now); // Los Angeles
+  const b = await makeUserWithLocation('evict-b@test.local', 34.05, -118.25, now); // Los Angeles, near a
+
+  const qs = await Promise.all([makeQuestion('evict-q1'), makeQuestion('evict-q2'), makeQuestion('evict-q3')]);
+  for (const q of qs) {
+    await setAnswer(a, q, 4, 4);
+    await setAnswer(b, q, 4, 4);
+  }
+
+  const countTouching = async (userId: string): Promise<number> => {
+    const { rows } = await pool.query<{ count: string }>(
+      'SELECT count(*)::text AS count FROM compatibility_scores WHERE user_id = $1 OR candidate_id = $1',
+      [userId],
+    );
+    return Number(rows[0]!.count);
+  };
+
+  const first = await refreshAllScores(ctx);
+  assert.ok(first.updated >= 2, 'the near pair must be materialized, both directions');
+  const countAfterFirst = await countTouching(a);
+  assert.ok(countAfterFirst >= 1);
+
+  const { rows: scoreRows } = await pool.query<{ score: number }>(
+    'SELECT score FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+    [a, b],
+  );
+  assert.equal(scoreRows.length, 1);
+  assert.ok(Math.abs(scoreRows[0]!.score - 1) < 1e-9, 'identical answers on every shared question -> perfect satisfaction');
+
+  // Re-running with an UNCHANGED clock and unchanged data must be
+  // idempotent: same row count, same score, driven entirely by
+  // `ctx.clock` (hard requirement: "idempotent and safe to re-run, driven
+  // by ctx.clock").
+  await refreshAllScores(ctx);
+  const countAfterSecond = await countTouching(a);
+  assert.equal(countAfterSecond, countAfterFirst, 're-running with unchanged data must not accumulate duplicate rows');
+  const { rows: scoreRowsAfterRerun } = await pool.query<{ score: number }>(
+    'SELECT score FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+    [a, b],
+  );
+  assert.ok(Math.abs(scoreRowsAfterRerun[0]!.score - 1) < 1e-9);
+
+  // Move the clock forward past the activity window — `a`/`b`'s
+  // `last_active_at` (fixed at the earlier `now`) is now stale, so both
+  // fall out of eligibility. Every row touching either of them must be
+  // evicted, not merely left un-refreshed (hard requirement: this is what
+  // keeps `compatibility_scores`'s size bounded by the ACTIVE population
+  // rather than the platform's total historical user count — see
+  // compatibility.service.ts's file-level SCALE FIX doc).
+  clock.advanceDays(45);
+  await refreshAllScores(ctx);
+  assert.equal(await countTouching(a), 0, 'a user who fell outside the activity window must have every materialized row evicted');
+  assert.equal(await countTouching(b), 0, 'same for their formerly-near partner, once they too are outside the window');
 });
 
 test('refreshAllScores: writes symmetric rows for every active pair', async () => {

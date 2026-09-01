@@ -131,9 +131,10 @@ export async function notify(ctx: Ctx, input: NotifyInput): Promise<Notification
   const templateKey = parsed.templateKey ?? NOTIFICATION_TEMPLATES[parsed.eventType];
 
   if (!VALID_TEMPLATE_KEYS.has(templateKey)) {
-    throw new ValidationError(
-      `"${templateKey}" is not a registered static template for event "${parsed.eventType}" — every notification must render from a key in NOTIFICATION_TEMPLATES (spec §1 rule 9, §20).`,
-    );
+    throw new ValidationError('This notification could not be sent — its content template was not recognized.', {
+      templateKey,
+      eventType: parsed.eventType,
+    });
   }
 
   const payload = parsed.payload ?? {};

@@ -1,0 +1,36 @@
+-- 018_compat_refresh.sql
+--
+-- Compatibility-refresh scalability fix (docs/scale-and-sources.md Part 1,
+-- §1.2/§1.9 fix #3). Owned entirely by this build; does not alter or drop
+-- anything from any earlier migration, and no earlier migration is edited.
+--
+-- THE PROBLEM: `compatibility.service.ts#refreshAllScores` used to be a
+-- true O(n^2) nested loop over every active user against every other
+-- active user, with two sequential single-row writes per pair. Per
+-- docs/scale-and-sources.md §1.2.1, that stops finishing inside its 24h
+-- window somewhere between 3,000 and 10,000 active users, and the table
+-- itself is estimated at ~175TB at a million users.
+--
+-- THE FIX (application-layer half lives in compatibility.service.ts — this
+-- migration is the schema half it depends on): materialize scores only for
+-- pairs that are geographically plausible AND recently active, reusing the
+-- same bounding-box idea `filter.service.ts#boundingBoxForRadius` already
+-- established for discovery (see that module's own `017_discovery_perf.sql`
+-- migration for the fuller rationale — this one does not repeat it). The
+-- geo self-join in `compatibility.service.ts` is written as a single
+-- LATERAL query against `users`/`profiles` directly, so it already benefits
+-- from `idx_profiles_lat_lon` and `idx_users_status_last_active`
+-- (`017_discovery_perf.sql`) without any new index on those tables.
+--
+-- WHAT THIS MIGRATION ADDS: eviction (deleting rows for users who fell out
+-- of the active window, or whose top-K geographic neighbor set changed) is
+-- now a real, per-run query pattern, not a one-off. Every existing index on
+-- `compatibility_scores` is keyed by `user_id` first (the PK `(user_id,
+-- candidate_id)`, and `idx_compatibility_scores_user_score (user_id, score
+-- DESC)`) — there has never been an index usable for "which rows mention
+-- this id as the *candidate*", which the eviction delete needs (a
+-- since-materialized-but-now-ineligible user must be purged regardless of
+-- which column they show up in, because every pair is stored in both
+-- directions). Without this, half of every eviction delete would be a full
+-- sequential scan of the table.
+CREATE INDEX idx_compatibility_scores_candidate ON compatibility_scores (candidate_id);

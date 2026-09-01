@@ -238,7 +238,7 @@ export async function settleDueVenuePayouts(ctx: Ctx): Promise<SettleDueVenuePay
 
 /** Settles one specific, already-`completed`+redeemed date proposal on demand (e.g. an admin "settle now" action). Idempotent — a no-op (`null`) if not eligible or already settled. */
 export async function settleOneDateProposalById(ctx: Ctx, dateProposalId: string): Promise<VenueSettlement | null> {
-  if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('dateProposalId must be a uuid');
+  if (!z.string().uuid().safeParse(dateProposalId).success) throw new ValidationError('That is not a valid id.');
 
   const { rows } = await ctx.db.query<SettlementCandidateRow>(
     `SELECT dp.id AS date_proposal_id, dp.venue_id, v.margin_percent
@@ -273,7 +273,7 @@ export async function listVenueSettlements(
   const values: unknown[] = [];
   let whereClause = '';
   if (params?.venueId) {
-    if (!z.string().uuid().safeParse(params.venueId).success) throw new ValidationError('venueId must be a uuid');
+    if (!z.string().uuid().safeParse(params.venueId).success) throw new ValidationError('That is not a valid id.');
     values.push(params.venueId);
     whereClause = `WHERE venue_id = $${values.length}`;
   }
@@ -294,7 +294,7 @@ export async function listVenueSettlements(
 /** Sum of `venuePayoutCents` for `venueId` across every settlement (admin/venue-dashboard convenience — spec §13.2 margin reporting). */
 export async function totalSettledPayoutForVenue(ctx: Ctx, venueId: string): Promise<number> {
   requireAdminOrSystemActor(ctx);
-  if (!z.string().uuid().safeParse(venueId).success) throw new ValidationError('venueId must be a uuid');
+  if (!z.string().uuid().safeParse(venueId).success) throw new ValidationError('That is not a valid id.');
   const { rows } = await ctx.db.query<{ sum: string | null }>(
     `SELECT COALESCE(sum(venue_payout_cents), 0)::text AS sum FROM venue_settlements WHERE venue_id = $1 AND status = 'settled'`,
     [venueId],

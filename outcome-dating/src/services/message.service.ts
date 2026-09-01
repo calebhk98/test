@@ -8,6 +8,7 @@ import * as textscan from './textscan.service.js';
 import * as trustService from './trust.service.js';
 import * as conversationService from './conversation.service.js';
 import * as notificationService from './notification.service.js';
+import { enqueueNotification } from './notifications/index.js';
 import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.js';
 
 /**
@@ -102,6 +103,22 @@ export async function linkLimitForCaller(ctx: Ctx): Promise<number> {
   return trustService.linksPerHourLimitFor(ctx, trustLevel);
 }
 
+/**
+ * First word of the sender's own display name, for the `message_received`
+ * notification's `senderFirstName` payload field (see
+ * `notifications/delivery.ts#resolveTemplateAndData`). A direct,
+ * read-only query against `profiles` — the same "narrow cross-domain
+ * read" pattern `serializers/venue.ts#displayNamesFor` already uses for
+ * an identical need, rather than a new `profile.service.ts` export for
+ * one call site (this module has no "may call profile" edge, and adding
+ * one is out of scope for this one field).
+ */
+async function senderFirstNameFor(ctx: Ctx, senderId: string): Promise<string> {
+  const { rows } = await ctx.db.query<{ display_name: string }>('SELECT display_name FROM profiles WHERE user_id = $1', [senderId]);
+  const displayName = rows[0]?.display_name ?? 'Someone';
+  return displayName.trim().split(/\s+/)[0] ?? displayName;
+}
+
 export async function sendMessage(ctx: Ctx, conversationId: string, body: string): Promise<Message> {
   const { userId } = requireUserActor(ctx);
   const validBody = MessageBodySchema.parse(body);
@@ -110,7 +127,7 @@ export async function sendMessage(ctx: Ctx, conversationId: string, body: string
   // (spec §12.1) below.
   const conversation = await conversationService.getConversation(ctx, conversationId);
   if (!OPEN_STATUSES.has(conversation.status)) {
-    throw new ForbiddenError(`Conversation is "${conversation.status}" — messaging is closed.`);
+    throw new ForbiddenError('You can’t send messages in this conversation right now.', { status: conversation.status });
   }
 
   const maxPerHour = await ctx.config.get('chat.max_messages_per_hour');
@@ -176,6 +193,47 @@ export async function sendMessage(ctx: Ctx, conversationId: string, body: string
   }
 
   await ctx.db.query(`UPDATE conversations SET last_message_at = $2 WHERE id = $1`, [conversationId, now]);
+
+  // New-message notification (docs/ux-api-review.md §13: "there is no way
+  // for a client to know a new message arrived without polling" —
+  // `message_received` had nowhere to fire from since this module wasn't
+  // permitted to call the notification layer at all; see INTERFACES.md's
+  // updated `message ─▶ notification` edge). Routed through
+  // `notifications/index#enqueueNotification`, never `notification.service
+  // #notify` directly — `message_received` isn't in that frozen event
+  // enum (see notification.service.ts's own doc), and enqueueNotification
+  // is the one place that applies the coalescing/preference/quiet-hours
+  // pipeline this event needs (five messages while you're away should
+  // become one push, not five).
+  const recipientId = conversation.userAId === userId ? conversation.userBId : conversation.userAId;
+  try {
+    await enqueueNotification(ctx, {
+      userId: recipientId,
+      eventType: 'message_received',
+      // Convention: `${eventType}:${entityId}` — this specific message,
+      // so a retried send can never double-enqueue for the same row.
+      dedupKey: `message_received:${id}`,
+      // Convention (notifications/outbox.ts's own doc): groups every
+      // undelivered message notification for this (recipient,
+      // conversation) into one coalesced push — "5 messages -> 1 push" —
+      // instead of one push per message.
+      coalescingKey: `message:${recipientId}:${conversationId}`,
+      payload: {
+        conversationId,
+        senderFirstName: await senderFirstNameFor(ctx, userId),
+        messagePreviewText: validBody,
+      },
+    });
+  } catch (err) {
+    // Best-effort, like every other notification call site in this
+    // codebase — a notification-layer hiccup must never fail or roll
+    // back an otherwise-successful send.
+    ctx.logger.warn('message.enqueue_notification_failed', {
+      messageId: id,
+      conversationId,
+      err: err instanceof Error ? err.message : String(err),
+    });
+  }
 
   // §19.3/§12.5: nothing above this point can block the send — flags are
   // recorded, and at most a static safety-notice banner is attached.

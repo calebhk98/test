@@ -31,7 +31,7 @@ export const paginationQuerySchema = z.object({
 });
 
 /** Parses `input` with `schema`, translating a ZodError into the shared `ValidationError` so route-level and service-level validation failures produce byte-identical error envelopes. */
-export function parseOrThrow<T>(schema: z.ZodType<T>, input: unknown): T {
+export function parseOrThrow<T>(schema: z.ZodType<T, z.ZodTypeDef, unknown>, input: unknown): T {
   try {
     return schema.parse(input);
   } catch (err) {

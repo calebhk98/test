@@ -221,7 +221,7 @@ export async function reorderPhotos(ctx: Ctx, orderedPhotoIds: string[]): Promis
   const requestedIds = new Set(orderedPhotoIds);
 
   if (existingIds.size !== requestedIds.size || [...existingIds].some((id) => !requestedIds.has(id))) {
-    throw new ValidationError('orderedPhotoIds must contain exactly the caller’s current photo ids.');
+    throw new ValidationError('That list of photos doesn’t match your current photos — refresh and try again.');
   }
 
   for (let i = 0; i < orderedPhotoIds.length; i++) {
