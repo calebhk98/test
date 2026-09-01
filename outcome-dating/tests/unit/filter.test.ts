@@ -67,9 +67,35 @@ test('evaluateFilter: in operator', () => {
   assert.equal(evaluateFilter({ operator: 'in', value: 'not-an-array' }, 'woman'), false);
 });
 
-test('evaluateFilter: an unresolved (undefined) candidate value always fails closed', () => {
-  assert.equal(evaluateFilter({ operator: 'gte', value: 0 }, undefined), false);
-  assert.equal(evaluateFilter({ operator: 'in', value: ['a', 'b'] }, undefined), false);
+// UPDATED by the units/physical-attributes build (product-owner
+// correction — see filter.service.ts's file-level "MISSING/UNRESOLVED
+// VALUES" note): an unresolved candidate value no longer fails closed
+// UNCONDITIONALLY. `evaluateFilter` gained a third `excludeIfUnset`
+// parameter; passing it explicitly still gives EXACTLY the original
+// fail-closed behavior this test used to assert unconditionally (see the
+// first two assertions below, unchanged in spirit), but the DEFAULT when
+// it is omitted flipped from "always fails closed" to "never excludes on
+// an unresolved value" — a brand-new account that hasn't filled a field
+// in yet must not silently vanish from every other user's results. The
+// original two-argument assertions are kept, retitled and re-pointed at
+// the new default, rather than deleted, so this file still proves both
+// halves of the toggle in one place.
+test('evaluateFilter: excludeIfUnset:true still fails closed on an unresolved (undefined) candidate value', () => {
+  assert.equal(evaluateFilter({ operator: 'gte', value: 0 }, undefined, true), false);
+  assert.equal(evaluateFilter({ operator: 'in', value: ['a', 'b'] }, undefined, true), false);
+});
+
+test('evaluateFilter: the default (excludeIfUnset omitted) no longer fails closed on an unresolved value — it passes', () => {
+  assert.equal(evaluateFilter({ operator: 'gte', value: 0 }, undefined), true);
+  assert.equal(evaluateFilter({ operator: 'in', value: ['a', 'b'] }, undefined), true);
+  // Explicit false is identical to the default, spelled out.
+  assert.equal(evaluateFilter({ operator: 'gte', value: 0 }, undefined, false), true);
+});
+
+test('evaluateFilter: excludeIfUnset never affects a RESOLVED value — only undefined is special-cased', () => {
+  assert.equal(evaluateFilter({ operator: 'gte', value: 21 }, 25, true), true);
+  assert.equal(evaluateFilter({ operator: 'gte', value: 21 }, 15, true), false);
+  assert.equal(evaluateFilter({ operator: 'eq', value: null }, null, true), true, 'a resolved null is compared normally, not treated as unresolved');
 });
 
 test('haversineKm: symmetric and zero for identical points', () => {

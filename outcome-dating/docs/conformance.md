@@ -794,6 +794,15 @@ test author has one answer to code against instead of re-litigating it mid-imple
 Product should review these; until they do, treat the recommendation as binding for the
 test suite so the suite is internally consistent.
 
+**OQ-1 — DECIDED, IMPLEMENTED.** Product confirmed the recommendation below: the refund
+cutoff (and every other score/threshold comparison in the codebase — see OQ-10) is
+inclusive (`>=`). `dateProposal.service#cancelDateProposal` already computes
+`isFullRefund = hoursUntilDate >= cutoffHours`, matching this exactly; no code change was
+needed, only an audit (see the decision-layer final report) confirming every threshold
+comparison in `src/services/*` already reads this way and the boundary tests
+(C-14.7.W2, `tests/unit/dateProposal.test.ts`'s "exactly 24h" case) already assert the
+inclusive reading.
+
 **OQ-1 — §14.7 boundary at exactly the refund cutoff.** The spec defines "more than 24
 hours before" (full refund) and "less than 24 hours before" (no refund) but never states
 what happens at exactly 24h00m00s — neither bucket's wording covers equality.
@@ -811,6 +820,25 @@ framing means sinking low-evidence profiles in sort order (never removing them, 
 hard filters still gate visibility per CC-1) is the safer interpretation. This should be a
 single named config constant (e.g. `compatibility.no_data_default_score`) so product can
 flip it without touching code. Test: C-16.2.W6.
+
+**OQ-3 — DECIDED, IMPLEMENTED.** Product confirmed the recommendation below, with concrete
+numbers: `no_show` fires automatically when `date.no_scan_confirmation_hours` (72h,
+unchanged) closes with ZERO attendance confirmations and no venue scan
+(`dateProposal.service#sweepTicketedCompletionWindows`) — refund follows the FROZEN
+policy snapshot's `date.no_show_refund_percent`, applied symmetrically to both parties
+(nobody proved attendance, so there's no "the other party showed up" fact to make anyone
+whole on). `disputed` (exactly one confirmation) auto-resolves after a new
+`date.dispute_auto_resolve_hours` config key (default 72h, snapshot-scoped) via
+`disputeResolution.service#resolveDueDisputes`: an implicit `no_show`-category report is
+filed against the non-confirming party through the real `report.service#submitReport` (the
+confirming party is impersonated as reporter — see that module's header), which drives the
+existing `moderation.service` scoring pipeline unmodified, plus a direct
+`trust.service#recordTrustEvent`/`recalculateTrustScore` call. `disputed` itself stays
+terminal (§13.3) — only `date_proposals.dispute_resolved_at` marks the automated
+resolution as done, idempotently. Both sweeps are pure functions of `Ctx`/`ctx.clock`, safe
+to re-run, with no `admin` actor anywhere in either path (spec §18.1) — see
+`tests/unit/dateOutcomeSweep.test.ts`. Full details, including the two new notification
+event types this needed, are in the decision-layer final report.
 
 **OQ-3 — What actually sets `date_proposals.status = 'no_show'`, and how is `'disputed'`
 resolved?** `no_show` is a listed status (§13.3) and feeds the no-show refund config
@@ -864,6 +892,24 @@ the spec explicitly punts.** *Recommendation:* default OFF (never show the raw s
 gate exposure behind an explicit config/flag (e.g. `trust.expose_raw_score`, default
 `false`) so the default behavior is testable and the override path is too. Test: C-6.1.3.
 
+**OQ-8 — DECIDED, IMPLEMENTED — reversed from this document's original "out of scope"
+recommendation.** Product decided venue settlement IS in scope: built in
+`src/services/venueSettlement.service.ts` (new file), `db/migrations/007_decisions.sql`
+(new `venue_settlements` table; `payment_ledger.type` extended with `venue_payout`, plus a
+new nullable `venue_id` column since a venue payout pays a venue, not a user — see the
+migration's own comments). Settlement is earned ONLY by a venue-VERIFIED completion
+(`status = 'completed'` AND a `venue_redemptions` row exists) — `completed_unverified`,
+`no_show`, `canceled`, `refunded`, and `disputed` are excluded by construction (the
+settlement-candidate query filters on exactly that), proven negatively for each status in
+`tests/unit/venueSettlement.test.ts`, which was this decision's whole point (§15.4). Payout
+math is integer-only: `venuePayoutCents = Math.floor(grossCents * marginPercent / 100)`,
+`platformCents = grossCents - venuePayoutCents`, so the two always sum to gross exactly —
+unit-tested directly, including the non-exact-percent rounding case (gross=1999,
+margin=33% -> 659/1340). Settlement is idempotent (one settlement row per date proposal,
+ever, `UNIQUE` + `ON CONFLICT DO NOTHING`). The job body is `settleDueVenuePayouts(ctx)`;
+it is not registered anywhere in `src/jobs/**` by this decision layer — see the final
+report for the exact name the jobs owner should schedule.
+
 **OQ-8 — §15.4's "does not automatically settle venue payment" implies a venue-payout
 concept that is never defined anywhere else in the spec.** There is no `venue_payout`
 `LedgerEntryType` (§14.8's 6 types are user-facing: authorization/capture/release/
@@ -887,6 +933,19 @@ formula symmetric (compatibility(A,B) === compatibility(B,A)), which the spec's 
 ("mutual filter passing," "pair_satisfaction") strongly implies is an intended property.
 Note the arithmetic identity proven in C-16.2.W5 means the polarity-transform ambiguity
 that would otherwise compound this doesn't actually matter numerically.
+
+**OQ-10 — DECIDED, IMPLEMENTED.** Product confirmed the recommendation below: every
+threshold in the codebase is inclusive (`>=`), overriding §18.5's literal "exceeds".
+`moderation.service#applyThresholds` already compares `score >= restrictionThreshold`
+(and likewise for shadowban/suspension/warning); `trust.service#levelForScore` already
+compares `clamped >= bounds[...]` for all three band boundaries; `dateProposal.service`'s
+refund cutoff is covered under OQ-1. A full audit of every threshold-shaped comparison in
+`src/services/*.ts` (grep for `>=`/`>`/`<` near cutoff/threshold/`_min` identifiers) found
+nothing using the exclusive reading — so this decision required no code change, only
+confirming and documenting it. Boundary tests already exist and assert the inclusive side
+at every named boundary (score 50/80 in `tests/unit/moderation.test.ts`, 24h in
+`tests/unit/dateProposal.test.ts`, trust bands 40/70/90 in `tests/unit/trust.test.ts`) —
+none needed to change. See the decision-layer final report for the full audit trail.
 
 **OQ-10 — §18.5 "If report score EXCEEDS threshold" (strict `>`) vs. the natural
 "threshold" convention used everywhere else in the spec (inclusive `>=`, e.g. §6.1's

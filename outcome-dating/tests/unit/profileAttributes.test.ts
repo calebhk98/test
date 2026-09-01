@@ -30,6 +30,7 @@ import {
   defaultExcludeIfUnset,
 } from '../../src/services/filter.service.js';
 import { ValidationError } from '../../src/lib/errors.js';
+import { ZodError } from 'zod';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const TEST_DB_NAME = 'odate_units_profileattributes';
@@ -128,15 +129,21 @@ test('updateMyProfile: stores height/weight/bodyType canonically and round-trips
 });
 
 test('updateMyProfile: rejects an out-of-range height/weight and an unknown bodyType', async () => {
+  // `UpdateProfileSchema.parse(...)` (not `safeParse`) is this codebase's
+  // established convention across every service — see auth.service.ts,
+  // appeal.service.ts, dateProposal.service.ts, filter.service.ts, etc.,
+  // all of which let a raw `ZodError` propagate on invalid input rather
+  // than wrapping it in `ValidationError`. This build's new fields follow
+  // the same convention rather than inventing a different one.
   const userId = await makeBareUser();
   const userCtx = actorFor(userId);
   await assert.rejects(
     () => profile.updateMyProfile(userCtx, { displayName: 'X', age: 30, gender: 'woman', seeking: 'man', relationshipIntention: 'long_term', heightCm: 5 }),
-    ValidationError,
+    ZodError,
   );
   await assert.rejects(
     () => profile.updateMyProfile(userCtx, { displayName: 'X', age: 30, gender: 'woman', seeking: 'man', relationshipIntention: 'long_term', weightG: 1 }),
-    ValidationError,
+    ZodError,
   );
   await assert.rejects(
     () =>
@@ -149,7 +156,7 @@ test('updateMyProfile: rejects an out-of-range height/weight and an unknown body
         // @ts-expect-error — deliberately an invalid bodyType to prove the zod schema rejects it at runtime.
         bodyType: 'not-a-real-body-type',
       }),
-    ValidationError,
+    ZodError,
   );
 });
 
@@ -364,7 +371,32 @@ test('previewPoolSizeWithUnsetPolicy: shows the cost of turning excludeIfUnset o
   const poolExcluding = await previewPoolSizeWithUnsetPolicy(ctx, viewer, 'height_cm', true);
 
   assert.ok(poolExcluding < poolIncluding, 'turning exclusion on must shrink (never grow) the pool');
-  assert.equal(poolIncluding - poolExcluding, 2, 'exactly the two unset-height candidates are the ones the strict setting costs');
+
+  // The viewer's only enabled filter is height_cm, so the delta between
+  // the two previews is EXACTLY the count of other active users whose
+  // height_cm is unresolved (NULL) — flipping excludeIfUnset changes
+  // nothing about how a RESOLVED height is compared, only how an
+  // unresolved one is treated. Computed live (not hardcoded) because
+  // this is a per-FILE shared database: earlier tests in this file have
+  // already created other users, most of them also height-unset, so the
+  // real delta is larger than just this test's own 2 fixtures — the
+  // point being tested is that it equals the live count, not a fixed
+  // small number (mirrors filter.test.ts's own "reality dashboard"
+  // test's live-query style for the same reason).
+  // LEFT JOIN (not JOIN): a user with NO profile row at all also resolves
+  // as unset for height_cm (loadProfile returns undefined), and a couple
+  // of earlier tests in this file create bare users with no profile —
+  // those must be counted here too, or this query would undercount
+  // relative to what previewPoolSizeWithUnsetPolicy actually iterates
+  // (every active user, profile or not).
+  const { rows } = await pool.query<{ count: string }>(
+    `SELECT count(*)::text AS count FROM users u LEFT JOIN profiles p ON p.user_id = u.id
+     WHERE u.status = 'active' AND u.id <> $1 AND p.height_cm IS NULL`,
+    [viewer],
+  );
+  const expectedDelta = Number(rows[0]!.count);
+  assert.equal(poolIncluding - poolExcluding, expectedDelta, 'the delta must equal exactly the count of other active users with an unresolved height');
+  assert.ok(expectedDelta >= 2, 'sanity: at least this test\'s own 2 unset-height fixtures are among them');
 
   // Nothing was written: the filter's actual persisted excludeIfUnset is
   // still whatever updateMyFilters set it to (the default: false).

@@ -1,0 +1,44 @@
+-- 010_eligibility.sql
+-- Mutual-eligibility enforcement build (this build; no § reference beyond
+-- §9/§9.4/§11 which it enforces more strictly — a product-owner
+-- requirement layered on top of the completed spec implementation, same
+-- category as 007_decisions.sql's additions). Owned by this build only;
+-- does not alter or drop anything from any earlier migration, and no
+-- earlier migration is edited.
+--
+-- One addition: `interests.decline_origin` — distinguishes a RECIPIENT's
+-- own explicit decline ('human') from Layer 3's retroactive auto-decline
+-- sweep ('auto', src/services/interest.service.ts's
+-- `sweepAutoDeclineForRecipient`/`sweepAutoDeclineAll`, backed by
+-- src/services/eligibility.service.ts) so trust scoring and analytics can
+-- treat the two differently — an auto-decline is the SYSTEM catching a
+-- mismatch the recipient's own stated hard filters already rule out, not
+-- a judgment the recipient made about the sender, so it MUST NOT feed the
+-- sender's trust score negatively the way a pattern of human declines
+-- eventually might.
+--
+-- PRIVACY: this column is never surfaced through `interest.service.ts`'s
+-- ordinary Interest-shaped return values (`sendInterest`, `listOutgoing`,
+-- `listIncoming`, `acceptInterest`, `declineInterest` all keep returning
+-- exactly the frozen `Interest` shape from `domain/types.ts` — no new
+-- field is bolted onto that mapping). A sender must never be able to
+-- learn, via any API response, that a decline was automatic — only
+-- internal/analytics code that reads the `interests` table directly
+-- (the same "direct cross-domain table read" pattern `discovery.service.ts`
+-- already uses for this exact table) can see this column.
+--
+-- NULL for every interest that is not (or is not yet) 'declined' — a
+-- pending/accepted/expired/canceled row never has a decline_origin, and
+-- the terminal-state guarantee on `interests.status` (§11.4) means a row
+-- that already has 'declined' + an origin never transitions again, so
+-- this is set exactly once, at the same time as `declined_at`.
+ALTER TABLE interests ADD COLUMN IF NOT EXISTS decline_origin text
+  CHECK (decline_origin IN ('human', 'auto'));
+
+-- Every already-declined row from before this migration predates the
+-- distinction; NULL (rather than defaulting to 'human') is the honest
+-- answer for "we don't actually know" and is never read as either value
+-- by name (see src/services/interest.service.ts's sweep functions, which
+-- only ever WRITE 'auto', and declineInterest, which only ever WRITEs
+-- 'human' — neither reads old rows expecting a particular backfilled
+-- value).
