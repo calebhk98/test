@@ -9,12 +9,18 @@
  * `isProfileVisibleTo`'s early-exit rules are exercised against a real,
  * dedicated Postgres database (`outcome_dating_test_discovery`).
  *
- * NOT exercised end-to-end here: `getDiscoveryGrid` / `getRealityDashboard`
- * / the full nine-rule path of `isProfileVisibleTo`. Both call
- * `moderation.service#isVisibleInDiscovery` (owned by Agent E), which is
- * still a `NotImplementedError` stub as of this writing — see this
- * service's file-level comment and the handoff report for details. Once
- * that lands, an integration test exercising the full grid belongs here.
+ * SCALE FIX (docs/scale-and-sources.md Part 1) coverage, below the
+ * original test set: `getDiscoveryGrid`/`getRealityDashboard` are now
+ * exercised end-to-end (the note this file used to carry about
+ * `moderation.service#isVisibleInDiscovery` being an unimplemented stub is
+ * stale — that landed separately) — proving the batched candidate-pool
+ * pipeline (`computeRankedCandidatePool`) still enforces all nine §10.2
+ * visibility rules, still never lets a compatibility score override a
+ * failed hard filter, still never hides a zero-compatibility candidate,
+ * is now geographically bounded, and that the geographic bound did not
+ * change what a viewer is shown for another user's distance (still
+ * coarse-bucketed + pair-jittered, per `domain/units/distance.ts`,
+ * untouched by this build).
  */
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
@@ -38,7 +44,12 @@ import {
   isEitherBlocked,
   recordDiscoveryImpression,
   isProfileVisibleTo,
+  getDiscoveryGrid,
+  getRealityDashboard,
+  MAX_CANDIDATE_POOL_SIZE,
 } from '../../src/services/discovery.service.js';
+import { updateMyFilters, DEFAULT_DISCOVERY_RADIUS_KM } from '../../src/services/filter.service.js';
+import { approximateDistanceBetween } from '../../src/domain/units/distance.js';
 
 // =====================================================================
 // Pure sortDiscoveryCandidates tests
