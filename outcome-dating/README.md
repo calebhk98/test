@@ -56,7 +56,7 @@ npm run migrate
 npm run seed
 
 # 5. Run the API + background job scheduler.
-npm run dev -- serve
+npm run dev
 ```
 
 `GET http://localhost:3000/healthz` returns `{"status":"ok"}` once it's up.
@@ -70,19 +70,10 @@ Run the test suite:
 npm test
 ```
 
-**A gap you should know about before you rely on `package.json`'s scripts
-literally:** `npm run dev` is defined as `tsx watch src/index.ts` with **no
-subcommand** — `src/index.ts` is a CLI (`serve` / `migrate` / `seed` /
-`jobs:run <name>` / `jobs:start`) that prints a usage message and exits when
-called with no argument, so `npm run dev` alone starts nothing. Verified
-directly: running it prints `Unknown command ""` and the CLI's own usage
-text. Similarly, `npm start` (`node dist/index.js`) is broken as written —
-`tsconfig.json`'s `rootDir` is `.` (it compiles `src/**` *and* `tests/**`),
-so `npm run build`'s actual output entrypoint is `dist/src/index.js`, not
-`dist/index.js`; running `npm start` fails with `MODULE_NOT_FOUND`. Use
-`npm run dev -- serve` for local development (confirmed above — the `--`
-forwards `serve` to `tsx watch`) or `node dist/src/index.js serve` after a
-build, until someone fixes these two script entries.
+`npm run dev` runs the API and the job scheduler from source with reload.
+`npm run build && npm start` runs the compiled build; `build` uses
+`tsconfig.build.json`, which compiles `src/**` only, so the entrypoint is
+`dist/index.js`. `npm run typecheck` still covers `tests/**` as well.
 
 ### Other useful commands (all verified against this repo)
 
@@ -580,9 +571,6 @@ a review document) that a team should know before treating this as launch-ready:
   `SesEmailSender`, and `TwilioSmsSender` are all documented stubs
   (`NotImplementedError`). The delivery pipeline itself (outbox, retry/backoff,
   quiet hours, preferences) is fully built and tested against the fakes.
-- **Two `package.json` scripts are broken as written**: `npm run dev`
-  (missing the `serve` subcommand) and `npm start` (wrong compiled entry
-  path). See [Quickstart](#quickstart) for the working equivalents.
 - **The scaling ceiling is real but partially already addressed.**
   `docs/scale-and-sources.md` found the discovery grid and reality
   dashboard scanning every active user platform-wide with no geographic
