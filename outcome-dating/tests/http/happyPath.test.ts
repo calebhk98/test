@@ -119,7 +119,7 @@ test('happy path: register -> answers -> filters -> discovery -> interest -> cha
 
   // ---- tickets (§15) ----
   const ticketsRes = await t.app.inject({ method: 'GET', url: '/tickets', headers: authHeader(alice.accessToken) });
-  const tickets = JSON.parse(ticketsRes.body) as Array<{ id: string; code: string; dateProposalId: string; status: string }>;
+  const tickets = (JSON.parse(ticketsRes.body) as { items: Array<{ id: string; code: string; dateProposalId: string; status: string }> }).items;
   const ticket = tickets.find((tk) => tk.dateProposalId === proposal.id);
   assert.ok(ticket, 'alice should have a ticket for the proposal');
   assert.equal(ticket!.status, 'issued');

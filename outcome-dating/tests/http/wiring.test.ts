@@ -376,7 +376,7 @@ test('GET /tickets is denormalized with venue name/address and the proposal sche
 
   const ticketsRes = await t.app.inject({ method: 'GET', url: '/tickets', headers: authHeader(alice.accessToken) });
   assert.equal(ticketsRes.statusCode, 200);
-  const tickets = JSON.parse(ticketsRes.body) as Array<Record<string, unknown>>;
+  const tickets = (JSON.parse(ticketsRes.body) as { items: Array<Record<string, unknown>> }).items;
   const ticket = tickets.find((tk) => tk.dateProposalId === proposal.id)!;
   assert.ok(ticket, 'alice has a ticket for the proposal');
   assert.equal(ticket.venueName, 'Ticket Wallet Cafe');

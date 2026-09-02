@@ -192,7 +192,7 @@ test('venue-staff redemption response never carries emails, chat content, or pay
   await t.app.inject({ method: 'POST', url: `/date-proposals/${proposal.id}/accept`, headers: authHeader(bob.accessToken) });
 
   const ticketsRes = await t.app.inject({ method: 'GET', url: '/tickets', headers: authHeader(alice.accessToken) });
-  const tickets = JSON.parse(ticketsRes.body) as Array<{ code: string; dateProposalId: string }>;
+  const tickets = (JSON.parse(ticketsRes.body) as { items: Array<{ code: string; dateProposalId: string }> }).items;
   const ticket = tickets.find((tk) => tk.dateProposalId === proposal.id)!;
 
   const staffUser = await registerUser(t);
