@@ -928,6 +928,15 @@ const INTENTIONS = ['long_term', 'short_term', 'open_to_either'];
 
 const USER_COUNT = 20;
 
+
+/** The trust band a score falls in. Derived here rather than picked, because the database enforces that the two agree. */
+function trustLevelForScore(score: number): 'limited' | 'standard' | 'trusted' | 'elite' {
+  if (score >= 90) return 'elite';
+  if (score >= 70) return 'trusted';
+  if (score >= 40) return 'standard';
+  return 'limited';
+}
+
 async function main(): Promise<void> {
   console.log('Running migrations...');
   await runMigrations();
@@ -1015,11 +1024,12 @@ async function main(): Promise<void> {
     birthdate.setFullYear(birthdate.getFullYear() - ageYears);
     birthdate.setMonth(randInt(0, 11), randInt(1, 28));
 
+    const trustScore = randInt(45, 95);
     const { rows: userRows } = await pool.query<{ id: string }>(
       `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level, shadowbanned, suspended, email_verified_at)
        VALUES ($1,$2,$3,'active',$4,$5,false,false, now())
        RETURNING id`,
-      [email, passwordHash, birthdate.toISOString().slice(0, 10), randInt(45, 95), pick(['standard', 'standard', 'trusted', 'limited', 'elite'])],
+      [email, passwordHash, birthdate.toISOString().slice(0, 10), trustScore, trustLevelForScore(trustScore)],
     );
     const userId = userRows[0]!.id;
     userIds.push(userId);

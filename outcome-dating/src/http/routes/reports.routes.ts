@@ -5,6 +5,7 @@ import * as reportService from '../../services/report.service.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { parseOrThrow } from '../validation.js';
+import { withIdempotencyKey, idempotencyKeyHeader } from '../middleware/idempotency.js';
 
 const ReportBodySchema = z.object({
   reportedId: z.string(),
@@ -28,8 +29,15 @@ const ReportBodySchema = z.object({
 export function registerReportRoutes(app: FastifyInstance, deps: AppDeps): void {
   const auth = { preHandler: [authenticate(deps), requireRole('user')] };
 
+  // Mobile readiness (wiring item 6): a retried submit must not file two
+  // reports for the same incident, see middleware/idempotency.ts.
   app.post('/reports', auth, async (req, reply) => {
     const body = parseOrThrow(ReportBodySchema, req.body);
-    reply.status(201).send(await reportService.submitReport(req.ctx!, body));
+    const result = await withIdempotencyKey(
+      req.ctx!,
+      { scope: 'POST /reports', key: idempotencyKeyHeader(req), requestBody: body },
+      async () => ({ status: 201, body: await reportService.submitReport(req.ctx!, body) }),
+    );
+    reply.status(result.status).send(result.body);
   });
 }

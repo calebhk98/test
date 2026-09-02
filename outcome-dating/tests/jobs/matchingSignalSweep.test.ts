@@ -42,7 +42,7 @@ async function insertGoodDateHistory(userId: string, count = 3): Promise<void> {
       [conversationId, userId, partnerId, venueId, scheduledStart, scheduledEnd],
     );
     await db.pool.query(
-      `INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, outcome) VALUES ($1, $2, true, 'happened_good')`,
+      `INSERT INTO post_date_feedback (date_proposal_id, user_id, outcome) VALUES ($1, $2, 'happened_good')`,
       [rows[0]!.id, userId],
     );
   }

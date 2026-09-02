@@ -16,6 +16,7 @@ import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
 import { serializeTimelinePage } from '../serializers/timeline.js';
+import { withIdempotencyKey, idempotencyKeyHeader } from '../middleware/idempotency.js';
 
 const SendMessageBodySchema = z.object({ body: z.string() });
 const MarkReadBodySchema = z.object({ uptoMessageId: z.string() });
@@ -40,10 +41,19 @@ export function registerConversationRoutes(app: FastifyInstance, deps: AppDeps):
     reply.send(await messageService.listMessages(req.ctx!, conversationId, query));
   });
 
+  // Mobile readiness (wiring item 6): unlike `sendInterest`, `sendMessage`
+  // has no unique-pair constraint to fall back on, a retried post with no
+  // `Idempotency-Key` genuinely double-sends the same message today. A
+  // caller that supplies one is protected; see middleware/idempotency.ts.
   app.post('/conversations/:conversationId/messages', auth, async (req, reply) => {
     const conversationId = requireUuidParam(req.params, 'conversationId');
     const body = parseOrThrow(SendMessageBodySchema, req.body);
-    reply.status(201).send(await messageService.sendMessage(req.ctx!, conversationId, body.body));
+    const result = await withIdempotencyKey(
+      req.ctx!,
+      { scope: 'POST /conversations/:conversationId/messages', key: idempotencyKeyHeader(req), requestBody: { conversationId, ...body } },
+      async () => ({ status: 201, body: await messageService.sendMessage(req.ctx!, conversationId, body.body) }),
+    );
+    reply.status(result.status).send(result.body);
   });
 
   app.post('/conversations/:conversationId/archive', auth, async (req, reply) => {

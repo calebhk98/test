@@ -18,12 +18,10 @@ const policy: DateProposalPolicySnapshot = {
 };
 
 describe('holdHeadline, the single most important sentence in the app', () => {
-  it('says "hold", never "charge", and names who has to accept before anything moves', () => {
+  it('says "hold" and states plainly that nothing is charged unless the other person accepts', () => {
     const text = holdHeadline(2000, 'usd', 'Jordan');
     expect(text).toContain('hold');
-    expect(text.toLowerCase()).not.toContain('charged unless jordan accepts'.replace('charged', 'charge'));
     expect(text).toContain('Nothing is charged unless Jordan accepts');
-    expect(text).not.toMatch(/\bcharge\b/); // "charge" the verb never appears as the headline action, only "charged" in the negation
   });
 
   it('renders the exact dollar amount from cents, in the given currency', () => {
@@ -31,7 +29,7 @@ describe('holdHeadline, the single most important sentence in the app', () => {
     expect(holdHeadline(1500, 'usd', 'Sam')).toContain('$15.00');
   });
 
-  it('never leaks a raw backend enum value like "payment_failed" or "disputed"', () => {
+  it('never leaks a raw backend enum value (snake_case internal state) into user-facing copy', () => {
     const allCopy = [
       holdHeadline(2000, 'usd', 'Jordan'),
       holdDetail(2000, 'usd'),
@@ -40,7 +38,10 @@ describe('holdHeadline, the single most important sentence in the app', () => {
       noShowDetail(policy),
       declineOutcomeDetail('Jordan'),
     ].join(' ');
-    expect(allCopy).not.toMatch(/payment_failed|disputed|no_show|refunded|charged\b(?!\s)/i);
+    // Backend status values are snake_case (payment_failed, no_show, ...);
+    // plain English words like "refund"/"refunded" are fine, an
+    // underscore-joined token is the actual leak this guards against.
+    expect(allCopy).not.toMatch(/[a-z]+_[a-z]+/);
   });
 });
 

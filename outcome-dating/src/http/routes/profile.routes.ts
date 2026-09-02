@@ -22,6 +22,7 @@ import { serializeMyProfile } from '../serializers/profile.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { parseOrThrow, requireUuidParam } from '../validation.js';
+import { withIdempotencyKey, idempotencyKeyHeader } from '../middleware/idempotency.js';
 
 interface UserRow {
   id: string;
@@ -168,9 +169,17 @@ export function registerProfileRoutes(app: FastifyInstance, deps: AppDeps): void
     reply.send(await photoService.listMyPhotos(req.ctx!));
   });
 
+  // Mobile readiness (wiring item 6): an upload retried after a dropped
+  // response would otherwise create a second photo row for the same
+  // image, see middleware/idempotency.ts.
   app.post('/me/photos', auth, async (req, reply) => {
     const body = parseOrThrow(UploadPhotoBodySchema, req.body);
-    reply.status(201).send(await photoService.uploadPhoto(req.ctx!, body));
+    const result = await withIdempotencyKey(
+      req.ctx!,
+      { scope: 'POST /me/photos', key: idempotencyKeyHeader(req), requestBody: body },
+      async () => ({ status: 201, body: await photoService.uploadPhoto(req.ctx!, body) }),
+    );
+    reply.status(result.status).send(result.body);
   });
 
   app.delete('/me/photos/:photoId', auth, async (req, reply) => {

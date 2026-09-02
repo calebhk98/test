@@ -9,6 +9,7 @@ import { serializePublicProfile } from '../serializers/profile.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
+import { withIdempotencyKey, idempotencyKeyHeader } from '../middleware/idempotency.js';
 
 /** §30.1 exact static copy for an empty discovery grid, never generated, always this string. */
 export const NO_CANDIDATES_MESSAGE = 'No candidates currently match your filters. Try widening distance or age range.';
@@ -63,14 +64,20 @@ export function registerDiscoveryRoutes(app: FastifyInstance, deps: AppDeps): vo
     reply.status(204).send();
   });
 
+  // Mobile readiness (wiring item 6): same retry-safety as
+  // `POST /reports` (reports.routes.ts), see middleware/idempotency.ts.
   app.post('/profiles/:userId/report', auth, async (req, reply) => {
     const userId = requireUuidParam(req.params, 'userId');
     const body = parseOrThrow(ReportBodySchema, req.body);
-    const report = await reportService.submitReport(req.ctx!, { reportedId: userId, ...body });
+    const result = await withIdempotencyKey(
+      req.ctx!,
+      { scope: 'POST /profiles/:userId/report', key: idempotencyKeyHeader(req), requestBody: { userId, ...body } },
+      async () => ({ status: 201, body: await reportService.submitReport(req.ctx!, { reportedId: userId, ...body }) }),
+    );
     // §30.9: the reporter's own confirmation of THEIR OWN report obviously
     // includes their own id (they already know it), but never anything
     // about how it will read to the reported user, and no other route ever
     // echoes `reporterId` back to anyone else. See reports.routes.ts.
-    reply.status(201).send(report);
+    reply.status(result.status).send(result.body);
   });
 }

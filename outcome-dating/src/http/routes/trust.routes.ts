@@ -7,6 +7,7 @@ import { serializeTrustSummary, getMyCapabilities } from '../serializers/trust.j
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow } from '../validation.js';
+import { withIdempotencyKey, idempotencyKeyHeader } from '../middleware/idempotency.js';
 
 const AppealBodySchema = z.object({
   moderationActionId: z.string().optional(),
@@ -34,8 +35,15 @@ export function registerTrustRoutes(app: FastifyInstance, deps: AppDeps): void {
     reply.send(await getMyCapabilities(req.ctx!));
   });
 
+  // Mobile readiness (wiring item 6): a retried submit must not file two
+  // appeals, see middleware/idempotency.ts.
   app.post('/me/trust/appeal', auth, async (req, reply) => {
     const body = parseOrThrow(AppealBodySchema, req.body);
-    reply.status(201).send(await appealService.submitAppeal(req.ctx!, body));
+    const result = await withIdempotencyKey(
+      req.ctx!,
+      { scope: 'POST /me/trust/appeal', key: idempotencyKeyHeader(req), requestBody: body },
+      async () => ({ status: 201, body: await appealService.submitAppeal(req.ctx!, body) }),
+    );
+    reply.status(result.status).send(result.body);
   });
 }

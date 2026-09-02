@@ -17,9 +17,19 @@ const SendInterestBodySchema = z.object({ recipientId: z.string() });
 export function registerInterestRoutes(app: FastifyInstance, deps: AppDeps): void {
   const auth = { preHandler: [authenticate(deps), requireRole('user')] };
 
+  // Mobile readiness (wiring item 6): an `Idempotency-Key` header makes a
+  // retried send safe. Without one this behaves exactly as before (a
+  // second identical send still hits `uq_interests_pending_pair` and
+  // 409s, this just lets a RETRY of the SAME attempt get back the
+  // original 201 instead of an error), see middleware/idempotency.ts.
   app.post('/interests', auth, async (req, reply) => {
     const body = parseOrThrow(SendInterestBodySchema, req.body);
-    reply.status(201).send(await interestService.sendInterest(req.ctx!, body.recipientId));
+    const result = await withIdempotencyKey(
+      req.ctx!,
+      { scope: 'POST /interests', key: idempotencyKeyHeader(req), requestBody: body },
+      async () => ({ status: 201, body: await interestService.sendInterest(req.ctx!, body.recipientId) }),
+    );
+    reply.status(result.status).send(result.body);
   });
 
   // Enriched with the counterpart's displayName/primaryPhotoUrl/age/
