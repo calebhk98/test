@@ -21,20 +21,20 @@ using namespace std;
 typedef long long ll;
 
 // USER SETTINGS ---------------------------------------------------------------------
-const int EVENT_DURATION_DAYS = 5;
-const int EVENT_DURATION_HOURS = 10;
-const int EVENT_DURATION_MINUTES = 1;
-const int EVENT_DURATION_SECONDS = 36;
+const int EVENT_DURATION_DAYS = 3;
+const int EVENT_DURATION_HOURS = 11;
+const int EVENT_DURATION_MINUTES = 19;
+const int EVENT_DURATION_SECONDS = 1;
 const int UNLOCKED_PETS = 130;
 const int DLs = 16045;
 const int AL = 372;
 
 array<int, 25> currentLevels = { 
     // Current Production Levels
-    21, 26, 28,
-    29, 18, 32,
-    14, 15, 16,
-    19, 8, 19, 
+    22, 26, 29,
+    31, 21, 34,
+    16, 15, 17,
+    20, 11, 21, 
     
     // Current Speed Levels
     10, 10, 10,
@@ -46,10 +46,10 @@ array<int, 25> currentLevels = {
 };
 array<double, 12> resourceCounts = { 
     // Current resource counts
-    2137000, 927631, 2816000, 
-    1051000, 77282, 1958000, 
-    60186000/((500.0+DLs)/5.0), 2731000, 48746,
-    228460/(0.5+AL/100.0), 1313, 47960/(UNLOCKED_PETS/100.0)
+    4960000, 10009000, 6223000, 
+    3754000, 3085000, 4565000, 
+    92620000/((500.0+DLs)/5.0), 3114000, 70442,
+    336061/(0.5+AL/100.0), 4319, 71150/(UNLOCKED_PETS/100.0)
 };
 
 // Your current upgrade path/the path you want to optimize. If left blank, a random path will be generated.
