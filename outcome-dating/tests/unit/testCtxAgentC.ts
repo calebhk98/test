@@ -24,6 +24,7 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
+import { pinTrustLevel } from '../support/trustFixtures.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const AGENT_C_DB_PREFIX = 'odate_agent_c';
@@ -101,15 +102,46 @@ export function userActor(userId: string, trustLevel: TrustLevel = 'standard'): 
 
 let userSeq = 0;
 
-/** Inserts a minimal `users` row (no profile, none of Agent C's tables FK to `profiles`) and returns its id. */
+/**
+ * Inserts a minimal `users` row (no profile, none of Agent C's tables FK
+ * to `profiles`) and returns its id.
+ *
+ * `trustLevel`, if given, is NOT written to the row directly (see
+ * db/migrations/029_trust_invariant.sql, which rejects a `trust_level`
+ * that disagrees with `trust_level_for_score(trust_score)`). Instead it's
+ * reached via `tests/support/trustFixtures.ts#pinTrustLevel`, recording a
+ * real `trust_events` row and recalculating through `trust.service.ts`'s
+ * own production path. Omit it for the schema's own default, agreeing
+ * pair (`trust_score = 50`, `trust_level = 'standard'`).
+ */
 export async function insertUser(pool: pg.Pool, opts: { trustLevel?: TrustLevel; email?: string } = {}): Promise<string> {
   userSeq += 1;
   const email = opts.email ?? `agent-c-user-${userSeq}-${Date.now()}@test.local`;
   const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level)
-     VALUES ($1, 'x', '1995-01-01', 'active', 50, $2)
+    `INSERT INTO users (email, password_hash, birthdate, status)
+     VALUES ($1, 'x', '1995-01-01', 'active')
      RETURNING id`,
-    [email, opts.trustLevel ?? 'standard'],
+    [email],
   );
-  return rows[0]!.id;
+  const userId = rows[0]!.id;
+  if (opts.trustLevel) {
+    await pinTrustLevel(pinCtx(pool), userId, opts.trustLevel);
+  }
+  return userId;
+}
+
+/** Throwaway `Ctx` used only to drive `pinTrustLevel`'s calls into `trust.service.ts` from this file's `pool`-based helpers (which predate `Ctx`-based ones and are kept as-is to avoid rippling a signature change through every Agent C test file). */
+function pinCtx(pool: pg.Pool): Ctx {
+  const clock = new ManualClock(new Date());
+  const logger = createSilentLogger();
+  return {
+    db: pool,
+    clock,
+    config: new ConfigService(pool, clock, logger),
+    flags: new FlagsService(pool, logger),
+    logger,
+    actor: { type: 'system', job: 'test-fixture' },
+    payments: new FakeProcessor(),
+    media: new StubMediaModerationAdapter(),
+  };
 }

@@ -29,26 +29,38 @@
  *    (`GET /me/trust`/`serializeTrustSummary`) and that boundary is not
  *    redrawn here.
  *  - COMPARISONS ARE AGGREGATE-VERSUS-AGGREGATE, NEVER PERSON-VERSUS-
- *    PERSON, AND NEVER A POPULARITY SIGNAL: the product owner asked for
- *    comparison against the average (how you compare against typical,
- *    how many people share an interest, how strict your filters are),
- *    and product review (docs/ux-product-review.md) is equally clear
- *    this product has deliberately no popularity signal: no like counts,
- *    no boosts, no rank among peers. The line drawn here: every
- *    comparison is (a) the caller's own count against a regional MEDIAN
- *    and interquartile band, reduced to a coarse "below typical / typical
- *    / above typical" position, never a numeric percentile or rank, and
- *    (b) always about the caller's OWN behaviour or choices, their own
- *    effort (questions answered) or their own settings (filter
- *    strictness, which single filter costs them the most candidates, how
- *    common their own interest tags are nearby). Nothing here compares,
- *    ranks, or benchmarks how OTHERS responded to the caller (profile
- *    views, interests received, acceptance rate, photo performance)
- *    against a population: that would be a desirability score wearing a
- *    stats-page costume, not a behaviour comparison, and every one of
- *    those numbers stays exactly what it always was, the caller's own
- *    count/rate over time, never set against anyone else. See this
- *    build's report for the full reasoning behind where that line sits.
+ *    PERSON, AND NEVER A PUBLIC OR RANKED SIGNAL: the product owner asked
+ *    for comparison against the average (how you compare against
+ *    typical, how many people share an interest, how strict your filters
+ *    are), and product review (docs/ux-product-review.md) is equally
+ *    clear this product has deliberately no popularity signal: no like
+ *    counts, no boosts, no rank among peers, nothing that is VISIBLE TO
+ *    ANYONE ELSE or that FEEDS BACK into who is shown to whom. Every
+ *    comparison in this file is the caller's own count/rate against a
+ *    regional MEDIAN and interquartile band, reduced to a coarse "below
+ *    typical / typical / above typical" position, never a numeric
+ *    percentile or rank, and it is returned only in a response scoped to
+ *    the caller's own request, `requireUserActor(ctx)`, never stored
+ *    anywhere another user's request could read, never joined into
+ *    discovery/matching/compatibility scoring, and never shown to the
+ *    other party in any interaction. That is the actual line: a
+ *    desirability score is a problem because it is a SHARED or RANKED
+ *    signal, visible to (or acted on by) someone other than the person
+ *    it describes, which is what manufactures status hierarchies and
+ *    changes behaviour toward the people ranked lower. A number only the
+ *    subject themselves can ever see has no such mechanism, nobody's
+ *    matches change because of it, nobody ranks anybody by it, it cannot
+ *    create the dynamic this product avoids. So, alongside the caller's
+ *    own effort (questions answered) and their own settings (filter
+ *    strictness, tag prevalence), this file ALSO compares how OTHERS
+ *    responded to the caller (sent-interest acceptance rate,
+ *    received-interest conversion rate and volume, profile views, photo
+ *    performance) against the same kind of regional band, honestly and
+ *    without softening the numbers, a person asking for their own
+ *    statistics is entitled to the real answer. See
+ *    "PEER COMPARISONS: OTHERS' RESPONSES" below for exactly what is
+ *    compared and the additional, metric-level suppression this needs
+ *    beyond the region-population gate every comparison already has.
  *  - `post_date_feedback.safety_flag`/`safety_details`/`notes` are never
  *    selected here, even for the row's own owner, see
  *    `postDateFeedback.service.ts`'s isolation guarantee for those two
@@ -316,19 +328,20 @@ export interface DateOutcomeSummary {
 export async function getMyDateOutcomes(ctx: Ctx): Promise<DateOutcomeSummary> {
   const { userId } = requireUserActor(ctx);
 
-  // Deliberately selects ONLY outcome/positive/would_meet_again, never
+  // Deliberately selects ONLY outcome/would_meet_again, never
   // safety_flag/safety_details/notes/report_id, even for the row's own
-  // owner. See module doc.
-  const { rows } = await ctx.db.query<{ outcome: string | null; positive: boolean | null; would_meet_again: boolean | null }>(
-    `SELECT outcome, positive, would_meet_again FROM post_date_feedback WHERE user_id = $1`,
+  // owner. See module doc. `outcome` is the only feedback axis this table
+  // has, the old `positive` boolean is gone (db/migrations/
+  // 028_remove_legacy.sql), so there is no second column to fall back to.
+  const { rows } = await ctx.db.query<{ outcome: string; would_meet_again: boolean | null }>(
+    `SELECT outcome, would_meet_again FROM post_date_feedback WHERE user_id = $1 AND outcome IS NOT NULL`,
     [userId],
   );
 
   const byOutcome: Record<string, number> = {};
   const wouldMeetAgain = { yes: 0, no: 0, unsure: 0 };
   for (const r of rows) {
-    const key = r.outcome ?? (r.positive === true ? 'happened_good' : r.positive === false ? 'happened_bad' : 'unspecified');
-    byOutcome[key] = (byOutcome[key] ?? 0) + 1;
+    byOutcome[r.outcome] = (byOutcome[r.outcome] ?? 0) + 1;
     if (r.would_meet_again === true) wouldMeetAgain.yes += 1;
     else if (r.would_meet_again === false) wouldMeetAgain.no += 1;
     else wouldMeetAgain.unsure += 1;
@@ -908,13 +921,13 @@ export async function getMyPoolVennSvg(ctx: Ctx): Promise<string> {
 }
 
 // =====================================================================
-// Peer comparisons: the caller's own behaviour/choices against a
-// geographically-scoped regional typical, read from the small rollup
-// `statsAggregation.job.ts` maintains (`stats_region_activity`/
-// `stats_region_tag_prevalence`) rather than scanned live. See this
-// file's module doc, "COMPARISONS ARE AGGREGATE-VERSUS-AGGREGATE", for
-// where the line between a useful and a harmful comparison sits, and why
-// nothing about how OTHERS responded to the caller is compared here.
+// Peer comparisons: the caller's own behaviour/choices, AND how others
+// responded to them, against a geographically-scoped regional typical,
+// read from the small rollup `statsAggregation.job.ts` maintains
+// (`stats_region_activity`/`stats_region_tag_prevalence`) rather than
+// scanned live. See this file's module doc, "COMPARISONS ARE
+// AGGREGATE-VERSUS-AGGREGATE, NEVER PERSON-VERSUS-PERSON, AND NEVER A
+// PUBLIC OR RANKED SIGNAL", for where the line sits.
 // =====================================================================
 
 export type DistributionPosition = 'below_typical' | 'typical' | 'above_typical' | 'insufficient_data';
@@ -940,6 +953,45 @@ export interface TagPrevalenceEntry {
   nearbyHolders: SuppressibleCount;
 }
 
+// ---------------------------------------------------------------------
+// PEER COMPARISONS: OTHERS' RESPONSES.
+//
+// The four numbers a person cannot see about themselves under the old
+// design: how often the interests they SEND are accepted, how often the
+// interests they RECEIVE convert (and how many they receive at all), and
+// how their photos perform, each set against a regional typical band. All
+// four already existed as the caller's own raw numbers elsewhere on this
+// page (`getMyFunnel`, `getMyPhotoStats`); what changes here is only that
+// this file will now also say whether that number is low, typical, or
+// high for the area, the same courtesy already extended to
+// `questionsAnswered`/`filterStrictness` above. See the module doc for
+// why a comparison scoped to a single authenticated response, never
+// stored or shown anywhere a second person's request could read it,
+// carries none of the status-signal risk a public or ranked number would.
+//
+// `mine` is `null` (not `0`) for a RATE metric the caller has no
+// denominator for yet (never sent a resolved interest, never had a photo
+// impression), `0` would claim "you always get rejected," `null` says
+// "not enough of your own history yet to have a rate," and the position
+// is `insufficient_data` to match. `receivedInterestVolume`/
+// `profileViews` are plain counts, always defined (zero is a real
+// answer: zero people viewed you), so `mine` there is always a number.
+// ---------------------------------------------------------------------
+
+export interface RateComparison {
+  /** 0..1, or null if the caller has no denominator for this rate yet (see section doc). */
+  mine: number | null;
+  /** Regional median rate, null if too few nearby people contribute a defined rate to compare against (see `..._sample_size` in the rollup and `MIN_SUPPRESSIBLE_COHORT`). */
+  regionTypical: number | null;
+  position: DistributionPosition;
+}
+
+export interface CountComparison {
+  mine: number;
+  regionTypical: number | null;
+  position: DistributionPosition;
+}
+
 export interface UserStatsComparisons {
   /** False when the caller has no location on file -- every comparison below is then `insufficient_data`/empty rather than falling back to a global (and, for a local product, misleading) average. */
   hasLocation: boolean;
@@ -948,11 +1000,21 @@ export interface UserStatsComparisons {
   questionsAnswered: QuestionsAnsweredComparison;
   filterStrictness: FilterStrictnessComparison;
   tagPrevalence: TagPrevalenceEntry[];
+  /** How often interests the caller sends are accepted, versus what's typical nearby. */
+  sentInterestAcceptance: RateComparison;
+  /** How often interests the caller receives convert (get accepted), versus what's typical nearby. */
+  receivedInterestConversion: RateComparison;
+  /** How many interests the caller receives, versus what's typical nearby. */
+  receivedInterestVolume: CountComparison;
+  /** How many profile views the caller has received, versus what's typical nearby. */
+  profileViews: CountComparison;
+  /** The caller's overall accepted-interest rate across all their photos (interestsAccepted / impressions, summed), versus what's typical nearby. */
+  photoPerformance: RateComparison;
   computedAt: Date;
 }
 
-function positionFromBand(mine: number, p25: number | null, p75: number | null): DistributionPosition {
-  if (p25 === null || p75 === null) return 'insufficient_data';
+function positionFromBand(mine: number | null, p25: number | null, p75: number | null): DistributionPosition {
+  if (mine === null || p25 === null || p75 === null) return 'insufficient_data';
   if (mine < p25) return 'below_typical';
   if (mine > p75) return 'above_typical';
   return 'typical';
@@ -960,6 +1022,36 @@ function positionFromBand(mine: number, p25: number | null, p75: number | null):
 
 function toNullableNumber(v: string | null): number | null {
   return v === null ? null : Number(v);
+}
+
+/**
+ * Builds a `RateComparison`/`CountComparison`-shaped result, gating the
+ * regional side on BOTH the overall region-population suppression rule
+ * (`regionHasEnoughData`, checked by the caller before this runs) and,
+ * for a rate metric, this metric's OWN contributor sample size, see
+ * `aggregateRegionActivity`'s doc for why a rate needs its own gate.
+ * `sampleSize` is `undefined` for a metric that reads from the whole
+ * (zero-included) population, i.e. it already inherits the region-level
+ * gate and needs no separate one. `round`, true for a count (a "typical"
+ * count of 2.5 whole interests is not meaningful, same as
+ * `questionsAnswered`/`filterStrictness` above), false for a rate (0..1
+ * is the natural, unrounded unit every other rate in this file uses).
+ */
+function bandComparison(
+  mine: number | null,
+  median: string | null,
+  p25: string | null,
+  p75: string | null,
+  round: boolean,
+  sampleSize?: number,
+): { regionTypical: number | null; position: DistributionPosition } {
+  const enoughSample = sampleSize === undefined || sampleSize >= MIN_SUPPRESSIBLE_COHORT;
+  if (!enoughSample) return { regionTypical: null, position: 'insufficient_data' };
+  const medianValue = toNullableNumber(median);
+  return {
+    regionTypical: round && medianValue !== null ? Math.round(medianValue) : medianValue,
+    position: positionFromBand(mine, toNullableNumber(p25), toNullableNumber(p75)),
+  };
 }
 
 interface RegionActivityRow {
@@ -970,13 +1062,39 @@ interface RegionActivityRow {
   enabled_filters_median: string | null;
   enabled_filters_p25: string | null;
   enabled_filters_p75: string | null;
+  sent_interest_acceptance_median: string | null;
+  sent_interest_acceptance_p25: string | null;
+  sent_interest_acceptance_p75: string | null;
+  sent_interest_acceptance_sample_size: number;
+  received_interest_conversion_median: string | null;
+  received_interest_conversion_p25: string | null;
+  received_interest_conversion_p75: string | null;
+  received_interest_conversion_sample_size: number;
+  received_interest_volume_median: string | null;
+  received_interest_volume_p25: string | null;
+  received_interest_volume_p75: string | null;
+  profile_views_median: string | null;
+  profile_views_p25: string | null;
+  profile_views_p75: string | null;
+  photo_performance_median: string | null;
+  photo_performance_p25: string | null;
+  photo_performance_p75: string | null;
+  photo_performance_sample_size: number;
+}
+
+interface MyInterestRatesRow {
+  sent_accepted: string;
+  sent_resolved: string;
+  received_total: string;
+  received_accepted: string;
+  received_resolved: string;
 }
 
 export async function getMyComparisons(ctx: Ctx): Promise<UserStatsComparisons> {
   const { userId } = requireUserActor(ctx);
   const now = ctx.clock.now();
 
-  const [profileRow, questionsRow, filterCountRow, myTagRows, costs] = await Promise.all([
+  const [profileRow, questionsRow, filterCountRow, myTagRows, costs, myInterestRow, myProfileViewsRow, myPhotoRow] = await Promise.all([
     ctx.db.query<{ latitude: number | null; longitude: number | null }>(
       `SELECT latitude, longitude FROM profiles WHERE user_id = $1`,
       [userId],
@@ -990,12 +1108,38 @@ export async function getMyComparisons(ctx: Ctx): Promise<UserStatsComparisons> 
       [userId],
     ),
     getMyFilterCosts(ctx),
+    ctx.db.query<MyInterestRatesRow>(
+      `SELECT
+         count(*) FILTER (WHERE sender_id = $1 AND status = 'accepted')::text AS sent_accepted,
+         count(*) FILTER (WHERE sender_id = $1 AND status IN ('accepted', 'declined', 'expired'))::text AS sent_resolved,
+         count(*) FILTER (WHERE recipient_id = $1)::text AS received_total,
+         count(*) FILTER (WHERE recipient_id = $1 AND status = 'accepted')::text AS received_accepted,
+         count(*) FILTER (WHERE recipient_id = $1 AND status IN ('accepted', 'declined', 'expired'))::text AS received_resolved
+       FROM interests WHERE sender_id = $1 OR recipient_id = $1`,
+      [userId],
+    ),
+    ctx.db.query<{ n: string }>(`SELECT count(*)::text AS n FROM discovery_events WHERE candidate_user_id = $1`, [userId]),
+    ctx.db.query<{ accepted: string; impressions: string }>(
+      `SELECT coalesce(sum(interests_accepted), 0)::text AS accepted, coalesce(sum(impressions), 0)::text AS impressions
+       FROM photo_experiments WHERE user_id = $1`,
+      [userId],
+    ),
   ]);
 
   const myQuestionsAnswered = Number(questionsRow.rows[0]?.n ?? '0');
   const myEnabledFilterCount = Number(filterCountRow.rows[0]?.n ?? '0');
   const costliestFilter = costs.costliestFilter;
   const profile = profileRow.rows[0];
+
+  const interestRow = myInterestRow.rows[0]!;
+  const sentResolved = Number(interestRow.sent_resolved);
+  const mySentInterestAcceptance = sentResolved > 0 ? Number(interestRow.sent_accepted) / sentResolved : null;
+  const receivedResolved = Number(interestRow.received_resolved);
+  const myReceivedInterestConversion = receivedResolved > 0 ? Number(interestRow.received_accepted) / receivedResolved : null;
+  const myReceivedInterestVolume = Number(interestRow.received_total);
+  const myProfileViews = Number(myProfileViewsRow.rows[0]?.n ?? '0');
+  const photoImpressions = Number(myPhotoRow.rows[0]?.impressions ?? '0');
+  const myPhotoPerformance = photoImpressions > 0 ? Number(myPhotoRow.rows[0]!.accepted) / photoImpressions : null;
 
   if (!profile || profile.latitude == null || profile.longitude == null) {
     return {
@@ -1009,6 +1153,11 @@ export async function getMyComparisons(ctx: Ctx): Promise<UserStatsComparisons> 
         costliestFilter,
       },
       tagPrevalence: [],
+      sentInterestAcceptance: { mine: mySentInterestAcceptance, regionTypical: null, position: 'insufficient_data' },
+      receivedInterestConversion: { mine: myReceivedInterestConversion, regionTypical: null, position: 'insufficient_data' },
+      receivedInterestVolume: { mine: myReceivedInterestVolume, regionTypical: null, position: 'insufficient_data' },
+      profileViews: { mine: myProfileViews, regionTypical: null, position: 'insufficient_data' },
+      photoPerformance: { mine: myPhotoPerformance, regionTypical: null, position: 'insufficient_data' },
       computedAt: now,
     };
   }
@@ -1016,7 +1165,12 @@ export async function getMyComparisons(ctx: Ctx): Promise<UserStatsComparisons> 
   const regionKey = regionKeyFor(profile.latitude, profile.longitude);
   const { rows: regionRows } = await ctx.db.query<RegionActivityRow>(
     `SELECT user_count, questions_answered_median, questions_answered_p25, questions_answered_p75,
-            enabled_filters_median, enabled_filters_p25, enabled_filters_p75
+            enabled_filters_median, enabled_filters_p25, enabled_filters_p75,
+            sent_interest_acceptance_median, sent_interest_acceptance_p25, sent_interest_acceptance_p75, sent_interest_acceptance_sample_size,
+            received_interest_conversion_median, received_interest_conversion_p25, received_interest_conversion_p75, received_interest_conversion_sample_size,
+            received_interest_volume_median, received_interest_volume_p25, received_interest_volume_p75,
+            profile_views_median, profile_views_p25, profile_views_p75,
+            photo_performance_median, photo_performance_p25, photo_performance_p75, photo_performance_sample_size
      FROM stats_region_activity WHERE region_key = $1`,
     [regionKey],
   );
@@ -1051,6 +1205,74 @@ export async function getMyComparisons(ctx: Ctx): Promise<UserStatsComparisons> 
       }
     : { myEnabledFilterCount, regionTypicalEnabledFilterCount: null, position: 'insufficient_data', costliestFilter };
 
+  // Below, `regionHasEnoughData` gates every one of these the same way it
+  // gates questionsAnswered/filterStrictness above (the region as a whole
+  // must clear MIN_SUPPRESSIBLE_COHORT); `bandComparison` additionally
+  // gates the three RATE metrics on their own contributor sample size, see
+  // that function's doc and aggregateRegionActivity's doc for why a rate
+  // needs a second, narrower gate the two always-defined counts do not.
+  const sentInterestAcceptance: RateComparison = regionHasEnoughData
+    ? {
+        mine: mySentInterestAcceptance,
+        ...bandComparison(
+          mySentInterestAcceptance,
+          region!.sent_interest_acceptance_median,
+          region!.sent_interest_acceptance_p25,
+          region!.sent_interest_acceptance_p75,
+          false,
+          region!.sent_interest_acceptance_sample_size,
+        ),
+      }
+    : { mine: mySentInterestAcceptance, regionTypical: null, position: 'insufficient_data' };
+
+  const receivedInterestConversion: RateComparison = regionHasEnoughData
+    ? {
+        mine: myReceivedInterestConversion,
+        ...bandComparison(
+          myReceivedInterestConversion,
+          region!.received_interest_conversion_median,
+          region!.received_interest_conversion_p25,
+          region!.received_interest_conversion_p75,
+          false,
+          region!.received_interest_conversion_sample_size,
+        ),
+      }
+    : { mine: myReceivedInterestConversion, regionTypical: null, position: 'insufficient_data' };
+
+  const receivedInterestVolume: CountComparison = regionHasEnoughData
+    ? {
+        mine: myReceivedInterestVolume,
+        ...bandComparison(
+          myReceivedInterestVolume,
+          region!.received_interest_volume_median,
+          region!.received_interest_volume_p25,
+          region!.received_interest_volume_p75,
+          true,
+        ),
+      }
+    : { mine: myReceivedInterestVolume, regionTypical: null, position: 'insufficient_data' };
+
+  const profileViews: CountComparison = regionHasEnoughData
+    ? {
+        mine: myProfileViews,
+        ...bandComparison(myProfileViews, region!.profile_views_median, region!.profile_views_p25, region!.profile_views_p75, true),
+      }
+    : { mine: myProfileViews, regionTypical: null, position: 'insufficient_data' };
+
+  const photoPerformance: RateComparison = regionHasEnoughData
+    ? {
+        mine: myPhotoPerformance,
+        ...bandComparison(
+          myPhotoPerformance,
+          region!.photo_performance_median,
+          region!.photo_performance_p25,
+          region!.photo_performance_p75,
+          false,
+          region!.photo_performance_sample_size,
+        ),
+      }
+    : { mine: myPhotoPerformance, regionTypical: null, position: 'insufficient_data' };
+
   let tagPrevalence: TagPrevalenceEntry[] = [];
   if (myTagRows.rows.length > 0) {
     const tagIds = myTagRows.rows.map((r) => r.tag_id);
@@ -1075,6 +1297,11 @@ export async function getMyComparisons(ctx: Ctx): Promise<UserStatsComparisons> 
     questionsAnswered,
     filterStrictness,
     tagPrevalence,
+    sentInterestAcceptance,
+    receivedInterestConversion,
+    receivedInterestVolume,
+    profileViews,
+    photoPerformance,
     computedAt: now,
   };
 }

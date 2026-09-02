@@ -239,19 +239,17 @@ async function insertPostDateFeedback(overrides: {
   dateProposalId: string;
   userId: string;
   outcome?: string | null;
-  positive?: boolean | null;
   wouldMeetAgain?: boolean | null;
   safetyFlag?: string;
   safetyDetails?: string | null;
   createdAt?: Date;
 }): Promise<void> {
   await pool.query(
-    `INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, outcome, would_meet_again, safety_flag, safety_details, created_at)
-     VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+    `INSERT INTO post_date_feedback (date_proposal_id, user_id, outcome, would_meet_again, safety_flag, safety_details, created_at)
+     VALUES ($1, $2, $3, $4, $5, $6, $7)`,
     [
       overrides.dateProposalId,
       overrides.userId,
-      overrides.positive ?? null,
       overrides.outcome ?? null,
       overrides.wouldMeetAgain ?? null,
       overrides.safetyFlag ?? 'none',
@@ -483,7 +481,7 @@ test('statsAggregation job: daily rollup matches hand-computed counts and money 
   await insertBlock(bob, alice, d1);
   await insertModerationAction(alice, 'shadowban', d1);
 
-  await insertPostDateFeedback({ dateProposalId: dp1, userId: alice, positive: true, createdAt: d1 });
+  await insertPostDateFeedback({ dateProposalId: dp1, userId: alice, outcome: 'happened_good', createdAt: d1 });
   await insertPostDateFeedback({ dateProposalId: dp1, userId: bob, outcome: 'happened_bad', createdAt: d1 });
 
   await insertLedgerEntry(alice, dp1, 'authorization', 5000, d0);
@@ -520,7 +518,7 @@ test('statsAggregation job: daily rollup matches hand-computed counts and money 
   assert.equal(Number(rowsD1[0].reports), 1);
   assert.equal(Number(rowsD1[0].blocks), 1);
   assert.equal(Number(rowsD1[0].shadowban_actions), 1);
-  assert.equal(Number(rowsD1[0].positive_feedback), 1); // alice's positive=true
+  assert.equal(Number(rowsD1[0].positive_feedback), 1); // alice's outcome=happened_good
   assert.equal(Number(rowsD1[0].negative_feedback), 1); // bob's outcome=happened_bad
 
   const { rows: rowsD0 } = await pool.query(`SELECT * FROM stats_platform_daily WHERE day = $1`, [dayKey(d0)]);

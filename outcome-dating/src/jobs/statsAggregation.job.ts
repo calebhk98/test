@@ -43,16 +43,27 @@
  *     ~2 years) of `date_proposals.scheduled_end`.
  *
  *  4. `stats_region_activity` / `stats_region_tag_prevalence` (024_stats_
- *     comparisons.sql, user page's peer-comparison section): unlike 1-3,
- *     these are not time-windowed. A comparison needs a snapshot of the
- *     WHOLE current active population's distribution, not a trailing
- *     window, so every run TRUNCATEs both tables and repopulates them with
- *     one grouped `INSERT ... SELECT` each (never a per-region write
- *     loop), bucketing every active user with a location into a coarse
- *     geographic cell (see `REGION_GRID_DEGREES`/`regionKeyFor`) and
- *     computing per-region medians/quartiles and tag counts in that one
- *     pass. See `db/migrations/024_stats_comparisons.sql`'s own header for
- *     the privacy rules this pair of tables follows.
+ *     comparisons.sql plus the peer-comparison columns
+ *     028_remove_legacy.sql added, user page's peer-comparison section):
+ *     unlike 1-3, these are not time-windowed. A comparison needs a
+ *     snapshot of the WHOLE current active population's distribution, not
+ *     a trailing window, so every run TRUNCATEs both tables and
+ *     repopulates them with one grouped `INSERT ... SELECT` each (never a
+ *     per-region write loop), bucketing every active user with a location
+ *     into a coarse geographic cell (see `REGION_GRID_DEGREES`/
+ *     `regionKeyFor`) and computing per-region medians/quartiles and tag
+ *     counts in that one pass, seven metrics total: the caller's own
+ *     questions-answered/enabled-filter counts, and (now that a
+ *     comparison visible only to the viewer no longer needs to be
+ *     withheld, see stats.service.ts's module doc) sent-interest
+ *     acceptance rate, received-interest conversion rate and volume,
+ *     profile views, and photo performance. See
+ *     `db/migrations/024_stats_comparisons.sql`'s own header for the
+ *     privacy rules this pair of tables follows, and
+ *     `aggregateRegionActivity`'s own doc for how a RATE metric's
+ *     undefined-denominator users are excluded (not zeroed) from its
+ *     percentiles, with a per-metric sample-size column the read path
+ *     gates on independently of the region's total population.
  *
  * FRESHNESS: every run appends one `stats_aggregation_runs` row. Both
  * stats services surface the most recent run's `run_at` so a viewer always
@@ -184,11 +195,11 @@ function simpleMetrics(): SimpleMetric[] {
   ];
 }
 
-/** post_date_feedback covers both the legacy boolean and the newer 4-way outcome in one pass (see the file this reads, both are mutually exclusive per row, never both non-null). */
+/** post_date_feedback's only feedback axis is the four-way `outcome` (the boolean `positive` column, and the row-level trick of reading it as a fallback here, are gone, see db/migrations/028_remove_legacy.sql). */
 const FEEDBACK_SQL = `
   SELECT to_char(created_at AT TIME ZONE 'UTC', 'YYYY-MM-DD') AS day,
-    count(*) FILTER (WHERE positive = true OR outcome = 'happened_good')::bigint AS pos,
-    count(*) FILTER (WHERE positive = false OR outcome = 'happened_bad')::bigint AS neg
+    count(*) FILTER (WHERE outcome = 'happened_good')::bigint AS pos,
+    count(*) FILTER (WHERE outcome = 'happened_bad')::bigint AS neg
   FROM post_date_feedback
   WHERE created_at >= $1 AND created_at < $2
   GROUP BY 1`;
@@ -372,18 +383,72 @@ function regionPopulationCte(): string {
     )`;
 }
 
-/** One TRUNCATE + one grouped INSERT..SELECT -- the write side never loops per region, so its round-trip count stays fixed regardless of how many distinct regions exist. */
+/**
+ * One TRUNCATE + one grouped INSERT..SELECT -- the write side never loops
+ * per region, so its round-trip count stays fixed regardless of how many
+ * distinct regions exist.
+ *
+ * Five more metrics live here alongside the original two, backing the
+ * peer-comparison numbers that used to be withheld entirely as "how
+ * others respond to you" (stats.service.ts's module doc has the full
+ * argument for why a comparison visible only to the viewer no longer
+ * needs to be withheld). Two shapes:
+ *
+ *  - `questions_answered`/`enabled_filters` (the caller's own choices) and
+ *    `received_interest_volume`/`profile_views` (counts that are well
+ *    defined, zero included, for every active user) are percentiled over
+ *    the WHOLE region population via `coalesce(x.n, 0)`: a user who never
+ *    received a profile view is a real "0" in that distribution, not a
+ *    missing data point.
+ *  - `sent_interest_acceptance`/`received_interest_conversion`/
+ *    `photo_performance` are RATES with an undefined denominator for a
+ *    user who has never sent/received a resolved interest or never had a
+ *    photo impression. Those users are left NULL (not coalesced to 0,
+ *    which would misrepresent "never tried" as "always rejected"), and
+ *    `percentile_cont` ignores NULL inputs on its own. Each of these
+ *    three also gets its own `..._sample_size` column, the count of users
+ *    who actually contributed a non-null value. stats.service.ts gates
+ *    each of these three comparisons on THIS count against
+ *    `MIN_SUPPRESSIBLE_COHORT`, independently of the region's total
+ *    population, so a region that is large overall but has few people
+ *    with any sent-interest history yet cannot present one or two such
+ *    people's exact rate as if it were "typical."
+ */
 async function aggregateRegionActivity(ctx: Ctx): Promise<number> {
   await ctx.db.query('TRUNCATE stats_region_activity');
   const result = await ctx.db.query(`
     INSERT INTO stats_region_activity (
       region_key, user_count,
       questions_answered_median, questions_answered_p25, questions_answered_p75,
-      enabled_filters_median, enabled_filters_p25, enabled_filters_p75, computed_at
+      enabled_filters_median, enabled_filters_p25, enabled_filters_p75,
+      sent_interest_acceptance_median, sent_interest_acceptance_p25, sent_interest_acceptance_p75, sent_interest_acceptance_sample_size,
+      received_interest_conversion_median, received_interest_conversion_p25, received_interest_conversion_p75, received_interest_conversion_sample_size,
+      received_interest_volume_median, received_interest_volume_p25, received_interest_volume_p75,
+      profile_views_median, profile_views_p25, profile_views_p75,
+      photo_performance_median, photo_performance_p25, photo_performance_p75, photo_performance_sample_size,
+      computed_at
     )
     WITH ${regionPopulationCte()},
     qa AS (SELECT user_id, count(*) AS n FROM user_question_answers GROUP BY user_id),
-    ef AS (SELECT user_id, count(*) AS n FROM hard_filters WHERE enabled GROUP BY user_id)
+    ef AS (SELECT user_id, count(*) AS n FROM hard_filters WHERE enabled GROUP BY user_id),
+    si AS (
+      SELECT sender_id AS user_id,
+        count(*) FILTER (WHERE status = 'accepted')::numeric
+          / NULLIF(count(*) FILTER (WHERE status IN ('accepted', 'declined', 'expired')), 0) AS rate
+      FROM interests GROUP BY sender_id
+    ),
+    ri AS (
+      SELECT recipient_id AS user_id,
+        count(*) AS volume,
+        count(*) FILTER (WHERE status = 'accepted')::numeric
+          / NULLIF(count(*) FILTER (WHERE status IN ('accepted', 'declined', 'expired')), 0) AS conversion_rate
+      FROM interests GROUP BY recipient_id
+    ),
+    pv AS (SELECT candidate_user_id AS user_id, count(*) AS n FROM discovery_events GROUP BY candidate_user_id),
+    pp AS (
+      SELECT user_id, sum(interests_accepted)::numeric / NULLIF(sum(impressions), 0) AS rate
+      FROM photo_experiments GROUP BY user_id
+    )
     SELECT
       pop.region_key,
       count(*)::int AS user_count,
@@ -393,10 +458,32 @@ async function aggregateRegionActivity(ctx: Ctx): Promise<number> {
       percentile_cont(0.5) WITHIN GROUP (ORDER BY coalesce(ef.n, 0)) AS enabled_filters_median,
       percentile_cont(0.25) WITHIN GROUP (ORDER BY coalesce(ef.n, 0)) AS enabled_filters_p25,
       percentile_cont(0.75) WITHIN GROUP (ORDER BY coalesce(ef.n, 0)) AS enabled_filters_p75,
+      percentile_cont(0.5) WITHIN GROUP (ORDER BY si.rate) AS sent_interest_acceptance_median,
+      percentile_cont(0.25) WITHIN GROUP (ORDER BY si.rate) AS sent_interest_acceptance_p25,
+      percentile_cont(0.75) WITHIN GROUP (ORDER BY si.rate) AS sent_interest_acceptance_p75,
+      count(*) FILTER (WHERE si.rate IS NOT NULL)::int AS sent_interest_acceptance_sample_size,
+      percentile_cont(0.5) WITHIN GROUP (ORDER BY ri.conversion_rate) AS received_interest_conversion_median,
+      percentile_cont(0.25) WITHIN GROUP (ORDER BY ri.conversion_rate) AS received_interest_conversion_p25,
+      percentile_cont(0.75) WITHIN GROUP (ORDER BY ri.conversion_rate) AS received_interest_conversion_p75,
+      count(*) FILTER (WHERE ri.conversion_rate IS NOT NULL)::int AS received_interest_conversion_sample_size,
+      percentile_cont(0.5) WITHIN GROUP (ORDER BY coalesce(ri.volume, 0)) AS received_interest_volume_median,
+      percentile_cont(0.25) WITHIN GROUP (ORDER BY coalesce(ri.volume, 0)) AS received_interest_volume_p25,
+      percentile_cont(0.75) WITHIN GROUP (ORDER BY coalesce(ri.volume, 0)) AS received_interest_volume_p75,
+      percentile_cont(0.5) WITHIN GROUP (ORDER BY coalesce(pv.n, 0)) AS profile_views_median,
+      percentile_cont(0.25) WITHIN GROUP (ORDER BY coalesce(pv.n, 0)) AS profile_views_p25,
+      percentile_cont(0.75) WITHIN GROUP (ORDER BY coalesce(pv.n, 0)) AS profile_views_p75,
+      percentile_cont(0.5) WITHIN GROUP (ORDER BY pp.rate) AS photo_performance_median,
+      percentile_cont(0.25) WITHIN GROUP (ORDER BY pp.rate) AS photo_performance_p25,
+      percentile_cont(0.75) WITHIN GROUP (ORDER BY pp.rate) AS photo_performance_p75,
+      count(*) FILTER (WHERE pp.rate IS NOT NULL)::int AS photo_performance_sample_size,
       now()
     FROM pop
     LEFT JOIN qa ON qa.user_id = pop.user_id
     LEFT JOIN ef ON ef.user_id = pop.user_id
+    LEFT JOIN si ON si.user_id = pop.user_id
+    LEFT JOIN ri ON ri.user_id = pop.user_id
+    LEFT JOIN pv ON pv.user_id = pop.user_id
+    LEFT JOIN pp ON pp.user_id = pop.user_id
     GROUP BY pop.region_key`);
   return result.rowCount ?? 0;
 }

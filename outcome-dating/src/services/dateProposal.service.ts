@@ -699,7 +699,7 @@ export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promi
 }
 
 // =====================================================================
-// submitPostDateFeedback, RETIRED (integrity audit item 1).
+// submitPostDateFeedback, REMOVED (integrity audit item 1, fully closed).
 //
 // This used to run its own INSERT/UPDATE against post_date_feedback,
 // writing only `positive`/`would_meet_again`/`safety_concern`/`notes`,
@@ -708,21 +708,18 @@ export async function confirmAttendance(ctx: Ctx, dateProposalId: string): Promi
 // writers on the same (date_proposal_id, user_id) row, each owning a
 // disjoint column subset, is exactly how a row ended up saying the date
 // went well (`positive = true`) and badly (`outcome = 'happened_bad'`)
-// at once, with nothing to stop it, and how the legacy path bypassed
-// safety routing entirely (no report ever filed from a `safety_concern`
-// flag).
+// at once, with nothing to stop it, and how the old path bypassed safety
+// routing entirely (no report ever filed from a `safety_concern` flag).
 //
-// The function is gone; there is no code in this codebase that writes
-// `post_date_feedback` outside postDateFeedback.service.ts's single
-// upsert any more. `POST /date-proposals/:id/feedback` still exists as
-// an HTTP-compatible shim (see dates.routes.ts) that translates the
-// legacy body into a check-in and calls
-// postDateFeedbackService#submitLegacyFeedback, which funnels into the
-// exact same write statement/trust/safety-routing path as
-// `submitCheckIn`, see that file for the one remaining writer. A
-// db/migrations/025_integrity.sql CHECK constraint additionally makes a
-// disagreeing (`positive`, `outcome`) pair impossible at the database
-// level, in case any future code path writes `positive` again.
+// The function is gone, and so is the HTTP-level translator that briefly
+// stood in for it (`POST /date-proposals/:id/feedback`, dates.routes.ts):
+// this is a prototype with no external consumers, so once the one real
+// writer (postDateFeedback.service.ts#submitCheckIn) existed, there was
+// no reason to keep a second entry point translating an older request
+// shape onto it. `positive`, `safety_concern`, and the CHECK constraint
+// that used to tie `positive` to `outcome` are dropped in
+// db/migrations/028_remove_legacy.sql, submitCheckIn is the only writer
+// and the only shape this table can hold.
 // =====================================================================
 
 // =====================================================================

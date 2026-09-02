@@ -47,7 +47,7 @@ test('levelForScore: boundaries follow config, not a hardcoded table', async () 
 // =====================================================================
 test('recalculateTrustScore clamps the persisted score to [0,100]', async () => {
   const ctx = buildCtx();
-  const userId = await insertUser(ctx, { trustScore: 50 });
+  const userId = await insertUser(ctx);
 
   // Push the score far below 0 with negative events.
   for (let i = 0; i < 10; i++) {
@@ -68,7 +68,7 @@ test('recalculateTrustScore clamps the persisted score to [0,100]', async () => 
 
 test('recalculateTrustScore is reconstructable from the trust_events log', async () => {
   const ctx = buildCtx();
-  const userId = await insertUser(ctx, { trustScore: 50, createdAt: new Date(Date.now() - 1000) });
+  const userId = await insertUser(ctx, { createdAt: new Date(Date.now() - 1000) });
 
   // Base 50 + no state factors (unverified, no profile, brand new) + events.
   await trust.recordTrustEvent(ctx, { userId, eventType: 'date_completed', delta: 12 });
@@ -86,7 +86,7 @@ test('recalculateTrustScore is reconstructable from the trust_events log', async
 
 test('recalculateTrustScore: state factors (verified email/payment/profile) contribute on top of the event log', async () => {
   const ctx = buildCtx();
-  const userId = await insertUser(ctx, { trustScore: 50, emailVerified: true, createdAt: new Date() });
+  const userId = await insertUser(ctx, { emailVerified: true, createdAt: new Date() });
   await insertProfile(ctx, userId, { completeness: 100 });
   await insertPaymentMethod(ctx, userId, { verified: true });
 
@@ -99,7 +99,7 @@ test('recalculateTrustScore: state factors (verified email/payment/profile) cont
 // =====================================================================
 test('getMyTrustSummary shows actionable items and recent negative events, never raw weights', async () => {
   const ctx = buildCtx();
-  const userId = await insertUser(ctx, { trustScore: 50, createdAt: new Date() });
+  const userId = await insertUser(ctx, { createdAt: new Date() });
   await insertProfile(ctx, userId, { completeness: 10 });
 
   await trust.recordTrustEvent(ctx, { userId, eventType: 'no_show', delta: -10 });
@@ -124,7 +124,7 @@ test('getMyTrustSummary shows actionable items and recent negative events, never
 
 test('getMyTrustSummary: Elite users get no actionable improvements', async () => {
   const ctx = buildCtx();
-  const userId = await insertUser(ctx, { trustScore: 95, trustLevel: 'elite', emailVerified: true, createdAt: new Date(Date.now() - 400 * 24 * 60 * 60 * 1000) });
+  const userId = await insertUser(ctx, { trustLevel: 'elite', emailVerified: true, createdAt: new Date(Date.now() - 400 * 24 * 60 * 60 * 1000) });
   await insertProfile(ctx, userId, { completeness: 100 });
   await insertPaymentMethod(ctx, userId, { verified: true });
   await trust.recordTrustEvent(ctx, { userId, eventType: 'date_completed', delta: 10 });
@@ -140,7 +140,7 @@ test('getMyTrustSummary: Elite users get no actionable improvements', async () =
 // =====================================================================
 test('the internal breakdown type is structurally distinct from TrustSummary (weights never reachable from the public export)', async () => {
   const ctx = buildCtx();
-  const userId = await insertUser(ctx, { trustScore: 50, createdAt: new Date() });
+  const userId = await insertUser(ctx, { createdAt: new Date() });
   const summary = await trust.getMyTrustSummary(buildCtx({ actor: userActor(userId) }));
   // TrustSummary has no 'stateFactors'/'base'/'rawScore' keys, those only
   // exist on InternalTrustBreakdown, which getMyTrustSummary never returns.

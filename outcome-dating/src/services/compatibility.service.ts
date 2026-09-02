@@ -3,6 +3,7 @@ import { addDays } from '../lib/time.js';
 import type { CompatibilityScoreRow } from '../domain/types.js';
 import { boundingBoxForRadius, DEFAULT_DISCOVERY_RADIUS_KM } from './filter.service.js';
 import { aggregateQuestionScores, presentationFor } from '../domain/questions/index.js';
+import { computeCompatibilityBlock } from '../domain/questions/matrixScoring.js';
 import type {
   ImportanceLevel,
   QuestionAnswerState,
@@ -84,6 +85,21 @@ import type {
  * layer), that import is not a service dependency at all (that directory
  * contains zero I/O, per its own module docs) and is the intended
  * integration seam `scoring.ts` was built for.
+ *
+ * BLOCK REFRESH (matrix scoring, adopted): `refreshAllScores` below scores
+ * pairs through `../domain/questions/matrixScoring.js#computeCompatibilityBlock`
+ * (also pure, no I/O, this build's own file) in batches, instead of calling
+ * `computePairScore` once per pair in a loop. See that function's own doc
+ * for exactly how pairs are grouped into blocks and why grouping this way
+ * cannot drop a candidate at a group boundary, and docs/matrix-scoring.md
+ * for the measured verdict this adoption is based on. `computePairScore`
+ * itself, and every direct caller of it (`getScore`, `getScoresForCandidates`,
+ * `refreshScoresForUser`, the cold path), is completely unchanged: only the
+ * nightly bulk path was restructured, because it is the only call shape
+ * where batching multiple rows against a shared column set is possible at
+ * all (a single user against a candidate list has no second row to batch
+ * with, see docs/matrix-scoring.md's "why the real shape doesn't benefit
+ * much" section, still true of every OTHER call site in this file).
  */
 
 // =====================================================================
@@ -590,6 +606,9 @@ async function loadUnlocatedActiveRecentUserIds(ctx: Ctx, activeSince: Date): Pr
 interface GeoPairRow {
   user_id: string;
   candidate_id: string;
+  /** `user_id`'s own coordinates, repeated on every row for that `user_id` (cheap: one extra pair of float8 columns per row, not a second query). Used only to group `user_id`s into scoring blocks below, see `refreshAllScores`'s BLOCK REFRESH note; never used to decide candidacy, that is entirely the WHERE/ORDER BY/LIMIT above, unchanged. */
+  user_lat: number;
+  user_lon: number;
 }
 
 /**
@@ -609,11 +628,22 @@ interface GeoPairRow {
  * candidate row) purely to prioritize WHICH `cap` candidates survive the
  * limit; it is never used as, or compared against, an actual distance
  * value anywhere.
+ *
+ * CANDIDATE SELECTION IS UNCHANGED BY THE BLOCK REFRESH: this query, its
+ * WHERE clause, its box, its ORDER BY, its LIMIT, are exactly what they
+ * were before matrix scoring was adopted (see `018_compat_refresh.sql`'s
+ * original doc above). The only addition is `e.lat`/`e.lon` in the SELECT
+ * list, which candidate rows already carry through the LATERAL join at no
+ * extra cost, added purely so `refreshAllScores` can group `user_id`s into
+ * scoring blocks by their own location without a second query. WHICH pairs
+ * get materialized is therefore governed by the identical logic (and the
+ * identical, already-tested pole/antimeridian/no-location handling) as
+ * before this build; only HOW the resulting pairs get scored changed.
  */
 async function loadGeoBoundedPairs(ctx: Ctx, activeSince: Date, cap: number): Promise<GeoPairRow[]> {
   const { latDeltaDeg, lonDeltaDeg } = refreshGeoBoxDegrees();
   const { rows } = await ctx.db.query<GeoPairRow>(
-    `SELECT e.id AS user_id, nb.id AS candidate_id
+    `SELECT e.id AS user_id, nb.id AS candidate_id, e.lat AS user_lat, e.lon AS user_lon
      FROM (
        SELECT u.id, p.latitude AS lat, p.longitude AS lon
        FROM users u
@@ -668,6 +698,11 @@ async function loadNearbyEligibleCandidateIds(ctx: Ctx, userId: string, activeSi
   return rows.map((r) => r.id);
 }
 
+/** Canonical, order-independent key for an unordered user-id pair, `a < b` lexicographically, so `(a,b)` and `(b,a)` produce the same key regardless of which "side" found the other first. Shared by `dedupeUnorderedPairs` (which pairs exist) and the block-scoring pass below (which score belongs to which pair), so the two can never disagree about pair identity. */
+function pairKey(x: string, y: string): string {
+  return x < y ? `${x}:${y}` : `${y}:${x}`;
+}
+
 /** Canonicalizes and de-duplicates a stream of (possibly directed, possibly repeated) user-id pairs into each unordered pair exactly once, `a < b` lexicographically, so `(a,b)` and `(b,a)` collapse to the same entry regardless of which "side" found the other first. */
 function dedupeUnorderedPairs(rawPairs: Iterable<readonly [string, string]>): [string, string][] {
   const seen = new Set<string>();
@@ -675,7 +710,7 @@ function dedupeUnorderedPairs(rawPairs: Iterable<readonly [string, string]>): [s
   for (const [x, y] of rawPairs) {
     if (x === y) continue;
     const [a, b] = x < y ? [x, y] : [y, x];
-    const key = `${a}:${b}`;
+    const key = pairKey(a, b);
     if (seen.has(key)) continue;
     seen.add(key);
     pairs.push([a, b]);
@@ -727,6 +762,140 @@ async function upsertScorePairsBatch(ctx: Ctx, pairs: { userId: string; candidat
   }
 }
 
+// =====================================================================
+// BLOCK REFRESH (matrix scoring, adopted): grouping the nightly run's
+// already-selected pairs into blocks so `computeCompatibilityBlock` scores
+// many rows against a shared column set at once, instead of `computePairScore`
+// scoring one pair at a time. See docs/matrix-scoring.md for the measured
+// case: the matrix kernel/indicator gather only clearly wins over the
+// scalar path when BOTH sides of a call are batched, every OTHER call
+// shape in this file (`getScore`, `getScoresForCandidates`,
+// `refreshScoresForUser`, all one-vs-few or one-vs-many) keeps one side at
+// exactly 1 and stays on the unchanged `computePairScore` path; this
+// section exists because the nightly run is the one place in this codebase
+// where many users' candidate sets overlap enough to batch for real.
+//
+// WHAT COUNTS AS A "GROUP" HERE, AND WHY IT CANNOT DROP A CANDIDATE AT A
+// BOUNDARY: a group is not "a geographic region" in the sense of a fixed
+// box that a pair could fall just outside of. `loadGeoBoundedPairs` (see
+// its own doc, unchanged by this build) has ALREADY decided, per user,
+// exactly which candidates are within the refresh radius and within the
+// per-user neighbor cap, that decision is made once, in SQL, before any
+// grouping happens here. Grouping below only decides WHICH ROWS TO SCORE
+// IN THE SAME `computeCompatibilityBlock` CALL, for speed; a row's column
+// set for that call is always the exact union of that row's own
+// already-selected candidates (`directedCandidates.get(rowId)`), regardless
+// of which "bucket" the row itself lands in. Concretely: user A is bucketed
+// by A's OWN coordinates into scoring-bucket X; A's candidate B (found by
+// the unchanged SQL, possibly bucketed into a completely different
+// scoring-bucket Y, or even geographically far enough from A's own bucket
+// center that it would not obviously look "nearby" in bucket terms) is
+// still always in A's block's column list, because that list is built from
+// `directedCandidates.get(A)`, not from "whoever else happens to share A's
+// bucket." There is therefore no grid/box edge in this file, at all, for a
+// real candidate to fall on the wrong side of; the bucketing below can only
+// ever affect HOW MANY OTHER ROWS get batched alongside A in the same call
+// (a pure performance question), never WHETHER A's candidate B gets scored.
+// `tests/unit/compatibility.test.ts`'s "row bucketed away from its own
+// candidate" test proves this directly, by constructing a pair whose two
+// coordinates land in different scoring buckets and asserting the pair is
+// still materialized, both directions, with the exact score
+// `computePairScore` would give it.
+// =====================================================================
+
+/**
+ * Upper bound on `rowChunk.length * colUserIds.length` for one
+ * `computeCompatibilityBlock` call, bounding that call's four `R x C`
+ * typed-array allocations (`weightedSum`/`weightTotal`/`sharedCounts`/
+ * `scores`) to a fixed, modest amount of memory (a handful of hundred MB
+ * at this size) regardless of how large a single scoring group's row or
+ * column count grows, e.g. one very dense metro's entire located
+ * population landing in one group. A group larger than this is scored in
+ * multiple row-chunked calls against the same column set rather than one
+ * unbounded call.
+ */
+const BLOCK_MAX_CELLS = 8_000_000;
+
+/**
+ * Scores every `rowId` in `rowIds` against exactly the candidates
+ * `neededColsForRow(rowId)` says it needs, by batching all of `rowIds`
+ * against the FULL `colIds` column set through `computeCompatibilityBlock`
+ * (row-chunked per `BLOCK_MAX_CELLS`, see that constant's doc), then
+ * reading each row's actually-needed cells back out of the returned block.
+ * `colIds` is expected to already be the union of every row's needed
+ * candidates (callers build it that way, see `refreshAllScores`), so this
+ * computes some cells no row individually needed (any row whose own
+ * candidate set is a strict subset of the group's union), the batching
+ * trade `docs/matrix-scoring.md` documents: paying for a shared column
+ * setup once across many rows, in exchange for computing a few extra
+ * cells, rather than paying that setup cost separately per row.
+ *
+ * Writes into `pairScores` (canonical `pairKey` -> score), first write for
+ * a given pair wins (score is symmetric by construction, see
+ * `computePairScore`'s doc, so it never matters which of the two rows'
+ * blocks computed it first, but a `Map` is order-sensitive to write into,
+ * hence the explicit `has` check rather than relying on it).
+ */
+function scoreRowGroupIntoBlock(
+  questions: QuestionDefinition[],
+  answersByIdByUser: Map<string, Map<string, QuestionAnswerState>>,
+  rowIds: readonly string[],
+  colIds: readonly string[],
+  minSharedQuestions: number,
+  noDataDefaultScore: number,
+  neededColsForRow: (rowId: string) => readonly string[],
+  pairScores: Map<string, number>,
+): void {
+  if (rowIds.length === 0 || colIds.length === 0) return;
+
+  const colIndex = new Map<string, number>();
+  for (let i = 0; i < colIds.length; i++) colIndex.set(colIds[i]!, i);
+
+  const rowChunkSize = Math.max(1, Math.floor(BLOCK_MAX_CELLS / colIds.length));
+  for (let start = 0; start < rowIds.length; start += rowChunkSize) {
+    const rowChunk = rowIds.slice(start, start + rowChunkSize);
+    const block = computeCompatibilityBlock(questions, answersByIdByUser, rowChunk, colIds, minSharedQuestions, noDataDefaultScore);
+    const C = colIds.length;
+    for (let ri = 0; ri < rowChunk.length; ri++) {
+      const rowId = rowChunk[ri]!;
+      for (const candId of neededColsForRow(rowId)) {
+        if (candId === rowId) continue; // self-pairs are never candidates, see loadGeoBoundedPairs/fallback (both already exclude self); defensive, matches computeCompatibilityBlock's own documented "callers filter self-pairs" contract.
+        const ci = colIndex.get(candId);
+        if (ci === undefined) continue; // candId not in this call's column set; cannot happen given how callers build colIds, see below, defensive only.
+        const key = pairKey(rowId, candId);
+        if (!pairScores.has(key)) pairScores.set(key, block.scores[ri * C + ci]!);
+      }
+    }
+  }
+}
+
+/**
+ * Buckets `rowIds` (keyed by each row's own lat/lon, from `GeoPairRow`'s
+ * `user_lat`/`user_lon`) into a plain lat/lon grid, cell size = the fixed
+ * refresh box's full width/height (`2 * latDeltaDeg` / `2 * lonDeltaDeg`).
+ * This is a SCORING-BATCH GROUPING ONLY (see the BLOCK REFRESH section
+ * doc above for why it cannot affect which candidates get scored); the
+ * cell size is chosen simply because it is a size already computed for
+ * this run (no new magic number) and gives locality good enough to keep
+ * each group's column-set union well below "every located user in the
+ * run" in practice, without claiming any precision beyond that.
+ */
+function bucketRowsByLocation(rowLocations: ReadonlyMap<string, { lat: number; lon: number }>, cellLatSize: number, cellLonSize: number): string[][] {
+  const buckets = new Map<string, string[]>();
+  for (const [id, { lat, lon }] of rowLocations) {
+    const i = Math.floor(lat / cellLatSize);
+    const j = Math.floor(lon / cellLonSize);
+    const key = `${i}:${j}`;
+    let bucket = buckets.get(key);
+    if (!bucket) {
+      bucket = [];
+      buckets.set(key, bucket);
+    }
+    bucket.push(id);
+  }
+  return [...buckets.values()];
+}
+
 /**
  * Recomputes and upserts `compatibility_scores` rows for one user against
  * their bounded set of geographically-nearby (or, with no location on
@@ -747,17 +916,21 @@ export async function refreshScoresForUser(ctx: Ctx, userId: string): Promise<{ 
 
 /**
  * §25.4 nightly job: bounded refresh of `compatibility_scores`, see the
- * file-level SCALE FIX doc above for the full strategy. Still writes both
- * directions per pair (unchanged contract: `getScore`/`getScoresForCandidates`
- * and every existing caller expect a symmetric table), still computed via
- * the exact same, untouched `computePairScore` (this is a scheduling/
- * storage change, not an algorithm change, the score for a given pair is
- * bit-for-bit what an unbounded nested loop would have produced for that
- * same pair; see `tests/unit/compatibility.test.ts`'s semantics-preservation
- * test). Driven entirely by `ctx.clock` (no wall-clock read) and safe to
- * re-run: evicts before inserting, so a second run with unchanged data
- * reproduces the exact same rows rather than accumulating duplicates or
- * drifting.
+ * file-level SCALE FIX doc above for the full geographic/activity-bound
+ * strategy (candidate SELECTION, entirely unchanged by this build) and the
+ * BLOCK REFRESH section above (candidate SCORING, restructured by this
+ * build to adopt matrix scoring, see docs/matrix-scoring.md). Still writes
+ * both directions per pair (unchanged contract: `getScore`/
+ * `getScoresForCandidates` and every existing caller expect a symmetric
+ * table), and every materialized score is still bit-for-bit what
+ * `computePairScore` would have produced for that same pair (matrix
+ * scoring is proven bit-identical to the scalar path it replaces, see
+ * `tests/unit/matrixScoring.test.ts` and `tests/unit/compatibility.test.ts`'s
+ * semantics-preservation test), this is a scheduling/batching change, not
+ * an algorithm change. Driven entirely by `ctx.clock` (no wall-clock read)
+ * and safe to re-run: evicts before inserting, so a second run with
+ * unchanged data reproduces the exact same rows rather than accumulating
+ * duplicates or drifting.
  */
 export async function refreshAllScores(ctx: Ctx): Promise<{ updated: number }> {
   const activeSince = addDays(ctx.clock.now(), -REFRESH_ACTIVE_WINDOW_DAYS);
@@ -774,12 +947,35 @@ export async function refreshAllScores(ctx: Ctx): Promise<{ updated: number }> {
     loadUnlocatedActiveRecentUserIds(ctx, activeSince),
   ]);
 
-  const rawPairs: [string, string][] = geoPairRows.map((r) => [r.user_id, r.candidate_id]);
+  // CANDIDATE SELECTION (unchanged, see `loadGeoBoundedPairs`'s own doc):
+  // `directedCandidates` reproduces exactly what the pre-block-refresh
+  // build built directly into `rawPairs`, one directed (user -> nearest/
+  // fallback candidate) list per row user, this is the data the block
+  // scoring pass below groups and scores, it is not re-derived from
+  // geography a second time anywhere in this function.
+  const directedCandidates = new Map<string, string[]>();
+  const rowLocations = new Map<string, { lat: number; lon: number }>();
+  const rawPairs: [string, string][] = [];
+  for (const r of geoPairRows) {
+    rawPairs.push([r.user_id, r.candidate_id]);
+    let list = directedCandidates.get(r.user_id);
+    if (!list) {
+      list = [];
+      directedCandidates.set(r.user_id, list);
+    }
+    list.push(r.candidate_id);
+    if (!rowLocations.has(r.user_id)) rowLocations.set(r.user_id, { lat: r.user_lat, lon: r.user_lon });
+  }
+
+  let fallbackCandidates: string[] = [];
   if (unlocatedIds.length > 0) {
     // No-location fallback (file-level doc point 3): one shared query for
     // the whole run, reused for every unlocated user, rather than one
-    // query each.
-    const fallbackCandidates = await loadGlobalRecentFallbackIds(ctx, activeSince, MATERIALIZED_NEIGHBORS_PER_USER);
+    // query each. Also, since it is the SAME fixed candidate list for
+    // every unlocated row, it is exactly the "many rows against one
+    // shared column set" shape matrix scoring wants most, see the block
+    // scoring call below.
+    fallbackCandidates = await loadGlobalRecentFallbackIds(ctx, activeSince, MATERIALIZED_NEIGHBORS_PER_USER);
     for (const userId of unlocatedIds) {
       for (const candidateId of fallbackCandidates) {
         if (candidateId !== userId) rawPairs.push([userId, candidateId]);
@@ -807,15 +1003,72 @@ export async function refreshAllScores(ctx: Ctx): Promise<{ updated: number }> {
     answersByIdByUser.set(uid, reKeyAnswersBySlugToCurrentId(answersBySlugByUser.get(uid), questions));
   }
 
-  const writes: { userId: string; candidateId: string; score: number }[] = [];
-  for (const [a, b] of pairs) {
-    const { score } = computePairScore(
+  // BLOCK SCORING (matrix scoring, adopted): group rows into scoring
+  // buckets by their own location (`bucketRowsByLocation`, a batching
+  // heuristic only, see the BLOCK REFRESH section doc above for why this
+  // cannot drop a candidate at a bucket boundary) and score each bucket's
+  // rows against the union of their own already-selected candidates in
+  // one `computeCompatibilityBlock` call (row-chunked if the bucket is
+  // very large, see `BLOCK_MAX_CELLS`), instead of one `computePairScore`
+  // call per pair.
+  const pairScores = new Map<string, number>();
+
+  const { latDeltaDeg, lonDeltaDeg } = refreshGeoBoxDegrees();
+  const geoBuckets = bucketRowsByLocation(rowLocations, latDeltaDeg * 2, lonDeltaDeg * 2);
+  for (const rowIds of geoBuckets) {
+    const colIdSet = new Set<string>();
+    for (const rowId of rowIds) {
+      for (const candId of directedCandidates.get(rowId) ?? []) colIdSet.add(candId);
+    }
+    scoreRowGroupIntoBlock(
       questions,
-      answersByIdByUser.get(a) ?? new Map(),
-      answersByIdByUser.get(b) ?? new Map(),
+      answersByIdByUser,
+      rowIds,
+      [...colIdSet],
       scoringConfig.minSharedQuestions,
       scoringConfig.noDataDefaultScore,
+      (rowId) => directedCandidates.get(rowId) ?? [],
+      pairScores,
     );
+  }
+
+  // Unlocated rows share one fixed column set (`fallbackCandidates`), so
+  // they are naturally already one single, maximally batchable group; no
+  // location-based bucketing applies to them (there is no location).
+  if (unlocatedIds.length > 0) {
+    scoreRowGroupIntoBlock(
+      questions,
+      answersByIdByUser,
+      unlocatedIds,
+      fallbackCandidates,
+      scoringConfig.minSharedQuestions,
+      scoringConfig.noDataDefaultScore,
+      () => fallbackCandidates,
+      pairScores,
+    );
+  }
+
+  const writes: { userId: string; candidateId: string; score: number }[] = [];
+  for (const [a, b] of pairs) {
+    let score = pairScores.get(pairKey(a, b));
+    if (score === undefined) {
+      // Defensive only: every pair in `pairs` is built from the same
+      // `directedCandidates`/`fallbackCandidates` data the block-scoring
+      // pass above just grouped and scored, so this should be
+      // unreachable. Falling back to the unchanged scalar path (rather
+      // than throwing, or silently skipping the pair) keeps the nightly
+      // job's known invariant, "every selected pair gets a materialized
+      // score," true even if that ever fires, while still surfacing it as
+      // a logged anomaly worth investigating.
+      ctx.logger.warn(`refreshAllScores: pair ${a}/${b} was selected but not scored by the block pass, falling back to computePairScore`);
+      score = computePairScore(
+        questions,
+        answersByIdByUser.get(a) ?? new Map(),
+        answersByIdByUser.get(b) ?? new Map(),
+        scoringConfig.minSharedQuestions,
+        scoringConfig.noDataDefaultScore,
+      ).score;
+    }
     writes.push({ userId: a, candidateId: b, score });
     writes.push({ userId: b, candidateId: a, score });
   }

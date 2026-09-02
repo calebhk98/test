@@ -22,6 +22,7 @@ import { createSilentLogger } from '../../src/lib/logger.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
+import { pinTrustLevel } from '../support/trustFixtures.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 /** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item). */
@@ -102,17 +103,30 @@ export function venueStaffActor(venueStaffId: string, venueId: string): Actor {
 
 let userCounter = 0;
 
-/** Inserts a minimal `users` row and returns its id. */
+/**
+ * Inserts a minimal `users` row and returns its id.
+ *
+ * `trustLevel`, if given, is NOT written to the row directly (see
+ * db/migrations/029_trust_invariant.sql, which rejects a `trust_level`
+ * that disagrees with `trust_level_for_score(trust_score)`). Instead it's
+ * reached via `tests/support/trustFixtures.ts#pinTrustLevel`, recording a
+ * real `trust_events` row and recalculating through `trust.service.ts`'s
+ * own production path.
+ */
 export async function createUser(db: TestDb, overrides?: { email?: string; trustLevel?: 'limited' | 'standard' | 'trusted' | 'elite' }): Promise<string> {
   userCounter += 1;
   const email = overrides?.email ?? `test-user-${userCounter}-${Date.now()}@example.test`;
   const { rows } = await db.pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level, email_verified_at)
-     VALUES ($1, 'x', '1995-01-01', 'active', 60, $2, now())
+    `INSERT INTO users (email, password_hash, birthdate, status, email_verified_at)
+     VALUES ($1, 'x', '1995-01-01', 'active', now())
      RETURNING id`,
-    [email, overrides?.trustLevel ?? 'standard'],
+    [email],
   );
-  return rows[0]!.id;
+  const userId = rows[0]!.id;
+  if (overrides?.trustLevel) {
+    await pinTrustLevel(makeCtx(db, { type: 'system', job: 'test-fixture' }), userId, overrides.trustLevel);
+  }
+  return userId;
 }
 
 /** Inserts a payment method row for `userId` with the given processor token (use "fail_authorize"/"fail_capture" substrings to drive `FakeProcessor` failure paths). */

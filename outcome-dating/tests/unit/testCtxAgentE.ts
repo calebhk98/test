@@ -25,6 +25,7 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
+import { pinTrustLevel } from '../support/trustFixtures.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 /** Base name from the build brief ("Use your OWN database odate_agent_e"). Node's test runner runs separate `*.test.ts` files concurrently in separate processes by default, so each of this agent's four suites gets its own `odate_agent_e_<suite>` database (see `setupTestDatabase`'s `suite` param) rather than racing DROP/CREATE DATABASE against each other on one shared name. */
@@ -107,27 +108,41 @@ export function uniqueEmail(prefix = 'test'): string {
   return `${prefix}${emailCounter}.${Date.now()}@example.test`;
 }
 
-/** Directly inserts a minimal `users` row (bypassing auth.service, which this agent doesn't own) for test fixtures. Returns the new user id. */
+/**
+ * Directly inserts a minimal `users` row (bypassing auth.service, which
+ * this agent doesn't own) for test fixtures. Returns the new user id.
+ *
+ * `trustLevel`, if given, is NOT written to the row directly (see
+ * db/migrations/029_trust_invariant.sql: `trust_level` must agree with
+ * `trust_level_for_score(trust_score)` on every write, a raw pin would be
+ * rejected outright). Instead it's reached via
+ * `tests/support/trustFixtures.ts#pinTrustLevel`, which records a real
+ * `trust_events` row and recalculates through `trust.service.ts`'s own
+ * production path, the same way any real user would actually get there.
+ * Omit it for the schema's own default, agreeing pair
+ * (`trust_score = 50`, `trust_level = 'standard'`).
+ */
 export async function insertUser(
   ctx: Ctx,
-  opts: { emailVerified?: boolean; createdAt?: Date; trustScore?: number; trustLevel?: TrustLevel; shadowbanned?: boolean; suspended?: boolean; status?: 'active' | 'suspended' | 'deleted' } = {},
+  opts: { emailVerified?: boolean; createdAt?: Date; trustLevel?: TrustLevel; shadowbanned?: boolean; suspended?: boolean; status?: 'active' | 'suspended' | 'deleted' } = {},
 ): Promise<string> {
   const id = randomUUID();
   await ctx.db.query(
-    `INSERT INTO users (id, email, password_hash, birthdate, status, trust_score, trust_level, shadowbanned, suspended, email_verified_at, created_at, last_active_at)
-     VALUES ($1, $2, 'x', '1990-01-01', $3, $4, $5, $6, $7, $8, $9, $9)`,
+    `INSERT INTO users (id, email, password_hash, birthdate, status, shadowbanned, suspended, email_verified_at, created_at, last_active_at)
+     VALUES ($1, $2, 'x', '1990-01-01', $3, $4, $5, $6, $7, $7)`,
     [
       id,
       uniqueEmail('u'),
       opts.status ?? 'active',
-      opts.trustScore ?? 50,
-      opts.trustLevel ?? 'standard',
       opts.shadowbanned ?? false,
       opts.suspended ?? false,
       opts.emailVerified ? (opts.createdAt ?? new Date()) : null,
       opts.createdAt ?? new Date(),
     ],
   );
+  if (opts.trustLevel) {
+    await pinTrustLevel(ctx, id, opts.trustLevel);
+  }
   return id;
 }
 

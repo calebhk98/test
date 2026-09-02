@@ -24,6 +24,8 @@ import type {
   UserFilterCosts,
   FilterCostEntry,
   UserStatsComparisons,
+  RateComparison,
+  CountComparison,
   SuppressibleCount,
 } from '../../services/stats.service.js';
 import type { PoolVennData, PoolVennRegion } from '../../services/statsVenn.js';
@@ -134,6 +136,14 @@ export function serializeUserPoolVenn(data: PoolVennData): UserPoolVennView {
   };
 }
 
+function rateComparison(r: RateComparison): RateComparison {
+  return { mine: r.mine, regionTypical: r.regionTypical, position: r.position };
+}
+
+function countComparison(c: CountComparison): CountComparison {
+  return { mine: c.mine, regionTypical: c.regionTypical, position: c.position };
+}
+
 export interface UserStatsComparisonsView {
   hasLocation: boolean;
   regionPopulation: { value: number | null; suppressed: boolean };
@@ -145,6 +155,11 @@ export interface UserStatsComparisonsView {
     costliestFilter: FilterCostEntryView | null;
   };
   tagPrevalence: Array<{ tagId: string; tagName: string; nearbyHolders: { value: number | null; suppressed: boolean } }>;
+  sentInterestAcceptance: RateComparison;
+  receivedInterestConversion: RateComparison;
+  receivedInterestVolume: CountComparison;
+  profileViews: CountComparison;
+  photoPerformance: RateComparison;
   computedAt: Date;
 }
 
@@ -166,6 +181,11 @@ export function serializeUserStatsComparisons(comparisons: UserStatsComparisons)
       tagName: t.tagName,
       nearbyHolders: suppressible(t.nearbyHolders),
     })),
+    sentInterestAcceptance: rateComparison(comparisons.sentInterestAcceptance),
+    receivedInterestConversion: rateComparison(comparisons.receivedInterestConversion),
+    receivedInterestVolume: countComparison(comparisons.receivedInterestVolume),
+    profileViews: countComparison(comparisons.profileViews),
+    photoPerformance: rateComparison(comparisons.photoPerformance),
     computedAt: comparisons.computedAt,
   };
 }

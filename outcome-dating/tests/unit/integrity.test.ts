@@ -6,6 +6,16 @@
  * (including the two ranked items that are deliberately NOT closed with
  * a hard constraint here, and why).
  *
+ * Item 1 (`post_date_feedback`: `positive` vs `outcome` agreement) is no
+ * longer covered here: `positive`, and the
+ * `post_date_feedback_positive_outcome_agree` CHECK that used to tie it
+ * to `outcome`, are both dropped in db/migrations/028_remove_legacy.sql
+ * (this is a prototype, no backward compatibility; the historical
+ * corruption risk this constraint guarded against no longer exists once
+ * there is no second column left for `outcome` to disagree with). Items
+ * 2-4 below are untouched, they belong to constraints this build did not
+ * add and did not remove.
+ *
  * Self-contained database setup (own `odate_integrity_<suite>` database,
  * per the build brief), independent of the other agents' shared test
  * harnesses, this file spans tables/constraints that cut across more
@@ -27,7 +37,6 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Ctx } from '../../src/lib/ctx.js';
 import * as trustService from '../../src/services/trust.service.js';
-import * as postDateFeedbackService from '../../src/services/postDateFeedback.service.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const DB_PREFIX = 'odate_integrity';
@@ -135,71 +144,6 @@ async function insertDateProposal(
   );
   return rows[0]!.id;
 }
-
-// =====================================================================
-// 1. post_date_feedback: positive/outcome agreement
-// =====================================================================
-
-test('post_date_feedback CHECK rejects positive=true paired with outcome=happened_bad', async () => {
-  const alice = await insertUser();
-  const bob = await insertUser();
-  const dp = await insertDateProposal(alice, bob);
-  await assertCheckViolation(
-    () => pool.query(`INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, outcome) VALUES ($1, $2, true, 'happened_bad')`, [dp, alice]),
-    'post_date_feedback positive=true/outcome=happened_bad',
-  );
-});
-
-test('post_date_feedback CHECK rejects positive=false paired with outcome=happened_good', async () => {
-  const alice = await insertUser();
-  const bob = await insertUser();
-  const dp = await insertDateProposal(alice, bob);
-  await assertCheckViolation(
-    () => pool.query(`INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, outcome) VALUES ($1, $2, false, 'happened_good')`, [dp, alice]),
-    'post_date_feedback positive=false/outcome=happened_good',
-  );
-});
-
-test('post_date_feedback CHECK allows a matching pair, and either column set alone', async () => {
-  const alice = await insertUser();
-  const bob = await insertUser();
-  const dp1 = await insertDateProposal(alice, bob);
-  await pool.query(`INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, outcome) VALUES ($1, $2, true, 'happened_good')`, [dp1, alice]);
-
-  const dp2 = await insertDateProposal(alice, bob);
-  await pool.query(`INSERT INTO post_date_feedback (date_proposal_id, user_id, positive, outcome) VALUES ($1, $2, false, 'happened_bad')`, [dp2, alice]);
-
-  const dp3 = await insertDateProposal(alice, bob);
-  await pool.query(`INSERT INTO post_date_feedback (date_proposal_id, user_id, outcome) VALUES ($1, $2, 'happened_fine')`, [dp3, alice]);
-
-  const dp4 = await insertDateProposal(alice, bob);
-  await pool.query(`INSERT INTO post_date_feedback (date_proposal_id, user_id, positive) VALUES ($1, $2, true)`, [dp4, alice]);
-});
-
-test('the legacy feedback path and the check-in path now share one write statement, so a contradictory row is structurally impossible even across both entry points', async () => {
-  const alice = await insertUser();
-  const bob = await insertUser();
-  const dp = await insertDateProposal(alice, bob);
-  const aliceCtx: Ctx = { ...ctx, actor: { type: 'user', userId: alice, trustLevel: 'standard' } };
-
-  // Legacy call says "it went well" (positive=true).
-  await postDateFeedbackService.submitLegacyFeedback(aliceCtx, dp, { positive: true });
-  const { rows: afterLegacy } = await pool.query<{ positive: boolean | null; outcome: string | null }>(
-    `SELECT positive, outcome FROM post_date_feedback WHERE date_proposal_id = $1 AND user_id = $2`,
-    [dp, alice],
-  );
-  assert.equal(afterLegacy[0]!.positive, null, 'submitLegacyFeedback never writes the positive column any more, only outcome');
-  assert.equal(afterLegacy[0]!.outcome, 'happened_good');
-
-  // Same user, same date, now through the check-in path with the OPPOSITE outcome, this used to be a second independent writer.
-  await postDateFeedbackService.submitCheckIn(aliceCtx, dp, { outcome: 'happened_bad' });
-  const { rows: afterCheckIn } = await pool.query<{ positive: boolean | null; outcome: string | null }>(
-    `SELECT positive, outcome FROM post_date_feedback WHERE date_proposal_id = $1 AND user_id = $2`,
-    [dp, alice],
-  );
-  assert.equal(afterCheckIn[0]!.outcome, 'happened_bad', 'the later call wins, one row, one writer, no contradiction possible');
-  assert.equal(afterCheckIn[0]!.positive, null, 'positive was never touched by either call, so there is nothing left to disagree with outcome');
-});
 
 // =====================================================================
 // 2. users: status / suspended agreement

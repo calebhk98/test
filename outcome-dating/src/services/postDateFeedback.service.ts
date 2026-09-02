@@ -39,24 +39,23 @@ import * as notificationService from './notification.service.js';
  * db/migrations/016_post_date_feedback.sql for the full column-by-column
  * rationale) rather than duplicating it.
  *
- * INTEGRITY FIX (normalization audit item 1): `dateProposal.service
+ * INTEGRITY FIX (normalization audit item 1, now fully closed): `dateProposal.service
  * #submitPostDateFeedback` used to run its own, completely independent,
- * INSERT/UPDATE against this same table, writing only the legacy
+ * INSERT/UPDATE against this same table, writing only the old
  * `positive`/`would_meet_again`/`safety_concern`/`notes` columns, with no
  * outcome/safety-routing/trust/matching-signal behavior of its own. Two
  * independent writers on one (date_proposal_id, user_id) row, each
  * owning a disjoint column subset, is exactly how a row could end up
  * saying the date went well (`positive = true`) and badly
- * (`outcome = 'happened_bad'`) at once. That function is now deleted.
- * `POST /date-proposals/:id/feedback` still exists at the HTTP layer for
- * backward compatibility (dates.routes.ts), but it is now a thin
- * translator that calls `submitLegacyFeedback` below, which funnels into
- * the exact same write statement, trust-effect, and safety-routing logic
- * as `submitCheckIn`, there is exactly ONE place in the codebase that
- * writes outcome/safety data to `post_date_feedback` now.
- * db/migrations/025_integrity.sql additionally adds a CHECK constraint
- * tying `positive` and `outcome` together so a disagreeing pair is
- * rejected by the database itself, not just by there being one writer.
+ * (`outcome = 'happened_bad'`) at once. That function was deleted first,
+ * and the HTTP-layer translator that briefly stood in its place (`POST
+ * /date-proposals/:id/feedback`) has since been removed too, there is no
+ * external caller of this table's outcome data left to translate for.
+ * `submitCheckIn` below is now the ONLY entry point that writes
+ * outcome/safety data to `post_date_feedback`. The `positive` column
+ * itself, and the CHECK constraint that used to tie it to `outcome`, are
+ * gone (db/migrations/028_remove_legacy.sql), a disagreeing pair is no
+ * longer a state the schema can even represent.
  *
  * `submitCheckIn` reads `date_proposals` directly (existence/participant/
  * status/timing) rather than calling `dateProposal.service#getDateProposal`
@@ -373,10 +372,8 @@ async function loadCheckInProposal(ctx: Ctx, dateProposalId: string, userId: str
 /**
  * The single write path onto `post_date_feedback`'s outcome/safety
  * columns: one INSERT ... ON CONFLICT DO UPDATE, the retaliation-safe
- * trust effect, and safety-flag routing. Both `submitCheckIn` (the
- * primary, fully-gated entry point) and `submitLegacyFeedback` (the
- * `POST /date-proposals/:id/feedback` compatibility shim) call this
- * after their own, different, eligibility checks, see module doc
+ * trust effect, and safety-flag routing. `submitCheckIn` (the only entry
+ * point) calls this after its own eligibility check, see module doc
  * "INTEGRITY FIX". Nothing else in this codebase writes these columns.
  */
 async function writeCheckInRow(
@@ -449,49 +446,6 @@ export async function submitCheckIn(ctx: Ctx, dateProposalId: string, input: unk
   if (ctx.clock.now().getTime() < proposal.scheduled_start.getTime()) {
     throw new ConflictError('Cannot submit a check-in before the date has started.');
   }
-
-  return writeCheckInRow(ctx, dateProposalId, proposal, userId, parsed);
-}
-
-// =====================================================================
-// submitLegacyFeedback, backs the retired `POST
-// /date-proposals/:id/feedback` route (dates.routes.ts). See module doc
-// "INTEGRITY FIX". Preserves the legacy endpoint's own (looser, no
-// scheduled-start timing gate) eligibility check exactly as
-// `dateProposal.service#submitPostDateFeedback` used to enforce it, so
-// existing callers of that endpoint see no behavior change beyond now
-// getting the richer, safety-routed, single-writer implementation.
-// Translates the two-value `positive` boolean onto the four-value
-// `outcome` axis using the same equivalence
-// `src/jobs/statsAggregation.job.ts` already assumes between the two
-// columns (`positive = true` <-> `outcome = 'happened_good'`,
-// `positive = false` <-> `outcome = 'happened_bad'`), see
-// db/migrations/025_integrity.sql for the same mapping applied to
-// historical rows.
-// =====================================================================
-
-const LEGACY_FEEDBACK_ELIGIBLE_STATUSES = new Set(['completed', 'completed_unverified']);
-
-export interface LegacyFeedbackInput {
-  positive: boolean;
-  wouldMeetAgain?: boolean;
-  safetyConcern?: boolean;
-  notes?: string;
-}
-
-export async function submitLegacyFeedback(ctx: Ctx, dateProposalId: string, input: LegacyFeedbackInput): Promise<PostDateCheckIn> {
-  const { userId } = requireUserActor(ctx);
-  const proposal = await loadCheckInProposal(ctx, dateProposalId, userId);
-  if (!LEGACY_FEEDBACK_ELIGIBLE_STATUSES.has(proposal.status)) {
-    throw new ConflictError('Post-date feedback can only be submitted for a completed date.', { status: proposal.status });
-  }
-
-  const parsed: { outcome: CheckInOutcome; wouldMeetAgain?: WouldMeetAgain; safetyFlag: SafetyFlagLevel; notes?: string } = {
-    outcome: input.positive ? 'happened_good' : 'happened_bad',
-    wouldMeetAgain: input.wouldMeetAgain === undefined ? undefined : input.wouldMeetAgain ? 'yes' : 'no',
-    safetyFlag: input.safetyConcern ? 'concern' : 'none',
-    notes: input.notes,
-  };
 
   return writeCheckInRow(ctx, dateProposalId, proposal, userId, parsed);
 }
