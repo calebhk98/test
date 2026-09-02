@@ -454,13 +454,37 @@ async function boundedScalarRefreshAllScores(ctxIn: Ctx): Promise<{ updated: num
   return { updated: writes.length, ms: Date.now() - t0 };
 }
 
+// Split into two separate tests (each with its own generous timeout)
+// rather than one long test doing both halves back to back: this
+// environment can be shared with other concurrent test/DB activity, and a
+// single over-long test that times out loses BOTH measurements instead of
+// whichever one didn't finish. Results are handed from the first test to
+// the second via this module-level variable, node:test runs a file's
+// tests in declaration order by default so this is safe.
+let beforeAfterShared: { before: { updated: number; ms: number }; beforeRowCount: number } | undefined;
+
 test(
-  `THIS BUILD's before/after: bounded refresh scored one pair at a time (pre-adoption shape) vs the current block-matrix refreshAllScores, same candidate selection, same full seeded scale (${USER_COUNT} users, includes NYC as the dense cluster, see seedDiscoveryPerf.ts's ~50% weighting)`,
-  { timeout: 600_000 },
+  `THIS BUILD's before/after, part 1 (BEFORE): bounded refresh scored one pair at a time (pre-adoption shape), full seeded scale (${USER_COUNT} users, includes NYC as the dense cluster, see seedDiscoveryPerf.ts's ~50% weighting)`,
+  { timeout: 900_000 },
   async () => {
     await pool.query('DELETE FROM compatibility_scores');
     const before = await boundedScalarRefreshAllScores(ctx);
     const beforeRowCount = await compatibilityScoresRowCount();
+    beforeAfterShared = { before, beforeRowCount };
+    console.log(
+      `[compatRefresh.perf] THIS BUILD's before/after, BEFORE (scalar, one computePairScore call per pair): ` +
+        `${before.ms}ms, ${before.updated.toLocaleString()} rows written, ${beforeRowCount.toLocaleString()} rows in table`,
+    );
+    assert.ok(before.updated > 0, 'sanity: the bounded-scalar reference must have materialized something');
+  },
+);
+
+test(
+  `THIS BUILD's before/after, part 2 (AFTER): the current block-matrix refreshAllScores, same candidate selection, same full seeded scale (${USER_COUNT} users)`,
+  { timeout: 900_000 },
+  async () => {
+    assert.ok(beforeAfterShared, 'part 1 (BEFORE) must have run first and recorded its result');
+    const { before, beforeRowCount } = beforeAfterShared!;
 
     await pool.query('DELETE FROM compatibility_scores');
     const t0 = Date.now();

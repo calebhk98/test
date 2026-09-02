@@ -21,7 +21,8 @@
  */
 import type { Ctx } from '../../lib/ctx.js';
 import { requireUserActor } from '../../lib/ctx.js';
-import type { Voucher } from '../../domain/types.js';
+import type { Page, Voucher } from '../../domain/types.js';
+import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../../lib/cursor.js';
 
 export interface MyTicketView {
   id: string;
@@ -79,14 +80,44 @@ const TICKET_SELECT = `SELECT v.id, v.date_proposal_id, v.venue_id, ven.name AS 
   JOIN date_proposals dp ON dp.id = v.date_proposal_id
   JOIN venues ven ON ven.id = v.venue_id`;
 
-/** `GET /tickets`, every voucher for a proposal the caller participated in, with venue name/address and the proposal's schedule denormalized onto each row (see file doc). */
-export async function listMyTickets(ctx: Ctx): Promise<MyTicketView[]> {
+/**
+ * `GET /tickets`, every voucher for a proposal the caller participated in,
+ * with venue name/address and the proposal's schedule denormalized onto
+ * each row (see file doc).
+ *
+ * Mobile readiness (wiring item 6): a user's own ticket history grows
+ * without bound over the life of an account, this previously had no
+ * cursor at all (an unconditional, unlimited `SELECT`). Cursor-paginated
+ * now on `(issued_at, id)`, same shared codec (src/lib/cursor.ts) every
+ * other list in this codebase uses. Breaking response shape change (bare
+ * array -> `{items, nextCursor}`), fine per this build's brief (nothing
+ * has shipped).
+ */
+export async function listMyTickets(ctx: Ctx, params?: { cursor?: string; limit?: number }): Promise<Page<MyTicketView>> {
   const { userId } = requireUserActor(ctx);
+  const limit = Math.min(Math.max(params?.limit ?? 50, 1), 200);
+
+  const values: unknown[] = [userId];
+  let cursorClause = '';
+  if (params?.cursor) {
+    const c = decodeTimestampIdCursor(params.cursor);
+    values.push(c.ts, c.id);
+    cursorClause = `AND (v.issued_at, v.id) < ($2, $3)`;
+  }
+  values.push(limit + 1);
+
   const { rows } = await ctx.db.query<TicketRow>(
-    `${TICKET_SELECT} WHERE dp.proposer_id = $1 OR dp.recipient_id = $1 ORDER BY v.issued_at DESC`,
-    [userId],
+    `${TICKET_SELECT} WHERE (dp.proposer_id = $1 OR dp.recipient_id = $1) ${cursorClause}
+     ORDER BY v.issued_at DESC, v.id DESC LIMIT $${values.length}`,
+    values,
   );
-  return rows.map(serializeRow);
+
+  const hasMore = rows.length > limit;
+  const pageRows = hasMore ? rows.slice(0, limit) : rows;
+  const items = pageRows.map(serializeRow);
+  const lastRow = pageRows[pageRows.length - 1];
+  const nextCursor = hasMore && lastRow ? encodeTimestampIdCursor(lastRow.issued_at, lastRow.id) : null;
+  return { items, nextCursor };
 }
 
 /**
