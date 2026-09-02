@@ -114,7 +114,8 @@ test('DoD #5: users can send LIMITED interests (the outgoing-pending cap genuine
   for (let i = 0; i < 5; i++) {
     await interestService.sendInterest(ctx, await createUser(db));
   }
-  await assert.rejects(() => interestService.sendInterest(ctx, await createUser(db)), { name: 'RateLimitError' });
+  const sixthRecipient = await createUser(db);
+  await assert.rejects(() => interestService.sendInterest(ctx, sixthRecipient), { name: 'RateLimitError' });
 });
 
 test('DoD #6: incoming interests are capped and expire (freeing the sender\'s slot)', async () => {
