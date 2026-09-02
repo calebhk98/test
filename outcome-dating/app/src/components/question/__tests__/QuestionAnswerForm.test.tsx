@@ -97,9 +97,10 @@ describe('QuestionAnswerForm - value_importance presentation', () => {
 
     // Two "Average" radios exist (self scale + preference scale); press both.
     const midpoints = getAllByLabelText('Average');
-    fireEvent.press(midpoints[0]);
+    expect(midpoints).toHaveLength(2);
+    fireEvent.press(midpoints[0]!);
     expect(saveButton.props.accessibilityState.disabled).toBe(true);
-    fireEvent.press(midpoints[1]);
+    fireEvent.press(midpoints[1]!);
     expect(saveButton.props.accessibilityState.disabled).toBe(true); // importance still missing
 
     fireEvent.press(getByLabelText('Important'));

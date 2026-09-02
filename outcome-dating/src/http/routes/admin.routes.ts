@@ -31,6 +31,7 @@ import { authenticate, requireRole } from '../auth.js';
 import { writeAdminAudit } from '../audit.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
 import { serializeAdminQuestion } from '../serializers/questions.js';
+import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../../lib/cursor.js';
 
 const VenueCategorySchema = z.enum([
   'coffee', 'dessert', 'drinks', 'walk', 'museum', 'arcade', 'live_music', 'comedy', 'class_activity', 'food_market',
@@ -67,7 +68,11 @@ const SetFlagBodySchema = z.object({
   segments: z.array(z.string()).optional(),
 });
 const RefundHoldBodySchema = z.object({ amountCents: z.number().int().min(0).optional(), reason: z.string().optional() });
-const UsersQuerySchema = z.object({ q: z.string().optional(), limit: z.coerce.number().int().min(1).max(200).optional() });
+const UsersQuerySchema = z.object({
+  q: z.string().optional(),
+  limit: z.coerce.number().int().min(1).max(200).optional(),
+  cursor: z.string().optional(),
+});
 
 function isConfigKey(key: string): key is ConfigKey {
   return Object.prototype.hasOwnProperty.call(ConfigKeyRegistry, key);
@@ -199,21 +204,54 @@ export function registerAdminRoutes(app: FastifyInstance, deps: AppDeps): void {
   });
 
   // ---- §27 item 5: User lookup ----
+  // Mobile readiness (wiring item 6): the platform's whole user table can
+  // grow without bound, this listing had a `limit` but no cursor at all,
+  // so a client could never page past the first `limit` rows, and the
+  // admin console's own client would have had to keep asking for a larger
+  // and larger `limit` to see more. Cursor-paginated now on the same
+  // `(created_at, id)` keyset every other list in this codebase uses, via
+  // the shared codec (src/lib/cursor.ts). Breaking response shape change
+  // (bare array -> `{items, nextCursor}`), fine per this build's brief
+  // (nothing has shipped), no test asserted the old bare-array shape.
   app.get('/admin/users', auth, async (req, reply) => {
     const query = parseOrThrow(UsersQuerySchema, req.query);
     const limit = query.limit ?? 50;
-    const { rows } = query.q
-      ? await req.ctx!.db.query(
-          `SELECT id, email, status, trust_score, trust_level, shadowbanned, suspended, created_at, last_active_at
-           FROM users WHERE email ILIKE $1 ORDER BY created_at DESC LIMIT $2`,
-          [`%${query.q}%`, limit],
-        )
-      : await req.ctx!.db.query(
-          `SELECT id, email, status, trust_score, trust_level, shadowbanned, suspended, created_at, last_active_at
-           FROM users ORDER BY created_at DESC LIMIT $1`,
-          [limit],
-        );
-    reply.send(rows);
+
+    const values: unknown[] = [];
+    const conditions: string[] = [];
+    if (query.q) {
+      values.push(`%${query.q}%`);
+      conditions.push(`email ILIKE $${values.length}`);
+    }
+    if (query.cursor) {
+      const c = decodeTimestampIdCursor(query.cursor);
+      values.push(c.ts, c.id);
+      conditions.push(`(created_at, id) < ($${values.length - 1}, $${values.length})`);
+    }
+    values.push(limit + 1);
+    const whereClause = conditions.length > 0 ? `WHERE ${conditions.join(' AND ')}` : '';
+
+    const { rows } = await req.ctx!.db.query<{
+      id: string;
+      email: string;
+      status: string;
+      trust_score: number;
+      trust_level: string;
+      shadowbanned: boolean;
+      suspended: boolean;
+      created_at: Date;
+      last_active_at: Date;
+    }>(
+      `SELECT id, email, status, trust_score, trust_level, shadowbanned, suspended, created_at, last_active_at
+       FROM users ${whereClause} ORDER BY created_at DESC, id DESC LIMIT $${values.length}`,
+      values,
+    );
+
+    const hasMore = rows.length > limit;
+    const pageRows = hasMore ? rows.slice(0, limit) : rows;
+    const last = pageRows[pageRows.length - 1];
+    const nextCursor = hasMore && last ? encodeTimestampIdCursor(last.created_at, last.id) : null;
+    reply.send({ items: pageRows, nextCursor });
   });
 
   app.get('/admin/users/:userId', auth, async (req, reply) => {

@@ -158,17 +158,12 @@ test('CC-9 / C-30.9.1 / C-30.9.2: after Bob reports Alice (crossing the automate
   const aliceCtx = makeCtx(db, userActor(alice));
   const trustSummary = await trustService.getMyTrustSummary(aliceCtx);
   const trustEvents = await trustService.listMyTrustEvents(aliceCtx);
-  // WORKAROUND for a confirmed CC-12 defect (see timeDiscipline.test.ts):
-  // `moderation_actions.created_at` is written from the DB's own `now()`
-  // default, not `ctx.clock.now()`, so `appeal.service#checkCooldownElapsed`
-  // (which correctly compares against `ctx.clock.now()`) sees a moderation
-  // action stamped with the REAL wall-clock time, not this suite's fixed
-  // 2026-01-07 epoch. Advancing the clock a few hours (the textbook,
-  // spec-correct way to clear a cooldown) cannot work around a bug that
-  // compares against real time; jumping the manual clock past the actual
-  // real "now" is the only way to reach the appeal surfaces under test
-  // here, and is called out explicitly so it reads as a workaround, not
-  // as this suite's normal clock-control convention.
+  // A large forward jump clears `moderation.appeal_cooldown_hours`
+  // unconditionally, whatever the current values of that config key or
+  // this suite's fixed epoch are; see timeDiscipline.test.ts for a CC-12
+  // defect this test originally had to route around here (moderation
+  // action/appeal timestamps briefly used the database's real wall clock
+  // instead of ctx.clock), fixed elsewhere during this same session.
   db.clock.set(new Date('2030-01-01T00:00:00.000Z'));
   const appeal = await appealService.submitAppeal(aliceCtx, { method: 'cooldown' });
   const latestAppeal = await appealService.getMyLatestAppeal(aliceCtx);

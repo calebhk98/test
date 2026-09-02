@@ -135,28 +135,62 @@ test('happy path: register -> answers -> filters -> discovery -> interest -> cha
   assert.equal(redeemBody.voucher.status, 'redeemed');
   assert.equal(redeemBody.dateProposal.status, 'completed');
 
-  // ---- post-date feedback ----
-  const feedbackAliceRes = await t.app.inject({
-    method: 'POST',
-    url: `/date-proposals/${proposal.id}/feedback`,
-    headers: authHeader(alice.accessToken),
-    payload: { positive: true, wouldMeetAgain: true },
-  });
-  assert.equal(feedbackAliceRes.statusCode, 201);
+  // A check-in cannot be submitted before the date has started
+  // (postDateFeedback.service#submitCheckIn), the proposal above was
+  // scheduled 3 days out, so the manual test clock has to actually cross
+  // that boundary first. Access tokens are also signed off `ctx.clock`
+  // (auth.service.ts), so crossing 4 days expires the ones issued at
+  // registration, refresh both before using them again below.
+  t.clock.advanceDays(4);
 
-  const feedbackBobRes = await t.app.inject({
+  const aliceRefreshRes = await t.app.inject({ method: 'POST', url: '/auth/refresh', payload: { refreshToken: alice.refreshToken } });
+  assert.equal(aliceRefreshRes.statusCode, 200);
+  const aliceAccessToken = (JSON.parse(aliceRefreshRes.body) as { tokens: { accessToken: string } }).tokens.accessToken;
+
+  const bobRefreshRes = await t.app.inject({ method: 'POST', url: '/auth/refresh', payload: { refreshToken: bob.refreshToken } });
+  assert.equal(bobRefreshRes.statusCode, 200);
+  const bobAccessToken = (JSON.parse(bobRefreshRes.body) as { tokens: { accessToken: string } }).tokens.accessToken;
+
+  // ---- post-date check-in ----
+  // The old `POST /date-proposals/:id/feedback` route (and the
+  // `post_date_feedback.positive`/`safety_concern` columns it wrote) is
+  // gone outright, no backward-compatibility shim, per the project
+  // owner's "nothing has shipped, no compatibility path" instruction.
+  // `POST /date-proposals/:id/check-in` is now the only way to submit
+  // post-date feedback (postDateFeedback.service.ts).
+  const checkInAliceRes = await t.app.inject({
     method: 'POST',
-    url: `/date-proposals/${proposal.id}/feedback`,
-    headers: authHeader(bob.accessToken),
-    payload: { positive: true, wouldMeetAgain: true },
+    url: `/date-proposals/${proposal.id}/check-in`,
+    headers: authHeader(aliceAccessToken),
+    payload: { outcome: 'happened_good', wouldMeetAgain: 'yes' },
   });
-  assert.equal(feedbackBobRes.statusCode, 201);
+  assert.equal(checkInAliceRes.statusCode, 201);
+  const checkInAlice = JSON.parse(checkInAliceRes.body) as { outcome: string; wouldMeetAgain: string; reportFiled: boolean };
+  assert.equal(checkInAlice.outcome, 'happened_good');
+  assert.equal(checkInAlice.wouldMeetAgain, 'yes');
+  assert.equal(checkInAlice.reportFiled, false);
+
+  const checkInBobRes = await t.app.inject({
+    method: 'POST',
+    url: `/date-proposals/${proposal.id}/check-in`,
+    headers: authHeader(bobAccessToken),
+    payload: { outcome: 'happened_good', wouldMeetAgain: 'yes' },
+  });
+  assert.equal(checkInBobRes.statusCode, 201);
+
+  // Each participant can read back their own check-in.
+  const getCheckInRes = await t.app.inject({
+    method: 'GET',
+    url: `/date-proposals/${proposal.id}/check-in`,
+    headers: authHeader(aliceAccessToken),
+  });
+  assert.equal(getCheckInRes.statusCode, 200);
 
   // ---- established chat, no longer decays ----
   const conversationRes = await t.app.inject({
     method: 'GET',
     url: `/conversations/${conversationId}`,
-    headers: authHeader(alice.accessToken),
+    headers: authHeader(aliceAccessToken),
   });
   const conversation = JSON.parse(conversationRes.body) as { status: string };
   assert.equal(conversation.status, 'established');

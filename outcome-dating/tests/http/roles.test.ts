@@ -210,6 +210,33 @@ test('§18.1: moderation pipeline runs to completion with zero admin endpoints c
     return reporter;
   }
 
+  // `t.clock` is a `ManualClock` this whole file shares and never advances
+  // (see testServer.ts), so the two `moderation_actions` rows this test
+  // triggers below can legitimately land on the EXACT same `created_at`
+  // (moderation.service.ts writes it from `ctx.clock.now()`, see that
+  // file's own CC-12 fix doc comment). `created_at DESC` alone leaves
+  // that tie's order unspecified; break it the same way
+  // `moderation.service.ts` itself now does internally
+  // (`ACTION_SEVERITY_SQL_CASE`): a later row from `applyThresholds` is
+  // never a lower severity than an earlier one for the same user (see
+  // that function's own "never LESS protective" guard), so highest
+  // severity among tied timestamps is always the genuinely most recent.
+  const ACTION_SEVERITY_SQL_CASE = `CASE action
+    WHEN 'suspension' THEN 4
+    WHEN 'shadowban' THEN 3
+    WHEN 'restriction' THEN 2
+    WHEN 'warning' THEN 1
+    ELSE 0
+  END`;
+  async function latestModerationAction(userId: string): Promise<{ action: string; reason: string } | undefined> {
+    const { rows } = await t.pool.query<{ action: string; reason: string }>(
+      `SELECT action, reason FROM moderation_actions WHERE user_id = $1
+       ORDER BY created_at DESC, ${ACTION_SEVERITY_SQL_CASE} DESC LIMIT 1`,
+      [userId],
+    );
+    return rows[0];
+  }
+
   const reporter1 = await backdatedCredibleReporter(90);
   const res1 = await t.app.inject({
     method: 'POST',
@@ -219,12 +246,9 @@ test('§18.1: moderation pipeline runs to completion with zero admin endpoints c
   });
   assert.equal(res1.statusCode, 201);
 
-  const afterFirst = await t.pool.query(
-    `SELECT action, reason FROM moderation_actions WHERE user_id = $1 ORDER BY created_at DESC LIMIT 1`,
-    [reported.userId],
-  );
-  assert.equal(afterFirst.rows[0]?.action, 'restriction', 'one credible report: a fast, reversible interim restriction, never suspension');
-  assert.equal(afterFirst.rows[0]?.reason, 'minor_suspected_report_interim_protective_action');
+  const afterFirst = await latestModerationAction(reported.userId);
+  assert.equal(afterFirst?.action, 'restriction', 'one credible report: a fast, reversible interim restriction, never suspension');
+  assert.equal(afterFirst?.reason, 'minor_suspected_report_interim_protective_action');
 
   // A second, DISTINCT, non-clustered credible reporter (a different
   // account-age bucket so no account-creation-proximity clustering
@@ -239,12 +263,9 @@ test('§18.1: moderation pipeline runs to completion with zero admin endpoints c
   });
   assert.equal(res2.statusCode, 201);
 
-  const afterSecond = await t.pool.query(
-    `SELECT action, reason FROM moderation_actions WHERE user_id = $1 ORDER BY created_at DESC LIMIT 1`,
-    [reported.userId],
-  );
-  assert.equal(afterSecond.rows[0]?.action, 'suspension', 'two corroborating credible reports must still suspend fast');
-  assert.equal(afterSecond.rows[0]?.reason, 'minor_suspected_report_immediate_protective_action');
+  const afterSecond = await latestModerationAction(reported.userId);
+  assert.equal(afterSecond?.action, 'suspension', 'two corroborating credible reports must still suspend fast');
+  assert.equal(afterSecond?.reason, 'minor_suspected_report_immediate_protective_action');
 });
 
 test('§30.6.1: admin can mark a venue inactive', async () => {

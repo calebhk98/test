@@ -1,9 +1,9 @@
 module.exports = {
   preset: 'jest-expo',
-  transformIgnorePatterns: [
-    'node_modules/(?!((jest-)?react-native|@react-native(-community)?|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)/)',
-  ],
-  setupFilesAfterEach: [],
+  // Deliberately no transformIgnorePatterns override here: jest-expo's
+  // preset already ships the correct one for transforming Expo/RN's
+  // ESM-only packages, and overriding it (rather than extending it)
+  // replaces that pattern outright and breaks the transform.
   testPathIgnorePatterns: ['/node_modules/', '/.expo/'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.d.ts'],
 };

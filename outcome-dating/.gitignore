@@ -5,3 +5,6 @@ dist/
 *.log
 .env
 coverage/
+
+# Client dependencies
+app/node_modules/

@@ -8,31 +8,25 @@
  * passing `ctx.clock.now()` explicitly, which is exactly as real-time-
  * dependent as calling `new Date()` in application code, just one layer
  * further down. `docs/test-audit.md` already documents one instance of
- * this exact bug class (`report.service.ts`'s `reports.created_at`); this
- * file adds dedicated regression coverage for two more, found while
- * building this suite's CC-9 test (see privacy.test.ts's inline note).
+ * this exact bug class (`report.service.ts`'s `reports.created_at`).
  *
- * FINDING (report this, do not weaken these tests): both
+ * FINDING, CONFIRMED THEN FIXED DURING THIS SESSION: while building this
+ * suite's CC-9 test (see privacy.test.ts's inline note) both
  * `moderation.service.ts#applyThresholds`'s `INSERT INTO moderation_actions`
- * and `appeal.service.ts#submitAppeal`'s `INSERT INTO appeals` omit
- * `created_at`/`submitted_at` from their column list, so both fall back to
- * the schema's own `DEFAULT now()` (`db/migrations/001_init.sql`), the
- * database's real wall clock, not the `Ctx.clock` these two service files
- * otherwise honor everywhere else (both explicitly pass `ctx.clock.now()`
- * for their OTHER timestamp columns, e.g. `resolveAppeal`'s
- * `resolved_at`). Concretely, this makes `appeal.service#checkCooldownElapsed`
- * (which correctly reads `ctx.clock.now()`) compare a `ManualClock`
- * pinned to a test's fixed epoch against a REAL timestamp, so a test
- * built the way this whole suite is supposed to be built (a fixed
- * historical `ManualClock`, per docs/test-strategy.md) sees "0 hours (or
- * a deeply negative number of hours) have elapsed" no matter how far the
- * manual clock is advanced, unless it is advanced PAST real wall-clock
- * time, which defeats the entire point of a controllable clock. Both
- * tests below fail today for exactly this reason and must not be
- * "fixed" by relaxing the assertion, waiting on real time, or asserting
- * against `new Date()`; the fix belongs in `moderation.service.ts` /
- * `appeal.service.ts`, passing `ctx.clock.now()` into both INSERTs like
- * every sibling function in the same files already does.
+ * and `appeal.service.ts#submitAppeal`'s `INSERT INTO appeals` were found
+ * omitting `created_at`/`submitted_at` from their column list, falling
+ * back to the schema's own `DEFAULT now()` (`db/migrations/001_init.sql`,
+ * the database's real wall clock), unlike every OTHER timestamp column in
+ * both files (e.g. `resolveAppeal`'s `resolved_at`, which already passed
+ * `ctx.clock.now()` correctly). This broke `appeal.service#checkCooldownElapsed`
+ * under any fixed-epoch `ManualClock` (see privacy.test.ts's now-obsolete
+ * workaround comment for the exact symptom). A concurrently-running agent
+ * fixed both call sites (now both pass `ctx.clock.now()` explicitly) while
+ * this suite was being written; both tests below now PASS and are kept as
+ * permanent regression coverage for the fix rather than deleted, so a
+ * future reversion is caught immediately. If either test below starts
+ * failing again, it is this exact real-wall-clock regression, not a new
+ * defect to re-diagnose from scratch.
  */
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';

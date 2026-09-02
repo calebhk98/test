@@ -98,6 +98,30 @@ const SEVERITY_ACTION: ModerationActionType[] = ['none', 'warning', 'restriction
 /** Internal-only, not derived from config (no §21.4 key exists for a "warning" cutoff, only restriction/shadowban/suspension are named there), a fixed fraction of the (configurable) restriction threshold. */
 const WARNING_SCORE_RATIO = 0.5;
 
+/**
+ * Secondary ORDER BY tiebreak, mirroring `ACTION_SEVERITY` in SQL, for
+ * every query below that wants "the most recent moderation_actions row".
+ * `created_at` is written from `ctx.clock.now()` (see the CC-12 fix on
+ * the INSERT below), which a test's `ManualClock` can legitimately leave
+ * unchanged between two real, temporally-ordered writes, so two rows for
+ * the same user can share an identical `created_at`. `created_at DESC`
+ * alone leaves that tie's order UNDEFINED (Postgres makes no ordering
+ * guarantee among equal sort keys with no further tiebreak), this
+ * resolves it correctly rather than arbitrarily: `applyThresholds` never
+ * writes a new row at the same or a LOWER severity than the user's
+ * current one (see its own "never LESS protective" guard below), so
+ * within one user's history, severity is monotonically non-decreasing
+ * over time, the highest-severity row among tied timestamps is always
+ * the genuinely most recent one.
+ */
+const ACTION_SEVERITY_SQL_CASE = `CASE action
+  WHEN 'suspension' THEN 4
+  WHEN 'shadowban' THEN 3
+  WHEN 'restriction' THEN 2
+  WHEN 'warning' THEN 1
+  ELSE 0
+END`;
+
 /** Trust-score deltas pushed on each action (spec §6.2 "reports" as a negative factor arrives at trust.service exactly here, see trust.service.ts's module doc for why raw non-actioned reports don't move trust on their own). */
 const TRUST_DELTA_FOR_ACTION: Partial<Record<ModerationActionType, number>> = {
   warning: -5,
@@ -162,7 +186,7 @@ async function currentActionLevel(ctx: Ctx, userId: string): Promise<number> {
   if (u?.shadowbanned) return ACTION_SEVERITY.shadowban;
 
   const { rows: lastActionRows } = await ctx.db.query<{ action: ModerationActionType }>(
-    'SELECT action FROM moderation_actions WHERE user_id = $1 ORDER BY created_at DESC LIMIT 1',
+    `SELECT action FROM moderation_actions WHERE user_id = $1 ORDER BY created_at DESC, ${ACTION_SEVERITY_SQL_CASE} DESC LIMIT 1`,
     [userId],
   );
   const lastAction = lastActionRows[0]?.action;
@@ -353,14 +377,14 @@ export async function listModerationActions(ctx: Ctx, userId?: string, params?: 
     ? await ctx.db.query<{ id: string; user_id: string; action: ModerationActionType; reason: string; score: number; metadata: Record<string, unknown>; created_at: Date }>(
         `SELECT id, user_id, action, reason, score, metadata, created_at
            FROM moderation_actions WHERE user_id = $1
-          ORDER BY created_at DESC, id DESC
+          ORDER BY created_at DESC, ${ACTION_SEVERITY_SQL_CASE} DESC, id DESC
           LIMIT $2 OFFSET $3`,
         [userId, limit + 1, offset],
       )
     : await ctx.db.query<{ id: string; user_id: string; action: ModerationActionType; reason: string; score: number; metadata: Record<string, unknown>; created_at: Date }>(
         `SELECT id, user_id, action, reason, score, metadata, created_at
            FROM moderation_actions
-          ORDER BY created_at DESC, id DESC
+          ORDER BY created_at DESC, ${ACTION_SEVERITY_SQL_CASE} DESC, id DESC
           LIMIT $1 OFFSET $2`,
         [limit + 1, offset],
       );

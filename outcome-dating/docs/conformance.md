@@ -1020,3 +1020,146 @@ negative test too.
 | 18 | Trust score visible with actionable reasons | C-6.3.1, C-6.3.2, C-6.3.3 |
 | 19 | Admin can change core variables without code deployment | C-4.3.1, C-21.2.1 to 5, C-21.4.* |
 | 20 | All payment events recorded in an immutable ledger | C-14.8.1, C-14.8.2, C-14.8.3, CC-4 |
+
+---
+
+# Conformance suite status (`tests/conformance/`)
+
+This section records what actually has an executable test today, added as
+the cross-cutting layer the rest of `tests/**` (per-module, per-agent) does
+not cover, per the task that produced `tests/conformance/`. It complements
+`docs/test-audit.md` (which grades the pre-existing per-module suite) and
+does not restate that file's findings.
+
+## What has tests
+
+All twelve cross-cutting invariants (CC-1 through CC-12) now have a
+dedicated, standalone test proving them directly against the real service
+layer and a real database, not merely implied by section-specific rows:
+
+| Invariant | File |
+|---|---|
+| CC-1 (hard filters never overridden by scoring) | `filtersAndSorting.test.ts` |
+| CC-2 (nobody charged unless both holds authorized, every failure ordering) | `moneyInvariants.test.ts` |
+| CC-3 (no ticket before capture) | `moneyInvariants.test.ts` |
+| CC-4 (ledger append-only, balanced net position) | `moneyInvariants.test.ts` |
+| CC-5 (no card numbers persisted/returned) | `privacy.test.ts` |
+| CC-6 (established conversation never decays) | `conversationLifecycle.test.ts` |
+| CC-7 (moderation fully automated, zero admin calls) | `definitionOfDone.test.ts` (DoD #17), `numericBoundaries.test.ts` |
+| CC-8 (config snapshot vs. live scope) | `numericBoundaries.test.ts` (C-14.7.W5) |
+| CC-9 (reporter identity never reaches the reported person) | `privacy.test.ts` |
+| CC-10 (exact coordinates never leave the server) | `privacy.test.ts` |
+| CC-11 (money is always integer cents) | `moneyInvariants.test.ts` |
+| CC-12 (time-driven exclusively by `ctx.clock`) | `timeDiscipline.test.ts` (see Findings below) |
+
+The four exhaustively-tabulated state machines (§11.4 interests, §13/§14
+date proposals, §15/§23.20 vouchers, §12.6-7 conversations) are each
+driven through every legal transition their table names and every named
+illegal one, not a sample:
+
+- `interestStateMachine.test.ts`: C-11.4.SM.L1-L4, I1-I7 (13 tests, all
+  seven illegal-transition rows the checklist names, including the
+  double-accept race and the sender/recipient role-swap case).
+- `dateProposalAndVoucherStateMachines.test.ts`: the date-proposal
+  transitions the money-flow-focused C-14.5.* rows don't already cover
+  (decline, pre-acceptance cancel, accept-expiry, the three post-ticketing
+  outcomes redemption/no-scan-confirm/no-show, and five illegal
+  transitions), plus the voucher table in full, C-15.SM.L1-L3 and
+  I1-I4 (20 tests total).
+- `conversationLifecycle.test.ts`: the full §12.6 decay ladder at each
+  named boundary (72h/14d/21d) plus CC-6/C-12.7.* and the C-30.4.1
+  shadowban-preserves-conversations case (7 tests).
+
+The hand-computed numeric tables get boundary-pair coverage (one
+assertion just short of the cutoff, one exactly at it), in
+`numericBoundaries.test.ts`: the §6.1 trust bands (C-6.1.2, all 8 worked
+rows), the §18.5 moderation-action thresholds (C-18.5.W1/W2, with the
+implementation's additional 'warning' tier documented and folded into
+the table rather than silently contradicted), the full §14.7
+cancellation/refund worked table (C-14.7.W1-W6, including the OQ-6
+rounding case and the OQ-1/OQ-10 inclusive-cutoff boundary), and the
+age-18 boundary at both the service layer (C-5.1.6) and the DB `CHECK`
+backstop (C-23.3).
+
+`definitionOfDone.test.ts` walks all 20 §34 Definition-of-Done items as
+20 runnable tests (17 `test()` calls, three of which each cover more than
+one adjacent DoD item since the checklist's own coverage-map groups
+them), each traceable back to this document's own DoD table above.
+
+`staticProse.test.ts` covers C-1.9/C-1.10/C-12.4.1/C-12.4.2/C-20.0.1: the
+notification-template registry is a fixed, finite, static-string map (no
+event may render free text), `notify()` structurally rejects both an
+unrecognized template key and a payload smuggling prose under any of the
+six forbidden keys, and `scanText` is proven synchronous (not a
+`Promise`, the strongest available proof no network/model call happens
+inside it) and deterministic, plus a full C-19.3.1 table-driven pass over
+all eight named scam/off-platform pattern categories.
+
+Every test above is named with its obligation ID(s) as a prefix, per
+`docs/test-strategy.md`'s convention, so `grep -r "C-14.5.3" tests/` finds
+the implementation directly.
+
+## Findings from building this suite
+
+**RESOLVED DURING THIS SESSION.** `moderation.service.ts#applyThresholds`'s
+`INSERT INTO moderation_actions` and `appeal.service.ts#submitAppeal`'s
+`INSERT INTO appeals` were found, while writing `privacy.test.ts`'s CC-9
+test, to be omitting `created_at`/`submitted_at` from their column lists
+and falling back to the schema's `DEFAULT now()` (the database's real
+wall clock), a CC-12 violation of the same kind `docs/test-audit.md`
+already flagged for `report.service.ts`. This broke
+`appeal.service#checkCooldownElapsed` under any fixed-epoch `ManualClock`.
+A concurrently-running agent fixed both call sites while this suite was
+being built (both now pass `ctx.clock.now()` explicitly, confirmed by
+reading the current file content and by `timeDiscipline.test.ts` passing
+against it). `timeDiscipline.test.ts` is kept in the suite as permanent
+regression coverage rather than deleted now that it passes; see that
+file's header for the full account.
+
+No other conformance test written for this suite is currently failing
+against a genuine product defect; every test in `tests/conformance/`
+passes as of this suite's own final run (see the task's final report for
+the exact count and timestamp).
+
+## What remains manual (cannot be exercised by an automated test here)
+
+These carry the same status `docs/test-strategy.md`'s "not automatically
+testable" table already gives them; restated here because this task asks
+for one explicit list:
+
+- **C-28.3.1 / C-28.3.2 (encryption at rest, TLS in transit).**
+  Infrastructure/deployment-configuration concerns, not application
+  behavior; no `node:test` in this repository can observe disk encryption
+  or a TLS handshake. Verify by configuration review of the deployment
+  target instead.
+- **C-19.1.1 (escrow as an economic deterrent).** A design rationale, not
+  an independently observable behavior; subsumed by §14's escrow-flow
+  tests actually moving money as specified.
+- **C-29.5 (cookie/tracking disclosure).** A client/legal-copy concern;
+  this backend has no cookie-banner surface to assert against.
+- **Real Stripe authorization/capture/webhooks (behind C-14.0.1,
+  C-24.5).** Only the port-contract shape (`stripe.processor.ts`
+  implementing the same `PaymentProcessor` interface as `FakeProcessor`)
+  is checked, at compile time by `tsc`, not by a test in this directory.
+  A real Stripe integration is a manual/staging verification step.
+- **Real CV nudity/weapon/illegal-content/face detection (behind
+  C-7.2.2, C-7.2.3).** Only `StubMediaModerationAdapter`'s documented
+  deterministic trigger-substring behavior is exercised; real-world
+  detection accuracy is a vendor/model concern outside this codebase.
+- **Real device fingerprinting / IP reputation accuracy (behind
+  C-19.2.1, C-5.4.3).** Treated as an opaque input signal; the pipeline's
+  reaction to a given signal value is tested, the signal's real-world
+  accuracy is not.
+- **Real push/email delivery (behind §20.2).** Only that a `Notification`
+  row is queued with the right template key/payload/channel is asserted;
+  actual delivery is a separate infra concern with its own vendor
+  integration tests, not exercised here.
+- **C-21.2.4 (config environment scope).** Structurally satisfied by
+  deployment topology (one database per environment, which this very
+  suite's own per-file-database convention demonstrates is how the
+  project already achieves this) rather than an in-schema `environment`
+  column; see OQ-12. Nothing to assert beyond what C-21.2.1-3 already
+  cover.
+- **Every §33 "Major Product Decisions" and §32 "Recommended Stack" row.**
+  Traceability/rationale sections the document itself says need no
+  independent test beyond the mechanism-specific rows they justify.
