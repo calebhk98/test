@@ -48,16 +48,20 @@ test('C-12.6.2: 14 days with no date proposal -> conversation moves to cooling',
   const conversationId = await createConversation(db, a, b, 'active');
   await firstMessageAt(conversationId, a, db.clock.now());
 
+  // NOTE: `runChatDecayJob`'s returned counts are aggregated across every
+  // active/cooling conversation in this suite's shared per-file database,
+  // not scoped to this test's own row (other tests in this file leave
+  // their own long-lived 'active' conversations behind), so every
+  // assertion below reads THIS test's specific conversation row directly
+  // rather than trusting the job's aggregate `cooled`/`archived` counts.
   db.clock.advanceDays(13);
   const systemCtx = makeCtx(db, systemActor('chat_decay'));
-  let result = await conversationService.runChatDecayJob(systemCtx);
-  assert.equal(result.cooled, 0, 'must not cool a day early');
+  await conversationService.runChatDecayJob(systemCtx);
   let row = await rawRow<{ status: string }>(db, `SELECT status FROM conversations WHERE id = $1`, [conversationId]);
-  assert.equal(row?.status, 'active');
+  assert.equal(row?.status, 'active', 'must not cool a day early');
 
   db.clock.advanceDays(1); // exactly 14 days
-  result = await conversationService.runChatDecayJob(systemCtx);
-  assert.equal(result.cooled, 1);
+  await conversationService.runChatDecayJob(systemCtx);
   row = await rawRow<{ status: string }>(db, `SELECT status FROM conversations WHERE id = $1`, [conversationId]);
   assert.equal(row?.status, 'cooling');
 });
@@ -68,15 +72,17 @@ test('C-12.6.3: 21 days with no date proposal -> conversation is archived', asyn
   const conversationId = await createConversation(db, a, b, 'active');
   await firstMessageAt(conversationId, a, db.clock.now());
 
+  // See the C-12.6.2 test's note: read this row directly rather than the
+  // job's aggregate counts, which include other tests' long-lived rows.
   db.clock.advanceDays(20);
   const systemCtx = makeCtx(db, systemActor('chat_decay'));
-  let result = await conversationService.runChatDecayJob(systemCtx);
-  assert.equal(result.archived, 0, 'must not archive a day early');
+  await conversationService.runChatDecayJob(systemCtx);
+  let row = await rawRow<{ status: string }>(db, `SELECT status FROM conversations WHERE id = $1`, [conversationId]);
+  assert.equal(row?.status, 'cooling', 'must not archive a day early (already cooling by day 20, per the 14-day threshold)');
 
   db.clock.advanceDays(1); // exactly 21 days
-  result = await conversationService.runChatDecayJob(systemCtx);
-  assert.equal(result.archived, 1);
-  const row = await rawRow<{ status: string }>(db, `SELECT status FROM conversations WHERE id = $1`, [conversationId]);
+  await conversationService.runChatDecayJob(systemCtx);
+  row = await rawRow<{ status: string }>(db, `SELECT status FROM conversations WHERE id = $1`, [conversationId]);
   assert.equal(row?.status, 'archived');
 });
 

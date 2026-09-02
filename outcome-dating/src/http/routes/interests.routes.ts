@@ -6,6 +6,7 @@ import { serializeInterestListPage } from '../serializers/interests.js';
 import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { paginationQuerySchema, parseOrThrow, requireUuidParam } from '../validation.js';
+import { withIdempotencyKey, idempotencyKeyHeader } from '../middleware/idempotency.js';
 
 // §11.3 "no free text before match", this schema structurally has no
 // message/body field, so a client cannot smuggle one through even by

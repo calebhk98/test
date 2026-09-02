@@ -13,14 +13,7 @@ import { messageForError } from '../../api/errors';
 import { useAuth } from '../../state/AuthContext';
 import { formatDateTime } from '../../units/datetime';
 import { describeDateProposalStatus } from '../../domain/dateProposalCopy';
-import {
-  acceptExpiryDetail,
-  declineOutcomeDetail,
-  holdDetail,
-  holdHeadline,
-  noShowDetail,
-  refundCutoffDetail,
-} from '../../domain/moneyMomentCopy';
+import { MoneySummary } from '../../components/money/MoneySummary';
 import type { MatchesStackParamList } from '../../navigation/types';
 
 type Props = NativeStackScreenProps<MatchesStackParamList, 'DateProposalDetail'>;
@@ -89,18 +82,15 @@ export function DateProposalDetailScreen({ route, navigation }: Props): React.Re
         </View>
       ) : null}
 
-      <View style={styles.moneyBox} accessible accessibilityLabel="About the payment hold on this date">
-        <Body style={styles.moneyTitle}>About the money</Body>
-        <Body style={styles.moneyText}>{holdHeadline(proposal.escrowAmountCents, 'usd', otherPartyLabel)}</Body>
-        <Body style={styles.moneyText}>{holdDetail(proposal.escrowAmountCents, 'usd')}</Body>
-        {proposal.status === 'pending_acceptance' ? (
-          <Body style={styles.moneyText}>{acceptExpiryDetail(proposal.policySnapshot['date.accept_expiry_hours'])}</Body>
-        ) : null}
-        <Body style={styles.moneyText}>{refundCutoffDetail(proposal.policySnapshot)}</Body>
-        <Body style={styles.moneyText}>{noShowDetail(proposal.policySnapshot)}</Body>
-        {viewerIsProposer && proposal.status === 'pending_acceptance' ? (
-          <Body style={styles.moneyText}>{declineOutcomeDetail(otherPartyLabel)}</Body>
-        ) : null}
+      <View style={styles.moneyBox}>
+        <MoneySummary
+          escrowAmountCents={proposal.escrowAmountCents}
+          currency="usd"
+          policySnapshot={proposal.policySnapshot}
+          status={proposal.status}
+          viewerIsProposer={viewerIsProposer}
+          otherPartyLabel={otherPartyLabel}
+        />
       </View>
 
       {actionError ? (
@@ -156,9 +146,7 @@ const styles = StyleSheet.create({
   headerRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: spacing.sm },
   statusDetail: { color: colors.textSecondary, marginTop: spacing.xs, marginBottom: spacing.md },
   noteBox: { backgroundColor: colors.surface, borderRadius: radii.md, padding: spacing.md, marginBottom: spacing.md },
-  moneyBox: { backgroundColor: colors.accentMuted, borderRadius: radii.md, padding: spacing.md, gap: spacing.sm, marginBottom: spacing.lg },
-  moneyTitle: { fontWeight: '700', color: colors.accent },
-  moneyText: { color: colors.textPrimary },
+  moneyBox: { marginBottom: spacing.lg },
   error: { color: colors.critical, fontWeight: '600', marginBottom: spacing.md },
   actions: { gap: spacing.sm },
 });
