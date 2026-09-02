@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
-import { ValidationError } from '../lib/errors.js';
 import type { DateProposalStatus, Page } from '../domain/types.js';
+import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.js';
 import * as conversationService from './conversation.service.js';
 
 /**
@@ -217,22 +217,14 @@ interface MessageHydrationRow {
 }
 
 // =====================================================================
-// Cursor pagination (private to this module, same pattern as every
-// other cursor in this codebase; see module doc "WHY ONE SQL QUERY").
+// Cursor pagination: the shared `(timestamp, id)` codec (src/lib/cursor.ts).
+// This module's second field is an EVENT KEY (`kind:id`), not a bare row
+// id, the shared helper's decoder finds only the FIRST `|` separator and
+// takes everything after it as the id half verbatim, so an event key
+// (which never itself contains a `|`) round-trips through it exactly the
+// same way a plain id does, renamed at the call site below rather than
+// forking the helper (see docs/duplication.md finding 3).
 // =====================================================================
-
-function encodeCursor(occurredAt: Date, eventKey: string): string {
-  return Buffer.from(`${occurredAt.toISOString()}|${eventKey}`, 'utf8').toString('base64url');
-}
-
-function decodeCursor(cursor: string): { occurredAt: Date; eventKey: string } {
-  const [iso, ...rest] = Buffer.from(cursor, 'base64url').toString('utf8').split('|');
-  const eventKey = rest.join('|');
-  if (!iso || !eventKey) throw new ValidationError('Invalid pagination cursor.');
-  const occurredAt = new Date(iso);
-  if (Number.isNaN(occurredAt.getTime())) throw new ValidationError('Invalid pagination cursor.');
-  return { occurredAt, eventKey };
-}
 
 function eventKeyFor(row: MergedEventRow): string {
   return `${row.kind}:${row.proposal_id ?? row.message_id}`;
@@ -327,8 +319,10 @@ export async function getConversationTimeline(ctx: Ctx, conversationId: string, 
   const values: unknown[] = [conversationId];
   let cursorClause = '';
   if (parsed.cursor) {
-    const c = decodeCursor(parsed.cursor);
-    values.push(c.occurredAt, c.eventKey);
+    // See this file's cursor-pagination note above: `id` here is the
+    // event key (`kind:id`), not a bare row id.
+    const { ts: occurredAt, id: eventKey } = decodeTimestampIdCursor(parsed.cursor);
+    values.push(occurredAt, eventKey);
     cursorClause = `AND (occurred_at, event_key) < ($2, $3)`;
   }
   values.push(limit + 1);
@@ -346,7 +340,7 @@ export async function getConversationTimeline(ctx: Ctx, conversationId: string, 
   const hasMore = rows.length > limit;
   const pageRows = hasMore ? rows.slice(0, limit) : rows;
   const last = pageRows[pageRows.length - 1];
-  const nextCursor = hasMore && last ? encodeCursor(last.occurred_at, eventKeyFor(last)) : null;
+  const nextCursor = hasMore && last ? encodeTimestampIdCursor(last.occurred_at, eventKeyFor(last)) : null;
 
   const proposalIds = [...new Set(pageRows.map((r) => r.proposal_id).filter((id): id is string => id != null))];
   const messageIds = [...new Set(pageRows.map((r) => r.message_id).filter((id): id is string => id != null))];

@@ -1077,6 +1077,22 @@ test('getMyComparisons: without a location on file, every regional comparison is
   assert.equal(comparisons.questionsAnswered.regionTypical, null);
   assert.equal(comparisons.filterStrictness.position, 'insufficient_data');
   assert.deepEqual(comparisons.tagPrevalence, []);
+
+  // The peer-response metrics (previously withheld entirely) degrade the
+  // same honest way as every other comparison here: no region to compare
+  // against, so insufficient_data, never a misleading global fallback.
+  // `mine` is still reported (this user has sent/received nothing, so a
+  // rate is null -- no denominator yet -- and the two counts are 0).
+  assert.equal(comparisons.sentInterestAcceptance.mine, null);
+  assert.equal(comparisons.sentInterestAcceptance.position, 'insufficient_data');
+  assert.equal(comparisons.receivedInterestConversion.mine, null);
+  assert.equal(comparisons.receivedInterestConversion.position, 'insufficient_data');
+  assert.equal(comparisons.receivedInterestVolume.mine, 0);
+  assert.equal(comparisons.receivedInterestVolume.position, 'insufficient_data');
+  assert.equal(comparisons.profileViews.mine, 0);
+  assert.equal(comparisons.profileViews.position, 'insufficient_data');
+  assert.equal(comparisons.photoPerformance.mine, null);
+  assert.equal(comparisons.photoPerformance.position, 'insufficient_data');
 });
 
 test('getMyComparisons: positions the caller against the regional typical band, and reports tag prevalence excluding the caller\'s own row', async () => {
@@ -1177,6 +1193,163 @@ test('getMyComparisons: a tag held by too few nearby people is suppressed like a
   // MIN_SUPPRESSIBLE_COHORT.
   assert.equal(rare!.nearbyHolders.suppressed, true);
   assert.equal(rare!.nearbyHolders.value, null);
+});
+
+// =====================================================================
+// Peer comparisons: "how others respond to you" (previously withheld
+// entirely, unlocked because a comparison visible only to the viewer
+// carries none of the status-signal risk a public/ranked one would, see
+// stats.service.ts's module doc).
+// =====================================================================
+
+async function insertPhotoExperiment(userId: string, impressions: number, interestsAccepted: number): Promise<void> {
+  const { rows } = await pool.query<{ id: string }>(
+    `INSERT INTO user_photos (user_id, image_url, position, is_primary, moderation_status)
+     VALUES ($1, 'p.jpg', 0, true, 'approved') RETURNING id`,
+    [userId],
+  );
+  await pool.query(
+    `INSERT INTO photo_experiments (user_id, photo_id, impressions, interests_sent, interests_accepted) VALUES ($1, $2, $3, $3, $4)`,
+    [userId, rows[0]!.id, impressions, interestsAccepted],
+  );
+}
+
+test('getMyComparisons: sent/received interest, profile views, and photo performance are positioned against the regional band', async () => {
+  const now = new Date('2026-04-08T00:00:00.000Z');
+
+  // Six other people in the region, each a uniform "typical": sends 4
+  // resolved interests (2 accepted, 2 declined -> 0.5 acceptance),
+  // receives 4 resolved interests the same way (0.5 conversion, volume 4),
+  // 4 recorded profile views, and a photo at a 0.2 accepted-interest rate.
+  // Six clears MIN_SUPPRESSIBLE_COHORT on both the region population and
+  // every rate metric's own sample size.
+  const others: string[] = [];
+  for (let i = 0; i < 6; i++) {
+    const other = await insertUser({ createdAt: now });
+    await insertProfile(other, { completeness: 100 });
+    await pool.query(`UPDATE profiles SET latitude = 50, longitude = 50 WHERE user_id = $1`, [other]);
+    others.push(other);
+  }
+  const partner = await insertUser({ createdAt: now }); // a stable counterparty for every resolved interest below, non-pending rows may repeat a (sender, recipient) pair
+  const viewer = await insertUser({ createdAt: now });
+  for (const other of others) {
+    await insertInterest({ senderId: other, recipientId: partner, status: 'accepted', acceptedAt: now });
+    await insertInterest({ senderId: other, recipientId: partner, status: 'accepted', acceptedAt: now });
+    await insertInterest({ senderId: other, recipientId: partner, status: 'declined', declinedAt: now });
+    await insertInterest({ senderId: other, recipientId: partner, status: 'declined', declinedAt: now });
+
+    await insertInterest({ senderId: partner, recipientId: other, status: 'accepted', acceptedAt: now });
+    await insertInterest({ senderId: partner, recipientId: other, status: 'accepted', acceptedAt: now });
+    await insertInterest({ senderId: partner, recipientId: other, status: 'declined', declinedAt: now });
+    await insertInterest({ senderId: partner, recipientId: other, status: 'declined', declinedAt: now });
+
+    await insertDiscoveryEvent(viewer, other, now);
+    await insertDiscoveryEvent(viewer, other, now);
+    await insertDiscoveryEvent(viewer, other, now);
+    await insertDiscoveryEvent(viewer, other, now);
+
+    await insertPhotoExperiment(other, 100, 20); // 0.2 accepted-interest rate
+  }
+
+  await runStatsAggregationJob(buildCtx({ type: 'system', job: 'stats_aggregation' }, now));
+
+  // The caller: same region, an extreme value on every metric so the
+  // position assertions below are unambiguous rather than boundary-sensitive.
+  const me = await insertUser({ createdAt: now });
+  await insertProfile(me, { completeness: 100 });
+  await pool.query(`UPDATE profiles SET latitude = 50, longitude = 50 WHERE user_id = $1`, [me]);
+
+  for (let i = 0; i < 4; i++) {
+    await insertInterest({ senderId: me, recipientId: partner, status: 'accepted', acceptedAt: now }); // sent: 4/4 accepted -> 1.0, above the 0.5 typical
+  }
+  for (let i = 0; i < 10; i++) {
+    await insertInterest({ senderId: partner, recipientId: me, status: 'declined', declinedAt: now }); // received: 0/10 accepted -> 0 conversion, below the 0.5 typical; volume 10, above the typical 4
+    await insertDiscoveryEvent(viewer, me, now); // 10 profile views, above the typical 4
+  }
+  await insertPhotoExperiment(me, 100, 80); // 0.8 accepted-interest rate, above the typical 0.2
+
+  const ctx = buildCtx(userActor(me), now);
+  const comparisons = await statsService.getMyComparisons(ctx);
+
+  assert.ok(Math.abs(comparisons.sentInterestAcceptance.mine! - 1) < 1e-9);
+  assert.ok(Math.abs(comparisons.sentInterestAcceptance.regionTypical! - 0.5) < 1e-9);
+  assert.equal(comparisons.sentInterestAcceptance.position, 'above_typical');
+
+  assert.equal(comparisons.receivedInterestConversion.mine, 0);
+  assert.ok(Math.abs(comparisons.receivedInterestConversion.regionTypical! - 0.5) < 1e-9);
+  assert.equal(comparisons.receivedInterestConversion.position, 'below_typical');
+
+  assert.equal(comparisons.receivedInterestVolume.mine, 10);
+  assert.equal(comparisons.receivedInterestVolume.regionTypical, 4);
+  assert.equal(comparisons.receivedInterestVolume.position, 'above_typical');
+
+  assert.equal(comparisons.profileViews.mine, 10);
+  assert.equal(comparisons.profileViews.regionTypical, 4);
+  assert.equal(comparisons.profileViews.position, 'above_typical');
+
+  assert.ok(Math.abs(comparisons.photoPerformance.mine! - 0.8) < 1e-9);
+  assert.ok(Math.abs(comparisons.photoPerformance.regionTypical! - 0.2) < 1e-9);
+  assert.equal(comparisons.photoPerformance.position, 'above_typical');
+
+  // Presented honestly: the exact numbers are visible, not softened into
+  // a vaguer band-only view.
+  assert.equal(typeof comparisons.receivedInterestConversion.mine, 'number');
+
+  // Privacy: still never keyed by another person's id.
+  const json = JSON.stringify(comparisons);
+  for (const other of [...others, partner, viewer]) {
+    assert.ok(!json.includes(other), 'a comparisons payload must never contain another person\'s id');
+  }
+});
+
+test('getMyComparisons: a rate metric with too few contributors is insufficient_data even when the region\'s overall population is not', async () => {
+  const now = new Date('2026-04-09T00:00:00.000Z');
+
+  // Five people clears the region-population threshold, but only ONE of
+  // them has ever sent a resolved interest or had a photo impression, the
+  // rate metrics' own sample-size gate must suppress those two
+  // independently of the population-level gate.
+  const partner = await insertUser({ createdAt: now });
+  const withHistory = await insertUser({ createdAt: now });
+  await insertProfile(withHistory, { completeness: 100 });
+  await pool.query(`UPDATE profiles SET latitude = -30, longitude = -60 WHERE user_id = $1`, [withHistory]);
+  await insertInterest({ senderId: withHistory, recipientId: partner, status: 'accepted', acceptedAt: now });
+  await insertInterest({ senderId: withHistory, recipientId: partner, status: 'declined', declinedAt: now });
+  await insertPhotoExperiment(withHistory, 50, 10);
+
+  for (let i = 0; i < 4; i++) {
+    const other = await insertUser({ createdAt: now });
+    await insertProfile(other, { completeness: 100 });
+    await pool.query(`UPDATE profiles SET latitude = -30, longitude = -60 WHERE user_id = $1`, [other]);
+    // No sent interests, no photos -- these four contribute nothing to
+    // the two rate metrics' sample, only to the region's raw population
+    // count and to the always-defined count metrics.
+  }
+
+  await runStatsAggregationJob(buildCtx({ type: 'system', job: 'stats_aggregation' }, now));
+
+  const me = await insertUser({ createdAt: now });
+  await insertProfile(me, { completeness: 100 });
+  await pool.query(`UPDATE profiles SET latitude = -30, longitude = -60 WHERE user_id = $1`, [me]);
+
+  const ctx = buildCtx(userActor(me), now);
+  const comparisons = await statsService.getMyComparisons(ctx);
+
+  assert.equal(comparisons.regionPopulation.suppressed, false, 'the region as a whole (5 people) clears MIN_SUPPRESSIBLE_COHORT');
+  assert.equal(
+    comparisons.sentInterestAcceptance.position,
+    'insufficient_data',
+    'only 1 contributor to this rate, below MIN_SUPPRESSIBLE_COHORT, even though the region population is not suppressed',
+  );
+  assert.equal(comparisons.sentInterestAcceptance.regionTypical, null);
+  assert.equal(comparisons.photoPerformance.position, 'insufficient_data');
+  assert.equal(comparisons.photoPerformance.regionTypical, null);
+
+  // The always-defined count metrics are NOT gated by that narrower
+  // sample size, they read from the whole (zero-included) population, so
+  // they still resolve now that the region overall has enough people.
+  assert.notEqual(comparisons.receivedInterestVolume.position, 'insufficient_data');
+  assert.notEqual(comparisons.profileViews.position, 'insufficient_data');
 });
 
 // =====================================================================

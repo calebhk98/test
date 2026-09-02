@@ -23,6 +23,7 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
+import { pinTrustLevel } from '../support/trustFixtures.js';
 
 const BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 const DB_PREFIX = 'odate_elig';
@@ -96,6 +97,22 @@ export function userActor(userId: string, trustLevel: TrustLevel = 'standard'): 
   return { type: 'user', userId, trustLevel };
 }
 
+/** Throwaway `Ctx` used only to drive `pinTrustLevel`'s calls into `trust.service.ts` from `makeUser`, which is `pool`-based (predates `Ctx`-based helpers). */
+function pinCtx(pool: pg.Pool): Ctx {
+  const clock = new ManualClock(new Date());
+  const logger = createSilentLogger();
+  return {
+    db: pool,
+    clock,
+    config: new ConfigService(pool, clock, logger),
+    flags: new FlagsService(pool, logger),
+    logger,
+    actor: { type: 'system', job: 'test-fixture' },
+    payments: new FakeProcessor(),
+    media: new StubMediaModerationAdapter(),
+  };
+}
+
 let userSeq = 0;
 
 export interface MakeUserOpts {
@@ -118,12 +135,19 @@ export async function makeUser(pool: pg.Pool, opts: MakeUserOpts = {}): Promise<
   userSeq += 1;
   const email = `elig-user-${userSeq}-${Date.now()}@test.local`;
   const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level)
-     VALUES ($1, 'x', '1995-01-01', 'active', 50, $2)
+    `INSERT INTO users (email, password_hash, birthdate, status)
+     VALUES ($1, 'x', '1995-01-01', 'active')
      RETURNING id`,
-    [email, opts.trustLevel ?? 'standard'],
+    [email],
   );
   const userId = rows[0]!.id;
+  // `trustLevel`, if given, is NOT written to the row directly (see
+  // db/migrations/029_trust_invariant.sql). Reached via
+  // tests/support/trustFixtures.ts#pinTrustLevel instead, the real
+  // trust.service.ts path.
+  if (opts.trustLevel) {
+    await pinTrustLevel(pinCtx(pool), userId, opts.trustLevel);
+  }
   await pool.query(
     `INSERT INTO profiles (user_id, display_name, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness)
      VALUES ($1, $2, 'Testville', $3, $4, true, $5, $6, $7, $8, 90)`,

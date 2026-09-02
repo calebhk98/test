@@ -4,6 +4,7 @@ import { requireUserActor, withDb } from '../lib/ctx.js';
 import { withTransaction } from '../db/tx.js';
 import { newId } from '../lib/ids.js';
 import { addHours } from '../lib/time.js';
+import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.js';
 import { ConflictError, ForbiddenError, NotFoundError, RateLimitError, ValidationError } from '../lib/errors.js';
 import { INTEREST_POLICY_KEYS } from '../config/config.service.js';
 import type { Conversation, Interest, InterestPolicySnapshot, InterestStatus, Page } from '../domain/types.js';
@@ -12,6 +13,7 @@ import * as notificationService from './notification.service.js';
 import { outgoingInterestPendingLimitFor } from './trust.service.js';
 import { evaluateMutualEligibility } from './eligibility.service.js';
 import * as profileService from './profile.service.js';
+import type { ProfilePhotoView } from './profile.service.js';
 
 /**
  * interest.service, match interests.
@@ -280,20 +282,6 @@ async function countInterests(ctx: Ctx, params: CountInterestsParams): Promise<n
 }
 
 // ---------------------------------------------------------------------
-// Cursor pagination (private to this module)
-// ---------------------------------------------------------------------
-
-function encodeCursor(row: { createdAt: Date; id: string }): string {
-  return Buffer.from(`${row.createdAt.toISOString()}|${row.id}`, 'utf8').toString('base64url');
-}
-
-function decodeCursor(cursor: string): { createdAt: Date; id: string } {
-  const [iso, id] = Buffer.from(cursor, 'base64url').toString('utf8').split('|');
-  if (!iso || !id) throw new ValidationError('Invalid pagination cursor.');
-  return { createdAt: new Date(iso), id };
-}
-
-// ---------------------------------------------------------------------
 // sendInterest
 // ---------------------------------------------------------------------
 
@@ -409,8 +397,8 @@ async function listInterests(
   const values: unknown[] = [userId];
   let cursorClause = '';
   if (parsed.cursor) {
-    const c = decodeCursor(parsed.cursor);
-    values.push(c.createdAt, c.id);
+    const c = decodeTimestampIdCursor(parsed.cursor);
+    values.push(c.ts, c.id);
     cursorClause = `AND (created_at, id) < ($2, $3)`;
   }
   values.push(limit + 1);
@@ -423,7 +411,8 @@ async function listInterests(
   const hasMore = rows.length > limit;
   const pageRows = hasMore ? rows.slice(0, limit) : rows;
   const items = pageRows.map(mapRow);
-  const nextCursor = hasMore ? encodeCursor(items[items.length - 1]!) : null;
+  const last = items[items.length - 1];
+  const nextCursor = hasMore && last ? encodeTimestampIdCursor(last.createdAt, last.id) : null;
   return { items, nextCursor };
 }
 
@@ -475,7 +464,8 @@ export interface EnrichedInterestItem {
   counterpartUserId: string;
   status: InterestStatus;
   displayName: string;
-  primaryPhotoUrl: string | null;
+  /** Wiring fix: was `primaryPhotoUrl: string | null`, a bare url discards the photo id a description needs to travel with (see `profile.service.ts#ProfilePhotoView`). `null` when the counterpart has no approved photo. */
+  primaryPhoto: ProfilePhotoView | null;
   age: number;
   approximateDistanceKm: number | null;
   createdAt: Date;
@@ -504,7 +494,7 @@ async function enrichPage(ctx: Ctx, page: Page<Interest>, counterpartOf: (intere
       counterpartUserId,
       status: interest.status,
       displayName: profile.displayName,
-      primaryPhotoUrl: profile.photoUrls[0] ?? null,
+      primaryPhoto: profile.photos[0] ?? null,
       age: profile.age,
       approximateDistanceKm: profile.approximateDistanceKm,
       createdAt: interest.createdAt,

@@ -23,6 +23,7 @@ import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Actor, Ctx } from '../../src/lib/ctx.js';
 import type { TrustLevel } from '../../src/domain/types.js';
+import { pinTrustLevel } from '../support/trustFixtures.js';
 
 const ADMIN_BASE_URL = process.env.DATABASE_URL ?? 'postgres://outcome_dating@127.0.0.1:55433/outcome_dating';
 /** Per-process random suffix (see `tests/unit/testCtx.ts`'s longer note), closes the cross-run database-name-collision race (test-audit.md's database-race item). */
@@ -92,14 +93,24 @@ export function userActor(userId: string, trustLevel: TrustLevel = 'standard'): 
 }
 
 let emailCounter = 0;
+
+/**
+ * `trustLevel`, if given, is NOT written to the row directly (see
+ * db/migrations/029_trust_invariant.sql). Reached via
+ * `tests/support/trustFixtures.ts#pinTrustLevel` instead, the real
+ * trust.service.ts path.
+ */
 export async function createUser(db: TestDb, overrides?: { trustLevel?: TrustLevel; createdAt?: Date }): Promise<string> {
   emailCounter += 1;
   const id = randomUUID();
   await db.pool.query(
-    `INSERT INTO users (id, email, password_hash, birthdate, status, trust_score, trust_level, created_at, last_active_at)
-     VALUES ($1, $2, 'x', '1995-01-01', 'active', 50, $3, $4, $4)`,
-    [id, `jobs-user-${emailCounter}-${Date.now()}@test.local`, overrides?.trustLevel ?? 'standard', overrides?.createdAt ?? new Date()],
+    `INSERT INTO users (id, email, password_hash, birthdate, status, created_at, last_active_at)
+     VALUES ($1, $2, 'x', '1995-01-01', 'active', $3, $3)`,
+    [id, `jobs-user-${emailCounter}-${Date.now()}@test.local`, overrides?.createdAt ?? new Date()],
   );
+  if (overrides?.trustLevel) {
+    await pinTrustLevel(makeCtx(db, { type: 'system', job: 'test-fixture' }), id, overrides.trustLevel);
+  }
   return id;
 }
 

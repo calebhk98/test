@@ -1,10 +1,11 @@
 import { z } from 'zod';
 import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
-import { ValidationError } from '../lib/errors.js';
 import type { ConversationStatus, Page } from '../domain/types.js';
+import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.js';
 import * as conversationService from './conversation.service.js';
 import * as profileService from './profile.service.js';
+import type { ProfilePhotoView } from './profile.service.js';
 
 /**
  * matches.service, "your matches" list (product-owner finding #1: "You
@@ -67,7 +68,8 @@ export interface MatchListItem {
   conversationId: string;
   matchedUserId: string;
   displayName: string;
-  primaryPhotoUrl: string | null;
+  /** Wiring fix: was `primaryPhotoUrl: string | null`, a bare url discards the photo id a description needs to travel with (see `profile.service.ts#ProfilePhotoView`). `null` when the matched user has no approved photo. */
+  primaryPhoto: ProfilePhotoView | null;
   approximateDistanceKm: number | null;
   /** When the mutual match happened, `conversations.created_at` (ISO-8601 UTC). */
   matchedAt: string;
@@ -105,18 +107,6 @@ interface LastMessageRow {
   created_at: Date;
 }
 
-function encodeCursor(activityAt: Date, conversationId: string): string {
-  return Buffer.from(`${activityAt.toISOString()}|${conversationId}`, 'utf8').toString('base64url');
-}
-
-function decodeCursor(cursor: string): { activityAt: Date; conversationId: string } {
-  const [iso, id] = Buffer.from(cursor, 'base64url').toString('utf8').split('|');
-  if (!iso || !id) throw new ValidationError('Invalid pagination cursor.');
-  const activityAt = new Date(iso);
-  if (Number.isNaN(activityAt.getTime())) throw new ValidationError('Invalid pagination cursor.');
-  return { activityAt, conversationId: id };
-}
-
 const ListMyMatchesParamsSchema = z.object({
   cursor: z.string().optional(),
   limit: z.number().int().min(1).max(100).optional(),
@@ -145,8 +135,8 @@ export async function listMyMatches(ctx: Ctx, params?: ListMyMatchesParams): Pro
   const values: unknown[] = [userId];
   let cursorClause = '';
   if (parsed.cursor) {
-    const c = decodeCursor(parsed.cursor);
-    values.push(c.activityAt, c.conversationId);
+    const c = decodeTimestampIdCursor(parsed.cursor);
+    values.push(c.ts, c.id);
     cursorClause = `AND (COALESCE(last_message_at, created_at), id) < ($2, $3)`;
   }
   values.push(limit + 1);
@@ -163,7 +153,7 @@ export async function listMyMatches(ctx: Ctx, params?: ListMyMatchesParams): Pro
 
   const hasMore = rows.length > limit;
   const pageRows = hasMore ? rows.slice(0, limit) : rows;
-  const nextCursor = hasMore ? encodeCursor(pageRows[pageRows.length - 1]!.activity_at, pageRows[pageRows.length - 1]!.id) : null;
+  const nextCursor = hasMore ? encodeTimestampIdCursor(pageRows[pageRows.length - 1]!.activity_at, pageRows[pageRows.length - 1]!.id) : null;
 
   const items: MatchListItem[] = [];
   for (const row of pageRows) {
@@ -194,7 +184,7 @@ export async function listMyMatches(ctx: Ctx, params?: ListMyMatchesParams): Pro
       conversationId: row.id,
       matchedUserId,
       displayName: profile.displayName,
-      primaryPhotoUrl: profile.photoUrls[0] ?? null,
+      primaryPhoto: profile.photos[0] ?? null,
       approximateDistanceKm: profile.approximateDistanceKm,
       matchedAt: row.created_at.toISOString(),
       conversationStatus: row.status,
@@ -241,7 +231,7 @@ export async function getMyMatch(ctx: Ctx, conversationId: string): Promise<Matc
     conversationId: conversation.id,
     matchedUserId,
     displayName: profile.displayName,
-    primaryPhotoUrl: profile.photoUrls[0] ?? null,
+    primaryPhoto: profile.photos[0] ?? null,
     approximateDistanceKm: profile.approximateDistanceKm,
     matchedAt: conversation.createdAt.toISOString(),
     conversationStatus: conversation.status,

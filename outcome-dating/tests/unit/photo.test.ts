@@ -1,6 +1,6 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
-import { setupTestDatabase, teardownTestDatabase, getTestPool, buildCtx, userActor, uniqueEmail } from './testCtx.js';
+import { setupTestDatabase, teardownTestDatabase, buildCtx, userActor, insertUser } from './testCtx.js';
 import * as photo from '../../src/services/photo.service.js';
 import { NotFoundError, ValidationError } from '../../src/lib/errors.js';
 
@@ -15,13 +15,7 @@ after(async () => {
 const NOW = new Date();
 
 async function createUser(): Promise<string> {
-  const pool = getTestPool();
-  const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level)
-     VALUES ($1, 'x', '1990-01-01', 'active', 60, 'standard') RETURNING id`,
-    [uniqueEmail('photouser')],
-  );
-  return rows[0]!.id;
+  return insertUser('photouser');
 }
 
 // `photo.service`'s duplicate/scam detection (§7.2 rule 4) keys off the

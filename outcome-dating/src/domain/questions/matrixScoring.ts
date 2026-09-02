@@ -1,15 +1,26 @@
 /**
- * matrixScoring.ts, an ALTERNATIVE implementation of pairwise compatibility
+ * matrixScoring.ts, a second implementation of pairwise compatibility
  * scoring, built to test one specific idea: can casting per-question
  * satisfaction as a small dense kernel lookup (the "one-hot times a fixed
  * kernel" trick) and batching it over many users at once beat the existing
  * per-pair, per-question scalar path (scoring.ts#aggregateQuestionScores)?
  *
- * This file does not replace anything. It is a second, independently
- * tested code path that MUST produce results identical to
+ * ADOPTED, for the one call shape that actually batches: `compatibility
+ * .service.ts#refreshAllScores` (the nightly bulk materialization) calls
+ * `computeCompatibilityBlock` below, grouping many users' candidate rows
+ * against a shared column set instead of scoring one pair at a time, see
+ * that function's file-level BLOCK REFRESH doc. It is a second,
+ * independently tested code path that MUST produce results identical to
  * scoring.ts#scoreQuestionContribution / aggregateQuestionScores for every
- * input, or it has no value (see tests/unit/matrixScoring.test.ts). See
- * docs/matrix-scoring.md for the measured verdict.
+ * input, or it has no value (see tests/unit/matrixScoring.test.ts), and it
+ * still does not replace `computePairScore` itself: every OTHER caller in
+ * this codebase (`getScore`, `getScoresForCandidates`,
+ * `refreshScoresForUser`, the cold path) keeps scoring one user against a
+ * candidate list, the shape this technique does NOT clearly win at, and
+ * stays on the unchanged scalar path. See docs/matrix-scoring.md for the
+ * measured verdict, both the original one-vs-many measurements that led to
+ * "reject, as originally shaped" and the block-refresh measurements that
+ * led to adopting it for the nightly job specifically.
  *
  * THE IDEA: for a question whose answers live in a small, fixed, ordered
  * domain (scale: 1..5; frequency: an ordered list of anchors), satisfaction

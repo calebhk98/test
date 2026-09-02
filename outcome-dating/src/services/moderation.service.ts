@@ -268,6 +268,13 @@ export async function applyThresholds(ctx: Ctx, userId: string): Promise<Moderat
     minorSuspected,
   };
 
+  // CC-12 fix (tests/conformance/timeDiscipline.test.ts FINDING): pass
+  // ctx.clock.now() explicitly rather than leaving created_at to the
+  // schema's own `DEFAULT now()`, this file's other timestamp writes
+  // already do this, the INSERT below just hadn't. A DB-default real
+  // wall-clock value here made a ManualClock-driven test (this function's
+  // own effect feeds appeal.service#checkCooldownElapsed, which correctly
+  // reads ctx.clock.now()) impossible to reason about deterministically.
   const { rows } = await ctx.db.query<{
     id: string;
     user_id: string;
@@ -277,10 +284,10 @@ export async function applyThresholds(ctx: Ctx, userId: string): Promise<Moderat
     metadata: Record<string, unknown>;
     created_at: Date;
   }>(
-    `INSERT INTO moderation_actions (user_id, action, reason, score, metadata)
-     VALUES ($1, $2, $3, $4, $5::jsonb)
+    `INSERT INTO moderation_actions (user_id, action, reason, score, metadata, created_at)
+     VALUES ($1, $2, $3, $4, $5::jsonb, $6)
      RETURNING id, user_id, action, reason, score, metadata, created_at`,
-    [userId, targetAction, reason, score, JSON.stringify(metadata)],
+    [userId, targetAction, reason, score, JSON.stringify(metadata), ctx.clock.now()],
   );
   const row = rows[0]!;
 

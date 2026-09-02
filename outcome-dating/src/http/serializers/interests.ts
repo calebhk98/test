@@ -15,7 +15,7 @@ export interface InterestListItemView {
   counterpartUserId: string;
   status: EnrichedInterestItem['status'];
   displayName: string;
-  primaryPhotoUrl: string | null;
+  primaryPhoto: EnrichedInterestItem['primaryPhoto'];
   age: number;
   approximateDistanceKm: number | null;
   createdAt: string;
@@ -32,7 +32,7 @@ function serializeItem(item: EnrichedInterestItem): InterestListItemView {
     counterpartUserId: item.counterpartUserId,
     status: item.status,
     displayName: item.displayName,
-    primaryPhotoUrl: item.primaryPhotoUrl,
+    primaryPhoto: item.primaryPhoto,
     age: item.age,
     approximateDistanceKm: item.approximateDistanceKm,
     createdAt: item.createdAt.toISOString(),

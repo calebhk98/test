@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Outcome Dating",
+    "slug": "outcome-dating",
+    "scheme": "outcomedating",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.outcomedating.app"
+    },
+    "android": {
+      "package": "com.outcomedating.app"
+    },
+    "extra": {
+      "apiBaseUrl": "http://localhost:3000"
+    }
+  }
+}

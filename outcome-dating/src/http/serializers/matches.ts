@@ -14,7 +14,7 @@ export interface MatchListItemView {
   conversationId: string;
   matchedUserId: string;
   displayName: string;
-  primaryPhotoUrl: string | null;
+  primaryPhoto: MatchListItem['primaryPhoto'];
   approximateDistanceKm: number | null;
   matchedAt: string;
   conversationStatus: MatchListItem['conversationStatus'];
@@ -29,7 +29,7 @@ export function serializeMatch(m: MatchListItem): MatchListItemView {
     conversationId: m.conversationId,
     matchedUserId: m.matchedUserId,
     displayName: m.displayName,
-    primaryPhotoUrl: m.primaryPhotoUrl,
+    primaryPhoto: m.primaryPhoto,
     approximateDistanceKm: m.approximateDistanceKm,
     matchedAt: m.matchedAt,
     conversationStatus: m.conversationStatus,

@@ -574,6 +574,130 @@ const STRUCTURED_ATTRIBUTE_KEYS: ReadonlySet<string> = new Set([
   'body_type',
 ]);
 
+// =====================================================================
+// DENSITY FIX (docs/capacity.md; see discovery.service.ts#loadCandidatePool's
+// DENSITY FIX doc for the full defect this closes): pushing the viewer's
+// own cheap, INDEXABLE hard filters into the candidate-pool SQL's WHERE
+// clause, so truncation (the pool cap / LIMIT) happens AFTER filtering,
+// never before. Only STRUCTURED_ATTRIBUTE_KEYS minus `distance_km` (a
+// plain scalar `profiles` column, never a `qb:`-prefixed question-bank
+// lookup needing a join) are pushed, exactly the "cheap and indexable"
+// subset: one column comparison, no join, no per-candidate I/O.
+// `distance_km` is excluded here on purpose, it already drives the
+// geographic bounding box (`resolveGeoSearchContext`), pushing it again
+// as a WHERE predicate here would be redundant.
+//
+// SAFETY: this is an OPTIMIZATION, never a replacement for the source of
+// truth. Every predicate built here is an EXACT mirror of
+// `evaluateFilter`'s semantics for that key (so it removes only
+// candidates that would have failed the real check downstream anyway,
+// letting a far larger share of the ACTUALLY-eligible geographic pool
+// survive into the capped set); for the handful of shapes
+// `evaluateFilter` supports that a single SQL comparison can't cheaply
+// mirror (a non-numeric value against a numeric key, `gte`/`lte`/`gt`/
+// `lt` against a text key, a malformed `in` value), this simply SKIPS
+// pushing that one filter row rather than guessing, deferring to the
+// unchanged, exact `passesMutualFiltersForCandidates` batch call that
+// still runs downstream on the resulting pool. A skipped predicate can
+// only make the SQL-selected pool LARGER than optimal, never smaller
+// than correct, same "never too narrow" discipline
+// `boundingBoxForRadius` documents for the geographic box.
+// =====================================================================
+
+/** Structured keys resolved against a TEXT `profiles` column. Everything else in `STRUCTURED_ATTRIBUTE_KEYS` (besides `distance_km`) is numeric. */
+const TEXT_STRUCTURED_KEYS: ReadonlySet<string> = new Set(['gender_preference', 'relationship_intention', 'body_type']);
+
+/** The candidate-row SQL expression (aliased `p`, a `profiles` row) for a pushable structured key, or `undefined` if this key isn't one (either `distance_km`, handled by the geo box instead, or a `qb:`/other key that needs a join this pushdown deliberately does not attempt). */
+function structuredCandidateColumnExpr(filterKey: string): string | undefined {
+  switch (filterKey) {
+    case 'age_min':
+    case 'age_max':
+      return 'p.age';
+    case 'gender_preference':
+      return 'p.gender';
+    case 'relationship_intention':
+      return 'p.relationship_intention';
+    case 'height_cm':
+      return 'p.height_cm';
+    case 'weight_g':
+      // A hidden weight is UNRESOLVED for filtering, see
+      // `resolveAttributeValue`'s `weight_g` case, mirrored here with the
+      // same guard.
+      return '(CASE WHEN p.weight_visible THEN p.weight_g ELSE NULL END)';
+    case 'body_type':
+      return 'p.body_type';
+    default:
+      return undefined;
+  }
+}
+
+export interface OwnerStructuredFilterRow {
+  filterKey: string;
+  operator: FilterOperator;
+  value: unknown;
+  excludeIfUnset: boolean;
+}
+
+/**
+ * Pure (no I/O): builds the SQL fragment + bound params for
+ * `discovery.service.ts#loadCandidatePool` to AND onto its candidate-pool
+ * query, from the viewer's own already-fetched enabled structured
+ * filters (see `resolveGeoSearchContext`'s `structuredFilters`, fetched
+ * once, alongside the geo radius, in the SAME query, so this costs zero
+ * additional round trips). `paramIndexStart` is the next free `$N`
+ * placeholder index in the caller's query. Returns `{ sql: '', params:
+ * [] }` when nothing is pushable (no structured filters enabled, or every
+ * one had to be skipped, see the file-level DENSITY FIX note above).
+ */
+export function buildStructuredFilterPushdownClause(
+  filters: OwnerStructuredFilterRow[],
+  paramIndexStart: number,
+): { sql: string; params: unknown[] } {
+  const params: unknown[] = [];
+  const clauses: string[] = [];
+  let paramIndex = paramIndexStart;
+
+  for (const f of filters) {
+    const colExpr = structuredCandidateColumnExpr(f.filterKey);
+    if (!colExpr) continue;
+    const isText = TEXT_STRUCTURED_KEYS.has(f.filterKey);
+    let opSql: string;
+
+    if (f.operator === 'in') {
+      if (!Array.isArray(f.value)) continue; // matches evaluateFilter's "malformed -> always fails"; leave it to the exact downstream check.
+      if (isText) {
+        opSql = `${colExpr} = ANY($${paramIndex}::text[])`;
+        params.push(f.value.map((v) => String(v)));
+      } else {
+        const nums = f.value.map((v) => toComparableNumber(v));
+        if (nums.some((n) => n === undefined)) continue; // a non-numeric element; leave it to the exact downstream check rather than guess.
+        opSql = `${colExpr} = ANY($${paramIndex}::numeric[])`;
+        params.push(nums);
+      }
+      paramIndex++;
+    } else if (isText) {
+      if (f.operator !== 'eq' && f.operator !== 'neq') continue; // gte/lte/gt/lt against a text key never resolves under evaluateFilter either.
+      opSql = `${colExpr} ${f.operator === 'eq' ? '=' : '<>'} $${paramIndex}::text`;
+      params.push(String(f.value));
+      paramIndex++;
+    } else {
+      const n = toComparableNumber(f.value);
+      if (n === undefined) continue;
+      const sqlOp = { eq: '=', neq: '<>', gte: '>=', lte: '<=', gt: '>', lt: '<' }[f.operator];
+      opSql = `${colExpr} ${sqlOp} $${paramIndex}::numeric`;
+      params.push(n);
+      paramIndex++;
+    }
+
+    // Mirrors evaluateFilter's `candidateValue === undefined -> !excludeIfUnset`.
+    const unresolvedPasses = f.excludeIfUnset ? 'FALSE' : 'TRUE';
+    clauses.push(`((${colExpr} IS NULL AND ${unresolvedPasses}) OR (${colExpr} IS NOT NULL AND ${opSql}))`);
+  }
+
+  if (clauses.length === 0) return { sql: '', params: [] };
+  return { sql: ` AND ${clauses.join(' AND ')}`, params };
+}
+
 interface AttributeMaps {
   profiles: Map<string, ProfileLocationAge>;
   /** userId -> question_bank slug -> self_value (typed per question, a number, string, or string[] depending on question type; may legitimately be `null`). Absent key = unresolved (never answered, or answered but not `status = 'answered'`), exactly like `loadQuestionBankSelfValue`'s `undefined`. Keyed by `qb:`-prefixed filter keys' resolution. */
@@ -880,18 +1004,52 @@ export function boundingBoxForRadius(lat: number, lon: number, radiusKm: number)
  */
 export const DEFAULT_DISCOVERY_RADIUS_KM = 160;
 
-/** The user's own `distance_km` filter value, if enabled and expressed as an upper bound (`lte`/`lt`, the only operators spec §9.2's own examples use for this key and the only ones a "maximum distance" reading makes sense for); `DEFAULT_DISCOVERY_RADIUS_KM` otherwise. Used ONLY to size the bounding box (a performance prefilter), the exact filter (any operator, including an unusual `gte`/`gt`/`eq`/`neq`/`in`) is still enforced exactly, unchanged, by `evaluateFilterPairsBatch`/`passesMutualFilters` downstream regardless of what this resolves to. */
-async function resolveSearchRadiusKm(ctx: Ctx, userId: string): Promise<number> {
-  const { rows } = await ctx.db.query<{ operator: FilterOperator; value: unknown }>(
-    `SELECT operator, value FROM hard_filters WHERE user_id = $1 AND filter_key = 'distance_km' AND enabled = true`,
-    [userId],
+/**
+ * Fetches the viewer's own ENABLED filters for every `STRUCTURED_ATTRIBUTE_KEYS`
+ * key (`distance_km` included) in ONE query, then splits them: `distance_km`
+ * (if expressed as an upper bound, `lte`/`lt`, the only operators spec
+ * §9.2's own examples use for this key and the only ones a "maximum
+ * distance" reading makes sense for) sizes the search radius,
+ * `DEFAULT_DISCOVERY_RADIUS_KM` otherwise; everything else is handed back
+ * verbatim as `structuredFilters` for `buildStructuredFilterPushdownClause`
+ * to turn into a SQL WHERE fragment. DENSITY FIX (docs/capacity.md): this
+ * used to be `resolveSearchRadiusKm`, one query for `distance_km` alone;
+ * widened to cover every structured key so `discovery.service.ts#loadCandidatePool`
+ * gets both the radius AND the pushdown filters from THIS SAME round
+ * trip, zero additional queries. The radius itself is only ever a sizing
+ * input for the bounding-box performance prefilter, the exact filter (any
+ * operator, including an unusual `gte`/`gt`/`eq`/`neq`/`in`) is still
+ * enforced exactly, unchanged, by `evaluateFilterPairsBatch`/
+ * `passesMutualFilters` downstream regardless of what this resolves to.
+ */
+async function resolveRadiusAndStructuredFilters(
+  ctx: Ctx,
+  userId: string,
+): Promise<{ radiusKm: number; structuredFilters: OwnerStructuredFilterRow[] }> {
+  const { rows } = await ctx.db.query<{ filter_key: string; operator: FilterOperator; value: unknown; exclude_if_unset: boolean }>(
+    `SELECT filter_key, operator, value, exclude_if_unset FROM hard_filters
+     WHERE user_id = $1 AND enabled = true AND filter_key = ANY($2::text[])`,
+    [userId, [...STRUCTURED_ATTRIBUTE_KEYS]],
   );
-  const row = rows[0];
-  if (row && (row.operator === 'lte' || row.operator === 'lt')) {
-    const n = toComparableNumber(row.value);
-    if (n !== undefined && n > 0) return n;
+
+  let radiusKm = DEFAULT_DISCOVERY_RADIUS_KM;
+  const structuredFilters: OwnerStructuredFilterRow[] = [];
+  for (const row of rows) {
+    if (row.filter_key === 'distance_km') {
+      if (row.operator === 'lte' || row.operator === 'lt') {
+        const n = toComparableNumber(row.value);
+        if (n !== undefined && n > 0) radiusKm = n;
+      }
+      continue;
+    }
+    structuredFilters.push({
+      filterKey: row.filter_key,
+      operator: row.operator,
+      value: row.value,
+      excludeIfUnset: row.exclude_if_unset,
+    });
   }
-  return DEFAULT_DISCOVERY_RADIUS_KM;
+  return { radiusKm, structuredFilters };
 }
 
 export interface GeoSearchContext {
@@ -900,19 +1058,25 @@ export interface GeoSearchContext {
   radiusKm: number;
   /** `null` when `userId` has no location on file, nothing to bound a box around. Callers fall back to cap-only bounding (still no unbounded scan; see `discovery.service.ts#loadCandidatePool`). */
   box: GeoBox | null;
+  /** DENSITY FIX: the viewer's own enabled structured (indexable, non-`distance_km`) hard filters, ready for `buildStructuredFilterPushdownClause`. Present regardless of whether `box` is (a filterless-of-location viewer's structured filters still apply, they just aren't geographically bounded). */
+  structuredFilters: OwnerStructuredFilterRow[];
 }
 
-/** `discovery.service.ts#loadCandidatePool` and this file's own dashboard-count functions both build their geographic prefilter from this, one place that knows "viewer's location + effective search radius -> box". */
+/** `discovery.service.ts#loadCandidatePool` and this file's own dashboard-count functions both build their geographic prefilter (and, for discovery, their structured-filter pushdown) from this, one place that knows "viewer's location + effective search radius + own structured filters". */
 export async function resolveGeoSearchContext(ctx: Ctx, userId: string): Promise<GeoSearchContext> {
-  const [profile, radiusKm] = await Promise.all([loadProfile(ctx, userId), resolveSearchRadiusKm(ctx, userId)]);
+  const [profile, { radiusKm, structuredFilters }] = await Promise.all([
+    loadProfile(ctx, userId),
+    resolveRadiusAndStructuredFilters(ctx, userId),
+  ]);
   if (!profile || profile.latitude == null || profile.longitude == null) {
-    return { latitude: null, longitude: null, radiusKm, box: null };
+    return { latitude: null, longitude: null, radiusKm, box: null, structuredFilters };
   }
   return {
     latitude: profile.latitude,
     longitude: profile.longitude,
     radiusKm,
     box: boundingBoxForRadius(profile.latitude, profile.longitude, radiusKm),
+    structuredFilters,
   };
 }
 
@@ -968,9 +1132,20 @@ export interface NearbyActiveUsers {
  * Active users near `userId` (status + geography only, no completeness/
  * photo/block gate; matches the ORIGINAL `listOtherActiveUserIds`
  * population for X/Y other than the new geographic bound, which is the
- * fix, not an accidental narrowing, see block comment above), ordered
- * most-recently-active first, capped at `cap`. `truncated` is true only
- * when the true in-box population exceeds `cap`.
+ * fix, not an accidental narrowing, see block comment above), capped at
+ * `cap`. `truncated` is true only when the true in-box population exceeds
+ * `cap`.
+ *
+ * DENSITY FIX (docs/capacity.md): ordered by `profiles.discovery_shuffle_key`
+ * (a static per-row random value, `db/migrations/026_density.sql`), NOT
+ * recency. `summarizeSampledCount`'s scaled estimate is only actually
+ * unbiased if the capped sample it scales up is a representative sample
+ * of the true in-box population, recency ordering would have made the
+ * sample (and therefore the estimate) systematically skewed toward
+ * whatever match rate recently-active users happen to have, same root
+ * cause as `discovery.service.ts#loadCandidatePool`'s defect, see that
+ * function's doc for the full reasoning and why this ordering key (not
+ * `random()`, not a per-viewer hash) is the one that stays index-cheap.
  */
 async function listNearbyActiveUserIds(ctx: Ctx, userId: string, cap: number): Promise<NearbyActiveUsers> {
   const geo = await resolveGeoSearchContext(ctx, userId);
@@ -997,7 +1172,7 @@ async function listNearbyActiveUserIds(ctx: Ctx, userId: string, cap: number): P
     `SELECT u.id
      FROM users u JOIN profiles p ON p.user_id = u.id
      WHERE u.status = 'active' AND u.id <> $1${geoClause}
-     ORDER BY u.last_active_at DESC, u.id ASC
+     ORDER BY p.discovery_shuffle_key, u.id ASC
      LIMIT $${limitParamIndex}`,
     [...params, cap + 1],
   );

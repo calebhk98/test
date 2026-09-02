@@ -11,7 +11,7 @@
  * doc comment), this serializer is an explicit allowlist on top of that
  * structural guarantee, not a substitute for it (spec §7.1/§28.5, C-28.5.1).
  */
-import type { PublicProfileView, ProfileWithAttributes } from '../../services/profile.service.js';
+import type { PublicProfileView, ProfileWithAttributes, ProfilePhotoView } from '../../services/profile.service.js';
 import type { BodyType } from '../../domain/units/bodyType.js';
 import type { UnitPreference } from '../../domain/units/preference.js';
 
@@ -83,7 +83,8 @@ export interface PublicProfileResponse {
   age: number;
   approximateDistanceKm: number | null;
   bio: string;
-  photoUrls: string[];
+  /** Breaking shape change (deliberate, nothing has shipped): was `photoUrls: string[]`. Every photo now carries `{id, imageUrl, altText}` so a screen reader description travels with it, see `profile.service.ts#ProfilePhotoView`. */
+  photos: ProfilePhotoView[];
   trustLevel: PublicProfileView['trustLevel'];
   visibleInterestTagNames: string[];
 }
@@ -96,7 +97,7 @@ export function serializePublicProfile(view: PublicProfileView): PublicProfileRe
     age: view.age,
     approximateDistanceKm: view.approximateDistanceKm,
     bio: view.bio,
-    photoUrls: view.photoUrls,
+    photos: view.photos,
     trustLevel: view.trustLevel,
     visibleInterestTagNames: view.visibleInterestTagNames,
   };

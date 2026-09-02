@@ -52,9 +52,26 @@ interface PhotoRow {
   group_photo_detected: boolean | null;
   perceptual_hash: string | null;
   created_at: Date;
+  alt_text: string | null;
 }
 
-function mapPhoto(row: PhotoRow): UserPhoto {
+/**
+ * Wiring fix (accessibility rule 1, "the description must travel with the
+ * photo everywhere it appears", see `photoAltText.service.ts`'s module
+ * doc): a strict superset of `UserPhoto` (`domain/types.ts`, not owned
+ * here), same "extend, never edit in place" discipline
+ * `profile.service.ts#ProfileWithAttributes` already uses for this exact
+ * reason, every existing caller typed against the bare `UserPhoto` keeps
+ * compiling. `altText` is read straight off `user_photos.alt_text`
+ * (db/migrations/021_retention_i18n.sql), the same table/row this
+ * function already selects from, so a photo can never be fetched without
+ * its description sitting right next to it.
+ */
+export interface UserPhotoWithAltText extends UserPhoto {
+  altText: string | null;
+}
+
+function mapPhoto(row: PhotoRow): UserPhotoWithAltText {
   return {
     id: row.id,
     userId: row.user_id,
@@ -68,11 +85,12 @@ function mapPhoto(row: PhotoRow): UserPhoto {
     groupPhotoDetected: row.group_photo_detected,
     perceptualHash: row.perceptual_hash,
     createdAt: row.created_at,
+    altText: row.alt_text,
   };
 }
 
 const PHOTO_COLUMNS =
-  'id, user_id, image_url, position, is_primary, moderation_status, face_detected, blur_score, brightness_score, group_photo_detected, perceptual_hash, created_at';
+  'id, user_id, image_url, position, is_primary, moderation_status, face_detected, blur_score, brightness_score, group_photo_detected, perceptual_hash, created_at, alt_text';
 
 async function fetchOwnedPhoto(ctx: Ctx, photoId: string, userId: string): Promise<PhotoRow> {
   const { rows } = await ctx.db.query<PhotoRow>(`SELECT ${PHOTO_COLUMNS} FROM user_photos WHERE id = $1`, [photoId]);
@@ -83,7 +101,7 @@ async function fetchOwnedPhoto(ctx: Ctx, photoId: string, userId: string): Promi
   return row;
 }
 
-export async function uploadPhoto(ctx: Ctx, input: UploadPhotoInput): Promise<UserPhoto> {
+export async function uploadPhoto(ctx: Ctx, input: UploadPhotoInput): Promise<UserPhotoWithAltText> {
   const { userId } = requireUserActor(ctx);
   const { imageUrl } = UploadPhotoSchema.parse(input);
 
@@ -158,7 +176,7 @@ export async function deletePhoto(ctx: Ctx, photoId: string): Promise<void> {
   }
 }
 
-export async function listMyPhotos(ctx: Ctx): Promise<UserPhoto[]> {
+export async function listMyPhotos(ctx: Ctx): Promise<UserPhotoWithAltText[]> {
   const { userId } = requireUserActor(ctx);
   const { rows } = await ctx.db.query<PhotoRow>(
     `SELECT ${PHOTO_COLUMNS} FROM user_photos WHERE user_id = $1 ORDER BY position ASC`,
@@ -168,7 +186,7 @@ export async function listMyPhotos(ctx: Ctx): Promise<UserPhoto[]> {
 }
 
 /** Re-runs moderation analysis and promotes `photoId` to primary. Throws ValidationError if the photo isn't 'approved' or lacks a detected face. */
-export async function setPrimaryPhoto(ctx: Ctx, photoId: string): Promise<UserPhoto> {
+export async function setPrimaryPhoto(ctx: Ctx, photoId: string): Promise<UserPhotoWithAltText> {
   const { userId } = requireUserActor(ctx);
   const photo = await fetchOwnedPhoto(ctx, photoId, userId);
 
@@ -211,7 +229,7 @@ export async function setPrimaryPhoto(ctx: Ctx, photoId: string): Promise<UserPh
 }
 
 /** Persist a new photo order (position 0..n-1). Does not change which photo is primary, see `setPrimaryPhoto`. */
-export async function reorderPhotos(ctx: Ctx, orderedPhotoIds: string[]): Promise<UserPhoto[]> {
+export async function reorderPhotos(ctx: Ctx, orderedPhotoIds: string[]): Promise<UserPhotoWithAltText[]> {
   const { userId } = requireUserActor(ctx);
 
   const { rows: existing } = await ctx.db.query<{ id: string }>('SELECT id FROM user_photos WHERE user_id = $1', [

@@ -1,6 +1,6 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
-import { setupTestDatabase, teardownTestDatabase, getTestPool, buildCtx, userActor, uniqueEmail } from './testCtx.js';
+import { setupTestDatabase, teardownTestDatabase, getTestPool, buildCtx, userActor, insertUser } from './testCtx.js';
 import * as profile from '../../src/services/profile.service.js';
 import { ForbiddenError, NotFoundError, ValidationError } from '../../src/lib/errors.js';
 
@@ -15,16 +15,9 @@ after(async () => {
 const NOW = new Date();
 
 async function createUser(
-  overrides: Partial<{ latitude: number; longitude: number; city: string }> = {},
+  _overrides: Partial<{ latitude: number; longitude: number; city: string }> = {},
 ): Promise<string> {
-  const pool = getTestPool();
-  const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level)
-     VALUES ($1, 'x', '1990-01-01', 'active', 60, 'standard') RETURNING id`,
-    [uniqueEmail('profileuser')],
-  );
-  const userId = rows[0]!.id;
-  return userId;
+  return insertUser('profileuser');
 }
 
 test('updateMyProfile: creating a profile requires the core required fields', async () => {
@@ -213,7 +206,10 @@ test('buildPublicProfileView: never exposes latitude/longitude, only a bucketed 
 
   assert.equal(view.userId, targetId);
   assert.equal(view.displayName, 'Target');
-  assert.ok(view.photoUrls.includes('https://example.test/target.jpg'));
+  // Wiring fix (item 3): was `view.photoUrls.includes(...)` (a bare
+  // string array); every photo now carries `{id, imageUrl, altText}` so a
+  // description can travel with it, see `ProfilePhotoView`.
+  assert.ok(view.photos.some((p) => p.imageUrl === 'https://example.test/target.jpg'));
   assert.equal(typeof view.approximateDistanceKm, 'number');
   assert.ok((view.approximateDistanceKm as number) >= 0);
 

@@ -54,7 +54,11 @@ test('a match appears in the list as soon as an interest is accepted', async () 
   assert.equal(item.conversationId, conversationId);
   assert.equal(item.matchedUserId, b);
   assert.equal(item.displayName, 'Bob');
-  assert.equal(item.primaryPhotoUrl, 'https://example.test/bob-primary.jpg');
+  // Wiring fix (item 3): was `item.primaryPhotoUrl` (a bare string);
+  // every photo now carries `{id, imageUrl, altText}` so a description
+  // can travel with it, see `profile.service.ts#ProfilePhotoView`.
+  assert.equal(item.primaryPhoto?.imageUrl, 'https://example.test/bob-primary.jpg');
+  assert.ok(item.primaryPhoto?.id);
   assert.equal(item.conversationStatus, 'active');
   assert.equal(item.lastMessagePreview, null);
   assert.equal(item.lastMessageAt, null);

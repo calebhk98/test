@@ -27,6 +27,7 @@ import type {
   TagIntensity,
 } from '../domain/questions/index.js';
 import { passesAvoidTagFilter } from '../domain/questions/tags.js';
+import { getQuestionTranslations, localizeQuestionDefinition } from '../domain/i18n/questionLocalization.js';
 
 /**
  * question.service, THE compatibility question bank and per-user answers.
@@ -299,9 +300,29 @@ export interface QuestionBankPage {
 const DEFAULT_PAGE_SIZE = 50;
 const MAX_PAGE_SIZE = 200;
 
+/**
+ * Wiring fix (localization): `src/domain/i18n/questionLocalization.ts`
+ * (`getQuestionTranslation(s)`/`localizeQuestionDefinition`) was built and
+ * tested but nothing called it, so a question shipped in English only
+ * regardless of the caller's negotiated locale. This is the ONE place
+ * every client-facing question-listing function below runs a batch of
+ * definitions through it: honours `locale` when given (falls back to
+ * English untouched when omitted, e.g. an internal/admin caller that never
+ * wants localized copy), and degrades cleanly per-question (a question
+ * with no translation row for that locale keeps its original English text,
+ * see `localizeQuestionDefinition`'s own doc for the field-by-field
+ * fallback contract) rather than failing the whole page over one missing
+ * translation.
+ */
+async function localizeDefinitions(ctx: Ctx, definitions: QuestionDefinition[], locale: string | undefined): Promise<QuestionDefinition[]> {
+  if (!locale || definitions.length === 0) return definitions;
+  const translations = await getQuestionTranslations(ctx, definitions.map((d) => d.id), locale);
+  return definitions.map((d) => localizeQuestionDefinition(d, translations.get(d.id) ?? null));
+}
+
 export async function listActiveQuestionBank(
   ctx: Ctx,
-  opts?: { category?: string; cursor?: string | null; limit?: number },
+  opts?: { category?: string; cursor?: string | null; limit?: number; locale?: string },
 ): Promise<QuestionBankPage> {
   const limit = Math.min(Math.max(opts?.limit ?? DEFAULT_PAGE_SIZE, 1), MAX_PAGE_SIZE);
   const conditions = ['is_current = true', 'active = true'];
@@ -323,8 +344,10 @@ export async function listActiveQuestionBank(
   );
 
   const hasMore = rows.length > limit;
-  const items = rows.slice(0, limit).map(questionDefinitionFromRow);
-  return { items, nextCursor: hasMore ? items[items.length - 1]!.id : null };
+  const rawItems = rows.slice(0, limit).map(questionDefinitionFromRow);
+  const nextCursor = hasMore ? rawItems[rawItems.length - 1]!.id : null;
+  const items = await localizeDefinitions(ctx, rawItems, opts?.locale);
+  return { items, nextCursor };
 }
 
 export async function getCurrentQuestionBySlug(ctx: Ctx, slug: string): Promise<QuestionDefinition | null> {
@@ -605,6 +628,7 @@ export async function putMyQuestionAnswer(ctx: Ctx, input: PutQuestionAnswerInpu
 export interface NextQuestionsOptions {
   count?: number;
   skipCooldownDays?: number;
+  locale?: string;
 }
 
 const DEFAULT_NEXT_QUESTIONS_COUNT = 10;
@@ -657,7 +681,8 @@ export async function selectNextQuestionsForMe(ctx: Ctx, opts?: NextQuestionsOpt
   });
 
   const definitions = await loadCurrentQuestionsBySlug(ctx, selected.map((s) => s.question.slug));
-  return selected.map((s) => definitions.get(s.question.slug)).filter((d): d is QuestionDefinition => d !== undefined);
+  const rawItems = selected.map((s) => definitions.get(s.question.slug)).filter((d): d is QuestionDefinition => d !== undefined);
+  return localizeDefinitions(ctx, rawItems, opts?.locale);
 }
 
 // =====================================================================

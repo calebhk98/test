@@ -117,3 +117,22 @@ export function uniqueEmail(prefix = 'test'): string {
   emailCounter += 1;
   return `${prefix}${emailCounter}.${Date.now()}@example.test`;
 }
+
+/**
+ * Inserts a minimal `users` row and returns its id. Consolidates what
+ * used to be three near-identical local copies of this exact function in
+ * tests/unit/photo.test.ts, photoExperiment.test.ts, and profile.test.ts
+ * (this file, testCtx.ts, is the shared harness those three already
+ * import everything else from, they just hadn't put this one here yet).
+ * Always uses the schema's own agreeing default trust pair
+ * (`trust_score = 50`, `trust_level = 'standard'`), none of the three
+ * callers ever needed a different tier.
+ */
+export async function insertUser(prefix = 'user'): Promise<string> {
+  const pool = getTestPool();
+  const { rows } = await pool.query<{ id: string }>(
+    `INSERT INTO users (email, password_hash, birthdate, status) VALUES ($1, 'x', '1990-01-01', 'active') RETURNING id`,
+    [uniqueEmail(prefix)],
+  );
+  return rows[0]!.id;
+}

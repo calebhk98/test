@@ -38,7 +38,7 @@ export function registerDiscoveryRoutes(app: FastifyInstance, deps: AppDeps): vo
   app.get('/discovery', auth, async (req, reply) => {
     const query = parseOrThrow(paginationQuerySchema, req.query);
     const page = await discoveryService.getDiscoveryGrid(req.ctx!, query);
-    const body = serializeDiscoveryPage(page);
+    const body = await serializeDiscoveryPage(req.ctx!, page);
     reply.send(page.items.length === 0 ? { ...body, message: NO_CANDIDATES_MESSAGE } : body);
   });
 

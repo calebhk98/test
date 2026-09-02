@@ -18,6 +18,7 @@ import type { AppDeps } from '../deps.js';
 import { authenticate, requireRole } from '../auth.js';
 import { parseOrThrow, requireUuidParam } from '../validation.js';
 import { serializeMyAnswer, serializeQuestionBankPage, serializeQuestionCard } from '../serializers/questions.js';
+import { resolveRequestLocale } from '../middleware/locale.js';
 
 const ListQuestionsQuerySchema = z.object({
   category: z.string().min(1).max(100).optional(),
@@ -44,14 +45,20 @@ export function registerQuestionsRoutes(app: FastifyInstance, deps: AppDeps): vo
 
   app.get('/questions', auth, async (req, reply) => {
     const query = parseOrThrow(ListQuestionsQuerySchema, req.query);
-    const page = await questionService.listActiveQuestionBank(req.ctx!, query);
+    // Localization wiring: honour the caller's negotiated locale (stored
+    // preference over Accept-Language header, see middleware/locale.ts),
+    // falling back to the question's own English text when no translation
+    // exists (question.service#localizeDefinitions).
+    const locale = await resolveRequestLocale(req.ctx!, req);
+    const page = await questionService.listActiveQuestionBank(req.ctx!, { ...query, locale });
     reply.send(serializeQuestionBankPage(page));
   });
 
   // Addition, "what should we ask this user next" (src/domain/questions/selector.ts).
   app.get('/questions/next', auth, async (req, reply) => {
     const query = parseOrThrow(NextQuestionsQuerySchema, req.query);
-    const questions = await questionService.selectNextQuestionsForMe(req.ctx!, { count: query.count });
+    const locale = await resolveRequestLocale(req.ctx!, req);
+    const questions = await questionService.selectNextQuestionsForMe(req.ctx!, { count: query.count, locale });
     reply.send({ items: questions.map(serializeQuestionCard) });
   });
 

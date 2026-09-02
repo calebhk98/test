@@ -34,6 +34,7 @@ import type { TrustLevel } from '../../src/domain/types.js';
 import * as postDateFeedback from '../../src/services/postDateFeedback.service.js';
 import { TRUST_EVENT_TYPES } from '../../src/services/trust.service.js';
 import { ConflictError, ForbiddenError, NotFoundError } from '../../src/lib/errors.js';
+import { createUserAtTrustLevel } from '../support/trustFixtures.js';
 
 // ---------------------------------------------------------------------
 // Self-contained harness
@@ -96,15 +97,34 @@ function userActor(userId: string, trustLevel: TrustLevel = 'standard'): Actor {
 }
 
 let userCounter = 0;
+/**
+ * `trust_level` is now structurally unable to disagree with `trust_score`
+ * (db/migrations/029_trust_invariant.sql, a trigger a concurrently-worked
+ * migration added on top of this build's own 025_integrity.sql item 3).
+ * A raw `INSERT` naming a `trustLevel` independent of a hardcoded
+ * `trust_score` (this helper's previous shape) violates that trigger for
+ * anything but the schema's own agreeing default. `createUserAtTrustLevel`
+ * (tests/support/trustFixtures.ts, the sanctioned fixture the rest of the
+ * suite already migrated onto, see that migration's own doc) reaches the
+ * requested level the same way production code ever could, recording a
+ * real `trust_events` row through `trust.service.ts` and letting the
+ * database derive the pair, so the row this returns can never be the
+ * disagreeing shape the trigger exists to reject.
+ */
 async function insertUser(trustLevel: TrustLevel = 'standard'): Promise<string> {
   userCounter += 1;
-  const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level, email_verified_at)
-     VALUES ($1, 'x', '1995-01-01', 'active', 60, $2, now())
-     RETURNING id`,
-    [`pdf-user-${userCounter}-${Date.now()}@example.test`, trustLevel],
-  );
-  return rows[0]!.id;
+  // 'standard' (the default every call site but the retaliation-weighting
+  // tests uses) needs no pinning at all: the schema's own default
+  // (trust_score 50 / trust_level 'standard') already agrees, and passing
+  // `level` unconditionally would record an extra `trust_events` "pin"
+  // row that most of this file's `trustEventsFor(...)` assertions (an
+  // unfiltered count) never expected, see `createUserAtTrustLevel`'s own
+  // doc for exactly this distinction.
+  return createUserAtTrustLevel(ctxFor({ type: 'system', job: 'test' }), trustLevel === 'standard' ? undefined : trustLevel, {
+    email: `pdf-user-${userCounter}-${Date.now()}@example.test`,
+    birthdate: '1995-01-01',
+    emailVerified: true,
+  });
 }
 
 /** Find-or-create, some tests insert more than one date proposal for the same pair, and `conversations` has a UNIQUE(user_a_id, user_b_id) constraint. */

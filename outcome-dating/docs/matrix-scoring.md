@@ -1,15 +1,32 @@
 # Matrix scoring: verdict
 
-**Recommendation: reject, for the codebase as it stands today.** Keep
-`compatibility.service.ts` untouched (per the task's own instruction: only
-add the seam if adopting). The idea is sound and the alternative
-implementation is correct and fast in the shape it wants, but every real
-call site in this codebase presents the shape it does *not* want, and in
-that shape the measured win is modest at best and negative at the largest
-bank size tested. See `src/domain/questions/matrixScoring.ts` for the
-implementation, kept as a tested, unused, alternative path in case a future
-restructure changes which shape is real (see "Where it would actually win"
-below).
+**Update (block-refresh adoption): ADOPTED for `refreshAllScores`, the
+nightly bulk materialization job, and ONLY there.** The section "Where it
+would actually win" below, written when this file first rejected the
+technique, predicted exactly this: restructure `refreshAllScores` to batch
+each geographic cluster into one `computeCompatibilityBlock` call instead
+of scoring pairs one at a time, and the all-pairs numbers already measured
+would apply. That restructure has now been done (see
+`compatibility.service.ts`'s BLOCK REFRESH doc for exactly how pairs are
+grouped into blocks, and why grouping cannot drop a candidate at a group
+boundary) and measured directly, see "Block-refresh adoption: measured
+before/after" below for the numbers. Candidate SELECTION (the geo-bounded
+LATERAL query, the activity window, the per-user neighbor cap, the
+no-location fallback) is completely unchanged; only how the already-selected
+pairs get scored changed.
+
+**Original recommendation, still true for every OTHER call shape in this
+codebase: reject.** `getScore`, `getScoresForCandidates`, and
+`refreshScoresForUser` all still score one user against a candidate list,
+never a block, and stay on the unchanged scalar path
+(`computePairScore`/`aggregateQuestionScores`). The idea is sound and the
+alternative implementation is correct and fast in the shape it wants, but
+these call sites present the shape it does *not* want, and in that shape
+the measured win is modest at best and negative at the largest bank size
+tested (see "The numbers" below, unchanged from the original measurement).
+See `src/domain/questions/matrixScoring.ts` for the implementation; it now
+has exactly one production caller (`refreshAllScores`, via
+`computeCompatibilityBlock`), reached only through the batched shape.
 
 ## The numbers
 
@@ -61,16 +78,118 @@ typed-array allocations each for the setup pass outweighs the savings when
 the column side is the only side doing real work. The all-pairs numbers
 show what the same code does when given the shape it's actually built for.
 
-## Where it would actually win
+## Where it would actually win (now done, see below)
 
-`refreshAllScores` computes many pairs, but geo-bounded neighbor-by-neighbor
-per user (per its own file-level SCALE FIX doc), not as a shared block. If
-it were restructured to batch each geographic cluster into one
-`computeCompatibilityBlock` call instead of per-user neighbor queries, the
-all-pairs numbers above say that would be a real, large win. That
-restructure is a separate, larger architectural change (how pairs are
-selected, not just how they're scored) and is out of scope here; it is
-flagged for whoever next touches `refreshAllScores`, not undertaken.
+`refreshAllScores` computes many pairs, but used to do so geo-bounded
+neighbor-by-neighbor per user (per its own file-level SCALE FIX doc), not
+as a shared block. Restructuring it to batch each geographic cluster into
+one `computeCompatibilityBlock` call instead of scoring pairs one at a
+time was flagged here as the change that would make the all-pairs numbers
+above real; that restructure has since been done, see the next section for
+the measured result.
+
+## Block-refresh adoption: the clustering scheme and how it handles edges
+
+**Candidate selection is completely unchanged.** `loadGeoBoundedPairs` (the
+geo-bounded LATERAL query), the platform-wide no-location fallback query,
+the activity window, and the per-user neighbor cap are byte-for-byte the
+same SQL and the same logic as before this adoption. WHICH pairs get
+materialized was already correct and already tested; this build did not
+touch it, and does not re-derive it in JS.
+
+**What changed is purely how the resulting pairs get grouped for scoring.**
+`refreshAllScores` now buckets rows into a plain lat/lon grid (cell size =
+the fixed refresh box's own width/height, `2 * latDeltaDeg` by
+`2 * lonDeltaDeg`, a size already computed for the run, not a new magic
+number) keyed by each row user's OWN coordinates, then scores every row in
+a bucket against the UNION of those rows' own already-selected candidates
+in one `computeCompatibilityBlock` call (row-chunked, bounded by
+`BLOCK_MAX_CELLS`, if a bucket's row-count times its column-count would
+otherwise allocate an unreasonable amount of memory in one call, e.g. one
+very dense metro's entire located population landing in a single bucket).
+Unlocated users need no bucketing at all: they all share the exact same
+fixed fallback candidate list already, so they are naturally one single,
+maximally batchable group.
+
+**Why a bucket boundary cannot drop a candidate.** A bucket is a
+scheduling decision, "which rows to score in the same call," never a
+membership test for candidacy. A row's column set for its block call is
+always built from `directedCandidates.get(rowId)`, i.e. exactly the
+candidates the UNCHANGED SQL already selected for that specific user, not
+from "whoever else happens to land in the same bucket." Concretely: user A
+is bucketed by A's own coordinates into bucket X; A's candidate B (found by
+the SQL, and possibly bucketed into a completely different bucket Y, or
+geographically far enough from A's bucket center to look unrelated in grid
+terms) is still always in A's column list, because that list was built
+directly from A's own directed candidates, never from bucket membership.
+There is therefore no grid edge, anywhere in this code, for a real
+candidate to fall on the wrong side of. Two tests in
+`tests/unit/compatibility.test.ts` exercise this directly:
+- **"a candidate pair whose two users land in different scoring buckets
+  (grid-cell boundary) is still materialized"**: two users placed a few
+  kilometres apart, deliberately straddling a computed grid line (verified
+  by asserting their bucket indices actually differ before the real
+  assertions run), both directions still materialized, score bit-identical
+  to `computePairScore` run directly.
+- **"the materialized geo-bounded pair set matches an independent
+  brute-force reference exactly"**: a larger, multi-cluster fixture
+  (several clusters, a straggler near one cluster's edge, a genuine
+  outlier, unlocated users), compared cell-by-cell against a from-scratch,
+  O(n^2), no-SQL, no-grid brute-force re-implementation of "the `cap`
+  nearest others within the fixed box" using only the pure, exported
+  `boundingBoxForRadius`. Exact set equality, in both directions (nothing
+  missing, nothing extra), for the geo-bounded portion; the unlocated
+  portion is checked for "no omissions" against the real platform-wide
+  fallback query rather than exact equality, since that query legitimately
+  draws from every active user in this file's shared, accumulating test
+  database, not just this one fixture (documented at the test itself).
+
+## Block-refresh adoption: equivalence proof
+
+Materialized rows must still be bit-for-bit identical to
+`scoreQuestionContribution`/`computePairScore` computed directly, for every
+question type, every importance level, and every non-answer state, exactly
+the bar the original (unadopted) matrix path was already held to. Nothing
+about that proof changed: `computeCompatibilityBlock` itself is untouched
+by this adoption (see "Equivalence and floating point" below, still
+"every comparison bit-for-bit identical, max difference exactly zero"), and
+`refreshAllScores`'s own "semantics-preservation" DB test
+(`tests/unit/compatibility.test.ts`) asserts every materialized row for a
+worked, hand-checked fixture matches `computePairScore` invoked directly
+on the same inputs, unchanged in substance by this build (still passing,
+now backed by the block-scoring path instead of a per-pair loop). The two
+new tests described in the clustering section above add the same
+bit-for-bit standard specifically at grid boundaries, where a batching bug
+would most plausibly hide.
+
+## Block-refresh adoption: pair-set comparison (old shape vs new shape)
+
+Compared directly, on the same fixture, in
+`tests/unit/compatibility.test.ts`'s "the materialized geo-bounded pair set
+matches an independent brute-force reference exactly" test: the set of
+pairs the current, block-scoring `refreshAllScores` materializes for a
+multi-cluster fixture, against a from-scratch brute-force computation of
+what the geo-bounded selection SHOULD produce. **Exact set equality, both
+directions asserted separately (nothing the reference expects is missing;
+nothing extra was materialized that the reference does not expect).**
+Separately, `tests/perf/compatRefresh.perf.test.ts`'s before/after test
+(see the next section) asserts the OLD (pre-adoption, scalar, one
+`computePairScore` call per pair) and NEW (block-matrix) shapes, run back
+to back against the identical seeded 20,000-user population with identical
+candidate-selection SQL, produce the exact same row COUNT, both as
+`result.updated` and as the final `compatibility_scores` table size, this
+is the same claim at full production scale rather than a small hand-built
+fixture. No pair was found present in one shape and absent from the other
+in either check; there is no discrepancy to justify.
+
+## Block-refresh adoption: measured before/after
+
+Measured with `tests/perf/compatRefresh.perf.test.ts`, reusing the
+existing `seedDiscoveryPerfData` perf-seed helper (unchanged), the same
+20,000-user, six-city seed `discovery.perf.test.ts` and the original
+bounded-refresh build already used, New York seeded as roughly half the
+population (`pickCity`'s documented weighting) specifically so a genuinely
+dense cluster is exercised, not just six evenly sized cities.
 
 ## Bank coverage
 

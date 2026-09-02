@@ -108,11 +108,18 @@ export async function submitAppeal(ctx: Ctx, input: SubmitAppealInput): Promise<
     throw new RateLimitError('Appeal cooldown has not elapsed yet.');
   }
 
+  // CC-12 fix (tests/conformance/timeDiscipline.test.ts FINDING): pass
+  // ctx.clock.now() explicitly for submitted_at rather than leaving it to
+  // the schema's own `DEFAULT now()`, resolveAppeal's resolved_at (below)
+  // already does this, the INSERT below just hadn't. A DB-default real
+  // wall-clock value here made checkCooldownElapsed (which correctly
+  // compares against ctx.clock.now()) impossible to test deterministically
+  // with a ManualClock pinned away from real wall-clock time.
   const { rows } = await ctx.db.query<AppealRow>(
-    `INSERT INTO appeals (user_id, moderation_action_id, method, status, metadata)
-     VALUES ($1, $2, $3, 'pending', $4::jsonb)
+    `INSERT INTO appeals (user_id, moderation_action_id, method, status, metadata, submitted_at)
+     VALUES ($1, $2, $3, 'pending', $4::jsonb, $5)
      RETURNING id, user_id, moderation_action_id, method, status, submitted_at, resolved_at, metadata`,
-    [actor.userId, moderationActionId, parsed.method, JSON.stringify(parsed.evidence ?? {})],
+    [actor.userId, moderationActionId, parsed.method, JSON.stringify(parsed.evidence ?? {}), ctx.clock.now()],
   );
   const appeal = rows[0]!;
 

@@ -204,6 +204,15 @@ test('GET /me/stats/comparisons: 200, insufficient_data without a location, posi
   assert.equal(before.hasLocation, false);
   assert.equal(before.questionsAnswered.position, 'insufficient_data');
   assert.deepEqual(before.tagPrevalence, []);
+  // The peer-response comparisons (how others respond to the caller) are
+  // present on this same private, self-only route, degrading the same
+  // honest way as every other comparison when there is no region to
+  // compare against yet.
+  for (const key of ['sentInterestAcceptance', 'receivedInterestConversion', 'receivedInterestVolume', 'profileViews', 'photoPerformance']) {
+    assert.ok(key in before, `expected a "${key}" field in the comparisons response`);
+    assert.equal(before[key].position, 'insufficient_data');
+    assert.ok('mine' in before[key] && 'regionTypical' in before[key]);
+  }
 
   const profileRes = await t.app.inject({
     method: 'PATCH',

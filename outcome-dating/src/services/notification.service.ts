@@ -3,6 +3,7 @@ import type { Ctx } from '../lib/ctx.js';
 import { requireUserActor } from '../lib/ctx.js';
 import { ForbiddenError, NotFoundError, ValidationError } from '../lib/errors.js';
 import { newId } from '../lib/ids.js';
+import { decodeTimestampIdCursor, encodeTimestampIdCursor } from '../lib/cursor.js';
 import type { Notification, NotificationChannel, NotificationEventType, NotificationStatus, Page } from '../domain/types.js';
 
 /**
@@ -115,16 +116,6 @@ function mapRow(row: NotificationRow): Notification {
   };
 }
 
-function encodeCursor(row: { createdAt: Date; id: string }): string {
-  return Buffer.from(`${row.createdAt.toISOString()}|${row.id}`, 'utf8').toString('base64url');
-}
-
-function decodeCursor(cursor: string): { createdAt: Date; id: string } {
-  const [iso, id] = Buffer.from(cursor, 'base64url').toString('utf8').split('|');
-  if (!iso || !id) throw new ValidationError('Invalid pagination cursor.');
-  return { createdAt: new Date(iso), id };
-}
-
 /** Creates and enqueues one notification. §20.2 "Do not use SMS by default", `channel` is restricted to push/email/in_app at the type level, so SMS isn't representable here. */
 export async function notify(ctx: Ctx, input: NotifyInput): Promise<Notification> {
   const parsed = NotifyInputSchema.parse(input);
@@ -175,8 +166,8 @@ export async function listMyNotifications(
   let clause = '';
   if (parsed.unreadOnly) clause += ' AND read_at IS NULL';
   if (parsed.cursor) {
-    const c = decodeCursor(parsed.cursor);
-    values.push(c.createdAt, c.id);
+    const c = decodeTimestampIdCursor(parsed.cursor);
+    values.push(c.ts, c.id);
     clause += ` AND (created_at, id) < ($${values.length - 1}, $${values.length})`;
   }
   values.push(limit + 1);
@@ -189,7 +180,8 @@ export async function listMyNotifications(
   const hasMore = rows.length > limit;
   const pageRows = hasMore ? rows.slice(0, limit) : rows;
   const items = pageRows.map(mapRow);
-  const nextCursor = hasMore ? encodeCursor(items[items.length - 1]!) : null;
+  const last = items[items.length - 1];
+  const nextCursor = hasMore && last ? encodeTimestampIdCursor(last.createdAt, last.id) : null;
   return { items, nextCursor };
 }
 

@@ -48,6 +48,8 @@ export const ROUTE_TABLE: RouteTableEntry[] = [
   { method: 'DELETE', path: '/me/photos/:photoId', spec: '§24.2, §7.2', role: 'user' },
   { method: 'POST', path: '/me/photos/:photoId/primary', spec: '§7.2 (addition)', role: 'user', addition: true },
   { method: 'POST', path: '/me/photos/reorder', spec: '§7.2 (addition)', role: 'user', addition: true },
+  { method: 'PUT', path: '/me/photos/:photoId/alt-text', spec: 'accessibility addition, photoAltText.service#setPhotoAltText was built but unrouted, see src/services/photoAltText.service.ts', role: 'user', addition: true },
+  { method: 'DELETE', path: '/me/photos/:photoId/alt-text', spec: 'accessibility addition, photoAltText.service#clearPhotoAltText was built but unrouted', role: 'user', addition: true },
   { method: 'GET', path: '/me/photo-test-results', spec: '§24.2, §7.3' , role: 'user' },
   { method: 'POST', path: '/me/photo-test-results/:photoId/approve', spec: '§7.3 (addition)', role: 'user', addition: true },
   { method: 'POST', path: '/me/photo-test-results/:photoId/reject', spec: '§7.3 (addition)', role: 'user', addition: true },

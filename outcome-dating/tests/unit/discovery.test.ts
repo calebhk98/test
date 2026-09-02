@@ -50,6 +50,7 @@ import {
 } from '../../src/services/discovery.service.js';
 import { updateMyFilters, DEFAULT_DISCOVERY_RADIUS_KM } from '../../src/services/filter.service.js';
 import { approximateDistanceBetween } from '../../src/domain/units/distance.js';
+import { randomUUID } from 'node:crypto';
 
 // =====================================================================
 // Pure sortDiscoveryCandidates tests
@@ -611,3 +612,87 @@ test('getRealityDashboard: end-to-end, Z (mutualMatchPool) matches the same batc
   assert.ok(dashboard.matchesMyFilters >= 0);
   assert.ok(dashboard.whoseFiltersIMatch >= 0);
 });
+
+// =====================================================================
+// DENSITY FIX regression coverage (docs/capacity.md;
+// discovery.service.ts#loadCandidatePool's DENSITY FIX doc). This is the
+// test that FAILS against the pre-fix behaviour: `loadCandidatePool` used
+// to select its geographic pool `ORDER BY last_active_at DESC LIMIT
+// MAX_CANDIDATE_POOL_SIZE`, truncating BEFORE hard filters were applied.
+// A dense, recently-active, filter-FAILING crowd larger than the cap used
+// to be able to fill the entire pool and squeeze out every filter-PASSING
+// candidate, even when those candidates existed and were geographically
+// nearby, producing an empty grid despite real matches existing. See
+// tests/unit/density.test.ts for the fuller suite (pure pushdown-SQL
+// tests, a compatibility-ranking variant, and a statistical proof that
+// pool selection is no longer recency-biased at all).
+//
+// Bulk (`unnest`) insert, not `makeFullUser` in a loop: this test needs
+// more rows than `MAX_CANDIDATE_POOL_SIZE` to actually exercise
+// truncation, one round trip per row would make this file itself slow.
+// =====================================================================
+
+/** Bulk-inserts `count` otherwise-eligible candidates (approved photo, complete profile) sharing one gender/location/recency, for exercising pool-cap truncation without one round trip per row. */
+async function bulkInsertDensityCandidates(
+  opts: { count: number; gender: string; latitude: number; longitude: number; minutesAgo: number },
+): Promise<string[]> {
+  const ids = Array.from({ length: opts.count }, () => randomUUID());
+  const emails = ids.map((id) => `density-bulk-${id}@test.local`);
+  const minutesAgo = ids.map(() => opts.minutesAgo);
+  await pool.query(
+    `INSERT INTO users (id, email, password_hash, birthdate, status, last_active_at)
+     SELECT u.id, u.email, 'x', '1995-01-01', 'active', now() - (u.minutes_ago || ' minutes')::interval
+     FROM unnest($1::uuid[], $2::text[], $3::int[]) AS u(id, email, minutes_ago)`,
+    [ids, emails, minutesAgo],
+  );
+  const names = ids.map((id) => `Bulk${id.slice(0, 8)}`);
+  await pool.query(
+    `INSERT INTO profiles (user_id, display_name, city, latitude, longitude, location_fuzzed, age, gender, seeking, relationship_intention, profile_completeness)
+     SELECT t.id, t.name, 'Testville', $2::double precision, $3::double precision, true, 30, $4::text, 'any', 'long_term', 80
+     FROM unnest($1::uuid[], $5::text[]) AS t(id, name)`,
+    [ids, opts.latitude, opts.longitude, opts.gender, names],
+  );
+  await pool.query(
+    `INSERT INTO user_photos (user_id, image_url, position, is_primary, moderation_status)
+     SELECT id, 'https://example.test/' || id || '.jpg', 0, true, 'approved' FROM unnest($1::uuid[]) AS t(id)`,
+    [ids],
+  );
+  return ids;
+}
+
+test(
+  'getDiscoveryGrid: a dense, recently-active crowd that fails the viewer\'s filters must not empty the grid, real filter-passing matches must still appear (DENSITY FIX)',
+  { timeout: 60_000 },
+  async () => {
+    const viewer = await makeFullUser({ gender: 'woman', latitude: 10, longitude: 10 });
+    await setHardFilter(viewer, 'gender_preference', 'eq', 'man');
+
+    // More candidates than MAX_CANDIDATE_POOL_SIZE, all recently active,
+    // all failing the viewer's gender_preference filter. Pre-fix, these
+    // alone would fill the entire recency-ordered pool before the filter
+    // ever ran.
+    const crowdSize = MAX_CANDIDATE_POOL_SIZE + 5;
+    await bulkInsertDensityCandidates({ count: crowdSize, gender: 'woman', latitude: 10, longitude: 10, minutesAgo: 1 });
+
+    // A handful of real matches: pass the filter, but are far LESS
+    // recently active than every member of the crowd above.
+    const realMatches = await bulkInsertDensityCandidates({
+      count: 5,
+      gender: 'man',
+      latitude: 10,
+      longitude: 10,
+      minutesAgo: 60 * 24 * 400, // ~400 days ago
+    });
+
+    const grid = await getDiscoveryGrid(actorFor(viewer), { limit: 50 });
+    const shownIds = new Set(grid.items.map((c) => c.userId));
+
+    for (const id of realMatches) {
+      assert.ok(
+        shownIds.has(id),
+        'a filter-passing candidate must appear even though a much larger, more-recently-active, filter-failing crowd exists in the same area',
+      );
+    }
+    assert.ok(grid.items.length > 0, 'the grid must not be empty: real matches exist and must be shown, not silently truncated away by recency');
+  },
+);

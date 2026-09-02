@@ -8,6 +8,7 @@ import {
   countUsersWhoseFiltersIMatch,
   passesMutualFiltersForCandidates,
   resolveGeoSearchContext,
+  buildStructuredFilterPushdownClause,
 } from './filter.service.js';
 import { getScoresForCandidates } from './compatibility.service.js';
 import { isVisibleInDiscovery } from './moderation.service.js';
@@ -126,11 +127,19 @@ const MAX_PAGE_LIMIT = 100;
  * combined with the geographic bound (`filter.service#resolveGeoSearchContext`)
  * this is what makes `computeRankedCandidatePool`'s cost (queries AND
  * in-memory ranking work) bounded per request instead of O(eligible
- * platform population). Ordering ties into the cap: the pool query is
- * `ORDER BY last_active_at DESC, id ASC LIMIT` this many, so when a
- * geographic pool exceeds the cap, the most-recently-active users are the
- * ones considered (a documented, intentional policy choice, not an
- * arbitrary truncation, see this build's report).
+ * platform population).
+ *
+ * DENSITY FIX (docs/capacity.md): what happens when a geographic pool
+ * exceeds this cap changed. It used to be `ORDER BY last_active_at DESC,
+ * id ASC LIMIT` this many, most-recently-active first, applied BEFORE
+ * hard filters. That is a real defect, not a policy choice: in a dense
+ * city, ranking only ever gets to consider the cap-many most-recently-
+ * active people (the product claims the algorithm sorts by compatibility,
+ * not that it hides everyone who isn't recently active), and if those
+ * happen to fail the viewer's own filters, the viewer sees an empty grid
+ * despite thousands of eligible, filter-passing people existing nearby
+ * (filters are supposed to be strictly enforced, not raced against
+ * truncation). See `loadCandidatePool`'s doc for the fix.
  */
 export const MAX_CANDIDATE_POOL_SIZE = 500;
 
@@ -170,8 +179,29 @@ interface CandidatePoolRow {
  * §1.9 fix #3): this used to be "every eligible user on the platform, no
  * `LIMIT`, no geography", the single biggest scalability defect the
  * review found, and the root cause of §1.1.2's per-candidate loop being
- * catastrophic (it had an unbounded pool to loop over). Now:
+ * catastrophic (it had an unbounded pool to loop over).
  *
+ * DENSITY FIX (docs/capacity.md): the geography+cap fix above stopped the
+ * query from being unbounded, but at population density it still had two
+ * real defects, both about WHAT gets cut when a geographic pool exceeds
+ * `MAX_CANDIDATE_POOL_SIZE`, not about the cap existing at all:
+ *   1. The pool was `ORDER BY last_active_at DESC ... LIMIT`, so in a
+ *      dense city, compatibility ranking only ever got to consider the
+ *      most-recently-active cap-many people; a better match who hadn't
+ *      logged in this week was invisible regardless of how compatible
+ *      they were, "sorts, doesn't hide" was false along the recency axis.
+ *   2. Hard filters were applied to the survivors of that truncation, not
+ *      before it. If the most-recently-active cap-many people all failed
+ *      the viewer's filters, the viewer saw an empty grid even though
+ *      thousands of filter-passing people existed in the same box.
+ *
+ * The fix, reasoned through against the alternatives docs/capacity.md
+ * considers (adaptive pool expansion and geographic-cell walking were
+ * both rejected, not because they're wrong ideas, but because either one
+ * makes a single request's query COUNT depend on local density, which is
+ * exactly the "cost grows with population" shape that took the app down
+ * the first time; both fixes below keep the query count for this function
+ * fixed at exactly one, regardless of how dense the area is):
  *   1. GEOGRAPHY FIRST: a lat/long bounding-box prefilter
  *      (`filter.service#resolveGeoSearchContext`/`boundingBoxForRadius`),
  *      sized from the viewer's own `distance_km` filter (or a documented
@@ -186,16 +216,45 @@ interface CandidatePoolRow {
  *      columns, same logic), just evaluated once per row here instead of
  *      once per candidate in a follow-up query loop (§1.1.2's first
  *      per-candidate round trip, now gone).
- *   3. `ORDER BY last_active_at DESC, id ASC LIMIT MAX_CANDIDATE_POOL_SIZE`
- * the query itself, not application code, decides which rows are
- *      even worth fetching once the (already geographically narrow) pool
- *      still exceeds the cap.
+ *   3. FILTER BEFORE TRUNCATE (closes defect #2): the viewer's own cheap,
+ *      indexable hard filters (age/gender/relationship-intention/height/
+ *      weight/body-type, resolved straight off a `profiles` column, never
+ *      a `qb:` question-bank lookup) are folded into this SAME WHERE
+ *      clause too, via `filter.service#buildStructuredFilterPushdownClause`,
+ *      built from `geo.structuredFilters` (fetched by `resolveGeoSearchContext`
+ *      in the SAME query that resolves the search radius, zero extra
+ *      round trips). This is an OPTIMIZATION on top of, never a
+ *      replacement for, the exact `passesMutualFiltersForCandidates` call
+ *      below (unchanged): it only ever removes rows that would have
+ *      failed that exact check anyway, so it cannot narrow who is
+ *      eligible, only which cap-many eligible rows the LIMIT lands on.
+ *      `qb:`-prefixed (question-bank-derived) filters and the REVERSE
+ *      direction (does the viewer pass the CANDIDATE's filters) are
+ *      deliberately NOT pushed down here, see docs/capacity.md for why
+ *      that's a scoped, honest limitation rather than a gap: the reverse
+ *      direction is evaluated on this same (now much better) pool by the
+ *      unchanged batch call below regardless, it was never truncated
+ *      before being checked.
+ *   4. NOT ORDERED BY RECENCY (closes defect #1): `ORDER BY
+ *      p.discovery_shuffle_key, u.id ASC LIMIT MAX_CANDIDATE_POOL_SIZE`,
+ *      a static per-row random value (`db/migrations/026_density.sql`)
+ *      uncorrelated with recency, or with anything else about the
+ *      candidate, so which cap-many rows the LIMIT lands on when a
+ *      filtered pool still exceeds it is not systematically biased
+ *      against anyone for a reason the product doesn't intend. Chosen
+ *      over `ORDER BY random()` specifically because it is a stored,
+ *      indexed column: Postgres can serve it via an index-order scan with
+ *      an early LIMIT stop the same way the old recency index did,
+ *      instead of sorting every WHERE-matched row on every call, see that
+ *      migration's doc for the full reasoning and docs/capacity.md for
+ *      the density numbers this has to stay cheap at.
  *
  * None of this changes WHO is a legitimate candidate, the completeness/
  * photo/block gates are untouched, and the geographic box is provably
  * never narrower than the viewer's own stated distance preference (see
  * `boundingBoxForRadius`'s doc), it only changes how much work one
- * request does to find them.
+ * request does to find them, and which ones survive when there are more
+ * eligible people than the cap.
  */
 async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidatePoolRow[]> {
   const minProfileCompleteness = await ctx.config.get('discovery.min_profile_completeness');
@@ -209,6 +268,8 @@ async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidateP
        AND p.latitude BETWEEN $3 AND $4
        AND (p.longitude BETWEEN $5 AND $6 OR p.longitude BETWEEN $7 AND $8)`;
   }
+  const pushdown = buildStructuredFilterPushdownClause(geo.structuredFilters, params.length + 1);
+  params.push(...pushdown.params);
   const limitParamIndex = params.length + 1;
 
   const { rows } = await ctx.db.query<CandidatePoolRow>(
@@ -238,8 +299,8 @@ async function loadCandidatePool(ctx: Ctx, viewerId: string): Promise<CandidateP
        AND NOT EXISTS (
          SELECT 1 FROM blocks b
          WHERE (b.blocker_id = $1 AND b.blocked_id = u.id) OR (b.blocker_id = u.id AND b.blocked_id = $1)
-       )${geoClause}
-     ORDER BY u.last_active_at DESC, u.id ASC
+       )${geoClause}${pushdown.sql}
+     ORDER BY p.discovery_shuffle_key, u.id ASC
      LIMIT $${limitParamIndex}`,
     [...params, MAX_CANDIDATE_POOL_SIZE],
   );

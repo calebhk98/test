@@ -175,8 +175,7 @@ test('chat.cooling_days: config controls when an aging, date-proposal-free conve
 });
 
 test('interest.outgoing_pending_limit_limited_tier: a Limited-trust sender hits a lower outgoing cap than a Standard-trust sender', async () => {
-  const limitedSenderId = await createUser(db);
-  await db.pool.query(`UPDATE users SET trust_level = 'limited' WHERE id = $1`, [limitedSenderId]);
+  const limitedSenderId = await createUser(db, { trustLevel: 'limited' });
   const standardSenderId = await createUser(db);
 
   const limitedCtx = makeCtx(db, userActor(limitedSenderId, 'limited'));

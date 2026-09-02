@@ -796,10 +796,11 @@ async function upsertScorePairsBatch(ctx: Ctx, pairs: { userId: string; candidat
 // real candidate to fall on the wrong side of; the bucketing below can only
 // ever affect HOW MANY OTHER ROWS get batched alongside A in the same call
 // (a pure performance question), never WHETHER A's candidate B gets scored.
-// `tests/unit/compatibility.test.ts`'s "row bucketed away from its own
-// candidate" test proves this directly, by constructing a pair whose two
-// coordinates land in different scoring buckets and asserting the pair is
-// still materialized, both directions, with the exact score
+// `tests/unit/compatibility.test.ts`'s "a candidate pair whose two users
+// land in different scoring buckets (grid-cell boundary) is still
+// materialized" test proves this directly, by constructing a pair whose
+// two coordinates land in different scoring buckets and asserting the
+// pair is still materialized, both directions, with the exact score
 // `computePairScore` would give it.
 // =====================================================================
 

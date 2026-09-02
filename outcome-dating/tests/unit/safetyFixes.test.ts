@@ -33,6 +33,7 @@ import type { TrustLevel } from '../../src/domain/types.js';
 import * as report from '../../src/services/report.service.js';
 import * as moderation from '../../src/services/moderation.service.js';
 import { ForbiddenError } from '../../src/lib/errors.js';
+import { pinTrustLevel } from '../support/trustFixtures.js';
 
 // ---------------------------------------------------------------------
 // Self-contained DB/ctx setup (see module doc, deliberately NOT shared
@@ -100,16 +101,27 @@ function uniqueEmail(): string {
   return `safety${emailCounter}.${Date.now()}@example.test`;
 }
 
+/**
+ * `trustLevel`, if given, is NOT written to the row directly (see
+ * db/migrations/029_trust_invariant.sql, which rejects a `trust_level`
+ * that disagrees with `trust_level_for_score(trust_score)`). Instead it's
+ * reached via `tests/support/trustFixtures.ts#pinTrustLevel`, recording a
+ * real `trust_events` row and recalculating through `trust.service.ts`'s
+ * own production path.
+ */
 async function insertUser(
   ctx: Ctx,
   opts: { trustLevel?: TrustLevel; createdAt?: Date } = {},
 ): Promise<string> {
   const id = randomUUID();
   await ctx.db.query(
-    `INSERT INTO users (id, email, password_hash, birthdate, status, trust_score, trust_level, created_at, last_active_at)
-     VALUES ($1, $2, 'x', '1990-01-01', 'active', 50, $3, $4, $4)`,
-    [id, uniqueEmail(), opts.trustLevel ?? 'standard', opts.createdAt ?? new Date()],
+    `INSERT INTO users (id, email, password_hash, birthdate, status, created_at, last_active_at)
+     VALUES ($1, $2, 'x', '1990-01-01', 'active', $3, $3)`,
+    [id, uniqueEmail(), opts.createdAt ?? new Date()],
   );
+  if (opts.trustLevel) {
+    await pinTrustLevel(ctx, id, opts.trustLevel);
+  }
   return id;
 }
 

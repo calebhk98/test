@@ -1,0 +1,68 @@
+-- 026_density.sql
+--
+-- Population-density discovery fix (docs/capacity.md; see
+-- src/services/discovery.service.ts#loadCandidatePool's DENSITY FIX doc
+-- for the full defect and fix this migration's schema half supports).
+-- Owned entirely by this build; does not alter or drop anything from any
+-- earlier migration, and no earlier migration is edited.
+--
+-- THE PROBLEM: `loadCandidatePool` selected its geographically-bounded
+-- candidate pool `ORDER BY last_active_at DESC ... LIMIT
+-- MAX_CANDIDATE_POOL_SIZE`, truncating BEFORE hard filters were applied
+-- and BEFORE compatibility ranking ever saw a candidate. In a dense area,
+-- the 500 most-recently-active people are all the ranking algorithm ever
+-- gets to consider (the product claims it sorts, not hides, recency
+-- silently did the opposite); and if those 500 all happen to fail the
+-- viewer's own filters, the viewer sees an empty grid even though
+-- thousands of eligible, filter-passing people exist a few blocks away
+-- (the product claims filters are strictly enforced and the pool is never
+-- censored beyond filters and capacity; truncating first violates that).
+--
+-- THE FIX, application-layer half (`discovery.service.ts`/
+-- `filter.service.ts`, this migration is the schema half it depends on):
+--   1. The viewer's own cheap, indexable hard filters (age/gender/
+--      relationship-intention/height/weight/body-type) are now pushed
+--      into the pool query's WHERE clause, so filtering happens BEFORE
+--      the LIMIT, not after (`filter.service.ts#buildStructuredFilterPushdownClause`).
+--   2. The pool query's ORDER BY no longer uses recency at all, see the
+--      column this migration adds, below.
+--
+-- WHY A NEW COLUMN, NOT JUST A DIFFERENT ORDER BY EXPRESSION: the
+-- replacement ordering key needs to (a) be uncorrelated with any real
+-- trait of the user (recency, activity, anything that could make "sorts,
+-- doesn't hide" false again along some OTHER axis), and (b) still be
+-- servable by a plain btree index the same way `last_active_at DESC` was
+-- (`017_discovery_perf.sql`), so a dense city's candidate-pool query
+-- stays a bounded index-order scan with an early LIMIT stop, not an
+-- unindexed sort over however many hundreds of thousands of rows a
+-- metro-wide bounding box contains (see docs/capacity.md's
+-- 46,000-people-per-km² arithmetic for why that distinction is the whole
+-- ballgame: "keep the cost bounded" is the same requirement that made the
+-- original unbounded query take the application down). `ORDER BY
+-- random()` fails requirement (b): Postgres would have to materialize and
+-- sort the WHOLE WHERE-matched row set every single call, no index can
+-- serve an expression that's different on every invocation. A STATIC,
+-- per-row value, assigned once and indexed, is the only ordering key that
+-- is both fair (uncorrelated with anything about the person) and cheap
+-- (index-scannable) at the same time.
+--
+-- `discovery_shuffle_key`: one `double precision` drawn from `random()`
+-- per profile row, assigned once (at row creation going forward, via the
+-- column default; backfilled once, independently per existing row, by
+-- this migration's `ALTER TABLE`, `random()` is VOLATILE so Postgres
+-- computes a fresh value per row during the rewrite rather than reusing
+-- one value for every row) and never recomputed afterward. Nothing ever
+-- writes to this column again after row creation, there is no "reshuffle"
+-- operation and none is needed: the column's job is only to give every
+-- row a fixed position in an otherwise-meaningless total order, so no
+-- single ORDER BY key correlates with, and therefore systematically
+-- hides, any trait a real product invariant cares about.
+
+ALTER TABLE profiles ADD COLUMN discovery_shuffle_key double precision NOT NULL DEFAULT random();
+
+-- Same role `idx_users_status_last_active` played for the recency
+-- ordering it replaces (`017_discovery_perf.sql`): lets `... ORDER BY
+-- discovery_shuffle_key LIMIT $cap` be served by an index-order scan that
+-- can stop at the cap, instead of a sequential scan of every geo-box-
+-- matched row followed by a full sort.
+CREATE INDEX idx_profiles_discovery_shuffle ON profiles (discovery_shuffle_key);

@@ -96,6 +96,20 @@ export interface UpdateProfileInput {
   confirmCriticalChange?: boolean;
 }
 
+/**
+ * Wiring fix (accessibility rule 1, "the description must travel with the
+ * photo everywhere it appears"): every photo a client receives carries its
+ * url, its id, and its alt text, never a bare url string that discards
+ * even the id the description would need to travel with (see
+ * `photoAltText.service.ts`'s module doc, and `photo.service.ts`'s own
+ * `UserPhotoWithAltText`, the same shape for the owner's own photo grid).
+ */
+export interface ProfilePhotoView {
+  id: string;
+  imageUrl: string;
+  altText: string | null;
+}
+
 /** Richer than a discovery.DiscoveryCandidate card: full bio, prompts, tags, photos, but still location-fuzzed (§7.1). */
 export interface PublicProfileView {
   userId: string;
@@ -103,7 +117,8 @@ export interface PublicProfileView {
   age: number;
   approximateDistanceKm: number | null;
   bio: string;
-  photoUrls: string[];
+  /** Breaking shape change (deliberate, nothing has shipped): was `photoUrls: string[]`, a bare url discards even the photo id, so a description could never travel with it. Every entry now carries `{id, imageUrl, altText}`. */
+  photos: ProfilePhotoView[];
   trustLevel: TrustLevel;
   /** Public + reciprocally-visible tags only (§8.4), never a tag the viewer doesn't share when it's `private_reciprocal`. */
   visibleInterestTagNames: string[];
@@ -434,8 +449,8 @@ export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetU
   }
   const viewerProfile = await fetchProfileRow(ctx, viewerId);
 
-  const { rows: photoRows } = await ctx.db.query<{ image_url: string }>(
-    `SELECT image_url FROM user_photos WHERE user_id = $1 AND moderation_status = 'approved' ORDER BY is_primary DESC, position ASC`,
+  const { rows: photoRows } = await ctx.db.query<{ id: string; image_url: string; alt_text: string | null }>(
+    `SELECT id, image_url, alt_text FROM user_photos WHERE user_id = $1 AND moderation_status = 'approved' ORDER BY is_primary DESC, position ASC`,
     [targetUserId],
   );
 
@@ -468,7 +483,7 @@ export async function buildPublicProfileView(ctx: Ctx, viewerId: string, targetU
     age: targetProfile.age,
     approximateDistanceKm,
     bio: targetProfile.bio,
-    photoUrls: photoRows.map((r) => r.image_url),
+    photos: photoRows.map((r) => ({ id: r.id, imageUrl: r.image_url, altText: r.alt_text })),
     trustLevel: userRow.trust_level,
     visibleInterestTagNames: tagRows.map((r) => r.name),
     heightCm: targetProfile.height_cm,

@@ -40,6 +40,14 @@ test('levelForScore: boundaries follow config, not a hardcoded table', async () 
   await ctx.config.set('trust.level_standard_min', 60, 'test-admin');
   assert.equal(await trust.levelForScore(ctx, 55), 'limited');
   assert.equal(await trust.levelForScore(ctx, 60), 'standard');
+  // Restore the default: this key is 'live'-scoped and this test's DB is
+  // shared across every other test in this file, an un-restored retune
+  // here used to be silently harmless (insertUser wrote trust_level as a
+  // raw literal, never consulting config), but every fixture in this file
+  // now reaches its level through the real trust.service.ts path (see
+  // tests/support/trustFixtures.ts#pinTrustLevel and
+  // db/migrations/029_trust_invariant.sql), which DOES read this key live.
+  await ctx.config.set('trust.level_standard_min', 40, 'test-admin');
 });
 
 // =====================================================================

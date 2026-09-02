@@ -59,7 +59,9 @@ import { createSilentLogger } from '../../src/lib/logger.js';
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Ctx } from '../../src/lib/ctx.js';
+import { addDays } from '../../src/lib/time.js';
 import { computePairScore, refreshAllScores } from '../../src/services/compatibility.service.js';
+import { boundingBoxForRadius, DEFAULT_DISCOVERY_RADIUS_KM } from '../../src/services/filter.service.js';
 import { presentationFor } from '../../src/domain/questions/index.js';
 import type { QuestionAnswerState, QuestionDefinition, QuestionTypeDefinition } from '../../src/domain/questions/index.js';
 import { seedDiscoveryPerfData, CITIES } from './seedDiscoveryPerf.js';
@@ -289,6 +291,197 @@ test(
     // exact constant).
     const pairGrowth = largePairs / smallPairs;
     assert.ok(pairGrowth > 12 && pairGrowth < 20, `pair count should grow ~16x when n grows 4x (quadratic); got ${pairGrowth.toFixed(2)}x`);
+  },
+);
+
+// =====================================================================
+// THIS BUILD's OWN before/after: the bounded refresh as it existed
+// immediately before matrix scoring was adopted (candidate selection via
+// the geo LATERAL query and the platform-wide fallback query, UNCHANGED
+// by this build, see compatibility.service.ts#loadGeoBoundedPairs's own
+// doc; pairs scored one at a time via `computePairScore` in a loop,
+// exactly the shape `git show <the commit before this build>:./src/services/compatibility.service.ts`
+// still has). Reproduced here, test-only, the same way `legacyRefreshAllScores`
+// above reproduces the older, unbounded O(n^2) shape: this file needs an
+// independently-runnable copy of a shape `compatibility.service.ts` no
+// longer contains at all, to measure it directly instead of merely citing
+// it. This is the number this build's report calls "before"; the
+// "NEW bounded refreshAllScores" test below (calling the real, current
+// `refreshAllScores`, block-matrix scoring) is "after". Both run the
+// IDENTICAL candidate-selection SQL, so this isolates exactly the one
+// thing this build changed: how the resulting pairs get scored.
+// =====================================================================
+
+const BOUNDED_REFRESH_ACTIVE_WINDOW_DAYS = 30; // mirrors compatibility.service.ts's REFRESH_ACTIVE_WINDOW_DAYS
+const BOUNDED_REFRESH_RADIUS_KM = DEFAULT_DISCOVERY_RADIUS_KM; // mirrors REFRESH_RADIUS_KM
+const BOUNDED_REFRESH_NEIGHBORS_PER_USER = 50; // mirrors MATERIALIZED_NEIGHBORS_PER_USER
+const BOUNDED_REFRESH_REFERENCE_LAT = 60; // mirrors SAFE_REFERENCE_LATITUDE_FOR_BOX_WIDTH_DEG
+
+function boundedRefreshGeoBoxDegrees(): { latDeltaDeg: number; lonDeltaDeg: number } {
+  const latBox = boundingBoxForRadius(0, 0, BOUNDED_REFRESH_RADIUS_KM);
+  const lonBox = boundingBoxForRadius(BOUNDED_REFRESH_REFERENCE_LAT, 0, BOUNDED_REFRESH_RADIUS_KM);
+  return { latDeltaDeg: (latBox.latMax - latBox.latMin) / 2, lonDeltaDeg: (lonBox.lon1Max - lonBox.lon1Min) / 2 };
+}
+
+async function boundedScalarRefreshAllScores(ctxIn: Ctx): Promise<{ updated: number; ms: number }> {
+  const activeSince = addDays(ctxIn.clock.now(), -BOUNDED_REFRESH_ACTIVE_WINDOW_DAYS);
+
+  const { rows: eligibleRows } = await pool.query<{ id: string }>(`SELECT id FROM users WHERE status = 'active' AND last_active_at >= $1`, [activeSince]);
+  const eligibleIds = eligibleRows.map((r) => r.id);
+  await pool.query(
+    `DELETE FROM compatibility_scores cs
+     WHERE cs.user_id = ANY($1::uuid[]) OR cs.candidate_id = ANY($1::uuid[])
+        OR NOT EXISTS (SELECT 1 FROM users u WHERE u.id = cs.user_id AND u.status = 'active' AND u.last_active_at >= $2)
+        OR NOT EXISTS (SELECT 1 FROM users u WHERE u.id = cs.candidate_id AND u.status = 'active' AND u.last_active_at >= $2)`,
+    [eligibleIds, activeSince],
+  );
+  if (eligibleIds.length < 2) return { updated: 0, ms: 0 };
+
+  const { latDeltaDeg, lonDeltaDeg } = boundedRefreshGeoBoxDegrees();
+  const t0 = Date.now();
+
+  const { rows: geoPairRows } = await pool.query<{ user_id: string; candidate_id: string }>(
+    `SELECT e.id AS user_id, nb.id AS candidate_id
+     FROM (
+       SELECT u.id, p.latitude AS lat, p.longitude AS lon
+       FROM users u JOIN profiles p ON p.user_id = u.id
+       WHERE u.status = 'active' AND u.last_active_at >= $1 AND p.latitude IS NOT NULL AND p.longitude IS NOT NULL
+     ) e
+     CROSS JOIN LATERAL (
+       SELECT u2.id FROM users u2 JOIN profiles p2 ON p2.user_id = u2.id
+       WHERE u2.status = 'active' AND u2.last_active_at >= $1 AND u2.id <> e.id
+         AND p2.latitude BETWEEN e.lat - $2 AND e.lat + $2
+         AND p2.longitude BETWEEN e.lon - $3 AND e.lon + $3
+       ORDER BY (p2.latitude - e.lat) * (p2.latitude - e.lat) + (p2.longitude - e.lon) * (p2.longitude - e.lon)
+       LIMIT $4
+     ) nb(id)`,
+    [activeSince, latDeltaDeg, lonDeltaDeg, BOUNDED_REFRESH_NEIGHBORS_PER_USER],
+  );
+  const { rows: unlocatedRows } = await pool.query<{ id: string }>(
+    `SELECT u.id FROM users u LEFT JOIN profiles p ON p.user_id = u.id
+     WHERE u.status = 'active' AND u.last_active_at >= $1 AND (p.user_id IS NULL OR p.latitude IS NULL OR p.longitude IS NULL)`,
+    [activeSince],
+  );
+  const unlocatedIds = unlocatedRows.map((r) => r.id);
+
+  const rawPairs: [string, string][] = geoPairRows.map((r) => [r.user_id, r.candidate_id]);
+  if (unlocatedIds.length > 0) {
+    const { rows: fallbackRows } = await pool.query<{ id: string }>(
+      `SELECT id FROM users WHERE status = 'active' AND last_active_at >= $1 ORDER BY last_active_at DESC, id ASC LIMIT $2`,
+      [activeSince, BOUNDED_REFRESH_NEIGHBORS_PER_USER],
+    );
+    const fallbackCandidates = fallbackRows.map((r) => r.id);
+    for (const userId of unlocatedIds) {
+      for (const candidateId of fallbackCandidates) {
+        if (candidateId !== userId) rawPairs.push([userId, candidateId]);
+      }
+    }
+  }
+
+  const seen = new Set<string>();
+  const pairs: [string, string][] = [];
+  for (const [x, y] of rawPairs) {
+    if (x === y) continue;
+    const [a, b] = x < y ? [x, y] : [y, x];
+    const key = `${a}:${b}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    pairs.push([a, b]);
+  }
+  if (pairs.length === 0) return { updated: 0, ms: Date.now() - t0 };
+
+  const involvedIds = new Set<string>();
+  for (const [a, b] of pairs) {
+    involvedIds.add(a);
+    involvedIds.add(b);
+  }
+
+  const { rows: qRows } = await pool.query<QuestionBankRow>('SELECT * FROM question_bank WHERE is_current = true AND active = true');
+  const questions: QuestionDefinition[] = qRows.map(questionDefinitionFromRow);
+  const { rows: answerRows } = await pool.query<{
+    user_id: string;
+    question_slug: string;
+    status: 'skipped' | 'prefer_not_to_say' | 'answered';
+    self_value: unknown;
+    preference_value: unknown;
+    importance: QuestionAnswerState['importance'];
+  }>(
+    `SELECT user_id, question_slug, status, self_value, preference_value, importance FROM user_question_answers WHERE user_id = ANY($1::uuid[])`,
+    [[...involvedIds]],
+  );
+  const bySlugByUser = new Map<string, Map<string, QuestionAnswerState>>();
+  for (const row of answerRows) {
+    let m = bySlugByUser.get(row.user_id);
+    if (!m) {
+      m = new Map();
+      bySlugByUser.set(row.user_id, m);
+    }
+    m.set(row.question_slug, { status: row.status, selfValue: row.self_value, preferenceValue: row.preference_value, importance: row.importance });
+  }
+  const answersByIdByUser = new Map<string, Map<string, QuestionAnswerState>>();
+  for (const uid of involvedIds) {
+    const bySlug = bySlugByUser.get(uid);
+    const byId = new Map<string, QuestionAnswerState>();
+    if (bySlug) {
+      for (const q of questions) {
+        const s = bySlug.get(q.slug);
+        if (s) byId.set(q.id, s);
+      }
+    }
+    answersByIdByUser.set(uid, byId);
+  }
+
+  const writes: { userId: string; candidateId: string; score: number }[] = [];
+  for (const [a, b] of pairs) {
+    const { score } = computePairScore(questions, answersByIdByUser.get(a) ?? new Map(), answersByIdByUser.get(b) ?? new Map(), 3, 0);
+    writes.push({ userId: a, candidateId: b, score });
+    writes.push({ userId: b, candidateId: a, score });
+  }
+
+  const CHUNK = 5000;
+  const now = ctxIn.clock.now();
+  for (let i = 0; i < writes.length; i += CHUNK) {
+    const slice = writes.slice(i, i + CHUNK);
+    await pool.query(
+      `INSERT INTO compatibility_scores (user_id, candidate_id, score, computed_at)
+       SELECT c.user_id, c.candidate_id, c.score, $4
+       FROM unnest($1::uuid[], $2::uuid[], $3::double precision[]) AS c(user_id, candidate_id, score)
+       ON CONFLICT (user_id, candidate_id) DO UPDATE SET score = EXCLUDED.score, computed_at = EXCLUDED.computed_at`,
+      [slice.map((p) => p.userId), slice.map((p) => p.candidateId), slice.map((p) => p.score), now],
+    );
+  }
+
+  return { updated: writes.length, ms: Date.now() - t0 };
+}
+
+test(
+  `THIS BUILD's before/after: bounded refresh scored one pair at a time (pre-adoption shape) vs the current block-matrix refreshAllScores, same candidate selection, same full seeded scale (${USER_COUNT} users, includes NYC as the dense cluster, see seedDiscoveryPerf.ts's ~50% weighting)`,
+  { timeout: 600_000 },
+  async () => {
+    await pool.query('DELETE FROM compatibility_scores');
+    const before = await boundedScalarRefreshAllScores(ctx);
+    const beforeRowCount = await compatibilityScoresRowCount();
+
+    await pool.query('DELETE FROM compatibility_scores');
+    const t0 = Date.now();
+    const afterResult = await refreshAllScores(ctx);
+    const afterMs = Date.now() - t0;
+    const afterRowCount = await compatibilityScoresRowCount();
+
+    console.log(
+      `[compatRefresh.perf] THIS BUILD's before/after (identical candidate selection, only the scoring shape differs):\n` +
+        `  BEFORE (scalar, one computePairScore call per pair): ${before.ms}ms, ${before.updated.toLocaleString()} rows written, ${beforeRowCount.toLocaleString()} rows in table\n` +
+        `  AFTER  (block matrix, computeCompatibilityBlock per scoring bucket): ${afterMs}ms, ${afterResult.updated.toLocaleString()} rows written, ${afterRowCount.toLocaleString()} rows in table\n` +
+        `  speedup: ${(before.ms / afterMs).toFixed(2)}x\n`,
+    );
+
+    // Candidate selection is byte-for-byte the same SQL in both shapes
+    // (see this section's top-of-block doc), so both MUST produce the
+    // same number of rows; a difference here would mean this test's
+    // reference implementation has drifted from the real one, not a
+    // legitimate performance trade-off.
+    assert.equal(before.updated, afterResult.updated, 'the candidate selection is unchanged, so both scoring shapes must materialize the same NUMBER of rows');
+    assert.equal(beforeRowCount, afterRowCount, 'and the same final row count');
   },
 );
 

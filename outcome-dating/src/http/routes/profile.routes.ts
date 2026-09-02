@@ -8,13 +8,15 @@ import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as profileService from '../../services/profile.service.js';
 import * as photoService from '../../services/photo.service.js';
+import * as photoAltTextService from '../../services/photoAltText.service.js';
 import * as photoExperimentService from '../../services/photoExperiment.service.js';
 import * as behavioralPromptService from '../../services/behavioralPrompt.service.js';
-import { ConflictError, NotFoundError, ValidationError } from '../../lib/errors.js';
+import { ConflictError, NotFoundError } from '../../lib/errors.js';
 import { requireUserActor } from '../../lib/ctx.js';
 import type { User } from '../../domain/types.js';
 import { BODY_TYPES } from '../../domain/units/bodyType.js';
 import { unitPreferenceSchema } from '../../domain/units/preference.js';
+import { IMPORTANCE_LEVELS } from '../../domain/questions/index.js';
 import { serializeMe } from '../serializers/user.js';
 import { serializeMyProfile } from '../serializers/profile.js';
 import type { AppDeps } from '../deps.js';
@@ -79,10 +81,28 @@ const UpdateProfileBodySchema = z.object({
 });
 const UploadPhotoBodySchema = z.object({ imageUrl: z.string() });
 const ReorderPhotosBodySchema = z.object({ orderedPhotoIds: z.array(z.string()) });
+// Wiring fix (item 5): the underlying service
+// (`behavioralPrompt.service#respondToSuggestion`) now requires an
+// importance level or a ladder position for a non-skipped response,
+// exactly the same vocabulary `PUT /me/answers`
+// (`question.service#PutQuestionAnswerInput`) already uses, but this
+// schema previously only accepted `selfValue`/`partnerValue`, so
+// answering (not skipping) a prompt could never succeed at all. Also
+// widened `selfValue`/`partnerValue` off the old flat 1-5-only shape:
+// a behavioral-prompt suggestion can link to ANY question in the typed
+// bank (single_choice/multi_choice/frequency, not just scale), the
+// service itself is the source of truth for what's a valid value for
+// the specific question a suggestion points at (same "route only
+// handles params/query, the service validates the body" split
+// `src/http/validation.ts`'s file doc already documents for
+// `PUT /me/answers`), this route no longer second-guesses that with a
+// narrower shape of its own.
 const RespondSuggestionBodySchema = z.object({
   skipped: z.boolean().optional(),
-  selfValue: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5), z.null()]).optional(),
-  partnerValue: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5), z.null()]).optional(),
+  selfValue: z.unknown().optional(),
+  partnerValue: z.unknown().optional(),
+  importance: z.enum(IMPORTANCE_LEVELS).optional(),
+  ladderPosition: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3), z.literal(4)]).optional(),
 });
 
 export function registerProfileRoutes(app: FastifyInstance, deps: AppDeps): void {
@@ -169,6 +189,24 @@ export function registerProfileRoutes(app: FastifyInstance, deps: AppDeps): void
     reply.send(await photoService.reorderPhotos(req.ctx!, body.orderedPhotoIds));
   });
 
+  // Wiring fix (item 3, accessibility rule 1): `photoAltText.service.ts`
+  // (setPhotoAltText/clearPhotoAltText) was fully built and tested but had
+  // no route, so a client had no way to ever SET a photo's description in
+  // the first place, even once the read side carries it everywhere (see
+  // `photo.service#listMyPhotos`'s `altText` field and the profile/
+  // discovery/matches serializers). Never touches photoAltText.service.ts
+  // itself, only calls its already-tested exports.
+  app.put('/me/photos/:photoId/alt-text', auth, async (req, reply) => {
+    const photoId = requireUuidParam(req.params, 'photoId');
+    reply.send(await photoAltTextService.setPhotoAltText(req.ctx!, photoId, req.body));
+  });
+
+  app.delete('/me/photos/:photoId/alt-text', auth, async (req, reply) => {
+    const photoId = requireUuidParam(req.params, 'photoId');
+    await photoAltTextService.clearPhotoAltText(req.ctx!, photoId);
+    reply.status(204).send();
+  });
+
   // ---- Photo A/B testing (§7.3) ----
   app.get('/me/photo-test-results', auth, async (req, reply) => {
     reply.send(await photoExperimentService.getMyPhotoTestResults(req.ctx!));
@@ -194,13 +232,19 @@ export function registerProfileRoutes(app: FastifyInstance, deps: AppDeps): void
   app.post('/me/behavioral-prompts/:suggestionId/respond', auth, async (req, reply) => {
     const suggestionId = requireUuidParam(req.params, 'suggestionId');
     const body = parseOrThrow(RespondSuggestionBodySchema, req.body);
-    if (!body.skipped && (body.selfValue === undefined || body.partnerValue === undefined)) {
-      throw new ValidationError('Both selfValue and partnerValue are required when not skipping.');
-    }
+    // Shape validation only, same "route only handles params/query, the
+    // service validates the body" split every other mutation in this
+    // codebase uses (see src/http/validation.ts's file doc). In
+    // particular this route never fabricates a default `importance` when
+    // one wasn't supplied, `respondToSuggestion` itself throws a clear
+    // ValidationError naming exactly what's missing rather than this
+    // layer inventing a stated preference on the caller's behalf.
     await behavioralPromptService.respondToSuggestion(req.ctx!, suggestionId, {
       skipped: body.skipped ?? false,
       selfValue: body.selfValue,
       partnerValue: body.partnerValue,
+      importance: body.importance,
+      ladderPosition: body.ladderPosition,
     });
     reply.status(204).send();
   });

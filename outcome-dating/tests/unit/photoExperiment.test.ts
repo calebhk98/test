@@ -1,6 +1,6 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
-import { setupTestDatabase, teardownTestDatabase, getTestPool, buildCtx, userActor, uniqueEmail } from './testCtx.js';
+import { setupTestDatabase, teardownTestDatabase, getTestPool, buildCtx, userActor, insertUser } from './testCtx.js';
 import * as photo from '../../src/services/photo.service.js';
 import * as photoExperiment from '../../src/services/photoExperiment.service.js';
 import { computeRecommendation } from '../../src/services/photoExperiment.service.js';
@@ -23,13 +23,7 @@ function uniqueUrl(tag: string): string {
 }
 
 async function createUser(): Promise<string> {
-  const pool = getTestPool();
-  const { rows } = await pool.query<{ id: string }>(
-    `INSERT INTO users (email, password_hash, birthdate, status, trust_score, trust_level)
-     VALUES ($1, 'x', '1990-01-01', 'active', 60, 'standard') RETURNING id`,
-    [uniqueEmail('experimentuser')],
-  );
-  return rows[0]!.id;
+  return insertUser('experimentuser');
 }
 
 /** Uploads `count` distinct approved photos for `userId` and returns them in position order. */

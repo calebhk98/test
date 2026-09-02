@@ -31,8 +31,10 @@ import { createSilentLogger } from '../../src/lib/logger.js';
 import { FakeProcessor } from '../../src/services/payments/fake.processor.js';
 import { StubMediaModerationAdapter } from '../../src/services/media/stub.adapter.js';
 import type { Ctx } from '../../src/lib/ctx.js';
+import { addDays } from '../../src/lib/time.js';
 import { answeredState } from '../../src/domain/questions/index.js';
 import type { QuestionAnswerState, QuestionDefinition } from '../../src/domain/questions/index.js';
+import { boundingBoxForRadius, DEFAULT_DISCOVERY_RADIUS_KM } from '../../src/services/filter.service.js';
 import {
   computePairScore,
   getScore,
@@ -570,6 +572,232 @@ test('refreshAllScores: writes symmetric rows for every active pair', async () =
   assert.equal(forward.length, 1);
   assert.equal(backward.length, 1);
   assert.ok(Math.abs(forward[0]!.score - backward[0]!.score) < 1e-9, 'score must be symmetric between the two directions');
+});
+
+// =====================================================================
+// Block-refresh grouping tests (matrix scoring adoption, see
+// compatibility.service.ts's BLOCK REFRESH doc). These exercise the ONE
+// thing that changed about `refreshAllScores`, how the already-selected
+// pairs get GROUPED for batched scoring, not which pairs get selected
+// (that SQL is untouched, see `loadGeoBoundedPairs`'s own doc).
+// =====================================================================
+
+/**
+ * The same lat-delta the internal scoring-bucket grid uses (cell size =
+ * `2 * latDeltaDeg`, see `bucketRowsByLocation`'s call site in
+ * `refreshAllScores`), computed here independently via the same public,
+ * pure `boundingBoxForRadius` helper compatibility.service.ts itself
+ * calls, so this test can choose coordinates that provably straddle a
+ * grid line without importing any internal (unexported) constant.
+ */
+function scoringCellLatSizeDeg(): number {
+  const box = boundingBoxForRadius(0, 0, DEFAULT_DISCOVERY_RADIUS_KM);
+  return box.latMax - box.latMin; // (latMax - latMin) is already the full cell size, latDeltaDeg is half of it.
+}
+
+test('refreshAllScores: a candidate pair whose two users land in different scoring buckets (grid-cell boundary) is still materialized, both directions, matching computePairScore exactly', async () => {
+  const now = ctx.clock.now();
+  const cellLatSize = scoringCellLatSizeDeg();
+  // An arbitrary grid line the scoring-batch grid actually uses (any
+  // multiple of the cell size), then two users placed a few kilometres on
+  // either side of it, well inside the refresh radius of each other, but,
+  // by construction, in different `floor(lat / cellLatSize)` buckets.
+  const boundaryLat = 3 * cellLatSize;
+  const lat1 = boundaryLat - 0.05;
+  const lat2 = boundaryLat + 0.05;
+  assert.notEqual(
+    Math.floor(lat1 / cellLatSize),
+    Math.floor(lat2 / cellLatSize),
+    'sanity: the two coordinates chosen for this test must actually fall in different scoring buckets, or this test exercises nothing',
+  );
+  // A quiet corner of the globe no other test in this file (or its shared,
+  // accumulating fixture database) places a user near, so this test's
+  // geographic isolation, and therefore its pair-set assertions, cannot be
+  // contaminated by another test's users.
+  const lon = 12.5;
+
+  const edgeA = await makeUserWithLocation('edge-a@test.local', lat1, lon, now);
+  const edgeB = await makeUserWithLocation('edge-b@test.local', lat2, lon, now);
+  // A control, geographically distant from both (same latitude band, tens
+  // of degrees of longitude away): it must NOT be materialized as a
+  // candidate of either just because a refresh run touches it too.
+  const farControl = await makeUserWithLocation('edge-far@test.local', lat1, lon + 40, now);
+
+  const qs = await Promise.all([makeQuestion(1), makeQuestion(2)]);
+  const questions: QuestionDefinition[] = qs.map((q, i) => scaleQuestion({ id: q.id, baseWeight: [1, 2][i]! }));
+  const raw: Record<string, [number, number][]> = {
+    [edgeA]: [[5, 2], [1, 4]],
+    [edgeB]: [[3, 4], [5, 1]],
+    [farControl]: [[2, 2], [3, 3]],
+  };
+  for (const [userId, values] of Object.entries(raw)) {
+    for (let i = 0; i < qs.length; i++) {
+      await setAnswer(userId, qs[i]!.slug, qs[i]!.id, values[i]![0]!, values[i]![1]!);
+    }
+  }
+  function answersFor(userId: string): Map<string, QuestionAnswerState> {
+    const map = new Map<string, QuestionAnswerState>();
+    for (let i = 0; i < qs.length; i++) {
+      const [self, pref] = raw[userId]![i]!;
+      map.set(qs[i]!.id, answeredState(self, pref, 'important'));
+    }
+    return map;
+  }
+
+  await refreshAllScores(ctx);
+
+  const expected = computePairScore(questions, answersFor(edgeA), answersFor(edgeB), DEFAULT_MIN_SHARED_QUESTIONS).score;
+  const { rows: fwd } = await pool.query<{ score: number }>(
+    'SELECT score FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+    [edgeA, edgeB],
+  );
+  const { rows: bwd } = await pool.query<{ score: number }>(
+    'SELECT score FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+    [edgeB, edgeA],
+  );
+  assert.equal(fwd.length, 1, 'a pair straddling a scoring-bucket boundary must still be materialized (row user_id=edgeA)');
+  assert.equal(bwd.length, 1, 'and the symmetric direction too');
+  assert.ok(Math.abs(fwd[0]!.score - expected) < 1e-9, `forward score mismatch: got ${fwd[0]!.score}, expected ${expected}`);
+  assert.ok(Math.abs(bwd[0]!.score - expected) < 1e-9, `backward score mismatch: got ${bwd[0]!.score}, expected ${expected}`);
+
+  const { rows: farRow } = await pool.query(
+    'SELECT 1 FROM compatibility_scores WHERE user_id = $1 AND candidate_id = $2',
+    [edgeA, farControl],
+  );
+  assert.equal(farRow.length, 0, 'a geographically distant control must not be materialized just because a refresh run also touched it');
+});
+
+/** Canonical, order-independent key for comparing unordered user-id pairs, mirrors `compatibility.service.ts#pairKey` (not exported) so this test's own independent bookkeeping stays consistent. */
+function testPairKey(a: string, b: string): string {
+  return a < b ? `${a}:${b}` : `${b}:${a}`;
+}
+
+/**
+ * An INDEPENDENT reference implementation of "the `cap` nearest other
+ * users within the fixed refresh box", brute force, O(n^2), no SQL, no
+ * grid, no bucketing, reusing none of compatibility.service.ts's internal
+ * code, this is what makes the comparison below meaningful rather than
+ * tautological: it exercises exactly the geometric relationship
+ * `loadGeoBoundedPairs`'s SQL is supposed to implement, computed a
+ * completely different way, using only the pure, exported
+ * `boundingBoxForRadius`.
+ */
+function bruteForceGeoPairs(users: { id: string; lat: number; lon: number }[], latDeltaDeg: number, lonDeltaDeg: number, cap: number): Set<string> {
+  const pairs = new Set<string>();
+  for (const u of users) {
+    const nearest = users
+      .filter((v) => v.id !== u.id)
+      .filter((v) => v.lat >= u.lat - latDeltaDeg && v.lat <= u.lat + latDeltaDeg && v.lon >= u.lon - lonDeltaDeg && v.lon <= u.lon + lonDeltaDeg)
+      .map((v) => ({ id: v.id, d2: (v.lat - u.lat) * (v.lat - u.lat) + (v.lon - u.lon) * (v.lon - u.lon) }))
+      .sort((x, y) => x.d2 - y.d2 || (x.id < y.id ? -1 : x.id > y.id ? 1 : 0))
+      .slice(0, cap);
+    for (const c of nearest) pairs.add(testPairKey(u.id, c.id));
+  }
+  return pairs;
+}
+
+test('refreshAllScores: the materialized geo-bounded pair set matches an independent brute-force reference exactly (old-shape vs new-shape agreement)', async () => {
+  const now = ctx.clock.now();
+  const cap = 50; // MATERIALIZED_NEIGHBORS_PER_USER, not exported; every cluster below stays well under it, so capping never trims this fixture (the LIMIT itself is unchanged SQL, not something this build's grouping could affect either way).
+
+  // A quiet, geographically isolated part of the globe (see the boundary
+  // test above for why isolation matters in this file's shared, DB):
+  // three clusters, well over 500km apart from each other and from every
+  // other coordinate any other test in this file uses, so this test's own
+  // brute-force reference is a closed, exact answer for these users, not
+  // an approximation of it.
+  const clusterCenters = [
+    { name: 'A', lat: 2.0, lon: 2.0 },
+    { name: 'B', lat: 2.0, lon: 10.0 },
+    { name: 'C', lat: -8.0, lon: 2.0 },
+  ];
+  const located: { id: string; lat: number; lon: number }[] = [];
+  for (const c of clusterCenters) {
+    for (let i = 0; i < 4; i++) {
+      const lat = c.lat + (i - 1.5) * 0.05;
+      const lon = c.lon + (i - 1.5) * 0.05;
+      const id = await makeUserWithLocation(`pairset-${c.name}-${i}@test.local`, lat, lon, now);
+      located.push({ id, lat, lon });
+    }
+  }
+  // A straggler close enough to cluster A's edge to be a real candidate of
+  // at least some of its members (deliberately not part of the tight
+  // in-cluster jitter above), exercising the same "close but not in the
+  // same tight group" shape as the dedicated boundary test, inside a
+  // larger, noisier fixture this time.
+  const stragglerLoc = { lat: clusterCenters[0]!.lat + 0.9, lon: clusterCenters[0]!.lon + 0.9 };
+  const stragglerId = await makeUserWithLocation('pairset-straggler@test.local', stragglerLoc.lat, stragglerLoc.lon, now);
+  located.push({ id: stragglerId, ...stragglerLoc });
+  // A genuine outlier: within the same broad region but far enough (many
+  // hundreds of km) that it must not be anyone's candidate.
+  const outlierLoc = { lat: 60.0, lon: 60.0 };
+  const outlierId = await makeUserWithLocation('pairset-outlier@test.local', outlierLoc.lat, outlierLoc.lon, now);
+  located.push({ id: outlierId, ...outlierLoc });
+
+  const unlocatedIds: string[] = [];
+  for (let i = 0; i < 3; i++) {
+    unlocatedIds.push(await makeUser(`pairset-unlocated-${i}@test.local`));
+  }
+
+  await refreshAllScores(ctx);
+
+  // ---- GEO portion: exact set equality against the independent brute-force reference. ----
+  const latBox = boundingBoxForRadius(0, 0, DEFAULT_DISCOVERY_RADIUS_KM);
+  const latDeltaDeg = (latBox.latMax - latBox.latMin) / 2;
+  // 60 here mirrors compatibility.service.ts's own SAFE_REFERENCE_LATITUDE_FOR_BOX_WIDTH_DEG
+  // (not exported; a fixed, documented reference latitude, not derived from
+  // this fixture's own coordinates), so this reference box matches the
+  // production one exactly rather than approximately.
+  const lonBox = boundingBoxForRadius(60, 0, DEFAULT_DISCOVERY_RADIUS_KM);
+  const lonDeltaDeg = (lonBox.lon1Max - lonBox.lon1Min) / 2;
+  const expectedGeoPairs = bruteForceGeoPairs(located, latDeltaDeg, lonDeltaDeg, cap);
+
+  const locatedIds = located.map((u) => u.id);
+  const { rows: geoRows } = await pool.query<{ user_id: string; candidate_id: string }>(
+    'SELECT user_id, candidate_id FROM compatibility_scores WHERE user_id = ANY($1::uuid[]) AND candidate_id = ANY($1::uuid[])',
+    [locatedIds],
+  );
+  const materializedGeoPairs = new Set(geoRows.map((r) => testPairKey(r.user_id, r.candidate_id)));
+
+  const missing = [...expectedGeoPairs].filter((k) => !materializedGeoPairs.has(k));
+  const extra = [...materializedGeoPairs].filter((k) => !expectedGeoPairs.has(k));
+  assert.deepEqual(missing, [], `pairs the brute-force reference expects but the block refresh did not materialize: ${missing.join(', ')}`);
+  assert.deepEqual(extra, [], `pairs the block refresh materialized but the brute-force reference does not expect: ${extra.join(', ')}`);
+
+  // Sanity: the fixture actually exercises something (in-cluster pairs
+  // present, the outlier present for nobody), not a vacuous empty-set match.
+  assert.ok(expectedGeoPairs.size > 0);
+  assert.ok(materializedGeoPairs.has(testPairKey(located[0]!.id, located[1]!.id)), 'sanity: cluster A members must be candidates of each other');
+  assert.ok(!materializedGeoPairs.has(testPairKey(outlierId, located[0]!.id)), 'the outlier must not be a candidate of anyone');
+
+  // ---- FALLBACK (unlocated) portion: presence-only check, not exact
+  // set equality. `loadGlobalRecentFallbackIds` (unchanged by this build)
+  // draws from the WHOLE platform's active-recent users, which in this
+  // shared, accumulating test-fixture database includes users created by
+  // EARLIER tests in this file, so an exact-set comparison here would be
+  // asserting facts about other tests' fixtures, not about this build's
+  // grouping logic. What IS specific to this build, and what this checks:
+  // every one of THIS test's unlocated users must have been paired with
+  // the platform's actual top-recently-active list, the same real query
+  // `loadGlobalRecentFallbackIds` runs, reproduced here only to know what
+  // to check for, not as an independent oracle. ----
+  const activeSince = addDays(ctx.clock.now(), -30); // REFRESH_ACTIVE_WINDOW_DAYS, not exported; matches compatibility.service.ts's own constant, documented there.
+  const { rows: fallbackRows } = await pool.query<{ id: string }>(
+    `SELECT id FROM users WHERE status = 'active' AND last_active_at >= $1 ORDER BY last_active_at DESC, id ASC LIMIT $2`,
+    [activeSince, cap],
+  );
+  const fallbackIds = fallbackRows.map((r) => r.id);
+  assert.ok(fallbackIds.length > 0, 'sanity: the platform-wide fallback pool must be non-empty for this assertion to mean anything');
+  for (const u of unlocatedIds) {
+    const { rows: touching } = await pool.query<{ user_id: string; candidate_id: string }>(
+      'SELECT user_id, candidate_id FROM compatibility_scores WHERE user_id = $1',
+      [u],
+    );
+    const materializedForU = new Set(touching.map((r) => r.candidate_id));
+    const expectedForU = fallbackIds.filter((id) => id !== u);
+    const missingForU = expectedForU.filter((id) => !materializedForU.has(id));
+    assert.deepEqual(missingForU, [], `unlocated user ${u} is missing expected fallback candidates: ${missingForU.join(', ')}`);
+  }
 });
 
 // NOTE: "answering a new-bank question refreshes materialized scores" (the

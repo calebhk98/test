@@ -47,14 +47,78 @@ test('discovery cards never carry coordinates, like counts, popularity, or boost
   const card = body.items.find((c) => c.userId === target.userId);
   assert.ok(card, 'target should be discoverable');
 
-  const forbiddenKeys = ['latitude', 'longitude', 'likeCount', 'popularityScore', 'boosted', 'badge', 'compatibilityScore', 'profileCompleteness'];
+  // Wiring fix: `trustLevel` moved from allowed to forbidden here. It was
+  // never part of the card's own design (product-owner rule: no
+  // popularity/status signal on a card), and this test previously asserted
+  // the old, over-broad shape; a candidate's trust level stays visible only
+  // on their OWN trust page (`GET /me/trust`), never on someone else's card.
+  const forbiddenKeys = [
+    'latitude',
+    'longitude',
+    'likeCount',
+    'popularityScore',
+    'boosted',
+    'badge',
+    'compatibilityScore',
+    'profileCompleteness',
+    'trustLevel',
+    'trustScore',
+    'rank',
+    'ranking',
+    'rankingScore',
+    'status',
+    'statusBadge',
+  ];
   for (const key of forbiddenKeys) {
     assert.equal(key in card!, false, `discovery card must not carry "${key}"`);
   }
-  const allowedKeys = ['userId', 'displayName', 'age', 'approximateDistanceKm', 'primaryPhotoUrl', 'sharedInterestTag', 'trustLevel'];
+  // Wiring fix (item 3): `primaryPhotoUrl` (a bare string) became
+  // `primaryPhoto` (`{id, imageUrl, altText}`), see
+  // src/http/serializers/discovery.ts's own doc.
+  const allowedKeys = ['userId', 'displayName', 'age', 'approximateDistanceKm', 'primaryPhoto', 'sharedInterestTag'];
   for (const key of Object.keys(card!)) {
     assert.ok(allowedKeys.includes(key), `unexpected field "${key}" on discovery card`);
   }
+  assert.equal('primaryPhotoUrl' in card!, false, 'the old bare-string field must be gone, not just renamed-and-kept');
+});
+
+/**
+ * Wiring item 2: a pattern-based guard, not just an exact-name check, so
+ * this fails the moment ANY status- or ranking-shaped field reappears on a
+ * discovery card under a name this test hasn't been told about yet
+ * (a renamed `trustLevel`, a new `rankScore`, a `verifiedBadge`, ...), the
+ * same "actually catches something" discipline dashGuard.test.ts/
+ * copyGuard.test.ts use: proven against a deliberately-violating fixture,
+ * not just asserted quiet against the real response.
+ */
+const STATUS_OR_RANKING_KEY_PATTERN = /trust|status|rank|badge|boost|popular|like|score|tier|level/i;
+/** The only allowed key that happens to match the pattern above (a distance measurement, not a status/ranking signal, see `approximateDistanceKm`'s own description elsewhere in this file). */
+const STATUS_OR_RANKING_KEY_ALLOWLIST = new Set<string>([]);
+
+function findStatusOrRankingKeys(card: Record<string, unknown>): string[] {
+  return Object.keys(card).filter((k) => STATUS_OR_RANKING_KEY_PATTERN.test(k) && !STATUS_OR_RANKING_KEY_ALLOWLIST.has(k));
+}
+
+test('discovery card guard: no status- or ranking-shaped field under any name (pattern scan, not just an exact-name check)', async () => {
+  const viewer = await registerUser(t);
+  const target = await registerUser(t);
+  await completeOnboarding(t, viewer.accessToken, { displayName: 'ViewerRank', gender: 'woman', seeking: 'man' });
+  await completeOnboarding(t, target.accessToken, { displayName: 'TargetRank', gender: 'man', seeking: 'woman' });
+
+  const res = await t.app.inject({ method: 'GET', url: '/discovery', headers: authHeader(viewer.accessToken) });
+  assert.equal(res.statusCode, 200);
+  const body = JSON.parse(res.body) as { items: Array<Record<string, unknown>> };
+  const card = body.items.find((c) => c.userId === target.userId);
+  assert.ok(card, 'target should be discoverable');
+
+  const found = findStatusOrRankingKeys(card!);
+  assert.deepEqual(found, [], `discovery card carries status/ranking-shaped field(s): ${found.join(', ')}`);
+
+  // Prove the scanner itself actually catches something, not a silent no-op.
+  const violatingFixture = { ...card, trustLevel: 'trusted' };
+  assert.deepEqual(findStatusOrRankingKeys(violatingFixture), ['trustLevel']);
+  const violatingFixture2 = { ...card, rankScore: 0.9 };
+  assert.deepEqual(findStatusOrRankingKeys(violatingFixture2), ['rankScore']);
 });
 
 test('public profile view never carries exact coordinates (§7.1, §28.5, C-28.5.1)', async () => {
