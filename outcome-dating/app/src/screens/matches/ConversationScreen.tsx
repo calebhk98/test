@@ -19,17 +19,18 @@ type Props = NativeStackScreenProps<MatchesStackParamList, 'Conversation'>;
 export function ConversationScreen({ route, navigation }: Props): React.ReactElement {
   const { conversationId, displayName } = route.params;
   const { me } = useAuth();
-  const { status, data, error, reload } = useAsync(() => api.getConversationTimeline(conversationId, { limit: 50 }), [conversationId]);
+  const timelineState = useAsync(() => api.getConversationTimeline(conversationId, { limit: 50 }), [conversationId]);
   const [events, setEvents] = useState<TimelineEventView[]>([]);
   const [draft, setDraft] = useState('');
   const [sending, setSending] = useState(false);
   const [sendError, setSendError] = useState<string | null>(null);
 
   React.useEffect(() => {
-    if (status === 'ready') {
-      setEvents([...data.items].sort((a, b) => a.occurredAt.localeCompare(b.occurredAt)));
+    if (timelineState.status === 'ready') {
+      setEvents([...timelineState.data.items].sort((a, b) => a.occurredAt.localeCompare(b.occurredAt)));
     }
-  }, [status, data]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timelineState.status, timelineState]);
 
   React.useLayoutEffect(() => {
     navigation.setOptions({ title: displayName });
@@ -52,17 +53,17 @@ export function ConversationScreen({ route, navigation }: Props): React.ReactEle
     }
   }
 
-  if (status === 'loading') {
+  if (timelineState.status === 'loading') {
     return (
       <Screen>
         <LoadingState label="Loading conversation" />
       </Screen>
     );
   }
-  if (status === 'error') {
+  if (timelineState.status === 'error') {
     return (
       <Screen>
-        <ErrorState error={error} onRetry={reload} />
+        <ErrorState error={timelineState.error} onRetry={timelineState.reload} />
       </Screen>
     );
   }

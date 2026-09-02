@@ -18,24 +18,24 @@ function suppressibleLabel(v: { value: number | null; suppressed: boolean }): st
 }
 
 export function StatsScreen(_props: Props): React.ReactElement {
-  const { status, data, error, reload } = useAsync(() => api.getMyFilterCosts(), []);
+  const result = useAsync(() => api.getMyFilterCosts(), []);
 
   return (
     <Screen>
       <Headline style={styles.title}>Your pool</Headline>
       <ScaffoldNotice remaining="The pool Venn diagram (GET /me/stats/venn.svg), trend charts, and photo-performance stats are not built yet. This reads the real filter-cost numbers." />
-      {status === 'loading' ? <LoadingState label="Loading your stats" /> : null}
-      {status === 'error' ? <ErrorState error={error} onRetry={reload} /> : null}
-      {status === 'ready' ? (
+      {result.status === 'loading' ? <LoadingState label="Loading your stats" /> : null}
+      {result.status === 'error' ? <ErrorState error={result.error} onRetry={result.reload} /> : null}
+      {result.status === 'ready' ? (
         <View style={styles.box}>
-          <Row label="People who match your filters" value={suppressibleLabel(data.currentPool)} />
-          <Row label="People whose filters you match" value={suppressibleLabel(data.whoseFiltersIMatch)} />
-          <Row label="Mutual matches possible" value={suppressibleLabel(data.mutualMatchPool)} />
-          {data.costliestFilter ? (
+          <Row label="People who match your filters" value={suppressibleLabel(result.data.currentPool)} />
+          <Row label="People whose filters you match" value={suppressibleLabel(result.data.whoseFiltersIMatch)} />
+          <Row label="Mutual matches possible" value={suppressibleLabel(result.data.mutualMatchPool)} />
+          {result.data.costliestFilter ? (
             <Caption style={styles.note}>
-              Your costliest filter is "{data.costliestFilter.filterKey}": removing it would add
+              Your costliest filter is "{result.data.costliestFilter.filterKey}": removing it would add
               {' '}
-              {suppressibleLabel(data.costliestFilter.additionalCandidatesIfRemoved)} candidates.
+              {suppressibleLabel(result.data.costliestFilter.additionalCandidatesIfRemoved)} candidates.
             </Caption>
           ) : null}
         </View>

@@ -22,17 +22,17 @@ const TICKET_TONE: Record<string, 'positive' | 'neutral' | 'critical'> = {
 };
 
 export function WalletScreen({ navigation }: Props): React.ReactElement {
-  const { status, data, error, reload } = useAsync(() => api.listMyTickets(), []);
+  const result = useAsync(() => api.listMyTickets(), []);
 
   return (
     <Screen>
       <Headline style={styles.title}>Wallet</Headline>
       <ScaffoldNotice remaining="Redemption QR code display, ticket cancellation, and expired-ticket cleanup are not built. This reads real tickets from the API." />
-      {status === 'loading' ? <LoadingState label="Loading tickets" /> : null}
-      {status === 'error' ? <ErrorState error={error} onRetry={reload} /> : null}
-      {status === 'ready' && data.length === 0 ? <EmptyState title="No tickets yet" message="Confirmed dates show a ticket here." /> : null}
-      {status === 'ready'
-        ? data.map((ticket) => (
+      {result.status === 'loading' ? <LoadingState label="Loading tickets" /> : null}
+      {result.status === 'error' ? <ErrorState error={result.error} onRetry={result.reload} /> : null}
+      {result.status === 'ready' && result.data.length === 0 ? <EmptyState title="No tickets yet" message="Confirmed dates show a ticket here." /> : null}
+      {result.status === 'ready'
+        ? result.data.map((ticket) => (
             <Pressable
               key={ticket.id}
               style={styles.row}

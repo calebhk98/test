@@ -17,7 +17,7 @@ type Props = NativeStackScreenProps<DiscoveryStackParamList, 'DiscoveryGrid'>;
 
 export function DiscoveryGridScreen({ navigation }: Props): React.ReactElement {
   const unitPreference = usePreferredUnit();
-  const { status, data, error, reload } = useAsync(() => api.getDiscoveryGrid({ limit: 20 }), []);
+  const gridState = useAsync(() => api.getDiscoveryGrid({ limit: 20 }), []);
   const [items, setItems] = useState<DiscoveryCardView[]>([]);
   const [nextCursor, setNextCursor] = useState<string | null>(null);
   const [loadingMore, setLoadingMore] = useState(false);
@@ -26,7 +26,8 @@ export function DiscoveryGridScreen({ navigation }: Props): React.ReactElement {
   const [dashboardLoading, setDashboardLoading] = useState(false);
 
   React.useEffect(() => {
-    if (status !== 'ready') return;
+    if (gridState.status !== 'ready') return;
+    const { data } = gridState;
     setItems(data.items);
     setNextCursor(data.nextCursor);
     setEmptyMessage(data.message);
@@ -41,7 +42,7 @@ export function DiscoveryGridScreen({ navigation }: Props): React.ReactElement {
       setDashboard(null);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [status, data]);
+  }, [gridState.status, gridState]);
 
   const loadMore = useCallback(async () => {
     if (!nextCursor || loadingMore) return;
@@ -55,7 +56,7 @@ export function DiscoveryGridScreen({ navigation }: Props): React.ReactElement {
     }
   }, [nextCursor, loadingMore]);
 
-  if (status === 'loading') {
+  if (gridState.status === 'loading') {
     return (
       <Screen>
         <LoadingState label="Finding people near you" />
@@ -63,10 +64,10 @@ export function DiscoveryGridScreen({ navigation }: Props): React.ReactElement {
     );
   }
 
-  if (status === 'error') {
+  if (gridState.status === 'error') {
     return (
       <Screen>
-        <ErrorState error={error} onRetry={reload} />
+        <ErrorState error={gridState.error} onRetry={gridState.reload} />
       </Screen>
     );
   }

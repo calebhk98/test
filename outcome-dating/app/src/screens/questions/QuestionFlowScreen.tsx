@@ -17,13 +17,13 @@ type Props = NativeStackScreenProps<QuestionsStackParamList, 'QuestionFlow'>;
 const BATCH_SIZE = 10;
 
 export function QuestionFlowScreen(_props: Props): React.ReactElement {
-  const { status, data, error, reload } = useAsync(() => api.getNextQuestions(BATCH_SIZE), []);
+  const initialLoad = useAsync(() => api.getNextQuestions(BATCH_SIZE), []);
   const [queue, setQueue] = useState<QuestionCardView[] | null>(null);
   const [answeredCount, setAnsweredCount] = useState(0);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const effectiveQueue = queue ?? (status === 'ready' ? data.items : null);
+  const effectiveQueue = queue ?? (initialLoad.status === 'ready' ? initialLoad.data.items : null);
   const current = effectiveQueue?.[0] ?? null;
 
   const advance = useCallback(async () => {
@@ -83,7 +83,7 @@ export function QuestionFlowScreen(_props: Props): React.ReactElement {
     }
   }
 
-  if (status === 'loading' && !queue) {
+  if (initialLoad.status === 'loading' && !queue) {
     return (
       <Screen>
         <LoadingState label="Finding your next question" />
@@ -91,10 +91,10 @@ export function QuestionFlowScreen(_props: Props): React.ReactElement {
     );
   }
 
-  if (status === 'error' && !queue) {
+  if (initialLoad.status === 'error' && !queue) {
     return (
       <Screen>
-        <ErrorState error={error} onRetry={reload} />
+        <ErrorState error={initialLoad.error} onRetry={initialLoad.reload} />
       </Screen>
     );
   }

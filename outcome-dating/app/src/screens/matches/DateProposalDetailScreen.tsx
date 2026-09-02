@@ -28,25 +28,26 @@ type Props = NativeStackScreenProps<MatchesStackParamList, 'DateProposalDetail'>
 export function DateProposalDetailScreen({ route, navigation }: Props): React.ReactElement {
   const { dateProposalId } = route.params;
   const { me } = useAuth();
-  const { status, data: proposal, error, reload } = useAsync(() => api.getDateProposal(dateProposalId), [dateProposalId]);
+  const proposalState = useAsync(() => api.getDateProposal(dateProposalId), [dateProposalId]);
   const [actionLoading, setActionLoading] = useState<string | null>(null);
   const [actionError, setActionError] = useState<string | null>(null);
 
-  if (status === 'loading') {
+  if (proposalState.status === 'loading') {
     return (
       <Screen>
         <LoadingState label="Loading date" />
       </Screen>
     );
   }
-  if (status === 'error') {
+  if (proposalState.status === 'error') {
     return (
       <Screen>
-        <ErrorState error={error} onRetry={reload} />
+        <ErrorState error={proposalState.error} onRetry={proposalState.reload} />
       </Screen>
     );
   }
 
+  const proposal = proposalState.data;
   const viewerIsProposer = proposal.proposerId === me?.id;
   // The date-proposal response carries only ids, not display names (see
   // api/types.ts DateProposal); the conversation/match list is where a
@@ -60,7 +61,7 @@ export function DateProposalDetailScreen({ route, navigation }: Props): React.Re
     setActionError(null);
     try {
       await action();
-      reload();
+      proposalState.reload();
     } catch (err) {
       setActionError(messageForError(err));
     } finally {

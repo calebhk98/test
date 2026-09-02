@@ -15,23 +15,24 @@ import type { MoreStackParamList } from '../../navigation/types';
 type Props = NativeStackScreenProps<MoreStackParamList, 'TicketDetail'>;
 
 export function TicketDetailScreen({ route }: Props): React.ReactElement {
-  const { status, data: ticket, error, reload } = useAsync(() => api.getMyTicket(route.params.ticketId), [route.params.ticketId]);
+  const ticketState = useAsync(() => api.getMyTicket(route.params.ticketId), [route.params.ticketId]);
 
-  if (status === 'loading') {
+  if (ticketState.status === 'loading') {
     return (
       <Screen>
         <LoadingState label="Loading ticket" />
       </Screen>
     );
   }
-  if (status === 'error') {
+  if (ticketState.status === 'error') {
     return (
       <Screen>
-        <ErrorState error={error} onRetry={reload} />
+        <ErrorState error={ticketState.error} onRetry={ticketState.reload} />
       </Screen>
     );
   }
 
+  const ticket = ticketState.data;
   return (
     <Screen>
       <ScaffoldNotice remaining="No scannable QR rendering yet, the code is shown as plain text. A venue-side scan flow is out of scope for this app." />

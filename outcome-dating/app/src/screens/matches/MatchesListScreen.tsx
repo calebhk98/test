@@ -18,22 +18,23 @@ type Props = NativeStackScreenProps<MatchesStackParamList, 'MatchesList'>;
 
 export function MatchesListScreen({ navigation }: Props): React.ReactElement {
   const unitPreference = usePreferredUnit();
-  const { status, data, error, reload } = useAsync(() => api.listMatches({ limit: 50 }), []);
+  const matchesState = useAsync(() => api.listMatches({ limit: 50 }), []);
 
-  if (status === 'loading') {
+  if (matchesState.status === 'loading') {
     return (
       <Screen>
         <LoadingState label="Loading matches" />
       </Screen>
     );
   }
-  if (status === 'error') {
+  if (matchesState.status === 'error') {
     return (
       <Screen>
-        <ErrorState error={error} onRetry={reload} />
+        <ErrorState error={matchesState.error} onRetry={matchesState.reload} />
       </Screen>
     );
   }
+  const data = matchesState.data;
   if (data.items.length === 0) {
     return (
       <Screen>

@@ -22,31 +22,31 @@ const TRUST_TONE: Record<string, 'positive' | 'neutral' | 'caution'> = {
 };
 
 export function TrustScreen(_props: Props): React.ReactElement {
-  const { status, data, error, reload } = useAsync(() => api.getMyTrust(), []);
+  const result = useAsync(() => api.getMyTrust(), []);
 
   return (
     <Screen>
       <Headline style={styles.title}>Trust</Headline>
       <ScaffoldNotice remaining="The appeal flow (POST /me/trust/appeal) and trust event history are not built. This reads your real trust level and its actionable reasons." />
-      {status === 'loading' ? <LoadingState label="Loading trust status" /> : null}
-      {status === 'error' ? <ErrorState error={error} onRetry={reload} /> : null}
-      {status === 'ready' ? (
+      {result.status === 'loading' ? <LoadingState label="Loading trust status" /> : null}
+      {result.status === 'error' ? <ErrorState error={result.error} onRetry={result.reload} /> : null}
+      {result.status === 'ready' ? (
         <View>
-          <StatusBadge label={data.trustLevel} tone={TRUST_TONE[data.trustLevel] ?? 'neutral'} />
-          {data.actionableImprovements.length > 0 ? (
+          <StatusBadge label={result.data.trustLevel} tone={TRUST_TONE[result.data.trustLevel] ?? 'neutral'} />
+          {result.data.actionableImprovements.length > 0 ? (
             <View style={styles.section}>
               <Body style={styles.sectionLabel}>Things that would help</Body>
-              {data.actionableImprovements.map((item) => (
+              {result.data.actionableImprovements.map((item) => (
                 <Caption key={item} style={styles.item}>
                   {'•'} {item}
                 </Caption>
               ))}
             </View>
           ) : null}
-          {data.recentNegativeEvents.length > 0 ? (
+          {result.data.recentNegativeEvents.length > 0 ? (
             <View style={styles.section}>
               <Body style={styles.sectionLabel}>Recent events</Body>
-              {data.recentNegativeEvents.map((item) => (
+              {result.data.recentNegativeEvents.map((item) => (
                 <Caption key={item} style={styles.item}>
                   {'•'} {item}
                 </Caption>
