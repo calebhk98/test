@@ -42,27 +42,43 @@ answers. Count who initiates across your chapters and say what the ratio is.
 a version of this where she does Y" — the book getting credit for an action it
 never spends.
 
-## What it is not
+## Stillness is not an excuse
 
-Deliberate stillness is a real technique and this book uses it on purpose.
-Watching, waiting, and choosing silence are all legitimate when the choice
-costs something and the text lets it cost. The test is not whether she acts. It
-is whether the scene would read differently if she were not there.
+An earlier version of this brief said deliberate stillness was a legitimate
+technique and told you not to flag it. That was wrong and the author has said
+so plainly: *"Deliberate stillness IS a form of passivity. It's super common,
+annoyingly too much imo."*
 
-Do not flag: a character being quiet in a scene that is somebody else's; a
-decision made and then held to; the group-chat chapters, where reading and not
-replying is what a chat is.
+So there is no stillness exemption. If a character watches, waits, declines,
+holds back, chooses silence, or registers something accurately and moves on,
+that is an instance, and you log it. Whether any given one is worth keeping is
+the author's call, not yours, and he cannot make it on instances you never
+showed him. Err toward reporting.
 
-## The standard for a fix
+The only things still out of scope: a character who is genuinely not in the
+scene, and reading a group chat without replying, which is what a chat is.
 
-Chapter 12's bridge scene and chapter 18's rumour scene were repaired to this
-standard; read both before you start. In both, the analysis stays and something
-physical and childish arrives on top of it — the pillow, running the
-conversation the way it should have gone, walking past his door twice to put a
-face to him, asking who told her.
+## There is no good chapter to copy
 
-You are not turning her into somebody who wins. She can lose. She has to
-*try*.
+An earlier version pointed at two repaired scenes as the standard. The author
+has read them: *"I have yet to read a good chapter anywhere here that is a good
+standard for the fix."* Do not hold anything in this manuscript up as the
+model. You are not matching an existing scene, you are describing what is
+missing.
+
+What an active scene has, stated from first principles rather than from an
+example in this book:
+
+- She wants something in the scene, and the want is visible before the scene
+  resolves.
+- She does something to get it. Not thinks about it, not decides against it.
+- The attempt costs her something, or fails, or works and creates the next
+  problem.
+- The scene ends in a different place than it started, and the difference is
+  attributable to something she did.
+
+A scene can have all four and still be quiet. A person can lose. What it cannot
+be is a scene the plot would reach the same way if she had stayed in her room.
 
 ## What you produce
 

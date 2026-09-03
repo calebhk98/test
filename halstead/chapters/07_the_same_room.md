@@ -4,7 +4,9 @@
 
 The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe. Sam left early, which Chloe finds out from a girl she had not spoken to once all month and who tosses it over her shoulder with a pillow under one arm, already halfway down the hall, while Kavi is over by the double doors with adults who give him a hand up, until a family walks between them and by the time they pass he has gone.
 
-Ruth finds her at the flagpole, hugs her hard enough to hurt, and says it from close up with a fistful of Chloe's sleeve in each hand. "So we're all getting in. That's the plan and everybody's doing it. So you have to, okay? You as well, promise me you'll make it in. If it's only some of us next year I'm going to know exactly whose fault it is."
+Ruth finds her at the flagpole, hugs her hard enough to hurt, and holds on with a fistful of Chloe's sleeve in each hand.
+
+"So we're all getting in. That's the plan and everybody's doing it. So you have to, okay? You as well, promise me you'll make it in. If it's only some of us next year I'm going to know exactly whose fault it is."
 
 "We're all getting in, I promise. And I'm going to ask every single day until somebody says yes."
 
@@ -138,7 +140,7 @@ Chloe's hand comes down over what she has already written, the whole page gone u
 
 "Yeah," Bryce says, and turns back around.
 
-Her hand stays where it is for the rest of the period. But when Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
+Her hand stays where it is for the rest of the period. But when Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and not looking up, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
 
 ________________
 
