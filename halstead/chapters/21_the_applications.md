@@ -148,7 +148,7 @@ He asks who did the geometry.
 
 Chloe's fork stops on the way up. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, watching him write it down, and what she tells him is what is written on the back of the April drawing. She stays at the table after he has moved down it to Sam, telling the two who arrived late enough to have missed the first telling.
 
-The drawing lives in a folder Nadia keeps. Chloe gets it out that evening. Bex is in it too, at that same breakfast table, saying nothing while Chloe did the talking.
+The drawing lives in a folder Nadia keeps. Chloe gets it out that evening. Bex is in it too, at that same table, saying nothing while Chloe did the talking.
 
 At breakfast the next morning she sits across from Bex.
 
@@ -160,7 +160,7 @@ Bex doesn't stop eating. "I did. Eventually."
 
 "And I said it out loud, with somebody writing it down. That's the version he's got now."
 
-Chloe has nothing to put next to that. She finishes breakfast standing.
+Chloe has nothing to put next to that. She finishes breakfast at the counter.
 
 She calls home that Sunday and gets most of the way through the week before she gets to it, near the end and folded in with everything else: that a rep asked about the long field and Bex answered for all of it, the geometry included, and got every part of it right.
 
