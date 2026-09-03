@@ -38,7 +38,7 @@ Chloe's fists are still in the carpet.
 
 "That's the last thing. That's the. I won't ask for anything, not ever, not my whole life. Please. Please just let me go to that school."
 
-Her mother is down on the floor with her by then, in the gap, with both arms round her. "Baby, breathe for me, just breathe, because you have to breathe before you can talk about any of it."
+Her mother is down on the floor with her by then, in the gap, with both arms round her. "Baby, breathe for me, just breathe."
 
 "I can't do it anymore," she says, and it is a whole sentence, and she gets it out twice. "I can't do it anymore, I can't do any of it."
 
@@ -126,7 +126,7 @@ The house comes up in April, on a Saturday, with Chloe up the road at the Peters
 
 "I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds. You can say it a third time if you want, and I'll still be standing right here saying no."
 
-Dave rubs a hand over his face. "Then give me one reason, because I have been sitting here trying to think of one, but I can't."
+Dave rubs a hand over his face. "Then give me one reason. I have been sitting here trying to think of one, but I can't."
 
 "Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
 
@@ -142,7 +142,7 @@ They drive out on the Friday for the day where Halstead looks at her, and the bu
 
 A woman called Mrs. Okonkwo, who walks backward half the time so that she can talk while she is doing it, takes them around for an hour. Chloe asks whether the room at the end of that hall is still called Pluto and is told that the rooms down there have always been planets and that the names have stayed put since the building went up. Then she asks whether there's a boy here called Sam.
 
-"I can't tell you who's enrolled here, sweetheart, because those are other families, and that's between them and us."
+"I can't tell you who's enrolled here, sweetheart."
 
 "I know him, though, from camp, this past summer."
 

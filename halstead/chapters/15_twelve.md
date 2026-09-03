@@ -14,7 +14,7 @@ Sam picks a hook off her bench in November and weighs it in his hand.
 
 "That's better than anything else down here."
 
-She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "The scroll's wrong, right at the top curve. It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it."
+She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "The scroll's wrong, right at the top curve. It goes tight and then opens out, right where my thumb is. That's two curves welded in the middle pretending to be one. Hold it up at the window and you'll see it."
 
 Sam holds it up with an eye shut, then hands it back.
 
@@ -36,7 +36,7 @@ That month Bell takes the metronome off the post and pockets it in front of all 
 
 "Which of us calls it?" Odile says.
 
-"That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first, because whoever calls the count is the one whose bad afternoon everybody else has to have."
+"That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first. Whoever calls the count is the one whose bad afternoon everybody else has to have."
 
 Chloe and Odile take a week to settle it and spend most of those days arguing, because Odile's count is steadier while Chloe's holds up better late in a long day, when Odile begins stretching hers by a fraction she is unaware of, which Chloe establishes with a watch behind her over several sessions. Odile calls for November and hates it by the end of the month, so after Christmas they swap according to the day, but the hit rate drops for a fortnight before coming back higher.
 
@@ -48,7 +48,7 @@ Her cuffs stop reaching her wrists in October, and inside a fortnight she and Ru
 
 "I have said nothing at all to you, I promise," she says, smirking.
 
-"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve, but finished a good deal taller, so make the most of your next few years, because that's the whole of what you're getting."
+"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve, but finished a good deal taller, so make the most of your next few years."
 
 ________________
 
@@ -114,7 +114,7 @@ Saturday afternoon is the stock count: a clipboard between them, shelves of tinn
 
 "You said three hundred and ninety on the last shelf, but there were sixteen left over."
 
-"There were not sixteen of anything left over, because I counted it twice before I wrote the number down."
+"There were not sixteen of anything left over."
 
 "Sam," Ruth says, pointing at the floor with her chin. "They're by your foot."
 
@@ -324,7 +324,7 @@ Her father sets down the other dish and sits back with his arms folded. "What we
 
 Her mother stops with the spoon out over the dish, only the steam moving at that end of the table, then puts it on the cloth. "Signed off by who?"
 
-"The school. You do the ovens in the cooking block in second year and then you're on the list," Chloe says, looking from her mother to her father. "I'm on it, Kavi's on it, Sam and Ruth are on it, and anyway the oven is the one part they let go, because what they got us for was being out of our rooms and in a kitchen alone when the rule says you tell somebody first."
+"The school. You do the ovens in the cooking block in second year and then you're on the list," Chloe says, looking from her mother to her father. "I'm on it, Kavi's on it, Sam and Ruth are on it. The oven is the one part they let go. What they got us for was being out of our rooms and in a kitchen alone when the rule says you tell somebody first."
 
 Her father makes a noise into his glass and puts a hand over his mouth, but her mother looks at him with her chin down until the hand comes away, after which he folds his napkin into quarters in front of him.
 

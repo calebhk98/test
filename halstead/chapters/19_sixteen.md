@@ -38,7 +38,7 @@ Bex passed, and comes the length of that hall to find her before dinner, saying 
 
 "It's nothing, it's a tick anywhere on the paper, and the retake's in October, so it costs you a summer and it costs you nothing else. Everybody on that board who missed is sitting it again in October. Nobody is going to remember by Christmas which of you was on which side of the line, and if they do remember, they'll have the margin wrong within a week anyway."
 
-"It's the margin, though, because as a share of the whole paper that's about a..."
+"It's the margin, though. As a share of the whole paper that's about a..."
 
 "A fiftieth. It's a fiftieth, Chloe, it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them.
 
@@ -58,7 +58,7 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "Whoever marks this already knows all of it. It's contract law and not a mystery, and there is exactly one rule that could possibly apply to a shed sitting in a yard for two weeks. He knew the answer before he opened the paper."
 
-"I would like you to sit down while I say the rest, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely, and he only had the words you actually gave him to work with." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
+"I would like you to sit down while I say the rest. You're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely, and he only had the words you actually gave him to work with." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
 Chloe goes down the rows and back up them, then looks up at him and back down at them.
 
@@ -78,11 +78,11 @@ People are getting up out of their chairs as she goes back to hers, unhurried, h
 
 In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
-"Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out, because a blank space tells him you knew where to stop and a repeated sentence tells him you didn't."
+"Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out. A blank space tells him you knew where to stop. A repeated sentence tells him you didn't."
 
 "It's the same sentence," she says. "Just restated so it sounds like it's adding something."
 
-"It's the same sentence to you, because you already know why the risk sits with the buyer. The marker has to be given that reasoning rather than assumed to already have it, and right now the page hands him a single idea wearing two coats. He can only mark what is actually on the paper in front of him, not the paper you'd have written if you'd had more room to write it." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
+"It's the same sentence to you. You already know why the risk sits with the buyer. The marker has to be given that reasoning, not assumed to already have it, and right now the page hands him a single idea wearing two coats. He can only mark what is actually on the paper in front of him, not the paper you'd have written if you'd had more room to write it." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 
 In a single fast paragraph she writes the shed burning down, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, all of it, right there on the page where somebody can actually see it."
 
@@ -116,7 +116,7 @@ In December, a year below and sitting the bar in April, Marek asks for the pract
 
 He keeps them a fortnight. What comes back is the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
 
-"That's better than theirs," he says, delighted with it, already going. "Do that."
+"That's better than theirs," he says, already going. "Do that."
 
 That evening, before she starts anything else, she works it, and it takes her the whole evening.
 
@@ -154,7 +154,7 @@ Chloe has the glass on the step beside her, sweating a ring into the wood. "He's
 
 "How does it not touch him, forty percent year after year? I'd have packed the whole thing in by now, or I'd have made your mother listen to it every night at this table for a year."
 
-Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it, because Ruth's on ninety-one and apparently that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him."
+Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it. Ruth's on ninety-one, apparently, and that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him."
 
 Her father laughs at that, head back, longer than the joke should carry him.
 

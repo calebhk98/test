@@ -96,7 +96,7 @@ The rest of them she works through like that, at a carrel on the fourth floor wi
 
 Second language. Reading level. Fractions. Each of them goes into the chat, but she watches somebody make a joke inside a minute and move on.
 
-What she types out is fuller than what actually goes up: drafts that spell out the methodology, the sample size, why this is different from being slow at Portuguese. Most of the drafts die before sending, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
+What she types out is fuller than what actually goes up: drafts that spell out the methodology, the sample size, why this is different from the Portuguese class she sat all last year and finished in the bottom third of. Most of the drafts die before sending, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
 
 In April she stops posting, because she has understood what the numbers add up to and would rather somebody else say it first.
 

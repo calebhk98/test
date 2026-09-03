@@ -26,13 +26,13 @@ Ruth watches her write it on the inside cover of a notebook. "Aymar. A, Y, M, A,
 
 Ruth just gives her the number this time, so Chloe writes it under the name, leaves four blank lines, and puts Sam's name on the fifth.
 
-Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him, then points down the corridor at nobody. "I have been through this whole building since lunch, the office, then the laundry, then outside to the road, because I thought you might still be sitting in the car. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour. Sam knew the entire time and let me do the whole tour anyway."
+Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him, then points down the corridor at nobody. "I have been through this whole building since lunch, the office, then the laundry, then outside to the road. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour. Sam knew the entire time and let me do the whole tour anyway."
 
 "He forgot." Ruth shrugs at him. "He's been telling everyone for a week, so it stopped feeling like news to him before it ever actually happened."
 
 "That's worse than not knowing." Kavi sits down on the floor by the door. "If you don't know then it's nobody's fault, but he knew and he forgot, and that's a decision about how much it mattered. What. I'm allowed to think that's worse without both of you looking at me like that," he says.
 
-"What's your last name, because you're going right under Ruth's, and then I've got everybody here except Sam's number," Chloe says.
+"What's your last name," Chloe says.
 
 The dining hall is long tables under a roof high enough to keep the noise, so the far end of it comes back down the room with the words gone out of it. At dinner she counts sixteen familiar faces before the food comes and gives up after that: of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term at a time until it stopped being a thing anybody remarked on. A boy asks whether she is the one who did the bridge at camp, and when she says no he says that's fine and carries on eating. On the way out Sam shows her a corridor window that sticks half an inch open however hard you push it, then walks past the second-floor noticeboards with his eyes ahead. On the way back with the trays she asks Ruth about Owen.
 
@@ -50,7 +50,7 @@ The corridor lights go out and Fen stops answering partway through a sentence, a
 
 "How do you know which rock goes where, in the dark, without even checking?"
 
-That gets her sitting up. "By size, smallest closest to the door, and if two look the same I hold one in each hand, because heavier's always a little bigger even when you can't see it." She reaches over and picks one off the sill, finding it in the dark by feel. "This one arrived in March, went in fourth from the end, and moved everything after it along. If I find another tomorrow the whole row moves again. That's the only rule there is, and nobody touches them but me."
+That gets her sitting up. "By size, smallest closest to the door. If two look the same I hold one in each hand. Heavier's always a little bigger even when you can't see it." She reaches over and picks one off the sill, finding it in the dark by feel. "This one arrived in March, went in fourth from the end, and moved everything after it along. If I find another tomorrow the whole row moves again. That's the only rule there is, and nobody touches them but me."
 
 "Why do you bother, if you're leaving the room in August?"
 
@@ -72,7 +72,7 @@ The second hour she picks herself, off the elective list on the wall, and she pi
 
 "Yours is a triangle, and a triangle cooks unevenly no matter how good your knife work is otherwise," the cooking teacher says.
 
-"It's just wider at one end, because that's how the onion grew."
+"It's just wider at one end."
 
 Ruth carries on cutting. "It's fine at this end and it's a triangle at that end, so the little bits go black before the big bits are even soft, and then you've got both and you haven't got either. That's why he keeps saying it. He's said it to me every week and he'll say it to you every week."
 
@@ -122,11 +122,11 @@ Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, a
 
 "Crying about what, though, did somebody say something to him or was it just the leaving?"
 
-"About going, because she came and got him and he wanted to stay. And he was keeping up, if that's the next one, because he was doing exactly what the rest of us were doing, the water thing and the bridge and all of it, and doing all of it fine," Kavi says, going up a step and stopping with his hand on the rail.
+"About going. She came and got him and he wanted to stay. And he was keeping up, if that's the next one. He was doing exactly what the rest of us were doing, the water thing and the bridge and all of it, and doing all of it fine," Kavi says, going up a step and stopping with his hand on the rail.
 
 "Then I don't understand what actually happened to him, if being behind was a separate thing entirely."
 
-"You already have all of it, Chloe, because his mom came and that was the whole of it. You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there," Kavi says, looking down at her from the stairs.
+"You already have all of it, Chloe. You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there," Kavi says, looking down at her from the stairs.
 
 Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor. The first Sunday runs fifty minutes, but the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
 
@@ -162,7 +162,7 @@ She still has to stop and think her way through Central Asia. South America is d
 
 "I'll call you on a Wednesday, the usual time, so you know when to expect it."
 
-"Wednesday's fine." Ruth is still looking out at the grass. "Though not before ten, because my dad's asleep by then and the phone's right outside his door."
+"Wednesday's fine." Ruth is still looking out at the grass. "Though not before ten."
 
 "September," Chloe says, with Sam and somebody's grandmother a few feet away on the grass.
 

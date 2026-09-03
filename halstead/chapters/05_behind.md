@@ -62,7 +62,7 @@ ________________
 
 The second week is the week that gets her, and the subject is mathematics.
 
-They are dividing fractions by turning the second fraction upside down and multiplying. Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. Chloe does eight problems in the packet and gets them all right, while the reason the turning-over works stays shut to her, and the gap between those two facts is making her furious in a way she can feel along her jaw.
+They are dividing fractions by turning the second fraction upside down and multiplying. Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. Chloe does eight problems in the packet and gets them all right, while the reason the turning-over works stays shut to her, and the gap between those two facts sits along her jaw, clenched tight enough to ache.
 
 "Why do you flip it," Chloe says.
 
@@ -200,7 +200,7 @@ ________________
 
 "The worst." Kavi says it to Sam, about Sam. "You do this every single time."
 
-Ruth has stopped eating for this. "The word is tidally locked. It isn't stuck and it isn't on purpose either. It got slowed down until it matched. It used to spin. Then it stopped spinning, over a really long time, because of us."
+Ruth has stopped eating for this. "The word is tidally locked. It isn't stuck and it isn't on purpose either. It got slowed down until it matched. It used to spin. Then it stopped spinning, over a really long time."
 
 "Okay, but that's how it got that way, and I'm talking about what it's doing now," Chloe says.
 

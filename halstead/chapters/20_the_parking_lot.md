@@ -18,7 +18,7 @@ They stay a couple of hours, long enough for Sam to want to know whether the den
 
 "He told you that, just like that, no hedging, no story about how it got there?"
 
-"He tells anyone who asks, straight out, because to him it's a dent, and a dent is the least interesting thing about a car. He's had that car since before any of us got here."
+"He tells anyone who asks, straight out. To him it's a dent, and a dent is the least interesting thing about a car. He's had that car since before any of us got here."
 
 "I'd act like it was a secret if it were my car. I'd have a whole story ready for anyone who noticed it. Different story every time."
 

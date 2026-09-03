@@ -18,6 +18,10 @@ Bell walks them down the field to show them the lanes, two firing lines seventy 
 
 Bell puts a hand out flat and holds it. "At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there. If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
 
+"So what are we aiming at, then, if it isn't the block?"
+
+Bell looks down the field at it. "The block stays where it is and none of you will touch it all year. Your target is coming the other way at sixty metres a second and it is in the air for about a second and a half. Say target and everybody here will know what you mean."
+
 "So how are we supposed to know when to let go of it?"
 
 Bell turns the metronome on. "Keep your eyes off each other. Off the whole time, both ends. You count."
@@ -184,13 +188,13 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "And are you any good at it, or is it early days yet?"
 
-"I hit it the first time in October."
+"I hit the target the first time in October."
 
-Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
+Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear. Once on the board in a whole year is hardly a lot, is it."
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 
-"That's better, then, it sounds like you just want the practice." Her grandmother settles back into the chair with her tea. Chloe folds the envelope shut along the line she drew and keeps it.
+"That's better, then, it sounds like you just want the practice. Your grandfather shot at a club for years and he could put six in the gold on a good evening." Her grandmother settles back into the chair with her tea. Chloe folds the envelope shut along the line she drew and keeps it.
 
 ________________
 

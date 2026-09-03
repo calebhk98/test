@@ -32,7 +32,7 @@ Before she sits down she deletes the whole batch of accounts from where she's st
 
 The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologises over and over inside those twenty minutes, twice for taking up the evening and twice for having answered the message at all.
 
-"Call the bank the minute they open and read them that number," Nadia says, at the end of it. "Then call me back and tell me what they said, however it goes. If they hand you a form, fill it in standing at the counter, because a form that goes home in a bag gets filled in never. And stop apologising to me, because what you did was answer a message from an employer on a site with my own name up on the window of it."
+"Call the bank the minute they open and read them that number," Nadia says, at the end of it. "Then call me back and tell me what they said, however it goes. If they hand you a form, fill it in standing at the counter. A form that goes home in a bag gets filled in never. And stop apologising to me, because what you did was answer a message from an employer on a site with my own name up on the window of it."
 
 Twice, slowly, she reads the digits out, and writes them on the back of the page. Then she stays in the back room a while with the light off and the phone still in her hand.
 
@@ -126,7 +126,7 @@ On she goes to the next thing on her list.
 
 "You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and there's nothing on a screen anywhere that says this room. Whatever you carried up those stairs, you carried a printout. You've got no idea who you're standing in front of."
 
-Nadia laughs; it is a single sound, and it is out of her before she has decided anything about it.
+Nadia laughs; it is a single sound, already out of her mouth before she catches up to it.
 
 "Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in, and a required field is a required field whether the person filling it in is honest or not."
 
@@ -238,7 +238,7 @@ Whoever answers the second question properly gets a longer interview than the sc
 
 The ones she already has are the ones who answered it.
 
-A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine, but none of it's theirs, and I'd rather fix the part that's actually broken." She writes the ceiling herself that night.
+A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works. Then it's all mine, but none of it's theirs, and I'd rather fix the part that's actually broken." She writes the ceiling herself that night.
 
 Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts.
 

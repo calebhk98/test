@@ -80,7 +80,7 @@ On the fourth night Sam crosses a stretch of ground with the footing gone soft a
 
 There is a shift of weight behind him and off to the left, too sudden and too heavy to be the ground settling.
 
-The rifle is coming round before he has decided anything whatever about it, and that is as far as he gets, because the tone starts while the muzzle is still swinging. Only the one of them is going, so the question of whose it is settles itself.
+The rifle is coming round while his mind is still catching up to it, and that is as far as he gets, because the tone starts while the muzzle is still swinging. Only the one of them is going, so the question of whose it is settles itself.
 
 Sam comes up out of the cut and stands there in the open with his own harness going into the last hour before dawn, but the man who shot him comes up out of the weed line thirty feet back, so low to the ground on the way up that Sam hears him a full second before he can find him.
 
@@ -104,7 +104,7 @@ The opposing element goes first, because they were on the ground considerably lo
 
 "Night two, you took a wrong bearing off this tree line here," he tells the first soldier up, "which cost you three hours finding the checkpoint again. Walk me through what you were reading off the map at the time." The soldier does, and the major nods once and waves him back to his seat.
 
-"You went the whole exercise untouched," he tells the second, checking the overlay against his clipboard twice before he commits to saying it. "The opposing element apparently failed to locate your line of travel at any point in the whole exercise. That is only sometimes good news, so hold the compliment for later, because it might simply mean they had better things to do than come looking for you."
+"You went the whole exercise untouched," he tells the second, checking the overlay against his clipboard twice before he commits to saying it. "The opposing element apparently failed to locate your line of travel at any point in the whole exercise. That is only sometimes good news, so hold the compliment for later."
 
 The soldier stands there listening to his own good luck read out loud, but looks considerably more unsettled by it than a contact would have left him.
 

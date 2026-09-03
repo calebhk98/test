@@ -40,7 +40,7 @@ Mr. Amberg's pen stops moving, and he sets it down, a thing she has seen him do 
 
 "Reason?"
 
-Finding it takes her a moment, and she turns the folder's edge slightly with a finger before she answers. "If you sat one exam every year, in a single room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it, because she has been assembling the answer since the clock on his desk started. "I don't know what's outside this building, and everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
+She does not have to find it. "Because it's school," she says. "You do the school and then you leave and you do the next thing. That's what it's for. I've been in this building since I was seven, and staying in it isn't the next thing, it's the same thing with a different door on it."
 
 Mr. Amberg writes it down, then squares the folder against the edge of the desk and opens it once more, the slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin, and he closes it exactly when the clock reads zero, with the pen back in the cup at the corner of the desk.
 
@@ -106,7 +106,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "I haven't told them."
 
-That too he writes down, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands, and Chloe is already up.
+That too he writes down, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands, and Nadia is already up.
 
 That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him, and a second count gets there too. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, over and over, and gets that figure every time. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in more forms before the first bell.
 
@@ -120,7 +120,7 @@ In the evening she finds him in the network room, back against the radiator by t
 
 "Because what I want to do is happening in one building and I'm standing in it," Kavi says, and keeps turning the cable.
 
-"But it's school," she says. "Same building, same people, and the whole point is finding out if any of this holds up somewhere else. You'd never know afterwards whether it was you or the building."
+"But it's school," she says. "You do school and then you leave and do the next thing. Same building, same people, same corridor to the same room. That isn't the next thing."
 
 "It stopped being school for me a while ago, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against. Nobody in that room knows the answer either. That is the difference and it is the whole difference." "I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong, because it was still unchecked. That's a research problem, not a classroom one, because a classroom's whole job is already knowing." He gives her the look he saves for a mark scheme, and says the next part in the register he'd use to correct a wrong exponent. "It's a lab that also has children in it."
 

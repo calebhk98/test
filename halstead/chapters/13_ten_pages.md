@@ -36,7 +36,7 @@ The first term is ones: standing, falling, getting up off the floor with somebod
 
 The 10v1 starts in January.
 
-"One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "A few rounds a class, and the rest of the hour is what you've been doing since September, because that carries on regardless. Nobody gets to skip conditioning just because they've started sparring. You'll be doing both right up until the day you stop coming to this room at all."
+"One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "A few rounds a class, and the rest of the hour is what you've been doing since September. Nobody gets to skip conditioning just because they've started sparring. You'll be doing both right up until the day you stop coming to this room at all."
 
 "That's a lot," Chloe says. "That's twice as many hands as I've ever had on me at once."
 

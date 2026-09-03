@@ -4,7 +4,7 @@
 
 Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, again and again, to things Chloe can't make out from where she is sitting.
 
-Her mom winds the phone cord around her fingers. "No, I appreciate you calling, because most people wouldn't have. She's been like this since August, and it's about her, not about you or the house, she was completely fine in July, but then school started."
+Her mom winds the phone cord around her fingers. "No, I appreciate you calling. She's been like this since August, and it's about her, not about you or the house, she was completely fine in July, but then school started."
 
 Chloe goes back up before the call is finished.
 
@@ -194,7 +194,7 @@ Her mom says it carefully. "Sweetheart, I need you to tell me the truth. Is some
 
 "No," Chloe says, shaking her head against the pillow.
 
-"You can tell me if somebody is, because telling me keeps you out of trouble and goes nowhere except me. I wouldn't go to the school with it unless you said so."
+"You can tell me if somebody is. I wouldn't go to the school with it unless you said so."
 
 "No," Chloe says again, to the wall this time. "Nobody at that school is bullying me."
 

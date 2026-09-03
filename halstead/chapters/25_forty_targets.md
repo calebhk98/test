@@ -138,7 +138,7 @@ ________________
 
 Qualification is the second Thursday of October, in the ninth week, and it is forty targets.
 
-The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it, three minutes and fifty-eight seconds from the first exposure to the last.
+The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty metres to three hundred, eight exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it, three minutes and fifty-eight seconds from the first exposure to the last.
 
 Sam counts himself down, then works the table at an unhurried pace that leaves him waiting on the tower twice.
 

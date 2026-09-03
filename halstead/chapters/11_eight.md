@@ -2,7 +2,7 @@
 
 *June 2013 – June 2014*
 
-Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one, because that's not fitting you again even by September."
+Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one."
 
 "It's fine, because my feet still reach if I stretch, and stretching's basically the same as reaching."
 
@@ -46,7 +46,7 @@ Upstairs the shower is running, and has been for twenty minutes, with the singin
 
 In the third week Chloe tries to teach her mother Spanish at the counter, with the dishes half done.
 
-"Say it again, slower this time, because I lost it somewhere in the middle."
+"Say it again, slower this time."
 
 "Ell-oss ess-tan."
 
@@ -142,7 +142,7 @@ You start on paper targets for a while, then a target somebody swings across the
 
 Somebody down the line says that's impossible.
 
-Bell holds a dart up and turns it so the whole line can see it. "It isn't, and I'll tell you why now instead of letting you spend a week deciding it is. Look at the size of the thing next to your hand, and look how slowly it comes at you once you're watching for it, because you can watch the entire flight end to end, and that makes it the easiest thing in this building to hit. You'll all be bad at it until Thursday."
+Bell holds a dart up and turns it so the whole line can see it. "It isn't, and I'll tell you why now instead of letting you spend a week deciding it is. Look at the size of the thing next to your hand, and look how slowly it comes at you once you're watching for it. You can watch the entire flight end to end. That makes it the easiest thing in this building to hit. You'll all be bad at it until Thursday."
 
 By the end of the first month everybody in the year can do it at will, the whole year split either side of the net, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
 
@@ -198,7 +198,7 @@ Sam is already walking backward down the corridor. "They put a wall up the side 
 
 Her name goes on the choir line, because she sang in the shower every day of the summer and it was the part of most days she looked forward to, but choir turns out to be a different activity wearing the same word, in which you stand in a block of thirty and the whole job is matching. The woman moves her to the back row and tells her she goes flat on the way down, but by a steady amount every time, so she is at least flat somewhere useful.
 
-"Stand next to Amara and match her, because she's doing the thing I keep asking you for and can't tell you how either."
+"Stand next to Amara and match her."
 
 Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the thing she came in for. What she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, but sings in the shower afterward, where she was doing it to begin with.
 

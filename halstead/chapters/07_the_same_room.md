@@ -26,7 +26,7 @@ In August her mom is standing at the counter sorting through the mail, while Chl
 
 Chloe's mouth opens, then stays open a beat too long. "A number was extra." Her mom is still waiting for it. "I always just asked him myself, in person."
 
-"That's all right, we can look him up, because everybody is in the book. What's his last name, sweetie, since that will get us there faster than the first name will," her mom says, getting the phone book out from under the microwave and opening it on the counter while she looks at Chloe.
+"That's all right, we can look him up. What's his last name, sweetie, since that will get us there faster than the first name will," her mom says, getting the phone book out from under the microwave and opening it on the counter while she looks at Chloe.
 
 Chloe opens her mouth, then closes it, and goes upstairs to sit on the end of her bed and try to remember. Sam says the "and a half" after his age every time; sleeps with his window open, which he mentioned more than once; has a sister, or possibly a cousin, who plays soccer, though she is still unsure which; swims two lengths straight through, a fact that came up at dinner most days for a month; and thinks he is funny, which she can still hear, the short bark of it and then his hand over his mouth.
 
@@ -46,7 +46,7 @@ Her mom's hand comes off the phone book and rests on top of Chloe's head for a s
 
 "I had no idea I would need it, but now there's no way left to find out," she says, and her mouth goes tight at the corners, the way it does right before she cries.
 
-Her mom's eyes come up. "It's OK, the last names can go, because we can just ask the school instead," and she closes the phone book and gets the camp folder down off the shelf by the door.
+Her mom's eyes come up. "It's OK, the last names can go. We can just ask the school instead," and she closes the phone book and gets the camp folder down off the shelf by the door.
 
 Somebody at the school picks up on the second ring, and Chloe gets close, straining to hear. Her mom gives their name, then Chloe's, confirms yes, that's her, and settles into a long stretch of listening, her weight going onto one foot and then the other.
 
@@ -64,7 +64,7 @@ She takes her book down and reads it in the kitchen, in the chair that puts the 
 
 "How many weeks, though? I want an actual number," Chloe says, standing at the counter with the book still open against her chest.
 
-"Honestly, sweetheart, it's hard to say, because it could be one week or it could be a month, and every call moves at its own pace."
+"Honestly, sweetheart, it's hard to say. It could be one week or it could be a month, and every call moves at its own pace."
 
 After that she stops sitting in the kitchen, though she still crosses the room to check the phone is on the hook before she goes up, every night, and she still comes down the stairs fast if it rings.
 
@@ -110,7 +110,7 @@ Somebody asks whether you can swap groups, and Ms. Vance says no in a way that h
 
 The first math sheet comes around midmorning, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, but now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her, relieved to find it still works like it worked in first grade.
+Fractions at camp, staying up until the number finally sat still on the page, but now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her, finding it still works like it worked in first grade.
 
 ________________
 
@@ -152,7 +152,7 @@ Her mom drives her to the library on Thursday and waits in the car with the engi
 
 "Not this week. I've got a lot going on."
 
-"Since when do you skip an entire week, though, because that's new."
+"Since when do you skip an entire week, though?"
 
 "I've just got a lot of school stuff," Chloe says.
 

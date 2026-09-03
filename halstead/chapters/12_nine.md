@@ -6,7 +6,7 @@ On the first morning the sheet in her box has one more line on it than last year
 
 "There's an extra line on here, but last year's only had seven on it."
 
-The woman goes back to the form in front of her. "Nine-year-olds get eight, that's just how the sheet works this year, and you were on seven, so it's one more than you're used to. It goes up every single year, because that is supposed to be the whole idea of a school, so is there a problem with it?"
+The woman goes back to the form in front of her. "Nine-year-olds get eight, that's just how the sheet works this year, and you were on seven, so it's one more than you're used to. It goes up every single year, so is there a problem with it?"
 
 "No." Chloe stays at the counter. "I wanted to know whether somebody had put it on there by mistake."
 
@@ -14,11 +14,11 @@ The woman goes back to the form in front of her. "Nine-year-olds get eight, that
 
 Her new ones are chemistry, statistics and biology, and Ruth has them in a different order but is smug about getting chemistry first. Kavi got none of the ones he asked for, and at breakfast he puts his objections in order with his own sheet spread out on the table beside the tray.
 
-"The first is that the form does nothing, because it asks you for three, but it gave me zero of them."
+"The first is that the form does nothing. It asks you for three, but it gave me zero of them."
 
 "They read it. They counted how many people wanted each thing, and then they did what they were going to do anyway," Ruth says.
 
-Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it, because what it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
+Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it. What it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
 
 Sam has stopped with the spoon halfway up. "Is there a third?"
 
@@ -56,11 +56,11 @@ The reading comes fast, because the characters go in and stay in, so that in Nov
 
 The sound is the other half, and it stays out of reach, because the tones sound like four different people saying one word, easy enough to tell apart, and yet she cannot make the difference happen in her own mouth. In November Mrs. Sun stops the hour and does it on the board for the whole room, because half the room has it.
 
-Mrs. Sun says a syllable four ways, and every time it is a different word. "You're hearing tone as emphasis, and that's English doing it to you, because in English you go up at the end to make a word matter. Here the pitch sits inside the word. The pitch *is* the word. It's the same as changing a letter in it."
+Mrs. Sun says a syllable four ways, and every time it is a different word. "You're hearing tone as emphasis, and that's English doing it to you. In English you go up at the end to make a word matter. Here the pitch sits inside the word. The pitch *is* the word. It's the same as changing a letter in it."
 
 "I know that, I've known that since the first week, but I still can't hear it happening in my own mouth no matter how hard I listen for it."
 
-Mrs. Sun writes a list on the board, in the middle of it where the surface has gone glassy from use and the chalk goes quiet. "You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside. Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
+Mrs. Sun writes a list on the board, in the middle of it where the surface has gone glassy from use and the chalk goes quiet. "You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside. Record yourself and play it back. You'll hear it coming out of a speaker. Sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
 
 Chloe does all of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it, and Ruth starts sitting with her on Sundays in December, saying exactly what is wrong with each attempt, so that by June anyone who already expects her accent follows it, whereas a stranger loses her by the second sentence. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up a long way apart, but who Ruth can separate instantly.
 
@@ -70,7 +70,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "It's got eleven people in it, Kavi, which makes it a coincidence with a p-value attached to it."
 
-"Small result, so round it down, because a room that size is basically noise dressed up as a finding."
+"Small result, so round it down."
 
 "Small is the wrong word, because that is the size of result a room that small hands you by accident, which is the entire-" Chloe stops, because Sam has his hands over his ears now, humming. "We're nearly done, so give us a minute and you get your ears back."
 
@@ -82,7 +82,7 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Where did it come from, though? I only used what was on the list this time."
 
-"Glassware, reagent, or you, take your pick, because it is always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes already on the next bench.
+"Glassware, reagent, or you, take your pick. It is always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes already on the next bench.
 
 On the Friday she runs it again, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
@@ -162,7 +162,7 @@ ________________
 
 Home for the summer, she sleeps most of the way through the first week of it without anybody stopping her.
 
-Her mother makes a joke about it on the fourth day but a smaller version of it on the fifth, then stops making it. On the sixth she comes in, puts a glass of water on the nightstand, and goes back out. Watching a film with her father in the afternoon, Chloe has no opinion about it whatsoever, which she finds restful, so they watch another. In the second week she rides out to the reservoir and back, the long way round on the road, and comes in through the kitchen door filthy and starving in the middle of the afternoon.
+Her mother makes a joke about it on the fourth day but a smaller version of it on the fifth, then stops making it. On the sixth she comes in, puts a glass of water on the nightstand, and goes back out. Watching a film with her father in the afternoon, Chloe has no opinion about it whatsoever, so they watch another. In the second week she rides out to the reservoir and back, the long way round on the road, and comes in through the kitchen door filthy and starving in the middle of the afternoon.
 
 Her mother takes some days off in July and they do the coast, a long drive each way to a motel with a pool, where Chloe swims for most of two days. On the second evening her mother teaches her cribbage on the balcony, on a board her own father made out of walnut in about 1961.
 

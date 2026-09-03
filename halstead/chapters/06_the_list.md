@@ -4,11 +4,11 @@
 
 The parent hotel has a breakfast room with waffles on paper plates, and every morning there is a roomful of adults in it who all know each other by now. On the last Wednesday Chloe climbs onto the chair beside her dad on her knees, gets syrup on her fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small noise nobody at the table notices.
 
-"We drove it, both ways, because there was no version of this where we put her on a bus. We looked at the map for an hour and decided we'd rather just drive it ourselves," a man says, on his feet with a paper plate in one hand.
+"We drove it, both ways. We looked at the map for an hour and decided we'd rather just drive it ourselves," a man says, on his feet with a paper plate in one hand.
 
 "All of us drove, but the letter offered a bus."
 
-"Somebody must have taken it, because a letter that lists transportation has somebody in mind."
+"Somebody must have taken it."
 
 "This is my second time in this room and that bus has stayed a rumour both times," the woman next to him says, hands round a cup of coffee gone cold.
 
@@ -108,7 +108,7 @@ When he asks her to do the fractions again from the start, she turns the napkin 
 
 "He did it on the board and the whole thing went past me, so I did it again at night with my own numbers, and then I had it."
 
-"But you could already do them, because you told me you got all eight of them right."
+"But you could already do them. You told me you got all eight of them right."
 
 "Anybody can do the flipping," Chloe says, putting the pen down. "You do it and it comes out right. But the rightness belongs to him and not to you. All you actually know is that he said so. You never watched the digits go in and the right number come out on your own napkin."
 

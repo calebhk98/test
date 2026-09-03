@@ -90,7 +90,7 @@ Kavi says, with the board behind him and nothing on it yet, "A hand's width is u
 
 Ruth says, "Agreeing about the time is the smaller half of it. Something has to decide which sample the sound starts on, and decide it the same way at every box, off a field with a road down the side and wind coming in the open end, where the front of a sound is a slope and not an edge."
 
-Chloe says, "Then hand me arrival differences and I'll hand you the place. And the boxes don't go along the near edge, whatever the cable wants, because boxes in a line give you a direction instead of a point, so we'd be fine down the middle and no good at all at either end."
+Chloe says, "Then hand me arrival differences and I'll hand you the place. And the boxes don't go along the near edge, whatever the cable wants, so we'd be fine down the middle and no good at all at either end."
 
 Nadia has the field drawn on the board by then with the posts marked on it. "Wireless. A wire is people. A wire is a morning putting it down and a morning taking it up, and every hand out there is a hand that isn't somewhere else."
 
@@ -100,7 +100,7 @@ Kavi turns round to look at the board. "Then the air isn't the same speed at bot
 
 Nadia writes it up under the posts and says nothing about it.
 
-Priya is along the radiator under the window with her boots up on the pipe. "You're going to set the clocks off a sound, though, and if you make the sound at a spot you've measured and slide the clocks about until the boxes agree about that spot, everything wrong with the boxes has gone into the clocks and you've written calibration on it, so it reads beautifully at that spot and lies everywhere else, and the staff are not going to put it where we calibrated, because not doing that is the whole of what they told us they'd do."
+Priya is along the radiator under the window with her boots up on the pipe. "You're going to set the clocks off a sound, though. If you make the sound at a spot you've measured and slide the clocks about until the boxes agree about that spot, everything wrong with the boxes has gone into the clocks and you've written calibration on it. It reads beautifully at that spot and lies everywhere else. The staff are not going to put it where we calibrated. Not doing that is the whole of what they told us they'd do."
 
 Nobody answers that on the Tuesday and nobody has a better answer on the Thursday.
 
@@ -118,7 +118,7 @@ Ruth stops eating. "A fortnight. So we've been building against a number you kne
 
 "That's a hope with a schedule on it."
 
-Nadia goes to the board on the Thursday and puts the wire back on it. "Then it's wire, and the clock goes down the wire, and Priya's problem goes away on its own, because nothing gets calibrated off a sound any more."
+Nadia goes to the board on the Thursday and puts the wire back on it. "Then it's wire, and the clock goes down the wire, and Priya's problem goes away on its own."
 
 They lay a hundred and sixty metres of it down the long field on the Saturday in rain, pegged along the fence and taped at the posts, and lift it again on the Sunday because the mowers are out on the Monday. Sam comes down for the lifting because Odile asked him to. Nadia stands at the top of the field at the end of it with her hands up her sleeves.
 
@@ -138,7 +138,7 @@ Chloe has the arrival sheets and nothing yet to put into them, so she sits in th
 
 "It's picking the road up, and I could see it doing it from here."
 
-Ruth pulls the chair round without getting off it. "Then it's picking the road up at all of them and I need to know that, and now I can't, because you've made that box different from the rest of them. Do your own end again, or go to bed, or go and find me something to eat, and leave mine alone."
+Ruth pulls the chair round without getting off it. "Then it's picking the road up at all of them and I need to know that, and now I can't. You've made that box different from the rest of them. Do your own end again, or go to bed, or go and find me something to eat, and leave mine alone."
 
 Chloe goes and finds her something to eat.
 
@@ -166,7 +166,7 @@ Ruth does sound, all of it synthesised live off whatever the user is doing, and 
 
 "I've played it hundreds of times, and it does it every single time."
 
-"Play it again and let me hear the part before the note, because you keep starting where you think it starts."
+"Play it again and let me hear the part before the note. You keep starting where you think it starts."
 
 Ruth plays it twenty more times, and then at one in the morning she sits up so fast the machine slides off her.
 

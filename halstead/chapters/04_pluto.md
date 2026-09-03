@@ -30,7 +30,7 @@ The laundry bags are green, and they go outside your door on Tuesday and Friday 
 
 The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home but in the office.
 
-Lights out is earlier for the under-eights than for everybody else, which puts Chloe in the first group by a year and a half.
+Lights out is earlier for the sixes than for the sevens, which puts Chloe in the first group until August.
 
 "If you stop wanting to be here, tell any adult and we'll take you home, same day, with no argument about it from anybody here, no attempt to talk you round."
 
@@ -104,7 +104,7 @@ In the morning her mom drives her back and tells her she can do that every night
 
 ________________
 
-The rooms are named after planets, which she works out on the second day, walking down the hall behind a group of the bigger children.
+The rooms are named after planets, which she works out on the second day, walking down the hall behind a group of the ones who already have their second teeth.
 
 Mercury, Venus, Earth, on little brass plates screwed in beside the doors at adult height, then Mars, then Jupiter, then Saturn, Uranus, Neptune, then a water fountain, then one more door past the fountain at the very end, with a plate on it that says PLUTO.
 
@@ -118,7 +118,7 @@ Then a boy laughs, one loud honk of it right up close, and her jaw unclenches al
 
 "It's not even a room. It's a room-shaped object," he says.
 
-Chloe laughs until she has to put her forehead against the wall, before somebody else catches it too, a couple of the bigger children by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
+Chloe laughs until she has to put her forehead against the wall, before somebody else catches it too, a couple of the boys by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
 
 Then a girl says something from further up the line.
 

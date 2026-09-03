@@ -248,7 +248,7 @@ Her mom makes a sound, and Chloe can't tell from out here which kind it is.
 
 "How far at the top of it?"
 
-"That is the part I can't give you, because on a couple of them she got to the end of what the form has for her age and I kept going with a different one, and none of that counts. The form ran out before she did."
+"That is the part I can't give you. On a couple of them she got to the end of what the form has for her age, and I kept going with a different one, but none of that counts. The form ran out before she did."
 
 Chloe shifts on the chair, her feet nowhere near the floor.
 
@@ -258,7 +258,7 @@ Chloe shifts on the chair, her feet nowhere near the floor.
 
 "Then what is it I am supposed to do with that?" her mom says.
 
-"The lever is the school, because that's where the empty hour is, so I can write it all up and you can walk it in there, and some of them do move on a report like that."
+"The lever is the school. That's where the empty hour is. I can write it all up, and you can walk it in there. Some of them do move on a report like that."
 
 "And the rest of them, what do they do with a report like that?"
 
