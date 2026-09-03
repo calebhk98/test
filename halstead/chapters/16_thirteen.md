@@ -108,7 +108,7 @@ That takes the rest of the term; what comes out is slow, ugly, and pushes exactl
 
 A Saturday belongs to whoever plans it. None of it is on a schedule and none of it is against a rule either: the workshop is open until the technician locks it at noon, the kitchens hand over whatever is going spare to anybody who turns up before they clear down, and the rest of the day is whatever the person holding it can talk the year into. It rotates, roughly, and it rotates by who says it first. Whoever has it stands up at breakfast and says so, and the year either comes or doesn't.
 
-Bex has the Saturday out loud before breakfast is cleared, the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that, and she revises it twice before the plates are stacked, moving the kitchens and then moving them back.
+Chloe has hers half out, workshop first, kitchens after, when Bex is already on her feet. Bex has the Saturday out loud before breakfast is cleared, the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that, and she revises it twice before the plates are stacked, moving the kitchens and then moving them back.
 
 "If we leave the workshop till after, we're," Chloe says.
 
