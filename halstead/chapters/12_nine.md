@@ -114,7 +114,9 @@ Bex Alcantar arrives at the end of your sentence before you get there and finish
 
 In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
 
-Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
+Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench. Then she gets her head under the pillow and runs the whole thing again the way it should have gone, out loud into the mattress, the version where she says the joints were hers and the teacher hears her say it.
+
+She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, warmly, meaning it, and Chloe says thanks, and the word comes out thin.
 
 Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin: that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
 

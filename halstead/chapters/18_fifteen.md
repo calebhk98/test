@@ -136,7 +136,9 @@ Chloe wipes the board and sits down.
 
 Iyad has more than figures. In February the thing he has about Chloe is a boy in the language block called Aurel, and he says it at the long table on a Tuesday in the middle of something else, as a thing everybody has known for a while. By the Thursday it has been said back to her twice.
 
-She has never heard the name in her life; finding out which boy it is would be easy enough, but she does not, and by March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
+She has never heard the name in her life. She has which boy it is by lunch, off the language-block timetable on the noticeboard, and walks past his door twice that afternoon to put a face to it; he is a head taller than her and does not look up either time. By March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
+
+She tells Iyad to stop, at the long table, in front of the same people he said it in front of. He says he only repeated what he heard and cannot help what he hears, and then asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs. Chloe has the number and does not give it to him, and sits back down, and eats the rest of her breakfast without tasting any of it.
 
 She stops using the language-block stairs.
 

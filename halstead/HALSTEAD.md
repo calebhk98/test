@@ -608,7 +608,7 @@ ________________
 
 Her mom calls the district office on Monday, where a receptionist takes the name down and says she'll look into it. Tuesday and Wednesday go quiet, but the callback comes Thursday afternoon. By then Chloe is on the stairs, on the step where the carpet stops and the wood goes cold under her.
 
-Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the one on the other end. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it, because I know it's not your job to go looking."
+Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the one on the other end. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it."
 
 Then the phone goes down on the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
@@ -640,7 +640,7 @@ Another wait, after which her mom says uh huh, then waits again.
 
 The voice goes on for most of a minute.
 
-"Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name. I want the name of that person. Not the department, not the program, the actual person who sat at a desk and put my daughter on a list I never agreed to."
+"Okay, but somebody made the list. Somebody sat down and typed my kid's name. I want the name of that person. Not the department, not the program, the actual person who sat at a desk and put my daughter on a list I never agreed to."
 
 Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom turns her head just far enough to find her and points at the stairs, so Chloe goes back up past the fourth one, which announces her every time, and sits on the fifth.
 
@@ -662,7 +662,7 @@ Her mom takes her hand off the phone.
 
 "And she said, and I want you to hear this exactly, she said their list is usually pretty good."
 
-"Usually pretty good is the vaguest possible way anybody could answer that question, because a phrase is what you reach for when you haven't got a number. That's the one thing she said all night that wasn't a fact."
+"Usually pretty good is the vaguest possible way anybody could answer that question. A phrase is what you reach for when you haven't got a number. That's the one thing she said all night that wasn't a fact."
 
 "Okay, and everything else?"
 
@@ -674,7 +674,7 @@ Her mom pulls out a chair and stands behind it.
 
 "And they're not from around here?"
 
-"Not one town, not one state, because she said they come from all over, and then she said we're one of the closer ones."
+"Not one town, not one state. She said they come from all over, and then she said we're one of the closer ones."
 
 "Four hours is one of the closer ones."
 
@@ -760,7 +760,7 @@ Chloe has the argument already worked out. "I'm going away for a month, to a cam
 
 The librarian looks up.
 
-"That's not how it works, honey, because it resets every time you come in, so it is still four however long you wait. It isn't a bank. You can't save them up."
+"That's not how it works, honey, it resets every time you come in, so it is still four however long you wait. It isn't a bank. You can't save them up."
 
 "But I'm not using them, and they'd just be sitting here."
 
@@ -871,7 +871,7 @@ Her mom picks up in the middle of the first ring.
 
 "I want to come there," Chloe says.
 
-"Okay, yeah, okay, stay right where you are, because I'm coming."
+"Okay, yeah, okay, stay right where you are. I'm coming."
 
 The hotel is half a mile away, but by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed.
 
@@ -2655,7 +2655,9 @@ Bex Alcantar arrives at the end of your sentence before you get there and finish
 
 In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
 
-Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
+Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench. Then she gets her head under the pillow and runs the whole thing again the way it should have gone, out loud into the mattress, the version where she says the joints were hers and the teacher hears her say it.
+
+She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, warmly, meaning it, and Chloe says thanks, and the word comes out thin.
 
 Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin: that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
 
@@ -3014,7 +3016,7 @@ Chloe holds her tray like somebody who intends to keep it. "It's the opposite of
 
 Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead a very long time, so every ending you get wrong stays wrong in private, for ever."
 
-"Answering back is beside the point, because what I want is to read what's already sitting in it."
+"Answering back is beside the point. What I want is to read what's already sitting in it."
 
 "Then you're learning to read a language rather than learning a language."
 
@@ -4154,7 +4156,9 @@ Chloe wipes the board and sits down.
 
 Iyad has more than figures. In February the thing he has about Chloe is a boy in the language block called Aurel, and he says it at the long table on a Tuesday in the middle of something else, as a thing everybody has known for a while. By the Thursday it has been said back to her twice.
 
-She has never heard the name in her life; finding out which boy it is would be easy enough, but she does not, and by March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
+She has never heard the name in her life. She has which boy it is by lunch, off the language-block timetable on the noticeboard, and walks past his door twice that afternoon to put a face to it; he is a head taller than her and does not look up either time. By March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
+
+She tells Iyad to stop, at the long table, in front of the same people he said it in front of. He says he only repeated what he heard and cannot help what he hears, and then asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs. Chloe has the number and does not give it to him, and sits back down, and eats the rest of her breakfast without tasting any of it.
 
 She stops using the language-block stairs.
 
@@ -4677,7 +4681,7 @@ Then somebody reads the essays, and what everybody notices first is the graduate
 
 An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people; she reads the sentence twice, and reads it a third time before she picks up the phone.
 
-"Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
+"Read this paragraph and tell me what you think it means. Don't tell me what it stands in for. I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
 
 Her colleague reads it standing in the doorway, still holding his own coffee. "It means exactly what it says, with no second meaning folded into it. I put two of these side by side on Friday, looking for the template, and they argued opposite sides of the same question, and both of them were worth reading."
 
@@ -4773,7 +4777,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software. Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday. Nothing on it is built to finish." Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -4807,7 +4811,7 @@ Ruth gets MIT and calls home, where her mother puts her on speaker so her father
 
 Odile gets in everywhere. The rest of the year hears about it days later, when Priya finds the letters stacked unopened in date order on her desk and says so at dinner in front of half the table.
 
-Chloe gets all but two.
+Chloe gets all but two, having spent the week working out which of the fourteen she would still be able to say out loud at dinner after the rest had gone, and having settled on the state school and the community college.
 
 Outside her window the snow along the path has gone soft and grey, the last of it, weeks off the end of term, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
 
@@ -4948,7 +4952,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "Three of them will be doing something else by Christmas."
 
-"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked, because checking the rest of it before there's anything to check would just be a way of not starting."
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked. Checking the rest of it before there's anything to check would just be a way of not starting."
 
 "What do your parents say?"
 
@@ -5006,7 +5010,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Dave." Her mother's voice moves off the phone and comes back closer, both of them on the line now, close enough for Chloe to hear them breathing on top of each other.
 
-"Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
+"Say that whole thing again for me," her father says, "every part of it, from the start. I want to hear it properly."
 
 "Research, full time, starting the day I'd have gone to a dorm. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's all of it. That's everything that was on the desk."
 
