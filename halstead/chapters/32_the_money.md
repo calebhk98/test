@@ -32,7 +32,7 @@ What it finds, over the following two months, is a shape.
 
 There's no name. There's no bank with a name on it. But what there is, once Kavi has enough of it to stack, is a single set of decisions running from somewhere around 1998 or 2001, depending which thread you follow back.
 
-Kavi does the actual stacking on a whiteboard he wheels into the corner of his lab, one line a decision, a color for each currency, taped index cards for the ones still missing a clean date. As much of the work happens on the back of the whiteboard as on the front, cards corrected over and over until the run finally holds in order, and by the end of January the board reads less like a timeline than like a single continuous decision wearing different currencies at different times.
+Kavi does the actual stacking on a whiteboard he wheels into the corner of his lab, one line a decision, a colour for each currency, taped index cards for the ones still missing a clean date. As much of the work happens on the back of the whiteboard as on the front, cards corrected over and over until the run finally holds in order, and by the end of January the board reads less like a timeline than like a single continuous decision wearing different currencies at different times.
 
 The three of them get on a call to look at the board properly in the second week of January, Ruth taking notes for once, Eli reading currency codes off Kavi's screen faster than the others can follow, Kavi correcting him twice on a code before he starts reading them right. The shape resists being more than a single person no matter how they turn it, and by the time the call ends, it has stopped being a shared problem and become Ruth's.
 

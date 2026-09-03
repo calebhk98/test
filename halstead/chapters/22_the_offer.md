@@ -32,7 +32,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him; 
 
 "Here."
 
-Feet square on the floor, she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin, and gone back to the forge every Thursday for years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
+Feet square on the floor, she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favour. She's dropped flawed hinges of her own into the scrap bin, and gone back to the forge every Thursday for years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
 
 "I don't think so," she says.
 

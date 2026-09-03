@@ -88,7 +88,7 @@ ________________
 
 The stairs run up the outside of the building, a bare steel case bolted to brick, and she can smell the tire shop the whole way up, rubber and hot metal working together in the heat. The door at the top gives when she tries it.
 
-Four men are inside: two at a folding table with laptops open, a third behind a desk in what's meant to look like an office, and the fourth leaning in the doorway to a second room with a coffee going cold in his hand. The folding table is covered in paper as well as laptops, printouts with lines highlighted in different colors, and a whiteboard behind the desk still carries somebody else's job in half-erased marker. All of them look up when the door opens straight into the room with no knock ahead of it.
+Four men are inside: two at a folding table with laptops open, a third behind a desk in what's meant to look like an office, and the fourth leaning in the doorway to a second room with a coffee going cold in his hand. The folding table is covered in paper as well as laptops, printouts with lines highlighted in different colours, and a whiteboard behind the desk still carries somebody else's job in half-erased marker. All of them look up when the door opens straight into the room with no knock ahead of it.
 
 "Whoa, hey, hold on," the nearer man at the folding table says.
 

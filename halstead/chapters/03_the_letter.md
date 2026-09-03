@@ -84,7 +84,7 @@ The envelope comes back out of the recycling. The postmark is a city four states
 
 Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one child on the street anybody would put on a list of anything, but the Petersons haven't gotten a letter.
 
-A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbors, so that by Saturday half the street knows the Kesslers got something in the mail.
+A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbours, so that by Saturday half the street knows the Kesslers got something in the mail.
 
 Then she calls the number on the letter, and somebody picks up on the second ring, Chloe coming down from the top of the stairs to listen while her mom gives the name, spells the first half, says yes, that's the one, then waits.
 

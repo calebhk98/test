@@ -134,7 +134,7 @@ ________________
 
 Nerf is eight.
 
-The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colors over each other, and a dart that misses skids most of the way to the wall.
+The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colours over each other, and a dart that misses skids most of the way to the wall.
 
 You start on paper targets for a while, then a target somebody swings across the gym on a rope, and she watches it swing every time. Then a foam disc thrown flat and fast: hard at first, then easy. The day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
 
@@ -154,7 +154,7 @@ Team sports is where the teams are assigned, and she gets a team with two people
 
 Drawing is Thursdays, and in the second term, while they spend the term on hands, Chloe draws her own left hand forty times, in pencil, from a fixed angle, on cheap paper. The fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
-"That's a hand." Ruth turns it toward the light. "That's an actual hand. Since when do you draw like that?"
+"That's a hand." Ruth turns it towards the light. "That's an actual hand. Since when do you draw like that?"
 
 "It's supposed to be a hand, I've been drawing them since January."
 

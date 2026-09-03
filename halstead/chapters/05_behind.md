@@ -192,7 +192,7 @@ More leave before the end of the month, so that by the fourth time Chloe reads t
 
 ________________
 
-"That's why it's a liar," Chloe says, half a second after Kavi has said something about the moon being up in the afternoon, at dinner in the third week, and heads come around the table toward her.
+"That's why it's a liar," Chloe says, half a second after Kavi has said something about the moon being up in the afternoon, at dinner in the third week, and heads come around the table towards her.
 
 "What? What does that even mean?"
 

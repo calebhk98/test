@@ -193,7 +193,7 @@ Her grandmother puts a plate down on the carpet inside the doorway. "Your mother
 
 The Tuesday is in the second week of February.
 
-In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes toward that place. The last line goes down late, and there is an hour before lights out, which she spends on a book she picked herself.
+In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes towards that place. The last line goes down late, and there is an hour before lights out, which she spends on a book she picked herself.
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with minutes to go, and leaves it exactly as it is.
 

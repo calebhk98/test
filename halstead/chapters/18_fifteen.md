@@ -60,7 +60,7 @@ Voss taps the pages straight against the desk and hands them back to her.
 
 "That's not an answer to what I asked you."
 
-"No." He is already looking past her down the lane. "Your block started without you, Kessler."
+"Some things you have to work out on your own. I can't teach you everything." He is already looking past her down the lane. "Your block started without you, Kessler."
 
 Chloe goes, running the numbers again the whole way down. The box goes back on the shelf that evening, square on top of the year below's, and she leaves both of them where they are.
 

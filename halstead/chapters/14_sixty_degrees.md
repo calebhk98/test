@@ -14,7 +14,7 @@ Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. Yo
 
 "Right, so a point stays away from a person, even by accident."
 
-Bell walks them down the field to show them the lanes, two firing lines seventy meters apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty meters on, behind a rope and a sign where the target block stays all year.
+Bell walks them down the field to show them the lanes, two firing lines seventy meters apart, side by side, both facing north, each bending in towards the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty meters on, behind a rope and a sign where the target block stays all year.
 
 Bell puts a hand out flat and holds it. "At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there. If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
 

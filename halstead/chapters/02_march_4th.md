@@ -52,7 +52,7 @@ The card goes down, his thumb presses the watch, and he says go. When she takes 
 
 Then the cards want nine blocks instead of four, and the shapes on them stop lining up with the edges of anything.
 
-The picture comes apart while she is still looking at it: the top strip solid, then the middle band where every block is cut corner to corner, red above the cut on the left and red below it once the stripe crosses over, then the bottom strip the same as the top with the colors swapped.
+The picture comes apart while she is still looking at it: the top strip solid, then the middle band where every block is cut corner to corner, red above the cut on the left and red below it once the stripe crosses over, then the bottom strip the same as the top with the colours swapped.
 
 Her hands go after it, and the top row goes down flat and true, fast. Then it's the cut ones, which have to sit in the right square with the right face up and the right way round all at once. The first block she sets down has its red on the wrong side of the line, so she picks it up, turns it, and puts it back, but now it's wrong the other way, so she turns it again.
 
@@ -230,7 +230,7 @@ Then he talks to her mom, and Chloe waits in the corridor on a chair too tall fo
 
 The door is open a few inches, and through the gap her mom's foot keeps moving, heel up, heel down, while Chloe works the zipper pull on her jacket, something to do with her hands.
 
-Only pieces reach her, her mom's voice saying the teacher says, then Ben's voice running on, full of words bigger than her, until one comes through clean, because he has turned toward the door.
+Only pieces reach her, her mom's voice saying the teacher says, then Ben's voice running on, full of words bigger than her, until one comes through clean, because he has turned towards the door.
 
 "I'm not seeing what the school is seeing, because she finishes in the first few minutes and then she's got the rest of the hour left over and nowhere to put it."
 

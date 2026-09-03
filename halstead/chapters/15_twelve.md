@@ -184,7 +184,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "You'll get grabbed."
 
-"That's the point," she says, already moving toward the door. "I'm twelve, I'm small, and I'm a girl in pajamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
+"That's the point," she says, already moving towards the door. "I'm twelve, I'm small, and I'm a girl in pajamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
 Ruth looks at her. "I'm shorter," she says.
 

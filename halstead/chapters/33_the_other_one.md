@@ -56,6 +56,10 @@ eli: me and kavi. same as last time
 
 nadia: then two of you carry it if it goes wrong, not seven. write that down, chloe
 
+chloe: already did. its clause four
+
+nadia: good
+
 Kavi stays bent over the board he's rewiring in the lab when the thread reaches him, and the answer comes out in one line that runs until the mechanism's actually finished.
 
 kavi: the governments own logging is old and its federal so its worse than nadias, which means the risk was never getting in, its someone doing a manual review of the exact files we touch in the exact week we touch them, so the thing that gets us caught is timing, not the door

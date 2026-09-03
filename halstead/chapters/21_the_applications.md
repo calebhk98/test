@@ -120,7 +120,7 @@ Some of the flagged schools send somebody, and the school says yes to all of the
 
 They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and others; by the first evening they have found each other at the end of the visitors' table comparing notes the way scouts do on a prospect.
 
-A representative from Duke, crossing campus toward the dining hall on his first afternoon, hears something through the wall of the sports building, windowless on that side and running with condensation under the vents, a beat too regular for a ball game and gone before he places which door it comes from. Students pass the other way carrying a long canvas case between them, and neither looks at him, so he asks the woman escorting him what's in the building.
+A representative from Duke, crossing campus towards the dining hall on his first afternoon, hears something through the wall of the sports building, windowless on that side and running with condensation under the vents, a beat too regular for a ball game and gone before he places which door it comes from. Students pass the other way carrying a long canvas case between them, and neither looks at him, so he asks the woman escorting him what's in the building.
 
 "Sport," she says.
 

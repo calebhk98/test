@@ -162,7 +162,7 @@ Kavi takes it off him inside a minute, offhand about it, and slides it to Chloe.
 
 Sam eats a second dinner through both arguments. "Bring it," he says the first time, mouth full, and "Not it," the second, and goes back to eating.
 
-Nadia turns the napkin round toward Chloe with a finger.
+Nadia turns the napkin round towards Chloe with a finger.
 
 "It's not a date, it's a plate."
 
@@ -184,7 +184,7 @@ Nadia waits for him to finish.
 
 Nadia sits back. "You've had your hand over that corner since Kavi passed it. You always do that, which means you've got it and you'd rather keep it off the table."
 
-"It's not a date and it's not only a plate." Chloe turns the napkin a half circle toward the table. "It's both, read backward from the sixth character. That's the split."
+"It's not a date and it's not only a plate." Chloe turns the napkin a half circle towards the table. "It's both, read backward from the sixth character. That's the split."
 
 Nadia looks at it a long moment. "She's right. It's both."
 

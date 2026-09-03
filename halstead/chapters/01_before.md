@@ -52,7 +52,7 @@ What she reads comes back out of her at the table, in order, at length, and with
 
 "No, he gets worse and then he stops," Chloe says, putting her fork down. "He gets worse. She starts being fine without him and he can tell. So he gets meaner at exactly the point where she stops needing him. That's backwards. Except it isn't. That's exactly when you'd get mean."
 
-Her mom points toward Chloe's plate, and Chloe pauses long enough to take a bite. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway. You know because of the little things. She saves him the last bite every time. She stops complaining about the noise he makes when he chews."
+Her mom points towards Chloe's plate, and Chloe pauses long enough to take a bite. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway. You know because of the little things. She saves him the last bite every time. She stops complaining about the noise he makes when he chews."
 
 "How do you know, then, if she never says so?"
 
@@ -80,7 +80,7 @@ She takes the book out to recess and leaves it on the wall by the door, spine up
 
 Kayleigh cheated. Chloe is sure of it, because the same catch put Maddie on the wall ten minutes ago with everybody watching. What she cannot work out is why nobody minds. Maddie is still sitting there and does not say anything. The girl who called Maddie out is standing close enough to have seen the whole thing and goes on playing. Chloe looks around the blacktop for somebody else to be annoyed about it and there is nobody. She plays two more rounds and lets the third throw go past her without reaching for it. Nobody calls her back in. She goes and stands by the door next to her book with her arms crossed, and the game goes on behind her at the volume it had before, and at the whistle the line forms without anybody looking around for her.
 
-In October, back inside, Peanut climbs the bars of his cage toward the clip lamp, with Chloe's chin on her folded arms close enough to smell the wood chips under the heat.
+In October, back inside, Peanut climbs the bars of his cage towards the clip lamp, with Chloe's chin on her folded arms close enough to smell the wood chips under the heat.
 
 Most days he gives it up halfway, but this time he goes higher than Chloe has ever seen him go, until his back feet come off the bars, swing free, then drop him into the chips. The class laughs while Peanut sits where he landed and washes his face, unbothered.
 
@@ -140,7 +140,7 @@ More typing, and then he says, "But if the school is putting it in writing, I'd 
 
 "That's a psychologist, or..."
 
-"I'll give you two names, and you'll wait months on the first while the other is usually faster, so call both today and take whichever comes up sooner. Ask for the one who does school-age testing specifically, not just general behavior, or you'll be back here with the same question before the year is out."
+"I'll give you two names, and you'll wait months on the first while the other is usually faster, so call both today and take whichever comes up sooner. Ask for the one who does school-age testing specifically, not just general behaviour, or you'll be back here with the same question before the year is out."
 
 On the way out, the receptionist lets Chloe pick a sticker, which takes a long time, because there are two good ones.
 
