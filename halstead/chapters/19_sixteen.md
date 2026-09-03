@@ -176,7 +176,7 @@ Chloe's hands are off the step now. "Ruth is the least miserable person I have e
 
 "Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her. I tried giving her a Saturday off in March and she turned up for it anyway."
 
-Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where Nadia's score has been posted since February with Priya's name beside it.
+Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where every pairing in adversarial negotiation goes up the week it happens, both names and who took what off whom, and Nadia's score has been sitting there since February with Priya's name beside it as the one she took it from.
 
 "Did Priya know it was coming, before the board ever went up?"
 

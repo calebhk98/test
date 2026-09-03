@@ -82,7 +82,7 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Sure there were." The man who asked has both elbows planted either side of his tray, in the manner of somebody settling in for the remainder of an argument he considers already concluded. "Nobody maxes that test on a cold morning but then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
 
-"The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, but then came and found me afterwards to apologise for it, because she reckoned she'd embarrassed me in front of the year."
+"The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, but then came and found me afterwards to apologize for it, because she reckoned she'd embarrassed me in front of the year."
 
 "A girl."
 
@@ -100,7 +100,7 @@ Later, watching the clock over the serving line, he lodges the only complaint an
 
 ________________
 
-The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five metres, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a conversation about it afterward.
+The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five meters, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a conversation about it afterward.
 
 This is approximately where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it is reconcilable with a single thing he knows about himself. At school his was the number that never moved, but Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious; Kavi beat him at everything with a board in it for years on end.
 
@@ -110,7 +110,7 @@ His first thought is that everybody here is tired in a way school could only app
 
 His second is arithmetic, and it is better. Half the bay has been doing this for a couple of months, but he has been doing it half his life, so the gap between him and the man beside him is a fact about calendars rather than a fact about either of them.
 
-His third accounts for everything the first two leave lying around, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
+His third accounts for everything the first two leave lying around, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organization does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
 
 The explanation survives a week of examination. To find out whether it holds, he starts holding some of himself back on the land-navigation course, taking it half a step slower than he can manage and watching for anybody who marks him down for the difference. Nobody does. Three weeks of a slower time on his own sheet is what the experiment costs him and nothing else, so he stops running it and goes back to doing the course at the only speed he actually has.
 
@@ -138,7 +138,7 @@ ________________
 
 Qualification is the second Thursday of October, in the ninth week, and it is forty targets.
 
-The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty metres to three hundred, eight exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it, three minutes and fifty-eight seconds from the first exposure to the last.
+The morning comes up gray and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty meters to three hundred, eight exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it, three minutes and fifty-eight seconds from the first exposure to the last.
 
 Sam counts himself down, then works the table at an unhurried pace that leaves him waiting on the tower twice.
 
@@ -188,7 +188,7 @@ The captain looks at him for a good deal longer than the answer needs, then take
 
 "Pick up your brass, Marsh."
 
-Sam picks up his brass, since leaving brass on the ground is among the earliest instructions anybody in this organisation gave him, and goes off to discover whatever is next on the schedule.
+Sam picks up his brass, since leaving brass on the ground is among the earliest instructions anybody in this organization gave him, and goes off to discover whatever is next on the schedule.
 
 ________________
 
@@ -202,7 +202,7 @@ The second goes to the supporting counterintelligence office, under the standing
 
 The third is a request to the battalion S-2 for the education block of the soldier's security questionnaire, to establish whether the school printed on the form matches the school in the private's mouth.
 
-The fourth is a behavioural health referral, signed last, and it travels upward alongside the other three.
+The fourth is a behavioral health referral, signed last, and it travels upward alongside the other three.
 
 By the following Thursday the memorandum is on a desk well above anything with a range attached to it, in front of a woman positioned well above the captain; the fourth paragraph she reads twice, then sets the memorandum on top of a stack rather than into it, and draws out from underneath that stack a folder considerably older than the captain's commission.
 

@@ -242,7 +242,7 @@ Odile gets in everywhere. The rest of the year hears about it days later, when P
 
 Chloe gets all but two. She had spent the week before this one deciding which of the fourteen were actually going to say yes, and had settled on two, the state school and the community college, and had got as far as being fine about it.
 
-Outside her window the snow along the path has gone soft and grey, the last of it, weeks off the end of term, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
+Outside her window the snow along the path has gone soft and gray, the last of it, weeks off the end of term, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
 
 The arithmetic has gone wrong somewhere, and not in the letters, because the middle of a year gets the state school. She has twelve.
 

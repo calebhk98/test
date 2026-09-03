@@ -4,23 +4,23 @@
 
 The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground the whole way. The building at that end is flat-roofed, pale, and newer than the rest; on the field side the grass comes up to the brick with no path worn into it.
 
-Archery is ordinary at first, because the start of it is butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every so often to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
+Archery is ordinary at first, because the start of it is butts at twenty meters, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every so often to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
 
-Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
+Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimeters of this, coming off the string faster than anything you've had at you, and end-on at seventy meters, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
 
 Kavi says it from down the line. "That's the opposite of what we do with the paintballs. We watch the person rather than the dart, so we're moving before he shoots. The whole tell is in the shoulder, not the barrel, and it happens before the trigger does. You can train yourself to stop flinching at the sound, but you can't train the shoulder out of somebody, because it moves before they know they're going to shoot."
 
-Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. You want to read a shoulder at seventy metres, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without a bad afternoon."
+Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. You want to read a shoulder at seventy meters, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without a bad afternoon."
 
 "Right, so a point stays away from a person, even by accident."
 
-Bell walks them down the field to show them the lanes, two firing lines seventy metres apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty metres on, behind a rope and a sign where the target block stays all year.
+Bell walks them down the field to show them the lanes, two firing lines seventy meters apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty meters on, behind a rope and a sign where the target block stays all year.
 
 Bell puts a hand out flat and holds it. "At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there. If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
 
 "So what are we aiming at, then, if it isn't the block?"
 
-Bell looks down the field at it. "The block stays where it is and none of you will touch it all year. Your target is coming the other way at sixty metres a second and it is in the air for about a second and a half. Say target and everybody here will know what you mean."
+Bell looks down the field at it. "The block stays where it is and none of you will touch it all year. Your target is coming the other way at sixty meters a second and it is in the air for about a second and a half. Say target and everybody here will know what you mean."
 
 "So how are we supposed to know when to let go of it?"
 
@@ -30,7 +30,7 @@ ________________
 
 It is a counting problem, and it takes Chloe until the third week to admit that.
 
-Her release runs early when she is keyed up and late when her hands are cold, and either way puts the arrows a long way apart up there, since a tenth of a second is several metres of flight. In the second week she starts practising it without a bow, walking to dinner in the dark with her fingers going against her leg. That is how Ruth catches her at it in the hall.
+Her release runs early when she is keyed up and late when her hands are cold, and either way puts the arrows a long way apart up there, since a tenth of a second is several meters of flight. In the second week she starts practicing it without a bow, walking to dinner in the dark with her fingers going against her leg. That is how Ruth catches her at it in the hall.
 
 "Is that the release you're doing?"
 
@@ -40,9 +40,9 @@ Ruth is doing it against her own leg now. "Mine's late, always late, by the same
 
 They compare counts in the corridor until they are late into dinner, where the bread has gone and Sam has taken both their chairs.
 
-The first collision Chloe manages is in the last week of October, with Odile, and it arrives as a small dry click a long way up, before anything is visible, so high that she almost doubts her ears. Then two arrows come down wrong out of the middle of the sky, hers spinning and whole, Odile's broken across the middle and landing in pieces a few metres apart with the far one still turning.
+The first collision Chloe manages is in the last week of October, with Odile, and it arrives as a small dry click a long way up, before anything is visible, so high that she almost doubts her ears. Then two arrows come down wrong out of the middle of the sky, hers spinning and whole, Odile's broken across the middle and landing in pieces a few meters apart with the far one still turning.
 
-Chloe's whole line is shouting before the pieces land, somebody at the far end is banging on the equipment box lid with a bow stave, and Odile covers her seventy metres at a run. They stand in the grass yelling about the sound it made, and neither hears a word the other says.
+Chloe's whole line is shouting before the pieces land, somebody at the far end is banging on the equipment box lid with a bow stave, and Odile covers her seventy meters at a run. They stand in the grass yelling about the sound it made, and neither hears a word the other says.
 
 Odile gets a whole word out at last. "Sunday. My brother's here Sunday, he's been out here a few times, but he has yet to see anybody do it, so I'm making him stand at your end. He can stand exactly where I put him."
 
@@ -146,7 +146,7 @@ By Thursday afternoon she has stopped arguing with the page and started followin
 
 It goes in on the Monday, twenty-eight pages of it, but Hearn gives it back a week later with a B on the front.
 
-The note runs to half a page: she hedges, twice on page eight, once on page twenty-two, and the whole of the conclusion, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered those objections earlier, so the hedge only asks the reader to answer them again. She keeps apologising for the argument in the middle of making it. An argument you apologise for is a request. Make it or leave it out.
+The note runs to half a page: she hedges, twice on page eight, once on page twenty-two, and the whole of the conclusion, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered those objections earlier, so the hedge only asks the reader to answer them again. She keeps apologizing for the argument in the middle of making it. An argument you apologize for is a request. Make it or leave it out.
 
 Between the second floor and the third, she finds Ruth on the stairs.
 

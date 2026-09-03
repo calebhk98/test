@@ -4,7 +4,7 @@
 
 Marksmanship replaces archery in September, and Voss gives them weeks of dry drill before anything gets loaded. A row of weapons goes on a table and they learn to name them all off the silhouette from across the room, then strip and reassemble some of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
 
-Live fire starts in October at fifty metres, prone, unsupported, on paper, and Chloe is down on the mat with her elbows set before Voss has finished handing out the ear protection. The mat is cold through her sleeves, the line goes quiet in a way no room in the building manages, and the smell of the place stays in her hair until she washes it.
+Live fire starts in October at fifty meters, prone, unsupported, on paper, and Chloe is down on the mat with her elbows set before Voss has finished handing out the ear protection. The mat is cold through her sleeves, the line goes quiet in a way no room in the building manages, and the smell of the place stays in her hair until she washes it.
 
 Keeping the rifle up, Sam asks, "How long till this bit's boring?"
 
@@ -14,7 +14,7 @@ Kavi is on the next mat with his chin on his forearms, watching the flag. "Six w
 
 "Ruth was bored in the briefing," Odile says, at which Ruth puts three rounds through one hole with her cheek still down on the stock, then rolls onto her side to ask whether anybody has water.
 
-Although she is steady enough prone by then, kneeling and standing come in before the end of the month, then a hundred metres, then a hundred metres in a crosswind with somebody reading it off the wind flag for her, until in November the target goes onto a rope and swings, so that the count starts to matter again. That week Odile burns the inside of her hand on an ejection port, and because the scab pulls every time she opens her fingers she is still holding the palm up across the breakfast table in December.
+Although she is steady enough prone by then, kneeling and standing come in before the end of the month, then a hundred meters, then a hundred meters in a crosswind with somebody reading it off the wind flag for her, until in November the target goes onto a rope and swings, so that the count starts to matter again. That week Odile burns the inside of her hand on an ejection port, and because the scab pulls every time she opens her fingers she is still holding the palm up across the breakfast table in December.
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card.
 
@@ -64,9 +64,9 @@ Going through the papers twice takes her back to her own notes from the third we
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Iyad has it at dinner that week with her not at the table. He gives it at the long table on a night when both benches are full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it. The table is still laughing when he starts on the next name, and he gets round most of the other tables with it by the Saturday.
+One of the twelves tells it at their own table, where it is funny and nothing else, and it takes two days to get from there to Iyad. He has it at dinner that week with her not at the table. He gives it at the long table on a night when both benches are full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it. The table is still laughing when he starts on the next name, and he gets round most of the other tables with it by the Saturday.
 
-What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
+What comes back to her at the sinks from a girl in her own year she has barely spoken to is the question, whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
 
 "It's true," she says. "Who told you?"
 
@@ -83,6 +83,8 @@ The girl says she doesn't remember, and starts to go.
 "Then say you made it up, and I'll go."
 
 The girl doesn't say it. She looks at the door, and then back. "Tuesday. Far table, the end by the window. I'm not telling you who."
+
+Chloe already knows who sits there.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 
@@ -114,7 +116,7 @@ Nadia has the field drawn on the board by then with the posts marked on it. "Wir
 
 "The far end is colder," Odile says.
 
-Kavi turns round to look at the board. "Then the air isn't the same speed at both ends, and half a degree is a third of a metre a second, so we want the temperature at every post at the instant the sound goes, which is a person at every post holding a thermometer, because we are not building sensors as well."
+Kavi turns round to look at the board. "Then the air isn't the same speed at both ends, and half a degree is a third of a meter a second, so we want the temperature at every post at the instant the sound goes, which is a person at every post holding a thermometer, because we are not building sensors as well."
 
 Nadia writes it up under the posts and says nothing about it.
 
@@ -124,7 +126,7 @@ Nobody answers that on the Tuesday and nobody has a better answer on the Thursda
 
 They go wireless anyway, because the reel has to be signed for and the field is a field. Kavi has it in a fortnight, but then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
 
-"It sits at a couple of milliseconds and it will not go under. A couple of milliseconds is most of a metre of air, so the answer is a metre wide before Ruth has heard anything and before Chloe has done any arithmetic at all."
+"It sits at a couple of milliseconds and it will not go under. A couple of milliseconds is most of a meter of air, so the answer is a meter wide before Ruth has heard anything and before Chloe has done any arithmetic at all."
 
 "How long has it been sitting there," Ruth says.
 
@@ -138,7 +140,7 @@ Ruth stops eating. "A fortnight. So we've been building against a number you kne
 
 Nadia goes to the board on the Thursday and puts the wire back on it. "Then it's wire, and the clock goes down the wire, and Priya's problem goes away on its own."
 
-They lay a hundred and sixty metres of it down the long field on the Saturday in rain, pegged along the fence and taped at the posts, and lift it again on the Sunday because the mowers are out on the Monday. Sam comes down for the lifting because Odile asked him to. Nadia stands at the top of the field at the end of it with her hands up her sleeves.
+They lay a hundred and sixty meters of it down the long field on the Saturday in rain, pegged along the fence and taped at the posts, and lift it again on the Sunday because the mowers are out on the Monday. Sam comes down for the lifting because Odile asked him to. Nadia stands at the top of the field at the end of it with her hands up her sleeves.
 
 "Half a dozen people and a morning, every time anybody wants to switch it on."
 
@@ -164,7 +166,7 @@ The run is in the afternoon block on the last Thursday in March. A man from the 
 
 The sound comes back thin, flat, and a long way off, and it happens once.
 
-Ruth has her onsets inside a quarter of an hour, Kavi has the clock agreeing with itself the length of the wire, and Chloe puts the differences through and reads the point off the bottom of the sheet: a hundred and nineteen metres up the field, thirty across, tight across it, but loose along it. Odile and Sam run the tape out from the fence corner and find the mark on the grass a hand's width and a half from where Chloe said it was.
+Ruth has her onsets inside a quarter of an hour, Kavi has the clock agreeing with itself the length of the wire, and Chloe puts the differences through and reads the point off the bottom of the sheet: a hundred and nineteen meters up the field, thirty across, tight across it, but loose along it. Odile and Sam run the tape out from the fence corner and find the mark on the grass a hand's width and a half from where Chloe said it was.
 
 The sheet on the Monday gives them a B, but the failures under it say that the array cannot be put out by fewer than half a dozen people, that the calibration finished inside the last window available to it, and that the group carried a known error for a fortnight without putting it on the board.
 

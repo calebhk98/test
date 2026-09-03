@@ -52,7 +52,7 @@ The card goes down, his thumb presses the watch, and he says go. When she takes 
 
 Then the cards want nine blocks instead of four, and the shapes on them stop lining up with the edges of anything.
 
-The picture comes apart while she is still looking at it: the top strip solid, then the middle band where every block is cut corner to corner, red above the cut on the left and red below it once the stripe crosses over, then the bottom strip the same as the top with the colours swapped.
+The picture comes apart while she is still looking at it: the top strip solid, then the middle band where every block is cut corner to corner, red above the cut on the left and red below it once the stripe crosses over, then the bottom strip the same as the top with the colors swapped.
 
 Her hands go after it, and the top row goes down flat and true, fast. Then it's the cut ones, which have to sit in the right square with the right face up and the right way round all at once. The first block she sets down has its red on the wrong side of the line, so she picks it up, turns it, and puts it back, but now it's wrong the other way, so she turns it again.
 
@@ -86,7 +86,7 @@ Then the questions turn into pairs of things and what the two of them share, the
 
 Chloe sits up a little, waiting to find out if that counts extra. Ben stops writing, then writes for longer than usual, sideways down the white edge of the page where the boxes have run out.
 
-Pairs keep coming until he turns the sheet over and finds the end of them. Then he opens a drawer and comes back with a thicker book, another colour down the spine, and reads pairs out of that one, off a page she can see the shape of but not the words on.
+Pairs keep coming until he turns the sheet over and finds the end of them. Then he opens a drawer and comes back with a thicker book, another color down the spine, and reads pairs out of that one, off a page she can see the shape of but not the words on.
 
 Those go on a while, and when he stops he puts that book back in the drawer.
 

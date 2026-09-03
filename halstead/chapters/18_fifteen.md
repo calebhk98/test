@@ -4,11 +4,11 @@
 
 The whole year is breaking clays at between ninety and a hundred, a spread that holds through September. Then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
 
-A machine at the far end of sixty metres of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism. The new lane is colder than the old and the glass fogs from the inside where people breathe on it, so somebody goes along it with a cloth between relays.
+A machine at the far end of sixty meters of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism. The new lane is colder than the old and the glass fogs from the inside where people breathe on it, so somebody goes along it with a cloth between relays.
 
 Voss lets them look at it for a while, and when he does start he starts with the machine rather than with them.
 
-"That is a turret, and it puts a live round down the lane on a cycle you can set a watch by. Left to right, sixty metres of open ground, in front of you, behind the glass, and you will be firing across its path on a count you take off the mechanism." He gives them a moment with that. "The target is the round. Not the turret, not a clay, not a plate hung off a rope. You are shooting the bullet."
+"That is a turret, and it puts a live round down the lane on a cycle you can set a watch by. Left to right, sixty meters of open ground, in front of you, behind the glass, and you will be firing across its path on a count you take off the mechanism." He gives them a moment with that. "The target is the round. Not the turret, not a clay, not a plate hung off a rope. You are shooting the bullet."
 
 Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
 
@@ -18,7 +18,7 @@ Voss delivers it like a thing he has said a thousand times to a thousand student
 
 For weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, session after session, ninety of them at it. In the second week Kavi does the arithmetic and announces at dinner that at this rate somebody will hit something in about March, but Priya tells him to eat.
 
-Odile gets the first on the eleventh of November, and the noise brings people out of the far end of the range. Chloe gets hers days later: a dry crack a few metres out, then the paper down at the far end exactly as it was, her hands steady on the rifle while she can feel her pulse where her cheek meets the stock, and she is still up on the sights when somebody tells her to clear.
+Odile gets the first on the eleventh of November, and the noise brings people out of the far end of the range. Chloe gets hers days later: a dry crack a few meters out, then the paper down at the far end exactly as it was, her hands steady on the rifle while she can feel her pulse where her cheek meets the stock, and she is still up on the sights when somebody tells her to clear.
 
 After that it climbs, so that by the end of November she is on twenty and by the last week of January on sixty.
 
@@ -56,7 +56,11 @@ Chloe says, with a shoulder against the doorframe, "That's every card in the yea
 
 Voss taps the pages straight against the desk and hands them back to her.
 
-"Point six, Kessler," Voss says. "Your block started without you."
+"Point six," he says. "Six in ten, near enough, and that is where you are and where the other ten are. Put another two hundred rounds behind it and come back and tell me it moved."
+
+"That's not an answer to what I asked you."
+
+"No." He is already looking past her down the lane. "Your block started without you, Kessler."
 
 Chloe goes, running the numbers again the whole way down. The box goes back on the shelf that evening, square on top of the year below's, and she leaves both of them where they are.
 
@@ -84,7 +88,7 @@ At dinner that week Sam says it to his plate. "You're on sixty," he says. "Every
 
 ________________
 
-Self defence is still ten of them on one with a minute on the clock, and her average that year is forty-one seconds against forty-five the year before. The bad session is a Tuesday in November, first round, and she comes out of the middle at thirty-eight, on her feet before they call it and holding the number already.
+Self defense is still ten of them on one with a minute on the clock, and her average that year is forty-one seconds against forty-five the year before. The bad session is a Tuesday in November, first round, and she comes out of the middle at thirty-eight, on her feet before they call it and holding the number already.
 
 "First one's always short," Kavi says, still standing at the line. "It recovers by the third."
 
@@ -162,7 +166,7 @@ The folder shifts to her other arm. "There is a non-disclosure agreement on that
 
 "You can't be held to anything, I can, so asking is what I have."
 
-That night she lies awake, and snaps at Sam at breakfast the next morning for no reason she can name, then apologises for it before he can ask why. Then she takes a week over it and builds the case against first: somebody her age asked to guard a secret that already had other names on it. From her own position and from that of the names on the form, she makes that side as hard as she can before she builds the other. At dinner on Wednesday she is quiet, and Sam asks her twice whether she is all right.
+That night she lies awake, and snaps at Sam at breakfast the next morning for no reason she can name, then apologizes for it before he can ask why. Then she takes a week over it and builds the case against first: somebody her age asked to guard a secret that already had other names on it. From her own position and from that of the names on the form, she makes that side as hard as she can before she builds the other. At dinner on Wednesday she is quiet, and Sam asks her twice whether she is all right.
 
 At the end of the week she finds Sandoval outside the laboratory again. "I thought about it. I'll keep it off the phone and off the table. But my name goes on the next agreement somewhere, even at the bottom of the list, or I stop telling you anything that isn't already public."
 

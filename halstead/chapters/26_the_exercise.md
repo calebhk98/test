@@ -10,7 +10,7 @@ At the head of the line he draws his rifle, a yellow adapter going on the muzzle
 
 A specialist runs a controller gun across the whole arrangement until it answers with short electronic beeps, and then Sam signs for the harness, the transmitter, a compass, a red-lens flashlight and thirty rounds of blank ammunition, on a hand receipt gone soft with damp, the pen skipping twice before it takes.
 
-A sergeant reads him the rules off a laminated card at the unhurried pace of a man who has already recited them a dozen times tonight: minimum engagement distance is five metres, blank ammunition is prohibited inside it, and there is no hand-to-hand on this exercise at any range whatsoever. A harness in a steady tone stops the soldier wearing it exactly where he stands, upright and visible, until a controller reaches him, controllers being the only people anywhere on the ground authorised to bring a casualty back.
+A sergeant reads him the rules off a laminated card at the unhurried pace of a man who has already recited them a dozen times tonight: minimum engagement distance is five meters, blank ammunition is prohibited inside it, and there is no hand-to-hand on this exercise at any range whatsoever. A harness in a steady tone stops the soldier wearing it exactly where he stands, upright and visible, until a controller reaches him, controllers being the only people anywhere on the ground authorised to bring a casualty back.
 
 Then the card, carrying its grids of figures and listing the checkpoints between them in the order he is required to take them.
 
@@ -32,7 +32,7 @@ Then he withdraws back into the pines, gets down behind a root ball with the rif
 
 Two rounds. The report goes out flat across the fallow ground, returns off the tree line a moment behind itself, and both harnesses out there arrive immediately at a steady tone. The men stand up out of the grass, and one of them says something to the other that Sam is much too far away to hear.
 
-Crossing the wire a hundred metres down from where they were positioned, he picks his bearing up again and runs the whole business through once on the walk. It went fine. That is where he leaves it.
+Crossing the wire a hundred meters down from where they were positioned, he picks his bearing up again and runs the whole business through once on the walk. It went fine. That is where he leaves it.
 
 ________________
 
@@ -40,7 +40,7 @@ The second contact happens the following night, in a culvert running underneath 
 
 The culvert has him before he has read it properly, ducked in under the lip because the ground on either side is open and he wants to be out of sight of it for the thirty feet it takes to cross, and by the time he understands that there are four men in there with him, the far end is blocked and so is the end behind him.
 
-Somebody discharges a blank two metres from his head and the concrete hands the whole of it back to him at once. Afterward there is a tone going. There is more than one tone going, five harnesses inside thirty feet of pipe, but no method available for sorting his own out of the rest.
+Somebody discharges a blank two meters from his head and the concrete hands the whole of it back to him at once. Afterward there is a tone going. There is more than one tone going, five harnesses inside thirty feet of pipe, but no method available for sorting his own out of the rest.
 
 A hand arrives on his sling from the left. Sam turns the muzzle off his own chest with one hand, puts the man into the wall with the other, then clears the far end past the fourth man shoulder first, and neither of them is upright when he reaches the lip. The tone is still going behind him a few paces up the bank, when a red-lens light comes down at him off the road.
 
@@ -92,7 +92,7 @@ Sam looks back down the last thirty feet of the cut, ground he spent that long r
 
 A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
 
-The last checkpoint comes up grey rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it, and he sleeps a few hours before anybody wants him for anything.
+The last checkpoint comes up gray rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it, and he sleeps a few hours before anybody wants him for anything.
 
 ________________
 
@@ -110,11 +110,11 @@ The soldier stands there listening to his own good luck read out loud, but looks
 
 Sam's turn comes third. Instead of calling him up to the front, the major leaves him where he is and starts in on the clipboard without a glance across the room.
 
-"Marsh." He looks up once from the clipboard. "Fence line, first night, two engagements, both of them yours, at twenty metres, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
+"Marsh." He looks up once from the clipboard. "Fence line, first night, two engagements, both of them yours, at twenty meters, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
 
 The next part he reads the way a form gets read.
 
-"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
+"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two meters, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
 
 "There is no hand-to-hand, sir." Sam doesn't look away. "At any range."
 

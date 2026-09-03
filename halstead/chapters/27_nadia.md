@@ -30,9 +30,9 @@ They ask for a Social Security number and a bank routing number in the third mes
 
 Before she sits down she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, late at night.
 
-The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologises over and over inside those twenty minutes, twice for taking up the evening and twice for having answered the message at all.
+The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologizes over and over inside those twenty minutes, twice for taking up the evening and twice for having answered the message at all.
 
-"Call the bank the minute they open and read them that number," Nadia says, at the end of it. "Then call me back and tell me what they said, however it goes. If they hand you a form, fill it in standing at the counter. A form that goes home in a bag gets filled in never. And stop apologising to me, because what you did was answer a message from an employer on a site with my own name up on the window of it."
+"Call the bank the minute they open and read them that number," Nadia says, at the end of it. "Then call me back and tell me what they said, however it goes. If they hand you a form, fill it in standing at the counter. A form that goes home in a bag gets filled in never. And stop apologizing to me, because what you did was answer a message from an employer on a site with my own name up on the window of it."
 
 Twice, slowly, she reads the digits out, and writes them on the back of the page. Then she stays in the back room a while with the light off and the phone still in her hand.
 
@@ -56,7 +56,7 @@ eli: so theyre gone
 
 nadia: obviously theyre gone. they came into my building to do it
 
-nadia: she apologised to me
+nadia: she apologized to me
 
 ruth: who did
 
@@ -96,7 +96,7 @@ Four men are inside: two at a folding table with laptops open, a third behind a 
 
 Just inside the door she stays on her feet, hands loose at her sides, and looks at the man behind the desk, since he is the first to straighten.
 
-"You put thirteen employer accounts on my site on the night of the second, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her half of last night while she apologised to me for it, for something the men in this room did to her, not anything she did to anybody, and every single apology like that belongs to somebody in here instead, whoever actually typed the message she answered."
+"You put thirteen employer accounts on my site on the night of the second, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her half of last night while she apologized to me for it, for something the men in this room did to her, not anything she did to anybody, and every single apology like that belongs to somebody in here instead, whoever actually typed the message she answered."
 
 The room goes quiet for a moment while the man behind the desk sets down what he was holding.
 

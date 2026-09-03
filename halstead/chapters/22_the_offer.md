@@ -12,7 +12,7 @@ Iyad has the next day's running order in his head before the sheet is taped up, 
 
 Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up. The wall behind the chairs carries a rail at chair height, and she has been walking past it since she was small.
 
-A seat empties while she watches, when a boy she half-recognizes from the year above goes in on the dot, a laptop bag still over his shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
+A seat empties while she watches, when a boy she half-recognizes goes in on the dot, a laptop bag still over his shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
 "That was fast," she says.
 

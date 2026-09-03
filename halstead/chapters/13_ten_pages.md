@@ -84,7 +84,7 @@ On the Monday Chloe gets one on her fourth go, and the balls meet an arm's lengt
 
 By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, and she says it at the volume she says everything at.
+People start asking on the Friday, and Ruth says she has been practicing while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, and she says it at the volume she says everything at.
 
 Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. Bex finds Chloe across the floor before she sits back down, holds it half a second, and turns to her partner without saying anything else.
 

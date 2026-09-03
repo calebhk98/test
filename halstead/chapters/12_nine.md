@@ -76,9 +76,9 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You said that on Monday too, word for word, and you say it every time you lose this argument."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet but comes out loud. On the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, but gets grey, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet but comes out loud. On the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, but gets gray, and carries it up to the front.
 
-"Water. That's the only thing that turns it that particular grey, and it's nowhere on your reagent list."
+"Water. That's the only thing that turns it that particular gray, and it's nowhere on your reagent list."
 
 "Where did it come from, though? I only used what was on the list this time."
 
@@ -92,7 +92,7 @@ On the Friday she runs it again, drying every piece of glass twice before she st
 
 Vasquez is already down the bench. "You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result. Run it wet next Friday and find out which of them you fixed."
 
-So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white. It is November by the time she writes glassware in the back of the notebook with a date beside it.
+So the Friday after that she runs it wet on purpose and gets the gray back, and the Friday after that she runs it dry off the old bottle and gets white. It is November by the time she writes glassware in the back of the notebook with a date beside it.
 
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night. In the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands over her shoulder asking her a question over and over in a raised voice.
 
@@ -104,7 +104,7 @@ Textiles is Tuesdays, where they measure each other, draft patterns off the meas
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
-Kavi alone watches the tank, for what turns out to be most of October, producing a diagram of it, arrows and all. Ruth argues that the small striped one is fine, that Kavi picked a favourite in the first week, and that he has been reading the tank backwards from it ever since. By February they have a name for that from statistics, and Ruth starts using it on him at meals, while Sam is on Kavi's side entirely and cannot explain why. In March the small striped fish dies of old age, and Kavi is unbearable for a week, until the man with the fish tank stops at his end of the breakfast table on the Friday.
+Kavi alone watches the tank, for what turns out to be most of October, producing a diagram of it, arrows and all. Ruth argues that the small striped one is fine, that Kavi picked a favorite in the first week, and that he has been reading the tank backwards from it ever since. By February they have a name for that from statistics, and Ruth starts using it on him at meals, while Sam is on Kavi's side entirely and cannot explain why. In March the small striped fish dies of old age, and Kavi is unbearable for a week, until the man with the fish tank stops at his end of the breakfast table on the Friday.
 
 "That is a long life for that fish, and I've been expecting it since Christmas."
 

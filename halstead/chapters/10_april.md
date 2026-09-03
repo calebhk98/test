@@ -26,7 +26,7 @@ Fen comes over. "The water. It's been knocked about for about a thousand years, 
 
 "Why?"
 
-"It's the size of my head." Fen sets the small one back on the sill facing the way it was standing. "They go by size, so if you move one the whole row's off." The glass has the whole approach in it: the gravel loop, the front of the building in grey stone that goes to brick above the second floor, and past the mown grass a road with trees on the far side of it. She came in under all of that an hour ago and is only looking at it properly now. At the bottom of the bag is the envelope with her name on it, which goes into the desk drawer under a folder.
+"It's the size of my head." Fen sets the small one back on the sill facing the way it was standing. "They go by size, so if you move one the whole row's off." The glass has the whole approach in it: the gravel loop, the front of the building in gray stone that goes to brick above the second floor, and past the mown grass a road with trees on the far side of it. She came in under all of that an hour ago and is only looking at it properly now. At the bottom of the bag is the envelope with her name on it, which goes into the desk drawer under a folder.
 
 "What's your last name, spelled out? I want to get it right the first time. I already have a list going and I'm not doing it twice."
 

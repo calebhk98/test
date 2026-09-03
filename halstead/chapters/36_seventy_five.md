@@ -136,7 +136,7 @@ priya: which is a much more useful question than the one i came in with
 
 Ruth finishes the arithmetic she started an hour earlier and posts it without softening it.
 
-ruth: seventy-five people across a field is a hundred and ten metres. ive walked that distance a thousand times between buildings. i can see the whole of it at once
+ruth: seventy-five people across a field is a hundred and ten meters. ive walked that distance a thousand times between buildings. i can see the whole of it at once
 
 Nobody answers it for a long time, and she does not say it a second way.
 

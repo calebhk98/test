@@ -76,7 +76,7 @@ At the propped courtyard door she reaches up for the top of the frame, which she
 
 Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, with the paper he has been reading since March, about a third of the way through but going better than a third sounds.
 
-"The error's in the middle, so the third I've done is the cheap third, but the remainder is the part worth having. I'll have every bit of it by Tuesday and then I want to talk to you about it." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: grey stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
+"The error's in the middle, so the third I've done is the cheap third, but the remainder is the part worth having. I'll have every bit of it by Tuesday and then I want to talk to you about it." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: gray stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
 
 ________________
 

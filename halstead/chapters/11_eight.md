@@ -134,7 +134,7 @@ ________________
 
 Nerf is eight.
 
-The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colours over each other, and a dart that misses skids most of the way to the wall.
+The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colors over each other, and a dart that misses skids most of the way to the wall.
 
 You start on paper targets for a while, then a target somebody swings across the gym on a rope, and she watches it swing every time. Then a foam disc thrown flat and fast: hard at first, then easy. The day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
 

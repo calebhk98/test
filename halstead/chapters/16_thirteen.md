@@ -36,7 +36,7 @@ The timetable goes down in front of her, and he leans in over it instead of back
 
 Papers slide off his knee, and he is out of the chair after them, still talking, sorry about the papers too. "Then take it in pencil on the back of Ivy's Tuesday and write down that I did it. You know I did it. You watched me fail at it last week, but you watched me do it just now."
 
-Chloe puts the chalk down harder than she means to. Something Beatriz asked him on the way in has already taken over, and he is still talking about it on the way to the door, stopping when she says fine, apologising for the noise before he goes.
+Chloe puts the chalk down harder than she means to. Something Beatriz asked him on the way in has already taken over, and he is still talking about it on the way to the door, stopping when she says fine, apologizing for the noise before he goes.
 
 In February she offers to read the 1981 paper and mark him on that. Politely, at once, he says no, since she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it.
 
@@ -64,7 +64,7 @@ Differential equations run alongside real analysis from the second week of Septe
 
 By November she stops doing it, and by February she stops resenting it.
 
-Half the grammar is a frame she already has from Latin, the vocabulary outside that frame sits close enough to English that she barely has to translate it, and the rest she reaches sideways through French, so by November she reads with the dictionary open beside her, but hardly touches it. When she says so at dinner Ruth points a fork at her and calls it the exact argument Chloe made in a doorway two years ago, held now at a table in front of Sam.
+German is the language this year, and half its grammar is a frame she already has from Latin, cases and all, while the vocabulary outside that frame sits close enough to English that she barely has to translate it, so by November she reads with the dictionary open beside her, but hardly touches it. When she says so at dinner Ruth points a fork at her and calls it the exact argument Chloe made in a doorway two years ago, held now at a table in front of Sam.
 
 The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold far more runs than the paper reports; neither document says which of them, or when, or by whom. Nineteen days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
 
@@ -106,6 +106,8 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds, and it is still holding at Christmas.
 
+A Saturday belongs to whoever plans it. None of it is on a schedule and none of it is against a rule either: the workshop is open until the technician locks it at noon, the kitchens hand over whatever is going spare to anybody who turns up before they clear down, and the rest of the day is whatever the person holding it can talk the year into. It rotates, roughly, and it rotates by who says it first. Whoever has it stands up at breakfast and says so, and the year either comes or doesn't.
+
 Bex has the Saturday out loud before breakfast is cleared, the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that, and she revises it twice before the plates are stacked, moving the kitchens and then moving them back.
 
 "If we leave the workshop till after, we're," Chloe says.
@@ -138,7 +140,7 @@ A Russian piece in February covers a bridge that came down in December; she read
 
 Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk.
 
-He sits on the desk. "You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and each of those is a rule somebody wrote down before you got here. So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the examination this country uses to check whether a person knows it, and every citizen in this room ought to pass it."
+He sits on the desk. "You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage license, and each of those is a rule somebody wrote down before you got here. So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the examination this country uses to check whether a person knows it, and every citizen in this room ought to pass it."
 
 Then he starts on contracts.
 
@@ -150,7 +152,7 @@ Eli puts a cipher on the table one Thursday, between the salt and the water jug,
 
 "Where did you get it from? It's the first I've seen built for that."
 
-"A parking system, live, protecting somebody's actual licence plates right now."
+"A parking system, live, protecting somebody's actual license plates right now."
 
 Kavi takes it off him inside a minute, offhand about it, and slides it to Chloe.
 
@@ -194,11 +196,11 @@ ________________
 
 Her father is replacing the back steps that summer, and it takes most of the month, because he keeps stopping to talk to the man from down the road.
 
-The cuts are hers, and he shows her the saw on the first morning and watches her make a couple, but after that everything she cuts goes back on the pile unchecked. On the Thursday a riser comes out four millimetres proud, and her father looks at it, says that will do, screws it down.
+The cuts are hers, and he shows her the saw on the first morning and watches her make a couple, but after that everything she cuts goes back on the pile unchecked. On the Thursday a riser comes out four millimeters proud, and her father looks at it, says that will do, screws it down.
 
 "That riser's sitting proud," Chloe says. "I can see it from here without even measuring it."
 
-"It's four millimetres proud," her father says. "On a back step, but the step still holds a foot."
+"It's four millimeters proud," her father says. "On a back step, but the step still holds a foot."
 
 "But I cut it," she says. "I don't want to know it's there every time I go up."
 

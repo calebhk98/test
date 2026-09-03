@@ -2,7 +2,7 @@
 
 *February 2013 – March 2013*
 
-February goes by with the telephone silent, and the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very end, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words, and Chloe finishes the words in no time, but then colours the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October, and at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
+February goes by with the telephone silent, and the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very end, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you color in once you have finished the words, and Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October, and at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
 
 Home from school, she goes upstairs with her coat still on, so that when her mom comes up to say that dinner is in ten minutes she finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -158,7 +158,7 @@ Mrs. Okonkwo stops walking backward. "Who told you that?"
 
 Her mom asks about the nurse and gets straight answers, then asks who is awake at night and gets that answered too.
 
-In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend, and she talks a long time, and he lets her get all the way to the end of it.
+In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. At the end of it a man whose beard is going gray sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend, and she talks a long time, and he lets her get all the way to the end of it.
 
 No test arrives, but she keeps waiting for somebody to hand her one, right through the afternoon and out to the car.
 

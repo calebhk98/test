@@ -34,7 +34,7 @@ Sam puts his fork down before he asks it. "How old is he now?"
 
 "Most of a decade behind you, and he'll spend every year of it hearing your name before he ever meets you, whether he asks for it or not. That's not nothing." He picks the fork back up and goes back at the stack.
 
-"He already knows that, but he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always clockwise. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes. He wanted to know whether there's a pudding."
+"He already knows that, but he's been practicing looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always clockwise. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes. He wanted to know whether there's a pudding."
 
 "What are you going to tell him?"
 
@@ -90,7 +90,7 @@ Chloe looks at the space between the cars and at Sam, and gives it about a secon
 
 There is chain link a few strides behind them and a loading dock on the other side of it, but the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it; Chloe is half a second behind her, over the rail in one clean vault. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. The fence drill has been run at this speed every term since they were children, and from four meters away it looks like three people walked backwards out of the world.
 
-The dock roof is a metre and a half above the lot, but none of the three lies down on it. They stay crouched at the lip with their hands flat on the edge, weight forward, close enough to be down in the lot inside a second: open air between them and Sam, a clear view of every set of hands, a drop onto anybody who gets behind him.
+The dock roof is a meter and a half above the lot, but none of the three lies down on it. They stay crouched at the lip with their hands flat on the edge, weight forward, close enough to be down in the lot inside a second: open air between them and Sam, a clear view of every set of hands, a drop onto anybody who gets behind him.
 
 One of the men says something. Another one asks, "Where'd they go?" Sam starts walking while they're both still talking.
 

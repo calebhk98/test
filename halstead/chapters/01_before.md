@@ -52,7 +52,7 @@ What she reads comes back out of her at the table, in order, at length, and with
 
 "No, he gets worse and then he stops," Chloe says, putting her fork down. "He gets worse. She starts being fine without him and he can tell. So he gets meaner at exactly the point where she stops needing him. That's backwards. Except it isn't. That's exactly when you'd get mean."
 
-Her mom points towards Chloe's plate, and Chloe pauses long enough to take a bite. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway. You know because of the little things. She saves him the last bite every time. She stops complaining about the noise he makes when he chews."
+Her mom points toward Chloe's plate, and Chloe pauses long enough to take a bite. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway. You know because of the little things. She saves him the last bite every time. She stops complaining about the noise he makes when he chews."
 
 "How do you know, then, if she never says so?"
 
