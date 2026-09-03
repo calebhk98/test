@@ -52,7 +52,7 @@ Kowalczyk, still writing up the board, says, "That's the last round. So it's pai
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it: fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round again herself, the fifty seconds and the knee, in her own order this time, before anybody else gets to it first.
+Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it: fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round herself before anybody else gets to it first.
 
 Seven of the year below go on her teaching list in September while Marek goes on somebody else's; she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now; it goes well enough until November, when all of them get one question wrong, and wrong it identically.
 
@@ -70,7 +70,7 @@ What comes back to her at the sinks from a girl in the year above is the questio
 
 "It's true," she says. "Who told you?"
 
-The girl says she doesn't remember, and starts to go. "Try again," Chloe says. "Somebody told you an exact thing on an exact day, and I want the day." The girl gives her Tuesday, and a table by the far window, and that is a day and a place where a minute ago there was neither.
+The girl says she doesn't remember, and starts to go. "Try again," Chloe says. "Somebody told you an exact thing on an exact day, and I want the day." The girl gives her Tuesday, and a table.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 
@@ -146,7 +146,7 @@ Chloe has the arrival sheets and nothing yet to put into them, so she sits in th
 
 Ruth pulls the chair round without getting off it. "Then it's picking the road up at all of them and I need to know that, and now I can't. You've made that box different from the rest of them. Do your own end again, or go to bed, or go and find me something to eat, and leave mine alone."
 
-"Fine. But I'm writing down what I saw first, so it's on a page somewhere and not only in my head." Chloe marks the time and the box number on the corner of Ruth's own sheet, then goes to find her something to eat.
+"Fine." Chloe marks the time and the box number on Ruth's own sheet, then goes to find her something to eat.
 
 The run is in the afternoon block on the last Thursday in March. A man from the staff walks out past the top posts with the plate under his arm, a hand-sized square of stock Chloe brought up from the forge in February with the corners taken off it so the sound would be identical every time; he goes over the rise where none of them can see him and stays there. Nadia has a person at every post with a thermometer and Odile on the near mark with the watch; then there is nothing to do at all for twenty minutes.
 
@@ -194,7 +194,7 @@ She goes back to her tray. "You've been eating like a man with a farm, and you'l
 
 Priya makes him stand against the door frame in the corridor and marks it in pencil above the mark from June, a visiting inspector asks him in October whether he teaches here, and he goes through a couple of sets of kit before Christmas and a third in March, of which the third is the one that fits. Fencing goes to both hands that term, so her left is roughly where her right was years ago, half a beat late onto everything she can already see coming.
 
-The forge stays where it has been; she finishes a set of three hinges in November that have taken her Sundays of filing and fitting. Holding the last of them up to the window, she turns it with her thumb working along the seam where the two edges meet slightly off. She carries it down the bench and sets it in front of Pruitt without a word. He checks it once under the light, hands it back, and tells her a seam is not a hinge, and to stop hunting for reasons to throw good work away.
+The forge stays where it has been; she finishes a set of three hinges in November that have taken her Sundays of filing and fitting. Holding the last of them up to the window, she turns it with her thumb working along the seam where the two edges meet slightly off. She carries it down the bench and sets it in front of Pruitt. He checks it once under the light: a seam, not a hinge, and stop throwing away good work.
 
 ________________
 

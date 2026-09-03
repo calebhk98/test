@@ -304,7 +304,7 @@ Chloe reads it in the corridor, out loud and in Russian, at a volume that turns 
 
 "They were inside before the alarm went, but the sheet has that down as ours, and there is nothing on it anywhere about the sensors."
 
-"There won't be, but you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor. Chloe finds the duty officer's pigeonhole and posts a note through the slot before dinner, her name on it, the time, and the missing line about the sensors, in case anybody besides Kavi ever writes it down.
+"There won't be, but you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor. Chloe finds the duty officer's pigeonhole and posts a note through the slot before dinner: her name, the time, and the line about the sensors that isn't on the sheet.
 
 ________________
 
