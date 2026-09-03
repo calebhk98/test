@@ -118,9 +118,9 @@ Chloe goes back over the fortnight that evening looking for the sitting where sh
 
 She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, warmly, meaning it, and Chloe says thanks, and the word comes out thin.
 
-Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin: that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
+Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin, and he waits until she is most of the way down the hall with her tray before he says it, at the volume of the far end of the table: that a stranger loses her by the second sentence, and it is exactly what the man from the university said and the whole of what he said. Her ears are red by the time she reaches the table, but the tray does not tip, and she does not look at him while she sits down. Sam asks him something about the fish tank and he answers that too, in the same voice.
 
-Chloe works with Iyad in chemistry for a term after that, during which he is careful and fast but gets more out of the hour than she does. Chloe comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last.
+Chloe works with Iyad in chemistry for a term after that, during which he is careful and fast but gets more out of the hour than she does. Chloe comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last, three tables clear of him most nights.
 
 Sam spends the whole year on the overhang.
 

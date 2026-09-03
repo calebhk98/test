@@ -224,6 +224,8 @@ In the common room Chloe has the phone flat on her knee, going down her own list
 
 "Chloe's are half up already, but the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has got to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
 
+Chloe stops counting under her breath and finishes the list in her head, the phone screen down against her knee.
+
 Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and both of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his and wants to know, immediately, what happened to the last.
 
 Odile gets in everywhere. The rest of the year hears about it days later, when Priya finds the letters stacked unopened in date order on her desk and says so at dinner in front of half the table.

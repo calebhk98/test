@@ -2667,9 +2667,9 @@ Chloe goes back over the fortnight that evening looking for the sitting where sh
 
 She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, warmly, meaning it, and Chloe says thanks, and the word comes out thin.
 
-Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin: that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
+Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin, and he waits until she is most of the way down the hall with her tray before he says it, at the volume of the far end of the table: that a stranger loses her by the second sentence, and it is exactly what the man from the university said and the whole of what he said. Her ears are red by the time she reaches the table, but the tray does not tip, and she does not look at him while she sits down. Sam asks him something about the fish tank and he answers that too, in the same voice.
 
-Chloe works with Iyad in chemistry for a term after that, during which he is careful and fast but gets more out of the hour than she does. Chloe comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last.
+Chloe works with Iyad in chemistry for a term after that, during which he is careful and fast but gets more out of the hour than she does. Chloe comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last, three tables clear of him most nights.
 
 Sam spends the whole year on the overhang.
 
@@ -2842,9 +2842,9 @@ By the end of the hour they have more between them than everybody else on the fl
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, she has it in order, and she says it at the volume she says everything at.
 
-Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on.
+Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. Bex finds Chloe across the floor before she sits back down, holds it half a second, and turns to her partner without saying anything else.
 
-Chloe sits at the front of the floor with her knees up and her arms round them. Afterwards she goes back through the Thursday, the wall bars and Ruth's back against them and her own hands out in front of her, working out how much of it went out loud and in what order. She had been going fast and talking at Ruth; Ruth was the person she had been explaining it to.
+Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. She tells Ruth about it that evening at the sinks, that it was theirs from the Thursday and Bex has the whole floor calling it hers now, and Ruth says only that Bex is like that with everything and starts on the impression of the boy who said luck again.
 
 By the following week there are theories going round about the markers being different weights.
 
@@ -2885,7 +2885,7 @@ Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table with a phrase of his own on the front of it, the bit about the year still in it, the north stairwell off the bottom of the sheet as well, and who was standing in it while it went uncovered. The far end takes up both and is still on them when the plates come back. Chloe finishes what is in front of her and carries her tray down the far side of the hall.
+Twenty minutes later Iyad has it at the far end of the table, pitched for both benches, with a phrase of his own on the front of it: the bit about the year still in it, the north stairwell off the bottom of the sheet, and Chloe's name on the end of it, standing in it while it went uncovered. The far end laughs and takes up both lines at once, and is still on them when the plates come back. Chloe finishes what is in front of her without looking up, and carries her tray down the far side of the hall.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 
@@ -3032,9 +3032,9 @@ Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm do
 
 Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later.
 
-The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at.
+The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further round to find Chloe's row before she gets to the end of the sentence.
 
-Chloe has her own pages in the bag under the desk and leaves them in it. After that she does her turning over on the walk down to the field. It is long enough for it and has nobody else on it. In November it is dark before the block ends, and the grass soaks through her boots on the way down.
+Chloe has her own pages in the bag under the desk and leaves them in it, and does not turn round to see whether Bex found her. After that she does her turning over on the walk down to the field. It is long enough for it and has nobody else on it. In November it is dark before the block ends, and the grass soaks through her boots on the way down.
 
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 
@@ -3718,6 +3718,8 @@ Nadia turns the napkin round toward Chloe with a finger.
 
 "A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it, but nobody looked at the middle, which is where I went first. And Chloe's had it a while and she'll not say. She never says until she's certain, and she's never certain."
 
+Chloe gets as far as "It's not," and stops there.
+
 The far end takes that up and keeps it. Sam laughs into his water, and Priya wants to know whether anybody is going to answer her about the live system.
 
 Nadia waits for him to finish.
@@ -3811,7 +3813,7 @@ Kowalczyk, still writing up the board, says, "That's the last round. So it's pai
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run.
+Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it: fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run, and says nothing to Ruth about it either, that night or the nights after.
 
 Seven of the year below go on her teaching list in September while Marek goes on somebody else's; she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now; it goes well enough until November, when all of them get one question wrong, and wrong it identically.
 
@@ -4832,6 +4834,8 @@ Decisions arrive across March rather than all at once, the part everyone braced 
 In the common room Chloe has the phone flat on her knee, going down her own list of which have posted and which have not, counting under her breath.
 
 "Chloe's are half up already, but the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has got to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
+
+Chloe stops counting under her breath and finishes the list in her head, the phone screen down against her knee.
 
 Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and both of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his and wants to know, immediately, what happened to the last.
 
