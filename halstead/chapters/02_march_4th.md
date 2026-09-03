@@ -60,7 +60,7 @@ Her thumb will do the square turn but it goes past the corner-to-corner every ti
 
 The last block is under her hand when Ben says okay and lifts his thumb off the watch, but she puts it in anyway, because that's where it goes.
 
-Then she checks it against the card, corner by corner, because there is nothing else to do with her hands now, and it's the card, and she sits with that.
+Then she checks it against the card, corner by corner, because there is nothing else to do with her hands now. It matches the card corner for corner, and she sits with that.
 
 Ben writes something down, small and quick, but she can't tell from his face whether it was a good thing to write.
 
@@ -68,7 +68,7 @@ Ben writes something down, small and quick, but she can't tell from his face whe
 
 "One more. Is there another like it?" She hooks her heels on the rung of the chair, then comes up onto her knees on it to reach the middle of the table.
 
-There is another like it, and then another. Both times she has the picture in pieces before he has finished setting the card down, and both times Ben says okay while a block is still in her fingers.
+There is another like it, and then another. Both times she has the picture finished before he has done setting the card down, and both times Ben says okay while a block is still in her fingers.
 
 The lid goes on the bin.
 
@@ -116,7 +116,7 @@ A last look at the key, then Ben says go and starts the watch with his thumb, bu
 
 Halfway down the second row she stops and looks up, because he only said to put the right mark in. There might be a version of this where the mark can be scribbled and it still counts. Ben watches her while the watch keeps going, and she goes back to doing it neat.
 
-Stop, he says, and takes the pencil out of her hand and turns the sheet face down before she can count the rows, though she knows about how much a page is, and her face goes hot, not the good kind.
+Stop, he says, and takes the pencil out of her hand and turns the sheet face down before she can count the rows, though she has a rough idea how much a page holds, and her face goes hot, not the good kind.
 
 "Was that a good one, or is that a question you skip?"
 
@@ -178,7 +178,7 @@ Then the standing booklet comes back with a different kind of page, a square of 
 
 She points. He turns the page. She points. He turns the page.
 
-The pieces stop being shapes but start being rules about shapes, and she keeps pointing while Ben turns pages faster than he has turned anything all morning. Then the pages stop.
+The pieces stop being shapes and start being rules about shapes, and she keeps pointing while Ben turns pages faster than he has turned anything all morning. Then the pages stop.
 
 ________________
 
@@ -240,7 +240,7 @@ Only pieces reach her, her mom's voice saying the teacher says, then Ben's voice
 
 Her mom makes a sound, and Chloe can't tell from out here which kind it is.
 
-"There are a couple of things where she's slower than most kids her age, and the biggest is copying, hand-and-eye, and that part's real, you'll see it in her handwriting for years, but it's also not what anybody in that building is calling you about."
+"There is nothing the matter with her hands. She copies at about the speed a six-year-old copies, which is what six-year-old hands do, and you'll see it in her handwriting for years and it will mean nothing. What it does is sit in the average next to the talking, and the talking isn't six, and the report has no way of saying that. It is also not what anybody in that building is calling you about."
 
 "No."
 
@@ -248,7 +248,7 @@ Her mom makes a sound, and Chloe can't tell from out here which kind it is.
 
 "How far at the top of it?"
 
-"That is the part I can't give you. On a couple of them she got to the end of what the form has for her age, and I kept going with a different one, but none of that counts. The form ran out before she did."
+Ben says the number. Through the door it is one word and Chloe does not catch it. "On a couple of them she got to the end of what the form has for her age and I kept going with a different one, and none of that counts either. The form ran out before she did."
 
 Chloe shifts on the chair, her feet nowhere near the floor.
 

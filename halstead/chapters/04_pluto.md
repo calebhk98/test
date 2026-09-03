@@ -126,8 +126,6 @@ Then a boy laughs, one loud honk of it right up close, and her jaw unclenches al
 
 "It's not even a room. It's a room-shaped object," he says.
 
-Sam looks at her a second longer than the joke needs, then looks at the door instead. He says nothing about it that day or any day after, but for the rest of the week he is on her left in every line they stand in.
-
 Chloe laughs until she has to put her forehead against the wall, before somebody else catches it too, a couple of the boys by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
 
 Then a girl says something from further up the line.
