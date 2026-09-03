@@ -27,8 +27,11 @@ her.
 
 **She reads the room's mistakes out loud too.** She will say what a person got
 wrong, accurately, in front of the people who watched them get it wrong, and
-she means it as usefully as she means everything else, and it arrives at the
-moment it costs most because that is the moment the subject is up.
+she picks the moment. She waits until the room is full and the subject is up
+and the person is standing there, and then she says it, and she is pleased with
+herself afterwards in a way she does not hide well. Asked later she will say it
+was useful, and she will believe that; both things are true at once and the
+second does not cancel the first.
 
 **She is liked, and she should be.** She is the person who gets a stalled table
 moving, who remembers what everybody is working on, who notices the person
@@ -148,8 +151,15 @@ Losing, she wants a rematch immediately and forgets by morning.
 Frightened, she gets organised: she starts assigning jobs, and the jobs are
 sensible.
 
-**Two ways a writer gets her wrong:** playing the interruption as showing off,
-and giving her a moment of insight into it. She has neither.
+**Two ways a writer gets her wrong:** making her cruel, and making her
+oblivious. She is neither. She knows what she is doing and she enjoys it, and
+she would be genuinely baffled to be called mean, since in her own account she
+is being accurate and accuracy is a kindness. Put the enjoyment in the timing
+and the choice of audience, never in a line where she gloats.
+
+An earlier version of this sheet said she had no insight into any of it. The
+author overruled that: he wants her closer to an antagonist who is trying, in a
+small way, to land one.
 
 ## Frustration and anger
 
@@ -305,8 +315,9 @@ loses it every morning and writes it again.
   everybody has agreed.
 - Give an outsider the full account of a piece of work she watched somebody
   else do, correctly, in the first person, and take the follow-up questions.
-- Say what a person got wrong, in front of the people who saw it, meaning it
-  helpfully.
+- Say what a person got wrong, in front of the people who saw it, having
+  waited until they were all there to hear it.
+- Enjoy having been right, visibly, for about four seconds, and then move on.
 - Remember what somebody was worried about a month ago and ask about it.
 - Turn up early to everything, including things she was not invited to.
 - Eat off a friend's plate and push her own across in the same movement.

@@ -372,16 +372,22 @@ ideas to look clever, and it is produced by giving him any awareness at all of
 the transaction. The fix is that he is not tracking origin on anything,
 including his own ideas, which he also hands away.
 
-**The gossip.** The second failure mode is a boy who enjoys knowing a thing
-about somebody and enjoys being the person to say it. He takes no pleasure in
-that at all, and the material he passes on is overwhelmingly dull and
-overwhelmingly true. Write the untrue item exactly as he writes the true ones,
-with no relish anywhere near it, and it will land far harder than malice would.
+**The gossip who does not know he is one.** An earlier version of this sheet
+said he took no pleasure in any of it and passed things on without relish, and
+argued that flat accuracy would land harder than malice. The author overruled
+that. He does enjoy it, and the enjoyment is in the delivery: he waits for the
+person to be in earshot or pointedly not in earshot, he saves the good item for
+the fullest table, and he gives it the timing of a punchline.
 
-**The one who is confronted and learns.** He can be told, and the correct scene
-is that he agrees instantly, apologises past what the moment carries, is
-genuinely wretched about it, and has taken in nothing, because the agreeing
-arrived too fast to be understanding.
+What he still is not is a liar. The material is true, or true enough that he
+believes it, and the untrue item goes out in exactly the register of the true
+ones. He does not invent. He aims.
+
+**The one who is confronted and learns.** He can be told, and the correct
+scene is that he does not fold. He deflects: he only repeated what he heard, he
+cannot help what he hears, and he has a question ready that turns the room back
+to the thing the confronter least wants discussed. He apologises later, in
+private, sincerely, to somebody who is not the person he did it to.
 
 ## Do not confuse with
 
