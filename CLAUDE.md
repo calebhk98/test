@@ -37,6 +37,7 @@ Run from `halstead/`.
 | `prose_grade.py` | per-chapter reading grade, Lexile, sentence and paragraph shape |
 | `style_report.py` | conjunction rates, and the tic scan that catches the trailing explanatory clause. Takes a path. |
 | `tics.py` | 29 constructions against a 23-book corpus, each with a target |
+| `banned_phrases.py` | phrases the author has ruled out by name, checked against the chapters |
 | `absolutes.py` | every absolute word, all contexts, against the corpus |
 | `quote_length.py` | sentences per quotation against the corpus |
 | `number_report.py` | spelled numbers one to fifteen, all at their corpus maximum |
