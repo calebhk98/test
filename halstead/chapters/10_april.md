@@ -10,7 +10,7 @@ The bag has skidded into the wall. Chloe picks it up before anyone else can, the
 
 "I said probably not once, in February, and February is allowed to change its mind."
 
-Ruth hugs her hard enough to hurt, then takes the bag off her anyway. "Third floor, they put all the new ones on third and move you in August once they've worked out who talks in their sleep. Come on, it's the far end, and the far end's better because of the stairs."
+Ruth hugs her hard enough to hurt, then takes the bag off her anyway. "I never wrote because I never had your address, and I asked twice and got told they can't give it out, so if you thought I forgot about you, I didn't. Third floor, they put all the new ones on third and move you in August once they've worked out who talks in their sleep. Come on, it's the far end, and the far end's better because of the stairs."
 
 The stairs are stone to the first landing and wood above it. The wood gives a little under Ruth going up ahead of her, past the bowl of apples at the turn of the stairs and away from the noise of the ground floor. It gets warmer on every floor.
 

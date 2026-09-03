@@ -148,6 +148,14 @@ A woman called Mrs. Okonkwo, who walks backward half the time so that she can ta
 
 "I know you do," Mrs. Okonkwo says, still walking. "The dining hall's through there, do you remember it from July?"
 
+"Ruth said there's an evaluation day in the fall and you have to get it then or wait a year."
+
+Mrs. Okonkwo stops walking backward. "Who told you that?"
+
+"Ruth. She was at camp too."
+
+"Well, that's silly, and I don't know where she got it. We take people all year round, whenever they turn up." She starts walking again. "Somebody said something to her in a corridor and it went round, I expect. It usually does."
+
 Her mom asks about the nurse and gets straight answers, then asks who is awake at night and gets that answered too.
 
 In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend, and she talks a long time, and he lets her get all the way to the end of it.

@@ -105,3 +105,60 @@ violence, and Chloe does not cry in public.
 
 Every quotation you print must be copied from the file and checked. Fabricated
 quotes have done more damage in this project than anything else.
+
+---
+
+# Second pass: cutting, not cataloguing
+
+The six reports logged 141 instances. That is more than the book should lose
+and the author has set a ceiling: **each span comes down to at most fifteen**.
+
+So this pass is triage and then surgery.
+
+## Triage
+
+Read your own span's report. Rank every instance. You are looking for two
+things at opposite ends:
+
+- **The worst.** Where the passivity costs the book most: a scene that would
+  read the same without the viewpoint character in it, a moment the plot needs
+  her to meet and she does not, a beat repeated a third and fourth time.
+- **The best.** Where it is doing real work and should be defended. Say so
+  plainly and give the reason. A report that finds nothing worth keeping has
+  not been read carefully.
+
+Keep at most fifteen. Everything you drop, list in one line with why.
+
+## Surgery
+
+For the ones you keep, change them. This is the part that matters and it is
+where the last pass failed.
+
+**Do not reword the same event.** Two scenes were repaired last week by giving
+the protagonist a richer inner life — a pillow, a rehearsed comeback, a
+thinner-sounding thank you — and both still fail, because nothing that happens
+happens differently. Adding interiority to inaction is not a fix. It is the
+same defect in better prose, and the author caught it from the outside.
+
+A changed instance has to pass all four:
+
+1. She wants something and it is visible to somebody in the scene.
+2. She does something about it that another character can see.
+3. It costs her, or fails, or works and makes the next problem.
+4. The scene ends somewhere it would not have ended otherwise.
+
+She is allowed to lose. She is allowed to make it worse. What she is not
+allowed to do is leave the room the way she entered it.
+
+This applies to everyone, not only Chloe. Sam, Ruth, Nadia, Eli, Theo and
+Priya all carry logged instances, and a viewpoint character who receives their
+own chapter is the same defect.
+
+## Editing rules for this pass
+
+You are editing chapters now, not reporting. Chapters 1 and 2 are LOCKED by the
+author: read them if you need context, change nothing in them, and if your span
+includes them, take your fifteen from the rest.
+
+Keep the chapter's word count inside 2,000 to 5,000. Run
+`python3 grade.py` when you are done and confirm the scorecard has not fallen.
