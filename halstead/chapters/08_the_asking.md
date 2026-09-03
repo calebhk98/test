@@ -12,7 +12,7 @@ The appointment is the following Wednesday, for which her mom takes the whole af
 
 "So tell me what's going on, and start wherever you like. There's no order I need it in. Take as much time as you want getting to it, and if a part of it doesn't make sense yet, that's fine too."
 
-Her mom is sitting right on the front edge of the chair, and she has the whole list ready in order, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." Her hands come apart and smooth an imaginary crease out of her skirt.
+Her mom is sitting right on the front edge of the chair, and she has the whole list ready, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." Her hands come apart and smooth an imaginary crease out of her skirt.
 
 "Chloe, is that right, is that how it's actually been?"
 
@@ -80,7 +80,11 @@ Her mom looks out the windshield at the wall of the building. "She said you're d
 
 Her mom puts the key in and leaves it there. "You'd go and talk to her every couple of weeks, and she'd talk to us as well, and then the three of us would sit down and see how it was going. She wants to see you again in a few weeks, and I said I'd ask you first, so is that all right with you?"
 
-"Do I get a say in it, though, or is a few weeks just a thing you and her already settled?" Chloe says. The wall of the building starts to slide sideways past her window as the car pulls out of the lot. Her mother says the day is still hers to move if she hates it, and that is as far as she will go with it right now. "Okay," Chloe says. "So can I go to Halstead, then? We're already talking about it."
+"Did you already decide?" Chloe says. "You and her, before I came out?"
+
+"Nothing's decided," her mother says. "If you hate it after one day, we stop. That's as far as I'm going this afternoon."
+
+"Okay." The engine is running and the car has not moved yet. "Does that mean I can go to Halstead, then? We're already talking about it."
 
 Her mother puts her forehead on the steering wheel and stays there.
 
@@ -88,7 +92,7 @@ Her mother starts on the school in October, every week, on the phone first and t
 
 At the counter, with her back to the room and Chloe at the table behind her, she says the words in writing twice in one sentence.
 
-Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays it all out in order.
+Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays it all out.
 
 There is a program in the building. It is one hour, on a Thursday, with a woman called Mrs. Prahl who covers five different buildings in a week. The office says that Mrs. Prahl is wonderful, that the children adore her, that it is a lovely program.
 
@@ -172,9 +176,13 @@ At dinner her mother passes her the bread, asks whether she wants more milk, and
 
 So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice, and Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else, and Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
 
-On the fourth Thursday there's a new packet, which Chloe takes home and finishes in about half an hour, working every answer out and then writing each one upside down, so the sheet only reads right held up to a lamp. She puts it in the bottom of her bag under the folder for reading. When Mrs. Prahl asks the following Thursday how she got on with it, Chloe hands it over without a word and watches her turn it around twice before she works out what she is looking at.
+On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, but keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. The following Thursday Mrs. Prahl asks how she got on with it.
 
-Mrs. Prahl laughs, out loud, and writes something on the corner of the last page before she hands it back. Chloe puts it straight in her bag without checking what the something says.
+"I'm still working on it," Chloe says.
+
+"That's absolutely fine," Mrs. Prahl says. "Take your time."
+
+She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. Chloe wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
 In December her mom comes up and sits down on the end of her bed, in the late afternoon, with the light off and Chloe lying on top of the covers with her shoes still on.
 
@@ -206,7 +214,13 @@ Her mom says it carefully. "Sweetheart, I need you to tell me the truth. Is some
 
 Her mom's hand goes still on Chloe's shirt. "What does Bryce say, exactly?"
 
-"Never mind, it isn't the thing you're asking about."
+"That I sound like a teacher." Chloe keeps working at the thread. "And that nobody asked him."
+
+"And what do you do when he says it?"
+
+"Nothing. If I say something back he does it again the next day, and if I don't he gets bored by Friday." Chloe pulls the thread all the way out and holds it on her finger. "That isn't bullying. It's only true."
+
+Her mom looks at her for long enough that Chloe starts to think of something else to say.
 
 Her mom smooths the back of Chloe's shirt down twice. "Okay, honey. You'll make friends this year, it just takes time in a new grade, that's all this is."
 

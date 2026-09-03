@@ -78,6 +78,16 @@ TARGETS = {
     "cap: puts it back down": 29.4,
     "cap: does X instead": 53.5,
     "'the whole/rest of it'": 10.0,
+
+    # The author found this one by reading, not by measuring, which is the
+    # usual order in this project. The book ran 28 instances at 22.1 per
+    # 100,000 against a corpus median of 1.4 and a maximum of 8.8, so it was
+    # sixteen times the median and two and a half times the most in-order-
+    # heavy book in the reference set. It is the narrator's tell for
+    # competence: everybody in this book recounts things in order, gives the
+    # figures by name and in order, reads the column in order. The target is
+    # the corpus maximum, as everywhere else here.
+    "'in order' (not 'in order to')": 8.8,
     "turning an object": 6.0,
     "announced withholding": 3.0,
     "'that's not X, that's Y'": 2.0,
@@ -147,6 +157,7 @@ PATTERNS = {
     "announced withholding": r"\bkeeps? (?:it|that|the rest of it|them) to (?:him|her|them)sel(?:f|ves)\b|\bkept (?:it|that) to (?:him|her)self\b",
     "'that's not X, that's Y'": r"\b(?:that|this|it)'s not [^.,;!?]{1,40}, (?:that|it)'s\b",
     "'the whole/rest of it'": r"\bthe (?:whole|rest|entire) of it\b",
+    "'in order' (not 'in order to')": r"\bin order\b(?!\s+to\b)",
     "the word 'same'":       r"\bsame\b",
     "'though' at clause end": r",\s+though\b",
     "'except' as connector": r",\s+except\b",

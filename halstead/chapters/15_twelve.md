@@ -22,7 +22,7 @@ Sam holds it up with an eye shut, then hands it back.
 
 Then he takes his coat off the peg because it is getting dark, and the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank.
 
-Walking back from the forge in the dark at the end of November, having missed dinner again, she gets as far as the stairs before Marek comes the other way with a book open on his forearm and stops in front of her to tell her where he has got to, her name first and then straight into it. The chapter he has been going through since the summer, the line the author skips over, the pages he has had to write out himself to get past it, all of it in order and fast and with his finger keeping the place. She puts the burn on her wrist against the cold of the banister and asks him what was actually wrong with the line; he tells her that too, and he is right about it. Then she asks him where the pages are, and he taps the side of his head and goes up.
+Walking back from the forge in the dark at the end of November, having missed dinner again, she gets as far as the stairs before Marek comes the other way with a book open on his forearm and stops in front of her to tell her where he has got to, her name first and then straight into it. The chapter he has been going through since the summer, the line the author skips over, the pages he has had to write out himself to get past it, all of it fast and with his finger keeping the place. She puts the burn on her wrist against the cold of the banister and asks him what was actually wrong with the line; he tells her that too, and he is right about it. Then she asks him where the pages are, and he taps the side of his head and goes up.
 
 Three weeks later a row of hooks sits on the bench with one fault running through all of them, and Pruitt comes past with a bar on his shoulder, running a thumb down the scroll of the nearest as he goes.
 
@@ -184,7 +184,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "You'll get grabbed."
 
-"That's the point," she says, already moving toward the door. "I'm twelve, I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
+"That's the point," she says, already moving toward the door. "I'm twelve, I'm small, and I'm a girl in pajamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
 Ruth looks at her. "I'm shorter," she says.
 

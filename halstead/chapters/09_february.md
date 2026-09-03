@@ -170,4 +170,4 @@ Her dad carries her bag in and puts it at the bottom of the stairs, and she goes
 
 Out the kitchen window, her mother is still sitting in the car with the engine off and the lights with it, but she has yet to open the door on her side.
 
-Chloe watches her through the window, then calls through to the other room to ask why Mom is still sitting out there. Her dad says something about toast without answering that, so she asks it again, louder, and this time he comes and looks out the window himself before he says anything back.
+Chloe watches her through the window, until her dad says something from the other room about whether anybody wants toast, and she goes.

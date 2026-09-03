@@ -20,7 +20,7 @@ On the Tuesday she tells him she read number 10.
 
 "That's Madison," he says, and starts the hour without adding anything to it.
 
-That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. Number 6 goes that week and 9 the week after. By the end of October she is going through them in order in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
+That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. Number 6 goes that week and 9 the week after. By the end of October she is going through them in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
@@ -84,11 +84,21 @@ On the Monday Chloe gets one on her fourth go, and the balls meet an arm's lengt
 
 By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, she has it in order, and she says it at the volume she says everything at.
+People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, and she says it at the volume she says everything at.
 
 Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. Bex finds Chloe across the floor before she sits back down, holds it half a second, and turns to her partner without saying anything else.
 
 Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. On the way out she catches Bell at the door and tells him it was Thursday's, hers and Ruth's, before Bex gets there first. He tells her the sheet is already written and walks off with the markers.
+
+That evening at the sinks she gives Ruth all of it, what she said to Bell and what he said back.
+
+"He'd already written the sheet. He said it like that settles it, like the sheet is the thing that happened and the Thursday isn't."
+
+"Bex is like that with everything," Ruth says, around her toothbrush.
+
+"That's not an answer, Ruth. That's just saying it again slower."
+
+Ruth spits, and starts on the impression of the boy who said luck again, and by the second line of it Chloe is laughing at the sink and has stopped saying anything about the sheet.
 
 By the following week there are theories going round about the markers being different weights.
 
@@ -129,7 +139,7 @@ Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table, pitched for both benches, with a phrase of his own on the front of it: the bit about the year still in it, the north stairwell off the bottom of the sheet, and Chloe's name on the end of it, standing in it while it went uncovered. The far end laughs and takes up both lines at once, and is still on them when the plates come back. Chloe's fork stops over the plate. She carries her tray out the far door before the laugh has run its course, finds Ruth on the step, and tells her the whole of what Iyad said, in order, before the door has finished swinging.
+Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, and is still on them when the plates come back. Chloe's fork stops over the plate. She carries her tray out the far door before the laugh has run its course, and finds Ruth on the step.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 

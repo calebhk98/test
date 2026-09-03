@@ -52,7 +52,7 @@ Kowalczyk, still writing up the board, says, "That's the last round. So it's pai
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it: fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round herself before anybody else gets to it first.
+Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it. "Fifty seconds. Third round. Knee across the shin at the finish." She shakes the water off her hands. "What she should have done with that shin is a whole other conversation." By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round herself before anybody else gets to it first.
 
 Seven of the year below go on her teaching list in September while Marek goes on somebody else's; she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now; it goes well enough until November, when all of them get one question wrong, and wrong it identically.
 
@@ -70,7 +70,19 @@ What comes back to her at the sinks from a girl in the year above is the questio
 
 "It's true," she says. "Who told you?"
 
-The girl says she doesn't remember, and starts to go. "Try again," Chloe says. "Somebody told you an exact thing on an exact day, and I want the day." The girl gives her Tuesday, and a table.
+The girl says she doesn't remember, and starts to go.
+
+"You remember," Chloe says. "You said it with a week attached."
+
+"I say a lot of things."
+
+"You said the second week. Nobody gets a week out of the air. Somebody handed it to you."
+
+"Or I made it up." The girl has her bag on one shoulder now. "People do that. It's allowed."
+
+"Then say you made it up, and I'll go."
+
+The girl doesn't say it. She looks at the door, and then back. "Tuesday. Far table, the end by the window. I'm not telling you who."
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 

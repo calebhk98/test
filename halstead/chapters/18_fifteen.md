@@ -118,7 +118,7 @@ Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, seve
 
 Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
-Iyad starts a list of it in October without anybody asking him to, everybody in the year and what they are doing with theirs. By June he is going round the tables collecting the figures by name and in order and reading back what he has so far to whoever is sitting there. Chloe gives him seventeen, and Rustem's number is a couple of lines above hers on the page. Iyad reads the page out at the long table in the week Hark has the ledger up on the board, top to bottom, in order, and gets to hers in the middle of the pudding and says it in the voice he said Rustem's in.
+Iyad starts a list of it in October without anybody asking him to, everybody in the year and what they are doing with theirs. By June he is going round the tables collecting the figures by name and reading back what he has so far to whoever is sitting there. Chloe gives him seventeen, and Rustem's number is a couple of lines above hers on the page. Iyad reads the page out at the long table in the week Hark has the ledger up on the board, top to bottom, and gets to hers in the middle of the pudding and says it in the voice he said Rustem's in.
 
 Chloe finishes the spoonful before she answers him. "Read Rustem's again, next to mine, and tell the table what his was actually worth against what he had riding on it." Sam asks Iyad what his own came to, and he tells him that as well.
 

@@ -12,7 +12,7 @@ The woman goes back to the form in front of her. "Nine-year-olds get eight, that
 
 "It's what the year gets rather than a mistake, and biology starts Tuesday whether you're ready for it or not."
 
-Her new ones are chemistry, statistics and biology, and Ruth has them in a different order but is smug about getting chemistry first. Kavi got none of the ones he asked for, and at breakfast he puts his objections in order with his own sheet spread out on the table beside the tray.
+Her new ones are chemistry, statistics and biology, and Ruth has them in a different order but is smug about getting chemistry first. Kavi got none of the ones he asked for, and at breakfast he lays his objections out with his own sheet spread out on the table beside the tray.
 
 "The first is that the form does nothing. It asks you for three, but it gave me zero of them."
 
@@ -112,13 +112,13 @@ ________________
 
 Bex Alcantar arrives at the end of your sentence before you get there and finishes it for you, and the ending she puts on it is usually the ending it was going to have.
 
-In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
+In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight and every part of it right, and she says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
 
 Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench. Then she gets her head under the pillow and runs the whole thing again the way it should have gone, out loud into the mattress, the version where she says the joints were hers and the teacher hears her say it.
 
 She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, warmly, meaning it, and Chloe says thanks, and the word comes out thin.
 
-At dinner she tells Ruth the whole fortnight over, in order this time, out loud. Ruth says she should have said so to the teacher on the day and not to Ruth on a Monday, and goes back to her plate. Chloe never does tell the teacher, not that week and not the one after, but she stops saying we out loud about anything of hers, to anybody, for the rest of the year.
+At dinner she tells Ruth the whole fortnight over, out loud this time. Ruth says she should have said so to the teacher on the day and not to Ruth on a Monday, and goes back to her plate. Chloe never does tell the teacher, not that week and not the one after, but she stops saying we out loud about anything of hers, to anybody, for the rest of the year.
 
 Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin, and he waits until she is most of the way down the hall with her tray before he says it, at the volume of the far end of the table: that a stranger loses her by the second sentence, and it is exactly what the man from the university said and the whole of what he said. Her ears are red by the time she reaches the table, but the tray does not tip, and she does not look at him while she sits down. Sam asks him something about the fish tank and he answers that too, in the same voice.
 

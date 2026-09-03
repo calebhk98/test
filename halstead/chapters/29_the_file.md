@@ -46,7 +46,7 @@ Eight years ago. Four operators, over the fence at the loading side, a little be
 
 The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, but even at that level, three lines in the middle of the page are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
 
-They were inside the first building for under two minutes. Somebody saw a child in a corridor, alone, in pyjamas, apparently confused and asking who they were.
+They were inside the first building for under two minutes. Somebody saw a child in a corridor, alone, in pajamas, apparently confused and asking who they were.
 
 Theo stops on that line and reads it again before he lets himself go on.
 

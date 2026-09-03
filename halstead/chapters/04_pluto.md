@@ -58,7 +58,7 @@ Pushing the drawer shut with her knee and then leaning on it, Priya says, "Do yo
 
 She goes on anyway.
 
-"Okay, so the first thing is a pony isn't a baby horse. My cousin still thinks it is."
+"Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
@@ -190,19 +190,17 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "You're agreeing at me," Sam says, and pushes his tray a couple of inches away.
 
-Chloe has a whole sentence about the lid ready. "That's basically a locker," she says. "You can see everything in it and you still can't touch any of it."
+Chloe has a whole sentence about the lid ready.
 
-Sam looks at her for a second, then says, "Yeah, exactly," like it was his line the whole time.
+On the fourth night she gets as far as the phone and dials all but the last number, then stops with her finger over the last one. A kid comes up behind her and asks if she is using it. Chloe shakes her head, puts the phone back on the hook, and goes upstairs, where Priya is still awake.
 
-On the fourth night she gets as far as the phone and dials all but the last number before a kid comes up behind her to ask if she is using it. She hangs it up herself, before he has to ask twice, and goes back upstairs, where Priya is still awake.
+"Did you call your mom?"
 
-"You okay?" Priya says, not looking up from her book.
+"I was going to." Chloe sits down on the end of her own bed. "But I don't need to. She's still at the hotel and she isn't going anywhere, and if I call her she'll only ask me if I'm all right again."
 
-"I got all the way to the last number and then I didn't call it," Chloe says.
+"You could call her anyway."
 
-Priya turns a page. "Then don't do it tonight, and call her tomorrow when there's nobody behind you."
-
-Chloe doesn't answer that, but she leaves the lamp on after Priya's is off.
+"I know." Chloe thinks about it properly. "Tomorrow, maybe."
 
 Her mom stays a few more days after that, and neither of them says anything about the phone.
 
@@ -268,9 +266,13 @@ Mr. Doyle is already onto the next thing, brisk about it, while a kid glances at
 
 She has done this herself, in January.
 
-All through lunch she watches the door, waiting for somebody to come and get Ruth. Nobody does. At the end of the table she leans over. "Are you in trouble?"
+Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.
 
-"For what," Ruth says, already onto her sandwich.
+At the end of the table she leans over. "Are you in trouble?"
+
+"I don't know." Ruth has her sandwich apart and is eating the middle of it first. "At my old school they got cross when I interrupted, so probably. I say it and then I find out."
+
+But nothing comes, all day.
 
 That night it catches again: Ruth said it, so Chloe sits on her hands through the next class, and the one after that, but answers only when Mr. Doyle calls on her direct.
 

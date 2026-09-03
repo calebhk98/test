@@ -170,9 +170,9 @@ At Christmas her mother asks what she has been working on.
 
 Her mother takes the plate off her and puts it on the rack. "That's a big subject for a school essay," she says. "What did you say?"
 
-Chloe opens her mouth, closes it, and starts from the middle, not the beginning.
+Chloe opens her mouth, then works out that the answer starts with the hat, and after the hat it needs the deadline, then why hedging counts against you rather than as manners, and all of that goes in front of anything she actually wants to say.
 
-"That it was wrong. I got a B for hedging in the conclusion, twice, in the two spots I put there on purpose so it looked like I knew what I sounded like. He found both."
+"That it was wrong. I got a B."
 
 "A B's a B," her mother says, and hands her the next plate off the pile. "But it's still a good grade."
 

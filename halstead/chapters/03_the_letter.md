@@ -50,7 +50,7 @@ Her mom takes it back and looks at the back of it, finding only the ink from the
 
 "There's always a reason, we just haven't heard it yet," her mom says.
 
-Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world. People give away scholarships, and people put their name on the side of a hospital, and this is somebody doing the first one."
+Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world. People give away scholarships, and people put their name on the side of a hospital."
 
 "To us, though, it actually happens to us?"
 
@@ -150,7 +150,7 @@ Then he finds the page about what a Tuesday looks like, hour by hour, doing all 
 
 "This is a nice-looking place, kid. Look at the pool."
 
-Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, but he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list in order, all the way to the bottom of it, before going back up to start again from the first, slower this time.
+Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, but he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list all the way to the bottom of it, before going back up to start again from the first, slower this time.
 
 Chloe waits a while for him to keep talking, then goes up for her book and comes back and reads at the table next to him, and he stays fixed on the screen the whole time.
 
@@ -164,7 +164,7 @@ The laptop is still open on the kitchen table on the Monday morning, on the page
 
 There is a woman who swam in the Olympics. There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else,. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has already read it.
 
-The whole column goes past in order, and then back up to the top, every photograph taken in the same room, against a wall nicer than any wall in her school.
+The whole column goes past, and then back up to the top, every photograph taken in the same room, against a wall nicer than any wall in her school.
 
 Her dad comes in for the coffee and stands behind her chair with a hand on the back of it, reading over the top of her head.
 
@@ -210,11 +210,7 @@ On the ninth night Chloe is supposed to be asleep, having already been sent back
 
 "Not like that. That's a kid gone quiet, and you know the difference as well as I do. She used to come in the door talking."
 
-A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. Chloe comes down the rest of the way, in her socks, and stands in the kitchen doorway until her dad sees her.
-
-"I heard that part," she says. "The quiet part."
-
-Neither of them answers her right away, and it's her mom who crosses the kitchen first.
+A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. At that, Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.
 
 ________________
 

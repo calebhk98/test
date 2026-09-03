@@ -60,7 +60,7 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "Say that again in a language I speak," her dad says.
 
-"I said what's on the table, and where the bathroom is, and what I did today. And then the thing Sam says at breakfast every morning. It turns out it's rude," she says, then goes back through it in order, slower this time, turning each piece into English for him.
+"I said what's on the table, and where the bathroom is, and what I did today. And then the thing Sam says at breakfast every morning. It turns out it's rude," she says, then goes back through it slower this time, turning each piece into English for him.
 
 "We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess. It fails every time. Everybody else at that table is doing Spanish as well," she says.
 
@@ -164,7 +164,7 @@ Ruth picks the knot out of one shoelace with both thumbs.
 
 "That's hers as well. She's promised to tell me the second she hears anything at all."
 
-"Well, find out." She is up on her knees now with one hand fisted in the leg of Kavi's pyjamas. "It's a day where they look at you. So I want to know what they look at. Same material as this month, or different. Different material, a person can go and learn it."
+"Well, find out." She is up on her knees now with one hand fisted in the leg of Kavi's pajamas. "It's a day where they look at you. So I want to know what they look at. Same material as this month, or different. Different material, a person can go and learn it."
 
 "It's a form, Chloe, and a form is a completely different object from a promise."
 
@@ -172,7 +172,7 @@ Ruth picks the knot out of one shoelace with both thumbs.
 
 "There's a day, yeah, but a day only means somebody looks at you, and that's still a long way from anybody saying yes."
 
-"So there's a day," she says, and sits back against the wall, fist still shut on the pyjama leg.
+"So there's a day," she says, and sits back against the wall, fist still shut on the pajama leg.
 
 "I'm going to write you a letter every week, starting on Monday," Ruth says, to a spot on the opposite wall.
 
@@ -198,11 +198,11 @@ Chloe runs the numbers again, the ones she has been running since the drive down
 
 "Chloe," Sam says, "obviously."
 
-"Obviously." She holds on to the pyjama leg. "It's four hours to get there, though, and another four to get back."
+"Obviously." She holds on to the pajama leg. "I just have to work it out. It's four hours there and four back, so I have to get Mom and Dad to say yes to a whole day of driving, and then another one at the end. But it's school. They like school. And the letter said it doesn't cost anything, so it's only the driving, and four hours is only four hours."
 
-"So?"
+"There's a girl on second floor whose dad drove twelve," Kavi says. "Twelve, one way. She told me at dinner like it was nothing."
 
-"So that's a whole day gone every time you do it, twice over, before you even count the visits themselves." Nobody answers that, and the lights click off before she can say the rest of it, and somebody has to find the door by feel.
+"Everybody has to talk their parents into it," Ruth says. "That's just the first part of it. Parents like school. How hard can that be."
 
 ________________
 
@@ -256,6 +256,4 @@ The road noise goes on for another few miles.
 
 The road noise fills the car again until the next exit sign, and when her mom says something about the traffic on the last stretch her dad says he'll take the other way in.
 
-"I know what it's called," Chloe says, eyes still shut, and the car goes quiet enough that she can hear her dad's foot lift off the gas and find it again. "It's called I got good at it."
-
-Nobody answers that, and she keeps her eyes shut the rest of the way home.
+Chloe keeps her eyes shut the rest of the way home.

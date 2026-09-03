@@ -126,7 +126,7 @@ A representative from Duke, crossing campus toward the dining hall on his first 
 
 The next evening, over dinner, he asks again, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, and goes on eating.
 
-On his last morning he tries a third time, a foot already in the car. "Recreation," she says, and closes the door for him, and he writes all three down, in order, in the notebook he's kept since Monday.
+On his last morning he tries a third time, a foot already in the car. "Recreation," she says, and closes the door for him, and he writes all three down in the notebook he's kept since Monday.
 
 The Stanford representative asks for the cryptography elective because it's the class he can least imagine existing, sits through a full class of the youngest year, and follows about a third of the material. What he tells a colleague afterward is about the room rather than the material: the questions came faster than the answers, a girl at the back corrected the teacher's derivation of a cipher's key schedule twice from memory, and no student so much as looked up either time.
 

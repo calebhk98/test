@@ -120,7 +120,7 @@ In November she sits in the library with something else open in front of her, th
 
 "The one I failed." Chloe doesn't look up from it. "I'm finishing it."
 
-In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, in order, with the mark schemes clipped behind.
+In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, with the mark schemes clipped behind.
 
 He keeps them a fortnight. What comes back is the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
 

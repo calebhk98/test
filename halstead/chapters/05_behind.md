@@ -38,15 +38,13 @@ On the Thursday every table gets a bundle of dowels, a spool of string, one glue
 
 "Go and do your own, then. You're so sure about it."
 
-Ruth goes and does her own, and Chloe watches her the whole way back to the next table, working out at her own speed whether a diagonal is the entire argument Ruth thinks it is. By the time she has the answer, Sam has already laid a bead of glue along the first joint.
+Ruth goes and does her own, and Chloe watches her the whole way back to the next table, working out at her own speed whether a diagonal is the entire argument Ruth thinks it is. Before she has the answer, Sam has already laid a bead of glue along the first joint.
 
-"We should put one across the middle too," Chloe says, pointing at the span.
+"I think we should put one across the middle too," Chloe says, pointing at the span.
 
-"It's already glued, Chloe. It's not coming apart now."
+"Ruth doesn't know. She just says things." Sam runs his thumb along the joint to check it. "Squares are fine. Ours is flat and hers isn't even finished."
 
-"Just the middle one."
-
-"There's no dowels left. Ruth took the last of them for hers." Sam goes back to the joint with his thumb, checking it's set.
+"Okay," Chloe says, and holds the corner while he does the next one.
 
 Their bridge takes most of the afternoon, and comes out flat, wide, neat at every joint, better looking than Ruth's, though some tables, one of them Owen's, are still short of the span when the session ends, so Mr. Doyle tells them to leave the structure standing and come back to it on Tuesday.
 
@@ -180,13 +178,13 @@ Ruth is at the end of the table with her chin on her hand, pushing one piece of 
 
 "She asked the table. I was sitting at the table," Ruth says.
 
-Chloe's fork stops halfway to her mouth. "Did you go in after him? In the stairwell?"
+Chloe's fork stops halfway to her mouth. "Did you go in after him? Did anybody? Did he have to say it out loud to somebody before they let him go, or did he just say it and they let him? How long was it between him saying it and his mom being at the door?"
 
-Ruth looks up from her plate. "No. I was walking past. You don't go in after somebody doing that."
+Ruth looks up from her plate. "I was going to the bathroom. Why would I go in?"
 
-"Why not?"
+"Because he was crying."
 
-"It's worse. They know you saw." Ruth goes back to pushing her food around.
+"I didn't know him." Ruth goes back to pushing her food around. "And I don't know any of the rest of it either. You keep asking me things I wasn't there for."
 
 Chloe picks her roll apart anyway, one piece at a time, lining the pieces along the edge of her tray. The bridge was fun. Owen must not have liked it. The two facts still won't sit next to each other, and no answer from Ruth is going to move them.
 

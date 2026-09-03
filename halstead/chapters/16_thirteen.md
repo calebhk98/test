@@ -182,7 +182,11 @@ Nadia waits for him to finish.
 
 Nadia sits back. "You've had your hand over that corner since Kavi passed it. You always do that, which means you've got it and you'd rather keep it off the table."
 
-"It's not a date and it's not only a plate." Chloe turns the napkin a half circle toward the table. "It's both, read backward from the sixth character. That's the split." Nadia looks at it a long moment, then says she's right. By the end of the meal the table's five opinions are down to one, and it's hers.
+"It's not a date and it's not only a plate." Chloe turns the napkin a half circle toward the table. "It's both, read backward from the sixth character. That's the split."
+
+Nadia looks at it a long moment. "She's right. It's both."
+
+By the end of the meal the table's five opinions have settled on hers.
 
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights and neither of them has ever said a word to him about it.
 
