@@ -71,84 +71,13 @@ Do not edit them; report only if you have something new.
 
 - **Amberg's long job offer** in chapter 22.
 
-**Closed 2026-08-29:** the named states are no longer open. The author ruled on
-all five at once — "furious" in chapter 5, "relieved" in chapter 7, "restful"
-in 12, "delighted" in 19 and "furious" in 28 — and every one has been removed
-or replaced with behaviour. An agent doing that pass noticed this file still
-said they were reserved and asked whether the approval was real before acting,
-which was the right thing to do; the file was stale, not the instruction.
+**Reopened and reversed 2026-08-29.** All five named states were cut, and the
+author then said he wanted them. Every one is restored to its original wording:
+"furious in a way she can feel along her jaw" in chapter 5, "relieved to find it
+still works" in chapter 7, "which she finds restful" in 12, "delighted with it"
+in 19, and "gets furious, genuinely and at length" in 28.
 
----
-
-## Checked against the text and refuted
-
-Not author rulings. These are findings from the audit round of 2026-08-27 that
-were checked line by line against the current chapters and do not reproduce.
-Recorded so they stop circulating. If you find one of these again, you are
-reading a stale report, not the manuscript.
-
-**Marek's chapter 16 scene contradicts his sheet.** It does the opposite. The
-sheet's YES clause reads: *"asked directly why the paper matters, he argues
-that a written record and the work are two different objects and answers by
-offering more of the work in place of it, cheerfully and without rancor."*
-Chapter 16 line 21 is that clause almost word for word. The claimed "cold monk
-making a principled stand" is not in the scene: he apologises for the ruler, he
-apologises for the papers, he apologises for the noise, he loses the thread to
-something Beatriz asked him, and he stops when Chloe says fine. The sheet's NO
-clause is *arguing the rule is stupid*, which he never does.
-
-**Chloe and Kavi use Ruth's "exclusive" name-drop.** There is no such thing.
-`_DIFFERENTIATION.md` says in its own words that a signature is characteristic,
-not exclusive, and names this exact construction as the example, because an
-agent acting on the exclusive reading rewrote other people's good lines once
-already.
-
-**Odile breaks her sheet's "bare, a number and nothing else" register.** That
-rule does not exist. It was removed from every sheet after it cost Odile her
-line, along with cold, clinical, logical, detached and affectless.
-
-**Sam hedges in the chapter 24 chat.** The quote given, *"i dont think its
-measuring anything,"* is not in the book. The line is *"its not measuring
-anything"* — flat, unhedged, and followed by *"its just meant to be fun,"*
-which is the sheet's own "saying the same true thing again."
-
-**Nobody comes back for Priya's two prisoners.** Chapter 36 line 79 is about
-them and nothing else, for a full paragraph, entirely in logistics: the knee
-that wants ice twice a day, the onion on the edge of the plate, and the one who
-takes the plate out of her hands by the Saturday.
-
-**Owen leaves on a Tuesday in one chapter and a Saturday in another.** Three
-different events. He is crying by the kitchens on the Thursday, his mother's
-car is outside on the Saturday, and Chloe finds the stripped bed on the
-Wednesday of the second week. Nothing collides.
-
-**Chapter 2's assessment line is the narrator supplying a comparison.** It is
-inside quotation marks. Ben is saying it, it is his job to say it, and he
-qualifies it in the same breath: *"on the talking and reasoning she's at the
-top of it, but on the speed she's ordinary."*
-
----
-
-## Author rulings, 2026-08-27
-
-**Priya's "a fifteen" in chapter 36 is not literal.** It is the school's own
-shorthand for the age-grade an opponent fights at, and the chapter says *men*
-where it matters. An agent read it as literal children. The author: *"It's fine
-if readers make mistakes, as long as the book itself is correct."* Do not
-rewrite it and do not add an explanation of the convention.
-
-**A dorm is an apartment.** Ruth in a dorm room in chapter 33 and an apartment
-in 32 and 35 is not a contradiction. Ruled, stays.
-
-**Chloe's clearance does not produce a cost.** Three separate reports wanted
-friction, a scene, or a visible price for spending it. There isn't one and
-there is not going to be one. Do not add a beat, a hesitation, or a
-consequence.
-
-**Chapter 10 reading harder than chapter 18 is fine.** F-K 8.0 at six against
-6.9 at fifteen. Ruled, stays. Do not flatten chapter 10 to fix a curve.
-
-**"Instead", "leaves it", and "puts it back down" are capped, not targeted.**
-The author: *"I think they are about 2x more passive than they should be. I
-don't want to increase it."* Each is set in `tics.py` at half the rate it was
-measured at. A number under the cap is not room to add more.
+Do not cut them again. A declared state is allowed about five times in
+thirty-six chapters, and these five are the five. The house rule stays written
+as a flat ban because a permission at that rate is not one an editing pass can
+hold, but this is the author spending the budget, deliberately, on these lines.

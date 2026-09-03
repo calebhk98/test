@@ -6,7 +6,7 @@ The first day is awful.
 
 The noise is the first thing, because a hundred-odd children are in the building and most of their parents came with them, and the sound that many people make in a hallway with hard floors is enormous.
 
-It is the parents making most of it, mostly standing next to a child holding a folder and looking at the floor, Chloe included, and there are so many of them.
+It is the parents making most of it. Each of them stands next to a child holding a folder and looking at the floor, Chloe one of those children, and there are so many of them.
 
 A boy near the doors keeps running the length of the hallway and back until somebody's mother catches his arm on the way past and keeps hold of it, her knuckles gone white around his sleeve, while a girl keeps both fists wound into the hem of her father's jacket even when another child waves at her first.
 
@@ -48,7 +48,15 @@ Her room has two beds, a window that opens a few inches and then stops, and a gi
 
 But Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.
 
-Pushing the drawer shut with her knee and then leaning on it, Priya asks whether Chloe rides, then when Chloe asks ride what, says horses, then when Chloe says no, but goes on anyway.
+Pushing the drawer shut with her knee and then leaning on it, Priya says, "Do you ride?"
+
+"Ride what?"
+
+"Horses."
+
+"No."
+
+She goes on anyway.
 
 "Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
 
@@ -118,6 +126,8 @@ Then a boy laughs, one loud honk of it right up close, and her jaw unclenches al
 
 "It's not even a room. It's a room-shaped object," he says.
 
+Sam looks at her a second longer than the joke needs, then looks at the door instead. He says nothing about it that day or any day after, but for the rest of the week he is on her left in every line they stand in.
+
 Chloe laughs until she has to put her forehead against the wall, before somebody else catches it too, a couple of the boys by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
 
 Then a girl says something from further up the line.
@@ -140,7 +150,7 @@ Inside, the boy sits down next to her, drops his folder on the desk sideways, an
 
 "Six."
 
-"I'm seven and a half. That's fine," he says, setting hers down beside his and weighing them.
+"I'm seven and a half. That's fine," he says, setting hers down beside his so the two names line up.
 
 Sam says the and a half every time, grinning at his own jokes before anybody else does, funny about half the time, unwilling to slow down for the other half, while the girl is Ruth, and Ruth corrects everybody.
 
@@ -204,9 +214,9 @@ ________________
 
 There's a fourth in Pluto who stays silent day after day, answering when he's called on, in as few words as he can, laughing at Sam, and otherwise silent.
 
-Chloe is on day six of it herself.
+Chloe has been doing the same thing for six days.
 
-On day seven Sam says something wrong about volcanoes: that the lava comes up because the mountain is hollow.
+On the seventh day Sam says something wrong about volcanoes: that the lava comes up because the mountain is hollow.
 
 "That's not how it works though," the boy says, and everybody looks at him, while across the room Owen is still copying the word off the board from earlier, head down over his own paper.
 

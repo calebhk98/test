@@ -116,7 +116,7 @@ In December, a year below and sitting the bar in April, Marek asks for the pract
 
 He keeps them a fortnight. What comes back is the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
 
-"That's better than theirs," he says, already going. "Do that."
+"That's better than theirs," he says, delighted with it, already going. "Do that."
 
 That evening, before she starts anything else, she works it, and it takes her the whole evening.
 

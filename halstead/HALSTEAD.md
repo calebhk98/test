@@ -799,7 +799,7 @@ The first day is awful.
 
 The noise is the first thing, because a hundred-odd children are in the building and most of their parents came with them, and the sound that many people make in a hallway with hard floors is enormous.
 
-It is the parents making most of it, mostly standing next to a child holding a folder and looking at the floor, Chloe included, and there are so many of them.
+It is the parents making most of it. Each of them stands next to a child holding a folder and looking at the floor, Chloe one of those children, and there are so many of them.
 
 A boy near the doors keeps running the length of the hallway and back until somebody's mother catches his arm on the way past and keeps hold of it, her knuckles gone white around his sleeve, while a girl keeps both fists wound into the hem of her father's jacket even when another child waves at her first.
 
@@ -841,7 +841,15 @@ Her room has two beds, a window that opens a few inches and then stops, and a gi
 
 But Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.
 
-Pushing the drawer shut with her knee and then leaning on it, Priya asks whether Chloe rides, then when Chloe asks ride what, says horses, then when Chloe says no, but goes on anyway.
+Pushing the drawer shut with her knee and then leaning on it, Priya says, "Do you ride?"
+
+"Ride what?"
+
+"Horses."
+
+"No."
+
+She goes on anyway.
 
 "Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
 
@@ -911,6 +919,8 @@ Then a boy laughs, one loud honk of it right up close, and her jaw unclenches al
 
 "It's not even a room. It's a room-shaped object," he says.
 
+Sam looks at her a second longer than the joke needs, then looks at the door instead. He says nothing about it that day or any day after, but for the rest of the week he is on her left in every line they stand in.
+
 Chloe laughs until she has to put her forehead against the wall, before somebody else catches it too, a couple of the boys by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
 
 Then a girl says something from further up the line.
@@ -933,7 +943,7 @@ Inside, the boy sits down next to her, drops his folder on the desk sideways, an
 
 "Six."
 
-"I'm seven and a half. That's fine," he says, setting hers down beside his and weighing them.
+"I'm seven and a half. That's fine," he says, setting hers down beside his so the two names line up.
 
 Sam says the and a half every time, grinning at his own jokes before anybody else does, funny about half the time, unwilling to slow down for the other half, while the girl is Ruth, and Ruth corrects everybody.
 
@@ -997,9 +1007,9 @@ ________________
 
 There's a fourth in Pluto who stays silent day after day, answering when he's called on, in as few words as he can, laughing at Sam, and otherwise silent.
 
-Chloe is on day six of it herself.
+Chloe has been doing the same thing for six days.
 
-On day seven Sam says something wrong about volcanoes: that the lava comes up because the mountain is hollow.
+On the seventh day Sam says something wrong about volcanoes: that the lava comes up because the mountain is hollow.
 
 "That's not how it works though," the boy says, and everybody looks at him, while across the room Owen is still copying the word off the board from earlier, head down over his own paper.
 
@@ -1118,7 +1128,7 @@ ________________
 
 The second week is the week that gets her, and the subject is mathematics.
 
-They are dividing fractions by turning the second fraction upside down and multiplying. Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. Chloe does eight problems in the packet and gets them all right, while the reason the turning-over works stays shut to her, and the gap between those two facts sits along her jaw, clenched tight enough to ache.
+They are dividing fractions by turning the second fraction upside down and multiplying. Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. Chloe does eight problems in the packet and gets them all right, while the reason the turning-over works stays shut to her, and the gap between those two facts is making her furious in a way she can feel along her jaw.
 
 "Why do you flip it," Chloe says.
 
@@ -1648,7 +1658,7 @@ Somebody asks whether you can swap groups, and Ms. Vance says no in a way that h
 
 The first math sheet comes around midmorning, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, but now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her, finding it still works like it worked in first grade.
+Fractions at camp, staying up until the number finally sat still on the page, but now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her, relieved to find it still works like it worked in first grade.
 
 ________________
 
@@ -2705,7 +2715,7 @@ ________________
 
 Home for the summer, she sleeps most of the way through the first week of it without anybody stopping her.
 
-Her mother makes a joke about it on the fourth day but a smaller version of it on the fifth, then stops making it. On the sixth she comes in, puts a glass of water on the nightstand, and goes back out. Watching a film with her father in the afternoon, Chloe has no opinion about it whatsoever, so they watch another. In the second week she rides out to the reservoir and back, the long way round on the road, and comes in through the kitchen door filthy and starving in the middle of the afternoon.
+Her mother makes a joke about it on the fourth day but a smaller version of it on the fifth, then stops making it. On the sixth she comes in, puts a glass of water on the nightstand, and goes back out. Watching a film with her father in the afternoon, Chloe has no opinion about it whatsoever, which she finds restful, so they watch another. In the second week she rides out to the reservoir and back, the long way round on the road, and comes in through the kitchen door filthy and starving in the middle of the afternoon.
 
 Her mother takes some days off in July and they do the coast, a long drive each way to a motel with a pool, where Chloe swims for most of two days. On the second evening her mother teaches her cribbage on the balcony, on a board her own father made out of walnut in about 1961.
 
@@ -3136,11 +3146,11 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit the target the first time in October."
 
-Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear. Once on the board in a whole year is hardly a lot, is it."
+Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 
-"That's better, then, it sounds like you just want the practice. Your grandfather shot at a club for years and he could put six in the gold on a good evening." Her grandmother settles back into the chair with her tea. Chloe folds the envelope shut along the line she drew and keeps it.
+"That's better, then, it sounds like you just want the practice." Her grandmother settles back into the chair with her tea. Chloe folds the envelope shut along the line she drew and keeps it.
 
 ________________
 
@@ -4351,7 +4361,7 @@ In December, a year below and sitting the bar in April, Marek asks for the pract
 
 He keeps them a fortnight. What comes back is the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
 
-"That's better than theirs," he says, already going. "Do that."
+"That's better than theirs," he says, delighted with it, already going. "Do that."
 
 That evening, before she starts anything else, she works it, and it takes her the whole evening.
 
@@ -4811,7 +4821,7 @@ Ruth gets MIT and calls home, where her mother puts her on speaker so her father
 
 Odile gets in everywhere. The rest of the year hears about it days later, when Priya finds the letters stacked unopened in date order on her desk and says so at dinner in front of half the table.
 
-Chloe gets all but two, having spent the week working out which of the fourteen she would still be able to say out loud at dinner after the rest had gone, and having settled on the state school and the community college.
+Chloe gets all but two. She had spent the week before this one deciding which of the fourteen were actually going to say yes, and had settled on two, the state school and the community college, and had got as far as being fine about it.
 
 Outside her window the snow along the path has gone soft and grey, the last of it, weeks off the end of term, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
 
@@ -6514,7 +6524,7 @@ Chloe gets a job at a company that translates documents for businesses: contract
 
 There's a birthday calendar taped inside a supply cabinet with everyone's name on it, and whoever's day it is gets a card signed in the break room over the course of the morning, in pen, by whoever passes through. Deb runs it and has for years, buying the cake herself out of a small fund she keeps in a coffee tin in her bottom drawer. Chloe's own name goes on the calendar unasked, the week she starts, taken off the date on a form rather than anything Chloe told her.
 
-The hardest thing anyone reads before breakfast here is the cereal box, and rank means how long you've had the desk by the window. A woman by that window runs an office pool on a sports bracket out of a shared spreadsheet and comes half out of her chair over a missed field goal in a game she has no other stake in, three people looking up from across the room. Someone keeps a jar of individually wrapped mints on top of the shared printer, refilled every Monday but empty again by Thursday, and nobody on the floor has ever seen it happen. On a Tuesday in October a man two desks down spends fifty minutes on the phone to a cable company, restating his complaint over and over, his voice perfectly even each time. The call ends with the exact problem he opened it with. Twice that autumn the fire alarm goes off for no reason anyone will name. Half the floor rides it out at their desks, coffee in hand, but the rest drift to the doorway like people who've done this before and know exactly how long it takes.
+The hardest thing anyone reads before breakfast here is the cereal box, and rank means how long you've had the desk by the window. A woman by that window runs an office pool on a sports bracket out of a shared spreadsheet and gets furious, genuinely and at length, over a missed field goal in a game she has no other stake in. Someone keeps a jar of individually wrapped mints on top of the shared printer, refilled every Monday but empty again by Thursday, and nobody on the floor has ever seen it happen. On a Tuesday in October a man two desks down spends fifty minutes on the phone to a cable company, restating his complaint over and over, his voice perfectly even each time. The call ends with the exact problem he opened it with. Twice that autumn the fire alarm goes off for no reason anyone will name. Half the floor rides it out at their desks, coffee in hand, but the rest drift to the doorway like people who've done this before and know exactly how long it takes.
 
 A man from the loading dock asks her, her first week, how her weekend was, and means it the way everyone else in the building means it, as a two-line trade that closes on its own. Chloe takes the question seriously and gives him an actual account: what she read, how far she got on a proof still open since Thursday, a bus schedule running behind that morning. It takes her fifty seconds. More patient than confused, he waits her out, says, "Nice," and goes back to his coffee. The second time he asks, a week later, she catches herself before the fifty seconds and says only, "Fine, quiet," and he says, "Same," and that's the whole exchange. By the third week she's down to a sentence, near enough word for word most weeks, and the trade closes the way it's supposed to.
 

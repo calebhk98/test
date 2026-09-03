@@ -190,11 +190,11 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit the target the first time in October."
 
-Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear. Once on the board in a whole year is hardly a lot, is it."
+Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 
-"That's better, then, it sounds like you just want the practice. Your grandfather shot at a club for years and he could put six in the gold on a good evening." Her grandmother settles back into the chair with her tea. Chloe folds the envelope shut along the line she drew and keeps it.
+"That's better, then, it sounds like you just want the practice." Her grandmother settles back into the chair with her tea. Chloe folds the envelope shut along the line she drew and keeps it.
 
 ________________
 
