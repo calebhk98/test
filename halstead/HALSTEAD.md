@@ -3825,7 +3825,13 @@ Going through the papers twice takes her back to her own notes from the third we
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it; he gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards; Chloe says yes, the girl says she thought so, and goes.
+Iyad has it at dinner that week with her not at the table. He gives it at the long table on a night when both benches are full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it. The table is still laughing when he starts on the next name, and he gets round most of the other tables with it by the Saturday.
+
+What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
+
+"It's true," she says. "Who told you?"
+
+The girl says she doesn't remember, and goes. Chloe stands there with the water still running until somebody behind her wants the sink.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 
@@ -4285,9 +4291,9 @@ Bex passed, and comes the length of that hall to find her before dinner, saying 
 
 "It's the margin, though. As a share of the whole paper that's about a..."
 
-"A fiftieth. It's a fiftieth, Chloe, it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them.
+"A fiftieth. It's a fiftieth, Chloe, it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them, laughing at something before she has finished telling it.
 
-Chloe stays where she is until the hall has thinned out. She had the fraction most of the way finished and had got as far as about a, and she goes over that again on the stairs, whether she had it or whether she was still working it, because Bex had all of it and had it fast.
+Chloe stays where she is until the hall has thinned out, Bex's voice still going somewhere down it, already on to the next name. At dinner she sits with her back to the corkboard, and when Sam starts in on the fifty she tells him she doesn't want the fiftieth or any part of the board tonight, and eats without looking up. Lights off, she runs the fraction again anyway, not to finish it this time but to find the one sentence that would have stopped Bex halfway down the hall, and she is still short of it when Ruth's breathing goes even across the room.
 
 Later that week she takes her paper to Amberg, and he has the mark scheme out on the desk before she gets the door shut.
 
@@ -4745,15 +4751,27 @@ As if the question hadn't occurred to him before, he looks at her. "It's what th
 
 The MIT representative asks for the electronics and radio elective and spends most of a period watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get short, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
 
-At the visitors' table on the second evening the Caltech representative wants to know what a group project here looks like from the inside, and Bex gives him the long field, which she was never in a room for. She has all of it: the wire down the fence because the network would not hold half a millisecond, a thermometer at every post because the far end of that field is colder, the placing that took most of the error off the top end and arrived in April with the run already over. She has it in the order it happened and she does not get a part of it wrong.
+Chloe is a few seats down the visitors' table with a plate in front of her when the Caltech representative asks what a group project here looks like from the inside. Bex is two tables over. She hears the word project, gets up, and answers it herself, crossing the gap between the tables while he is still finishing the question. She gives him the long field, which she was never in a room for. She has all of it: the wire down the fence because the network would not hold half a millisecond, a thermometer at every post because the far end of that field is colder, the placing that took most of the error off the top end and arrived in April with the run already over. She has it in the order it happened and she does not get a part of it wrong.
 
 He asks who did the geometry.
 
 "That was me," Bex says. "And I'd start off it next time instead of finishing on it. We finished on the part that was going to move the number, and we finished on it in April, with the run already over."
 
-Chloe is a few seats down with a plate in front of her. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, and what she tells him is what is written on the back of the April drawing.
+Chloe's fork stops on the way up. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, watching him write it down, and what she tells him is what is written on the back of the April drawing. She stays at the table after he has moved down it to Sam, telling the two who arrived late enough to have missed the first telling.
 
 The drawing lives in a folder Nadia keeps. Chloe gets it out that evening and reads her own working off it, looking for the Thursday she carried it in to breakfast, and whether Bex was at that table, and Bex was at that table, and at that point Chloe was still saying the thing out loud.
+
+She does not go and find the representative to say so. She gets as far as the corridor outside the reading room, once, and turns round.
+
+She calls home that Sunday and gets most of the way through the week before she gets to it, near the end and folded in with everything else: that a rep asked about the long field and Bex answered for all of it, the geometry included, and got every part of it right.
+
+"Well, did she get it right?" her mother says.
+
+"She got every part of it right. That's not the part I called about."
+
+"Then what's the part?"
+
+Chloe doesn't have a short answer for that one, and the line stays quiet long enough that her mother asks if she's still there.
 
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. Asking what watch is, he gets walked through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 

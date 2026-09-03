@@ -140,15 +140,27 @@ As if the question hadn't occurred to him before, he looks at her. "It's what th
 
 The MIT representative asks for the electronics and radio elective and spends most of a period watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get short, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
 
-At the visitors' table on the second evening the Caltech representative wants to know what a group project here looks like from the inside, and Bex gives him the long field, which she was never in a room for. She has all of it: the wire down the fence because the network would not hold half a millisecond, a thermometer at every post because the far end of that field is colder, the placing that took most of the error off the top end and arrived in April with the run already over. She has it in the order it happened and she does not get a part of it wrong.
+Chloe is a few seats down the visitors' table with a plate in front of her when the Caltech representative asks what a group project here looks like from the inside. Bex is two tables over. She hears the word project, gets up, and answers it herself, crossing the gap between the tables while he is still finishing the question. She gives him the long field, which she was never in a room for. She has all of it: the wire down the fence because the network would not hold half a millisecond, a thermometer at every post because the far end of that field is colder, the placing that took most of the error off the top end and arrived in April with the run already over. She has it in the order it happened and she does not get a part of it wrong.
 
 He asks who did the geometry.
 
 "That was me," Bex says. "And I'd start off it next time instead of finishing on it. We finished on the part that was going to move the number, and we finished on it in April, with the run already over."
 
-Chloe is a few seats down with a plate in front of her. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, and what she tells him is what is written on the back of the April drawing.
+Chloe's fork stops on the way up. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, watching him write it down, and what she tells him is what is written on the back of the April drawing. She stays at the table after he has moved down it to Sam, telling the two who arrived late enough to have missed the first telling.
 
 The drawing lives in a folder Nadia keeps. Chloe gets it out that evening and reads her own working off it, looking for the Thursday she carried it in to breakfast, and whether Bex was at that table, and Bex was at that table, and at that point Chloe was still saying the thing out loud.
+
+She does not go and find the representative to say so. She gets as far as the corridor outside the reading room, once, and turns round.
+
+She calls home that Sunday and gets most of the way through the week before she gets to it, near the end and folded in with everything else: that a rep asked about the long field and Bex answered for all of it, the geometry included, and got every part of it right.
+
+"Well, did she get it right?" her mother says.
+
+"She got every part of it right. That's not the part I called about."
+
+"Then what's the part?"
+
+Chloe doesn't have a short answer for that one, and the line stays quiet long enough that her mother asks if she's still there.
 
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. Asking what watch is, he gets walked through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 

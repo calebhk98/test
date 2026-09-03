@@ -64,7 +64,13 @@ Going through the papers twice takes her back to her own notes from the third we
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it; he gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards; Chloe says yes, the girl says she thought so, and goes.
+Iyad has it at dinner that week with her not at the table. He gives it at the long table on a night when both benches are full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it. The table is still laughing when he starts on the next name, and he gets round most of the other tables with it by the Saturday.
+
+What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
+
+"It's true," she says. "Who told you?"
+
+The girl says she doesn't remember, and goes. Chloe stands there with the water still running until somebody behind her wants the sink.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 

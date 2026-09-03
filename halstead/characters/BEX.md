@@ -375,12 +375,16 @@ doing it, and it is produced by writing the overlap as a choice. The fix is to
 write the ending she supplies as accurate and offered as help, and to keep her
 plainly, visibly liked by the room she is doing it in.
 
-**The schemer.** The second failure mode is a girl who works out in advance
-which account is worth taking and positions herself to give it. She does no
-such thing and never has; she answers a question that was asked, at speed,
-because answering questions at speed is what she is for. Any line that shows
-her choosing the moment, checking whether the other person is in the room, or
-enjoying the transfer has broken her.
+**The long game.** She does not plan across days. She is not working out in
+advance which account will be worth taking next term, or keeping a list, or
+building toward anything. The choosing happens in the moment and takes about a
+second: the room is full, the subject is up, so she says it. Write the decision
+at the speed of a decision she barely notices making. A plan she arrived with is
+the wrong shape.
+
+This section used to say the opposite, that any line showing her choosing the
+moment or enjoying the transfer had broken her. The author overruled that; see
+the note further up. What survives of it is only the ban on premeditation.
 
 **The reformed one.** She does not learn this. A version of her who catches
 herself, hands the credit back, and adjusts is a different and much less useful
