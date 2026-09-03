@@ -80,7 +80,7 @@ Calculus arrives in mathematics in the second week, on the sheet, in the slot th
 
 The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further round to find Chloe's row before she gets to the end of the sentence.
 
-Chloe has her own pages in the bag under the desk and leaves them in it, and does not turn round to see whether Bex found her. After that she does her turning over on the walk down to the field. It is long enough for it and has nobody else on it. In November it is dark before the block ends, and the grass soaks through her boots on the way down.
+Chloe keeps her bag zipped under the desk, and does not turn round to see whether Bex found her. On the way out she catches Kavi in the corridor and gives him both numbers herself, out loud, before Bex is through the door. The walk down to the field is long and empty either way. In November it is dark before the block ends, and the grass soaks through her boots on the way down.
 
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 
@@ -170,9 +170,9 @@ At Christmas her mother asks what she has been working on.
 
 Her mother takes the plate off her and puts it on the rack. "That's a big subject for a school essay," she says. "What did you say?"
 
-Chloe opens her mouth, then works out that the answer starts with the hat, and after the hat it needs the deadline, then why hedging counts against you rather than as manners, and all of that goes in front of anything she actually wants to say.
+Chloe opens her mouth, closes it, and starts from the middle, not the beginning.
 
-"That it was wrong. I got a B."
+"That it was wrong. I got a B for hedging in the conclusion, twice, in the two spots I put there on purpose so it looked like I knew what I sounded like. He found both."
 
 "A B's a B," her mother says, and hands her the next plate off the pile. "But it's still a good grade."
 

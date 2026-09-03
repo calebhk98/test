@@ -30,7 +30,7 @@ It happens twice more in six weeks.
 
 None of it changes anything else about the weeks in between. Eli still clocks in every weekday at the job that pays him and keeps whatever he writes after hours strictly separate from it. Ruth finishes a contract of her own, unrelated to any of them, then spends days on one that touches all of them directly. Her phone still gets picked up at two in the morning most nights, as it has for over a year now, an old habit carrying a new reason, indistinguishable to anyone watching from the reason it used to have. Kavi teaches a summer intensive to the current cohort of thirteens the week the second lands, and stands in front of a whiteboard explaining a cipher he's explained before without once losing the thread of what's sitting unresolved on his own desk. Theo reads through his ordinary summer stack of files, checking each against its source before he repeats anything from it. Sam is somewhere hot and far away, on a schedule that doesn't much care what month the calendar says it is. The whole exchange reaches him most of a day late, along with most of what the group sends him that summer.
 
-The second time is the second Tuesday of July. Because he's stopped trusting the watcher's own schedule, Kavi has it flagged inside two minutes this time, polling the tool on his own clock instead of waiting on it. Nine minutes again, to the second this time, which reads worse than a different number would have: different would say clumsy, but the identical number twice says measured. The timestamps go into a document only he can reach, June against the first July date against the second. The gap between the first pair runs to over a month, but the gap between the second runs to less than a fortnight. Neither interval offers a pattern he can make argue for anything. That too, he writes down. A negative result is still a result.
+The second time is the second Tuesday of July. Because he's stopped trusting the watcher's own schedule, Kavi has it flagged inside two minutes this time, polling the tool on his own clock, not waiting on it. Nine minutes again, to the second this time, which reads worse than a different number would have: different would say clumsy, but the identical number twice says measured. He sends the two timestamps to Eli alone, not the group, and asks him straight out whether two matching numbers is a pattern or a coincidence dressed up as one. Eli's answer comes back three words long: could be either. Neither of them raises it in the group thread that night.
 
 Eli checks the noticed clause again anyway, out of the instinct that makes him check a lock he already knows is closed a second time before he'll leave it. It reads exactly as it did in June, and he goes back to work.
 
@@ -60,7 +60,11 @@ ________________
 
 Ruth starts typing, stops, and starts again before she sends anything.
 
-She's on the floor of her own apartment when it lands, shoes off, back against the couch, because a room has always suited her better than a chair. The group chat is open on her phone and the rules are open on the laptop balanced against her knees, the document Chloe wrote and that Ruth has read often enough now to find any clause in it without the search bar. Her hand goes to page seven before she's decided to send it there, the way it finds a light switch in her own house in the dark. The paragraph is short enough to take in without scrolling. Any one of them can end it, no vote required and no explanation owed to anyone else, all of it stopped inside the hour. The lines have sat on that page since Chloe wrote them, because everything Chloe builds with a limit in it comes with the door out already built into the design. Ruth goes through them slowly, the clinical pass she'd give a proof she was checking rather than one she'd written herself, looking for the place it breaks. It holds. It says exactly what it has always said. The laptop closes, the phone comes back up, and she types into the chat instead of the clause.
+She's on the floor of her own apartment when it lands, shoes off, back against the couch, because a room has always suited her better than a chair. The group chat is open on her phone and the rules are open on the laptop balanced against her knees, the document Chloe wrote and that Ruth has read often enough now to find any clause in it without the search bar. Her hand goes to page seven before she's decided to send it there, the way it finds a light switch in her own house in the dark. The paragraph is short enough to take in without scrolling. Any one of them can end it, no vote required and no explanation owed to anyone else, all of it stopped inside the hour. The lines have sat on that page since Chloe wrote them, because everything Chloe builds with a limit in it comes with the door out already built into the design. Ruth goes through them slowly, the clinical pass she'd give a proof somebody else had written, looking for the place it breaks. It holds. It says exactly what it has always said. The laptop closes, the phone comes back up, and she types a question into the chat.
+
+ruth: why hasnt anybody already used this
+
+Nobody answers it. A minute later she tries the other thing she actually came to say.
 
 ruth: so he doesnt know we know
 
@@ -74,13 +78,23 @@ sam: so we do nothing
 
 eli: we do exactly nothing. we dont patch it, we dont move it, we dont look at him looking at us
 
+ruth: what if we fed it something wrong on purpose. see if he reacts to a lie the same way he reacts to a truth
+
+eli: and if hes not even watching that closely and you just taught him we lie to our own tool
+
+ruth: fine
+
+kavi: i can tighten the watchers sampling without changing anything he can see. same output on his end, closer look on ours
+
+eli: do that much
+
 eli: it keeps running and it keeps dying and we keep not noticing
 
 theo: and if hes made one mistake
 
 theo: how many has he made that we didnt catch
 
-Theo closes his laptop with both hands, a beat before he's fully decided the conversation is over. Sam sets his phone face down on a folded stack of laundry he still hasn't finished and goes back to folding it. Ruth's screen dims on its own after ninety seconds of her hands staying off the keys, while she's already back on that page, the paragraph lit up once more before she shuts the laptop for the night.
+Theo closes his laptop carefully, a beat before he's fully decided the conversation is over. Sam sets his phone face down on a folded stack of laundry he still hasn't finished and goes back to folding it. Ruth's screen dims on its own after ninety seconds of her hands staying off the keys, while she's already back on that page, the paragraph lit up once more before she shuts the laptop for the night.
 
 ________________
 
@@ -88,6 +102,6 @@ It's still warm enough at midnight that she's got the window cracked, the ordina
 
 Chloe reads that at one in the morning, with work waiting on the other side of a short night.
 
-Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality rather than an event, the kind of building that stopped feeling strange to walk into somewhere early on. The messages get read once, and the phone goes face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
+Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality, the kind of building that stopped feeling strange to walk into somewhere early on. Before she puts the phone down she taps out one line to Ruth alone, not the group: watch the thread tonight, im out for a few hours. Ruth answers within a minute, already awake: on it. The rest of the messages get read once, and the phone goes face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
-The next day, she goes in and does her job.
+The next day, she goes in and does her job, and texts Ruth once before lunch to ask if the night held.

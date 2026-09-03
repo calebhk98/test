@@ -116,7 +116,9 @@ Chloe gets to the workshop before the technician has the shutter all the way up,
 
 The plan works, all of it, including the kitchens.
 
-Formal epistemology starts with a sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards for a minute with her bag still open before she goes on to German.
+Formal epistemology starts with a sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards with her bag still open, then catches her at the lecture hall door. "Say I've got the true belief and the justification, and the whole chain checks out end to end. What's still missing that isn't just luck wearing a good coat?"
+
+The professor looks at her over the top of a folder. "Office hours," she says, and goes.
 
 Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the mathematics tells her what to do against somebody playing properly while Kavi has spent his whole life playing the person.
 
@@ -164,9 +166,7 @@ Nadia turns the napkin round toward Chloe with a finger.
 
 "A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it, but nobody looked at the middle, which is where I went first. And Chloe's had it a while and she'll not say. She never says until she's certain, and she's never certain."
 
-Chloe gets as far as "It's not," and stops there.
-
-The far end takes that up and keeps it. Sam laughs into his water, and Priya wants to know whether anybody is going to answer her about the live system.
+Chloe gets as far as "It's not—" before the far end takes it up and keeps it. Sam laughs into his water, and Priya wants to know whether anybody is going to answer her about the live system.
 
 Nadia waits for him to finish.
 
@@ -182,7 +182,7 @@ Nadia waits for him to finish.
 
 Nadia sits back. "You've had your hand over that corner since Kavi passed it. You always do that, which means you've got it and you'd rather keep it off the table."
 
-Chloe takes her hand off the napkin and puts it in her lap while Sam says something about the salt; by the end of the meal the table has an opinion each, every one of them holding firm.
+"It's not a date and it's not only a plate." Chloe turns the napkin a half circle so the table can read the middle of it. "It's both, read backward from the sixth character. That's the split." Nadia looks at it a long moment, then says she's right. By the end of the meal the table's five opinions are down to one, and it's hers.
 
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights and neither of them has ever said a word to him about it.
 

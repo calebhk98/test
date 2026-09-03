@@ -50,6 +50,8 @@ Chloe's hand stops on the thread.
 
 "The same," her mom says.
 
+"The same," Chloe says too, to the couch arm, a half beat after her mother, loud enough that Dr. Ammons's pen stops on the pad for a second.
+
 The questions keep coming in that voice, working down through who ran it, how they found her, whether Chloe came back different, in what way, and starting when.
 
 "Did anything happen to her there?"
@@ -78,7 +80,7 @@ Her mom looks out the windshield at the wall of the building. "She said you're d
 
 Her mom puts the key in and leaves it there. "You'd go and talk to her every couple of weeks, and she'd talk to us as well, and then the three of us would sit down and see how it was going. She wants to see you again in a few weeks, and I said I'd ask you first, so is that all right with you?"
 
-"Okay, whatever you think is best," Chloe says, and then the wall of the building slides sideways past her window. "So can I go to Halstead, then? We're already talking about it."
+"Do I get a say in it, though, or is a few weeks just a thing you and her already settled?" Chloe says. The wall of the building starts to slide sideways past her window as the car pulls out of the lot. Her mother says the day is still hers to move if she hates it, and that is as far as she will go with it right now. "Okay," Chloe says. "So can I go to Halstead, then? We're already talking about it."
 
 Her mother puts her forehead on the steering wheel and stays there.
 
@@ -120,6 +122,8 @@ Chloe has it before Mrs. Prahl has finished reading it out, so she waits, becaus
 
 There are twelve on the sheet, of which Chloe does most in the first stretch before she makes herself slow down, because the twelfth is the last one, and there won't be a thirteenth.
 
+Halfway down the last page she puts her hand up anyway. "Can I have a thirteenth one if I finish? I won't tell anybody how fast." Mrs. Prahl says she'll see what's in the cupboard, and nothing new turns up before the bell, but Chloe gets through the last three considerably faster than the first nine anyway.
+
 Then she waits.
 
 What she is waiting for is the turn, because at camp there was a point in every single thing where it stopped being easy, and you sat there with your ears going hot, and then either you got it or somebody did the rectangle again. For most of an hour now she has been braced for that point, but it hasn't come, and the hour is nearly over.
@@ -137,6 +141,8 @@ Chloe finishes the packet that night sitting up in bed with the lamp on, both si
 Chloe asks again on the Tuesday and gets the words back in the same order, as if her mom has them memorized too now.
 
 "Not now, Chloe," her mom says on the Wednesday, before she has gotten the question all the way out.
+
+On the Thursday she skips her mom and tries her dad at breakfast, quiet, while her mom is still upstairs. Her dad looks at the door to the hall before he answers, and says only that it isn't only up to him.
 
 The second Thursday goes like the first.
 
@@ -166,9 +172,9 @@ At dinner her mother passes her the bread, asks whether she wants more milk, and
 
 So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice, and Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else, and Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
 
-On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, but keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. When Mrs. Prahl asks the following Thursday how she got on with it, Chloe says she's still working on it, and Mrs. Prahl says that's absolutely fine, take your time.
+On the fourth Thursday there's a new packet, which Chloe takes home and finishes in about half an hour, working every answer out and then writing each one upside down, so the sheet only reads right held up to a lamp. She puts it in the bottom of her bag under the folder for reading. When Mrs. Prahl asks the following Thursday how she got on with it, Chloe hands it over without a word and watches her turn it around twice before she works out what she is looking at.
 
-She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. Chloe wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
+Mrs. Prahl laughs, out loud, and writes something on the corner of the last page before she hands it back. Chloe puts it straight in her bag without checking what the something says.
 
 In December her mom comes up and sits down on the end of her bed, in the late afternoon, with the light off and Chloe lying on top of the covers with her shoes still on.
 
@@ -196,9 +202,11 @@ Her mom says it carefully. "Sweetheart, I need you to tell me the truth. Is some
 
 "You can tell me if somebody is. I wouldn't go to the school with it unless you said so."
 
-"No," Chloe says again, to the wall this time. "Nobody at that school is bullying me."
+"No," Chloe says again, to the wall this time. "Nobody at that school is bullying me." She works a thread loose from the pillowcase with one finger. "Bryce just thinks I talk weird. That's different from bullying."
 
-Her mom looks at her for long enough that Chloe starts to think of something else to say.
+Her mom's hand goes still on Chloe's shirt. "What does Bryce say, exactly?"
+
+"Never mind, it isn't the thing you're asking about."
 
 Her mom smooths the back of Chloe's shirt down twice. "Okay, honey. You'll make friends this year, it just takes time in a new grade, that's all this is."
 

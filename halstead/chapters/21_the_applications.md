@@ -148,9 +148,19 @@ He asks who did the geometry.
 
 Chloe's fork stops on the way up. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, watching him write it down, and what she tells him is what is written on the back of the April drawing. She stays at the table after he has moved down it to Sam, telling the two who arrived late enough to have missed the first telling.
 
-The drawing lives in a folder Nadia keeps. Chloe gets it out that evening and reads her own working off it, looking for the Thursday she carried it in to breakfast, and whether Bex was at that table, and Bex was at that table, and at that point Chloe was still saying the thing out loud.
+The drawing lives in a folder Nadia keeps. Chloe gets it out that evening. Bex is in it too, at that same breakfast table, saying nothing while Chloe did the talking.
 
-She does not go and find the representative to say so. She gets as far as the corridor outside the reading room, once, and turns round.
+At breakfast the next morning she sits across from Bex.
+
+"You told him you did the geometry."
+
+Bex doesn't stop eating. "I did. Eventually."
+
+"I drew it on the back of an exam script in April. You were at that table."
+
+"And I said it out loud, with somebody writing it down. That's the version he's got now."
+
+Chloe has nothing to put next to that. She finishes breakfast standing.
 
 She calls home that Sunday and gets most of the way through the week before she gets to it, near the end and folded in with everything else: that a rep asked about the long field and Bex answered for all of it, the geometry included, and got every part of it right.
 
@@ -224,7 +234,7 @@ In the common room Chloe has the phone flat on her knee, going down her own list
 
 "Chloe's are half up already, but the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has got to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
 
-Chloe stops counting under her breath and finishes the list in her head, the phone screen down against her knee.
+"I was going to say that," Chloe says, not loud enough for Bex to hear, and finishes the list in her head, the phone screen down against her knee.
 
 Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and both of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his and wants to know, immediately, what happened to the last.
 

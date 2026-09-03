@@ -114,7 +114,11 @@ A question near the end is a rented forklift, and she has the answer in her seco
 
 This time she passes by twenty-two, and she checks the number against the line above it before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
-In November she sits in the library with something else open in front of her, thinking about April; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
+In November she sits in the library with something else open in front of her, thinking about April, and shuts the book harder than she means to. It happens again in December, and this time she doesn't open another one after. She goes and finds the April paper in the drawer where she still keeps it, the four blank rows still blank, and fills every one of them in by hand, though nobody is ever going to mark it again.
+
+"What's that from," Ruth asks, from the other bed.
+
+"The one I failed." Chloe doesn't look up from it. "I'm finishing it."
 
 In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, in order, with the mark schemes clipped behind.
 
@@ -146,11 +150,13 @@ Her mother watches that from the kitchen window a while before she comes out.
 
 "Like what?" Chloe keeps her eyes shut against the sun and delivers the rest in the direction of the garage roof. "I can't think what there'd even be to do out here."
 
-Her mother sets a glass of iced tea down on the step beside her. "There's a shelf in the garage your father's been meaning to put up since March, and at this rate it'll still be leaning against the wall at Christmas. Or skip it entirely. I'm not asking you to put up a shelf, I'm asking whether you actually want to sit still this much, because that's not the girl who left here for that school in the first place."
+Her mother sets a glass of iced tea down on the step beside her. "There's a shelf in the garage your father's been meaning to put up since March, and at this rate it'll still be leaning against the wall at Christmas. Or skip it entirely. I'm not asking you to put up a shelf. I'm asking whether you actually want to sit still this much. That's not the girl who left here for that school in the first place."
 
-"I could put up a shelf. I just haven't wanted to move more than I have to since I got home, and the wall's waited since March, so it can wait a while longer."
+"I could put up a shelf." Chloe sits up, the sun-spots still swimming when she opens her eyes properly. "Right now, if you actually want it done today and not talked about all summer."
 
-"You could." She sits on the step above her for about a minute, watching the wasp Chloe's been watching, then gets up and goes back inside, leaving the subject closed for now.
+"I said skip it if you want to skip it."
+
+"I heard what you said." She's already up, the glass left sweating on the step, and the screen door bangs behind her on the way to the garage.
 
 Her father asks about Sam.
 
@@ -176,12 +182,12 @@ Her father nods at that and asks about Kavi, so she tells him about Kavi, and th
 
 Chloe puts her heels up on the lower step and takes her time with that.
 
-"I think she knew straight away and let it run anyway, because stopping it right then would have meant explaining why in front of everybody. She'd have had to say out loud who she was doing it to."
+"I think she knew straight away and let it run anyway. She hasn't said a word about it since." Chloe turns the glass on the step. "Can I be the one asking something for a second?"
 
-"Why would she do that? Costing herself the negotiation to hand it to somebody else seems like a strange way to spend two minutes of already knowing, unless the negotiation itself was never really the point for her."
+"Go on."
 
-"Because the boy in the room before her was going to get it otherwise, and she wanted it to go to Nadia, even if that cost her something herself. She hasn't said a word about it since. As far as I can tell Nadia still doesn't know, and Priya's not going to be the person who tells her, so it stays exactly where it is."
+"Did you and mom ever want me to just stay here. Go to the state school, be twenty minutes away."
 
-"So what are Priya and Nadia like at a table together now?" her father says, and the question stops her with the glass halfway up.
+Her father takes a while with that one too.
 
-The sun goes off the garage roof, and her mother turns the porch lamp on from the kitchen switch, while she is still answering.
+The sun goes off the garage roof, and her mother turns the porch lamp on from the kitchen switch, while he takes his time with it.

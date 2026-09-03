@@ -48,11 +48,13 @@ Sam has the syrup upside down over his second plate, timing the pour and countin
 
 "It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, as it always is, same anvil, same sessions, same walk down there every morning before anyone else is up."
 
-Chloe has the next part of that ready, but gets as far as the first word of it.
-
 "You take the thing you're worst at and you stay in it," Nadia says, to the table rather than to Chloe. "Every year. It's the only pattern you've got."
 
-Chloe takes her hand off the table and puts it in her lap; by the time anybody answers, Nadia is back to dividing the bill.
+"I'm not worst at it anymore. I haven't been for two years." Chloe's fork is still in her hand, and she sets it down harder than the plate needs. "Pick something you've actually watched me do before you hand me a pattern."
+
+"You're not worst at it," Nadia says. "You're just still the only one who's there every morning nobody's making you be." She goes back to dividing the bill.
+
+Chloe's hand goes back to the fork, and she doesn't eat with it for a while.
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
@@ -164,7 +166,7 @@ ________________
 
 They're back over the fence a few minutes later, Chloe's camera loop already unwinding itself toward normal, and the corridor is empty and quiet the whole way to their own doors.
 
-Chloe's shoes sit by the door, laces still knotted from being kicked off rather than untied, and she lies on top of the covers for a while before she gets under them.
+Chloe's shoes sit by the door, laces still knotted from being kicked off, not untied. She goes down her own ribs the way she went down theirs, counting under her breath out of the same habit, and finds nothing. Only then does she get under the covers.
 
 ________________
 

@@ -88,7 +88,7 @@ People start asking on the Friday, and Ruth says she has been practising while C
 
 Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. Bex finds Chloe across the floor before she sits back down, holds it half a second, and turns to her partner without saying anything else.
 
-Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. She tells Ruth about it that evening at the sinks, that it was theirs from the Thursday and Bex has the whole floor calling it hers now, and Ruth says only that Bex is like that with everything and starts on the impression of the boy who said luck again.
+Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. On the way out she catches Bell at the door and tells him it was Thursday's, hers and Ruth's, before Bex gets there first. He tells her the sheet is already written and walks off with the markers.
 
 By the following week there are theories going round about the markers being different weights.
 
@@ -129,7 +129,7 @@ Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table, pitched for both benches, with a phrase of his own on the front of it: the bit about the year still in it, the north stairwell off the bottom of the sheet, and Chloe's name on the end of it, standing in it while it went uncovered. The far end laughs and takes up both lines at once, and is still on them when the plates come back. Chloe finishes what is in front of her without looking up, and carries her tray down the far side of the hall.
+Twenty minutes later Iyad has it at the far end of the table, pitched for both benches, with a phrase of his own on the front of it: the bit about the year still in it, the north stairwell off the bottom of the sheet, and Chloe's name on the end of it, standing in it while it went uncovered. The far end laughs and takes up both lines at once, and is still on them when the plates come back. Chloe's fork stops over the plate. She carries her tray out the far door before the laugh has run its course, finds Ruth on the step, and tells her the whole of what Iyad said, in order, before the door has finished swinging.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 

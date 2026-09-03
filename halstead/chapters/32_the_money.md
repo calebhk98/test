@@ -74,7 +74,15 @@ eli: and the other 0.01
 
 ruth: is me being humble
 
-Eli reads it standing up, phone in one hand, his other hand already going through its tap against the kitchen counter before he notices he's started it. It's the middle of the night in Ohio, and he stays up with it rather than going back to bed. Kavi reads it lying on the floor of his lab under the whiteboard, but picks up a marker anyway to add another line to the board himself.
+Eli reads it standing up, phone in one hand, his other hand already going through its tap against the kitchen counter before he notices he's started it. It's the middle of the night in Ohio, and he pulls the watcher's dashboard onto the second monitor and runs Ruth's twenty years against his own copy of the logs until the numbers either break or hold. They hold.
+
+eli: i ran it against my own copy. shes right, all three points
+
+kavi: i already believed her
+
+eli: i needed it to not be true for an hour and it wouldnt do that for me
+
+Kavi reads the exchange lying on the floor of his lab under the whiteboard, but picks up a marker anyway to add another line to the board himself.
 
 ________________
 
@@ -122,7 +130,11 @@ chloe: theo that was a drill
 
 theo: it wasnt a drill. i read the file.
 
-Chloe reads that twice at her own desk, weeks into the job, and sets the phone face down next to the badge before she picks it back up.
+Chloe reads that twice at her own desk, weeks into the job, and sets the phone face down next to the badge before she picks it back up and types straight at him.
+
+chloe: theo which four
+
+He doesn't answer it that night, and the question sits there, unread, while the rest of the thread keeps going without it.
 
 ________________
 

@@ -498,6 +498,14 @@ kavi: i know that too. i asked twice
 
 chloe: fine
 
-Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading. The offer sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
+Chloe doesn't answer the thread again. She finds the empty box from the winter before at the back of the bathroom cabinet and reads what's printed on the side of it under the lamp: a name, a dosage, nothing else, the insert long gone with the box. She photographs the label and sends it to Nadia alone, not the group.
 
-The chat moves on within minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.
+chloe: can you find what this actually is without going through the internal thing
+
+nadia: give me the batch number too
+
+chloe: dont have it. thats gone with the box
+
+Nadia comes back an hour later with three names off a supplier's safety sheet, the kind meant for a pharmacist, not a customer. Chloe writes all three down on the back of her hand before she loses the message in the scroll.
+
+The chat moves on within minutes. Chloe's tab stays open on her desk for the rest of the evening, the group thread gone still while the other one, the one with Nadia, keeps lighting up.

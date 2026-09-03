@@ -2,7 +2,7 @@
 
 *May 2026 – June 2026*
 
-Eli proposes the second worm, but Theo says no, and keeps saying no for days.
+Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never held a badge if this goes wrong. Eli's answer comes back within the hour, three lines about compartmentalization that don't touch the actual question, and the no holds through everything that follows, unargued after that, for days.
 
 What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 
@@ -38,7 +38,11 @@ ruth: and if youre wrong about the cameras
 
 eli: then i go away for a very long time, so im not going to be wrong
 
-Ruth reads that twice from the floor of her dorm room, closes her eyes for a second, and lets it stand.
+Ruth reads that twice from the floor of her dorm room, closes her eyes for a second, and types back anyway.
+
+ruth: you dont get to just not be wrong. give me the actual number of cameras youve counted, not the number youre confident about
+
+Eli doesn't answer that part, and the thread goes quiet for the night without anyone else picking it up either.
 
 ________________
 

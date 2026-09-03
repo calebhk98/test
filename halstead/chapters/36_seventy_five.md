@@ -134,7 +134,11 @@ priya: so either they are lying about who they work for, or somebody has spent a
 
 priya: which is a much more useful question than the one i came in with
 
-Ruth finishes the arithmetic she started an hour earlier and keeps the answer to herself, because seventy-five people across a field is a hundred and ten metres, and a hundred and ten metres is a distance she has walked a thousand times between buildings. She can see the whole of it at once.
+Ruth finishes the arithmetic she started an hour earlier and posts it without softening it.
+
+ruth: seventy-five people across a field is a hundred and ten metres. ive walked that distance a thousand times between buildings. i can see the whole of it at once
+
+Nobody answers it for a long time, and she does not say it a second way.
 
 Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
