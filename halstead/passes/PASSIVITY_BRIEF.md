@@ -160,5 +160,11 @@ You are editing chapters now, not reporting. Chapters 1 and 2 are LOCKED by the
 author: read them if you need context, change nothing in them, and if your span
 includes them, take your fifteen from the rest.
 
-Keep the chapter's word count inside 2,000 to 5,000. Run
-`python3 grade.py` when you are done and confirm the scorecard has not fallen.
+Keep the chapter's word count inside 2,000 to 5,000.
+
+Five other agents are editing five other spans at the same time as you, so
+`grade.py` would read their half-finished work as well as yours and tell you
+nothing you can act on. Do not run it. Check your own span with
+`python3 measures/style_report.py chapters/NN_name.md`, which takes a path and
+only sees what you point it at. The scorecard is run once, afterwards, over all
+six spans together.
