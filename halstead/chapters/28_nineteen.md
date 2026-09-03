@@ -64,7 +64,7 @@ Her reply says she doesn't. It's her. Six thousand words is about a day's work, 
 
 He doesn't reply.
 
-She reads the message a second time, then does the arithmetic herself: a spreadsheet that night with three columns, the date, the piece he asked about, and whether he writes back after she answers. Two more emails like it land before spring, both asking the same question in different words, and neither one answers when she asks in return what paper or company they write for. By April the sheet has five rows, the column for who anybody writes for empty on all of them.
+She goes back over the message, then does the arithmetic herself: a spreadsheet that night with three columns, the date, the piece he asked about, and whether he writes back after she answers. Two more emails like it land before spring, both asking the same question in different words, and neither one answers when she asks in return what paper or company they write for. By April the sheet has five rows, the column for who anybody writes for empty on all of them.
 
 ________________
 

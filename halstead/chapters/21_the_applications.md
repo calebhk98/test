@@ -148,15 +148,15 @@ He asks who did the geometry.
 
 Chloe's fork stops on the way up. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, watching him write it down, and what she tells him is what is written on the back of the April drawing. She stays at the table after he has moved down it to Sam, telling the two who arrived late enough to have missed the first telling.
 
-The drawing lives in a folder Nadia keeps. Chloe gets it out that evening. Bex is in it too, at that same table, saying nothing while Chloe did the talking.
+Chloe gets the drawing out of Nadia's folder that evening. Bex is in it, at that table, saying nothing while Chloe did the talking.
 
-At breakfast the next morning she sits across from Bex.
+At breakfast she sits across from Bex.
 
-"You told him you did the geometry."
+"You told him the geometry on that application was yours."
 
-Bex doesn't stop eating. "I did. Eventually."
+Bex doesn't stop eating. "I did tell him that, and it was true by the time I said it."
 
-"I drew it on the back of an exam script in April. You were at that table."
+"I drew it on the back of an exam script in April. You were there."
 
 "And I said it out loud, with somebody writing it down. That's the version he's got now."
 

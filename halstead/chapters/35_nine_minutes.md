@@ -78,7 +78,7 @@ sam: so we do nothing
 
 eli: we do exactly nothing. we dont patch it, we dont move it, we dont look at him looking at us
 
-ruth: what if we fed it something wrong on purpose. see if he reacts to a lie the same way he reacts to a truth
+ruth: what if we fed it something wrong on purpose. see if he reacts to a lie like he reacts to a truth
 
 eli: and if hes not even watching that closely and you just taught him we lie to our own tool
 

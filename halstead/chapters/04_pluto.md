@@ -78,7 +78,7 @@ Chloe keeps her hands still in her lap through the barn and the show and the gir
 
 "You're not even listening," Priya says.
 
-"I heard the whole thing. Fourteen two. The paper. All of it."
+"I heard the whole thing, the fourteen two and the paper and what her mother said afterward."
 
 Priya looks at her a second, then keeps going, quieter now, more to the room than to Chloe.
 
@@ -204,9 +204,9 @@ On the fourth night she gets as far as the phone and dials all but the last numb
 
 "You okay?" Priya says, not looking up from her book.
 
-"I didn't call," Chloe says. "I don't know why."
+"I got all the way to the last number and then I didn't call it," Chloe says.
 
-Priya turns a page. "Then don't tonight. Call tomorrow."
+Priya turns a page. "Then don't do it tonight, and call her tomorrow when there's nobody behind you."
 
 Chloe doesn't answer that, but she leaves the lamp on after Priya's is off.
 

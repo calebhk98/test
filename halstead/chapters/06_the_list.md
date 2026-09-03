@@ -198,11 +198,11 @@ Chloe runs the numbers again, the ones she has been running since the drive down
 
 "Chloe," Sam says, "obviously."
 
-"Obviously." She holds on to the pyjama leg. "It's four hours, though. Each way."
+"Obviously." She holds on to the pyjama leg. "It's four hours to get there, though, and another four to get back."
 
 "So?"
 
-"So that's a whole day. Twice. Before you even count the visits." Nobody answers that, and the lights click off before she can say the rest of it, and somebody has to find the door by feel.
+"So that's a whole day gone every time you do it, twice over, before you even count the visits themselves." Nobody answers that, and the lights click off before she can say the rest of it, and somebody has to find the door by feel.
 
 ________________
 

@@ -166,7 +166,7 @@ ________________
 
 They're back over the fence a few minutes later, Chloe's camera loop already unwinding itself toward normal, and the corridor is empty and quiet the whole way to their own doors.
 
-Chloe's shoes sit by the door, laces still knotted from being kicked off, not untied. She goes down her own ribs the way she went down theirs, counting under her breath out of the same habit, and finds nothing. Only then does she get under the covers.
+Chloe's shoes sit by the door, laces still knotted from being kicked off, not untied. She goes down her own ribs the way she went down theirs, counting under her breath out of habit, and finds nothing. Only then does she get under the covers.
 
 ________________
 

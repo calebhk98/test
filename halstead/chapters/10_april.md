@@ -82,7 +82,7 @@ Ruth carries on cutting. "It's fine at this end and it's a triangle at that end,
 
 The Spanish teacher speaks Spanish from the first minute of the first hour and keeps going through anything, including the boy who puts his hand up twice. That Monday Chloe catches one word in nine but spends the rest of the hour chasing the other eight. On Wednesday a whole sentence arrives at once, which pleases her so much that she loses the ones after it, still answering the first.
 
-Mathematics here runs backward from mathematics at camp, where somebody explained fractions to her and she worked out for herself why you flip the second, which took a night on the floor with a pencil and felt enormous at the time. Here you get given the thing the formula is about, plus a week, and you come back with whatever you have. The teacher tells you whether it is true and stops there. Good is a different question, one he leaves alone. The first week she brings him a stack of pages, but he reads two lines, says the second is wrong, and hands it back with forty minutes of the hour still to go. "Which line," Chloe says, already turning back to the page. "You only read two of them. There's nine more after it." He taps the second line once, without looking up again, and leaves her the other forty minutes to find the rest of it herself.
+Mathematics here runs backward from mathematics at camp, where somebody explained fractions to her and she worked out for herself why you flip the second, which took a night on the floor with a pencil and felt enormous at the time. Here you get given the thing the formula is about, plus a week, and you come back with whatever you have. The teacher tells you whether it is true and stops there. Good is a different question, one he leaves alone. The first week she brings him a stack of pages, but he reads two lines, says the second is wrong, and hands it back with forty minutes of the hour still to go. "Which line," Chloe says, already turning back to the page. "You only read two of them. There's nine more after it." He taps the second line once, without looking up again, and leaves her the other forty minutes to find the rest herself.
 
 For a month she hates it, though the first weeks go badly in every subject she has. By the fourth week she can find all her rooms from memory and has stopped arriving late. Chloe is behind in Spanish, mathematics, writing, and history, but has caught up in literature. On the first day of literature she waits for the reading list, and on the eighth day stays after the hour to ask about it, and the teacher looks at her a moment before answering.
 
@@ -122,7 +122,7 @@ On the second floor by the stairs there is a corkboard everybody walks past, car
 
 Later she asks Kavi about it, on the stairs, the stairwell empty except for the two of them.
 
-Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know. He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
+Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know. He was crying in the stairwell on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
 
 "Crying about what, though, did somebody say something to him or was it just the leaving?"
 
@@ -150,7 +150,7 @@ Chloe sits down on the floor of the alcove, the cord stretched as far as it goes
 
 "Yes," Chloe says, and then, before her mother can say anything else, "there's a pool, and Ruth's on my floor, and the library doesn't even have a card, you just take what you want and bring it back," all in one breath, so that by the time she stops the operator has already cut in once to ask for more money.
 
-Her mother laughs, and tells her to save the rest of it for next Sunday.
+Her mother laughs, and tells her to save the rest for next Sunday.
 
 ________________
 
