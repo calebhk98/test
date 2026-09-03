@@ -184,7 +184,7 @@ Upstairs, on the back of a spelling worksheet under her pillow, she starts a col
 
 ________________
 
-Her mom starts on the school in the last week of September.
+In the last week of September her mom starts on Chloe's own school, the one she walks to, about what it has for a child who finished the third-grade work in October.
 
 Coming down for water, Chloe gets the end of a call, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 

@@ -41,6 +41,7 @@ how a pass gets judged.
 | `measures/style_report.py` | conjunction rates, and the tic scan that catches the trailing explanatory clause. Takes a path. |
 | `measures/tics.py` | 29 constructions against a 23-book corpus, each with a target |
 | `measures/banned_phrases.py` | phrases the author has ruled out by name, checked against the chapters |
+| `measures/agency.py` | verb classes with a pronoun subject, against the corpus. Reports, sets no target: it exists to record that the passivity the author sees is structural and not lexical |
 | `measures/absolutes.py` | every absolute word, all contexts, against the corpus |
 | `measures/quote_length.py` | sentences per quotation against the corpus |
 | `measures/number_report.py` | spelled numbers one to fifteen, all at their corpus maximum |
