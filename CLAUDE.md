@@ -27,26 +27,29 @@ observation.
 
 ## The measuring scripts, and which question each answers
 
-Run from `halstead/`.
+Run from `halstead/`. The twelve measures live in `halstead/measures/` and
+`grade.py` runs all of them; each prints a reminder to stderr if you call it
+on its own, which is for reading individual hits during a fix and is never
+how a pass gets judged.
 
 | script | question |
 | --- | --- |
 | `grade.py` | everything below, in one report, ending in a scorecard of every measure that is not passing. Start here, and read the scorecard first. |
 | `build_manuscript.py` | regenerate `HALSTEAD.md` from `chapters/` |
-| `check_edits.py` | em dashes, curly quotes, the paragraph convention, word count |
-| `prose_grade.py` | per-chapter reading grade, Lexile, sentence and paragraph shape |
-| `style_report.py` | conjunction rates, and the tic scan that catches the trailing explanatory clause. Takes a path. |
-| `tics.py` | 29 constructions against a 23-book corpus, each with a target |
-| `banned_phrases.py` | phrases the author has ruled out by name, checked against the chapters |
-| `absolutes.py` | every absolute word, all contexts, against the corpus |
-| `quote_length.py` | sentences per quotation against the corpus |
-| `number_report.py` | spelled numbers one to fifteen, all at their corpus maximum |
-| `dialogue_study.py`, `voice_separation.py` | who sounds like whom |
-| `prose_check.py` | verdict language in the character sheets |
-| `verify_citations.py` | quotations in reference docs against the chapters |
+| `measures/check_edits.py` | em dashes, curly quotes, the paragraph convention, word count |
+| `measures/prose_grade.py` | per-chapter reading grade, Lexile, sentence and paragraph shape |
+| `measures/style_report.py` | conjunction rates, and the tic scan that catches the trailing explanatory clause. Takes a path. |
+| `measures/tics.py` | 29 constructions against a 23-book corpus, each with a target |
+| `measures/banned_phrases.py` | phrases the author has ruled out by name, checked against the chapters |
+| `measures/absolutes.py` | every absolute word, all contexts, against the corpus |
+| `measures/quote_length.py` | sentences per quotation against the corpus |
+| `measures/number_report.py` | spelled numbers one to fifteen, all at their corpus maximum |
+| `measures/dialogue_study.py`, `measures/voice_separation.py` | who sounds like whom |
+| `measures/prose_check.py` | verdict language in the character sheets |
+| `measures/verify_citations.py` | quotations in reference docs against the chapters |
 
 Every script above is called by `grade.py`. Nothing measures anything unless it
-is in that report: `style_report.py` held the conjunction rates and the tic scan
+is in that report: `measures/style_report.py` held the conjunction rates and the tic scan
 for weeks while nothing called it, and 74 trailing explanatory clauses collected
 without anyone seeing a number.
 

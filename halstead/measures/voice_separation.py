@@ -31,7 +31,8 @@ import re
 import statistics as st
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
+# The measures live in measures/; the manuscript is a level up.
+HERE = Path(__file__).resolve().parent.parent
 
 # The group chat is not in files of its own. It is written inside the ordinary
 # chapters, as name-prefixed lines, across eleven of them from chapter 24 on.
@@ -174,5 +175,18 @@ def main():
              "tagged lines only, biased short AND against questions - never read a 0 as real")
 
 
+# Run from grade.py, not on its own. Every measure in measures/ reports one
+# slice; the scorecard is the whole picture and it is the thing that says
+# whether a pass helped. Running one of these alone is for reading the
+# individual hits during a fix, which is what --show and the per-file
+# arguments are for, and it is never how a pass gets judged.
+def _solo_notice():
+    import sys, os
+    if os.environ.get("HALSTEAD_VIA_GRADE"):
+        return
+    print("  [one measure of twelve. the scorecard is: python3 grade.py]",
+          file=sys.stderr)
+
 if __name__ == "__main__":
+    _solo_notice()
     main()

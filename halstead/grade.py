@@ -36,6 +36,7 @@ against is a number somebody made up.
 """
 
 import argparse
+import os
 import importlib.util
 import re
 import subprocess
@@ -86,20 +87,26 @@ def fk_band(stem):
 
 
 def load(name):
-    spec = importlib.util.spec_from_file_location(name[:-3], HERE / name)
+    # measures/ has to be importable too: prose_grade imports style_report from
+    # alongside it, and dialogue_study loads prose_grade the same way.
+    md = HERE / "measures"
+    if str(md) not in sys.path:
+        sys.path.insert(0, str(md))
+    spec = importlib.util.spec_from_file_location(name[:-3], md / name)
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
 
 
 def run(script, *args, quiet_rc=True):
-    """Run one of the sibling scripts and return its stdout.
+    """Run one of the measures in measures/ and return its stdout.
 
     Several of them exit non-zero when they find something, which is correct
     behaviour and not a failure, so the return code is ignored by default.
     """
-    r = subprocess.run([sys.executable, str(HERE / script), *map(str, args)],
-                       capture_output=True, text=True)
+    env = dict(os.environ, HALSTEAD_VIA_GRADE="1")
+    r = subprocess.run([sys.executable, str(HERE / "measures" / script), *map(str, args)],
+                       capture_output=True, text=True, env=env)
     if r.returncode and not quiet_rc:
         return f"({script} exited {r.returncode})\n{r.stdout}{r.stderr}"
     return r.stdout.rstrip("\n")

@@ -60,7 +60,7 @@ These are marked **EXCLUDE** below rather than folded silently out of the
 count, because the brief asked for every location the script found. They are
 not part of the "because in speech" problem at all (a couple of them may be
 worth a look under a different finding — narrator explanatory clauses — but
-that is `style_report.py`'s job, not this one, and is outside this catalogue's
+that is `measures/style_report.py`'s job, not this one, and is outside this catalogue's
 scope). Subtracting them leaves **118 real instances** of a character
 explaining themselves inside their own dialogue with a "**, because**"
 clause. All rates and the KEEP/CUT/REWORD split below are against that 118.

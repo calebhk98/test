@@ -74,7 +74,7 @@ superlative doing comparison work the reader did not ask for. Cut at the
 comma. If the consequence matters, show somebody living it: a person sitting
 down at the warm end, a girl tilting a sheet to read the bottom of it.
 
-`style_report.py` counts these. It reports 74 trailing explanatory clauses,
+`measures/style_report.py` counts these. It reports 74 trailing explanatory clauses,
 37 narrator evaluations and 18 superlatives book-wide. Run it.
 
 ### An overused technique is cut back, not to zero
@@ -135,7 +135,7 @@ it, so the usual fix is deletion rather than replacement.
 
 Blank line between paragraphs. No two-trailing-space markdown hard breaks
 anywhere in the book. Chapters 1-6 used the old convention and are being
-converted; `check_edits.py` reports any trailing-space line as a defect.
+converted; `measures/check_edits.py` reports any trailing-space line as a defect.
 
 ## 3. No em dashes, no curly quotes
 
