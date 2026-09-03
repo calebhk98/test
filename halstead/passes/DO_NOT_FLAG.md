@@ -69,8 +69,14 @@ resolving the founder, the seventy-five, or the prisoners.
 These have been raised and the author has asked to look before anything changes.
 Do not edit them; report only if you have something new.
 
-- **"furious"** in chapter 5 and **"relieved"** in chapter 7, as named states.
 - **Amberg's long job offer** in chapter 22.
+
+**Closed 2026-08-29:** the named states are no longer open. The author ruled on
+all five at once — "furious" in chapter 5, "relieved" in chapter 7, "restful"
+in 12, "delighted" in 19 and "furious" in 28 — and every one has been removed
+or replaced with behaviour. An agent doing that pass noticed this file still
+said they were reserved and asked whether the approval was real before acting,
+which was the right thing to do; the file was stale, not the instruction.
 
 ---
 

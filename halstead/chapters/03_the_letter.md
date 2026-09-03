@@ -68,7 +68,7 @@ ________________
 
 Her mom calls the district office on Monday, where a receptionist takes the name down and says she'll look into it. Tuesday and Wednesday go quiet, but the callback comes Thursday afternoon. By then Chloe is on the stairs, on the step where the carpet stops and the wood goes cold under her.
 
-Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the one on the other end. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it, because I know it's not your job to go looking."
+Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the one on the other end. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it."
 
 Then the phone goes down on the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
@@ -100,7 +100,7 @@ Another wait, after which her mom says uh huh, then waits again.
 
 The voice goes on for most of a minute.
 
-"Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name. I want the name of that person. Not the department, not the program, the actual person who sat at a desk and put my daughter on a list I never agreed to."
+"Okay, but somebody made the list. Somebody sat down and typed my kid's name. I want the name of that person. Not the department, not the program, the actual person who sat at a desk and put my daughter on a list I never agreed to."
 
 Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom turns her head just far enough to find her and points at the stairs, so Chloe goes back up past the fourth one, which announces her every time, and sits on the fifth.
 
@@ -122,7 +122,7 @@ Her mom takes her hand off the phone.
 
 "And she said, and I want you to hear this exactly, she said their list is usually pretty good."
 
-"Usually pretty good is the vaguest possible way anybody could answer that question, because a phrase is what you reach for when you haven't got a number. That's the one thing she said all night that wasn't a fact."
+"Usually pretty good is the vaguest possible way anybody could answer that question. A phrase is what you reach for when you haven't got a number. That's the one thing she said all night that wasn't a fact."
 
 "Okay, and everything else?"
 
@@ -134,7 +134,7 @@ Her mom pulls out a chair and stands behind it.
 
 "And they're not from around here?"
 
-"Not one town, not one state, because she said they come from all over, and then she said we're one of the closer ones."
+"Not one town, not one state. She said they come from all over, and then she said we're one of the closer ones."
 
 "Four hours is one of the closer ones."
 
@@ -220,7 +220,7 @@ Chloe has the argument already worked out. "I'm going away for a month, to a cam
 
 The librarian looks up.
 
-"That's not how it works, honey, because it resets every time you come in, so it is still four however long you wait. It isn't a bank. You can't save them up."
+"That's not how it works, honey, it resets every time you come in, so it is still four however long you wait. It isn't a bank. You can't save them up."
 
 "But I'm not using them, and they'd just be sitting here."
 

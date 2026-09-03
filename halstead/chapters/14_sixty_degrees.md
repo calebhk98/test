@@ -70,7 +70,7 @@ Chloe holds her tray like somebody who intends to keep it. "It's the opposite of
 
 Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead a very long time, so every ending you get wrong stays wrong in private, for ever."
 
-"Answering back is beside the point, because what I want is to read what's already sitting in it."
+"Answering back is beside the point. What I want is to read what's already sitting in it."
 
 "Then you're learning to read a language rather than learning a language."
 

@@ -78,7 +78,7 @@ Her mom picks up in the middle of the first ring.
 
 "I want to come there," Chloe says.
 
-"Okay, yeah, okay, stay right where you are, because I'm coming."
+"Okay, yeah, okay, stay right where you are. I'm coming."
 
 The hotel is half a mile away, but by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed.
 

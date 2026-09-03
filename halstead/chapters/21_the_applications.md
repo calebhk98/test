@@ -86,7 +86,7 @@ Then somebody reads the essays, and what everybody notices first is the graduate
 
 An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people; she reads the sentence twice, and reads it a third time before she picks up the phone.
 
-"Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
+"Read this paragraph and tell me what you think it means. Don't tell me what it stands in for. I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
 
 Her colleague reads it standing in the doorway, still holding his own coffee. "It means exactly what it says, with no second meaning folded into it. I put two of these side by side on Friday, looking for the template, and they argued opposite sides of the same question, and both of them were worth reading."
 

@@ -100,7 +100,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "Three of them will be doing something else by Christmas."
 
-"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked, because checking the rest of it before there's anything to check would just be a way of not starting."
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked. Checking the rest of it before there's anything to check would just be a way of not starting."
 
 "What do your parents say?"
 
@@ -158,7 +158,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Dave." Her mother's voice moves off the phone and comes back closer, both of them on the line now, close enough for Chloe to hear them breathing on top of each other.
 
-"Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
+"Say that whole thing again for me," her father says, "every part of it, from the start. I want to hear it properly."
 
 "Research, full time, starting the day I'd have gone to a dorm. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's all of it. That's everything that was on the desk."
 
