@@ -88,7 +88,7 @@ Sam comes up out of the cut and stands there in the open with his own harness go
 
 "Since nine."
 
-Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time, and lets the subject go.
+Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time. "What gave me away," he says, "at the end." The man considers it for a second. "Nothing did. You walked inside six feet of me twice and I still had another twenty minutes in me if you'd kept going straight." Sam files that under the same heading as the culvert, and says nothing else about it.
 
 A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
 

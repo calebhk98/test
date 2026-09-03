@@ -8,7 +8,7 @@ By the following spring she has a readership and an inbox that keeps refilling f
 
 People keep asking who works with her. The question shows up as a comment under a post, or an email with "research team" somewhere in the subject line, once from an editor at an actual paper who wants to know about syndication and asks, almost as an afterthought, who else is on staff. Chloe's answer never changes: it's just her.
 
-Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then the thread goes quiet. The pattern repeats often enough, the question and then the drop-off, that she decides it's people being funny about credentials and stops turning it over between emails.
+Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then the thread goes quiet. Each one goes into the same sheet she started in February, and by the following winter it runs to eleven rows, none of them ever willing to say what outlet or company they write for when she asks in return. There's no next move available for eleven rows with no name attached, so she leaves the sheet open on a second tab and keeps working the piece she's actually writing.
 
 By the winter she's writing most nights well past midnight, laptop balanced on her knees on the couch, the day's translation work already closed out and a browser full of tabs in three languages open around the piece she's actually working on; a currency story that takes a stack of sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes but not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
 
@@ -120,6 +120,6 @@ The reasoning goes down along with the answer, as everything else has, and he cl
 
 At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before she's worked out it was the joke.
 
-The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light; standing, still in her coat, she reads it once, then reads the single paragraph a second time before she sits down to do anything else with it, and files it in the kitchen drawer where everything that's needed keeping ends up.
+The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then a second time, then calls her mother before the coat is off. She gets the machine, and leaves nine words on it before she hangs up: it came through, she'll tell her the whole of it Sunday. Only then does she file it in the kitchen drawer where everything that's needed keeping ends up.
 
 The job starts in January. She turns twenty-one in August.

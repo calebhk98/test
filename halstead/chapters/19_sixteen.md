@@ -42,7 +42,9 @@ Bex passed, and comes the length of that hall to find her before dinner, saying 
 
 "A fiftieth. It's a fiftieth, Chloe, it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them, laughing at something before she has finished telling it.
 
-Chloe stays where she is until the hall has thinned out, Bex's voice still going somewhere down it, telling it again to whoever came in late. At dinner she sits with her back to the corkboard, and when Sam starts in on the fifty she tells him she doesn't want the fiftieth or any part of the board tonight, and eats without looking up. Lights off, she runs the fraction again anyway, not to finish it this time but to find the one sentence that would have stopped Bex halfway down the hall, and she is still short of it when Ruth's breathing goes even across the room.
+"I can do the fraction myself, Bex." Chloe says it at her back, three steps gone already, and it doesn't slow her down at all. She doesn't stay in the hall to hear the number said a third time to somebody else, and goes the rest of the way to her room before dinner.
+
+At dinner she sits with her back to the corkboard, and when Sam starts in on the fifty she tells him she doesn't want the fiftieth or any part of the board tonight, and eats without looking up. Lights off, she runs the fraction again anyway, not to finish it this time but to find the one sentence that would have stopped Bex halfway down the hall, and she is still short of it when Ruth's breathing goes even across the room.
 
 Later that week she takes her paper to Amberg, and he has the mark scheme out on the desk before she gets the door shut.
 
@@ -61,6 +63,8 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 "I would like you to sit down while I say the rest. You're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely, and he only had the words you actually gave him to work with." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
 Chloe goes down the rows and back up them, then looks up at him and back down at them.
+
+"Give me one from an old paper. Not this one, a finished one, so I can see what filled in looks like when the marker actually got all four." She's already turning to a blank page of her own notebook.
 
 ________________
 

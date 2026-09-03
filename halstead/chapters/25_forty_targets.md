@@ -112,7 +112,7 @@ His second is arithmetic, and it is better. Half the bay has been doing this for
 
 His third accounts for everything the first two leave lying around, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
 
-The explanation survives a week of examination, after which he stops examining it.
+The explanation survives a week of examination. To find out whether it holds, he starts holding some of himself back on the land-navigation course, taking it half a step slower than he can manage and watching for anybody who marks him down for the difference. Nobody does. Three weeks of a slower time on his own sheet is what the experiment costs him and nothing else, so he stops running it and goes back to doing the course at the only speed he actually has.
 
 ________________
 
@@ -126,7 +126,7 @@ Instead of pointing at it he walks them the bearing, and they find the point tog
 
 Mail call is on the printed schedule, and the drill sergeants run it standing up, holding each envelope out at arm's length, charging push-ups by the letter, paid cheerfully by the entire platoon. Personal time runs until lights out, and half the bay spends it on boots, the other half on paper.
 
-Sam writes to his grandmother on Sunday nights with the pad braced on his knee, in block capitals, because he gave up on cursive somewhere around the age of ten. What she gets is the cold, a drill sergeant who yells at everybody and means well by it, the length of a meal. The six hundred stays out of the letter, on the grounds that it would require a paragraph of explanation, then still amount to a number when he got there.
+Sam writes to his grandmother on Sunday nights with the pad braced on his knee, in block capitals, because he gave up on cursive somewhere around the age of ten. He gets as far as the six hundred once, the number sitting alone in the middle of a fresh sheet, before he tears the page free, balls it, and starts again from the top. Okoro, writing his own letter on the rack across the aisle, watches the paper go into the bin and says nothing about it until the second sheet is half full. "Number too good to send her?" "Something like that." Sam keeps writing. What she gets is the cold, a drill sergeant who yells at everybody and means well by it, the length of a meal, and no number anywhere on the page by the time he seals it.
 
 Okoro asks him once who it goes to.
 

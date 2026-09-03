@@ -38,7 +38,15 @@ On the Thursday every table gets a bundle of dowels, a spool of string, one glue
 
 "Go and do your own, then. You're so sure about it."
 
-Ruth goes and does her own, and Chloe watches her the whole way back to the next table, still working out at her own speed whether a diagonal is the entire argument Ruth thinks it is, so that by the time she has the answer Sam has laid a bead of glue along the first joint.
+Ruth goes and does her own, and Chloe watches her the whole way back to the next table, working out at her own speed whether a diagonal is the entire argument Ruth thinks it is. By the time she has the answer, Sam has already laid a bead of glue along the first joint.
+
+"We should put one across the middle too," Chloe says, pointing at the span.
+
+"It's already glued, Chloe. It's not coming apart now."
+
+"Just the middle one."
+
+"There's no dowels left. Ruth took the last of them for hers." Sam goes back to the joint with his thumb, checking it's set.
 
 Their bridge takes most of the afternoon, and comes out flat, wide, neat at every joint, better looking than Ruth's, though some tables, one of them Owen's, are still short of the span when the session ends, so Mr. Doyle tells them to leave the structure standing and come back to it on Tuesday.
 
@@ -101,6 +109,8 @@ Owen goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 "Good, watch. Flip zero and you get one over zero, and one over zero has no answer at all, so the whole thing breaks right there. Same rule, same answer, and it's the one case where the rule tells you something is impossible," Mr. Baptiste says, doing it on the board as he says it and tapping the break with the marker. The bell goes before Ruth has finished arguing the point with him.
 
 Around them the rest of the class is already standing, chairs scraping, Sam's bag over his shoulder before Mr. Baptiste has finished the sentence, while Chloe sits in the middle of it and watches a conversation go on over her head about a question she asked first. Her ears stay hot for an hour afterward, through the break and through most of the lesson after it.
+
+By the end of the day she stays at her desk until the room empties, and copies the zero line into the back of her own packet, in her own words: you can't cut nothing into pieces. Then she catches Sam in the hallway and reads it to him before he can ask what she's doing.
 
 The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. A second try gets her no further, so Chloe draws it a third time with her own numbers, because his numbers have been sitting in her head since the lesson and taking her nowhere: three quarters divided by an eighth. Shading three quarters of a rectangle, she rules the eighths straight down across it, top to bottom, all eight, and counts how many land inside the shaded part.
 
@@ -170,9 +180,15 @@ Ruth is at the end of the table with her chin on her hand, pushing one piece of 
 
 "She asked the table. I was sitting at the table," Ruth says.
 
-Chloe's own fork stops halfway to her mouth, questions backed up behind it: whether anybody went into the stairwell after him, whether he had to say it out loud to somebody before they would let him go, and how long it was between the saying and his mom being at the door.
+Chloe's fork stops halfway to her mouth. "Did you go in after him? In the stairwell?"
 
-Owen, then the bridge, then Owen again, and the loop refuses to run further than that. So Chloe picks her roll apart, one piece at a time, lining the pieces along the edge of her tray, going back through the two facts: the bridge was fun, but Owen must not have liked it, which sit crosswise, and neither will move over for the other. Long after Ruth has gotten up and taken her tray, she starts from the beginning, checking them a third time, trying to work out how a person could stand in front of a bridge but want to be somewhere else.
+Ruth looks up from her plate. "No. I was walking past. You don't go in after somebody doing that."
+
+"Why not?"
+
+"It's worse. They know you saw." Ruth goes back to pushing her food around.
+
+Chloe picks her roll apart anyway, one piece at a time, lining the pieces along the edge of her tray. The bridge was fun. Owen must not have liked it. The two facts still won't sit next to each other, and no answer from Ruth is going to move them.
 
 More leave before the end of the month, so that by the fourth time Chloe reads the event off the corridor: a door that was shut at breakfast standing open in the afternoon, a mattress with the sheets gone.
 

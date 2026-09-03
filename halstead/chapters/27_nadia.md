@@ -266,7 +266,11 @@ ruth: thats a hiring pool problem. youre a startup, the good ones are elsewhere
 
 nadia: yeah
 
-nadia: yeah. doesnt feel right though
+nadia: doesnt feel right though. im pulling the last twenty rejects tonight to see if theyre coming off the same three boards
+
+eli: report back
+
+nadia: only if its actually something
 
 eli: hows the empire
 

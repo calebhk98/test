@@ -74,7 +74,13 @@ The edge of her hand goes across the top of her own shoulder.
 
 Priya tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
 
-Chloe keeps her hands still in her lap and lets it run, end to end.
+Chloe keeps her hands still in her lap through the barn and the show and the girl's mother, then reaches over and unzips her own bag. By the time Priya gets to the end of it, Chloe is folding a shirt into the drawer with her back half turned.
+
+"You're not even listening," Priya says.
+
+"I heard the whole thing. Fourteen two. The paper. All of it."
+
+Priya looks at her a second, then keeps going, quieter now, more to the room than to Chloe.
 
 Then Priya says goodnight, and inside a minute she is asleep.
 
@@ -190,9 +196,19 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "You're agreeing at me," Sam says, and pushes his tray a couple of inches away.
 
-Chloe has a whole sentence about the lid ready.
+Chloe has a whole sentence about the lid ready. "That's basically a locker," she says. "You can see everything in it and you still can't touch any of it."
 
-On the fourth night she gets as far as the phone and stands there with her hand on it, until a kid comes up behind her to ask if she is using it, so she says no, then goes back upstairs, where Priya is still awake.
+Sam looks at her for a second, then says, "Yeah, exactly," like it was his line the whole time.
+
+On the fourth night she gets as far as the phone and dials all but the last number before a kid comes up behind her to ask if she is using it. She hangs it up herself, before he has to ask twice, and goes back upstairs, where Priya is still awake.
+
+"You okay?" Priya says, not looking up from her book.
+
+"I didn't call," Chloe says. "I don't know why."
+
+Priya turns a page. "Then don't tonight. Call tomorrow."
+
+Chloe doesn't answer that, but she leaves the lamp on after Priya's is off.
 
 Her mom stays a few more days after that, and neither of them says anything about the phone.
 
@@ -258,11 +274,11 @@ Mr. Doyle is already onto the next thing, brisk about it, while a kid glances at
 
 She has done this herself, in January.
 
-Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.
+All through lunch she watches the door, waiting for somebody to come and get Ruth. Nobody does. At the end of the table she leans over. "Are you in trouble?"
 
-But nothing comes, all day.
+"For what," Ruth says, already onto her sandwich.
 
-That night it catches again: Ruth said it, so she sits on her hands through the next class, and the one after that, but answers only when Mr. Doyle calls on her direct.
+That night it catches again: Ruth said it, so Chloe sits on her hands through the next class, and the one after that, but answers only when Mr. Doyle calls on her direct.
 
 "This is the worst mistake of my life," Sam says at dinner that week, about Kavi, for about the fourth time.
 

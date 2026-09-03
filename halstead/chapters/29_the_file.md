@@ -18,7 +18,7 @@ The box is unglamorous, folders sorted only by the year stamped on the tab, a de
 
 There is a file on his own school. It goes back to 2013.
 
-Every few years a different hand takes the file over, a new set of initials in the margin, a new date stamped over the last one. He could trace an entire career through the initials alone, if he wanted to.
+Every few years a different hand takes the file over, a new set of initials in the margin, a new date stamped over the last one. He counts them once, an old habit from tracing family trees for fun as a child: eleven sets across twelve years, one of them repeating twice, eight years apart. He circles the repeat in pencil and turns to the next folder.
 
 The early assessments say state actor. Two candidates named, one preferred, continued observation recommended. Years later that gets revised down, and the reasoning is laid out plainly: if it were either of them, somebody already inside them would have turned something up by now, but nobody has. The file still lists them, now behind a corporate actor as the likelier explanation.
 
@@ -84,7 +84,7 @@ At his desk it's the job it is any other day: twenty pages reduced and sent up, 
 
 The second day he clears his queue faster than usual, the cables done by mid-morning, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. His grandmother tells him, "The ferry's back on the summer schedule. And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, but neither of them brings up anything that happened at his desk that week.
 
-Then he does the only thing available to him: nothing.
+For two days that is where it stays.
 
 Several versions of the question get typed before he sends any of it, each deleted and started over, because even the version that says the least is still a version that says something.
 

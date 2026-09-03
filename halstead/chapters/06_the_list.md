@@ -198,7 +198,11 @@ Chloe runs the numbers again, the ones she has been running since the drive down
 
 "Chloe," Sam says, "obviously."
 
-"Obviously," she says, and holds on to the pyjama leg until the lights click off and somebody has to find the door by feel.
+"Obviously." She holds on to the pyjama leg. "It's four hours, though. Each way."
+
+"So?"
+
+"So that's a whole day. Twice. Before you even count the visits." Nobody answers that, and the lights click off before she can say the rest of it, and somebody has to find the door by feel.
 
 ________________
 
@@ -252,4 +256,6 @@ The road noise goes on for another few miles.
 
 The road noise fills the car again until the next exit sign, and when her mom says something about the traffic on the last stretch her dad says he'll take the other way in.
 
-Chloe keeps her eyes shut the rest of the way home.
+"I know what it's called," Chloe says, eyes still shut, and the car goes quiet enough that she can hear her dad's foot lift off the gas and find it again. "It's called I got good at it."
+
+Nobody answers that, and she keeps her eyes shut the rest of the way home.

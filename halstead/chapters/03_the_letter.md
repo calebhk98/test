@@ -210,7 +210,11 @@ On the ninth night Chloe is supposed to be asleep, having already been sent back
 
 "Not like that. That's a kid gone quiet, and you know the difference as well as I do. She used to come in the door talking."
 
-A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. At that, Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.
+A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. Chloe comes down the rest of the way, in her socks, and stands in the kitchen doorway until her dad sees her.
+
+"I heard that part," she says. "The quiet part."
+
+Neither of them answers her right away, and it's her mom who crosses the kitchen first.
 
 ________________
 
