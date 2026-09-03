@@ -106,9 +106,7 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds, and it is still holding at Christmas.
 
-A Saturday belongs to whoever plans it. None of it is on a schedule and none of it is against a rule either: the workshop is open until the technician locks it at noon, the kitchens hand over whatever is going spare to anybody who turns up before they clear down, and the rest of the day is whatever the person holding it can talk the year into. It rotates, roughly, and it rotates by who says it first. Whoever has it stands up at breakfast and says so, and the year either comes or doesn't.
-
-Chloe has hers half out, workshop first, kitchens after, when Bex is already on her feet. Bex has the Saturday out loud before breakfast is cleared, the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that, and she revises it twice before the plates are stacked, moving the kitchens and then moving them back.
+Chloe has her Saturday half out, workshop first, kitchens after, when Bex is already on her feet with that plan and the table listening to her: the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that. She revises it twice before the plates are stacked, moving the kitchens and then moving them back.
 
 "If we leave the workshop till after, we're," Chloe says.
 
@@ -190,7 +188,7 @@ Nadia looks at it a long moment. "She's right. It's both."
 
 By the end of the meal the table's five opinions have settled on hers.
 
-Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always, and once the set is done neither of them starts another one.
+Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always, and Chloe does not sit on that side of the table again for the rest of the term.
 
 ________________
 

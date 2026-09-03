@@ -176,13 +176,13 @@ Chloe's hands are off the step now. "Ruth is the least miserable person I have e
 
 "Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her. I tried giving her a Saturday off in March and she turned up for it anyway."
 
-Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where every pairing in adversarial negotiation goes up the week it happens, both names and who took what off whom, and Nadia's score has been sitting there since February with Priya's name beside it as the one she took it from.
+Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where every pairing in adversarial negotiation goes up the week it happens and stays up all year, nothing changing hands but the score. Nadia's has been sitting there since February with Priya's name beside it, which is the whole of what the board says and the whole of what anybody remembers.
 
 "Did Priya know it was coming, before the board ever went up?"
 
 Chloe puts her heels up on the lower step and takes her time with that.
 
-"I think she knew straight away and let it run anyway. She hasn't said a word about it since." Chloe turns the glass on the step. "Can I be the one asking something for a second?"
+"I think she lost it on purpose and has not said so to anybody since. She could have had it back in the room, and she let the clock run out on herself." Chloe turns the glass on the step. "Can I be the one asking something for a second?"
 
 "Go on."
 
