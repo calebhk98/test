@@ -114,7 +114,7 @@ A question near the end is a rented forklift, and she has the answer in her seco
 
 This time she passes by twenty-two, and she checks the number against the line above it before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
-In November she sits in the library with something else open in front of her, thinking about April, and shuts the book harder than she means to. It happens again in December, and this time she doesn't open another one after. She goes and finds the April paper in the drawer where she still keeps it, the four blank rows still blank, and fills every one of them in by hand, though nobody is ever going to mark it again.
+In November she sits in the library with something else open in front of her, thinking about April, and shuts the book harder than she means to. It happens again in December, and this time she doesn't open another one after. She goes and finds the April paper in the drawer where she still keeps it, the four blank rows still blank, and fills every one of them in by hand.
 
 "What's that from," Ruth asks, from the other bed.
 

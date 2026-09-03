@@ -142,7 +142,7 @@ She has never heard the name in her life. She has which boy it is by lunch, off 
 
 She tells Iyad to stop, at the long table, in front of the same people he said it in front of. He says he only repeated what he heard and cannot help what he hears, and then asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs.
 
-"Four," Chloe says, "and I could give you the number for everybody else on your list too, since you're the one who keeps it." Iyad says he was only repeating what he heard, twice, to two different people, and Rustem, three seats down, tells him to leave the ledger out of it before somebody asks him for his own number.
+"Four," Chloe says, "and I could give you the number for everybody else on your list too, since you're the one who keeps it." Rustem, three seats down, tells Iyad to leave the ledger out of it before somebody asks him for his own number, and the laugh that started for Chloe finishes somewhere else.
 
 She stops using the language-block stairs.
 

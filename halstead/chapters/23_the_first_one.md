@@ -58,7 +58,7 @@ Chloe gets caught on her way past, the chair between her and the lemonade. "And 
 
 Dana is in the chair along from her, on her phone until Chloe gets that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks.
 
-"Finished. About an hour ago." Chloe doesn't give her the rest of it this time, the way she gave it to her grandmother for nothing. "Georgetown in August."
+"Finished. About an hour ago." Chloe doesn't give her the rest of it this time, the way she gave it to her grandmother. "Georgetown in August."
 
 "That's good," Dana says, and turns to the woman on her other side to say something about the parking.
 

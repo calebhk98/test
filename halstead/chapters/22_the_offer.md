@@ -124,7 +124,7 @@ In the evening she finds him in the network room, back against the radiator by t
 
 "It stopped being school for me a while ago, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against. Nobody in that room knows the answer either. That is the difference and it is the whole difference. I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong. It was still unchecked. That's a research problem, not a classroom one. A classroom's whole job is already knowing." He gives her the look he saves for a mark scheme. "It's a lab that also has children in it."
 
-Chloe picks a second length of stripped cable off the bench and starts coiling it the way he's coiling his, to have something to do with her hands while she says the rest of it.
+Chloe picks a second length of stripped cable off the bench and starts coiling it the way he's coiling his.
 
 "I don't have a lab. I turned mine down this afternoon."
 
