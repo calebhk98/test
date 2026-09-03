@@ -508,4 +508,4 @@ chloe: dont have it. thats gone with the box
 
 Nadia comes back an hour later with three names off a supplier's safety sheet, the kind meant for a pharmacist, not a customer. Chloe writes all three down on the back of her hand before she loses the message in the scroll.
 
-The chat moves on within minutes. Chloe's tab stays open on her desk for the rest of the evening, the group thread gone still while the other one, the one with Nadia, keeps lighting up.
+The chat moves on within minutes. Chloe's tab stays open on her desk for the rest of the evening, the group thread gone still and the one with Nadia gone still right behind it.

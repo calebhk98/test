@@ -190,7 +190,7 @@ Nadia looks at it a long moment. "She's right. It's both."
 
 By the end of the meal the table's five opinions have settled on hers.
 
-Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights and neither of them has ever said a word to him about it.
+Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always, and once the set is done neither of them starts another one.
 
 ________________
 
