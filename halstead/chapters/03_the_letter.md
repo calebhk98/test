@@ -6,7 +6,7 @@ The envelope has her name on it.
 
 Miss Chloe Kessler.
 
-Every piece of mail that has ever come for Chloe came inside something addressed to her parents, like the Christmas card from her grandmother with a card for Chloe folded in it, but this one says her, with a Miss in front and the address underneath it, all of it typed.
+Every piece of mail that has ever come for Chloe came inside something addressed to her parents, like the Christmas card from her grandmother with a card for Chloe folded in it, but this one has her own name on it, with a Miss in front and the address underneath, all of it typed.
 
 Standing at the mailbox with the rest of the mail held against her chest, she opens it there, badly, so the flap tears down into the paper, and it is one page, reading like a letter written for an adult, about a school called Halstead with a summer session at it, four weeks long, starting the second week of July.
 
@@ -68,7 +68,7 @@ ________________
 
 Her mom calls the district office on Monday, where a receptionist takes the name down and says she'll look into it. Tuesday and Wednesday go quiet, but the callback comes Thursday afternoon. By then Chloe is on the stairs, on the step where the carpet stops and the wood goes cold under her.
 
-Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the other. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it, because I know it's not your job to go looking."
+Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the one on the other end. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it, because I know it's not your job to go looking."
 
 Then the phone goes down on the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
@@ -79,6 +79,8 @@ Her mom runs the tap at the sink. "She says there's no school by that name worki
 "She said people do this. There are people who send things to houses with a child's name on the outside, because a child opens it, and that's how you find out which houses write back. She told me to look at the postmark."
 
 Her dad's jaw goes tight.
+
+The envelope comes back out of the recycling. The postmark is a city four states off, nowhere either of them has ever been, and the date on it is eleven days before it arrived. Her mom writes both down on the back of a receipt and puts the receipt under the magnet.
 
 Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one child on the street anybody would put on a list of anything, but the Petersons haven't gotten a letter.
 
@@ -100,7 +102,7 @@ The voice goes on for most of a minute.
 
 "Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name. I want the name of that person. Not the department, not the program, the actual person who sat at a desk and put my daughter on a list I never agreed to."
 
-Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth stair.
+Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom turns her head just far enough to find her and points at the stairs, so Chloe goes back up past the fourth one, which announces her every time, and sits on the fifth.
 
 The wait after that is shorter than all the others.
 
@@ -112,7 +114,7 @@ Then the call goes on a long time after that and her mom's voice changes into th
 
 Every single question gets answered straight away, quick and complete, as though the questions had all been expected.
 
-When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee and asks her well.
+When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee. "Well?"
 
 "They said they have people who identify children, programs, scouts, and she used the word networks. She said it like I'd know what it meant. I asked her to say it again and she said it again the same way."
 
@@ -150,17 +152,17 @@ Then he finds the page about what a Tuesday looks like, hour by hour, doing all 
 
 Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, but he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list in order, all the way to the bottom of it, before going back up to start again from the first, slower this time.
 
-Chloe waits a while for him to keep talking, then gets her book and reads at the table next to him, but he stays fixed on the screen the whole time she is gone.
+Chloe waits a while for him to keep talking, then goes up for her book and comes back and reads at the table next to him, and he stays fixed on the screen the whole time.
 
 Her mom does her own looking on the Sunday, on the laptop, with the door shut, typing the name in and getting the website, then getting it again from a different direction.
 
-Searches from every direction she can think of turn up the school's own website, then stop: no news coverage, no parent forum mention, no listed address, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
+Searches from every direction she can think of turn up the school's own website, then stop: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
 
 For a school that has put over a hundred children through a summer and done it again every year since, that is the whole of what she finds, and she says so at the table that night with the laptop still open.
 
 The laptop is still open on the kitchen table on the Monday morning, on the page with the teachers on it, and Chloe gets the screen awake with the space bar and starts where her dad started.
 
-There is a woman who swam in the Olympics. There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else, the way you would mention a bus route. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has already read it.
+There is a woman who swam in the Olympics. There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else,. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has already read it.
 
 The whole column goes past in order, and then back up to the top, every photograph taken in the same room, against a wall nicer than any wall in her school.
 
@@ -180,9 +182,9 @@ Behind her the bills are clipped to the refrigerator in a stack thick enough to 
 
 "No," her dad says, and takes the laptop away with him.
 
-It takes them nine days, her mom's position being that it is that far away, nobody asked for the invitation, it just showed up, somebody is paying for it, and she wants to know who before anybody gets in a car.
+It takes them nine days. Her mom's position is that it is that far away, that nobody asked for the invitation, that it turned up on its own, that somebody is paying for it, and that she wants to know who before anybody gets in a car.
 
-Her dad's position is that all of that is true but she should go anyway. They have some version of that argument on the fourth day, the sixth day, and the eighth, until on the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
+Her dad's position is that all of that is true but she should go anyway. They have some version of that argument on the fourth day and again on the eighth, until on the eighth, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
 
 "You already know what you're going to say," her dad says.
 
