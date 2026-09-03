@@ -174,7 +174,7 @@ Priya says at dinner that the lock held, which Ruth calls the wrong sentence bef
 
 So the phone stops holding anything.
 
-Kavi does the work over a few evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset. Close the window and there is a clean pane of glass in your pocket with a login sitting on it. Take the phone off somebody and what you are holding is a phone.
+Kavi does the work over a few evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset. Close the window and there is a clean pane of glass in your pocket with a login sitting on it, and nothing underneath the login to take.
 
 "Then the drawer's got the login, and the login is the whole thing all over again, only in a smaller box."
 

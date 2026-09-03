@@ -14,28 +14,33 @@ room and becomes a general statement about how the world works: present
 tense, no proper nouns, an indefinite subject, a copula. A particular becomes
 a maxim, and the scene signs off on it.
 
-That shape is measurable, and the answer is not the one the complaint
-predicts. Ten speeches in the book end on a maxim, 1.42% of the multi-sentence
-speeches. The 23 reference books run from 0.0% to 1.41%, median 0.64%. The
-book is level with the most maxim-heavy book in the corpus and past none of
-it. Whatever the reader is hearing, the density of maxims is not it, and a
-target set here would be a target set on noise.
+That shape is measurable. Ten speeches in the book ended on a maxim, 1.42% of
+the multi-sentence speeches, against a corpus running 0.0% to 1.41%, median
+0.64%. Level with the most maxim-heavy book in the reference set and past none
+of it, which is why this is not wired into grade.py: a target set there would
+be a target set on noise, and it is the same verdict agency.py got before that
+script was deleted.
 
-So this is not wired into grade.py. It failed the test agency.py failed: a
-measure that says the book is ordinary cannot drive a pass, and the author has
-already deleted one script for exactly that. It is kept because the list it
-prints is worth reading by eye. Ten lines is a small enough number to judge
-one at a time, and the interesting fact about them is in the second column of
-the report: they are spread one to a chapter across ten different speakers.
-Nobody owns the habit. If those ten lines are the problem, the fix is to hand
-each one to the character who would actually say it, or to let the scene end
-without a verdict, and neither of those is something a number decides.
+The list is what earned its keep. Ten lines is small enough to judge one at a
+time, and the author did, keeping three and cutting seven:
 
-What the detector cannot see is the symmetry itself — "you can hand somebody
-a month, you cannot hand somebody a street" — because in this book it is rare.
-A clause-alignment scan over the whole manuscript found three instances, which
-is inside the corpus range too. The reader's ear is picking up something these
-two scans do not describe.
+    kept    14  "You cannot track it, and shooting one down in the air is
+                 beyond everybody on this field."
+    kept    15  "Whoever calls the count is the one whose bad afternoon
+                 everybody else has to have."
+    kept    30  "Who paid for the steel is somebody else's question."
+
+The seven cut were rewritten to end on a particular instead of a general
+claim: Priya's cousin still thinks a pony is a baby horse, the teacher will
+show Chloe the room on the way out, the bank man has nothing on his desk that
+changes it. Chapter 2's is still standing because chapters 1 and 2 are locked.
+The book now sits at 0.55%, under the corpus median.
+
+What the detector cannot see is the symmetry itself - "you can hand somebody a
+month, you cannot hand somebody a street" - because in this book it is rare. A
+clause-alignment scan over the whole manuscript found three instances, inside
+the corpus range too. If the complaint outlives these cuts, it is that scan
+that needs building, not this one.
 
     python3 quotable.py            report
     python3 quotable.py --corpus   the per-book corpus table

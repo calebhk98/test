@@ -94,7 +94,7 @@ Kavi has the first version running by the end of the month on the school's own m
 
 "You wrote it yourself, though, and there are whole libraries of this that people spent careers getting right."
 
-Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had. A library is a thing everybody else in the world has a copy of too."
+Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had."
 
 Chloe breaks it inside a week, but the encryption holds the whole way: what she gets is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 

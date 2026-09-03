@@ -276,7 +276,7 @@ ________________
 
 The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds incoming payments before it releases them, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
-"Five days is the policy on a new business account. It's the same for everybody who walks in here and it isn't mine to move."
+"Five days is the policy on a new business account. I don't have anything on this desk that changes it."
 
 The statements are out on his desk, squared against the edge of it. "It's the policy on a new account with no history. This one has three months on it, steady deposits and zero returns. Two days on nine named payers. I'll write them down for you."
 

@@ -118,7 +118,7 @@ Fen is on second floor now with a girl from Maine, and while she and Chloe say h
 
 "So what happens to it, if it's not going to be a class anymore?"
 
-The teacher is stacking chairs along the back wall. "It carries on being yours, which is the entire answer. It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September. There are shelves of it upstairs and nobody counts what comes off them."
+The teacher is stacking chairs along the back wall. "It carries on being yours, which is the entire answer. It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September. There are shelves of it upstairs and I'll show you the room on the way out."
 
 Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. A novel about a lighthouse takes her a week, and she understands most of it, but inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
 

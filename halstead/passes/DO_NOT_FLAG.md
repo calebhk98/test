@@ -81,3 +81,39 @@ Do not cut them again. A declared state is allowed about five times in
 thirty-six chapters, and these five are the five. The house rule stays written
 as a flat ban because a permission at that rate is not one an editing pass can
 hold, but this is the author spending the budget, deliberately, on these lines.
+
+## Unreliable speakers
+
+**Ruth has Owen crying in the stairwell on the Thursday, Kavi has him crying by
+the kitchens on the same Thursday, and both claim to have seen it themselves.**
+An agent found this during the passivity pass, and it is correct that the two
+accounts cannot both be true. It was reported as a continuity break, and it was
+"fixed" by moving Kavi to the stairwell before the author stopped it. The fix
+is reverted and the disagreement is the point.
+
+Owen left because he could not keep up with the work. He was overwhelmed, he
+called his mother, and she came and got him. Nobody in the school knows that.
+The work is so easy to the children around him that it is obvious to them he
+could do it, so the reason for his leaving has to be invented, and the rumour
+mill invents several. Ruth's version and Kavi's version are two of them, and
+Kavi's carries the additional false claim that Owen was "doing all of it fine,
+the water thing and the bridge and all of it."
+
+The evidence that he was not fine is on the page, in the narration, where it
+cannot lie: his sheet comes back two sentences long with a line through one of
+them, his table is still short of the span when the bridge session ends, and he
+says out loud that he has lost the thread of it. The narrator never lies. The
+speakers do, and are wrong, and gaslight, and repeat what they heard from
+somebody who was also wrong.
+
+The author, on the design: *"This is to show readers that the text is
+unreliable speakers. The narrator never lies, but it puts red herrings
+everywhere, and speakers can and will lie (or be wrong, gaslight, manipulate,
+etc)."*
+
+So: two speakers contradicting each other is not a defect in this book, and a
+speaker contradicted by the narration is not a defect either. Before reporting
+any disagreement between characters as a continuity break, check whether the
+narration settles it. If the narration is silent or on the other side, the
+disagreement is doing its job. Owen is the worked example and the list is the
+thing he is evidence against.

@@ -50,7 +50,7 @@ Her mom takes it back and looks at the back of it, finding only the ink from the
 
 "There's always a reason, we just haven't heard it yet," her mom says.
 
-Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world. People give away scholarships, and people put their name on the side of a hospital. It happens every day of the week to somebody."
+Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world. People give away scholarships, and people put their name on the side of a hospital, and this is somebody doing the first one."
 
 "To us, though, it actually happens to us?"
 

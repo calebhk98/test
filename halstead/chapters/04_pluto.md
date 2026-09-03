@@ -58,7 +58,7 @@ Pushing the drawer shut with her knee and then leaning on it, Priya says, "Do yo
 
 She goes on anyway.
 
-"Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
+"Okay, so the first thing is a pony isn't a baby horse. My cousin still thinks it is."
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
@@ -74,13 +74,7 @@ The edge of her hand goes across the top of her own shoulder.
 
 Priya tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
 
-Chloe keeps her hands still in her lap through the barn and the show and the girl's mother, then reaches over and unzips her own bag. By the time Priya gets to the end of it, Chloe is folding a shirt into the drawer with her back half turned.
-
-"You're not even listening," Priya says.
-
-"I heard the whole thing, the fourteen two and the paper and what her mother said afterward."
-
-Priya looks at her a second, then keeps going, quieter now, more to the room than to Chloe.
+Chloe keeps her hands still in her lap and lets it run, end to end.
 
 Then Priya says goodnight, and inside a minute she is asleep.
 

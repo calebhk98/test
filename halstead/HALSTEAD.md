@@ -590,7 +590,7 @@ Her mom takes it back and looks at the back of it, finding only the ink from the
 
 "There's always a reason, we just haven't heard it yet," her mom says.
 
-Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world. People give away scholarships, and people put their name on the side of a hospital. It happens every day of the week to somebody."
+Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world. People give away scholarships, and people put their name on the side of a hospital, and this is somebody doing the first one."
 
 "To us, though, it actually happens to us?"
 
@@ -855,7 +855,7 @@ Pushing the drawer shut with her knee and then leaning on it, Priya says, "Do yo
 
 She goes on anyway.
 
-"Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
+"Okay, so the first thing is a pony isn't a baby horse. My cousin still thinks it is."
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
@@ -871,13 +871,7 @@ The edge of her hand goes across the top of her own shoulder.
 
 Priya tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
 
-Chloe keeps her hands still in her lap through the barn and the show and the girl's mother, then reaches over and unzips her own bag. By the time Priya gets to the end of it, Chloe is folding a shirt into the drawer with her back half turned.
-
-"You're not even listening," Priya says.
-
-"I heard the whole thing, the fourteen two and the paper and what her mother said afterward."
-
-Priya looks at her a second, then keeps going, quieter now, more to the room than to Chloe.
+Chloe keeps her hands still in her lap and lets it run, end to end.
 
 Then Priya says goodnight, and inside a minute she is asleep.
 
@@ -2343,7 +2337,7 @@ On the second floor by the stairs there is a corkboard everybody walks past, car
 
 Later she asks Kavi about it, on the stairs, the stairwell empty except for the two of them.
 
-Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know. He was crying in the stairwell on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
+Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know. He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
 
 "Crying about what, though, did somebody say something to him or was it just the leaving?"
 
@@ -2518,7 +2512,7 @@ Fen is on second floor now with a girl from Maine, and while she and Chloe say h
 
 "So what happens to it, if it's not going to be a class anymore?"
 
-The teacher is stacking chairs along the back wall. "It carries on being yours, which is the entire answer. It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September. There are shelves of it upstairs and nobody counts what comes off them."
+The teacher is stacking chairs along the back wall. "It carries on being yours, which is the entire answer. It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September. There are shelves of it upstairs and I'll show you the room on the way out."
 
 Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. A novel about a lighthouse takes her a week, and she understands most of it, but inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
 
@@ -3718,7 +3712,7 @@ Kavi has the first version running by the end of the month on the school's own m
 
 "You wrote it yourself, though, and there are whole libraries of this that people spent careers getting right."
 
-Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had. A library is a thing everybody else in the world has a copy of too."
+Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had."
 
 Chloe breaks it inside a week, but the encryption holds the whole way: what she gets is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 
@@ -4280,7 +4274,7 @@ Priya says at dinner that the lock held, which Ruth calls the wrong sentence bef
 
 So the phone stops holding anything.
 
-Kavi does the work over a few evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset. Close the window and there is a clean pane of glass in your pocket with a login sitting on it. Take the phone off somebody and what you are holding is a phone.
+Kavi does the work over a few evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset. Close the window and there is a clean pane of glass in your pocket with a login sitting on it, and nothing underneath the login to take.
 
 "Then the drawer's got the login, and the login is the whole thing all over again, only in a smaller box."
 
@@ -4905,7 +4899,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday. Nothing on it is built to finish." Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday." Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -5672,7 +5666,7 @@ ________________
 
 The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds incoming payments before it releases them, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
-"Five days is the policy on a new business account. It's the same for everybody who walks in here and it isn't mine to move."
+"Five days is the policy on a new business account. I don't have anything on this desk that changes it."
 
 The statements are out on his desk, squared against the edge of it. "It's the policy on a new account with no history. This one has three months on it, steady deposits and zero returns. Two days on nine named payers. I'll write them down for you."
 
