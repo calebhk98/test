@@ -122,9 +122,9 @@ There are nine kids and a cart with shelves, a plastic bin of dice on the top of
 
 Mrs. Prahl holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, but knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it."
 
-Chloe has it before Mrs. Prahl has finished reading it out, so she waits, because you wait. A boy called Dev gets there about ninety seconds later and does it up on the board with arrows, and Mrs. Prahl makes a real thing out of it.
+Chloe has it before Mrs. Prahl has finished reading it out, so she waits. A boy called Dev gets there about ninety seconds later and does it up on the board with arrows, and Mrs. Prahl makes a real thing out of it.
 
-There are twelve on the sheet, of which Chloe does most in the first stretch before she makes herself slow down, because the twelfth is the last one, and there won't be a thirteenth.
+There are twelve on the sheet, of which Chloe does most in the first stretch before she makes herself slow down.
 
 Halfway down the last page she puts her hand up anyway. "Can I have a thirteenth one if I finish? I won't tell anybody how fast." Mrs. Prahl says she'll see what's in the cupboard, and nothing new turns up before the bell, but Chloe gets through the last three considerably faster than the first nine anyway.
 

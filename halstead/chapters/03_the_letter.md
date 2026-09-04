@@ -20,7 +20,7 @@ After reading it again and again in the driveway, with the rest of the mail goin
 
 "Can you go where, honey?"
 
-Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom, because she has been thinking about how to do this since the middle of the afternoon.
+Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom.
 
 Her mom reads it, then reads it again, her eyes going back to one spot on the page, staying there longer, before she reads it a third time and hands it across the table with her eyes still on the page.
 

@@ -20,7 +20,7 @@ In August her mom is standing at the counter sorting through the mail, while Chl
 
 "Can you call Sam?" Chloe is already talking before she has finished crossing the kitchen. "I want to tell him something before I forget it."
 
-"Who's Sam, honey, because that name is new to me?"
+"Who's Sam, honey? Give me the whole thing, start to finish."
 
 "From camp. He was in my class the whole month and built the bridge with me. And he swims two lengths straight through."
 
@@ -76,7 +76,7 @@ ________________
 
 "Can I go there for the year?" Chloe says, on a Sunday, in the car coming back from her grandmother's.
 
-"Go where, honey, because you have lost me completely."
+"Go where, honey? Say the name of the place out loud."
 
 "Halstead, not the summer one but the year one, the whole thing."
 
@@ -96,7 +96,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did."
 
-"Did it now, because that is something to be pleased with?"
+"Did it now? Tell me the part about the corner again, slowly."
 
 "And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
@@ -152,7 +152,7 @@ On the Tuesday she opens it where she stopped, reads the top of the page, reads 
 
 Her mom drives her to the library on Thursday and waits in the car with the engine running, so Chloe carries the finished ones up to the desk by herself, walking fast past the shelves, but comes back out to the car with the others, the ones she had left off, still in her bag.
 
-"What happened to getting more books this week, because that's not like you at all?"
+"What happened to getting more books this week? Those are the ones you left with."
 
 "Not this week. I've got a lot going on."
 
@@ -206,7 +206,7 @@ In the first week of October, Chloe puts her head down on her desk in the middle
 
 The crying is loud enough that chairs scrape all along the row as everybody turns to look, and somebody near the back says, too loud, "Is she OK?" That brings Ms. Vance down the row to crouch all the way down beside the desk, in front of everybody, and put a hand between Chloe's shoulder blades and leave it there.
 
-"Hey, hey, hey, what's going on down here, because you're all right, so just talk to me."
+"Hey, hey, hey, what's going on down here? Look at me, and tell me one thing that's true right now."
 
 The answer, whatever it is, refuses to come out of her.
 
