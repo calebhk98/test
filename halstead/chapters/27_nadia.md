@@ -4,7 +4,7 @@
 
 Somebody runs a scam through Nadia's company in the spring.
 
-The company is eleven months old and four people besides her, known inside three counties: what the thing does is take the resume out. A user spends an evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
+The company is eleven months old and four people besides her, known inside three counties: what the thing does is take the resume out. A user spends an evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are accepting submissions from it that month.
 
 It runs out of three rooms over a laundromat, a hundred yards up the street from her parents' shop, and the heat off the dryers comes through the floor from mid-morning, so the windows stay open into November. The only bathroom belongs to the laundromat, and its key hangs on a paint stirrer behind the change machine.
 
@@ -18,7 +18,7 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are so few of them, and most of them were standing there when it happened.
 
-She's still in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts a handful of names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
+She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts a handful of names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
 
 Opened, they all carry the same job description, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 
@@ -28,7 +28,7 @@ The rest of it is in the message logs. Traffic between an employer and a user st
 
 They ask for a Social Security number and a bank routing number in the third message, in the same few sentences, comma splice and all, reproduced without a character moved. People answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
 
-Before she sits down she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, late at night.
+Before she sits down she deletes the batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, late at night.
 
 The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologizes over and over inside those twenty minutes, twice for taking up the evening and twice for having answered the message at all.
 
@@ -42,7 +42,7 @@ sam: are you ok
 
 nadia: im FINE. im insulted
 
-nadia: a whole batch of fake employers in one night, all of them asking people for bank details
+nadia: a batch of fake employers in one night, all of them asking people for bank details
 
 nadia: same job ad over and over with the company name swapped. one of them is hiring in a city the ad says is sixty miles away
 
@@ -72,9 +72,9 @@ ________________
 
 The week that follows happens mostly at first light, before the laundromat opens and the phones start, at the kitchen table with a legal pad in front of her and the company names written down the side of it in the small, fast hand she keeps the shop's ledger in. Every last one of them typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
 
-The first mornings go on the state's business filings, the site she used to register her own company, and most of them turn out to have been filed inside a single week last autumn through one registered agent. That age tells her the paperwork has been used before.
+She spends the first mornings on the state's business filings, the site she used to register her own company, and most of them turn out to have been filed inside a single week last autumn through one registered agent. That age tells her the paperwork has been used before.
 
-A third morning goes on cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and the address carries a stack of his filings. On the fourth morning she calls the tire shop's front counter.
+She spends a third morning cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and the address carries a stack of his filings. On the fourth morning she calls the tire shop's front counter.
 
 "Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day? I've got a package that needs a signature off somebody, and I'd rather not make the drive twice," she asks, in the unbothered voice of somebody scheduling a delivery.
 
@@ -162,9 +162,9 @@ The man behind the desk looks at the man standing over her and keeps looking at 
 
 "That's fine. Say it as many times as you like, it doesn't move me an inch."
 
-The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and another of them laughs at it. The steel stairs are behind her before either sound has finished. Somebody comes out onto the landing and stands there watching while she crosses the lot, and is still up there when she reaches the car.
+The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and another of them laughs at it. The steel stairs are behind her before either sound has finished. One of the men comes out onto the landing and stands there watching while she crosses the lot, and is up there when she reaches the car.
 
-The key goes in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under, so she counts it again, gets it again, and then runs the whole tape through a third time from the top of the day. Her mother asks where she was. "Out at a tire place," Nadia says, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
+She gets the key in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under, so she counts it again, gets it again, and then runs the tape through a third time from the top of the day. Her mother asks where she was. "Out at a tire place," Nadia says, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
 
 sam: what did they say
 
@@ -230,7 +230,7 @@ ________________
 
 The hiring changes Nadia's mind.
 
-Every posting she writes herself, in the single-paragraph shape she uses for a labor contract: what the job needs, what it pays, and no line about anything else. But the other outfits fishing the short list of local engineers post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic still guessing at what's under the hood. Then she puts up a fifth role that afternoon.
+Every posting she writes herself, in the single-paragraph shape she uses for a labor contract: what the job needs, what it pays, and no line about anything else. But the other outfits fishing the short list of local engineers post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic guessing at what's under the hood. Then she puts up a fifth role that afternoon.
 
 Every test on the site was written by the thing she built to write them, across last July, before there was anybody at all to test. It reads the requirement text off live listings, pulls down whatever public documentation and question bank a skill happens to have, and produces a set of short problems out of that. By May it covers thousands of skills, but she has read perhaps thirty of them.
 
@@ -248,7 +248,7 @@ She had meant to sit down with twelve people that year and she has sat down with
 
 Something they built is what she asks them to explain, and most of them do that part fine, because years of resumes have taught people how to talk about their own work in front of a stranger. Then she asks two questions about it, and the first is usually fine as well, but the second asks what happens at the edge of the thing they built, out past the part they actually tested, and that is where most of them run out of road.
 
-A candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way through it.
+A candidate walks her carefully back through a payment system he'd built at his last job, confident throughout.
 
 "We put the whole thing behind a queue in the end, so nothing could reach the ledger twice. I wrote the retry logic and I wrote the piece that reconciles it against the bank file overnight. It ran eighteen months and it never lost a cent out of anybody's account."
 
@@ -256,9 +256,9 @@ A candidate walks her carefully back through a payment system he'd built at his 
 
 "That would be an edge case," he says.
 
-A line goes on his sheet, and she moves along to the next person.
+She marks a line on his sheet and moves along to the next person.
 
-Another spends the whole interview describing a scheduling tool with real pride in his voice.
+Another spends the interview describing a scheduling tool with real pride in his voice.
 
 "It reads the constraints off the shift board and it hands back a whole week in about a second. The floor manager used to spend every Friday afternoon of his life on that, and now he doesn't. He printed the first week it made and put it up on the wall behind his desk, and it's still up there now, a little faded, next to the schedule it replaced."
 
