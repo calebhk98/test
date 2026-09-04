@@ -2,13 +2,13 @@
 
 *October 2023 – November 2025*
 
-Ruth spends her first year at MIT believing she has been put in a remedial track.
+Ruth spends her first year at MIT believing the school has put her in a remedial track.
 
-It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Her assumption is that a real sequence exists somewhere she hasn't been given, a bureaucratic problem, and she spends most of October trying to find the right office.
+It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Her assumption is that a real sequence exists somewhere the school hasn't placed her in, a bureaucratic problem, and she spends most of October trying to find the right office.
 
 The registrar's office is several flights up in a building with no elevator sign that works, and the woman behind the counter hears the whole explanation out before she answers. Ruth lays out the timeline: the diagnostic she took in August, the placement it produced, the syllabus she's printed and highlighted in color to show exactly where the first week repeats material Halstead gave her as a child. The woman is patient but entirely unmoved. The placement stands, she says, and a petition is the only route to a review, and she slides a form across the counter. It asks for a faculty signature Ruth hasn't gotten yet.
 
-Advising sends her back to the department, and the department sends her to advising. By the third week of October she's learned the actual geography of the building better than most sophomores: which stairwell is faster, which office keeps coffee out for visitors, which locks its door early. A folder now goes everywhere with her, problem sets clipped in date order, because a written claim is harder to wave off than something merely said, and easier, in her experience, to make somebody actually answer.
+Advising sends her back to the department, and the department sends her to advising. By the third week of October she's learned the actual geography of the building better than most sophomores: which stairwell is faster, which office keeps coffee out for visitors, which locks its door early. Ruth carries a folder everywhere now, problem sets clipped in date order, because a written claim is harder to wave off than something merely said, and easier, in her experience, to make somebody actually answer.
 
 A woman in the department office finally reads the whole folder, not just the top page, and squares it back together before she answers.
 
@@ -40,13 +40,13 @@ Somebody changes the subject back to the actual problem set, and the room goes b
 
 At home that night she writes down that MIT tracks students by ability and keeps that quiet.
 
-She puts it on the inside cover of the notebook she uses for problem sets, in the small upright hand she uses for everything, a few lines and a date. Then the notebook closes and she starts the reading due Monday.
+She puts it on the inside cover of the notebook she uses for problem sets, in the small upright hand she uses for everything, a few lines and a date. Then she closes the notebook and starts the reading due Monday.
 
 ________________
 
 For most of a year, she holds that.
 
-The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early, hand-delivered to the box outside the office. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively, and thirty days from the visit has already passed, so you should have called this morning." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Twice she gets as far as "so the placement thing" and then asks about the dog. Her mother asks once, in March, whether the classes have gotten any harder, and Ruth says they're fine and asks what her father wants for his birthday. Neither of them mentions, after that, that she still hasn't finished a sentence about the placement in months of Sunday calls.
+The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets get turned in early, hand-delivered to the box outside the office. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively, and thirty days from the visit has already passed, so you should have called this morning." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Twice she gets as far as "so the placement thing" and then asks about the dog. Her mother asks once, in March, whether the classes have gotten any harder, and Ruth says they're fine and asks what her father wants for his birthday. Neither of them mentions, after that, that she still hasn't finished a sentence about the placement in months of Sunday calls.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
 
@@ -68,7 +68,7 @@ From the top, then, and step one and step two go by without any trouble in them 
 
 As the assumption she'd folded into a single line comes apart into the separate claims underneath, she slows down and states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero, and once it does the rest of it is just bookkeeping."
 
-At the first he nods, but at the second the nod does not arrive, and he sits back off the page with the pen still up in his hand.
+At the first he nods, but at the second he doesn't, and he sits back off the page with the pen still up in his hand.
 
 "Goes to zero how."
 

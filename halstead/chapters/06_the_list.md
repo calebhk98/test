@@ -38,7 +38,7 @@ Several of them answer at once: "They said they have a list."
 
 "Here it buys you a paper plate and a seat at this table," the first man says, and gets up on his own to find the coffee pot.
 
-While a father looks at his plate, a man at the end starts talking about the drive back: whether the north side is faster, how it depends on what time you leave. Others take that up; by the time somebody's kid has come over needing something and been sorted out, half the table has gone.
+While a father looks at his plate, a man at the end starts talking about the drive back: whether the north side is faster, how it depends on what time you leave. Others take that up; by the time somebody's kid has come over needing something and a parent has sorted it out, half the table has gone.
 
 Her dad puts more syrup on her waffle on his own, more than she'd have asked for, but Chloe eats it anyway while the syrup pools at the edge of the plate.
 
@@ -52,9 +52,9 @@ Chloe is already talking before she's finished sitting down, one knee still up o
 
 "Then the pool. I can do a whole length now, badly, and Sam can do two straight through and brings it up at dinner most days," she says.
 
-Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them and running all the way through to why you turn the second fraction over, so that the working reaches the edge of the napkin and comes back, while her dad leans in over the napkin.
+Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them, running all the way through to why you turn the second fraction over until she reaches the edge of the napkin and keeps writing on the back, while her dad leans in over the napkin.
 
-A few tables over, another father is sitting through a version of it, a pen going on a different napkin while his own daughter talks him through her month.
+A few tables over, another father is sitting through a version of it, his own daughter running a pen across a different napkin while she talks him through her month.
 
 Then she starts on Spanish, rattling it off before she remembers he can't follow a word of it, asking herself questions and answering them all before he can stop her.
 
@@ -68,7 +68,7 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves. Ruth got the plurals before I did. Kavi got the pattern in the endings. That part is still half out of my reach. He has explained it and explained it. He'd explain it to you right now, only he isn't sitting here and I am. I wrote his explanation down word for word so I wouldn't lose it, and I still read it over before every test."
 
-Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed: pressure first, the dressing second. Then the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
+Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed: pressure first, the dressing second. Then the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they went to look at, one of which cost more than a house, which baffles her, because it is a painting.
 
 "Then there's the computers, and that's actually two entirely different things, the first being that you type the words in yourself instead of dragging colored blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into. It's enormous and they keep it freezing cold on purpose. The machines throw off so much heat the heat would cook them. And a woman who works in there took us through the whole arrangement, down to the water pipes under the floor. She let me hold the door open with my foot so the cold air came out into the hallway, and it was like standing in front of an open freezer," she says, counting them off on her fingers.
 
