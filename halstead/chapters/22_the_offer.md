@@ -2,25 +2,25 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, a dozen students a day for a run of days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names on it, a runner coming down from admin to call the next name in when the clock on his desk says it is time. Most of them run the full time, by the staff's own count, even the ones a minute would have covered, and by the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets through the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, a dozen students a day for a run of days starting the first Monday of April, and a roster goes up outside the staff office each morning with that day's names on it, a runner coming down from admin to call the next name in when the clock on his desk says it is time. Most of them run the full time, by the staff's own count, even the ones a minute would have covered, and by the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets through the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
 
-The rest of April carries on exactly as scheduled around it: the twelves still have History first thing every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
+The rest of April carries on exactly as scheduled around it: the twelves still have History first thing every morning, the range runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
 
-What changes is dinner, because by the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except the whole table is comparing decisions, a stranger thing to sit through with a fork in hand. A boy from the materials wing tells the whole table at dinner about turning it down outright, about his mother and the decade of silence if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. People laugh, and he goes back to his tray and lets the subject close there for the night, and the table lets it go without asking him the number. A younger girl comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed, and the boys next to her let her have it, volume included, so the whole end of the table stays on it, openly, for the rest of the meal.
+What changes is dinner, because by the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except the whole table is comparing decisions, a stranger thing to sit through with a fork in hand. A boy from the materials wing tells the table at dinner about turning it down outright, about his mother and the decade of silence if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. People laugh, and he goes back to his tray and lets the subject close there for the night, and the table lets it go without asking him the number. A younger girl returns from her own slot grinning, drops into the chair across from a half-eaten plate, and says the thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed, and the boys next to her let her have it, volume included, so the end of the table stays on it, openly, for the rest of the meal.
 
-Iyad has the next day's running order in his head before the sheet is taped up, and gives it to the table by name, down the whole list, while the plates are still going round. Then he goes round the ones who have already been in and asks how it went, and whether they have told anybody at home yet, and in the morning the roster goes up outside the staff office and every name is where he put it.
+Iyad has the next day's running order in his head before the sheet is taped up, and gives it to the table by name, down the list, while the plates are going round. Then he goes round the ones who have already been in and asks how it went, and whether they have told anybody at home yet, and in the morning the roster goes up outside the staff office and each name is where he put it.
 
-Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up. The wall behind the chairs carries a rail at chair height, and she has been walking past it since she was small.
+Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she arrives and finds most of the seats taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up. The wall behind the chairs carries a rail at chair height, and she has been walking past it since she was small.
 
 A seat empties while she watches, when a boy she half-recognizes goes in on the dot, a laptop bag still over his shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
 "That was fast," she says.
 
-"I already had the desk, since I was fifteen, and he just made it official," he says, resettling the strap on his shoulder, already moving, then past her by the last word, a hand up in a fast, half-formed wave.
+"I already had the desk, since I was fifteen, and he just made it official," he says, resettling the strap on his shoulder, then past her by the last word, a hand up in a fast, half-formed wave.
 
-The runner calls her name a minute later, reading it off the list in the identical cadence he's used on every name ahead of it, and holds the door open with his foot while she goes past him into the office.
+The runner calls her name a minute later, reading it off the list in the identical cadence he's used on each name ahead of it, and holds the door open with his foot while she goes past him into the office.
 
-His office holds a desk, two chairs, and a small clock turned to face only him; a folder is already open on the desk when she sits down, her name typed across the tab in the institutional typeface the corridor list is printed in.
+His office holds a desk, two chairs, and a small clock turned to face only him; a folder is open on the desk when she sits down, her name typed across the tab in the institutional typeface the corridor list is printed in.
 
 "Eleven years," he says, before she's fully settled in the chair. "Anything for the file."
 
@@ -52,7 +52,7 @@ Ninety-one names go up in all, and thirteen of them turn into yeses, each settle
 
 Most of them had already been somewhere in the building, on a floor with a badge on the door, longer than the rest of the year had any reason to know, and all of their names go up inside the first few days, except for the last, which breaks it: he's a boy from the language block, no badge to his name and no floor he's ever had a reason to be on, saying yes anyway and spending the rest of the week asking around, politely and without much luck, to find out what the door is even for.
 
-The eighty saying no go back to their own last weeks of school, final transcripts still to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd already half finished before the list ever went up.
+The eighty saying no go back to their own last weeks of school, final transcripts yet to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd half finished before the list ever went up.
 
 ________________
 
@@ -100,7 +100,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "Three of them will be doing something else by Christmas."
 
-"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked. Checking the rest of it before there's anything to check would just be a way of not starting."
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is open, like anybody else. That's the part I've checked. It's the only part I've checked. Checking the rest of it before there's anything to check would just be a way of not starting."
 
 "What do your parents say?"
 
@@ -108,11 +108,11 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 That too he writes down, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands, and Nadia is already up.
 
-That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him, and a second count gets there too. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, over and over, and gets that figure every time. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in more forms before the first bell.
+That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him, and a second count lands there too. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, over and over, and reaches that figure each time. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in more forms before the first bell.
 
 ________________
 
-Kavi is one of them; Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
+Kavi is one of them; Chloe hears about it before any posted list confirms it: his name comes up in the common room, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
 
 In the evening she finds him in the network room, back against the radiator by the door, a length of stripped cable coiled around his hand while he turns the copper end over between his fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
 
@@ -122,9 +122,9 @@ In the evening she finds him in the network room, back against the radiator by t
 
 "But it's school," she says. "You do school and then you leave and do the next thing. Same building, same people, same corridor to the same room. That isn't the next thing."
 
-"It stopped being school for me a while ago, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against. Nobody in that room knows the answer either. That is the difference and it is the whole difference. I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong. It was still unchecked. That's a research problem, not a classroom one. A classroom's whole job is already knowing." He gives her the look he saves for a mark scheme. "It's a lab that also has children in it. I have told him twice this month that the model is only as good as the worst dataset it was trained on, and he tells me that is precisely why the job exists."
+"It stopped being school for me a while ago, I think, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against. Nobody in that room knows the answer either. That is the difference. I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong. It was still unchecked. That's a research problem, not a classroom one. A classroom's whole job is already knowing." He gives her the look he saves for a mark scheme. "It's a lab that also has children in it. I have told him twice this month that the model is only as good as the worst dataset it was trained on, and he tells me that is precisely why the job exists."
 
-Chloe picks a second length of stripped cable off the bench and starts coiling it the way he's coiling his.
+Chloe picks another length of stripped cable off the bench and starts coiling it the way he's coiling his.
 
 "I don't have a lab. I turned mine down this afternoon."
 
@@ -144,21 +144,21 @@ Ruth catches Sam in the stairwell with a stack of admissions mail under one arm,
 
 "She does that for you," Ruth says. "She has never once done it for me, and she has never done it for Chloe, and I want you to go back through the last two years and find me one time she put a girl's name on anything."
 
-"That's a hell of a thing to say about somebody."
+"That's a hell of a thing to say about her."
 
-"Then go and count," Ruth says, and goes on up the stairs.
+"Then go and count," Ruth says, and climbs the stairs.
 
-Sam stands on the landing with the mail still under one arm, then shrugs and goes to find out what's for dinner.
+Sam stands on the landing with the mail under one arm, then shrugs and heads off to find out what's for dinner.
 
 ________________
 
-Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice everything else on the list gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, waits, gets an answer, and puts that in with the rest.
+Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers gets the same voice as everything else on the list, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, waits, hears one, and puts that in with the rest.
 
 Chloe is up the kitchen-end stairs before the pudding goes round.
 
 Chloe calls home that night, sitting on the floor of her room with her back against the bed, the phone warm against her ear before her mother even picks up, the way it's been warm against her ear at the end of most days for years.
 
-Her mother picks up on the second ring, still moving through her kitchen loop, a dish towel over her shoulder and the radio on low behind her the way it always is at that hour. "Hey, you, how'd it go today?"
+Her mother picks up on the second ring, moving through her kitchen loop, a dish towel over her shoulder and the radio on low behind her the way it always is at that hour. "Hey, you, how'd it go today?"
 
 "I said no, to something big, and I want to tell you about it properly."
 
@@ -170,7 +170,7 @@ A beat, and the pacing on the other end of the line stops. "No to what? What hap
 
 Chloe gives it to her in the order Amberg gave it to her. "Research, full time, starting the day I'd have gone to a dorm. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would."
 
-The silence on the line runs long enough, unbroken by the usual kitchen noise, for Chloe to check the screen and be sure the call is still live.
+The silence on the line runs long enough, unbroken by the usual kitchen noise, for Chloe to check the screen and be sure the call is live.
 
 "A hundred and thirty five thousand dollars," her mother says, each word landing on its own. "That is more than this house cost us."
 
@@ -186,7 +186,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Research, full time, starting the day I'd have gone to a dorm. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would." She keeps the parts in Amberg's order. "That's all of it. That's everything that was on the desk."
 
-Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up. I'm not going to sit here being careful about it and let your mother be the somebody who says so. I've said harder things to you than this over smaller money, and I'm not about to start being careful now."
+Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up. I'm not going to sit here being careful about it and let your mother be the one who says so. I've said harder things to you than this over smaller money, and I'm not about to start being careful now."
 
 "Dave."
 
@@ -222,7 +222,7 @@ Her mother's voice, when it comes back, has the edge she uses reading the fine p
 
 "Okay, I hear the difference, and I'm not going to pretend it away."
 
-"What about the others," her father says. "Ruth, Sam, the whole rest of the table."
+"What about the others," her father says. "Ruth, Sam, the rest of the table."
 
 "Ruth's still going to MIT, and Sam's still doing the thing with the Army, the officer program he's been talking about for a year. Kavi said yes to the same offer I said no to."
 
@@ -238,4 +238,4 @@ Her mother's voice, when it comes back, has the edge she uses reading the fine p
 
 "Okay," her mother says back, and there's the small click of her hanging up first.
 
-Chloe sits there a while longer with the phone gone dark in her lap, running the call back once from the start, then gets up to find something to eat, with the phone still in her hand and the screen gone dark against her palm.
+Chloe sits there a while longer with the phone gone dark in her lap, running the call back once from the start, then stands to find something to eat, with the phone in her hand and the screen gone dark against her palm.

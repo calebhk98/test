@@ -4,7 +4,7 @@
 
 The exercise is called Winter Anvil. It runs four days and nights, and the name has been up on the board outside the orderly room for weeks, weeks of Sam reading it on his way past.
 
-Staging is a gravel lot behind a row of tents, a folding table under a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody ahead of him gets handed a second flashlight when the first refuses to come on.
+Staging is a gravel lot behind a row of tents, a folding table under a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody ahead of him is handed a second flashlight when the first refuses to come on.
 
 At the head of the line he draws his rifle, a yellow adapter going on the muzzle in front of an armorer who checks the fit of it, then reads the serial number back off the weapon and only then lets go of either. Then the harness goes on over the top of everything else, sensors down both sides of the chest and around the back, a band of them fitted over the helmet, a transmitter clamped to the barrel ahead of the front sight.
 
@@ -28,7 +28,7 @@ The first contact is at a fence line a little after midnight: strands of wire sa
 
 Two men are waiting on the far side of it in the darkness, close enough to the posts that they read, for a moment, as more fence. They hold still, and so does he.
 
-Then he withdraws back into the pines, gets down behind a root ball with the rifle laid across it, and waits twenty minutes for something to happen. The nearer man shifts his weight from knee to knee, worth very little on its own, then repeats the adjustment half a minute later, making it a rhythm. Sam settles the front sight on the shape and stays with it through the third.
+Then he withdraws back into the pines, drops down behind a root ball with the rifle laid across it, and waits twenty minutes for something to happen. The nearer man shifts his weight from knee to knee, worth very little on its own, then repeats the adjustment half a minute later, making it a rhythm. Sam settles the front sight on the shape and stays with it through the third.
 
 Two rounds. The report goes out flat across the fallow ground, returns off the tree line a moment behind itself, and both harnesses out there arrive immediately at a steady tone. The men stand up out of the grass, and one of them says something to the other that Sam is much too far away to hear.
 
@@ -70,7 +70,7 @@ ________________
 
 The third night is simply walking, and the walking is its own kind of long. Long runs of broken ground go by between checkpoints, most of it under a cloud layer thick enough that the red-lens light barely reaches his own boots, and the entire stretch of it passes quiet.
 
-The open ground he begins taking the way the culvert taught him to take it, stopping at the edge of every tree line to listen before he crosses it, going wide around anything that reads as cover for somebody else instead of walking straight through the middle of it. Twice he stops dead for a full minute at a sound that turns out harmless once he has traced it back, a branch settling, an animal moving off through brush somewhere to his left, and he stands there, weight balanced, breathing slowly, until he is certain enough to move again.
+The open ground he begins taking the way the culvert taught him to take it, stopping at the edge of each tree line to listen before he crosses it, going wide around anything that reads as cover for somebody else instead of walking straight through the middle of it. Twice he stops dead for a full minute at a sound that turns out harmless once he has traced it back, a branch settling, an animal moving off through brush somewhere to his left, and he stands there, weight balanced, breathing slowly, until he is certain enough to move again.
 
 Standing, he eats out of a pouch, tearing the top off with his teeth and keeping his boots moving throughout. The taped fingers give him more trouble than the temperature does, and by the final checkpoint of the night his hands are numb enough that reading a bearing off the compass takes twice as long as it should, so he reads it twice regardless before he trusts it.
 
@@ -88,7 +88,7 @@ Sam comes up out of the cut and stands there in the open with his own harness go
 
 "Since nine."
 
-Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time. "What gave me away at the end," he says. The man thinks it over for a second. "Nothing did at all. You walked inside six feet of me twice and I still had another twenty minutes in me if you'd kept going straight." Sam files that with the culvert, and says nothing else about it.
+Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time. "What gave me away at the end," he says. The man thinks it over. "Nothing did at all. You walked inside six feet of me twice and I still had another twenty minutes in me if you'd kept going straight." Sam files that with the culvert, and says nothing else about it.
 
 A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
 
@@ -112,7 +112,7 @@ Sam's turn comes third. Instead of calling him up to the front, the major leaves
 
 "Marsh." He looks up once from the clipboard. "Fence line, first night, two engagements, both of them yours, at twenty meters, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
 
-The next part he reads the way a form gets read.
+The next part he reads the way a form is read.
 
 "Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two meters, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well. I've already got Ives drafting the second page of it, on the soldier's face, with a photograph attached." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
 
@@ -126,7 +126,7 @@ The next part he reads the way a form gets read.
 
 "Yes, sir." Sam takes the correction as delivered and then adds to it. "The worse part is earlier, sir. I had thirty feet of open ground to read that pipe from and I went in anyway. I was watching the clock instead of the pipe."
 
-The major looks at him for a second, then writes on the top sheet, unhurried. The room gets the sound of the pen, the projector fan, no comment whatever. Then he turns the page.
+The major looks at him, then writes on the top sheet, unhurried. The room gets the sound of the pen, the projector fan, no comment whatever. Then he turns the page.
 
 "Night four. The man who took you had been in position since twenty-one hundred, which is seven hours without moving through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop, and no amount of being good at the rest of this changes that arithmetic, because patience was the only thing being tested tonight. I have watched two hundred of you fail that exact test, and every single one of you thought your case was the exception." He puts the pointer down on the overlay and leaves it lying there while he locates his next page.
 

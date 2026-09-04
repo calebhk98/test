@@ -2,7 +2,7 @@
 
 *April 2022 – June 2023*
 
-They take the bar in April, over two days, in the long examination room on the second floor, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, so that the sound of the room for both days is pens and, every few minutes, a chair leg on parquet, and along the front sit the teachers who wrote the paper and will mark it, proctoring both days themselves.
+They take the bar in April, over two days, in the long examination room upstairs, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, so that the sound of the room for both days is pens and, every few minutes, a chair leg on parquet, and along the front sit the teachers who wrote the paper and will mark it, proctoring both days themselves.
 
 Afterward, Sam catches her at the bottom of the stairwell with his collar open and still in the shirt he sat the paper in.
 
@@ -18,11 +18,11 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders. "After that you're padding. The marker reads page after page of you agreeing with yourself for no extra credit at all, and that's a bad trade for both of you. Mine is exactly as long as the question turned out to be."
 
-Sam goes quiet the whole length of the corridor.
+Sam goes quiet the length of the corridor.
 
 "I'd like to withdraw ten of my pages."
 
-When the list goes up on the corkboard in the second floor corridor days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row twice, once for the verdict and once for the margin.
+When the list goes up on the corkboard days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row twice, once for the verdict and once for the margin.
 
 "Fail," she says. "By four points, out of two hundred."
 
@@ -34,15 +34,15 @@ Kavi looks at the board, then at her, then back at the board, his own row a few 
 
 Fifty-two in the year pass, but thirty-nine do not, hers among them. The board hangs in a hall everybody walks past all day, and by dinner they have found each other by sight.
 
-Bex passed, and comes the length of that hall to find her before dinner, saying it from halfway down.
+Bex passed, and covers the length of that hall to find her before dinner, saying it from halfway down.
 
 "It's nothing, it's a tick anywhere on the paper, and the retake's in October, so it costs you a summer and it costs you nothing else. Everybody on that board who missed is sitting it again in October. Nobody is going to remember by Christmas which of you was on which side of the line, and if they do remember, they'll have the margin wrong within a week anyway."
 
 "It's the margin, though. As a share of the whole paper that's about a..."
 
-"A fiftieth. It's a fiftieth, Chloe, it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them, laughing at something before she has finished telling it.
+"A fiftieth. It's a fiftieth, Chloe, it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people coming away from the board. Then she is past her and on to the next of them, laughing at something before she has finished telling it.
 
-"I can do the fraction myself, Bex." Chloe says it at her back, three steps gone already, and it doesn't slow her down at all. She doesn't stay in the hall to hear the number said a third time to somebody else, and goes the rest of the way to her room before dinner.
+"I can do the fraction myself, Bex." Chloe says it at her back, three steps gone, and it doesn't slow her down at all. She doesn't stay in the hall to hear the number said a third time to somebody else, and heads the rest of the way to her room.
 
 At dinner she sits with her back to the corkboard, and when Sam starts in on the fifty she tells him she doesn't want the fiftieth or any part of the board tonight, and eats without looking up. Lights off, she runs the fraction again anyway, not to finish it this time but to find the one sentence that would have stopped Bex halfway down the hall, and she is still short of it when Ruth's breathing goes even across the room.
 
@@ -62,9 +62,9 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "I would like you to sit down while I say the rest. You're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely, and he only had the words you actually gave him to work with." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
-Chloe goes down the rows and back up them, then looks up at him and back down at them.
+Chloe scans down the rows and back up them, then looks up at him and back down at them.
 
-"Give me one from an old paper. Not this one, a finished one, so I can see what filled in looks like when the marker actually got all four." She's already turning to a blank page of her own notebook.
+"Give me one from an old paper. Not this one, a finished one, so I can see what filled in looks like when the marker actually got all four." She's turning to a blank page of her own notebook.
 
 ________________
 
@@ -72,7 +72,7 @@ ________________
 
 Sam is up in half a second and talks without stopping for air, while Chloe goes up the following week and stops twice inside the first thirty seconds.
 
-"You're editing, cutting the road to the good line the second you can hear it coming." The teacher is already looking past her at the room.
+"You're editing, cutting the road to the good line the moment you can hear it coming." The teacher is already looking past her at the room.
 
 "I'm choosing, and there's a difference between skipping a line and deciding the line has to earn its place before it stays. The ordinary line gets you to the good line eventually, but eventually is a long way to make somebody sit through it."
 
@@ -80,7 +80,7 @@ Sam is up in half a second and talks without stopping for air, while Chloe goes 
 
 People are getting up out of their chairs as she goes back to hers, unhurried, her shoulders loose the entire way.
 
-In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark. Kavi marks the way the examiners mark and will decline to be kind about it.
+A week into May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark. Kavi marks the way the examiners mark and will decline to be kind about it.
 
 "Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out. A blank space tells him you knew where to stop. A repeated sentence tells him you didn't."
 
@@ -94,13 +94,13 @@ Between May and September she writes a stack of those, Kavi marking some and Nad
 
 Kavi's marking fills the margin. Nadia marks by ruling a line down the side of a paragraph and writing *said nothing* beside it; there is nothing else anywhere on the page. Chloe writes the paragraph again.
 
-In April she leaves a spare copy of each paper at the corner of the library table where Bex works some evenings, in case anybody there wants to check theirs against it. In May she starts leaving the spare with Kavi. Marek still takes his to Bex some weeks, when she's the one still up when he finishes, and she marks his in red, in the margin, no comment underneath, the way she marks anyone's.
+In April she leaves a spare copy of each paper at the corner of the library table where Bex works some evenings, in case anybody there wants to check theirs against it. In May she starts leaving the spare with Kavi. Marek still takes his to Bex some weeks, when she's the one up when he finishes, and she marks his in red, in the margin, no comment underneath, the way she marks anyone's.
 
-The driving instructors in her fourth year do precision and competition work outside the school; they teach by staging emergencies for her to handle, in turn. By September she can already drive, because her father took her out to a church lot the previous July and meant to teach her himself, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan; by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
+The driving instructors in her fourth year do precision and competition work outside the school; they teach by staging emergencies for her to handle, in turn. By September she can drive, because her father took her out to a church lot the previous July and meant to teach her himself, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan; by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in a flat voice, about his brother-in-law's boat, the state of the tires, and whatever else occurs to him.
 
-"Look where you want the car, not at whatever's already worrying you." Delacroix has his elbow on the door and his cup balanced on his knee, at a speed where the cup is the more impressive achievement.
+"Look where you want the car, not at whatever's worrying you." Delacroix has his elbow on the door and his cup balanced on his knee, at a speed where the cup is the more impressive achievement.
 
 "I am looking where I want the car, and I want it past the pole, not into it."
 
@@ -114,7 +114,7 @@ In October she sits the bar again, the retake for everyone who failed in April, 
 
 A question near the end is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
-This time she passes by twenty-two, and she checks the number against the line above it before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
+This time she passes by twenty-two, and she checks the number against the line above it, then puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April, and shuts the book harder than she means to. It happens again in December, and this time she doesn't open another one after. She goes and finds the April paper in the drawer where she still keeps it, the four blank rows still blank, and fills every one of them in by hand.
 
@@ -122,13 +122,13 @@ In November she sits in the library with something else open in front of her, th
 
 "The one I failed." Chloe turns it round so Ruth can see the four rows. "I'm finishing it."
 
-In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, with the mark schemes clipped behind.
+In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence partway down it. That evening she gives him the stack, marked and unmarked, with the mark schemes clipped behind.
 
-He keeps them a fortnight. What comes back is the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
+He keeps them a fortnight, then returns the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
 
-"That's better than theirs," he says, delighted with it, already going. "Do that."
+"That's better than theirs," he says, delighted with it, and leaves. "Do that."
 
-That evening, before she starts anything else, she works it, and it takes her the whole evening.
+That evening, before she starts anything else, she works it, and it takes her the rest of the evening.
 
 The forge is Thursdays, and has been for years, the work down there staying between her and Pruitt, his entire commentary across the years having come to a handful of sentences.
 
@@ -158,7 +158,7 @@ Her mother sets a glass of iced tea down on the step beside her. "There's a shel
 
 "I said skip it if you want to skip it."
 
-"I heard what you said." She's already up, the glass left sweating on the step, and the screen door bangs behind her on the way to the garage.
+"I heard what you said." She's up, the glass left sweating on the step, and the screen door bangs behind her on the way to the garage.
 
 Her father asks about Sam.
 
@@ -166,17 +166,17 @@ Chloe has the glass on the step beside her, sweating a ring into the wood. "He's
 
 "How does it not touch him, forty percent year after year? I'd have packed the whole thing in by now, or I'd have made your mother listen to it every night at this table for a year."
 
-Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it. Ruth's on ninety-one, apparently, and that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him. He wrote her number on my hand in pen, actually wrote it, like I couldn't be trusted to remember four digits on my own."
+Chloe turns the glass a quarter turn on the wood, into the ring it has made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it. Ruth's on ninety-one, apparently, and that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him. He wrote her number on my hand in pen, actually wrote it, like I couldn't be trusted to remember four digits on my own."
 
 Her father laughs at that, head back, longer than the joke should carry him.
 
 "Is she, though, or is that just the face she puts on for you?"
 
-Chloe's hands are off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time, she has never once said so out loud, and she has never once been late, not even the Saturday her own bus broke down some way short of the school and she walked the rest of it, clipboard under her arm the whole way, and set the targets up herself before anybody noticed she'd been late at all."
+Chloe's hands are off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time, she has never once said so out loud, and she has never once been late, not even the Saturday her own bus broke down some way short of the school and she walked the rest of it, clipboard under her arm throughout, and set the targets up herself before anybody noticed she'd been late at all."
 
 "Why does she keep doing it, then, if the range itself bores her that badly?"
 
-"Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her. I tried giving her a Saturday off in March and she turned up for it anyway, clipboard and all. She told me the whole point of a day off was choosing what to do with it, so this was what she'd chosen."
+"I think it's because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her. I tried giving her a Saturday off in March and she turned up for it anyway, clipboard and all. She told me the whole point of a day off was choosing what to do with it, so this was what she'd chosen."
 
 Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where every pairing in adversarial negotiation goes up the week it happens and stays up all year, nothing changing hands but the score. Nadia's has been sitting there since February with Priya's name beside it, which is the whole of what the board says and the whole of what anybody remembers.
 

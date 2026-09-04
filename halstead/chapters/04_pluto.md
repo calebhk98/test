@@ -10,9 +10,9 @@ It is the parents making most of it. Each of them stands next to a child holding
 
 A boy near the doors keeps running the length of the hallway and back until somebody's mother catches his arm on the way past and keeps hold of it, her knuckles gone white around his sleeve, while a girl keeps both fists wound into the hem of her father's jacket even when another child waves at her first.
 
-Out in the lot there are license plates from states that are new to her, and some take a few seconds of squinting to place, and it is already hot enough that her dad has sweated through the back of his shirt by the time they reach the doors.
+Out in the lot there are license plates from states that are new to her, and some take a few seconds of squinting to place, and it is hot enough that her dad has sweated through the back of his shirt by the time they reach the doors.
 
-They line up at a registration table with the letters of the alphabet taped along the front in blocks, and a kid in front of them looks at Chloe's shoes a second too long, so she moves half a step in behind her dad.
+They line up at a registration table with the letters of the alphabet taped along the front in blocks, and a kid in front of them looks at Chloe's shoes a beat too long, so she moves half a step in behind her dad.
 
 The woman at H through M finds Kessler on her page straightaway and hands over a folder with Chloe's name printed on the front, a lanyard with her name on it, and a card for the dining hall with her name on that as well.
 
@@ -20,9 +20,9 @@ The woman at H through M finds Kessler on her page straightaway and hands over a
 
 "We try." The woman is already reaching past him for the next folder in the box. "Chairs are through the double doors, we start on the hour, and there's a map in there."
 
-The orientation is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there is another later for the families still driving.
+The orientation is in a room with folding chairs and a woman with a clipboard who covers it fast, because there is another later for the families still driving.
 
-Chloe's feet hang well above the floor, and she kicks the chair leg in front of her a few times before somebody's mother turns around, after which she stops.
+Chloe's feet hang well above the floor, and she kicks the chair leg in front of her a few times before a mother nearby turns around, after which she stops.
 
 Meals are at set times, and there is fruit in bowls by the stairs at any hour, free for anybody who wants it.
 
@@ -38,13 +38,13 @@ Further up a boy has started crying, quiet about it, and the girl next to him bu
 
 "It isn't a punishment, it's just how it works, and if you feel sick in the night you don't wait until morning, you knock on the door with the light on at the end of your hall."
 
-A man near the front asks whether the laundry bags go out on the Tuesday night or the Wednesday morning, so she does the part about the laundry bags again.
+A man near the front asks whether the laundry bags go out on the Tuesday night or the Wednesday morning, so she covers the part about the laundry bags again.
 
 Chloe's mom writes something on the back of the map.
 
-Walking to the room afterward Chloe gets a look at it: it is the sentence about going home, with the words same day underlined twice.
+Walking to the room afterward Chloe catches a look at it: it is the sentence about going home, with the words same day underlined twice.
 
-Her room has two beds, a window that opens a few inches before it stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow.
+Her room has two beds, a window that opens a few inches before it stops, and a girl called Priya who is already there, unpacked, with a book about horses face down open on her pillow.
 
 But Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.
 
@@ -56,13 +56,13 @@ Pushing the drawer shut with her knee and then leaning on it, Priya says, "Do yo
 
 "No."
 
-She goes on anyway.
+She continues anyway.
 
 "Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
-"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here. And a mini isn't even a pony, it's smaller again. Almost everybody gets that part wrong too. And a draft horse is basically the opposite of a pony, even though people mix those up as well. Being tall has nothing to do with it. They're built to pull something heavy, so a short one can still count as a draft and a tall one can still not. She measured one at nineteen hands once, for a school project, and it was still just a very large horse."
+"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here. And a mini isn't even a pony, it's smaller again. Almost everybody gets that part wrong too. And a draft horse is basically the opposite of a pony, even though people mix those up as well. Being tall has nothing to do with it. They're built to pull something heavy, so a short one can still count as a draft and a tall one can still not. She measured one at nineteen hands once, for a school project, and it was just a very large horse."
 
 The edge of her hand goes across the top of her own shoulder.
 
@@ -70,17 +70,17 @@ The edge of her hand goes across the top of her own shoulder.
 
 "Whose paper are we talking about?"
 
-"The horse's paper. They have papers," Priya says, waving the whole question off with the back of her hand before going straight on with it.
+"The horse's paper. They have papers," Priya says, waving the question off with the back of her hand, then going straight on with it.
 
 Priya tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
 
-Chloe keeps her hands still in her lap and lets it run, end to end.
+Chloe keeps her hands still in her lap and lets it run, start to finish.
 
 Then Priya says goodnight, and inside a minute she is asleep.
 
 Chloe lies on top of the covers with her shoes on.
 
-That evening she goes down to the phone by the front desk, which you are allowed to use whenever you want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished before she dials the number off the card in her folder.
+That evening she goes down to the phone by the front desk, which you are allowed to use whenever you want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished, then dials the number off the card in her folder.
 
 Her mom picks up in the middle of the first ring.
 
@@ -94,7 +94,7 @@ Chloe sleeps in the second bed with the bathroom light on and the door open, her
 
 "Do you want to talk about it?"
 
-Her mom is still in her shoes, sitting on the arm of the chair by the window.
+Her mom is in her shoes, sitting on the arm of the chair by the window.
 
 "No."
 
@@ -106,7 +106,7 @@ Her mom gets up, turns the other bed down, and sits on the end of it.
 
 So her mom talks, doing the drive down, the place where they stopped and the woman on the desk downstairs who has a son at a college in a state Chloe couldn't find.
 
-Then comes a thing that happened at her work in June, which Chloe has already been told twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
+Then her mom brings up a thing that happened at her work in June, which Chloe has been told twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
 
 In the morning her mom drives her back and tells her she can do that every night if she wants. Chloe says okay.
 
@@ -124,9 +124,9 @@ Then something goes wrong with her, before anybody has had time to answer, becau
 
 Then a boy laughs, one loud honk of it right up close, and her jaw unclenches all at once, her shoulders coming down before she has decided anything about it.
 
-"It's not even a room. It's a room-shaped object," he says.
+"I don't think it's even a room. It's a room-shaped object," he says.
 
-Chloe laughs until she has to put her forehead against the wall, before somebody else catches it too, a couple of the boys by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
+Chloe laughs until she has to put her forehead against the wall, then somebody else catches it too, a couple of the boys by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
 
 Then a girl says something from further up the line.
 
@@ -140,7 +140,7 @@ Then a girl says something from further up the line.
 
 "It's what happened," the girl says.
 
-The door opens, the children who were in there come out, everybody files past them, and Chloe still hasn't let go of her folder when she sits down.
+The door opens, the children who were in there come out, everybody files past them, and Chloe hasn't let go of her folder when she sits down.
 
 Inside, the boy sits down next to her, drops his folder on the desk sideways, and asks her name, and when she says Chloe he tells her that his is Sam, then waits through a silence he clearly thinks she should be filling.
 
@@ -162,9 +162,9 @@ That night Chloe calls the desk again and sleeps in the hotel again, then in the
 
 ________________
 
-The dining hall is loud in a different way from the hallway, and a few tables over a boy called Owen is still working through the worksheet from the afternoon, folded small in his lap under the table, while Priya slows down with her tray long enough to see what he is doing before somebody calls her name and she keeps walking.
+The dining hall is loud in a different way from the hallway, and a few tables over a boy called Owen is still working through the worksheet from the afternoon, folded small in his lap under the table, while Priya slows down with her tray long enough to see what he is doing, then somebody calls her name and she keeps walking.
 
-On the third night Sam sits down across from her without a tray, before he gets up, gets a tray, and comes back to sit in the same seat.
+On the third night Sam sits down across from her without a tray, then gets up, gets a tray, and comes back to sit in the same seat.
 
 "What school do you go to?"
 
@@ -172,7 +172,7 @@ On the third night Sam sits down across from her without a tray, before he gets 
 
 "No, what's it called."
 
-The name of it goes across the table, and he asks whether it is good, and Chloe takes a second finding an answer while he sits there already looking at her, waiting for it.
+The name of it goes across the table, and he asks whether it is good, and Chloe takes a moment finding an answer while he sits there looking at her, waiting for it.
 
 "It's fine, I guess. There's a girl there. She says I talk weird. So mostly I just keep quiet in class now."
 
@@ -190,7 +190,7 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "You're agreeing at me," Sam says, and pushes his tray a couple of inches away.
 
-Chloe has a whole sentence about the lid ready.
+Chloe has a sentence about the lid ready.
 
 On the fourth night she gets as far as the phone and dials all but the last number, then stops with her finger over the last one. A kid comes up behind her and asks if she is using it. Chloe shakes her head, puts the phone back on the hook, and goes upstairs, where Priya is still awake.
 
@@ -204,7 +204,7 @@ On the fourth night she gets as far as the phone and dials all but the last numb
 
 Her mom stays a few more days after that, and neither of them says anything about the phone.
 
-On the Sunday she leaves, going through the room again first, finding the green laundry bag, putting it where Chloe will see it, and asking Priya a few questions about herself, before she stands in the doorway with her keys already out.
+On the Sunday she leaves, going through the room again first, finding the green laundry bag, putting it where Chloe will see it, and asking Priya a few questions about herself, then she stands in the doorway with her keys already out.
 
 "You've got the number, taped inside your folder where you can't lose it."
 
@@ -262,11 +262,11 @@ Mr. Doyle stops with the marker still up at the board to look at what he has wri
 
 "I did though, and everybody heard me."
 
-Mr. Doyle is already onto the next thing, brisk about it, while a kid glances at Ruth before looking back at the board. Chloe presses her thumbnail into the edge of the desk until it leaves a mark.
+Mr. Doyle is already onto the next thing, brisk about it, while a kid glances at Ruth, then looks back at the board. Chloe presses her thumbnail into the edge of the desk until it leaves a mark.
 
 She has done this herself, in January.
 
-Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.
+Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it for the rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, whether anybody sits with her.
 
 At the end of the table she leans over. "Are you in trouble?"
 

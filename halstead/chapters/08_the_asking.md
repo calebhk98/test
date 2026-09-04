@@ -8,7 +8,7 @@ Her mom winds the phone cord around her fingers. "No, I appreciate you calling. 
 
 Chloe goes back up before the call is finished.
 
-The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she takes a chair and puts Chloe's mom in the other, leaving Chloe the whole couch to herself. It is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
+The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she takes a chair and puts Chloe's mom in the other, leaving Chloe the couch to herself. It is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
 
 "So tell me what's going on, and start wherever you like. There's no order I need it in. Take as much time as you want getting to it, and if a part of it doesn't make sense yet, that's fine too."
 
@@ -22,7 +22,7 @@ Her mom is sitting right on the front edge of the chair, and she has the whole l
 
 "September, within a week or so of school starting."
 
-Dr. Ammons writes a line before the next question, and asks it in exactly the voice she used for the first.
+Dr. Ammons writes a line, then asks the next question in exactly the voice she used for the first.
 
 "And before that, before August, what was she like?"
 
@@ -50,7 +50,7 @@ Chloe's hand stops on the thread.
 
 "The same," her mom says.
 
-"The same," Chloe says too, to the couch arm, a half beat after her mother, loud enough that Dr. Ammons's pen stops on the pad for a second.
+"The same," Chloe says too, to the couch arm, a half beat after her mother, loud enough that Dr. Ammons's pen stops on the pad for a moment.
 
 The questions keep coming in that voice, working down through who ran it, how they found her, whether Chloe came back different, in what way, and starting when.
 
@@ -92,7 +92,7 @@ Her mother starts on the school in October, every week, on the phone first and t
 
 At the counter, with her back to the room and Chloe at the table behind her, she says the words in writing twice in one sentence.
 
-Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays it all out.
+Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat on and lays it all out.
 
 There is a program in the building. It is one hour, on a Thursday, with a woman called Mrs. Prahl who covers five different buildings in a week. The office says that Mrs. Prahl is wonderful, that the children adore her, that it is a lovely program.
 
@@ -118,11 +118,11 @@ It takes weeks. In the second week of November the school calls back to say that
 
 Chloe barely sleeps that night, and gets up twice to check that the note about it is still on the fridge under the strawberry magnet.
 
-There are nine kids and a cart with shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER. Mrs. Prahl wheels it in after lunch, spends a while getting them out of classrooms all over the building and into chairs, then learns every name before they have settled, after which she uses them, every time.
+There are nine kids and a cart with shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER. Mrs. Prahl wheels it in after lunch, spends a while getting them out of classrooms all over the building and into chairs, then learns every name before they have settled, after which she uses them.
 
 Mrs. Prahl holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, but knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it. There's no trick hiding in the wording, and there's no third option either, whatever anybody at the back is about to suggest."
 
-Chloe has it before Mrs. Prahl has finished reading it out, so she waits. A boy called Dev gets there about ninety seconds later and does it up on the board with arrows; Mrs. Prahl makes a real thing out of it.
+Chloe has it before Mrs. Prahl has finished reading it out, so she waits. A boy called Dev arrives about ninety seconds later and does it up on the board with arrows; Mrs. Prahl makes a real thing out of it.
 
 There are twelve on the sheet, of which Chloe does most in the first stretch before she makes herself slow down.
 
@@ -146,7 +146,7 @@ Chloe asks again on the Tuesday and gets the words back in the same order, as if
 
 "Not now, Chloe," her mom says on the Wednesday, before she has gotten the question all the way out.
 
-On the Thursday she skips her mom and tries her dad at breakfast, quiet, while her mom is still upstairs. Her dad looks at the door to the hall before he answers, and says only that it isn't only up to him.
+On the Thursday she skips her mom and tries her dad at breakfast, quiet, while her mom is upstairs. Her dad looks at the door to the hall before he answers, and says only that it isn't only up to him.
 
 The second Thursday goes like the first.
 
@@ -160,7 +160,7 @@ Her mom says put your jacket on and Chloe says no, and her mom says put it on. T
 
 "You do, you want me to stay here and be sad. You could just say yes to Halstead. You could say it right now. It takes one second to say it. But you won't say it."
 
-Her mom's hand closes on the edge of the counter. "It's not one second, Chloe, I've thought about this a lot longer than you know. Every night since the letter came. I lie awake and go through every reason to say no, and every morning I still don't have one good enough."
+Her mom's hand closes on the edge of the counter. "It's not one second, Chloe, I've thought about this a lot longer than you know. Every night since the letter came. I lie awake and go through the reasons to say no, and every morning I still don't have one good enough."
 
 "You hate me, that's what it is, you actually hate me."
 
@@ -194,13 +194,13 @@ Her mom waits.
 
 "I might not have the right words for it."
 
-"What was different there, not the fun parts, because I've already heard every single fun part, but what was actually different about it, underneath all that? I keep getting the bridge and the apples and I still don't know what the place was."
+"What was different there, not the fun parts, because I've heard every single fun part, but what was actually different about it, underneath all that? I keep getting the bridge and the apples and I still don't know what the place was."
 
 Chloe sits up and answers straight away, the answer already sitting in her mouth before the question finishes, and it is one thing, and it is small.
 
 "Nobody was mean," she says.
 
-Her mom waits, sitting very still on the end of the bed; that is already all of it: a hallway with a brass plate on the last door that says PLUTO, a boy honking with laughter about a room-shaped object, standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
+Her mom waits, sitting very still on the end of the bed; that is all of it: a hallway with a brass plate on the last door that says PLUTO, a boy honking with laughter about a room-shaped object, standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
 
 "Nobody was mean to me," she says. "Not once, not ever, the whole time I was there."
 
@@ -226,9 +226,9 @@ Her mom smooths the back of Chloe's shirt down twice. "Okay, honey. You'll make 
 
 Chloe lies down again with her back to her mother and turns her face toward the wall; after a while her mom gets up off the end of the bed.
 
-The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December but keeps to herself, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. Chloe says thank you, hugs her dad, then hugs her mom for longer, then puts her coat on over her pajamas and rides it up and down outside the house while her parents stand in the doorway in the cold.
+The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December but keeps to herself, so that when her dad brings it in on Christmas morning with a bow on the handlebars there are people standing around the front room in their coats watching her see it. Chloe says thank you, hugs her dad, then hugs her mom for longer, then puts her coat on over her pajamas and rides it up and down outside the house while her parents stand in the doorway in the cold.
 
-Her dad is in the doorway with his arms folded up against the cold. "She likes it. Look how fast she's already going out there."
+Her dad is in the doorway with his arms folded up against the cold. "I think she likes it. Look how fast she's already going out there."
 
 "She does."
 

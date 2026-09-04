@@ -12,11 +12,11 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 
 "This is my second time in this room and that bus has stayed a rumour both times," the woman next to him says, hands round a cup of coffee gone cold.
 
-"It exists, because they showed me a photograph of it with a driver next to it," somebody says, and somebody laughs.
+"It exists, because they showed me a photograph of it with a driver next to it," a man says, and somebody laughs.
 
 "My wife had it down as a phishing scam," the first man says, "where they ask for a deposit at some point, and then it's a wire transfer, and then a different number to call."
 
-"That's what we thought, and we had a whole family meeting over it, about a summer camp," says the man beside him, and folds his paper plate in half.
+"That's what we thought, and we had a family meeting over it, about a summer camp," says the man beside him, and folds his paper plate in half.
 
 "We thought worse than that, and I'll say it out loud: I told Dave I was keeping her home from a building I had yet to see, whatever the letter said, but then we came, and it's a school, and there's a nurse, and it's fine, and I still -"
 
@@ -30,9 +30,9 @@ Chloe's dad has been quiet through all of it, cutting his waffle into squares an
 
 Several of them answer at once: "They said they have a list."
 
-"We got the list, and then a paragraph on how the list is compiled, which explained the paragraph, but not the list. Read the whole thing twice and you still don't know a single name that's on it or why."
+"We got the list, and then a paragraph on how the list is compiled, which explained the paragraph, but not the list. Read it twice and you still don't know a single name that's on it or why."
 
-"They told us the list is a good list," the woman says, "which leaves the whole question of good at what."
+"They told us the list is a good list," the woman says, "which leaves the question of good at what."
 
 "She's top of her reading group at home," somebody's mother says to the table generally, finding a spot on the wood.
 
@@ -64,13 +64,13 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess. It fails every time. Everybody else at that table is doing Spanish as well," she says.
 
-"Then there's the signing. That's better than all of it. You can do it across a whole room with your hands doing the talking and your mouth shut. That's water, that's finished, that's again. And in the library you can ask somebody at the far end of the room for a book, with everybody's mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster.
+"Then there's the signing. That's better than all of it. You can do it across a room with your hands doing the talking and your mouth shut. That's water, that's finished, that's again. And in the library you can ask somebody at the far end of the room for a book, with everybody's mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster.
 
 "And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves. Ruth got the plurals before I did. Kavi got the pattern in the endings. That part is still half out of my reach. He has explained it and explained it. He'd explain it to you right now, only he isn't sitting here and I am. I wrote his explanation down word for word so I wouldn't lose it, and I still read it over before every test."
 
 Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed: pressure first, the dressing second. Then the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
 
-"Then there's the computers, and that's actually two entirely different things, the first being that you type the words in yourself instead of dragging colored blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into. It's enormous and they keep it freezing cold on purpose. The machines throw off so much heat the heat would cook them. And a woman who works in there took us through the whole arrangement, down to the water pipes under the floor. She let me hold the door open with my foot so the cold air came out into the hallway, and it was like standing in front of an open freezer," she says, counting them off on her fingers.
+"Then there's the computers, and that's actually two entirely different things, the first being that you type the words in yourself instead of dragging colored blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into. It's enormous and they keep it freezing cold on purpose. The machines throw off so much heat the heat would cook them. And a woman who works in there took us through the arrangement, down to the water pipes under the floor. She let me hold the door open with my foot so the cold air came out into the hallway, and it was like standing in front of an open freezer," she says, counting them off on her fingers.
 
 Then the robot arm on the second floor, which picks a block up for as long as you stand there watching it.
 
@@ -82,7 +82,7 @@ Then karate: mostly learning how to fall over safely.
 
 Then the nerf guns at the end, which arrive out of order because she has only just remembered them.
 
-Then the wood shop again, and the goggles again, in almost the words she used before, and she keeps going, straight through it.
+Then the wood shop again, and the goggles again, in almost the words she used the first time, and she keeps going, straight through it.
 
 Her plate has gone cold in front of her, barely touched, but she talks straight on through it, leaning in far enough that her shoulder ends up against his arm.
 
@@ -106,7 +106,7 @@ When he asks her to do the fractions again from the start, she turns the napkin 
 
 "They taught you that themselves, or did you have to work that part out on your own?"
 
-"He did it on the board and the whole thing went past me, so I did it again at night with my own numbers, and then I had it."
+"He did it on the board and it went past me, so I did it again at night with my own numbers, and then I had it."
 
 "But you could already do them. You told me you got all eight of them right."
 
@@ -126,7 +126,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "Here. This is a school. A whole school, running all year. That's what it is."
 
-"I know it's a school, Ruth. I've been standing in it the whole month same as you."
+"I know it's a school, Ruth. I've been standing in it a month same as you."
 
 "Then we should all get in. That's the entire point. I've been making it since I sat down."
 
@@ -134,7 +134,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "It's not obviously." Ruth pulls her knees up to her chest. "You have to actually go and do things. My mom asked. There's a form. And there's a day where you come back and they look at you. That day sits in the fall, not in the summer."
 
-"They already looked at us, Ruth. That is exactly what this whole month was for."
+"They already looked at us, Ruth. That is exactly what this month was for."
 
 "That's not what she said. She said it's a whole different day, with different people doing the looking."
 
@@ -152,7 +152,7 @@ Ruth picks the knot out of one shoelace with both thumbs.
 
 "They liked the food, mostly, and the food is what got them talking about everything else. My dad wrote down what was in the sauce on the Tuesday and tried it at home twice. It still isn't right."
 
-"They asked about a whole year on the third day because of the food?"
+"They asked about a year on the third day because of the food?"
 
 "They liked a lot of it and the food was only part of it," Kavi says, shrugging with one shoulder, "and my dad talked to Mr. Baptiste for a solid hour."
 
@@ -170,7 +170,7 @@ Ruth picks the knot out of one shoelace with both thumbs.
 
 "You said there was a day, though, a day where actual people come and look at you."
 
-"There's a day, yeah, but a day only means somebody looks at you, and that's still a long way from anybody saying yes."
+"There's a day, yeah, but a day only means somebody looks at you, and I think that's still a long way from anybody saying yes."
 
 "So there's a day," she says, and sits back against the wall, fist still shut on the pajama leg.
 
@@ -192,7 +192,7 @@ Ruth picks the knot out of one shoelace with both thumbs.
 
 "It's a completely different thing, Sam, and you know perfectly well that it is."
 
-For a second the only sound in the hall is a door somewhere down the next section, clicking shut.
+For a moment the only sound in the hall is a door somewhere down the next section, clicking shut.
 
 Chloe runs the numbers again, the ones she has been running since the drive down: four hours in the car each way, a whole day of driving to put her somewhere, a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
 
@@ -210,7 +210,7 @@ Long before anybody comes to get her, she is awake, dressed and sitting on the e
 
 Her dad carries her bag down and puts it in the trunk with the strap hanging out, so that he has to open it again.
 
-Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone. Priya turns her sleeve inside out to check it twice while her mother tells her it's fine, but she says it isn't. Chloe pulls the tie off her own wrist and holds it out.
+Priya hugs her hard enough that it takes a moment to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone. Priya turns her sleeve inside out to check it twice while her mother tells her it's fine, but she says it isn't. Chloe pulls the tie off her own wrist and holds it out.
 
 When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far and his parents have to send it in, at which point Sam says it again, word for word.
 
@@ -244,7 +244,7 @@ Her mom stays quiet long enough that he checks the screen.
 
 "In twenty-eight days, and she counted them."
 
-The road noise goes on for another few miles.
+The road noise continues for another few miles.
 
 "Okay, so what is that, what's the name for that," her mom says.
 

@@ -10,9 +10,9 @@ The arithmetic goes up on the board in silence: fifty-one in roughly thirty week
 
 He caps the pen. "One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning. The first is due Monday. It has to be as good, and that's the part that's actually hard, because the length is easy, it is just hours, so if you want to know what I'm marking against, go and read them, and they're short enough that there's no excuse not to."
 
-Chloe has written reports that long before, in Mandarin last year and in French the year before that, all of them with weeks behind them. They were also about things, like what a port did in a year, or what a newspaper said and what a second newspaper said about it, and those came back marked on the Mandarin.
+Chloe has written reports that long, in Mandarin last year and in French the year prior, all of them with weeks behind them. They were also about things, like what a port did in a year, or what a newspaper said and what a second newspaper said about it, and those came back marked on the Mandarin.
 
-That night, in the chair by the window, she reads Federalist 10, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen, before she spends the rest of the weekend on an essay about whether a small state can be trusted with a veto.
+That night, in the chair by the window, she reads Federalist 10, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen. Then she spends the rest of the weekend on an essay about whether a small state can be trusted with a veto.
 
 It comes back on the Monday with a mark and a short paragraph under it, which say she has spent the whole essay on a position she already held, that the other side appears nowhere on the page in a way its own supporters would believe, and that until it does he has no way of telling whether she is right or only comfortable.
 
@@ -24,7 +24,7 @@ That evening she looks up who wrote which, and Hamilton has number 1, then 6 thr
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
-In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it still gets the pages out the other end. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away before starting the second. Taking a position she disagrees with, she writes it straight, but that draft comes back worse than the others.
+In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it still gets the pages out the other end. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but that draft comes back worse than the others.
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -110,7 +110,7 @@ By the following week there are theories going round about the markers being dif
 
 Kavi gets it on his own in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, but she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
-In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it years ago, he goes through it line by line anyway, the way the fire notice gets gone through once a year.
+In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor for years, and she stopped reading it long ago, he goes through it line by line anyway, the way the fire notice gets gone through once a year.
 
 **DEFENSIVE WATCH, SCORING**
 
@@ -145,7 +145,7 @@ Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, then is still on them when the plates come back. Chloe's fork stops over the plate. She carries her tray out the far door before the laugh has run its course, and finds Ruth on the step.
+Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, then is still on them when the plates come back. Chloe's fork stops over the plate. The laugh is still going when she carries her tray out the far door, and finds Ruth on the step.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 
@@ -165,7 +165,7 @@ Chloe has her elbows on the table and her aunt is looking at her elbows. "There 
 
 "I'll give you that," her father says, considering his plate. "What about steel, though, which has been saying that since before you were born?"
 
-She is nodding before he has finished. "Steel says it, textiles said it, and somebody's going to say it about something neither of us has heard of. That's the actual problem, because it's an argument anybody can use for anything, so it doesn't sort them, and the guy asking has the same sentences whether he's right or not."
+She nods without waiting for him to finish. "Steel says it, textiles said it, and somebody's going to say it about something neither of us has heard of. That's the actual problem, because it's an argument anybody can use for anything, so it doesn't sort them, and the guy asking has the same sentences whether he's right or not."
 
 "So how do you actually sort the real ones from the ones just saying it for cover?"
 
@@ -187,7 +187,7 @@ On the way out into the corridor she checks the back of the last page twice, in 
 
 Theo gets his back with no note that week, but he puts it straight into his bag and goes on with what he was saying.
 
-More go in before the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
+More go in ahead of the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good, then asks where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
 "There's a chair," her grandmother says. "You know, an actual chair, a step from where you're sitting on my floor. Your knees will thank you for it later, even if you don't believe me now."
 

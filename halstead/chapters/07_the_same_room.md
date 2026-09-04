@@ -2,7 +2,8 @@
 
 *August 2012 – October 2012*
 
-The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe. Sam left early, which Chloe finds out from a girl she had not spoken to once all month and who tosses it over her shoulder with a pillow under one arm, already halfway down the hall, while Kavi is over by the double doors with adults who give him a hand up, until a family walks between them and by the time they pass he has gone.
+The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe. Sam left early, which Chloe finds out from a girl she had not spoken to once all month and who tosses it over her shoulder with a pillow under one arm, halfway down the hall, while Kavi is over by the double doors with adults who give him a hand up, until a family walks between them and by the time they pass he has gone.
+
 
 Ruth finds her at the flagpole, hugs her hard enough to hurt, and holds on with a fistful of Chloe's sleeve in each hand.
 
@@ -42,7 +43,7 @@ Chloe opens her mouth, then closes it, then goes upstairs to sit on the end of h
 
 "I never heard Kavi's either," she says, with her chin tucked down and the back of her wrist scrubbing across one eye, "but I know practically everything else there is to know about him."
 
-Her mom's hand comes off the phone book and rests on top of Chloe's head for a second before it goes back to the page.
+Her mom's hand comes off the phone book and rests on top of Chloe's head for a moment before it goes back to the page.
 
 "Priya, then, because you slept in a room with Priya for a whole month, Chloe, so you have to know something about her family. A last name, an address, the name of her school, anything at all that isn't just a first name and a bunk."
 
@@ -50,11 +51,11 @@ Her mom's hand comes off the phone book and rests on top of Chloe's head for a s
 
 Her mom's eyes come up. "It's OK, the last names can go. We can just ask the school instead," and she closes the phone book and gets the camp folder down off the shelf by the door.
 
-Somebody at the school picks up on the second ring, and Chloe gets close, straining to hear. Her mom gives their name, then Chloe's, confirms yes, that's her, then settles into a long stretch of listening, her weight going onto one foot and then the other.
+Somebody at the school picks up on the second ring, and Chloe edges close, straining to hear. Her mom gives their name, then Chloe's, confirms yes, that's her, then settles into a long stretch of listening, her weight going onto one foot and then the other.
 
 "Right, no, I understand that. What I'm asking instead is whether it can go the other way, so that if I give you our number you can pass it along to them, and then it is entirely up to those families whether they do anything with it," she says, and listens again.
 
-"Okay, yes, that works, thank you: Chloe Kessler." She says their number. "And she'd have been in with a Sam, a Ruth, a Kavi and a girl called Priya, in the same room the whole time, if that helps you find her. Can you just let them know that Chloe would like to talk to them? Thank you very much." And she hangs up.
+"Okay, yes, that works, thank you: Chloe Kessler." She says their number. "And she'd have been in with a Sam, a Ruth, a Kavi and a girl called Priya, in the same room, if that helps you find her. Can you just let them know that Chloe would like to talk to them? Thank you very much." And she hangs up.
 
 "Okay, honey, and all we can do now is wait for those families to call us back."
 
@@ -62,13 +63,13 @@ ________________
 
 Chloe waits for the phone, day after day.
 
-She takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she is up and across the floor before the first ring finishes if she is anywhere near it. Twice she gets it on the second ring, once on the first: her grandmother, a man asking for her dad, a woman who wants to know whether her dad is the registered owner of the vehicle. Each time she says the call is for somebody else and hands it over, then sits back down with the book open where it was before; on the ninth day her mom tells her that these things can take weeks.
+She takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she is up and across the floor before the first ring finishes if she is anywhere near it. Twice she gets it on the second ring, once on the first: her grandmother, a man asking for her dad, a woman who wants to know whether her dad is the registered owner of the vehicle. Each time she says the call is for somebody else and hands it over, then sits back down with the book open where it had been; on the ninth day her mom tells her that these things can take weeks.
 
 "How many weeks, though? I want an actual number," Chloe says, standing at the counter with the book still open against her chest.
 
 "Honestly, sweetheart, it's hard to say. It could be one week or it could be a month, and every call moves at its own pace."
 
-On the tenth day she asks her mom to call the school back and find out whether the message actually reached the families or just sat on somebody's desk; her mom makes the call while Chloe sits up on the counter to hear her side of it. The school says the message went out that same week, to all three numbers, and there is nothing else for anybody to do but wait on the other end of it.
+On the tenth day she asks her mom to call the school back and find out whether the message actually reached the families or just sat on somebody's desk; her mom makes the call while Chloe sits up on the counter to hear her side of it. The school says the message went out that same week, to all three numbers, and there is nothing else for anybody to do but wait.
 
 After that she stops sitting in the kitchen, though she still crosses the room to check the phone is on the hook before she goes up, every night, and she still comes down the stairs fast if it rings.
 
@@ -98,7 +99,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "Did it now? Tell me the part about the corner again, slowly."
 
-"And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
+"And I can divide fractions now," she says, stopping to get a breath in, then going on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
 The librarian waits until she has actually run out, looking at her over the top of the card. "That's a real month, that is. But it is still four at a time, like in June, and the new ones came in this morning and are still on the cart, so go on and pick something good," she says.
 
@@ -110,9 +111,9 @@ Second grade is Ms. Vance, who everybody says is the nice one, and the desks are
 
 "These are your groups until Thanksgiving, so you're going to want to be nice to the three people you're looking at right now. If somebody in your group is stuck you're allowed to help them, and helping means you talk about it with them, rather than doing it yourself and letting them copy it off you."
 
-Somebody asks whether you can swap groups; Ms. Vance says no in a way that has clearly been asked for before, so Chloe's group stays Bryce Dolan, Kayleigh Burns and a boy called Aiden R.
+A kid asks whether you can swap groups; Ms. Vance says no in a way that has clearly been asked for before, so Chloe's group stays Bryce Dolan, Kayleigh Burns and a boy called Aiden R.
 
-The first math sheet comes around midmorning, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
+The first math sheet arrives midmorning, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
 Fractions at camp, staying up until the number finally sat still on the page, but now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her, relieved to find it still works like it worked in first grade.
 
@@ -120,13 +121,13 @@ ________________
 
 The shoebox has foil taped all over it, and in the second week Ms. Vance stands it up on the front desk where everybody can see it.
 
-"So this is a time capsule, and everybody is writing something today, on the paper I'm handing out now, and it goes in this box, then I tape the box shut and it goes up on top of that cabinet. Then it stays shut until we are in fifth grade, not this year and not next year, however much anybody wants to peek," she says, reaching up to knock a knuckle against the cabinet.
+"So this is a time capsule, and everybody is writing something today, on the paper I'm handing out now, and it goes in this box, then I tape the box shut and set it on top of that cabinet. Then it stays shut until we are in fifth grade, not this year and not next year, however much anybody wants to peek," she says, reaching up to knock a knuckle against the cabinet.
 
 Everybody talks at once, and it takes the room a long time to come down.
 
 "Here's the part I want you thinking about while you're writing, because you're not writing it to me and you're not writing it to your friends at your table. The person who opens that box is you, three years older, and whatever's on that paper is what they get."
 
-Chloe is already leaning over her own paper with the pencil going before anybody else at the table has picked theirs up. "It's kind of like mailing something to a stranger," she says, to herself.
+Chloe leans over her own paper with the pencil going before anybody else at the table has picked theirs up. "It's kind of like mailing something to a stranger," she says, to herself.
 
 "What was that, Chloe, and can you say it again so the rest of us can hear it too?"
 
@@ -136,7 +137,7 @@ Kayleigh Burns has turned around in her chair to say it: "Why do you talk like t
 
 "You were weird before, but now you're weirder than that even," Bryce says, with interest, the way you would tell somebody their shoe was untied.
 
-Chloe's hand comes down over what she has already written, the whole page gone under her palm.
+Chloe's hand comes down over what she has written, the whole page gone under her palm.
 
 "I just meant it's a long time to wait for anybody to actually read it," she says, to the desk.
 
@@ -146,7 +147,7 @@ Her hand stays where it is for the rest of the period. But when Ms. Vance calls 
 
 ________________
 
-Having taken the third library book to bed on the Monday, she gets a page and a half in, reads the same sentence twice, and starts the page over with no memory of what it said the first time.
+Having taken the third library book to bed on the Monday, she makes it a page and a half in, reads the same sentence twice, and starts the page over with no memory of what it said the first time.
 
 On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up, and puts it down on the floor. On the Wednesday she leaves it there. All of them are due on the Thursday, but she has finished two.
 
@@ -160,15 +161,15 @@ Her mom drives her to the library on Thursday and waits in the car with the engi
 
 "I've just got a lot of school stuff," Chloe says.
 
-The library card goes in the drawer in the kitchen where the batteries are, and weeks later, when her mom asks whether she wants to go on Saturday, Chloe says no thank you but asks her to renew them please.
+The library card ends up in the drawer in the kitchen where the batteries are, and weeks later, when her mom asks whether she wants to go on Saturday, Chloe says no thank you but asks her to renew them please.
 
 ________________
 
-At breakfast she asks, standing at the end of the table instead of sitting down to it; she asks in the car on the way to school and again on the way home, working the buckle of the seatbelt with one thumb the whole ride; she asks over her mom's shoulder while she is on the phone, until she gets waved off, and again the second the call ends, before the phone is even back on the counter; she asks with a chore list she has made herself, folded small and left on the pillow; and she asks one more time coming back downstairs in her pajamas, twenty minutes after bedtime; by the end of September it is several times a day.
+At breakfast she asks, standing at the end of the table instead of sitting down to it; she asks in the car on the way to school and again on the way home, working the buckle of the seatbelt with one thumb the whole ride; she asks over her mom's shoulder while she is on the phone, until she gets waved off, and again the moment the call ends, before the phone is even back on the counter; she asks with a chore list she has made herself, folded small and left on the pillow; and she asks one more time coming back downstairs in her pajamas, twenty minutes after bedtime; by the end of September it is several times a day.
 
 "Can I go to Halstead, and is today the day you finally know?"
 
-"We're thinking about it, and that's a decision your father and I have to make together, not something we settle standing in a hallway. We're not going to decide something this big with your backpack still on your shoulders, and neither should you want us to."
+"We're thinking about it, and I think that's a decision your father and I have to make together, not something we settle standing in a hallway. We're not going to decide something this big with your backpack still on your shoulders, and neither should you want us to."
 
 "But when will you actually know, though? You keep saying soon. Soon keeps not coming."
 

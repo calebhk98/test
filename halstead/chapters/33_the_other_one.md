@@ -4,15 +4,15 @@
 
 Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never held a badge if this goes wrong. Eli's answer comes back within the hour, three lines about compartmentalization that don't touch the actual question, and the no holds through everything that follows, unargued after that, for days.
 
-What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
+What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It reaches all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 
-The target is the unit Theo already told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder; the document is mostly about the second problem, not the first.
+The target is the unit Theo told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder; the document is mostly about the second problem, not the first.
 
 Theo reads it the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and goes back to the document standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name.
 
-The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they already have a file on their own school that's a dozen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
+The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they have a file on their own school that's a dozen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
 
-All of them know the law cold. They had sat the same examination; when Theo finally opens the thread, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, Eli's reading from the kitchen table he wrote the document on less than a week earlier, and Ruth already has two numbers ready for him.
+All of them know the law cold. They had sat the same examination; when Theo finally opens the thread, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, Eli's reading from the kitchen table he wrote the document on less than a week earlier, and Ruth has two numbers ready for him.
 
 theo: i want it on record that this is the stupidest thing any of us has ever done
 
@@ -48,7 +48,7 @@ ________________
 
 The rest of them read that thread over the following days, each of them from wherever the year has put them.
 
-Nadia reads it standing at the register with the shop shut and the till already counted. Her sleeves go up before she answers. They go up before anything that's going to cost her something.
+Nadia reads it standing at the register with the shop shut and the till already counted. Her sleeves go up before she answers. They go up when something is going to cost her.
 
 nadia: name whos actually touching the code
 
@@ -72,7 +72,7 @@ Sam reads it between sets, phone propped against a water bottle on the end of a 
 
 sam: how long's this go for
 
-eli: as long as it takes to get in and out once
+eli: i dont know. as long as it takes to get in and out once
 
 sam: thats not a number
 
@@ -92,19 +92,19 @@ So it goes to Chloe.
 
 Eli builds the entry itself as he built the first, in small pieces that look unremarkable on their own. Kavi builds the exit, meaning whatever erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching, and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
 
-The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, watching itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs the whole time too, watching the watcher, the doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that one line is the entire report.
+The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, watching itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs throughout too, watching the watcher, the doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that one line is the entire report.
 
-Eli spends the whole run of it badly slept but mostly cheerful, a couple of shirts in rotation and the same breakfast every morning, because deciding costs something he'd rather spend elsewhere. Kavi spends it in his own chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
+Eli spends the run of it badly slept but mostly cheerful, a couple of shirts in rotation and the same breakfast every morning, because deciding costs something he'd rather spend elsewhere. Kavi spends it in his own chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
 
 Chloe turns twenty-one in August, two months after the last page goes in, and it gets mentioned once and then not again. There is no clean place for a birthday next to a document about federal sentencing exposure.
 
-Chloe spends most of that stretch at her own kitchen counter, most nights, the coffee going cold twice before she remembers it's there. What she has at the end of it, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule everybody reads twice, that any of them can end it, no vote and no argument, and the rest have one hour to comply.
+Chloe spends most of that stretch at her own kitchen counter, most nights, the coffee going cold before she remembers it's there. What she has once it's finished, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule everybody reads twice, that any of them can end it, no vote and no argument, and the rest have one hour to comply.
 
 The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be.
 
-The middle section she rewrites, and then rewrites what she rewrote. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. The line goes in twice, in different words each time, because she already knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
+The middle section she rewrites, and then rewrites what she rewrote. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, a stranger shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. The line goes in twice, in different words each time, because she knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
 
-The stop clause gets exactly one line and no examples, on purpose. Any one of them can end it, and the ending starts the moment it's invoked: no vote, no reason attached.
+The stop clause is exactly one line and no examples, on purpose. Any one of them can end it, and the ending starts the moment it's invoked: no vote, no reason attached.
 
 ruth: it should say the person gives a reason
 

@@ -10,7 +10,7 @@ Kavi turns it down at the last second, saying he wants to finish something, and 
 
 ________________
 
-The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the passing cars under her breath out of habit rather than necessity, since the road at this hour supplies few of them in a mile. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so half an hour gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
+The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the passing cars under her breath out of habit rather than necessity, since the road at this hour supplies few of them in a mile. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so half an hour brings them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
 The diner does waffles all night, the syrup chained to the napkin holder and a jukebox in the corner silent since long before any of them were born, and they take a booth by the window, the lot lit orange under a surviving sodium lamp, the waitress putting menus down before the door has finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it, and he works his way around the crisp top edge of his own stack before he touches the syrup at all, a ritual he performs on every waffle he has ever been handed. The waitress, maybe fifty, carries a stack of plates along her arm, refills the coffee unasked, and calls all of them honey, twice for Ruth; Ruth takes it from her without a word, while Nadia falls asleep sitting up and then wakes and finishes her sentence.
 
@@ -22,13 +22,13 @@ They stay a couple of hours, long enough for Sam to want to know whether the den
 
 "I'd act like it was a secret if it were my car. I'd have a whole story ready for anyone who noticed it. Different story every time."
 
-Ruth says, "You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour. You'd have charged, and then charged extra for the story about how it got there, and made most of the story up on the spot."
+Ruth says, "You'd have told the whole school inside a week, and brought people out to look at it, given them the tour. You'd have charged, and then charged extra for the story about how it got there, and made most of the story up on the spot."
 
 The coffee cup goes a quarter turn on the table under her hand, and then another.
 
-"My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise. She read out the uniform list like it was news."
+"My brother's in, the letter came Thursday, and my mother read me the letter over the phone twice before I got a word in edgewise. She read out the uniform list like it was news."
 
-Sam puts his fork down before he asks it. "How old is he now?"
+Sam puts his fork down, then asks it. "How old is he now?"
 
 "Seven in September, so he's got a whole year of hearing about it before he even gets here."
 
@@ -58,7 +58,7 @@ Chloe's hand goes back to the fork, and she doesn't eat with it for a while.
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and every dictionary in every library would need rewriting every few years just to keep up with what people happen to like the sound of. I looked it up twice before I said it, just so nobody could tell me I hadn't," Ruth says.
+"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and dictionaries everywhere would need rewriting every few years just to keep up with what people happen to like the sound of. I looked it up twice before I said it, just so nobody could tell me I hadn't," Ruth says.
 
 "It makes it archaic. Archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
 
@@ -106,7 +106,7 @@ Sam is standing in the middle of them, turning, looking for the next one; that's
 
 They come down off the dock, Nadia hanging and dropping, Chloe straight off the edge, Ruth using the pallets.
 
-The third gun he finds on a man who spent the whole fight standing back; he takes it apart and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious: airway, then breathing, then a hand under the back of his head; she holds an eyelid open and looks. "Concussion. He's fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs, all of them holding, one bitten through his lip.
+The third gun he finds on a man who spent the fight standing back; he takes it apart and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious: airway, then breathing, then a hand under the back of his head; she holds an eyelid open and looks. "Concussion. He's fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs, all of them holding, one bitten through his lip.
 
 "Should we report them to the police?" Ruth says.
 
@@ -144,7 +144,7 @@ Sam takes it in silence for a second.
 
 Ruth has her bag back on her shoulder, the strap settled across it, and shrugs. "A gun's a prop unless you actually use it, but all of them just stood there holding theirs. They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
 
-"Fine, say that was too easy. So who do I actually fight, then?"
+"Fine, I guess that was too easy. So who do I actually fight, then?"
 
 "Go back and fight the waitress," Nadia says.
 
@@ -160,11 +160,11 @@ Nadia agrees, "The waitress would take you apart, but she wouldn't even set the 
 
 Ruth says, "Any of us could say the same, not just him, and she'd probably enjoy it, too."
 
-Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
+Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the rest of the way home.
 
 ________________
 
-They're back over the fence a few minutes later, Chloe's camera loop already unwinding itself towards normal, and the corridor is empty and quiet the whole way to their own doors.
+They're back over the fence a few minutes later, Chloe's camera loop already unwinding itself towards normal, and the corridor is empty and quiet all the way to their own doors.
 
 Chloe's shoes sit by the door, laces still knotted from being kicked off, not untied. She goes down her own ribs the way she went down theirs, counting under her breath out of habit, and finds nothing. Only then does she get under the covers.
 

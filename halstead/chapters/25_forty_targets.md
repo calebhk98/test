@@ -10,7 +10,7 @@ That night he falls asleep to the rest of the bay discovering their racks all at
 
 The schedule he has had since childhood, and lost over the summer, reappears on the second day, laminated and screwed to the wall beside the doorway.
 
-Drill Sergeant Ruiz has a voice built for open ground and shows no sign of owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on every blanket by eye from across the aisle, stopping finally at Sam's.
+Drill Sergeant Ruiz has a voice built for open ground and shows no sign of owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on each blanket by eye from across the aisle, stopping finally at Sam's.
 
 "Marsh. What is this supposed to be?"
 
@@ -26,7 +26,7 @@ Sam does it again, and it is wrong again in a different place, and it stays wron
 
 "He walked off the second time with his mouth shut, though. That's the good version of it."
 
-Okoro thinks it over for a second, decides against it, and goes back to his jaw.
+Okoro thinks it over, decides against it, and goes back to his jaw.
 
 By the end of the first week Sam has asked a string of people how long the entire program runs, all of them have answered twenty-two weeks, but a couple of them have been stopped cold by the question he asks after.
 
@@ -80,7 +80,7 @@ Word travels round the company by chow that day, the way a number like that alwa
 
 "Of the shots." Sam breaks the roll in half. "There were people in my year who never missed."
 
-"Sure there were." The man who asked has both elbows planted either side of his tray, the way somebody settles in for the rest of an argument he thinks is already over. "Nobody maxes that test on a cold morning but then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
+"Sure there were." The man who asked has both elbows planted either side of his tray, the way a man settles in for the rest of an argument he thinks is already over. "Nobody maxes that test on a cold morning but then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
 
 "The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, but then came and found me afterwards to apologize for it. She'd cracked a rib doing it, and wanted me to hear that part from her before the medic did."
 
@@ -96,7 +96,7 @@ By the end of it several of them are laughing at him, but another has stopped be
 
 The subject changes.
 
-Later, watching the clock over the serving line, he makes the only gripe anybody gets out of him all autumn. "Nine minutes is a strange amount of time to be given for a meal that took somebody all morning."
+Later, watching the clock over the serving line, he makes the only gripe anybody draws out of him all autumn. "Nine minutes is a strange amount of time to be given for a meal that took somebody all morning."
 
 ________________
 
@@ -116,7 +116,7 @@ The idea survives a week of testing. To find out whether it holds, he starts hol
 
 ________________
 
-September is tactical foot marches, getting longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids; Sam sets his straps once at the head of the trail. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
+September is tactical foot marches, getting longer each week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids; Sam sets his straps once at the head of the trail. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
 
 Land navigation fills October, daylight first and after in darkness, a scorecard, cold enough that the cadre hand out an extra layer before anybody thinks to ask for one; Sam logs all of his the first time out, then walks back onto the course with men from his squad who are a point down, still arguing over a stream crossing on their board.
 
@@ -126,7 +126,7 @@ Instead of pointing at it he walks them the bearing, and they find the point tog
 
 Mail call is on the printed schedule, and the drill sergeants run it standing up, holding each envelope out at arm's length, charging push-ups by the letter, paid gladly by the entire platoon. Personal time runs until lights out, and half the bay spends it on boots, the other half on paper.
 
-Sam writes to his grandmother on Sunday nights with the pad braced on his knee, in block capitals, because he gave up on cursive about the age of ten. He gets as far as the six hundred once, the number sitting alone in the middle of a fresh sheet, before he tears the page free, balls it, and starts again from the top. Okoro, writing his own letter on the rack across the aisle, watches the paper go into the bin and says nothing about it until the second sheet is half full. "Number too good to send her?" "Something like that." Sam keeps writing. What she gets is the cold, a drill sergeant who yells at everyone and means well by it, the length of a meal, and no number anywhere on the page by the time he seals it.
+Sam writes to his grandmother on Sunday nights with the pad braced on his knee, in block capitals, because he gave up on cursive about the age of ten. He reaches as far as the six hundred once, the number sitting alone in the middle of a fresh sheet, before he tears the page free, balls it, and starts again from the top. Okoro, writing his own letter on the rack across the aisle, watches the paper go into the bin and says nothing about it until the second sheet is half full. "Number too good to send her?" "Something like that." Sam keeps writing. What she finds is the cold, a drill sergeant who yells at everyone and means well by it, the length of a meal, and no number anywhere on the page by the time he seals it.
 
 Okoro asks him once who it goes to.
 
@@ -198,7 +198,7 @@ Three separate documents leave the company by Friday, but a fourth sits under hi
 
 The first is a memorandum for record, four paragraphs long, three of them laying out the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the talk to the nearest quarter hour. The fourth quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received special instruction from an unknown source, and says the question needs answering before he is placed anywhere at all.
 
-The second goes to the supporting counterintelligence office, under the standing rule that puts unexplained special training in front of somebody whose job it is to look at it; the captain has sat through that briefing every year he has served and can list the flagged types from memory.
+The second goes to the supporting counterintelligence office, under the standing rule that puts unexplained special training in front of somebody whose job it is to look at it; the captain has sat through that briefing each year he has served and can list the flagged types from memory.
 
 The third is a request to the battalion S-2 for the education block of the soldier's security form, to find out whether the school printed on the form matches the school in the private's mouth.
 
@@ -218,4 +218,4 @@ On the way down to the range in the first week of November he asks Okoro whether
 
 "This. Whether we're through the sorting part of it yet, or whether they're still deciding."
 
-Okoro takes the whole enquiry for a bit and laughs; Sam permits him this, on the grounds that it is a perfectly fair thing to laugh at. On the Thursday he puts it to somebody else.
+Okoro takes the enquiry for a bit and laughs; Sam permits him this, on the grounds that it is a perfectly fair thing to laugh at. On the Thursday he puts it to somebody else.

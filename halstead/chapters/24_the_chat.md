@@ -8,7 +8,7 @@ This is the first September when all of them are somewhere else. Eli, a long way
 
 Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, a hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in her hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, a few words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
-Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, messages at once after a long gap, a reply to something asked in the evening landing after midnight because a shift only just ended. A message sent to the whole group in the middle of the night gets an answer from somebody within minutes. It has for years.
+Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, messages at once after a long gap, a reply to something asked in the evening landing after midnight because a shift only just ended. A message sent to the whole group in the middle of the night draws an answer from somebody within minutes. It has for years.
 
 A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse well past cell service. Whatever he's in the middle of at the agency, Theo reads a joke about somebody's boss within minutes of it landing, but sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then a run of replies arrives inside a minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
@@ -68,7 +68,7 @@ eli: which honestly has been the most interesting thing thats happened to me sin
 
 ________________
 
-Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her first weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot late. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
+Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and grows genuinely upset when it's moved. In her first weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot late. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
 
 ruth: my roommate alphabetizes her spice rack
 
@@ -198,7 +198,7 @@ theo: it IS nice. its also insane
 
 ________________
 
-Sam gets half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and whatever's left of it goes to the chat. Tonight it's this.
+Sam draws half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and whatever's left of it goes to the chat. Tonight it's this.
 
 sam: does anyone elses job do trust falls
 
@@ -296,7 +296,7 @@ Anyway she writes the names down, a name to a line, and turns the paper around s
 
 The list holds him long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
-"Two days on the nine. Six months, then it gets reviewed."
+"Two days on the nine. Six months, then it is reviewed."
 
 "And the monthly fee on the account."
 
