@@ -104,6 +104,45 @@ already on file there and they still read as the right two directions if the
 author wants it touched; I have nothing to add to that call-out.
 
 
+## Chapters 5 and 6
+
+### Called out, not changed
+
+### chapters/05_behind.md, line 113
+
+**Current:** "A second try gets her no further, so Chloe draws it a third
+time with her own numbers, because his numbers have been sitting in her head
+since the lesson and taking her nowhere: three quarters divided by an
+eighth."
+
+**Why the current voice is wrong:** "A second try" is an abstract event noun
+standing in the subject slot with an active verb ("gets"), in a sentence
+where Chloe is the one actually trying and is the real subject of every verb
+around it (she draws, she shades, she tries the problem). This is the "active
+with nobody in it" fault, milder than "the next thing arrives" because "gets
+no further" is a settled idiom, but the same shape.
+
+**Why it was not auto changed:** Kept as a call-out for the same reason the
+last pass gave: this construction (an attempt or event as the grammatical
+subject of an idiom like "gets nowhere") is common, settled English, and I am
+not certain it is the fault the house rule is naming rather than ordinary
+phrasing. A house rule does not block this one; it is a judgment call the
+author should make, not a case a rule protects.
+
+**Active:** "Chloe tries a second time, gets no further, and draws it a
+third time with her own numbers, because his numbers have been sitting in
+her head since the lesson and taking her nowhere: three quarters divided by
+an eighth."
+
+**Passive:** "No further ground is gained on a second try, so Chloe draws it
+a third time with her own numbers, because his numbers have been sitting in
+her head since the lesson and taking her nowhere: three quarters divided by
+an eighth." This direction is close to unwritable here: there is no second
+party for a "by" phrase to name, since the whole point is that Chloe is
+alone with the problem, and the only passive I could build reads like a
+progress report, more literary than the page around it.
+
+
 ## Chapters 7 and 8
 
 ### 2. New call-out: the reverse direction
@@ -196,6 +235,169 @@ after that..."
 ---
 
 
+## Chapters 11 and 12
+
+# Voice pass, second round: chapters 11 and 12
+
+Scope: `chapters/11_eight.md` and `chapters/12_nine.md` only. Read
+`passes/HOUSE_RULES.md` (rule 8 especially), `passes/PROSE_PRINCIPLES_STRUCTURE.md`
+("The author's two questions"), `passes/PROSE_PRINCIPLES_CLARITY.md` (section 11),
+`passes/DO_NOT_FLAG.md`, and root `CLAUDE.md` before writing this.
+
+**No edits were made to either chapter file.** The brief for this pass was to
+find sentences shaped like the one already reported in chapter 12, Kavi's
+"the answer came back no different than the first time," which is neither a
+misused passive nor a person deleted from an active sentence: it is the
+book's third, separate fault, an abstract or inanimate noun given an active
+verb of motion or intent that a real person or institution actually
+performed. This record inventories the others of that shape found in these
+two chapters, in narration and in dialogue, for the author to judge, the same
+way the Kavi line was judged. I checked the whole of both chapters for
+misused/missing-agent passives and for active sentences that should be
+passive (the other two directions in the brief) and found none I was
+confident enough about to report; every passive in both chapters satisfies at
+least one of the three-part test in house rule 8 (topic continuity, obvious
+or irrelevant agent, or the receiver being what the sentence is about).
+
+Every quotation below was grepped against the live file before being written
+down.
+
+**Changed: 0. Called out: 5.**
+
+---
+
+### chapters/12_nine.md, line 17
+
+**Current:** "The first is that the form accomplishes nothing. It asks you for three, but it gave me zero of them."
+
+**Why the current voice is wrong:** The book's third fault (neither a bad
+passive nor a deleted person): the inanimate "form" is given three verbs of
+intent it cannot perform (accomplish, ask, give). The actual actor is the
+office that reads the form, counts the preferences, and hands out
+assignments, and it is not a mystery: it is the subject of Ruth's very next
+line ("They read it. They counted...") and of Kavi's own next sentence
+("they looked again"). This is the identical shape as the already-flagged
+"the answer came back no different than the first time" four sentences
+later in this same speech: Kavi routes his complaint through an object
+instead of through the people who acted, twice inside one paragraph.
+
+**Why it was not auto changed:** Dialogue. The house rule against changing
+what a character says applies. It may also be doing real work: a kid
+describing an institutional grievance through the bureaucratic object rather
+than through a person is a plausible way to voice this particular
+frustration, especially since it recurs with "the answer came back" a few
+lines on, which reads like a deliberate rhetorical habit for Kavi rather
+than an accident. That is exactly the kind of call the author, not a pass,
+should make.
+
+**Active:** "The first is that they didn't listen. I asked for three and they gave me zero of them."
+**Active:** "The first is that the office did nothing with it. I put down three, and they handed me zero of them."
+**Passive:** "The first is that nothing was done about it. Three were asked for, and zero were given to me."
+
+---
+
+### chapters/12_nine.md, line 131
+
+**Current:** "Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start."
+
+**Why the current voice is wrong:** Same fault as above, this time in
+narration rather than dialogue: "the answer" is an abstraction standing in
+for what the girl actually told Sam. She is on the page two words earlier
+("asks her how she did it"), so the sentence deletes a specific, present
+person's speech and lets an abstract noun report it in her place. It is also
+the same word, "answer," in the same shape, as the Kavi line, so the fault
+now shows up in both a character's mouth and the narrator's own voice inside
+one chapter.
+
+**Why it was not auto changed:** The doer (the girl) is right there and the
+fix is easy on its face, but this sentence sits immediately before the "Left
+foot first, like she told me in January" line Sam gives in dialogue six
+lines later (line 137). Rewriting the narration to have her "tell" him risks
+either pre-empting or duplicating that dialogue beat, and I was not sure
+which, so I am flagging rather than touching it without checking how the two
+are meant to work together.
+
+**Active:** "...and she tells him it is about where you put your left foot before you start."
+**Active:** "...and she says it comes down to where you put your left foot before you start."
+**Passive:** "...and he is told it is about where you put your left foot before you start."
+
+---
+
+### chapters/12_nine.md, line 79
+
+**Current:** "Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet but comes out loud."
+
+**Why the current voice is wrong:** "The room" cannot go anywhere. It is
+standing in for the students, who enter quiet and leave loud after
+Vasquez's demonstration; both verbs ("goes," "comes") are literal verbs of
+motion attached to a container in place of the people actually moving and
+reacting.
+
+**Why it was not auto changed:** I am not confident this is the fault
+rather than an accepted idiom. "The room went quiet" and its opposite are
+common enough in ordinary English that a rewrite risks being a fussier
+sentence for something most readers will not register as a problem, and the
+sentence is doing the "give the sound, not the state" work the house rules
+ask for elsewhere (chapter 7's two pleases) by reporting volume rather than
+naming a feeling. Left for the author's judgment on whether this rate of
+the construction is a defect at all.
+
+**Active:** "...and both times the class goes in quiet and comes out loud."
+**Active:** "...and both times they go in quiet and come out loud."
+**Passive:** not naturally available here. There is no real receiver of the
+class's noise to put in subject position without inventing one, and forcing
+it produces a more contorted sentence than the one it would replace, the
+same trap the last pass fell into with "Both countries' newspapers she
+opens in adjacent tabs."
+
+---
+
+### chapters/12_nine.md, line 59
+
+**Current:** "You're hearing tone as emphasis, and that's English doing it to you."
+
+**Why the current voice is wrong:** "English" is an abstract system, not an
+agent, but it is handed "doing it to you" as though it were a person acting
+on Chloe. The actual cause is Chloe's own ear, shaped by years of hearing
+English, which the sentence could name instead of giving the language
+itself intent.
+
+**Why it was not auto changed:** Dialogue, and the house rule against
+changing it. It is also close to how language teachers actually talk,
+personifying a first language's habits to explain an accent problem, so it
+may be intentional voice for Mrs. Sun rather than a fault. Another case for
+the author to weigh rather than a pass.
+
+**Active:** "You're hearing tone as emphasis, because English trained your ear to do that."
+**Active:** "You're hearing tone as emphasis, because that's what English taught your ear to do."
+**Passive:** "You're hearing tone as emphasis, because your ear has been trained that way by English."
+
+---
+
+### chapters/11_eight.md, line 151
+
+**Current:** "Chloe makes a mallet with a handle that turns out slightly oval, but she uses it for weeks, and the oval catches her eye only later."
+
+**Why the current voice is wrong:** "The oval" is given "catches her eye,"
+a verb of intent, in place of saying that Chloe notices it. Chloe, the one
+actually doing the noticing, is in the clause immediately before it ("she
+uses it for weeks").
+
+**Why it was not auto changed:** The weakest of the five in this record.
+"Catches the eye" is such a common, nearly invisible idiom that a rewrite
+risks manufacturing a fussier sentence for a fault most readers will never
+feel, over a minor beat. Not confident enough to touch without the author
+first deciding whether this rate of the construction is worth fixing at
+all, given the house rule that an overused technique is cut back, not
+driven to zero.
+
+**Active:** "Chloe makes a mallet with a handle that turns out slightly oval, but she uses it for weeks before she notices the oval."
+**Active:** "...but it's weeks before she notices the oval."
+**Passive:** "...but the oval isn't noticed by her until weeks later."
+
+---
+
+
 ## Chapters 13 and 14
 
 ### Call-outs: 2
@@ -282,6 +484,144 @@ number of teachers upstairs was never counted."
 
 **Passive:** "...because she spent those hours on a landing, and the
 teachers still upstairs were never counted by anyone on it."
+
+
+## Chapters 15 and 16
+
+### Called out, not changed
+
+### chapters/16_thirteen.md, line 87 — Ruth's dialogue, personified software
+
+**Current:** "It goes looking for recorders, anything on any network in
+range that's recording video, and about half are still on the password they
+shipped with, so it tries those first. For the changed ones it does
+everything else at once, cracking, sniffing, brute force, and others
+besides," Ruth says, watching Chloe's face throughout. "It runs the lot
+together and takes whichever arrives first, so it's eight ugly things in a
+box and not one clever thing, and one of them is always working. Once it's
+in, it writes noise into the recording every so often, over part of the
+file. Delete a file and somebody notices a file is missing. Make it noisy
+for a bit and that's a camera being a camera."
+
+**Why the current voice is wrong:** this is exactly the book's third,
+non-passive fault: an inanimate object given "goes," "tries," "does," "runs,"
+"takes," and "writes," verbs of motion and intent that a circuit board
+cannot perform, with no person named anywhere in five sentences as the one
+who actually built it to behave this way. Read as narration this would be
+the clearest possible hit.
+
+**Why it was not auto changed:** it is not narration. Every clause above sits
+inside quotation marks, attributed to Ruth, interrupted only by "Ruth says,
+watching Chloe's face throughout," which confirms the attribution rather
+than breaking it. The house rule says never change what a character says,
+and that rule is not conditional on which voice fault the line happens to
+commit.
+
+**Active:** "I've got it looking for recorders, anything on any network in
+range that's recording video, and about half are still on the password they
+shipped with, so I try those first. For the changed ones I run everything
+else at once, cracking, sniffing, brute force, and others besides," Ruth
+says, watching Chloe's face throughout. "I run the lot together and take
+whichever arrives first, so it's eight ugly things in a box and not one
+clever thing, and one of them is always working. Once it's in, I write noise
+into the recording every so often, over part of the file. Delete a file and
+somebody notices a file is missing. Make it noisy for a bit and that's a
+camera being a camera."
+
+**Passive:** "Recorders get looked for, anything on any network in range
+that's recording video, and since about half are still on the password they
+shipped with, those get tried first. For the changed ones, everything else
+gets done at once: cracking, sniffing, brute force, and others besides,"
+Ruth says, watching Chloe's face throughout. "The lot gets run together and
+whichever arrives first gets taken, so it's eight ugly things in a box and
+not one clever thing, and one of them is always working. Once it's in, noise
+gets written into the recording every so often, over part of the file.
+Delete a file and somebody notices a file is missing. Make it noisy for a
+bit and that's a camera being a camera."
+
+**Does the dialogue rule cost us anything here, tested against the
+replacements above:** very little, and arguably it saves the passage rather
+than costing it. The active version puts "I" in Ruth's mouth seven times in
+five sentences, which reads like a kid nervously claiming credit rather than
+someone showing a friend a box she trusts to run unsupervised; the passive
+version reads like a spec sheet, not a girl who built a bomb-shaped thing out
+of a battery and a coil of wire and is proud of it at midnight. The
+personification is doing real characterization work: Ruth talks about her
+box the way the narration two pages later talks about her encryption,
+as a thing that has stopped needing her attention, which is close to the
+actual point of this stretch of the chapter. And fixing only the dialogue
+would not remove the pattern from the passage regardless, since the same
+shape recurs, unprotected, in the narration right after it (next call-out).
+The dialogue rule is not what is producing this reading; the choice to write
+the tool this way twice, once in her mouth and once in the narrator's, is.
+That is worth the author knowing, since it means the rule is not the thing
+to reconsider here even though it is the thing blocking the edit.
+
+### chapters/16_thirteen.md, line 107 — the same fault, in narration
+
+**Current:** "That takes the rest of the term; what results is slow, ugly,
+and pushes exactly as much traffic at three on a Sunday morning, with all of
+them asleep, as on a Thursday night with all of them typing."
+
+**Why the current voice is wrong:** "what results," an abstraction standing
+in for the finished program, is given "pushes," a verb describing a
+deliberate act of camouflage, with nobody named as the one who built it to do
+that. Read on its own this is a clean hit on the third category, no
+different in shape from the Ruth-dialogue case above, except that nothing
+here is quoted: this is the narrator's own sentence.
+
+**Why it was not auto changed:** judgment call, not a house rule. This
+sentence sits inside a short run that keeps describing the finished tool as
+self-sufficient once it is launched: "the encryption holds throughout" three
+lines above it, and two sentences later, "they run it... and it holds. It is
+still holding at Christmas." None of these read as a slip in isolation; taken
+together they look like a deliberate way of marking that human oversight has
+ended, matching the shape of Ruth's own dialogue about the same tool two
+pages earlier. Rewriting this one sentence and leaving "it holds" / "is still
+holding" untouched either fixes a third of the pattern and leaves the rest,
+or, rewritten alone, breaks the consistency the run appears to be building on
+purpose. Fixing the whole run was outside what one borderline sentence
+justifies, so this is flagged rather than pulled on.
+
+**Active:** "That takes the rest of the term, and they finish something slow
+and ugly, one that pushes exactly as much traffic at three on a Sunday
+morning, with all of them asleep, as on a Thursday night with all of them
+typing."
+
+**Passive:** "That takes the rest of the term; what gets built is slow and
+ugly, and traffic is pushed through it at exactly the same rate at three on
+a Sunday morning, with all of them asleep, as on a Thursday night with all
+of them typing."
+
+### chapters/15_twelve.md, line 213 — a body part deciding
+
+**Current:** "Chloe steps back out of the way and sits down on the floor
+because her legs have decided to, while Ruth is already moving between the
+four of them, two fingers on a throat, then the next, then the next."
+
+**Why the current voice is wrong:** "decided" is a verb of intent that only a
+whole person, not a pair of legs, can perform. This is the third category
+again, minor version: the real event is that Chloe's own legs go out from
+under her, involuntarily, and the sentence hands the intent-verb to the body
+part instead of leaving the involuntariness plain.
+
+**Why it was not auto changed:** genuine judgment call. Nothing is lost to a
+reader here; nobody reading this sentence thinks legs can deliberate, and the
+phrasing reads as Chloe's own dry, faintly self-mocking way of describing an
+involuntary reaction, consistent with her voice elsewhere in this same scene
+("she is bad at it, just like drawing and dance"). I am not confident this is
+a defect rather than a habit of hers the narration is matching on purpose,
+so it is flagged rather than smoothed over.
+
+**Active:** "Chloe steps back out of the way and sits down on the floor
+because her legs give out, while Ruth is already moving between the four of
+them, two fingers on a throat, then the next, then the next."
+
+**Passive:** not naturally available: nobody else is doing anything to her
+legs, so there is no real agent to promote out of a "by" phrase. Forced
+anyway, for completeness: "sits down on the floor, her legs no longer to be
+relied on," which drags a passive-shaped construction in for no gain and is
+not a recommendation.
 
 
 ## Chapters 17 and 18
@@ -653,6 +993,101 @@ to how the sentence would actually be spoken than "was... asked" does; still
 carries the same register mismatch as the option above, just less severely)
 
 
+## Chapters 23 and 24
+
+### Part 2: a fresh sweep for what the last pass did not look for
+
+The brief for this pass is explicit that the last one barely looked in the
+other direction: active voice that should be passive, because a topic jumped
+or because an unimportant doer got invented to fill a subject slot. I went
+back through both chapters specifically hunting for that shape, using the
+grep list above as a starting point for every generic or institutional
+subject in both files (`the office`, `the school`, `the woodshop`, `the
+sewing room`, `the Army`, `they`, `the group`, `the bank`, `the branch`).
+
+I did not find one. The honest reason, checked against both files' own shape
+rather than assumed: chapter 23 is a single continuous narrative that tracks
+named people (Chloe, Nadia, Sam, her grandmother) almost without a break, so
+the paragraph's actual topic is very often already the person in the subject
+slot, which is exactly the case where active is correct and passive would be
+the wrong call, not the reverse. Chapter 24 is built out of short declarative
+sentences (`style_report.py` puts its median at 7 words a sentence, mode 5)
+and a chat transcript; a sentence that short rarely has room to bury a topic
+under an invented agent in the first place. Neither chapter is the kind of
+paperwork-and-institution passage (the kind `PROSE_PRINCIPLES_STRUCTURE.md`
+points to for genuine object-subject passives, "Polish is added to the
+autumn schedule") where this fault tends to live. I checked the closest
+candidates anyway:
+
+- Line 11, "every family confirmed a headcount by the first of May, and the
+  office matched the chairs to it." The paragraph's topic across the
+  sentence is the count of chairs, and "the office" is a genuinely new,
+  minor actor introduced to do the matching. A passive ("the chairs were
+  matched to it") is defensible on Celce-Murcia's own grounds, since the
+  agent is exactly the unnamed, irrelevant kind function 2 describes. I am
+  not calling this out formally: "the office" is not an invented placeholder,
+  it is the same kind of institutional actor the paragraph already uses
+  twice more in the same breath (the school worked out the count, the
+  sewing room handled the gowns), and losing that parallel would cost the
+  paragraph something real. Reported here as the closest thing I found to
+  the shape the brief asked me to hunt, and as the reason I am not padding
+  this report with a weaker version of it.
+
+I checked the "neither, but still wrong" direction as thoroughly, since it is
+the book's own recurring fault and the one most likely to still be sitting in
+a chapter this heavily worked. Two places looked like candidates on a first
+read and turned out, on the second, not to be:
+
+- Chapter 23, line 21: "Then it's Kessler, and eleven years compress into
+  thirty feet of plywood and a moment of applause." An abstract subject
+  ("eleven years") taking an active verb. But nobody is missing from this
+  sentence the way Chloe was missing from "her own box goes down the
+  hallway." Nobody literally compresses eleven years; this is a stated
+  compression of time into a moment, the ordinary work of narrative summary,
+  not a person's action relocated onto an object. I am flagging it anyway,
+  since I went back and forth on it and the brief says to call out rather
+  than gamble, but I do not think it needs a fix. See below for the pair
+  written out in the required format.
+- Chapter 24, line 511, "The chat moves on within minutes," discussed on its
+  own below, since the brief asked for a judgment on it specifically rather
+  than a plain call-out.
+
+### Call-out kept for the record
+
+### chapters/23_the_first_one.md, line 21
+
+**Current:** "Then it's Kessler, and eleven years compress into thirty feet
+of plywood and a moment of applause."
+
+**Why the current voice might be wrong:** the book's recurring fault is an
+inanimate or abstract subject taking a verb that only a real actor could
+perform. "Eleven years compress" gives an abstract span of time an active
+verb of motion. It is the same surface shape as "her own box goes down the
+hallway," which was fixed earlier in this same chapter.
+
+**Why it was not auto changed:** I do not believe it is the same fault.
+There is no missing person here the way there was a missing Chloe carrying
+her own box; nothing is being relocated off a specific actor onto an object.
+This reads as the ordinary compression of narrative summary (a decade of
+history folded into one walk across a stage), which the fake-agency rule was
+never meant to reach, and I could not find a version of this sentence with a
+real doer in it that says the same thing. Reported per the brief's
+instruction to call out rather than gamble on a sentence I went back and
+forth on, not because I think it needs the author's decision the way the two
+below do.
+
+**Active:** "Chloe crosses thirty feet of plywood, and eleven years go with
+her."
+**Active:** "Eleven years narrow to thirty feet of plywood and a moment of
+applause." (a smaller change, keeps the compression but gives it a verb that
+is closer to a real, if metaphorical, contraction than "compress" is)
+**Passive:** "Eleven years are folded into thirty feet of plywood and a
+moment of applause, and Kessler crosses it." (an active/passive split of the
+same idea is not really available here; the sentence's whole point is the
+abstraction, so any version that names a real doer for the "compressing"
+loses the thing the sentence is for)
+
+
 ## Chapters 25 and 26
 
 ### Write-up required: misplaced modifier inside protected dialogue
@@ -700,6 +1135,174 @@ available, but a poor fit: it is more formal than anything else in the same
 speech, and the sentence's actual problem is a missing comma, not a wrong
 voice, so passive does not address the defect either way. Given because the
 format asks for one, not as a recommendation.
+
+
+## Chapters 29 and 30
+
+### Chapter 29: the three "comes / go to / waits" sentences
+
+The prior pass found these same three sentences, could not decide whether they
+were the book's fake-agency fault or the chapter's own idiom, and called all
+three out with two active replacements apiece, no passive offered for any of
+them. That gap is exactly this pass's assignment: decide, and give the passive
+direction a real hearing.
+
+**What settles it:** the "abstract-noun-plus-verb-of-transit" shape is not
+confined to these three lines. It runs through both chapters as a
+matter-of-fact way of describing institutional process, with no personifying
+intent and never flagged anywhere else:
+
+- `29_the_file.md` line 7: "The building takes two badges to get past"
+- `29_the_file.md` line 9: "The floor holds about sixty desks like his"
+- `29_the_file.md` line 47: "The report runs long"
+- `30_cleared.md` line 29: "The background investigation takes ten weeks"
+- `30_cleared.md` line 31: "The paperwork comes first"
+- `30_cleared.md` line 129: "The clearance comes through in December"
+
+None of these six read as a defect, and none has ever been called out. "Takes,"
+"holds," "runs," and "comes" with an abstract or institutional subject are
+fully grammaticalized English idioms for describing how a process unfolds
+(compare "the meeting runs long," "the mail comes," "trouble comes"), not
+cases of a category mistake (Ryle) where an abstraction is given a verb only a
+person could perform. That is the frame the two weaker of the three call-outs
+below actually belong to. The third is a real, if mild, outlier.
+
+### chapters/29_the_file.md, line 11
+
+**Current:** "The work that actually uses what he's good at comes maybe once a
+week: a transcript in Pashto, another in Dari, the halves of a region most
+analysts only get one side of."
+
+**Why the current voice might be wrong:** "the work" is an abstraction taking
+an active verb of arrival, which is the book's own fake-agency shape when it
+is a defect.
+
+**Why it probably is not wrong:** it is the same idiom as the six comparison
+sentences above, none of which have ever needed a doer. Under rule 8's test:
+is the missing doer a specific person already in the scene, whose loss costs
+the reader something? No. Whatever routes Pashto and Dari transcripts to him
+specifically (a supervisor, a rotation, a queue) is never named anywhere else
+in the chapter and does not need to be; this is squarely rule 8's second leg,
+an agent that is unknown, irrelevant, or obvious. "Comes" here is not
+personifying "the work," it is the standard idiom for describing an
+irregular, low-frequency event, the same as "trouble comes" or "opportunities
+come."
+
+**Why it was not changed:** I judge it correct as written, not blocked by a
+house rule. Both directions given anyway, per the brief.
+
+**Active:** "He gets the work that actually uses what he's good at maybe once
+a week: a transcript in Pashto, another in Dari, the halves of a region most
+analysts only get one side of." Costs something real: this paragraph already
+carries "he" as the subject of the surrounding sentences, and this adds one
+more without naming anything the reader did not already know.
+
+**Passive:** "The work that actually uses what he's good at is handed to him
+maybe once a week: a transcript in Pashto, another in Dari, the halves of a
+region most analysts only get one side of." Grammatically clean, keeps "the
+work" as subject the way the original does, but is flatter and more official
+in rhythm than the plain original for no gain, since nothing was actually
+broken.
+
+**Recommendation:** leave as written.
+
+### chapters/29_the_file.md, line 17
+
+**Current:** "The first ninety minutes go to routine material: an embassy
+posting, a shipping manifest, a currency dispute that resolved itself a
+decade ago."
+
+**Why the current voice might be wrong:** same shape, "a span of time" taking
+the transfer verb "go to."
+
+**Why it probably is not wrong:** same idiom family as "the money goes to
+rent." More importantly, this sentence is doing real work as the first step
+of a pattern: "the first ninety minutes go to routine material" is followed
+two sentences later by "a folder near the bottom has a name on the tab," and
+two paragraphs after that by "the last item in the folder waits until the
+next morning." All three track the box by time-slice and by item rather than
+by repeating "he," which is a legitimate thematic-progression device (Daneš:
+each theme is a piece of the same larger thing, here "the box") and also
+keeps this stretch off the chapter's "he"/"she" sentence-opener count, a
+measure the prior pass was already managing carefully in chapter 30 (see its
+items 5 and 7).
+
+**Why it was not changed:** judged correct, and changing it would cost the
+pattern described above.
+
+**Active:** "He spends the first ninety minutes on routine material: an
+embassy posting, a shipping manifest, a currency dispute that resolved
+itself a decade ago." Breaks the time-and-item tracking pattern; also this
+paragraph opens "The box is unglamorous... Working through it in order,
+front to back, he takes his glasses off," so this would be a second "he" in
+three sentences doing the same kind of work the first one already did.
+
+**Passive:** "The first ninety minutes are spent on routine material: an
+embassy posting, a shipping manifest, a currency dispute that resolved
+itself a decade ago." Clean, correct under all three legs of rule 8 (topic
+continuity, agent obvious and irrelevant, receiver is what the sentence is
+about), and slightly more formal than the idiom it would replace for no
+reason to be more formal.
+
+**Recommendation:** leave as written.
+
+### chapters/29_the_file.md, line 39
+
+**Current:** "The last item in the folder waits until the next morning,
+coffee first, at his desk before the floor has properly filled in: something
+in the stack has already told him this one will take longer than the rest
+put together."
+
+**This is the real outlier of the three, and the one I would actually
+recommend changing if the author wants one fixed.** "Comes" and "go to" are
+close to grammaticalized idiom with no experiencer implied. "Waits" is a step
+further: it requires something capable of anticipation, which a piece of
+paper is not. This is close to the shape Ryle's category mistake and this
+project's own clarity brief (`PROSE_PRINCIPLES_CLARITY.md`, section 11) name
+directly: a verb borrowed from a physical or mental action attached to a
+thing that cannot do it, with nothing in the sentence signaling it as a
+deliberate figure.
+
+**The complication, which is why I am calling it out rather than changing
+it:** the prior pass judged this personification deliberate, doing the same
+suspense work as the clause right after it, "something in the stack has
+already told him this one will take longer than the rest put together." That
+second clause is a different thing, though: it is Theo's own premonition,
+filtered through his point of view (a camera-legal report of what he senses),
+not a claim that the folder itself is patient. Conflating the two lets a real
+category mistake borrow cover from a legitimate one sitting next to it.
+
+**Why a passive, specifically, is the interesting answer here:** the sentence
+immediately before this one already spends three actions on "he" ("He takes
+the folder home... and works through the state assessment and the memo about
+the teacher before he thinks about dinner"). An active fix that restores Theo
+as the doer adds a fourth "he" in two sentences, right where the chapter is
+about to turn into its heaviest section. It also tempts the kind of inverted,
+literary syntax the brief specifically warns against (the prior pass's own
+active alternative, "The last item in the folder he saves for the next
+morning," fronts the object before the verb, which reads more literary than
+what it replaces, not less, and violates the register rule for exactly the
+reason the brief calls out). A passive avoids both problems at once: it keeps
+"the last item" as the subject, continuing the time-and-item pattern from the
+two sentences above it, and it replaces "waits" with an accurate, unpersonified
+verb without adding a fourth "he" anywhere.
+
+**Active:** "He saves the last item in the folder for the next morning,
+coffee first, at his desk before the floor has properly filled in: something
+in the stack has already told him this one will take longer than the rest
+put together." Accurate and plain, but the fourth "he"-headed action in two
+sentences, and it drops "the last item" out of the subject slot right where
+the paragraph has been tracking the box by item.
+
+**Passive:** "The last item in the folder is saved for the next morning,
+coffee first, at his desk before the floor has properly filled in: something
+in the stack has already told him this one will take longer than the rest
+put together." Keeps the subject the paragraph has been tracking, removes the
+one genuine personification of the three, and adds no pronoun load. This is
+the version I would actually recommend if the author decides this line needs
+fixing at all.
+
+---
 
 
 ## Chapters 31 and 32
@@ -892,7 +1495,7 @@ line, not because this one needed defending.
 > caution that caught the sensor gap years ago.
 
 The personified software. "Sits," "watches itself work," "runs," "watching
-the watcher" — an inanimate subject given verbs of perception and self-
+the watcher": an inanimate subject given verbs of perception and self-
 monitoring that, taken as a checklist, looks exactly like the shape of the
 book's recurring fake-agency fault. I left it alone because it is not a
 slip; it is the sentence's actual subject, described from the one vantage
@@ -909,4 +1512,4 @@ changed.
 
 ---
 
-16 sentences called out across 10 spans.
+29 sentences called out across 15 spans.
