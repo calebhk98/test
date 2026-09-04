@@ -19,8 +19,8 @@ ORDER = [
     "days-28-30-osaka.md",
 ]
 
-DAY_HDR   = re.compile(r"^##\s+Day\s+(\d+)\b", re.M)
-DAY_TOTAL = re.compile(r"^\|\s*\*\*Day total\*\*\s*\|\s*\*\*([\d,]+)\*\*\s*\|", re.M)
+DAY_HDR   = re.compile(r"^##\s+Day\s+(\d+)\b", re.M)  # matches "## Day 11 - ..." and "## Day 11 — ..."
+DAY_TOTAL = re.compile(r"^\|\s*\*{0,2}Day total\*{0,2}\s*\|\s*\*{0,2}\s*¥?([\d,]+)\s*\*{0,2}\s*\|", re.M)
 RUNNING   = re.compile(r"^\*\*Running total after Day (\d+):.*$", re.M)
 
 def parse(path):

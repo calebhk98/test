@@ -109,7 +109,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Activities | 8,700 | 56 |
 | **Day total** | **39,730** | **256** |
 
-**Running total after Day 20: ¥779,140 ($5,027)**
+**Running total after Day 20: ¥768,460 ($4,958)**
 
 ---
 
@@ -199,7 +199,7 @@ Under-6 admission is free at all four stops; figures above are adult fares only.
 | Activities | 9,000 | 58 |
 | **Day total** | **37,330** | **241** |
 
-**Running total after Day 21: ¥816,470 ($5,268)**
+**Running total after Day 21: ¥805,790 ($5,199)**
 
 ---
 
@@ -289,7 +289,7 @@ Under-6 admission is free at all four stops; figures above are adult fares only.
 | Activities | 8,700 | 56 |
 | **Day total** | **38,980** | **251** |
 
-**Running total after Day 22: ¥855,450 ($5,518)**
+**Running total after Day 22: ¥844,770 ($5,450)**
 
 ---
 
@@ -369,7 +369,7 @@ calls for. Infants ride free on city buses; party cost = adult fare x 3.
 | Activities | 1,470 | 9 |
 | **Day total** | **29,650** | **191** |
 
-**Running total after Day 23: ¥885,100 ($5,710)**
+**Running total after Day 23: ¥874,420 ($5,641)**
 
 ---
 

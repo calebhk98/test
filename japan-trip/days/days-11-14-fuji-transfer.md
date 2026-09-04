@@ -76,7 +76,7 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 | Activities | 5,700 | 37 |
 | **Day total** | 41,000 | 265 |
 
-**Running total after Day 11: ¥409,600 ($2,643)** - carried forward from an assumed Days 1-10 total of ¥368,600 ($2,378), i.e. the Tokyo segment landing exactly on its budgeted envelope (lodging ¥180,000 + food ¥85,000 + transport ¥28,600 + activities ¥75,000); the actual Day 1-10 file will supersede this if its real day-by-day figures differ.
+**Running total after Day 11: ¥403,710 ($2,605)**
 
 ---
 
@@ -154,7 +154,7 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 | Activities | 11,400 | 74 |
 | **Day total** | 43,250 | 279 |
 
-**Running total after Day 12: ¥452,850 ($2,922)**
+**Running total after Day 12: ¥446,960 ($2,884)**
 
 ---
 
@@ -231,7 +231,7 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 | Activities | 6,900 | 45 |
 | **Day total** | 32,650 | 211 |
 
-**Running total after Day 13: ¥485,500 ($3,132)**
+**Running total after Day 13: ¥479,610 ($3,094)**
 
 ---
 
@@ -308,7 +308,7 @@ Allow the full 20-30 min buffer at Mishima per the brief; the schedule above boo
 | Activities | 0 | 0 |
 | **Day total** | 69,580 | 449 |
 
-**Running total after Day 14: ¥555,080 ($3,581)**
+**Running total after Day 14: ¥549,190 ($3,543)**
 
 ---
 
@@ -329,4 +329,4 @@ Envelope check against the segment's assigned cells (lodging is fixed, not flexe
 
 Lodging (fixed, informational): 3 nights at K's House Mt. Fuji (¥18,000 x 3 = ¥54,000) + 1 night at Toyoko Inn Kyoto Shijo-Omiya (¥19,000) = ¥73,000.
 
-**Running total after Day 14: ¥555,080 ($3,581)** - see the Day 11 note on the assumed Days 1-10 carry-forward.
+**Running total after Day 14: ¥549,190 ($3,543)**
