@@ -714,7 +714,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the day it went up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice this afternoon, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice this afternoon, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free.
 
@@ -965,7 +965,7 @@ On the third night Sam sits down across from her without a tray, then gets up, g
 
 "No, what's it called."
 
-The name of it goes across the table, and he asks whether it is good, and Chloe takes a moment finding an answer while he sits there looking at her, waiting for it.
+Chloe gives him the name of it, and he asks whether it is good, and she takes a moment finding an answer while he sits there looking at her, waiting for it.
 
 "It's fine, I guess. There's a girl there. She says I talk weird. So mostly I just keep quiet in class now."
 
@@ -1086,7 +1086,7 @@ She had expected the speed to feel like a punishment, but it feels like being le
 
 Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end. Where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the ones after it, and all of them together had taken about as long as she now has to answer in.
 
-Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which brings her to the where and the how-you-know with ninety seconds to spare. In that time Ruth produces a page and a half, most of a page comes from Kavi, who is still going when the teacher calls time and finishes the clause he is inside before setting his pen down square to the paper. But Owen manages two sentences, at the end of the row, with a line drawn through one of them.
+Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which brings her to the where and the how-you-know with ninety seconds to spare. In that time Ruth produces a page and a half, Kavi most of a page, still going when the teacher calls time, finishing the clause he is inside before setting his pen down square to the paper. But Owen manages two sentences, at the end of the row, with a line drawn through one of them.
 
 "You can keep going if you're mid-sentence, but not if you're mid-paragraph," the teacher says.
 
@@ -2849,7 +2849,7 @@ Chloe has written reports that long, in Mandarin last year and in French the yea
 
 That night, in the chair by the window, she reads Federalist 10, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen. Then she spends the rest of the weekend on an essay about whether a small state can be trusted with a veto.
 
-It comes back on the Monday with a mark and a short paragraph under it, which say she has spent the essay on a position she already held, that the other side appears nowhere on the page in a way its own supporters would believe, and that until it does he has no way of telling whether she is right or only comfortable.
+Hearn returns it on the Monday with a mark and a short paragraph under it, which say she has spent the essay on a position she already held, that the other side appears nowhere on the page in a way its own supporters would believe, and that until it does he has no way of telling whether she is right or only comfortable.
 
 On the Tuesday she tells him she read number 10.
 
@@ -3195,7 +3195,7 @@ On the Wednesday she builds the other side, because a man writing in 1961 makes 
 
 By Thursday afternoon she has stopped arguing with the page and started following it.
 
-It goes in on the Monday, twenty-eight pages of it, but Hearn gives it back a week later with a B on the front.
+Chloe turns it in on the Monday, twenty-eight pages of it, but Hearn gives it back a week later with a B on the front.
 
 The note runs to half a page: she hedges, twice on page eight, once on page twenty-two, and the conclusion itself, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered those objections earlier, so the hedge only asks the reader to answer them again. She keeps apologizing for the argument in the middle of making it. An argument you apologize for is a request. Make it or leave it out.
 
@@ -4333,7 +4333,7 @@ At the end of the week she finds Sandoval outside the laboratory again. "I thoug
 
 Sandoval looks at her a moment longer than the hallway needs. "I'll ask," she says, and that is the whole of the answer Chloe gets before Wednesday turns into the following one.
 
-A teacher takes Priya's phone off her early in March, for the ordinary reason: it is out on the desk during a lecture on evidence. In the drawer of the lectern it goes; he gives it back on the Friday in front of everybody and says only that she can charge it at the back. The chat is on that phone, years of it, locked, and locked properly, but sitting in an unattended drawer for days inside a building where getting into things is a course with an examination at the end of it.
+A teacher takes Priya's phone off her early in March, for the ordinary reason: it is out on the desk during a lecture on evidence. Into the drawer of the lectern he puts it; he gives it back on the Friday in front of everybody and says only that she can charge it at the back. The chat is on that phone, years of it, locked, and locked properly, but sitting in an unattended drawer for days inside a building where getting into things is a course with an examination at the end of it.
 
 Priya says at dinner that the lock held, which Ruth calls the wrong sentence before Priya has finished saying it. The right sentence is that a single lock stood between a lectern drawer and everything the table has said to each other since the chat started, but that whether it held is a question they are asking on Friday instead of one they had already answered on Monday.
 
@@ -4810,7 +4810,7 @@ Odile's runs five pages, and Chloe tells her it is many times the limit.
 
 "A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it."
 
-It goes in as it is.
+Odile submits it as it is.
 
 Ruth's own prompt asks her to describe a time she failed, and she spends an hour on the word, nowhere near an example yet. "Failed by whose standard," she says, half to the room.
 
@@ -6365,7 +6365,7 @@ The major opens the clipboard again, at a page he has had shut all afternoon.
 
 "School, sir."
 
-It goes on the sheet with the culvert. Which school, he leaves alone.
+The major puts it on the sheet with the culvert. Which school, he leaves alone.
 
 Sam waits for a second question.
 
@@ -7216,7 +7216,7 @@ A woman in the department office finally reads the whole folder, not just the to
 
 "That can't be right. The material in the opening weeks belongs to a course pitched years behind where a school like this ought to be placing me. I sat a diagnostic in August and I would like to know what it was actually for."
 
-The woman repeats that it's the placement anyway, and offers her a pamphlet about tutoring resources that stays on the counter after Ruth leaves. Ruth keeps the folder. The mistake, she decides, is bigger than one office can fix, something upstream of advising and the registrar both. It goes in the folder under problems she'll solve once she works out who actually owns them.
+The woman repeats that it's the placement anyway, and offers her a pamphlet about tutoring resources that stays on the counter after Ruth leaves. Ruth keeps the folder. The mistake, she decides, is bigger than one office can fix, something upstream of advising and the registrar both. Ruth puts it in the folder under problems she'll solve once she works out who actually owns them.
 
 The classes themselves settle into a shape she recognizes from the middle years at Halstead: a problem set due Friday that takes her forty minutes on a Tuesday, a lecture that spends fifty minutes proving something she could prove in three. In recitation, half the room is still copying the professor's board by the time she's already checked her answer against the back of the book. Out of habit, not ambition, she sits in the third row, and finishes early enough most weeks to read ahead into the following week before the hour is up. When a preceptor hands back a problem set with a perfect score and no comment, she catches him at the door of the section room before he can leave and asks him straight whether a class this easy is normal for the room or just for her. He says he hasn't graded enough of these to know yet, and goes back to his stack. She reads the shrug as confirmation anyway: a correct answer earns silence, and so does a class already pitched at the right level for the room. The reading stays two weeks ahead so she'll have something to do once it catches up.
 
@@ -7904,7 +7904,7 @@ It's still warm enough at midnight that she's got the window cracked, the ordina
 
 Chloe reads that at one in the morning, with work waiting on the other side of a short night.
 
-Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality, the kind of building that stopped feeling strange to walk into somewhere early on. Before she puts the phone down she taps out one line to Ruth alone, not the group: watch the thread tonight, im out for a few hours. Ruth answers within a minute, already awake: on it. The rest of the messages get read once, and the phone goes face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
+Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality, the kind of building that stopped feeling strange to walk into somewhere early on. Before she puts the phone down she taps out one line to Ruth alone, not the group: watch the thread tonight, im out for a few hours. Ruth answers within a minute, already awake: on it. Chloe reads the rest of the messages once and sets the phone face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
 The next day, she goes in and does her job, and texts Ruth once before lunch to ask if the night held.
 

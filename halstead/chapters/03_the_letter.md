@@ -174,7 +174,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the day it went up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice this afternoon, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice this afternoon, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free.
 

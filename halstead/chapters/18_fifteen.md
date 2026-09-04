@@ -176,7 +176,7 @@ At the end of the week she finds Sandoval outside the laboratory again. "I thoug
 
 Sandoval looks at her a moment longer than the hallway needs. "I'll ask," she says, and that is the whole of the answer Chloe gets before Wednesday turns into the following one.
 
-A teacher takes Priya's phone off her early in March, for the ordinary reason: it is out on the desk during a lecture on evidence. In the drawer of the lectern it goes; he gives it back on the Friday in front of everybody and says only that she can charge it at the back. The chat is on that phone, years of it, locked, and locked properly, but sitting in an unattended drawer for days inside a building where getting into things is a course with an examination at the end of it.
+A teacher takes Priya's phone off her early in March, for the ordinary reason: it is out on the desk during a lecture on evidence. Into the drawer of the lectern he puts it; he gives it back on the Friday in front of everybody and says only that she can charge it at the back. The chat is on that phone, years of it, locked, and locked properly, but sitting in an unattended drawer for days inside a building where getting into things is a course with an examination at the end of it.
 
 Priya says at dinner that the lock held, which Ruth calls the wrong sentence before Priya has finished saying it. The right sentence is that a single lock stood between a lectern drawer and everything the table has said to each other since the chat started, but that whether it held is a question they are asking on Friday instead of one they had already answered on Monday.
 

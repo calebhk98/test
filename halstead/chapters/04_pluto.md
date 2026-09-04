@@ -172,7 +172,7 @@ On the third night Sam sits down across from her without a tray, then gets up, g
 
 "No, what's it called."
 
-The name of it goes across the table, and he asks whether it is good, and Chloe takes a moment finding an answer while he sits there looking at her, waiting for it.
+Chloe gives him the name of it, and he asks whether it is good, and she takes a moment finding an answer while he sits there looking at her, waiting for it.
 
 "It's fine, I guess. There's a girl there. She says I talk weird. So mostly I just keep quiet in class now."
 

@@ -146,7 +146,7 @@ On the Wednesday she builds the other side, because a man writing in 1961 makes 
 
 By Thursday afternoon she has stopped arguing with the page and started following it.
 
-It goes in on the Monday, twenty-eight pages of it, but Hearn gives it back a week later with a B on the front.
+Chloe turns it in on the Monday, twenty-eight pages of it, but Hearn gives it back a week later with a B on the front.
 
 The note runs to half a page: she hedges, twice on page eight, once on page twenty-two, and the conclusion itself, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered those objections earlier, so the hedge only asks the reader to answer them again. She keeps apologizing for the argument in the middle of making it. An argument you apologize for is a request. Make it or leave it out.
 

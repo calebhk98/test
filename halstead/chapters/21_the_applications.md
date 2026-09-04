@@ -48,7 +48,7 @@ Odile's runs five pages, and Chloe tells her it is many times the limit.
 
 "A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it."
 
-It goes in as it is.
+Odile submits it as it is.
 
 Ruth's own prompt asks her to describe a time she failed, and she spends an hour on the word, nowhere near an example yet. "Failed by whose standard," she says, half to the room.
 

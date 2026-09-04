@@ -10,7 +10,7 @@ She had expected the speed to feel like a punishment, but it feels like being le
 
 Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end. Where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the ones after it, and all of them together had taken about as long as she now has to answer in.
 
-Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which brings her to the where and the how-you-know with ninety seconds to spare. In that time Ruth produces a page and a half, most of a page comes from Kavi, who is still going when the teacher calls time and finishes the clause he is inside before setting his pen down square to the paper. But Owen manages two sentences, at the end of the row, with a line drawn through one of them.
+Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which brings her to the where and the how-you-know with ninety seconds to spare. In that time Ruth produces a page and a half, Kavi most of a page, still going when the teacher calls time, finishing the clause he is inside before setting his pen down square to the paper. But Owen manages two sentences, at the end of the row, with a line drawn through one of them.
 
 "You can keep going if you're mid-sentence, but not if you're mid-paragraph," the teacher says.
 

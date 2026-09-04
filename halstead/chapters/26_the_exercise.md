@@ -150,7 +150,7 @@ The major opens the clipboard again, at a page he has had shut all afternoon.
 
 "School, sir."
 
-It goes on the sheet with the culvert. Which school, he leaves alone.
+The major puts it on the sheet with the culvert. Which school, he leaves alone.
 
 Sam waits for a second question.
 
