@@ -208,7 +208,7 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 "But I cut it," she says. "I don't want to know it's there every time I go up."
 
-Reaching for the next board, his attention is on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
+He reaches for the next board, his attention already on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
 
 They finish that Tuesday in late July and the steps hold. Her mother steps out, stands on them, and bounces on the top step twice.
 

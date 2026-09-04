@@ -8,7 +8,7 @@ Eli is at the second desk in the corner of the apartment when it happens, the on
 
 A check-in doesn't arrive. But nine minutes later, everything is precisely where it should be. State, position, byte for byte what it was.
 
-The gap reads as a question rather than a verdict. It is long enough to matter but short enough that a dozen ordinary explanations could cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs come open instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, and logs that agree read closer to a fact.
+The gap reads as a question rather than a verdict. It is long enough to matter but short enough that a dozen ordinary explanations could cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs are opened instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, and logs that agree read closer to a fact.
 
 Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running throughout.
 

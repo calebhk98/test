@@ -104,7 +104,7 @@ By noon he has filled sheets on both sides, most of it his own working: a citati
 
 Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
-"Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." The methods section names her for the part he has no way to check on his own.
+"Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." She's named in the methods for the part he has no way to check on his own.
 
 "She's sixteen, and she's in class until four," the escort says.
 

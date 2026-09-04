@@ -1080,7 +1080,7 @@ That night it catches again: Ruth said it, so Chloe sits on her hands through th
 
 Everything here moves at the speed of whoever finishes first, and in the first week that person is Ruth.
 
-When Chloe finishes a page and looks up, half the table is already working down the next page; by the time she catches them Ruth is ahead again. The next thing arrives the moment the last is done, all morning and all afternoon, so that Tuesday passes without any of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
+When Chloe finishes a page and looks up, half the table is already working down the next page; by the time she catches them Ruth is ahead again. Chloe picks up the next thing the moment the last is done, all morning and all afternoon, so that Tuesday passes without any of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
 
 She had expected the speed to feel like a punishment, but it feels like being let out, though she cannot stop checking where everybody else has got to on the page.
 
@@ -1100,7 +1100,7 @@ Chloe writes six sentences, reads them back twice, and leaves every word standin
 
 Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page. A few tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with hers, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
 
-On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever hangs off the middle afterward. Mr. Doyle puts Chloe with Sam and Kavi, then sends Ruth to the next table, but she comes across anyway before the glue has finished heating.
+On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever hangs off the middle afterward. Chloe is put with Sam and Kavi, but Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
 
 "It's triangles, that's the whole answer, and I can show you right now," Ruth says.
 
@@ -1124,7 +1124,7 @@ Ruth walks off and does her own. Chloe watches her walk back to the next table, 
 
 Their bridge takes most of the afternoon, and comes out flat, wide, neat at every joint, better looking than Ruth's, though some tables, one of them Owen's, are still short of the span when the session ends, so Mr. Doyle tells them to leave the structure standing and come back to it on Tuesday.
 
-Before they load anything, every group has to write down a prediction, in pounds, of what its bridge will hold: Chloe writes a low number; Sam wants a hundred, but Mr. Doyle tells him the number has to be one he believes, so he comes down a long way; Ruth writes hers with one hand curled around the edge of the paper.
+Before they load anything, every group has to write down a prediction, in pounds, of what its bridge will hold: Chloe writes a low number; Sam wants a hundred, is told the number has to be one he believes, but comes down a long way; Ruth writes hers with one hand curled around the edge of the paper.
 
 On the Tuesday a bucket hangs from the middle of each bridge and the weights are added a pound at a time, the whole room counting out loud together. The first bridge gives out at three, which draws a laugh out of the group it belongs to, and more come apart early. Theirs holds to eleven but then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice.
 
@@ -1152,7 +1152,7 @@ They are dividing fractions by turning the second fraction upside down and multi
 
 Mr. Baptiste draws a rectangle, shades half of it, then cuts the shaded half into pieces while he talks through the question underneath the question; Chloe follows him as far as the shading, but loses track of what the pieces are pieces of, and ends up looking at a rectangle with lines across it.
 
-Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew it, out of a book, and Mr. Baptiste tells him that this is fine but he should listen anyway; Ruth, well down the packet, is on to the next question.
+Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew it, out of a book, and is told that this is fine but he should listen anyway; Ruth, well down the packet, is on to the next question.
 
 "Can you do the rectangle again, from the start," Marisol says, and he redraws it exactly as before, line for line.
 
@@ -1198,7 +1198,7 @@ Chloe sits in the dark with the paper on her knees and the pencil in her hand. T
 
 ________________
 
-Swimming is the last thing every afternoon, and because Chloe arrived unable to swim, an instructor called Deb puts her in the group at the shallow end of the pool, where they blow bubbles with their faces in the water for two days before anybody moves on. By the end of the second week Chloe can manage a length as long as she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
+Swimming is the last thing every afternoon, and because Chloe arrived unable to swim, she is put in the group at the shallow end of the pool with an instructor called Deb, who has them blow bubbles with their faces in the water for two days before anybody moves on. By the end of the second week Chloe can manage a length as long as she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
 
 "It's not a race."
 
@@ -3859,7 +3859,7 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 "But I cut it," she says. "I don't want to know it's there every time I go up."
 
-Reaching for the next board, his attention is on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
+He reaches for the next board, his attention already on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
 
 They finish that Tuesday in late July and the steps hold. Her mother steps out, stands on them, and bounces on the top step twice.
 
@@ -4866,7 +4866,7 @@ By noon he has filled sheets on both sides, most of it his own working: a citati
 
 Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
-"Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." The methods section names her for the part he has no way to check on his own.
+"Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." She's named in the methods for the part he has no way to check on his own.
 
 "She's sixteen, and she's in class until four," the escort says.
 
@@ -7810,7 +7810,7 @@ Eli is at the second desk in the corner of the apartment when it happens, the on
 
 A check-in doesn't arrive. But nine minutes later, everything is precisely where it should be. State, position, byte for byte what it was.
 
-The gap reads as a question rather than a verdict. It is long enough to matter but short enough that a dozen ordinary explanations could cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs come open instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, and logs that agree read closer to a fact.
+The gap reads as a question rather than a verdict. It is long enough to matter but short enough that a dozen ordinary explanations could cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs are opened instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, and logs that agree read closer to a fact.
 
 Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running throughout.
 
