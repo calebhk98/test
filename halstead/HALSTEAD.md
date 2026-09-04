@@ -3120,7 +3120,7 @@ Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm do
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later.
+Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the fortnight is up. Bex asks, across the table, which way she would bet, and asks it again twice more, until she has both ways of measuring it in full, start to finish, and where they disagree.
 
 The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, before Chloe had said a word of it to him herself, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further round to find Chloe's row before she gets to the end of the sentence.
 
@@ -3832,6 +3832,8 @@ Nadia looks at it a long moment. "She's right. It's both."
 
 By the end of the meal the table's five opinions have settled on hers.
 
+Iyad tells it at breakfast two days later, to a boy who was not at the table that night: how the table sat on that napkin for most of an hour while Chloe held the answer back until Nadia took the corner off her. The boy asks whether she was right, in the end. "She generally is," Iyad says, and starts on somebody else's week.
+
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always, and Chloe does not sit on that side of the table again for the rest of the term.
 
 ________________
@@ -4284,11 +4286,15 @@ Hark comes across the room and stops at the front row. "A hundred and twenty dol
 
 Chloe wipes the board and sits down.
 
-Iyad has more than figures. In February he has Aurel's name next to hers on the sign-up sheet for an optional Saturday session neither of them ends up going to, and he turns it into an item on his own list before either of them has said a word to the other about anything. He says it at the long table on a Tuesday, in the middle of something else, in the same flat voice he reads the rest of his list in, as a thing everybody already knows. By the Thursday it has been said back to her twice.
+Iyad has more than figures. In February he has Aurel's name next to hers on the sign-up sheet for an optional Saturday session neither of them ends up going to. Six other pairs sit just as close on that page, for sessions just as skipped. He leaves each of those exactly where the sheet has them and picks up only hers, turning it into an item on his own list before either of them has said a word to the other about anything. He says it at the long table on a Tuesday, in the middle of something else, in the same flat voice he reads the rest of his list in, as a thing everybody already knows. By the Thursday it has been said back to her twice.
 
 She has never heard the name in her life. She has which boy it is by lunch, off the language-block timetable on the noticeboard, and walks past his door twice that afternoon to put a face to it; he is a head taller than her and does not look up either time. The sign-up sheet is still pinned outside the workshop, both their names on it in different hands, for a session neither of them went to. By March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
 
-She tells Iyad to stop, at the long table, in front of the same people he said it in front of. He says he only repeated what he heard and cannot help what he hears, and then asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs.
+She tells Iyad to stop, at the long table, in front of the same people he said it in front of. He says he only repeated what he heard and cannot help what he hears.
+
+"Heard it from who, though? There's a sheet outside the workshop with his name and mine on it, for a session neither of us went to, and that's the only place they've ever sat next to each other. Say who told you before that, or say there wasn't anybody."
+
+He asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs.
 
 "Four," Chloe says, "and I could give you the number for everybody else on your list too, since you're the one who keeps it." Rustem, three seats down, tells Iyad to leave the ledger out of it before somebody asks him for his own number, and the laugh that started for Chloe finishes somewhere else.
 
@@ -4901,7 +4907,7 @@ Bex doesn't stop eating. "I did tell him that, and it was true by the time I sai
 
 "I drew it on the back of an exam script in April. You were there."
 
-"And I said it out loud, with somebody writing it down. That's the version he's got now."
+"And I said it out loud, with somebody writing it down. That's the version he's got now." Bex is already turned to the boy on her other side, giving him the geometry too, unchanged, down to the run finishing in April.
 
 Chloe has nothing to put next to that. She finishes breakfast at the counter.
 
@@ -7101,6 +7107,12 @@ Before the funding he mentions the reference interviews, all of them done now, a
 "That'll be Bex," Chloe says. "Alcantar."
 
 He doesn't confirm it, but he doesn't deny it either, and he writes something down before he goes on.
+
+He goes back a page before the next question. "The long field. The one with the wire down the fence. Who did the geometry on that?"
+
+"I did," Chloe says. "She was there for the run in April, but the geometry's mine, from January. I can get you the exam script it started on, if you need it dated."
+
+Whitaker writes the offer down next to the answer and doesn't ask for the script.
 
 The funding is what he asks about: who the school's principal donor is, name or foundation, anything at all, and he waits while she actually thinks about it.
 
