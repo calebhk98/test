@@ -24,7 +24,7 @@ Chloe writes six sentences, reads them back twice, and leaves every word standin
 
 Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page. A few tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with hers, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
 
-On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever hangs off the middle afterward. Chloe is put with Sam and Kavi, but Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
+On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever hangs off the middle afterward. Mr. Doyle puts Chloe with Sam and Kavi, then sends Ruth to the next table, but she comes across anyway before the glue has finished heating.
 
 "It's triangles, that's the whole answer, and I can show you right now," Ruth says.
 

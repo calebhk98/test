@@ -610,7 +610,7 @@ Her mom calls the district office on Monday, where a receptionist takes the name
 
 Her mom spells it out, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the one on the other end. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it."
 
-Then the phone drops onto the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
+Then her mom drops the phone onto the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
 Her mom runs the tap at the sink. "She says there's no school by that name working with the district in any capacity. She went back years to check. And she said to be careful."
 
@@ -648,7 +648,7 @@ The wait after that is shorter than all the others.
 
 "Right, okay, thank you so much for going through all of that with me."
 
-Then the call continues a long time after that. Her mom's voice changes into the one she uses at the pediatrician, asking what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever, whether there is a nurse or a person they call the nurse, what Chloe eats, whether Chloe can be pulled out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then how many children are going to be in the building.
+Then the call continues a long time after that. Her mom's voice changes into the one she uses at the pediatrician, asking what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever, whether there is a nurse or a person they call the nurse, what Chloe eats, whether she can pull Chloe out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then how many children are going to be in the building.
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
@@ -682,9 +682,9 @@ Her mom pulls out a chair and stands behind it.
 
 ________________
 
-Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging free under the chair while he talks through the first part of it, reading the headings out loud in the voice he uses for train station announcements, so that Chloe laughs at the one for lights out.
+Her dad looks up the website that night on the laptop at the kitchen table, and because it's Friday, Chloe gets to sit next to him, her feet swinging free under the chair while he talks through the first part of it, reading the headings out loud in the voice he uses for train station announcements, so that Chloe laughs at the one for lights out.
 
-A photograph of a field with goals on it draws a look, and a pool draws a question about whether she would swim, to which she says yes. When he points out she is still learning, she says she would get better there, so he says fair enough.
+Chloe stops at a photograph of a field with goals on it, and when a pool comes up her dad asks whether she would swim, to which she says yes. When he points out she is still learning, she says she would get better there, so he says fair enough.
 
 Then he finds the page about what a Tuesday looks like, hour by hour, doing all of the hours in the voice, including the hour that's just lunch.
 
@@ -696,7 +696,7 @@ Chloe waits a while for him to keep talking, then goes up for her book and comes
 
 Her mom searches on her own on the Sunday, on the laptop, with the door shut, typing the name in and getting the website, then getting it again from a different direction.
 
-Searches from every direction she can think of turn up the school's own website, then stop: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
+She tries every direction she can think of and turns up nothing but the school's own website: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
 
 For a school that has put over a hundred children through a summer and done it again every year since, that is what she finds; she says so at the table that night with the laptop open.
 
@@ -742,7 +742,7 @@ Her mom waits for more.
 
 Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, then goes out, leaving the door open a few inches behind her.
 
-On the ninth night Chloe is supposed to be asleep, having been sent back once, but comes out a second time in her socks, skipping the fourth stair.
+On the ninth night Chloe is supposed to be asleep, her parents having sent her back once already, but she comes out a second time in her socks, skipping the fourth stair.
 
 "She's been flat since Christmas, and you've seen it, because she comes home and she says it was good."
 
@@ -823,7 +823,7 @@ The laundry bags are green. They go outside your door on Tuesday and Friday nigh
 
 The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home but in the office.
 
-Lights out is earlier for the sixes than for the sevens, which puts Chloe in the first group until August.
+Lights out is earlier for the sixes than for the sevens, so the school puts Chloe in the first group until August.
 
 "If you stop wanting to be here, tell any adult and we'll take you home, same day, with no argument about it from anybody here, no attempt to talk you round."
 
@@ -873,7 +873,7 @@ Then Priya says goodnight, and inside a minute she is asleep.
 
 Chloe lies on top of the covers with her shoes on.
 
-That evening she goes down to the phone by the front desk, which you are allowed to use whenever you want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished, then dials the number off the card in her folder.
+That evening she goes down to the phone by the front desk, which anyone can use whenever they want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished, then dials the number off the card in her folder.
 
 Her mom picks up in the middle of the first ring.
 
@@ -899,7 +899,7 @@ Her mom gets up, turns the other bed down, and sits on the end of it.
 
 So her mom talks, doing the drive down, the place where they stopped and the woman on the desk downstairs who has a son at a college in a state Chloe couldn't find.
 
-Then her mom brings up a thing that happened at her work in June, which Chloe has been told twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
+Then her mom brings up a thing that happened at her work in June, which she has already told Chloe twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
 
 In the morning her mom drives her back and tells her she can do that every night if she wants. Chloe says okay.
 
@@ -1011,7 +1011,7 @@ Chloe says yes.
 
 ________________
 
-There's a fourth in Pluto who stays silent day after day, answering when he's called on, in as few words as he can, laughing at Sam, and otherwise silent.
+There's a fourth in Pluto who stays silent day after day, answering when the teacher calls on him, in as few words as he can, laughing at Sam, and otherwise silent.
 
 Chloe has been doing the same thing for six days.
 
@@ -1100,7 +1100,7 @@ Chloe writes six sentences, reads them back twice, and leaves every word standin
 
 Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page. A few tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with hers, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
 
-On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever hangs off the middle afterward. Chloe is put with Sam and Kavi, but Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
+On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever hangs off the middle afterward. Mr. Doyle puts Chloe with Sam and Kavi, then sends Ruth to the next table, but she comes across anyway before the glue has finished heating.
 
 "It's triangles, that's the whole answer, and I can show you right now," Ruth says.
 
@@ -2529,7 +2529,7 @@ Fen is on second floor now with a girl from Maine, and while she and Chloe say h
 
 The teacher is stacking chairs along the back wall. "It carries on being yours, which is the entire answer. It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September. There are shelves of it upstairs and I'll show you the room on the way out."
 
-Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. A novel about a lighthouse takes her a week, and she understands most of it, but inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
+Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. She spends a week on a novel about a lighthouse and understands most of it, but inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
 
 The day is longer now, and longer again after Christmas: mathematics, writing, literature, and political history carrying over, French and logic new. Logic is an hour of being shown a sentence and asked what it is actually claiming, which she can do from the first week. On the phone she tells her mother it's like taking a lid off.
 
@@ -2619,7 +2619,7 @@ On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the s
 
 Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the moment Ruth stopped hitting above it. A bracket's a bracket. It doesn't matter when we drew it, the pipe doesn't know the difference."
 
-Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. The bracket rule survives into the summer and reaches a stairwell, a laundry chute, and one of the goals on the field.
+Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. They carry the bracket rule into the summer, into a stairwell, a laundry chute, and one of the goals on the field.
 
 In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, and she reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.
 
@@ -2754,7 +2754,7 @@ Sam spends the year on the overhang.
 
 Ruth asks her at dinner how the languages are going, and Chloe gives her all of it: which of the two is moving and which has stalled, where the stalling is, what she has tried against it, the thing Mrs. Sun said in October that she has only just understood, and what she is going to do about the tones. Ruth listens through all of it, says the tone problem sounds like the thing she had with the ablative, and gives her back an account of that at about the same length. Nobody at the table looks up.
 
-There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly, then sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September nobody has made it over. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly, then sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
 Sam gets over it on the eleventh of May, with thirty people at the bottom, because he has spent days telling everybody he is going to do it that afternoon.
 

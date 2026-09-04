@@ -70,7 +70,7 @@ Her mom calls the district office on Monday, where a receptionist takes the name
 
 Her mom spells it out, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the one on the other end. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it."
 
-Then the phone drops onto the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
+Then her mom drops the phone onto the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
 Her mom runs the tap at the sink. "She says there's no school by that name working with the district in any capacity. She went back years to check. And she said to be careful."
 
@@ -108,7 +108,7 @@ The wait after that is shorter than all the others.
 
 "Right, okay, thank you so much for going through all of that with me."
 
-Then the call continues a long time after that. Her mom's voice changes into the one she uses at the pediatrician, asking what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever, whether there is a nurse or a person they call the nurse, what Chloe eats, whether Chloe can be pulled out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then how many children are going to be in the building.
+Then the call continues a long time after that. Her mom's voice changes into the one she uses at the pediatrician, asking what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever, whether there is a nurse or a person they call the nurse, what Chloe eats, whether she can pull Chloe out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then how many children are going to be in the building.
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
@@ -142,9 +142,9 @@ Her mom pulls out a chair and stands behind it.
 
 ________________
 
-Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging free under the chair while he talks through the first part of it, reading the headings out loud in the voice he uses for train station announcements, so that Chloe laughs at the one for lights out.
+Her dad looks up the website that night on the laptop at the kitchen table, and because it's Friday, Chloe gets to sit next to him, her feet swinging free under the chair while he talks through the first part of it, reading the headings out loud in the voice he uses for train station announcements, so that Chloe laughs at the one for lights out.
 
-A photograph of a field with goals on it draws a look, and a pool draws a question about whether she would swim, to which she says yes. When he points out she is still learning, she says she would get better there, so he says fair enough.
+Chloe stops at a photograph of a field with goals on it, and when a pool comes up her dad asks whether she would swim, to which she says yes. When he points out she is still learning, she says she would get better there, so he says fair enough.
 
 Then he finds the page about what a Tuesday looks like, hour by hour, doing all of the hours in the voice, including the hour that's just lunch.
 
@@ -156,7 +156,7 @@ Chloe waits a while for him to keep talking, then goes up for her book and comes
 
 Her mom searches on her own on the Sunday, on the laptop, with the door shut, typing the name in and getting the website, then getting it again from a different direction.
 
-Searches from every direction she can think of turn up the school's own website, then stop: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
+She tries every direction she can think of and turns up nothing but the school's own website: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
 
 For a school that has put over a hundred children through a summer and done it again every year since, that is what she finds; she says so at the table that night with the laptop open.
 
@@ -202,7 +202,7 @@ Her mom waits for more.
 
 Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, then goes out, leaving the door open a few inches behind her.
 
-On the ninth night Chloe is supposed to be asleep, having been sent back once, but comes out a second time in her socks, skipping the fourth stair.
+On the ninth night Chloe is supposed to be asleep, her parents having sent her back once already, but she comes out a second time in her socks, skipping the fourth stair.
 
 "She's been flat since Christmas, and you've seen it, because she comes home and she says it was good."
 

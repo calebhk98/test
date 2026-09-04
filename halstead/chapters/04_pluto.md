@@ -30,7 +30,7 @@ The laundry bags are green. They go outside your door on Tuesday and Friday nigh
 
 The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home but in the office.
 
-Lights out is earlier for the sixes than for the sevens, which puts Chloe in the first group until August.
+Lights out is earlier for the sixes than for the sevens, so the school puts Chloe in the first group until August.
 
 "If you stop wanting to be here, tell any adult and we'll take you home, same day, with no argument about it from anybody here, no attempt to talk you round."
 
@@ -80,7 +80,7 @@ Then Priya says goodnight, and inside a minute she is asleep.
 
 Chloe lies on top of the covers with her shoes on.
 
-That evening she goes down to the phone by the front desk, which you are allowed to use whenever you want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished, then dials the number off the card in her folder.
+That evening she goes down to the phone by the front desk, which anyone can use whenever they want, but because there is a boy in front of her who is crying, quietly about it, she stands back a way and reads the noticeboard until he is finished, then dials the number off the card in her folder.
 
 Her mom picks up in the middle of the first ring.
 
@@ -106,7 +106,7 @@ Her mom gets up, turns the other bed down, and sits on the end of it.
 
 So her mom talks, doing the drive down, the place where they stopped and the woman on the desk downstairs who has a son at a college in a state Chloe couldn't find.
 
-Then her mom brings up a thing that happened at her work in June, which Chloe has been told twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
+Then her mom brings up a thing that happened at her work in June, which she has already told Chloe twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
 
 In the morning her mom drives her back and tells her she can do that every night if she wants. Chloe says okay.
 
@@ -218,7 +218,7 @@ Chloe says yes.
 
 ________________
 
-There's a fourth in Pluto who stays silent day after day, answering when he's called on, in as few words as he can, laughing at Sam, and otherwise silent.
+There's a fourth in Pluto who stays silent day after day, answering when the teacher calls on him, in as few words as he can, laughing at Sam, and otherwise silent.
 
 Chloe has been doing the same thing for six days.
 
