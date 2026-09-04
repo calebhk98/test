@@ -88,7 +88,7 @@ Rhetoric is an hour a week of dismantling a speech to find the place where the p
 
 Art history is in the spring. In February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998.
 
-Kavi asks whether the essay went in all right, meaning yes or no, and gets the two ways of measuring the age of the universe, why they disagree, which one she would bet on and why she would not bet much, and where in the fortnight she stopped being sure. He waits for the end of it, then tells her which of the two he would bet on, and they are on it when the plates go.
+Kavi asks whether the essay went in all right, meaning yes or no, and gets the two ways of measuring the age of the universe, why they disagree, which one she would bet on and why she would not bet much, and where in the fortnight she stopped being sure. He waits for her to finish, then tells her which of the two he would bet on, and they are on it when the plates go.
 
 Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the same picture in both of those numbers, and it sat in a room untouched between them the entire time. Nobody touched it, nobody even opened the case, and the price still went up while it just sat there doing nothing."
 
@@ -122,7 +122,7 @@ Bex says it over her shoulder, to the table, with the bottom of the slip folded 
 
 "It's a stupid question," Chloe says at dinner, before anybody has asked her.
 
-Kavi says, "Not stupid." He is already eating again. "Everyone wants it. I'd swap you for juries in a heartbeat."
+Kavi says, "Not stupid." He is eating again. "Everyone wants it. I'd swap you for juries in a heartbeat."
 
 Her fork is in her hand and still unused. "It's a stupid question because it's got an answer, and they knew what was under them. February, then again in March, then again in May, and every single time somebody sat in a room and signed it. I'm going to write down what happened, then write down why it was wrong, and that's the entire essay."
 
