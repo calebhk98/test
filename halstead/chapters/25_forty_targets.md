@@ -4,7 +4,7 @@
 
 Sam likes the Army immediately.
 
-The bus from the reception depot reaches the company area well after dark in the first week of August, by which time the lights over the door are pulling moths off the training area for a mile around. A drill sergeant reads surnames off a clipboard in an order only the clipboard understands, and Sam, first off the bus, first with his arms full of bedding, spends twenty minutes standing in a spot he is later told to leave.
+The bus from the reception depot reaches the company area well after dark in the first week of August, by which time the lights over the door are pulling moths off the training area for a mile around. A drill sergeant reads surnames off a clipboard in an order only the clipboard understands, and Sam, first off the bus, first with his arms full of bedding, spends twenty minutes standing in a spot the drill sergeant later tells him to leave.
 
 That night he falls asleep to the rest of the bay discovering their racks all at once, then wakes before the lights, and the bay in the dark is a footrace.
 
@@ -18,7 +18,7 @@ Drill Sergeant Ruiz has a voice built for open ground and shows no sign of ownin
 
 Ruiz pulls the blanket onto the floor with a single pull, stands up, then says the two words he says to everyone. "Again."
 
-Sam does it again, and it is wrong again in a different place, and it stays wrong day after day, until the rest of the bay stops finding it funny. A private named Okoro, brothers in the Guard, already knows most of it, and makes his own rack at half speed next to Sam so Sam can copy the folds. After that it takes Sam about ninety seconds, which puts him in the back half of the platoon, roughly where he remains.
+Sam does it again, and it is wrong again in a different place, and it stays wrong day after day, until the rest of the bay stops finding it funny. A private named Okoro, brothers in the Guard, already knows most of it, and makes his own rack at half speed next to Sam so Sam can copy the folds. After that it takes Sam about ninety seconds, and he ends up in the back half of the platoon, roughly where he remains.
 
 "I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
 
@@ -28,7 +28,7 @@ Sam does it again, and it is wrong again in a different place, and it stays wron
 
 Okoro thinks it over, decides against it, and goes back to his jaw.
 
-By the end of the first week Sam has asked a string of people how long the entire program runs, all of them have answered twenty-two weeks, but a couple of them have been stopped cold by the question he asks after.
+By the end of the first week Sam has asked a string of people how long the entire program runs, all of them have answered twenty-two weeks, but the question he asks after stops a couple of them cold.
 
 "Twenty-two weeks, and then what."
 
@@ -110,7 +110,7 @@ His first thought is that everyone here is tired in a way school could only gues
 
 His second is arithmetic, and it is better. Half the bay has been doing this for a couple of months, but he has been doing it half his life, so the gap between him and the man beside him is a fact about time rather than a fact about either of them.
 
-His third covers what the first two leave out, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an outfit does when it wants to know who to send off, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a good deal back for it, and will begin the real course once the sorting is finished.
+His third covers what the first two leave out, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an outfit does when it wants to know who to send off, which means the men around him are being measured on something nobody has shown him yet, are almost certainly holding a good deal back for it, and will begin the real course once the sorting is finished.
 
 The idea survives a week of testing. To find out whether it holds, he starts holding some of himself back on the land-navigation course, taking it half a step slower than he can manage and watching for anybody who marks him down for the difference. Nobody does. Three weeks of a slower time on his own sheet is what the test costs him and nothing else, so he stops running it and goes back to doing the course at the only speed he actually has.
 
@@ -196,7 +196,7 @@ The captain writes it out that evening at a folding desk under a bare bulb, long
 
 Three separate documents leave the company by Friday, but a fourth sits under his hand for a good while first.
 
-The first is a memorandum for record, four paragraphs long, three of them laying out the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the talk to the nearest quarter hour. The fourth quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received special instruction from an unknown source, and says the question needs answering before he is placed anywhere at all.
+The first is a memorandum for record, four paragraphs long, three of them laying out the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the talk to the nearest quarter hour. The fourth quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received special instruction from an unknown source, and says the question needs answering before the Army places him anywhere at all.
 
 The second goes to the supporting counterintelligence office, under the standing rule that puts unexplained special training in front of somebody whose job it is to look at it; the captain has sat through that briefing each year he has served and can list the flagged types from memory.
 

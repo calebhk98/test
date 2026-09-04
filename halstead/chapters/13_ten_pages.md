@@ -20,11 +20,11 @@ On the Tuesday she tells him she read number 10.
 
 "That's Madison," he says, and starts the hour without adding anything to it.
 
-That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. Number 6 goes that week and 9 the week after. By the end of October she is going through them in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
+That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. She reads number 6 that week and 9 the week after. By the end of October she is going through them in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
-In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it gets the pages out the other end anyway. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but Hearn marks that draft worse than the others.
+In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and she gets the pages out the other end of it anyway. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but Hearn marks that draft worse than the others.
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -40,7 +40,7 @@ The 10v1 starts in January.
 
 "That's a lot," Chloe says. "That's twice as many hands as I've ever had on me at once."
 
-A hand goes up, fingers spread, and turns. "Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over. So ten is five on you and five waiting for the first lot to get tired, and any more than that and they're just queuing for a turn."
+Kowalczyk holds up a hand, fingers spread, and turns it. "Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over. So ten is five on you and five waiting for the first lot to get tired, and any more than that and they're just queuing for a turn."
 
 "A minute's a long time, and that's a lot of seconds to hold them all off."
 
@@ -183,11 +183,11 @@ ________________
 
 In December Hearn hands an essay back with no note on it at all.
 
-On the way out into the corridor she checks the back of the last page twice, in case the note went there. There is a mark at the top and bare paper under it; the page is clean all the way down. She would rather have had a line telling her it was bad. A line she could argue with. A mark with no line under it leaves her only her own doubt to argue against.
+On the way out into the corridor she checks the back of the last page twice, in case Hearn wrote the note there. There is a mark at the top and bare paper under it; the page is clean all the way down. She would rather have had a line telling her it was bad. A line she could argue with. A mark with no line under it leaves her only her own doubt to argue against.
 
 Theo gets his back with no note that week, but he puts it straight into his bag and goes on with what he was saying.
 
-More go in ahead of the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good, then asks where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
+More are handed in ahead of the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good, then asks where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
 "There's a chair," her grandmother says. "You know, an actual chair, a step from where you're sitting on my floor. Your knees will thank you for it later, even if you don't believe me now."
 
@@ -197,7 +197,7 @@ Her grandmother puts a plate down on the carpet inside the doorway. "Your mother
 
 The Tuesday is in the second week of February.
 
-In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes towards that place. The last line goes down late, and there is an hour before lights out, which she spends on a book she picked herself.
+In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes towards that place. She writes the last line late, and there is an hour before lights out, which she spends on a book she picked herself.
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with minutes to go, and leaves it exactly as it is.
 

@@ -4,7 +4,7 @@
 
 The exercise is called Winter Anvil. It runs four days and nights, and the name has been up on the board outside the orderly room for weeks, weeks of Sam reading it on his way past.
 
-Staging is a gravel lot behind a row of tents, a folding table under a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody ahead of him gets handed a second flashlight when the first refuses to come on.
+Staging is a gravel lot behind a row of tents, a folding table under a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody hands the man ahead of him a second flashlight when the first refuses to come on.
 
 At the head of the line he draws his rifle, a yellow adapter going on the muzzle in front of an armorer who checks the fit of it, then reads the serial number back off the weapon and only then lets go of either. Then he puts the harness on over the top of everything else, sensors down both sides of the chest and around the back, a band of them fitted over the helmet, a transmitter clamped to the barrel ahead of the front sight.
 
@@ -24,7 +24,7 @@ Sam checks the bearing against the card, folds the card into his breast pocket, 
 
 ________________
 
-The first contact is at a fence line a little after midnight: strands of wire sagging between posts gone soft with rust, out past a stand of pines where the ground opens into a field left fallow a season or so back. Sam comes up on it slowly, listening before he moves the final fifty feet, the way he has been taught since he was small enough that the drill still felt like a game.
+The first contact is at a fence line a little after midnight: strands of wire sagging between posts gone soft with rust, out past a stand of pines where the ground opens into a field left fallow a season or so back. Sam comes up on it slowly, listening before he moves the final fifty feet, the way he learned it since he was small enough that the drill still felt like a game.
 
 Two men are waiting on the far side of it in the darkness, close enough to the posts that they read, for a moment, as more fence. They hold still, and so does he.
 
@@ -32,7 +32,7 @@ Then he withdraws back into the pines, drops down behind a root ball with the ri
 
 Two rounds. The report goes out flat across the fallow ground, returns off the tree line a moment behind itself, and both harnesses out there arrive immediately at a steady tone. The men stand up out of the grass, and one of them says something to the other that Sam is much too far away to hear.
 
-Crossing the wire a hundred meters down from where they were positioned, he picks his bearing up again and runs the whole business through once on the walk. It went fine. That is where he leaves it.
+Crossing the wire a hundred meters down from where they had taken up position, he picks his bearing up again and runs the whole business through once on the walk. It went fine. That is where he leaves it.
 
 ________________
 
@@ -46,7 +46,7 @@ A hand arrives on his sling from the left. Sam turns the muzzle off his own ches
 
 The lane goes cold for the better part of an hour.
 
-The man who owns the lane is a staff sergeant named Ives, and he arrives with a controller gun on a lanyard and a notebook he has begun writing in before he finishes asking his first question. Sam is put out on the road with his weapon cleared and his harness off and instructed to stand there, so he stands there.
+The man who owns the lane is a staff sergeant named Ives, and he arrives with a controller gun on a lanyard and a notebook he has begun writing in before he finishes asking his first question. Ives puts Sam out on the road with his weapon cleared and his harness off and instructs him to stand there, so he stands there.
 
 Down in the cut, the man Sam put into the wall is sitting on the lip of the pipe with his head tipped forward and a glove up under his nose. The medic comes off the back of a truck with a bag and a headlamp, reaches him first, works along the other three, arrives at Sam last.
 

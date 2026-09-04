@@ -42,7 +42,7 @@ Her mom says, "It's a school, and they run a month of it every summer. They teac
 
 "Half a day in the car."
 
-Every question goes to her mother, and Chloe sits through it.
+Dr. Ammons asks every question of her mother, and Chloe sits through it.
 
 "Were the same adults with her the whole time, or did they change over?"
 
@@ -182,7 +182,7 @@ On the fourth Thursday there's a new packet, which Chloe takes home, finishes in
 
 "That's absolutely fine, take your time," Mrs. Prahl says.
 
-She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. Chloe wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
+She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. Chloe wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but she can't get the rest of it past that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
 In December her mom comes up and sits down on the end of her bed, in the late afternoon, with the light off and Chloe lying on top of the covers with her shoes still on.
 

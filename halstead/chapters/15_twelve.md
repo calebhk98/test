@@ -40,7 +40,7 @@ That month Bell takes the metronome off the post and pockets it in front of all 
 
 Chloe and Odile take a week to settle it and spend most of those days arguing, because Odile's count is steadier while Chloe's holds up better late in a long day, when Odile begins stretching hers by a fraction she is unaware of, which Chloe establishes with a watch behind her over several sessions. Odile calls for November and ends up hating it, so after Christmas they swap according to the day, but the hit rate drops for a fortnight, then climbs again.
 
-Anatomy she learns on herself, so that by late October she can give her resting pulse, her blood pressure, what her hands do at rest against what they do after running the stairs, and where every bone sits under her skin, all by touch. Physics starts in September and hands back half of what she was told at ten with the reasoning underneath it, and psychology runs a term on mostly reading, a third of each hour spent arguing over whether the studies show what their authors claim.
+Anatomy she learns on herself, so that by late October she can give her resting pulse, her blood pressure, what her hands do at rest against what they do after running the stairs, and where every bone sits under her skin, all by touch. Physics starts in September, and half of what she was told at ten is handed back this year, with the reasoning underneath it, while psychology runs a term on mostly reading, a third of each hour spent arguing over whether the studies show what their authors claim.
 
 Her cuffs stop reaching her wrists in October, and inside a fortnight she and Ruth get stuck side by side in the doorway into Arabic, shoulder against shoulder in a gap built for a single person, where she discovers she is looking at the top of Ruth's head.
 
@@ -120,7 +120,7 @@ Saturday afternoon is the stock count: a clipboard between them, shelves of tinn
 
 They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to nineteen and finishes the cooler before dinner.
 
-The library draws her in about once a week now, because most evenings there are people in the third floor common room with a game spread over the table and a space kept for her at it.
+She goes to the library about once a week now, because most evenings there are people in the third floor common room with a game spread over the table and a space kept for her at it.
 
 ________________
 
@@ -368,4 +368,4 @@ Chloe opens her mouth, but to say what the small things are she has to start wit
 
 ________________
 
-By Christmas she can hold twenty-four seconds in the 10v1, though she is still ranked only thirtieth out of ninety.
+By Christmas she can hold twenty-four seconds in the 10v1, though she still sits thirtieth out of ninety.
