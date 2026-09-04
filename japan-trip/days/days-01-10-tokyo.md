@@ -596,11 +596,11 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Kotoku-in - Great Buddha | Hase, Kamakura | Exterior view; interior climb +¥50/adult optional, not counted | 1h00 | 300 | 900 |
-| Hase-dera | Hase, Kamakura | Temple + garden; carrier only, steep stairs | 0h35 | 400 | 1,200 |
-| Yuigahama Beach | Kamakura | Free, flat sand walk | 0h30 | 0 | 0 |
+| Kotoku-in - Great Buddha | 1h00 | 300 | 900 | 4-2-28 Hase, Kamakura, Kanagawa 248-0016 | A 13.4m bronze seated Buddha cast in 1252, sitting in the open air (its housing hall was washed away by a tsunami centuries ago) - one of Japan's most recognizable single images. The scale is the whole point; up close the statue is startlingly large. Free-standing gravel forecourt, fully stroller-passable; the optional interior climb (+¥50/adult, stairs-only) is not counted in this budget. |
+| Hase-dera | 0h35 | 400 | 1,200 | Hase, Kamakura, Kanagawa (nearest station Hase, Enoden; address unverified) | A Buddhist temple famous for a 9.18m gilded wooden statue of the eleven-headed Kannon (goddess of mercy), plus a hillside garden with sweeping views over Kamakura's coastline and hundreds of small Jizo statues left by parents grieving lost children. The garden and sea view are as much the payoff as the statue itself. The terraced garden is reached by steep stairs the compact stroller cannot manage - carrier only for this stop; the lower temple grounds are flat. |
+| Yuigahama Beach | 0h30 | 0 | 0 | Yuigahama, Kamakura, Kanagawa (nearest station Yuigahama, Enoden; address unverified) | Kamakura's town beach - a wide stretch of gray-brown sand facing Sagami Bay, popular with surfers and a favorite local sunset spot. A free, easy wind-down after two temples, letting toddlers loose on flat sand rather than touring anything more. Flat sand approach from the road, stroller-passable to the sand's edge; carrier or being carried is easier once actually on the sand. |
 
 ### Day 7 Cost
 
@@ -621,28 +621,35 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 **Base:** Tokyo
 **Weather (typical):** 22-24/15 °C, mild, waterfront breeze
 **Theme:** The segment's marquee paid day - teamLab Planets - paired with a free
-waterfront stroll at Odaiba.
+waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on the way in.
 
 ### Schedule
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast, self-catered |
-| 08:15 | 0h20 | Transit | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line |
-| 08:35 | 0h25 | Transit | Shimbashi -> Odaiba Kaihinkoen, Yurikamome |
-| 09:00 | 1h00 | Activity | Odaiba Marine Park beach + Rainbow Bridge view |
-| 10:00 | 0h25 | Transit | Odaiba -> Shin-Toyosu, Yurikamome |
-| 10:25 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
-| 11:55 | 0h45 | Food | Lunch, Toyosu food court/market area |
-| 12:40 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
-| 14:25 | 0h45 | Transit | Shimbashi -> Ueno via Yurikamome + JR |
-| 15:10 | - | Rest | Downtime at the hotel |
+| 07:15 | 0h20 | Transit | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line |
+| 07:35 | 0h25 | Transit | Shimbashi -> Odaiba Kaihinkoen, Yurikamome |
+| 08:00 | 0h50 | Activity | Odaiba Marine Park beach + Rainbow Bridge view (quiet at this hour) |
+| 08:50 | 0h20 | Transit | Odaiba Kaihinkoen -> Shijo-mae (Toyosu Market), Yurikamome |
+| 09:10 | 0h50 | Food | Breakfast - sushi/seafood grazing, Toyosu Market outer area |
+| 10:00 | 0h10 | Transit | Shijo-mae -> Shin-Toyosu, Yurikamome |
+| 10:10 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
+| 11:40 | 0h45 | Food | Lunch, Toyosu food court/market area |
+| 12:25 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
+| 14:10 | 0h45 | Transit | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
+| 14:55 | - | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
-- Both stops are flat, wide, stroller-friendly (teamLab Planets is barefoot indoors -
-  the stroller waits at the entrance locker area).
-- Active out-of-lodging time: about 6h10.
+- Odaiba, Toyosu Market, and teamLab Planets are all flat, wide, and stroller-friendly
+  (teamLab Planets is barefoot indoors - the stroller waits at the entrance locker area).
+- Active out-of-lodging time: about 6h30, including the new Toyosu Market breakfast
+  stop, still within the ~7h cap. Hotel breakfast is skipped this day in favor of the
+  market.
+- Toyosu Market's public hours run roughly 5am-5pm and it closes on scattered
+  Wednesdays and Sundays through the year - but Wed 14 Oct 2026 is not one of its
+  listed October closure dates (Oct 7, 21, 28 are the closed Wednesdays), so the
+  market is open on this day; verify against the official calendar closer to travel.
 
 ### Lodging
 
@@ -655,38 +662,45 @@ waterfront stroll at Odaiba.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
+| Breakfast | Grazing several Toyosu Market outer-area stalls - a grilled scallop skewer, tamagoyaki (rolled sweet omelette), 2-3 pieces of nigiri sushi, and hojicha tea | Toyosu Market outer area, Koto-ku (nearest station Shijo-mae; address unverified) | 550 | 3,600 |
 | Lunch | Food court set meals | Aqua City/Toyosu area | 700 | 3,400 |
-| Dinner | Self-catered | Hotel kitchenette | 800 | 2,350 |
-| Infant food | Purees/formula | Conbini | n/a | 2,200 |
+| Dinner | Self-catered - rice, ginger pork, steamed broccoli, miso soup | Hotel kitchenette | 800 | 2,350 |
+| Infant food | 3 formula feeds plus 2 Pigeon pouches (white fish and rice; pumpkin) for Infant A; Infant B eats table portions of the tamagoyaki and rice, plus a Wakodo snack pouch | Conbini | n/a | 2,200 |
 
-Adult kcal: 500 + 700 + 800 = **2,000**.
+Adult kcal: 550 + 700 + 800 = **2,050**. The market's famous sit-down sushi counters
+(Sushi Dai, Sushi Dokoro Yamazaki) run ¥4,000-5,000/adult omakase sets with long
+queues from 5am - skipped here for budget and toddler-patience reasons in favor of
+grazing individual stalls, landing near the ¥1,000-2,000/adult range this trip budgets
+for a market breakfast.
 
 ### Transport
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Ueno -> Shimbashi | JR Yamanote/Keihin-Tohoku Line | 0h20 | 200 | 600 |
-| Shimbashi -> Shin-Toyosu (via Odaiba Kaihinkoen) | Yurikamome | 0h25 | 470 | 1,410 |
+| Shimbashi -> Shin-Toyosu (via Odaiba Kaihinkoen and Shijo-mae/Toyosu Market) | Yurikamome | 0h55 | 470 | 1,410 |
 | Shin-Toyosu -> Shimbashi | Yurikamome | 0h25 | 470 | 1,410 |
 | Shimbashi -> Ueno | JR Yamanote/Keihin-Tohoku Line | 0h20 | 200 | 600 |
 
+Fare assumes one continuous IC-card journey Shimbashi-Shin-Toyosu with a stopover at
+Toyosu Market; a separately purchased ticket for each leg could run somewhat higher.
+
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Odaiba Marine Park + Rainbow Bridge view | Minato-ku | Free, flat waterfront promenade | 1h00 | 0 | 0 |
-| teamLab Planets TOKYO DMM | Toyosu, Koto-ku | Barefoot water/light exhibits; 2026 planning estimate, historically ¥3,800-4,900/adult - verify current pricing before booking | 1h30 | 5,300 | 15,900 |
+| Odaiba Marine Park + Rainbow Bridge view | 1h00 | 0 | 0 | 1-4 Daiba, Minato-ku, Tokyo 135-0091 | A flat waterfront park and small artificial beach on Tokyo Bay, facing the Rainbow Bridge and a half-scale replica Statue of Liberty. A nice, free, open-air start to the day before the crowds build. Free; wide paved promenade throughout, no stairs. |
+| teamLab Planets TOKYO DMM | 1h30 | 5,300 | 15,900 | Toyosu 6-1-16, Koto-ku, Tokyo 135-0061 | A barefoot, walk-through digital art museum: visitors wade ankle-deep through a mirrored water room and move through immersive projection-mapped spaces (a garden of orchids, an infinite light room). Genuinely unlike anything else on this trip, and the segment's marquee paid experience. Bring a full change of clothes - guests get wet to the knee in places; strollers are left at entrance lockers and the space is navigated on foot or in the carrier. 2026 planning estimate, historically ¥3,800-4,900/adult - verify current pricing before booking. |
 
 ### Day 8 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 8,700 | 56 |
+| Food | 11,550 | 75 |
 | Transport | 4,020 | 26 |
 | Activities | 15,900 | 103 |
-| **Day total** | **46,620** | **301** |
+| **Day total** | **49,470** | **319** |
 
 **Running total after Day 8: ¥286,340 ($1,847)**
 
@@ -737,10 +751,10 @@ traditional garden.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Sit-down set course | Yokohama Chinatown (specific restaurant unverified) | 900 | 4,700 |
-| Dinner | Self-catered, fresh seafood/produce from Yokohama | Hotel kitchenette | 700 | 2,150 |
-| Infant food | Purees/formula | Conbini | n/a | 2,200 |
+| Breakfast | Rice, miso soup, toast | Cooked in room, early start; Hotel kitchenette | 500 | 750 |
+| Lunch | Sit-down set course - stir-fried noodles, sweet-and-sour pork, steamed rice | Yokohama Chinatown (specific restaurant unverified) | 900 | 4,700 |
+| Dinner | Grilled mackerel, rice, pickled vegetables, miso soup, using fresh fish and produce bought at a Yokohama market stall | Hotel kitchenette | 700 | 2,150 |
+| Infant food | 3 formula feeds plus 2 Morinaga pouches (white fish and rice; mixed vegetable) for Infant A; Infant B eats flaked bites of the grilled mackerel and rice | Conbini | n/a | 2,200 |
 
 Adult kcal: 500 + 900 + 700 = **2,100**.
 
@@ -758,11 +772,11 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Cup Noodles Museum (incl. My CUPNOODLES Factory) | Minato Mirai, Yokohama | General admission free; hands-on workshop ¥500/adult | 1h00 | 500 | 1,500 |
-| Landmark Tower Sky Garden | Minato Mirai, Yokohama | 69F observation deck; 2026 planning estimate | 0h35 | 1,200 | 3,600 |
-| Sankeien Garden | Naka-ku, Yokohama | Traditional strolling garden; carrier for some paths | 1h30 | 900 | 2,700 |
+| Cup Noodles Museum (incl. My CUPNOODLES Factory) | 1h00 | 500 | 1,500 | 2-3-4 Shinko, Naka-ku, Yokohama, Kanagawa 231-0001 | A museum on instant ramen's invention by Momofuku Ando, with a giant noodle-themed exhibit hall and a hands-on workshop where you design and seal your own cup of instant noodles to take home. General admission (exhibits) is free; only the factory workshop is paid. Playful and interactive in a way few museums on this trip are, a good change of pace even for toddlers too young for the workshop itself. Indoor, elevators, stroller-friendly; workshop tickets can sell out on busy days. |
+| Landmark Tower Sky Garden | 0h35 | 1,200 | 3,600 | 2-2-1 Minatomirai, Nishi-ku, Yokohama, Kanagawa 220-0012 | The 69th-floor observation deck of what was, for decades, Japan's tallest building, with sweeping views over Minato Mirai's harbor skyline and Yokohama Bay (Mt. Fuji visible on a clear day). A quick, high-payoff view stop between the museum and lunch. High-speed elevator, fully indoor and stroller/infant-friendly; 2026 planning estimate. |
+| Sankeien Garden | 1h30 | 900 | 2,700 | 58-1 Honmokusannotani, Naka-ku, Yokohama, Kanagawa | A large traditional Japanese strolling garden built by a silk trader in 1906 around ponds and roughly 17 historic buildings relocated here from Kyoto, Kamakura, and elsewhere, including a three-story pagoda visible above the treeline. The most authentically "old Japan" garden setting of the Tokyo-area days, quieter and less manicured than the Imperial Gardens. Main approach paths are stroller-passable; some inner bridges and paths have steps, so the carrier is the better call for the full loop. |
 
 ### Day 9 Cost
 
@@ -830,10 +844,10 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered, using up remaining stock | Hotel kitchenette | 500 | 650 |
-| Lunch | Ichiran ramen | Shinjuku | 750 | 2,940 |
-| Dinner | Self-catered - last-night simple meal, working through remaining pantry stock | Hotel kitchenette | 700 | 2,400 |
-| Infant food | Purees/formula | Conbini | n/a | 2,200 |
+| Breakfast | Rice, natto, remaining vegetables from the fridge | Cooked in room, using up the last of the Day 1 pantry stock; Hotel kitchenette | 500 | 650 |
+| Lunch | Tonkotsu ramen, ordered through the individual ticket-machine booth system | Ichiran, Shinjuku | 750 | 2,940 |
+| Dinner | Fried rice with leftover vegetables and egg, last-night meal working through the remaining pantry stock | Hotel kitchenette | 700 | 2,400 |
+| Infant food | 3 formula feeds plus 2 Wakodo pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the fried rice and egg | Conbini | n/a | 2,200 |
 
 Adult kcal: 500 + 750 + 700 = **1,950**.
 
@@ -847,11 +861,11 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Shinjuku Gyoen | Shinjuku-ku | ¥500/adult; infants free | 1h45 | 500 | 1,500 |
-| Ghibli Museum | Mitaka, Musashino-shi | Timed-entry lottery ticket - see booking note above; infants free | 1h30 | 1,000 | 3,000 |
-| Inokashira Park + small zoo corner | Musashino-shi | Park free; small zoo section paid | 0h35 | 500 | 1,500 |
+| Shinjuku Gyoen | 1h45 | 500 | 1,500 | 11 Naitomachi, Shinjuku-ku, Tokyo 160-0014 | A large former imperial garden blending French formal, English landscape, and traditional Japanese styles across 58 hectares in the middle of Shinjuku's skyscraper district. The calmest big green space on the trip, and doubles here as the day's mandatory rest block - wide lawns to just sit on rather than a single-direction walking route. Paved and gravel paths, fully stroller-friendly; ¥500/adult, infants free. |
+| Ghibli Museum | 1h30 | 1,000 | 3,000 | 1-1-83 Shimorenjaku, Mitaka-shi, Tokyo 181-0013 | A Hayao Miyazaki-designed museum on Studio Ghibli's films (Spirited Away, My Neighbor Totoro, and others), built as a deliberately disorienting, whimsical building with no posted map, hidden nooks, a rooftop garden with a life-size Laputa robot statue, and a small original-animation theater. A genuine highlight for anyone who knows the films, and charming even for those who don't, thanks to the building itself. Entry is lottery-only, booked roughly a month ahead - see the booking note above; no strollers permitted indoors (spiral staircase) - fold it and leave it at the entrance, carrier or hand-holding inside. |
+| Inokashira Park + small zoo corner | 0h35 | 500 | 1,500 | Inokashira Park, Musashino-shi/Mitaka-shi (nearest station Kichijoji or Inokashira-koen; address unverified) | A large pond-centered park adjoining the Ghibli Museum, popular for its swan-shaped paddle boats and a small, free-to-enter zoo corner with a paid small-animal and elephant enclosure. An easy, pleasant fallback if the Ghibli Museum lottery doesn't come through, and a nice wind-down regardless. Paved paths around the pond, stroller-friendly; the small zoo section charges separately. |
 
 ### Day 10 Cost
 
