@@ -237,38 +237,34 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ---
 
-## Day 4 - Saturday, October 10, 2026 - Kamakura (day trip)
+## Day 4 - Saturday, October 10, 2026 - Tokyo
 
-**Base:** Tokyo (day trip) | **Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo
-**Theme:** Great Buddha, Hase-dera, the Enoden coastal railway, Yuigahama beach.
+**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
+**Theme:** The Imperial Palace East Gardens, free, plus one paid museum stop in Marunouchi.
 
 ### Schedule
 
 | Time | Duration | Item | Type |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast, self-catered (early start) | Food |
-| 07:45 | 0h15 | Walk to Ueno Stn | Transit |
-| 08:00 | 1h00 | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) | Transit |
-| 09:00 | 0h10 | Buy Enoden "Noriorikun" 1-day pass, Kamakura Stn | Admin |
-| 09:10 | 0h15 | Kamakura -> Hase, Enoden | Transit |
-| 09:25 | 1h00 | Kotoku-in - the Great Buddha (Daibutsu) | Activity |
-| 10:25 | 0h35 | Hase-dera | Activity |
-| 11:00 | 0h30 | Walk down to Yuigahama Beach | Activity |
-| 11:30 | 0h45 | Lunch, Komachi-dori area, Kamakura | Food |
-| 12:15 | 0h15 | Hase -> Kamakura, Enoden | Transit |
-| 12:30 | 1h45 | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) | Rest |
-| 14:15 | 1h00 | Kamakura -> Ueno, JR | Transit |
-| 15:15 | 1h00 | Downtime at the hotel | Rest |
-| 16:15 | - | Free time | Rest |
-| 17:30 | 1h00 | Dinner - hangaku-discounted bento (tired evening after a long day) | Food |
-| 18:30 | 0h45 | Bath, early night | Admin |
+| 07:30 | 0h45 | Breakfast, self-catered | Food |
+| 08:15 | 0h20 | Ueno -> Otemachi, Tokyo Metro Chiyoda Line | Transit |
+| 08:35 | 1h30 | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation | Activity |
+| 10:05 | 0h15 | Walk to Marunouchi | Transit |
+| 10:20 | 1h00 | Mitsubishi Ichigokan Museum | Activity |
+| 11:20 | 0h45 | Lunch, Tokyo Ramen Street, Marunouchi | Food |
+| 12:05 | 1h45 | Rest / infant naps - head back toward Ueno or a quiet Marunouchi corner | Rest |
+| 13:50 | 0h20 | Otemachi -> Ueno, Tokyo Metro Chiyoda Line | Transit |
+| 14:10 | - | Downtime at the hotel | Rest |
+| 17:30 | 1h00 | Dinner, self-catered | Food |
+| 18:30 | 0h45 | Bath, wind-down | Admin |
 
-- **Carrier only for Hase-dera** - the temple's terraced garden has steep stairs; the
-  compact stroller does not work there. The stroller is fine on Yuigahama's flat sand
-  approach and at Kotoku-in's open forecourt.
-- This is a travel-heavy day trip like Day 1: roughly 2h50 of seated train time is
-  low-exertion, and the 1h45 rest block is built in; true walking/sightseeing time is
-  about 3h.
+- **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
+  keep site. The rest of the East Gardens is flat gravel, stroller-fine.
+- Active out-of-lodging time: about 5h35.
+- Saturday 10 October is day one of the Sports Day three-day weekend (Sat 10 -
+  Mon 12 Oct). The East Gardens close only on Mondays and Fridays (confirmed,
+  not assumed), so today is open; a central Tokyo day here is deliberate,
+  keeping the outer-suburb day trips (Kamakura, Yokohama) off this weekend.
 
 ### Lodging
 
@@ -280,39 +276,37 @@ Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adul
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Shirasu-don (whitebait rice bowl) | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
-| Dinner | Hangaku-discounted bento | Supermarket/conbini near hotel, discount timing | 750 | 1,850 |
-| Infant food | Purees/formula | Conbini | n/a | 2,400 |
+| Lunch | Ramen shop, Tokyo Ramen Street | Marunouchi, Chiyoda-ku | 750 | 2,600 |
+| Dinner | Self-catered | Hotel kitchenette | 700 | 1,150 |
+| Infant food | Purees/formula | Conbini | n/a | 2,100 |
 
-Adult kcal: 500 + 700 + 750 = **1,950**.
+Adult kcal: 500 + 750 + 700 = **1,950**.
 
 ### Transport
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Kamakura | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
-| Enoden 1-day pass "Noriorikun" | Enoden | - | 800 | 2,400 |
-| Kamakura -> Ueno | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
+| Ueno -> Otemachi | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
+| Otemachi -> Ueno | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
 
 ### Activities
 
 | Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
 |---|---|---|---|---|---|
-| Kotoku-in - Great Buddha | Hase, Kamakura | Exterior view; interior climb +¥50/adult optional, not counted | 1h00 | 300 | 900 |
-| Hase-dera | Hase, Kamakura | Temple + garden; carrier only, steep stairs | 0h35 | 400 | 1,200 |
-| Yuigahama Beach | Kamakura | Free, flat sand walk | 0h30 | 0 | 0 |
+| Imperial Palace East Gardens | Chiyoda-ku | Free; reserve via QR/paper ticket at the gate; carrier for the Tenshudai stairs | 1h30 | 0 | 0 |
+| Mitsubishi Ichigokan Museum | Marunouchi, Chiyoda-ku | Meiji-era brick building, rotating exhibitions; 2026 planning estimate | 1h00 | 2,000 | 6,000 |
 
 ### Day 4 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 8,600 | 55 |
-| Transport | 8,220 | 53 |
-| Activities | 2,100 | 14 |
-| **Day total** | **36,920** | **238** |
+| Food | 6,600 | 43 |
+| Transport | 1,260 | 8 |
+| Activities | 6,000 | 39 |
+| **Day total** | **31,860** | **206** |
 
-**Running total after Day 4: ¥144,370 ($931)**
+**Running total after Day 4: ¥139,310 ($899)**
 
 ---
 
@@ -387,7 +381,7 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 | Activities | 9,600 | 62 |
 | **Day total** | **38,550** | **249** |
 
-**Running total after Day 5: ¥182,920 ($1,180)**
+**Running total after Day 5: ¥177,860 ($1,147)**
 
 ---
 
@@ -461,34 +455,46 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 | Activities | 0 | 0 |
 | **Day total** | **24,940** | **161** |
 
-**Running total after Day 6: ¥207,860 ($1,341)**
+**Running total after Day 6: ¥202,800 ($1,308)**
 
 ---
 
-## Day 7 - Tuesday, October 13, 2026 - Tokyo
+## Day 7 - Tuesday, October 13, 2026 - Kamakura (day trip)
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
-**Theme:** The Imperial Palace East Gardens, free, plus one paid museum stop in Marunouchi.
+**Base:** Tokyo (day trip) | **Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo
+**Theme:** Great Buddha, Hase-dera, the Enoden coastal railway, Yuigahama beach.
 
 ### Schedule
 
 | Time | Duration | Item | Type |
 |---|---|---|---|
-| 07:30 | 0h45 | Breakfast, self-catered | Food |
-| 08:15 | 0h20 | Ueno -> Otemachi, Tokyo Metro Chiyoda Line | Transit |
-| 08:35 | 1h30 | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation | Activity |
-| 10:05 | 0h15 | Walk to Marunouchi | Transit |
-| 10:20 | 1h00 | Mitsubishi Ichigokan Museum | Activity |
-| 11:20 | 0h45 | Lunch, Tokyo Ramen Street, Marunouchi | Food |
-| 12:05 | 1h45 | Rest / infant naps - head back toward Ueno or a quiet Marunouchi corner | Rest |
-| 13:50 | 0h20 | Otemachi -> Ueno, Tokyo Metro Chiyoda Line | Transit |
-| 14:10 | - | Downtime at the hotel | Rest |
-| 17:30 | 1h00 | Dinner, self-catered | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:00 | 0h45 | Breakfast, self-catered (early start) | Food |
+| 07:45 | 0h15 | Walk to Ueno Stn | Transit |
+| 08:00 | 1h00 | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) | Transit |
+| 09:00 | 0h10 | Buy Enoden "Noriorikun" 1-day pass, Kamakura Stn | Admin |
+| 09:10 | 0h15 | Kamakura -> Hase, Enoden | Transit |
+| 09:25 | 1h00 | Kotoku-in - the Great Buddha (Daibutsu) | Activity |
+| 10:25 | 0h35 | Hase-dera | Activity |
+| 11:00 | 0h30 | Walk down to Yuigahama Beach | Activity |
+| 11:30 | 0h45 | Lunch, Komachi-dori area, Kamakura | Food |
+| 12:15 | 0h15 | Hase -> Kamakura, Enoden | Transit |
+| 12:30 | 1h45 | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) | Rest |
+| 14:15 | 1h00 | Kamakura -> Ueno, JR | Transit |
+| 15:15 | 1h00 | Downtime at the hotel | Rest |
+| 16:15 | - | Free time | Rest |
+| 17:30 | 1h00 | Dinner - hangaku-discounted bento (tired evening after a long day) | Food |
+| 18:30 | 0h45 | Bath, early night | Admin |
 
-- **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
-  keep site. The rest of the East Gardens is flat gravel, stroller-fine.
-- Active out-of-lodging time: about 5h35.
+- **Carrier only for Hase-dera** - the temple's terraced garden has steep stairs; the
+  compact stroller does not work there. The stroller is fine on Yuigahama's flat sand
+  approach and at Kotoku-in's open forecourt.
+- This is a travel-heavy day trip like Day 1: roughly 2h50 of seated train time is
+  low-exertion, and the 1h45 rest block is built in; true walking/sightseeing time is
+  about 3h.
+- Kamakura is placed here, on a Tuesday, rather than on the Oct 10-12 Sports Day
+  three-day weekend - the Enoden is a single-track local line to Hase, and
+  boarding queues at Kamakura Station routinely run 30-45 minutes on a fine
+  holiday Saturday, which is a bad match for a stroller and two infants.
 
 ### Lodging
 
@@ -500,35 +506,37 @@ Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adul
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Ramen shop, Tokyo Ramen Street | Marunouchi, Chiyoda-ku | 750 | 2,600 |
-| Dinner | Self-catered | Hotel kitchenette | 700 | 1,150 |
-| Infant food | Purees/formula | Conbini | n/a | 2,100 |
+| Lunch | Shirasu-don (whitebait rice bowl) | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
+| Dinner | Hangaku-discounted bento | Supermarket/conbini near hotel, discount timing | 750 | 1,850 |
+| Infant food | Purees/formula | Conbini | n/a | 2,400 |
 
-Adult kcal: 500 + 750 + 700 = **1,950**.
+Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ### Transport
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Otemachi | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
-| Otemachi -> Ueno | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
+| Ueno -> Kamakura | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
+| Enoden 1-day pass "Noriorikun" | Enoden | - | 800 | 2,400 |
+| Kamakura -> Ueno | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
 
 ### Activities
 
 | Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
 |---|---|---|---|---|---|
-| Imperial Palace East Gardens | Chiyoda-ku | Free; reserve via QR/paper ticket at the gate; carrier for the Tenshudai stairs | 1h30 | 0 | 0 |
-| Mitsubishi Ichigokan Museum | Marunouchi, Chiyoda-ku | Meiji-era brick building, rotating exhibitions; 2026 planning estimate | 1h00 | 2,000 | 6,000 |
+| Kotoku-in - Great Buddha | Hase, Kamakura | Exterior view; interior climb +¥50/adult optional, not counted | 1h00 | 300 | 900 |
+| Hase-dera | Hase, Kamakura | Temple + garden; carrier only, steep stairs | 0h35 | 400 | 1,200 |
+| Yuigahama Beach | Kamakura | Free, flat sand walk | 0h30 | 0 | 0 |
 
 ### Day 7 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 6,600 | 43 |
-| Transport | 1,260 | 8 |
-| Activities | 6,000 | 39 |
-| **Day total** | **31,860** | **206** |
+| Food | 8,600 | 55 |
+| Transport | 8,220 | 53 |
+| Activities | 2,100 | 14 |
+| **Day total** | **36,920** | **238** |
 
 **Running total after Day 7: ¥239,720 ($1,547)**
 

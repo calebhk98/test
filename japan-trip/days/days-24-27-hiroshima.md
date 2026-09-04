@@ -1,4 +1,4 @@
-# Days 24-27 — Hiroshima + transfer to Osaka
+# Days 24-27 - Hiroshima + transfer to Osaka
 
 *Baseline note: the running totals below start from ¥885,100 ($5,710) after Day 23,
 calculated from the fixed per-segment envelopes in MASTER-BRIEF.md (Tokyo, Kawaguchiko
@@ -8,9 +8,9 @@ up once the actual Day 1-23 files exist.*
 
 ---
 
-## Day 24 — Friday, October 30, 2026 — Kyoto to Hiroshima
+## Day 24 - Friday, October 30, 2026 - Kyoto to Hiroshima
 
-**Base:** Hiroshima (arriving) | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) — pack a light rain layer
+**Base:** Hiroshima (arriving) | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) - pack a light rain layer
 **Theme:** Shinkansen from Kyoto to Hiroshima; buy the JR Kansai-Hiroshima Area Pass; an easy arrival evening at Peace Memorial Park.
 
 ### Schedule
@@ -31,14 +31,14 @@ up once the actual Day 1-23 files exist.*
 | 15:00 | 1h15 | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free | Activity |
 | 16:15 | 0h45 | Dinner near Peace Park / Hondori arcade | Food |
 | 17:00 | 0h20 | Walk/streetcar back to hotel | Transit |
-| 17:20 | — | Evening at hotel, infants down | Rest |
+| 17:20 | - | Evening at hotel, infants down | Rest |
 
 - Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
   light evening walk. Total out-of-lodging active time stays close to the ~7h cap.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** — central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 1 of 3
 
 ### Meals
@@ -57,13 +57,13 @@ Adult kcal: 550 + 650 + 750 = **1,950**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Omiya-eki-mae -> Kyoto Stn | Kyoto city bus | 0h20 | 230 | 690 |
-| JR Kansai-Hiroshima Area Pass (5-day), purchased at Kyoto Stn | JR ticket office | — | 17,000 | 51,000 |
-| Kyoto -> Hiroshima | Sanyo Shinkansen (Hikari/Sakura, unreserved) | 1h40 | 10,770 (walk-up) | 0 — covered by pass |
+| JR Kansai-Hiroshima Area Pass (5-day), purchased at Kyoto Stn | JR ticket office | - | 17,000 | 51,000 |
+| Kyoto -> Hiroshima | Sanyo Shinkansen (Hikari/Sakura, unreserved) | 1h40 | 10,770 (walk-up) | 0 - covered by pass |
 | Hiroshima Stn -> Peace Memorial Park | Hiroden streetcar | 0h15 | 220 | 660 |
 
 The JR Kansai-Hiroshima Area Pass is charged in full here: **¥17,000/adult x 3 = ¥51,000**, infants
 free. It is valid **Oct 30 - Nov 3 (Days 24-28)**. This shinkansen leg alone would cost ¥10,770/adult
-(¥32,310 for 3 adults) at walk-up fares — nearly two-thirds of the pass in a single leg. Every JR leg
+(¥32,310 for 3 adults) at walk-up fares - nearly two-thirds of the pass in a single leg. Every JR leg
 the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ### Activities
@@ -86,10 +86,10 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ---
 
-## Day 25 — Saturday, October 31, 2026 — Miyajima (Itsukushima)
+## Day 25 - Saturday, October 31, 2026 - Miyajima (Itsukushima)
 
 **Base:** Hiroshima | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg)
-**Theme:** A full day trip to Miyajima — shrine, aquarium, and the Mt. Misen ropeway, all covered
+**Theme:** A full day trip to Miyajima - shrine, aquarium, and the Mt. Misen ropeway, all covered
 by the rail pass beyond the island admissions.
 
 ### Schedule
@@ -105,7 +105,7 @@ by the rail pass beyond the island admissions.
 | 10:15 | 0h45 | Miyajima Public Aquarium | Activity |
 | 11:00 | 0h45 | Lunch on Miyajima (anago-meshi / grilled oyster) | Food |
 | 11:45 | 1h45 | Rest / infant naps, Momijidani Park (shaded, benches, free) | Rest |
-| 13:30 | 1h15 | Miyajima Ropeway round trip (2 adults only — see note) | Activity |
+| 13:30 | 1h15 | Miyajima Ropeway round trip (2 adults only - see note) | Activity |
 | 14:45 | 0h15 | Regroup, walk to ferry pier | Transit |
 | 15:00 | 0h20 | Miyajima pier -> Miyajimaguchi pier, JR ferry | Transit |
 | 15:20 | 0h25 | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local | Transit |
@@ -113,23 +113,23 @@ by the rail pass beyond the island admissions.
 | 16:00 | 0h50 | Downtime at hotel | Rest |
 | 16:50 | 1h10 | Wind down before dinner | Rest |
 | 18:00 | 1h00 | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) | Food |
-| 19:00 | — | Return to hotel, infants down | Rest |
+| 19:00 | - | Return to hotel, infants down | Rest |
 
-- Check tide times for the floating torii nearer the date — at high tide it stands in the water
+- Check tide times for the floating torii nearer the date - at high tide it stands in the water
   (the classic photo), at low tide you can walk out to it across the sand. Either is worthwhile,
   but the two look very different; this is a "check closer to the date" item, not something to
   plan around now.
-- **Mt. Misen's summit trails are carrier-only, not stroller** — steep stone steps throughout.
+- **Mt. Misen's summit trails are carrier-only, not stroller** - steep stone steps throughout.
   The ropeway substitutes a scenic ride: only 2 of the 3 adults go up (one may carry the
   20-month-old in the party's single carrier), while the third adult rests with the stroller and
-  the other infant in Momijidani Park, right at the ropeway base station — a free, shaded stop
+  the other infant in Momijidani Park, right at the ropeway base station - a free, shaded stop
   that doubles as the day's mandatory rest block.
 - The island's main areas (shrine approach, Omotesando shopping street, aquarium) are
   stroller-workable, including via the elevator underpass near the shrine.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** — central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 2 of 3
 
 ### Meals
@@ -147,11 +147,11 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hotel -> Hiroshima Stn | Walk | 0h15 | — | 0 |
-| Hiroshima Stn -> Miyajimaguchi Stn | JR Sanyo Line local | 0h25 | 420 (walk-up) | 0 — covered by pass |
-| Miyajimaguchi pier <-> Miyajima pier (round trip) | JR Miyajima ferry | 0h20 total | 400 rt (walk-up) | 0 — covered by pass |
-| Miyajima -> Hiroshima Stn (return) | JR ferry + Sanyo Line local | 0h45 | 420 (walk-up) | 0 — covered by pass |
-| Hiroshima Stn -> hotel | Walk | 0h15 | — | 0 |
+| Hotel -> Hiroshima Stn | Walk | 0h15 | - | 0 |
+| Hiroshima Stn -> Miyajimaguchi Stn | JR Sanyo Line local | 0h25 | 420 (walk-up) | 0 - covered by pass |
+| Miyajimaguchi pier <-> Miyajima pier (round trip) | JR Miyajima ferry | 0h20 total | 400 rt (walk-up) | 0 - covered by pass |
+| Miyajima -> Hiroshima Stn (return) | JR ferry + Sanyo Line local | 0h45 | 420 (walk-up) | 0 - covered by pass |
+| Hiroshima Stn -> hotel | Walk | 0h15 | - | 0 |
 
 A full round trip to Miyajima (ferry + local JR) would run about ¥820/adult (¥2,460 for 3 adults)
 without the pass. Infants ride the JR ferry free, same as JR trains.
@@ -160,7 +160,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 | Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
 |---|---|---|---|---|---|
-| Miyajima visitor tax | Miyajima Island | ¥100/person; waived for under-6s — both infants exempt | — | 100 | 300 |
+| Miyajima visitor tax | Miyajima Island | ¥100/person; waived for under-6s - both infants exempt | - | 100 | 300 |
 | Itsukushima Shrine | Miyajima | UNESCO shrine on stilts over the water; free under 6 | 1h00 | 300 | 900 |
 | Itsukushima Treasure Hall | Miyajima, adjacent to the shrine | Shrine treasures museum | 0h30 | 300 | 900 |
 | Miyajima Public Aquarium | Miyajima, near the shrine | Stroller-friendly; seals, otters; 2026 planning estimate | 0h45 | 1,400 | 4,200 |
@@ -180,9 +180,9 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 ---
 
-## Day 26 — Sunday, November 1, 2026 — Hiroshima city day
+## Day 26 - Sunday, November 1, 2026 - Hiroshima city day
 
-**Base:** Hiroshima | **Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) — noticeably cooler than the last two days; add a layer
+**Base:** Hiroshima | **Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) - noticeably cooler than the last two days; add a layer
 **Theme:** Peace Memorial Park and Museum, handled with care given two infants in the party, then
 Shukkei-en garden and Hiroshima Castle.
 
@@ -193,7 +193,7 @@ Shukkei-en garden and Hiroshima Castle.
 | 07:00 | 0h45 | Breakfast at Toyoko Inn Hiroshima (included) | Food |
 | 07:45 | 0h15 | Hotel -> Genbaku Dome-mae, Hiroden streetcar | Transit |
 | 08:00 | 0h45 | Atomic Bomb Dome + Motoyasu riverside walk, free | Activity |
-| 08:45 | 1h15 | Peace Memorial Museum (party splits — see note) | Activity |
+| 08:45 | 1h15 | Peace Memorial Museum (party splits - see note) | Activity |
 | 10:00 | 0h35 | Hiroshima Orizuru Tower (observation deck + paper-crane fold) | Activity |
 | 10:35 | 0h45 | Lunch, Hondori arcade | Food |
 | 11:20 | 0h15 | Walk/streetcar back to hotel | Transit |
@@ -205,11 +205,11 @@ Shukkei-en garden and Hiroshima Castle.
 | 15:30 | 0h20 | Castle -> hotel, Hiroden streetcar | Transit |
 | 15:50 | 1h40 | Downtime at hotel | Rest |
 | 17:30 | 1h00 | Dinner near hotel | Food |
-| 18:30 | — | Evening at hotel, infants down | Rest |
+| 18:30 | - | Evening at hotel, infants down | Rest |
 
 - **The Peace Memorial Museum's content is heavy**, and the lower-floor personal-effects exhibits
   are especially confronting. With two infants in the party, consider splitting: one or two adults
-  go through the museum while the third stays outside in the park with the children — swap partway
+  go through the museum while the third stays outside in the park with the children - swap partway
   if everyone wants to see it. Either approach is reasonable; there is no need for everyone to do
   the full museum together.
 - Hiroshima Castle's keep has interior stairs (carrier recommended inside); the surrounding
@@ -218,7 +218,7 @@ Shukkei-en garden and Hiroshima Castle.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** — central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 3 of 3
 
 ### Meals
@@ -238,7 +238,7 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 |---|---|---|---|---|
 | Hotel -> Genbaku Dome-mae | Hiroden streetcar (flat fare) | 0h15 | 220 | 660 |
 | Hotel -> Shukkei-en | Hiroden streetcar (flat fare) | 0h15 | 220 | 660 |
-| Shukkei-en -> Castle -> hotel | Walk + streetcar | 0h35 total | — | 0 (included above where ridden) |
+| Shukkei-en -> Castle -> hotel | Walk + streetcar | 0h35 total | - | 0 (included above where ridden) |
 
 Hiroden's flat citywide fare makes the streetcar the cheap, easy way to move around Hiroshima;
 infants ride free.
@@ -267,7 +267,7 @@ infants ride free.
 
 ---
 
-## Day 27 — Monday, November 2, 2026 — Hiroshima to Osaka
+## Day 27 - Monday, November 2, 2026 - Hiroshima to Osaka
 
 **Base:** Hiroshima -> Osaka (Namba) | **Weather (typical):** Hiroshima 17.7/8.9 °C -> Osaka 17/10 °C (JMA, Nov avg)
 **Theme:** Travel day: shinkansen to Shin-Osaka, transfer to Namba, check in, a light first evening
@@ -292,14 +292,14 @@ at Dotonbori.
 | 15:20 | 0h20 | Tombori River Cruise | Activity |
 | 15:40 | 1h00 | Dinner in Dotonbori (takoyaki + light bites) | Food |
 | 16:40 | 0h20 | Walk back to hotel | Transit |
-| 17:00 | — | Evening at hotel, infants down | Rest |
+| 17:00 | - | Evening at hotel, infants down | Rest |
 
 - Day span 07:00-17:00 (10h), with the shinkansen leg seated and low-stress and a 1h45 midday
   rest block at the new hotel before the evening outing.
 
 ### Lodging
 
-**Toyoko Inn Osaka Namba** — Namba area (specific branch address unverified)
+**Toyoko Inn Osaka Namba** - Namba area (specific branch address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥13,000 (= $83.87) | Night 1 of 3
 
 ### Meals
@@ -317,12 +317,12 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hiroshima Stn -> Shin-Osaka | Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) | 1h30 | 9,710 (walk-up) | 0 — covered by pass |
+| Hiroshima Stn -> Shin-Osaka | Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) | 1h30 | 9,710 (walk-up) | 0 - covered by pass |
 | Shin-Osaka -> Namba | Osaka Metro Midosuji Line | 0h20 | 290 | 870 |
 
-This shinkansen leg alone would cost ¥9,710/adult (¥29,130 for 3 adults) at walk-up fares — the
+This shinkansen leg alone would cost ¥9,710/adult (¥29,130 for 3 adults) at walk-up fares - the
 second of the pass's two big intercity legs. **The JR Kansai-Hiroshima Area Pass bought on Day 24
-remains valid through Nov 3 (Day 28) — one day of use is left**, for a day trip out of Osaka
+remains valid through Nov 3 (Day 28) - one day of use is left**, for a day trip out of Osaka
 covered in the next segment.
 
 ### Activities
@@ -357,5 +357,5 @@ covered in the next segment.
 | **Segment total** | **166,580** | **1,075** |
 
 Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000),
-Activities -2.4% (target 26,000) — all within the ±5% tolerance. Lodging is the fixed
+Activities -2.4% (target 26,000) - all within the ±5% tolerance. Lodging is the fixed
 ¥15,000 x 3 nights + ¥13,000 x 1 night from MASTER-BRIEF and is not flexed.

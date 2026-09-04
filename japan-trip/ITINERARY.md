@@ -220,10 +220,10 @@ out. Reserve it as soon as the window opens.
 | 1 | Wednesday, October 7, 2026 | Tokyo (Narita arrival) | 32,970 | 213 | 213 |
 | 2 | Thursday, October 8, 2026 | Tokyo | 42,480 | 274 | 487 |
 | 3 | Friday, October 9, 2026 | Tokyo | 32,000 | 206 | 693 |
-| 4 | Saturday, October 10, 2026 | Kamakura (day trip) | 36,920 | 238 | 931 |
-| 5 | Sunday, October 11, 2026 | Tokyo | 38,550 | 249 | 1,180 |
-| 6 | Monday, October 12, 2026 | Tokyo (Sports Day) | 24,940 | 161 | 1,341 |
-| 7 | Tuesday, October 13, 2026 | Tokyo | 31,860 | 206 | 1,547 |
+| 4 | Saturday, October 10, 2026 | Tokyo | 31,860 | 206 | 899 |
+| 5 | Sunday, October 11, 2026 | Tokyo | 38,550 | 249 | 1,147 |
+| 6 | Monday, October 12, 2026 | Tokyo (Sports Day) | 24,940 | 161 | 1,308 |
+| 7 | Tuesday, October 13, 2026 | Kamakura (day trip) | 36,920 | 238 | 1,547 |
 | 8 | Wednesday, October 14, 2026 | Tokyo (Odaiba / Toyosu) | 46,620 | 301 | 1,847 |
 | 9 | Thursday, October 15, 2026 | Yokohama (day trip) | 41,660 | 269 | 2,116 |
 | 10 | Friday, October 16, 2026 | Tokyo | 34,710 | 224 | 2,340 |
@@ -507,38 +507,34 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ---
 
-## Day 4 - Saturday, October 10, 2026 - Kamakura (day trip)
+## Day 4 - Saturday, October 10, 2026 - Tokyo
 
-**Base:** Tokyo (day trip) | **Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo
-**Theme:** Great Buddha, Hase-dera, the Enoden coastal railway, Yuigahama beach.
+**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
+**Theme:** The Imperial Palace East Gardens, free, plus one paid museum stop in Marunouchi.
 
 ### Schedule
 
 | Time | Duration | Item | Type |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast, self-catered (early start) | Food |
-| 07:45 | 0h15 | Walk to Ueno Stn | Transit |
-| 08:00 | 1h00 | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) | Transit |
-| 09:00 | 0h10 | Buy Enoden "Noriorikun" 1-day pass, Kamakura Stn | Admin |
-| 09:10 | 0h15 | Kamakura -> Hase, Enoden | Transit |
-| 09:25 | 1h00 | Kotoku-in - the Great Buddha (Daibutsu) | Activity |
-| 10:25 | 0h35 | Hase-dera | Activity |
-| 11:00 | 0h30 | Walk down to Yuigahama Beach | Activity |
-| 11:30 | 0h45 | Lunch, Komachi-dori area, Kamakura | Food |
-| 12:15 | 0h15 | Hase -> Kamakura, Enoden | Transit |
-| 12:30 | 1h45 | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) | Rest |
-| 14:15 | 1h00 | Kamakura -> Ueno, JR | Transit |
-| 15:15 | 1h00 | Downtime at the hotel | Rest |
-| 16:15 | - | Free time | Rest |
-| 17:30 | 1h00 | Dinner - hangaku-discounted bento (tired evening after a long day) | Food |
-| 18:30 | 0h45 | Bath, early night | Admin |
+| 07:30 | 0h45 | Breakfast, self-catered | Food |
+| 08:15 | 0h20 | Ueno -> Otemachi, Tokyo Metro Chiyoda Line | Transit |
+| 08:35 | 1h30 | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation | Activity |
+| 10:05 | 0h15 | Walk to Marunouchi | Transit |
+| 10:20 | 1h00 | Mitsubishi Ichigokan Museum | Activity |
+| 11:20 | 0h45 | Lunch, Tokyo Ramen Street, Marunouchi | Food |
+| 12:05 | 1h45 | Rest / infant naps - head back toward Ueno or a quiet Marunouchi corner | Rest |
+| 13:50 | 0h20 | Otemachi -> Ueno, Tokyo Metro Chiyoda Line | Transit |
+| 14:10 | - | Downtime at the hotel | Rest |
+| 17:30 | 1h00 | Dinner, self-catered | Food |
+| 18:30 | 0h45 | Bath, wind-down | Admin |
 
-- **Carrier only for Hase-dera** - the temple's terraced garden has steep stairs; the
-  compact stroller does not work there. The stroller is fine on Yuigahama's flat sand
-  approach and at Kotoku-in's open forecourt.
-- This is a travel-heavy day trip like Day 1: roughly 2h50 of seated train time is
-  low-exertion, and the 1h45 rest block is built in; true walking/sightseeing time is
-  about 3h.
+- **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
+  keep site. The rest of the East Gardens is flat gravel, stroller-fine.
+- Active out-of-lodging time: about 5h35.
+- Saturday 10 October is day one of the Sports Day three-day weekend (Sat 10 -
+  Mon 12 Oct). The East Gardens close only on Mondays and Fridays (confirmed,
+  not assumed), so today is open; a central Tokyo day here is deliberate,
+  keeping the outer-suburb day trips (Kamakura, Yokohama) off this weekend.
 
 ### Lodging
 
@@ -550,39 +546,37 @@ Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adul
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Shirasu-don (whitebait rice bowl) | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
-| Dinner | Hangaku-discounted bento | Supermarket/conbini near hotel, discount timing | 750 | 1,850 |
-| Infant food | Purees/formula | Conbini | n/a | 2,400 |
+| Lunch | Ramen shop, Tokyo Ramen Street | Marunouchi, Chiyoda-ku | 750 | 2,600 |
+| Dinner | Self-catered | Hotel kitchenette | 700 | 1,150 |
+| Infant food | Purees/formula | Conbini | n/a | 2,100 |
 
-Adult kcal: 500 + 700 + 750 = **1,950**.
+Adult kcal: 500 + 750 + 700 = **1,950**.
 
 ### Transport
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Kamakura | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
-| Enoden 1-day pass "Noriorikun" | Enoden | - | 800 | 2,400 |
-| Kamakura -> Ueno | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
+| Ueno -> Otemachi | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
+| Otemachi -> Ueno | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
 
 ### Activities
 
 | Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
 |---|---|---|---|---|---|
-| Kotoku-in - Great Buddha | Hase, Kamakura | Exterior view; interior climb +¥50/adult optional, not counted | 1h00 | 300 | 900 |
-| Hase-dera | Hase, Kamakura | Temple + garden; carrier only, steep stairs | 0h35 | 400 | 1,200 |
-| Yuigahama Beach | Kamakura | Free, flat sand walk | 0h30 | 0 | 0 |
+| Imperial Palace East Gardens | Chiyoda-ku | Free; reserve via QR/paper ticket at the gate; carrier for the Tenshudai stairs | 1h30 | 0 | 0 |
+| Mitsubishi Ichigokan Museum | Marunouchi, Chiyoda-ku | Meiji-era brick building, rotating exhibitions; 2026 planning estimate | 1h00 | 2,000 | 6,000 |
 
 ### Day 4 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 8,600 | 55 |
-| Transport | 8,220 | 53 |
-| Activities | 2,100 | 14 |
-| **Day total** | **36,920** | **238** |
+| Food | 6,600 | 43 |
+| Transport | 1,260 | 8 |
+| Activities | 6,000 | 39 |
+| **Day total** | **31,860** | **206** |
 
-**Running total after Day 4: ¥144,370 ($931)**
+**Running total after Day 4: ¥139,310 ($899)**
 
 ---
 
@@ -657,7 +651,7 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 | Activities | 9,600 | 62 |
 | **Day total** | **38,550** | **249** |
 
-**Running total after Day 5: ¥182,920 ($1,180)**
+**Running total after Day 5: ¥177,860 ($1,147)**
 
 ---
 
@@ -731,34 +725,46 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 | Activities | 0 | 0 |
 | **Day total** | **24,940** | **161** |
 
-**Running total after Day 6: ¥207,860 ($1,341)**
+**Running total after Day 6: ¥202,800 ($1,308)**
 
 ---
 
-## Day 7 - Tuesday, October 13, 2026 - Tokyo
+## Day 7 - Tuesday, October 13, 2026 - Kamakura (day trip)
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
-**Theme:** The Imperial Palace East Gardens, free, plus one paid museum stop in Marunouchi.
+**Base:** Tokyo (day trip) | **Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo
+**Theme:** Great Buddha, Hase-dera, the Enoden coastal railway, Yuigahama beach.
 
 ### Schedule
 
 | Time | Duration | Item | Type |
 |---|---|---|---|
-| 07:30 | 0h45 | Breakfast, self-catered | Food |
-| 08:15 | 0h20 | Ueno -> Otemachi, Tokyo Metro Chiyoda Line | Transit |
-| 08:35 | 1h30 | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation | Activity |
-| 10:05 | 0h15 | Walk to Marunouchi | Transit |
-| 10:20 | 1h00 | Mitsubishi Ichigokan Museum | Activity |
-| 11:20 | 0h45 | Lunch, Tokyo Ramen Street, Marunouchi | Food |
-| 12:05 | 1h45 | Rest / infant naps - head back toward Ueno or a quiet Marunouchi corner | Rest |
-| 13:50 | 0h20 | Otemachi -> Ueno, Tokyo Metro Chiyoda Line | Transit |
-| 14:10 | - | Downtime at the hotel | Rest |
-| 17:30 | 1h00 | Dinner, self-catered | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:00 | 0h45 | Breakfast, self-catered (early start) | Food |
+| 07:45 | 0h15 | Walk to Ueno Stn | Transit |
+| 08:00 | 1h00 | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) | Transit |
+| 09:00 | 0h10 | Buy Enoden "Noriorikun" 1-day pass, Kamakura Stn | Admin |
+| 09:10 | 0h15 | Kamakura -> Hase, Enoden | Transit |
+| 09:25 | 1h00 | Kotoku-in - the Great Buddha (Daibutsu) | Activity |
+| 10:25 | 0h35 | Hase-dera | Activity |
+| 11:00 | 0h30 | Walk down to Yuigahama Beach | Activity |
+| 11:30 | 0h45 | Lunch, Komachi-dori area, Kamakura | Food |
+| 12:15 | 0h15 | Hase -> Kamakura, Enoden | Transit |
+| 12:30 | 1h45 | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) | Rest |
+| 14:15 | 1h00 | Kamakura -> Ueno, JR | Transit |
+| 15:15 | 1h00 | Downtime at the hotel | Rest |
+| 16:15 | - | Free time | Rest |
+| 17:30 | 1h00 | Dinner - hangaku-discounted bento (tired evening after a long day) | Food |
+| 18:30 | 0h45 | Bath, early night | Admin |
 
-- **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
-  keep site. The rest of the East Gardens is flat gravel, stroller-fine.
-- Active out-of-lodging time: about 5h35.
+- **Carrier only for Hase-dera** - the temple's terraced garden has steep stairs; the
+  compact stroller does not work there. The stroller is fine on Yuigahama's flat sand
+  approach and at Kotoku-in's open forecourt.
+- This is a travel-heavy day trip like Day 1: roughly 2h50 of seated train time is
+  low-exertion, and the 1h45 rest block is built in; true walking/sightseeing time is
+  about 3h.
+- Kamakura is placed here, on a Tuesday, rather than on the Oct 10-12 Sports Day
+  three-day weekend - the Enoden is a single-track local line to Hase, and
+  boarding queues at Kamakura Station routinely run 30-45 minutes on a fine
+  holiday Saturday, which is a bad match for a stroller and two infants.
 
 ### Lodging
 
@@ -770,35 +776,37 @@ Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adul
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Ramen shop, Tokyo Ramen Street | Marunouchi, Chiyoda-ku | 750 | 2,600 |
-| Dinner | Self-catered | Hotel kitchenette | 700 | 1,150 |
-| Infant food | Purees/formula | Conbini | n/a | 2,100 |
+| Lunch | Shirasu-don (whitebait rice bowl) | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
+| Dinner | Hangaku-discounted bento | Supermarket/conbini near hotel, discount timing | 750 | 1,850 |
+| Infant food | Purees/formula | Conbini | n/a | 2,400 |
 
-Adult kcal: 500 + 750 + 700 = **1,950**.
+Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ### Transport
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Otemachi | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
-| Otemachi -> Ueno | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
+| Ueno -> Kamakura | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
+| Enoden 1-day pass "Noriorikun" | Enoden | - | 800 | 2,400 |
+| Kamakura -> Ueno | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
 
 ### Activities
 
 | Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
 |---|---|---|---|---|---|
-| Imperial Palace East Gardens | Chiyoda-ku | Free; reserve via QR/paper ticket at the gate; carrier for the Tenshudai stairs | 1h30 | 0 | 0 |
-| Mitsubishi Ichigokan Museum | Marunouchi, Chiyoda-ku | Meiji-era brick building, rotating exhibitions; 2026 planning estimate | 1h00 | 2,000 | 6,000 |
+| Kotoku-in - Great Buddha | Hase, Kamakura | Exterior view; interior climb +¥50/adult optional, not counted | 1h00 | 300 | 900 |
+| Hase-dera | Hase, Kamakura | Temple + garden; carrier only, steep stairs | 0h35 | 400 | 1,200 |
+| Yuigahama Beach | Kamakura | Free, flat sand walk | 0h30 | 0 | 0 |
 
 ### Day 7 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 6,600 | 43 |
-| Transport | 1,260 | 8 |
-| Activities | 6,000 | 39 |
-| **Day total** | **31,860** | **206** |
+| Food | 8,600 | 55 |
+| Transport | 8,220 | 53 |
+| Activities | 2,100 | 14 |
+| **Day total** | **36,920** | **238** |
 
 **Running total after Day 7: ¥239,720 ($1,547)**
 
@@ -2209,7 +2217,7 @@ and is not flexed. All three flexible categories land inside the +/-5% band.
 
 ---
 
-# Days 24-27 — Hiroshima + transfer to Osaka
+# Days 24-27 - Hiroshima + transfer to Osaka
 
 *Baseline note: the running totals below start from ¥885,100 ($5,710) after Day 23,
 calculated from the fixed per-segment envelopes in MASTER-BRIEF.md (Tokyo, Kawaguchiko
@@ -2219,9 +2227,9 @@ up once the actual Day 1-23 files exist.*
 
 ---
 
-## Day 24 — Friday, October 30, 2026 — Kyoto to Hiroshima
+## Day 24 - Friday, October 30, 2026 - Kyoto to Hiroshima
 
-**Base:** Hiroshima (arriving) | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) — pack a light rain layer
+**Base:** Hiroshima (arriving) | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) - pack a light rain layer
 **Theme:** Shinkansen from Kyoto to Hiroshima; buy the JR Kansai-Hiroshima Area Pass; an easy arrival evening at Peace Memorial Park.
 
 ### Schedule
@@ -2242,14 +2250,14 @@ up once the actual Day 1-23 files exist.*
 | 15:00 | 1h15 | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free | Activity |
 | 16:15 | 0h45 | Dinner near Peace Park / Hondori arcade | Food |
 | 17:00 | 0h20 | Walk/streetcar back to hotel | Transit |
-| 17:20 | — | Evening at hotel, infants down | Rest |
+| 17:20 | - | Evening at hotel, infants down | Rest |
 
 - Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
   light evening walk. Total out-of-lodging active time stays close to the ~7h cap.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** — central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 1 of 3
 
 ### Meals
@@ -2268,13 +2276,13 @@ Adult kcal: 550 + 650 + 750 = **1,950**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Omiya-eki-mae -> Kyoto Stn | Kyoto city bus | 0h20 | 230 | 690 |
-| JR Kansai-Hiroshima Area Pass (5-day), purchased at Kyoto Stn | JR ticket office | — | 17,000 | 51,000 |
-| Kyoto -> Hiroshima | Sanyo Shinkansen (Hikari/Sakura, unreserved) | 1h40 | 10,770 (walk-up) | 0 — covered by pass |
+| JR Kansai-Hiroshima Area Pass (5-day), purchased at Kyoto Stn | JR ticket office | - | 17,000 | 51,000 |
+| Kyoto -> Hiroshima | Sanyo Shinkansen (Hikari/Sakura, unreserved) | 1h40 | 10,770 (walk-up) | 0 - covered by pass |
 | Hiroshima Stn -> Peace Memorial Park | Hiroden streetcar | 0h15 | 220 | 660 |
 
 The JR Kansai-Hiroshima Area Pass is charged in full here: **¥17,000/adult x 3 = ¥51,000**, infants
 free. It is valid **Oct 30 - Nov 3 (Days 24-28)**. This shinkansen leg alone would cost ¥10,770/adult
-(¥32,310 for 3 adults) at walk-up fares — nearly two-thirds of the pass in a single leg. Every JR leg
+(¥32,310 for 3 adults) at walk-up fares - nearly two-thirds of the pass in a single leg. Every JR leg
 the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ### Activities
@@ -2297,10 +2305,10 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ---
 
-## Day 25 — Saturday, October 31, 2026 — Miyajima (Itsukushima)
+## Day 25 - Saturday, October 31, 2026 - Miyajima (Itsukushima)
 
 **Base:** Hiroshima | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg)
-**Theme:** A full day trip to Miyajima — shrine, aquarium, and the Mt. Misen ropeway, all covered
+**Theme:** A full day trip to Miyajima - shrine, aquarium, and the Mt. Misen ropeway, all covered
 by the rail pass beyond the island admissions.
 
 ### Schedule
@@ -2316,7 +2324,7 @@ by the rail pass beyond the island admissions.
 | 10:15 | 0h45 | Miyajima Public Aquarium | Activity |
 | 11:00 | 0h45 | Lunch on Miyajima (anago-meshi / grilled oyster) | Food |
 | 11:45 | 1h45 | Rest / infant naps, Momijidani Park (shaded, benches, free) | Rest |
-| 13:30 | 1h15 | Miyajima Ropeway round trip (2 adults only — see note) | Activity |
+| 13:30 | 1h15 | Miyajima Ropeway round trip (2 adults only - see note) | Activity |
 | 14:45 | 0h15 | Regroup, walk to ferry pier | Transit |
 | 15:00 | 0h20 | Miyajima pier -> Miyajimaguchi pier, JR ferry | Transit |
 | 15:20 | 0h25 | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local | Transit |
@@ -2324,23 +2332,23 @@ by the rail pass beyond the island admissions.
 | 16:00 | 0h50 | Downtime at hotel | Rest |
 | 16:50 | 1h10 | Wind down before dinner | Rest |
 | 18:00 | 1h00 | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) | Food |
-| 19:00 | — | Return to hotel, infants down | Rest |
+| 19:00 | - | Return to hotel, infants down | Rest |
 
-- Check tide times for the floating torii nearer the date — at high tide it stands in the water
+- Check tide times for the floating torii nearer the date - at high tide it stands in the water
   (the classic photo), at low tide you can walk out to it across the sand. Either is worthwhile,
   but the two look very different; this is a "check closer to the date" item, not something to
   plan around now.
-- **Mt. Misen's summit trails are carrier-only, not stroller** — steep stone steps throughout.
+- **Mt. Misen's summit trails are carrier-only, not stroller** - steep stone steps throughout.
   The ropeway substitutes a scenic ride: only 2 of the 3 adults go up (one may carry the
   20-month-old in the party's single carrier), while the third adult rests with the stroller and
-  the other infant in Momijidani Park, right at the ropeway base station — a free, shaded stop
+  the other infant in Momijidani Park, right at the ropeway base station - a free, shaded stop
   that doubles as the day's mandatory rest block.
 - The island's main areas (shrine approach, Omotesando shopping street, aquarium) are
   stroller-workable, including via the elevator underpass near the shrine.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** — central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 2 of 3
 
 ### Meals
@@ -2358,11 +2366,11 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hotel -> Hiroshima Stn | Walk | 0h15 | — | 0 |
-| Hiroshima Stn -> Miyajimaguchi Stn | JR Sanyo Line local | 0h25 | 420 (walk-up) | 0 — covered by pass |
-| Miyajimaguchi pier <-> Miyajima pier (round trip) | JR Miyajima ferry | 0h20 total | 400 rt (walk-up) | 0 — covered by pass |
-| Miyajima -> Hiroshima Stn (return) | JR ferry + Sanyo Line local | 0h45 | 420 (walk-up) | 0 — covered by pass |
-| Hiroshima Stn -> hotel | Walk | 0h15 | — | 0 |
+| Hotel -> Hiroshima Stn | Walk | 0h15 | - | 0 |
+| Hiroshima Stn -> Miyajimaguchi Stn | JR Sanyo Line local | 0h25 | 420 (walk-up) | 0 - covered by pass |
+| Miyajimaguchi pier <-> Miyajima pier (round trip) | JR Miyajima ferry | 0h20 total | 400 rt (walk-up) | 0 - covered by pass |
+| Miyajima -> Hiroshima Stn (return) | JR ferry + Sanyo Line local | 0h45 | 420 (walk-up) | 0 - covered by pass |
+| Hiroshima Stn -> hotel | Walk | 0h15 | - | 0 |
 
 A full round trip to Miyajima (ferry + local JR) would run about ¥820/adult (¥2,460 for 3 adults)
 without the pass. Infants ride the JR ferry free, same as JR trains.
@@ -2371,7 +2379,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 | Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
 |---|---|---|---|---|---|
-| Miyajima visitor tax | Miyajima Island | ¥100/person; waived for under-6s — both infants exempt | — | 100 | 300 |
+| Miyajima visitor tax | Miyajima Island | ¥100/person; waived for under-6s - both infants exempt | - | 100 | 300 |
 | Itsukushima Shrine | Miyajima | UNESCO shrine on stilts over the water; free under 6 | 1h00 | 300 | 900 |
 | Itsukushima Treasure Hall | Miyajima, adjacent to the shrine | Shrine treasures museum | 0h30 | 300 | 900 |
 | Miyajima Public Aquarium | Miyajima, near the shrine | Stroller-friendly; seals, otters; 2026 planning estimate | 0h45 | 1,400 | 4,200 |
@@ -2391,9 +2399,9 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 ---
 
-## Day 26 — Sunday, November 1, 2026 — Hiroshima city day
+## Day 26 - Sunday, November 1, 2026 - Hiroshima city day
 
-**Base:** Hiroshima | **Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) — noticeably cooler than the last two days; add a layer
+**Base:** Hiroshima | **Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) - noticeably cooler than the last two days; add a layer
 **Theme:** Peace Memorial Park and Museum, handled with care given two infants in the party, then
 Shukkei-en garden and Hiroshima Castle.
 
@@ -2404,7 +2412,7 @@ Shukkei-en garden and Hiroshima Castle.
 | 07:00 | 0h45 | Breakfast at Toyoko Inn Hiroshima (included) | Food |
 | 07:45 | 0h15 | Hotel -> Genbaku Dome-mae, Hiroden streetcar | Transit |
 | 08:00 | 0h45 | Atomic Bomb Dome + Motoyasu riverside walk, free | Activity |
-| 08:45 | 1h15 | Peace Memorial Museum (party splits — see note) | Activity |
+| 08:45 | 1h15 | Peace Memorial Museum (party splits - see note) | Activity |
 | 10:00 | 0h35 | Hiroshima Orizuru Tower (observation deck + paper-crane fold) | Activity |
 | 10:35 | 0h45 | Lunch, Hondori arcade | Food |
 | 11:20 | 0h15 | Walk/streetcar back to hotel | Transit |
@@ -2416,11 +2424,11 @@ Shukkei-en garden and Hiroshima Castle.
 | 15:30 | 0h20 | Castle -> hotel, Hiroden streetcar | Transit |
 | 15:50 | 1h40 | Downtime at hotel | Rest |
 | 17:30 | 1h00 | Dinner near hotel | Food |
-| 18:30 | — | Evening at hotel, infants down | Rest |
+| 18:30 | - | Evening at hotel, infants down | Rest |
 
 - **The Peace Memorial Museum's content is heavy**, and the lower-floor personal-effects exhibits
   are especially confronting. With two infants in the party, consider splitting: one or two adults
-  go through the museum while the third stays outside in the park with the children — swap partway
+  go through the museum while the third stays outside in the park with the children - swap partway
   if everyone wants to see it. Either approach is reasonable; there is no need for everyone to do
   the full museum together.
 - Hiroshima Castle's keep has interior stairs (carrier recommended inside); the surrounding
@@ -2429,7 +2437,7 @@ Shukkei-en garden and Hiroshima Castle.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** — central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 3 of 3
 
 ### Meals
@@ -2449,7 +2457,7 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 |---|---|---|---|---|
 | Hotel -> Genbaku Dome-mae | Hiroden streetcar (flat fare) | 0h15 | 220 | 660 |
 | Hotel -> Shukkei-en | Hiroden streetcar (flat fare) | 0h15 | 220 | 660 |
-| Shukkei-en -> Castle -> hotel | Walk + streetcar | 0h35 total | — | 0 (included above where ridden) |
+| Shukkei-en -> Castle -> hotel | Walk + streetcar | 0h35 total | - | 0 (included above where ridden) |
 
 Hiroden's flat citywide fare makes the streetcar the cheap, easy way to move around Hiroshima;
 infants ride free.
@@ -2478,7 +2486,7 @@ infants ride free.
 
 ---
 
-## Day 27 — Monday, November 2, 2026 — Hiroshima to Osaka
+## Day 27 - Monday, November 2, 2026 - Hiroshima to Osaka
 
 **Base:** Hiroshima -> Osaka (Namba) | **Weather (typical):** Hiroshima 17.7/8.9 °C -> Osaka 17/10 °C (JMA, Nov avg)
 **Theme:** Travel day: shinkansen to Shin-Osaka, transfer to Namba, check in, a light first evening
@@ -2503,14 +2511,14 @@ at Dotonbori.
 | 15:20 | 0h20 | Tombori River Cruise | Activity |
 | 15:40 | 1h00 | Dinner in Dotonbori (takoyaki + light bites) | Food |
 | 16:40 | 0h20 | Walk back to hotel | Transit |
-| 17:00 | — | Evening at hotel, infants down | Rest |
+| 17:00 | - | Evening at hotel, infants down | Rest |
 
 - Day span 07:00-17:00 (10h), with the shinkansen leg seated and low-stress and a 1h45 midday
   rest block at the new hotel before the evening outing.
 
 ### Lodging
 
-**Toyoko Inn Osaka Namba** — Namba area (specific branch address unverified)
+**Toyoko Inn Osaka Namba** - Namba area (specific branch address unverified)
 Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥13,000 (= $83.87) | Night 1 of 3
 
 ### Meals
@@ -2528,12 +2536,12 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hiroshima Stn -> Shin-Osaka | Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) | 1h30 | 9,710 (walk-up) | 0 — covered by pass |
+| Hiroshima Stn -> Shin-Osaka | Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) | 1h30 | 9,710 (walk-up) | 0 - covered by pass |
 | Shin-Osaka -> Namba | Osaka Metro Midosuji Line | 0h20 | 290 | 870 |
 
-This shinkansen leg alone would cost ¥9,710/adult (¥29,130 for 3 adults) at walk-up fares — the
+This shinkansen leg alone would cost ¥9,710/adult (¥29,130 for 3 adults) at walk-up fares - the
 second of the pass's two big intercity legs. **The JR Kansai-Hiroshima Area Pass bought on Day 24
-remains valid through Nov 3 (Day 28) — one day of use is left**, for a day trip out of Osaka
+remains valid through Nov 3 (Day 28) - one day of use is left**, for a day trip out of Osaka
 covered in the next segment.
 
 ### Activities
@@ -2568,17 +2576,17 @@ covered in the next segment.
 | **Segment total** | **166,580** | **1,075** |
 
 Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000),
-Activities -2.4% (target 26,000) — all within the ±5% tolerance. Lodging is the fixed
+Activities -2.4% (target 26,000) - all within the ±5% tolerance. Lodging is the fixed
 ¥15,000 x 3 nights + ¥13,000 x 1 night from MASTER-BRIEF and is not flexed.
 
 ---
 
-## Day 28 — Tuesday, November 3, 2026 — Osaka
+## Day 28 - Tuesday, November 3, 2026 - Osaka
 
 **Base:** Osaka | **Weather (typical):** 17°C / 10°C, dry
 **Theme:** Culture Day, the final valid day of the JR Kansai-Hiroshima Area Pass (day trip to Kobe), and opening night of the Midosuji illumination
 
-**Culture Day precision:** Nov 3 is Bunka no Hi (Culture Day). Only the **National Museum of Art, Osaka** is confirmed free that date. This is NOT blanket free admission across Osaka museums — a lot of "free museum" listicles are actually describing **Kansai Culture Day, Nov 15-16**, which falls after this trip departs (Day 30 is Nov 5). Every other paid site below is charged at its normal rate.
+**Culture Day precision:** Nov 3 is Bunka no Hi (Culture Day). Only the **National Museum of Art, Osaka** is confirmed free that date. This is NOT blanket free admission across Osaka museums - a lot of "free museum" listicles are actually describing **Kansai Culture Day, Nov 15-16**, which falls after this trip departs (Day 30 is Nov 5). Every other paid site below is charged at its normal rate.
 
 **Kobe over Himeji:** the JR Kansai-Hiroshima Area Pass (5-day, Oct 30-Nov 3) is valid for the last time today, so today's local JR travel is ¥0. Himeji Castle admission is only ~¥1,000/adult, but the keep itself is a steep, narrow wooden-stair climb unsuitable for a stroller and rough with a 12-month-old on a carrier; only the castle grounds and the neighbouring Koko-en garden are genuinely stroller-friendly. Kobe is chosen instead: Kitano, Nankinmachi, and the harbour are flatter, shorter walks that suit two infants better, and the JR fare there and back is still ¥0 on the pass.
 
@@ -2589,13 +2597,13 @@ Activities -2.4% (target 26,000) — all within the ±5% tolerance. Lodging is t
 | 07:30 | 0:45 | Breakfast buffet at hotel (included) | Food |
 | 08:15 | 0:10 | Namba Stn -> Yodoyabashi Stn (Osaka Metro Midosuji Line) | Transit |
 | 08:25 | 0:10 | Walk to National Museum of Art, Osaka (Nakanoshima) | Transit |
-| 08:35 | 0:50 | National Museum of Art, Osaka — free entry for Culture Day | Activity |
+| 08:35 | 0:50 | National Museum of Art, Osaka - free entry for Culture Day | Activity |
 | 09:25 | 0:15 | Walk/subway back to Osaka/Umeda Stn (Midosuji Line) | Transit |
 | 09:40 | 0:25 | Osaka Stn -> Kobe-Sannomiya Stn (JR Kobe Line Special Rapid; JR Kansai-Hiroshima Area Pass, final valid day) | Transit |
 | 10:05 | 0:10 | Sannomiya Stn -> Kitano (Kobe City Loop Bus, avoids the hill climb with infants) | Transit |
-| 10:15 | 0:50 | Kitano Ijinkan district — exterior walk (Weathercock House and other former foreign residences); hilly, carrier recommended over stroller | Activity |
+| 10:15 | 0:50 | Kitano Ijinkan district - exterior walk (Weathercock House and other former foreign residences); hilly, carrier recommended over stroller | Activity |
 | 11:05 | 0:45 | Lunch: street stalls at Nankinmachi (Kobe Chinatown) | Food |
-| 11:50 | 0:30 | Meriken Park waterfront — flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside | Activity |
+| 11:50 | 0:30 | Meriken Park waterfront - flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside | Activity |
 | 12:20 | 0:15 | Walk Meriken Park -> Sannomiya Stn | Transit |
 | 12:35 | 0:25 | Kobe-Sannomiya Stn -> Osaka Stn (JR Special Rapid, pass) | Transit |
 | 13:00 | 0:15 | Osaka/Umeda Stn -> Namba Stn (Midosuji Line) | Transit |
@@ -2603,15 +2611,15 @@ Activities -2.4% (target 26,000) — all within the ±5% tolerance. Lodging is t
 | 17:15 | 0:15 | Walk hotel -> Dotonbori (Ebisubashi) | Transit |
 | 17:30 | 0:40 | Dinner: takoyaki + okonomiyaki from Dotonbori stalls | Food |
 | 18:10 | 0:15 | Walk to Midosuji Avenue | Transit |
-| 18:25 | 0:45 | Midosuji "Hikari no Kyoen" illumination — opening night, free to walk | Activity |
+| 18:25 | 0:45 | Midosuji "Hikari no Kyoen" illumination - opening night, free to walk | Activity |
 | 19:10 | 0:15 | Walk back to hotel | Transit |
-| 19:25 | — | Return to hotel, infants down | Lodging |
+| 19:25 | - | Return to hotel, infants down | Lodging |
 
 Active out-of-lodging time: ~7h10 (morning museum-plus-Kobe circuit ~5h, evening dinner-plus-illumination ~2h10), either side of a 2h rest block at the hotel. Flagged in the brief as a deliberately full day; still holds one solid midday rest.
 
 ### Lodging
 
-**Toyoko Inn Osaka Namba** — Namba area (specific branch address unverified)
+**Toyoko Inn Osaka Namba** - Namba area (specific branch address unverified)
 Unit: one twin (2 adults + 2 infants) + one single (3rd adult) | Nightly: ¥13,000 (= $83.87) | Night 2 of 3
 
 ### Meals
@@ -2621,7 +2629,7 @@ Unit: one twin (2 adults + 2 infants) + one single (3rd adult) | Nightly: ¥13,0
 | Breakfast | Hotel buffet (rice, miso, natto, pickles, bread, coffee) | Toyoko Inn Osaka Namba | 500 | 0 (included) |
 | Lunch | Street food at Nankinmachi (buns, skewers, snacks) | Sakaemachi-dori, Chuo-ku, Kobe | 700 | 2,700 |
 | Dinner | Takoyaki + okonomiyaki from Dotonbori stalls | Dotonbori, Chuo-ku, Osaka | 750 | 3,200 |
-| Infant food | Formula (Wakodo/Pigeon/Morinaga) + pouches, both infants | — | n/a | 1,900 |
+| Infant food | Formula (Wakodo/Pigeon/Morinaga) + pouches, both infants | - | n/a | 1,900 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -2631,9 +2639,9 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 |---|---|---|---|---|
 | Namba Stn -> Yodoyabashi Stn | Osaka Metro Midosuji Line | 0:10 | 240 | 720 |
 | Yodoyabashi Stn -> Osaka/Umeda Stn | Osaka Metro Midosuji Line | 0:15 | 240 | 720 |
-| Osaka Stn -> Kobe-Sannomiya Stn | JR Kobe Line Special Rapid — covered by JR Kansai-Hiroshima Area Pass, final valid day | 0:25 | 0 | 0 |
+| Osaka Stn -> Kobe-Sannomiya Stn | JR Kobe Line Special Rapid - covered by JR Kansai-Hiroshima Area Pass, final valid day | 0:25 | 0 | 0 |
 | Sannomiya Stn -> Kitano | Kobe City Loop Bus | 0:10 | 260 | 780 |
-| Kobe-Sannomiya Stn -> Osaka Stn | JR Kobe Line Special Rapid — covered by pass | 0:25 | 0 | 0 |
+| Kobe-Sannomiya Stn -> Osaka Stn | JR Kobe Line Special Rapid - covered by pass | 0:25 | 0 | 0 |
 | Osaka/Umeda Stn -> Namba Stn | Osaka Metro Midosuji Line | 0:15 | 240 | 720 |
 
 ### Activities
@@ -2659,10 +2667,10 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ---
 
-## Day 29 — Wednesday, November 4, 2026 — Osaka
+## Day 29 - Wednesday, November 4, 2026 - Osaka
 
 **Base:** Osaka | **Weather (typical):** 17°C / 10°C, dry
-**Theme:** Central Osaka on foot and by metro — castle, market, retro tower, canal — the trip's last full day
+**Theme:** Central Osaka on foot and by metro - castle, market, retro tower, canal - the trip's last full day
 
 ### Schedule
 
@@ -2683,13 +2691,13 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | 15:50 | 1:40 | Downtime at hotel | Rest |
 | 17:45 | 0:45 | Dinner: kushikatsu | Food |
 | 18:30 | 0:15 | Walk back to hotel | Transit |
-| 18:45 | — | Return to hotel, infants down | Lodging |
+| 18:45 | - | Return to hotel, infants down | Lodging |
 
 Active out-of-lodging time: ~6h50 across two blocks (morning castle + midday rest in the park, afternoon market/tower/canal circuit + evening dinner), plus a second downtime block at the hotel. Well under the 7h cap for the last full day.
 
 ### Lodging
 
-**Toyoko Inn Osaka Namba** — Namba area (specific branch address unverified)
+**Toyoko Inn Osaka Namba** - Namba area (specific branch address unverified)
 Unit: one twin (2 adults + 2 infants) + one single (3rd adult) | Nightly: ¥13,000 (= $83.87) | Night 3 of 3
 
 ### Meals
@@ -2699,7 +2707,7 @@ Unit: one twin (2 adults + 2 infants) + one single (3rd adult) | Nightly: ¥13,0
 | Breakfast | Hotel buffet | Toyoko Inn Osaka Namba | 500 | 0 (included) |
 | Lunch | Grazing at Kuromon Ichiba (sushi, wagyu skewers, tamagoyaki, oysters) | Nihonbashi, Chuo-ku, Osaka | 700 | 5,200 |
 | Dinner | Kushikatsu set | Kushikatsu Daruma, Dotonbori | 750 | 5,300 |
-| Infant food | Formula + table food, both infants | — | n/a | 1,900 |
+| Infant food | Formula + table food, both infants | - | n/a | 1,900 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -2717,7 +2725,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 | Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
 |---|---|---|---|---|---|
-| Osaka Castle keep | Osaka Castle Park, Chuo-ku, Osaka | Park grounds free; keep/museum ¥600/adult, infants free. Elevator to 5F, stairs above — stroller parked at entrance | 1:40 | 600 | 1,800 |
+| Osaka Castle keep | Osaka Castle Park, Chuo-ku, Osaka | Park grounds free; keep/museum ¥600/adult, infants free. Elevator to 5F, stairs above - stroller parked at entrance | 1:40 | 600 | 1,800 |
 | Tsutenkaku Tower observation deck | Shinsekai, Naniwa-ku, Osaka | ¥900/adult, infants free | 0:50 | 900 | 2,700 |
 | Tombori River Cruise | Dotonbori canal, Chuo-ku, Osaka | ~20 min narrated boat ride; ¥1,600/adult, infants free | 0:30 | 1,600 | 4,800 |
 | Dotonbori canal walk | Dotonbori, Chuo-ku, Osaka | Free street-level walk, Glico sign photo stop | 0:30 | 0 | 0 |
@@ -2736,12 +2744,12 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ---
 
-## Day 30 — Thursday, November 5, 2026 — Osaka -> Kansai Airport (KIX)
+## Day 30 - Thursday, November 5, 2026 - Osaka -> Kansai Airport (KIX)
 
 **Base:** Osaka, departing | **Weather (typical):** 17°C / 10°C, dry
-**Theme:** Departure — Namba to Kansai Airport on the Nankai line, buffered for international check-in with a party of five
+**Theme:** Departure - Namba to Kansai Airport on the Nankai line, buffered for international check-in with a party of five
 
-The **JR Kansai-Hiroshima Area Pass expired at the end of Day 28 (Nov 3)**, so today's fare is paid in full. The **Nankai Airport Line rapid express** (¥930/adult, ¥2,790 for the party, ~45 min) is used rather than the JR Haruka, which runs roughly double that per adult for the same trip — Nankai is both cheaper and requires no reservation. International check-in at KIX wants about 3 hours ahead of departure for a party this size with a stroller and checked bags, so that buffer is built into the schedule below rather than assumed.
+The **JR Kansai-Hiroshima Area Pass expired at the end of Day 28 (Nov 3)**, so today's fare is paid in full. The **Nankai Airport Line rapid express** (¥930/adult, ¥2,790 for the party, ~45 min) is used rather than the JR Haruka, which runs roughly double that per adult for the same trip - Nankai is both cheaper and requires no reservation. International check-in at KIX wants about 3 hours ahead of departure for a party this size with a stroller and checked bags, so that buffer is built into the schedule below rather than assumed.
 
 ### Schedule
 
@@ -2752,15 +2760,15 @@ The **JR Kansai-Hiroshima Area Pass expired at the end of Day 28 (Nov 3)**, so t
 | 09:00 | 0:15 | Walk hotel -> Nankai Namba Stn (stroller + bags) | Transit |
 | 09:15 | 0:45 | Namba Stn -> Kansai Airport Stn (Nankai Airport Line, rapid express) | Transit |
 | 10:00 | 0:15 | Arrive KIX, walk to check-in hall (Terminal 1) | Transit |
-| 10:15 | 2:45 | International check-in, bag drop, security, immigration — 3h buffer for party of 5 + stroller + checked bags; stroller gate-checked at boarding | Admin |
+| 10:15 | 2:45 | International check-in, bag drop, security, immigration - 3h buffer for party of 5 + stroller + checked bags; stroller gate-checked at boarding | Admin |
 | 13:00 | 0:30 | Light meal at airside food court before boarding | Food |
-| 13:30 | — | Board flight (airfare and in-flight meal not costed in this itinerary) | Admin |
+| 13:30 | - | Board flight (airfare and in-flight meal not costed in this itinerary) | Admin |
 
-Total time from hotel to boarding: ~4h30, comfortably under the 7h active cap — appropriate for a travel day with infants.
+Total time from hotel to boarding: ~4h30, comfortably under the 7h active cap - appropriate for a travel day with infants.
 
 ### Lodging
 
-No lodging charge — checked out this morning. (Night 3 of 3 at Toyoko Inn Osaka Namba was Day 29's night; Day 30 has no additional room night.)
+No lodging charge - checked out this morning. (Night 3 of 3 at Toyoko Inn Osaka Namba was Day 29's night; Day 30 has no additional room night.)
 
 ### Meals
 
@@ -2768,8 +2776,8 @@ No lodging charge — checked out this morning. (Night 3 of 3 at Toyoko Inn Osak
 |---|---|---|---|---|
 | Breakfast | Hotel buffet, final morning | Toyoko Inn Osaka Namba | 500 | 0 (included) |
 | Lunch | Ramen or curry at the airside food court | Kansai International Airport, Terminal 1 | 700 | 3,600 |
-| Dinner | In-flight meal, international carrier (not costed here) | — | 750 | 0 |
-| Infant food | Formula + pouches/snacks for the travel day | — | n/a | 1,400 |
+| Dinner | In-flight meal, international carrier (not costed here) | - | 750 | 0 |
+| Infant food | Formula + pouches/snacks for the travel day | - | n/a | 1,400 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -2782,7 +2790,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ### Activities
 
-*(No activities scheduled — departure day.)*
+*(No activities scheduled - departure day.)*
 
 ### Day 30 Cost
 
@@ -2809,11 +2817,107 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | **Segment total** | **68,480** | **442** |
 
 **Confirmed against the envelope** (Food ¥25,000 / Transport ¥10,300 / Activities ¥18,000):
-- Food: ¥25,200 vs ¥25,000 — **+0.8%**, within the ±5% band.
-- Transport: ¥7,980 vs ¥10,300 — **-22.5%**, under. Genuine, not padded: the JR Kansai-Hiroshima Area Pass covers all Day 28 JR travel to and from Kobe at ¥0 on its final valid day, and Namba/Dotonbori/Shinsekai/Kuromon sit close enough together to cover several connections on foot.
-- Activities: ¥9,300 vs ¥18,000 — **-48.3%**, under. Day 28 is built entirely on free activities (Culture Day museum entry, a free harbour walk, a free illumination) by design; Day 29 carries the segment's only paid admissions (Osaka Castle keep, Tsutenkaku, the Tombori River Cruise).
+- Food: ¥25,200 vs ¥25,000 - **+0.8%**, within the ±5% band.
+- Transport: ¥7,980 vs ¥10,300 - **-22.5%**, under. Genuine, not padded: the JR Kansai-Hiroshima Area Pass covers all Day 28 JR travel to and from Kobe at ¥0 on its final valid day, and Namba/Dotonbori/Shinsekai/Kuromon sit close enough together to cover several connections on foot.
+- Activities: ¥9,300 vs ¥18,000 - **-48.3%**, under. Day 28 is built entirely on free activities (Culture Day museum entry, a free harbour walk, a free illumination) by design; Day 29 carries the segment's only paid admissions (Osaka Castle keep, Tsutenkaku, the Tombori River Cruise).
 - Lodging (fixed, not part of the flex envelope): ¥26,000 for nights 2 and 3 of 3 at Toyoko Inn Osaka Namba, matching the ¥13,000/night rate in the brief.
 
-The shortfall against Transport and Activities is not overspend elsewhere — it is real savings from the pass's last day and from Culture Day, left as-is per the honesty rule rather than padded to hit the target.
+The shortfall against Transport and Activities is not overspend elsewhere - it is real savings from the pass's last day and from Culture Day, left as-is per the honesty rule rather than padded to hit the target.
 
 *Running total baseline: ¥1,055,100 ($6,807) after Day 27, computed from the fixed lodging schedule plus the Days 1-27 segment envelopes in MASTER-BRIEF.md (Day 27 itself is written by another agent and belongs to the Hiroshima + transfer segment, not this one).*
+
+---
+
+# Part III: Appendices
+
+## Appendix A. What to book in advance, and when
+
+| When | What | Why it cannot wait |
+|---|---|---|
+| As soon as dates are fixed | All five properties | The two-room split depends on availability of both a twin and a single at the same property on the same nights. This gets harder, not easier, as October approaches |
+| Same time | Ghibli Museum (Day 10) | Advance lottery only. There is no walk-up ticket. Entering the lottery is free; losing it costs nothing but the plan should not assume a win |
+| ~1 month out | Fujikyu "Mishima-Kawaguchiko Liner" (Day 14) | All seats reserved, and it sells out. This is the single most fragile booking in the itinerary, because the whole Kyoto transfer depends on it |
+| ~1 month out | Shinjuku to Kawaguchiko highway bus (Day 11) | Reserved seating; needs a paid seat for the 20-month-old |
+| Before departure | JR Kansai-Hiroshima Area Pass | Cheaper bought before arrival; activate on Day 24 so it runs 30 Oct to 3 Nov |
+| Before departure | eSIM or pocket wifi | |
+| No booking needed | Jidai Matsuri (Day 16) | Free street viewing. Do not buy grandstand seats |
+| No booking needed | Midosuji illumination (Day 28) | Free public street event |
+
+**Declare both infants' ages in writing when booking every property.** The entire
+lodging strategy rests on preschool children co-sleeping free, one per bed. Some chains
+count every body against a hard room cap regardless of age, and finding that out at
+check-in with two tired children is the worst possible time.
+
+## Appendix B. Japan with a 12-month-old and a 20-month-old
+
+**What is free.** Both children ride free on JR including shinkansen, on the Tokyo Metro
+and Toei, Osaka Metro, Kyoto city buses, and the Miyajima ferry. Under-sixes are free at
+essentially every museum, temple, garden and castle in this itinerary. The Miyajima
+island visitor tax exempts them too.
+
+**What is not.** Highway buses. Fujikyu and Keio require a paid seat for a child who can
+sit independently and discourage lap-riding to the point of possible boarding refusal.
+Days 11 and 14 budget a paid seat for the 20-month-old accordingly.
+
+**Stroller strategy.** One compact umbrella stroller plus one carrier, not a double
+stroller. Japanese shop aisles, station passages and some elevators are narrow enough
+that a wide double becomes a repeated friction point. Strollers are exempt from
+shinkansen oversized-baggage reservation rules regardless of size.
+
+Places in this itinerary where the stroller does not work and the carrier is required:
+Senso-ji at peak crowd, the Fushimi Inari summit circuit, Kiyomizu-dera's approach
+lanes, Hase-dera's terraces, Yanaka Cemetery paths, Sankeien, Mt. Misen on Miyajima,
+the Himeji keep, and the Ghibli Museum interior. Each is flagged on its own day.
+
+**Nappy changing and feeding.** Nursing rooms are widely available and well equipped:
+department stores (Isetan, Mitsukoshi, Daimaru), malls (AEON, LaLaport), shinkansen
+stations and public buildings. Most have hot water for formula. The free Mama Papa Map
+app crowdsources their locations nationwide and is worth installing before departure.
+
+**Supplies.** Drugstores (Matsumoto Kiyoshi, Welcia, Tsuruha) are everywhere including
+inside stations, so there is no need to bulk-carry. Diapers run ¥1,000-1,500 a pack,
+formula ¥2,000-2,500 per 800 g tin. **Kewpie is discontinuing its baby food line in
+August 2026** - buy Wakodo, Pigeon or Morinaga instead.
+
+**Laundry.** Unavoidable with two infants over thirty days. K's House has a washer and
+dryer at ¥500 a load, the Toyoko Inn properties have coin laundry, and the Tokyo
+kitchenette room makes hand-washing practical. Budgeted in the misc line.
+
+**Pacing.** Every day in this report has a rest block of 1h30 to 2h00 and caps active
+out-of-lodging time at roughly seven hours. Day 14, the Kyoto transfer, is the single
+deliberate exception at about 7h20 and is flagged as such on the day.
+
+## Appendix C. How 2,000 calories a day actually gets bought
+
+Each adult day sums to 1,950-2,100 kcal across the meal rows, built from four levers:
+
+1. **Free hotel breakfast on 16 of 30 days.** The three Toyoko Inn stays include a buffet for every guest, children included: rice, miso soup, natto, pickles, bread, coffee. Roughly 500 kcal per adult at zero cost, and it removes the most awkward meal of the day to organise with infants.
+2. **Self-catering.** The Tokyo room has a kitchenette with fridge and microwave; K's House has a full shared kitchen. Cooking 2,000 kcal from a Japanese supermarket costs about ¥820-930 per adult. Cheapest chains in order: Gyomu Super, Hanamasa, OK Store, then Life and Aeon.
+3. **Hangaku.** Supermarket delis and department store basements discount prepared food in stages before closing, 20% then 30% then 50% in the final stretch. One well-timed evening run roughly halves that meal. Used deliberately on several days rather than treated as luck.
+4. **Cheap chains, used on purpose.** Matsuya gyudon ¥380, Marugame udon from ¥280, Saizeriya full meals ¥750-1,000, Sushiro and Kura plates ¥115-150. These are not compromises; they are how the country actually eats on a weekday.
+
+The trip is not planned to eat like this every day. Osaka's last full day, the Hiroshima
+okonomiyaki night and several Kyoto dinners are deliberately restaurant meals. The
+self-catering floor is what buys them.
+
+## Appendix D. Confidence and sources
+
+**Verified against live sources:** exchange rate, typhoon seasonality, 2026 koyo
+forecast dates, Japanese public holidays, Golden Week and Obon and Silver Week dates,
+Jidai Matsuri and Kurama Fire Festival dates, JR and metro and bus child-fare rules,
+museum under-six admission policy, Miyajima ferry and visitor tax and shrine fees, all
+rail pass prices, point-to-point shinkansen fares, the Fujikyu bus network and fares,
+Hiroshima JMA climate normals, restaurant chain prices, and the Midosuji illumination
+opening date.
+
+**Planning estimates, not quotes:** all five nightly lodging rates, most supermarket
+staple prices, baby consumable daily costs, and several minor admission fees. These are
+current rates adjusted for occupancy and season, and are labelled where they appear.
+
+**Known gaps, stated rather than papered over:**
+- Four of five properties are identified by station proximity, not a confirmed street address.
+- No booking engine returned date-stamped 2026 availability, so no rate here is a quote.
+- The Kyoto ¥700 all-day bus pass was discontinued in autumn 2023; fares are priced per ride by IC card instead.
+- Communal onsen policy on infants and diapers is inconsistent; a private kashikiri family bath is recommended at Kawaguchiko rather than assuming access.
+- Miyajima's floating torii depends on the tide. Check a tide table nearer the date rather than trusting any schedule printed months ahead.
+- Hiroshima's Dreamination illumination starts mid-to-late November and misses this window. It is excluded rather than included hopefully.

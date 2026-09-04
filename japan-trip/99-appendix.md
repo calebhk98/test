@@ -47,7 +47,7 @@ app crowdsources their locations nationwide and is worth installing before depar
 **Supplies.** Drugstores (Matsumoto Kiyoshi, Welcia, Tsuruha) are everywhere including
 inside stations, so there is no need to bulk-carry. Diapers run ¥1,000-1,500 a pack,
 formula ¥2,000-2,500 per 800 g tin. **Kewpie is discontinuing its baby food line in
-August 2026** — buy Wakodo, Pigeon or Morinaga instead.
+August 2026** - buy Wakodo, Pigeon or Morinaga instead.
 
 **Laundry.** Unavoidable with two infants over thirty days. K's House has a washer and
 dryer at ¥500 a load, the Toyoko Inn properties have coin laundry, and the Tokyo
