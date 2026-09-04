@@ -124,7 +124,7 @@ Priya is along the radiator under the window with her boots up on the pipe. "You
 
 Nobody answers that on the Tuesday and nobody has a better answer on the Thursday.
 
-They go wireless anyway, because the reel has to be signed for and the field is a field. Kavi has it in a fortnight, but then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
+The reel has to be signed for and the field is a field. They go wireless anyway. Kavi has it in a fortnight, but then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
 
 "It sits at a couple of milliseconds and it will not go under. A couple of milliseconds is most of a meter of air, so the answer is a meter wide before Ruth has heard anything and before Chloe has done any arithmetic at all."
 
@@ -152,7 +152,7 @@ Kavi's clock lands on the Tuesday with the run on the Thursday, and every record
 
 "Sixty," Odile says, and goes back out.
 
-Chloe has the arrival sheets and nothing yet to put into them, so she sits in the room while the numbers come in and does the geometry again for a placing there is no longer time to use. After midnight she opens Ruth's thresholds and moves the far box, because the far box has been taking the road as the front of the sound all evening.
+Chloe has the arrival sheets and nothing yet to put into them, so she sits in the room while the numbers come in and does the geometry again for a placing there is no longer time to use. After midnight she opens Ruth's thresholds and moves the far box. It has been taking the road as the front of the sound all evening.
 
 "Put it back."
 

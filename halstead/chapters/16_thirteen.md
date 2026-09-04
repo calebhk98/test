@@ -94,7 +94,7 @@ Kavi has the first version running by the end of the month on the school's own m
 
 "You wrote it yourself, though, and there are whole libraries of this that people spent careers getting right."
 
-Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had."
+Ruth has the listing spread across two chairs. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had."
 
 Chloe breaks it inside a week, but the encryption holds the whole way: what she gets is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 
@@ -122,7 +122,7 @@ Formal epistemology starts with a sentence on the board, *I know that I am sitti
 
 The professor looks at her over the top of a folder. "Office hours," she says, and goes.
 
-Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the mathematics tells her what to do against somebody playing properly while Kavi has spent his whole life playing the person.
+Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term: the mathematics tells her what to do against somebody playing properly, and Kavi has spent his whole life playing the person.
 
 "You went left again, and you went left last time as well."
 

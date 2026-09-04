@@ -74,7 +74,7 @@ He read the grade sheet on the board like everyone else and thought it harsh at 
 
 Theo puts his hand over his mouth and sits like that.
 
-The man in the next cubicle leans around the partition. "You good over there?" "Fine," Theo says, and takes his hand down. The folder comes back up off the desk, because leaving it open there is worse than finishing it.
+The man in the next cubicle leans around the partition. "You good over there?" "Fine," Theo says, and takes his hand down. The folder comes back up off the desk.
 
 ________________
 

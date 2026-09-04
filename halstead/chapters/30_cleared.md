@@ -40,7 +40,7 @@ Before he asks her anything, he tells her what the visit is for: a full accounti
 
 "It goes into your file," Whitaker says, "and it stays sealed there. Access stops at the file itself, for you and for whoever comes asking about you later."
 
-That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward, because he's already shown her what happens to it.
+That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward.
 
 "Residential the whole time?" he asks, pen already moving.
 

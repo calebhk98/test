@@ -68,7 +68,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "You just said hither yourself, not even a moment ago, which is the whole argument, right there, coming out of your own mouth."
 
-"That's different, because I said it on purpose to prove a point." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
+"That's different. I used it on purpose, and you used it by accident, which is the whole reason I still win." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
 
 There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan, but Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, but when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
 

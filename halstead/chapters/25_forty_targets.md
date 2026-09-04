@@ -22,7 +22,7 @@ Sam does it again, whereupon it is wrong again in a different place, and it cont
 
 "I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
 
-"He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off, because the water is a privilege the bay forfeited on Tuesday, with no immediate prospect of recovering it.
+"He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off. The water is a privilege the bay forfeited on Tuesday, with no immediate prospect of recovering it.
 
 "He walked off the second time with his mouth shut, though. That's the good version of it."
 
@@ -82,7 +82,7 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Sure there were." The man who asked has both elbows planted either side of his tray, in the manner of somebody settling in for the remainder of an argument he considers already concluded. "Nobody maxes that test on a cold morning but then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
 
-"The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, but then came and found me afterwards to apologize for it, because she reckoned she'd embarrassed me in front of the year."
+"The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, but then came and found me afterwards to apologize for it. She'd cracked a rib doing it, and wanted me to hear that part from her before the medic did."
 
 "A girl."
 

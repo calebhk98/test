@@ -60,7 +60,7 @@ A professor breaks it: she likes him, genuinely, and in office hours he cannot f
 
 His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
 
-"Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
+"Stop me there. Go back to the sign convention and write out the two lines you skipped between it and the boundary term." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
 
 From the top, then, and step one and step two go by without any trouble in them at all, but at step three he puts his hand flat on the paper and leaves it there.
 

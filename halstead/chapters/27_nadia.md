@@ -156,7 +156,7 @@ The man behind the desk looks at the man standing over her and keeps looking at 
 
 "Get out of my office," the man behind the desk says. "That's the second time I've said it to you and I'm finished saying it."
 
-"That's fine, because I heard you perfectly well the first time."
+"That's fine. Say it as many times as you like, it doesn't move me an inch."
 
 The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and another of them laughs at it. The steel stairs are behind her before either sound has finished. Somebody comes out onto the landing and stands there watching while she crosses the lot, and is still up there when she reaches the car.
 

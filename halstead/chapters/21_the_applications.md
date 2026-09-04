@@ -276,6 +276,6 @@ Ruth comes the rest of the way in and sits on the floor across from Chloe, worki
 
 "It's on their site, though, in writing, where anyone can look it up," Chloe says.
 
-"It's on their site," Ruth says, "and it still isn't a real number all the same, because both of those can be true at once."
+"It's on their site," Ruth says, "and it still isn't a real number all the same. Read me the line directly above it, out loud, right now."
 
 Twice in the week Chloe takes the letters out and counts them; both times the count holds. Then there's an exam on Thursday and a language report due the Monday after, and the letters go back in the drawer and stay there.

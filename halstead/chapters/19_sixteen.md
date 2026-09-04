@@ -32,7 +32,7 @@ Kavi looks at the board, then at her, then back at the board, his own row a few 
 
 "It's fine," Chloe says. "The numbers are the numbers, and saying either of them twice just leaves them exactly where they were. You didn't do anything to me by passing it." She takes the list in again, her weight settled square on both feet, then steps back from the board to let somebody else in.
 
-Fifty-two in the year pass, but thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past all day.
+Fifty-two in the year pass, but thirty-nine do not, hers among them. The board hangs in a hall everybody walks past all day, and by dinner they have found each other by sight.
 
 Bex passed, and comes the length of that hall to find her before dinner, saying it from halfway down.
 
@@ -70,7 +70,7 @@ ________________
 
 "Two of you, brothers, one of you has sold something belonging to the other." The drama teacher points at whoever is nearest the door and declines to explain the exercise further. "Go."
 
-Sam is up in half a second and talks without stopping for air, while Chloe goes up the following week and stops twice inside the first thirty seconds, because both times she can hear the scene coming a few lines out and wants to be standing at the good line already.
+Sam is up in half a second and talks without stopping for air, while Chloe goes up the following week and stops twice inside the first thirty seconds.
 
 "You're editing, cutting the road to the good line the second you can hear it coming." The teacher is already looking past her at the room.
 
@@ -80,7 +80,7 @@ Sam is up in half a second and talks without stopping for air, while Chloe goes 
 
 People are getting up out of their chairs as she goes back to hers, unhurried, her shoulders loose the entire way.
 
-In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
+In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark. Kavi marks the way the examiners mark and will decline to be kind about it.
 
 "Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out. A blank space tells him you knew where to stop. A repeated sentence tells him you didn't."
 
