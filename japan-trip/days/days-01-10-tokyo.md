@@ -64,10 +64,10 @@ stock-up run, early night against jet lag with two infants.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | In-flight meal + conbini coffee at Narita arrivals | Narita Airport Terminal | 450 | 600 |
-| Lunch | Casual teishoku/udon counter | Ueno Stn concourse, Taito-ku | 650 | 1,200 |
-| Dinner | Self-catered - rice, chicken thigh, stir-fried vegetables, cooked from the FULL initial grocery haul (rice 5kg, eggs, 2x milk, bread, chicken, tofu, natto, produce, pantry seasonings) | Life Supermarket or Gyomu Super, Higashi-Ueno (chain confirmed in the area; exact branch unverified) | 900 | 7,200 |
-| Infant food | Initial formula tin (Wakodo or Pigeon) + starter pouches for both infants | Same supermarket run | n/a | 2,400 |
+| Breakfast | Airline in-flight meal (final service before landing), plus a canned coffee from an arrivals-hall conbini | Narita Airport Terminal 1/2 arrivals, Narita, Chiba | 450 | 600 |
+| Lunch | Kake udon with a chicken tempura, plus an onigiri from the same counter | Fast-casual udon counter, Ueno Stn concourse, Taito-ku | 650 | 1,200 |
+| Dinner | Rice, pan-fried chicken thigh, cabbage-and-carrot stir-fry, miso soup - cooked from the FULL initial grocery haul (rice 5kg, a dozen eggs, 2x 1L milk, sliced bread, chicken thigh, tofu, natto, mixed produce, soy sauce/miso/oil pantry staples) | Life Supermarket or Gyomu Super, Higashi-Ueno (chain confirmed in the area; exact branch unverified) | 900 | 7,200 |
+| Infant food | Initial 800g formula tin (Wakodo or Pigeon) for Infant A (~12mo); Wakodo or Morinaga stage pouches (rice porridge, vegetable puree) as Infant A's starter solids; Infant B (~20mo) eats mashed portions of the rice, chicken and stir-fried vegetables straight off the family pot | Same supermarket run | n/a | 2,400 |
 
 Adult kcal: 450 + 650 + 900 = **2,000**.
 
@@ -104,6 +104,22 @@ No paid activities today - arrival, check-in, and settling in.
 **Theme:** Senso-ji at a quieter morning hour, then Tokyo Solamachi - the aquarium and
 Skytree observatory are in the same complex, so the whole afternoon is one short walk.
 
+**A note on shrines vs. temples.** This trip visits nine or more Shinto shrines and
+Buddhist temples without ever explaining the difference, so here it is once, at the
+stop that shows it best. A Shinto shrine (jinja) honors kami, the countless spirits of
+nature and ancestors, and is marked by a torii gate - a simple two-post, two-lintel
+gate, often vermillion - standing in front of a stone purification basin (temizuya)
+where visitors rinse hands and mouth before approaching. A Buddhist temple (tera or
+-ji) honors the Buddha and is marked instead by a heavier, roofed gate (sanmon), often
+flanked by carved guardian statues, and usually holds a bell tower, incense burners,
+and a cemetery rather than a purification trough. On sight: torii plus a water basin
+reads Shinto; a tiled, roofed gate with incense smoke and Buddha statues reads
+Buddhist. Senso-ji is the perfect place to see both at once - it is technically a
+Buddhist temple dedicated to Kannon, the goddess of mercy, but Asakusa Shrine sits
+inside its grounds a short walk from the main hall, a reminder that after 1,400 years
+of Shinto-Buddhist syncretism, most old sites in Japan blend both traditions rather
+than keeping them cleanly separate.
+
 ### Schedule
 
 | Time | Duration | Type | Item |
@@ -138,10 +154,10 @@ Skytree observatory are in the same complex, so the whole afternoon is one short
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered - rice, eggs, toast | Hotel kitchenette | 500 | 750 |
-| Lunch | Ramen/donburi counter, Tokyo Solamachi food court | Sumida-ku | 750 | 3,200 |
-| Dinner | Self-catered, top-up only from Day 1 stock | Hotel kitchenette | 700 | 1,100 |
-| Infant food | Purees/formula top-up | Conbini near hotel | n/a | 2,150 |
+| Breakfast | Rice, scrambled eggs, buttered toast | Cooked in room from Day 1 stock; Hotel kitchenette | 500 | 750 |
+| Lunch | Shoyu ramen bowl with a side of gyoza, ordered at a ramen counter | Tokyo Solamachi food court, Sumida-ku | 750 | 3,200 |
+| Dinner | Stir-fried pork and vegetables over rice, miso soup - top-up items from Day 1 stock | Cooked in room; Hotel kitchenette | 700 | 1,100 |
+| Infant food | 3 formula feeds for Infant A, plus 2 Wakodo pouches (rice and pumpkin; chicken and vegetable); Infant B eats table portions of the rice and stir-fry, plus a Pigeon snack biscuit | Conbini top-up near hotel | n/a | 2,150 |
 
 Adult kcal: 500 + 750 + 700 = **1,950**.
 
@@ -154,11 +170,11 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Senso-ji + Nakamise-dori | Asakusa, Taito-ku | Free; carrier recommended for crowds | 1h15 | 0 | 0 |
-| Sumida Aquarium | Tokyo Solamachi, Sumida-ku | Indoor, stroller-friendly; 2026 planning estimate | 1h00 | 2,900 | 8,700 |
-| Tokyo Skytree Tembo Deck (350m) | Tokyo Solamachi, Sumida-ku | Advance ticket recommended; 2026 planning estimate, historically ~¥2,100-2,400/adult | 0h45 | 2,500 | 7,500 |
+| Senso-ji + Nakamise-dori | 1h15 | 0 | 0 | 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032 | Tokyo's oldest Buddhist temple (founded 645 AD), reached along the covered Nakamise-dori shopping street - snack and souvenir stalls leading to the huge red Kaminarimon lantern gate, the main hall, and a five-story pagoda. It's the single most-visited religious site in Japan, worth it for the atmosphere and the Kannon-dedicated main hall rather than for solitude. Free to enter, grounds always open (main hall roughly 6am-5pm); Nakamise-dori is genuinely too dense for a stroller by mid-morning, so use the carrier here and save the stroller for Skytree Town. |
+| Sumida Aquarium | 1h00 | 2,900 | 8,700 | Tokyo Solamachi, 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | An indoor aquarium inside the Skytree Town mall, best known for its open-topped penguin and fur seal pool you can walk right up to, plus jellyfish tanks and a touch pool. It's compact and easy rather than spectacular - a good low-stimulation indoor stop for toddlers after Senso-ji's crowds. Fully stroller-accessible with elevators throughout and on-site changing facilities; 2026 planning estimate for admission. |
+| Tokyo Skytree Tembo Deck (350m) | 0h45 | 2,500 | 7,500 | 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | The first observation deck (350m) of the tallest structure in Japan (634m total), with glass-floor sections and a 360-degree view over the Kanto plain - Mt. Fuji is visible on a clear day. Advance timed tickets are recommended to skip the counter queue. Elevators throughout, fully stroller and infant-friendly; 2026 planning estimate, historically ~¥2,100-2,400/adult. |
 
 ### Day 2 Cost
 
@@ -193,12 +209,18 @@ everything inside a 15-minute walk of the Livemax.
 | 11:45 | 0h45 | Food | Lunch, Ameyoko market food stalls |
 | 12:30 | 1h45 | Rest | Rest / infant naps at the hotel |
 | 14:15 | 1h00 | Rest | Free browse, Ameyoko shops (no purchases counted) |
-| 15:15 | - | Rest | Downtime at the hotel |
+| 15:15 | 0h10 | Transit | Ueno -> Akihabara, JR Yamanote/Keihin-Tohoku Line |
+| 15:25 | 1h10 | Activity | Akihabara stroll - Chuo-dori main drag + Yodobashi Camera Akiba ground floor, stroller-only pace |
+| 16:35 | 0h10 | Transit | Akihabara -> Ueno, JR Yamanote/Keihin-Tohoku Line |
+| 16:45 | 0h45 | Rest | Free time / downtime at the hotel before dinner |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
-- No paid transit today - everything is a walk from the hotel.
-- Active out-of-lodging time: about 6h including the rest-adjacent browse hour.
+- No paid transit for the near-hotel morning - everything before 15:15 is a walk from
+  the hotel; the Akihabara add-on is a one-stop JR hop each way.
+- Active out-of-lodging time: about 7h, at the upper edge of the ~7h cap - a
+  deliberately gentle day otherwise (zoo, museum, pond, neighborhood browsing) makes
+  room for the added stroll.
 
 ### Lodging
 
@@ -211,10 +233,10 @@ everything inside a 15-minute walk of the Livemax.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Street food - takoyaki, gyoza, yakitori | Ameyoko market, Taito-ku | 700 | 2,150 |
-| Dinner | Self-catered, hangaku-discounted deli top-up | Supermarket near hotel, timed near closing | 750 | 1,300 |
-| Infant food | Purees/formula | Conbini near hotel | n/a | 2,100 |
+| Breakfast | Rice, grilled salted salmon flake, miso soup, pickles | Cooked in room; Hotel kitchenette | 500 | 750 |
+| Lunch | Street food grazing - takoyaki, pan-fried gyoza, yakitori skewers | Ameyoko market, Taito-ku | 700 | 2,150 |
+| Dinner | Hangaku-discounted deli items - karaage, potato salad, rice balls, over rice from the kitchenette | Supermarket near hotel, timed near closing | 750 | 1,300 |
+| Infant food | 3 formula feeds plus 2 Pigeon pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the takoyaki filling (deboned) and rice, plus a Morinaga snack pouch | Conbini near hotel | n/a | 2,100 |
 
 Adult kcal: 500 + 700 + 750 = **1,950**.
 
@@ -223,14 +245,17 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Hotel -> Ueno Park sights | Walk | - | 0 | 0 |
+| Ueno -> Akihabara | JR Yamanote/Keihin-Tohoku Line | 0h10 | 150 | 450 |
+| Akihabara -> Ueno | JR Yamanote/Keihin-Tohoku Line | 0h10 | 150 | 450 |
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Ueno Zoo | Ueno Park, Taito-ku | Infants free; stroller-friendly | 1h15 | 600 | 1,800 |
-| Tokyo National Museum (incl. special exhibition) | Ueno Park, Taito-ku | 2026 planning estimate incl. special-exhibit surcharge | 1h30 | 1,700 | 5,100 |
-| Shinobazu Pond swan-boat rental | Ueno Park | ~30 min, one boat seats the whole party | 0h30 | 800 (flat per boat) | 800 |
+| Ueno Zoo | 1h15 | 600 | 1,800 | 9-83 Uenokoen, Taito-ku, Tokyo 110-8711 | Japan's oldest zoo (opened 1882), best known for its giant pandas, with a full range of animals across paved, gently sloped paths inside Ueno Park. An easy, high-payoff morning stop literally in the hotel's neighborhood. Stroller-friendly throughout; infants free. |
+| Tokyo National Museum (incl. special exhibition) | 1h30 | 1,700 | 5,100 | 13-9 Uenokoen, Taito-ku, Tokyo 110-8712 | Japan's oldest and largest museum, covering samurai armor, swords, ceramics, and Buddhist sculpture across several galleries plus a rotating special exhibition. The best single stop in Tokyo for pre-modern Japanese art and history, though it's a "look, don't touch" pace better suited to a stroller or carrier than an active toddler. Elevators throughout; 2026 planning estimate incl. special-exhibit surcharge. |
+| Shinobazu Pond swan-boat rental | 0h30 | 800 (flat/boat) | 800 | Ueno Park, Taito-ku (nearest station Ueno; address unverified) | Rentable pedal boats, including giant swan-shaped ones, on Ueno Park's lotus pond. A genuinely fun half hour for kids old enough to enjoy the water, priced per boat rather than per person so the whole party rides together for one flat fee. Flat boarding dock; infants ride on a parent's lap. |
+| Akihabara stroll | 1h10 | 0 | 0 | Chuo-dori, Akihabara Electric Town, Chiyoda-ku (nearest station Akihabara; address unverified); Yodobashi Camera Multimedia Akiba, 1-1 Kanda-Hanaokacho, Chiyoda-ku, Tokyo 101-0028 | Tokyo's "electric town" - blocks of neon-plastered electronics, anime, and retro-game shops centered on Chuo-dori. A genuinely only-in-Japan streetscape worth a walk-through even without a gaming or anime interest. Kept ground-level and stroller-only: the main drag plus the ground floor of Yodobashi Camera's flagship multi-floor store (wide aisles, elevators, family-friendly) - the cramped, narrow upper floors of shops like Mandarake are skipped entirely with a stroller. Free to browse; budget only for an optional small snack or souvenir. |
 
 ### Day 3 Cost
 
@@ -238,9 +263,9 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 |---|---|---|
 | Lodging | 18,000 | 116 |
 | Food | 6,300 | 41 |
-| Transport | 0 | 0 |
+| Transport | 900 | 6 |
 | Activities | 7,700 | 49 |
-| **Day total** | **32,000** | **206** |
+| **Day total** | **32,900** | **212** |
 
 **Running total after Day 3: ¥107,450 ($693)**
 
@@ -250,27 +275,48 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 **Base:** Tokyo
 **Weather (typical):** 22-24/15 °C, mild
-**Theme:** The Imperial Palace East Gardens, free, plus one paid museum stop in Marunouchi.
+**Theme:** The Imperial Palace East Gardens, free, then south to the Shiba/Hamarikyu
+pocket of Minato and Chuo wards - Zojoji Temple and Tokyo Tower, then Hamarikyu
+Gardens, riding the Sumida River water bus home to Asakusa.
 
 ### Schedule
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast, self-catered |
-| 08:15 | 0h20 | Transit | Ueno -> Otemachi, Tokyo Metro Chiyoda Line |
-| 08:35 | 1h30 | Activity | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
-| 10:05 | 0h15 | Transit | Walk to Marunouchi |
-| 10:20 | 1h00 | Activity | Mitsubishi Ichigokan Museum |
-| 11:20 | 0h45 | Food | Lunch, Tokyo Ramen Street, Marunouchi |
-| 12:05 | 1h45 | Rest | Rest / infant naps - head back toward Ueno or a quiet Marunouchi corner |
-| 13:50 | 0h20 | Transit | Otemachi -> Ueno, Tokyo Metro Chiyoda Line |
-| 14:10 | - | Rest | Downtime at the hotel |
+| 07:15 | 0h45 | Food | Breakfast, self-catered |
+| 08:00 | 0h20 | Transit | Ueno -> Otemachi, Tokyo Metro Chiyoda Line |
+| 08:20 | 1h20 | Activity | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
+| 09:40 | 0h15 | Transit | Otemachi -> Onarimon, Toei Mita Line |
+| 09:55 | 1h05 | Activity | Zojoji Temple + Tokyo Tower Main Deck, Shiba Park |
+| 11:00 | 0h20 | Transit | Onarimon -> Shiodome, Toei Mita Line to Daimon + transfer to Toei Oedo Line, then a 7-min walk to Hamarikyu's Otemon Gate |
+| 11:20 | 1h00 | Activity | Hamarikyu Gardens - tidal pond, teahouse |
+| 12:20 | 0h45 | Food | Lunch, Shibakoen/Hamamatsucho area, Minato-ku |
+| 13:05 | 1h30 | Rest | Rest / infant naps - a bench on Hamarikyu's grounds (a park qualifies for the rest block) |
+| 14:35 | 0h15 | Transit | Walk back to the Hamarikyu boat pier |
+| 14:50 | 0h40 | Transit | Hamarikyu Pier -> Asakusa, Tokyo Cruise Sumida River water bus |
+| 15:30 | 0h15 | Transit | Walk, Asakusa Pier -> Hotel Livemax Higashi-Ueno |
+| 15:45 | - | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
-  keep site. The rest of the East Gardens is flat gravel, stroller-fine.
-- Active out-of-lodging time: about 5h35.
+  keep site. The rest of the East Gardens, Zojoji's grounds, and Hamarikyu's paths are
+  flat and stroller-fine.
+- Active out-of-lodging time: about 6h15, excluding the 1h30 rest block taken at
+  Hamarikyu rather than back at the hotel - a park satisfies the pacing rule same as
+  the hotel would. Total time away from the hotel is about 7h45, similar to the
+  segment's other day-trip-style days (Kamakura, Yokohama).
+- **Mitsubishi Ichigokan Museum has been dropped from this day.** It was the segment's
+  softest activity spend (¥6,000 for the party for roughly an hour of a rotating
+  Western-art exhibition) and the one part of central Tokyo this itinerary otherwise
+  never visited - the Shiba/Hamarikyu pocket south of the Palace - is a stronger use
+  of the same afternoon.
+- **The Sumida River water bus (Tokyo Cruise) from Hamarikyu to Asakusa is a genuinely
+  sensible way home**, not just a novelty: it lands a 5-10 min walk from the hotel,
+  runs roughly every 30-45 min through mid-afternoon (last known departure ~15:20, so
+  the 14:50 boarding above has buffer), and turns an otherwise dull subway transfer
+  into a ~40-min scenic ride under 13 bridges that doubles as more downtime for tired
+  toddlers. Fare is charged on top of the day's other transport (see Transport table).
 - Saturday 10 October is day one of the Sports Day three-day weekend (Sat 10 -
   Mon 12 Oct). The East Gardens close only on Mondays and Fridays (confirmed,
   not assumed), so today is open; a central Tokyo day here is deliberate,
@@ -287,10 +333,10 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Ramen shop, Tokyo Ramen Street | Marunouchi, Chiyoda-ku | 750 | 2,600 |
-| Dinner | Self-catered | Hotel kitchenette | 700 | 1,150 |
-| Infant food | Purees/formula | Conbini | n/a | 2,100 |
+| Breakfast | Rice, natto, toasted bread with jam | Cooked in room; Hotel kitchenette | 500 | 750 |
+| Lunch | Katsudon (breaded pork cutlet over rice with egg) at a teishoku counter | Shibakoen/Hamamatsucho area, Minato-ku (specific shop unverified) | 750 | 2,600 |
+| Dinner | Grilled salmon fillet, sauteed spinach, rice, miso soup | Cooked in room; Hotel kitchenette | 700 | 1,150 |
+| Infant food | 3 formula feeds plus 2 Morinaga pouches (salmon and rice; mixed vegetable) for Infant A; Infant B eats table portions of the katsudon rice and egg (deboned/de-breaded pieces) plus a Wakodo snack pouch | Conbini | n/a | 2,100 |
 
 Adult kcal: 500 + 750 + 700 = **1,950**.
 
@@ -299,14 +345,21 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Ueno -> Otemachi | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
-| Otemachi -> Ueno | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
+| Otemachi -> Onarimon | Toei Mita Line | 0h12 | 180 | 540 |
+| Onarimon -> Shiodome (via Daimon transfer) | Toei Mita Line + Toei Oedo Line | 0h15 | 180 | 540 |
+| Hamarikyu Pier -> Asakusa | Tokyo Cruise, Sumida River water bus | 0h40 | 1,000 | 3,000 |
+
+Infants assumed free on the water bus (standard under-6 policy), consistent with every
+other transit leg in this plan; not separately verified for this operator.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Imperial Palace East Gardens | Chiyoda-ku | Free; reserve via QR/paper ticket at the gate; carrier for the Tenshudai stairs | 1h30 | 0 | 0 |
-| Mitsubishi Ichigokan Museum | Marunouchi, Chiyoda-ku | Meiji-era brick building, rotating exhibitions; 2026 planning estimate | 1h00 | 2,000 | 6,000 |
+| Imperial Palace East Gardens | 1h20 | 0 | 0 | 1-1 Chiyoda, Chiyoda-ku, Tokyo 100-8111 | The public portion of the Imperial Palace grounds - the former Edo Castle's inner citadel, now a formal Japanese garden with the stone Tenshudai foundation (the burned keep's base) still standing. Free, and the strongest "Imperial Palace" experience available without the reservation-only inner-grounds tour. Same-day entry via a QR or paper ticket at the gate, no advance booking; flat gravel paths throughout except the Tenshudai's stone stairs, which need the carrier. |
+| Zojoji Temple | 0h30 | 0 | 0 | 4-7-35 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | The Tokugawa shoguns' family temple, fronted by the towering Sangedatsumon gate and rows of small stone jizo statues in red knit caps. Free, far less crowded than Senso-ji, and stands directly in front of Tokyo Tower for one of the city's classic old-gate/old-tower photos. Flat paved grounds, fully stroller-friendly, no stairs required. |
+| Tokyo Tower Main Deck | 0h35 | 1,500 | 4,500 | 4-2-8 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | Tokyo's original 1958 broadcast tower (333m) - the red-and-white silhouette that stood in for "Tokyo" in film and postcards for decades before Skytree existed. The Main Deck (150m) gives a different, lower, more central view than Skytree's, worth doing on its own terms rather than skipping as "already done." Elevator to the deck, no stairs; ¥1,500/adult, verified via 2026 web search. |
+| Hamarikyu Gardens | 1h00 | 300 | 900 | 1-1 Hamarikyu-teien, Chuo-ku, Tokyo 104-0046 | A former Edo-period shogunal duck-hunting ground turned public garden, notable for its tidal seawater pond (fed directly from Tokyo Bay, unusual for a Japanese garden) crossed by a wooden bridge to a floating teahouse serving matcha and wagashi. A genuinely different, calmer garden than the others on this trip. Wide gravel paths, mostly flat, stroller-friendly; the bridge to the teahouse has a gentle arch, no stairs. ¥300/adult, verified. |
 
 ### Day 4 Cost
 
@@ -314,9 +367,9 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 |---|---|---|
 | Lodging | 18,000 | 116 |
 | Food | 6,600 | 43 |
-| Transport | 1,260 | 8 |
-| Activities | 6,000 | 39 |
-| **Day total** | **31,860** | **206** |
+| Transport | 4,710 | 30 |
+| Activities | 5,400 | 35 |
+| **Day total** | **34,710** | **224** |
 
 **Running total after Day 4: ¥139,310 ($899)**
 
@@ -361,10 +414,10 @@ Sky at golden hour - a fuller day than most, anchored by the mandatory rest bloc
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Sushiro (kaiten-zushi chain) | Shibuya | 700 | 2,400 |
-| Dinner | Izakaya-style set course | Shibuya (specific shop unverified) | 800 | 4,300 |
-| Infant food | Purees/formula | Conbini | n/a | 2,150 |
+| Breakfast | Rice, fried egg, toast with jam | Cooked in room; Hotel kitchenette | 500 | 750 |
+| Lunch | Kaiten-zushi plates (salmon, tuna, egg, cucumber roll) plus miso soup | Sushiro, Shibuya | 700 | 2,400 |
+| Dinner | Izakaya set course - grilled chicken skewers, edamame, tofu salad, rice | Shibuya (specific shop unverified) | 800 | 4,300 |
+| Infant food | 3 formula feeds plus 2 Wakodo pouches (salmon and rice; pumpkin) for Infant A; Infant B eats table portions of the tofu salad and rice, plus edamame beans squeezed from the pod | Conbini | n/a | 2,150 |
 
 Adult kcal: 500 + 700 + 800 = **2,000**.
 
