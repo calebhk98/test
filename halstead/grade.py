@@ -466,7 +466,16 @@ FAIL_MARKERS = (
     r"\bFAIL\b",
     r":\s*(?:UNDER|OVER)\b",
     r"\bCUT \d+%",
-    r"^\s*\d+ \(",            # the band table's under-floor chapters
+    # The band table's verdict, not its notes. Section 2 prints two things: a
+    # band average against the band floor, which is the judgement, and beneath
+    # it the individual chapters sitting under that floor, which is a list to
+    # read while fixing. This used to match the list, so a band whose average
+    # cleared its floor still failed the scorecard on the strength of its own
+    # footnote, and with chapters 1 and 2 locked the section could never pass
+    # however the book changed. The docstring below the table has said all
+    # along that these are "floors for the band average, not per-chapter
+    # quotas". This now matches what the table itself marks.
+    r"<-- band under floor",
     r"[1-9]\d* problem\(s\)",
     r"[1-9]\d* not found in the manuscript",
     r"^\s*[1-9]\d* flagged across",
