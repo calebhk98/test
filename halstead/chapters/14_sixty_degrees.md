@@ -6,7 +6,7 @@ The long field runs north from the back of Building Three to a distant fence, wi
 
 Archery is ordinary at first, because the start of it is butts at twenty meters, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every so often to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
 
-Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimeters of this, coming off the string faster than anything you've had at you, and end-on at seventy meters, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
+Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimeters of this, coming off the string faster than anything you've had at you, and end-on at seventy meters, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field. I have watched every one of you try it anyway; I have watched every one of you miss, and the day somebody actually hits one I will buy the whole line breakfast."
 
 Kavi says it from down the line. "That's the opposite of what we do with the paintballs. We watch the person rather than the dart, so we're moving before he shoots. The whole tell is in the shoulder, not the barrel, and it happens before the trigger does. You can train yourself to stop flinching at the sound, but you can't train the shoulder out of somebody, because it moves before they know they're going to shoot."
 
@@ -30,7 +30,7 @@ ________________
 
 It is a counting problem, and it takes Chloe until the third week to admit that.
 
-Her release runs early when she is keyed up and late when her hands are cold, and either way puts the arrows a long way apart up there, since a tenth of a second is several meters of flight. In the second week she starts practicing it without a bow, walking to dinner in the dark with her fingers going against her leg. That is how Ruth catches her at it in the hall.
+Her release runs early when she is keyed up and late when her hands are cold; either way puts the arrows a long way apart up there, since a tenth of a second is several meters of flight. In the second week she starts practicing it without a bow, walking to dinner in the dark with her fingers going against her leg. That is how Ruth catches her at it in the hall.
 
 "Is that the release you're doing?"
 
@@ -100,7 +100,7 @@ Both elbows land on the table. "I took the inflation out, but it's still six tim
 
 "I did ask her," Chloe says. "She told me it was a good question for a different course."
 
-Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the odd Saturday the man opens it is better. In March he demonstrates a Japanese corner joint to the class that holds without a nail or a screw or any glue, and Chloe cuts it a dozen times over weeks before one holds when she pulls on it with everything she has, and that twelfth goes on the shelf over her desk.
+Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the odd Saturday the man opens it is better. In March he demonstrates a Japanese corner joint to the class that holds without a nail or a screw or any glue. Chloe cuts it a dozen times over weeks before one holds when she pulls on it with everything she has, and that twelfth goes on the shelf over her desk.
 
 In May her chisel starts rolling its edge every twenty minutes, so she takes it up to the front.
 
@@ -142,7 +142,7 @@ She keeps looking at the table.
 
 The reading takes days. On the Tuesday she goes at it all afternoon and most of the evening before being sick late in the evening, then sits on the bathroom floor with her back against the bath and goes back to it for another hour.
 
-On the Wednesday she builds the other side, because a man writing in 1961 makes the case she cannot get past, and it takes most of the day to get him into a single place and see the shape of it. There is a hole in the middle of what he says, but he walks straight past it, so she writes the missing piece in herself, on his side of the page, since knocking down the weak version afterward would be doing his job for him. Then she finds the objections that open cracks in what he has built, and answers all of them.
+On the Wednesday she builds the other side, because a man writing in 1961 makes the case she cannot get past; it takes most of the day to get him into a single place and see the shape of it. There is a hole in the middle of what he says, but he walks straight past it, so she writes the missing piece in herself, on his side of the page, since knocking down the weak version afterward would be doing his job for him. Then she finds the objections that open cracks in what he has built, and answers all of them.
 
 By Thursday afternoon she has stopped arguing with the page and started following it.
 
@@ -212,11 +212,11 @@ Students come out of a dozen rooms at once; the shouting in the main stairwell c
 
 People say afterward that Ruth ran the east stairwell, giving orders from the first thirty seconds with everybody on those stairs doing what she told them, while in minutes Nadia takes the third floor and splits it: two on each stair head, three hauling crates of markers and paint up from the second floor so that every landing keeps its own kit, the rest told where to stand and stay. Students take three instructions from her in a row before any of them thinks about it.
 
-Sam is out inside the first ninety seconds, because he goes over the second floor bannister onto the teachers coming up, which works, but then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you, and it means the bench by the front doors until it ends, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
+Sam is out inside the first ninety seconds, because he goes over the second floor bannister onto the teachers coming up, which works, but then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you. It means the bench by the front doors until it ends, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
 
 Chloe spends the whole Watch on the third floor landing with five others, markers pointed down into the stairwell, firing to meet whatever comes up before it clears the turn, and when an incoming ball meets one of theirs there is a wet crack and paint everywhere at once, both spent short of the landing. Below, more crack together, the sound carrying up through the floor, and somebody down there is shouting a count she can hear without making out the numbers. Her arms ache well before the end, but she stays until it is over.
 
-By late afternoon there are four teachers left standing in the whole building, three of them in one corridor, and Mr. Hearn is the last, with the library, one door, one window, a room full of furniture, and a crowd of students trying to get in there from twenty past three. It takes until eighteen minutes to four, by which point there are twenty on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
+By late afternoon there are four teachers left standing in the whole building, three of them in one corridor; Mr. Hearn is the last, with the library, one door, one window, a room full of furniture, and a crowd of students trying to get in there from twenty past three. It takes until eighteen minutes to four, by which point there are twenty on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
 
 The board the next day says the staff lost the building at three forty-two, but gives the students a B and lists the failures.
 

@@ -12,9 +12,9 @@ Voss lets them look at it for a while, and when he does start he starts with the
 
 Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
 
-"Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second. You will spend most of it missing by the width of a dime before you ever hit that dime on purpose, and there is no shortcut through that part, not for anybody who has ever stood on this range. Put the rifle down when your arm shakes. Pick it back up when it doesn't."
+"Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second. You will spend most of it missing by the width of a dime before you ever hit that dime on purpose, and there is no shortcut through that part, not for anybody who has ever stood on this range. Put the rifle down when your arm shakes. Pick it back up when it doesn't. I have said that line to every class for six years running, and I will keep saying it long after all of you have forgotten my name."
 
-Voss delivers it like a thing he has said a thousand times to a thousand students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the settled confidence of something printed in a manual. In November, weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office, and the oldest instructor on the staff tells her that the first time he heard it was from Voss.
+Voss delivers it like a thing he has said a thousand times to a thousand students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the settled confidence of something printed in a manual. In November, weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office; the oldest instructor on the staff tells her that the first time he heard it was from Voss.
 
 For weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, session after session, ninety of them at it. In the second week Kavi does the arithmetic and announces at dinner that at this rate somebody will hit something in about March, but Priya tells him to eat.
 
@@ -44,7 +44,7 @@ Nadia goes past behind her with a tray. "You're looking for people who stopped w
 
 "What are the cards?" Sam says.
 
-It takes her evenings, and what comes out of it is eleven people who have stopped moving, their curves flattening into a single narrow band whether it took fifty sessions or a handful, and one of them sitting where she landed since the previous November.
+It takes her evenings; what comes out of it is eleven people who have stopped moving, their curves flattening into a single narrow band whether it took fifty sessions or a handful, and one of them sitting where she landed since the previous November.
 
 Voss reads it standing in the doorway of the range office.
 
@@ -64,7 +64,7 @@ Voss taps the pages straight against the desk and hands them back to her.
 
 Chloe goes, running the numbers again the whole way down. The box goes back on the shelf that evening, square on top of the year below's, and she leaves both of them where they are.
 
-Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends, and sits behind her for the afternoon because Chloe asked her to.
+Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends. She sits behind her for the afternoon because Chloe asked her to.
 
 "Your count's clean," Ruth says. "I checked it twice against the clock."
 
@@ -92,7 +92,7 @@ Self defense is still ten of them on one with a minute on the clock, and her ave
 
 "First one's always short," Kavi says, still standing at the line. "It recovers by the third."
 
-Forty comes on the second and thirty-nine on the third, and afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
+Forty comes on the second and thirty-nine on the third; afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
 
 On a Friday she catches Kowalczyk about it at the door of the mat room, with the next group already coming past both of them.
 
@@ -164,7 +164,7 @@ A folder under her arm, she stops walking to say it. "The work you have been doi
 
 Chloe sets her bag against the wall. "All right, shoot, whatever it is you need to ask."
 
-The folder shifts to her other arm. "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign would be wrong and would fail in court besides. But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with a dozen people round it, you walk away untouched and the consequences land on us instead."
+The folder shifts to her other arm. "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign would be wrong and would fail in court besides. But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with a dozen people round it, you walk away untouched and the consequences land on us instead. I've already had that conversation once this year with somebody older than you, and it went worse for him than it needs to go for anybody in this room."
 
 "So you're asking me to keep quiet about it, when there's no rule anywhere that obliges me to."
 

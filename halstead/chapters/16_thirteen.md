@@ -70,7 +70,7 @@ The laboratories split the year between them, and hers does materials, where the
 
 In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
 
-Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year; you will open locks other people built, and the sequence is deliberate. One, a lock fails in the place the person who designed it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first lock you build yourself. The other way round, you are guessing what a lock is for."
+Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year; you will open locks other people built, and the sequence is deliberate. One, a lock fails in the place the person who designed it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first lock you build yourself. The other way round, you are guessing what a lock is for. I built my first lock at your age believing I understood the mechanism, and I was wrong about it for six more years before anybody thought to correct me."
 
 Eli gets into everything and takes his time doing it, so when Chloe asks how he took the November set he sits up on the table, swinging a foot, and talks her through it for twenty minutes on the back of somebody's timetable.
 
@@ -88,7 +88,7 @@ She takes the lid off and turns it toward Chloe. Inside is a circuit board, a ba
 
 The box goes in the drawer under Ruth's window and stays there.
 
-Everything gets arranged on their phones, and in October the duty teacher stops at the end of the long table, says she is sure Mrs. Okonkwo would be delighted to hear what her handwriting reminds them of, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
+Everything gets arranged on their phones; in October the duty teacher stops at the end of the long table, says she is sure Mrs. Okonkwo would be delighted to hear what her handwriting reminds them of, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
 
 Kavi has the first version running by the end of the month on the school's own machines, because a service inside the building looks like every other service in it, and Ruth writes the encryption herself out of the term's material rather than lifting something already tested.
 
@@ -104,7 +104,7 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 "It has to look like what this network is already full of, which is a hundred and sixty machines checking in with each other about the weather every few minutes."
 
-That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds, and it is still holding at Christmas.
+That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds. It is still holding at Christmas.
 
 Sam says, over the last of his own plate, that the kitchens are worth trying after one, once the lunch trays go back, because that is when whatever is left over gets put out.
 
@@ -194,7 +194,7 @@ Iyad tells it at breakfast two days later, to a boy who was not at the table tha
 
 When Nadia catches part of it from a few tables over and asks him whether it really went an hour, he says it was probably closer to twenty minutes.
 
-Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always, and Chloe does not sit on that side of the table again for the rest of the term.
+Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always; Chloe does not sit on that side of the table again for the rest of the term.
 
 ________________
 

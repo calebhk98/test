@@ -26,7 +26,7 @@ Chloe's feet hang well above the floor, and she kicks the chair leg in front of 
 
 Meals are at set times, and there is fruit in bowls by the stairs at any hour, free for anybody who wants it.
 
-The laundry bags are green, and they go outside your door on Tuesday and Friday nights.
+The laundry bags are green. They go outside your door on Tuesday and Friday nights.
 
 The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home but in the office.
 
@@ -44,7 +44,7 @@ Chloe's mom writes something on the back of the map.
 
 Walking to the room afterward Chloe gets a look at it: it is the sentence about going home, with the words same day underlined twice.
 
-Her room has two beds, a window that opens a few inches and then stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow.
+Her room has two beds, a window that opens a few inches before it stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow.
 
 But Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.
 
@@ -62,7 +62,7 @@ She goes on anyway.
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
-"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here. And a mini isn't even a pony, it's smaller again. Almost everybody gets that part wrong too. And a draft horse is basically the opposite of a pony, even though people mix those up as well. Being tall has nothing to do with it. They're built to pull something heavy, so a short one can still count as a draft and a tall one can still not."
+"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here. And a mini isn't even a pony, it's smaller again. Almost everybody gets that part wrong too. And a draft horse is basically the opposite of a pony, even though people mix those up as well. Being tall has nothing to do with it. They're built to pull something heavy, so a short one can still count as a draft and a tall one can still not. She measured one at nineteen hands once, for a school project, and it was still just a very large horse."
 
 The edge of her hand goes across the top of her own shoulder.
 
@@ -108,7 +108,7 @@ So her mom talks, doing the drive down, the place where they stopped and the wom
 
 Then comes a thing that happened at her work in June, which Chloe has already been told twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
 
-In the morning her mom drives her back and tells her she can do that every night if she wants, and Chloe says okay.
+In the morning her mom drives her back and tells her she can do that every night if she wants. Chloe says okay.
 
 ________________
 

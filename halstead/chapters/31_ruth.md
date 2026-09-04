@@ -12,7 +12,7 @@ Advising sends her back to the department, and the department sends her to advis
 
 A woman in the department office finally reads the whole folder, not just the top page, and squares it back together before she answers.
 
-"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either, and there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here, and none of it was wasted, it just wasn't going to change what's already been decided."
+"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either; there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here, and none of it was wasted, it just wasn't going to change what's already been decided. I sat on this committee for the two years before yours; I have written this exact letter more times than I could count for you if you asked, and it does not get easier to write."
 
 "That can't be right. The material in the opening weeks belongs to a course pitched years behind where a school like this ought to be placing me. I sat a diagnostic in August and I would like to know what it was actually for."
 
@@ -56,9 +56,9 @@ The proof gets fixed, the thanks given, and then, halfway to the door with his b
 
 The tally she keeps is private: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it.
 
-A professor breaks it: she likes him, genuinely, and in office hours he cannot follow her past the third step of her reasoning, and he says so, then asks her to go back.
+A professor breaks it: she likes him, genuinely; in office hours he cannot follow her past the third step of her reasoning, and he says so, then asks her to go back.
 
-His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
+His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes. She likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
 
 "Stop me there. Go back to the sign convention and write out the two lines you skipped between it and the boundary term." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
 

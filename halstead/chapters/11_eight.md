@@ -52,7 +52,7 @@ In the third week Chloe tries to teach her mother Spanish at the counter, with t
 
 Chloe is sitting on the counter with her heels against the cupboard door. "The first part's right, but it's the middle that goes wrong, because you keep putting the weight on the wrong bit, and that turns it into a different word, so just do the one word on its own. Están."
 
-Her mother says just that word, then says it over, and each time it comes out as a word that means something else, so that by the third go they are both laughing hard enough that Chloe has to get down off the counter, and her mother ends up on a kitchen chair, wheezing.
+Her mother says just that word, then says it over; each time it comes out as a word that means something else, so that by the third go they are both laughing hard enough that Chloe has to get down off the counter, and her mother ends up on a kitchen chair, wheezing.
 
 "Say something else, a whole sentence this time, and I'll do the whole sentence back at you."
 
@@ -66,7 +66,7 @@ In week three she comes in well past curfew, to find her mother standing in the 
 
 "Ellie Peterson is ten years old. I have met her mother, and she would tell you exactly what I'm telling you. Ask her. You are not the only kid at that school and you are not getting a different rule just because you asked first."
 
-"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in."
+"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in. I went down there at two in the morning once, in December, just to see if it was actually true, and it was."
 
 Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you?"
 
@@ -136,7 +136,7 @@ Nerf is eight.
 
 The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colours over each other, and a dart that misses skids most of the way to the wall.
 
-You start on paper targets for a while, then a target somebody swings across the gym on a rope, and she watches it swing every time. Then a foam disc thrown flat and fast: hard at first, then easy. The day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
+You start on paper targets for a while, then a target somebody swings across the gym on a rope, and she watches it swing every time. Then a foam disc thrown flat and fast: hard at first, then easy. The day it turns over goes past like any other Monday. The week after, Coach Bell puts a net down the middle of the floor and lines them up either side.
 
 "Both sides load up, and you're not shooting at each other, you're shooting at what they shoot at you. If your dart gets knocked down before it crosses the net, you're out and you sit on the line, and the last side with anybody standing wins the hour. Nothing comes back off the floor, so what's in your hand is what you've got."
 
@@ -160,9 +160,9 @@ Drawing is Thursdays, and in the second term, while they spend the term on hands
 
 "No, I mean that's a hand, Chloe, and the thumb's even the right size this time. Last term you were drawing mittens." Ruth carries on to the door.
 
-At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
+At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays; she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
 
-A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her.
+A boy comes out of it ahead of her with the door swinging behind him; behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her.
 
 "I want to come off dance. I've had it every Friday since September, and I'm ninetieth of ninety."
 
@@ -182,7 +182,7 @@ Chloe takes hold of the edge of the desk and stays standing. "Then can I move te
 
 ________________
 
-The elective list is on the wall outside the dining hall, four sheets long, with a blank line next to every entry and a pencil on a string, and from the middle of the afternoon that stretch of corridor smells of whatever dinner is. On a Wednesday it is bread.
+The elective list is on the wall outside the dining hall, four sheets long, with a blank line next to every entry and a pencil on a string; from the middle of the afternoon that stretch of corridor smells of whatever dinner is. On a Wednesday it is bread.
 
 Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are already on the climbing line and one on beekeeping.
 

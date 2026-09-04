@@ -58,7 +58,7 @@ Chloe's hand goes back to the fork, and she doesn't eat with it for a while.
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and every dictionary in every library would need rewriting every few years just to keep up with what people happen to like the sound of," Ruth says.
+"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and every dictionary in every library would need rewriting every few years just to keep up with what people happen to like the sound of. I looked it up twice before I said it, just so nobody could tell me I hadn't," Ruth says.
 
 "It makes it archaic. Archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
 
@@ -70,7 +70,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "That's different. I used it on purpose, and you used it by accident, which is the whole reason I still win." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
 
-There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan, but Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, but when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
+There's a shopping cart in the lot behind a hardware store on the way home; Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan, but Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, but when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
 
 ________________
 
@@ -132,7 +132,7 @@ Chloe says, "It was going to be nothing. You could see it from where we were sta
 
 Sam looks up. "How."
 
-Flat, not unkindly, she counts it off. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, but they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers."
+Flat, not unkindly, she counts it off. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, but they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers. Whoever taught them to stand like that never taught them what standing like that is actually for."
 
 Nadia stops with her hand on the fence. "What's that got to do with it?"
 

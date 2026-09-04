@@ -288,7 +288,7 @@ The statements are out on his desk, squared against the edge of it. "It's the po
 
 It is more than she has ever had at once, and she sits with it a second before she answers.
 
-Again she squares the statements against the edge of his desk. "I can hold it a few hundred dollars under that, across a month, every month, and I can show you the months. It hasn't been under that figure since August. What the difference costs me is that it sits in your branch instead of in my hand on the fourth, earning your branch interest instead of earning me anything at all."
+Again she squares the statements against the edge of his desk. "I can hold it a few hundred dollars under that, across a month, every month, and I can show you the months. It hasn't been under that figure since August. What the difference costs me is that it sits in your branch instead of in my hand on the fourth, earning your branch interest instead of earning me anything at all. I have kept that habit since the day I opened this account, and I am not about to break it over three hundred dollars."
 
 "Three hundred under isn't the number. If the sheet says twenty and you hold nineteen and change, that report comes out every month with my name at the top of it."
 

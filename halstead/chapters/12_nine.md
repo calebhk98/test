@@ -18,7 +18,7 @@ Her new ones are chemistry, statistics and biology, and Ruth has them in a diffe
 
 "They read it. They counted how many people wanted each thing, and then they did what they were going to do anyway," Ruth says.
 
-Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it. What it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
+Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it. What it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in. I went back the next day with a letter from the head asking them to look again; they looked again, and the answer came back no different than the first time."
 
 Sam has stopped with the spoon halfway up. "Is there a third?"
 
@@ -28,9 +28,9 @@ Sam has stopped with the spoon halfway up. "Is there a third?"
 
 "The third is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request the better part of a year and gave me back a date that was fixed before I wrote it down. That's all three of them," he says, squaring the sheet against the edge of the table.
 
-Ruth takes the sheet off him and reads the back of it twice, and hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's, and by Thursday there are theories about what.
+Ruth takes the sheet off him and reads the back of it twice, then hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's, and by Thursday there are theories about what.
 
-Chloe reads her own sheet again on the stairs, for a different reason, and then a third time, before running down the stairs and coming into the dining hall loud.
+Chloe reads her own sheet again on the stairs, for a different reason, then a third time, before running down the stairs and coming into the dining hall loud.
 
 "Dance is gone off the sheet, I need everyone to understand what's happening right now."
 
@@ -76,7 +76,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You said that on Monday too, word for word, and you say it every time you lose this argument."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet but comes out loud. On the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, but gets gray, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet but comes out loud. On the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve; in the fourth she makes something that is supposed to come out white, but gets gray, and carries it up to the front.
 
 "Water. That's the only thing that turns it that particular gray, and it's nowhere on your reagent list."
 
@@ -128,7 +128,7 @@ Sam spends the whole year on the overhang.
 
 Ruth asks her at dinner how the languages are going, and Chloe gives her all of it: which of the two is moving and which has stalled, where the stalling is, what she has tried against it, the thing Mrs. Sun said in October that she has only just understood, and what she is going to do about the tones. Ruth eats through the whole of it, says the tone problem sounds like the thing she had with the ablative, and gives her back an account of that at about the same length. Nobody at the table looks up.
 
-There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly, then sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
 Sam gets over it on the eleventh of May, with thirty people at the bottom, because he has spent days telling everybody he is going to do it that afternoon.
 

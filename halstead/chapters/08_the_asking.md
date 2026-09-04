@@ -12,7 +12,7 @@ The appointment is the following Wednesday, for which her mom takes the whole af
 
 "So tell me what's going on, and start wherever you like. There's no order I need it in. Take as much time as you want getting to it, and if a part of it doesn't make sense yet, that's fine too."
 
-Her mom is sitting right on the front edge of the chair, and she has the whole list ready, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." Her hands come apart and smooth an imaginary crease out of her skirt.
+Her mom is sitting right on the front edge of the chair, and she has the whole list ready, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer. I stood in the doorway for ten minutes on Tuesday, just watching, and she did not look up from the floor a single time." Her hands come apart and smooth an imaginary crease out of her skirt.
 
 "Chloe, is that right, is that how it's actually been?"
 
@@ -68,7 +68,7 @@ Dr. Ammons turns in her chair until she's facing the couch instead of the other 
 
 There are more of them than will go in a line: the bridge going over sideways all at once, the paper on the floor with the eighths ruled straight through it, Sam saying it's a room-shaped object, and Mr. Baptiste doing the whole rectangle over from the beginning for Marisol, quiet about it.
 
-"It was hard," she says. Dr. Ammons writes that down, underlines part of it, and the rest of the hour goes quiet around it, only the clock moving now, while Chloe's feet find the floor again and settle against the tile beneath the couch.
+"It was hard," she says. Dr. Ammons writes that down, underlines part of it; the rest of the hour goes quiet around it, only the clock moving now, while Chloe's feet find the floor again and settle against the tile beneath the couch.
 
 In the car her mom holds the wheel, the engine off.
 
@@ -120,9 +120,9 @@ Chloe barely sleeps that night, and gets up twice to check that the note about i
 
 There are nine kids and a cart with shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER. Mrs. Prahl wheels it in after lunch, spends a while getting them out of classrooms all over the building and into chairs, then learns every name before they have settled, after which she uses them, every time.
 
-Mrs. Prahl holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, but knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it."
+Mrs. Prahl holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, but knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it. There's no trick hiding in the wording, and there's no third option either, whatever anybody at the back is about to suggest."
 
-Chloe has it before Mrs. Prahl has finished reading it out, so she waits. A boy called Dev gets there about ninety seconds later and does it up on the board with arrows, and Mrs. Prahl makes a real thing out of it.
+Chloe has it before Mrs. Prahl has finished reading it out, so she waits. A boy called Dev gets there about ninety seconds later and does it up on the board with arrows; Mrs. Prahl makes a real thing out of it.
 
 There are twelve on the sheet, of which Chloe does most in the first stretch before she makes herself slow down.
 
@@ -174,7 +174,7 @@ Then she stands behind it with her hands shaking and her ears ringing, listening
 
 At dinner her mother passes her the bread, asks whether she wants more milk, and says something about the Thursday that needs answering and gets it. Her dad passes the salt before she asks for it.
 
-So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice, and Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else, and Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
+So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice; Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else; Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
 
 On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, but keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. The following Thursday Mrs. Prahl asks how she got on with it.
 
@@ -200,7 +200,7 @@ Chloe sits up and answers straight away, the answer already sitting in her mouth
 
 "Nobody was mean," she says.
 
-Her mom waits, sitting very still on the end of the bed, and that is already all of it: a hallway with a brass plate on the last door that says PLUTO, a boy honking with laughter about a room-shaped object, standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
+Her mom waits, sitting very still on the end of the bed; that is already all of it: a hallway with a brass plate on the last door that says PLUTO, a boy honking with laughter about a room-shaped object, standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
 
 "Nobody was mean to me," she says. "Not once, not ever, the whole time I was there."
 
@@ -224,7 +224,7 @@ Her mom looks at her for long enough that Chloe starts to think of something els
 
 Her mom smooths the back of Chloe's shirt down twice. "Okay, honey. You'll make friends this year, it just takes time in a new grade, that's all this is."
 
-Chloe lies down again with her back to her mother and turns her face toward the wall, and after a while her mom gets up off the end of the bed.
+Chloe lies down again with her back to her mother and turns her face toward the wall; after a while her mom gets up off the end of the bed.
 
 The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December but keeps to herself, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. Chloe says thank you, hugs her dad, then hugs her mom for longer, then puts her coat on over her pajamas and rides it up and down outside the house while her parents stand in the doorway in the cold.
 
@@ -242,4 +242,4 @@ It happens without her, somewhere in the last week of January, so that standing 
 
 From the stairs on a Sunday she hears her mom saying she thinks the Thursdays are helping, that Chloe is calmer than she was in November, and that the fighting about it every night has stopped. Her dad says maybe, and her mom says something Chloe can't hear from the stairs. There's a gap, and then her dad says yeah, all right.
 
-The envelope is in the top drawer under her socks, where it has been since August, and she gets it out sometimes, holds it, and reads the part with her name typed across the front of it, then puts it back under the socks. There's nowhere else for it to go.
+The envelope is in the top drawer under her socks, where it has been since August; she gets it out sometimes, holds it, and reads the part with her name typed across the front of it, then puts it back under the socks. There's nowhere else for it to go.

@@ -4,7 +4,7 @@
 
 Everything here moves at the speed of whoever finishes first, and in the first week that person is Ruth.
 
-When Chloe finishes a page and looks up, half the table is already working down the next page, and by the time she catches them Ruth is ahead again. The next thing arrives the moment the last is done, all morning and all afternoon, so that Tuesday goes past without any of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
+When Chloe finishes a page and looks up, half the table is already working down the next page; by the time she catches them Ruth is ahead again. The next thing arrives the moment the last is done, all morning and all afternoon, so that Tuesday goes past without any of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
 
 She had expected the speed to feel like a punishment, but it feels like being let out, though she cannot stop checking where everybody else has got to on the page.
 
@@ -38,7 +38,7 @@ On the Thursday every table gets a bundle of dowels, a spool of string, one glue
 
 "Go and do your own, then. You're so sure about it."
 
-Ruth goes and does her own, and Chloe watches her the whole way back to the next table, working out at her own speed whether a diagonal is the entire argument Ruth thinks it is. Before she has the answer, Sam has already laid a bead of glue along the first joint.
+Ruth goes and does her own. Chloe watches her the whole way back to the next table, working out at her own speed whether a diagonal is the entire argument Ruth thinks it is. Before she has the answer, Sam has already laid a bead of glue along the first joint.
 
 "I think we should put one across the middle too," Chloe says, pointing at the span.
 
@@ -74,7 +74,7 @@ They are dividing fractions by turning the second fraction upside down and multi
 
 "Good, that's the question. Okay, so what is dividing actually asking you, underneath the flipping part," Mr. Baptiste says, capping the marker and uncapping it before he turns back to the board.
 
-A rectangle goes up, half of it shaded, then the shaded half cut into pieces while he talks the whole way through about the question underneath the question, and Chloe follows him as far as the shading, but loses track of what the pieces are pieces of, and is left looking at a rectangle with lines across it.
+A rectangle goes up, half of it shaded, then the shaded half cut into pieces while he talks the whole way through about the question underneath the question; Chloe follows him as far as the shading, but loses track of what the pieces are pieces of, and is left looking at a rectangle with lines across it.
 
 Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew it, out of a book, and is told that this is fine but he should listen anyway; Ruth, well down the packet, is on to the next question.
 

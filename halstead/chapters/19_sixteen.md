@@ -90,7 +90,7 @@ In the second week of May she writes her first practice paper, at a table in the
 
 In a single fast paragraph she writes the shed burning down, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, all of it, right there on the page where somebody can actually see it."
 
-Between May and September she writes a stack of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them, and by August the rate has come down and settles there, declining to improve.
+Between May and September she writes a stack of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them; by August the rate has come down and settles there, declining to improve.
 
 Kavi's marking fills the margin. Nadia marks by ruling a line down the side of a paragraph and writing *said nothing* beside it; there is nothing else anywhere on the page. Chloe writes the paragraph again.
 
@@ -166,7 +166,7 @@ Chloe has the glass on the step beside her, sweating a ring into the wood. "He's
 
 "How does it not touch him, forty percent year after year? I'd have packed the whole thing in by now, or I'd have made your mother listen to it every night at this table for a year."
 
-Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it. Ruth's on ninety-one, apparently, and that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him."
+Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it. Ruth's on ninety-one, apparently, and that's more my speed. I told him misery isn't a speed you pick, and he said that was exactly the kind of thing Ruth would say back to me too, so apparently we sound alike whenever we're annoyed at him. He wrote her number on my hand in pen, actually wrote it, like I couldn't be trusted to remember four digits on my own."
 
 Her father laughs at that, head back, longer than the joke should carry him.
 
@@ -176,7 +176,7 @@ Chloe's hands are off the step now. "Ruth is the least miserable person I have e
 
 "Why does she keep doing it, then, if the range itself bores her that badly?"
 
-"Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her. I tried giving her a Saturday off in March and she turned up for it anyway."
+"Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her. I tried giving her a Saturday off in March and she turned up for it anyway, clipboard and all. She told me the whole point of a day off was choosing what to do with it, so this was what she'd chosen."
 
 Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where every pairing in adversarial negotiation goes up the week it happens and stays up all year, nothing changing hands but the score. Nadia's has been sitting there since February with Priya's name beside it, which is the whole of what the board says and the whole of what anybody remembers.
 

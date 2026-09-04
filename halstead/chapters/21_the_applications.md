@@ -206,7 +206,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday." Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software, and the software is bad. Not bad like it got something wrong. Bad like nobody has opened it in four years. One of them called me by another girl's name. One scored me out on a word the listing never asked for, and I checked, it isn't in there." She turns the notebook a quarter turn without opening it. "The ones running that site get paid by the month I stay on it. If I got a job on the Tuesday they'd have one account fewer on the Wednesday." "Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -276,6 +276,6 @@ Ruth comes the rest of the way in and sits on the floor across from Chloe, worki
 
 "It's on their site, though, in writing, where anyone can look it up," Chloe says.
 
-"It's on their site," Ruth says, "and it still isn't a real number all the same. Read me the line directly above it, out loud, right now."
+"It's on their site," Ruth says, "and it still isn't a real number all the same. Read me the line above it, out loud now."
 
 Twice in the week Chloe takes the letters out and counts them; both times the count holds. Then there's an exam on Thursday and a language report due the Monday after, and the letters go back in the drawer and stay there.

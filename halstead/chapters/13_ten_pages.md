@@ -32,7 +32,7 @@ ________________
 
 The mat room holds the smell of ninety children using it every day; the window at the top of the wall opens a hand's width and does nothing about it. Self defense is an hour a day from September, every day, and the sheet says it runs to the end.
 
-The first term is ones: standing, falling, getting up off the floor with somebody's hand on your collarbone, and twenty minutes at a stretch of somebody in front of you doing a single thing slowly and then doing it slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early, and in November it goes to twos.
+The first term is ones: standing, falling, getting up off the floor with somebody's hand on your collarbone, and twenty minutes at a stretch of somebody in front of you doing a single thing slowly and then doing it slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early; in November it goes to twos.
 
 The 10v1 starts in January.
 
@@ -62,7 +62,7 @@ By March most of the year is in the single figures on a good day, while Sam gets
 
 Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water; in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
 
-Paintball joins the afternoon block in October, and Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
+Paintball joins the afternoon block in October; Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
 
 For weeks everybody is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
@@ -74,7 +74,7 @@ Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 "What?" Ruth says. "What are you talking about?"
 
-Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots."
+Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots. I got hit more times than I could count learning that, and I stopped keeping score because it stopped being useful information."
 
 "That's not it," Ruth says. "None of this was in the briefing."
 
@@ -94,7 +94,7 @@ Bell puts it up on the board under her name and runs the rest of the hour off it
 
 Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. She reaches the door two steps behind them and gets as far as Thursday's, hers and Ruth's, before Bex, still talking, goes through it alongside Bell and keeps talking the whole way down the corridor. He tells Chloe the sheet is already written and goes on with the markers.
 
-The dining hall queue has gone past the doors and down the corridor by the time Chloe gets there, and the end of the table Bex holds most nights already has somebody else's tray on it. Bex comes in a few places behind her and eats standing at the end of the bench until Ruth shifts down to make room.
+The dining hall queue has gone past the doors and down the corridor by the time Chloe gets there; the end of the table Bex holds most nights already has somebody else's tray on it. Bex comes in a few places behind her and eats standing at the end of the bench until Ruth shifts down to make room.
 
 That evening at the sinks she gives Ruth all of it, what she said to Bell and what he said back.
 
@@ -125,7 +125,7 @@ At the bottom, in no larger type, without emphasis: *Response time is scored aga
 
 Then he goes through what a drill can be: people over the fence at the loading side, people already inside when it starts because somebody let them in on the Tuesday without a second look, a van at the front with paperwork and a name on the side, the fire alarm going, itself the drill, and adults in ordinary coats who walk in the front door in the middle of the afternoon looking exactly like themselves.
 
-Most of them are announced, with a board that says *Thursday, afternoon block* a week out and a dozen names going up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is a drill sprung with no warning at all, first thing in the morning or in the middle of lunch, and people count the weeks.
+Most of them are announced, with a board that says *Thursday, afternoon block* a week out and a dozen names going up with it; everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is a drill sprung with no warning at all, first thing in the morning or in the middle of lunch; people count the weeks.
 
 Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
@@ -145,7 +145,7 @@ Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, and is still on them when the plates come back. Chloe's fork stops over the plate. She carries her tray out the far door before the laugh has run its course, and finds Ruth on the step.
+Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, then is still on them when the plates come back. Chloe's fork stops over the plate. She carries her tray out the far door before the laugh has run its course, and finds Ruth on the step.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 
@@ -203,7 +203,7 @@ She reads it back on the Wednesday morning before she hands it in, sitting on th
 
 Hearn gives it back on the Monday with a few lines at the bottom, some about a thing she got wrong early on and the rest about what to read next.
 
-The following week she does it again in an afternoon, and the week after that it takes most of an evening, because the question is harder and she spends most of a night stuck, but this time all the pages do what only the third used to. By March she has stopped counting the hours; Hearn moves her onto Burke, who is harder to argue with than Hamilton and who she goes at for the rest of the year.
+The following week she does it again in an afternoon; the week after that it takes most of an evening, because the question is harder and she spends most of a night stuck, but this time all the pages do what only the third used to. By March she has stopped counting the hours; Hearn moves her onto Burke, who is harder to argue with than Hamilton and who she goes at for the rest of the year.
 
 In April Sam asks her at dinner whether Hearn has got easier, and she says no, then turns her fork over once before answering. "He hasn't changed a single thing about any of it. Ten pages, every week, and the same handwriting at the bottom."
 

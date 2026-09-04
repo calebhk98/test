@@ -2,7 +2,7 @@
 
 *February 2013 – March 2013*
 
-February goes by with the telephone silent, and the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very end, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words, and Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October, and at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
+February goes by with the telephone silent; the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very end, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words; Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October; at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
 
 Home from school, she goes upstairs with her coat still on, so that when her mom comes up to say that dinner is in ten minutes she finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -68,7 +68,7 @@ A chair scrapes on the kitchen tiles, and somebody runs the tap for a moment bef
 
 Chloe lies with her eyes open and her hands under the pillow, listening to the fridge, until her dad says something she can't make out at all but her mom says the words four hours, in the voice she uses about a thing she has already lost.
 
-Then it's the middle of February, then the end of it, and dinner comes and goes with neither of them bringing it up, so she stops waiting for them to. Chloe goes to Dr. Ammons on a Thursday and is asked how the weeks since have been, says fine, gets asked what fine means, but has no answer for that.
+Then it's the middle of February, then the end of it; dinner comes and goes with neither of them bringing it up, so she stops waiting for them to. Chloe goes to Dr. Ammons on a Thursday and is asked how the weeks since have been, says fine, gets asked what fine means, but has no answer for that.
 
 They tell her on the fourteenth of March.
 
@@ -96,7 +96,7 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "It's true," her dad says, "it's a true thing and I'm not saying it a third time."
 
-She screams. It goes up, holds there and keeps going after the breath behind it should have run out. Her dad's hand comes off his knee but stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way, and she is saying thank you into his shoulder with no gap between the words. Then she's off him and around the coffee table and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
+She screams. It goes up, holds there and keeps going after the breath behind it should have run out. Her dad's hand comes off his knee but stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way; she is saying thank you into his shoulder with no gap between the words. Then she's off him, around the coffee table, and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
 Twenty seconds after running upstairs she is back down, stopped on the third step from the bottom with both hands on the rail.
 
@@ -132,13 +132,13 @@ Dave rubs a hand over his face. "Then give me one reason. I have been sitting he
 
 Dave looks at the table.
 
-"That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head. I said yes to a summer camp, not to putting our whole address inside their gate, and there is a difference between those two things even if you've stopped seeing it. You can hand somebody a month. You cannot hand somebody a street."
+"That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head. I said yes to a summer camp, not to putting our whole address inside their gate, and there is a difference between those two things even if you've stopped seeing it. You can hand somebody a month. You cannot hand somebody a street. I want to hear you say that back to me before either of us says another word about the paperwork."
 
 "It's how it is, though, and you know it is, because you said yes to the whole idea back in July, before either of us had even heard the word furnished."
 
 Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and later he walks up the road for Chloe, who talks the whole way back down it about a dog that is allowed on the furniture.
 
-They drive out on the Friday for the day where Halstead looks at her, and the building is a different building in April than it was in July, because it is raining and every hall in it is full of people.
+They drive out on the Friday for the day where Halstead looks at her; the building is a different building in April than it was in July, because it is raining and every hall in it is full of people.
 
 A woman called Mrs. Okonkwo, who walks backward half the time so that she can talk while she is doing it, takes them around for an hour. Chloe asks whether the room at the end of that hall is still called Pluto and is told that the rooms down there have always been planets and that the names have stayed put since the building went up. Then she asks whether there's a boy here called Sam.
 
@@ -164,7 +164,7 @@ No test arrives, but she keeps waiting for somebody to hand her one, right throu
 
 It's dark by the time they're back on the road.
 
-Chloe talks for the whole drive, about the room she'd have and whether you get any say in which room you get. She talks about the woman who walked them around, and about whether Sam is one of the Sams here or a different Sam altogether. What she wants to know is what the food is like in April as opposed to July, and whether the robot arm on the second floor is the one from July or a newer one, and she asks her dad question after question, running each one into the next before he can answer. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool, and when the car stops in the driveway she wakes up and picks the sentence back up more or less where she dropped it.
+Chloe talks for the whole drive, about the room she'd have and whether you get any say in which room you get. She talks about the woman who walked them around, and about whether Sam is one of the Sams here or a different Sam altogether. What she wants to know is what the food is like in April as opposed to July, and whether the robot arm on the second floor is the one from July or a newer one, and she asks her dad question after question, running each one into the next before he can answer. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool; when the car stops in the driveway she wakes up and picks the sentence back up more or less where she dropped it.
 
 Her dad carries her bag in and puts it at the bottom of the stairs, and she goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she has been told not to.
 

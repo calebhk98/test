@@ -14,7 +14,7 @@ You sleep there, transportation provided, room and board included, at no cost, w
 
 At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.
 
-After reading it again and again in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and brings it back down at dinner.
+After reading it again and again in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, then brings it back down at dinner.
 
 "Can I go," she says at dinner, and both of them look up.
 
@@ -108,7 +108,7 @@ The wait after that is shorter than all the others.
 
 "Right, okay, thank you so much for going through all of that with me."
 
-Then the call goes on a long time after that and her mom's voice changes into the one she uses at the pediatrician, asking what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever, whether there is a nurse or a person they call the nurse, what Chloe eats, whether Chloe can be pulled out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then, near the end of it, how many children are going to be in the building.
+Then the call goes on a long time after that. Her mom's voice changes into the one she uses at the pediatrician, asking what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever, whether there is a nurse or a person they call the nurse, what Chloe eats, whether Chloe can be pulled out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then, near the end of it, how many children are going to be in the building.
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
@@ -144,7 +144,7 @@ ________________
 
 Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging free under the chair while he talks the whole way through the first part of it, reading the headings out loud in the voice he does for train station announcements, so that Chloe laughs at the one for lights out.
 
-A photograph of a field with goals on it gets a look, and a pool gets a question about whether she would swim, to which she says yes, and when he points out she is still learning, she says she would get better there, so he says fair enough.
+A photograph of a field with goals on it gets a look, and a pool gets a question about whether she would swim, to which she says yes. When he points out she is still learning, she says she would get better there, so he says fair enough.
 
 Then he finds the page about what a Tuesday looks like, hour by hour, doing all of the hours in the voice, including the hour that's just lunch.
 
@@ -158,9 +158,9 @@ Her mom does her own looking on the Sunday, on the laptop, with the door shut, t
 
 Searches from every direction she can think of turn up the school's own website, then stop: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
 
-For a school that has put over a hundred children through a summer and done it again every year since, that is the whole of what she finds, and she says so at the table that night with the laptop still open.
+For a school that has put over a hundred children through a summer and done it again every year since, that is the whole of what she finds; she says so at the table that night with the laptop still open.
 
-The laptop is still open on the kitchen table on the Monday morning, on the page with the teachers on it, and Chloe gets the screen awake with the space bar and starts where her dad started.
+The laptop is still open on the kitchen table on the Monday morning, on the page with the teachers on it. Chloe gets the screen awake with the space bar and starts where her dad started.
 
 There is a woman who swam in the Olympics. There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else,. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has already read it.
 
@@ -174,7 +174,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that somebody actually answers. It's got a website that hasn't been touched since the day it went up, which is either very old money or very careless, and I can't tell you which yet."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that somebody actually answers. It's got a website that hasn't been touched since the day it went up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice this afternoon, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free, and says it twice, in different ways.
 
@@ -200,7 +200,7 @@ Her mom waits for more.
 
 "It says Miss," Chloe says.
 
-Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, and goes out, leaving the door open a few inches behind her.
+Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, then goes out, leaving the door open a few inches behind her.
 
 On the ninth night Chloe is supposed to be asleep, having already been sent back once, but comes out a second time in her socks, skipping the fourth stair.
 
@@ -210,7 +210,7 @@ On the ninth night Chloe is supposed to be asleep, having already been sent back
 
 "Not like that. That's a kid gone quiet, and you know the difference as well as I do. She used to come in the door talking."
 
-A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. At that, Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.
+A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. At that, Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, then gets into bed with her socks still on.
 
 ________________
 
@@ -242,7 +242,7 @@ Chloe gets to stay up late, the whole evening spent on socks and the shoe joke, 
 
 They drive her the next day, with a stop at the halfway point that stretches to most of an hour. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again, while her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.
 
-Her mom stays at the parent hotel for the first few days, being due back at work on the Monday, and stays until she has seen the room, the food, the nurse, and the front desk at midnight to find out who is on it.
+Her mom stays at the parent hotel for the first few days, being due back at work on the Monday; she stays until she has seen the room, the food, the nurse, and the front desk at midnight to find out who is on it.
 
 On the second morning she calls the emergency number from the parking lot to make sure it rings, and it rings, and she does it again on the third, when it rings as well, a man answering both times, a different one each time.
 

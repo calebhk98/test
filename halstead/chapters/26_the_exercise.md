@@ -114,7 +114,7 @@ Sam's turn comes third. Instead of calling him up to the front, the major leaves
 
 The next part he reads the way a form gets read.
 
-"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two meters, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
+"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two meters, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well. I've already got Ives drafting the second page of it, on the soldier's face, with a photograph attached." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
 
 "There is no hand-to-hand, sir." Sam doesn't look away. "At any range."
 
@@ -128,7 +128,7 @@ The next part he reads the way a form gets read.
 
 The major looks at him for a second, then writes on the top sheet, unhurried. The room gets the sound of the pen, the projector fan, no comment whatever. Then he turns the page.
 
-"Night four. The man who took you had been in position since twenty-one hundred, which is seven hours without moving through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop, and no amount of being good at the rest of this changes that arithmetic, because patience was the only thing being tested tonight." He puts the pointer down on the overlay and leaves it lying there while he locates his next page.
+"Night four. The man who took you had been in position since twenty-one hundred, which is seven hours without moving through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop, and no amount of being good at the rest of this changes that arithmetic, because patience was the only thing being tested tonight. I have watched two hundred of you fail that exact test, and every single one of you thought your case was the exception." He puts the pointer down on the overlay and leaves it lying there while he locates his next page.
 
 "Any questions," the major says at the end, closing the clipboard.
 
@@ -140,7 +140,7 @@ A few chairs forward of him, somebody's head comes round.
 
 The major regards him across the width of the room for a while, laser pointer off now, clipboard shut underneath his arm.
 
-"That was the exercise," he says. "It was the exercise rather than a rehearsal for one. Difficulty is set above you, Marsh, and it's set a good way above me as well, and a soldier who wants the next one made harder for him has decided the exercise is about him, when the exercise is about everybody sitting in front of me and a fixed number of hours of somebody else's night, and that is true of you standing here whether you like hearing it or not, and it stays true whether the next exercise is easier than this or harder than this, because difficulty was never yours to set in the first place, Marsh, and it isn't going to become yours because you asked about it twice."
+"That was the exercise," he says. "It was the exercise rather than a rehearsal for one. Difficulty is set above you, Marsh, and it's set a good way above me as well, and a soldier who wants the next one made harder for him has decided the exercise is about him, when the exercise is about everybody sitting in front of me and a fixed number of hours of somebody else's night, and that is true of you standing here whether you like hearing it or not, and it stays true whether the next exercise is easier than this or harder than this, because difficulty was never yours to set in the first place, Marsh, and it isn't going to become yours because you asked about it twice. You'll write up the contact report tonight, before lights out, in your own hand, and it goes on my desk before breakfast."
 
 "Yes, sir."
 

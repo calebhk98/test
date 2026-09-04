@@ -52,7 +52,7 @@ Kowalczyk, still writing up the board, says, "That's the last round. So it's pai
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it. "Fifty seconds. Third round. Knee across the shin at the finish." She shakes the water off her hands. "What she should have done with that shin is a whole other conversation." By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round herself before anybody else gets to it first.
+Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, catches Chloe's eye over the taps, and waits for the next person through the door to ask what happened before she answers it. "Fifty seconds. Third round. Knee across the shin at the finish." She shakes the water off her hands. "What she should have done with that shin is a whole other conversation." By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run. She finds Ruth at breakfast and tells her the round herself before anybody else gets to it first.
 
 Seven of the year below go on her teaching list in September while Marek goes on somebody else's; she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now; it goes well enough until November, when all of them get one question wrong, and wrong it identically.
 
@@ -278,7 +278,7 @@ Her father sets his fork down. "She said something on the phone in October."
 
 Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen gets a few minutes and the plates get stacked; that turns out to be as much of the sentence as the room can hold.
 
-Her mother comes back in and asks whether anybody wants the pie warmed up; her father and Chloe both say yes at once. The game comes on, and they eat in front of it, with her mother coming to sit on the arm of his chair for the second half.
+Her mother comes back in, asking whether anybody wants the pie warmed up; her father and Chloe both say yes at once. The game comes on, and they eat in front of it, with her mother coming to sit on the arm of his chair for the second half.
 
 "That's a hold," her mother says. "That is a hold, that's been a hold all night."
 

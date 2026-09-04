@@ -96,7 +96,7 @@ Four men are inside: two at a folding table with laptops open, a third behind a 
 
 Just inside the door she stays on her feet, hands loose at her sides, and looks at the man behind the desk, since he is the first to straighten.
 
-"You put thirteen employer accounts on my site on the night of the second, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her half of last night while she apologized to me for it, for something the men in this room did to her, not anything she did to anybody, and every single apology like that belongs to somebody in here instead, whoever actually typed the message she answered."
+"You put thirteen employer accounts on my site on the night of the second, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her half of last night while she apologized to me for it, for something the men in this room did to her, not anything she did to anybody, and every single apology like that belongs to somebody in here instead, whoever actually typed the message she answered. I have her number saved, and I told her I'd call again once this was settled, so I need it settled soon."
 
 The room goes quiet for a moment while the man behind the desk sets down what he was holding.
 
@@ -142,7 +142,7 @@ At the same speed, she gives it back to him.
 
 A man at the folding table turns a printout face down.
 
-"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week. Every last name on his address gets a letter with a date on it, and everybody there signs a new lease somewhere else after that, because this address stops being usable the day the letter goes out, and finding a landlord who'll take cash from a room full of men with no company name works about as well as it sounds."
+"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week. Every last name on his address gets a letter with a date on it, and everybody there signs a new lease somewhere else after that, because this address stops being usable the day the letter goes out, and finding a landlord who'll take cash from a room full of men with no company name works about as well as it sounds. I already have the letter drafted, sitting in a folder on my desktop with today's date on it, waiting on nothing but the send button."
 
 The man behind the desk has come forward onto his elbows now.
 

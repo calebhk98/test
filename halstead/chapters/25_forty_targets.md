@@ -170,7 +170,7 @@ The drill sergeant turns the card face down against his leg.
 
 "So forty percent means four times in ten I get a round onto a round in flight, sir, which is poor. But a girl in my year was on ninety-one and she was bored the entire time she was doing it."
 
-"Private." The captain's voice has come down rather than gone up. "I have been in sixteen years. There is no school anywhere in this country running live-fire intercept work on children, there is barely a unit in this Army running it on adults, and the men who do run it have completed a selection course you could not have spelled a year ago. So I am going to put the question to you one more time, and I would like you to take your time over the answer. Where did you go to school?"
+"Private." The captain's voice has come down rather than gone up. "I have been in sixteen years. There is no school anywhere in this country running live-fire intercept work on children, there is barely a unit in this Army running it on adults, and the men who do run it have completed a selection course you could not have spelled a year ago. So I am going to put the question to you one more time, and I would like you to take your time over the answer. I have already called the number on your file once this morning, and I intend to call it again this afternoon regardless of what you tell me now. Where did you go to school?"
 
 "Halstead, sir."
 

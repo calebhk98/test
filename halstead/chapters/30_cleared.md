@@ -40,7 +40,7 @@ Before he asks her anything, he tells her what the visit is for: a full accounti
 
 "It goes into your file," Whitaker says, "and it stays sealed there. Access stops at the file itself, for you and for whoever comes asking about you later."
 
-That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward.
+That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is actually for; she gives him more than the minimum from the first page onward.
 
 "Residential the whole time?" he asks, pen already moving.
 
@@ -52,9 +52,9 @@ That's the whole answer, first try, not something softer built to sound reassuri
 
 At that he looks up, once, the pen briefly still against the page. "That's young."
 
-"It is. My mother thought so too, and she is the reason it took a year to arrange. She wanted somebody to say out loud that I could come home whenever I asked to, and nobody would put that in writing for her, so she drove up and stood in the building until they said it to her face."
+"It is. My mother thought so too, and she is the reason it took a year to arrange. She wanted somebody to say out loud that I could come home whenever I asked to, and nobody would put that in writing for her, so she drove up and stood in the building until they said it to her face. She still keeps the letter they eventually sent, folded in a drawer of its own, in case anybody ever asks her to prove it."
 
-Rather than press her for more he moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
+Rather than press her for more he moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next: she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
 
 Chloe does, a level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
@@ -66,7 +66,7 @@ The classes come after that, all of them, mathematics through politics through t
 
 "Whose column does that go in?"
 
-"Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose."
+"Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose. I kept that sheet for two years, in the drawer, before I finally threw it out."
 
 That goes down in the notebook, and he turns the page.
 
