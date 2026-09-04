@@ -1,38 +1,75 @@
-# Budget envelope — allocation before day-writing
+# Budget envelope — REVISED against research (v2)
 
-Target: **$9,000 USD** total, 3 adults + 2 infants, 30 days / 29 nights.
-Excludes: international airfare, passports, travel insurance.
-Per-adult: $3,000. Per-adult-per-day: $100.
+Planning FX rate: **¥155 = $1.00 USD** (spot 2026-09-04; 12-month band ¥140-164).
+Target: **$9,000 USD** = **¥1,395,000**. 3 adults + 2 infants, 30 days / 29 nights.
+Excludes: international airfare, passports, travel insurance, visas.
 
-## Top-down split
+## What changed from v1, and why
 
-| Category | $ target | Share | Basis |
-|---|---|---|---|
-| Lodging (29 nights) | 3,300 | 37% | ~$114/night for one unit sleeping 5 |
-| Food (30 days) | 2,650 | 29% | ~$88/day: 3 adults x 2,000 kcal + 2 infants |
-| Intercity + local transport | 1,500 | 17% | 4 intercity moves + daily local transit |
-| Activities & admissions | 900 | 10% | heavy use of free sites; infants free |
-| Contingency / misc / SIM / laundry | 650 | 7% | ~$22/day |
-| **Total** | **9,000** | 100% | |
+v1 allocated food at $88/day and lodging at $114/night. Research inverted both:
 
-## Per-segment envelopes handed to writing agents
+- **Food was massively over-allocated.** Self-catering 2,000 kcal/adult/day in Japan
+  costs ~¥820-930/adult (~¥2,600/day for three adults), plus ~¥500-900/day for two
+  infants. That is ~¥3,400/day (~$22) against an $88/day allocation.
+- **Lodging was under-allocated.** A single unit legally sleeping 3 adults + 2 infants
+  is a scarce, premium product in Japan; family apartment-hotels quote ¥25,000-50,000
+  /night. Standard business-hotel rooms cap at 2 adults, so the party needs either two
+  rooms or a Japanese-style washitsu (tatami/futon) family room.
 
-| Segment | Days | Nights | Lodging $ | Food $ | Transport $ | Activities $ | Segment $ |
-|---|---|---|---|---|---|---|---|
-| Tokyo | 1-10 | 10 | 1,150 | 880 | 330 | 330 | 2,690 |
-| Kawaguchiko + transfer | 11-14 | 4 | 480 | 355 | 430 | 120 | 1,385 |
-| Kyoto A | 15-19 | 5 | 550 | 440 | 150 | 160 | 1,300 |
-| Kyoto B | 20-23 | 4 | 440 | 355 | 130 | 130 | 1,055 |
-| Hiroshima + transfer | 24-27 | 4 | 400 | 355 | 340 | 100 | 1,195 |
-| Osaka + departure | 28-30 | 2 | 280 | 265 | 120 | 60 | 725 |
-| **Subtotal** | | 29 | 3,300 | 2,650 | 1,500 | 900 | **8,350** |
-| Contingency | | | | | | | 650 |
-| **Total** | | | | | | | **9,000** |
+Net effect: money moves from food to lodging. The $9,000 target survives.
 
-Notes:
-- Kyoto nights 20-29 are split across two writing agents; the lodging property is
-  the same for all 10 nights, so nightly rate must match between the two blocks.
-- Day 14 (Kawaguchiko -> Kyoto) is the transfer day and belongs to the Kawaguchiko
-  agent; its Kyoto lodging night uses the Kyoto property/rate.
-- Day 27 (Hiroshima -> Osaka) belongs to the Hiroshima agent; its lodging night uses
-  the Osaka property/rate.
+## Revised allocation
+
+| Category | ¥ | $ | Per day | Basis |
+|---|---|---|---|---|
+| Lodging (29 nights) | 670,000 | 4,323 | ¥23,100/night | two budget rooms or one washitsu family room |
+| Food (30 days) | 200,000 | 1,290 | ¥6,670/day | self-catered base + ~1 restaurant meal/day |
+| Transport | 172,000 | 1,110 | — | 4 intercity moves + daily local + airport legs |
+| Activities & admissions | 125,000 | 806 | ¥4,170/day | infants free almost everywhere; many free days |
+| Baby consumables | 68,000 | 439 | ¥2,270/day | diapers, formula, purees for two |
+| Misc (eSIM, laundry, lockers, forwarding) | 38,000 | 245 | ¥1,270/day | |
+| **Planned subtotal** | **1,273,000** | **8,213** | ¥42,400/day | |
+| Contingency (10%) | 127,000 | 819 | — | typhoon re-route, illness, price drift |
+| **TOTAL** | **1,400,000** | **9,032** | | |
+
+Per adult: **$3,011**. Per adult per day: **$100.4**. On target.
+
+## Transport line detail (planned)
+
+| Leg | ¥ (party of 3 adults) |
+|---|---|
+| Narita -> Tokyo, Keisei Access Express | 3,570 |
+| Tokyo local transit, 10 days | 25,000 |
+| Shinjuku -> Kawaguchiko highway bus (+1 child seat, conservative) | 7,700 |
+| Kawaguchiko local / Fuji sightseeing bus pass | 6,000 |
+| Kawaguchiko -> Kyoto (routing under revision; bus + Tokaido Shinkansen) | 37,000 |
+| Kyoto local transit, 10 days | 25,000 |
+| JR Kansai-Hiroshima Area Pass, 5-day, x3 adults | 51,000 |
+| Hiroshima / Miyajima local beyond pass | 5,000 |
+| Osaka local transit, 3 days | 7,500 |
+| Namba -> Kansai Airport, Nankai | 2,790 |
+| **Total** | **170,560** |
+
+Nationwide JR Pass rejected: at ¥105,000/adult for 21 days (¥315,000 for three) it
+would cost more than six times the ¥51,000 regional pass while leaving the two
+bus-served legs uncovered. The itinerary deliberately avoids the one route where a
+nationwide pass pays for itself.
+
+## Per-segment envelopes for writing agents
+
+Lodging rates are per the segment picks; food/activities/transport are guides, and an
+agent may flex +/-10% within its segment provided the segment total holds.
+
+| Segment | Days | Nights | Food ¥ | Transport ¥ | Activities ¥ |
+|---|---|---|---|---|---|
+| Tokyo | 1-10 | 10 | 66,000 | 28,600 | 42,000 |
+| Kawaguchiko + transfer to Kyoto | 11-14 | 4 | 27,000 | 50,700 | 14,000 |
+| Kyoto A | 15-19 | 5 | 33,000 | 12,500 | 22,000 |
+| Kyoto B | 20-23 | 4 | 27,000 | 12,500 | 18,000 |
+| Hiroshima + transfer to Osaka | 24-27 | 4 | 27,000 | 56,000 | 17,000 |
+| Osaka + departure | 28-30 | 2 | 20,000 | 10,300 | 12,000 |
+| **Total** | | 29 | **200,000** | **170,600** | **125,000** |
+
+Baby consumables (¥68,000) and misc (¥38,000) are carried as trip-level lines and
+prorated at ¥2,270/day and ¥1,270/day into each day's totals by the assembling editor,
+not by the segment agents.
