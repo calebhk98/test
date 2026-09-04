@@ -104,6 +104,54 @@ already on file there and they still read as the right two directions if the
 author wants it touched; I have nothing to add to that call-out.
 
 
+## Chapters 7 and 8
+
+### 2. New call-out: the reverse direction
+
+The brief for this pass named a direction the last one barely looked for:
+active voice where an unimportant or invented subject displaces the actual
+participants. One instance turned up.
+
+### chapters/08_the_asking.md, line 155
+
+**Current:** "Her mom says put your jacket on and Chloe says no, and her mom
+says put it on. Then the fight is happening and her throat hurts before she
+has got a few words out of it."
+
+**Why the current voice is wrong:** "The fight" is an abstraction taking an
+active verb of pure occurrence, "is happening," at the exact sentence where
+two specific, named, present people (her mom, Chloe, both subjects of their
+own verbs one clause earlier) stop being individuals and become an event
+that simply exists. This is not the erosion device from Section 1: there is
+no missing agent here in the sense of "nobody decided," there are two people
+who were just doing distinct things (repeating a command, refusing it) and
+whom the sentence now declines to keep naming right as one of them starts
+raising her voice. The two sentences after this one ("Chloe keeps going
+anyway, her voice climbing over it") make clear whose voice is doing the
+climbing; this sentence arrives a beat before the text is willing to say so.
+
+**Why it was not auto changed:** Judgment call, not obvious. A fight is a
+mutual thing by definition, and "a fight breaks out" (or, here, "is
+happening") is ordinary, defensible English for an event with no single
+starter; forcing Chloe into the subject slot risks assigning her sole blame
+for an escalation that has her mother's repeated "put it on" behind it too.
+Nothing in `HOUSE_RULES.md` or `DO_NOT_FLAG.md` blocks a fix here; the
+hesitation is about the facts of the scene, not a protected passage.
+
+**Active:** "Then Chloe is shouting before she has got a few words out, and
+her throat already hurts."
+**Active:** "Then Chloe is shouting back at her, and her throat hurts before
+she has got a few words out of it."
+**Passive:** "Then voices are raised, and her throat hurts before she has
+got a few words out of it." This keeps the sentence's original ambiguity
+about who started it (nobody is named, same as now) while trading the
+abstract "fight" for a concrete, physical image (voices, throats) closer to
+what a camera in the room could actually register; offered as the more
+defensible passive-direction option rather than a clear improvement.
+
+---
+
+
 ## Chapters 9 and 10
 
 ### Call-out
@@ -472,6 +520,139 @@ choice) rather than a fix for one.
 ---
 
 
+## Chapters 21 and 22
+
+### Called out, not changed
+
+### chapters/21_the_applications.md, line 5
+
+**Current:** "The school has compared Chloe to the identical ninety-one
+people since she was seven, and the only number it has ever given her is
+her place inside them, a place squarely in the middle."
+
+**Why the current voice is wrong:** this is the opening sentence of Chloe's
+own chapter, and the previous voice pass changed it from a passive with
+Chloe as subject ("Chloe has been compared to the identical ninety-one
+people... and the only number the school has ever given her...") to the
+active version now on the page, under the old flat rule that a person can
+never be the subject of a passive. Tested against the real rule, that fix
+looks backward to me, not confirmed-correct: the paragraph's very next
+sentence is "The middle of a year always ends up at the state school, so
+that's what she is expecting," which returns the topic to Chloe by way of
+"the middle," a phrase carried over (Daneš's linear theme) from "her place
+inside them, a place squarely in the middle" at the end of sentence one.
+With the passive original, the chain runs Chloe (subject) to the school
+(named two clauses later, so nothing is actually hidden) to "the middle" (the
+rheme that becomes sentence two's theme) to "she" again, a clean
+constant-and-linear pattern with Chloe at both ends. With the current
+active version, the chain runs "the school" to "it" to "the middle of a
+year" to "she," three different subjects in two sentences, and the sentence
+that is supposed to be introducing Chloe's own situation, at the very start
+of her own chapter, opens on the institution instead of her. Function 1 of
+the real rule (topic continuity) and Gopen and Swan's test (whose story is
+this paragraph telling) both point toward the passive original being the
+better fit for a chapter-opening sentence about Chloe.
+
+**Why it was not auto changed:** this is a genuine judgment call, not an
+obvious fix, in both directions. An institution-first opening is also a
+defensible, common choice, and it fits the rest of the chapter's running
+pattern of "the school" as an ongoing actor (the school confirms, the
+school provides, the school will not send a copy, and so on, through the
+rest of chapter 21). I am not confident enough that the paragraph is "about"
+Chloe rather than about the sorting system to revert a change another pass
+already made and the author has presumably already read past once. This is
+also exactly the shape of sentence the brief asked to have surfaced: not
+dialogue, not a rule-blocked passage, just a real disagreement about which
+noun the opening sentence should be telling the reader's story around.
+
+**Active:** "The school has compared Chloe to the identical ninety-one
+people since she was seven, and the only number it has ever given her is
+her place inside them, a place squarely in the middle." (current text,
+kept as one option since it is a defensible reading, not a clear error)
+
+**Active:** "The school has compared her to the identical ninety-one people
+since she was seven and given her only one number back, her place inside
+them, squarely in the middle." (same subject, but tightens the second
+clause so "her place... in the middle" still lands as the sentence's own
+end-focus, closer to matching the weight the passive original gave it)
+
+**Passive:** "Chloe has been compared to the identical ninety-one people
+since she was seven, and the only number the school has ever given her is
+her place inside them, a place squarely in the middle." (the pre-fix
+wording; restores Chloe as the sentence's opening subject and as the thread
+"the middle of a year" in the next sentence picks up from)
+
+**Passive:** "Chloe has been compared to the identical ninety-one people
+since she was seven, and the only number she has ever been given is her
+place inside them, a place squarely in the middle." (keeps Chloe as subject
+of both clauses; drops "the school" from this sentence entirely, since it
+already appears twice more in the paragraph that follows and nothing here
+depends on naming it this early)
+
+### chapters/22_the_offer.md, line 209, end-weight and long-distance
+dependency, inside dialogue
+
+**Current:** "You turned it down and left whether it's still on the table
+later completely unasked."
+
+**Why the current voice is wrong:** two separate, compounding faults, not
+strictly a passive/active problem, but exactly the case the brief asked to
+have surfaced regardless. First, end-weight (Quirk, Greenbaum, Leech and
+Svartvik): the verb "left" and the word that completes it, "unasked," are
+pulled apart by an eleven-word embedded question ("whether it's still on the
+table later") sitting between them, so a reader has to hold "left... [what
+left?]" open across the whole embedded clause before "unasked" finally
+closes it. That is the specific, narrower defect end-weight names when the
+principle is broken rather than followed: the heaviest phrase is at the end,
+as the rule wants, but the light word that the sentence actually needs to
+land on ("unasked") is trapped behind it instead of next to the verb it
+belongs with. Second, and the same fault seen through Gibson's Dependency
+Locality Theory: "left" and "unasked" are the two halves of one dependency,
+and every word Gibson's theory counts between them, especially "whether
+it's still on the table later," a full clause introducing its own subject
+("it") for the reader to track, adds a real, measurable memory cost before
+the dependency resolves. Both accounts agree on the same fix: reunite
+"asked" (or "left... unasked") with its object clause and let the embedded
+question either come first or last, not in the middle of the verb phrase it
+belongs to.
+
+**Why it was not auto changed:** the house rule against rewriting dialogue.
+This is the father's line, spoken on an agitated phone call, and no pass in
+this project's history rewrites quoted, attributed speech for a
+line-level grammar or clarity problem; a real person on a real call can and
+does produce exactly this kind of construction on the fly, and the
+imperfection may be the character, not a defect. That is a real reason, not
+a hedge: I am confident this sentence is measurably harder to parse on a
+first read than it needs to be, and equally confident that the rule
+protecting dialogue is the one house rule in this project that a
+grammatical fault does not override. Reporting it here per the brief's
+explicit instruction, since the author asked to see this exact case argued
+both ways so he can judge the dialogue rule itself, not just the sentence.
+
+**Active:** "You turned it down and never asked whether it's still on the
+table later." (closes the gap completely: "asked" now sits directly next to
+the clause it governs, with nothing between them)
+
+**Active:** "You turned it down without ever asking whether it's still on
+the table." (shorter and, read aloud, closer to how an agitated parent
+would actually say it; drops "later" as recoverable from context rather than
+needing to be stated)
+
+**Passive:** "You turned it down, and whether it's still on the table later
+was never asked." (fronts the embedded question as its own subject, so the
+dependency problem is gone, but this is a genuinely strained choice for
+spoken dialogue: promoting a whole embedded clause to subject position is a
+formal, written-register move, and no functional-grammar case for
+preferring passive here actually applies, since the missing agent, whoever
+would have done the asking, is Chloe herself, a known, present, relevant
+person, which is exactly the case the real rule says argues for the active)
+
+**Passive:** "You turned it down, and whether it's still on the table later
+never got asked." (same structure, but the informal get-passive reads closer
+to how the sentence would actually be spoken than "was... asked" does; still
+carries the same register mismatch as the option above, just less severely)
+
+
 ## Chapters 25 and 26
 
 ### Write-up required: misplaced modifier inside protected dialogue
@@ -521,6 +702,211 @@ voice, so passive does not address the defect either way. Given because the
 format asks for one, not as a recommendation.
 
 
+## Chapters 31 and 32
+
+### Call-outs
+
+### chapters/31_ruth.md, line 89
+
+**Current:** "Once she's up off the wall she walks past the dorm and leaves
+her phone in her pocket. The walk takes her past the dining hall and into the
+library, to a terminal, and to the number instead of the excuse."
+
+**Why the current voice is wrong:** This is the third failure mode in the
+brief, active voice with nobody in it. "The walk" is not a real actor; it is
+Ruth's own walking, renamed as a noun and handed the verb "takes," so that
+the sentence reads as though the walk is choosing where she ends up rather
+than Ruth choosing to go find the number instead of the excuse, which is the
+entire point of the paragraph. The real actor, Ruth, is on the page in the
+sentence immediately before this one.
+
+**Why it was not auto changed:** The obvious active fix starts with "She,"
+and `sentence opens She/He + verb` is already over its target (203 per
+100,000 against 120, per the last pass's own numbers). Voice2's own
+instruction is to swap in the character's name rather than force a "She"
+opener, but "Ruth" was already the subject two sentences earlier ("Ruth
+walks out and sits on a wall") and appears again mid-paragraph ("Once she's
+up off the wall she walks past the dorm"), so a third "Ruth"/"she" walking
+verb in one short paragraph risks flat repetition of "walks," which may be
+exactly why the sentence was varied into "the walk takes her" in the first
+place. I was not sure the fix is a net improvement rather than a different
+problem, so this is a call-out, not a change.
+
+**Active:** "She walks past the dining hall and into the library, to a
+terminal, and to the number instead of the excuse."
+**Active:** "Ruth walks past the dining hall and into the library, to a
+terminal, and to the number instead of the excuse."
+**Passive:** No good passive exists here; the sentence is about where Ruth
+goes and why, and a passive would have to either drop her (which is the
+existing problem) or promote "the number" to subject before she has found it,
+which does not make sense yet. Writing this direction is unwritable without
+changing what the sentence is doing.
+
+### chapters/32_the_money.md, line 101
+
+**Current:** "Minutes pass before Theo posts again. Those minutes go where
+anything with real weight goes with him: laptop closed, out onto the back
+steps of his apartment building, phone still in his pocket."
+
+**Why the current voice is wrong, maybe:** Same shape as the chapter 31
+call-out above: "those minutes" is not a real actor, it is standing in for
+Theo's own habitual response to something heavy, and "go" is a verb of motion
+only Theo can actually perform. The list that follows the colon is entirely
+things Theo does.
+
+**Why it was not auto changed:** Less sure of this one than the chapter 31
+case. The sentence reads less like a dropped actor and more like a
+transitional device announcing a known habit ("this is where heavy things go,
+for him") before the participial list takes over and does the actual
+narrating with Theo implied throughout ("laptop closed," "phone still in his
+pocket"). It is also possible the personified "minutes" is doing real work,
+marking that this is elapsed time being described, not a single tracked
+action. I could not settle whether this is the fault or a legitimate
+scene-transition idiom, so it is a call-out rather than a change.
+
+**Active:** "Theo goes where anything with real weight sends him: laptop
+closed, out onto the back steps of his apartment building, phone still in
+his pocket."
+**Active:** "He goes through what he always goes through when something
+lands with real weight: laptop closed, out onto the back steps of his
+apartment building, phone still in his pocket."
+**Passive:** "Minutes pass before Theo posts again. What happens next is
+what always happens when something lands on him with real weight: laptop
+closed, out onto the back steps of his apartment building, phone still in
+his pocket."
+**Passive:** No stronger passive exists; the paragraph is about what Theo
+does, so keeping him as topic in an active clause is the more natural
+direction, which is itself evidence this reads as a fault rather than a
+correct passive substitute.
+
 ---
 
-10 sentences called out across 6 spans.
+
+## Chapters 33 and 34
+
+### Chapter 33
+
+### Re-judged: line 49, the known call-out
+
+> The rest of them read that thread over the following days, each of them
+> from wherever the year has put them.
+
+**Verdict: correct as written. The earlier call-out should be withdrawn.**
+
+This looked, on a first pass, like the book's own recurring fault: an
+inanimate subject ("the year") taking a verb of placement ("put") that only
+a person or institution should be able to perform. That is the shape of the
+fault, but shape alone is not the test. The house rules' own worked example
+of this fault is "the far end of it comes back down the room": a sentence
+where the subject is *physically incapable* of the verb, and a reader has to
+stop, notice the impossibility, and reconstruct what actually moved (the
+sound). "The year has put them" asks for no such repair. "Wherever life has
+put you," "wherever the summer left them," "what the year did to him" are
+established English idioms for "as a result of how their circumstances fell
+out this year," and a reader crosses this one at full speed. There is no
+real missing agent to restore, either: nobody "put" the four of them at a
+register, a lab, a base, and a kitchen counter. Time and circumstance did,
+which is exactly the case rule 2 (agent unknown, irrelevant, or obvious)
+describes, extended from the passive to its active cousin: an indefinite,
+idiomatic subject standing in for a diffuse, unnamed cause.
+
+It also does the job House Rule 1 asks of a scene-setting line: it is not
+explaining a consequence to the reader so much as opening a door the next
+four paragraphs walk through. Nadia at the register, Kavi at the bench, Sam
+between sets, Chloe at her counter, are each a concrete instance of "wherever
+the year has put them," shown rather than told. That is the house rule's own
+prescribed fix for a risky general statement: ground it in somebody living
+it, and the chapter already does that in the very next lines.
+
+If the author still wants a change here regardless, in case it reads more
+"put-upon" than intended:
+
+**Active:** "The rest of them read that thread over the following days, each
+of them wherever the year had scattered them."
+
+**Passive:** No genuine passive exists for this without either naming an
+agent that was never established (who scattered them?) or producing a
+stiffer, more bureaucratic line than the one it would replace. I am not
+writing one to force the pair; the idiom is inherently active, the same way
+"the war took him overseas" has no natural passive that says the same thing
+in the same number of words.
+
+### Call-out: line 13, topic continuity vs. the sentence-opener ceiling
+
+    ### chapters/33_the_other_one.md, line 13
+
+**Current:** "The reasoning moves him in the end, not the arithmetic."
+
+**Why the current voice is wrong:** Rule 1, topic continuity. The four
+sentences on either side of this one are all built with Theo as their
+grammatical subject: "Theo reads it the night it lands... Day after day he
+opens it... The reasoning moves him in the end... He can write that argument
+forward or backward." For one sentence in the middle of an otherwise
+continuous Theo-tracking paragraph, the subject slot is handed to "the
+reasoning," a piece of new information, and Theo drops to the object slot as
+"him." Gopen and Swan's test applies directly here: the paragraph is Theo's
+story, and for one sentence it is told as the reasoning's story instead.
+
+**Why it was not auto changed:** Judgment call, not a clean grammar fix. The
+straightforward repair, "In the end he is moved by the reasoning, not the
+arithmetic," restores Theo to the subject slot without opening the sentence
+on "He" (the sentence opens on "In the end," so it does not add to
+`sentence opens She/He + verb`, which CLAUDE.md says is already sitting at
+its ceiling; I checked this specifically before ruling it out on that
+ground, and it is not actually the objection). The real reason I left it is
+register: "is moved by" is a heavier, more formal construction than "moves,"
+and the current line is a plain, aphoristic four-word verdict that reads
+younger than its replacement would. Trading a one-sentence topic wobble for
+a more Latinate verb did not look like a clear win, so I am putting both in
+front of the author rather than deciding it myself.
+
+**Active:** "The reasoning moves him in the end, not the arithmetic." (current)
+**Active:** "He decides it on the reasoning in the end, not the arithmetic."
+**Passive:** "In the end he is moved by the reasoning, not the arithmetic."
+
+### Protected: line 91, the un-assigned job
+
+> So the job falls to Chloe.
+
+This is on the list of things I was told not to touch, and having read the
+run-up to it, it should not be touched for a better reason than the
+instruction alone: there is no missing agent here to restore. Theo has just
+disqualified himself in the two lines above ("my name cant be anywhere on a
+document that sets out how to get round the law i get paid to enforce"),
+and the job "falls" to Chloe by elimination, not by anyone's decision. Rule
+8's own test, is the missing doer a specific person already in the scene and
+does the sentence lose something by leaving them out, fails on its first
+half: there is no specific person doing the assigning. Converting this
+to a passive ("Chloe is given the job" / "Chloe is assigned the job") would
+manufacture an assigner who does not exist in the scene, which is a worse
+error than any voice problem the current line has. It has none. Reported
+here only because the brief asked to see how the rules treat every protected
+line, not because this one needed defending.
+
+### Protected: line 95, the tool watching itself
+
+> For most of them the tool sits somewhere only Eli and Kavi can see,
+> watching itself work: how long a query takes, whether anything logs it,
+> whether the shape of its own traffic looks like the ordinary noise around
+> it. Kavi's watcher runs throughout too, watching the watcher, the doubled
+> caution that caught the sensor gap years ago.
+
+The personified software. "Sits," "watches itself work," "runs," "watching
+the watcher" — an inanimate subject given verbs of perception and self-
+monitoring that, taken as a checklist, looks exactly like the shape of the
+book's recurring fake-agency fault. I left it alone because it is not a
+slip; it is the sentence's actual subject, described from the one vantage
+the paragraph has (Eli and Kavi can see it, nobody else can), and the
+personification is doing real work: a tool that watches itself, watched in
+turn by a second watcher, is the chapter's image for the doubled caution
+Kavi built into the plan. Converting it to plain mechanical description
+("the tool logs how long a query takes; Kavi's second script checks the
+first") would lose the thing the paragraph is actually about. Confirmed, not
+changed.
+
+---
+
+
+---
+
+16 sentences called out across 10 spans.
