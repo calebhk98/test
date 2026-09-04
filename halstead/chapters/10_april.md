@@ -108,7 +108,7 @@ The mathematics thing happens in the third week of May, on a problem she has had
 
 It comes to her in the shower on the Wednesday, and she stands there until the water goes cold, and next morning reaches the room early, where Ruth is already at the board.
 
-"You got it." Ruth doesn't put the marker down. "Which way did you go? Because there are two ways through it and one of them is horrible."
+"You got it." Ruth doesn't put the marker down. "Which way did you go? Put it on the board before you say a word, I want to see the shape of it first."
 
 Chloe tells her all of it, out of order and twice in places, and Ruth listens the whole way through before putting her own working next to it.
 
