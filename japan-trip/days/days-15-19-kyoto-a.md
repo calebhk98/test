@@ -388,11 +388,13 @@ Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Shijo-Omiya → Nijo Castle | Bus/subway (Tozai Line, 1 transfer) | 0h30 | 260 | 780 |
-| Nijo Castle → Kinkaku-ji-michi | Raku city bus (loop line) | 0h30 | 230 | 690 |
-| Kinkaku-ji → Shijo-Omiya | Bus/subway | 0h30 | 290 | 870 |
+| Shijo-Omiya → Marutamachi (Kyoto Gyoen/Gosho) | Hankyu Kyoto Line + Subway Karasuma Line, 1 transfer | 0h30 | 260 | 780 |
+| (Kyoto Gyoen → Nijo Castle: walked, ~1.3km flat) | Walk | 0h20 | 0 | 0 |
+| Nijo Castle → Kinkaku-ji-michi | Raku city bus (loop line) | 0h25 | 230 | 690 |
+| Kinkaku-ji-michi → Ryoan-ji-mae | City bus (2 stops) | 0h15 | 230 | 690 |
+| Ryoan-ji → Shijo-Omiya | City bus | 0h30 | 230 | 690 |
 
-Infants ride free on the subway and city buses.
+Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult fare x 3.
 
 ### Activities
 

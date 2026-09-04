@@ -432,12 +432,12 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Meiji Jingu Inner Garden | Shibuya-ku | Main shrine free; inner garden is the optional paid part | 1h15 | 500 | 1,500 |
-| Yoyogi Park | Shibuya-ku | Free, open lawns | 1h00 | 0 | 0 |
-| Shibuya Scramble Crossing + Hachiko | Shibuya-ku | Free | 0h30 | 0 | 0 |
-| Shibuya Sky | Shibuya Scramble Square | Advance timed ticket; 2026 planning estimate, historically ~¥2,200-2,500/adult, verify before booking | 0h45 | 2,700 | 8,100 |
+| Meiji Jingu Inner Garden | 1h15 | 500 | 1,500 | 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557 | Tokyo's grandest Shinto shrine, built in 1920 for the deified Emperor Meiji and Empress Shoken, reached along a gravel forest path under a huge wooden torii - the shrine buildings themselves are free. The paid Inner Garden (Gyoen) is a separate, older Edo-period strolling garden within the grounds, with an iris pond, a quieter and prettier add-on to the main shrine visit. Wide gravel paths, gentle grade, fully stroller-passable; the Inner Garden charges ¥500/adult on top of the free main shrine. |
+| Yoyogi Park | 1h00 | 0 | 0 | Yoyogikamizonocho, Shibuya-ku, adjacent to Meiji Jingu (nearest station Harajuku; address unverified) | Tokyo's largest and most famous city park - wide open lawns next to Meiji Jingu's forest, popular with picnickers, street performers, and joggers. Free, unstructured downtime, good for toddlers to just run on grass after a morning of gravel paths and shrine etiquette. Flat paved and grass paths throughout, fully stroller-friendly. |
+| Shibuya Scramble Crossing + Hachiko statue | 0h30 | 0 | 0 | Outside Shibuya Stn Hachiko Exit, Shibuya-ku (address unverified) | The famously chaotic five-way pedestrian crossing where up to 3,000 people cross at once when the light changes, next to the bronze statue of Hachiko, the dog who waited at the station for his deceased owner for years. A five-minute "see it to believe it" experience, not a place to linger. Free; the crowd density, not the terrain, is what makes this a carrier stop rather than a stroller one. |
+| Shibuya Sky | 0h45 | 2,700 | 8,100 | Shibuya Scramble Square, 2-23 Shibuya, Shibuya-ku, Tokyo | An open-air rooftop deck 229m above the Shibuya Scramble crossing, on the city's tallest tower, with unobstructed 360-degree views and no glass or fencing at eye level in the central section. A genuine wow moment at golden hour and the day's premium view stop. Advance timed-entry ticket required (sells out on clear days); elevators throughout, but it's outdoor and can be windy or cold for infants - trim this stop first if the toddlers are flagging. 2026 planning estimate, historically ~¥2,200-2,500/adult, verify before booking. |
 
 ### Day 5 Cost
 
@@ -493,10 +493,10 @@ away from the holiday crowds.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Street food - menchi-katsu, senbei, croquette | Yanaka Ginza, Taito-ku | 650 | 1,850 |
-| Dinner | Self-catered | Hotel kitchenette | 800 | 1,650 |
-| Infant food | Purees/formula | Conbini | n/a | 2,150 |
+| Breakfast | Rice, natto, grilled mackerel, miso soup | Cooked in room; Hotel kitchenette | 500 | 750 |
+| Lunch | Menchi-katsu (fried minced-meat cutlet), a shrimp senbei cracker, and a vegetable croquette, eaten street-stall style | Yanaka Ginza, Taito-ku | 650 | 1,850 |
+| Dinner | Pork and cabbage stir-fry over rice, miso soup | Cooked in room; Hotel kitchenette | 800 | 1,650 |
+| Infant food | 3 formula feeds plus 2 Pigeon pouches (pork and vegetable; rice and pumpkin) for Infant A; Infant B eats table portions of the stir-fried pork and cabbage (finely chopped) and rice | Conbini | n/a | 2,150 |
 
 Adult kcal: 500 + 650 + 800 = **1,950**.
 
@@ -510,11 +510,11 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Nezu Shrine | Bunkyo-ku | Free grounds; azalea garden fee is seasonal only | 0h45 | 0 | 0 |
-| Yanaka Ginza | Taito-ku | Free to browse | 1h00 | 0 | 0 |
-| Yanaka Cemetery | Taito-ku | Free; carrier only, uneven paths | 0h50 | 0 | 0 |
+| Nezu Shrine | 0h45 | 0 | 0 | 1-28-9 Nezu, Bunkyo-ku, Tokyo 113-0031 | A 1706 Shinto shrine complex with a row of vermillion torii gates climbing a small hillside - a miniature echo of Kyoto's Fushimi Inari - and ornately carved gates rare for their age to have survived intact. A quiet, uncrowded alternative to the trip's bigger-name shrines. Free; flat main grounds, though the torii-tunnel path has a short slope, manageable with the stroller at an easy pace. The azalea-garden fee is seasonal (spring) only, so it's free on this visit. |
+| Yanaka Ginza | 1h00 | 0 | 0 | Yanaka, Taito-ku (nearest station Sendagi or Nippori; address unverified) | An old-fashioned shotengai (shopping street) of roughly 60 small shops - senbei crackers, menchi-katsu stalls, cat-themed goods, the neighborhood's unofficial mascot - that survived Tokyo's postwar rebuilding largely intact. The best "old Tokyo streetscape" browsing outside Asakusa, and much less crowded. Free to browse; flat and stroller-friendly outside peak weekend hours. |
+| Yanaka Cemetery | 0h50 | 0 | 0 | Yanaka, Taito-ku (nearest station Nippori; address unverified) | A large, tree-lined Edo-era cemetery (over 7,000 graves, including a former shogun) laid out in quiet gridded lanes lined with cherry trees - more a peaceful historic walk than a somber one, and a route locals use for dog-walking and cycling. Free; paths are paved but uneven in places, so the carrier is the better call here rather than fighting cobbles with the stroller. |
 
 ### Day 6 Cost
 
@@ -579,10 +579,10 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Self-catered | Hotel kitchenette | 500 | 750 |
-| Lunch | Shirasu-don (whitebait rice bowl) | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
-| Dinner | Hangaku-discounted bento | Supermarket/conbini near hotel, discount timing | 750 | 1,850 |
-| Infant food | Purees/formula | Conbini | n/a | 2,400 |
+| Breakfast | Rice, natto, boiled egg | Cooked in room, early start; Hotel kitchenette | 500 | 750 |
+| Lunch | Shirasu-don - raw and boiled whitebait piled over rice, with a side of miso soup | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
+| Dinner | Hangaku-discounted bento - grilled salmon, rice, pickled vegetables, tamagoyaki | Supermarket/conbini near hotel, discount timing | 750 | 1,850 |
+| Infant food | 3 formula feeds plus 2 Wakodo pouches (whitefish and rice; mixed vegetable) for Infant A; Infant B eats flaked bites of the bento salmon and rice, plus a Morinaga snack pouch | Conbini | n/a | 2,400 |
 
 Adult kcal: 500 + 700 + 750 = **1,950**.
 
