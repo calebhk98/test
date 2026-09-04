@@ -200,7 +200,7 @@ On the fourth night she gets as far as the phone and dials all but the last numb
 
 "You could call her anyway."
 
-"I know." Chloe thinks about it properly. "Tomorrow, maybe."
+"Tomorrow," Chloe says. "After dinner, when she's back at the hotel, so she isn't out somewhere when it rings."
 
 Her mom stays a few more days after that, and neither of them says anything about the phone.
 

@@ -118,7 +118,7 @@ in who else is within earshot and cannot say anything.
 
 The habit sorts by who she is standing next to. A boy who works something out in front of her gets his name kept on it when she repeats it, promptly and without being asked, and she is pleased to be the one saying it and pleased he got there. A girl who does the identical thing does not get named. Bex gives the account in the first person, just as warmly, to just as full a room, at just as much volume.
 
-She would not describe it this way if asked, and does not experience it as two different behaviors. To her it is one behavior: repeating good work accurately and fast, to whoever is listening. A name attaches itself to a boy's work the way a label attaches to a jar. Around a girl's identical work, the habit does not reach for a name at all, and nothing in her manner marks any switch happening.
+She knows. She would not put it in these words to anybody and has never had to, but she knows which name she is keeping and which one she is dropping, and she decides it fresh each time, in the half second before she opens her mouth. Nothing in her manner marks the switch, which is a thing she is good at rather than a thing that happens to her.
 
 It gets more reliable with age, not less. At eight and nine it is occasional, indistinguishable from a talkative kid's carelessness about sourcing. By thirteen and fourteen it holds nearly every time, sharpened rather than worn down, the way her timing and her read of a room both sharpen with use.
 

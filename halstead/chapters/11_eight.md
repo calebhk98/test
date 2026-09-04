@@ -90,7 +90,7 @@ Her grandmother comes on a Sunday. In the front room Chloe is explaining the bri
 
 Her grandmother says, "She's put on weight since I saw her, and I mean that as a good thing, not a complaint."
 
-"I know."
+"She has," her mother says. "She eats like somebody who intends to finish."
 
 "She was so thin at Christmas, but I kept it to myself at the time. I'd have said something by Easter if she'd stayed like that."
 

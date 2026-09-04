@@ -142,7 +142,11 @@ Ruth catches Sam in the stairwell with a stack of admissions mail under one arm,
 
 "Owes me?" Sam says. "She didn't take anything, she gave me the whole breakdown better than I had it myself. My name was on every line of it."
 
-"I know," Ruth says, and goes on up the stairs.
+"She does that for you," Ruth says. "She has never once done it for me, and she has never done it for Chloe, and I want you to go back through the last two years and find me one time she put a girl's name on anything."
+
+"That's a hell of a thing to say about somebody."
+
+"Then go and count," Ruth says, and goes on up the stairs.
 
 Sam stands on the landing with the mail still under one arm, then shrugs and goes to find out what's for dinner.
 
@@ -192,11 +196,11 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 "Then explain it to me, because from here it looks like you turned down more money than your mother and I have made in any five years combined, for a reason you haven't said yet. Say it to me the way you said it to him in the room, word for word, and don't soften any part of it on my account."
 
-"If I take it, I already know exactly what the next decade looks like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. I could tell you what the first year looks like, and probably the fifth." She hears her own voice picking up pace and keeps going anyway. "Everyone I've ever been ranked against my whole life is inside those two buildings, and I don't know what I'd be if I got ranked against anyone else. If I stay, I never find out. I get paid every month not to find out."
+"If I take it, I already know exactly what the next decade looks like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. I could tell you what the first year looks like, and probably the fifth." She hears her own voice picking up pace and keeps going anyway. "And it is that building. Everybody leaves school, that is what the end of school is, and every person I know is going somewhere else in September. I would be the one who stayed at her own school and got paid for it. Nobody has said that out loud to me once, because the number is big enough that nobody wants to be the one who says it." A breath. "And I don't know what I'd be anywhere else. That part is smaller, but it's in there."
 
-"So you're saying no to guaranteed money for the chance of finding out you're not as good as you think you are. That is what I am hearing and I would like to be wrong about it," her mother says.
+"So you're saying no to guaranteed money because everybody else is leaving. That is what I am hearing and I would like to be wrong about it," her mother says.
 
-"I'm not saying I think I'm good, only that I don't know, and I'd rather find out than get paid not to."
+"They're not leaving because it's clever, they're leaving because that is what you do at the end of school. I'd rather do the ordinary thing and owe you for it."
 
 A pause, and then her father again, quieter. "What happens if you change your mind? Is the door still open in a year? Five?"
 
