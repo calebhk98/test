@@ -300,7 +300,7 @@ at Dotonbori.
 | 12:30 | 1h45 | Rest | Rest / infant naps at hotel |
 | 14:15 | 0h20 | Transit | Hotel -> Dotonbori, walk |
 | 14:35 | 0h45 | Activity | Dotonbori canal-side walk, free (Glico sign, arcade browsing) |
-| 15:20 | 0h20 | Activity | Tombori River Cruise |
+| 15:20 | 0h20 | Activity | Namba Yasaka Shrine - giant lion-head hall, free |
 | 15:40 | 1h00 | Food | Dinner in Dotonbori (takoyaki + light bites) |
 | 16:40 | 0h20 | Transit | Walk back to hotel |
 | 17:00 | - | Rest | Evening at hotel, infants down |
