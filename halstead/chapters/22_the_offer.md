@@ -132,6 +132,22 @@ Chloe picks a second length of stripped cable off the bench and starts coiling i
 
 ________________
 
+Ruth catches Sam in the stairwell with a stack of admissions mail under one arm, hers this time, MIT's return address on top.
+
+"Bex do your exit interview yet?"
+
+"Tomorrow." Sam shifts the stack to his other arm. "Why?"
+
+"No reason." Ruth starts past him, then stops on the landing. "She still owes you for the range numbers, or did she ever pay that back?"
+
+"Owes me?" Sam says. "She didn't take anything, she gave me the whole breakdown better than I had it myself. My name was on every line of it."
+
+"I know," Ruth says, and goes on up the stairs.
+
+Sam stands on the landing with the mail still under one arm, then shrugs and goes to find out what's for dinner.
+
+________________
+
 Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice everything else on the list gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, waits, gets an answer, and puts that in with the rest.
 
 Chloe is up the kitchen-end stairs before the pudding goes round.

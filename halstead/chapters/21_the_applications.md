@@ -172,7 +172,7 @@ She calls home that Sunday and gets most of the way through the week before she 
 
 "Then what's the part?"
 
-Chloe doesn't have a short answer for that one, and the line stays quiet long enough that her mother asks if she's still there.
+"She's done this before," Chloe says. "She's fast, that's all. She's always been fast." Then the line goes quiet long enough that her mother asks if she's still there.
 
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. Asking what watch is, he gets walked through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 

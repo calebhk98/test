@@ -106,7 +106,9 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds, and it is still holding at Christmas.
 
-Chloe has her Saturday half out, workshop first, kitchens after, when Bex is already on her feet with that plan and the table listening to her: the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that. She revises it twice before the plates are stacked, moving the kitchens and then moving them back.
+Sam says, over the last of his own plate, that the kitchens are worth trying after one, once the lunch trays go back, because that is when whatever is left over gets put out.
+
+Chloe has her Saturday half out, workshop first, kitchens after, when Bex is already on her feet with that plan and the table listening to her: the workshop first because the technician locks it at noon, then the kitchens after one for whatever is going spare, Sam's timing, then everything after that. She revises it twice before the plates are stacked, moving the kitchens and then moving them back.
 
 "If we leave the workshop till after, we're," Chloe says.
 
