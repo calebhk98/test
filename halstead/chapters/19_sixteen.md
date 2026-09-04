@@ -22,7 +22,7 @@ Sam goes quiet the length of the corridor.
 
 "I'd like to withdraw ten of my pages."
 
-When the list goes up on the corkboard days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row twice, once for the verdict and once for the margin.
+When the list is posted on the corkboard days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row twice, once for the verdict and once for the margin.
 
 "Fail," she says. "By four points, out of two hundred."
 
@@ -106,7 +106,7 @@ Delacroix runs the handling weeks, talking the entire time she drives, in a flat
 
 "You're looking at the pole, not past it, and the pole's the only thing you're actually feeding your hands right now." A hand is up on the roof strap, the other resting on his knee, and neither of them moves while he says it. "You hit what you look at. Your hands do what your eyes hand them, saying or no saying." He points through the windshield at the piece of road he means, a piece of road she has yet to look at once. "Look at the gap on the far side of it, past the pole entirely. Give your hands that instead of the pole and they'll take you there on their own, without you doing anything clever with the wheel."
 
-She looks at the gap, and the car goes through it.
+She looks at the gap and takes the car through it.
 
 ________________
 
@@ -138,7 +138,7 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks," he says. "Tongs on the rack." He nods at them without turning. "The ones you made. Take them with you."
 
-The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
+She takes the tongs home to the hook on the back of her door, beside the bag she made in her second year.
 
 ________________
 
