@@ -2914,7 +2914,7 @@ Up on her knees, she cuts back in. "We're all reacting, but you can't react to i
 
 "She told us none of this, we worked it out ourselves, just now, standing here."
 
-They come out of it still talking, Chloe going back through the barrel and the feet with her hand up in front of her face, and nearly walk into Bex at the turn of the corridor. Chloe says sorry and goes round her, still talking. Bex says it's fine. She is still standing there when they reach the far end.
+They come out of it still talking, Chloe going back through the barrel and the feet with her hand up in front of her face, and nearly walk into Bex at the turn of the corridor. Chloe says sorry and goes round her, still talking. Bex says it's fine.
 
 On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
