@@ -124,7 +124,7 @@ Sam hasn't moved, looking at the seven of them on the ground the way you look at
 
 "That was nothing," he says.
 
-"We told you there were seven of them," Ruth says. "Not seventy."
+"We told you there were seven of them, not seventy," Ruth says.
 
 "No, Ruth, I mean that was nothing. Like, literally, not that it took a little effort, it took nothing. Even if it was only seven, it should have taken something. I should have gotten some experience, gotten hit once, they could have fired once. I mean, they're seven adults, Ruth. Why was it nothing?"
 

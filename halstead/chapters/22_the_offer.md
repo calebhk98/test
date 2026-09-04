@@ -58,7 +58,7 @@ ________________
 
 The roster has Nadia just before lunch on the Thursday of the first week, between a boy from the materials wing and a girl who has already accepted, back to ask a question about the housing. Nadia spends the wait in the corridor finishing an application on her phone, the ninth of that particular week, and is in the chair before the runner has finished with the door.
 
-"Eleven years," Mr. Amberg says. "Anything for the file."
+"Eleven years, anything for the file," Mr. Amberg says.
 
 "You've got my marks and you've got the board in the hallway. Neither of them has moved since March."
 

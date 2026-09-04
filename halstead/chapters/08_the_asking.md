@@ -180,7 +180,7 @@ On the fourth Thursday there's a new packet, which Chloe takes home, finishes in
 
 "I'm still working on it," Chloe says.
 
-"That's absolutely fine," Mrs. Prahl says. "Take your time."
+"That's absolutely fine, take your time," Mrs. Prahl says.
 
 She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. Chloe wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
@@ -232,7 +232,7 @@ Her dad is in the doorway with his arms folded up against the cold. "She likes i
 
 "She does."
 
-"She really does," her mom says. "Look at her go."
+"She really does, look at her go," her mom says.
 
 At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows all of them. Her cousin Dana asks how school is, and Chloe says it's good. Dana asks whether she's still reading all the time, but Chloe says some. Then Dana turns to talk to somebody else, so Chloe eats her potatoes.
 

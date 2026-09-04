@@ -72,11 +72,11 @@ On the second Thursday Ruth is sitting on the floor with her back against the wa
 
 Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
-"What?" Ruth says. "What are you talking about?"
+"What? What are you talking about?" Ruth says.
 
 Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots. I got hit more times than I could count learning that, and I stopped keeping score because it stopped being useful information."
 
-"That's not it," Ruth says. "None of this was in the briefing."
+"That's not it. None of this was in the briefing," Ruth says.
 
 "She told us none of this, we worked it out ourselves, just now, standing here."
 

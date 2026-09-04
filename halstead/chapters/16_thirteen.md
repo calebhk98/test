@@ -148,7 +148,7 @@ Dinner is a dozen of them at the long table by the window, and has been since th
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, on a napkin.
 
-"Four hours," Eli says. "That took me. Somebody at this table beat it."
+"Four hours. That took me. Somebody at this table beat it," Eli says.
 
 "Where did you get it from? It's the first I've seen built for that."
 

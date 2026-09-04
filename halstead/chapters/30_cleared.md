@@ -92,7 +92,7 @@ Whitaker doesn't look up. "Asked by whom."
 
 Whitaker fills half a page before he looks up. "Anything else in that category?"
 
-"Two others," Chloe says. "Same kind of project, same person asking, and I gave her the answer I have just given you. Both of them are older than the third and neither of them ran as long."
+"Two others, same kind of project, same person asking, and I gave her the answer I have just given you. Both of them are older than the third and neither of them ran as long," Chloe says.
 
 Whitaker turns back a page, cross-checking his own notes. "Would you tell me if I said it was necessary?"
 

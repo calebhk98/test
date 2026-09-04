@@ -134,7 +134,7 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 "You're off early."
 
-"Paper on Thursday," Chloe says. "Same as the last few."
+"Paper on Thursday, same as the last few," Chloe says.
 
 Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks," he says. "Tongs on the rack." He nods at them without turning. "The ones you made. Take them with you."
 

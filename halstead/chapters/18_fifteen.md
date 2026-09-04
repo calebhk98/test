@@ -98,7 +98,7 @@ On a Friday she catches Kowalczyk about it at the door of the mat room, with the
 
 "Yeah, that's about the size of it," Kowalczyk says.
 
-"That's it?" Chloe says. "That's all you've got for me?"
+"That's it? That's all you've got for me?" Chloe says.
 
 Kowalczyk is up on her toes to put a box of wraps on a high shelf, and stays there while she talks. "When you were ten you were fighting children who had yet to be hit by anybody, so lasting in that was like taking candy from a baby. Now you're fighting people who have been doing this for years. You're getting better, but they're coming up off a standing start, which is the first actual challenge you've had. It'll happen to you again at eighteen, when the boys finish growing."
 

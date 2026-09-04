@@ -132,7 +132,7 @@ Okoro asks him once who it goes to.
 
 "My grandmother."
 
-"Mine posts me word searches clipped out of the local paper, a couple a week," Okoro says. "I've started doing them."
+"Mine posts me word searches clipped out of the local paper, a couple a week, I've started doing them," Okoro says.
 
 ________________
 

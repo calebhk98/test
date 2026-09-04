@@ -178,7 +178,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "I'm saying now that it's a bad plan. I want that on the record."
 
-"Noted," Sam says. "It's still the plan. Anybody got a better one in the next thirty seconds?"
+"Noted. It's still the plan. Anybody got a better one in the next thirty seconds?" Sam says.
 
 "If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
 
@@ -204,7 +204,7 @@ ________________
 
 Chloe walks around the corner at a normal speed with her hands empty and her arms down. The face she's supposed to make is confused and half asleep, but she is bad at it, just like drawing and dance.
 
-"Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
+"Uh, hi. Who are you?" she says. She tilts her head like a lost puppy.
 
 All four of them turn; the nearest one comes at her fast and low, gets a gloved hand up near her mouth, but she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
 
@@ -290,7 +290,7 @@ Sinclair arrives with two other adults and a trolley, stops at the corner, and l
 
 "Numbers."
 
-Ruth reads them off her arm, and Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
+Ruth reads them off her arm, and Sinclair nods. "Grading's in the morning, go to bed. Now," he says.
 
 Back in bed she lies on top of the covers with her shoes on, runs the list from the top, gets to the end of it, and starts over.
 

@@ -42,7 +42,7 @@ After, on the grass, with a paper cup of lemonade:
 
 Her dad works his way through a full memory card, most of it good, and lowers the camera long enough to ask her one real question. "So who's actually driving up in August, you or one of us?"
 
-"Probably me," Chloe says. "I want the car for the fall anyway. I'd rather do the drive on my own."
+"Probably me. I want the car for the fall anyway. I'd rather do the drive on my own," Chloe says.
 
 "Huh," he says, and lifts the camera again.
 

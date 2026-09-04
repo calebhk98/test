@@ -993,7 +993,7 @@ On the fourth night she gets as far as the phone and dials all but the last numb
 
 "You could call her anyway."
 
-"Tomorrow," Chloe says. "After dinner, when she's back at the hotel, so she isn't out somewhere when it rings."
+"Tomorrow. After dinner, when she's back at the hotel, so she isn't out somewhere when it rings," Chloe says.
 
 Her mom stays a few more days after that, and neither of them says anything about the phone.
 
@@ -1445,7 +1445,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "Then we should all get in. That's the entire point. I've been making it since I sat down."
 
-"Obviously," Sam says. "A place spends a month teaching you all of that, it's got plans for the rest of it."
+"Obviously. A place spends a month teaching you all of that, it's got plans for the rest of it," Sam says.
 
 "It's not obviously." Ruth pulls her knees up to her chest. "You have to actually go and do things. My mom asked. There's a form. And there's a day where you come back and they look at you. That day sits in the fall, not in the summer."
 
@@ -1553,7 +1553,7 @@ In the back seat, under the tire noise, Chloe keeps her eyes shut and her breath
 
 Her mom stays quiet long enough that he checks the screen.
 
-"And they did karate," her dad says, "and she cooked, an actual dish with onions in it, and the whole table ate it."
+"And they did karate, and she cooked, an actual dish with onions in it, and the whole table ate it," her dad says.
 
 "All of that in a month."
 
@@ -1561,7 +1561,7 @@ Her mom stays quiet long enough that he checks the screen.
 
 The road noise goes on for another few miles.
 
-"Okay," her mom says, "so what is that, what's the name for that."
+"Okay, so what is that, what's the name for that," her mom says.
 
 "I don't know what that is, Meg, and I was standing right there."
 
@@ -1981,7 +1981,7 @@ On the fourth Thursday there's a new packet, which Chloe takes home, finishes in
 
 "I'm still working on it," Chloe says.
 
-"That's absolutely fine," Mrs. Prahl says. "Take your time."
+"That's absolutely fine, take your time," Mrs. Prahl says.
 
 She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. Chloe wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
@@ -2033,7 +2033,7 @@ Her dad is in the doorway with his arms folded up against the cold. "She likes i
 
 "She does."
 
-"She really does," her mom says. "Look at her go."
+"She really does, look at her go," her mom says.
 
 At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows all of them. Her cousin Dana asks how school is, and Chloe says it's good. Dana asks whether she's still reading all the time, but Chloe says some. Then Dana turns to talk to somebody else, so Chloe eats her potatoes.
 
@@ -2142,7 +2142,7 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "Is that a true thing you're saying, or is it a thinking about it thing?"
 
-"It's true," her dad says, "it's a true thing and I'm not saying it a third time."
+"It's true, it's a true thing and I'm not saying it a third time," her dad says.
 
 She screams. It goes up, holds there and keeps going after the breath behind it should have run out. Her dad's hand comes off his knee but stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way; she is saying thank you into his shoulder with no gap between the words. Then she's off him, around the coffee table, and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
@@ -2154,7 +2154,7 @@ Twenty seconds after running upstairs she is back down, stopped on the third ste
 
 "Then when I get there, can I tell her when I get there?"
 
-"Yes," her mom says, "and when you get there you can tell whoever you like."
+"Yes, and when you get there you can tell whoever you like," her mom says.
 
 She runs back up.
 
@@ -2448,7 +2448,7 @@ Upstairs the shower is running, and has been for twenty minutes, with the singin
 
 "I know, because I hear it too, and it stopped a few weeks after she got back."
 
-"The whole summer," her mother says, "and I already know I'm going to count every single day of it."
+"The whole summer, and I already know I'm going to count every single day of it," her mother says.
 
 "I know how long it is, I've had the number in my head since the day she left."
 
@@ -2498,7 +2498,7 @@ Her grandmother comes on a Sunday. In the front room Chloe is explaining the bri
 
 Her grandmother says, "She's put on weight since I saw her, and I mean that as a good thing, not a complaint."
 
-"She has," her mother says. "She eats like somebody who intends to finish."
+"She has. She eats like somebody who intends to finish," her mother says.
 
 "She was so thin at Christmas, but I kept it to myself at the time. I'd have said something by Easter if she'd stayed like that."
 
@@ -2906,11 +2906,11 @@ On the second Thursday Ruth is sitting on the floor with her back against the wa
 
 Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
-"What?" Ruth says. "What are you talking about?"
+"What? What are you talking about?" Ruth says.
 
 Up on her knees, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots. I got hit more times than I could count learning that, and I stopped keeping score because it stopped being useful information."
 
-"That's not it," Ruth says. "None of this was in the briefing."
+"That's not it. None of this was in the briefing," Ruth says.
 
 "She told us none of this, we worked it out ourselves, just now, standing here."
 
@@ -3144,7 +3144,7 @@ Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the sa
 
 Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
-"Ask her again," Kavi says. "Properly this time."
+"Ask her again, properly this time," Kavi says.
 
 "I did ask her," Chloe says. "She told me it was a good question for a different course."
 
@@ -3240,7 +3240,7 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit the target the first time in October."
 
-Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
+Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in a whole year is hardly a lot, is it," she says.
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 
@@ -3455,7 +3455,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "I'm saying now that it's a bad plan. I want that on the record."
 
-"Noted," Sam says. "It's still the plan. Anybody got a better one in the next thirty seconds?"
+"Noted. It's still the plan. Anybody got a better one in the next thirty seconds?" Sam says.
 
 "If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
 
@@ -3481,7 +3481,7 @@ ________________
 
 Chloe walks around the corner at a normal speed with her hands empty and her arms down. The face she's supposed to make is confused and half asleep, but she is bad at it, just like drawing and dance.
 
-"Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
+"Uh, hi. Who are you?" she says. She tilts her head like a lost puppy.
 
 All four of them turn; the nearest one comes at her fast and low, gets a gloved hand up near her mouth, but she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
 
@@ -3567,7 +3567,7 @@ Sinclair arrives with two other adults and a trolley, stops at the corner, and l
 
 "Numbers."
 
-Ruth reads them off her arm, and Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
+Ruth reads them off her arm, and Sinclair nods. "Grading's in the morning, go to bed. Now," he says.
 
 Back in bed she lies on top of the covers with her shoes on, runs the list from the top, gets to the end of it, and starts over.
 
@@ -3798,7 +3798,7 @@ Dinner is a dozen of them at the long table by the window, and has been since th
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, on a napkin.
 
-"Four hours," Eli says. "That took me. Somebody at this table beat it."
+"Four hours. That took me. Somebody at this table beat it," Eli says.
 
 "Where did you get it from? It's the first I've seen built for that."
 
@@ -3935,11 +3935,11 @@ One of the twelves tells it at their own table, where it is funny and nothing el
 
 What comes back to her at the sinks from a girl in her own year she has barely spoken to is the question, whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
 
-"It's true," she says. "Who told you?"
+"It's true. Who told you?" she says.
 
 The girl says she doesn't remember, and starts to go.
 
-"You remember," Chloe says. "You said it with a week attached."
+"You remember. You said it with a week attached," Chloe says.
 
 "I say a lot of things."
 
@@ -4254,7 +4254,7 @@ On a Friday she catches Kowalczyk about it at the door of the mat room, with the
 
 "Yeah, that's about the size of it," Kowalczyk says.
 
-"That's it?" Chloe says. "That's all you've got for me?"
+"That's it? That's all you've got for me?" Chloe says.
 
 Kowalczyk is up on her toes to put a box of wraps on a high shelf, and stays there while she talks. "When you were ten you were fighting children who had yet to be hit by anybody, so lasting in that was like taking candy from a baby. Now you're fighting people who have been doing this for years. You're getting better, but they're coming up off a standing start, which is the first actual challenge you've had. It'll happen to you again at eighteen, when the boys finish growing."
 
@@ -4521,7 +4521,7 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 "You're off early."
 
-"Paper on Thursday," Chloe says. "Same as the last few."
+"Paper on Thursday, same as the last few," Chloe says.
 
 Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks," he says. "Tongs on the rack." He nods at them without turning. "The ones you made. Take them with you."
 
@@ -4708,7 +4708,7 @@ Sam hasn't moved, looking at the seven of them on the ground the way you look at
 
 "That was nothing," he says.
 
-"We told you there were seven of them," Ruth says. "Not seventy."
+"We told you there were seven of them, not seventy," Ruth says.
 
 "No, Ruth, I mean that was nothing. Like, literally, not that it took a little effort, it took nothing. Even if it was only seven, it should have taken something. I should have gotten some experience, gotten hit once, they could have fired once. I mean, they're seven adults, Ruth. Why was it nothing?"
 
@@ -4867,7 +4867,7 @@ Just before the bell he stands, hands the sheets over, and waits while she reads
 
 "Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." The methods section names her for the part he has no way to check on his own.
 
-"She's sixteen," the escort says. "And she's in class until four."
+"She's sixteen, and she's in class until four," the escort says.
 
 "Would four work?"
 
@@ -5102,7 +5102,7 @@ ________________
 
 The roster has Nadia just before lunch on the Thursday of the first week, between a boy from the materials wing and a girl who has already accepted, back to ask a question about the housing. Nadia spends the wait in the corridor finishing an application on her phone, the ninth of that particular week, and is in the chair before the runner has finished with the door.
 
-"Eleven years," Mr. Amberg says. "Anything for the file."
+"Eleven years, anything for the file," Mr. Amberg says.
 
 "You've got my marks and you've got the board in the hallway. Neither of them has moved since March."
 
@@ -5329,7 +5329,7 @@ After, on the grass, with a paper cup of lemonade:
 
 Her dad works his way through a full memory card, most of it good, and lowers the camera long enough to ask her one real question. "So who's actually driving up in August, you or one of us?"
 
-"Probably me," Chloe says. "I want the car for the fall anyway. I'd rather do the drive on my own."
+"Probably me. I want the car for the fall anyway. I'd rather do the drive on my own," Chloe says.
 
 "Huh," he says, and lifts the camera again.
 
@@ -6123,7 +6123,7 @@ Okoro asks him once who it goes to.
 
 "My grandmother."
 
-"Mine posts me word searches clipped out of the local paper, a couple a week," Okoro says. "I've started doing them."
+"Mine posts me word searches clipped out of the local paper, a couple a week, I've started doing them," Okoro says.
 
 ________________
 
@@ -7158,7 +7158,7 @@ Whitaker doesn't look up. "Asked by whom."
 
 Whitaker fills half a page before he looks up. "Anything else in that category?"
 
-"Two others," Chloe says. "Same kind of project, same person asking, and I gave her the answer I have just given you. Both of them are older than the third and neither of them ran as long."
+"Two others, same kind of project, same person asking, and I gave her the answer I have just given you. Both of them are older than the third and neither of them ran as long," Chloe says.
 
 Whitaker turns back a page, cross-checking his own notes. "Would you tell me if I said it was necessary?"
 

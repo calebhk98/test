@@ -130,7 +130,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "Then we should all get in. That's the entire point. I've been making it since I sat down."
 
-"Obviously," Sam says. "A place spends a month teaching you all of that, it's got plans for the rest of it."
+"Obviously. A place spends a month teaching you all of that, it's got plans for the rest of it," Sam says.
 
 "It's not obviously." Ruth pulls her knees up to her chest. "You have to actually go and do things. My mom asked. There's a form. And there's a day where you come back and they look at you. That day sits in the fall, not in the summer."
 
@@ -238,7 +238,7 @@ In the back seat, under the tire noise, Chloe keeps her eyes shut and her breath
 
 Her mom stays quiet long enough that he checks the screen.
 
-"And they did karate," her dad says, "and she cooked, an actual dish with onions in it, and the whole table ate it."
+"And they did karate, and she cooked, an actual dish with onions in it, and the whole table ate it," her dad says.
 
 "All of that in a month."
 
@@ -246,7 +246,7 @@ Her mom stays quiet long enough that he checks the screen.
 
 The road noise goes on for another few miles.
 
-"Okay," her mom says, "so what is that, what's the name for that."
+"Okay, so what is that, what's the name for that," her mom says.
 
 "I don't know what that is, Meg, and I was standing right there."
 

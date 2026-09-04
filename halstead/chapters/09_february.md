@@ -94,7 +94,7 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "Is that a true thing you're saying, or is it a thinking about it thing?"
 
-"It's true," her dad says, "it's a true thing and I'm not saying it a third time."
+"It's true, it's a true thing and I'm not saying it a third time," her dad says.
 
 She screams. It goes up, holds there and keeps going after the breath behind it should have run out. Her dad's hand comes off his knee but stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way; she is saying thank you into his shoulder with no gap between the words. Then she's off him, around the coffee table, and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
@@ -106,7 +106,7 @@ Twenty seconds after running upstairs she is back down, stopped on the third ste
 
 "Then when I get there, can I tell her when I get there?"
 
-"Yes," her mom says, "and when you get there you can tell whoever you like."
+"Yes, and when you get there you can tell whoever you like," her mom says.
 
 She runs back up.
 

@@ -106,7 +106,7 @@ Just before the bell he stands, hands the sheets over, and waits while she reads
 
 "Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." The methods section names her for the part he has no way to check on his own.
 
-"She's sixteen," the escort says. "And she's in class until four."
+"She's sixteen, and she's in class until four," the escort says.
 
 "Would four work?"
 

@@ -96,7 +96,7 @@ Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the sa
 
 Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
-"Ask her again," Kavi says. "Properly this time."
+"Ask her again, properly this time," Kavi says.
 
 "I did ask her," Chloe says. "She told me it was a good question for a different course."
 
@@ -192,7 +192,7 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit the target the first time in October."
 
-Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
+Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in a whole year is hardly a lot, is it," she says.
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 

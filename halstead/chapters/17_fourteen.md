@@ -68,11 +68,11 @@ One of the twelves tells it at their own table, where it is funny and nothing el
 
 What comes back to her at the sinks from a girl in her own year she has barely spoken to is the question, whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
 
-"It's true," she says. "Who told you?"
+"It's true. Who told you?" she says.
 
 The girl says she doesn't remember, and starts to go.
 
-"You remember," Chloe says. "You said it with a week attached."
+"You remember. You said it with a week attached," Chloe says.
 
 "I say a lot of things."
 

@@ -40,7 +40,7 @@ Upstairs the shower is running, and has been for twenty minutes, with the singin
 
 "I know, because I hear it too, and it stopped a few weeks after she got back."
 
-"The whole summer," her mother says, "and I already know I'm going to count every single day of it."
+"The whole summer, and I already know I'm going to count every single day of it," her mother says.
 
 "I know how long it is, I've had the number in my head since the day she left."
 
@@ -90,7 +90,7 @@ Her grandmother comes on a Sunday. In the front room Chloe is explaining the bri
 
 Her grandmother says, "She's put on weight since I saw her, and I mean that as a good thing, not a complaint."
 
-"She has," her mother says. "She eats like somebody who intends to finish."
+"She has. She eats like somebody who intends to finish," her mother says.
 
 "She was so thin at Christmas, but I kept it to myself at the time. I'd have said something by Easter if she'd stayed like that."
 
