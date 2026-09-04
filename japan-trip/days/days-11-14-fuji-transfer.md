@@ -323,9 +323,9 @@ Allow the full 20-30 min buffer at Mishima per the brief; the schedule above boo
 | **Segment total** | 186,480 | 1,203 |
 
 Envelope check against the segment's assigned cells (lodging is fixed, not flexed):
- - Food: ¥32,650 vs ¥33,000 envelope - **-1.1%**, within ±5%.
- - Transport: ¥56,830 vs ¥56,500 envelope - **+0.6%**, within ±5%. Dominated by the two fixed legs (Day 11 bus ¥8,100; Day 14 bus ¥10,000 + Hikari ¥32,340 = ¥42,340), plus the Fuji Five Lakes 2-day sightseeing pass (¥4,500) and small local transit.
- - Activities: ¥24,000 vs ¥25,000 envelope - **-4.0%**, within ±5%. Kept close to the envelope with real paid stops (Ropeway, lake cruise, Kubota Itchiku Art Museum, Kawaguchiko Music Forest Museum, Saiko Iyashi-no-Sato, one Oshino Hakkai pond, a private onsen evening) while still keeping Oishi Park, most of Oshino Hakkai, and both travel days effectively free - consistent with the pacing rule that some days lean on free activities.
+- Food: ¥32,650 vs ¥33,000 envelope - **-1.1%**, within ±5%.
+- Transport: ¥56,830 vs ¥56,500 envelope - **+0.6%**, within ±5%. Dominated by the two fixed legs (Day 11 bus ¥8,100; Day 14 bus ¥10,000 + Hikari ¥32,340 = ¥42,340), plus the Fuji Five Lakes 2-day sightseeing pass (¥4,500) and small local transit.
+- Activities: ¥24,000 vs ¥25,000 envelope - **-4.0%**, within ±5%. Kept close to the envelope with real paid stops (Ropeway, lake cruise, Kubota Itchiku Art Museum, Kawaguchiko Music Forest Museum, Saiko Iyashi-no-Sato, one Oshino Hakkai pond, a private onsen evening) while still keeping Oishi Park, most of Oshino Hakkai, and both travel days effectively free - consistent with the pacing rule that some days lean on free activities.
 
 Lodging (fixed, informational): 3 nights at K's House Mt. Fuji (¥18,000 x 3 = ¥54,000) + 1 night at Toyoko Inn Kyoto Shijo-Omiya (¥19,000) = ¥73,000.
 
