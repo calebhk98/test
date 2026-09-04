@@ -148,7 +148,7 @@ The stables are a walk past the north field, cinder path most of the way and mud
 
 Priya walks up to the horse's nose from a few feet out, and the head swings sideways to get a proper look at her. "Straight in front, that's the blind spot on a horse this size. Straight in front is where they actually can't see you at all. She's putting me in one eye. That's her eyes, not her being dramatic."
 
-Chloe can sit a canter by February, and she can get a horse over a low fence by March, but neither of those means anything to her. Priya, who has been riding since she was little, is better at all of it, but Chloe likes watching her do it. In April the stables move the groups around and Priya goes to Tuesdays, after which Chloe rides on the Thursday twice more, walking the twenty-two minutes on her own both times, but she is back in her room by five.
+Chloe can sit a canter by February, and she can get a horse over a low fence by March, but neither of those means anything to her. Priya, who has been riding since she was little, is better at all of it, but Chloe likes watching her do it. In April the groups are moved around and Priya goes to Tuesdays, after which Chloe rides on the Thursday twice more, walking the twenty-two minutes on her own both times, but she is back in her room by five.
 
 "You quit riding, and I had to hear about it from Anne instead of you." Priya sits down at dinner, two days later. "Now everyone at the barn thinks I said something to make you stop, which I didn't. I've had to explain that more times than I can count this week."
 
@@ -202,6 +202,6 @@ Her father takes the pen and puts a line under the paragraph. "There isn't a ver
 
 "No idea, I only got as far as that one."
 
-Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and in the car on Friday he works through the lot of them for her while she eats a sandwich.
+Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the vendor sends the rest back as the same sentences with different words in them, and in the car on Friday he works through the lot of them for her while she eats a sandwich.
 
 "Every sentence in there is the same shape, and there isn't a date among them, and I would have signed it on Tuesday."
