@@ -2741,7 +2741,7 @@ In the second term Chloe and Bex build a bridge that carries nineteen pounds and
 
 Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench. Then she gets her head under the pillow and runs the whole thing again the way it should have gone, out loud into the mattress, the version where she says the joints were hers and the teacher hears her say it.
 
-She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, warmly, meaning it, and Chloe says thanks, and the word comes out thin.
+She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, and Chloe says thanks, and the word comes out thin.
 
 At dinner she tells Ruth the whole fortnight over, out loud this time. Ruth says she should have said so to the teacher on the day and not to Ruth on a Monday, and goes back to her plate. Chloe never does tell the teacher, not that week and not the one after, but she stops saying we out loud about anything of hers, to anybody, for the rest of the year.
 
