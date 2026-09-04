@@ -38,6 +38,21 @@ LONG = 9
 # the ordinary late-chapter rise alone.
 RATIO = 1.6
 
+# A chapter whose long words are its subject rather than its manner. The count
+# below cannot tell ornament from vocabulary, and one chapter in the book is
+# about paperwork: its long words are registrar, signature, percentage,
+# contracts, coordinator, documents, translates. That is what a translation
+# office is called, not a costume the prose has put on, and plaining it would
+# mean renaming the job.
+#
+# A sharper measure was tried and is worse. Counting only words that are long
+# AND rare in the book flags nine to twelve chapters instead of one, because it
+# detects "a later chapter" rather than "an ornate chapter" - the vocabulary
+# widens as Chloe ages, which is wanted. Do not reach for that again.
+EXEMPT = {
+    "28_nineteen": "long words are the job: registrar, signature, contracts, coordinator",
+}
+
 
 def profile(path):
     text = re.sub(r"^#.*$", "", Path(path).read_text(), flags=re.M)
@@ -65,13 +80,19 @@ def main():
 
     median = st.median(r[1] for r in rows)
     ceiling = median * RATIO
-    over = [r for r in rows if r[1] > ceiling]
+    over = [r for r in rows if r[1] > ceiling and r[0] not in EXEMPT]
+    excused = [r for r in rows if r[1] > ceiling and r[0] in EXEMPT]
 
     print(f"  long words are {LONG} letters or more, as a share of all words")
     print(f"  book median {median:.2f}%, flag above {ceiling:.2f}% "
           f"({RATIO} times the median)\n")
     for stem, pct, _, _ in rows:
-        mark = "  <-- formal for this book" if pct > ceiling else ""
+        if pct > ceiling and stem in EXEMPT:
+            mark = f"  <-- over, and excused: {EXEMPT[stem]}"
+        elif pct > ceiling:
+            mark = "  <-- formal for this book"
+        else:
+            mark = ""
         print(f"  {stem[:24]:26s}{pct:6.2f}%{mark}")
 
     if a.words:
@@ -88,7 +109,10 @@ def main():
         print(f"\n  FAIL  {len(over)} chapter(s) over: {names}")
         print("  A chapter here reads as though a different person wrote it.\n")
         return 1
-    print(f"\n  none over {ceiling:.2f}%: pass\n")
+    if excused:
+        print(f"\n  {len(excused)} over the line and excused by name in this "
+              f"script, with the reason on the row above.")
+    print(f"\n  none over {ceiling:.2f}% unexcused: pass\n")
     return 0
 
 
