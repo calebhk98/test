@@ -18,7 +18,7 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are so few of them, and most of them were standing there when it happened.
 
-She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts a handful of names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
+She's in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and in a good week she finds a handful of names on it. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
 
 Opened, they all carry the same job description, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 
@@ -74,7 +74,7 @@ The week that follows happens mostly at first light, before the laundromat opens
 
 She spends the first mornings on the state's business filings, the site she used to register her own company, and most of them turn out to have been filed inside a single week last autumn through one registered agent. That age tells her the paperwork has been used before.
 
-She spends a third morning cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and the address carries a stack of his filings. On the fourth morning she calls the tire shop's front counter.
+She spends a third morning cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and he has filed a stack of paperwork against that address. On the fourth morning she calls the tire shop's front counter.
 
 "Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day? I've got a package that needs a signature off somebody, and I'd rather not make the drive twice," she asks, in the unbothered voice of somebody scheduling a delivery.
 
@@ -82,7 +82,7 @@ She spends a third morning cross-referencing that agent against the county's pro
 
 None of it moves anything else on her list. Payroll clears on the twenty-second the way it always does, she signs two employers on the Saturday in the middle of it, one of them a machine shop with a handful of people in it and a fax number still on the door, and on the Thursday she takes the difficulty on the test generator down a notch and lets it rebuild itself overnight.
 
-There is no police report and no lawyer, and at the company she says only that she's out for the afternoon. On the seventh day she closes the shop books at home, tells her parents she'll be back before dinner, and drives out alone. Parking is out front, where the upstairs window can see the car, and she leaves the doors unlocked, because ten minutes is what this is going to take.
+There is no police report and no lawyer, and at the company she says only that she's out for the afternoon. On the seventh day she closes the shop books at home, tells her parents she'll be back before dinner, and drives out alone. Parking is out front, where anyone upstairs can see the car, and she leaves the doors unlocked, because ten minutes is what this is going to take.
 
 ________________
 
@@ -274,7 +274,7 @@ Whoever answers the second question properly gets a longer interview than the sc
 
 The ones she already has are the ones who answered it.
 
-A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works. Then it's all mine, but none of it's theirs, and I'd rather fix the part that's actually broken." She writes the ceiling herself that night.
+A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything Nadia had ever asked him to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. When Nadia asks him why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works. Then it's all mine, but none of it's theirs, and I'd rather fix the part that's actually broken." She writes the ceiling herself that night.
 
 Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts.
 

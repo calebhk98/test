@@ -16,7 +16,7 @@ She's also carrying a full course load and the translation job, but none of it r
 
 ________________
 
-Hebrew is the second year's, and it goes the way Polish went: a class that moves at the speed of the slowest person in it, and everything useful happening on her own time. Arabic hands her the root system on the first morning and she spends a fortnight finding out how much of that is a loan and how much is a trap. The alphabet costs her a weekend. By March she is reading a Tel Aviv opinion column with a dictionary open and by June without one.
+Hebrew is the second year's, and it goes the way Polish went: a class that moves at the speed of the slowest person in it, and everything useful happening on her own time. The root system is there on the first morning, and she spends a fortnight finding out how much of it is a loan and how much is a trap. The alphabet costs her a weekend. By March she is reading a Tel Aviv opinion column with a dictionary open and by June without one.
 
 Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
 
@@ -56,7 +56,7 @@ At that he looks up, once, the pen briefly still against the page. "That's young
 
 Rather than press her for more he moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next: she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, then the two off her own transcript, Polish and Hebrew, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
 
-Chloe does, a level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
+Chloe does, a level sentence in each, the kind of line a phrasebook prints on its first page. Whitaker writes down the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
 The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list; his coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one answer before he sits back down, and he lets her finish every year of it before he turns the page.
 
@@ -68,7 +68,7 @@ The classes come after that, all of them, mathematics through politics through t
 
 "Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose. I kept that sheet for two years, in the drawer, before I finally threw it out."
 
-That goes down in the notebook, and he turns the page.
+In the notebook, he writes that down and turns the page.
 
 "There's the bar as well," Chloe says. "Everyone sits it at sixteen. It's the one that checks you know the law of the country you live in, and it's the exam everybody at the school treats as the real exam, whatever else is on the schedule that year."
 
@@ -78,7 +78,7 @@ Whitaker's pen stops for about the length of a word, then starts again. "Sat whe
 
 "Sixteen," Whitaker says, and writes it down, and asks her nothing else about it.
 
-Two published papers come last on that page, and he's already ahead of her on both: the folder opens, clean printouts slide out, already pulled, a line highlighted on each, before she's finished saying the name of either journal.
+Two published papers come last on that page, and he's already ahead of her on both: he opens the folder, slides out clean printouts, already pulled, a line highlighted on each, before she's finished saying the name of either journal.
 
 "There's a third one," Chloe says. "It's internal. I can tell you I worked on it, I can tell you when, I can tell you who ran it. I've been asked not to say what it's about, and I said I wouldn't."
 
@@ -122,7 +122,7 @@ The funding is what he asks about: who the school's principal donor is, name or 
 
 "I have no idea," Chloe says. "Whoever pays for it stayed background noise my whole life there. If you're a child, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." She turns the coffee mug a quarter turn on the table, the only thing she's done with her hands all visit.
 
-The reasoning goes down along with the answer, as everything else has, and he closes the folder on it; the file is otherwise complete, he tells her, and he thanks her as plainly as he thanked her the first time. Then he stands to gather the thermos and the notebook off the table.
+Along with the answer, he writes the reasoning down, the way he has everything else, and closes the folder on it; the file is otherwise complete, he tells her, and he thanks her as plainly as he thanked her the first time. Then he stands to gather the thermos and the notebook off the table.
 
 At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before she's worked out it was the joke.
 

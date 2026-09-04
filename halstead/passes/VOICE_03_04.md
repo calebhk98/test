@@ -96,11 +96,11 @@ context, the parent is named.
 
 ### chapters/03_the_letter.md, line 165
 
-**Current:** "There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else,."
+**Current:** "There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else."
 
 **Why the voice is wrong:** Fake agency. The paragraph did not compose or arrange itself; a person wrote the teacher bios on the school website that way.
 
-**Why I did not change it:** I could not tell who does it. It could be the school, a copywriter, or the teacher supplying his own bio, and this is the uncanny-website scene that is already building toward something being wrong about Halstead, so picking a wrong actor risks planting a fact the author has not put there. (Note, out of scope for this pass: the sentence also has a stray ",." after "something else" that looks like a typo, left untouched since it is not a voice question.)
+**Why I did not change it:** I could not tell who does it. It could be the school, a copywriter, or the teacher supplying his own bio, and this is the uncanny-website scene that is already building toward something being wrong about Halstead, so picking a wrong actor risks planting a fact the author has not put there. (The stray ",." after "something else" that the agent found here has since been fixed; it was a typo, not a voice question.)
 
 **Replacement 1:** "There is a man who was a SEAL, but whoever wrote it buries that in the middle of a sentence and goes straight on to something else."
 

@@ -26,7 +26,7 @@ The current assessment says probably corporate, with the same caveat at the bott
 
 ________________
 
-The next thing is a memo about a man placed on the Halstead teaching staff. Identification took less than a day, and he was escorted off the property. The school's stated reason is recorded word for word: they do not permit unidentified adults around children.
+The next thing is a memo about a man placed on the Halstead teaching staff. Identification took less than a day, and the school escorted him off the property. The school's stated reason is recorded word for word: they do not permit unidentified adults around children.
 
 Theo reads it once, watching for the lines he'd pull if someone handed it to him to summarize. Then he goes back to the top with a pen in his hand and does not write anything. The third time, he sits back far enough that the chair takes his weight, and then he opens the bottom drawer by feel, past the stapler and the spare lanyard, to a class photo that has sat there since the week he moved into the cubicle. The date is printed along the bottom edge in the school's own hand. He lays the photo beside the memo until the dates agree. It's the whole cohort in the photo, squinting into thin winter light, and even now he can find Chloe near the back of it without trying.
 
@@ -56,7 +56,7 @@ Bloods drawn at the debrief that afternoon came back the same for all four: a co
 
 They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that whatever the children were doing, it read to him as an argument about their own performance rather than an interrogation. The argument was about how the men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise in the middle of the night that skipped the board entirely.
 
-The author records that he was asked, directly, what he would have given them.
+The author records that the children asked him, directly, what he would have given them.
 
 An adult arrived some time after that. He told the children to go to bed, and they did. Then he told them that an attack on a school in the United States would not be accepted, and that they were free to leave.
 
