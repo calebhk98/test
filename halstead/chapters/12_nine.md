@@ -96,9 +96,9 @@ So the Friday after that she runs it wet on purpose and gets the gray back, and 
 
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night. In the third term the lights come down, a radio plays somewhere behind her, left running, and a man stands over her shoulder asking her a question over and over in a raised voice.
 
-"Is he going to be doing that the entire way through, or is it just the first?"
+"Is he going to be doing that the whole way through, or is it just the first?"
 
-The teacher has a stopwatch and keeps his eyes on it. "It's midnight on a road, the car's still running, and there's a man who wants to know if his wife's all right. He's going to keep asking, that's the entire point of the drill, so count out loud over the top of him."
+The teacher has a stopwatch and keeps his eyes on it. "It's midnight on a road, the car's still running, and there's a man who wants to know if his wife's all right. He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
 
 Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm, and she takes the sleeve out, redraws the armhole, builds the second over from the armhole out, but the second one drags in exactly the same place. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper, and traces round the top of it. The line that comes off it sits an inch and a half out from the line she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, but she wears the second one all spring regardless, because the second is the green shirt.
 
@@ -132,7 +132,7 @@ There is a wall up the side of the gym with a lip near the top that sticks out a
 
 Sam gets over it on the eleventh of May, with thirty people at the bottom, because he has spent days telling everybody he is going to do it that afternoon.
 
-"What if you don't, though, what happens to the entire afternoon then?" Chloe asks.
+"What if you don't, though, what happens to the whole afternoon then?" Chloe asks.
 
 Sam is chalking his hands and not looking at any of them. "Then thirty people watch me not do it, and that's still Monday. Left foot first, like she told me in January, because left foot's what does it, not the arms, not the grip, just where that one foot lands. She said so, and she was right, and I believed her before I even tried it."
 
@@ -160,7 +160,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand, and even the smell of the barn in the rain. It's fun even in the cold before anybody's tacked up, and in the parts where nothing at all is happening yet."
 
-"I know, and that's the bit I kept waiting for the entire time, for it to turn into that for me too," Chloe says.
+"I know, and that's the bit I kept waiting for the whole time, for it to turn into that for me too," Chloe says.
 
 ________________
 

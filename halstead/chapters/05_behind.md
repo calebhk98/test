@@ -86,7 +86,7 @@ Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew 
 
 Owen looks at the board, then down at his sheet, then at the board again. "I've lost the thread of it."
 
-"That's fine, and we do it again tomorrow."
+"That's fine, and we do the whole thing again tomorrow."
 
 Owen goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
@@ -152,7 +152,7 @@ Chloe waits, giving him a beat to add to it, and by then Sam has gone back to th
 
 "What do you mean he wasn't having fun, what does that even mean?"
 
-"He said so, straight out. He wasn't having fun. So he left. That's the story."
+"He said so, straight out. He wasn't having fun. So he left. That's the whole story."
 
 "But it is fun, all of it, every single part I can think of."
 
@@ -196,7 +196,7 @@ ________________
 
 "What? What does that even mean?"
 
-"The moon. You only ever see the same side of it, so it's facing you, on purpose, the entire time you've ever looked at it."
+"The moon. You only ever see the same side of it, so it's facing you the whole time, on purpose, the entire time you've ever looked at it."
 
 "That's just being stuck, then, not lying," Sam says.
 
@@ -208,9 +208,9 @@ ________________
 
 "No," Sam says, after looking at the table for a moment.
 
-"Right, so you're not stuck, you're just facing the same way on purpose while you're walking."
+"Right, so you're not stuck, you're just facing the same way on purpose the whole time you're walking."
 
-"But I'd say you were doing it on purpose regardless."
+"But I'd say you were doing it on purpose regardless, on purpose the whole time."
 
 "The worst." Kavi says it to Sam, about Sam. "You do this every single time."
 

@@ -50,13 +50,13 @@ The best anyone in the room manages all afternoon is nine seconds, but Chloe get
 
 "Four."
 
-"Four's fine," Sam says. "Everybody in this corridor is on it right now, that's the entire afternoon's number."
+"Four's fine," Sam says. "Everybody in this corridor is on it right now, that's the whole afternoon's number."
 
 "She said a minute, and that comes nowhere close to a minute."
 
 "She says a lot," Sam says, into his sleeve.
 
-"A minute's the entire fight, and four's just where you ran out first," Ruth says, arm over her eyes.
+"A minute's the whole fight, and four's just where you ran out first," Ruth says, arm over her eyes.
 
 By March most of the year is in the single figures on a good day, while Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year, and Chloe is on eleven seconds by June, but two of them she wasted.
 
@@ -66,11 +66,11 @@ Paintball joins the afternoon block in October; Bell hands the markers out, says
 
 For weeks everybody is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
-On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the entire way. I can see it leave, I see the entire thing happen, but my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
+On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the whole way. I can see it leave, I see the whole thing happen, but my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
 
 "Everybody's behind it, you're not doing anything different from the rest of us, we're all watching it come and then trying to get a hand there and by the time we-"
 
-Chloe stops. "Wait, that's it, that's the entire problem, we're reacting."
+Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 "What? What are you talking about?" Ruth says.
 

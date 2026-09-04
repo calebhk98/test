@@ -62,7 +62,7 @@ Her voice comes harder now. "Say something, Dave, actually say something, instea
 
 A chair scrapes on the kitchen tiles, and somebody runs the tap for a moment, then shuts it off again.
 
-"What do you want me to say, Meg, when you already know what I think? I've thought it since the car ride home in July, I've thought it most days since, and you've known that the entire time without me having to say it out loud at this table."
+"What do you want me to say, Meg, when you already know what I think? I've thought it since the car ride home in July, I've thought it most days since, and you've known that the whole time without me having to say it out loud at this table."
 
 "Then say it out loud at this table, because I need to actually hear it from you, not guess at it from the other side of the room. I've been filling in your side of this conversation in my head for months now, and I could be filling it in wrong."
 
@@ -122,19 +122,19 @@ The house comes up again in April, on a Saturday, with Chloe up the road at the 
 
 "No, absolutely not." Her mother's hands stay around the mug. "I'm not going to spend an hour talking myself into it either."
 
-"Meg, we'd see her every day of the week instead of ten weeks a year, and that's the entire trade they're offering us."
+"Meg, we'd see her every day of the week instead of ten weeks a year, and that's the whole trade they're offering us."
 
 "I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds. You can say it a third time if you want, and I'll still be standing right here saying no."
 
 Dave rubs a hand over his face. "Then give me one reason. I have been sitting here trying to think of one, but I can't."
 
-"Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the entire reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
+"Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
 
 Dave looks at the table.
 
-"That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head. I said yes to a summer camp, not to putting our entire address inside their gate, and there is a difference between those two things even if you've stopped seeing it. You can hand somebody a month. You cannot hand somebody a street. I want to hear you say that back to me. Then either of us can say another word about the paperwork."
+"That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head. I said yes to a summer camp, not to putting our whole address inside their gate, and there is a difference between those two things even if you've stopped seeing it. You can hand somebody a month. You cannot hand somebody a street. I want to hear you say that back to me. Then either of us can say another word about the paperwork."
 
-"It's how it is, though, and you know it is, because you said yes to the entire idea back in July. Neither of us had even heard the word furnished yet."
+"It's how it is, though, and you know it is, because you said yes to the whole idea back in July. Neither of us had even heard the word furnished yet."
 
 Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and later he walks up the road for Chloe, who talks all the way back down it about a dog that is allowed on the furniture.
 

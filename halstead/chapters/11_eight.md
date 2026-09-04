@@ -20,7 +20,7 @@ On the fourth of July she starts an argument with her father about whether a hot
 
 Chloe holds the hot dog up between finger and thumb, turning it so he can see all of it. "So is a sub roll, but every sub you have eaten in your life you have called a sandwich. A hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
 
-"Then it's a different food," her father says, "because you changed what's holding what, and that's the entire difference between the two."
+"Then it's a different food," her father says, "because you changed what's holding what, and that's the whole difference between the two."
 
 "It's the same food, because all I did was cut it, and a cut is just a cut, not a transformation. Nobody has ever bitten into anything and tasted the hinge."
 
@@ -40,7 +40,7 @@ Upstairs the shower is running, and has been for twenty minutes, with the singin
 
 "I know, because I hear it too, and it stopped a few weeks after she got back."
 
-"The entire summer, and I already know I'm going to count every single day of it," her mother says.
+"The whole summer, and I already know I'm going to count every single day of it," her mother says.
 
 "I know how long it is, I've had the number in my head since the day she left."
 
@@ -66,7 +66,7 @@ In week three she arrives well past curfew, to find her mother standing in the f
 
 "Ellie Peterson is ten years old. I have met her mother, and she would tell you exactly what I'm telling you. Ask her. You are not the only kid at that school and you are not getting a different rule just because you asked first."
 
-"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's an entire building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in. I went down there at two in the morning once, in December, just to see if it was actually true, and it was."
+"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's an whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in. I went down there at two in the morning once, in December, just to see if it was actually true, and it was."
 
 Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you?"
 
@@ -84,7 +84,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 "Did you win, or is this one of the times you're not sure?"
 
-Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her entire life. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
+Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the moment she knows."
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
@@ -104,7 +104,7 @@ ________________
 
 In September there is a different girl in her room, from Ohio, called Marguerite.
 
-"Everybody says Margie, so say Margie, and I'm telling you now because otherwise you'll do the entire first week on the long one."
+"Everybody says Margie, so say Margie, and I'm telling you now because otherwise you'll do the whole first week on the long one."
 
 "Which do you actually like, though, Margie or the full version everyone skips?"
 
@@ -142,7 +142,7 @@ You start on paper targets for a while, then a target Bell swings across the gym
 
 Somebody down the line says that's impossible.
 
-Bell holds a dart up and turns it so the entire line can see it. "It isn't, and I'll tell you why now instead of letting you spend a week deciding it is. Look at the size of the thing next to your hand, and look how slowly it comes at you once you're watching for it. You can watch the entire flight end to end. That makes it the easiest thing in this building to hit. You'll all be bad at it until Thursday."
+Bell holds a dart up and turns it so the whole line can see it. "It isn't, and I'll tell you why now instead of letting you spend a week deciding it is. Look at the size of the thing next to your hand, and look how slowly it comes at you once you're watching for it. You can watch the entire flight end to end. That makes it the easiest thing in this building to hit. You'll all be bad at it until Thursday."
 
 By the end of the first month everybody in the year can do it at will, the year split either side of the net, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
 
@@ -176,7 +176,7 @@ Chloe takes hold of the edge of the desk and stays standing. "Then can I move te
 
 "Which team are you on?"
 
-"The one I've been on since the first week, and there are two people on it, and I've done two entire terms of Wednesdays with them before coming in here about it. But they don't pass. I've kept count."
+"The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it. But they don't pass. I've kept count."
 
 "Teams are for the year, and you're the third in here about a team this week. The others wanted off the team you're on. You can all do Wednesdays together until June." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the columns running across all of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
@@ -192,7 +192,7 @@ Sam has come up behind her. "What are you doing? Are you signing up for somethin
 
 "I'm doing climbing. Kavi's doing electronics. Ruth won't say what she's doing, which means it's something she thinks is embarrassing."
 
-"Why climbing, out of everything on that entire wall, when you could have had glassblowing?"
+"Why climbing, out of everything on that whole wall, when you could have had glassblowing?"
 
 Sam is walking backward down the corridor. "They put a wall up the side of the gym over the summer with an overhang near the top. Everybody who's tried the overhang has come off it, but I'm going to be the first one over. It leans out at the top."
 

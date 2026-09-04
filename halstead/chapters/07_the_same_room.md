@@ -55,7 +55,7 @@ Somebody at the school picks up on the second ring, and Chloe edges close, strai
 
 "Right, no, I understand that. What I'm asking instead is whether it can go the other way, so that if I give you our number you can pass it along to them, and then it is entirely up to those families whether they do anything with it," she says, and listens again.
 
-"Okay, yes, that works, thank you: Chloe Kessler." She says their number. "And she'd have been in with a Sam, a Ruth, a Kavi and a girl called Priya, in the same room, if that helps you find her. Can you just let them know that Chloe would like to talk to them? Thank you very much." And she hangs up.
+"Okay, yes, that works, thank you: Chloe Kessler." She says their number. "And she'd have been in with a Sam, a Ruth, a Kavi and a girl called Priya, in the same room the whole time, if that helps you find her. Can you just let them know that Chloe would like to talk to them? Thank you very much." And she hangs up.
 
 "Okay, honey, and all we can do now is wait for those families to call us back."
 

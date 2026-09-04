@@ -46,11 +46,11 @@ Her mom takes it back and looks at the back of it, finding only the ink from the
 
 "It's free, the whole month, food, a bed, a bus, all of it, but things are not free. Not for a month, and not with a bus in it."
 
-"Sometimes they are, if somebody's got the money and wants to give it away for no reason at all. Rich people build camps and hand them out free just to put their name on the building."
+"Sometimes they are, if somebody's got the money and wants to give it away for no reason at all. Rich people build whole camps and hand them out free just to put their name on the building."
 
 "There's always a reason, we just haven't heard it yet," her mom says.
 
-Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something. People give away scholarships, and people put their name on the side of a hospital."
+Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which happens all the time in the world. People give away scholarships, and people put their name on the side of a hospital."
 
 "To us, though, it actually happens to us?"
 
