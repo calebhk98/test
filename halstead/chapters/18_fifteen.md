@@ -140,11 +140,15 @@ Hark comes across the room and stops at the front row. "A hundred and twenty dol
 
 Chloe wipes the board and sits down.
 
-Iyad has more than figures. In February he has Aurel's name next to hers on the sign-up sheet for an optional Saturday session neither of them ends up going to, and he turns it into an item on his own list before either of them has said a word to the other about anything. He says it at the long table on a Tuesday, in the middle of something else, in the same flat voice he reads the rest of his list in, as a thing everybody already knows. By the Thursday it has been said back to her twice.
+Iyad has more than figures. In February he has Aurel's name next to hers on the sign-up sheet for an optional Saturday session neither of them ends up going to. Six other pairs sit just as close on that page, for sessions just as skipped. He leaves each of those exactly where the sheet has them and picks up only hers, turning it into an item on his own list before either of them has said a word to the other about anything. He says it at the long table on a Tuesday, in the middle of something else, in the same flat voice he reads the rest of his list in, as a thing everybody already knows. By the Thursday it has been said back to her twice.
 
 She has never heard the name in her life. She has which boy it is by lunch, off the language-block timetable on the noticeboard, and walks past his door twice that afternoon to put a face to it; he is a head taller than her and does not look up either time. The sign-up sheet is still pinned outside the workshop, both their names on it in different hands, for a session neither of them went to. By March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
 
-She tells Iyad to stop, at the long table, in front of the same people he said it in front of. He says he only repeated what he heard and cannot help what he hears, and then asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs.
+She tells Iyad to stop, at the long table, in front of the same people he said it in front of. He says he only repeated what he heard and cannot help what he hears.
+
+"Heard it from who, though? There's a sheet outside the workshop with his name and mine on it, for a session neither of us went to, and that's the only place they've ever sat next to each other. Say who told you before that, or say there wasn't anybody."
+
+He asks her, at the volume of the far end of the table, for the actual number of times she has spoken to Aurel. The far end laughs.
 
 "Four," Chloe says, "and I could give you the number for everybody else on your list too, since you're the one who keeps it." Rustem, three seats down, tells Iyad to leave the ledger out of it before somebody asks him for his own number, and the laugh that started for Chloe finishes somewhere else.
 

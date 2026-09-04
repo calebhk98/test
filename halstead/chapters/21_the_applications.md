@@ -158,7 +158,7 @@ Bex doesn't stop eating. "I did tell him that, and it was true by the time I sai
 
 "I drew it on the back of an exam script in April. You were there."
 
-"And I said it out loud, with somebody writing it down. That's the version he's got now."
+"And I said it out loud, with somebody writing it down. That's the version he's got now." Bex is already turned to the boy on her other side, giving him the geometry too, unchanged, down to the run finishing in April.
 
 Chloe has nothing to put next to that. She finishes breakfast at the counter.
 

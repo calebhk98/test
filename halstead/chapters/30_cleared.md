@@ -112,6 +112,12 @@ Before the funding he mentions the reference interviews, all of them done now, a
 
 He doesn't confirm it, but he doesn't deny it either, and he writes something down before he goes on.
 
+He goes back a page before the next question. "The long field. The one with the wire down the fence. Who did the geometry on that?"
+
+"I did," Chloe says. "She was there for the run in April, but the geometry's mine, from January. I can get you the exam script it started on, if you need it dated."
+
+Whitaker writes the offer down next to the answer and doesn't ask for the script.
+
 The funding is what he asks about: who the school's principal donor is, name or foundation, anything at all, and he waits while she actually thinks about it.
 
 "I have no idea," Chloe says. "Whoever pays for it stayed background noise my whole life there. If you're a child, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." She turns the coffee mug a quarter turn on the table, the only thing she's done with her hands all visit.
