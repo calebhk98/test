@@ -188,7 +188,9 @@ Nadia looks at it a long moment. "She's right. It's both."
 
 By the end of the meal the table's five opinions have settled on hers.
 
-Iyad tells it at breakfast two days later, to a boy who was not at the table that night: how the table sat on that napkin for most of an hour while Chloe held the answer back until Nadia took the corner off her. The boy asks whether she was right, in the end. "She generally is," Iyad says, and starts on somebody else's week.
+Iyad tells it at breakfast two days later, to a boy who was not at the table that night: how the table sat on that napkin for most of an hour while Chloe held the answer back until Nadia took the corner off her. The boy asks whether she does that a lot. "She generally does," Iyad says, and starts on somebody else's week.
+
+When Nadia catches part of it from a few tables over and asks him whether it really went an hour, he says it was probably closer to twenty minutes.
 
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always, and Chloe does not sit on that side of the table again for the rest of the term.
 
