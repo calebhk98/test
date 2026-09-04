@@ -83,7 +83,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 0 | 0 |
 | **Day total** | **23,740** | **153** |
 
-**Running total after Day 28: ¥1,064,740 ($6,869)**
+**Running total after Day 28: ¥1,088,380 ($7,022)**
 
 ---
 
@@ -163,7 +163,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 10,500 | 68 |
 | **Day total** | **38,150** | **246** |
 
-**Running total after Day 29: ¥1,101,690 ($7,108)**
+**Running total after Day 29: ¥1,126,530 ($7,268)**
 
 ---
 
@@ -226,7 +226,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 0 | 0 |
 | **Day total** | **7,790** | **50** |
 
-**Running total after Day 30: ¥1,109,480 ($7,158)**
+**Running total after Day 30: ¥1,134,320 ($7,318)**
 
 ---
 

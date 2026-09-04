@@ -85,7 +85,7 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 | Activities | 0 | 0 |
 | **Day total** | **73,650** | **475** |
 
-**Running total after Day 24: ¥948,070 ($6,117)**
+**Running total after Day 24: ¥977,650 ($6,307)**
 
 ---
 
@@ -183,7 +183,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 | Activities | 10,360 | 67 |
 | **Day total** | **34,160** | **220** |
 
-**Running total after Day 25: ¥982,170 ($6,337)**
+**Running total after Day 25: ¥1,011,810 ($6,528)**
 
 ---
 
@@ -273,7 +273,7 @@ infants ride free.
 | Activities | 9,090 | 59 |
 | **Day total** | **32,410** | **209** |
 
-**Running total after Day 26: ¥1,014,580 ($6,546)**
+**Running total after Day 26: ¥1,044,220 ($6,737)**
 
 ---
 
@@ -355,7 +355,7 @@ covered in the next segment.
 | Activities | 0 | 0 |
 | **Day total** | **20,420** | **132** |
 
-**Running total after Day 27: ¥1,041,000 ($6,716)**
+**Running total after Day 27: ¥1,064,640 ($6,869)**
 
 ---
 

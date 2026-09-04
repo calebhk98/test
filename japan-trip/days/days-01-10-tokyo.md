@@ -267,7 +267,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Activities | 7,700 | 49 |
 | **Day total** | **32,900** | **212** |
 
-**Running total after Day 3: ¥107,450 ($693)**
+**Running total after Day 3: ¥108,350 ($699)**
 
 ---
 
@@ -371,7 +371,7 @@ other transit leg in this plan; not separately verified for this operator.
 | Activities | 5,400 | 35 |
 | **Day total** | **34,710** | **224** |
 
-**Running total after Day 4: ¥139,310 ($899)**
+**Running total after Day 4: ¥143,060 ($923)**
 
 ---
 
@@ -449,7 +449,7 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 | Activities | 9,600 | 62 |
 | **Day total** | **38,550** | **249** |
 
-**Running total after Day 5: ¥177,860 ($1,147)**
+**Running total after Day 5: ¥181,610 ($1,172)**
 
 ---
 
@@ -526,7 +526,7 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 | Activities | 0 | 0 |
 | **Day total** | **24,940** | **161** |
 
-**Running total after Day 6: ¥202,800 ($1,308)**
+**Running total after Day 6: ¥206,550 ($1,333)**
 
 ---
 
@@ -612,7 +612,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Activities | 2,100 | 14 |
 | **Day total** | **36,920** | **238** |
 
-**Running total after Day 7: ¥239,720 ($1,547)**
+**Running total after Day 7: ¥243,470 ($1,571)**
 
 ---
 
@@ -702,7 +702,7 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 | Activities | 15,900 | 103 |
 | **Day total** | **49,470** | **319** |
 
-**Running total after Day 8: ¥286,340 ($1,847)**
+**Running total after Day 8: ¥292,940 ($1,890)**
 
 ---
 
@@ -788,7 +788,7 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 | Activities | 7,800 | 51 |
 | **Day total** | **41,660** | **269** |
 
-**Running total after Day 9: ¥328,000 ($2,116)**
+**Running total after Day 9: ¥334,600 ($2,159)**
 
 ---
 
@@ -877,7 +877,7 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Activities | 6,000 | 39 |
 | **Day total** | **34,710** | **224** |
 
-**Running total after Day 10: ¥362,710 ($2,340)**
+**Running total after Day 10: ¥369,310 ($2,383)**
 
 ---
 

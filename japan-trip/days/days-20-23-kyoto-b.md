@@ -129,7 +129,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Activities | 8,700 | 56 |
 | **Day total** | **39,730** | **256** |
 
-**Running total after Day 20: ¥768,460 ($4,958)**
+**Running total after Day 20: ¥799,780 ($5,160)**
 
 ---
 
@@ -222,7 +222,7 @@ Under-6 admission is free at all four stops; figures above are adult fares only.
 | Activities | 7,500 | 48 |
 | **Day total** | **35,830** | **231** |
 
-**Running total after Day 21: ¥805,790 ($5,199)**
+**Running total after Day 21: ¥835,610 ($5,391)**
 
 ---
 
@@ -246,15 +246,17 @@ Under-6 admission is free at all four stops; figures above are adult fares only.
 | 09:00 | 0h45 | Activity | Canal-side walk among the white-walled brewery warehouses |
 | 09:45 | 0h10 | Transit | Walk to Teradaya Inn |
 | 09:55 | 0h30 | Activity | Teradaya Inn (Sakamoto Ryoma history house) |
-| 10:25 | 0h20 | Transit | Walk toward lunch, browsing the sake-shop street |
-| 10:45 | 0h50 | Food | Lunch, sake-lees dishes near the canal |
-| 11:35 | 1h45 | Rest | Midday rest, canal-side park (stroller nap) |
-| 13:20 | 0h10 | Transit | Walk to Chushojima Stn |
-| 13:30 | 0h15 | Transit | Chushojima -> Gion-Shijo, Keihan Main Line |
-| 13:45 | 0h08 | Transit | Walk, Keihan Gion-Shijo -> Hankyu Kawaramachi |
-| 13:53 | 0h06 | Transit | Kawaramachi -> Omiya, Hankyu Kyoto Line (local) |
-| 13:59 | 0h05 | Transit | Walk, Omiya Stn -> hotel |
-| 14:04 | 3h56 | Rest | Free time / rest at hotel |
+| 10:25 | 0h10 | Transit | Walk to the Jikkokubune boarding dock, by Bekkan Terrace |
+| 10:35 | 0h55 | Activity | Fushimi Jikkokubune canal boat, round trip |
+| 11:30 | 0h15 | Transit | Walk toward lunch, browsing the sake-shop street |
+| 11:45 | 0h50 | Food | Lunch, sake-lees dishes near the canal |
+| 12:35 | 1h45 | Rest | Midday rest, canal-side park (stroller nap) |
+| 14:20 | 0h10 | Transit | Walk to Chushojima Stn |
+| 14:30 | 0h15 | Transit | Chushojima -> Gion-Shijo, Keihan Main Line |
+| 14:45 | 0h08 | Transit | Walk, Keihan Gion-Shijo -> Hankyu Kawaramachi |
+| 14:53 | 0h06 | Transit | Kawaramachi -> Omiya, Hankyu Kyoto Line (local) |
+| 14:59 | 0h05 | Transit | Walk, Omiya Stn -> hotel |
+| 15:04 | 2h56 | Rest | Free time / rest at hotel |
 | 18:00 | 0h10 | Transit | Walk to dinner spot |
 | 18:10 | 0h50 | Food | Dinner at Ippudo, near Shijo-Omiya |
 | 19:00 | 0h10 | Transit | Walk back to hotel |
@@ -311,11 +313,12 @@ are paid walk-up. Infants ride free on both lines; party cost = adult fare x 3.
 | Gekkeikan Okura Sake Museum | 0h50 | 600 | 1,800 | 247 Minamihama-cho, Fushimi-ku, Kyoto 612-8660 | A museum inside a working sake brewery, set in a 1909 storehouse with a brick chimney, run by Gekkeikan, one of Japan's oldest sake makers (founded 1637). Sake is casually called "rice wine" but brews more like beer than it ferments like wine: steamed rice is converted to fermentable sugar by koji mold, then fermented with yeast in one continuous process, rather than distilled like spirits or simply fermented from fruit sugar like grape wine. Fushimi became one of Japan's two great brewing centers, alongside Nada near Kobe, because its natural groundwater is unusually soft, which yields a lighter, sweeter style of sake than Nada's harder water produces. Admission includes three tastings and a souvenir bottle to take home, free for ages 12 and under so both infants enter free; allow 40-60 minutes including the video and exhibit rooms. The building is flat and stroller-accessible throughout, though the tasting counter itself is standing-room. |
 | Canal-side brewery walk | 0h45 | 0 | 0 | Canal streets around the museum, Chushojima, Fushimi-ku (district; address unverified) | A free stroll along the old Fushimi river port's canal, past rows of white-plastered brewery warehouses with black wooden trim, some dating to the Edo period (1603-1868) when this was the transshipment point for sake and rice moving between Kyoto and Osaka by boat. The appeal is purely atmospheric: quiet lanes, canal reflections, and none of central Kyoto's crowds. Entirely flat, paved, and stroller-friendly, with benches along the water. |
 | Teradaya Inn | 0h30 | 600 | 1,800 | 263 Minamihama-cho, Fushimi-ku, Kyoto | A reconstructed Edo-era inn turned house-museum, known as the site of a 1866 attack on the samurai Sakamoto Ryoma, one of the key figures behind the Meiji Restoration that ended the shogunate two years later. The draw is the room where Ryoma made his stand, shown with period artifacts and his own account of the incident. Open 10:00-16:00 (last entry 15:30); the interior is a traditional wooden inn with a raised tatami floor and a step up at the entrance, so plan to carry rather than wheel the stroller inside. |
+| Fushimi Jikkokubune canal boat | 0h55 | 1,900 | 5,700 | Boarding dock by Bekkan Terrace, Chushojima, Fushimi-ku, Kyoto (address unverified) | A round trip in a jikkokubune, the flat-bottomed wooden cargo boat that carried rice and sake down these canals to Osaka in the Edo period. The route runs past the backs of the brewery warehouses and through the Miyuki-bashi lock, with commentary in Japanese. It is the one activity that explains why a sake industry grew here at all: Fushimi was a river port before it was a brewing town, and the canal was the road. Flat boarding, seated throughout, and about 55 minutes, so it suits infants better than any walking tour would, though the boat is open sided and cool on the water in late October. |
 
 The sake museum is free for ages 12 and under, so both infants enter free there;
 Teradaya has no posted child discount beyond a school-age rate, so infants are
 assumed free per the trip's general infant policy. **Optional, not included in the
-totals below:** the Fushimi Jikkokubune canal boat, a ~55-minute round trip in a
+totals below:** the Fushimi Jikkokubune canal boat is included below. It is a ~55-minute round trip in a
 replica Edo-era cargo boat departing from the dock behind the Gekkeikan museum,
 ¥1,900/adult (¥900/child; whether an infant rides free on a lap is unconfirmed by
 available sources - ask at booking). It runs daily through October 2026 except
@@ -329,10 +332,10 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 | Lodging | 19,000 | 123 |
 | Food | 7,800 | 50 |
 | Transport | 2,640 | 17 |
-| Activities | 3,600 | 23 |
-| **Day total** | **33,040** | **213** |
+| Activities | 9,300 | 60 |
+| **Day total** | **38,740** | **250** |
 
-**Running total after Day 22: ¥844,770 ($5,450)**
+**Running total after Day 22: ¥874,350 ($5,641)**
 
 ---
 
@@ -418,7 +421,7 @@ fares (children's rates are typically lower, infants are not separately ticketed
 | Activities | 1,470 | 9 |
 | **Day total** | **29,650** | **191** |
 
-**Running total after Day 23: ¥874,420 ($5,641)**
+**Running total after Day 23: ¥904,000 ($5,832)**
 
 ---
 
@@ -429,16 +432,17 @@ fares (children's rates are typically lower, infants are not separately ticketed
 | Lodging | 76,000 | 490 |
 | Food | 30,000 | 194 |
 | Transport | 10,980 | 71 |
-| Activities | 21,270 | 137 |
-| **Segment total** | **138,250** | **892** |
+| Activities | 26,970 | 174 |
+| **Segment total** | **143,950** | **929** |
 
 Envelope check (Days 20-23, ±5% allowed): Food ¥30,000 target vs. ¥30,000 actual
 (0%), within band. Transport ¥12,000 target vs. ¥10,980 actual (-8.5%), outside
-the band on the low side. Activities ¥28,000 target vs. ¥21,270 actual (-24.0%),
-well outside the band on the low side. Lodging is fixed at ¥19,000/night x 4 =
+the band on the low side. Activities ¥28,000 target vs. ¥26,970 actual (-3.7%),
+within band once the Fushimi Jikkokubune canal boat (¥5,700 party) is included,
+which the trip editor added from headroom. Lodging is fixed at ¥19,000/night x 4 =
 ¥76,000 and is not flexed.
 
-Both shortfalls are the direct, intended result of fixing Day 22: the original
+The remaining transport shortfall is the direct, intended result of fixing Day 22: the original
 Osaka day's transport (Hankyu + JR Loop Line, ¥3,480/party) and activities
 (Osaka Castle + Osaka Museum of History + Umeda Sky Building, ¥8,700/party) were
 materially more expensive than the Fushimi sake district's verified fares
