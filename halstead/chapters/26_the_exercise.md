@@ -24,7 +24,7 @@ Sam checks the bearing against the card, folds the card into his breast pocket, 
 
 ________________
 
-The first contact is at a fence line a little after midnight: strands of wire sagging between posts gone soft with rust, out past a stand of pines where the ground opens into a field left fallow a season or so back. Sam comes up on it slowly, listening before he moves the final fifty feet, the way he learned it since he was small enough that the drill still felt like a game.
+The first contact is at a fence line a little after midnight: strands of wire sagging between posts gone soft with rust, out past a stand of pines where the ground opens into a field left fallow a season or so back. Sam comes up on it slowly, listening before he moves the final fifty feet, the way he has been taught since he was small enough that the drill still felt like a game.
 
 Two men are waiting on the far side of it in the darkness, close enough to the posts that they read, for a moment, as more fence. They hold still, and so does he.
 

@@ -54,7 +54,7 @@ Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word 
 
 "Well, that's something," she says, looking past him for the next.
 
-Her grandmother catches Chloe on her way past, the chair between her and the lemonade. "And what are you doing next?" she asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
+Her grandmother catches Chloe on her way past, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
 
 Dana is in the chair along from her, on her phone until Chloe reaches that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks.
 
@@ -172,7 +172,7 @@ At her desk she reads the eligibility page for the Foreign Service exam again, t
 
 Chloe closes the laptop and doesn't open it again that night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last, over and over, until her arm is the only part of her still making decisions.
 
-Chloe gives her father the version of it that reaches him first, at the kitchen table once her mother's gone up to run a bath. The last of dinner sits between them, foil pulled halfway over a plate of ham bones neither of them has cleared yet, and water starts running into the tub above their heads.
+Chloe tells her father first, at the kitchen table once her mother's gone up to run a bath. The last of dinner sits between them, foil pulled halfway over a plate of ham bones neither of them has cleared yet, and water starts running into the tub above their heads.
 
 It comes out in order, the way the eligibility page laid it out for her: the age floor at twenty, the training year that sits behind the floor once you clear it, and the six stages between passing the written test and actually being sworn in, each carrying its own open-ended timeline. Then she runs the numbers forward from eighteen and shows him where a person would already have to be standing, at each of those stages, for the total to land anywhere close to twenty-one.
 

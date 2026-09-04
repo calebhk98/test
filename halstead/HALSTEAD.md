@@ -1367,7 +1367,7 @@ Chloe is already talking before she's finished sitting down, one knee still up o
 
 "Then the pool. I can do a whole length now, badly, and Sam can do two straight through and brings it up at dinner most days," she says.
 
-Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them, running all the way through to why you turn the second fraction over until she reaches the edge of the napkin and keeps writing on the back, while her dad leans in over the napkin.
+Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them, and running all the way through to why you turn the second fraction over, until she reaches the edge of the napkin and keeps writing on the back, while her dad leans in over the napkin.
 
 A few tables over, another father is sitting through a version of it, his own daughter running a pen across a different napkin while she talks him through her month.
 
@@ -2529,7 +2529,7 @@ Fen is on second floor now with a girl from Maine, and while she and Chloe say h
 
 The teacher is stacking chairs along the back wall. "It carries on being yours, which is the entire answer. It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September. There are shelves of it upstairs and I'll show you the room on the way out."
 
-Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. She spends a week on a novel about a lighthouse and understands most of it, but inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
+Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. A novel about a lighthouse takes her a week, and she understands most of it, but inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
 
 The day is longer now, and longer again after Christmas: mathematics, writing, literature, and political history carrying over, French and logic new. Logic is an hour of being shown a sentence and asked what it is actually claiming, which she can do from the first week. On the phone she tells her mother it's like taking a lid off.
 
@@ -2619,7 +2619,7 @@ On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the s
 
 Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the moment Ruth stopped hitting above it. A bracket's a bracket. It doesn't matter when we drew it, the pipe doesn't know the difference."
 
-Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. They carry the bracket rule into the summer, into a stairwell, a laundry chute, and one of the goals on the field.
+Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. They apply the bracket rule all summer, to a stairwell, a laundry chute, and one of the goals on the field.
 
 In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, and she reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.
 
@@ -2754,7 +2754,7 @@ Sam spends the year on the overhang.
 
 Ruth asks her at dinner how the languages are going, and Chloe gives her all of it: which of the two is moving and which has stalled, where the stalling is, what she has tried against it, the thing Mrs. Sun said in October that she has only just understood, and what she is going to do about the tones. Ruth listens through all of it, says the tone problem sounds like the thing she had with the ablative, and gives her back an account of that at about the same length. Nobody at the table looks up.
 
-There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September nobody has made it over. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly, then sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September nobody has made it over the lip. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly, then sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
 Sam gets over it on the eleventh of May, with thirty people at the bottom, because he has spent days telling everybody he is going to do it that afternoon.
 
@@ -5342,7 +5342,7 @@ Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word 
 
 "Well, that's something," she says, looking past him for the next.
 
-Her grandmother catches Chloe on her way past, the chair between her and the lemonade. "And what are you doing next?" she asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
+Her grandmother catches Chloe on her way past, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
 
 Dana is in the chair along from her, on her phone until Chloe reaches that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks.
 
@@ -5460,7 +5460,7 @@ At her desk she reads the eligibility page for the Foreign Service exam again, t
 
 Chloe closes the laptop and doesn't open it again that night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last, over and over, until her arm is the only part of her still making decisions.
 
-Chloe gives her father the version of it that reaches him first, at the kitchen table once her mother's gone up to run a bath. The last of dinner sits between them, foil pulled halfway over a plate of ham bones neither of them has cleared yet, and water starts running into the tub above their heads.
+Chloe tells her father first, at the kitchen table once her mother's gone up to run a bath. The last of dinner sits between them, foil pulled halfway over a plate of ham bones neither of them has cleared yet, and water starts running into the tub above their heads.
 
 It comes out in order, the way the eligibility page laid it out for her: the age floor at twenty, the training year that sits behind the floor once you clear it, and the six stages between passing the written test and actually being sworn in, each carrying its own open-ended timeline. Then she runs the numbers forward from eighteen and shows him where a person would already have to be standing, at each of those stages, for the total to land anywhere close to twenty-one.
 
@@ -5773,7 +5773,7 @@ Again she squares the statements against the edge of his desk. "I can hold it a 
 
 Anyway she writes the names down, a name to a line, and turns the paper around so it faces him. "Three hundred under is what's in the room. Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 
-The manager stays on the list long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
+The manager reads the list long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
 "Two days on the nine. Six months, then it gets reviewed."
 
@@ -6239,7 +6239,7 @@ Sam checks the bearing against the card, folds the card into his breast pocket, 
 
 ________________
 
-The first contact is at a fence line a little after midnight: strands of wire sagging between posts gone soft with rust, out past a stand of pines where the ground opens into a field left fallow a season or so back. Sam comes up on it slowly, listening before he moves the final fifty feet, the way he learned it since he was small enough that the drill still felt like a game.
+The first contact is at a fence line a little after midnight: strands of wire sagging between posts gone soft with rust, out past a stand of pines where the ground opens into a field left fallow a season or so back. Sam comes up on it slowly, listening before he moves the final fifty feet, the way he has been taught since he was small enough that the drill still felt like a game.
 
 Two men are waiting on the far side of it in the darkness, close enough to the posts that they read, for a moment, as more fence. They hold still, and so does he.
 
@@ -6831,7 +6831,7 @@ ________________
 
 The blog starts in September because her evenings are hers now, and she goes looking for something to fill them.
 
-The first piece takes most of a Saturday. It's about a fishing dispute between two countries that the English-language press has missed entirely, because the governments are, on paper, having two different arguments. Press releases from the first government describe a boundary dispute, but the second's describe a licensing dispute, over that one stretch of water, in a single week. Both countries' newspapers she opens in adjacent tabs before noon, and she reads them against each other for hours before she writes a line, checking both summaries against the actual treaty text. Both leave out a sentence in the older document that neither side is quoting anymore. The apartment gets dark around her without her getting up to turn a light on. By midnight the piece has run long. A short summary she puts at the top for anyone who wants the conclusion without the treaty text; she reads it back once, catches a place where she'd used the wrong country's spelling of a shared river, fixes it, posts the link, and goes to bed.
+The first piece takes most of a Saturday. It's about a fishing dispute between two countries that the English-language press has missed entirely, because the governments are, on paper, having two different arguments. Press releases from the first government describe a boundary dispute, but the second's describe a licensing dispute, over that one stretch of water, in a single week. Both countries' newspapers are open in adjacent tabs before noon, and she reads them against each other for hours before she writes a line, checking both summaries against the actual treaty text. Both leave out a sentence in the older document that neither side is quoting anymore. The apartment gets dark around her without her getting up to turn a light on. By midnight the piece has run long. Chloe puts a short summary at the top for anyone who wants the conclusion without the treaty text; she reads it back once, catches a place where she'd used the wrong country's spelling of a shared river, fixes it, posts the link, and goes to bed.
 
 That week she writes two more and keeps it from the office. The first is on a currency peg only traders and central bankers have ever heard of, but the other she scraps at three thousand words because the second source she finds contradicts the first badly enough that the piece stops being true, and she starts over the next night rather than publish something she can't stand behind.
 
@@ -7915,7 +7915,7 @@ The next day, she goes in and does her job, and texts Ruth once before lunch to 
 
 Priya goes quiet for a stretch of days in October. Quiet has run longer than that over a pass with no signal, and once for the better part of a month over a mare that would not foal.
 
-The rest of them are where the summer left them, a season on from a thing none of them refers to directly in writing. Chloe is most of a year into the job and reads the chat on a bus with her bag on her knees. Ruth has a card with her name on it slotted into a bracket beside a door, and a second-year who has started turning up wherever she eats. Kavi has the lab he had in June and a second bench in it that arrived without anybody asking him whether he wanted one. Sam is at a unit in a state where his posting began the day he first set foot in it, with a phone he can use in the evenings. Nadia has taken on more people on the floor at the company than she had in June, but still counts her parents' till on a Sunday. Eli has a job title with a word in it he finds funny, but has now explained the joke to several people, each of whom received it politely. Theo answers from a window with the blinds already down.
+The rest of them are where the summer left them, a season on from a thing none of them refers to directly in writing. Chloe is most of a year into the job and reads the chat on a bus with her bag on her knees. Ruth has a card with her name on it slotted into a bracket beside a door, and a second-year who has started turning up wherever she eats. Kavi has the lab he had in June and a second bench in it that arrived without anybody asking him whether he wanted one. Sam is at a unit in a state he first set foot in the day he was posted to it, with a phone he can use in the evenings. Nadia has taken on more people on the floor at the company than she had in June, but still counts her parents' till on a Sunday. Eli has a job title with a word in it he finds funny, but has now explained the joke to several people, each of whom received it politely. Theo answers from a window with the blinds already down.
 
 What those days were was a bus with a cracked window, then a second bus, then a room over a feed merchant's with a lock she changed herself on the first afternoon. Part of the time in that room was spent sitting still, letting a hand come up and go down again.
 

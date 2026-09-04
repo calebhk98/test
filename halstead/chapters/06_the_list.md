@@ -52,7 +52,7 @@ Chloe is already talking before she's finished sitting down, one knee still up o
 
 "Then the pool. I can do a whole length now, badly, and Sam can do two straight through and brings it up at dinner most days," she says.
 
-Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them, running all the way through to why you turn the second fraction over until she reaches the edge of the napkin and keeps writing on the back, while her dad leans in over the napkin.
+Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them, and running all the way through to why you turn the second fraction over, until she reaches the edge of the napkin and keeps writing on the back, while her dad leans in over the napkin.
 
 A few tables over, another father is sitting through a version of it, his own daughter running a pen across a different napkin while she talks him through her month.
 

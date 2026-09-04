@@ -294,7 +294,7 @@ Again she squares the statements against the edge of his desk. "I can hold it a 
 
 Anyway she writes the names down, a name to a line, and turns the paper around so it faces him. "Three hundred under is what's in the room. Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 
-The manager stays on the list long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
+The manager reads the list long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
 "Two days on the nine. Six months, then it gets reviewed."
 
