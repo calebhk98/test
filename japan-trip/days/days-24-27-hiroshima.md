@@ -48,10 +48,10 @@ up once the actual Day 1-23 files exist.*
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Toyoko Inn Kyoto Shijo-Omiya buffet (rice, miso, natto, pickles, bread, coffee) | included in the prior night's room rate | 550 | 0 |
-| Lunch | Station-area udon/teishoku shop | Hiroshima Stn concourse, Minami-ku | 650 | 1,950 |
-| Dinner | Casual ramen/tsukemen shop | Hondori arcade area, Naka-ku | 750 | 2,550 |
-| Infant food | Formula + purees/finger food (Wakodo/Pigeon pouches, conbini fruit) | Conbini near hotel | n/a | 1,800 |
+| Breakfast | Toyoko Inn Kyoto Shijo-Omiya buffet: rice, miso soup, natto, pickles, bread, coffee (last morning at that hotel) | included in the prior night's room rate | 550 | 0 |
+| Lunch | Tempura udon set with rice, pickles and a small side salad, station concourse teishoku counter | Hiroshima Stn concourse, Minami-ku | 650 | 1,950 |
+| Dinner | Tonkotsu ramen with a side of pan-fried gyoza, casual counter-seating shop | Hondori arcade area, Naka-ku | 750 | 2,550 |
+| Infant food | Formula (Wakodo or Pigeon, combined feeds for both infants), vegetable-and-chicken puree pouches (Wakodo Rakuraku or Pigeon) for the 12-month-old; banana and steamed sweet potato off the family table for the 20-month-old | Conbini near hotel | n/a | 1,800 |
 
 Adult kcal: 550 + 650 + 750 = **1,950**.
 
@@ -71,9 +71,9 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Peace Memorial Park + Atomic Bomb Dome (exterior) | Naka-ku, Hiroshima | Free, outdoor, stroller-friendly riverside park | 1h15 | 0 | 0 |
+| Peace Memorial Park + Atomic Bomb Dome (exterior) | 1h15 | 0 | 0 | 1-10 Otemachi, Naka-ku, Hiroshima 730-0051 | Peace Memorial Park is the riverside green space built after the war on what had been the city's busiest commercial district, ground zero for the blast. The Atomic Bomb Dome, the skeletal ruin at the park's north edge, is what remains of the Hiroshima Prefectural Industrial Promotion Hall, one of the only structures left standing near the hypocenter - it has been deliberately preserved unrepaired since the 1960s as a permanent reminder rather than restored or torn down. This evening stop is exterior-only, a first orientation before Day 26's fuller visit: free, outdoor, flat paths along the Motoyasu River, fully stroller-friendly. The structure itself cannot be entered; it is too fragile. |
 
 ### Day 24 Cost
 
@@ -142,10 +142,10 @@ by the rail pass beyond the island admissions.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Toyoko Inn Hiroshima buffet | at hotel | 550 | 0 |
-| Lunch | Anago-meshi (eel rice) / grilled oyster set | Omotesando shopping street, Miyajima | 700 | 4,200 |
-| Dinner | Okonomimura, build-your-own okonomiyaki | Naka-ku, Hiroshima | 750 | 2,700 |
-| Infant food | Purees/finger food, momiji manju bites for the 20-month-old | Conbini + Miyajima stalls | n/a | 1,900 |
+| Breakfast | Toyoko Inn Hiroshima buffet: rice, miso soup, natto, pickles, bread, coffee | at hotel | 550 | 0 |
+| Lunch | Anago-meshi (grilled conger eel over rice, a Miyajima specialty) and grilled Hiroshima-bay oysters (Setouchi's well-known shellfish, charcoal-grilled on the street) | Omotesando shopping street, Miyajima-cho, Hatsukaichi (address unverified - street stalls) | 700 | 4,200 |
+| Dinner | Build-your-own Hiroshima-style okonomiyaki: layered on the griddle rather than mixed into a batter the way Osaka's version is - a base crepe topped with cabbage, bean sprouts, pork belly and a fried egg, with a full portion of yakisoba noodles pressed in as its own layer, finished with a thick savory-sweet sauce | Okonomimura, 5-13 Shintenchi, Naka-ku, Hiroshima 730-0034 | 750 | 2,700 |
+| Infant food | Purees (Wakodo or Pigeon) and finger food for the 12-month-old; rice and small bites of grilled oyster and okonomiyaki egg/cabbage off the family plate for the 20-month-old, plus a momiji manju (maple-leaf-shaped sponge cake, usually filled with sweet red bean paste) as a treat | Conbini + Miyajima stalls | n/a | 1,900 |
 
 Adult kcal: 550 + 700 + 750 = **2,000**.
 
@@ -164,13 +164,14 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Miyajima visitor tax | Miyajima Island | ¥100/person; waived for under-6s - both infants exempt | - | 100 | 300 |
-| Itsukushima Shrine | Miyajima | UNESCO shrine on stilts over the water; free under 6 | 1h00 | 300 | 900 |
-| Itsukushima Treasure Hall | Miyajima, adjacent to the shrine | Shrine treasures museum | 0h30 | 300 | 900 |
-| Miyajima Public Aquarium | Miyajima, near the shrine | Stroller-friendly; seals, otters; 2026 planning estimate | 0h45 | 1,400 | 4,200 |
-| Miyajima Ropeway (round trip) | Momijidani -> Shishiiwa Station | 2026 planning estimate; 2 adults only, see schedule note | 1h15 | 2,000 | 4,000 |
+| Miyajima visitor tax | - | 100 | 300 | Miyajima pier, Hatsukaichi (address unverified - collected at ferry/on-island signage) | A ¥100 per-person island entry tax introduced to fund conservation, collected via the ferry ticket rather than a separate gate. Children under 6 are exempt, so both infants are free. It is a pass-through cost of landing on the island, not an attraction in itself, and has no effect on the day's plan. |
+| Itsukushima Shrine | 1h00 | 300 | 900 | 1-1 Miyajima-cho, Hatsukaichi, Hiroshima 739-0588 | A Shinto shrine built out over the tidal flats on wooden pillars, founded in the 6th century and rebuilt in its present form in 1168; the whole island of Miyajima has long been considered sacred ground in its own right, historically closed to births and deaths, which is why there is no cemetery here. The famous vermilion torii gate stands about 200 m offshore: at high tide it appears to float on the water, at low tide the sand flats are exposed and you can walk out to its base - which of the two you get depends entirely on the tide table for the day, so check nearer the date rather than assume either. The shrine's raised walkways are flat and stroller-navigable, and an elevator underpass near the entrance avoids the one set of stairs. |
+| Itsukushima Treasure Hall | 0h30 | 300 | 900 | adjacent to Itsukushima Shrine, 1-1 Miyajima-cho, Hatsukaichi 739-0588 | A small museum attached to the shrine holding centuries of donated ceremonial treasures - swords, masks, sutras, court robes - given by samurai and nobility over the shrine's long history as one of Japan's most venerated Shinto sites. A quiet add-on rather than a headline stop; fifteen to thirty minutes is enough unless shrine regalia is a specific interest. Indoor and flat, though the narrow display aisles mean a stroller is often left parked at the door. |
+| Daisho-in Temple | 0h20 (folded into the existing Momijidani stop, no separate schedule slot) | 0 | 0 | 210 Miyajima-cho, Hatsukaichi-shi, Hiroshima-ken 739-0588 (nearest station: Miyajima pier, ~15 min walk) | A working Shingon Buddhist mountain temple at the base of Mt. Misen, and arguably more interesting than the shrine most visitors queue for. Its entrance stairway is lined with rows of spinning metal sutra wheels, each inscribed with a sutra a visitor can "read" just by giving it a turn on the way up, and the grounds hold a dim cave lined with 88 small icons standing in for the Shikoku pilgrimage temples plus a hillside of hundreds of small rakan (disciple) statues, each with a distinct carved face. It is free, and it sits directly on the route the day already walks between Momijidani Park and the ropeway base station, so it costs almost no extra time - the resting adult and children can wander the lower grounds instead of just waiting in the park. Be honest about the terrain: this is a hillside temple with a stepped approach, workable at the lower grounds but a carrier, not the stroller, for anyone going further up the slope. |
+| Miyajima Public Aquarium | 0h45 | 1,420 | 4,260 | 10-3 Miyajima-cho, Hatsukaichi, Hiroshima 739-0588 | A mid-size public aquarium a ten-minute walk from the shrine, built around Seto Inland Sea marine life plus a penguin and sea lion show and a hands-on touch pool. A good pressure-release stop after two temple/shrine visits rather than a world-class aquarium; indoor, climate-controlled, and flat-floored, making it the easiest stroller stretch of the day and genuinely fun for a 20-month-old. |
+| Miyajima Ropeway (round trip) | 1h15 | 2,000 | 4,000 | Momijidani Station, Miyajima-cho, Hatsukaichi (address unverified) | A two-stage cable car climbing most of the way up Mt. Misen, Miyajima's sacred mountain, ending at a viewpoint over the Inland Sea and its islands; the actual 535 m summit still requires a further stone-stepped walk from the upper station, which this trip skips. The ride is the point for this family, a scenic gondola trip rather than a hike, substituting for the full summit trail - carrier-only and unsuitable for a stroller or for two adults managing two under-twos on steep stairs. Only 2 of the 3 adults go up, one carrying the 20-month-old in the party's single carrier; the third adult rests with the stroller and the other infant at Momijidani Park, right at the base station, doubling as the day's mandatory midday rest block. |
 
 ### Day 25 Cost
 
@@ -179,8 +180,8 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 | Lodging | 15,000 | 97 |
 | Food | 8,800 | 57 |
 | Transport | 0 | 0 |
-| Activities | 10,300 | 66 |
-| **Day total** | **34,100** | **220** |
+| Activities | 10,360 | 67 |
+| **Day total** | **34,160** | **220** |
 
 **Running total after Day 25: ¥982,170 ($6,337)**
 
@@ -234,10 +235,10 @@ Shukkei-en garden and Hiroshima Castle.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Toyoko Inn Hiroshima buffet | at hotel | 550 | 0 |
-| Lunch | Udon / teishoku shop | Hondori arcade, Naka-ku | 700 | 2,250 |
-| Dinner | Izakaya-style set meal | near hotel, Minami-ku | 750 | 2,850 |
-| Infant food | Purees + table food for the 20-month-old | Conbini near hotel | n/a | 1,900 |
+| Breakfast | Toyoko Inn Hiroshima buffet: rice, miso soup, natto, pickles, bread, coffee | at hotel | 550 | 0 |
+| Lunch | Kake udon with a chicken tempura and a rice ball, casual teishoku counter | Hondori arcade, Naka-ku | 700 | 2,250 |
+| Dinner | Izakaya-style set meal: grilled fish, rice, miso soup, and small seasonal vegetable side dishes | near hotel, Minami-ku | 750 | 2,850 |
+| Infant food | Purees (Wakodo or Morinaga pouches) for the 12-month-old; rice, miso soup solids, and small pieces of grilled fish and vegetables off the family table for the 20-month-old | Conbini near hotel | n/a | 1,900 |
 
 Adult kcal: 550 + 700 + 750 = **2,000**.
 
@@ -254,13 +255,13 @@ infants ride free.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Atomic Bomb Dome + riverside | Naka-ku | Free, exterior only, stroller-friendly | 0h45 | 0 | 0 |
-| Peace Memorial Museum | Naka-ku | Free under 6; heavy content, see schedule note on splitting | 1h15 | 200 | 600 |
-| Hiroshima Orizuru Tower | Opposite Peace Park | Observation deck + paper-crane fold; 2026 planning estimate | 0h35 | 2,200 | 6,600 |
-| Shukkei-en garden | Naka-ku, near Hiroshima Stn | Landscape garden, stroller-workable on main paths | 1h00 | 260 | 780 |
-| Hiroshima Castle | Motomachi, Naka-ku | Reconstructed keep; grounds flat, keep has stairs; 2026 planning estimate | 0h45 | 370 | 1,110 |
+| Atomic Bomb Dome + riverside | 0h45 | 0 | 0 | 1-10 Otemachi, Naka-ku, Hiroshima 730-0051 | A return to the Dome for a slower look at what is actually the ruin of the Hiroshima Prefectural Industrial Promotion Hall, an exhibition hall completed in 1915 that stood almost directly beneath the bomb's hypocenter. It was deliberately left standing, unrestored, as a permanent memorial rather than repaired or demolished - the exposed dome frame is structural damage from 1945, not a design feature, and knowing that is the difference between seeing a ruin and understanding what it is. Free, outdoor, along the flat Motoyasu riverside promenade, fully stroller-workable, with benches for a feeding stop if needed. |
+| Peace Memorial Museum | 1h15 | 200 | 600 | 1-2 Nakajima-cho, Naka-ku, Hiroshima | The city's central museum on the atomic bombing, built around personal artifacts, photographs, and survivor testimony rather than an abstracted historical overview; the lower-floor galleries in particular are graphic and confronting, showing burned clothing, melted objects, and the direct human toll without being softened for visitors. It should be seen, but not by the whole family at once: the plan splits the party here, with one or two adults going through while the third stays outside in the park with the children, swapping partway through if more than one adult wants to see it - the right call given the content and the ages involved, not a compromise, and the approach generally recommended for families visiting with very young children. Adult admission is ¥200 (free under 18, so both infants are free regardless); there is no requirement or expectation to see every gallery. |
+| Hiroshima Orizuru Tower | 0h35 | 2,200 | 6,600 | 1-2-1 Otemachi, Naka-ku, Hiroshima 730-0051 | A modern observation tower directly across from the Dome, with an open-air rooftop deck looking back over Peace Park and the city, and a spiral ramp down through a glass wall where visitors fold and drop a paper crane (orizuru, Hiroshima's peace symbol) into the atrium below. A deliberately lighter, hands-on stop right after the museum, useful for resetting the mood before lunch. Elevator access throughout, fully stroller-accessible; the crane-folding is easy enough to do one-handed while holding a toddler. |
+| Shukkei-en garden | 1h00 | 260 | 780 | 2-11 Kaminobori-cho, Naka-ku, Hiroshima | A landscape garden laid out in 1620 around a central pond, built in the "shrunken scenery" (shukkei) style that miniaturizes famous landscapes - mountains, valleys, a version of a Chinese lake - into one walkable circuit, a very different style of garden from the dry rock gardens common in Kyoto. It survived the bombing only as ruins and was rebuilt afterward, so today's garden is itself a small piece of the city's postwar recovery. The main gravel loop is stroller-workable; a few of the narrower bridges and stepping-stone sections are easier with the carrier. |
+| Hiroshima Castle | 0h45 | 370 | 1,110 | 21-1 Motomachi, Naka-ku, Hiroshima 730-0011 | A five-story castle keep, originally built in the 1590s and destroyed instantly in the 1945 bombing; what stands today is a 1958 concrete reconstruction that closely follows the original exterior design and now houses a small history museum inside. Worth knowing before arrival - without that context it just reads as an old castle rather than what it actually is, a rebuilt symbol on the site of the original. The surrounding grounds and moat path are flat and fully stroller-workable; the keep's interior is narrow stairs floor to floor, so a carrier is the practical choice for going inside, or one adult can wait on the grounds with the stroller while the others take the keep. |
 
 ### Day 26 Cost
 
@@ -318,10 +319,10 @@ at Dotonbori.
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Toyoko Inn Hiroshima buffet | at hotel, before checkout | 550 | 0 |
-| Lunch | Casual teishoku/udon shop (e.g. Marugame Seimen) | near Namba Stn | 700 | 2,250 |
-| Dinner | Takoyaki + light bites (e.g. Takoyaki Doraku Wanaka) | Dotonbori, Chuo-ku | 750 | 2,400 |
-| Infant food | Purees + table food for the 20-month-old | Conbini near hotel | n/a | 1,900 |
+| Breakfast | Toyoko Inn Hiroshima buffet: rice, miso soup, natto, pickles, bread, coffee (before checkout) | at hotel | 550 | 0 |
+| Lunch | Kake udon with a chicken tempura and an onigiri, self-serve udon counter (e.g. Marugame Seimen) | near Namba Stn | 700 | 2,250 |
+| Dinner | Osaka-style street food: takoyaki (octopus-filled batter balls, griddled and topped with sauce, mayonnaise and bonito flakes) plus a side of negiyaki or a kushikatsu skewer (e.g. Takoyaki Doraku Wanaka) | Dotonbori, Chuo-ku | 750 | 2,400 |
+| Infant food | Purees (Pigeon or Morinaga pouches) for the 12-month-old; soft rice, egg, and small cooled pieces of takoyaki filling off the family plate for the 20-month-old | Conbini near hotel | n/a | 1,900 |
 
 Adult kcal: 550 + 700 + 750 = **2,000**.
 
@@ -339,10 +340,10 @@ covered in the next segment.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Dotonbori canal walk | Chuo-ku, Osaka | Free, iconic signage, stroller-flat riverside promenade | 0h45 | 0 | 0 |
-| Tombori River Cruise | Dotonbori canal | ~20 min narrated boat ride; 2026 planning estimate, verify nearer date | 0h20 | 2,000 | 6,000 |
+| Dotonbori canal walk | 0h45 | 0 | 0 | Dotonbori, Chuo-ku, Osaka (district; nearest station Namba - address unverified) | Osaka's best-known nightlife and dining strip, a canal-side promenade lined with oversized illuminated signs - the animated Glico "running man" billboard is the classic photo spot - plus arcades, restaurants and street-food stalls stacked along both banks. This is a browsing stop, not a ticketed attraction: free, flat, and stroller-workable along the main promenade, though it gets crowded and slow-moving after dark, worth knowing with a stroller in tow. Kept deliberately light for this arrival evening; the paid Tombori River Cruise is saved for the last full day in Osaka (Day 29) instead of being charged for twice, which is what the earlier draft did. |
+| Namba Yasaka Shrine | 0h20 | 0 | 0 | 2-9-19 Motomachi, Naniwa-ku, Osaka 556-0016 | A Shinto shrine whose main hall is built in the shape of an enormous lion's head, about 12 m tall with its mouth open as if swallowing evil spirits - a genuinely strange, striking piece of architecture rather than a typical shrine building, and unlike anything else on this trip. It is free, about a 10-minute walk from the hotel, and the whole visit is a flat, ground-level courtyard with no stairs and nothing to enter, so it folds easily into the walk back from Dotonbori as a quick, low-effort stop rather than a separate outing. |
 
 ### Day 27 Cost
 
@@ -351,8 +352,8 @@ covered in the next segment.
 | Lodging | 13,000 | 84 |
 | Food | 6,550 | 42 |
 | Transport | 870 | 6 |
-| Activities | 6,000 | 39 |
-| **Day total** | **26,420** | **170** |
+| Activities | 0 | 0 |
+| **Day total** | **20,420** | **132** |
 
 **Running total after Day 27: ¥1,041,000 ($6,716)**
 
@@ -365,9 +366,14 @@ covered in the next segment.
 | Lodging | 58,000 | 374 |
 | Food | 28,650 | 185 |
 | Transport | 54,540 | 352 |
-| Activities | 25,390 | 164 |
-| **Segment total** | **166,580** | **1,075** |
+| Activities | 19,450 | 125 |
+| **Segment total** | **160,640** | **1,036** |
 
-Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000),
-Activities -2.4% (target 26,000) - all within the ±5% tolerance. Lodging is the fixed
-¥15,000 x 3 nights + ¥13,000 x 1 night from MASTER-BRIEF and is not flexed.
+Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000) - both within
+the ±5% tolerance. Activities -25.2% (target 26,000) - now well under target, because this
+pass removed the Day 27 Tombori River Cruise (which duplicated a charge already kept on
+Day 29 in the Osaka file) and added Daisho-in Temple and Namba Yasaka Shrine, both free.
+That is a real saving from cutting a double-charge, not a shortfall to paper over, and it was
+the expected result of the two fixes this pass was asked to make; it is not backfilled with
+padding activities. Lodging is the fixed ¥15,000 x 3 nights + ¥13,000 x 1 night from
+MASTER-BRIEF and is not flexed.

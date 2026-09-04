@@ -46,10 +46,10 @@ Active out-of-lodging time: ~7h10 (morning museum-plus-Kobe circuit ~5h, evening
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Hotel buffet (rice, miso, natto, pickles, bread, coffee) | Toyoko Inn Osaka Namba | 500 | 0 (included) |
-| Lunch | Street food at Nankinmachi (buns, skewers, snacks) | Sakaemachi-dori, Chuo-ku, Kobe | 700 | 2,700 |
-| Dinner | Takoyaki + okonomiyaki from Dotonbori stalls | Dotonbori, Chuo-ku, Osaka | 750 | 3,200 |
-| Infant food | Formula (Wakodo/Pigeon/Morinaga) + pouches, both infants | - | n/a | 1,900 |
+| Breakfast | Toyoko Inn buffet: rice, miso soup, natto, pickles, sliced bread, coffee | Toyoko Inn Osaka Namba | 500 | 0 (included) |
+| Lunch | Street-stall grazing at Nankinmachi (Kobe Chinatown): pork buns, ebi mayo buns, char siu skewers | Nankinmachi, Sakaemachi-dori, Chuo-ku, Kobe 650-0023 | 700 | 2,700 |
+| Dinner | Takoyaki (griddled battered octopus dumplings - the molten center stays scalding for a minute or two after serving, so let it cool before handing one to a toddler) plus a mixed-style okonomiyaki to share: in Osaka the batter, cabbage and other ingredients are all stirred together before cooking, unlike the Hiroshima-style version this trip ate on Days 25-26, which is built in stacked layers with a separate yakisoba noodle layer underneath - same name, genuinely different dish | Dotonbori food stalls, Chuo-ku, Osaka (individual stall addresses unverified) | 750 | 3,200 |
+| Infant food | Formula (Wakodo or Pigeon), 3 feeds; Morinaga stage-2 pouches for Infant A (~12mo); Infant B (~20mo) eats off the table - Nankinmachi bun fillings torn small, plain rice, banana, and cooled takoyaki with the crisp exterior only | - | n/a | 1,900 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -66,12 +66,12 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| National Museum of Art, Osaka | Nakanoshima, Kita-ku, Osaka | Free for Culture Day only (normally ~¥430/adult, permanent collection); infants free | 0:50 | 0 | 0 |
-| Kitano Ijinkan district | Kitano-cho, Chuo-ku, Kobe | Exterior street walk; no admission paid | 0:50 | 0 | 0 |
-| Meriken Park | Kobe waterfront, Chuo-ku, Kobe | Free harbourside park | 0:30 | 0 | 0 |
-| Midosuji "Hikari no Kyoen" illumination | Midosuji Avenue, Chuo-ku, Osaka | Free seasonal light walk, opening night | 0:45 | 0 | 0 |
+| National Museum of Art, Osaka | 0:50 | 0 | 0 | 4-2-55 Nakanoshima, Kita-ku, Osaka 530-0005 | A contemporary and modern art museum whose entire exhibition space sits underground - the only thing visible at street level is a cluster of curved steel pylons by architect Cesar Pelli marking the entrance, an unusual building worth a sentence before ever reaching the art inside. The collection runs roughly 8,200 works of Japanese and international art from 1945 onward. Standard adult admission for the permanent collection is normally around ¥430, but entry is free for everyone on 3 Nov (Bunka no Hi / Culture Day) - this is the one Osaka museum confirmed free that date, not a citywide policy. Fully underground and lift-served, no stairs-only stretches, stroller-friendly throughout; closed Mondays. |
+| Kitano Ijinkan district | 0:50 | 0 | 0 | Kitano-cho, Chuo-ku, Kobe (district; anchor building Weathercock House, 3-13-3 Kitano-cho, Chuo-ku, Kobe) | A hillside neighborhood of roughly 30 preserved Western-style houses (ijinkan) built for the European and American merchants who settled in Kobe after its port opened to foreign trade in 1868; the trademark green-and-white Weathercock House, built 1909 for a German merchant, anchors the district. Most houses charge individual admission to go inside, but the streets themselves - sloped lanes, timber-and-brick facades - are free to walk and photograph. This stop stays street-level rather than paying per-house entry, which keeps it short and toddler-simple. The lanes climb, so the carrier works better here than the stroller. |
+| Meriken Park | 0:30 | 0 | 0 | 2 Hatobacho, Chuo-ku, Kobe 650-0042 | A flat harbourside park facing Kobe Port Tower and the Kobe Maritime Museum, with the "Be Kobe" sign as the current photo spot. In one corner, the Port of Kobe Earthquake Memorial Park preserves an actual 60m section of the Meriken Wharf quay wall, left cracked and tilted exactly as the Great Hanshin-Awaji Earthquake left it at 5:46am on 17 January 1995 - a magnitude-7 quake that killed 4,751 people in Kobe alone and still shapes how the city talks about itself; a sobering few minutes next to an otherwise cheerful waterfront, worth explaining to the adults even though the infants won't take it in. Nankinmachi, this day's lunch stop and one of Japan's three historic Chinatowns, sits a short walk inland. Flat paved paths throughout, fully stroller-friendly. |
+| Midosuji "Hikari no Kyoen" illumination | 0:45 | 0 | 0 | Midosuji Avenue, between the Hanshin-mae and Namba-nishiguchi intersections, Chuo-ku, Osaka | Osaka's main north-south boulevard, normally lined with ginkgo trees, strung with LED displays for about two months each winter as part of the citywide Osaka Hikari-Kyoen light festival; this visit catches its opening night. Free to walk, no ticket or reservation, evening hours only. Wide, flat, paved sidewalks the entire route - stroller-friendly - though opening night draws a crowd, so keep to the outer edge of the path rather than the center where photographers cluster. |
 
 ### Day 28 Cost
 
@@ -127,10 +127,10 @@ Active out-of-lodging time: ~6h50 across two blocks (morning castle + midday res
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Hotel buffet | Toyoko Inn Osaka Namba | 500 | 0 (included) |
-| Lunch | Grazing at Kuromon Ichiba (sushi, wagyu skewers, tamagoyaki, oysters) | Nihonbashi, Chuo-ku, Osaka | 700 | 5,200 |
-| Dinner | Kushikatsu set | Kushikatsu Daruma, Dotonbori | 750 | 5,300 |
-| Infant food | Formula + table food, both infants | - | n/a | 1,900 |
+| Breakfast | Toyoko Inn buffet: rice, miso soup, natto, pickles, sliced bread, coffee | Toyoko Inn Osaka Namba | 500 | 0 (included) |
+| Lunch | Grazing lunch at Kuromon Ichiba, a roughly 580m covered market of about 170 stalls; historically a wholesale fish and produce market feeding local restaurants, most stalls today sell grill-it-and-eat-it single portions aimed squarely at visitors, which is the honest reason prices run higher than a neighborhood greengrocer - nigiri sushi, grilled wagyu skewers, tamagoyaki, fresh oysters on the half shell, eaten standing at the counter | Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo-ku, Osaka 542-0073 | 700 | 5,200 |
+| Dinner | Kushikatsu set - pork, chicken, lotus root, quail egg and cheese skewers, deep-fried and dipped once each into the shared sauce pot on the counter. The no-double-dipping rule is strictly enforced here: a skewer already bitten never goes back in the communal pot; the free shredded cabbage on the counter is used as a scoop for extra sauce instead | Kushikatsu Daruma, 1-6-3 Dotonbori, Chuo-ku, Osaka 542-0071 | 750 | 5,300 |
+| Infant food | Formula (Wakodo or Pigeon), 2-3 feeds; Morinaga pouches for Infant A (~12mo); Infant B (~20mo) eats off the table - tamagoyaki, soft sushi rice, plain grilled skewer meat, and kushikatsu with the sauce wiped off | - | n/a | 1,900 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -146,12 +146,12 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ### Activities
 
-| Activity | Location | Details | Duration | Adult (¥) | Party (¥) |
+| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Osaka Castle keep | Osaka Castle Park, Chuo-ku, Osaka | Park grounds free; keep/museum ¥600/adult, infants free. Elevator to 5F, stairs above - stroller parked at entrance | 1:40 | 600 | 1,800 |
-| Tsutenkaku Tower observation deck | Shinsekai, Naniwa-ku, Osaka | ¥900/adult, infants free | 0:50 | 900 | 2,700 |
-| Tombori River Cruise | Dotonbori canal, Chuo-ku, Osaka | ~20 min narrated boat ride; ¥1,600/adult, infants free | 0:30 | 1,600 | 4,800 |
-| Dotonbori canal walk | Dotonbori, Chuo-ku, Osaka | Free street-level walk, Glico sign photo stop | 0:30 | 0 | 0 |
+| Osaka Castle keep | 1:40 | 600 | 1,800 | 1-1 Osakajo, Chuo-ku, Osaka 540-0002 | The keep looks like a wooden Sengoku-era castle from the outside but is not one: Toyotomi Hideyoshi's original 16th-century keep burned in 1615, a Tokugawa-era rebuild burned again in 1665, and what stands today is a 1931 reinforced-concrete reconstruction sitting on the surviving Toyotomi-era stone base. That matters for a visitor expecting a creaky wooden interior like Himeji's - inside is a museum on Hideyoshi and the castle town, plus an 8th-floor observation level, and critically, a lift. That elevator is exactly why this castle works with a stroller-and-carrier family when a genuine Edo-period keep like Himeji's (narrow wooden stairs only) does not. The park grounds are free and open all day; keep admission is paid, infants free, and the stroller is parked at the entrance while the party rides up. |
+| Shinsekai walk + Tsutenkaku Tower observation deck | 0:50 | 900 | 2,700 | 1-18-6 Ebisuhigashi, Naniwa-ku, Osaka 556-0002 | Shinsekai ("New World") is a retro entertainment district built in 1912, deliberately modeled on Paris and New York's Coney Island - radial streets and an amusement-park layout centered on Tsutenkaku Tower. It boomed early, was flattened in WWII bombing, and spent decades after as Osaka's cheap, slightly disreputable corner before becoming today's beloved-but-still-a-bit-seedy tourist draw: gaudy signage, plastic food models, and the city's densest cluster of kushikatsu counters. Tsutenkaku itself is a 103m steel observation tower first built in 1912 and rebuilt in 1956 after wartime dismantling; the deck is elevator-served with an open view over Shinsekai's low rooftops - a smaller, more retro stand-in for Umeda Sky Building or Abeno Harukas, and this trip's "city from above" stop. Infants free on the tower; the surrounding streets are flat and stroller-viable but narrow and crowded at peak hours. |
+| Dotonbori canal walk | 0:30 | 0 | 0 | Dotonbori canal, Chuo-ku, Osaka (canal-side pedestrian strip; no single street address) | A packed pedestrian walk along both banks of the Dotonbori canal, wall-to-wall illuminated signage - most famously the Glico running man, a billboard first put up by confectioner Ezaki Glico in 1935 and rebuilt six times since (the current LED version dates to 2014) at the same spot on the Ebisubashi bridge, arguably the single most photographed spot in Osaka. It's gaudy on purpose - restaurant signage competing for foot traffic over ninety years, not a curated attraction - and rewards about an hour at most, best after dark when the signs are lit. Level paved streets, stroller-viable, but expect dense evening crowds on both banks. |
+| Tombori River Cruise | 0:30 | 2,000 | 6,000 | Tazaemonbashi Pier, by the Don Quijote store, Dotonbori, Chuo-ku, Osaka (pier location; no street address) | A 20-minute narrated boat ride along the Dotonbori canal, passing underneath the illuminated signs the party just walked past on foot - the same stretch seen from the water, with a live guide pointing out landmarks. It's a good change of pace after a day on foot, but it runs on a scheduled departure rather than being a walk-up guarantee. Adult fare is ¥2,000, infants free (one free child per fare-paying adult, comfortably inside policy for 2 infants and 3 adults). Boarding is via a short ramp/steps at the pier; the stroller is folded and carried aboard or left curbside with one adult - confirm with staff at boarding. |
 
 ### Day 29 Cost
 
@@ -160,8 +160,8 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Lodging | 13,000 | 84 |
 | Food | 12,400 | 80 |
 | Transport | 2,250 | 15 |
-| Activities | 9,300 | 60 |
-| **Day total** | **36,950** | **238** |
+| Activities | 10,500 | 68 |
+| **Day total** | **38,150** | **246** |
 
 **Running total after Day 29: ¥1,101,690 ($7,108)**
 
@@ -198,10 +198,10 @@ No lodging charge - checked out this morning. (Night 3 of 3 at Toyoko Inn Osaka 
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Hotel buffet, final morning | Toyoko Inn Osaka Namba | 500 | 0 (included) |
-| Lunch | Ramen or curry at the airside food court | Kansai International Airport, Terminal 1 | 700 | 3,600 |
-| Dinner | In-flight meal, international carrier (not costed here) | - | 750 | 0 |
-| Infant food | Formula + pouches/snacks for the travel day | - | n/a | 1,400 |
+| Breakfast | Toyoko Inn buffet, final morning: rice, miso soup, natto, pickles, sliced bread, coffee | Toyoko Inn Osaka Namba | 500 | 0 (included) |
+| Lunch | Light pre-flight meal - a bowl of ramen or Japanese curry rice at an airside food court, timed before boarding an international flight rather than relying on airline catering | Kansai International Airport, Terminal 1, 1 Senshu Kuko Kita, Izumisano, Osaka 549-0001 | 700 | 3,600 |
+| Dinner | In-flight meal, international carrier (not costed in this itinerary) | - | 750 | 0 |
+| Infant food | Formula (Wakodo or Pigeon) and Morinaga pouches for Infant A packed for the flight; Infant B eats off the airport meal and packed snacks - soft rice, banana, crackers | - | n/a | 1,400 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -237,15 +237,17 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Lodging | 26,000 | 168 |
 | Food | 25,200 | 163 |
 | Transport | 7,980 | 51 |
-| Activities | 9,300 | 60 |
-| **Segment total** | **68,480** | **442** |
+| Activities | 10,500 | 68 |
+| **Segment total** | **69,680** | **450** |
 
 **Confirmed against the envelope** (Food ¥25,000 / Transport ¥10,300 / Activities ¥18,000):
 - Food: ¥25,200 vs ¥25,000 - **+0.8%**, within the ±5% band.
 - Transport: ¥7,980 vs ¥10,300 - **-22.5%**, under. Genuine, not padded: the JR Kansai-Hiroshima Area Pass covers all Day 28 JR travel to and from Kobe at ¥0 on its final valid day, and Namba/Dotonbori/Shinsekai/Kuromon sit close enough together to cover several connections on foot.
-- Activities: ¥9,300 vs ¥18,000 - **-48.3%**, under. Day 28 is built entirely on free activities (Culture Day museum entry, a free harbour walk, a free illumination) by design; Day 29 carries the segment's only paid admissions (Osaka Castle keep, Tsutenkaku, the Tombori River Cruise).
+- Activities: ¥10,500 vs ¥18,000 - **-41.7%**, under. Day 28 is built entirely on free activities (Culture Day museum entry, a free harbour walk, a free illumination) by design; Day 29 carries the segment's only paid admissions (Osaka Castle keep, Tsutenkaku, the Tombori River Cruise, now corrected to its verified ¥2,000/adult fare - see below). This is a wider gap than a prior draft showed, since the cruise fare correction removes a same-day double-charge from a sibling day, not from this segment's own math.
 - Lodging (fixed, not part of the flex envelope): ¥26,000 for nights 2 and 3 of 3 at Toyoko Inn Osaka Namba, matching the ¥13,000/night rate in the brief.
 
 The shortfall against Transport and Activities is not overspend elsewhere - it is real savings from the pass's last day and from Culture Day, left as-is per the honesty rule rather than padded to hit the target.
+
+**Duplication fix (per the Osaka audit, `places/osaka.md`):** Day 27 and Day 29 both originally carried a Dotonbori canal walk plus the Tombori River Cruise, with the cruise charged twice at two different fares. Day 27 (written by another agent) drops the cruise; this file keeps it on Day 29 as the day's closing activity and corrects its fare from a previously-used ¥1,600/adult to the verified market rate of **¥2,000/adult (¥6,000 party), confirmed via osaka-info.jp** - 20 minutes, departing Tazaemonbashi Pier by the Don Quijote store, infants free. Umeda Sky Building (from the old, now-replaced Day 22 Osaka day-trip draft) is deliberately not added here: it sits in Kita, across town from every other Osaka stop in this file, Day 28 is already at the pacing cap, and Tsutenkaku already covers the "view over the city" beat on Day 29. Osaka Castle now appears exactly once across Days 27-30, on Day 29, since Day 22's duplicate visit is gone.
 
 *Running total baseline: ¥1,055,100 ($6,807) after Day 27, computed from the fixed lodging schedule plus the Days 1-27 segment envelopes in MASTER-BRIEF.md (Day 27 itself is written by another agent and belongs to the Hiroshima + transfer segment, not this one).*
