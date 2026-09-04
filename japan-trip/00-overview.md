@@ -69,9 +69,19 @@ therefore before peak foliage in every lowland city it visits. Anyone picturing 
 maples over Kiyomizu-dera should know that is a mid-November-to-December photograph
 and it is being traded away for the 30-60% Kyoto room premium that comes with it.
 
-The consolation is real but specific. Kawaguchiko sits at roughly 830 m, and elevation
-colours weeks before the basins do. The Fuji Five Lakes leg on 17-19 October is where
-this trip actually sees autumn, and it is scheduled for exactly that reason.
+The consolation is smaller than it first appears, and it is worth being exact about.
+Kawaguchiko sits at roughly 830 m and elevation colours weeks before the basins do,
+but its own best window is late October into early November, and the Fuji leg falls on
+17-19 October. So the realistic expectation there is first colour at altitude, not a
+peak display, and the Momiji Kairo maple corridor's illumination does not begin until
+around 1 November, after the stay ends.
+
+Stated plainly: **this itinerary is early for autumn foliage everywhere it goes.**
+Kawaguchiko is the only stop with a real chance of meaningful colour and even that is
+early-stage. If seeing Japan in autumn colour is a primary goal rather than a bonus,
+the trip belongs in mid-to-late November, and the budget has to absorb the Kyoto room
+premium that comes with it. The dates here optimise for cost, weather and travelling
+with two children under two, in that order.
 
 ### What was rejected, and why
 
