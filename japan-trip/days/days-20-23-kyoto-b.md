@@ -25,33 +25,34 @@ here is "covered by pass."*
 
 ## Day 20 - Monday, October 26, 2026 - Kyoto (day trip to Nara)
 
-**Base:** Kyoto | **Weather (typical):** 21-25/15 °C, pre-peak foliage, Nara's maples are still mostly green with a few early turners
+**Base:** Kyoto
+**Weather (typical):** 21-25/15 °C, pre-peak foliage, Nara's maples are still mostly green with a few early turners
 **Theme:** Nara as a day trip: Todai-ji's Great Buddha, the free-roaming deer, Kasuga Taisha, and two gardens. The most stroller-friendly, infant-strongest day of the segment, and the longest, since Kintetsu adds nearly 1h30 of pure transit each way.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Breakfast at Toyoko Inn buffet (included) | Food |
-| 07:30 | 0h15 | Hotel -> Kyoto Stn, Kyoto city bus | Transit |
-| 07:45 | 0h15 | Transfer to Kintetsu platform, buy tickets | Transit |
-| 08:00 | 0h44 | Kyoto Stn -> Kintetsu-Nara, Kintetsu Kyoto Line (kyuko/express, no reservation) | Transit |
-| 08:44 | 0h16 | Walk into Nara Park, first deer feeding | Activity |
-| 09:00 | 0h50 | Todai-ji Daibutsuden (Great Buddha Hall), paved paths | Activity |
-| 09:50 | 0h15 | Walk to Kasuga Taisha approach, lantern-lined path | Activity |
-| 10:05 | 0h40 | Kasuga Taisha inner precinct (Chumon gate, moss garden), gravel paths, carrier easier than stroller here | Activity |
-| 10:45 | 0h20 | Manyo Botanical Garden (within Kasuga Taisha grounds) | Activity |
-| 11:05 | 0h40 | Walk back via Isuien Garden | Activity |
-| 11:45 | 0h50 | Lunch near Nara Park | Food |
-| 12:35 | 1h30 | Midday rest, Nara Park lawn (stroller nap) | Rest |
-| 14:05 | 0h20 | Free wander / last deer feeding, walk to station | Activity |
-| 14:25 | 0h44 | Kintetsu-Nara -> Kyoto Stn, kyuko | Transit |
-| 15:09 | 0h28 | Walk, Kyoto Stn -> Hotel (flat, ~2.2 km, stroller-friendly; saves the bus fare) | Transit |
-| 15:37 | 2h23 | Free time / rest at hotel | Rest |
-| 18:00 | 0h10 | Walk to dinner spot | Transit |
-| 18:10 | 0h50 | Dinner at CoCo Ichibanya, near Shijo-Omiya | Food |
-| 19:00 | 0h10 | Walk back to hotel | Transit |
-| 19:10 | 0h50 | Bath/bedtime routine | Admin |
+| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
+| 07:30 | 0h15 | Transit | Hotel -> Kyoto Stn, Kyoto city bus |
+| 07:45 | 0h15 | Transit | Transfer to Kintetsu platform, buy tickets |
+| 08:00 | 0h44 | Transit | Kyoto Stn -> Kintetsu-Nara, Kintetsu Kyoto Line (kyuko/express, no reservation) |
+| 08:44 | 0h16 | Activity | Walk into Nara Park, first deer feeding |
+| 09:00 | 0h50 | Activity | Todai-ji Daibutsuden (Great Buddha Hall), paved paths |
+| 09:50 | 0h15 | Activity | Walk to Kasuga Taisha approach, lantern-lined path |
+| 10:05 | 0h40 | Activity | Kasuga Taisha inner precinct (Chumon gate, moss garden), gravel paths, carrier easier than stroller here |
+| 10:45 | 0h20 | Activity | Manyo Botanical Garden (within Kasuga Taisha grounds) |
+| 11:05 | 0h40 | Activity | Walk back via Isuien Garden |
+| 11:45 | 0h50 | Food | Lunch near Nara Park |
+| 12:35 | 1h30 | Rest | Midday rest, Nara Park lawn (stroller nap) |
+| 14:05 | 0h20 | Activity | Free wander / last deer feeding, walk to station |
+| 14:25 | 0h44 | Transit | Kintetsu-Nara -> Kyoto Stn, kyuko |
+| 15:09 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel (flat, ~2.2 km, stroller-friendly; saves the bus fare) |
+| 15:37 | 2h23 | Rest | Free time / rest at hotel |
+| 18:00 | 0h10 | Transit | Walk to dinner spot |
+| 18:10 | 0h50 | Food | Dinner at CoCo Ichibanya, near Shijo-Omiya |
+| 19:00 | 0h10 | Transit | Walk back to hotel |
+| 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
 - This is the segment's one long day: ~8h out of the hotel including the 1h30 park
   rest block, offset by a short evening outing only. Days 21 and 23 are deliberately
@@ -59,9 +60,11 @@ here is "covered by pass."*
 
 ### Lodging
 
-**Toyoko Inn Kyoto Shijo-Omiya** - ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥19,000 (= $122.58) | Night 7 of 10
-
+**Night:** 7 of 10
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -115,34 +118,35 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 ## Day 21 - Tuesday, October 27, 2026 - Kyoto (day trip to Uji)
 
-**Base:** Kyoto | **Weather (typical):** 21-25/15 °C, pre-peak foliage
+**Base:** Kyoto
+**Weather (typical):** 21-25/15 °C, pre-peak foliage
 **Theme:** Uji: a short, low-key day trip: Byodo-in, a hands-on matcha experience, and the Uji riverbank. The cheapest and most compact of the three day trips.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Breakfast at Toyoko Inn buffet (included) | Food |
-| 07:30 | 0h15 | Hotel -> Kyoto Stn, Kyoto city bus | Transit |
-| 07:45 | 0h15 | Transfer to JR Nara Line platform | Transit |
-| 08:00 | 0h18 | Kyoto Stn -> Uji Stn, JR Nara Line rapid | Transit |
-| 08:18 | 0h12 | Walk, Uji Stn -> Byodo-in | Transit |
-| 08:30 | 0h45 | Byodo-in garden + Hoshokan museum | Activity |
-| 09:15 | 0h15 | Byodo-in Phoenix Hall interior (timed small-group entry; one adult goes in while the other two wait outside with the kids) | Activity |
-| 09:30 | 0h15 | Walk to riverside tea house | Transit |
-| 09:45 | 0h45 | Tea-ceremony / matcha-making experience | Activity |
-| 10:30 | 0h15 | Walk along the Uji riverbank | Transit |
-| 10:45 | 0h40 | Tale of Genji Museum (air-conditioned, easy rest stop) | Activity |
-| 11:25 | 0h50 | Lunch, tea-house set meal near Uji Bridge | Food |
-| 12:15 | 1h45 | Midday rest, Uji riverside park | Rest |
-| 14:00 | 0h15 | Walk to Uji Stn | Transit |
-| 14:15 | 0h18 | Uji Stn -> Kyoto Stn, JR Nara Line rapid | Transit |
-| 14:33 | 0h28 | Walk, Kyoto Stn -> Hotel | Transit |
-| 15:01 | 2h59 | Free time / laundry at hotel | Rest |
-| 18:00 | 0h10 | Walk to dinner spot | Transit |
-| 18:10 | 0h50 | Dinner at Marugame Seimen, near Omiya | Food |
-| 19:00 | 0h10 | Walk back to hotel | Transit |
-| 19:10 | 0h50 | Bath/bedtime routine | Admin |
+| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
+| 07:30 | 0h15 | Transit | Hotel -> Kyoto Stn, Kyoto city bus |
+| 07:45 | 0h15 | Transit | Transfer to JR Nara Line platform |
+| 08:00 | 0h18 | Transit | Kyoto Stn -> Uji Stn, JR Nara Line rapid |
+| 08:18 | 0h12 | Transit | Walk, Uji Stn -> Byodo-in |
+| 08:30 | 0h45 | Activity | Byodo-in garden + Hoshokan museum |
+| 09:15 | 0h15 | Activity | Byodo-in Phoenix Hall interior (timed small-group entry; one adult goes in while the other two wait outside with the kids) |
+| 09:30 | 0h15 | Transit | Walk to riverside tea house |
+| 09:45 | 0h45 | Activity | Tea-ceremony / matcha-making experience |
+| 10:30 | 0h15 | Transit | Walk along the Uji riverbank |
+| 10:45 | 0h40 | Activity | Tale of Genji Museum (air-conditioned, easy rest stop) |
+| 11:25 | 0h50 | Food | Lunch, tea-house set meal near Uji Bridge |
+| 12:15 | 1h45 | Rest | Midday rest, Uji riverside park |
+| 14:00 | 0h15 | Transit | Walk to Uji Stn |
+| 14:15 | 0h18 | Transit | Uji Stn -> Kyoto Stn, JR Nara Line rapid |
+| 14:33 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel |
+| 15:01 | 2h59 | Rest | Free time / laundry at hotel |
+| 18:00 | 0h10 | Transit | Walk to dinner spot |
+| 18:10 | 0h50 | Food | Dinner at Marugame Seimen, near Omiya |
+| 19:00 | 0h10 | Transit | Walk back to hotel |
+| 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
 - Uji is compact: every stop is within a short walk of the river, so four
   activities fit without extra transit. Out-of-lodging time before the midday
@@ -150,9 +154,11 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 ### Lodging
 
-**Toyoko Inn Kyoto Shijo-Omiya** - ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥19,000 (= $122.58) | Night 8 of 10
-
+**Night:** 8 of 10
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -205,45 +211,48 @@ Under-6 admission is free at all four stops; figures above are adult fares only.
 
 ## Day 22 - Wednesday, October 28, 2026 - Kyoto (day trip to Osaka)
 
-**Base:** Kyoto | **Weather (typical):** 21-25/15 °C, pre-peak foliage
+**Base:** Kyoto
+**Weather (typical):** 21-25/15 °C, pre-peak foliage
 **Theme:** Osaka Castle Park by direct Hankyu train: the castle grounds, Nishinomaru Garden, the history museum next door, and the Umeda Sky Building on the way home. Shinsekai is skipped this trip to keep the day within the pacing cap.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Breakfast at Toyoko Inn buffet (included) | Food |
-| 07:35 | 0h05 | Walk hotel -> Omiya Stn (Hankyu) | Transit |
-| 07:40 | 0h43 | Omiya -> Osaka-Umeda, Hankyu Kyoto Line limited express | Transit |
-| 08:23 | 0h12 | Walk/transfer, Hankyu Umeda -> JR Osaka Stn | Transit |
-| 08:35 | 0h19 | Osaka -> Osakajokoen, JR Osaka Loop Line | Transit |
-| 08:54 | 0h11 | Walk to Osaka Castle Park entrance | Transit |
-| 09:05 | 0h50 | Osaka Castle main tower (elevator to 5F; top two floors are stairs-only, so we skip them with the stroller) | Activity |
-| 09:55 | 0h30 | Nishinomaru Garden | Activity |
-| 10:25 | 0h45 | Osaka Museum of History (elevator-accessible) | Activity |
-| 11:10 | 0h50 | Lunch at JO-TERRACE Osaka (castle park dining complex) | Food |
-| 12:00 | 1h45 | Midday rest, castle park lawn | Rest |
-| 13:45 | 0h11 | Walk to Osakajokoen Stn | Transit |
-| 13:56 | 0h19 | Osakajokoen -> Osaka, JR Osaka Loop Line | Transit |
-| 14:15 | 0h12 | Walk to Umeda Sky Building | Transit |
-| 14:27 | 0h40 | Umeda Sky Building, Floating Garden Observatory | Activity |
-| 15:07 | 0h15 | Walk to Hankyu Umeda | Transit |
-| 15:22 | 0h43 | Osaka-Umeda -> Omiya, Hankyu Kyoto Line limited express | Transit |
-| 16:05 | 0h05 | Walk to hotel | Transit |
-| 16:10 | 1h50 | Free time / rest at hotel | Rest |
-| 18:00 | 0h10 | Walk to dinner spot | Transit |
-| 18:10 | 0h50 | Dinner, local okonomiyaki restaurant near Shijo-Omiya | Food |
-| 19:00 | 0h10 | Walk back to hotel | Transit |
-| 19:10 | 0h50 | Bath/bedtime routine | Admin |
+| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
+| 07:35 | 0h05 | Transit | Walk hotel -> Omiya Stn (Hankyu) |
+| 07:40 | 0h43 | Transit | Omiya -> Osaka-Umeda, Hankyu Kyoto Line limited express |
+| 08:23 | 0h12 | Transit | Walk/transfer, Hankyu Umeda -> JR Osaka Stn |
+| 08:35 | 0h19 | Transit | Osaka -> Osakajokoen, JR Osaka Loop Line |
+| 08:54 | 0h11 | Transit | Walk to Osaka Castle Park entrance |
+| 09:05 | 0h50 | Activity | Osaka Castle main tower (elevator to 5F; top two floors are stairs-only, so we skip them with the stroller) |
+| 09:55 | 0h30 | Activity | Nishinomaru Garden |
+| 10:25 | 0h45 | Activity | Osaka Museum of History (elevator-accessible) |
+| 11:10 | 0h50 | Food | Lunch at JO-TERRACE Osaka (castle park dining complex) |
+| 12:00 | 1h45 | Rest | Midday rest, castle park lawn |
+| 13:45 | 0h11 | Transit | Walk to Osakajokoen Stn |
+| 13:56 | 0h19 | Transit | Osakajokoen -> Osaka, JR Osaka Loop Line |
+| 14:15 | 0h12 | Transit | Walk to Umeda Sky Building |
+| 14:27 | 0h40 | Activity | Umeda Sky Building, Floating Garden Observatory |
+| 15:07 | 0h15 | Transit | Walk to Hankyu Umeda |
+| 15:22 | 0h43 | Transit | Osaka-Umeda -> Omiya, Hankyu Kyoto Line limited express |
+| 16:05 | 0h05 | Transit | Walk to hotel |
+| 16:10 | 1h50 | Rest | Free time / rest at hotel |
+| 18:00 | 0h10 | Transit | Walk to dinner spot |
+| 18:10 | 0h50 | Food | Dinner, local okonomiyaki restaurant near Shijo-Omiya |
+| 19:00 | 0h10 | Transit | Walk back to hotel |
+| 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
 - Being back at the hotel by 16:05 keeps dinner local rather than in Osaka, so the
   two infants aren't out past dark on a travel-heavy day.
 
 ### Lodging
 
-**Toyoko Inn Kyoto Shijo-Omiya** - ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥19,000 (= $122.58) | Night 9 of 10
-
+**Night:** 9 of 10
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -295,30 +304,31 @@ Under-6 admission is free at all four stops; figures above are adult fares only.
 
 ## Day 23 - Thursday, October 29, 2026 - Kyoto (low-key day + packing)
 
-**Base:** Kyoto | **Weather (typical):** 21-25/15 °C, pre-peak foliage
+**Base:** Kyoto
+**Weather (typical):** 21-25/15 °C, pre-peak foliage
 **Theme:** The deliberately quiet day: no day trip. Nishijin, a Kamo riverbank walk, a neighbourhood sento, and an early night. Day 24 is the move to Hiroshima.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Breakfast at Toyoko Inn buffet (included) | Food |
-| 07:30 | 1h00 | Free morning / start packing | Admin |
-| 08:30 | 0h12 | Hotel -> Nishijin, Kyoto city bus | Transit |
-| 08:42 | 1h00 | Nishijin Textile Center kimono show + neighbourhood walk | Activity |
-| 09:42 | 0h45 | Lunch, local soba/udon shop, Nishijin | Food |
-| 10:27 | 0h30 | Walk toward the Kamo riverbank | Transit |
-| 10:57 | 1h30 | Kamo riverbank walk / park time | Activity |
-| 12:27 | 0h18 | Riverbank area -> Hotel, Kyoto city bus | Transit |
-| 12:45 | 2h00 | Midday rest at hotel (nap) | Rest |
-| 14:45 | 1h00 | Free time / continue packing | Admin |
-| 15:45 | 0h45 | Local sento (public bath) visit | Activity |
-| 16:30 | 1h00 | Free time / relax at hotel | Rest |
-| 17:30 | 0h10 | Walk to dinner spot | Transit |
-| 17:40 | 1h00 | Farewell Kyoto dinner near Shijo-Omiya | Food |
-| 18:40 | 0h10 | Walk back to hotel | Transit |
-| 18:50 | 1h40 | Finish packing for the Day 24 departure to Hiroshima | Admin |
-| 20:30 | 0h30 | Bath/bedtime routine, early night | Admin |
+| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
+| 07:30 | 1h00 | Admin | Free morning / start packing |
+| 08:30 | 0h12 | Transit | Hotel -> Nishijin, Kyoto city bus |
+| 08:42 | 1h00 | Activity | Nishijin Textile Center kimono show + neighbourhood walk |
+| 09:42 | 0h45 | Food | Lunch, local soba/udon shop, Nishijin |
+| 10:27 | 0h30 | Transit | Walk toward the Kamo riverbank |
+| 10:57 | 1h30 | Activity | Kamo riverbank walk / park time |
+| 12:27 | 0h18 | Transit | Riverbank area -> Hotel, Kyoto city bus |
+| 12:45 | 2h00 | Rest | Midday rest at hotel (nap) |
+| 14:45 | 1h00 | Admin | Free time / continue packing |
+| 15:45 | 0h45 | Activity | Local sento (public bath) visit |
+| 16:30 | 1h00 | Rest | Free time / relax at hotel |
+| 17:30 | 0h10 | Transit | Walk to dinner spot |
+| 17:40 | 1h00 | Food | Farewell Kyoto dinner near Shijo-Omiya |
+| 18:40 | 0h10 | Transit | Walk back to hotel |
+| 18:50 | 1h40 | Admin | Finish packing for the Day 24 departure to Hiroshima |
+| 20:30 | 0h30 | Admin | Bath/bedtime routine, early night |
 
 - The intentionally light day this segment's pacing rule calls for after three
   straight day trips: no distant travel, two rest blocks, packing spread across
@@ -326,9 +336,11 @@ Under-6 admission is free at all four stops; figures above are adult fares only.
 
 ### Lodging
 
-**Toyoko Inn Kyoto Shijo-Omiya** - ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥19,000 (= $122.58) | Night 10 of 10
-
+**Night:** 10 of 10
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |

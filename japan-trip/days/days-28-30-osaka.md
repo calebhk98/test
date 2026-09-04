@@ -1,6 +1,7 @@
 ## Day 28 - Tuesday, November 3, 2026 - Osaka
 
-**Base:** Osaka | **Weather (typical):** 17°C / 10°C, dry
+**Base:** Osaka
+**Weather (typical):** 17°C / 10°C, dry
 **Theme:** Culture Day, the final valid day of the JR Kansai-Hiroshima Area Pass (day trip to Kobe), and opening night of the Midosuji illumination
 
 **Culture Day precision:** Nov 3 is Bunka no Hi (Culture Day). Only the **National Museum of Art, Osaka** is confirmed free that date. This is NOT blanket free admission across Osaka museums - a lot of "free museum" listicles are actually describing **Kansai Culture Day, Nov 15-16**, which falls after this trip departs (Day 30 is Nov 5). Every other paid site below is charged at its normal rate.
@@ -9,36 +10,38 @@
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0:45 | Breakfast buffet at hotel (included) | Food |
-| 08:15 | 0:10 | Namba Stn -> Yodoyabashi Stn (Osaka Metro Midosuji Line) | Transit |
-| 08:25 | 0:10 | Walk to National Museum of Art, Osaka (Nakanoshima) | Transit |
-| 08:35 | 0:50 | National Museum of Art, Osaka - free entry for Culture Day | Activity |
-| 09:25 | 0:15 | Walk/subway back to Osaka/Umeda Stn (Midosuji Line) | Transit |
-| 09:40 | 0:25 | Osaka Stn -> Kobe-Sannomiya Stn (JR Kobe Line Special Rapid; JR Kansai-Hiroshima Area Pass, final valid day) | Transit |
-| 10:05 | 0:10 | Sannomiya Stn -> Kitano (Kobe City Loop Bus, avoids the hill climb with infants) | Transit |
-| 10:15 | 0:50 | Kitano Ijinkan district - exterior walk (Weathercock House and other former foreign residences); hilly, carrier recommended over stroller | Activity |
-| 11:05 | 0:45 | Lunch: street stalls at Nankinmachi (Kobe Chinatown) | Food |
-| 11:50 | 0:30 | Meriken Park waterfront - flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside | Activity |
-| 12:20 | 0:15 | Walk Meriken Park -> Sannomiya Stn | Transit |
-| 12:35 | 0:25 | Kobe-Sannomiya Stn -> Osaka Stn (JR Special Rapid, pass) | Transit |
-| 13:00 | 0:15 | Osaka/Umeda Stn -> Namba Stn (Midosuji Line) | Transit |
-| 13:15 | 2:00 | Midday rest at hotel | Rest |
-| 17:15 | 0:15 | Walk hotel -> Dotonbori (Ebisubashi) | Transit |
-| 17:30 | 0:40 | Dinner: takoyaki + okonomiyaki from Dotonbori stalls | Food |
-| 18:10 | 0:15 | Walk to Midosuji Avenue | Transit |
-| 18:25 | 0:45 | Midosuji "Hikari no Kyoen" illumination - opening night, free to walk | Activity |
-| 19:10 | 0:15 | Walk back to hotel | Transit |
-| 19:25 | - | Return to hotel, infants down | Lodging |
+| 07:30 | 0:45 | Food | Breakfast buffet at hotel (included) |
+| 08:15 | 0:10 | Transit | Namba Stn -> Yodoyabashi Stn (Osaka Metro Midosuji Line) |
+| 08:25 | 0:10 | Transit | Walk to National Museum of Art, Osaka (Nakanoshima) |
+| 08:35 | 0:50 | Activity | National Museum of Art, Osaka - free entry for Culture Day |
+| 09:25 | 0:15 | Transit | Walk/subway back to Osaka/Umeda Stn (Midosuji Line) |
+| 09:40 | 0:25 | Transit | Osaka Stn -> Kobe-Sannomiya Stn (JR Kobe Line Special Rapid; JR Kansai-Hiroshima Area Pass, final valid day) |
+| 10:05 | 0:10 | Transit | Sannomiya Stn -> Kitano (Kobe City Loop Bus, avoids the hill climb with infants) |
+| 10:15 | 0:50 | Activity | Kitano Ijinkan district - exterior walk (Weathercock House and other former foreign residences); hilly, carrier recommended over stroller |
+| 11:05 | 0:45 | Food | Lunch: street stalls at Nankinmachi (Kobe Chinatown) |
+| 11:50 | 0:30 | Activity | Meriken Park waterfront - flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside |
+| 12:20 | 0:15 | Transit | Walk Meriken Park -> Sannomiya Stn |
+| 12:35 | 0:25 | Transit | Kobe-Sannomiya Stn -> Osaka Stn (JR Special Rapid, pass) |
+| 13:00 | 0:15 | Transit | Osaka/Umeda Stn -> Namba Stn (Midosuji Line) |
+| 13:15 | 2:00 | Rest | Midday rest at hotel |
+| 17:15 | 0:15 | Transit | Walk hotel -> Dotonbori (Ebisubashi) |
+| 17:30 | 0:40 | Food | Dinner: takoyaki + okonomiyaki from Dotonbori stalls |
+| 18:10 | 0:15 | Transit | Walk to Midosuji Avenue |
+| 18:25 | 0:45 | Activity | Midosuji "Hikari no Kyoen" illumination - opening night, free to walk |
+| 19:10 | 0:15 | Transit | Walk back to hotel |
+| 19:25 | - | Lodging | Return to hotel, infants down |
 
 Active out-of-lodging time: ~7h10 (morning museum-plus-Kobe circuit ~5h, evening dinner-plus-illumination ~2h10), either side of a 2h rest block at the hotel. Flagged in the brief as a deliberately full day; still holds one solid midday rest.
 
 ### Lodging
 
-**Toyoko Inn Osaka Namba** - Namba area (specific branch address unverified)
-Unit: one twin (2 adults + 2 infants) + one single (3rd adult) | Nightly: ¥13,000 (= $83.87) | Night 2 of 3
-
+**Night:** 2 of 3
+**Hotel:** Toyoko Inn Osaka Namba
+**Address:** Namba area (specific branch address unverified)
+**Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)
+**Nightly:** ¥13,000 (= $83.87)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -86,37 +89,40 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ## Day 29 - Wednesday, November 4, 2026 - Osaka
 
-**Base:** Osaka | **Weather (typical):** 17°C / 10°C, dry
+**Base:** Osaka
+**Weather (typical):** 17°C / 10°C, dry
 **Theme:** Central Osaka on foot and by metro - castle, market, retro tower, canal - the trip's last full day
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0:45 | Breakfast buffet at hotel (included) | Food |
-| 08:15 | 0:20 | Namba Stn -> Tanimachi 4-chome Stn (Osaka Metro, one transfer) | Transit |
-| 08:35 | 1:40 | Osaka Castle Park + keep (park free, keep paid; infants free) | Activity |
-| 10:15 | 1:30 | Midday rest in Osaka Castle Park (shaded lawn, stroller nap) | Rest |
-| 11:45 | 0:20 | Tanimachi 4-chome Stn -> Nippombashi Stn (Kuromon Ichiba) | Transit |
-| 12:05 | 0:55 | Lunch grazing at Kuromon Ichiba Market | Food |
-| 13:00 | 0:25 | Walk Kuromon Ichiba -> Shinsekai | Transit |
-| 13:25 | 0:50 | Shinsekai walk + Tsutenkaku Tower observation deck | Activity |
-| 14:15 | 0:20 | Shinsekai -> Namba/Dotonbori (Osaka Metro) | Transit |
-| 14:35 | 0:30 | Dotonbori canal-side walk, Glico sign | Activity |
-| 15:05 | 0:30 | Tombori River Cruise, Dotonbori canal | Activity |
-| 15:35 | 0:15 | Walk to hotel | Transit |
-| 15:50 | 1:40 | Downtime at hotel | Rest |
-| 17:45 | 0:45 | Dinner: kushikatsu | Food |
-| 18:30 | 0:15 | Walk back to hotel | Transit |
-| 18:45 | - | Return to hotel, infants down | Lodging |
+| 07:30 | 0:45 | Food | Breakfast buffet at hotel (included) |
+| 08:15 | 0:20 | Transit | Namba Stn -> Tanimachi 4-chome Stn (Osaka Metro, one transfer) |
+| 08:35 | 1:40 | Activity | Osaka Castle Park + keep (park free, keep paid; infants free) |
+| 10:15 | 1:30 | Rest | Midday rest in Osaka Castle Park (shaded lawn, stroller nap) |
+| 11:45 | 0:20 | Transit | Tanimachi 4-chome Stn -> Nippombashi Stn (Kuromon Ichiba) |
+| 12:05 | 0:55 | Food | Lunch grazing at Kuromon Ichiba Market |
+| 13:00 | 0:25 | Transit | Walk Kuromon Ichiba -> Shinsekai |
+| 13:25 | 0:50 | Activity | Shinsekai walk + Tsutenkaku Tower observation deck |
+| 14:15 | 0:20 | Transit | Shinsekai -> Namba/Dotonbori (Osaka Metro) |
+| 14:35 | 0:30 | Activity | Dotonbori canal-side walk, Glico sign |
+| 15:05 | 0:30 | Activity | Tombori River Cruise, Dotonbori canal |
+| 15:35 | 0:15 | Transit | Walk to hotel |
+| 15:50 | 1:40 | Rest | Downtime at hotel |
+| 17:45 | 0:45 | Food | Dinner: kushikatsu |
+| 18:30 | 0:15 | Transit | Walk back to hotel |
+| 18:45 | - | Lodging | Return to hotel, infants down |
 
 Active out-of-lodging time: ~6h50 across two blocks (morning castle + midday rest in the park, afternoon market/tower/canal circuit + evening dinner), plus a second downtime block at the hotel. Well under the 7h cap for the last full day.
 
 ### Lodging
 
-**Toyoko Inn Osaka Namba** - Namba area (specific branch address unverified)
-Unit: one twin (2 adults + 2 infants) + one single (3rd adult) | Nightly: ¥13,000 (= $83.87) | Night 3 of 3
-
+**Night:** 3 of 3
+**Hotel:** Toyoko Inn Osaka Namba
+**Address:** Namba area (specific branch address unverified)
+**Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)
+**Nightly:** ¥13,000 (= $83.87)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -163,23 +169,24 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ## Day 30 - Thursday, November 5, 2026 - Osaka -> Kansai Airport (KIX)
 
-**Base:** Osaka, departing | **Weather (typical):** 17°C / 10°C, dry
+**Base:** Osaka, departing
+**Weather (typical):** 17°C / 10°C, dry
 **Theme:** Departure - Namba to Kansai Airport on the Nankai line, buffered for international check-in with a party of five
 
 The **JR Kansai-Hiroshima Area Pass expired at the end of Day 28 (Nov 3)**, so today's fare is paid in full. The **Nankai Airport Line rapid express** (¥930/adult, ¥2,790 for the party, ~45 min) is used rather than the JR Haruka, which runs roughly double that per adult for the same trip - Nankai is both cheaper and requires no reservation. International check-in at KIX wants about 3 hours ahead of departure for a party this size with a stroller and checked bags, so that buffer is built into the schedule below rather than assumed.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0:45 | Final breakfast buffet at hotel (included) | Food |
-| 08:15 | 0:45 | Pack up, hotel checkout | Admin |
-| 09:00 | 0:15 | Walk hotel -> Nankai Namba Stn (stroller + bags) | Transit |
-| 09:15 | 0:45 | Namba Stn -> Kansai Airport Stn (Nankai Airport Line, rapid express) | Transit |
-| 10:00 | 0:15 | Arrive KIX, walk to check-in hall (Terminal 1) | Transit |
-| 10:15 | 2:45 | International check-in, bag drop, security, immigration - 3h buffer for party of 5 + stroller + checked bags; stroller gate-checked at boarding | Admin |
-| 13:00 | 0:30 | Light meal at airside food court before boarding | Food |
-| 13:30 | - | Board flight (airfare and in-flight meal not costed in this itinerary) | Admin |
+| 07:30 | 0:45 | Food | Final breakfast buffet at hotel (included) |
+| 08:15 | 0:45 | Admin | Pack up, hotel checkout |
+| 09:00 | 0:15 | Transit | Walk hotel -> Nankai Namba Stn (stroller + bags) |
+| 09:15 | 0:45 | Transit | Namba Stn -> Kansai Airport Stn (Nankai Airport Line, rapid express) |
+| 10:00 | 0:15 | Transit | Arrive KIX, walk to check-in hall (Terminal 1) |
+| 10:15 | 2:45 | Admin | International check-in, bag drop, security, immigration - 3h buffer for party of 5 + stroller + checked bags; stroller gate-checked at boarding |
+| 13:00 | 0:30 | Food | Light meal at airside food court before boarding |
+| 13:30 | - | Admin | Board flight (airfare and in-flight meal not costed in this itinerary) |
 
 Total time from hotel to boarding: ~4h30, comfortably under the 7h active cap - appropriate for a travel day with infants.
 

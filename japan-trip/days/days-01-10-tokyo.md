@@ -26,27 +26,28 @@ totals starting from ¥0 - no baseline adjustment needed.*
 
 ## Day 1 - Wednesday, October 7, 2026 - Tokyo (Narita arrival)
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, humid, light rain possible
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, humid, light rain possible
 **Theme:** Land at Narita, Keisei Access Express into Ueno, check in, one big kitchenette
 stock-up run, early night against jet lag with two infants.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 09:30 | 1h00 | Land NRT, immigration, baggage claim, customs | Admin |
-| 10:30 | 0h15 | Buy Keisei Access Express tickets, board | Admin |
-| 10:45 | 1h05 | Narita Airport -> Keisei-Ueno, Keisei Access Express | Transit |
-| 11:50 | 0h15 | Walk Keisei-Ueno Stn -> Hotel Livemax Higashi-Ueno | Transit |
-| 12:05 | 0h40 | Check-in, drop bags | Lodging |
-| 12:45 | 0h45 | Lunch near the hotel, Ueno | Food |
-| 13:30 | 1h45 | Rest / infant naps at the hotel | Rest |
-| 15:15 | 1h00 | Supermarket stock-up run (rice, eggs, milk, produce, pantry staples, initial infant food) - timed for the pre-closing hangaku markdown window on deli items | Food |
-| 16:15 | 0h30 | Walk back, unpack groceries | Admin |
-| 16:45 | 1h00 | Quiet stroller loop of the block, unwind | Rest |
-| 17:45 | 1h00 | Dinner - first self-catered meal at the kitchenette | Food |
-| 18:45 | 0h45 | Bath, wind-down | Admin |
-| 19:30 | - | Early night - lights out for both infants | Rest |
+| 09:30 | 1h00 | Admin | Land NRT, immigration, baggage claim, customs |
+| 10:30 | 0h15 | Admin | Buy Keisei Access Express tickets, board |
+| 10:45 | 1h05 | Transit | Narita Airport -> Keisei-Ueno, Keisei Access Express |
+| 11:50 | 0h15 | Transit | Walk Keisei-Ueno Stn -> Hotel Livemax Higashi-Ueno |
+| 12:05 | 0h40 | Lodging | Check-in, drop bags |
+| 12:45 | 0h45 | Food | Lunch near the hotel, Ueno |
+| 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 15:15 | 1h00 | Food | Supermarket stock-up run (rice, eggs, milk, produce, pantry staples, initial infant food) - timed for the pre-closing hangaku markdown window on deli items |
+| 16:15 | 0h30 | Admin | Walk back, unpack groceries |
+| 16:45 | 1h00 | Rest | Quiet stroller loop of the block, unwind |
+| 17:45 | 1h00 | Food | Dinner - first self-catered meal at the kitchenette |
+| 18:45 | 0h45 | Admin | Bath, wind-down |
+| 19:30 | - | Rest | Early night - lights out for both infants |
 
 - Stroller works fine throughout Day 1 - airport, wide station corridors, hotel.
 - This is a travel day, not a sightseeing day: the ~9h30-16:45 span is mostly immigration,
@@ -54,9 +55,11 @@ stock-up run, early night against jet lag with two infants.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 1 of 10
-
+**Night:** 1 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -96,27 +99,28 @@ No paid activities today - arrival, check-in, and settling in.
 
 ## Day 2 - Thursday, October 8, 2026 - Tokyo
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, humid, light rain possible
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, humid, light rain possible
 **Theme:** Senso-ji at a quieter morning hour, then Tokyo Solamachi - the aquarium and
 Skytree observatory are in the same complex, so the whole afternoon is one short walk.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:15 | 0h45 | Breakfast, self-catered at the hotel | Food |
-| 08:00 | 0h20 | Ueno -> Asakusa, Tokyo Metro Ginza Line | Transit |
-| 08:20 | 1h15 | Senso-ji - Kaminarimon, Nakamise-dori, main hall, five-story pagoda | Activity |
-| 09:35 | 0h15 | Walk along the Sumida riverside, cross Azumabashi Bridge to Skytree Town | Transit |
-| 09:50 | 1h00 | Sumida Aquarium (indoor, penguins/otters/jellyfish) | Activity |
-| 10:50 | 0h45 | Tokyo Skytree Tembo Deck (350m observatory) | Activity |
-| 11:35 | 0h45 | Lunch, Tokyo Solamachi food court, Sumida-ku | Food |
-| 12:20 | 0h20 | Return toward Ueno, Ginza Line | Transit |
-| 12:40 | 1h45 | Rest / infant naps at the hotel | Rest |
-| 14:25 | 1h00 | Light stroll, Ueno Park riverside edge (free, easy) | Rest |
-| 15:25 | - | Free downtime at the hotel | Rest |
-| 17:30 | 1h00 | Dinner, self-catered | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:15 | 0h45 | Food | Breakfast, self-catered at the hotel |
+| 08:00 | 0h20 | Transit | Ueno -> Asakusa, Tokyo Metro Ginza Line |
+| 08:20 | 1h15 | Activity | Senso-ji - Kaminarimon, Nakamise-dori, main hall, five-story pagoda |
+| 09:35 | 0h15 | Transit | Walk along the Sumida riverside, cross Azumabashi Bridge to Skytree Town |
+| 09:50 | 1h00 | Activity | Sumida Aquarium (indoor, penguins/otters/jellyfish) |
+| 10:50 | 0h45 | Activity | Tokyo Skytree Tembo Deck (350m observatory) |
+| 11:35 | 0h45 | Food | Lunch, Tokyo Solamachi food court, Sumida-ku |
+| 12:20 | 0h20 | Transit | Return toward Ueno, Ginza Line |
+| 12:40 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 14:25 | 1h00 | Rest | Light stroll, Ueno Park riverside edge (free, easy) |
+| 15:25 | - | Rest | Free downtime at the hotel |
+| 17:30 | 1h00 | Food | Dinner, self-catered |
+| 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for Senso-ji** - Nakamise-dori is genuinely dense by mid-morning
   with strollers hard to steer. Aquarium and Skytree are wide, level, elevator-served
@@ -125,9 +129,11 @@ Skytree observatory are in the same complex, so the whole afternoon is one short
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 2 of 10
-
+**Night:** 2 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -170,34 +176,37 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 ## Day 3 - Friday, October 9, 2026 - Tokyo
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, mild
 **Theme:** A near-hotel day - Ueno Zoo, Tokyo National Museum, Shinobazu Pond, Ameyoko -
 everything inside a 15-minute walk of the Livemax.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Breakfast, self-catered | Food |
-| 08:15 | 0h15 | Walk, hotel -> Ueno Park | Transit |
-| 08:30 | 1h15 | Ueno Zoo (pandas; stroller-friendly paths) | Activity |
-| 09:45 | 1h30 | Tokyo National Museum, incl. special exhibition | Activity |
-| 11:15 | 0h30 | Shinobazu Pond swan-boat rental | Activity |
-| 11:45 | 0h45 | Lunch, Ameyoko market food stalls | Food |
-| 12:30 | 1h45 | Rest / infant naps at the hotel | Rest |
-| 14:15 | 1h00 | Free browse, Ameyoko shops (no purchases counted) | Rest |
-| 15:15 | - | Downtime at the hotel | Rest |
-| 17:30 | 1h00 | Dinner, self-catered | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:30 | 0h45 | Food | Breakfast, self-catered |
+| 08:15 | 0h15 | Transit | Walk, hotel -> Ueno Park |
+| 08:30 | 1h15 | Activity | Ueno Zoo (pandas; stroller-friendly paths) |
+| 09:45 | 1h30 | Activity | Tokyo National Museum, incl. special exhibition |
+| 11:15 | 0h30 | Activity | Shinobazu Pond swan-boat rental |
+| 11:45 | 0h45 | Food | Lunch, Ameyoko market food stalls |
+| 12:30 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 14:15 | 1h00 | Rest | Free browse, Ameyoko shops (no purchases counted) |
+| 15:15 | - | Rest | Downtime at the hotel |
+| 17:30 | 1h00 | Food | Dinner, self-catered |
+| 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - No paid transit today - everything is a walk from the hotel.
 - Active out-of-lodging time: about 6h including the rest-adjacent browse hour.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 3 of 10
-
+**Night:** 3 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -239,24 +248,25 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ## Day 4 - Saturday, October 10, 2026 - Tokyo
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, mild
 **Theme:** The Imperial Palace East Gardens, free, plus one paid museum stop in Marunouchi.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Breakfast, self-catered | Food |
-| 08:15 | 0h20 | Ueno -> Otemachi, Tokyo Metro Chiyoda Line | Transit |
-| 08:35 | 1h30 | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation | Activity |
-| 10:05 | 0h15 | Walk to Marunouchi | Transit |
-| 10:20 | 1h00 | Mitsubishi Ichigokan Museum | Activity |
-| 11:20 | 0h45 | Lunch, Tokyo Ramen Street, Marunouchi | Food |
-| 12:05 | 1h45 | Rest / infant naps - head back toward Ueno or a quiet Marunouchi corner | Rest |
-| 13:50 | 0h20 | Otemachi -> Ueno, Tokyo Metro Chiyoda Line | Transit |
-| 14:10 | - | Downtime at the hotel | Rest |
-| 17:30 | 1h00 | Dinner, self-catered | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:30 | 0h45 | Food | Breakfast, self-catered |
+| 08:15 | 0h20 | Transit | Ueno -> Otemachi, Tokyo Metro Chiyoda Line |
+| 08:35 | 1h30 | Activity | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
+| 10:05 | 0h15 | Transit | Walk to Marunouchi |
+| 10:20 | 1h00 | Activity | Mitsubishi Ichigokan Museum |
+| 11:20 | 0h45 | Food | Lunch, Tokyo Ramen Street, Marunouchi |
+| 12:05 | 1h45 | Rest | Rest / infant naps - head back toward Ueno or a quiet Marunouchi corner |
+| 13:50 | 0h20 | Transit | Otemachi -> Ueno, Tokyo Metro Chiyoda Line |
+| 14:10 | - | Rest | Downtime at the hotel |
+| 17:30 | 1h00 | Food | Dinner, self-catered |
+| 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
   keep site. The rest of the East Gardens is flat gravel, stroller-fine.
@@ -268,9 +278,11 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 4 of 10
-
+**Night:** 4 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -312,26 +324,27 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 ## Day 5 - Sunday, October 11, 2026 - Tokyo
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, mild
 **Theme:** Meiji Jingu's forest approach, Yoyogi Park, then Shibuya Scramble and Shibuya
 Sky at golden hour - a fuller day than most, anchored by the mandatory rest block.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Breakfast, self-catered | Food |
-| 08:15 | 0h20 | Ueno -> Harajuku, JR Yamanote Line | Transit |
-| 08:35 | 1h15 | Meiji Jingu - main shrine grounds + Inner Garden | Activity |
-| 09:50 | 1h00 | Yoyogi Park - open lawns | Activity |
-| 10:50 | 0h25 | Walk, Harajuku/Yoyogi -> Shibuya via Omotesando | Transit |
-| 11:15 | 0h45 | Lunch, Sushiro, Shibuya | Food |
-| 12:00 | 1h45 | Rest / infant naps - quiet corner near Miyashita Park | Rest |
-| 13:45 | 0h30 | Shibuya Scramble Crossing + Hachiko statue | Activity |
-| 14:15 | 0h45 | Shibuya Sky observation deck (advance timed ticket) | Activity |
-| 15:00 | 1h15 | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) | Food |
-| 16:15 | 0h20 | Shibuya -> Ueno, Tokyo Metro Ginza Line | Transit |
-| 16:35 | - | Bath, wind-down | Admin |
+| 07:30 | 0h45 | Food | Breakfast, self-catered |
+| 08:15 | 0h20 | Transit | Ueno -> Harajuku, JR Yamanote Line |
+| 08:35 | 1h15 | Activity | Meiji Jingu - main shrine grounds + Inner Garden |
+| 09:50 | 1h00 | Activity | Yoyogi Park - open lawns |
+| 10:50 | 0h25 | Transit | Walk, Harajuku/Yoyogi -> Shibuya via Omotesando |
+| 11:15 | 0h45 | Food | Lunch, Sushiro, Shibuya |
+| 12:00 | 1h45 | Rest | Rest / infant naps - quiet corner near Miyashita Park |
+| 13:45 | 0h30 | Activity | Shibuya Scramble Crossing + Hachiko statue |
+| 14:15 | 0h45 | Activity | Shibuya Sky observation deck (advance timed ticket) |
+| 15:00 | 1h15 | Food | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
+| 16:15 | 0h20 | Transit | Shibuya -> Ueno, Tokyo Metro Ginza Line |
+| 16:35 | - | Admin | Bath, wind-down |
 
 - Stroller works fine at Meiji Jingu/Yoyogi Park (gravel, gentle grade). **Carrier
   recommended for the Scramble crossing itself** - crowd density, not terrain.
@@ -339,9 +352,11 @@ Sky at golden hour - a fuller day than most, anchored by the mandatory rest bloc
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 5 of 10
-
+**Night:** 5 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -387,27 +402,28 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 
 ## Day 6 - Monday, October 12, 2026 - Tokyo (Sports Day)
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild - a 3-day-weekend holiday, so
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, mild - a 3-day-weekend holiday, so
 the major sights (Senso-ji, Shibuya, Harajuku) are busier than usual today
 **Theme:** Deliberately low-crowd and free - the old backstreets of Yanaka and Nezu,
 away from the holiday crowds.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Breakfast, self-catered | Food |
-| 08:15 | 0h10 | Hotel -> Nezu Shrine, Tokyo Metro Chiyoda Line | Transit |
-| 08:25 | 0h45 | Nezu Shrine grounds (azalea garden fee is seasonal only, skipped today) | Activity |
-| 09:10 | 1h00 | Yanaka Ginza shopping street - senbei, menchi-katsu, cat-themed shopfronts | Activity |
-| 10:10 | 0h50 | Yanaka Cemetery walk (quiet, tree-lined) | Activity |
-| 11:00 | 0h30 | Walk back toward Ueno via Yanaka backstreets | Transit |
-| 11:30 | 0h45 | Lunch, Yanaka Ginza street food | Food |
-| 12:15 | 1h45 | Rest / infant naps at the hotel | Rest |
-| 14:00 | 1h00 | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere | Rest |
-| 15:00 | - | Downtime | Rest |
-| 17:30 | 1h00 | Dinner, self-catered | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:30 | 0h45 | Food | Breakfast, self-catered |
+| 08:15 | 0h10 | Transit | Hotel -> Nezu Shrine, Tokyo Metro Chiyoda Line |
+| 08:25 | 0h45 | Activity | Nezu Shrine grounds (azalea garden fee is seasonal only, skipped today) |
+| 09:10 | 1h00 | Activity | Yanaka Ginza shopping street - senbei, menchi-katsu, cat-themed shopfronts |
+| 10:10 | 0h50 | Activity | Yanaka Cemetery walk (quiet, tree-lined) |
+| 11:00 | 0h30 | Transit | Walk back toward Ueno via Yanaka backstreets |
+| 11:30 | 0h45 | Food | Lunch, Yanaka Ginza street food |
+| 12:15 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 14:00 | 1h00 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
+| 15:00 | - | Rest | Downtime |
+| 17:30 | 1h00 | Food | Dinner, self-catered |
+| 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for Yanaka Cemetery** - uneven paved paths, not stroller terrain.
   Yanaka Ginza itself is flat and stroller-friendly if kept to off-peak hours.
@@ -415,9 +431,11 @@ away from the holiday crowds.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 6 of 10
-
+**Night:** 6 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -461,29 +479,30 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 
 ## Day 7 - Tuesday, October 13, 2026 - Kamakura (day trip)
 
-**Base:** Tokyo (day trip) | **Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo
+**Base:** Tokyo (day trip)
+**Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo
 **Theme:** Great Buddha, Hase-dera, the Enoden coastal railway, Yuigahama beach.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast, self-catered (early start) | Food |
-| 07:45 | 0h15 | Walk to Ueno Stn | Transit |
-| 08:00 | 1h00 | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) | Transit |
-| 09:00 | 0h10 | Buy Enoden "Noriorikun" 1-day pass, Kamakura Stn | Admin |
-| 09:10 | 0h15 | Kamakura -> Hase, Enoden | Transit |
-| 09:25 | 1h00 | Kotoku-in - the Great Buddha (Daibutsu) | Activity |
-| 10:25 | 0h35 | Hase-dera | Activity |
-| 11:00 | 0h30 | Walk down to Yuigahama Beach | Activity |
-| 11:30 | 0h45 | Lunch, Komachi-dori area, Kamakura | Food |
-| 12:15 | 0h15 | Hase -> Kamakura, Enoden | Transit |
-| 12:30 | 1h45 | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) | Rest |
-| 14:15 | 1h00 | Kamakura -> Ueno, JR | Transit |
-| 15:15 | 1h00 | Downtime at the hotel | Rest |
-| 16:15 | - | Free time | Rest |
-| 17:30 | 1h00 | Dinner - hangaku-discounted bento (tired evening after a long day) | Food |
-| 18:30 | 0h45 | Bath, early night | Admin |
+| 07:00 | 0h45 | Food | Breakfast, self-catered (early start) |
+| 07:45 | 0h15 | Transit | Walk to Ueno Stn |
+| 08:00 | 1h00 | Transit | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) |
+| 09:00 | 0h10 | Admin | Buy Enoden "Noriorikun" 1-day pass, Kamakura Stn |
+| 09:10 | 0h15 | Transit | Kamakura -> Hase, Enoden |
+| 09:25 | 1h00 | Activity | Kotoku-in - the Great Buddha (Daibutsu) |
+| 10:25 | 0h35 | Activity | Hase-dera |
+| 11:00 | 0h30 | Activity | Walk down to Yuigahama Beach |
+| 11:30 | 0h45 | Food | Lunch, Komachi-dori area, Kamakura |
+| 12:15 | 0h15 | Transit | Hase -> Kamakura, Enoden |
+| 12:30 | 1h45 | Rest | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) |
+| 14:15 | 1h00 | Transit | Kamakura -> Ueno, JR |
+| 15:15 | 1h00 | Rest | Downtime at the hotel |
+| 16:15 | - | Rest | Free time |
+| 17:30 | 1h00 | Food | Dinner - hangaku-discounted bento (tired evening after a long day) |
+| 18:30 | 0h45 | Admin | Bath, early night |
 
 - **Carrier only for Hase-dera** - the temple's terraced garden has steep stairs; the
   compact stroller does not work there. The stroller is fine on Yuigahama's flat sand
@@ -498,9 +517,11 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 7 of 10
-
+**Night:** 7 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -544,26 +565,27 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ## Day 8 - Wednesday, October 14, 2026 - Tokyo (Odaiba / Toyosu)
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild, waterfront breeze
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, mild, waterfront breeze
 **Theme:** The segment's marquee paid day - teamLab Planets - paired with a free
 waterfront stroll at Odaiba.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Breakfast, self-catered | Food |
-| 08:15 | 0h20 | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line | Transit |
-| 08:35 | 0h25 | Shimbashi -> Odaiba Kaihinkoen, Yurikamome | Transit |
-| 09:00 | 1h00 | Odaiba Marine Park beach + Rainbow Bridge view | Activity |
-| 10:00 | 0h25 | Odaiba -> Shin-Toyosu, Yurikamome | Transit |
-| 10:25 | 1h30 | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) | Activity |
-| 11:55 | 0h45 | Lunch, Toyosu food court/market area | Food |
-| 12:40 | 1h45 | Rest / infant naps - quiet corner at Toyosu | Rest |
-| 14:25 | 0h45 | Shimbashi -> Ueno via Yurikamome + JR | Transit |
-| 15:10 | - | Downtime at the hotel | Rest |
-| 17:30 | 1h00 | Dinner, self-catered | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:30 | 0h45 | Food | Breakfast, self-catered |
+| 08:15 | 0h20 | Transit | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line |
+| 08:35 | 0h25 | Transit | Shimbashi -> Odaiba Kaihinkoen, Yurikamome |
+| 09:00 | 1h00 | Activity | Odaiba Marine Park beach + Rainbow Bridge view |
+| 10:00 | 0h25 | Transit | Odaiba -> Shin-Toyosu, Yurikamome |
+| 10:25 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
+| 11:55 | 0h45 | Food | Lunch, Toyosu food court/market area |
+| 12:40 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
+| 14:25 | 0h45 | Transit | Shimbashi -> Ueno via Yurikamome + JR |
+| 15:10 | - | Rest | Downtime at the hotel |
+| 17:30 | 1h00 | Food | Dinner, self-catered |
+| 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - Both stops are flat, wide, stroller-friendly (teamLab Planets is barefoot indoors -
   the stroller waits at the entrance locker area).
@@ -571,9 +593,11 @@ waterfront stroll at Odaiba.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 8 of 10
-
+**Night:** 8 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -617,30 +641,31 @@ Adult kcal: 500 + 700 + 800 = **2,000**.
 
 ## Day 9 - Thursday, October 15, 2026 - Yokohama (day trip)
 
-**Base:** Tokyo (day trip) | **Weather (typical):** 22-24/15 °C, harbor breeze
+**Base:** Tokyo (day trip)
+**Weather (typical):** 22-24/15 °C, harbor breeze
 **Theme:** Minato Mirai's waterfront skyline, Cup Noodles Museum, Chinatown, Sankeien's
 traditional garden.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast, self-catered (early start) | Food |
-| 07:45 | 0h15 | Walk to Ueno Stn | Transit |
-| 08:00 | 0h40 | Ueno -> Yokohama, JR Keihin-Tohoku Line | Transit |
-| 08:40 | 0h10 | Yokohama -> Minato Mirai, Minato Mirai Line | Transit |
-| 08:50 | 1h00 | Cup Noodles Museum, incl. My CUPNOODLES Factory hands-on | Activity |
-| 09:50 | 0h35 | Landmark Tower Sky Garden observation deck | Activity |
-| 10:25 | 0h20 | Minato Mirai -> Motomachi-Chukagai (Chinatown), Minato Mirai Line | Transit |
-| 10:45 | 0h45 | Lunch, Yokohama Chinatown sit-down set course | Food |
-| 11:30 | 0h20 | Chinatown -> Sankeien, bus | Transit |
-| 11:50 | 1h30 | Sankeien Garden | Activity |
-| 13:20 | 0h20 | Sankeien -> Yokohama Stn, bus | Transit |
-| 13:40 | 1h45 | Rest / infant naps near Yokohama Stn, continuing on the JR ride back | Rest |
-| 15:25 | 0h40 | Yokohama -> Ueno, JR Keihin-Tohoku Line | Transit |
-| 16:05 | - | Downtime at the hotel | Rest |
-| 17:30 | 1h00 | Dinner, self-catered - fresh seafood/produce picked up in Yokohama | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:00 | 0h45 | Food | Breakfast, self-catered (early start) |
+| 07:45 | 0h15 | Transit | Walk to Ueno Stn |
+| 08:00 | 0h40 | Transit | Ueno -> Yokohama, JR Keihin-Tohoku Line |
+| 08:40 | 0h10 | Transit | Yokohama -> Minato Mirai, Minato Mirai Line |
+| 08:50 | 1h00 | Activity | Cup Noodles Museum, incl. My CUPNOODLES Factory hands-on |
+| 09:50 | 0h35 | Activity | Landmark Tower Sky Garden observation deck |
+| 10:25 | 0h20 | Transit | Minato Mirai -> Motomachi-Chukagai (Chinatown), Minato Mirai Line |
+| 10:45 | 0h45 | Food | Lunch, Yokohama Chinatown sit-down set course |
+| 11:30 | 0h20 | Transit | Chinatown -> Sankeien, bus |
+| 11:50 | 1h30 | Activity | Sankeien Garden |
+| 13:20 | 0h20 | Transit | Sankeien -> Yokohama Stn, bus |
+| 13:40 | 1h45 | Rest | Rest / infant naps near Yokohama Stn, continuing on the JR ride back |
+| 15:25 | 0h40 | Transit | Yokohama -> Ueno, JR Keihin-Tohoku Line |
+| 16:05 | - | Rest | Downtime at the hotel |
+| 17:30 | 1h00 | Food | Dinner, self-catered - fresh seafood/produce picked up in Yokohama |
+| 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended at Sankeien** - some garden paths and bridges have steps; the
   main approach paths are stroller-passable. Minato Mirai and Chinatown are flat.
@@ -650,9 +675,11 @@ traditional garden.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 9 of 10
-
+**Night:** 9 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -700,27 +727,28 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 
 ## Day 10 - Friday, October 16, 2026 - Tokyo
 
-**Base:** Tokyo | **Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo
+**Weather (typical):** 22-24/15 °C, mild
 **Theme:** A quiet park morning at Shinjuku Gyoen, the Ghibli Museum in Mitaka in the
 afternoon, and light packing for tomorrow's move to Kawaguchiko.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h40 | Breakfast, self-catered - using up the last of the Day 1 pantry stock | Food |
-| 08:10 | 0h25 | Ueno -> Shinjuku, JR/Tokyo Metro | Transit |
-| 08:35 | 1h45 | Shinjuku Gyoen (doubles as the midday rest - shaded lawns, low stimulation) | Activity |
-| 10:20 | 0h45 | Lunch, Ichiran ramen, Shinjuku | Food |
-| 11:05 | 0h15 | Shinjuku -> Mitaka, JR Chuo Line | Transit |
-| 11:20 | 1h30 | Ghibli Museum (timed-entry slot) | Activity |
-| 12:50 | 0h35 | Inokashira Park + small zoo/aquarium corner, adjacent to the museum | Activity |
-| 13:25 | 0h45 | Mitaka -> Ueno, JR Chuo Line + transfer | Transit |
-| 14:10 | 1h00 | Downtime at the hotel | Rest |
-| 15:10 | 1h30 | Light packing prep for tomorrow's move to Kawaguchiko | Admin |
-| 16:40 | - | Free time | Rest |
-| 17:30 | 1h00 | Dinner, self-catered - last Ueno meal | Food |
-| 18:30 | 0h45 | Bath, wind-down | Admin |
+| 07:30 | 0h40 | Food | Breakfast, self-catered - using up the last of the Day 1 pantry stock |
+| 08:10 | 0h25 | Transit | Ueno -> Shinjuku, JR/Tokyo Metro |
+| 08:35 | 1h45 | Activity | Shinjuku Gyoen (doubles as the midday rest - shaded lawns, low stimulation) |
+| 10:20 | 0h45 | Food | Lunch, Ichiran ramen, Shinjuku |
+| 11:05 | 0h15 | Transit | Shinjuku -> Mitaka, JR Chuo Line |
+| 11:20 | 1h30 | Activity | Ghibli Museum (timed-entry slot) |
+| 12:50 | 0h35 | Activity | Inokashira Park + small zoo/aquarium corner, adjacent to the museum |
+| 13:25 | 0h45 | Transit | Mitaka -> Ueno, JR Chuo Line + transfer |
+| 14:10 | 1h00 | Rest | Downtime at the hotel |
+| 15:10 | 1h30 | Admin | Light packing prep for tomorrow's move to Kawaguchiko |
+| 16:40 | - | Rest | Free time |
+| 17:30 | 1h00 | Food | Dinner, self-catered - last Ueno meal |
+| 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended inside the Ghibli Museum** - the building has a spiral staircase
   and no strollers are permitted indoors; the stroller can be left folded at the entrance.
@@ -740,9 +768,11 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
 
 ### Lodging
 
-**Hotel Livemax Higashi-Ueno** - 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 10 of 10
-
+**Night:** 10 of 10
+**Hotel:** Hotel Livemax Higashi-Ueno
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |

@@ -4,39 +4,42 @@
 
 ## Day 11 - Saturday, October 17, 2026 - Tokyo → Kawaguchiko
 
-**Base:** Tokyo (AM) → Kawaguchiko (PM/evening) | **Weather (typical):** Tokyo 21-24/15°C (AM) → Kawaguchiko 17-19/6-10°C (PM, night frost possible)
+**Base:** Tokyo (AM) → Kawaguchiko (PM/evening)
+**Weather (typical):** Tokyo 21-24/15°C (AM) → Kawaguchiko 17-19/6-10°C (PM, night frost possible)
 **Theme:** Half travel day - Higashi-Ueno to Fuji Five Lakes by highway bus, first evening in Fuji country.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast at Livemax (use up kitchenette stock) | Food |
-| 07:45 | 0h15 | Final pack, check out of Hotel Livemax Higashi-Ueno | Admin |
-| 08:00 | 0h35 | Iriya/Ueno area → Shinjuku Stn, JR Yamanote Line (stroller + luggage, allow real time) | Transit |
-| 08:35 | 0h25 | Walk to Busta Shinjuku terminal, buy eki-ben lunch for the ride | Food |
-| 09:00 | 0h50 | Reserved-seat check-in and boarding queue at Busta Shinjuku (bus boards early for luggage) | Admin |
-| 09:50 | 1h45 | Shinjuku (Busta) → Kawaguchiko Stn, highway bus (Fujikyu/Keio, reserved seats) - lunch eaten on board | Transit |
-| 11:35 | 0h15 | Walk, Kawaguchiko Stn → K's House Mt. Fuji (~15 min, near Ogi bus stop) | Transit |
-| 11:50 | 0h20 | Check in, settle bags | Admin |
-| 12:10 | 1h30 | **Midday rest block** - nap/feed, unpack, warm up | Rest |
-| 13:40 | 0h20 | Local Kawaguchiko town bus to Kawaguchiko Music Forest Museum (north shore) | Transit |
-| 14:00 | 1h15 | Kawaguchiko Music Forest Museum - garden + music box hall, gentle indoor/outdoor mix | Activity |
-| 15:15 | 0h20 | Local bus back toward town, stop at supermarket | Transit |
-| 15:35 | 0h45 | Grocery run at a Kawaguchiko Station-area supermarket, stock the shared kitchen | Food |
-| 16:20 | 1h00 | Free time / laundry (K's House washer-dryer, ¥500/load - trip-level line, not in day total) | Admin |
-| 17:20 | 0h10 | Short lakeside walk near the lodging | Activity |
-| 17:30 | 1h00 | Cook dinner in shared guest kitchen | Food |
-| 18:30 | 0h30 | Dinner | Food |
-| 19:00 | 1h00 | Bath, warm layers on for the infants (frost risk overnight), wind down | Rest |
+| 07:00 | 0h45 | Food | Breakfast at Livemax (use up kitchenette stock) |
+| 07:45 | 0h15 | Admin | Final pack, check out of Hotel Livemax Higashi-Ueno |
+| 08:00 | 0h35 | Transit | Iriya/Ueno area → Shinjuku Stn, JR Yamanote Line (stroller + luggage, allow real time) |
+| 08:35 | 0h25 | Food | Walk to Busta Shinjuku terminal, buy eki-ben lunch for the ride |
+| 09:00 | 0h50 | Admin | Reserved-seat check-in and boarding queue at Busta Shinjuku (bus boards early for luggage) |
+| 09:50 | 1h45 | Transit | Shinjuku (Busta) → Kawaguchiko Stn, highway bus (Fujikyu/Keio, reserved seats) - lunch eaten on board |
+| 11:35 | 0h15 | Transit | Walk, Kawaguchiko Stn → K's House Mt. Fuji (~15 min, near Ogi bus stop) |
+| 11:50 | 0h20 | Admin | Check in, settle bags |
+| 12:10 | 1h30 | Rest | **Midday rest block** - nap/feed, unpack, warm up |
+| 13:40 | 0h20 | Transit | Local Kawaguchiko town bus to Kawaguchiko Music Forest Museum (north shore) |
+| 14:00 | 1h15 | Activity | Kawaguchiko Music Forest Museum - garden + music box hall, gentle indoor/outdoor mix |
+| 15:15 | 0h20 | Transit | Local bus back toward town, stop at supermarket |
+| 15:35 | 0h45 | Food | Grocery run at a Kawaguchiko Station-area supermarket, stock the shared kitchen |
+| 16:20 | 1h00 | Admin | Free time / laundry (K's House washer-dryer, ¥500/load - trip-level line, not in day total) |
+| 17:20 | 0h10 | Activity | Short lakeside walk near the lodging |
+| 17:30 | 1h00 | Food | Cook dinner in shared guest kitchen |
+| 18:30 | 0h30 | Food | Dinner |
+| 19:00 | 1h00 | Rest | Bath, warm layers on for the infants (frost risk overnight), wind down |
 
 Active out-of-lodging time: ~5h55 (well under the 7h cap) - a genuinely light day once the bus ride itself is out of the way.
 
 ### Lodging
 
-**K's House Mt. Fuji** - nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
-Unit: 2-room split - 1 twin (2 adults + 2 infants, co-sleeping) + 1 single (3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 1 of 3
-
+**Night:** 1 of 3
+**Hotel:** K's House Mt. Fuji
+**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants, co-sleeping) + 1 single (3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -82,30 +85,31 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 
 ## Day 12 - Sunday, October 18, 2026 - Kawaguchiko
 
-**Base:** Kawaguchiko | **Weather (typical):** 17-19/6-10°C, night frost possible; mornings are the reliable window for a clear Mt. Fuji, afternoons cloud over
+**Base:** Kawaguchiko
+**Weather (typical):** 17-19/6-10°C, night frost possible; mornings are the reliable window for a clear Mt. Fuji, afternoons cloud over
 **Theme:** North-shore Fuji day - Oishi Park, Tenjozan Ropeway, a short lake cruise, and Kubota Itchiku's kimono art in the afternoon clouds.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Breakfast in the shared kitchen | Food |
-| 07:30 | 0h20 | Walk/local bus to the Fuji Five Lakes sightseeing bus stop; buy the 2-day Red/Green/Blue Line pass | Transit |
-| 07:50 | 0h25 | Kawaguchiko Stn → Oishi Park, Fuji Five Lakes Red Line bus | Transit |
-| 08:15 | 1h00 | Oishi Park - north-shore lake + Fuji views while the morning is still clear (best window before afternoon cloud) | Activity |
-| 09:15 | 0h15 | Red Line bus to the ropeway base station | Transit |
-| 09:30 | 1h00 | Kawaguchiko Tenjozan Panoramic Ropeway round trip + summit viewpoint | Activity |
-| 10:30 | 0h20 | Red Line bus to the sightseeing-cruise pier | Transit |
-| 10:50 | 0h40 | Lake Kawaguchi sightseeing cruise (~20 min ride + boarding) | Activity |
-| 11:30 | 0h30 | Red Line bus back toward town | Transit |
-| 12:00 | 1h00 | Lunch - houtou noodles (Yamanashi regional specialty) | Food |
-| 13:00 | 1h30 | **Midday rest block** back at K's House | Rest |
-| 14:30 | 1h30 | Kubota Itchiku Art Museum - kimono art + garden, a good indoor-leaning stop for the cloudier afternoon | Activity |
-| 16:00 | 0h30 | Bus back to K's House | Transit |
-| 16:30 | 1h00 | Free time, infant wind-down | Rest |
-| 17:30 | 1h00 | Cook dinner in the shared kitchen | Food |
-| 18:30 | 0h30 | Dinner | Food |
-| 19:00 | 1h00 | Bath, bedtime routine, warm layers for the night | Rest |
+| 07:00 | 0h30 | Food | Breakfast in the shared kitchen |
+| 07:30 | 0h20 | Transit | Walk/local bus to the Fuji Five Lakes sightseeing bus stop; buy the 2-day Red/Green/Blue Line pass |
+| 07:50 | 0h25 | Transit | Kawaguchiko Stn → Oishi Park, Fuji Five Lakes Red Line bus |
+| 08:15 | 1h00 | Activity | Oishi Park - north-shore lake + Fuji views while the morning is still clear (best window before afternoon cloud) |
+| 09:15 | 0h15 | Transit | Red Line bus to the ropeway base station |
+| 09:30 | 1h00 | Activity | Kawaguchiko Tenjozan Panoramic Ropeway round trip + summit viewpoint |
+| 10:30 | 0h20 | Transit | Red Line bus to the sightseeing-cruise pier |
+| 10:50 | 0h40 | Activity | Lake Kawaguchi sightseeing cruise (~20 min ride + boarding) |
+| 11:30 | 0h30 | Transit | Red Line bus back toward town |
+| 12:00 | 1h00 | Food | Lunch - houtou noodles (Yamanashi regional specialty) |
+| 13:00 | 1h30 | Rest | **Midday rest block** back at K's House |
+| 14:30 | 1h30 | Activity | Kubota Itchiku Art Museum - kimono art + garden, a good indoor-leaning stop for the cloudier afternoon |
+| 16:00 | 0h30 | Transit | Bus back to K's House |
+| 16:30 | 1h00 | Rest | Free time, infant wind-down |
+| 17:30 | 1h00 | Food | Cook dinner in the shared kitchen |
+| 18:30 | 0h30 | Food | Dinner |
+| 19:00 | 1h00 | Rest | Bath, bedtime routine, warm layers for the night |
 
 Active out-of-lodging time: ~7h00 (at the cap - the midday rest block returns fully to the lodging, so it doesn't count against it).
 
@@ -115,9 +119,11 @@ Active out-of-lodging time: ~7h00 (at the cap - the midday rest block returns fu
 
 ### Lodging
 
-**K's House Mt. Fuji** - nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
-Unit: 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 2 of 3
-
+**Night:** 2 of 3
+**Hotel:** K's House Mt. Fuji
+**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -160,27 +166,28 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
 ## Day 13 - Monday, October 19, 2026 - Kawaguchiko
 
-**Base:** Kawaguchiko | **Weather (typical):** 17-19/6-10°C, night frost possible
+**Base:** Kawaguchiko
+**Weather (typical):** 17-19/6-10°C, night frost possible
 **Theme:** West shore - Oshino Hakkai's spring-fed ponds and Saiko Iyashi-no-Sato's thatched village, private onsen in the evening.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Breakfast in the shared kitchen | Food |
-| 07:30 | 0h30 | Kawaguchiko Stn → Oshino Hakkai, Fuji Five Lakes Green Line bus | Transit |
-| 08:00 | 2h00 | Oshino Hakkai - walk the spring-fed pond village (free), visit one paid garden pond (Nigori-ike) | Activity |
-| 10:00 | 0h45 | Lunch - soba/udon at a shop within Oshino Hakkai | Food |
-| 10:45 | 0h30 | Green Line bus back toward Kawaguchiko | Transit |
-| 11:15 | 1h45 | **Midday rest block** back at K's House | Rest |
-| 13:00 | 0h30 | Kawaguchiko Stn → Saiko Iyashi-no-Sato Nenba, Green Line bus | Transit |
-| 13:30 | 1h15 | Saiko Iyashi-no-Sato Nenba - thatched-roof village, craft workshops, flat and easy underfoot | Activity |
-| 14:45 | 0h30 | Green Line bus back to Kawaguchiko | Transit |
-| 15:15 | 1h45 | Free time at the lodging, warm layers on for the evening chill | Rest |
-| 17:00 | 0h45 | Cook dinner in the shared kitchen | Food |
-| 17:45 | 0h30 | Dinner | Food |
-| 18:15 | 0h45 | Walk to/from and soak at a Kawaguchiko onsen offering a private family bath (kashikiri), whole party incl. both infants | Activity |
-| 19:00 | 1h00 | Bath/bedtime routine for the infants | Rest |
+| 07:00 | 0h30 | Food | Breakfast in the shared kitchen |
+| 07:30 | 0h30 | Transit | Kawaguchiko Stn → Oshino Hakkai, Fuji Five Lakes Green Line bus |
+| 08:00 | 2h00 | Activity | Oshino Hakkai - walk the spring-fed pond village (free), visit one paid garden pond (Nigori-ike) |
+| 10:00 | 0h45 | Food | Lunch - soba/udon at a shop within Oshino Hakkai |
+| 10:45 | 0h30 | Transit | Green Line bus back toward Kawaguchiko |
+| 11:15 | 1h45 | Rest | **Midday rest block** back at K's House |
+| 13:00 | 0h30 | Transit | Kawaguchiko Stn → Saiko Iyashi-no-Sato Nenba, Green Line bus |
+| 13:30 | 1h15 | Activity | Saiko Iyashi-no-Sato Nenba - thatched-roof village, craft workshops, flat and easy underfoot |
+| 14:45 | 0h30 | Transit | Green Line bus back to Kawaguchiko |
+| 15:15 | 1h45 | Rest | Free time at the lodging, warm layers on for the evening chill |
+| 17:00 | 0h45 | Food | Cook dinner in the shared kitchen |
+| 17:45 | 0h30 | Food | Dinner |
+| 18:15 | 0h45 | Activity | Walk to/from and soak at a Kawaguchiko onsen offering a private family bath (kashikiri), whole party incl. both infants |
+| 19:00 | 1h00 | Rest | Bath/bedtime routine for the infants |
 
 Active out-of-lodging time: ~6h15 (under the 7h cap); everything today is flat, easy walking - no strenuous stairs or trails.
 
@@ -188,9 +195,11 @@ Active out-of-lodging time: ~6h15 (under the 7h cap); everything today is flat, 
 
 ### Lodging
 
-**K's House Mt. Fuji** - nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
-Unit: 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult) | Nightly: ¥18,000 (= $116.13) | Night 3 of 3
-
+**Night:** 3 of 3
+**Hotel:** K's House Mt. Fuji
+**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -237,29 +246,30 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
 ## Day 14 - Tuesday, October 20, 2026 - Kawaguchiko → Kyoto
 
-**Base:** Kawaguchiko (AM) → Kyoto (PM/evening) | **Weather (typical):** Kawaguchiko 17-19/6-10°C (AM, frost possible) → Kyoto 21-25/15°C (PM/evening)
+**Base:** Kawaguchiko (AM) → Kyoto (PM/evening)
+**Weather (typical):** Kawaguchiko 17-19/6-10°C (AM, frost possible) → Kyoto 21-25/15°C (PM/evening)
 **Theme:** Full transfer day - bus to Mishima, unreserved Hikari onward to Kyoto.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Breakfast - last kitchen meal, use up the pantry | Food |
-| 07:30 | 0h30 | Pack up, settle the bill and laundry, check out of K's House | Admin |
-| 08:00 | 0h15 | Walk to the Kawaguchiko Stn bus terminal (~15 min, luggage) | Transit |
-| 08:15 | 0h30 | Reserved-seat check-in, board | Admin |
-| 08:45 | 1h25 | Kawaguchiko → Mishima Stn, Mishima-Kawaguchiko Liner (Fujikyu, all seats reserved) | Transit |
-| 10:10 | 0h15 | Buy eki-ben lunch at Mishima Stn | Food |
-| 10:25 | 0h20 | Transfer to the shinkansen platform (buffer within the recommended 20-30 min) | Admin |
-| 10:45 | 1h50 | Mishima → Kyoto, Tokaido Shinkansen Hikari, unreserved - lunch eaten on board | Transit |
-| 12:35 | 0h25 | Arrive Kyoto Stn, find the bus to Shijo-Omiya | Admin |
-| 13:00 | 0h20 | Kyoto Stn → Shijo-Omiya, Kyoto City Bus | Transit |
-| 13:20 | 0h20 | Walk to Toyoko Inn Kyoto Shijo-Omiya, check in | Admin |
-| 13:40 | 1h50 | **Midday rest block** - infants nap after a long transit morning | Rest |
-| 15:30 | 1h00 | Gentle neighbourhood walk near Shijo-Omiya/Omiya Stn to get oriented - free | Activity |
-| 16:30 | 1h00 | Free time at the hotel | Rest |
-| 17:30 | 1h00 | Dinner - cheap chain near Shijo-Omiya; pick up a few breakfast snacks on the way back | Food |
-| 18:30 | 0h30 | Settle in, bath, bedtime routine | Rest |
+| 07:00 | 0h30 | Food | Breakfast - last kitchen meal, use up the pantry |
+| 07:30 | 0h30 | Admin | Pack up, settle the bill and laundry, check out of K's House |
+| 08:00 | 0h15 | Transit | Walk to the Kawaguchiko Stn bus terminal (~15 min, luggage) |
+| 08:15 | 0h30 | Admin | Reserved-seat check-in, board |
+| 08:45 | 1h25 | Transit | Kawaguchiko → Mishima Stn, Mishima-Kawaguchiko Liner (Fujikyu, all seats reserved) |
+| 10:10 | 0h15 | Food | Buy eki-ben lunch at Mishima Stn |
+| 10:25 | 0h20 | Admin | Transfer to the shinkansen platform (buffer within the recommended 20-30 min) |
+| 10:45 | 1h50 | Transit | Mishima → Kyoto, Tokaido Shinkansen Hikari, unreserved - lunch eaten on board |
+| 12:35 | 0h25 | Admin | Arrive Kyoto Stn, find the bus to Shijo-Omiya |
+| 13:00 | 0h20 | Transit | Kyoto Stn → Shijo-Omiya, Kyoto City Bus |
+| 13:20 | 0h20 | Admin | Walk to Toyoko Inn Kyoto Shijo-Omiya, check in |
+| 13:40 | 1h50 | Rest | **Midday rest block** - infants nap after a long transit morning |
+| 15:30 | 1h00 | Activity | Gentle neighbourhood walk near Shijo-Omiya/Omiya Stn to get oriented - free |
+| 16:30 | 1h00 | Rest | Free time at the hotel |
+| 17:30 | 1h00 | Food | Dinner - cheap chain near Shijo-Omiya; pick up a few breakfast snacks on the way back |
+| 18:30 | 0h30 | Rest | Settle in, bath, bedtime routine |
 
 Active out-of-lodging time runs to roughly 7h20 today - over the usual ~7h guideline, but this is the itinerary's one full intercity transfer day: the fixed bus + shinkansen leg alone is ~4h before any buffers, exactly as scoped in the brief ("Total travel day ~4 hours plus buffers"). No sightseeing exertion is stacked on top of it; the neighbourhood walk after the rest block is optional and easy to shorten.
 
@@ -267,9 +277,11 @@ Toyoko Inn Kyoto Shijo-Omiya's free breakfast buffet starts tomorrow (Day 15) - 
 
 ### Lodging
 
-**Toyoko Inn Kyoto Shijo-Omiya** - ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-Unit: 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult) | Nightly: ¥19,000 (= $122.58) | Night 1 of 10
-
+**Night:** 1 of 10
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |

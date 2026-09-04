@@ -10,37 +10,40 @@ up once the actual Day 1-23 files exist.*
 
 ## Day 24 - Friday, October 30, 2026 - Kyoto to Hiroshima
 
-**Base:** Hiroshima (arriving) | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) - pack a light rain layer
+**Base:** Hiroshima (arriving)
+**Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) - pack a light rain layer
 **Theme:** Shinkansen from Kyoto to Hiroshima; buy the JR Kansai-Hiroshima Area Pass; an easy arrival evening at Peace Memorial Park.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast at Toyoko Inn Kyoto Shijo-Omiya (included, last morning) | Food |
-| 07:45 | 0h30 | Pack up, check out of Toyoko Inn Kyoto Shijo-Omiya | Admin |
-| 08:15 | 0h20 | Omiya-eki-mae -> Kyoto Stn, Kyoto city bus | Transit |
-| 08:35 | 0h25 | Kyoto Stn: buy JR Kansai-Hiroshima Area Pass (5-day) at the Midori-no-Madoguchi ticket office | Admin |
-| 09:00 | 0h20 | Wait, find platform | Admin |
-| 09:20 | 1h40 | Kyoto -> Hiroshima, Sanyo Shinkansen (Hikari/Sakura, unreserved car) | Transit |
-| 11:00 | 0h35 | Arrive Hiroshima Stn, collect bags/stroller, walk to hotel | Transit |
-| 11:35 | 0h25 | Check in, Toyoko Inn Hiroshima Ekimae Ohashi Minami | Admin |
-| 12:00 | 1h00 | Lunch near Hiroshima Stn | Food |
-| 13:00 | 1h45 | Rest / infant naps at hotel | Rest |
-| 14:45 | 0h15 | Hotel -> Peace Memorial Park, Hiroden streetcar | Transit |
-| 15:00 | 1h15 | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free | Activity |
-| 16:15 | 0h45 | Dinner near Peace Park / Hondori arcade | Food |
-| 17:00 | 0h20 | Walk/streetcar back to hotel | Transit |
-| 17:20 | - | Evening at hotel, infants down | Rest |
+| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Kyoto Shijo-Omiya (included, last morning) |
+| 07:45 | 0h30 | Admin | Pack up, check out of Toyoko Inn Kyoto Shijo-Omiya |
+| 08:15 | 0h20 | Transit | Omiya-eki-mae -> Kyoto Stn, Kyoto city bus |
+| 08:35 | 0h25 | Admin | Kyoto Stn: buy JR Kansai-Hiroshima Area Pass (5-day) at the Midori-no-Madoguchi ticket office |
+| 09:00 | 0h20 | Admin | Wait, find platform |
+| 09:20 | 1h40 | Transit | Kyoto -> Hiroshima, Sanyo Shinkansen (Hikari/Sakura, unreserved car) |
+| 11:00 | 0h35 | Transit | Arrive Hiroshima Stn, collect bags/stroller, walk to hotel |
+| 11:35 | 0h25 | Admin | Check in, Toyoko Inn Hiroshima Ekimae Ohashi Minami |
+| 12:00 | 1h00 | Food | Lunch near Hiroshima Stn |
+| 13:00 | 1h45 | Rest | Rest / infant naps at hotel |
+| 14:45 | 0h15 | Transit | Hotel -> Peace Memorial Park, Hiroden streetcar |
+| 15:00 | 1h15 | Activity | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free |
+| 16:15 | 0h45 | Food | Dinner near Peace Park / Hondori arcade |
+| 17:00 | 0h20 | Transit | Walk/streetcar back to hotel |
+| 17:20 | - | Rest | Evening at hotel, infants down |
 
 - Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
   light evening walk. Total out-of-lodging active time stays close to the ~7h cap.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 1 of 3
-
+**Night:** 1 of 3
+**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami
+**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥15,000 (= $96.77)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -88,32 +91,33 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ## Day 25 - Saturday, October 31, 2026 - Miyajima (Itsukushima)
 
-**Base:** Hiroshima | **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg)
+**Base:** Hiroshima
+**Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg)
 **Theme:** A full day trip to Miyajima - shrine, aquarium, and the Mt. Misen ropeway, all covered
 by the rail pass beyond the island admissions.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast at Toyoko Inn Hiroshima (included) | Food |
-| 07:45 | 0h15 | Hotel -> Hiroshima Stn, walk | Transit |
-| 08:00 | 0h25 | Hiroshima Stn -> Miyajimaguchi Stn, JR Sanyo Line local | Transit |
-| 08:25 | 0h20 | Miyajimaguchi pier -> Miyajima pier, JR Miyajima ferry | Transit |
-| 08:45 | 1h00 | Itsukushima Shrine + floating torii viewing | Activity |
-| 09:45 | 0h30 | Itsukushima Treasure Hall | Activity |
-| 10:15 | 0h45 | Miyajima Public Aquarium | Activity |
-| 11:00 | 0h45 | Lunch on Miyajima (anago-meshi / grilled oyster) | Food |
-| 11:45 | 1h45 | Rest / infant naps, Momijidani Park (shaded, benches, free) | Rest |
-| 13:30 | 1h15 | Miyajima Ropeway round trip (2 adults only - see note) | Activity |
-| 14:45 | 0h15 | Regroup, walk to ferry pier | Transit |
-| 15:00 | 0h20 | Miyajima pier -> Miyajimaguchi pier, JR ferry | Transit |
-| 15:20 | 0h25 | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local | Transit |
-| 15:45 | 0h15 | Hiroshima Stn -> hotel, walk | Transit |
-| 16:00 | 0h50 | Downtime at hotel | Rest |
-| 16:50 | 1h10 | Wind down before dinner | Rest |
-| 18:00 | 1h00 | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) | Food |
-| 19:00 | - | Return to hotel, infants down | Rest |
+| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Hiroshima (included) |
+| 07:45 | 0h15 | Transit | Hotel -> Hiroshima Stn, walk |
+| 08:00 | 0h25 | Transit | Hiroshima Stn -> Miyajimaguchi Stn, JR Sanyo Line local |
+| 08:25 | 0h20 | Transit | Miyajimaguchi pier -> Miyajima pier, JR Miyajima ferry |
+| 08:45 | 1h00 | Activity | Itsukushima Shrine + floating torii viewing |
+| 09:45 | 0h30 | Activity | Itsukushima Treasure Hall |
+| 10:15 | 0h45 | Activity | Miyajima Public Aquarium |
+| 11:00 | 0h45 | Food | Lunch on Miyajima (anago-meshi / grilled oyster) |
+| 11:45 | 1h45 | Rest | Rest / infant naps, Momijidani Park (shaded, benches, free) |
+| 13:30 | 1h15 | Activity | Miyajima Ropeway round trip (2 adults only - see note) |
+| 14:45 | 0h15 | Transit | Regroup, walk to ferry pier |
+| 15:00 | 0h20 | Transit | Miyajima pier -> Miyajimaguchi pier, JR ferry |
+| 15:20 | 0h25 | Transit | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local |
+| 15:45 | 0h15 | Transit | Hiroshima Stn -> hotel, walk |
+| 16:00 | 0h50 | Rest | Downtime at hotel |
+| 16:50 | 1h10 | Rest | Wind down before dinner |
+| 18:00 | 1h00 | Food | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) |
+| 19:00 | - | Rest | Return to hotel, infants down |
 
 - Check tide times for the floating torii nearer the date - at high tide it stands in the water
   (the classic photo), at low tide you can walk out to it across the sand. Either is worthwhile,
@@ -129,9 +133,11 @@ by the rail pass beyond the island admissions.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 2 of 3
-
+**Night:** 2 of 3
+**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami
+**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥15,000 (= $96.77)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -182,30 +188,31 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 ## Day 26 - Sunday, November 1, 2026 - Hiroshima city day
 
-**Base:** Hiroshima | **Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) - noticeably cooler than the last two days; add a layer
+**Base:** Hiroshima
+**Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) - noticeably cooler than the last two days; add a layer
 **Theme:** Peace Memorial Park and Museum, handled with care given two infants in the party, then
 Shukkei-en garden and Hiroshima Castle.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast at Toyoko Inn Hiroshima (included) | Food |
-| 07:45 | 0h15 | Hotel -> Genbaku Dome-mae, Hiroden streetcar | Transit |
-| 08:00 | 0h45 | Atomic Bomb Dome + Motoyasu riverside walk, free | Activity |
-| 08:45 | 1h15 | Peace Memorial Museum (party splits - see note) | Activity |
-| 10:00 | 0h35 | Hiroshima Orizuru Tower (observation deck + paper-crane fold) | Activity |
-| 10:35 | 0h45 | Lunch, Hondori arcade | Food |
-| 11:20 | 0h15 | Walk/streetcar back to hotel | Transit |
-| 11:35 | 1h40 | Rest / infant naps at hotel | Rest |
-| 13:15 | 0h15 | Hotel -> Shukkei-en, Hiroden streetcar | Transit |
-| 13:30 | 1h00 | Shukkei-en garden | Activity |
-| 14:30 | 0h15 | Walk, Shukkei-en -> Hiroshima Castle | Transit |
-| 14:45 | 0h45 | Hiroshima Castle (grounds + keep) | Activity |
-| 15:30 | 0h20 | Castle -> hotel, Hiroden streetcar | Transit |
-| 15:50 | 1h40 | Downtime at hotel | Rest |
-| 17:30 | 1h00 | Dinner near hotel | Food |
-| 18:30 | - | Evening at hotel, infants down | Rest |
+| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Hiroshima (included) |
+| 07:45 | 0h15 | Transit | Hotel -> Genbaku Dome-mae, Hiroden streetcar |
+| 08:00 | 0h45 | Activity | Atomic Bomb Dome + Motoyasu riverside walk, free |
+| 08:45 | 1h15 | Activity | Peace Memorial Museum (party splits - see note) |
+| 10:00 | 0h35 | Activity | Hiroshima Orizuru Tower (observation deck + paper-crane fold) |
+| 10:35 | 0h45 | Food | Lunch, Hondori arcade |
+| 11:20 | 0h15 | Transit | Walk/streetcar back to hotel |
+| 11:35 | 1h40 | Rest | Rest / infant naps at hotel |
+| 13:15 | 0h15 | Transit | Hotel -> Shukkei-en, Hiroden streetcar |
+| 13:30 | 1h00 | Activity | Shukkei-en garden |
+| 14:30 | 0h15 | Transit | Walk, Shukkei-en -> Hiroshima Castle |
+| 14:45 | 0h45 | Activity | Hiroshima Castle (grounds + keep) |
+| 15:30 | 0h20 | Transit | Castle -> hotel, Hiroden streetcar |
+| 15:50 | 1h40 | Rest | Downtime at hotel |
+| 17:30 | 1h00 | Food | Dinner near hotel |
+| 18:30 | - | Rest | Evening at hotel, infants down |
 
 - **The Peace Memorial Museum's content is heavy**, and the lower-floor personal-effects exhibits
   are especially confronting. With two infants in the party, consider splitting: one or two adults
@@ -218,9 +225,11 @@ Shukkei-en garden and Hiroshima Castle.
 
 ### Lodging
 
-**Toyoko Inn Hiroshima Ekimae Ohashi Minami** - central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥15,000 (= $96.77) | Night 3 of 3
-
+**Night:** 3 of 3
+**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami
+**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥15,000 (= $96.77)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
@@ -269,39 +278,42 @@ infants ride free.
 
 ## Day 27 - Monday, November 2, 2026 - Hiroshima to Osaka
 
-**Base:** Hiroshima -> Osaka (Namba) | **Weather (typical):** Hiroshima 17.7/8.9 °C -> Osaka 17/10 °C (JMA, Nov avg)
+**Base:** Hiroshima -> Osaka (Namba)
+**Weather (typical):** Hiroshima 17.7/8.9 °C -> Osaka 17/10 °C (JMA, Nov avg)
 **Theme:** Travel day: shinkansen to Shin-Osaka, transfer to Namba, check in, a light first evening
 at Dotonbori.
 
 ### Schedule
 
-| Time | Duration | Item | Type |
+| Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Breakfast at Toyoko Inn Hiroshima (included, checkout morning) | Food |
-| 07:45 | 0h30 | Pack up, check out | Admin |
-| 08:15 | 0h15 | Hotel -> Hiroshima Stn, walk | Transit |
-| 08:30 | 1h30 | Hiroshima -> Shin-Osaka, Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) | Transit |
-| 10:00 | 0h20 | Transfer at Shin-Osaka, collect bags/stroller | Admin |
-| 10:20 | 0h20 | Shin-Osaka -> Namba, Osaka Metro Midosuji Line | Transit |
-| 10:40 | 0h20 | Namba Stn -> Toyoko Inn Osaka Namba, walk | Transit |
-| 11:00 | 0h30 | Check in, drop bags | Admin |
-| 11:30 | 1h00 | Lunch near Namba | Food |
-| 12:30 | 1h45 | Rest / infant naps at hotel | Rest |
-| 14:15 | 0h20 | Hotel -> Dotonbori, walk | Transit |
-| 14:35 | 0h45 | Dotonbori canal-side walk, free (Glico sign, arcade browsing) | Activity |
-| 15:20 | 0h20 | Tombori River Cruise | Activity |
-| 15:40 | 1h00 | Dinner in Dotonbori (takoyaki + light bites) | Food |
-| 16:40 | 0h20 | Walk back to hotel | Transit |
-| 17:00 | - | Evening at hotel, infants down | Rest |
+| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Hiroshima (included, checkout morning) |
+| 07:45 | 0h30 | Admin | Pack up, check out |
+| 08:15 | 0h15 | Transit | Hotel -> Hiroshima Stn, walk |
+| 08:30 | 1h30 | Transit | Hiroshima -> Shin-Osaka, Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) |
+| 10:00 | 0h20 | Admin | Transfer at Shin-Osaka, collect bags/stroller |
+| 10:20 | 0h20 | Transit | Shin-Osaka -> Namba, Osaka Metro Midosuji Line |
+| 10:40 | 0h20 | Transit | Namba Stn -> Toyoko Inn Osaka Namba, walk |
+| 11:00 | 0h30 | Admin | Check in, drop bags |
+| 11:30 | 1h00 | Food | Lunch near Namba |
+| 12:30 | 1h45 | Rest | Rest / infant naps at hotel |
+| 14:15 | 0h20 | Transit | Hotel -> Dotonbori, walk |
+| 14:35 | 0h45 | Activity | Dotonbori canal-side walk, free (Glico sign, arcade browsing) |
+| 15:20 | 0h20 | Activity | Tombori River Cruise |
+| 15:40 | 1h00 | Food | Dinner in Dotonbori (takoyaki + light bites) |
+| 16:40 | 0h20 | Transit | Walk back to hotel |
+| 17:00 | - | Rest | Evening at hotel, infants down |
 
 - Day span 07:00-17:00 (10h), with the shinkansen leg seated and low-stress and a 1h45 midday
   rest block at the new hotel before the evening outing.
 
 ### Lodging
 
-**Toyoko Inn Osaka Namba** - Namba area (specific branch address unverified)
-Unit: 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult) | Nightly: ¥13,000 (= $83.87) | Night 1 of 3
-
+**Night:** 1 of 3
+**Hotel:** Toyoko Inn Osaka Namba
+**Address:** Namba area (specific branch address unverified)
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Nightly:** ¥13,000 (= $83.87)
 ### Meals
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
