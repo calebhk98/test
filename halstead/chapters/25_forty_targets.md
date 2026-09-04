@@ -4,29 +4,29 @@
 
 Sam likes the Army immediately.
 
-The bus from the reception battalion reaches the company area well after dark in the first week of August, by which time the lights over the door are pulling moths off the training area for a mile around. A drill sergeant reads surnames off a clipboard in an order only the clipboard understands, and Sam, first off the bus, first to have his arms full of bedding, spends twenty minutes occupying a spot he is eventually told to stop occupying.
+The bus from the reception depot reaches the company area well after dark in the first week of August, by which time the lights over the door are pulling moths off the training area for a mile around. A drill sergeant reads surnames off a clipboard in an order only the clipboard understands, and Sam, first off the bus, first with his arms full of bedding, spends twenty minutes standing in a spot he is later told to leave.
 
 That night he falls asleep to the rest of the bay discovering their racks all at once, then wakes before the lights, and the bay in the dark is a footrace.
 
 The schedule he has had since childhood, and lost over the summer, reappears on the second day, laminated and screwed to the wall beside the doorway.
 
-Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no visible interest in owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on every blanket by eye from across the aisle, stopping finally at Sam's.
+Drill Sergeant Ruiz has a voice built for open ground and shows no sign of owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on every blanket by eye from across the aisle, stopping finally at Sam's.
 
 "Marsh. What is this supposed to be?"
 
 "Blanket, Drill Sergeant."
 
-Ruiz takes the whole arrangement onto the floor with a single pull, straightens up, then delivers the two syllables he delivers to everybody. "Again."
+Ruiz pulls the blanket onto the floor with a single pull, stands up, then says the two words he says to everyone. "Again."
 
-Sam does it again, whereupon it is wrong again in a different place, and it continues to be wrong day after day, by which time the rest of the bay has quietly stopped finding it entertaining. A private named Okoro, brothers in the Guard, arrived already familiar with most of it, eventually makes his own rack at half speed alongside so Sam can copy the sequence of the folds. After that it takes Sam about ninety seconds, which puts him in the back half of the platoon, roughly where he remains for the duration.
+Sam does it again, and it is wrong again in a different place, and it stays wrong day after day, until the rest of the bay stops finding it funny. A private named Okoro, brothers in the Guard, already knows most of it, and makes his own rack at half speed next to Sam so Sam can copy the folds. After that it takes Sam about ninety seconds, which puts him in the back half of the platoon, roughly where he remains.
 
 "I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
 
-"He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off. The water is a privilege the bay forfeited on Tuesday, with no immediate prospect of recovering it.
+"He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off. The water is a privilege the bay lost on Tuesday, with no sign of getting it back soon.
 
 "He walked off the second time with his mouth shut, though. That's the good version of it."
 
-Okoro considers this proposition for a second, evidently decides against it, and returns to his jaw.
+Okoro thinks it over for a second, decides against it, and goes back to his jaw.
 
 By the end of the first week Sam has asked a succession of people how long the entire programme runs, all of them have answered twenty-two weeks, but a couple of them have been stopped cold by the question he asks afterward.
 
