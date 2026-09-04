@@ -88,7 +88,7 @@ theo: i could write this. its the thing i do all day
 
 theo: and my name cant be anywhere on a document that sets out how to get round the law i get paid to enforce
 
-So it goes to Chloe.
+So the job falls to Chloe.
 
 Eli builds the entry itself as he built the first, in small pieces that look unremarkable on their own. Kavi builds the exit, meaning whatever erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching, and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
 
@@ -96,13 +96,13 @@ The test runs five weeks. For most of them the tool sits somewhere only Eli and 
 
 Eli spends the run of it badly slept but mostly cheerful, a couple of shirts in rotation and the same breakfast every morning, because deciding costs something he'd rather spend elsewhere. Kavi spends it in his own chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
 
-Chloe turns twenty-one in August, two months after the last page goes in, and it gets mentioned once and then not again. There is no clean place for a birthday next to a document about federal sentencing exposure.
+Chloe turns twenty-one in August, two months after she adds the last page, and it gets mentioned once and then not again. There is no clean place for a birthday next to a document about federal sentencing exposure.
 
 Chloe spends most of that stretch at her own kitchen counter, most nights, the coffee going cold before she remembers it's there. What she has once it's finished, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule everybody reads twice, that any of them can end it, no vote and no argument, and the rest have one hour to comply.
 
 The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be.
 
-The middle section she rewrites, and then rewrites what she rewrote. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, a stranger shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. The line goes in twice, in different words each time, because she knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
+The middle section she rewrites, and then rewrites what she rewrote. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, a stranger shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She puts the line in twice, in different words each time, because she knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
 
 The stop clause is exactly one line and no examples, on purpose. Any one of them can end it, and the ending starts the moment it's invoked: no vote, no reason attached.
 

@@ -128,7 +128,7 @@ The next part he reads the way a form gets read.
 
 The major looks at him, then writes on the top sheet, unhurried. The room gets the sound of the pen, the projector fan, no comment whatever. Then he turns the page.
 
-"Night four. The man who took you had been in position since twenty-one hundred, which is seven hours without moving through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop, and no amount of being good at the rest of this changes that arithmetic, because patience was the only thing being tested tonight. I have watched two hundred of you fail that exact test, and every single one of you thought your case was the exception." He puts the pointer down on the overlay and leaves it lying there while he locates his next page.
+"Night four. The man who took you had been in position since twenty-one hundred, which is seven hours without moving through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop, and no amount of being good at the rest of this changes that arithmetic, because patience was the only thing being tested tonight. I have watched two hundred of you fail that exact test, and every single one of you thought your case was the exception." He drops the pointer onto the overlay and leaves it lying there while he locates his next page.
 
 "Any questions," the major says at the end, closing the clipboard.
 

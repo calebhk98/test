@@ -10,7 +10,7 @@ People keep asking who works with her. The question shows up as a comment under 
 
 Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then the thread goes quiet. She adds each one to the same sheet she started in February, and by the following winter it runs to a dozen rows, none of them ever willing to say what outlet or company they write for when she asks in return. There's no next move available for rows with no name attached, so she leaves the sheet open on a second tab and keeps working the piece she's actually writing.
 
-By the winter she's writing most nights well past midnight, laptop balanced on her knees on the couch, the day's translation work already closed out and a browser full of tabs in three languages open around the piece she's actually working on; a currency story that takes a stack of sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes but not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
+By the winter she's writing most nights well past midnight, laptop balanced on her knees on the couch, the day's translation work closed out and a browser full of tabs in three languages open around the piece she's actually working on; a currency story that takes a stack of sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes but not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
 
 She's also carrying a full course load and the translation job, but none of it registers as a load.
 
@@ -20,7 +20,7 @@ Hebrew is the second year's, and it goes the way Polish went: a class that moves
 
 Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
 
-It's four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning already behind her by the time the cup is empty.
+It's four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning behind her by the time the cup is empty.
 
 The result arrives by mail weeks later, and she reads it as having sat an exam.
 
@@ -42,7 +42,7 @@ Before he asks her anything, he tells her what the visit is for: a full accounti
 
 That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is actually for; she gives him more than the minimum from the first page onward.
 
-"Residential the whole time?" he asks, pen already moving.
+"Residential the whole time?" he asks, pen moving.
 
 "The whole time. A few weeks home at Christmas and longer in the summer. The address on that form is my parents' and it has been the whole way through."
 
@@ -58,7 +58,7 @@ Rather than press her for more he moves the pen to the next line, and she matche
 
 Chloe does, a level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
-The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list; his coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one whole answer before he sits back down, and he lets her finish every year of it before he turns the page.
+The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list; his coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one answer before he sits back down, and he lets her finish every year of it before he turns the page.
 
 "You taught as well," he says, somewhere in the seventh year of the list, without making a question of it.
 
@@ -110,7 +110,7 @@ Before the funding he mentions the reference interviews, all of them done now, a
 
 "That'll be Bex," Chloe says. "Alcantar."
 
-He doesn't confirm it, but he doesn't deny it either, and he writes something down before he goes on.
+He doesn't confirm it, but he doesn't deny it either, and he writes something down, then goes on.
 
 He goes back a page before the next question. "The long field. The one with the wire down the fence. Who did the geometry on that?"
 

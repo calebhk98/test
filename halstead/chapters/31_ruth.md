@@ -4,7 +4,7 @@
 
 Ruth spends her first year at MIT believing she has been put in a remedial track.
 
-It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Her assumption is that a real sequence exists somewhere she hasn't been given, a bureaucratic problem, and most of October goes on trying to find the right office.
+It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Her assumption is that a real sequence exists somewhere she hasn't been given, a bureaucratic problem, and she spends most of October trying to find the right office.
 
 The registrar's office is several flights up in a building with no elevator sign that works, and the woman behind the counter hears the whole explanation out before she answers. Ruth lays out the timeline: the diagnostic she took in August, the placement it produced, the syllabus she's printed and highlighted in color to show exactly where the first week repeats material Halstead gave her as a child. The woman is patient but entirely unmoved. The placement stands, she says, and a petition is the only route to a review, and she slides a form across the counter. It asks for a faculty signature Ruth hasn't gotten yet.
 
@@ -40,13 +40,13 @@ Somebody changes the subject back to the actual problem set, and the room goes b
 
 At home that night she writes down that MIT tracks students by ability and keeps that quiet.
 
-It goes on the inside cover of the notebook she uses for problem sets, in the small upright hand she uses for everything, a few lines and a date. Then the notebook closes and she starts the reading due Monday.
+She puts it on the inside cover of the notebook she uses for problem sets, in the small upright hand she uses for everything, a few lines and a date. Then the notebook closes and she starts the reading due Monday.
 
 ________________
 
 For most of a year, she holds that.
 
-The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively, and thirty days from the visit has already passed, so you should have called this morning." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Twice she gets as far as "so the placement thing" and then asks about the dog. Her mother asks once, in March, whether the classes have gotten any harder, and Ruth says they're fine and asks what her father wants for his birthday. Neither of them mentions, after that, that she still hasn't finished a sentence about the placement in months of Sunday calls.
+The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early, hand-delivered to the box outside the office. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively, and thirty days from the visit has already passed, so you should have called this morning." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Twice she gets as far as "so the placement thing" and then asks about the dog. Her mother asks once, in March, whether the classes have gotten any harder, and Ruth says they're fine and asks what her father wants for his birthday. Neither of them mentions, after that, that she still hasn't finished a sentence about the placement in months of Sunday calls.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
 
@@ -94,9 +94,9 @@ The first is the easiest to find and the hardest to sit with. A government surve
 
 The rest of them she works through like that, at a carrel on the fourth floor with her laptop propped on a stack of books because the desk lamp only clears the screen propped that high. Adult reading levels get checked against grade-level texts she remembers assigning to the twelves back at Halstead; a fractions benchmark from a testing organization gets checked against a worksheet she still has saved from her own first years there. Each search takes an evening, and each ends where the last one ended. A few minutes before the library asks everyone to leave she closes the laptop, walks back across an empty campus, and runs the number over.
 
-Second language. Reading level. Fractions. Each of them goes into the chat, but she watches somebody make a joke inside a minute and move on.
+Second language. Reading level. Fractions. Each one she posts into the chat, and each time she watches somebody make a joke inside a minute and move on.
 
-What she types out is fuller than what actually goes up: drafts that spell out the methodology, the sample size, why this is different from the Portuguese class she sat all last year and finished in the bottom third of. Most of the drafts die before sending, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
+What she types out is fuller than what she actually posts: drafts that spell out the methodology, the sample size, why this is different from the Portuguese class she sat all last year and finished in the bottom third of. Most of the drafts die unsent, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
 
 In April she stops posting, because she has understood what the numbers add up to and would rather somebody else say it first.
 
@@ -140,6 +140,18 @@ ruth: somebody wrote to my mother when i was six. a person sat down and picked m
 
 ruth: i want to know why it was me
 
-chloe: yeah
+ruth: not me specially. anybody. a person sat down with a list of six year olds and drew a line through most of them and i want to know what the line was
 
-sam: yeah
+ruth: because there was nothing to see yet. i could read. that is all anybody could have known about me
+
+chloe: you dont know what was on the form
+
+ruth: i know i was six. nobody knew anything about me yet, me included
+
+ruth: put any kid off my street in that building at seven and you get this. thats the part nobody will say out loud
+
+sam: my grandmother nearly binned ours. she thought it was a scam
+
+ruth: and if shed binned it youd have gone to school in georgia and youd have turned out how you turned out
+
+sam: probably
