@@ -24,7 +24,7 @@ That evening she looks up who wrote which, and Hamilton has number 1, then 6 thr
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
-In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and she gets the pages out the other end of it anyway. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but Hearn marks that draft worse than the others.
+In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and she gets the pages out the other end of it anyway. Chloe writes the last page first, then the middle, and splits the rest across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but Hearn marks that draft worse than the others.
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 

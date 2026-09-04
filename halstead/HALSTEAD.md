@@ -2859,7 +2859,7 @@ That evening she looks up who wrote which, and Hamilton has number 1, then 6 thr
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
-In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and she gets the pages out the other end of it anyway. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but Hearn marks that draft worse than the others.
+In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and she gets the pages out the other end of it anyway. Chloe writes the last page first, then the middle, and splits the rest across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but Hearn marks that draft worse than the others.
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -3932,7 +3932,7 @@ Going through the papers twice takes her back to her own notes from the third we
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-One of the twelves tells it at their own table, where it is funny and nothing else, and it takes two days to get from there to Iyad. He has it by Tuesday dinner, with her three seats down that table, and says nothing about it that night. He gives it at the long table on the Thursday, with her not there and both benches full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error running top to bottom and not a single person catching it. The table is still laughing when he starts on the next name, and he makes it round most of the other tables with it by the Saturday.
+One of the twelves tells it at their own table, where it is funny and nothing else, and it is carried from there to Iyad within two days. He has it by Tuesday dinner, with her three seats down that table, and says nothing about it that night. He gives it at the long table on the Thursday, with her not there and both benches full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error running top to bottom and not a single person catching it. The table is still laughing when he starts on the next name, and he makes it round most of the other tables with it by the Saturday.
 
 A girl in her own year she has barely spoken to asks her at the sinks whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
 
@@ -4171,7 +4171,7 @@ Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety peo
 
 "Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second. You will spend most of it missing by the width of a dime before you ever hit that dime on purpose, and there is no shortcut through that part, not for anybody who has ever stood on this range. Put the rifle down when your arm shakes. Pick it back up when it doesn't. I have said that line to every class for six years running, and I will keep saying it long after all of you have forgotten my name."
 
-Voss delivers it like a thing he has said a thousand times to a thousand students, and it is round the year by Thursday and back at Chloe's own table before the end of the month, quoted with the settled confidence of something printed in a manual. In November, weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office; the oldest instructor on the staff tells her that the first time he heard it was from Voss.
+Voss delivers it like a thing he has said a thousand times to a thousand students, and it has been carried round the year by Thursday and back to Chloe's own table before the end of the month, quoted with the settled confidence of something printed in a manual. In November, weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office; the oldest instructor on the staff tells her that the first time he heard it was from Voss.
 
 For weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, session after session, ninety of them at it. A week in, Kavi does the arithmetic and announces at dinner that at this rate somebody will hit something in about March, but Priya tells him to eat.
 
