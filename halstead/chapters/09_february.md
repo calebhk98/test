@@ -68,7 +68,7 @@ A chair scrapes on the kitchen tiles, and somebody runs the tap for a moment, th
 
 Chloe lies with her eyes open and her hands under the pillow, listening to the fridge, until her dad says something she can't make out at all but her mom says the words four hours, in the voice she uses about a thing she has lost.
 
-Then it's the middle of February, then the last week of it; dinner passes most nights with neither of them bringing it up, so she stops waiting for them to. Chloe sees Dr. Ammons on a Thursday and is asked how the weeks since have been, says fine, and is asked what fine means, but has no answer for that.
+Then it's the middle of February, then the last week of it; dinner passes most nights with neither of them bringing it up, so she stops waiting for them to. Chloe sees Dr. Ammons on a Thursday, says the weeks since have been fine, and has no answer when he asks what fine means.
 
 They tell her on the fourteenth of March.
 
@@ -116,7 +116,7 @@ Her parents sit in the living room and listen to her going back and forth over t
 
 Her mom's voice drops to something Chloe catches only just. "I know what she's like."
 
-The house is raised again in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter with the mug in both hands.
+The house comes up again in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter with the mug in both hands.
 
 "They're offering us a house," her dad says, "minutes from campus, furnished, and they pay for it as long as she's enrolled, and if she leaves it stops, which is the only condition on the deal."
 
@@ -156,7 +156,7 @@ Mrs. Okonkwo stops walking backward. "Who told you that?"
 
 "Well, that's silly, and I don't know where she got it. We take people all year round, whenever they turn up." She starts walking again. "Somebody said something to her in a corridor and it went round, I expect. It usually does."
 
-Her mom asks about the nurse and gets straight answers, then asks who is awake at night, and that's answered too.
+Her mom asks about the nurse and gets straight answers, then asks who is awake at night and gets a straight answer to that too.
 
 In the afternoon they put Chloe in a second grade room while her parents go off somewhere with a staff member, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. Afterward, a man whose beard is going gray sits down on a chair the same size as hers and asks her what she would do with an entire day if it were hers to spend, and she talks a long time, and he lets her finish.
 

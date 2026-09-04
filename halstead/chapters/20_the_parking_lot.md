@@ -144,7 +144,7 @@ Sam takes it in silence for a second.
 
 Ruth has her bag back on her shoulder, the strap settled across it, and shrugs. "A gun's a prop unless you actually use it, but all of them just stood there holding theirs. They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
 
-"Fine, I guess that was too easy. So who do I actually fight, then?"
+"Fine, I think that was too easy. So who do I actually fight, then?"
 
 "Go back and fight the waitress," Nadia says.
 

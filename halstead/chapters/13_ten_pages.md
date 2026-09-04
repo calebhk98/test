@@ -14,7 +14,7 @@ Chloe has written reports that long, in Mandarin last year and in French the yea
 
 That night, in the chair by the window, she reads Federalist 10, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen. Then she spends the rest of the weekend on an essay about whether a small state can be trusted with a veto.
 
-It comes back on the Monday with a mark and a short paragraph under it, which say she has spent the whole essay on a position she already held, that the other side appears nowhere on the page in a way its own supporters would believe, and that until it does he has no way of telling whether she is right or only comfortable.
+It comes back on the Monday with a mark and a short paragraph under it, which say she has spent the essay on a position she already held, that the other side appears nowhere on the page in a way its own supporters would believe, and that until it does he has no way of telling whether she is right or only comfortable.
 
 On the Tuesday she tells him she read number 10.
 
@@ -24,7 +24,7 @@ That evening she looks up who wrote which, and Hamilton has number 1, then 6 thr
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
-In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it still gets the pages out the other end. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but that draft comes back worse than the others.
+In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it gets the pages out the other end anyway. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away, then starting the second. Taking a position she disagrees with, she writes it straight, but that draft comes back worse than the others.
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -50,27 +50,27 @@ The best anyone in the room manages all afternoon is nine seconds, but Chloe get
 
 "Four."
 
-"Four's fine," Sam says. "Everybody in this corridor is on it right now, that's the whole afternoon's number."
+"Four's fine," Sam says. "Everybody in this corridor is on it right now, that's the entire afternoon's number."
 
 "She said a minute, and that comes nowhere close to a minute."
 
 "She says a lot," Sam says, into his sleeve.
 
-"A minute's the whole fight, and four's just where you ran out first," Ruth says, arm still over her eyes.
+"A minute's the entire fight, and four's just where you ran out first," Ruth says, arm over her eyes.
 
 By March most of the year is in the single figures on a good day, while Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year, and Chloe is on eleven seconds by June, but two of them she wasted.
 
-Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water; in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
+Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water; in the third term some of it is towing somebody who fights you all the way, all of it in how you hold their head.
 
 Paintball joins the afternoon block in October; Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
 
 For weeks everybody is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
-On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the whole way. I can see it leave, I see the whole thing happen, but my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
+On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the entire way. I can see it leave, I see the entire thing happen, but my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
 
 "Everybody's behind it, you're not doing anything different from the rest of us, we're all watching it come and then trying to get a hand there and by the time we-"
 
-Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
+Chloe stops. "Wait, that's it, that's the entire problem, we're reacting."
 
 "What? What are you talking about?" Ruth says.
 
@@ -141,21 +141,21 @@ After dinner, when the corridor is empty, she goes back and reads it again, then
 
 "I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice. Nobody handed me a stopwatch and told me to time it."
 
-Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
+Ruth is looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, then is still on them when the plates come back. Chloe's fork stops over the plate. The laugh is still going when she carries her tray out the far door, and finds Ruth on the step.
+Twenty minutes later Iyad has it at the far end of the table, pitched for both benches. He gives them Chloe's line first, nobody scores the drill, and then the one he has built on the front of it. "Nobody scores the drill, and nobody scored the north stairwell either, on account of Kessler was standing in it." The far end laughs and takes up both at once, then is still on them when the plates come back. Chloe's fork stops over the plate. The laugh hasn't died down when she carries her tray out the far door, and finds Ruth on the step.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 
-Music runs both ways at once. Half the hour is by ear and half is notation, with one man teaching both, sliding between them and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays a run of bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
+Music runs both ways at once. Half the hour is by ear and half is notation, with one man teaching both, sliding between them and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays a run of bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics was.
 
 ________________
 
 Her father asks at Thanksgiving what she has been writing about, and she says tariffs.
 
-He is still eating. "Tariffs," he says. "Huh. Which side did you get assigned, or did you pick it yourself this time?"
+He is eating. "Tariffs," he says. "Huh. Which side did you get assigned, or did you pick it yourself this time?"
 
 "For, and it took a couple of minutes of reading before that got obvious."
 
@@ -169,7 +169,7 @@ She nods without waiting for him to finish. "Steel says it, textiles said it, an
 
 "So how do you actually sort the real ones from the ones just saying it for cover?"
 
-"I said you look at whether you could rebuild it in a war and how long it'd take. It's what I had, and it's thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
+"I said you look at whether you could rebuild it in a war and how long it'd take. It's what I had, and it's a little thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
 
 He turns round in his chair properly. "No, hold on," he says. "You've got most of an argument there. What happens if it's five years and the war's two? Does it still look smart partway through, or only in the year you signed it?"
 

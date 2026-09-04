@@ -4,7 +4,7 @@
 
 The exercise is called Winter Anvil. It runs four days and nights, and the name has been up on the board outside the orderly room for weeks, weeks of Sam reading it on his way past.
 
-Staging is a gravel lot behind a row of tents, a folding table under a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody ahead of him is handed a second flashlight when the first refuses to come on.
+Staging is a gravel lot behind a row of tents, a folding table under a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody ahead of him gets handed a second flashlight when the first refuses to come on.
 
 At the head of the line he draws his rifle, a yellow adapter going on the muzzle in front of an armorer who checks the fit of it, then reads the serial number back off the weapon and only then lets go of either. Then the harness goes on over the top of everything else, sensors down both sides of the chest and around the back, a band of them fitted over the helmet, a transmitter clamped to the barrel ahead of the front sight.
 
@@ -112,7 +112,7 @@ Sam's turn comes third. Instead of calling him up to the front, the major leaves
 
 "Marsh." He looks up once from the clipboard. "Fence line, first night, two engagements, both of them yours, at twenty meters, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
 
-The next part he reads the way a form is read.
+The next part he reads the way a form gets read.
 
 "Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two meters, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well. I've already got Ives drafting the second page of it, on the soldier's face, with a photograph attached." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
 

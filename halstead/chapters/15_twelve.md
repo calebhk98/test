@@ -70,7 +70,7 @@ Kavi pushes up off the floor and sets his back against the radiator. "Then do it
 
 "So the cutter swaps," Ruth says.
 
-They spend an hour on that; what they land on is two rounds with the cutting swapped: Kavi cuts both loaves for the first, marks the underside of the plates, and leaves the eating to everybody else. Then Ruth runs the other round so that Kavi takes a turn, and the key is tucked into a folded scrap.
+They spend an hour on that; what they land on is two rounds with the cutting swapped: Kavi cuts both loaves for the first, marks the underside of the plates, and leaves the eating to everybody else. Then Ruth runs the other round so that Kavi takes a turn, and the key goes onto a folded scrap.
 
 Late in the evening they go down to the kitchen, where ovens the size of wardrobes line the wall and a conveyor toaster does thirty slices in a run.
 

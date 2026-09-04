@@ -16,7 +16,7 @@ The head of school gives a short speech that is mostly logistics: how long they 
 
 Then they read out ninety-one names in alphabetical order, evenly paced, timed to the stopwatch that clocked the rehearsal, and every name lands where the schedule put it, each family standing on cue. Ruth, a few seats down from Chloe, times it on instinct, the silent count she runs against anything with a rhythm in it. "Twelve seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through. Nobody drifted, not even down at the end of the alphabet." She sounds almost disappointed, all of it too clean to correct.
 
-When Sam's name is called, whole rows of people who are not his family stand up anyway, Chloe's mother among them. Years of pickups and drop-offs mean she has watched this particular boy grow a head taller in a single summer, but it still catches her off guard. When Ruth's name comes, half a row does it for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
+When Sam's name gets called, whole rows of people who are not his family stand up anyway, Chloe's mother among them. Years of pickups and drop-offs mean she has watched this particular boy grow a head taller in a single summer, but it still catches her off guard. When Ruth's name comes, half a row does it for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
 
 Then it's Kessler, and eleven years compress into thirty feet of plywood and a moment of applause. Chloe crosses a stage that existed for the first time a month ago, built by people she's spent a decade arguing with about hot dogs and the size of the moon, and it holds dead steady under her the whole way across. The head of school hands her the folder with both hands and says her name once, correctly, plain. That turns out to be the entire weight of ceremony the place hands out. On the walk back to her seat she finds her mother's face before she finds anyone else's, the reflex that used to send her to the fridge twice in a night to check a magnet was still holding a note in place.
 
@@ -54,7 +54,7 @@ Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word 
 
 "Well, that's something," she says, looking past him for the next.
 
-Chloe is caught on her way past, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
+Chloe gets caught on her way past, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, then on the languages, and on the part about the years in the middle of it, but her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
 
 Dana is in the chair along from her, on her phone until Chloe reaches that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks.
 

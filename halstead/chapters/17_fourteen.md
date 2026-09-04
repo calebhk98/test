@@ -2,7 +2,7 @@
 
 *September 2019 – April 2020*
 
-Marksmanship replaces archery in September, and Voss gives them weeks of dry drill before anything is loaded. A row of weapons lies on a table and they learn to name them all off the silhouette from across the room, then strip and reassemble some of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
+Marksmanship replaces archery in September, and Voss gives them weeks of dry drill before anything gets loaded. A row of weapons lies on a table and they learn to name them all off the silhouette from across the room, then strip and reassemble some of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
 
 Live fire starts in October at fifty meters, prone, unsupported, on paper, and Chloe is down on the mat with her elbows set before Voss has finished handing out the ear protection. The mat is cold through her sleeves, the line falls quiet in a way no room in the building manages, and the smell of the place stays in her hair until she washes it.
 

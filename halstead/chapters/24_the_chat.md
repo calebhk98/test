@@ -296,7 +296,7 @@ Anyway she writes the names down, a name to a line, and turns the paper around s
 
 The list holds him long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
-"Two days on the nine. Six months, then it is reviewed."
+"Two days on the nine. Six months, then it gets reviewed."
 
 "And the monthly fee on the account."
 

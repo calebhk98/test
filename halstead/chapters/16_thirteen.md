@@ -68,7 +68,7 @@ German is the language this year, and half its grammar is a frame she already ha
 
 The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold far more runs than the paper reports; neither document says which of them, or when, or by whom. Nineteen days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
 
-In cryptography the first term is spent entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
+In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
 
 Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year; you will open locks other people built, and the sequence is deliberate. One, a lock fails in the place the person who designed it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first lock you build yourself. The other way round, you are guessing what a lock is for. I built my first lock at your age believing I understood the mechanism, and I was wrong about it for six more years before anybody thought to correct me."
 
@@ -88,7 +88,7 @@ She takes the lid off and turns it toward Chloe. Inside is a circuit board, a ba
 
 The box sits in the drawer under Ruth's window and stays there.
 
-Everything is arranged on their phones; in October the duty teacher stops at the end of the long table, says she is sure Mrs. Okonkwo would be delighted to hear what her handwriting reminds them of, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
+Everything gets arranged on their phones; in October the duty teacher stops at the end of the long table, says she is sure Mrs. Okonkwo would be delighted to hear what her handwriting reminds them of, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
 
 Kavi has the first version running within the month on the school's own machines, because a service inside the building looks like every other service in it, and Ruth writes the encryption herself out of the term's material rather than lifting something already tested.
 
@@ -106,7 +106,7 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 That takes the rest of the term; what results is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds. It is still holding at Christmas.
 
-Sam says, over the last of his own plate, that the kitchens are worth trying after one, once the lunch trays go back, because that is when whatever is left over is put out.
+Sam says, over the last of his own plate, that the kitchens are worth trying after one, once the lunch trays go back, because that is when whatever is left over goes out on the counter.
 
 Chloe has her Saturday half out, workshop first, kitchens after, when Bex is already on her feet with that plan and the table listening to her: the workshop first because the technician locks it at noon, then the kitchens after one for whatever is going spare, Sam's timing, then everything after that. She revises it twice before the plates are stacked, moving the kitchens and then moving them back.
 

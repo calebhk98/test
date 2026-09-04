@@ -150,7 +150,7 @@ The afternoon block is a different thing on each day of the week, Nerf on Monday
 
 In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that turns out slightly oval, but she uses it for weeks, and the oval catches her eye only later. In March she takes it back to the shop on her own time and tries to sand it round, but takes off too much on one side, so she is still using it, oval and thinner on one face now, in June.
 
-Team sports is where the teams are assigned, and she is placed on a team with two people on it she has decided against. In the second week she asks the coach whether she can switch onto Ruth's team. He tells her the teams are set and to get back in her line. She plays out September and October on it, keeping count of every pass that never comes to her.
+Team sports is where the teams are assigned, and she draws a team with two people on it she has decided against. In the second week she asks the coach whether she can switch onto Ruth's team. He tells her the teams are set and to get back in her line. She plays out September and October on it, keeping count of every pass that never comes to her.
 
 Drawing is Thursdays, and in the second term, while they spend the term on hands, Chloe draws her own left hand forty times, in pencil, from a fixed angle, on cheap paper. The fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
@@ -160,7 +160,7 @@ Drawing is Thursdays, and in the second term, while they spend the term on hands
 
 "No, I mean that's a hand, Chloe, and the thumb's even the right size this time. Last term you were drawing mittens." Ruth carries on to the door.
 
-At the end of term the sheet is posted on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays; she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
+At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays; she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
 
 A boy comes out of it ahead of her with the door swinging behind him; behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her.
 
@@ -196,7 +196,7 @@ Sam has come up behind her. "What are you doing? Are you signing up for somethin
 
 Sam is walking backward down the corridor. "They put a wall up the side of the gym over the summer with an overhang near the top. Everybody who's tried the overhang has come off it, but I'm going to be the first one over. It leans out at the top."
 
-Her name is added to the choir line, because she sang in the shower every day of the summer and it was the part of most days she looked forward to, but choir turns out to be a different activity wearing the same word, in which you stand in a block of thirty and the job is matching. The woman moves her to the back row and tells her she goes flat on the way down, but by a steady amount every time, so she is at least flat somewhere useful.
+Her name goes on the choir line, because she sang in the shower every day of the summer and it was the part of most days she looked forward to, but choir turns out to be a different activity wearing the same word, in which you stand in a block of thirty and the job is matching. The woman moves her to the back row and tells her she goes flat on the way down, but by a steady amount every time, so she is at least flat somewhere useful.
 
 "Stand next to Amara and match her."
 
@@ -210,6 +210,6 @@ On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the s
 
 Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the moment Ruth stopped hitting above it. A bracket's a bracket. It doesn't matter when we drew it, the pipe doesn't know the difference."
 
-Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. The bracket rule survives into the summer and is applied to a stairwell, a laundry chute, and one of the goals on the field.
+Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. The bracket rule survives into the summer and reaches a stairwell, a laundry chute, and one of the goals on the field.
 
 In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, and she reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.

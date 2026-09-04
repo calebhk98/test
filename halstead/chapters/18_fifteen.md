@@ -34,7 +34,7 @@ On a Wednesday in mid-February she shoots a series and scores sixty-one, then sh
 
 At dinner she clears the plate, but it could have been anything on it.
 
-The old things are tried in turn: the count runs on her leg walking down to the range, the way it did on the archery field, but the number turns out unchanged on the Friday. At different places in the cycle she holds her breath, and gets dizzy for her trouble. Three weeks into March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
+The old things get tried in turn: the count runs on her leg walking down to the range, the way it did on the archery field, but the number turns out unchanged on the Friday. At different places in the cycle she holds her breath, and gets dizzy for her trouble. Three weeks into March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
 
 Later that month she asks the office for all the range cards in the year, and a woman hands her a box of ninety with no lock on it, off a shelf with the year below's box sitting beside it, unlocked as well.
 
