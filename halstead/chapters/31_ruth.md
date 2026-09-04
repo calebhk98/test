@@ -80,7 +80,7 @@ At the first he nods, but at the second the nod does not arrive, and he sits bac
 
 From there he goes back up through it, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen.
 
-"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. But you went off and found the sentence." He is already reading down the next question on his list, with the pen back up in his hand for it.
+"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. But you went off and found the sentence." The pen stays down on the desk while he says it, and he waits long enough afterward that she has to be the one who ends it.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 

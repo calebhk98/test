@@ -2743,7 +2743,7 @@ Chloe goes back over the fortnight that evening looking for the sitting where sh
 
 She says none of it to Bex. On the Monday Bex catches her in the corridor and says good job about the bridge, and Chloe says thanks, and the word comes out thin.
 
-At dinner she tells Ruth the whole fortnight over, out loud this time. Ruth says she should have said so to the teacher on the day and not to Ruth on a Monday, and goes back to her plate. Chloe never does tell the teacher, not that week and not the one after, but she stops saying we out loud about anything of hers, to anybody, for the rest of the year.
+At dinner she tells Ruth the whole fortnight over, out loud this time. Ruth says she should have said so to the teacher on the day and not to Ruth on a Monday. Chloe says the sheet was already written by then. Ruth says then she should have said it while he was writing, and stays looking at her until Chloe says all right. Chloe never does tell the teacher, not that week and not the one after, but she stops saying we out loud about anything of hers, to anybody, for the rest of the year.
 
 Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin, and he waits until she is most of the way down the hall with her tray before he says it, at the volume of the far end of the table: that a stranger loses her by the second sentence, and it is exactly what the man from the university said and the whole of what he said. Her ears are red by the time she reaches the table, but the tray does not tip, and she does not look at him while she sits down. Sam asks him something about the fish tank and he answers that too, in the same voice.
 
@@ -4507,7 +4507,7 @@ In November she sits in the library with something else open in front of her, th
 
 "What's that from," Ruth asks, from the other bed.
 
-"The one I failed." Chloe doesn't look up from it. "I'm finishing it."
+"The one I failed." Chloe turns it round so Ruth can see the four rows. "I'm finishing it."
 
 In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, with the mark schemes clipped behind.
 
@@ -6814,11 +6814,11 @@ ________________
 
 Before she notices she's doing it, she starts saying everything twice.
 
-The first time it's a certification page. A client wants to know why a birth certificate translation costs more than a memo twice its length. Chloe says, plainly, "The certification's a signed statement that the translation is complete and accurate. It's filed on its own, and it gets redone entirely if a single word in the document changes afterward. The price is set by the job as a whole, whether the document runs a single word or a whole manual, because the signature is what costs money, not the paper it sits on." Deb's eyes go somewhere past her shoulder halfway through. "Okay, but what does that actually mean for what I tell him?"
+The first time it's a certification page. A client wants to know why a birth certificate translation costs more than a memo twice its length. Chloe says, plainly, "The certification's a signed statement that the translation is complete and accurate. It's filed on its own, and it gets redone entirely if a single word in the document changes afterward. The price is set by the job as a whole, whether the document runs a single word or a whole manual, because the signature is what costs money, not the paper it sits on." Deb hears it out to the end. "Okay, but what does that actually mean for what I tell him?"
 
 Chloe starts again. "It means if he wants his brother's certificate translated too, that's a second signature, not a second stapled copy. It's a second job with a second price on it, the same as it would be if he brought it in on a different day entirely." Deb writes that down, word for word, and reads it back to the client over the phone twenty minutes later.
 
-The second time it's a discount. A returning client's manual repeats sixty percent of its own sentences from the version they submitted in March, and the software prices the repeats lower the second time around. Chloe says, "It's match logic." Deb's eyebrows go up. "There are percentage bands built into the pricing, and a repeated sentence only counts as a repeat if it's identical, so it still counts as new the moment even a word inside it has changed. A manual that reads the same to him can land in any of those bands, and the reader can't tell which band it landed in just by looking at the page. Two documents that look identical on the screen can land in completely different bands, depending on which version of the file the system saw first." Deb stops her halfway through. "Okay, but in English, what does that actually mean for what I charge him?"
+The second time it's a discount. A returning client's manual repeats sixty percent of its own sentences from the version they submitted in March, and the software prices the repeats lower the second time around. Chloe says, "It's match logic." Deb's eyebrows go up. "There are percentage bands built into the pricing, and a repeated sentence only counts as a repeat if it's identical, so it still counts as new the moment even a word inside it has changed. A manual that reads the same to him can land in any of those bands, and the reader can't tell which band it landed in just by looking at the page. Two documents that look identical on the screen can land in completely different bands, depending on which version of the file the system saw first." Deb lets her finish. "Okay, but in English, what does that actually mean for what I charge him?"
 
 Chloe says it before she's decided to use it, the comparison just out of her mouth: "It's like Tyler's spelling test. If he already learned ninety of the hundred words last year, you don't pay someone full price to teach him the same ninety again. You pay for the ten he hasn't seen yet."
 
@@ -7279,7 +7279,7 @@ At the first he nods, but at the second the nod does not arrive, and he sits bac
 
 From there he goes back up through it, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen.
 
-"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. But you went off and found the sentence." He is already reading down the next question on his list, with the pen back up in his hand for it.
+"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. But you went off and found the sentence." The pen stays down on the desk while he says it, and he waits long enough afterward that she has to be the one who ends it.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 
@@ -7480,7 +7480,7 @@ Chloe reads that twice at her own desk, weeks into the job, and sets the phone f
 
 chloe: theo which four
 
-He doesn't answer it that night, and the question sits there, unread, while the rest of the thread keeps going without it.
+He doesn't answer it that night. Ruth puts it up again in the morning, the two words on their own, and Theo says he will tell them when it matters and not before.
 
 ________________
 
@@ -7668,7 +7668,7 @@ They open it in seven different places, each at a different hour, each of them a
 
 There is a file on all ninety-one of them. Every page carries the same header before anything else on it: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
-Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop carefully, like something that might spill, and go outside for twenty minutes before he comes back in. He opens the group thread first and types "mine has a name in it I already know," and sends it before he can talk himself out of it. Nobody answers before he's back at the laptop, and he keeps reading from the line he left off on. That's the whole account anyone else gets of it.
+Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop carefully, like something that might spill, and go outside for twenty minutes before he comes back in. He opens the group thread first and types "mine has a name in it I already know," and sends it before he can talk himself out of it. Sam answers inside a minute, one line, whose name, and Theo does not tell him. He keeps reading from the line he left off on. That's the whole account anyone else gets of it.
 
 The rest of theirs sit somewhere between those. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the whole company at that point three rooms over a laundromat, the documents stitched together by an analyst who managed to spell her name differently on each page. Eli's notes, in the flat voice of everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of them, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, a few lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the week she signed the lease on the apartment she's sitting in right now.
 

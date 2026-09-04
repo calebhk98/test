@@ -120,7 +120,7 @@ In November she sits in the library with something else open in front of her, th
 
 "What's that from," Ruth asks, from the other bed.
 
-"The one I failed." Chloe doesn't look up from it. "I'm finishing it."
+"The one I failed." Chloe turns it round so Ruth can see the four rows. "I'm finishing it."
 
 In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, with the mark schemes clipped behind.
 

@@ -134,7 +134,7 @@ Chloe reads that twice at her own desk, weeks into the job, and sets the phone f
 
 chloe: theo which four
 
-He doesn't answer it that night, and the question sits there, unread, while the rest of the thread keeps going without it.
+He doesn't answer it that night. Ruth puts it up again in the morning, the two words on their own, and Theo says he will tell them when it matters and not before.
 
 ________________
 
