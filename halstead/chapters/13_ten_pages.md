@@ -102,7 +102,7 @@ That evening at the sinks she gives Ruth all of it, what she said to Bell and wh
 
 "Bex is like that with everything," Ruth says, around her toothbrush.
 
-"That's not an answer, Ruth. That's just saying it again slower."
+"That's not an answer, Ruth. That's you agreeing with me and calling it a reason."
 
 Ruth spits, and starts on the impression of the boy who said luck again, and by the second line of it Chloe is laughing at the sink and has stopped saying anything about the sheet.
 

@@ -22,6 +22,14 @@ HERE = Path(__file__).resolve().parent.parent
 
 # (pattern, what it is, why it is out)
 BANNED = [
+    (r"\b(?:say|said|read|reads) (?:it|that|them) again[^.!?\"]{0,30}\bslower\b"
+     r"|\bagain,? slower\b",
+     "say that again, slower",
+     "The author, on finding three of these still in the manuscript after being "
+     "told they were gone: bad writing. A character asking for a repeat at "
+     "reduced speed is a stock beat that stands in for a reaction. Removed from "
+     "chapters 11, 27 and 29."),
+
     (r"\bI want to be clear about (?:that|this)\b",
      "I want to be clear about that",
      "A speaker announcing the importance of what they are about to say. The "

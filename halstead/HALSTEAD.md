@@ -2936,7 +2936,7 @@ That evening at the sinks she gives Ruth all of it, what she said to Bell and wh
 
 "Bex is like that with everything," Ruth says, around her toothbrush.
 
-"That's not an answer, Ruth. That's just saying it again slower."
+"That's not an answer, Ruth. That's you agreeing with me and calling it a reason."
 
 Ruth spits, and starts on the impression of the boy who said luck again, and by the second line of it Chloe is laughing at the sink and has stopped saying anything about the sheet.
 
@@ -6565,6 +6565,10 @@ The man behind the desk sits back in the chair for the first time since she came
 
 "It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay on the hour, so the shop underneath you is shut and those stairs were yours alone. Nobody watched you come up. You want to be thinking about that instead of about filings."
 
+"There's a file that sends itself if I don't stop it tonight. It goes to the state attorney general's office and to two reporters, with this address in it, the agent's name, and the time I walked up here today. If I don't go home, it sends anyway. Then this isn't a handful of people phished for a routing number anymore. It's four men who kidnapped and killed an eighteen-year-old for saying a number out loud to their faces, and every one of you goes down for that."
+
+The man at the window turns from the glass and looks at the man behind the desk.
+
 On she goes to the next thing on her list.
 
 "I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to ring back on, and that is the end of it. So that isn't a threat I've got, but I'm not going to stand in your office pretending I've got it, and I'm not going to waste the drive out here on a threat that doesn't actually work, so you can stop waiting for it to land."
@@ -6577,7 +6581,7 @@ Nadia laughs; it is a single sound, already out of her mouth before she catches 
 
 The man at the folding table stands up, taking his time about it because he can afford to, and he comes around the end of the table and stops close enough that she has to tilt her head back to keep his face in view.
 
-"Say that again," he says, "slower, so everybody in the room gets the benefit of it."
+"Again," he says.
 
 At the same speed, she gives it back to him.
 
@@ -6632,6 +6636,38 @@ nadia: no
 eli: nadia
 
 nadia: eli if you go anywhere near it, it stops being over
+
+ruth: nadia what actually happened up there
+
+nadia: i told them i had a file that sends itself if anything happens to me
+
+nadia: it goes to the state and to two reporters. my name, the office address, the time i went up. if i dont come home tonight it goes out on its own
+
+sam: youre eighteen years old
+
+nadia: i know how old i am
+
+ruth: there were four of them and you had nothing else up there if it went wrong
+
+nadia: i had it covered. if anything happened to me the file still goes out and they still go down for it
+
+eli: nadia a dead mans switch only pays off if youre already dead
+
+eli: if they had called it you would be dead right now and it would have worked exactly like you built it
+
+eli: that isnt you being safe up there. thats you being lucky
+
+ruth: those are actual criminals. not a hiring committee that tells you no and lets you walk
+
+nadia: i know what they are. i counted four of them on the stairs on the way up
+
+sam: then why did you go up there alone
+
+nadia: it was my name on the site. nobody else was going to stand in that room
+
+eli: nadia do you get what were saying
+
+nadia: yes
 
 The site stays clean after that, and Hanley's filings all go dead in July, all of them inside a fortnight, which she spots in August and keeps to herself.
 
