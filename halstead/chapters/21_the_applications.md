@@ -2,7 +2,7 @@
 
 *October 2022 – March 2023*
 
-Chloe has been compared to the identical ninety-one people since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
+The school has compared Chloe to the identical ninety-one people since she was seven, and the only number it has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
 
 The pattern is identical for everybody: the Ivies first, eight of them, bought like lottery tickets and forgotten about by dinner; then the college a parent went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost nobody; then something strange, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek to a place in Arizona because a woman he watched lecture online teaches there.
 

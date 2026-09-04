@@ -97,7 +97,7 @@ Mrs. Aldana drawing that box in green marker, thirty of them on the page."
 (presumably Ms. Vance) hands it out.
 
 **Why I did not change it:** School worksheets showing up at a set point in
-the morning read close to the book's own "systems on a clock" exception ,
+the morning read close to the book's own "systems on a clock" exception,
 this is routine, scheduled classroom motion, not a transaction like "it goes
 to Deb." I was not confident this is the fault the rule means to catch rather
 than the timer exception, and naming Ms. Vance as the one handing it out
@@ -149,7 +149,7 @@ who ran it, how they found her, whether Chloe came back different, in what
 way, and starting when."
 
 **Why the voice is wrong:** "The questions" is the grammatical actor, and
-Dr. Ammons, sitting right there asking them, is not in the sentence at all ,
+Dr. Ammons, sitting right there asking them, is not in the sentence at all,
 the same fake-agency pattern I fixed nine lines earlier at line 45 in this
 chapter.
 
@@ -179,7 +179,7 @@ afterward with the hallway tile cold enough through her socks to notice, and
 being allowed to be wrong for a whole afternoon."
 
 **Why the voice is wrong:** "Being allowed" puts Chloe (understood, not
-named, as the last item in the list) into the receiving end of a passive ,
+named, as the last item in the list) into the receiving end of a passive,
 close to the book's flat rule against a person in the subject of a passive,
 though the sentence never actually names her as the grammatical subject; the
 whole clause is a floating gerund in a list of images.
@@ -220,7 +220,7 @@ institution, not even a body part standing in for one. Just "it," happening.
 walking toward. Chloe spent months asking, in every way a nine-year-old has
 available (a chore list on the pillow, a mark for every day without a yes,
 skipping her mom to try her dad), and then she just... stops, without ever
-choosing to. Giving that an actor: "she stops asking," "she gives up" ,
+choosing to. Giving that an actor, "she stops asking" or "she gives up",
 would turn an erosion into a decision, and the entire point, right down to
 finding out about it after the fact while brushing her teeth, is that it
 wasn't one. This is exactly the kind of sentence the brief warned me about:

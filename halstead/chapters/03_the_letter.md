@@ -156,7 +156,7 @@ Chloe waits a while for him to keep talking, then goes up for her book and comes
 
 Her mom searches on her own on the Sunday, on the laptop, with the door shut, typing the name in and getting the website, then getting it again from a different direction.
 
-She tries every direction she can think of and turns up nothing but the school's own website: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
+Every direction she can think of turns up nothing but the school's own website: no news coverage, no parent forum mention, no address in any directory that is not the school's own page, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
 
 For a school that has put over a hundred children through a summer and done it again every year since, that is what she finds; she says so at the table that night with the laptop open.
 

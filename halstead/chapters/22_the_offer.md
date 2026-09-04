@@ -48,11 +48,11 @@ At the exact minute he stands, she stands too, and the next name is already wait
 
 ________________
 
-Ninety-one names go up in all, and thirteen of them turn into yeses, each settled before the walk back to class is over.
+All ninety-one names are posted in the end, and thirteen of them turn into yeses, each settled before the walk back to class is over.
 
 Most of them had already been somewhere in the building, on a floor with a badge on the door, longer than the rest of the year had any reason to know, and all of their names are posted inside the first few days, except for the last, which breaks it: he's a boy from the language block, no badge to his name and no floor he's ever had a reason to be on, saying yes anyway and spending the rest of the week asking around, politely and without much luck, to find out what the door is even for.
 
-The eighty saying no go back to their own last weeks of school, final transcripts yet to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd half finished before the list ever went up.
+The eighty saying no go back to their own last weeks of school, final transcripts yet to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd half finished before the list was ever posted.
 
 ________________
 
@@ -152,7 +152,7 @@ Sam stands on the landing with the mail under one arm, then shrugs and heads off
 
 ________________
 
-Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers gets the same voice as everything else on the list, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, waits, hears one, and puts that in with the rest.
+Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and he gives hers the same voice as everything else on the list, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, waits, hears one, and puts that in with the rest.
 
 Chloe is up the kitchen-end stairs before the pudding goes round.
 

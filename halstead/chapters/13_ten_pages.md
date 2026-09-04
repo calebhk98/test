@@ -20,7 +20,7 @@ On the Tuesday she tells him she read number 10.
 
 "That's Madison," he says, and starts the hour without adding anything to it.
 
-That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. She reads number 6 that week and 9 the week after. By the end of October she is going through them in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
+That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. Chloe reads number 6 that week and 9 the week after. By the end of October she is going through them in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
@@ -197,7 +197,7 @@ Her grandmother puts a plate down on the carpet inside the doorway. "Your mother
 
 The Tuesday is in the second week of February.
 
-In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes towards that place. She writes the last line late, and there is an hour before lights out, which she spends on a book she picked herself.
+In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, but she writes towards that place. Chloe finishes the last line late, and there is an hour before lights out, which she spends on a book she picked herself.
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with minutes to go, and leaves it exactly as it is.
 

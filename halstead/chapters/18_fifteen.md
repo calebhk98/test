@@ -34,7 +34,7 @@ On a Wednesday in mid-February she shoots a series and scores sixty-one, then sh
 
 At dinner she clears the plate, but it could have been anything on it.
 
-The old things get tried in turn: the count runs on her leg walking down to the range, the way it did on the archery field, but the number turns out unchanged on the Friday. At different places in the cycle she holds her breath, and gets dizzy for her trouble. Three weeks into March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
+Chloe tries the old things in turn: the count runs on her leg walking down to the range, the way it did on the archery field, but the number turns out unchanged on the Friday. At different places in the cycle she holds her breath, and gets dizzy for her trouble. Three weeks into March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
 
 Later that month she asks the office for all the range cards in the year, and a woman hands her a box of ninety with no lock on it, off a shelf with the year below's box sitting beside it, unlocked as well.
 
@@ -62,7 +62,7 @@ Voss taps the pages straight against the desk and hands them back to her.
 
 "Some things you have to work out on your own. I can't teach you everything." He is already looking past her down the lane. "Your block started without you, Kessler."
 
-Chloe goes, running the numbers again all the way down. The box returns to the shelf that evening, square on top of the year below's, and she leaves both of them where they are.
+Chloe goes, running the numbers again all the way down. That evening she returns the box to the shelf, square on top of the year below's, and leaves both of them where they are.
 
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends. She sits behind her for the afternoon because Chloe asked her to.
 
@@ -120,7 +120,7 @@ Priya asks her across the table how the range is going. She hears the run of zer
 
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral; he argues about the rate for twenty minutes, but loses. Then he tells her she has to see the barn first, so she goes on the Saturday, finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
-Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
+Chloe lends forty to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
 Iyad starts a list of it in October without anybody asking him to, everybody in the year and what they are doing with theirs. By June he is going round the tables collecting the figures by name and reading back what he has so far to whoever is sitting there. Chloe gives him seventeen, and Rustem's number is a couple of lines above hers on the page. Iyad reads the page out at the long table in the week Hark has the ledger up on the board, top to bottom, and reaches hers in the middle of the pudding and says it in the voice he said Rustem's in.
 
@@ -170,7 +170,7 @@ The folder shifts to her other arm. "There is a non-disclosure agreement on that
 
 "You can't be held to anything, I can, so asking is what I have."
 
-That night she lies awake, and snaps at Sam at breakfast the next morning for no reason she can name, then apologizes for it before he can ask why. Then she takes a week over it and builds the case against first: somebody her age asked to guard a secret that already had other names on it. From her own position and from that of the names on the form, she makes that side as hard as she can before she builds the other. At dinner on Wednesday she is quiet, and Sam asks more than once whether she is all right.
+That night she lies awake, and snaps at Sam at breakfast the next morning for no reason she can name, then apologizes for it before he can ask why. Then she takes a week over it and builds the case against first: Sandoval asking somebody her age to guard a secret that already had other names on it. From her own position and from that of the names on the form, she makes that side as hard as she can before she builds the other. At dinner on Wednesday she is quiet, and Sam asks more than once whether she is all right.
 
 At the end of the week she finds Sandoval outside the laboratory again. "I thought about it. I'll keep it off the phone and off the table. But my name goes on the next agreement somewhere, even at the bottom of the list, or I stop telling you anything that isn't already public."
 
@@ -188,7 +188,7 @@ Kavi does the work over a few evenings, and what he comes back with keeps every 
 
 Kavi has the handset face up on the table and the screen dark, and taps the back of it. "Which is exactly why the login stopped being the whole thing, and that's the second half of what I did. It wants the password, then it wants a number off a card, and the card lives somewhere a long way from the pocket the phone lives in. Take the phone, get the password out of whoever you took it from, and you are standing in a corridor holding a piece of glass."
 
-Ruth cuts a card for each of them that week, small enough to go behind the photograph in a wallet or under the insole of a boot. Sam loses his in April: the failure all of them predicted out loud and built for anyway. A few minutes with Kavi at a terminal puts him back inside. Chloe carries hers behind her range card for the rest of her time in the building, and she checks that it is there about once a week, on her way past something else.
+Ruth cuts a card for each of them that week, small enough to go behind the photograph in a wallet or under the insole of a boot. Sam loses his in April: the failure all of them predicted out loud and built for anyway. Kavi gets him back inside in a few minutes at a terminal. Chloe carries hers behind her range card for the rest of her time in the building, and she checks that it is there about once a week, on her way past something else.
 
 ________________
 

@@ -2,9 +2,9 @@
 
 *May 2026 – June 2026*
 
-Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never held a badge if this goes wrong. Eli's answer comes back within the hour, three lines about compartmentalization that don't touch the actual question, and the no holds through everything that follows, unargued after that, for days.
+Eli proposes the second worm, but Theo says no. That first night he sends back one question of his own: what happens to the four of them who never held a badge if this goes wrong. Eli answers within the hour, three lines about compartmentalization that don't touch the actual question, and no one argues the no again for days.
 
-What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It reaches all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
+Eli sends a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It reaches all of them at once, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 
 The target is the unit Theo told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder; the document is mostly about the second problem, not the first.
 
@@ -60,7 +60,7 @@ chloe: already did. its clause four
 
 nadia: good
 
-Kavi stays bent over the board he's rewiring in the lab when the thread reaches him, and the answer comes out in one line that runs until the mechanism's actually finished.
+Kavi stays bent over the board he's rewiring in the lab when the thread reaches him, and he answers in one line that runs until the mechanism's actually finished.
 
 kavi: the governments own logging is old and its federal so its worse than nadias, which means the risk was never getting in, its someone doing a manual review of the exact files we touch in the exact week we touch them, so the thing that gets us caught is timing, not the door
 

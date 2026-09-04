@@ -4,7 +4,7 @@
 
 The chat is five years old. They wrote the encryption themselves, mostly to keep a teacher from reading what they said to each other over a shoulder at dinner, and none of them has ever used another.
 
-This is the first September when all of them are somewhere else. Eli, a long way from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, a coastline away from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for hundreds, an hour from the apartment she rents.
+This is the first September when all of them are somewhere else. Eli, a long way from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the Army won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, a coastline away from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for hundreds, an hour from the apartment she rents.
 
 Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, a hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in her hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, a few words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
@@ -110,7 +110,7 @@ kavi: you asked what it was measuring earlier this week. same energy
 
 ________________
 
-Halfway through September, Nadia tries to pin an actual date. It's been months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than a couple of people at once. She posts the question on a Tuesday afternoon, and it sits for hours before anyone answers.
+Halfway through September, Nadia tries to pin an actual date. It's been months since anyone in the group has been in a room together, and nobody has turned the loose plan from June, get together before the holidays, into a weekend that works for more than a couple of people at once. She posts the question on a Tuesday afternoon, and it sits for hours before anyone answers.
 
 nadia: ok does anyone actually have a free weekend before december
 
@@ -146,9 +146,9 @@ sam: probably
 
 kavi: still worth asking
 
-By dinner a new thread has replaced it, about something else entirely, and the November date stays exactly as unsettled as it was that morning.
+By dinner the group has moved on to something else entirely, and the November date stays exactly as unsettled as it was that morning.
 
-In October the question comes round again, in an email from Iyad to most of the year, everybody's name typed at the head of their own line with the thing under it he wants back from them: Ruth's Providence weekend, whether Theo's leave is the week he said it was, whether Sam has been told yet, which stretch Priya expects to have a signal in. Under Chloe's name he has put the weekend, and after the weekend, in the typeface used for everything else in it, whether Aurel is coming down with her. Chloe answers hers inside a minute, the weekend and nothing else, and leaves the rest of the line where it is. By Friday most of the lines have dates against them and there is a weekend in November with a column of names sitting under it, but Nadia's Tuesday is still up in the chat where it was, with eli's count under it.
+In October the question comes round again, in an email from Iyad to most of the year, everybody's name typed at the head of their own line with the thing under it he wants back from them: Ruth's Providence weekend, whether Theo's leave is the week he said it was, whether the Army has told Sam yet, which stretch Priya expects to have a signal in. Under Chloe's name he has put the weekend, and after the weekend, in the typeface used for everything else in it, whether Aurel is coming down with her. Chloe answers hers inside a minute, the weekend and nothing else, and leaves the rest of the line where it is. By Friday most of the lines have dates against them and there is a weekend in November with a column of names sitting under it, but Nadia's Tuesday is still up in the chat where it was, with eli's count under it.
 
 ________________
 
@@ -198,7 +198,7 @@ theo: it IS nice. its also insane
 
 ________________
 
-Sam draws half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and whatever's left of it goes to the chat. Tonight it's this.
+Sam draws half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and he spends whatever's left of it on the chat. Tonight it's this.
 
 sam: does anyone elses job do trust falls
 
@@ -294,7 +294,7 @@ Again she squares the statements against the edge of his desk. "I can hold it a 
 
 Anyway she writes the names down, a name to a line, and turns the paper around so it faces him. "Three hundred under is what's in the room. Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 
-The list holds him long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
+The manager stays on the list long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
 "Two days on the nine. Six months, then it gets reviewed."
 
@@ -426,7 +426,7 @@ Reading other people's listings takes her the better part of a fortnight, and mo
 
 ________________
 
-Kavi eats dinner in the hall he always has, at his usual table, a few seats down from where he used to sit before this year moved everyone else out of it.
+Kavi eats dinner in the hall he always has, at his usual table, a few seats down from where he used to sit before everyone else moved on this year.
 
 sam: whats it like eating with twelve year olds now
 
@@ -486,7 +486,7 @@ nadia: fine. get the page kavi
 
 ________________
 
-Days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her. He asked about the formulation too, and got that word for it as well.
+Days pass before Kavi comes back with anything. When he does, he says he asked and they told him it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her. He asked about the formulation too, and got that word for it as well.
 
 chloe: thats not a reason thats a category
 

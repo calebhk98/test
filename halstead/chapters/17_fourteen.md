@@ -66,7 +66,7 @@ Chloe wipes the board down with her back to them, then stops halfway across it a
 
 One of the twelves tells it at their own table, where it is funny and nothing else, and it takes two days to get from there to Iyad. He has it by Tuesday dinner, with her three seats down that table, and says nothing about it that night. He gives it at the long table on the Thursday, with her not there and both benches full, straight down the row: that she taught the year below a whole term of it backwards, all of them, one error running top to bottom and not a single person catching it. The table is still laughing when he starts on the next name, and he makes it round most of the other tables with it by the Saturday.
 
-What comes back to her at the sinks from a girl in her own year she has barely spoken to is the question, whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
+A girl in her own year she has barely spoken to asks her at the sinks whether it is true she taught the lot of them backwards. Chloe's hands stop under the tap.
 
 "It's true. Who told you?" she says.
 
@@ -100,7 +100,7 @@ Chloe reads her own pages again with the clamp sitting on top of them, and the p
 
 Most of what the year does now has other people's names on it as well as hers. Priya has the logistics sheet pinned over her desk beside the sheet from the laboratory and the sheet from comparative religion. On a Tuesday in February all of them want one evening, so she spends dinner going round the long table trading hours with people already trading hours with somebody else; she ends up having moved an hour to Sunday and given up an evening she had already spent in her head.
 
-The groups for engineering and design go up on the noticeboard in the first week of February, a handful of names under each, the school choosing all of it, with the brief on a single page underneath. Put a sound on the long field to within a hand's width. The sound lands where the staff put it rather than where the group puts it, at an hour the staff pick, and it happens once.
+The school chooses the groups for engineering and design, then puts them up on the noticeboard in the first week of February, a handful of names under each, with the brief on a single page underneath. Put a sound on the long field to within a hand's width. The sound lands where the staff put it rather than where the group puts it, at an hour the staff pick, and it happens once.
 
 Eli reads it over her shoulder on his way past to the servery. "They've put your dinner table in a room and given it a number."
 
@@ -124,7 +124,7 @@ Priya is along the radiator under the window with her boots up on the pipe. "You
 
 Nobody answers that on the Tuesday and nobody has a better answer on the Thursday.
 
-The reel has to be signed for and the field is a field. They go wireless anyway. Kavi has it in a fortnight, but then has it no further, and the number surfaces at dinner in the middle of March, with his hands flat either side of the tray.
+The reel has to be signed for and the field is a field. They go wireless anyway. Kavi has it in a fortnight, but then has it no further, and he gives the number at dinner in the middle of March, with his hands flat either side of the tray.
 
 "It sits at a couple of milliseconds and it will not go under. A couple of milliseconds is most of a meter of air, so the answer is a meter wide before Ruth has heard anything and before Chloe has done any arithmetic at all."
 
