@@ -886,11 +886,25 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 180,000 | 1,161 |
-| Food | 82,790 | 534 |
-| Transport | 28,620 | 185 |
-| Activities | 71,300 | 460 |
-| **Segment total** | **362,710** | **2,340** |
+| Food | 85,640 | 553 |
+| Transport | 32,970 | 213 |
+| Activities | 70,700 | 456 |
+| **Segment total** | **369,310** | **2,383** |
 
-Against envelope: Food -2.6% (target 85,000), Transport +0.1% (target 28,600),
-Activities -4.9% (target 75,000) - all within the ±5% tolerance. Lodging is the fixed
-¥18,000 x 10 nights from MASTER-BRIEF and is not flexed.
+Against envelope: Food +0.75% (target 85,000) - within the ±5% tolerance. Activities
+-5.7% (target 75,000) - just outside the ±5% band on the low side: dropping
+Mitsubishi Ichigokan (¥6,000 for the party) outpaced what replaced it on Day 4 (Zojoji,
+free, + Tokyo Tower Main Deck, ¥4,500 for the party = ¥5,400 combined with the also-new
+Hamarikyu Gardens at ¥900). Transport +15.3% (target 28,600) - the one real overage,
+and not close to tolerance: this segment's transport envelope had almost no margin to
+begin with (+0.1% before any of this pass's changes), and Day 4's new route south to
+the previously-unvisited Shiba/Hamarikyu pocket adds two short subway hops (Otemachi ->
+Onarimon -> Shiodome, ¥1,080 for the party) plus the Sumida River water bus home to
+Asakusa (¥3,000 for the party) - genuinely useful transit, not padding, but there was
+no slack in this line to absorb it. The Toyosu Market breakfast (Day 8) is booked as
+Food, not Activities, per the format spec's meal-content rules, which is why the
+Activities line moved opposite the direction the trip's budgeting note anticipated.
+The net effect across all three lines is +6,600 over the combined Food+Transport+
+Activities envelope of ¥188,600 (85,000+28,600+75,000), well inside the trip's
+¥160,000 contingency line per MASTER-BRIEF. Lodging is the fixed ¥18,000 x 10 nights
+from MASTER-BRIEF and is not flexed.
