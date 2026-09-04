@@ -35,7 +35,13 @@ day trips instead of hotel changes.
 
 ## Transfer legs to be costed
 1. Day 11: Tokyo (Shinjuku) -> Kawaguchiko — highway bus
-2. Day 14: Kawaguchiko -> Kyoto — bus + shinkansen, or direct highway bus
+2. Day 14: Kawaguchiko -> Kyoto — RESOLVED: Fujikyu "Mishima-Kawaguchiko Liner"
+   bus to Mishima (~85 min, ¥2,500 online/adult, all seats reserved) + unreserved
+   Hikari Mishima -> Kyoto (~1h50, ¥10,780/adult). ~4h door to door, one transfer.
+   The direct Kawaguchiko-Kansai highway bus (~11h) is rejected as unusable with a
+   12-month-old. Via Otsuki/Tokyo costs ~¥17,000/adult over 5.5h and two transfers;
+   via Shin-Fuji runs only 3x/day on Kodama; the Nagoya bus runs weekends and
+   holidays only and Oct 20 2026 is a Tuesday.
 3. Day 24: Kyoto -> Hiroshima — Sanyo shinkansen (pass candidate)
 4. Day 27: Hiroshima -> Osaka — Sanyo shinkansen (pass candidate)
 5. Day 30: Osaka -> KIX — Nankai / JR Haruka
