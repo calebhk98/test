@@ -2920,7 +2920,9 @@ On the Monday Chloe gets one on her fourth go, and the balls meet an arm's lengt
 
 By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday, and Ruth says she has been practicing while Chloe shrugs and changes the subject. Bex watches the shrug all the way through. On the Monday, with the whole floor sitting down and the markers on the mats, it is Bex who tells Bell she has worked something out, and then tells him what: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, and she says it at the volume she says everything at.
+Kavi watches it a third time on his own, marker up though it isn't loaded, at the wall bars, timing the pump against his own count until three tries in a row come out even. He says the number out loud twice before he trusts it. Bex is at the far end of the mats, lacing a shoe.
+
+People start asking on the Friday, and Ruth says she has been practicing while Chloe shrugs and changes the subject. Bex watches the shrug all the way through. On the Monday, with the whole floor sitting down and the markers on the mats, it is Bex who tells Bell she has worked something out, and then tells him what: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed, and that the pump gives you a count you can time, not one you wait to see, which Kavi had off the wall bars days before anybody asked him. She has all of it, and she says it at the volume she says everything at.
 
 Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. He calls the hour there and starts for the door with the markers under one arm. Bex is still on the mats at the far end when he passes her, and falls into step beside him and goes over the three things again, the barrel, the shoulder, the single speed, though the board already has all three of them written under her name.
 
@@ -3123,6 +3125,8 @@ Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm do
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
 Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later, telling Kavi she means to bring it to the teacher herself once the fortnight is up. Bex asks, across the table, which way she would bet, and asks it again twice more, until she has both ways of measuring it in full, start to finish, and where they disagree.
+
+Down the table, Sam works out twice why the ship needs to be mostly fuel and gets the ratio backward before Kavi corrects him. When he has it right on the third try, on his own, Bex turns from her plate and gives it to the boy on her other side complete, beginning to end, Sam's name on the front of it. Sam goes back to his food.
 
 The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, before Chloe had said a word of it to him herself, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at, and twists further round to find Chloe's row before she gets to the end of the sentence.
 
@@ -3752,7 +3756,9 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They run it the first Saturday in December and it holds, and it is still holding at Christmas.
 
-Chloe has her Saturday half out, workshop first, kitchens after, when Bex is already on her feet with that plan and the table listening to her: the workshop first because the technician locks it at noon, then the kitchens for whatever is going spare, then everything after that. She revises it twice before the plates are stacked, moving the kitchens and then moving them back.
+Sam says, over the last of his own plate, that the kitchens are worth trying after one, once the lunch trays go back, because that is when whatever is left over gets put out.
+
+Chloe has her Saturday half out, workshop first, kitchens after, when Bex is already on her feet with that plan and the table listening to her: the workshop first because the technician locks it at noon, then the kitchens after one for whatever is going spare, Sam's timing, then everything after that. She revises it twice before the plates are stacked, moving the kitchens and then moving them back.
 
 "If we leave the workshop till after, we're," Chloe says.
 
@@ -4475,6 +4481,8 @@ Between May and September she writes a stack of those, Kavi marking some and Nad
 
 Kavi's marking fills the margin. Nadia marks by ruling a line down the side of a paragraph and writing *said nothing* beside it; there is nothing else anywhere on the page. Chloe writes the paragraph again.
 
+In April she leaves a spare copy of each paper at the corner of the library table where Bex works some evenings, in case anybody there wants to check theirs against it. In May she starts leaving the spare with Kavi. Marek still takes his to Bex some weeks, when she's the one still up when he finishes, and she marks his in red, in the margin, no comment underneath, the way she marks anyone's.
+
 The driving instructors in her fourth year do precision and competition work outside the school; they teach by staging emergencies for her to handle, in turn. By September she can already drive, because her father took her out to a church lot the previous July and meant to teach her himself, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan; by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in a flat voice, about his brother-in-law's boat, the state of the tires, and whatever else occurs to him.
@@ -4925,7 +4933,7 @@ She calls home that Sunday and gets most of the way through the week before she 
 
 "Then what's the part?"
 
-Chloe doesn't have a short answer for that one, and the line stays quiet long enough that her mother asks if she's still there.
+"She's done this before," Chloe says. "She's fast, that's all. She's always been fast." Then the line goes quiet long enough that her mother asks if she's still there.
 
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. Asking what watch is, he gets walked through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 
@@ -5165,6 +5173,22 @@ Chloe picks a second length of stripped cable off the bench and starts coiling i
 "I don't have a lab. I turned mine down this afternoon."
 
 "I heard." Kavi doesn't stop turning his own coil. "You didn't turn down a lab. You turned down a filing cabinet, and now it's got my name on it, not yours."
+
+________________
+
+Ruth catches Sam in the stairwell with a stack of admissions mail under one arm, hers this time, MIT's return address on top.
+
+"Bex do your exit interview yet?"
+
+"Tomorrow." Sam shifts the stack to his other arm. "Why?"
+
+"No reason." Ruth starts past him, then stops on the landing. "She still owes you for the range numbers, or did she ever pay that back?"
+
+"Owes me?" Sam says. "She didn't take anything, she gave me the whole breakdown better than I had it myself. My name was on every line of it."
+
+"I know," Ruth says, and goes on up the stairs.
+
+Sam stands on the landing with the mail still under one arm, then shrugs and goes to find out what's for dinner.
 
 ________________
 
