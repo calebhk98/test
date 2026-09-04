@@ -98,7 +98,7 @@ def _solo_notice():
     import sys, os
     if os.environ.get("HALSTEAD_VIA_GRADE"):
         return
-    print("  [one measure of twelve. the scorecard is: python3 grade.py]",
+    print("  [one measure of thirteen. the scorecard is: python3 grade.py]",
           file=sys.stderr)
 
 if __name__ == "__main__":

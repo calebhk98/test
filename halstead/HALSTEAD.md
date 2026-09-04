@@ -2454,7 +2454,7 @@ Upstairs the shower is running, and has been for twenty minutes, with the singin
 
 In the third week Chloe tries to teach her mother Spanish at the counter, with the dishes half done.
 
-"Say it again, slower this time."
+"One more time. I lost it after the first word."
 
 "Ell-oss ess-tan."
 
@@ -6955,7 +6955,7 @@ ________________
 
 The next thing is a memo about a man placed on the Halstead teaching staff. Identification took less than a day, and he was escorted off the property. The school's stated reason is recorded word for word: they do not permit unidentified adults around children.
 
-Theo reads it once, watching for the lines he'd pull if someone handed it to him to summarize. Then again, slower. The third time, he sits back far enough that the chair takes his weight, and then he opens the bottom drawer by feel, past the stapler and the spare lanyard, to a class photo that has sat there since the week he moved into the cubicle. The date is printed along the bottom edge in the school's own hand. The photo goes down beside the memo until the dates agree. It's the whole cohort in the photo, squinting into thin winter light, and even now he can find Chloe near the back of it without trying.
+Theo reads it once, watching for the lines he'd pull if someone handed it to him to summarize. Then he goes back to the top with a pen in his hand and does not write anything. The third time, he sits back far enough that the chair takes his weight, and then he opens the bottom drawer by feel, past the stapler and the spare lanyard, to a class photo that has sat there since the week he moved into the cubicle. The date is printed along the bottom edge in the school's own hand. The photo goes down beside the memo until the dates agree. It's the whole cohort in the photo, squinting into thin winter light, and even now he can find Chloe near the back of it without trying.
 
 Theo was a child then. There was a new teacher for about a day and a half. Something was wrong with him, and the wrongness was most of what anybody talked about at lunch for a week. Theo can still picture him standing at the front of a room. He cannot remember what the man taught, or what he said, or a single specific thing he did.
 

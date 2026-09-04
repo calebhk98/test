@@ -46,7 +46,7 @@ Upstairs the shower is running, and has been for twenty minutes, with the singin
 
 In the third week Chloe tries to teach her mother Spanish at the counter, with the dishes half done.
 
-"Say it again, slower this time."
+"One more time. I lost it after the first word."
 
 "Ell-oss ess-tan."
 

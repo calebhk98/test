@@ -420,14 +420,19 @@ def banned():
     print(run("banned_phrases.py"))
 
 
+def register():
+    rule("9. REGISTER DRIFT BETWEEN CHAPTERS")
+    print(run("register.py"))
+
+
 def voice():
-    rule("9. VOICE SEPARATION")
+    rule("10. VOICE SEPARATION")
     print(run("voice_separation.py", "--prose"))
     print(run("voice_separation.py", "--chat"))
 
 
 def integrity():
-    rule("10. INTEGRITY")
+    rule("11. INTEGRITY")
     for label, script, args in (
             ("Character-sheet quotations not found in the manuscript",
              "verify_citations.py", ()),
@@ -564,6 +569,7 @@ def main():
     tee.run(constructions)
     tee.run(absolutes)
     tee.run(banned)
+    tee.run(register)
     if not a.brief:
         tee.run(voice)
     tee.run(integrity)
