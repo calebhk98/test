@@ -2922,9 +2922,11 @@ By the end of the hour they have more between them than everybody else on the fl
 
 People start asking on the Friday, and Ruth says she has been practicing while Chloe shrugs and changes the subject. Bex watches the shrug all the way through. On the Monday, with the whole floor sitting down and the markers on the mats, it is Bex who tells Bell: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, and she says it at the volume she says everything at.
 
-Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. Bex finds Chloe across the floor before she sits back down, holds it half a second, and turns to her partner without saying anything else.
+Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. He calls the hour there and starts for the door with the markers under one arm. Bex is still on the mats at the far end when he passes her, on any other Monday already halfway to the door ahead of everybody else, but this time she falls into step beside him and goes over the three things again, the barrel, the shoulder, the single speed, though the board already has all three of them written under her name.
 
-Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. On the way out she catches Bell at the door and tells him it was Thursday's, hers and Ruth's, before Bex gets there first. He tells her the sheet is already written and walks off with the markers.
+Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. She reaches the door two steps behind them and gets as far as Thursday's, hers and Ruth's, before Bex, still talking, goes through it alongside Bell and keeps talking the whole way down the corridor. He tells Chloe the sheet is already written and goes on with the markers.
+
+The dining hall queue has gone past the doors and down the corridor by the time Chloe gets there, and the end of the table Bex holds most nights already has somebody else's tray on it. Bex comes in a few places behind her and eats standing at the end of the bench until Ruth shifts down to make room.
 
 That evening at the sinks she gives Ruth all of it, what she said to Bell and what he said back.
 
@@ -3832,7 +3834,9 @@ Nadia looks at it a long moment. "She's right. It's both."
 
 By the end of the meal the table's five opinions have settled on hers.
 
-Iyad tells it at breakfast two days later, to a boy who was not at the table that night: how the table sat on that napkin for most of an hour while Chloe held the answer back until Nadia took the corner off her. The boy asks whether she was right, in the end. "She generally is," Iyad says, and starts on somebody else's week.
+Iyad tells it at breakfast two days later, to a boy who was not at the table that night: how the table sat on that napkin for most of an hour while Chloe held the answer back until Nadia took the corner off her. The boy asks whether she does that a lot. "She generally does," Iyad says, and starts on somebody else's week.
+
+When Nadia catches part of it from a few tables over and asks him whether it really went an hour, he says it was probably closer to twenty minutes.
 
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, Sam between them most nights the same as always, and Chloe does not sit on that side of the table again for the rest of the term.
 
@@ -4910,6 +4914,8 @@ Bex doesn't stop eating. "I did tell him that, and it was true by the time I sai
 "And I said it out loud, with somebody writing it down. That's the version he's got now." Bex is already turned to the boy on her other side, giving him the geometry too, unchanged, down to the run finishing in April.
 
 Chloe has nothing to put next to that. She finishes breakfast at the counter.
+
+Ruth catches the last of it from two seats down and says nothing until Bex is up with her tray. "That's the second time this morning." Bex doesn't slow down. "It's a good story, and it's true." Ruth doesn't answer that, and at lunch the seat she keeps for Bex has somebody else's bag on it.
 
 She calls home that Sunday and gets most of the way through the week before she gets to it, near the end and folded in with everything else: that a rep asked about the long field and Bex answered for all of it, the geometry included, and got every part of it right.
 

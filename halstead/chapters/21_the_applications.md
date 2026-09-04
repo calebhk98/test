@@ -162,6 +162,8 @@ Bex doesn't stop eating. "I did tell him that, and it was true by the time I sai
 
 Chloe has nothing to put next to that. She finishes breakfast at the counter.
 
+Ruth catches the last of it from two seats down and says nothing until Bex is up with her tray. "That's the second time this morning." Bex doesn't slow down. "It's a good story, and it's true." Ruth doesn't answer that, and at lunch the seat she keeps for Bex has somebody else's bag on it.
+
 She calls home that Sunday and gets most of the way through the week before she gets to it, near the end and folded in with everything else: that a rep asked about the long field and Bex answered for all of it, the geometry included, and got every part of it right.
 
 "Well, did she get it right?" her mother says.
