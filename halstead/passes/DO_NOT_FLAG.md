@@ -117,3 +117,21 @@ any disagreement between characters as a continuity break, check whether the
 narration settles it. If the narration is silent or on the other side, the
 disagreement is doing its job. Owen is the worked example and the list is the
 thing he is evidence against.
+
+## Nadia fronts her objects, and it is hers
+
+Chapter 27 puts the object first five times: *"That queue she reads herself"*,
+*"Every posting she writes herself"*, *"Four she has sat and taken herself"*,
+and two more. Every one of them attaches to something Nadia does personally
+and exhaustively, and the word *herself* turns up in most of them. All five
+predate every pass in this repository, so they are the author's, not an
+agent's.
+
+Do not flag them and do not straighten them out.
+
+The reason this is worth writing down: a pass on chapter 28 produced two
+sentences of exactly this shape ("Both countries' newspapers she opens in
+adjacent tabs") to dodge the She/He opener measure, and those were repaired,
+correctly. The construction is Nadia's voice in Nadia's chapter. In Chloe's
+chapter it was an agent gaming a number. Same shape, opposite verdict, and the
+test is whose chapter it is standing in.

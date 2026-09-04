@@ -1137,6 +1137,184 @@ voice, so passive does not address the defect either way. Given because the
 format asks for one, not as a recommendation.
 
 
+## Chapters 27 and 28
+
+### Re-judged: the Hanley line (chapters/27_nadia.md, line 227)
+
+**Current:** "The site stays clean after that, and Hanley's filings all go
+dead in July, all of them inside a fortnight, which she spots in August and
+keeps to herself."
+
+**Why the current voice is wrong:** Third category from the brief, not a
+passive problem. Filings don't go dead on their own; someone withdrew them,
+let them lapse, or had them pulled, and the sentence doesn't say who. That
+would be a minor, ignorable gap in most sentences (rule 8, function 2: agent
+unknown or irrelevant), except that this specific gap sits directly on top
+of the one open question the chapter has spent two pages building: did
+Nadia keep the offer she gave the four men, "none of it goes anywhere...if
+the site stays clean," or did she report Hanley to the state anyway once
+she was safely home? The site does stay clean, which is her stated
+condition for doing nothing. But three unnamed candidates could have caused
+Hanley's collapse and each one tells a different story about her: she went
+back on her own word; the men cut Hanley loose to save themselves; or the
+state caught him without her. Rule 8's own test is "does the sentence lose
+something the reader needs by leaving the doer out," and here it does: it
+loses whether she is someone who keeps a bargain once the danger has
+passed.
+
+**Why it was not auto changed:** Every fix has to pick one of the three
+causes, and picking one is inventing plot, not editing a sentence. I read
+the full confrontation and the chat that follows it twice looking for
+anything the text has already committed to, and found nothing: the "she
+kept her word" reading and the "she quietly didn't" reading both fit
+everything on the page equally well. That is a real reason, not a hedge; the
+last pass flagged this same line for the same reason and I could not close
+the gap they couldn't either.
+
+**Active:** "The site stays clean after that. In August she notices that
+Hanley's filings all lapsed in July, inside the same fortnight, and she
+never works out who pulled them. She keeps that to herself too." (Keeps the
+ambiguity, but hands the not-knowing to Nadia in the scene instead of
+leaving it as a gap only the reader falls into, which is what the section 11
+"does it still refer to something real" test actually wants here.)
+
+**Active:** "The site stays clean after that, and in August she finds out
+that the state came for Hanley in July, all of his filings gone inside a
+fortnight. She keeps that to herself too." (Resolves it toward the reading
+closest to her own stated threat, at the cost of deciding, on the pass's own
+authority, a question the current text leaves open.)
+
+**Passive:** "The site stays clean after that. In August she learns that all
+of Hanley's filings were pulled in July, inside the same fortnight, by whom
+she never finds out. She keeps that to herself too." (An honest passive:
+the agent is stated as unknown rather than simply missing, which is rule 8's
+second condition done properly instead of by accident.)
+
+**Passive:** "The site stays clean after that, and by August every one of
+Hanley's filings has been struck from the register, all within the same
+fortnight. She keeps that to herself too." (Bureaucratic passive that reads
+as state action without the narration committing to saying Nadia caused
+it.)
+
+**My own read, for what it's worth:** I'd hand the author the first active
+option. It is the only one of the four that doesn't quietly decide the plot
+point for him, and it upgrades the sentence from an accidental gap to a
+deliberate one, which is the actual defect here.
+
+### Called out: the fronted-object pattern, chapter 27 (5 instances)
+
+The brief names one specific trick to avoid repeating: fronting the direct
+object ahead of the subject purely to keep a sentence from opening on
+"She." Both named instances in chapter 28 have been repaired and I checked
+them: L55, "Both countries' newspapers are open in adjacent tabs before
+noon," now uses a stative "are open" instead of a fronted object, which
+sidesteps the whole question rather than just hiding it, and is the cleanest
+of the fixes in this report. I also checked L57, "the other she scraps at
+three thousand words," which has the same "object, she, verb" shape but is
+not the trick: it sits mid-sentence after "but," contrasting "the first" and
+"the other," and the she/he-opener measure it would have been dodging
+doesn't even apply to a mid-sentence clause. Left alone, correctly.
+
+Chapter 27, which nobody flagged for this, has the identical construction
+five times, all attached to something Nadia does personally and
+exhaustively:
+
+- L21: "That queue she reads herself, every name on it..."
+- L233: "Every posting she writes herself, in the single-paragraph shape..."
+- L237: "Four she has sat and taken herself: Python, Excel, Spanish..."
+- L245: "The other sixty she reads as well, at the kitchen table..."
+- L289: "Both calls she takes standing at the desk..."
+
+**Why the current voice is wrong:** Same shape as the ch. 28 sentence named
+as the thing not to do. It reads more literary than the sentence it
+resembles ("She reads that queue herself"), which is exactly the direction
+the register rule says not to go, and there is no measure-dodging reason for
+it that a reader can see; it just reads as odd word order for a
+ninth-grade book.
+
+**Why none of them was auto changed:** Five instances of one unusual
+construction, all built around this one character doing everything herself
+rather than delegating (the queue, every posting, every test, the rejects an
+algorithm didn't surface, even a sales call), is different from one isolated
+sentence. It looks like a deliberate tic assigned to Nadia specifically, not
+a leftover dodge, and House Rule 1's own note that "an overused technique is
+cut back, not to zero" argues against a pass unilaterally deciding this one
+should go to zero. I'm reporting the whole set rather than guessing at each
+one individually, since that is the author's call to make once, for all
+five, not mine to make five separate times.
+
+### chapters/27_nadia.md, line 21
+
+**Current:** "That queue she reads herself, every name on it, the same way
+she reads the till tape at her parents' counter before she says hello to
+anyone, and in a good week she finds a handful of names on it."
+
+**Active:** "Nadia reads that queue herself, every name on it, the same way
+she reads the till tape at her parents' counter before she says hello to
+anyone, and in a good week she finds a handful of names on it."
+
+**Passive:** No workable passive. The sentence exists to say that nobody but
+her touches this queue; any version that backgrounds her ("every name gets
+read before anyone else sees it") deletes the fact the sentence is for.
+
+### chapters/27_nadia.md, line 233
+
+**Current:** "Every posting she writes herself, in the single-paragraph
+shape she uses for a labor contract: what the job needs, what it pays, and
+no line about anything else."
+
+**Active:** "Nadia writes every posting herself, in the single-paragraph
+shape she uses for a labor contract: what the job needs, what it pays, and
+no line about anything else."
+
+**Passive:** No workable passive, same reason as line 21: "herself" is the
+word doing the work, and passive removes it.
+
+### chapters/27_nadia.md, line 237
+
+**Current:** "Four she has sat and taken herself: Python, Excel, Spanish,
+and the one on brake systems, which she took to find out whether it would
+catch what her father catches by ear."
+
+**Active:** "Nadia has sat and taken four of them herself: Python, Excel,
+Spanish, and the one on brake systems, which she took to find out whether it
+would catch what her father catches by ear."
+
+**Passive:** No workable passive. "Sat and taken...herself" does not survive
+passivization grammatically, and any version that removes her as the one who
+personally sat the tests removes the sentence's actual claim.
+
+### chapters/27_nadia.md, line 245
+
+**Current:** "The other sixty she reads as well, at the kitchen table before
+the phones start, because the ones it picks are not always the ones she'd
+have picked."
+
+**Active:** "Nadia reads the other sixty as well, at the kitchen table
+before the phones start, because the ones it picks are not always the ones
+she'd have picked."
+
+**Passive:** "The other sixty get read as well, at the kitchen table before
+the phones start, because the ones the pass picks are not always the ones
+she'd have picked." Weaker than the active: the paragraph is contrasting
+what an automated system surfaces against what she does past it, and the
+passive erases the "she" that the contrast depends on.
+
+### chapters/27_nadia.md, line 289
+
+**Current:** "Both calls she takes standing at the desk, says she'll think
+about it, but hires the fifth person before the month is out."
+
+**Active:** "Nadia takes both calls standing at the desk, says she'll think
+about it, but hires the fifth person before the month is out."
+
+**Passive:** "Both calls are taken standing at the desk, with a promise to
+think about it, but the fifth person is hired before the month is out."
+Weaker: "a promise" loses whose it is, and the whole paragraph is a list of
+things Nadia does personally rather than delegates, which this passive
+undercuts.
+
+
 ## Chapters 29 and 30
 
 ### Chapter 29: the three "comes / go to / waits" sentences
@@ -1512,4 +1690,4 @@ changed.
 
 ---
 
-29 sentences called out across 15 spans.
+35 sentences called out across 16 spans.
