@@ -80,15 +80,15 @@ Up on her knees, she cuts back in. "We're all reacting, but you can't react to i
 
 "She told us none of this, we worked it out ourselves, just now, standing here."
 
-Bex is two mats over, missing every ball that comes at her, and has all of it by the time Chloe stops talking.
+They come out of it still talking, Chloe going back through the barrel and the feet with her hand up in front of her face, and nearly walk into Bex at the turn of the corridor. Chloe says sorry and goes round her, still talking. Bex says it's fine. She is still standing there when they reach the far end.
 
 On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
 By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday, and Ruth says she has been practicing while Chloe shrugs and changes the subject. Bex watches the shrug all the way through. On the Monday, with the whole floor sitting down and the markers on the mats, it is Bex who tells Bell: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, and she says it at the volume she says everything at.
+People start asking on the Friday, and Ruth says she has been practicing while Chloe shrugs and changes the subject. Bex watches the shrug all the way through. On the Monday, with the whole floor sitting down and the markers on the mats, it is Bex who tells Bell she has worked something out, and then tells him what: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, and she says it at the volume she says everything at.
 
-Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. He calls the hour there and starts for the door with the markers under one arm. Bex is still on the mats at the far end when he passes her, on any other Monday already halfway to the door ahead of everybody else, but this time she falls into step beside him and goes over the three things again, the barrel, the shoulder, the single speed, though the board already has all three of them written under her name.
+Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on. He calls the hour there and starts for the door with the markers under one arm. Bex is still on the mats at the far end when he passes her, and falls into step beside him and goes over the three things again, the barrel, the shoulder, the single speed, though the board already has all three of them written under her name.
 
 Chloe sits at the front of the floor with her knees up and her arms round them, her ears hot the whole time the marker is on the board. She reaches the door two steps behind them and gets as far as Thursday's, hers and Ruth's, before Bex, still talking, goes through it alongside Bell and keeps talking the whole way down the corridor. He tells Chloe the sheet is already written and goes on with the markers.
 
