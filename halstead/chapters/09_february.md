@@ -44,7 +44,7 @@ Her mother is down on the floor with her by then, in the gap, with both arms rou
 
 "Do what? Because you have to tell me what it is and then I'll fix it, whatever it is."
 
-Chloe can't answer that, because school, the sheets, and Kayleigh Burns are each a piece of it, each too small to be it. The word for the whole thing is nowhere in her.
+Chloe can't answer that. The word for the whole thing is nowhere in her.
 
 "This," she says, with her face against her mother's collarbone. "This, this, all of this."
 
@@ -86,7 +86,7 @@ Her dad stops.
 
 Chloe stays standing. "Am I going, though, is it a real thing, are you actually saying yes to it?"
 
-"We're saying yes, because we already decided," her mom says.
+"We're saying yes. You can stop asking now," her mom says.
 
 "Say it again," Chloe says, still standing, "say all of it again."
 

@@ -138,7 +138,7 @@ Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, a
 
 "You already have all of it, Chloe. You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there," Kavi says, looking down at her from the stairs.
 
-Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor. The first Sunday runs fifty minutes, but the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
+Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor. The first Sunday runs fifty minutes, but the fourth runs twenty, with somebody behind her shifting their weight the whole time.
 
 "Are you eating?" Her mother doesn't wait for an answer. "I don't mean are they giving you food, I mean are you actually eating it."
 
@@ -160,7 +160,7 @@ Her mother laughs, and tells her to save the rest for next Sunday.
 
 ________________
 
-The second term starts and the subjects change over, with history splitting into political history and drawing the world on blank paper. Chloe assumes at first that this is a joke somebody is running on the class, because there is no textbook and no test. The teacher hands out paper and walks around looking at what people have done with it.
+The second term starts and the subjects change over, with history splitting into political history and drawing the world on blank paper. Chloe assumes at first that this is a joke somebody is running on the class. There is no textbook and no test. The teacher hands out paper and walks around looking at what people have done with it.
 
 "Where does this stop, how do I know when a country's actually finished and not just where I got tired of drawing it?"
 

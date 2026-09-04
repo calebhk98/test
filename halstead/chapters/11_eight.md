@@ -94,7 +94,7 @@ Her grandmother says, "She's put on weight since I saw her, and I mean that as a
 
 "She was so thin at Christmas, but I kept it to myself at the time. I'd have said something by Easter if she'd stayed like that."
 
-"I know," her mother says, keeping her voice down to match, because the door is open and Chloe is close enough to hear every word.
+"I know," her mother says, keeping her voice down to match.
 
 Chloe stands against the wall by the door with the glass and tugs her shirt loose from her shorts once, goes back through, and finishes about the bridge, which came second in the room. But at dinner she eats half of what is on her plate.
 
@@ -108,7 +108,7 @@ In September there is a different girl in her room, from Ohio, called Marguerite
 
 "Which do you actually like, though, Margie or the full version everyone skips?"
 
-Margie's mouth opens, closes, opens again. "Margie's fine, because it's shorter and everybody's going to say it anyway, so there's no point in me having a position on it."
+Margie's mouth opens, closes, opens again. "Margie's fine. It's the one that fits on a name tag, and I stopped correcting people back in September, so save your breath."
 
 Fen is on second floor now with a girl from Maine, and while she and Chloe say hello in corridors all year, once in November Fen shows Chloe a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, same hour, different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes, after which Chloe stays behind while the room empties around her.
 
@@ -188,7 +188,7 @@ Twice she reads it through: drawing is on it, along with pottery, glassblowing, 
 
 Sam has come up behind her. "What are you doing? Are you signing up for something or just reading the sheet all day?"
 
-"Still reading, because half of these sound made up and I want to know which ones are real."
+"Still reading. Beekeeping's real, I checked with Ruth already, but I don't believe whittling is an actual class here."
 
 "I'm doing climbing. Kavi's doing electronics. Ruth won't say what she's doing, which means it's something she thinks is embarrassing."
 

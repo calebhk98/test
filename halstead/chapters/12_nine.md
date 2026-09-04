@@ -152,7 +152,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 "You quit riding, and I had to hear about it from Anne instead of you." Priya sits down at dinner, two days later. "Now everyone at the barn thinks I said something to make you stop, which I didn't. I've had to explain that more times than I can count this week."
 
-"Yeah, and I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
+"Yeah, and I should have told you instead of just not showing up on the Thursday, and I'd have saved you a week of explaining yourself to Anne."
 
 "Why, though, what happened out there? Anne asked me on Tuesday where you'd gone, and all I had for her was a shrug."
 
@@ -176,7 +176,7 @@ Her mother takes some days off in July and they do the coast, a long drive each 
 
 Her mother moves a peg. "You've got no run in this hand, not yet, and that's a different kind of score entirely. You'll see runs everywhere for about a week, and half of them won't be there. Everybody does it."
 
-Chloe loses the first few games, because she keeps counting the same card twice, then takes the fourth and the fifth, at which her mother says a word she usually saves for other company, before dealing again. They play until the pool lights go off.
+Chloe loses the first few games, then takes the fourth and the fifth, at which her mother says a word she usually saves for other company, before dealing again. They play until the pool lights go off.
 
 In the third week, her father is at the table with a stack of paper and a pen.
 

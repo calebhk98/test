@@ -52,7 +52,7 @@ Her cuffs stop reaching her wrists in October, and inside a fortnight she and Ru
 
 ________________
 
-The bread comes up in Ruth's room on a Tuesday, with the others on the floor and Priya lying across the end of the bed, because Sam will keep saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
+The bread comes up in Ruth's room on a Tuesday, with the others on the floor and Priya lying across the end of the bed. Sam keeps saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
 
 Ruth turns a page of the book open on her knees. "It's the same bread, Sam, and the same flour, ovens, and people behind it. The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
 
@@ -260,7 +260,7 @@ The first one comes round after about seven minutes, confused for a beat, before
 
 "Okay." She writes a dash on her arm and checks his pulse again. "Second floor lab or the server room?" He doesn't answer, though his face does; Kavi says "server room" and writes it down.
 
-The third one wakes up about a minute later, younger, less good at keeping his face still; then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
+The third one wakes up about a minute later, younger, less good at keeping his face still; then it stops being an interrogation.
 
 "Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a handset off a shelf. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
 
