@@ -1,22 +1,10 @@
 # Part III: Appendices
 
-## Appendix A. What to book in advance, and when
+## Appendix A. Advance booking
 
-| When | What | Why it cannot wait |
-|---|---|---|
-| As soon as dates are fixed | All five properties | The two-room split depends on availability of both a twin and a single at the same property on the same nights. This gets harder, not easier, as October approaches |
-| Same time | Ghibli Museum (Day 10) | Advance lottery only. There is no walk-up ticket. Entering the lottery is free; losing it costs nothing but the plan should not assume a win |
-| ~1 month out | Fujikyu "Mishima-Kawaguchiko Liner" (Day 14) | All seats reserved, and it sells out. This is the single most fragile booking in the itinerary, because the whole Kyoto transfer depends on it |
-| ~1 month out | Shinjuku to Kawaguchiko highway bus (Day 11) | Reserved seating; needs a paid seat for the 20-month-old |
-| Before departure | JR Kansai-Hiroshima Area Pass | Cheaper bought before arrival; activate on Day 24 so it runs 30 Oct to 3 Nov |
-| Before departure | eSIM or pocket wifi | |
-| No booking needed | Jidai Matsuri (Day 16) | Free street viewing. Do not buy grandstand seats |
-| No booking needed | Midosuji illumination (Day 28) | Free public street event |
-
-**Declare both infants' ages in writing when booking every property.** The entire
-lodging strategy rests on preschool children co-sleeping free, one per bed. Some chains
-count every body against a hard room cap regardless of age, and finding that out at
-check-in with two tired children is the worst possible time.
+Superseded. The advance-booking plan is now Part V of this report, rebuilt and
+re-verified against the final itinerary after the route changed. See there for the
+booking timeline, the book-these-first shortlist, and the items that need a phone call.
 
 ## Appendix B. Japan with a 12-month-old and a 20-month-old
 

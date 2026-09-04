@@ -1,4 +1,4 @@
-# Budget envelope — REVISED against research (v2)
+# Budget envelope - REVISED against research (v2)
 
 Planning FX rate: **¥155 = $1.00 USD** (spot 2026-09-04; 12-month band ¥140-164).
 Target: **$9,000 USD** = **¥1,395,000**. 3 adults + 2 infants, 30 days / 29 nights.
@@ -24,12 +24,12 @@ Net effect: money moves from food to lodging. The $9,000 target survives.
 |---|---|---|---|---|
 | Lodging (29 nights) | 670,000 | 4,323 | ¥23,100/night | two budget rooms or one washitsu family room |
 | Food (30 days) | 200,000 | 1,290 | ¥6,670/day | self-catered base + ~1 restaurant meal/day |
-| Transport | 172,000 | 1,110 | — | 4 intercity moves + daily local + airport legs |
+| Transport | 172,000 | 1,110 | - | 4 intercity moves + daily local + airport legs |
 | Activities & admissions | 125,000 | 806 | ¥4,170/day | infants free almost everywhere; many free days |
 | Baby consumables | 68,000 | 439 | ¥2,270/day | diapers, formula, purees for two |
 | Misc (eSIM, laundry, lockers, forwarding) | 38,000 | 245 | ¥1,270/day | |
 | **Planned subtotal** | **1,273,000** | **8,213** | ¥42,400/day | |
-| Contingency (10%) | 127,000 | 819 | — | typhoon re-route, illness, price drift |
+| Contingency (10%) | 127,000 | 819 | - | typhoon re-route, illness, price drift |
 | **TOTAL** | **1,400,000** | **9,032** | | |
 
 Per adult: **$3,011**. Per adult per day: **$100.4**. On target.

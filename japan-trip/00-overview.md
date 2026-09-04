@@ -13,13 +13,13 @@ Excluded from the $9,000: international airfare, passports, visas, travel insura
 |---|---|
 | **Dates** | Wed 7 Oct 2026 (arrive Narita) to Thu 5 Nov 2026 (depart Kansai) |
 | **Shape** | Open-jaw: into Tokyo, out of Osaka |
-| **Bases** | Tokyo 10n, Kawaguchiko 3n, Kyoto 10n, Hiroshima 3n, Osaka 3n |
+| **Bases** | Tokyo 10n, Kawaguchiko 3n (one a ryokan), Kyoto 10n, Hiroshima 3n, Osaka 3n |
 | **Intercity moves** | 4 |
-| **Planned spend** | **¥1,215,480 ($7,842)** |
-| **Contingency** | ¥184,520 ($1,190) |
+| **Planned spend** | **¥1,240,320 ($8,002)** |
+| **Contingency** | ¥159,680 ($1,030) |
 | **Total budget** | **¥1,400,000 ($9,032)** |
 | **Per adult** | $3,011 |
-| **Per adult per day** | $100.35 budgeted, $87.13 planned |
+| **Per adult per day** | $100.35 budgeted, $88.91 planned |
 
 The trip is built around a single structural decision: **four moves in thirty days.**
 Every base change with a 12-month-old and a 20-month-old costs a half day of usable
@@ -127,17 +127,17 @@ allocated top-down. The category rows below add exactly to the day-by-day totals
 
 | Category | ¥ | $ | Share of planned |
 |---|---|---|---|
-| Lodging, 29 nights | 508,000 | 3,277 | 42% |
-| Food, 30 days | 234,590 | 1,513 | 19% |
-| Activities and admissions | 194,100 | 1,252 | 16% |
-| Transport | 172,790 | 1,115 | 14% |
-| Baby consumables | 68,000 | 439 | 6% |
+| Lodging, 29 nights | 531,580 | 3,430 | 43% |
+| Food, 30 days | 243,000 | 1,568 | 20% |
+| Activities and admissions | 182,210 | 1,176 | 15% |
+| Transport | 177,530 | 1,145 | 14% |
+| Baby consumables | 68,000 | 439 | 5% |
 | Misc: eSIM, laundry, lockers, forwarding | 38,000 | 245 | 3% |
-| **Planned** | **1,215,480** | **7,842** | 100% |
-| Contingency (15.2%) | 184,520 | 1,190 | |
+| **Planned** | **1,240,320** | **8,002** | 100% |
+| Contingency (12.9%) | 159,680 | 1,030 | |
 | **Total budget** | **1,400,000** | **9,032** | |
 
-### Why planned spend is $7,842 rather than $9,000
+### Why planned spend is $8,002 rather than $9,000
 
 The reserve is doing real work rather than padding a number. **No lodging rate in this
 report is a quote.** Booking engines returned no date-stamped 2026 availability, so all
@@ -146,10 +146,13 @@ season. If the real quotes land 20% above estimate, lodging goes from $3,277 to 
 and eats $655 of the reserve on its own. A 10-yen move in the exchange rate is worth
 another $500 or so on a trip this size.
 
-If the rates hold, roughly $1,100 is genuinely discretionary. Sensible places to spend
-it, in order: one night at a proper ryokan with a private family bath in Kawaguchiko,
-Ghibli Museum tickets if the advance lottery comes through, and a handful of better
-dinners in Osaka and Kyoto. It is deliberately not pre-committed.
+Some of that headroom has already been spent, deliberately. A whole-trip audit found
+one experience rated genuinely missing across all 29 nights, and Day 13 now answers it:
+the party moves out of the Kawaguchiko hostel for one night at a lakeside ryokan with a
+tatami room, futon bedding, a kaiseki dinner and a rentable private family bath. That
+costs ¥23,580 above the night it replaces, plus about ¥5,900 for the ryokan meals.
+
+What remains uncommitted is roughly $1,030. It is the reserve, not a shopping list.
 
 ### The one thing that nearly broke the budget
 

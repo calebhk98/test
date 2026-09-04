@@ -4,7 +4,7 @@ Every day is one markdown block. No deviation in headings, order, or table colum
 
 ---
 
-## Day N — Weekday, Month D, 2026 — <City / Base>
+## Day N - Weekday, Month D, 2026 - <City / Base>
 
 **Base:** <city> | **Weather (typical):** <high>/<low> °C, <rain note>
 **Theme:** <one line>
@@ -25,7 +25,7 @@ Every day is one markdown block. No deviation in headings, order, or table colum
 
 ### Lodging
 
-**<Property name>** — <full street address>
+**<Property name>** - <full street address>
 Unit: <type, max occupancy> | Nightly: ¥X,XXX (= $XX.XX) | Night <n> of <total>
 
 ### Meals

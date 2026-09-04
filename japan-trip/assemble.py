@@ -50,6 +50,24 @@ all rail and transit.
 """]
 for f in ORDER:
     out.append("\n---\n\n"+(D/f).read_text().strip())
-out.append("\n---\n\n"+(ROOT/"99-appendix.md").read_text().strip())
+# Part III: the places, Part IV: coverage, Part V: booking, Part VI: shopping, Part VII: appendices
+out.append("""
+---
+
+# Part III: The five places
+
+Five stops in thirty days, and a first-time visitor cannot be expected to know how
+they differ. Each profile below says what the place actually is, what walking around
+it feels like, how it contrasts with the other four, and then audits what this
+itinerary sees there against what a first-time visitor would want to see.
+""")
+for name, f in [("Tokyo","tokyo.md"), ("Kawaguchiko and the Fuji Five Lakes","kawaguchiko.md"),
+                ("Kyoto","kyoto.md"), ("Hiroshima and Miyajima","hiroshima.md"), ("Osaka","osaka.md")]:
+    out.append("\n---\n\n"+(ROOT/"places"/f).read_text().strip())
+for title, f in [("Part IV: Whole-trip coverage audit","coverage-audit.md"),
+                 ("Part V: Advance booking","advance-booking.md"),
+                 ("Part VI: Shopping lists and supply runs","shopping-lists.md")]:
+    out.append("\n---\n\n# "+title+"\n\n"+(ROOT/f).read_text().strip())
+out.append("\n---\n\n"+(ROOT/"99-appendix.md").read_text().strip().replace("# Part III: Appendices","# Part VII: Appendices"))
 (ROOT/"ITINERARY.md").write_text("\n".join(out)+"\n")
 print(f"ITINERARY.md written: {len(rows)} days, day-line total ¥{run:,} (${round(run/FX):,})")
