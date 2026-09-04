@@ -44,7 +44,7 @@ Kavi turns up an hour later and stands in the doorway with his arms folded until
 
 "What's your last name," Chloe says.
 
-The dining hall is long tables under a roof high enough to keep the noise, so the far end of it comes back down the room with the words gone out of it. At dinner she counts sixteen familiar faces. The food comes, and she gives up after that: of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term at a time until it stopped being a thing anybody remarked on. A boy asks whether she is the one who did the bridge at camp; when she says no he says that's fine and carries on eating. On the way out Sam shows her a corridor window that sticks half an inch open however hard you push it, then walks past the second-floor noticeboards with his eyes ahead. On the way back with the trays she asks Ruth about Owen.
+The dining hall is long tables under a roof high enough to keep the noise, so the sound from the far end comes back down the room with the words gone out of it. At dinner she counts sixteen familiar faces. The food comes, and she gives up after that: of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term at a time until it stopped being a thing anybody remarked on. A boy asks whether she is the one who did the bridge at camp; when she says no he says that's fine and carries on eating. On the way out Sam shows her a corridor window that sticks half an inch open however hard you push it, then walks past the second-floor noticeboards with his eyes ahead. On the way back with the trays she asks Ruth about Owen.
 
 "He left camp in the second week, the boy in the room across from Sam with a blue thing hanging off his bag."
 
@@ -118,7 +118,7 @@ After that it is the hour she gets up for.
 
 ________________
 
-It takes her a while to work out what actually gets somebody sent home from Halstead, checking off a list she keeps only in her head.
+It takes her a while to work out what actually gets somebody sent home from Halstead, and she keeps that list only in her head.
 
 On the second floor by the stairs there is a corkboard everybody walks past, carrying three sheets of paper in April: one about something called Defensive Watch, another about the library, and a third about the kitchens, who is allowed in them, and when. All of them are silent on the subject of anybody leaving, so she reads them again on a different day in case she missed a line, then asks the writing teacher, because he is the one she has decided will simply answer her.
 

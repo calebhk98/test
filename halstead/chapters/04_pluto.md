@@ -218,7 +218,7 @@ Chloe says yes.
 
 ________________
 
-There's a fourth in Pluto who stays silent day after day, answering when the teacher calls on him, in as few words as he can, laughing at Sam, and otherwise silent.
+There's a fourth in Pluto who stays silent day after day, answering when the teacher calls on him, in as few words as he can, laughing at Sam, and otherwise saying nothing.
 
 Chloe has been doing the same thing for six days.
 

@@ -92,7 +92,7 @@ Self defense stays ten of them on one with a minute on the clock, and her averag
 
 "First one's always short," Kavi says, standing at the line. "It recovers by the third."
 
-Forty comes on the second and thirty-nine on the third; afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
+Forty comes on the second and thirty-nine on the third; afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and Chloe answers it badly, so she finds Odile at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
 
 On a Friday she catches Kowalczyk about it at the door of the mat room, with the next group already coming past both of them.
 

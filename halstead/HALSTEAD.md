@@ -1011,7 +1011,7 @@ Chloe says yes.
 
 ________________
 
-There's a fourth in Pluto who stays silent day after day, answering when the teacher calls on him, in as few words as he can, laughing at Sam, and otherwise silent.
+There's a fourth in Pluto who stays silent day after day, answering when the teacher calls on him, in as few words as he can, laughing at Sam, and otherwise saying nothing.
 
 Chloe has been doing the same thing for six days.
 
@@ -2268,7 +2268,7 @@ Kavi turns up an hour later and stands in the doorway with his arms folded until
 
 "What's your last name," Chloe says.
 
-The dining hall is long tables under a roof high enough to keep the noise, so the far end of it comes back down the room with the words gone out of it. At dinner she counts sixteen familiar faces. The food comes, and she gives up after that: of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term at a time until it stopped being a thing anybody remarked on. A boy asks whether she is the one who did the bridge at camp; when she says no he says that's fine and carries on eating. On the way out Sam shows her a corridor window that sticks half an inch open however hard you push it, then walks past the second-floor noticeboards with his eyes ahead. On the way back with the trays she asks Ruth about Owen.
+The dining hall is long tables under a roof high enough to keep the noise, so the sound from the far end comes back down the room with the words gone out of it. At dinner she counts sixteen familiar faces. The food comes, and she gives up after that: of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term at a time until it stopped being a thing anybody remarked on. A boy asks whether she is the one who did the bridge at camp; when she says no he says that's fine and carries on eating. On the way out Sam shows her a corridor window that sticks half an inch open however hard you push it, then walks past the second-floor noticeboards with his eyes ahead. On the way back with the trays she asks Ruth about Owen.
 
 "He left camp in the second week, the boy in the room across from Sam with a blue thing hanging off his bag."
 
@@ -2342,7 +2342,7 @@ After that it is the hour she gets up for.
 
 ________________
 
-It takes her a while to work out what actually gets somebody sent home from Halstead, checking off a list she keeps only in her head.
+It takes her a while to work out what actually gets somebody sent home from Halstead, and she keeps that list only in her head.
 
 On the second floor by the stairs there is a corkboard everybody walks past, carrying three sheets of paper in April: one about something called Defensive Watch, another about the library, and a third about the kitchens, who is allowed in them, and when. All of them are silent on the subject of anybody leaving, so she reads them again on a different day in case she missed a line, then asks the writing teacher, because he is the one she has decided will simply answer her.
 
@@ -2962,7 +2962,7 @@ Then he goes through what a drill can be: people over the fence at the loading s
 
 Most of them are announced, with a board that says *Thursday, afternoon block* a week out and a dozen names going up with it; everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is a drill sprung with no warning at all, first thing in the morning or in the middle of lunch; people count the weeks.
 
-Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
+Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody has her off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
 The sheet is posted on the Friday; every name on it has an F next to it and a numbered list underneath.
 
@@ -4249,7 +4249,7 @@ Self defense stays ten of them on one with a minute on the clock, and her averag
 
 "First one's always short," Kavi says, standing at the line. "It recovers by the third."
 
-Forty comes on the second and thirty-nine on the third; afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
+Forty comes on the second and thirty-nine on the third; afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and Chloe answers it badly, so she finds Odile at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
 
 On a Friday she catches Kowalczyk about it at the door of the mat room, with the next group already coming past both of them.
 
@@ -7204,7 +7204,7 @@ The job starts in January. She turns twenty-one in August.
 
 Ruth spends her first year at MIT believing the school has put her in a remedial track.
 
-It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Her assumption is that a real sequence exists somewhere the school hasn't placed her in, a bureaucratic problem, and she spends most of October trying to find the right office.
+It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Ruth assumes there is a real sequence somewhere and the school has not put her in it, a bureaucratic problem, and she spends most of October trying to find the right office.
 
 The registrar's office is several flights up in a building with no elevator sign that works, and the woman behind the counter hears the whole explanation out before she answers. Ruth lays out the timeline: the diagnostic she took in August, the placement it produced, the syllabus she's printed and highlighted in color to show exactly where the first week repeats material Halstead gave her as a child. The woman is patient but entirely unmoved. The placement stands, she says, and a petition is the only route to a review, and she slides a form across the counter. It asks for a faculty signature Ruth hasn't gotten yet.
 
@@ -7900,11 +7900,11 @@ Theo closes his laptop carefully, a beat before he's fully decided the conversat
 
 ________________
 
-It's still warm enough at midnight that she's got the window cracked, the ordinary noise of the street coming up thin through the screen over the sound of the fan.
+It's still warm enough at midnight that Chloe has the window cracked, the ordinary noise of the street coming up thin through the screen over the sound of the fan.
 
 Chloe reads that at one in the morning, with work waiting on the other side of a short night.
 
-Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality, the kind of building that stopped feeling strange to walk into somewhere early on. Before she puts the phone down she taps out one line to Ruth alone, not the group: watch the thread tonight, im out for a few hours. Ruth answers within a minute, already awake: on it. Chloe reads the rest of the messages once and sets the phone face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
+Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality, in a building that stopped feeling strange to walk into somewhere early on. Before she puts the phone down she taps out one line to Ruth alone, not the group: watch the thread tonight, im out for a few hours. Ruth answers within a minute, already awake: on it. Chloe reads the rest of the messages once and sets the phone face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
 The next day, she goes in and does her job, and texts Ruth once before lunch to ask if the night held.
 

@@ -98,10 +98,10 @@ Theo closes his laptop carefully, a beat before he's fully decided the conversat
 
 ________________
 
-It's still warm enough at midnight that she's got the window cracked, the ordinary noise of the street coming up thin through the screen over the sound of the fan.
+It's still warm enough at midnight that Chloe has the window cracked, the ordinary noise of the street coming up thin through the screen over the sound of the fan.
 
 Chloe reads that at one in the morning, with work waiting on the other side of a short night.
 
-Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality, the kind of building that stopped feeling strange to walk into somewhere early on. Before she puts the phone down she taps out one line to Ruth alone, not the group: watch the thread tonight, im out for a few hours. Ruth answers within a minute, already awake: on it. Chloe reads the rest of the messages once and sets the phone face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
+Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality, in a building that stopped feeling strange to walk into somewhere early on. Before she puts the phone down she taps out one line to Ruth alone, not the group: watch the thread tonight, im out for a few hours. Ruth answers within a minute, already awake: on it. Chloe reads the rest of the messages once and sets the phone face down on the nightstand. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
 The next day, she goes in and does her job, and texts Ruth once before lunch to ask if the night held.

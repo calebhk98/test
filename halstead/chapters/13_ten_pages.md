@@ -127,7 +127,7 @@ Then he goes through what a drill can be: people over the fence at the loading s
 
 Most of them are announced, with a board that says *Thursday, afternoon block* a week out and a dozen names going up with it; everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is a drill sprung with no warning at all, first thing in the morning or in the middle of lunch; people count the weeks.
 
-Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
+Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody has her off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
 The sheet is posted on the Friday; every name on it has an F next to it and a numbered list underneath.
 

@@ -195,3 +195,42 @@ This applies to prose passes above all, and to analysis passes as well, since
 an analysis agent writes example rewrites that get pasted into chapters. There
 is no exception for a hard chapter or an important scene. A pass that comes
 back reading like an essay has failed whatever else it hit.
+
+## 8. The passive is not the fault. Losing a person who is standing there is.
+
+Seventeen agents were handed a flat ban on putting a person in the subject of
+a passive. Two of them obeyed it and broke a correct sentence: *"the way he
+has been taught since he was small"* became *"the way he learned it since he
+was small"*, which is not English, and *"a state he first set foot in the day
+he was posted to it"* became a circle. Who taught Sam, and who posted him,
+are unknown and beside the point. That is the case where English wants the
+passive.
+
+The ban was a proxy. The real rule, which is a hundred years old and which
+nobody on this project looked up until the author went and asked somebody,
+has three parts. A passive is the right choice when any of them holds:
+
+1. **Topic continuity.** The thing the paragraph is about stays in the
+   subject slot instead of jumping around. Old information before new.
+2. **The agent is unknown, irrelevant, or obvious.** Nobody needs telling
+   that the Army posts soldiers or that a school pairs students.
+3. **The receiver is what the sentence is about.** *"Polish is added to the
+   autumn schedule"* is about the schedule, not about whichever office
+   clicked the button.
+
+So the test on any suspect sentence is: **is the missing doer a specific
+person who is already in this scene, and does the sentence lose something
+the reader needs by leaving them out?** If yes, put them back. If no, leave
+the passive alone, and leave it alone whether the subject is a person or a
+thing.
+
+Two sentences sitting in the manuscript right now that the old rule would
+have flagged and the real rule correctly leaves alone: *"The boy she is
+paired with says, 'Lucky'"* in chapter 13, and *"in the order he is required
+to take them"* in chapter 26. Both have a person in the subject of a passive.
+Both are right.
+
+The person/object split correlated with the truth in this book only because
+it is a book about named people and institutions doing things to a child. It
+is not a rule of English and it will misfire in both directions. The full
+working, with sources, is in `passes/PROSE_PRINCIPLES_STRUCTURE.md`.

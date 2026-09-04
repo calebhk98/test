@@ -4,7 +4,7 @@
 
 Ruth spends her first year at MIT believing the school has put her in a remedial track.
 
-It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Her assumption is that a real sequence exists somewhere the school hasn't placed her in, a bureaucratic problem, and she spends most of October trying to find the right office.
+It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. Ruth assumes there is a real sequence somewhere and the school has not put her in it, a bureaucratic problem, and she spends most of October trying to find the right office.
 
 The registrar's office is several flights up in a building with no elevator sign that works, and the woman behind the counter hears the whole explanation out before she answers. Ruth lays out the timeline: the diagnostic she took in August, the placement it produced, the syllabus she's printed and highlighted in color to show exactly where the first week repeats material Halstead gave her as a child. The woman is patient but entirely unmoved. The placement stands, she says, and a petition is the only route to a review, and she slides a form across the counter. It asks for a faculty signature Ruth hasn't gotten yet.
 
