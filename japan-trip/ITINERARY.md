@@ -2080,7 +2080,7 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 
 ## Notes on this segment
 
-- **Breakfast is free every day** at Toyoko Inn Kyoto Shijo-Omiya (rice, miso, natto, pickles, bread, coffee) - budgeted at ¥0 and counted as ~500 kcal/adult toward the daily 2,000, per the brief.
+- **Breakfast is free every day** at Toyoko Inn Kyoto Shijo-Omiya (rice, miso, natto, pickles, bread, coffee) - budgeted at ¥0 and counted as ~500 kcal/adult toward the daily 2,000,.
 - **Kyoto City Bus one-day pass:** the traditional ¥700 all-day bus pass was discontinued in autumn 2023 (Kyoto City's own move to ease bus overcrowding and push visitors toward the subway). We did not assume it still exists - every bus leg in this segment is priced as an individual IC-card (ICOCA/Suica) flat fare of ¥230/adult per boarding instead, which is simpler for a stroller-heavy itinerary in any case.
 - **Two of the five days (15 and 16) are built on mostly free activities** - Fushimi Inari and Nishiki Market cost nothing to enter/browse; Jidai Matsuri street viewing, the Philosopher's Path, and the Kyoto Imperial Palace (Gosho, Day 19) cost nothing. Paid admissions this segment are Tenryu-ji, Kiyomizu-dera, Nijo Castle, Kinkaku-ji, Ryoan-ji, Heian Jingu's garden, Okochi Sanso, the Torokko scenic train, and the kimono rental - all infants free throughout.
 - **Kyoto Gyoen vs. the Gosho:** Day 16 visits Kyoto Gyoen, the free public park, for Jidai Matsuri viewing only. The Kyoto Imperial Palace (Gosho) - the walled palace compound inside that park - is a separate, free, no-reservation walk-in visit, folded into Day 19's route instead so it doesn't compete with the festival for time.
@@ -4435,7 +4435,7 @@ Days [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)-[26](#day-26---
 ##### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
 **Store:** ekie, the shopping and supermarket complex directly connected to Hiroshima Station's
 south exit [VERIFIED, WebSearch - "includes a supermarket... just beyond the ticket gates"].
-The hotel is "central Hiroshima, ~1.2 mi from Peace Memorial Park" per the brief and its exact
+The hotel is in central Hiroshima, about 1.2 miles from Peace Memorial Park, and its exact
 address is unverified, so ekie (at the station) is named as the reliable option rather than
 guessing a closer branch; a conbini or drugstore nearer the hotel itself is a fine substitute
 for the infant-only items.

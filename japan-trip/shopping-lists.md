@@ -245,7 +245,7 @@ Days @@DAYLINK:24@@-@@DAYLINK:26@@ | Toyoko Inn Hiroshima Ekimae Ohashi Minami, 
 #### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
 **Store:** ekie, the shopping and supermarket complex directly connected to Hiroshima Station's
 south exit [VERIFIED, WebSearch - "includes a supermarket... just beyond the ticket gates"].
-The hotel is "central Hiroshima, ~1.2 mi from Peace Memorial Park" per the brief and its exact
+The hotel is in central Hiroshima, about 1.2 miles from Peace Memorial Park, and its exact
 address is unverified, so ekie (at the station) is named as the reliable option rather than
 guessing a closer branch; a conbini or drugstore nearer the hotel itself is a fine substitute
 for the infant-only items.
