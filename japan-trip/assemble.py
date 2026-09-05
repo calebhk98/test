@@ -255,6 +255,14 @@ end = doc.index("## Appendix C: The five places")
 section = re.sub(r"(\|\s)([\d,\s/]+?)(\s\|)", link_day_cell, doc[start:end])
 doc = doc[:start] + section + doc[end:]
 
+# Link each day's Hotel field to its entry in the hotels appendix.
+def link_hotel(m):
+    name = m.group(1).rstrip()
+    a = anchors.get(name)
+    return f"**Hotel:** [{name}](#{a})  " if a else m.group(0)
+doc = re.sub(r"^\*\*Hotel:\*\*\s*([^\n]*?)\s*$", link_hotel, doc, flags=re.M)
+print("hotel fields linked:", len(re.findall(r"\*\*Hotel:\*\* \[", doc)))
+
 # Link store names in the day schedules to their shopping-run section.
 STORE_CITY = {
     "Gyomu Super Ueno-Hirokoji": "Tokyo shopping runs",

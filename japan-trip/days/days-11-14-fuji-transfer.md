@@ -342,7 +342,7 @@ Adult kcal sum: 550 + 700 + 750 = **2,000**.
 | Mishima → Kyoto | Tokaido Shinkansen Hikari, unreserved | 1h50 | 10,780 | 32,340 (infants free; stroller exempt from oversized-baggage reservation) |
 | Kyoto Stn → Shijo-Omiya | Kyoto City Bus | 0h20 | 230 | 690 |
 
-Allow the full 20-30 min buffer at Mishima per the brief; the schedule above books 20 min.
+Allow the full 20-30 min buffer at Mishima; the schedule above books 20 min.
 
 ### Activities
 

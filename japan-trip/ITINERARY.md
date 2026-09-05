@@ -238,7 +238,7 @@ stock-up run, early night against jet lag with two infants.
 ### Lodging
 
 **Night:** 1 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -343,7 +343,7 @@ than keeping them cleanly separate.
 ### Lodging
 
 **Night:** 2 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -449,7 +449,7 @@ everything inside a 15-minute walk of the Livemax.
 ### Lodging
 
 **Night:** 3 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -570,7 +570,7 @@ Gardens, riding the Sumida River water bus home to Asakusa.
 ### Lodging
 
 **Night:** 4 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -682,7 +682,7 @@ rest block set in the park itself.
 ### Lodging
 
 **Night:** 5 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -783,7 +783,7 @@ away from the holiday crowds.
 ### Lodging
 
 **Night:** 6 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -878,7 +878,7 @@ across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 ### Lodging
 
 **Night:** 7 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -966,7 +966,7 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 ### Lodging
 
 **Night:** 8 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -1057,7 +1057,7 @@ traditional garden.
 ### Lodging
 
 **Night:** 9 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -1154,7 +1154,7 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
 ### Lodging
 
 **Night:** 10 of 10  
-**Hotel:** Hotel Livemax Higashi-Ueno  
+**Hotel:** [Hotel Livemax Higashi-Ueno](#hotel-livemax-higashi-ueno)  
 **Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -1282,7 +1282,7 @@ Active out-of-lodging time: about 7h15 (3h50 before the rest block, 3h25 after),
 ### Lodging
 
 **Night:** 1 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
-**Hotel:** K's House Mt. Fuji  
+**Hotel:** [K's House Mt. Fuji](#ks-house-mt-fuji)  
 **Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants, co-sleeping) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -1373,7 +1373,7 @@ Active out-of-lodging time: about 8h05 (5h45 before the rest block, 2h20 after),
 ### Lodging
 
 **Night:** 2 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
-**Hotel:** K's House Mt. Fuji  
+**Hotel:** [K's House Mt. Fuji](#ks-house-mt-fuji)  
 **Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
@@ -1462,7 +1462,7 @@ Active out-of-lodging time: about 6h55 (4h00 before the rest block, 2h55 after),
 ### Lodging
 
 **Night:** 1 of 1 (ryokan; Days 11-12 were K's House Mt. Fuji - see those days' Lodging blocks)  
-**Hotel:** Lakeland Hotel Mizunosato  
+**Hotel:** [Lakeland Hotel Mizunosato](#lakeland-hotel-mizunosato)  
 **Address:** 1070 Kodachi, Fujikawaguchiko, Minamitsuru-gun, Yamanashi 401-0302  
 **Unit:** Japanese-style tatami room, futon bedding, room-only plan; sleeps 3 adults + 2 infants co-sleeping on futon (exact family-room configuration and any infant futon/meal surcharge are not published on the ryokan's site - confirm both by phone before booking). Kaiseki dinner and Japanese breakfast booked as half-board add-ons (priced in Meals below); a 40-minute rentable private kashikiri bath booked separately (priced in Activities below).  
 **Nightly:** ¥41,580 (= $268.26) - room-only rate, verified official per-person rate of ¥13,860 x 3 adults; infants not charged for the room itself (planning estimate - the ryokan's own infant/child charge policy is not published)
@@ -1553,7 +1553,7 @@ Active out-of-lodging time: about 7h35 (5h25 before the rest block, 2h10 after),
 ### Lodging
 
 **Night:** 1 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -1577,7 +1577,7 @@ Adult kcal sum: 550 + 700 + 750 = **2,000**.
 | Mishima → Kyoto | Tokaido Shinkansen Hikari, unreserved | 1h50 | 10,780 | 32,340 (infants free; stroller exempt from oversized-baggage reservation) |
 | Kyoto Stn → Shijo-Omiya | Kyoto City Bus | 0h20 | 230 | 690 |
 
-Allow the full 20-30 min buffer at Mishima per the brief; the schedule above books 20 min.
+Allow the full 20-30 min buffer at Mishima; the schedule above books 20 min.
 
 ### Activities
 
@@ -1660,7 +1660,7 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 ### Lodging
 
 **Night:** 2 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult), max occupancy per room as booked  
 **Nightly:** ¥19,000 (= $122.58)
@@ -1748,7 +1748,7 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 ### Lodging
 
 **Night:** 3 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -1838,7 +1838,7 @@ Infants ride free on the subway, Hankyu, and city bus legs. The family returns t
 ### Lodging
 
 **Night:** 4 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -1893,6 +1893,11 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 **Weather (typical):** 22/14 °C, dry  
 **Theme:** Kiyomizu-dera and the Higashiyama lanes, evening in Gion
 
+**On kimono.** The rental is booked on Day 23 rather than today. An alternative is to
+move it here, because Kiyomizu-dera and the Sannenzaka and Ninenzaka lanes are the
+setting most kimono photographs in Kyoto are taken in. The trade-offs are set out on
+Day 23.
+
 ### Schedule
 
 | Time | Duration | Type | Item |
@@ -1924,7 +1929,7 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 ### Lodging
 
 **Night:** 5 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -2019,7 +2024,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 ### Lodging
 
 **Night:** 6 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -2160,7 +2165,7 @@ here is "covered by pass."*
 ### Lodging
 
 **Night:** 7 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -2258,7 +2263,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 ### Lodging
 
 **Night:** 8 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -2364,7 +2369,7 @@ rest above - free, no separate stop and no schedule change.
 ### Lodging
 
 **Night:** 9 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -2435,7 +2440,17 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 **Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 21-25/15 °C, pre-peak foliage  
-**Theme:** The day's headline addition: kimono rental and hands-on Nishijin weaving, the trip's answer to the group's anime-robes wish. No day trip: the three adults wear rented kimono for a Kamo riverbank walk after the hands-on weaving experience, and the day still closes with a neighbourhood sento and an early night before the Day 24 move to Hiroshima.
+**Theme:** Kimono rental and hands-on Nishijin weaving. No day trip: the three adults wear rented kimono for a Kamo riverbank walk after the weaving, and the day closes with a neighbourhood sento and an early night before the Day 24 move to Hiroshima.
+
+**An alternative arrangement for the kimono.** It is booked here on Day 23 and worn
+around Nishijin, the Kamo riverbank and the sento. An alternative is to rent from the
+same shop, Yumeyakata Gojo, on Day 18 instead and wear it around Kiyomizu-dera and the
+Sannenzaka and Ninenzaka lanes, because that stretch of Higashiyama is the setting most
+kimono photographs in Kyoto are taken in, and rental kimono is common enough there that
+nobody looks twice. The trade is threefold: Day 18 is already fuller and would go from
+about 6h20 active back to roughly 7h40; Yumeyakata's Gojo shop is a bus ride or a 25 to
+30 minute walk west of the Kiyomizu approach rather than a step outside the gate; and
+Day 23 would lose its headline, keeping the Nishijin weaving, the riverbank and the sento.
 
 ### Schedule
 
@@ -2477,7 +2492,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 ### Lodging
 
 **Night:** 10 of 10  
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
 **Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
@@ -2510,7 +2525,7 @@ free on city buses; party cost = adult fare x 3.
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
 | [Nishijin Textile Center: hands-on weaving + kimono show](#crafts-and-hands-on-activities) | 1h00 | 2,530 | 7,590 | Horikawa-dori Imadegawa-minami-iri Nishigawa, Kamigyo-ku, Kyoto 602-8216 | Nishijin-ori is Kyoto's roughly 1,200-year-old brocade weaving tradition, the reason this whole neighbourhood exists: since the medieval Muromachi period its workshops have hand-woven the elaborate, often gold-threaded fabric used for high-end kimono and obi sashes. The family weaves, sitting at a mini hand-loom to make a small cloth (about 20x30cm) to take home, guided step by step. Reservation required at least 2 days ahead via the official nishijin.or.jp site; ¥2,530/adult at the 2026 posted rate, with the free kimono show and loom demonstrations downstairs still worth a look before or after at no extra cost. The building is flat and stroller-accessible, but a mini loom needs both hands and a foot treadle, so this is an adult-turn activity: the three adults weave one at a time while the other two mind the infants, who may enjoy watching the shuttle move for a few minutes but won't sit through the whole hour. |
-| [Kimono rental for the day](#crafts-and-hands-on-activities) | 0h30 (fitting; worn all day) | 5,280 | 15,840 | Yumeyakata Gojo Shop, 353 Shiogamacho, Shimogyo-ku, Kyoto 600-8103 (2F; 3-min walk from Gojo Stn, Kyoto Municipal Subway) | Yumeyakata is a well-known Kyoto kimono rental chain with English-speaking staff; its standard plan rents a full kimono set (garment, obi, tabi socks, and a bag) for the whole day, worn out and returned by 17:30 the same evening - the genuine hands-on version of the group's "robes from anime" wish, worn rather than watched. Adult fitting takes about 20-30 minutes with staff help; the shop's own 2026 pricing lists a discounted ¥4,180/adult "campaign" rate, but that campaign runs only through 31 August 2026, before these late-October dates, so the standing ¥5,280/adult rate used here is the honest figure (reconfirm at booking in case the campaign is renewed for autumn). Practically: a wrapped kimono skirt and a snugly tied obi are hard to nurse or change a diaper in, so this is adults-only for the day; wooden geta sandals plus a stroller is a genuinely awkward combination on anything but flat pavement, which is why the walk below stays on the paved riverside path; and some Kyoto rental shops restrict or halt rentals on rainy days, so treat this as a fair-weather plan and confirm the shop's rain policy when booking. Yumeyakata also sells (does not rent) baby hakama for under-85cm infants from ¥4,510, but that is a short photo-op garment neither infant - especially the 12-month-old - will tolerate for a full day; skip it unless the family specifically wants that one photo, and it is not included in the cost here. |
+| [Kimono rental for the day](#crafts-and-hands-on-activities) | 0h30 (fitting; worn all day) | 5,280 | 15,840 | Yumeyakata Gojo Shop, 353 Shiogamacho, Shimogyo-ku, Kyoto 600-8103 (2F; 3-min walk from Gojo Stn, Kyoto Municipal Subway) | Yumeyakata is a well-known Kyoto kimono rental chain with English-speaking staff; its standard plan rents a full kimono set (garment, obi, tabi socks, and a bag) for the whole day, worn out and returned by 17:30 the same evening - the participatory version of wearing traditional dress rather than only seeing it. Adult fitting takes about 20-30 minutes with staff help; the shop's own 2026 pricing lists a discounted ¥4,180/adult "campaign" rate, but that campaign runs only through 31 August 2026, before these late-October dates, so the standing ¥5,280/adult rate used here is the honest figure (reconfirm at booking in case the campaign is renewed for autumn). Practically: a wrapped kimono skirt and a snugly tied obi are hard to nurse or change a diaper in, so this is adults-only for the day; wooden geta sandals plus a stroller is a genuinely awkward combination on anything but flat pavement, which is why the walk below stays on the paved riverside path; and some Kyoto rental shops restrict or halt rentals on rainy days, so treat this as a fair-weather plan and confirm the shop's rain policy when booking. Yumeyakata also sells (does not rent) baby hakama for under-85cm infants from ¥4,510, but that is a short photo-op garment neither infant - especially the 12-month-old - will tolerate for a full day; skip it unless the family specifically wants that one photo, and it is not included in the cost here. |
 | [Kamo riverbank walk (in kimono)](#streets-lanes-and-canal-walks) | 1h00 | 0 | 0 | Kamo River near Gojo, Shimogyo-ku, Kyoto (district; address unverified) | The Kamo River's grassy, paved banks near the kimono shop are today's photo backdrop while the three adults are dressed for the day - no ticket, no schedule, just flat green space and running water. It stays on the paved path throughout since geta sandals are slower and stiffer than sneakers on anything uneven. Free, and stroller-friendly for whichever infant is riding rather than being carried while an adult's hands are full of kimono sleeve. |
 | [Local sento (public bath)](#onsen-sento-and-bathing) | 0h45 | 490 | 1,470 | Neighbourhood bathhouse near Omiya (address unverified) | A sento is a neighbourhood public bathhouse, built historically because most homes didn't have their own bath, still used today for the ritual of soaking rather than washing at home. It differs from an onsen: an onsen's water is a natural hot spring with its own mineral content, while a sento simply heats tap or well water (some "super sento" blend the two). Bathing is nude and gender-separated, with full washing and rinsing at the stool-and-tap stations before entering the shared soaking tub; most sento still refuse visible tattoos, a policy rooted in their historical association with organized crime, so anyone in the party with tattoos should call ahead or bring a waterproof cover patch. Many sento welcome infants and toddlers into the same-gender bathing area with a parent, often with quieter family-friendly hours soon after opening, but both the tattoo and infant policy vary by bathhouse - confirm with the specific sento before going rather than assuming. |
 
@@ -2604,7 +2619,7 @@ Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
 ### Lodging
 
 **Night:** 1 of 3  
-**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
+**Hotel:** [Toyoko Inn Hiroshima Ekimae Ohashi Minami](#toyoko-inn-hiroshima-ekimae-ohashi-minami)  
 **Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
@@ -2707,7 +2722,7 @@ by the rail pass beyond the island admissions.
 ### Lodging
 
 **Night:** 2 of 3  
-**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
+**Hotel:** [Toyoko Inn Hiroshima Ekimae Ohashi Minami](#toyoko-inn-hiroshima-ekimae-ohashi-minami)  
 **Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
@@ -2811,7 +2826,7 @@ Shukkei-en garden and Hiroshima Castle.
 ### Lodging
 
 **Night:** 3 of 3  
-**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
+**Hotel:** [Toyoko Inn Hiroshima Ekimae Ohashi Minami](#toyoko-inn-hiroshima-ekimae-ohashi-minami)  
 **Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
@@ -2907,7 +2922,7 @@ at Dotonbori.
 ### Lodging
 
 **Night:** 1 of 3  
-**Hotel:** Toyoko Inn Osaka Namba  
+**Hotel:** [Toyoko Inn Osaka Namba](#toyoko-inn-osaka-namba)  
 **Address:** Namba area (specific branch address unverified)  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
@@ -3022,7 +3037,7 @@ Active out-of-lodging time: about 8h20 (6h10 before the rest block, 2h10 after),
 ### Lodging
 
 **Night:** 2 of 3  
-**Hotel:** Toyoko Inn Osaka Namba  
+**Hotel:** [Toyoko Inn Osaka Namba](#toyoko-inn-osaka-namba)  
 **Address:** Namba area (specific branch address unverified)  
 **Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
@@ -3116,7 +3131,7 @@ and a Dotonbori evening.
 ### Lodging
 
 **Night:** 3 of 3  
-**Hotel:** Toyoko Inn Osaka Namba  
+**Hotel:** [Toyoko Inn Osaka Namba](#toyoko-inn-osaka-namba)  
 **Address:** Namba area (specific branch address unverified)  
 **Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)

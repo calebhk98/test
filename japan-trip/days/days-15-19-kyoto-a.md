@@ -271,6 +271,11 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 **Weather (typical):** 22/14 °C, dry  
 **Theme:** Kiyomizu-dera and the Higashiyama lanes, evening in Gion
 
+**On kimono.** The rental is booked on Day 23 rather than today. An alternative is to
+move it here, because Kiyomizu-dera and the Sannenzaka and Ninenzaka lanes are the
+setting most kimono photographs in Kyoto are taken in. The trade-offs are set out on
+Day 23.
+
 ### Schedule
 
 | Time | Duration | Type | Item |
