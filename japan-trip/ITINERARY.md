@@ -59,6 +59,7 @@
     - [Why two rooms rather than one](#why-two-rooms-rather-than-one)
     - [The properties](#the-properties)
     - [The three capsule nights](#the-three-capsule-nights)
+    - [Women-only alternatives to the three capsule nights](#women-only-alternatives-to-the-three-capsule-nights)
     - [What to confirm before paying](#what-to-confirm-before-paying)
   - [Appendix E: Advance booking](#appendix-e-advance-booking)
     - [1. Booking timeline, ordered by when to act](#1-booking-timeline-ordered-by-when-to-act)
@@ -4332,6 +4333,66 @@ absorbs without touching anything else. Ask when booking the block, not on the d
 
 None of the three rates is a quote. All three chains price dynamically and publish no
 fixed rate for a 2026 date this far out.
+
+### Women-only alternatives to the three capsule nights
+
+The three properties above are mixed: men's and women's floors under one roof, behind
+separate security gates. A woman who would rather have no men in the building at all has
+a verified alternative in each city. These are alternatives, not the plan. The days are
+written around the properties above, and swapping one in changes only that night.
+
+Each is a whole women-only property rather than a women's floor, which is the point:
+a women's floor is what the planned picks already offer. Every one is a different
+building from the planned pick, so the walk or ride from the base hotel changes.
+
+**Tokyo, night of Day [5](#day-5---sunday-october-11-2026---tokyo): Akihabara BAY HOTEL**  
+44-4 Kanda-Neribeicho, Chiyoda-ku, Tokyo 101-0022  
+Link: [bay-hotel.jp](https://www.bay-hotel.jp/akihabara/eng/)  
+The operator's own page says it plainly: "Capsule hotel only for women", and the FAQ
+answers the mixed-booking question with "No. This hotel is for women only." A classic
+no-frills capsule rather than a designer pod: 130 standard 206 x 100 x 100 cm capsules,
+a women-only basement lounge, shower rooms with no bath, coin laundry on each floor and
+wristband floor access. Elementary-school children and younger cannot stay at all;
+middle-school age and older need a signed parental consent form. Estimated ¥4,500-18,600
+before tax, a wide aggregator range rather than a quote. Same Akihabara station area as
+GLANSIT and the same Hibiya Line ride from Iriya with no transfer, so this one costs
+nothing in convenience.
+
+**Kyoto, night of Day [16](#day-16---thursday-october-22-2026---kyoto): MAJA HOTEL KYOTO**  
+92 Tsuchiya-cho, Yanaginobamba-dori Rokkaku-agaru, Nakagyo-ku, Kyoto 604-8112  
+Link: [maja-hotel.com](https://maja-hotel.com/)  
+"The capsule hotel for female-use only", in the operator's own words, across all its
+guest floors on 2F to 4F. The most interesting building of the six named here: designed
+by the Finnish industrial designer Harri Koskinen, with triangular-roofed wooden capsule
+huts in two sizes, Marimekko textiles, Airweave mattresses and a Café Aalto downstairs
+for breakfast. Under-16s cannot stay; under-18s travelling alone need parental consent.
+Estimated ¥6,000-13,000, from dated guest reviews rather than a published rate. One
+Hankyu stop from Omiya to Karasuma then an 8-minute walk, about 12-15 minutes door to
+door, so roughly 3 to 5 minutes further than GLANSIT Kawaramachi on the same line.
+
+**Osaka, night of Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka): a-STYLE Shinsaibashi**  
+4-12-10 Minamisenba, Chuo-ku, Osaka 542-0081, 8F of the ACN Shinsaibashi Building  
+Billed as Kansai's first completely women-only capsule hotel, women-staffed, with POLA
+skincare amenities and hair straighteners and facial steamers in the shared powder area.
+Roughly ¥5,000 for a basic capsule, undated. One Midosuji Line stop from Namba to
+Shinsaibashi then a 3-minute walk, about 10-12 minutes, against a First Cabin that needs
+no train at all.
+
+**This last one carries a real caveat the other two do not.** The operator's own website
+has lapsed and now returns a 404, so nothing about it could be confirmed at the source.
+The address and the women-only status come from the operator's 2016 opening announcement
+and from trade press and travel-agency listings that agree with each other, and the
+property still takes 2026 bookings on the aggregators, which suggests it is trading. Its
+minimum age could not be found anywhere. Phone before relying on it. A woman who wants
+the certainty instead can keep First Cabin Midosuji Namba, whose women's area is a
+separately gated 19-cabin wing with its own entrance, and which is a walk rather than a
+train ride.
+
+**Two obvious names that do not work.** Centurion Ladies Hostel Ueno Park sat by
+Shinobazu Pond, close enough to walk to from the Tokyo base hotel, and appears to have
+closed around 2020. No women-only branch of First Cabin or Nine Hours exists in Kansai
+at all; Nine Hours' women's properties are both in Tokyo, and First Cabin's women's
+areas are zones inside mixed buildings.
 
 ### What to confirm before paying
 
