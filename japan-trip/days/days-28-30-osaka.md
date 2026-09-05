@@ -89,7 +89,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 11,250 | 73 |
 | **Day total** | **34,210** | **221** |
 
-**Running total after Day 28: ¥1,132,490 ($7,306)**
+**Running total after Day 28: ¥1,137,354 ($7,338)**
 
 ---
 
@@ -183,7 +183,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 10,500 | 68 |
 | **Day total** | **38,150** | **246** |
 
-**Running total after Day 29: ¥1,170,640 ($7,553)**
+**Running total after Day 29: ¥1,175,504 ($7,584)**
 
 **Option on the table, not scheduled: Bunraku at the National Bunraku Theatre.** The theatre sits one minute from Kintetsu Nipponbashi Station, the same block as this day's Kuromon Ichiba lunch stop, and its Kinshu (Autumn) run covers 31 Oct - 23 Nov 2026 - open the entire Osaka stay. Bunraku puppets are worked in full view, roughly a metre tall, each handled by three visible black-clad puppeteers, with a chanter and shamisen player performing live at the side of the stage; nothing is spoken that needs translating to follow it, which makes it arguably the single best answer on this whole trip to "how is Japanese theatre different from American theatre." Tickets run about ¥6,500/adult, uniform seating, and the theatre's own FAQ sets no minimum age - only a policy that a disruptive child may be asked to step out, with lobby monitors as a fallback. **It is not scheduled, for one plain reason: Part 1 alone runs 2h20 or longer, which means one adult sits alone with both infants for that entire stretch on the trip's last full day**, and taking it means dropping the Tombori River Cruise above and trimming the Shinsekai stop to make room. It is priced and ready to book as-is if the family decides that trade is worth it; it is left out of the schedule and the Day 29 Cost table above on the assumption that it is not.
 
@@ -238,6 +238,33 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 *(No activities scheduled - departure day.)*
 
+### Packing and departure notes
+
+**What must be consumed, binned or left behind before checkout (08:15) and before security:**
+- Any opened pouch, snack packet or half-finished formula tin from the Day 27 Osaka run - the
+ run was sized to run out around Day 29 night, so there should be little to nothing left; bin
+ what remains rather than carry an open, mostly-empty tin through security.
+- Any part-used nappy pack: keep only what's needed for the travel day itself (flight plus
+ transit) in hand luggage; leave a genuinely spare handful behind rather than repack a torn bag.
+- Hotel toiletries, opened wipes packets not needed in-flight, anything not going in the carry-on
+ or the checked bag - leave for housekeeping rather than binning usable items.
+- **Nothing perishable exists to deal with** - there has been no kitchen, and therefore no fresh
+ food, since Day 13.
+
+**What's prohibited or restricted in hand luggage on an international departure from KIX:**
+- The standard liquids/gels rule applies: containers over 100ml are not allowed in the cabin
+ outside of a single clear 1L resealable bag, and that bag's total liquid volume is capped
+ (typically ~1L) at most international airports, KIX included.
+- **Baby formula, breast milk and baby food (including pouches/purees) typically carry a
+ medical or infant exemption** to the 100ml liquids rule in most jurisdictions, including Japan
+ and most international carriers' home countries, when a child is travelling with the party.
+ This usually means these items can exceed 100ml but must be declared and presented separately
+ at the screening tray, and may be tested.
+- Formula **powder** (an unopened tin, or any that's left) is not a liquid and is not subject to
+ the liquids rule at all - it can travel in carry-on or checked luggage without restriction.
+- Nappies, wipes and a few days of dry pouches/snacks are fine in carry-on with no special
+ handling needed.
+
 ### Day 30 Cost
 
 | Category | ¥ | $ |
@@ -248,7 +275,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 0 | 0 |
 | **Day total** | **7,790** | **50** |
 
-**Running total after Day 30: ¥1,178,430 ($7,603)**
+**Running total after Day 30: ¥1,183,294 ($7,634)**
 
 ---
 

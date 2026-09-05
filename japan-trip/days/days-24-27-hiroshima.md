@@ -23,21 +23,31 @@
 | 12:00 | 0h05 | Transit | Walk, hotel -> Hiroshima Stn concourse |
 | 12:05 | 1h00 | Food | Lunch near Hiroshima Stn |
 | 13:05 | 0h05 | Transit | Walk, Hiroshima Stn concourse -> hotel |
-| 13:10 | 1h45 | Rest | Rest / infant naps at hotel |
-| 14:55 | 0h15 | Transit | Hotel -> Peace Memorial Park, Hiroden streetcar |
+| 13:10 | 1h10 | Rest | Rest / infant naps at hotel (trimmed from 1h45 - see note) |
+| 14:20 | 0h10 | Transit | Walk, hotel -> ekie, Hiroshima Stn south exit |
+| 14:30 | 0h25 | Food | Hiroshima arrival grocery run at ekie - infant-supply stock-up (formula, pouches, nappies, wipes) sized for the whole 4-night block, plus snacks/fruit for the Miyajima day trip |
+| 14:55 | 0h15 | Transit | Ekie/Hiroshima Stn -> Peace Memorial Park, Hiroden streetcar |
 | 15:10 | 1h15 | Activity | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free |
 | 16:25 | 0h05 | Transit | Walk, Peace Memorial Park -> Hondori arcade |
 | 16:30 | 0h45 | Food | Dinner near Peace Park / Hondori arcade |
 | 17:15 | 0h20 | Transit | Walk/streetcar back to hotel |
 | 17:35 | - | Rest | Evening at hotel, infants down |
 
-- Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
+- Travel day: about 3h50 of seated transit plus a midday rest block at the hotel and a
   light evening walk. The hotel is genuinely "Ekimae" (station-front, about a 5-minute walk
   from Hiroshima Stn), and Hondori arcade is a further 5-minute walk east of Peace Park
   rather than adjoining it.
-- Active out-of-lodging time: about 7h10 (4h30 before the rest block, 2h40 after), plus a
-  1h45 rest block. This is a touch over the ~7h guideline, on a day that's otherwise a
-  seated shinkansen transfer.
+- **Shopping appendix run, placed at ~14:30 rather than the appendix's rough ~15:00:** ekie
+  sits right at Hiroshima Stn, a few minutes from the hotel, so the whole party makes this
+  run together on the way back out toward Peace Memorial Park rather than as a separate trip.
+  It's sized for the entire 4-night Hiroshima block (formula, pouches, both nappy sizes,
+  wipes) plus a small snack/fruit buy for the Miyajima day trip. The 35 minutes it adds (walk
+  there, the shop, and folding straight into the streetcar leg) is absorbed by trimming the
+  midday rest from 1h45 to 1h10, not by delaying Peace Memorial Park, dinner, or the infants'
+  bedtime - Peace Memorial Park still starts at 15:10, exactly as before.
+- Active out-of-lodging time: about 7h45 (4h30 before the rest block, 3h15 after), plus a
+  1h10 rest block. This runs about 45 minutes over the ~7h guideline, all of it the Hiroshima
+  grocery run - the seated shinkansen transfer itself is unchanged.
 
 ### Lodging
 
@@ -54,8 +64,13 @@
 | Lunch | Tempura udon set with rice, pickles and a small side salad, station concourse teishoku counter | Hiroshima Stn concourse, Minami-ku | 650 | 1,950 |
 | Dinner | Tonkotsu ramen with a side of pan-fried gyoza, casual counter-seating shop | Hondori arcade area, Naka-ku | 750 | 2,550 |
 | Infant food | Formula (Wakodo or Pigeon, combined feeds for both infants), vegetable-and-chicken puree pouches (Wakodo Rakuraku or Pigeon) for the 12-month-old; banana and steamed sweet potato off the family table for the 20-month-old | Conbini near hotel | n/a | 1,800 |
+| Miyajima day-trip snacks | Snacks/fruit bought during the ekie grocery run, for the Day 25 Miyajima trip | ekie, Hiroshima Stn south exit | n/a | 400 |
 
 Adult kcal: 550 + 650 + 750 = **1,950**.
+
+The ekie run's formula, pouches, nappies and wipes (¥7,088) are trip-level baby consumables
+per the shopping appendix's Section 4 reconciliation and are not added to the Food line above -
+only the ¥400 snack/fruit item is.
 
 ### Transport
 
@@ -82,12 +97,12 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 15,000 | 97 |
-| Food | 6,300 | 41 |
+| Food | 6,700 | 43 |
 | Transport | 52,350 | 338 |
 | Activities | 0 | 0 |
-| **Day total** | **73,650** | **475** |
+| **Day total** | **74,050** | **478** |
 
-**Running total after Day 24: ¥1,012,400 ($6,532)**
+**Running total after Day 24: ¥1,016,864 ($6,560)**
 
 ---
 
@@ -195,7 +210,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 | Activities | 10,360 | 67 |
 | **Day total** | **34,160** | **220** |
 
-**Running total after Day 25: ¥1,046,560 ($6,752)**
+**Running total after Day 25: ¥1,051,024 ($6,781)**
 
 ---
 
@@ -296,7 +311,7 @@ infants ride free.
 | Activities | 7,980 | 51 |
 | **Day total** | **31,300** | **202** |
 
-**Running total after Day 26: ¥1,077,860 ($6,954)**
+**Running total after Day 26: ¥1,082,324 ($6,983)**
 
 ---
 
@@ -321,8 +336,10 @@ at Dotonbori.
 | 11:00 | 0h30 | Admin | Check in, drop bags |
 | 11:30 | 0h10 | Transit | Walk, hotel -> lunch spot near Namba |
 | 11:40 | 1h00 | Food | Lunch near Namba |
-| 12:40 | 0h10 | Transit | Walk, lunch spot -> hotel |
-| 12:50 | 1h45 | Rest | Rest / infant naps at hotel |
+| 12:40 | 0h05 | Transit | Walk, lunch spot -> Life Namba / Cocokara Fine, Namba |
+| 12:45 | 0h15 | Food | Osaka arrival grocery run - infant-supply top-up (formula tin, pouches) plus Kobe day-trip snacks; no new nappies needed, Hiroshima's pack still has supply |
+| 13:00 | 0h10 | Transit | Walk, Life Namba -> hotel |
+| 13:10 | 1h25 | Rest | Rest / infant naps at hotel (trimmed from 1h45 - see note) |
 | 14:35 | 0h20 | Transit | Hotel -> Dotonbori, walk |
 | 14:55 | 1h05 | Activity | Dotonbori canal-side walk (Glico sign, arcade browsing) + Pokemon Center Osaka DX, Daimaru Shinsaibashi 9F, free |
 | 16:00 | 0h15 | Transit | Walk, Daimaru Shinsaibashi -> Namba Yasaka Shrine |
@@ -332,16 +349,24 @@ at Dotonbori.
 | 17:50 | 0h20 | Transit | Walk back to hotel |
 | 18:10 | - | Rest | Evening at hotel, infants down |
 
-- Day span 07:00-18:10 (11h10), with the shinkansen leg seated and low-stress and a 1h45
-  midday rest block at the new hotel before the evening outing. Pokemon Center Osaka DX is
+- Day span 07:00-18:10 (11h10), with the shinkansen leg seated and low-stress and a midday
+  rest block at the new hotel before the evening outing. Pokemon Center Osaka DX is
   folded into the Dotonbori stop rather than given a separate transit leg - Daimaru
   Shinsaibashi's 9th floor is a few minutes' walk further up the Shinsaibashi-suji arcade from
   the canal, so that stop needs no extra time of its own. Namba Yasaka Shrine, though, is a
   genuine ~15-minute walk each way from Dotonbori/Shinsaibashi, not an in-passing stop; infants
   still go down by 18:10, earlier than on Days 25 or 26.
-- Active out-of-lodging time: about 7h40 (4h05 before the rest block, 3h35 after), plus a
-  1h45 rest block. This runs about 40 minutes over the ~7h guideline - it's a shinkansen
-  transfer day with a full evening outing added on top.
+- **Shopping appendix run, fitted around the arrival evening rather than against it:** Day 27
+  already carries the Dotonbori walk, the Pokemon Center stop and the genuine there-and-back
+  to Namba Yasaka Shrine, so the appendix's Osaka arrival run is folded into the existing walk
+  back from lunch (Life Namba/Cocokara Fine sit right in the same Namba area) rather than
+  added as a separate outing. The only thing that gives is 20 minutes trimmed from the midday
+  rest (1h45 down to 1h25) - the Dotonbori/Pokemon Center/Yasaka Shrine evening, dinner, and
+  the 18:10 bedtime are all untouched.
+- Active out-of-lodging time: about 8h00 (4h25 before the rest block, 3h35 after), plus a
+  1h25 rest block. This runs about 1h00 over the ~7h guideline - it's a shinkansen
+  transfer day with a full evening outing added on top, now also carrying the Day 27 arrival
+  grocery run.
 
 ### Lodging
 
@@ -358,8 +383,13 @@ at Dotonbori.
 | Lunch | Kake udon with a chicken tempura and an onigiri, self-serve udon counter (e.g. Marugame Seimen) | near Namba Stn | 700 | 2,250 |
 | Dinner | Osaka-style street food: takoyaki (octopus-filled batter balls, griddled and topped with sauce, mayonnaise and bonito flakes) plus a side of negiyaki or a kushikatsu skewer (e.g. Takoyaki Doraku Wanaka) | Dotonbori, Chuo-ku | 750 | 2,400 |
 | Infant food | Purees (Pigeon or Morinaga pouches) for the 12-month-old; soft rice, egg, and small cooled pieces of takoyaki filling off the family plate for the 20-month-old | Conbini near hotel | n/a | 1,900 |
+| Kobe day-trip snacks | Snacks/fruit bought during the arrival grocery run, for the Day 28 Kobe day trip | Life Namba, Naniwa-ku, Osaka | n/a | 400 |
 
 Adult kcal: 550 + 700 + 750 = **2,000**.
+
+The arrival run's formula tin and pouches (¥3,180) are trip-level baby consumables per the
+shopping appendix's Section 4 reconciliation and are not added to the Food line above - only
+the ¥400 snack/fruit item is.
 
 ### Transport
 
@@ -386,12 +416,12 @@ covered in the next segment.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 13,000 | 84 |
-| Food | 6,550 | 42 |
+| Food | 6,950 | 45 |
 | Transport | 870 | 6 |
 | Activities | 0 | 0 |
-| **Day total** | **20,420** | **132** |
+| **Day total** | **20,820** | **134** |
 
-**Running total after Day 27: ¥1,098,280 ($7,086)**
+**Running total after Day 27: ¥1,103,144 ($7,117)**
 
 ---
 
@@ -400,15 +430,16 @@ covered in the next segment.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 58,000 | 374 |
-| Food | 28,650 | 185 |
+| Food | 29,450 | 190 |
 | Transport | 54,540 | 352 |
 | Activities | 18,340 | 118 |
-| **Segment total** | **159,530** | **1,029** |
+| **Segment total** | **160,330** | **1,034** |
 
-Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000) - both within
-the ±5% tolerance. Activities -25.2% (target 26,000), well under target: the Tombori River
-Cruise appears only once across Days 27-29 (on Day 29, in the Osaka file) rather than being
-charged here too, and Daisho-in Temple and Namba Yasaka Shrine, both free, are added
-instead. That's a real saving from a single-charge cruise, not a shortfall to paper over, and
-it isn't backfilled with padding activities. Lodging is the fixed ¥15,000 x 3 nights + ¥13,000
-x 1 night from MASTER-BRIEF and is not flexed.
+Against envelope: Food -1.8% (target 30,000, up from the appendix-only ¥28,650 once the Day
+24 ekie and Day 27 arrival grocery runs each add their ¥400 snack/fruit line), Transport -2.6%
+(target 56,000) - both within the ±5% tolerance. Activities -25.2% (target 26,000), well under
+target: the Tombori River Cruise appears only once across Days 27-29 (on Day 29, in the Osaka
+file) rather than being charged here too, and Daisho-in Temple and Namba Yasaka Shrine, both
+free, are added instead. That's a real saving from a single-charge cruise, not a shortfall to
+paper over, and it isn't backfilled with padding activities. Lodging is the fixed ¥15,000 x 3
+nights + ¥13,000 x 1 night from MASTER-BRIEF and is not flexed.

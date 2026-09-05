@@ -189,7 +189,7 @@ Day 14's dinner (arriving too late for the Toyoko Inn breakfast, which starts Da
 out near Kyoto/Omiya Stn per the day file (¥1,900 infant line) - a konbini stop, not a grocery
 run, so it isn't itemized separately here.
 
-#### Run 1 - Day 15, Tue 20 Oct, ~18:00 (infant-supply restock, covers roughly Days 15-19)
+#### Run 1 - Day 15, Wed 21 Oct, ~19:25 (infant-supply restock, covers roughly Days 15-19)
 
 Shops on Day @@DAYLINK:15@@. Infant-supply restock covering roughly Days @@DAYLINK:15@@ to @@DAYLINK:19@@.
 
@@ -208,7 +208,7 @@ or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch 
 | Fruit / snack for the toddler | - | - | 200 |
 | **Run 1 total** | | | **¥7,288 ($47)** |
 
-#### Run 2 - Day 19, Sat 24 Oct, ~17:00 (hangaku dinner components - no kitchen, eaten cold/room-temp in the room)
+#### Run 2 - Day 19, Sun 25 Oct, ~20:10 (hangaku dinner components - no kitchen, eaten cold/room-temp in the room)
 
 Shops on Day @@DAYLINK:19@@. Hangaku dinner components, eaten cold or at room temperature since the Kyoto hotel has no kitchen.
 
@@ -230,9 +230,9 @@ Shops on Day @@DAYLINK:19@@. Hangaku dinner components, eaten cold or at room te
 ¥2,180 meal-only subtotal is close (~18% under, plausibly a slightly deeper hangaku discount or
 one fewer side), well inside normal night-to-night variance for a discount-timed buy.
 
-#### Run 3 - Day 20 or 21, ~18:00 (infant-supply top-up for Kyoto B, no new nappies needed yet)
+#### Run 3 - Day 21, Tue 27 Oct, ~20:00 (infant-supply top-up for Kyoto B, no new nappies needed yet)
 
-Shops on Day @@DAYLINK:20@@ or Day @@DAYLINK:21@@. Infant-supply top-up, no new nappies needed yet.
+Shops on Day @@DAYLINK:21@@. Infant-supply top-up, no new nappies needed yet.
 
 **Store:** drugstore or conbini near the hotel [chain per day file, unnamed - Matsumoto Kiyoshi,
 Welcia, Tsuruha or Cocokara Fine are all plausible; branch to confirm].
@@ -254,7 +254,7 @@ itemized in `days-15-19-kyoto-a.md` and `days-20-23-kyoto-b.md`.
 
 Days @@DAYLINK:24@@-@@DAYLINK:26@@ | Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast
 
-#### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
+#### Run - Day 24, Fri 30 Oct, ~14:30 (after ~11:35 check-in; sized for the whole 4-night block)
 
 Shops on Day @@DAYLINK:24@@ after the ~11:35 check-in. Sized for the whole block, Days @@DAYLINK:24@@ to @@DAYLINK:27@@.
 
@@ -286,7 +286,7 @@ envelope is Toyoko Inn's free breakfast plus restaurant/konbini meals in `days-2
 
 Days @@DAYLINK:27@@-@@DAYLINK:30@@ | Toyoko Inn Osaka Namba, no kitchen, free breakfast
 
-#### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
+#### Run - Day 27, Mon 2 Nov, ~12:45 arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
 
 Shops on Day @@DAYLINK:27@@ on arrival. Sized for Days @@DAYLINK:27@@ to @@DAYLINK:29@@; no new nappies, the Hiroshima pack still has supply.
 
@@ -372,7 +372,7 @@ Day @@DAYLINK:24@@, shinkansen on the JR Kansai-Hiroshima Area Pass
 - **Already eaten down:** trivially true - there has been no kitchen since Day 13, so nothing
  perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
  are dry infant supplies.
-- **Carry:** whatever's left of the Kyoto Run 3 (Day 20/21) formula tin and pouches, plus
+- **Carry:** whatever is left of the Kyoto Run 3 (Day @@DAYLINK:21@@) formula tin and pouches, plus
  whatever nappy stock remains from the Day 15 pack - by Day 24 this is roughly 9 days into a
  pack sized for about 9 days, so it should be close to empty; if a few nappies are left, they
  travel for free (a handful of nappies weighs nothing).
@@ -397,7 +397,7 @@ Day @@DAYLINK:30@@, flying home. **Everything must be gone.**
 - **Nappy stock:** the Day 24 Hiroshima nappy pack was sized to cover Hiroshima (4 nights) plus
  Osaka (3 nights) = 7 nights; Day 30 is the 7th night of that pack's coverage, so it should run
  out almost exactly at departure. If a handful remain, they go straight into hand luggage for
- the flight - see Section 5.
+ the flight, and the Day @@DAYLINK:30@@ packing notes cover what goes through security.
 - **Bin before checkout:** any opened snack packet, half-finished pouch, empty formula tin
  (recycle per the hotel's bins), used wipes packet. Nothing here is worth carrying past the
  hotel room door.
@@ -407,13 +407,11 @@ Day @@DAYLINK:30@@, flying home. **Everything must be gone.**
 
 ## 4. Consolidated infant-supplies plan
 
-Two different numbers matter here, and they are not the same thing - keeping them separate
-avoids double-counting the trip's own budget:
+Two different numbers matter here, and they are not the same thing, keeping them separate
+avoids double-counting:
 
-1. **Formula + pouches (daily feeding cost).** This is already built into every day's "Infant
- food" row in the six day files, and therefore already inside the ¥243,000 trip food total
- (see Section 1's table). Summing that row across all 30 days directly from the day files
- gives:
+1. **Formula + pouches (daily feeding cost).** This is folded into each day's food spending
+ across the trip. By segment, it comes to:
 
  | Segment | Days | ¥ |
  |---|---|---|
@@ -425,12 +423,8 @@ avoids double-counting the trip's own budget:
  | Osaka + departure | 28-30 | 5,200 |
  | **Total** | 30 | **¥59,550 ($384)** |
 
- This figure is - it is not an
- estimate this appendix invented.
-
-2. **Nappies, wipes and diaper cream (trip-level, not in the day totals).** Per the MASTER-BRIEF,
- diapers are deliberately kept out of each day's food total and handled as a separate
- trip-level line. From the shopping runs above:
+2. **Nappies, wipes and diaper cream (trip-level line).** These are tracked separately from
+ the daily food totals:
 
  | Purchase point | Nappies (M+L) ¥ | Wipes ¥ | Cream ¥ | ¥ |
  |---|---|---|---|---|
@@ -439,22 +433,21 @@ avoids double-counting the trip's own budget:
  | Hiroshima, Day 24 | 3,560 | 348 | - | 3,908 |
  | **Total** | | | | **¥12,524 ($81)** |
 
- Three restocks across 30 days, each pack sized to run about 7-9 days per infant - consistent
+ Three restocks across 30 days, each pack sized to run about 7-9 days per infant, consistent
  with the fact that drugstores (Matsumoto Kiyoshi, Welcia, Tsuruha, Cocokara Fine) are
  everywhere in Japan, including inside stations, so there is never a reason to bulk-buy or
  carry more than one spare pack per infant at a time.
 
-**Reconciling to the ¥68,000 target:** ¥59,550 (formula/pouches) + ¥12,524 (nappies/wipes/cream)
-= **¥72,074 ($465)**, about 6% over the MASTER-BRIEF's ¥68,000 planning figure. Said plainly
-rather than fudged: this gap is real, and it's entirely the nappy/wipe portion - retail packs of
-44-70 don't divide evenly into 30 days of use for two infants of different sizes, so there's
-inherent overbuy built into a three-restock plan. It's a ¥4,000 ($26) gap on a trip that carries
-a ¥160,000 contingency line, so it doesn't need to come out of the food budget or trigger a
-re-plan - just note it against contingency.
+The trip budgets ¥68,000 for baby consumables. ¥59,550 (formula/pouches) plus ¥12,524
+(nappies/wipes/cream) comes to **¥72,074 ($465)**, about 6% over that figure. This gap is real,
+and it's entirely the nappy/wipe portion, retail packs of 44-70 don't divide evenly into 30 days
+of use for two infants of different sizes, so there's inherent overbuy built into a
+three-restock plan. It's a ¥4,000 ($26) gap on a trip that carries a ¥160,000 contingency line,
+so it doesn't need to come out of the food budget or trigger a re-plan, just note it against
+contingency.
 
-**On formula brand:** every purchase point above specifies Wakodo, Pigeon or Morinaga.
-**Kewpie discontinues its baby-food line in Aug 2026**, so it is deliberately never named as a
-brand option anywhere in this document, matching the day files' own practice.
+**On formula brand:** the plan uses Wakodo, Pigeon or Morinaga. Kewpie is avoided because it
+discontinued its baby-food line in August 2026.
 
 **Running total by point in the trip** (cumulative, formula/pouches + nappies/wipes/cream):
 
@@ -466,39 +459,3 @@ brand option anywhere in this document, matching the day files' own practice.
 | 23 (end of Kyoto B) | 55,466 |
 | 27 (end of Hiroshima) | 66,874 |
 | 30 (end of Osaka + departure) | 72,074 |
-
----
-
-## 5. Day 30 packing-day note (Osaka -> Kansai Airport)
-
-**What must be consumed, binned or left behind before checkout (08:15) and before security:**
-- Any opened pouch, snack packet or half-finished formula tin from the Day 27 Osaka run - the
- run was sized to run out around Day 29 night, so there should be little to nothing left; bin
- what remains rather than carry an open, mostly-empty tin through security.
-- Any part-used nappy pack: keep only what's needed for the travel day itself (flight plus
- transit) in hand luggage; leave a genuinely spare handful behind rather than repack a torn bag.
-- Hotel toiletries, opened wipes packets not needed in-flight, anything not going in the carry-on
- or the checked bag - leave for housekeeping rather than binning usable items.
-- **Nothing perishable exists to deal with** - there has been no kitchen, and therefore no fresh
- food, since Day 13.
-
-**What's prohibited or restricted in hand luggage on an international departure from KIX:**
-- The standard liquids/gels rule applies: containers over 100ml are not allowed in the cabin
- outside of a single clear 1L resealable bag, and that bag's total liquid volume is capped
- (typically ~1L) at most international airports, KIX included. 
-- **Baby formula, breast milk and baby food (including pouches/purees) typically carry a
- medical or infant exemption** to the 100ml liquids rule in most jurisdictions, including Japan
- and most international carriers' home countries, when a child is travelling with the party.
- This usually means these items can exceed 100ml but must be declared and presented separately
- at the screening tray, and may be tested. 
-- Formula **powder** (an unopened tin, or any that's left) is not a liquid and is not subject to
- the liquids rule at all - it can travel in carry-on or checked luggage without restriction.
-- Nappies, wipes and a few days of dry pouches/snacks are fine in carry-on with no special
- handling needed.
-
----
-
-*This appendix should be read alongside the six day files - the meal-by-meal costs for
-restaurant and konbini spending live there; this document adds the grocery/drugstore shopping
-runs, the infant-supplies consolidation, and the move-by-move run-down plan the day files don't
-otherwise spell out.*

@@ -22,6 +22,7 @@
   - [Hiroshima + transfer segment totals (Days 24-27)](#hiroshima--transfer-segment-totals-days-24-27)
 - **[Days 28-30 - Osaka + departure](#days-28-30---osaka--departure)**
   - Days: [28](#day-28---tuesday-november-3-2026---osaka)  [29](#day-29---wednesday-november-4-2026---osaka)  [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix)
+    - [Packing and departure notes](#packing-and-departure-notes)
   - [Osaka + departure segment totals (Days 28-30)](#osaka--departure-segment-totals-days-28-30)
 - **[Appendices](#appendices)**
   - [Appendix A: Topic index](#appendix-a-topic-index)
@@ -68,7 +69,6 @@
     - [2. Dated shopping runs](#2-dated-shopping-runs)
     - [3. Run-down-before-you-move checklist](#3-run-down-before-you-move-checklist)
     - [4. Consolidated infant-supplies plan](#4-consolidated-infant-supplies-plan)
-    - [5. Day 30 packing-day note (Osaka -> Kansai Airport)](#5-day-30-packing-day-note-osaka---kansai-airport)
   - [Appendix G: Open decisions](#appendix-g-open-decisions)
     - [1. Decisions for the family](#1-decisions-for-the-family)
     - [2. Deadlines](#2-deadlines)
@@ -128,38 +128,38 @@ Uji, Himeji and Kobe are all reached and returned from without touching the lugg
 | [3](#day-3---friday-october-9-2026---tokyo) | Friday, October 9, 2026 | Tokyo | 36,560 | 236 | 777 |
 | [4](#day-4---saturday-october-10-2026---tokyo) | Saturday, October 10, 2026 | Tokyo | 34,530 | 223 | 1,000 |
 | [5](#day-5---sunday-october-11-2026---tokyo) | Sunday, October 11, 2026 | Tokyo | 31,150 | 201 | 1,201 |
-| [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Monday, October 12, 2026 | Tokyo (Sports Day) | 35,890 | 232 | 1,432 |
-| [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Tuesday, October 13, 2026 | Kamakura (day trip) | 38,770 | 250 | 1,682 |
-| [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Wednesday, October 14, 2026 | Tokyo (Odaiba / Toyosu) | 49,470 | 319 | 2,002 |
-| [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Thursday, October 15, 2026 | Yokohama (day trip) | 42,760 | 276 | 2,277 |
-| [10](#day-10---friday-october-16-2026---tokyo) | Friday, October 16, 2026 | Tokyo | 34,710 | 224 | 2,501 |
-| [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Saturday, October 17, 2026 | Tokyo → Kawaguchiko | 36,020 | 232 | 2,734 |
-| [12](#day-12---sunday-october-18-2026---kawaguchiko) | Sunday, October 18, 2026 | Kawaguchiko | 43,850 | 283 | 3,017 |
-| [13](#day-13---monday-october-19-2026---kawaguchiko) | Monday, October 19, 2026 | Kawaguchiko | 57,720 | 372 | 3,389 |
-| [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Tuesday, October 20, 2026 | Kawaguchiko → Kyoto | 71,900 | 464 | 3,853 |
-| [15](#day-15---wednesday-october-21-2026---kyoto) | Wednesday, October 21, 2026 | Kyoto | 34,080 | 220 | 4,073 |
-| [16](#day-16---thursday-october-22-2026---kyoto) | Thursday, October 22, 2026 | Kyoto | 33,560 | 217 | 4,289 |
-| [17](#day-17---friday-october-23-2026---kyoto) | Friday, October 23, 2026 | Kyoto | 35,480 | 229 | 4,518 |
-| [18](#day-18---saturday-october-24-2026---kyoto) | Saturday, October 24, 2026 | Kyoto | 30,370 | 196 | 4,714 |
-| [19](#day-19---sunday-october-25-2026---kyoto) | Sunday, October 25, 2026 | Kyoto | 39,090 | 252 | 4,966 |
-| [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Monday, October 26, 2026 | Kyoto (day trip to Nara) | 39,730 | 256 | 5,223 |
-| [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Tuesday, October 27, 2026 | Kyoto (day trip to Uji) | 36,730 | 237 | 5,460 |
-| [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Wednesday, October 28, 2026 | Kyoto (day trip to the Fushimi sake district) | 38,740 | 250 | 5,710 |
-| [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Thursday, October 29, 2026 | Kyoto (low-key day + packing) | 53,770 | 347 | 6,056 |
-| [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Friday, October 30, 2026 | Kyoto to Hiroshima | 73,650 | 475 | 6,532 |
-| [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Saturday, October 31, 2026 | Miyajima (Itsukushima) | 34,160 | 220 | 6,752 |
-| [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Sunday, November 1, 2026 | Hiroshima city day | 31,300 | 202 | 6,954 |
-| [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Monday, November 2, 2026 | Hiroshima to Osaka | 20,420 | 132 | 7,086 |
-| [28](#day-28---tuesday-november-3-2026---osaka) | Tuesday, November 3, 2026 | Osaka | 34,210 | 221 | 7,306 |
-| [29](#day-29---wednesday-november-4-2026---osaka) | Wednesday, November 4, 2026 | Osaka | 38,150 | 246 | 7,553 |
-| [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Thursday, November 5, 2026 | Osaka -> Kansai Airport (KIX) | 7,790 | 50 | 7,603 |
-| | | **Day-line total** | **1,178,430** | **7,603** | |
+| [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Monday, October 12, 2026 | Tokyo (Sports Day) | 38,384 | 248 | 1,448 |
+| [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Tuesday, October 13, 2026 | Kamakura (day trip) | 38,770 | 250 | 1,698 |
+| [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Wednesday, October 14, 2026 | Tokyo (Odaiba / Toyosu) | 50,840 | 328 | 2,026 |
+| [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Thursday, October 15, 2026 | Yokohama (day trip) | 42,760 | 276 | 2,302 |
+| [10](#day-10---friday-october-16-2026---tokyo) | Friday, October 16, 2026 | Tokyo | 34,710 | 224 | 2,526 |
+| [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Saturday, October 17, 2026 | Tokyo → Kawaguchiko | 36,020 | 232 | 2,759 |
+| [12](#day-12---sunday-october-18-2026---kawaguchiko) | Sunday, October 18, 2026 | Kawaguchiko | 43,850 | 283 | 3,042 |
+| [13](#day-13---monday-october-19-2026---kawaguchiko) | Monday, October 19, 2026 | Kawaguchiko | 57,720 | 372 | 3,414 |
+| [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Tuesday, October 20, 2026 | Kawaguchiko → Kyoto | 71,900 | 464 | 3,878 |
+| [15](#day-15---wednesday-october-21-2026---kyoto) | Wednesday, October 21, 2026 | Kyoto | 34,280 | 221 | 4,099 |
+| [16](#day-16---thursday-october-22-2026---kyoto) | Thursday, October 22, 2026 | Kyoto | 33,560 | 217 | 4,316 |
+| [17](#day-17---friday-october-23-2026---kyoto) | Friday, October 23, 2026 | Kyoto | 35,480 | 229 | 4,544 |
+| [18](#day-18---saturday-october-24-2026---kyoto) | Saturday, October 24, 2026 | Kyoto | 30,370 | 196 | 4,740 |
+| [19](#day-19---sunday-october-25-2026---kyoto) | Sunday, October 25, 2026 | Kyoto | 39,090 | 252 | 4,993 |
+| [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Monday, October 26, 2026 | Kyoto (day trip to Nara) | 39,730 | 256 | 5,249 |
+| [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Tuesday, October 27, 2026 | Kyoto (day trip to Uji) | 36,730 | 237 | 5,486 |
+| [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Wednesday, October 28, 2026 | Kyoto (day trip to the Fushimi sake district) | 38,740 | 250 | 5,736 |
+| [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Thursday, October 29, 2026 | Kyoto (low-key day + packing) | 53,770 | 347 | 6,083 |
+| [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Friday, October 30, 2026 | Kyoto to Hiroshima | 74,050 | 478 | 6,560 |
+| [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Saturday, October 31, 2026 | Miyajima (Itsukushima) | 34,160 | 220 | 6,781 |
+| [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Sunday, November 1, 2026 | Hiroshima city day | 31,300 | 202 | 6,983 |
+| [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Monday, November 2, 2026 | Hiroshima to Osaka | 20,820 | 134 | 7,117 |
+| [28](#day-28---tuesday-november-3-2026---osaka) | Tuesday, November 3, 2026 | Osaka | 34,210 | 221 | 7,338 |
+| [29](#day-29---wednesday-november-4-2026---osaka) | Wednesday, November 4, 2026 | Osaka | 38,150 | 246 | 7,584 |
+| [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Thursday, November 5, 2026 | Osaka -> Kansai Airport (KIX) | 7,790 | 50 | 7,634 |
+| | | **Day-line total** | **1,183,294** | **7,634** | |
 
 Day-line spend covers lodging, food, transport and activities. Two further lines sit at
 trip level and are not repeated daily: baby consumables at ¥68,000 ($439), and
 miscellaneous (eSIM, coin laundry, lockers, luggage forwarding) at ¥38,000 ($245).
-Adding those gives **¥1,284,430 ($8,287)** planned against a
-**¥1,400,000 ($9,032)** budget, leaving **¥115,570 ($746)** in reserve.
+Adding those gives **¥1,289,294 ($8,318)** planned against a
+**¥1,400,000 ($9,032)** budget, leaving **¥110,706 ($714)** in reserve.
 
 
 
@@ -753,8 +753,10 @@ away from the holiday crowds.
 | 12:45 | 1h45 | Rest | Rest / infant naps at the hotel |
 | 14:30 | 0h15 | [Transit](#transport-5) | Walk, hotel -> Kappabashi Kitchenware Street |
 | 14:45 | 1h00 | [Activity](#activities-5) | Plastic food-sample (shokuhin sampuru) workshop, Kappabashi |
-| 15:45 | 0h15 | [Transit](#transport-5) | Walk back to the hotel |
-| 16:00 | 1h15 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
+| 15:45 | 0h20 | [Transit](#transport-5) | Walk, Kappabashi Kitchenware Street -> [LIFE Bioral](#run-2---day-6-mon-12-oct-1600-mid-stay-top-up-covers-days-6-8) Parco_ya Ueno, Ueno 3-24-6, B1 |
+| 16:05 | 0h35 | [Food](#meals-5) | Grocery top-up run - [LIFE Bioral](#run-2---day-6-mon-12-oct-1600-mid-stay-top-up-covers-days-6-8) Parco_ya Ueno (mid-stay stock, sized to cover Days 6-8) |
+| 16:40 | 0h15 | [Transit](#transport-5) | Walk, [LIFE Bioral](#run-2---day-6-mon-12-oct-1600-mid-stay-top-up-covers-days-6-8) Parco_ya Ueno -> hotel |
+| 16:55 | 0h20 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
 | 17:15 | 0h15 | [Transit](#transport-5) | Walk, hotel -> Ueno Stn area (yakitori dinner) |
 | 17:30 | 1h00 | [Food](#meals-5) | Dinner - yakitori set, Torikizoku near Ueno Stn |
 | 18:30 | 0h15 | [Transit](#transport-5) | Walk back to the hotel |
@@ -772,9 +774,18 @@ away from the holiday crowds.
   to do the making while the third minds both infants nearby. Instruction at most
   workshops is Japanese-only - confirm English support when booking, or treat it as a
   watch-and-try session rather than a fully guided one if it isn't available.
-- Active out-of-lodging time: about 7h30 (4h30 before the rest block, 3h00 after), plus
-  a 1h45 rest block. This runs about 30 minutes over the ~7h guideline, but it's all
-  short walkable outings around Ueno, not day-trip transit.
+- **Mid-stay grocery top-up, worked into the return leg:** on the walk back from the
+  Kappabashi workshop, the party detours to [LIFE Bioral](#run-2---day-6-mon-12-oct-1600-mid-stay-top-up-covers-days-6-8) Parco_ya Ueno (Ueno 3-24-6, B1)
+  for Run 2 of the Tokyo shopping runs - eggs, milk, chicken thigh, ground pork, tofu,
+  natto, mixed produce and bread to top up the kitchenette through Day 8, plus 4 infant
+  pouches. This is the whole party's own detour on its way home, not a solo trip. The
+  ¥2,494 grocery/perishable portion is added to today's Food line below; the ¥600 of
+  pouches is tracked as part of the trip's ongoing infant-food consumption in the
+  shopping appendix and is not added again here, to avoid double-counting.
+- Active out-of-lodging time: about 8h25 (4h30 before the rest block, 3h55 after), plus
+  a 1h45 rest block. This runs about 1h25 over the ~7h guideline - the added 55 minutes
+  is the [LIFE Bioral](#run-2---day-6-mon-12-oct-1600-mid-stay-top-up-covers-days-6-8) Parco_ya Ueno grocery detour on the walk back from Kappabashi, not
+  a separate trip out; the rest is still short walkable outings around Ueno.
 
 ### Lodging
 
@@ -791,8 +802,11 @@ away from the holiday crowds.
 | Lunch | [Menchi-katsu](#street-snacks) (fried minced-meat cutlet), a shrimp senbei cracker, and a vegetable croquette, eaten street-stall style | Yanaka Ginza, Taito-ku | 650 | 1,850 |
 | Dinner | [Yakitori](#grilled-and-skewered) set - about 5 grilled chicken and vegetable skewers per adult, rice, miso soup. Yakitori is bite-sized meat and vegetables grilled on skewers over charcoal, ordered a few at a time - one of Japan's most common izakaya-style meals, and this trip's second taste of it in thirty days | Torikizoku (or similar flat-price yakitori chain), near Ueno Stn, Taito-ku (exact branch unverified) | 800 | 5,700 |
 | Infant food | 3 formula feeds plus 2 Pigeon pouches (pork and vegetable; rice and pumpkin) for Infant A; Infant B eats deboned bites of grilled chicken skewer and rice from the [yakitori](#grilled-and-skewered) set | Conbini / Torikizoku | n/a | 2,150 |
+| Grocery top-up run | Run 2 of the Tokyo shopping runs - eggs, milk, chicken thigh, ground pork, tofu, natto, mixed produce, sliced bread; mid-stay stock sized to cover Days 6-8 | [LIFE Bioral](#run-2---day-6-mon-12-oct-1600-mid-stay-top-up-covers-days-6-8) Parco_ya Ueno, Ueno 3-24-6, B1 | n/a | 2,494 |
 
-Adult kcal: 500 + 650 + 800 = **1,950**.
+Adult kcal: 500 + 650 + 800 = **1,950**. The run's 4 infant pouches (¥600) aren't
+counted here - they're part of the trip's ongoing infant-food consumption, tracked in
+the shopping appendix rather than this day's Food total.
 
 ### Transport
 
@@ -819,12 +833,12 @@ across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 10,450 | 67 |
+| Food | 12,944 | 84 |
 | Transport | 540 | 3 |
 | Activities | 6,900 | 45 |
-| **Day total** | **35,890** | **232** |
+| **Day total** | **38,384** | **248** |
 
-**Running total after Day 6: ¥222,000 ($1,432)**
+**Running total after Day 6: ¥224,494 ($1,448)**
 
 ---
 
@@ -915,7 +929,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Activities | 2,100 | 14 |
 | **Day total** | **38,770** | **250** |
 
-**Running total after Day 7: ¥260,770 ($1,682)**
+**Running total after Day 7: ¥263,264 ($1,698)**
 
 ---
 
@@ -943,7 +957,10 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 | 12:30 | 0h45 | [Food](#meals-7) | Lunch, Toyosu food court/market area |
 | 13:15 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
 | 15:00 | 0h45 | [Transit](#transport-7) | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
-| 15:45 | 1h45 | Rest | Downtime at the hotel |
+| 15:45 | 0h15 | [Transit](#transport-7) | Walk, Ueno Stn -> Gyomu Super, Ueno-Koen branch (Negishi 1-2-13, Taito-ku) |
+| 16:00 | 0h30 | [Food](#meals-7) | Grocery top-up run - [Gyomu Super Ueno-Koen](#run-3---day-8-wed-14-oct-1600-deliberately-small-sized-to-run-down-by-day-10) (deliberately small, sized to run down by Day 10) |
+| 16:30 | 0h15 | [Transit](#transport-7) | Walk, [Gyomu Super Ueno-Koen](#run-3---day-8-wed-14-oct-1600-deliberately-small-sized-to-run-down-by-day-10) -> hotel |
+| 16:45 | 0h45 | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | [Food](#meals-7) | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
@@ -957,7 +974,17 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
   Wednesdays and Sundays through the year - but Wed 14 Oct 2026 is not one of its
   listed October closure dates (Oct 7, 21, 28 are the closed Wednesdays), so the
   market is open on this day; verify against the official calendar closer to travel.
-- Active out-of-lodging time: about 6h45, plus a 1h45 rest block.
+- **Small top-up on the way home from Toyosu:** the party detours to Gyomu Super,
+  Ueno-Koen branch, on the walk back from Ueno Station, for Run 3 of the Tokyo shopping
+  runs - a deliberately small restock (eggs, milk, chicken thigh, mixed produce, bread
+  rolls) sized to run the kitchenette down by Day 10, plus 3 infant pouches. This is the
+  whole party's own detour on its way home, not a solo trip. The ¥1,370 grocery portion
+  is added to today's Food line below; the ¥450 of pouches is tracked as part of the
+  trip's ongoing infant-food consumption in the shopping appendix and is not added
+  again here.
+- Active out-of-lodging time: about 7h45, plus a 1h45 rest block. This runs about 45
+  minutes over the ~7h guideline - the added time is the [Gyomu Super Ueno-Koen](#run-3---day-8-wed-14-oct-1600-deliberately-small-sized-to-run-down-by-day-10) grocery
+  detour worked into the walk back from Toyosu, not a separate trip out.
 
 ### Lodging
 
@@ -974,8 +1001,11 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 | Lunch | Food court set meals | Aqua City/Toyosu area | 700 | 3,400 |
 | Dinner | Self-catered - rice, ginger pork, steamed broccoli, miso soup | Hotel kitchenette | 800 | 2,350 |
 | Infant food | 3 formula feeds plus 2 Pigeon pouches (white fish and rice; pumpkin) for Infant A; Infant B eats table portions of the tamagoyaki and rice, plus a Wakodo snack pouch | Conbini | n/a | 2,200 |
+| Grocery top-up run | Run 3 of the Tokyo shopping runs - a deliberately small restock (eggs, milk, chicken thigh, mixed produce, bread rolls), sized to run down by Day 10 | Gyomu Super, Ueno-Koen branch | n/a | 1,370 |
 
-Adult kcal: 550 + 700 + 800 = **2,050**. The market's famous sit-down sushi counters
+Adult kcal: 550 + 700 + 800 = **2,050**. The run's 3 infant pouches (¥450) aren't
+counted here - they're part of the trip's ongoing infant-food consumption, tracked in
+the shopping appendix rather than this day's Food total. The market's famous sit-down sushi counters
 (Sushi Dai, Sushi Dokoro Yamazaki) run ¥4,000-5,000/adult omakase sets with long
 queues from 5am - skipped here for budget and toddler-patience reasons in favor of
 grazing individual stalls, landing near the ¥1,000-2,000/adult range this trip budgets
@@ -1006,12 +1036,12 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 11,550 | 75 |
+| Food | 12,920 | 83 |
 | Transport | 4,020 | 26 |
 | Activities | 15,900 | 103 |
-| **Day total** | **49,470** | **319** |
+| **Day total** | **50,840** | **328** |
 
-**Running total after Day 8: ¥310,240 ($2,002)**
+**Running total after Day 8: ¥314,104 ($2,026)**
 
 ---
 
@@ -1098,7 +1128,7 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 | Activities | 9,300 | 60 |
 | **Day total** | **42,760** | **276** |
 
-**Running total after Day 9: ¥353,000 ($2,277)**
+**Running total after Day 9: ¥356,864 ($2,302)**
 
 ---
 
@@ -1191,7 +1221,7 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Activities | 6,000 | 39 |
 | **Day total** | **34,710** | **224** |
 
-**Running total after Day 10: ¥387,710 ($2,501)**
+**Running total after Day 10: ¥391,574 ($2,526)**
 
 ---
 
@@ -1324,7 +1354,7 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 | Activities | 0 | 0 |
 | **Day total** | 36,020 | 232 |
 
-**Running total after Day 11: ¥423,730 ($2,734)**
+**Running total after Day 11: ¥427,594 ($2,759)**
 
 ---
 
@@ -1409,7 +1439,7 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 | Activities | 11,400 | 74 |
 | **Day total** | 43,850 | 283 |
 
-**Running total after Day 12: ¥467,580 ($3,017)**
+**Running total after Day 12: ¥471,444 ($3,042)**
 
 ---
 
@@ -1506,7 +1536,7 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 | Activities | 5,150 | 33 |
 | **Day total** | 57,720 | 372 |
 
-**Running total after Day 13: ¥525,300 ($3,389)**
+**Running total after Day 13: ¥529,164 ($3,414)**
 
 ---
 
@@ -1591,7 +1621,7 @@ Allow the full 20-30 min buffer at Mishima; the schedule above books 20 min.
 | Activities | 0 | 0 |
 | **Day total** | 71,900 | 464 |
 
-**Running total after Day 14: ¥597,200 ($3,853)**
+**Running total after Day 14: ¥601,064 ($3,878)**
 
 ---
 
@@ -1612,7 +1642,7 @@ Envelope check against the segment's assigned cells (lodging is fixed for the K'
 
 Lodging (fixed for the two properties, informational): 2 nights at K's House Mt. Fuji (¥18,000 x 2 = ¥36,000) + 1 night at Lakeland Hotel Mizunosato ryokan (¥41,580, room-only rate) + 1 night at Toyoko Inn Kyoto Shijo-Omiya (¥19,000) = ¥96,580. The ryokan night is ¥23,580 above the ¥18,000 K's House rate it replaces (or about +¥25,070 counting the day's meal and activity changes too) - within the ¥18,000-33,000 net-add target set for this swap, funded from the trip's discretionary headroom rather than this segment's lodging line.
 
-**Running total after Day 14: ¥597,200 ($3,853)**
+**Running total after Day 14: ¥601,064 ($3,878)**
 
 ---
 
@@ -1648,10 +1678,26 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 | 16:25 | 0h30 | [Transit](#transport-14) | Walk back to hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
 | 17:55 | 0h45 | [Food](#meals-14) | Dinner - Nishiki/depachika finds, eaten in the room |
+| 18:40 | 0h45 | Admin | Bath, bedtime routine - both infants down |
+| 19:25 | 0h20 | [Transit](#transport-14) | One adult walks alone to [Gyomu Super Saiin](#run-1---day-15-wed-21-oct-1925-infant-supply-restock-covers-roughly-days-15-19), Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
+| 19:45 | 0h20 | [Food](#meals-14) | Infant-supply restock - [Gyomu Super Saiin](#run-1---day-15-wed-21-oct-1925-infant-supply-restock-covers-roughly-days-15-19): formula tin, 6 pouches, nappies (M+L), wipes; covers roughly Days 15-19 |
+| 20:05 | 0h20 | [Transit](#transport-14) | Walk back to Toyoko Inn Kyoto Shijo-Omiya |
 
 - **Fushimi Inari note:** the Senbon Torii loop to the Yotsutsuji lookout is paved and stroller-workable. The full summit circuit (another 1.5-2h beyond Yotsutsuji) is stairs the whole way and is **carrier-only** - skipped today with two infants. Anime-fan bonus, free: this shrine and the surrounding Fushimi district are the real-world setting of *Inari, Konkon, Koi Iroha*, an anime about a girl who lives beside the shrine - worth a mention while walking the Senbon Torii, no detour needed.
 - **Kobo-ichi fit-check, stated honestly:** To-ji's monthly market falls on the 21st every month, which is today, and it sits a 15-minute walk south of Kyoto Station - directly on the JR-to-bus transfer this day already makes on the way back from Fushimi Inari. Swapping the inari-zushi shop lunch for a market lunch adds about 40 minutes net to the pre-rest stretch of the day (walk to the temple, browse, eat, walk back), which would push the day past this itinerary's ~7h active cap if nothing else moved. **What gives: Nishiki Market's evening browse is trimmed from 2h00 to 1h20.** The family will already have had a full stall-food lunch and market browse at To-ji by then, so a shorter Nishiki visit (still enough for a look at Daimaru's depachika and a stall or two for dinner ingredients) is the honest trade, not a loss - it keeps the day at ~7h00 active, right at the cap rather than over it.
 - Midday rest, at 1h40, is at the low end of the 1h30-2h00 mandatory range, since the market visit borrowed time from it.
+- **Solo infant-supply run, done honestly:** the Toyoko Inn has no kitchen, so Run 1 of
+  the Kyoto shopping runs is nappies, formula, pouches and drugstore items rather than
+  groceries. Once both infants are down, one adult walks alone (~20 min unencumbered,
+  no stroller) to [Gyomu Super Saiin](#run-1---day-15-wed-21-oct-1925-infant-supply-restock-covers-roughly-days-15-19), Ukyo-ku - one stop from Omiya on the Hankyu Kyoto
+  Line - restocking a formula tin, 6 pouches, a nappy pack for each infant size, and a
+  wipes refill, sized to cover roughly Days 15-19; Matsumoto Kiyoshi or Welcia are the
+  drugstore fallback if Gyomu Super is closed. The formula, pouches, nappies and wipes
+  (¥7,088) are trip-level infant consumables tracked in the shopping appendix's Section
+  4, not added to this day's Food total; only the ¥200 fruit/snack picked up for the
+  20-month-old in the same run is genuine grocery spend, added to Food below. Like Day
+  19's later hangaku run, this solo trip doesn't add to the day's active out-of-lodging
+  time - the other two adults stay at the hotel with the sleeping infants throughout.
 - Active out-of-lodging time: about 7h00 (4h40 before the rest block, 2h20 after), plus a 1h40 rest block.
 
 ### Lodging
@@ -1669,8 +1715,11 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 | Lunch | Yatai lunch from Kobo-ichi's food stalls: a plate of [yakisoba](#noodles) (fried noodles with pork and cabbage), a grilled squid skewer ([ika-yaki](#grilled-and-skewered)), and a [taiyaki](#street-snacks) (fish-shaped waffle cake, red-bean filling) each | To-ji temple grounds, 1 Kujocho, Minami-ku, Kyoto 601-8473 | 750 | 5,400 |
 | Dinner | Nishiki Market stall food - a tamagoyaki (rolled omelette) [skewer](#grilled-and-skewered), yatsuhashi cinnamon-[mochi](#sweets-and-tea) sweets, grilled dashi-rolled skewers, pickles - plus a [bento](#konbini-bento-and-set-meals) top-up from Daimaru's depachika basement, eaten back at the hotel | Nishiki Market / Daimaru Kyoto basement, Nakagyo-ku | 800 | 3,600 |
 | Infant food | Wakodo Rakuraku stage-2 formula tin for the 12-month-old plus 2 Wakodo/Pigeon vegetable-and-fish pouches; the 20-month-old eats rice, soft tofu, and small pieces of [taiyaki](#street-snacks) (bean paste scraped off) off the family's To-ji and Nishiki Market spread | Gyomu Super or drugstore near Shijo-Omiya | n/a | 2,300 |
+| Toddler snack ([Gyomu Super Saiin](#run-1---day-15-wed-21-oct-1925-infant-supply-restock-covers-roughly-days-15-19) run) | Fresh fruit/snack picked up for the 20-month-old during the solo evening infant-supply restock | [Gyomu Super Saiin](#run-1---day-15-wed-21-oct-1925-infant-supply-restock-covers-roughly-days-15-19), Ukyo-ku | n/a | 200 |
 
-Adult kcal: 500 + 750 + 800 = **2,050/adult**.
+Adult kcal: 500 + 750 + 800 = **2,050/adult**. The same run's formula tin, pouches,
+nappies and wipes (¥7,088) are trip-level infant consumables tracked in the shopping
+appendix, not counted here.
 
 ### Transport
 
@@ -1697,10 +1746,10 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 19,000 | 123 |
-| Food | 11,300 | 73 |
+| Food | 11,500 | 74 |
 | Transport | 2,280 | 15 |
 | Activities | 1,500 | 10 |
-| **Day total** | **34,080** | **220** |
+| **Day total** | **34,280** | **221** |
 
 **Running total (Kyoto A segment) after Day 15: ¥30,480 ($197)**
 
@@ -2008,17 +2057,17 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 14:40 | 0h30 | [Transit](#transport-18) | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
 | 15:10 | 1h45 | Rest | Midday rest - hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
-| 17:55 | 0h40 | [Food](#meals-18) | Dinner - chicken katsu bento from [Fresco Omiya](#run-2---day-19-sat-24-oct-1700-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room) (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
+| 17:55 | 0h40 | [Food](#meals-18) | Dinner - chicken katsu bento from [Fresco Omiya](#run-2---day-19-sun-25-oct-2010-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room) (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
 | 18:35 | 0h25 | Rest | Bath, bedtime routine, infants down |
 | 19:00 | 0h50 | Rest | Quiet evening at the hotel, infants asleep |
-| 19:50 | 0h20 | [Transit](#transport-18) | One adult walks alone to [Gyomu Super Saiin](#run-2---day-19-sat-24-oct-1700-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
+| 19:50 | 0h20 | [Transit](#transport-18) | One adult walks alone to [Gyomu Super Saiin](#run-2---day-19-sun-25-oct-2010-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
 | 20:10 | 0h15 | [Food](#meals-18) | Hangaku shopping - deli pastries and rice balls marked to 50% off after 20:00, restocking snacks for the next few days |
 | 20:25 | 0h20 | [Transit](#transport-18) | Walk back to Toyoko Inn |
 
 - **Imperial Palace note:** this segment already distinguished Kyoto Gyoen (the public park, visited on Day 16 for Jidai Matsuri viewing) from the Kyoto Imperial Palace/Gosho itself (the walled compound inside that park) - see Day 16's Activities table. The Gosho is toured today instead, since Jidai Matsuri day was already full: free entry, no reservation, self-guided walk-in 9:00-16:20 (closed Mondays), folded into the same subway route already used to reach Nijo Castle.
 - **Ryoan-ji and Tenjin-ichi both fit, verified.** Ryoan-ji is on this itinerary because it's the only karesansui (dry rock garden) anywhere in this 30-day trip, and it's the single most famous example of the form in Japan - a temple market doesn't substitute for that, so both stay. The geography cooperates: Kinkaku-ji, Ryoan-ji, and Kitano Tenmangu sit in a single northwest Kyoto cluster, and the day now flows through it in one direction rather than backtracking. Kinkaku-ji to Ryoan-ji is City Bus 59, 2 stops, about 5 minutes (padded to 0h15 with wait/boarding, matching this segment's other short bus hops). From Ryoan-ji, it's a verified 7-minute walk to the Ritsumeikan Daigaku-mae bus stop, where City Bus Route 50 (Kyoto Station - Kitano Tenmangu - Ritsumeikan Daigaku) runs directly to Kitano Tenmangu-mae - no return toward Kinkaku-ji, no doubling back. From there, the day continues on the same bus network back to Shijo-Omiya, same as before.
 - Both Ryoan-ji and the full Tenjin-ichi market fit without shortening anything else. Midday rest, at 1h45, stays within the 1h30-2h00 mandatory range; downtime and dinner both stay at the hotel afterward.
-- **Hangaku, done honestly:** timing tonight's supermarket bento at hangaku pricing right at 17:50, the moment the party gets back from downtime, is impossible - no supermarket marks anything down that early, and the true 50%-off wave for a standard supermarket runs 20:00-20:45 per this trip's own hangaku research (first token markdowns don't even start until roughly 19:30). That 20:00-20:45 window is also after this itinerary's ~19:00-19:30 infant bedtime, so it can never be a whole-family outing. The fix: dinner tonight is a full-price chicken katsu bento from [Fresco Omiya](#run-2---day-19-sat-24-oct-1700-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), literally a minute from the hotel and open 24 hours, eaten in the room at the normal early-evening time the infants' schedule actually needs. The hangaku run happens later and separately - once the infants are down, one adult walks alone to [Gyomu Super Saiin](#run-2---day-19-sat-24-oct-1700-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room) (Ukyo-ku, verified 9:00-21:00), arriving just after the 20:00 markdown, to restock deli pastries and rice balls at half price for the next few days' snacking. That costs one adult about 55 minutes of their evening while the other two stay with the sleeping infants - a real trade, not a free lunch.
+- **Hangaku, done honestly:** timing tonight's supermarket bento at hangaku pricing right at 17:50, the moment the party gets back from downtime, is impossible - no supermarket marks anything down that early, and the true 50%-off wave for a standard supermarket runs 20:00-20:45 per this trip's own hangaku research (first token markdowns don't even start until roughly 19:30). That 20:00-20:45 window is also after this itinerary's ~19:00-19:30 infant bedtime, so it can never be a whole-family outing. The fix: dinner tonight is a full-price chicken katsu bento from [Fresco Omiya](#run-2---day-19-sun-25-oct-2010-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), literally a minute from the hotel and open 24 hours, eaten in the room at the normal early-evening time the infants' schedule actually needs. The hangaku run happens later and separately - once the infants are down, one adult walks alone to [Gyomu Super Saiin](#run-2---day-19-sun-25-oct-2010-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room) (Ukyo-ku, verified 9:00-21:00), arriving just after the 20:00 markdown, to restock deli pastries and rice balls at half price for the next few days' snacking. That costs one adult about 55 minutes of their evening while the other two stay with the sleeping infants - a real trade, not a free lunch.
 - Last day of this stretch - Day 20 continues the Kyoto stay under a separate itinerary segment.
 - Active out-of-lodging time: about 6h55, plus a 1h45 rest block.
 
@@ -2035,9 +2084,9 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
 | Lunch | Yatai lunch from Tenjin-ichi's food stalls: [takoyaki](#street-snacks) (octopus dumplings), a [warabimochi](#sweets-and-tea) (bracken-starch jelly dusted with kinako soybean powder) cup, and a cup of Uji hojicha each | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | 700 | 3,600 |
-| Dinner | Chicken katsu and rice, miso soup, pickled vegetables - full price, bought too early (17:55) for any markdown | [Fresco Omiya](#run-2---day-19-sat-24-oct-1700-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), Shimogyo-ku (1 min from Omiya Stn, open 24h) | 800 | 2,850 |
+| Dinner | Chicken katsu and rice, miso soup, pickled vegetables - full price, bought too early (17:55) for any markdown | [Fresco Omiya](#run-2---day-19-sun-25-oct-2010-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), Shimogyo-ku (1 min from Omiya Stn, open 24h) | 800 | 2,850 |
 | Infant food | Wakodo/Morinaga formula tin for the 12-month-old plus pouches; the 20-month-old eats rice, miso soup (cooled, low-salt portion), and small pieces of katsu off the family table | Drugstore near Shijo-Omiya | n/a | 2,100 |
-| Hangaku snack restock | Deli pastries and rice balls marked to 50% off after 20:00, bought on a solo adult trip once the infants are asleep; banked for the next few days' snacking, not part of tonight's kcal | [Gyomu Super Saiin](#run-2---day-19-sat-24-oct-1700-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), Ukyo-ku (verified hours 9:00-21:00) | n/a (banked) | 800 |
+| Hangaku snack restock | Deli pastries and rice balls marked to 50% off after 20:00, bought on a solo adult trip once the infants are asleep; banked for the next few days' snacking, not part of tonight's kcal | [Gyomu Super Saiin](#run-2---day-19-sun-25-oct-2010-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room), Ukyo-ku (verified hours 9:00-21:00) | n/a (banked) | 800 |
 
 Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 
@@ -2096,12 +2145,12 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 95,000 | 613 |
-| Food | 42,350 | 273 |
+| Food | 42,550 | 275 |
 | Transport | 16,090 | 104 |
 | Activities | 19,140 | 123 |
-| **Segment total** | **172,580** | **1,113** |
+| **Segment total** | **172,780** | **1,115** |
 
-Envelope check: Food ¥42,350 vs ¥37,000 target (+14.5%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥19,140 vs ¥38,000 target (-49.6%, well under): both markets are free to enter, Ryoan-ji's ¥1,800 admission is priced in, and the kimono rental now happens once, on Day 23, rather than on this segment as well. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
+Envelope check: Food ¥42,550 vs ¥37,000 target (+15.0%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 15's [Gyomu Super Saiin](#run-2---day-19-sun-25-oct-2010-hangaku-dinner-components---no-kitchen-eaten-coldroom-temp-in-the-room) infant-supply run adds a ¥200 toddler snack (the formula/nappies/wipes portion of that run is trip-level, not in this total), Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥19,140 vs ¥38,000 target (-49.6%, well under): both markets are free to enter, Ryoan-ji's ¥1,800 admission is priced in, and the kimono rental now happens once, on Day 23, rather than on this segment as well. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
 
 ---
 
@@ -2217,7 +2266,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Activities | 8,700 | 56 |
 | **Day total** | **39,730** | **256** |
 
-**Running total after Day 20: ¥809,510 ($5,223)**
+**Running total after Day 20: ¥813,574 ($5,249)**
 
 ---
 
@@ -2253,11 +2302,27 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | 18:10 | 0h50 | [Food](#meals-20) | Dinner at Marugame Seimen, near Omiya |
 | 19:00 | 0h10 | [Transit](#transport-20) | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
+| 20:00 | 0h10 | [Transit](#transport-20) | One adult walks alone to a Matsumoto Kiyoshi or Welcia drugstore near Shijo-Omiya, for the Kyoto Run 3 infant-supply top-up (the other two stay with the sleeping infants) |
+| 20:10 | 0h15 | Admin | Infant-supply top-up - formula tin and pouches for Kyoto B; no new nappies needed yet |
+| 20:25 | 0h10 | [Transit](#transport-20) | Walk back to hotel |
 
 - Uji is compact, but the Tale of Genji Museum sits about 15 minutes north of
   Uji Bridge along the riverside path (Sawarabi-no-michi), the same walk done
   outbound at 10:30, so the return leg carries its own travel time. This is the
   deliberately light day after yesterday's long one.
+- **Shopping appendix Run 3, placed here rather than Day 20:** the appendix
+  leaves the Day 20/21 infant-supply top-up unassigned to either date. Day 20
+  (Nara) is already the segment's longest day at about 8h15 active; Day 21 is
+  the lighter of the two (about 7h10), so the run lands here instead. Once both
+  infants are down at the end of the bath/bedtime routine, one adult walks
+  alone to a nearby Matsumoto Kiyoshi or Welcia drugstore (a few minutes from
+  Shijo-Omiya) for the tin of formula and the pouches the appendix calls for -
+  a solo trip of about 35 minutes total, the same pattern as the Day 3 and Day
+  19 solo evening runs. Formula and pouches are already folded into the day's
+  "Infant food" budgeting per the shopping appendix's Section 4 reconciliation,
+  so this run changes nothing in the Day 21 Cost table below, and because it's
+  a solo adult's late errand rather than a party outing, it isn't counted in
+  the active out-of-lodging time either.
 - Active out-of-lodging time: about 7h10, plus a 1h45 rest block. This is right
   at the ~7h guideline - the lightest of the segment's day trips.
 
@@ -2320,7 +2385,7 @@ rest above - free, no separate stop and no schedule change.
 | Activities | 7,500 | 48 |
 | **Day total** | **36,730** | **237** |
 
-**Running total after Day 21: ¥846,240 ($5,460)**
+**Running total after Day 21: ¥850,304 ($5,486)**
 
 ---
 
@@ -2433,7 +2498,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 | Activities | 9,300 | 60 |
 | **Day total** | **38,740** | **250** |
 
-**Running total after Day 22: ¥884,980 ($5,710)**
+**Running total after Day 22: ¥889,044 ($5,736)**
 
 ---
 
@@ -2545,7 +2610,7 @@ are free; the weaving experience and kimono rental are priced per adult only
 | Activities | 24,900 | 161 |
 | **Day total** | **53,770** | **347** |
 
-**Running total after Day 23: ¥938,750 ($6,056)**
+**Running total after Day 23: ¥942,814 ($6,083)**
 
 ---
 
@@ -2601,21 +2666,31 @@ Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
 | 12:00 | 0h05 | [Transit](#transport-23) | Walk, hotel -> Hiroshima Stn concourse |
 | 12:05 | 1h00 | [Food](#meals-23) | Lunch near Hiroshima Stn |
 | 13:05 | 0h05 | [Transit](#transport-23) | Walk, Hiroshima Stn concourse -> hotel |
-| 13:10 | 1h45 | Rest | Rest / infant naps at hotel |
-| 14:55 | 0h15 | [Transit](#transport-23) | Hotel -> Peace Memorial Park, Hiroden streetcar |
+| 13:10 | 1h10 | Rest | Rest / infant naps at hotel (trimmed from 1h45 - see note) |
+| 14:20 | 0h10 | [Transit](#transport-23) | Walk, hotel -> [ekie](#run---day-24-fri-30-oct-1430-after-1135-check-in-sized-for-the-whole-4-night-block), Hiroshima Stn south exit |
+| 14:30 | 0h25 | [Food](#meals-23) | Hiroshima arrival grocery run at [ekie](#run---day-24-fri-30-oct-1430-after-1135-check-in-sized-for-the-whole-4-night-block) - infant-supply stock-up (formula, pouches, nappies, wipes) sized for the whole 4-night block, plus snacks/fruit for the Miyajima day trip |
+| 14:55 | 0h15 | [Transit](#transport-23) | Ekie/Hiroshima Stn -> Peace Memorial Park, Hiroden streetcar |
 | 15:10 | 1h15 | [Activity](#activities-23) | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free |
 | 16:25 | 0h05 | [Transit](#transport-23) | Walk, Peace Memorial Park -> Hondori arcade |
 | 16:30 | 0h45 | [Food](#meals-23) | Dinner near Peace Park / Hondori arcade |
 | 17:15 | 0h20 | [Transit](#transport-23) | Walk/streetcar back to hotel |
 | 17:35 | - | Rest | Evening at hotel, infants down |
 
-- Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
+- Travel day: about 3h50 of seated transit plus a midday rest block at the hotel and a
   light evening walk. The hotel is genuinely "Ekimae" (station-front, about a 5-minute walk
   from Hiroshima Stn), and Hondori arcade is a further 5-minute walk east of Peace Park
   rather than adjoining it.
-- Active out-of-lodging time: about 7h10 (4h30 before the rest block, 2h40 after), plus a
-  1h45 rest block. This is a touch over the ~7h guideline, on a day that's otherwise a
-  seated shinkansen transfer.
+- **Shopping appendix run, placed at ~14:30 rather than the appendix's rough ~15:00:** [ekie](#run---day-24-fri-30-oct-1430-after-1135-check-in-sized-for-the-whole-4-night-block)
+  sits right at Hiroshima Stn, a few minutes from the hotel, so the whole party makes this
+  run together on the way back out toward Peace Memorial Park rather than as a separate trip.
+  It's sized for the entire 4-night Hiroshima block (formula, pouches, both nappy sizes,
+  wipes) plus a small snack/fruit buy for the Miyajima day trip. The 35 minutes it adds (walk
+  there, the shop, and folding straight into the streetcar leg) is absorbed by trimming the
+  midday rest from 1h45 to 1h10, not by delaying Peace Memorial Park, dinner, or the infants'
+  bedtime - Peace Memorial Park still starts at 15:10, exactly as before.
+- Active out-of-lodging time: about 7h45 (4h30 before the rest block, 3h15 after), plus a
+  1h10 rest block. This runs about 45 minutes over the ~7h guideline, all of it the Hiroshima
+  grocery run - the seated shinkansen transfer itself is unchanged.
 
 ### Lodging
 
@@ -2632,8 +2707,13 @@ Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
 | Lunch | Tempura [udon](#noodles) set with rice, pickles and a small side salad, station concourse [teishoku](#konbini-bento-and-set-meals) counter | Hiroshima Stn concourse, Minami-ku | 650 | 1,950 |
 | Dinner | Tonkotsu [ramen](#noodles) with a side of pan-fried gyoza, casual counter-seating shop | Hondori arcade area, Naka-ku | 750 | 2,550 |
 | Infant food | Formula (Wakodo or Pigeon, combined feeds for both infants), vegetable-and-chicken puree pouches (Wakodo Rakuraku or Pigeon) for the 12-month-old; banana and steamed sweet potato off the family table for the 20-month-old | Conbini near hotel | n/a | 1,800 |
+| Miyajima day-trip snacks | Snacks/fruit bought during the [ekie](#run---day-24-fri-30-oct-1430-after-1135-check-in-sized-for-the-whole-4-night-block) grocery run, for the Day 25 Miyajima trip | [ekie](#run---day-24-fri-30-oct-1430-after-1135-check-in-sized-for-the-whole-4-night-block), Hiroshima Stn south exit | n/a | 400 |
 
 Adult kcal: 550 + 650 + 750 = **1,950**.
+
+The [ekie](#run---day-24-fri-30-oct-1430-after-1135-check-in-sized-for-the-whole-4-night-block) run's formula, pouches, nappies and wipes (¥7,088) are trip-level baby consumables
+per the shopping appendix's Section 4 reconciliation and are not added to the Food line above -
+only the ¥400 snack/fruit item is.
 
 ### Transport
 
@@ -2660,12 +2740,12 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 15,000 | 97 |
-| Food | 6,300 | 41 |
+| Food | 6,700 | 43 |
 | Transport | 52,350 | 338 |
 | Activities | 0 | 0 |
-| **Day total** | **73,650** | **475** |
+| **Day total** | **74,050** | **478** |
 
-**Running total after Day 24: ¥1,012,400 ($6,532)**
+**Running total after Day 24: ¥1,016,864 ($6,560)**
 
 ---
 
@@ -2773,7 +2853,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 | Activities | 10,360 | 67 |
 | **Day total** | **34,160** | **220** |
 
-**Running total after Day 25: ¥1,046,560 ($6,752)**
+**Running total after Day 25: ¥1,051,024 ($6,781)**
 
 ---
 
@@ -2874,7 +2954,7 @@ infants ride free.
 | Activities | 7,980 | 51 |
 | **Day total** | **31,300** | **202** |
 
-**Running total after Day 26: ¥1,077,860 ($6,954)**
+**Running total after Day 26: ¥1,082,324 ($6,983)**
 
 ---
 
@@ -2899,8 +2979,10 @@ at Dotonbori.
 | 11:00 | 0h30 | Admin | Check in, drop bags |
 | 11:30 | 0h10 | [Transit](#transport-26) | Walk, hotel -> lunch spot near Namba |
 | 11:40 | 1h00 | [Food](#meals-26) | Lunch near Namba |
-| 12:40 | 0h10 | [Transit](#transport-26) | Walk, lunch spot -> hotel |
-| 12:50 | 1h45 | Rest | Rest / infant naps at hotel |
+| 12:40 | 0h05 | [Transit](#transport-26) | Walk, lunch spot -> [Life Namba](#run---day-27-mon-2-nov-1245-arrival-sized-for-the-3-night-block-no-new-nappies---hiroshimas-pack-still-has-supply) / Cocokara Fine, Namba |
+| 12:45 | 0h15 | [Food](#meals-26) | Osaka arrival grocery run - infant-supply top-up (formula tin, pouches) plus Kobe day-trip snacks; no new nappies needed, Hiroshima's pack still has supply |
+| 13:00 | 0h10 | [Transit](#transport-26) | Walk, [Life Namba](#run---day-27-mon-2-nov-1245-arrival-sized-for-the-3-night-block-no-new-nappies---hiroshimas-pack-still-has-supply) -> hotel |
+| 13:10 | 1h25 | Rest | Rest / infant naps at hotel (trimmed from 1h45 - see note) |
 | 14:35 | 0h20 | [Transit](#transport-26) | Hotel -> Dotonbori, walk |
 | 14:55 | 1h05 | [Activity](#activities-26) | Dotonbori canal-side walk (Glico sign, arcade browsing) + Pokemon Center Osaka DX, Daimaru Shinsaibashi 9F, free |
 | 16:00 | 0h15 | [Transit](#transport-26) | Walk, Daimaru Shinsaibashi -> Namba Yasaka Shrine |
@@ -2910,16 +2992,24 @@ at Dotonbori.
 | 17:50 | 0h20 | [Transit](#transport-26) | Walk back to hotel |
 | 18:10 | - | Rest | Evening at hotel, infants down |
 
-- Day span 07:00-18:10 (11h10), with the shinkansen leg seated and low-stress and a 1h45
-  midday rest block at the new hotel before the evening outing. Pokemon Center Osaka DX is
+- Day span 07:00-18:10 (11h10), with the shinkansen leg seated and low-stress and a midday
+  rest block at the new hotel before the evening outing. Pokemon Center Osaka DX is
   folded into the Dotonbori stop rather than given a separate transit leg - Daimaru
   Shinsaibashi's 9th floor is a few minutes' walk further up the Shinsaibashi-suji arcade from
   the canal, so that stop needs no extra time of its own. Namba Yasaka Shrine, though, is a
   genuine ~15-minute walk each way from Dotonbori/Shinsaibashi, not an in-passing stop; infants
   still go down by 18:10, earlier than on Days 25 or 26.
-- Active out-of-lodging time: about 7h40 (4h05 before the rest block, 3h35 after), plus a
-  1h45 rest block. This runs about 40 minutes over the ~7h guideline - it's a shinkansen
-  transfer day with a full evening outing added on top.
+- **Shopping appendix run, fitted around the arrival evening rather than against it:** Day 27
+  already carries the Dotonbori walk, the Pokemon Center stop and the genuine there-and-back
+  to Namba Yasaka Shrine, so the appendix's Osaka arrival run is folded into the existing walk
+  back from lunch ([Life Namba](#run---day-27-mon-2-nov-1245-arrival-sized-for-the-3-night-block-no-new-nappies---hiroshimas-pack-still-has-supply)/Cocokara Fine sit right in the same Namba area) rather than
+  added as a separate outing. The only thing that gives is 20 minutes trimmed from the midday
+  rest (1h45 down to 1h25) - the Dotonbori/Pokemon Center/Yasaka Shrine evening, dinner, and
+  the 18:10 bedtime are all untouched.
+- Active out-of-lodging time: about 8h00 (4h25 before the rest block, 3h35 after), plus a
+  1h25 rest block. This runs about 1h00 over the ~7h guideline - it's a shinkansen
+  transfer day with a full evening outing added on top, now also carrying the Day 27 arrival
+  grocery run.
 
 ### Lodging
 
@@ -2936,8 +3026,13 @@ at Dotonbori.
 | Lunch | Kake [udon](#noodles) with a chicken tempura and an [onigiri](#konbini-bento-and-set-meals), self-serve udon counter (e.g. Marugame Seimen) | near Namba Stn | 700 | 2,250 |
 | Dinner | Osaka-style street food: [takoyaki](#street-snacks) (octopus-filled batter balls, griddled and topped with sauce, mayonnaise and bonito flakes) plus a side of negiyaki or a [kushikatsu](#grilled-and-skewered) skewer (e.g. Takoyaki Doraku Wanaka) | Dotonbori, Chuo-ku | 750 | 2,400 |
 | Infant food | Purees (Pigeon or Morinaga pouches) for the 12-month-old; soft rice, egg, and small cooled pieces of [takoyaki](#street-snacks) filling off the family plate for the 20-month-old | Conbini near hotel | n/a | 1,900 |
+| Kobe day-trip snacks | Snacks/fruit bought during the arrival grocery run, for the Day 28 Kobe day trip | [Life Namba](#run---day-27-mon-2-nov-1245-arrival-sized-for-the-3-night-block-no-new-nappies---hiroshimas-pack-still-has-supply), Naniwa-ku, Osaka | n/a | 400 |
 
 Adult kcal: 550 + 700 + 750 = **2,000**.
+
+The arrival run's formula tin and pouches (¥3,180) are trip-level baby consumables per the
+shopping appendix's Section 4 reconciliation and are not added to the Food line above - only
+the ¥400 snack/fruit item is.
 
 ### Transport
 
@@ -2964,12 +3059,12 @@ covered in the next segment.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 13,000 | 84 |
-| Food | 6,550 | 42 |
+| Food | 6,950 | 45 |
 | Transport | 870 | 6 |
 | Activities | 0 | 0 |
-| **Day total** | **20,420** | **132** |
+| **Day total** | **20,820** | **134** |
 
-**Running total after Day 27: ¥1,098,280 ($7,086)**
+**Running total after Day 27: ¥1,103,144 ($7,117)**
 
 ---
 
@@ -2978,18 +3073,19 @@ covered in the next segment.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 58,000 | 374 |
-| Food | 28,650 | 185 |
+| Food | 29,450 | 190 |
 | Transport | 54,540 | 352 |
 | Activities | 18,340 | 118 |
-| **Segment total** | **159,530** | **1,029** |
+| **Segment total** | **160,330** | **1,034** |
 
-Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000) - both within
-the ±5% tolerance. Activities -25.2% (target 26,000), well under target: the Tombori River
-Cruise appears only once across Days 27-29 (on Day 29, in the Osaka file) rather than being
-charged here too, and Daisho-in Temple and Namba Yasaka Shrine, both free, are added
-instead. That's a real saving from a single-charge cruise, not a shortfall to paper over, and
-it isn't backfilled with padding activities. Lodging is the fixed ¥15,000 x 3 nights + ¥13,000
-x 1 night from MASTER-BRIEF and is not flexed.
+Against envelope: Food -1.8% (target 30,000, up from the appendix-only ¥28,650 once the Day
+24 [ekie](#run---day-27-mon-2-nov-1245-arrival-sized-for-the-3-night-block-no-new-nappies---hiroshimas-pack-still-has-supply) and Day 27 arrival grocery runs each add their ¥400 snack/fruit line), Transport -2.6%
+(target 56,000) - both within the ±5% tolerance. Activities -25.2% (target 26,000), well under
+target: the Tombori River Cruise appears only once across Days 27-29 (on Day 29, in the Osaka
+file) rather than being charged here too, and Daisho-in Temple and Namba Yasaka Shrine, both
+free, are added instead. That's a real saving from a single-charge cruise, not a shortfall to
+paper over, and it isn't backfilled with padding activities. Lodging is the fixed ¥15,000 x 3
+nights + ¥13,000 x 1 night from MASTER-BRIEF and is not flexed.
 
 ---
 
@@ -3084,7 +3180,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 11,250 | 73 |
 | **Day total** | **34,210** | **221** |
 
-**Running total after Day 28: ¥1,132,490 ($7,306)**
+**Running total after Day 28: ¥1,137,354 ($7,338)**
 
 ---
 
@@ -3178,7 +3274,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 10,500 | 68 |
 | **Day total** | **38,150** | **246** |
 
-**Running total after Day 29: ¥1,170,640 ($7,553)**
+**Running total after Day 29: ¥1,175,504 ($7,584)**
 
 **Option on the table, not scheduled: Bunraku at the National Bunraku Theatre.** The theatre sits one minute from Kintetsu Nipponbashi Station, the same block as this day's Kuromon Ichiba lunch stop, and its Kinshu (Autumn) run covers 31 Oct - 23 Nov 2026 - open the entire Osaka stay. Bunraku puppets are worked in full view, roughly a metre tall, each handled by three visible black-clad puppeteers, with a chanter and shamisen player performing live at the side of the stage; nothing is spoken that needs translating to follow it, which makes it arguably the single best answer on this whole trip to "how is Japanese theatre different from American theatre." Tickets run about ¥6,500/adult, uniform seating, and the theatre's own FAQ sets no minimum age - only a policy that a disruptive child may be asked to step out, with lobby monitors as a fallback. **It is not scheduled, for one plain reason: Part 1 alone runs 2h20 or longer, which means one adult sits alone with both infants for that entire stretch on the trip's last full day**, and taking it means dropping the Tombori River Cruise above and trimming the Shinsekai stop to make room. It is priced and ready to book as-is if the family decides that trade is worth it; it is left out of the schedule and the Day 29 Cost table above on the assumption that it is not.
 
@@ -3233,6 +3329,33 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 *(No activities scheduled - departure day.)*
 
+### Packing and departure notes
+
+**What must be consumed, binned or left behind before checkout (08:15) and before security:**
+- Any opened pouch, snack packet or half-finished formula tin from the Day 27 Osaka run - the
+ run was sized to run out around Day 29 night, so there should be little to nothing left; bin
+ what remains rather than carry an open, mostly-empty tin through security.
+- Any part-used nappy pack: keep only what's needed for the travel day itself (flight plus
+ transit) in hand luggage; leave a genuinely spare handful behind rather than repack a torn bag.
+- Hotel toiletries, opened wipes packets not needed in-flight, anything not going in the carry-on
+ or the checked bag - leave for housekeeping rather than binning usable items.
+- **Nothing perishable exists to deal with** - there has been no kitchen, and therefore no fresh
+ food, since Day 13.
+
+**What's prohibited or restricted in hand luggage on an international departure from KIX:**
+- The standard liquids/gels rule applies: containers over 100ml are not allowed in the cabin
+ outside of a single clear 1L resealable bag, and that bag's total liquid volume is capped
+ (typically ~1L) at most international airports, KIX included.
+- **Baby formula, breast milk and baby food (including pouches/purees) typically carry a
+ medical or infant exemption** to the 100ml liquids rule in most jurisdictions, including Japan
+ and most international carriers' home countries, when a child is travelling with the party.
+ This usually means these items can exceed 100ml but must be declared and presented separately
+ at the screening tray, and may be tested.
+- Formula **powder** (an unopened tin, or any that's left) is not a liquid and is not subject to
+ the liquids rule at all - it can travel in carry-on or checked luggage without restriction.
+- Nappies, wipes and a few days of dry pouches/snacks are fine in carry-on with no special
+ handling needed.
+
 ### Day 30 Cost
 
 | Category | ¥ | $ |
@@ -3243,7 +3366,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 0 | 0 |
 | **Day total** | **7,790** | **50** |
 
-**Running total after Day 30: ¥1,178,430 ($7,603)**
+**Running total after Day 30: ¥1,183,294 ($7,634)**
 
 ---
 
@@ -4209,18 +4332,15 @@ This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 
 
 ## Appendix F: Shopping lists and supply runs
 
-*Party: 3 adults + 2 infants (Infant A, ~12mo, formula + purees; Infant B, ~20mo, mostly table
-food). FX: ¥155 = $1, rounded to the nearest ¥10 / $1. This appendix covers grocery,
-drugstore and convenience-store shopping only - restaurant meals, konbini snacks and the
-hangaku-priced deli dinners already itemized day-by-day in the six day files are not
-re-listed here; they are referenced in the strategy notes so the two documents don't
-appear to disagree.*
+*Party: 3 adults + 2 infants (Infant A, ~12 months, formula and purees; Infant B, ~20 months,
+mostly table food). FX ¥155 = $1, rounded to the nearest ¥10 and $1.*
 
-Prices are 2026 planning estimates unless marked. Store chains and neighbourhoods
-are named from a web search done for this appendix; an exact branch is named only where a
-specific listing was found, otherwise the chain and neighbourhood are given with "branch to
-confirm." No street address is invented anywhere below - where a source gave one, it is
-quoted; where it didn't, the day file's own "address unverified" language is carried over.
+This covers grocery, drugstore and convenience-store shopping. Restaurant and konbini meals
+are priced on their own days and are not repeated here.
+
+Two conventions apply throughout. Prices are 2026 planning estimates, not quotes. An exact
+branch is named only where a specific listing was found; otherwise the chain and neighbourhood
+are given with "branch to confirm", and no street address is invented.
 
 ---
 
@@ -4401,7 +4521,7 @@ Day 14's dinner (arriving too late for the Toyoko Inn breakfast, which starts Da
 out near Kyoto/Omiya Stn per the day file (¥1,900 infant line) - a konbini stop, not a grocery
 run, so it isn't itemized separately here.
 
-##### Run 1 - Day 15, Tue 20 Oct, ~18:00 (infant-supply restock, covers roughly Days 15-19)
+##### Run 1 - Day 15, Wed 21 Oct, ~19:25 (infant-supply restock, covers roughly Days 15-19)
 
 Shops on Day [15](#day-15---wednesday-october-21-2026---kyoto). Infant-supply restock covering roughly Days [15](#day-15---wednesday-october-21-2026---kyoto) to [19](#day-19---sunday-october-25-2026---kyoto).
 
@@ -4420,7 +4540,7 @@ or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch 
 | Fruit / snack for the toddler | - | - | 200 |
 | **Run 1 total** | | | **¥7,288 ($47)** |
 
-##### Run 2 - Day 19, Sat 24 Oct, ~17:00 (hangaku dinner components - no kitchen, eaten cold/room-temp in the room)
+##### Run 2 - Day 19, Sun 25 Oct, ~20:10 (hangaku dinner components - no kitchen, eaten cold/room-temp in the room)
 
 Shops on Day [19](#day-19---sunday-october-25-2026---kyoto). Hangaku dinner components, eaten cold or at room temperature since the Kyoto hotel has no kitchen.
 
@@ -4442,9 +4562,9 @@ Shops on Day [19](#day-19---sunday-october-25-2026---kyoto). Hangaku dinner comp
 ¥2,180 meal-only subtotal is close (~18% under, plausibly a slightly deeper hangaku discount or
 one fewer side), well inside normal night-to-night variance for a discount-timed buy.
 
-##### Run 3 - Day 20 or 21, ~18:00 (infant-supply top-up for Kyoto B, no new nappies needed yet)
+##### Run 3 - Day 21, Tue 27 Oct, ~20:00 (infant-supply top-up for Kyoto B, no new nappies needed yet)
 
-Shops on Day [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) or Day [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji). Infant-supply top-up, no new nappies needed yet.
+Shops on Day [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji). Infant-supply top-up, no new nappies needed yet.
 
 **Store:** drugstore or conbini near the hotel [chain per day file, unnamed - Matsumoto Kiyoshi,
 Welcia, Tsuruha or Cocokara Fine are all plausible; branch to confirm].
@@ -4466,7 +4586,7 @@ itemized in `days-15-19-kyoto-a.md` and `days-20-23-kyoto-b.md`.
 
 Days [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)-[26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast
 
-##### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
+##### Run - Day 24, Fri 30 Oct, ~14:30 (after ~11:35 check-in; sized for the whole 4-night block)
 
 Shops on Day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) after the ~11:35 check-in. Sized for the whole block, Days [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) to [27](#day-27---monday-november-2-2026---hiroshima-to-osaka).
 
@@ -4498,7 +4618,7 @@ envelope is Toyoko Inn's free breakfast plus restaurant/konbini meals in `days-2
 
 Days [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)-[30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Toyoko Inn Osaka Namba, no kitchen, free breakfast
 
-##### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
+##### Run - Day 27, Mon 2 Nov, ~12:45 arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
 
 Shops on Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) on arrival. Sized for Days [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) to [29](#day-29---wednesday-november-4-2026---osaka); no new nappies, the Hiroshima pack still has supply.
 
@@ -4584,7 +4704,7 @@ Day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), shinkansen on t
 - **Already eaten down:** trivially true - there has been no kitchen since Day 13, so nothing
  perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
  are dry infant supplies.
-- **Carry:** whatever's left of the Kyoto Run 3 (Day 20/21) formula tin and pouches, plus
+- **Carry:** whatever is left of the Kyoto Run 3 (Day [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji)) formula tin and pouches, plus
  whatever nappy stock remains from the Day 15 pack - by Day 24 this is roughly 9 days into a
  pack sized for about 9 days, so it should be close to empty; if a few nappies are left, they
  travel for free (a handful of nappies weighs nothing).
@@ -4609,7 +4729,7 @@ Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix), flyin
 - **Nappy stock:** the Day 24 Hiroshima nappy pack was sized to cover Hiroshima (4 nights) plus
  Osaka (3 nights) = 7 nights; Day 30 is the 7th night of that pack's coverage, so it should run
  out almost exactly at departure. If a handful remain, they go straight into hand luggage for
- the flight - see Section 5.
+ the flight, and the Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) packing notes cover what goes through security.
 - **Bin before checkout:** any opened snack packet, half-finished pouch, empty formula tin
  (recycle per the hotel's bins), used wipes packet. Nothing here is worth carrying past the
  hotel room door.
@@ -4619,13 +4739,11 @@ Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix), flyin
 
 ### 4. Consolidated infant-supplies plan
 
-Two different numbers matter here, and they are not the same thing - keeping them separate
-avoids double-counting the trip's own budget:
+Two different numbers matter here, and they are not the same thing, keeping them separate
+avoids double-counting:
 
-1. **Formula + pouches (daily feeding cost).** This is already built into every day's "Infant
- food" row in the six day files, and therefore already inside the ¥243,000 trip food total
- (see Section 1's table). Summing that row across all 30 days directly from the day files
- gives:
+1. **Formula + pouches (daily feeding cost).** This is folded into each day's food spending
+ across the trip. By segment, it comes to:
 
  | Segment | Days | ¥ |
  |---|---|---|
@@ -4637,12 +4755,8 @@ avoids double-counting the trip's own budget:
  | Osaka + departure | 28-30 | 5,200 |
  | **Total** | 30 | **¥59,550 ($384)** |
 
- This figure is - it is not an
- estimate this appendix invented.
-
-2. **Nappies, wipes and diaper cream (trip-level, not in the day totals).** Per the MASTER-BRIEF,
- diapers are deliberately kept out of each day's food total and handled as a separate
- trip-level line. From the shopping runs above:
+2. **Nappies, wipes and diaper cream (trip-level line).** These are tracked separately from
+ the daily food totals:
 
  | Purchase point | Nappies (M+L) ¥ | Wipes ¥ | Cream ¥ | ¥ |
  |---|---|---|---|---|
@@ -4651,22 +4765,21 @@ avoids double-counting the trip's own budget:
  | Hiroshima, Day 24 | 3,560 | 348 | - | 3,908 |
  | **Total** | | | | **¥12,524 ($81)** |
 
- Three restocks across 30 days, each pack sized to run about 7-9 days per infant - consistent
+ Three restocks across 30 days, each pack sized to run about 7-9 days per infant, consistent
  with the fact that drugstores (Matsumoto Kiyoshi, Welcia, Tsuruha, Cocokara Fine) are
  everywhere in Japan, including inside stations, so there is never a reason to bulk-buy or
  carry more than one spare pack per infant at a time.
 
-**Reconciling to the ¥68,000 target:** ¥59,550 (formula/pouches) + ¥12,524 (nappies/wipes/cream)
-= **¥72,074 ($465)**, about 6% over the MASTER-BRIEF's ¥68,000 planning figure. Said plainly
-rather than fudged: this gap is real, and it's entirely the nappy/wipe portion - retail packs of
-44-70 don't divide evenly into 30 days of use for two infants of different sizes, so there's
-inherent overbuy built into a three-restock plan. It's a ¥4,000 ($26) gap on a trip that carries
-a ¥160,000 contingency line, so it doesn't need to come out of the food budget or trigger a
-re-plan - just note it against contingency.
+The trip budgets ¥68,000 for baby consumables. ¥59,550 (formula/pouches) plus ¥12,524
+(nappies/wipes/cream) comes to **¥72,074 ($465)**, about 6% over that figure. This gap is real,
+and it's entirely the nappy/wipe portion, retail packs of 44-70 don't divide evenly into 30 days
+of use for two infants of different sizes, so there's inherent overbuy built into a
+three-restock plan. It's a ¥4,000 ($26) gap on a trip that carries a ¥160,000 contingency line,
+so it doesn't need to come out of the food budget or trigger a re-plan, just note it against
+contingency.
 
-**On formula brand:** every purchase point above specifies Wakodo, Pigeon or Morinaga.
-**Kewpie discontinues its baby-food line in Aug 2026**, so it is deliberately never named as a
-brand option anywhere in this document, matching the day files' own practice.
+**On formula brand:** the plan uses Wakodo, Pigeon or Morinaga. Kewpie is avoided because it
+discontinued its baby-food line in August 2026.
 
 **Running total by point in the trip** (cumulative, formula/pouches + nappies/wipes/cream):
 
@@ -4678,42 +4791,6 @@ brand option anywhere in this document, matching the day files' own practice.
 | 23 (end of Kyoto B) | 55,466 |
 | 27 (end of Hiroshima) | 66,874 |
 | 30 (end of Osaka + departure) | 72,074 |
-
----
-
-### 5. Day 30 packing-day note (Osaka -> Kansai Airport)
-
-**What must be consumed, binned or left behind before checkout (08:15) and before security:**
-- Any opened pouch, snack packet or half-finished formula tin from the Day 27 Osaka run - the
- run was sized to run out around Day 29 night, so there should be little to nothing left; bin
- what remains rather than carry an open, mostly-empty tin through security.
-- Any part-used nappy pack: keep only what's needed for the travel day itself (flight plus
- transit) in hand luggage; leave a genuinely spare handful behind rather than repack a torn bag.
-- Hotel toiletries, opened wipes packets not needed in-flight, anything not going in the carry-on
- or the checked bag - leave for housekeeping rather than binning usable items.
-- **Nothing perishable exists to deal with** - there has been no kitchen, and therefore no fresh
- food, since Day 13.
-
-**What's prohibited or restricted in hand luggage on an international departure from KIX:**
-- The standard liquids/gels rule applies: containers over 100ml are not allowed in the cabin
- outside of a single clear 1L resealable bag, and that bag's total liquid volume is capped
- (typically ~1L) at most international airports, KIX included. 
-- **Baby formula, breast milk and baby food (including pouches/purees) typically carry a
- medical or infant exemption** to the 100ml liquids rule in most jurisdictions, including Japan
- and most international carriers' home countries, when a child is travelling with the party.
- This usually means these items can exceed 100ml but must be declared and presented separately
- at the screening tray, and may be tested. 
-- Formula **powder** (an unopened tin, or any that's left) is not a liquid and is not subject to
- the liquids rule at all - it can travel in carry-on or checked luggage without restriction.
-- Nappies, wipes and a few days of dry pouches/snacks are fine in carry-on with no special
- handling needed.
-
----
-
-*This appendix should be read alongside the six day files - the meal-by-meal costs for
-restaurant and konbini spending live there; this document adds the grocery/drugstore shopping
-runs, the infant-supplies consolidation, and the move-by-move run-down plan the day files don't
-otherwise spell out.*
 
 ---
 

@@ -586,8 +586,10 @@ away from the holiday crowds.
 | 12:45 | 1h45 | Rest | Rest / infant naps at the hotel |
 | 14:30 | 0h15 | Transit | Walk, hotel -> Kappabashi Kitchenware Street |
 | 14:45 | 1h00 | Activity | Plastic food-sample (shokuhin sampuru) workshop, Kappabashi |
-| 15:45 | 0h15 | Transit | Walk back to the hotel |
-| 16:00 | 1h15 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
+| 15:45 | 0h20 | Transit | Walk, Kappabashi Kitchenware Street -> LIFE Bioral Parco_ya Ueno, Ueno 3-24-6, B1 |
+| 16:05 | 0h35 | Food | Grocery top-up run - LIFE Bioral Parco_ya Ueno (mid-stay stock, sized to cover Days 6-8) |
+| 16:40 | 0h15 | Transit | Walk, LIFE Bioral Parco_ya Ueno -> hotel |
+| 16:55 | 0h20 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
 | 17:15 | 0h15 | Transit | Walk, hotel -> Ueno Stn area (yakitori dinner) |
 | 17:30 | 1h00 | Food | Dinner - yakitori set, Torikizoku near Ueno Stn |
 | 18:30 | 0h15 | Transit | Walk back to the hotel |
@@ -605,9 +607,18 @@ away from the holiday crowds.
   to do the making while the third minds both infants nearby. Instruction at most
   workshops is Japanese-only - confirm English support when booking, or treat it as a
   watch-and-try session rather than a fully guided one if it isn't available.
-- Active out-of-lodging time: about 7h30 (4h30 before the rest block, 3h00 after), plus
-  a 1h45 rest block. This runs about 30 minutes over the ~7h guideline, but it's all
-  short walkable outings around Ueno, not day-trip transit.
+- **Mid-stay grocery top-up, worked into the return leg:** on the walk back from the
+  Kappabashi workshop, the party detours to LIFE Bioral Parco_ya Ueno (Ueno 3-24-6, B1)
+  for Run 2 of the Tokyo shopping runs - eggs, milk, chicken thigh, ground pork, tofu,
+  natto, mixed produce and bread to top up the kitchenette through Day 8, plus 4 infant
+  pouches. This is the whole party's own detour on its way home, not a solo trip. The
+  ¥2,494 grocery/perishable portion is added to today's Food line below; the ¥600 of
+  pouches is tracked as part of the trip's ongoing infant-food consumption in the
+  shopping appendix and is not added again here, to avoid double-counting.
+- Active out-of-lodging time: about 8h25 (4h30 before the rest block, 3h55 after), plus
+  a 1h45 rest block. This runs about 1h25 over the ~7h guideline - the added 55 minutes
+  is the LIFE Bioral Parco_ya Ueno grocery detour on the walk back from Kappabashi, not
+  a separate trip out; the rest is still short walkable outings around Ueno.
 
 ### Lodging
 
@@ -624,8 +635,11 @@ away from the holiday crowds.
 | Lunch | Menchi-katsu (fried minced-meat cutlet), a shrimp senbei cracker, and a vegetable croquette, eaten street-stall style | Yanaka Ginza, Taito-ku | 650 | 1,850 |
 | Dinner | Yakitori set - about 5 grilled chicken and vegetable skewers per adult, rice, miso soup. Yakitori is bite-sized meat and vegetables grilled on skewers over charcoal, ordered a few at a time - one of Japan's most common izakaya-style meals, and this trip's second taste of it in thirty days | Torikizoku (or similar flat-price yakitori chain), near Ueno Stn, Taito-ku (exact branch unverified) | 800 | 5,700 |
 | Infant food | 3 formula feeds plus 2 Pigeon pouches (pork and vegetable; rice and pumpkin) for Infant A; Infant B eats deboned bites of grilled chicken skewer and rice from the yakitori set | Conbini / Torikizoku | n/a | 2,150 |
+| Grocery top-up run | Run 2 of the Tokyo shopping runs - eggs, milk, chicken thigh, ground pork, tofu, natto, mixed produce, sliced bread; mid-stay stock sized to cover Days 6-8 | LIFE Bioral Parco_ya Ueno, Ueno 3-24-6, B1 | n/a | 2,494 |
 
-Adult kcal: 500 + 650 + 800 = **1,950**.
+Adult kcal: 500 + 650 + 800 = **1,950**. The run's 4 infant pouches (¥600) aren't
+counted here - they're part of the trip's ongoing infant-food consumption, tracked in
+the shopping appendix rather than this day's Food total.
 
 ### Transport
 
@@ -652,12 +666,12 @@ across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 10,450 | 67 |
+| Food | 12,944 | 84 |
 | Transport | 540 | 3 |
 | Activities | 6,900 | 45 |
-| **Day total** | **35,890** | **232** |
+| **Day total** | **38,384** | **248** |
 
-**Running total after Day 6: ¥222,000 ($1,432)**
+**Running total after Day 6: ¥224,494 ($1,448)**
 
 ---
 
@@ -748,7 +762,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Activities | 2,100 | 14 |
 | **Day total** | **38,770** | **250** |
 
-**Running total after Day 7: ¥260,770 ($1,682)**
+**Running total after Day 7: ¥263,264 ($1,698)**
 
 ---
 
@@ -776,7 +790,10 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 | 12:30 | 0h45 | Food | Lunch, Toyosu food court/market area |
 | 13:15 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
 | 15:00 | 0h45 | Transit | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
-| 15:45 | 1h45 | Rest | Downtime at the hotel |
+| 15:45 | 0h15 | Transit | Walk, Ueno Stn -> Gyomu Super, Ueno-Koen branch (Negishi 1-2-13, Taito-ku) |
+| 16:00 | 0h30 | Food | Grocery top-up run - Gyomu Super Ueno-Koen (deliberately small, sized to run down by Day 10) |
+| 16:30 | 0h15 | Transit | Walk, Gyomu Super Ueno-Koen -> hotel |
+| 16:45 | 0h45 | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
@@ -790,7 +807,17 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
   Wednesdays and Sundays through the year - but Wed 14 Oct 2026 is not one of its
   listed October closure dates (Oct 7, 21, 28 are the closed Wednesdays), so the
   market is open on this day; verify against the official calendar closer to travel.
-- Active out-of-lodging time: about 6h45, plus a 1h45 rest block.
+- **Small top-up on the way home from Toyosu:** the party detours to Gyomu Super,
+  Ueno-Koen branch, on the walk back from Ueno Station, for Run 3 of the Tokyo shopping
+  runs - a deliberately small restock (eggs, milk, chicken thigh, mixed produce, bread
+  rolls) sized to run the kitchenette down by Day 10, plus 3 infant pouches. This is the
+  whole party's own detour on its way home, not a solo trip. The ¥1,370 grocery portion
+  is added to today's Food line below; the ¥450 of pouches is tracked as part of the
+  trip's ongoing infant-food consumption in the shopping appendix and is not added
+  again here.
+- Active out-of-lodging time: about 7h45, plus a 1h45 rest block. This runs about 45
+  minutes over the ~7h guideline - the added time is the Gyomu Super Ueno-Koen grocery
+  detour worked into the walk back from Toyosu, not a separate trip out.
 
 ### Lodging
 
@@ -807,8 +834,11 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 | Lunch | Food court set meals | Aqua City/Toyosu area | 700 | 3,400 |
 | Dinner | Self-catered - rice, ginger pork, steamed broccoli, miso soup | Hotel kitchenette | 800 | 2,350 |
 | Infant food | 3 formula feeds plus 2 Pigeon pouches (white fish and rice; pumpkin) for Infant A; Infant B eats table portions of the tamagoyaki and rice, plus a Wakodo snack pouch | Conbini | n/a | 2,200 |
+| Grocery top-up run | Run 3 of the Tokyo shopping runs - a deliberately small restock (eggs, milk, chicken thigh, mixed produce, bread rolls), sized to run down by Day 10 | Gyomu Super, Ueno-Koen branch | n/a | 1,370 |
 
-Adult kcal: 550 + 700 + 800 = **2,050**. The market's famous sit-down sushi counters
+Adult kcal: 550 + 700 + 800 = **2,050**. The run's 3 infant pouches (¥450) aren't
+counted here - they're part of the trip's ongoing infant-food consumption, tracked in
+the shopping appendix rather than this day's Food total. The market's famous sit-down sushi counters
 (Sushi Dai, Sushi Dokoro Yamazaki) run ¥4,000-5,000/adult omakase sets with long
 queues from 5am - skipped here for budget and toddler-patience reasons in favor of
 grazing individual stalls, landing near the ¥1,000-2,000/adult range this trip budgets
@@ -839,12 +869,12 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 11,550 | 75 |
+| Food | 12,920 | 83 |
 | Transport | 4,020 | 26 |
 | Activities | 15,900 | 103 |
-| **Day total** | **49,470** | **319** |
+| **Day total** | **50,840** | **328** |
 
-**Running total after Day 8: ¥310,240 ($2,002)**
+**Running total after Day 8: ¥314,104 ($2,026)**
 
 ---
 
@@ -931,7 +961,7 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 | Activities | 9,300 | 60 |
 | **Day total** | **42,760** | **276** |
 
-**Running total after Day 9: ¥353,000 ($2,277)**
+**Running total after Day 9: ¥356,864 ($2,302)**
 
 ---
 
@@ -1024,7 +1054,7 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Activities | 6,000 | 39 |
 | **Day total** | **34,710** | **224** |
 
-**Running total after Day 10: ¥387,710 ($2,501)**
+**Running total after Day 10: ¥391,574 ($2,526)**
 
 ---
 

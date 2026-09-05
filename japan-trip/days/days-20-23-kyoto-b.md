@@ -110,7 +110,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Activities | 8,700 | 56 |
 | **Day total** | **39,730** | **256** |
 
-**Running total after Day 20: ¥809,510 ($5,223)**
+**Running total after Day 20: ¥813,574 ($5,249)**
 
 ---
 
@@ -146,11 +146,27 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | 18:10 | 0h50 | Food | Dinner at Marugame Seimen, near Omiya |
 | 19:00 | 0h10 | Transit | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
+| 20:00 | 0h10 | Transit | One adult walks alone to a Matsumoto Kiyoshi or Welcia drugstore near Shijo-Omiya, for the Kyoto Run 3 infant-supply top-up (the other two stay with the sleeping infants) |
+| 20:10 | 0h15 | Admin | Infant-supply top-up - formula tin and pouches for Kyoto B; no new nappies needed yet |
+| 20:25 | 0h10 | Transit | Walk back to hotel |
 
 - Uji is compact, but the Tale of Genji Museum sits about 15 minutes north of
   Uji Bridge along the riverside path (Sawarabi-no-michi), the same walk done
   outbound at 10:30, so the return leg carries its own travel time. This is the
   deliberately light day after yesterday's long one.
+- **Shopping appendix Run 3, placed here rather than Day 20:** the appendix
+  leaves the Day 20/21 infant-supply top-up unassigned to either date. Day 20
+  (Nara) is already the segment's longest day at about 8h15 active; Day 21 is
+  the lighter of the two (about 7h10), so the run lands here instead. Once both
+  infants are down at the end of the bath/bedtime routine, one adult walks
+  alone to a nearby Matsumoto Kiyoshi or Welcia drugstore (a few minutes from
+  Shijo-Omiya) for the tin of formula and the pouches the appendix calls for -
+  a solo trip of about 35 minutes total, the same pattern as the Day 3 and Day
+  19 solo evening runs. Formula and pouches are already folded into the day's
+  "Infant food" budgeting per the shopping appendix's Section 4 reconciliation,
+  so this run changes nothing in the Day 21 Cost table below, and because it's
+  a solo adult's late errand rather than a party outing, it isn't counted in
+  the active out-of-lodging time either.
 - Active out-of-lodging time: about 7h10, plus a 1h45 rest block. This is right
   at the ~7h guideline - the lightest of the segment's day trips.
 
@@ -213,7 +229,7 @@ rest above - free, no separate stop and no schedule change.
 | Activities | 7,500 | 48 |
 | **Day total** | **36,730** | **237** |
 
-**Running total after Day 21: ¥846,240 ($5,460)**
+**Running total after Day 21: ¥850,304 ($5,486)**
 
 ---
 
@@ -326,7 +342,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 | Activities | 9,300 | 60 |
 | **Day total** | **38,740** | **250** |
 
-**Running total after Day 22: ¥884,980 ($5,710)**
+**Running total after Day 22: ¥889,044 ($5,736)**
 
 ---
 
@@ -438,7 +454,7 @@ are free; the weaving experience and kimono rental are priced per adult only
 | Activities | 24,900 | 161 |
 | **Day total** | **53,770** | **347** |
 
-**Running total after Day 23: ¥938,750 ($6,056)**
+**Running total after Day 23: ¥942,814 ($6,083)**
 
 ---
 

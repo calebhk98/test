@@ -30,10 +30,26 @@
 | 16:25 | 0h30 | Transit | Walk back to hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
 | 17:55 | 0h45 | Food | Dinner - Nishiki/depachika finds, eaten in the room |
+| 18:40 | 0h45 | Admin | Bath, bedtime routine - both infants down |
+| 19:25 | 0h20 | Transit | One adult walks alone to Gyomu Super Saiin, Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
+| 19:45 | 0h20 | Food | Infant-supply restock - Gyomu Super Saiin: formula tin, 6 pouches, nappies (M+L), wipes; covers roughly Days 15-19 |
+| 20:05 | 0h20 | Transit | Walk back to Toyoko Inn Kyoto Shijo-Omiya |
 
 - **Fushimi Inari note:** the Senbon Torii loop to the Yotsutsuji lookout is paved and stroller-workable. The full summit circuit (another 1.5-2h beyond Yotsutsuji) is stairs the whole way and is **carrier-only** - skipped today with two infants. Anime-fan bonus, free: this shrine and the surrounding Fushimi district are the real-world setting of *Inari, Konkon, Koi Iroha*, an anime about a girl who lives beside the shrine - worth a mention while walking the Senbon Torii, no detour needed.
 - **Kobo-ichi fit-check, stated honestly:** To-ji's monthly market falls on the 21st every month, which is today, and it sits a 15-minute walk south of Kyoto Station - directly on the JR-to-bus transfer this day already makes on the way back from Fushimi Inari. Swapping the inari-zushi shop lunch for a market lunch adds about 40 minutes net to the pre-rest stretch of the day (walk to the temple, browse, eat, walk back), which would push the day past this itinerary's ~7h active cap if nothing else moved. **What gives: Nishiki Market's evening browse is trimmed from 2h00 to 1h20.** The family will already have had a full stall-food lunch and market browse at To-ji by then, so a shorter Nishiki visit (still enough for a look at Daimaru's depachika and a stall or two for dinner ingredients) is the honest trade, not a loss - it keeps the day at ~7h00 active, right at the cap rather than over it.
 - Midday rest, at 1h40, is at the low end of the 1h30-2h00 mandatory range, since the market visit borrowed time from it.
+- **Solo infant-supply run, done honestly:** the Toyoko Inn has no kitchen, so Run 1 of
+  the Kyoto shopping runs is nappies, formula, pouches and drugstore items rather than
+  groceries. Once both infants are down, one adult walks alone (~20 min unencumbered,
+  no stroller) to Gyomu Super Saiin, Ukyo-ku - one stop from Omiya on the Hankyu Kyoto
+  Line - restocking a formula tin, 6 pouches, a nappy pack for each infant size, and a
+  wipes refill, sized to cover roughly Days 15-19; Matsumoto Kiyoshi or Welcia are the
+  drugstore fallback if Gyomu Super is closed. The formula, pouches, nappies and wipes
+  (¥7,088) are trip-level infant consumables tracked in the shopping appendix's Section
+  4, not added to this day's Food total; only the ¥200 fruit/snack picked up for the
+  20-month-old in the same run is genuine grocery spend, added to Food below. Like Day
+  19's later hangaku run, this solo trip doesn't add to the day's active out-of-lodging
+  time - the other two adults stay at the hotel with the sleeping infants throughout.
 - Active out-of-lodging time: about 7h00 (4h40 before the rest block, 2h20 after), plus a 1h40 rest block.
 
 ### Lodging
@@ -51,8 +67,11 @@
 | Lunch | Yatai lunch from Kobo-ichi's food stalls: a plate of yakisoba (fried noodles with pork and cabbage), a grilled squid skewer (ika-yaki), and a taiyaki (fish-shaped waffle cake, red-bean filling) each | To-ji temple grounds, 1 Kujocho, Minami-ku, Kyoto 601-8473 | 750 | 5,400 |
 | Dinner | Nishiki Market stall food - a tamagoyaki (rolled omelette) skewer, yatsuhashi cinnamon-mochi sweets, grilled dashi-rolled skewers, pickles - plus a bento top-up from Daimaru's depachika basement, eaten back at the hotel | Nishiki Market / Daimaru Kyoto basement, Nakagyo-ku | 800 | 3,600 |
 | Infant food | Wakodo Rakuraku stage-2 formula tin for the 12-month-old plus 2 Wakodo/Pigeon vegetable-and-fish pouches; the 20-month-old eats rice, soft tofu, and small pieces of taiyaki (bean paste scraped off) off the family's To-ji and Nishiki Market spread | Gyomu Super or drugstore near Shijo-Omiya | n/a | 2,300 |
+| Toddler snack (Gyomu Super Saiin run) | Fresh fruit/snack picked up for the 20-month-old during the solo evening infant-supply restock | Gyomu Super Saiin, Ukyo-ku | n/a | 200 |
 
-Adult kcal: 500 + 750 + 800 = **2,050/adult**.
+Adult kcal: 500 + 750 + 800 = **2,050/adult**. The same run's formula tin, pouches,
+nappies and wipes (¥7,088) are trip-level infant consumables tracked in the shopping
+appendix, not counted here.
 
 ### Transport
 
@@ -79,10 +98,10 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 19,000 | 123 |
-| Food | 11,300 | 73 |
+| Food | 11,500 | 74 |
 | Transport | 2,280 | 15 |
 | Activities | 1,500 | 10 |
-| **Day total** | **34,080** | **220** |
+| **Day total** | **34,280** | **221** |
 
 **Running total (Kyoto A segment) after Day 15: ¥30,480 ($197)**
 
@@ -478,9 +497,9 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 95,000 | 613 |
-| Food | 42,350 | 273 |
+| Food | 42,550 | 275 |
 | Transport | 16,090 | 104 |
 | Activities | 19,140 | 123 |
-| **Segment total** | **172,580** | **1,113** |
+| **Segment total** | **172,780** | **1,115** |
 
-Envelope check: Food ¥42,350 vs ¥37,000 target (+14.5%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥19,140 vs ¥38,000 target (-49.6%, well under): both markets are free to enter, Ryoan-ji's ¥1,800 admission is priced in, and the kimono rental now happens once, on Day 23, rather than on this segment as well. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
+Envelope check: Food ¥42,550 vs ¥37,000 target (+15.0%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 15's Gyomu Super Saiin infant-supply run adds a ¥200 toddler snack (the formula/nappies/wipes portion of that run is trip-level, not in this total), Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥19,140 vs ¥38,000 target (-49.6%, well under): both markets are free to enter, Ryoan-ji's ¥1,800 admission is priced in, and the kimono rental now happens once, on Day 23, rather than on this segment as well. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
