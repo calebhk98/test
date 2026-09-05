@@ -508,14 +508,26 @@ away from the holiday crowds.
 | 11:00 | 0h30 | Transit | Walk back toward Ueno via Yanaka backstreets |
 | 11:30 | 0h45 | Food | Lunch, Yanaka Ginza street food |
 | 12:15 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 14:00 | 1h00 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
-| 15:00 | - | Rest | Downtime |
-| 17:30 | 1h00 | Food | Dinner, self-catered |
-| 18:30 | 0h45 | Admin | Bath, wind-down |
+| 14:00 | 0h15 | Transit | Walk, hotel -> Kappabashi Kitchenware Street |
+| 14:15 | 1h00 | Activity | Plastic food-sample (shokuhin sampuru) workshop, Kappabashi |
+| 15:15 | 0h15 | Transit | Walk back to the hotel |
+| 15:30 | 1h45 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
+| 17:15 | 0h15 | Transit | Walk, hotel -> Ueno Stn area (yakitori dinner) |
+| 17:30 | 1h00 | Food | Dinner - yakitori set, Torikizoku near Ueno Stn |
+| 18:30 | 0h15 | Transit | Walk back to the hotel |
+| 18:45 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for Yanaka Cemetery** - uneven paved paths, not stroller terrain.
   Yanaka Ginza itself is flat and stroller-friendly if kept to off-peak hours.
-- Active out-of-lodging time: about 4h, one of the segment's two fully free days.
+- Active out-of-lodging time: about 7h. This is no longer one of the segment's fully
+  free days now that the Kappabashi workshop and an evening yakitori dinner are added,
+  but it stays gentle: no day-trip transit, just two short walkable outings bracketing
+  a long rest block.
+- The Kappabashi workshop's traditional hot-wax method needs adult hands and steady
+  heat control, so it is not something to put in a toddler's grip; expect 1-2 adults
+  to do the making while the third minds both infants nearby. Instruction at most
+  workshops is Japanese-only - confirm English support when booking, or treat it as a
+  watch-and-try session rather than a fully guided one if it isn't available.
 
 ### Lodging
 
@@ -530,8 +542,8 @@ away from the holiday crowds.
 |---|---|---|---|---|
 | Breakfast | Rice, natto, grilled mackerel, miso soup | Cooked in room; Hotel kitchenette | 500 | 750 |
 | Lunch | Menchi-katsu (fried minced-meat cutlet), a shrimp senbei cracker, and a vegetable croquette, eaten street-stall style | Yanaka Ginza, Taito-ku | 650 | 1,850 |
-| Dinner | Pork and cabbage stir-fry over rice, miso soup | Cooked in room; Hotel kitchenette | 800 | 1,650 |
-| Infant food | 3 formula feeds plus 2 Pigeon pouches (pork and vegetable; rice and pumpkin) for Infant A; Infant B eats table portions of the stir-fried pork and cabbage (finely chopped) and rice | Conbini | n/a | 2,150 |
+| Dinner | Yakitori set - about 5 grilled chicken and vegetable skewers per adult, rice, miso soup. Yakitori is bite-sized meat and vegetables grilled on skewers over charcoal, ordered a few at a time - one of Japan's most common izakaya-style meals, and this trip's second taste of it in thirty days | Torikizoku (or similar flat-price yakitori chain), near Ueno Stn, Taito-ku (exact branch unverified) | 800 | 5,700 |
+| Infant food | 3 formula feeds plus 2 Pigeon pouches (pork and vegetable; rice and pumpkin) for Infant A; Infant B eats deboned bites of grilled chicken skewer and rice from the yakitori set | Conbini / Torikizoku | n/a | 2,150 |
 
 Adult kcal: 500 + 650 + 800 = **1,950**.
 
@@ -550,16 +562,17 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 | Nezu Shrine | 0h45 | 0 | 0 | 1-28-9 Nezu, Bunkyo-ku, Tokyo 113-0031 | A 1706 Shinto shrine complex with a row of vermillion torii gates climbing a small hillside - a miniature echo of Kyoto's Fushimi Inari - and ornately carved gates rare for their age to have survived intact. A quiet, uncrowded alternative to the trip's bigger-name shrines. Free; flat main grounds, though the torii-tunnel path has a short slope, manageable with the stroller at an easy pace. The azalea-garden fee is seasonal (spring) only, so it's free on this visit. |
 | Yanaka Ginza | 1h00 | 0 | 0 | Yanaka, Taito-ku (nearest station Sendagi or Nippori; address unverified) | An old-fashioned shotengai (shopping street) of roughly 60 small shops - senbei crackers, menchi-katsu stalls, cat-themed goods, the neighborhood's unofficial mascot - that survived Tokyo's postwar rebuilding largely intact. The best "old Tokyo streetscape" browsing outside Asakusa, and much less crowded. Free to browse; flat and stroller-friendly outside peak weekend hours. |
 | Yanaka Cemetery | 0h50 | 0 | 0 | Yanaka, Taito-ku (nearest station Nippori; address unverified) | A large, tree-lined Edo-era cemetery (over 7,000 graves, including a former shogun) laid out in quiet gridded lanes lined with cherry trees - more a peaceful historic walk than a somber one, and a route locals use for dog-walking and cycling. Free; paths are paved but uneven in places, so the carrier is the better call here rather than fighting cobbles with the stroller. |
+| Plastic food-sample workshop, Kappabashi | 1h00 | 2,300 | 6,900 | Kappabashi Kitchen Street, Nishi-Asakusa, Taito-ku (specific studio address unverified) | Kappabashi is Tokyo's wholesale restaurant-supply street - the place where the uncannily realistic plastic food displayed in restaurant windows across Japan is actually made and sold - and it sits about a 15-minute walk from this hotel. A hands-on workshop here has you hand-shape and colour a piece of "food" (tempura or lettuce is typical) using the traditional hot-wax method under a craftsperson's guidance, a genuinely Japan-only souvenir you make rather than buy. Reservation required; instruction at most workshops is Japanese-only, so confirm English support when booking or budget for a watch-and-copy session instead. The hot wax itself is not for toddler hands - this is realistically 1-2 adults working while the third minds both infants nearby. |
 
 ### Day 6 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 6,400 | 42 |
+| Food | 10,450 | 67 |
 | Transport | 540 | 3 |
-| Activities | 0 | 0 |
-| **Day total** | **24,940** | **161** |
+| Activities | 6,900 | 45 |
+| **Day total** | **35,890** | **232** |
 
 **Running total after Day 6: ¥206,550 ($1,333)**
 
@@ -665,22 +678,23 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 | 07:15 | 0h20 | Transit | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line |
 | 07:35 | 0h25 | Transit | Shimbashi -> Odaiba Kaihinkoen, Yurikamome |
 | 08:00 | 0h50 | Activity | Odaiba Marine Park beach + Rainbow Bridge view (quiet at this hour) |
-| 08:50 | 0h20 | Transit | Odaiba Kaihinkoen -> Shijo-mae (Toyosu Market), Yurikamome |
-| 09:10 | 0h50 | Food | Breakfast - sushi/seafood grazing, Toyosu Market outer area |
-| 10:00 | 0h10 | Transit | Shijo-mae -> Shin-Toyosu, Yurikamome |
-| 10:10 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
-| 11:40 | 0h45 | Food | Lunch, Toyosu food court/market area |
-| 12:25 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
-| 14:10 | 0h45 | Transit | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
-| 14:55 | - | Rest | Downtime at the hotel |
+| 08:50 | 0h25 | Activity | Gundam Base Tokyo, DiverCity Tokyo Plaza 7F |
+| 09:15 | 0h20 | Transit | Odaiba Kaihinkoen -> Shijo-mae (Toyosu Market), Yurikamome |
+| 09:35 | 0h50 | Food | Breakfast - sushi/seafood grazing, Toyosu Market outer area |
+| 10:25 | 0h10 | Transit | Shijo-mae -> Shin-Toyosu, Yurikamome |
+| 10:35 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
+| 12:05 | 0h45 | Food | Lunch, Toyosu food court/market area |
+| 12:50 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
+| 14:35 | 0h45 | Transit | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
+| 15:20 | - | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - Odaiba, Toyosu Market, and teamLab Planets are all flat, wide, and stroller-friendly
   (teamLab Planets is barefoot indoors - the stroller waits at the entrance locker area).
-- Active out-of-lodging time: about 6h30, including the new Toyosu Market breakfast
-  stop, still within the ~7h cap. Hotel breakfast is skipped this day in favor of the
-  market.
+- Active out-of-lodging time: about 6h55, including the new Toyosu Market breakfast
+  stop and the Gundam Base detour, right at the edge of the ~7h cap. Hotel breakfast is
+  skipped this day in favor of the market.
 - Toyosu Market's public hours run roughly 5am-5pm and it closes on scattered
   Wednesdays and Sundays through the year - but Wed 14 Oct 2026 is not one of its
   listed October closure dates (Oct 7, 21, 28 are the closed Wednesdays), so the
@@ -725,6 +739,7 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
 | Odaiba Marine Park + Rainbow Bridge view | 1h00 | 0 | 0 | 1-4 Daiba, Minato-ku, Tokyo 135-0091 | A flat waterfront park and small artificial beach on Tokyo Bay, facing the Rainbow Bridge and a half-scale replica Statue of Liberty. A nice, free, open-air start to the day before the crowds build. Free; wide paved promenade throughout, no stairs. |
+| Gundam Base Tokyo | 0h25 | 0 | 0 | DiverCity Tokyo Plaza, 7F, 1-1-10 Aomi, Koto-ku, Tokyo 135-0064 | Bandai's flagship Gunpla superstore on DiverCity's seventh floor - full-wall model displays, a giant illuminated RX-93ff Nu Gundam head replica, and build-and-buy Gunpla kits floor to ceiling. It's honestly closer to a themed shop than an attraction, but it's free and genuinely mecha, which nothing else free on this trip is. **The famous life-size Unicorn Gundam statue that used to stand outside DiverCity is gone**: its display ended 31 Aug 2026 (retirement ceremony two days earlier), over a month before this trip, and its announced successor has no location or date yet - and Gundam Factory Yokohama, the other obvious mecha stop in the region, closed permanently in March 2024. Both are closures, not oversights in this plan. Indoor, flat, stroller-fine; small Gunpla kits run roughly ¥1,500-4,000 if anyone wants a souvenir, otherwise it's free to browse. |
 | teamLab Planets TOKYO DMM | 1h30 | 5,300 | 15,900 | Toyosu 6-1-16, Koto-ku, Tokyo 135-0061 | A barefoot, walk-through digital art museum: visitors wade ankle-deep through a mirrored water room and move through immersive projection-mapped spaces (a garden of orchids, an infinite light room). Genuinely unlike anything else on this trip, and the segment's marquee paid experience. Bring a full change of clothes - guests get wet to the knee in places; strollers are left at entrance lockers and the space is navigated on foot or in the carrier. 2026 planning estimate, historically ¥3,800-4,900/adult - verify current pricing before booking. |
 
 ### Day 8 Cost

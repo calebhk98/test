@@ -342,7 +342,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 **Base:** Kyoto
 **Weather (typical):** 23/15 °C, dry
-**Theme:** Kyoto Gosho, Nijo Castle, Kinkaku-ji and the Tenjin-ichi temple market at Kitano Tenmangu
+**Theme:** Kyoto Gosho, Nijo Castle, Kinkaku-ji, Ryoan-ji's rock garden, and the Tenjin-ichi temple market at Kitano Tenmangu
 
 ### Schedule
 
@@ -357,16 +357,19 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 09:55 | 1h15 | Activity | Nijo Castle - grounds, gardens, Ninomaru Palace |
 | 11:10 | 0h25 | Transit | Raku city bus - Nijo Castle → Kinkaku-ji-michi |
 | 11:35 | 0h40 | Activity | Kinkaku-ji - Golden Pavilion grounds walk |
-| 12:15 | 0h15 | Transit | City bus - Kinkaku-ji-michi → Kitano Tenmangu-mae |
-| 12:30 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
-| 13:30 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
-| 14:00 | 1h45 | Rest | Midday rest - hotel |
-| 15:45 | 1h00 | Rest | Downtime at hotel |
-| 16:45 | 0h40 | Food | Dinner - hangaku-discounted bento, timed near closing for the markdown |
+| 12:15 | 0h15 | Transit | City bus - Kinkaku-ji-michi → Ryoan-ji-mae (2 stops) |
+| 12:30 | 0h40 | Activity | Ryoan-ji - dry rock garden (karesansui) |
+| 13:10 | 0h10 | Transit | Walk - Ryoan-ji → Ritsumeikan Daigaku-mae bus stop |
+| 13:20 | 0h15 | Transit | City bus (Route 50) - Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae |
+| 13:35 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
+| 14:35 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
+| 15:05 | 1h45 | Rest | Midday rest - hotel |
+| 16:50 | 1h00 | Rest | Downtime at hotel |
+| 17:50 | 0h40 | Food | Dinner - hangaku-discounted bento, timed near closing for the markdown |
 
 - **Imperial Palace note:** this segment already distinguished Kyoto Gyoen (the public park, visited on Day 16 for Jidai Matsuri viewing) from the Kyoto Imperial Palace/Gosho itself (the walled compound inside that park) - see Day 16's Activities table. The Gosho is toured today instead, since Jidai Matsuri day was already full: free entry, no reservation, self-guided walk-in 9:00-16:20 (closed Mondays), folded into the same subway route already used to reach Nijo Castle.
-- **Ryoan-ji swapped for Tenjin-ichi:** Kitano Tenmangu's monthly market falls on the 25th of every month, which is today, and the shrine sits about 2km from Kinkaku-ji - reachable on the same city bus network already carrying the day between stops, in place of the 2-stop hop to Ryoan-ji. Ryoan-ji's dry rock garden is a quiet, contemplative stop that asks a lot of two toddlers right after Kinkaku-ji; a bustling food market is the better fit for this age group, and it folds in today's lunch rather than sitting alongside a separate udon stop. This also drops the original depachika-repeat problem a different way: no second Nishiki-style browse is needed today at all. Ryoan-ji itself is dropped from this segment; if the family wants to see it, it would need a return visit on a later Kyoto day.
-- Active out-of-lodging time: ~5h45, slightly less than the original day despite the market add, all in one continuous morning-into-early-afternoon outing before the rest block; downtime and dinner both stay at the hotel afterward.
+- **Ryoan-ji stays, Tenjin-ichi is added alongside it - both fit, verified.** An earlier pass of this day dropped Ryoan-ji to make room for the market, but Ryoan-ji was on this itinerary for its own reason - a whole-trip genre audit found no other karesansui (dry rock garden) anywhere in this 30-day trip, and Ryoan-ji is the single most famous example of the form in Japan. A temple market doesn't substitute for that, so both stay. The geography cooperates: Kinkaku-ji, Ryoan-ji, and Kitano Tenmangu sit in a single northwest Kyoto cluster, and the day now flows through it in one direction rather than backtracking. Kinkaku-ji to Ryoan-ji is City Bus 59, 2 stops, about 5 minutes (padded to 0h15 with wait/boarding, matching this segment's other short bus hops). From Ryoan-ji, it's a verified 7-minute walk to the Ritsumeikan Daigaku-mae bus stop, where City Bus Route 50 (Kyoto Station - Kitano Tenmangu - Ritsumeikan Daigaku) runs directly to Kitano Tenmangu-mae - no return toward Kinkaku-ji, no doubling back. From there, the day continues on the same bus network back to Shijo-Omiya, same as before.
+- Active out-of-lodging time: ~6h50 (all in one continuous morning-into-early-afternoon outing before the rest block), against this itinerary's ~7h cap - both Ryoan-ji and the full Tenjin-ichi market fit without shortening anything else. Midday rest, at 1h45, stays within the 1h30-2h00 mandatory range; downtime and dinner both stay at the hotel afterward.
 - Last day of this stretch - Day 20 continues the Kyoto stay under a separate itinerary segment.
 
 ### Lodging
@@ -394,7 +397,9 @@ Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 | Shijo-Omiya → Marutamachi (Kyoto Gyoen/Gosho) | Hankyu Kyoto Line + Subway Karasuma Line, 1 transfer | 0h30 | 260 | 780 |
 | (Kyoto Gyoen → Nijo Castle: walked, ~1.3km flat) | Walk | 0h20 | 0 | 0 |
 | Nijo Castle → Kinkaku-ji-michi | Raku city bus (loop line) | 0h25 | 230 | 690 |
-| Kinkaku-ji-michi → Kitano Tenmangu-mae | City bus | 0h15 | 230 | 690 |
+| Kinkaku-ji-michi → Ryoan-ji-mae | City bus (2 stops) | 0h15 | 230 | 690 |
+| (Ryoan-ji → Ritsumeikan Daigaku-mae: walked, ~600m, 7 min verified) | Walk | 0h10 | 0 | 0 |
+| Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae | City bus (Route 50) | 0h15 | 230 | 690 |
 | Kitano Tenmangu-mae → Shijo-Omiya | City bus | 0h30 | 230 | 690 |
 
 Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult fare x 3.
