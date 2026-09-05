@@ -309,28 +309,32 @@ Gardens, riding the Sumida River water bus home to Asakusa.
 | Time | Duration | Type | Item |
 |---|---|---|---|
 | 07:15 | 0h45 | Food | Breakfast, self-catered |
-| 08:00 | 0h20 | Transit | Ueno -> Otemachi, Tokyo Metro Chiyoda Line |
-| 08:20 | 1h20 | Activity | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
-| 09:40 | 0h15 | Transit | Otemachi -> Onarimon, Toei Mita Line |
-| 09:55 | 1h05 | Activity | Zojoji Temple + Tokyo Tower Main Deck, Shiba Park |
-| 11:00 | 0h20 | Transit | Onarimon -> Shiodome, Toei Mita Line to Daimon + transfer to Toei Oedo Line, then a 7-min walk to Hamarikyu's Otemon Gate |
-| 11:20 | 1h00 | Activity | Hamarikyu Gardens - tidal pond, teahouse |
-| 12:20 | 0h45 | Food | Lunch, Shibakoen/Hamamatsucho area, Minato-ku |
-| 13:05 | 1h30 | Rest | Rest / infant naps - a bench on Hamarikyu's grounds (a park qualifies for the rest block) |
-| 14:35 | 0h15 | Transit | Walk back to the Hamarikyu boat pier |
-| 14:50 | 0h40 | Transit | Hamarikyu Pier -> Asakusa, Tokyo Cruise Sumida River water bus |
-| 15:30 | 0h15 | Transit | Walk, Asakusa Pier -> Hotel Livemax Higashi-Ueno |
-| 15:45 | - | Rest | Downtime at the hotel |
+| 08:00 | 0h10 | Transit | Ueno -> Tokyo, JR Yamanote/Keihin-Tohoku Line |
+| 08:10 | 0h30 | Activity | Tokyo Character Street, Tokyo Stn B1F |
+| 08:40 | 0h15 | Transit | Walk, Tokyo Stn -> Imperial Palace East Gardens (Otemon Gate) |
+| 08:55 | 1h20 | Activity | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
+| 10:15 | 0h15 | Transit | Otemachi -> Onarimon, Toei Mita Line |
+| 10:30 | 1h05 | Activity | Zojoji Temple + Tokyo Tower Main Deck, Shiba Park |
+| 11:35 | 0h20 | Transit | Onarimon -> Shiodome, Toei Mita Line to Daimon + transfer to Toei Oedo Line, then a 7-min walk to Hamarikyu's Otemon Gate |
+| 11:55 | 1h00 | Activity | Hamarikyu Gardens - tidal pond, teahouse |
+| 12:55 | 0h45 | Food | Lunch, Shibakoen/Hamamatsucho area, Minato-ku |
+| 13:40 | 1h30 | Rest | Rest / infant naps - a bench on Hamarikyu's grounds (a park qualifies for the rest block) |
+| 15:10 | 0h15 | Transit | Walk back to the Hamarikyu boat pier |
+| 15:25 | 0h40 | Transit | Hamarikyu Pier -> Asakusa, Tokyo Cruise Sumida River water bus |
+| 16:05 | 0h15 | Transit | Walk, Asakusa Pier -> Hotel Livemax Higashi-Ueno |
+| 16:20 | 1h10 | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
   keep site. The rest of the East Gardens, Zojoji's grounds, and Hamarikyu's paths are
   flat and stroller-fine.
-- Active out-of-lodging time: about 6h15, excluding the 1h30 rest block taken at
+- Active out-of-lodging time: about 6h50, excluding the 1h30 rest block taken at
   Hamarikyu rather than back at the hotel - a park satisfies the pacing rule same as
-  the hotel would. Total time away from the hotel is about 7h45, similar to the
-  segment's other day-trip-style days (Kamakura, Yokohama).
+  the hotel would. Total time away from the hotel is about 8h20, similar to the
+  segment's other day-trip-style days (Kamakura, Yokohama); the new Tokyo Character
+  Street stop adds 35 minutes, absorbed by shortening the free hotel-downtime block
+  before dinner rather than pushing dinner or bath later.
 - **Mitsubishi Ichigokan Museum has been dropped from this day.** It was the segment's
   softest activity spend (¥6,000 for the party for roughly an hour of a rotating
   Western-art exhibition) and the one part of central Tokyo this itinerary otherwise
@@ -369,7 +373,7 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Otemachi | Tokyo Metro Chiyoda Line | 0h12 | 210 | 630 |
+| Ueno -> Tokyo | JR Yamanote/Keihin-Tohoku Line | 0h10 | 150 | 450 |
 | Otemachi -> Onarimon | Toei Mita Line | 0h12 | 180 | 540 |
 | Onarimon -> Shiodome (via Daimon transfer) | Toei Mita Line + Toei Oedo Line | 0h15 | 180 | 540 |
 | Hamarikyu Pier -> Asakusa | Tokyo Cruise, Sumida River water bus | 0h40 | 1,000 | 3,000 |
