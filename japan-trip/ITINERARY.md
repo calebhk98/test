@@ -1638,7 +1638,8 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 | 09:20 | 1h40 | [Activity](#activities-14) | Fushimi Inari Taisha - Senbon Torii tunnel loop to the Yotsutsuji lookout and back |
 | 11:00 | 0h10 | [Transit](#transport-14) | JR Nara Line - Inari → Kyoto |
 | 11:10 | 0h15 | [Transit](#transport-14) | Walk - Kyoto Station → To-ji |
-| 11:25 | 0h55 | Food/Activity | Kobo-ichi temple market at To-ji - browse the stalls, lunch from the yatai food stalls |
+| 11:25 | 0h30 | [Activity](#activities-14) | Kobo-ichi temple market at To-ji - browse the stalls |
+| 11:55 | 0h25 | [Food](#meals-14) | Lunch from the Kobo-ichi yatai food stalls |
 | 12:20 | 0h15 | [Transit](#transport-14) | Walk - To-ji → Kyoto Station |
 | 12:35 | 0h20 | [Transit](#transport-14) | City bus - Kyoto Station → Shijo-Omiya |
 | 12:55 | 1h40 | Rest | Midday rest - hotel room, both infants nap |
@@ -2002,7 +2003,8 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 12:35 | 0h40 | [Activity](#activities-18) | Ryoan-ji - dry rock garden (karesansui) |
 | 13:15 | 0h10 | [Transit](#transport-18) | Walk - Ryoan-ji → Ritsumeikan Daigaku-mae bus stop |
 | 13:25 | 0h15 | [Transit](#transport-18) | City bus (Route 50) - Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae |
-| 13:40 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
+| 13:40 | 0h35 | [Activity](#activities-18) | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls |
+| 14:15 | 0h25 | [Food](#meals-18) | Lunch from the Tenjin-ichi yatai food stalls |
 | 14:40 | 0h30 | [Transit](#transport-18) | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
 | 15:10 | 1h45 | Rest | Midday rest - hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
@@ -2688,15 +2690,16 @@ by the rail pass beyond the island admissions.
 | 10:25 | 0h45 | [Activity](#activities-24) | Miyajima Public Aquarium |
 | 11:10 | 0h06 | [Transit](#transport-24) | Walk, Aquarium -> Omotesando shopping street (lunch) |
 | 11:16 | 0h45 | [Food](#meals-24) | Lunch on Miyajima (anago-meshi / grilled oyster) |
-| 12:01 | 0h20 | [Transit](#transport-24) | Walk, Omotesando -> Momijidani Park |
-| 12:21 | 1h45 | Rest | Rest / infant naps, Momijidani Park (shaded, benches, free) |
-| 14:06 | 1h15 | [Activity](#activities-24) | Miyajima Ropeway round trip (2 adults only - see note) |
-| 15:21 | 0h15 | [Transit](#transport-24) | Regroup, walk to ferry pier |
-| 15:36 | 0h20 | [Transit](#transport-24) | Miyajima pier -> Miyajimaguchi pier, JR ferry |
-| 15:56 | 0h25 | [Transit](#transport-24) | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local |
-| 16:21 | 0h15 | [Transit](#transport-24) | Hiroshima Stn -> hotel, walk |
-| 16:36 | 0h50 | Rest | Downtime at hotel |
-| 17:26 | 0h34 | Rest | Wind down before dinner |
+| 12:01 | 0h20 | [Transit](#transport-24) | Walk, Omotesando -> Daisho-in Temple (uphill) |
+| 12:21 | 0h35 | [Activity](#activities-24) | Daisho-in Temple - sutra wheels, the cave of 88 icons, rakan statues |
+| 12:56 | 0h10 | [Transit](#transport-24) | Walk, Daisho-in -> Momijidani Park (downhill) |
+| 13:06 | 1h45 | Rest | Rest / infant naps, Momijidani Park (shaded, benches, free) |
+| 14:51 | 1h15 | [Activity](#activities-24) | Miyajima Ropeway round trip (2 adults only - see note) |
+| 16:06 | 0h15 | [Transit](#transport-24) | Regroup, walk to ferry pier |
+| 16:21 | 0h20 | [Transit](#transport-24) | Miyajima pier -> Miyajimaguchi pier, JR ferry |
+| 16:41 | 0h25 | [Transit](#transport-24) | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local |
+| 17:06 | 0h15 | [Transit](#transport-24) | Hiroshima Stn -> hotel, walk |
+| 17:21 | 0h39 | Rest | Downtime at hotel |
 | 18:00 | 1h00 | [Food](#meals-24) | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) |
 | 19:00 | - | Rest | Return to hotel, infants down |
 
@@ -2714,7 +2717,7 @@ by the rail pass beyond the island admissions.
   that doubles as the day's mandatory rest block.
 - The island's main areas (shrine approach, Omotesando shopping street, aquarium) are
   stroller-workable, including via the elevator underpass near the shrine.
-- Active out-of-lodging time: about 8h06, plus a 1h45 rest block. This runs about 1h05
+- Active out-of-lodging time: about 8h50, plus a 1h45 rest block. This is the Miyajima day and the segment's longest.
   over the ~7h guideline - it's a full day trip to Miyajima, with a ferry crossing each
   way and four separate island stops.
 
@@ -2818,7 +2821,7 @@ Shukkei-en garden and Hiroshima Castle.
   about 12h10, just over the 12-hour guideline, with dinner starting at 18:10 and infants down
   around 19:10 - in line with the rest of the trip's evening rhythm. The full 1h40 midday rest
   block at the hotel is unchanged.
-- Active out-of-lodging time: about 8h05 (4h30 before the rest block, 2h35 after), plus a
+- Active out-of-lodging time: about 8h50, plus a 1h45 rest block. This is the Miyajima day and the segment's longest.
   1h40 rest block. This runs about 1h05 over the ~7h guideline - a full circuit of the Peace
   Park sites plus Shukkei-en and Hiroshima Castle in the same day.
 

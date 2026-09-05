@@ -20,7 +20,8 @@
 | 09:20 | 1h40 | Activity | Fushimi Inari Taisha - Senbon Torii tunnel loop to the Yotsutsuji lookout and back |
 | 11:00 | 0h10 | Transit | JR Nara Line - Inari → Kyoto |
 | 11:10 | 0h15 | Transit | Walk - Kyoto Station → To-ji |
-| 11:25 | 0h55 | Food/Activity | Kobo-ichi temple market at To-ji - browse the stalls, lunch from the yatai food stalls |
+| 11:25 | 0h30 | Activity | Kobo-ichi temple market at To-ji - browse the stalls |
+| 11:55 | 0h25 | Food | Lunch from the Kobo-ichi yatai food stalls |
 | 12:20 | 0h15 | Transit | Walk - To-ji → Kyoto Station |
 | 12:35 | 0h20 | Transit | City bus - Kyoto Station → Shijo-Omiya |
 | 12:55 | 1h40 | Rest | Midday rest - hotel room, both infants nap |
@@ -384,7 +385,8 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 12:35 | 0h40 | Activity | Ryoan-ji - dry rock garden (karesansui) |
 | 13:15 | 0h10 | Transit | Walk - Ryoan-ji → Ritsumeikan Daigaku-mae bus stop |
 | 13:25 | 0h15 | Transit | City bus (Route 50) - Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae |
-| 13:40 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
+| 13:40 | 0h35 | Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls |
+| 14:15 | 0h25 | Food | Lunch from the Tenjin-ichi yatai food stalls |
 | 14:40 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
 | 15:10 | 1h45 | Rest | Midday rest - hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
