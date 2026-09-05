@@ -3,8 +3,7 @@
 ## Table of Contents
 
   - [Executive summary](#executive-summary)
-  - [6. The thirty days at a glance](#6-the-thirty-days-at-a-glance)
-- **[The Itinerary](#the-itinerary)**
+  - [The thirty days at a glance](#the-thirty-days-at-a-glance)
 - **[Days 1-10 - Tokyo](#days-1-10---tokyo)**
   - Days: [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival)  [2](#day-2---thursday-october-8-2026---tokyo)  [3](#day-3---friday-october-9-2026---tokyo)  [4](#day-4---saturday-october-10-2026---tokyo)  [5](#day-5---sunday-october-11-2026---tokyo)  [6](#day-6---monday-october-12-2026---tokyo-sports-day)  [7](#day-7---tuesday-october-13-2026---kamakura-day-trip)  [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu)  [9](#day-9---thursday-october-15-2026---yokohama-day-trip)  [10](#day-10---friday-october-16-2026---tokyo)
   - [Tokyo segment totals (Days 1-10)](#tokyo-segment-totals-days-1-10)
@@ -112,7 +111,7 @@ Uji, Himeji and Kobe are all reached and returned from without touching the lugg
 
 ---
 
-## 6. The thirty days at a glance
+## The thirty days at a glance
 
 | Day | Date | Base / focus | Day cost ¥ | $ | Cumulative $ |
 |---|---|---|---|---|---|
@@ -154,24 +153,13 @@ miscellaneous (eSIM, coin laundry, lockers, luggage forwarding) at ¥38,000 ($24
 Adding those gives **¥1,285,540 ($8,294)** planned against a
 **¥1,400,000 ($9,032)** budget, leaving **¥114,460 ($738)** in reserve.
 
----
-
-# The Itinerary
-
-Every day records the schedule with durations, the lodging and its nightly cost, every
-meal with its adult calorie count, every transport leg with fare and duration, and every
-activity with location, admission and what it actually is. Adult calories sum to
-1,950-2,100 per person per day. Infants ride free on all rail and transit and are free at
-essentially every site; the exceptions are noted where they occur.
 
 
 ---
 
 # Days 1-10 - Tokyo
 
-*Base: Hotel Livemax Higashi-Ueno, 10 nights, Wed 7 Oct - Fri 16 Oct 2026. This is the
-first segment of the trip, so the running totals below are the trip's true cumulative
-totals starting from ¥0 - no baseline adjustment needed.*
+*Base: Hotel Livemax Higashi-Ueno, 10 nights, Wed 7 Oct - Fri 16 Oct 2026.*
 
 **Segment notes (read once, applies across all ten days):**
 - **Nikko was left out of this segment.** Nikko is roughly 2h each way from Ueno by
@@ -1893,10 +1881,13 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 **Weather (typical):** 22/14 °C, dry  
 **Theme:** Kiyomizu-dera and the Higashiyama lanes, evening in Gion
 
-**On kimono.** The rental is booked on Day 23 rather than today. An alternative is to
-move it here, because Kiyomizu-dera and the Sannenzaka and Ninenzaka lanes are the
-setting most kimono photographs in Kyoto are taken in. The trade-offs are set out on
-Day 23.
+**On kimono.** The rental is booked on Day [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) rather than today, and worn
+around Nishijin and the Kamo riverbank. An alternative is to move it here, because
+Kiyomizu-dera and the Sannenzaka and Ninenzaka lanes that this day already walks are the
+setting most kimono photographs in Kyoto are taken in, and rental kimono is common enough
+there that nobody looks twice. Taking that option would put this day back to roughly 7h40
+active from about 6h20, and add a bus ride or a 25 to 30 minute walk from Yumeyakata's
+Gojo shop to the Kiyomizu approach. The full trade-off is on Day [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing).
 
 ### Schedule
 
@@ -2444,13 +2435,13 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 **An alternative arrangement for the kimono.** It is booked here on Day 23 and worn
 around Nishijin, the Kamo riverbank and the sento. An alternative is to rent from the
-same shop, Yumeyakata Gojo, on Day 18 instead and wear it around Kiyomizu-dera and the
+same shop, Yumeyakata Gojo, on Day [18](#day-18---saturday-october-24-2026---kyoto) instead and wear it around Kiyomizu-dera and the
 Sannenzaka and Ninenzaka lanes, because that stretch of Higashiyama is the setting most
 kimono photographs in Kyoto are taken in, and rental kimono is common enough there that
-nobody looks twice. The trade is threefold: Day 18 is already fuller and would go from
+nobody looks twice. The trade is threefold: Day [18](#day-18---saturday-october-24-2026---kyoto) is already fuller and would go from
 about 6h20 active back to roughly 7h40; Yumeyakata's Gojo shop is a bus ride or a 25 to
 30 minute walk west of the Kiyomizu approach rather than a step outside the gate; and
-Day 23 would lose its headline, keeping the Nishijin weaving, the riverbank and the sento.
+this day would lose its headline, keeping the Nishijin weaving, the riverbank and the sento.
 
 ### Schedule
 

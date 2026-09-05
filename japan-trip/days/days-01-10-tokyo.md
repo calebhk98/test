@@ -1,8 +1,6 @@
 # Days 1-10 - Tokyo
 
-*Base: Hotel Livemax Higashi-Ueno, 10 nights, Wed 7 Oct - Fri 16 Oct 2026. This is the
-first segment of the trip, so the running totals below are the trip's true cumulative
-totals starting from ¥0 - no baseline adjustment needed.*
+*Base: Hotel Livemax Higashi-Ueno, 10 nights, Wed 7 Oct - Fri 16 Oct 2026.*
 
 **Segment notes (read once, applies across all ten days):**
 - **Nikko was left out of this segment.** Nikko is roughly 2h each way from Ueno by

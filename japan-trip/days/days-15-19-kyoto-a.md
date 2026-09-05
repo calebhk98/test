@@ -271,10 +271,13 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 **Weather (typical):** 22/14 °C, dry  
 **Theme:** Kiyomizu-dera and the Higashiyama lanes, evening in Gion
 
-**On kimono.** The rental is booked on Day 23 rather than today. An alternative is to
-move it here, because Kiyomizu-dera and the Sannenzaka and Ninenzaka lanes are the
-setting most kimono photographs in Kyoto are taken in. The trade-offs are set out on
-Day 23.
+**On kimono.** The rental is booked on Day @@DAYLINK:23@@ rather than today, and worn
+around Nishijin and the Kamo riverbank. An alternative is to move it here, because
+Kiyomizu-dera and the Sannenzaka and Ninenzaka lanes that this day already walks are the
+setting most kimono photographs in Kyoto are taken in, and rental kimono is common enough
+there that nobody looks twice. Taking that option would put this day back to roughly 7h40
+active from about 6h20, and add a bus ride or a 25 to 30 minute walk from Yumeyakata's
+Gojo shop to the Kiyomizu approach. The full trade-off is on Day @@DAYLINK:23@@.
 
 ### Schedule
 

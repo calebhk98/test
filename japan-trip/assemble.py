@@ -70,22 +70,13 @@ for day, title, cost in rows:
     idx.append(f"| @@DAYLINK:{day}@@ | {date} | {focus} | {cost:,} | {round(cost/FX):,} | {round(run/FX):,} |")
 idx.append(f"| | | **Day-line total** | **{run:,}** | **{round(run/FX):,}** | |")
 
-body += ["", "---", "", "## 6. The thirty days at a glance", "", "\n".join(idx), f"""
+body += ["", "---", "", "## The thirty days at a glance", "", "\n".join(idx), f"""
 Day-line spend covers lodging, food, transport and activities. Two further lines sit at
 trip level and are not repeated daily: baby consumables at ¥68,000 ($439), and
 miscellaneous (eSIM, coin laundry, lockers, luggage forwarding) at ¥38,000 ($245).
 Adding those gives **¥{run+106000:,} (${round((run+106000)/FX):,})** planned against a
 **¥1,400,000 ($9,032)** budget, leaving **¥{1400000-run-106000:,} (${round((1400000-run-106000)/FX):,})** in reserve.
 
----
-
-# The Itinerary
-
-Every day records the schedule with durations, the lodging and its nightly cost, every
-meal with its adult calorie count, every transport leg with fare and duration, and every
-activity with location, admission and what it actually is. Adult calories sum to
-1,950-2,100 per person per day. Infants ride free on all rail and transit and are free at
-essentially every site; the exceptions are noted where they occur.
 """]
 
 for f in ORDER:
@@ -228,7 +219,7 @@ def lookup(name):
 # Apply to every Activities table in Part II.
 ACT_HDR = "| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |"
 out_lines, in_act = [], False
-p2_start = doc.index("# The Itinerary")
+p2_start = re.search(r"^# Days 1-10\b", doc, re.M).start()
 p2_end = doc.index("# Appendices")
 head, mid, tail = doc[:p2_start], doc[p2_start:p2_end], doc[p2_end:]
 linked = 0
@@ -277,7 +268,7 @@ STORE_CITY = {
     "Cocokara Fine Namba": "Osaka shopping runs",
 }
 shop_links = 0
-p2s = doc.index("# The Itinerary"); p2e = doc.index("# Appendices")
+p2s = re.search(r"^# Days 1-10\b", doc, re.M).start(); p2e = doc.index("# Appendices")
 seg = doc[p2s:p2e]
 for store, section in sorted(STORE_CITY.items(), key=lambda kv: -len(kv[0])):
     a = anchors.get(section)

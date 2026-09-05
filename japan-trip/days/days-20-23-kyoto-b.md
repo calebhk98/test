@@ -338,13 +338,13 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 **An alternative arrangement for the kimono.** It is booked here on Day 23 and worn
 around Nishijin, the Kamo riverbank and the sento. An alternative is to rent from the
-same shop, Yumeyakata Gojo, on Day 18 instead and wear it around Kiyomizu-dera and the
+same shop, Yumeyakata Gojo, on Day @@DAYLINK:18@@ instead and wear it around Kiyomizu-dera and the
 Sannenzaka and Ninenzaka lanes, because that stretch of Higashiyama is the setting most
 kimono photographs in Kyoto are taken in, and rental kimono is common enough there that
-nobody looks twice. The trade is threefold: Day 18 is already fuller and would go from
+nobody looks twice. The trade is threefold: Day @@DAYLINK:18@@ is already fuller and would go from
 about 6h20 active back to roughly 7h40; Yumeyakata's Gojo shop is a bus ride or a 25 to
 30 minute walk west of the Kiyomizu approach rather than a step outside the gate; and
-Day 23 would lose its headline, keeping the Nishijin weaving, the riverbank and the sento.
+this day would lose its headline, keeping the Nishijin weaving, the riverbank and the sento.
 
 ### Schedule
 
