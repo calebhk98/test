@@ -76,24 +76,32 @@ renewed for autumn.*
 | 08:00 | 0h44 | Transit | Kyoto Stn -> Kintetsu-Nara, Kintetsu Kyoto Line (kyuko/express, no reservation) |
 | 08:44 | 0h16 | Activity | Walk into Nara Park, first deer feeding |
 | 09:00 | 0h50 | Activity | Todai-ji Daibutsuden (Great Buddha Hall), paved paths |
-| 09:50 | 0h15 | Activity | Walk to Kasuga Taisha approach, lantern-lined path |
+| 09:50 | 0h15 | Transit | Walk, Todai-ji -> Kasuga Taisha approach, lantern-lined path |
 | 10:05 | 0h40 | Activity | Kasuga Taisha inner precinct (Chumon gate, moss garden), gravel paths, carrier easier than stroller here |
-| 10:45 | 0h20 | Activity | Manyo Botanical Garden (within Kasuga Taisha grounds) |
-| 11:05 | 0h40 | Activity | Walk back via Isuien Garden |
-| 11:45 | 0h50 | Food | Lunch near Nara Park |
-| 12:35 | 1h30 | Rest | Midday rest, Nara Park lawn (stroller nap) |
-| 14:05 | 0h20 | Activity | Free wander / last deer feeding, walk to station |
-| 14:25 | 0h44 | Transit | Kintetsu-Nara -> Kyoto Stn, kyuko |
-| 15:09 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel (flat, ~2.2 km, stroller-friendly; saves the bus fare) |
-| 15:37 | 2h23 | Rest | Free time / rest at hotel |
+| 10:45 | 0h05 | Transit | Walk, Kasuga Taisha inner precinct -> Manyo Botanical Garden (within the grounds) |
+| 10:50 | 0h20 | Activity | Manyo Botanical Garden (within Kasuga Taisha grounds) |
+| 11:10 | 0h20 | Transit | Walk, Manyo Botanical Garden -> Isuien Garden (back through Nara Park) |
+| 11:30 | 0h35 | Activity | Isuien Garden |
+| 12:05 | 0h10 | Transit | Walk, Isuien Garden -> lunch spot near Nara Park |
+| 12:15 | 0h50 | Food | Lunch near Nara Park |
+| 13:05 | 1h30 | Rest | Midday rest, Nara Park lawn (stroller nap) |
+| 14:35 | 0h20 | Activity | Free wander / last deer feeding, walk to station |
+| 14:55 | 0h44 | Transit | Kintetsu-Nara -> Kyoto Stn, kyuko |
+| 15:39 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel (flat, ~2.2 km, stroller-friendly; saves the bus fare) |
+| 16:07 | 1h53 | Rest | Free time / rest at hotel |
 | 18:00 | 0h10 | Transit | Walk to dinner spot |
 | 18:10 | 0h50 | Food | Dinner at CoCo Ichibanya, near Shijo-Omiya |
 | 19:00 | 0h10 | Transit | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
-- This is the segment's one long day: ~8h out of the hotel including the 1h30 park
-  rest block, offset by a short evening outing only. Days 21 and 23 are deliberately
-  shorter to compensate.
+- This is the segment's one long day: about 9h45 out of the hotel across the day
+  (including the 1h30 park rest block), offset by a short evening outing only. The
+  walks between Kasuga Taisha, Manyo Botanical Garden, and Isuien Garden are real
+  ground to cover, not incidental, and are timed as such above; Isuien Garden's
+  schedule slot now also matches its own 0h35 duration in the Activities table
+  below, rather than the old combined "walk back via Isuien" block that quietly
+  assumed the walk itself was free. Days 21 and 23 are deliberately shorter to
+  compensate.
 
 ### Lodging
 
@@ -174,20 +182,23 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | 09:45 | 0h45 | Activity | Tea-ceremony / matcha-making experience |
 | 10:30 | 0h15 | Transit | Walk along the Uji riverbank |
 | 10:45 | 0h40 | Activity | Tale of Genji Museum (air-conditioned, easy rest stop) |
-| 11:25 | 0h50 | Food | Lunch, tea-house set meal near Uji Bridge |
-| 12:15 | 1h45 | Rest | Midday rest, Uji riverside park |
-| 14:00 | 0h15 | Transit | Walk to Uji Stn |
-| 14:15 | 0h18 | Transit | Uji Stn -> Kyoto Stn, JR Nara Line rapid |
-| 14:33 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel |
-| 15:01 | 2h59 | Rest | Free time / laundry at hotel |
+| 11:25 | 0h15 | Transit | Walk, Tale of Genji Museum -> Uji Bridge (lunch spot) |
+| 11:40 | 0h50 | Food | Lunch, tea-house set meal near Uji Bridge |
+| 12:30 | 1h45 | Rest | Midday rest, Uji riverside park |
+| 14:15 | 0h15 | Transit | Walk to Uji Stn |
+| 14:30 | 0h18 | Transit | Uji Stn -> Kyoto Stn, JR Nara Line rapid |
+| 14:48 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel |
+| 15:16 | 2h44 | Rest | Free time / laundry at hotel |
 | 18:00 | 0h10 | Transit | Walk to dinner spot |
 | 18:10 | 0h50 | Food | Dinner at Marugame Seimen, near Omiya |
 | 19:00 | 0h10 | Transit | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
-- Uji is compact: every stop is within a short walk of the river, so four
-  activities fit without extra transit. Out-of-lodging time before the midday
-  rest is under 5h; the deliberately light day after yesterday's long one.
+- Uji is compact, but the Tale of Genji Museum sits about 15 minutes north of
+  Uji Bridge along the riverside path (Sawarabi-no-michi), the same walk done
+  outbound at 10:30; the return leg is now timed to match rather than assumed
+  free. Out-of-lodging time before the midday rest is right at 5h; the
+  deliberately light day after yesterday's long one.
 
 ### Lodging
 
@@ -379,16 +390,20 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 | 07:30 | 0h30 | Admin | Free morning / start packing |
 | 08:00 | 0h12 | Transit | Hotel -> Nishijin, Kyoto city bus |
 | 08:12 | 1h00 | Activity | Nishijin Textile Center: hands-on hand-loom weaving + free kimono show |
-| 09:12 | 0h45 | Food | Lunch, local soba/udon shop, Nishijin |
-| 09:57 | 0h25 | Transit | Nishijin -> Yumeyakata Gojo Shop, Kyoto city bus |
-| 10:22 | 0h30 | Activity | Kimono fitting and dressing, Yumeyakata Gojo Shop |
-| 10:52 | 1h00 | Activity | Kamo riverbank walk in kimono, near Gojo |
-| 11:52 | 0h15 | Transit | Walk back to Yumeyakata Gojo Shop, return kimono, change to regular clothes |
-| 12:07 | 0h18 | Transit | Gojo Shop -> Hotel, Kyoto city bus |
-| 12:25 | 2h00 | Rest | Midday rest at hotel (nap) |
-| 14:25 | 1h00 | Admin | Free time / continue packing |
-| 15:25 | 0h45 | Activity | Local sento (public bath) visit |
-| 16:10 | 1h20 | Rest | Free time / relax at hotel |
+| 09:12 | 0h10 | Transit | Walk, Nishijin Textile Center -> lunch spot, Nishijin |
+| 09:22 | 0h45 | Food | Lunch, local soba/udon shop, Nishijin |
+| 10:07 | 0h25 | Transit | Nishijin -> Yumeyakata Gojo Shop, Kyoto city bus |
+| 10:32 | 0h30 | Activity | Kimono fitting and dressing, Yumeyakata Gojo Shop |
+| 11:02 | 0h15 | Transit | Walk, Yumeyakata Gojo Shop -> Kamo riverbank (geta-paced) |
+| 11:17 | 1h00 | Activity | Kamo riverbank walk in kimono, near Gojo |
+| 12:17 | 0h15 | Transit | Walk back to Yumeyakata Gojo Shop, return kimono, change to regular clothes |
+| 12:32 | 0h18 | Transit | Gojo Shop -> Hotel, Kyoto city bus |
+| 12:50 | 2h00 | Rest | Midday rest at hotel (nap) |
+| 14:50 | 1h00 | Admin | Free time / continue packing |
+| 15:50 | 0h10 | Transit | Walk, hotel -> neighbourhood sento |
+| 16:00 | 0h45 | Activity | Local sento (public bath) visit |
+| 16:45 | 0h10 | Transit | Walk, sento -> hotel |
+| 16:55 | 0h35 | Rest | Free time / relax at hotel |
 | 17:30 | 0h10 | Transit | Walk to dinner spot |
 | 17:40 | 1h00 | Food | Farewell Kyoto dinner near Shijo-Omiya |
 | 18:40 | 0h10 | Transit | Walk back to hotel |
@@ -397,9 +412,12 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 - Still no distant day trip and the pacing rule's mandatory rest block is
   intact (2h00 at midday), but this is no longer the segment's quietest day:
-  the kimono fitting and return add two extra transit legs and the day's
-  active stretch runs close to the ~7h cap. Packing is still spread across the
-  afternoon and evening, with an early night ahead of the shinkansen day.
+  the kimono shop legs (Nishijin to lunch, the shop to the riverbank and back,
+  Gojo Shop to hotel) and a genuine walk to and from the neighbourhood sento
+  add real transit that the previous draft left as zero-time jumps. Out-of-
+  hotel time now runs about 7h15 across the day's three outings, just over the
+  ~7h guideline - the honest cost of those walks - offset by the full 2h
+  midday rest and the 20:30 early night ahead of the shinkansen day.
 
 ### Lodging
 

@@ -26,16 +26,23 @@ up once the actual Day 1-23 files exist.*
 | 09:20 | 1h40 | Transit | Kyoto -> Hiroshima, Sanyo Shinkansen (Hikari/Sakura, unreserved car) |
 | 11:00 | 0h35 | Transit | Arrive Hiroshima Stn, collect bags/stroller, walk to hotel |
 | 11:35 | 0h25 | Admin | Check in, Toyoko Inn Hiroshima Ekimae Ohashi Minami |
-| 12:00 | 1h00 | Food | Lunch near Hiroshima Stn |
-| 13:00 | 1h45 | Rest | Rest / infant naps at hotel |
-| 14:45 | 0h15 | Transit | Hotel -> Peace Memorial Park, Hiroden streetcar |
-| 15:00 | 1h15 | Activity | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free |
-| 16:15 | 0h45 | Food | Dinner near Peace Park / Hondori arcade |
-| 17:00 | 0h20 | Transit | Walk/streetcar back to hotel |
-| 17:20 | - | Rest | Evening at hotel, infants down |
+| 12:00 | 0h05 | Transit | Walk, hotel -> Hiroshima Stn concourse |
+| 12:05 | 1h00 | Food | Lunch near Hiroshima Stn |
+| 13:05 | 0h05 | Transit | Walk, Hiroshima Stn concourse -> hotel |
+| 13:10 | 1h45 | Rest | Rest / infant naps at hotel |
+| 14:55 | 0h15 | Transit | Hotel -> Peace Memorial Park, Hiroden streetcar |
+| 15:10 | 1h15 | Activity | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free |
+| 16:25 | 0h05 | Transit | Walk, Peace Memorial Park -> Hondori arcade |
+| 16:30 | 0h45 | Food | Dinner near Peace Park / Hondori arcade |
+| 17:15 | 0h20 | Transit | Walk/streetcar back to hotel |
+| 17:35 | - | Rest | Evening at hotel, infants down |
 
 - Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
-  light evening walk. Total out-of-lodging active time stays close to the ~7h cap.
+  light evening walk. The hotel is genuinely "Ekimae" (station-front, about a 5-minute walk
+  from Hiroshima Stn) but that walk is real and now shown both ways around lunch, and
+  Hondori arcade is a further 5-minute walk east of Peace Park rather than adjoining it;
+  those three short legs push infants-down to 17:35 instead of 17:20. Total out-of-lodging
+  active time still stays close to the ~7h cap.
 
 ### Lodging
 
@@ -106,16 +113,19 @@ by the rail pass beyond the island admissions.
 | 08:25 | 0h20 | Transit | Miyajimaguchi pier -> Miyajima pier, JR Miyajima ferry |
 | 08:45 | 1h00 | Activity | Itsukushima Shrine + floating torii viewing |
 | 09:45 | 0h30 | Activity | Itsukushima Treasure Hall |
-| 10:15 | 0h45 | Activity | Miyajima Public Aquarium |
-| 11:00 | 0h45 | Food | Lunch on Miyajima (anago-meshi / grilled oyster) |
-| 11:45 | 1h45 | Rest | Rest / infant naps, Momijidani Park (shaded, benches, free) |
-| 13:30 | 1h15 | Activity | Miyajima Ropeway round trip (2 adults only - see note) |
-| 14:45 | 0h15 | Transit | Regroup, walk to ferry pier |
-| 15:00 | 0h20 | Transit | Miyajima pier -> Miyajimaguchi pier, JR ferry |
-| 15:20 | 0h25 | Transit | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local |
-| 15:45 | 0h15 | Transit | Hiroshima Stn -> hotel, walk |
-| 16:00 | 0h50 | Rest | Downtime at hotel |
-| 16:50 | 1h10 | Rest | Wind down before dinner |
+| 10:15 | 0h10 | Transit | Walk, Itsukushima Shrine/Treasure Hall -> Miyajima Public Aquarium |
+| 10:25 | 0h45 | Activity | Miyajima Public Aquarium |
+| 11:10 | 0h06 | Transit | Walk, Aquarium -> Omotesando shopping street (lunch) |
+| 11:16 | 0h45 | Food | Lunch on Miyajima (anago-meshi / grilled oyster) |
+| 12:01 | 0h20 | Transit | Walk, Omotesando -> Momijidani Park |
+| 12:21 | 1h45 | Rest | Rest / infant naps, Momijidani Park (shaded, benches, free) |
+| 14:06 | 1h15 | Activity | Miyajima Ropeway round trip (2 adults only - see note) |
+| 15:21 | 0h15 | Transit | Regroup, walk to ferry pier |
+| 15:36 | 0h20 | Transit | Miyajima pier -> Miyajimaguchi pier, JR ferry |
+| 15:56 | 0h25 | Transit | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local |
+| 16:21 | 0h15 | Transit | Hiroshima Stn -> hotel, walk |
+| 16:36 | 0h50 | Rest | Downtime at hotel |
+| 17:26 | 0h34 | Rest | Wind down before dinner |
 | 18:00 | 1h00 | Food | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) |
 | 19:00 | - | Rest | Return to hotel, infants down |
 
@@ -123,6 +133,11 @@ by the rail pass beyond the island admissions.
   (the classic photo), at low tide you can walk out to it across the sand. Either is worthwhile,
   but the two look very different; this is a "check closer to the date" item, not something to
   plan around now.
+- The island's stops are not adjacent: the Aquarium is a real ~10-minute walk from the
+  shrine/Treasure Hall, Omotesando (lunch) is a further ~6 minutes from the Aquarium, and
+  Momijidani Park is about 20 minutes beyond that. Those three walks add 36 minutes that a
+  prior draft left unaccounted for; the "wind down before dinner" block at the hotel absorbs
+  it, so dinner still starts at 18:00 and infants still go down at 19:00 as planned.
 - **Mt. Misen's summit trails are carrier-only, not stroller** - steep stone steps throughout.
   The ropeway substitutes a scenic ride: only 2 of the 3 adults go up (one may carry the
   20-month-old in the party's single carrier), while the third adult rests with the stroller and
@@ -201,19 +216,22 @@ Shukkei-en garden and Hiroshima Castle.
 | 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Hiroshima (included) |
 | 07:45 | 0h15 | Transit | Hotel -> Genbaku Dome-mae, Hiroden streetcar |
 | 08:00 | 0h45 | Activity | Atomic Bomb Dome + Motoyasu riverside walk, free |
-| 08:45 | 1h15 | Activity | Peace Memorial Museum (party splits - see note) |
-| 10:00 | 0h35 | Activity | Hiroshima Orizuru Tower (observation deck + paper-crane fold) |
-| 10:35 | 0h45 | Food | Lunch, Hondori arcade |
-| 11:20 | 0h15 | Transit | Walk/streetcar back to hotel |
-| 11:35 | 1h40 | Rest | Rest / infant naps at hotel |
-| 13:15 | 0h15 | Transit | Hotel -> Shukkei-en, Hiroden streetcar |
-| 13:30 | 1h00 | Activity | Shukkei-en garden |
-| 14:30 | 0h15 | Transit | Walk, Shukkei-en -> Hiroshima Castle |
-| 14:45 | 0h45 | Activity | Hiroshima Castle (grounds + keep) |
-| 15:30 | 0h20 | Transit | Castle -> hotel, Hiroden streetcar |
-| 15:50 | 1h40 | Rest | Downtime at hotel |
-| 17:30 | 1h00 | Food | Dinner near hotel |
-| 18:30 | - | Rest | Evening at hotel, infants down |
+| 08:45 | 0h15 | Transit | Walk, Atomic Bomb Dome -> Peace Memorial Museum (through the park) |
+| 09:00 | 1h15 | Activity | Peace Memorial Museum (party splits - see note) |
+| 10:15 | 0h15 | Transit | Walk, Peace Memorial Museum -> Hiroshima Orizuru Tower (back toward the Dome) |
+| 10:30 | 0h35 | Activity | Hiroshima Orizuru Tower (observation deck + paper-crane fold) |
+| 11:05 | 0h10 | Transit | Walk, Orizuru Tower -> Hondori arcade |
+| 11:15 | 0h45 | Food | Lunch, Hondori arcade |
+| 12:00 | 0h15 | Transit | Walk/streetcar back to hotel |
+| 12:15 | 1h40 | Rest | Rest / infant naps at hotel |
+| 13:55 | 0h15 | Transit | Hotel -> Shukkei-en, Hiroden streetcar |
+| 14:10 | 1h00 | Activity | Shukkei-en garden |
+| 15:10 | 0h15 | Transit | Walk, Shukkei-en -> Hiroshima Castle |
+| 15:25 | 0h45 | Activity | Hiroshima Castle (grounds + keep) |
+| 16:10 | 0h20 | Transit | Castle -> hotel, Hiroden streetcar |
+| 16:30 | 1h40 | Rest | Downtime at hotel |
+| 18:10 | 1h00 | Food | Dinner near hotel |
+| 19:10 | - | Rest | Evening at hotel, infants down |
 
 - **The Peace Memorial Museum's content is heavy**, and the lower-floor personal-effects exhibits
   are especially confronting. With two infants in the party, consider splitting: one or two adults
@@ -222,7 +240,13 @@ Shukkei-en garden and Hiroshima Castle.
   the full museum together.
 - Hiroshima Castle's keep has interior stairs (carrier recommended inside); the surrounding
   grounds and moat path are flat and stroller-workable.
-- Day span is kept under 12 hours with a 1h40 midday rest block at the hotel, as required.
+- The morning circuit doubles back on itself geographically: the Museum sits at the park's
+  south end (~15 min from the Dome), and the Orizuru Tower is back at the north end next to
+  the Dome (~15 min from the Museum), then Hondori is ~10 min further east. Those three walks
+  (40 minutes total) were previously shown as zero-time jumps; adding them pushes the day span
+  to about 12h10, just over the 12-hour guideline, with dinner now starting at 18:10 and
+  infants down around 19:10 - in line with the rest of the trip's evening rhythm rather than
+  earlier. The full 1h40 midday rest block at the hotel is unchanged.
 
 ### Lodging
 
@@ -296,21 +320,27 @@ at Dotonbori.
 | 10:20 | 0h20 | Transit | Shin-Osaka -> Namba, Osaka Metro Midosuji Line |
 | 10:40 | 0h20 | Transit | Namba Stn -> Toyoko Inn Osaka Namba, walk |
 | 11:00 | 0h30 | Admin | Check in, drop bags |
-| 11:30 | 1h00 | Food | Lunch near Namba |
-| 12:30 | 1h45 | Rest | Rest / infant naps at hotel |
-| 14:15 | 0h20 | Transit | Hotel -> Dotonbori, walk |
-| 14:35 | 1h05 | Activity | Dotonbori canal-side walk (Glico sign, arcade browsing) + Pokemon Center Osaka DX, Daimaru Shinsaibashi 9F, free |
-| 15:40 | 0h20 | Activity | Namba Yasaka Shrine - giant lion-head hall, free |
-| 16:00 | 1h00 | Food | Dinner in Dotonbori (takoyaki + light bites) |
-| 17:00 | 0h20 | Transit | Walk back to hotel |
-| 17:20 | - | Rest | Evening at hotel, infants down |
+| 11:30 | 0h10 | Transit | Walk, hotel -> lunch spot near Namba |
+| 11:40 | 1h00 | Food | Lunch near Namba |
+| 12:40 | 0h10 | Transit | Walk, lunch spot -> hotel |
+| 12:50 | 1h45 | Rest | Rest / infant naps at hotel |
+| 14:35 | 0h20 | Transit | Hotel -> Dotonbori, walk |
+| 14:55 | 1h05 | Activity | Dotonbori canal-side walk (Glico sign, arcade browsing) + Pokemon Center Osaka DX, Daimaru Shinsaibashi 9F, free |
+| 16:00 | 0h15 | Transit | Walk, Daimaru Shinsaibashi -> Namba Yasaka Shrine |
+| 16:15 | 0h20 | Activity | Namba Yasaka Shrine - giant lion-head hall, free |
+| 16:35 | 0h15 | Transit | Walk, Namba Yasaka Shrine -> Dotonbori (dinner spot) |
+| 16:50 | 1h00 | Food | Dinner in Dotonbori (takoyaki + light bites) |
+| 17:50 | 0h20 | Transit | Walk back to hotel |
+| 18:10 | - | Rest | Evening at hotel, infants down |
 
-- Day span 07:00-17:20 (10h20), with the shinkansen leg seated and low-stress and a 1h45
+- Day span 07:00-18:10 (11h10), with the shinkansen leg seated and low-stress and a 1h45
   midday rest block at the new hotel before the evening outing. Pokemon Center Osaka DX is
   folded into the Dotonbori stop rather than given a separate transit leg - Daimaru
   Shinsaibashi's 9th floor is a few minutes' walk further up the Shinsaibashi-suji arcade from
-  the canal, so the whole evening slips only about 20 minutes later than the original plan and
-  infants still go down earlier than on Days 25 or 26.
+  the canal, so that stop needs no extra time of its own. Namba Yasaka Shrine, though, is a
+  genuine ~15-minute walk each way from Dotonbori/Shinsaibashi, not an in-passing stop, and a
+  short walk to and from lunch near the hotel was previously shown as free; with those four
+  legs now timed honestly, infants still go down by 18:10, earlier than on Days 25 or 26.
 
 ### Lodging
 
@@ -348,7 +378,7 @@ covered in the next segment.
 |---|---|---|---|---|---|
 | Dotonbori canal walk | 0h45 | 0 | 0 | Dotonbori, Chuo-ku, Osaka (district; nearest station Namba - address unverified) | Osaka's best-known nightlife and dining strip, a canal-side promenade lined with oversized illuminated signs - the animated Glico "running man" billboard is the classic photo spot - plus arcades, restaurants and street-food stalls stacked along both banks. This is a browsing stop, not a ticketed attraction: free, flat, and stroller-workable along the main promenade, though it gets crowded and slow-moving after dark, worth knowing with a stroller in tow. Kept deliberately light for this arrival evening; the paid Tombori River Cruise is saved for the last full day in Osaka (Day 29) instead of being charged for twice, which is what the earlier draft did. |
 | Pokemon Center Osaka DX | 0h20 | 0 | 0 | Daimaru Shinsaibashi Main Bldg, 9F, 1-7-1 Shinsaibashisuji, Chuo-ku, Osaka 542-8501 | An official Pokemon retail store, not a game location or a ticketed attraction, selling plushes, trading cards, region-exclusive merchandise and stationery, with a life-size photo-op Pikachu near the entrance. Worth the stop for a Pokemon-loving family purely to browse and shop, nothing more elaborate than that, and it costs nothing to walk in and look without buying. It occupies the 9th floor of the Daimaru Shinsaibashi department store, a few minutes' walk north of the Dotonbori canal, open daily 10:00-20:00 with no ticket or reservation needed; unlike some other Pokemon Centers, this one has no attached cafe - Pokemon Cafe Osaka is a separate premises elsewhere in the city. It is elevator-served like any department-store floor, so fully reachable with the stroller, though the sales aisles themselves are shop-narrow and can get crowded - one adult minding the stroller near the entrance while the other browses with a toddler works better than pushing it through the display racks. |
-| Namba Yasaka Shrine | 0h20 | 0 | 0 | 2-9-19 Motomachi, Naniwa-ku, Osaka 556-0016 | A Shinto shrine whose main hall is built in the shape of an enormous lion's head, about 12 m tall with its mouth open as if swallowing evil spirits - a genuinely strange, striking piece of architecture rather than a typical shrine building, and unlike anything else on this trip. It is free, about a 10-minute walk from the hotel, and the whole visit is a flat, ground-level courtyard with no stairs and nothing to enter, so it folds easily into the walk back from Dotonbori as a quick, low-effort stop rather than a separate outing. |
+| Namba Yasaka Shrine | 0h20 | 0 | 0 | 2-9-19 Motomachi, Naniwa-ku, Osaka 556-0016 | A Shinto shrine whose main hall is built in the shape of an enormous lion's head, about 12 m tall with its mouth open as if swallowing evil spirits - a genuinely strange, striking piece of architecture rather than a typical shrine building, and unlike anything else on this trip. It is free, about a 10-minute walk from the hotel (and about 15 minutes from the Dotonbori/Shinsaibashi stretch this day is already visiting), and the whole visit is a flat, ground-level courtyard with no stairs and nothing to enter. It's a real there-and-back detour, not a stop that happens along the way, so the schedule now gives it its own walking time each direction rather than folding it into the Dotonbori walk for free. |
 
 ### Day 27 Cost
 

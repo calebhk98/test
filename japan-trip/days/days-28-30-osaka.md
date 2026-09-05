@@ -20,12 +20,14 @@
 | 09:40 | 0:25 | Transit | Osaka Stn -> Kobe-Sannomiya Stn (JR Kobe Line Special Rapid; JR Kansai-Hiroshima Area Pass, final valid day) |
 | 10:05 | 0:15 | Transit | Sannomiya Stn -> Kobe Stn, JR Kobe Line one stop (pass) + walk to Kobe Harborland |
 | 10:20 | 1:30 | Activity | Anpanman Children's Museum & Mall - Museum Zone (paid, both infants charged) + ground-floor Shopping Mall (free browse) |
-| 11:50 | 0:45 | Food | Lunch: street stalls at Nankinmachi (Kobe Chinatown) |
-| 12:35 | 0:30 | Activity | Meriken Park waterfront - flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside |
-| 13:05 | 0:15 | Transit | Walk Meriken Park -> Sannomiya Stn |
-| 13:20 | 0:25 | Transit | Kobe-Sannomiya Stn -> Osaka Stn (JR Special Rapid, pass) |
-| 13:45 | 0:15 | Transit | Osaka/Umeda Stn -> Namba Stn (Midosuji Line) |
-| 14:00 | 2:00 | Rest | Midday rest at hotel |
+| 11:50 | 0:15 | Transit | Walk, Kobe Harborland -> Nankinmachi (Chinatown) |
+| 12:05 | 0:45 | Food | Lunch: street stalls at Nankinmachi (Kobe Chinatown) |
+| 12:50 | 0:10 | Transit | Walk, Nankinmachi -> Meriken Park |
+| 13:00 | 0:30 | Activity | Meriken Park waterfront - flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside |
+| 13:30 | 0:15 | Transit | Walk Meriken Park -> Sannomiya Stn |
+| 13:45 | 0:25 | Transit | Kobe-Sannomiya Stn -> Osaka Stn (JR Special Rapid, pass) |
+| 14:10 | 0:15 | Transit | Osaka/Umeda Stn -> Namba Stn (Midosuji Line) |
+| 14:25 | 1:35 | Rest | Midday rest at hotel |
 | 16:00 | 0:15 | Transit | Walk hotel -> Dotonbori (Ebisubashi) |
 | 16:15 | 0:40 | Food | Dinner: takoyaki + okonomiyaki from Dotonbori stalls |
 | 16:55 | 0:15 | Transit | Walk to Midosuji Avenue |
@@ -33,7 +35,7 @@
 | 17:55 | 0:15 | Transit | Walk back to hotel |
 | 18:10 | - | Lodging | Return to hotel, infants down |
 
-Active out-of-lodging time: ~7h55 (morning museum-plus-Kobe circuit ~5h45, evening dinner-plus-illumination ~2h10), either side of a 2h rest block at the hotel. This runs about 45 min over the day's already-flagged "deliberately full day" total, the direct cost of swapping the 50-minute Kitano walk for the realistically 1h30 Anpanman visit; still holds one full 2h midday rest.
+Active out-of-lodging time: ~8h20 (morning museum-plus-Kobe circuit ~6h10, evening dinner-plus-illumination ~2h10), either side of a shortened 1h35 rest block at the hotel. Kobe Harborland to Nankinmachi is a genuine ~15-minute walk and Nankinmachi to Meriken Park a further ~10 minutes with the stroller; those two legs, previously shown as free, add 25 minutes that the midday rest block absorbs so the 16:00 Dotonbori walk and the rest of the evening stay on schedule. This now runs about 1h10 over the day's already-flagged "deliberately full day" total - the direct cost of the realistically 1h30 Anpanman visit plus these two connecting walks; the rest block is trimmed but not dropped.
 
 ### Lodging
 
@@ -101,21 +103,32 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | 08:15 | 0:20 | Transit | Namba Stn -> Tanimachi 4-chome Stn (Osaka Metro, one transfer) |
 | 08:35 | 1:40 | Activity | Osaka Castle Park + keep (park free, keep paid; infants free) |
 | 10:15 | 1:30 | Rest | Midday rest in Osaka Castle Park (shaded lawn, stroller nap) |
-| 11:45 | 0:20 | Transit | Tanimachi 4-chome Stn -> Nippombashi Stn (Kuromon Ichiba) |
-| 12:05 | 0:20 | Activity | Den Den Town (Nipponbashi/Ota Road) browse - right at the Nippombashi Stn exit already being used for the transfer |
-| 12:25 | 0:55 | Food | Lunch grazing at Kuromon Ichiba Market |
-| 13:20 | 0:25 | Transit | Walk Kuromon Ichiba -> Shinsekai |
-| 13:45 | 0:50 | Activity | Shinsekai walk + Tsutenkaku Tower observation deck |
-| 14:35 | 0:20 | Transit | Shinsekai -> Namba/Dotonbori (Osaka Metro) |
-| 14:55 | 0:30 | Activity | Dotonbori canal-side walk, Glico sign |
-| 15:25 | 0:30 | Activity | Tombori River Cruise, Dotonbori canal |
-| 15:55 | 0:15 | Transit | Walk to hotel |
-| 16:10 | 1:40 | Rest | Downtime at hotel |
-| 18:05 | 0:45 | Food | Dinner: kushikatsu |
-| 18:50 | 0:15 | Transit | Walk back to hotel |
-| 19:05 | - | Lodging | Return to hotel, infants down |
+| 11:45 | 0:10 | Transit | Walk, Osaka Castle Park -> Tanimachi 4-chome Stn |
+| 11:55 | 0:20 | Transit | Tanimachi 4-chome Stn -> Nippombashi Stn (Kuromon Ichiba) |
+| 12:15 | 0:20 | Activity | Den Den Town (Nipponbashi/Ota Road) browse - right at the Nippombashi Stn exit already being used for the transfer |
+| 12:35 | 0:12 | Transit | Walk, Den Den Town -> Kuromon Ichiba Market |
+| 12:47 | 0:55 | Food | Lunch grazing at Kuromon Ichiba Market |
+| 13:42 | 0:25 | Transit | Walk Kuromon Ichiba -> Shinsekai |
+| 14:07 | 0:50 | Activity | Shinsekai walk + Tsutenkaku Tower observation deck |
+| 14:57 | 0:20 | Transit | Shinsekai -> Namba/Dotonbori (Osaka Metro) |
+| 15:17 | 0:30 | Activity | Dotonbori canal-side walk, Glico sign |
+| 15:47 | 0:30 | Activity | Tombori River Cruise, Dotonbori canal |
+| 16:17 | 0:15 | Transit | Walk to hotel |
+| 16:32 | 1:40 | Rest | Downtime at hotel |
+| 18:12 | 0:15 | Transit | Walk, hotel -> Kushikatsu Daruma, Dotonbori |
+| 18:27 | 0:45 | Food | Dinner: kushikatsu |
+| 19:12 | 0:15 | Transit | Walk back to hotel |
+| 19:27 | - | Lodging | Return to hotel, infants down |
 
-Active out-of-lodging time: ~7h10 across two blocks (morning castle + midday rest in the park, afternoon market/tower/canal circuit + evening dinner), plus a second downtime block at the hotel. Slightly over the 7h guideline - the cost of folding a 20-minute Den Den Town browse into the Nippombashi transfer - but this is the trip's last full day and still holds two separate rest/downtime blocks either side of it.
+Active out-of-lodging time: ~7h32 across two blocks (morning castle + midday rest in the park,
+afternoon market/tower/canal circuit + evening dinner), plus a second downtime block at the
+hotel. Two connecting walks that the prior draft left at zero time - Osaka Castle Park back to
+Tanimachi 4-chome Stn (~10 min) and Den Den Town to Kuromon Ichiba, which are a genuine ~10-15
+minutes apart, not adjacent (~12 min) - are now shown explicitly, and the evening also now
+carries an explicit 15-minute walk from the hotel to Kushikatsu Daruma in Dotonbori that the
+previous draft's clock silently assumed away (the schedule jumped straight from 17:50 to 18:05
+with no row covering it). This pushes further over the 7h guideline than before, but this is
+the trip's last full day and still holds two separate rest/downtime blocks either side of it.
 
 **On Bunraku, considered and not scheduled:** see the note at the end of this day's write-up, after the Cost table.
 
