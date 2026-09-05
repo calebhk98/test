@@ -53,7 +53,7 @@
 
 **Night:** 1 of 3  
 **Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Address:** 1-1-1 Matoba-cho, Minami-ku, Hiroshima 732-0824  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
@@ -162,7 +162,7 @@ by the rail pass beyond the island admissions.
 
 **Night:** 2 of 3  
 **Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Address:** 1-1-1 Matoba-cho, Minami-ku, Hiroshima 732-0824  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
@@ -266,7 +266,7 @@ Shukkei-en garden and Hiroshima Castle.
 
 **Night:** 3 of 3  
 **Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Address:** 1-1-1 Matoba-cho, Minami-ku, Hiroshima 732-0824  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
@@ -363,7 +363,9 @@ at Dotonbori.
   added as a separate outing. The only thing that gives is 20 minutes trimmed from the midday
   rest (1h45 down to 1h25) - the Dotonbori/Pokemon Center/Yasaka Shrine evening, dinner, and
   the 18:10 bedtime are all untouched.
-- Active out-of-lodging time: about 8h00 (4h25 before the rest block, 3h35 after), plus a
+- **Capsule-hotel night.** The last of the three [capsule nights](#the-three-capsule-nights), on the third adult: First Cabin Midosuji Namba, which opens onto the Osaka Metro Namba concourse inside the same station complex as the hotel, so it is a few minutes' walk rather than a train ride. Today's 18:10 finish is the lightest evening in Osaka.
+
+Active out-of-lodging time: about 8h00 (4h25 before the rest block, 3h35 after), plus a
   1h25 rest block. This runs about 1h00 over the ~7h guideline - it's a shinkansen
   transfer day with a full evening outing added on top, now also carrying the Day 27 arrival
   grocery run.
@@ -372,7 +374,7 @@ at Dotonbori.
 
 **Night:** 1 of 3  
 **Hotel:** Toyoko Inn Osaka Namba  
-**Address:** Namba area (specific branch address unverified)  
+**Address:** 2-3-9 Nanba, Chuo-ku, Osaka 542-0076  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals

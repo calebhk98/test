@@ -504,7 +504,9 @@ rest block set in the park itself.
   the day is already full without it. The free, indoor PARCO floor (Pokemon Centre, Jump
   Shop, Nintendo Tokyo) is the weatherproof fallback if the toddlers are flagging by
   mid-afternoon.
-- Active out-of-lodging time: about 8h10, plus a 1h45 rest block. This is about 1h10
+- **Capsule-hotel night.** Tonight is the first of the trip's three [capsule nights](#the-three-capsule-nights): the adult in the single room sleeps at GLANSIT AKIHABARA instead, three Hibiya Line stops from Iriya. Today's 18:20 finish is the earliest evening of the Tokyo block, and tomorrow's breakfast is self-catered in the room at 07:30, so nothing waits on their return.
+
+Active out-of-lodging time: about 8h10, plus a 1h45 rest block. This is about 1h10
   over the ~7h guideline - the segment's fullest day, linking Meiji Jingu, Yoyogi Park,
   Harajuku, and Shibuya in one loop.
 

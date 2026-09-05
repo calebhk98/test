@@ -58,6 +58,7 @@
   - [Appendix D: Hotels and lodging](#appendix-d-hotels-and-lodging)
     - [Why two rooms rather than one](#why-two-rooms-rather-than-one)
     - [The properties](#the-properties)
+    - [The three capsule nights](#the-three-capsule-nights)
     - [What to confirm before paying](#what-to-confirm-before-paying)
   - [Appendix E: Advance booking](#appendix-e-advance-booking)
     - [1. Booking timeline, ordered by when to act](#1-booking-timeline-ordered-by-when-to-act)
@@ -668,7 +669,9 @@ rest block set in the park itself.
   the day is already full without it. The free, indoor PARCO floor (Pokemon Centre, Jump
   Shop, Nintendo Tokyo) is the weatherproof fallback if the toddlers are flagging by
   mid-afternoon.
-- Active out-of-lodging time: about 8h10, plus a 1h45 rest block. This is about 1h10
+- **Capsule-hotel night.** Tonight is the first of the trip's three [capsule nights](#the-three-capsule-nights): the adult in the single room sleeps at GLANSIT AKIHABARA instead, three Hibiya Line stops from Iriya. Today's 18:20 finish is the earliest evening of the Tokyo block, and tomorrow's breakfast is self-catered in the room at 07:30, so nothing waits on their return.
+
+Active out-of-lodging time: about 8h10, plus a 1h45 rest block. This is about 1h10
   over the ~7h guideline - the segment's fullest day, linking Meiji Jingu, Yoyogi Park,
   Harajuku, and Shibuya in one loop.
 
@@ -1308,7 +1311,7 @@ Active out-of-lodging time: about 7h15 (3h50 before the rest block, 3h25 after),
 
 **Night:** 1 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
 **Hotel:** [K's House Mt. Fuji](#ks-house-mt-fuji)  
-**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
+**Address:** 6713-108 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0301  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants, co-sleeping) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
@@ -1399,7 +1402,7 @@ Active out-of-lodging time: about 8h05 (5h45 before the rest block, 2h20 after),
 
 **Night:** 2 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
 **Hotel:** [K's House Mt. Fuji](#ks-house-mt-fuji)  
-**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
+**Address:** 6713-108 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0301  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
@@ -1581,7 +1584,7 @@ Active out-of-lodging time: about 7h35 (5h25 before the rest block, 2h10 after),
 
 **Night:** 1 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -1705,7 +1708,7 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 
 **Night:** 2 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult), max occupancy per room as booked  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -1790,13 +1793,15 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 
 - **Free viewing spot:** inside Kyoto Gyoen itself, near where the procession assembles and departs (not downtown on Oike-dori or Kawaramachi-dori). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. We watch the parade's opening only (roughly 60-90 minutes of a 2.5-hour, 2km procession) rather than following it to Heian Jingu, which keeps the day inside the infant-friendly activity cap. No paid grandstand seats are bought (¥4,500-6,500/adult, skipped).
 - Reaching Higashiyama/Okazaki in the afternoon uses the same walk-to-Hankyu, Hankyu-to-Karasuma, Karasuma-to-Tozai chain the morning already uses to reach Marutamachi, plus a walk from Higashiyama Station up to Heian Jingu. Rest blocks: 1h45 mandatory + 1h30 secondary downtime before the evening dinner trip.
-- Active out-of-lodging time: about 7h45 (4h00 before the rest block, 3h45 after), plus a 1h45 rest block. This runs about 45 minutes over the ~7h guideline - it's the segment's one festival day, combining the parade, Heian Jingu, and the Philosopher's Path across two separate outings.
+- **Capsule-hotel night.** The second of the three [capsule nights](#the-three-capsule-nights) falls tonight, on a different adult: GLANSIT KYOTO KAWARAMACHI, two Hankyu stops from Omiya on the line the hotel already sits on. Tomorrow's Arashiyama train leaves Hankyu Omiya at 08:30, so they either ride two stops back for it or board at Kawaramachi and meet the party at Katsura.
+
+Active out-of-lodging time: about 7h45 (4h00 before the rest block, 3h45 after), plus a 1h45 rest block. This runs about 45 minutes over the ~7h guideline - it's the segment's one festival day, combining the parade, Heian Jingu, and the Philosopher's Path across two separate outings.
 
 ### Lodging
 
 **Night:** 3 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -1886,7 +1891,7 @@ Infants ride free on the subway, Hankyu, and city bus legs. The family returns t
 
 **Night:** 4 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -1980,7 +1985,7 @@ Gojo shop to the Kiyomizu approach. The full trade-off is on Day [23](#day-23---
 
 **Night:** 5 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -2076,7 +2081,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 **Night:** 6 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -2217,7 +2222,7 @@ here is "covered by pass."*
 
 **Night:** 7 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -2331,7 +2336,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 **Night:** 8 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -2437,7 +2442,7 @@ rest above - free, no separate stop and no schedule change.
 
 **Night:** 9 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -2560,7 +2565,7 @@ this day would lose its headline, keeping the Nishijin weaving, the riverbank an
 
 **Night:** 10 of 10  
 **Hotel:** [Toyoko Inn Kyoto Shijo-Omiya](#toyoko-inn-kyoto-shijo-omiya)  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -2697,7 +2702,7 @@ Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
 
 **Night:** 1 of 3  
 **Hotel:** [Toyoko Inn Hiroshima Ekimae Ohashi Minami](#toyoko-inn-hiroshima-ekimae-ohashi-minami)  
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Address:** 1-1-1 Matoba-cho, Minami-ku, Hiroshima 732-0824  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
@@ -2806,7 +2811,7 @@ by the rail pass beyond the island admissions.
 
 **Night:** 2 of 3  
 **Hotel:** [Toyoko Inn Hiroshima Ekimae Ohashi Minami](#toyoko-inn-hiroshima-ekimae-ohashi-minami)  
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Address:** 1-1-1 Matoba-cho, Minami-ku, Hiroshima 732-0824  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
@@ -2910,7 +2915,7 @@ Shukkei-en garden and Hiroshima Castle.
 
 **Night:** 3 of 3  
 **Hotel:** [Toyoko Inn Hiroshima Ekimae Ohashi Minami](#toyoko-inn-hiroshima-ekimae-ohashi-minami)  
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Address:** 1-1-1 Matoba-cho, Minami-ku, Hiroshima 732-0824  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
@@ -3007,7 +3012,9 @@ at Dotonbori.
   added as a separate outing. The only thing that gives is 20 minutes trimmed from the midday
   rest (1h45 down to 1h25) - the Dotonbori/Pokemon Center/Yasaka Shrine evening, dinner, and
   the 18:10 bedtime are all untouched.
-- Active out-of-lodging time: about 8h00 (4h25 before the rest block, 3h35 after), plus a
+- **Capsule-hotel night.** The last of the three [capsule nights](#the-three-capsule-nights), on the third adult: First Cabin Midosuji Namba, which opens onto the Osaka Metro Namba concourse inside the same station complex as the hotel, so it is a few minutes' walk rather than a train ride. Today's 18:10 finish is the lightest evening in Osaka.
+
+Active out-of-lodging time: about 8h00 (4h25 before the rest block, 3h35 after), plus a
   1h25 rest block. This runs about 1h00 over the ~7h guideline - it's a shinkansen
   transfer day with a full evening outing added on top, now also carrying the Day 27 arrival
   grocery run.
@@ -3016,7 +3023,7 @@ at Dotonbori.
 
 **Night:** 1 of 3  
 **Hotel:** [Toyoko Inn Osaka Namba](#toyoko-inn-osaka-namba)  
-**Address:** Namba area (specific branch address unverified)  
+**Address:** 2-3-9 Nanba, Chuo-ku, Osaka 542-0076  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
@@ -3137,7 +3144,7 @@ Active out-of-lodging time: about 8h20 (6h10 before the rest block, 2h10 after),
 
 **Night:** 2 of 3  
 **Hotel:** [Toyoko Inn Osaka Namba](#toyoko-inn-osaka-namba)  
-**Address:** Namba area (specific branch address unverified)  
+**Address:** 2-3-9 Nanba, Chuo-ku, Osaka 542-0076  
 **Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
@@ -3231,7 +3238,7 @@ and a Dotonbori evening.
 
 **Night:** 3 of 3  
 **Hotel:** [Toyoko Inn Osaka Namba](#toyoko-inn-osaka-namba)  
-**Address:** Namba area (specific branch address unverified)  
+**Address:** 2-3-9 Nanba, Chuo-ku, Osaka 542-0076  
 **Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
@@ -4218,7 +4225,7 @@ Inaricho on the Hibiya Line, with Ueno about 10-12 minutes on foot. No breakfast
 included; the kitchenette covers it.
 
 #### K's House Mt. Fuji
-**Near the Ogi bus stop, about 15 minutes' walk from Kawaguchiko Station (street address unverified)**
+**6713-108 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0301**
 Days [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko)-[12](#day-12---sunday-october-18-2026---kawaguchiko), 2 nights, ¥18,000/night.
 A hostel rather than a hotel, and the only one on this trip. Fully equipped shared guest
 kitchen and laundry at ¥500 a load, both of which the Kawaguchiko days depend on. The
@@ -4239,7 +4246,7 @@ configuration, and any infant futon or meal surcharge. Neither is published. The
 assumption rather than a confirmed policy.
 
 #### Toyoko Inn Kyoto Shijo-Omiya
-**About 1 minute from Omiya Station on the Hankyu Kyoto Line (street address unverified)**
+**6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804**
 Days [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto)-[23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing), 10 nights, ¥19,000/night.
 Free breakfast buffet for every guest including bed-sharing children: rice, miso soup,
 natto, pickles, bread and coffee, roughly 500 kcal per adult. Across ten mornings that
@@ -4247,23 +4254,90 @@ removes the most awkward meal of the day to organise with infants. No kitchen, s
 Kyoto food plan is built around eating out and konbini rather than cooking.
 
 #### Toyoko Inn Hiroshima Ekimae Ohashi Minami
-**Central Hiroshima, about 1.2 miles from Peace Memorial Park (street address unverified)**
+**1-1-1 Matoba-cho, Minami-ku, Hiroshima 732-0824**
 Days [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)-[26](#day-26---sunday-november-1-2026---hiroshima-city-day), 3 nights, ¥15,000/night.
 Free breakfast, chain standard. About five minutes from Hiroshima Station, which matters
 on the arrival and departure days and for the Miyajima ferry run.
 
 #### Toyoko Inn Osaka Namba
-**Namba area (specific branch address unverified)**
+**2-3-9 Nanba, Chuo-ku, Osaka 542-0076**
 Days [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)-[29](#day-29---wednesday-november-4-2026---osaka), 3 nights, ¥13,000/night, the cheapest of the six.
 Free breakfast. Namba puts the party inside walking distance of Dotonbori, Kuromon
 Ichiba and Den Den Town, and on the Nankai line for the airport run on Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix).
 
+### The three capsule nights
+
+Every night except the ryokan puts one adult alone in the single room. Three of those
+nights swap that single for a capsule hotel, a different adult each time, so all three
+get the experience once. Both infants are barred from all three properties (the chains
+decline guests aged 12 and under), which is why this only works for the adult who is
+already sleeping alone. It changes nothing about who is doing childcare: that adult was
+not on duty overnight either way.
+
+Each property was chosen for one non-negotiable reason on top of location. Capsule
+hotels are strictly gender-segregated and many are men-only, so a property is usable
+here only if it takes both men and women, since the adult in the single room rotates.
+All three below confirm separate men's and women's floors on their own sites.
+
+**Night of Day [5](#day-5---sunday-october-11-2026---tokyo) (Sunday 11 October), Tokyo: GLANSIT AKIHABARA**  
+4-4-6 Sotokanda, Chiyoda-ku, Tokyo 101-0021  
+Link: [glansit.jp](https://glansit.jp/en/akihabara/)  
+A 2023-build designer capsule: wood-panelled lounges, smart-lock check-in, two capsule
+tiers, and full public baths on the men's (B1) and women's (10F) floors. Three stops
+from Iriya on the Hibiya Line with no transfer, about 8 minutes at the ¥180 minimum
+fare, then a 3-minute walk from Akihabara's Denki-gai exit. Day [5](#day-5---sunday-october-11-2026---tokyo) ends at
+18:20, the earliest evening of the Tokyo block, and Day [6](#day-6---monday-october-12-2026---tokyo-sports-day) starts at 07:30
+with a self-catered breakfast in the room, so the returning adult misses nothing.
+Estimated ¥6,000-9,000. Monday 12 October is Sports Day, so this is a holiday eve and
+the rate may run to the top of that range.
+
+**Night of Day [16](#day-16---thursday-october-22-2026---kyoto) (Thursday 22 October), Kyoto: GLANSIT KYOTO KAWARAMACHI**  
+380-2 Komeyacho, Kawaramachi-dori Shijo-agaru, Nakagyo-ku, Kyoto 604-8026  
+Link: [glansit.jp](https://glansit.jp/en/kyotokawaramachi/)  
+The same chain in the Shijo-Kawaramachi nightlife district, a block from the Kamo River:
+black-bamboo and wood-lattice interiors, a men's floor, a women's floor and a mixed
+floor, shower booths rather than a communal bath. Two stops from Omiya on the same
+Hankyu Kyoto Line the base hotel sits on, no transfer, about 5 minutes at ¥170, then a
+1-minute walk. Day [16](#day-16---thursday-october-22-2026---kyoto) is the Jidai Matsuri day and ends after a 18:30 dinner
+near Shijo-Omiya; Day [17](#day-17---friday-october-23-2026---kyoto) leaves for Arashiyama from Hankyu Omiya at 08:30,
+so the adult rides two stops back in time for it, or boards at Kawaramachi and meets the
+party at Katsura. Estimated ¥6,000-9,000. Midweek, the cheapest of the three nights.
+
+**Night of Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) (Monday 2 November), Osaka: First Cabin Midosuji Namba**  
+Namba Midosuji Building 3F, 4-2-1 Namba, Chuo-ku, Osaka 542-0076  
+Link: [first-cabin.jp](https://en.first-cabin.jp/hotels/midosujinanba/)  
+The aviation-themed chain, fitted out like airline cabins: First Class cabins are 2.1m
+cubes with a semi-double bed, plus a public bath with sauna and cold plunge and a gym
+over Midosuji avenue. The building splits into a 33-cabin men's area and a 19-cabin
+women's area, with 7 lockable Premium rooms open to either. It opens onto the Osaka
+Metro Namba concourse, the same station complex as Toyoko Inn Osaka Namba, so this is a
+walk of a few minutes rather than a train ride. Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) ends at 18:10, the
+lightest Osaka evening, and Day [28](#day-28---tuesday-november-3-2026---osaka) starts at 07:30. Estimated ¥7,000-11,000,
+the dearest of the three, and Culture Day falls on 3 November so this is also a holiday
+eve.
+
+**What it costs.** The three capsules come to roughly ¥19,000-29,000 ($123-187), plus
+about ¥800 for two konbini breakfasts, since on the Kyoto and Osaka nights the returning
+adult is no longer a registered Toyoko Inn guest and cannot use the free buffet. Against
+that sits the single room those three nights, which is not booked. The nightly figures in
+the table above cover both rooms together and are not broken out per room, so the saving
+cannot be stated exactly; a business-hotel single normally runs ¥6,000-9,000, which makes
+the swap close to a wash.
+
+That only holds if the booking actually omits the single on those three nights. Removing
+one night from the middle of a ten-night or three-night stay is not always possible, and
+some properties will only sell the block whole. If it cannot be split, the three capsules
+are an added ¥19,000-29,000 rather than a swap, which the trip's remaining reserve
+absorbs without touching anything else. Ask when booking the block, not on the day.
+
+None of the three rates is a quote. All three chains price dynamically and publish no
+fixed rate for a 2026 date this far out.
+
 ### What to confirm before paying
 
 1. **All six rates.** None of these is a quote. Booking engines returned no date-stamped 2026 availability, so every figure is a current rate adjusted for occupancy and shoulder season.
-2. **Four of the six street addresses**, marked unverified above, are identified by station proximity. Confirm on the operator's own site.
-3. **The infant co-sleeping allowance, in writing, at all six.**
-4. **The ryokan's room configuration and infant charges**, by phone.
+2. **The infant co-sleeping allowance, in writing, at all six.**
+3. **The ryokan's room configuration and infant charges**, by phone.
 
 ---
 
@@ -4320,7 +4394,6 @@ confirmed against an operator's own source is marked "verify directly."
 
 - **Any party member with a visible tattoo, re: sento/onsen access.** Day 23's neighbourhood sento and any spontaneous onsen stop both commonly refuse visible tattoos; if this applies, call ahead to the specific sento rather than finding out at the door.
 
-- **Toyoko Inn branch-level confirmation of the exact street address**, for the four Toyoko Inn and K's House properties still identified by station proximity rather than a street number. A call is the fastest way to get a real address for offline maps and taxi use, since no online listing gave one.
 
 ---
 
@@ -4737,24 +4810,6 @@ means dropping the Tombori River Cruise and trimming Shinsekai. Kabuki on Day 2
 already covers the theatre interest more cheaply and in about an hour.
 
 **Decide:** yes and rework Day 29, or no and leave Day 29 as built.
-
-#### A capsule hotel night
-**Recommended: no, but the workable version is documented.**
-Infants are barred essentially everywhere: most capsule hotels set a 13+ minimum,
-a few newer pod hotels allow 4+, none found accept under-2s. Floors are also
-gender-segregated, strictly, so two adults of different genders would not even
-share a floor.
-
-The only version that works: the adult who already has the single room in the
-two-room split swaps it for a capsule for one night. That is roughly cost-neutral
-(¥4,000-6,500 for a capsule against a ¥6,000-9,000 single-room saving), and **Day 27
-in Namba is the best-fitting night** - a light arrival evening, a capsule-dense
-neighbourhood, and no fragile early connection the next morning. But it changes
-nothing about childcare, because that adult was not doing childcare that night
-anyway. The version that would free up an adult leaves one person alone overnight
-with both infants, which is worse, not better.
-
-**Decide:** do it as a novelty on Day 27, or skip it.
 
 ---
 

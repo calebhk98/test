@@ -22,24 +22,6 @@ already covers the theatre interest more cheaply and in about an hour.
 
 **Decide:** yes and rework Day 29, or no and leave Day 29 as built.
 
-### A capsule hotel night
-**Recommended: no, but the workable version is documented.**
-Infants are barred essentially everywhere: most capsule hotels set a 13+ minimum,
-a few newer pod hotels allow 4+, none found accept under-2s. Floors are also
-gender-segregated, strictly, so two adults of different genders would not even
-share a floor.
-
-The only version that works: the adult who already has the single room in the
-two-room split swaps it for a capsule for one night. That is roughly cost-neutral
-(¥4,000-6,500 for a capsule against a ¥6,000-9,000 single-room saving), and **Day 27
-in Namba is the best-fitting night** - a light arrival evening, a capsule-dense
-neighbourhood, and no fragile early connection the next morning. But it changes
-nothing about childcare, because that adult was not doing childcare that night
-anyway. The version that would free up an adult leaves one person alone overnight
-with both infants, which is worse, not better.
-
-**Decide:** do it as a novelty on Day 27, or skip it.
-
 ---
 
 ## 2. Things to re-check nearer the date

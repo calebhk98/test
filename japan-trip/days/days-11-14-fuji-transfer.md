@@ -50,7 +50,7 @@ Active out-of-lodging time: about 7h15 (3h50 before the rest block, 3h25 after),
 
 **Night:** 1 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
 **Hotel:** K's House Mt. Fuji  
-**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
+**Address:** 6713-108 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0301  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants, co-sleeping) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
@@ -141,7 +141,7 @@ Active out-of-lodging time: about 8h05 (5h45 before the rest block, 2h20 after),
 
 **Night:** 2 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
 **Hotel:** K's House Mt. Fuji  
-**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
+**Address:** 6713-108 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0301  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
@@ -323,7 +323,7 @@ Active out-of-lodging time: about 7h35 (5h25 before the rest block, 2h10 after),
 
 **Night:** 1 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals

@@ -51,7 +51,6 @@ confirmed against an operator's own source is marked "verify directly."
 
 - **Any party member with a visible tattoo, re: sento/onsen access.** Day 23's neighbourhood sento and any spontaneous onsen stop both commonly refuse visible tattoos; if this applies, call ahead to the specific sento rather than finding out at the door.
 
-- **Toyoko Inn branch-level confirmation of the exact street address**, for the four Toyoko Inn and K's House properties still identified by station proximity rather than a street number. A call is the fastest way to get a real address for offline maps and taxi use, since no online listing gave one.
 
 ---
 

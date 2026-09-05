@@ -56,7 +56,7 @@
 
 **Night:** 2 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult), max occupancy per room as booked  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -141,13 +141,15 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 
 - **Free viewing spot:** inside Kyoto Gyoen itself, near where the procession assembles and departs (not downtown on Oike-dori or Kawaramachi-dori). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. We watch the parade's opening only (roughly 60-90 minutes of a 2.5-hour, 2km procession) rather than following it to Heian Jingu, which keeps the day inside the infant-friendly activity cap. No paid grandstand seats are bought (¥4,500-6,500/adult, skipped).
 - Reaching Higashiyama/Okazaki in the afternoon uses the same walk-to-Hankyu, Hankyu-to-Karasuma, Karasuma-to-Tozai chain the morning already uses to reach Marutamachi, plus a walk from Higashiyama Station up to Heian Jingu. Rest blocks: 1h45 mandatory + 1h30 secondary downtime before the evening dinner trip.
-- Active out-of-lodging time: about 7h45 (4h00 before the rest block, 3h45 after), plus a 1h45 rest block. This runs about 45 minutes over the ~7h guideline - it's the segment's one festival day, combining the parade, Heian Jingu, and the Philosopher's Path across two separate outings.
+- **Capsule-hotel night.** The second of the three [capsule nights](#the-three-capsule-nights) falls tonight, on a different adult: GLANSIT KYOTO KAWARAMACHI, two Hankyu stops from Omiya on the line the hotel already sits on. Tomorrow's Arashiyama train leaves Hankyu Omiya at 08:30, so they either ride two stops back for it or board at Kawaramachi and meet the party at Katsura.
+
+Active out-of-lodging time: about 7h45 (4h00 before the rest block, 3h45 after), plus a 1h45 rest block. This runs about 45 minutes over the ~7h guideline - it's the segment's one festival day, combining the parade, Heian Jingu, and the Philosopher's Path across two separate outings.
 
 ### Lodging
 
 **Night:** 3 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -237,7 +239,7 @@ Infants ride free on the subway, Hankyu, and city bus legs. The family returns t
 
 **Night:** 4 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -331,7 +333,7 @@ Gojo shop to the Kiyomizu approach. The full trade-off is on Day @@DAYLINK:23@@.
 
 **Night:** 5 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -427,7 +429,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 **Night:** 6 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals

@@ -60,7 +60,7 @@ here is "covered by pass."*
 
 **Night:** 7 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -174,7 +174,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 **Night:** 8 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -280,7 +280,7 @@ rest above - free, no separate stop and no schedule change.
 
 **Night:** 9 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
@@ -403,7 +403,7 @@ this day would lose its headline, keeping the Nishijin weaving, the riverbank an
 
 **Night:** 10 of 10  
 **Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Address:** 6-2 Mibubojo-cho, Nakagyo-ku, Kyoto 604-8804  
 **Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals

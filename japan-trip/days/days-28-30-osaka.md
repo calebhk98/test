@@ -45,7 +45,7 @@ Active out-of-lodging time: about 8h20 (6h10 before the rest block, 2h10 after),
 
 **Night:** 2 of 3  
 **Hotel:** Toyoko Inn Osaka Namba  
-**Address:** Namba area (specific branch address unverified)  
+**Address:** 2-3-9 Nanba, Chuo-ku, Osaka 542-0076  
 **Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
@@ -139,7 +139,7 @@ and a Dotonbori evening.
 
 **Night:** 3 of 3  
 **Hotel:** Toyoko Inn Osaka Namba  
-**Address:** Namba area (specific branch address unverified)  
+**Address:** 2-3-9 Nanba, Chuo-ku, Osaka 542-0076  
 **Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
