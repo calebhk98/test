@@ -208,17 +208,17 @@ stock-up run, early night against jet lag with two infants.
 |---|---|---|---|
 | 09:30 | 1h00 | Admin | Land NRT, immigration, baggage claim, customs |
 | 10:30 | 0h15 | Admin | Buy Keisei Access Express tickets, board |
-| 10:45 | 1h05 | Transit | Narita Airport -> Keisei-Ueno, Keisei Access Express |
-| 11:50 | 0h15 | Transit | Walk Keisei-Ueno Stn -> Hotel Livemax Higashi-Ueno |
+| 10:45 | 1h05 | [Transit](#transport) | Narita Airport -> Keisei-Ueno, Keisei Access Express |
+| 11:50 | 0h15 | [Transit](#transport) | Walk Keisei-Ueno Stn -> Hotel Livemax Higashi-Ueno |
 | 12:05 | 0h40 | Lodging | Check-in, drop bags |
-| 12:45 | 0h45 | Food | Lunch near the hotel, Ueno |
+| 12:45 | 0h45 | [Food](#meals) | Lunch near the hotel, Ueno |
 | 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 15:15 | 0h12 | Transit | Walk, hotel -> [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) |
-| 15:27 | 1h00 | Food | Supermarket stock-up run (rice, eggs, milk, produce, pantry staples, initial infant food) - a full-price bulk shop; mid-afternoon is well before any evening markdown window, so no hangaku applies here |
-| 16:27 | 0h12 | Transit | Walk back, [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) -> hotel |
+| 15:15 | 0h12 | [Transit](#transport) | Walk, hotel -> [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) |
+| 15:27 | 1h00 | [Food](#meals) | Supermarket stock-up run (rice, eggs, milk, produce, pantry staples, initial infant food) - a full-price bulk shop; mid-afternoon is well before any evening markdown window, so no hangaku applies here |
+| 16:27 | 0h12 | [Transit](#transport) | Walk back, [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) -> hotel |
 | 16:39 | 0h18 | Admin | Unpack groceries |
 | 16:57 | 0h48 | Rest | Quiet stroller loop of the block, unwind |
-| 17:45 | 1h00 | Food | Dinner - first self-catered meal at the kitchenette |
+| 17:45 | 1h00 | [Food](#meals) | Dinner - first self-catered meal at the kitchenette |
 | 18:45 | 0h45 | Admin | Bath, wind-down |
 | 19:30 | - | Rest | Early night - lights out for both infants |
 
@@ -302,26 +302,26 @@ than keeping them cleanly separate.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:15 | 0h45 | Food | Breakfast, self-catered at the hotel |
-| 08:00 | 0h20 | Transit | Ueno -> Asakusa, Tokyo Metro Ginza Line |
-| 08:20 | 1h15 | Activity | Senso-ji - Kaminarimon, Nakamise-dori, main hall, five-story pagoda |
-| 09:35 | 0h15 | Transit | Walk along the Sumida riverside, cross Azumabashi Bridge to Skytree Town |
-| 09:50 | 1h00 | Activity | Sumida Aquarium (indoor, penguins/otters/jellyfish) |
-| 10:50 | 0h15 | Transit | Sumida Aquarium -> Tokyo Skytree Tembo Deck ticket gate (same tower, but a separate queue, security check, and dedicated high-speed elevator) |
-| 11:05 | 0h45 | Activity | Tokyo Skytree Tembo Deck (350m observatory) |
-| 11:50 | 0h10 | Transit | Tembo Deck -> Pokemon Centre, 4F Solamachi (elevator down, walk across the mall) |
-| 12:00 | 0h25 | Activity | Pokemon Centre Skytree Town, 4F Solamachi |
-| 12:25 | 0h45 | Food | Lunch, Tokyo Solamachi food court, Sumida-ku |
-| 13:10 | 0h20 | Transit | Return toward Ueno, Ginza Line |
+| 07:15 | 0h45 | [Food](#meals-1) | Breakfast, self-catered at the hotel |
+| 08:00 | 0h20 | [Transit](#transport-1) | Ueno -> Asakusa, Tokyo Metro Ginza Line |
+| 08:20 | 1h15 | [Activity](#activities-1) | Senso-ji - Kaminarimon, Nakamise-dori, main hall, five-story pagoda |
+| 09:35 | 0h15 | [Transit](#transport-1) | Walk along the Sumida riverside, cross Azumabashi Bridge to Skytree Town |
+| 09:50 | 1h00 | [Activity](#activities-1) | Sumida Aquarium (indoor, penguins/otters/jellyfish) |
+| 10:50 | 0h15 | [Transit](#transport-1) | Sumida Aquarium -> Tokyo Skytree Tembo Deck ticket gate (same tower, but a separate queue, security check, and dedicated high-speed elevator) |
+| 11:05 | 0h45 | [Activity](#activities-1) | Tokyo Skytree Tembo Deck (350m observatory) |
+| 11:50 | 0h10 | [Transit](#transport-1) | Tembo Deck -> Pokemon Centre, 4F Solamachi (elevator down, walk across the mall) |
+| 12:00 | 0h25 | [Activity](#activities-1) | Pokemon Centre Skytree Town, 4F Solamachi |
+| 12:25 | 0h45 | [Food](#meals-1) | Lunch, Tokyo Solamachi food court, Sumida-ku |
+| 13:10 | 0h20 | [Transit](#transport-1) | Return toward Ueno, Ginza Line |
 | 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
 | 15:15 | 1h00 | Rest | Light stroll, Ueno Park riverside edge (free, easy) |
 | 16:15 | 0h45 | Rest | Free downtime at the hotel - 3rd adult and both infants stay on this routine through the evening |
-| 17:00 | 0h20 | Transit | 2 adults: Ueno -> Higashi-Ginza, Tokyo Metro Ginza Line, for the evening Kabukiza act |
+| 17:00 | 0h20 | [Transit](#transport-1) | 2 adults: Ueno -> Higashi-Ginza, Tokyo Metro Ginza Line, for the evening Kabukiza act |
 | 17:20 | 0h40 | Admin | Queue and buy the Kabukiza single-act ticket (hitomakumi) + English subtitle tablets, cash only, no advance booking |
-| 17:30 | 1h00 | Food | Dinner - 3rd adult and both infants, self-catered at the hotel; the 2 Kabukiza-bound adults grab a quick conbini dinner near Ginza |
-| 18:00 | 1h00 | Activity | Kabukiza single-act (hitomakumi) - one act of Kabuki, Ginza |
+| 17:30 | 1h00 | [Food](#meals-1) | Dinner - 3rd adult and both infants, self-catered at the hotel; the 2 Kabukiza-bound adults grab a quick conbini dinner near Ginza |
+| 18:00 | 1h00 | [Activity](#activities-1) | Kabukiza single-act (hitomakumi) - one act of Kabuki, Ginza |
 | 18:30 | 0h45 | Admin | Bath, wind-down - 3rd adult and both infants |
-| 19:00 | 0h20 | Transit | 2 adults: Higashi-Ginza -> Ueno, Ginza Line |
+| 19:00 | 0h20 | [Transit](#transport-1) | 2 adults: Higashi-Ginza -> Ueno, Ginza Line |
 | 19:20 | - | Rest | Party reunites, lights out |
 
 - **Carrier recommended for Senso-ji** - Nakamise-dori is genuinely dense by mid-morning
@@ -399,26 +399,26 @@ everything inside a 15-minute walk of the Livemax.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast, self-catered |
-| 08:15 | 0h15 | Transit | Walk, hotel -> Ueno Park |
-| 08:30 | 1h15 | Activity | Ueno Zoo (stroller-friendly paths) |
-| 09:45 | 0h15 | Transit | Walk, Ueno Zoo -> Tokyo National Museum (through Ueno Park) |
-| 10:00 | 0h45 | Activity | Tokyo National Museum - permanent collection |
-| 10:45 | 0h10 | Transit | Walk, Tokyo National Museum -> National Museum of Nature and Science (adjacent, within Ueno Park) |
-| 10:55 | 1h15 | Activity | National Museum of Nature and Science (Kahaku) |
-| 12:10 | 0h20 | Transit | Walk, Ueno Park (Kahaku) -> Ameyoko market |
-| 12:30 | 0h45 | Food | Lunch, Ameyoko market food stalls |
-| 13:15 | 0h15 | Transit | Walk, Ameyoko -> Hotel Livemax Higashi-Ueno |
+| 07:30 | 0h45 | [Food](#meals-2) | Breakfast, self-catered |
+| 08:15 | 0h15 | [Transit](#transport-2) | Walk, hotel -> Ueno Park |
+| 08:30 | 1h15 | [Activity](#activities-2) | Ueno Zoo (stroller-friendly paths) |
+| 09:45 | 0h15 | [Transit](#transport-2) | Walk, Ueno Zoo -> Tokyo National Museum (through Ueno Park) |
+| 10:00 | 0h45 | [Activity](#activities-2) | Tokyo National Museum - permanent collection |
+| 10:45 | 0h10 | [Transit](#transport-2) | Walk, Tokyo National Museum -> National Museum of Nature and Science (adjacent, within Ueno Park) |
+| 10:55 | 1h15 | [Activity](#activities-2) | National Museum of Nature and Science (Kahaku) |
+| 12:10 | 0h20 | [Transit](#transport-2) | Walk, Ueno Park (Kahaku) -> Ameyoko market |
+| 12:30 | 0h45 | [Food](#meals-2) | Lunch, Ameyoko market food stalls |
+| 13:15 | 0h15 | [Transit](#transport-2) | Walk, Ameyoko -> Hotel Livemax Higashi-Ueno |
 | 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 15:15 | 0h10 | Transit | Ueno -> Akihabara, JR Yamanote/Keihin-Tohoku Line |
-| 15:25 | 2h00 | Activity | Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato (one adult peels off), Yodobashi Camera Akiba |
-| 17:25 | 0h10 | Transit | Akihabara -> Ueno, JR Yamanote/Keihin-Tohoku Line |
-| 17:35 | 1h00 | Food | Dinner, self-catered |
+| 15:15 | 0h10 | [Transit](#transport-2) | Ueno -> Akihabara, JR Yamanote/Keihin-Tohoku Line |
+| 15:25 | 2h00 | [Activity](#activities-2) | Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato (one adult peels off), Yodobashi Camera Akiba |
+| 17:25 | 0h10 | [Transit](#transport-2) | Akihabara -> Ueno, JR Yamanote/Keihin-Tohoku Line |
+| 17:35 | 1h00 | [Food](#meals-2) | Dinner, self-catered |
 | 18:35 | 0h45 | Admin | Bath, wind-down |
 | 19:20 | 0h40 | Rest | Quiet evening - both infants asleep, adults wind down |
-| 20:00 | 0h12 | Transit | One adult: walk, hotel -> [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs), for the hangaku deli run |
-| 20:12 | 0h20 | Food | Hangaku run - 50%-off deli items (karaage, potato salad, rice balls) bought for tomorrow's lunch top-up; store closes 21:00 |
-| 20:32 | 0h12 | Transit | Walk back, [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) -> hotel |
+| 20:00 | 0h12 | [Transit](#transport-2) | One adult: walk, hotel -> [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs), for the hangaku deli run |
+| 20:12 | 0h20 | [Food](#meals-2) | Hangaku run - 50%-off deli items (karaage, potato salad, rice balls) bought for tomorrow's lunch top-up; store closes 21:00 |
+| 20:32 | 0h12 | [Transit](#transport-2) | Walk back, [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) -> hotel |
 | 20:44 | - | Rest | Lights out |
 
 - No paid transit before 15:15 - everything through lunch is a walk from the hotel;
@@ -504,26 +504,26 @@ Gardens, riding the Sumida River water bus home to Asakusa.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:15 | 0h45 | Food | Breakfast, self-catered |
-| 08:00 | 0h10 | Transit | Ueno -> Tokyo, JR Yamanote/Keihin-Tohoku Line |
-| 08:10 | 0h30 | Activity | Tokyo Character Street, Tokyo Stn B1F |
-| 08:40 | 0h15 | Transit | Walk, Tokyo Stn -> Imperial Palace East Gardens (Otemon Gate) |
-| 08:55 | 1h20 | Activity | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
-| 10:15 | 0h15 | Transit | Otemachi -> Onarimon, Toei Mita Line |
-| 10:30 | 0h30 | Activity | Zojoji Temple, Shiba Park |
-| 11:00 | 0h05 | Transit | Walk, Zojoji -> Tokyo Tower Main Deck (across Shiba Park) |
-| 11:05 | 0h35 | Activity | Tokyo Tower Main Deck |
-| 11:40 | 0h20 | Transit | Onarimon -> Shiodome, Toei Mita Line to Daimon + transfer to Toei Oedo Line, then a 7-min walk to Hamarikyu's Otemon Gate |
-| 12:00 | 1h00 | Activity | Hamarikyu Gardens - tidal pond, teahouse |
-| 13:00 | 0h12 | Transit | Walk, Hamarikyu -> lunch spot, Shibakoen/Hamamatsucho area |
-| 13:12 | 0h45 | Food | Lunch, Shibakoen/Hamamatsucho area, Minato-ku |
-| 13:57 | 0h12 | Transit | Walk back into Hamarikyu Gardens for the rest block |
+| 07:15 | 0h45 | [Food](#meals-3) | Breakfast, self-catered |
+| 08:00 | 0h10 | [Transit](#transport-3) | Ueno -> Tokyo, JR Yamanote/Keihin-Tohoku Line |
+| 08:10 | 0h30 | [Activity](#activities-3) | Tokyo Character Street, Tokyo Stn B1F |
+| 08:40 | 0h15 | [Transit](#transport-3) | Walk, Tokyo Stn -> Imperial Palace East Gardens (Otemon Gate) |
+| 08:55 | 1h20 | [Activity](#activities-3) | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
+| 10:15 | 0h15 | [Transit](#transport-3) | Otemachi -> Onarimon, Toei Mita Line |
+| 10:30 | 0h30 | [Activity](#activities-3) | Zojoji Temple, Shiba Park |
+| 11:00 | 0h05 | [Transit](#transport-3) | Walk, Zojoji -> Tokyo Tower Main Deck (across Shiba Park) |
+| 11:05 | 0h35 | [Activity](#activities-3) | Tokyo Tower Main Deck |
+| 11:40 | 0h20 | [Transit](#transport-3) | Onarimon -> Shiodome, Toei Mita Line to Daimon + transfer to Toei Oedo Line, then a 7-min walk to Hamarikyu's Otemon Gate |
+| 12:00 | 1h00 | [Activity](#activities-3) | Hamarikyu Gardens - tidal pond, teahouse |
+| 13:00 | 0h12 | [Transit](#transport-3) | Walk, Hamarikyu -> lunch spot, Shibakoen/Hamamatsucho area |
+| 13:12 | 0h45 | [Food](#meals-3) | Lunch, Shibakoen/Hamamatsucho area, Minato-ku |
+| 13:57 | 0h12 | [Transit](#transport-3) | Walk back into Hamarikyu Gardens for the rest block |
 | 14:09 | 1h30 | Rest | Rest / infant naps - a bench on Hamarikyu's grounds (a park qualifies for the rest block) |
-| 15:39 | 0h15 | Transit | Walk back to the Hamarikyu boat pier |
-| 15:54 | 0h40 | Transit | Hamarikyu Pier -> Asakusa, Tokyo Cruise Sumida River water bus |
-| 16:34 | 0h15 | Transit | Walk, Asakusa Pier -> Hotel Livemax Higashi-Ueno |
+| 15:39 | 0h15 | [Transit](#transport-3) | Walk back to the Hamarikyu boat pier |
+| 15:54 | 0h40 | [Transit](#transport-3) | Hamarikyu Pier -> Asakusa, Tokyo Cruise Sumida River water bus |
+| 16:34 | 0h15 | [Transit](#transport-3) | Walk, Asakusa Pier -> Hotel Livemax Higashi-Ueno |
 | 16:49 | 0h41 | Rest | Downtime at the hotel |
-| 17:30 | 1h00 | Food | Dinner, self-catered |
+| 17:30 | 1h00 | [Food](#meals-3) | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
@@ -630,24 +630,24 @@ rest block set in the park itself.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast, self-catered |
-| 08:15 | 0h20 | Transit | Ueno -> Harajuku, JR Yamanote Line |
-| 08:35 | 1h15 | Activity | Meiji Jingu - main shrine grounds + Inner Garden |
-| 09:50 | 0h10 | Transit | Walk, Meiji Jingu -> Yoyogi Park (exit via the south approach) |
-| 10:00 | 1h00 | Activity | Yoyogi Park - open lawns |
-| 11:00 | 1h10 | Food | Lunch - conbini bento, picnic-style on the Yoyogi Park lawn |
+| 07:30 | 0h45 | [Food](#meals-4) | Breakfast, self-catered |
+| 08:15 | 0h20 | [Transit](#transport-4) | Ueno -> Harajuku, JR Yamanote Line |
+| 08:35 | 1h15 | [Activity](#activities-4) | Meiji Jingu - main shrine grounds + Inner Garden |
+| 09:50 | 0h10 | [Transit](#transport-4) | Walk, Meiji Jingu -> Yoyogi Park (exit via the south approach) |
+| 10:00 | 1h00 | [Activity](#activities-4) | Yoyogi Park - open lawns |
+| 11:00 | 1h10 | [Food](#meals-4) | Lunch - conbini bento, picnic-style on the Yoyogi Park lawn |
 | 12:10 | 1h45 | Rest | Rest / infant naps - a bench at Yoyogi Park's Harajuku entrance (a park bench qualifies for the rest block, same trick as Hamarikyu on Day 4) |
-| 13:55 | 0h30 | Activity | Tokyo Rockabilly Club dancers, Yoyogi Park Harajuku entrance plaza |
-| 14:25 | 0h05 | Transit | Walk, Yoyogi Park Harajuku entrance -> Takeshita Street |
-| 14:30 | 0h20 | Activity | Takeshita Street + a peek into Laforet Harajuku's Lolita boutiques (carrier only) |
-| 14:50 | 0h25 | Transit | Walk, Harajuku -> Shibuya via Omotesando |
-| 15:15 | 0h30 | Activity | Shibuya Scramble Crossing + Hachiko statue |
-| 15:45 | 0h10 | Transit | Walk, Shibuya Scramble -> Shibuya PARCO 6F |
-| 15:55 | 0h45 | Activity | Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo, Shibuya PARCO 6F |
+| 13:55 | 0h30 | [Activity](#activities-4) | Tokyo Rockabilly Club dancers, Yoyogi Park Harajuku entrance plaza |
+| 14:25 | 0h05 | [Transit](#transport-4) | Walk, Yoyogi Park Harajuku entrance -> Takeshita Street |
+| 14:30 | 0h20 | [Activity](#activities-4) | Takeshita Street + a peek into Laforet Harajuku's Lolita boutiques (carrier only) |
+| 14:50 | 0h25 | [Transit](#transport-4) | Walk, Harajuku -> Shibuya via Omotesando |
+| 15:15 | 0h30 | [Activity](#activities-4) | Shibuya Scramble Crossing + Hachiko statue |
+| 15:45 | 0h10 | [Transit](#transport-4) | Walk, Shibuya Scramble -> Shibuya PARCO 6F |
+| 15:55 | 0h45 | [Activity](#activities-4) | Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo, Shibuya PARCO 6F |
 | 16:40 | 0h10 | Rest | Free time near Shibuya PARCO before dinner |
-| 16:50 | 0h10 | Transit | Walk, Shibuya PARCO -> dinner venue |
-| 17:00 | 1h00 | Food | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
-| 18:00 | 0h20 | Transit | Shibuya -> Ueno, Tokyo Metro Ginza Line |
+| 16:50 | 0h10 | [Transit](#transport-4) | Walk, Shibuya PARCO -> dinner venue |
+| 17:00 | 1h00 | [Food](#meals-4) | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
+| 18:00 | 0h20 | [Transit](#transport-4) | Shibuya -> Ueno, Tokyo Metro Ginza Line |
 | 18:20 | - | Admin | Bath, wind-down |
 
 - Stroller works fine at Meiji Jingu/Yoyogi Park (gravel, gentle grade) and for the
@@ -740,24 +740,24 @@ away from the holiday crowds.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast, self-catered |
-| 08:15 | 0h10 | Transit | Hotel -> Nezu Shrine, Tokyo Metro Chiyoda Line |
-| 08:25 | 0h45 | Activity | Nezu Shrine grounds (azalea garden fee is seasonal only, skipped today) |
-| 09:10 | 0h15 | Transit | Walk, Nezu Shrine -> Yanaka Ginza |
-| 09:25 | 1h00 | Activity | Yanaka Ginza shopping street - senbei, menchi-katsu, cat-themed shopfronts |
-| 10:25 | 0h10 | Transit | Walk, Yanaka Ginza -> Yanaka Cemetery |
-| 10:35 | 0h50 | Activity | Yanaka Cemetery walk (quiet, tree-lined) |
-| 11:25 | 0h15 | Transit | Walk, Yanaka Cemetery -> Yanaka Ginza (loop back for lunch) |
-| 11:40 | 0h45 | Food | Lunch, Yanaka Ginza street food |
-| 12:25 | 0h20 | Transit | Walk, Yanaka Ginza -> hotel |
+| 07:30 | 0h45 | [Food](#meals-5) | Breakfast, self-catered |
+| 08:15 | 0h10 | [Transit](#transport-5) | Hotel -> Nezu Shrine, Tokyo Metro Chiyoda Line |
+| 08:25 | 0h45 | [Activity](#activities-5) | Nezu Shrine grounds (azalea garden fee is seasonal only, skipped today) |
+| 09:10 | 0h15 | [Transit](#transport-5) | Walk, Nezu Shrine -> Yanaka Ginza |
+| 09:25 | 1h00 | [Activity](#activities-5) | Yanaka Ginza shopping street - senbei, menchi-katsu, cat-themed shopfronts |
+| 10:25 | 0h10 | [Transit](#transport-5) | Walk, Yanaka Ginza -> Yanaka Cemetery |
+| 10:35 | 0h50 | [Activity](#activities-5) | Yanaka Cemetery walk (quiet, tree-lined) |
+| 11:25 | 0h15 | [Transit](#transport-5) | Walk, Yanaka Cemetery -> Yanaka Ginza (loop back for lunch) |
+| 11:40 | 0h45 | [Food](#meals-5) | Lunch, Yanaka Ginza street food |
+| 12:25 | 0h20 | [Transit](#transport-5) | Walk, Yanaka Ginza -> hotel |
 | 12:45 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 14:30 | 0h15 | Transit | Walk, hotel -> Kappabashi Kitchenware Street |
-| 14:45 | 1h00 | Activity | Plastic food-sample (shokuhin sampuru) workshop, Kappabashi |
-| 15:45 | 0h15 | Transit | Walk back to the hotel |
+| 14:30 | 0h15 | [Transit](#transport-5) | Walk, hotel -> Kappabashi Kitchenware Street |
+| 14:45 | 1h00 | [Activity](#activities-5) | Plastic food-sample (shokuhin sampuru) workshop, Kappabashi |
+| 15:45 | 0h15 | [Transit](#transport-5) | Walk back to the hotel |
 | 16:00 | 1h15 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
-| 17:15 | 0h15 | Transit | Walk, hotel -> Ueno Stn area (yakitori dinner) |
-| 17:30 | 1h00 | Food | Dinner - yakitori set, Torikizoku near Ueno Stn |
-| 18:30 | 0h15 | Transit | Walk back to the hotel |
+| 17:15 | 0h15 | [Transit](#transport-5) | Walk, hotel -> Ueno Stn area (yakitori dinner) |
+| 17:30 | 1h00 | [Food](#meals-5) | Dinner - yakitori set, Torikizoku near Ueno Stn |
+| 18:30 | 0h15 | [Transit](#transport-5) | Walk back to the hotel |
 | 18:45 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for Yanaka Cemetery** - uneven paved paths, not stroller terrain.
@@ -838,23 +838,23 @@ across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Food | Breakfast, self-catered (early start) |
-| 07:45 | 0h15 | Transit | Walk to Ueno Stn |
-| 08:00 | 1h00 | Transit | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) |
+| 07:00 | 0h45 | [Food](#meals-6) | Breakfast, self-catered (early start) |
+| 07:45 | 0h15 | [Transit](#transport-6) | Walk to Ueno Stn |
+| 08:00 | 1h00 | [Transit](#transport-6) | Ueno -> Kamakura, JR (Ueno Tokyo Line, direct) |
 | 09:00 | 0h10 | Admin | Buy Enoden "Noriorikun" 1-day pass, Kamakura Stn |
-| 09:10 | 0h15 | Transit | Kamakura -> Hase, Enoden |
-| 09:25 | 1h00 | Activity | Kotoku-in - the Great Buddha (Daibutsu) |
-| 10:25 | 0h35 | Activity | Hase-dera |
-| 11:00 | 0h30 | Activity | Walk down to Yuigahama Beach |
-| 11:30 | 0h20 | Transit | Walk to Yuigahama Stn, Enoden to Kamakura Stn |
-| 11:50 | 0h45 | Food | Lunch, Komachi-dori area, Kamakura |
-| 12:35 | 0h10 | Transit | Walk, Komachi-dori -> Tsurugaoka Hachimangu grounds |
+| 09:10 | 0h15 | [Transit](#transport-6) | Kamakura -> Hase, Enoden |
+| 09:25 | 1h00 | [Activity](#activities-6) | Kotoku-in - the Great Buddha (Daibutsu) |
+| 10:25 | 0h35 | [Activity](#activities-6) | Hase-dera |
+| 11:00 | 0h30 | [Activity](#activities-6) | Walk down to Yuigahama Beach |
+| 11:30 | 0h20 | [Transit](#transport-6) | Walk to Yuigahama Stn, Enoden to Kamakura Stn |
+| 11:50 | 0h45 | [Food](#meals-6) | Lunch, Komachi-dori area, Kamakura |
+| 12:35 | 0h10 | [Transit](#transport-6) | Walk, Komachi-dori -> Tsurugaoka Hachimangu grounds |
 | 12:45 | 1h45 | Rest | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) |
-| 14:30 | 0h10 | Transit | Walk, Tsurugaoka Hachimangu -> Kamakura Stn |
-| 14:40 | 1h00 | Transit | Kamakura -> Ueno, JR |
+| 14:30 | 0h10 | [Transit](#transport-6) | Walk, Tsurugaoka Hachimangu -> Kamakura Stn |
+| 14:40 | 1h00 | [Transit](#transport-6) | Kamakura -> Ueno, JR |
 | 15:40 | 1h00 | Rest | Downtime at the hotel |
 | 16:40 | - | Rest | Free time |
-| 17:30 | 1h00 | Food | Dinner - bento, bought at regular price (early evening is well before any hangaku markdown, so no discount applies) |
+| 17:30 | 1h00 | [Food](#meals-6) | Dinner - bento, bought at regular price (early evening is well before any hangaku markdown, so no discount applies) |
 | 18:30 | 0h45 | Admin | Bath, early night |
 
 - **Carrier only for Hase-dera** - the temple's terraced garden has steep stairs; the
@@ -930,21 +930,21 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:15 | 0h20 | Transit | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line |
-| 07:35 | 0h25 | Transit | Shimbashi -> Odaiba Kaihinkoen, Yurikamome |
-| 08:00 | 0h50 | Activity | Odaiba Marine Park beach + Rainbow Bridge view (quiet at this hour) |
-| 08:50 | 0h10 | Transit | Walk, Odaiba Marine Park -> DiverCity Tokyo Plaza |
-| 09:00 | 0h25 | Activity | Gundam Base Tokyo, DiverCity Tokyo Plaza 7F |
-| 09:25 | 0h20 | Transit | Odaiba Kaihinkoen -> Shijo-mae (Toyosu Market), Yurikamome |
-| 09:45 | 0h50 | Food | Breakfast - sushi/seafood grazing, Toyosu Market outer area |
-| 10:35 | 0h10 | Transit | Shijo-mae -> Shin-Toyosu, Yurikamome |
-| 10:45 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
-| 12:15 | 0h15 | Transit | Walk, teamLab Planets -> Toyosu food court/market area |
-| 12:30 | 0h45 | Food | Lunch, Toyosu food court/market area |
+| 07:15 | 0h20 | [Transit](#transport-7) | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line |
+| 07:35 | 0h25 | [Transit](#transport-7) | Shimbashi -> Odaiba Kaihinkoen, Yurikamome |
+| 08:00 | 0h50 | [Activity](#activities-7) | Odaiba Marine Park beach + Rainbow Bridge view (quiet at this hour) |
+| 08:50 | 0h10 | [Transit](#transport-7) | Walk, Odaiba Marine Park -> DiverCity Tokyo Plaza |
+| 09:00 | 0h25 | [Activity](#activities-7) | Gundam Base Tokyo, DiverCity Tokyo Plaza 7F |
+| 09:25 | 0h20 | [Transit](#transport-7) | Odaiba Kaihinkoen -> Shijo-mae (Toyosu Market), Yurikamome |
+| 09:45 | 0h50 | [Food](#meals-7) | Breakfast - sushi/seafood grazing, Toyosu Market outer area |
+| 10:35 | 0h10 | [Transit](#transport-7) | Shijo-mae -> Shin-Toyosu, Yurikamome |
+| 10:45 | 1h30 | [Activity](#activities-7) | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
+| 12:15 | 0h15 | [Transit](#transport-7) | Walk, teamLab Planets -> Toyosu food court/market area |
+| 12:30 | 0h45 | [Food](#meals-7) | Lunch, Toyosu food court/market area |
 | 13:15 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
-| 15:00 | 0h45 | Transit | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
+| 15:00 | 0h45 | [Transit](#transport-7) | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
 | 15:45 | 1h45 | Rest | Downtime at the hotel |
-| 17:30 | 1h00 | Food | Dinner, self-catered |
+| 17:30 | 1h00 | [Food](#meals-7) | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - Odaiba, Toyosu Market, and teamLab Planets are all flat, wide, and stroller-friendly
@@ -1026,22 +1026,22 @@ traditional garden.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Food | Breakfast, self-catered (early start) |
-| 07:45 | 0h15 | Transit | Walk to Ueno Stn |
-| 08:00 | 0h40 | Transit | Ueno -> Yokohama, JR Keihin-Tohoku Line |
-| 08:40 | 0h10 | Transit | Yokohama -> Minato Mirai, Minato Mirai Line |
-| 08:50 | 1h00 | Activity | Cup Noodles Museum, incl. My CUPNOODLES Factory hands-on |
-| 09:50 | 0h10 | Transit | Walk, Cup Noodles Museum -> Landmark Tower |
-| 10:00 | 0h35 | Activity | Landmark Tower Sky Garden observation deck |
-| 10:35 | 0h20 | Transit | Minato Mirai -> Motomachi-Chukagai (Chinatown), Minato Mirai Line |
-| 10:55 | 0h45 | Food | Lunch - nikuman and steamed bun grazing, Yokohama Chinatown |
-| 11:40 | 0h20 | Transit | Chinatown -> Sankeien, bus |
-| 12:00 | 1h30 | Activity | Sankeien Garden |
-| 13:30 | 0h20 | Transit | Sankeien -> Yokohama Stn, bus |
+| 07:00 | 0h45 | [Food](#meals-8) | Breakfast, self-catered (early start) |
+| 07:45 | 0h15 | [Transit](#transport-8) | Walk to Ueno Stn |
+| 08:00 | 0h40 | [Transit](#transport-8) | Ueno -> Yokohama, JR Keihin-Tohoku Line |
+| 08:40 | 0h10 | [Transit](#transport-8) | Yokohama -> Minato Mirai, Minato Mirai Line |
+| 08:50 | 1h00 | [Activity](#activities-8) | Cup Noodles Museum, incl. My CUPNOODLES Factory hands-on |
+| 09:50 | 0h10 | [Transit](#transport-8) | Walk, Cup Noodles Museum -> Landmark Tower |
+| 10:00 | 0h35 | [Activity](#activities-8) | Landmark Tower Sky Garden observation deck |
+| 10:35 | 0h20 | [Transit](#transport-8) | Minato Mirai -> Motomachi-Chukagai (Chinatown), Minato Mirai Line |
+| 10:55 | 0h45 | [Food](#meals-8) | Lunch - nikuman and steamed bun grazing, Yokohama Chinatown |
+| 11:40 | 0h20 | [Transit](#transport-8) | Chinatown -> Sankeien, bus |
+| 12:00 | 1h30 | [Activity](#activities-8) | Sankeien Garden |
+| 13:30 | 0h20 | [Transit](#transport-8) | Sankeien -> Yokohama Stn, bus |
 | 13:50 | 1h35 | Rest | Rest / infant naps near Yokohama Stn, continuing on the JR ride back |
-| 15:25 | 0h40 | Transit | Yokohama -> Ueno, JR Keihin-Tohoku Line |
+| 15:25 | 0h40 | [Transit](#transport-8) | Yokohama -> Ueno, JR Keihin-Tohoku Line |
 | 16:05 | 1h25 | Rest | Downtime at the hotel |
-| 17:30 | 1h00 | Food | Dinner, self-catered - fresh seafood/produce picked up in Yokohama |
+| 17:30 | 1h00 | [Food](#meals-8) | Dinner, self-catered - fresh seafood/produce picked up in Yokohama |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended at Sankeien** - some garden paths and bridges have steps; the
@@ -1113,20 +1113,20 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h40 | Food | Breakfast, self-catered - using up the last of the Day 1 pantry stock |
-| 08:10 | 0h25 | Transit | Ueno -> Shinjuku, JR/Tokyo Metro |
-| 08:35 | 1h45 | Activity | Shinjuku Gyoen (doubles as the midday rest - shaded lawns, low stimulation) |
-| 10:20 | 0h15 | Transit | Walk, Shinjuku Gyoen -> Ichiran, Shinjuku |
-| 10:35 | 0h45 | Food | Lunch, Ichiran ramen, Shinjuku |
-| 11:20 | 0h15 | Transit | Shinjuku -> Mitaka, JR Chuo Line |
-| 11:35 | 1h30 | Activity | Ghibli Museum (timed-entry slot) |
-| 13:05 | 0h05 | Transit | Walk, Ghibli Museum -> Inokashira Park (adjacent grounds) |
-| 13:10 | 0h35 | Activity | Inokashira Park + small zoo/aquarium corner, adjacent to the museum |
-| 13:45 | 0h45 | Transit | Mitaka -> Ueno, JR Chuo Line + transfer |
+| 07:30 | 0h40 | [Food](#meals-9) | Breakfast, self-catered - using up the last of the Day 1 pantry stock |
+| 08:10 | 0h25 | [Transit](#transport-9) | Ueno -> Shinjuku, JR/Tokyo Metro |
+| 08:35 | 1h45 | [Activity](#activities-9) | Shinjuku Gyoen (doubles as the midday rest - shaded lawns, low stimulation) |
+| 10:20 | 0h15 | [Transit](#transport-9) | Walk, Shinjuku Gyoen -> Ichiran, Shinjuku |
+| 10:35 | 0h45 | [Food](#meals-9) | Lunch, Ichiran ramen, Shinjuku |
+| 11:20 | 0h15 | [Transit](#transport-9) | Shinjuku -> Mitaka, JR Chuo Line |
+| 11:35 | 1h30 | [Activity](#activities-9) | Ghibli Museum (timed-entry slot) |
+| 13:05 | 0h05 | [Transit](#transport-9) | Walk, Ghibli Museum -> Inokashira Park (adjacent grounds) |
+| 13:10 | 0h35 | [Activity](#activities-9) | Inokashira Park + small zoo/aquarium corner, adjacent to the museum |
+| 13:45 | 0h45 | [Transit](#transport-9) | Mitaka -> Ueno, JR Chuo Line + transfer |
 | 14:30 | 1h00 | Rest | Downtime at the hotel |
 | 15:30 | 1h30 | Admin | Light packing prep for tomorrow's move to Kawaguchiko |
 | 17:00 | 0h30 | Rest | Free time |
-| 17:30 | 1h00 | Food | Dinner, self-catered - last Ueno meal |
+| 17:30 | 1h00 | [Food](#meals-9) | Dinner, self-catered - last Ueno meal |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended inside the Ghibli Museum** - the building has a spiral staircase
@@ -1243,28 +1243,28 @@ from MASTER-BRIEF and is not flexed.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Food | Breakfast at Livemax (use up kitchenette stock) |
+| 07:00 | 0h45 | [Food](#meals-10) | Breakfast at Livemax (use up kitchenette stock) |
 | 07:45 | 0h15 | Admin | Final pack, check out of Hotel Livemax Higashi-Ueno |
-| 08:00 | 0h35 | Transit | Iriya/Ueno area → Shinjuku Stn, JR Yamanote Line (stroller + luggage, allow real time) |
-| 08:35 | 0h10 | Transit | Walk, Shinjuku Stn → Busta Shinjuku terminal |
-| 08:45 | 0h15 | Food | Buy eki-ben lunch at Busta Shinjuku food hall/kiosks |
+| 08:00 | 0h35 | [Transit](#transport-10) | Iriya/Ueno area → Shinjuku Stn, JR Yamanote Line (stroller + luggage, allow real time) |
+| 08:35 | 0h10 | [Transit](#transport-10) | Walk, Shinjuku Stn → Busta Shinjuku terminal |
+| 08:45 | 0h15 | [Food](#meals-10) | Buy eki-ben lunch at Busta Shinjuku food hall/kiosks |
 | 09:00 | 0h50 | Admin | Reserved-seat check-in and boarding queue at Busta Shinjuku (bus boards early for luggage) |
-| 09:50 | 1h45 | Transit | Shinjuku (Busta) → Kawaguchiko Stn, highway bus (Fujikyu/Keio, reserved seats) - lunch eaten on board |
-| 11:35 | 0h15 | Transit | Walk, Kawaguchiko Stn → K's House Mt. Fuji (~15 min, near Ogi bus stop) |
+| 09:50 | 1h45 | [Transit](#transport-10) | Shinjuku (Busta) → Kawaguchiko Stn, highway bus (Fujikyu/Keio, reserved seats) - lunch eaten on board |
+| 11:35 | 0h15 | [Transit](#transport-10) | Walk, Kawaguchiko Stn → K's House Mt. Fuji (~15 min, near Ogi bus stop) |
 | 11:50 | 0h20 | Admin | Check in, settle bags |
 | 12:10 | 1h30 | Rest | **Midday rest block** - nap/feed, unpack, warm up |
-| 13:40 | 0h15 | Transit | Walk, K's House → Kawaguchiko Stn |
-| 13:55 | 0h15 | Transit | Kawaguchiko Stn → Shimoyoshida Stn, Fuji Kyuko Line |
-| 14:10 | 0h10 | Transit | Walk, Shimoyoshida Stn → Arakurayama Sengen Park entrance |
-| 14:20 | 1h10 | Activity | Chureito Pagoda - climb, viewpoint, descend (carrier-only) |
-| 15:30 | 0h10 | Transit | Walk, park entrance → Shimoyoshida Stn |
-| 15:40 | 0h15 | Transit | Shimoyoshida Stn → Kawaguchiko Stn, Fuji Kyuko Line |
-| 15:55 | 0h15 | Transit | Walk, Kawaguchiko Stn → [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) (545-3 Funatsu) |
-| 16:10 | 0h35 | Food | Grocery run at [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) (food section open 9:00-21:00), stock the shared kitchen |
-| 16:45 | 0h20 | Transit | Walk, [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) → K's House |
+| 13:40 | 0h15 | [Transit](#transport-10) | Walk, K's House → Kawaguchiko Stn |
+| 13:55 | 0h15 | [Transit](#transport-10) | Kawaguchiko Stn → Shimoyoshida Stn, Fuji Kyuko Line |
+| 14:10 | 0h10 | [Transit](#transport-10) | Walk, Shimoyoshida Stn → Arakurayama Sengen Park entrance |
+| 14:20 | 1h10 | [Activity](#activities-10) | Chureito Pagoda - climb, viewpoint, descend (carrier-only) |
+| 15:30 | 0h10 | [Transit](#transport-10) | Walk, park entrance → Shimoyoshida Stn |
+| 15:40 | 0h15 | [Transit](#transport-10) | Shimoyoshida Stn → Kawaguchiko Stn, Fuji Kyuko Line |
+| 15:55 | 0h15 | [Transit](#transport-10) | Walk, Kawaguchiko Stn → [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) (545-3 Funatsu) |
+| 16:10 | 0h35 | [Food](#meals-10) | Grocery run at [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) (food section open 9:00-21:00), stock the shared kitchen |
+| 16:45 | 0h20 | [Transit](#transport-10) | Walk, [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) → K's House |
 | 17:05 | 0h25 | Admin | Free time / laundry (K's House washer-dryer, ¥500/load - trip-level line, not in day total) |
-| 17:30 | 1h00 | Food | Cook dinner in shared guest kitchen |
-| 18:30 | 0h30 | Food | Dinner |
+| 17:30 | 1h00 | [Food](#meals-10) | Cook dinner in shared guest kitchen |
+| 18:30 | 0h30 | [Food](#meals-10) | Dinner |
 | 19:00 | 1h00 | Rest | Bath, warm layers on for the infants (frost risk overnight), wind down |
 
 **On Chureito Pagoda:** the pagoda viewing platform sits above 398 stone steps; a longer, gentler zig-zag slope path runs alongside them as an alternative, but it is still an uphill climb with no ramp or elevator anywhere on the route - both options are carrier-only, not stroller-compatible, the whole way up. The practical plan: one adult carries one infant up (by either route), while the other two adults, the stroller, and the second infant wait at the flat lower shrine grounds (Arakura Sengen Shrine) or take a turn on a later visit. It is worth the effort for one reason - the five-story pagoda framed against Mt. Fuji from the top is the single most photographed view in the Fuji Five Lakes region, and arguably in Japan. The Kawaguchiko Music Forest Museum, a music-box museum on the north shore, isn't part of this day: fitting in the stair climb plus the two extra train rides Chureito needs takes its own slot rather than working as an add-on.
@@ -1338,24 +1338,24 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Food | Breakfast in the shared kitchen |
-| 07:30 | 0h20 | Transit | Walk/local bus to the Fuji Five Lakes sightseeing bus stop; buy the 2-day Red/Green/Blue Line pass |
-| 07:50 | 0h25 | Transit | Kawaguchiko Stn → Oishi Park, Fuji Five Lakes Red Line bus |
-| 08:15 | 1h00 | Activity | Oishi Park - north-shore lake + Fuji views while the morning is still clear (best window before afternoon cloud) |
-| 09:15 | 0h15 | Transit | Red Line bus to the ropeway base station |
-| 09:30 | 1h00 | Activity | Kawaguchiko Tenjozan Panoramic Ropeway round trip + summit viewpoint |
-| 10:30 | 0h20 | Transit | Red Line bus to the sightseeing-cruise pier |
-| 10:50 | 0h40 | Activity | Lake Kawaguchi sightseeing cruise (~20 min ride + boarding) |
-| 11:30 | 0h30 | Transit | Red Line bus back toward town |
-| 12:00 | 1h00 | Food | Lunch - houtou noodles (Yamanashi regional specialty) |
-| 13:00 | 0h15 | Transit | Walk, houtou restaurant → K's House |
+| 07:00 | 0h30 | [Food](#meals-11) | Breakfast in the shared kitchen |
+| 07:30 | 0h20 | [Transit](#transport-11) | Walk/local bus to the Fuji Five Lakes sightseeing bus stop; buy the 2-day Red/Green/Blue Line pass |
+| 07:50 | 0h25 | [Transit](#transport-11) | Kawaguchiko Stn → Oishi Park, Fuji Five Lakes Red Line bus |
+| 08:15 | 1h00 | [Activity](#activities-11) | Oishi Park - north-shore lake + Fuji views while the morning is still clear (best window before afternoon cloud) |
+| 09:15 | 0h15 | [Transit](#transport-11) | Red Line bus to the ropeway base station |
+| 09:30 | 1h00 | [Activity](#activities-11) | Kawaguchiko Tenjozan Panoramic Ropeway round trip + summit viewpoint |
+| 10:30 | 0h20 | [Transit](#transport-11) | Red Line bus to the sightseeing-cruise pier |
+| 10:50 | 0h40 | [Activity](#activities-11) | Lake Kawaguchi sightseeing cruise (~20 min ride + boarding) |
+| 11:30 | 0h30 | [Transit](#transport-11) | Red Line bus back toward town |
+| 12:00 | 1h00 | [Food](#meals-11) | Lunch - houtou noodles (Yamanashi regional specialty) |
+| 13:00 | 0h15 | [Transit](#transport-11) | Walk, houtou restaurant → K's House |
 | 13:15 | 1h30 | Rest | **Midday rest block** back at K's House |
-| 14:45 | 0h35 | Transit | Walk to the bus stop + Red Line bus, K's House → Kubota Itchiku Art Museum (~21 min ride, covered by the 2-day pass) |
-| 15:20 | 1h15 | Activity | Kubota Itchiku Art Museum - kimono art + garden, a good indoor-leaning stop for the cloudier afternoon |
-| 16:35 | 0h30 | Transit | Red Line bus back to K's House |
+| 14:45 | 0h35 | [Transit](#transport-11) | Walk to the bus stop + Red Line bus, K's House → Kubota Itchiku Art Museum (~21 min ride, covered by the 2-day pass) |
+| 15:20 | 1h15 | [Activity](#activities-11) | Kubota Itchiku Art Museum - kimono art + garden, a good indoor-leaning stop for the cloudier afternoon |
+| 16:35 | 0h30 | [Transit](#transport-11) | Red Line bus back to K's House |
 | 17:05 | 0h30 | Rest | Free time, infant wind-down |
-| 17:35 | 0h45 | Food | Cook dinner in the shared kitchen |
-| 18:20 | 0h30 | Food | Dinner |
+| 17:35 | 0h45 | [Food](#meals-11) | Cook dinner in the shared kitchen |
+| 18:20 | 0h30 | [Food](#meals-11) | Dinner |
 | 18:50 | 1h00 | Rest | Bath, bedtime routine, warm layers for the night |
 
 **On foliage:** the Momiji Kairo maple corridor along this north shore does color and gets a night illumination in autumn, but that illumination period typically runs from roughly November 1 through early December - it has **not** started during this October 17-19 stay. At ~830m elevation the maples here are ahead of the lowland cities, but expect green-to-just-turning color today, not the full red corridor; the daytime walk is still worthwhile for the lake/Fuji views regardless.
@@ -1423,28 +1423,28 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Food | Breakfast in the shared kitchen |
-| 07:30 | 0h15 | Transit | Walk, K's House → Kawaguchiko Stn bus terminal |
-| 07:45 | 0h30 | Transit | Kawaguchiko Stn → Oshino Hakkai, Fuji Five Lakes Green Line bus |
-| 08:15 | 1h45 | Activity | Oshino Hakkai - walk the spring-fed pond village (free), visit one paid garden pond (Nigori-ike) |
-| 10:00 | 0h45 | Food | Lunch - soba/udon at a shop within Oshino Hakkai |
-| 10:45 | 0h30 | Transit | Green Line bus back toward Kawaguchiko |
-| 11:15 | 0h15 | Transit | Walk, Kawaguchiko Stn → K's House |
+| 07:00 | 0h30 | [Food](#meals-12) | Breakfast in the shared kitchen |
+| 07:30 | 0h15 | [Transit](#transport-12) | Walk, K's House → Kawaguchiko Stn bus terminal |
+| 07:45 | 0h30 | [Transit](#transport-12) | Kawaguchiko Stn → Oshino Hakkai, Fuji Five Lakes Green Line bus |
+| 08:15 | 1h45 | [Activity](#activities-12) | Oshino Hakkai - walk the spring-fed pond village (free), visit one paid garden pond (Nigori-ike) |
+| 10:00 | 0h45 | [Food](#meals-12) | Lunch - soba/udon at a shop within Oshino Hakkai |
+| 10:45 | 0h30 | [Transit](#transport-12) | Green Line bus back toward Kawaguchiko |
+| 11:15 | 0h15 | [Transit](#transport-12) | Walk, Kawaguchiko Stn → K's House |
 | 11:30 | 1h45 | Rest | **Midday rest block** back at K's House - the last use of the room before checkout |
 | 13:15 | 0h20 | Admin | Pack up, settle the bill, check out of K's House Mt. Fuji; leave luggage in their storage room for same-day pickup |
-| 13:35 | 0h15 | Transit | Walk, K's House → Kawaguchiko Stn |
-| 13:50 | 0h25 | Transit | Kawaguchiko Stn → Saiko Iyashi-no-Sato Nenba, Green Line bus |
-| 14:15 | 1h00 | Activity | Saiko Iyashi-no-Sato Nenba - thatched-roof village, craft workshops, flat and easy underfoot |
-| 15:15 | 0h25 | Transit | Green Line bus back to Kawaguchiko Stn |
-| 15:40 | 0h15 | Transit | Walk, Kawaguchiko Stn → K's House (collect luggage) |
+| 13:35 | 0h15 | [Transit](#transport-12) | Walk, K's House → Kawaguchiko Stn |
+| 13:50 | 0h25 | [Transit](#transport-12) | Kawaguchiko Stn → Saiko Iyashi-no-Sato Nenba, Green Line bus |
+| 14:15 | 1h00 | [Activity](#activities-12) | Saiko Iyashi-no-Sato Nenba - thatched-roof village, craft workshops, flat and easy underfoot |
+| 15:15 | 0h25 | [Transit](#transport-12) | Green Line bus back to Kawaguchiko Stn |
+| 15:40 | 0h15 | [Transit](#transport-12) | Walk, Kawaguchiko Stn → K's House (collect luggage) |
 | 15:55 | 0h10 | Admin | Collect luggage from storage, quick goodbye to K's House staff |
-| 16:05 | 0h20 | Transit | Walk, K's House → Kawaguchiko Stn bus terminal, with luggage and stroller (slower loaded than empty-handed) |
-| 16:25 | 0h15 | Transit | Kawaguchiko Stn → Lakeland Hotel Mizunosato, the ryokan's free shuttle (call ahead from the station; runs ~14:30-20:00) |
+| 16:05 | 0h20 | [Transit](#transport-12) | Walk, K's House → Kawaguchiko Stn bus terminal, with luggage and stroller (slower loaded than empty-handed) |
+| 16:25 | 0h15 | [Transit](#transport-12) | Kawaguchiko Stn → Lakeland Hotel Mizunosato, the ryokan's free shuttle (call ahead from the station; runs ~14:30-20:00) |
 | 16:40 | 0h20 | Admin | Check in, settle into the tatami room |
 | 17:00 | 0h30 | Rest | Free time, warm layers, infants wind down before the bath |
-| 17:30 | 0h40 | Activity | Private kashikiri family bath, whole party incl. both infants |
+| 17:30 | 0h40 | [Activity](#activities-12) | Private kashikiri family bath, whole party incl. both infants |
 | 18:10 | 0h20 | Admin | Change out of yukata, dry off, settle infants |
-| 18:30 | 1h00 | Food | Kaiseki dinner |
+| 18:30 | 1h00 | [Food](#meals-12) | Kaiseki dinner |
 | 19:30 | 0h45 | Rest | Futon laid out, bath/bedtime routine for the infants |
 
 The luggage retrieval is a genuine round trip: K's House is a real ~15-minute walk from the station each way, not a five-minute errand, so it gets its own two Transit rows rather than being folded into a single stop. The evening at the ryokan (private bath, kaiseki dinner, futon) is time spent at the lodging, not "out" of it.
@@ -1520,24 +1520,24 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Food | Breakfast - Japanese set at Lakeland Hotel Mizunosato, the last ryokan meal (booked with last night's dinner) |
+| 07:00 | 0h30 | [Food](#meals-13) | Breakfast - Japanese set at Lakeland Hotel Mizunosato, the last ryokan meal (booked with last night's dinner) |
 | 07:30 | 0h30 | Admin | Pack up, settle the bill, check out of Lakeland Hotel Mizunosato |
-| 08:00 | 0h15 | Transit | Lakeland Hotel Mizunosato → Kawaguchiko Stn bus terminal, the ryokan's morning shuttle bus |
+| 08:00 | 0h15 | [Transit](#transport-13) | Lakeland Hotel Mizunosato → Kawaguchiko Stn bus terminal, the ryokan's morning shuttle bus |
 | 08:15 | 0h30 | Admin | Reserved-seat check-in, board |
-| 08:45 | 1h25 | Transit | Kawaguchiko → Mishima Stn, Mishima-Kawaguchiko Liner (Fujikyu, all seats reserved) |
-| 10:10 | 0h15 | Food | Buy eki-ben lunch at Mishima Stn |
+| 08:45 | 1h25 | [Transit](#transport-13) | Kawaguchiko → Mishima Stn, Mishima-Kawaguchiko Liner (Fujikyu, all seats reserved) |
+| 10:10 | 0h15 | [Food](#meals-13) | Buy eki-ben lunch at Mishima Stn |
 | 10:25 | 0h20 | Admin | Transfer to the shinkansen platform (buffer within the recommended 20-30 min) |
-| 10:45 | 1h50 | Transit | Mishima → Kyoto, Tokaido Shinkansen Hikari, unreserved - lunch eaten on board |
+| 10:45 | 1h50 | [Transit](#transport-13) | Mishima → Kyoto, Tokaido Shinkansen Hikari, unreserved - lunch eaten on board |
 | 12:35 | 0h25 | Admin | Arrive Kyoto Stn, find the bus to Shijo-Omiya |
-| 13:00 | 0h20 | Transit | Kyoto Stn → Shijo-Omiya, Kyoto City Bus |
-| 13:20 | 0h05 | Transit | Walk, Shijo-Omiya bus stop → Toyoko Inn Kyoto Shijo-Omiya |
+| 13:00 | 0h20 | [Transit](#transport-13) | Kyoto Stn → Shijo-Omiya, Kyoto City Bus |
+| 13:20 | 0h05 | [Transit](#transport-13) | Walk, Shijo-Omiya bus stop → Toyoko Inn Kyoto Shijo-Omiya |
 | 13:25 | 0h15 | Admin | Check in |
 | 13:40 | 1h50 | Rest | **Midday rest block** - infants nap after a long transit morning |
-| 15:30 | 1h00 | Activity | Gentle neighbourhood walk near Shijo-Omiya/Omiya Stn to get oriented - free |
+| 15:30 | 1h00 | [Activity](#activities-13) | Gentle neighbourhood walk near Shijo-Omiya/Omiya Stn to get oriented - free |
 | 16:30 | 1h00 | Rest | Free time at the hotel |
-| 17:30 | 0h10 | Transit | Walk, Toyoko Inn → dinner spot near Shijo-Omiya |
-| 17:40 | 0h50 | Food | Dinner - cheap chain near Shijo-Omiya; pick up a few breakfast snacks on the way back |
-| 18:30 | 0h10 | Transit | Walk, dinner spot → Toyoko Inn |
+| 17:30 | 0h10 | [Transit](#transport-13) | Walk, Toyoko Inn → dinner spot near Shijo-Omiya |
+| 17:40 | 0h50 | [Food](#meals-13) | Dinner - cheap chain near Shijo-Omiya; pick up a few breakfast snacks on the way back |
+| 18:30 | 0h10 | [Transit](#transport-13) | Walk, dinner spot → Toyoko Inn |
 | 18:40 | 0h30 | Rest | Settle in, bath, bedtime routine |
 
 This is the itinerary's one full intercity transfer day: the fixed bus + shinkansen leg alone is ~4h before any buffers, exactly as scoped in the brief ("Total travel day ~4 hours plus buffers"). No sightseeing exertion is stacked on top of this; the neighbourhood walk after the rest block is optional and easy to shorten.
@@ -1630,23 +1630,23 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast - Toyoko Inn buffet |
-| 08:15 | 0h20 | Transit | Walk to Shijo-Omiya bus stop |
-| 08:35 | 0h20 | Transit | City bus - Shijo-Omiya → Kyoto Station |
-| 08:55 | 0h10 | Transit | JR Nara Line - Kyoto → Inari (1 stop) |
-| 09:05 | 0h15 | Activity | Approach street - first torii, omamori stall browse |
-| 09:20 | 1h40 | Activity | Fushimi Inari Taisha - Senbon Torii tunnel loop to the Yotsutsuji lookout and back |
-| 11:00 | 0h10 | Transit | JR Nara Line - Inari → Kyoto |
-| 11:10 | 0h15 | Transit | Walk - Kyoto Station → To-ji |
+| 07:30 | 0h45 | [Food](#meals-14) | Breakfast - Toyoko Inn buffet |
+| 08:15 | 0h20 | [Transit](#transport-14) | Walk to Shijo-Omiya bus stop |
+| 08:35 | 0h20 | [Transit](#transport-14) | City bus - Shijo-Omiya → Kyoto Station |
+| 08:55 | 0h10 | [Transit](#transport-14) | JR Nara Line - Kyoto → Inari (1 stop) |
+| 09:05 | 0h15 | [Activity](#activities-14) | Approach street - first torii, omamori stall browse |
+| 09:20 | 1h40 | [Activity](#activities-14) | Fushimi Inari Taisha - Senbon Torii tunnel loop to the Yotsutsuji lookout and back |
+| 11:00 | 0h10 | [Transit](#transport-14) | JR Nara Line - Inari → Kyoto |
+| 11:10 | 0h15 | [Transit](#transport-14) | Walk - Kyoto Station → To-ji |
 | 11:25 | 0h55 | Food/Activity | Kobo-ichi temple market at To-ji - browse the stalls, lunch from the yatai food stalls |
-| 12:20 | 0h15 | Transit | Walk - To-ji → Kyoto Station |
-| 12:35 | 0h20 | Transit | City bus - Kyoto Station → Shijo-Omiya |
+| 12:20 | 0h15 | [Transit](#transport-14) | Walk - To-ji → Kyoto Station |
+| 12:35 | 0h20 | [Transit](#transport-14) | City bus - Kyoto Station → Shijo-Omiya |
 | 12:55 | 1h40 | Rest | Midday rest - hotel room, both infants nap |
-| 14:35 | 0h30 | Transit | Walk - Shijo-Omiya → Nishiki Market |
-| 15:05 | 1h20 | Activity | Nishiki Market - food-stall browsing, tastings, Daimaru depachika basement |
-| 16:25 | 0h30 | Transit | Walk back to hotel |
+| 14:35 | 0h30 | [Transit](#transport-14) | Walk - Shijo-Omiya → Nishiki Market |
+| 15:05 | 1h20 | [Activity](#activities-14) | Nishiki Market - food-stall browsing, tastings, Daimaru depachika basement |
+| 16:25 | 0h30 | [Transit](#transport-14) | Walk back to hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
-| 17:55 | 0h45 | Food | Dinner - Nishiki/depachika finds, eaten in the room |
+| 17:55 | 0h45 | [Food](#meals-14) | Dinner - Nishiki/depachika finds, eaten in the room |
 
 - **Fushimi Inari note:** the Senbon Torii loop to the Yotsutsuji lookout is paved and stroller-workable. The full summit circuit (another 1.5-2h beyond Yotsutsuji) is stairs the whole way and is **carrier-only** - skipped today with two infants. Anime-fan bonus, free: this shrine and the surrounding Fushimi district are the real-world setting of *Inari, Konkon, Koi Iroha*, an anime about a girl who lives beside the shrine - worth a mention while walking the Senbon Torii, no detour needed.
 - **Kobo-ichi fit-check, stated honestly:** To-ji's monthly market falls on the 21st every month, which is today, and it sits a 15-minute walk south of Kyoto Station - directly on the JR-to-bus transfer this day already makes on the way back from Fushimi Inari. Swapping the inari-zushi shop lunch for a market lunch adds about 40 minutes net to the pre-rest stretch of the day (walk to the temple, browse, eat, walk back), which would push the day past this itinerary's ~7h active cap if nothing else moved. **What gives: Nishiki Market's evening browse is trimmed from 2h00 to 1h20.** The family will already have had a full stall-food lunch and market browse at To-ji by then, so a shorter Nishiki visit (still enough for a look at Daimaru's depachika and a stall or two for dinner ingredients) is the honest trade, not a loss - it keeps the day at ~7h00 active, right at the cap rather than over it.
@@ -1717,25 +1717,25 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast - Toyoko Inn buffet |
-| 08:15 | 0h15 | Transit | Walk to Hankyu Omiya Station |
-| 08:30 | 0h10 | Transit | Hankyu Kyoto Line - Omiya → Karasuma |
-| 08:40 | 0h15 | Transit | Subway Karasuma Line - Shijo → Marutamachi |
-| 08:55 | 0h35 | Activity | Walk + free stroll inside Kyoto Gyoen toward the parade route |
-| 09:30 | 1h30 | Activity | Claim a curbside spot inside Kyoto Gyoen and watch the Jidai Matsuri procession depart |
-| 11:00 | 0h30 | Food | Lunch - bento near Kyoto Gyoen |
-| 11:30 | 0h45 | Transit | Subway + bus back toward the hotel |
+| 07:30 | 0h45 | [Food](#meals-15) | Breakfast - Toyoko Inn buffet |
+| 08:15 | 0h15 | [Transit](#transport-15) | Walk to Hankyu Omiya Station |
+| 08:30 | 0h10 | [Transit](#transport-15) | Hankyu Kyoto Line - Omiya → Karasuma |
+| 08:40 | 0h15 | [Transit](#transport-15) | Subway Karasuma Line - Shijo → Marutamachi |
+| 08:55 | 0h35 | [Activity](#activities-15) | Walk + free stroll inside Kyoto Gyoen toward the parade route |
+| 09:30 | 1h30 | [Activity](#activities-15) | Claim a curbside spot inside Kyoto Gyoen and watch the Jidai Matsuri procession depart |
+| 11:00 | 0h30 | [Food](#meals-15) | Lunch - bento near Kyoto Gyoen |
+| 11:30 | 0h45 | [Transit](#transport-15) | Subway + bus back toward the hotel |
 | 12:15 | 1h45 | Rest | Midday rest - hotel |
-| 14:00 | 0h15 | Transit | Walk to Hankyu Omiya Station |
-| 14:15 | 0h10 | Transit | Hankyu Kyoto Line - Omiya → Karasuma |
-| 14:25 | 0h20 | Transit | Subway Karasuma Line → Karasuma-Oike, transfer to Tozai Line → Higashiyama |
-| 14:45 | 0h10 | Transit | Walk, Higashiyama Stn → Heian Jingu |
-| 14:55 | 0h35 | Activity | Heian Jingu - Shin-en Garden stroll (quiet by this hour, after the parade crowd has moved on) |
-| 15:30 | 0h50 | Activity | Philosopher's Path - canal-side walk, Nanzenji toward Eikan-do |
-| 16:20 | 0h30 | Transit | Taxi back to Shijo-Omiya (two tired infants after a long event day) |
+| 14:00 | 0h15 | [Transit](#transport-15) | Walk to Hankyu Omiya Station |
+| 14:15 | 0h10 | [Transit](#transport-15) | Hankyu Kyoto Line - Omiya → Karasuma |
+| 14:25 | 0h20 | [Transit](#transport-15) | Subway Karasuma Line → Karasuma-Oike, transfer to Tozai Line → Higashiyama |
+| 14:45 | 0h10 | [Transit](#transport-15) | Walk, Higashiyama Stn → Heian Jingu |
+| 14:55 | 0h35 | [Activity](#activities-15) | Heian Jingu - Shin-en Garden stroll (quiet by this hour, after the parade crowd has moved on) |
+| 15:30 | 0h50 | [Activity](#activities-15) | Philosopher's Path - canal-side walk, Nanzenji toward Eikan-do |
+| 16:20 | 0h30 | [Transit](#transport-15) | Taxi back to Shijo-Omiya (two tired infants after a long event day) |
 | 16:50 | 1h30 | Rest | Downtime / bath at hotel |
-| 18:20 | 0h10 | Transit | Walk to the diner |
-| 18:30 | 0h45 | Food | Dinner - casual diner near Shijo-Omiya |
+| 18:20 | 0h10 | [Transit](#transport-15) | Walk to the diner |
+| 18:30 | 0h45 | [Food](#meals-15) | Dinner - casual diner near Shijo-Omiya |
 
 - **Free viewing spot:** inside Kyoto Gyoen itself, near where the procession assembles and departs (not downtown on Oike-dori or Kawaramachi-dori). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. We watch the parade's opening only (roughly 60-90 minutes of a 2.5-hour, 2km procession) rather than following it to Heian Jingu, which keeps the day inside the infant-friendly activity cap. No paid grandstand seats are bought (¥4,500-6,500/adult, skipped).
 - Reaching Higashiyama/Okazaki in the afternoon uses the same walk-to-Hankyu, Hankyu-to-Karasuma, Karasuma-to-Tozai chain the morning already uses to reach Marutamachi, plus a walk from Higashiyama Station up to Heian Jingu. Rest blocks: 1h45 mandatory + 1h30 secondary downtime before the evening dinner trip.
@@ -1806,27 +1806,27 @@ Infants ride free on the subway, Hankyu, and city bus legs. The family returns t
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast - Toyoko Inn buffet |
-| 08:15 | 0h15 | Transit | Walk to Hankyu Omiya Station |
-| 08:30 | 0h20 | Transit | Hankyu Kyoto Line/Arashiyama Line - Omiya → Katsura → Arashiyama |
-| 08:50 | 0h10 | Transit | Walk to the bamboo grove |
-| 09:00 | 0h40 | Activity | Arashiyama Bamboo Grove walk |
-| 09:40 | 0h50 | Activity | Tenryu-ji - temple garden |
-| 10:30 | 0h10 | Transit | Walk, Tenryu-ji → Togetsukyo Bridge |
-| 10:40 | 0h30 | Activity | Togetsukyo Bridge + riverside walk |
-| 11:10 | 0h45 | Food | Lunch - yudofu teishoku near Arashiyama |
-| 11:55 | 0h15 | Transit | Walk to Okochi Sanso Garden |
-| 12:10 | 0h45 | Activity | Okochi Sanso Garden - hillside villa garden, includes matcha and a sweet |
-| 12:55 | 0h10 | Transit | Walk, Okochi Sanso → Kameyama Park |
+| 07:30 | 0h45 | [Food](#meals-16) | Breakfast - Toyoko Inn buffet |
+| 08:15 | 0h15 | [Transit](#transport-16) | Walk to Hankyu Omiya Station |
+| 08:30 | 0h20 | [Transit](#transport-16) | Hankyu Kyoto Line/Arashiyama Line - Omiya → Katsura → Arashiyama |
+| 08:50 | 0h10 | [Transit](#transport-16) | Walk to the bamboo grove |
+| 09:00 | 0h40 | [Activity](#activities-16) | Arashiyama Bamboo Grove walk |
+| 09:40 | 0h50 | [Activity](#activities-16) | Tenryu-ji - temple garden |
+| 10:30 | 0h10 | [Transit](#transport-16) | Walk, Tenryu-ji → Togetsukyo Bridge |
+| 10:40 | 0h30 | [Activity](#activities-16) | Togetsukyo Bridge + riverside walk |
+| 11:10 | 0h45 | [Food](#meals-16) | Lunch - yudofu teishoku near Arashiyama |
+| 11:55 | 0h15 | [Transit](#transport-16) | Walk to Okochi Sanso Garden |
+| 12:10 | 0h45 | [Activity](#activities-16) | Okochi Sanso Garden - hillside villa garden, includes matcha and a sweet |
+| 12:55 | 0h10 | [Transit](#transport-16) | Walk, Okochi Sanso → Kameyama Park |
 | 13:05 | 1h45 | Rest | Midday rest - Kameyama Park, quiet riverside corner |
-| 14:50 | 0h15 | Transit | Walk to Torokko Saga Station |
-| 15:05 | 0h25 | Activity | Sagano Romantic Train (Torokko) - Saga → Kameoka, Hozugawa gorge |
-| 15:30 | 0h15 | Transit | Walk to JR Kameoto Station |
-| 15:45 | 0h10 | Transit | JR San-in Line - Kameoto → Saga-Arashiyama |
-| 15:55 | 0h35 | Transit | Walk + Hankyu - Arashiyama → Katsura → Omiya |
+| 14:50 | 0h15 | [Transit](#transport-16) | Walk to Torokko Saga Station |
+| 15:05 | 0h25 | [Activity](#activities-16) | Sagano Romantic Train (Torokko) - Saga → Kameoka, Hozugawa gorge |
+| 15:30 | 0h15 | [Transit](#transport-16) | Walk to JR Kameoto Station |
+| 15:45 | 0h10 | [Transit](#transport-16) | JR San-in Line - Kameoto → Saga-Arashiyama |
+| 15:55 | 0h35 | [Transit](#transport-16) | Walk + Hankyu - Arashiyama → Katsura → Omiya |
 | 16:30 | 1h20 | Rest | Downtime at hotel |
-| 17:50 | 0h10 | Transit | Walk to the dinner spot |
-| 18:00 | 0h40 | Food | Dinner - casual gyudon/izakaya near Shijo-Omiya |
+| 17:50 | 0h10 | [Transit](#transport-16) | Walk to the dinner spot |
+| 18:00 | 0h40 | [Food](#meals-16) | Dinner - casual gyudon/izakaya near Shijo-Omiya |
 
 - **Monkey park excluded:** Iwatayama Monkey Park sits above Arashiyama at the top of a steep 20-minute uphill climb with no stroller access. Skipped today; not a fit for two infants.
 - Active out-of-lodging time: about 7h20, plus a 1h45 rest block. This runs about 20 minutes over the ~7h guideline, spread across a full Arashiyama day plus the walk to dinner.
@@ -1901,24 +1901,24 @@ Gojo shop to the Kiyomizu approach. The full trade-off is on Day [23](#day-23---
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast - Toyoko Inn buffet |
-| 08:15 | 0h15 | Transit | Walk to Shijo-Omiya bus stop |
-| 08:30 | 0h25 | Transit | City bus - Shijo-Omiya → Kiyomizu-michi |
-| 09:35 | 0h15 | Activity | Walk up Sannenzaka/Ninenzaka toward Kiyomizu-dera |
-| 09:50 | 0h45 | Activity | Kiyomizu-dera - main hall and grounds |
-| 10:35 | 0h40 | Activity | Walk back down through the Higashiyama lanes |
-| 11:15 | 0h40 | Food | Lunch - soba + a matcha treat, Higashiyama lanes |
-| 12:15 | 0h15 | Transit | Walk to Maruyama Park |
+| 07:30 | 0h45 | [Food](#meals-17) | Breakfast - Toyoko Inn buffet |
+| 08:15 | 0h15 | [Transit](#transport-17) | Walk to Shijo-Omiya bus stop |
+| 08:30 | 0h25 | [Transit](#transport-17) | City bus - Shijo-Omiya → Kiyomizu-michi |
+| 09:35 | 0h15 | [Activity](#activities-17) | Walk up Sannenzaka/Ninenzaka toward Kiyomizu-dera |
+| 09:50 | 0h45 | [Activity](#activities-17) | Kiyomizu-dera - main hall and grounds |
+| 10:35 | 0h40 | [Activity](#activities-17) | Walk back down through the Higashiyama lanes |
+| 11:15 | 0h40 | [Food](#meals-17) | Lunch - soba + a matcha treat, Higashiyama lanes |
+| 12:15 | 0h15 | [Transit](#transport-17) | Walk to Maruyama Park |
 | 12:30 | 1h45 | Rest | Midday rest - Maruyama Park, shaded corner |
-| 14:15 | 0h15 | Transit | Walk to Gion |
-| 14:30 | 0h30 | Activity | Gion district walk - Hanamikoji-dori, machiya streets |
-| 15:00 | 0h20 | Activity | Shirakawa Canal - willow-lined canal walk |
-| 15:20 | 0h15 | Transit | Walk to dinner |
-| 15:35 | 1h00 | Food | Early dinner - obanzai restaurant, Gion |
-| 16:35 | 0h10 | Transit | Walk, Gion dinner spot → Pontocho (cross Shijo Ohashi bridge) |
-| 16:45 | 0h20 | Activity | Pontocho evening lantern walk - stroll the alley (browse only, no meal) |
-| 17:05 | 0h10 | Transit | Walk, Pontocho alley → Shijo-Kawaramachi bus stop |
-| 17:15 | 0h25 | Transit | City bus - Shijo-Kawaramachi → Shijo-Omiya |
+| 14:15 | 0h15 | [Transit](#transport-17) | Walk to Gion |
+| 14:30 | 0h30 | [Activity](#activities-17) | Gion district walk - Hanamikoji-dori, machiya streets |
+| 15:00 | 0h20 | [Activity](#activities-17) | Shirakawa Canal - willow-lined canal walk |
+| 15:20 | 0h15 | [Transit](#transport-17) | Walk to dinner |
+| 15:35 | 1h00 | [Food](#meals-17) | Early dinner - obanzai restaurant, Gion |
+| 16:35 | 0h10 | [Transit](#transport-17) | Walk, Gion dinner spot → Pontocho (cross Shijo Ohashi bridge) |
+| 16:45 | 0h20 | [Activity](#activities-17) | Pontocho evening lantern walk - stroll the alley (browse only, no meal) |
+| 17:05 | 0h10 | [Transit](#transport-17) | Walk, Pontocho alley → Shijo-Kawaramachi bus stop |
+| 17:15 | 0h25 | [Transit](#transport-17) | City bus - Shijo-Kawaramachi → Shijo-Omiya |
 
 - The party is back at the hotel by about 17:40, comfortably ahead of this trip's ~19:00-19:30 infant bedtime.
 - Active out-of-lodging time: about 6h20 (4h15 before the rest block, 2h05 after), plus a 1h45 rest block.
@@ -1988,30 +1988,30 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0h45 | Food | Breakfast - Toyoko Inn buffet |
-| 08:15 | 0h15 | Transit | Walk to Hankyu Omiya Station |
-| 08:30 | 0h10 | Transit | Hankyu Kyoto Line - Omiya → Karasuma |
-| 08:40 | 0h20 | Transit | Subway Karasuma Line - Karasuma (Shijo) → Marutamachi |
-| 09:00 | 0h05 | Transit | Walk, Marutamachi Stn → Gosho entrance |
-| 09:05 | 0h35 | Activity | Kyoto Imperial Palace (Gosho) - free, self-guided walk-in grounds visit |
-| 09:40 | 0h20 | Transit | Walk - Kyoto Gyoen → Nijo Castle |
-| 10:00 | 1h15 | Activity | Nijo Castle - grounds, gardens, Ninomaru Palace |
-| 11:15 | 0h25 | Transit | Raku city bus - Nijo Castle → Kinkaku-ji-michi |
-| 11:40 | 0h40 | Activity | Kinkaku-ji - Golden Pavilion grounds walk |
-| 12:20 | 0h15 | Transit | City bus - Kinkaku-ji-michi → Ryoan-ji-mae (2 stops) |
-| 12:35 | 0h40 | Activity | Ryoan-ji - dry rock garden (karesansui) |
-| 13:15 | 0h10 | Transit | Walk - Ryoan-ji → Ritsumeikan Daigaku-mae bus stop |
-| 13:25 | 0h15 | Transit | City bus (Route 50) - Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae |
+| 07:30 | 0h45 | [Food](#meals-18) | Breakfast - Toyoko Inn buffet |
+| 08:15 | 0h15 | [Transit](#transport-18) | Walk to Hankyu Omiya Station |
+| 08:30 | 0h10 | [Transit](#transport-18) | Hankyu Kyoto Line - Omiya → Karasuma |
+| 08:40 | 0h20 | [Transit](#transport-18) | Subway Karasuma Line - Karasuma (Shijo) → Marutamachi |
+| 09:00 | 0h05 | [Transit](#transport-18) | Walk, Marutamachi Stn → Gosho entrance |
+| 09:05 | 0h35 | [Activity](#activities-18) | Kyoto Imperial Palace (Gosho) - free, self-guided walk-in grounds visit |
+| 09:40 | 0h20 | [Transit](#transport-18) | Walk - Kyoto Gyoen → Nijo Castle |
+| 10:00 | 1h15 | [Activity](#activities-18) | Nijo Castle - grounds, gardens, Ninomaru Palace |
+| 11:15 | 0h25 | [Transit](#transport-18) | Raku city bus - Nijo Castle → Kinkaku-ji-michi |
+| 11:40 | 0h40 | [Activity](#activities-18) | Kinkaku-ji - Golden Pavilion grounds walk |
+| 12:20 | 0h15 | [Transit](#transport-18) | City bus - Kinkaku-ji-michi → Ryoan-ji-mae (2 stops) |
+| 12:35 | 0h40 | [Activity](#activities-18) | Ryoan-ji - dry rock garden (karesansui) |
+| 13:15 | 0h10 | [Transit](#transport-18) | Walk - Ryoan-ji → Ritsumeikan Daigaku-mae bus stop |
+| 13:25 | 0h15 | [Transit](#transport-18) | City bus (Route 50) - Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae |
 | 13:40 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
-| 14:40 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
+| 14:40 | 0h30 | [Transit](#transport-18) | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
 | 15:10 | 1h45 | Rest | Midday rest - hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
-| 17:55 | 0h40 | Food | Dinner - chicken katsu bento from [Fresco Omiya](#kyoto-shopping-runs) (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
+| 17:55 | 0h40 | [Food](#meals-18) | Dinner - chicken katsu bento from [Fresco Omiya](#kyoto-shopping-runs) (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
 | 18:35 | 0h25 | Rest | Bath, bedtime routine, infants down |
 | 19:00 | 0h50 | Rest | Quiet evening at the hotel, infants asleep |
-| 19:50 | 0h20 | Transit | One adult walks alone to [Gyomu Super Saiin](#kyoto-shopping-runs), Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
-| 20:10 | 0h15 | Food | Hangaku shopping - deli pastries and rice balls marked to 50% off after 20:00, restocking snacks for the next few days |
-| 20:25 | 0h20 | Transit | Walk back to Toyoko Inn |
+| 19:50 | 0h20 | [Transit](#transport-18) | One adult walks alone to [Gyomu Super Saiin](#kyoto-shopping-runs), Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
+| 20:10 | 0h15 | [Food](#meals-18) | Hangaku shopping - deli pastries and rice balls marked to 50% off after 20:00, restocking snacks for the next few days |
+| 20:25 | 0h20 | [Transit](#transport-18) | Walk back to Toyoko Inn |
 
 - **Imperial Palace note:** this segment already distinguished Kyoto Gyoen (the public park, visited on Day 16 for Jidai Matsuri viewing) from the Kyoto Imperial Palace/Gosho itself (the walled compound inside that park) - see Day 16's Activities table. The Gosho is toured today instead, since Jidai Matsuri day was already full: free entry, no reservation, self-guided walk-in 9:00-16:20 (closed Mondays), folded into the same subway route already used to reach Nijo Castle.
 - **Ryoan-ji and Tenjin-ichi both fit, verified.** Ryoan-ji is on this itinerary because it's the only karesansui (dry rock garden) anywhere in this 30-day trip, and it's the single most famous example of the form in Japan - a temple market doesn't substitute for that, so both stay. The geography cooperates: Kinkaku-ji, Ryoan-ji, and Kitano Tenmangu sit in a single northwest Kyoto cluster, and the day now flows through it in one direction rather than backtracking. Kinkaku-ji to Ryoan-ji is City Bus 59, 2 stops, about 5 minutes (padded to 0h15 with wait/boarding, matching this segment's other short bus hops). From Ryoan-ji, it's a verified 7-minute walk to the Ritsumeikan Daigaku-mae bus stop, where City Bus Route 50 (Kyoto Station - Kitano Tenmangu - Ritsumeikan Daigaku) runs directly to Kitano Tenmangu-mae - no return toward Kinkaku-ji, no doubling back. From there, the day continues on the same bus network back to Shijo-Omiya, same as before.
@@ -2130,28 +2130,28 @@ here is "covered by pass."*
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
-| 07:30 | 0h15 | Transit | Hotel -> Kyoto Stn, Kyoto city bus |
-| 07:45 | 0h15 | Transit | Transfer to Kintetsu platform, buy tickets |
-| 08:00 | 0h44 | Transit | Kyoto Stn -> Kintetsu-Nara, Kintetsu Kyoto Line (kyuko/express, no reservation) |
-| 08:44 | 0h16 | Activity | Walk into Nara Park, first deer feeding |
-| 09:00 | 0h50 | Activity | Todai-ji Daibutsuden (Great Buddha Hall), paved paths |
-| 09:50 | 0h15 | Transit | Walk, Todai-ji -> Kasuga Taisha approach, lantern-lined path |
-| 10:05 | 0h40 | Activity | Kasuga Taisha inner precinct (Chumon gate, moss garden), gravel paths, carrier easier than stroller here |
-| 10:45 | 0h05 | Transit | Walk, Kasuga Taisha inner precinct -> Manyo Botanical Garden (within the grounds) |
-| 10:50 | 0h20 | Activity | Manyo Botanical Garden (within Kasuga Taisha grounds) |
-| 11:10 | 0h20 | Transit | Walk, Manyo Botanical Garden -> Isuien Garden (back through Nara Park) |
-| 11:30 | 0h35 | Activity | Isuien Garden |
-| 12:05 | 0h10 | Transit | Walk, Isuien Garden -> lunch spot near Nara Park |
-| 12:15 | 0h50 | Food | Lunch near Nara Park |
+| 07:00 | 0h30 | [Food](#meals-19) | Breakfast at Toyoko Inn buffet (included) |
+| 07:30 | 0h15 | [Transit](#transport-19) | Hotel -> Kyoto Stn, Kyoto city bus |
+| 07:45 | 0h15 | [Transit](#transport-19) | Transfer to Kintetsu platform, buy tickets |
+| 08:00 | 0h44 | [Transit](#transport-19) | Kyoto Stn -> Kintetsu-Nara, Kintetsu Kyoto Line (kyuko/express, no reservation) |
+| 08:44 | 0h16 | [Activity](#activities-19) | Walk into Nara Park, first deer feeding |
+| 09:00 | 0h50 | [Activity](#activities-19) | Todai-ji Daibutsuden (Great Buddha Hall), paved paths |
+| 09:50 | 0h15 | [Transit](#transport-19) | Walk, Todai-ji -> Kasuga Taisha approach, lantern-lined path |
+| 10:05 | 0h40 | [Activity](#activities-19) | Kasuga Taisha inner precinct (Chumon gate, moss garden), gravel paths, carrier easier than stroller here |
+| 10:45 | 0h05 | [Transit](#transport-19) | Walk, Kasuga Taisha inner precinct -> Manyo Botanical Garden (within the grounds) |
+| 10:50 | 0h20 | [Activity](#activities-19) | Manyo Botanical Garden (within Kasuga Taisha grounds) |
+| 11:10 | 0h20 | [Transit](#transport-19) | Walk, Manyo Botanical Garden -> Isuien Garden (back through Nara Park) |
+| 11:30 | 0h35 | [Activity](#activities-19) | Isuien Garden |
+| 12:05 | 0h10 | [Transit](#transport-19) | Walk, Isuien Garden -> lunch spot near Nara Park |
+| 12:15 | 0h50 | [Food](#meals-19) | Lunch near Nara Park |
 | 13:05 | 1h30 | Rest | Midday rest, Nara Park lawn (stroller nap) |
-| 14:35 | 0h20 | Activity | Free wander / last deer feeding, walk to station |
-| 14:55 | 0h44 | Transit | Kintetsu-Nara -> Kyoto Stn, kyuko |
-| 15:39 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel (flat, ~2.2 km, stroller-friendly; saves the bus fare) |
+| 14:35 | 0h20 | [Activity](#activities-19) | Free wander / last deer feeding, walk to station |
+| 14:55 | 0h44 | [Transit](#transport-19) | Kintetsu-Nara -> Kyoto Stn, kyuko |
+| 15:39 | 0h28 | [Transit](#transport-19) | Walk, Kyoto Stn -> Hotel (flat, ~2.2 km, stroller-friendly; saves the bus fare) |
 | 16:07 | 1h53 | Rest | Free time / rest at hotel |
-| 18:00 | 0h10 | Transit | Walk to dinner spot |
-| 18:10 | 0h50 | Food | Dinner at CoCo Ichibanya, near Shijo-Omiya |
-| 19:00 | 0h10 | Transit | Walk back to hotel |
+| 18:00 | 0h10 | [Transit](#transport-19) | Walk to dinner spot |
+| 18:10 | 0h50 | [Food](#meals-19) | Dinner at CoCo Ichibanya, near Shijo-Omiya |
+| 19:00 | 0h10 | [Transit](#transport-19) | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
 - This is the segment's one long day: the walks between Kasuga Taisha, Manyo
@@ -2229,27 +2229,27 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
-| 07:30 | 0h15 | Transit | Hotel -> Kyoto Stn, Kyoto city bus |
-| 07:45 | 0h15 | Transit | Transfer to JR Nara Line platform |
-| 08:00 | 0h18 | Transit | Kyoto Stn -> Uji Stn, JR Nara Line rapid |
-| 08:18 | 0h12 | Transit | Walk, Uji Stn -> Byodo-in |
-| 08:30 | 0h45 | Activity | Byodo-in garden + Hoshokan museum |
-| 09:15 | 0h15 | Activity | Byodo-in Phoenix Hall interior (timed small-group entry; one adult goes in while the other two wait outside with the kids) |
-| 09:30 | 0h15 | Transit | Walk to riverside tea house |
-| 09:45 | 0h45 | Activity | Tea-ceremony / matcha-making experience |
-| 10:30 | 0h15 | Transit | Walk along the Uji riverbank |
-| 10:45 | 0h40 | Activity | Tale of Genji Museum (air-conditioned, easy rest stop) |
-| 11:25 | 0h15 | Transit | Walk, Tale of Genji Museum -> Uji Bridge (lunch spot) |
-| 11:40 | 0h50 | Food | Lunch, tea-house set meal near Uji Bridge |
+| 07:00 | 0h30 | [Food](#meals-20) | Breakfast at Toyoko Inn buffet (included) |
+| 07:30 | 0h15 | [Transit](#transport-20) | Hotel -> Kyoto Stn, Kyoto city bus |
+| 07:45 | 0h15 | [Transit](#transport-20) | Transfer to JR Nara Line platform |
+| 08:00 | 0h18 | [Transit](#transport-20) | Kyoto Stn -> Uji Stn, JR Nara Line rapid |
+| 08:18 | 0h12 | [Transit](#transport-20) | Walk, Uji Stn -> Byodo-in |
+| 08:30 | 0h45 | [Activity](#activities-20) | Byodo-in garden + Hoshokan museum |
+| 09:15 | 0h15 | [Activity](#activities-20) | Byodo-in Phoenix Hall interior (timed small-group entry; one adult goes in while the other two wait outside with the kids) |
+| 09:30 | 0h15 | [Transit](#transport-20) | Walk to riverside tea house |
+| 09:45 | 0h45 | [Activity](#activities-20) | Tea-ceremony / matcha-making experience |
+| 10:30 | 0h15 | [Transit](#transport-20) | Walk along the Uji riverbank |
+| 10:45 | 0h40 | [Activity](#activities-20) | Tale of Genji Museum (air-conditioned, easy rest stop) |
+| 11:25 | 0h15 | [Transit](#transport-20) | Walk, Tale of Genji Museum -> Uji Bridge (lunch spot) |
+| 11:40 | 0h50 | [Food](#meals-20) | Lunch, tea-house set meal near Uji Bridge |
 | 12:30 | 1h45 | Rest | Midday rest, Uji riverside park |
-| 14:15 | 0h15 | Transit | Walk to Uji Stn |
-| 14:30 | 0h18 | Transit | Uji Stn -> Kyoto Stn, JR Nara Line rapid |
-| 14:48 | 0h28 | Transit | Walk, Kyoto Stn -> Hotel |
+| 14:15 | 0h15 | [Transit](#transport-20) | Walk to Uji Stn |
+| 14:30 | 0h18 | [Transit](#transport-20) | Uji Stn -> Kyoto Stn, JR Nara Line rapid |
+| 14:48 | 0h28 | [Transit](#transport-20) | Walk, Kyoto Stn -> Hotel |
 | 15:16 | 2h44 | Rest | Free time / laundry at hotel |
-| 18:00 | 0h10 | Transit | Walk to dinner spot |
-| 18:10 | 0h50 | Food | Dinner at Marugame Seimen, near Omiya |
-| 19:00 | 0h10 | Transit | Walk back to hotel |
+| 18:00 | 0h10 | [Transit](#transport-20) | Walk to dinner spot |
+| 18:10 | 0h50 | [Food](#meals-20) | Dinner at Marugame Seimen, near Omiya |
+| 19:00 | 0h10 | [Transit](#transport-20) | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
 - Uji is compact, but the Tale of Genji Museum sits about 15 minutes north of
@@ -2332,30 +2332,30 @@ rest above - free, no separate stop and no schedule change.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
-| 07:30 | 0h05 | Transit | Walk, hotel -> Omiya Stn (Hankyu) |
-| 07:35 | 0h06 | Transit | Omiya -> Kawaramachi, Hankyu Kyoto Line (local) |
-| 07:41 | 0h08 | Transit | Walk, Hankyu Kawaramachi -> Keihan Gion-Shijo Stn |
-| 07:49 | 0h15 | Transit | Gion-Shijo -> Chushojima, Keihan Main Line |
-| 08:04 | 0h06 | Transit | Walk, Chushojima Stn -> Gekkeikan Okura Sake Museum |
-| 08:10 | 0h50 | Activity | Gekkeikan Okura Sake Museum (brewing history, tasting, souvenir bottle) |
-| 09:00 | 0h45 | Activity | Canal-side walk among the white-walled brewery warehouses |
-| 09:45 | 0h10 | Transit | Walk to Teradaya Inn |
-| 09:55 | 0h30 | Activity | Teradaya Inn (Sakamoto Ryoma history house) |
-| 10:25 | 0h10 | Transit | Walk to the Jikkokubune boarding dock, by Bekkan Terrace |
-| 10:35 | 0h55 | Activity | Fushimi Jikkokubune canal boat, round trip |
-| 11:30 | 0h15 | Transit | Walk toward lunch, browsing the sake-shop street |
-| 11:45 | 0h50 | Food | Lunch, sake-lees dishes near the canal |
+| 07:00 | 0h30 | [Food](#meals-21) | Breakfast at Toyoko Inn buffet (included) |
+| 07:30 | 0h05 | [Transit](#transport-21) | Walk, hotel -> Omiya Stn (Hankyu) |
+| 07:35 | 0h06 | [Transit](#transport-21) | Omiya -> Kawaramachi, Hankyu Kyoto Line (local) |
+| 07:41 | 0h08 | [Transit](#transport-21) | Walk, Hankyu Kawaramachi -> Keihan Gion-Shijo Stn |
+| 07:49 | 0h15 | [Transit](#transport-21) | Gion-Shijo -> Chushojima, Keihan Main Line |
+| 08:04 | 0h06 | [Transit](#transport-21) | Walk, Chushojima Stn -> Gekkeikan Okura Sake Museum |
+| 08:10 | 0h50 | [Activity](#activities-21) | Gekkeikan Okura Sake Museum (brewing history, tasting, souvenir bottle) |
+| 09:00 | 0h45 | [Activity](#activities-21) | Canal-side walk among the white-walled brewery warehouses |
+| 09:45 | 0h10 | [Transit](#transport-21) | Walk to Teradaya Inn |
+| 09:55 | 0h30 | [Activity](#activities-21) | Teradaya Inn (Sakamoto Ryoma history house) |
+| 10:25 | 0h10 | [Transit](#transport-21) | Walk to the Jikkokubune boarding dock, by Bekkan Terrace |
+| 10:35 | 0h55 | [Activity](#activities-21) | Fushimi Jikkokubune canal boat, round trip |
+| 11:30 | 0h15 | [Transit](#transport-21) | Walk toward lunch, browsing the sake-shop street |
+| 11:45 | 0h50 | [Food](#meals-21) | Lunch, sake-lees dishes near the canal |
 | 12:35 | 1h45 | Rest | Midday rest, canal-side park (stroller nap) |
-| 14:20 | 0h10 | Transit | Walk to Chushojima Stn |
-| 14:30 | 0h15 | Transit | Chushojima -> Gion-Shijo, Keihan Main Line |
-| 14:45 | 0h08 | Transit | Walk, Keihan Gion-Shijo -> Hankyu Kawaramachi |
-| 14:53 | 0h06 | Transit | Kawaramachi -> Omiya, Hankyu Kyoto Line (local) |
-| 14:59 | 0h05 | Transit | Walk, Omiya Stn -> hotel |
+| 14:20 | 0h10 | [Transit](#transport-21) | Walk to Chushojima Stn |
+| 14:30 | 0h15 | [Transit](#transport-21) | Chushojima -> Gion-Shijo, Keihan Main Line |
+| 14:45 | 0h08 | [Transit](#transport-21) | Walk, Keihan Gion-Shijo -> Hankyu Kawaramachi |
+| 14:53 | 0h06 | [Transit](#transport-21) | Kawaramachi -> Omiya, Hankyu Kyoto Line (local) |
+| 14:59 | 0h05 | [Transit](#transport-21) | Walk, Omiya Stn -> hotel |
 | 15:04 | 2h56 | Rest | Free time / rest at hotel |
-| 18:00 | 0h10 | Transit | Walk to dinner spot |
-| 18:10 | 0h50 | Food | Dinner at Ippudo, near Shijo-Omiya |
-| 19:00 | 0h10 | Transit | Walk back to hotel |
+| 18:00 | 0h10 | [Transit](#transport-21) | Walk to dinner spot |
+| 18:10 | 0h50 | [Food](#meals-21) | Dinner at Ippudo, near Shijo-Omiya |
+| 19:00 | 0h10 | [Transit](#transport-21) | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
 - The shortest transit day of the segment: roughly 34 minutes each way door to
@@ -2455,27 +2455,27 @@ this day would lose its headline, keeping the Nishijin weaving, the riverbank an
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h30 | Food | Breakfast at Toyoko Inn buffet (included) |
+| 07:00 | 0h30 | [Food](#meals-22) | Breakfast at Toyoko Inn buffet (included) |
 | 07:30 | 0h30 | Admin | Free morning / start packing |
-| 08:00 | 0h12 | Transit | Hotel -> Nishijin, Kyoto city bus |
-| 08:12 | 1h00 | Activity | Nishijin Textile Center: hands-on hand-loom weaving + free kimono show |
-| 09:12 | 0h10 | Transit | Walk, Nishijin Textile Center -> lunch spot, Nishijin |
-| 09:22 | 0h45 | Food | Lunch, local soba/udon shop, Nishijin |
-| 10:07 | 0h25 | Transit | Nishijin -> Yumeyakata Gojo Shop, Kyoto city bus |
-| 10:32 | 0h30 | Activity | Kimono fitting and dressing, Yumeyakata Gojo Shop |
-| 11:02 | 0h15 | Transit | Walk, Yumeyakata Gojo Shop -> Kamo riverbank (geta-paced) |
-| 11:17 | 1h00 | Activity | Kamo riverbank walk in kimono, near Gojo |
-| 12:17 | 0h15 | Transit | Walk back to Yumeyakata Gojo Shop, return kimono, change to regular clothes |
-| 12:32 | 0h18 | Transit | Gojo Shop -> Hotel, Kyoto city bus |
+| 08:00 | 0h12 | [Transit](#transport-22) | Hotel -> Nishijin, Kyoto city bus |
+| 08:12 | 1h00 | [Activity](#activities-22) | Nishijin Textile Center: hands-on hand-loom weaving + free kimono show |
+| 09:12 | 0h10 | [Transit](#transport-22) | Walk, Nishijin Textile Center -> lunch spot, Nishijin |
+| 09:22 | 0h45 | [Food](#meals-22) | Lunch, local soba/udon shop, Nishijin |
+| 10:07 | 0h25 | [Transit](#transport-22) | Nishijin -> Yumeyakata Gojo Shop, Kyoto city bus |
+| 10:32 | 0h30 | [Activity](#activities-22) | Kimono fitting and dressing, Yumeyakata Gojo Shop |
+| 11:02 | 0h15 | [Transit](#transport-22) | Walk, Yumeyakata Gojo Shop -> Kamo riverbank (geta-paced) |
+| 11:17 | 1h00 | [Activity](#activities-22) | Kamo riverbank walk in kimono, near Gojo |
+| 12:17 | 0h15 | [Transit](#transport-22) | Walk back to Yumeyakata Gojo Shop, return kimono, change to regular clothes |
+| 12:32 | 0h18 | [Transit](#transport-22) | Gojo Shop -> Hotel, Kyoto city bus |
 | 12:50 | 2h00 | Rest | Midday rest at hotel (nap) |
 | 14:50 | 1h00 | Admin | Free time / continue packing |
-| 15:50 | 0h10 | Transit | Walk, hotel -> neighbourhood sento |
-| 16:00 | 0h45 | Activity | Local sento (public bath) visit |
-| 16:45 | 0h10 | Transit | Walk, sento -> hotel |
+| 15:50 | 0h10 | [Transit](#transport-22) | Walk, hotel -> neighbourhood sento |
+| 16:00 | 0h45 | [Activity](#activities-22) | Local sento (public bath) visit |
+| 16:45 | 0h10 | [Transit](#transport-22) | Walk, sento -> hotel |
 | 16:55 | 0h35 | Rest | Free time / relax at hotel |
-| 17:30 | 0h10 | Transit | Walk to dinner spot |
-| 17:40 | 1h00 | Food | Farewell Kyoto dinner near Shijo-Omiya |
-| 18:40 | 0h10 | Transit | Walk back to hotel |
+| 17:30 | 0h10 | [Transit](#transport-22) | Walk to dinner spot |
+| 17:40 | 1h00 | [Food](#meals-22) | Farewell Kyoto dinner near Shijo-Omiya |
+| 18:40 | 0h10 | [Transit](#transport-22) | Walk back to hotel |
 | 18:50 | 1h40 | Admin | Finish packing for the Day 24 departure to Hiroshima |
 | 20:30 | 0h30 | Admin | Bath/bedtime routine, early night |
 
@@ -2588,23 +2588,23 @@ Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Kyoto Shijo-Omiya (included, last morning) |
+| 07:00 | 0h45 | [Food](#meals-23) | Breakfast at Toyoko Inn Kyoto Shijo-Omiya (included, last morning) |
 | 07:45 | 0h30 | Admin | Pack up, check out of Toyoko Inn Kyoto Shijo-Omiya |
-| 08:15 | 0h20 | Transit | Omiya-eki-mae -> Kyoto Stn, Kyoto city bus |
+| 08:15 | 0h20 | [Transit](#transport-23) | Omiya-eki-mae -> Kyoto Stn, Kyoto city bus |
 | 08:35 | 0h25 | Admin | Kyoto Stn: buy JR Kansai-Hiroshima Area Pass (5-day) at the Midori-no-Madoguchi ticket office |
 | 09:00 | 0h20 | Admin | Wait, find platform |
-| 09:20 | 1h40 | Transit | Kyoto -> Hiroshima, Sanyo Shinkansen (Hikari/Sakura, unreserved car) |
-| 11:00 | 0h35 | Transit | Arrive Hiroshima Stn, collect bags/stroller, walk to hotel |
+| 09:20 | 1h40 | [Transit](#transport-23) | Kyoto -> Hiroshima, Sanyo Shinkansen (Hikari/Sakura, unreserved car) |
+| 11:00 | 0h35 | [Transit](#transport-23) | Arrive Hiroshima Stn, collect bags/stroller, walk to hotel |
 | 11:35 | 0h25 | Admin | Check in, Toyoko Inn Hiroshima Ekimae Ohashi Minami |
-| 12:00 | 0h05 | Transit | Walk, hotel -> Hiroshima Stn concourse |
-| 12:05 | 1h00 | Food | Lunch near Hiroshima Stn |
-| 13:05 | 0h05 | Transit | Walk, Hiroshima Stn concourse -> hotel |
+| 12:00 | 0h05 | [Transit](#transport-23) | Walk, hotel -> Hiroshima Stn concourse |
+| 12:05 | 1h00 | [Food](#meals-23) | Lunch near Hiroshima Stn |
+| 13:05 | 0h05 | [Transit](#transport-23) | Walk, Hiroshima Stn concourse -> hotel |
 | 13:10 | 1h45 | Rest | Rest / infant naps at hotel |
-| 14:55 | 0h15 | Transit | Hotel -> Peace Memorial Park, Hiroden streetcar |
-| 15:10 | 1h15 | Activity | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free |
-| 16:25 | 0h05 | Transit | Walk, Peace Memorial Park -> Hondori arcade |
-| 16:30 | 0h45 | Food | Dinner near Peace Park / Hondori arcade |
-| 17:15 | 0h20 | Transit | Walk/streetcar back to hotel |
+| 14:55 | 0h15 | [Transit](#transport-23) | Hotel -> Peace Memorial Park, Hiroden streetcar |
+| 15:10 | 1h15 | [Activity](#activities-23) | Peace Memorial Park walk + Atomic Bomb Dome (exterior), free |
+| 16:25 | 0h05 | [Transit](#transport-23) | Walk, Peace Memorial Park -> Hondori arcade |
+| 16:30 | 0h45 | [Food](#meals-23) | Dinner near Peace Park / Hondori arcade |
+| 17:15 | 0h20 | [Transit](#transport-23) | Walk/streetcar back to hotel |
 | 17:35 | - | Rest | Evening at hotel, infants down |
 
 - Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
@@ -2678,26 +2678,26 @@ by the rail pass beyond the island admissions.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Hiroshima (included) |
-| 07:45 | 0h15 | Transit | Hotel -> Hiroshima Stn, walk |
-| 08:00 | 0h25 | Transit | Hiroshima Stn -> Miyajimaguchi Stn, JR Sanyo Line local |
-| 08:25 | 0h20 | Transit | Miyajimaguchi pier -> Miyajima pier, JR Miyajima ferry |
-| 08:45 | 1h00 | Activity | Itsukushima Shrine + floating torii viewing |
-| 09:45 | 0h30 | Activity | Itsukushima Treasure Hall |
-| 10:15 | 0h10 | Transit | Walk, Itsukushima Shrine/Treasure Hall -> Miyajima Public Aquarium |
-| 10:25 | 0h45 | Activity | Miyajima Public Aquarium |
-| 11:10 | 0h06 | Transit | Walk, Aquarium -> Omotesando shopping street (lunch) |
-| 11:16 | 0h45 | Food | Lunch on Miyajima (anago-meshi / grilled oyster) |
-| 12:01 | 0h20 | Transit | Walk, Omotesando -> Momijidani Park |
+| 07:00 | 0h45 | [Food](#meals-24) | Breakfast at Toyoko Inn Hiroshima (included) |
+| 07:45 | 0h15 | [Transit](#transport-24) | Hotel -> Hiroshima Stn, walk |
+| 08:00 | 0h25 | [Transit](#transport-24) | Hiroshima Stn -> Miyajimaguchi Stn, JR Sanyo Line local |
+| 08:25 | 0h20 | [Transit](#transport-24) | Miyajimaguchi pier -> Miyajima pier, JR Miyajima ferry |
+| 08:45 | 1h00 | [Activity](#activities-24) | Itsukushima Shrine + floating torii viewing |
+| 09:45 | 0h30 | [Activity](#activities-24) | Itsukushima Treasure Hall |
+| 10:15 | 0h10 | [Transit](#transport-24) | Walk, Itsukushima Shrine/Treasure Hall -> Miyajima Public Aquarium |
+| 10:25 | 0h45 | [Activity](#activities-24) | Miyajima Public Aquarium |
+| 11:10 | 0h06 | [Transit](#transport-24) | Walk, Aquarium -> Omotesando shopping street (lunch) |
+| 11:16 | 0h45 | [Food](#meals-24) | Lunch on Miyajima (anago-meshi / grilled oyster) |
+| 12:01 | 0h20 | [Transit](#transport-24) | Walk, Omotesando -> Momijidani Park |
 | 12:21 | 1h45 | Rest | Rest / infant naps, Momijidani Park (shaded, benches, free) |
-| 14:06 | 1h15 | Activity | Miyajima Ropeway round trip (2 adults only - see note) |
-| 15:21 | 0h15 | Transit | Regroup, walk to ferry pier |
-| 15:36 | 0h20 | Transit | Miyajima pier -> Miyajimaguchi pier, JR ferry |
-| 15:56 | 0h25 | Transit | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local |
-| 16:21 | 0h15 | Transit | Hiroshima Stn -> hotel, walk |
+| 14:06 | 1h15 | [Activity](#activities-24) | Miyajima Ropeway round trip (2 adults only - see note) |
+| 15:21 | 0h15 | [Transit](#transport-24) | Regroup, walk to ferry pier |
+| 15:36 | 0h20 | [Transit](#transport-24) | Miyajima pier -> Miyajimaguchi pier, JR ferry |
+| 15:56 | 0h25 | [Transit](#transport-24) | Miyajimaguchi Stn -> Hiroshima Stn, JR Sanyo Line local |
+| 16:21 | 0h15 | [Transit](#transport-24) | Hiroshima Stn -> hotel, walk |
 | 16:36 | 0h50 | Rest | Downtime at hotel |
 | 17:26 | 0h34 | Rest | Wind down before dinner |
-| 18:00 | 1h00 | Food | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) |
+| 18:00 | 1h00 | [Food](#meals-24) | Dinner: Okonomimura (build-your-own Hiroshima-style okonomiyaki) |
 | 19:00 | - | Rest | Return to hotel, infants down |
 
 - Check tide times for the floating torii nearer the date - at high tide it stands in the water
@@ -2785,24 +2785,24 @@ Shukkei-en garden and Hiroshima Castle.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Hiroshima (included) |
-| 07:45 | 0h15 | Transit | Hotel -> Genbaku Dome-mae, Hiroden streetcar |
-| 08:00 | 0h45 | Activity | Atomic Bomb Dome + Motoyasu riverside walk, free |
-| 08:45 | 0h15 | Transit | Walk, Atomic Bomb Dome -> Peace Memorial Museum (through the park) |
-| 09:00 | 1h15 | Activity | Peace Memorial Museum (party splits - see note) |
-| 10:15 | 0h15 | Transit | Walk, Peace Memorial Museum -> Hiroshima Orizuru Tower (back toward the Dome) |
-| 10:30 | 0h35 | Activity | Hiroshima Orizuru Tower (observation deck + paper-crane fold) |
-| 11:05 | 0h10 | Transit | Walk, Orizuru Tower -> Hondori arcade |
-| 11:15 | 0h45 | Food | Lunch, Hondori arcade |
-| 12:00 | 0h15 | Transit | Walk/streetcar back to hotel |
+| 07:00 | 0h45 | [Food](#meals-25) | Breakfast at Toyoko Inn Hiroshima (included) |
+| 07:45 | 0h15 | [Transit](#transport-25) | Hotel -> Genbaku Dome-mae, Hiroden streetcar |
+| 08:00 | 0h45 | [Activity](#activities-25) | Atomic Bomb Dome + Motoyasu riverside walk, free |
+| 08:45 | 0h15 | [Transit](#transport-25) | Walk, Atomic Bomb Dome -> Peace Memorial Museum (through the park) |
+| 09:00 | 1h15 | [Activity](#activities-25) | Peace Memorial Museum (party splits - see note) |
+| 10:15 | 0h15 | [Transit](#transport-25) | Walk, Peace Memorial Museum -> Hiroshima Orizuru Tower (back toward the Dome) |
+| 10:30 | 0h35 | [Activity](#activities-25) | Hiroshima Orizuru Tower (observation deck + paper-crane fold) |
+| 11:05 | 0h10 | [Transit](#transport-25) | Walk, Orizuru Tower -> Hondori arcade |
+| 11:15 | 0h45 | [Food](#meals-25) | Lunch, Hondori arcade |
+| 12:00 | 0h15 | [Transit](#transport-25) | Walk/streetcar back to hotel |
 | 12:15 | 1h40 | Rest | Rest / infant naps at hotel |
-| 13:55 | 0h15 | Transit | Hotel -> Shukkei-en, Hiroden streetcar |
-| 14:10 | 1h00 | Activity | Shukkei-en garden |
-| 15:10 | 0h15 | Transit | Walk, Shukkei-en -> Hiroshima Castle |
-| 15:25 | 0h45 | Activity | Hiroshima Castle (grounds + keep) |
-| 16:10 | 0h20 | Transit | Castle -> hotel, Hiroden streetcar |
+| 13:55 | 0h15 | [Transit](#transport-25) | Hotel -> Shukkei-en, Hiroden streetcar |
+| 14:10 | 1h00 | [Activity](#activities-25) | Shukkei-en garden |
+| 15:10 | 0h15 | [Transit](#transport-25) | Walk, Shukkei-en -> Hiroshima Castle |
+| 15:25 | 0h45 | [Activity](#activities-25) | Hiroshima Castle (grounds + keep) |
+| 16:10 | 0h20 | [Transit](#transport-25) | Castle -> hotel, Hiroden streetcar |
 | 16:30 | 1h40 | Rest | Downtime at hotel |
-| 18:10 | 1h00 | Food | Dinner near hotel |
+| 18:10 | 1h00 | [Food](#meals-25) | Dinner near hotel |
 | 19:10 | - | Rest | Evening at hotel, infants down |
 
 - **The Peace Memorial Museum's content is heavy**, and the lower-floor personal-effects exhibits
@@ -2886,25 +2886,25 @@ at Dotonbori.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:00 | 0h45 | Food | Breakfast at Toyoko Inn Hiroshima (included, checkout morning) |
+| 07:00 | 0h45 | [Food](#meals-26) | Breakfast at Toyoko Inn Hiroshima (included, checkout morning) |
 | 07:45 | 0h30 | Admin | Pack up, check out |
-| 08:15 | 0h15 | Transit | Hotel -> Hiroshima Stn, walk |
-| 08:30 | 1h30 | Transit | Hiroshima -> Shin-Osaka, Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) |
+| 08:15 | 0h15 | [Transit](#transport-26) | Hotel -> Hiroshima Stn, walk |
+| 08:30 | 1h30 | [Transit](#transport-26) | Hiroshima -> Shin-Osaka, Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) |
 | 10:00 | 0h20 | Admin | Transfer at Shin-Osaka, collect bags/stroller |
-| 10:20 | 0h20 | Transit | Shin-Osaka -> Namba, Osaka Metro Midosuji Line |
-| 10:40 | 0h20 | Transit | Namba Stn -> Toyoko Inn Osaka Namba, walk |
+| 10:20 | 0h20 | [Transit](#transport-26) | Shin-Osaka -> Namba, Osaka Metro Midosuji Line |
+| 10:40 | 0h20 | [Transit](#transport-26) | Namba Stn -> Toyoko Inn Osaka Namba, walk |
 | 11:00 | 0h30 | Admin | Check in, drop bags |
-| 11:30 | 0h10 | Transit | Walk, hotel -> lunch spot near Namba |
-| 11:40 | 1h00 | Food | Lunch near Namba |
-| 12:40 | 0h10 | Transit | Walk, lunch spot -> hotel |
+| 11:30 | 0h10 | [Transit](#transport-26) | Walk, hotel -> lunch spot near Namba |
+| 11:40 | 1h00 | [Food](#meals-26) | Lunch near Namba |
+| 12:40 | 0h10 | [Transit](#transport-26) | Walk, lunch spot -> hotel |
 | 12:50 | 1h45 | Rest | Rest / infant naps at hotel |
-| 14:35 | 0h20 | Transit | Hotel -> Dotonbori, walk |
-| 14:55 | 1h05 | Activity | Dotonbori canal-side walk (Glico sign, arcade browsing) + Pokemon Center Osaka DX, Daimaru Shinsaibashi 9F, free |
-| 16:00 | 0h15 | Transit | Walk, Daimaru Shinsaibashi -> Namba Yasaka Shrine |
-| 16:15 | 0h20 | Activity | Namba Yasaka Shrine - giant lion-head hall, free |
-| 16:35 | 0h15 | Transit | Walk, Namba Yasaka Shrine -> Dotonbori (dinner spot) |
-| 16:50 | 1h00 | Food | Dinner in Dotonbori (takoyaki + light bites) |
-| 17:50 | 0h20 | Transit | Walk back to hotel |
+| 14:35 | 0h20 | [Transit](#transport-26) | Hotel -> Dotonbori, walk |
+| 14:55 | 1h05 | [Activity](#activities-26) | Dotonbori canal-side walk (Glico sign, arcade browsing) + Pokemon Center Osaka DX, Daimaru Shinsaibashi 9F, free |
+| 16:00 | 0h15 | [Transit](#transport-26) | Walk, Daimaru Shinsaibashi -> Namba Yasaka Shrine |
+| 16:15 | 0h20 | [Activity](#activities-26) | Namba Yasaka Shrine - giant lion-head hall, free |
+| 16:35 | 0h15 | [Transit](#transport-26) | Walk, Namba Yasaka Shrine -> Dotonbori (dinner spot) |
+| 16:50 | 1h00 | [Food](#meals-26) | Dinner in Dotonbori (takoyaki + light bites) |
+| 17:50 | 0h20 | [Transit](#transport-26) | Walk back to hotel |
 | 18:10 | - | Rest | Evening at hotel, infants down |
 
 - Day span 07:00-18:10 (11h10), with the shinkansen leg seated and low-stress and a 1h45
@@ -3006,27 +3006,27 @@ x 1 night from MASTER-BRIEF and is not flexed.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0:45 | Food | Breakfast buffet at hotel (included) |
-| 08:15 | 0:10 | Transit | Namba Stn -> Yodoyabashi Stn (Osaka Metro Midosuji Line) |
-| 08:25 | 0:10 | Transit | Walk to National Museum of Art, Osaka (Nakanoshima) |
-| 08:35 | 0:50 | Activity | National Museum of Art, Osaka - free entry for Culture Day |
-| 09:25 | 0:15 | Transit | Walk/subway back to Osaka/Umeda Stn (Midosuji Line) |
-| 09:40 | 0:25 | Transit | Osaka Stn -> Kobe-Sannomiya Stn (JR Kobe Line Special Rapid; JR Kansai-Hiroshima Area Pass, final valid day) |
-| 10:05 | 0:15 | Transit | Sannomiya Stn -> Kobe Stn, JR Kobe Line one stop (pass) + walk to Kobe Harborland |
-| 10:20 | 1:30 | Activity | Anpanman Children's Museum & Mall - Museum Zone (paid, both infants charged) + ground-floor Shopping Mall (free browse) |
-| 11:50 | 0:15 | Transit | Walk, Kobe Harborland -> Nankinmachi (Chinatown) |
-| 12:05 | 0:45 | Food | Lunch: street stalls at Nankinmachi (Kobe Chinatown) |
-| 12:50 | 0:10 | Transit | Walk, Nankinmachi -> Meriken Park |
-| 13:00 | 0:30 | Activity | Meriken Park waterfront - flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside |
-| 13:30 | 0:15 | Transit | Walk Meriken Park -> Sannomiya Stn |
-| 13:45 | 0:25 | Transit | Kobe-Sannomiya Stn -> Osaka Stn (JR Special Rapid, pass) |
-| 14:10 | 0:15 | Transit | Osaka/Umeda Stn -> Namba Stn (Midosuji Line) |
+| 07:30 | 0:45 | [Food](#meals-27) | Breakfast buffet at hotel (included) |
+| 08:15 | 0:10 | [Transit](#transport-27) | Namba Stn -> Yodoyabashi Stn (Osaka Metro Midosuji Line) |
+| 08:25 | 0:10 | [Transit](#transport-27) | Walk to National Museum of Art, Osaka (Nakanoshima) |
+| 08:35 | 0:50 | [Activity](#activities-27) | National Museum of Art, Osaka - free entry for Culture Day |
+| 09:25 | 0:15 | [Transit](#transport-27) | Walk/subway back to Osaka/Umeda Stn (Midosuji Line) |
+| 09:40 | 0:25 | [Transit](#transport-27) | Osaka Stn -> Kobe-Sannomiya Stn (JR Kobe Line Special Rapid; JR Kansai-Hiroshima Area Pass, final valid day) |
+| 10:05 | 0:15 | [Transit](#transport-27) | Sannomiya Stn -> Kobe Stn, JR Kobe Line one stop (pass) + walk to Kobe Harborland |
+| 10:20 | 1:30 | [Activity](#activities-27) | Anpanman Children's Museum & Mall - Museum Zone (paid, both infants charged) + ground-floor Shopping Mall (free browse) |
+| 11:50 | 0:15 | [Transit](#transport-27) | Walk, Kobe Harborland -> Nankinmachi (Chinatown) |
+| 12:05 | 0:45 | [Food](#meals-27) | Lunch: street stalls at Nankinmachi (Kobe Chinatown) |
+| 12:50 | 0:10 | [Transit](#transport-27) | Walk, Nankinmachi -> Meriken Park |
+| 13:00 | 0:30 | [Activity](#activities-27) | Meriken Park waterfront - flat, stroller-friendly; Kobe Port Tower + Be Kobe sign viewed from outside |
+| 13:30 | 0:15 | [Transit](#transport-27) | Walk Meriken Park -> Sannomiya Stn |
+| 13:45 | 0:25 | [Transit](#transport-27) | Kobe-Sannomiya Stn -> Osaka Stn (JR Special Rapid, pass) |
+| 14:10 | 0:15 | [Transit](#transport-27) | Osaka/Umeda Stn -> Namba Stn (Midosuji Line) |
 | 14:25 | 1:35 | Rest | Midday rest at hotel |
-| 16:00 | 0:15 | Transit | Walk hotel -> Dotonbori (Ebisubashi) |
-| 16:15 | 0:40 | Food | Dinner: takoyaki + okonomiyaki from Dotonbori stalls |
-| 16:55 | 0:15 | Transit | Walk to Midosuji Avenue |
-| 17:10 | 0:45 | Activity | Midosuji "Hikari no Kyoen" illumination - opening night, free to walk |
-| 17:55 | 0:15 | Transit | Walk back to hotel |
+| 16:00 | 0:15 | [Transit](#transport-27) | Walk hotel -> Dotonbori (Ebisubashi) |
+| 16:15 | 0:40 | [Food](#meals-27) | Dinner: takoyaki + okonomiyaki from Dotonbori stalls |
+| 16:55 | 0:15 | [Transit](#transport-27) | Walk to Midosuji Avenue |
+| 17:10 | 0:45 | [Activity](#activities-27) | Midosuji "Hikari no Kyoen" illumination - opening night, free to walk |
+| 17:55 | 0:15 | [Transit](#transport-27) | Walk back to hotel |
 | 18:10 | - | Lodging | Return to hotel, infants down |
 
 Kobe Harborland to Nankinmachi is a genuine ~15-minute walk and Nankinmachi to Meriken Park a further ~10 minutes with the stroller; the midday rest block absorbs that time so the 16:00 Dotonbori walk and the rest of the evening stay on schedule.
@@ -3095,25 +3095,25 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0:45 | Food | Breakfast buffet at hotel (included) |
-| 08:15 | 0:20 | Transit | Namba Stn -> Tanimachi 4-chome Stn (Osaka Metro, one transfer) |
-| 08:35 | 1:40 | Activity | Osaka Castle Park + keep (park free, keep paid; infants free) |
+| 07:30 | 0:45 | [Food](#meals-28) | Breakfast buffet at hotel (included) |
+| 08:15 | 0:20 | [Transit](#transport-28) | Namba Stn -> Tanimachi 4-chome Stn (Osaka Metro, one transfer) |
+| 08:35 | 1:40 | [Activity](#activities-28) | Osaka Castle Park + keep (park free, keep paid; infants free) |
 | 10:15 | 1:30 | Rest | Midday rest in Osaka Castle Park (shaded lawn, stroller nap) |
-| 11:45 | 0:10 | Transit | Walk, Osaka Castle Park -> Tanimachi 4-chome Stn |
-| 11:55 | 0:20 | Transit | Tanimachi 4-chome Stn -> Nippombashi Stn (Kuromon Ichiba) |
-| 12:15 | 0:20 | Activity | Den Den Town (Nipponbashi/Ota Road) browse - right at the Nippombashi Stn exit already being used for the transfer |
-| 12:35 | 0:12 | Transit | Walk, Den Den Town -> Kuromon Ichiba Market |
-| 12:47 | 0:55 | Food | Lunch grazing at Kuromon Ichiba Market |
-| 13:42 | 0:25 | Transit | Walk Kuromon Ichiba -> Shinsekai |
-| 14:07 | 0:50 | Activity | Shinsekai walk + Tsutenkaku Tower observation deck |
-| 14:57 | 0:20 | Transit | Shinsekai -> Namba/Dotonbori (Osaka Metro) |
-| 15:17 | 0:30 | Activity | Dotonbori canal-side walk, Glico sign |
-| 15:47 | 0:30 | Activity | Tombori River Cruise, Dotonbori canal |
-| 16:17 | 0:15 | Transit | Walk to hotel |
+| 11:45 | 0:10 | [Transit](#transport-28) | Walk, Osaka Castle Park -> Tanimachi 4-chome Stn |
+| 11:55 | 0:20 | [Transit](#transport-28) | Tanimachi 4-chome Stn -> Nippombashi Stn (Kuromon Ichiba) |
+| 12:15 | 0:20 | [Activity](#activities-28) | Den Den Town (Nipponbashi/Ota Road) browse - right at the Nippombashi Stn exit already being used for the transfer |
+| 12:35 | 0:12 | [Transit](#transport-28) | Walk, Den Den Town -> Kuromon Ichiba Market |
+| 12:47 | 0:55 | [Food](#meals-28) | Lunch grazing at Kuromon Ichiba Market |
+| 13:42 | 0:25 | [Transit](#transport-28) | Walk Kuromon Ichiba -> Shinsekai |
+| 14:07 | 0:50 | [Activity](#activities-28) | Shinsekai walk + Tsutenkaku Tower observation deck |
+| 14:57 | 0:20 | [Transit](#transport-28) | Shinsekai -> Namba/Dotonbori (Osaka Metro) |
+| 15:17 | 0:30 | [Activity](#activities-28) | Dotonbori canal-side walk, Glico sign |
+| 15:47 | 0:30 | [Activity](#activities-28) | Tombori River Cruise, Dotonbori canal |
+| 16:17 | 0:15 | [Transit](#transport-28) | Walk to hotel |
 | 16:32 | 1:40 | Rest | Downtime at hotel |
-| 18:12 | 0:15 | Transit | Walk, hotel -> Kushikatsu Daruma, Dotonbori |
-| 18:27 | 0:45 | Food | Dinner: kushikatsu |
-| 19:12 | 0:15 | Transit | Walk back to hotel |
+| 18:12 | 0:15 | [Transit](#transport-28) | Walk, hotel -> Kushikatsu Daruma, Dotonbori |
+| 18:27 | 0:45 | [Food](#meals-28) | Dinner: kushikatsu |
+| 19:12 | 0:15 | [Transit](#transport-28) | Walk back to hotel |
 | 19:27 | - | Lodging | Return to hotel, infants down |
 
 Osaka Castle Park back to Tanimachi 4-chome Stn is a genuine ~10-minute walk, and Den Den Town
@@ -3193,13 +3193,13 @@ The **JR Kansai-Hiroshima Area Pass expired at the end of Day 28 (Nov 3)**, so t
 
 | Time | Duration | Type | Item |
 |---|---|---|---|
-| 07:30 | 0:45 | Food | Final breakfast buffet at hotel (included) |
+| 07:30 | 0:45 | [Food](#meals-29) | Final breakfast buffet at hotel (included) |
 | 08:15 | 0:45 | Admin | Pack up, hotel checkout |
-| 09:00 | 0:15 | Transit | Walk hotel -> Nankai Namba Stn (stroller + bags) |
-| 09:15 | 0:45 | Transit | Namba Stn -> Kansai Airport Stn (Nankai Airport Line, rapid express) |
-| 10:00 | 0:15 | Transit | Arrive KIX, walk to check-in hall (Terminal 1) |
+| 09:00 | 0:15 | [Transit](#transport-29) | Walk hotel -> Nankai Namba Stn (stroller + bags) |
+| 09:15 | 0:45 | [Transit](#transport-29) | Namba Stn -> Kansai Airport Stn (Nankai Airport Line, rapid express) |
+| 10:00 | 0:15 | [Transit](#transport-29) | Arrive KIX, walk to check-in hall (Terminal 1) |
 | 10:15 | 2:45 | Admin | International check-in, bag drop, security, immigration - 3h buffer for party of 5 + stroller + checked bags; stroller gate-checked at boarding |
-| 13:00 | 0:30 | Food | Light meal at airside food court before boarding |
+| 13:00 | 0:30 | [Food](#meals-29) | Light meal at airside food court before boarding |
 | 13:30 | - | Admin | Board flight (airfare and in-flight meal not costed in this itinerary) |
 
 Active out-of-lodging time: about 4h30, with no midday rest block needed - a short, buffered travel day to the airport, comfortably under the ~7h guideline.

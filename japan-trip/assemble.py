@@ -123,6 +123,8 @@ doc = "\n".join(body)
 # --------------------------------------------------- anchors and cross-links --
 seen = {}
 anchors = {}                       # heading text -> anchor
+day_sections = {}                  # day number -> {section name: anchor}
+cur_day_for_sections = None
 day_anchor = {}                    # day number  -> anchor
 for line in doc.split("\n"):
     m = re.match(r"^(#{1,6})\s+(.*)$", line)
@@ -134,6 +136,9 @@ for line in doc.split("\n"):
     dm = re.match(r"^Day\s+(\d+)\s*[-–]", text)
     if dm:
         day_anchor[int(dm.group(1))] = a
+        cur_day_for_sections = int(dm.group(1))
+    elif text in ("Schedule", "Meals", "Transport", "Activities") and cur_day_for_sections:
+        day_sections.setdefault(cur_day_for_sections, {})[text] = a
 
 doc = re.sub(r"@@DAYLINK:(\d+)@@", lambda m: f"[{m.group(1)}](#{day_anchor[int(m.group(1))]})", doc)
 
@@ -246,6 +251,38 @@ start = doc.index("## Appendix A: Topic index")
 end = doc.index("## Appendix C: The five places")
 section = re.sub(r"(\|\s)([\d,\s/]+?)(\s\|)", link_day_cell, doc[start:end])
 doc = doc[:start] + section + doc[end:]
+
+# Link each schedule row's Type cell to that day's own Meals, Transport or
+# Activities table. Markdown anchors headings rather than table rows, so a row
+# link lands on the right table for the right day, not on the individual line.
+TYPE_SECTION = {"Food": "Meals", "Transit": "Transport", "Activity": "Activities"}
+SCH_HDR = "| Time | Duration | Type | Item |"
+sc_start = re.search(r"^# Days 1-10\b", doc, re.M).start()
+sc_end = doc.index("# Appendices")
+sseg = doc[sc_start:sc_end]
+type_links = 0
+out5, in_sch, cur_day = [], False, None
+for line in sseg.split("\n"):
+    dm = re.match(r"^##\s+Day\s+(\d+)\s*[-–]", line)
+    if dm:
+        cur_day = int(dm.group(1))
+    if line.strip() == SCH_HDR:
+        in_sch = True; out5.append(line); continue
+    if in_sch:
+        if not line.startswith("|"):
+            in_sch = False; out5.append(line); continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 4 or set(cells[2]) <= set("-: ") or "](#" in cells[2]:
+            out5.append(line); continue
+        sec = TYPE_SECTION.get(cells[2])
+        a = day_sections.get(cur_day, {}).get(sec) if sec else None
+        if a:
+            cells[2] = f"[{cells[2]}](#{a})"
+            type_links += 1
+            out5.append("| " + " | ".join(cells) + " |"); continue
+    out5.append(line)
+doc = doc[:sc_start] + "\n".join(out5) + doc[sc_end:]
+print(f"schedule Type cells linked to their day's tables: {type_links}")
 
 # Link each day's Transport modes to the transport appendix, and the appendix back.
 MODE_SECTION = [
