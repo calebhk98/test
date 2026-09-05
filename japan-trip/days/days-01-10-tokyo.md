@@ -18,9 +18,15 @@ totals starting from ¥0 - no baseline adjustment needed.*
 - The Livemax kitchenette carries real weight in this segment: self-catered breakfast
   every day, self-catered dinner on six of the ten evenings, and the Day 1 grocery run is
   costed as the full initial stock-up (pantry staples, not just one meal) so later days
-  only need top-ups. Two evenings use hangaku (closing-time markdown) pricing
-  deliberately - Day 1's stock-up run and Day 4's tired-night bento - and are marked
-  as such below.
+  only need top-ups. **On hangaku (closing-time markdown) pricing: true 50%-off
+  supermarket deli markdowns run 20:00-20:45, which is after this itinerary's roughly
+  19:00-19:30 infant bedtime, so it can never be a whole-family dinner run.** Only Day
+  3 uses a genuine hangaku saving - one adult goes out alone after both infants are
+  down, to a named store, for tomorrow's lunch rather than tonight's dinner, and it is
+  costed as a real 44-minute round trip. Day 1's stock-up run happens mid-afternoon
+  (no discount window yet) and Day 7's tired-night bento is bought too early in the
+  evening for one, so both are priced at full rate rather than assuming a saving that
+  the clock doesn't support.
 
 ---
 
@@ -340,27 +346,45 @@ Gardens, riding the Sumida River water bus home to Asakusa.
 | 08:40 | 0h15 | Transit | Walk, Tokyo Stn -> Imperial Palace East Gardens (Otemon Gate) |
 | 08:55 | 1h20 | Activity | Imperial Palace East Gardens - Ninomaru Garden, Tenshudai foundation |
 | 10:15 | 0h15 | Transit | Otemachi -> Onarimon, Toei Mita Line |
-| 10:30 | 1h05 | Activity | Zojoji Temple + Tokyo Tower Main Deck, Shiba Park |
-| 11:35 | 0h20 | Transit | Onarimon -> Shiodome, Toei Mita Line to Daimon + transfer to Toei Oedo Line, then a 7-min walk to Hamarikyu's Otemon Gate |
-| 11:55 | 1h00 | Activity | Hamarikyu Gardens - tidal pond, teahouse |
-| 12:55 | 0h45 | Food | Lunch, Shibakoen/Hamamatsucho area, Minato-ku |
-| 13:40 | 1h30 | Rest | Rest / infant naps - a bench on Hamarikyu's grounds (a park qualifies for the rest block) |
-| 15:10 | 0h15 | Transit | Walk back to the Hamarikyu boat pier |
-| 15:25 | 0h40 | Transit | Hamarikyu Pier -> Asakusa, Tokyo Cruise Sumida River water bus |
-| 16:05 | 0h15 | Transit | Walk, Asakusa Pier -> Hotel Livemax Higashi-Ueno |
-| 16:20 | 1h10 | Rest | Downtime at the hotel |
+| 10:30 | 0h30 | Activity | Zojoji Temple, Shiba Park |
+| 11:00 | 0h05 | Transit | Walk, Zojoji -> Tokyo Tower Main Deck (across Shiba Park) |
+| 11:05 | 0h35 | Activity | Tokyo Tower Main Deck |
+| 11:40 | 0h20 | Transit | Onarimon -> Shiodome, Toei Mita Line to Daimon + transfer to Toei Oedo Line, then a 7-min walk to Hamarikyu's Otemon Gate |
+| 12:00 | 1h00 | Activity | Hamarikyu Gardens - tidal pond, teahouse |
+| 13:00 | 0h12 | Transit | Walk, Hamarikyu -> lunch spot, Shibakoen/Hamamatsucho area |
+| 13:12 | 0h45 | Food | Lunch, Shibakoen/Hamamatsucho area, Minato-ku |
+| 13:57 | 0h12 | Transit | Walk back into Hamarikyu Gardens for the rest block |
+| 14:09 | 1h30 | Rest | Rest / infant naps - a bench on Hamarikyu's grounds (a park qualifies for the rest block) |
+| 15:39 | 0h15 | Transit | Walk back to the Hamarikyu boat pier |
+| 15:54 | 0h40 | Transit | Hamarikyu Pier -> Asakusa, Tokyo Cruise Sumida River water bus |
+| 16:34 | 0h15 | Transit | Walk, Asakusa Pier -> Hotel Livemax Higashi-Ueno |
+| 16:49 | 0h41 | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended for the Tenshudai foundation climb** - stone stairs at the old
   keep site. The rest of the East Gardens, Zojoji's grounds, and Hamarikyu's paths are
   flat and stroller-fine.
-- Active out-of-lodging time: about 6h50, excluding the 1h30 rest block taken at
-  Hamarikyu rather than back at the hotel - a park satisfies the pacing rule same as
-  the hotel would. Total time away from the hotel is about 8h20, similar to the
-  segment's other day-trip-style days (Kamakura, Yokohama); the new Tokyo Character
-  Street stop adds 35 minutes, absorbed by shortening the free hotel-downtime block
-  before dinner rather than pushing dinner or bath later.
+- Active out-of-lodging time: about 7h20, up from a prior draft's 6h50 now that the
+  Zojoji -> Tokyo Tower crossing and the walk out to lunch and back into Hamarikyu for
+  the rest block are actually on the clock (+29 min combined). Total time away from
+  the hotel is about 8h50, absorbed by shortening the free hotel-downtime block before
+  dinner (1h10 down to 41 min) rather than pushing dinner or bath later.
+- **Lunch means leaving Hamarikyu and coming back.** Hamarikyu's own grounds have no
+  real food options for a toddler-friendly lunch, so the party exits toward
+  Hamamatsucho/Shibakoen to eat, then re-enters the garden afterward for the rest
+  block rather than napping at a train-station plaza - two short walks (about 12
+  minutes each) rather than one continuous stay.
+- **Flag this before booking (checked during this pass, Sept 2026): Tokyo Cruise's
+  entire Sumida River water bus fleet has been suspended since 19 Jan 2026 for
+  vessel-age issues, with a targeted but unconfirmed "summer 2026" restart, and
+  boarding at Hamarikyu specifically was withdrawn even before that (no Hamarikyu
+  departures have been bookable since October 2024 - it is disembark-only on the
+  routes that do run).** Reconfirm at suijobus.co.jp close to 7-16 Oct 2026. If it
+  has not reopened, or Hamarikyu boarding has not returned, the fallback is to walk
+  from Hamarikyu back to Hamamatsucho Stn (retracing the lunch walk) and take the JR
+  Yamanote/Keihin-Tohoku Line direct to Ueno, about 25 minutes for ¥210/adult (¥630
+  for the party) - similar total time to the boat, minus the river view.
 - **Mitsubishi Ichigokan Museum has been dropped from this day.** It was the segment's
   softest activity spend (¥6,000 for the party for roughly an hour of a rotating
   Western-art exhibition) and the one part of central Tokyo this itinerary otherwise
@@ -447,14 +471,19 @@ rest block relocated to the park itself.
 | 07:30 | 0h45 | Food | Breakfast, self-catered |
 | 08:15 | 0h20 | Transit | Ueno -> Harajuku, JR Yamanote Line |
 | 08:35 | 1h15 | Activity | Meiji Jingu - main shrine grounds + Inner Garden |
-| 09:50 | 1h00 | Activity | Yoyogi Park - open lawns |
-| 10:50 | 1h10 | Food | Lunch - conbini bento, picnic-style on the Yoyogi Park lawn |
-| 12:00 | 1h45 | Rest | Rest / infant naps - a bench at Yoyogi Park's Harajuku entrance (a park bench qualifies for the rest block, same trick as Hamarikyu on Day 4) |
-| 13:45 | 0h30 | Activity | Tokyo Rockabilly Club dancers, Yoyogi Park Harajuku entrance plaza |
-| 14:15 | 0h20 | Activity | Takeshita Street + a peek into Laforet Harajuku's Lolita boutiques (carrier only) |
-| 14:35 | 0h25 | Transit | Walk, Harajuku -> Shibuya via Omotesando |
-| 15:00 | 0h30 | Activity | Shibuya Scramble Crossing + Hachiko statue |
-| 15:30 | 0h45 | Activity | Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo, Shibuya PARCO 6F |
+| 09:50 | 0h10 | Transit | Walk, Meiji Jingu -> Yoyogi Park (exit via the south approach) |
+| 10:00 | 1h00 | Activity | Yoyogi Park - open lawns |
+| 11:00 | 1h10 | Food | Lunch - conbini bento, picnic-style on the Yoyogi Park lawn |
+| 12:10 | 1h45 | Rest | Rest / infant naps - a bench at Yoyogi Park's Harajuku entrance (a park bench qualifies for the rest block, same trick as Hamarikyu on Day 4) |
+| 13:55 | 0h30 | Activity | Tokyo Rockabilly Club dancers, Yoyogi Park Harajuku entrance plaza |
+| 14:25 | 0h05 | Transit | Walk, Yoyogi Park Harajuku entrance -> Takeshita Street |
+| 14:30 | 0h20 | Activity | Takeshita Street + a peek into Laforet Harajuku's Lolita boutiques (carrier only) |
+| 14:50 | 0h25 | Transit | Walk, Harajuku -> Shibuya via Omotesando |
+| 15:15 | 0h30 | Activity | Shibuya Scramble Crossing + Hachiko statue |
+| 15:45 | 0h10 | Transit | Walk, Shibuya Scramble -> Shibuya PARCO 6F |
+| 15:55 | 0h45 | Activity | Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo, Shibuya PARCO 6F |
+| 16:40 | 0h10 | Rest | Free time near Shibuya PARCO before dinner |
+| 16:50 | 0h10 | Transit | Walk, Shibuya PARCO -> dinner venue |
 | 17:00 | 1h00 | Food | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
 | 18:00 | 0h20 | Transit | Shibuya -> Ueno, Tokyo Metro Ginza Line |
 | 18:20 | - | Admin | Bath, wind-down |
@@ -475,11 +504,11 @@ rest block relocated to the park itself.
   Pretty, Baby the Stars Shine Bright, and Alice and the Pirates all keep boutiques
   inside Laforet Harajuku, just off Takeshita-dori - that's where to actually look for
   the style, not the street itself.
-- Active out-of-lodging time is now about 8h20, up from roughly 7h20 before this
-  reorder - the reorder itself only adds about an hour of genuinely new content (the
-  dancers plus Takeshita Street), but relocating the rest block off-site means the walk
-  into Shibuya now happens after the rest instead of before lunch, so it shows up as
-  touring time rather than being absorbed earlier in the day. This is now the segment's
+- Active out-of-lodging time is still about 8h20 - a pass of this schedule for missing
+  transit added five short walks (Jingu -> Yoyogi Park, the Harajuku entrance plaza ->
+  Takeshita Street, Scramble -> PARCO, and PARCO -> the dinner venue) totaling 35
+  minutes, but that time was already an unlabeled gap in the clock between Pokemon
+  Centre and dinner, so it is now itemized rather than added. This is now the segment's
   fullest day. **Shibuya Sky has been cut from this day** rather than left as a pressure valve, for three reasons: the Yoyogi reorder pushed active time to about 8h20, well past the roughly 7h cap; at ¥2,700/adult it was the day's most expensive item; and the trip already visits five observation decks, with the taller and more famous Skytree only three days earlier on Day 2. Cutting it brings the day to about 7h35 and saves ¥8,100. If the toddlers are flagging by
   mid-afternoon - cutting it brings active time back to about 7h35, in line with this
   day's pace before the reorder. The free, indoor PARCO floor (Pokemon Centre, Jump
@@ -553,15 +582,18 @@ away from the holiday crowds.
 | 07:30 | 0h45 | Food | Breakfast, self-catered |
 | 08:15 | 0h10 | Transit | Hotel -> Nezu Shrine, Tokyo Metro Chiyoda Line |
 | 08:25 | 0h45 | Activity | Nezu Shrine grounds (azalea garden fee is seasonal only, skipped today) |
-| 09:10 | 1h00 | Activity | Yanaka Ginza shopping street - senbei, menchi-katsu, cat-themed shopfronts |
-| 10:10 | 0h50 | Activity | Yanaka Cemetery walk (quiet, tree-lined) |
-| 11:00 | 0h30 | Transit | Walk back toward Ueno via Yanaka backstreets |
-| 11:30 | 0h45 | Food | Lunch, Yanaka Ginza street food |
-| 12:15 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 14:00 | 0h15 | Transit | Walk, hotel -> Kappabashi Kitchenware Street |
-| 14:15 | 1h00 | Activity | Plastic food-sample (shokuhin sampuru) workshop, Kappabashi |
-| 15:15 | 0h15 | Transit | Walk back to the hotel |
-| 15:30 | 1h45 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
+| 09:10 | 0h15 | Transit | Walk, Nezu Shrine -> Yanaka Ginza |
+| 09:25 | 1h00 | Activity | Yanaka Ginza shopping street - senbei, menchi-katsu, cat-themed shopfronts |
+| 10:25 | 0h10 | Transit | Walk, Yanaka Ginza -> Yanaka Cemetery |
+| 10:35 | 0h50 | Activity | Yanaka Cemetery walk (quiet, tree-lined) |
+| 11:25 | 0h15 | Transit | Walk, Yanaka Cemetery -> Yanaka Ginza (loop back for lunch) |
+| 11:40 | 0h45 | Food | Lunch, Yanaka Ginza street food |
+| 12:25 | 0h20 | Transit | Walk, Yanaka Ginza -> hotel |
+| 12:45 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 14:30 | 0h15 | Transit | Walk, hotel -> Kappabashi Kitchenware Street |
+| 14:45 | 1h00 | Activity | Plastic food-sample (shokuhin sampuru) workshop, Kappabashi |
+| 15:45 | 0h15 | Transit | Walk back to the hotel |
+| 16:00 | 1h15 | Rest | Free time - hotel downtime, deliberately quiet given the holiday crowds elsewhere |
 | 17:15 | 0h15 | Transit | Walk, hotel -> Ueno Stn area (yakitori dinner) |
 | 17:30 | 1h00 | Food | Dinner - yakitori set, Torikizoku near Ueno Stn |
 | 18:30 | 0h15 | Transit | Walk back to the hotel |
@@ -569,10 +601,18 @@ away from the holiday crowds.
 
 - **Carrier recommended for Yanaka Cemetery** - uneven paved paths, not stroller terrain.
   Yanaka Ginza itself is flat and stroller-friendly if kept to off-peak hours.
-- Active out-of-lodging time: about 7h. This is no longer one of the segment's fully
-  free days now that the Kappabashi workshop and an evening yakitori dinner are added,
-  but it stays gentle: no day-trip transit, just two short walkable outings bracketing
-  a long rest block.
+- **The lunch stop is a loop back, not a straight line.** Nezu Shrine, Yanaka Ginza, and
+  Yanaka Cemetery are three separate stops, not one - a prior draft's schedule had the
+  party walking away from Yanaka before eating lunch at a Yanaka Ginza stall, which
+  cannot both be true. The corrected route is Nezu Shrine -> Yanaka Ginza -> Yanaka
+  Cemetery -> back to Yanaka Ginza for lunch -> hotel: real walks between each of the
+  first three stops (15 min, then 10 min) that a prior pass omitted, and the old single
+  30-minute "walk back toward Ueno" replaced by a 15-minute loop back to Yanaka Ginza
+  plus a genuine 20-minute walk from there to the hotel afterward.
+- Active out-of-lodging time: about 7h30, up from a prior draft's 7h now that the
+  Nezu/Yanaka walks are properly accounted for; absorbed by trimming the free
+  hotel-downtime block from 1h45 to 1h15 rather than pushing dinner or bath later.
+  Still gentle: no day-trip transit, just short walkable outings bracketing rest blocks.
 - The Kappabashi workshop's traditional hot-wax method needs adult hands and steady
   heat control, so it is not something to put in a toddler's grip; expect 1-2 adults
   to do the making while the third minds both infants nearby. Instruction at most
@@ -603,7 +643,10 @@ Adult kcal: 500 + 650 + 800 = **1,950**.
 |---|---|---|---|---|
 | Hotel -> Nezu Shrine | Tokyo Metro Chiyoda Line, Ueno -> Nezu | 0h05 | 180 | 540 |
 
-Return, Yanaka -> Ueno, is on foot (~25 min), free.
+The rest of the day's moves are on foot and free: Nezu Shrine -> Yanaka Ginza (15
+min), Yanaka Ginza -> Yanaka Cemetery (10 min), the loop back to Yanaka Ginza for
+lunch (15 min), and Yanaka Ginza -> hotel (20 min) - about 60 minutes of walking
+across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 
 ### Activities
 
@@ -646,21 +689,30 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 | 09:25 | 1h00 | Activity | Kotoku-in - the Great Buddha (Daibutsu) |
 | 10:25 | 0h35 | Activity | Hase-dera |
 | 11:00 | 0h30 | Activity | Walk down to Yuigahama Beach |
-| 11:30 | 0h45 | Food | Lunch, Komachi-dori area, Kamakura |
-| 12:15 | 0h15 | Transit | Hase -> Kamakura, Enoden |
-| 12:30 | 1h45 | Rest | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) |
-| 14:15 | 1h00 | Transit | Kamakura -> Ueno, JR |
-| 15:15 | 1h00 | Rest | Downtime at the hotel |
-| 16:15 | - | Rest | Free time |
-| 17:30 | 1h00 | Food | Dinner - hangaku-discounted bento (tired evening after a long day) |
+| 11:30 | 0h20 | Transit | Walk to Yuigahama Stn, Enoden to Kamakura Stn |
+| 11:50 | 0h45 | Food | Lunch, Komachi-dori area, Kamakura |
+| 12:35 | 0h10 | Transit | Walk, Komachi-dori -> Tsurugaoka Hachimangu grounds |
+| 12:45 | 1h45 | Rest | Rest / infant naps - shaded bench at Tsurugaoka Hachimangu grounds (free) |
+| 14:30 | 0h10 | Transit | Walk, Tsurugaoka Hachimangu -> Kamakura Stn |
+| 14:40 | 1h00 | Transit | Kamakura -> Ueno, JR |
+| 15:40 | 1h00 | Rest | Downtime at the hotel |
+| 16:40 | - | Rest | Free time |
+| 17:30 | 1h00 | Food | Dinner - bento, bought at regular price (early evening is well before any hangaku markdown, so no discount applies) |
 | 18:30 | 0h45 | Admin | Bath, early night |
 
 - **Carrier only for Hase-dera** - the temple's terraced garden has steep stairs; the
   compact stroller does not work there. The stroller is fine on Yuigahama's flat sand
   approach and at Kotoku-in's open forecourt.
+- **The route back from the beach is now a real one.** A prior draft's schedule placed
+  a "Hase -> Kamakura" Enoden leg after lunch, but lunch is already at Komachi-dori
+  next to Kamakura Station - that leg has to happen between Yuigahama Beach and lunch,
+  not after it. It's now placed there (walk to Yuigahama Stn, short Enoden hop to
+  Kamakura), and two more short walks are added: Komachi-dori to the Tsurugaoka
+  Hachimangu rest bench, and Hachimangu back to the station for the JR ride home.
 - This is a travel-heavy day trip like Day 1: roughly 2h50 of seated train time is
   low-exertion, and the 1h45 rest block is built in; true walking/sightseeing time is
-  about 3h.
+  now about 3h40, up from a prior draft's 3h now that the beach-to-lunch and
+  Komachi-dori/Hachimangu walks are on the clock.
 - Kamakura is placed here, on a Tuesday, rather than on the Oct 10-12 Sports Day
   three-day weekend - the Enoden is a single-track local line to Hase, and
   boarding queues at Kamakura Station routinely run 30-45 minutes on a fine
@@ -679,7 +731,7 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 |---|---|---|---|---|
 | Breakfast | Rice, natto, boiled egg | Cooked in room, early start; Hotel kitchenette | 500 | 750 |
 | Lunch | Shirasu-don - raw and boiled whitebait piled over rice, with a side of miso soup | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
-| Dinner | Hangaku-discounted bento - grilled salmon, rice, pickled vegetables, tamagoyaki | Supermarket/conbini near hotel, discount timing | 750 | 1,850 |
+| Dinner | Bento - grilled salmon, rice, pickled vegetables, tamagoyaki, bought at full price (17:30 is too early for any supermarket markdown) | Supermarket/conbini near hotel | 750 | 3,700 |
 | Infant food | 3 formula feeds plus 2 Wakodo pouches (whitefish and rice; mixed vegetable) for Infant A; Infant B eats flaked bites of the bento salmon and rice, plus a Morinaga snack pouch | Conbini | n/a | 2,400 |
 
 Adult kcal: 500 + 700 + 750 = **1,950**.
@@ -705,10 +757,10 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 8,600 | 55 |
+| Food | 10,450 | 67 |
 | Transport | 8,220 | 53 |
 | Activities | 2,100 | 14 |
-| **Day total** | **36,920** | **238** |
+| **Day total** | **38,770** | **250** |
 
 **Running total after Day 7: ¥256,720 ($1,656)**
 
@@ -728,23 +780,33 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 | 07:15 | 0h20 | Transit | Ueno -> Shimbashi, JR Yamanote/Keihin-Tohoku Line |
 | 07:35 | 0h25 | Transit | Shimbashi -> Odaiba Kaihinkoen, Yurikamome |
 | 08:00 | 0h50 | Activity | Odaiba Marine Park beach + Rainbow Bridge view (quiet at this hour) |
-| 08:50 | 0h25 | Activity | Gundam Base Tokyo, DiverCity Tokyo Plaza 7F |
-| 09:15 | 0h20 | Transit | Odaiba Kaihinkoen -> Shijo-mae (Toyosu Market), Yurikamome |
-| 09:35 | 0h50 | Food | Breakfast - sushi/seafood grazing, Toyosu Market outer area |
-| 10:25 | 0h10 | Transit | Shijo-mae -> Shin-Toyosu, Yurikamome |
-| 10:35 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
-| 12:05 | 0h45 | Food | Lunch, Toyosu food court/market area |
-| 12:50 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
-| 14:35 | 0h45 | Transit | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
-| 15:20 | - | Rest | Downtime at the hotel |
+| 08:50 | 0h10 | Transit | Walk, Odaiba Marine Park -> DiverCity Tokyo Plaza |
+| 09:00 | 0h25 | Activity | Gundam Base Tokyo, DiverCity Tokyo Plaza 7F |
+| 09:25 | 0h20 | Transit | Odaiba Kaihinkoen -> Shijo-mae (Toyosu Market), Yurikamome |
+| 09:45 | 0h50 | Food | Breakfast - sushi/seafood grazing, Toyosu Market outer area |
+| 10:35 | 0h10 | Transit | Shijo-mae -> Shin-Toyosu, Yurikamome |
+| 10:45 | 1h30 | Activity | teamLab Planets TOKYO DMM (barefoot, water-based exhibits - pack spare clothes) |
+| 12:15 | 0h15 | Transit | Walk, teamLab Planets -> Toyosu food court/market area |
+| 12:30 | 0h45 | Food | Lunch, Toyosu food court/market area |
+| 13:15 | 1h45 | Rest | Rest / infant naps - quiet corner at Toyosu |
+| 15:00 | 0h45 | Transit | Shin-Toyosu -> Ueno via Yurikamome + JR (Shimbashi transfer) |
+| 15:45 | 1h45 | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - Odaiba, Toyosu Market, and teamLab Planets are all flat, wide, and stroller-friendly
   (teamLab Planets is barefoot indoors - the stroller waits at the entrance locker area).
-- Active out-of-lodging time: about 6h55, including the new Toyosu Market breakfast
-  stop and the Gundam Base detour, right at the edge of the ~7h cap. Hotel breakfast is
-  skipped this day in favor of the market.
+- **Odaiba, DiverCity, and Toyosu are three separate stops on the Yurikamome, not one
+  waterfront blob.** The Odaiba Marine Park beach and DiverCity Tokyo Plaza (Gundam
+  Base) are about a 10-minute walk apart, and teamLab Planets sits a further 15
+  minutes on foot from the Toyosu food court/market area used for lunch - both walks
+  are now on the clock.
+- Active out-of-lodging time: about 7h20, up from a prior draft's 6h55 now that those
+  two walks are accounted for - this pushes past the ~7h cap for the first time this
+  segment. It's absorbed by shortening the hotel downtime block before dinner rather
+  than pushing dinner or bath later, but it's honestly a fuller day than most others,
+  on top of the new Toyosu Market breakfast stop and the Gundam Base detour. Hotel
+  breakfast is skipped this day in favor of the market.
 - Toyosu Market's public hours run roughly 5am-5pm and it closes on scattered
   Wednesdays and Sundays through the year - but Wed 14 Oct 2026 is not one of its
   listed October closure dates (Oct 7, 21, 28 are the closed Wednesdays), so the
@@ -822,23 +884,27 @@ traditional garden.
 | 08:00 | 0h40 | Transit | Ueno -> Yokohama, JR Keihin-Tohoku Line |
 | 08:40 | 0h10 | Transit | Yokohama -> Minato Mirai, Minato Mirai Line |
 | 08:50 | 1h00 | Activity | Cup Noodles Museum, incl. My CUPNOODLES Factory hands-on |
-| 09:50 | 0h35 | Activity | Landmark Tower Sky Garden observation deck |
-| 10:25 | 0h20 | Transit | Minato Mirai -> Motomachi-Chukagai (Chinatown), Minato Mirai Line |
-| 10:45 | 0h45 | Food | Lunch - nikuman and steamed bun grazing, Yokohama Chinatown |
-| 11:30 | 0h20 | Transit | Chinatown -> Sankeien, bus |
-| 11:50 | 1h30 | Activity | Sankeien Garden |
-| 13:20 | 0h20 | Transit | Sankeien -> Yokohama Stn, bus |
-| 13:40 | 1h45 | Rest | Rest / infant naps near Yokohama Stn, continuing on the JR ride back |
+| 09:50 | 0h10 | Transit | Walk, Cup Noodles Museum -> Landmark Tower |
+| 10:00 | 0h35 | Activity | Landmark Tower Sky Garden observation deck |
+| 10:35 | 0h20 | Transit | Minato Mirai -> Motomachi-Chukagai (Chinatown), Minato Mirai Line |
+| 10:55 | 0h45 | Food | Lunch - nikuman and steamed bun grazing, Yokohama Chinatown |
+| 11:40 | 0h20 | Transit | Chinatown -> Sankeien, bus |
+| 12:00 | 1h30 | Activity | Sankeien Garden |
+| 13:30 | 0h20 | Transit | Sankeien -> Yokohama Stn, bus |
+| 13:50 | 1h35 | Rest | Rest / infant naps near Yokohama Stn, continuing on the JR ride back |
 | 15:25 | 0h40 | Transit | Yokohama -> Ueno, JR Keihin-Tohoku Line |
-| 16:05 | - | Rest | Downtime at the hotel |
+| 16:05 | 1h25 | Rest | Downtime at the hotel |
 | 17:30 | 1h00 | Food | Dinner, self-catered - fresh seafood/produce picked up in Yokohama |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended at Sankeien** - some garden paths and bridges have steps; the
   main approach paths are stroller-passable. Minato Mirai and Chinatown are flat.
-- A long day-trip day: about 8h20 out of lodging, including the 1h45 rest block. This is
-  the segment's other full day-trip alongside Kamakura - expect it to run fuller than a
-  home-base day.
+- Cup Noodles Museum and Landmark Tower are both in Minato Mirai but are separate
+  buildings about a 10-minute walk apart, not one stop - that walk is now on the clock.
+- A long day-trip day: about 8h30 out of lodging (up from a prior draft's 8h20 now
+  that the Cup Noodles-to-Landmark Tower walk is accounted for), including the 1h35
+  rest block. This is the segment's other full day-trip alongside Kamakura - expect it
+  to run fuller than a home-base day.
 
 ### Lodging
 
@@ -906,20 +972,26 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
 | 07:30 | 0h40 | Food | Breakfast, self-catered - using up the last of the Day 1 pantry stock |
 | 08:10 | 0h25 | Transit | Ueno -> Shinjuku, JR/Tokyo Metro |
 | 08:35 | 1h45 | Activity | Shinjuku Gyoen (doubles as the midday rest - shaded lawns, low stimulation) |
-| 10:20 | 0h45 | Food | Lunch, Ichiran ramen, Shinjuku |
-| 11:05 | 0h15 | Transit | Shinjuku -> Mitaka, JR Chuo Line |
-| 11:20 | 1h30 | Activity | Ghibli Museum (timed-entry slot) |
-| 12:50 | 0h35 | Activity | Inokashira Park + small zoo/aquarium corner, adjacent to the museum |
-| 13:25 | 0h45 | Transit | Mitaka -> Ueno, JR Chuo Line + transfer |
-| 14:10 | 1h00 | Rest | Downtime at the hotel |
-| 15:10 | 1h30 | Admin | Light packing prep for tomorrow's move to Kawaguchiko |
-| 16:40 | - | Rest | Free time |
+| 10:20 | 0h15 | Transit | Walk, Shinjuku Gyoen -> Ichiran, Shinjuku |
+| 10:35 | 0h45 | Food | Lunch, Ichiran ramen, Shinjuku |
+| 11:20 | 0h15 | Transit | Shinjuku -> Mitaka, JR Chuo Line |
+| 11:35 | 1h30 | Activity | Ghibli Museum (timed-entry slot) |
+| 13:05 | 0h05 | Transit | Walk, Ghibli Museum -> Inokashira Park (adjacent grounds) |
+| 13:10 | 0h35 | Activity | Inokashira Park + small zoo/aquarium corner, adjacent to the museum |
+| 13:45 | 0h45 | Transit | Mitaka -> Ueno, JR Chuo Line + transfer |
+| 14:30 | 1h00 | Rest | Downtime at the hotel |
+| 15:30 | 1h30 | Admin | Light packing prep for tomorrow's move to Kawaguchiko |
+| 17:00 | 0h30 | Rest | Free time |
 | 17:30 | 1h00 | Food | Dinner, self-catered - last Ueno meal |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
 - **Carrier recommended inside the Ghibli Museum** - the building has a spiral staircase
   and no strollers are permitted indoors; the stroller can be left folded at the entrance.
-- Active out-of-lodging time: about 6h, with the Shinjuku Gyoen block itself serving as
+- Shinjuku Gyoen's gates sit a real 15-minute walk from the Ichiran branch used for
+  lunch, and the museum-to-park move, though genuinely adjacent, still gets a short
+  5-minute Transit row rather than none.
+- Active out-of-lodging time: about 6h20, up from a prior draft's 6h now that those
+  two walks are on the clock, with the Shinjuku Gyoen block itself still serving as
   the mandatory rest.
 - **Ghibli Museum booking mechanics (honesty note):** tickets are not sold on the day and
   cannot simply be bought in advance at will. They are released by lottery on the 10th of
@@ -986,30 +1058,31 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 180,000 | 1,161 |
-| Food | 91,690 | 592 |
+| Food | 95,740 | 618 |
 | Transport | 33,510 | 216 |
 | Activities | 78,460 | 506 |
-| **Segment total** | **383,660** | **2,475** |
+| **Segment total** | **387,710** | **2,501** |
 
-Against envelope: Food +7.9% (target 85,000) - now further outside the ±5% tolerance,
-mostly from the Kappabashi-day yakitori dinner and the Day 2 Kabukiza-evening conbini
-meals replacing cheaper self-catered food, plus the small dango and gachapon-adjacent
-snack additions and the Day 5 Harajuku crepe stop (+¥700 net on Day 5, after the
-Sushiro lunch was swapped for a cheaper conbini picnic to make room for it); the
-nikuman swap on Day 9 pulls slightly the other way. Transport +17.2% (target 28,600) -
-still the segment's one real overage, essentially unchanged in kind from before this
-pass (Day 4's Shiba/Hamarikyu subway hops and water bus, plus the two small Ginza Line
-hops added for the Day 2 Kabukiza outing) and, as before, this line had almost no slack
-to begin with; the Day 5 reorder added no new transit, since the rockabilly/Takeshita
-stop and the walk into Shibuya are all on foot. Activities +15.4% (target 75,000) -
-swung well past the prior pass's shortfall now that this round adds real paid stops on
-top of the free ones: Kabukiza tickets (Day 2), the National Museum of Nature and
-Science (Day 3, only partly offset by reverting the Tokyo National Museum to
-permanent-collection-only), the Kappabashi workshop (Day 6), and the Cup Noodles Museum
-price correction (Day 9, it was simply mispriced before, not a new spend). Pokemon
-Centres, Tokyo Character Street, Gundam Base Tokyo, the expanded Akihabara stroll, and
-Day 5's new rockabilly-dancers and Takeshita Street/Laforet stops are all free and do
-not move this line. The net effect across all three lines is +23,160 over the combined
-Food+Transport+Activities envelope of ¥188,600 (85,000+28,600+75,000), still well
-inside the trip's ¥160,000 contingency line per MASTER-BRIEF. Lodging is the fixed
-¥18,000 x 10 nights from MASTER-BRIEF and is not flexed.
+Against envelope: Food +12.6% (target 85,000) - now further outside the ±5% tolerance.
+On top of the earlier causes (the Kappabashi-day yakitori dinner and the Day 2
+Kabukiza-evening conbini meals replacing cheaper self-catered food, the small dango
+and gachapon-adjacent snack additions, and the Day 5 Harajuku crepe stop, partly offset
+by the Day 9 nikuman swap), this pass adds +¥4,050 from making hangaku timing honest:
+Day 3's dinner and Day 7's tired-night bento were both claimed at a 50%-off price for
+meals bought well before any real markdown window, so both are now priced at full
+rate (+¥1,300 and +¥1,850 respectively), and Day 3 adds a genuine but modest late-
+evening top-up run (+¥900) once one adult can actually reach a hangaku window after
+bedtime. Transport +17.2% (target 28,600) - unchanged by this pass, since every
+inserted Transit row this round was a walk: Day 4's Shiba/Hamarikyu subway hops and
+water bus, plus the two small Ginza Line hops for the Day 2 Kabukiza outing, remain
+the whole of this line's overage. Activities +4.6% (target 75,000) - also unchanged by
+this pass; the paid stops are Kabukiza tickets (Day 2), the National Museum of Nature
+and Science (Day 3, partly offset by the Tokyo National Museum's permanent-collection-
+only visit), the Kappabashi workshop (Day 6), and the Cup Noodles Museum price
+correction (Day 9, a mispricing fix, not new spend). Pokemon Centres, Tokyo Character
+Street, Gundam Base Tokyo, the expanded Akihabara stroll, and Day 5's rockabilly-
+dancers and Takeshita Street/Laforet stops are all free and do not move this line. The
+net effect across all three lines is +19,110 over the combined Food+Transport+
+Activities envelope of ¥188,600 (85,000+28,600+75,000), still well inside the trip's
+¥160,000 contingency line per MASTER-BRIEF. Lodging is the fixed ¥18,000 x 10 nights
+from MASTER-BRIEF and is not flexed.
