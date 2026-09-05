@@ -247,6 +247,82 @@ end = doc.index("## Appendix C: The five places")
 section = re.sub(r"(\|\s)([\d,\s/]+?)(\s\|)", link_day_cell, doc[start:end])
 doc = doc[:start] + section + doc[end:]
 
+# Link each day's Transport modes to the transport appendix, and the appendix back.
+MODE_SECTION = [
+    ("area pass", "1. The rail pass decision"),
+    ("jr ticket office", "1. The rail pass decision"),
+    ("shinkansen", "2. The five intercity moves"),
+    ("liner", "2. The five intercity moves"),
+    ("highway bus", "2. The five intercity moves"),
+    ("keisei", "3. Airport transfers"),
+    ("nankai", "3. Airport transfers"),
+    ("haruka", "3. Airport transfers"),
+    ("tokyo metro", "Getting around Tokyo"), ("toei", "Getting around Tokyo"), ("yurikamome", "Getting around Tokyo"),
+    ("yamanote", "Getting around Tokyo"), ("keihin-tohoku", "Getting around Tokyo"), ("ueno tokyo line", "Getting around Tokyo"),
+    ("tokyo cruise", "Getting around Tokyo"), ("enoden", "Getting around Tokyo"), ("odakyu", "Getting around Tokyo"),
+    ("green line", "Getting around Kawaguchiko"), ("red line", "Getting around Kawaguchiko"),
+    ("blue line", "Getting around Kawaguchiko"), ("fujikyu railway", "Getting around Kawaguchiko"),
+    ("kyoto city bus", "Getting around Kyoto"), ("hankyu", "Getting around Kyoto"), ("keihan", "Getting around Kyoto"),
+    ("kintetsu", "Getting around Kyoto"), ("nara line", "Getting around Kyoto"), ("karasuma", "Getting around Kyoto"),
+    ("tozai", "Getting around Kyoto"), ("sagano", "Getting around Kyoto"), ("randen", "Getting around Kyoto"),
+    ("hiroden", "Getting around Hiroshima"), ("miyajima ferry", "Getting around Hiroshima"), ("jr sanyo", "Getting around Hiroshima"),
+    ("osaka metro", "Getting around Osaka"), ("osaka loop", "Getting around Osaka"), ("midosuji line", "Getting around Osaka"),
+]
+tp_start = re.search(r"^# Days 1-10\b", doc, re.M).start()
+tp_end = doc.index("# Appendices")
+tseg = doc[tp_start:tp_end]
+TR_HDR = "| Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |"
+mode_links = 0
+out3, in_tr = [], False
+for line in tseg.split("\n"):
+    if line.strip() == TR_HDR:
+        in_tr = True; out3.append(line); continue
+    if in_tr:
+        if not line.startswith("|"):
+            in_tr = False; out3.append(line); continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 2 or set(cells[1]) <= set("-: ") or "](#" in cells[1]:
+            out3.append(line); continue
+        low = cells[1].lower()
+        for kw, sec in MODE_SECTION:
+            if kw in low and anchors.get(sec):
+                cells[1] = f"[{cells[1]}](#{anchors[sec]})"
+                mode_links += 1
+                break
+        out3.append("| " + " | ".join(cells) + " |"); continue
+    out3.append(line)
+doc = doc[:tp_start] + "\n".join(out3) + doc[tp_end:]
+
+# Appendix H back to the days: Day columns in its tables, and prose "day N".
+h_start = doc.index("## Appendix H: Transport")
+h_end = doc.index("## Appendix I:")
+hseg = doc[h_start:h_end]
+back = 0
+out4, daycol = [], None
+for line in hseg.split("\n"):
+    if line.startswith("|"):
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if any(c.lower() == "day" for c in cells):
+            daycol = next(i for i, c in enumerate(cells) if c.lower() == "day")
+            out4.append(line); continue
+        if daycol is not None and daycol < len(cells) and re.fullmatch(r"\d{1,2}", cells[daycol]):
+            d = int(cells[daycol])
+            if d in day_anchor:
+                cells[daycol] = f"[{d}](#{day_anchor[d]})"; back += 1
+                out4.append("| " + " | ".join(cells) + " |"); continue
+        out4.append(line); continue
+    daycol = None
+    def prose(m):
+        global back
+        d = int(m.group(2))
+        if d in day_anchor:
+            back += 1
+            return f"{m.group(1)} [{d}](#{day_anchor[d]})"
+        return m.group(0)
+    out4.append(re.sub(r"\b([Dd]ay)\s+(\d{1,2})\b(?!\])", prose, line))
+doc = doc[:h_start] + "\n".join(out4) + doc[h_end:]
+print(f"transport modes linked: {mode_links}; appendix day references linked: {back}")
+
 # Link dish names inside each day's Meals table to their food-index section.
 FOOD_KEYWORDS = {
     "Noodles": ["houtou", "yakisoba", "ramen", "udon", "soba"],

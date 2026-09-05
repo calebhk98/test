@@ -46,19 +46,19 @@ Against the alternative of a nationwide JR Pass at ¥105,000 per adult (¥315,00
 
 ## 4. Getting around in each city
 
-### Tokyo
+### Getting around Tokyo
 The default is the Tokyo Metro and JR Yamanote/Keihin-Tohoku loop, paid per ride on an IC card rather than a day pass: fares run ¥150-240 per adult depending on the hop (Yamanote hops as low as ¥150-210, Metro lines like Ginza and Toei Mita/Oedo at ¥180-240). Day trips add the Yurikamome to Odaiba/Toyosu, the Minato Mirai Line into Yokohama, and the Enoden and a 1-day "Noriorikun" pass (¥800/adult) for Kamakura's coast. The Sumida River water bus (Tokyo Cruise) has been suspended fleet-wide since January 2026 with an unconfirmed restart date; the fallback is a direct JR Yamanote/Keihin-Tohoku ride, about the same total time minus the river view. Infants ride free throughout; party cost is simply the adult fare times three.
 
-### Kawaguchiko
+### Getting around Kawaguchiko
 The highway bus in (day 11) and the Mishima-Kawaguchiko Liner out (day 14) are both fully reserved coaches, not local transit. Around the lake itself, the Fuji Five Lakes sightseeing bus's 2-day Red/Green/Blue Line pass (¥1,500/adult, ¥4,500 for the party) covers every ride across days 12-13, cheaper than paying per boarding given how many stops the north- and west-shore days make. The Fuji Kyuko Line local train reaches Shimoyoshida for Chureito Pagoda. The ryokan's own free shuttle bus handles the last mile to and from Lakeland Hotel Mizunosato on day 13-14.
 
-### Kyoto
+### Getting around Kyoto
 Kyoto is a bus city, not a subway city: most of the ten-night stay moves on the Kyoto City Bus network, not the two-line subway. The old ¥700 all-day bus pass was discontinued in autumn 2023, so there is no day pass to buy - every bus ride here is priced as an individual IC-card (ICOCA/Suica) fare, a flat ¥230 per adult per boarding. The subway (Karasuma and Tozai lines) and the Hankyu Kyoto Line, which runs a station away from the Toyoko Inn Shijo-Omiya, cover specific routes like Nijo Castle, the Imperial Palace, and Arashiyama. Day trips add Kintetsu's kyuko (rapid express) for Nara, which undercuts the JR Nara Line on both fare and time, the JR Nara Line itself for Uji and Fushimi Inari, and the Keihan Main Line for the Fushimi sake district and Gion. Infants ride free on all of these; party cost is the adult fare times three.
 
-### Hiroshima
+### Getting around Hiroshima
 The Hiroden streetcar is a flat citywide fare regardless of distance, ¥220 per adult per ride, which makes it the cheap, easy way to cover Peace Memorial Park, Shukkei-en, and Hiroshima Castle without worrying about zones. The JR Sanyo Line local train and the JR Miyajima ferry reach Miyajima, both covered by the area pass through day 28. Infants ride free on the streetcar and the ferry alike.
 
-### Osaka
+### Getting around Osaka
 Osaka Metro (Midosuji, Sennichimae, Sakaisuji, and Tanimachi lines) is the backbone, at IC-card fares of roughly ¥240-290 per adult per ride. Namba, Dotonbori, Shinsekai, and Kuromon Ichiba sit close enough together that several connections between them are made on foot rather than by train. The one out-of-town hop, Osaka to Kobe on day 28, rides the JR Kobe Line Special Rapid on the area pass's final valid day, at ¥0.
 
 ## 5. How infants are charged

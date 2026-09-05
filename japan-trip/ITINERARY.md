@@ -253,7 +253,7 @@ Adult kcal: 450 + 650 + 900 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Narita Airport -> Keisei-Ueno | Keisei Access Express | 1h05 | 1,190 | 3,570 |
+| Narita Airport -> Keisei-Ueno | [Keisei Access Express](#3-airport-transfers) | 1h05 | 1,190 | 3,570 |
 
 Infants ride free (lap infants, no seat reservation needed on Access Express).
 
@@ -359,10 +359,10 @@ Adult kcal: 500 + 100 (dango) + 750 + 700 = **2,050**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Asakusa | Tokyo Metro Ginza Line | 0h20 | 180 | 540 |
-| Asakusa/Skytree Town -> Ueno | Tokyo Metro Ginza Line | 0h20 | 180 | 540 |
-| Ueno -> Higashi-Ginza (2 adults) | Tokyo Metro Ginza Line | 0h20 | 180 | 360 |
-| Higashi-Ginza -> Ueno (2 adults) | Tokyo Metro Ginza Line | 0h20 | 180 | 360 |
+| Ueno -> Asakusa | [Tokyo Metro Ginza Line](#getting-around-tokyo) | 0h20 | 180 | 540 |
+| Asakusa/Skytree Town -> Ueno | [Tokyo Metro Ginza Line](#getting-around-tokyo) | 0h20 | 180 | 540 |
+| Ueno -> Higashi-Ginza (2 adults) | [Tokyo Metro Ginza Line](#getting-around-tokyo) | 0h20 | 180 | 360 |
+| Higashi-Ginza -> Ueno (2 adults) | [Tokyo Metro Ginza Line](#getting-around-tokyo) | 0h20 | 180 | 360 |
 
 ### Activities
 
@@ -466,8 +466,8 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Hotel -> Ueno Park sights | Walk | - | 0 | 0 |
-| Ueno -> Akihabara | JR Yamanote/Keihin-Tohoku Line | 0h10 | 150 | 450 |
-| Akihabara -> Ueno | JR Yamanote/Keihin-Tohoku Line | 0h10 | 150 | 450 |
+| Ueno -> Akihabara | [JR Yamanote/Keihin-Tohoku Line](#getting-around-tokyo) | 0h10 | 150 | 450 |
+| Akihabara -> Ueno | [JR Yamanote/Keihin-Tohoku Line](#getting-around-tokyo) | 0h10 | 150 | 450 |
 
 ### Activities
 
@@ -585,10 +585,10 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Tokyo | JR Yamanote/Keihin-Tohoku Line | 0h10 | 150 | 450 |
-| Otemachi -> Onarimon | Toei Mita Line | 0h12 | 180 | 540 |
-| Onarimon -> Shiodome (via Daimon transfer) | Toei Mita Line + Toei Oedo Line | 0h15 | 180 | 540 |
-| Hamarikyu Pier -> Asakusa | Tokyo Cruise, Sumida River water bus | 0h40 | 1,000 | 3,000 |
+| Ueno -> Tokyo | [JR Yamanote/Keihin-Tohoku Line](#getting-around-tokyo) | 0h10 | 150 | 450 |
+| Otemachi -> Onarimon | [Toei Mita Line](#getting-around-tokyo) | 0h12 | 180 | 540 |
+| Onarimon -> Shiodome (via Daimon transfer) | [Toei Mita Line + Toei Oedo Line](#getting-around-tokyo) | 0h15 | 180 | 540 |
+| Hamarikyu Pier -> Asakusa | [Tokyo Cruise, Sumida River water bus](#getting-around-tokyo) | 0h40 | 1,000 | 3,000 |
 
 Infants assumed free on the water bus (standard under-6 policy), consistent with every
 other transit leg in this plan; not separately verified for this operator.
@@ -698,8 +698,8 @@ Adult kcal: 500 + 600 + 350 + 600 = **2,050**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Harajuku | JR Yamanote Line | 0h20 | 210 | 630 |
-| Shibuya -> Ueno | Tokyo Metro Ginza Line | 0h20 | 240 | 720 |
+| Ueno -> Harajuku | [JR Yamanote Line](#getting-around-tokyo) | 0h20 | 210 | 630 |
+| Shibuya -> Ueno | [Tokyo Metro Ginza Line](#getting-around-tokyo) | 0h20 | 240 | 720 |
 
 Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 
@@ -798,7 +798,7 @@ Adult kcal: 500 + 650 + 800 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hotel -> Nezu Shrine | Tokyo Metro Chiyoda Line, Ueno -> Nezu | 0h05 | 180 | 540 |
+| Hotel -> Nezu Shrine | [Tokyo Metro Chiyoda Line, Ueno -> Nezu](#getting-around-tokyo) | 0h05 | 180 | 540 |
 
 The rest of the day's moves are on foot and free: Nezu Shrine -> Yanaka Ginza (15
 min), Yanaka Ginza -> Yanaka Cemetery (10 min), the loop back to Yanaka Ginza for
@@ -893,9 +893,9 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Kamakura | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
-| Enoden 1-day pass "Noriorikun" | Enoden | - | 800 | 2,400 |
-| Kamakura -> Ueno | JR (Ueno Tokyo Line, direct) | 1h00 | 970 | 2,910 |
+| Ueno -> Kamakura | [JR (Ueno Tokyo Line, direct)](#getting-around-tokyo) | 1h00 | 970 | 2,910 |
+| Enoden 1-day pass "Noriorikun" | [Enoden](#getting-around-tokyo) | - | 800 | 2,400 |
+| Kamakura -> Ueno | [JR (Ueno Tokyo Line, direct)](#getting-around-tokyo) | 1h00 | 970 | 2,910 |
 
 ### Activities
 
@@ -985,10 +985,10 @@ for a market breakfast.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Shimbashi | JR Yamanote/Keihin-Tohoku Line | 0h20 | 200 | 600 |
-| Shimbashi -> Shin-Toyosu (via Odaiba Kaihinkoen and Shijo-mae/Toyosu Market) | Yurikamome | 0h55 | 470 | 1,410 |
-| Shin-Toyosu -> Shimbashi | Yurikamome | 0h25 | 470 | 1,410 |
-| Shimbashi -> Ueno | JR Yamanote/Keihin-Tohoku Line | 0h20 | 200 | 600 |
+| Ueno -> Shimbashi | [JR Yamanote/Keihin-Tohoku Line](#getting-around-tokyo) | 0h20 | 200 | 600 |
+| Shimbashi -> Shin-Toyosu (via Odaiba Kaihinkoen and Shijo-mae/Toyosu Market) | [Yurikamome](#getting-around-tokyo) | 0h55 | 470 | 1,410 |
+| Shin-Toyosu -> Shimbashi | [Yurikamome](#getting-around-tokyo) | 0h25 | 470 | 1,410 |
+| Shimbashi -> Ueno | [JR Yamanote/Keihin-Tohoku Line](#getting-around-tokyo) | 0h20 | 200 | 600 |
 
 Fare assumes one continuous IC-card journey Shimbashi-Shin-Toyosu with a stopover at
 Toyosu Market; a separately purchased ticket for each leg could run somewhat higher.
@@ -1072,10 +1072,10 @@ Adult kcal: 500 + 800 + 700 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Yokohama | JR Keihin-Tohoku Line | 0h40 | 580 | 1,740 |
+| Ueno -> Yokohama | [JR Keihin-Tohoku Line](#getting-around-tokyo) | 0h40 | 580 | 1,740 |
 | Yokohama -> Motomachi-Chukagai (via Minato Mirai) | Minato Mirai Line | 0h30 | 210 | 630 |
 | Chinatown/Sankeien area -> Yokohama Stn | Bus | 0h40 | 220 | 660 |
-| Yokohama -> Ueno | JR Keihin-Tohoku Line | 0h40 | 580 | 1,740 |
+| Yokohama -> Ueno | [JR Keihin-Tohoku Line](#getting-around-tokyo) | 0h40 | 580 | 1,740 |
 | Local return leg (Sankeien bus + Minato Mirai Line back) | Bus/Minato Mirai Line | 0h20 | 220/210 | 1,290 |
 
 Total party transport this day: ¥6,060 (see Day 9 Cost table).
@@ -1169,7 +1169,7 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Ueno -> Shinjuku | JR Yamanote/Chuo Line | 0h25 | 210 | 630 |
+| Ueno -> Shinjuku | [JR Yamanote/Chuo Line](#getting-around-tokyo) | 0h25 | 210 | 630 |
 | Shinjuku -> Mitaka | JR Chuo Line | 0h15 | 230 | 690 |
 | Mitaka -> Ueno | JR Chuo Line + transfer | 0h35 | 400 | 1,200 |
 
@@ -1297,8 +1297,8 @@ Adult kcal sum: 550 + 700 + 750 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Iriya/Ueno area → Shinjuku Stn | JR Yamanote Line | 0h35 | 200 | 600 |
-| Shinjuku (Busta) → Kawaguchiko Stn | Highway bus, Fujikyu/Keio (all reserved seats) | 1h45 | 2,000 (online) | 8,100 - includes a paid seat for the 20-month-old (operator advises against lap-riding on highway coaches and can refuse boarding without a reserved seat per rider); the 12-month-old rides as a lap infant |
+| Iriya/Ueno area → Shinjuku Stn | [JR Yamanote Line](#getting-around-tokyo) | 0h35 | 200 | 600 |
+| Shinjuku (Busta) → Kawaguchiko Stn | [Highway bus, Fujikyu/Keio (all reserved seats)](#2-the-five-intercity-moves) | 1h45 | 2,000 (online) | 8,100 - includes a paid seat for the 20-month-old (operator advises against lap-riding on highway coaches and can refuse boarding without a reserved seat per rider); the 12-month-old rides as a lap infant |
 | Kawaguchiko Stn → K's House Mt. Fuji | On foot | 0h15 | 0 | 0 |
 | K's House → Kawaguchiko Stn | On foot | 0h15 | 0 | 0 |
 | Kawaguchiko Stn ↔ Shimoyoshida Stn | Fuji Kyuko Line, round trip | 0h30 riding | 220 (440 round trip) | 1,320 - infants ride free as accompanied under-school-age children, standard practice on Japanese railways (planning estimate) |
@@ -1478,12 +1478,12 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | K's House → Kawaguchiko Stn (morning) | On foot | 0h15 | 0 | 0 |
-| Kawaguchiko Stn → Oshino Hakkai | Green Line bus | 0h30 | 0 (covered by 2-day pass, purchased Day 12) | 0 |
-| Oshino Hakkai → Kawaguchiko | Green Line bus | 0h30 | 0 (covered by pass) | 0 |
+| Kawaguchiko Stn → Oshino Hakkai | [Green Line bus](#getting-around-kawaguchiko) | 0h30 | 0 (covered by 2-day pass, purchased Day 12) | 0 |
+| Oshino Hakkai → Kawaguchiko | [Green Line bus](#getting-around-kawaguchiko) | 0h30 | 0 (covered by pass) | 0 |
 | Kawaguchiko Stn → K's House (midday return) | On foot | 0h15 | 0 | 0 |
 | K's House → Kawaguchiko Stn (after checkout) | On foot | 0h15 | 0 | 0 |
-| Kawaguchiko Stn → Saiko Iyashi-no-Sato Nenba | Green Line bus | 0h25 | 0 (covered by pass) | 0 |
-| Iyashi-no-Sato → Kawaguchiko Stn | Green Line bus | 0h25 | 0 (covered by pass) | 0 |
+| Kawaguchiko Stn → Saiko Iyashi-no-Sato Nenba | [Green Line bus](#getting-around-kawaguchiko) | 0h25 | 0 (covered by pass) | 0 |
+| Iyashi-no-Sato → Kawaguchiko Stn | [Green Line bus](#getting-around-kawaguchiko) | 0h25 | 0 (covered by pass) | 0 |
 | Kawaguchiko Stn ↔ K's House (collect stored luggage; slower on the return leg with bags and stroller) | On foot | 0h35 | 0 | 0 |
 | Kawaguchiko Stn → Lakeland Hotel Mizunosato | Ryokan's free shuttle bus (call ahead; runs ~14:30-20:00) | 0h15 | 0 | 0 |
 
@@ -1569,9 +1569,9 @@ Adult kcal sum: 550 + 700 + 750 = **2,000**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Lakeland Hotel Mizunosato → Kawaguchiko Stn bus terminal | Ryokan's free morning shuttle bus (call ahead) | 0h15 | 0 | 0 |
-| Kawaguchiko → Mishima Stn | Mishima-Kawaguchiko Liner, Fujikyu (all seats reserved) | 1h25 | 2,500 (online) | 10,000 - all 5 seats reserved, both infants included, since this is a fully-reserved coach with no standing/lap travel |
-| Mishima → Kyoto | Tokaido Shinkansen Hikari, unreserved | 1h50 | 10,780 | 32,340 (infants free; stroller exempt from oversized-baggage reservation) |
-| Kyoto Stn → Shijo-Omiya | Kyoto City Bus | 0h20 | 230 | 690 |
+| Kawaguchiko → Mishima Stn | [Mishima-Kawaguchiko Liner, Fujikyu (all seats reserved)](#2-the-five-intercity-moves) | 1h25 | 2,500 (online) | 10,000 - all 5 seats reserved, both infants included, since this is a fully-reserved coach with no standing/lap travel |
+| Mishima → Kyoto | [Tokaido Shinkansen Hikari, unreserved](#2-the-five-intercity-moves) | 1h50 | 10,780 | 32,340 (infants free; stroller exempt from oversized-baggage reservation) |
+| Kyoto Stn → Shijo-Omiya | [Kyoto City Bus](#getting-around-kyoto) | 0h20 | 230 | 690 |
 
 Allow the full 20-30 min buffer at Mishima; the schedule above books 20 min.
 
@@ -1676,8 +1676,8 @@ Adult kcal: 500 + 750 + 800 = **2,050/adult**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Shijo-Omiya → Kyoto Station | City bus | 0h20 | 230 | 690 |
-| Kyoto Station → Inari | JR Nara Line | 0h10 | 150 | 450 |
-| Inari → Kyoto Station | JR Nara Line | 0h10 | 150 | 450 |
+| Kyoto Station → Inari | [JR Nara Line](#getting-around-kyoto) | 0h10 | 150 | 450 |
+| Inari → Kyoto Station | [JR Nara Line](#getting-around-kyoto) | 0h10 | 150 | 450 |
 | Kyoto Station → Shijo-Omiya | City bus | 0h20 | 230 | 690 |
 
 Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/from To-ji and Nishiki Market are on foot, ¥0.
@@ -1763,10 +1763,10 @@ Adult kcal: 500 + 650 + 800 = **1,950/adult**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Omiya → Karasuma | Hankyu Kyoto Line | 0h10 | 180 | 540 |
-| Karasuma (Shijo) → Marutamachi | Subway Karasuma Line | 0h15 | 220 | 660 |
+| Omiya → Karasuma | [Hankyu Kyoto Line](#getting-around-kyoto) | 0h10 | 180 | 540 |
+| Karasuma (Shijo) → Marutamachi | [Subway Karasuma Line](#getting-around-kyoto) | 0h15 | 220 | 660 |
 | Marutamachi → Shijo-Omiya (midday return) | Subway + City Bus, 1 transfer | 0h45 | ~450 (220 subway + 230 bus) | 1,350 |
-| Omiya → Karasuma (afternoon) | Hankyu Kyoto Line | 0h10 | 180 | 540 |
+| Omiya → Karasuma (afternoon) | [Hankyu Kyoto Line](#getting-around-kyoto) | 0h10 | 180 | 540 |
 | Karasuma → Higashiyama, Karasuma Line + Tozai Line (1 transfer at Karasuma-Oike) | Subway | 0h20 | 290 | 870 |
 | Higashiyama/Okazaki → Shijo-Omiya | Taxi | 0h30 | n/a - flat/metered fare | 2,200 |
 
@@ -1853,9 +1853,9 @@ Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Omiya → Arashiyama (via Katsura) | Hankyu Kyoto Line/Arashiyama Line | 0h20 | 220 | 660 |
+| Omiya → Arashiyama (via Katsura) | [Hankyu Kyoto Line/Arashiyama Line](#getting-around-kyoto) | 0h20 | 220 | 660 |
 | Kameoto → Saga-Arashiyama | JR San-in Line | 0h10 | 240 | 720 |
-| Arashiyama → Omiya (via Katsura) | Hankyu Arashiyama/Kyoto Line | 0h20 | 220 | 660 |
+| Arashiyama → Omiya (via Katsura) | [Hankyu Arashiyama/Kyoto Line](#getting-around-kyoto) | 0h20 | 220 | 660 |
 
 Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed under Activities, not here, since it's the sightseeing product rather than a point-to-point commute.
 
@@ -2043,7 +2043,7 @@ Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Shijo-Omiya → Marutamachi (Kyoto Gyoen/Gosho) | Hankyu Kyoto Line + Subway Karasuma Line, 1 transfer | 0h30 | 260 | 780 |
+| Shijo-Omiya → Marutamachi (Kyoto Gyoen/Gosho) | [Hankyu Kyoto Line + Subway Karasuma Line, 1 transfer](#getting-around-kyoto) | 0h30 | 260 | 780 |
 | (Kyoto Gyoen → Nijo Castle: walked, ~1.3km flat) | Walk | 0h20 | 0 | 0 |
 | Nijo Castle → Kinkaku-ji-michi | Raku city bus (loop line) | 0h25 | 230 | 690 |
 | Kinkaku-ji-michi → Ryoan-ji-mae | City bus (2 stops) | 0h15 | 230 | 690 |
@@ -2183,9 +2183,9 @@ Adult kcal: 500 + 650 + 800 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hotel -> Kyoto Stn | Kyoto city bus | 0h15 | 230 | 690 |
-| Kyoto Stn -> Kintetsu-Nara | Kintetsu Kyoto Line, kyuko (express) | 0h44 | 690 | 2,070 |
-| Kintetsu-Nara -> Kyoto Stn | Kintetsu Kyoto Line, kyuko | 0h44 | 690 | 2,070 |
+| Hotel -> Kyoto Stn | [Kyoto city bus](#getting-around-kyoto) | 0h15 | 230 | 690 |
+| Kyoto Stn -> Kintetsu-Nara | [Kintetsu Kyoto Line, kyuko (express)](#getting-around-kyoto) | 0h44 | 690 | 2,070 |
+| Kintetsu-Nara -> Kyoto Stn | [Kintetsu Kyoto Line, kyuko](#getting-around-kyoto) | 0h44 | 690 | 2,070 |
 | Kyoto Stn -> Hotel | On foot | 0h28 | 0 | 0 |
 
 Kintetsu (kyuko/rapid express) undercuts the JR Nara Line for this route and needs
@@ -2281,9 +2281,9 @@ Adult kcal: 500 + 700 + 780 = **1,980**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hotel -> Kyoto Stn | Kyoto city bus | 0h15 | 230 | 690 |
-| Kyoto Stn -> Uji Stn | JR Nara Line, rapid | 0h18 | 240 | 720 |
-| Uji Stn -> Kyoto Stn | JR Nara Line, rapid | 0h18 | 240 | 720 |
+| Hotel -> Kyoto Stn | [Kyoto city bus](#getting-around-kyoto) | 0h15 | 230 | 690 |
+| Kyoto Stn -> Uji Stn | [JR Nara Line, rapid](#getting-around-kyoto) | 0h18 | 240 | 720 |
+| Uji Stn -> Kyoto Stn | [JR Nara Line, rapid](#getting-around-kyoto) | 0h18 | 240 | 720 |
 | Kyoto Stn -> Hotel | On foot | 0h28 | 0 | 0 |
 
 For Uji, JR's Nara Line rapid actually undercuts a Keihan routing (which needs a
@@ -2388,12 +2388,12 @@ Adult kcal: 500 + 700 + 800 = **2,000**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Hotel -> Omiya Stn | On foot | 0h05 | 0 | 0 |
-| Omiya -> Kawaramachi | Hankyu Kyoto Line, local | 0h06 | 170 | 510 |
+| Omiya -> Kawaramachi | [Hankyu Kyoto Line, local](#getting-around-kyoto) | 0h06 | 170 | 510 |
 | Kawaramachi (Hankyu) -> Gion-Shijo (Keihan) | On foot | 0h08 | 0 | 0 |
-| Gion-Shijo -> Chushojima | Keihan Main Line, kyuko (semi-express) | 0h15 | 270 | 810 |
-| Chushojima -> Gion-Shijo | Keihan Main Line, kyuko | 0h15 | 270 | 810 |
+| Gion-Shijo -> Chushojima | [Keihan Main Line, kyuko (semi-express)](#getting-around-kyoto) | 0h15 | 270 | 810 |
+| Chushojima -> Gion-Shijo | [Keihan Main Line, kyuko](#getting-around-kyoto) | 0h15 | 270 | 810 |
 | Gion-Shijo (Keihan) -> Kawaramachi (Hankyu) | On foot | 0h08 | 0 | 0 |
-| Kawaramachi -> Omiya | Hankyu Kyoto Line, local | 0h06 | 170 | 510 |
+| Kawaramachi -> Omiya | [Hankyu Kyoto Line, local](#getting-around-kyoto) | 0h06 | 170 | 510 |
 | Omiya Stn -> Hotel | On foot | 0h05 | 0 | 0 |
 
 Party transport totals ¥2,640 round trip: Omiya-Kawaramachi is a verified ¥170/adult
@@ -2510,10 +2510,10 @@ Adult kcal: 500 + 650 + 850 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hotel -> Nishijin | Kyoto city bus | 0h12 | 230 | 690 |
-| Nishijin -> Yumeyakata Gojo Shop | Kyoto city bus | 0h25 | 230 | 690 |
+| Hotel -> Nishijin | [Kyoto city bus](#getting-around-kyoto) | 0h12 | 230 | 690 |
+| Nishijin -> Yumeyakata Gojo Shop | [Kyoto city bus](#getting-around-kyoto) | 0h25 | 230 | 690 |
 | Gojo Shop -> Kamo riverbank -> Gojo Shop | On foot | 0h15 | 0 | 0 |
-| Gojo Shop -> Hotel | Kyoto city bus | 0h18 | 230 | 690 |
+| Gojo Shop -> Hotel | [Kyoto city bus](#getting-around-kyoto) | 0h18 | 230 | 690 |
 
 Three city-bus hops today reach and return from the kimono shop; still no
 private-rail or JR leg, so this remains a low-transport-cost day. Infants ride
@@ -2637,10 +2637,10 @@ Adult kcal: 550 + 650 + 750 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Omiya-eki-mae -> Kyoto Stn | Kyoto city bus | 0h20 | 230 | 690 |
-| JR Kansai-Hiroshima Area Pass (5-day), purchased at Kyoto Stn | JR ticket office | - | 17,000 | 51,000 |
-| Kyoto -> Hiroshima | Sanyo Shinkansen (Hikari/Sakura, unreserved) | 1h40 | 10,770 (walk-up) | 0 - covered by pass |
-| Hiroshima Stn -> Peace Memorial Park | Hiroden streetcar | 0h15 | 220 | 660 |
+| Omiya-eki-mae -> Kyoto Stn | [Kyoto city bus](#getting-around-kyoto) | 0h20 | 230 | 690 |
+| JR Kansai-Hiroshima Area Pass (5-day), purchased at Kyoto Stn | [JR ticket office](#1-the-rail-pass-decision) | - | 17,000 | 51,000 |
+| Kyoto -> Hiroshima | [Sanyo Shinkansen (Hikari/Sakura, unreserved)](#2-the-five-intercity-moves) | 1h40 | 10,770 (walk-up) | 0 - covered by pass |
+| Hiroshima Stn -> Peace Memorial Park | [Hiroden streetcar](#getting-around-hiroshima) | 0h15 | 220 | 660 |
 
 The JR Kansai-Hiroshima Area Pass is charged in full here: **¥17,000/adult x 3 = ¥51,000**, infants
 free. It is valid **Oct 30 - Nov 3 (Days 24-28)**. This shinkansen leg alone would cost ¥10,770/adult
@@ -2741,8 +2741,8 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Hotel -> Hiroshima Stn | Walk | 0h15 | - | 0 |
-| Hiroshima Stn -> Miyajimaguchi Stn | JR Sanyo Line local | 0h25 | 420 (walk-up) | 0 - covered by pass |
-| Miyajimaguchi pier <-> Miyajima pier (round trip) | JR Miyajima ferry | 0h20 total | 400 rt (walk-up) | 0 - covered by pass |
+| Hiroshima Stn -> Miyajimaguchi Stn | [JR Sanyo Line local](#getting-around-hiroshima) | 0h25 | 420 (walk-up) | 0 - covered by pass |
+| Miyajimaguchi pier <-> Miyajima pier (round trip) | [JR Miyajima ferry](#getting-around-hiroshima) | 0h20 total | 400 rt (walk-up) | 0 - covered by pass |
 | Miyajima -> Hiroshima Stn (return) | JR ferry + Sanyo Line local | 0h45 | 420 (walk-up) | 0 - covered by pass |
 | Hiroshima Stn -> hotel | Walk | 0h15 | - | 0 |
 
@@ -2844,8 +2844,8 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hotel -> Genbaku Dome-mae | Hiroden streetcar (flat fare) | 0h15 | 220 | 660 |
-| Hotel -> Shukkei-en | Hiroden streetcar (flat fare) | 0h15 | 220 | 660 |
+| Hotel -> Genbaku Dome-mae | [Hiroden streetcar (flat fare)](#getting-around-hiroshima) | 0h15 | 220 | 660 |
+| Hotel -> Shukkei-en | [Hiroden streetcar (flat fare)](#getting-around-hiroshima) | 0h15 | 220 | 660 |
 | Shukkei-en -> Castle -> hotel | Walk + streetcar | 0h35 total | - | 0 (included above where ridden) |
 
 Hiroden's flat citywide fare makes the streetcar the cheap, easy way to move around Hiroshima;
@@ -2940,8 +2940,8 @@ Adult kcal: 550 + 700 + 750 = **2,000**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Hiroshima Stn -> Shin-Osaka | Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved) | 1h30 | 9,710 (walk-up) | 0 - covered by pass |
-| Shin-Osaka -> Namba | Osaka Metro Midosuji Line | 0h20 | 290 | 870 |
+| Hiroshima Stn -> Shin-Osaka | [Sanyo/Tokaido Shinkansen (Hikari/Sakura, unreserved)](#2-the-five-intercity-moves) | 1h30 | 9,710 (walk-up) | 0 - covered by pass |
+| Shin-Osaka -> Namba | [Osaka Metro Midosuji Line](#getting-around-osaka) | 0h20 | 290 | 870 |
 
 This shinkansen leg alone would cost ¥9,710/adult (¥29,130 for 3 adults) at walk-up fares - the
 second of the pass's two big intercity legs. **The JR Kansai-Hiroshima Area Pass bought on Day 24
@@ -3055,12 +3055,12 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Namba Stn -> Yodoyabashi Stn | Osaka Metro Midosuji Line | 0:10 | 240 | 720 |
-| Yodoyabashi Stn -> Osaka/Umeda Stn | Osaka Metro Midosuji Line | 0:15 | 240 | 720 |
-| Osaka Stn -> Kobe-Sannomiya Stn | JR Kobe Line Special Rapid - covered by JR Kansai-Hiroshima Area Pass, final valid day | 0:25 | 0 | 0 |
+| Namba Stn -> Yodoyabashi Stn | [Osaka Metro Midosuji Line](#getting-around-osaka) | 0:10 | 240 | 720 |
+| Yodoyabashi Stn -> Osaka/Umeda Stn | [Osaka Metro Midosuji Line](#getting-around-osaka) | 0:15 | 240 | 720 |
+| Osaka Stn -> Kobe-Sannomiya Stn | [JR Kobe Line Special Rapid - covered by JR Kansai-Hiroshima Area Pass, final valid day](#1-the-rail-pass-decision) | 0:25 | 0 | 0 |
 | Sannomiya Stn -> Kobe Stn (Kobe Harborland) | JR Kobe Line, one stop - covered by pass; plus a 5-8 min walk from Kobe Stn to the museum | 0:15 | 0 | 0 |
 | Kobe-Sannomiya Stn -> Osaka Stn | JR Kobe Line Special Rapid - covered by pass | 0:25 | 0 | 0 |
-| Osaka/Umeda Stn -> Namba Stn | Osaka Metro Midosuji Line | 0:15 | 240 | 720 |
+| Osaka/Umeda Stn -> Namba Stn | [Osaka Metro Midosuji Line](#getting-around-osaka) | 0:15 | 240 | 720 |
 
 ### Activities
 
@@ -3149,10 +3149,10 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
-| Namba Stn -> Tanimachi 4-chome Stn | Osaka Metro (Sennichimae -> Tanimachi Line, one transfer) | 0:20 | 270 | 810 |
-| Tanimachi 4-chome Stn -> Nippombashi Stn | Osaka Metro Sennichimae Line | 0:20 | 240 | 720 |
+| Namba Stn -> Tanimachi 4-chome Stn | [Osaka Metro (Sennichimae -> Tanimachi Line, one transfer)](#getting-around-osaka) | 0:20 | 270 | 810 |
+| Tanimachi 4-chome Stn -> Nippombashi Stn | [Osaka Metro Sennichimae Line](#getting-around-osaka) | 0:20 | 240 | 720 |
 | Kuromon Ichiba -> Shinsekai | Walk | 0:25 | 0 | 0 |
-| Shinsekai -> Namba/Dotonbori | Osaka Metro Sakaisuji/Sennichimae Line | 0:20 | 240 | 720 |
+| Shinsekai -> Namba/Dotonbori | [Osaka Metro Sakaisuji/Sennichimae Line](#getting-around-osaka) | 0:20 | 240 | 720 |
 | Dotonbori -> hotel | Walk | 0:15 | 0 | 0 |
 
 ### Activities
@@ -3224,7 +3224,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Leg | Mode | Duration | Adult fare (¥) | Party cost (¥) |
 |---|---|---|---|---|
 | Hotel -> Nankai Namba Stn | Walk | 0:15 | 0 | 0 |
-| Namba Stn -> Kansai Airport Stn | Nankai Airport Line, rapid express | 0:45 | 930 | 2,790 |
+| Namba Stn -> Kansai Airport Stn | [Nankai Airport Line, rapid express](#3-airport-transfers) | 0:45 | 930 | 2,790 |
 
 ### Activities
 
@@ -4783,16 +4783,16 @@ Everything about moving around this trip lives here: the rail pass math, the fiv
 
 ### 1. The rail pass decision
 
-The trip buys one regional rail pass: the **JR Kansai-Hiroshima Area Pass**, 5 days, ¥17,000 per adult, ¥51,000 for the three adults. It is purchased at Kyoto Station on the morning of day 24 and is valid 30 October through 3 November (days 24-28).
+The trip buys one regional rail pass: the **JR Kansai-Hiroshima Area Pass**, 5 days, ¥17,000 per adult, ¥51,000 for the three adults. It is purchased at Kyoto Station on the morning of day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) and is valid 30 October through 3 November (days 24-28).
 
 What it covers:
-- Kyoto to Hiroshima, Sanyo Shinkansen (day 24)
-- Hiroshima's local JR line out to Miyajimaguchi (day 25)
-- The JR Miyajima ferry (day 25)
-- Hiroshima to Shin-Osaka, Sanyo/Tokaido Shinkansen (day 27)
-- A day trip out of Osaka to Kobe on its final valid day (day 28)
+- Kyoto to Hiroshima, Sanyo Shinkansen (day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima))
+- Hiroshima's local JR line out to Miyajimaguchi (day [25](#day-25---saturday-october-31-2026---miyajima-itsukushima))
+- The JR Miyajima ferry (day [25](#day-25---saturday-october-31-2026---miyajima-itsukushima))
+- Hiroshima to Shin-Osaka, Sanyo/Tokaido Shinkansen (day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka))
+- A day trip out of Osaka to Kobe on its final valid day (day [28](#day-28---tuesday-november-3-2026---osaka))
 
-What it does not cover: any Kyoto transit before day 24 (city buses, Hankyu, the subway, Kintetsu, Keihan), the Hiroden streetcar in Hiroshima, Osaka Metro on days 27-29, the Nankai Airport Line on day 30, or anything in the Tokyo/Kawaguchiko segment.
+What it does not cover: any Kyoto transit before day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) (city buses, Hankyu, the subway, Kintetsu, Keihan), the Hiroden streetcar in Hiroshima, Osaka Metro on days 27-29, the Nankai Airport Line on day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix), or anything in the Tokyo/Kawaguchiko segment.
 
 The arithmetic against point-to-point walk-up fares for the same legs:
 
@@ -4803,7 +4803,7 @@ The arithmetic against point-to-point walk-up fares for the same legs:
 | Hiroshima -> Shin-Osaka shinkansen | ¥9,710 | ¥29,130 |
 | **Subtotal, three legs only** | | **¥63,900** |
 
-Those three legs alone would cost ¥63,900 walk-up against a ¥51,000 pass, a saving of ¥12,900 for three adults before the day 28 Kobe day trip is even counted for free. The two shinkansen legs by themselves (¥61,440 combined) are most of that gap on their own.
+Those three legs alone would cost ¥63,900 walk-up against a ¥51,000 pass, a saving of ¥12,900 for three adults before the day [28](#day-28---tuesday-november-3-2026---osaka) Kobe day trip is even counted for free. The two shinkansen legs by themselves (¥61,440 combined) are most of that gap on their own.
 
 Against the alternative of a nationwide JR Pass at ¥105,000 per adult (¥315,000 for three adults, since the pass has no group rate), the regional pass is not close: the trip's need for long-distance rail is concentrated in this one stretch of legs rather than spread across weeks of shinkansen travel, so paying for a pass that covers the whole country buys nothing extra here.
 
@@ -4811,46 +4811,46 @@ Against the alternative of a nationwide JR Pass at ¥105,000 per adult (¥315,00
 
 | Leg | Day | Mode | Duration | Adult fare ¥ | Party ¥ | Notes |
 |---|---|---|---|---|---|---|
-| Tokyo (Shinjuku, Busta) -> Kawaguchiko | 11 | Highway bus, Fujikyu/Keio, all reserved seats | 1h45 | 2,000 (online) | 8,100 | Paid seat bought for the 20-month-old; the 12-month-old rides as a lap infant |
-| Kawaguchiko -> Mishima -> Kyoto | 14 | Mishima-Kawaguchiko Liner (Fujikyu, all seats reserved), then Tokaido Shinkansen Hikari (unreserved) | 1h25 + 1h50 | 2,500 + 10,780 | 10,000 + 32,340 = 42,340 | All 5 seats reserved on the bus, both infants included, since it is a fully-reserved coach with no lap travel; the shinkansen leg is unreserved and both infants ride free; allow 20-30 min to transfer at Mishima |
-| Kyoto -> Hiroshima | 24 | Sanyo Shinkansen, Hikari/Sakura, unreserved | 1h40 | 10,770 (walk-up) | 0, covered by pass | The JR Kansai-Hiroshima Area Pass is bought this morning and charged in full (¥51,000 for three) against this and the remaining pass-covered legs |
-| Hiroshima -> Osaka | 27 | Sanyo/Tokaido Shinkansen (unreserved) + Osaka Metro Midosuji Line | 1h30 + 0h20 | 9,710 (walk-up) + 290 | 0 (pass) + 870 = 870 | The shinkansen leg would run ¥29,130 for three adults at walk-up fares; only the Shin-Osaka to Namba subway hop is paid out of pocket |
-| Osaka (Namba) -> Kansai Airport | 30 | Nankai Airport Line, rapid express | 0h45 | 930 | 2,790 | The JR Kansai-Hiroshima Area Pass expired at the end of day 28, so this fare is paid in full |
+| Tokyo (Shinjuku, Busta) -> Kawaguchiko | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Highway bus, Fujikyu/Keio, all reserved seats | 1h45 | 2,000 (online) | 8,100 | Paid seat bought for the 20-month-old; the 12-month-old rides as a lap infant |
+| Kawaguchiko -> Mishima -> Kyoto | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Mishima-Kawaguchiko Liner (Fujikyu, all seats reserved), then Tokaido Shinkansen Hikari (unreserved) | 1h25 + 1h50 | 2,500 + 10,780 | 10,000 + 32,340 = 42,340 | All 5 seats reserved on the bus, both infants included, since it is a fully-reserved coach with no lap travel; the shinkansen leg is unreserved and both infants ride free; allow 20-30 min to transfer at Mishima |
+| Kyoto -> Hiroshima | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Sanyo Shinkansen, Hikari/Sakura, unreserved | 1h40 | 10,770 (walk-up) | 0, covered by pass | The JR Kansai-Hiroshima Area Pass is bought this morning and charged in full (¥51,000 for three) against this and the remaining pass-covered legs |
+| Hiroshima -> Osaka | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Sanyo/Tokaido Shinkansen (unreserved) + Osaka Metro Midosuji Line | 1h30 + 0h20 | 9,710 (walk-up) + 290 | 0 (pass) + 870 = 870 | The shinkansen leg would run ¥29,130 for three adults at walk-up fares; only the Shin-Osaka to Namba subway hop is paid out of pocket |
+| Osaka (Namba) -> Kansai Airport | [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Nankai Airport Line, rapid express | 0h45 | 930 | 2,790 | The JR Kansai-Hiroshima Area Pass expired at the end of day 28, so this fare is paid in full |
 
 ### 3. Airport transfers
 
-**Arrival, day 1: Narita to Tokyo.** The Keisei Access Express runs Narita Airport to Keisei-Ueno in about 1h05 for ¥1,190 per adult, ¥3,570 for the party. Both infants ride as lap infants with no seat reservation needed, and the train's wide corridors and step-free boarding work fine with a stroller straight off an international flight.
+**Arrival, day [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival): Narita to Tokyo.** The Keisei Access Express runs Narita Airport to Keisei-Ueno in about 1h05 for ¥1,190 per adult, ¥3,570 for the party. Both infants ride as lap infants with no seat reservation needed, and the train's wide corridors and step-free boarding work fine with a stroller straight off an international flight.
 
-**Departure, day 30: Namba to Kansai Airport.** The Nankai Airport Line's rapid express covers Namba to Kansai Airport Station in about 45 minutes for ¥930 per adult, ¥2,790 for the party. The JR Haruka covers the same route but runs roughly double the fare per adult, and Nankai needs no advance reservation. International check-in for a party of five with a stroller and checked bags wants about three hours ahead of departure, so the day 30 schedule builds that buffer in rather than assuming a shorter window.
+**Departure, day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix): Namba to Kansai Airport.** The Nankai Airport Line's rapid express covers Namba to Kansai Airport Station in about 45 minutes for ¥930 per adult, ¥2,790 for the party. The JR Haruka covers the same route but runs roughly double the fare per adult, and Nankai needs no advance reservation. International check-in for a party of five with a stroller and checked bags wants about three hours ahead of departure, so the day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) schedule builds that buffer in rather than assuming a shorter window.
 
 ### 4. Getting around in each city
 
-#### Tokyo
+#### Getting around Tokyo
 The default is the Tokyo Metro and JR Yamanote/Keihin-Tohoku loop, paid per ride on an IC card rather than a day pass: fares run ¥150-240 per adult depending on the hop (Yamanote hops as low as ¥150-210, Metro lines like Ginza and Toei Mita/Oedo at ¥180-240). Day trips add the Yurikamome to Odaiba/Toyosu, the Minato Mirai Line into Yokohama, and the Enoden and a 1-day "Noriorikun" pass (¥800/adult) for Kamakura's coast. The Sumida River water bus (Tokyo Cruise) has been suspended fleet-wide since January 2026 with an unconfirmed restart date; the fallback is a direct JR Yamanote/Keihin-Tohoku ride, about the same total time minus the river view. Infants ride free throughout; party cost is simply the adult fare times three.
 
-#### Kawaguchiko
-The highway bus in (day 11) and the Mishima-Kawaguchiko Liner out (day 14) are both fully reserved coaches, not local transit. Around the lake itself, the Fuji Five Lakes sightseeing bus's 2-day Red/Green/Blue Line pass (¥1,500/adult, ¥4,500 for the party) covers every ride across days 12-13, cheaper than paying per boarding given how many stops the north- and west-shore days make. The Fuji Kyuko Line local train reaches Shimoyoshida for Chureito Pagoda. The ryokan's own free shuttle bus handles the last mile to and from Lakeland Hotel Mizunosato on day 13-14.
+#### Getting around Kawaguchiko
+The highway bus in (day [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko)) and the Mishima-Kawaguchiko Liner out (day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto)) are both fully reserved coaches, not local transit. Around the lake itself, the Fuji Five Lakes sightseeing bus's 2-day Red/Green/Blue Line pass (¥1,500/adult, ¥4,500 for the party) covers every ride across days 12-13, cheaper than paying per boarding given how many stops the north- and west-shore days make. The Fuji Kyuko Line local train reaches Shimoyoshida for Chureito Pagoda. The ryokan's own free shuttle bus handles the last mile to and from Lakeland Hotel Mizunosato on day [13](#day-13---monday-october-19-2026---kawaguchiko)-14.
 
-#### Kyoto
+#### Getting around Kyoto
 Kyoto is a bus city, not a subway city: most of the ten-night stay moves on the Kyoto City Bus network, not the two-line subway. The old ¥700 all-day bus pass was discontinued in autumn 2023, so there is no day pass to buy - every bus ride here is priced as an individual IC-card (ICOCA/Suica) fare, a flat ¥230 per adult per boarding. The subway (Karasuma and Tozai lines) and the Hankyu Kyoto Line, which runs a station away from the Toyoko Inn Shijo-Omiya, cover specific routes like Nijo Castle, the Imperial Palace, and Arashiyama. Day trips add Kintetsu's kyuko (rapid express) for Nara, which undercuts the JR Nara Line on both fare and time, the JR Nara Line itself for Uji and Fushimi Inari, and the Keihan Main Line for the Fushimi sake district and Gion. Infants ride free on all of these; party cost is the adult fare times three.
 
-#### Hiroshima
-The Hiroden streetcar is a flat citywide fare regardless of distance, ¥220 per adult per ride, which makes it the cheap, easy way to cover Peace Memorial Park, Shukkei-en, and Hiroshima Castle without worrying about zones. The JR Sanyo Line local train and the JR Miyajima ferry reach Miyajima, both covered by the area pass through day 28. Infants ride free on the streetcar and the ferry alike.
+#### Getting around Hiroshima
+The Hiroden streetcar is a flat citywide fare regardless of distance, ¥220 per adult per ride, which makes it the cheap, easy way to cover Peace Memorial Park, Shukkei-en, and Hiroshima Castle without worrying about zones. The JR Sanyo Line local train and the JR Miyajima ferry reach Miyajima, both covered by the area pass through day [28](#day-28---tuesday-november-3-2026---osaka). Infants ride free on the streetcar and the ferry alike.
 
-#### Osaka
-Osaka Metro (Midosuji, Sennichimae, Sakaisuji, and Tanimachi lines) is the backbone, at IC-card fares of roughly ¥240-290 per adult per ride. Namba, Dotonbori, Shinsekai, and Kuromon Ichiba sit close enough together that several connections between them are made on foot rather than by train. The one out-of-town hop, Osaka to Kobe on day 28, rides the JR Kobe Line Special Rapid on the area pass's final valid day, at ¥0.
+#### Getting around Osaka
+Osaka Metro (Midosuji, Sennichimae, Sakaisuji, and Tanimachi lines) is the backbone, at IC-card fares of roughly ¥240-290 per adult per ride. Namba, Dotonbori, Shinsekai, and Kuromon Ichiba sit close enough together that several connections between them are made on foot rather than by train. The one out-of-town hop, Osaka to Kobe on day [28](#day-28---tuesday-november-3-2026---osaka), rides the JR Kobe Line Special Rapid on the area pass's final valid day, at ¥0.
 
 ### 5. How infants are charged
 
 Both infants ride free on JR including the shinkansen, on the Tokyo Metro and Toei lines, on Osaka Metro, on Kyoto city buses, and on the JR Miyajima ferry - the standard policy of up to two free young children per fare-paying adult, and this party travels with three adults. Party transit cost across the trip is simply the adult fare multiplied by three; the two infants add nothing to nearly every fare in this document.
 
 The exception is highway buses. Fujikyu and Keio require a paid seat for a child who can sit independently and can refuse boarding to a child riding on a lap, so both bus legs budget a paid seat for the 20-month-old while the 12-month-old rides as a lap infant:
-- Day 11, Tokyo to Kawaguchiko: the 20-month-old's seat is part of the ¥8,100 party fare.
-- Day 14, Kawaguchiko to Mishima: this coach is fully reserved with no lap travel at all, so all five seats, both infants included, are booked and paid, inside the ¥10,000 party fare.
+- Day [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko), Tokyo to Kawaguchiko: the 20-month-old's seat is part of the ¥8,100 party fare.
+- Day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto), Kawaguchiko to Mishima: this coach is fully reserved with no lap travel at all, so all five seats, both infants included, are booked and paid, inside the ¥10,000 party fare.
 
 ### 6. Luggage, strollers and seat reservations
 
-Days 14, 24, and 27 all ride unreserved shinkansen cars. With five people and two infants, an unreserved car offers no guarantee of finding five adjacent seats, particularly on a busy Friday (day 24) or a Monday transfer day (day 27). Seat reservations cost nothing extra under the JR Kansai-Hiroshima Area Pass on days 24 and 27, so there is no reason not to book them ahead once the pass is in hand; day 14 falls before the pass is purchased, so that leg stays genuinely unreserved.
+Days 14, 24, and 27 all ride unreserved shinkansen cars. With five people and two infants, an unreserved car offers no guarantee of finding five adjacent seats, particularly on a busy Friday (day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)) or a Monday transfer day (day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)). Seat reservations cost nothing extra under the JR Kansai-Hiroshima Area Pass on days 24 and 27, so there is no reason not to book them ahead once the pass is in hand; day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) falls before the pass is purchased, so that leg stays genuinely unreserved.
 
 Any checked bag with total dimensions (height plus width plus depth) over 160cm needs an oversized-baggage reservation on the Tokaido and Sanyo Shinkansen, or a ¥1,000 on-the-spot fee paid to staff without one. Strollers are exempt from this rule regardless of size and travel folded in the vestibule or overhead without any reservation or fee.
 
@@ -4862,39 +4862,39 @@ That pairing, a single compact stroller plus one carrier rather than a double st
 
 | Day | ¥ |
 |---|---|
-| 1 | 3,570 |
-| 2 | 1,800 |
-| 3 | 900 |
-| 4 | 4,530 |
-| 5 | 1,350 |
-| 6 | 540 |
-| 7 | 8,220 |
-| 8 | 4,020 |
-| 9 | 6,060 |
-| 10 | 2,520 |
-| 11 | 10,020 |
-| 12 | 4,500 |
-| 13 | 0 |
-| 14 | 43,030 |
-| 15 | 2,280 |
-| 16 | 6,160 |
-| 17 | 2,040 |
-| 18 | 2,070 |
-| 19 | 3,540 |
-| 20 | 4,830 |
-| 21 | 2,130 |
-| 22 | 2,640 |
-| 23 | 2,070 |
-| 24 | 52,350 |
-| 25 | 0 |
-| 26 | 1,320 |
-| 27 | 870 |
-| 28 | 2,160 |
-| 29 | 2,250 |
-| 30 | 2,790 |
+| [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival) | 3,570 |
+| [2](#day-2---thursday-october-8-2026---tokyo) | 1,800 |
+| [3](#day-3---friday-october-9-2026---tokyo) | 900 |
+| [4](#day-4---saturday-october-10-2026---tokyo) | 4,530 |
+| [5](#day-5---sunday-october-11-2026---tokyo) | 1,350 |
+| [6](#day-6---monday-october-12-2026---tokyo-sports-day) | 540 |
+| [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | 8,220 |
+| [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | 4,020 |
+| [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | 6,060 |
+| [10](#day-10---friday-october-16-2026---tokyo) | 2,520 |
+| [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | 10,020 |
+| [12](#day-12---sunday-october-18-2026---kawaguchiko) | 4,500 |
+| [13](#day-13---monday-october-19-2026---kawaguchiko) | 0 |
+| [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | 43,030 |
+| [15](#day-15---wednesday-october-21-2026---kyoto) | 2,280 |
+| [16](#day-16---thursday-october-22-2026---kyoto) | 6,160 |
+| [17](#day-17---friday-october-23-2026---kyoto) | 2,040 |
+| [18](#day-18---saturday-october-24-2026---kyoto) | 2,070 |
+| [19](#day-19---sunday-october-25-2026---kyoto) | 3,540 |
+| [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | 4,830 |
+| [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | 2,130 |
+| [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | 2,640 |
+| [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | 2,070 |
+| [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | 52,350 |
+| [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | 0 |
+| [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | 1,320 |
+| [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | 870 |
+| [28](#day-28---tuesday-november-3-2026---osaka) | 2,160 |
+| [29](#day-29---wednesday-november-4-2026---osaka) | 2,250 |
+| [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | 2,790 |
 | **Total** | **180,560** |
 
-The trip's transport total is **¥180,560** against a planning envelope of ¥176,000, which puts it about ¥4,560 over, roughly 2.6% above the envelope. The two big shinkansen-and-bus transfer days, day 14 (¥43,030) and day 24 (¥52,350, including the ¥51,000 rail pass purchase), together account for the large majority of the entire trip's transport spend; every other day sits well under ¥10,000.
+The trip's transport total is **¥180,560** against a planning envelope of ¥176,000, which puts it about ¥4,560 over, roughly 2.6% above the envelope. The two big shinkansen-and-bus transfer days, day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) (¥43,030) and day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) (¥52,350, including the ¥51,000 rail pass purchase), together account for the large majority of the entire trip's transport spend; every other day sits well under ¥10,000.
 
 ---
 
