@@ -1,3 +1,5 @@
+# Days 28-30 - Osaka + departure
+
 ## Day 28 - Tuesday, November 3, 2026 - Osaka
 
 **Base:** Osaka  

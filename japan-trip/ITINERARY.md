@@ -1,5 +1,90 @@
 # Japan, Thirty Days, Five People, $9,000
 
+## Table of Contents
+
+  - [1. Executive summary](#1-executive-summary)
+  - [2. Why these dates](#2-why-these-dates)
+    - [The window: 7 October - 5 November 2026](#the-window-7-october---5-november-2026)
+    - [The honest cost of choosing this window](#the-honest-cost-of-choosing-this-window)
+    - [What was rejected, and why](#what-was-rejected-and-why)
+  - [3. Why this route](#3-why-this-route)
+  - [4. How the money works](#4-how-the-money-works)
+    - [Allocation](#allocation)
+    - [Why planned spend is $8,416 rather than $9,000](#why-planned-spend-is-8416-rather-than-9000)
+    - [Why the lodging is two rooms at every stop](#why-the-lodging-is-two-rooms-at-every-stop)
+    - [Why the food budget works](#why-the-food-budget-works)
+    - [How infants change the arithmetic](#how-infants-change-the-arithmetic)
+  - [5. What to verify before booking](#5-what-to-verify-before-booking)
+  - [6. The thirty days at a glance](#6-the-thirty-days-at-a-glance)
+- **[Part II: The daily itinerary](#part-ii-the-daily-itinerary)**
+- **[Days 1-10 - Tokyo](#days-1-10---tokyo)**
+  - Days: [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival)  [2](#day-2---thursday-october-8-2026---tokyo)  [3](#day-3---friday-october-9-2026---tokyo)  [4](#day-4---saturday-october-10-2026---tokyo)  [5](#day-5---sunday-october-11-2026---tokyo)  [6](#day-6---monday-october-12-2026---tokyo-sports-day)  [7](#day-7---tuesday-october-13-2026---kamakura-day-trip)  [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu)  [9](#day-9---thursday-october-15-2026---yokohama-day-trip)  [10](#day-10---friday-october-16-2026---tokyo)
+  - [Tokyo segment totals (Days 1-10)](#tokyo-segment-totals-days-1-10)
+- **[Days 11-14 - Kawaguchiko (Fuji Five Lakes) + transfer to Kyoto](#days-11-14---kawaguchiko-fuji-five-lakes--transfer-to-kyoto)**
+  - Days: [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko)  [12](#day-12---sunday-october-18-2026---kawaguchiko)  [13](#day-13---monday-october-19-2026---kawaguchiko)  [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto)
+  - [Kawaguchiko + transfer segment totals (Days 11-14)](#kawaguchiko--transfer-segment-totals-days-11-14)
+- **[Days 15-19 - Kyoto A (Toyoko Inn Kyoto Shijo-Omiya)](#days-15-19---kyoto-a-toyoko-inn-kyoto-shijo-omiya)**
+  - Days: [15](#day-15---wednesday-october-21-2026---kyoto)  [16](#day-16---thursday-october-22-2026---kyoto)  [17](#day-17---friday-october-23-2026---kyoto)  [18](#day-18---saturday-october-24-2026---kyoto)  [19](#day-19---sunday-october-25-2026---kyoto)
+  - [Notes on this segment](#notes-on-this-segment)
+  - [Kyoto A segment totals (Days 15-19)](#kyoto-a-segment-totals-days-15-19)
+- **[Days 20-23 - Kyoto B (day trips from the Kyoto base)](#days-20-23---kyoto-b-day-trips-from-the-kyoto-base)**
+  - Days: [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara)  [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji)  [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district)  [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing)
+  - [Kyoto B segment totals (Days 20-23)](#kyoto-b-segment-totals-days-20-23)
+- **[Days 24-27 - Hiroshima + transfer to Osaka](#days-24-27---hiroshima--transfer-to-osaka)**
+  - Days: [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)  [25](#day-25---saturday-october-31-2026---miyajima-itsukushima)  [26](#day-26---sunday-november-1-2026---hiroshima-city-day)  [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)
+  - [Hiroshima + transfer segment totals (Days 24-27)](#hiroshima--transfer-segment-totals-days-24-27)
+- **[Days 28-30 - Osaka + departure](#days-28-30---osaka--departure)**
+  - Days: [28](#day-28---tuesday-november-3-2026---osaka)  [29](#day-29---wednesday-november-4-2026---osaka)  [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix)
+  - [Osaka + departure segment totals (Days 28-30)](#osaka--departure-segment-totals-days-28-30)
+- **[Appendices](#appendices)**
+  - [Appendix A: Topic index](#appendix-a-topic-index)
+    - [Temples and Buddhism](#temples-and-buddhism)
+    - [Shinto shrines](#shinto-shrines)
+    - [Castles and fortifications](#castles-and-fortifications)
+    - [The atomic bombing and war memory](#the-atomic-bombing-and-war-memory)
+    - [Imperial and court history](#imperial-and-court-history)
+    - [Gardens](#gardens)
+    - [Onsen, sento and bathing](#onsen-sento-and-bathing)
+    - [Traditional lodging](#traditional-lodging)
+    - [Markets and street stalls](#markets-and-street-stalls)
+    - [Food by type](#food-by-type)
+    - [Anime, manga and games](#anime-manga-and-games)
+    - [Technology and science](#technology-and-science)
+    - [Art and museums](#art-and-museums)
+    - [Crafts and hands-on activities](#crafts-and-hands-on-activities)
+    - [Nature and landscape](#nature-and-landscape)
+    - [Rural and small-town Japan](#rural-and-small-town-japan)
+    - [Festivals and seasonal events](#festivals-and-seasonal-events)
+    - [Theatre and performance](#theatre-and-performance)
+    - [Transport as an experience](#transport-as-an-experience)
+    - [Views and observation decks](#views-and-observation-decks)
+    - [Things aimed at the toddlers](#things-aimed-at-the-toddlers)
+    - [Shopping](#shopping)
+  - [Appendix B: The five places](#appendix-b-the-five-places)
+    - [Tokyo](#tokyo)
+    - [Kawaguchiko and the Fuji Five Lakes](#kawaguchiko-and-the-fuji-five-lakes)
+    - [Kyoto](#kyoto)
+    - [Hiroshima and Miyajima](#hiroshima-and-miyajima)
+    - [Osaka](#osaka)
+  - [Appendix C: Advance booking](#appendix-c-advance-booking)
+    - [1. Booking timeline, ordered by when to act](#1-booking-timeline-ordered-by-when-to-act)
+    - [2. Book these first: the items where failure actually breaks the plan](#2-book-these-first-the-items-where-failure-actually-breaks-the-plan)
+    - [3. Things that need a phone call, not a website](#3-things-that-need-a-phone-call-not-a-website)
+    - [4. No booking needed](#4-no-booking-needed)
+  - [Appendix D: Shopping lists and supply runs](#appendix-d-shopping-lists-and-supply-runs)
+    - [1. Strategy: what travels and what doesn't](#1-strategy-what-travels-and-what-doesnt)
+    - [2. Dated shopping runs](#2-dated-shopping-runs)
+    - [3. Run-down-before-you-move checklist](#3-run-down-before-you-move-checklist)
+    - [4. Consolidated infant-supplies plan](#4-consolidated-infant-supplies-plan)
+    - [5. Day 30 packing-day note (Osaka -> Kansai Airport)](#5-day-30-packing-day-note-osaka---kansai-airport)
+  - [Appendix E: Open decisions](#appendix-e-open-decisions)
+    - [1. Decisions for the family](#1-decisions-for-the-family)
+    - [2. Deadlines](#2-deadlines)
+    - [3. Verify nearer the date](#3-verify-nearer-the-date)
+  - [Appendix F: Japan with a 12-month-old and a 20-month-old](#appendix-f-japan-with-a-12-month-old-and-a-20-month-old)
+  - [Appendix G: How 2,000 calories a day actually gets bought](#appendix-g-how-2000-calories-a-day-actually-gets-bought)
+  - [Appendix H: Confidence and sources](#appendix-h-confidence-and-sources)
+
 **3 adults + 2 infants (~12 months and ~20 months) | 7 October - 5 November 2026 | 30 days, 29 nights**
 
 Planning exchange rate: **¥155 = $1.00 USD** (spot on 4 September 2026; 12-month band ¥140-164).
@@ -227,40 +312,40 @@ out. Reserve it as soon as the window opens.
 
 | Day | Date | Base / focus | Day cost ¥ | $ | Cumulative $ |
 |---|---|---|---|---|---|
-| 1 | Wednesday, October 7, 2026 | Tokyo (Narita arrival) | 32,970 | 213 | 213 |
-| 2 | Thursday, October 8, 2026 | Tokyo | 50,900 | 328 | 541 |
-| 3 | Friday, October 9, 2026 | Tokyo | 36,560 | 236 | 777 |
-| 4 | Saturday, October 10, 2026 | Tokyo | 34,530 | 223 | 1,000 |
-| 5 | Sunday, October 11, 2026 | Tokyo | 31,150 | 201 | 1,201 |
-| 6 | Monday, October 12, 2026 | Tokyo (Sports Day) | 35,890 | 232 | 1,432 |
-| 7 | Tuesday, October 13, 2026 | Kamakura (day trip) | 38,770 | 250 | 1,682 |
-| 8 | Wednesday, October 14, 2026 | Tokyo (Odaiba / Toyosu) | 49,470 | 319 | 2,002 |
-| 9 | Thursday, October 15, 2026 | Yokohama (day trip) | 42,760 | 276 | 2,277 |
-| 10 | Friday, October 16, 2026 | Tokyo | 34,710 | 224 | 2,501 |
-| 11 | Saturday, October 17, 2026 | Tokyo → Kawaguchiko | 36,020 | 232 | 2,734 |
-| 12 | Sunday, October 18, 2026 | Kawaguchiko | 43,850 | 283 | 3,017 |
-| 13 | Monday, October 19, 2026 | Kawaguchiko | 57,720 | 372 | 3,389 |
-| 14 | Tuesday, October 20, 2026 | Kawaguchiko → Kyoto | 71,900 | 464 | 3,853 |
-| 15 | Wednesday, October 21, 2026 | Kyoto | 34,080 | 220 | 4,073 |
-| 16 | Thursday, October 22, 2026 | Kyoto | 33,560 | 217 | 4,289 |
-| 17 | Friday, October 23, 2026 | Kyoto | 35,480 | 229 | 4,518 |
-| 18 | Saturday, October 24, 2026 | Kyoto | 49,270 | 318 | 4,836 |
-| 19 | Sunday, October 25, 2026 | Kyoto | 39,090 | 252 | 5,088 |
-| 20 | Monday, October 26, 2026 | Kyoto (day trip to Nara) | 39,730 | 256 | 5,345 |
-| 21 | Tuesday, October 27, 2026 | Kyoto (day trip to Uji) | 36,730 | 237 | 5,582 |
-| 22 | Wednesday, October 28, 2026 | Kyoto (day trip to the Fushimi sake district) | 38,740 | 250 | 5,831 |
-| 23 | Thursday, October 29, 2026 | Kyoto (low-key day + packing) | 53,770 | 347 | 6,178 |
-| 24 | Friday, October 30, 2026 | Kyoto to Hiroshima | 73,650 | 475 | 6,654 |
-| 25 | Saturday, October 31, 2026 | Miyajima (Itsukushima) | 34,160 | 220 | 6,874 |
-| 26 | Sunday, November 1, 2026 | Hiroshima city day | 32,410 | 209 | 7,083 |
-| 27 | Monday, November 2, 2026 | Hiroshima to Osaka | 20,420 | 132 | 7,215 |
-| 28 | Tuesday, November 3, 2026 | Osaka | 34,210 | 221 | 7,435 |
-| 29 | Wednesday, November 4, 2026 | Osaka | 38,150 | 246 | 7,682 |
-| 30 | Thursday, November 5, 2026 | Osaka -> Kansai Airport (KIX) | 7,790 | 50 | 7,732 |
+| [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival) | Wednesday, October 7, 2026 | Tokyo (Narita arrival) | 32,970 | 213 | 213 |
+| [2](#day-2---thursday-october-8-2026---tokyo) | Thursday, October 8, 2026 | Tokyo | 50,900 | 328 | 541 |
+| [3](#day-3---friday-october-9-2026---tokyo) | Friday, October 9, 2026 | Tokyo | 36,560 | 236 | 777 |
+| [4](#day-4---saturday-october-10-2026---tokyo) | Saturday, October 10, 2026 | Tokyo | 34,530 | 223 | 1,000 |
+| [5](#day-5---sunday-october-11-2026---tokyo) | Sunday, October 11, 2026 | Tokyo | 31,150 | 201 | 1,201 |
+| [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Monday, October 12, 2026 | Tokyo (Sports Day) | 35,890 | 232 | 1,432 |
+| [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Tuesday, October 13, 2026 | Kamakura (day trip) | 38,770 | 250 | 1,682 |
+| [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Wednesday, October 14, 2026 | Tokyo (Odaiba / Toyosu) | 49,470 | 319 | 2,002 |
+| [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Thursday, October 15, 2026 | Yokohama (day trip) | 42,760 | 276 | 2,277 |
+| [10](#day-10---friday-october-16-2026---tokyo) | Friday, October 16, 2026 | Tokyo | 34,710 | 224 | 2,501 |
+| [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Saturday, October 17, 2026 | Tokyo → Kawaguchiko | 36,020 | 232 | 2,734 |
+| [12](#day-12---sunday-october-18-2026---kawaguchiko) | Sunday, October 18, 2026 | Kawaguchiko | 43,850 | 283 | 3,017 |
+| [13](#day-13---monday-october-19-2026---kawaguchiko) | Monday, October 19, 2026 | Kawaguchiko | 57,720 | 372 | 3,389 |
+| [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Tuesday, October 20, 2026 | Kawaguchiko → Kyoto | 71,900 | 464 | 3,853 |
+| [15](#day-15---wednesday-october-21-2026---kyoto) | Wednesday, October 21, 2026 | Kyoto | 34,080 | 220 | 4,073 |
+| [16](#day-16---thursday-october-22-2026---kyoto) | Thursday, October 22, 2026 | Kyoto | 33,560 | 217 | 4,289 |
+| [17](#day-17---friday-october-23-2026---kyoto) | Friday, October 23, 2026 | Kyoto | 35,480 | 229 | 4,518 |
+| [18](#day-18---saturday-october-24-2026---kyoto) | Saturday, October 24, 2026 | Kyoto | 49,270 | 318 | 4,836 |
+| [19](#day-19---sunday-october-25-2026---kyoto) | Sunday, October 25, 2026 | Kyoto | 39,090 | 252 | 5,088 |
+| [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Monday, October 26, 2026 | Kyoto (day trip to Nara) | 39,730 | 256 | 5,345 |
+| [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Tuesday, October 27, 2026 | Kyoto (day trip to Uji) | 36,730 | 237 | 5,582 |
+| [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Wednesday, October 28, 2026 | Kyoto (day trip to the Fushimi sake district) | 38,740 | 250 | 5,831 |
+| [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Thursday, October 29, 2026 | Kyoto (low-key day + packing) | 53,770 | 347 | 6,178 |
+| [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Friday, October 30, 2026 | Kyoto to Hiroshima | 73,650 | 475 | 6,654 |
+| [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Saturday, October 31, 2026 | Miyajima (Itsukushima) | 34,160 | 220 | 6,874 |
+| [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Sunday, November 1, 2026 | Hiroshima city day | 32,410 | 209 | 7,083 |
+| [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Monday, November 2, 2026 | Hiroshima to Osaka | 20,420 | 132 | 7,215 |
+| [28](#day-28---tuesday-november-3-2026---osaka) | Tuesday, November 3, 2026 | Osaka | 34,210 | 221 | 7,435 |
+| [29](#day-29---wednesday-november-4-2026---osaka) | Wednesday, November 4, 2026 | Osaka | 38,150 | 246 | 7,682 |
+| [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Thursday, November 5, 2026 | Osaka -> Kansai Airport (KIX) | 7,790 | 50 | 7,732 |
 | | | **Day-line total** | **1,198,440** | **7,732** | |
 
-Day-line spend covers lodging, food, transport and activities. Two further lines sit
-at trip level and are not repeated daily: baby consumables at ¥68,000 ($439), and
+Day-line spend covers lodging, food, transport and activities. Two further lines sit at
+trip level and are not repeated daily: baby consumables at ¥68,000 ($439), and
 miscellaneous (eSIM, coin laundry, lockers, luggage forwarding) at ¥38,000 ($245).
 Adding those gives **¥1,304,440 ($8,416)** planned against a
 **¥1,400,000 ($9,032)** budget, leaving **¥95,560 ($617)** in reserve.
@@ -272,8 +357,8 @@ Adding those gives **¥1,304,440 ($8,416)** planned against a
 Every day records the schedule with durations, the lodging and its nightly cost, every
 meal with its adult calorie count, every transport leg with fare and duration, and every
 activity with location, admission and what it actually is. Adult calories sum to
-1,950-2,100 per person per day throughout. Infants ride free on all rail and transit and
-are free at essentially every site; the exceptions are noted where they occur.
+1,950-2,100 per person per day. Infants ride free on all rail and transit and are free at
+essentially every site; the exceptions are noted where they occur.
 
 
 ---
@@ -312,7 +397,7 @@ totals starting from ¥0 - no baseline adjustment needed.*
 
 ## Day 1 - Wednesday, October 7, 2026 - Tokyo (Narita arrival)
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, humid, light rain possible  
 **Theme:** Land at Narita, Keisei Access Express into Ueno, check in, one big kitchenette
 stock-up run, early night against jet lag with two infants.
@@ -392,7 +477,7 @@ No paid activities today - arrival, check-in, and settling in.
 
 ## Day 2 - Thursday, October 8, 2026 - Tokyo
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, humid, light rain possible  
 **Theme:** Senso-ji at a quieter morning hour, then Tokyo Solamachi - the aquarium and
 Skytree observatory are in the same complex, so the whole afternoon is one short walk.
@@ -505,7 +590,7 @@ Adult kcal: 500 + 100 (dango) + 750 + 700 = **2,050**.
 
 ## Day 3 - Friday, October 9, 2026 - Tokyo
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, mild  
 **Theme:** A near-hotel day - Ueno Zoo, Tokyo National Museum, Shinobazu Pond, Ameyoko -
 everything inside a 15-minute walk of the Livemax.
@@ -609,7 +694,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ## Day 4 - Saturday, October 10, 2026 - Tokyo
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, mild  
 **Theme:** The Imperial Palace East Gardens, free, then south to the Shiba/Hamarikyu
 pocket of Minato and Chuo wards - Zojoji Temple and Tokyo Tower, then Hamarikyu
@@ -734,7 +819,7 @@ other transit leg in this plan; not separately verified for this operator.
 
 ## Day 5 - Sunday, October 11, 2026 - Tokyo
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, mild  
 **Theme:** Meiji Jingu's forest approach, then Yoyogi Park for the midday rest, the
 Sunday rockabilly dancers, and a Takeshita Street/Laforet detour, before Shibuya
@@ -845,7 +930,7 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 
 ## Day 6 - Monday, October 12, 2026 - Tokyo (Sports Day)
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, mild - a 3-day-weekend holiday, so
 the major sights (Senso-ji, Shibuya, Harajuku) are busier than usual today  
 **Theme:** Deliberately low-crowd and free - the old backstreets of Yanaka and Nezu,
@@ -945,7 +1030,7 @@ across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 
 ## Day 7 - Tuesday, October 13, 2026 - Kamakura (day trip)
 
-**Base:** Tokyo (day trip)  
+**Base:** [Tokyo (day trip)](#tokyo)  
 **Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo  
 **Theme:** Great Buddha, Hase-dera, the Enoden coastal railway, Yuigahama beach.
 
@@ -1036,7 +1121,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ## Day 8 - Wednesday, October 14, 2026 - Tokyo (Odaiba / Toyosu)
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, mild, waterfront breeze  
 **Theme:** The segment's marquee paid day - teamLab Planets - paired with a free
 waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on the way in.
@@ -1132,7 +1217,7 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 
 ## Day 9 - Thursday, October 15, 2026 - Yokohama (day trip)
 
-**Base:** Tokyo (day trip)  
+**Base:** [Tokyo (day trip)](#tokyo)  
 **Weather (typical):** 22-24/15 °C, harbor breeze  
 **Theme:** Minato Mirai's waterfront skyline, Cup Noodles Museum, Chinatown, Sankeien's
 traditional garden.
@@ -1219,7 +1304,7 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 
 ## Day 10 - Friday, October 16, 2026 - Tokyo
 
-**Base:** Tokyo  
+**Base:** [Tokyo](#tokyo)  
 **Weather (typical):** 22-24/15 °C, mild  
 **Theme:** A quiet park morning at Shinjuku Gyoen, the Ghibli Museum in Mitaka in the
 afternoon, and light packing for tomorrow's move to Kawaguchiko.
@@ -1350,7 +1435,7 @@ from MASTER-BRIEF and is not flexed.
 
 ## Day 11 - Saturday, October 17, 2026 - Tokyo → Kawaguchiko
 
-**Base:** Tokyo (AM) → Kawaguchiko (PM/evening)  
+**Base:** [Tokyo (AM) → Kawaguchiko (PM/evening)](#tokyo)  
 **Weather (typical):** Tokyo 21-24/15°C (AM) → Kawaguchiko 17-19/6-10°C (PM, night frost possible)  
 **Theme:** Half travel day - Higashi-Ueno to Fuji Five Lakes by highway bus, first evening in Fuji country.
 
@@ -1445,7 +1530,7 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 
 ## Day 12 - Sunday, October 18, 2026 - Kawaguchiko
 
-**Base:** Kawaguchiko  
+**Base:** [Kawaguchiko](#kawaguchiko-and-the-fuji-five-lakes)  
 **Weather (typical):** 17-19/6-10°C, night frost possible; mornings are the reliable window for a clear Mt. Fuji, afternoons cloud over  
 **Theme:** North-shore Fuji day - Oishi Park, Tenjozan Ropeway, a short lake cruise, and Kubota Itchiku's kimono art in the afternoon clouds.
 
@@ -1530,7 +1615,7 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
 ## Day 13 - Monday, October 19, 2026 - Kawaguchiko
 
-**Base:** Kawaguchiko  
+**Base:** [Kawaguchiko](#kawaguchiko-and-the-fuji-five-lakes)  
 **Weather (typical):** 17-19/6-10°C, night frost possible  
 **Theme:** West shore - Oshino Hakkai's spring-fed ponds and Saiko Iyashi-no-Sato's thatched village, private onsen in the evening.
 
@@ -1627,7 +1712,7 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 
 ## Day 14 - Tuesday, October 20, 2026 - Kawaguchiko → Kyoto
 
-**Base:** Kawaguchiko (AM) → Kyoto (PM/evening)  
+**Base:** [Kawaguchiko (AM) → Kyoto (PM/evening)](#kawaguchiko-and-the-fuji-five-lakes)  
 **Weather (typical):** Kawaguchiko 17-19/6-10°C (AM, frost possible) → Kyoto 21-25/15°C (PM/evening)  
 **Theme:** Full transfer day - bus to Mishima, unreserved Hikari onward to Kyoto.
 
@@ -1737,7 +1822,7 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 
 ## Day 15 - Wednesday, October 21, 2026 - Kyoto
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 24/15 °C, dry, clear autumn skies  
 **Theme:** Fushimi Inari's torii gates in the cool morning, Nishiki Market in the evening
 
@@ -1822,7 +1907,7 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 
 ## Day 16 - Thursday, October 22, 2026 - Kyoto
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 23/15 °C, dry  
 **Theme:** Jidai Matsuri - free street viewing, then a quiet walk on the Philosopher's Path
 
@@ -1913,7 +1998,7 @@ Infants ride free on the subway, Hankyu, and city bus legs. The family returns t
 
 ## Day 17 - Friday, October 23, 2026 - Kyoto
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 24/15 °C, dry  
 **Theme:** Arashiyama - bamboo, river, and a gorge-side scenic train
 
@@ -2000,7 +2085,7 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 
 ## Day 18 - Saturday, October 24, 2026 - Kyoto
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 22/14 °C, dry  
 **Theme:** Kiyomizu-dera and the Higashiyama lanes in kimono, evening in Gion
 
@@ -2090,7 +2175,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 ## Day 19 - Sunday, October 25, 2026 - Kyoto
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 23/15 °C, dry  
 **Theme:** Kyoto Gosho, Nijo Castle, Kinkaku-ji, Ryoan-ji's rock garden, and the Tenjin-ichi temple market at Kitano Tenmangu
 
@@ -2232,7 +2317,7 @@ here is "covered by pass."*
 
 ## Day 20 - Monday, October 26, 2026 - Kyoto (day trip to Nara)
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 21-25/15 °C, pre-peak foliage, Nara's maples are still mostly green with a few early turners  
 **Theme:** Nara as a day trip: Todai-ji's Great Buddha, the free-roaming deer, Kasuga Taisha, and two gardens. The most stroller-friendly, infant-strongest day of the segment, and the longest, since Kintetsu adds nearly 1h30 of pure transit each way.
 
@@ -2331,7 +2416,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 ## Day 21 - Tuesday, October 27, 2026 - Kyoto (day trip to Uji)
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 21-25/15 °C, pre-peak foliage  
 **Theme:** Uji: a short, low-key day trip: Byodo-in, a hands-on matcha experience, and the Uji riverbank. The cheapest and most compact of the three day trips.
 
@@ -2434,7 +2519,7 @@ rest above - free, no separate stop and no schedule change.
 
 ## Day 22 - Wednesday, October 28, 2026 - Kyoto (day trip to the Fushimi sake district)
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 21-25/15 °C, pre-peak foliage  
 **Theme:** Chushojima/Fushimi-Momoyama, Kyoto's historic sake-brewing quarter: canal-side brewery streets, the Gekkeikan Okura Sake Museum, and the Teradaya Inn. Not to be confused with Fushimi Inari (Day 15): this is a separate, flat neighbourhood a few km south of the shrine, and Japan's second-largest sake-producing region after Nada near Kobe. The shortest, flattest, and cheapest day trip of the segment - entirely stroller-friendly with no stairs anywhere on the route.
 
@@ -2547,7 +2632,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 ## Day 23 - Thursday, October 29, 2026 - Kyoto (low-key day + packing)
 
-**Base:** Kyoto  
+**Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 21-25/15 °C, pre-peak foliage  
 **Theme:** The day's headline addition: kimono rental and hands-on Nishijin weaving, the trip's answer to the group's anime-robes wish. No day trip: the three adults wear rented kimono for a Kamo riverbank walk after the hands-on weaving experience, and the day still closes with a neighbourhood sento and an early night before the Day 24 move to Hiroshima.
 
@@ -2680,7 +2765,7 @@ Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
 
 ## Day 24 - Friday, October 30, 2026 - Kyoto to Hiroshima
 
-**Base:** Hiroshima (arriving)  
+**Base:** [Hiroshima (arriving)](#hiroshima-and-miyajima)  
 **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) - pack a light rain layer  
 **Theme:** Shinkansen from Kyoto to Hiroshima; buy the JR Kansai-Hiroshima Area Pass; an easy arrival evening at Peace Memorial Park.
 
@@ -2769,7 +2854,7 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ## Day 25 - Saturday, October 31, 2026 - Miyajima (Itsukushima)
 
-**Base:** Hiroshima  
+**Base:** [Hiroshima](#hiroshima-and-miyajima)  
 **Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg)  
 **Theme:** A full day trip to Miyajima - shrine, aquarium, and the Mt. Misen ropeway, all covered
 by the rail pass beyond the island admissions.
@@ -2876,7 +2961,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 ## Day 26 - Sunday, November 1, 2026 - Hiroshima city day
 
-**Base:** Hiroshima  
+**Base:** [Hiroshima](#hiroshima-and-miyajima)  
 **Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) - noticeably cooler than the last two days; add a layer  
 **Theme:** Peace Memorial Park and Museum, handled with care given two infants in the party, then
 Shukkei-en garden and Hiroshima Castle.
@@ -2977,7 +3062,7 @@ infants ride free.
 
 ## Day 27 - Monday, November 2, 2026 - Hiroshima to Osaka
 
-**Base:** Hiroshima -> Osaka (Namba)  
+**Base:** [Hiroshima -> Osaka (Namba)](#hiroshima-and-miyajima)  
 **Weather (typical):** Hiroshima 17.7/8.9 °C -> Osaka 17/10 °C (JMA, Nov avg)  
 **Theme:** Travel day: shinkansen to Shin-Osaka, transfer to Namba, check in, a light first evening
 at Dotonbori.
@@ -3090,9 +3175,11 @@ x 1 night from MASTER-BRIEF and is not flexed.
 
 ---
 
+# Days 28-30 - Osaka + departure
+
 ## Day 28 - Tuesday, November 3, 2026 - Osaka
 
-**Base:** Osaka  
+**Base:** [Osaka](#osaka)  
 **Weather (typical):** 17°C / 10°C, dry  
 **Theme:** Culture Day, the final valid day of the JR Kansai-Hiroshima Area Pass (day trip to Kobe), and opening night of the Midosuji illumination
 
@@ -3185,7 +3272,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ## Day 29 - Wednesday, November 4, 2026 - Osaka
 
-**Base:** Osaka  
+**Base:** [Osaka](#osaka)  
 **Weather (typical):** 17°C / 10°C, dry  
 **Theme:** Central Osaka on foot and by metro - castle, market, retro tower, canal - the trip's last full day
 
@@ -3281,7 +3368,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ## Day 30 - Thursday, November 5, 2026 - Osaka -> Kansai Airport (KIX)
 
-**Base:** Osaka, departing  
+**Base:** [Osaka, departing](#osaka)  
 **Weather (typical):** 17°C / 10°C, dry  
 **Theme:** Departure - Namba to Kansai Airport on the Nankai line, buffered for international check-in with a party of five
 
@@ -3366,15 +3453,378 @@ The Tombori River Cruise appears once across Days 27-30, on Day 29 as the day's 
 
 ---
 
-# Part III: The five places
+# Appendices
 
-Five stops in thirty days. Each profile says what the place is, what walking around it
-feels like, and how it differs from the other four.
-
+Reference material. The topic index is the fastest way in if you want to find
+something by subject rather than by date.
 
 ---
 
-# Tokyo
+## Appendix A: Topic index
+
+This index lists what the itinerary actually contains, organized by subject rather than by date, so a question like "is there a castle, and when" or "where do we eat ramen" can be answered without reading all thirty days. Each row names the day it happens, where it is, and one practical fact - a cost, a booking constraint, or what sets that instance apart from the others on the same list. Costs shown are per adult unless a row says otherwise; both infants ride and enter free almost everywhere except where a row flags an exception.
+
+### Temples and Buddhism
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Senso-ji | [2](#day-2---thursday-october-8-2026---tokyo) | Taito-ku, Tokyo | Buddhist temple to Kannon, free, main hall open roughly 6am-5pm, Asakusa Shrine sits inside the same grounds |
+| Zojoji Temple | [4](#day-4---saturday-october-10-2026---tokyo) | Minato-ku, Tokyo | Free, flat paved grounds, no stairs |
+| Kotoku-in (Great Buddha) | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | ¥300, open gravel forecourt, an optional stairs-only interior climb is +¥50 |
+| Hase-dera | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | ¥400, terraced hillside garden reached by steep stairs, carrier-only |
+| To-ji | [15](#day-15---wednesday-october-21-2026---kyoto) | Minami-ku, Kyoto | Free, five-story pagoda; the Kobo-ichi market fills the grounds on the 21st of every month |
+| Tenryu-ji | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | ¥500, UNESCO World Heritage; today's ticket covers the garden only, not the hall interior |
+| Kiyomizu-dera | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | ¥500, UNESCO World Heritage, wooden stage over the hillside, approach lanes are uneven worn stone |
+| Kinkaku-ji | [19](#day-19---sunday-october-25-2026---kyoto) | Kita-ku, Kyoto | ¥500, exterior and garden walk only, no entry into the pavilion |
+| Ryoan-ji | [19](#day-19---sunday-october-25-2026---kyoto) | Ukyo-ku, Kyoto | Karesansui dry rock garden, ¥600, raised veranda so shoes off and carrier rather than stroller |
+| Byodo-in | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥600 garden and museum; the Phoenix Hall interior is a separate timed ¥300 ticket, narrow walkway, not stroller-accessible |
+| Daisho-in Temple | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima, Hatsukaichi | Free, Shingon Buddhist mountain temple, spinning sutra wheels, stepped approach beyond the lower grounds |
+| Todai-ji Daibutsuden | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | ¥800, houses the 15m bronze Daibutsu, flat paved paths from the park entrance |
+
+### Shinto shrines
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Asakusa Shrine | [2](#day-2---thursday-october-8-2026---tokyo) | Taito-ku, Tokyo | Free, inside Senso-ji's grounds |
+| Meiji Jingu | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Main shrine free; the paid Inner Garden is ¥500, a separate Edo-period strolling garden |
+| Nezu Shrine | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Bunkyo-ku, Tokyo | Free, torii-lined hillside path; the azalea-garden fee is seasonal (spring) only |
+| Fushimi Inari Taisha | [15](#day-15---wednesday-october-21-2026---kyoto) | Fushimi-ku, Kyoto | Free, open 24 hours; the Senbon Torii loop to Yotsutsuji is stroller-workable, the summit beyond it is stairs and carrier-only |
+| Heian Jingu | [16](#day-16---thursday-october-22-2026---kyoto) | Sakyo-ku, Kyoto | Shrine grounds free; the paid Shin-en Garden is ¥600, separate |
+| Kitano Tenmangu | [19](#day-19---sunday-october-25-2026---kyoto) | Kamigyo-ku, Kyoto | Free, dedicated to the god of learning; the Tenjin-ichi market fills the grounds on the 25th of every month |
+| Kasuga Taisha | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | Lantern-lined approach free; the paid inner precinct and moss garden is ¥500, gravel paths slightly uneven |
+| Itsukushima Shrine | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima, Hatsukaichi | ¥300, built over tidal flats; the torii floats or stands on exposed sand depending on the tide, an elevator underpass avoids the one stairway |
+| Namba Yasaka Shrine | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Naniwa-ku, Osaka | Free, main hall built as a giant lion's head, flat ground-level courtyard |
+
+### Castles and fortifications
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Imperial Palace East Gardens | [4](#day-4---saturday-october-10-2026---tokyo) | Chiyoda-ku, Tokyo | Free, former Edo Castle inner citadel; the Tenshudai foundation is reached by stone stairs, carrier needed there |
+| Nijo Castle | [19](#day-19---sunday-october-25-2026---kyoto) | Nakagyo-ku, Kyoto | ¥1,300 (grounds + Ninomaru Palace interior); the palace's "nightingale floors" chirp underfoot, shoeless interior not stroller-accessible |
+| Hiroshima Castle | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥370, a 1958 concrete reconstruction after the original was destroyed in 1945; keep interior is stairs only |
+| Osaka Castle keep | [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | ¥600, a 1931 concrete reconstruction with an elevator to the 8th floor, stroller-compatible inside unlike Himeji's wooden keep |
+
+### The atomic bombing and war memory
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Atomic Bomb Dome, exterior | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Naka-ku, Hiroshima | Free, viewed along the flat Motoyasu riverside promenade; the structure itself cannot be entered |
+| Atomic Bomb Dome, return visit | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | Free, same riverside promenade, a slower second look before the museum |
+| Peace Memorial Museum | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥200, free under 18; lower-floor exhibits are graphic, party splits so one adult stays outside with the children |
+| Hiroshima Orizuru Tower | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥2,200, paper-crane folding built into the descent ramp, elevator throughout |
+| Port of Kobe Earthquake Memorial Park | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | Free, within Meriken Park; preserves a 60m section of quay wall left cracked by the 1995 Great Hanshin-Awaji Earthquake |
+
+### Imperial and court history
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Imperial Palace East Gardens | [4](#day-4---saturday-october-10-2026---tokyo) | Chiyoda-ku, Tokyo | Free, former Edo Castle grounds, same-day entry, no advance booking |
+| Kyoto Gyoen (parade viewing) | [16](#day-16---thursday-october-22-2026---kyoto) | Kamigyo-ku, Kyoto | Free public park; the walled Imperial Palace (Gosho) sits inside it but is a separate, gated visit |
+| Heian Jingu | [16](#day-16---thursday-october-22-2026---kyoto) | Sakyo-ku, Kyoto | Free; a 5/8-scale, 1895-built replica of the original 8th-century Imperial Palace's main hall |
+| Jidai Matsuri gagaku music | [16](#day-16---thursday-october-22-2026---kyoto) | Kamigyo-ku, Kyoto | Free to hear from the roadside, court music on instruments largely unchanged since the Heian period |
+| Kyoto Imperial Palace (Gosho) | [19](#day-19---sunday-october-25-2026---kyoto) | Kamigyo-ku, Kyoto | Free, walk-in 9:00-16:20, closed Mondays; grounds and building exteriors only, no interiors |
+
+### Gardens
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Ninomaru Garden, Imperial Palace East Gardens | [4](#day-4---saturday-october-10-2026---tokyo) | Chiyoda-ku, Tokyo | Free, formal Japanese garden, flat gravel |
+| Hamarikyu Gardens | [4](#day-4---saturday-october-10-2026---tokyo) | Chuo-ku, Tokyo | ¥300, tidal garden fed directly from Tokyo Bay, a floating teahouse across a wooden bridge |
+| Meiji Jingu Inner Garden | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | ¥500, Edo-period strolling garden with an iris pond |
+| Shinjuku Gyoen | [10](#day-10---friday-october-16-2026---tokyo) | Shinjuku-ku, Tokyo | ¥500, blends French formal, English landscape and Japanese traditional styles across 58 hectares |
+| Sankeien Garden | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Naka-ku, Yokohama | ¥900, traditional strolling garden with 17 historic buildings relocated from Kyoto and Kamakura |
+| Kubota Itchiku Art Museum garden | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | Included in the ¥1,600 admission, a Gaudi-inspired stone garden beside the kimono-art annex |
+| Tenryu-ji, Sogenchi Garden | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | ¥500, pond garden using shakkei (borrowed scenery) from the Arashiyama hillside behind it |
+| Okochi Sanso Garden | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | ¥1,000 including matcha and a sweet, hillside villa garden with some grade and steps |
+| Heian Jingu Shin-en Garden | [16](#day-16---thursday-october-22-2026---kyoto) | Sakyo-ku, Kyoto | ¥600, pond garden with stepping-stone crossings, carrier easier than stroller there |
+| Ryoan-ji | [19](#day-19---sunday-october-25-2026---kyoto) | Ukyo-ku, Kyoto | Karesansui dry rock garden, ¥600, viewed from a raised wooden veranda, shoes off |
+| Isuien Garden | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | ¥900, Edo/Meiji strolling garden using shakkei to frame Todai-ji's gate beyond its own trees |
+| Shukkei-en | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥260, "shrunken scenery" style miniaturizing famous landscapes around a central pond, rebuilt after the bombing |
+
+### Onsen, sento and bathing
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Private kashikiri family bath | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko, Yamanashi | ¥2,750 flat per booking (not per adult), whole party incl. both infants in one 40-minute slot, sidesteps communal-bath age and tattoo restrictions |
+| Local sento | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | near Omiya, Kyoto | ¥490, gender-separated communal soaking tub; both tattoo policy and infant policy vary by bathhouse, confirm ahead |
+
+### Traditional lodging
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Lakeland Hotel Mizunosato (ryokan) | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko, Yamanashi | ¥41,580/night room-only for 3 adults, tatami room with futon bedding, the trip's one night off a Western-style bed |
+
+### Markets and street stalls
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Nakamise-dori | [2](#day-2---thursday-october-8-2026---tokyo) | Taito-ku, Tokyo | Free to browse, the covered approach street to Senso-ji |
+| Ameyoko | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | Free to browse, street-food stalls |
+| Yanaka Ginza | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, roughly 60 shops, an old-fashioned shotengai |
+| Toyosu Market (outer area) | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Koto-ku, Tokyo | Grazing individual stalls; the sit-down sushi counters (Sushi Dai, Sushi Dokoro Yamazaki) are skipped |
+| Kobo-ichi, To-ji | [15](#day-15---wednesday-october-21-2026---kyoto) | Minami-ku, Kyoto | Free entry, roughly 1,000 stalls, held on the 21st of every month |
+| Nishiki Market | [15](#day-15---wednesday-october-21-2026---kyoto) | Nakagyo-ku, Kyoto | Free to browse, roughly 130 shops; several stalls now ask visitors not to eat while walking |
+| Tenjin-ichi, Kitano Tenmangu | [19](#day-19---sunday-october-25-2026---kyoto) | Kamigyo-ku, Kyoto | Free entry, up to around 1,000 stalls, held on the 25th of every month |
+| Nankinmachi (Kobe Chinatown) | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | Free to walk, one of Japan's three historic Chinatowns |
+| Kuromon Ichiba Market | [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Roughly 170 stalls, single-portion grill-and-eat pricing aimed at visitors rather than a wholesale market |
+
+### Food by type
+
+#### Noodles
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Kake udon with chicken tempura | [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival) | Ueno Stn concourse, Taito-ku | Counter-service lunch |
+| Shoyu ramen with gyoza | [2](#day-2---thursday-october-8-2026---tokyo) | Tokyo Solamachi food court, Sumida-ku | |
+| Houtou | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko area, Yamanashi | Yamanashi's regional noodle, flat noodles simmered with kabocha squash and miso |
+| Yudofu teishoku | [17](#day-17---friday-october-23-2026---kyoto) | Saga-Arashiyama, Ukyo-ku | Simmering hot tofu in kombu broth, a specialty of the Tenryu-ji district |
+| Zaru soba | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Chilled buckwheat noodles, paired with a matcha soft-serve |
+| Tonkotsu ramen | [10](#day-10---friday-october-16-2026---tokyo) | Ichiran, Shinjuku | Ordered through an individual ticket-machine booth |
+| Matcha soba | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Tea house near Uji Bridge, Uji-shi | Green-tea-infused buckwheat noodles, plus tea-leaf tempura and ochazuke |
+| Zaru soba | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Nishijin, Kamigyo-ku | With a side of vegetable tempura |
+| Tonkotsu ramen with gyoza | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Ippudo, near Shijo-Omiya | |
+| Kake udon | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Hiroshima Stn concourse, Minami-ku | |
+| Tonkotsu ramen with gyoza | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Hondori arcade, Naka-ku, Hiroshima | |
+| Kake udon | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Hondori arcade, Naka-ku, Hiroshima | |
+| Kake udon | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | near Namba Stn, Osaka | |
+
+#### Rice dishes
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Katsudon | [4](#day-4---saturday-october-10-2026---tokyo) | Shibakoen/Hamamatsucho, Minato-ku | |
+| Katsu curry | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | CoCo Ichibanya, near Shijo-Omiya | Mild spice level |
+| Gyudon | [17](#day-17---friday-october-23-2026---kyoto) | Matsuya, near Shijo-Omiya | |
+| Anago-meshi | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Omotesando, Miyajima | Grilled conger eel over rice, a Miyajima specialty |
+| Fried rice | [10](#day-10---friday-october-16-2026---tokyo) | Hotel kitchenette, Taito-ku | Last-night meal using up remaining pantry stock |
+
+#### Grilled and skewered
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Yakitori set | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Torikizoku, near Ueno Stn | About 5 skewers per adult |
+| Izakaya chicken skewers | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya | Early, kid-friendly seating |
+| Ika-yaki (grilled squid skewer) | [15](#day-15---wednesday-october-21-2026---kyoto) | Kobo-ichi market, To-ji | |
+| Grilled scallop skewer | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Toyosu Market outer area, Koto-ku | Part of the breakfast grazing stop |
+| Charcoal-grilled Hiroshima-bay oysters | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Omotesando, Miyajima | Street-grilled |
+| Yakitori | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Torikizoku Shijo Omiya, Nakagyo-ku | Ordered by named cut: momo, negima, tsukune, kawa, tebasaki |
+| Kushikatsu | [29](#day-29---wednesday-november-4-2026---osaka) | Kushikatsu Daruma, Dotonbori | Deep-fried skewers, strict no-double-dipping rule at the shared sauce pot |
+
+#### Seafood and sushi
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Sushi and seafood grazing | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Toyosu Market outer area, Koto-ku | Nigiri, grilled scallop, tamagoyaki grazed from stalls rather than a sit-down omakase |
+| Shirasu-don | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Komachi-dori, Kamakura | Raw and boiled whitebait over rice |
+| Kakinoha-zushi | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | near Nara Park | Pressed sushi wrapped and cured in a persimmon leaf, a Nara specialty |
+| Nigiri sushi and fresh oysters | [29](#day-29---wednesday-november-4-2026---osaka) | Kuromon Ichiba Market, Chuo-ku, Osaka | Eaten standing at the stall counter |
+
+#### Hot pot
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Yosenabe | [12](#day-12---sunday-october-18-2026---kawaguchiko) | K's House Mt. Fuji shared kitchen, Fujikawaguchiko | Cooked in-room; the pot stays out of toddler reach and only an adult ladles portions once cooled |
+
+#### Street snacks
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Takoyaki | [3](#day-3---friday-october-9-2026---tokyo) | Ameyoko, Taito-ku | Griddled octopus-batter balls |
+| Menchi-katsu, senbei, croquette | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Yanaka Ginza, Taito-ku | |
+| Nikuman (steamed pork buns) | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Yokohama Chinatown, Naka-ku | Chinatown's most iconic street food |
+| Yakisoba, ika-yaki, taiyaki | [15](#day-15---wednesday-october-21-2026---kyoto) | Kobo-ichi market, To-ji | |
+| Takoyaki, warabimochi, hojicha | [19](#day-19---sunday-october-25-2026---kyoto) | Tenjin-ichi market, Kitano Tenmangu | |
+| Takoyaki and okonomiyaki | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Dotonbori, Chuo-ku, Osaka | |
+| Takoyaki and okonomiyaki | [28](#day-28---tuesday-november-3-2026---osaka) | Dotonbori, Chuo-ku, Osaka | |
+
+#### Sweets and tea
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Mitarashi dango | [2](#day-2---thursday-october-8-2026---tokyo) | Nakamise-dori, Asakusa | Grilled, sweet soy-glazed rice-flour dumplings |
+| Harajuku crepe | [5](#day-5---sunday-october-11-2026---tokyo) | Marion Crêpes, Takeshita-dori | Whipped cream and strawberry |
+| Matcha and wagashi | [4](#day-4---saturday-october-10-2026---tokyo) | Hamarikyu Gardens teahouse, Chuo-ku | |
+| Matcha and a seasonal sweet | [17](#day-17---friday-october-23-2026---kyoto) | Okochi Sanso Garden, Ukyo-ku | Included in admission |
+| Matcha soft-serve | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | |
+| Taihoan tea ceremony | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥1,000, whisk your own matcha, low tatami seating with no chair option |
+| Kudzu-mochi | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | near Nara Park | Chilled kudzu-root jelly dusted with kinako soybean flour |
+| Momiji manju | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima | Maple-leaf-shaped sponge cake, usually red-bean filled |
+
+#### Regional specialities
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Houtou | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko area, Yamanashi | Yamanashi's flat-noodle-and-squash dish |
+| Yudofu | [17](#day-17---friday-october-23-2026---kyoto) | Saga-Arashiyama, Ukyo-ku | Kyoto/Arashiyama simmered-tofu specialty |
+| Obanzai | [18](#day-18---saturday-october-24-2026---kyoto) | Gion, Higashiyama-ku | Kyoto home-style small-dish cooking |
+| Kaiseki dinner | [13](#day-13---monday-october-19-2026---kawaguchiko) | Lakeland Hotel Mizunosato, Fujikawaguchiko | Roughly 8 courses, priced as the ryokan's half-board add-on |
+| Kasujiru | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | near Gekkeikan Okura Sake Museum, Fushimi-ku | Sake-lees and pork miso soup, made from the solids left over after pressing sake |
+| Anago-meshi | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Omotesando, Miyajima | Grilled conger eel over rice |
+| Hiroshima-style okonomiyaki | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Okonomimura, Naka-ku, Hiroshima | Built in stacked layers with a separate yakisoba layer underneath, unlike Osaka's version |
+| Osaka-style okonomiyaki | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [28](#day-28---tuesday-november-3-2026---osaka) | Dotonbori, Chuo-ku, Osaka | Batter, cabbage and fillings all stirred together before cooking |
+| Kushikatsu | [29](#day-29---wednesday-november-4-2026---osaka) | Kushikatsu Daruma, Dotonbori | Osaka/Shinsekai deep-fried skewer style |
+
+### Anime, manga and games
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Pokemon Centre Skytree Town | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | Free to enter |
+| Akihabara (Radio Kaikan, Gachapon Kaikan, Mandarake, Super Potato, Yodobashi) | [3](#day-3---friday-october-9-2026---tokyo) | Chiyoda-ku, Tokyo | Free to browse; Radio Kaikan is a real Steins;Gate filming location whose 10F hosted the show's own 2026 anniversary event |
+| Tokyo Character Street | [4](#day-4---saturday-october-10-2026---tokyo) | Tokyo Stn B1F, Chiyoda-ku | Free, roughly 30 character-retail shops |
+| Pokemon Centre Shibuya, Jump Shop, Nintendo Tokyo | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya PARCO 6F | Free to enter, one shared mall floor |
+| Gundam Base Tokyo | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | DiverCity Tokyo Plaza, Koto-ku | Free to browse; the outdoor life-size Unicorn Gundam statue that used to stand outside ended its display 31 Aug 2026 |
+| Ghibli Museum | [10](#day-10---friday-october-16-2026---tokyo) | Mitaka-shi, Tokyo | ¥1,000, lottery-only booking about a month ahead, no strollers permitted indoors |
+| Fushimi Inari Taisha | [15](#day-15---wednesday-october-21-2026---kyoto) | Fushimi-ku, Kyoto | Free; real-world setting of Inari, Konkon, Koi Iroha |
+| Uji riverbank | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | Free; real-world setting of Kyoto Animation's Sound! Euphonium |
+| Pokemon Center Osaka DX | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Daimaru Shinsaibashi 9F, Chuo-ku, Osaka | Free to enter, no attached cafe (Pokemon Cafe Osaka is elsewhere) |
+| Den Den Town | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku/Chuo-ku, Osaka | Free to browse, Osaka's own hobby-shop district |
+
+### Technology and science
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| National Museum of Nature and Science (Kahaku) | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥620, dinosaur skeleton hall and the actual Lambda 4S rocket that launched Japan's first satellite, open until 20:00 on Fridays |
+| teamLab Planets TOKYO DMM | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Koto-ku, Tokyo | ¥5,300, barefoot walk-through digital art, guests get wet to the knee, pack spare clothes |
+| Cup Noodles Museum | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Naka-ku, Yokohama | ¥1,000 including the My CUPNOODLES Factory workshop, design-and-seal-your-own-cup |
+| Gundam Base Tokyo | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | DiverCity Tokyo Plaza, Koto-ku | Free, a Gunpla retail floor rather than a museum |
+
+### Art and museums
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Tokyo National Museum | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥1,000, permanent-collection-only this visit, samurai armor, swords, ceramics, Buddhist sculpture |
+| Kubota Itchiku Art Museum | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,600, kimono art depicting Mt. Fuji using the revived tsujigahana dyeing technique |
+| Itsukushima Treasure Hall | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima, Hatsukaichi | ¥300, shrine treasures, narrow display aisles |
+| Tale of Genji Museum | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥600, air-conditioned, a scale palace model and a short film |
+| Teradaya Inn | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥600, Sakamoto Ryoma history house, raised tatami floor with a step at the entrance |
+| Peace Memorial Museum | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥200, free under 18 |
+| National Museum of Art, Osaka | [28](#day-28---tuesday-november-3-2026---osaka) | Kita-ku, Osaka | Free on 3 Nov (Bunka no Hi / Culture Day) only, otherwise about ¥430; entirely underground, lift-served |
+
+### Crafts and hands-on activities
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Plastic food-sample workshop | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Kappabashi, Taito-ku | ¥2,300, traditional hot-wax method, adult-hands-only, reservation required |
+| My CUPNOODLES Factory workshop | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Cup Noodles Museum, Naka-ku, Yokohama | ¥500 on top of the ¥500 base admission |
+| Taihoan tea ceremony | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥1,000, whisk your own matcha under a host's guidance |
+| Kimono/yukata rental | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | ¥6,300, dressed by shop staff, stroller held at the shop during dressing |
+| Kimono rental, full day | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Yumeyakata Gojo Shop, Shimogyo-ku | ¥5,280, worn all day, adults-only (hard to nurse or change a diaper in) |
+| Nishijin hand-loom weaving | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Kamigyo-ku, Kyoto | ¥2,530, weave a small cloth to take home, reservation 2+ days ahead |
+| Saiko Iyashi-no-Sato Nenba | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥500, thatched-roof village with small craft workshops |
+| Gekkeikan Okura Sake Museum tasting | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥600, includes three tastings and a souvenir bottle, free for ages 12 and under |
+
+### Nature and landscape
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Yoyogi Park | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, open lawns |
+| Odaiba Marine Park | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Minato-ku, Tokyo | Free, waterfront promenade facing the Rainbow Bridge |
+| Chureito Pagoda / Arakurayama Sengen Park | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Fujiyoshida-shi, Yamanashi | Free, 398 stone steps or a longer slope path, both carrier-only |
+| Oishi Park | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | Free, lake-and-Fuji view; mornings are the reliable clear window before afternoon cloud |
+| Lake Kawaguchi sightseeing cruise | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Kawaguchiko, Yamanashi | ¥1,200, boarding via a short gangway, not wheel-on |
+| Kawaguchiko Tenjozan Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000, summit view over the full width of the lake |
+| Oshino Hakkai | [13](#day-13---monday-october-19-2026---kawaguchiko) | Oshino, Yamanashi | Free public path between eight spring-fed ponds, +¥300 for one private garden pond |
+| Yuigahama Beach | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | Free, flat sand approach, carrier easier once actually on the sand |
+| Arashiyama Bamboo Grove | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | Free, best in the first hour after sunrise before tour groups arrive |
+| Togetsukyo Bridge and riverside | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | Free |
+| Philosopher's Path | [16](#day-16---thursday-october-22-2026---kyoto) | Sakyo-ku, Kyoto | Free, canal-side stone path between Nanzenji and Eikan-do |
+| Yanaka Cemetery | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, over 7,000 graves, paved but uneven paths |
+| Nara Park (deer) | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | Free to watch, ¥200 per pack to feed by hand |
+| Momijidani Park | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima | Free, shaded rest stop at the ropeway base station |
+| Meriken Park | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | Free, flat harbourside park |
+
+### Rural and small-town Japan
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Oshino Hakkai | [13](#day-13---monday-october-19-2026---kawaguchiko) | Oshino, Yamanashi | Free public path, preserved farming village with water wheels |
+| Saiko Iyashi-no-Sato Nenba | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥500, reconstructed thatched-roof village rebuilt after a 1966 landslide |
+| Yanaka Ginza and Yanaka Cemetery | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, an old shotengai streetscape that survived Tokyo's postwar rebuilding |
+| Chushojima / Fushimi sake district | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | Free canal-side walk past white-plastered Edo-period brewery warehouses |
+
+### Festivals and seasonal events
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Jidai Matsuri | [16](#day-16---thursday-october-22-2026---kyoto) | Kamigyo-ku, Kyoto | Free street viewing from inside Kyoto Gyoen, no paid grandstand seats bought |
+| Tokyo Rockabilly Club dancers | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, unticketed, Sunday afternoons, weather-dependent |
+| Kobo-ichi market | [15](#day-15---wednesday-october-21-2026---kyoto) | Minami-ku, Kyoto | Free, held on the 21st of every month |
+| Tenjin-ichi market | [19](#day-19---sunday-october-25-2026---kyoto) | Kamigyo-ku, Kyoto | Free, held on the 25th of every month |
+| Midosuji "Hikari no Kyoen" illumination | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Osaka | Free, catches the winter light festival's opening night |
+| Culture Day (Bunka no Hi) | [28](#day-28---tuesday-november-3-2026---osaka) | Kita-ku, Osaka | National Museum of Art is free on this one date, not a citywide policy |
+
+### Theatre and performance
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Kabukiza single-act (hitomakumi) | [2](#day-2---thursday-october-8-2026---tokyo) | Chuo-ku, Tokyo | About ¥2,500 including an English subtitle tablet, cash-only, sold same-day only, no advance booking |
+| Tokyo Rockabilly Club dancers | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free street performance, weather-dependent |
+
+### Transport as an experience
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Sumida River water bus | [4](#day-4---saturday-october-10-2026---tokyo) | Hamarikyu Pier to Asakusa, Tokyo | ¥1,000, about 40 minutes under 13 bridges |
+| Enoden coastal railway | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | ¥800 for a 1-day pass ("Noriorikun") |
+| Kawaguchiko Tenjozan Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
+| Lake Kawaguchi sightseeing cruise | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Kawaguchiko, Yamanashi | ¥1,200 |
+| Sagano Romantic Train (Torokko) | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | ¥880, open-window sightseeing train through the Hozugawa gorge, reserve ahead |
+| Fushimi Jikkokubune canal boat | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥1,900, optional add, online-only reservation |
+| Miyajima Ropeway | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥2,000, only 2 of 3 adults go up, one carrying a child |
+| Hiroden streetcar | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Hiroshima | Flat citywide fare, ¥220 per ride |
+| Tombori River Cruise | [29](#day-29---wednesday-november-4-2026---osaka) | Dotonbori, Chuo-ku, Osaka | ¥2,000, scheduled departures rather than walk-up guaranteed |
+
+### Views and observation decks
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Tokyo Skytree Tembo Deck | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | ¥2,500, 350m, advance timed tickets recommended |
+| Tokyo Tower Main Deck | [4](#day-4---saturday-october-10-2026---tokyo) | Minato-ku, Tokyo | ¥1,500, 150m |
+| Landmark Tower Sky Garden | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Nishi-ku, Yokohama | ¥1,200, 69th floor |
+| Chureito Pagoda viewpoint | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Fujiyoshida-shi, Yamanashi | Free, reached via 398 stone steps, carrier-only |
+| Kawaguchiko Tenjozan Ropeway summit | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
+| Miyajima Ropeway summit | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥2,000 |
+| Hiroshima Orizuru Tower | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥2,200 |
+| Tsutenkaku Tower | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku, Osaka | ¥900, elevator-served |
+
+### Things aimed at the toddlers
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Sumida Aquarium | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | ¥2,900, open-topped penguin pool, a touch pool |
+| Ueno Zoo | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥600, no giant pandas currently (the last two returned to China in January 2026) |
+| Yoyogi Park | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, open lawns |
+| teamLab Planets | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Koto-ku, Tokyo | ¥5,300, barefoot water rooms, pack spare clothes |
+| Inokashira Park + small zoo corner | [10](#day-10---friday-october-16-2026---tokyo) | Musashino-shi/Mitaka-shi, Tokyo | ¥500 for the small zoo section, park itself free |
+| Nara Park deer | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | Free to watch, ¥200 per pack to feed by hand |
+| Miyajima Public Aquarium | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥1,420, penguin and sea lion show, a touch pool |
+| Miyajima deer | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima | Free-roaming, same as Nara's |
+| Anpanman Children's Museum & Mall | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | ¥2,250 per person including both infants (ages 1 and up are charged here, unlike most sites on this trip), web ticket required |
+
+### Shopping
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Nakamise-dori | [2](#day-2---thursday-october-8-2026---tokyo) | Taito-ku, Tokyo | Free to browse, souvenir and snack stalls |
+| Ameyoko | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | Free to browse |
+| Akihabara | [3](#day-3---friday-october-9-2026---tokyo) | Chiyoda-ku, Tokyo | Free to browse; Super Potato's upper floors are stairs-only, not stroller terrain |
+| Kappabashi Kitchenware Street | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free to browse, restaurant-supply shops |
+| Takeshita Street + Laforet Harajuku | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse, carrier-only by early afternoon (narrow and packed) |
+| Shibuya PARCO | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse (Pokemon Centre, Jump Shop, Nintendo Tokyo) |
+| Nishiki Market + Daimaru depachika | [15](#day-15---wednesday-october-21-2026---kyoto) | Nakagyo-ku, Kyoto | Free to browse |
+| Sannenzaka/Ninenzaka | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free to walk, uneven stone paving on a slope |
+| Kuromon Ichiba Market | [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Grill-and-eat stalls, priced for visitors |
+| Den Den Town | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku/Chuo-ku, Osaka | Free to browse |
+| Dotonbori/Shinsaibashi | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Free to walk, dense evening crowds |
+
+---
+
+## Appendix B: The five places
+
+Five stops in thirty days. Each profile says what the place is, what walking
+around it feels like, and how it differs from the other four.
+
+### Tokyo
 
 *Covers Days 1-10 (Oct 7-16 2026), based at Hotel Livemax Higashi-Ueno, 3-5-1 Motoasakusa,
 Taito-ku. Written against MASTER-BRIEF.md and days-01-10-tokyo.md.*
@@ -3447,9 +3897,7 @@ Tokyo itself to deliver it.
 
 ---
 
----
-
-# Kawaguchiko and the Fuji Five Lakes
+### Kawaguchiko and the Fuji Five Lakes
 
 Covers Days 11-13 (Oct 17-19, 2026), 3 nights at K's House Mt. Fuji. Cross-check against
 `/home/user/test/japan-trip/days/days-11-14-fuji-transfer.md` and `MASTER-BRIEF.md`.
@@ -3508,9 +3956,7 @@ opts out on its own schedule.
 
 ---
 
----
-
-# Kyoto
+### Kyoto
 
 *Research file. Covers Days 14-23 (Oct 20-29 2026), 10 nights at Toyoko Inn Kyoto
 Shijo-Omiya, 3 adults + 2 infants (~12mo, ~20mo). Prices are 2026 planning
@@ -3518,7 +3964,7 @@ estimates, not quotes, per the trip's honesty rule. FX ¥155 = $1.*
 
 ---
 
-### What Kyoto actually is
+##### What Kyoto actually is
 
 Kyoto was Japan's imperial capital for over a thousand years, from 794 until
 1868, when the emperor moved to Tokyo after the Meiji Restoration. Almost
@@ -3544,7 +3990,7 @@ UNESCO World Heritage sites, and entire streetscapes of pre-modern wooden
 buildings that Tokyo and Osaka simply do not have, because Tokyo and Osaka
 were rebuilt from the ground up after 1945.
 
-### The texture of the city
+##### The texture of the city
 
 Kyoto sits in a flat basin ringed on three sides by mountains, and the city
 itself is a low-rise grid, laid out on a Chinese-style checkerboard plan in
@@ -3565,7 +4011,7 @@ Karasuma-dori, and so on). Three zones matter for a visitor:
   own hills - bamboo grove, temple gardens, a scenic gorge railway - more a
   half-day excursion than part of the central grid.
 
-### How Kyoto differs from Tokyo and Osaka, concretely
+##### How Kyoto differs from Tokyo and Osaka, concretely
 
 Within an hour of arriving, a traveller coming from Tokyo would notice: no
 skyscrapers (a long-standing height-limit and viewshed-protection policy
@@ -3590,7 +4036,7 @@ platform. This itinerary already leans on walking and taxis at the points
 where a packed bus with two infants would be the wrong call (see Day 16's
 taxi leg back from Nanzenji).
 
-### Temple fatigue is real
+##### Temple fatigue is real
 
 After two or three days of gates, gravel courtyards, and ¥500 admission
 temples that start to blur together, most travellers - let alone travellers
@@ -3601,7 +4047,7 @@ already does that on Day 23). Don't stack two major temple-heavy days
 back-to-back, and treat any day with more than two paid admissions as a long
 day requiring a correspondingly light day on either side.
 
-### What Kyoto is world-class at, and what it isn't
+##### What Kyoto is world-class at, and what it isn't
 
 Kyoto is one of the best places on Earth for: pre-modern Japanese
 architecture and garden design at a density found nowhere else; traditional
@@ -3615,9 +4061,7 @@ appropriately generous, provided the pacing rule above is respected.
 
 ---
 
----
-
-# Hiroshima and Miyajima
+### Hiroshima and Miyajima
 
 Covers Days 24-26 (Oct 30 - Nov 1, 2026), 3 nights at Toyoko Inn Hiroshima Ekimae Ohashi
 Minami, with a full Miyajima day. Cross-check against
@@ -3678,9 +4122,7 @@ unhurried treatment this plan already gives them.
 
 ---
 
----
-
-# Osaka
+### Osaka
 
 *Prepared for Days 27-30 (Nov 2-5 2026), Toyoko Inn Osaka Namba, 3 adults + 2 infants (~12mo, ~20mo).
 Prices at ¥155 = $1.00. Facts are marked [VERIFIED, source] or [ESTIMATE]; no invented addresses.*
@@ -3759,370 +4201,7 @@ across, not one you sit still in.
 
 ---
 
-# Part IV: Topic index
-
-# Topic Index
-
-This index lists what the itinerary actually contains, organized by subject rather than by date, so a question like "is there a castle, and when" or "where do we eat ramen" can be answered without reading all thirty days. Each row names the day it happens, where it is, and one practical fact - a cost, a booking constraint, or what sets that instance apart from the others on the same list. Costs shown are per adult unless a row says otherwise; both infants ride and enter free almost everywhere except where a row flags an exception.
-
-## Temples and Buddhism
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Senso-ji | 2 | Taito-ku, Tokyo | Buddhist temple to Kannon, free, main hall open roughly 6am-5pm, Asakusa Shrine sits inside the same grounds |
-| Zojoji Temple | 4 | Minato-ku, Tokyo | Free, flat paved grounds, no stairs |
-| Kotoku-in (Great Buddha) | 7 | Kamakura, Kanagawa | ¥300, open gravel forecourt, an optional stairs-only interior climb is +¥50 |
-| Hase-dera | 7 | Kamakura, Kanagawa | ¥400, terraced hillside garden reached by steep stairs, carrier-only |
-| To-ji | 15 | Minami-ku, Kyoto | Free, five-story pagoda; the Kobo-ichi market fills the grounds on the 21st of every month |
-| Tenryu-ji | 17 | Ukyo-ku, Kyoto | ¥500, UNESCO World Heritage; today's ticket covers the garden only, not the hall interior |
-| Kiyomizu-dera | 18 | Higashiyama-ku, Kyoto | ¥500, UNESCO World Heritage, wooden stage over the hillside, approach lanes are uneven worn stone |
-| Kinkaku-ji | 19 | Kita-ku, Kyoto | ¥500, exterior and garden walk only, no entry into the pavilion |
-| Ryoan-ji | 19 | Ukyo-ku, Kyoto | Karesansui dry rock garden, ¥600, raised veranda so shoes off and carrier rather than stroller |
-| Byodo-in | 21 | Uji-shi, Kyoto | ¥600 garden and museum; the Phoenix Hall interior is a separate timed ¥300 ticket, narrow walkway, not stroller-accessible |
-| Daisho-in Temple | 25 | Miyajima, Hatsukaichi | Free, Shingon Buddhist mountain temple, spinning sutra wheels, stepped approach beyond the lower grounds |
-| Todai-ji Daibutsuden | 20 | Nara | ¥800, houses the 15m bronze Daibutsu, flat paved paths from the park entrance |
-
-## Shinto shrines
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Asakusa Shrine | 2 | Taito-ku, Tokyo | Free, inside Senso-ji's grounds |
-| Meiji Jingu | 5 | Shibuya-ku, Tokyo | Main shrine free; the paid Inner Garden is ¥500, a separate Edo-period strolling garden |
-| Nezu Shrine | 6 | Bunkyo-ku, Tokyo | Free, torii-lined hillside path; the azalea-garden fee is seasonal (spring) only |
-| Fushimi Inari Taisha | 15 | Fushimi-ku, Kyoto | Free, open 24 hours; the Senbon Torii loop to Yotsutsuji is stroller-workable, the summit beyond it is stairs and carrier-only |
-| Heian Jingu | 16 | Sakyo-ku, Kyoto | Shrine grounds free; the paid Shin-en Garden is ¥600, separate |
-| Kitano Tenmangu | 19 | Kamigyo-ku, Kyoto | Free, dedicated to the god of learning; the Tenjin-ichi market fills the grounds on the 25th of every month |
-| Kasuga Taisha | 20 | Nara | Lantern-lined approach free; the paid inner precinct and moss garden is ¥500, gravel paths slightly uneven |
-| Itsukushima Shrine | 25 | Miyajima, Hatsukaichi | ¥300, built over tidal flats; the torii floats or stands on exposed sand depending on the tide, an elevator underpass avoids the one stairway |
-| Namba Yasaka Shrine | 27 | Naniwa-ku, Osaka | Free, main hall built as a giant lion's head, flat ground-level courtyard |
-
-## Castles and fortifications
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Imperial Palace East Gardens | 4 | Chiyoda-ku, Tokyo | Free, former Edo Castle inner citadel; the Tenshudai foundation is reached by stone stairs, carrier needed there |
-| Nijo Castle | 19 | Nakagyo-ku, Kyoto | ¥1,300 (grounds + Ninomaru Palace interior); the palace's "nightingale floors" chirp underfoot, shoeless interior not stroller-accessible |
-| Hiroshima Castle | 26 | Naka-ku, Hiroshima | ¥370, a 1958 concrete reconstruction after the original was destroyed in 1945; keep interior is stairs only |
-| Osaka Castle keep | 29 | Chuo-ku, Osaka | ¥600, a 1931 concrete reconstruction with an elevator to the 8th floor, stroller-compatible inside unlike Himeji's wooden keep |
-
-## The atomic bombing and war memory
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Atomic Bomb Dome, exterior | 24 | Naka-ku, Hiroshima | Free, viewed along the flat Motoyasu riverside promenade; the structure itself cannot be entered |
-| Atomic Bomb Dome, return visit | 26 | Naka-ku, Hiroshima | Free, same riverside promenade, a slower second look before the museum |
-| Peace Memorial Museum | 26 | Naka-ku, Hiroshima | ¥200, free under 18; lower-floor exhibits are graphic, party splits so one adult stays outside with the children |
-| Hiroshima Orizuru Tower | 26 | Naka-ku, Hiroshima | ¥2,200, paper-crane folding built into the descent ramp, elevator throughout |
-| Port of Kobe Earthquake Memorial Park | 28 | Chuo-ku, Kobe | Free, within Meriken Park; preserves a 60m section of quay wall left cracked by the 1995 Great Hanshin-Awaji Earthquake |
-
-## Imperial and court history
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Imperial Palace East Gardens | 4 | Chiyoda-ku, Tokyo | Free, former Edo Castle grounds, same-day entry, no advance booking |
-| Kyoto Gyoen (parade viewing) | 16 | Kamigyo-ku, Kyoto | Free public park; the walled Imperial Palace (Gosho) sits inside it but is a separate, gated visit |
-| Heian Jingu | 16 | Sakyo-ku, Kyoto | Free; a 5/8-scale, 1895-built replica of the original 8th-century Imperial Palace's main hall |
-| Jidai Matsuri gagaku music | 16 | Kamigyo-ku, Kyoto | Free to hear from the roadside, court music on instruments largely unchanged since the Heian period |
-| Kyoto Imperial Palace (Gosho) | 19 | Kamigyo-ku, Kyoto | Free, walk-in 9:00-16:20, closed Mondays; grounds and building exteriors only, no interiors |
-
-## Gardens
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Ninomaru Garden, Imperial Palace East Gardens | 4 | Chiyoda-ku, Tokyo | Free, formal Japanese garden, flat gravel |
-| Hamarikyu Gardens | 4 | Chuo-ku, Tokyo | ¥300, tidal garden fed directly from Tokyo Bay, a floating teahouse across a wooden bridge |
-| Meiji Jingu Inner Garden | 5 | Shibuya-ku, Tokyo | ¥500, Edo-period strolling garden with an iris pond |
-| Shinjuku Gyoen | 10 | Shinjuku-ku, Tokyo | ¥500, blends French formal, English landscape and Japanese traditional styles across 58 hectares |
-| Sankeien Garden | 9 | Naka-ku, Yokohama | ¥900, traditional strolling garden with 17 historic buildings relocated from Kyoto and Kamakura |
-| Kubota Itchiku Art Museum garden | 12 | Fujikawaguchiko-machi, Yamanashi | Included in the ¥1,600 admission, a Gaudi-inspired stone garden beside the kimono-art annex |
-| Tenryu-ji, Sogenchi Garden | 17 | Ukyo-ku, Kyoto | ¥500, pond garden using shakkei (borrowed scenery) from the Arashiyama hillside behind it |
-| Okochi Sanso Garden | 17 | Ukyo-ku, Kyoto | ¥1,000 including matcha and a sweet, hillside villa garden with some grade and steps |
-| Heian Jingu Shin-en Garden | 16 | Sakyo-ku, Kyoto | ¥600, pond garden with stepping-stone crossings, carrier easier than stroller there |
-| Ryoan-ji | 19 | Ukyo-ku, Kyoto | Karesansui dry rock garden, ¥600, viewed from a raised wooden veranda, shoes off |
-| Isuien Garden | 20 | Nara | ¥900, Edo/Meiji strolling garden using shakkei to frame Todai-ji's gate beyond its own trees |
-| Shukkei-en | 26 | Naka-ku, Hiroshima | ¥260, "shrunken scenery" style miniaturizing famous landscapes around a central pond, rebuilt after the bombing |
-
-## Onsen, sento and bathing
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Private kashikiri family bath | 13 | Fujikawaguchiko, Yamanashi | ¥2,750 flat per booking (not per adult), whole party incl. both infants in one 40-minute slot, sidesteps communal-bath age and tattoo restrictions |
-| Local sento | 23 | near Omiya, Kyoto | ¥490, gender-separated communal soaking tub; both tattoo policy and infant policy vary by bathhouse, confirm ahead |
-
-## Traditional lodging
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Lakeland Hotel Mizunosato (ryokan) | 13 | Fujikawaguchiko, Yamanashi | ¥41,580/night room-only for 3 adults, tatami room with futon bedding, the trip's one night off a Western-style bed |
-
-## Markets and street stalls
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Nakamise-dori | 2 | Taito-ku, Tokyo | Free to browse, the covered approach street to Senso-ji |
-| Ameyoko | 3 | Taito-ku, Tokyo | Free to browse, street-food stalls |
-| Yanaka Ginza | 6 | Taito-ku, Tokyo | Free, roughly 60 shops, an old-fashioned shotengai |
-| Toyosu Market (outer area) | 8 | Koto-ku, Tokyo | Grazing individual stalls; the sit-down sushi counters (Sushi Dai, Sushi Dokoro Yamazaki) are skipped |
-| Kobo-ichi, To-ji | 15 | Minami-ku, Kyoto | Free entry, roughly 1,000 stalls, held on the 21st of every month |
-| Nishiki Market | 15 | Nakagyo-ku, Kyoto | Free to browse, roughly 130 shops; several stalls now ask visitors not to eat while walking |
-| Tenjin-ichi, Kitano Tenmangu | 19 | Kamigyo-ku, Kyoto | Free entry, up to around 1,000 stalls, held on the 25th of every month |
-| Nankinmachi (Kobe Chinatown) | 28 | Chuo-ku, Kobe | Free to walk, one of Japan's three historic Chinatowns |
-| Kuromon Ichiba Market | 29 | Chuo-ku, Osaka | Roughly 170 stalls, single-portion grill-and-eat pricing aimed at visitors rather than a wholesale market |
-
-## Food by type
-
-### Noodles
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Kake udon with chicken tempura | 1 | Ueno Stn concourse, Taito-ku | Counter-service lunch |
-| Shoyu ramen with gyoza | 2 | Tokyo Solamachi food court, Sumida-ku | |
-| Houtou | 12 | Fujikawaguchiko area, Yamanashi | Yamanashi's regional noodle, flat noodles simmered with kabocha squash and miso |
-| Yudofu teishoku | 17 | Saga-Arashiyama, Ukyo-ku | Simmering hot tofu in kombu broth, a specialty of the Tenryu-ji district |
-| Zaru soba | 18 | Higashiyama-ku, Kyoto | Chilled buckwheat noodles, paired with a matcha soft-serve |
-| Tonkotsu ramen | 10 | Ichiran, Shinjuku | Ordered through an individual ticket-machine booth |
-| Matcha soba | 21 | Tea house near Uji Bridge, Uji-shi | Green-tea-infused buckwheat noodles, plus tea-leaf tempura and ochazuke |
-| Zaru soba | 23 | Nishijin, Kamigyo-ku | With a side of vegetable tempura |
-| Tonkotsu ramen with gyoza | 22 | Ippudo, near Shijo-Omiya | |
-| Kake udon | 24 | Hiroshima Stn concourse, Minami-ku | |
-| Tonkotsu ramen with gyoza | 24 | Hondori arcade, Naka-ku, Hiroshima | |
-| Kake udon | 26 | Hondori arcade, Naka-ku, Hiroshima | |
-| Kake udon | 27 | near Namba Stn, Osaka | |
-
-### Rice dishes
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Katsudon | 4 | Shibakoen/Hamamatsucho, Minato-ku | |
-| Katsu curry | 20 | CoCo Ichibanya, near Shijo-Omiya | Mild spice level |
-| Gyudon | 17 | Matsuya, near Shijo-Omiya | |
-| Anago-meshi | 25 | Omotesando, Miyajima | Grilled conger eel over rice, a Miyajima specialty |
-| Fried rice | 10 | Hotel kitchenette, Taito-ku | Last-night meal using up remaining pantry stock |
-
-### Grilled and skewered
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Yakitori set | 6 | Torikizoku, near Ueno Stn | About 5 skewers per adult |
-| Izakaya chicken skewers | 5 | Shibuya | Early, kid-friendly seating |
-| Ika-yaki (grilled squid skewer) | 15 | Kobo-ichi market, To-ji | |
-| Grilled scallop skewer | 8 | Toyosu Market outer area, Koto-ku | Part of the breakfast grazing stop |
-| Charcoal-grilled Hiroshima-bay oysters | 25 | Omotesando, Miyajima | Street-grilled |
-| Yakitori | 21 | Torikizoku Shijo Omiya, Nakagyo-ku | Ordered by named cut: momo, negima, tsukune, kawa, tebasaki |
-| Kushikatsu | 29 | Kushikatsu Daruma, Dotonbori | Deep-fried skewers, strict no-double-dipping rule at the shared sauce pot |
-
-### Seafood and sushi
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Sushi and seafood grazing | 8 | Toyosu Market outer area, Koto-ku | Nigiri, grilled scallop, tamagoyaki grazed from stalls rather than a sit-down omakase |
-| Shirasu-don | 7 | Komachi-dori, Kamakura | Raw and boiled whitebait over rice |
-| Kakinoha-zushi | 20 | near Nara Park | Pressed sushi wrapped and cured in a persimmon leaf, a Nara specialty |
-| Nigiri sushi and fresh oysters | 29 | Kuromon Ichiba Market, Chuo-ku, Osaka | Eaten standing at the stall counter |
-
-### Hot pot
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Yosenabe | 12 | K's House Mt. Fuji shared kitchen, Fujikawaguchiko | Cooked in-room; the pot stays out of toddler reach and only an adult ladles portions once cooled |
-
-### Street snacks
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Takoyaki | 3 | Ameyoko, Taito-ku | Griddled octopus-batter balls |
-| Menchi-katsu, senbei, croquette | 6 | Yanaka Ginza, Taito-ku | |
-| Nikuman (steamed pork buns) | 9 | Yokohama Chinatown, Naka-ku | Chinatown's most iconic street food |
-| Yakisoba, ika-yaki, taiyaki | 15 | Kobo-ichi market, To-ji | |
-| Takoyaki, warabimochi, hojicha | 19 | Tenjin-ichi market, Kitano Tenmangu | |
-| Takoyaki and okonomiyaki | 27 | Dotonbori, Chuo-ku, Osaka | |
-| Takoyaki and okonomiyaki | 28 | Dotonbori, Chuo-ku, Osaka | |
-
-### Sweets and tea
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Mitarashi dango | 2 | Nakamise-dori, Asakusa | Grilled, sweet soy-glazed rice-flour dumplings |
-| Harajuku crepe | 5 | Marion Crêpes, Takeshita-dori | Whipped cream and strawberry |
-| Matcha and wagashi | 4 | Hamarikyu Gardens teahouse, Chuo-ku | |
-| Matcha and a seasonal sweet | 17 | Okochi Sanso Garden, Ukyo-ku | Included in admission |
-| Matcha soft-serve | 18 | Higashiyama-ku, Kyoto | |
-| Taihoan tea ceremony | 21 | Uji-shi, Kyoto | ¥1,000, whisk your own matcha, low tatami seating with no chair option |
-| Kudzu-mochi | 20 | near Nara Park | Chilled kudzu-root jelly dusted with kinako soybean flour |
-| Momiji manju | 25 | Miyajima | Maple-leaf-shaped sponge cake, usually red-bean filled |
-
-### Regional specialities
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Houtou | 12 | Fujikawaguchiko area, Yamanashi | Yamanashi's flat-noodle-and-squash dish |
-| Yudofu | 17 | Saga-Arashiyama, Ukyo-ku | Kyoto/Arashiyama simmered-tofu specialty |
-| Obanzai | 18 | Gion, Higashiyama-ku | Kyoto home-style small-dish cooking |
-| Kaiseki dinner | 13 | Lakeland Hotel Mizunosato, Fujikawaguchiko | Roughly 8 courses, priced as the ryokan's half-board add-on |
-| Kasujiru | 22 | near Gekkeikan Okura Sake Museum, Fushimi-ku | Sake-lees and pork miso soup, made from the solids left over after pressing sake |
-| Anago-meshi | 25 | Omotesando, Miyajima | Grilled conger eel over rice |
-| Hiroshima-style okonomiyaki | 25 | Okonomimura, Naka-ku, Hiroshima | Built in stacked layers with a separate yakisoba layer underneath, unlike Osaka's version |
-| Osaka-style okonomiyaki | 27, 28 | Dotonbori, Chuo-ku, Osaka | Batter, cabbage and fillings all stirred together before cooking |
-| Kushikatsu | 29 | Kushikatsu Daruma, Dotonbori | Osaka/Shinsekai deep-fried skewer style |
-
-## Anime, manga and games
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Pokemon Centre Skytree Town | 2 | Sumida-ku, Tokyo | Free to enter |
-| Akihabara (Radio Kaikan, Gachapon Kaikan, Mandarake, Super Potato, Yodobashi) | 3 | Chiyoda-ku, Tokyo | Free to browse; Radio Kaikan is a real Steins;Gate filming location whose 10F hosted the show's own 2026 anniversary event |
-| Tokyo Character Street | 4 | Tokyo Stn B1F, Chiyoda-ku | Free, roughly 30 character-retail shops |
-| Pokemon Centre Shibuya, Jump Shop, Nintendo Tokyo | 5 | Shibuya PARCO 6F | Free to enter, one shared mall floor |
-| Gundam Base Tokyo | 8 | DiverCity Tokyo Plaza, Koto-ku | Free to browse; the outdoor life-size Unicorn Gundam statue that used to stand outside ended its display 31 Aug 2026 |
-| Ghibli Museum | 10 | Mitaka-shi, Tokyo | ¥1,000, lottery-only booking about a month ahead, no strollers permitted indoors |
-| Fushimi Inari Taisha | 15 | Fushimi-ku, Kyoto | Free; real-world setting of Inari, Konkon, Koi Iroha |
-| Uji riverbank | 21 | Uji-shi, Kyoto | Free; real-world setting of Kyoto Animation's Sound! Euphonium |
-| Pokemon Center Osaka DX | 27 | Daimaru Shinsaibashi 9F, Chuo-ku, Osaka | Free to enter, no attached cafe (Pokemon Cafe Osaka is elsewhere) |
-| Den Den Town | 29 | Naniwa-ku/Chuo-ku, Osaka | Free to browse, Osaka's own hobby-shop district |
-
-## Technology and science
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| National Museum of Nature and Science (Kahaku) | 3 | Taito-ku, Tokyo | ¥620, dinosaur skeleton hall and the actual Lambda 4S rocket that launched Japan's first satellite, open until 20:00 on Fridays |
-| teamLab Planets TOKYO DMM | 8 | Koto-ku, Tokyo | ¥5,300, barefoot walk-through digital art, guests get wet to the knee, pack spare clothes |
-| Cup Noodles Museum | 9 | Naka-ku, Yokohama | ¥1,000 including the My CUPNOODLES Factory workshop, design-and-seal-your-own-cup |
-| Gundam Base Tokyo | 8 | DiverCity Tokyo Plaza, Koto-ku | Free, a Gunpla retail floor rather than a museum |
-
-## Art and museums
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Tokyo National Museum | 3 | Taito-ku, Tokyo | ¥1,000, permanent-collection-only this visit, samurai armor, swords, ceramics, Buddhist sculpture |
-| Kubota Itchiku Art Museum | 12 | Fujikawaguchiko-machi, Yamanashi | ¥1,600, kimono art depicting Mt. Fuji using the revived tsujigahana dyeing technique |
-| Itsukushima Treasure Hall | 25 | Miyajima, Hatsukaichi | ¥300, shrine treasures, narrow display aisles |
-| Tale of Genji Museum | 21 | Uji-shi, Kyoto | ¥600, air-conditioned, a scale palace model and a short film |
-| Teradaya Inn | 22 | Fushimi-ku, Kyoto | ¥600, Sakamoto Ryoma history house, raised tatami floor with a step at the entrance |
-| Peace Memorial Museum | 26 | Naka-ku, Hiroshima | ¥200, free under 18 |
-| National Museum of Art, Osaka | 28 | Kita-ku, Osaka | Free on 3 Nov (Bunka no Hi / Culture Day) only, otherwise about ¥430; entirely underground, lift-served |
-
-## Crafts and hands-on activities
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Plastic food-sample workshop | 6 | Kappabashi, Taito-ku | ¥2,300, traditional hot-wax method, adult-hands-only, reservation required |
-| My CUPNOODLES Factory workshop | 9 | Cup Noodles Museum, Naka-ku, Yokohama | ¥500 on top of the ¥500 base admission |
-| Taihoan tea ceremony | 21 | Uji-shi, Kyoto | ¥1,000, whisk your own matcha under a host's guidance |
-| Kimono/yukata rental | 18 | Higashiyama-ku, Kyoto | ¥6,300, dressed by shop staff, stroller held at the shop during dressing |
-| Kimono rental, full day | 23 | Yumeyakata Gojo Shop, Shimogyo-ku | ¥5,280, worn all day, adults-only (hard to nurse or change a diaper in) |
-| Nishijin hand-loom weaving | 23 | Kamigyo-ku, Kyoto | ¥2,530, weave a small cloth to take home, reservation 2+ days ahead |
-| Saiko Iyashi-no-Sato Nenba | 13 | Fujikawaguchiko-machi, Yamanashi | ¥500, thatched-roof village with small craft workshops |
-| Gekkeikan Okura Sake Museum tasting | 22 | Fushimi-ku, Kyoto | ¥600, includes three tastings and a souvenir bottle, free for ages 12 and under |
-
-## Nature and landscape
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Yoyogi Park | 5 | Shibuya-ku, Tokyo | Free, open lawns |
-| Odaiba Marine Park | 8 | Minato-ku, Tokyo | Free, waterfront promenade facing the Rainbow Bridge |
-| Chureito Pagoda / Arakurayama Sengen Park | 11 | Fujiyoshida-shi, Yamanashi | Free, 398 stone steps or a longer slope path, both carrier-only |
-| Oishi Park | 12 | Fujikawaguchiko-machi, Yamanashi | Free, lake-and-Fuji view; mornings are the reliable clear window before afternoon cloud |
-| Lake Kawaguchi sightseeing cruise | 12 | Kawaguchiko, Yamanashi | ¥1,200, boarding via a short gangway, not wheel-on |
-| Kawaguchiko Tenjozan Ropeway | 12 | Fujikawaguchiko-machi, Yamanashi | ¥1,000, summit view over the full width of the lake |
-| Oshino Hakkai | 13 | Oshino, Yamanashi | Free public path between eight spring-fed ponds, +¥300 for one private garden pond |
-| Yuigahama Beach | 7 | Kamakura, Kanagawa | Free, flat sand approach, carrier easier once actually on the sand |
-| Arashiyama Bamboo Grove | 17 | Ukyo-ku, Kyoto | Free, best in the first hour after sunrise before tour groups arrive |
-| Togetsukyo Bridge and riverside | 17 | Ukyo-ku, Kyoto | Free |
-| Philosopher's Path | 16 | Sakyo-ku, Kyoto | Free, canal-side stone path between Nanzenji and Eikan-do |
-| Yanaka Cemetery | 6 | Taito-ku, Tokyo | Free, over 7,000 graves, paved but uneven paths |
-| Nara Park (deer) | 20 | Nara | Free to watch, ¥200 per pack to feed by hand |
-| Momijidani Park | 25 | Miyajima | Free, shaded rest stop at the ropeway base station |
-| Meriken Park | 28 | Chuo-ku, Kobe | Free, flat harbourside park |
-
-## Rural and small-town Japan
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Oshino Hakkai | 13 | Oshino, Yamanashi | Free public path, preserved farming village with water wheels |
-| Saiko Iyashi-no-Sato Nenba | 13 | Fujikawaguchiko-machi, Yamanashi | ¥500, reconstructed thatched-roof village rebuilt after a 1966 landslide |
-| Yanaka Ginza and Yanaka Cemetery | 6 | Taito-ku, Tokyo | Free, an old shotengai streetscape that survived Tokyo's postwar rebuilding |
-| Chushojima / Fushimi sake district | 22 | Fushimi-ku, Kyoto | Free canal-side walk past white-plastered Edo-period brewery warehouses |
-
-## Festivals and seasonal events
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Jidai Matsuri | 16 | Kamigyo-ku, Kyoto | Free street viewing from inside Kyoto Gyoen, no paid grandstand seats bought |
-| Tokyo Rockabilly Club dancers | 5 | Shibuya-ku, Tokyo | Free, unticketed, Sunday afternoons, weather-dependent |
-| Kobo-ichi market | 15 | Minami-ku, Kyoto | Free, held on the 21st of every month |
-| Tenjin-ichi market | 19 | Kamigyo-ku, Kyoto | Free, held on the 25th of every month |
-| Midosuji "Hikari no Kyoen" illumination | 28 | Chuo-ku, Osaka | Free, catches the winter light festival's opening night |
-| Culture Day (Bunka no Hi) | 28 | Kita-ku, Osaka | National Museum of Art is free on this one date, not a citywide policy |
-
-## Theatre and performance
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Kabukiza single-act (hitomakumi) | 2 | Chuo-ku, Tokyo | About ¥2,500 including an English subtitle tablet, cash-only, sold same-day only, no advance booking |
-| Tokyo Rockabilly Club dancers | 5 | Shibuya-ku, Tokyo | Free street performance, weather-dependent |
-
-## Transport as an experience
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Sumida River water bus | 4 | Hamarikyu Pier to Asakusa, Tokyo | ¥1,000, about 40 minutes under 13 bridges |
-| Enoden coastal railway | 7 | Kamakura, Kanagawa | ¥800 for a 1-day pass ("Noriorikun") |
-| Kawaguchiko Tenjozan Ropeway | 12 | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
-| Lake Kawaguchi sightseeing cruise | 12 | Kawaguchiko, Yamanashi | ¥1,200 |
-| Sagano Romantic Train (Torokko) | 17 | Ukyo-ku, Kyoto | ¥880, open-window sightseeing train through the Hozugawa gorge, reserve ahead |
-| Fushimi Jikkokubune canal boat | 22 | Fushimi-ku, Kyoto | ¥1,900, optional add, online-only reservation |
-| Miyajima Ropeway | 25 | Hatsukaichi, Hiroshima | ¥2,000, only 2 of 3 adults go up, one carrying a child |
-| Hiroden streetcar | 24, 26 | Hiroshima | Flat citywide fare, ¥220 per ride |
-| Tombori River Cruise | 29 | Dotonbori, Chuo-ku, Osaka | ¥2,000, scheduled departures rather than walk-up guaranteed |
-
-## Views and observation decks
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Tokyo Skytree Tembo Deck | 2 | Sumida-ku, Tokyo | ¥2,500, 350m, advance timed tickets recommended |
-| Tokyo Tower Main Deck | 4 | Minato-ku, Tokyo | ¥1,500, 150m |
-| Landmark Tower Sky Garden | 9 | Nishi-ku, Yokohama | ¥1,200, 69th floor |
-| Chureito Pagoda viewpoint | 11 | Fujiyoshida-shi, Yamanashi | Free, reached via 398 stone steps, carrier-only |
-| Kawaguchiko Tenjozan Ropeway summit | 12 | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
-| Miyajima Ropeway summit | 25 | Hatsukaichi, Hiroshima | ¥2,000 |
-| Hiroshima Orizuru Tower | 26 | Naka-ku, Hiroshima | ¥2,200 |
-| Tsutenkaku Tower | 29 | Naniwa-ku, Osaka | ¥900, elevator-served |
-
-## Things aimed at the toddlers
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Sumida Aquarium | 2 | Sumida-ku, Tokyo | ¥2,900, open-topped penguin pool, a touch pool |
-| Ueno Zoo | 3 | Taito-ku, Tokyo | ¥600, no giant pandas currently (the last two returned to China in January 2026) |
-| Yoyogi Park | 5 | Shibuya-ku, Tokyo | Free, open lawns |
-| teamLab Planets | 8 | Koto-ku, Tokyo | ¥5,300, barefoot water rooms, pack spare clothes |
-| Inokashira Park + small zoo corner | 10 | Musashino-shi/Mitaka-shi, Tokyo | ¥500 for the small zoo section, park itself free |
-| Nara Park deer | 20 | Nara | Free to watch, ¥200 per pack to feed by hand |
-| Miyajima Public Aquarium | 25 | Hatsukaichi, Hiroshima | ¥1,420, penguin and sea lion show, a touch pool |
-| Miyajima deer | 25 | Miyajima | Free-roaming, same as Nara's |
-| Anpanman Children's Museum & Mall | 28 | Chuo-ku, Kobe | ¥2,250 per person including both infants (ages 1 and up are charged here, unlike most sites on this trip), web ticket required |
-
-## Shopping
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Nakamise-dori | 2 | Taito-ku, Tokyo | Free to browse, souvenir and snack stalls |
-| Ameyoko | 3 | Taito-ku, Tokyo | Free to browse |
-| Akihabara | 3 | Chiyoda-ku, Tokyo | Free to browse; Super Potato's upper floors are stairs-only, not stroller terrain |
-| Kappabashi Kitchenware Street | 6 | Taito-ku, Tokyo | Free to browse, restaurant-supply shops |
-| Takeshita Street + Laforet Harajuku | 5 | Shibuya-ku, Tokyo | Free to browse, carrier-only by early afternoon (narrow and packed) |
-| Shibuya PARCO | 5 | Shibuya-ku, Tokyo | Free to browse (Pokemon Centre, Jump Shop, Nintendo Tokyo) |
-| Nishiki Market + Daimaru depachika | 15 | Nakagyo-ku, Kyoto | Free to browse |
-| Sannenzaka/Ninenzaka | 18 | Higashiyama-ku, Kyoto | Free to walk, uneven stone paving on a slope |
-| Kuromon Ichiba Market | 29 | Chuo-ku, Osaka | Grill-and-eat stalls, priced for visitors |
-| Den Den Town | 29 | Naniwa-ku/Chuo-ku, Osaka | Free to browse |
-| Dotonbori/Shinsaibashi | 27, 29 | Chuo-ku, Osaka | Free to walk, dense evening crowds |
-
----
-
-# Part V: Advance booking
-
-# Advance Booking Plan (audit and rewrite, current as of 4 Sept 2026)
+## Appendix C: Advance booking
 
 Party: 3 adults + 2 infants (~12mo, ~20mo). Trip: 7 Oct - 5 Nov 2026. FX ¥155 = $1.
 This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 8, 10,
@@ -4131,7 +4210,7 @@ This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 
 
 ---
 
-## 1. Booking timeline, ordered by when to act
+### 1. Booking timeline, ordered by when to act
 
 | When to book | What | Trip day | Why it cannot wait | Cost for the party | How to book |
 |---|---|---|---|---|---|
@@ -4154,7 +4233,7 @@ This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 
 
 ---
 
-## 2. Book these first: the items where failure actually breaks the plan
+### 2. Book these first: the items where failure actually breaks the plan
 
 1. **Fujikyu Mishima-Kawaguchiko Liner (Day 14).** Already flagged as the single most fragile booking, and that stands: it is the only land link from Kawaguchiko to the Tokaido Shinkansen corridor, it is fully reserved with no lap/standing option, and it sells out. **If it fails:** there is no equivalent direct bus. The fallback is a multi-leg local-rail routing (Fuji Kyuko Line to Otsuki, then JR Chuo Line to Tokyo or direct to Mishima/Kyoto via a different shinkansen boarding point), which adds real transfer time and complexity with two infants and a stroller, and should be treated as a genuine Plan B to have mapped out in advance, not improvised on the day.
 
@@ -4168,7 +4247,7 @@ This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 
 
 ---
 
-## 3. Things that need a phone call, not a website
+### 3. Things that need a phone call, not a website
 
 - **Lakeland Hotel Mizunosato's 5-person room configuration and infant futon/meal surcharges.** Unpublished on the ryokan's site. Call +81-555-72-1831 (7:00-23:00 JST) or email info@mizunosato.jp [VERIFIED contact, official site] and confirm: (a) that a single room can sleep 3 adults + 2 infants co-sleeping as booked, or whether it must be split into two rooms like every other property on the trip, since a ryokan's typical room-and-futon count works differently from a Western-style twin/single split; (b) whether either infant is charged for a futon or for the kaiseki/breakfast half-board plan; (c) confirm the private kashikiri bath booking and time slot alongside the room, since the current plan assumes a specific 17:15 slot that needs to actually be held.
 
@@ -4180,7 +4259,7 @@ This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 
 
 ---
 
-## 4. No booking needed
+### 4. No booking needed
 
 - Senso-ji, Zojoji Temple, Imperial Palace East Gardens, Meiji Jingu (main shrine grounds), Yoyogi Park, Nezu Shrine, Yanaka Ginza, Yanaka Cemetery, Ueno Park, Shinobazu Pond walk (boat rental itself is walk-up), Shibuya Scramble Crossing, Kotoku-in's forecourt/Great Buddha exterior, Yuigahama Beach, Odaiba Marine Park, Oshino Hakkai's free public path, Saiko Iyashi-no-Sato's outdoor grounds, Chureito Pagoda / Arakurayama Sengen Park, Oishi Park, Fushimi Inari Taisha, Nishiki Market, the Jidai Matsuri free street viewing (Day 16, do NOT buy the ¥4,500-6,500 grandstand seats), Philosopher's Path, **Kyoto Gosho itself** (confirmed still free, no-reservation, walk-in, self-guided, 9:00-16:20, since the 2016 policy change [VERIFIED, kyoto-gosho.kunaicho.go.jp official site]), Nijo Castle grounds (only the Ninomaru Palace interior is ticketed, and that's walk-up), Kinkaku-ji exterior grounds, Ryoan-ji, Arashiyama Bamboo Grove, Togetsukyo Bridge, Nara Park and its free-roaming deer, Kasuga Taisha's outer lantern approach, the Fushimi sake district's canal-side brewery walk, Teradaya Inn (walk-up), Nishijin Textile Center's kimono show, Kamo riverbank, Peace Memorial Park + the Atomic Bomb Dome exterior, Shukkei-en's outer views, Miyajima's shrine approach and Daisho-in's lower grounds, Dotonbori's canal walk, Namba Yasaka Shrine, the **Midosuji "Hikari no Kyoen" illumination** (Day 28, free to walk, no ticket), Meriken Park in Kobe, Kitano's street-level walk in Kobe, and every Hiroden streetcar / Kyoto city bus / Osaka Metro / JR local ride covered either by walk-up IC card or by the rail pass.
 
@@ -4188,9 +4267,7 @@ This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 
 
 ---
 
-# Part VI: Shopping lists and supply runs
-
-# Shopping List Appendix - 30-Day Japan Itinerary
+## Appendix D: Shopping lists and supply runs
 
 *Party: 3 adults + 2 infants (Infant A, ~12mo, formula + purees; Infant B, ~20mo, mostly table
 food). FX: ¥155 = $1, rounded to the nearest ¥10 / $1. This appendix covers grocery,
@@ -4207,7 +4284,7 @@ quoted; where it didn't, the day file's own "address unverified" language is car
 
 ---
 
-## 1. Strategy: what travels and what doesn't
+### 1. Strategy: what travels and what doesn't
 
 **The rule of thumb.** Perishables (fresh meat, fish, dairy, produce, opened tofu, cooked
 leftovers) are bought in small enough batches that they are eaten down to near zero before
@@ -4245,11 +4322,11 @@ one lunch and one breakfast (Days 11-12) for this reason, not for three.
 
 ---
 
-## 2. Dated shopping runs
+### 2. Dated shopping runs
 
-### TOKYO (Days 1-10, Hotel Livemax Higashi-Ueno, in-room kitchenette + fridge)
+#### TOKYO (Days 1-10, Hotel Livemax Higashi-Ueno, in-room kitchenette + fridge)
 
-#### Run 1 - Day 1, Wed 7 Oct, ~15:15-16:15 (arrival stock-up)
+##### Run 1 - Day 1, Wed 7 Oct, ~15:15-16:15 (arrival stock-up)
 **Store:** Gyomu Super, Ueno-Hirokoji branch, 2-chome Ueno, Taito-ku [VERIFIED chain and this
 branch exist, WebSearch/NAVITIME; exact distance from the Motoasakusa hotel not independently
 mapped - roughly 15-20 min walk]. A second confirmed branch, Gyomu Super Ueno-Koen (Negishi
@@ -4289,7 +4366,7 @@ break out - comes to ¥15,770, about 64% higher. That's not a fudge: the day fil
 meal's worth of ingredients plus a same-day infant top-up, not a full first-week pantry stock.
 Treat ¥15,770 as the more complete real-world Day 1 outlay.
 
-#### Run 2 - Day 6, Mon 12 Oct, ~16:00 (mid-stay top-up, covers Days 6-8)
+##### Run 2 - Day 6, Mon 12 Oct, ~16:00 (mid-stay top-up, covers Days 6-8)
 **Store:** LIFE Bioral Parco_ya Ueno, Ueno 3-24-6, B1 [VERIFIED, WebSearch].
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -4307,7 +4384,7 @@ Treat ¥15,770 as the more complete real-world Day 1 outlay.
 | Pouches (Pigeon/Morinaga) | 4 | 150 | 600 |
 | **Run 2 total** | | | **¥3,094 ($20)** |
 
-#### Run 3 - Day 8, Wed 14 Oct, ~16:00 (deliberately small, sized to run down by Day 10)
+##### Run 3 - Day 8, Wed 14 Oct, ~16:00 (deliberately small, sized to run down by Day 10)
 **Store:** Gyomu Super, Ueno-Koen branch [VERIFIED, WebSearch].
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -4331,9 +4408,9 @@ konbini infant top-ups, already priced day-by-day in `days-01-10-tokyo.md`.
 
 ---
 
-### KAWAGUCHIKO (Days 11-12, K's House Mt. Fuji, shared guest kitchen)
+#### KAWAGUCHIKO (Days 11-12, K's House Mt. Fuji, shared guest kitchen)
 
-#### Run - Day 11, Sat 17 Oct, ~16:10-16:45 (sized for Days 11-12 only)
+##### Run - Day 11, Sat 17 Oct, ~16:10-16:45 (sized for Days 11-12 only)
 **Store:** OGINO Kawaguchiko, 545-3 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi
 401-0301 [VERIFIED, WebSearch/Tabelog - a large one-floor supermarket a short walk from
 Kawaguchiko Station; matches the day file's "Kawaguchiko Stn -> supermarket" walk]. Bring a
@@ -4363,13 +4440,13 @@ and to leave nothing behind when the K's House fridge has to hit zero at the Day
 
 ---
 
-### KYOTO A + B (Days 15-23, Toyoko Inn Kyoto Shijo-Omiya, no kitchen, free breakfast) and DAY 14 ARRIVAL
+#### KYOTO A + B (Days 15-23, Toyoko Inn Kyoto Shijo-Omiya, no kitchen, free breakfast) and DAY 14 ARRIVAL
 
 Day 14's dinner (arriving too late for the Toyoko Inn breakfast, which starts Day 15) is bought
 out near Kyoto/Omiya Stn per the day file (¥1,900 infant line) - a konbini stop, not a grocery
 run, so it isn't itemized separately here.
 
-#### Run 1 - Day 15, Tue 20 Oct, ~18:00 (infant-supply restock, covers roughly Days 15-19)
+##### Run 1 - Day 15, Tue 20 Oct, ~18:00 (infant-supply restock, covers roughly Days 15-19)
 **Store:** Gyomu Super, Saiin branch, one stop from Omiya on the Hankyu Kyoto Line [VERIFIED
 chain and this specific branch exist nearby, WebSearch; a closer branch directly at Shijo-Omiya,
 if one exists, was not independently confirmed - "Gyomu Super or drugstore near Shijo-Omiya,
@@ -4388,7 +4465,7 @@ or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch 
 | Fruit / snack for the toddler | - | - | 200 |
 | **Run 1 total** | | | **¥7,288 ($47)** |
 
-#### Run 2 - Day 19, Sat 24 Oct, ~17:00 (hangaku dinner components - no kitchen, eaten cold/room-temp in the room)
+##### Run 2 - Day 19, Sat 24 Oct, ~17:00 (hangaku dinner components - no kitchen, eaten cold/room-temp in the room)
 **Store:** Gyomu Super or Life, Shimogyo-ku, near Shijo-Omiya [chain per day file; branch to confirm].
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -4407,7 +4484,7 @@ or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch 
 ¥2,180 meal-only subtotal is close (~18% under, plausibly a slightly deeper hangaku discount or
 one fewer side), well inside normal night-to-night variance for a discount-timed buy.
 
-#### Run 3 - Day 20 or 21, ~18:00 (infant-supply top-up for Kyoto B, no new nappies needed yet)
+##### Run 3 - Day 20 or 21, ~18:00 (infant-supply top-up for Kyoto B, no new nappies needed yet)
 **Store:** drugstore or conbini near the hotel [chain per day file, unnamed - Matsumoto Kiyoshi,
 Welcia, Tsuruha or Cocokara Fine are all plausible; branch to confirm].
 
@@ -4424,9 +4501,9 @@ itemized in `days-15-19-kyoto-a.md` and `days-20-23-kyoto-b.md`.
 
 ---
 
-### HIROSHIMA (Days 24-27, Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast)
+#### HIROSHIMA (Days 24-27, Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast)
 
-#### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
+##### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
 **Store:** ekie, the shopping and supermarket complex directly connected to Hiroshima Station's
 south exit [VERIFIED, WebSearch - "includes a supermarket... just beyond the ticket gates"].
 The hotel is "central Hiroshima, ~1.2 mi from Peace Memorial Park" per the brief and its exact
@@ -4451,9 +4528,9 @@ envelope is Toyoko Inn's free breakfast plus restaurant/konbini meals in `days-2
 
 ---
 
-### OSAKA (Days 27-30, Toyoko Inn Osaka Namba, no kitchen, free breakfast)
+#### OSAKA (Days 27-30, Toyoko Inn Osaka Namba, no kitchen, free breakfast)
 
-#### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
+##### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
 **Store:** Life Namba, basement level, 1-2-3 Minato-machi, Naniwa-ku, Osaka, directly across
 from JR Namba Station, below the Hotel Monterey Grasmere [VERIFIED, WebSearch, open 9:00-24:00].
 Drugstore: Cocokara Fine, Namba store [VERIFIED chain and Namba branch, WebSearch].
@@ -4472,7 +4549,7 @@ restaurant meals, konbini and the free Toyoko Inn breakfast in `days-28-30-osaka
 
 ---
 
-### Grand total across all runs
+#### Grand total across all runs
 
 | Block | Runs total ¥ | $ |
 |---|---|---|
@@ -4489,9 +4566,9 @@ the pieces add up.
 
 ---
 
-## 3. Run-down-before-you-move checklist
+### 3. Run-down-before-you-move checklist
 
-### Move 1 - Day 11, Tokyo -> Kawaguchiko (highway bus, Shinjuku)
+#### Move 1 - Day 11, Tokyo -> Kawaguchiko (highway bus, Shinjuku)
 - **Already eaten down:** Day 10's meals are explicitly written to use up "the last of the Day 1
   pantry stock" (breakfast) and cook a "last-night" fried rice from remaining vegetables and egg
   (dinner) - by design, nothing perishable should be left in the Livemax fridge that morning.
@@ -4508,7 +4585,7 @@ the pieces add up.
 - **Reserved-seat bus note:** the Day 11 Fujikyu/Keio bus has assigned seats and limited luggage
   space per adult, one more reason not to carry bulky pantry items on this leg.
 
-### Move 2 - Day 14, Kawaguchiko -> Mishima -> Kyoto (bus, then unreserved Hikari shinkansen)
+#### Move 2 - Day 14, Kawaguchiko -> Mishima -> Kyoto (bus, then unreserved Hikari shinkansen)
 - **Already eaten down:** the Day 11 grocery run was deliberately sized for Days 11-12 only,
   so the K's House fridge should already read near-zero by the Day 12 dinner. Day 13 itself
   moves to the ryokan (no self-catering), so there is no Day 13 grocery run to run down at all.
@@ -4526,7 +4603,7 @@ the pieces add up.
 - **Ryokan night (Day 13):** kaiseki dinner and Japanese breakfast are both included - no
   shopping, no cooking, nothing to run down.
 
-### Move 3 - Day 24, Kyoto -> Hiroshima (shinkansen, JR Kansai-Hiroshima Area Pass)
+#### Move 3 - Day 24, Kyoto -> Hiroshima (shinkansen, JR Kansai-Hiroshima Area Pass)
 - **Already eaten down:** trivially true - there has been no kitchen since Day 13, so nothing
   perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
   are dry infant supplies.
@@ -4537,14 +4614,14 @@ the pieces add up.
 - **Bin or leave behind:** nothing perishable exists to bin. Toiletries/room amenities opened at
   the Toyoko Inn are not worth carrying - leave them for housekeeping.
 
-### Move 4 - Day 27, Hiroshima -> Osaka (shinkansen, JR Kansai-Hiroshima Area Pass, final valid days)
+#### Move 4 - Day 27, Hiroshima -> Osaka (shinkansen, JR Kansai-Hiroshima Area Pass, final valid days)
 - **Already eaten down:** same logic as Move 3 - no kitchen in Hiroshima, so no perishables to
   run down.
 - **Carry:** remaining nappy stock from the Day 24 Hiroshima run (sized for the 4-night block,
   should be nearly used up), remaining formula/pouches. Light, dry, no change from the Kyoto
   pattern.
 
-### Move 5 - Day 30, Osaka -> Kansai Airport -> fly home (**everything must be gone**)
+#### Move 5 - Day 30, Osaka -> Kansai Airport -> fly home (**everything must be gone**)
 - **Already eaten down:** the Osaka Day 27 run was deliberately sized for exactly the 3-night
   Osaka block (Days 27-29), with no restock planned for Day 29 or 30 - by the Day 29 night, the
   formula tin and pouches bought Day 27 should be at or near zero.
@@ -4559,7 +4636,7 @@ the pieces add up.
 
 ---
 
-## 4. Consolidated infant-supplies plan
+### 4. Consolidated infant-supplies plan
 
 Two different numbers matter here, and they are not the same thing - keeping them separate
 avoids double-counting the trip's own budget:
@@ -4623,7 +4700,7 @@ brand option anywhere in this document, matching the day files' own practice.
 
 ---
 
-## 5. Day 30 packing-day note (Osaka -> Kansai Airport)
+### 5. Day 30 packing-day note (Osaka -> Kansai Airport)
 
 **What must be consumed, binned or left behind before checkout (08:15) and before security:**
 - Any opened pouch, snack packet or half-finished formula tin from the Day 27 Osaka run - the
@@ -4663,9 +4740,7 @@ otherwise spell out.*
 
 ---
 
-# Part VII: Open decisions
-
-# Open decisions and things to check
+## Appendix E: Open decisions
 
 Everything in this report that is not settled. Four kinds: decisions only the
 travellers can make, deadlines, things to re-verify nearer the date, and requests
@@ -4673,9 +4748,9 @@ that were checked and rejected so they do not get re-asked.
 
 ---
 
-## 1. Decisions for the family
+### 1. Decisions for the family
 
-### Bunraku in Osaka, Day 29
+#### Bunraku in Osaka, Day 29
 **¥6,500/adult. Costed and ready, deliberately not scheduled.**
 Metre-tall puppets worked by three visible puppeteers each, with a chanter and
 shamisen. It needs no Japanese at all, which makes it the best answer to "how does
@@ -4690,7 +4765,7 @@ already covers the theatre interest more cheaply and in about an hour.
 
 **Decide:** yes and rework Day 29, or no and leave Day 29 as built.
 
-### A capsule hotel night
+#### A capsule hotel night
 **Recommended: no, but the workable version is documented.**
 Infants are barred essentially everywhere: most capsule hotels set a 13+ minimum,
 a few newer pod hotels allow 4+, none found accept under-2s. Floors are also
@@ -4708,13 +4783,13 @@ with both infants, which is worse, not better.
 
 **Decide:** do it as a novelty on Day 27, or skip it.
 
-### Chureito Pagoda, Day 11
+#### Chureito Pagoda, Day 11
 Confirmed as kept at the traveller's instruction. Recorded here so the reason is not
 lost: it is 398 steps, and the realistic shape is one adult carrying one infant up
 while the other two wait at the base. It is free and it is the most photographed
 view of Mt. Fuji in Japan.
 
-### Whether to hold the reserve or spend it
+#### Whether to hold the reserve or spend it
 Planned spend is around $8,400 of a $9,032 budget. The traveller has said a reserve
 down to about 1% is acceptable. **The specific risk is that no lodging rate in this
 report is a real quote.** If the five properties come back 20% above estimate that
@@ -4729,13 +4804,13 @@ Those three are about $224 and are the newest and most discretionary items.
 
 ---
 
-## 2. Deadlines
+### 2. Deadlines
 
 Every dated booking deadline is in the advance-booking part, ordered by when to act.
 The two that gate whole days are the Ghibli Museum lottery and the Fujikyu
 Mishima-Kawaguchiko Liner.
 
-## 3. Verify nearer the date
+### 3. Verify nearer the date
 
 - **Miyajima tide times, Day 25.** Whether the floating torii stands in water or you can walk out to it is entirely tide-dependent. No schedule printed months ahead can tell you.
 - **Hiroshima Food Festival dates.** Not published for 2026 as of September. Its history runs from 17 Oct to late Oct with no fixed rule, so it was left out rather than assumed. **If it lands on 30 Oct to 1 Nov it is a free hit of exactly the street-stall atmosphere the group wants**, so it is worth one check.
@@ -4749,15 +4824,7 @@ Phone calls and bookings are listed in the advance-booking part.
 
 ---
 
-# Part VIII: Appendices
-
-## Appendix A. Advance booking
-
-Superseded. The advance-booking plan is now Part V of this report, rebuilt and
-re-verified against the final itinerary after the route changed. See there for the
-booking timeline, the book-these-first shortlist, and the items that need a phone call.
-
-## Appendix B. Japan with a 12-month-old and a 20-month-old
+## Appendix F: Japan with a 12-month-old and a 20-month-old
 
 **What is free.** Both children ride free on JR including shinkansen, on the Tokyo Metro
 and Toei, Osaka Metro, Kyoto city buses, and the Miyajima ferry. Under-sixes are free at
@@ -4807,7 +4874,7 @@ with what it is and why it runs long, and each still contains its rest block. If
 is going badly, the honest response is to drop its last activity rather than push
 through; the day notes name the item to cut where there is an obvious one.
 
-## Appendix C. How 2,000 calories a day actually gets bought
+## Appendix G: How 2,000 calories a day actually gets bought
 
 Each adult day sums to 1,950-2,100 kcal across the meal rows, built from four levers:
 
@@ -4820,7 +4887,7 @@ The trip is not planned to eat like this every day. Osaka's last full day, the H
 okonomiyaki night and several Kyoto dinners are deliberately restaurant meals. The
 self-catering floor is what buys them.
 
-## Appendix D. Confidence and sources
+## Appendix H: Confidence and sources
 
 **Verified against live sources:** exchange rate, typhoon seasonality, 2026 koyo
 forecast dates, Japanese public holidays, Golden Week and Obon and Silver Week dates,
