@@ -424,14 +424,18 @@ Sky at golden hour - a fuller day than most, anchored by the mandatory rest bloc
 | 11:15 | 0h45 | Food | Lunch, Sushiro, Shibuya |
 | 12:00 | 1h45 | Rest | Rest / infant naps - quiet corner near Miyashita Park |
 | 13:45 | 0h30 | Activity | Shibuya Scramble Crossing + Hachiko statue |
-| 14:15 | 0h45 | Activity | Shibuya Sky observation deck (advance timed ticket) |
-| 15:00 | 1h15 | Food | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
-| 16:15 | 0h20 | Transit | Shibuya -> Ueno, Tokyo Metro Ginza Line |
-| 16:35 | - | Admin | Bath, wind-down |
+| 14:15 | 0h45 | Activity | Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo, Shibuya PARCO 6F |
+| 15:00 | 0h45 | Activity | Shibuya Sky observation deck (advance timed ticket) |
+| 15:45 | 1h15 | Food | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
+| 17:00 | 0h20 | Transit | Shibuya -> Ueno, Tokyo Metro Ginza Line |
+| 17:20 | - | Admin | Bath, wind-down |
 
 - Stroller works fine at Meiji Jingu/Yoyogi Park (gravel, gentle grade). **Carrier
   recommended for the Scramble crossing itself** - crowd density, not terrain.
 - Trim Shibuya Sky if the toddlers are flagging; it's the flexible item on this day.
+  The new Shibuya PARCO floor (Pokemon Centre, Jump Shop, Nintendo Tokyo) is a free,
+  fully indoor, weatherproof alternative if Sky gets cut - unlike Sky, it needs no
+  advance ticket and works regardless of wind or cold at the top.
 
 ### Lodging
 
@@ -467,6 +471,7 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 | Meiji Jingu Inner Garden | 1h15 | 500 | 1,500 | 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557 | Tokyo's grandest Shinto shrine, built in 1920 for the deified Emperor Meiji and Empress Shoken, reached along a gravel forest path under a huge wooden torii - the shrine buildings themselves are free. The paid Inner Garden (Gyoen) is a separate, older Edo-period strolling garden within the grounds, with an iris pond, a quieter and prettier add-on to the main shrine visit. Wide gravel paths, gentle grade, fully stroller-passable; the Inner Garden charges ¥500/adult on top of the free main shrine. |
 | Yoyogi Park | 1h00 | 0 | 0 | Yoyogikamizonocho, Shibuya-ku, adjacent to Meiji Jingu (nearest station Harajuku; address unverified) | Tokyo's largest and most famous city park - wide open lawns next to Meiji Jingu's forest, popular with picnickers, street performers, and joggers. Free, unstructured downtime, good for toddlers to just run on grass after a morning of gravel paths and shrine etiquette. Flat paved and grass paths throughout, fully stroller-friendly. |
 | Shibuya Scramble Crossing + Hachiko statue | 0h30 | 0 | 0 | Outside Shibuya Stn Hachiko Exit, Shibuya-ku (address unverified) | The famously chaotic five-way pedestrian crossing where up to 3,000 people cross at once when the light changes, next to the bronze statue of Hachiko, the dog who waited at the station for his deceased owner for years. A five-minute "see it to believe it" experience, not a place to linger. Free; the crowd density, not the terrain, is what makes this a carrier stop rather than a stroller one. |
+| Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo | 0h45 | 0 | 0 | Shibuya PARCO, 6F, 15-1 Udagawacho, Shibuya-ku, Tokyo 150-0042 | Three fandoms sharing one mall floor, a five-minute walk from the Scramble/Hachiko stop: Pokemon Center Shibuya, the Jump Shop (Shonen Jump merchandise - One Piece and whatever else is currently running), and Nintendo Tokyo (official Nintendo goods - no console games sold, but heavy on Mario/Zelda/Splatoon merchandise). Free to enter all three, and worth doing simply because it's free, indoor, and right there. Elevator-served mall floor, fully stroller-friendly, and a good weatherproof stand-in for Shibuya Sky if that gets trimmed; budget only for an optional souvenir. |
 | Shibuya Sky | 0h45 | 2,700 | 8,100 | Shibuya Scramble Square, 2-23 Shibuya, Shibuya-ku, Tokyo | An open-air rooftop deck 229m above the Shibuya Scramble crossing, on the city's tallest tower, with unobstructed 360-degree views and no glass or fencing at eye level in the central section. A genuine wow moment at golden hour and the day's premium view stop. Advance timed-entry ticket required (sells out on clear days); elevators throughout, but it's outdoor and can be windy or cold for infants - trim this stop first if the toddlers are flagging. 2026 planning estimate, historically ~¥2,200-2,500/adult, verify before booking. |
 
 ### Day 5 Cost
