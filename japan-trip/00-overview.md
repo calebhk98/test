@@ -15,11 +15,11 @@ Excluded from the $9,000: international airfare, passports, visas, travel insura
 | **Shape** | Open-jaw: into Tokyo, out of Osaka |
 | **Bases** | Tokyo 10n, Kawaguchiko 3n (one a ryokan), Kyoto 10n, Hiroshima 3n, Osaka 3n |
 | **Intercity moves** | 4 |
-| **Planned spend** | **¥1,304,900 ($8,419)** |
-| **Contingency** | ¥95,100 ($614) |
+| **Planned spend** | **¥1,297,500 ($8,371)** |
+| **Contingency** | ¥102,500 ($661) |
 | **Total budget** | **¥1,400,000 ($9,032)** |
 | **Per adult** | $3,011 |
-| **Per adult per day** | $100.35 budgeted, $93.54 planned |
+| **Per adult per day** | $100.35 budgeted, $93.01 planned |
 
 The trip is built around a single structural decision: **four moves in thirty days.**
 Every base change with a 12-month-old and a 20-month-old costs a half day of usable
@@ -133,11 +133,11 @@ allocated top-down. The category rows below add exactly to the day-by-day totals
 | Transport | 177,530 | 1,145 | 14% |
 | Baby consumables | 68,000 | 439 | 5% |
 | Misc: eSIM, laundry, lockers, forwarding | 38,000 | 245 | 3% |
-| **Planned** | **1,304,900** | **8,419** | 100% |
-| Contingency (6.8%) | 95,100 | 614 | |
+| **Planned** | **1,297,500** | **8,371** | 100% |
+| Contingency (7.3%) | 102,500 | 661 | |
 | **Total budget** | **1,400,000** | **9,032** | |
 
-### Why planned spend is $8,419 rather than $9,000
+### Why planned spend is $8,371 rather than $9,000
 
 The reserve is doing real work rather than padding a number. **No lodging rate in this
 report is a quote.** Booking engines returned no date-stamped 2026 availability, so all
@@ -156,7 +156,7 @@ A later pass then spent most of the rest on the travellers' own stated interests
 anime, hands-on experience, toddler-specific stops, theatre and food variety. That
 work is set out in Part IV.
 
-**What remains is ¥95,100 ($614), about 6.8%, and that is thin.** Name the risk
+**What remains is ¥102,500 ($661), about 7.3%, and that is thin.** Name the risk
 plainly: if the five lodging quotes come back 20% above these estimates, that is
 roughly ¥106,000 and it would consume the whole reserve. The trip would still land
 under $9,000, with nothing left over. The first three things to cut in that case,

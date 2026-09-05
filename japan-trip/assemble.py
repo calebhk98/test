@@ -67,8 +67,9 @@ for name, f in [("Tokyo","tokyo.md"), ("Kawaguchiko and the Fuji Five Lakes","ka
 for title, f in [("Part IV: Covering the group's stated interests","interests.md"),
                  ("Part V: Whole-trip coverage audit","coverage-audit.md"),
                  ("Part VI: Advance booking","advance-booking.md"),
-                 ("Part VII: Shopping lists and supply runs","shopping-lists.md")]:
+                 ("Part VII: Shopping lists and supply runs","shopping-lists.md"),
+                 ("Part VIII: Open decisions and things to check","open-decisions.md")]:
     out.append("\n---\n\n# "+title+"\n\n"+(ROOT/f).read_text().strip())
-out.append("\n---\n\n"+(ROOT/"99-appendix.md").read_text().strip().replace("# Part III: Appendices","# Part VIII: Appendices"))
+out.append("\n---\n\n"+(ROOT/"99-appendix.md").read_text().strip().replace("# Part III: Appendices","# Part IX: Appendices"))
 (ROOT/"ITINERARY.md").write_text("\n".join(out)+"\n")
 print(f"ITINERARY.md written: {len(rows)} days, day-line total ¥{run:,} (${round(run/FX):,})")

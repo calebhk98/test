@@ -90,7 +90,7 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 | Activities | 0 | 0 |
 | **Day total** | 36,020 | 232 |
 
-**Running total after Day 11: ¥427,080 ($2,755)**
+**Running total after Day 11: ¥419,680 ($2,708)**
 
 ---
 
@@ -173,7 +173,7 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 | Activities | 11,400 | 74 |
 | **Day total** | 43,850 | 283 |
 
-**Running total after Day 12: ¥470,930 ($3,038)**
+**Running total after Day 12: ¥463,530 ($2,991)**
 
 ---
 
@@ -260,7 +260,7 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 | Activities | 5,150 | 33 |
 | **Day total** | 57,720 | 372 |
 
-**Running total after Day 13: ¥528,650 ($3,411)**
+**Running total after Day 13: ¥521,250 ($3,363)**
 
 ---
 
@@ -340,7 +340,7 @@ Allow the full 20-30 min buffer at Mishima per the brief; the schedule above boo
 | Activities | 0 | 0 |
 | **Day total** | 71,900 | 464 |
 
-**Running total after Day 14: ¥600,550 ($3,875)**
+**Running total after Day 14: ¥593,150 ($3,827)**
 
 ---
 
@@ -361,4 +361,4 @@ Envelope check against the segment's assigned cells (lodging is fixed for the K'
 
 Lodging (fixed for the two properties, informational): 2 nights at K's House Mt. Fuji (¥18,000 x 2 = ¥36,000) + 1 night at Lakeland Hotel Mizunosato ryokan (¥41,580, room-only rate) + 1 night at Toyoko Inn Kyoto Shijo-Omiya (¥19,000) = ¥96,580. The ryokan night is ¥23,580 above the ¥18,000 K's House rate it replaces (or about +¥25,070 counting the day's meal and activity changes too) - within the ¥18,000-33,000 net-add target set for this swap, funded from the trip's discretionary headroom rather than this segment's lodging line.
 
-**Running total after Day 14: ¥600,550 ($3,875)**
+**Running total after Day 14: ¥593,150 ($3,827)**

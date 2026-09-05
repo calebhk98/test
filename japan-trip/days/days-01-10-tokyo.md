@@ -409,8 +409,10 @@ other transit leg in this plan; not separately verified for this operator.
 
 **Base:** Tokyo
 **Weather (typical):** 22-24/15 °C, mild
-**Theme:** Meiji Jingu's forest approach, Yoyogi Park, then Shibuya Scramble and Shibuya
-Sky at golden hour - a fuller day than most, anchored by the mandatory rest block.
+**Theme:** Meiji Jingu's forest approach, then Yoyogi Park for the midday rest, the
+Sunday rockabilly dancers, and a Takeshita Street/Laforet detour, before Shibuya
+Scramble at golden hour - the segment's fullest day, anchored by a
+rest block relocated to the park itself.
 
 ### Schedule
 
@@ -420,22 +422,42 @@ Sky at golden hour - a fuller day than most, anchored by the mandatory rest bloc
 | 08:15 | 0h20 | Transit | Ueno -> Harajuku, JR Yamanote Line |
 | 08:35 | 1h15 | Activity | Meiji Jingu - main shrine grounds + Inner Garden |
 | 09:50 | 1h00 | Activity | Yoyogi Park - open lawns |
-| 10:50 | 0h25 | Transit | Walk, Harajuku/Yoyogi -> Shibuya via Omotesando |
-| 11:15 | 0h45 | Food | Lunch, Sushiro, Shibuya |
-| 12:00 | 1h45 | Rest | Rest / infant naps - quiet corner near Miyashita Park |
-| 13:45 | 0h30 | Activity | Shibuya Scramble Crossing + Hachiko statue |
-| 14:15 | 0h45 | Activity | Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo, Shibuya PARCO 6F |
-| 15:00 | 0h45 | Activity | Shibuya Sky observation deck (advance timed ticket) |
-| 15:45 | 1h15 | Food | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
-| 17:00 | 0h20 | Transit | Shibuya -> Ueno, Tokyo Metro Ginza Line |
-| 17:20 | - | Admin | Bath, wind-down |
+| 10:50 | 1h10 | Food | Lunch - conbini bento, picnic-style on the Yoyogi Park lawn |
+| 12:00 | 1h45 | Rest | Rest / infant naps - a bench at Yoyogi Park's Harajuku entrance (a park bench qualifies for the rest block, same trick as Hamarikyu on Day 4) |
+| 13:45 | 0h30 | Activity | Tokyo Rockabilly Club dancers, Yoyogi Park Harajuku entrance plaza |
+| 14:15 | 0h20 | Activity | Takeshita Street + a peek into Laforet Harajuku's Lolita boutiques (carrier only) |
+| 14:35 | 0h25 | Transit | Walk, Harajuku -> Shibuya via Omotesando |
+| 15:00 | 0h30 | Activity | Shibuya Scramble Crossing + Hachiko statue |
+| 15:30 | 0h45 | Activity | Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo, Shibuya PARCO 6F |
+| 17:00 | 1h00 | Food | Dinner, izakaya-style set course, Shibuya (early, kid-friendly seating) |
+| 18:00 | 0h20 | Transit | Shibuya -> Ueno, Tokyo Metro Ginza Line |
+| 18:20 | - | Admin | Bath, wind-down |
 
-- Stroller works fine at Meiji Jingu/Yoyogi Park (gravel, gentle grade). **Carrier
+- Stroller works fine at Meiji Jingu/Yoyogi Park (gravel, gentle grade) and for the
+  Yoyogi Park lunch/rest block. **Carrier only for Takeshita Street** - it's a narrow
+  350m lane that becomes a packed, slow shuffle by early afternoon, worse on a Sunday;
+  fold the stroller and carry both children through this stretch. **Carrier
   recommended for the Scramble crossing itself** - crowd density, not terrain.
-- Trim Shibuya Sky if the toddlers are flagging; it's the flexible item on this day.
-  The new Shibuya PARCO floor (Pokemon Centre, Jump Shop, Nintendo Tokyo) is a free,
-  fully indoor, weatherproof alternative if Sky gets cut - unlike Sky, it needs no
-  advance ticket and works regardless of wind or cold at the top.
+- **The rockabilly dancers and the Takeshita/Laforet stop are this day's reorder**: the
+  midday rest block has moved from a quiet corner in Shibuya to Yoyogi Park itself, the
+  same technique Day 4 uses at Hamarikyu, so the party is still right by the Harajuku
+  entrance when the Tokyo Rockabilly Club's Sunday dancers get going in the early
+  afternoon. This is weather-dependent, not guaranteed - a cold or rainy Sunday can mean
+  nobody shows - so treat it as a bonus, not a fixed plan.
+- **The old Lolita/decora street scene on the Jingu-bashi bridge has faded** - don't
+  expect cosplayers posing for photographers there. What survives is retail: Angelic
+  Pretty, Baby the Stars Shine Bright, and Alice and the Pirates all keep boutiques
+  inside Laforet Harajuku, just off Takeshita-dori - that's where to actually look for
+  the style, not the street itself.
+- Active out-of-lodging time is now about 8h20, up from roughly 7h20 before this
+  reorder - the reorder itself only adds about an hour of genuinely new content (the
+  dancers plus Takeshita Street), but relocating the rest block off-site means the walk
+  into Shibuya now happens after the rest instead of before lunch, so it shows up as
+  touring time rather than being absorbed earlier in the day. This is now the segment's
+  fullest day. **Shibuya Sky has been cut from this day** rather than left as a pressure valve, for three reasons: the Yoyogi reorder pushed active time to about 8h20, well past the roughly 7h cap; at ¥2,700/adult it was the day's most expensive item; and the trip already visits five observation decks, with the taller and more famous Skytree only three days earlier on Day 2. Cutting it brings the day to about 7h35 and saves ¥8,100. If the toddlers are flagging by
+  mid-afternoon - cutting it brings active time back to about 7h35, in line with this
+  day's pace before the reorder. The free, indoor PARCO floor (Pokemon Centre, Jump
+  Shop, Nintendo Tokyo) is still the weatherproof fallback if Sky gets cut.
 
 ### Lodging
 
@@ -449,11 +471,12 @@ Sky at golden hour - a fuller day than most, anchored by the mandatory rest bloc
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, fried egg, toast with jam | Cooked in room; Hotel kitchenette | 500 | 750 |
-| Lunch | Kaiten-zushi plates (salmon, tuna, egg, cucumber roll) plus miso soup | Sushiro, Shibuya | 700 | 2,400 |
-| Dinner | Izakaya set course - grilled chicken skewers, edamame, tofu salad, rice | Shibuya (specific shop unverified) | 800 | 4,300 |
-| Infant food | 3 formula feeds plus 2 Wakodo pouches (salmon and rice; pumpkin) for Infant A; Infant B eats table portions of the tofu salad and rice, plus edamame beans squeezed from the pod | Conbini | n/a | 2,150 |
+| Lunch | Conbini bento (grilled chicken, rice, pickled vegetables) plus an onigiri each, eaten picnic-style on the Yoyogi Park lawn | Conbini near Harajuku Stn, Shibuya-ku (specific branch unverified) | 600 | 2,100 |
+| Snack | Harajuku crepe - whipped cream and strawberry, one per adult. Crepes have been Takeshita Street's signature street food since Marion Crêpes opened here in 1976 | Marion Crêpes, Takeshita-dori, Jingumae, Shibuya-ku, Tokyo 150-0001 (specific stall unverified) | 350 | 1,500 |
+| Dinner | Izakaya set course - grilled chicken skewers, edamame, rice | Shibuya (specific shop unverified) | 600 | 3,800 |
+| Infant food | 3 formula feeds plus 2 Wakodo pouches (salmon and rice; pumpkin) for Infant A; Infant B eats table portions of the lunch bento's chicken and rice plus edamame beans squeezed from the pod, and gets a small taste of the crepe filling | Conbini | n/a | 2,150 |
 
-Adult kcal: 500 + 700 + 800 = **2,000**.
+Adult kcal: 500 + 600 + 350 + 600 = **2,050**.
 
 ### Transport
 
@@ -469,22 +492,23 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
 | Meiji Jingu Inner Garden | 1h15 | 500 | 1,500 | 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557 | Tokyo's grandest Shinto shrine, built in 1920 for the deified Emperor Meiji and Empress Shoken, reached along a gravel forest path under a huge wooden torii - the shrine buildings themselves are free. The paid Inner Garden (Gyoen) is a separate, older Edo-period strolling garden within the grounds, with an iris pond, a quieter and prettier add-on to the main shrine visit. Wide gravel paths, gentle grade, fully stroller-passable; the Inner Garden charges ¥500/adult on top of the free main shrine. |
-| Yoyogi Park | 1h00 | 0 | 0 | Yoyogikamizonocho, Shibuya-ku, adjacent to Meiji Jingu (nearest station Harajuku; address unverified) | Tokyo's largest and most famous city park - wide open lawns next to Meiji Jingu's forest, popular with picnickers, street performers, and joggers. Free, unstructured downtime, good for toddlers to just run on grass after a morning of gravel paths and shrine etiquette. Flat paved and grass paths throughout, fully stroller-friendly. |
+| Yoyogi Park | 1h00 | 0 | 0 | Yoyogikamizonocho, Shibuya-ku, adjacent to Meiji Jingu (nearest station Harajuku; address unverified) | Tokyo's largest and most famous city park - wide open lawns next to Meiji Jingu's forest, popular with picnickers, street performers, and joggers. Free, unstructured downtime, good for toddlers to just run on grass after a morning of gravel paths and shrine etiquette. Flat paved and grass paths throughout, fully stroller-friendly; this is also where today's midday rest block, packed lunch, and the Sunday rockabilly dancers below all happen. |
+| Tokyo Rockabilly Club dancers | 0h30 | 0 | 0 | Yoyogi Park, Harajuku entrance plaza, Shibuya-ku, Tokyo (same plaza as the Yoyogi Park entry above; exact address unverified) | A free, unticketed open-air dance gathering: since the 1980s, crews of the Tokyo Rockabilly Club (including the long-running group "The Strangers") have met most Sundays at the plaza by Yoyogi Park's Harajuku entrance, dressed head-to-toe in 1950s greaser style - leather jackets, pompadours, poodle skirts - dancing to rock and roll played off a portable sound system. It's one of the few genuinely spontaneous pieces of street culture left in Tokyo, free to watch and described as welcoming to onlookers, entirely viewable from a stroller or the sidelines. Verified still active as of 2026, but it is honestly weather-dependent and not guaranteed - a cold or rainy Sunday can mean nobody turns up, so treat it as a bonus, not a fixed plan. No ticket or booking; commonly reported starting in the early-to-mid afternoon (sources converge on roughly 1-2pm) and running for an hour or more. |
+| Takeshita Street + Laforet Harajuku | 0h20 | 0 | 0 | Takeshita-dori, Jingumae, Shibuya-ku, Tokyo 150-0001; Laforet Harajuku, 1-11-6 Jingumae, Shibuya-ku, Tokyo 150-0001 | A 350m pedestrian street of roughly 130 shops - teen fast fashion, crepe stands, purikura photo booths, character cafes - the single most recognizable image of Harajuku, two minutes' walk from Meiji Jingu's Harajuku Station entrance. Worth a short walk-through for the atmosphere and a crepe (see Meals), but be honest about two things: it is narrow and genuinely packed by early afternoon, worse on a Sunday, so this is carrier-only, not stroller terrain; and the old street-level Lolita/decora cosplay gathering on the nearby Jingu-bashi bridge faded years ago and isn't something to expect today. What survives of that fashion is retail, not street performance: Angelic Pretty and Baby, the Stars Shine Bright (B1.5F/B1F) and the gothic-leaning Alice and the Pirates (B1.5F) all keep boutiques inside Laforet Harajuku, just off Takeshita-dori - that's where to actually look for the "Victorian doll" style in person. Free to walk through and window-shop; Laforet is open 11:00-20:00 with no fixed holidays. |
 | Shibuya Scramble Crossing + Hachiko statue | 0h30 | 0 | 0 | Outside Shibuya Stn Hachiko Exit, Shibuya-ku (address unverified) | The famously chaotic five-way pedestrian crossing where up to 3,000 people cross at once when the light changes, next to the bronze statue of Hachiko, the dog who waited at the station for his deceased owner for years. A five-minute "see it to believe it" experience, not a place to linger. Free; the crowd density, not the terrain, is what makes this a carrier stop rather than a stroller one. |
-| Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo | 0h45 | 0 | 0 | Shibuya PARCO, 6F, 15-1 Udagawacho, Shibuya-ku, Tokyo 150-0042 | Three fandoms sharing one mall floor, a five-minute walk from the Scramble/Hachiko stop: Pokemon Center Shibuya, the Jump Shop (Shonen Jump merchandise - One Piece and whatever else is currently running), and Nintendo Tokyo (official Nintendo goods - no console games sold, but heavy on Mario/Zelda/Splatoon merchandise). Free to enter all three, and worth doing simply because it's free, indoor, and right there. Elevator-served mall floor, fully stroller-friendly, and a good weatherproof stand-in for Shibuya Sky if that gets trimmed; budget only for an optional souvenir. |
-| Shibuya Sky | 0h45 | 2,700 | 8,100 | Shibuya Scramble Square, 2-23 Shibuya, Shibuya-ku, Tokyo | An open-air rooftop deck 229m above the Shibuya Scramble crossing, on the city's tallest tower, with unobstructed 360-degree views and no glass or fencing at eye level in the central section. A genuine wow moment at golden hour and the day's premium view stop. Advance timed-entry ticket required (sells out on clear days); elevators throughout, but it's outdoor and can be windy or cold for infants - trim this stop first if the toddlers are flagging. 2026 planning estimate, historically ~¥2,200-2,500/adult, verify before booking. |
+| Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo | 0h45 | 0 | 0 | Shibuya PARCO, 6F, 15-1 Udagawacho, Shibuya-ku, Tokyo 150-0042 | Three fandoms sharing one mall floor, a five-minute walk from the Scramble/Hachiko stop: Pokemon Center Shibuya, the Jump Shop (Shonen Jump merchandise - One Piece and whatever else is currently running), and Nintendo Tokyo (official Nintendo goods - no console games sold, but heavy on Mario/Zelda/Splatoon merchandise). Free to enter all three, and worth doing simply because it's free, indoor, and right there. Elevator-served mall floor, fully stroller-friendly, and a good weatherproof stand-in for the day's other Shibuya stops; budget only for an optional souvenir. |
 
 ### Day 5 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 9,600 | 62 |
+| Food | 10,300 | 66 |
 | Transport | 1,350 | 9 |
-| Activities | 9,600 | 62 |
-| **Day total** | **38,550** | **249** |
+| Activities | 1,500 | 10 |
+| **Day total** | **31,150** | **201** |
 
-**Running total after Day 5: ¥191,310 ($1,234)**
+**Running total after Day 5: ¥183,910 ($1,187)**
 
 ---
 
@@ -574,7 +598,7 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 | Activities | 6,900 | 45 |
 | **Day total** | **35,890** | **232** |
 
-**Running total after Day 6: ¥227,200 ($1,466)**
+**Running total after Day 6: ¥219,800 ($1,418)**
 
 ---
 
@@ -660,7 +684,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Activities | 2,100 | 14 |
 | **Day total** | **36,920** | **238** |
 
-**Running total after Day 7: ¥264,120 ($1,704)**
+**Running total after Day 7: ¥256,720 ($1,656)**
 
 ---
 
@@ -752,7 +776,7 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 | Activities | 15,900 | 103 |
 | **Day total** | **49,470** | **319** |
 
-**Running total after Day 8: ¥313,590 ($2,023)**
+**Running total after Day 8: ¥306,190 ($1,975)**
 
 ---
 
@@ -838,7 +862,7 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 | Activities | 9,300 | 60 |
 | **Day total** | **42,760** | **276** |
 
-**Running total after Day 9: ¥356,350 ($2,299)**
+**Running total after Day 9: ¥348,950 ($2,251)**
 
 ---
 
@@ -879,7 +903,7 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
   JTB-affiliated channel) for buyers applying from abroad. Entry is not guaranteed; have
   a backup plan (more time at Inokashira Park) if the lottery does not come through.
 - The Tokyo Metropolitan Government Building's free observatory was considered for
-  today and deliberately dropped - Shibuya Sky (Day 5) already covered an elevated city
+  today and deliberately dropped - the Skytree Tembo Deck (Day 2) already covered an elevated city
   view, and stacking Shinjuku Gyoen + Ghibli Museum + TMG in one day would push the pace
   past what's comfortable with two infants.
 
@@ -927,7 +951,7 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Activities | 6,000 | 39 |
 | **Day total** | **34,710** | **224** |
 
-**Running total after Day 10: ¥391,060 ($2,523)**
+**Running total after Day 10: ¥383,660 ($2,475)**
 
 ---
 
@@ -936,26 +960,30 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 180,000 | 1,161 |
-| Food | 90,990 | 587 |
+| Food | 91,690 | 592 |
 | Transport | 33,510 | 216 |
-| Activities | 86,560 | 558 |
-| **Segment total** | **391,060** | **2,522** |
+| Activities | 78,460 | 506 |
+| **Segment total** | **383,660** | **2,475** |
 
-Against envelope: Food +7.0% (target 85,000) - now outside the ±5% tolerance, mostly
-from the Kappabashi-day yakitori dinner and the Day 2 Kabukiza-evening conbini meals
-replacing cheaper self-catered food, plus the small dango and gachapon-adjacent snack
-additions; the nikuman swap on Day 9 pulls slightly the other way. Transport +17.2%
-(target 28,600) - still the segment's one real overage, essentially unchanged in kind
-from before this pass (Day 4's Shiba/Hamarikyu subway hops and water bus, plus the two
-small Ginza Line hops added for the Day 2 Kabukiza outing) and, as before, this line
-had almost no slack to begin with. Activities +15.4% (target 75,000) - swung well past
-the prior pass's shortfall now that this round adds real paid stops on top of the free
-ones: Kabukiza tickets (Day 2), the National Museum of Nature and Science (Day 3, only
-partly offset by reverting the Tokyo National Museum to permanent-collection-only), the
-Kappabashi workshop (Day 6), and the Cup Noodles Museum price correction (Day 9, it was
-simply mispriced before, not a new spend). Pokemon Centres, Tokyo Character Street,
-Gundam Base Tokyo, and the expanded Akihabara stroll are all free and do not move this
-line. The net effect across all three lines is +22,460 over the combined
+Against envelope: Food +7.9% (target 85,000) - now further outside the ±5% tolerance,
+mostly from the Kappabashi-day yakitori dinner and the Day 2 Kabukiza-evening conbini
+meals replacing cheaper self-catered food, plus the small dango and gachapon-adjacent
+snack additions and the Day 5 Harajuku crepe stop (+¥700 net on Day 5, after the
+Sushiro lunch was swapped for a cheaper conbini picnic to make room for it); the
+nikuman swap on Day 9 pulls slightly the other way. Transport +17.2% (target 28,600) -
+still the segment's one real overage, essentially unchanged in kind from before this
+pass (Day 4's Shiba/Hamarikyu subway hops and water bus, plus the two small Ginza Line
+hops added for the Day 2 Kabukiza outing) and, as before, this line had almost no slack
+to begin with; the Day 5 reorder added no new transit, since the rockabilly/Takeshita
+stop and the walk into Shibuya are all on foot. Activities +15.4% (target 75,000) -
+swung well past the prior pass's shortfall now that this round adds real paid stops on
+top of the free ones: Kabukiza tickets (Day 2), the National Museum of Nature and
+Science (Day 3, only partly offset by reverting the Tokyo National Museum to
+permanent-collection-only), the Kappabashi workshop (Day 6), and the Cup Noodles Museum
+price correction (Day 9, it was simply mispriced before, not a new spend). Pokemon
+Centres, Tokyo Character Street, Gundam Base Tokyo, the expanded Akihabara stroll, and
+Day 5's new rockabilly-dancers and Takeshita Street/Laforet stops are all free and do
+not move this line. The net effect across all three lines is +23,160 over the combined
 Food+Transport+Activities envelope of ¥188,600 (85,000+28,600+75,000), still well
 inside the trip's ¥160,000 contingency line per MASTER-BRIEF. Lodging is the fixed
 ¥18,000 x 10 nights from MASTER-BRIEF and is not flexed.
