@@ -54,6 +54,7 @@
     - [Crafts and hands-on activities](#crafts-and-hands-on-activities)
     - [Nature and landscape](#nature-and-landscape)
     - [Rural and small-town Japan](#rural-and-small-town-japan)
+    - [Streets, lanes and canal walks](#streets-lanes-and-canal-walks)
     - [Festivals and seasonal events](#festivals-and-seasonal-events)
     - [Theatre and performance](#theatre-and-performance)
     - [Transport as an experience](#transport-as-an-experience)
@@ -3583,7 +3584,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Matcha soba | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Tea house near Uji Bridge, Uji-shi | Green-tea-infused buckwheat noodles, plus tea-leaf tempura and ochazuke |
 | Zaru soba | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Nishijin, Kamigyo-ku | With a side of vegetable tempura |
 | Tonkotsu ramen with gyoza | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Ippudo, near Shijo-Omiya | |
-| Kake udon | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Hiroshima Stn concourse, Minami-ku | |
+| Tempura udon set | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Hiroshima Stn concourse, Minami-ku | Counter-service lunch with rice and pickles |
 | Tonkotsu ramen with gyoza | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Hondori arcade, Naka-ku, Hiroshima | |
 | Kake udon | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Hondori arcade, Naka-ku, Hiroshima | |
 | Kake udon | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | near Namba Stn, Osaka | |
@@ -3634,7 +3635,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Nikuman (steamed pork buns) | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Yokohama Chinatown, Naka-ku | Chinatown's most iconic street food |
 | Yakisoba, ika-yaki, taiyaki | [15](#day-15---wednesday-october-21-2026---kyoto) | Kobo-ichi market, To-ji | |
 | Takoyaki, warabimochi, hojicha | [19](#day-19---sunday-october-25-2026---kyoto) | Tenjin-ichi market, Kitano Tenmangu | |
-| Takoyaki and okonomiyaki | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Dotonbori, Chuo-ku, Osaka | |
+| Takoyaki, plus negiyaki or kushikatsu | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Dotonbori, Chuo-ku, Osaka | |
 | Takoyaki and okonomiyaki | [28](#day-28---tuesday-november-3-2026---osaka) | Dotonbori, Chuo-ku, Osaka | |
 
 #### Sweets and tea
@@ -3661,7 +3662,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Kasujiru | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | near Gekkeikan Okura Sake Museum, Fushimi-ku | Sake-lees and pork miso soup, made from the solids left over after pressing sake |
 | Anago-meshi | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Omotesando, Miyajima | Grilled conger eel over rice |
 | Hiroshima-style okonomiyaki | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Okonomimura, Naka-ku, Hiroshima | Built in stacked layers with a separate yakisoba layer underneath, unlike Osaka's version |
-| Osaka-style okonomiyaki | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [28](#day-28---tuesday-november-3-2026---osaka) | Dotonbori, Chuo-ku, Osaka | Batter, cabbage and fillings all stirred together before cooking |
+| Osaka-style okonomiyaki | [28](#day-28---tuesday-november-3-2026---osaka) | Dotonbori, Chuo-ku, Osaka | Batter, cabbage and fillings all stirred together before cooking |
 | Kushikatsu | [29](#day-29---wednesday-november-4-2026---osaka) | Kushikatsu Daruma, Dotonbori | Osaka/Shinsekai deep-fried skewer style |
 
 ### Anime, manga and games
@@ -3742,6 +3743,17 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Yanaka Ginza and Yanaka Cemetery | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, an old shotengai streetscape that survived Tokyo's postwar rebuilding |
 | Chushojima / Fushimi sake district | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | Free canal-side walk past white-plastered Edo-period brewery warehouses |
 
+### Streets, lanes and canal walks
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Neighbourhood walk | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Shijo-Omiya, Kyoto | Free, unplanned orientation walk on arrival, no set route |
+| Gion district walk | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free, geiko/maiko entertainment district; several private side-lanes ban tourist photography, fines up to ¥10,000 |
+| Shirakawa Canal | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free, willow-lined canal walkway, quieter than the main Gion street |
+| Pontocho evening lantern walk | [18](#day-18---saturday-october-24-2026---kyoto) | Nakagyo-ku, Kyoto | Free to walk through; the priciest restaurants refuse first-time or foreign walk-ins (ichigen-san okotowari) |
+| Kamo riverbank walk (in kimono) | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Shimogyo-ku, Kyoto | Free, paved path chosen because geta sandals are slower on uneven ground |
+| Dotonbori canal walk | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Free, illuminated signage including the Glico running man sign, dense evening crowds |
+
 ### Festivals and seasonal events
 
 | What | Day | Where | Note |
@@ -3768,10 +3780,14 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Enoden coastal railway | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | ¥800 for a 1-day pass ("Noriorikun") |
 | Kawaguchiko Tenjozan Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
 | Lake Kawaguchi sightseeing cruise | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Kawaguchiko, Yamanashi | ¥1,200 |
+| Mishima -> Kyoto Shinkansen | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Tokaido Shinkansen Hikari, unreserved | ¥10,780/adult, 1h50, the trip's one full intercity transfer leg |
 | Sagano Romantic Train (Torokko) | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | ¥880, open-window sightseeing train through the Hozugawa gorge, reserve ahead |
 | Fushimi Jikkokubune canal boat | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥1,900, optional add, online-only reservation |
+| Kyoto -> Hiroshima Shinkansen | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Sanyo Shinkansen, Hikari/Sakura, unreserved | ¥10,770/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h40 |
+| JR Miyajima ferry (round trip) | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajimaguchi <-> Miyajima pier, Hatsukaichi | ¥400 round trip walk-up (covered by the JR pass), crossing toward the floating torii |
 | Miyajima Ropeway | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥2,000, only 2 of 3 adults go up, one carrying a child |
 | Hiroden streetcar | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Hiroshima | Flat citywide fare, ¥220 per ride |
+| Hiroshima -> Shin-Osaka Shinkansen | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Sanyo/Tokaido Shinkansen, Hikari/Sakura, unreserved | ¥9,710/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h30 |
 | Tombori River Cruise | [29](#day-29---wednesday-november-4-2026---osaka) | Dotonbori, Chuo-ku, Osaka | ¥2,000, scheduled departures rather than walk-up guaranteed |
 
 ### Views and observation decks
@@ -3812,6 +3828,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Takeshita Street + Laforet Harajuku | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse, carrier-only by early afternoon (narrow and packed) |
 | Shibuya PARCO | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse (Pokemon Centre, Jump Shop, Nintendo Tokyo) |
 | Nishiki Market + Daimaru depachika | [15](#day-15---wednesday-october-21-2026---kyoto) | Nakagyo-ku, Kyoto | Free to browse |
+| Omamori charms + goshuincho stamp | [15](#day-15---wednesday-october-21-2026---kyoto) | Fushimi Inari Taisha stalls, Fushimi-ku, Kyoto | About ¥500 per charm, a five-minute stall stop rather than a destination |
 | Sannenzaka/Ninenzaka | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free to walk, uneven stone paving on a slope |
 | Kuromon Ichiba Market | [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Grill-and-eat stalls, priced for visitors |
 | Den Den Town | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku/Chuo-ku, Osaka | Free to browse |

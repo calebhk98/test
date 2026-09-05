@@ -121,7 +121,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Matcha soba | 21 | Tea house near Uji Bridge, Uji-shi | Green-tea-infused buckwheat noodles, plus tea-leaf tempura and ochazuke |
 | Zaru soba | 23 | Nishijin, Kamigyo-ku | With a side of vegetable tempura |
 | Tonkotsu ramen with gyoza | 22 | Ippudo, near Shijo-Omiya | |
-| Kake udon | 24 | Hiroshima Stn concourse, Minami-ku | |
+| Tempura udon set | 24 | Hiroshima Stn concourse, Minami-ku | Counter-service lunch with rice and pickles |
 | Tonkotsu ramen with gyoza | 24 | Hondori arcade, Naka-ku, Hiroshima | |
 | Kake udon | 26 | Hondori arcade, Naka-ku, Hiroshima | |
 | Kake udon | 27 | near Namba Stn, Osaka | |
@@ -172,7 +172,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Nikuman (steamed pork buns) | 9 | Yokohama Chinatown, Naka-ku | Chinatown's most iconic street food |
 | Yakisoba, ika-yaki, taiyaki | 15 | Kobo-ichi market, To-ji | |
 | Takoyaki, warabimochi, hojicha | 19 | Tenjin-ichi market, Kitano Tenmangu | |
-| Takoyaki and okonomiyaki | 27 | Dotonbori, Chuo-ku, Osaka | |
+| Takoyaki, plus negiyaki or kushikatsu | 27 | Dotonbori, Chuo-ku, Osaka | |
 | Takoyaki and okonomiyaki | 28 | Dotonbori, Chuo-ku, Osaka | |
 
 ### Sweets and tea
@@ -199,7 +199,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Kasujiru | 22 | near Gekkeikan Okura Sake Museum, Fushimi-ku | Sake-lees and pork miso soup, made from the solids left over after pressing sake |
 | Anago-meshi | 25 | Omotesando, Miyajima | Grilled conger eel over rice |
 | Hiroshima-style okonomiyaki | 25 | Okonomimura, Naka-ku, Hiroshima | Built in stacked layers with a separate yakisoba layer underneath, unlike Osaka's version |
-| Osaka-style okonomiyaki | 27, 28 | Dotonbori, Chuo-ku, Osaka | Batter, cabbage and fillings all stirred together before cooking |
+| Osaka-style okonomiyaki | 28 | Dotonbori, Chuo-ku, Osaka | Batter, cabbage and fillings all stirred together before cooking |
 | Kushikatsu | 29 | Kushikatsu Daruma, Dotonbori | Osaka/Shinsekai deep-fried skewer style |
 
 ## Anime, manga and games
@@ -280,6 +280,17 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Yanaka Ginza and Yanaka Cemetery | 6 | Taito-ku, Tokyo | Free, an old shotengai streetscape that survived Tokyo's postwar rebuilding |
 | Chushojima / Fushimi sake district | 22 | Fushimi-ku, Kyoto | Free canal-side walk past white-plastered Edo-period brewery warehouses |
 
+## Streets, lanes and canal walks
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Neighbourhood walk | 14 | Shijo-Omiya, Kyoto | Free, unplanned orientation walk on arrival, no set route |
+| Gion district walk | 18 | Higashiyama-ku, Kyoto | Free, geiko/maiko entertainment district; several private side-lanes ban tourist photography, fines up to ¥10,000 |
+| Shirakawa Canal | 18 | Higashiyama-ku, Kyoto | Free, willow-lined canal walkway, quieter than the main Gion street |
+| Pontocho evening lantern walk | 18 | Nakagyo-ku, Kyoto | Free to walk through; the priciest restaurants refuse first-time or foreign walk-ins (ichigen-san okotowari) |
+| Kamo riverbank walk (in kimono) | 23 | Shimogyo-ku, Kyoto | Free, paved path chosen because geta sandals are slower on uneven ground |
+| Dotonbori canal walk | 27, 29 | Chuo-ku, Osaka | Free, illuminated signage including the Glico running man sign, dense evening crowds |
+
 ## Festivals and seasonal events
 
 | What | Day | Where | Note |
@@ -306,10 +317,14 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Enoden coastal railway | 7 | Kamakura, Kanagawa | ¥800 for a 1-day pass ("Noriorikun") |
 | Kawaguchiko Tenjozan Ropeway | 12 | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
 | Lake Kawaguchi sightseeing cruise | 12 | Kawaguchiko, Yamanashi | ¥1,200 |
+| Mishima -> Kyoto Shinkansen | 14 | Tokaido Shinkansen Hikari, unreserved | ¥10,780/adult, 1h50, the trip's one full intercity transfer leg |
 | Sagano Romantic Train (Torokko) | 17 | Ukyo-ku, Kyoto | ¥880, open-window sightseeing train through the Hozugawa gorge, reserve ahead |
 | Fushimi Jikkokubune canal boat | 22 | Fushimi-ku, Kyoto | ¥1,900, optional add, online-only reservation |
+| Kyoto -> Hiroshima Shinkansen | 24 | Sanyo Shinkansen, Hikari/Sakura, unreserved | ¥10,770/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h40 |
+| JR Miyajima ferry (round trip) | 25 | Miyajimaguchi <-> Miyajima pier, Hatsukaichi | ¥400 round trip walk-up (covered by the JR pass), crossing toward the floating torii |
 | Miyajima Ropeway | 25 | Hatsukaichi, Hiroshima | ¥2,000, only 2 of 3 adults go up, one carrying a child |
 | Hiroden streetcar | 24, 26 | Hiroshima | Flat citywide fare, ¥220 per ride |
+| Hiroshima -> Shin-Osaka Shinkansen | 27 | Sanyo/Tokaido Shinkansen, Hikari/Sakura, unreserved | ¥9,710/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h30 |
 | Tombori River Cruise | 29 | Dotonbori, Chuo-ku, Osaka | ¥2,000, scheduled departures rather than walk-up guaranteed |
 
 ## Views and observation decks
@@ -350,6 +365,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Takeshita Street + Laforet Harajuku | 5 | Shibuya-ku, Tokyo | Free to browse, carrier-only by early afternoon (narrow and packed) |
 | Shibuya PARCO | 5 | Shibuya-ku, Tokyo | Free to browse (Pokemon Centre, Jump Shop, Nintendo Tokyo) |
 | Nishiki Market + Daimaru depachika | 15 | Nakagyo-ku, Kyoto | Free to browse |
+| Omamori charms + goshuincho stamp | 15 | Fushimi Inari Taisha stalls, Fushimi-ku, Kyoto | About ¥500 per charm, a five-minute stall stop rather than a destination |
 | Sannenzaka/Ninenzaka | 18 | Higashiyama-ku, Kyoto | Free to walk, uneven stone paving on a slope |
 | Kuromon Ichiba Market | 29 | Chuo-ku, Osaka | Grill-and-eat stalls, priced for visitors |
 | Den Den Town | 29 | Naniwa-ku/Chuo-ku, Osaka | Free to browse |
