@@ -73,12 +73,20 @@
     - [1. Decisions for the family](#1-decisions-for-the-family)
     - [2. Deadlines](#2-deadlines)
     - [3. Verify nearer the date](#3-verify-nearer-the-date)
-  - [Appendix H: Why these dates](#appendix-h-why-these-dates)
-  - [Appendix I: Why this route](#appendix-i-why-this-route)
-  - [Appendix J: How the money works](#appendix-j-how-the-money-works)
-  - [Appendix K: Japan with a 12-month-old and a 20-month-old](#appendix-k-japan-with-a-12-month-old-and-a-20-month-old)
-  - [Appendix L: How 2,000 calories a day actually gets bought](#appendix-l-how-2000-calories-a-day-actually-gets-bought)
-  - [Appendix M: Confidence and sources](#appendix-m-confidence-and-sources)
+  - [Appendix H: Transport](#appendix-h-transport)
+    - [1. The rail pass decision](#1-the-rail-pass-decision)
+    - [2. The five intercity moves](#2-the-five-intercity-moves)
+    - [3. Airport transfers](#3-airport-transfers)
+    - [4. Getting around in each city](#4-getting-around-in-each-city)
+    - [5. How infants are charged](#5-how-infants-are-charged)
+    - [6. Luggage, strollers and seat reservations](#6-luggage-strollers-and-seat-reservations)
+    - [7. What the transport actually costs](#7-what-the-transport-actually-costs)
+  - [Appendix I: Why these dates](#appendix-i-why-these-dates)
+  - [Appendix J: Why this route](#appendix-j-why-this-route)
+  - [Appendix K: How the money works](#appendix-k-how-the-money-works)
+  - [Appendix L: Japan with a 12-month-old and a 20-month-old](#appendix-l-japan-with-a-12-month-old-and-a-20-month-old)
+  - [Appendix M: How 2,000 calories a day actually gets bought](#appendix-m-how-2000-calories-a-day-actually-gets-bought)
+  - [Appendix N: Confidence and sources](#appendix-n-confidence-and-sources)
 
 **3 adults + 2 infants (~12 months and ~20 months) | 7 October - 5 November 2026 | 30 days, 29 nights**
 
@@ -235,7 +243,7 @@ stock-up run, early night against jet lag with two infants.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Airline in-flight meal (final service before landing), plus a canned coffee from an arrivals-hall conbini | Narita Airport Terminal 1/2 arrivals, Narita, Chiba | 450 | 600 |
-| Lunch | Kake udon with a chicken tempura, plus an onigiri from the same counter | Fast-casual udon counter, Ueno Stn concourse, Taito-ku | 650 | 1,200 |
+| Lunch | Kake [udon](#noodles) with a chicken tempura, plus an [onigiri](#konbini-bento-and-set-meals) from the same counter | Fast-casual udon counter, Ueno Stn concourse, Taito-ku | 650 | 1,200 |
 | Dinner | Rice, pan-fried chicken thigh, cabbage-and-carrot stir-fry, miso soup - cooked from the FULL initial grocery haul (rice 5kg, a dozen eggs, 2x 1L milk, sliced bread, chicken thigh, tofu, natto, mixed produce, soy sauce/miso/oil pantry staples) | Life Supermarket or Gyomu Super, Higashi-Ueno (chain confirmed in the area; exact branch unverified) | 900 | 7,200 |
 | Infant food | Initial 800g formula tin (Wakodo or Pigeon) for Infant A (~12mo); Wakodo or Morinaga stage pouches (rice porridge, vegetable puree) as Infant A's starter solids; Infant B (~20mo) eats mashed portions of the rice, chicken and stir-fried vegetables straight off the family pot | Same supermarket run | n/a | 2,400 |
 
@@ -340,9 +348,9 @@ than keeping them cleanly separate.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, scrambled eggs, buttered toast | Cooked in room from Day 1 stock; Hotel kitchenette | 500 | 750 |
-| Snack | Mitarashi dango, 1 skewer/adult (grilled, sweet soy-glazed rice-flour dumplings) bought walking Nakamise-dori | Nakamise-dori stalls, Asakusa, Taito-ku (specific stall unverified) | 100 | 1,200 |
-| Lunch | Shoyu ramen bowl with a side of gyoza, ordered at a ramen counter | Tokyo Solamachi food court, Sumida-ku | 750 | 3,200 |
-| Dinner | Stir-fried pork and vegetables over rice, miso soup - top-up items from Day 1 stock, for the 3rd adult and both infants at the hotel; the 2 Kabukiza-bound adults instead pick up a conbini onigiri, croquette and tea near Ginza | Cooked in room; Hotel kitchenette / conbini near Kabukiza, Ginza | 700 | 1,600 |
+| Snack | [Mitarashi dango](#sweets-and-tea), 1 [skewer](#grilled-and-skewered)/adult (grilled, sweet soy-glazed rice-flour dumplings) bought walking Nakamise-dori | Nakamise-dori stalls, Asakusa, Taito-ku (specific stall unverified) | 100 | 1,200 |
+| Lunch | Shoyu [ramen](#noodles) bowl with a side of gyoza, ordered at a ramen counter | Tokyo Solamachi food court, Sumida-ku | 750 | 3,200 |
+| Dinner | Stir-fried pork and vegetables over rice, miso soup - top-up items from Day 1 stock, for the 3rd adult and both infants at the hotel; the 2 Kabukiza-bound adults instead pick up a conbini [onigiri](#konbini-bento-and-set-meals), [croquette](#street-snacks) and tea near Ginza | Cooked in room; Hotel kitchenette / conbini near Kabukiza, Ginza | 700 | 1,600 |
 | Infant food | 3 formula feeds for Infant A, plus 2 Wakodo pouches (rice and pumpkin; chicken and vegetable); Infant B eats table portions of the rice and stir-fry, plus a Pigeon snack biscuit | Conbini top-up near hotel | n/a | 2,150 |
 
 Adult kcal: 500 + 100 (dango) + 750 + 700 = **2,050**.
@@ -446,10 +454,10 @@ everything inside a 15-minute walk of the Livemax.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, grilled salted salmon flake, miso soup, pickles | Cooked in room; Hotel kitchenette | 500 | 750 |
-| Lunch | Street food grazing - takoyaki, pan-fried gyoza, yakitori skewers | Ameyoko market, Taito-ku | 700 | 2,150 |
-| Dinner | Deli items - karaage, potato salad, rice balls, over rice from the kitchenette, bought at full price (17:35 is well before any markdown window) | Supermarket near hotel | 750 | 2,600 |
-| Late hangaku run | 50%-off deli top-up (karaage, potato salad, rice balls) bought after both infants are down, for tomorrow's lunch rather than tonight's dinner | [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs), 2-3-4 Ueno, Taito-ku (open to 21:00) | n/a | 900 |
-| Infant food | 3 formula feeds plus 2 Pigeon pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the takoyaki filling (deboned) and rice, plus a Morinaga snack pouch | Conbini near hotel | n/a | 2,100 |
+| Lunch | Street food grazing - [takoyaki](#street-snacks), pan-fried gyoza, [yakitori](#grilled-and-skewered) skewers | Ameyoko market, Taito-ku | 700 | 2,150 |
+| Dinner | Deli items - [karaage](#konbini-bento-and-set-meals), potato salad, rice balls, over rice from the kitchenette, bought at full price (17:35 is well before any markdown window) | Supermarket near hotel | 750 | 2,600 |
+| Late hangaku run | 50%-off deli top-up ([karaage](#konbini-bento-and-set-meals), potato salad, rice balls) bought after both infants are down, for tomorrow's lunch rather than tonight's dinner | [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs), 2-3-4 Ueno, Taito-ku (open to 21:00) | n/a | 900 |
+| Infant food | 3 formula feeds plus 2 Pigeon pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the [takoyaki](#street-snacks) filling (deboned) and rice, plus a Morinaga snack pouch | Conbini near hotel | n/a | 2,100 |
 
 Adult kcal: 500 + 700 + 750 = **1,950**.
 
@@ -567,9 +575,9 @@ Gardens, riding the Sumida River water bus home to Asakusa.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, natto, toasted bread with jam | Cooked in room; Hotel kitchenette | 500 | 750 |
-| Lunch | Katsudon (breaded pork cutlet over rice with egg) at a teishoku counter | Shibakoen/Hamamatsucho area, Minato-ku (specific shop unverified) | 750 | 2,600 |
+| Lunch | [Katsudon](#rice-dishes) (breaded pork cutlet over rice with egg) at a [teishoku](#konbini-bento-and-set-meals) counter | Shibakoen/Hamamatsucho area, Minato-ku (specific shop unverified) | 750 | 2,600 |
 | Dinner | Grilled salmon fillet, sauteed spinach, rice, miso soup | Cooked in room; Hotel kitchenette | 700 | 1,150 |
-| Infant food | 3 formula feeds plus 2 Morinaga pouches (salmon and rice; mixed vegetable) for Infant A; Infant B eats table portions of the katsudon rice and egg (deboned/de-breaded pieces) plus a Wakodo snack pouch | Conbini | n/a | 2,100 |
+| Infant food | 3 formula feeds plus 2 Morinaga pouches (salmon and rice; mixed vegetable) for Infant A; Infant B eats table portions of the [katsudon](#rice-dishes) rice and egg (deboned/de-breaded pieces) plus a Wakodo snack pouch | Conbini | n/a | 2,100 |
 
 Adult kcal: 500 + 750 + 700 = **1,950**.
 
@@ -679,10 +687,10 @@ rest block set in the park itself.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, fried egg, toast with jam | Cooked in room; Hotel kitchenette | 500 | 750 |
-| Lunch | Conbini bento (grilled chicken, rice, pickled vegetables) plus an onigiri each, eaten picnic-style on the Yoyogi Park lawn | Conbini near Harajuku Stn, Shibuya-ku (specific branch unverified) | 600 | 2,100 |
-| Snack | Harajuku crepe - whipped cream and strawberry, one per adult. Crepes have been Takeshita Street's signature street food since Marion Crêpes opened here in 1976 | Marion Crêpes, Takeshita-dori, Jingumae, Shibuya-ku, Tokyo 150-0001 (specific stall unverified) | 350 | 1,500 |
+| Lunch | Conbini bento (grilled chicken, rice, pickled vegetables) plus an [onigiri](#konbini-bento-and-set-meals) each, eaten picnic-style on the Yoyogi Park lawn | Conbini near Harajuku Stn, Shibuya-ku (specific branch unverified) | 600 | 2,100 |
+| Snack | Harajuku [crepe](#street-snacks) - whipped cream and strawberry, one per adult. Crepes have been Takeshita Street's signature street food since Marion Crêpes opened here in 1976 | Marion Crêpes, Takeshita-dori, Jingumae, Shibuya-ku, Tokyo 150-0001 (specific stall unverified) | 350 | 1,500 |
 | Dinner | Izakaya set course - grilled chicken skewers, edamame, rice | Shibuya (specific shop unverified) | 600 | 3,800 |
-| Infant food | 3 formula feeds plus 2 Wakodo pouches (salmon and rice; pumpkin) for Infant A; Infant B eats table portions of the lunch bento's chicken and rice plus edamame beans squeezed from the pod, and gets a small taste of the crepe filling | Conbini | n/a | 2,150 |
+| Infant food | 3 formula feeds plus 2 Wakodo pouches (salmon and rice; pumpkin) for Infant A; Infant B eats table portions of the lunch [bento](#konbini-bento-and-set-meals)'s chicken and rice plus edamame beans squeezed from the pod, and gets a small taste of the [crepe](#street-snacks) filling | Conbini | n/a | 2,150 |
 
 Adult kcal: 500 + 600 + 350 + 600 = **2,050**.
 
@@ -780,9 +788,9 @@ away from the holiday crowds.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, natto, grilled mackerel, miso soup | Cooked in room; Hotel kitchenette | 500 | 750 |
-| Lunch | Menchi-katsu (fried minced-meat cutlet), a shrimp senbei cracker, and a vegetable croquette, eaten street-stall style | Yanaka Ginza, Taito-ku | 650 | 1,850 |
-| Dinner | Yakitori set - about 5 grilled chicken and vegetable skewers per adult, rice, miso soup. Yakitori is bite-sized meat and vegetables grilled on skewers over charcoal, ordered a few at a time - one of Japan's most common izakaya-style meals, and this trip's second taste of it in thirty days | Torikizoku (or similar flat-price yakitori chain), near Ueno Stn, Taito-ku (exact branch unverified) | 800 | 5,700 |
-| Infant food | 3 formula feeds plus 2 Pigeon pouches (pork and vegetable; rice and pumpkin) for Infant A; Infant B eats deboned bites of grilled chicken skewer and rice from the yakitori set | Conbini / Torikizoku | n/a | 2,150 |
+| Lunch | [Menchi-katsu](#street-snacks) (fried minced-meat cutlet), a shrimp senbei cracker, and a vegetable croquette, eaten street-stall style | Yanaka Ginza, Taito-ku | 650 | 1,850 |
+| Dinner | [Yakitori](#grilled-and-skewered) set - about 5 grilled chicken and vegetable skewers per adult, rice, miso soup. Yakitori is bite-sized meat and vegetables grilled on skewers over charcoal, ordered a few at a time - one of Japan's most common izakaya-style meals, and this trip's second taste of it in thirty days | Torikizoku (or similar flat-price yakitori chain), near Ueno Stn, Taito-ku (exact branch unverified) | 800 | 5,700 |
+| Infant food | 3 formula feeds plus 2 Pigeon pouches (pork and vegetable; rice and pumpkin) for Infant A; Infant B eats deboned bites of grilled chicken skewer and rice from the [yakitori](#grilled-and-skewered) set | Conbini / Torikizoku | n/a | 2,150 |
 
 Adult kcal: 500 + 650 + 800 = **1,950**.
 
@@ -875,9 +883,9 @@ across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, natto, boiled egg | Cooked in room, early start; Hotel kitchenette | 500 | 750 |
-| Lunch | Shirasu-don - raw and boiled whitebait piled over rice, with a side of miso soup | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
-| Dinner | Bento - grilled salmon, rice, pickled vegetables, tamagoyaki, bought at full price (17:30 is too early for any supermarket markdown) | Supermarket/conbini near hotel | 750 | 3,700 |
-| Infant food | 3 formula feeds plus 2 Wakodo pouches (whitefish and rice; mixed vegetable) for Infant A; Infant B eats flaked bites of the bento salmon and rice, plus a Morinaga snack pouch | Conbini | n/a | 2,400 |
+| Lunch | [Shirasu-don](#rice-dishes) - raw and boiled whitebait piled over rice, with a side of miso soup | Komachi-dori area, Kamakura (specific shop unverified) | 700 | 3,600 |
+| Dinner | [Bento](#konbini-bento-and-set-meals) - grilled salmon, rice, pickled vegetables, tamagoyaki, bought at full price (17:30 is too early for any supermarket markdown) | Supermarket/conbini near hotel | 750 | 3,700 |
+| Infant food | 3 formula feeds plus 2 Wakodo pouches (whitefish and rice; mixed vegetable) for Infant A; Infant B eats flaked bites of the [bento](#konbini-bento-and-set-meals) salmon and rice, plus a Morinaga snack pouch | Conbini | n/a | 2,400 |
 
 Adult kcal: 500 + 700 + 750 = **1,950**.
 
@@ -962,7 +970,7 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
-| Breakfast | Grazing several Toyosu Market outer-area stalls - a grilled scallop skewer, tamagoyaki (rolled sweet omelette), 2-3 pieces of nigiri sushi, and hojicha tea | Toyosu Market outer area, Koto-ku (nearest station Shijo-mae; address unverified) | 550 | 3,600 |
+| Breakfast | Grazing several Toyosu Market outer-area stalls - a grilled scallop [skewer](#grilled-and-skewered), tamagoyaki (rolled sweet omelette), 2-3 pieces of [nigiri](#seafood-and-sushi) sushi, and [hojicha](#sweets-and-tea) tea | Toyosu Market outer area, Koto-ku (nearest station Shijo-mae; address unverified) | 550 | 3,600 |
 | Lunch | Food court set meals | Aqua City/Toyosu area | 700 | 3,400 |
 | Dinner | Self-catered - rice, ginger pork, steamed broccoli, miso soup | Hotel kitchenette | 800 | 2,350 |
 | Infant food | 3 formula feeds plus 2 Pigeon pouches (white fish and rice; pumpkin) for Infant A; Infant B eats table portions of the tamagoyaki and rice, plus a Wakodo snack pouch | Conbini | n/a | 2,200 |
@@ -1054,7 +1062,7 @@ traditional garden.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, miso soup, toast | Cooked in room, early start; Hotel kitchenette | 500 | 750 |
-| Lunch | Nikuman and steamed-bun grazing - 2 pork steamed buns (nikuman) plus a char siu skewer and an ebi-mayo bun per adult. Nikuman is a fist-sized steamed wheat bun with a savory pork filling, Chinatown's single most iconic street food, sold from dozens of stall windows along the main strip - a more authentic, cheaper, lower-kcal lunch than a sit-down set course | Chukagai-Odori and side streets, Yokohama Chinatown, Naka-ku, Yokohama | 800 | 4,300 |
+| Lunch | [Nikuman](#street-snacks) and steamed-bun grazing - 2 pork steamed buns (nikuman) plus a char siu [skewer](#grilled-and-skewered) and an ebi-mayo bun per adult. Nikuman is a fist-sized steamed wheat bun with a savory pork filling, Chinatown's single most iconic street food, sold from dozens of stall windows along the main strip - a more authentic, cheaper, lower-kcal lunch than a sit-down set course | Chukagai-Odori and side streets, Yokohama Chinatown, Naka-ku, Yokohama | 800 | 4,300 |
 | Dinner | Grilled mackerel, rice, pickled vegetables, miso soup, using fresh fish and produce bought at a Yokohama market stall | Hotel kitchenette | 700 | 2,150 |
 | Infant food | 3 formula feeds plus 2 Morinaga pouches (white fish and rice; mixed vegetable) for Infant A; Infant B eats flaked bites of the grilled mackerel and rice | Conbini | n/a | 2,200 |
 
@@ -1151,9 +1159,9 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, natto, remaining vegetables from the fridge | Cooked in room, using up the last of the Day 1 pantry stock; Hotel kitchenette | 500 | 650 |
-| Lunch | Tonkotsu ramen, ordered through the individual ticket-machine booth system | Ichiran, Shinjuku | 750 | 2,940 |
-| Dinner | Fried rice with leftover vegetables and egg, last-night meal working through the remaining pantry stock | Hotel kitchenette | 700 | 2,400 |
-| Infant food | 3 formula feeds plus 2 Wakodo pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the fried rice and egg | Conbini | n/a | 2,200 |
+| Lunch | Tonkotsu [ramen](#noodles), ordered through the individual ticket-machine booth system | Ichiran, Shinjuku | 750 | 2,940 |
+| Dinner | [Fried rice](#rice-dishes) with leftover vegetables and egg, last-night meal working through the remaining pantry stock | Hotel kitchenette | 700 | 2,400 |
+| Infant food | 3 formula feeds plus 2 Wakodo pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the [fried rice](#rice-dishes) and egg | Conbini | n/a | 2,200 |
 
 Adult kcal: 500 + 750 + 700 = **1,950**.
 
@@ -1279,7 +1287,7 @@ Active out-of-lodging time: about 7h15 (3h50 before the rest block, 3h25 after),
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toast (2 slices/adult), fried eggs, brewed coffee - last kitchenette meal, using up the Livemax pantry stock | Hotel Livemax Higashi-Ueno kitchenette | 550 | 700 |
-| Lunch | Eki-ben bento (mixed rice, tonkatsu or salmon, pickles), eaten on the highway bus | Busta Shinjuku food hall/kiosks | 700 | 2,700 |
+| Lunch | Eki-ben bento (mixed rice, [tonkatsu](#konbini-bento-and-set-meals) or salmon, pickles), eaten on the highway bus | Busta Shinjuku food hall/kiosks | 700 | 2,700 |
 | Dinner | Chicken thigh and cabbage stir-fry over rice, tofu and miso soup - first shared-kitchen meal at K's House | K's House Mt. Fuji shared guest kitchen; ingredients from the Day 11 grocery run at [OGINO Kawaguchiko](#kawaguchiko-shopping-runs), 545-3 Funatsu | 750 | 2,600 |
 | Infant food | Formula (12mo, Wakodo or Morinaga) + Pigeon/Wakodo pouches and mashed banana; 20mo eats rice and softened stir-fry vegetables off the family table | [OGINO Kawaguchiko](#kawaguchiko-shopping-runs), 545-3 Funatsu (food section 9:00-21:00) | n/a | 2,000 |
 
@@ -1370,9 +1378,9 @@ Active out-of-lodging time: about 8h05 (5h45 before the rest block, 2h20 after),
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, natto, fried eggs, brewed coffee | K's House Mt. Fuji shared guest kitchen | 550 | 750 |
-| Lunch | Houtou - flat, udon-like noodles simmered with kabocha squash, root vegetables and miso broth, the Yamanashi regional specialty; likely Hoto Fudou or another local houtou specialist (exact branch unconfirmed) | Fujikawaguchiko area | 750 | 4,200 |
-| Dinner | Yosenabe (mixed hot pot): thin-sliced pork, hakusai (napa cabbage), shiitake and enoki mushrooms, tofu, negi, simmered in a store-bought nabe-no-moto broth base and finished with udon noodles cooked in the leftover broth | K's House Mt. Fuji shared guest kitchen; ingredients carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) grocery run | 700 | 3,000 |
-| Infant food | Formula (12mo, Wakodo/Pigeon pouches) - 20mo shares softened cabbage, mushrooms, tofu and udon straight from the pot, cooled and cut small | Carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) run | n/a | 2,000 |
+| Lunch | [Houtou](#noodles) - flat, udon-like noodles simmered with kabocha squash, root vegetables and miso broth, the Yamanashi regional specialty; likely Hoto Fudou or another local houtou specialist (exact branch unconfirmed) | Fujikawaguchiko area | 750 | 4,200 |
+| Dinner | [Yosenabe](#hot-pot) (mixed hot pot): thin-sliced pork, hakusai (napa cabbage), shiitake and enoki mushrooms, tofu, negi, simmered in a store-bought nabe-no-moto broth base and finished with [udon](#noodles) noodles cooked in the leftover broth | K's House Mt. Fuji shared guest kitchen; ingredients carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) grocery run | 700 | 3,000 |
+| Infant food | Formula (12mo, Wakodo/Pigeon pouches) - 20mo shares softened cabbage, mushrooms, tofu and [udon](#noodles) straight from the pot, cooled and cut small | Carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) run | n/a | 2,000 |
 
 Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
@@ -1459,9 +1467,9 @@ Active out-of-lodging time: about 6h55 (4h00 before the rest block, 2h55 after),
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, natto, fried eggs, coffee - last shared-kitchen breakfast before checkout | K's House Mt. Fuji shared guest kitchen | 550 | 750 |
-| Lunch | Soba/udon shop (name unconfirmed) | Oshino Hakkai village | 750 | 2,600 |
-| Dinner | Kaiseki course dinner - roughly 8 courses: a seasonal appetizer, sashimi, a hoba-miso grilled dish, tempura, a simmered vegetable course, rice with local vegetables, miso soup, and seasonal fruit; the exact seasonal menu isn't published, priced as the ryokan's half-board dinner add-on | Lakeland Hotel Mizunosato dining room, 1070 Kodachi, Fujikawaguchiko | 750 | 5,940 |
-| Infant food | Formula (12mo, Wakodo or Morinaga) + Pigeon/Wakodo pouches; 20mo shares rice, miso soup and softened vegetables from the kaiseki table | Ryokan-provided course + pouches carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) run | n/a | 1,700 |
+| Lunch | Soba/[udon](#noodles) shop (name unconfirmed) | Oshino Hakkai village | 750 | 2,600 |
+| Dinner | [Kaiseki](#regional-specialities) course dinner - roughly 8 courses: a seasonal appetizer, [sashimi](#seafood-and-sushi), a hoba-miso grilled dish, tempura, a simmered vegetable course, rice with local vegetables, miso soup, and seasonal fruit; the exact seasonal menu isn't published, priced as the ryokan's half-board dinner add-on | Lakeland Hotel Mizunosato dining room, 1070 Kodachi, Fujikawaguchiko | 750 | 5,940 |
+| Infant food | Formula (12mo, Wakodo or Morinaga) + Pigeon/Wakodo pouches; 20mo shares rice, miso soup and softened vegetables from the [kaiseki](#regional-specialities) table | Ryokan-provided course + pouches carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) run | n/a | 1,700 |
 
 Adult kcal sum: 550 + 750 + 750 = **2,050**.
 
@@ -1550,8 +1558,8 @@ Active out-of-lodging time: about 7h35 (5h25 before the rest block, 2h10 after),
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Japanese breakfast set: rice, grilled fish, tamagoyaki, miso soup, pickles, nori, green tea - the ryokan's half-board breakfast, booked together with the previous night's dinner | Lakeland Hotel Mizunosato, 1070 Kodachi, Fujikawaguchiko | 550 | 2,970 |
-| Lunch | Eki-ben bento, eaten on the Hikari | Mishima Stn kiosks | 700 | 2,300 |
-| Dinner | Gyudon/ramen chain (e.g. Matsuya or Sukiya - exact branch unconfirmed) | Omiya Stn area, Kyoto | 750 | 2,700 |
+| Lunch | [Eki-ben](#konbini-bento-and-set-meals) bento, eaten on the Hikari | Mishima Stn kiosks | 700 | 2,300 |
+| Dinner | [Gyudon](#rice-dishes)/[ramen](#noodles) chain (e.g. Matsuya or Sukiya - exact branch unconfirmed) | Omiya Stn area, Kyoto | 750 | 2,700 |
 | Infant food | Formula + jars/finger food for both infants | Konbini near Kyoto Stn/Omiya | n/a | 1,900 |
 
 Adult kcal sum: 550 + 700 + 750 = **2,000**.
@@ -1657,9 +1665,9 @@ Lodging (fixed for the two properties, informational): 2 nights at K's House Mt.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Yatai lunch from Kobo-ichi's food stalls: a plate of yakisoba (fried noodles with pork and cabbage), a grilled squid skewer (ika-yaki), and a taiyaki (fish-shaped waffle cake, red-bean filling) each | To-ji temple grounds, 1 Kujocho, Minami-ku, Kyoto 601-8473 | 750 | 5,400 |
-| Dinner | Nishiki Market stall food - a tamagoyaki (rolled omelette) skewer, yatsuhashi cinnamon-mochi sweets, grilled dashi-rolled skewers, pickles - plus a bento top-up from Daimaru's depachika basement, eaten back at the hotel | Nishiki Market / Daimaru Kyoto basement, Nakagyo-ku | 800 | 3,600 |
-| Infant food | Wakodo Rakuraku stage-2 formula tin for the 12-month-old plus 2 Wakodo/Pigeon vegetable-and-fish pouches; the 20-month-old eats rice, soft tofu, and small pieces of taiyaki (bean paste scraped off) off the family's To-ji and Nishiki Market spread | Gyomu Super or drugstore near Shijo-Omiya | n/a | 2,300 |
+| Lunch | Yatai lunch from Kobo-ichi's food stalls: a plate of [yakisoba](#noodles) (fried noodles with pork and cabbage), a grilled squid skewer ([ika-yaki](#grilled-and-skewered)), and a [taiyaki](#street-snacks) (fish-shaped waffle cake, red-bean filling) each | To-ji temple grounds, 1 Kujocho, Minami-ku, Kyoto 601-8473 | 750 | 5,400 |
+| Dinner | Nishiki Market stall food - a tamagoyaki (rolled omelette) [skewer](#grilled-and-skewered), yatsuhashi cinnamon-[mochi](#sweets-and-tea) sweets, grilled dashi-rolled skewers, pickles - plus a [bento](#konbini-bento-and-set-meals) top-up from Daimaru's depachika basement, eaten back at the hotel | Nishiki Market / Daimaru Kyoto basement, Nakagyo-ku | 800 | 3,600 |
+| Infant food | Wakodo Rakuraku stage-2 formula tin for the 12-month-old plus 2 Wakodo/Pigeon vegetable-and-fish pouches; the 20-month-old eats rice, soft tofu, and small pieces of [taiyaki](#street-snacks) (bean paste scraped off) off the family's To-ji and Nishiki Market spread | Gyomu Super or drugstore near Shijo-Omiya | n/a | 2,300 |
 
 Adult kcal: 500 + 750 + 800 = **2,050/adult**.
 
@@ -1745,8 +1753,8 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Convenience-store salmon and umeboshi onigiri plus a chicken karaage bento (FamilyMart or Lawson) | Kamigyo-ku, near Kyoto Gyoen | 650 | 1,500 |
-| Dinner | Teishoku set meal - grilled mackerel, rice, miso soup, small sides (Yayoiken-style set-meal chain) | Near Shijo-Omiya, Shimogyo-ku (branch unverified) | 800 | 3,300 |
+| Lunch | Convenience-store salmon and umeboshi [onigiri](#konbini-bento-and-set-meals) plus a chicken karaage bento (FamilyMart or Lawson) | Kamigyo-ku, near Kyoto Gyoen | 650 | 1,500 |
+| Dinner | [Teishoku](#konbini-bento-and-set-meals) set meal - grilled mackerel, rice, miso soup, small sides (Yayoiken-style set-meal chain) | Near Shijo-Omiya, Shimogyo-ku (branch unverified) | 800 | 3,300 |
 | Infant food | Wakodo Rakuraku formula tin for the 12-month-old plus 2 Pigeon pouches; the 20-month-old eats rice, flaked mackerel off the bone, and miso soup (cooled, low-salt portion) off the family table | Drugstore near Shijo-Omiya | n/a | 1,800 |
 
 Adult kcal: 500 + 650 + 800 = **1,950/adult**.
@@ -1835,9 +1843,9 @@ Infants ride free on the subway, Hankyu, and city bus legs. The family returns t
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Yudofu teishoku - a pot of simmering hot tofu in kombu broth with dipping sauces, rice, and pickles; a specialty of this exact temple district, sold at restaurants right outside Tenryu-ji | Saga-Arashiyama, Ukyo-ku (restaurant unverified) | 700 | 3,100 |
-| Dinner | Gyudon (beef and onion over rice) plus miso soup and a small salad (Matsuya) | Near Shijo-Omiya, Shimogyo-ku | 800 | 2,300 |
-| Infant food | Wakodo/Morinaga formula tin for the 12-month-old plus pouches; the 20-month-old eats soft rice, tofu from the lunch pot (cooled, unseasoned portion), and small pieces of gyudon beef at dinner | Local supermarket, Shijo-Omiya area | n/a | 1,900 |
+| Lunch | [Yudofu](#regional-specialities) [teishoku](#konbini-bento-and-set-meals) - a pot of simmering hot tofu in kombu broth with dipping sauces, rice, and pickles; a specialty of this exact temple district, sold at restaurants right outside Tenryu-ji | Saga-Arashiyama, Ukyo-ku (restaurant unverified) | 700 | 3,100 |
+| Dinner | [Gyudon](#rice-dishes) (beef and onion over rice) plus miso soup and a small salad (Matsuya) | Near Shijo-Omiya, Shimogyo-ku | 800 | 2,300 |
+| Infant food | Wakodo/Morinaga formula tin for the 12-month-old plus pouches; the 20-month-old eats soft rice, tofu from the lunch pot (cooled, unseasoned portion), and small pieces of [gyudon](#rice-dishes) beef at dinner | Local supermarket, Shijo-Omiya area | n/a | 1,900 |
 
 Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 
@@ -1929,9 +1937,9 @@ Gojo shop to the Kiyomizu approach. The full trade-off is on Day [23](#day-23---
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Zaru soba (chilled buckwheat noodles) plus a matcha soft-serve cone | Higashiyama-ku, Sannenzaka/Ninenzaka lanes (shop unverified) | 650 | 2,300 |
-| Dinner | Obanzai set meal - Kyoto's home-style small-dish cooking, traditionally built from whatever the day's market offered rather than a fixed menu: simmered vegetables, a piece of grilled fish, tofu, and pickles served as a set of little dishes rather than one plate | Obanzai restaurant, Gion, Higashiyama-ku (restaurant name unverified) | 800 | 3,600 |
-| Infant food | Wakodo/Pigeon formula tin for the 12-month-old plus pouches; the 20-month-old eats rice, flaked fish, and simmered vegetables off the obanzai spread at dinner | Convenience store, Higashiyama-ku | n/a | 1,900 |
+| Lunch | Zaru [soba](#noodles) (chilled buckwheat noodles) plus a [matcha](#sweets-and-tea) soft-serve cone | Higashiyama-ku, Sannenzaka/Ninenzaka lanes (shop unverified) | 650 | 2,300 |
+| Dinner | [Obanzai](#regional-specialities) set meal - Kyoto's home-style small-dish cooking, traditionally built from whatever the day's market offered rather than a fixed menu: simmered vegetables, a piece of grilled fish, tofu, and pickles served as a set of little dishes rather than one plate | Obanzai restaurant, Gion, Higashiyama-ku (restaurant name unverified) | 800 | 3,600 |
+| Infant food | Wakodo/Pigeon formula tin for the 12-month-old plus pouches; the 20-month-old eats rice, flaked fish, and simmered vegetables off the [obanzai](#regional-specialities) spread at dinner | Convenience store, Higashiyama-ku | n/a | 1,900 |
 
 Adult kcal: 500 + 650 + 800 = **1,950/adult**.
 
@@ -2024,7 +2032,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Yatai lunch from Tenjin-ichi's food stalls: takoyaki (octopus dumplings), a warabimochi (bracken-starch jelly dusted with kinako soybean powder) cup, and a cup of Uji hojicha each | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | 700 | 3,600 |
+| Lunch | Yatai lunch from Tenjin-ichi's food stalls: [takoyaki](#street-snacks) (octopus dumplings), a [warabimochi](#sweets-and-tea) (bracken-starch jelly dusted with kinako soybean powder) cup, and a cup of Uji hojicha each | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | 700 | 3,600 |
 | Dinner | Chicken katsu and rice, miso soup, pickled vegetables - full price, bought too early (17:55) for any markdown | [Fresco Omiya](#kyoto-shopping-runs), Shimogyo-ku (1 min from Omiya Stn, open 24h) | 800 | 2,850 |
 | Infant food | Wakodo/Morinaga formula tin for the 12-month-old plus pouches; the 20-month-old eats rice, miso soup (cooled, low-salt portion), and small pieces of katsu off the family table | Drugstore near Shijo-Omiya | n/a | 2,100 |
 | Hangaku snack restock | Deli pastries and rice balls marked to 50% off after 20:00, bought on a solo adult trip once the infants are asleep; banked for the next few days' snacking, not part of tonight's kcal | [Gyomu Super Saiin](#kyoto-shopping-runs), Ukyo-ku (verified hours 9:00-21:00) | n/a (banked) | 800 |
@@ -2165,9 +2173,9 @@ here is "covered by pass."*
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet (rice, miso soup, natto, pickles, bread, coffee), included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Kakinoha-zushi (Nara specialty: vinegared rice topped with cured mackerel or salmon, wrapped and pressed in a persimmon leaf for preservation) plus a kudzu-mochi dessert (chilled jelly made from kudzu root, a Nara/Yoshino specialty, dusted with kinako soybean flour) | Restaurant near Nara Park, Nara | 650 | 2,700 |
-| Dinner | Katsu curry (breaded pork cutlet over curry rice), mild spice level | CoCo Ichibanya, Shijo-Omiya neighbourhood | 800 | 2,700 |
-| Infant food | Formula (Wakodo/Pigeon/Morinaga) and fruit/vegetable pouches for Infant A (~12mo); Infant B (~20mo) eats plain rice from the kakinoha-zushi (mackerel removed) and steamed vegetables off the family table | Conbini near hotel | n/a | 1,800 |
+| Lunch | [Kakinoha-zushi](#seafood-and-sushi) (Nara specialty: vinegared rice topped with cured mackerel or salmon, wrapped and pressed in a persimmon leaf for preservation) plus a [kudzu-mochi](#sweets-and-tea) dessert (chilled jelly made from kudzu root, a Nara/Yoshino specialty, dusted with kinako soybean flour) | Restaurant near Nara Park, Nara | 650 | 2,700 |
+| Dinner | [Katsu curry](#rice-dishes) (breaded pork cutlet over curry rice), mild spice level | CoCo Ichibanya, Shijo-Omiya neighbourhood | 800 | 2,700 |
+| Infant food | Formula (Wakodo/Pigeon/Morinaga) and fruit/vegetable pouches for Infant A (~12mo); Infant B (~20mo) eats plain rice from the [kakinoha-zushi](#seafood-and-sushi) (mackerel removed) and steamed vegetables off the family table | Conbini near hotel | n/a | 1,800 |
 
 Adult kcal: 500 + 650 + 800 = **1,950**.
 
@@ -2263,9 +2271,9 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet, included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Tea-house teishoku: matcha soba (green-tea-infused buckwheat noodles), tea-leaf tempura (whole tea leaves deep-fried in batter), and ochazuke (tea poured over rice) | Tea house near Uji Bridge, Uji | 700 | 3,600 |
-| Dinner | Yakitori (charcoal-grilled chicken skewers, ordered by the piece with each part of the bird named individually): momo (thigh), negima (thigh and leek), tsukune (minced chicken meatballs), kawa (crispy skin), and tebasaki (wings), plus a bowl of rice each | Torikizoku Shijo Omiya, 116 Nishiki Omiyacho, Nakagyo-ku, Kyoto (4F; postal code unverified) | 780 | 2,700 |
-| Infant food | Formula (Wakodo/Pigeon/Morinaga) and pouches for Infant A (~12mo); Infant B (~20mo) eats plain matcha soba noodles (rinsed, low-sodium) and pieces of tempura batter picked off the shell | Conbini near hotel | n/a | 1,800 |
+| Lunch | Tea-house [teishoku](#konbini-bento-and-set-meals): [matcha](#sweets-and-tea) [soba](#noodles) (green-tea-infused buckwheat noodles), tea-leaf tempura (whole tea leaves deep-fried in batter), and ochazuke (tea poured over rice) | Tea house near Uji Bridge, Uji | 700 | 3,600 |
+| Dinner | [Yakitori](#grilled-and-skewered) (charcoal-grilled chicken skewers, ordered by the piece with each part of the bird named individually): momo (thigh), negima (thigh and leek), tsukune (minced chicken meatballs), kawa (crispy skin), and tebasaki (wings), plus a bowl of rice each | Torikizoku Shijo Omiya, 116 Nishiki Omiyacho, Nakagyo-ku, Kyoto (4F; postal code unverified) | 780 | 2,700 |
+| Infant food | Formula (Wakodo/Pigeon/Morinaga) and pouches for Infant A (~12mo); Infant B (~20mo) eats plain [matcha](#sweets-and-tea) [soba](#noodles) noodles (rinsed, low-sodium) and pieces of tempura batter picked off the shell | Conbini near hotel | n/a | 1,800 |
 
 Adult kcal: 500 + 700 + 780 = **1,980**.
 
@@ -2369,8 +2377,8 @@ rest above - free, no separate stop and no schedule change.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet (rice, miso soup, natto, pickles, bread, coffee), included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Sake-lees teishoku: kasujiru (sake-lees and pork miso soup, made from the solid rice-and-yeast paste left over after pressing sake) with rice, pickles, and a small grilled fish | Restaurant near the Gekkeikan Okura Sake Museum, Chushojima, Fushimi-ku (address unverified) | 700 | 3,300 |
-| Dinner | Tonkotsu ramen with a side of pan-fried gyoza | Ippudo, near Shijo-Omiya | 800 | 2,700 |
+| Lunch | Sake-lees [teishoku](#konbini-bento-and-set-meals): [kasujiru](#regional-specialities) (sake-lees and pork miso soup, made from the solid rice-and-yeast paste left over after pressing sake) with rice, pickles, and a small grilled fish | Restaurant near the Gekkeikan Okura Sake Museum, Chushojima, Fushimi-ku (address unverified) | 700 | 3,300 |
+| Dinner | Tonkotsu [ramen](#noodles) with a side of pan-fried gyoza | Ippudo, near Shijo-Omiya | 800 | 2,700 |
 | Infant food | Formula (Wakodo/Pigeon/Morinaga) and vegetable pouches for Infant A (~12mo); Infant B (~20mo) eats plain rice, unsalted miso soup broth, and flaked grilled fish off the family table (no sake-lees dishes for either infant) | Conbini near hotel | n/a | 1,800 |
 
 Adult kcal: 500 + 700 + 800 = **2,000**.
@@ -2492,8 +2500,8 @@ this day would lose its headline, keeping the Nishijin weaving, the riverbank an
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet, included, last morning | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Zaru soba (chilled buckwheat noodles with dipping sauce) and a side of vegetable tempura | Nishijin neighbourhood, Kyoto (district; address unverified) | 650 | 2,400 |
-| Dinner | Farewell teishoku: grilled saba (mackerel), rice, miso soup, pickles, and a small seasonal vegetable side | Restaurant near Shijo-Omiya, Kyoto (address unverified) | 850 | 3,600 |
+| Lunch | Zaru [soba](#noodles) (chilled buckwheat noodles with dipping sauce) and a side of vegetable tempura | Nishijin neighbourhood, Kyoto (district; address unverified) | 650 | 2,400 |
+| Dinner | Farewell [teishoku](#konbini-bento-and-set-meals): grilled saba (mackerel), rice, miso soup, pickles, and a small seasonal vegetable side | Restaurant near Shijo-Omiya, Kyoto (address unverified) | 850 | 3,600 |
 | Infant food | Formula (Wakodo/Pigeon/Morinaga) and a vegetable puree pouch for Infant A (~12mo); Infant B (~20mo) eats flaked grilled saba (bones removed), plain rice, and steamed vegetables off the family table | Conbini near hotel | n/a | 1,800 |
 
 Adult kcal: 500 + 650 + 850 = **2,000**.
@@ -2619,8 +2627,8 @@ Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn Kyoto Shijo-Omiya buffet: rice, miso soup, natto, pickles, bread, coffee (last morning at that hotel) | included in the prior night's room rate | 550 | 0 |
-| Lunch | Tempura udon set with rice, pickles and a small side salad, station concourse teishoku counter | Hiroshima Stn concourse, Minami-ku | 650 | 1,950 |
-| Dinner | Tonkotsu ramen with a side of pan-fried gyoza, casual counter-seating shop | Hondori arcade area, Naka-ku | 750 | 2,550 |
+| Lunch | Tempura [udon](#noodles) set with rice, pickles and a small side salad, station concourse [teishoku](#konbini-bento-and-set-meals) counter | Hiroshima Stn concourse, Minami-ku | 650 | 1,950 |
+| Dinner | Tonkotsu [ramen](#noodles) with a side of pan-fried gyoza, casual counter-seating shop | Hondori arcade area, Naka-ku | 750 | 2,550 |
 | Infant food | Formula (Wakodo or Pigeon, combined feeds for both infants), vegetable-and-chicken puree pouches (Wakodo Rakuraku or Pigeon) for the 12-month-old; banana and steamed sweet potato off the family table for the 20-month-old | Conbini near hotel | n/a | 1,800 |
 
 Adult kcal: 550 + 650 + 750 = **1,950**.
@@ -2722,9 +2730,9 @@ by the rail pass beyond the island admissions.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn Hiroshima buffet: rice, miso soup, natto, pickles, bread, coffee | at hotel | 550 | 0 |
-| Lunch | Anago-meshi (grilled conger eel over rice, a Miyajima specialty) and grilled Hiroshima-bay oysters (Setouchi's well-known shellfish, charcoal-grilled on the street) | Omotesando shopping street, Miyajima-cho, Hatsukaichi (address unverified - street stalls) | 700 | 4,200 |
-| Dinner | Build-your-own Hiroshima-style okonomiyaki: layered on the griddle rather than mixed into a batter the way Osaka's version is - a base crepe topped with cabbage, bean sprouts, pork belly and a fried egg, with a full portion of yakisoba noodles pressed in as its own layer, finished with a thick savory-sweet sauce | Okonomimura, 5-13 Shintenchi, Naka-ku, Hiroshima 730-0034 | 750 | 2,700 |
-| Infant food | Purees (Wakodo or Pigeon) and finger food for the 12-month-old; rice and small bites of grilled oyster and okonomiyaki egg/cabbage off the family plate for the 20-month-old, plus a momiji manju (maple-leaf-shaped sponge cake, usually filled with sweet red bean paste) as a treat | Conbini + Miyajima stalls | n/a | 1,900 |
+| Lunch | [Anago-meshi](#regional-specialities) (grilled conger eel over rice, a Miyajima specialty) and grilled Hiroshima-bay oysters (Setouchi's well-known shellfish, charcoal-grilled on the street) | Omotesando shopping street, Miyajima-cho, Hatsukaichi (address unverified - street stalls) | 700 | 4,200 |
+| Dinner | Build-your-own Hiroshima-style [okonomiyaki](#regional-specialities): layered on the griddle rather than mixed into a batter the way Osaka's version is - a base [crepe](#street-snacks) topped with cabbage, bean sprouts, pork belly and a fried egg, with a full portion of [yakisoba](#noodles) noodles pressed in as its own layer, finished with a thick savory-sweet sauce | Okonomimura, 5-13 Shintenchi, Naka-ku, Hiroshima 730-0034 | 750 | 2,700 |
+| Infant food | Purees (Wakodo or Pigeon) and finger food for the 12-month-old; rice and small bites of grilled oyster and [okonomiyaki](#regional-specialities) egg/cabbage off the family plate for the 20-month-old, plus a [momiji manju](#sweets-and-tea) (maple-leaf-shaped sponge cake, usually filled with sweet red bean paste) as a treat | Conbini + Miyajima stalls | n/a | 1,900 |
 
 Adult kcal: 550 + 700 + 750 = **2,000**.
 
@@ -2826,7 +2834,7 @@ Shukkei-en garden and Hiroshima Castle.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn Hiroshima buffet: rice, miso soup, natto, pickles, bread, coffee | at hotel | 550 | 0 |
-| Lunch | Kake udon with a chicken tempura and a rice ball, casual teishoku counter | Hondori arcade, Naka-ku | 700 | 2,250 |
+| Lunch | Kake [udon](#noodles) with a chicken tempura and a rice ball, casual [teishoku](#konbini-bento-and-set-meals) counter | Hondori arcade, Naka-ku | 700 | 2,250 |
 | Dinner | Izakaya-style set meal: grilled fish, rice, miso soup, and small seasonal vegetable side dishes | near hotel, Minami-ku | 750 | 2,850 |
 | Infant food | Purees (Wakodo or Morinaga pouches) for the 12-month-old; rice, miso soup solids, and small pieces of grilled fish and vegetables off the family table for the 20-month-old | Conbini near hotel | n/a | 1,900 |
 
@@ -2922,9 +2930,9 @@ at Dotonbori.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn Hiroshima buffet: rice, miso soup, natto, pickles, bread, coffee (before checkout) | at hotel | 550 | 0 |
-| Lunch | Kake udon with a chicken tempura and an onigiri, self-serve udon counter (e.g. Marugame Seimen) | near Namba Stn | 700 | 2,250 |
-| Dinner | Osaka-style street food: takoyaki (octopus-filled batter balls, griddled and topped with sauce, mayonnaise and bonito flakes) plus a side of negiyaki or a kushikatsu skewer (e.g. Takoyaki Doraku Wanaka) | Dotonbori, Chuo-ku | 750 | 2,400 |
-| Infant food | Purees (Pigeon or Morinaga pouches) for the 12-month-old; soft rice, egg, and small cooled pieces of takoyaki filling off the family plate for the 20-month-old | Conbini near hotel | n/a | 1,900 |
+| Lunch | Kake [udon](#noodles) with a chicken tempura and an [onigiri](#konbini-bento-and-set-meals), self-serve udon counter (e.g. Marugame Seimen) | near Namba Stn | 700 | 2,250 |
+| Dinner | Osaka-style street food: [takoyaki](#street-snacks) (octopus-filled batter balls, griddled and topped with sauce, mayonnaise and bonito flakes) plus a side of negiyaki or a [kushikatsu](#grilled-and-skewered) skewer (e.g. Takoyaki Doraku Wanaka) | Dotonbori, Chuo-ku | 750 | 2,400 |
+| Infant food | Purees (Pigeon or Morinaga pouches) for the 12-month-old; soft rice, egg, and small cooled pieces of [takoyaki](#street-snacks) filling off the family plate for the 20-month-old | Conbini near hotel | n/a | 1,900 |
 
 Adult kcal: 550 + 700 + 750 = **2,000**.
 
@@ -3038,8 +3046,8 @@ Active out-of-lodging time: about 8h20 (6h10 before the rest block, 2h10 after),
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet: rice, miso soup, natto, pickles, sliced bread, coffee | Toyoko Inn Osaka Namba | 500 | 0 (included) |
 | Lunch | Street-stall grazing at Nankinmachi (Kobe Chinatown): pork buns, ebi mayo buns, char siu skewers | Nankinmachi, Sakaemachi-dori, Chuo-ku, Kobe 650-0023 | 700 | 2,700 |
-| Dinner | Takoyaki (griddled battered octopus dumplings - the molten center stays scalding for a minute or two after serving, so let it cool before handing one to a toddler) plus a mixed-style okonomiyaki to share: in Osaka the batter, cabbage and other ingredients are all stirred together before cooking, unlike the Hiroshima-style version this trip ate on Days 25-26, which is built in stacked layers with a separate yakisoba noodle layer underneath - same name, genuinely different dish | Dotonbori food stalls, Chuo-ku, Osaka (individual stall addresses unverified) | 750 | 3,200 |
-| Infant food | Formula (Wakodo or Pigeon), 3 feeds; Morinaga stage-2 pouches for Infant A (~12mo); Infant B (~20mo) eats off the table - Nankinmachi bun fillings torn small, plain rice, banana, and cooled takoyaki with the crisp exterior only | - | n/a | 1,900 |
+| Dinner | [Takoyaki](#street-snacks) (griddled battered octopus dumplings - the molten center stays scalding for a minute or two after serving, so let it cool before handing one to a toddler) plus a mixed-style [okonomiyaki](#regional-specialities) to share: in Osaka the batter, cabbage and other ingredients are all stirred together before cooking, unlike the Hiroshima-style version this trip ate on Days 25-26, which is built in stacked layers with a separate [yakisoba](#noodles) noodle layer underneath - same name, genuinely different dish | Dotonbori food stalls, Chuo-ku, Osaka (individual stall addresses unverified) | 750 | 3,200 |
+| Infant food | Formula (Wakodo or Pigeon), 3 feeds; Morinaga stage-2 pouches for Infant A (~12mo); Infant B (~20mo) eats off the table - Nankinmachi bun fillings torn small, plain rice, banana, and cooled [takoyaki](#street-snacks) with the crisp exterior only | - | n/a | 1,900 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -3131,9 +3139,9 @@ and a Dotonbori evening.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet: rice, miso soup, natto, pickles, sliced bread, coffee | Toyoko Inn Osaka Namba | 500 | 0 (included) |
-| Lunch | Grazing lunch at Kuromon Ichiba, a roughly 580m covered market of about 170 stalls; historically a wholesale fish and produce market feeding local restaurants, most stalls today sell grill-it-and-eat-it single portions aimed squarely at visitors, which is the honest reason prices run higher than a neighborhood greengrocer - nigiri sushi, grilled wagyu skewers, tamagoyaki, fresh oysters on the half shell, eaten standing at the counter | Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo-ku, Osaka 542-0073 | 700 | 5,200 |
-| Dinner | Kushikatsu set - pork, chicken, lotus root, quail egg and cheese skewers, deep-fried and dipped once each into the shared sauce pot on the counter. The no-double-dipping rule is strictly enforced here: a skewer already bitten never goes back in the communal pot; the free shredded cabbage on the counter is used as a scoop for extra sauce instead | Kushikatsu Daruma, 1-6-3 Dotonbori, Chuo-ku, Osaka 542-0071 | 750 | 5,300 |
-| Infant food | Formula (Wakodo or Pigeon), 2-3 feeds; Morinaga pouches for Infant A (~12mo); Infant B (~20mo) eats off the table - tamagoyaki, soft sushi rice, plain grilled skewer meat, and kushikatsu with the sauce wiped off | - | n/a | 1,900 |
+| Lunch | Grazing lunch at Kuromon Ichiba, a roughly 580m covered market of about 170 stalls; historically a wholesale fish and produce market feeding local restaurants, most stalls today sell grill-it-and-eat-it single portions aimed squarely at visitors, which is the honest reason prices run higher than a neighborhood greengrocer - [nigiri](#seafood-and-sushi) sushi, grilled wagyu skewers, tamagoyaki, fresh oysters on the half shell, eaten standing at the counter | Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo-ku, Osaka 542-0073 | 700 | 5,200 |
+| Dinner | [Kushikatsu](#grilled-and-skewered) set - pork, chicken, lotus root, quail egg and cheese skewers, deep-fried and dipped once each into the shared sauce pot on the counter. The no-double-dipping rule is strictly enforced here: a skewer already bitten never goes back in the communal pot; the free shredded cabbage on the counter is used as a scoop for extra sauce instead | Kushikatsu Daruma, 1-6-3 Dotonbori, Chuo-ku, Osaka 542-0071 | 750 | 5,300 |
+| Infant food | Formula (Wakodo or Pigeon), 2-3 feeds; Morinaga pouches for Infant A (~12mo); Infant B (~20mo) eats off the table - tamagoyaki, soft [sushi](#seafood-and-sushi) rice, plain grilled skewer meat, and [kushikatsu](#grilled-and-skewered) with the sauce wiped off | - | n/a | 1,900 |
 
 Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
@@ -3205,7 +3213,7 @@ No lodging charge - checked out this morning. (Night 3 of 3 at Toyoko Inn Osaka 
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet, final morning: rice, miso soup, natto, pickles, sliced bread, coffee | Toyoko Inn Osaka Namba | 500 | 0 (included) |
-| Lunch | Light pre-flight meal - a bowl of ramen or Japanese curry rice at an airside food court, timed before boarding an international flight rather than relying on airline catering | Kansai International Airport, Terminal 1, 1 Senshu Kuko Kita, Izumisano, Osaka 549-0001 | 700 | 3,600 |
+| Lunch | Light pre-flight meal - a bowl of [ramen](#noodles) or Japanese curry rice at an airside food court, timed before boarding an international flight rather than relying on airline catering | Kansai International Airport, Terminal 1, 1 Senshu Kuko Kita, Izumisano, Osaka 549-0001 | 700 | 3,600 |
 | Dinner | In-flight meal, international carrier (not costed in this itinerary) | - | 750 | 0 |
 | Infant food | Formula (Wakodo or Pigeon) and Morinaga pouches for Infant A packed for the flight; Infant B eats off the airport meal and packed snacks - soft rice, banana, crackers | - | n/a | 1,400 |
 
@@ -3624,6 +3632,19 @@ Regional specialities are listed separately at the end.
 | Takoyaki, warabimochi, hojicha | [19](#day-19---sunday-october-25-2026---kyoto) | Tenjin-ichi market, Kitano Tenmangu | |
 | Takoyaki, plus negiyaki or kushikatsu | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Dotonbori, Chuo-ku, Osaka | |
 | Takoyaki and okonomiyaki | [28](#day-28---tuesday-november-3-2026---osaka) | Dotonbori, Chuo-ku, Osaka | |
+
+#### Konbini, bento and set meals
+
+The everyday backbone of eating in Japan, and what most of this trip's lunches are.
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Onigiri, rice balls with a filling wrapped in nori | [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival), [2](#day-2---thursday-october-8-2026---tokyo), [5](#day-5---sunday-october-11-2026---tokyo), [16](#day-16---thursday-october-22-2026---kyoto), [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Conbini and station counters throughout | ¥130-200 each, the cheapest portable food in Japan and sold everywhere |
+| Konbini bento | [2](#day-2---thursday-october-8-2026---tokyo), [5](#day-5---sunday-october-11-2026---tokyo), [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko), [16](#day-16---thursday-october-22-2026---kyoto), [19](#day-19---sunday-october-25-2026---kyoto), [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | FamilyMart, Lawson and 7-Eleven throughout | ¥580-750, heated at the counter on request; the same boxes go to half price late in the evening |
+| Eki-ben, the station and train bento | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko), [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto), [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Station concourses before the long legs | ¥900-1,500, regionally specific and made to be eaten cold on a train |
+| Karaage, marinated fried chicken | [3](#day-3---friday-october-9-2026---tokyo), [16](#day-16---thursday-october-22-2026---kyoto) | Conbini hot counters and supermarket delis | Sold by the piece at conbini counters, by weight at supermarket delis where it is a common half-price item |
+| Teishoku, a set meal of a main with rice, miso soup and pickles | [4](#day-4---saturday-october-10-2026---tokyo), [17](#day-17---friday-october-23-2026---kyoto), [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji), [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district), [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing), [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Yayoiken-style chains and neighbourhood diners | ¥800-1,200, the standard Japanese lunch format and the most reliable way to eat a balanced meal cheaply |
+| Grilled mackerel or salmon | 16, and most self-catered breakfasts | Supermarket fish counters, and teishoku sets | A fillet is ¥200-350 at a supermarket, which is what makes the self-catered breakfasts work |
 
 #### Sweets and tea
 
@@ -4756,7 +4777,128 @@ Phone calls and bookings are listed in the advance-booking part.
 
 ---
 
-## Appendix H: Why these dates
+## Appendix H: Transport
+
+Everything about moving around this trip lives here: the rail pass math, the five big intercity legs, the two airport transfers, how each base city is worked day to day, how the two infants ride free almost everywhere, and what the whole 30 days actually costs to move five people and a stroller around Japan.
+
+### 1. The rail pass decision
+
+The trip buys one regional rail pass: the **JR Kansai-Hiroshima Area Pass**, 5 days, ¥17,000 per adult, ¥51,000 for the three adults. It is purchased at Kyoto Station on the morning of day 24 and is valid 30 October through 3 November (days 24-28).
+
+What it covers:
+- Kyoto to Hiroshima, Sanyo Shinkansen (day 24)
+- Hiroshima's local JR line out to Miyajimaguchi (day 25)
+- The JR Miyajima ferry (day 25)
+- Hiroshima to Shin-Osaka, Sanyo/Tokaido Shinkansen (day 27)
+- A day trip out of Osaka to Kobe on its final valid day (day 28)
+
+What it does not cover: any Kyoto transit before day 24 (city buses, Hankyu, the subway, Kintetsu, Keihan), the Hiroden streetcar in Hiroshima, Osaka Metro on days 27-29, the Nankai Airport Line on day 30, or anything in the Tokyo/Kawaguchiko segment.
+
+The arithmetic against point-to-point walk-up fares for the same legs:
+
+| Leg the pass covers | Walk-up adult fare | Walk-up party (x3) |
+|---|---|---|
+| Kyoto -> Hiroshima shinkansen | ¥10,770 | ¥32,310 |
+| Hiroshima local JR + Miyajima ferry round trip | ~¥820 | ~¥2,460 |
+| Hiroshima -> Shin-Osaka shinkansen | ¥9,710 | ¥29,130 |
+| **Subtotal, three legs only** | | **¥63,900** |
+
+Those three legs alone would cost ¥63,900 walk-up against a ¥51,000 pass, a saving of ¥12,900 for three adults before the day 28 Kobe day trip is even counted for free. The two shinkansen legs by themselves (¥61,440 combined) are most of that gap on their own.
+
+Against the alternative of a nationwide JR Pass at ¥105,000 per adult (¥315,000 for three adults, since the pass has no group rate), the regional pass is not close: the trip's need for long-distance rail is concentrated in this one stretch of legs rather than spread across weeks of shinkansen travel, so paying for a pass that covers the whole country buys nothing extra here.
+
+### 2. The five intercity moves
+
+| Leg | Day | Mode | Duration | Adult fare ¥ | Party ¥ | Notes |
+|---|---|---|---|---|---|---|
+| Tokyo (Shinjuku, Busta) -> Kawaguchiko | 11 | Highway bus, Fujikyu/Keio, all reserved seats | 1h45 | 2,000 (online) | 8,100 | Paid seat bought for the 20-month-old; the 12-month-old rides as a lap infant |
+| Kawaguchiko -> Mishima -> Kyoto | 14 | Mishima-Kawaguchiko Liner (Fujikyu, all seats reserved), then Tokaido Shinkansen Hikari (unreserved) | 1h25 + 1h50 | 2,500 + 10,780 | 10,000 + 32,340 = 42,340 | All 5 seats reserved on the bus, both infants included, since it is a fully-reserved coach with no lap travel; the shinkansen leg is unreserved and both infants ride free; allow 20-30 min to transfer at Mishima |
+| Kyoto -> Hiroshima | 24 | Sanyo Shinkansen, Hikari/Sakura, unreserved | 1h40 | 10,770 (walk-up) | 0, covered by pass | The JR Kansai-Hiroshima Area Pass is bought this morning and charged in full (¥51,000 for three) against this and the remaining pass-covered legs |
+| Hiroshima -> Osaka | 27 | Sanyo/Tokaido Shinkansen (unreserved) + Osaka Metro Midosuji Line | 1h30 + 0h20 | 9,710 (walk-up) + 290 | 0 (pass) + 870 = 870 | The shinkansen leg would run ¥29,130 for three adults at walk-up fares; only the Shin-Osaka to Namba subway hop is paid out of pocket |
+| Osaka (Namba) -> Kansai Airport | 30 | Nankai Airport Line, rapid express | 0h45 | 930 | 2,790 | The JR Kansai-Hiroshima Area Pass expired at the end of day 28, so this fare is paid in full |
+
+### 3. Airport transfers
+
+**Arrival, day 1: Narita to Tokyo.** The Keisei Access Express runs Narita Airport to Keisei-Ueno in about 1h05 for ¥1,190 per adult, ¥3,570 for the party. Both infants ride as lap infants with no seat reservation needed, and the train's wide corridors and step-free boarding work fine with a stroller straight off an international flight.
+
+**Departure, day 30: Namba to Kansai Airport.** The Nankai Airport Line's rapid express covers Namba to Kansai Airport Station in about 45 minutes for ¥930 per adult, ¥2,790 for the party. The JR Haruka covers the same route but runs roughly double the fare per adult, and Nankai needs no advance reservation. International check-in for a party of five with a stroller and checked bags wants about three hours ahead of departure, so the day 30 schedule builds that buffer in rather than assuming a shorter window.
+
+### 4. Getting around in each city
+
+#### Tokyo
+The default is the Tokyo Metro and JR Yamanote/Keihin-Tohoku loop, paid per ride on an IC card rather than a day pass: fares run ¥150-240 per adult depending on the hop (Yamanote hops as low as ¥150-210, Metro lines like Ginza and Toei Mita/Oedo at ¥180-240). Day trips add the Yurikamome to Odaiba/Toyosu, the Minato Mirai Line into Yokohama, and the Enoden and a 1-day "Noriorikun" pass (¥800/adult) for Kamakura's coast. The Sumida River water bus (Tokyo Cruise) has been suspended fleet-wide since January 2026 with an unconfirmed restart date; the fallback is a direct JR Yamanote/Keihin-Tohoku ride, about the same total time minus the river view. Infants ride free throughout; party cost is simply the adult fare times three.
+
+#### Kawaguchiko
+The highway bus in (day 11) and the Mishima-Kawaguchiko Liner out (day 14) are both fully reserved coaches, not local transit. Around the lake itself, the Fuji Five Lakes sightseeing bus's 2-day Red/Green/Blue Line pass (¥1,500/adult, ¥4,500 for the party) covers every ride across days 12-13, cheaper than paying per boarding given how many stops the north- and west-shore days make. The Fuji Kyuko Line local train reaches Shimoyoshida for Chureito Pagoda. The ryokan's own free shuttle bus handles the last mile to and from Lakeland Hotel Mizunosato on day 13-14.
+
+#### Kyoto
+Kyoto is a bus city, not a subway city: most of the ten-night stay moves on the Kyoto City Bus network, not the two-line subway. The old ¥700 all-day bus pass was discontinued in autumn 2023, so there is no day pass to buy - every bus ride here is priced as an individual IC-card (ICOCA/Suica) fare, a flat ¥230 per adult per boarding. The subway (Karasuma and Tozai lines) and the Hankyu Kyoto Line, which runs a station away from the Toyoko Inn Shijo-Omiya, cover specific routes like Nijo Castle, the Imperial Palace, and Arashiyama. Day trips add Kintetsu's kyuko (rapid express) for Nara, which undercuts the JR Nara Line on both fare and time, the JR Nara Line itself for Uji and Fushimi Inari, and the Keihan Main Line for the Fushimi sake district and Gion. Infants ride free on all of these; party cost is the adult fare times three.
+
+#### Hiroshima
+The Hiroden streetcar is a flat citywide fare regardless of distance, ¥220 per adult per ride, which makes it the cheap, easy way to cover Peace Memorial Park, Shukkei-en, and Hiroshima Castle without worrying about zones. The JR Sanyo Line local train and the JR Miyajima ferry reach Miyajima, both covered by the area pass through day 28. Infants ride free on the streetcar and the ferry alike.
+
+#### Osaka
+Osaka Metro (Midosuji, Sennichimae, Sakaisuji, and Tanimachi lines) is the backbone, at IC-card fares of roughly ¥240-290 per adult per ride. Namba, Dotonbori, Shinsekai, and Kuromon Ichiba sit close enough together that several connections between them are made on foot rather than by train. The one out-of-town hop, Osaka to Kobe on day 28, rides the JR Kobe Line Special Rapid on the area pass's final valid day, at ¥0.
+
+### 5. How infants are charged
+
+Both infants ride free on JR including the shinkansen, on the Tokyo Metro and Toei lines, on Osaka Metro, on Kyoto city buses, and on the JR Miyajima ferry - the standard policy of up to two free young children per fare-paying adult, and this party travels with three adults. Party transit cost across the trip is simply the adult fare multiplied by three; the two infants add nothing to nearly every fare in this document.
+
+The exception is highway buses. Fujikyu and Keio require a paid seat for a child who can sit independently and can refuse boarding to a child riding on a lap, so both bus legs budget a paid seat for the 20-month-old while the 12-month-old rides as a lap infant:
+- Day 11, Tokyo to Kawaguchiko: the 20-month-old's seat is part of the ¥8,100 party fare.
+- Day 14, Kawaguchiko to Mishima: this coach is fully reserved with no lap travel at all, so all five seats, both infants included, are booked and paid, inside the ¥10,000 party fare.
+
+### 6. Luggage, strollers and seat reservations
+
+Days 14, 24, and 27 all ride unreserved shinkansen cars. With five people and two infants, an unreserved car offers no guarantee of finding five adjacent seats, particularly on a busy Friday (day 24) or a Monday transfer day (day 27). Seat reservations cost nothing extra under the JR Kansai-Hiroshima Area Pass on days 24 and 27, so there is no reason not to book them ahead once the pass is in hand; day 14 falls before the pass is purchased, so that leg stays genuinely unreserved.
+
+Any checked bag with total dimensions (height plus width plus depth) over 160cm needs an oversized-baggage reservation on the Tokaido and Sanyo Shinkansen, or a ¥1,000 on-the-spot fee paid to staff without one. Strollers are exempt from this rule regardless of size and travel folded in the vestibule or overhead without any reservation or fee.
+
+Most of the stations and towers this trip uses (Skytree, Tokyo Tower, Osaka Castle's keep, the Kawaguchiko ropeway stations) are lift-served, which matters more than it might seem: a folded stroller and a change of floor are routine, not an obstacle, wherever an elevator exists. Where one doesn't (Hase-dera's terraced garden, Fushimi Inari's summit stairs, Chureito Pagoda's 398 steps, Kiyomizu-dera's approach lanes, Ryoan-ji's shoes-off veranda), the trip relies on the carrier instead and simply parks the stroller.
+
+That pairing, a single compact stroller plus one carrier rather than a double stroller, is what makes the carrier-only stretches workable at all: one adult can fold the stroller and carry a child through a narrow lane or a flight of stairs while the rest of the party waits or continues on ahead, something a double stroller could not do at any of those stops.
+
+### 7. What the transport actually costs
+
+| Day | ¥ |
+|---|---|
+| 1 | 3,570 |
+| 2 | 1,800 |
+| 3 | 900 |
+| 4 | 4,530 |
+| 5 | 1,350 |
+| 6 | 540 |
+| 7 | 8,220 |
+| 8 | 4,020 |
+| 9 | 6,060 |
+| 10 | 2,520 |
+| 11 | 10,020 |
+| 12 | 4,500 |
+| 13 | 0 |
+| 14 | 43,030 |
+| 15 | 2,280 |
+| 16 | 6,160 |
+| 17 | 2,040 |
+| 18 | 2,070 |
+| 19 | 3,540 |
+| 20 | 4,830 |
+| 21 | 2,130 |
+| 22 | 2,640 |
+| 23 | 2,070 |
+| 24 | 52,350 |
+| 25 | 0 |
+| 26 | 1,320 |
+| 27 | 870 |
+| 28 | 2,160 |
+| 29 | 2,250 |
+| 30 | 2,790 |
+| **Total** | **180,560** |
+
+The trip's transport total is **¥180,560** against a planning envelope of ¥176,000, which puts it about ¥4,560 over, roughly 2.6% above the envelope. The two big shinkansen-and-bus transfer days, day 14 (¥43,030) and day 24 (¥52,350, including the ¥51,000 rail pass purchase), together account for the large majority of the entire trip's transport spend; every other day sits well under ¥10,000.
+
+---
+
+## Appendix I: Why these dates
 
 #### The window: 7 October - 5 November 2026
 
@@ -4824,7 +4966,7 @@ with two children under two, in that order.
 
 ---
 
-## Appendix I: Why this route
+## Appendix J: Why this route
 
 Tokyo (10 nights) to Kawaguchiko (3) to Kyoto (10) to Hiroshima (3) to Osaka (3),
 flying out of Kansai.
@@ -4849,7 +4991,7 @@ pass is cheaper than the two shinkansen tickets alone.
 
 ---
 
-## Appendix J: How the money works
+## Appendix K: How the money works
 
 #### Allocation
 
@@ -4941,7 +5083,7 @@ thirty days, and almost nothing in fares or admissions.
 
 ---
 
-## Appendix K: Japan with a 12-month-old and a 20-month-old
+## Appendix L: Japan with a 12-month-old and a 20-month-old
 
 **What is free.** Both children ride free on JR including shinkansen, on the Tokyo Metro
 and Toei, Osaka Metro, Kyoto city buses, and the Miyajima ferry. Under-sixes are free at
@@ -4991,7 +5133,7 @@ with what it is and why it runs long, and each still contains its rest block. If
 is going badly, the honest response is to drop its last activity rather than push
 through; the day notes name the item to cut where there is an obvious one.
 
-## Appendix L: How 2,000 calories a day actually gets bought
+## Appendix M: How 2,000 calories a day actually gets bought
 
 Each adult day sums to 1,950-2,100 kcal across the meal rows, built from four levers:
 
@@ -5004,7 +5146,7 @@ The trip is not planned to eat like this every day. Osaka's last full day, the H
 okonomiyaki night and several Kyoto dinners are deliberately restaurant meals. The
 self-catering floor is what buys them.
 
-## Appendix M: Confidence and sources
+## Appendix N: Confidence and sources
 
 **Verified against live sources:** exchange rate, typhoon seasonality, 2026 koyo
 forecast dates, Japanese public holidays, Golden Week and Obon and Silver Week dates,

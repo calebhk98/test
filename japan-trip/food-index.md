@@ -70,6 +70,19 @@ Regional specialities are listed separately at the end.
 | Takoyaki, plus negiyaki or kushikatsu | 27 | Dotonbori, Chuo-ku, Osaka | |
 | Takoyaki and okonomiyaki | 28 | Dotonbori, Chuo-ku, Osaka | |
 
+### Konbini, bento and set meals
+
+The everyday backbone of eating in Japan, and what most of this trip's lunches are.
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Onigiri, rice balls with a filling wrapped in nori | 1, 2, 5, 16, 27 | Conbini and station counters throughout | ¥130-200 each, the cheapest portable food in Japan and sold everywhere |
+| Konbini bento | 2, 5, 11, 16, 19, 22 | FamilyMart, Lawson and 7-Eleven throughout | ¥580-750, heated at the counter on request; the same boxes go to half price late in the evening |
+| Eki-ben, the station and train bento | 11, 14, 24, 27 | Station concourses before the long legs | ¥900-1,500, regionally specific and made to be eaten cold on a train |
+| Karaage, marinated fried chicken | 3, 16 | Conbini hot counters and supermarket delis | Sold by the piece at conbini counters, by weight at supermarket delis where it is a common half-price item |
+| Teishoku, a set meal of a main with rice, miso soup and pickles | 4, 17, 21, 22, 23, 24, 26 | Yayoiken-style chains and neighbourhood diners | ¥800-1,200, the standard Japanese lunch format and the most reliable way to eat a balanced meal cheaply |
+| Grilled mackerel or salmon | 16, and most self-catered breakfasts | Supermarket fish counters, and teishoku sets | A fillet is ¥200-350 at a supermarket, which is what makes the self-catered breakfasts work |
+
 ### Sweets and tea
 
 | What | Day | Where | Note |

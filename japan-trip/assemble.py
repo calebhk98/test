@@ -103,18 +103,19 @@ for letter, name, fn in [("D", "Hotels and lodging", "hotels.md"),
                          ("E", "Advance booking", "advance-booking.md"),
                          ("F", "Shopping lists and supply runs", "shopping-lists.md"),
                          ("G", "Open decisions", "open-decisions.md"),
-                         ("H", "Why these dates", "why-dates.md"),
-                         ("I", "Why this route", "why-route.md"),
-                         ("J", "How the money works", "money.md")]:
+                         ("H", "Transport", "transport.md"),
+                         ("I", "Why these dates", "why-dates.md"),
+                         ("J", "Why this route", "why-route.md"),
+                         ("K", "How the money works", "money.md")]:
     body += ["", "---", "", f"## Appendix {letter}: {name}", "",
              demote((ROOT / fn).read_text(), 1)]
 
 app = (ROOT / "99-appendix.md").read_text()
-for old, new_h in [(r"^##\s*Appendix B\..*$", "## Appendix K: Japan with a 12-month-old and a 20-month-old"),
-                   (r"^##\s*Appendix C\..*$", "## Appendix L: How 2,000 calories a day actually gets bought"),
-                   (r"^##\s*Appendix D\..*$", "## Appendix M: Confidence and sources")]:
+for old, new_h in [(r"^##\s*Appendix B\..*$", "## Appendix L: Japan with a 12-month-old and a 20-month-old"),
+                   (r"^##\s*Appendix C\..*$", "## Appendix M: How 2,000 calories a day actually gets bought"),
+                   (r"^##\s*Appendix D\..*$", "## Appendix N: Confidence and sources")]:
     app = re.sub(old, new_h, app, flags=re.M)
-m = re.search(r"^## Appendix K:", app, re.M)
+m = re.search(r"^## Appendix L:", app, re.M)
 body += ["", "---", "", app[m.start():].strip()]
 
 doc = "\n".join(body)
@@ -245,6 +246,54 @@ start = doc.index("## Appendix A: Topic index")
 end = doc.index("## Appendix C: The five places")
 section = re.sub(r"(\|\s)([\d,\s/]+?)(\s\|)", link_day_cell, doc[start:end])
 doc = doc[:start] + section + doc[end:]
+
+# Link dish names inside each day's Meals table to their food-index section.
+FOOD_KEYWORDS = {
+    "Noodles": ["houtou", "yakisoba", "ramen", "udon", "soba"],
+    "Rice dishes": ["katsudon", "katsu curry", "gyudon", "shirasu-don", "fried rice", "donburi"],
+    "Grilled and skewered": ["yakitori", "kushikatsu", "ika-yaki", "negiyaki", "skewer"],
+    "Seafood and sushi": ["kakinoha-zushi", "kaiten-zushi", "nigiri", "sushi", "sashimi"],
+    "Hot pot": ["yosenabe", "shabu-shabu", "nabe"],
+    "Street snacks": ["menchi-katsu", "nikuman", "takoyaki", "taiyaki", "croquette", "senbei", "crepe"],
+    "Sweets and tea": ["mitarashi dango", "momiji manju", "warabimochi", "kudzu-mochi",
+                        "wagashi", "matcha", "dango", "hojicha", "mochi"],
+    "Regional specialities": ["okonomiyaki", "obanzai", "yudofu", "kaiseki", "kasujiru", "anago-meshi"],
+    "Konbini, bento and set meals": ["eki-ben", "onigiri", "teishoku", "karaage", "tonkatsu", "bento"],
+}
+food_anchor = {sec: anchors.get(sec) for sec in FOOD_KEYWORDS}
+# longest keywords first so "mitarashi dango" wins over "dango"
+KEYWORDS = sorted(((kw, sec) for sec, kws in FOOD_KEYWORDS.items() for kw in kws),
+                  key=lambda kv: -len(kv[0]))
+
+MEAL_HDR = "| Meal | What / Where | Address or store | kcal/adult | Cost (¥) |"
+p2s2 = re.search(r"^# Days 1-10\b", doc, re.M).start()
+p2e2 = doc.index("# Appendices")
+seg2 = doc[p2s2:p2e2]
+food_links = 0
+out2, in_meals = [], False
+for line in seg2.split("\n"):
+    if line.strip() == MEAL_HDR:
+        in_meals = True; out2.append(line); continue
+    if in_meals:
+        if not line.startswith("|"):
+            in_meals = False; out2.append(line); continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 2 or set(cells[0]) <= set("-: "):
+            out2.append(line); continue
+        cell, used = cells[1], set()
+        for kw, sec in KEYWORDS:
+            a = food_anchor.get(sec)
+            if not a or sec in used:
+                continue
+            pat = re.compile(r"(?<!\[)\b(" + re.escape(kw) + r")\b(?![^\[]*\]\()", re.I)
+            cell, n = pat.subn(lambda m: f"[{m.group(1)}](#{a})", cell, count=1)
+            if n:
+                used.add(sec); food_links += n
+        cells[1] = cell
+        out2.append("| " + " | ".join(cells) + " |"); continue
+    out2.append(line)
+doc = doc[:p2s2] + "\n".join(out2) + doc[p2e2:]
+print(f"dish names linked to the food index: {food_links}")
 
 # Link each day's Hotel field to its entry in the hotels appendix.
 def link_hotel(m):
