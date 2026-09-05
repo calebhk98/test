@@ -774,7 +774,7 @@ traditional garden.
 | 08:50 | 1h00 | Activity | Cup Noodles Museum, incl. My CUPNOODLES Factory hands-on |
 | 09:50 | 0h35 | Activity | Landmark Tower Sky Garden observation deck |
 | 10:25 | 0h20 | Transit | Minato Mirai -> Motomachi-Chukagai (Chinatown), Minato Mirai Line |
-| 10:45 | 0h45 | Food | Lunch, Yokohama Chinatown sit-down set course |
+| 10:45 | 0h45 | Food | Lunch - nikuman and steamed bun grazing, Yokohama Chinatown |
 | 11:30 | 0h20 | Transit | Chinatown -> Sankeien, bus |
 | 11:50 | 1h30 | Activity | Sankeien Garden |
 | 13:20 | 0h20 | Transit | Sankeien -> Yokohama Stn, bus |
@@ -802,11 +802,11 @@ traditional garden.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, miso soup, toast | Cooked in room, early start; Hotel kitchenette | 500 | 750 |
-| Lunch | Sit-down set course - stir-fried noodles, sweet-and-sour pork, steamed rice | Yokohama Chinatown (specific restaurant unverified) | 900 | 4,700 |
+| Lunch | Nikuman and steamed-bun grazing - 2 pork steamed buns (nikuman) plus a char siu skewer and an ebi-mayo bun per adult. Nikuman is a fist-sized steamed wheat bun with a savory pork filling, Chinatown's single most iconic street food, sold from dozens of stall windows along the main strip - a more authentic, cheaper, lower-kcal lunch than a sit-down set course | Chukagai-Odori and side streets, Yokohama Chinatown, Naka-ku, Yokohama | 800 | 4,300 |
 | Dinner | Grilled mackerel, rice, pickled vegetables, miso soup, using fresh fish and produce bought at a Yokohama market stall | Hotel kitchenette | 700 | 2,150 |
 | Infant food | 3 formula feeds plus 2 Morinaga pouches (white fish and rice; mixed vegetable) for Infant A; Infant B eats flaked bites of the grilled mackerel and rice | Conbini | n/a | 2,200 |
 
-Adult kcal: 500 + 900 + 700 = **2,100**.
+Adult kcal: 500 + 800 + 700 = **2,000**.
 
 ### Transport
 
@@ -824,7 +824,7 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Cup Noodles Museum (incl. My CUPNOODLES Factory) | 1h00 | 500 | 1,500 | 2-3-4 Shinko, Naka-ku, Yokohama, Kanagawa 231-0001 | A museum on instant ramen's invention by Momofuku Ando, with a giant noodle-themed exhibit hall and a hands-on workshop where you design and seal your own cup of instant noodles to take home. General admission (exhibits) is free; only the factory workshop is paid. Playful and interactive in a way few museums on this trip are, a good change of pace even for toddlers too young for the workshop itself. Indoor, elevators, stroller-friendly; workshop tickets can sell out on busy days. |
+| Cup Noodles Museum (incl. My CUPNOODLES Factory) | 1h00 | 1,000 | 3,000 | 2-3-4 Shinko, Naka-ku, Yokohama, Kanagawa 231-0001 | A museum on instant ramen's invention by Momofuku Ando, with a giant noodle-themed exhibit hall and a hands-on workshop where you design and seal your own cup of instant noodles to take home. Admission is ¥500/adult, and the My CUPNOODLES Factory workshop (designing and sealing your own cup) is a **separate** ¥500 per cup - so ¥1,000/adult, ¥3,000 for the party if all three adults each make one, not ¥500 as sometimes assumed. Playful and interactive in a way few museums on this trip are, a good change of pace even for toddlers too young for the workshop itself, who can still enjoy the exhibit hall for the base ¥500. Indoor, elevators, stroller-friendly; workshop tickets are sold same-day on-site and can sell out on busy days. |
 | Landmark Tower Sky Garden | 0h35 | 1,200 | 3,600 | 2-2-1 Minatomirai, Nishi-ku, Yokohama, Kanagawa 220-0012 | The 69th-floor observation deck of what was, for decades, Japan's tallest building, with sweeping views over Minato Mirai's harbor skyline and Yokohama Bay (Mt. Fuji visible on a clear day). A quick, high-payoff view stop between the museum and lunch. High-speed elevator, fully indoor and stroller/infant-friendly; 2026 planning estimate. |
 | Sankeien Garden | 1h30 | 900 | 2,700 | 58-1 Honmokusannotani, Naka-ku, Yokohama, Kanagawa | A large traditional Japanese strolling garden built by a silk trader in 1906 around ponds and roughly 17 historic buildings relocated here from Kyoto, Kamakura, and elsewhere, including a three-story pagoda visible above the treeline. The most authentically "old Japan" garden setting of the Tokyo-area days, quieter and less manicured than the Imperial Gardens. Main approach paths are stroller-passable; some inner bridges and paths have steps, so the carrier is the better call for the full loop. |
 
