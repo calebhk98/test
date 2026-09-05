@@ -69,7 +69,7 @@
 Adult kcal: 550 + 650 + 750 = **1,950**.
 
 The ekie run's formula, pouches, nappies and wipes (¥7,088) are trip-level baby consumables
-per the shopping appendix's Section 4 reconciliation and are not added to the Food line above -
+per the consolidated infant-supplies plan and are not added to the Food line above -
 only the ¥400 snack/fruit item is.
 
 ### Transport
@@ -388,7 +388,7 @@ at Dotonbori.
 Adult kcal: 550 + 700 + 750 = **2,000**.
 
 The arrival run's formula tin and pouches (¥3,180) are trip-level baby consumables per the
-shopping appendix's Section 4 reconciliation and are not added to the Food line above - only
+consolidated infant-supplies plan and are not added to the Food line above - only
 the ¥400 snack/fruit item is.
 
 ### Transport

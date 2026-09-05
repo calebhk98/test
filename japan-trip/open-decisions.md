@@ -1,8 +1,7 @@
 # Open decisions and things to check
 
-Everything in this report that is not settled. Four kinds: decisions only the
-travellers can make, deadlines, things to re-verify nearer the date, and requests
-that were checked and rejected so they do not get re-asked.
+Everything not yet settled, in two kinds: decisions only the travellers can make,
+and things worth re-checking nearer the date.
 
 ---
 
@@ -41,34 +40,9 @@ with both infants, which is worse, not better.
 
 **Decide:** do it as a novelty on Day 27, or skip it.
 
-### Chureito Pagoda, Day 11
-Confirmed as kept at the traveller's instruction. Recorded here so the reason is not
-lost: it is 398 steps, and the realistic shape is one adult carrying one infant up
-while the other two wait at the base. It is free and it is the most photographed
-view of Mt. Fuji in Japan.
-
-### Whether to hold the reserve or spend it
-Planned spend is around $8,400 of a $9,032 budget. The traveller has said a reserve
-down to about 1% is acceptable. **The specific risk is that no lodging rate in this
-report is a real quote.** If the five properties come back 20% above estimate that
-is roughly ¥106,000, which is more than the reserve.
-
-If that happens, cut in this order:
-1. Kimono rental, Day 23, ¥15,840
-2. Anpanman Children's Museum, Kobe, Day 28, ¥11,250
-3. Nishijin hands-on weaving, Day 23, ¥7,590
-
-Those three are about $224 and are the newest and most discretionary items.
-
 ---
 
-## 2. Deadlines
-
-Every dated booking deadline is in the advance-booking part, ordered by when to act.
-The two that gate whole days are the Ghibli Museum lottery and the Fujikyu
-Mishima-Kawaguchiko Liner.
-
-## 3. Verify nearer the date
+## 2. Things to re-check nearer the date
 
 - **Miyajima tide times, Day 25.** Whether the floating torii stands in water or you can walk out to it is entirely tide-dependent. No schedule printed months ahead can tell you.
 - **Hiroshima Food Festival dates.** Not published for 2026 as of September. Its history runs from 17 Oct to late Oct with no fixed rule, so it was left out rather than assumed. **If it lands on 30 Oct to 1 Nov it is a free hit of exactly the street-stall atmosphere the group wants**, so it is worth one check.

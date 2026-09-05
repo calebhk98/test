@@ -112,8 +112,7 @@ for letter, name, fn in [("D", "Hotels and lodging", "hotels.md"),
 
 app = (ROOT / "99-appendix.md").read_text()
 for old, new_h in [(r"^##\s*Appendix B\..*$", "## Appendix L: Japan with a 12-month-old and a 20-month-old"),
-                   (r"^##\s*Appendix C\..*$", "## Appendix M: How 2,000 calories a day actually gets bought"),
-                   (r"^##\s*Appendix D\..*$", "## Appendix N: Confidence and sources")]:
+                   (r"^##\s*Appendix C\..*$", "## Appendix M: How 2,000 calories a day actually gets bought")]:
     app = re.sub(old, new_h, app, flags=re.M)
 m = re.search(r"^## Appendix L:", app, re.M)
 body += ["", "---", "", app[m.start():].strip()]

@@ -71,7 +71,7 @@ The exception is highway buses. Fujikyu and Keio require a paid seat for a child
 
 ## 6. Luggage, strollers and seat reservations
 
-Days 14, 24, and 27 all ride unreserved shinkansen cars. With five people and two infants, an unreserved car offers no guarantee of finding five adjacent seats, particularly on a busy Friday (day 24) or a Monday transfer day (day 27). Seat reservations cost nothing extra under the JR Kansai-Hiroshima Area Pass on days 24 and 27, so there is no reason not to book them ahead once the pass is in hand; day 14 falls before the pass is purchased, so that leg stays genuinely unreserved.
+Day 14, Day 24 and Day 27 all ride unreserved shinkansen cars. With five people and two infants, an unreserved car offers no guarantee of finding five adjacent seats, particularly on a busy Friday (Day 24) or a Monday transfer day (Day 27). Seat reservations cost nothing extra under the JR Kansai-Hiroshima Area Pass on Day 24 and Day 27, so there is no reason not to book them ahead once the pass is in hand; Day 14 falls before the pass is purchased, so that leg stays genuinely unreserved.
 
 Any checked bag with total dimensions (height plus width plus depth) over 160cm needs an oversized-baggage reservation on the Tokaido and Sanyo Shinkansen, or a ¥1,000 on-the-spot fee paid to staff without one. Strollers are exempt from this rule regardless of size and travel folded in the vestibule or overhead without any reservation or fee.
 

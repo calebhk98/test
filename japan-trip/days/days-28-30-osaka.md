@@ -248,8 +248,10 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
  transit) in hand luggage; leave a genuinely spare handful behind rather than repack a torn bag.
 - Hotel toiletries, opened wipes packets not needed in-flight, anything not going in the carry-on
  or the checked bag - leave for housekeeping rather than binning usable items.
-- **Nothing perishable exists to deal with** - there has been no kitchen, and therefore no fresh
- food, since Day 13.
+- **The nappy stock should run out almost exactly here.** The pack bought in Hiroshima on Day 24
+ was sized to cover Hiroshima's four nights plus Osaka's three, and today is the seventh. If a
+ handful are left they go straight into hand luggage for the flight; a torn part-pack is not
+ worth repacking.
 
 **What's prohibited or restricted in hand luggage on an international departure from KIX:**
 - The standard liquids/gels rule applies: containers over 100ml are not allowed in the cabin

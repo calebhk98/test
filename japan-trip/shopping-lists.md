@@ -31,22 +31,20 @@ warm in a cooler bag it doesn't have. Sizing each shopping run to the days actua
 that kitchen avoids all three.
 
 **Why the Day 13 ryokan night forces the K's House fridge empty a day early.** The party checks
-out of K's House Mt. Fuji at 13:00 on Day 13, a full day before the Day 14 transfer to Kyoto,
-because Day 13 itself is spent at Lakeland Hotel Mizunosato - a ryokan with kaiseki dinner and
-a Japanese breakfast included, and no self-catering. So the shared-kitchen fridge has to be at
-zero not by the Day 14 departure but by the Day 13 lunchtime checkout, one full day sooner than
-the room itself is vacated. The Day 11 arrival grocery run is sized for exactly two dinners,
-one lunch and one breakfast (Days 11-12) for this reason, not for three.
+out of K's House Mt. Fuji at 13:15 on Day @@DAYLINK:13@@ and spends that night at a ryokan with
+kaiseki dinner and a Japanese breakfast included, so the shared-kitchen fridge has to be at zero
+a full day before the Day @@DAYLINK:14@@ transfer to Kyoto. The Day @@DAYLINK:11@@ arrival
+grocery run is sized for exactly two dinners, one lunch and one breakfast for that reason.
 
 **What the party is carrying at each move, roughly:**
 
 | Move | Fresh food in hand | Dry goods / part-used staples carried |
 |---|---|---|
 | Day 11, Tokyo -> Kawaguchiko (bus) | Zero - Day 10 dinner uses up the last of the Livemax fridge | Partial formula tin, half a nappy pack per infant (~1kg combined); the 5kg rice bag is fully used by Day 10 |
-| Day 14, Kawaguchiko -> Kyoto (bus + shinkansen) | Zero - no kitchen after the Day 13 ryokan checkout | Same, plus whatever the Day 12 run left over (see checklist below) |
+| Day 14, Kawaguchiko -> Kyoto (bus + shinkansen) | Zero - no kitchen after the Day 13 ryokan checkout | Same, plus anything dry the Day 12 cooking left over |
 | Day 24, Kyoto -> Hiroshima (shinkansen) | Zero - no kitchen in Kyoto at all, Toyoko Inn breakfast only | Formula tin (partial), nappy stock, wipes - light, dry, was already being carried the whole Kyoto block |
 | Day 27, Hiroshima -> Osaka (shinkansen) | Zero - same reason | Same dry infant-supply stock, now more depleted |
-| Day 30, Osaka -> KIX (fly home) | Zero | Only what fits in hand luggage for the flight itself - see Section 5 |
+| Day 30, Osaka -> KIX (fly home) | Zero | Only what fits in hand luggage for the flight itself; Day @@DAYLINK:30@@ carries the packing notes |
 
 ---
 
@@ -320,92 +318,12 @@ restaurant meals, konbini and the free Toyoko Inn breakfast in `days-28-30-osaka
 | **Total** | **¥48,138** | **$311** |
 
 This is the grocery/drugstore-run subset of the trip. It is not meant to equal the full
-¥243,000 food budget or the ¥68,000 infant-consumables line on its own - see Section 4 for how
+¥243,000 food budget or the ¥68,000 infant-consumables line on its own - see the consolidated infant-supplies plan for how
 the pieces add up.
 
 ---
 
-## 3. Run-down-before-you-move checklist
-
-### Move 1: Tokyo to Kawaguchiko
-
-Day @@DAYLINK:11@@, highway bus from Shinjuku
-- **Already eaten down:** Day 10's meals are explicitly written to use up "the last of the Day 1
- pantry stock" (breakfast) and cook a "last-night" fried rice from remaining vegetables and egg
- (dinner) - by design, nothing perishable should be left in the Livemax fridge that morning.
-- **Carry:** partial formula tin (~200-400g left, weighs little), the remainder of one nappy
- pack per infant (roughly 1kg combined), a few pouches. All of this fits in a side pocket of
- the daypack, not a separate bag.
-- **Bin or leave behind:** an opened soy sauce/miso/oil set typically has real amounts left after
- 10 days of home cooking for 3 adults. In principle these are light enough to carry (well under
- 1kg combined), but K's House Mt. Fuji is a *different* kitchen, and hauling three opened
- bottles through a reserved-seat highway bus with limited underseat luggage space (Fujikyu/Keio)
- is more hassle than the ¥430 it costs to buy small replacements at OGINO on arrival - which the
- Day 11 Kawaguchiko run already does. **Bin the opened bottles at Livemax checkout** rather than
- pack them.
-- **Reserved-seat bus note:** the Day 11 Fujikyu/Keio bus has assigned seats and limited luggage
- space per adult, one more reason not to carry bulky pantry items on this leg.
-
-### Move 2: Kawaguchiko to Kyoto
-
-Day @@DAYLINK:14@@, bus to Mishima then the Hikari shinkansen
-- **Already eaten down:** the Day 11 grocery run was deliberately sized for Days 11-12 only,
- so the K's House fridge should already read near-zero by the Day 12 dinner. Day 13 itself
- moves to the ryokan (no self-catering), so there is no Day 13 grocery run to run down at all.
-- **The fridge-empty deadline is Day 13 at 13:00, not Day 14.** The party checks out of K's
- House at 13:00 on Day 13 - a full day before actually leaving Kawaguchiko - so anything still
- in that fridge at that point (half a cabbage, an opened tofu block, a spoonful of leftover
- rice) needs to be gone by then, not by the Day 14 departure.
-- **Bin or give away:** half a bag of rice, an opened tofu block, or a scrap of vegetables is not
- worth carrying onto a shinkansen with two infants and no kitchen for the next ten days -
- **leave it in the K's House shared-kitchen free box** (a standard hostel-kitchen convention:
- a shelf or bin where departing guests leave part-used pantry items for the next guest, rather
- than binning genuinely usable food).
-- **Carry:** partial formula tin, remaining nappy stock, a couple of pouches for the journey -
- same light dry-goods kit as Move 1, now slightly lighter. Nothing perishable crosses this move.
-- **Ryokan night (Day 13):** kaiseki dinner and Japanese breakfast are both included - no
- shopping, no cooking, nothing to run down.
-
-### Move 3: Kyoto to Hiroshima
-
-Day @@DAYLINK:24@@, shinkansen on the JR Kansai-Hiroshima Area Pass
-- **Already eaten down:** trivially true - there has been no kitchen since Day 13, so nothing
- perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
- are dry infant supplies.
-- **Carry:** whatever is left of the Kyoto Run 3 (Day @@DAYLINK:21@@) formula tin and pouches, plus
- whatever nappy stock remains from the Day 15 pack - by Day 24 this is roughly 9 days into a
- pack sized for about 9 days, so it should be close to empty; if a few nappies are left, they
- travel for free (a handful of nappies weighs nothing).
-- **Bin or leave behind:** nothing perishable exists to bin. Toiletries/room amenities opened at
- the Toyoko Inn are not worth carrying - leave them for housekeeping.
-
-### Move 4: Hiroshima to Osaka
-
-Day @@DAYLINK:27@@, shinkansen on the pass's final valid days
-- **Already eaten down:** same logic as Move 3 - no kitchen in Hiroshima, so no perishables to
- run down.
-- **Carry:** remaining nappy stock from the Day 24 Hiroshima run (sized for the 4-night block,
- should be nearly used up), remaining formula/pouches. Light, dry, no change from the Kyoto
- pattern.
-
-### Move 5: Osaka to Kansai Airport
-
-Day @@DAYLINK:30@@, flying home. **Everything must be gone.**
-- **Already eaten down:** the Osaka Day 27 run was deliberately sized for exactly the 3-night
- Osaka block (Days 27-29), with no restock planned for Day 29 or 30 - by the Day 29 night, the
- formula tin and pouches bought Day 27 should be at or near zero.
-- **Nappy stock:** the Day 24 Hiroshima nappy pack was sized to cover Hiroshima (4 nights) plus
- Osaka (3 nights) = 7 nights; Day 30 is the 7th night of that pack's coverage, so it should run
- out almost exactly at departure. If a handful remain, they go straight into hand luggage for
- the flight, and the Day @@DAYLINK:30@@ packing notes cover what goes through security.
-- **Bin before checkout:** any opened snack packet, half-finished pouch, empty formula tin
- (recycle per the hotel's bins), used wipes packet. Nothing here is worth carrying past the
- hotel room door.
-- **Nothing is carried onward** except what's needed for the flight itself.
-
----
-
-## 4. Consolidated infant-supplies plan
+## 3. Consolidated infant-supplies plan
 
 Two different numbers matter here, and they are not the same thing, keeping them separate
 avoids double-counting:

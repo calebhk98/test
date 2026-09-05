@@ -68,25 +68,3 @@ Each adult day sums to 1,950-2,100 kcal across the meal rows, built from four le
 The trip is not planned to eat like this every day. Osaka's last full day, the Hiroshima
 okonomiyaki night and several Kyoto dinners are deliberately restaurant meals. The
 self-catering floor is what buys them.
-
-## Appendix D. Confidence and sources
-
-**Verified against live sources:** exchange rate, typhoon seasonality, 2026 koyo
-forecast dates, Japanese public holidays, Golden Week and Obon and Silver Week dates,
-Jidai Matsuri and Kurama Fire Festival dates, JR and metro and bus child-fare rules,
-museum under-six admission policy, Miyajima ferry and visitor tax and shrine fees, all
-rail pass prices, point-to-point shinkansen fares, the Fujikyu bus network and fares,
-Hiroshima JMA climate normals, restaurant chain prices, and the Midosuji illumination
-opening date.
-
-**Planning estimates, not quotes:** all five nightly lodging rates, most supermarket
-staple prices, baby consumable daily costs, and several minor admission fees. These are
-current rates adjusted for occupancy and season, and are labelled where they appear.
-
-**Known gaps, stated rather than papered over:**
-- Four of five properties are identified by station proximity, not a confirmed street address.
-- No booking engine returned date-stamped 2026 availability, so no rate here is a quote.
-- The Kyoto ¥700 all-day bus pass was discontinued in autumn 2023; fares are priced per ride by IC card instead.
-- Communal onsen policy on infants and diapers is inconsistent; a private kashikiri family bath is recommended at Kawaguchiko rather than assuming access.
-- Miyajima's floating torii depends on the tide. Check a tide table nearer the date rather than trusting any schedule printed months ahead.
-- Hiroshima's Dreamination illumination starts mid-to-late November and misses this window. It is excluded rather than included hopefully.

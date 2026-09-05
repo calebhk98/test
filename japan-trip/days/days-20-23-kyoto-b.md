@@ -163,7 +163,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
   Shijo-Omiya) for the tin of formula and the pouches the appendix calls for -
   a solo trip of about 35 minutes total, the same pattern as the Day 3 and Day
   19 solo evening runs. Formula and pouches are already folded into the day's
-  "Infant food" budgeting per the shopping appendix's Section 4 reconciliation,
+  "Infant food" budgeting per the consolidated infant-supplies plan,
   so this run changes nothing in the Day 21 Cost table below, and because it's
   a solo adult's late errand rather than a party outing, it isn't counted in
   the active out-of-lodging time either.

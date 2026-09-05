@@ -45,8 +45,8 @@
   Line - restocking a formula tin, 6 pouches, a nappy pack for each infant size, and a
   wipes refill, sized to cover roughly Days 15-19; Matsumoto Kiyoshi or Welcia are the
   drugstore fallback if Gyomu Super is closed. The formula, pouches, nappies and wipes
-  (¥7,088) are trip-level infant consumables tracked in the shopping appendix's Section
-  4, not added to this day's Food total; only the ¥200 fruit/snack picked up for the
+  (¥7,088) are trip-level infant consumables tracked in the consolidated
+  infant-supplies plan, not added to this day's Food total; only the ¥200 fruit/snack picked up for the
   20-month-old in the same run is genuine grocery spend, added to Food below. Like Day
   19's later hangaku run, this solo trip doesn't add to the day's active out-of-lodging
   time - the other two adults stay at the hotel with the sleeping infants throughout.
