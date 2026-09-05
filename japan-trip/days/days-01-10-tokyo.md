@@ -385,6 +385,7 @@ other transit leg in this plan; not separately verified for this operator.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
+| Tokyo Character Street | 0h30 | 0 | 0 | First Avenue Tokyo Station, B1F, near Yaesu Underground Central Exit, Tokyo Stn, Chiyoda-ku | A roughly 30-shop underground corridor of character retail - Pokemon Store, Ghibli's Donguri Kyowakoku, Rilakkuma, Sumikko Gurashi, Doraemon, Crayon Shin-chan, Sanrio - a five-minute walk from the Otemachi stop the day already makes. Free to browse, no ticket needed, and it links today's route to the Ghibli Museum booked later in the segment. Fully indoor, flat, wide mall corridor with elevators and escalators throughout - the easiest, most stroller-friendly stop on this list; budget only for an optional souvenir. |
 | Imperial Palace East Gardens | 1h20 | 0 | 0 | 1-1 Chiyoda, Chiyoda-ku, Tokyo 100-8111 | The public portion of the Imperial Palace grounds - the former Edo Castle's inner citadel, now a formal Japanese garden with the stone Tenshudai foundation (the burned keep's base) still standing. Free, and the strongest "Imperial Palace" experience available without the reservation-only inner-grounds tour. Same-day entry via a QR or paper ticket at the gate, no advance booking; flat gravel paths throughout except the Tenshudai's stone stairs, which need the carrier. |
 | Zojoji Temple | 0h30 | 0 | 0 | 4-7-35 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | The Tokugawa shoguns' family temple, fronted by the towering Sangedatsumon gate and rows of small stone jizo statues in red knit caps. Free, far less crowded than Senso-ji, and stands directly in front of Tokyo Tower for one of the city's classic old-gate/old-tower photos. Flat paved grounds, fully stroller-friendly, no stairs required. |
 | Tokyo Tower Main Deck | 0h35 | 1,500 | 4,500 | 4-2-8 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | Tokyo's original 1958 broadcast tower (333m) - the red-and-white silhouette that stood in for "Tokyo" in film and postcards for decades before Skytree existed. The Main Deck (150m) gives a different, lower, more central view than Skytree's, worth doing on its own terms rather than skipping as "already done." Elevator to the deck, no stairs; ¥1,500/adult, verified via 2026 web search. |
@@ -396,9 +397,9 @@ other transit leg in this plan; not separately verified for this operator.
 |---|---|---|
 | Lodging | 18,000 | 116 |
 | Food | 6,600 | 43 |
-| Transport | 4,710 | 30 |
+| Transport | 4,530 | 29 |
 | Activities | 5,400 | 35 |
-| **Day total** | **34,710** | **224** |
+| **Day total** | **34,530** | **223** |
 
 **Running total after Day 4: ¥143,060 ($923)**
 
