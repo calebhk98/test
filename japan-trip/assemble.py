@@ -442,6 +442,14 @@ for store, section in sorted(STORE_CITY.items(), key=lambda kv: -len(kv[0])):
 doc = doc[:p2s] + seg + doc[p2e:]
 print(f"store names linked to shopping runs: {shop_links}")
 
+# Render bare website URLs in the index tables as compact domain labels.
+def shorten_url(m):
+    url = m.group(1)
+    host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+    return f"| [{host}]({url}) |"
+doc = re.sub(r"\|\s*(https?://[^\s|]+)\s*\|", shorten_url, doc)
+print("website cells rendered as domain links:", len(re.findall(r"\|\s\[[a-z0-9.-]+\]\(https?://", doc)))
+
 # ------------------------------------------------------------ table of contents --
 BOILERPLATE = {"schedule", "lodging", "meals", "transport", "activities"}
 toc = ["## Table of Contents", ""]
