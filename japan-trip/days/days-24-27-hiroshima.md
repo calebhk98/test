@@ -10,8 +10,8 @@ up once the actual Day 1-23 files exist.*
 
 ## Day 24 - Friday, October 30, 2026 - Kyoto to Hiroshima
 
-**Base:** Hiroshima (arriving)
-**Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) - pack a light rain layer
+**Base:** Hiroshima (arriving)  
+**Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg) - pack a light rain layer  
 **Theme:** Shinkansen from Kyoto to Hiroshima; buy the JR Kansai-Hiroshima Area Pass; an easy arrival evening at Peace Memorial Park.
 
 ### Schedule
@@ -39,10 +39,10 @@ up once the actual Day 1-23 files exist.*
 
 ### Lodging
 
-**Night:** 1 of 3
-**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 1 of 3  
+**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
+**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
 
@@ -91,8 +91,8 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 ## Day 25 - Saturday, October 31, 2026 - Miyajima (Itsukushima)
 
-**Base:** Hiroshima
-**Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg)
+**Base:** Hiroshima  
+**Weather (typical):** 23.7/14.9 °C, ~109mm/month (JMA, Oct avg)  
 **Theme:** A full day trip to Miyajima - shrine, aquarium, and the Mt. Misen ropeway, all covered
 by the rail pass beyond the island admissions.
 
@@ -133,10 +133,10 @@ by the rail pass beyond the island admissions.
 
 ### Lodging
 
-**Night:** 2 of 3
-**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 2 of 3  
+**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
+**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
 
@@ -189,8 +189,8 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 
 ## Day 26 - Sunday, November 1, 2026 - Hiroshima city day
 
-**Base:** Hiroshima
-**Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) - noticeably cooler than the last two days; add a layer
+**Base:** Hiroshima  
+**Weather (typical):** 17.7/8.9 °C, ~69mm/month (JMA, Nov avg) - noticeably cooler than the last two days; add a layer  
 **Theme:** Peace Memorial Park and Museum, handled with care given two infants in the party, then
 Shukkei-en garden and Hiroshima Castle.
 
@@ -226,10 +226,10 @@ Shukkei-en garden and Hiroshima Castle.
 
 ### Lodging
 
-**Night:** 3 of 3
-**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami
-**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 3 of 3  
+**Hotel:** Toyoko Inn Hiroshima Ekimae Ohashi Minami  
+**Address:** central Hiroshima, ~1.2 mi from Peace Memorial Park (street address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥15,000 (= $96.77)
 ### Meals
 
@@ -279,8 +279,8 @@ infants ride free.
 
 ## Day 27 - Monday, November 2, 2026 - Hiroshima to Osaka
 
-**Base:** Hiroshima -> Osaka (Namba)
-**Weather (typical):** Hiroshima 17.7/8.9 °C -> Osaka 17/10 °C (JMA, Nov avg)
+**Base:** Hiroshima -> Osaka (Namba)  
+**Weather (typical):** Hiroshima 17.7/8.9 °C -> Osaka 17/10 °C (JMA, Nov avg)  
 **Theme:** Travel day: shinkansen to Shin-Osaka, transfer to Namba, check in, a light first evening
 at Dotonbori.
 
@@ -314,10 +314,10 @@ at Dotonbori.
 
 ### Lodging
 
-**Night:** 1 of 3
-**Hotel:** Toyoko Inn Osaka Namba
-**Address:** Namba area (specific branch address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 1 of 3  
+**Hotel:** Toyoko Inn Osaka Namba  
+**Address:** Namba area (specific branch address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
 

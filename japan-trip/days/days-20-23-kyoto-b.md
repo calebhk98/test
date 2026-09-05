@@ -62,8 +62,8 @@ renewed for autumn.*
 
 ## Day 20 - Monday, October 26, 2026 - Kyoto (day trip to Nara)
 
-**Base:** Kyoto
-**Weather (typical):** 21-25/15 °C, pre-peak foliage, Nara's maples are still mostly green with a few early turners
+**Base:** Kyoto  
+**Weather (typical):** 21-25/15 °C, pre-peak foliage, Nara's maples are still mostly green with a few early turners  
 **Theme:** Nara as a day trip: Todai-ji's Great Buddha, the free-roaming deer, Kasuga Taisha, and two gardens. The most stroller-friendly, infant-strongest day of the segment, and the longest, since Kintetsu adds nearly 1h30 of pure transit each way.
 
 ### Schedule
@@ -97,10 +97,10 @@ renewed for autumn.*
 
 ### Lodging
 
-**Night:** 7 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 7 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
@@ -155,8 +155,8 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 ## Day 21 - Tuesday, October 27, 2026 - Kyoto (day trip to Uji)
 
-**Base:** Kyoto
-**Weather (typical):** 21-25/15 °C, pre-peak foliage
+**Base:** Kyoto  
+**Weather (typical):** 21-25/15 °C, pre-peak foliage  
 **Theme:** Uji: a short, low-key day trip: Byodo-in, a hands-on matcha experience, and the Uji riverbank. The cheapest and most compact of the three day trips.
 
 ### Schedule
@@ -191,10 +191,10 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 ### Lodging
 
-**Night:** 8 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 8 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
@@ -254,8 +254,8 @@ rest above - free, no separate stop and no schedule change.
 
 ## Day 22 - Wednesday, October 28, 2026 - Kyoto (day trip to the Fushimi sake district)
 
-**Base:** Kyoto
-**Weather (typical):** 21-25/15 °C, pre-peak foliage
+**Base:** Kyoto  
+**Weather (typical):** 21-25/15 °C, pre-peak foliage  
 **Theme:** Chushojima/Fushimi-Momoyama, Kyoto's historic sake-brewing quarter: canal-side brewery streets, the Gekkeikan Okura Sake Museum, and the Teradaya Inn. Not to be confused with Fushimi Inari (Day 15): this is a separate, flat neighbourhood a few km south of the shrine, and Japan's second-largest sake-producing region after Nada near Kobe. Replaces the original Day 22 plan (an Osaka Castle day trip that duplicated Days 27-29's Osaka-based visit to the same castle); see the segment note above. The shortest, flattest, and cheapest day trip of the segment - entirely stroller-friendly with no stairs anywhere on the route.
 
 ### Schedule
@@ -297,10 +297,10 @@ rest above - free, no separate stop and no schedule change.
 
 ### Lodging
 
-**Night:** 9 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 9 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
@@ -367,8 +367,8 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 ## Day 23 - Thursday, October 29, 2026 - Kyoto (low-key day + packing)
 
-**Base:** Kyoto
-**Weather (typical):** 21-25/15 °C, pre-peak foliage
+**Base:** Kyoto  
+**Weather (typical):** 21-25/15 °C, pre-peak foliage  
 **Theme:** The day's headline addition: kimono rental and hands-on Nishijin weaving, the trip's answer to the group's anime-robes wish and the whole-trip audit's "too passive" flag. No day trip: Nishijin's hand-loom weaving experience replaces yesterday's passive kimono show, the three adults wear rented kimono for a Kamo riverbank walk, and the day still closes with a neighbourhood sento and an early night before the Day 24 move to Hiroshima.
 
 ### Schedule
@@ -403,10 +403,10 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 ### Lodging
 
-**Night:** 10 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 10 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 

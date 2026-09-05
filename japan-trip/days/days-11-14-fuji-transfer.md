@@ -4,8 +4,8 @@
 
 ## Day 11 - Saturday, October 17, 2026 - Tokyo → Kawaguchiko
 
-**Base:** Tokyo (AM) → Kawaguchiko (PM/evening)
-**Weather (typical):** Tokyo 21-24/15°C (AM) → Kawaguchiko 17-19/6-10°C (PM, night frost possible)
+**Base:** Tokyo (AM) → Kawaguchiko (PM/evening)  
+**Weather (typical):** Tokyo 21-24/15°C (AM) → Kawaguchiko 17-19/6-10°C (PM, night frost possible)  
 **Theme:** Half travel day - Higashi-Ueno to Fuji Five Lakes by highway bus, first evening in Fuji country.
 
 ### Schedule
@@ -43,10 +43,10 @@ Active out-of-lodging time: ~6h35 (under the 7h cap) - about 40 minutes longer t
 
 ### Lodging
 
-**Night:** 1 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)
-**Hotel:** K's House Mt. Fuji
-**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants, co-sleeping) + 1 single (3rd adult)
+**Night:** 1 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
+**Hotel:** K's House Mt. Fuji  
+**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants, co-sleeping) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -96,8 +96,8 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 
 ## Day 12 - Sunday, October 18, 2026 - Kawaguchiko
 
-**Base:** Kawaguchiko
-**Weather (typical):** 17-19/6-10°C, night frost possible; mornings are the reliable window for a clear Mt. Fuji, afternoons cloud over
+**Base:** Kawaguchiko  
+**Weather (typical):** 17-19/6-10°C, night frost possible; mornings are the reliable window for a clear Mt. Fuji, afternoons cloud over  
 **Theme:** North-shore Fuji day - Oishi Park, Tenjozan Ropeway, a short lake cruise, and Kubota Itchiku's kimono art in the afternoon clouds.
 
 ### Schedule
@@ -132,10 +132,10 @@ Active out-of-lodging time: ~7h00 (at the cap - the midday rest block returns fu
 
 ### Lodging
 
-**Night:** 2 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)
-**Hotel:** K's House Mt. Fuji
-**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Night:** 2 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)  
+**Hotel:** K's House Mt. Fuji  
+**Address:** nr. Ogi bus stop, ~15 min walk from Kawaguchiko Stn (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -179,8 +179,8 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
 ## Day 13 - Monday, October 19, 2026 - Kawaguchiko
 
-**Base:** Kawaguchiko
-**Weather (typical):** 17-19/6-10°C, night frost possible
+**Base:** Kawaguchiko  
+**Weather (typical):** 17-19/6-10°C, night frost possible  
 **Theme:** West shore - Oshino Hakkai's spring-fed ponds and Saiko Iyashi-no-Sato's thatched village, private onsen in the evening.
 
 ### Schedule
@@ -214,10 +214,10 @@ Active out-of-lodging time: ~5h35 (under the 7h cap) - lighter than the previous
 
 ### Lodging
 
-**Night:** 1 of 1 (ryokan; Days 11-12 were K's House Mt. Fuji - see those days' Lodging blocks)
-**Hotel:** Lakeland Hotel Mizunosato
-**Address:** 1070 Kodachi, Fujikawaguchiko, Minamitsuru-gun, Yamanashi 401-0302
-**Unit:** Japanese-style tatami room, futon bedding, room-only plan; sleeps 3 adults + 2 infants co-sleeping on futon (exact family-room configuration and any infant futon/meal surcharge are not published on the ryokan's site - confirm both by phone before booking). Kaiseki dinner and Japanese breakfast booked as half-board add-ons (priced in Meals below); a 40-minute rentable private kashikiri bath booked separately (priced in Activities below).
+**Night:** 1 of 1 (ryokan; Days 11-12 were K's House Mt. Fuji - see those days' Lodging blocks)  
+**Hotel:** Lakeland Hotel Mizunosato  
+**Address:** 1070 Kodachi, Fujikawaguchiko, Minamitsuru-gun, Yamanashi 401-0302  
+**Unit:** Japanese-style tatami room, futon bedding, room-only plan; sleeps 3 adults + 2 infants co-sleeping on futon (exact family-room configuration and any infant futon/meal surcharge are not published on the ryokan's site - confirm both by phone before booking). Kaiseki dinner and Japanese breakfast booked as half-board add-ons (priced in Meals below); a 40-minute rentable private kashikiri bath booked separately (priced in Activities below).  
 **Nightly:** ¥41,580 (= $268.26) - room-only rate, verified official per-person rate of ¥13,860 x 3 adults; infants not charged for the room itself (planning estimate - the ryokan's own infant/child charge policy is not published)
 ### Meals
 
@@ -266,8 +266,8 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 
 ## Day 14 - Tuesday, October 20, 2026 - Kawaguchiko → Kyoto
 
-**Base:** Kawaguchiko (AM) → Kyoto (PM/evening)
-**Weather (typical):** Kawaguchiko 17-19/6-10°C (AM, frost possible) → Kyoto 21-25/15°C (PM/evening)
+**Base:** Kawaguchiko (AM) → Kyoto (PM/evening)  
+**Weather (typical):** Kawaguchiko 17-19/6-10°C (AM, frost possible) → Kyoto 21-25/15°C (PM/evening)  
 **Theme:** Full transfer day - bus to Mishima, unreserved Hikari onward to Kyoto.
 
 ### Schedule
@@ -297,10 +297,10 @@ Toyoko Inn Kyoto Shijo-Omiya's free breakfast buffet starts tomorrow (Day 15) - 
 
 ### Lodging
 
-**Night:** 1 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Night:** 1 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 

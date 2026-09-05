@@ -4,8 +4,8 @@
 
 ## Day 15 - Wednesday, October 21, 2026 - Kyoto
 
-**Base:** Kyoto
-**Weather (typical):** 24/15 °C, dry, clear autumn skies
+**Base:** Kyoto  
+**Weather (typical):** 24/15 °C, dry, clear autumn skies  
 **Theme:** Fushimi Inari's torii gates in the cool morning, Nishiki Market in the evening
 
 ### Schedule
@@ -36,10 +36,10 @@
 
 ### Lodging
 
-**Night:** 2 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult), max occupancy per room as booked
+**Night:** 2 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult), max occupancy per room as booked  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
@@ -88,8 +88,8 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 
 ## Day 16 - Thursday, October 22, 2026 - Kyoto
 
-**Base:** Kyoto
-**Weather (typical):** 23/15 °C, dry
+**Base:** Kyoto  
+**Weather (typical):** 23/15 °C, dry  
 **Theme:** Jidai Matsuri - free street viewing, then a quiet walk on the Philosopher's Path
 
 **Kurama Fire Festival exclusion (stated once, here):** Kurama Fire Festival falls the same night as Jidai Matsuri. We are not attending it with this age group. It runs past 23:00, involves open pine-torch flames carried through a single narrow street at close quarters to the crowd, and the only way out of Kurama is one narrow single-track mountain railway - a genuine crush risk with a stroller and two infants who should be long asleep by then. Jidai Matsuri (daytime, wide boulevards, free viewing) covers the day's festival experience instead.
@@ -119,10 +119,10 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 
 ### Lodging
 
-**Night:** 3 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Night:** 3 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
@@ -172,8 +172,8 @@ Infants ride free on the subway and Hankyu legs. The evening leg is a taxi (flat
 
 ## Day 17 - Friday, October 23, 2026 - Kyoto
 
-**Base:** Kyoto
-**Weather (typical):** 24/15 °C, dry
+**Base:** Kyoto  
+**Weather (typical):** 24/15 °C, dry  
 **Theme:** Arashiyama - bamboo, river, and a gorge-side scenic train
 
 ### Schedule
@@ -204,10 +204,10 @@ Infants ride free on the subway and Hankyu legs. The evening leg is a taxi (flat
 
 ### Lodging
 
-**Night:** 4 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Night:** 4 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
@@ -256,8 +256,8 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 
 ## Day 18 - Saturday, October 24, 2026 - Kyoto
 
-**Base:** Kyoto
-**Weather (typical):** 22/14 °C, dry
+**Base:** Kyoto  
+**Weather (typical):** 22/14 °C, dry  
 **Theme:** Kiyomizu-dera and the Higashiyama lanes in kimono, evening in Gion
 
 ### Schedule
@@ -289,10 +289,10 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 
 ### Lodging
 
-**Night:** 5 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Night:** 5 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 
@@ -343,8 +343,8 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 ## Day 19 - Sunday, October 25, 2026 - Kyoto
 
-**Base:** Kyoto
-**Weather (typical):** 23/15 °C, dry
+**Base:** Kyoto  
+**Weather (typical):** 23/15 °C, dry  
 **Theme:** Kyoto Gosho, Nijo Castle, Kinkaku-ji, Ryoan-ji's rock garden, and the Tenjin-ichi temple market at Kitano Tenmangu
 
 ### Schedule
@@ -377,10 +377,10 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 ### Lodging
 
-**Night:** 6 of 10
-**Hotel:** Toyoko Inn Kyoto Shijo-Omiya
-**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)
-**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)
+**Night:** 6 of 10  
+**Hotel:** Toyoko Inn Kyoto Shijo-Omiya  
+**Address:** ~1 min from Omiya Stn, Hankyu Kyoto Line (street address unverified)  
+**Unit:** 2-room split - 1 twin (2 adults + 2 infants) + 1 single (3rd adult)  
 **Nightly:** ¥19,000 (= $122.58)
 ### Meals
 

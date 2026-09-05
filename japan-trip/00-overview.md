@@ -85,7 +85,7 @@ with two children under two, in that order.
 
 ### What was rejected, and why
 
-| Window | Verdict |
+| Window | Trade-off |
 |---|---|
 | Late Jan - Feb | Cheapest of the year, but cold-weather logistics with two under-twos are materially harder and it is peak influenza season |
 | Late Mar - early Apr | Cherry blossom. The most expensive window in Japan. Breaks the $9,000 budget outright |
@@ -146,15 +146,10 @@ season. If the real quotes land 20% above estimate, lodging goes from $3,277 to 
 and eats $655 of the reserve on its own. A 10-yen move in the exchange rate is worth
 another $500 or so on a trip this size.
 
-Some of that headroom has already been spent, deliberately. A whole-trip audit found
-one experience rated genuinely missing across all 29 nights, and Day 13 now answers it:
-the party moves out of the Kawaguchiko hostel for one night at a lakeside ryokan with a
-tatami room, futon bedding, a kaiseki dinner and a rentable private family bath. That
-costs ¥23,580 above the night it replaces, plus about ¥5,900 for the ryokan meals.
-
-A later pass then spent most of the rest on the travellers' own stated interests:
-anime, hands-on experience, toddler-specific stops, theatre and food variety. That
-work is set out in Part IV.
+The single largest discretionary item is Day 13, where the party leaves the
+Kawaguchiko hostel for one night at a lakeside ryokan: tatami room, futon bedding, a
+kaiseki dinner and a rentable private family bath. That costs ¥23,580 above the night
+it replaces, plus about ¥5,900 for the ryokan meals.
 
 **What remains is ¥102,500 ($661), about 7.3%, and that is thin.** Name the risk
 plainly: if the five lodging quotes come back 20% above these estimates, that is
@@ -164,7 +159,7 @@ in order, are the Kyoto kimono rental (¥15,840), the Anpanman museum in Kobe
 (¥11,250) and the Nishijin weaving session (¥7,590). Together they are $224 and
 they are the newest and most discretionary items in the plan.
 
-### The one thing that nearly broke the budget
+### Why the lodging is two rooms at every stop
 
 Standard Japanese hotel rooms cap at two adults, and most business chains enforce a
 hard headcount per room regardless of guest age. A single unit that legally sleeps
@@ -178,19 +173,21 @@ allow a preschool child to co-sleep free, one per bed, so a twin room lawfully h
 two adults and two infants and no crib is required. That lands lodging at **¥508,000
 ($3,277)**, roughly a third of what one large family unit would have cost.
 
-Two side effects of that choice are worth naming. The Tokyo property has an in-room
+Two consequences follow. The Tokyo property has an in-room
 kitchenette, and the three Toyoko Inn stays include a free breakfast buffet for every
 guest including bed-sharing children, which removes breakfast cost on 16 of the 30
 days. Both feed directly into the food budget below.
 
-### The offsetting surprise
+### Why the food budget works
 
-Food was budgeted at $88 a day and costs closer to $22. Cooking 2,000 kcal per adult
-from a Japanese supermarket runs about ¥820-930 per person, roughly ¥2,600 a day for
-three adults, with another ¥1,400-2,400 for two infants. The gap between that and the
-original allocation is what paid for the lodging problem. The daily plan spends above
-the bare self-catering floor on purpose, because a month in Japan that never eats out
-is not a trip anyone should take, but the floor is what makes the arithmetic survive.
+Self-catering in Japan is cheap. Cooking 2,000 kcal per adult from a supermarket runs
+about ¥820-930 per person, roughly ¥2,600 a day for three adults, with another
+¥1,400-2,400 for two infants. That floor, around $22 a day for the whole party, is what
+makes the arithmetic survive once lodging takes 41% of the budget.
+
+The daily plan spends well above that floor on purpose, because a month in Japan that
+never eats out is not a trip worth taking. Free breakfast on 16 of the 30 days and a
+kitchen at two of the five bases are what buy the restaurant meals everywhere else.
 
 ### How infants change the arithmetic
 

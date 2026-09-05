@@ -64,16 +64,9 @@ Those three are about $224 and are the newest and most discretionary items.
 
 ## 2. Deadlines
 
-| When | What | Consequence of missing it |
-|---|---|---|
-| **10 Sept 2026, 10:00 JST** | **Ghibli Museum lottery opens** | No walk-up tickets exist. Day 10 falls back to more time at Inokashira Park. |
-| ~17 Sept 2026 | Shinjuku to Kawaguchiko highway bus opens (1-month rule) | Fallback is a slower JR and Fuji Kyuko rail routing |
-| ~1 month out | **Fujikyu Mishima-Kawaguchiko Liner, Day 14** | All seats reserved and it sells out. **The whole Kyoto transfer depends on this one booking.** Fallback is a slower multi-leg reroute. |
-| ~2 days out | Nishijin hands-on weaving, Day 23 | Reservation required |
-| As soon as possible | All five properties, in the two-room configuration | Availability of both a twin and a single at the same property on the same nights gets harder as October approaches |
-| Before departure | JR Kansai-Hiroshima Area Pass | Cheaper bought before arrival. Exchange needs **all three adults' physical passports**, not copies, at a staffed JR West window. |
-
----
+Every dated booking deadline is in the advance-booking part, ordered by when to act.
+The two that gate whole days are the Ghibli Museum lottery and the Fujikyu
+Mishima-Kawaguchiko Liner.
 
 ## 3. Verify nearer the date
 
@@ -85,67 +78,4 @@ Those three are about $224 and are the newest and most discretionary items.
 - **Kimono rental rate.** The ¥4,180 figure widely quoted is a campaign price expiring 31 Aug 2026. The plan uses the standing ¥5,280/adult; reconfirm.
 - **Tech venues generally.** Three major ones changed status during 2026 alone.
 
-## 4. Needs a phone call, not a website
-
-- **The ryokan, Day 13.** The exact five-person room configuration and any infant futon or meal surcharge are unpublished. Also confirm the private kashikiri bath slot at booking rather than on arrival.
-- **Infant co-sleeping, in writing, at all five properties.** The entire two-room lodging strategy rests on a preschool child co-sleeping free, one per bed. Some chains count every body against a hard room cap regardless of age. Declare both infants' ages when booking.
-- **teamLab Planets, Day 8.** Under-3s need a registered zero-cost ticket, not a carrier ride-along. Turning up without one is refused entry.
-
----
-
-## 5. Checked and rejected, so it does not get asked twice
-
-### Unavailable on these dates, through no fault of the plan
-| Item | Why |
-|---|---|
-| Miraikan (humanoid robots, the Alter android) | Closed for refurbishment 1 Oct 2026 to 22 Apr 2027, the whole trip |
-| Gundam Factory Yokohama, the 18m moving Gundam | Closed permanently March 2024 |
-| Unicorn Gundam statue, DiverCity | Display ends 31 Aug 2026, before arrival |
-| Expo 2025 site, Osaka | Closed Oct 2025, mid-teardown |
-| Robot Restaurant, Shinjuku | Closed 2020-21 |
-| Kawaii Monster Cafe, Harajuku | Closed Jan 2021 |
-| Alcatraz ER, prison-themed bar | Closed 2018 |
-| Fireworks | Hanabi season is July and August. Every verifiable autumn show falls before arrival, after departure, or in the wrong city. |
-| Tori-no-Ichi rooster-day markets | 7 and 19 Nov 2026, both after departure |
-| Shichi-Go-San, children in formal dress at shrines | 15 Nov, after departure |
-| Gion Odori | 1-10 Nov, and the Kyoto stay ends 29 Oct |
-| Hiroshima Dreamination illumination | Starts mid-to-late Nov |
-| Marunouchi, Shibuya, Roppongi illuminations | All switch on after the 5 Nov departure |
-| Sumo | No tournament in this window |
-| No Game No Life tie-ins | Nothing exists anywhere in 2026; the last collaboration cafe closed in 2018 |
-
-### Rejected on infant grounds
-| Item | Why |
-|---|---|
-| Chika idol shows and live houses | 85-120 dB in enclosed rooms. A real hearing-damage risk to a 12-month-old, not a comfort objection. |
-| Hedgehog cafe (HARRY Harajuku) | Age 10+ since Sept 2025 |
-| Owl cafes | Age-restricted, plus sustained animal-welfare criticism |
-| Cat cafes | Policies vary too widely by branch to plan around. Opportunistic only. |
-| Kabukicho at night | Japan's largest red-light district |
-| Omoide Yokocho | 5-8 seat smoky counters; the 2020 smoking law exempts small pre-existing venues |
-| Kurama Fire Festival | Open flame at close quarters, ends past 23:00, one narrow mountain railway as the only exit |
-| Fuji-Q Highland | Not infant-suitable and expensive |
-| Himeji Castle keep | Steep wooden stairs; the grounds and Koko-en garden are the stroller-friendly part |
-
-### Rejected on cost, capacity or redundancy
-| Item | Why |
-|---|---|
-| Nakano Broadway | Not distance, as an earlier pass wrongly said. It is two Chuo Line stops past Shinjuku. It duplicates Day 3's Akihabara for a family rather than a serious collector. |
-| Shimokitazawa, Koenji | Both genuinely good. Each needs its own half-day and all ten Tokyo days are built out. A capacity problem, not a cost one. |
-| Ninja Akasaka | Open, but ¥8,800-19,800 per person for an evening dinner |
-| AKB48 Theater | Japanese-language lottery dominated by fan-club categories; visitor odds are poor |
-| Nationwide JR Pass | ¥315,000 for three adults against ¥51,000 for the regional pass this route actually needs |
-| Umeda Sky Building | Wrong side of town, and Tsutenkaku already fills the view role on Day 29 |
-| Noh, IMAGINE NOH format | ¥23,000/adult |
-| Jidai Matsuri grandstand seats | ¥4,500-6,500/adult for what is free from the street |
-
-### An expectation to reset
-**Lolita and gothic Lolita fashion is not a street scene any more.** The Jingu-bashi
-cosplayer gathering faded years ago. The fashion lives in boutiques inside the
-Laforet building in Harajuku: Angelic Pretty, Baby the Stars Shine Bright, and Alice
-and the Pirates. Day 5 goes there.
-
-**Yukata is summer dress.** Autumn festival-goers wear happi coats or formal dress.
-The specific "anime yukata at a summer festival" scene belongs to July and August.
-What this trip does offer instead is the Jidai Matsuri costume parade on Day 16 and
-two temple markets with real food stalls on Days 15 and 19.
+Phone calls and bookings are listed in the advance-booking part.

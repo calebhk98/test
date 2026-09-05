@@ -1,7 +1,7 @@
 ## Day 28 - Tuesday, November 3, 2026 - Osaka
 
-**Base:** Osaka
-**Weather (typical):** 17°C / 10°C, dry
+**Base:** Osaka  
+**Weather (typical):** 17°C / 10°C, dry  
 **Theme:** Culture Day, the final valid day of the JR Kansai-Hiroshima Area Pass (day trip to Kobe), and opening night of the Midosuji illumination
 
 **Culture Day precision:** Nov 3 is Bunka no Hi (Culture Day). Only the **National Museum of Art, Osaka** is confirmed free that date. This is NOT blanket free admission across Osaka museums - a lot of "free museum" listicles are actually describing **Kansai Culture Day, Nov 15-16**, which falls after this trip departs (Day 30 is Nov 5). Every other paid site below is charged at its normal rate.
@@ -37,10 +37,10 @@ Active out-of-lodging time: ~7h55 (morning museum-plus-Kobe circuit ~5h45, eveni
 
 ### Lodging
 
-**Night:** 2 of 3
-**Hotel:** Toyoko Inn Osaka Namba
-**Address:** Namba area (specific branch address unverified)
-**Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)
+**Night:** 2 of 3  
+**Hotel:** Toyoko Inn Osaka Namba  
+**Address:** Namba area (specific branch address unverified)  
+**Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
 
@@ -89,8 +89,8 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ## Day 29 - Wednesday, November 4, 2026 - Osaka
 
-**Base:** Osaka
-**Weather (typical):** 17°C / 10°C, dry
+**Base:** Osaka  
+**Weather (typical):** 17°C / 10°C, dry  
 **Theme:** Central Osaka on foot and by metro - castle, market, retro tower, canal - the trip's last full day
 
 ### Schedule
@@ -121,10 +121,10 @@ Active out-of-lodging time: ~7h10 across two blocks (morning castle + midday res
 
 ### Lodging
 
-**Night:** 3 of 3
-**Hotel:** Toyoko Inn Osaka Namba
-**Address:** Namba area (specific branch address unverified)
-**Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)
+**Night:** 3 of 3  
+**Hotel:** Toyoko Inn Osaka Namba  
+**Address:** Namba area (specific branch address unverified)  
+**Unit:** one twin (2 adults + 2 infants) + one single (3rd adult)  
 **Nightly:** ¥13,000 (= $83.87)
 ### Meals
 
@@ -175,8 +175,8 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 ## Day 30 - Thursday, November 5, 2026 - Osaka -> Kansai Airport (KIX)
 
-**Base:** Osaka, departing
-**Weather (typical):** 17°C / 10°C, dry
+**Base:** Osaka, departing  
+**Weather (typical):** 17°C / 10°C, dry  
 **Theme:** Departure - Namba to Kansai Airport on the Nankai line, buffered for international check-in with a party of five
 
 The **JR Kansai-Hiroshima Area Pass expired at the end of Day 28 (Nov 3)**, so today's fare is paid in full. The **Nankai Airport Line rapid express** (¥930/adult, ¥2,790 for the party, ~45 min) is used rather than the JR Haruka, which runs roughly double that per adult for the same trip - Nankai is both cheaper and requires no reservation. International check-in at KIX wants about 3 hours ahead of departure for a party this size with a stroller and checked bags, so that buffer is built into the schedule below rather than assumed.

@@ -26,8 +26,8 @@ totals starting from ¥0 - no baseline adjustment needed.*
 
 ## Day 1 - Wednesday, October 7, 2026 - Tokyo (Narita arrival)
 
-**Base:** Tokyo
-**Weather (typical):** 22-24/15 °C, humid, light rain possible
+**Base:** Tokyo  
+**Weather (typical):** 22-24/15 °C, humid, light rain possible  
 **Theme:** Land at Narita, Keisei Access Express into Ueno, check in, one big kitchenette
 stock-up run, early night against jet lag with two infants.
 
@@ -55,10 +55,10 @@ stock-up run, early night against jet lag with two infants.
 
 ### Lodging
 
-**Night:** 1 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 1 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -99,8 +99,8 @@ No paid activities today - arrival, check-in, and settling in.
 
 ## Day 2 - Thursday, October 8, 2026 - Tokyo
 
-**Base:** Tokyo
-**Weather (typical):** 22-24/15 °C, humid, light rain possible
+**Base:** Tokyo  
+**Weather (typical):** 22-24/15 °C, humid, light rain possible  
 **Theme:** Senso-ji at a quieter morning hour, then Tokyo Solamachi - the aquarium and
 Skytree observatory are in the same complex, so the whole afternoon is one short walk.
 
@@ -158,10 +158,10 @@ than keeping them cleanly separate.
 
 ### Lodging
 
-**Night:** 2 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 2 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -210,8 +210,8 @@ Adult kcal: 500 + 100 (dango) + 750 + 700 = **2,050**.
 
 ## Day 3 - Friday, October 9, 2026 - Tokyo
 
-**Base:** Tokyo
-**Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo  
+**Weather (typical):** 22-24/15 °C, mild  
 **Theme:** A near-hotel day - Ueno Zoo, Tokyo National Museum, Shinobazu Pond, Ameyoko -
 everything inside a 15-minute walk of the Livemax.
 
@@ -249,10 +249,10 @@ everything inside a 15-minute walk of the Livemax.
 
 ### Lodging
 
-**Night:** 3 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 3 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -298,8 +298,8 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ## Day 4 - Saturday, October 10, 2026 - Tokyo
 
-**Base:** Tokyo
-**Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo  
+**Weather (typical):** 22-24/15 °C, mild  
 **Theme:** The Imperial Palace East Gardens, free, then south to the Shiba/Hamarikyu
 pocket of Minato and Chuo wards - Zojoji Temple and Tokyo Tower, then Hamarikyu
 Gardens, riding the Sumida River water bus home to Asakusa.
@@ -353,10 +353,10 @@ Gardens, riding the Sumida River water bus home to Asakusa.
 
 ### Lodging
 
-**Night:** 4 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 4 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -407,8 +407,8 @@ other transit leg in this plan; not separately verified for this operator.
 
 ## Day 5 - Sunday, October 11, 2026 - Tokyo
 
-**Base:** Tokyo
-**Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo  
+**Weather (typical):** 22-24/15 °C, mild  
 **Theme:** Meiji Jingu's forest approach, then Yoyogi Park for the midday rest, the
 Sunday rockabilly dancers, and a Takeshita Street/Laforet detour, before Shibuya
 Scramble at golden hour - the segment's fullest day, anchored by a
@@ -461,10 +461,10 @@ rest block relocated to the park itself.
 
 ### Lodging
 
-**Night:** 5 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 5 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -514,9 +514,9 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 
 ## Day 6 - Monday, October 12, 2026 - Tokyo (Sports Day)
 
-**Base:** Tokyo
+**Base:** Tokyo  
 **Weather (typical):** 22-24/15 °C, mild - a 3-day-weekend holiday, so
-the major sights (Senso-ji, Shibuya, Harajuku) are busier than usual today
+the major sights (Senso-ji, Shibuya, Harajuku) are busier than usual today  
 **Theme:** Deliberately low-crowd and free - the old backstreets of Yanaka and Nezu,
 away from the holiday crowds.
 
@@ -555,10 +555,10 @@ away from the holiday crowds.
 
 ### Lodging
 
-**Night:** 6 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 6 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -604,8 +604,8 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 
 ## Day 7 - Tuesday, October 13, 2026 - Kamakura (day trip)
 
-**Base:** Tokyo (day trip)
-**Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo
+**Base:** Tokyo (day trip)  
+**Weather (typical):** 22-24/15 °C, coastal, can be breezier than central Tokyo  
 **Theme:** Great Buddha, Hase-dera, the Enoden coastal railway, Yuigahama beach.
 
 ### Schedule
@@ -642,10 +642,10 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 
 ### Lodging
 
-**Night:** 7 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 7 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -690,8 +690,8 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 ## Day 8 - Wednesday, October 14, 2026 - Tokyo (Odaiba / Toyosu)
 
-**Base:** Tokyo
-**Weather (typical):** 22-24/15 °C, mild, waterfront breeze
+**Base:** Tokyo  
+**Weather (typical):** 22-24/15 °C, mild, waterfront breeze  
 **Theme:** The segment's marquee paid day - teamLab Planets - paired with a free
 waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on the way in.
 
@@ -726,10 +726,10 @@ waterfront stroll at Odaiba and a sushi/seafood breakfast at Toyosu Market on th
 
 ### Lodging
 
-**Night:** 8 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 8 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -782,8 +782,8 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 
 ## Day 9 - Thursday, October 15, 2026 - Yokohama (day trip)
 
-**Base:** Tokyo (day trip)
-**Weather (typical):** 22-24/15 °C, harbor breeze
+**Base:** Tokyo (day trip)  
+**Weather (typical):** 22-24/15 °C, harbor breeze  
 **Theme:** Minato Mirai's waterfront skyline, Cup Noodles Museum, Chinatown, Sankeien's
 traditional garden.
 
@@ -816,10 +816,10 @@ traditional garden.
 
 ### Lodging
 
-**Night:** 9 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 9 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
@@ -868,8 +868,8 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 
 ## Day 10 - Friday, October 16, 2026 - Tokyo
 
-**Base:** Tokyo
-**Weather (typical):** 22-24/15 °C, mild
+**Base:** Tokyo  
+**Weather (typical):** 22-24/15 °C, mild  
 **Theme:** A quiet park morning at Shinjuku Gyoen, the Ghibli Museum in Mitaka in the
 afternoon, and light packing for tomorrow's move to Kawaguchiko.
 
@@ -909,10 +909,10 @@ afternoon, and light packing for tomorrow's move to Kawaguchiko.
 
 ### Lodging
 
-**Night:** 10 of 10
-**Hotel:** Hotel Livemax Higashi-Ueno
-**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041
-**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)
+**Night:** 10 of 10  
+**Hotel:** Hotel Livemax Higashi-Ueno  
+**Address:** 3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041  
+**Unit:** 2-room split (1 twin: 2 adults + 2 infants co-sleeping; 1 single: 3rd adult)  
 **Nightly:** ¥18,000 (= $116.13)
 ### Meals
 
