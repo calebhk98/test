@@ -79,7 +79,7 @@ Adding those gives **¥{run+106000:,} (${round((run+106000)/FX):,})** planned ag
 
 ---
 
-# Part II: The daily itinerary
+# The Itinerary
 
 Every day records the schedule with durations, the lodging and its nightly cost, every
 meal with its adult calorie count, every transport leg with fare and duration, and every
@@ -111,16 +111,19 @@ for f in ["tokyo.md", "kawaguchiko.md", "kyoto.md", "hiroshima.md", "osaka.md"]:
 for letter, name, fn in [("D", "Hotels and lodging", "hotels.md"),
                          ("E", "Advance booking", "advance-booking.md"),
                          ("F", "Shopping lists and supply runs", "shopping-lists.md"),
-                         ("G", "Open decisions", "open-decisions.md")]:
+                         ("G", "Open decisions", "open-decisions.md"),
+                         ("H", "Why these dates", "why-dates.md"),
+                         ("I", "Why this route", "why-route.md"),
+                         ("J", "How the money works", "money.md")]:
     body += ["", "---", "", f"## Appendix {letter}: {name}", "",
              demote((ROOT / fn).read_text(), 1)]
 
 app = (ROOT / "99-appendix.md").read_text()
-for old, new_h in [(r"^##\s*Appendix B\..*$", "## Appendix H: Japan with a 12-month-old and a 20-month-old"),
-                   (r"^##\s*Appendix C\..*$", "## Appendix I: How 2,000 calories a day actually gets bought"),
-                   (r"^##\s*Appendix D\..*$", "## Appendix J: Confidence and sources")]:
+for old, new_h in [(r"^##\s*Appendix B\..*$", "## Appendix K: Japan with a 12-month-old and a 20-month-old"),
+                   (r"^##\s*Appendix C\..*$", "## Appendix L: How 2,000 calories a day actually gets bought"),
+                   (r"^##\s*Appendix D\..*$", "## Appendix M: Confidence and sources")]:
     app = re.sub(old, new_h, app, flags=re.M)
-m = re.search(r"^## Appendix H:", app, re.M)
+m = re.search(r"^## Appendix K:", app, re.M)
 body += ["", "---", "", app[m.start():].strip()]
 
 doc = "\n".join(body)
@@ -225,7 +228,7 @@ def lookup(name):
 # Apply to every Activities table in Part II.
 ACT_HDR = "| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |"
 out_lines, in_act = [], False
-p2_start = doc.index("# Part II: The daily itinerary")
+p2_start = doc.index("# The Itinerary")
 p2_end = doc.index("# Appendices")
 head, mid, tail = doc[:p2_start], doc[p2_start:p2_end], doc[p2_end:]
 linked = 0
@@ -251,6 +254,32 @@ start = doc.index("## Appendix A: Topic index")
 end = doc.index("## Appendix C: The five places")
 section = re.sub(r"(\|\s)([\d,\s/]+?)(\s\|)", link_day_cell, doc[start:end])
 doc = doc[:start] + section + doc[end:]
+
+# Link store names in the day schedules to their shopping-run section.
+STORE_CITY = {
+    "Gyomu Super Ueno-Hirokoji": "Tokyo shopping runs",
+    "Gyomu Super Ueno-Koen": "Tokyo shopping runs",
+    "LIFE Bioral": "Tokyo shopping runs",
+    "OK Store": "Tokyo shopping runs",
+    "OGINO Kawaguchiko": "Kawaguchiko shopping runs",
+    "Gyomu Super Saiin": "Kyoto shopping runs",
+    "Fresco Omiya": "Kyoto shopping runs",
+    "ekie": "Hiroshima shopping runs",
+    "Life Namba": "Osaka shopping runs",
+    "Cocokara Fine Namba": "Osaka shopping runs",
+}
+shop_links = 0
+p2s = doc.index("# The Itinerary"); p2e = doc.index("# Appendices")
+seg = doc[p2s:p2e]
+for store, section in sorted(STORE_CITY.items(), key=lambda kv: -len(kv[0])):
+    a = anchors.get(section)
+    if not a:
+        continue
+    pat = re.compile(r"(?<!\[)\b" + re.escape(store) + r"\b(?![^\[]*\]\()")
+    seg, n = pat.subn(f"[{store}](#{a})", seg)
+    shop_links += n
+doc = doc[:p2s] + seg + doc[p2e:]
+print(f"store names linked to shopping runs: {shop_links}")
 
 # ------------------------------------------------------------ table of contents --
 BOILERPLATE = {"schedule", "lodging", "meals", "transport", "activities"}

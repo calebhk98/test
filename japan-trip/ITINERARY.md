@@ -2,21 +2,9 @@
 
 ## Table of Contents
 
-  - [1. Executive summary](#1-executive-summary)
-  - [2. Why these dates](#2-why-these-dates)
-    - [The window: 7 October - 5 November 2026](#the-window-7-october---5-november-2026)
-    - [The honest cost of choosing this window](#the-honest-cost-of-choosing-this-window)
-    - [What was rejected, and why](#what-was-rejected-and-why)
-  - [3. Why this route](#3-why-this-route)
-  - [4. How the money works](#4-how-the-money-works)
-    - [Allocation](#allocation)
-    - [Why planned spend is $8,294 rather than $9,000](#why-planned-spend-is-8294-rather-than-9000)
-    - [Why the lodging is two rooms at every stop](#why-the-lodging-is-two-rooms-at-every-stop)
-    - [Why the food budget works](#why-the-food-budget-works)
-    - [How infants change the arithmetic](#how-infants-change-the-arithmetic)
-  - [5. What to verify before booking](#5-what-to-verify-before-booking)
+  - [Executive summary](#executive-summary)
   - [6. The thirty days at a glance](#6-the-thirty-days-at-a-glance)
-- **[Part II: The daily itinerary](#part-ii-the-daily-itinerary)**
+- **[The Itinerary](#the-itinerary)**
 - **[Days 1-10 - Tokyo](#days-1-10---tokyo)**
   - Days: [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival)  [2](#day-2---thursday-october-8-2026---tokyo)  [3](#day-3---friday-october-9-2026---tokyo)  [4](#day-4---saturday-october-10-2026---tokyo)  [5](#day-5---sunday-october-11-2026---tokyo)  [6](#day-6---monday-october-12-2026---tokyo-sports-day)  [7](#day-7---tuesday-october-13-2026---kamakura-day-trip)  [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu)  [9](#day-9---thursday-october-15-2026---yokohama-day-trip)  [10](#day-10---friday-october-16-2026---tokyo)
   - [Tokyo segment totals (Days 1-10)](#tokyo-segment-totals-days-1-10)
@@ -86,9 +74,12 @@
     - [1. Decisions for the family](#1-decisions-for-the-family)
     - [2. Deadlines](#2-deadlines)
     - [3. Verify nearer the date](#3-verify-nearer-the-date)
-  - [Appendix H: Japan with a 12-month-old and a 20-month-old](#appendix-h-japan-with-a-12-month-old-and-a-20-month-old)
-  - [Appendix I: How 2,000 calories a day actually gets bought](#appendix-i-how-2000-calories-a-day-actually-gets-bought)
-  - [Appendix J: Confidence and sources](#appendix-j-confidence-and-sources)
+  - [Appendix H: Why these dates](#appendix-h-why-these-dates)
+  - [Appendix I: Why this route](#appendix-i-why-this-route)
+  - [Appendix J: How the money works](#appendix-j-how-the-money-works)
+  - [Appendix K: Japan with a 12-month-old and a 20-month-old](#appendix-k-japan-with-a-12-month-old-and-a-20-month-old)
+  - [Appendix L: How 2,000 calories a day actually gets bought](#appendix-l-how-2000-calories-a-day-actually-gets-bought)
+  - [Appendix M: Confidence and sources](#appendix-m-confidence-and-sources)
 
 **3 adults + 2 infants (~12 months and ~20 months) | 7 October - 5 November 2026 | 30 days, 29 nights**
 
@@ -97,7 +88,7 @@ Excluded from the $9,000: international airfare, passports, visas, travel insura
 
 ---
 
-## 1. Executive summary
+## Executive summary
 
 | | |
 |---|---|
@@ -118,198 +109,6 @@ trips that a faster itinerary would turn into hotel changes. Kamakura, Yokohama,
 Uji, Himeji and Kobe are all reached and returned from without touching the luggage.
 
 ---
-
-## 2. Why these dates
-
-### The window: 7 October - 5 November 2026
-
-Four things had to line up at once: typhoon risk, temperature, holiday pricing, and
-the autumn foliage premium. October into early November is the only month where all
-four land favourably.
-
-**Typhoons taper.** Named-storm formation averages 5.7 in August and 5.0 in September
-against 3.4 in October, and September is the month storms most often actually track
-into Japan. Arriving on 7 October accepts a small residual risk in the first days and
-then drops into the clear. This is also why the trip does not start in September, when
-the same itinerary would be materially cheaper.
-
-**Temperatures suit small children.** Tokyo and Kyoto run 21-25 °C by day and around
-15 °C at night through October, easing to 17 °C / 10 °C by early November. That is the
-widest comfortable-outdoor band of the year, with none of the summer humidity that
-makes carrying an infant genuinely unpleasant. Hiroshima's JMA normals confirm it:
-23.7 °C / 14.9 °C in October, 17.7 °C / 8.9 °C in November.
-
-**Every major domestic travel surge is avoided.** Golden Week is 29 April - 6 May.
-Obon is 13-16 August. Silver Week 2026 is 19-23 September, a rare five-day run that
-ends a fortnight before arrival. New Year is late December. None of them touch this
-window. Two ordinary public holidays fall inside it, both handled in the daily plan:
-Sports Day on Monday 12 October, which closes a three-day weekend during the Tokyo
-leg, and Culture Day on Tuesday 3 November during the Osaka leg.
-
-**The foliage premium is dodged.** By mid-November, autumn-foliage demand pushes Kyoto
-hotel rates roughly 30-60% above baseline, the second most expensive window of the
-Japanese year after cherry blossom. The Kyoto stay ends on 29 October, before that
-begins, and departure on 5 November clears the country before it peaks.
-
-### The honest cost of choosing this window
-
-The 2026 forecast from the Japan Meteorological Corporation puts peak koyo at roughly
-**29 November in Tokyo, 4 December in Osaka, and 11 December in Kyoto.** This trip is
-therefore before peak foliage in every lowland city it visits. Anyone picturing red
-maples over Kiyomizu-dera should know that is a mid-November-to-December photograph
-and it is being traded away for the 30-60% Kyoto room premium that comes with it.
-
-The consolation is smaller than it first appears, and it is worth being exact about.
-Kawaguchiko sits at roughly 830 m and elevation colours weeks before the basins do,
-but its own best window is late October into early November, and the Fuji leg falls on
-17-19 October. So the realistic expectation there is first colour at altitude, not a
-peak display, and the Momiji Kairo maple corridor's illumination does not begin until
-around 1 November, after the stay ends.
-
-Stated plainly: **this itinerary is early for autumn foliage everywhere it goes.**
-Kawaguchiko is the only stop with a real chance of meaningful colour and even that is
-early-stage. If seeing Japan in autumn colour is a primary goal rather than a bonus,
-the trip belongs in mid-to-late November, and the budget has to absorb the Kyoto room
-premium that comes with it. The dates here optimise for cost, weather and travelling
-with two children under two, in that order.
-
-### What was rejected, and why
-
-| Window | Trade-off |
-|---|---|
-| Late Jan - Feb | Cheapest of the year, but cold-weather logistics with two under-twos are materially harder and it is peak influenza season |
-| Late Mar - early Apr | Cherry blossom. The most expensive window in Japan. Breaks the $9,000 budget outright |
-| Mid-May | Pleasant and moderately priced, but no scenic payoff and it runs toward the rainy season |
-| Mid-November | The best weather and near-peak foliage, and the reason the budget fails. Kyoto rooms at a 30-60% premium across ten nights is roughly $600-1,100 of pure surcharge |
-| **7 Oct - 5 Nov** | **Chosen.** Best available balance of cost, weather and infant suitability |
-
----
-
-## 3. Why this route
-
-Tokyo (10 nights) to Kawaguchiko (3) to Kyoto (10) to Hiroshima (3) to Osaka (3),
-flying out of Kansai.
-
-**The open jaw pays for itself.** Flying home from Osaka instead of returning to Tokyo
-saves a ¥13,320-per-adult Tokaido backtrack, about $258 for three adults, plus a whole
-travel day. Most carriers price a Narita-in / Kansai-out itinerary within a few percent
-of a Tokyo round trip.
-
-**Kawaguchiko is placed where it is for a transport reason.** Going Tokyo to Fuji to
-Kyoto in that order means the Fuji leg costs one short bus ride out of Shinjuku rather
-than a there-and-back detour. It also puts the trip at elevation in the one week the
-maples are turning.
-
-**Hiroshima earns its three nights through the rail pass.** Kyoto to Hiroshima to Osaka
-at walk-up fares is ¥20,480 per adult, ¥61,440 for three. The 5-day JR Kansai-Hiroshima
-Area Pass is ¥17,000 per adult, ¥51,000 for three, and it also covers the Miyajima
-ferry, local Hiroshima JR, and a fifth-day trip out of Osaka to Himeji or Kobe. The
-pass is cheaper than the two shinkansen tickets alone.
-
----
-
-## 4. How the money works
-
-### Allocation
-
-These are the reconciled figures, summed from the 30 daily blocks rather than
-allocated top-down. The category rows below add exactly to the day-by-day totals.
-
-| Category | ¥ | $ | Share of planned |
-|---|---|---|---|
-| Lodging, 29 nights | 531,580 | 3,430 | 43% |
-| Food, 30 days | 243,000 | 1,568 | 20% |
-| Activities and admissions | 182,210 | 1,176 | 15% |
-| Transport | 177,530 | 1,145 | 14% |
-| Baby consumables | 68,000 | 439 | 5% |
-| Misc: eSIM, laundry, lockers, forwarding | 38,000 | 245 | 3% |
-| **Planned** | **1,285,540** | **8,294** | 100% |
-| Contingency (8.2%) | 114,460 | 738 | |
-| **Total budget** | **1,400,000** | **9,032** | |
-
-### Why planned spend is $8,294 rather than $9,000
-
-The reserve is doing real work rather than padding a number. **No lodging rate in this
-report is a quote.** Booking engines returned no date-stamped 2026 availability, so all
-five nightly figures are current "from" rates adjusted for double occupancy and shoulder
-season. If the real quotes land 20% above estimate, lodging goes from $3,277 to $3,932
-and eats $655 of the reserve on its own. A 10-yen move in the exchange rate is worth
-another $500 or so on a trip this size.
-
-The single largest discretionary item is Day 13, where the party leaves the
-Kawaguchiko hostel for one night at a lakeside ryokan: tatami room, futon bedding, a
-kaiseki dinner and a rentable private family bath. That costs ¥23,580 above the night
-it replaces, plus about ¥5,900 for the ryokan meals.
-
-**What remains is ¥114,460 ($738), about 7.3%, and that is thin.** Name the risk
-plainly: if the five lodging quotes come back 20% above these estimates, that is
-roughly ¥106,000 and it would consume the whole reserve. The trip would still land
-under $9,000, with nothing left over. The first three things to cut in that case,
-in order, are the Kyoto kimono rental (¥15,840), the Anpanman museum in Kobe
-(¥11,250) and the Nishijin weaving session (¥7,590). Together they are $224 and
-they are the newest and most discretionary items in the plan.
-
-### Why the lodging is two rooms at every stop
-
-Standard Japanese hotel rooms cap at two adults, and most business chains enforce a
-hard headcount per room regardless of guest age. A single unit that legally sleeps
-3 adults + 2 infants is a scarce, premium product: family apartment-hotels quote
-¥25,000-50,000 a night, which across 29 nights is $4,700-9,400 and consumes the
-entire budget on its own.
-
-The fix is a **two-room split at every stop**: one twin room holding two adults and
-both infants, plus one single for the third adult. Toyoko Inn and Hotel Livemax both
-allow a preschool child to co-sleep free, one per bed, so a twin room lawfully houses
-two adults and two infants and no crib is required. That lands lodging at **¥508,000
-($3,277)**, roughly a third of what one large family unit would have cost.
-
-Two consequences follow. The Tokyo property has an in-room
-kitchenette, and the three Toyoko Inn stays include a free breakfast buffet for every
-guest including bed-sharing children, which removes breakfast cost on 16 of the 30
-days. Both feed directly into the food budget below.
-
-### Why the food budget works
-
-Self-catering in Japan is cheap. Cooking 2,000 kcal per adult from a supermarket runs
-about ¥820-930 per person, roughly ¥2,600 a day for three adults, with another
-¥1,400-2,400 for two infants. That floor, around $22 a day for the whole party, is what
-makes the arithmetic survive once lodging takes 41% of the budget.
-
-The daily plan spends well above that floor on purpose, because a month in Japan that
-never eats out is not a trip worth taking. Free breakfast on 16 of the 30 days and a
-kitchen at two of the five bases are what buy the restaurant meals everywhere else.
-
-### How infants change the arithmetic
-
-Under-sixes are close to free in Japan, and it matters more than it sounds:
-
-- **JR, including shinkansen:** free, up to two young children per fare-paying adult. With three adults there is room for six, so both ride free everywhere on the network.
-- **Tokyo Metro, Toei, Osaka Metro, Kyoto city buses:** free under six.
-- **Museums, temples, gardens, castles:** effectively universally free under six.
-- **Miyajima ferry:** free, and the ¥100 island visitor tax exempts preschoolers.
-
-**The exception is highway buses,** and it is the one place the plan pays. Fujikyu and
-Keio require a paid seat for a child who can sit independently, and their own wording
-discourages lap-riding to the point of possible boarding refusal. The 20-month-old is
-therefore budgeted a paid seat on both bus legs, and the 12-month-old as a lap infant.
-
-Net effect: two extra people cost roughly $439 in diapers, formula and baby food across
-thirty days, and almost nothing in fares or admissions.
-
----
-
-## 5. What to verify before booking
-
-Nothing in this report is a quote. Every price is a 2026 planning estimate built on
-cited current rates, and four items deserve a real check before money moves:
-
-1. **All five room rates.** Booking engines returned no date-stamped 2026 availability to research, so nightly figures are adjusted "from" rates. The 12.9% contingency exists mostly for this.
-2. **Street addresses at Kyoto, Kawaguchiko, Hiroshima and Osaka.** Four of the five properties are identified by station proximity rather than a confirmed street address, and are marked as such wherever they appear. Confirm on the operator's own site.
-3. **The infant co-sleeping policy, in writing, at each property.** The whole lodging strategy rests on it. Declare both infants' ages when booking; some chains count every body against a hard room cap.
-4. **The exchange rate,** within two weeks of departure. The pair has moved ¥5-8 in a single week during 2026, which is $300-500 on a trip this size.
-
-One further note: the Fujikyu Mishima liner on Day 14 is all-seats-reserved and books
-out. Reserve it as soon as the window opens.
 
 ---
 
@@ -357,7 +156,7 @@ Adding those gives **¥1,285,540 ($8,294)** planned against a
 
 ---
 
-# Part II: The daily itinerary
+# The Itinerary
 
 Every day records the schedule with durations, the lodging and its nightly cost, every
 meal with its adult calorie count, every transport leg with fare and duration, and every
@@ -418,9 +217,9 @@ stock-up run, early night against jet lag with two infants.
 | 12:05 | 0h40 | Lodging | Check-in, drop bags |
 | 12:45 | 0h45 | Food | Lunch near the hotel, Ueno |
 | 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 15:15 | 0h12 | Transit | Walk, hotel -> Gyomu Super Ueno-Hirokoji |
+| 15:15 | 0h12 | Transit | Walk, hotel -> [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) |
 | 15:27 | 1h00 | Food | Supermarket stock-up run (rice, eggs, milk, produce, pantry staples, initial infant food) - a full-price bulk shop; mid-afternoon is well before any evening markdown window, so no hangaku applies here |
-| 16:27 | 0h12 | Transit | Walk back, Gyomu Super Ueno-Hirokoji -> hotel |
+| 16:27 | 0h12 | Transit | Walk back, [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) -> hotel |
 | 16:39 | 0h18 | Admin | Unpack groceries |
 | 16:57 | 0h48 | Rest | Quiet stroller loop of the block, unwind |
 | 17:45 | 1h00 | Food | Dinner - first self-catered meal at the kitchenette |
@@ -430,7 +229,7 @@ stock-up run, early night against jet lag with two infants.
 - Stroller works fine throughout Day 1 - airport, wide station corridors, hotel.
 - This is a travel day, not a sightseeing day: the ~9h30-17:00 span is mostly immigration,
   transit, and a full 1h45 rest block, not active touring.
-- The supermarket run is a genuine round trip on foot to Gyomu Super Ueno-Hirokoji
+- The supermarket run is a genuine round trip on foot to [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs)
   (2-3-4 Ueno, Taito-ku, roughly a 12-minute walk from the hotel), not a stop folded
   into the hotel block - hence the two short Transit rows either side of it.
 - Active out-of-lodging time: about 4h44 (3h20 before the rest block, 1h24 after), plus
@@ -621,9 +420,9 @@ everything inside a 15-minute walk of the Livemax.
 | 17:35 | 1h00 | Food | Dinner, self-catered |
 | 18:35 | 0h45 | Admin | Bath, wind-down |
 | 19:20 | 0h40 | Rest | Quiet evening - both infants asleep, adults wind down |
-| 20:00 | 0h12 | Transit | One adult: walk, hotel -> Gyomu Super Ueno-Hirokoji, for the hangaku deli run |
+| 20:00 | 0h12 | Transit | One adult: walk, hotel -> [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs), for the hangaku deli run |
 | 20:12 | 0h20 | Food | Hangaku run - 50%-off deli items (karaage, potato salad, rice balls) bought for tomorrow's lunch top-up; store closes 21:00 |
-| 20:32 | 0h12 | Transit | Walk back, Gyomu Super Ueno-Hirokoji -> hotel |
+| 20:32 | 0h12 | Transit | Walk back, [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) -> hotel |
 | 20:44 | - | Rest | Lights out |
 
 - No paid transit before 15:15 - everything through lunch is a walk from the hotel;
@@ -638,7 +437,7 @@ everything inside a 15-minute walk of the Livemax.
   the other two wait nearby with the stroller.
 - **The evening hangaku run is real, not assumed free.** Dinner at 17:35 is well
   before any supermarket markdown window, so it is costed at full price. Once both
-  infants are down, one adult walks alone to Gyomu Super Ueno-Hirokoji (2-3-4 Ueno,
+  infants are down, one adult walks alone to [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs) (2-3-4 Ueno,
   Taito-ku, about a 12-minute walk from the hotel, open to 21:00) to catch the true
   20:00-20:45 hangaku window on deli items - a genuine 44-minute round trip out of
   that adult's evening, buying half-price items for tomorrow's lunch rather than
@@ -661,7 +460,7 @@ everything inside a 15-minute walk of the Livemax.
 | Breakfast | Rice, grilled salted salmon flake, miso soup, pickles | Cooked in room; Hotel kitchenette | 500 | 750 |
 | Lunch | Street food grazing - takoyaki, pan-fried gyoza, yakitori skewers | Ameyoko market, Taito-ku | 700 | 2,150 |
 | Dinner | Deli items - karaage, potato salad, rice balls, over rice from the kitchenette, bought at full price (17:35 is well before any markdown window) | Supermarket near hotel | 750 | 2,600 |
-| Late hangaku run | 50%-off deli top-up (karaage, potato salad, rice balls) bought after both infants are down, for tomorrow's lunch rather than tonight's dinner | Gyomu Super Ueno-Hirokoji, 2-3-4 Ueno, Taito-ku (open to 21:00) | n/a | 900 |
+| Late hangaku run | 50%-off deli top-up (karaage, potato salad, rice balls) bought after both infants are down, for tomorrow's lunch rather than tonight's dinner | [Gyomu Super Ueno-Hirokoji](#tokyo-shopping-runs), 2-3-4 Ueno, Taito-ku (open to 21:00) | n/a | 900 |
 | Infant food | 3 formula feeds plus 2 Pigeon pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the takoyaki filling (deboned) and rice, plus a Morinaga snack pouch | Conbini near hotel | n/a | 2,100 |
 
 Adult kcal: 500 + 700 + 750 = **1,950**.
@@ -1464,9 +1263,9 @@ from MASTER-BRIEF and is not flexed.
 | 14:20 | 1h10 | Activity | Chureito Pagoda - climb, viewpoint, descend (carrier-only) |
 | 15:30 | 0h10 | Transit | Walk, park entrance → Shimoyoshida Stn |
 | 15:40 | 0h15 | Transit | Shimoyoshida Stn → Kawaguchiko Stn, Fuji Kyuko Line |
-| 15:55 | 0h15 | Transit | Walk, Kawaguchiko Stn → OGINO Kawaguchiko (545-3 Funatsu) |
-| 16:10 | 0h35 | Food | Grocery run at OGINO Kawaguchiko (food section open 9:00-21:00), stock the shared kitchen |
-| 16:45 | 0h20 | Transit | Walk, OGINO Kawaguchiko → K's House |
+| 15:55 | 0h15 | Transit | Walk, Kawaguchiko Stn → [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) (545-3 Funatsu) |
+| 16:10 | 0h35 | Food | Grocery run at [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) (food section open 9:00-21:00), stock the shared kitchen |
+| 16:45 | 0h20 | Transit | Walk, [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) → K's House |
 | 17:05 | 0h25 | Admin | Free time / laundry (K's House washer-dryer, ¥500/load - trip-level line, not in day total) |
 | 17:30 | 1h00 | Food | Cook dinner in shared guest kitchen |
 | 18:30 | 0h30 | Food | Dinner |
@@ -1474,7 +1273,7 @@ from MASTER-BRIEF and is not flexed.
 
 **On Chureito Pagoda:** the pagoda viewing platform sits above 398 stone steps; a longer, gentler zig-zag slope path runs alongside them as an alternative, but it is still an uphill climb with no ramp or elevator anywhere on the route - both options are carrier-only, not stroller-compatible, the whole way up. The practical plan: one adult carries one infant up (by either route), while the other two adults, the stroller, and the second infant wait at the flat lower shrine grounds (Arakura Sengen Shrine) or take a turn on a later visit. It is worth the effort for one reason - the five-story pagoda framed against Mt. Fuji from the top is the single most photographed view in the Fuji Five Lakes region, and arguably in Japan. The Kawaguchiko Music Forest Museum, a music-box museum on the north shore, isn't part of this day: fitting in the stair climb plus the two extra train rides Chureito needs takes its own slot rather than working as an add-on.
 
-**On the grocery run and hangaku timing:** OGINO Kawaguchiko's food section runs 9:00-21:00 (verified), so it's a small-town store, not a 24-hour city outlet, but it isn't an early-closing one either. The Day 11 shop happens at 16:10-16:45, mid-afternoon and nowhere near this store's own hangaku window, so it's priced at full retail throughout this leg, not a discounted run - no markdown is claimed or needed here, since the family isn't trying to squeeze an evening store trip in around the ~19:00-19:30 infant bedtime this shared-kitchen stretch already keeps.
+**On the grocery run and hangaku timing:** [OGINO Kawaguchiko](#kawaguchiko-shopping-runs)'s food section runs 9:00-21:00 (verified), so it's a small-town store, not a 24-hour city outlet, but it isn't an early-closing one either. The Day 11 shop happens at 16:10-16:45, mid-afternoon and nowhere near this store's own hangaku window, so it's priced at full retail throughout this leg, not a discounted run - no markdown is claimed or needed here, since the family isn't trying to squeeze an evening store trip in around the ~19:00-19:30 infant bedtime this shared-kitchen stretch already keeps.
 
 **Also considered and rejected for this leg:** Kitaguchi Hongu Fuji Sengen Jinja (the cedar-forest shrine a 15-20 minute walk from Chureito) is honestly the more infant-friendly of the two Fujiyoshida-area options - flat forest paths, no stair climb - but pairing it with Chureito the same afternoon would add another 30-40 minutes on top of an already-extended day, and no other day on this leg has the spare slack to host it instead: Day 12 already runs about an hour past its 7h active cap, and Day 13 has very little slack once the ryokan evening and the luggage-retrieval walk are factored in. Lake Motosu's Nakanokura Pass viewpoint (the ¥1,000-note view) needs a 50-minute bus ride plus a 20-30 minute uphill, unpaved, carrier-only hike for essentially the same lake-and-Fuji framing Oishi Park already delivers tomorrow with zero stairs and a 25-minute bus ride - not worth a spare half-day this trip doesn't have. The Fugaku Wind Cave and Narusawa Ice Cave (lava-tube caves near Aokigahara) are a genuinely different kind of activity, but sit a further 30-minute bus ride out, and the Ice Cave specifically requires crouching through low, narrow tunnels that do not work with a carried infant - between the added transit and only one of the two caves really being usable with this party, neither makes the cut on a leg that has already added one full extra outing.
 
@@ -1493,8 +1292,8 @@ Active out-of-lodging time: about 7h15 (3h50 before the rest block, 3h25 after),
 |---|---|---|---|---|
 | Breakfast | Toast (2 slices/adult), fried eggs, brewed coffee - last kitchenette meal, using up the Livemax pantry stock | Hotel Livemax Higashi-Ueno kitchenette | 550 | 700 |
 | Lunch | Eki-ben bento (mixed rice, tonkatsu or salmon, pickles), eaten on the highway bus | Busta Shinjuku food hall/kiosks | 700 | 2,700 |
-| Dinner | Chicken thigh and cabbage stir-fry over rice, tofu and miso soup - first shared-kitchen meal at K's House | K's House Mt. Fuji shared guest kitchen; ingredients from the Day 11 grocery run at OGINO Kawaguchiko, 545-3 Funatsu | 750 | 2,600 |
-| Infant food | Formula (12mo, Wakodo or Morinaga) + Pigeon/Wakodo pouches and mashed banana; 20mo eats rice and softened stir-fry vegetables off the family table | OGINO Kawaguchiko, 545-3 Funatsu (food section 9:00-21:00) | n/a | 2,000 |
+| Dinner | Chicken thigh and cabbage stir-fry over rice, tofu and miso soup - first shared-kitchen meal at K's House | K's House Mt. Fuji shared guest kitchen; ingredients from the Day 11 grocery run at [OGINO Kawaguchiko](#kawaguchiko-shopping-runs), 545-3 Funatsu | 750 | 2,600 |
+| Infant food | Formula (12mo, Wakodo or Morinaga) + Pigeon/Wakodo pouches and mashed banana; 20mo eats rice and softened stir-fry vegetables off the family table | [OGINO Kawaguchiko](#kawaguchiko-shopping-runs), 545-3 Funatsu (food section 9:00-21:00) | n/a | 2,000 |
 
 Adult kcal sum: 550 + 700 + 750 = **2,000**.
 
@@ -1508,8 +1307,8 @@ Adult kcal sum: 550 + 700 + 750 = **2,000**.
 | K's House → Kawaguchiko Stn | On foot | 0h15 | 0 | 0 |
 | Kawaguchiko Stn ↔ Shimoyoshida Stn | Fuji Kyuko Line, round trip | 0h30 riding | 220 (440 round trip) | 1,320 - infants ride free as accompanied under-school-age children, standard practice on Japanese railways (planning estimate) |
 | Shimoyoshida Stn ↔ Arakurayama Sengen Park entrance | On foot, round trip | 0h20 | 0 | 0 |
-| Kawaguchiko Stn → OGINO Kawaguchiko | On foot | 0h15 | 0 | 0 |
-| OGINO Kawaguchiko → K's House | On foot | 0h20 | 0 | 0 |
+| Kawaguchiko Stn → [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) | On foot | 0h15 | 0 | 0 |
+| [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) → K's House | On foot | 0h20 | 0 | 0 |
 
 Local city-transit fares above are 2026 planning estimates from current IC-card fare bands, not independently re-verified this session.
 
@@ -1584,8 +1383,8 @@ Active out-of-lodging time: about 8h05 (5h45 before the rest block, 2h20 after),
 |---|---|---|---|---|
 | Breakfast | Rice, natto, fried eggs, brewed coffee | K's House Mt. Fuji shared guest kitchen | 550 | 750 |
 | Lunch | Houtou - flat, udon-like noodles simmered with kabocha squash, root vegetables and miso broth, the Yamanashi regional specialty; likely Hoto Fudou or another local houtou specialist (exact branch unconfirmed) | Fujikawaguchiko area | 750 | 4,200 |
-| Dinner | Yosenabe (mixed hot pot): thin-sliced pork, hakusai (napa cabbage), shiitake and enoki mushrooms, tofu, negi, simmered in a store-bought nabe-no-moto broth base and finished with udon noodles cooked in the leftover broth | K's House Mt. Fuji shared guest kitchen; ingredients carried over from the Day 11 OGINO Kawaguchiko grocery run | 700 | 3,000 |
-| Infant food | Formula (12mo, Wakodo/Pigeon pouches) - 20mo shares softened cabbage, mushrooms, tofu and udon straight from the pot, cooled and cut small | Carried over from the Day 11 OGINO Kawaguchiko run | n/a | 2,000 |
+| Dinner | Yosenabe (mixed hot pot): thin-sliced pork, hakusai (napa cabbage), shiitake and enoki mushrooms, tofu, negi, simmered in a store-bought nabe-no-moto broth base and finished with udon noodles cooked in the leftover broth | K's House Mt. Fuji shared guest kitchen; ingredients carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) grocery run | 700 | 3,000 |
+| Infant food | Formula (12mo, Wakodo/Pigeon pouches) - 20mo shares softened cabbage, mushrooms, tofu and udon straight from the pot, cooled and cut small | Carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) run | n/a | 2,000 |
 
 Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
@@ -1674,7 +1473,7 @@ Active out-of-lodging time: about 6h55 (4h00 before the rest block, 2h55 after),
 | Breakfast | Rice, natto, fried eggs, coffee - last shared-kitchen breakfast before checkout | K's House Mt. Fuji shared guest kitchen | 550 | 750 |
 | Lunch | Soba/udon shop (name unconfirmed) | Oshino Hakkai village | 750 | 2,600 |
 | Dinner | Kaiseki course dinner - roughly 8 courses: a seasonal appetizer, sashimi, a hoba-miso grilled dish, tempura, a simmered vegetable course, rice with local vegetables, miso soup, and seasonal fruit; the exact seasonal menu isn't published, priced as the ryokan's half-board dinner add-on | Lakeland Hotel Mizunosato dining room, 1070 Kodachi, Fujikawaguchiko | 750 | 5,940 |
-| Infant food | Formula (12mo, Wakodo or Morinaga) + Pigeon/Wakodo pouches; 20mo shares rice, miso soup and softened vegetables from the kaiseki table | Ryokan-provided course + pouches carried over from the Day 11 OGINO Kawaguchiko run | n/a | 1,700 |
+| Infant food | Formula (12mo, Wakodo or Morinaga) + Pigeon/Wakodo pouches; 20mo shares rice, miso soup and softened vegetables from the kaiseki table | Ryokan-provided course + pouches carried over from the Day 11 [OGINO Kawaguchiko](#kawaguchiko-shopping-runs) run | n/a | 1,700 |
 
 Adult kcal sum: 550 + 750 + 750 = **2,050**.
 
@@ -2203,17 +2002,17 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 14:40 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
 | 15:10 | 1h45 | Rest | Midday rest - hotel |
 | 16:55 | 1h00 | Rest | Downtime at hotel |
-| 17:55 | 0h40 | Food | Dinner - chicken katsu bento from Fresco Omiya (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
+| 17:55 | 0h40 | Food | Dinner - chicken katsu bento from [Fresco Omiya](#kyoto-shopping-runs) (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
 | 18:35 | 0h25 | Rest | Bath, bedtime routine, infants down |
 | 19:00 | 0h50 | Rest | Quiet evening at the hotel, infants asleep |
-| 19:50 | 0h20 | Transit | One adult walks alone to Gyomu Super Saiin, Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
+| 19:50 | 0h20 | Transit | One adult walks alone to [Gyomu Super Saiin](#kyoto-shopping-runs), Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
 | 20:10 | 0h15 | Food | Hangaku shopping - deli pastries and rice balls marked to 50% off after 20:00, restocking snacks for the next few days |
 | 20:25 | 0h20 | Transit | Walk back to Toyoko Inn |
 
 - **Imperial Palace note:** this segment already distinguished Kyoto Gyoen (the public park, visited on Day 16 for Jidai Matsuri viewing) from the Kyoto Imperial Palace/Gosho itself (the walled compound inside that park) - see Day 16's Activities table. The Gosho is toured today instead, since Jidai Matsuri day was already full: free entry, no reservation, self-guided walk-in 9:00-16:20 (closed Mondays), folded into the same subway route already used to reach Nijo Castle.
 - **Ryoan-ji and Tenjin-ichi both fit, verified.** Ryoan-ji is on this itinerary because it's the only karesansui (dry rock garden) anywhere in this 30-day trip, and it's the single most famous example of the form in Japan - a temple market doesn't substitute for that, so both stay. The geography cooperates: Kinkaku-ji, Ryoan-ji, and Kitano Tenmangu sit in a single northwest Kyoto cluster, and the day now flows through it in one direction rather than backtracking. Kinkaku-ji to Ryoan-ji is City Bus 59, 2 stops, about 5 minutes (padded to 0h15 with wait/boarding, matching this segment's other short bus hops). From Ryoan-ji, it's a verified 7-minute walk to the Ritsumeikan Daigaku-mae bus stop, where City Bus Route 50 (Kyoto Station - Kitano Tenmangu - Ritsumeikan Daigaku) runs directly to Kitano Tenmangu-mae - no return toward Kinkaku-ji, no doubling back. From there, the day continues on the same bus network back to Shijo-Omiya, same as before.
 - Both Ryoan-ji and the full Tenjin-ichi market fit without shortening anything else. Midday rest, at 1h45, stays within the 1h30-2h00 mandatory range; downtime and dinner both stay at the hotel afterward.
-- **Hangaku, done honestly:** timing tonight's supermarket bento at hangaku pricing right at 17:50, the moment the party gets back from downtime, is impossible - no supermarket marks anything down that early, and the true 50%-off wave for a standard supermarket runs 20:00-20:45 per this trip's own hangaku research (first token markdowns don't even start until roughly 19:30). That 20:00-20:45 window is also after this itinerary's ~19:00-19:30 infant bedtime, so it can never be a whole-family outing. The fix: dinner tonight is a full-price chicken katsu bento from Fresco Omiya, literally a minute from the hotel and open 24 hours, eaten in the room at the normal early-evening time the infants' schedule actually needs. The hangaku run happens later and separately - once the infants are down, one adult walks alone to Gyomu Super Saiin (Ukyo-ku, verified 9:00-21:00), arriving just after the 20:00 markdown, to restock deli pastries and rice balls at half price for the next few days' snacking. That costs one adult about 55 minutes of their evening while the other two stay with the sleeping infants - a real trade, not a free lunch.
+- **Hangaku, done honestly:** timing tonight's supermarket bento at hangaku pricing right at 17:50, the moment the party gets back from downtime, is impossible - no supermarket marks anything down that early, and the true 50%-off wave for a standard supermarket runs 20:00-20:45 per this trip's own hangaku research (first token markdowns don't even start until roughly 19:30). That 20:00-20:45 window is also after this itinerary's ~19:00-19:30 infant bedtime, so it can never be a whole-family outing. The fix: dinner tonight is a full-price chicken katsu bento from [Fresco Omiya](#kyoto-shopping-runs), literally a minute from the hotel and open 24 hours, eaten in the room at the normal early-evening time the infants' schedule actually needs. The hangaku run happens later and separately - once the infants are down, one adult walks alone to [Gyomu Super Saiin](#kyoto-shopping-runs) (Ukyo-ku, verified 9:00-21:00), arriving just after the 20:00 markdown, to restock deli pastries and rice balls at half price for the next few days' snacking. That costs one adult about 55 minutes of their evening while the other two stay with the sleeping infants - a real trade, not a free lunch.
 - Last day of this stretch - Day 20 continues the Kyoto stay under a separate itinerary segment.
 - Active out-of-lodging time: about 6h55, plus a 1h45 rest block.
 
@@ -2230,9 +2029,9 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
 | Lunch | Yatai lunch from Tenjin-ichi's food stalls: takoyaki (octopus dumplings), a warabimochi (bracken-starch jelly dusted with kinako soybean powder) cup, and a cup of Uji hojicha each | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | 700 | 3,600 |
-| Dinner | Chicken katsu and rice, miso soup, pickled vegetables - full price, bought too early (17:55) for any markdown | Fresco Omiya, Shimogyo-ku (1 min from Omiya Stn, open 24h) | 800 | 2,850 |
+| Dinner | Chicken katsu and rice, miso soup, pickled vegetables - full price, bought too early (17:55) for any markdown | [Fresco Omiya](#kyoto-shopping-runs), Shimogyo-ku (1 min from Omiya Stn, open 24h) | 800 | 2,850 |
 | Infant food | Wakodo/Morinaga formula tin for the 12-month-old plus pouches; the 20-month-old eats rice, miso soup (cooled, low-salt portion), and small pieces of katsu off the family table | Drugstore near Shijo-Omiya | n/a | 2,100 |
-| Hangaku snack restock | Deli pastries and rice balls marked to 50% off after 20:00, bought on a solo adult trip once the infants are asleep; banked for the next few days' snacking, not part of tonight's kcal | Gyomu Super Saiin, Ukyo-ku (verified hours 9:00-21:00) | n/a (banked) | 800 |
+| Hangaku snack restock | Deli pastries and rice balls marked to 50% off after 20:00, bought on a solo adult trip once the infants are asleep; banked for the next few days' snacking, not part of tonight's kcal | [Gyomu Super Saiin](#kyoto-shopping-runs), Ukyo-ku (verified hours 9:00-21:00) | n/a (banked) | 800 |
 
 Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 
@@ -4431,7 +4230,9 @@ one lunch and one breakfast (Days 11-12) for this reason, not for three.
 
 ### 2. Dated shopping runs
 
-#### TOKYO (Days 1-10, Hotel Livemax Higashi-Ueno, in-room kitchenette + fridge)
+#### Tokyo shopping runs
+
+Days [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival)-[10](#day-10---friday-october-16-2026---tokyo) | Hotel Livemax Higashi-Ueno, in-room kitchenette and fridge
 
 ##### Run 1 - Day 1, Wed 7 Oct, ~15:15-16:15 (arrival stock-up)
 **Store:** Gyomu Super, Ueno-Hirokoji branch, 2-chome Ueno, Taito-ku [VERIFIED chain and this
@@ -4515,7 +4316,9 @@ konbini infant top-ups, already priced day-by-day in `days-01-10-tokyo.md`.
 
 ---
 
-#### KAWAGUCHIKO (Days 11-12, K's House Mt. Fuji, shared guest kitchen)
+#### Kawaguchiko shopping runs
+
+Days [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko)-[12](#day-12---sunday-october-18-2026---kawaguchiko) | K's House Mt. Fuji, shared guest kitchen
 
 ##### Run - Day 11, Sat 17 Oct, ~16:10-16:45 (sized for Days 11-12 only)
 **Store:** OGINO Kawaguchiko, 545-3 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi
@@ -4547,7 +4350,9 @@ and to leave nothing behind when the K's House fridge has to hit zero at the Day
 
 ---
 
-#### KYOTO A + B (Days 15-23, Toyoko Inn Kyoto Shijo-Omiya, no kitchen, free breakfast) and DAY 14 ARRIVAL
+#### Kyoto shopping runs
+
+Days [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto)-[23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Toyoko Inn Kyoto Shijo-Omiya, no kitchen, free breakfast
 
 Day 14's dinner (arriving too late for the Toyoko Inn breakfast, which starts Day 15) is bought
 out near Kyoto/Omiya Stn per the day file (¥1,900 infant line) - a konbini stop, not a grocery
@@ -4608,7 +4413,9 @@ itemized in `days-15-19-kyoto-a.md` and `days-20-23-kyoto-b.md`.
 
 ---
 
-#### HIROSHIMA (Days 24-27, Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast)
+#### Hiroshima shopping runs
+
+Days [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)-[26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast
 
 ##### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
 **Store:** ekie, the shopping and supermarket complex directly connected to Hiroshima Station's
@@ -4635,7 +4442,9 @@ envelope is Toyoko Inn's free breakfast plus restaurant/konbini meals in `days-2
 
 ---
 
-#### OSAKA (Days 27-30, Toyoko Inn Osaka Namba, no kitchen, free breakfast)
+#### Osaka shopping runs
+
+Days [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)-[30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Toyoko Inn Osaka Namba, no kitchen, free breakfast
 
 ##### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
 **Store:** Life Namba, basement level, 1-2-3 Minato-machi, Naniwa-ku, Osaka, directly across
@@ -4675,7 +4484,9 @@ the pieces add up.
 
 ### 3. Run-down-before-you-move checklist
 
-#### Move 1 - Day 11, Tokyo -> Kawaguchiko (highway bus, Shinjuku)
+#### Move 1: Tokyo to Kawaguchiko
+
+Day [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko), highway bus from Shinjuku
 - **Already eaten down:** Day 10's meals are explicitly written to use up "the last of the Day 1
   pantry stock" (breakfast) and cook a "last-night" fried rice from remaining vegetables and egg
   (dinner) - by design, nothing perishable should be left in the Livemax fridge that morning.
@@ -4692,7 +4503,9 @@ the pieces add up.
 - **Reserved-seat bus note:** the Day 11 Fujikyu/Keio bus has assigned seats and limited luggage
   space per adult, one more reason not to carry bulky pantry items on this leg.
 
-#### Move 2 - Day 14, Kawaguchiko -> Mishima -> Kyoto (bus, then unreserved Hikari shinkansen)
+#### Move 2: Kawaguchiko to Kyoto
+
+Day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto), bus to Mishima then the Hikari shinkansen
 - **Already eaten down:** the Day 11 grocery run was deliberately sized for Days 11-12 only,
   so the K's House fridge should already read near-zero by the Day 12 dinner. Day 13 itself
   moves to the ryokan (no self-catering), so there is no Day 13 grocery run to run down at all.
@@ -4710,7 +4523,9 @@ the pieces add up.
 - **Ryokan night (Day 13):** kaiseki dinner and Japanese breakfast are both included - no
   shopping, no cooking, nothing to run down.
 
-#### Move 3 - Day 24, Kyoto -> Hiroshima (shinkansen, JR Kansai-Hiroshima Area Pass)
+#### Move 3: Kyoto to Hiroshima
+
+Day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), shinkansen on the JR Kansai-Hiroshima Area Pass
 - **Already eaten down:** trivially true - there has been no kitchen since Day 13, so nothing
   perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
   are dry infant supplies.
@@ -4721,14 +4536,18 @@ the pieces add up.
 - **Bin or leave behind:** nothing perishable exists to bin. Toiletries/room amenities opened at
   the Toyoko Inn are not worth carrying - leave them for housekeeping.
 
-#### Move 4 - Day 27, Hiroshima -> Osaka (shinkansen, JR Kansai-Hiroshima Area Pass, final valid days)
+#### Move 4: Hiroshima to Osaka
+
+Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), shinkansen on the pass's final valid days
 - **Already eaten down:** same logic as Move 3 - no kitchen in Hiroshima, so no perishables to
   run down.
 - **Carry:** remaining nappy stock from the Day 24 Hiroshima run (sized for the 4-night block,
   should be nearly used up), remaining formula/pouches. Light, dry, no change from the Kyoto
   pattern.
 
-#### Move 5 - Day 30, Osaka -> Kansai Airport -> fly home (**everything must be gone**)
+#### Move 5: Osaka to Kansai Airport
+
+Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix), flying home. **Everything must be gone.**
 - **Already eaten down:** the Osaka Day 27 run was deliberately sized for exactly the 3-night
   Osaka block (Days 27-29), with no restock planned for Day 29 or 30 - by the Day 29 night, the
   formula tin and pouches bought Day 27 should be at or near zero.
@@ -4931,7 +4750,192 @@ Phone calls and bookings are listed in the advance-booking part.
 
 ---
 
-## Appendix H: Japan with a 12-month-old and a 20-month-old
+## Appendix H: Why these dates
+
+#### The window: 7 October - 5 November 2026
+
+Four things had to line up at once: typhoon risk, temperature, holiday pricing, and
+the autumn foliage premium. October into early November is the only month where all
+four land favourably.
+
+**Typhoons taper.** Named-storm formation averages 5.7 in August and 5.0 in September
+against 3.4 in October, and September is the month storms most often actually track
+into Japan. Arriving on 7 October accepts a small residual risk in the first days and
+then drops into the clear. This is also why the trip does not start in September, when
+the same itinerary would be materially cheaper.
+
+**Temperatures suit small children.** Tokyo and Kyoto run 21-25 °C by day and around
+15 °C at night through October, easing to 17 °C / 10 °C by early November. That is the
+widest comfortable-outdoor band of the year, with none of the summer humidity that
+makes carrying an infant genuinely unpleasant. Hiroshima's JMA normals confirm it:
+23.7 °C / 14.9 °C in October, 17.7 °C / 8.9 °C in November.
+
+**Every major domestic travel surge is avoided.** Golden Week is 29 April - 6 May.
+Obon is 13-16 August. Silver Week 2026 is 19-23 September, a rare five-day run that
+ends a fortnight before arrival. New Year is late December. None of them touch this
+window. Two ordinary public holidays fall inside it, both handled in the daily plan:
+Sports Day on Monday 12 October, which closes a three-day weekend during the Tokyo
+leg, and Culture Day on Tuesday 3 November during the Osaka leg.
+
+**The foliage premium is dodged.** By mid-November, autumn-foliage demand pushes Kyoto
+hotel rates roughly 30-60% above baseline, the second most expensive window of the
+Japanese year after cherry blossom. The Kyoto stay ends on 29 October, before that
+begins, and departure on 5 November clears the country before it peaks.
+
+#### The honest cost of choosing this window
+
+The 2026 forecast from the Japan Meteorological Corporation puts peak koyo at roughly
+**29 November in Tokyo, 4 December in Osaka, and 11 December in Kyoto.** This trip is
+therefore before peak foliage in every lowland city it visits. Anyone picturing red
+maples over Kiyomizu-dera should know that is a mid-November-to-December photograph
+and it is being traded away for the 30-60% Kyoto room premium that comes with it.
+
+The consolation is smaller than it first appears, and it is worth being exact about.
+Kawaguchiko sits at roughly 830 m and elevation colours weeks before the basins do,
+but its own best window is late October into early November, and the Fuji leg falls on
+17-19 October. So the realistic expectation there is first colour at altitude, not a
+peak display, and the Momiji Kairo maple corridor's illumination does not begin until
+around 1 November, after the stay ends.
+
+Stated plainly: **this itinerary is early for autumn foliage everywhere it goes.**
+Kawaguchiko is the only stop with a real chance of meaningful colour and even that is
+early-stage. If seeing Japan in autumn colour is a primary goal rather than a bonus,
+the trip belongs in mid-to-late November, and the budget has to absorb the Kyoto room
+premium that comes with it. The dates here optimise for cost, weather and travelling
+with two children under two, in that order.
+
+#### What was rejected, and why
+
+| Window | Trade-off |
+|---|---|
+| Late Jan - Feb | Cheapest of the year, but cold-weather logistics with two under-twos are materially harder and it is peak influenza season |
+| Late Mar - early Apr | Cherry blossom. The most expensive window in Japan. Breaks the $9,000 budget outright |
+| Mid-May | Pleasant and moderately priced, but no scenic payoff and it runs toward the rainy season |
+| Mid-November | The best weather and near-peak foliage, and the reason the budget fails. Kyoto rooms at a 30-60% premium across ten nights is roughly $600-1,100 of pure surcharge |
+| **7 Oct - 5 Nov** | **Chosen.** Best available balance of cost, weather and infant suitability |
+
+---
+
+---
+
+## Appendix I: Why this route
+
+Tokyo (10 nights) to Kawaguchiko (3) to Kyoto (10) to Hiroshima (3) to Osaka (3),
+flying out of Kansai.
+
+**The open jaw pays for itself.** Flying home from Osaka instead of returning to Tokyo
+saves a ¥13,320-per-adult Tokaido backtrack, about $258 for three adults, plus a whole
+travel day. Most carriers price a Narita-in / Kansai-out itinerary within a few percent
+of a Tokyo round trip.
+
+**Kawaguchiko is placed where it is for a transport reason.** Going Tokyo to Fuji to
+Kyoto in that order means the Fuji leg costs one short bus ride out of Shinjuku rather
+than a there-and-back detour. It also puts the trip at elevation in the one week the
+maples are turning.
+
+**Hiroshima earns its three nights through the rail pass.** Kyoto to Hiroshima to Osaka
+at walk-up fares is ¥20,480 per adult, ¥61,440 for three. The 5-day JR Kansai-Hiroshima
+Area Pass is ¥17,000 per adult, ¥51,000 for three, and it also covers the Miyajima
+ferry, local Hiroshima JR, and a fifth-day trip out of Osaka to Himeji or Kobe. The
+pass is cheaper than the two shinkansen tickets alone.
+
+---
+
+---
+
+## Appendix J: How the money works
+
+#### Allocation
+
+These are the reconciled figures, summed from the 30 daily blocks rather than
+allocated top-down. The category rows below add exactly to the day-by-day totals.
+
+| Category | ¥ | $ | Share of planned |
+|---|---|---|---|
+| Lodging, 29 nights | 531,580 | 3,430 | 43% |
+| Food, 30 days | 243,000 | 1,568 | 20% |
+| Activities and admissions | 182,210 | 1,176 | 15% |
+| Transport | 177,530 | 1,145 | 14% |
+| Baby consumables | 68,000 | 439 | 5% |
+| Misc: eSIM, laundry, lockers, forwarding | 38,000 | 245 | 3% |
+| **Planned** | **1,285,540** | **8,294** | 100% |
+| Contingency (8.2%) | 114,460 | 738 | |
+| **Total budget** | **1,400,000** | **9,032** | |
+
+#### Why planned spend is $8,294 rather than $9,000
+
+The reserve is doing real work rather than padding a number. **No lodging rate in this
+report is a quote.** Booking engines returned no date-stamped 2026 availability, so all
+five nightly figures are current "from" rates adjusted for double occupancy and shoulder
+season. If the real quotes land 20% above estimate, lodging goes from $3,277 to $3,932
+and eats $655 of the reserve on its own. A 10-yen move in the exchange rate is worth
+another $500 or so on a trip this size.
+
+The single largest discretionary item is Day 13, where the party leaves the
+Kawaguchiko hostel for one night at a lakeside ryokan: tatami room, futon bedding, a
+kaiseki dinner and a rentable private family bath. That costs ¥23,580 above the night
+it replaces, plus about ¥5,900 for the ryokan meals.
+
+**What remains is ¥114,460 ($738), about 8.2%.** Name the risk
+plainly: if the five lodging quotes come back 20% above these estimates, that is
+roughly ¥106,000 and it would consume the whole reserve. The trip would still land
+under $9,000, with nothing left over. The first three things to cut in that case,
+in order, are the Kyoto kimono rental (¥15,840), the Anpanman museum in Kobe
+(¥11,250) and the Nishijin weaving session (¥7,590). Together they are $224 and
+they are the newest and most discretionary items in the plan.
+
+#### Why the lodging is two rooms at every stop
+
+Standard Japanese hotel rooms cap at two adults, and most business chains enforce a
+hard headcount per room regardless of guest age. A single unit that legally sleeps
+3 adults + 2 infants is a scarce, premium product: family apartment-hotels quote
+¥25,000-50,000 a night, which across 29 nights is $4,700-9,400 and consumes the
+entire budget on its own.
+
+The fix is a **two-room split at every stop**: one twin room holding two adults and
+both infants, plus one single for the third adult. Toyoko Inn and Hotel Livemax both
+allow a preschool child to co-sleep free, one per bed, so a twin room lawfully houses
+two adults and two infants and no crib is required. That lands lodging at **¥508,000
+($3,277)**, roughly a third of what one large family unit would have cost.
+
+Two consequences follow. The Tokyo property has an in-room
+kitchenette, and the three Toyoko Inn stays include a free breakfast buffet for every
+guest including bed-sharing children, which removes breakfast cost on 16 of the 30
+days. Both feed directly into the food budget below.
+
+#### Why the food budget works
+
+Self-catering in Japan is cheap. Cooking 2,000 kcal per adult from a supermarket runs
+about ¥820-930 per person, roughly ¥2,600 a day for three adults, with another
+¥1,400-2,400 for two infants. That floor, around $22 a day for the whole party, is what
+makes the arithmetic survive once lodging takes 41% of the budget.
+
+The daily plan spends well above that floor on purpose, because a month in Japan that
+never eats out is not a trip worth taking. Free breakfast on 16 of the 30 days and a
+kitchen at two of the five bases are what buy the restaurant meals everywhere else.
+
+#### How infants change the arithmetic
+
+Under-sixes are close to free in Japan, and it matters more than it sounds:
+
+- **JR, including shinkansen:** free, up to two young children per fare-paying adult. With three adults there is room for six, so both ride free everywhere on the network.
+- **Tokyo Metro, Toei, Osaka Metro, Kyoto city buses:** free under six.
+- **Museums, temples, gardens, castles:** effectively universally free under six.
+- **Miyajima ferry:** free, and the ¥100 island visitor tax exempts preschoolers.
+
+**The exception is highway buses,** and it is the one place the plan pays. Fujikyu and
+Keio require a paid seat for a child who can sit independently, and their own wording
+discourages lap-riding to the point of possible boarding refusal. The 20-month-old is
+therefore budgeted a paid seat on both bus legs, and the 12-month-old as a lap infant.
+
+Net effect: two extra people cost roughly $439 in diapers, formula and baby food across
+thirty days, and almost nothing in fares or admissions.
+
+---
+
+---
+
+## Appendix K: Japan with a 12-month-old and a 20-month-old
 
 **What is free.** Both children ride free on JR including shinkansen, on the Tokyo Metro
 and Toei, Osaka Metro, Kyoto city buses, and the Miyajima ferry. Under-sixes are free at
@@ -4981,7 +4985,7 @@ with what it is and why it runs long, and each still contains its rest block. If
 is going badly, the honest response is to drop its last activity rather than push
 through; the day notes name the item to cut where there is an obvious one.
 
-## Appendix I: How 2,000 calories a day actually gets bought
+## Appendix L: How 2,000 calories a day actually gets bought
 
 Each adult day sums to 1,950-2,100 kcal across the meal rows, built from four levers:
 
@@ -4994,7 +4998,7 @@ The trip is not planned to eat like this every day. Osaka's last full day, the H
 okonomiyaki night and several Kyoto dinners are deliberately restaurant meals. The
 self-catering floor is what buys them.
 
-## Appendix J: Confidence and sources
+## Appendix M: Confidence and sources
 
 **Verified against live sources:** exchange rate, typhoon seasonality, 2026 koyo
 forecast dates, Japanese public holidays, Golden Week and Obon and Silver Week dates,

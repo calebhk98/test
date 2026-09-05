@@ -55,7 +55,9 @@ one lunch and one breakfast (Days 11-12) for this reason, not for three.
 
 ## 2. Dated shopping runs
 
-### TOKYO (Days 1-10, Hotel Livemax Higashi-Ueno, in-room kitchenette + fridge)
+### Tokyo shopping runs
+
+Days @@DAYLINK:1@@-@@DAYLINK:10@@ | Hotel Livemax Higashi-Ueno, in-room kitchenette and fridge
 
 #### Run 1 - Day 1, Wed 7 Oct, ~15:15-16:15 (arrival stock-up)
 **Store:** Gyomu Super, Ueno-Hirokoji branch, 2-chome Ueno, Taito-ku [VERIFIED chain and this
@@ -139,7 +141,9 @@ konbini infant top-ups, already priced day-by-day in `days-01-10-tokyo.md`.
 
 ---
 
-### KAWAGUCHIKO (Days 11-12, K's House Mt. Fuji, shared guest kitchen)
+### Kawaguchiko shopping runs
+
+Days @@DAYLINK:11@@-@@DAYLINK:12@@ | K's House Mt. Fuji, shared guest kitchen
 
 #### Run - Day 11, Sat 17 Oct, ~16:10-16:45 (sized for Days 11-12 only)
 **Store:** OGINO Kawaguchiko, 545-3 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi
@@ -171,7 +175,9 @@ and to leave nothing behind when the K's House fridge has to hit zero at the Day
 
 ---
 
-### KYOTO A + B (Days 15-23, Toyoko Inn Kyoto Shijo-Omiya, no kitchen, free breakfast) and DAY 14 ARRIVAL
+### Kyoto shopping runs
+
+Days @@DAYLINK:14@@-@@DAYLINK:23@@ | Toyoko Inn Kyoto Shijo-Omiya, no kitchen, free breakfast
 
 Day 14's dinner (arriving too late for the Toyoko Inn breakfast, which starts Day 15) is bought
 out near Kyoto/Omiya Stn per the day file (¥1,900 infant line) - a konbini stop, not a grocery
@@ -232,7 +238,9 @@ itemized in `days-15-19-kyoto-a.md` and `days-20-23-kyoto-b.md`.
 
 ---
 
-### HIROSHIMA (Days 24-27, Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast)
+### Hiroshima shopping runs
+
+Days @@DAYLINK:24@@-@@DAYLINK:26@@ | Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast
 
 #### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
 **Store:** ekie, the shopping and supermarket complex directly connected to Hiroshima Station's
@@ -259,7 +267,9 @@ envelope is Toyoko Inn's free breakfast plus restaurant/konbini meals in `days-2
 
 ---
 
-### OSAKA (Days 27-30, Toyoko Inn Osaka Namba, no kitchen, free breakfast)
+### Osaka shopping runs
+
+Days @@DAYLINK:27@@-@@DAYLINK:30@@ | Toyoko Inn Osaka Namba, no kitchen, free breakfast
 
 #### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
 **Store:** Life Namba, basement level, 1-2-3 Minato-machi, Naniwa-ku, Osaka, directly across
@@ -299,7 +309,9 @@ the pieces add up.
 
 ## 3. Run-down-before-you-move checklist
 
-### Move 1 - Day 11, Tokyo -> Kawaguchiko (highway bus, Shinjuku)
+### Move 1: Tokyo to Kawaguchiko
+
+Day @@DAYLINK:11@@, highway bus from Shinjuku
 - **Already eaten down:** Day 10's meals are explicitly written to use up "the last of the Day 1
   pantry stock" (breakfast) and cook a "last-night" fried rice from remaining vegetables and egg
   (dinner) - by design, nothing perishable should be left in the Livemax fridge that morning.
@@ -316,7 +328,9 @@ the pieces add up.
 - **Reserved-seat bus note:** the Day 11 Fujikyu/Keio bus has assigned seats and limited luggage
   space per adult, one more reason not to carry bulky pantry items on this leg.
 
-### Move 2 - Day 14, Kawaguchiko -> Mishima -> Kyoto (bus, then unreserved Hikari shinkansen)
+### Move 2: Kawaguchiko to Kyoto
+
+Day @@DAYLINK:14@@, bus to Mishima then the Hikari shinkansen
 - **Already eaten down:** the Day 11 grocery run was deliberately sized for Days 11-12 only,
   so the K's House fridge should already read near-zero by the Day 12 dinner. Day 13 itself
   moves to the ryokan (no self-catering), so there is no Day 13 grocery run to run down at all.
@@ -334,7 +348,9 @@ the pieces add up.
 - **Ryokan night (Day 13):** kaiseki dinner and Japanese breakfast are both included - no
   shopping, no cooking, nothing to run down.
 
-### Move 3 - Day 24, Kyoto -> Hiroshima (shinkansen, JR Kansai-Hiroshima Area Pass)
+### Move 3: Kyoto to Hiroshima
+
+Day @@DAYLINK:24@@, shinkansen on the JR Kansai-Hiroshima Area Pass
 - **Already eaten down:** trivially true - there has been no kitchen since Day 13, so nothing
   perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
   are dry infant supplies.
@@ -345,14 +361,18 @@ the pieces add up.
 - **Bin or leave behind:** nothing perishable exists to bin. Toiletries/room amenities opened at
   the Toyoko Inn are not worth carrying - leave them for housekeeping.
 
-### Move 4 - Day 27, Hiroshima -> Osaka (shinkansen, JR Kansai-Hiroshima Area Pass, final valid days)
+### Move 4: Hiroshima to Osaka
+
+Day @@DAYLINK:27@@, shinkansen on the pass's final valid days
 - **Already eaten down:** same logic as Move 3 - no kitchen in Hiroshima, so no perishables to
   run down.
 - **Carry:** remaining nappy stock from the Day 24 Hiroshima run (sized for the 4-night block,
   should be nearly used up), remaining formula/pouches. Light, dry, no change from the Kyoto
   pattern.
 
-### Move 5 - Day 30, Osaka -> Kansai Airport -> fly home (**everything must be gone**)
+### Move 5: Osaka to Kansai Airport
+
+Day @@DAYLINK:30@@, flying home. **Everything must be gone.**
 - **Already eaten down:** the Osaka Day 27 run was deliberately sized for exactly the 3-night
   Osaka block (Days 27-29), with no restock planned for Day 29 or 30 - by the Day 29 night, the
   formula tin and pouches bought Day 27 should be at or near zero.
