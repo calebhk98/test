@@ -833,10 +833,10 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 9,800 | 63 |
+| Food | 9,400 | 61 |
 | Transport | 6,060 | 39 |
-| Activities | 7,800 | 51 |
-| **Day total** | **41,660** | **269** |
+| Activities | 9,300 | 60 |
+| **Day total** | **42,760** | **276** |
 
 **Running total after Day 9: ¥334,600 ($2,159)**
 
@@ -936,25 +936,26 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 180,000 | 1,161 |
-| Food | 85,640 | 553 |
-| Transport | 32,970 | 213 |
-| Activities | 70,700 | 456 |
-| **Segment total** | **369,310** | **2,383** |
+| Food | 90,990 | 587 |
+| Transport | 33,510 | 216 |
+| Activities | 86,560 | 558 |
+| **Segment total** | **391,060** | **2,522** |
 
-Against envelope: Food +0.75% (target 85,000) - within the ±5% tolerance. Activities
--5.7% (target 75,000) - just outside the ±5% band on the low side: dropping
-Mitsubishi Ichigokan (¥6,000 for the party) outpaced what replaced it on Day 4 (Zojoji,
-free, + Tokyo Tower Main Deck, ¥4,500 for the party = ¥5,400 combined with the also-new
-Hamarikyu Gardens at ¥900). Transport +15.3% (target 28,600) - the one real overage,
-and not close to tolerance: this segment's transport envelope had almost no margin to
-begin with (+0.1% before any of this pass's changes), and Day 4's new route south to
-the previously-unvisited Shiba/Hamarikyu pocket adds two short subway hops (Otemachi ->
-Onarimon -> Shiodome, ¥1,080 for the party) plus the Sumida River water bus home to
-Asakusa (¥3,000 for the party) - genuinely useful transit, not padding, but there was
-no slack in this line to absorb it. The Toyosu Market breakfast (Day 8) is booked as
-Food, not Activities, per the format spec's meal-content rules, which is why the
-Activities line moved opposite the direction the trip's budgeting note anticipated.
-The net effect across all three lines is +6,600 over the combined Food+Transport+
-Activities envelope of ¥188,600 (85,000+28,600+75,000), well inside the trip's
-¥160,000 contingency line per MASTER-BRIEF. Lodging is the fixed ¥18,000 x 10 nights
-from MASTER-BRIEF and is not flexed.
+Against envelope: Food +7.0% (target 85,000) - now outside the ±5% tolerance, mostly
+from the Kappabashi-day yakitori dinner and the Day 2 Kabukiza-evening conbini meals
+replacing cheaper self-catered food, plus the small dango and gachapon-adjacent snack
+additions; the nikuman swap on Day 9 pulls slightly the other way. Transport +17.2%
+(target 28,600) - still the segment's one real overage, essentially unchanged in kind
+from before this pass (Day 4's Shiba/Hamarikyu subway hops and water bus, plus the two
+small Ginza Line hops added for the Day 2 Kabukiza outing) and, as before, this line
+had almost no slack to begin with. Activities +15.4% (target 75,000) - swung well past
+the prior pass's shortfall now that this round adds real paid stops on top of the free
+ones: Kabukiza tickets (Day 2), the National Museum of Nature and Science (Day 3, only
+partly offset by reverting the Tokyo National Museum to permanent-collection-only), the
+Kappabashi workshop (Day 6), and the Cup Noodles Museum price correction (Day 9, it was
+simply mispriced before, not a new spend). Pokemon Centres, Tokyo Character Street,
+Gundam Base Tokyo, and the expanded Akihabara stroll are all free and do not move this
+line. The net effect across all three lines is +22,460 over the combined
+Food+Transport+Activities envelope of ¥188,600 (85,000+28,600+75,000), still well
+inside the trip's ¥160,000 contingency line per MASTER-BRIEF. Lodging is the fixed
+¥18,000 x 10 nights from MASTER-BRIEF and is not flexed.
