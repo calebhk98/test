@@ -280,9 +280,11 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 | 15:00 | 0h20 | Activity | Shirakawa Canal - willow-lined canal walk |
 | 15:20 | 0h15 | Transit | Walk to dinner |
 | 15:35 | 1h00 | Food | Early dinner - obanzai restaurant, Gion |
-| 16:35 | 0h25 | Transit | City bus - Gion-Shijo → Shijo-Omiya |
+| 16:35 | 0h25 | Activity | Pontocho evening lantern walk - cross Shijo Ohashi bridge and stroll the alley (browse only, no meal) |
+| 17:00 | 0h25 | Transit | City bus - Shijo-Kawaramachi → Shijo-Omiya |
 
-- Active out-of-lodging time: ~6h45 (4h00 before the rest block, 2h45 after). Rest block 1h45.
+- Active out-of-lodging time: ~7h10 (4h00 before the rest block, 3h10 after). Rest block 1h45. This is a small, acceptable overrun of the ~7h active cap: the added 25 minutes is a free lantern-lit walk through Pontocho right after the existing Gion dinner, not a new commitment, and the party is still back at the hotel by ~17:25 - comfortably ahead of this trip's ~19:00-19:30 infant bedtime, so bedtime is not pushed.
+- **Pontocho note:** the alley is only about 2-3m wide and fills with evening foot traffic - carrier, not stroller, the same call already made for Nishiki Market. This is a walk-through only, not a meal: Pontocho's restaurants range ¥2,000-25,000/person and the most exclusive genuinely refuse first-time and foreign walk-in customers (ichigen-san okotowari, a real local custom, not a rumor), so the honest move is the free lantern-lit walk, with dinner already covered by tonight's Gion obanzai meal.
 - The rental shop holds the stroller during dressing; the three adults dress in shifts so one is always free with the infants and carrier.
 
 ### Lodging
@@ -309,7 +311,7 @@ Adult kcal: 500 + 650 + 800 = **1,950/adult**.
 |---|---|---|---|---|
 | Shijo-Omiya → Kiyomizu-michi | City bus | 0h25 | 230 | 690 |
 | (within Higashiyama: walked) | Walk | - | 0 | 0 |
-| Gion-Shijo → Shijo-Omiya | City bus | 0h25 | 230 | 690 |
+| Shijo-Kawaramachi → Shijo-Omiya | City bus | 0h25 | 230 | 690 |
 | Kiyomizu-michi → Gion (mid-day hop) | City bus | 0h10 | 230 | 690 |
 
 Infants ride free on city buses. Party cost = adult fare x 3.
@@ -323,6 +325,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | Higashiyama lanes (Sannenzaka/Ninenzaka) | - | 0 | 0 | Sannenzaka and Ninenzaka slopes, Higashiyama-ku, near the Kiyomizu-michi bus stop (address unverified) | Two connected stone-paved lanes leading up to Kiyomizu-dera, lined with preserved wooden shopfronts, teahouses, and souvenir stores - the closest thing to a preserved Edo-period streetscape in central Kyoto. Free to walk and genuinely atmospheric, especially with fewer crowds early or late. The paving is old, uneven flagstone on a slope: hard going for a stroller, easier carried or walked slowly by hand. |
 | Gion district walk | 0h30 | 0 | 0 | Hanamikoji-dori, Gion, Higashiyama-ku, near Gion-Shijo Stn (Keihan) (address unverified) | Kyoto's most famous geiko (Kyoto's word for geisha) and maiko (apprentice) district, a working entertainment quarter since the Edo period, not a recreation. The wooden buildings lining Hanamikoji-dori are machiya - traditional Kyoto townhouses with a narrow shopfront facing the street and rooms running back in a long strip behind it, built narrow because property tax was historically assessed by street frontage. Since 2019, and tightened further in 2024, several of Gion's private side-lanes are off-limits to tourist photography, with real fines (reported up to ¥10,000) for photographing geiko or maiko there without consent, after years of tourists chasing and grabbing at them - stick to the main street and don't photograph anyone in kimono without asking. Flat and stroller-fine; the real geiko/maiko traffic happens after dark, past infant bedtime, so a daytime walk trades some authenticity for practicality. |
 | Shirakawa Canal | 0h20 | 0 | 0 | Shirakawa Canal, Gion, Higashiyama-ku, near Gion-Shijo Stn (Keihan) (address unverified) | A narrow, willow-lined canal running past traditional teahouses, one of Gion's most photographed corners and a good deal quieter than Hanamikoji-dori itself. Free, flat stone walkway alongside the water, stroller-fine, a pleasant short stretch to end the walk on. |
+| Pontocho evening lantern walk | 0h25 | 0 | 0 | Pontocho, Nakagyo-ku, Kyoto, between Sanjo-dori and Shijo-dori, one block west of the Kamogawa (address unverified - the alley has no single street number; nearest stations are Kawaramachi (Hankyu) or Gion-Shijo (Keihan)) | Pontocho is one of Kyoto's five historic geiko (geisha) districts: a single pedestrian lane roughly 500m long and just 2-3m wide, lined with machiya townhouses, hanging lanterns, and around 80 restaurants, running parallel to the Kamo River between Sanjo-dori and Shijo-dori. The payoff is purely visual and free - walking it after dark, lanterns lit against the old wooden facades, is a genuinely different scene from Gion's wider daytime streets seen earlier today, and it's the one place on this trip that delivers a narrow, lantern-lit alley at night. Restaurants here run ¥2,000-25,000/person and the priciest genuinely refuse first-time or foreign walk-in customers (ichigen-san okotowari, a real local custom), so the plan is to walk through only and eat at tonight's already-booked Gion dinner instead, keeping this stop at ¥0; the summer kawayuka platforms built out over the river are dismantled by the end of September, so this October visit sees the plain alley, not those platforms. The lane is flat with no steps but only 2-3m wide and fills with evening foot traffic, so carrier over stroller here, the same call already made for Nishiki Market, and the walk finishes well before this trip's ~19:00-19:30 infant bedtime. |
 
 ### Day 18 Cost
 
