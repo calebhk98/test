@@ -42,16 +42,21 @@ stock-up run, early night against jet lag with two infants.
 | 12:05 | 0h40 | Lodging | Check-in, drop bags |
 | 12:45 | 0h45 | Food | Lunch near the hotel, Ueno |
 | 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 15:15 | 1h00 | Food | Supermarket stock-up run (rice, eggs, milk, produce, pantry staples, initial infant food) - timed for the pre-closing hangaku markdown window on deli items |
-| 16:15 | 0h30 | Admin | Walk back, unpack groceries |
-| 16:45 | 1h00 | Rest | Quiet stroller loop of the block, unwind |
+| 15:15 | 0h12 | Transit | Walk, hotel -> Gyomu Super Ueno-Hirokoji |
+| 15:27 | 1h00 | Food | Supermarket stock-up run (rice, eggs, milk, produce, pantry staples, initial infant food) - a full-price bulk shop; mid-afternoon is well before any evening markdown window, so no hangaku applies here |
+| 16:27 | 0h12 | Transit | Walk back, Gyomu Super Ueno-Hirokoji -> hotel |
+| 16:39 | 0h18 | Admin | Unpack groceries |
+| 16:57 | 0h48 | Rest | Quiet stroller loop of the block, unwind |
 | 17:45 | 1h00 | Food | Dinner - first self-catered meal at the kitchenette |
 | 18:45 | 0h45 | Admin | Bath, wind-down |
 | 19:30 | - | Rest | Early night - lights out for both infants |
 
 - Stroller works fine throughout Day 1 - airport, wide station corridors, hotel.
-- This is a travel day, not a sightseeing day: the ~9h30-16:45 span is mostly immigration,
+- This is a travel day, not a sightseeing day: the ~9h30-17:00 span is mostly immigration,
   transit, and a full 1h45 rest block, not active touring.
+- The supermarket run is a genuine round trip on foot to Gyomu Super Ueno-Hirokoji
+  (2-3-4 Ueno, Taito-ku, roughly a 12-minute walk from the hotel), not a stop folded
+  into the hotel block - hence the two short Transit rows either side of it.
 
 ### Lodging
 
@@ -129,13 +134,15 @@ than keeping them cleanly separate.
 | 08:20 | 1h15 | Activity | Senso-ji - Kaminarimon, Nakamise-dori, main hall, five-story pagoda |
 | 09:35 | 0h15 | Transit | Walk along the Sumida riverside, cross Azumabashi Bridge to Skytree Town |
 | 09:50 | 1h00 | Activity | Sumida Aquarium (indoor, penguins/otters/jellyfish) |
-| 10:50 | 0h45 | Activity | Tokyo Skytree Tembo Deck (350m observatory) |
-| 11:35 | 0h25 | Activity | Pokemon Centre Skytree Town, 4F Solamachi |
-| 12:00 | 0h45 | Food | Lunch, Tokyo Solamachi food court, Sumida-ku |
-| 12:45 | 0h20 | Transit | Return toward Ueno, Ginza Line |
-| 13:05 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 14:50 | 1h00 | Rest | Light stroll, Ueno Park riverside edge (free, easy) |
-| 15:50 | - | Rest | Free downtime at the hotel - 3rd adult and both infants stay on this routine through the evening |
+| 10:50 | 0h15 | Transit | Sumida Aquarium -> Tokyo Skytree Tembo Deck ticket gate (same tower, but a separate queue, security check, and dedicated high-speed elevator) |
+| 11:05 | 0h45 | Activity | Tokyo Skytree Tembo Deck (350m observatory) |
+| 11:50 | 0h10 | Transit | Tembo Deck -> Pokemon Centre, 4F Solamachi (elevator down, walk across the mall) |
+| 12:00 | 0h25 | Activity | Pokemon Centre Skytree Town, 4F Solamachi |
+| 12:25 | 0h45 | Food | Lunch, Tokyo Solamachi food court, Sumida-ku |
+| 13:10 | 0h20 | Transit | Return toward Ueno, Ginza Line |
+| 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 15:15 | 1h00 | Rest | Light stroll, Ueno Park riverside edge (free, easy) |
+| 16:15 | 0h45 | Rest | Free downtime at the hotel - 3rd adult and both infants stay on this routine through the evening |
 | 17:00 | 0h20 | Transit | 2 adults: Ueno -> Higashi-Ginza, Tokyo Metro Ginza Line, for the evening Kabukiza act |
 | 17:20 | 0h40 | Admin | Queue and buy the Kabukiza single-act ticket (hitomakumi) + English subtitle tablets, cash only, no advance booking |
 | 17:30 | 1h00 | Food | Dinner - 3rd adult and both infants, self-catered at the hotel; the 2 Kabukiza-bound adults grab a quick conbini dinner near Ginza |
@@ -147,8 +154,9 @@ than keeping them cleanly separate.
 - **Carrier recommended for Senso-ji** - Nakamise-dori is genuinely dense by mid-morning
   with strollers hard to steer. Aquarium and Skytree are wide, level, elevator-served
   spaces where the stroller works fine.
-- Active out-of-lodging time: about 6h05 including the walk and the Pokemon Centre stop,
-  still comfortably inside the ~7h cap.
+- Active out-of-lodging time: about 6h30, including the walk, the two short in-complex
+  moves between the aquarium, the Tembo Deck, and the Pokemon Centre, and the Pokemon
+  Centre stop itself - still comfortably inside the ~7h cap.
 - **The evening is a deliberate split, not a whole-party outing.** Kabuki is watched from
   a hushed, single-scene auditorium with no aisle access mid-act - a poor match for a
   12-month-old and a 20-month-old regardless of the venue's official policy. 2 adults
@@ -222,22 +230,32 @@ everything inside a 15-minute walk of the Livemax.
 | 07:30 | 0h45 | Food | Breakfast, self-catered |
 | 08:15 | 0h15 | Transit | Walk, hotel -> Ueno Park |
 | 08:30 | 1h15 | Activity | Ueno Zoo (stroller-friendly paths) |
-| 09:45 | 0h45 | Activity | Tokyo National Museum - permanent collection |
-| 10:30 | 1h15 | Activity | National Museum of Nature and Science (Kahaku) |
-| 11:45 | 0h45 | Food | Lunch, Ameyoko market food stalls |
-| 12:30 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 14:15 | 0h10 | Transit | Ueno -> Akihabara, JR Yamanote/Keihin-Tohoku Line |
-| 14:25 | 2h40 | Activity | Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato (one adult peels off), Yodobashi Camera Akiba |
-| 17:05 | 0h10 | Transit | Akihabara -> Ueno, JR Yamanote/Keihin-Tohoku Line |
-| 17:15 | 0h15 | Rest | Free time / downtime at the hotel before dinner |
-| 17:30 | 1h00 | Food | Dinner, self-catered |
-| 18:30 | 0h45 | Admin | Bath, wind-down |
+| 09:45 | 0h15 | Transit | Walk, Ueno Zoo -> Tokyo National Museum (through Ueno Park) |
+| 10:00 | 0h45 | Activity | Tokyo National Museum - permanent collection |
+| 10:45 | 0h10 | Transit | Walk, Tokyo National Museum -> National Museum of Nature and Science (adjacent, within Ueno Park) |
+| 10:55 | 1h15 | Activity | National Museum of Nature and Science (Kahaku) |
+| 12:10 | 0h20 | Transit | Walk, Ueno Park (Kahaku) -> Ameyoko market |
+| 12:30 | 0h45 | Food | Lunch, Ameyoko market food stalls |
+| 13:15 | 0h15 | Transit | Walk, Ameyoko -> Hotel Livemax Higashi-Ueno |
+| 13:30 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 15:15 | 0h10 | Transit | Ueno -> Akihabara, JR Yamanote/Keihin-Tohoku Line |
+| 15:25 | 2h00 | Activity | Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato (one adult peels off), Yodobashi Camera Akiba |
+| 17:25 | 0h10 | Transit | Akihabara -> Ueno, JR Yamanote/Keihin-Tohoku Line |
+| 17:35 | 1h00 | Food | Dinner, self-catered |
+| 18:35 | 0h45 | Admin | Bath, wind-down |
+| 19:20 | 0h40 | Rest | Quiet evening - both infants asleep, adults wind down |
+| 20:00 | 0h12 | Transit | One adult: walk, hotel -> Gyomu Super Ueno-Hirokoji, for the hangaku deli run |
+| 20:12 | 0h20 | Food | Hangaku run - 50%-off deli items (karaage, potato salad, rice balls) bought for tomorrow's lunch top-up; store closes 21:00 |
+| 20:32 | 0h12 | Transit | Walk back, Gyomu Super Ueno-Hirokoji -> hotel |
+| 20:44 | - | Rest | Lights out |
 
-- No paid transit before 14:15 - everything through lunch is a walk from the hotel;
+- No paid transit before 15:15 - everything through lunch is a walk from the hotel;
   the Akihabara trip is a one-stop JR hop each way.
-- Active out-of-lodging time: about 7h15, a modest stretch beyond this day's usual
-  pace - nearly all of the added time is indoor museum browsing (Kahaku) or a
-  stroller-paced Akihabara stroll, not high-exertion touring.
+- Active out-of-lodging time: about 7h35 - up from a prior draft's 7h15 now that the
+  short walks between Ueno Zoo, the Tokyo National Museum, Kahaku, and Ameyoko are
+  actually on the clock. Akihabara is trimmed from 2h40 to 2h00 to make room; nearly
+  all of the remaining time is indoor museum browsing (Kahaku) or a stroller-paced
+  Akihabara stroll, not high-exertion touring.
 - The Tokyo National Museum stop is now permanent-collection-only (the
   special-exhibition surcharge is dropped) - see the Activities table for why: it
   both shortens the visit and helps pay for the Kahaku stop next door.
@@ -246,6 +264,13 @@ everything inside a 15-minute walk of the Livemax.
   Potato's retro-arcade floors (3F-5F) are narrow stairs and a small elevator, not
   stroller terrain at all - one adult peels off there alone for 20-30 minutes while
   the other two wait nearby with the stroller.
+- **The evening hangaku run is real, not assumed free.** Dinner at 17:35 is well
+  before any supermarket markdown window, so it is costed at full price. Once both
+  infants are down, one adult walks alone to Gyomu Super Ueno-Hirokoji (2-3-4 Ueno,
+  Taito-ku, about a 12-minute walk from the hotel, open to 21:00) to catch the true
+  20:00-20:45 hangaku window on deli items - a genuine 44-minute round trip out of
+  that adult's evening, buying half-price items for tomorrow's lunch rather than
+  tonight's dinner.
 
 ### Lodging
 
@@ -260,7 +285,8 @@ everything inside a 15-minute walk of the Livemax.
 |---|---|---|---|---|
 | Breakfast | Rice, grilled salted salmon flake, miso soup, pickles | Cooked in room; Hotel kitchenette | 500 | 750 |
 | Lunch | Street food grazing - takoyaki, pan-fried gyoza, yakitori skewers | Ameyoko market, Taito-ku | 700 | 2,150 |
-| Dinner | Hangaku-discounted deli items - karaage, potato salad, rice balls, over rice from the kitchenette | Supermarket near hotel, timed near closing | 750 | 1,300 |
+| Dinner | Deli items - karaage, potato salad, rice balls, over rice from the kitchenette, bought at full price (17:35 is well before any markdown window) | Supermarket near hotel | 750 | 2,600 |
+| Late hangaku run | 50%-off deli top-up (karaage, potato salad, rice balls) bought after both infants are down, for tomorrow's lunch rather than tonight's dinner | Gyomu Super Ueno-Hirokoji, 2-3-4 Ueno, Taito-ku (open to 21:00) | n/a | 900 |
 | Infant food | 3 formula feeds plus 2 Pigeon pouches (chicken and rice; mixed vegetable) for Infant A; Infant B eats table portions of the takoyaki filling (deboned) and rice, plus a Morinaga snack pouch | Conbini near hotel | n/a | 2,100 |
 
 Adult kcal: 500 + 700 + 750 = **1,950**.
@@ -287,10 +313,10 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 6,300 | 41 |
+| Food | 8,500 | 55 |
 | Transport | 900 | 6 |
 | Activities | 9,160 | 59 |
-| **Day total** | **34,360** | **222** |
+| **Day total** | **36,560** | **236** |
 
 **Running total after Day 3: ¥118,230 ($763)**
 
