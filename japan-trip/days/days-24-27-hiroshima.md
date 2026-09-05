@@ -224,8 +224,8 @@ Shukkei-en garden and Hiroshima Castle.
 | 13:55 | 0h15 | Transit | Hotel -> Shukkei-en, Hiroden streetcar |
 | 14:10 | 1h00 | Activity | Shukkei-en garden |
 | 15:10 | 0h15 | Transit | Walk, Shukkei-en -> Hiroshima Castle |
-| 15:25 | 0h45 | Activity | Hiroshima Castle (grounds + keep) |
-| 16:10 | 0h20 | Transit | Castle -> hotel, Hiroden streetcar |
+| 15:25 | 0h30 | Activity | Hiroshima Castle grounds, moat and turrets (keep closed) |
+| 15:55 | 0h20 | Transit | Castle -> hotel, Hiroden streetcar |
 | 16:30 | 1h40 | Rest | Downtime at hotel |
 | 18:10 | 1h00 | Food | Dinner near hotel |
 | 19:10 | - | Rest | Evening at hotel, infants down |
@@ -235,7 +235,7 @@ Shukkei-en garden and Hiroshima Castle.
   go through the museum while the third stays outside in the park with the children - swap partway
   if everyone wants to see it. Either approach is reasonable; there is no need for everyone to do
   the full museum together.
-- Hiroshima Castle's keep has interior stairs (carrier recommended inside); the surrounding
+- Hiroshima Castle's keep is closed permanently as of 22 March 2026, so this is an exterior visit; the surrounding
   grounds and moat path are flat and stroller-workable.
 - The morning circuit doubles back on itself geographically: the Museum sits at the park's
   south end (~15 min from the Dome), and the Orizuru Tower is back at the north end next to
@@ -284,7 +284,7 @@ infants ride free.
 | Peace Memorial Museum | 1h15 | 200 | 600 | 1-2 Nakajima-cho, Naka-ku, Hiroshima | The city's central museum on the atomic bombing, built around personal artifacts, photographs, and survivor testimony rather than an abstracted historical overview; the lower-floor galleries in particular are graphic and confronting, showing burned clothing, melted objects, and the direct human toll without being softened for visitors. It should be seen, but not by the whole family at once: the plan splits the party here, with one or two adults going through while the third stays outside in the park with the children, swapping partway through if more than one adult wants to see it - the right call given the content and the ages involved, not a compromise, and the approach generally recommended for families visiting with very young children. Adult admission is ¥200 (free under 18, so both infants are free regardless); there is no requirement or expectation to see every gallery. |
 | Hiroshima Orizuru Tower | 0h35 | 2,200 | 6,600 | 1-2-1 Otemachi, Naka-ku, Hiroshima 730-0051 | A modern observation tower directly across from the Dome, with an open-air rooftop deck looking back over Peace Park and the city, and a spiral ramp down through a glass wall where visitors fold and drop a paper crane (orizuru, Hiroshima's peace symbol) into the atrium below. A deliberately lighter, hands-on stop right after the museum, useful for resetting the mood before lunch. Elevator access throughout, fully stroller-accessible; the crane-folding is easy enough to do one-handed while holding a toddler. |
 | Shukkei-en garden | 1h00 | 260 | 780 | 2-11 Kaminobori-cho, Naka-ku, Hiroshima | A landscape garden laid out in 1620 around a central pond, built in the "shrunken scenery" (shukkei) style that miniaturizes famous landscapes - mountains, valleys, a version of a Chinese lake - into one walkable circuit, a very different style of garden from the dry rock gardens common in Kyoto. It survived the bombing only as ruins and was rebuilt afterward, so today's garden is itself a small piece of the city's postwar recovery. The main gravel loop is stroller-workable; a few of the narrower bridges and stepping-stone sections are easier with the carrier. |
-| Hiroshima Castle | 0h45 | 370 | 1,110 | 21-1 Motomachi, Naka-ku, Hiroshima 730-0011 | A five-story castle keep, originally built in the 1590s and destroyed instantly in the 1945 bombing; what stands today is a 1958 concrete reconstruction that closely follows the original exterior design and now houses a small history museum inside. Worth knowing before arrival - without that context it just reads as an old castle rather than what it actually is, a rebuilt symbol on the site of the original. The surrounding grounds and moat path are flat and fully stroller-workable; the keep's interior is narrow stairs floor to floor, so a carrier is the practical choice for going inside, or one adult can wait on the grounds with the stroller while the others take the keep. |
+| Hiroshima Castle grounds | 0h30 | 0 | 0 | 21-1 Motomachi, Naka-ku, Hiroshima 730-0011 | The grounds, moat and stone ramparts of the castle that stood here from the 1590s until the 1945 bombing destroyed it instantly. **The keep is closed.** The 1958 concrete reconstruction shut permanently on 22 March 2026 after 68 years, having failed seismic standards, and the city does not expect a replacement before fiscal 2049 at the earliest, so only the exterior can be seen. What remains open is free and genuinely worth the half hour: a wide moat with carp, the reconstructed Ninomaru gate and yagura turrets, and a eucalyptus that survived the blast about 740m from the hypocentre. Flat gravel and paved paths throughout, stroller-friendly. |
 
 ### Day 26 Cost
 
@@ -293,10 +293,10 @@ infants ride free.
 | Lodging | 15,000 | 97 |
 | Food | 7,000 | 45 |
 | Transport | 1,320 | 9 |
-| Activities | 9,090 | 59 |
-| **Day total** | **32,410** | **209** |
+| Activities | 7,980 | 51 |
+| **Day total** | **31,300** | **202** |
 
-**Running total after Day 26: ¥1,078,970 ($6,961)**
+**Running total after Day 26: ¥1,077,860 ($6,954)**
 
 ---
 
@@ -391,7 +391,7 @@ covered in the next segment.
 | Activities | 0 | 0 |
 | **Day total** | **20,420** | **132** |
 
-**Running total after Day 27: ¥1,099,390 ($7,093)**
+**Running total after Day 27: ¥1,098,280 ($7,086)**
 
 ---
 
@@ -402,8 +402,8 @@ covered in the next segment.
 | Lodging | 58,000 | 374 |
 | Food | 28,650 | 185 |
 | Transport | 54,540 | 352 |
-| Activities | 19,450 | 125 |
-| **Segment total** | **160,640** | **1,036** |
+| Activities | 18,340 | 118 |
+| **Segment total** | **159,530** | **1,029** |
 
 Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000) - both within
 the ±5% tolerance. Activities -25.2% (target 26,000), well under target: the Tombori River
