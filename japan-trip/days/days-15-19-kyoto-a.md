@@ -107,15 +107,19 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 | 11:00 | 0h30 | Food | Lunch - bento near Kyoto Gyoen |
 | 11:30 | 0h45 | Transit | Subway + bus back toward the hotel |
 | 12:15 | 1h45 | Rest | Midday rest - hotel |
-| 14:00 | 0h25 | Transit | Subway Tozai Line - toward Nanzenji / Okazaki |
-| 14:25 | 0h35 | Activity | Heian Jingu - Shin-en Garden stroll (quiet by this hour, after the parade crowd has moved on) |
-| 15:00 | 0h50 | Activity | Philosopher's Path - canal-side walk, Nanzenji toward Eikan-do |
-| 15:50 | 0h30 | Transit | Taxi back to Shijo-Omiya (two tired infants after a long event day) |
-| 16:20 | 1h10 | Rest | Downtime / bath at hotel |
+| 14:00 | 0h15 | Transit | Walk to Hankyu Omiya Station |
+| 14:15 | 0h10 | Transit | Hankyu Kyoto Line - Omiya → Karasuma |
+| 14:25 | 0h20 | Transit | Subway Karasuma Line → Karasuma-Oike, transfer to Tozai Line → Higashiyama |
+| 14:45 | 0h10 | Transit | Walk, Higashiyama Stn → Heian Jingu |
+| 14:55 | 0h35 | Activity | Heian Jingu - Shin-en Garden stroll (quiet by this hour, after the parade crowd has moved on) |
+| 15:30 | 0h50 | Activity | Philosopher's Path - canal-side walk, Nanzenji toward Eikan-do |
+| 16:20 | 0h30 | Transit | Taxi back to Shijo-Omiya (two tired infants after a long event day) |
+| 16:50 | 1h30 | Rest | Downtime / bath at hotel |
+| 18:20 | 0h10 | Transit | Walk to the diner |
 | 18:30 | 0h45 | Food | Dinner - casual diner near Shijo-Omiya |
 
 - **Free viewing spot:** inside Kyoto Gyoen itself, near where the procession assembles and departs (not downtown on Oike-dori or Kawaramachi-dori). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. We watch the parade's opening only (roughly 60-90 minutes of a 2.5-hour, 2km procession) rather than following it to Heian Jingu, which keeps the day inside the infant-friendly activity cap. No paid grandstand seats are bought (¥4,500-6,500/adult, skipped).
-- Active out-of-lodging time: ~6h20 (4h00 before the rest block, 2h20 after). Rest blocks: 1h45 mandatory + 1h10 secondary downtime.
+- Active out-of-lodging time: ~6h50 (4h00 before the rest block, 2h50 after). The "after" figure is up from an earlier 2h20: the original draft jumped straight from the hotel to a "Subway Tozai Line" row with no way to actually get there, skipping the walk to Hankyu Omiya Station, the Hankyu ride to Karasuma, and the Karasuma-to-Tozai transfer that reaching Higashiyama/Okazaki actually needs (the same chain the morning already uses to reach Marutamachi), plus the walk from Higashiyama Station up to Heian Jingu. With that chain honestly on the clock, downtime back at the hotel is stretched from 1h10 to 1h30 so dinner still lands at its original 18:30 rather than sliding later. Rest blocks: 1h45 mandatory + 1h30 secondary downtime.
 
 ### Lodging
 
@@ -141,10 +145,12 @@ Adult kcal: 500 + 650 + 800 = **1,950/adult**.
 |---|---|---|---|---|
 | Omiya → Karasuma | Hankyu Kyoto Line | 0h10 | 180 | 540 |
 | Karasuma (Shijo) → Marutamachi | Subway Karasuma Line | 0h15 | 220 | 660 |
-| Kyoto Gyoen → Nanzenji/Okazaki | Subway (Karasuma→Tozai, 1 transfer) | 0h25 | 290 | 870 |
-| Nanzenji/Okazaki → Shijo-Omiya | Taxi | 0h30 | n/a - flat/metered fare | 2,200 |
+| Marutamachi → Shijo-Omiya (midday return) | Subway + City Bus, 1 transfer | 0h45 | ~450 (220 subway + 230 bus) | 1,350 |
+| Omiya → Karasuma (afternoon) | Hankyu Kyoto Line | 0h10 | 180 | 540 |
+| Karasuma → Higashiyama, Karasuma Line + Tozai Line (1 transfer at Karasuma-Oike) | Subway | 0h20 | 290 | 870 |
+| Higashiyama/Okazaki → Shijo-Omiya | Taxi | 0h30 | n/a - flat/metered fare | 2,200 |
 
-Infants ride free on the subway and Hankyu legs. The evening leg is a taxi (flat + metered, not per-adult) rather than a third transfer, given two tired infants after a long festival day.
+Infants ride free on the subway, Hankyu, and city bus legs. The midday return trip and the afternoon Hankyu hop out to Karasuma were missing from an earlier pass of this table entirely - the family does return to the hotel for the mandatory midday rest and then heads back out the same way, so both legs are genuinely ridden twice today. The evening leg is a taxi (flat + metered, not per-adult) rather than a third transfer, given two tired infants after a long festival day.
 
 ### Activities
 
@@ -162,9 +168,9 @@ Infants ride free on the subway and Hankyu legs. The evening leg is a taxi (flat
 |---|---|---|
 | Lodging | 19,000 | 123 |
 | Food | 6,600 | 43 |
-| Transport | 4,270 | 28 |
+| Transport | 6,160 | 40 |
 | Activities | 1,800 | 12 |
-| **Day total** | **31,670** | **204** |
+| **Day total** | **33,560** | **217** |
 
 **Running total (Kyoto A segment) after Day 16: ¥62,150 ($401)**
 
@@ -186,21 +192,24 @@ Infants ride free on the subway and Hankyu legs. The evening leg is a taxi (flat
 | 08:50 | 0h10 | Transit | Walk to the bamboo grove |
 | 09:00 | 0h40 | Activity | Arashiyama Bamboo Grove walk |
 | 09:40 | 0h50 | Activity | Tenryu-ji - temple garden |
-| 10:30 | 0h30 | Activity | Togetsukyo Bridge + riverside walk |
-| 11:00 | 0h45 | Food | Lunch - yudofu teishoku near Arashiyama |
-| 11:45 | 0h15 | Transit | Walk to Okochi Sanso Garden |
-| 12:00 | 0h45 | Activity | Okochi Sanso Garden - hillside villa garden, includes matcha and a sweet |
-| 12:45 | 1h45 | Rest | Midday rest - Kameyama Park, quiet riverside corner |
-| 14:30 | 0h15 | Transit | Walk to Torokko Saga Station |
-| 14:45 | 0h25 | Activity | Sagano Romantic Train (Torokko) - Saga → Kameoka, Hozugawa gorge |
-| 15:10 | 0h15 | Transit | Walk to JR Kameoto Station |
-| 15:25 | 0h10 | Transit | JR San-in Line - Kameoto → Saga-Arashiyama |
-| 15:35 | 0h35 | Transit | Walk + Hankyu - Arashiyama → Katsura → Omiya |
-| 16:10 | 1h20 | Rest | Downtime at hotel |
+| 10:30 | 0h10 | Transit | Walk, Tenryu-ji → Togetsukyo Bridge |
+| 10:40 | 0h30 | Activity | Togetsukyo Bridge + riverside walk |
+| 11:10 | 0h45 | Food | Lunch - yudofu teishoku near Arashiyama |
+| 11:55 | 0h15 | Transit | Walk to Okochi Sanso Garden |
+| 12:10 | 0h45 | Activity | Okochi Sanso Garden - hillside villa garden, includes matcha and a sweet |
+| 12:55 | 0h10 | Transit | Walk, Okochi Sanso → Kameyama Park |
+| 13:05 | 1h45 | Rest | Midday rest - Kameyama Park, quiet riverside corner |
+| 14:50 | 0h15 | Transit | Walk to Torokko Saga Station |
+| 15:05 | 0h25 | Activity | Sagano Romantic Train (Torokko) - Saga → Kameoka, Hozugawa gorge |
+| 15:30 | 0h15 | Transit | Walk to JR Kameoto Station |
+| 15:45 | 0h10 | Transit | JR San-in Line - Kameoto → Saga-Arashiyama |
+| 15:55 | 0h35 | Transit | Walk + Hankyu - Arashiyama → Katsura → Omiya |
+| 16:30 | 1h20 | Rest | Downtime at hotel |
+| 17:50 | 0h10 | Transit | Walk to the dinner spot |
 | 18:00 | 0h40 | Food | Dinner - casual gyudon/izakaya near Shijo-Omiya |
 
 - **Monkey park excluded:** Iwatayama Monkey Park sits above Arashiyama at the top of a steep 20-minute uphill climb with no stroller access. Skipped today; not a fit for two infants.
-- Active out-of-lodging time: ~6h35 (4h45 before the park rest, 1h50 after). Park rest of 1h45 stands in for the lodging-based rest block.
+- Active out-of-lodging time: ~6h30 (total span 08:15-16:30 = 8h15, minus the 1h45 Kameyama Park rest block). Two short walks were added that an earlier pass skipped - Tenryu-ji to Togetsukyo Bridge, and Okochi Sanso down to Kameyama Park - which push the hotel return from 16:10 to 16:30. That 20-minute push also happens to close a previously-unaccounted 30-minute hole between the end of downtime and dinner (the original draft had downtime ending at 17:30 and dinner starting at 18:00 with nothing in between): downtime keeps its original 1h20 length, and the real walk from the hotel to the restaurant is now its own row, landing dinner at its original 18:00 anyway.
 
 ### Lodging
 
@@ -280,10 +289,12 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 | 15:00 | 0h20 | Activity | Shirakawa Canal - willow-lined canal walk |
 | 15:20 | 0h15 | Transit | Walk to dinner |
 | 15:35 | 1h00 | Food | Early dinner - obanzai restaurant, Gion |
-| 16:35 | 0h25 | Activity | Pontocho evening lantern walk - cross Shijo Ohashi bridge and stroll the alley (browse only, no meal) |
-| 17:00 | 0h25 | Transit | City bus - Shijo-Kawaramachi → Shijo-Omiya |
+| 16:35 | 0h10 | Transit | Walk, Gion dinner spot → Pontocho (cross Shijo Ohashi bridge) |
+| 16:45 | 0h20 | Activity | Pontocho evening lantern walk - stroll the alley (browse only, no meal) |
+| 17:05 | 0h10 | Transit | Walk, Pontocho alley → Shijo-Kawaramachi bus stop |
+| 17:15 | 0h25 | Transit | City bus - Shijo-Kawaramachi → Shijo-Omiya |
 
-- Active out-of-lodging time: ~7h10 (4h00 before the rest block, 3h10 after). Rest block 1h45. This is a small, acceptable overrun of the ~7h active cap: the added 25 minutes is a free lantern-lit walk through Pontocho right after the existing Gion dinner, not a new commitment, and the party is still back at the hotel by ~17:25 - comfortably ahead of this trip's ~19:00-19:30 infant bedtime, so bedtime is not pushed.
+- Active out-of-lodging time: ~7h25 (4h00 before the rest block, 3h25 after). Rest block 1h45. The Pontocho stop was one bundled 25-minute activity row with no travel time of its own; splitting out the walk from the Gion restaurant to the bridge and the walk from the alley to the bus stop adds 15 honest minutes on top of that. Still a small, acceptable overrun of the ~7h active cap: the whole Pontocho stretch is a free lantern-lit walk right after the existing Gion dinner, not a new commitment, and the party is still back at the hotel by ~17:40 - comfortably ahead of this trip's ~19:00-19:30 infant bedtime, so bedtime is not pushed.
 - **Pontocho note:** the alley is only about 2-3m wide and fills with evening foot traffic - carrier, not stroller, the same call already made for Nishiki Market. This is a walk-through only, not a meal: Pontocho's restaurants range ¥2,000-25,000/person and the most exclusive genuinely refuse first-time and foreign walk-in customers (ichigen-san okotowari, a real local custom, not a rumor), so the honest move is the free lantern-lit walk, with dinner already covered by tonight's Gion obanzai meal.
 - The rental shop holds the stroller during dressing; the three adults dress in shifts so one is always free with the infants and carrier.
 
@@ -355,20 +366,26 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 08:15 | 0h15 | Transit | Walk to Hankyu Omiya Station |
 | 08:30 | 0h10 | Transit | Hankyu Kyoto Line - Omiya → Karasuma |
 | 08:40 | 0h20 | Transit | Subway Karasuma Line - Karasuma (Shijo) → Marutamachi |
-| 09:00 | 0h35 | Activity | Kyoto Imperial Palace (Gosho) - free, self-guided walk-in grounds visit |
-| 09:35 | 0h20 | Transit | Walk - Kyoto Gyoen → Nijo Castle |
-| 09:55 | 1h15 | Activity | Nijo Castle - grounds, gardens, Ninomaru Palace |
-| 11:10 | 0h25 | Transit | Raku city bus - Nijo Castle → Kinkaku-ji-michi |
-| 11:35 | 0h40 | Activity | Kinkaku-ji - Golden Pavilion grounds walk |
-| 12:15 | 0h15 | Transit | City bus - Kinkaku-ji-michi → Ryoan-ji-mae (2 stops) |
-| 12:30 | 0h40 | Activity | Ryoan-ji - dry rock garden (karesansui) |
-| 13:10 | 0h10 | Transit | Walk - Ryoan-ji → Ritsumeikan Daigaku-mae bus stop |
-| 13:20 | 0h15 | Transit | City bus (Route 50) - Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae |
-| 13:35 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
-| 14:35 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
-| 15:05 | 1h45 | Rest | Midday rest - hotel |
-| 16:50 | 1h00 | Rest | Downtime at hotel |
-| 17:50 | 0h40 | Food | Dinner - hangaku-discounted bento, timed near closing for the markdown |
+| 09:00 | 0h05 | Transit | Walk, Marutamachi Stn → Gosho entrance |
+| 09:05 | 0h35 | Activity | Kyoto Imperial Palace (Gosho) - free, self-guided walk-in grounds visit |
+| 09:40 | 0h20 | Transit | Walk - Kyoto Gyoen → Nijo Castle |
+| 10:00 | 1h15 | Activity | Nijo Castle - grounds, gardens, Ninomaru Palace |
+| 11:15 | 0h25 | Transit | Raku city bus - Nijo Castle → Kinkaku-ji-michi |
+| 11:40 | 0h40 | Activity | Kinkaku-ji - Golden Pavilion grounds walk |
+| 12:20 | 0h15 | Transit | City bus - Kinkaku-ji-michi → Ryoan-ji-mae (2 stops) |
+| 12:35 | 0h40 | Activity | Ryoan-ji - dry rock garden (karesansui) |
+| 13:15 | 0h10 | Transit | Walk - Ryoan-ji → Ritsumeikan Daigaku-mae bus stop |
+| 13:25 | 0h15 | Transit | City bus (Route 50) - Ritsumeikan Daigaku-mae → Kitano Tenmangu-mae |
+| 13:40 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
+| 14:40 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
+| 15:10 | 1h45 | Rest | Midday rest - hotel |
+| 16:55 | 1h00 | Rest | Downtime at hotel |
+| 17:55 | 0h40 | Food | Dinner - chicken katsu bento from Fresco Omiya (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
+| 18:35 | 0h25 | Rest | Bath, bedtime routine, infants down |
+| 19:00 | 0h50 | Rest | Quiet evening at the hotel, infants asleep |
+| 19:50 | 0h15 | Transit | One adult walks alone to Gyomu Super Saiin, Ukyo-ku (~15 min; the other two stay with the sleeping infants) |
+| 20:05 | 0h20 | Food | Hangaku shopping - deli pastries and rice balls marked to 50% off after 20:00, restocking snacks for the next few days |
+| 20:25 | 0h15 | Transit | Walk back to Toyoko Inn |
 
 - **Imperial Palace note:** this segment already distinguished Kyoto Gyoen (the public park, visited on Day 16 for Jidai Matsuri viewing) from the Kyoto Imperial Palace/Gosho itself (the walled compound inside that park) - see Day 16's Activities table. The Gosho is toured today instead, since Jidai Matsuri day was already full: free entry, no reservation, self-guided walk-in 9:00-16:20 (closed Mondays), folded into the same subway route already used to reach Nijo Castle.
 - **Ryoan-ji stays, Tenjin-ichi is added alongside it - both fit, verified.** An earlier pass of this day dropped Ryoan-ji to make room for the market, but Ryoan-ji was on this itinerary for its own reason - a whole-trip genre audit found no other karesansui (dry rock garden) anywhere in this 30-day trip, and Ryoan-ji is the single most famous example of the form in Japan. A temple market doesn't substitute for that, so both stay. The geography cooperates: Kinkaku-ji, Ryoan-ji, and Kitano Tenmangu sit in a single northwest Kyoto cluster, and the day now flows through it in one direction rather than backtracking. Kinkaku-ji to Ryoan-ji is City Bus 59, 2 stops, about 5 minutes (padded to 0h15 with wait/boarding, matching this segment's other short bus hops). From Ryoan-ji, it's a verified 7-minute walk to the Ritsumeikan Daigaku-mae bus stop, where City Bus Route 50 (Kyoto Station - Kitano Tenmangu - Ritsumeikan Daigaku) runs directly to Kitano Tenmangu-mae - no return toward Kinkaku-ji, no doubling back. From there, the day continues on the same bus network back to Shijo-Omiya, same as before.
