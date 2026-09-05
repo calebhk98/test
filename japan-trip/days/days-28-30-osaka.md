@@ -6,7 +6,7 @@
 
 **Culture Day precision:** Nov 3 is Bunka no Hi (Culture Day). Only the **National Museum of Art, Osaka** is confirmed free that date. This is NOT blanket free admission across Osaka museums - a lot of "free museum" listicles are actually describing **Kansai Culture Day, Nov 15-16**, which falls after this trip departs (Day 30 is Nov 5). Every other paid site below is charged at its normal rate.
 
-**Kobe over Himeji:** the JR Kansai-Hiroshima Area Pass (5-day, Oct 30-Nov 3) is valid for the last time today, so today's local JR travel is ¥0. Himeji Castle admission is only ~¥1,000/adult, but the keep itself is a steep, narrow wooden-stair climb unsuitable for a stroller and rough with a 12-month-old on a carrier; only the castle grounds and the neighbouring Koko-en garden are genuinely stroller-friendly. Kobe is chosen instead: Kitano, Nankinmachi, and the harbour are flatter, shorter walks that suit two infants better, and the JR fare there and back is still ¥0 on the pass.
+**Kobe over Himeji:** the JR Kansai-Hiroshima Area Pass (5-day, Oct 30-Nov 3) is valid for the last time today, so today's local JR travel is ¥0. Himeji Castle admission is only ~¥1,000/adult, but the keep itself is a steep, narrow wooden-stair climb unsuitable for a stroller and rough with a 12-month-old on a carrier; only the castle grounds and the neighbouring Koko-en garden are genuinely stroller-friendly. Kobe is chosen instead: Harborland, Nankinmachi, and the harbour are flat, easy stops that suit two infants far better, and the JR fare there and back is still ¥0 on the pass.
 
 ### Schedule
 
