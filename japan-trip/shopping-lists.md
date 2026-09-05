@@ -60,6 +60,9 @@ one lunch and one breakfast (Days 11-12) for this reason, not for three.
 Days @@DAYLINK:1@@-@@DAYLINK:10@@ | Hotel Livemax Higashi-Ueno, in-room kitchenette and fridge
 
 #### Run 1 - Day 1, Wed 7 Oct, ~15:15-16:15 (arrival stock-up)
+
+Shops on Day @@DAYLINK:1@@. Arrival stock-up.
+
 **Store:** Gyomu Super, Ueno-Hirokoji branch, 2-chome Ueno, Taito-ku. A second confirmed branch, Gyomu Super Ueno-Koen (Negishi
 1-2-13, Taito-ku), is a fallback if the Hirokoji store is out of the way.
 
@@ -98,6 +101,9 @@ meal's worth of ingredients plus a same-day infant top-up, not a full first-week
 Treat ¥15,770 as the more complete real-world Day 1 outlay.
 
 #### Run 2 - Day 6, Mon 12 Oct, ~16:00 (mid-stay top-up, covers Days 6-8)
+
+Shops on Day @@DAYLINK:6@@. Covers Days @@DAYLINK:6@@ to @@DAYLINK:8@@.
+
 **Store:** LIFE Bioral Parco_ya Ueno, Ueno 3-24-6, B1.
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -116,6 +122,9 @@ Treat ¥15,770 as the more complete real-world Day 1 outlay.
 | **Run 2 total** | | | **¥3,094 ($20)** |
 
 #### Run 3 - Day 8, Wed 14 Oct, ~16:00 (deliberately small, sized to run down by Day 10)
+
+Shops on Day @@DAYLINK:8@@. Deliberately small, sized to run down by Day @@DAYLINK:10@@ before the move.
+
 **Store:** Gyomu Super, Ueno-Koen branch.
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -144,6 +153,9 @@ konbini infant top-ups, already priced day-by-day in `days-01-10-tokyo.md`.
 Days @@DAYLINK:11@@-@@DAYLINK:12@@ | K's House Mt. Fuji, shared guest kitchen
 
 #### Run - Day 11, Sat 17 Oct, ~16:10-16:45 (sized for Days 11-12 only)
+
+Shops on Day @@DAYLINK:11@@. Sized for Days @@DAYLINK:11@@ to @@DAYLINK:12@@ only, so the K's House fridge is empty at the Day @@DAYLINK:13@@ checkout.
+
 **Store:** OGINO Kawaguchiko, 545-3 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi
 401-0301. Bring a
 bag - OGINO charges for plastic bags.
@@ -181,6 +193,9 @@ out near Kyoto/Omiya Stn per the day file (¥1,900 infant line) - a konbini stop
 run, so it isn't itemized separately here.
 
 #### Run 1 - Day 15, Tue 20 Oct, ~18:00 (infant-supply restock, covers roughly Days 15-19)
+
+Shops on Day @@DAYLINK:15@@. Infant-supply restock covering roughly Days @@DAYLINK:15@@ to @@DAYLINK:19@@.
+
 **Store:** Gyomu Super, Saiin branch, one stop from Omiya on the Hankyu Kyoto Line (the chain and this branch are confirmed nearby; a closer branch at Shijo-Omiya, if one exists, is unconfirmed). Drugstore alternative: Matsumoto Kiyoshi
 or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch to confirm.
 
@@ -197,6 +212,9 @@ or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch 
 | **Run 1 total** | | | **¥7,288 ($47)** |
 
 #### Run 2 - Day 19, Sat 24 Oct, ~17:00 (hangaku dinner components - no kitchen, eaten cold/room-temp in the room)
+
+Shops on Day @@DAYLINK:19@@. Hangaku dinner components, eaten cold or at room temperature since the Kyoto hotel has no kitchen.
+
 **Store:** Gyomu Super or Life, Shimogyo-ku, near Shijo-Omiya [chain per day file; branch to confirm].
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -216,6 +234,9 @@ or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch 
 one fewer side), well inside normal night-to-night variance for a discount-timed buy.
 
 #### Run 3 - Day 20 or 21, ~18:00 (infant-supply top-up for Kyoto B, no new nappies needed yet)
+
+Shops on Day @@DAYLINK:20@@ or Day @@DAYLINK:21@@. Infant-supply top-up, no new nappies needed yet.
+
 **Store:** drugstore or conbini near the hotel [chain per day file, unnamed - Matsumoto Kiyoshi,
 Welcia, Tsuruha or Cocokara Fine are all plausible; branch to confirm].
 
@@ -237,6 +258,9 @@ itemized in `days-15-19-kyoto-a.md` and `days-20-23-kyoto-b.md`.
 Days @@DAYLINK:24@@-@@DAYLINK:26@@ | Toyoko Inn Hiroshima Ekimae Ohashi Minami, no kitchen, free breakfast
 
 #### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
+
+Shops on Day @@DAYLINK:24@@ after the ~11:35 check-in. Sized for the whole block, Days @@DAYLINK:24@@ to @@DAYLINK:27@@.
+
 **Store:** ekie, the shopping and supermarket complex directly connected to Hiroshima Station's
 south exit (supermarket just beyond the ticket gates).
 The hotel is in central Hiroshima, about 1.2 miles from Peace Memorial Park, and its exact
@@ -266,6 +290,9 @@ envelope is Toyoko Inn's free breakfast plus restaurant/konbini meals in `days-2
 Days @@DAYLINK:27@@-@@DAYLINK:30@@ | Toyoko Inn Osaka Namba, no kitchen, free breakfast
 
 #### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
+
+Shops on Day @@DAYLINK:27@@ on arrival. Sized for Days @@DAYLINK:27@@ to @@DAYLINK:29@@; no new nappies, the Hiroshima pack still has supply.
+
 **Store:** Life Namba, basement level, 1-2-3 Minato-machi, Naniwa-ku, Osaka, directly across
 from JR Namba Station, below the Hotel Monterey Grasmere (open 9:00-24:00).
 Drugstore: Cocokara Fine, Namba store.
