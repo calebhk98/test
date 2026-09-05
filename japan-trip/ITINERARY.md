@@ -4812,11 +4812,62 @@ Against the alternative of a nationwide JR Pass at ¥105,000 per adult (¥315,00
 | Hiroshima -> Osaka | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Sanyo/Tokaido Shinkansen (unreserved) + Osaka Metro Midosuji Line | 1h30 + 0h20 | 9,710 (walk-up) + 290 | 0 (pass) + 870 = 870 | The shinkansen leg would run ¥29,130 for three adults at walk-up fares; only the Shin-Osaka to Namba subway hop is paid out of pocket |
 | Osaka (Namba) -> Kansai Airport | [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Nankai Airport Line, rapid express | 0h45 | 930 | 2,790 | The JR Kansai-Hiroshima Area Pass expired at the end of day 28, so this fare is paid in full |
 
+#### Where you actually board
+
+A service name is not a map search. Each leg's physical boarding point, with the detail a map cannot give:
+
+**Busta Shinjuku (Shinjuku Expressway Bus Terminal)** - Day [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) departure  
+5-24-55 Sendagaya, Shibuya-ku, Tokyo 151-0051  
+Boarding gates are on the 4th floor, directly above JR Shinjuku Station's New South Gate (Shin-Minami-guchi); an escalator from that gate reaches the terminal entrance in about a minute. The bay number is assigned per departure and posted on the 4th-floor boards, not fixed per route, so allow time to read them with luggage in hand.
+
+**Kawaguchiko Station bus terminal** - Day [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) arrival and Day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) departure  
+3639-2 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0301  
+The terminal is built into the station building, so there are no stairs between the bus bays and the concourse. The Mishima-Kawaguchiko Liner leaves from here on Day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto).
+
+**Mishima Station** - Day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) transfer  
+16-1 Ichibancho, Mishima-shi, Shizuoka 411-0036  
+The Liner arrives at the South Exit (Minami-guchi) bus stop. The shinkansen gates face north, on the opposite side of the station building, about 5 minutes on foot through the concourse. That walk is what the 20-30 minute transfer allowance is for.
+
+**Kyoto Station** - Day [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) arrival, Day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) departure  
+901 Higashishiokoji-cho, Karasuma-dori Shiokoji-sagaru, Shimogyo-ku, Kyoto 600-8216
+
+**Hiroshima Station** - Day [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) arrival, Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) departure  
+2-37 Matsubara-cho, Minami-ku, Hiroshima-shi, Hiroshima 732-0822
+
+**Shin-Osaka Station** - Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) transfer  
+5-16-1 Nishinakajima, Yodogawa-ku, Osaka-shi, Osaka 532-0011
+
+**Namba Station (Osaka Metro)** - Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) arrival  
+Approximately 1-9-7 Namba, Chuo-ku, Osaka-shi, Osaka 542-0076  
+Four separate stations share the Namba name: Osaka Metro Namba (Midosuji, Yotsubashi and Sennichimae lines), Nankai Namba, Kintetsu and Hanshin's Osaka Namba, and JR Namba. The Midosuji Line arrives at the Osaka Metro one. Its street number is not published on Osaka Metro's own station page and comes from map directories rather than the operator; the postal code is confirmed.
+
+**Nankai Namba Station** - Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) departure  
+5-1-60 Namba, Chuo-ku, Osaka-shi, Osaka 542-0076  
+A different station from the Osaka Metro Namba used on Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), run by a different company, with its platforms on the 3rd floor. The two are connected indoors and sit roughly 300-500 metres apart, 5 to 10 minutes' walk, which matters on a departure morning with a stroller and checked bags.
+
 ### 3. Airport transfers
 
-**Arrival, day [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival): Narita to Tokyo.** The Keisei Access Express runs Narita Airport to Keisei-Ueno in about 1h05 for ¥1,190 per adult, ¥3,570 for the party. Both infants ride as lap infants with no seat reservation needed, and the train's wide corridors and step-free boarding work fine with a stroller straight off an international flight.
+**Arrival, Day [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival): Narita to Tokyo.** The Keisei Access Express runs Narita Airport to Keisei-Ueno in about 1h05 for ¥1,190 per adult, ¥3,570 for the party. Both infants ride as lap infants with no seat reservation needed, and the train's wide corridors and step-free boarding work fine with a stroller straight off an international flight.
 
-**Departure, day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix): Namba to Kansai Airport.** The Nankai Airport Line's rapid express covers Namba to Kansai Airport Station in about 45 minutes for ¥930 per adult, ¥2,790 for the party. The JR Haruka covers the same route but runs roughly double the fare per adult, and Nankai needs no advance reservation. International check-in for a party of five with a stroller and checked bags wants about three hours ahead of departure, so the day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) schedule builds that buffer in rather than assuming a shorter window.
+Narita has two airport stations, and which one to walk to depends on the arrival terminal:
+
+**Narita Airport Terminal 1 Station** (Terminal 1 only)  
+1-1 Sanrizuka Goryobokujo, Narita-shi, Chiba 282-0011  
+Underground, one level below Terminal 1's arrivals floor. Keisei and JR East both use it.
+
+**Narita Airport Terminal 2-3 Station** (Terminal 2, and Terminal 3 by covered walkway)  
+Furugome, Narita-shi, Chiba 286-0104  
+Beneath Terminal 2. Terminal 3 has no station of its own and is reached on foot from here.
+
+**Keisei-Ueno Station** (the Access Express terminus)  
+1-60 Uenokoen, Taito-ku, Tokyo 110-0007  
+A separate building from JR Ueno Station, about 150 metres apart, 2 to 5 minutes on foot; the Shinobazu exit is the closer JR gate. From here it is the walk or a short Hibiya Line hop to Higashi-Ueno.
+
+**Departure, Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix): Namba to Kansai Airport.** The Nankai Airport Line's rapid express covers Namba to Kansai Airport Station in about 45 minutes for ¥930 per adult, ¥2,790 for the party. It leaves from Nankai Namba Station, 5-1-60 Namba, Chuo-ku, Osaka-shi, Osaka 542-0076, which is not the Osaka Metro Namba station the party arrived at on Day [27](#day-27---monday-november-2-2026---hiroshima-to-osaka). The JR Haruka covers the same route but runs roughly double the fare per adult, and Nankai needs no advance reservation.
+
+**Kansai Airport Station and Kansai International Airport Terminal 1**  
+1 Senshu-kuko Kita, Izumisano-shi, Osaka 549-0001  
+One address for both, since the station is built into the terminal. International check-in is on the 4th floor, domestic on the 2nd. Check-in for a party of five with a stroller and checked bags wants about three hours ahead of departure, so the Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) schedule builds that buffer in rather than assuming a shorter window.
 
 ### 4. Getting around in each city
 
