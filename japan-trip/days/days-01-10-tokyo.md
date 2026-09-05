@@ -204,7 +204,7 @@ Adult kcal: 500 + 100 (dango) + 750 + 700 = **2,050**.
 | Activities | 22,200 | 143 |
 | **Day total** | **50,900** | **328** |
 
-**Running total after Day 2: ¥75,450 ($487)**
+**Running total after Day 2: ¥83,870 ($541)**
 
 ---
 
@@ -292,7 +292,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Activities | 9,160 | 59 |
 | **Day total** | **34,360** | **222** |
 
-**Running total after Day 3: ¥108,350 ($699)**
+**Running total after Day 3: ¥118,230 ($763)**
 
 ---
 
@@ -401,7 +401,7 @@ other transit leg in this plan; not separately verified for this operator.
 | Activities | 5,400 | 35 |
 | **Day total** | **34,530** | **223** |
 
-**Running total after Day 4: ¥143,060 ($923)**
+**Running total after Day 4: ¥152,760 ($986)**
 
 ---
 
@@ -484,7 +484,7 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 | Activities | 9,600 | 62 |
 | **Day total** | **38,550** | **249** |
 
-**Running total after Day 5: ¥181,610 ($1,172)**
+**Running total after Day 5: ¥191,310 ($1,234)**
 
 ---
 
@@ -574,7 +574,7 @@ Return, Yanaka -> Ueno, is on foot (~25 min), free.
 | Activities | 6,900 | 45 |
 | **Day total** | **35,890** | **232** |
 
-**Running total after Day 6: ¥206,550 ($1,333)**
+**Running total after Day 6: ¥227,200 ($1,466)**
 
 ---
 
@@ -660,7 +660,7 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Activities | 2,100 | 14 |
 | **Day total** | **36,920** | **238** |
 
-**Running total after Day 7: ¥243,470 ($1,571)**
+**Running total after Day 7: ¥264,120 ($1,704)**
 
 ---
 
@@ -752,7 +752,7 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 | Activities | 15,900 | 103 |
 | **Day total** | **49,470** | **319** |
 
-**Running total after Day 8: ¥292,940 ($1,890)**
+**Running total after Day 8: ¥313,590 ($2,023)**
 
 ---
 
@@ -838,7 +838,7 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 | Activities | 9,300 | 60 |
 | **Day total** | **42,760** | **276** |
 
-**Running total after Day 9: ¥334,600 ($2,159)**
+**Running total after Day 9: ¥356,350 ($2,299)**
 
 ---
 
@@ -927,7 +927,7 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Activities | 6,000 | 39 |
 | **Day total** | **34,710** | **224** |
 
-**Running total after Day 10: ¥369,310 ($2,383)**
+**Running total after Day 10: ¥391,060 ($2,523)**
 
 ---
 

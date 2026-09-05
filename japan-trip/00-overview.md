@@ -15,11 +15,11 @@ Excluded from the $9,000: international airfare, passports, visas, travel insura
 | **Shape** | Open-jaw: into Tokyo, out of Osaka |
 | **Bases** | Tokyo 10n, Kawaguchiko 3n (one a ryokan), Kyoto 10n, Hiroshima 3n, Osaka 3n |
 | **Intercity moves** | 4 |
-| **Planned spend** | **¥1,240,320 ($8,002)** |
-| **Contingency** | ¥159,680 ($1,030) |
+| **Planned spend** | **¥1,304,900 ($8,419)** |
+| **Contingency** | ¥95,100 ($614) |
 | **Total budget** | **¥1,400,000 ($9,032)** |
 | **Per adult** | $3,011 |
-| **Per adult per day** | $100.35 budgeted, $88.91 planned |
+| **Per adult per day** | $100.35 budgeted, $93.54 planned |
 
 The trip is built around a single structural decision: **four moves in thirty days.**
 Every base change with a 12-month-old and a 20-month-old costs a half day of usable
@@ -133,11 +133,11 @@ allocated top-down. The category rows below add exactly to the day-by-day totals
 | Transport | 177,530 | 1,145 | 14% |
 | Baby consumables | 68,000 | 439 | 5% |
 | Misc: eSIM, laundry, lockers, forwarding | 38,000 | 245 | 3% |
-| **Planned** | **1,240,320** | **8,002** | 100% |
-| Contingency (12.9%) | 159,680 | 1,030 | |
+| **Planned** | **1,304,900** | **8,419** | 100% |
+| Contingency (6.8%) | 95,100 | 614 | |
 | **Total budget** | **1,400,000** | **9,032** | |
 
-### Why planned spend is $8,002 rather than $9,000
+### Why planned spend is $8,419 rather than $9,000
 
 The reserve is doing real work rather than padding a number. **No lodging rate in this
 report is a quote.** Booking engines returned no date-stamped 2026 availability, so all
@@ -152,7 +152,17 @@ the party moves out of the Kawaguchiko hostel for one night at a lakeside ryokan
 tatami room, futon bedding, a kaiseki dinner and a rentable private family bath. That
 costs ¥23,580 above the night it replaces, plus about ¥5,900 for the ryokan meals.
 
-What remains uncommitted is roughly $1,030. It is the reserve, not a shopping list.
+A later pass then spent most of the rest on the travellers' own stated interests:
+anime, hands-on experience, toddler-specific stops, theatre and food variety. That
+work is set out in Part IV.
+
+**What remains is ¥95,100 ($614), about 6.8%, and that is thin.** Name the risk
+plainly: if the five lodging quotes come back 20% above these estimates, that is
+roughly ¥106,000 and it would consume the whole reserve. The trip would still land
+under $9,000, with nothing left over. The first three things to cut in that case,
+in order, are the Kyoto kimono rental (¥15,840), the Anpanman museum in Kobe
+(¥11,250) and the Nishijin weaving session (¥7,590). Together they are $224 and
+they are the newest and most discretionary items in the plan.
 
 ### The one thing that nearly broke the budget
 
