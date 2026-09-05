@@ -1,9 +1,6 @@
 # Tokyo
 
-*Covers Days 1-10 (Oct 7-16 2026), based at Hotel Livemax Higashi-Ueno, 3-5-1 Motoasakusa,
-Taito-ku. Written against MASTER-BRIEF.md and days-01-10-tokyo.md.*
-
----
+Covers Days @@DAYLINK:1@@-@@DAYLINK:10@@ (7-16 October 2026), based at Hotel Livemax Higashi-Ueno, 3-5-1 Motoasakusa, Taito-ku.
 
 Tokyo is not a city with a downtown the way most first-time visitors picture one. It is
 closer to a cluster of a dozen or so full-sized city centres - Shinjuku, Shibuya, Ueno,

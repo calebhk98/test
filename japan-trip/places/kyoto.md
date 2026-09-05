@@ -1,10 +1,6 @@
 # Kyoto
 
-*Research file. Covers Days 14-23 (Oct 20-29 2026), 10 nights at Toyoko Inn Kyoto
-Shijo-Omiya, 3 adults + 2 infants (~12mo, ~20mo). Prices are 2026 planning
-estimates, not quotes, per the trip's honesty rule. FX ¥155 = $1.*
-
----
+Covers Days @@DAYLINK:14@@-@@DAYLINK:23@@ (20-29 October 2026), 10 nights at Toyoko Inn Kyoto Shijo-Omiya.
 
 ### What Kyoto actually is
 

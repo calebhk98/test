@@ -89,7 +89,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 11,250 | 73 |
 | **Day total** | **34,210** | **221** |
 
-**Running total after Day 28: ¥1,152,500 ($7,435)**
+**Running total after Day 28: ¥1,133,600 ($7,314)**
 
 ---
 
@@ -183,7 +183,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 10,500 | 68 |
 | **Day total** | **38,150** | **246** |
 
-**Running total after Day 29: ¥1,190,650 ($7,682)**
+**Running total after Day 29: ¥1,171,750 ($7,560)**
 
 **Option on the table, not scheduled: Bunraku at the National Bunraku Theatre.** The theatre sits one minute from Kintetsu Nipponbashi Station, the same block as this day's Kuromon Ichiba lunch stop, and its Kinshu (Autumn) run covers 31 Oct - 23 Nov 2026 - open the entire Osaka stay. Bunraku puppets are worked in full view, roughly a metre tall, each handled by three visible black-clad puppeteers, with a chanter and shamisen player performing live at the side of the stage; nothing is spoken that needs translating to follow it, which makes it arguably the single best answer on this whole trip to "how is Japanese theatre different from American theatre." Tickets run about ¥6,500/adult, uniform seating, and the theatre's own FAQ sets no minimum age - only a policy that a disruptive child may be asked to step out, with lobby monitors as a fallback. **It is not scheduled, for one plain reason: Part 1 alone runs 2h20 or longer, which means one adult sits alone with both infants for that entire stretch on the trip's last full day**, and taking it means dropping the Tombori River Cruise above and trimming the Shinsekai stop to make room. It is priced and ready to book as-is if the family decides that trade is worth it; it is left out of the schedule and the Day 29 Cost table above on the assumption that it is not.
 
@@ -248,7 +248,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 0 | 0 |
 | **Day total** | **7,790** | **50** |
 
-**Running total after Day 30: ¥1,198,440 ($7,732)**
+**Running total after Day 30: ¥1,179,540 ($7,610)**
 
 ---
 

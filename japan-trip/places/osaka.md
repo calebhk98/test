@@ -1,9 +1,6 @@
 # Osaka
 
-*Prepared for Days 27-30 (Nov 2-5 2026), Toyoko Inn Osaka Namba, 3 adults + 2 infants (~12mo, ~20mo).
-Prices at ¥155 = $1.00. Facts are marked [VERIFIED, source] or [ESTIMATE]; no invented addresses.*
-
----
+Covers Days @@DAYLINK:27@@-@@DAYLINK:29@@ (2-4 November 2026), 3 nights at Toyoko Inn Osaka Namba, with departure from Kansai Airport on Day @@DAYLINK:30@@.
 
 Osaka is Japan's merchant city, and that one fact explains almost everything about how it feels to
 visit. Kyoto was the imperial capital for a thousand years and built itself around court ritual and

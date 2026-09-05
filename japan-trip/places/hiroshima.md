@@ -1,10 +1,6 @@
 # Hiroshima and Miyajima
 
-Covers Days 24-26 (Oct 30 - Nov 1, 2026), 3 nights at Toyoko Inn Hiroshima Ekimae Ohashi
-Minami, with a full Miyajima day. Cross-check against
-`/home/user/test/japan-trip/days/days-24-27-hiroshima.md` and `MASTER-BRIEF.md`.
-
----
+Covers Days @@DAYLINK:24@@-@@DAYLINK:26@@ (30 October - 1 November 2026), 3 nights at Toyoko Inn Hiroshima Ekimae Ohashi Minami, including a full day on Miyajima.
 
 Hiroshima today is a rebuilt, modern, green city of about 1.2 million people, spread
 across a river delta where six branches of the Ota River fan out to the Seto Inland Sea.

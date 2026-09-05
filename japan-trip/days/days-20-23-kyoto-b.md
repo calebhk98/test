@@ -110,7 +110,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Activities | 8,700 | 56 |
 | **Day total** | **39,730** | **256** |
 
-**Running total after Day 20: ¥828,410 ($5,345)**
+**Running total after Day 20: ¥809,510 ($5,223)**
 
 ---
 
@@ -213,7 +213,7 @@ rest above - free, no separate stop and no schedule change.
 | Activities | 7,500 | 48 |
 | **Day total** | **36,730** | **237** |
 
-**Running total after Day 21: ¥865,140 ($5,582)**
+**Running total after Day 21: ¥846,240 ($5,460)**
 
 ---
 
@@ -326,7 +326,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 | Activities | 9,300 | 60 |
 | **Day total** | **38,740** | **250** |
 
-**Running total after Day 22: ¥903,880 ($5,831)**
+**Running total after Day 22: ¥884,980 ($5,710)**
 
 ---
 
@@ -428,7 +428,7 @@ are free; the weaving experience and kimono rental are priced per adult only
 | Activities | 24,900 | 161 |
 | **Day total** | **53,770** | **347** |
 
-**Running total after Day 23: ¥957,650 ($6,178)**
+**Running total after Day 23: ¥938,750 ($6,056)**
 
 ---
 

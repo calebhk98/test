@@ -10,7 +10,7 @@
   - [3. Why this route](#3-why-this-route)
   - [4. How the money works](#4-how-the-money-works)
     - [Allocation](#allocation)
-    - [Why planned spend is $8,416 rather than $9,000](#why-planned-spend-is-8416-rather-than-9000)
+    - [Why planned spend is $8,294 rather than $9,000](#why-planned-spend-is-8294-rather-than-9000)
     - [Why the lodging is two rooms at every stop](#why-the-lodging-is-two-rooms-at-every-stop)
     - [Why the food budget works](#why-the-food-budget-works)
     - [How infants change the arithmetic](#how-infants-change-the-arithmetic)
@@ -47,7 +47,6 @@
     - [Onsen, sento and bathing](#onsen-sento-and-bathing)
     - [Traditional lodging](#traditional-lodging)
     - [Markets and street stalls](#markets-and-street-stalls)
-    - [Food by type](#food-by-type)
     - [Anime, manga and games](#anime-manga-and-games)
     - [Technology and science](#technology-and-science)
     - [Art and museums](#art-and-museums)
@@ -61,30 +60,35 @@
     - [Views and observation decks](#views-and-observation-decks)
     - [Things aimed at the toddlers](#things-aimed-at-the-toddlers)
     - [Shopping](#shopping)
-  - [Appendix B: The five places](#appendix-b-the-five-places)
+  - [Appendix B: Food index](#appendix-b-food-index)
+  - [Appendix C: The five places](#appendix-c-the-five-places)
     - [Tokyo](#tokyo)
     - [Kawaguchiko and the Fuji Five Lakes](#kawaguchiko-and-the-fuji-five-lakes)
     - [Kyoto](#kyoto)
     - [Hiroshima and Miyajima](#hiroshima-and-miyajima)
     - [Osaka](#osaka)
-  - [Appendix C: Advance booking](#appendix-c-advance-booking)
+  - [Appendix D: Hotels and lodging](#appendix-d-hotels-and-lodging)
+    - [Why two rooms rather than one](#why-two-rooms-rather-than-one)
+    - [The properties](#the-properties)
+    - [What to confirm before paying](#what-to-confirm-before-paying)
+  - [Appendix E: Advance booking](#appendix-e-advance-booking)
     - [1. Booking timeline, ordered by when to act](#1-booking-timeline-ordered-by-when-to-act)
     - [2. Book these first: the items where failure actually breaks the plan](#2-book-these-first-the-items-where-failure-actually-breaks-the-plan)
     - [3. Things that need a phone call, not a website](#3-things-that-need-a-phone-call-not-a-website)
     - [4. No booking needed](#4-no-booking-needed)
-  - [Appendix D: Shopping lists and supply runs](#appendix-d-shopping-lists-and-supply-runs)
+  - [Appendix F: Shopping lists and supply runs](#appendix-f-shopping-lists-and-supply-runs)
     - [1. Strategy: what travels and what doesn't](#1-strategy-what-travels-and-what-doesnt)
     - [2. Dated shopping runs](#2-dated-shopping-runs)
     - [3. Run-down-before-you-move checklist](#3-run-down-before-you-move-checklist)
     - [4. Consolidated infant-supplies plan](#4-consolidated-infant-supplies-plan)
     - [5. Day 30 packing-day note (Osaka -> Kansai Airport)](#5-day-30-packing-day-note-osaka---kansai-airport)
-  - [Appendix E: Open decisions](#appendix-e-open-decisions)
+  - [Appendix G: Open decisions](#appendix-g-open-decisions)
     - [1. Decisions for the family](#1-decisions-for-the-family)
     - [2. Deadlines](#2-deadlines)
     - [3. Verify nearer the date](#3-verify-nearer-the-date)
-  - [Appendix F: Japan with a 12-month-old and a 20-month-old](#appendix-f-japan-with-a-12-month-old-and-a-20-month-old)
-  - [Appendix G: How 2,000 calories a day actually gets bought](#appendix-g-how-2000-calories-a-day-actually-gets-bought)
-  - [Appendix H: Confidence and sources](#appendix-h-confidence-and-sources)
+  - [Appendix H: Japan with a 12-month-old and a 20-month-old](#appendix-h-japan-with-a-12-month-old-and-a-20-month-old)
+  - [Appendix I: How 2,000 calories a day actually gets bought](#appendix-i-how-2000-calories-a-day-actually-gets-bought)
+  - [Appendix J: Confidence and sources](#appendix-j-confidence-and-sources)
 
 **3 adults + 2 infants (~12 months and ~20 months) | 7 October - 5 November 2026 | 30 days, 29 nights**
 
@@ -101,11 +105,11 @@ Excluded from the $9,000: international airfare, passports, visas, travel insura
 | **Shape** | Open-jaw: into Tokyo, out of Osaka |
 | **Bases** | Tokyo 10n, Kawaguchiko 3n (one a ryokan), Kyoto 10n, Hiroshima 3n, Osaka 3n |
 | **Intercity moves** | 4 |
-| **Planned spend** | **¥1,304,440 ($8,416)** |
-| **Contingency** | ¥95,560 ($617) |
+| **Planned spend** | **¥1,285,540 ($8,294)** |
+| **Contingency** | ¥114,460 ($738) |
 | **Total budget** | **¥1,400,000 ($9,032)** |
 | **Per adult** | $3,011 |
-| **Per adult per day** | $100.35 budgeted, $93.51 planned |
+| **Per adult per day** | $100.35 budgeted, $92.15 planned |
 
 The trip is built around a single structural decision: **four moves in thirty days.**
 Every base change with a 12-month-old and a 20-month-old costs a half day of usable
@@ -219,11 +223,11 @@ allocated top-down. The category rows below add exactly to the day-by-day totals
 | Transport | 177,530 | 1,145 | 14% |
 | Baby consumables | 68,000 | 439 | 5% |
 | Misc: eSIM, laundry, lockers, forwarding | 38,000 | 245 | 3% |
-| **Planned** | **1,304,440** | **8,416** | 100% |
-| Contingency (6.8%) | 95,560 | 617 | |
+| **Planned** | **1,285,540** | **8,294** | 100% |
+| Contingency (8.2%) | 114,460 | 738 | |
 | **Total budget** | **1,400,000** | **9,032** | |
 
-### Why planned spend is $8,416 rather than $9,000
+### Why planned spend is $8,294 rather than $9,000
 
 The reserve is doing real work rather than padding a number. **No lodging rate in this
 report is a quote.** Booking engines returned no date-stamped 2026 availability, so all
@@ -237,7 +241,7 @@ Kawaguchiko hostel for one night at a lakeside ryokan: tatami room, futon beddin
 kaiseki dinner and a rentable private family bath. That costs ¥23,580 above the night
 it replaces, plus about ¥5,900 for the ryokan meals.
 
-**What remains is ¥95,560 ($617), about 7.3%, and that is thin.** Name the risk
+**What remains is ¥114,460 ($738), about 7.3%, and that is thin.** Name the risk
 plainly: if the five lodging quotes come back 20% above these estimates, that is
 roughly ¥106,000 and it would consume the whole reserve. The trip would still land
 under $9,000, with nothing left over. The first three things to cut in that case,
@@ -330,26 +334,26 @@ out. Reserve it as soon as the window opens.
 | [15](#day-15---wednesday-october-21-2026---kyoto) | Wednesday, October 21, 2026 | Kyoto | 34,080 | 220 | 4,073 |
 | [16](#day-16---thursday-october-22-2026---kyoto) | Thursday, October 22, 2026 | Kyoto | 33,560 | 217 | 4,289 |
 | [17](#day-17---friday-october-23-2026---kyoto) | Friday, October 23, 2026 | Kyoto | 35,480 | 229 | 4,518 |
-| [18](#day-18---saturday-october-24-2026---kyoto) | Saturday, October 24, 2026 | Kyoto | 49,270 | 318 | 4,836 |
-| [19](#day-19---sunday-october-25-2026---kyoto) | Sunday, October 25, 2026 | Kyoto | 39,090 | 252 | 5,088 |
-| [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Monday, October 26, 2026 | Kyoto (day trip to Nara) | 39,730 | 256 | 5,345 |
-| [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Tuesday, October 27, 2026 | Kyoto (day trip to Uji) | 36,730 | 237 | 5,582 |
-| [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Wednesday, October 28, 2026 | Kyoto (day trip to the Fushimi sake district) | 38,740 | 250 | 5,831 |
-| [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Thursday, October 29, 2026 | Kyoto (low-key day + packing) | 53,770 | 347 | 6,178 |
-| [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Friday, October 30, 2026 | Kyoto to Hiroshima | 73,650 | 475 | 6,654 |
-| [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Saturday, October 31, 2026 | Miyajima (Itsukushima) | 34,160 | 220 | 6,874 |
-| [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Sunday, November 1, 2026 | Hiroshima city day | 32,410 | 209 | 7,083 |
-| [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Monday, November 2, 2026 | Hiroshima to Osaka | 20,420 | 132 | 7,215 |
-| [28](#day-28---tuesday-november-3-2026---osaka) | Tuesday, November 3, 2026 | Osaka | 34,210 | 221 | 7,435 |
-| [29](#day-29---wednesday-november-4-2026---osaka) | Wednesday, November 4, 2026 | Osaka | 38,150 | 246 | 7,682 |
-| [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Thursday, November 5, 2026 | Osaka -> Kansai Airport (KIX) | 7,790 | 50 | 7,732 |
-| | | **Day-line total** | **1,198,440** | **7,732** | |
+| [18](#day-18---saturday-october-24-2026---kyoto) | Saturday, October 24, 2026 | Kyoto | 30,370 | 196 | 4,714 |
+| [19](#day-19---sunday-october-25-2026---kyoto) | Sunday, October 25, 2026 | Kyoto | 39,090 | 252 | 4,966 |
+| [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Monday, October 26, 2026 | Kyoto (day trip to Nara) | 39,730 | 256 | 5,223 |
+| [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Tuesday, October 27, 2026 | Kyoto (day trip to Uji) | 36,730 | 237 | 5,460 |
+| [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Wednesday, October 28, 2026 | Kyoto (day trip to the Fushimi sake district) | 38,740 | 250 | 5,710 |
+| [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Thursday, October 29, 2026 | Kyoto (low-key day + packing) | 53,770 | 347 | 6,056 |
+| [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Friday, October 30, 2026 | Kyoto to Hiroshima | 73,650 | 475 | 6,532 |
+| [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Saturday, October 31, 2026 | Miyajima (Itsukushima) | 34,160 | 220 | 6,752 |
+| [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Sunday, November 1, 2026 | Hiroshima city day | 32,410 | 209 | 6,961 |
+| [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Monday, November 2, 2026 | Hiroshima to Osaka | 20,420 | 132 | 7,093 |
+| [28](#day-28---tuesday-november-3-2026---osaka) | Tuesday, November 3, 2026 | Osaka | 34,210 | 221 | 7,314 |
+| [29](#day-29---wednesday-november-4-2026---osaka) | Wednesday, November 4, 2026 | Osaka | 38,150 | 246 | 7,560 |
+| [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix) | Thursday, November 5, 2026 | Osaka -> Kansai Airport (KIX) | 7,790 | 50 | 7,610 |
+| | | **Day-line total** | **1,179,540** | **7,610** | |
 
 Day-line spend covers lodging, food, transport and activities. Two further lines sit at
 trip level and are not repeated daily: baby consumables at ¥68,000 ($439), and
 miscellaneous (eSIM, coin laundry, lockers, luggage forwarding) at ¥38,000 ($245).
-Adding those gives **¥1,304,440 ($8,416)** planned against a
-**¥1,400,000 ($9,032)** budget, leaving **¥95,560 ($617)** in reserve.
+Adding those gives **¥1,285,540 ($8,294)** planned against a
+**¥1,400,000 ($9,032)** budget, leaving **¥114,460 ($738)** in reserve.
 
 ---
 
@@ -569,11 +573,11 @@ Adult kcal: 500 + 100 (dango) + 750 + 700 = **2,050**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Senso-ji + Nakamise-dori | 1h15 | 0 | 0 | 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032 | Tokyo's oldest Buddhist temple (founded 645 AD), reached along the covered Nakamise-dori shopping street - snack and souvenir stalls leading to the huge red Kaminarimon lantern gate, the main hall, and a five-story pagoda. It's the single most-visited religious site in Japan, worth it for the atmosphere and the Kannon-dedicated main hall rather than for solitude. Free to enter, grounds always open (main hall roughly 6am-5pm); Nakamise-dori is genuinely too dense for a stroller by mid-morning, so use the carrier here and save the stroller for Skytree Town. |
-| Sumida Aquarium | 1h00 | 2,900 | 8,700 | Tokyo Solamachi, 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | An indoor aquarium inside the Skytree Town mall, best known for its open-topped penguin and fur seal pool you can walk right up to, plus jellyfish tanks and a touch pool. It's compact and easy rather than spectacular - a good low-stimulation indoor stop for toddlers after Senso-ji's crowds. Fully stroller-accessible with elevators throughout and on-site changing facilities; 2026 planning estimate for admission. |
-| Tokyo Skytree Tembo Deck (350m) | 0h45 | 2,500 | 7,500 | 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | The first observation deck (350m) of the tallest structure in Japan (634m total), with glass-floor sections and a 360-degree view over the Kanto plain - Mt. Fuji is visible on a clear day. Advance timed tickets are recommended to skip the counter queue. Elevators throughout, fully stroller and infant-friendly; 2026 planning estimate, historically ~¥2,100-2,400/adult. |
-| Pokemon Centre Skytree Town | 0h25 | 0 | 0 | Tokyo Skytree Town Solamachi, 4F East Yard, 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | The official Pokemon retail store, on the same mall floor complex the day already visits for the aquarium and Skytree deck - plushes, trading cards, region-exclusive merchandise, and a photo-op Pikachu. Free to walk in, no ticket needed, and it's a five-minute detour rather than a special trip. Indoor, mall-level, elevators throughout - the easiest, most stroller-friendly stop on the whole day; budget only for an optional souvenir. |
-| Kabukiza single-act (hitomakumi) | 1h00 | ~2,500 (1 adult, incl. tablet) | 6,000 (2 adults + 2 English subtitle tablets; the 3rd adult does not attend) | Kabukiza, 4-12-15 Ginza, Chuo-ku, Tokyo 104-0061 (single-act entrance and box office, building's left side, 4th floor) | Kabuki is a centuries-old, highly stylized form of Japanese theatre performed entirely by male actors (onnagata play the female roles), with live shamisen music, a raised walkway (hanamichi) running through the audience, and dramatic held poses (mie). A hitomakumi ticket buys standing/bench-row admission to just one act of the day's programme rather than the full four-hour show, for a fraction of the price - the best available answer on this trip to "how is Japanese theatre different." Tickets are sold same-day only, cash only, at a separate entrance, no advance booking; October 2026's programme (Kinshu Ju-gatsu O-Kabuki, Oct 2-20) covers this date, and a ¥1,000 refundable-deposit English subtitle tablet solves the language problem (the Japanese-only earphone guide does not). Whether small children are allowed into the single-act section is inconsistent between sources, and a hushed single-scene room with no mid-act aisle access is a poor fit for two children under two regardless - so this is booked as a 2-adult outing only, with the 3rd adult staying at the hotel with both infants. |
+| [Senso-ji + Nakamise-dori](#temples-and-buddhism) | 1h15 | 0 | 0 | 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032 | Tokyo's oldest Buddhist temple (founded 645 AD), reached along the covered Nakamise-dori shopping street - snack and souvenir stalls leading to the huge red Kaminarimon lantern gate, the main hall, and a five-story pagoda. It's the single most-visited religious site in Japan, worth it for the atmosphere and the Kannon-dedicated main hall rather than for solitude. Free to enter, grounds always open (main hall roughly 6am-5pm); Nakamise-dori is genuinely too dense for a stroller by mid-morning, so use the carrier here and save the stroller for Skytree Town. |
+| [Sumida Aquarium](#things-aimed-at-the-toddlers) | 1h00 | 2,900 | 8,700 | Tokyo Solamachi, 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | An indoor aquarium inside the Skytree Town mall, best known for its open-topped penguin and fur seal pool you can walk right up to, plus jellyfish tanks and a touch pool. It's compact and easy rather than spectacular - a good low-stimulation indoor stop for toddlers after Senso-ji's crowds. Fully stroller-accessible with elevators throughout and on-site changing facilities; 2026 planning estimate for admission. |
+| [Tokyo Skytree Tembo Deck (350m)](#views-and-observation-decks) | 0h45 | 2,500 | 7,500 | 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | The first observation deck (350m) of the tallest structure in Japan (634m total), with glass-floor sections and a 360-degree view over the Kanto plain - Mt. Fuji is visible on a clear day. Advance timed tickets are recommended to skip the counter queue. Elevators throughout, fully stroller and infant-friendly; 2026 planning estimate, historically ~¥2,100-2,400/adult. |
+| [Pokemon Centre Skytree Town](#anime-manga-and-games) | 0h25 | 0 | 0 | Tokyo Skytree Town Solamachi, 4F East Yard, 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | The official Pokemon retail store, on the same mall floor complex the day already visits for the aquarium and Skytree deck - plushes, trading cards, region-exclusive merchandise, and a photo-op Pikachu. Free to walk in, no ticket needed, and it's a five-minute detour rather than a special trip. Indoor, mall-level, elevators throughout - the easiest, most stroller-friendly stop on the whole day; budget only for an optional souvenir. |
+| [Kabukiza single-act (hitomakumi)](#theatre-and-performance) | 1h00 | ~2,500 (1 adult, incl. tablet) | 6,000 (2 adults + 2 English subtitle tablets; the 3rd adult does not attend) | Kabukiza, 4-12-15 Ginza, Chuo-ku, Tokyo 104-0061 (single-act entrance and box office, building's left side, 4th floor) | Kabuki is a centuries-old, highly stylized form of Japanese theatre performed entirely by male actors (onnagata play the female roles), with live shamisen music, a raised walkway (hanamichi) running through the audience, and dramatic held poses (mie). A hitomakumi ticket buys standing/bench-row admission to just one act of the day's programme rather than the full four-hour show, for a fraction of the price - the best available answer on this trip to "how is Japanese theatre different." Tickets are sold same-day only, cash only, at a separate entrance, no advance booking; October 2026's programme (Kinshu Ju-gatsu O-Kabuki, Oct 2-20) covers this date, and a ¥1,000 refundable-deposit English subtitle tablet solves the language problem (the Japanese-only earphone guide does not). Whether small children are allowed into the single-act section is inconsistent between sources, and a hushed single-scene room with no mid-act aisle access is a poor fit for two children under two regardless - so this is booked as a 2-adult outing only, with the 3rd adult staying at the hotel with both infants. |
 
 ### Day 2 Cost
 
@@ -674,10 +678,10 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Ueno Zoo | 1h15 | 600 | 1,800 | 9-83 Uenokoen, Taito-ku, Tokyo 110-8711 | Japan's oldest zoo (opened 1882), with a full range of animals across paved, gently sloped paths inside Ueno Park. **The pandas are gone**: the last two, twin cubs Xiao Xiao and Lei Lei, were flown back to China in late January 2026, leaving Japan without a single giant panda for the first time since 1972 - don't build up "the pandas" to the toddlers beforehand. What's actually here instead is still a strong morning stop: Asian elephants, western lowland gorillas, Sumatran tigers, polar bears, and capybara, plus a five-storey pagoda inside the zoo grounds and (when running) the monorail between the East and West gardens. Stroller-friendly throughout; infants free. |
-| Tokyo National Museum - permanent collection | 0h45 | 1,000 | 3,000 | 13-9 Uenokoen, Taito-ku, Tokyo 110-8712 | Japan's oldest and largest museum, covering samurai armor, swords, ceramics, and Buddhist sculpture across several permanent galleries. The best single stop in Tokyo for pre-modern Japanese art and history, though it's a "look, don't touch" pace better suited to a stroller or carrier than an active toddler. Booked as permanent-collection-only this visit (the rotating special exhibition is skipped) - a shorter, cheaper visit that frees both time and budget for the Kahaku stop next door. Elevators throughout; ¥1,000/adult general admission, 2026 pricing. |
-| National Museum of Nature and Science (Kahaku) | 1h15 | 620 | 1,860 | 7-20 Ueno Park, Taito-ku, Tokyo 110-8718 | Japan's national museum of natural history and science, a five-minute walk from the Tokyo National Museum - a full dinosaur skeleton hall, the actual Lambda 4S rocket that launched Japan's first satellite in 1970, space suits, and deep-sea exploration displays. With Miraikan (Tokyo's flagship future-tech museum) closed for refurbishment from 1 Oct 2026 to 22 Apr 2027 - spanning this entire trip - Kahaku becomes the trip's main "cool tech" stop: dinosaurs for the toddlers, real space hardware for the adults. Indoor and elevator-served throughout, open until 20:00 on Fridays (this is a Friday) so there's real scheduling slack; no loud dark rooms or robot demos, low-risk for a 12- and 20-month-old. ¥620/adult, both infants free. |
-| Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato, Yodobashi | 2h40 | 0 (browse) | ~2,500 (an optional family gachapon round; not per-adult) | Radio Kaikan, 1-15-16 Soto-Kanda, Chiyoda-ku, Tokyo; Gachapon Kaikan, 3-15-5 Sotokanda, Chiyoda-ku, Tokyo; Mandarake Complex, 3-11-12 Sotokanda, Chiyoda-ku, Tokyo 101-0021; Super Potato, Kitabayashi Bldg 3F-5F, 1-11-2 Sotokanda, Chiyoda-ku, Tokyo 101-0021; Yodobashi Camera Multimedia Akiba, 1-1 Kanda-Hanaokacho, Chiyoda-ku, Tokyo 101-0028 | Tokyo's "electric town," now a real visit rather than a token stroll. Radio Kaikan is a genuine Steins;Gate filming location - the rebuilt 10-storey building is where the anime sets its time-travel-hub scenes, and its 10F event space hosted the show's own 2026 anniversary event (the real-world maid cafe the anime's May Queen Nyan Nyan is modelled on, Cafe Mai:lish, is two minutes away if anyone wants to see the exterior). Add Gachapon Kaikan's roughly 500 capsule machines, Mandarake Complex's eight floors of manga, figures and Gunpla, and Super Potato's retro-game floors for a proper cross-section of the neighbourhood. Ground floors and Yodobashi's elevators are stroller-workable in short bursts, if crowded; Mandarake's upper floors and Super Potato's 3F-5F (narrow stairs, a small elevator, a smoky arcade on top) are not - one adult peels off there alone while the stroller waits below. Free to browse; budget an optional ¥2,500 or so for a family round of gachapon. |
+| [Ueno Zoo](#things-aimed-at-the-toddlers) | 1h15 | 600 | 1,800 | 9-83 Uenokoen, Taito-ku, Tokyo 110-8711 | Japan's oldest zoo (opened 1882), with a full range of animals across paved, gently sloped paths inside Ueno Park. **The pandas are gone**: the last two, twin cubs Xiao Xiao and Lei Lei, were flown back to China in late January 2026, leaving Japan without a single giant panda for the first time since 1972 - don't build up "the pandas" to the toddlers beforehand. What's actually here instead is still a strong morning stop: Asian elephants, western lowland gorillas, Sumatran tigers, polar bears, and capybara, plus a five-storey pagoda inside the zoo grounds and (when running) the monorail between the East and West gardens. Stroller-friendly throughout; infants free. |
+| [Tokyo National Museum - permanent collection](#art-and-museums) | 0h45 | 1,000 | 3,000 | 13-9 Uenokoen, Taito-ku, Tokyo 110-8712 | Japan's oldest and largest museum, covering samurai armor, swords, ceramics, and Buddhist sculpture across several permanent galleries. The best single stop in Tokyo for pre-modern Japanese art and history, though it's a "look, don't touch" pace better suited to a stroller or carrier than an active toddler. Booked as permanent-collection-only this visit (the rotating special exhibition is skipped) - a shorter, cheaper visit that frees both time and budget for the Kahaku stop next door. Elevators throughout; ¥1,000/adult general admission, 2026 pricing. |
+| [National Museum of Nature and Science (Kahaku)](#technology-and-science) | 1h15 | 620 | 1,860 | 7-20 Ueno Park, Taito-ku, Tokyo 110-8718 | Japan's national museum of natural history and science, a five-minute walk from the Tokyo National Museum - a full dinosaur skeleton hall, the actual Lambda 4S rocket that launched Japan's first satellite in 1970, space suits, and deep-sea exploration displays. With Miraikan (Tokyo's flagship future-tech museum) closed for refurbishment from 1 Oct 2026 to 22 Apr 2027 - spanning this entire trip - Kahaku becomes the trip's main "cool tech" stop: dinosaurs for the toddlers, real space hardware for the adults. Indoor and elevator-served throughout, open until 20:00 on Fridays (this is a Friday) so there's real scheduling slack; no loud dark rooms or robot demos, low-risk for a 12- and 20-month-old. ¥620/adult, both infants free. |
+| [Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato, Yodobashi](#anime-manga-and-games) | 2h40 | 0 (browse) | ~2,500 (an optional family gachapon round; not per-adult) | Radio Kaikan, 1-15-16 Soto-Kanda, Chiyoda-ku, Tokyo; Gachapon Kaikan, 3-15-5 Sotokanda, Chiyoda-ku, Tokyo; Mandarake Complex, 3-11-12 Sotokanda, Chiyoda-ku, Tokyo 101-0021; Super Potato, Kitabayashi Bldg 3F-5F, 1-11-2 Sotokanda, Chiyoda-ku, Tokyo 101-0021; Yodobashi Camera Multimedia Akiba, 1-1 Kanda-Hanaokacho, Chiyoda-ku, Tokyo 101-0028 | Tokyo's "electric town," now a real visit rather than a token stroll. Radio Kaikan is a genuine Steins;Gate filming location - the rebuilt 10-storey building is where the anime sets its time-travel-hub scenes, and its 10F event space hosted the show's own 2026 anniversary event (the real-world maid cafe the anime's May Queen Nyan Nyan is modelled on, Cafe Mai:lish, is two minutes away if anyone wants to see the exterior). Add Gachapon Kaikan's roughly 500 capsule machines, Mandarake Complex's eight floors of manga, figures and Gunpla, and Super Potato's retro-game floors for a proper cross-section of the neighbourhood. Ground floors and Yodobashi's elevators are stroller-workable in short bursts, if crowded; Mandarake's upper floors and Super Potato's 3F-5F (narrow stairs, a small elevator, a smoky arcade on top) are not - one adult peels off there alone while the stroller waits below. Free to browse; budget an optional ¥2,500 or so for a family round of gachapon. |
 
 ### Day 3 Cost
 
@@ -798,11 +802,11 @@ other transit leg in this plan; not separately verified for this operator.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Tokyo Character Street | 0h30 | 0 | 0 | First Avenue Tokyo Station, B1F, near Yaesu Underground Central Exit, Tokyo Stn, Chiyoda-ku | A roughly 30-shop underground corridor of character retail - Pokemon Store, Ghibli's Donguri Kyowakoku, Rilakkuma, Sumikko Gurashi, Doraemon, Crayon Shin-chan, Sanrio - a five-minute walk from the Otemachi stop the day already makes. Free to browse, no ticket needed, and it links today's route to the Ghibli Museum booked later in the segment. Fully indoor, flat, wide mall corridor with elevators and escalators throughout - the easiest, most stroller-friendly stop on this list; budget only for an optional souvenir. |
-| Imperial Palace East Gardens | 1h20 | 0 | 0 | 1-1 Chiyoda, Chiyoda-ku, Tokyo 100-8111 | The public portion of the Imperial Palace grounds - the former Edo Castle's inner citadel, now a formal Japanese garden with the stone Tenshudai foundation (the burned keep's base) still standing. Free, and the strongest "Imperial Palace" experience available without the reservation-only inner-grounds tour. Same-day entry via a QR or paper ticket at the gate, no advance booking; flat gravel paths throughout except the Tenshudai's stone stairs, which need the carrier. |
-| Zojoji Temple | 0h30 | 0 | 0 | 4-7-35 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | The Tokugawa shoguns' family temple, fronted by the towering Sangedatsumon gate and rows of small stone jizo statues in red knit caps. Free, far less crowded than Senso-ji, and stands directly in front of Tokyo Tower for one of the city's classic old-gate/old-tower photos. Flat paved grounds, fully stroller-friendly, no stairs required. |
-| Tokyo Tower Main Deck | 0h35 | 1,500 | 4,500 | 4-2-8 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | Tokyo's original 1958 broadcast tower (333m) - the red-and-white silhouette that stood in for "Tokyo" in film and postcards for decades before Skytree existed. The Main Deck (150m) gives a different, lower, more central view than Skytree's, worth doing on its own terms rather than skipping as "already done." Elevator to the deck, no stairs; ¥1,500/adult, verified via 2026 web search. |
-| Hamarikyu Gardens | 1h00 | 300 | 900 | 1-1 Hamarikyu-teien, Chuo-ku, Tokyo 104-0046 | A former Edo-period shogunal duck-hunting ground turned public garden, notable for its tidal seawater pond (fed directly from Tokyo Bay, unusual for a Japanese garden) crossed by a wooden bridge to a floating teahouse serving matcha and wagashi. A genuinely different, calmer garden than the others on this trip. Wide gravel paths, mostly flat, stroller-friendly; the bridge to the teahouse has a gentle arch, no stairs. ¥300/adult, verified. |
+| [Tokyo Character Street](#anime-manga-and-games) | 0h30 | 0 | 0 | First Avenue Tokyo Station, B1F, near Yaesu Underground Central Exit, Tokyo Stn, Chiyoda-ku | A roughly 30-shop underground corridor of character retail - Pokemon Store, Ghibli's Donguri Kyowakoku, Rilakkuma, Sumikko Gurashi, Doraemon, Crayon Shin-chan, Sanrio - a five-minute walk from the Otemachi stop the day already makes. Free to browse, no ticket needed, and it links today's route to the Ghibli Museum booked later in the segment. Fully indoor, flat, wide mall corridor with elevators and escalators throughout - the easiest, most stroller-friendly stop on this list; budget only for an optional souvenir. |
+| [Imperial Palace East Gardens](#castles-and-fortifications) | 1h20 | 0 | 0 | 1-1 Chiyoda, Chiyoda-ku, Tokyo 100-8111 | The public portion of the Imperial Palace grounds - the former Edo Castle's inner citadel, now a formal Japanese garden with the stone Tenshudai foundation (the burned keep's base) still standing. Free, and the strongest "Imperial Palace" experience available without the reservation-only inner-grounds tour. Same-day entry via a QR or paper ticket at the gate, no advance booking; flat gravel paths throughout except the Tenshudai's stone stairs, which need the carrier. |
+| [Zojoji Temple](#temples-and-buddhism) | 0h30 | 0 | 0 | 4-7-35 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | The Tokugawa shoguns' family temple, fronted by the towering Sangedatsumon gate and rows of small stone jizo statues in red knit caps. Free, far less crowded than Senso-ji, and stands directly in front of Tokyo Tower for one of the city's classic old-gate/old-tower photos. Flat paved grounds, fully stroller-friendly, no stairs required. |
+| [Tokyo Tower Main Deck](#views-and-observation-decks) | 0h35 | 1,500 | 4,500 | 4-2-8 Shibakoen, Minato-ku, Tokyo (address per site research; postal code unverified) | Tokyo's original 1958 broadcast tower (333m) - the red-and-white silhouette that stood in for "Tokyo" in film and postcards for decades before Skytree existed. The Main Deck (150m) gives a different, lower, more central view than Skytree's, worth doing on its own terms rather than skipping as "already done." Elevator to the deck, no stairs; ¥1,500/adult, verified via 2026 web search. |
+| [Hamarikyu Gardens](#gardens) | 1h00 | 300 | 900 | 1-1 Hamarikyu-teien, Chuo-ku, Tokyo 104-0046 | A former Edo-period shogunal duck-hunting ground turned public garden, notable for its tidal seawater pond (fed directly from Tokyo Bay, unusual for a Japanese garden) crossed by a wooden bridge to a floating teahouse serving matcha and wagashi. A genuinely different, calmer garden than the others on this trip. Wide gravel paths, mostly flat, stroller-friendly; the bridge to the teahouse has a gentle arch, no stairs. ¥300/adult, verified. |
 
 ### Day 4 Cost
 
@@ -908,12 +912,12 @@ Harajuku/Yoyogi Park -> Shibuya is on foot via Omotesando, ~25 min, free.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Meiji Jingu Inner Garden | 1h15 | 500 | 1,500 | 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557 | Tokyo's grandest Shinto shrine, built in 1920 for the deified Emperor Meiji and Empress Shoken, reached along a gravel forest path under a huge wooden torii - the shrine buildings themselves are free. The paid Inner Garden (Gyoen) is a separate, older Edo-period strolling garden within the grounds, with an iris pond, a quieter and prettier add-on to the main shrine visit. Wide gravel paths, gentle grade, fully stroller-passable; the Inner Garden charges ¥500/adult on top of the free main shrine. |
-| Yoyogi Park | 1h00 | 0 | 0 | Yoyogikamizonocho, Shibuya-ku, adjacent to Meiji Jingu (nearest station Harajuku; address unverified) | Tokyo's largest and most famous city park - wide open lawns next to Meiji Jingu's forest, popular with picnickers, street performers, and joggers. Free, unstructured downtime, good for toddlers to just run on grass after a morning of gravel paths and shrine etiquette. Flat paved and grass paths throughout, fully stroller-friendly; this is also where today's midday rest block, packed lunch, and the Sunday rockabilly dancers below all happen. |
-| Tokyo Rockabilly Club dancers | 0h30 | 0 | 0 | Yoyogi Park, Harajuku entrance plaza, Shibuya-ku, Tokyo (same plaza as the Yoyogi Park entry above; exact address unverified) | A free, unticketed open-air dance gathering: since the 1980s, crews of the Tokyo Rockabilly Club (including the long-running group "The Strangers") have met most Sundays at the plaza by Yoyogi Park's Harajuku entrance, dressed head-to-toe in 1950s greaser style - leather jackets, pompadours, poodle skirts - dancing to rock and roll played off a portable sound system. It's one of the few genuinely spontaneous pieces of street culture left in Tokyo, free to watch and described as welcoming to onlookers, entirely viewable from a stroller or the sidelines. Verified still active as of 2026, but it is honestly weather-dependent and not guaranteed - a cold or rainy Sunday can mean nobody turns up, so treat it as a bonus, not a fixed plan. No ticket or booking; commonly reported starting in the early-to-mid afternoon (sources converge on roughly 1-2pm) and running for an hour or more. |
-| Takeshita Street + Laforet Harajuku | 0h20 | 0 | 0 | Takeshita-dori, Jingumae, Shibuya-ku, Tokyo 150-0001; Laforet Harajuku, 1-11-6 Jingumae, Shibuya-ku, Tokyo 150-0001 | A 350m pedestrian street of roughly 130 shops - teen fast fashion, crepe stands, purikura photo booths, character cafes - the single most recognizable image of Harajuku, two minutes' walk from Meiji Jingu's Harajuku Station entrance. Worth a short walk-through for the atmosphere and a crepe (see Meals), but be honest about two things: it is narrow and genuinely packed by early afternoon, worse on a Sunday, so this is carrier-only, not stroller terrain; and the old street-level Lolita/decora cosplay gathering on the nearby Jingu-bashi bridge faded years ago and isn't something to expect today. What survives of that fashion is retail, not street performance: Angelic Pretty and Baby, the Stars Shine Bright (B1.5F/B1F) and the gothic-leaning Alice and the Pirates (B1.5F) all keep boutiques inside Laforet Harajuku, just off Takeshita-dori - that's where to actually look for the "Victorian doll" style in person. Free to walk through and window-shop; Laforet is open 11:00-20:00 with no fixed holidays. |
-| Shibuya Scramble Crossing + Hachiko statue | 0h30 | 0 | 0 | Outside Shibuya Stn Hachiko Exit, Shibuya-ku (address unverified) | The famously chaotic five-way pedestrian crossing where up to 3,000 people cross at once when the light changes, next to the bronze statue of Hachiko, the dog who waited at the station for his deceased owner for years. A five-minute "see it to believe it" experience, not a place to linger. Free; the crowd density, not the terrain, is what makes this a carrier stop rather than a stroller one. |
-| Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo | 0h45 | 0 | 0 | Shibuya PARCO, 6F, 15-1 Udagawacho, Shibuya-ku, Tokyo 150-0042 | Three fandoms sharing one mall floor, a five-minute walk from the Scramble/Hachiko stop: Pokemon Center Shibuya, the Jump Shop (Shonen Jump merchandise - One Piece and whatever else is currently running), and Nintendo Tokyo (official Nintendo goods - no console games sold, but heavy on Mario/Zelda/Splatoon merchandise). Free to enter all three, and worth doing simply because it's free, indoor, and right there. Elevator-served mall floor, fully stroller-friendly, and a good weatherproof stand-in for the day's other Shibuya stops; budget only for an optional souvenir. |
+| [Meiji Jingu Inner Garden](#gardens) | 1h15 | 500 | 1,500 | 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557 | Tokyo's grandest Shinto shrine, built in 1920 for the deified Emperor Meiji and Empress Shoken, reached along a gravel forest path under a huge wooden torii - the shrine buildings themselves are free. The paid Inner Garden (Gyoen) is a separate, older Edo-period strolling garden within the grounds, with an iris pond, a quieter and prettier add-on to the main shrine visit. Wide gravel paths, gentle grade, fully stroller-passable; the Inner Garden charges ¥500/adult on top of the free main shrine. |
+| [Yoyogi Park](#nature-and-landscape) | 1h00 | 0 | 0 | Yoyogikamizonocho, Shibuya-ku, adjacent to Meiji Jingu (nearest station Harajuku; address unverified) | Tokyo's largest and most famous city park - wide open lawns next to Meiji Jingu's forest, popular with picnickers, street performers, and joggers. Free, unstructured downtime, good for toddlers to just run on grass after a morning of gravel paths and shrine etiquette. Flat paved and grass paths throughout, fully stroller-friendly; this is also where today's midday rest block, packed lunch, and the Sunday rockabilly dancers below all happen. |
+| [Tokyo Rockabilly Club dancers](#festivals-and-seasonal-events) | 0h30 | 0 | 0 | Yoyogi Park, Harajuku entrance plaza, Shibuya-ku, Tokyo (same plaza as the Yoyogi Park entry above; exact address unverified) | A free, unticketed open-air dance gathering: since the 1980s, crews of the Tokyo Rockabilly Club (including the long-running group "The Strangers") have met most Sundays at the plaza by Yoyogi Park's Harajuku entrance, dressed head-to-toe in 1950s greaser style - leather jackets, pompadours, poodle skirts - dancing to rock and roll played off a portable sound system. It's one of the few genuinely spontaneous pieces of street culture left in Tokyo, free to watch and described as welcoming to onlookers, entirely viewable from a stroller or the sidelines. Verified still active as of 2026, but it is honestly weather-dependent and not guaranteed - a cold or rainy Sunday can mean nobody turns up, so treat it as a bonus, not a fixed plan. No ticket or booking; commonly reported starting in the early-to-mid afternoon (sources converge on roughly 1-2pm) and running for an hour or more. |
+| [Takeshita Street + Laforet Harajuku](#shopping) | 0h20 | 0 | 0 | Takeshita-dori, Jingumae, Shibuya-ku, Tokyo 150-0001; Laforet Harajuku, 1-11-6 Jingumae, Shibuya-ku, Tokyo 150-0001 | A 350m pedestrian street of roughly 130 shops - teen fast fashion, crepe stands, purikura photo booths, character cafes - the single most recognizable image of Harajuku, two minutes' walk from Meiji Jingu's Harajuku Station entrance. Worth a short walk-through for the atmosphere and a crepe (see Meals), but be honest about two things: it is narrow and genuinely packed by early afternoon, worse on a Sunday, so this is carrier-only, not stroller terrain; and the old street-level Lolita/decora cosplay gathering on the nearby Jingu-bashi bridge faded years ago and isn't something to expect today. What survives of that fashion is retail, not street performance: Angelic Pretty and Baby, the Stars Shine Bright (B1.5F/B1F) and the gothic-leaning Alice and the Pirates (B1.5F) all keep boutiques inside Laforet Harajuku, just off Takeshita-dori - that's where to actually look for the "Victorian doll" style in person. Free to walk through and window-shop; Laforet is open 11:00-20:00 with no fixed holidays. |
+| [Shibuya Scramble Crossing + Hachiko statue](#views-and-observation-decks) | 0h30 | 0 | 0 | Outside Shibuya Stn Hachiko Exit, Shibuya-ku (address unverified) | The famously chaotic five-way pedestrian crossing where up to 3,000 people cross at once when the light changes, next to the bronze statue of Hachiko, the dog who waited at the station for his deceased owner for years. A five-minute "see it to believe it" experience, not a place to linger. Free; the crowd density, not the terrain, is what makes this a carrier stop rather than a stroller one. |
+| [Pokemon Centre Shibuya + Jump Shop + Nintendo Tokyo](#anime-manga-and-games) | 0h45 | 0 | 0 | Shibuya PARCO, 6F, 15-1 Udagawacho, Shibuya-ku, Tokyo 150-0042 | Three fandoms sharing one mall floor, a five-minute walk from the Scramble/Hachiko stop: Pokemon Center Shibuya, the Jump Shop (Shonen Jump merchandise - One Piece and whatever else is currently running), and Nintendo Tokyo (official Nintendo goods - no console games sold, but heavy on Mario/Zelda/Splatoon merchandise). Free to enter all three, and worth doing simply because it's free, indoor, and right there. Elevator-served mall floor, fully stroller-friendly, and a good weatherproof stand-in for the day's other Shibuya stops; budget only for an optional souvenir. |
 
 ### Day 5 Cost
 
@@ -1010,10 +1014,10 @@ across the morning in place of one unbroken 25-minute "back to Ueno" hike.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Nezu Shrine | 0h45 | 0 | 0 | 1-28-9 Nezu, Bunkyo-ku, Tokyo 113-0031 | A 1706 Shinto shrine complex with a row of vermillion torii gates climbing a small hillside - a miniature echo of Kyoto's Fushimi Inari - and ornately carved gates rare for their age to have survived intact. A quiet, uncrowded alternative to the trip's bigger-name shrines. Free; flat main grounds, though the torii-tunnel path has a short slope, manageable with the stroller at an easy pace. The azalea-garden fee is seasonal (spring) only, so it's free on this visit. |
-| Yanaka Ginza | 1h00 | 0 | 0 | Yanaka, Taito-ku (nearest station Sendagi or Nippori; address unverified) | An old-fashioned shotengai (shopping street) of roughly 60 small shops - senbei crackers, menchi-katsu stalls, cat-themed goods, the neighborhood's unofficial mascot - that survived Tokyo's postwar rebuilding largely intact. The best "old Tokyo streetscape" browsing outside Asakusa, and much less crowded. Free to browse; flat and stroller-friendly outside peak weekend hours. |
-| Yanaka Cemetery | 0h50 | 0 | 0 | Yanaka, Taito-ku (nearest station Nippori; address unverified) | A large, tree-lined Edo-era cemetery (over 7,000 graves, including a former shogun) laid out in quiet gridded lanes lined with cherry trees - more a peaceful historic walk than a somber one, and a route locals use for dog-walking and cycling. Free; paths are paved but uneven in places, so the carrier is the better call here rather than fighting cobbles with the stroller. |
-| Plastic food-sample workshop, Kappabashi | 1h00 | 2,300 | 6,900 | Kappabashi Kitchen Street, Nishi-Asakusa, Taito-ku (specific studio address unverified) | Kappabashi is Tokyo's wholesale restaurant-supply street - the place where the uncannily realistic plastic food displayed in restaurant windows across Japan is actually made and sold - and it sits about a 15-minute walk from this hotel. A hands-on workshop here has you hand-shape and colour a piece of "food" (tempura or lettuce is typical) using the traditional hot-wax method under a craftsperson's guidance, a genuinely Japan-only souvenir you make rather than buy. Reservation required; instruction at most workshops is Japanese-only, so confirm English support when booking or budget for a watch-and-copy session instead. The hot wax itself is not for toddler hands - this is realistically 1-2 adults working while the third minds both infants nearby. |
+| [Nezu Shrine](#shinto-shrines) | 0h45 | 0 | 0 | 1-28-9 Nezu, Bunkyo-ku, Tokyo 113-0031 | A 1706 Shinto shrine complex with a row of vermillion torii gates climbing a small hillside - a miniature echo of Kyoto's Fushimi Inari - and ornately carved gates rare for their age to have survived intact. A quiet, uncrowded alternative to the trip's bigger-name shrines. Free; flat main grounds, though the torii-tunnel path has a short slope, manageable with the stroller at an easy pace. The azalea-garden fee is seasonal (spring) only, so it's free on this visit. |
+| [Yanaka Ginza](#markets-and-street-stalls) | 1h00 | 0 | 0 | Yanaka, Taito-ku (nearest station Sendagi or Nippori; address unverified) | An old-fashioned shotengai (shopping street) of roughly 60 small shops - senbei crackers, menchi-katsu stalls, cat-themed goods, the neighborhood's unofficial mascot - that survived Tokyo's postwar rebuilding largely intact. The best "old Tokyo streetscape" browsing outside Asakusa, and much less crowded. Free to browse; flat and stroller-friendly outside peak weekend hours. |
+| [Yanaka Cemetery](#nature-and-landscape) | 0h50 | 0 | 0 | Yanaka, Taito-ku (nearest station Nippori; address unverified) | A large, tree-lined Edo-era cemetery (over 7,000 graves, including a former shogun) laid out in quiet gridded lanes lined with cherry trees - more a peaceful historic walk than a somber one, and a route locals use for dog-walking and cycling. Free; paths are paved but uneven in places, so the carrier is the better call here rather than fighting cobbles with the stroller. |
+| [Plastic food-sample workshop, Kappabashi](#crafts-and-hands-on-activities) | 1h00 | 2,300 | 6,900 | Kappabashi Kitchen Street, Nishi-Asakusa, Taito-ku (specific studio address unverified) | Kappabashi is Tokyo's wholesale restaurant-supply street - the place where the uncannily realistic plastic food displayed in restaurant windows across Japan is actually made and sold - and it sits about a 15-minute walk from this hotel. A hands-on workshop here has you hand-shape and colour a piece of "food" (tempura or lettuce is typical) using the traditional hot-wax method under a craftsperson's guidance, a genuinely Japan-only souvenir you make rather than buy. Reservation required; instruction at most workshops is Japanese-only, so confirm English support when booking or budget for a watch-and-copy session instead. The hot wax itself is not for toddler hands - this is realistically 1-2 adults working while the third minds both infants nearby. |
 
 ### Day 6 Cost
 
@@ -1102,9 +1106,9 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Kotoku-in - Great Buddha | 1h00 | 300 | 900 | 4-2-28 Hase, Kamakura, Kanagawa 248-0016 | A 13.4m bronze seated Buddha cast in 1252, sitting in the open air (its housing hall was washed away by a tsunami centuries ago) - one of Japan's most recognizable single images. The scale is the whole point; up close the statue is startlingly large. Free-standing gravel forecourt, fully stroller-passable; the optional interior climb (+¥50/adult, stairs-only) is not counted in this budget. |
-| Hase-dera | 0h35 | 400 | 1,200 | Hase, Kamakura, Kanagawa (nearest station Hase, Enoden; address unverified) | A Buddhist temple famous for a 9.18m gilded wooden statue of the eleven-headed Kannon (goddess of mercy), plus a hillside garden with sweeping views over Kamakura's coastline and hundreds of small Jizo statues left by parents grieving lost children. The garden and sea view are as much the payoff as the statue itself. The terraced garden is reached by steep stairs the compact stroller cannot manage - carrier only for this stop; the lower temple grounds are flat. |
-| Yuigahama Beach | 0h30 | 0 | 0 | Yuigahama, Kamakura, Kanagawa (nearest station Yuigahama, Enoden; address unverified) | Kamakura's town beach - a wide stretch of gray-brown sand facing Sagami Bay, popular with surfers and a favorite local sunset spot. A free, easy wind-down after two temples, letting toddlers loose on flat sand rather than touring anything more. Flat sand approach from the road, stroller-passable to the sand's edge; carrier or being carried is easier once actually on the sand. |
+| [Kotoku-in - Great Buddha](#temples-and-buddhism) | 1h00 | 300 | 900 | 4-2-28 Hase, Kamakura, Kanagawa 248-0016 | A 13.4m bronze seated Buddha cast in 1252, sitting in the open air (its housing hall was washed away by a tsunami centuries ago) - one of Japan's most recognizable single images. The scale is the whole point; up close the statue is startlingly large. Free-standing gravel forecourt, fully stroller-passable; the optional interior climb (+¥50/adult, stairs-only) is not counted in this budget. |
+| [Hase-dera](#temples-and-buddhism) | 0h35 | 400 | 1,200 | Hase, Kamakura, Kanagawa (nearest station Hase, Enoden; address unverified) | A Buddhist temple famous for a 9.18m gilded wooden statue of the eleven-headed Kannon (goddess of mercy), plus a hillside garden with sweeping views over Kamakura's coastline and hundreds of small Jizo statues left by parents grieving lost children. The garden and sea view are as much the payoff as the statue itself. The terraced garden is reached by steep stairs the compact stroller cannot manage - carrier only for this stop; the lower temple grounds are flat. |
+| [Yuigahama Beach](#nature-and-landscape) | 0h30 | 0 | 0 | Yuigahama, Kamakura, Kanagawa (nearest station Yuigahama, Enoden; address unverified) | Kamakura's town beach - a wide stretch of gray-brown sand facing Sagami Bay, popular with surfers and a favorite local sunset spot. A free, easy wind-down after two temples, letting toddlers loose on flat sand rather than touring anything more. Flat sand approach from the road, stroller-passable to the sand's edge; carrier or being carried is easier once actually on the sand. |
 
 ### Day 7 Cost
 
@@ -1198,9 +1202,9 @@ Toyosu Market; a separately purchased ticket for each leg could run somewhat hig
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Odaiba Marine Park + Rainbow Bridge view | 1h00 | 0 | 0 | 1-4 Daiba, Minato-ku, Tokyo 135-0091 | A flat waterfront park and small artificial beach on Tokyo Bay, facing the Rainbow Bridge and a half-scale replica Statue of Liberty. A nice, free, open-air start to the day before the crowds build. Free; wide paved promenade throughout, no stairs. |
-| Gundam Base Tokyo | 0h25 | 0 | 0 | DiverCity Tokyo Plaza, 7F, 1-1-10 Aomi, Koto-ku, Tokyo 135-0064 | Bandai's flagship Gunpla superstore on DiverCity's seventh floor - full-wall model displays, a giant illuminated RX-93ff Nu Gundam head replica, and build-and-buy Gunpla kits floor to ceiling. It's honestly closer to a themed shop than an attraction, but it's free and genuinely mecha, which nothing else free on this trip is. **The famous life-size Unicorn Gundam statue that used to stand outside DiverCity is gone**: its display ended 31 Aug 2026 (retirement ceremony two days earlier), over a month before this trip, and its announced successor has no location or date yet - and Gundam Factory Yokohama, the other obvious mecha stop in the region, closed permanently in March 2024. Both are closures, not oversights in this plan. Indoor, flat, stroller-fine; small Gunpla kits run roughly ¥1,500-4,000 if anyone wants a souvenir, otherwise it's free to browse. |
-| teamLab Planets TOKYO DMM | 1h30 | 5,300 | 15,900 | Toyosu 6-1-16, Koto-ku, Tokyo 135-0061 | A barefoot, walk-through digital art museum: visitors wade ankle-deep through a mirrored water room and move through immersive projection-mapped spaces (a garden of orchids, an infinite light room). Genuinely unlike anything else on this trip, and the segment's marquee paid experience. Bring a full change of clothes - guests get wet to the knee in places; strollers are left at entrance lockers and the space is navigated on foot or in the carrier. 2026 planning estimate, historically ¥3,800-4,900/adult - verify current pricing before booking. |
+| [Odaiba Marine Park + Rainbow Bridge view](#nature-and-landscape) | 1h00 | 0 | 0 | 1-4 Daiba, Minato-ku, Tokyo 135-0091 | A flat waterfront park and small artificial beach on Tokyo Bay, facing the Rainbow Bridge and a half-scale replica Statue of Liberty. A nice, free, open-air start to the day before the crowds build. Free; wide paved promenade throughout, no stairs. |
+| [Gundam Base Tokyo](#anime-manga-and-games) | 0h25 | 0 | 0 | DiverCity Tokyo Plaza, 7F, 1-1-10 Aomi, Koto-ku, Tokyo 135-0064 | Bandai's flagship Gunpla superstore on DiverCity's seventh floor - full-wall model displays, a giant illuminated RX-93ff Nu Gundam head replica, and build-and-buy Gunpla kits floor to ceiling. It's honestly closer to a themed shop than an attraction, but it's free and genuinely mecha, which nothing else free on this trip is. **The famous life-size Unicorn Gundam statue that used to stand outside DiverCity is gone**: its display ended 31 Aug 2026 (retirement ceremony two days earlier), over a month before this trip, and its announced successor has no location or date yet - and Gundam Factory Yokohama, the other obvious mecha stop in the region, closed permanently in March 2024. Both are closures, not oversights in this plan. Indoor, flat, stroller-fine; small Gunpla kits run roughly ¥1,500-4,000 if anyone wants a souvenir, otherwise it's free to browse. |
+| [teamLab Planets TOKYO DMM](#technology-and-science) | 1h30 | 5,300 | 15,900 | Toyosu 6-1-16, Koto-ku, Tokyo 135-0061 | A barefoot, walk-through digital art museum: visitors wade ankle-deep through a mirrored water room and move through immersive projection-mapped spaces (a garden of orchids, an infinite light room). Genuinely unlike anything else on this trip, and the segment's marquee paid experience. Bring a full change of clothes - guests get wet to the knee in places; strollers are left at entrance lockers and the space is navigated on foot or in the carrier. 2026 planning estimate, historically ¥3,800-4,900/adult - verify current pricing before booking. |
 
 ### Day 8 Cost
 
@@ -1285,9 +1289,9 @@ Total party transport this day: ¥6,060 (see Day 9 Cost table).
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Cup Noodles Museum (incl. My CUPNOODLES Factory) | 1h00 | 1,000 | 3,000 | 2-3-4 Shinko, Naka-ku, Yokohama, Kanagawa 231-0001 | A museum on instant ramen's invention by Momofuku Ando, with a giant noodle-themed exhibit hall and a hands-on workshop where you design and seal your own cup of instant noodles to take home. Admission is ¥500/adult, and the My CUPNOODLES Factory workshop (designing and sealing your own cup) is a **separate** ¥500 per cup - so ¥1,000/adult, ¥3,000 for the party if all three adults each make one, not ¥500 as sometimes assumed. Playful and interactive in a way few museums on this trip are, a good change of pace even for toddlers too young for the workshop itself, who can still enjoy the exhibit hall for the base ¥500. Indoor, elevators, stroller-friendly; workshop tickets are sold same-day on-site and can sell out on busy days. |
-| Landmark Tower Sky Garden | 0h35 | 1,200 | 3,600 | 2-2-1 Minatomirai, Nishi-ku, Yokohama, Kanagawa 220-0012 | The 69th-floor observation deck of what was, for decades, Japan's tallest building, with sweeping views over Minato Mirai's harbor skyline and Yokohama Bay (Mt. Fuji visible on a clear day). A quick, high-payoff view stop between the museum and lunch. High-speed elevator, fully indoor and stroller/infant-friendly; 2026 planning estimate. |
-| Sankeien Garden | 1h30 | 900 | 2,700 | 58-1 Honmokusannotani, Naka-ku, Yokohama, Kanagawa | A large traditional Japanese strolling garden built by a silk trader in 1906 around ponds and roughly 17 historic buildings relocated here from Kyoto, Kamakura, and elsewhere, including a three-story pagoda visible above the treeline. The most authentically "old Japan" garden setting of the Tokyo-area days, quieter and less manicured than the Imperial Gardens. Main approach paths are stroller-passable; some inner bridges and paths have steps, so the carrier is the better call for the full loop. |
+| [Cup Noodles Museum (incl. My CUPNOODLES Factory)](#technology-and-science) | 1h00 | 1,000 | 3,000 | 2-3-4 Shinko, Naka-ku, Yokohama, Kanagawa 231-0001 | A museum on instant ramen's invention by Momofuku Ando, with a giant noodle-themed exhibit hall and a hands-on workshop where you design and seal your own cup of instant noodles to take home. Admission is ¥500/adult, and the My CUPNOODLES Factory workshop (designing and sealing your own cup) is a **separate** ¥500 per cup - so ¥1,000/adult, ¥3,000 for the party if all three adults each make one, not ¥500 as sometimes assumed. Playful and interactive in a way few museums on this trip are, a good change of pace even for toddlers too young for the workshop itself, who can still enjoy the exhibit hall for the base ¥500. Indoor, elevators, stroller-friendly; workshop tickets are sold same-day on-site and can sell out on busy days. |
+| [Landmark Tower Sky Garden](#views-and-observation-decks) | 0h35 | 1,200 | 3,600 | 2-2-1 Minatomirai, Nishi-ku, Yokohama, Kanagawa 220-0012 | The 69th-floor observation deck of what was, for decades, Japan's tallest building, with sweeping views over Minato Mirai's harbor skyline and Yokohama Bay (Mt. Fuji visible on a clear day). A quick, high-payoff view stop between the museum and lunch. High-speed elevator, fully indoor and stroller/infant-friendly; 2026 planning estimate. |
+| [Sankeien Garden](#gardens) | 1h30 | 900 | 2,700 | 58-1 Honmokusannotani, Naka-ku, Yokohama, Kanagawa | A large traditional Japanese strolling garden built by a silk trader in 1906 around ponds and roughly 17 historic buildings relocated here from Kyoto, Kamakura, and elsewhere, including a three-story pagoda visible above the treeline. The most authentically "old Japan" garden setting of the Tokyo-area days, quieter and less manicured than the Imperial Gardens. Main approach paths are stroller-passable; some inner bridges and paths have steps, so the carrier is the better call for the full loop. |
 
 ### Day 9 Cost
 
@@ -1378,9 +1382,9 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Shinjuku Gyoen | 1h45 | 500 | 1,500 | 11 Naitomachi, Shinjuku-ku, Tokyo 160-0014 | A large former imperial garden blending French formal, English landscape, and traditional Japanese styles across 58 hectares in the middle of Shinjuku's skyscraper district. The calmest big green space on the trip, and doubles here as the day's mandatory rest block - wide lawns to just sit on rather than a single-direction walking route. Paved and gravel paths, fully stroller-friendly; ¥500/adult, infants free. |
-| Ghibli Museum | 1h30 | 1,000 | 3,000 | 1-1-83 Shimorenjaku, Mitaka-shi, Tokyo 181-0013 | A Hayao Miyazaki-designed museum on Studio Ghibli's films (Spirited Away, My Neighbor Totoro, and others), built as a deliberately disorienting, whimsical building with no posted map, hidden nooks, a rooftop garden with a life-size Laputa robot statue, and a small original-animation theater. A genuine highlight for anyone who knows the films, and charming even for those who don't, thanks to the building itself. Entry is lottery-only, booked roughly a month ahead - see the booking note above; no strollers permitted indoors (spiral staircase) - fold it and leave it at the entrance, carrier or hand-holding inside. |
-| Inokashira Park + small zoo corner | 0h35 | 500 | 1,500 | Inokashira Park, Musashino-shi/Mitaka-shi (nearest station Kichijoji or Inokashira-koen; address unverified) | A large pond-centered park adjoining the Ghibli Museum, popular for its swan-shaped paddle boats and a small, free-to-enter zoo corner with a paid small-animal and elephant enclosure. An easy, pleasant fallback if the Ghibli Museum lottery doesn't come through, and a nice wind-down regardless. Paved paths around the pond, stroller-friendly; the small zoo section charges separately. |
+| [Shinjuku Gyoen](#gardens) | 1h45 | 500 | 1,500 | 11 Naitomachi, Shinjuku-ku, Tokyo 160-0014 | A large former imperial garden blending French formal, English landscape, and traditional Japanese styles across 58 hectares in the middle of Shinjuku's skyscraper district. The calmest big green space on the trip, and doubles here as the day's mandatory rest block - wide lawns to just sit on rather than a single-direction walking route. Paved and gravel paths, fully stroller-friendly; ¥500/adult, infants free. |
+| [Ghibli Museum](#anime-manga-and-games) | 1h30 | 1,000 | 3,000 | 1-1-83 Shimorenjaku, Mitaka-shi, Tokyo 181-0013 | A Hayao Miyazaki-designed museum on Studio Ghibli's films (Spirited Away, My Neighbor Totoro, and others), built as a deliberately disorienting, whimsical building with no posted map, hidden nooks, a rooftop garden with a life-size Laputa robot statue, and a small original-animation theater. A genuine highlight for anyone who knows the films, and charming even for those who don't, thanks to the building itself. Entry is lottery-only, booked roughly a month ahead - see the booking note above; no strollers permitted indoors (spiral staircase) - fold it and leave it at the entrance, carrier or hand-holding inside. |
+| [Inokashira Park + small zoo corner](#things-aimed-at-the-toddlers) | 0h35 | 500 | 1,500 | Inokashira Park, Musashino-shi/Mitaka-shi (nearest station Kichijoji or Inokashira-koen; address unverified) | A large pond-centered park adjoining the Ghibli Museum, popular for its swan-shaped paddle boats and a small, free-to-enter zoo corner with a paid small-animal and elephant enclosure. An easy, pleasant fallback if the Ghibli Museum lottery doesn't come through, and a nice wind-down regardless. Paved paths around the pond, stroller-friendly; the small zoo section charges separately. |
 
 ### Day 10 Cost
 
@@ -1513,7 +1517,7 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Chureito Pagoda / Arakurayama Sengen Park | 1h10 | 0 | 0 | 3353-1 Arakura, Fujiyoshida-shi, Yamanashi Prefecture | A five-story vermilion pagoda set on a hillside above Lake Kawaguchi's basin, with Mt. Fuji rising directly behind it - it is the single most photographed view in the Fuji Five Lakes region, the shot most people picture when they picture this whole leg of the trip. The payoff is the framed pagoda-and-Fuji composition from the viewing platform beside the pagoda, reached via 398 stone steps or a longer, gentler zig-zag slope path alongside them; both routes are carrier-only, not stroller-compatible, all the way up, so one adult carries one infant while the other two and the stroller wait at the flat lower shrine grounds. Free entry, no booking needed; the Kawaguchiko Music Forest Museum isn't part of this day, since fitting in a stair climb plus two extra train rides needs its own slot rather than an add-on. |
+| [Chureito Pagoda / Arakurayama Sengen Park](#nature-and-landscape) | 1h10 | 0 | 0 | 3353-1 Arakura, Fujiyoshida-shi, Yamanashi Prefecture | A five-story vermilion pagoda set on a hillside above Lake Kawaguchi's basin, with Mt. Fuji rising directly behind it - it is the single most photographed view in the Fuji Five Lakes region, the shot most people picture when they picture this whole leg of the trip. The payoff is the framed pagoda-and-Fuji composition from the viewing platform beside the pagoda, reached via 398 stone steps or a longer, gentler zig-zag slope path alongside them; both routes are carrier-only, not stroller-compatible, all the way up, so one adult carries one infant while the other two and the stroller wait at the flat lower shrine grounds. Free entry, no booking needed; the Kawaguchiko Music Forest Museum isn't part of this day, since fitting in a stair climb plus two extra train rides needs its own slot rather than an add-on. |
 
 ### Day 11 Cost
 
@@ -1595,10 +1599,10 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Oishi Park | 1h00 | 0 | 0 | 2525-11 Oishi, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0305 | A free lakeside park and flower garden on Lake Kawaguchi's north shore, laid out specifically to frame Mt. Fuji across the water - the classic "postcard" view, without the stair climb Chureito Pagoda requires. Go in the morning: this is statistically the most reliable window for a clear mountain before afternoon cloud builds up. Flat gravel and grass paths throughout, fully stroller-friendly, with a small café and restrooms on site. |
-| Kawaguchiko Tenjozan Panoramic Ropeway | 1h00 | 1,000 | 3,000 (infants free, planning estimate) | 1163-1 Azagawa, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0303 | A cable car that climbs about 400m up Mt. Tenjo in under three minutes to a summit deck with an unbroken panorama of Mt. Fuji across the full width of Lake Kawaguchi. Worth the fare for the view alone - on a clear day this is the single best elevated vantage point on the Kawaguchiko leg. Both stations are step-free and the cabin takes a folded stroller or a carrier-worn infant; ride late morning to keep the wait short before midday crowds build. |
-| Lake Kawaguchi sightseeing cruise | 0h40 | 1,200 | 3,600 (infants free, planning estimate) | Funatsuhama Pier, Kawaguchiko, ~10 min walk from Kawaguchiko Stn (street address unverified) | A 20-minute loop around Lake Kawaguchi on the red sightseeing boat, passing under the Kawaguchiko Ohashi bridge and around Unoshima Island for a water-level angle on Fuji different from the park or the ropeway. A gentle, low-effort ride both infants can simply sit through - a good choice right after the ropeway once everyone has had enough walking. Boarding is via a short gangway with a handrail, not wheel-on stroller-friendly, but an adult can carry a folded stroller aboard. |
-| Kubota Itchiku Art Museum | 1h30 | 1,600 | 4,800 (infants free, planning estimate) | 2255 Kawaguchi, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0304 | A private museum built around textile artist Itchiku Kubota's life work, famous for reviving the centuries-lost "tsujigahana" dyeing technique across a series of large kimono depicting Mt. Fuji and the cosmos. The kimono installations in the main hall are genuinely striking even without any textile background, and the pyramid-shaped annex and Gaudi-inspired stone garden outside give infants somewhere to walk between rooms. Indoor and largely stroller-friendly, making it the natural stop for the cloudier stretch of the afternoon once outdoor viewpoints stop paying off. |
+| [Oishi Park](#nature-and-landscape) | 1h00 | 0 | 0 | 2525-11 Oishi, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0305 | A free lakeside park and flower garden on Lake Kawaguchi's north shore, laid out specifically to frame Mt. Fuji across the water - the classic "postcard" view, without the stair climb Chureito Pagoda requires. Go in the morning: this is statistically the most reliable window for a clear mountain before afternoon cloud builds up. Flat gravel and grass paths throughout, fully stroller-friendly, with a small café and restrooms on site. |
+| [Kawaguchiko Tenjozan Panoramic Ropeway](#views-and-observation-decks) | 1h00 | 1,000 | 3,000 (infants free, planning estimate) | 1163-1 Azagawa, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0303 | A cable car that climbs about 400m up Mt. Tenjo in under three minutes to a summit deck with an unbroken panorama of Mt. Fuji across the full width of Lake Kawaguchi. Worth the fare for the view alone - on a clear day this is the single best elevated vantage point on the Kawaguchiko leg. Both stations are step-free and the cabin takes a folded stroller or a carrier-worn infant; ride late morning to keep the wait short before midday crowds build. |
+| [Lake Kawaguchi sightseeing cruise](#nature-and-landscape) | 0h40 | 1,200 | 3,600 (infants free, planning estimate) | Funatsuhama Pier, Kawaguchiko, ~10 min walk from Kawaguchiko Stn (street address unverified) | A 20-minute loop around Lake Kawaguchi on the red sightseeing boat, passing under the Kawaguchiko Ohashi bridge and around Unoshima Island for a water-level angle on Fuji different from the park or the ropeway. A gentle, low-effort ride both infants can simply sit through - a good choice right after the ropeway once everyone has had enough walking. Boarding is via a short gangway with a handrail, not wheel-on stroller-friendly, but an adult can carry a folded stroller aboard. |
+| [Kubota Itchiku Art Museum](#art-and-museums) | 1h30 | 1,600 | 4,800 (infants free, planning estimate) | 2255 Kawaguchi, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0304 | A private museum built around textile artist Itchiku Kubota's life work, famous for reviving the centuries-lost "tsujigahana" dyeing technique across a series of large kimono depicting Mt. Fuji and the cosmos. The kimono installations in the main hall are genuinely striking even without any textile background, and the pyramid-shaped annex and Gaudi-inspired stone garden outside give infants somewhere to walk between rooms. Indoor and largely stroller-friendly, making it the natural stop for the cloudier stretch of the afternoon once outdoor viewpoints stop paying off. |
 
 ### Day 12 Cost
 
@@ -1692,10 +1696,10 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Oshino Hakkai village walk | included above | 0 | 0 | Oshino, Minamitsuru-gun, Yamanashi 401-0511 | A cluster of eight spring-fed ponds filled with Mt. Fuji's own filtered snowmelt, set among a small preserved farming village of thatched-roof buildings and water wheels. The ponds are startlingly clear; walking the free public path between them is the actual draw, not any single pond. Flat, paved, stroller-friendly throughout, and busy with tour groups by late morning - which is why this trip visits early. |
-| Oshino Hakkai paid garden pond (Nigori-ike) | included above | 300 | 900 (infants free, planning estimate) | Oshino Hakkai, Oshino-mura, Minamitsuru-gun, Yamanashi (address as above) | One of the eight ponds sits inside a small private garden with its own admission gate, rather than on the free public path - a quieter, less crowded version of the same clear-spring scenery. Worth the small fee mainly for a calmer photo; skippable if the free ponds already feel like enough. Flat gravel paths, stroller-fine. |
-| Saiko Iyashi-no-Sato Nenba | 1h15 | 500 | 1,500 (infants free, planning estimate) | 2710 Nenba, Saiko, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0332 | A reconstructed thatched-roof (kayabuki) farming village on the shore of Lake Saiko, rebuilt after a 1966 landslide destroyed the original hamlet; about 20 restored buildings now house small craft workshops, food stalls, and a folk museum. A slower, hands-on counterpoint to the museums and viewpoints elsewhere on this leg - browsing the crafts and lake views stands in for a single formal activity. Flat, unpaved-but-firm paths throughout, stroller-manageable with some care at the thatched-building thresholds. |
-| Private kashikiri family bath | 0h40 | n/a | 2,750 (flat rate per booking, not per adult; verified rate) | Lakeland Hotel Mizunosato, 1070 Kodachi, Fujikawaguchiko | A hot-spring bath rented by the room and time slot rather than shared with other guests - the whole party, including both infants, bathes together in a single 40-minute private booking. This is the trip's only real onsen bathing-culture participation with two children under two, and it's the deliberate reason tonight's stay moved from K's House to a ryokan: it sidesteps both the inconsistent, often-prohibitive infant/diaper policies at communal baths and the near-universal tattoo restriction many communal onsen and sento still enforce, since a private booking admits the whole party regardless of either. |
+| [Oshino Hakkai village walk](#nature-and-landscape) | included above | 0 | 0 | Oshino, Minamitsuru-gun, Yamanashi 401-0511 | A cluster of eight spring-fed ponds filled with Mt. Fuji's own filtered snowmelt, set among a small preserved farming village of thatched-roof buildings and water wheels. The ponds are startlingly clear; walking the free public path between them is the actual draw, not any single pond. Flat, paved, stroller-friendly throughout, and busy with tour groups by late morning - which is why this trip visits early. |
+| [Oshino Hakkai paid garden pond (Nigori-ike)](#nature-and-landscape) | included above | 300 | 900 (infants free, planning estimate) | Oshino Hakkai, Oshino-mura, Minamitsuru-gun, Yamanashi (address as above) | One of the eight ponds sits inside a small private garden with its own admission gate, rather than on the free public path - a quieter, less crowded version of the same clear-spring scenery. Worth the small fee mainly for a calmer photo; skippable if the free ponds already feel like enough. Flat gravel paths, stroller-fine. |
+| [Saiko Iyashi-no-Sato Nenba](#crafts-and-hands-on-activities) | 1h15 | 500 | 1,500 (infants free, planning estimate) | 2710 Nenba, Saiko, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi 401-0332 | A reconstructed thatched-roof (kayabuki) farming village on the shore of Lake Saiko, rebuilt after a 1966 landslide destroyed the original hamlet; about 20 restored buildings now house small craft workshops, food stalls, and a folk museum. A slower, hands-on counterpoint to the museums and viewpoints elsewhere on this leg - browsing the crafts and lake views stands in for a single formal activity. Flat, unpaved-but-firm paths throughout, stroller-manageable with some care at the thatched-building thresholds. |
+| [Private kashikiri family bath](#onsen-sento-and-bathing) | 0h40 | n/a | 2,750 (flat rate per booking, not per adult; verified rate) | Lakeland Hotel Mizunosato, 1070 Kodachi, Fujikawaguchiko | A hot-spring bath rented by the room and time slot rather than shared with other guests - the whole party, including both infants, bathes together in a single 40-minute private booking. This is the trip's only real onsen bathing-culture participation with two children under two, and it's the deliberate reason tonight's stay moved from K's House to a ryokan: it sidesteps both the inconsistent, often-prohibitive infant/diaper policies at communal baths and the near-universal tattoo restriction many communal onsen and sento still enforce, since a private booking admits the whole party regardless of either. |
 
 ### Day 13 Cost
 
@@ -1780,7 +1784,7 @@ Allow the full 20-30 min buffer at Mishima per the brief; the schedule above boo
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Neighbourhood walk | 1h00 | 0 | 0 | Shijo-Omiya, Kyoto, near Omiya Stn, Hankyu Kyoto Line (address unverified) | A free, unplanned walk around the hotel's neighbourhood to get oriented before the ten-night Kyoto stay properly begins - no set route or paid stop, just enough to find the nearest konbini, bus stop, and a feel for the block. Flat city streets, fully stroller-friendly, and deliberately light after a transfer-heavy morning. |
+| [Neighbourhood walk](#streets-lanes-and-canal-walks) | 1h00 | 0 | 0 | Shijo-Omiya, Kyoto, near Omiya Stn, Hankyu Kyoto Line (address unverified) | A free, unplanned walk around the hotel's neighbourhood to get oriented before the ten-night Kyoto stay properly begins - no set route or paid stop, just enough to find the nearest konbini, bus stop, and a feel for the block. Flat city streets, fully stroller-friendly, and deliberately light after a transfer-heavy morning. |
 
 ### Day 14 Cost
 
@@ -1887,10 +1891,10 @@ Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/fr
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Fushimi Inari Taisha | 1h55 | 0 | 0 | 68 Fukakusa Yabunouchicho, Fushimi-ku, Kyoto 612-0882 | A Shinto shrine to Inari, god of rice and prosperity, famous for the Senbon Torii - thousands of vermilion gates forming a tunnel up the mountainside. Each gate was privately paid for by a business or individual as a thank-offering and carries the donor's name and date; a small one still costs several hundred thousand yen today, which is why the tunnel keeps growing. Free and open 24 hours, so arriving before 9:00 buys near-empty photos before the tour buses land; by mid-morning the lower gates are a slow shuffle of people. The paved loop to the Yotsutsuji lookout is stroller-workable, but the mountain turns to stone steps the rest of the way to the summit - carrier-only beyond that point, which is why today stops at Yotsutsuji. Anime-fan note, free: this shrine and its surrounding Fushimi neighbourhood are the real-world setting of *Inari, Konkon, Koi Iroha*, about a girl who lives beside the shrine. |
-| Omamori charms + goshuincho stamp | - | ~500 | 1,500 | Fushimi Inari Taisha stalls, Fushimi-ku, near JR Inari Station (address unverified) | Omamori are small charms sold at shrine and temple stalls, each blessed for one specific wish - safe travel, health, good luck. A goshuincho is a blank accordion-fold book carried between sites to collect goshuin, a priest's or monk's hand-brushed calligraphy stamp marking the visit, traditionally a pilgrim's record rather than a tourist souvenir. A five-minute stall stop, not a destination in itself. |
-| Kobo-ichi temple market, To-ji | 0h55 | 0 | 0 | To-ji, 1 Kujocho, Minami-ku, Kyoto 601-8473 (nearest station Kyoto, about 15 min walk south) | A monthly temple market: a flea-and-food market held on a fixed date tied to a temple's history, running unbroken for generations rather than staged for tourists. Kobo-ichi falls on the 21st of every month, marking the death anniversary of Kobo Daishi (Kukai), the priest who founded Shingon Buddhism and is enshrined here. Roughly 1,000 stalls spread across the temple's open grounds beneath its five-story pagoda, selling antiques, vintage kimono, ceramics, and plants alongside genuine street food (taiyaki, yakisoba, grilled squid) - this is where Kyoto locals actually shop, and the most reliable place on this whole itinerary to eat from a stall rather than a restaurant. Free to enter, published hours roughly 8:30-17:30. The temple's main paths are open gravel and stroller-workable, but the market itself is a dense press of tarps and tables in narrow rows between stalls - fine on the wide approach, tight and slow once inside the stalls, so the carrier is the safer call there, the same logic already applied to Nishiki Market below. |
-| Nishiki Market | 1h20 | 0 | 0 | Nishikikoji-dori, Nakagyo-ku, Kyoto 604-8054 | A roughly 400m covered shopping arcade of about 130 shops, trading continuously since the Edo period as "Kyoto's Kitchen" - fresh seafood, pickles (tsukemono), knives, tea, and skewered street snacks side by side. Free to walk, and the single best way to taste a range of Kyoto specialties without a sit-down meal; several stalls now post "eat here, not while walking" signs after complaints about congestion, so budget standing time at each stop rather than a moving snack crawl. Trimmed to 1h20 today since the family has already had a full stall-food lunch and market browse at To-ji this morning - still enough time for Daimaru's depachika basement and a stall or two for dinner. The covered, flat floor is stroller-workable, but the arcade is narrow and can be shoulder-to-shoulder at midday and on weekends. |
+| [Fushimi Inari Taisha](#shinto-shrines) | 1h55 | 0 | 0 | 68 Fukakusa Yabunouchicho, Fushimi-ku, Kyoto 612-0882 | A Shinto shrine to Inari, god of rice and prosperity, famous for the Senbon Torii - thousands of vermilion gates forming a tunnel up the mountainside. Each gate was privately paid for by a business or individual as a thank-offering and carries the donor's name and date; a small one still costs several hundred thousand yen today, which is why the tunnel keeps growing. Free and open 24 hours, so arriving before 9:00 buys near-empty photos before the tour buses land; by mid-morning the lower gates are a slow shuffle of people. The paved loop to the Yotsutsuji lookout is stroller-workable, but the mountain turns to stone steps the rest of the way to the summit - carrier-only beyond that point, which is why today stops at Yotsutsuji. Anime-fan note, free: this shrine and its surrounding Fushimi neighbourhood are the real-world setting of *Inari, Konkon, Koi Iroha*, about a girl who lives beside the shrine. |
+| [Omamori charms + goshuincho stamp](#shopping) | - | ~500 | 1,500 | Fushimi Inari Taisha stalls, Fushimi-ku, near JR Inari Station (address unverified) | Omamori are small charms sold at shrine and temple stalls, each blessed for one specific wish - safe travel, health, good luck. A goshuincho is a blank accordion-fold book carried between sites to collect goshuin, a priest's or monk's hand-brushed calligraphy stamp marking the visit, traditionally a pilgrim's record rather than a tourist souvenir. A five-minute stall stop, not a destination in itself. |
+| [Kobo-ichi temple market, To-ji](#markets-and-street-stalls) | 0h55 | 0 | 0 | To-ji, 1 Kujocho, Minami-ku, Kyoto 601-8473 (nearest station Kyoto, about 15 min walk south) | A monthly temple market: a flea-and-food market held on a fixed date tied to a temple's history, running unbroken for generations rather than staged for tourists. Kobo-ichi falls on the 21st of every month, marking the death anniversary of Kobo Daishi (Kukai), the priest who founded Shingon Buddhism and is enshrined here. Roughly 1,000 stalls spread across the temple's open grounds beneath its five-story pagoda, selling antiques, vintage kimono, ceramics, and plants alongside genuine street food (taiyaki, yakisoba, grilled squid) - this is where Kyoto locals actually shop, and the most reliable place on this whole itinerary to eat from a stall rather than a restaurant. Free to enter, published hours roughly 8:30-17:30. The temple's main paths are open gravel and stroller-workable, but the market itself is a dense press of tarps and tables in narrow rows between stalls - fine on the wide approach, tight and slow once inside the stalls, so the carrier is the safer call there, the same logic already applied to Nishiki Market below. |
+| [Nishiki Market](#markets-and-street-stalls) | 1h20 | 0 | 0 | Nishikikoji-dori, Nakagyo-ku, Kyoto 604-8054 | A roughly 400m covered shopping arcade of about 130 shops, trading continuously since the Edo period as "Kyoto's Kitchen" - fresh seafood, pickles (tsukemono), knives, tea, and skewered street snacks side by side. Free to walk, and the single best way to taste a range of Kyoto specialties without a sit-down meal; several stalls now post "eat here, not while walking" signs after complaints about congestion, so budget standing time at each stop rather than a moving snack crawl. Trimmed to 1h20 today since the family has already had a full stall-food lunch and market browse at To-ji this morning - still enough time for Daimaru's depachika basement and a stall or two for dinner. The covered, flat floor is stroller-workable, but the arcade is narrow and can be shoulder-to-shoulder at midday and on weekends. |
 
 ### Day 15 Cost
 
@@ -1979,9 +1983,9 @@ Infants ride free on the subway, Hankyu, and city bus legs. The family returns t
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Jidai Matsuri - free street viewing | 1h30 | 0 | 0 | Kyoto Gyoen (the park, not the walled Gosho), Kamigyo-ku, Kyoto 602-0881 | "Festival of the Ages," one of Kyoto's three great annual festivals, established in 1895 alongside Heian Jingu itself. About 2,000 participants march in accurate historical costume spanning Kyoto's 1,000+ years as capital, in reverse chronological order, processing from the Imperial Palace area to Heian Jingu. Listen as well as look: two phoenix-crested mikoshi (portable shrines) near the procession's end are accompanied by gagaku, Japan's ancient court music, played on instruments largely unchanged since the Heian period - free to hear from the roadside, no extra stop needed. Free to watch from the roadside; no grandstand ticket bought (¥4,500-6,500/adult, skipped). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. |
-| Heian Jingu Shin-en Garden | 0h35 | 600 | 1,800 | 97 Okazaki Nishitennocho, Sakyo-ku, Kyoto 606-8341 | Heian Jingu itself is younger than it looks: built in 1895, a roughly 5/8-scale replica of the original 8th-century Imperial Palace's main ceremonial hall, raised to mark the 1100th anniversary of Kyoto's founding as capital - the shrine grounds and its huge orange torii are free to enter. The Shin-en behind it is a separate paid strolling pond garden, added later, and is genuinely quiet at this hour since the parade crowd has already moved on toward the shrine. Paths are gravel with a few stepping-stone crossings over the pond - carrier is easier than stroller at those crossings, otherwise flat. |
-| Philosopher's Path | 0h50 | 0 | 0 | Tetsugaku-no-michi, Sakyo-ku, Nanzenji → Eikan-do stretch, near Keage Stn (Tozai Line) (address unverified) | A roughly 2km stone path along a canal between Nanzenji and Ginkaku-ji, named for 20th-century Kyoto University philosopher Nishida Kitaro, who reportedly walked it daily for meditation. Free, flat, and quiet compared to the temple crowds - best known for its cherry-tree canopy (not in season here); late-Oct color is only just starting to turn at the canal's edge, still mostly green. |
+| [Jidai Matsuri - free street viewing](#festivals-and-seasonal-events) | 1h30 | 0 | 0 | Kyoto Gyoen (the park, not the walled Gosho), Kamigyo-ku, Kyoto 602-0881 | "Festival of the Ages," one of Kyoto's three great annual festivals, established in 1895 alongside Heian Jingu itself. About 2,000 participants march in accurate historical costume spanning Kyoto's 1,000+ years as capital, in reverse chronological order, processing from the Imperial Palace area to Heian Jingu. Listen as well as look: two phoenix-crested mikoshi (portable shrines) near the procession's end are accompanied by gagaku, Japan's ancient court music, played on instruments largely unchanged since the Heian period - free to hear from the roadside, no extra stop needed. Free to watch from the roadside; no grandstand ticket bought (¥4,500-6,500/adult, skipped). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. |
+| [Heian Jingu Shin-en Garden](#gardens) | 0h35 | 600 | 1,800 | 97 Okazaki Nishitennocho, Sakyo-ku, Kyoto 606-8341 | Heian Jingu itself is younger than it looks: built in 1895, a roughly 5/8-scale replica of the original 8th-century Imperial Palace's main ceremonial hall, raised to mark the 1100th anniversary of Kyoto's founding as capital - the shrine grounds and its huge orange torii are free to enter. The Shin-en behind it is a separate paid strolling pond garden, added later, and is genuinely quiet at this hour since the parade crowd has already moved on toward the shrine. Paths are gravel with a few stepping-stone crossings over the pond - carrier is easier than stroller at those crossings, otherwise flat. |
+| [Philosopher's Path](#nature-and-landscape) | 0h50 | 0 | 0 | Tetsugaku-no-michi, Sakyo-ku, Nanzenji → Eikan-do stretch, near Keage Stn (Tozai Line) (address unverified) | A roughly 2km stone path along a canal between Nanzenji and Ginkaku-ji, named for 20th-century Kyoto University philosopher Nishida Kitaro, who reportedly walked it daily for meditation. Free, flat, and quiet compared to the temple crowds - best known for its cherry-tree canopy (not in season here); late-Oct color is only just starting to turn at the canal's edge, still mostly green. |
 
 ### Day 16 Cost
 
@@ -2064,11 +2068,11 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Arashiyama Bamboo Grove | 0h40 | 0 | 0 | Sagaogurayama Bamboo Grove path, Ukyo-ku, near Arashiyama Stn (Hankyu) / JR Saga-Arashiyama (address unverified) | A several-hundred-meter path cut straight through a dense grove of towering bamboo, one of the most photographed natural scenes in Japan - the stalks creak and knock in the wind, and the light overhead turns green-gold. Free, always open, no ticket. Best in the first hour after sunrise; by mid-morning it becomes a slow, shuffling crowd of tour groups. The path is flat packed gravel and stroller-fine, though there's no shade or seating along it. |
-| Tenryu-ji temple garden | 0h50 | 500 | 1,500 | 68 Susukinobaba-cho, Saga Tenryuji, Ukyo-ku, Kyoto 616-8385 | A UNESCO World Heritage Zen temple, head temple of its own Rinzai-sect lineage, founded 1339. Its Sogenchi Garden is one of Japan's oldest surviving garden designs, built around a pond and using the wooded Arashiyama hillside behind it as "borrowed scenery" (shakkei) - the garden is composed so the mountain reads as part of it. Today's ticket covers the garden only, not the temple hall interior, which keeps the visit to a flat gravel loop around the pond - stroller-workable, though busy with the same crowd flow as the bamboo grove next door. |
-| Togetsukyo Bridge + riverside | 0h30 | 0 | 0 | Ukyo-ku, over the Katsura/Hozu River, near Arashiyama Stn (Hankyu) (address unverified) | "Moon Crossing Bridge," Arashiyama's postcard landmark, rebuilt many times over the centuries - the current span dates to 1934, wood-look railings over a steel-and-concrete deck. The real draw is the wide river and forested hillside behind it rather than the bridge itself; free to walk, flat pavement, and open riverside space to let a toddler stretch their legs off the stroller. |
-| Okochi Sanso Garden | 0h45 | 1,000 | 3,000 | 8 Sagaogurayama Tabuchiyamacho, Ukyo-ku, Kyoto 616-8394 | A hillside villa garden built across the 1930s-50s by silent-film-era actor Okochi Denjiro, with sweeping views over Arashiyama's hills and, on a clear day, the Kyoto basin beyond. Quieter than the bamboo grove or Tenryu-ji since it's a paid detour most tour groups skip, and admission includes matcha and a seasonal sweet at the end, served on a viewing terrace. The paths are hillside gravel with some grade and a few steps - manageable with a carrier, harder work with a stroller. |
-| Sagano Romantic Train (Torokko) | 0h25 | 880 | 2,640 | Torokko Saga Station, adjacent to JR Saga-Arashiyama Station, Ukyo-ku (exact street address unverified) | A slow, open-window sightseeing train on a former freight line, running one-way through the Hozugawa gorge - forested cliffs and river rapids close alongside the tracks, a genuinely different view of Arashiyama than the temples give. Reserve ahead; departures run roughly hourly and seats sell out on weekends. Boarding is a small step up from a low platform - manageable with the stroller folded and carried on, not wheeled on. |
+| [Arashiyama Bamboo Grove](#nature-and-landscape) | 0h40 | 0 | 0 | Sagaogurayama Bamboo Grove path, Ukyo-ku, near Arashiyama Stn (Hankyu) / JR Saga-Arashiyama (address unverified) | A several-hundred-meter path cut straight through a dense grove of towering bamboo, one of the most photographed natural scenes in Japan - the stalks creak and knock in the wind, and the light overhead turns green-gold. Free, always open, no ticket. Best in the first hour after sunrise; by mid-morning it becomes a slow, shuffling crowd of tour groups. The path is flat packed gravel and stroller-fine, though there's no shade or seating along it. |
+| [Tenryu-ji temple garden](#temples-and-buddhism) | 0h50 | 500 | 1,500 | 68 Susukinobaba-cho, Saga Tenryuji, Ukyo-ku, Kyoto 616-8385 | A UNESCO World Heritage Zen temple, head temple of its own Rinzai-sect lineage, founded 1339. Its Sogenchi Garden is one of Japan's oldest surviving garden designs, built around a pond and using the wooded Arashiyama hillside behind it as "borrowed scenery" (shakkei) - the garden is composed so the mountain reads as part of it. Today's ticket covers the garden only, not the temple hall interior, which keeps the visit to a flat gravel loop around the pond - stroller-workable, though busy with the same crowd flow as the bamboo grove next door. |
+| [Togetsukyo Bridge + riverside](#nature-and-landscape) | 0h30 | 0 | 0 | Ukyo-ku, over the Katsura/Hozu River, near Arashiyama Stn (Hankyu) (address unverified) | "Moon Crossing Bridge," Arashiyama's postcard landmark, rebuilt many times over the centuries - the current span dates to 1934, wood-look railings over a steel-and-concrete deck. The real draw is the wide river and forested hillside behind it rather than the bridge itself; free to walk, flat pavement, and open riverside space to let a toddler stretch their legs off the stroller. |
+| [Okochi Sanso Garden](#gardens) | 0h45 | 1,000 | 3,000 | 8 Sagaogurayama Tabuchiyamacho, Ukyo-ku, Kyoto 616-8394 | A hillside villa garden built across the 1930s-50s by silent-film-era actor Okochi Denjiro, with sweeping views over Arashiyama's hills and, on a clear day, the Kyoto basin beyond. Quieter than the bamboo grove or Tenryu-ji since it's a paid detour most tour groups skip, and admission includes matcha and a seasonal sweet at the end, served on a viewing terrace. The paths are hillside gravel with some grade and a few steps - manageable with a carrier, harder work with a stroller. |
+| [Sagano Romantic Train (Torokko)](#transport-as-an-experience) | 0h25 | 880 | 2,640 | Torokko Saga Station, adjacent to JR Saga-Arashiyama Station, Ukyo-ku (exact street address unverified) | A slow, open-window sightseeing train on a former freight line, running one-way through the Hozugawa gorge - forested cliffs and river rapids close alongside the tracks, a genuinely different view of Arashiyama than the temples give. Reserve ahead; departures run roughly hourly and seats sell out on weekends. Boarding is a small step up from a low platform - manageable with the stroller folded and carried on, not wheeled on. |
 
 ### Day 17 Cost
 
@@ -2088,7 +2092,7 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 
 **Base:** [Kyoto](#kyoto)  
 **Weather (typical):** 22/14 °C, dry  
-**Theme:** Kiyomizu-dera and the Higashiyama lanes in kimono, evening in Gion
+**Theme:** Kiyomizu-dera and the Higashiyama lanes, evening in Gion
 
 ### Schedule
 
@@ -2097,12 +2101,10 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 | 07:30 | 0h45 | Food | Breakfast - Toyoko Inn buffet |
 | 08:15 | 0h15 | Transit | Walk to Shijo-Omiya bus stop |
 | 08:30 | 0h25 | Transit | City bus - Shijo-Omiya → Kiyomizu-michi |
-| 08:55 | 0h40 | Activity | Kimono/yukata rental + dressing, Higashiyama lanes shop |
 | 09:35 | 0h15 | Activity | Walk up Sannenzaka/Ninenzaka toward Kiyomizu-dera |
 | 09:50 | 0h45 | Activity | Kiyomizu-dera - main hall and grounds |
-| 10:35 | 0h40 | Activity | Walk back down through the lanes, photos in kimono |
+| 10:35 | 0h40 | Activity | Walk back down through the Higashiyama lanes |
 | 11:15 | 0h40 | Food | Lunch - soba + a matcha treat, Higashiyama lanes |
-| 11:55 | 0h20 | Admin | Return kimono, change back at the shop |
 | 12:15 | 0h15 | Transit | Walk to Maruyama Park |
 | 12:30 | 1h45 | Rest | Midday rest - Maruyama Park, shaded corner |
 | 14:15 | 0h15 | Transit | Walk to Gion |
@@ -2116,7 +2118,7 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 | 17:15 | 0h25 | Transit | City bus - Shijo-Kawaramachi → Shijo-Omiya |
 
 - The party is back at the hotel by about 17:40, comfortably ahead of this trip's ~19:00-19:30 infant bedtime.
-- Active out-of-lodging time: about 7h40 (4h15 before the rest block, 3h25 after), plus a 1h45 rest block. This runs about 40 minutes over the ~7h guideline - a full day of kimono dressing, Kiyomizu-dera, and an evening loop through Gion and Pontocho.
+- Active out-of-lodging time: about 6h20 (4h15 before the rest block, 2h05 after), plus a 1h45 rest block.
 - **Pontocho note:** the alley is only about 2-3m wide and fills with evening foot traffic - carrier, not stroller, the same call already made for Nishiki Market. This is a walk-through only, not a meal: Pontocho's restaurants range ¥2,000-25,000/person and the most exclusive genuinely refuse first-time and foreign walk-in customers (ichigen-san okotowari, a real local custom, not a rumor), so the honest move is the free lantern-lit walk, with dinner already covered by tonight's Gion obanzai meal.
 - The rental shop holds the stroller during dressing; the three adults dress in shifts so one is always free with the infants and carrier.
 
@@ -2153,12 +2155,11 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Kimono/yukata rental | 0h40 | 6,300 | 18,900 | Higashiyama lanes, Higashiyama-ku, near the Kiyomizu-michi bus stop (chain-style rental shop; specific branch unverified) | A standard tourist rental: a full kimono or yukata, obi sash, and accessories, dressed by shop staff (dressing alone takes most of the 30-40 min), kept for the day and returned before dinner. Why bother: it's the easiest way to get a genuinely nice photo set against Kiyomizu-dera's lanes, and it's normal enough here that no one looks twice at tourists in rental kimono. The shop holds the stroller and bags during dressing; walking in kimono is shorter-stepped and the sandals are unfamiliar, so budget slower pace on the stone lanes afterward. |
-| Kiyomizu-dera | 0h45 | 500 | 1,500 | 1-294 Kiyomizu, Higashiyama-ku, Kyoto 605-0862 | Founded in 778 ("Pure Water Temple," named for a waterfall on the grounds); the current main hall dates to a 1633 rebuild. Its famous wooden stage (butai) juts 13m out over the hillside on a lattice of cypress pillars, assembled with a traditional joinery technique using no nails - built that way to give worshippers an unobstructed platform for ceremonies, and the height later gave rise to the Edo-period saying "jumping off the stage of Kiyomizu," a real (now-banned) practice of leaping off to make a wish. The stage view over the wooded hillside and city beyond is genuinely one of Kyoto's best, and it's a UNESCO World Heritage site. Crowded almost any hour; the approach lanes and temple grounds are gravel and worn stone, uneven in places - manageable with the stroller on the main paths but expect to fold it for the steepest stretches. |
-| Higashiyama lanes (Sannenzaka/Ninenzaka) | - | 0 | 0 | Sannenzaka and Ninenzaka slopes, Higashiyama-ku, near the Kiyomizu-michi bus stop (address unverified) | Two connected stone-paved lanes leading up to Kiyomizu-dera, lined with preserved wooden shopfronts, teahouses, and souvenir stores - the closest thing to a preserved Edo-period streetscape in central Kyoto. Free to walk and genuinely atmospheric, especially with fewer crowds early or late. The paving is old, uneven flagstone on a slope: hard going for a stroller, easier carried or walked slowly by hand. |
-| Gion district walk | 0h30 | 0 | 0 | Hanamikoji-dori, Gion, Higashiyama-ku, near Gion-Shijo Stn (Keihan) (address unverified) | Kyoto's most famous geiko (Kyoto's word for geisha) and maiko (apprentice) district, a working entertainment quarter since the Edo period, not a recreation. The wooden buildings lining Hanamikoji-dori are machiya - traditional Kyoto townhouses with a narrow shopfront facing the street and rooms running back in a long strip behind it, built narrow because property tax was historically assessed by street frontage. Since 2019, and tightened further in 2024, several of Gion's private side-lanes are off-limits to tourist photography, with real fines (reported up to ¥10,000) for photographing geiko or maiko there without consent, after years of tourists chasing and grabbing at them - stick to the main street and don't photograph anyone in kimono without asking. Flat and stroller-fine; the real geiko/maiko traffic happens after dark, past infant bedtime, so a daytime walk trades some authenticity for practicality. |
-| Shirakawa Canal | 0h20 | 0 | 0 | Shirakawa Canal, Gion, Higashiyama-ku, near Gion-Shijo Stn (Keihan) (address unverified) | A narrow, willow-lined canal running past traditional teahouses, one of Gion's most photographed corners and a good deal quieter than Hanamikoji-dori itself. Free, flat stone walkway alongside the water, stroller-fine, a pleasant short stretch to end the walk on. |
-| Pontocho evening lantern walk | 0h25 | 0 | 0 | Pontocho, Nakagyo-ku, Kyoto, between Sanjo-dori and Shijo-dori, one block west of the Kamogawa (address unverified - the alley has no single street number; nearest stations are Kawaramachi (Hankyu) or Gion-Shijo (Keihan)) | Pontocho is one of Kyoto's five historic geiko (geisha) districts: a single pedestrian lane roughly 500m long and just 2-3m wide, lined with machiya townhouses, hanging lanterns, and around 80 restaurants, running parallel to the Kamo River between Sanjo-dori and Shijo-dori. The payoff is purely visual and free - walking it after dark, lanterns lit against the old wooden facades, is a genuinely different scene from Gion's wider daytime streets seen earlier today, and it's the one place on this trip that delivers a narrow, lantern-lit alley at night. Restaurants here run ¥2,000-25,000/person and the priciest genuinely refuse first-time or foreign walk-in customers (ichigen-san okotowari, a real local custom), so the plan is to walk through only and eat at tonight's already-booked Gion dinner instead, keeping this stop at ¥0; the summer kawayuka platforms built out over the river are dismantled by the end of September, so this October visit sees the plain alley, not those platforms. The lane is flat with no steps but only 2-3m wide and fills with evening foot traffic, so carrier over stroller here, the same call already made for Nishiki Market, and the walk finishes well before this trip's ~19:00-19:30 infant bedtime. |
+| [Kiyomizu-dera](#temples-and-buddhism) | 0h45 | 500 | 1,500 | 1-294 Kiyomizu, Higashiyama-ku, Kyoto 605-0862 | Founded in 778 ("Pure Water Temple," named for a waterfall on the grounds); the current main hall dates to a 1633 rebuild. Its famous wooden stage (butai) juts 13m out over the hillside on a lattice of cypress pillars, assembled with a traditional joinery technique using no nails - built that way to give worshippers an unobstructed platform for ceremonies, and the height later gave rise to the Edo-period saying "jumping off the stage of Kiyomizu," a real (now-banned) practice of leaping off to make a wish. The stage view over the wooded hillside and city beyond is genuinely one of Kyoto's best, and it's a UNESCO World Heritage site. Crowded almost any hour; the approach lanes and temple grounds are gravel and worn stone, uneven in places - manageable with the stroller on the main paths but expect to fold it for the steepest stretches. |
+| [Higashiyama lanes (Sannenzaka/Ninenzaka)](#streets-lanes-and-canal-walks) | - | 0 | 0 | Sannenzaka and Ninenzaka slopes, Higashiyama-ku, near the Kiyomizu-michi bus stop (address unverified) | Two connected stone-paved lanes leading up to Kiyomizu-dera, lined with preserved wooden shopfronts, teahouses, and souvenir stores - the closest thing to a preserved Edo-period streetscape in central Kyoto. Free to walk and genuinely atmospheric, especially with fewer crowds early or late. The paving is old, uneven flagstone on a slope: hard going for a stroller, easier carried or walked slowly by hand. |
+| [Gion district walk](#streets-lanes-and-canal-walks) | 0h30 | 0 | 0 | Hanamikoji-dori, Gion, Higashiyama-ku, near Gion-Shijo Stn (Keihan) (address unverified) | Kyoto's most famous geiko (Kyoto's word for geisha) and maiko (apprentice) district, a working entertainment quarter since the Edo period, not a recreation. The wooden buildings lining Hanamikoji-dori are machiya - traditional Kyoto townhouses with a narrow shopfront facing the street and rooms running back in a long strip behind it, built narrow because property tax was historically assessed by street frontage. Since 2019, and tightened further in 2024, several of Gion's private side-lanes are off-limits to tourist photography, with real fines (reported up to ¥10,000) for photographing geiko or maiko there without consent, after years of tourists chasing and grabbing at them - stick to the main street and don't photograph anyone in kimono without asking. Flat and stroller-fine; the real geiko/maiko traffic happens after dark, past infant bedtime, so a daytime walk trades some authenticity for practicality. |
+| [Shirakawa Canal](#streets-lanes-and-canal-walks) | 0h20 | 0 | 0 | Shirakawa Canal, Gion, Higashiyama-ku, near Gion-Shijo Stn (Keihan) (address unverified) | A narrow, willow-lined canal running past traditional teahouses, one of Gion's most photographed corners and a good deal quieter than Hanamikoji-dori itself. Free, flat stone walkway alongside the water, stroller-fine, a pleasant short stretch to end the walk on. |
+| [Pontocho evening lantern walk](#streets-lanes-and-canal-walks) | 0h25 | 0 | 0 | Pontocho, Nakagyo-ku, Kyoto, between Sanjo-dori and Shijo-dori, one block west of the Kamogawa (address unverified - the alley has no single street number; nearest stations are Kawaramachi (Hankyu) or Gion-Shijo (Keihan)) | Pontocho is one of Kyoto's five historic geiko (geisha) districts: a single pedestrian lane roughly 500m long and just 2-3m wide, lined with machiya townhouses, hanging lanterns, and around 80 restaurants, running parallel to the Kamo River between Sanjo-dori and Shijo-dori. The payoff is purely visual and free - walking it after dark, lanterns lit against the old wooden facades, is a genuinely different scene from Gion's wider daytime streets seen earlier today, and it's the one place on this trip that delivers a narrow, lantern-lit alley at night. Restaurants here run ¥2,000-25,000/person and the priciest genuinely refuse first-time or foreign walk-in customers (ichigen-san okotowari, a real local custom), so the plan is to walk through only and eat at tonight's already-booked Gion dinner instead, keeping this stop at ¥0; the summer kawayuka platforms built out over the river are dismantled by the end of September, so this October visit sees the plain alley, not those platforms. The lane is flat with no steps but only 2-3m wide and fills with evening foot traffic, so carrier over stroller here, the same call already made for Nishiki Market, and the walk finishes well before this trip's ~19:00-19:30 infant bedtime. |
 
 ### Day 18 Cost
 
@@ -2167,8 +2168,8 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | Lodging | 19,000 | 123 |
 | Food | 7,800 | 50 |
 | Transport | 2,070 | 13 |
-| Activities | 20,400 | 132 |
-| **Day total** | **49,270** | **318** |
+| Activities | 1,500 | 10 |
+| **Day total** | **30,370** | **196** |
 
 **Running total (Kyoto A segment) after Day 18: ¥146,900 ($948)**
 
@@ -2253,11 +2254,11 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Kyoto Imperial Palace (Gosho) | 0h35 | 0 | 0 | 3 Kyoto Gyoen, Kamigyo-ku, Kyoto 602-0881 | The former residence of Japan's emperors from 1331 until the imperial move to Tokyo in 1868 - the walled, gated compound inside Kyoto Gyoen park (see Day 16's note distinguishing the two). A 2016 policy change dropped the old advance-reservation requirement: entry is now free, walk-in, no ticket, 9:00-16:20 daily except Mondays. Self-guided visitors see the grounds and the exteriors of the Shishinden (enthronement hall) and Seiryuden from outside their fences; there is no access to building interiors. The visitor route is gravel, flat, and wide - stroller-fine, though comfortable shoes help; wheelchairs are available at the entrance on request. |
-| Nijo Castle | 1h15 | 1,300 | 3,900 | 541 Nijojo-cho, Nakagyo-ku, Kyoto 604-8301 | Built in 1603 as the Kyoto residence of the Tokugawa shogun - Japan's military ruler - a deliberate show of shogunal power inside the emperor's own capital. The Ninomaru Palace's corridors have "nightingale floors," floorboards engineered to chirp underfoot as a low-tech intruder alarm, still audible today. Today's ticket covers both the grounds/garden (¥800) and the Ninomaru Palace interior (¥500). The palace interior is a shoeless, floor-walking visit with no photography - leave the stroller at the entrance and carry or hand-hold through; the outer grounds are gravel paths and stroller-workable. |
-| Kinkaku-ji | 0h40 | 500 | 1,500 | 1 Kinkakuji-cho, Kita-ku, Kyoto 603-8361 | A three-story Zen pavilion with its top two floors entirely gold-leafed, set over a reflecting pond - one of Japan's most recognizable images. Built in 1397 as a shogun's retirement villa and later converted to a temple; the building standing today is a 1955 reconstruction after a novice monk burned the original to the ground in 1950, an event later fictionalized in Mishima Yukio's novel "The Temple of the Golden Pavilion." Honest take: it's a walk-past viewpoint, not an interior visit - no entry into the pavilion itself - and the main viewing spot is reliably crowded, so budget it as one great photo stop plus a short garden loop rather than a lingering visit. Paved path, stroller-workable, 30-40 min is enough. |
-| Ryoan-ji | 0h40 | 600 | 1,800 | 13 Ryoanji Goryonoshitacho, Ukyo-ku, Kyoto 616-8001 | Japan's most famous karesansui, or dry Zen rock garden: a rectangle of raked white gravel roughly 250 sq m, with fifteen stones arranged in small groups on patches of moss, and no water and almost no plants - the raking pattern is redone by the temple's monks each morning. It's laid out so that from any single point on the viewing veranda, at least one stone is always hidden from view - by tradition you can never see all fifteen at once, which is exactly the garden's point: an abstract composition meant for quiet looking rather than a "landscape" in the pond-and-maple sense the rest of this trip's gardens use. Built in the late 1400s, attribution to a specific designer is disputed. The viewing platform is the temple hall's raised wooden veranda - shoes off at the entrance, stored in cubbies, and the garden is seen sitting on the wood, not from ground level. That makes it a carrier stop, not a stroller one: the stroller stays at the entrance while an adult carries or holds a hand on the veranda. Go right at opening or late in the day - the veranda is a single bench-length space and fills up fast. A short walk from Kinkaku-ji (about 20 min on foot, or the 5-minute bus hop this day uses) - the two are commonly paired for exactly this reason. |
-| Tenjin-ichi temple market, Kitano Tenmangu | 1h00 | 0 | 0 | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | Kitano Tenmangu's own monthly temple market, the same kind of centuries-old, fixed-date flea-and-food market as To-ji's Kobo-ichi on Day 15, held here on the 25th of every month to mark the death anniversary of Sugawara no Michizane, the Heian-era scholar-official enshrined as the god of learning. Up to around 1,000 stalls fill the shrine grounds and surrounding streets with antiques, plants, and kimono, and the food side leans hard on street snacks - takoyaki, okonomiyaki, warabimochi, Uji tea, grilled bamboo shoots. Free to enter, published hours roughly 6:00 until the stalls wind down in the afternoon (no fixed closing time). Reached from Ryoan-ji via a 7-minute walk to the Ritsumeikan Daigaku-mae bus stop and one stop on Route 50, continuing the day's route northwest-to-back rather than doubling back through Kinkaku-ji. The shrine's open paths take a stroller fine; the packed stall aisles are the same tight, uneven-footing squeeze as Nishiki Market, so the carrier is the better call there. Adds to, rather than replaces, the quiet contemplative stop at Ryoan-ji just before it - a lively market right after is a good pacing contrast for two toddlers, not a substitute for either experience. |
+| [Kyoto Imperial Palace (Gosho)](#imperial-and-court-history) | 0h35 | 0 | 0 | 3 Kyoto Gyoen, Kamigyo-ku, Kyoto 602-0881 | The former residence of Japan's emperors from 1331 until the imperial move to Tokyo in 1868 - the walled, gated compound inside Kyoto Gyoen park (see Day 16's note distinguishing the two). A 2016 policy change dropped the old advance-reservation requirement: entry is now free, walk-in, no ticket, 9:00-16:20 daily except Mondays. Self-guided visitors see the grounds and the exteriors of the Shishinden (enthronement hall) and Seiryuden from outside their fences; there is no access to building interiors. The visitor route is gravel, flat, and wide - stroller-fine, though comfortable shoes help; wheelchairs are available at the entrance on request. |
+| [Nijo Castle](#castles-and-fortifications) | 1h15 | 1,300 | 3,900 | 541 Nijojo-cho, Nakagyo-ku, Kyoto 604-8301 | Built in 1603 as the Kyoto residence of the Tokugawa shogun - Japan's military ruler - a deliberate show of shogunal power inside the emperor's own capital. The Ninomaru Palace's corridors have "nightingale floors," floorboards engineered to chirp underfoot as a low-tech intruder alarm, still audible today. Today's ticket covers both the grounds/garden (¥800) and the Ninomaru Palace interior (¥500). The palace interior is a shoeless, floor-walking visit with no photography - leave the stroller at the entrance and carry or hand-hold through; the outer grounds are gravel paths and stroller-workable. |
+| [Kinkaku-ji](#temples-and-buddhism) | 0h40 | 500 | 1,500 | 1 Kinkakuji-cho, Kita-ku, Kyoto 603-8361 | A three-story Zen pavilion with its top two floors entirely gold-leafed, set over a reflecting pond - one of Japan's most recognizable images. Built in 1397 as a shogun's retirement villa and later converted to a temple; the building standing today is a 1955 reconstruction after a novice monk burned the original to the ground in 1950, an event later fictionalized in Mishima Yukio's novel "The Temple of the Golden Pavilion." Honest take: it's a walk-past viewpoint, not an interior visit - no entry into the pavilion itself - and the main viewing spot is reliably crowded, so budget it as one great photo stop plus a short garden loop rather than a lingering visit. Paved path, stroller-workable, 30-40 min is enough. |
+| [Ryoan-ji](#temples-and-buddhism) | 0h40 | 600 | 1,800 | 13 Ryoanji Goryonoshitacho, Ukyo-ku, Kyoto 616-8001 | Japan's most famous karesansui, or dry Zen rock garden: a rectangle of raked white gravel roughly 250 sq m, with fifteen stones arranged in small groups on patches of moss, and no water and almost no plants - the raking pattern is redone by the temple's monks each morning. It's laid out so that from any single point on the viewing veranda, at least one stone is always hidden from view - by tradition you can never see all fifteen at once, which is exactly the garden's point: an abstract composition meant for quiet looking rather than a "landscape" in the pond-and-maple sense the rest of this trip's gardens use. Built in the late 1400s, attribution to a specific designer is disputed. The viewing platform is the temple hall's raised wooden veranda - shoes off at the entrance, stored in cubbies, and the garden is seen sitting on the wood, not from ground level. That makes it a carrier stop, not a stroller one: the stroller stays at the entrance while an adult carries or holds a hand on the veranda. Go right at opening or late in the day - the veranda is a single bench-length space and fills up fast. A short walk from Kinkaku-ji (about 20 min on foot, or the 5-minute bus hop this day uses) - the two are commonly paired for exactly this reason. |
+| [Tenjin-ichi temple market, Kitano Tenmangu](#shinto-shrines) | 1h00 | 0 | 0 | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | Kitano Tenmangu's own monthly temple market, the same kind of centuries-old, fixed-date flea-and-food market as To-ji's Kobo-ichi on Day 15, held here on the 25th of every month to mark the death anniversary of Sugawara no Michizane, the Heian-era scholar-official enshrined as the god of learning. Up to around 1,000 stalls fill the shrine grounds and surrounding streets with antiques, plants, and kimono, and the food side leans hard on street snacks - takoyaki, okonomiyaki, warabimochi, Uji tea, grilled bamboo shoots. Free to enter, published hours roughly 6:00 until the stalls wind down in the afternoon (no fixed closing time). Reached from Ryoan-ji via a 7-minute walk to the Ritsumeikan Daigaku-mae bus stop and one stop on Route 50, continuing the day's route northwest-to-back rather than doubling back through Kinkaku-ji. The shrine's open paths take a stroller fine; the packed stall aisles are the same tight, uneven-footing squeeze as Nishiki Market, so the carrier is the better call there. Adds to, rather than replaces, the quiet contemplative stop at Ryoan-ji just before it - a lively market right after is a good pacing contrast for two toddlers, not a substitute for either experience. |
 
 ### Day 19 Cost
 
@@ -2292,10 +2293,10 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Lodging | 95,000 | 613 |
 | Food | 42,350 | 273 |
 | Transport | 16,090 | 104 |
-| Activities | 38,040 | 245 |
-| **Segment total** | **191,480** | **1,235** |
+| Activities | 19,140 | 123 |
+| **Segment total** | **172,580** | **1,113** |
 
-Envelope check: Food ¥42,350 vs ¥37,000 target (+14.5%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥38,040 vs ¥38,000 target (+0.1%): both new markets are free to enter, and Ryoan-ji's ¥1,800 admission is priced in. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
+Envelope check: Food ¥42,350 vs ¥37,000 target (+14.5%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥19,140 vs ¥38,000 target (-49.6%, well under): both markets are free to enter, Ryoan-ji's ¥1,800 admission is priced in, and the kimono rental now happens once, on Day 23, rather than on this segment as well. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
 
 ---
 
@@ -2393,11 +2394,11 @@ evening (flat, ~2.2 km) trims one bus fare from the day.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Todai-ji Daibutsuden | 0h50 | 800 | 2,400 | 406-1 Zoshi-cho, Nara 630-8211 | Todai-ji's Great Buddha Hall (Daibutsuden) is one of the largest wooden buildings in the world, and even today's structure is a smaller Edo-period rebuild of an 8th-century original that was bigger still. Inside sits the Daibutsu, a 15m bronze seated Buddha cast in 752 CE and one of the largest bronze Buddha statues on Earth, flanked by giant guardian figures - the scale is the payoff, not any single detail. Open roughly 7:30-17:30 in October, with paved, flat, stroller-friendly paths from the park entrance. The wild deer along the approach will bow for a cracker but can nip, headbutt, or crowd once they smell food, worth knowing with a toddler at their eye level. |
-| Deer senbei | 0h15 | 200 (per pack) | 600 | Nara Park (district; address unverified) | Nara Park's roughly 1,200 sika deer are wild, not fenced or farmed, and have wandered the park freely for over a thousand years, historically protected as messengers of the local Shinto gods. A pack of unglazed rice crackers, sold by park vendors, lets you feed them by hand; many genuinely bow their heads for a cracker, a learned begging cue rather than real manners. Deer get pushy once you're holding food, sometimes butting or nibbling at clothing, so keep the pack out of a toddler's reach and show empty hands once it's gone. Free to watch; ¥200 per cracker pack to feed them. |
-| Kasuga Taisha inner precinct | 0h40 | 500 | 1,500 | 160 Kasuganocho, Nara 630-8212 | Kasuga Taisha is Nara's principal Shinto shrine, founded in 768 CE, famous for roughly 3,000 bronze and stone lanterns lining its forest approach and grounds, lit twice a year for lantern festivals. The paid inner precinct (Chumon gate and the moss garden beyond it) gets you closer to the vermillion halls; the kilometre-long lantern approach itself is free and arguably the more memorable part. The inner precinct's paths are gravel and slightly uneven, so a carrier works better than the stroller for this stretch. |
-| Manyo Botanical Garden | 0h20 | 500 | 1,500 | 160 Kasuganocho, Nara 630-8212 (within Kasuga Taisha grounds) | A small, separate-ticket botanical garden inside Kasuga Taisha's grounds, planted with roughly 300 species named in Japan's oldest poetry anthology, the Man'yoshu (compiled around 759 CE). The appeal is a quiet, uncrowded green space (notably a wisteria trellis) distinct from the shrine's formal architecture next door. Flat gravel and paved paths, stroller-manageable, and a good legs-stretch stop before lunch. |
-| Isuien Garden | 0h35 | 900 | 2,700 | 74 Suimon-cho, Nara 630-8208 | A strolling garden dating to the Edo and Meiji periods, split into two connected ponds, that uses "borrowed scenery" (shakkei): paths are laid out so Todai-ji's Nandaimon Gate and the wooded hills behind it appear framed beyond the garden's own trees. It's a slow circuit walk, most rewarding when the maples around the ponds turn - Nara's color is still mostly green on these October dates, so expect a preview rather than the peak. Paths are gravel with some low stepping-stones, manageable with a stroller on the main loop but not flat throughout. |
+| [Todai-ji Daibutsuden](#temples-and-buddhism) | 0h50 | 800 | 2,400 | 406-1 Zoshi-cho, Nara 630-8211 | Todai-ji's Great Buddha Hall (Daibutsuden) is one of the largest wooden buildings in the world, and even today's structure is a smaller Edo-period rebuild of an 8th-century original that was bigger still. Inside sits the Daibutsu, a 15m bronze seated Buddha cast in 752 CE and one of the largest bronze Buddha statues on Earth, flanked by giant guardian figures - the scale is the payoff, not any single detail. Open roughly 7:30-17:30 in October, with paved, flat, stroller-friendly paths from the park entrance. The wild deer along the approach will bow for a cracker but can nip, headbutt, or crowd once they smell food, worth knowing with a toddler at their eye level. |
+| [Deer senbei](#things-aimed-at-the-toddlers) | 0h15 | 200 (per pack) | 600 | Nara Park (district; address unverified) | Nara Park's roughly 1,200 sika deer are wild, not fenced or farmed, and have wandered the park freely for over a thousand years, historically protected as messengers of the local Shinto gods. A pack of unglazed rice crackers, sold by park vendors, lets you feed them by hand; many genuinely bow their heads for a cracker, a learned begging cue rather than real manners. Deer get pushy once you're holding food, sometimes butting or nibbling at clothing, so keep the pack out of a toddler's reach and show empty hands once it's gone. Free to watch; ¥200 per cracker pack to feed them. |
+| [Kasuga Taisha inner precinct](#shinto-shrines) | 0h40 | 500 | 1,500 | 160 Kasuganocho, Nara 630-8212 | Kasuga Taisha is Nara's principal Shinto shrine, founded in 768 CE, famous for roughly 3,000 bronze and stone lanterns lining its forest approach and grounds, lit twice a year for lantern festivals. The paid inner precinct (Chumon gate and the moss garden beyond it) gets you closer to the vermillion halls; the kilometre-long lantern approach itself is free and arguably the more memorable part. The inner precinct's paths are gravel and slightly uneven, so a carrier works better than the stroller for this stretch. |
+| [Manyo Botanical Garden](#gardens) | 0h20 | 500 | 1,500 | 160 Kasuganocho, Nara 630-8212 (within Kasuga Taisha grounds) | A small, separate-ticket botanical garden inside Kasuga Taisha's grounds, planted with roughly 300 species named in Japan's oldest poetry anthology, the Man'yoshu (compiled around 759 CE). The appeal is a quiet, uncrowded green space (notably a wisteria trellis) distinct from the shrine's formal architecture next door. Flat gravel and paved paths, stroller-manageable, and a good legs-stretch stop before lunch. |
+| [Isuien Garden](#gardens) | 0h35 | 900 | 2,700 | 74 Suimon-cho, Nara 630-8208 | A strolling garden dating to the Edo and Meiji periods, split into two connected ponds, that uses "borrowed scenery" (shakkei): paths are laid out so Todai-ji's Nandaimon Gate and the wooded hills behind it appear framed beyond the garden's own trees. It's a slow circuit walk, most rewarding when the maples around the ponds turn - Nara's color is still mostly green on these October dates, so expect a preview rather than the peak. Paths are gravel with some low stepping-stones, manageable with a stroller on the main loop but not flat throughout. |
 
 Under-6 admission is free at all five stops above; the ¥ figures are adult fares only.
 
@@ -2411,7 +2412,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Activities | 8,700 | 56 |
 | **Day total** | **39,730** | **256** |
 
-**Running total after Day 20: ¥828,410 ($5,345)**
+**Running total after Day 20: ¥809,510 ($5,223)**
 
 ---
 
@@ -2491,10 +2492,10 @@ party cost = adult fare x 3.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Byodo-in garden + museum | 0h45 | 600 | 1,800 | 116 Renge, Uji-shi, Kyoto 611-0021 | Byodo-in is an 11th-century Buddhist temple whose Phoenix Hall, built in 1053, is one of Japan's most reproduced images: it's the building on the back of the ¥10 coin, so the reader can literally hold their own change up and compare. The wider ticket covers the pond garden - where the hall's reflection is the classic photo - and the Hoshokan treasure museum, which holds the temple's original bronze phoenix roof ornaments and a large bronze temple bell. Grounds and museum are flat, paved, and stroller-friendly; allow 45 minutes at a relaxed pace. |
-| Byodo-in Phoenix Hall interior | 0h15 | 300 | 900 | 116 Renge, Uji-shi, Kyoto 611-0021 (within Byodo-in) | A separate, timed small-group ticket to walk inside the Phoenix Hall itself and see its central gilded Amida Buddha statue and surviving fragments of the hall's original 11th-century wall paintings up close. Entries run in fixed groups through the day; the interior is a single narrow wooden walkway, not stroller-accessible and tight with a carrier, so one adult goes in while the other two wait outside with the kids. |
-| Taihoan tea ceremony | 0h45 | 1,000 | 3,000 | 1-5 Togawa, Uji-shi, Kyoto | Taihoan is Uji's municipal tea house, built for visitors to try Uji tea properly: whisking your own bowl of matcha (green tea ground to a fine powder and whisked directly into hot water) under a host's guidance, unlike steeped-leaf sencha, paired with a seasonal wagashi sweet. Uji has been Japan's most famous green-tea region since medieval times, and this is the trip's one hands-on tea experience rather than a shop purchase. Seating is low tatami-style with no chair option; toddlers are welcome alongside a parent, and the house is a short walk from Uji Station along the river. Priced at the operator's posted ¥1,000/adult rate. |
-| Tale of Genji Museum | 0h40 | 600 | 1,800 | 45-26 Higashiuchi, Uji-shi, Kyoto 611-0021 | A small, air-conditioned museum devoted to the Uji Chapters, the final ten chapters of The Tale of Genji (early 11th century, often called the world's first novel), which are set in Uji; exhibits include a scale palace model and a short film. It's a low-key indoor pause rather than a headline sight, useful precisely because it's a break from walking and weather. Fully flat, stroller-accessible, and rarely crowded. |
+| [Byodo-in garden + museum](#temples-and-buddhism) | 0h45 | 600 | 1,800 | 116 Renge, Uji-shi, Kyoto 611-0021 | Byodo-in is an 11th-century Buddhist temple whose Phoenix Hall, built in 1053, is one of Japan's most reproduced images: it's the building on the back of the ¥10 coin, so the reader can literally hold their own change up and compare. The wider ticket covers the pond garden - where the hall's reflection is the classic photo - and the Hoshokan treasure museum, which holds the temple's original bronze phoenix roof ornaments and a large bronze temple bell. Grounds and museum are flat, paved, and stroller-friendly; allow 45 minutes at a relaxed pace. |
+| [Byodo-in Phoenix Hall interior](#temples-and-buddhism) | 0h15 | 300 | 900 | 116 Renge, Uji-shi, Kyoto 611-0021 (within Byodo-in) | A separate, timed small-group ticket to walk inside the Phoenix Hall itself and see its central gilded Amida Buddha statue and surviving fragments of the hall's original 11th-century wall paintings up close. Entries run in fixed groups through the day; the interior is a single narrow wooden walkway, not stroller-accessible and tight with a carrier, so one adult goes in while the other two wait outside with the kids. |
+| [Taihoan tea ceremony](#crafts-and-hands-on-activities) | 0h45 | 1,000 | 3,000 | 1-5 Togawa, Uji-shi, Kyoto | Taihoan is Uji's municipal tea house, built for visitors to try Uji tea properly: whisking your own bowl of matcha (green tea ground to a fine powder and whisked directly into hot water) under a host's guidance, unlike steeped-leaf sencha, paired with a seasonal wagashi sweet. Uji has been Japan's most famous green-tea region since medieval times, and this is the trip's one hands-on tea experience rather than a shop purchase. Seating is low tatami-style with no chair option; toddlers are welcome alongside a parent, and the house is a short walk from Uji Station along the river. Priced at the operator's posted ¥1,000/adult rate. |
+| [Tale of Genji Museum](#art-and-museums) | 0h40 | 600 | 1,800 | 45-26 Higashiuchi, Uji-shi, Kyoto 611-0021 | A small, air-conditioned museum devoted to the Uji Chapters, the final ten chapters of The Tale of Genji (early 11th century, often called the world's first novel), which are set in Uji; exhibits include a scale palace model and a short film. It's a low-key indoor pause rather than a headline sight, useful precisely because it's a break from walking and weather. Fully flat, stroller-accessible, and rarely crowded. |
 
 Under-6 admission is free at all four stops; figures above are adult fares only.
 
@@ -2514,7 +2515,7 @@ rest above - free, no separate stop and no schedule change.
 | Activities | 7,500 | 48 |
 | **Day total** | **36,730** | **237** |
 
-**Running total after Day 21: ¥865,140 ($5,582)**
+**Running total after Day 21: ¥846,240 ($5,460)**
 
 ---
 
@@ -2602,10 +2603,10 @@ are paid walk-up. Infants ride free on both lines; party cost = adult fare x 3.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Gekkeikan Okura Sake Museum | 0h50 | 600 | 1,800 | 247 Minamihama-cho, Fushimi-ku, Kyoto 612-8660 | A museum inside a working sake brewery, set in a 1909 storehouse with a brick chimney, run by Gekkeikan, one of Japan's oldest sake makers (founded 1637). Sake is casually called "rice wine" but brews more like beer than it ferments like wine: steamed rice is converted to fermentable sugar by koji mold, then fermented with yeast in one continuous process, rather than distilled like spirits or simply fermented from fruit sugar like grape wine. Fushimi became one of Japan's two great brewing centers, alongside Nada near Kobe, because its natural groundwater is unusually soft, which yields a lighter, sweeter style of sake than Nada's harder water produces. Admission includes three tastings and a souvenir bottle to take home, free for ages 12 and under so both infants enter free; allow 40-60 minutes including the video and exhibit rooms. The building is flat and stroller-accessible throughout, though the tasting counter itself is standing-room. |
-| Canal-side brewery walk | 0h45 | 0 | 0 | Canal streets around the museum, Chushojima, Fushimi-ku (district; address unverified) | A free stroll along the old Fushimi river port's canal, past rows of white-plastered brewery warehouses with black wooden trim, some dating to the Edo period (1603-1868) when this was the transshipment point for sake and rice moving between Kyoto and Osaka by boat. The appeal is purely atmospheric: quiet lanes, canal reflections, and none of central Kyoto's crowds. Entirely flat, paved, and stroller-friendly, with benches along the water. |
-| Teradaya Inn | 0h30 | 600 | 1,800 | 263 Minamihama-cho, Fushimi-ku, Kyoto | A reconstructed Edo-era inn turned house-museum, known as the site of a 1866 attack on the samurai Sakamoto Ryoma, one of the key figures behind the Meiji Restoration that ended the shogunate two years later. The draw is the room where Ryoma made his stand, shown with period artifacts and his own account of the incident. Open 10:00-16:00 (last entry 15:30); the interior is a traditional wooden inn with a raised tatami floor and a step up at the entrance, so plan to carry rather than wheel the stroller inside. |
-| Fushimi Jikkokubune canal boat | 0h55 | 1,900 | 5,700 | Boarding dock by Bekkan Terrace, Chushojima, Fushimi-ku, Kyoto (address unverified) | A round trip in a jikkokubune, the flat-bottomed wooden cargo boat that carried rice and sake down these canals to Osaka in the Edo period. The route runs past the backs of the brewery warehouses and through the Miyuki-bashi lock, with commentary in Japanese. It is the one activity that explains why a sake industry grew here at all: Fushimi was a river port before it was a brewing town, and the canal was the road. Flat boarding, seated throughout, and about 55 minutes, so it suits infants better than any walking tour would, though the boat is open sided and cool on the water in late October. |
+| [Gekkeikan Okura Sake Museum](#crafts-and-hands-on-activities) | 0h50 | 600 | 1,800 | 247 Minamihama-cho, Fushimi-ku, Kyoto 612-8660 | A museum inside a working sake brewery, set in a 1909 storehouse with a brick chimney, run by Gekkeikan, one of Japan's oldest sake makers (founded 1637). Sake is casually called "rice wine" but brews more like beer than it ferments like wine: steamed rice is converted to fermentable sugar by koji mold, then fermented with yeast in one continuous process, rather than distilled like spirits or simply fermented from fruit sugar like grape wine. Fushimi became one of Japan's two great brewing centers, alongside Nada near Kobe, because its natural groundwater is unusually soft, which yields a lighter, sweeter style of sake than Nada's harder water produces. Admission includes three tastings and a souvenir bottle to take home, free for ages 12 and under so both infants enter free; allow 40-60 minutes including the video and exhibit rooms. The building is flat and stroller-accessible throughout, though the tasting counter itself is standing-room. |
+| [Canal-side brewery walk](#streets-lanes-and-canal-walks) | 0h45 | 0 | 0 | Canal streets around the museum, Chushojima, Fushimi-ku (district; address unverified) | A free stroll along the old Fushimi river port's canal, past rows of white-plastered brewery warehouses with black wooden trim, some dating to the Edo period (1603-1868) when this was the transshipment point for sake and rice moving between Kyoto and Osaka by boat. The appeal is purely atmospheric: quiet lanes, canal reflections, and none of central Kyoto's crowds. Entirely flat, paved, and stroller-friendly, with benches along the water. |
+| [Teradaya Inn](#art-and-museums) | 0h30 | 600 | 1,800 | 263 Minamihama-cho, Fushimi-ku, Kyoto | A reconstructed Edo-era inn turned house-museum, known as the site of a 1866 attack on the samurai Sakamoto Ryoma, one of the key figures behind the Meiji Restoration that ended the shogunate two years later. The draw is the room where Ryoma made his stand, shown with period artifacts and his own account of the incident. Open 10:00-16:00 (last entry 15:30); the interior is a traditional wooden inn with a raised tatami floor and a step up at the entrance, so plan to carry rather than wheel the stroller inside. |
+| [Fushimi Jikkokubune canal boat](#transport-as-an-experience) | 0h55 | 1,900 | 5,700 | Boarding dock by Bekkan Terrace, Chushojima, Fushimi-ku, Kyoto (address unverified) | A round trip in a jikkokubune, the flat-bottomed wooden cargo boat that carried rice and sake down these canals to Osaka in the Edo period. The route runs past the backs of the brewery warehouses and through the Miyuki-bashi lock, with commentary in Japanese. It is the one activity that explains why a sake industry grew here at all: Fushimi was a river port before it was a brewing town, and the canal was the road. Flat boarding, seated throughout, and about 55 minutes, so it suits infants better than any walking tour would, though the boat is open sided and cool on the water in late October. |
 
 The sake museum is free for ages 12 and under, so both infants enter free there;
 Teradaya has no posted child discount beyond a school-age rate, so infants are
@@ -2627,7 +2628,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 | Activities | 9,300 | 60 |
 | **Day total** | **38,740** | **250** |
 
-**Running total after Day 22: ¥903,880 ($5,831)**
+**Running total after Day 22: ¥884,980 ($5,710)**
 
 ---
 
@@ -2709,10 +2710,10 @@ free on city buses; party cost = adult fare x 3.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Nishijin Textile Center: hands-on weaving + kimono show | 1h00 | 2,530 | 7,590 | Horikawa-dori Imadegawa-minami-iri Nishigawa, Kamigyo-ku, Kyoto 602-8216 | Nishijin-ori is Kyoto's roughly 1,200-year-old brocade weaving tradition, the reason this whole neighbourhood exists: since the medieval Muromachi period its workshops have hand-woven the elaborate, often gold-threaded fabric used for high-end kimono and obi sashes. The family weaves, sitting at a mini hand-loom to make a small cloth (about 20x30cm) to take home, guided step by step. Reservation required at least 2 days ahead via the official nishijin.or.jp site; ¥2,530/adult at the 2026 posted rate, with the free kimono show and loom demonstrations downstairs still worth a look before or after at no extra cost. The building is flat and stroller-accessible, but a mini loom needs both hands and a foot treadle, so this is an adult-turn activity: the three adults weave one at a time while the other two mind the infants, who may enjoy watching the shuttle move for a few minutes but won't sit through the whole hour. |
-| Kimono rental for the day | 0h30 (fitting; worn all day) | 5,280 | 15,840 | Yumeyakata Gojo Shop, 353 Shiogamacho, Shimogyo-ku, Kyoto 600-8103 (2F; 3-min walk from Gojo Stn, Kyoto Municipal Subway) | Yumeyakata is a well-known Kyoto kimono rental chain with English-speaking staff; its standard plan rents a full kimono set (garment, obi, tabi socks, and a bag) for the whole day, worn out and returned by 17:30 the same evening - the genuine hands-on version of the group's "robes from anime" wish, worn rather than watched. Adult fitting takes about 20-30 minutes with staff help; the shop's own 2026 pricing lists a discounted ¥4,180/adult "campaign" rate, but that campaign runs only through 31 August 2026, before these late-October dates, so the standing ¥5,280/adult rate used here is the honest figure (reconfirm at booking in case the campaign is renewed for autumn). Practically: a wrapped kimono skirt and a snugly tied obi are hard to nurse or change a diaper in, so this is adults-only for the day; wooden geta sandals plus a stroller is a genuinely awkward combination on anything but flat pavement, which is why the walk below stays on the paved riverside path; and some Kyoto rental shops restrict or halt rentals on rainy days, so treat this as a fair-weather plan and confirm the shop's rain policy when booking. Yumeyakata also sells (does not rent) baby hakama for under-85cm infants from ¥4,510, but that is a short photo-op garment neither infant - especially the 12-month-old - will tolerate for a full day; skip it unless the family specifically wants that one photo, and it is not included in the cost here. |
-| Kamo riverbank walk (in kimono) | 1h00 | 0 | 0 | Kamo River near Gojo, Shimogyo-ku, Kyoto (district; address unverified) | The Kamo River's grassy, paved banks near the kimono shop are today's photo backdrop while the three adults are dressed for the day - no ticket, no schedule, just flat green space and running water. It stays on the paved path throughout since geta sandals are slower and stiffer than sneakers on anything uneven. Free, and stroller-friendly for whichever infant is riding rather than being carried while an adult's hands are full of kimono sleeve. |
-| Local sento (public bath) | 0h45 | 490 | 1,470 | Neighbourhood bathhouse near Omiya (address unverified) | A sento is a neighbourhood public bathhouse, built historically because most homes didn't have their own bath, still used today for the ritual of soaking rather than washing at home. It differs from an onsen: an onsen's water is a natural hot spring with its own mineral content, while a sento simply heats tap or well water (some "super sento" blend the two). Bathing is nude and gender-separated, with full washing and rinsing at the stool-and-tap stations before entering the shared soaking tub; most sento still refuse visible tattoos, a policy rooted in their historical association with organized crime, so anyone in the party with tattoos should call ahead or bring a waterproof cover patch. Many sento welcome infants and toddlers into the same-gender bathing area with a parent, often with quieter family-friendly hours soon after opening, but both the tattoo and infant policy vary by bathhouse - confirm with the specific sento before going rather than assuming. |
+| [Nishijin Textile Center: hands-on weaving + kimono show](#crafts-and-hands-on-activities) | 1h00 | 2,530 | 7,590 | Horikawa-dori Imadegawa-minami-iri Nishigawa, Kamigyo-ku, Kyoto 602-8216 | Nishijin-ori is Kyoto's roughly 1,200-year-old brocade weaving tradition, the reason this whole neighbourhood exists: since the medieval Muromachi period its workshops have hand-woven the elaborate, often gold-threaded fabric used for high-end kimono and obi sashes. The family weaves, sitting at a mini hand-loom to make a small cloth (about 20x30cm) to take home, guided step by step. Reservation required at least 2 days ahead via the official nishijin.or.jp site; ¥2,530/adult at the 2026 posted rate, with the free kimono show and loom demonstrations downstairs still worth a look before or after at no extra cost. The building is flat and stroller-accessible, but a mini loom needs both hands and a foot treadle, so this is an adult-turn activity: the three adults weave one at a time while the other two mind the infants, who may enjoy watching the shuttle move for a few minutes but won't sit through the whole hour. |
+| [Kimono rental for the day](#crafts-and-hands-on-activities) | 0h30 (fitting; worn all day) | 5,280 | 15,840 | Yumeyakata Gojo Shop, 353 Shiogamacho, Shimogyo-ku, Kyoto 600-8103 (2F; 3-min walk from Gojo Stn, Kyoto Municipal Subway) | Yumeyakata is a well-known Kyoto kimono rental chain with English-speaking staff; its standard plan rents a full kimono set (garment, obi, tabi socks, and a bag) for the whole day, worn out and returned by 17:30 the same evening - the genuine hands-on version of the group's "robes from anime" wish, worn rather than watched. Adult fitting takes about 20-30 minutes with staff help; the shop's own 2026 pricing lists a discounted ¥4,180/adult "campaign" rate, but that campaign runs only through 31 August 2026, before these late-October dates, so the standing ¥5,280/adult rate used here is the honest figure (reconfirm at booking in case the campaign is renewed for autumn). Practically: a wrapped kimono skirt and a snugly tied obi are hard to nurse or change a diaper in, so this is adults-only for the day; wooden geta sandals plus a stroller is a genuinely awkward combination on anything but flat pavement, which is why the walk below stays on the paved riverside path; and some Kyoto rental shops restrict or halt rentals on rainy days, so treat this as a fair-weather plan and confirm the shop's rain policy when booking. Yumeyakata also sells (does not rent) baby hakama for under-85cm infants from ¥4,510, but that is a short photo-op garment neither infant - especially the 12-month-old - will tolerate for a full day; skip it unless the family specifically wants that one photo, and it is not included in the cost here. |
+| [Kamo riverbank walk (in kimono)](#streets-lanes-and-canal-walks) | 1h00 | 0 | 0 | Kamo River near Gojo, Shimogyo-ku, Kyoto (district; address unverified) | The Kamo River's grassy, paved banks near the kimono shop are today's photo backdrop while the three adults are dressed for the day - no ticket, no schedule, just flat green space and running water. It stays on the paved path throughout since geta sandals are slower and stiffer than sneakers on anything uneven. Free, and stroller-friendly for whichever infant is riding rather than being carried while an adult's hands are full of kimono sleeve. |
+| [Local sento (public bath)](#onsen-sento-and-bathing) | 0h45 | 490 | 1,470 | Neighbourhood bathhouse near Omiya (address unverified) | A sento is a neighbourhood public bathhouse, built historically because most homes didn't have their own bath, still used today for the ritual of soaking rather than washing at home. It differs from an onsen: an onsen's water is a natural hot spring with its own mineral content, while a sento simply heats tap or well water (some "super sento" blend the two). Bathing is nude and gender-separated, with full washing and rinsing at the stool-and-tap stations before entering the shared soaking tub; most sento still refuse visible tattoos, a policy rooted in their historical association with organized crime, so anyone in the party with tattoos should call ahead or bring a waterproof cover patch. Many sento welcome infants and toddlers into the same-gender bathing area with a parent, often with quieter family-friendly hours soon after opening, but both the tattoo and infant policy vary by bathhouse - confirm with the specific sento before going rather than assuming. |
 
 The Nishijin kimono show, the riverbank walk, and both infants at every stop
 are free; the weaving experience and kimono rental are priced per adult only
@@ -2729,7 +2730,7 @@ are free; the weaving experience and kimono rental are priced per adult only
 | Activities | 24,900 | 161 |
 | **Day total** | **53,770** | **347** |
 
-**Running total after Day 23: ¥957,650 ($6,178)**
+**Running total after Day 23: ¥938,750 ($6,056)**
 
 ---
 
@@ -2837,7 +2838,7 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Peace Memorial Park + Atomic Bomb Dome (exterior) | 1h15 | 0 | 0 | 1-10 Otemachi, Naka-ku, Hiroshima 730-0051 | Peace Memorial Park is the riverside green space built after the war on what had been the city's busiest commercial district, ground zero for the blast. The Atomic Bomb Dome, the skeletal ruin at the park's north edge, is what remains of the Hiroshima Prefectural Industrial Promotion Hall, one of the only structures left standing near the hypocenter - it has been deliberately preserved unrepaired since the 1960s as a permanent reminder rather than restored or torn down. This evening stop is exterior-only, a first orientation before Day 26's fuller visit: free, outdoor, flat paths along the Motoyasu River, fully stroller-friendly. The structure itself cannot be entered; it is too fragile. |
+| [Peace Memorial Park + Atomic Bomb Dome (exterior)](#the-atomic-bombing-and-war-memory) | 1h15 | 0 | 0 | 1-10 Otemachi, Naka-ku, Hiroshima 730-0051 | Peace Memorial Park is the riverside green space built after the war on what had been the city's busiest commercial district, ground zero for the blast. The Atomic Bomb Dome, the skeletal ruin at the park's north edge, is what remains of the Hiroshima Prefectural Industrial Promotion Hall, one of the only structures left standing near the hypocenter - it has been deliberately preserved unrepaired since the 1960s as a permanent reminder rather than restored or torn down. This evening stop is exterior-only, a first orientation before Day 26's fuller visit: free, outdoor, flat paths along the Motoyasu River, fully stroller-friendly. The structure itself cannot be entered; it is too fragile. |
 
 ### Day 24 Cost
 
@@ -2849,7 +2850,7 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 | Activities | 0 | 0 |
 | **Day total** | **73,650** | **475** |
 
-**Running total after Day 24: ¥1,031,300 ($6,654)**
+**Running total after Day 24: ¥1,012,400 ($6,532)**
 
 ---
 
@@ -2940,11 +2941,11 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
 | Miyajima visitor tax | - | 100 | 300 | Miyajima pier, Hatsukaichi (address unverified - collected at ferry/on-island signage) | A ¥100 per-person island entry tax introduced to fund conservation, collected via the ferry ticket rather than a separate gate. Children under 6 are exempt, so both infants are free. It is a pass-through cost of landing on the island, not an attraction in itself, and has no effect on the day's plan. |
-| Itsukushima Shrine | 1h00 | 300 | 900 | 1-1 Miyajima-cho, Hatsukaichi, Hiroshima 739-0588 | A Shinto shrine built out over the tidal flats on wooden pillars, founded in the 6th century and rebuilt in its present form in 1168; the whole island of Miyajima has long been considered sacred ground in its own right, historically closed to births and deaths, which is why there is no cemetery here. The famous vermilion torii gate stands about 200 m offshore: at high tide it appears to float on the water, at low tide the sand flats are exposed and you can walk out to its base - which of the two you get depends entirely on the tide table for the day, so check nearer the date rather than assume either. The shrine's raised walkways are flat and stroller-navigable, and an elevator underpass near the entrance avoids the one set of stairs. |
-| Itsukushima Treasure Hall | 0h30 | 300 | 900 | adjacent to Itsukushima Shrine, 1-1 Miyajima-cho, Hatsukaichi 739-0588 | A small museum attached to the shrine holding centuries of donated ceremonial treasures - swords, masks, sutras, court robes - given by samurai and nobility over the shrine's long history as one of Japan's most venerated Shinto sites. A quiet add-on rather than a headline stop; fifteen to thirty minutes is enough unless shrine regalia is a specific interest. Indoor and flat, though the narrow display aisles mean a stroller is often left parked at the door. |
-| Daisho-in Temple | 0h20 (folded into the existing Momijidani stop, no separate schedule slot) | 0 | 0 | 210 Miyajima-cho, Hatsukaichi-shi, Hiroshima-ken 739-0588 (nearest station: Miyajima pier, ~15 min walk) | A working Shingon Buddhist mountain temple at the base of Mt. Misen, and arguably more interesting than the shrine most visitors queue for. Its entrance stairway is lined with rows of spinning metal sutra wheels, each inscribed with a sutra a visitor can "read" just by giving it a turn on the way up, and the grounds hold a dim cave lined with 88 small icons standing in for the Shikoku pilgrimage temples plus a hillside of hundreds of small rakan (disciple) statues, each with a distinct carved face. It is free, and it sits directly on the route the day already walks between Momijidani Park and the ropeway base station, so it costs almost no extra time - the resting adult and children can wander the lower grounds instead of just waiting in the park. Be honest about the terrain: this is a hillside temple with a stepped approach, workable at the lower grounds but a carrier, not the stroller, for anyone going further up the slope. |
-| Miyajima Public Aquarium | 0h45 | 1,420 | 4,260 | 10-3 Miyajima-cho, Hatsukaichi, Hiroshima 739-0588 | A mid-size public aquarium a ten-minute walk from the shrine, built around Seto Inland Sea marine life plus a penguin and sea lion show and a hands-on touch pool. A good pressure-release stop after two temple/shrine visits rather than a world-class aquarium; indoor, climate-controlled, and flat-floored, making it the easiest stroller stretch of the day and genuinely fun for a 20-month-old. |
-| Miyajima Ropeway (round trip) | 1h15 | 2,000 | 4,000 | Momijidani Station, Miyajima-cho, Hatsukaichi (address unverified) | A two-stage cable car climbing most of the way up Mt. Misen, Miyajima's sacred mountain, ending at a viewpoint over the Inland Sea and its islands; the actual 535 m summit still requires a further stone-stepped walk from the upper station, which this trip skips. The ride is the point for this family, a scenic gondola trip rather than a hike, substituting for the full summit trail - carrier-only and unsuitable for a stroller or for two adults managing two under-twos on steep stairs. Only 2 of the 3 adults go up, one carrying the 20-month-old in the party's single carrier; the third adult rests with the stroller and the other infant at Momijidani Park, right at the base station, doubling as the day's mandatory midday rest block. |
+| [Itsukushima Shrine](#shinto-shrines) | 1h00 | 300 | 900 | 1-1 Miyajima-cho, Hatsukaichi, Hiroshima 739-0588 | A Shinto shrine built out over the tidal flats on wooden pillars, founded in the 6th century and rebuilt in its present form in 1168; the whole island of Miyajima has long been considered sacred ground in its own right, historically closed to births and deaths, which is why there is no cemetery here. The famous vermilion torii gate stands about 200 m offshore: at high tide it appears to float on the water, at low tide the sand flats are exposed and you can walk out to its base - which of the two you get depends entirely on the tide table for the day, so check nearer the date rather than assume either. The shrine's raised walkways are flat and stroller-navigable, and an elevator underpass near the entrance avoids the one set of stairs. |
+| [Itsukushima Treasure Hall](#art-and-museums) | 0h30 | 300 | 900 | adjacent to Itsukushima Shrine, 1-1 Miyajima-cho, Hatsukaichi 739-0588 | A small museum attached to the shrine holding centuries of donated ceremonial treasures - swords, masks, sutras, court robes - given by samurai and nobility over the shrine's long history as one of Japan's most venerated Shinto sites. A quiet add-on rather than a headline stop; fifteen to thirty minutes is enough unless shrine regalia is a specific interest. Indoor and flat, though the narrow display aisles mean a stroller is often left parked at the door. |
+| [Daisho-in Temple](#temples-and-buddhism) | 0h20 (folded into the existing Momijidani stop, no separate schedule slot) | 0 | 0 | 210 Miyajima-cho, Hatsukaichi-shi, Hiroshima-ken 739-0588 (nearest station: Miyajima pier, ~15 min walk) | A working Shingon Buddhist mountain temple at the base of Mt. Misen, and arguably more interesting than the shrine most visitors queue for. Its entrance stairway is lined with rows of spinning metal sutra wheels, each inscribed with a sutra a visitor can "read" just by giving it a turn on the way up, and the grounds hold a dim cave lined with 88 small icons standing in for the Shikoku pilgrimage temples plus a hillside of hundreds of small rakan (disciple) statues, each with a distinct carved face. It is free, and it sits directly on the route the day already walks between Momijidani Park and the ropeway base station, so it costs almost no extra time - the resting adult and children can wander the lower grounds instead of just waiting in the park. Be honest about the terrain: this is a hillside temple with a stepped approach, workable at the lower grounds but a carrier, not the stroller, for anyone going further up the slope. |
+| [Miyajima Public Aquarium](#things-aimed-at-the-toddlers) | 0h45 | 1,420 | 4,260 | 10-3 Miyajima-cho, Hatsukaichi, Hiroshima 739-0588 | A mid-size public aquarium a ten-minute walk from the shrine, built around Seto Inland Sea marine life plus a penguin and sea lion show and a hands-on touch pool. A good pressure-release stop after two temple/shrine visits rather than a world-class aquarium; indoor, climate-controlled, and flat-floored, making it the easiest stroller stretch of the day and genuinely fun for a 20-month-old. |
+| [Miyajima Ropeway (round trip)](#transport-as-an-experience) | 1h15 | 2,000 | 4,000 | Momijidani Station, Miyajima-cho, Hatsukaichi (address unverified) | A two-stage cable car climbing most of the way up Mt. Misen, Miyajima's sacred mountain, ending at a viewpoint over the Inland Sea and its islands; the actual 535 m summit still requires a further stone-stepped walk from the upper station, which this trip skips. The ride is the point for this family, a scenic gondola trip rather than a hike, substituting for the full summit trail - carrier-only and unsuitable for a stroller or for two adults managing two under-twos on steep stairs. Only 2 of the 3 adults go up, one carrying the 20-month-old in the party's single carrier; the third adult rests with the stroller and the other infant at Momijidani Park, right at the base station, doubling as the day's mandatory midday rest block. |
 
 ### Day 25 Cost
 
@@ -2956,7 +2957,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 | Activities | 10,360 | 67 |
 | **Day total** | **34,160** | **220** |
 
-**Running total after Day 25: ¥1,065,460 ($6,874)**
+**Running total after Day 25: ¥1,046,560 ($6,752)**
 
 ---
 
@@ -3041,11 +3042,11 @@ infants ride free.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Atomic Bomb Dome + riverside | 0h45 | 0 | 0 | 1-10 Otemachi, Naka-ku, Hiroshima 730-0051 | A return to the Dome for a slower look at what is actually the ruin of the Hiroshima Prefectural Industrial Promotion Hall, an exhibition hall completed in 1915 that stood almost directly beneath the bomb's hypocenter. It was deliberately left standing, unrestored, as a permanent memorial rather than repaired or demolished - the exposed dome frame is structural damage from 1945, not a design feature, and knowing that is the difference between seeing a ruin and understanding what it is. Free, outdoor, along the flat Motoyasu riverside promenade, fully stroller-workable, with benches for a feeding stop if needed. |
-| Peace Memorial Museum | 1h15 | 200 | 600 | 1-2 Nakajima-cho, Naka-ku, Hiroshima | The city's central museum on the atomic bombing, built around personal artifacts, photographs, and survivor testimony rather than an abstracted historical overview; the lower-floor galleries in particular are graphic and confronting, showing burned clothing, melted objects, and the direct human toll without being softened for visitors. It should be seen, but not by the whole family at once: the plan splits the party here, with one or two adults going through while the third stays outside in the park with the children, swapping partway through if more than one adult wants to see it - the right call given the content and the ages involved, not a compromise, and the approach generally recommended for families visiting with very young children. Adult admission is ¥200 (free under 18, so both infants are free regardless); there is no requirement or expectation to see every gallery. |
-| Hiroshima Orizuru Tower | 0h35 | 2,200 | 6,600 | 1-2-1 Otemachi, Naka-ku, Hiroshima 730-0051 | A modern observation tower directly across from the Dome, with an open-air rooftop deck looking back over Peace Park and the city, and a spiral ramp down through a glass wall where visitors fold and drop a paper crane (orizuru, Hiroshima's peace symbol) into the atrium below. A deliberately lighter, hands-on stop right after the museum, useful for resetting the mood before lunch. Elevator access throughout, fully stroller-accessible; the crane-folding is easy enough to do one-handed while holding a toddler. |
-| Shukkei-en garden | 1h00 | 260 | 780 | 2-11 Kaminobori-cho, Naka-ku, Hiroshima | A landscape garden laid out in 1620 around a central pond, built in the "shrunken scenery" (shukkei) style that miniaturizes famous landscapes - mountains, valleys, a version of a Chinese lake - into one walkable circuit, a very different style of garden from the dry rock gardens common in Kyoto. It survived the bombing only as ruins and was rebuilt afterward, so today's garden is itself a small piece of the city's postwar recovery. The main gravel loop is stroller-workable; a few of the narrower bridges and stepping-stone sections are easier with the carrier. |
-| Hiroshima Castle | 0h45 | 370 | 1,110 | 21-1 Motomachi, Naka-ku, Hiroshima 730-0011 | A five-story castle keep, originally built in the 1590s and destroyed instantly in the 1945 bombing; what stands today is a 1958 concrete reconstruction that closely follows the original exterior design and now houses a small history museum inside. Worth knowing before arrival - without that context it just reads as an old castle rather than what it actually is, a rebuilt symbol on the site of the original. The surrounding grounds and moat path are flat and fully stroller-workable; the keep's interior is narrow stairs floor to floor, so a carrier is the practical choice for going inside, or one adult can wait on the grounds with the stroller while the others take the keep. |
+| [Atomic Bomb Dome + riverside](#the-atomic-bombing-and-war-memory) | 0h45 | 0 | 0 | 1-10 Otemachi, Naka-ku, Hiroshima 730-0051 | A return to the Dome for a slower look at what is actually the ruin of the Hiroshima Prefectural Industrial Promotion Hall, an exhibition hall completed in 1915 that stood almost directly beneath the bomb's hypocenter. It was deliberately left standing, unrestored, as a permanent memorial rather than repaired or demolished - the exposed dome frame is structural damage from 1945, not a design feature, and knowing that is the difference between seeing a ruin and understanding what it is. Free, outdoor, along the flat Motoyasu riverside promenade, fully stroller-workable, with benches for a feeding stop if needed. |
+| [Peace Memorial Museum](#the-atomic-bombing-and-war-memory) | 1h15 | 200 | 600 | 1-2 Nakajima-cho, Naka-ku, Hiroshima | The city's central museum on the atomic bombing, built around personal artifacts, photographs, and survivor testimony rather than an abstracted historical overview; the lower-floor galleries in particular are graphic and confronting, showing burned clothing, melted objects, and the direct human toll without being softened for visitors. It should be seen, but not by the whole family at once: the plan splits the party here, with one or two adults going through while the third stays outside in the park with the children, swapping partway through if more than one adult wants to see it - the right call given the content and the ages involved, not a compromise, and the approach generally recommended for families visiting with very young children. Adult admission is ¥200 (free under 18, so both infants are free regardless); there is no requirement or expectation to see every gallery. |
+| [Hiroshima Orizuru Tower](#the-atomic-bombing-and-war-memory) | 0h35 | 2,200 | 6,600 | 1-2-1 Otemachi, Naka-ku, Hiroshima 730-0051 | A modern observation tower directly across from the Dome, with an open-air rooftop deck looking back over Peace Park and the city, and a spiral ramp down through a glass wall where visitors fold and drop a paper crane (orizuru, Hiroshima's peace symbol) into the atrium below. A deliberately lighter, hands-on stop right after the museum, useful for resetting the mood before lunch. Elevator access throughout, fully stroller-accessible; the crane-folding is easy enough to do one-handed while holding a toddler. |
+| [Shukkei-en garden](#gardens) | 1h00 | 260 | 780 | 2-11 Kaminobori-cho, Naka-ku, Hiroshima | A landscape garden laid out in 1620 around a central pond, built in the "shrunken scenery" (shukkei) style that miniaturizes famous landscapes - mountains, valleys, a version of a Chinese lake - into one walkable circuit, a very different style of garden from the dry rock gardens common in Kyoto. It survived the bombing only as ruins and was rebuilt afterward, so today's garden is itself a small piece of the city's postwar recovery. The main gravel loop is stroller-workable; a few of the narrower bridges and stepping-stone sections are easier with the carrier. |
+| [Hiroshima Castle](#castles-and-fortifications) | 0h45 | 370 | 1,110 | 21-1 Motomachi, Naka-ku, Hiroshima 730-0011 | A five-story castle keep, originally built in the 1590s and destroyed instantly in the 1945 bombing; what stands today is a 1958 concrete reconstruction that closely follows the original exterior design and now houses a small history museum inside. Worth knowing before arrival - without that context it just reads as an old castle rather than what it actually is, a rebuilt symbol on the site of the original. The surrounding grounds and moat path are flat and fully stroller-workable; the keep's interior is narrow stairs floor to floor, so a carrier is the practical choice for going inside, or one adult can wait on the grounds with the stroller while the others take the keep. |
 
 ### Day 26 Cost
 
@@ -3057,7 +3058,7 @@ infants ride free.
 | Activities | 9,090 | 59 |
 | **Day total** | **32,410** | **209** |
 
-**Running total after Day 26: ¥1,097,870 ($7,083)**
+**Running total after Day 26: ¥1,078,970 ($6,961)**
 
 ---
 
@@ -3138,9 +3139,9 @@ covered in the next segment.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Dotonbori canal walk | 0h45 | 0 | 0 | Dotonbori, Chuo-ku, Osaka (district; nearest station Namba - address unverified) | Osaka's best-known nightlife and dining strip, a canal-side promenade lined with oversized illuminated signs - the animated Glico "running man" billboard is the classic photo spot - plus arcades, restaurants and street-food stalls stacked along both banks. This is a browsing stop, not a ticketed attraction: free, flat, and stroller-workable along the main promenade, though it gets crowded and slow-moving after dark, worth knowing with a stroller in tow. Kept deliberately light for this arrival evening; the paid Tombori River Cruise is saved for the last full day in Osaka (Day 29) instead. |
-| Pokemon Center Osaka DX | 0h20 | 0 | 0 | Daimaru Shinsaibashi Main Bldg, 9F, 1-7-1 Shinsaibashisuji, Chuo-ku, Osaka 542-8501 | An official Pokemon retail store, not a game location or a ticketed attraction, selling plushes, trading cards, region-exclusive merchandise and stationery, with a life-size photo-op Pikachu near the entrance. Worth the stop for a Pokemon-loving family purely to browse and shop, nothing more elaborate than that, and it costs nothing to walk in and look without buying. It occupies the 9th floor of the Daimaru Shinsaibashi department store, a few minutes' walk north of the Dotonbori canal, open daily 10:00-20:00 with no ticket or reservation needed; unlike some other Pokemon Centers, this one has no attached cafe - Pokemon Cafe Osaka is a separate premises elsewhere in the city. It is elevator-served like any department-store floor, so fully reachable with the stroller, though the sales aisles themselves are shop-narrow and can get crowded - one adult minding the stroller near the entrance while the other browses with a toddler works better than pushing it through the display racks. |
-| Namba Yasaka Shrine | 0h20 | 0 | 0 | 2-9-19 Motomachi, Naniwa-ku, Osaka 556-0016 | A Shinto shrine whose main hall is built in the shape of an enormous lion's head, about 12 m tall with its mouth open as if swallowing evil spirits - a genuinely strange, striking piece of architecture rather than a typical shrine building, and unlike anything else on this trip. It is free, about a 10-minute walk from the hotel (and about 15 minutes from the Dotonbori/Shinsaibashi stretch this day is already visiting), and the whole visit is a flat, ground-level courtyard with no stairs and nothing to enter. It's a real there-and-back detour, not a stop that happens along the way, so the schedule now gives it its own walking time each direction rather than folding it into the Dotonbori walk for free. |
+| [Dotonbori canal walk](#streets-lanes-and-canal-walks) | 0h45 | 0 | 0 | Dotonbori, Chuo-ku, Osaka (district; nearest station Namba - address unverified) | Osaka's best-known nightlife and dining strip, a canal-side promenade lined with oversized illuminated signs - the animated Glico "running man" billboard is the classic photo spot - plus arcades, restaurants and street-food stalls stacked along both banks. This is a browsing stop, not a ticketed attraction: free, flat, and stroller-workable along the main promenade, though it gets crowded and slow-moving after dark, worth knowing with a stroller in tow. Kept deliberately light for this arrival evening; the paid Tombori River Cruise is saved for the last full day in Osaka (Day 29) instead. |
+| [Pokemon Center Osaka DX](#anime-manga-and-games) | 0h20 | 0 | 0 | Daimaru Shinsaibashi Main Bldg, 9F, 1-7-1 Shinsaibashisuji, Chuo-ku, Osaka 542-8501 | An official Pokemon retail store, not a game location or a ticketed attraction, selling plushes, trading cards, region-exclusive merchandise and stationery, with a life-size photo-op Pikachu near the entrance. Worth the stop for a Pokemon-loving family purely to browse and shop, nothing more elaborate than that, and it costs nothing to walk in and look without buying. It occupies the 9th floor of the Daimaru Shinsaibashi department store, a few minutes' walk north of the Dotonbori canal, open daily 10:00-20:00 with no ticket or reservation needed; unlike some other Pokemon Centers, this one has no attached cafe - Pokemon Cafe Osaka is a separate premises elsewhere in the city. It is elevator-served like any department-store floor, so fully reachable with the stroller, though the sales aisles themselves are shop-narrow and can get crowded - one adult minding the stroller near the entrance while the other browses with a toddler works better than pushing it through the display racks. |
+| [Namba Yasaka Shrine](#shinto-shrines) | 0h20 | 0 | 0 | 2-9-19 Motomachi, Naniwa-ku, Osaka 556-0016 | A Shinto shrine whose main hall is built in the shape of an enormous lion's head, about 12 m tall with its mouth open as if swallowing evil spirits - a genuinely strange, striking piece of architecture rather than a typical shrine building, and unlike anything else on this trip. It is free, about a 10-minute walk from the hotel (and about 15 minutes from the Dotonbori/Shinsaibashi stretch this day is already visiting), and the whole visit is a flat, ground-level courtyard with no stairs and nothing to enter. It's a real there-and-back detour, not a stop that happens along the way, so the schedule now gives it its own walking time each direction rather than folding it into the Dotonbori walk for free. |
 
 ### Day 27 Cost
 
@@ -3152,7 +3153,7 @@ covered in the next segment.
 | Activities | 0 | 0 |
 | **Day total** | **20,420** | **132** |
 
-**Running total after Day 27: ¥1,118,290 ($7,215)**
+**Running total after Day 27: ¥1,099,390 ($7,093)**
 
 ---
 
@@ -3252,10 +3253,10 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| National Museum of Art, Osaka | 0:50 | 0 | 0 | 4-2-55 Nakanoshima, Kita-ku, Osaka 530-0005 | A contemporary and modern art museum whose entire exhibition space sits underground - the only thing visible at street level is a cluster of curved steel pylons by architect Cesar Pelli marking the entrance, an unusual building worth a sentence before ever reaching the art inside. The collection runs roughly 8,200 works of Japanese and international art from 1945 onward. Standard adult admission for the permanent collection is normally around ¥430, but entry is free for everyone on 3 Nov (Bunka no Hi / Culture Day) - this is the one Osaka museum confirmed free that date, not a citywide policy. Fully underground and lift-served, no stairs-only stretches, stroller-friendly throughout; closed Mondays. |
-| Anpanman Children's Museum & Mall | 1:30 | 2,250 | 11,250 (5 payers - see note) | 1-6-2 Higashikawasakicho, Chuo-ku, Kobe 650-0044 | A two-zone complex built around Anpanman, the soft, food-themed superhero who is easily the single most-recognized toddler character in Japan (unlike most anime IP, which skews to older kids). The ground-floor Shopping Mall Zone - a bakery themed on the show's Uncle Jam's bread factory, a food court, a souvenir corner, a small game corner - is free to browse; the 2nd-floor Museum Zone is the paid part, with Anpanman-themed play structures, a stage greeting/show, and soft-play elements sized for bodies this small. **Unlike almost every other site on this trip, toddlers are not free here**: admission runs roughly ¥2,000-2,500 per person aged 1 and up [ESTIMATE, aggregated pricing - confirm the exact current tier before booking], with both Infant A and Infant B past their first birthday by this date, so the party cost covers all 5 payers, not adult x3 - this is the stated exception to that rule. A web ticket for a specific date and time is required; same-day counter tickets exist but are subject to availability, so book ahead. Open 10:00-18:00. Honestly, this is built for the 20-month-old: character recognition, the play structures, and the stage show land for her in a way they can't for a 12-month-old, who will engage with it the same way she'd engage with any bright, soft-surfaced play space - happily, but with zero Anpanman recognition. Worth it for the play space alone, not for "meeting Anpanman." Indoor, stroller-parked-at-door, soft play throughout, fully step-free. |
-| Meriken Park | 0:30 | 0 | 0 | 2 Hatobacho, Chuo-ku, Kobe 650-0042 | A flat harbourside park facing Kobe Port Tower and the Kobe Maritime Museum, with the "Be Kobe" sign as the current photo spot. In one corner, the Port of Kobe Earthquake Memorial Park preserves an actual 60m section of the Meriken Wharf quay wall, left cracked and tilted exactly as the Great Hanshin-Awaji Earthquake left it at 5:46am on 17 January 1995 - a magnitude-7 quake that killed 4,751 people in Kobe alone and still shapes how the city talks about itself; a sobering few minutes next to an otherwise cheerful waterfront, worth explaining to the adults even though the infants won't take it in. Nankinmachi, this day's lunch stop and one of Japan's three historic Chinatowns, sits a short walk inland. Flat paved paths throughout, fully stroller-friendly. |
-| Midosuji "Hikari no Kyoen" illumination | 0:45 | 0 | 0 | Midosuji Avenue, between the Hanshin-mae and Namba-nishiguchi intersections, Chuo-ku, Osaka | Osaka's main north-south boulevard, normally lined with ginkgo trees, strung with LED displays for about two months each winter as part of the citywide Osaka Hikari-Kyoen light festival; this visit catches its opening night. Free to walk, no ticket or reservation, evening hours only. Wide, flat, paved sidewalks the entire route - stroller-friendly - though opening night draws a crowd, so keep to the outer edge of the path rather than the center where photographers cluster. |
+| [National Museum of Art, Osaka](#art-and-museums) | 0:50 | 0 | 0 | 4-2-55 Nakanoshima, Kita-ku, Osaka 530-0005 | A contemporary and modern art museum whose entire exhibition space sits underground - the only thing visible at street level is a cluster of curved steel pylons by architect Cesar Pelli marking the entrance, an unusual building worth a sentence before ever reaching the art inside. The collection runs roughly 8,200 works of Japanese and international art from 1945 onward. Standard adult admission for the permanent collection is normally around ¥430, but entry is free for everyone on 3 Nov (Bunka no Hi / Culture Day) - this is the one Osaka museum confirmed free that date, not a citywide policy. Fully underground and lift-served, no stairs-only stretches, stroller-friendly throughout; closed Mondays. |
+| [Anpanman Children's Museum & Mall](#things-aimed-at-the-toddlers) | 1:30 | 2,250 | 11,250 (5 payers - see note) | 1-6-2 Higashikawasakicho, Chuo-ku, Kobe 650-0044 | A two-zone complex built around Anpanman, the soft, food-themed superhero who is easily the single most-recognized toddler character in Japan (unlike most anime IP, which skews to older kids). The ground-floor Shopping Mall Zone - a bakery themed on the show's Uncle Jam's bread factory, a food court, a souvenir corner, a small game corner - is free to browse; the 2nd-floor Museum Zone is the paid part, with Anpanman-themed play structures, a stage greeting/show, and soft-play elements sized for bodies this small. **Unlike almost every other site on this trip, toddlers are not free here**: admission runs roughly ¥2,000-2,500 per person aged 1 and up [ESTIMATE, aggregated pricing - confirm the exact current tier before booking], with both Infant A and Infant B past their first birthday by this date, so the party cost covers all 5 payers, not adult x3 - this is the stated exception to that rule. A web ticket for a specific date and time is required; same-day counter tickets exist but are subject to availability, so book ahead. Open 10:00-18:00. Honestly, this is built for the 20-month-old: character recognition, the play structures, and the stage show land for her in a way they can't for a 12-month-old, who will engage with it the same way she'd engage with any bright, soft-surfaced play space - happily, but with zero Anpanman recognition. Worth it for the play space alone, not for "meeting Anpanman." Indoor, stroller-parked-at-door, soft play throughout, fully step-free. |
+| [Meriken Park](#nature-and-landscape) | 0:30 | 0 | 0 | 2 Hatobacho, Chuo-ku, Kobe 650-0042 | A flat harbourside park facing Kobe Port Tower and the Kobe Maritime Museum, with the "Be Kobe" sign as the current photo spot. In one corner, the Port of Kobe Earthquake Memorial Park preserves an actual 60m section of the Meriken Wharf quay wall, left cracked and tilted exactly as the Great Hanshin-Awaji Earthquake left it at 5:46am on 17 January 1995 - a magnitude-7 quake that killed 4,751 people in Kobe alone and still shapes how the city talks about itself; a sobering few minutes next to an otherwise cheerful waterfront, worth explaining to the adults even though the infants won't take it in. Nankinmachi, this day's lunch stop and one of Japan's three historic Chinatowns, sits a short walk inland. Flat paved paths throughout, fully stroller-friendly. |
+| [Midosuji "Hikari no Kyoen" illumination](#festivals-and-seasonal-events) | 0:45 | 0 | 0 | Midosuji Avenue, between the Hanshin-mae and Namba-nishiguchi intersections, Chuo-ku, Osaka | Osaka's main north-south boulevard, normally lined with ginkgo trees, strung with LED displays for about two months each winter as part of the citywide Osaka Hikari-Kyoen light festival; this visit catches its opening night. Free to walk, no ticket or reservation, evening hours only. Wide, flat, paved sidewalks the entire route - stroller-friendly - though opening night draws a crowd, so keep to the outer edge of the path rather than the center where photographers cluster. |
 
 ### Day 28 Cost
 
@@ -3267,7 +3268,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 11,250 | 73 |
 | **Day total** | **34,210** | **221** |
 
-**Running total after Day 28: ¥1,152,500 ($7,435)**
+**Running total after Day 28: ¥1,133,600 ($7,314)**
 
 ---
 
@@ -3345,11 +3346,11 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Osaka Castle keep | 1:40 | 600 | 1,800 | 1-1 Osakajo, Chuo-ku, Osaka 540-0002 | The keep looks like a wooden Sengoku-era castle from the outside but is not one: Toyotomi Hideyoshi's original 16th-century keep burned in 1615, a Tokugawa-era rebuild burned again in 1665, and what stands today is a 1931 reinforced-concrete reconstruction sitting on the surviving Toyotomi-era stone base. That matters for a visitor expecting a creaky wooden interior like Himeji's - inside is a museum on Hideyoshi and the castle town, plus an 8th-floor observation level, and critically, a lift. That elevator is exactly why this castle works with a stroller-and-carrier family when a genuine Edo-period keep like Himeji's (narrow wooden stairs only) does not. The park grounds are free and open all day; keep admission is paid, infants free, and the stroller is parked at the entrance while the party rides up. |
-| Den Den Town (Nipponbashi/Ota Road) | 0:20 | 0 | 0 | Nipponbashi/Ota Road, Naniwa-ku/Chuo-ku, Osaka (district; no single address) | Osaka's own anime and hobby-shop district, a roughly 1km strip along Sakaisuji and the parallel Ota Road with over 150 shops - Animate, Yellow Submarine, Super Potato, K-Books, and other figure, Gunpla, card and doujinshi stores. It shares some of the same chains as Tokyo's Akihabara, but reads noticeably different in person: smaller, far less crowded, more ground-level shopfronts than Akihabara's cramped multi-floor buildings, and a more retro, collector-hobbyist feel than Akihabara's denser, more mainstream-tourist buzz - genuinely more Kansai than Kanto in atmosphere. Free to browse. Nippombashi Station, which this day already uses to reach Kuromon Ichiba, sits right at the district's edge, so this costs almost no extra transit. Flat, wide shopping street, stroller-workable outside peak hours. |
-| Shinsekai walk + Tsutenkaku Tower observation deck | 0:50 | 900 | 2,700 | 1-18-6 Ebisuhigashi, Naniwa-ku, Osaka 556-0002 | Shinsekai ("New World") is a retro entertainment district built in 1912, deliberately modeled on Paris and New York's Coney Island - radial streets and an amusement-park layout centered on Tsutenkaku Tower. It boomed early, was flattened in WWII bombing, and spent decades after as Osaka's cheap, slightly disreputable corner before becoming today's beloved-but-still-a-bit-seedy tourist draw: gaudy signage, plastic food models, and the city's densest cluster of kushikatsu counters. Tsutenkaku itself is a 103m steel observation tower first built in 1912 and rebuilt in 1956 after wartime dismantling; the deck is elevator-served with an open view over Shinsekai's low rooftops - a smaller, more retro stand-in for Umeda Sky Building or Abeno Harukas, and this trip's "city from above" stop. Infants free on the tower; the surrounding streets are flat and stroller-viable but narrow and crowded at peak hours. |
-| Dotonbori canal walk | 0:30 | 0 | 0 | Dotonbori canal, Chuo-ku, Osaka (canal-side pedestrian strip; no single street address) | A packed pedestrian walk along both banks of the Dotonbori canal, wall-to-wall illuminated signage - most famously the Glico running man, a billboard first put up by confectioner Ezaki Glico in 1935 and rebuilt six times since (the current LED version dates to 2014) at the same spot on the Ebisubashi bridge, arguably the single most photographed spot in Osaka. It's gaudy on purpose - restaurant signage competing for foot traffic over ninety years, not a curated attraction - and rewards about an hour at most, best after dark when the signs are lit. Level paved streets, stroller-viable, but expect dense evening crowds on both banks. |
-| Tombori River Cruise | 0:30 | 2,000 | 6,000 | Tazaemonbashi Pier, by the Don Quijote store, Dotonbori, Chuo-ku, Osaka (pier location; no street address) | A 20-minute narrated boat ride along the Dotonbori canal, passing underneath the illuminated signs the party just walked past on foot - the same stretch seen from the water, with a live guide pointing out landmarks. It's a good change of pace after a day on foot, but it runs on a scheduled departure rather than being a walk-up guarantee. Adult fare is ¥2,000, infants free (one free child per fare-paying adult, comfortably inside policy for 2 infants and 3 adults). Boarding is via a short ramp/steps at the pier; the stroller is folded and carried aboard or left curbside with one adult - confirm with staff at boarding. |
+| [Osaka Castle keep](#castles-and-fortifications) | 1:40 | 600 | 1,800 | 1-1 Osakajo, Chuo-ku, Osaka 540-0002 | The keep looks like a wooden Sengoku-era castle from the outside but is not one: Toyotomi Hideyoshi's original 16th-century keep burned in 1615, a Tokugawa-era rebuild burned again in 1665, and what stands today is a 1931 reinforced-concrete reconstruction sitting on the surviving Toyotomi-era stone base. That matters for a visitor expecting a creaky wooden interior like Himeji's - inside is a museum on Hideyoshi and the castle town, plus an 8th-floor observation level, and critically, a lift. That elevator is exactly why this castle works with a stroller-and-carrier family when a genuine Edo-period keep like Himeji's (narrow wooden stairs only) does not. The park grounds are free and open all day; keep admission is paid, infants free, and the stroller is parked at the entrance while the party rides up. |
+| [Den Den Town (Nipponbashi/Ota Road)](#anime-manga-and-games) | 0:20 | 0 | 0 | Nipponbashi/Ota Road, Naniwa-ku/Chuo-ku, Osaka (district; no single address) | Osaka's own anime and hobby-shop district, a roughly 1km strip along Sakaisuji and the parallel Ota Road with over 150 shops - Animate, Yellow Submarine, Super Potato, K-Books, and other figure, Gunpla, card and doujinshi stores. It shares some of the same chains as Tokyo's Akihabara, but reads noticeably different in person: smaller, far less crowded, more ground-level shopfronts than Akihabara's cramped multi-floor buildings, and a more retro, collector-hobbyist feel than Akihabara's denser, more mainstream-tourist buzz - genuinely more Kansai than Kanto in atmosphere. Free to browse. Nippombashi Station, which this day already uses to reach Kuromon Ichiba, sits right at the district's edge, so this costs almost no extra transit. Flat, wide shopping street, stroller-workable outside peak hours. |
+| [Shinsekai walk + Tsutenkaku Tower observation deck](#views-and-observation-decks) | 0:50 | 900 | 2,700 | 1-18-6 Ebisuhigashi, Naniwa-ku, Osaka 556-0002 | Shinsekai ("New World") is a retro entertainment district built in 1912, deliberately modeled on Paris and New York's Coney Island - radial streets and an amusement-park layout centered on Tsutenkaku Tower. It boomed early, was flattened in WWII bombing, and spent decades after as Osaka's cheap, slightly disreputable corner before becoming today's beloved-but-still-a-bit-seedy tourist draw: gaudy signage, plastic food models, and the city's densest cluster of kushikatsu counters. Tsutenkaku itself is a 103m steel observation tower first built in 1912 and rebuilt in 1956 after wartime dismantling; the deck is elevator-served with an open view over Shinsekai's low rooftops - a smaller, more retro stand-in for Umeda Sky Building or Abeno Harukas, and this trip's "city from above" stop. Infants free on the tower; the surrounding streets are flat and stroller-viable but narrow and crowded at peak hours. |
+| [Dotonbori canal walk](#streets-lanes-and-canal-walks) | 0:30 | 0 | 0 | Dotonbori canal, Chuo-ku, Osaka (canal-side pedestrian strip; no single street address) | A packed pedestrian walk along both banks of the Dotonbori canal, wall-to-wall illuminated signage - most famously the Glico running man, a billboard first put up by confectioner Ezaki Glico in 1935 and rebuilt six times since (the current LED version dates to 2014) at the same spot on the Ebisubashi bridge, arguably the single most photographed spot in Osaka. It's gaudy on purpose - restaurant signage competing for foot traffic over ninety years, not a curated attraction - and rewards about an hour at most, best after dark when the signs are lit. Level paved streets, stroller-viable, but expect dense evening crowds on both banks. |
+| [Tombori River Cruise](#transport-as-an-experience) | 0:30 | 2,000 | 6,000 | Tazaemonbashi Pier, by the Don Quijote store, Dotonbori, Chuo-ku, Osaka (pier location; no street address) | A 20-minute narrated boat ride along the Dotonbori canal, passing underneath the illuminated signs the party just walked past on foot - the same stretch seen from the water, with a live guide pointing out landmarks. It's a good change of pace after a day on foot, but it runs on a scheduled departure rather than being a walk-up guarantee. Adult fare is ¥2,000, infants free (one free child per fare-paying adult, comfortably inside policy for 2 infants and 3 adults). Boarding is via a short ramp/steps at the pier; the stroller is folded and carried aboard or left curbside with one adult - confirm with staff at boarding. |
 
 ### Day 29 Cost
 
@@ -3361,7 +3362,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 10,500 | 68 |
 | **Day total** | **38,150** | **246** |
 
-**Running total after Day 29: ¥1,190,650 ($7,682)**
+**Running total after Day 29: ¥1,171,750 ($7,560)**
 
 **Option on the table, not scheduled: Bunraku at the National Bunraku Theatre.** The theatre sits one minute from Kintetsu Nipponbashi Station, the same block as this day's Kuromon Ichiba lunch stop, and its Kinshu (Autumn) run covers 31 Oct - 23 Nov 2026 - open the entire Osaka stay. Bunraku puppets are worked in full view, roughly a metre tall, each handled by three visible black-clad puppeteers, with a chanter and shamisen player performing live at the side of the stage; nothing is spoken that needs translating to follow it, which makes it arguably the single best answer on this whole trip to "how is Japanese theatre different from American theatre." Tickets run about ¥6,500/adult, uniform seating, and the theatre's own FAQ sets no minimum age - only a policy that a disruptive child may be asked to step out, with lobby monitors as a fallback. **It is not scheduled, for one plain reason: Part 1 alone runs 2h20 or longer, which means one adult sits alone with both infants for that entire stretch on the trip's last full day**, and taking it means dropping the Tombori River Cruise above and trimming the Shinsekai stop to make room. It is priced and ready to book as-is if the family decides that trade is worth it; it is left out of the schedule and the Day 29 Cost table above on the assumption that it is not.
 
@@ -3426,7 +3427,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 0 | 0 |
 | **Day total** | **7,790** | **50** |
 
-**Running total after Day 30: ¥1,198,440 ($7,732)**
+**Running total after Day 30: ¥1,179,540 ($7,610)**
 
 ---
 
@@ -3514,6 +3515,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Peace Memorial Museum | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥200, free under 18; lower-floor exhibits are graphic, party splits so one adult stays outside with the children |
 | Hiroshima Orizuru Tower | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥2,200, paper-crane folding built into the descent ramp, elevator throughout |
 | Port of Kobe Earthquake Memorial Park | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | Free, within Meriken Park; preserves a 60m section of quay wall left cracked by the 1995 Great Hanshin-Awaji Earthquake |
+| Peace Memorial Park and the Atomic Bomb Dome exterior | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | 1-10 Otemachi, Naka-ku, Hiroshima 730-0051 | Free, riverside parkland built on what was the city's busiest commercial district and ground zero, flat and stroller-friendly throughout |
 
 ### Imperial and court history
 
@@ -3541,6 +3543,7 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Ryoan-ji | [19](#day-19---sunday-october-25-2026---kyoto) | Ukyo-ku, Kyoto | Karesansui dry rock garden, ¥600, viewed from a raised wooden veranda, shoes off |
 | Isuien Garden | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | ¥900, Edo/Meiji strolling garden using shakkei to frame Todai-ji's gate beyond its own trees |
 | Shukkei-en | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥260, "shrunken scenery" style miniaturizing famous landscapes around a central pond, rebuilt after the bombing |
+| Manyo Botanical Garden | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Inside the Kasuga Taisha grounds, Nara | ¥500/adult, planted with the species named in the 8th-century Manyoshu poems, flat gravel paths |
 
 ### Onsen, sento and bathing
 
@@ -3569,7 +3572,186 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Nankinmachi (Kobe Chinatown) | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | Free to walk, one of Japan's three historic Chinatowns |
 | Kuromon Ichiba Market | [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Roughly 170 stalls, single-portion grill-and-eat pricing aimed at visitors rather than a wholesale market |
 
-### Food by type
+### Anime, manga and games
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Pokemon Centre Skytree Town | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | Free to enter |
+| Akihabara (Radio Kaikan, Gachapon Kaikan, Mandarake, Super Potato, Yodobashi) | [3](#day-3---friday-october-9-2026---tokyo) | Chiyoda-ku, Tokyo | Free to browse; Radio Kaikan is a real Steins;Gate filming location whose 10F hosted the show's own 2026 anniversary event |
+| Tokyo Character Street | [4](#day-4---saturday-october-10-2026---tokyo) | Tokyo Stn B1F, Chiyoda-ku | Free, roughly 30 character-retail shops |
+| Pokemon Centre Shibuya, Jump Shop, Nintendo Tokyo | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya PARCO 6F | Free to enter, one shared mall floor |
+| Gundam Base Tokyo | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | DiverCity Tokyo Plaza, Koto-ku | Free to browse; the outdoor life-size Unicorn Gundam statue that used to stand outside ended its display 31 Aug 2026 |
+| Ghibli Museum | [10](#day-10---friday-october-16-2026---tokyo) | Mitaka-shi, Tokyo | ¥1,000, lottery-only booking about a month ahead, no strollers permitted indoors |
+| Fushimi Inari Taisha | [15](#day-15---wednesday-october-21-2026---kyoto) | Fushimi-ku, Kyoto | Free; real-world setting of Inari, Konkon, Koi Iroha |
+| Uji riverbank | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | Free; real-world setting of Kyoto Animation's Sound! Euphonium |
+| Pokemon Center Osaka DX | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Daimaru Shinsaibashi 9F, Chuo-ku, Osaka | Free to enter, no attached cafe (Pokemon Cafe Osaka is elsewhere) |
+| Den Den Town | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku/Chuo-ku, Osaka | Free to browse, Osaka's own hobby-shop district |
+
+### Technology and science
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| National Museum of Nature and Science (Kahaku) | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥620, dinosaur skeleton hall and the actual Lambda 4S rocket that launched Japan's first satellite, open until 20:00 on Fridays |
+| teamLab Planets TOKYO DMM | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Koto-ku, Tokyo | ¥5,300, barefoot walk-through digital art, guests get wet to the knee, pack spare clothes |
+| Cup Noodles Museum | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Naka-ku, Yokohama | ¥1,000 including the My CUPNOODLES Factory workshop, design-and-seal-your-own-cup |
+| Gundam Base Tokyo | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | DiverCity Tokyo Plaza, Koto-ku | Free, a Gunpla retail floor rather than a museum |
+
+### Art and museums
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Tokyo National Museum | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥1,000, permanent-collection-only this visit, samurai armor, swords, ceramics, Buddhist sculpture |
+| Kubota Itchiku Art Museum | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,600, kimono art depicting Mt. Fuji using the revived tsujigahana dyeing technique |
+| Itsukushima Treasure Hall | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima, Hatsukaichi | ¥300, shrine treasures, narrow display aisles |
+| Tale of Genji Museum | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥600, air-conditioned, a scale palace model and a short film |
+| Teradaya Inn | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥600, Sakamoto Ryoma history house, raised tatami floor with a step at the entrance |
+| Peace Memorial Museum | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥200, free under 18 |
+| National Museum of Art, Osaka | [28](#day-28---tuesday-november-3-2026---osaka) | Kita-ku, Osaka | Free on 3 Nov (Bunka no Hi / Culture Day) only, otherwise about ¥430; entirely underground, lift-served |
+
+### Crafts and hands-on activities
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Plastic food-sample workshop | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Kappabashi, Taito-ku | ¥2,300, traditional hot-wax method, adult-hands-only, reservation required |
+| My CUPNOODLES Factory workshop | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Cup Noodles Museum, Naka-ku, Yokohama | ¥500 on top of the ¥500 base admission |
+| Taihoan tea ceremony | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥1,000, whisk your own matcha under a host's guidance |
+| Kimono rental, worn for the day | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Yumeyakata Gojo Shop, 353 Shiogamacho, Shimogyo-ku, Kyoto 600-8103 | ¥5,280/adult, ¥15,840 for three, dressed by shop staff in about 20-30 minutes and returned the same evening, geta and a stroller are an awkward combination |
+| Kimono rental, full day | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Yumeyakata Gojo Shop, Shimogyo-ku | ¥5,280, worn all day, adults-only (hard to nurse or change a diaper in) |
+| Nishijin hand-loom weaving | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Kamigyo-ku, Kyoto | ¥2,530, weave a small cloth to take home, reservation 2+ days ahead |
+| Saiko Iyashi-no-Sato Nenba | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥500, thatched-roof village with small craft workshops |
+| Gekkeikan Okura Sake Museum tasting | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥600, includes three tastings and a souvenir bottle, free for ages 12 and under |
+
+### Nature and landscape
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Yoyogi Park | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, open lawns |
+| Odaiba Marine Park | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Minato-ku, Tokyo | Free, waterfront promenade facing the Rainbow Bridge |
+| Chureito Pagoda / Arakurayama Sengen Park | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Fujiyoshida-shi, Yamanashi | Free, 398 stone steps or a longer slope path, both carrier-only |
+| Oishi Park | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | Free, lake-and-Fuji view; mornings are the reliable clear window before afternoon cloud |
+| Lake Kawaguchi sightseeing cruise | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Kawaguchiko, Yamanashi | ¥1,200, boarding via a short gangway, not wheel-on |
+| Kawaguchiko Tenjozan Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000, summit view over the full width of the lake |
+| Oshino Hakkai | [13](#day-13---monday-october-19-2026---kawaguchiko) | Oshino, Yamanashi | Free public path between eight spring-fed ponds, +¥300 for one private garden pond |
+| Yuigahama Beach | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | Free, flat sand approach, carrier easier once actually on the sand |
+| Arashiyama Bamboo Grove | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | Free, best in the first hour after sunrise before tour groups arrive |
+| Togetsukyo Bridge and riverside | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | Free |
+| Philosopher's Path | [16](#day-16---thursday-october-22-2026---kyoto) | Sakyo-ku, Kyoto | Free, canal-side stone path between Nanzenji and Eikan-do |
+| Yanaka Cemetery | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, over 7,000 graves, paved but uneven paths |
+| Nara Park (deer) | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | Free to watch, ¥200 per pack to feed by hand |
+| Momijidani Park | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima | Free, shaded rest stop at the ropeway base station |
+| Meriken Park | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | Free, flat harbourside park |
+
+### Rural and small-town Japan
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Oshino Hakkai | [13](#day-13---monday-october-19-2026---kawaguchiko) | Oshino, Yamanashi | Free public path, preserved farming village with water wheels |
+| Saiko Iyashi-no-Sato Nenba | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥500, reconstructed thatched-roof village rebuilt after a 1966 landslide |
+| Yanaka Ginza and Yanaka Cemetery | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, an old shotengai streetscape that survived Tokyo's postwar rebuilding |
+| Chushojima / Fushimi sake district | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | Free canal-side walk past white-plastered Edo-period brewery warehouses |
+
+### Streets, lanes and canal walks
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Neighbourhood walk | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Shijo-Omiya, Kyoto | Free, unplanned orientation walk on arrival, no set route |
+| Gion district walk | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free, geiko/maiko entertainment district; several private side-lanes ban tourist photography, fines up to ¥10,000 |
+| Shirakawa Canal | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free, willow-lined canal walkway, quieter than the main Gion street |
+| Pontocho evening lantern walk | [18](#day-18---saturday-october-24-2026---kyoto) | Nakagyo-ku, Kyoto | Free to walk through; the priciest restaurants refuse first-time or foreign walk-ins (ichigen-san okotowari) |
+| Kamo riverbank walk (in kimono) | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Shimogyo-ku, Kyoto | Free, paved path chosen because geta sandals are slower on uneven ground |
+| Dotonbori canal walk | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Free, illuminated signage including the Glico running man sign, dense evening crowds |
+| Canal-side brewery walk, Chushojima | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto (district; address unverified) | Free, flat towpath among the white-walled sake warehouses, stroller-friendly |
+| Higashiyama lanes, Sannenzaka and Ninenzaka | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto, near the Kiyomizu-michi bus stop (address unverified) | Free, two connected stone-paved lanes of preserved wooden shopfronts and teahouses climbing to Kiyomizu-dera, stepped and steep in places so carrier rather than stroller |
+
+### Festivals and seasonal events
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Jidai Matsuri | [16](#day-16---thursday-october-22-2026---kyoto) | Kamigyo-ku, Kyoto | Free street viewing from inside Kyoto Gyoen, no paid grandstand seats bought |
+| Tokyo Rockabilly Club dancers | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, unticketed, Sunday afternoons, weather-dependent |
+| Kobo-ichi market | [15](#day-15---wednesday-october-21-2026---kyoto) | Minami-ku, Kyoto | Free, held on the 21st of every month |
+| Tenjin-ichi market | [19](#day-19---sunday-october-25-2026---kyoto) | Kamigyo-ku, Kyoto | Free, held on the 25th of every month |
+| Midosuji "Hikari no Kyoen" illumination | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Osaka | Free, catches the winter light festival's opening night |
+| Culture Day (Bunka no Hi) | [28](#day-28---tuesday-november-3-2026---osaka) | Kita-ku, Osaka | National Museum of Art is free on this one date, not a citywide policy |
+
+### Theatre and performance
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Kabukiza single-act (hitomakumi) | [2](#day-2---thursday-october-8-2026---tokyo) | Chuo-ku, Tokyo | About ¥2,500 including an English subtitle tablet, cash-only, sold same-day only, no advance booking |
+| Tokyo Rockabilly Club dancers | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free street performance, weather-dependent |
+
+### Transport as an experience
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Sumida River water bus | [4](#day-4---saturday-october-10-2026---tokyo) | Hamarikyu Pier to Asakusa, Tokyo | ¥1,000, about 40 minutes under 13 bridges |
+| Enoden coastal railway | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | ¥800 for a 1-day pass ("Noriorikun") |
+| Kawaguchiko Tenjozan Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
+| Lake Kawaguchi sightseeing cruise | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Kawaguchiko, Yamanashi | ¥1,200 |
+| Mishima -> Kyoto Shinkansen | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Tokaido Shinkansen Hikari, unreserved | ¥10,780/adult, 1h50, the trip's one full intercity transfer leg |
+| Sagano Romantic Train (Torokko) | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | ¥880, open-window sightseeing train through the Hozugawa gorge, reserve ahead |
+| Fushimi Jikkokubune canal boat | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥1,900, optional add, online-only reservation |
+| Kyoto -> Hiroshima Shinkansen | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Sanyo Shinkansen, Hikari/Sakura, unreserved | ¥10,770/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h40 |
+| JR Miyajima ferry (round trip) | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajimaguchi <-> Miyajima pier, Hatsukaichi | ¥400 round trip walk-up (covered by the JR pass), crossing toward the floating torii |
+| Miyajima Ropeway | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥2,000, only 2 of 3 adults go up, one carrying a child |
+| Hiroden streetcar | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Hiroshima | Flat citywide fare, ¥220 per ride |
+| Hiroshima -> Shin-Osaka Shinkansen | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Sanyo/Tokaido Shinkansen, Hikari/Sakura, unreserved | ¥9,710/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h30 |
+| Tombori River Cruise | [29](#day-29---wednesday-november-4-2026---osaka) | Dotonbori, Chuo-ku, Osaka | ¥2,000, scheduled departures rather than walk-up guaranteed |
+
+### Views and observation decks
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Tokyo Skytree Tembo Deck | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | ¥2,500, 350m, advance timed tickets recommended |
+| Tokyo Tower Main Deck | [4](#day-4---saturday-october-10-2026---tokyo) | Minato-ku, Tokyo | ¥1,500, 150m |
+| Landmark Tower Sky Garden | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Nishi-ku, Yokohama | ¥1,200, 69th floor |
+| Chureito Pagoda viewpoint | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Fujiyoshida-shi, Yamanashi | Free, reached via 398 stone steps, carrier-only |
+| Kawaguchiko Tenjozan Ropeway summit | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
+| Miyajima Ropeway summit | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥2,000 |
+| Hiroshima Orizuru Tower | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥2,200 |
+| Tsutenkaku Tower | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku, Osaka | ¥900, elevator-served |
+| Shibuya Scramble Crossing and Hachiko statue | [5](#day-5---sunday-october-11-2026---tokyo) | Outside Shibuya Stn Hachiko Exit, Shibuya-ku (address unverified) | Free, the crossing is best watched from the station walkway or the Starbucks window rather than from inside the crowd with a stroller |
+| Kawaguchiko Tenjozan Panoramic Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | 1163-1 Azagawa, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi | ¥1,000/adult round trip, infants free, three-minute cable car to a Lake Kawaguchi and Mt. Fuji viewpoint, morning is the reliable window for the mountain |
+
+### Things aimed at the toddlers
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Sumida Aquarium | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | ¥2,900, open-topped penguin pool, a touch pool |
+| Ueno Zoo | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥600, no giant pandas currently (the last two returned to China in January 2026) |
+| Yoyogi Park | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, open lawns |
+| teamLab Planets | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Koto-ku, Tokyo | ¥5,300, barefoot water rooms, pack spare clothes |
+| Inokashira Park + small zoo corner | [10](#day-10---friday-october-16-2026---tokyo) | Musashino-shi/Mitaka-shi, Tokyo | ¥500 for the small zoo section, park itself free |
+| Nara Park deer | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | Free to watch, ¥200 per pack to feed by hand |
+| Miyajima Public Aquarium | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥1,420, penguin and sea lion show, a touch pool |
+| Miyajima deer | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima | Free-roaming, same as Nara's |
+| Anpanman Children's Museum & Mall | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | ¥2,250 per person including both infants (ages 1 and up are charged here, unlike most sites on this trip), web ticket required |
+| Deer senbei at Nara Park | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara Park (district; address unverified) | ¥200 a pack, ¥600 for three; the deer are wild and push, so hold the crackers high and keep toddlers at adult height while feeding |
+
+### Shopping
+
+| What | Day | Where | Note |
+|---|---|---|---|
+| Nakamise-dori | [2](#day-2---thursday-october-8-2026---tokyo) | Taito-ku, Tokyo | Free to browse, souvenir and snack stalls |
+| Ameyoko | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | Free to browse |
+| Akihabara | [3](#day-3---friday-october-9-2026---tokyo) | Chiyoda-ku, Tokyo | Free to browse; Super Potato's upper floors are stairs-only, not stroller terrain |
+| Kappabashi Kitchenware Street | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free to browse, restaurant-supply shops |
+| Takeshita Street + Laforet Harajuku | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse, carrier-only by early afternoon (narrow and packed) |
+| Shibuya PARCO | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse (Pokemon Centre, Jump Shop, Nintendo Tokyo) |
+| Nishiki Market + Daimaru depachika | [15](#day-15---wednesday-october-21-2026---kyoto) | Nakagyo-ku, Kyoto | Free to browse |
+| Omamori charms + goshuincho stamp | [15](#day-15---wednesday-october-21-2026---kyoto) | Fushimi Inari Taisha stalls, Fushimi-ku, Kyoto | About ¥500 per charm, a five-minute stall stop rather than a destination |
+| Sannenzaka/Ninenzaka | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free to walk, uneven stone paving on a slope |
+| Kuromon Ichiba Market | [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Grill-and-eat stalls, priced for visitors |
+| Den Den Town | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku/Chuo-ku, Osaka | Free to browse |
+| Dotonbori/Shinsaibashi | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Free to walk, dense evening crowds |
+
+---
+
+## Appendix B: Food index
+
+Every dish the trip eats, by type, with the day it happens on and where.
+Regional specialities are listed separately at the end.
 
 #### Noodles
 
@@ -3665,188 +3847,16 @@ This index lists what the itinerary actually contains, organized by subject rath
 | Osaka-style okonomiyaki | [28](#day-28---tuesday-november-3-2026---osaka) | Dotonbori, Chuo-ku, Osaka | Batter, cabbage and fillings all stirred together before cooking |
 | Kushikatsu | [29](#day-29---wednesday-november-4-2026---osaka) | Kushikatsu Daruma, Dotonbori | Osaka/Shinsekai deep-fried skewer style |
 
-### Anime, manga and games
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Pokemon Centre Skytree Town | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | Free to enter |
-| Akihabara (Radio Kaikan, Gachapon Kaikan, Mandarake, Super Potato, Yodobashi) | [3](#day-3---friday-october-9-2026---tokyo) | Chiyoda-ku, Tokyo | Free to browse; Radio Kaikan is a real Steins;Gate filming location whose 10F hosted the show's own 2026 anniversary event |
-| Tokyo Character Street | [4](#day-4---saturday-october-10-2026---tokyo) | Tokyo Stn B1F, Chiyoda-ku | Free, roughly 30 character-retail shops |
-| Pokemon Centre Shibuya, Jump Shop, Nintendo Tokyo | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya PARCO 6F | Free to enter, one shared mall floor |
-| Gundam Base Tokyo | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | DiverCity Tokyo Plaza, Koto-ku | Free to browse; the outdoor life-size Unicorn Gundam statue that used to stand outside ended its display 31 Aug 2026 |
-| Ghibli Museum | [10](#day-10---friday-october-16-2026---tokyo) | Mitaka-shi, Tokyo | ¥1,000, lottery-only booking about a month ahead, no strollers permitted indoors |
-| Fushimi Inari Taisha | [15](#day-15---wednesday-october-21-2026---kyoto) | Fushimi-ku, Kyoto | Free; real-world setting of Inari, Konkon, Koi Iroha |
-| Uji riverbank | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | Free; real-world setting of Kyoto Animation's Sound! Euphonium |
-| Pokemon Center Osaka DX | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Daimaru Shinsaibashi 9F, Chuo-ku, Osaka | Free to enter, no attached cafe (Pokemon Cafe Osaka is elsewhere) |
-| Den Den Town | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku/Chuo-ku, Osaka | Free to browse, Osaka's own hobby-shop district |
-
-### Technology and science
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| National Museum of Nature and Science (Kahaku) | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥620, dinosaur skeleton hall and the actual Lambda 4S rocket that launched Japan's first satellite, open until 20:00 on Fridays |
-| teamLab Planets TOKYO DMM | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Koto-ku, Tokyo | ¥5,300, barefoot walk-through digital art, guests get wet to the knee, pack spare clothes |
-| Cup Noodles Museum | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Naka-ku, Yokohama | ¥1,000 including the My CUPNOODLES Factory workshop, design-and-seal-your-own-cup |
-| Gundam Base Tokyo | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | DiverCity Tokyo Plaza, Koto-ku | Free, a Gunpla retail floor rather than a museum |
-
-### Art and museums
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Tokyo National Museum | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥1,000, permanent-collection-only this visit, samurai armor, swords, ceramics, Buddhist sculpture |
-| Kubota Itchiku Art Museum | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,600, kimono art depicting Mt. Fuji using the revived tsujigahana dyeing technique |
-| Itsukushima Treasure Hall | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima, Hatsukaichi | ¥300, shrine treasures, narrow display aisles |
-| Tale of Genji Museum | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥600, air-conditioned, a scale palace model and a short film |
-| Teradaya Inn | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥600, Sakamoto Ryoma history house, raised tatami floor with a step at the entrance |
-| Peace Memorial Museum | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥200, free under 18 |
-| National Museum of Art, Osaka | [28](#day-28---tuesday-november-3-2026---osaka) | Kita-ku, Osaka | Free on 3 Nov (Bunka no Hi / Culture Day) only, otherwise about ¥430; entirely underground, lift-served |
-
-### Crafts and hands-on activities
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Plastic food-sample workshop | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Kappabashi, Taito-ku | ¥2,300, traditional hot-wax method, adult-hands-only, reservation required |
-| My CUPNOODLES Factory workshop | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Cup Noodles Museum, Naka-ku, Yokohama | ¥500 on top of the ¥500 base admission |
-| Taihoan tea ceremony | [21](#day-21---tuesday-october-27-2026---kyoto-day-trip-to-uji) | Uji-shi, Kyoto | ¥1,000, whisk your own matcha under a host's guidance |
-| Kimono/yukata rental | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | ¥6,300, dressed by shop staff, stroller held at the shop during dressing |
-| Kimono rental, full day | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Yumeyakata Gojo Shop, Shimogyo-ku | ¥5,280, worn all day, adults-only (hard to nurse or change a diaper in) |
-| Nishijin hand-loom weaving | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Kamigyo-ku, Kyoto | ¥2,530, weave a small cloth to take home, reservation 2+ days ahead |
-| Saiko Iyashi-no-Sato Nenba | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥500, thatched-roof village with small craft workshops |
-| Gekkeikan Okura Sake Museum tasting | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥600, includes three tastings and a souvenir bottle, free for ages 12 and under |
-
-### Nature and landscape
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Yoyogi Park | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, open lawns |
-| Odaiba Marine Park | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Minato-ku, Tokyo | Free, waterfront promenade facing the Rainbow Bridge |
-| Chureito Pagoda / Arakurayama Sengen Park | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Fujiyoshida-shi, Yamanashi | Free, 398 stone steps or a longer slope path, both carrier-only |
-| Oishi Park | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | Free, lake-and-Fuji view; mornings are the reliable clear window before afternoon cloud |
-| Lake Kawaguchi sightseeing cruise | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Kawaguchiko, Yamanashi | ¥1,200, boarding via a short gangway, not wheel-on |
-| Kawaguchiko Tenjozan Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000, summit view over the full width of the lake |
-| Oshino Hakkai | [13](#day-13---monday-october-19-2026---kawaguchiko) | Oshino, Yamanashi | Free public path between eight spring-fed ponds, +¥300 for one private garden pond |
-| Yuigahama Beach | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | Free, flat sand approach, carrier easier once actually on the sand |
-| Arashiyama Bamboo Grove | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | Free, best in the first hour after sunrise before tour groups arrive |
-| Togetsukyo Bridge and riverside | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | Free |
-| Philosopher's Path | [16](#day-16---thursday-october-22-2026---kyoto) | Sakyo-ku, Kyoto | Free, canal-side stone path between Nanzenji and Eikan-do |
-| Yanaka Cemetery | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, over 7,000 graves, paved but uneven paths |
-| Nara Park (deer) | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | Free to watch, ¥200 per pack to feed by hand |
-| Momijidani Park | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima | Free, shaded rest stop at the ropeway base station |
-| Meriken Park | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | Free, flat harbourside park |
-
-### Rural and small-town Japan
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Oshino Hakkai | [13](#day-13---monday-october-19-2026---kawaguchiko) | Oshino, Yamanashi | Free public path, preserved farming village with water wheels |
-| Saiko Iyashi-no-Sato Nenba | [13](#day-13---monday-october-19-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥500, reconstructed thatched-roof village rebuilt after a 1966 landslide |
-| Yanaka Ginza and Yanaka Cemetery | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free, an old shotengai streetscape that survived Tokyo's postwar rebuilding |
-| Chushojima / Fushimi sake district | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | Free canal-side walk past white-plastered Edo-period brewery warehouses |
-
-### Streets, lanes and canal walks
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Neighbourhood walk | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Shijo-Omiya, Kyoto | Free, unplanned orientation walk on arrival, no set route |
-| Gion district walk | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free, geiko/maiko entertainment district; several private side-lanes ban tourist photography, fines up to ¥10,000 |
-| Shirakawa Canal | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free, willow-lined canal walkway, quieter than the main Gion street |
-| Pontocho evening lantern walk | [18](#day-18---saturday-october-24-2026---kyoto) | Nakagyo-ku, Kyoto | Free to walk through; the priciest restaurants refuse first-time or foreign walk-ins (ichigen-san okotowari) |
-| Kamo riverbank walk (in kimono) | [23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | Shimogyo-ku, Kyoto | Free, paved path chosen because geta sandals are slower on uneven ground |
-| Dotonbori canal walk | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Free, illuminated signage including the Glico running man sign, dense evening crowds |
-
-### Festivals and seasonal events
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Jidai Matsuri | [16](#day-16---thursday-october-22-2026---kyoto) | Kamigyo-ku, Kyoto | Free street viewing from inside Kyoto Gyoen, no paid grandstand seats bought |
-| Tokyo Rockabilly Club dancers | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, unticketed, Sunday afternoons, weather-dependent |
-| Kobo-ichi market | [15](#day-15---wednesday-october-21-2026---kyoto) | Minami-ku, Kyoto | Free, held on the 21st of every month |
-| Tenjin-ichi market | [19](#day-19---sunday-october-25-2026---kyoto) | Kamigyo-ku, Kyoto | Free, held on the 25th of every month |
-| Midosuji "Hikari no Kyoen" illumination | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Osaka | Free, catches the winter light festival's opening night |
-| Culture Day (Bunka no Hi) | [28](#day-28---tuesday-november-3-2026---osaka) | Kita-ku, Osaka | National Museum of Art is free on this one date, not a citywide policy |
-
-### Theatre and performance
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Kabukiza single-act (hitomakumi) | [2](#day-2---thursday-october-8-2026---tokyo) | Chuo-ku, Tokyo | About ¥2,500 including an English subtitle tablet, cash-only, sold same-day only, no advance booking |
-| Tokyo Rockabilly Club dancers | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free street performance, weather-dependent |
-
-### Transport as an experience
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Sumida River water bus | [4](#day-4---saturday-october-10-2026---tokyo) | Hamarikyu Pier to Asakusa, Tokyo | ¥1,000, about 40 minutes under 13 bridges |
-| Enoden coastal railway | [7](#day-7---tuesday-october-13-2026---kamakura-day-trip) | Kamakura, Kanagawa | ¥800 for a 1-day pass ("Noriorikun") |
-| Kawaguchiko Tenjozan Ropeway | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
-| Lake Kawaguchi sightseeing cruise | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Kawaguchiko, Yamanashi | ¥1,200 |
-| Mishima -> Kyoto Shinkansen | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto) | Tokaido Shinkansen Hikari, unreserved | ¥10,780/adult, 1h50, the trip's one full intercity transfer leg |
-| Sagano Romantic Train (Torokko) | [17](#day-17---friday-october-23-2026---kyoto) | Ukyo-ku, Kyoto | ¥880, open-window sightseeing train through the Hozugawa gorge, reserve ahead |
-| Fushimi Jikkokubune canal boat | [22](#day-22---wednesday-october-28-2026---kyoto-day-trip-to-the-fushimi-sake-district) | Fushimi-ku, Kyoto | ¥1,900, optional add, online-only reservation |
-| Kyoto -> Hiroshima Shinkansen | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima) | Sanyo Shinkansen, Hikari/Sakura, unreserved | ¥10,770/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h40 |
-| JR Miyajima ferry (round trip) | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajimaguchi <-> Miyajima pier, Hatsukaichi | ¥400 round trip walk-up (covered by the JR pass), crossing toward the floating torii |
-| Miyajima Ropeway | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥2,000, only 2 of 3 adults go up, one carrying a child |
-| Hiroden streetcar | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima), [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Hiroshima | Flat citywide fare, ¥220 per ride |
-| Hiroshima -> Shin-Osaka Shinkansen | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka) | Sanyo/Tokaido Shinkansen, Hikari/Sakura, unreserved | ¥9,710/adult walk-up (covered by the JR Kansai-Hiroshima Area Pass), 1h30 |
-| Tombori River Cruise | [29](#day-29---wednesday-november-4-2026---osaka) | Dotonbori, Chuo-ku, Osaka | ¥2,000, scheduled departures rather than walk-up guaranteed |
-
-### Views and observation decks
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Tokyo Skytree Tembo Deck | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | ¥2,500, 350m, advance timed tickets recommended |
-| Tokyo Tower Main Deck | [4](#day-4---saturday-october-10-2026---tokyo) | Minato-ku, Tokyo | ¥1,500, 150m |
-| Landmark Tower Sky Garden | [9](#day-9---thursday-october-15-2026---yokohama-day-trip) | Nishi-ku, Yokohama | ¥1,200, 69th floor |
-| Chureito Pagoda viewpoint | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko) | Fujiyoshida-shi, Yamanashi | Free, reached via 398 stone steps, carrier-only |
-| Kawaguchiko Tenjozan Ropeway summit | [12](#day-12---sunday-october-18-2026---kawaguchiko) | Fujikawaguchiko-machi, Yamanashi | ¥1,000 |
-| Miyajima Ropeway summit | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥2,000 |
-| Hiroshima Orizuru Tower | [26](#day-26---sunday-november-1-2026---hiroshima-city-day) | Naka-ku, Hiroshima | ¥2,200 |
-| Tsutenkaku Tower | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku, Osaka | ¥900, elevator-served |
-
-### Things aimed at the toddlers
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Sumida Aquarium | [2](#day-2---thursday-october-8-2026---tokyo) | Sumida-ku, Tokyo | ¥2,900, open-topped penguin pool, a touch pool |
-| Ueno Zoo | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | ¥600, no giant pandas currently (the last two returned to China in January 2026) |
-| Yoyogi Park | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free, open lawns |
-| teamLab Planets | [8](#day-8---wednesday-october-14-2026---tokyo-odaiba--toyosu) | Koto-ku, Tokyo | ¥5,300, barefoot water rooms, pack spare clothes |
-| Inokashira Park + small zoo corner | [10](#day-10---friday-october-16-2026---tokyo) | Musashino-shi/Mitaka-shi, Tokyo | ¥500 for the small zoo section, park itself free |
-| Nara Park deer | [20](#day-20---monday-october-26-2026---kyoto-day-trip-to-nara) | Nara | Free to watch, ¥200 per pack to feed by hand |
-| Miyajima Public Aquarium | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Hatsukaichi, Hiroshima | ¥1,420, penguin and sea lion show, a touch pool |
-| Miyajima deer | [25](#day-25---saturday-october-31-2026---miyajima-itsukushima) | Miyajima | Free-roaming, same as Nara's |
-| Anpanman Children's Museum & Mall | [28](#day-28---tuesday-november-3-2026---osaka) | Chuo-ku, Kobe | ¥2,250 per person including both infants (ages 1 and up are charged here, unlike most sites on this trip), web ticket required |
-
-### Shopping
-
-| What | Day | Where | Note |
-|---|---|---|---|
-| Nakamise-dori | [2](#day-2---thursday-october-8-2026---tokyo) | Taito-ku, Tokyo | Free to browse, souvenir and snack stalls |
-| Ameyoko | [3](#day-3---friday-october-9-2026---tokyo) | Taito-ku, Tokyo | Free to browse |
-| Akihabara | [3](#day-3---friday-october-9-2026---tokyo) | Chiyoda-ku, Tokyo | Free to browse; Super Potato's upper floors are stairs-only, not stroller terrain |
-| Kappabashi Kitchenware Street | [6](#day-6---monday-october-12-2026---tokyo-sports-day) | Taito-ku, Tokyo | Free to browse, restaurant-supply shops |
-| Takeshita Street + Laforet Harajuku | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse, carrier-only by early afternoon (narrow and packed) |
-| Shibuya PARCO | [5](#day-5---sunday-october-11-2026---tokyo) | Shibuya-ku, Tokyo | Free to browse (Pokemon Centre, Jump Shop, Nintendo Tokyo) |
-| Nishiki Market + Daimaru depachika | [15](#day-15---wednesday-october-21-2026---kyoto) | Nakagyo-ku, Kyoto | Free to browse |
-| Omamori charms + goshuincho stamp | [15](#day-15---wednesday-october-21-2026---kyoto) | Fushimi Inari Taisha stalls, Fushimi-ku, Kyoto | About ¥500 per charm, a five-minute stall stop rather than a destination |
-| Sannenzaka/Ninenzaka | [18](#day-18---saturday-october-24-2026---kyoto) | Higashiyama-ku, Kyoto | Free to walk, uneven stone paving on a slope |
-| Kuromon Ichiba Market | [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Grill-and-eat stalls, priced for visitors |
-| Den Den Town | [29](#day-29---wednesday-november-4-2026---osaka) | Naniwa-ku/Chuo-ku, Osaka | Free to browse |
-| Dotonbori/Shinsaibashi | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka), [29](#day-29---wednesday-november-4-2026---osaka) | Chuo-ku, Osaka | Free to walk, dense evening crowds |
-
 ---
 
-## Appendix B: The five places
+## Appendix C: The five places
 
 Five stops in thirty days. Each profile says what the place is, what walking
 around it feels like, and how it differs from the other four.
 
 ### Tokyo
 
-*Covers Days 1-10 (Oct 7-16 2026), based at Hotel Livemax Higashi-Ueno, 3-5-1 Motoasakusa,
-Taito-ku. Written against MASTER-BRIEF.md and days-01-10-tokyo.md.*
-
----
+Covers Days [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival)-[10](#day-10---friday-october-16-2026---tokyo) (7-16 October 2026), based at Hotel Livemax Higashi-Ueno, 3-5-1 Motoasakusa, Taito-ku.
 
 Tokyo is not a city with a downtown the way most first-time visitors picture one. It is
 closer to a cluster of a dozen or so full-sized city centres - Shinjuku, Shibuya, Ueno,
@@ -3916,10 +3926,7 @@ Tokyo itself to deliver it.
 
 ### Kawaguchiko and the Fuji Five Lakes
 
-Covers Days 11-13 (Oct 17-19, 2026), 3 nights at K's House Mt. Fuji. Cross-check against
-`/home/user/test/japan-trip/days/days-11-14-fuji-transfer.md` and `MASTER-BRIEF.md`.
-
----
+Covers Days [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko)-[13](#day-13---monday-october-19-2026---kawaguchiko) (17-19 October 2026), at K's House Mt. Fuji for two nights and a lakeside ryokan for the third.
 
 The Fuji Five Lakes (Fujigoko) is a resort and lake district strung along the north base
 of Mt. Fuji in Yamanashi prefecture, at roughly 830-900m elevation, about 100km west of
@@ -3975,11 +3982,7 @@ opts out on its own schedule.
 
 ### Kyoto
 
-*Research file. Covers Days 14-23 (Oct 20-29 2026), 10 nights at Toyoko Inn Kyoto
-Shijo-Omiya, 3 adults + 2 infants (~12mo, ~20mo). Prices are 2026 planning
-estimates, not quotes, per the trip's honesty rule. FX ¥155 = $1.*
-
----
+Covers Days [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto)-[23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) (20-29 October 2026), 10 nights at Toyoko Inn Kyoto Shijo-Omiya.
 
 ##### What Kyoto actually is
 
@@ -4080,11 +4083,7 @@ appropriately generous, provided the pacing rule above is respected.
 
 ### Hiroshima and Miyajima
 
-Covers Days 24-26 (Oct 30 - Nov 1, 2026), 3 nights at Toyoko Inn Hiroshima Ekimae Ohashi
-Minami, with a full Miyajima day. Cross-check against
-`/home/user/test/japan-trip/days/days-24-27-hiroshima.md` and `MASTER-BRIEF.md`.
-
----
+Covers Days [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)-[26](#day-26---sunday-november-1-2026---hiroshima-city-day) (30 October - 1 November 2026), 3 nights at Toyoko Inn Hiroshima Ekimae Ohashi Minami, including a full day on Miyajima.
 
 Hiroshima today is a rebuilt, modern, green city of about 1.2 million people, spread
 across a river delta where six branches of the Ota River fan out to the Seto Inland Sea.
@@ -4141,10 +4140,7 @@ unhurried treatment this plan already gives them.
 
 ### Osaka
 
-*Prepared for Days 27-30 (Nov 2-5 2026), Toyoko Inn Osaka Namba, 3 adults + 2 infants (~12mo, ~20mo).
-Prices at ¥155 = $1.00. Facts are marked [VERIFIED, source] or [ESTIMATE]; no invented addresses.*
-
----
+Covers Days [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)-[29](#day-29---wednesday-november-4-2026---osaka) (2-4 November 2026), 3 nights at Toyoko Inn Osaka Namba, with departure from Kansai Airport on Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix).
 
 Osaka is Japan's merchant city, and that one fact explains almost everything about how it feels to
 visit. Kyoto was the imperial capital for a thousand years and built itself around court ritual and
@@ -4218,7 +4214,101 @@ across, not one you sit still in.
 
 ---
 
-## Appendix C: Advance booking
+## Appendix D: Hotels and lodging
+
+Six properties across 29 nights. Every stay except the ryokan uses the same
+**two-room split**: one twin holding two adults and both infants, plus one single for
+the third adult.
+
+| Property | Days | Nights | Nightly ¥ | Total ¥ |
+|---|---|---|---|---|
+| Hotel Livemax Higashi-Ueno | [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival)-[10](#day-10---friday-october-16-2026---tokyo) | 10 | 18,000 | 180,000 |
+| K's House Mt. Fuji | [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko)-[12](#day-12---sunday-october-18-2026---kawaguchiko) | 2 | 18,000 | 36,000 |
+| Lakeland Hotel Mizunosato (ryokan) | [13](#day-13---monday-october-19-2026---kawaguchiko) | 1 | 41,580 | 41,580 |
+| Toyoko Inn Kyoto Shijo-Omiya | [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto)-[23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing) | 10 | 19,000 | 190,000 |
+| Toyoko Inn Hiroshima Ekimae Ohashi Minami | [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)-[26](#day-26---sunday-november-1-2026---hiroshima-city-day) | 3 | 15,000 | 45,000 |
+| Toyoko Inn Osaka Namba | [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)-[29](#day-29---wednesday-november-4-2026---osaka) | 3 | 13,000 | 39,000 |
+| **Total** | | **29** | | **531,580** |
+
+¥531,580 is **$3,430**, about 41% of the trip's planned spend.
+
+### Why two rooms rather than one
+
+Standard Japanese hotel rooms cap at two adults, and most business chains enforce a
+hard headcount per room regardless of guest age. A single unit that legally sleeps
+3 adults + 2 infants is a scarce, premium product: family apartment-hotels quote
+¥25,000-50,000 a night, which across 29 nights would be $4,700-9,400 and would consume
+the entire trip budget.
+
+Toyoko Inn and Hotel Livemax both allow a preschool child to co-sleep free, one per bed,
+so a twin room lawfully houses two adults and two infants. No crib is required. That is
+what brings lodging in at roughly a third of the one-big-unit price.
+
+**Declare both infants' ages in writing when booking every property.** The whole
+strategy rests on that co-sleeping allowance, and some chains count every body against a
+hard room cap regardless of age.
+
+### The properties
+
+#### Hotel Livemax Higashi-Ueno
+**3-5-1 Motoasakusa, Taito-ku, Tokyo 111-0041**
+Days [1](#day-1---wednesday-october-7-2026---tokyo-narita-arrival)-[10](#day-10---friday-october-16-2026---tokyo), 10 nights, ¥18,000/night for both rooms.
+In-room kitchenette with fridge and microwave, which is the single most useful lodging
+feature of the trip: Tokyo is where the self-catering happens. Nearest stations Iriya or
+Inaricho on the Hibiya Line, with Ueno about 10-12 minutes on foot. No breakfast
+included; the kitchenette covers it.
+
+#### K's House Mt. Fuji
+**Near the Ogi bus stop, about 15 minutes' walk from Kawaguchiko Station (street address unverified)**
+Days [11](#day-11---saturday-october-17-2026---tokyo--kawaguchiko)-[12](#day-12---sunday-october-18-2026---kawaguchiko), 2 nights, ¥18,000/night.
+A hostel rather than a hotel, and the only one on this trip. Fully equipped shared guest
+kitchen and laundry at ¥500 a load, both of which the Kawaguchiko days depend on. The
+Fuji Five Lakes has almost no business-hotel presence, so this is minshuku and hostel
+territory rather than a compromise.
+
+#### Lakeland Hotel Mizunosato
+**1070 Kodachi, Fujikawaguchiko, Minamitsuru-gun, Yamanashi 401-0302**
+Day [13](#day-13---monday-october-19-2026---kawaguchiko), 1 night, ¥41,580 (¥13,860 per adult, room-only).
+The trip's one ryokan night, and its one night on tatami and futon. A rentable private
+kashikiri bath runs ¥2,750 per 40 minutes, in slots between 15:00-20:00 and 05:00-09:00.
+Kaiseki dinner and Japanese breakfast are booked as half-board add-ons and are priced in
+that day's meals rather than here.
+
+**Two things to settle by phone before booking:** the exact five-person room
+configuration, and any infant futon or meal surcharge. Neither is published. The
+¥41,580 assumes infants are not charged for the room itself, which is a planning
+assumption rather than a confirmed policy.
+
+#### Toyoko Inn Kyoto Shijo-Omiya
+**About 1 minute from Omiya Station on the Hankyu Kyoto Line (street address unverified)**
+Days [14](#day-14---tuesday-october-20-2026---kawaguchiko--kyoto)-[23](#day-23---thursday-october-29-2026---kyoto-low-key-day--packing), 10 nights, ¥19,000/night.
+Free breakfast buffet for every guest including bed-sharing children: rice, miso soup,
+natto, pickles, bread and coffee, roughly 500 kcal per adult. Across ten mornings that
+removes the most awkward meal of the day to organise with infants. No kitchen, so the
+Kyoto food plan is built around eating out and konbini rather than cooking.
+
+#### Toyoko Inn Hiroshima Ekimae Ohashi Minami
+**Central Hiroshima, about 1.2 miles from Peace Memorial Park (street address unverified)**
+Days [24](#day-24---friday-october-30-2026---kyoto-to-hiroshima)-[26](#day-26---sunday-november-1-2026---hiroshima-city-day), 3 nights, ¥15,000/night.
+Free breakfast, chain standard. About five minutes from Hiroshima Station, which matters
+on the arrival and departure days and for the Miyajima ferry run.
+
+#### Toyoko Inn Osaka Namba
+**Namba area (specific branch address unverified)**
+Days [27](#day-27---monday-november-2-2026---hiroshima-to-osaka)-[29](#day-29---wednesday-november-4-2026---osaka), 3 nights, ¥13,000/night, the cheapest of the six.
+Free breakfast. Namba puts the party inside walking distance of Dotonbori, Kuromon
+Ichiba and Den Den Town, and on the Nankai line for the airport run on Day [30](#day-30---thursday-november-5-2026---osaka---kansai-airport-kix).
+
+### What to confirm before paying
+
+1. **All six rates.** None of these is a quote. Booking engines returned no date-stamped 2026 availability, so every figure is a current rate adjusted for occupancy and shoulder season.
+2. **Four of the six street addresses**, marked unverified above, are identified by station proximity. Confirm on the operator's own site.
+3. **The infant co-sleeping allowance, in writing, at all six.**
+4. **The ryokan's room configuration and infant charges**, by phone.
+
+---
+
+## Appendix E: Advance booking
 
 Party: 3 adults + 2 infants (~12mo, ~20mo). Trip: 7 Oct - 5 Nov 2026. FX ¥155 = $1.
 This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 8, 10,
@@ -4284,7 +4374,7 @@ This replaces Appendix A in 99-appendix.md, which was written before the Day 4, 
 
 ---
 
-## Appendix D: Shopping lists and supply runs
+## Appendix F: Shopping lists and supply runs
 
 *Party: 3 adults + 2 infants (Infant A, ~12mo, formula + purees; Infant B, ~20mo, mostly table
 food). FX: ¥155 = $1, rounded to the nearest ¥10 / $1. This appendix covers grocery,
@@ -4757,7 +4847,7 @@ otherwise spell out.*
 
 ---
 
-## Appendix E: Open decisions
+## Appendix G: Open decisions
 
 Everything in this report that is not settled. Four kinds: decisions only the
 travellers can make, deadlines, things to re-verify nearer the date, and requests
@@ -4841,7 +4931,7 @@ Phone calls and bookings are listed in the advance-booking part.
 
 ---
 
-## Appendix F: Japan with a 12-month-old and a 20-month-old
+## Appendix H: Japan with a 12-month-old and a 20-month-old
 
 **What is free.** Both children ride free on JR including shinkansen, on the Tokyo Metro
 and Toei, Osaka Metro, Kyoto city buses, and the Miyajima ferry. Under-sixes are free at
@@ -4891,7 +4981,7 @@ with what it is and why it runs long, and each still contains its rest block. If
 is going badly, the honest response is to drop its last activity rather than push
 through; the day notes name the item to cut where there is an obvious one.
 
-## Appendix G: How 2,000 calories a day actually gets bought
+## Appendix I: How 2,000 calories a day actually gets bought
 
 Each adult day sums to 1,950-2,100 kcal across the meal rows, built from four levers:
 
@@ -4904,7 +4994,7 @@ The trip is not planned to eat like this every day. Osaka's last full day, the H
 okonomiyaki night and several Kyoto dinners are deliberately restaurant meals. The
 self-catering floor is what buys them.
 
-## Appendix H: Confidence and sources
+## Appendix J: Confidence and sources
 
 **Verified against live sources:** exchange rate, typhoon seasonality, 2026 koyo
 forecast dates, Japanese public holidays, Golden Week and Obon and Silver Week dates,

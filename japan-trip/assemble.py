@@ -96,7 +96,9 @@ body += ["", "---", "", "# Appendices", "",
          "something by subject rather than by date.", "",
          "---", "", "## Appendix A: Topic index", "",
          demote((ROOT / "topic-index.md").read_text(), 1), "",
-         "---", "", "## Appendix B: The five places", "",
+         "---", "", "## Appendix B: Food index", "",
+         demote((ROOT / "food-index.md").read_text(), 1), "",
+         "---", "", "## Appendix C: The five places", "",
          "Five stops in thirty days. Each profile says what the place is, what walking",
          "around it feels like, and how it differs from the other four."]
 
@@ -106,18 +108,19 @@ for f in ["tokyo.md", "kawaguchiko.md", "kyoto.md", "hiroshima.md", "osaka.md"]:
     heading = m.group(1) if m else f
     body += ["", "### " + heading, "", demote(txt, 2)]
 
-for letter, name, fn in [("C", "Advance booking", "advance-booking.md"),
-                         ("D", "Shopping lists and supply runs", "shopping-lists.md"),
-                         ("E", "Open decisions", "open-decisions.md")]:
+for letter, name, fn in [("D", "Hotels and lodging", "hotels.md"),
+                         ("E", "Advance booking", "advance-booking.md"),
+                         ("F", "Shopping lists and supply runs", "shopping-lists.md"),
+                         ("G", "Open decisions", "open-decisions.md")]:
     body += ["", "---", "", f"## Appendix {letter}: {name}", "",
              demote((ROOT / fn).read_text(), 1)]
 
 app = (ROOT / "99-appendix.md").read_text()
-for old, new in [(r"^##\s*Appendix B\..*$", "## Appendix F: Japan with a 12-month-old and a 20-month-old"),
-                 (r"^##\s*Appendix C\..*$", "## Appendix G: How 2,000 calories a day actually gets bought"),
-                 (r"^##\s*Appendix D\..*$", "## Appendix H: Confidence and sources")]:
-    app = re.sub(old, new, app, flags=re.M)
-m = re.search(r"^## Appendix F:", app, re.M)
+for old, new_h in [(r"^##\s*Appendix B\..*$", "## Appendix H: Japan with a 12-month-old and a 20-month-old"),
+                   (r"^##\s*Appendix C\..*$", "## Appendix I: How 2,000 calories a day actually gets bought"),
+                   (r"^##\s*Appendix D\..*$", "## Appendix J: Confidence and sources")]:
+    app = re.sub(old, new_h, app, flags=re.M)
+m = re.search(r"^## Appendix H:", app, re.M)
 body += ["", "---", "", app[m.start():].strip()]
 
 doc = "\n".join(body)
@@ -160,8 +163,92 @@ def link_day_cell(m):
         return m.group(0)
     return head + ", ".join(f"[{p}](#{day_anchor[int(p)]})" for p in parts) + tail
 
+# Build a name -> topic-section-anchor map from the topic and food indexes.
+def norm(t):
+    t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)      # unwrap existing links
+    t = re.sub(r"[*`]", "", t)
+    t = re.sub(r"\([^)]*\)", "", t)                       # drop parentheticals
+    t = re.sub(r"[^\w\s]", " ", t.lower())
+    return re.sub(r"\s+", " ", t).strip()
+
+topic_of = {}
+a_start = doc.index("## Appendix A: Topic index")
+a_end = doc.index("## Appendix C: The five places")
+cur_anchor = None
+for line in doc[a_start:a_end].split("\n"):
+    hm = re.match(r"^(#{3,4})\s+(.*)$", line)
+    if hm:
+        cur_anchor = anchors.get(hm.group(2).strip())
+        continue
+    if cur_anchor and line.startswith("|"):
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) >= 2 and cells[0].lower() not in ("what", "") and not set(cells[0]) <= set("-: "):
+            k = norm(cells[0])
+            if len(k) > 2:
+                topic_of.setdefault(k, cur_anchor)
+
+ALIAS = {
+    "shibuya scramble crossing hachiko statue": "shibuya scramble crossing and hachiko statue",
+    "kawaguchiko tenjozan panoramic ropeway": "mt kachi kachi ropeway",
+    "kobo ichi temple market to ji": "kobo ichi to ji",
+    "togetsukyo bridge riverside": "togetsukyo bridge and riverside",
+    "higashiyama lanes": "sannenzaka and ninenzaka",
+    "nishijin textile center hands on weaving kimono show": "nishijin hand loom weaving",
+    "kimono rental for the day": "kimono rental worn for the day",
+    "peace memorial park atomic bomb dome": "peace memorial park and the atomic bomb dome exterior",
+    "atomic bomb dome riverside": "atomic bomb dome exterior",
+}
+
+def lookup(name):
+    """Match a day's activity name to a topic section, tolerating name variants."""
+    k = norm(name)
+    if k in topic_of:
+        return topic_of[k]
+    if k in ALIAS and ALIAS[k] in topic_of:
+        return topic_of[ALIAS[k]]
+    # try the leading fragment before a separator: "Shukkei-en garden", "Senso-ji + Nakamise-dori"
+    for sep in (" + ", " - ", ": ", ", ", " ("):
+        if sep.strip() and sep in name:
+            frag = norm(name.split(sep)[0])
+            if frag in topic_of:
+                return topic_of[frag]
+    # an index entry that is a prefix of this name, longest first
+    cands = [key for key in topic_of if k.startswith(key + " ") or key.startswith(k + " ")]
+    if cands:
+        return topic_of[max(cands, key=len)]
+    # an index entry wholly contained in this name, longest first
+    cands = [key for key in topic_of if len(key) > 6 and key in k]
+    if cands:
+        return topic_of[max(cands, key=len)]
+    return None
+
+# Apply to every Activities table in Part II.
+ACT_HDR = "| Activity | Duration | Adult (¥) | Party (¥) | Location | Details |"
+out_lines, in_act = [], False
+p2_start = doc.index("# Part II: The daily itinerary")
+p2_end = doc.index("# Appendices")
+head, mid, tail = doc[:p2_start], doc[p2_start:p2_end], doc[p2_end:]
+linked = 0
+for line in mid.split("\n"):
+    if line.strip() == ACT_HDR:
+        in_act = True; out_lines.append(line); continue
+    if in_act:
+        if not line.startswith("|"):
+            in_act = False; out_lines.append(line); continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if set(cells[0]) <= set("-: ") or "](#" in cells[0]:
+            out_lines.append(line); continue
+        a = lookup(cells[0])
+        if a:
+            cells[0] = f"[{cells[0]}](#{a})"
+            linked += 1
+            out_lines.append("| " + " | ".join(cells) + " |"); continue
+    out_lines.append(line)
+doc = head + "\n".join(out_lines) + tail
+print(f"activity rows linked to topic sections: {linked}")
+
 start = doc.index("## Appendix A: Topic index")
-end = doc.index("## Appendix B: The five places")
+end = doc.index("## Appendix C: The five places")
 section = re.sub(r"(\|\s)([\d,\s/]+?)(\s\|)", link_day_cell, doc[start:end])
 doc = doc[:start] + section + doc[end:]
 

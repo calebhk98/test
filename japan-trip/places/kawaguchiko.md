@@ -1,9 +1,6 @@
 # Kawaguchiko and the Fuji Five Lakes
 
-Covers Days 11-13 (Oct 17-19, 2026), 3 nights at K's House Mt. Fuji. Cross-check against
-`/home/user/test/japan-trip/days/days-11-14-fuji-transfer.md` and `MASTER-BRIEF.md`.
-
----
+Covers Days @@DAYLINK:11@@-@@DAYLINK:13@@ (17-19 October 2026), at K's House Mt. Fuji for two nights and a lakeside ryokan for the third.
 
 The Fuji Five Lakes (Fujigoko) is a resort and lake district strung along the north base
 of Mt. Fuji in Yamanashi prefecture, at roughly 830-900m elevation, about 100km west of

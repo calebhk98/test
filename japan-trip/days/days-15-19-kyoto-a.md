@@ -269,7 +269,7 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 
 **Base:** Kyoto  
 **Weather (typical):** 22/14 °C, dry  
-**Theme:** Kiyomizu-dera and the Higashiyama lanes in kimono, evening in Gion
+**Theme:** Kiyomizu-dera and the Higashiyama lanes, evening in Gion
 
 ### Schedule
 
@@ -278,12 +278,10 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 | 07:30 | 0h45 | Food | Breakfast - Toyoko Inn buffet |
 | 08:15 | 0h15 | Transit | Walk to Shijo-Omiya bus stop |
 | 08:30 | 0h25 | Transit | City bus - Shijo-Omiya → Kiyomizu-michi |
-| 08:55 | 0h40 | Activity | Kimono/yukata rental + dressing, Higashiyama lanes shop |
 | 09:35 | 0h15 | Activity | Walk up Sannenzaka/Ninenzaka toward Kiyomizu-dera |
 | 09:50 | 0h45 | Activity | Kiyomizu-dera - main hall and grounds |
-| 10:35 | 0h40 | Activity | Walk back down through the lanes, photos in kimono |
+| 10:35 | 0h40 | Activity | Walk back down through the Higashiyama lanes |
 | 11:15 | 0h40 | Food | Lunch - soba + a matcha treat, Higashiyama lanes |
-| 11:55 | 0h20 | Admin | Return kimono, change back at the shop |
 | 12:15 | 0h15 | Transit | Walk to Maruyama Park |
 | 12:30 | 1h45 | Rest | Midday rest - Maruyama Park, shaded corner |
 | 14:15 | 0h15 | Transit | Walk to Gion |
@@ -297,7 +295,7 @@ Infants ride free on Hankyu and JR. The Torokko scenic-train fare is listed unde
 | 17:15 | 0h25 | Transit | City bus - Shijo-Kawaramachi → Shijo-Omiya |
 
 - The party is back at the hotel by about 17:40, comfortably ahead of this trip's ~19:00-19:30 infant bedtime.
-- Active out-of-lodging time: about 7h40 (4h15 before the rest block, 3h25 after), plus a 1h45 rest block. This runs about 40 minutes over the ~7h guideline - a full day of kimono dressing, Kiyomizu-dera, and an evening loop through Gion and Pontocho.
+- Active out-of-lodging time: about 6h20 (4h15 before the rest block, 2h05 after), plus a 1h45 rest block.
 - **Pontocho note:** the alley is only about 2-3m wide and fills with evening foot traffic - carrier, not stroller, the same call already made for Nishiki Market. This is a walk-through only, not a meal: Pontocho's restaurants range ¥2,000-25,000/person and the most exclusive genuinely refuse first-time and foreign walk-in customers (ichigen-san okotowari, a real local custom, not a rumor), so the honest move is the free lantern-lit walk, with dinner already covered by tonight's Gion obanzai meal.
 - The rental shop holds the stroller during dressing; the three adults dress in shifts so one is always free with the infants and carrier.
 
@@ -334,7 +332,6 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Kimono/yukata rental | 0h40 | 6,300 | 18,900 | Higashiyama lanes, Higashiyama-ku, near the Kiyomizu-michi bus stop (chain-style rental shop; specific branch unverified) | A standard tourist rental: a full kimono or yukata, obi sash, and accessories, dressed by shop staff (dressing alone takes most of the 30-40 min), kept for the day and returned before dinner. Why bother: it's the easiest way to get a genuinely nice photo set against Kiyomizu-dera's lanes, and it's normal enough here that no one looks twice at tourists in rental kimono. The shop holds the stroller and bags during dressing; walking in kimono is shorter-stepped and the sandals are unfamiliar, so budget slower pace on the stone lanes afterward. |
 | Kiyomizu-dera | 0h45 | 500 | 1,500 | 1-294 Kiyomizu, Higashiyama-ku, Kyoto 605-0862 | Founded in 778 ("Pure Water Temple," named for a waterfall on the grounds); the current main hall dates to a 1633 rebuild. Its famous wooden stage (butai) juts 13m out over the hillside on a lattice of cypress pillars, assembled with a traditional joinery technique using no nails - built that way to give worshippers an unobstructed platform for ceremonies, and the height later gave rise to the Edo-period saying "jumping off the stage of Kiyomizu," a real (now-banned) practice of leaping off to make a wish. The stage view over the wooded hillside and city beyond is genuinely one of Kyoto's best, and it's a UNESCO World Heritage site. Crowded almost any hour; the approach lanes and temple grounds are gravel and worn stone, uneven in places - manageable with the stroller on the main paths but expect to fold it for the steepest stretches. |
 | Higashiyama lanes (Sannenzaka/Ninenzaka) | - | 0 | 0 | Sannenzaka and Ninenzaka slopes, Higashiyama-ku, near the Kiyomizu-michi bus stop (address unverified) | Two connected stone-paved lanes leading up to Kiyomizu-dera, lined with preserved wooden shopfronts, teahouses, and souvenir stores - the closest thing to a preserved Edo-period streetscape in central Kyoto. Free to walk and genuinely atmospheric, especially with fewer crowds early or late. The paving is old, uneven flagstone on a slope: hard going for a stroller, easier carried or walked slowly by hand. |
 | Gion district walk | 0h30 | 0 | 0 | Hanamikoji-dori, Gion, Higashiyama-ku, near Gion-Shijo Stn (Keihan) (address unverified) | Kyoto's most famous geiko (Kyoto's word for geisha) and maiko (apprentice) district, a working entertainment quarter since the Edo period, not a recreation. The wooden buildings lining Hanamikoji-dori are machiya - traditional Kyoto townhouses with a narrow shopfront facing the street and rooms running back in a long strip behind it, built narrow because property tax was historically assessed by street frontage. Since 2019, and tightened further in 2024, several of Gion's private side-lanes are off-limits to tourist photography, with real fines (reported up to ¥10,000) for photographing geiko or maiko there without consent, after years of tourists chasing and grabbing at them - stick to the main street and don't photograph anyone in kimono without asking. Flat and stroller-fine; the real geiko/maiko traffic happens after dark, past infant bedtime, so a daytime walk trades some authenticity for practicality. |
@@ -348,8 +345,8 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | Lodging | 19,000 | 123 |
 | Food | 7,800 | 50 |
 | Transport | 2,070 | 13 |
-| Activities | 20,400 | 132 |
-| **Day total** | **49,270** | **318** |
+| Activities | 1,500 | 10 |
+| **Day total** | **30,370** | **196** |
 
 **Running total (Kyoto A segment) after Day 18: ¥146,900 ($948)**
 
@@ -473,7 +470,7 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Lodging | 95,000 | 613 |
 | Food | 42,350 | 273 |
 | Transport | 16,090 | 104 |
-| Activities | 38,040 | 245 |
-| **Segment total** | **191,480** | **1,235** |
+| Activities | 19,140 | 123 |
+| **Segment total** | **172,580** | **1,113** |
 
-Envelope check: Food ¥42,350 vs ¥37,000 target (+14.5%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥38,040 vs ¥38,000 target (+0.1%): both new markets are free to enter, and Ryoan-ji's ¥1,800 admission is priced in. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
+Envelope check: Food ¥42,350 vs ¥37,000 target (+14.5%, over the ±5% band). This is the direct cost of the two temple-market additions plus honest hangaku timing: Day 15's lunch is a ¥5,400 yatai spread at Kobo-ichi, Day 19's lunch is a ¥3,600 yatai spread at Tenjin-ichi, and Day 19's dinner is a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run timed so it can actually happen - real spend, not padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), and Day 16 costs in the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real legs, both now costed at +¥1,890 combined. Activities ¥19,140 vs ¥38,000 target (-49.6%, well under): both markets are free to enter, Ryoan-ji's ¥1,800 admission is priced in, and the kimono rental now happens once, on Day 23, rather than on this segment as well. Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Food and Transport both sit outside their target band; both are the honest cost of transit legs and dinner timing on a segment that also keeps its two genuine festival markets and its rock garden.
