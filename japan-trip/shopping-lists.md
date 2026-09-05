@@ -1,17 +1,14 @@
 # Shopping List Appendix - 30-Day Japan Itinerary
 
-*Party: 3 adults + 2 infants (Infant A, ~12mo, formula + purees; Infant B, ~20mo, mostly table
-food). FX: ¥155 = $1, rounded to the nearest ¥10 / $1. This appendix covers grocery,
-drugstore and convenience-store shopping only - restaurant meals, konbini snacks and the
-hangaku-priced deli dinners already itemized day-by-day in the six day files are not
-re-listed here; they are referenced in the strategy notes so the two documents don't
-appear to disagree.*
+*Party: 3 adults + 2 infants (Infant A, ~12 months, formula and purees; Infant B, ~20 months,
+mostly table food). FX ¥155 = $1, rounded to the nearest ¥10 and $1.*
 
-Prices are 2026 planning estimates unless marked. Store chains and neighbourhoods
-are named from a web search done for this appendix; an exact branch is named only where a
-specific listing was found, otherwise the chain and neighbourhood are given with "branch to
-confirm." No street address is invented anywhere below - where a source gave one, it is
-quoted; where it didn't, the day file's own "address unverified" language is carried over.
+This covers grocery, drugstore and convenience-store shopping. Restaurant and konbini meals
+are priced on their own days and are not repeated here.
+
+Two conventions apply throughout. Prices are 2026 planning estimates, not quotes. An exact
+branch is named only where a specific listing was found; otherwise the chain and neighbourhood
+are given with "branch to confirm", and no street address is invented.
 
 ---
 
