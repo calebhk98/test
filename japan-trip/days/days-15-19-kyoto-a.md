@@ -18,18 +18,21 @@
 | 08:55 | 0h10 | Transit | JR Nara Line - Kyoto → Inari (1 stop) |
 | 09:05 | 0h15 | Activity | Approach street - first torii, omamori stall browse |
 | 09:20 | 1h40 | Activity | Fushimi Inari Taisha - Senbon Torii tunnel loop to the Yotsutsuji lookout and back |
-| 11:00 | 0h40 | Food | Lunch - inari-zushi shop on the approach street |
-| 11:40 | 0h10 | Transit | JR Nara Line - Inari → Kyoto |
-| 11:50 | 0h20 | Transit | City bus - Kyoto Station → Shijo-Omiya |
-| 12:10 | 1h50 | Rest | Midday rest - hotel room, both infants nap |
-| 14:00 | 0h30 | Transit | Walk - Shijo-Omiya → Nishiki Market |
-| 14:30 | 2h00 | Activity | Nishiki Market - food-stall browsing, tastings, Daimaru depachika basement |
-| 16:30 | 0h30 | Transit | Walk back to hotel |
-| 17:00 | 1h00 | Rest | Downtime at hotel |
-| 18:00 | 0h45 | Food | Dinner - Nishiki/depachika finds, eaten in the room |
+| 11:00 | 0h10 | Transit | JR Nara Line - Inari → Kyoto |
+| 11:10 | 0h15 | Transit | Walk - Kyoto Station → To-ji |
+| 11:25 | 0h55 | Food/Activity | Kobo-ichi temple market at To-ji - browse the stalls, lunch from the yatai food stalls |
+| 12:20 | 0h15 | Transit | Walk - To-ji → Kyoto Station |
+| 12:35 | 0h20 | Transit | City bus - Kyoto Station → Shijo-Omiya |
+| 12:55 | 1h40 | Rest | Midday rest - hotel room, both infants nap |
+| 14:35 | 0h30 | Transit | Walk - Shijo-Omiya → Nishiki Market |
+| 15:05 | 1h20 | Activity | Nishiki Market - food-stall browsing, tastings, Daimaru depachika basement |
+| 16:25 | 0h30 | Transit | Walk back to hotel |
+| 16:55 | 1h00 | Rest | Downtime at hotel |
+| 17:55 | 0h45 | Food | Dinner - Nishiki/depachika finds, eaten in the room |
 
-- **Fushimi Inari note:** the Senbon Torii loop to the Yotsutsuji lookout is paved and stroller-workable. The full summit circuit (another 1.5-2h beyond Yotsutsuji) is stairs the whole way and is **carrier-only** - skipped today with two infants.
-- Active out-of-lodging time: ~6h55. Midday rest 1h50 satisfies the mandatory block.
+- **Fushimi Inari note:** the Senbon Torii loop to the Yotsutsuji lookout is paved and stroller-workable. The full summit circuit (another 1.5-2h beyond Yotsutsuji) is stairs the whole way and is **carrier-only** - skipped today with two infants. Anime-fan bonus, free: this shrine and the surrounding Fushimi district are the real-world setting of *Inari, Konkon, Koi Iroha*, an anime about a girl who lives beside the shrine - worth a mention while walking the Senbon Torii, no detour needed.
+- **Kobo-ichi fit-check, stated honestly:** To-ji's monthly market falls on the 21st every month, which is today, and it sits a 15-minute walk south of Kyoto Station - directly on the JR-to-bus transfer this day already makes on the way back from Fushimi Inari. Swapping the inari-zushi shop lunch for a market lunch adds about 40 minutes net to the pre-rest stretch of the day (walk to the temple, browse, eat, walk back), which would push the day past this itinerary's ~7h active cap if nothing else moved. **What gives: Nishiki Market's evening browse is trimmed from 2h00 to 1h20.** The family will already have had a full stall-food lunch and market browse at To-ji by then, so a shorter Nishiki visit (still enough for a look at Daimaru's depachika and a stall or two for dinner ingredients) is the honest trade, not a loss - it keeps the day at ~7h00 active, right at the cap rather than over it.
+- Active out-of-lodging time: ~7h00 (4h40 before the rest block, 2h20 after). Midday rest 1h40 satisfies the mandatory block (at the low end of the 1h30-2h00 range, since the market visit borrowed time from it).
 
 ### Lodging
 
@@ -43,11 +46,11 @@
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Inari-zushi (fried tofu pouches stuffed with vinegared rice, the dish named for the shrine's fox deity) plus a bowl of kake soba | Shop on the approach street, Fushimi-ku, near Fushimi Inari Taisha (shop name unverified) | 700 | 1,800 |
+| Lunch | Yatai lunch from Kobo-ichi's food stalls: a plate of yakisoba (fried noodles with pork and cabbage), a grilled squid skewer (ika-yaki), and a taiyaki (fish-shaped waffle cake, red-bean filling) each | To-ji temple grounds, 1 Kujocho, Minami-ku, Kyoto 601-8473 | 750 | 5,400 |
 | Dinner | Nishiki Market stall food - a tamagoyaki (rolled omelette) skewer, yatsuhashi cinnamon-mochi sweets, grilled dashi-rolled skewers, pickles - plus a bento top-up from Daimaru's depachika basement, eaten back at the hotel | Nishiki Market / Daimaru Kyoto basement, Nakagyo-ku | 800 | 3,600 |
-| Infant food | Wakodo Rakuraku stage-2 formula tin for the 12-month-old plus 2 Wakodo/Pigeon vegetable-and-fish pouches; the 20-month-old eats rice, soft tofu, and small pieces of tamagoyaki off the family's Nishiki Market spread | Gyomu Super or drugstore near Shijo-Omiya | n/a | 2,300 |
+| Infant food | Wakodo Rakuraku stage-2 formula tin for the 12-month-old plus 2 Wakodo/Pigeon vegetable-and-fish pouches; the 20-month-old eats rice, soft tofu, and small pieces of taiyaki (bean paste scraped off) off the family's To-ji and Nishiki Market spread | Gyomu Super or drugstore near Shijo-Omiya | n/a | 2,300 |
 
-Adult kcal: 500 + 700 + 800 = **2,000/adult**.
+Adult kcal: 500 + 750 + 800 = **2,050/adult**.
 
 ### Transport
 
@@ -58,25 +61,26 @@ Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 | Inari → Kyoto Station | JR Nara Line | 0h10 | 150 | 450 |
 | Kyoto Station → Shijo-Omiya | City bus | 0h20 | 230 | 690 |
 
-Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/from Nishiki Market are on foot, ¥0.
+Infants ride free on JR and city buses. Party cost = adult fare x 3. Walks to/from To-ji and Nishiki Market are on foot, ¥0.
 
 ### Activities
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Fushimi Inari Taisha | 1h55 | 0 | 0 | 68 Fukakusa Yabunouchicho, Fushimi-ku, Kyoto 612-0882 | A Shinto shrine to Inari, god of rice and prosperity, famous for the Senbon Torii - thousands of vermilion gates forming a tunnel up the mountainside. Each gate was privately paid for by a business or individual as a thank-offering and carries the donor's name and date; a small one still costs several hundred thousand yen today, which is why the tunnel keeps growing. Free and open 24 hours, so arriving before 9:00 buys near-empty photos before the tour buses land; by mid-morning the lower gates are a slow shuffle of people. The paved loop to the Yotsutsuji lookout is stroller-workable, but the mountain turns to stone steps the rest of the way to the summit - carrier-only beyond that point, which is why today stops at Yotsutsuji. |
+| Fushimi Inari Taisha | 1h55 | 0 | 0 | 68 Fukakusa Yabunouchicho, Fushimi-ku, Kyoto 612-0882 | A Shinto shrine to Inari, god of rice and prosperity, famous for the Senbon Torii - thousands of vermilion gates forming a tunnel up the mountainside. Each gate was privately paid for by a business or individual as a thank-offering and carries the donor's name and date; a small one still costs several hundred thousand yen today, which is why the tunnel keeps growing. Free and open 24 hours, so arriving before 9:00 buys near-empty photos before the tour buses land; by mid-morning the lower gates are a slow shuffle of people. The paved loop to the Yotsutsuji lookout is stroller-workable, but the mountain turns to stone steps the rest of the way to the summit - carrier-only beyond that point, which is why today stops at Yotsutsuji. Anime-fan note, free: this shrine and its surrounding Fushimi neighbourhood are the real-world setting of *Inari, Konkon, Koi Iroha*, about a girl who lives beside the shrine. |
 | Omamori charms + goshuincho stamp | - | ~500 | 1,500 | Fushimi Inari Taisha stalls, Fushimi-ku, near JR Inari Station (address unverified) | Omamori are small charms sold at shrine and temple stalls, each blessed for one specific wish - safe travel, health, good luck. A goshuincho is a blank accordion-fold book carried between sites to collect goshuin, a priest's or monk's hand-brushed calligraphy stamp marking the visit, traditionally a pilgrim's record rather than a tourist souvenir. A five-minute stall stop, not a destination in itself. |
-| Nishiki Market | 2h00 | 0 | 0 | Nishikikoji-dori, Nakagyo-ku, Kyoto 604-8054 | A roughly 400m covered shopping arcade of about 130 shops, trading continuously since the Edo period as "Kyoto's Kitchen" - fresh seafood, pickles (tsukemono), knives, tea, and skewered street snacks side by side. Free to walk, and the single best way to taste a range of Kyoto specialties without a sit-down meal; several stalls now post "eat here, not while walking" signs after complaints about congestion, so budget standing time at each stop rather than a moving snack crawl. The covered, flat floor is stroller-workable, but the arcade is narrow and can be shoulder-to-shoulder at midday and on weekends. |
+| Kobo-ichi temple market, To-ji | 0h55 | 0 | 0 | To-ji, 1 Kujocho, Minami-ku, Kyoto 601-8473 (nearest station Kyoto, about 15 min walk south) | A monthly temple market: a flea-and-food market held on a fixed date tied to a temple's history, running unbroken for generations rather than staged for tourists. Kobo-ichi falls on the 21st of every month, marking the death anniversary of Kobo Daishi (Kukai), the priest who founded Shingon Buddhism and is enshrined here. Roughly 1,000 stalls spread across the temple's open grounds beneath its five-story pagoda, selling antiques, vintage kimono, ceramics, and plants alongside genuine street food (taiyaki, yakisoba, grilled squid) - this is where Kyoto locals actually shop, and the most reliable place on this whole itinerary to eat from a stall rather than a restaurant. Free to enter, published hours roughly 8:30-17:30. The temple's main paths are open gravel and stroller-workable, but the market itself is a dense press of tarps and tables in narrow rows between stalls - fine on the wide approach, tight and slow once inside the stalls, so the carrier is the safer call there, the same logic already applied to Nishiki Market below. |
+| Nishiki Market | 1h20 | 0 | 0 | Nishikikoji-dori, Nakagyo-ku, Kyoto 604-8054 | A roughly 400m covered shopping arcade of about 130 shops, trading continuously since the Edo period as "Kyoto's Kitchen" - fresh seafood, pickles (tsukemono), knives, tea, and skewered street snacks side by side. Free to walk, and the single best way to taste a range of Kyoto specialties without a sit-down meal; several stalls now post "eat here, not while walking" signs after complaints about congestion, so budget standing time at each stop rather than a moving snack crawl. Trimmed to 1h20 today since the family has already had a full stall-food lunch and market browse at To-ji this morning - still enough time for Daimaru's depachika basement and a stall or two for dinner. The covered, flat floor is stroller-workable, but the arcade is narrow and can be shoulder-to-shoulder at midday and on weekends. |
 
 ### Day 15 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 19,000 | 123 |
-| Food | 7,700 | 50 |
+| Food | 11,300 | 73 |
 | Transport | 2,280 | 15 |
 | Activities | 1,500 | 10 |
-| **Day total** | **30,480** | **197** |
+| **Day total** | **34,080** | **220** |
 
 **Running total (Kyoto A segment) after Day 15: ¥30,480 ($197)**
 
@@ -148,7 +152,7 @@ Infants ride free on the subway and Hankyu legs. The evening leg is a taxi (flat
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Jidai Matsuri - free street viewing | 1h30 | 0 | 0 | Kyoto Gyoen (the park, not the walled Gosho), Kamigyo-ku, Kyoto 602-0881 | "Festival of the Ages," one of Kyoto's three great annual festivals, established in 1895 alongside Heian Jingu itself. About 2,000 participants march in accurate historical costume spanning Kyoto's 1,000+ years as capital, in reverse chronological order, processing from the Imperial Palace area to Heian Jingu. Free to watch from the roadside; no grandstand ticket bought (¥4,500-6,500/adult, skipped). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. |
+| Jidai Matsuri - free street viewing | 1h30 | 0 | 0 | Kyoto Gyoen (the park, not the walled Gosho), Kamigyo-ku, Kyoto 602-0881 | "Festival of the Ages," one of Kyoto's three great annual festivals, established in 1895 alongside Heian Jingu itself. About 2,000 participants march in accurate historical costume spanning Kyoto's 1,000+ years as capital, in reverse chronological order, processing from the Imperial Palace area to Heian Jingu. Listen as well as look: two phoenix-crested mikoshi (portable shrines) near the procession's end are accompanied by gagaku, Japan's ancient court music, played on instruments largely unchanged since the Heian period - free to hear from the roadside, no extra stop needed. Free to watch from the roadside; no grandstand ticket bought (¥4,500-6,500/adult, skipped). Gyoen's paths are wide, flat, and gravel/paved - far more stroller space and far less curb congestion than the narrower downtown stretch of the route. |
 | Heian Jingu Shin-en Garden | 0h35 | 600 | 1,800 | 97 Okazaki Nishitennocho, Sakyo-ku, Kyoto 606-8341 | Heian Jingu itself is younger than it looks: built in 1895, a roughly 5/8-scale replica of the original 8th-century Imperial Palace's main ceremonial hall, raised to mark the 1100th anniversary of Kyoto's founding as capital - the shrine grounds and its huge orange torii are free to enter. The Shin-en behind it is a separate paid strolling pond garden, added later, and is genuinely quiet at this hour since the parade crowd has already moved on toward the shrine. Paths are gravel with a few stepping-stone crossings over the pond - carrier is easier than stroller at those crossings, otherwise flat. |
 | Philosopher's Path | 0h50 | 0 | 0 | Tetsugaku-no-michi, Sakyo-ku, Nanzenji → Eikan-do stretch, near Keage Stn (Tozai Line) (address unverified) | A roughly 2km stone path along a canal between Nanzenji and Ginkaku-ji, named for 20th-century Kyoto University philosopher Nishida Kitaro, who reportedly walked it daily for meditation. Free, flat, and quiet compared to the temple crowds - best known for its cherry-tree canopy (not in season here); late-Oct color is only just starting to turn at the canal's edge, still mostly green. |
 
@@ -338,7 +342,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 
 **Base:** Kyoto
 **Weather (typical):** 23/15 °C, dry
-**Theme:** Kyoto Gosho, Nijo Castle, Kinkaku-ji and the Ryoan-ji rock garden
+**Theme:** Kyoto Gosho, Nijo Castle, Kinkaku-ji and the Tenjin-ichi temple market at Kitano Tenmangu
 
 ### Schedule
 
@@ -353,17 +357,16 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 09:55 | 1h15 | Activity | Nijo Castle - grounds, gardens, Ninomaru Palace |
 | 11:10 | 0h25 | Transit | Raku city bus - Nijo Castle → Kinkaku-ji-michi |
 | 11:35 | 0h40 | Activity | Kinkaku-ji - Golden Pavilion grounds walk |
-| 12:15 | 0h15 | Transit | City bus - Kinkaku-ji-michi → Ryoan-ji-mae (2 stops) |
-| 12:30 | 0h40 | Activity | Ryoan-ji - dry rock garden (karesansui) |
-| 13:10 | 0h40 | Food | Lunch - udon near Ryoan-ji/Kinkaku-ji |
-| 13:50 | 0h30 | Transit | City bus back to the hotel |
-| 14:20 | 1h45 | Rest | Midday rest - hotel |
-| 16:05 | 1h00 | Rest | Downtime at hotel |
-| 17:05 | 0h40 | Food | Dinner - hangaku-discounted bento, timed near closing for the markdown |
+| 12:15 | 0h15 | Transit | City bus - Kinkaku-ji-michi → Kitano Tenmangu-mae |
+| 12:30 | 1h00 | Food/Activity | Tenjin-ichi temple market at Kitano Tenmangu - browse the stalls, lunch from the yatai food stalls |
+| 13:30 | 0h30 | Transit | City bus - Kitano Tenmangu-mae → Shijo-Omiya |
+| 14:00 | 1h45 | Rest | Midday rest - hotel |
+| 15:45 | 1h00 | Rest | Downtime at hotel |
+| 16:45 | 0h40 | Food | Dinner - hangaku-discounted bento, timed near closing for the markdown |
 
 - **Imperial Palace note:** this segment already distinguished Kyoto Gyoen (the public park, visited on Day 16 for Jidai Matsuri viewing) from the Kyoto Imperial Palace/Gosho itself (the walled compound inside that park) - see Day 16's Activities table. The Gosho is toured today instead, since Jidai Matsuri day was already full: free entry, no reservation, self-guided walk-in 9:00-16:20 (closed Mondays), folded into the same subway route already used to reach Nijo Castle.
-- **Depachika swap:** the second Daimaru depachika browse originally slated for this afternoon repeated Day 15's Nishiki Market/Daimaru visit with nothing new to offer. It's replaced with Ryoan-ji, Japan's most famous dry rock garden, reached by the same bus loop already used to get to Kinkaku-ji.
-- Active out-of-lodging time: ~6h05, all in one continuous morning-into-early-afternoon outing before the rest block; downtime and dinner both stay at the hotel afterward.
+- **Ryoan-ji swapped for Tenjin-ichi:** Kitano Tenmangu's monthly market falls on the 25th of every month, which is today, and the shrine sits about 2km from Kinkaku-ji - reachable on the same city bus network already carrying the day between stops, in place of the 2-stop hop to Ryoan-ji. Ryoan-ji's dry rock garden is a quiet, contemplative stop that asks a lot of two toddlers right after Kinkaku-ji; a bustling food market is the better fit for this age group, and it folds in today's lunch rather than sitting alongside a separate udon stop. This also drops the original depachika-repeat problem a different way: no second Nishiki-style browse is needed today at all. Ryoan-ji itself is dropped from this segment; if the family wants to see it, it would need a return visit on a later Kyoto day.
+- Active out-of-lodging time: ~5h45, slightly less than the original day despite the market add, all in one continuous morning-into-early-afternoon outing before the rest block; downtime and dinner both stay at the hotel afterward.
 - Last day of this stretch - Day 20 continues the Kyoto stay under a separate itinerary segment.
 
 ### Lodging
@@ -378,7 +381,7 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
-| Lunch | Marugame Seimen udon - kake udon plus a chicken tempura and a rice ball | Near Kinkaku-ji/Ryoan-ji, Kita-ku | 700 | 1,150 |
+| Lunch | Yatai lunch from Tenjin-ichi's food stalls: takoyaki (octopus dumplings), a warabimochi (bracken-starch jelly dusted with kinako soybean powder) cup, and a cup of Uji hojicha each | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | 700 | 3,600 |
 | Dinner | Chicken katsu and rice, miso soup, pickled vegetables - hangaku-discounted katsu from the supermarket deli counter timed near closing, eaten in the room | Gyomu Super or Life, Shimogyo-ku, near Shijo-Omiya | 800 | 2,650 |
 | Infant food | Wakodo/Morinaga formula tin for the 12-month-old plus pouches; the 20-month-old eats rice, miso soup (cooled, low-salt portion), and small pieces of katsu off the family table | Drugstore near Shijo-Omiya | n/a | 2,100 |
 
@@ -391,8 +394,8 @@ Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 | Shijo-Omiya → Marutamachi (Kyoto Gyoen/Gosho) | Hankyu Kyoto Line + Subway Karasuma Line, 1 transfer | 0h30 | 260 | 780 |
 | (Kyoto Gyoen → Nijo Castle: walked, ~1.3km flat) | Walk | 0h20 | 0 | 0 |
 | Nijo Castle → Kinkaku-ji-michi | Raku city bus (loop line) | 0h25 | 230 | 690 |
-| Kinkaku-ji-michi → Ryoan-ji-mae | City bus (2 stops) | 0h15 | 230 | 690 |
-| Ryoan-ji → Shijo-Omiya | City bus | 0h30 | 230 | 690 |
+| Kinkaku-ji-michi → Kitano Tenmangu-mae | City bus | 0h15 | 230 | 690 |
+| Kitano Tenmangu-mae → Shijo-Omiya | City bus | 0h30 | 230 | 690 |
 
 Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult fare x 3.
 
@@ -403,17 +406,17 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Kyoto Imperial Palace (Gosho) | 0h35 | 0 | 0 | 3 Kyoto Gyoen, Kamigyo-ku, Kyoto 602-0881 | The former residence of Japan's emperors from 1331 until the imperial move to Tokyo in 1868 - the walled, gated compound inside Kyoto Gyoen park (see Day 16's note distinguishing the two). A 2016 policy change dropped the old advance-reservation requirement: entry is now free, walk-in, no ticket, 9:00-16:20 daily except Mondays. Self-guided visitors see the grounds and the exteriors of the Shishinden (enthronement hall) and Seiryuden from outside their fences; there is no access to building interiors. The visitor route is gravel, flat, and wide - stroller-fine, though comfortable shoes help; wheelchairs are available at the entrance on request. |
 | Nijo Castle | 1h15 | 1,300 | 3,900 | 541 Nijojo-cho, Nakagyo-ku, Kyoto 604-8301 | Built in 1603 as the Kyoto residence of the Tokugawa shogun - Japan's military ruler - a deliberate show of shogunal power inside the emperor's own capital. The Ninomaru Palace's corridors have "nightingale floors," floorboards engineered to chirp underfoot as a low-tech intruder alarm, still audible today. Today's ticket covers both the grounds/garden (¥800) and the Ninomaru Palace interior (¥500). The palace interior is a shoeless, floor-walking visit with no photography - leave the stroller at the entrance and carry or hand-hold through; the outer grounds are gravel paths and stroller-workable. |
 | Kinkaku-ji | 0h40 | 500 | 1,500 | 1 Kinkakuji-cho, Kita-ku, Kyoto 603-8361 | A three-story Zen pavilion with its top two floors entirely gold-leafed, set over a reflecting pond - one of Japan's most recognizable images. Built in 1397 as a shogun's retirement villa and later converted to a temple; the building standing today is a 1955 reconstruction after a novice monk burned the original to the ground in 1950, an event later fictionalized in Mishima Yukio's novel "The Temple of the Golden Pavilion." Honest take: it's a walk-past viewpoint, not an interior visit - no entry into the pavilion itself - and the main viewing spot is reliably crowded, so budget it as one great photo stop plus a short garden loop rather than a lingering visit. Paved path, stroller-workable, 30-40 min is enough. |
-| Ryoan-ji | 0h40 | 600 | 1,800 | 13 Ryoanji Goryonoshitacho, Ukyo-ku, Kyoto 616-8001 | Japan's most famous karesansui, or dry Zen rock garden: a rectangle of raked white gravel roughly 250 sq m, with fifteen stones arranged in small groups on patches of moss, and no water and almost no plants - the raking pattern is redone by the temple's monks each morning. It's laid out so that from any single point on the viewing veranda, at least one stone is always hidden from view - by tradition you can never see all fifteen at once, which is exactly the garden's point: an abstract composition meant for quiet looking rather than a "landscape" in the pond-and-maple sense the rest of this trip's gardens use. Built in the late 1400s, attribution to a specific designer is disputed. The viewing platform is the temple hall's raised wooden veranda - shoes off at the entrance, stored in cubbies, and the garden is seen sitting on the wood, not from ground level. That makes it a carrier stop, not a stroller one: the stroller stays at the entrance while an adult carries or holds a hand on the veranda. Go right at opening or late in the day - the veranda is a single bench-length space and fills up fast. |
+| Tenjin-ichi temple market, Kitano Tenmangu | 1h00 | 0 | 0 | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | Kitano Tenmangu's own monthly temple market, the same kind of centuries-old, fixed-date flea-and-food market as To-ji's Kobo-ichi on Day 15, held here on the 25th of every month to mark the death anniversary of Sugawara no Michizane, the Heian-era scholar-official enshrined as the god of learning. Up to around 1,000 stalls fill the shrine grounds and surrounding streets with antiques, plants, and kimono, and the food side leans hard on street snacks - takoyaki, okonomiyaki, warabimochi, Uji tea, grilled bamboo shoots. Free to enter, published hours roughly 6:00 until the stalls wind down in the afternoon (no fixed closing time), and a short city-bus ride from Kinkaku-ji rather than a detour. The shrine's open paths take a stroller fine; the packed stall aisles are the same tight, uneven-footing squeeze as Nishiki Market, so the carrier is the better call there. Replaces Ryoan-ji's dry rock garden for today - a quiet, sit-and-contemplate stop asks more patience than two toddlers have right after Kinkaku-ji, and a market they can walk through and eat from is the better fit. |
 
 ### Day 19 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 19,000 | 123 |
-| Food | 5,900 | 38 |
+| Food | 8,350 | 54 |
 | Transport | 2,850 | 18 |
-| Activities | 7,200 | 46 |
-| **Day total** | **34,950** | **225** |
+| Activities | 5,400 | 35 |
+| **Day total** | **35,600** | **230** |
 
 **Running total (Kyoto A segment) after Day 19: ¥179,540 ($1,158)**
 
@@ -423,9 +426,11 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 
 - **Breakfast is free every day** at Toyoko Inn Kyoto Shijo-Omiya (rice, miso, natto, pickles, bread, coffee) - budgeted at ¥0 and counted as ~500 kcal/adult toward the daily 2,000, per the brief.
 - **Kyoto City Bus one-day pass:** the traditional ¥700 all-day bus pass was discontinued in autumn 2023 (Kyoto City's own move to ease bus overcrowding and push visitors toward the subway). We did not assume it still exists - every bus leg in this segment is priced as an individual IC-card (ICOCA/Suica) flat fare of ¥230/adult per boarding instead, which is simpler for a stroller-heavy itinerary in any case.
-- **Two of the five days (15 and 16) are built on mostly free activities** - Fushimi Inari and Nishiki Market cost nothing to enter/browse; Jidai Matsuri street viewing, the Philosopher's Path, and the Kyoto Imperial Palace (Gosho, Day 19) cost nothing. Paid admissions this segment are Tenryu-ji, Kiyomizu-dera, Nijo Castle, Kinkaku-ji, Ryoan-ji, Heian Jingu's garden, Okochi Sanso, the Torokko scenic train, and the kimono rental - all infants free throughout.
+- **Two of the five days (15 and 16) are built on mostly free activities** - Fushimi Inari and Nishiki Market cost nothing to enter/browse; Jidai Matsuri street viewing, the Philosopher's Path, and the Kyoto Imperial Palace (Gosho, Day 19) cost nothing. Paid admissions this segment are Tenryu-ji, Kiyomizu-dera, Nijo Castle, Kinkaku-ji, Heian Jingu's garden, Okochi Sanso, the Torokko scenic train, and the kimono rental - all infants free throughout.
 - **Kyoto Gyoen vs. the Gosho:** Day 16 visits Kyoto Gyoen, the free public park, for Jidai Matsuri viewing only. The Kyoto Imperial Palace (Gosho) - the walled palace compound inside that park - is a separate, free, no-reservation walk-in visit, folded into Day 19's route instead so it doesn't compete with the festival for time.
-- **Day 19's second depachika visit was dropped**: it repeated Day 15's Nishiki Market/Daimaru stop with nothing new to see. Ryoan-ji, Japan's most famous dry rock garden (karesansui), replaces it in the same afternoon slot, reached on the same bus loop already used for Kinkaku-ji.
+- **Day 19's second depachika visit was dropped**: it repeated Day 15's Nishiki Market/Daimaru stop with nothing new to see. The slot was first filled with Ryoan-ji, but Ryoan-ji has since been dropped too, in favor of the Tenjin-ichi temple market at Kitano Tenmangu (see below) - the same afternoon slot, reached on the same bus network already used for Kinkaku-ji.
+- **Two temple markets land exactly on this segment's calendar, and both are now scheduled.** Japan's monthly temple markets are centuries-old flea-and-food markets held on a fixed date tied to a temple or shrine's own history, not staged for visitors - they're where locals actually shop, and the most reliable place on this whole trip to eat from a street stall rather than a restaurant. **Kobo-ichi at To-ji falls on the 21st of every month, which is Day 15**, and sits a 15-minute walk from Kyoto Station, folded into the transit already made that day. **Tenjin-ichi at Kitano Tenmangu falls on the 25th of every month, which is Day 19**, a short bus ride from Kinkaku-ji, replacing Ryoan-ji's quiet rock garden with a market better suited to two toddlers right after a temple stop. Both are free to enter; the day's lunch is eaten from each market's own food stalls instead of a restaurant, which is why Food costs rise on both days while Activities costs fall or hold flat. Both are open shrine/temple grounds with wide main paths (stroller-workable) but dense, narrow stall rows once inside the market proper (carrier-only there) - the same crowd logic already applied to Nishiki Market.
+- **Wet-weather fallback, not scheduled or costed into any day:** if a day in this ten-night Kyoto stay is rained out, the Kyoto Railway Museum and the adjacent Kyoto Aquarium (both in Umekoji Park, Shimogyo-ku, about a 20-minute walk or a short bus/train ride from Kyoto Station) are a documented, fully indoor, stroller-native contingency - elevators throughout, both infants free at both sites. Verified current admission: Railway Museum ¥1,500/adult; Kyoto Aquarium ¥2,600/adult (the ¥900 figure sometimes quoted is the aquarium's toddler/child rate, not the adult price - corrected here, not invented). A combined visit runs 3-4 hours. This is named as a contingency the family can invoke if needed, not booked or budgeted as a fixed spend in any day above.
 - **Foliage:** late October in Kyoto is pre-peak (Kyoto's koyo peak trends into December most recent years). Only the earliest hints of color show at canal-edges and higher ground (e.g. the Philosopher's Path); nothing in this segment is described as peak red maples.
 - All prices are 2026 planning estimates, not quotes, per the trip's honesty rule.
 
@@ -434,9 +439,9 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 95,000 | 613 |
-| Food | 35,300 | 228 |
+| Food | 41,350 | 267 |
 | Transport | 13,510 | 87 |
-| Activities | 38,040 | 245 |
-| **Segment total** | **181,850** | **1,173** |
+| Activities | 36,240 | 234 |
+| **Segment total** | **186,100** | **1,201** |
 
-Envelope check: Food ¥35,300 vs ¥37,000 target (-4.6%, within ±5%). Transport ¥13,510 vs ¥13,000 target (+3.9%, within ±5%, the Day 19 Gosho/Ryoan-ji reroute adding two extra legs). Activities ¥38,040 vs ¥38,000 target (+0.1%, within ±5%: Ryoan-ji adds ¥1,800 party; the dropped depachika repeat had already been a free browse, so it contributes no offsetting saving here, but the segment lands almost exactly on target anyway). Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate.
+Envelope check: Food ¥41,350 vs ¥37,000 target (+11.8%, over the ±5% band). This is the direct, honest cost of the two temple-market additions: Day 15's lunch moves from a ¥1,800 inari-zushi shop to a ¥5,400 yatai spread at Kobo-ichi (+¥3,600), and Day 19's lunch moves from a ¥1,150 udon-chain set to a ¥3,600 yatai spread at Tenjin-ichi (+¥2,450) - ¥6,050 of new food spend against the segment, all of it real stall food rather than padding. Transport ¥13,510 vs ¥13,000 target (+3.9%, within ±5%, unchanged from before - both market swaps reuse legs the day already made). Activities ¥36,240 vs ¥38,000 target (-4.6%, within ±5%, an improvement: both markets are free to enter, and Day 19 drops Ryoan-ji's ¥1,800 admission with nothing paid replacing it). Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Net effect: the segment total rises by ¥4,250 (¥181,850 → ¥186,100), the Food overage is the one line item now outside its target band, and it buys two genuine, date-locked festival experiences the itinerary would otherwise have missed entirely.

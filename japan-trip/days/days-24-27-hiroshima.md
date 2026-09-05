@@ -299,14 +299,18 @@ at Dotonbori.
 | 11:30 | 1h00 | Food | Lunch near Namba |
 | 12:30 | 1h45 | Rest | Rest / infant naps at hotel |
 | 14:15 | 0h20 | Transit | Hotel -> Dotonbori, walk |
-| 14:35 | 0h45 | Activity | Dotonbori canal-side walk, free (Glico sign, arcade browsing) |
-| 15:20 | 0h20 | Activity | Namba Yasaka Shrine - giant lion-head hall, free |
-| 15:40 | 1h00 | Food | Dinner in Dotonbori (takoyaki + light bites) |
-| 16:40 | 0h20 | Transit | Walk back to hotel |
-| 17:00 | - | Rest | Evening at hotel, infants down |
+| 14:35 | 1h05 | Activity | Dotonbori canal-side walk (Glico sign, arcade browsing) + Pokemon Center Osaka DX, Daimaru Shinsaibashi 9F, free |
+| 15:40 | 0h20 | Activity | Namba Yasaka Shrine - giant lion-head hall, free |
+| 16:00 | 1h00 | Food | Dinner in Dotonbori (takoyaki + light bites) |
+| 17:00 | 0h20 | Transit | Walk back to hotel |
+| 17:20 | - | Rest | Evening at hotel, infants down |
 
-- Day span 07:00-17:00 (10h), with the shinkansen leg seated and low-stress and a 1h45 midday
-  rest block at the new hotel before the evening outing.
+- Day span 07:00-17:20 (10h20), with the shinkansen leg seated and low-stress and a 1h45
+  midday rest block at the new hotel before the evening outing. Pokemon Center Osaka DX is
+  folded into the Dotonbori stop rather than given a separate transit leg - Daimaru
+  Shinsaibashi's 9th floor is a few minutes' walk further up the Shinsaibashi-suji arcade from
+  the canal, so the whole evening slips only about 20 minutes later than the original plan and
+  infants still go down earlier than on Days 25 or 26.
 
 ### Lodging
 
@@ -343,6 +347,7 @@ covered in the next segment.
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
 | Dotonbori canal walk | 0h45 | 0 | 0 | Dotonbori, Chuo-ku, Osaka (district; nearest station Namba - address unverified) | Osaka's best-known nightlife and dining strip, a canal-side promenade lined with oversized illuminated signs - the animated Glico "running man" billboard is the classic photo spot - plus arcades, restaurants and street-food stalls stacked along both banks. This is a browsing stop, not a ticketed attraction: free, flat, and stroller-workable along the main promenade, though it gets crowded and slow-moving after dark, worth knowing with a stroller in tow. Kept deliberately light for this arrival evening; the paid Tombori River Cruise is saved for the last full day in Osaka (Day 29) instead of being charged for twice, which is what the earlier draft did. |
+| Pokemon Center Osaka DX | 0h20 | 0 | 0 | Daimaru Shinsaibashi Main Bldg, 9F, 1-7-1 Shinsaibashisuji, Chuo-ku, Osaka 542-8501 | An official Pokemon retail store, not a game location or a ticketed attraction, selling plushes, trading cards, region-exclusive merchandise and stationery, with a life-size photo-op Pikachu near the entrance. Worth the stop for a Pokemon-loving family purely to browse and shop, nothing more elaborate than that, and it costs nothing to walk in and look without buying. It occupies the 9th floor of the Daimaru Shinsaibashi department store, a few minutes' walk north of the Dotonbori canal, open daily 10:00-20:00 with no ticket or reservation needed; unlike some other Pokemon Centers, this one has no attached cafe - Pokemon Cafe Osaka is a separate premises elsewhere in the city. It is elevator-served like any department-store floor, so fully reachable with the stroller, though the sales aisles themselves are shop-narrow and can get crowded - one adult minding the stroller near the entrance while the other browses with a toddler works better than pushing it through the display racks. |
 | Namba Yasaka Shrine | 0h20 | 0 | 0 | 2-9-19 Motomachi, Naniwa-ku, Osaka 556-0016 | A Shinto shrine whose main hall is built in the shape of an enormous lion's head, about 12 m tall with its mouth open as if swallowing evil spirits - a genuinely strange, striking piece of architecture rather than a typical shrine building, and unlike anything else on this trip. It is free, about a 10-minute walk from the hotel, and the whole visit is a flat, ground-level courtyard with no stairs and nothing to enter, so it folds easily into the walk back from Dotonbori as a quick, low-effort stop rather than a separate outing. |
 
 ### Day 27 Cost

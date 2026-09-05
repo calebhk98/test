@@ -130,18 +130,31 @@ than keeping them cleanly separate.
 | 09:35 | 0h15 | Transit | Walk along the Sumida riverside, cross Azumabashi Bridge to Skytree Town |
 | 09:50 | 1h00 | Activity | Sumida Aquarium (indoor, penguins/otters/jellyfish) |
 | 10:50 | 0h45 | Activity | Tokyo Skytree Tembo Deck (350m observatory) |
-| 11:35 | 0h45 | Food | Lunch, Tokyo Solamachi food court, Sumida-ku |
-| 12:20 | 0h20 | Transit | Return toward Ueno, Ginza Line |
-| 12:40 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 14:25 | 1h00 | Rest | Light stroll, Ueno Park riverside edge (free, easy) |
-| 15:25 | - | Rest | Free downtime at the hotel |
-| 17:30 | 1h00 | Food | Dinner, self-catered |
-| 18:30 | 0h45 | Admin | Bath, wind-down |
+| 11:35 | 0h25 | Activity | Pokemon Centre Skytree Town, 4F Solamachi |
+| 12:00 | 0h45 | Food | Lunch, Tokyo Solamachi food court, Sumida-ku |
+| 12:45 | 0h20 | Transit | Return toward Ueno, Ginza Line |
+| 13:05 | 1h45 | Rest | Rest / infant naps at the hotel |
+| 14:50 | 1h00 | Rest | Light stroll, Ueno Park riverside edge (free, easy) |
+| 15:50 | - | Rest | Free downtime at the hotel - 3rd adult and both infants stay on this routine through the evening |
+| 17:00 | 0h20 | Transit | 2 adults: Ueno -> Higashi-Ginza, Tokyo Metro Ginza Line, for the evening Kabukiza act |
+| 17:20 | 0h40 | Admin | Queue and buy the Kabukiza single-act ticket (hitomakumi) + English subtitle tablets, cash only, no advance booking |
+| 17:30 | 1h00 | Food | Dinner - 3rd adult and both infants, self-catered at the hotel; the 2 Kabukiza-bound adults grab a quick conbini dinner near Ginza |
+| 18:00 | 1h00 | Activity | Kabukiza single-act (hitomakumi) - one act of Kabuki, Ginza |
+| 18:30 | 0h45 | Admin | Bath, wind-down - 3rd adult and both infants |
+| 19:00 | 0h20 | Transit | 2 adults: Higashi-Ginza -> Ueno, Ginza Line |
+| 19:20 | - | Rest | Party reunites, lights out |
 
 - **Carrier recommended for Senso-ji** - Nakamise-dori is genuinely dense by mid-morning
   with strollers hard to steer. Aquarium and Skytree are wide, level, elevator-served
   spaces where the stroller works fine.
-- Active out-of-lodging time: about 5h40 including the walk, well inside the ~7h cap.
+- Active out-of-lodging time: about 6h05 including the walk and the Pokemon Centre stop,
+  still comfortably inside the ~7h cap.
+- **The evening is a deliberate split, not a whole-party outing.** Kabuki is watched from
+  a hushed, single-scene auditorium with no aisle access mid-act - a poor match for a
+  12-month-old and a 20-month-old regardless of the venue's official policy. 2 adults
+  travel to Ginza for the 18:00 single act while the 3rd adult keeps both infants on the
+  normal dinner/bath routine at the hotel; the two threads run in parallel from about
+  17:00 to 19:20, when the party reunites.
 
 ### Lodging
 
@@ -155,11 +168,12 @@ than keeping them cleanly separate.
 | Meal | What / Where | Address or store | kcal/adult | Cost (¥) |
 |---|---|---|---|---|
 | Breakfast | Rice, scrambled eggs, buttered toast | Cooked in room from Day 1 stock; Hotel kitchenette | 500 | 750 |
+| Snack | Mitarashi dango, 1 skewer/adult (grilled, sweet soy-glazed rice-flour dumplings) bought walking Nakamise-dori | Nakamise-dori stalls, Asakusa, Taito-ku (specific stall unverified) | 100 | 1,200 |
 | Lunch | Shoyu ramen bowl with a side of gyoza, ordered at a ramen counter | Tokyo Solamachi food court, Sumida-ku | 750 | 3,200 |
-| Dinner | Stir-fried pork and vegetables over rice, miso soup - top-up items from Day 1 stock | Cooked in room; Hotel kitchenette | 700 | 1,100 |
+| Dinner | Stir-fried pork and vegetables over rice, miso soup - top-up items from Day 1 stock, for the 3rd adult and both infants at the hotel; the 2 Kabukiza-bound adults instead pick up a conbini onigiri, croquette and tea near Ginza | Cooked in room; Hotel kitchenette / conbini near Kabukiza, Ginza | 700 | 1,600 |
 | Infant food | 3 formula feeds for Infant A, plus 2 Wakodo pouches (rice and pumpkin; chicken and vegetable); Infant B eats table portions of the rice and stir-fry, plus a Pigeon snack biscuit | Conbini top-up near hotel | n/a | 2,150 |
 
-Adult kcal: 500 + 750 + 700 = **1,950**.
+Adult kcal: 500 + 100 (dango) + 750 + 700 = **2,050**.
 
 ### Transport
 
@@ -167,6 +181,8 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 |---|---|---|---|---|
 | Ueno -> Asakusa | Tokyo Metro Ginza Line | 0h20 | 180 | 540 |
 | Asakusa/Skytree Town -> Ueno | Tokyo Metro Ginza Line | 0h20 | 180 | 540 |
+| Ueno -> Higashi-Ginza (2 adults) | Tokyo Metro Ginza Line | 0h20 | 180 | 360 |
+| Higashi-Ginza -> Ueno (2 adults) | Tokyo Metro Ginza Line | 0h20 | 180 | 360 |
 
 ### Activities
 
@@ -175,16 +191,18 @@ Adult kcal: 500 + 750 + 700 = **1,950**.
 | Senso-ji + Nakamise-dori | 1h15 | 0 | 0 | 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032 | Tokyo's oldest Buddhist temple (founded 645 AD), reached along the covered Nakamise-dori shopping street - snack and souvenir stalls leading to the huge red Kaminarimon lantern gate, the main hall, and a five-story pagoda. It's the single most-visited religious site in Japan, worth it for the atmosphere and the Kannon-dedicated main hall rather than for solitude. Free to enter, grounds always open (main hall roughly 6am-5pm); Nakamise-dori is genuinely too dense for a stroller by mid-morning, so use the carrier here and save the stroller for Skytree Town. |
 | Sumida Aquarium | 1h00 | 2,900 | 8,700 | Tokyo Solamachi, 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | An indoor aquarium inside the Skytree Town mall, best known for its open-topped penguin and fur seal pool you can walk right up to, plus jellyfish tanks and a touch pool. It's compact and easy rather than spectacular - a good low-stimulation indoor stop for toddlers after Senso-ji's crowds. Fully stroller-accessible with elevators throughout and on-site changing facilities; 2026 planning estimate for admission. |
 | Tokyo Skytree Tembo Deck (350m) | 0h45 | 2,500 | 7,500 | 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | The first observation deck (350m) of the tallest structure in Japan (634m total), with glass-floor sections and a 360-degree view over the Kanto plain - Mt. Fuji is visible on a clear day. Advance timed tickets are recommended to skip the counter queue. Elevators throughout, fully stroller and infant-friendly; 2026 planning estimate, historically ~¥2,100-2,400/adult. |
+| Pokemon Centre Skytree Town | 0h25 | 0 | 0 | Tokyo Skytree Town Solamachi, 4F East Yard, 1-1-2 Oshiage, Sumida-ku, Tokyo 131-0045 | The official Pokemon retail store, on the same mall floor complex the day already visits for the aquarium and Skytree deck - plushes, trading cards, region-exclusive merchandise, and a photo-op Pikachu. Free to walk in, no ticket needed, and it's a five-minute detour rather than a special trip. Indoor, mall-level, elevators throughout - the easiest, most stroller-friendly stop on the whole day; budget only for an optional souvenir. |
+| Kabukiza single-act (hitomakumi) | 1h00 | ~2,500 (1 adult, incl. tablet) | 6,000 (2 adults + 2 English subtitle tablets; the 3rd adult does not attend) | Kabukiza, 4-12-15 Ginza, Chuo-ku, Tokyo 104-0061 (single-act entrance and box office, building's left side, 4th floor) | Kabuki is a centuries-old, highly stylized form of Japanese theatre performed entirely by male actors (onnagata play the female roles), with live shamisen music, a raised walkway (hanamichi) running through the audience, and dramatic held poses (mie). A hitomakumi ticket buys standing/bench-row admission to just one act of the day's programme rather than the full four-hour show, for a fraction of the price - the best available answer on this trip to "how is Japanese theatre different." Tickets are sold same-day only, cash only, at a separate entrance, no advance booking; October 2026's programme (Kinshu Ju-gatsu O-Kabuki, Oct 2-20) covers this date, and a ¥1,000 refundable-deposit English subtitle tablet solves the language problem (the Japanese-only earphone guide does not). Whether small children are allowed into the single-act section is inconsistent between sources, and a hushed single-scene room with no mid-act aisle access is a poor fit for two children under two regardless - so this is booked as a 2-adult outing only, with the 3rd adult staying at the hotel with both infants. |
 
 ### Day 2 Cost
 
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 7,200 | 46 |
-| Transport | 1,080 | 7 |
-| Activities | 16,200 | 105 |
-| **Day total** | **42,480** | **274** |
+| Food | 8,900 | 57 |
+| Transport | 1,800 | 12 |
+| Activities | 22,200 | 143 |
+| **Day total** | **50,900** | **328** |
 
 **Running total after Day 2: ¥75,450 ($487)**
 
@@ -203,24 +221,31 @@ everything inside a 15-minute walk of the Livemax.
 |---|---|---|---|
 | 07:30 | 0h45 | Food | Breakfast, self-catered |
 | 08:15 | 0h15 | Transit | Walk, hotel -> Ueno Park |
-| 08:30 | 1h15 | Activity | Ueno Zoo (pandas; stroller-friendly paths) |
-| 09:45 | 1h30 | Activity | Tokyo National Museum, incl. special exhibition |
-| 11:15 | 0h30 | Activity | Shinobazu Pond swan-boat rental |
+| 08:30 | 1h15 | Activity | Ueno Zoo (stroller-friendly paths) |
+| 09:45 | 0h45 | Activity | Tokyo National Museum - permanent collection |
+| 10:30 | 1h15 | Activity | National Museum of Nature and Science (Kahaku) |
 | 11:45 | 0h45 | Food | Lunch, Ameyoko market food stalls |
 | 12:30 | 1h45 | Rest | Rest / infant naps at the hotel |
-| 14:15 | 1h00 | Rest | Free browse, Ameyoko shops (no purchases counted) |
-| 15:15 | 0h10 | Transit | Ueno -> Akihabara, JR Yamanote/Keihin-Tohoku Line |
-| 15:25 | 1h10 | Activity | Akihabara stroll - Chuo-dori main drag + Yodobashi Camera Akiba ground floor, stroller-only pace |
-| 16:35 | 0h10 | Transit | Akihabara -> Ueno, JR Yamanote/Keihin-Tohoku Line |
-| 16:45 | 0h45 | Rest | Free time / downtime at the hotel before dinner |
+| 14:15 | 0h10 | Transit | Ueno -> Akihabara, JR Yamanote/Keihin-Tohoku Line |
+| 14:25 | 2h40 | Activity | Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato (one adult peels off), Yodobashi Camera Akiba |
+| 17:05 | 0h10 | Transit | Akihabara -> Ueno, JR Yamanote/Keihin-Tohoku Line |
+| 17:15 | 0h15 | Rest | Free time / downtime at the hotel before dinner |
 | 17:30 | 1h00 | Food | Dinner, self-catered |
 | 18:30 | 0h45 | Admin | Bath, wind-down |
 
-- No paid transit for the near-hotel morning - everything before 15:15 is a walk from
-  the hotel; the Akihabara add-on is a one-stop JR hop each way.
-- Active out-of-lodging time: about 7h, at the upper edge of the ~7h cap - a
-  deliberately gentle day otherwise (zoo, museum, pond, neighborhood browsing) makes
-  room for the added stroll.
+- No paid transit before 14:15 - everything through lunch is a walk from the hotel;
+  the Akihabara trip is a one-stop JR hop each way.
+- Active out-of-lodging time: about 7h15, a modest stretch beyond this day's usual
+  pace - nearly all of the added time is indoor museum browsing (Kahaku) or a
+  stroller-paced Akihabara stroll, not high-exertion touring.
+- The Tokyo National Museum stop is now permanent-collection-only (the
+  special-exhibition surcharge is dropped) - see the Activities table for why: it
+  both shortens the visit and helps pay for the Kahaku stop next door.
+- Akihabara's floors vary a lot: Radio Kaikan and Gachapon Kaikan are ground-level or
+  elevator-served and stroller-workable in short bursts, though crowded; Super
+  Potato's retro-arcade floors (3F-5F) are narrow stairs and a small elevator, not
+  stroller terrain at all - one adult peels off there alone for 20-30 minutes while
+  the other two wait nearby with the stroller.
 
 ### Lodging
 
@@ -252,10 +277,10 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Ueno Zoo | 1h15 | 600 | 1,800 | 9-83 Uenokoen, Taito-ku, Tokyo 110-8711 | Japan's oldest zoo (opened 1882), best known for its giant pandas, with a full range of animals across paved, gently sloped paths inside Ueno Park. An easy, high-payoff morning stop literally in the hotel's neighborhood. Stroller-friendly throughout; infants free. |
-| Tokyo National Museum (incl. special exhibition) | 1h30 | 1,700 | 5,100 | 13-9 Uenokoen, Taito-ku, Tokyo 110-8712 | Japan's oldest and largest museum, covering samurai armor, swords, ceramics, and Buddhist sculpture across several galleries plus a rotating special exhibition. The best single stop in Tokyo for pre-modern Japanese art and history, though it's a "look, don't touch" pace better suited to a stroller or carrier than an active toddler. Elevators throughout; 2026 planning estimate incl. special-exhibit surcharge. |
-| Shinobazu Pond swan-boat rental | 0h30 | 800 (flat/boat) | 800 | Ueno Park, Taito-ku (nearest station Ueno; address unverified) | Rentable pedal boats, including giant swan-shaped ones, on Ueno Park's lotus pond. A genuinely fun half hour for kids old enough to enjoy the water, priced per boat rather than per person so the whole party rides together for one flat fee. Flat boarding dock; infants ride on a parent's lap. |
-| Akihabara stroll | 1h10 | 0 | 0 | Chuo-dori, Akihabara Electric Town, Chiyoda-ku (nearest station Akihabara; address unverified); Yodobashi Camera Multimedia Akiba, 1-1 Kanda-Hanaokacho, Chiyoda-ku, Tokyo 101-0028 | Tokyo's "electric town" - blocks of neon-plastered electronics, anime, and retro-game shops centered on Chuo-dori. A genuinely only-in-Japan streetscape worth a walk-through even without a gaming or anime interest. Kept ground-level and stroller-only: the main drag plus the ground floor of Yodobashi Camera's flagship multi-floor store (wide aisles, elevators, family-friendly) - the cramped, narrow upper floors of shops like Mandarake are skipped entirely with a stroller. Free to browse; budget only for an optional small snack or souvenir. |
+| Ueno Zoo | 1h15 | 600 | 1,800 | 9-83 Uenokoen, Taito-ku, Tokyo 110-8711 | Japan's oldest zoo (opened 1882), with a full range of animals across paved, gently sloped paths inside Ueno Park. **The pandas are gone**: the last two, twin cubs Xiao Xiao and Lei Lei, were flown back to China in late January 2026, leaving Japan without a single giant panda for the first time since 1972 - don't build up "the pandas" to the toddlers beforehand. What's actually here instead is still a strong morning stop: Asian elephants, western lowland gorillas, Sumatran tigers, polar bears, and capybara, plus a five-storey pagoda inside the zoo grounds and (when running) the monorail between the East and West gardens. Stroller-friendly throughout; infants free. |
+| Tokyo National Museum - permanent collection | 0h45 | 1,000 | 3,000 | 13-9 Uenokoen, Taito-ku, Tokyo 110-8712 | Japan's oldest and largest museum, covering samurai armor, swords, ceramics, and Buddhist sculpture across several permanent galleries. The best single stop in Tokyo for pre-modern Japanese art and history, though it's a "look, don't touch" pace better suited to a stroller or carrier than an active toddler. Booked as permanent-collection-only this visit (the rotating special exhibition is skipped) - a shorter, cheaper visit that frees both time and budget for the Kahaku stop next door. Elevators throughout; ¥1,000/adult general admission, 2026 pricing. |
+| National Museum of Nature and Science (Kahaku) | 1h15 | 620 | 1,860 | 7-20 Ueno Park, Taito-ku, Tokyo 110-8718 | Japan's national museum of natural history and science, a five-minute walk from the Tokyo National Museum - a full dinosaur skeleton hall, the actual Lambda 4S rocket that launched Japan's first satellite in 1970, space suits, and deep-sea exploration displays. With Miraikan (Tokyo's flagship future-tech museum) closed for refurbishment from 1 Oct 2026 to 22 Apr 2027 - spanning this entire trip - Kahaku becomes the trip's main "cool tech" stop: dinosaurs for the toddlers, real space hardware for the adults. Indoor and elevator-served throughout, open until 20:00 on Fridays (this is a Friday) so there's real scheduling slack; no loud dark rooms or robot demos, low-risk for a 12- and 20-month-old. ¥620/adult, both infants free. |
+| Akihabara - Radio Kaikan, Gachapon Kaikan, Mandarake Complex, Super Potato, Yodobashi | 2h40 | 0 (browse) | ~2,500 (an optional family gachapon round; not per-adult) | Radio Kaikan, 1-15-16 Soto-Kanda, Chiyoda-ku, Tokyo; Gachapon Kaikan, 3-15-5 Sotokanda, Chiyoda-ku, Tokyo; Mandarake Complex, 3-11-12 Sotokanda, Chiyoda-ku, Tokyo 101-0021; Super Potato, Kitabayashi Bldg 3F-5F, 1-11-2 Sotokanda, Chiyoda-ku, Tokyo 101-0021; Yodobashi Camera Multimedia Akiba, 1-1 Kanda-Hanaokacho, Chiyoda-ku, Tokyo 101-0028 | Tokyo's "electric town," now a real visit rather than a token stroll. Radio Kaikan is a genuine Steins;Gate filming location - the rebuilt 10-storey building is where the anime sets its time-travel-hub scenes, and its 10F event space hosted the show's own 2026 anniversary event (the real-world maid cafe the anime's May Queen Nyan Nyan is modelled on, Cafe Mai:lish, is two minutes away if anyone wants to see the exterior). Add Gachapon Kaikan's roughly 500 capsule machines, Mandarake Complex's eight floors of manga, figures and Gunpla, and Super Potato's retro-game floors for a proper cross-section of the neighbourhood. Ground floors and Yodobashi's elevators are stroller-workable in short bursts, if crowded; Mandarake's upper floors and Super Potato's 3F-5F (narrow stairs, a small elevator, a smoky arcade on top) are not - one adult peels off there alone while the stroller waits below. Free to browse; budget an optional ¥2,500 or so for a family round of gachapon. |
 
 ### Day 3 Cost
 
@@ -264,8 +289,8 @@ Adult kcal: 500 + 700 + 750 = **1,950**.
 | Lodging | 18,000 | 116 |
 | Food | 6,300 | 41 |
 | Transport | 900 | 6 |
-| Activities | 7,700 | 49 |
-| **Day total** | **32,900** | **212** |
+| Activities | 9,160 | 59 |
+| **Day total** | **34,360** | **222** |
 
 **Running total after Day 3: ¥108,350 ($699)**
 

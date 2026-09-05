@@ -128,6 +128,8 @@ Active out-of-lodging time: ~7h00 (at the cap - the midday rest block returns fu
 
 **Excluded nearby: Fuji-Q Highland.** It sits right next to Kawaguchiko Station, but its headline rides are extreme roller coasters with no infant suitability, and even its kids'-zone day pass runs ¥6,500-7,000/adult - poor value and a poor fit for a 12 - and 20-month-old. Skipped this trip.
 
+**On nabemono:** nabemono is the general Japanese term for hot pot - a single simmering pot of broth, vegetables, protein, and noodles or rice shared at the table, into which everyone adds and retrieves their own ingredients as they cook. Japanese households switch over from summer's cold noodle dishes to nabe as the weather turns, and late October is squarely inside that season; tonight is the one genuinely cold night of the whole trip (Kawaguchiko already down to 6-10°C after dark), so cooking one in K's House's shared kitchen is both climatically right and easy. The 20-month-old can eat softened cabbage, mushrooms, tofu and udon straight from the pot once cooled and cut small; the 12-month-old stays on formula and pouches as usual. **Scald risk, stated plainly:** the pot itself keeps bubbling well after it's brought to the table, so it goes in the middle, out of a toddler's reach, and an adult - never the toddler - ladles every portion.
+
 ### Lodging
 
 **Night:** 2 of 2 (K's House Mt. Fuji stay; Day 13 moves to a ryokan - see Day 13 Lodging)
@@ -141,8 +143,8 @@ Active out-of-lodging time: ~7h00 (at the cap - the midday rest block returns fu
 |---|---|---|---|---|
 | Breakfast | Rice, natto, fried eggs, brewed coffee | K's House Mt. Fuji shared guest kitchen | 550 | 750 |
 | Lunch | Houtou - flat, udon-like noodles simmered with kabocha squash, root vegetables and miso broth, the Yamanashi regional specialty; likely Hoto Fudou or another local houtou specialist (exact branch unconfirmed) | Fujikawaguchiko area | 750 | 4,200 |
-| Dinner | Grilled salmon fillet, rice, tofu and wakame miso soup | K's House Mt. Fuji shared guest kitchen | 700 | 2,400 |
-| Infant food | Formula (12mo, Wakodo/Pigeon pouches) - 20mo shares rice, flaked salmon and softened vegetables off the family table | Local supermarket/drugstore | n/a | 2,000 |
+| Dinner | Yosenabe (mixed hot pot): thin-sliced pork, hakusai (napa cabbage), shiitake and enoki mushrooms, tofu, negi, simmered in a store-bought nabe-no-moto broth base and finished with udon noodles cooked in the leftover broth | K's House Mt. Fuji shared guest kitchen; ingredients from a Kawaguchiko-area supermarket (chain unconfirmed) | 700 | 3,000 |
+| Infant food | Formula (12mo, Wakodo/Pigeon pouches) - 20mo shares softened cabbage, mushrooms, tofu and udon straight from the pot, cooled and cut small | Local supermarket/drugstore | n/a | 2,000 |
 
 Adult kcal sum: 550 + 750 + 700 = **2,000**.
 
@@ -166,10 +168,10 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 18,000 | 116 |
-| Food | 9,350 | 60 |
+| Food | 9,950 | 64 |
 | Transport | 4,500 | 29 |
 | Activities | 11,400 | 74 |
-| **Day total** | 43,250 | 279 |
+| **Day total** | 43,850 | 283 |
 
 **Running total after Day 12: ¥448,580 ($2,894)**
 
@@ -347,13 +349,13 @@ Allow the full 20-30 min buffer at Mishima per the brief; the schedule above boo
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 96,580 | 623 |
-| Food | 38,210 | 247 |
+| Food | 38,810 | 250 |
 | Transport | 57,550 | 371 |
 | Activities | 16,550 | 107 |
-| **Segment total** | 208,890 | 1,348 |
+| **Segment total** | 209,490 | 1,352 |
 
 Envelope check against the segment's assigned cells (lodging is fixed for the K's House and Toyoko Inn nights and not flexed; Day 13's ryokan swap is a deliberate, budgeted exception funded from trip headroom, not the segment envelope):
-- Food: ¥38,210 vs ¥33,000 envelope - **+15.8%**, over the ±5% band. The overage is the kaiseki dinner (¥5,940) and Japanese ryokan breakfast (¥2,970) on Days 13-14, which replace cheaper self-cooked/pantry meals (¥3,050 combined) for a net add of about +¥5,860 tied directly to the ryokan swap. Like the lodging uplift itself, this is best treated as coming from trip headroom rather than the self-catering food envelope this segment was originally sized for.
+- Food: ¥38,810 vs ¥33,000 envelope - **+17.6%**, over the ±5% band. The bulk of the overage is the kaiseki dinner (¥5,940) and Japanese ryokan breakfast (¥2,970) on Days 13-14, which replace cheaper self-cooked/pantry meals (¥3,050 combined) for a net add of about +¥5,860 tied directly to the ryokan swap, plus a further +¥600 on Day 12 where the yosenabe hot pot dinner replaces the grilled-salmon dinner. Like the lodging uplift itself, this is best treated as coming from trip headroom rather than the self-catering food envelope this segment was originally sized for.
 - Transport: ¥57,550 vs ¥56,500 envelope - **+1.9%**, within ±5%. The Day 11 Fuji Kyuko round trip to Shimoyoshida for Chureito Pagoda (¥1,320) adds slightly to a segment still dominated by the two fixed intercity legs (Day 11 highway bus ¥8,100; Day 14 bus ¥10,000 + Hikari ¥32,340 = ¥42,340).
 - Activities: ¥16,550 vs ¥25,000 envelope - **-33.8%**, well under the band. This runs low mainly because Chureito Pagoda (replacing the Kawaguchiko Music Forest Museum) is free, and because the ryokan's real private-bath rate (¥2,750) is genuinely cheaper than the ¥4,500 placeholder the earlier K's House-based plan carried for an unconfirmed facility. Under-spending here isn't a gap to paper over - the activities themselves (Oishi Park, the ropeway, the lake cruise, Kubota Itchiku, Oshino Hakkai, Saiko Iyashi-no-Sato, Chureito Pagoda, and the private bath) are unchanged in substance; the day is simply cheaper than budgeted, not thinner.
 
