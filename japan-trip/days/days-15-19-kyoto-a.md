@@ -383,13 +383,14 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 | 17:55 | 0h40 | Food | Dinner - chicken katsu bento from Fresco Omiya (1 min from the hotel, open 24h), full price since it is far too early for any markdown, eaten in the room |
 | 18:35 | 0h25 | Rest | Bath, bedtime routine, infants down |
 | 19:00 | 0h50 | Rest | Quiet evening at the hotel, infants asleep |
-| 19:50 | 0h15 | Transit | One adult walks alone to Gyomu Super Saiin, Ukyo-ku (~15 min; the other two stay with the sleeping infants) |
-| 20:05 | 0h20 | Food | Hangaku shopping - deli pastries and rice balls marked to 50% off after 20:00, restocking snacks for the next few days |
-| 20:25 | 0h15 | Transit | Walk back to Toyoko Inn |
+| 19:50 | 0h20 | Transit | One adult walks alone to Gyomu Super Saiin, Ukyo-ku (~20 min unencumbered, no stroller; the other two stay with the sleeping infants) |
+| 20:10 | 0h15 | Food | Hangaku shopping - deli pastries and rice balls marked to 50% off after 20:00, restocking snacks for the next few days |
+| 20:25 | 0h20 | Transit | Walk back to Toyoko Inn |
 
 - **Imperial Palace note:** this segment already distinguished Kyoto Gyoen (the public park, visited on Day 16 for Jidai Matsuri viewing) from the Kyoto Imperial Palace/Gosho itself (the walled compound inside that park) - see Day 16's Activities table. The Gosho is toured today instead, since Jidai Matsuri day was already full: free entry, no reservation, self-guided walk-in 9:00-16:20 (closed Mondays), folded into the same subway route already used to reach Nijo Castle.
 - **Ryoan-ji stays, Tenjin-ichi is added alongside it - both fit, verified.** An earlier pass of this day dropped Ryoan-ji to make room for the market, but Ryoan-ji was on this itinerary for its own reason - a whole-trip genre audit found no other karesansui (dry rock garden) anywhere in this 30-day trip, and Ryoan-ji is the single most famous example of the form in Japan. A temple market doesn't substitute for that, so both stay. The geography cooperates: Kinkaku-ji, Ryoan-ji, and Kitano Tenmangu sit in a single northwest Kyoto cluster, and the day now flows through it in one direction rather than backtracking. Kinkaku-ji to Ryoan-ji is City Bus 59, 2 stops, about 5 minutes (padded to 0h15 with wait/boarding, matching this segment's other short bus hops). From Ryoan-ji, it's a verified 7-minute walk to the Ritsumeikan Daigaku-mae bus stop, where City Bus Route 50 (Kyoto Station - Kitano Tenmangu - Ritsumeikan Daigaku) runs directly to Kitano Tenmangu-mae - no return toward Kinkaku-ji, no doubling back. From there, the day continues on the same bus network back to Shijo-Omiya, same as before.
-- Active out-of-lodging time: ~6h50 (all in one continuous morning-into-early-afternoon outing before the rest block), against this itinerary's ~7h cap - both Ryoan-ji and the full Tenjin-ichi market fit without shortening anything else. Midday rest, at 1h45, stays within the 1h30-2h00 mandatory range; downtime and dinner both stay at the hotel afterward.
+- Active out-of-lodging time: ~6h55 (all in one continuous morning-into-early-afternoon outing before the rest block), against this itinerary's ~7h cap - both Ryoan-ji and the full Tenjin-ichi market fit without shortening anything else; the only change from an earlier pass is a 5-minute walk from Marutamachi Station to the Gosho's own gate, which the schedule had skipped. Midday rest, at 1h45, stays within the 1h30-2h00 mandatory range; downtime and dinner both stay at the hotel afterward.
+- **Hangaku, done honestly:** an earlier pass of this day tried to time tonight's supermarket bento at hangaku pricing right at 17:50, the moment the party gets back from downtime - impossible, since no supermarket marks anything down that early, and the true 50%-off wave for a standard supermarket runs 20:00-20:45 per this trip's own hangaku research (first token markdowns don't even start until roughly 19:30). That 20:00-20:45 window is also after this itinerary's ~19:00-19:30 infant bedtime, so it can never be a whole-family outing. The honest fix: dinner tonight is a full-price chicken katsu bento from Fresco Omiya, literally a minute from the hotel and open 24 hours, eaten in the room at the normal early-evening time the infants' schedule actually needs. The hangaku run happens later and separately - once the infants are down, one adult walks alone to Gyomu Super Saiin (Ukyo-ku, verified 9:00-21:00), arriving just after the 20:00 markdown, to restock deli pastries and rice balls at half price for the next few days' snacking. That costs one adult about 55 minutes of their evening while the other two stay with the sleeping infants - a real trade, not a free lunch, and the only version of tonight's hangaku claim that actually holds up against the clock.
 - Last day of this stretch - Day 20 continues the Kyoto stay under a separate itinerary segment.
 
 ### Lodging
@@ -405,8 +406,9 @@ Infants ride free on city buses. Party cost = adult fare x 3.
 |---|---|---|---|---|
 | Breakfast | Toyoko Inn buffet - rice, miso soup, natto, pickles, bread, coffee, ~500 kcal - included | Toyoko Inn Kyoto Shijo-Omiya | 500 | 0 |
 | Lunch | Yatai lunch from Tenjin-ichi's food stalls: takoyaki (octopus dumplings), a warabimochi (bracken-starch jelly dusted with kinako soybean powder) cup, and a cup of Uji hojicha each | Kitano Tenmangu, Bakuro-cho, Kamigyo-ku, Kyoto 602-8386 | 700 | 3,600 |
-| Dinner | Chicken katsu and rice, miso soup, pickled vegetables - hangaku-discounted katsu from the supermarket deli counter timed near closing, eaten in the room | Gyomu Super or Life, Shimogyo-ku, near Shijo-Omiya | 800 | 2,650 |
+| Dinner | Chicken katsu and rice, miso soup, pickled vegetables - full price, bought too early (17:55) for any markdown | Fresco Omiya, Shimogyo-ku (1 min from Omiya Stn, open 24h) | 800 | 2,850 |
 | Infant food | Wakodo/Morinaga formula tin for the 12-month-old plus pouches; the 20-month-old eats rice, miso soup (cooled, low-salt portion), and small pieces of katsu off the family table | Drugstore near Shijo-Omiya | n/a | 2,100 |
+| Hangaku snack restock | Deli pastries and rice balls marked to 50% off after 20:00, bought on a solo adult trip once the infants are asleep; banked for the next few days' snacking, not part of tonight's kcal | Gyomu Super Saiin, Ukyo-ku (verified hours 9:00-21:00) | n/a (banked) | 800 |
 
 Adult kcal: 500 + 700 + 800 = **2,000/adult**.
 
@@ -439,10 +441,10 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 19,000 | 123 |
-| Food | 8,350 | 54 |
+| Food | 9,350 | 60 |
 | Transport | 3,540 | 23 |
 | Activities | 7,200 | 46 |
-| **Day total** | **38,090** | **246** |
+| **Day total** | **39,090** | **252** |
 
 **Running total (Kyoto A segment) after Day 19: ¥179,540 ($1,158)**
 
@@ -465,9 +467,9 @@ Infants ride free on the Hankyu, subway, and city bus legs. Party cost = adult f
 | Category | ¥ | $ |
 |---|---|---|
 | Lodging | 95,000 | 613 |
-| Food | 41,350 | 267 |
-| Transport | 14,200 | 92 |
+| Food | 42,350 | 273 |
+| Transport | 16,090 | 104 |
 | Activities | 38,040 | 245 |
-| **Segment total** | **188,590** | **1,217** |
+| **Segment total** | **191,480** | **1,235** |
 
-Envelope check: Food ¥41,350 vs ¥37,000 target (+11.8%, over the ±5% band). This is the direct, honest cost of the two temple-market additions: Day 15's lunch moves from a ¥1,800 inari-zushi shop to a ¥5,400 yatai spread at Kobo-ichi (+¥3,600), and Day 19's lunch moves from a ¥1,150 udon-chain set to a ¥3,600 yatai spread at Tenjin-ichi (+¥2,450) - ¥6,050 of new food spend against the segment, all of it real stall food rather than padding. Transport ¥14,200 vs ¥13,000 target (+9.2%, now also over the ±5% band): restoring Ryoan-ji alongside Tenjin-ichi means Day 19 makes one more bus hop than a straight swap would have (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, an extra ¥690 party fare), the price of keeping both stops instead of trading one for the other. Activities ¥38,040 vs ¥38,000 target (+0.1%, back within band and identical to the segment's pre-market-pass figure: both new markets are free to enter, and restoring Ryoan-ji's ¥1,800 admission returns Activities to exactly where it stood before either market was added). Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Net effect: the segment total rises by ¥6,740 over the original (¥181,850 → ¥188,590). Two line items, Food and now Transport, sit outside their target band; both are the honest cost of adding two genuine, date-locked festival markets on top of a full day that also keeps its already-justified rock garden, rather than trading one for the other.
+Envelope check: Food ¥42,350 vs ¥37,000 target (+14.5%, over the ±5% band). This is the direct, honest cost of the two temple-market additions plus this pass's hangaku correction: Day 15's lunch moves from a ¥1,800 inari-zushi shop to a ¥5,400 yatai spread at Kobo-ichi (+¥3,600), Day 19's lunch moves from a ¥1,150 udon-chain set to a ¥3,600 yatai spread at Tenjin-ichi (+¥2,450), and Day 19's dinner is repriced from an unworkable ¥2,650 "hangaku" figure to a ¥2,850 full-price bento plus an ¥800 separate late-evening hangaku snack run that's timed so it can actually happen (+¥1,000 net) - ¥7,050 of new food spend against the segment, all of it real spend rather than padding. Transport ¥16,090 vs ¥13,000 target (+23.8%, well over the ±5% band): restoring Ryoan-ji alongside Tenjin-ichi adds one more bus hop on Day 19 (Ryoan-ji → Ritsumeikan Daigaku-mae → Kitano Tenmangu, +¥690), but the larger driver surfaced by this pass is Day 16, where the original schedule silently skipped the return trip to the hotel for the midday rest and the second outbound Hankyu/subway hop to Nanzenji - both real, both now costed at +¥1,890 combined. Activities ¥38,040 vs ¥38,000 target (+0.1%, unchanged from the prior pass: both new markets are free to enter, and Ryoan-ji's ¥1,800 admission was already priced in). Lodging ¥19,000/night x 5 nights = ¥95,000, matching the fixed rate. Net effect: the segment total rises by ¥2,890 over the prior pass (¥188,590 → ¥191,480), on top of the ¥6,740 that pass had already added over the original ¥181,850. Food and Transport both sit outside their target band; both are the honest cost of transit legs and a dinner timing claim this pass corrected rather than glossed over, on a segment that also keeps its two genuine festival markets and its rock garden.
