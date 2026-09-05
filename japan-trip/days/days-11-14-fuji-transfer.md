@@ -36,13 +36,13 @@
 | 18:30 | 0h30 | Food | Dinner |
 | 19:00 | 1h00 | Rest | Bath, warm layers on for the infants (frost risk overnight), wind down |
 
-Active out-of-lodging time: ~6h35 (under the 7h cap) - about 40 minutes longer than the original plan's Music Forest Museum afternoon, because reaching Chureito Pagoda needs a second short train ride out to Shimoyoshida, but still comfortably under the cap.
-
-**On Chureito Pagoda:** this swap replaces the Kawaguchiko Music Forest Museum in the original plan. The pagoda viewing platform sits above 398 stone steps; a longer, gentler zig-zag slope path runs alongside them as an alternative, but it is still an uphill climb with no ramp or elevator anywhere on the route - both options are carrier-only, not stroller-compatible, the whole way up. The practical plan: one adult carries one infant up (by either route), while the other two adults, the stroller, and the second infant wait at the flat lower shrine grounds (Arakura Sengen Shrine) or take a turn on a later visit. It is worth the effort for one reason - the five-story pagoda framed against Mt. Fuji from the top is the single most photographed view in the Fuji Five Lakes region, and arguably in Japan.
+**On Chureito Pagoda:** the pagoda viewing platform sits above 398 stone steps; a longer, gentler zig-zag slope path runs alongside them as an alternative, but it is still an uphill climb with no ramp or elevator anywhere on the route - both options are carrier-only, not stroller-compatible, the whole way up. The practical plan: one adult carries one infant up (by either route), while the other two adults, the stroller, and the second infant wait at the flat lower shrine grounds (Arakura Sengen Shrine) or take a turn on a later visit. It is worth the effort for one reason - the five-story pagoda framed against Mt. Fuji from the top is the single most photographed view in the Fuji Five Lakes region, and arguably in Japan. The Kawaguchiko Music Forest Museum, a music-box museum on the north shore, isn't part of this day: fitting in the stair climb plus the two extra train rides Chureito needs takes its own slot rather than working as an add-on.
 
 **On the grocery run and hangaku timing:** OGINO Kawaguchiko's food section runs 9:00-21:00 (verified), so it's a small-town store, not a 24-hour city outlet, but it isn't an early-closing one either. The Day 11 shop happens at 16:10-16:45, mid-afternoon and nowhere near this store's own hangaku window, so it's priced at full retail throughout this leg, not a discounted run - no markdown is claimed or needed here, since the family isn't trying to squeeze an evening store trip in around the ~19:00-19:30 infant bedtime this shared-kitchen stretch already keeps.
 
-**Also considered and rejected for this leg:** Kitaguchi Hongu Fuji Sengen Jinja (the cedar-forest shrine a 15-20 minute walk from Chureito) is honestly the more infant-friendly of the two Fujiyoshida-area options - flat forest paths, no stair climb - but pairing it with Chureito the same afternoon would add another 30-40 minutes on top of an already-extended day, and no other day on this leg has the spare slack to host it instead: Day 12 already runs an hour past its 7h active cap once its own bus legs are honestly counted, and Day 13 has only about 10 minutes of slack once the ryokan evening and the real luggage-retrieval walk are accounted for. Lake Motosu's Nakanokura Pass viewpoint (the ¥1,000-note view) needs a 50-minute bus ride plus a 20-30 minute uphill, unpaved, carrier-only hike for essentially the same lake-and-Fuji framing Oishi Park already delivers tomorrow with zero stairs and a 25-minute bus ride - not worth a spare half-day this trip doesn't have. The Fugaku Wind Cave and Narusawa Ice Cave (lava-tube caves near Aokigahara) are a genuinely different kind of activity, but sit a further 30-minute bus ride out, and the Ice Cave specifically requires crouching through low, narrow tunnels that do not work with a carried infant - between the added transit and only one of the two caves really being usable with this party, neither makes the cut on a leg that has already added one full extra outing.
+**Also considered and rejected for this leg:** Kitaguchi Hongu Fuji Sengen Jinja (the cedar-forest shrine a 15-20 minute walk from Chureito) is honestly the more infant-friendly of the two Fujiyoshida-area options - flat forest paths, no stair climb - but pairing it with Chureito the same afternoon would add another 30-40 minutes on top of an already-extended day, and no other day on this leg has the spare slack to host it instead: Day 12 already runs about an hour past its 7h active cap, and Day 13 has very little slack once the ryokan evening and the luggage-retrieval walk are factored in. Lake Motosu's Nakanokura Pass viewpoint (the ¥1,000-note view) needs a 50-minute bus ride plus a 20-30 minute uphill, unpaved, carrier-only hike for essentially the same lake-and-Fuji framing Oishi Park already delivers tomorrow with zero stairs and a 25-minute bus ride - not worth a spare half-day this trip doesn't have. The Fugaku Wind Cave and Narusawa Ice Cave (lava-tube caves near Aokigahara) are a genuinely different kind of activity, but sit a further 30-minute bus ride out, and the Ice Cave specifically requires crouching through low, narrow tunnels that do not work with a carried infant - between the added transit and only one of the two caves really being usable with this party, neither makes the cut on a leg that has already added one full extra outing.
+
+Active out-of-lodging time: about 7h15 (3h50 before the rest block, 3h25 after), plus a 1h30 rest block. This runs about 15 minutes over the ~7h guideline - most of it is the Tokyo-to-Kawaguchiko transfer plus the extra train ride out to Chureito Pagoda.
 
 ### Lodging
 
@@ -81,7 +81,7 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Chureito Pagoda / Arakurayama Sengen Park | 1h10 | 0 | 0 | 3353-1 Arakura, Fujiyoshida-shi, Yamanashi Prefecture | A five-story vermilion pagoda set on a hillside above Lake Kawaguchi's basin, with Mt. Fuji rising directly behind it - it is the single most photographed view in the Fuji Five Lakes region, the shot most people picture when they picture this whole leg of the trip. The payoff is the framed pagoda-and-Fuji composition from the viewing platform beside the pagoda, reached via 398 stone steps or a longer, gentler zig-zag slope path alongside them; both routes are carrier-only, not stroller-compatible, all the way up, so one adult carries one infant while the other two and the stroller wait at the flat lower shrine grounds. Free entry, no booking needed; this replaces the Kawaguchiko Music Forest Museum from the original plan, since fitting in a stair climb plus two extra train rides needed its own slot rather than an add-on. |
+| Chureito Pagoda / Arakurayama Sengen Park | 1h10 | 0 | 0 | 3353-1 Arakura, Fujiyoshida-shi, Yamanashi Prefecture | A five-story vermilion pagoda set on a hillside above Lake Kawaguchi's basin, with Mt. Fuji rising directly behind it - it is the single most photographed view in the Fuji Five Lakes region, the shot most people picture when they picture this whole leg of the trip. The payoff is the framed pagoda-and-Fuji composition from the viewing platform beside the pagoda, reached via 398 stone steps or a longer, gentler zig-zag slope path alongside them; both routes are carrier-only, not stroller-compatible, all the way up, so one adult carries one infant while the other two and the stroller wait at the flat lower shrine grounds. Free entry, no booking needed; the Kawaguchiko Music Forest Museum isn't part of this day, since fitting in a stair climb plus two extra train rides needs its own slot rather than an add-on. |
 
 ### Day 11 Cost
 
@@ -93,7 +93,7 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 | Activities | 0 | 0 |
 | **Day total** | 36,020 | 232 |
 
-**Running total after Day 11: ¥419,680 ($2,708)**
+**Running total after Day 11: ¥423,730 ($2,734)**
 
 ---
 
@@ -127,13 +127,13 @@ Local city-transit fares above are 2026 planning estimates from current IC-card 
 | 18:20 | 0h30 | Food | Dinner |
 | 18:50 | 1h00 | Rest | Bath, bedtime routine, warm layers for the night |
 
-Active out-of-lodging time: ~8h05 (07:30-13:15 = 5h45, then 14:45-17:05 = 2h20) - over the ~7h cap by about an hour. The overage is honest, not padding: this pass surfaced two transit legs the original draft skipped entirely, the walk from the houtou restaurant back to K's House, and the bus trip out to Kubota Itchiku Art Museum and back, together worth about 1h05 that was never on the clock before. To keep the evening close to this leg's usual ~19:00 bath start despite that, the museum visit is trimmed from 1h30 to 1h15, wind-down from 1h00 to 0h30, and cooking from 1h00 to 0h45 - real cuts, not rounding, but the museum and kitchen time were the only slack this day had left once the bus legs are honestly counted.
-
 **On foliage:** the Momiji Kairo maple corridor along this north shore does color and gets a night illumination in autumn, but that illumination period typically runs from roughly November 1 through early December - it has **not** started during this October 17-19 stay. At ~830m elevation the maples here are ahead of the lowland cities, but expect green-to-just-turning color today, not the full red corridor; the daytime walk is still worthwhile for the lake/Fuji views regardless.
 
 **Excluded nearby: Fuji-Q Highland.** It sits right next to Kawaguchiko Station, but its headline rides are extreme roller coasters with no infant suitability, and even its kids'-zone day pass runs ¥6,500-7,000/adult - poor value and a poor fit for a 12 - and 20-month-old. Skipped this trip.
 
 **On nabemono:** nabemono is the general Japanese term for hot pot - a single simmering pot of broth, vegetables, protein, and noodles or rice shared at the table, into which everyone adds and retrieves their own ingredients as they cook. Japanese households switch over from summer's cold noodle dishes to nabe as the weather turns, and late October is squarely inside that season; tonight is the one genuinely cold night of the whole trip (Kawaguchiko already down to 6-10°C after dark), so cooking one in K's House's shared kitchen is both climatically right and easy. The 20-month-old can eat softened cabbage, mushrooms, tofu and udon straight from the pot once cooled and cut small; the 12-month-old stays on formula and pouches as usual. **Scald risk, stated plainly:** the pot itself keeps bubbling well after it's brought to the table, so it goes in the middle, out of a toddler's reach, and an adult - never the toddler - ladles every portion.
+
+Active out-of-lodging time: about 8h05 (5h45 before the rest block, 2h20 after), plus a 1h30 rest block. This runs about 1h05 over the ~7h guideline - it's the segment's fullest day, covering both the north-shore viewpoints and the Kubota Itchiku museum with a bus ride each way.
 
 ### Lodging
 
@@ -178,7 +178,7 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 | Activities | 11,400 | 74 |
 | **Day total** | 43,850 | 283 |
 
-**Running total after Day 12: ¥463,530 ($2,991)**
+**Running total after Day 12: ¥467,580 ($3,017)**
 
 ---
 
@@ -216,11 +216,13 @@ Adult kcal sum: 550 + 750 + 700 = **2,000**.
 | 18:30 | 1h00 | Food | Kaiseki dinner |
 | 19:30 | 0h45 | Rest | Futon laid out, bath/bedtime routine for the infants |
 
-Active out-of-lodging time: ~6h50 (07:30-11:30 = 4h00, then 13:35-16:25 = 2h50) - up from the original 5h35 once every walk is actually on the clock: the station walk each way, the midday return to K's House, and above all the luggage retrieval, which is a genuine round trip (K's House is a real ~15-minute walk from the station each way, not the single 15-minute round-trip the original draft assumed), not a five-minute errand. Oshino Hakkai is trimmed from 2h00 to 1h45 and Saiko Iyashi-no-Sato from 1h15 to 1h00, and free time before the bath from 1h00 to 0h30, to absorb most of that newly-honest time and keep kaiseki dinner close to its original ~18:15-18:30 seating rather than sliding toward 19:30. Still under the 7h cap, and, per this day's own convention, the evening at the ryokan (private bath, kaiseki dinner, futon) is time spent at the lodging, not "out" of it.
+The luggage retrieval is a genuine round trip: K's House is a real ~15-minute walk from the station each way, not a five-minute errand, so it gets its own two Transit rows rather than being folded into a single stop. The evening at the ryokan (private bath, kaiseki dinner, futon) is time spent at the lodging, not "out" of it.
 
 **On the onsen and the ryokan swap:** most Kawaguchiko communal onsen baths post their own age/diaper restrictions for the shared tub, and this varies facility to facility without a single published rule - don't assume a public bath would admit a 12- and 20-month-old. Communal baths in Japan also commonly refuse guests with visible tattoos, a separate and much more widely known restriction of its own. Either way, a private kashikiri bath sidesteps both issues at once, since a booked room/time-slot takes the whole party in regardless of age or tattoos. That is the reasoning behind moving tonight's stay from K's House to Lakeland Hotel Mizunosato, a lakeside ryokan with a rentable private family bath: it is also this trip's one deliberate night on futon and tatami, the signature Japanese lodging experience that otherwise doesn't appear anywhere across all 30 nights.
 
-**Cost of the swap:** the ryokan's room-only rate alone (¥41,580 for 3 adults) is ¥23,580 above the ¥18,000 K's House flat rate it replaces - inside the ¥18,000-33,000 target band. Counting the added kaiseki dinner and Japanese breakfast (which replace cheaper self-cooked/pantry meals) against the cheaper, verified real private-bath rate (¥2,750 vs. the ¥4,500 placeholder the earlier plan carried), the full day-by-day cost difference versus the original K's House-based Day 13 is about +¥25,070 - still comfortably inside that band.
+**Cost of the ryokan night:** the room-only rate (¥41,580 for 3 adults) is ¥23,580 above the ¥18,000 K's House rate used elsewhere on this leg, inside the ¥18,000-33,000 target band. The kaiseki dinner and Japanese breakfast (in place of cheaper self-cooked/pantry meals) plus the ¥2,750 private bath (a confirmed rate) round out the added cost for the night, for a day-by-day difference of about +¥25,070 against a K's House-based night - still comfortably inside that band.
+
+Active out-of-lodging time: about 6h55 (4h00 before the rest block, 2h55 after), plus a 1h45 rest block.
 
 ### Lodging
 
@@ -273,7 +275,7 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 | Activities | 5,150 | 33 |
 | **Day total** | 57,720 | 372 |
 
-**Running total after Day 13: ¥521,250 ($3,363)**
+**Running total after Day 13: ¥525,300 ($3,389)**
 
 ---
 
@@ -307,9 +309,11 @@ Adult kcal sum: 550 + 750 + 750 = **2,050**.
 | 18:30 | 0h10 | Transit | Walk, dinner spot → Toyoko Inn |
 | 18:40 | 0h30 | Rest | Settle in, bath, bedtime routine |
 
-Active out-of-lodging time runs to roughly 7h30 today - over the usual ~7h guideline, but this is the itinerary's one full intercity transfer day: the fixed bus + shinkansen leg alone is ~4h before any buffers, exactly as scoped in the brief ("Total travel day ~4 hours plus buffers"). The extra 10 minutes over the previously-stated 7h20 is the honest cost of the two short walks to and from dinner, which the original draft placed the restaurant at with no travel time at all. No sightseeing exertion is stacked on top of any of this; the neighbourhood walk after the rest block is optional and easy to shorten.
+This is the itinerary's one full intercity transfer day: the fixed bus + shinkansen leg alone is ~4h before any buffers, exactly as scoped in the brief ("Total travel day ~4 hours plus buffers"). No sightseeing exertion is stacked on top of this; the neighbourhood walk after the rest block is optional and easy to shorten.
 
 Toyoko Inn Kyoto Shijo-Omiya's free breakfast buffet starts tomorrow (Day 15) - arrival tonight is too late to use it, so dinner is bought out.
+
+Active out-of-lodging time: about 7h35 (5h25 before the rest block, 2h10 after), plus a 1h50 rest block. This runs about 35 minutes over the ~7h guideline - it's the trip's one full intercity transfer day, with roughly 4h of fixed bus-and-shinkansen travel before any buffers.
 
 ### Lodging
 
@@ -356,7 +360,7 @@ Allow the full 20-30 min buffer at Mishima per the brief; the schedule above boo
 | Activities | 0 | 0 |
 | **Day total** | 71,900 | 464 |
 
-**Running total after Day 14: ¥593,150 ($3,827)**
+**Running total after Day 14: ¥597,200 ($3,853)**
 
 ---
 
@@ -377,4 +381,4 @@ Envelope check against the segment's assigned cells (lodging is fixed for the K'
 
 Lodging (fixed for the two properties, informational): 2 nights at K's House Mt. Fuji (¥18,000 x 2 = ¥36,000) + 1 night at Lakeland Hotel Mizunosato ryokan (¥41,580, room-only rate) + 1 night at Toyoko Inn Kyoto Shijo-Omiya (¥19,000) = ¥96,580. The ryokan night is ¥23,580 above the ¥18,000 K's House rate it replaces (or about +¥25,070 counting the day's meal and activity changes too) - within the ¥18,000-33,000 net-add target set for this swap, funded from the trip's discretionary headroom rather than this segment's lodging line.
 
-**Running total after Day 14: ¥593,150 ($3,827)**
+**Running total after Day 14: ¥597,200 ($3,853)**

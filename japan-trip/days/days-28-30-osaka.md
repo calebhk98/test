@@ -35,7 +35,9 @@
 | 17:55 | 0:15 | Transit | Walk back to hotel |
 | 18:10 | - | Lodging | Return to hotel, infants down |
 
-Active out-of-lodging time: ~8h20 (morning museum-plus-Kobe circuit ~6h10, evening dinner-plus-illumination ~2h10), either side of a shortened 1h35 rest block at the hotel. Kobe Harborland to Nankinmachi is a genuine ~15-minute walk and Nankinmachi to Meriken Park a further ~10 minutes with the stroller; those two legs, previously shown as free, add 25 minutes that the midday rest block absorbs so the 16:00 Dotonbori walk and the rest of the evening stay on schedule. This now runs about 1h10 over the day's already-flagged "deliberately full day" total - the direct cost of the realistically 1h30 Anpanman visit plus these two connecting walks; the rest block is trimmed but not dropped.
+Kobe Harborland to Nankinmachi is a genuine ~15-minute walk and Nankinmachi to Meriken Park a further ~10 minutes with the stroller; the midday rest block absorbs that time so the 16:00 Dotonbori walk and the rest of the evening stay on schedule.
+
+Active out-of-lodging time: about 8h20 (6h10 before the rest block, 2h10 after), plus a 1h35 rest block. This runs about 1h20 over the ~7h guideline - it's a deliberately full day combining the Kobe day trip with the Midosuji illumination's opening night.
 
 ### Lodging
 
@@ -85,7 +87,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 11,250 | 73 |
 | **Day total** | **34,210** | **221** |
 
-**Running total after Day 28: ¥1,145,560 ($7,391)**
+**Running total after Day 28: ¥1,152,500 ($7,435)**
 
 ---
 
@@ -120,15 +122,14 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | 19:12 | 0:15 | Transit | Walk back to hotel |
 | 19:27 | - | Lodging | Return to hotel, infants down |
 
-Active out-of-lodging time: ~7h32 across two blocks (morning castle + midday rest in the park,
-afternoon market/tower/canal circuit + evening dinner), plus a second downtime block at the
-hotel. Two connecting walks that the prior draft left at zero time - Osaka Castle Park back to
-Tanimachi 4-chome Stn (~10 min) and Den Den Town to Kuromon Ichiba, which are a genuine ~10-15
-minutes apart, not adjacent (~12 min) - are now shown explicitly, and the evening also now
-carries an explicit 15-minute walk from the hotel to Kushikatsu Daruma in Dotonbori that the
-previous draft's clock silently assumed away (the schedule jumped straight from 17:50 to 18:05
-with no row covering it). This pushes further over the 7h guideline than before, but this is
-the trip's last full day and still holds two separate rest/downtime blocks either side of it.
+Osaka Castle Park back to Tanimachi 4-chome Stn is a genuine ~10-minute walk, and Den Den Town
+to Kuromon Ichiba is a genuine ~10-15 minutes apart, not adjacent (~12 min); the evening also
+carries an explicit 15-minute walk from the hotel to Kushikatsu Daruma in Dotonbori. This is
+the trip's last full day and still holds two separate rest/downtime blocks across it.
+
+Active out-of-lodging time: about 8h02, plus a 1h30 rest block. This runs about 1h00 over the
+~7h guideline - it's the trip's last full day, covering the castle, two markets, Shinsekai,
+and a Dotonbori evening.
 
 **On Bunraku, considered and not scheduled:** see the note at the end of this day's write-up, after the Cost table.
 
@@ -180,7 +181,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 10,500 | 68 |
 | **Day total** | **38,150** | **246** |
 
-**Running total after Day 29: ¥1,183,710 ($7,637)**
+**Running total after Day 29: ¥1,190,650 ($7,682)**
 
 **Option on the table, not scheduled: Bunraku at the National Bunraku Theatre.** The theatre sits one minute from Kintetsu Nipponbashi Station, the same block as this day's Kuromon Ichiba lunch stop, and its Kinshu (Autumn) run covers 31 Oct - 23 Nov 2026 - open the entire Osaka stay. Bunraku puppets are worked in full view, roughly a metre tall, each handled by three visible black-clad puppeteers, with a chanter and shamisen player performing live at the side of the stage; nothing is spoken that needs translating to follow it, which makes it arguably the single best answer on this whole trip to "how is Japanese theatre different from American theatre." Tickets run about ¥6,500/adult, uniform seating, and the theatre's own FAQ sets no minimum age - only a policy that a disruptive child may be asked to step out, with lobby monitors as a fallback. **It is not scheduled, for one plain reason: Part 1 alone runs 2h20 or longer, which means one adult sits alone with both infants for that entire stretch on the trip's last full day**, and taking it means dropping the Tombori River Cruise above and trimming the Shinsekai stop to make room. It is priced and ready to book as-is if the family decides that trade is worth it; it is left out of the schedule and the Day 29 Cost table above on the assumption that it is not.
 
@@ -207,7 +208,7 @@ The **JR Kansai-Hiroshima Area Pass expired at the end of Day 28 (Nov 3)**, so t
 | 13:00 | 0:30 | Food | Light meal at airside food court before boarding |
 | 13:30 | - | Admin | Board flight (airfare and in-flight meal not costed in this itinerary) |
 
-Total time from hotel to boarding: ~4h30, comfortably under the 7h active cap - appropriate for a travel day with infants.
+Active out-of-lodging time: about 4h30, with no midday rest block needed - a short, buffered travel day to the airport, comfortably under the ~7h guideline.
 
 ### Lodging
 
@@ -245,7 +246,7 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 | Activities | 0 | 0 |
 | **Day total** | **7,790** | **50** |
 
-**Running total after Day 30: ¥1,191,500 ($7,687)**
+**Running total after Day 30: ¥1,198,440 ($7,732)**
 
 ---
 
@@ -262,13 +263,11 @@ Adult kcal/day: 500 + 700 + 750 = **1,950**.
 **Confirmed against the envelope** (Food ¥25,000 / Transport ¥10,300 / Activities ¥18,000):
 - Food: ¥25,200 vs ¥25,000 - **+0.8%**, within the ±5% band.
 - Transport: ¥7,200 vs ¥10,300 - **-30.1%**, under. Genuine, not padded: the JR Kansai-Hiroshima Area Pass covers all Day 28 JR travel to and from Kobe at ¥0 on its final valid day, Namba/Dotonbori/Shinsekai/Kuromon sit close enough together to cover several connections on foot, and swapping the paid Kitano city-bus fare (¥780 party) for a JR hop to Kobe Harborland that the pass also covers removes another paid leg.
-- Activities: ¥21,750 vs ¥18,000 - **+20.8%**, over the ±5% band. This flips the prior under-spend: Anpanman Children's Museum & Mall (Day 28, ¥11,250 - see note below on why the party cost isn't adult x3) replaces the free Kitano Ijinkan walk, while Day 29 keeps its existing paid admissions (Osaka Castle keep, Tsutenkaku, the Tombori River Cruise at its verified ¥2,000/adult fare - see below) plus the free Den Den Town add. The overage is the direct, expected cost of the approved Anpanman addition, funded from the trip's discretionary budget per the decision list, not padded or hidden.
+- Activities: ¥21,750 vs ¥18,000 - **+20.8%**, over the ±5% band. Anpanman Children's Museum & Mall (Day 28, ¥11,250 - see note below on why the party cost isn't adult x3) is the main driver, while Day 29 keeps its paid admissions (Osaka Castle keep, Tsutenkaku, the Tombori River Cruise at its verified ¥2,000/adult fare - see below) plus the free Den Den Town add. The overage is the direct, expected cost of the approved Anpanman addition, funded from the trip's discretionary budget per the decision list, not padded or hidden.
 - Lodging (fixed, not part of the flex envelope): ¥26,000 for nights 2 and 3 of 3 at Toyoko Inn Osaka Namba, matching the ¥13,000/night rate in the brief.
 
 **On the Anpanman party cost:** unlike almost every other site in this itinerary, the Museum Zone charges everyone aged 1 and up, infants included - both Infant A (~12mo) and Infant B (~20mo) are past that threshold by the Nov 3 visit date, so the ¥11,250 party figure is 5 payers at roughly ¥2,250 each (3 adults + 2 infants), not the usual adult x 3. This is the stated exception to the Party = Adult x 3 rule.
 
 The Transport underspend is not overspend elsewhere - it is real savings from the pass's last day and from routing the Anpanman trip over an already-covered JR leg, left as-is per the honesty rule rather than padded to hit the target.
 
-**Duplication fix (per the Osaka audit, `places/osaka.md`):** Day 27 and Day 29 both originally carried a Dotonbori canal walk plus the Tombori River Cruise, with the cruise charged twice at two different fares. Day 27 (written by another agent) drops the cruise; this file keeps it on Day 29 as the day's closing activity and corrects its fare from a previously-used ¥1,600/adult to the verified market rate of **¥2,000/adult (¥6,000 party), confirmed via osaka-info.jp** - 20 minutes, departing Tazaemonbashi Pier by the Don Quijote store, infants free. Umeda Sky Building (from the old, now-replaced Day 22 Osaka day-trip draft) is deliberately not added here: it sits in Kita, across town from every other Osaka stop in this file, Day 28 is already at the pacing cap, and Tsutenkaku already covers the "view over the city" beat on Day 29. Osaka Castle now appears exactly once across Days 27-30, on Day 29, since Day 22's duplicate visit is gone.
-
-*Running total baseline: ¥1,055,100 ($6,807) after Day 27, computed from the fixed lodging schedule plus the Days 1-27 segment envelopes in MASTER-BRIEF.md (Day 27 itself is written by another agent and belongs to the Hiroshima + transfer segment, not this one).*
+The Tombori River Cruise appears once across Days 27-30, on Day 29 as the day's closing activity, at the verified market rate of **¥2,000/adult (¥6,000 party), confirmed via osaka-info.jp** - 20 minutes, departing Tazaemonbashi Pier by the Don Quijote store, infants free. Umeda Sky Building is deliberately not added here: it sits in Kita, across town from every other Osaka stop in this file, Day 28 is already at the pacing cap, and Tsutenkaku already covers the "view over the city" beat on Day 29. Osaka Castle appears exactly once across Days 27-30, on Day 29.

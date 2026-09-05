@@ -41,9 +41,20 @@ August 2026** - buy Wakodo, Pigeon or Morinaga instead.
 dryer at ¥500 a load, the Toyoko Inn properties have coin laundry, and the Tokyo
 kitchenette room makes hand-washing practical. Budgeted in the misc line.
 
-**Pacing.** Every day in this report has a rest block of 1h30 to 2h00 and caps active
-out-of-lodging time at roughly seven hours. Day 14, the Kyoto transfer, is the single
-deliberate exception at about 7h20 and is flagged as such on the day.
+**Pacing.** Every day has a rest block of 1h30 to 2h00, taken back at the lodging or
+in a park. Each day states its own active out-of-lodging time, measured from leaving the
+accommodation to returning and excluding time back at it.
+
+Be realistic about what those figures say. **Eleven of the thirty days run at or under
+seven hours out of the lodging. Nineteen run over, and seven of those run past eight
+hours:** Days 5, 12, 20, 25, 26, 28 and 29. The long ones are the day trips and the
+transfers, which is where the time goes: Kamakura, Nara, Miyajima, Kobe, and the two
+intercity moves.
+
+That is a full trip, not a gentle one. Each of those days is marked in its own notes
+with what it is and why it runs long, and each still contains its rest block. If a day
+is going badly, the honest response is to drop its last activity rather than push
+through; the day notes name the item to cut where there is an obvious one.
 
 ## Appendix C. How 2,000 calories a day actually gets bought
 

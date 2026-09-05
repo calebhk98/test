@@ -1,11 +1,5 @@
 # Days 24-27 - Hiroshima + transfer to Osaka
 
-*Baseline note: the running totals below start from ¥885,100 ($5,710) after Day 23,
-calculated from the fixed per-segment envelopes in MASTER-BRIEF.md (Tokyo, Kawaguchiko
-+ transfer, Kyoto A, Kyoto B) plus the fixed lodging table, since individual Day 1-23
-files were not available when this segment was written. The trip editor should true this
-up once the actual Day 1-23 files exist.*
-
 ---
 
 ## Day 24 - Friday, October 30, 2026 - Kyoto to Hiroshima
@@ -39,10 +33,11 @@ up once the actual Day 1-23 files exist.*
 
 - Travel day: about 3h50 of seated transit plus a 1h45 midday rest block at the hotel and a
   light evening walk. The hotel is genuinely "Ekimae" (station-front, about a 5-minute walk
-  from Hiroshima Stn) but that walk is real and now shown both ways around lunch, and
-  Hondori arcade is a further 5-minute walk east of Peace Park rather than adjoining it;
-  those three short legs push infants-down to 17:35 instead of 17:20. Total out-of-lodging
-  active time still stays close to the ~7h cap.
+  from Hiroshima Stn), and Hondori arcade is a further 5-minute walk east of Peace Park
+  rather than adjoining it.
+- Active out-of-lodging time: about 7h10 (4h30 before the rest block, 2h40 after), plus a
+  1h45 rest block. This is a touch over the ~7h guideline, on a day that's otherwise a
+  seated shinkansen transfer.
 
 ### Lodging
 
@@ -92,7 +87,7 @@ the pass covers through Day 28 is written below as ¥0 "covered by pass."
 | Activities | 0 | 0 |
 | **Day total** | **73,650** | **475** |
 
-**Running total after Day 24: ¥1,024,360 ($6,609)**
+**Running total after Day 24: ¥1,031,300 ($6,654)**
 
 ---
 
@@ -135,9 +130,7 @@ by the rail pass beyond the island admissions.
   plan around now.
 - The island's stops are not adjacent: the Aquarium is a real ~10-minute walk from the
   shrine/Treasure Hall, Omotesando (lunch) is a further ~6 minutes from the Aquarium, and
-  Momijidani Park is about 20 minutes beyond that. Those three walks add 36 minutes that a
-  prior draft left unaccounted for; the "wind down before dinner" block at the hotel absorbs
-  it, so dinner still starts at 18:00 and infants still go down at 19:00 as planned.
+  Momijidani Park is about 20 minutes beyond that.
 - **Mt. Misen's summit trails are carrier-only, not stroller** - steep stone steps throughout.
   The ropeway substitutes a scenic ride: only 2 of the 3 adults go up (one may carry the
   20-month-old in the party's single carrier), while the third adult rests with the stroller and
@@ -145,6 +138,9 @@ by the rail pass beyond the island admissions.
   that doubles as the day's mandatory rest block.
 - The island's main areas (shrine approach, Omotesando shopping street, aquarium) are
   stroller-workable, including via the elevator underpass near the shrine.
+- Active out-of-lodging time: about 8h06, plus a 1h45 rest block. This runs about 1h05
+  over the ~7h guideline - it's a full day trip to Miyajima, with a ferry crossing each
+  way and four separate island stops.
 
 ### Lodging
 
@@ -198,7 +194,7 @@ without the pass. Infants ride the JR ferry free, same as JR trains.
 | Activities | 10,360 | 67 |
 | **Day total** | **34,160** | **220** |
 
-**Running total after Day 25: ¥1,058,520 ($6,829)**
+**Running total after Day 25: ¥1,065,460 ($6,874)**
 
 ---
 
@@ -242,11 +238,13 @@ Shukkei-en garden and Hiroshima Castle.
   grounds and moat path are flat and stroller-workable.
 - The morning circuit doubles back on itself geographically: the Museum sits at the park's
   south end (~15 min from the Dome), and the Orizuru Tower is back at the north end next to
-  the Dome (~15 min from the Museum), then Hondori is ~10 min further east. Those three walks
-  (40 minutes total) were previously shown as zero-time jumps; adding them pushes the day span
-  to about 12h10, just over the 12-hour guideline, with dinner now starting at 18:10 and
-  infants down around 19:10 - in line with the rest of the trip's evening rhythm rather than
-  earlier. The full 1h40 midday rest block at the hotel is unchanged.
+  the Dome (~15 min from the Museum), then Hondori is ~10 min further east. The day span runs
+  about 12h10, just over the 12-hour guideline, with dinner starting at 18:10 and infants down
+  around 19:10 - in line with the rest of the trip's evening rhythm. The full 1h40 midday rest
+  block at the hotel is unchanged.
+- Active out-of-lodging time: about 8h05 (4h30 before the rest block, 2h35 after), plus a
+  1h40 rest block. This runs about 1h05 over the ~7h guideline - a full circuit of the Peace
+  Park sites plus Shukkei-en and Hiroshima Castle in the same day.
 
 ### Lodging
 
@@ -297,7 +295,7 @@ infants ride free.
 | Activities | 9,090 | 59 |
 | **Day total** | **32,410** | **209** |
 
-**Running total after Day 26: ¥1,090,930 ($7,038)**
+**Running total after Day 26: ¥1,097,870 ($7,083)**
 
 ---
 
@@ -338,9 +336,11 @@ at Dotonbori.
   folded into the Dotonbori stop rather than given a separate transit leg - Daimaru
   Shinsaibashi's 9th floor is a few minutes' walk further up the Shinsaibashi-suji arcade from
   the canal, so that stop needs no extra time of its own. Namba Yasaka Shrine, though, is a
-  genuine ~15-minute walk each way from Dotonbori/Shinsaibashi, not an in-passing stop, and a
-  short walk to and from lunch near the hotel was previously shown as free; with those four
-  legs now timed honestly, infants still go down by 18:10, earlier than on Days 25 or 26.
+  genuine ~15-minute walk each way from Dotonbori/Shinsaibashi, not an in-passing stop; infants
+  still go down by 18:10, earlier than on Days 25 or 26.
+- Active out-of-lodging time: about 7h40 (4h05 before the rest block, 3h35 after), plus a
+  1h45 rest block. This runs about 40 minutes over the ~7h guideline - it's a shinkansen
+  transfer day with a full evening outing added on top.
 
 ### Lodging
 
@@ -376,7 +376,7 @@ covered in the next segment.
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Dotonbori canal walk | 0h45 | 0 | 0 | Dotonbori, Chuo-ku, Osaka (district; nearest station Namba - address unverified) | Osaka's best-known nightlife and dining strip, a canal-side promenade lined with oversized illuminated signs - the animated Glico "running man" billboard is the classic photo spot - plus arcades, restaurants and street-food stalls stacked along both banks. This is a browsing stop, not a ticketed attraction: free, flat, and stroller-workable along the main promenade, though it gets crowded and slow-moving after dark, worth knowing with a stroller in tow. Kept deliberately light for this arrival evening; the paid Tombori River Cruise is saved for the last full day in Osaka (Day 29) instead of being charged for twice, which is what the earlier draft did. |
+| Dotonbori canal walk | 0h45 | 0 | 0 | Dotonbori, Chuo-ku, Osaka (district; nearest station Namba - address unverified) | Osaka's best-known nightlife and dining strip, a canal-side promenade lined with oversized illuminated signs - the animated Glico "running man" billboard is the classic photo spot - plus arcades, restaurants and street-food stalls stacked along both banks. This is a browsing stop, not a ticketed attraction: free, flat, and stroller-workable along the main promenade, though it gets crowded and slow-moving after dark, worth knowing with a stroller in tow. Kept deliberately light for this arrival evening; the paid Tombori River Cruise is saved for the last full day in Osaka (Day 29) instead. |
 | Pokemon Center Osaka DX | 0h20 | 0 | 0 | Daimaru Shinsaibashi Main Bldg, 9F, 1-7-1 Shinsaibashisuji, Chuo-ku, Osaka 542-8501 | An official Pokemon retail store, not a game location or a ticketed attraction, selling plushes, trading cards, region-exclusive merchandise and stationery, with a life-size photo-op Pikachu near the entrance. Worth the stop for a Pokemon-loving family purely to browse and shop, nothing more elaborate than that, and it costs nothing to walk in and look without buying. It occupies the 9th floor of the Daimaru Shinsaibashi department store, a few minutes' walk north of the Dotonbori canal, open daily 10:00-20:00 with no ticket or reservation needed; unlike some other Pokemon Centers, this one has no attached cafe - Pokemon Cafe Osaka is a separate premises elsewhere in the city. It is elevator-served like any department-store floor, so fully reachable with the stroller, though the sales aisles themselves are shop-narrow and can get crowded - one adult minding the stroller near the entrance while the other browses with a toddler works better than pushing it through the display racks. |
 | Namba Yasaka Shrine | 0h20 | 0 | 0 | 2-9-19 Motomachi, Naniwa-ku, Osaka 556-0016 | A Shinto shrine whose main hall is built in the shape of an enormous lion's head, about 12 m tall with its mouth open as if swallowing evil spirits - a genuinely strange, striking piece of architecture rather than a typical shrine building, and unlike anything else on this trip. It is free, about a 10-minute walk from the hotel (and about 15 minutes from the Dotonbori/Shinsaibashi stretch this day is already visiting), and the whole visit is a flat, ground-level courtyard with no stairs and nothing to enter. It's a real there-and-back detour, not a stop that happens along the way, so the schedule now gives it its own walking time each direction rather than folding it into the Dotonbori walk for free. |
 
@@ -390,7 +390,7 @@ covered in the next segment.
 | Activities | 0 | 0 |
 | **Day total** | **20,420** | **132** |
 
-**Running total after Day 27: ¥1,111,350 ($7,170)**
+**Running total after Day 27: ¥1,118,290 ($7,215)**
 
 ---
 
@@ -405,10 +405,9 @@ covered in the next segment.
 | **Segment total** | **160,640** | **1,036** |
 
 Against envelope: Food -4.5% (target 30,000), Transport -2.6% (target 56,000) - both within
-the ±5% tolerance. Activities -25.2% (target 26,000) - now well under target, because this
-pass removed the Day 27 Tombori River Cruise (which duplicated a charge already kept on
-Day 29 in the Osaka file) and added Daisho-in Temple and Namba Yasaka Shrine, both free.
-That is a real saving from cutting a double-charge, not a shortfall to paper over, and it was
-the expected result of the two fixes this pass was asked to make; it is not backfilled with
-padding activities. Lodging is the fixed ¥15,000 x 3 nights + ¥13,000 x 1 night from
-MASTER-BRIEF and is not flexed.
+the ±5% tolerance. Activities -25.2% (target 26,000), well under target: the Tombori River
+Cruise appears only once across Days 27-29 (on Day 29, in the Osaka file) rather than being
+charged here too, and Daisho-in Temple and Namba Yasaka Shrine, both free, are added
+instead. That's a real saving from a single-charge cruise, not a shortfall to paper over, and
+it isn't backfilled with padding activities. Lodging is the fixed ¥15,000 x 3 nights + ¥13,000
+x 1 night from MASTER-BRIEF and is not flexed.

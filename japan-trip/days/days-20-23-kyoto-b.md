@@ -1,16 +1,5 @@
 # Days 20-23 - Kyoto B (day trips from the Kyoto base)
 
-*Baseline note: running totals below start from ¥739,410 ($4,770) after Day 19,
-calculated from the fixed per-segment envelopes in MASTER-BRIEF.md (Tokyo,
-Kawaguchiko + transfer, Kyoto A) plus the fixed lodging table, since individual
-Day 1-19 files were not available when this segment was written. This segment
-is built to close out at ¥885,100 ($5,710) after Day 23, matching the baseline
-already stated in days-24-27-hiroshima.md. The trip editor should true this up
-once the actual Day 1-19 files exist. This note predates the Day 22 revision
-below, which lowers the segment's actual total by ¥7,440 (to ¥138,250) versus
-the ¥145,690 this baseline assumed; fold that difference in alongside the
-actual Day 1-19 figures.*
-
 *Segment note: Days 15-19 (also Kyoto) covered Fushimi Inari, Kiyomizu-dera,
 Higashiyama, Gion, Nishiki Market, Arashiyama, Nijo Castle, Kinkaku-ji, the
 Philosopher's Path, the Imperial Palace grounds, and Jidai Matsuri; none of
@@ -20,43 +9,9 @@ the Day 24 move to Hiroshima. Himeji and Kobe are intentionally left for the
 Day 28 day trip from Osaka, which the JR Kansai-Hiroshima Area Pass covers,
 and putting them here would double-book that trip.*
 
-*Day 22 revision note: the original draft of this segment sent Day 22 to
-Osaka Castle Park, the Osaka Museum of History, and the Umeda Sky Building.
-That duplicated Days 27-29, which are based in Osaka and revisit Osaka Castle
-and Shinsekai there - the same castle would have appeared twice, five days
-apart. Day 22 is now a day trip to the Fushimi sake district
-(Chushojima/Fushimi-Momoyama), per the research and recommendation in
-places/kyoto.md Part 3. This is NOT Fushimi Inari (Day 15): Fushimi Inari is
-the torii-gate shrine on the mountain; the sake district is a flat,
-canal-lined neighbourhood a few km south of it, and Japan's second-largest
-sake-producing region after Nada near Kobe. The swap also lowers the day's
-cost materially, since the sake district's admissions are far cheaper than
-Osaka Castle plus the Umeda Sky Building; see the Day 22 Cost table and the
-segment totals below.*
-
 *Pass note: the JR Kansai-Hiroshima Area Pass does not start until Day 24
 (Oct 30). Every fare in this segment is paid at normal walk-up prices: nothing
 here is "covered by pass."*
-
-*Day 21 and 23 revision note (this pass): adds three approved items from the
-interest-coverage review (see proposals/DECISIONS.md, handson-toddler.md and
-anime.md). Day 21 gets a free note that Uji is the real-world setting of Kyoto
-Animation's Sound! Euphonium, and its dinner is swapped to yakitori - a named
-food gap that otherwise appeared on only one day in thirty across the whole
-trip - a net +¥900 to Day 21's Food line. Day 23 gets the headline addition:
-full-day kimono rental for the three adults (Yumeyakata, Gojo Shop, a verified
-2026 standard-plan rate) and a hands-on Nishijin weaving experience upgrading
-the day's previously passive kimono runway show. Both push Day 23's schedule
-and its Activities line up substantially (+¥23,430) and, with the added
-kimono-shop bus legs, its Transport line too (+¥690); this is an approved,
-deliberate overshoot of the segment's Activities envelope, funded from trip
-headroom rather than trimmed to fit - see the envelope check below. The
-Yumeyakata rate used here is its standing ¥5,280/adult rate, not the ¥4,180
-figure originally researched: that lower figure is a limited-time campaign
-price the operator's own site lists as running only through 31 August 2026,
-before these late-October travel dates, so the safer standing rate is used
-and should be reconfirmed closer to departure in case the campaign is
-renewed for autumn.*
 
 ---
 
@@ -94,14 +49,12 @@ renewed for autumn.*
 | 19:00 | 0h10 | Transit | Walk back to hotel |
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
-- This is the segment's one long day: about 9h45 out of the hotel across the day
-  (including the 1h30 park rest block), offset by a short evening outing only. The
-  walks between Kasuga Taisha, Manyo Botanical Garden, and Isuien Garden are real
-  ground to cover, not incidental, and are timed as such above; Isuien Garden's
-  schedule slot now also matches its own 0h35 duration in the Activities table
-  below, rather than the old combined "walk back via Isuien" block that quietly
-  assumed the walk itself was free. Days 21 and 23 are deliberately shorter to
-  compensate.
+- This is the segment's one long day: the walks between Kasuga Taisha, Manyo
+  Botanical Garden, and Isuien Garden are real ground to cover, not incidental, and
+  are timed as such above. Days 21 and 23 are deliberately shorter to compensate.
+- Active out-of-lodging time: about 8h15, plus a 1h30 rest block. This runs about
+  1h15 over the ~7h guideline - Kintetsu alone adds nearly 1h30 of transit each
+  way, on top of Nara's spread-out sights.
 
 ### Lodging
 
@@ -157,7 +110,7 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 | Activities | 8,700 | 56 |
 | **Day total** | **39,730** | **256** |
 
-**Running total after Day 20: ¥821,470 ($5,300)**
+**Running total after Day 20: ¥828,410 ($5,345)**
 
 ---
 
@@ -196,9 +149,10 @@ Under-6 admission is free at all five stops above; the ¥ figures are adult fare
 
 - Uji is compact, but the Tale of Genji Museum sits about 15 minutes north of
   Uji Bridge along the riverside path (Sawarabi-no-michi), the same walk done
-  outbound at 10:30; the return leg is now timed to match rather than assumed
-  free. Out-of-lodging time before the midday rest is right at 5h; the
+  outbound at 10:30, so the return leg carries its own travel time. This is the
   deliberately light day after yesterday's long one.
+- Active out-of-lodging time: about 7h10, plus a 1h45 rest block. This is right
+  at the ~7h guideline - the lightest of the segment's day trips.
 
 ### Lodging
 
@@ -238,7 +192,7 @@ party cost = adult fare x 3.
 |---|---|---|---|---|---|
 | Byodo-in garden + museum | 0h45 | 600 | 1,800 | 116 Renge, Uji-shi, Kyoto 611-0021 | Byodo-in is an 11th-century Buddhist temple whose Phoenix Hall, built in 1053, is one of Japan's most reproduced images: it's the building on the back of the ¥10 coin, so the reader can literally hold their own change up and compare. The wider ticket covers the pond garden - where the hall's reflection is the classic photo - and the Hoshokan treasure museum, which holds the temple's original bronze phoenix roof ornaments and a large bronze temple bell. Grounds and museum are flat, paved, and stroller-friendly; allow 45 minutes at a relaxed pace. |
 | Byodo-in Phoenix Hall interior | 0h15 | 300 | 900 | 116 Renge, Uji-shi, Kyoto 611-0021 (within Byodo-in) | A separate, timed small-group ticket to walk inside the Phoenix Hall itself and see its central gilded Amida Buddha statue and surviving fragments of the hall's original 11th-century wall paintings up close. Entries run in fixed groups through the day; the interior is a single narrow wooden walkway, not stroller-accessible and tight with a carrier, so one adult goes in while the other two wait outside with the kids. |
-| Taihoan tea ceremony | 0h45 | 1,000 | 3,000 | 1-5 Togawa, Uji-shi, Kyoto | Taihoan is Uji's municipal tea house, built for visitors to try Uji tea properly: whisking your own bowl of matcha (green tea ground to a fine powder and whisked directly into hot water) under a host's guidance, unlike steeped-leaf sencha, paired with a seasonal wagashi sweet. Uji has been Japan's most famous green-tea region since medieval times, and this is the trip's one hands-on tea experience rather than a shop purchase. Seating is low tatami-style with no chair option; toddlers are welcome alongside a parent, and the house is a short walk from Uji Station along the river. Price corrected during this pass from a ¥1,500/adult estimate to the operator's posted ¥1,000/adult rate. |
+| Taihoan tea ceremony | 0h45 | 1,000 | 3,000 | 1-5 Togawa, Uji-shi, Kyoto | Taihoan is Uji's municipal tea house, built for visitors to try Uji tea properly: whisking your own bowl of matcha (green tea ground to a fine powder and whisked directly into hot water) under a host's guidance, unlike steeped-leaf sencha, paired with a seasonal wagashi sweet. Uji has been Japan's most famous green-tea region since medieval times, and this is the trip's one hands-on tea experience rather than a shop purchase. Seating is low tatami-style with no chair option; toddlers are welcome alongside a parent, and the house is a short walk from Uji Station along the river. Priced at the operator's posted ¥1,000/adult rate. |
 | Tale of Genji Museum | 0h40 | 600 | 1,800 | 45-26 Higashiuchi, Uji-shi, Kyoto 611-0021 | A small, air-conditioned museum devoted to the Uji Chapters, the final ten chapters of The Tale of Genji (early 11th century, often called the world's first novel), which are set in Uji; exhibits include a scale palace model and a short film. It's a low-key indoor pause rather than a headline sight, useful precisely because it's a break from walking and weather. Fully flat, stroller-accessible, and rarely crowded. |
 
 Under-6 admission is free at all four stops; figures above are adult fares only.
@@ -259,7 +213,7 @@ rest above - free, no separate stop and no schedule change.
 | Activities | 7,500 | 48 |
 | **Day total** | **36,730** | **237** |
 
-**Running total after Day 21: ¥858,200 ($5,537)**
+**Running total after Day 21: ¥865,140 ($5,582)**
 
 ---
 
@@ -267,7 +221,7 @@ rest above - free, no separate stop and no schedule change.
 
 **Base:** Kyoto  
 **Weather (typical):** 21-25/15 °C, pre-peak foliage  
-**Theme:** Chushojima/Fushimi-Momoyama, Kyoto's historic sake-brewing quarter: canal-side brewery streets, the Gekkeikan Okura Sake Museum, and the Teradaya Inn. Not to be confused with Fushimi Inari (Day 15): this is a separate, flat neighbourhood a few km south of the shrine, and Japan's second-largest sake-producing region after Nada near Kobe. Replaces the original Day 22 plan (an Osaka Castle day trip that duplicated Days 27-29's Osaka-based visit to the same castle); see the segment note above. The shortest, flattest, and cheapest day trip of the segment - entirely stroller-friendly with no stairs anywhere on the route.
+**Theme:** Chushojima/Fushimi-Momoyama, Kyoto's historic sake-brewing quarter: canal-side brewery streets, the Gekkeikan Okura Sake Museum, and the Teradaya Inn. Not to be confused with Fushimi Inari (Day 15): this is a separate, flat neighbourhood a few km south of the shrine, and Japan's second-largest sake-producing region after Nada near Kobe. The shortest, flattest, and cheapest day trip of the segment - entirely stroller-friendly with no stairs anywhere on the route.
 
 ### Schedule
 
@@ -300,11 +254,11 @@ rest above - free, no separate stop and no schedule change.
 | 19:10 | 0h50 | Admin | Bath/bedtime routine |
 
 - The shortest transit day of the segment: roughly 34 minutes each way door to
-  door, versus the old Osaka day's ~55 minutes each way, so the midday rest
-  stays a full 1h45 and the family is back at the hotel by mid-afternoon. The
-  optional Fushimi Jikkokubune canal boat (55 min, ¥1,900/adult) is not
-  included in this plan or its budget below; see the Activities note for
-  adding it.
+  door, so the midday rest stays a full 1h45 and the family is back at the hotel
+  by mid-afternoon. The optional Fushimi Jikkokubune canal boat (55 min,
+  ¥1,900/adult) is not included in this plan or its budget below; see the
+  Activities note for adding it.
+- Active out-of-lodging time: about 6h55, plus a 1h45 rest block.
 
 ### Lodging
 
@@ -372,7 +326,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 | Activities | 9,300 | 60 |
 | **Day total** | **38,740** | **250** |
 
-**Running total after Day 22: ¥896,940 ($5,787)**
+**Running total after Day 22: ¥903,880 ($5,831)**
 
 ---
 
@@ -380,7 +334,7 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
 
 **Base:** Kyoto  
 **Weather (typical):** 21-25/15 °C, pre-peak foliage  
-**Theme:** The day's headline addition: kimono rental and hands-on Nishijin weaving, the trip's answer to the group's anime-robes wish and the whole-trip audit's "too passive" flag. No day trip: Nishijin's hand-loom weaving experience replaces yesterday's passive kimono show, the three adults wear rented kimono for a Kamo riverbank walk, and the day still closes with a neighbourhood sento and an early night before the Day 24 move to Hiroshima.
+**Theme:** The day's headline addition: kimono rental and hands-on Nishijin weaving, the trip's answer to the group's anime-robes wish. No day trip: the three adults wear rented kimono for a Kamo riverbank walk after the hands-on weaving experience, and the day still closes with a neighbourhood sento and an early night before the Day 24 move to Hiroshima.
 
 ### Schedule
 
@@ -414,10 +368,10 @@ advance. Adding it brings party Activities to ¥9,300 for the day.
   intact (2h00 at midday), but this is no longer the segment's quietest day:
   the kimono shop legs (Nishijin to lunch, the shop to the riverbank and back,
   Gojo Shop to hotel) and a genuine walk to and from the neighbourhood sento
-  add real transit that the previous draft left as zero-time jumps. Out-of-
-  hotel time now runs about 7h15 across the day's three outings, just over the
-  ~7h guideline - the honest cost of those walks - offset by the full 2h
-  midday rest and the 20:30 early night ahead of the shinkansen day.
+  add real transit across the day's three outings.
+- Active out-of-lodging time: about 7h15 (4h50 before the rest block, 2h25
+  after), plus a 2h00 rest block. This is just over the ~7h guideline, offset by
+  the full 2h midday rest and the 20:30 early night ahead of the shinkansen day.
 
 ### Lodging
 
@@ -446,18 +400,17 @@ Adult kcal: 500 + 650 + 850 = **2,000**.
 | Gojo Shop -> Kamo riverbank -> Gojo Shop | On foot | 0h15 | 0 | 0 |
 | Gojo Shop -> Hotel | Kyoto city bus | 0h18 | 230 | 690 |
 
-Three city-bus hops today instead of the original two, to reach and return
-from the kimono shop; still no private-rail or JR leg, so this remains a
-low-transport-cost day even with the added stop. Infants ride free on city
-buses; party cost = adult fare x 3.
+Three city-bus hops today reach and return from the kimono shop; still no
+private-rail or JR leg, so this remains a low-transport-cost day. Infants ride
+free on city buses; party cost = adult fare x 3.
 
 ### Activities
 
 | Activity | Duration | Adult (¥) | Party (¥) | Location | Details |
 |---|---|---|---|---|---|
-| Nishijin Textile Center: hands-on weaving + kimono show | 1h00 | 2,530 | 7,590 | Horikawa-dori Imadegawa-minami-iri Nishigawa, Kamigyo-ku, Kyoto 602-8216 | Nishijin-ori is Kyoto's roughly 1,200-year-old brocade weaving tradition, the reason this whole neighbourhood exists: since the medieval Muromachi period its workshops have hand-woven the elaborate, often gold-threaded fabric used for high-end kimono and obi sashes. Yesterday's version of this stop was a watch-only kimono runway show; today the family actually weaves, sitting at a mini hand-loom to make a small cloth (about 20x30cm) to take home, guided step by step - the trip's answer to the whole-trip audit's "too passive" finding. Reservation required at least 2 days ahead via the official nishijin.or.jp site; ¥2,530/adult at the 2026 posted rate, with the free kimono show and loom demonstrations downstairs still worth a look before or after at no extra cost. The building is flat and stroller-accessible, but a mini loom needs both hands and a foot treadle, so this is an adult-turn activity: the three adults weave one at a time while the other two mind the infants, who may enjoy watching the shuttle move for a few minutes but won't sit through the whole hour. |
+| Nishijin Textile Center: hands-on weaving + kimono show | 1h00 | 2,530 | 7,590 | Horikawa-dori Imadegawa-minami-iri Nishigawa, Kamigyo-ku, Kyoto 602-8216 | Nishijin-ori is Kyoto's roughly 1,200-year-old brocade weaving tradition, the reason this whole neighbourhood exists: since the medieval Muromachi period its workshops have hand-woven the elaborate, often gold-threaded fabric used for high-end kimono and obi sashes. The family weaves, sitting at a mini hand-loom to make a small cloth (about 20x30cm) to take home, guided step by step. Reservation required at least 2 days ahead via the official nishijin.or.jp site; ¥2,530/adult at the 2026 posted rate, with the free kimono show and loom demonstrations downstairs still worth a look before or after at no extra cost. The building is flat and stroller-accessible, but a mini loom needs both hands and a foot treadle, so this is an adult-turn activity: the three adults weave one at a time while the other two mind the infants, who may enjoy watching the shuttle move for a few minutes but won't sit through the whole hour. |
 | Kimono rental for the day | 0h30 (fitting; worn all day) | 5,280 | 15,840 | Yumeyakata Gojo Shop, 353 Shiogamacho, Shimogyo-ku, Kyoto 600-8103 (2F; 3-min walk from Gojo Stn, Kyoto Municipal Subway) | Yumeyakata is a well-known Kyoto kimono rental chain with English-speaking staff; its standard plan rents a full kimono set (garment, obi, tabi socks, and a bag) for the whole day, worn out and returned by 17:30 the same evening - the genuine hands-on version of the group's "robes from anime" wish, worn rather than watched. Adult fitting takes about 20-30 minutes with staff help; the shop's own 2026 pricing lists a discounted ¥4,180/adult "campaign" rate, but that campaign runs only through 31 August 2026, before these late-October dates, so the standing ¥5,280/adult rate used here is the honest figure (reconfirm at booking in case the campaign is renewed for autumn). Practically: a wrapped kimono skirt and a snugly tied obi are hard to nurse or change a diaper in, so this is adults-only for the day; wooden geta sandals plus a stroller is a genuinely awkward combination on anything but flat pavement, which is why the walk below stays on the paved riverside path; and some Kyoto rental shops restrict or halt rentals on rainy days, so treat this as a fair-weather plan and confirm the shop's rain policy when booking. Yumeyakata also sells (does not rent) baby hakama for under-85cm infants from ¥4,510, but that is a short photo-op garment neither infant - especially the 12-month-old - will tolerate for a full day; skip it unless the family specifically wants that one photo, and it is not included in the cost here. |
-| Kamo riverbank walk (in kimono) | 1h00 | 0 | 0 | Kamo River near Gojo, Shimogyo-ku, Kyoto (district; address unverified) | The Kamo River's grassy, paved banks near the kimono shop are today's photo backdrop while the three adults are dressed for the day - no ticket, no schedule, just flat green space and running water. It runs shorter than earlier drafts of this walk to leave room for the fitting and the return, and stays on the paved path throughout since geta sandals are slower and stiffer than sneakers on anything uneven. Free, and stroller-friendly for whichever infant is riding rather than being carried while an adult's hands are full of kimono sleeve. |
+| Kamo riverbank walk (in kimono) | 1h00 | 0 | 0 | Kamo River near Gojo, Shimogyo-ku, Kyoto (district; address unverified) | The Kamo River's grassy, paved banks near the kimono shop are today's photo backdrop while the three adults are dressed for the day - no ticket, no schedule, just flat green space and running water. It stays on the paved path throughout since geta sandals are slower and stiffer than sneakers on anything uneven. Free, and stroller-friendly for whichever infant is riding rather than being carried while an adult's hands are full of kimono sleeve. |
 | Local sento (public bath) | 0h45 | 490 | 1,470 | Neighbourhood bathhouse near Omiya (address unverified) | A sento is a neighbourhood public bathhouse, built historically because most homes didn't have their own bath, still used today for the ritual of soaking rather than washing at home. It differs from an onsen: an onsen's water is a natural hot spring with its own mineral content, while a sento simply heats tap or well water (some "super sento" blend the two). Bathing is nude and gender-separated, with full washing and rinsing at the stool-and-tap stations before entering the shared soaking tub; most sento still refuse visible tattoos, a policy rooted in their historical association with organized crime, so anyone in the party with tattoos should call ahead or bring a waterproof cover patch. Many sento welcome infants and toddlers into the same-gender bathing area with a parent, often with quieter family-friendly hours soon after opening, but both the tattoo and infant policy vary by bathhouse - confirm with the specific sento before going rather than assuming. |
 
 The Nishijin kimono show, the riverbank walk, and both infants at every stop
@@ -475,7 +428,7 @@ are free; the weaving experience and kimono rental are priced per adult only
 | Activities | 24,900 | 161 |
 | **Day total** | **53,770** | **347** |
 
-**Running total after Day 23: ¥950,710 ($6,134)**
+**Running total after Day 23: ¥957,650 ($6,178)**
 
 ---
 
@@ -492,9 +445,9 @@ are free; the weaving experience and kimono rental are priced per adult only
 Envelope check (Days 20-23, ±5% allowed): Food ¥30,000 target vs. ¥30,900 actual
 (+3%), within band - the ¥900 increase is Day 21's dinner swapping from a
 fast-food udon set to a yakitori dinner at Torikizoku (see Day 21 Meals).
-Transport ¥12,000 target vs. ¥11,670 actual (-2.75%), within band - closer to
-target than the prior draft's -8.5%, since Day 23's extra city-bus hop to and
-from the kimono shop (+¥690) partly offsets Day 22's earlier transport saving.
+Transport ¥12,000 target vs. ¥11,670 actual (-2.75%), within band - Day 23's
+extra city-bus hop to and from the kimono shop (+¥690) is partly offset by
+Day 22's shorter transit day.
 Activities ¥28,000 target vs. ¥50,400 actual (+80%), well outside the band on
 the high side: this is the approved, deliberate result of Day 23's headline
 addition - full-day kimono rental for three adults (¥15,840) plus the Nishijin
@@ -503,14 +456,3 @@ already-priced sake museum, Teradaya Inn, and Fushimi Jikkokubune canal boat.
 Per the trip editor's brief this overshoot is funded from trip headroom rather
 than trimmed to fit the envelope, and is reported here at its real cost.
 Lodging is fixed at ¥19,000/night x 4 = ¥76,000 and is not flexed.
-
-Historical note: Day 22's swap from an Osaka day trip to the Fushimi sake
-district (see the Day 22 revision note above) cut this segment's transport and
-activities costs well below their prior draft, which is why Transport still
-sits below its ¥12,000 target even after this pass adds a third bus leg on Day
-23 for the kimono rental. Day 21's Taihoan tea-ceremony price correction
-(¥1,500/adult to a verified ¥1,000/adult) is folded in as well. Net effect of
-this pass (Day 21's yakitori dinner and Sound! Euphonium note, Day 23's kimono
-rental and Nishijin weaving): the segment total rises from ¥143,950 to
-¥168,970, a ¥25,020 increase, driven almost entirely by the two Day 23
-headline additions and approved as described above.
