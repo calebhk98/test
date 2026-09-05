@@ -432,14 +432,27 @@ STORE_CITY = {
 shop_links = 0
 p2s = re.search(r"^# Days 1-10\b", doc, re.M).start(); p2e = doc.index("# Appendices")
 seg = doc[p2s:p2e]
-for store, section in sorted(STORE_CITY.items(), key=lambda kv: -len(kv[0])):
-    a = anchors.get(section)
-    if not a:
-        continue
-    pat = re.compile(r"(?<!\[)\b" + re.escape(store) + r"\b(?![^\[]*\]\()")
-    seg, n = pat.subn(f"[{store}](#{a})", seg)
-    shop_links += n
-doc = doc[:p2s] + seg + doc[p2e:]
+# Prefer the specific dated run for that day over the city section.
+run_anchor = {}
+for text, a in anchors.items():
+    m = re.match(r"^Run.*?-\s*Day\s+(\d+)", text)
+    if m:
+        run_anchor[int(m.group(1))] = a
+
+out_s, cur_d = [], None
+for line in seg.split("\n"):
+    dm = re.match(r"^##\s+Day\s+(\d+)\s*[-–]", line)
+    if dm:
+        cur_d = int(dm.group(1))
+    for store, section in sorted(STORE_CITY.items(), key=lambda kv: -len(kv[0])):
+        a = run_anchor.get(cur_d) or anchors.get(section)
+        if not a:
+            continue
+        pat = re.compile(r"(?<!\[)\b" + re.escape(store) + r"\b(?![^\[]*\]\()")
+        line, n = pat.subn(f"[{store}](#{a})", line)
+        shop_links += n
+    out_s.append(line)
+doc = doc[:p2s] + "\n".join(out_s) + doc[p2e:]
 print(f"store names linked to shopping runs: {shop_links}")
 
 # Render bare website URLs in the index tables as compact domain labels.

@@ -7,12 +7,11 @@ visit. Kyoto was the imperial capital for a thousand years and built itself arou
 temple patronage; Tokyo (Edo) was built around the shogun's military government. Osaka was neither.
 It grew rich as a trading floor. Under the Edo-period shogunate, feudal domains across Japan were
 required to ship their rice to Osaka before it went anywhere else, because rice was both food and
-currency - it was how taxes were paid and wealth was measured [VERIFIED, en.wikipedia.org/wiki/Rice_broker].
+currency - it was how taxes were paid and wealth was measured.
 Warehouses lined the rivers, merchants graded and sold the rice, and the city built the world's
-first organized futures market to trade rice contracts forward [VERIFIED, lawrencetravelstories.com
-/ asia453.wordpress.com]. The nickname that stuck, *tenka no daidokoro* - "the nation's kitchen" -
+first organized futures market to trade rice contracts forward. The nickname that stuck, *tenka no daidokoro* - "the nation's kitchen" -
 describes a city that made its fortune moving and provisioning goods, not one that made its fortune
-issuing decrees [VERIFIED, sakurabox.com]. There was no imperial court to defer to and no shogun's
+issuing decrees. There was no imperial court to defer to and no shogun's
 retainers to bow to; there was a trading floor, and on a trading floor everyone's money is the same
 color. That is the root of Osaka's reputation for bluntness, humor, and a much flatter social manner
 than either Kyoto or Tokyo - it is a city that was built by merchants for merchants, and it still
@@ -38,7 +37,7 @@ and it does not reward lingering the way a Kyoto garden does.
 
 Food is Osaka's actual identity, not just a pastime. The local word is **kuidaore** - literally "to
 eat oneself into ruin" - part of the older saying "dress until ruin in Kyoto, eat until ruin in
-Osaka" [VERIFIED, japaphrase.com / m.facebook.com]. It describes a city whose merchant class spent
+Osaka". It describes a city whose merchant class spent
 lavishly on food and where street food (takoyaki, okonomiyaki, kushikatsu) was democratized rather
 than kept behind restaurant doors. Practically, this makes Osaka the best-value eating city on this
 itinerary: takoyaki runs ¥500-600 and okonomiyaki ¥800-900 for genuinely filling street food (per
@@ -57,8 +56,7 @@ haggling-adjacent banter at market stalls, less of Kyoto's studied formality and
 quiet self-containment on trains. The one detail every guidebook mentions and that actually holds up
 on the ground: escalator etiquette flips here. Tokyo and Kyoto stand on the left and walk on the
 right; Kansai (Osaka, Kyoto's own stations included, Kobe) stands on the **right** and leaves the
-left open, a habit that traces to a 1967 platform announcement at Hankyu Umeda Station [VERIFIED,
-osakaa.net]. It is a small thing, but it is a real, checkable marker of having crossed from one
+left open, a habit that traces to a 1967 platform announcement at Hankyu Umeda Station. It is a small thing, but it is a real, checkable marker of having crossed from one
 culture zone to another within the same 30-minute train ride.
 
 What Osaka is best at: eating well and cheaply, a dense low-effort core (Namba/Dotonbori/Shinsekai)

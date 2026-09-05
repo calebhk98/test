@@ -7,7 +7,7 @@ hangaku-priced deli dinners already itemized day-by-day in the six day files are
 re-listed here; they are referenced in the strategy notes so the two documents don't
 appear to disagree.*
 
-Prices are 2026 planning estimates unless marked [VERIFIED]. Store chains and neighbourhoods
+Prices are 2026 planning estimates unless marked. Store chains and neighbourhoods
 are named from a web search done for this appendix; an exact branch is named only where a
 specific listing was found, otherwise the chain and neighbourhood are given with "branch to
 confirm." No street address is invented anywhere below - where a source gave one, it is
@@ -60,34 +60,32 @@ one lunch and one breakfast (Days 11-12) for this reason, not for three.
 Days @@DAYLINK:1@@-@@DAYLINK:10@@ | Hotel Livemax Higashi-Ueno, in-room kitchenette and fridge
 
 #### Run 1 - Day 1, Wed 7 Oct, ~15:15-16:15 (arrival stock-up)
-**Store:** Gyomu Super, Ueno-Hirokoji branch, 2-chome Ueno, Taito-ku [VERIFIED chain and this
-branch exist, WebSearch/NAVITIME; exact distance from the Motoasakusa hotel not independently
-mapped - roughly 15-20 min walk]. A second confirmed branch, Gyomu Super Ueno-Koen (Negishi
-1-2-13, Taito-ku), is a fallback if the Hirokoji store is out of the way [VERIFIED, WebSearch].
+**Store:** Gyomu Super, Ueno-Hirokoji branch, 2-chome Ueno, Taito-ku. A second confirmed branch, Gyomu Super Ueno-Koen (Negishi
+1-2-13, Taito-ku), is a fallback if the Hirokoji store is out of the way.
 
 | Item | Qty | Unit ¥ | Line ¥ |
 |---|---|---|---|
 | **Dry / staple** | | | |
-| Rice, 5kg bag | 1 | 4,800 | 4,800 [ESTIMATE, MASTER-BRIEF anchor] |
-| Soy sauce, 500ml | 1 | 280 | 280 [ESTIMATE] |
-| Miso paste, 750g tub | 1 | 380 | 380 [ESTIMATE] |
-| Cooking oil, 600ml | 1 | 328 | 328 [ESTIMATE] |
-| Salt / sugar, small | 1 each | 150 | 150 [ESTIMATE] |
+| Rice, 5kg bag | 1 | 4,800 | 4,800 |
+| Soy sauce, 500ml | 1 | 280 | 280 |
+| Miso paste, 750g tub | 1 | 380 | 380 |
+| Cooking oil, 600ml | 1 | 328 | 328 |
+| Salt / sugar, small | 1 each | 150 | 150 |
 | **Perishable** | | | |
-| Eggs, 10-pack | 1 | 300 | 300 [ESTIMATE, MASTER-BRIEF anchor ¥280-350] |
-| Milk, 1L | 2 | 260 | 520 [ESTIMATE, MASTER-BRIEF anchor ¥250-270] |
-| Sliced bread, 1 loaf | 1 | 248 | 248 [ESTIMATE, MASTER-BRIEF anchor ¥200-280] |
-| Chicken thigh, 400g | 1 | 320 | 320 [ESTIMATE, MASTER-BRIEF anchor ¥60-100/100g] |
-| Tofu, 1 block | 1 | 78 | 78 [ESTIMATE, MASTER-BRIEF anchor] |
-| Natto, 3-pack | 1 | 98 | 98 [ESTIMATE, MASTER-BRIEF anchor ~¥100] |
-| Mixed produce (cabbage, carrot, onion, spinach) | - | - | 680 [ESTIMATE] |
+| Eggs, 10-pack | 1 | 300 | 300 |
+| Milk, 1L | 2 | 260 | 520 |
+| Sliced bread, 1 loaf | 1 | 248 | 248 |
+| Chicken thigh, 400g | 1 | 320 | 320 |
+| Tofu, 1 block | 1 | 78 | 78 |
+| Natto, 3-pack | 1 | 98 | 98 |
+| Mixed produce (cabbage, carrot, onion, spinach) | - | - | 680 |
 | **Infant** | | | |
-| Formula tin, 800g (Wakodo or Pigeon) | 1 | 2,280 | 2,280 [ESTIMATE, MASTER-BRIEF anchor ¥2,000-2,500] |
-| Starter pouches (Wakodo/Morinaga rice porridge, veg puree) | 4 | 150 | 600 [ESTIMATE, MASTER-BRIEF anchor ¥100-200] |
-| Nappies, size M tape (12mo), ~58ct | 1 | 1,680 | 1,680 [ESTIMATE, cf. ¥1,000-2,000/pack of 50-70, WebSearch] |
-| Nappies, size L pants (20mo), ~44ct | 1 | 1,880 | 1,880 [ESTIMATE, cf. WebSearch pack pricing] |
-| Wipes, refill pack | 1 | 348 | 348 [ESTIMATE] |
-| Diaper rash cream, small tube | 1 | 800 | 800 [ESTIMATE] |
+| Formula tin, 800g (Wakodo or Pigeon) | 1 | 2,280 | 2,280 |
+| Starter pouches (Wakodo/Morinaga rice porridge, veg puree) | 4 | 150 | 600 |
+| Nappies, size M tape (12mo), ~58ct | 1 | 1,680 | 1,680 |
+| Nappies, size L pants (20mo), ~44ct | 1 | 1,880 | 1,880 |
+| Wipes, refill pack | 1 | 348 | 348 |
+| Diaper rash cream, small tube | 1 | 800 | 800 |
 | **Household** | | | |
 | Reusable grocery bag (avoids the ¥5 bag charge most Japanese supermarkets now levy) | 1 | 0 | 0 (bring from home) |
 | **Run 1 total** | | | **¥15,770 ($102)** |
@@ -100,7 +98,7 @@ meal's worth of ingredients plus a same-day infant top-up, not a full first-week
 Treat ¥15,770 as the more complete real-world Day 1 outlay.
 
 #### Run 2 - Day 6, Mon 12 Oct, ~16:00 (mid-stay top-up, covers Days 6-8)
-**Store:** LIFE Bioral Parco_ya Ueno, Ueno 3-24-6, B1 [VERIFIED, WebSearch].
+**Store:** LIFE Bioral Parco_ya Ueno, Ueno 3-24-6, B1.
 
 | Item | Qty | Unit ¥ | Line ¥ |
 |---|---|---|---|
@@ -118,7 +116,7 @@ Treat ¥15,770 as the more complete real-world Day 1 outlay.
 | **Run 2 total** | | | **¥3,094 ($20)** |
 
 #### Run 3 - Day 8, Wed 14 Oct, ~16:00 (deliberately small, sized to run down by Day 10)
-**Store:** Gyomu Super, Ueno-Koen branch [VERIFIED, WebSearch].
+**Store:** Gyomu Super, Ueno-Koen branch.
 
 | Item | Qty | Unit ¥ | Line ¥ |
 |---|---|---|---|
@@ -147,8 +145,7 @@ Days @@DAYLINK:11@@-@@DAYLINK:12@@ | K's House Mt. Fuji, shared guest kitchen
 
 #### Run - Day 11, Sat 17 Oct, ~16:10-16:45 (sized for Days 11-12 only)
 **Store:** OGINO Kawaguchiko, 545-3 Funatsu, Fujikawaguchiko-machi, Minamitsuru-gun, Yamanashi
-401-0301 [VERIFIED, WebSearch/Tabelog - a large one-floor supermarket a short walk from
-Kawaguchiko Station; matches the day file's "Kawaguchiko Stn -> supermarket" walk]. Bring a
+401-0301. Bring a
 bag - OGINO charges for plastic bags.
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -184,10 +181,7 @@ out near Kyoto/Omiya Stn per the day file (¥1,900 infant line) - a konbini stop
 run, so it isn't itemized separately here.
 
 #### Run 1 - Day 15, Tue 20 Oct, ~18:00 (infant-supply restock, covers roughly Days 15-19)
-**Store:** Gyomu Super, Saiin branch, one stop from Omiya on the Hankyu Kyoto Line [VERIFIED
-chain and this specific branch exist nearby, WebSearch; a closer branch directly at Shijo-Omiya,
-if one exists, was not independently confirmed - "Gyomu Super or drugstore near Shijo-Omiya,
-branch to confirm" per the day file's own language]. Drugstore alternative: Matsumoto Kiyoshi
+**Store:** Gyomu Super, Saiin branch, one stop from Omiya on the Hankyu Kyoto Line (the chain and this branch are confirmed nearby; a closer branch at Shijo-Omiya, if one exists, is unconfirmed). Drugstore alternative: Matsumoto Kiyoshi
 or Welcia - both chains are near Shijo-Omiya per general coverage, exact branch to confirm.
 
 | Item | Qty | Unit ¥ | Line ¥ |
@@ -244,7 +238,7 @@ Days @@DAYLINK:24@@-@@DAYLINK:26@@ | Toyoko Inn Hiroshima Ekimae Ohashi Minami, 
 
 #### Run - Day 24, Fri 30 Oct, ~15:00 (after ~11:35 check-in; sized for the whole 4-night block)
 **Store:** ekie, the shopping and supermarket complex directly connected to Hiroshima Station's
-south exit [VERIFIED, WebSearch - "includes a supermarket... just beyond the ticket gates"].
+south exit (supermarket just beyond the ticket gates).
 The hotel is in central Hiroshima, about 1.2 miles from Peace Memorial Park, and its exact
 address is unverified, so ekie (at the station) is named as the reliable option rather than
 guessing a closer branch; a conbini or drugstore nearer the hotel itself is a fine substitute
@@ -273,8 +267,8 @@ Days @@DAYLINK:27@@-@@DAYLINK:30@@ | Toyoko Inn Osaka Namba, no kitchen, free br
 
 #### Run - Day 27, Mon 2 Nov, arrival (sized for the 3-night block, no new nappies - Hiroshima's pack still has supply)
 **Store:** Life Namba, basement level, 1-2-3 Minato-machi, Naniwa-ku, Osaka, directly across
-from JR Namba Station, below the Hotel Monterey Grasmere [VERIFIED, WebSearch, open 9:00-24:00].
-Drugstore: Cocokara Fine, Namba store [VERIFIED chain and Namba branch, WebSearch].
+from JR Namba Station, below the Hotel Monterey Grasmere (open 9:00-24:00).
+Drugstore: Cocokara Fine, Namba store.
 
 | Item | Qty | Unit ¥ | Line ¥ |
 |---|---|---|---|
@@ -313,76 +307,76 @@ the pieces add up.
 
 Day @@DAYLINK:11@@, highway bus from Shinjuku
 - **Already eaten down:** Day 10's meals are explicitly written to use up "the last of the Day 1
-  pantry stock" (breakfast) and cook a "last-night" fried rice from remaining vegetables and egg
-  (dinner) - by design, nothing perishable should be left in the Livemax fridge that morning.
+ pantry stock" (breakfast) and cook a "last-night" fried rice from remaining vegetables and egg
+ (dinner) - by design, nothing perishable should be left in the Livemax fridge that morning.
 - **Carry:** partial formula tin (~200-400g left, weighs little), the remainder of one nappy
-  pack per infant (roughly 1kg combined), a few pouches. All of this fits in a side pocket of
-  the daypack, not a separate bag.
+ pack per infant (roughly 1kg combined), a few pouches. All of this fits in a side pocket of
+ the daypack, not a separate bag.
 - **Bin or leave behind:** an opened soy sauce/miso/oil set typically has real amounts left after
-  10 days of home cooking for 3 adults. In principle these are light enough to carry (well under
-  1kg combined), but K's House Mt. Fuji is a *different* kitchen, and hauling three opened
-  bottles through a reserved-seat highway bus with limited underseat luggage space (Fujikyu/Keio)
-  is more hassle than the ¥430 it costs to buy small replacements at OGINO on arrival - which the
-  Day 11 Kawaguchiko run already does. **Bin the opened bottles at Livemax checkout** rather than
-  pack them.
+ 10 days of home cooking for 3 adults. In principle these are light enough to carry (well under
+ 1kg combined), but K's House Mt. Fuji is a *different* kitchen, and hauling three opened
+ bottles through a reserved-seat highway bus with limited underseat luggage space (Fujikyu/Keio)
+ is more hassle than the ¥430 it costs to buy small replacements at OGINO on arrival - which the
+ Day 11 Kawaguchiko run already does. **Bin the opened bottles at Livemax checkout** rather than
+ pack them.
 - **Reserved-seat bus note:** the Day 11 Fujikyu/Keio bus has assigned seats and limited luggage
-  space per adult, one more reason not to carry bulky pantry items on this leg.
+ space per adult, one more reason not to carry bulky pantry items on this leg.
 
 ### Move 2: Kawaguchiko to Kyoto
 
 Day @@DAYLINK:14@@, bus to Mishima then the Hikari shinkansen
 - **Already eaten down:** the Day 11 grocery run was deliberately sized for Days 11-12 only,
-  so the K's House fridge should already read near-zero by the Day 12 dinner. Day 13 itself
-  moves to the ryokan (no self-catering), so there is no Day 13 grocery run to run down at all.
+ so the K's House fridge should already read near-zero by the Day 12 dinner. Day 13 itself
+ moves to the ryokan (no self-catering), so there is no Day 13 grocery run to run down at all.
 - **The fridge-empty deadline is Day 13 at 13:00, not Day 14.** The party checks out of K's
-  House at 13:00 on Day 13 - a full day before actually leaving Kawaguchiko - so anything still
-  in that fridge at that point (half a cabbage, an opened tofu block, a spoonful of leftover
-  rice) needs to be gone by then, not by the Day 14 departure.
+ House at 13:00 on Day 13 - a full day before actually leaving Kawaguchiko - so anything still
+ in that fridge at that point (half a cabbage, an opened tofu block, a spoonful of leftover
+ rice) needs to be gone by then, not by the Day 14 departure.
 - **Bin or give away:** half a bag of rice, an opened tofu block, or a scrap of vegetables is not
-  worth carrying onto a shinkansen with two infants and no kitchen for the next ten days -
-  **leave it in the K's House shared-kitchen free box** (a standard hostel-kitchen convention:
-  a shelf or bin where departing guests leave part-used pantry items for the next guest, rather
-  than binning genuinely usable food).
+ worth carrying onto a shinkansen with two infants and no kitchen for the next ten days -
+ **leave it in the K's House shared-kitchen free box** (a standard hostel-kitchen convention:
+ a shelf or bin where departing guests leave part-used pantry items for the next guest, rather
+ than binning genuinely usable food).
 - **Carry:** partial formula tin, remaining nappy stock, a couple of pouches for the journey -
-  same light dry-goods kit as Move 1, now slightly lighter. Nothing perishable crosses this move.
+ same light dry-goods kit as Move 1, now slightly lighter. Nothing perishable crosses this move.
 - **Ryokan night (Day 13):** kaiseki dinner and Japanese breakfast are both included - no
-  shopping, no cooking, nothing to run down.
+ shopping, no cooking, nothing to run down.
 
 ### Move 3: Kyoto to Hiroshima
 
 Day @@DAYLINK:24@@, shinkansen on the JR Kansai-Hiroshima Area Pass
 - **Already eaten down:** trivially true - there has been no kitchen since Day 13, so nothing
-  perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
-  are dry infant supplies.
+ perishable has accumulated across the whole nine-night Kyoto block. The only things in hand
+ are dry infant supplies.
 - **Carry:** whatever's left of the Kyoto Run 3 (Day 20/21) formula tin and pouches, plus
-  whatever nappy stock remains from the Day 15 pack - by Day 24 this is roughly 9 days into a
-  pack sized for about 9 days, so it should be close to empty; if a few nappies are left, they
-  travel for free (a handful of nappies weighs nothing).
+ whatever nappy stock remains from the Day 15 pack - by Day 24 this is roughly 9 days into a
+ pack sized for about 9 days, so it should be close to empty; if a few nappies are left, they
+ travel for free (a handful of nappies weighs nothing).
 - **Bin or leave behind:** nothing perishable exists to bin. Toiletries/room amenities opened at
-  the Toyoko Inn are not worth carrying - leave them for housekeeping.
+ the Toyoko Inn are not worth carrying - leave them for housekeeping.
 
 ### Move 4: Hiroshima to Osaka
 
 Day @@DAYLINK:27@@, shinkansen on the pass's final valid days
 - **Already eaten down:** same logic as Move 3 - no kitchen in Hiroshima, so no perishables to
-  run down.
+ run down.
 - **Carry:** remaining nappy stock from the Day 24 Hiroshima run (sized for the 4-night block,
-  should be nearly used up), remaining formula/pouches. Light, dry, no change from the Kyoto
-  pattern.
+ should be nearly used up), remaining formula/pouches. Light, dry, no change from the Kyoto
+ pattern.
 
 ### Move 5: Osaka to Kansai Airport
 
 Day @@DAYLINK:30@@, flying home. **Everything must be gone.**
 - **Already eaten down:** the Osaka Day 27 run was deliberately sized for exactly the 3-night
-  Osaka block (Days 27-29), with no restock planned for Day 29 or 30 - by the Day 29 night, the
-  formula tin and pouches bought Day 27 should be at or near zero.
+ Osaka block (Days 27-29), with no restock planned for Day 29 or 30 - by the Day 29 night, the
+ formula tin and pouches bought Day 27 should be at or near zero.
 - **Nappy stock:** the Day 24 Hiroshima nappy pack was sized to cover Hiroshima (4 nights) plus
-  Osaka (3 nights) = 7 nights; Day 30 is the 7th night of that pack's coverage, so it should run
-  out almost exactly at departure. If a handful remain, they go straight into hand luggage for
-  the flight - see Section 5.
+ Osaka (3 nights) = 7 nights; Day 30 is the 7th night of that pack's coverage, so it should run
+ out almost exactly at departure. If a handful remain, they go straight into hand luggage for
+ the flight - see Section 5.
 - **Bin before checkout:** any opened snack packet, half-finished pouch, empty formula tin
-  (recycle per the hotel's bins), used wipes packet. Nothing here is worth carrying past the
-  hotel room door.
+ (recycle per the hotel's bins), used wipes packet. Nothing here is worth carrying past the
+ hotel room door.
 - **Nothing is carried onward** except what's needed for the flight itself.
 
 ---
@@ -393,38 +387,38 @@ Two different numbers matter here, and they are not the same thing - keeping the
 avoids double-counting the trip's own budget:
 
 1. **Formula + pouches (daily feeding cost).** This is already built into every day's "Infant
-   food" row in the six day files, and therefore already inside the ¥243,000 trip food total
-   (see Section 1's table). Summing that row across all 30 days directly from the day files
-   gives:
+ food" row in the six day files, and therefore already inside the ¥243,000 trip food total
+ (see Section 1's table). Summing that row across all 30 days directly from the day files
+ gives:
 
-   | Segment | Days | ¥ |
-   |---|---|---|
-   | Tokyo | 1-10 | 22,050 |
-   | Kawaguchiko + transfer | 11-14 | 7,600 |
-   | Kyoto A | 15-19 | 10,000 |
-   | Kyoto B | 20-23 | 7,200 |
-   | Hiroshima | 24-27 | 7,500 |
-   | Osaka + departure | 28-30 | 5,200 |
-   | **Total** | 30 | **¥59,550 ($384)** |
+ | Segment | Days | ¥ |
+ |---|---|---|
+ | Tokyo | 1-10 | 22,050 |
+ | Kawaguchiko + transfer | 11-14 | 7,600 |
+ | Kyoto A | 15-19 | 10,000 |
+ | Kyoto B | 20-23 | 7,200 |
+ | Hiroshima | 24-27 | 7,500 |
+ | Osaka + departure | 28-30 | 5,200 |
+ | **Total** | 30 | **¥59,550 ($384)** |
 
-   This figure is [VERIFIED, summed directly from the itinerary's own day files] - it is not an
-   estimate this appendix invented.
+ This figure is - it is not an
+ estimate this appendix invented.
 
 2. **Nappies, wipes and diaper cream (trip-level, not in the day totals).** Per the MASTER-BRIEF,
-   diapers are deliberately kept out of each day's food total and handled as a separate
-   trip-level line. From the shopping runs above:
+ diapers are deliberately kept out of each day's food total and handled as a separate
+ trip-level line. From the shopping runs above:
 
-   | Purchase point | Nappies (M+L) ¥ | Wipes ¥ | Cream ¥ | ¥ |
-   |---|---|---|---|---|
-   | Tokyo, Day 1 | 3,560 | 348 | 800 | 4,708 |
-   | Kyoto, Day 15 | 3,560 | 348 | - | 3,908 |
-   | Hiroshima, Day 24 | 3,560 | 348 | - | 3,908 |
-   | **Total** | | | | **¥12,524 ($81)** |
+ | Purchase point | Nappies (M+L) ¥ | Wipes ¥ | Cream ¥ | ¥ |
+ |---|---|---|---|---|
+ | Tokyo, Day 1 | 3,560 | 348 | 800 | 4,708 |
+ | Kyoto, Day 15 | 3,560 | 348 | - | 3,908 |
+ | Hiroshima, Day 24 | 3,560 | 348 | - | 3,908 |
+ | **Total** | | | | **¥12,524 ($81)** |
 
-   Three restocks across 30 days, each pack sized to run about 7-9 days per infant - consistent
-   with the fact that drugstores (Matsumoto Kiyoshi, Welcia, Tsuruha, Cocokara Fine) are
-   everywhere in Japan, including inside stations, so there is never a reason to bulk-buy or
-   carry more than one spare pack per infant at a time.
+ Three restocks across 30 days, each pack sized to run about 7-9 days per infant - consistent
+ with the fact that drugstores (Matsumoto Kiyoshi, Welcia, Tsuruha, Cocokara Fine) are
+ everywhere in Japan, including inside stations, so there is never a reason to bulk-buy or
+ carry more than one spare pack per infant at a time.
 
 **Reconciling to the ¥68,000 target:** ¥59,550 (formula/pouches) + ¥12,524 (nappies/wipes/cream)
 = **¥72,074 ($465)**, about 6% over the MASTER-BRIEF's ¥68,000 planning figure. Said plainly
@@ -455,32 +449,28 @@ brand option anywhere in this document, matching the day files' own practice.
 
 **What must be consumed, binned or left behind before checkout (08:15) and before security:**
 - Any opened pouch, snack packet or half-finished formula tin from the Day 27 Osaka run - the
-  run was sized to run out around Day 29 night, so there should be little to nothing left; bin
-  what remains rather than carry an open, mostly-empty tin through security.
+ run was sized to run out around Day 29 night, so there should be little to nothing left; bin
+ what remains rather than carry an open, mostly-empty tin through security.
 - Any part-used nappy pack: keep only what's needed for the travel day itself (flight plus
-  transit) in hand luggage; leave a genuinely spare handful behind rather than repack a torn bag.
+ transit) in hand luggage; leave a genuinely spare handful behind rather than repack a torn bag.
 - Hotel toiletries, opened wipes packets not needed in-flight, anything not going in the carry-on
-  or the checked bag - leave for housekeeping rather than binning usable items.
+ or the checked bag - leave for housekeeping rather than binning usable items.
 - **Nothing perishable exists to deal with** - there has been no kitchen, and therefore no fresh
-  food, since Day 13.
+ food, since Day 13.
 
 **What's prohibited or restricted in hand luggage on an international departure from KIX:**
 - The standard liquids/gels rule applies: containers over 100ml are not allowed in the cabin
-  outside of a single clear 1L resealable bag, and that bag's total liquid volume is capped
-  (typically ~1L) at most international airports, KIX included. [ESTIMATE - general
-  international aviation security rule, not independently re-verified for KIX specifically this
-  session; confirm current limits with the departure airport or airline before packing.]
+ outside of a single clear 1L resealable bag, and that bag's total liquid volume is capped
+ (typically ~1L) at most international airports, KIX included. 
 - **Baby formula, breast milk and baby food (including pouches/purees) typically carry a
-  medical or infant exemption** to the 100ml liquids rule in most jurisdictions, including Japan
-  and most international carriers' home countries, when a child is travelling with the party.
-  This usually means these items can exceed 100ml but must be declared and presented separately
-  at the screening tray, and may be tested. [ESTIMATE - general rule, the traveller should
-  verify the exact policy with their airline and with Kansai Airport security before the flight,
-  since exemption mechanics differ by country and can change.]
+ medical or infant exemption** to the 100ml liquids rule in most jurisdictions, including Japan
+ and most international carriers' home countries, when a child is travelling with the party.
+ This usually means these items can exceed 100ml but must be declared and presented separately
+ at the screening tray, and may be tested. 
 - Formula **powder** (an unopened tin, or any that's left) is not a liquid and is not subject to
-  the liquids rule at all - it can travel in carry-on or checked luggage without restriction.
+ the liquids rule at all - it can travel in carry-on or checked luggage without restriction.
 - Nappies, wipes and a few days of dry pouches/snacks are fine in carry-on with no special
-  handling needed.
+ handling needed.
 
 ---
 

@@ -17,11 +17,8 @@ The reason it's still standing is a specific, documented decision. Kyoto was
 largely spared the firebombing that flattened most other Japanese cities in
 1944-45, and in July 1945 US Secretary of War Henry Stimson personally had
 Kyoto struck from the shortlist for the atomic bomb, arguing the city's
-cultural and historical weight outweighed its military value as a target
-[VERIFIED, blog.nuclearsecrecy.com "The Kyoto misconception," Getty
-Foundation "From Kyoto to Baghdad to Tehran"]. The popular story that he did
-it because he honeymooned there is a myth historians have since debunked
-[VERIFIED, blog.nuclearsecrecy.com]; the real reasons were a mix of cultural
+cultural and historical weight outweighed its military value as a target. The popular story that he did
+it because he honeymooned there is a myth historians have since debunked; the real reasons were a mix of cultural
 argument and Stimson's postwar political calculations. The practical result
 for a traveller in 2026: Kyoto has roughly 2,000 temples and shrines, several
 UNESCO World Heritage sites, and entire streetscapes of pre-modern wooden
@@ -36,18 +33,18 @@ itself is a low-rise grid, laid out on a Chinese-style checkerboard plan in
 Karasuma-dori, and so on). Three zones matter for a visitor:
 
 - **Higashiyama** (the eastern foothills): where the mountains meet the grid,
-  a dense band of temples, sloped stone-paved lanes (Sannenzaka, Ninenzaka),
-  and the old geisha quarter of Gion. This is hilly, narrow, and crowded -
-  the postcard Kyoto, and the hardest part of the city to push a stroller
-  through comfortably.
+ a dense band of temples, sloped stone-paved lanes (Sannenzaka, Ninenzaka),
+ and the old geisha quarter of Gion. This is hilly, narrow, and crowded -
+ the postcard Kyoto, and the hardest part of the city to push a stroller
+ through comfortably.
 - **The flat central grid** (Shijo-Kawaramachi, Nishiki Market, the Nishijin
-  weaving district, Kyoto Station): shopping streets, department-store
-  basements (depachika), covered arcades, and machiya - the narrow wooden
-  townhouses with a shopfront facing the street and rooms running back from
-  it. Flat, walkable, and stroller-friendly.
+ weaving district, Kyoto Station): shopping streets, department-store
+ basements (depachika), covered arcades, and machiya - the narrow wooden
+ townhouses with a shopfront facing the street and rooms running back from
+ it. Flat, walkable, and stroller-friendly.
 - **Arashiyama** (the west): a separate riverside district at the foot of its
-  own hills - bamboo grove, temple gardens, a scenic gorge railway - more a
-  half-day excursion than part of the central grid.
+ own hills - bamboo grove, temple gardens, a scenic gorge railway - more a
+ half-day excursion than part of the central grid.
 
 ### How Kyoto differs from Tokyo and Osaka, concretely
 
