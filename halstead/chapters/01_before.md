@@ -182,13 +182,13 @@ Aiden R. is reading aloud, stopping at about every fourth word, while she follow
 
 Chloe knows the correct thing to do is say okay, turn back and be on the right page before anybody notices. "I already read chapter four and chapter nine on Tuesday though," she says. "All of it. Going back just means listening to a part I already know the ending to."
 
-Some of the children laugh, but not with her, before Mrs. Aldana comes down the row, takes the book gently by the spine, then puts it on her own desk for the rest of the day. Aiden keeps going for the remainder of the period, while Chloe sits with her hands in her lap and stays mad through lunch. She gets in trouble for reading, in reading.
+Some of the children laugh, but not with her, before Mrs. Aldana comes down the row, takes the book gently by the spine, then puts it on her own desk. Aiden keeps going for the remainder of the period, while Chloe sits with her hands in her lap and stays mad through lunch. She gets in trouble for reading, in reading.
 
 That night at dinner she tells her parents the whole story in under two minutes, fast and out of order.
 
 "She took your book," her dad says.
 
-"Until the end of the day. But everybody was on worksheets by then. Getting it back barely helped."
+"It's on her desk until tomorrow. And everybody was on worksheets the rest of the day anyway, so having it wouldn't have helped much."
 
 "Was anybody else reading ahead?"
 
@@ -206,7 +206,7 @@ So in January she decides to get good at sitting there, and by February she can 
 
 ________________
 
-The appointment is set over a phone call in February. Chloe is in the next room when her mom says March fourth, says it again, and the third time says it slowly while she is writing it down.
+The appointment is set over a phone call in February. Chloe is in the next room when her mom says March seventh, says it again, and the third time says it slowly while she is writing it down.
 
 It goes on a yellow sticky note on the refrigerator under the strawberry magnet, where her mom checks it every morning while the coffee is going and Chloe reads it whenever she catches the kitchen empty.
 

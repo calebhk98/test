@@ -28,19 +28,15 @@ Her mom reads it, then reads it again, her eyes going back to one spot on the pa
 
 Her dad takes it and reads it in his free hand, still eating.
 
-"See what."
+"See what," her dad says.
+
+"That. Did you put her name in for anything, at any point, and not say so?"
 
 "No. This is the first I've heard of it, and I've been sitting here as long as you have."
 
-"So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool. I don't even give it to the pediatrician's office unless they ask."
+"Then how do they have her name at all?" Her mom's hand is flat on the table now.
 
-"Well, how would anybody," her dad says, setting the letter back down between them.
-
-"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night. I've got the letter in my hand and the phone right here, so there's no reason we're still talking about this."
-
-"I'm asking you." Her mom's hand is flat on the table now. "You've had it about as long as I have."
-
-"Meg, I've had it for ninety seconds, same as you, so you know exactly as much as I do right now."
+"Meg, I've had this in my hand for ninety seconds, same as you, so I know exactly as much about it as you do." Her dad sets the letter back down between them. "There's a number at the bottom of it. Let's call them and ask, instead of the two of us guessing at this table all night."
 
 Her mom takes it back and looks at the back of it, finding only the ink from the signature that has come through, then turns it the right way round again for a fourth read of the top part.
 
@@ -162,7 +158,7 @@ For a school that has put over a hundred children through a summer and done it a
 
 The laptop is still open on the kitchen table on the Monday morning, on the page with the teachers on it. Chloe gets the screen awake with the space bar and starts where her dad started.
 
-There is a woman who swam in the Olympics. There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has read it.
+There is a woman who swam in the Olympics. There is a man who was a SEAL. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has read it.
 
 She scrolls the column past, then back up to the top, photograph after photograph taken in the same room, against a wall nicer than any wall in her school.
 
@@ -174,7 +170,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice this afternoon, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice last week, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free.
 
@@ -206,7 +202,7 @@ On the ninth night Chloe is supposed to be asleep, her parents having sent her b
 
 "She's been flat since Christmas, and you've seen it, because she comes home and she says it was good."
 
-"Kids say it was good, which is a kid being polite rather than a kid hiding something. Ours has always been quiet. You were quiet."
+"Kids say it was good, which is a kid being polite rather than a kid hiding something. You were quiet at that age."
 
 "Not like that. That's a kid gone quiet, and you know the difference as well as I do. She used to come in the door talking."
 
@@ -230,7 +226,7 @@ Chloe is already moving to a different part of the argument. "Okay, then can you
 
 "One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely. Pick it before you go."
 
-She walks the whole children's section and comes back with a book she has read before, because anything new would be gone by Tuesday but this one she can do again.
+She walks the whole children's section and comes back with a book she has read before, because a new one would be finished by the Tuesday and this one she can read again.
 
 They drive her themselves instead of putting her on the bus, though her mom says the word bus a hundred times before they go, and by the end it barely sounds like the same word.
 

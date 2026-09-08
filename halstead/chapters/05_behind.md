@@ -162,11 +162,13 @@ Chloe waits, giving him a beat to add to it, and by then Sam has gone back to th
 
 "I know, Chloe. Fun's one thing, but wanting to be home is a different thing, and he wanted to be home."
 
+She is still on it at dinner, her tray down across from his and Ruth at the end of the table.
+
 "At my school you do the same paper for a month."
 
 "Yeah, mine too, till everybody's got it," Sam says, and goes back to his food.
 
-Ruth is at the end of the table with her chin on her hand, pushing one piece of food in slow circles around her plate.
+Ruth has her chin on her hand, pushing one piece of food in slow circles around her plate.
 
 "He was crying in the stairwell, on Thursday, and I'm not being mean by saying it, that's what he was doing. He didn't even try to hide it, and I'm not going to pretend I didn't see it just because everyone else is pretending," she says to her tray.
 

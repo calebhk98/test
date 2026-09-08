@@ -182,13 +182,13 @@ Aiden R. is reading aloud, stopping at about every fourth word, while she follow
 
 Chloe knows the correct thing to do is say okay, turn back and be on the right page before anybody notices. "I already read chapter four and chapter nine on Tuesday though," she says. "All of it. Going back just means listening to a part I already know the ending to."
 
-Some of the children laugh, but not with her, before Mrs. Aldana comes down the row, takes the book gently by the spine, then puts it on her own desk for the rest of the day. Aiden keeps going for the remainder of the period, while Chloe sits with her hands in her lap and stays mad through lunch. She gets in trouble for reading, in reading.
+Some of the children laugh, but not with her, before Mrs. Aldana comes down the row, takes the book gently by the spine, then puts it on her own desk. Aiden keeps going for the remainder of the period, while Chloe sits with her hands in her lap and stays mad through lunch. She gets in trouble for reading, in reading.
 
 That night at dinner she tells her parents the whole story in under two minutes, fast and out of order.
 
 "She took your book," her dad says.
 
-"Until the end of the day. But everybody was on worksheets by then. Getting it back barely helped."
+"It's on her desk until tomorrow. And everybody was on worksheets the rest of the day anyway, so having it wouldn't have helped much."
 
 "Was anybody else reading ahead?"
 
@@ -206,7 +206,7 @@ So in January she decides to get good at sitting there, and by February she can 
 
 ________________
 
-The appointment is set over a phone call in February. Chloe is in the next room when her mom says March fourth, says it again, and the third time says it slowly while she is writing it down.
+The appointment is set over a phone call in February. Chloe is in the next room when her mom says March seventh, says it again, and the third time says it slowly while she is writing it down.
 
 It goes on a yellow sticky note on the refrigerator under the strawberry magnet, where her mom checks it every morning while the coffee is going and Chloe reads it whenever she catches the kitchen empty.
 
@@ -526,19 +526,15 @@ Her mom reads it, then reads it again, her eyes going back to one spot on the pa
 
 Her dad takes it and reads it in his free hand, still eating.
 
-"See what."
+"See what," her dad says.
+
+"That. Did you put her name in for anything, at any point, and not say so?"
 
 "No. This is the first I've heard of it, and I've been sitting here as long as you have."
 
-"So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool. I don't even give it to the pediatrician's office unless they ask."
+"Then how do they have her name at all?" Her mom's hand is flat on the table now.
 
-"Well, how would anybody," her dad says, setting the letter back down between them.
-
-"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night. I've got the letter in my hand and the phone right here, so there's no reason we're still talking about this."
-
-"I'm asking you." Her mom's hand is flat on the table now. "You've had it about as long as I have."
-
-"Meg, I've had it for ninety seconds, same as you, so you know exactly as much as I do right now."
+"Meg, I've had this in my hand for ninety seconds, same as you, so I know exactly as much about it as you do." Her dad sets the letter back down between them. "There's a number at the bottom of it. Let's call them and ask, instead of the two of us guessing at this table all night."
 
 Her mom takes it back and looks at the back of it, finding only the ink from the signature that has come through, then turns it the right way round again for a fourth read of the top part.
 
@@ -660,7 +656,7 @@ For a school that has put over a hundred children through a summer and done it a
 
 The laptop is still open on the kitchen table on the Monday morning, on the page with the teachers on it. Chloe gets the screen awake with the space bar and starts where her dad started.
 
-There is a woman who swam in the Olympics. There is a man who was a SEAL, but the paragraph puts it in the middle of a sentence and goes straight on to something else. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has read it.
+There is a woman who swam in the Olympics. There is a man who was a SEAL. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has read it.
 
 She scrolls the column past, then back up to the top, photograph after photograph taken in the same room, against a wall nicer than any wall in her school.
 
@@ -672,7 +668,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice this afternoon, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that a person actually answers. It's got a website that hasn't been touched since the school put it up, which is either very old money or very careless, and I can't tell you which yet. I called the number on the site twice last week, and both times a person picked up on the second ring, which is more than I can say for our own dentist."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free.
 
@@ -704,7 +700,7 @@ On the ninth night Chloe is supposed to be asleep, her parents having sent her b
 
 "She's been flat since Christmas, and you've seen it, because she comes home and she says it was good."
 
-"Kids say it was good, which is a kid being polite rather than a kid hiding something. Ours has always been quiet. You were quiet."
+"Kids say it was good, which is a kid being polite rather than a kid hiding something. You were quiet at that age."
 
 "Not like that. That's a kid gone quiet, and you know the difference as well as I do. She used to come in the door talking."
 
@@ -728,7 +724,7 @@ Chloe is already moving to a different part of the argument. "Okay, then can you
 
 "One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely. Pick it before you go."
 
-She walks the whole children's section and comes back with a book she has read before, because anything new would be gone by Tuesday but this one she can do again.
+She walks the whole children's section and comes back with a book she has read before, because a new one would be finished by the Tuesday and this one she can read again.
 
 They drive her themselves instead of putting her on the bus, though her mom says the word bus a hundred times before they go, and by the end it barely sounds like the same word.
 
@@ -1196,11 +1192,13 @@ Chloe waits, giving him a beat to add to it, and by then Sam has gone back to th
 
 "I know, Chloe. Fun's one thing, but wanting to be home is a different thing, and he wanted to be home."
 
+She is still on it at dinner, her tray down across from his and Ruth at the end of the table.
+
 "At my school you do the same paper for a month."
 
 "Yeah, mine too, till everybody's got it," Sam says, and goes back to his food.
 
-Ruth is at the end of the table with her chin on her hand, pushing one piece of food in slow circles around her plate.
+Ruth has her chin on her hand, pushing one piece of food in slow circles around her plate.
 
 "He was crying in the stairwell, on Thursday, and I'm not being mean by saying it, that's what he was doing. He didn't even try to hide it, and I'm not going to pretend I didn't see it just because everyone else is pretending," she says to her tray.
 
@@ -1321,7 +1319,7 @@ On the last night the families eat on campus, at long tables in the dining hall,
 
 Chloe is already talking before she's finished sitting down, one knee still up on the bench: "Okay, so first there's Gary. He's a plastic man with no arms at all and he lives on a cart. You do CPR on him. Push in exactly the right place hard enough and he clicks." She demonstrates the hand position on the edge of the table, both hands stacked and elbows locked, the way they showed her. "I got the click on the fourth try. Sam gave up before his and decided the click was broken. But the click works fine. You just have to push harder than you think you're allowed to."
 
-"Then there's the bridge," she says, lining up the salt, the pepper and a knife to show him the span. "You get dowels and string. You have to cross a gap with them. And then on the Tuesday they hang a bucket off the middle and put weights in a pound at a time until it goes. Ours went early. Ruth's went at nineteen. Hers was triangles. A triangle can only fold if something actually breaks. A square folds right over. Everybody had to write down a prediction first, in pounds, before anything got loaded. I wrote fourteen and was wrong by three. The corner goes first. Every corner of a square carries an angle on its own, and an angle on its own gives way. Ruth's bridge only lasted because she cut hers a shade thinner at the ends, which meant less weight sitting right where the joint wanted to fold." She presses the pen hard enough to nearly go through the napkin, and explains the corner twice to make sure he has it.
+"Then there's the bridge," she says, lining up the salt, the pepper and a knife to show him the span. "You get dowels and string. You have to cross a gap with them. And then on the Tuesday they hang a bucket off the middle and put weights in a pound at a time until it goes. Ours went early. Ruth's went at nineteen. Hers was triangles. A triangle can only fold if something actually breaks. A square folds right over. Everybody had to write down a prediction first, in pounds, before anything got loaded. I wrote fourteen and was wrong by three. The corner goes first. Every corner of a square carries an angle on its own, and an angle on its own gives way. Ruth's didn't fold at all when it finally went. It snapped, right in the middle of the diagonal, which is a different way of running out." She presses the pen hard enough to nearly go through the napkin, and explains the corner twice to make sure he has it.
 
 "Then the pool. I can do a whole length now, badly, and Sam can do two straight through and brings it up at dinner most days," she says.
 
