@@ -2117,6 +2117,20 @@ Twenty seconds after running upstairs she is back down, stopped on the third ste
 
 She runs back up.
 
+Then she is down again, through the kitchen and out the side door into the garage, and the sheet comes off the bike in one pull. A pedal catches her shin on the way back in, and she stands it up on the living room rug between the couch and the television, both hands on the handlebars, holding it straight.
+
+"You can have it back now. I said you could have it back and I meant it when I said it, so it's yours, and there isn't going to be anywhere to keep it there anyway."
+
+Her parents look at the bike, and then at each other.
+
+"Chloe, that bike is yours. It was yours at Christmas and it is yours now, and nothing you said to me on that kitchen floor was a deal that anybody in this house was making with you."
+
+"It was a deal, though. I said you could take the bike and my birthday and Christmas, and then you said yes, and you don't get to keep only the half of it you like."
+
+Her dad comes over and puts a hand on the seat, not to take it off her, just to rest it there. "That is not how it works with parents. You cannot buy this off us, and you never had to. We said yes because it is the right thing for you, and it would have been the right thing if you had offered us nothing at all."
+
+Chloe holds on to the handlebars a while longer. Then she wheels it back out the way it came in and puts the sheet over it, and she does not take it out again before she goes.
+
 Her parents sit in the living room and listen to her going back and forth over their heads for a long time: drawers opening and shutting, something heavy getting dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, but she catches only the end of it, clear enough.
 
 "That's her, that's what she's actually like."
