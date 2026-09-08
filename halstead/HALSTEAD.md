@@ -210,7 +210,7 @@ The appointment is set over a phone call in February. Chloe is in the next room 
 
 It goes on a yellow sticky note on the refrigerator under the strawberry magnet, where her mom checks it every morning while the coffee is going and Chloe reads it whenever she catches the kitchen empty.
 
-It says MARCH 4, a time, and a name.
+It says MARCH 7, a time, and a name.
 
 
 ## Chapter Two: March 4th
