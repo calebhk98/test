@@ -299,7 +299,7 @@ here for them.
    live and still correctly diagnosed.
 2. **Several age-six lines carry her age-sixteen rhetorical polish**, including the
    four-books argument at `chapters/01_before.md:23` and her private read on Dr. Prentice at
-   `chapters/02_march_4th.md:28`. Flagged for the author's judgment; no rewrite proposed.
+   `chapters/02_march_7th.md:28`. Flagged for the author's judgment; no rewrite proposed.
    The portable half of this is now on her sheet, under *Do not write her as*: at six she
    has the perception and not yet the phrasing.
 3. **Chapters most likely to need the openness correction applied**, on reasoning rather

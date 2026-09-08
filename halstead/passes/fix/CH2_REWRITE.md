@@ -210,7 +210,7 @@ of theirs.
 
 ## Measurements
 
-`python3 grade.py --one chapters/02_march_4th.md`
+`python3 grade.py --one chapters/02_march_7th.md`
 
 | metric | before | after | goal |
 |---|---|---|---|

@@ -76,7 +76,7 @@ being actively worked, not neglected.
 Each entry: what / where / how many spans this shape appears in / status
 against current text / how to check it / severity and scope.
 
-### 1. Chloe hears the one clean sentence of her own assessment and it lands unopposed — `02_march_4th.md:247` (originally `:175`)
+### 1. Chloe hears the one clean sentence of her own assessment and it lands unopposed — `02_march_7th.md:247` (originally `:175`)
 
 **What.** Dr. Prentice tells Chloe's mother, in Chloe's hearing, "on the
 talking and reasoning she's at the top of it, but on the speed she's
@@ -97,7 +97,7 @@ essentially unchanged from the quoted audit text, and the surrounding scene
 (mother asking "how far at the top," Chloe's only response still purely
 physical) is unchanged.
 
-**Checkable.** `grep -n "at the top of it" chapters/02_march_4th.md` → line
+**Checkable.** `grep -n "at the top of it" chapters/02_march_7th.md` → line
 247. Read lines 235-260 for the full exchange and Chloe's reaction.
 
 **Severity.** High. Single scene, but it is chapter 2, it is the standard's
@@ -507,7 +507,7 @@ by omission rather than by a verified pass.
 
 ## Top ten, ordered by improvement to the book
 
-1. **`02_march_4th.md:247`** — Chloe's unhedged "she's at the top of it,"
+1. **`02_march_7th.md:247`** — Chloe's unhedged "she's at the top of it,"
    no absorbing beat. Earliest, clearest, most consequential open instance
    of the book's central risk. *(Finding 1)*
 2. **`18_fifteen.md:163`** — the narrator delivers Ruth's own argument for

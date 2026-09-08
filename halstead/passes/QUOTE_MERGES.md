@@ -8,7 +8,7 @@ split only by a tag or a short beat, into one quotation. No prose was added
 anywhere; the only words removed are dialogue-tag words which were kept in
 every case here, just moved to the end of the merged quotation, so the book's
 word count did not change at all (129,806 words before and after). Chapters
-`01_before.md` and `02_march_4th.md` were not touched (locked).
+`01_before.md` and `02_march_7th.md` were not touched (locked).
 
 ## The five numbers
 

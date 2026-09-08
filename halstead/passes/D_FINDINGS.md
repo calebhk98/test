@@ -638,7 +638,7 @@ text. Several were created by this session's own rewrites.
   dinner in ch16 L135–149 and a characterising paragraph at L153.
 - **OWEN.md lists him in ch5 and ch10 only, "present only in the camp timeframe."** He has two beats
   in ch4 (L71, L101).
-- **CHLOE.md cites `02_march_4th.md:132`.** The file has 124 lines.
+- **CHLOE.md cites `02_march_7th.md:132`.** The file has 124 lines.
 - **SYNOPSIS gives "first fighting score: 31 seconds" at age 10.** ch13 gives 4, 6, 9 on debut day and
   11 by June; ch15 gives 24 at twelve. The synopsis figure is unsupported by any chapter.
 - **SYNOPSIS dates the crying-at-desk scene to September.** ch7 L197 says "the first week of

@@ -1,7 +1,7 @@
 # Passivity pass, chapters 1-6: triage and surgery
 
 Span: chapters 3-6 only. Chapters 1 and 2 are locked by the author; every
-instance the first-pass report logged in `01_before.md` or `02_march_4th.md`
+instance the first-pass report logged in `01_before.md` or `02_march_7th.md`
 is dropped below with reason "locked," unedited, exactly as instructed.
 
 Of the nineteen instances in `passes/passive/CH01-06.md`, eight fall in the

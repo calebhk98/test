@@ -147,7 +147,7 @@ Spoken-sentence means, per chapter, against the corpus groups:
     this book            9.4 words, and 21 of 27 chapters below 10
 
     25_ten_targets  6.3   03_the_letter  6.8   19_sixteen  7.1   04_pluto  7.5
-    05_behind       7.6   02_march_4th   7.8   18_fifteen  8.0   20_parking_lot 8.0
+    05_behind       7.6   02_march_7th   7.8   18_fifteen  8.0   20_parking_lot 8.0
     16_thirteen     8.3   12_nine        8.4   06_the_list 8.5   01_before  8.7
 
 Eight chapters sit inside the Hemingway band. Only three chapters in the book reach

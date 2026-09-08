@@ -54,7 +54,7 @@ produces the pediatrician's advice to have her evaluated for attention. In
 February an appointment is booked and goes on the fridge under the strawberry
 magnet: MARCH 4.
 
-**Ch 2, "March 4th"** *(March 2012 – June 2012)*. The evaluation with Dr.
+**Ch 2, "March 7th"** *(March 2012 – June 2012)*. The evaluation with Dr.
 Prentice, the psychologist, who tells her to call him Ben. Blocks, vocabulary,
 similarities, digit span, coding (which she is slow at and knows it), picture
 completion, mazes. Through a door left ajar Chloe hears him tell her mother

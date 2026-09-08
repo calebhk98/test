@@ -2,7 +2,7 @@
 
 Four measures, worked as one job because cutting explanations shortens
 speech and the quote-length measures were already failing low. Chapters
-`01_before.md` and `02_march_4th.md` were not touched (locked).
+`01_before.md` and `02_march_7th.md` were not touched (locked).
 
 ## The four numbers
 

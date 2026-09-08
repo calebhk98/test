@@ -25,7 +25,7 @@ Most likely cause: ch1–2 is the only unversioned document. That ending was pro
 
 ### 1.2 The father does not exist in ch1–2
 
-He is absent from the phone calls, absent from the March 4th evaluation, absent from the car ride home. Mother fills out the rating scales alone. From ch3 onward he is an engaged co-parent in an intact marriage who pushes hardest for Halstead.
+He is absent from the phone calls, absent from the March 7th evaluation, absent from the car ride home. Mother fills out the rating scales alone. From ch3 onward he is an engaged co-parent in an intact marriage who pushes hardest for Halstead.
 
 Not a hard contradiction (nothing says he isn't there), but once ch3 establishes him, his absence from the single most important appointment of Chloe's childhood is conspicuous. The household texture shifts too: ch1–2 reads out-of-depth and non-academic, ch3 has a laptop at the kitchen table and a father whose department circulates papers.
 

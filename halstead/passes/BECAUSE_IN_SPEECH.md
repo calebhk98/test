@@ -118,21 +118,21 @@ come from" at the end if the real target turns out to be under 49.
 
 ## Chapter 2: March 4th
 
-- **02_march_4th:23** — Chloe's mother, answering Chloe's direct challenge
+- **02_march_7th:23** — Chloe's mother, answering Chloe's direct challenge
   about the intake form. `"I'm doing my best guess on some of these, because
   I only get to see the outside of you, so I guess honestly. If I get it
   wrong, you can tell me afterward and I'll change it,"`
   **KEEP.** Real justification to a child who has just called her out;
   establishes the book's core irony about being judged from outside.
 
-- **02_march_4th:235** — Ben, the psychologist, to Chloe's mother, overheard
+- **02_march_7th:235** — Ben, the psychologist, to Chloe's mother, overheard
   through a door. `"I'm not seeing what the school is seeing, because she
   finishes in the first few minutes and then she's got the rest of the hour
   left over and nowhere to put it."`
   **KEEP.** Load-bearing diagnostic information the reader needs and gets
   nowhere else in the book.
 
-- **02_march_4th:251** — Ben, answering "how far at the top of it?"
+- **02_march_7th:251** — Ben, answering "how far at the top of it?"
   `"That is the part I can't give you, because on a couple of them she got to
   the end of what the form has for her age and I kept going with a different
   one, and none of that counts. The form ran out before she did."`
@@ -142,13 +142,13 @@ come from" at the end if the real target turns out to be under 49.
   to the end of what the form has for her age, and I kept going with a
   different one, but none of that counts. The form ran out before she did."
 
-- **02_march_4th:257** — Ben. `"A good one, but that's exactly the trouble
+- **02_march_7th:257** — Ben. `"A good one, but that's exactly the trouble
   with it, because it's bad numbers that move a system, and this one is
   going to read as good on the page."`
   **KEEP.** The book's central irony about scores and help, stated once and
   never stated better.
 
-- **02_march_4th:261** — Ben. `"The lever is the school, because that's
+- **02_march_7th:261** — Ben. `"The lever is the school, because that's
   where the empty hour is, so I can write it all up and you can walk it in
   there, and some of them do move on a report like that."`
   **REWORD.** Fourth "because" in the same short exchange. *Reword:* "The

@@ -17,7 +17,7 @@ All line numbers below were verified with `grep -n` against the files in `/home/
 | # | Title | Chloe's age | Date / season | What fixes it in time | File : line |
 |---|---|---|---|---|---|
 | 1 | Before | 6 | Sept–Feb, grade 1 (year after kindergarten) | "She is six." / kindergarten teacher started the folder "last year" | `01_before.md:5`, `:4` |
-| 2 | March 4th | 6→7 (still 6) | March 4 (psych eval) through June (report card) | Continues ch1's "MARCH 4" note; "By June, Chloe is quiet…" | `02_march_4th.md:119` |
+| 2 | March 7th | 6→7 (still 6) | March 7 (psych eval) through June (report card) | Continues ch1's "MARCH 7" note; "By June, Chloe is quiet…" | `02_march_7th.md:119` |
 | 3 | The Letter | 6 | July (summer after grade 1) | Camp letter: "four weeks long, starting the second week of July"; decision takes "nine days" | `03_the_letter.md:7`, `:96` |
 | 4 | Pluto | 6 | Early July, day 1 of camp | Chloe's own answer to Sam: `"Six."` | `04_pluto.md:57` |
 | 5 | Behind | 6 | Camp, weeks 1–3 (July) | Continues ch4's camp, "second week" math/pool references | `05_behind.md:30`, `:55` |
@@ -120,7 +120,7 @@ This is the headline finding, and it sits right at the ch20/21 join the brief po
   > "…and she is seven years old with the word for it nowhere in her."
   `09_february.md:25`
 
-For Chloe to be 6 in July and 7 by the following February, her birthday must fall somewhere between (roughly) August and February. It cannot fall in March, April, May, or June — those months are already accounted for as "still 6" (ch2's March 4th appointment, ch3's July letter) or come after the "already 7" February statement in the same stretch of story.
+For Chloe to be 6 in July and 7 by the following February, her birthday must fall somewhere between (roughly) August and February. It cannot fall in March, April, May, or June — those months are already accounted for as "still 6" (ch2's March 7th appointment, ch3's July letter) or come after the "already 7" February statement in the same stretch of story.
 
 **Part 2 (ch21–35) requires Chloe's birthday to be in June.**
 

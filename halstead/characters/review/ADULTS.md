@@ -196,7 +196,7 @@ ever crossing into the insight the brief rules out.
 
 **Prentice (`PRENTICE.md`).** The character with the most existing capacity in this batch: ~28
 lines, two full registers (short/procedural with a child, long/dense with an adult), confirmed by
-`chapters/02_march_4th.md:88`, a 70-plus-word unbroken explanation. He is proof a kindly-inadequate
+`chapters/02_march_7th.md:88`, a 70-plus-word unbroken explanation. He is proof a kindly-inadequate
 adult can already sustain a long, complex turn without breaking the test. Forbidden by the sheet:
 rating Chloe to her face (`:42`) and any figurative language (`:24`, same universal ban). Single
 highest-value change: none needed to his one scene — the highest-value change is structural,

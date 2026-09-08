@@ -1,4 +1,4 @@
-## Chapter Two: March 4th
+## Chapter Two: March 7th
 
 *March 2012 – June 2012*
 
@@ -56,11 +56,11 @@ Ben writes something down, small and quick, but she can't tell from his face whe
 
 "One more. Is there another like it?" She hooks her heels on the rung of the chair, then comes up onto her knees on it to reach the middle of the table.
 
-There is another like it, and then another. Both times she has the picture finished before he has done setting the card down, and both times Ben says okay while a block is still in her fingers.
+There is another like it, and then another. Both times she is finished almost as soon as the card is down, and both times Ben says okay while a block is still in her fingers.
 
 The lid goes on the bin.
 
-Then he asks what two things have in common. The pairs get further apart as they go.
+After the blocks he asks what two things have in common. The pairs get further apart as they go.
 
 "What do a boat and a car have in common?"
 
@@ -90,7 +90,7 @@ She points at the boot and the glove.
 
 The things that go together get harder to spot, and she goes at the speed he turns the page. After her last answer he closes the booklet.
 
-Then there's a sheet with a key along the top: a line standing up inside a star, two dots inside a circle. Below the key are rows of the same shapes with nothing in them, and she has to put the right mark in each one.
+There is a sheet with a key along the top: a line standing up inside a star, two dots inside a circle. Below the key are rows of the same shapes with nothing in them, and she has to put the right mark in each one.
 
 A last look at the key, then Ben says go and starts the watch with his thumb, but her hand won't go as fast as the page wants. The mark has to sit inside the shape and the shape is small, so her fingers grip up hard around the pencil to hold the line where it belongs, and by the end of the first row the web of her thumb aches with it. Bad at the easiest thing on the table, she can tell it while it's happening.
 
@@ -136,13 +136,13 @@ Ben asks what a bicycle is and she tells him about the wheels and the pedals, th
 
 The words get longer and then they get stranger. One of them stops her cold, and she tells him so, then another stops her too, so she says she would rather go back to the first kind. Ben says that's not how it works, puts the next word to her anyway, and that one goes past her too, and then he closes the booklet.
 
-Then the numbers come back with letters mixed into them, and he gives her the rule before he starts, the way he gives every rule: the numbers first in counting order, then the letters in alphabet order, whichever way round they went in.
+The numbers come back with letters mixed into them, and he gives her the rule before he starts, the way he gives every rule: the numbers first in counting order, then the letters in alphabet order, whichever way round they went in.
 
 The first string arrives and she hands it back the way it arrived, because that is what the first number game wanted. Ben writes, and she does the same with the next. Before the one after that he says the rule again, in the voice he said it the first time. All of it lands, and she says the rule back to him before he starts, to be sure she has it.
 
 After that she sorts them in her head, numbers and then letters, and they get long before he stops giving them to her.
 
-Then Ben props the booklet up again with a different kind of page, a pattern with a square missing out of it and a row of pieces along the bottom, and she puts her finger on the piece that fills it.
+Ben props the booklet up again with a different kind of page, a pattern with a square missing out of it and a row of pieces along the bottom, and she puts her finger on the piece that fills it.
 
 She points, he turns the page, she points, he turns the page.
 
@@ -170,7 +170,7 @@ They keep coming: wallets on the ground, smoke at night, lines painted on a road
 
 There is another timed sheet, little symbols in rows where she looks at the ones on the left and puts a line through a box on the right for yes or no. Her eyes are on the next row while her pencil is still finishing the line on this one, and twice she goes back to check a box she has already done.
 
-Then a page with animals, shoes and cups all over it, where she crosses out every animal, one stroke each, then gets to the bottom and looks up. For once she reaches the end before he says stop.
+The next page has animals, shoes and cups all over it, and she crosses out every animal, one stroke each, then gets to the bottom and looks up. For once she reaches the end before he says stop.
 
 By then her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on. Ben asks if she's tired and she says no. After the next page, he asks again.
 
@@ -258,7 +258,7 @@ The car behind them honks, and her mom pulls away. "It's a number for how you di
 
 "He didn't give me a number," her mom says to the windshield.
 
-But a word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seatbelt, because they are having a nice time.
+But a word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seam of the seat, because they are having a nice time.
 
 They get ice cream, unheard of on a Wednesday, and she eats it in the car, where some of it goes on the seat.
 
@@ -266,7 +266,7 @@ ________________
 
 After the appointment, nothing changes.
 
-On March 5th it is the same worksheet, the problems sitting after the one that tells you how it works, and Bryce Dolan counting on his fingers. Mrs. Aldana keeps grading at her desk, and when she asks Chloe once, in April, whether everything is all right at home, Chloe says yes.
+On March 8th it is the same worksheet, the problems sitting after the one that tells you how it works, and Bryce Dolan counting on his fingers. Mrs. Aldana keeps grading at her desk, and when she asks Chloe once, in April, whether everything is all right at home, Chloe says yes.
 
 Some days she asks to play four square and gets a round in before a bad bounce puts her out and the line re-forms without her, so she sits on the wall with her library book until the bell.
 

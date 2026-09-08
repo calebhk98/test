@@ -348,7 +348,7 @@ a back.
 and the sheet is still complete.*
 
 **md, speaking. Referenced afterward, without new
-dialogue, in chapters/02_march_4th.md, chapters/04_pluto.md, chapters/05_behind.md and
+dialogue, in chapters/02_march_7th.md, chapters/04_pluto.md, chapters/05_behind.md and
 chapters/07_the_same_room.md.
 
 **Continuity:** Full name Carmen Aldana, age 44 in Chloe's first-grade year. Divorced in

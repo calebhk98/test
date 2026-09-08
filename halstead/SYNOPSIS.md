@@ -389,7 +389,7 @@ from then on she shortens her answers on purpose. Parent conferences: strong
 reader, trouble focusing. An appointment goes on the fridge under the strawberry
 magnet: MARCH 4.
 
-**2. March 4th** *(March 2012 to June 2012)*. The evaluation with Dr. Prentice,
+**2. March 7th** *(March 2012 to June 2012)*. The evaluation with Dr. Prentice,
 who tells her to call him Ben. Blocks, vocabulary, similarities, digit span,
 coding (which she is slow at and knows it). Through a door left ajar Chloe hears
 him tell her mother that she finishes in two minutes and has thirty-eight left

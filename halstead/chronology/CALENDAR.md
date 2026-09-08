@@ -77,7 +77,7 @@ Full machine-readable version: `chronology/chapter_dates.json`.
 | # | Title | Date |
 |---|---|---|
 | 1 | Before | September 2011 – February 2012 |
-| 2 | March 4th | March 2012 – June 2012 |
+| 2 | March 7th | March 2012 – June 2012 |
 | 3 | The Letter | July 2012 |
 | 4 | Pluto | July 2012 |
 | 5 | Behind | July 2012 |
@@ -146,3 +146,15 @@ Two items the earlier reports raised are **not** on this list because this calen
 
 - ~~**`20_the_parking_lot.md:7`, "a networking class the year before"**~~ — this report placed chapter 20 in April 2020 so that this line would work. **The author has since fixed chapter 20 at sixteen**, which makes it June 2022 and makes the line an error after all. It is item 8 in the fix list above, along with the knock-on at `34_the_files.md:12`.
 - **`21_the_applications.md:101`, "she's sixteen"** — already resolved in `BOOK.md` §3.2 on the author's confirmation that the third author isn't Chloe. Nothing here bears on this calendar either.
+
+## March 7th, and why it is not March 4th
+
+March 4th 2012 was a Sunday. Chapter 2 has a father who is at work that
+morning, a psychologist seeing a child, an ordinary school day the next day,
+and two lines that name the day as a Wednesday. March 7th 2012 was a
+Wednesday, so the appointment is on the 7th, the school day after it is
+Thursday the 8th, and the note on the refrigerator in chapter 1 says MARCH 7.
+
+Chapter 1 was locked when this was found. The author unlocked that one line
+rather than lose the Wednesdays out of chapter 2 or move the whole book to
+2015, where March 4th does fall on a Wednesday.
