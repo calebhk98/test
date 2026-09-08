@@ -238,4 +238,4 @@ Her mother's voice, when it comes back, has the edge she uses reading the fine p
 
 "Okay," her mother says back, and there's the small click of her hanging up first.
 
-Chloe sits there a while longer with the phone gone dark in her lap, running the call back once from the start, then stands to find something to eat, with the phone in her hand and the screen gone dark against her palm.
+Chloe sits a while longer with the dark phone in her lap and runs the call back once from the start. Then she gets up to find something to eat.
