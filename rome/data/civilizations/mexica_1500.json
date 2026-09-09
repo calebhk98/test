@@ -1,0 +1,71 @@
+{
+ "id": "mexica_1500",
+ "name": "The Mexica Triple Alliance",
+ "year": 1500,
+ "blurb": "A large, dense, literate, well-administered state with monumental construction, chinampa agriculture that outyields anything in Europe, and no draught animals, no iron, no wheel in practical use.",
+ "population": 5000000,
+ "urban_fraction": 0.25,
+ "literacy_elite": 0.4,
+ "literacy_general": 0.03,
+ "currency": "cacao bean and cotton cloth",
+ "price_index": 0.8,
+ "wage_index": 0.5,
+ "state_capacity": 0.8,
+ "home_regions": [
+  "americas_carib"
+ ],
+ "base_reach": 1,
+ "institutions": {
+  "partnership": true,
+  "corporation": false,
+  "guild": "pochteca merchant order, hereditary and privileged",
+  "testament": true,
+  "charter": "tlatoani grant",
+  "bank": false,
+  "patent": false
+ },
+ "starting_techs": [
+  "fud_chinampa",
+  "fud_maize_tier9",
+  "fud_cacao",
+  "civ_monumental_stone",
+  "mat_obsidian_blade"
+ ],
+ "values": {
+  "w_military": 1.0,
+  "w_labour_saving": 0.1,
+  "w_information": -0.5,
+  "w_novelty": -0.3,
+  "w_magic_fear": 0.3,
+  "w_religious_rigidity": 0.9,
+  "w_commerce": 0.5,
+  "bribability": 0.35,
+  "patronage_weight": 0.75,
+  "adaptation_rate": 0.09,
+  "_note": "w_religious_rigidity 0.9 is the dominant constraint: the calendar and the ritual cycle govern the year and anything touching them is dangerous. But an inexplicable effect is likelier to be read as divine favour than as a crime, so w_magic_fear is LOWER than Rome's, which is a genuinely different strategic situation."
+ },
+ "hazards": [
+  {
+   "name": "Old World epidemics on contact",
+   "years": [
+    1520,
+    1600
+   ],
+   "staff_loss": 0.8,
+   "note": "Smallpox, measles and typhus in a population with no immunity. This is the single most severe hazard of any civilization in this directory and it is not a fair fight."
+  },
+  {
+   "name": "Spanish invasion",
+   "years": [
+    1519,
+    1521
+   ],
+   "sack_chance": 0.9
+  }
+ ],
+ "notes": [
+  "NO IRON, NO DRAUGHT ANIMALS, NO PRACTICAL WHEEL. Obsidian is sharper than steel and shatters. Every metallurgy node starts from copper and gold.",
+  "Chinampa agriculture yields more per hectare than any European system, so the food constraint that shapes the Roman tree does not bind here.",
+  "The absence of draught animals is the deepest constraint: it removes the plough, the cart, the mill and the horse collar in one stroke."
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "norse_900ad",
+ "name": "Scandinavia in the Viking age",
+ "year": 900,
+ "blurb": "Small population, no state to speak of, superb shipbuilding and ironworking, and the best long-range mobility in Europe. The opposite problem from Rome: nobody will stop you, and nobody can fund you either.",
+ "population": 1500000,
+ "urban_fraction": 0.03,
+ "literacy_elite": 0.15,
+ "literacy_general": 0.02,
+ "currency": "hacksilver by weight",
+ "price_index": 1.4,
+ "wage_index": 0.6,
+ "state_capacity": 0.15,
+ "home_regions": [
+  "scandinavia"
+ ],
+ "base_reach": 4,
+ "institutions": {
+  "partnership": "felag, a genuine joint venture",
+  "corporation": false,
+  "guild": false,
+  "testament": "weak",
+  "charter": false,
+  "bank": false,
+  "patent": false,
+  "note": "The thing is an assembly, not a state. No one can license you and no one can fund you."
+ },
+ "starting_techs": [
+  "sea_clinker_hull",
+  "sea_keel_deep",
+  "met_bloomery_bog_iron",
+  "exp_openocean_navigation"
+ ],
+ "values": {
+  "w_military": 1.0,
+  "w_labour_saving": 0.3,
+  "w_information": 0.4,
+  "w_novelty": 0.5,
+  "w_magic_fear": 0.45,
+  "w_religious_rigidity": 0.1,
+  "w_commerce": 0.8,
+  "bribability": 0.3,
+  "patronage_weight": 0.3,
+  "adaptation_rate": 0.2,
+  "_note": "Positive w_labour_saving because labour is scarce, not cheap: exactly the reverse of Rome, and the reason a labour-saving machine is welcome here and resented there. Very high w_commerce, high novelty tolerance, and seidr is feared but not prosecuted by a state, because there is no state."
+ },
+ "hazards": [
+  {
+   "name": "Christianisation and political consolidation",
+   "years": [
+    995,
+    1100
+   ],
+   "note": "changes the value vector rather than killing people"
+  }
+ ],
+ "notes": [
+  "Population is 1.5 million against Rome's 65 million. You will never assemble a large workforce, so every plan must be capital-light and skill-heavy.",
+  "Base reach 4: these ships already go to Greenland, the Caspian and Newfoundland. The Atlantic is not a barrier here, which flips the entire expedition branch."
+ ]
+}

@@ -21,18 +21,18 @@ in this directory, read that one.
 | Module | Subject | Entries | Tree nodes it documents |
 |---|---|---:|---:|
 | [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 0 | 0 |
-| [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 69 |
-| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 92 |
+| [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 188 |
+| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 198 |
 | [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 84 |
-| [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 137 |
-| [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 90 |
+| [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 246 |
+| [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 206 |
 | [`55_semiconductors.md`](55_semiconductors.md) | Vacuum, high purity and semiconductors | 13 | 17 |
 | [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 11 |
-| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 52 |
-| [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 60 |
+| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 157 |
+| [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 63 |
 | [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 64 |
 | [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 227 |
-| [`90_textiles.md`](90_textiles.md) |  | 20 | 52 |
+| [`90_textiles.md`](90_textiles.md) |  | 20 | 215 |
 | [`91_household.md`](91_household.md) |  | 27 | 70 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
 | [`93_energy.md`](93_energy.md) |  | 27 | 0 |
@@ -46,19 +46,19 @@ strategy, not a procedure, so it lives outside the recipe library.
 
 | Node | Tier | Your hours | Documented in |
 |---|---:|---:|---|
-| `arrival_orientation` | 0 | 1,200 | [`00_BRIEFING.md`](../00_BRIEFING.md) |
-| `citizenship` | 0 | 250 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `identity_cover` | 0 | 500 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `patron_local` | 0 | 400 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `collegium_licensed` | 1 | 350 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `freedman_staff` | 1 | 900 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `patron_senatorial` | 1 | 600 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `school_founded` | 1 | 2,000 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `workshop_first` | 1 | 500 | [`00_BRIEFING.md`](../00_BRIEFING.md) |
-| `endowment_land` | 2 | 500 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `mining_concession` | 2 | 400 | [`01_WORLD_STATE_100AD.md`](../01_WORLD_STATE_100AD.md) |
-| `patron_imperial` | 2 | 900 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
-| `academy_network` | 3 | 2,500 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `arrival_orientation` | 0 | 900.0 | [`00_BRIEFING.md`](../00_BRIEFING.md) |
+| `citizenship` | 0 | 250.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `identity_cover` | 0 | 500.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `patron_local` | 0 | 400.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `collegium_licensed` | 1 | 350.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `freedman_staff` | 1 | 900.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `patron_senatorial` | 1 | 600.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `school_founded` | 1 | 2,000.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `workshop_first` | 1 | 500.0 | [`00_BRIEFING.md`](../00_BRIEFING.md) |
+| `endowment_land` | 2 | 500.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `mining_concession` | 2 | 400.0 | [`01_WORLD_STATE_100AD.md`](../01_WORLD_STATE_100AD.md) |
+| `patron_imperial` | 2 | 900.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
+| `academy_network` | 3 | 2,500.0 | [`03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md) |
 
 ## Every tech-tree node, and where its recipe lives
 
@@ -69,1103 +69,2038 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `met_electro_refining` | 0 | 100 | _(module has no anchor)_ |
-| `met_electroplating` | 0 | 60 | _(module has no anchor)_ |
-| `met_fire_assay` | 0 | 60 | _(module has no anchor)_ |
-| `met_investment_casting` | 0 | 100 | _(module has no anchor)_ |
-| `met_ore_crushing_sorting` | 0 | 20 | _(module has no anchor)_ |
-| `met_trip_hammer` | 0 | 80 | _(module has no anchor)_ |
-| `case_hardening` | 1 | 300 | [`case_hardening`](10_metallurgy.md#case_hardening---surface-hardening-a-finished-tool-ferrum-indurare) |
-| `drawplate_wire` | 1 | 180 | [`wire_drawing`](10_metallurgy.md#wire_drawing---the-drawplate) |
-| `lead_metallurgy` | 1 | 200 | [`lead_silver_cupellation`](10_metallurgy.md#lead_silver_cupellation---refining-silver-from-lead-ore-cupellatio) |
-| `met_annealing_recrystallization` | 1 | 100 | _(module has no anchor)_ |
-| `met_drop_hammer` | 1 | 120 | _(module has no anchor)_ |
-| `met_green_sand_mold` | 1 | 80 | _(module has no anchor)_ |
-| `met_jigging_gravity` | 1 | 80 | _(module has no anchor)_ |
-| `met_mine_pumping` | 1 | 180 | _(module has no anchor)_ |
-| `met_reverberatory` | 1 | 200 | _(module has no anchor)_ |
-| `met_roasting_calcining` | 1 | 60 | _(module has no anchor)_ |
-| `met_tempering_color` | 1 | 120 | _(module has no anchor)_ |
-| `met_water_ore_stamp` | 1 | 120 | _(module has no anchor)_ |
-| `bellows_water_blown` | 2 | 300 | [`bellows_water_blown`](10_metallurgy.md#bellows_water_blown---water-driven-double-bellows-and-the-trompe) |
-| `blast_furnace` | 2 | 900 | [`blast_furnace_cast_iron`](10_metallurgy.md#blast_furnace_cast_iron---the-tall-shaft-furnace-and-cast-iron) |
-| `cementation_steel` | 2 | 400 | [`cementation_steel`](10_metallurgy.md#cementation_steel---blister-steel) |
-| `charcoal_industrial` | 2 | 250 | [`charcoal_industrial`](10_metallurgy.md#charcoal_industrial---charcoal-at-scale-carbo) |
-| `coal_coke` | 2 | 350 | [`coal_and_coke`](10_metallurgy.md#coal_and_coke---sea-coal-and-coking-carbo-fossilis) |
-| `copper_fire_refined` | 2 | 200 | [`copper_refining`](10_metallurgy.md#copper_refining---fire-refining-copper-aes) |
-| `crucible_steel` | 2 | 600 | [`crucible_steel`](10_metallurgy.md#crucible_steel---melted-homogeneous-steel-huntsman-process) |
-| `finery_puddling` | 2 | 500 | [`finery_forge`](10_metallurgy.md#finery_forge---converting-pig-iron-to-wrought-iron-fining) |
-| `mercury_supply` | 2 | 150 | [`mercury`](10_metallurgy.md#mercury---retorting-cinnabar-hydrargyrum) |
-| `met_basic_lining_phosphorus` | 2 | 240 | _(module has no anchor)_ |
-| `met_black_powder_blasting` | 2 | 120 | _(module has no anchor)_ |
-| `met_chill_casting` | 2 | 100 | _(module has no anchor)_ |
-| `met_continuous_casting` | 2 | 140 | _(module has no anchor)_ |
-| `met_converter_furnace` | 2 | 180 | _(module has no anchor)_ |
-| `met_cupola_furnace` | 2 | 150 | _(module has no anchor)_ |
-| `met_deep_shaft_sinking` | 2 | 240 | _(module has no anchor)_ |
-| `met_drawn_tube` | 2 | 100 | _(module has no anchor)_ |
-| `met_dry_sand_mold` | 2 | 120 | _(module has no anchor)_ |
-| `met_froth_flotation` | 2 | 300 | _(module has no anchor)_ |
-| `met_galvanizing` | 2 | 120 | _(module has no anchor)_ |
-| `met_normalizing` | 2 | 100 | _(module has no anchor)_ |
-| `met_open_hearth_furnace` | 2 | 220 | _(module has no anchor)_ |
-| `met_quenching_media` | 2 | 140 | _(module has no anchor)_ |
-| `met_rail_mill` | 2 | 180 | _(module has no anchor)_ |
-| `met_safety_lamps_ventilation` | 2 | 140 | _(module has no anchor)_ |
-| `met_tin_plate` | 2 | 100 | _(module has no anchor)_ |
-| `met_two_high_mill` | 2 | 280 | _(module has no anchor)_ |
-| `met_winding_engine` | 2 | 200 | _(module has no anchor)_ |
-| `met_wire_rod_rolling` | 2 | 160 | _(module has no anchor)_ |
-| `refractory_fireclay` | 2 | 350 | [`refractory_fireclay`](10_metallurgy.md#refractory_fireclay---furnace-lining-and-crucible-clay-argilla-refractaria) |
-| `zinc_metal` | 2 | 700 | [`zinc_metal`](10_metallurgy.md#zinc_metal---distilling-metallic-zinc-per-descensum) |
-| `high_temp_furnace` | 3 | 800 | [`high_temp_furnace`](10_metallurgy.md#high_temp_furnace---pushing-past-1500-c) |
-| `met_acetylene_supply` | 3 | 200 | _(module has no anchor)_ |
-| `met_deep_drawing` | 3 | 220 | _(module has no anchor)_ |
-| `met_die_casting` | 3 | 180 | _(module has no anchor)_ |
-| `met_dynamite_blasting` | 3 | 100 | _(module has no anchor)_ |
-| `met_extrusion_press` | 3 | 200 | _(module has no anchor)_ |
-| `met_hardenability_alloys` | 3 | 280 | _(module has no anchor)_ |
-| `met_hydraulic_press` | 3 | 240 | _(module has no anchor)_ |
-| `met_oxyacetylene_welding` | 3 | 160 | _(module has no anchor)_ |
-| `met_pneumatic_drill` | 3 | 180 | _(module has no anchor)_ |
-| `met_powder_metallurgy` | 3 | 260 | _(module has no anchor)_ |
-| `met_resistance_welding` | 3 | 180 | _(module has no anchor)_ |
-| `met_reversing_mill` | 3 | 240 | _(module has no anchor)_ |
-| `met_section_mill` | 3 | 200 | _(module has no anchor)_ |
-| `met_steam_hammer` | 3 | 180 | _(module has no anchor)_ |
-| `met_three_high_mill` | 3 | 200 | _(module has no anchor)_ |
-| `met_tube_mill_seamless` | 3 | 220 | _(module has no anchor)_ |
-| `bessemer_openhearth` | 4 | 900 | [`alloy_steels_ferroalloys`](10_metallurgy.md#alloy_steels_ferroalloys---ferromanganese-ferrosilicon-tungsten-and-chrome-steels) |
-| `met_arc_welding` | 4 | 140 | _(module has no anchor)_ |
-| `arc_furnace_ferroalloys` | 5 | 600 | [`alloy_steels_ferroalloys`](10_metallurgy.md#alloy_steels_ferroalloys---ferromanganese-ferrosilicon-tungsten-and-chrome-steels) |
+| `met_electro_refining` | 0 | 100.0 | _(module has no anchor)_ |
+| `met_electroplating` | 0 | 60.0 | _(module has no anchor)_ |
+| `met_fire_assay` | 0 | 60.0 | _(module has no anchor)_ |
+| `met_investment_casting` | 0 | 100.0 | _(module has no anchor)_ |
+| `met_ore_crushing_sorting` | 0 | 20.0 | _(module has no anchor)_ |
+| `met_trip_hammer` | 0 | 80.0 | _(module has no anchor)_ |
+| `mt2_earthenware` | 0 | 60.0 | _(module has no anchor)_ |
+| `case_hardening` | 1 | 300.0 | [`case_hardening`](10_metallurgy.md#case_hardening---surface-hardening-a-finished-tool-ferrum-indurare) |
+| `drawplate_wire` | 1 | 180.0 | [`wire_drawing`](10_metallurgy.md#wire_drawing---the-drawplate) |
+| `lead_metallurgy` | 1 | 200.0 | [`lead_silver_cupellation`](10_metallurgy.md#lead_silver_cupellation---refining-silver-from-lead-ore-cupellatio) |
+| `met_annealing_recrystallization` | 1 | 100.0 | _(module has no anchor)_ |
+| `met_drop_hammer` | 1 | 120.0 | _(module has no anchor)_ |
+| `met_green_sand_mold` | 1 | 80.0 | _(module has no anchor)_ |
+| `met_jigging_gravity` | 1 | 80.0 | _(module has no anchor)_ |
+| `met_mine_pumping` | 1 | 180.0 | _(module has no anchor)_ |
+| `met_reverberatory` | 1 | 200.0 | _(module has no anchor)_ |
+| `met_roasting_calcining` | 1 | 60.0 | _(module has no anchor)_ |
+| `met_tempering_color` | 1 | 120.0 | _(module has no anchor)_ |
+| `met_water_ore_stamp` | 1 | 120.0 | _(module has no anchor)_ |
+| `mt2_amalgamation` | 1 | 80.0 | _(module has no anchor)_ |
+| `mt2_gunmetal_alloy` | 1 | 80.0 | _(module has no anchor)_ |
+| `mt2_pewter_alloy` | 1 | 100.0 | _(module has no anchor)_ |
+| `mt2_stoneware` | 1 | 80.0 | _(module has no anchor)_ |
+| `mt2_timbering_safety` | 1 | 80.0 | _(module has no anchor)_ |
+| `bellows_water_blown` | 2 | 300.0 | [`bellows_water_blown`](10_metallurgy.md#bellows_water_blown---water-driven-double-bellows-and-the-trompe) |
+| `blast_furnace` | 2 | 900.0 | [`blast_furnace_cast_iron`](10_metallurgy.md#blast_furnace_cast_iron---the-tall-shaft-furnace-and-cast-iron) |
+| `cementation_steel` | 2 | 400.0 | [`cementation_steel`](10_metallurgy.md#cementation_steel---blister-steel) |
+| `charcoal_industrial` | 2 | 250.0 | [`charcoal_industrial`](10_metallurgy.md#charcoal_industrial---charcoal-at-scale-carbo) |
+| `coal_coke` | 2 | 350.0 | [`coal_and_coke`](10_metallurgy.md#coal_and_coke---sea-coal-and-coking-carbo-fossilis) |
+| `copper_fire_refined` | 2 | 200.0 | [`copper_refining`](10_metallurgy.md#copper_refining---fire-refining-copper-aes) |
+| `crucible_steel` | 2 | 600.0 | [`crucible_steel`](10_metallurgy.md#crucible_steel---melted-homogeneous-steel-huntsman-process) |
+| `finery_puddling` | 2 | 500.0 | [`finery_forge`](10_metallurgy.md#finery_forge---converting-pig-iron-to-wrought-iron-fining) |
+| `mercury_supply` | 2 | 150.0 | [`mercury`](10_metallurgy.md#mercury---retorting-cinnabar-hydrargyrum) |
+| `met_basic_lining_phosphorus` | 2 | 240.0 | _(module has no anchor)_ |
+| `met_black_powder_blasting` | 2 | 120.0 | _(module has no anchor)_ |
+| `met_chill_casting` | 2 | 100.0 | _(module has no anchor)_ |
+| `met_continuous_casting` | 2 | 140.0 | _(module has no anchor)_ |
+| `met_converter_furnace` | 2 | 180.0 | _(module has no anchor)_ |
+| `met_cupola_furnace` | 2 | 150.0 | _(module has no anchor)_ |
+| `met_deep_shaft_sinking` | 2 | 240.0 | _(module has no anchor)_ |
+| `met_drawn_tube` | 2 | 100.0 | _(module has no anchor)_ |
+| `met_dry_sand_mold` | 2 | 120.0 | _(module has no anchor)_ |
+| `met_froth_flotation` | 2 | 300.0 | _(module has no anchor)_ |
+| `met_galvanizing` | 2 | 120.0 | _(module has no anchor)_ |
+| `met_normalizing` | 2 | 100.0 | _(module has no anchor)_ |
+| `met_open_hearth_furnace` | 2 | 220.0 | _(module has no anchor)_ |
+| `met_quenching_media` | 2 | 140.0 | _(module has no anchor)_ |
+| `met_rail_mill` | 2 | 180.0 | _(module has no anchor)_ |
+| `met_safety_lamps_ventilation` | 2 | 140.0 | _(module has no anchor)_ |
+| `met_tin_plate` | 2 | 100.0 | _(module has no anchor)_ |
+| `met_two_high_mill` | 2 | 280.0 | _(module has no anchor)_ |
+| `met_winding_engine` | 2 | 200.0 | _(module has no anchor)_ |
+| `met_wire_rod_rolling` | 2 | 160.0 | _(module has no anchor)_ |
+| `mt2_annealing` | 2 | 100.0 | _(module has no anchor)_ |
+| `mt2_bell_metal` | 2 | 120.0 | _(module has no anchor)_ |
+| `mt2_bone_china` | 2 | 140.0 | _(module has no anchor)_ |
+| `mt2_britannia_metal` | 2 | 120.0 | _(module has no anchor)_ |
+| `mt2_classifier_size_separation` | 2 | 110.0 | _(module has no anchor)_ |
+| `mt2_copper_reverberatory` | 2 | 120.0 | _(module has no anchor)_ |
+| `mt2_crusher_grinding` | 2 | 120.0 | _(module has no anchor)_ |
+| `mt2_drifting_horizontal` | 2 | 110.0 | _(module has no anchor)_ |
+| `mt2_grey_cast_iron` | 2 | 100.0 | _(module has no anchor)_ |
+| `mt2_opencast_mining` | 2 | 130.0 | _(module has no anchor)_ |
+| `mt2_quenching_brine` | 2 | 100.0 | _(module has no anchor)_ |
+| `mt2_quenching_water` | 2 | 100.0 | _(module has no anchor)_ |
+| `mt2_shaft_sinking_mining` | 2 | 120.0 | _(module has no anchor)_ |
+| `mt2_silica_brick_refractory` | 2 | 110.0 | _(module has no anchor)_ |
+| `mt2_solder_lead_tin` | 2 | 100.0 | _(module has no anchor)_ |
+| `mt2_stoping_ore_extraction` | 2 | 100.0 | _(module has no anchor)_ |
+| `mt2_tempering` | 2 | 100.0 | _(module has no anchor)_ |
+| `mt2_thickener_clarifier` | 2 | 110.0 | _(module has no anchor)_ |
+| `mt2_type_metal` | 2 | 110.0 | _(module has no anchor)_ |
+| `mt2_ventilation_mining` | 2 | 110.0 | _(module has no anchor)_ |
+| `mt2_white_cast_iron` | 2 | 110.0 | _(module has no anchor)_ |
+| `refractory_fireclay` | 2 | 350.0 | [`refractory_fireclay`](10_metallurgy.md#refractory_fireclay---furnace-lining-and-crucible-clay-argilla-refractaria) |
+| `zinc_metal` | 2 | 700.0 | [`zinc_metal`](10_metallurgy.md#zinc_metal---distilling-metallic-zinc-per-descensum) |
+| `high_temp_furnace` | 3 | 800.0 | [`high_temp_furnace`](10_metallurgy.md#high_temp_furnace---pushing-past-1500-c) |
+| `met_acetylene_supply` | 3 | 200.0 | _(module has no anchor)_ |
+| `met_deep_drawing` | 3 | 220.0 | _(module has no anchor)_ |
+| `met_die_casting` | 3 | 180.0 | _(module has no anchor)_ |
+| `met_dynamite_blasting` | 3 | 100.0 | _(module has no anchor)_ |
+| `met_extrusion_press` | 3 | 200.0 | _(module has no anchor)_ |
+| `met_hardenability_alloys` | 3 | 280.0 | _(module has no anchor)_ |
+| `met_hydraulic_press` | 3 | 240.0 | _(module has no anchor)_ |
+| `met_oxyacetylene_welding` | 3 | 160.0 | _(module has no anchor)_ |
+| `met_pneumatic_drill` | 3 | 180.0 | _(module has no anchor)_ |
+| `met_powder_metallurgy` | 3 | 260.0 | _(module has no anchor)_ |
+| `met_resistance_welding` | 3 | 180.0 | _(module has no anchor)_ |
+| `met_reversing_mill` | 3 | 240.0 | _(module has no anchor)_ |
+| `met_section_mill` | 3 | 200.0 | _(module has no anchor)_ |
+| `met_steam_hammer` | 3 | 180.0 | _(module has no anchor)_ |
+| `met_three_high_mill` | 3 | 200.0 | _(module has no anchor)_ |
+| `met_tube_mill_seamless` | 3 | 220.0 | _(module has no anchor)_ |
+| `mt2_austenitizing` | 3 | 120.0 | _(module has no anchor)_ |
+| `mt2_babbitt_metal` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_ball_mill_grinding` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_basic_converter` | 3 | 160.0 | _(module has no anchor)_ |
+| `mt2_brinell_hardness` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_carburising` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_cement_varieties` | 3 | 160.0 | _(module has no anchor)_ |
+| `mt2_copper_converter` | 3 | 180.0 | _(module has no anchor)_ |
+| `mt2_dredging_mining` | 3 | 150.0 | _(module has no anchor)_ |
+| `mt2_german_silver` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_hydraulic_mining` | 3 | 120.0 | _(module has no anchor)_ |
+| `mt2_jackhammer_portable` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_leaching_chemical` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_lead_glass_flint` | 3 | 180.0 | _(module has no anchor)_ |
+| `mt2_magnesite_refractory` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_malleable_cast_iron` | 3 | 150.0 | _(module has no anchor)_ |
+| `mt2_metallography_etching` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_normalising` | 3 | 120.0 | _(module has no anchor)_ |
+| `mt2_parkes_process` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_pelletising` | 3 | 110.0 | _(module has no anchor)_ |
+| `mt2_precipitation_recovery` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_quenching_oil` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_recrystallisation` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_rock_drill_pneumatic` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_safety_lamp_mining` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_shot_firer_blasting` | 3 | 140.0 | _(module has no anchor)_ |
+| `mt2_sintering_process` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_speculum_metal` | 3 | 150.0 | _(module has no anchor)_ |
+| `mt2_spring_steel` | 3 | 160.0 | _(module has no anchor)_ |
+| `mt2_tensile_test` | 3 | 120.0 | _(module has no anchor)_ |
+| `mt2_work_hardening` | 3 | 130.0 | _(module has no anchor)_ |
+| `mt2_zinc_by_retort` | 3 | 150.0 | _(module has no anchor)_ |
+| `bessemer_openhearth` | 4 | 900.0 | [`alloy_steels_ferroalloys`](10_metallurgy.md#alloy_steels_ferroalloys---ferromanganese-ferrosilicon-tungsten-and-chrome-steels) |
+| `met_arc_welding` | 4 | 140.0 | _(module has no anchor)_ |
+| `mt2_alumina_ceramic` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_carborundum_ceramic` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_charpy_impact_test` | 4 | 180.0 | _(module has no anchor)_ |
+| `mt2_chromite_refractory` | 4 | 170.0 | _(module has no anchor)_ |
+| `mt2_cobalt_extraction` | 4 | 150.0 | _(module has no anchor)_ |
+| `mt2_constantan_alloy` | 4 | 160.0 | _(module has no anchor)_ |
+| `mt2_copper_electrowinning` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_creep_testing` | 4 | 210.0 | _(module has no anchor)_ |
+| `mt2_cyanidation` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_ductile_cast_iron` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_dye_penetrant_inspection` | 4 | 160.0 | _(module has no anchor)_ |
+| `mt2_electrorefining` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_elinvar_alloy` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_fatigue_testing` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_froth_flotation` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_glass_fibre_insulation` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_grain_size_control` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_hadfield_manganese_steel` | 4 | 210.0 | _(module has no anchor)_ |
+| `mt2_high_speed_steel` | 4 | 250.0 | _(module has no anchor)_ |
+| `mt2_induction_furnace` | 4 | 250.0 | _(module has no anchor)_ |
+| `mt2_invar_nickel_steel` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_izod_impact_test` | 4 | 160.0 | _(module has no anchor)_ |
+| `mt2_laminated_glass_safety` | 4 | 180.0 | _(module has no anchor)_ |
+| `mt2_magnesium_alloys` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_magnetic_particle_inspection` | 4 | 180.0 | _(module has no anchor)_ |
+| `mt2_manganese_extraction` | 4 | 180.0 | _(module has no anchor)_ |
+| `mt2_manganin_resistance` | 4 | 170.0 | _(module has no anchor)_ |
+| `mt2_monel_metal` | 4 | 180.0 | _(module has no anchor)_ |
+| `mt2_nichrome_alloy` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_nickel_extraction` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_nitriding` | 4 | 180.0 | _(module has no anchor)_ |
+| `mt2_optical_glass_development` | 4 | 250.0 | _(module has no anchor)_ |
+| `mt2_powder_metallurgy` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_rockwell_hardness` | 4 | 160.0 | _(module has no anchor)_ |
+| `mt2_silicon_steel_transformer` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_stainless_austenitic` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_stainless_ferritic` | 4 | 180.0 | _(module has no anchor)_ |
+| `mt2_stainless_martensitic` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_stellite_cobalt_alloy` | 4 | 220.0 | _(module has no anchor)_ |
+| `mt2_tempered_glass_safety` | 4 | 200.0 | _(module has no anchor)_ |
+| `mt2_vickers_hardness` | 4 | 170.0 | _(module has no anchor)_ |
+| `mt2_zinc_by_electrolysis` | 4 | 200.0 | _(module has no anchor)_ |
+| `arc_furnace_ferroalloys` | 5 | 600.0 | [`alloy_steels_ferroalloys`](10_metallurgy.md#alloy_steels_ferroalloys---ferromanganese-ferrosilicon-tungsten-and-chrome-steels) |
+| `mt2_age_hardening_aluminum` | 5 | 280.0 | _(module has no anchor)_ |
+| `mt2_aluminum_alloy_series` | 5 | 280.0 | _(module has no anchor)_ |
+| `mt2_chromium_extraction` | 5 | 220.0 | _(module has no anchor)_ |
+| `mt2_duralumin_alloy` | 5 | 250.0 | _(module has no anchor)_ |
+| `mt2_induction_hardening` | 5 | 250.0 | _(module has no anchor)_ |
+| `mt2_magnesium_extraction` | 5 | 250.0 | _(module has no anchor)_ |
+| `mt2_molybdenum_extraction` | 5 | 200.0 | _(module has no anchor)_ |
+| `mt2_platinum_group_metals` | 5 | 300.0 | _(module has no anchor)_ |
+| `mt2_radiography_industrial` | 5 | 250.0 | _(module has no anchor)_ |
+| `mt2_rare_earths_separation` | 5 | 400.0 | _(module has no anchor)_ |
+| `mt2_titanium_alloys` | 5 | 300.0 | _(module has no anchor)_ |
+| `mt2_titanium_extraction` | 5 | 300.0 | _(module has no anchor)_ |
+| `mt2_tungsten_extraction` | 5 | 250.0 | _(module has no anchor)_ |
+| `mt2_ultrasonic_testing` | 5 | 240.0 | _(module has no anchor)_ |
+| `mt2_uranium_thorium_extraction` | 5 | 280.0 | _(module has no anchor)_ |
+| `mt2_vacuum_melting` | 5 | 280.0 | _(module has no anchor)_ |
+| `mt2_vanadium_extraction` | 5 | 220.0 | _(module has no anchor)_ |
+| `mt2_xray_diffraction` | 5 | 280.0 | _(module has no anchor)_ |
 
 ### 20_chemistry.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `chm_black_powder` | 0 | 0 | _(module has no anchor)_ |
-| `distillation_alcohol` | 1 | 450 | [`distillation_fractional`](20_chemistry.md#distillation_fractional---fractional-distillation-and-the-worm-still) |
-| `potash_soda` | 1 | 200 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
-| `soap_hard` | 1 | 250 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
-| `chm_alkali_waste` | 2 | 150 | _(module has no anchor)_ |
-| `chm_catalyst_concept` | 2 | 120 | _(module has no anchor)_ |
-| `chm_continuous_batch` | 2 | 100 | _(module has no anchor)_ |
-| `chm_corrosion_lead` | 2 | 80 | _(module has no anchor)_ |
-| `chm_corrosion_stoneware` | 2 | 100 | _(module has no anchor)_ |
-| `chm_crystallisation` | 2 | 60 | _(module has no anchor)_ |
-| `chm_phosphorus_extraction` | 2 | 120 | _(module has no anchor)_ |
-| `chm_potash_mining` | 2 | 150 | _(module has no anchor)_ |
-| `chm_soap_hard` | 2 | 0 | _(module has no anchor)_ |
-| `chm_water_coagulation` | 2 | 60 | _(module has no anchor)_ |
-| `chm_water_filtration` | 2 | 60 | _(module has no anchor)_ |
-| `gunpowder` | 2 | 300 | [`gunpowder`](20_chemistry.md#gunpowder---gunpowder-pulvis-pyrius-a-later-coinage-no-roman) |
-| `lab_apparatus` | 2 | 600 | [`lab_apparatus`](20_chemistry.md#lab_apparatus---laboratory-apparatus-vasa-chymica) |
-| `nitre_beds` | 2 | 350 | [`saltpetre_nitre_beds`](20_chemistry.md#saltpetre_nitre_beds---saltpetre-nitre-beds-no-roman-name-this) |
-| `sulfuric_retort` | 2 | 800 | [`sulfuric_acid_retort`](20_chemistry.md#sulfuric_acid_retort---oil-of-vitriol-by-dry-distillation) |
-| `analytical_chemistry` | 3 | 900 | [`analytical_chemistry`](20_chemistry.md#analytical_chemistry---analytical-chemistry-and-the-assay-bench) |
-| `chm_activated_carbon` | 3 | 100 | _(module has no anchor)_ |
-| `chm_ammonia_recovery` | 3 | 100 | _(module has no anchor)_ |
-| `chm_anthracene` | 3 | 100 | _(module has no anchor)_ |
-| `chm_aspirin` | 3 | 60 | _(module has no anchor)_ |
-| `chm_benzene` | 3 | 80 | _(module has no anchor)_ |
-| `chm_blasting_cap` | 3 | 100 | _(module has no anchor)_ |
-| `chm_bleaching_powder` | 3 | 80 | _(module has no anchor)_ |
-| `chm_caustic_soda` | 3 | 100 | _(module has no anchor)_ |
-| `chm_centrifuge` | 3 | 200 | _(module has no anchor)_ |
-| `chm_coal_tar_distillation` | 3 | 250 | _(module has no anchor)_ |
-| `chm_contact_sulfuric` | 3 | 300 | _(module has no anchor)_ |
-| `chm_cyanamide_fixation` | 3 | 200 | _(module has no anchor)_ |
-| `chm_deacon_process` | 3 | 150 | _(module has no anchor)_ |
-| `chm_dynamite` | 3 | 100 | _(module has no anchor)_ |
-| `chm_electric_arc_nitrogen` | 3 | 150 | _(module has no anchor)_ |
-| `chm_electroplating` | 3 | 100 | _(module has no anchor)_ |
-| `chm_evaporator_surface` | 3 | 120 | _(module has no anchor)_ |
-| `chm_filter_press` | 3 | 150 | _(module has no anchor)_ |
-| `chm_formaldehyde_synthesis` | 3 | 100 | _(module has no anchor)_ |
-| `chm_fractionating_column` | 3 | 200 | _(module has no anchor)_ |
-| `chm_fulminate` | 3 | 80 | _(module has no anchor)_ |
-| `chm_gelignite` | 3 | 100 | _(module has no anchor)_ |
-| `chm_glycerol` | 3 | 100 | _(module has no anchor)_ |
-| `chm_guncotton` | 3 | 120 | _(module has no anchor)_ |
-| `chm_industrial_hygiene` | 3 | 200 | _(module has no anchor)_ |
-| `chm_matches` | 3 | 100 | _(module has no anchor)_ |
-| `chm_naphthalene` | 3 | 100 | _(module has no anchor)_ |
-| `chm_nitroglycerin` | 3 | 150 | _(module has no anchor)_ |
-| `chm_oleum` | 3 | 120 | _(module has no anchor)_ |
-| `chm_phenol` | 3 | 120 | _(module has no anchor)_ |
-| `chm_photography` | 3 | 150 | _(module has no anchor)_ |
-| `chm_picric_acid` | 3 | 100 | _(module has no anchor)_ |
-| `chm_pressure_gauge` | 3 | 80 | _(module has no anchor)_ |
-| `chm_pressure_vessel` | 3 | 200 | _(module has no anchor)_ |
-| `chm_refrigerant_ammonia` | 3 | 100 | _(module has no anchor)_ |
-| `chm_salicylic_acid` | 3 | 100 | _(module has no anchor)_ |
-| `chm_smokeless_powder` | 3 | 180 | _(module has no anchor)_ |
-| `chm_solvay_process` | 3 | 250 | _(module has no anchor)_ |
-| `chm_superphosphate` | 3 | 100 | _(module has no anchor)_ |
-| `chm_tnt` | 3 | 150 | _(module has no anchor)_ |
-| `chm_toluene` | 3 | 80 | _(module has no anchor)_ |
-| `chm_water_chlorination` | 3 | 80 | _(module has no anchor)_ |
-| `chm_weldon_process` | 3 | 100 | _(module has no anchor)_ |
-| `destructive_distillation` | 3 | 600 | [`destructive_distillation`](20_chemistry.md#destructive_distillation---destructive-distillation-of-wood-and-coal) |
-| `hydrochloric_acid` | 3 | 300 | [`hydrochloric_acid`](20_chemistry.md#hydrochloric_acid---spirit-of-salt-muriatic-acid) |
-| `industrial_gases` | 3 | 450 | [`industrial_gases`](20_chemistry.md#industrial_gases---industrial-gases-oxygen-and-hydrogen-without) |
-| `lead_chamber` | 3 | 900 | [`lead_chamber`](20_chemistry.md#lead_chamber---the-lead-chamber-process) |
-| `nitric_acid` | 3 | 400 | [`nitric_acid`](20_chemistry.md#nitric_acid---nitric-acid-aqua-fortis) |
-| `soda_leblanc` | 3 | 600 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
-| `chm_alizarin` | 4 | 200 | _(module has no anchor)_ |
-| `chm_aniline` | 4 | 180 | _(module has no anchor)_ |
-| `chm_azo_dyes` | 4 | 150 | _(module has no anchor)_ |
-| `chm_bakelite` | 4 | 150 | _(module has no anchor)_ |
-| `chm_casein` | 4 | 100 | _(module has no anchor)_ |
-| `chm_celluloid` | 4 | 120 | _(module has no anchor)_ |
-| `chm_chlor_alkali_diaphragm` | 4 | 250 | _(module has no anchor)_ |
-| `chm_chlor_alkali_mercury` | 4 | 300 | _(module has no anchor)_ |
-| `chm_chromatography` | 4 | 100 | _(module has no anchor)_ |
-| `chm_contact_vanadium` | 4 | 150 | _(module has no anchor)_ |
-| `chm_corrosion_glass_lined` | 4 | 150 | _(module has no anchor)_ |
-| `chm_detergent_synthetic` | 4 | 150 | _(module has no anchor)_ |
-| `chm_haber_bosch` | 4 | 400 | _(module has no anchor)_ |
-| `chm_indigo_synthesis` | 4 | 220 | _(module has no anchor)_ |
-| `chm_ion_exchange` | 4 | 200 | _(module has no anchor)_ |
-| `chm_ostwald_ammonia_oxidation` | 4 | 250 | _(module has no anchor)_ |
-| `chm_polyethylene` | 4 | 250 | _(module has no anchor)_ |
-| `chm_pvc_synthesis` | 4 | 200 | _(module has no anchor)_ |
-| `chm_saccharin` | 4 | 120 | _(module has no anchor)_ |
-| `chm_sulfonamides` | 4 | 150 | _(module has no anchor)_ |
-| `hydrofluoric_acid` | 4 | 400 | [`hydrofluoric_acid`](20_chemistry.md#hydrofluoric_acid---hydrofluoric-acid-no-established-roman-name) |
-| `chm_corrosion_stainless` | 5 | 80 | _(module has no anchor)_ |
-| `chm_nylon` | 5 | 300 | _(module has no anchor)_ |
+| `chm_black_powder` | 0 | 0.0 | _(module has no anchor)_ |
+| `distillation_alcohol` | 1 | 450.0 | [`distillation_fractional`](20_chemistry.md#distillation_fractional---fractional-distillation-and-the-worm-still) |
+| `potash_soda` | 1 | 200.0 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
+| `soap_hard` | 1 | 250.0 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
+| `ch2_analysis_gravimetric` | 2 | 50.0 | _(module has no anchor)_ |
+| `ch2_analysis_melting_point` | 2 | 40.0 | _(module has no anchor)_ |
+| `ch2_analysis_titrimetry` | 2 | 60.0 | _(module has no anchor)_ |
+| `ch2_lab_dialysis` | 2 | 45.0 | _(module has no anchor)_ |
+| `ch2_lab_fractional_crystallisation` | 2 | 70.0 | _(module has no anchor)_ |
+| `ch2_lab_recrystallisation` | 2 | 45.0 | _(module has no anchor)_ |
+| `ch2_lab_reflux` | 2 | 40.0 | _(module has no anchor)_ |
+| `ch2_lab_solvent_extraction` | 2 | 45.0 | _(module has no anchor)_ |
+| `ch2_lab_steam_distillation` | 2 | 50.0 | _(module has no anchor)_ |
+| `ch2_lab_sublimation` | 2 | 60.0 | _(module has no anchor)_ |
+| `ch2_phys_equilibrium` | 2 | 70.0 | _(module has no anchor)_ |
+| `ch2_phys_le_chatelier` | 2 | 65.0 | _(module has no anchor)_ |
+| `ch2_phys_mole` | 2 | 65.0 | _(module has no anchor)_ |
+| `ch2_prod_ether` | 2 | 60.0 | _(module has no anchor)_ |
+| `ch2_prod_glycerol` | 2 | 60.0 | _(module has no anchor)_ |
+| `ch2_rxn_dichromate_oxidation` | 2 | 70.0 | _(module has no anchor)_ |
+| `ch2_rxn_esterification` | 2 | 55.0 | _(module has no anchor)_ |
+| `ch2_rxn_permanganate_oxidation` | 2 | 65.0 | _(module has no anchor)_ |
+| `ch2_rxn_saponification` | 2 | 65.0 | _(module has no anchor)_ |
+| `chm_alkali_waste` | 2 | 150.0 | _(module has no anchor)_ |
+| `chm_catalyst_concept` | 2 | 120.0 | _(module has no anchor)_ |
+| `chm_continuous_batch` | 2 | 100.0 | _(module has no anchor)_ |
+| `chm_corrosion_lead` | 2 | 80.0 | _(module has no anchor)_ |
+| `chm_corrosion_stoneware` | 2 | 100.0 | _(module has no anchor)_ |
+| `chm_crystallisation` | 2 | 60.0 | _(module has no anchor)_ |
+| `chm_phosphorus_extraction` | 2 | 120.0 | _(module has no anchor)_ |
+| `chm_potash_mining` | 2 | 150.0 | _(module has no anchor)_ |
+| `chm_soap_hard` | 2 | 0.0 | _(module has no anchor)_ |
+| `chm_water_coagulation` | 2 | 60.0 | _(module has no anchor)_ |
+| `chm_water_filtration` | 2 | 60.0 | _(module has no anchor)_ |
+| `gunpowder` | 2 | 300.0 | [`gunpowder`](20_chemistry.md#gunpowder---gunpowder-pulvis-pyrius-a-later-coinage-no-roman) |
+| `lab_apparatus` | 2 | 600.0 | [`lab_apparatus`](20_chemistry.md#lab_apparatus---laboratory-apparatus-vasa-chymica) |
+| `nitre_beds` | 2 | 350.0 | [`saltpetre_nitre_beds`](20_chemistry.md#saltpetre_nitre_beds---saltpetre-nitre-beds-no-roman-name-this) |
+| `sulfuric_retort` | 2 | 800.0 | [`sulfuric_acid_retort`](20_chemistry.md#sulfuric_acid_retort---oil-of-vitriol-by-dry-distillation) |
+| `analytical_chemistry` | 3 | 900.0 | [`analytical_chemistry`](20_chemistry.md#analytical_chemistry---analytical-chemistry-and-the-assay-bench) |
+| `ch2_analysis_colorimetry` | 3 | 75.0 | _(module has no anchor)_ |
+| `ch2_analysis_combustion` | 3 | 125.0 | _(module has no anchor)_ |
+| `ch2_analysis_complexometric` | 3 | 100.0 | _(module has no anchor)_ |
+| `ch2_analysis_conductometry` | 3 | 85.0 | _(module has no anchor)_ |
+| `ch2_analysis_indicator_dyes` | 3 | 95.0 | _(module has no anchor)_ |
+| `ch2_analysis_kjeldahl` | 3 | 110.0 | _(module has no anchor)_ |
+| `ch2_analysis_redox_titration` | 3 | 80.0 | _(module has no anchor)_ |
+| `ch2_analysis_refractometry` | 3 | 90.0 | _(module has no anchor)_ |
+| `ch2_lab_azeotropic_distillation` | 3 | 85.0 | _(module has no anchor)_ |
+| `ch2_lab_centrifugation` | 3 | 95.0 | _(module has no anchor)_ |
+| `ch2_lab_column_chromatography` | 3 | 90.0 | _(module has no anchor)_ |
+| `ch2_lab_electrophoresis` | 3 | 110.0 | _(module has no anchor)_ |
+| `ch2_lab_paper_chromatography` | 3 | 60.0 | _(module has no anchor)_ |
+| `ch2_lab_soxhlet` | 3 | 90.0 | _(module has no anchor)_ |
+| `ch2_lab_vacuum_distillation` | 3 | 110.0 | _(module has no anchor)_ |
+| `ch2_phys_colligative` | 3 | 85.0 | _(module has no anchor)_ |
+| `ch2_phys_electrochemical_series` | 3 | 85.0 | _(module has no anchor)_ |
+| `ch2_phys_kinetics` | 3 | 100.0 | _(module has no anchor)_ |
+| `ch2_phys_nernst_equation` | 3 | 100.0 | _(module has no anchor)_ |
+| `ch2_phys_overpotential` | 3 | 110.0 | _(module has no anchor)_ |
+| `ch2_phys_phase_rule` | 3 | 100.0 | _(module has no anchor)_ |
+| `ch2_phys_thermochemistry` | 3 | 90.0 | _(module has no anchor)_ |
+| `ch2_prod_acetic_acid` | 3 | 70.0 | _(module has no anchor)_ |
+| `ch2_prod_acetone` | 3 | 95.0 | _(module has no anchor)_ |
+| `ch2_prod_acetylene` | 3 | 75.0 | _(module has no anchor)_ |
+| `ch2_prod_aniline` | 3 | 75.0 | _(module has no anchor)_ |
+| `ch2_prod_benzene` | 3 | 70.0 | _(module has no anchor)_ |
+| `ch2_prod_carbon_tetrachloride` | 3 | 95.0 | _(module has no anchor)_ |
+| `ch2_prod_chloroform` | 3 | 85.0 | _(module has no anchor)_ |
+| `ch2_prod_citric_acid` | 3 | 100.0 | _(module has no anchor)_ |
+| `ch2_prod_formaldehyde` | 3 | 90.0 | _(module has no anchor)_ |
+| `ch2_prod_phenol` | 3 | 110.0 | _(module has no anchor)_ |
+| `ch2_prod_toluene` | 3 | 75.0 | _(module has no anchor)_ |
+| `ch2_prod_urea` | 3 | 95.0 | _(module has no anchor)_ |
+| `ch2_prod_xylene` | 3 | 90.0 | _(module has no anchor)_ |
+| `ch2_rxn_addition_polymerisation` | 3 | 110.0 | _(module has no anchor)_ |
+| `ch2_rxn_aldol` | 3 | 105.0 | _(module has no anchor)_ |
+| `ch2_rxn_bechamp_reduction` | 3 | 75.0 | _(module has no anchor)_ |
+| `ch2_rxn_catalytic_hydrogenation` | 3 | 100.0 | _(module has no anchor)_ |
+| `ch2_rxn_condensation_polymerisation` | 3 | 120.0 | _(module has no anchor)_ |
+| `ch2_rxn_diazotisation` | 3 | 120.0 | _(module has no anchor)_ |
+| `ch2_rxn_friedel_crafts` | 3 | 100.0 | _(module has no anchor)_ |
+| `ch2_rxn_grignard` | 3 | 110.0 | _(module has no anchor)_ |
+| `ch2_rxn_halogenation` | 3 | 90.0 | _(module has no anchor)_ |
+| `ch2_rxn_nitration` | 3 | 95.0 | _(module has no anchor)_ |
+| `ch2_rxn_sulfonation` | 3 | 85.0 | _(module has no anchor)_ |
+| `ch2_rxn_vulcanisation` | 3 | 85.0 | _(module has no anchor)_ |
+| `chm_activated_carbon` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_ammonia_recovery` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_anthracene` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_aspirin` | 3 | 60.0 | _(module has no anchor)_ |
+| `chm_benzene` | 3 | 80.0 | _(module has no anchor)_ |
+| `chm_blasting_cap` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_bleaching_powder` | 3 | 80.0 | _(module has no anchor)_ |
+| `chm_caustic_soda` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_centrifuge` | 3 | 200.0 | _(module has no anchor)_ |
+| `chm_coal_tar_distillation` | 3 | 250.0 | _(module has no anchor)_ |
+| `chm_contact_sulfuric` | 3 | 300.0 | _(module has no anchor)_ |
+| `chm_cyanamide_fixation` | 3 | 200.0 | _(module has no anchor)_ |
+| `chm_deacon_process` | 3 | 150.0 | _(module has no anchor)_ |
+| `chm_dynamite` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_electric_arc_nitrogen` | 3 | 150.0 | _(module has no anchor)_ |
+| `chm_electroplating` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_evaporator_surface` | 3 | 120.0 | _(module has no anchor)_ |
+| `chm_filter_press` | 3 | 150.0 | _(module has no anchor)_ |
+| `chm_formaldehyde_synthesis` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_fractionating_column` | 3 | 200.0 | _(module has no anchor)_ |
+| `chm_fulminate` | 3 | 80.0 | _(module has no anchor)_ |
+| `chm_gelignite` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_glycerol` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_guncotton` | 3 | 120.0 | _(module has no anchor)_ |
+| `chm_industrial_hygiene` | 3 | 200.0 | _(module has no anchor)_ |
+| `chm_matches` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_naphthalene` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_nitroglycerin` | 3 | 150.0 | _(module has no anchor)_ |
+| `chm_oleum` | 3 | 120.0 | _(module has no anchor)_ |
+| `chm_phenol` | 3 | 120.0 | _(module has no anchor)_ |
+| `chm_photography` | 3 | 150.0 | _(module has no anchor)_ |
+| `chm_picric_acid` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_pressure_gauge` | 3 | 80.0 | _(module has no anchor)_ |
+| `chm_pressure_vessel` | 3 | 200.0 | _(module has no anchor)_ |
+| `chm_refrigerant_ammonia` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_salicylic_acid` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_smokeless_powder` | 3 | 180.0 | _(module has no anchor)_ |
+| `chm_solvay_process` | 3 | 250.0 | _(module has no anchor)_ |
+| `chm_superphosphate` | 3 | 100.0 | _(module has no anchor)_ |
+| `chm_tnt` | 3 | 150.0 | _(module has no anchor)_ |
+| `chm_toluene` | 3 | 80.0 | _(module has no anchor)_ |
+| `chm_water_chlorination` | 3 | 80.0 | _(module has no anchor)_ |
+| `chm_weldon_process` | 3 | 100.0 | _(module has no anchor)_ |
+| `destructive_distillation` | 3 | 600.0 | [`destructive_distillation`](20_chemistry.md#destructive_distillation---destructive-distillation-of-wood-and-coal) |
+| `hydrochloric_acid` | 3 | 300.0 | [`hydrochloric_acid`](20_chemistry.md#hydrochloric_acid---spirit-of-salt-muriatic-acid) |
+| `industrial_gases` | 3 | 450.0 | [`industrial_gases`](20_chemistry.md#industrial_gases---industrial-gases-oxygen-and-hydrogen-without) |
+| `lead_chamber` | 3 | 900.0 | [`lead_chamber`](20_chemistry.md#lead_chamber---the-lead-chamber-process) |
+| `nitric_acid` | 3 | 400.0 | [`nitric_acid`](20_chemistry.md#nitric_acid---nitric-acid-aqua-fortis) |
+| `soda_leblanc` | 3 | 600.0 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
+| `ch2_analysis_flame_photometry` | 4 | 130.0 | _(module has no anchor)_ |
+| `ch2_analysis_glass_ph_electrode` | 4 | 150.0 | _(module has no anchor)_ |
+| `ch2_analysis_polarography` | 4 | 155.0 | _(module has no anchor)_ |
+| `ch2_analysis_spectrophotometry` | 4 | 140.0 | _(module has no anchor)_ |
+| `ch2_lab_freeze_drying` | 4 | 140.0 | _(module has no anchor)_ |
+| `ch2_lab_gas_chromatography` | 4 | 150.0 | _(module has no anchor)_ |
+| `ch2_lab_ion_exchange` | 4 | 130.0 | _(module has no anchor)_ |
+| `ch2_phys_anodising` | 4 | 120.0 | _(module has no anchor)_ |
+| `ch2_polymer_bakelite` | 4 | 135.0 | _(module has no anchor)_ |
+| `ch2_polymer_buna` | 4 | 130.0 | _(module has no anchor)_ |
+| `ch2_polymer_celluloid` | 4 | 110.0 | _(module has no anchor)_ |
+| `ch2_polymer_cellulose_acetate` | 4 | 120.0 | _(module has no anchor)_ |
+| `ch2_polymer_neoprene` | 4 | 130.0 | _(module has no anchor)_ |
+| `ch2_polymer_nylon` | 4 | 140.0 | _(module has no anchor)_ |
+| `ch2_polymer_pmma` | 4 | 125.0 | _(module has no anchor)_ |
+| `ch2_polymer_polyester` | 4 | 135.0 | _(module has no anchor)_ |
+| `ch2_polymer_polyethylene` | 4 | 120.0 | _(module has no anchor)_ |
+| `ch2_polymer_polystyrene` | 4 | 110.0 | _(module has no anchor)_ |
+| `ch2_polymer_pvc` | 4 | 115.0 | _(module has no anchor)_ |
+| `ch2_polymer_silicone` | 4 | 145.0 | _(module has no anchor)_ |
+| `ch2_polymer_urea_formaldehyde` | 4 | 125.0 | _(module has no anchor)_ |
+| `ch2_polymer_viscose` | 4 | 130.0 | _(module has no anchor)_ |
+| `ch2_process_alkylation` | 4 | 115.0 | _(module has no anchor)_ |
+| `ch2_process_bayer` | 4 | 130.0 | _(module has no anchor)_ |
+| `ch2_process_bergius` | 4 | 150.0 | _(module has no anchor)_ |
+| `ch2_process_birkeland_eyde` | 4 | 120.0 | _(module has no anchor)_ |
+| `ch2_process_castner_kellner` | 4 | 140.0 | _(module has no anchor)_ |
+| `ch2_process_catalytic_cracking` | 4 | 135.0 | _(module has no anchor)_ |
+| `ch2_process_claus` | 4 | 125.0 | _(module has no anchor)_ |
+| `ch2_process_contact` | 4 | 120.0 | _(module has no anchor)_ |
+| `ch2_process_cyanamide` | 4 | 115.0 | _(module has no anchor)_ |
+| `ch2_process_deacon` | 4 | 110.0 | _(module has no anchor)_ |
+| `ch2_process_fischer_tropsch` | 4 | 145.0 | _(module has no anchor)_ |
+| `ch2_process_frasch` | 4 | 150.0 | _(module has no anchor)_ |
+| `ch2_process_kraft_pulping` | 4 | 130.0 | _(module has no anchor)_ |
+| `ch2_process_ostwald` | 4 | 125.0 | _(module has no anchor)_ |
+| `ch2_process_reforming` | 4 | 140.0 | _(module has no anchor)_ |
+| `ch2_process_sulfite_pulping` | 4 | 120.0 | _(module has no anchor)_ |
+| `ch2_process_thermal_cracking` | 4 | 110.0 | _(module has no anchor)_ |
+| `ch2_prod_methanol` | 4 | 125.0 | _(module has no anchor)_ |
+| `chm_alizarin` | 4 | 200.0 | _(module has no anchor)_ |
+| `chm_aniline` | 4 | 180.0 | _(module has no anchor)_ |
+| `chm_azo_dyes` | 4 | 150.0 | _(module has no anchor)_ |
+| `chm_bakelite` | 4 | 150.0 | _(module has no anchor)_ |
+| `chm_casein` | 4 | 100.0 | _(module has no anchor)_ |
+| `chm_celluloid` | 4 | 120.0 | _(module has no anchor)_ |
+| `chm_chlor_alkali_diaphragm` | 4 | 250.0 | _(module has no anchor)_ |
+| `chm_chlor_alkali_mercury` | 4 | 300.0 | _(module has no anchor)_ |
+| `chm_chromatography` | 4 | 100.0 | _(module has no anchor)_ |
+| `chm_contact_vanadium` | 4 | 150.0 | _(module has no anchor)_ |
+| `chm_corrosion_glass_lined` | 4 | 150.0 | _(module has no anchor)_ |
+| `chm_detergent_synthetic` | 4 | 150.0 | _(module has no anchor)_ |
+| `chm_haber_bosch` | 4 | 400.0 | _(module has no anchor)_ |
+| `chm_indigo_synthesis` | 4 | 220.0 | _(module has no anchor)_ |
+| `chm_ion_exchange` | 4 | 200.0 | _(module has no anchor)_ |
+| `chm_ostwald_ammonia_oxidation` | 4 | 250.0 | _(module has no anchor)_ |
+| `chm_polyethylene` | 4 | 250.0 | _(module has no anchor)_ |
+| `chm_pvc_synthesis` | 4 | 200.0 | _(module has no anchor)_ |
+| `chm_saccharin` | 4 | 120.0 | _(module has no anchor)_ |
+| `chm_sulfonamides` | 4 | 150.0 | _(module has no anchor)_ |
+| `hydrofluoric_acid` | 4 | 400.0 | [`hydrofluoric_acid`](20_chemistry.md#hydrofluoric_acid---hydrofluoric-acid-no-established-roman-name) |
+| `chm_corrosion_stainless` | 5 | 80.0 | _(module has no anchor)_ |
+| `chm_nylon` | 5 | 300.0 | _(module has no anchor)_ |
 
 ### 30_glass_optics.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `opt_burning_glass` | 0 | 0 | _(module has no anchor)_ |
-| `opt_dioptra` | 0 | 0 | _(module has no anchor)_ |
-| `opt_geared_mechanisms` | 0 | 0 | _(module has no anchor)_ |
-| `opt_groma` | 0 | 0 | _(module has no anchor)_ |
-| `opt_metal_mirror_polished` | 0 | 0 | _(module has no anchor)_ |
-| `opt_steelyards` | 0 | 0 | _(module has no anchor)_ |
-| `opt_sundial` | 0 | 0 | _(module has no anchor)_ |
-| `opt_water_clock` | 0 | 0 | _(module has no anchor)_ |
-| `opt_water_globe_magnifier` | 0 | 0 | _(module has no anchor)_ |
-| `camera_obscura` | 1 | 120 | [`camera_obscura_photography`](30_glass_optics.md#camera_obscura_photography---camera-obscura-and-silver-halide-photography) |
-| `glass_bead_microscope` | 1 | 300 | [`glass_bead_microscope`](30_glass_optics.md#glass_bead_microscope---bead-microscope) |
-| `glass_clear` | 1 | 400 | [`glass_clear_cristallo`](30_glass_optics.md#glass_clear_cristallo---clear-glass-vitrum) |
-| `lens_grinding` | 1 | 600 | [`lens_grinding`](30_glass_optics.md#lens_grinding---grinding-and-polishing-lenses) |
-| `mirror_amalgam` | 1 | 350 | [`mirrors_amalgam`](30_glass_optics.md#mirrors_amalgam---tin-mercury-amalgam-mirror-later-venetian-mirror) |
-| `opt_anemometer` | 1 | 60 | _(module has no anchor)_ |
-| `opt_artificial_horizon` | 1 | 60 | _(module has no anchor)_ |
-| `opt_focal_length_measurement` | 1 | 50 | _(module has no anchor)_ |
-| `opt_hygrometer` | 1 | 70 | _(module has no anchor)_ |
-| `opt_level` | 1 | 80 | _(module has no anchor)_ |
-| `opt_manometer` | 1 | 60 | _(module has no anchor)_ |
-| `opt_plane_table` | 1 | 100 | _(module has no anchor)_ |
-| `opt_plano_convex_lens` | 1 | 40 | _(module has no anchor)_ |
-| `opt_sextant` | 1 | 120 | _(module has no anchor)_ |
-| `opt_spectacles` | 1 | 60 | _(module has no anchor)_ |
-| `opt_spherometer` | 1 | 80 | _(module has no anchor)_ |
-| `balance_analytical` | 2 | 700 | [`balance_analytical`](30_glass_optics.md#balance_analytical---analytical-balance-milligram-precision) |
-| `barometer` | 2 | 200 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
-| `glass_labware` | 2 | 500 | [`glass_lab_ware`](30_glass_optics.md#glass_lab_ware---laboratory-glassware) |
-| `opt_abbe_condenser` | 2 | 120 | _(module has no anchor)_ |
-| `opt_achromatic_doublet` | 2 | 180 | _(module has no anchor)_ |
-| `opt_aneroid_barometer` | 2 | 140 | _(module has no anchor)_ |
-| `opt_bourdon_gauge` | 2 | 120 | _(module has no anchor)_ |
-| `opt_calorimeter` | 2 | 100 | _(module has no anchor)_ |
-| `opt_clock_drive` | 2 | 160 | _(module has no anchor)_ |
-| `opt_diffraction_grating` | 2 | 120 | _(module has no anchor)_ |
-| `opt_electrometer` | 2 | 120 | _(module has no anchor)_ |
-| `opt_equatorial_mount` | 2 | 180 | _(module has no anchor)_ |
-| `opt_flame_spark_spectra` | 2 | 80 | _(module has no anchor)_ |
-| `opt_fraunhofer_lines` | 2 | 200 | _(module has no anchor)_ |
-| `opt_magnetometer` | 2 | 140 | _(module has no anchor)_ |
-| `opt_newton_rings` | 2 | 80 | _(module has no anchor)_ |
-| `opt_nicol_prism` | 2 | 100 | _(module has no anchor)_ |
-| `opt_oil_immersion_objective` | 2 | 130 | _(module has no anchor)_ |
-| `opt_photometry` | 2 | 100 | _(module has no anchor)_ |
-| `opt_pitot_tube` | 2 | 80 | _(module has no anchor)_ |
-| `opt_polarimeter` | 2 | 120 | _(module has no anchor)_ |
-| `opt_pyrometer_contraction` | 2 | 80 | _(module has no anchor)_ |
-| `opt_reflecting_telescope` | 2 | 200 | _(module has no anchor)_ |
-| `opt_refractometer` | 2 | 140 | _(module has no anchor)_ |
-| `opt_silvered_glass_mirror` | 2 | 150 | _(module has no anchor)_ |
-| `opt_spectroscopy_absorption` | 2 | 120 | _(module has no anchor)_ |
-| `opt_spectroscopy_emission` | 2 | 100 | _(module has no anchor)_ |
-| `opt_speculum_metal` | 2 | 120 | _(module has no anchor)_ |
-| `opt_stellar_parallax` | 2 | 150 | _(module has no anchor)_ |
-| `opt_theodolite` | 2 | 200 | _(module has no anchor)_ |
-| `opt_transit_instrument` | 2 | 200 | _(module has no anchor)_ |
-| `telescope` | 2 | 350 | [`telescope`](30_glass_optics.md#telescope---refracting-telescope) |
-| `thermometer` | 2 | 400 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
-| `glass_borosilicate` | 3 | 500 | [`glass_borosilicate`](30_glass_optics.md#glass_borosilicate---boron-glass-no-roman-name-propose-vitrum-larderellianum) |
-| `microscope_compound` | 3 | 600 | [`microscope_compound`](30_glass_optics.md#microscope_compound---compound-microscope) |
-| `opt_apochromat` | 3 | 250 | _(module has no anchor)_ |
-| `opt_ballistic_galvanometer` | 3 | 160 | _(module has no anchor)_ |
-| `opt_bolometer` | 3 | 200 | _(module has no anchor)_ |
-| `opt_chronograph` | 3 | 160 | _(module has no anchor)_ |
-| `opt_gravimeter` | 3 | 220 | _(module has no anchor)_ |
-| `opt_michelson_interferometer` | 3 | 250 | _(module has no anchor)_ |
-| `opt_phase_contrast` | 3 | 200 | _(module has no anchor)_ |
-| `opt_photocell` | 3 | 180 | _(module has no anchor)_ |
-| `opt_potentiometer` | 3 | 180 | _(module has no anchor)_ |
-| `opt_pyrometer_optical` | 3 | 120 | _(module has no anchor)_ |
-| `opt_pyrometer_radiation` | 3 | 180 | _(module has no anchor)_ |
-| `opt_pyrometer_thermoelectric` | 3 | 150 | _(module has no anchor)_ |
-| `opt_ruling_engine` | 3 | 400 | _(module has no anchor)_ |
-| `opt_seismograph` | 3 | 200 | _(module has no anchor)_ |
-| `opt_spectroheliograph` | 3 | 250 | _(module has no anchor)_ |
-| `opt_standards_laboratory` | 3 | 500 | _(module has no anchor)_ |
-| `opt_stroboscope` | 3 | 140 | _(module has no anchor)_ |
-| `opt_ultramicroscope` | 3 | 150 | _(module has no anchor)_ |
-| `photography` | 3 | 800 | [`camera_obscura_photography`](30_glass_optics.md#camera_obscura_photography---camera-obscura-and-silver-halide-photography) |
-| `spectroscope` | 3 | 500 | [`spectroscope`](30_glass_optics.md#spectroscope---prism-spectroscope) |
-| `fused_quartz` | 4 | 700 | [`fused_quartz`](30_glass_optics.md#fused_quartz---fused-silica-pure-quartz-glass) |
-| `opt_electron_microscope` | 4 | 400 | _(module has no anchor)_ |
-| `opt_high_speed_camera` | 4 | 280 | _(module has no anchor)_ |
-| `opt_oscilloscope` | 4 | 300 | _(module has no anchor)_ |
+| `opt_burning_glass` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_dioptra` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_geared_mechanisms` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_groma` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_metal_mirror_polished` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_steelyards` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_sundial` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_water_clock` | 0 | 0.0 | _(module has no anchor)_ |
+| `opt_water_globe_magnifier` | 0 | 0.0 | _(module has no anchor)_ |
+| `camera_obscura` | 1 | 120.0 | [`camera_obscura_photography`](30_glass_optics.md#camera_obscura_photography---camera-obscura-and-silver-halide-photography) |
+| `glass_bead_microscope` | 1 | 300.0 | [`glass_bead_microscope`](30_glass_optics.md#glass_bead_microscope---bead-microscope) |
+| `glass_clear` | 1 | 400.0 | [`glass_clear_cristallo`](30_glass_optics.md#glass_clear_cristallo---clear-glass-vitrum) |
+| `lens_grinding` | 1 | 600.0 | [`lens_grinding`](30_glass_optics.md#lens_grinding---grinding-and-polishing-lenses) |
+| `mirror_amalgam` | 1 | 350.0 | [`mirrors_amalgam`](30_glass_optics.md#mirrors_amalgam---tin-mercury-amalgam-mirror-later-venetian-mirror) |
+| `opt_anemometer` | 1 | 60.0 | _(module has no anchor)_ |
+| `opt_artificial_horizon` | 1 | 60.0 | _(module has no anchor)_ |
+| `opt_focal_length_measurement` | 1 | 50.0 | _(module has no anchor)_ |
+| `opt_hygrometer` | 1 | 70.0 | _(module has no anchor)_ |
+| `opt_level` | 1 | 80.0 | _(module has no anchor)_ |
+| `opt_manometer` | 1 | 60.0 | _(module has no anchor)_ |
+| `opt_plane_table` | 1 | 100.0 | _(module has no anchor)_ |
+| `opt_plano_convex_lens` | 1 | 40.0 | _(module has no anchor)_ |
+| `opt_sextant` | 1 | 120.0 | _(module has no anchor)_ |
+| `opt_spectacles` | 1 | 60.0 | _(module has no anchor)_ |
+| `opt_spherometer` | 1 | 80.0 | _(module has no anchor)_ |
+| `balance_analytical` | 2 | 700.0 | [`balance_analytical`](30_glass_optics.md#balance_analytical---analytical-balance-milligram-precision) |
+| `barometer` | 2 | 200.0 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
+| `glass_labware` | 2 | 500.0 | [`glass_lab_ware`](30_glass_optics.md#glass_lab_ware---laboratory-glassware) |
+| `opt_abbe_condenser` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_achromatic_doublet` | 2 | 180.0 | _(module has no anchor)_ |
+| `opt_aneroid_barometer` | 2 | 140.0 | _(module has no anchor)_ |
+| `opt_bourdon_gauge` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_calorimeter` | 2 | 100.0 | _(module has no anchor)_ |
+| `opt_clock_drive` | 2 | 160.0 | _(module has no anchor)_ |
+| `opt_diffraction_grating` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_electrometer` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_equatorial_mount` | 2 | 180.0 | _(module has no anchor)_ |
+| `opt_flame_spark_spectra` | 2 | 80.0 | _(module has no anchor)_ |
+| `opt_fraunhofer_lines` | 2 | 200.0 | _(module has no anchor)_ |
+| `opt_magnetometer` | 2 | 140.0 | _(module has no anchor)_ |
+| `opt_newton_rings` | 2 | 80.0 | _(module has no anchor)_ |
+| `opt_nicol_prism` | 2 | 100.0 | _(module has no anchor)_ |
+| `opt_oil_immersion_objective` | 2 | 130.0 | _(module has no anchor)_ |
+| `opt_photometry` | 2 | 100.0 | _(module has no anchor)_ |
+| `opt_pitot_tube` | 2 | 80.0 | _(module has no anchor)_ |
+| `opt_polarimeter` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_pyrometer_contraction` | 2 | 80.0 | _(module has no anchor)_ |
+| `opt_reflecting_telescope` | 2 | 200.0 | _(module has no anchor)_ |
+| `opt_refractometer` | 2 | 140.0 | _(module has no anchor)_ |
+| `opt_silvered_glass_mirror` | 2 | 150.0 | _(module has no anchor)_ |
+| `opt_spectroscopy_absorption` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_spectroscopy_emission` | 2 | 100.0 | _(module has no anchor)_ |
+| `opt_speculum_metal` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_stellar_parallax` | 2 | 150.0 | _(module has no anchor)_ |
+| `opt_theodolite` | 2 | 200.0 | _(module has no anchor)_ |
+| `opt_transit_instrument` | 2 | 200.0 | _(module has no anchor)_ |
+| `telescope` | 2 | 350.0 | [`telescope`](30_glass_optics.md#telescope---refracting-telescope) |
+| `thermometer` | 2 | 400.0 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
+| `glass_borosilicate` | 3 | 500.0 | [`glass_borosilicate`](30_glass_optics.md#glass_borosilicate---boron-glass-no-roman-name-propose-vitrum-larderellianum) |
+| `microscope_compound` | 3 | 600.0 | [`microscope_compound`](30_glass_optics.md#microscope_compound---compound-microscope) |
+| `opt_apochromat` | 3 | 250.0 | _(module has no anchor)_ |
+| `opt_ballistic_galvanometer` | 3 | 160.0 | _(module has no anchor)_ |
+| `opt_bolometer` | 3 | 200.0 | _(module has no anchor)_ |
+| `opt_chronograph` | 3 | 160.0 | _(module has no anchor)_ |
+| `opt_gravimeter` | 3 | 220.0 | _(module has no anchor)_ |
+| `opt_michelson_interferometer` | 3 | 250.0 | _(module has no anchor)_ |
+| `opt_phase_contrast` | 3 | 200.0 | _(module has no anchor)_ |
+| `opt_photocell` | 3 | 180.0 | _(module has no anchor)_ |
+| `opt_potentiometer` | 3 | 180.0 | _(module has no anchor)_ |
+| `opt_pyrometer_optical` | 3 | 120.0 | _(module has no anchor)_ |
+| `opt_pyrometer_radiation` | 3 | 180.0 | _(module has no anchor)_ |
+| `opt_pyrometer_thermoelectric` | 3 | 150.0 | _(module has no anchor)_ |
+| `opt_ruling_engine` | 3 | 400.0 | _(module has no anchor)_ |
+| `opt_seismograph` | 3 | 200.0 | _(module has no anchor)_ |
+| `opt_spectroheliograph` | 3 | 250.0 | _(module has no anchor)_ |
+| `opt_standards_laboratory` | 3 | 500.0 | _(module has no anchor)_ |
+| `opt_stroboscope` | 3 | 140.0 | _(module has no anchor)_ |
+| `opt_ultramicroscope` | 3 | 150.0 | _(module has no anchor)_ |
+| `photography` | 3 | 800.0 | [`camera_obscura_photography`](30_glass_optics.md#camera_obscura_photography---camera-obscura-and-silver-halide-photography) |
+| `spectroscope` | 3 | 500.0 | [`spectroscope`](30_glass_optics.md#spectroscope---prism-spectroscope) |
+| `fused_quartz` | 4 | 700.0 | [`fused_quartz`](30_glass_optics.md#fused_quartz---fused-silica-pure-quartz-glass) |
+| `opt_electron_microscope` | 4 | 400.0 | _(module has no anchor)_ |
+| `opt_high_speed_camera` | 4 | 280.0 | _(module has no anchor)_ |
+| `opt_oscilloscope` | 4 | 300.0 | _(module has no anchor)_ |
 
 ### 40_power_precision.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `pwr_animal_treadmill` | 0 | 0 | _(module has no anchor)_ |
-| `pwr_force_pump` | 0 | 0 | _(module has no anchor)_ |
-| `pwr_overshot_wheel` | 0 | 0 | _(module has no anchor)_ |
-| `pwr_screw_press_power` | 0 | 0 | _(module has no anchor)_ |
-| `pwr_ship_sail` | 0 | 0 | _(module has no anchor)_ |
-| `pwr_treadwheel_crane` | 0 | 0 | _(module has no anchor)_ |
-| `pwr_undershot_wheel` | 0 | 0 | _(module has no anchor)_ |
-| `units_standards` | 0 | 300 | [`micrometer_gauge_blocks`](40_power_precision.md#micrometer_gauge_blocks---screw-micrometer-vernier-scale-and-end) |
-| `crank_conrod` | 1 | 300 | [`crank_connecting_rod`](40_power_precision.md#crank_connecting_rod---the-crank-and-connecting-rod-no-attested) |
-| `prc_arbor_press` | 1 | 40 | _(module has no anchor)_ |
-| `prc_back_gear` | 1 | 60 | _(module has no anchor)_ |
-| `prc_drill_press` | 1 | 70 | _(module has no anchor)_ |
-| `prc_lathe_faceplate` | 1 | 40 | _(module has no anchor)_ |
-| `prc_mandrel_chuck` | 1 | 60 | _(module has no anchor)_ |
-| `prc_reamer_hand_flute` | 1 | 40 | _(module has no anchor)_ |
-| `prc_slide_rest_simple` | 1 | 100 | _(module has no anchor)_ |
-| `prc_square_reference` | 1 | 50 | _(module has no anchor)_ |
-| `prc_straightedge` | 1 | 30 | _(module has no anchor)_ |
-| `prc_tailstock_deadcentre` | 1 | 50 | _(module has no anchor)_ |
-| `prc_treadle_lathe_flywheel` | 1 | 80 | _(module has no anchor)_ |
-| `prc_twist_drill` | 1 | 50 | _(module has no anchor)_ |
-| `pwr_breastshot_wheel` | 1 | 180 | _(module has no anchor)_ |
-| `pwr_flywheel_governor` | 1 | 150 | _(module has no anchor)_ |
-| `pwr_leat_and_weir` | 1 | 200 | _(module has no anchor)_ |
-| `pwr_millpond` | 1 | 150 | _(module has no anchor)_ |
-| `pwr_norse_waterwheel` | 1 | 120 | _(module has no anchor)_ |
-| `pwr_oil_shale` | 1 | 80 | _(module has no anchor)_ |
-| `pwr_peat` | 1 | 100 | _(module has no anchor)_ |
-| `pwr_smeaton_efficiency` | 1 | 200 | _(module has no anchor)_ |
-| `water_power_scale` | 1 | 450 | [`water_power_scaleup`](40_power_precision.md#water_power_scaleup---scaling-up-the-water-wheel-rota-aquaria) |
-| `clock_pendulum` | 2 | 500 | [`clockwork_escapement`](40_power_precision.md#clockwork_escapement---verge-and-foliot-pendulum-and-balance) |
-| `master_screw` | 2 | 700 | [`screw_cutting_lathe`](40_power_precision.md#screw_cutting_lathe---the-lead-screw-slide-rest-and-change-gears) |
-| `prc_capstan_turret_lathe` | 2 | 150 | _(module has no anchor)_ |
-| `prc_change_gears_quadrant` | 2 | 80 | _(module has no anchor)_ |
-| `prc_compound_slide_rest` | 2 | 120 | _(module has no anchor)_ |
-| `prc_coolant_cutting_fluid` | 2 | 50 | _(module has no anchor)_ |
-| `prc_cylindrical_square` | 2 | 60 | _(module has no anchor)_ |
-| `prc_depth_gauge` | 2 | 40 | _(module has no anchor)_ |
-| `prc_dial_indicator` | 2 | 90 | _(module has no anchor)_ |
-| `prc_dividing_head` | 2 | 100 | _(module has no anchor)_ |
-| `prc_fly_cutter` | 2 | 50 | _(module has no anchor)_ |
-| `prc_go_nogo_gauge` | 2 | 60 | _(module has no anchor)_ |
-| `prc_jig_and_fixture` | 2 | 120 | _(module has no anchor)_ |
-| `prc_lapping_plate` | 2 | 60 | _(module has no anchor)_ |
-| `prc_machine_frame_cast_iron` | 2 | 120 | _(module has no anchor)_ |
-| `prc_milling_machine` | 2 | 160 | _(module has no anchor)_ |
-| `prc_pantograph_copying` | 2 | 80 | _(module has no anchor)_ |
-| `prc_planer_machine` | 2 | 140 | _(module has no anchor)_ |
-| `prc_scraped_surface_plate` | 2 | 200 | _(module has no anchor)_ |
-| `prc_shaper_machine` | 2 | 100 | _(module has no anchor)_ |
-| `prc_sine_bar` | 2 | 80 | _(module has no anchor)_ |
-| `prc_slotter_machine` | 2 | 70 | _(module has no anchor)_ |
-| `prc_tap_die` | 2 | 80 | _(module has no anchor)_ |
-| `prc_three_wire_thread_measure` | 2 | 70 | _(module has no anchor)_ |
-| `prc_vernier_caliper` | 2 | 60 | _(module has no anchor)_ |
-| `precision_three_plate` | 2 | 500 | [`precision_three_plate`](40_power_precision.md#precision_three_plate---whitworths-three-plate-method-no-latin) |
-| `pwr_boiler_haystack` | 2 | 180 | _(module has no anchor)_ |
-| `pwr_boiler_wagon` | 2 | 200 | _(module has no anchor)_ |
-| `pwr_cable_tool_drilling` | 2 | 300 | _(module has no anchor)_ |
-| `pwr_coal_gas` | 2 | 300 | _(module has no anchor)_ |
-| `pwr_coal_seam` | 2 | 150 | _(module has no anchor)_ |
-| `pwr_coking` | 2 | 200 | _(module has no anchor)_ |
-| `pwr_condenser` | 2 | 200 | _(module has no anchor)_ |
-| `pwr_flywheel_storage` | 2 | 200 | _(module has no anchor)_ |
-| `pwr_fuel_oil` | 2 | 150 | _(module has no anchor)_ |
-| `pwr_gas_main` | 2 | 250 | _(module has no anchor)_ |
-| `pwr_gas_meter` | 2 | 180 | _(module has no anchor)_ |
-| `pwr_hydroelectric_generation` | 2 | 400 | _(module has no anchor)_ |
-| `pwr_indicator_diagram` | 2 | 200 | _(module has no anchor)_ |
-| `pwr_kerosene` | 2 | 100 | _(module has no anchor)_ |
-| `pwr_oil_refinery` | 2 | 300 | _(module has no anchor)_ |
-| `pwr_pelton_wheel` | 2 | 250 | _(module has no anchor)_ |
-| `pwr_petroleum_seeps` | 2 | 100 | _(module has no anchor)_ |
-| `pwr_post_mill` | 2 | 250 | _(module has no anchor)_ |
-| `pwr_safety_valve` | 2 | 150 | _(module has no anchor)_ |
-| `pwr_tide_mill` | 2 | 200 | _(module has no anchor)_ |
-| `pwr_tower_mill` | 2 | 300 | _(module has no anchor)_ |
-| `pwr_trompe` | 2 | 180 | _(module has no anchor)_ |
-| `pwr_water_turbine_fourneyron` | 2 | 300 | _(module has no anchor)_ |
-| `pwr_windmill_fantail` | 2 | 200 | _(module has no anchor)_ |
-| `boring_mill` | 3 | 600 | [`boring_mill`](40_power_precision.md#boring_mill---the-cylinder-boring-machine-no-latin-term) |
-| `interchangeable_parts` | 3 | 800 | [`interchangeable_parts`](40_power_precision.md#interchangeable_parts---gono-go-gauges-tolerance-jigs-and) |
-| `micrometer_gauges` | 3 | 500 | [`micrometer_gauge_blocks`](40_power_precision.md#micrometer_gauge_blocks---screw-micrometer-vernier-scale-and-end) |
-| `prc_autocollimator` | 3 | 110 | _(module has no anchor)_ |
-| `prc_automatic_screw_machine` | 3 | 200 | _(module has no anchor)_ |
-| `prc_ball_roller_bearing` | 3 | 140 | _(module has no anchor)_ |
-| `prc_ballscrew` | 3 | 130 | _(module has no anchor)_ |
-| `prc_broach_machine` | 3 | 110 | _(module has no anchor)_ |
-| `prc_comparator_optical` | 3 | 100 | _(module has no anchor)_ |
-| `prc_cylindrical_grinder` | 3 | 130 | _(module has no anchor)_ |
-| `prc_die_sinker` | 3 | 110 | _(module has no anchor)_ |
-| `prc_gauge_blocks_johansson` | 3 | 120 | _(module has no anchor)_ |
-| `prc_honing_machine` | 3 | 100 | _(module has no anchor)_ |
-| `prc_jig_boring_machine` | 3 | 150 | _(module has no anchor)_ |
-| `prc_lead_screw_error_cam` | 3 | 100 | _(module has no anchor)_ |
-| `prc_metrology_room_20c` | 3 | 200 | _(module has no anchor)_ |
-| `prc_optical_flat` | 3 | 100 | _(module has no anchor)_ |
-| `prc_profile_projector` | 3 | 110 | _(module has no anchor)_ |
-| `prc_roundness_measurement` | 3 | 100 | _(module has no anchor)_ |
-| `prc_surface_grinder` | 3 | 140 | _(module has no anchor)_ |
-| `prc_tool_cutter_grinder` | 3 | 120 | _(module has no anchor)_ |
-| `prc_tool_steel_hss_carbide` | 3 | 100 | _(module has no anchor)_ |
-| `prc_toolmaker_microscope` | 3 | 130 | _(module has no anchor)_ |
-| `prc_tracer_lathe` | 3 | 140 | _(module has no anchor)_ |
-| `prc_universal_milling_machine` | 3 | 180 | _(module has no anchor)_ |
-| `prc_vibration_and_chatter` | 3 | 100 | _(module has no anchor)_ |
-| `pwr_boiler_cornish` | 3 | 250 | _(module has no anchor)_ |
-| `pwr_boiler_lancashire` | 3 | 250 | _(module has no anchor)_ |
-| `pwr_boiler_water_tube` | 3 | 300 | _(module has no anchor)_ |
-| `pwr_feedwater_heating` | 3 | 200 | _(module has no anchor)_ |
-| `pwr_gas_engine` | 3 | 350 | _(module has no anchor)_ |
-| `pwr_high_voltage_transmission` | 3 | 300 | _(module has no anchor)_ |
-| `pwr_lead_acid_battery` | 3 | 250 | _(module has no anchor)_ |
-| `pwr_pipeline` | 3 | 250 | _(module has no anchor)_ |
-| `pwr_pumped_storage` | 3 | 400 | _(module has no anchor)_ |
-| `pwr_rotary_drilling` | 3 | 350 | _(module has no anchor)_ |
-| `pwr_selenium_metal` | 3 | 200 | _(module has no anchor)_ |
-| `pwr_steam_turbine_parsons` | 3 | 400 | _(module has no anchor)_ |
-| `pwr_stirling_engine` | 3 | 300 | _(module has no anchor)_ |
-| `pwr_substation` | 3 | 300 | _(module has no anchor)_ |
-| `pwr_superheater` | 3 | 200 | _(module has no anchor)_ |
-| `pwr_thermoelectric_couple` | 3 | 200 | _(module has no anchor)_ |
-| `pwr_thermopile` | 3 | 150 | _(module has no anchor)_ |
-| `pwr_three_phase_ac` | 3 | 250 | _(module has no anchor)_ |
-| `pwr_transformer` | 3 | 250 | _(module has no anchor)_ |
-| `screw_lathe` | 3 | 900 | [`screw_cutting_lathe`](40_power_precision.md#screw_cutting_lathe---the-lead-screw-slide-rest-and-change-gears) |
-| `steam_atmospheric` | 3 | 900 | [`steam_atmospheric`](40_power_precision.md#steam_atmospheric---the-newcomen-atmospheric-engine-no-latin-term) |
-| `prc_standard_meter_wavelength` | 4 | 150 | _(module has no anchor)_ |
-| `pwr_electric_motor_industry` | 4 | 300 | _(module has no anchor)_ |
-| `pwr_fuel_cell` | 4 | 300 | _(module has no anchor)_ |
-| `pwr_load_factor_economics` | 4 | 200 | _(module has no anchor)_ |
-| `pwr_nickel_iron_battery` | 4 | 300 | _(module has no anchor)_ |
-| `pwr_selenium_cell` | 4 | 150 | _(module has no anchor)_ |
-| `pwr_selenium_photovoltaic` | 4 | 200 | _(module has no anchor)_ |
-| `steam_high_pressure` | 4 | 700 | [`steam_high_pressure`](40_power_precision.md#steam_high_pressure---high-pressure-non-condensing-steam-no-latin) |
-| `steam_watt` | 4 | 800 | [`steam_watt`](40_power_precision.md#steam_watt---watts-separate-condenser-no-latin-term) |
-| `pwr_nuclear_fission` | 5 | 500 | _(module has no anchor)_ |
+| `pwr_animal_treadmill` | 0 | 0.0 | _(module has no anchor)_ |
+| `pwr_force_pump` | 0 | 0.0 | _(module has no anchor)_ |
+| `pwr_overshot_wheel` | 0 | 0.0 | _(module has no anchor)_ |
+| `pwr_screw_press_power` | 0 | 0.0 | _(module has no anchor)_ |
+| `pwr_ship_sail` | 0 | 0.0 | _(module has no anchor)_ |
+| `pwr_treadwheel_crane` | 0 | 0.0 | _(module has no anchor)_ |
+| `pwr_undershot_wheel` | 0 | 0.0 | _(module has no anchor)_ |
+| `units_standards` | 0 | 300.0 | [`micrometer_gauge_blocks`](40_power_precision.md#micrometer_gauge_blocks---screw-micrometer-vernier-scale-and-end) |
+| `crank_conrod` | 1 | 300.0 | [`crank_connecting_rod`](40_power_precision.md#crank_connecting_rod---the-crank-and-connecting-rod-no-attested) |
+| `mfg_arbor` | 1 | 100.0 | _(module has no anchor)_ |
+| `mfg_cold_riveting` | 1 | 100.0 | _(module has no anchor)_ |
+| `mfg_flux` | 1 | 60.0 | _(module has no anchor)_ |
+| `mfg_forge_weld` | 1 | 100.0 | _(module has no anchor)_ |
+| `mfg_hot_riveting` | 1 | 80.0 | _(module has no anchor)_ |
+| `mfg_mandrel` | 1 | 80.0 | _(module has no anchor)_ |
+| `mfg_mould` | 1 | 120.0 | _(module has no anchor)_ |
+| `mfg_painting` | 1 | 80.0 | _(module has no anchor)_ |
+| `mfg_soft_solder` | 1 | 80.0 | _(module has no anchor)_ |
+| `prc_arbor_press` | 1 | 40.0 | _(module has no anchor)_ |
+| `prc_back_gear` | 1 | 60.0 | _(module has no anchor)_ |
+| `prc_drill_press` | 1 | 70.0 | _(module has no anchor)_ |
+| `prc_lathe_faceplate` | 1 | 40.0 | _(module has no anchor)_ |
+| `prc_mandrel_chuck` | 1 | 60.0 | _(module has no anchor)_ |
+| `prc_reamer_hand_flute` | 1 | 40.0 | _(module has no anchor)_ |
+| `prc_slide_rest_simple` | 1 | 100.0 | _(module has no anchor)_ |
+| `prc_square_reference` | 1 | 50.0 | _(module has no anchor)_ |
+| `prc_straightedge` | 1 | 30.0 | _(module has no anchor)_ |
+| `prc_tailstock_deadcentre` | 1 | 50.0 | _(module has no anchor)_ |
+| `prc_treadle_lathe_flywheel` | 1 | 80.0 | _(module has no anchor)_ |
+| `prc_twist_drill` | 1 | 50.0 | _(module has no anchor)_ |
+| `pwr_breastshot_wheel` | 1 | 180.0 | _(module has no anchor)_ |
+| `pwr_flywheel_governor` | 1 | 150.0 | _(module has no anchor)_ |
+| `pwr_leat_and_weir` | 1 | 200.0 | _(module has no anchor)_ |
+| `pwr_millpond` | 1 | 150.0 | _(module has no anchor)_ |
+| `pwr_norse_waterwheel` | 1 | 120.0 | _(module has no anchor)_ |
+| `pwr_oil_shale` | 1 | 80.0 | _(module has no anchor)_ |
+| `pwr_peat` | 1 | 100.0 | _(module has no anchor)_ |
+| `pwr_smeaton_efficiency` | 1 | 200.0 | _(module has no anchor)_ |
+| `water_power_scale` | 1 | 450.0 | [`water_power_scaleup`](40_power_precision.md#water_power_scaleup---scaling-up-the-water-wheel-rota-aquaria) |
+| `clock_pendulum` | 2 | 500.0 | [`clockwork_escapement`](40_power_precision.md#clockwork_escapement---verge-and-foliot-pendulum-and-balance) |
+| `master_screw` | 2 | 700.0 | [`screw_cutting_lathe`](40_power_precision.md#screw_cutting_lathe---the-lead-screw-slide-rest-and-change-gears) |
+| `mfg_brazing` | 2 | 120.0 | _(module has no anchor)_ |
+| `mfg_buffing` | 2 | 130.0 | _(module has no anchor)_ |
+| `mfg_carbon_steel_tool` | 2 | 100.0 | _(module has no anchor)_ |
+| `mfg_chip_formation` | 2 | 120.0 | _(module has no anchor)_ |
+| `mfg_collet` | 2 | 120.0 | _(module has no anchor)_ |
+| `mfg_core_box` | 2 | 180.0 | _(module has no anchor)_ |
+| `mfg_cutting_fluid` | 2 | 40.0 | _(module has no anchor)_ |
+| `mfg_cutting_speed` | 2 | 100.0 | _(module has no anchor)_ |
+| `mfg_die_set` | 2 | 180.0 | _(module has no anchor)_ |
+| `mfg_drop_hammer` | 2 | 280.0 | _(module has no anchor)_ |
+| `mfg_enamelling` | 2 | 120.0 | _(module has no anchor)_ |
+| `mfg_forging_press` | 2 | 300.0 | _(module has no anchor)_ |
+| `mfg_four_jaw_chuck` | 2 | 140.0 | _(module has no anchor)_ |
+| `mfg_galvanising` | 2 | 130.0 | _(module has no anchor)_ |
+| `mfg_go_gauge` | 2 | 100.0 | _(module has no anchor)_ |
+| `mfg_japanning` | 2 | 110.0 | _(module has no anchor)_ |
+| `mfg_pattern` | 2 | 150.0 | _(module has no anchor)_ |
+| `mfg_phosphating` | 2 | 100.0 | _(module has no anchor)_ |
+| `mfg_pickling` | 2 | 100.0 | _(module has no anchor)_ |
+| `mfg_plug_gauge` | 2 | 120.0 | _(module has no anchor)_ |
+| `mfg_press_brake` | 2 | 280.0 | _(module has no anchor)_ |
+| `mfg_punch_press` | 2 | 300.0 | _(module has no anchor)_ |
+| `mfg_rake_clearance` | 2 | 80.0 | _(module has no anchor)_ |
+| `mfg_ring_gauge` | 2 | 120.0 | _(module has no anchor)_ |
+| `mfg_rotary_table` | 2 | 220.0 | _(module has no anchor)_ |
+| `mfg_sand_blasting` | 2 | 100.0 | _(module has no anchor)_ |
+| `mfg_sawing_machine` | 2 | 250.0 | _(module has no anchor)_ |
+| `mfg_shearing_machine` | 2 | 280.0 | _(module has no anchor)_ |
+| `mfg_shot_blasting` | 2 | 120.0 | _(module has no anchor)_ |
+| `mfg_silver_solder` | 2 | 100.0 | _(module has no anchor)_ |
+| `mfg_snap_gauge` | 2 | 110.0 | _(module has no anchor)_ |
+| `mfg_spinning_lathe` | 2 | 250.0 | _(module has no anchor)_ |
+| `mfg_thread_gauge` | 2 | 140.0 | _(module has no anchor)_ |
+| `mfg_three_jaw_chuck` | 2 | 150.0 | _(module has no anchor)_ |
+| `mfg_tolerance_limit` | 2 | 140.0 | _(module has no anchor)_ |
+| `mfg_tumbling` | 2 | 110.0 | _(module has no anchor)_ |
+| `mfg_wire_drawing` | 2 | 280.0 | _(module has no anchor)_ |
+| `prc_capstan_turret_lathe` | 2 | 150.0 | _(module has no anchor)_ |
+| `prc_change_gears_quadrant` | 2 | 80.0 | _(module has no anchor)_ |
+| `prc_compound_slide_rest` | 2 | 120.0 | _(module has no anchor)_ |
+| `prc_coolant_cutting_fluid` | 2 | 50.0 | _(module has no anchor)_ |
+| `prc_cylindrical_square` | 2 | 60.0 | _(module has no anchor)_ |
+| `prc_depth_gauge` | 2 | 40.0 | _(module has no anchor)_ |
+| `prc_dial_indicator` | 2 | 90.0 | _(module has no anchor)_ |
+| `prc_dividing_head` | 2 | 100.0 | _(module has no anchor)_ |
+| `prc_fly_cutter` | 2 | 50.0 | _(module has no anchor)_ |
+| `prc_go_nogo_gauge` | 2 | 60.0 | _(module has no anchor)_ |
+| `prc_jig_and_fixture` | 2 | 120.0 | _(module has no anchor)_ |
+| `prc_lapping_plate` | 2 | 60.0 | _(module has no anchor)_ |
+| `prc_machine_frame_cast_iron` | 2 | 120.0 | _(module has no anchor)_ |
+| `prc_milling_machine` | 2 | 160.0 | _(module has no anchor)_ |
+| `prc_pantograph_copying` | 2 | 80.0 | _(module has no anchor)_ |
+| `prc_planer_machine` | 2 | 140.0 | _(module has no anchor)_ |
+| `prc_scraped_surface_plate` | 2 | 200.0 | _(module has no anchor)_ |
+| `prc_shaper_machine` | 2 | 100.0 | _(module has no anchor)_ |
+| `prc_sine_bar` | 2 | 80.0 | _(module has no anchor)_ |
+| `prc_slotter_machine` | 2 | 70.0 | _(module has no anchor)_ |
+| `prc_tap_die` | 2 | 80.0 | _(module has no anchor)_ |
+| `prc_three_wire_thread_measure` | 2 | 70.0 | _(module has no anchor)_ |
+| `prc_vernier_caliper` | 2 | 60.0 | _(module has no anchor)_ |
+| `precision_three_plate` | 2 | 500.0 | [`precision_three_plate`](40_power_precision.md#precision_three_plate---whitworths-three-plate-method-no-latin) |
+| `pwr_boiler_haystack` | 2 | 180.0 | _(module has no anchor)_ |
+| `pwr_boiler_wagon` | 2 | 200.0 | _(module has no anchor)_ |
+| `pwr_cable_tool_drilling` | 2 | 300.0 | _(module has no anchor)_ |
+| `pwr_coal_gas` | 2 | 300.0 | _(module has no anchor)_ |
+| `pwr_coal_seam` | 2 | 150.0 | _(module has no anchor)_ |
+| `pwr_coking` | 2 | 200.0 | _(module has no anchor)_ |
+| `pwr_condenser` | 2 | 200.0 | _(module has no anchor)_ |
+| `pwr_flywheel_storage` | 2 | 200.0 | _(module has no anchor)_ |
+| `pwr_fuel_oil` | 2 | 150.0 | _(module has no anchor)_ |
+| `pwr_gas_main` | 2 | 250.0 | _(module has no anchor)_ |
+| `pwr_gas_meter` | 2 | 180.0 | _(module has no anchor)_ |
+| `pwr_hydroelectric_generation` | 2 | 400.0 | _(module has no anchor)_ |
+| `pwr_indicator_diagram` | 2 | 200.0 | _(module has no anchor)_ |
+| `pwr_kerosene` | 2 | 100.0 | _(module has no anchor)_ |
+| `pwr_oil_refinery` | 2 | 300.0 | _(module has no anchor)_ |
+| `pwr_pelton_wheel` | 2 | 250.0 | _(module has no anchor)_ |
+| `pwr_petroleum_seeps` | 2 | 100.0 | _(module has no anchor)_ |
+| `pwr_post_mill` | 2 | 250.0 | _(module has no anchor)_ |
+| `pwr_safety_valve` | 2 | 150.0 | _(module has no anchor)_ |
+| `pwr_tide_mill` | 2 | 200.0 | _(module has no anchor)_ |
+| `pwr_tower_mill` | 2 | 300.0 | _(module has no anchor)_ |
+| `pwr_trompe` | 2 | 180.0 | _(module has no anchor)_ |
+| `pwr_water_turbine_fourneyron` | 2 | 300.0 | _(module has no anchor)_ |
+| `pwr_windmill_fantail` | 2 | 200.0 | _(module has no anchor)_ |
+| `boring_mill` | 3 | 600.0 | [`boring_mill`](40_power_precision.md#boring_mill---the-cylinder-boring-machine-no-latin-term) |
+| `interchangeable_parts` | 3 | 800.0 | [`interchangeable_parts`](40_power_precision.md#interchangeable_parts---gono-go-gauges-tolerance-jigs-and) |
+| `mfg_adhesive_bond` | 3 | 140.0 | _(module has no anchor)_ |
+| `mfg_anodising` | 3 | 160.0 | _(module has no anchor)_ |
+| `mfg_arc_weld_bare` | 3 | 160.0 | _(module has no anchor)_ |
+| `mfg_arc_weld_coated` | 3 | 140.0 | _(module has no anchor)_ |
+| `mfg_brazed_tip` | 3 | 100.0 | _(module has no anchor)_ |
+| `mfg_broaching_machine` | 3 | 350.0 | _(module has no anchor)_ |
+| `mfg_comparator` | 3 | 200.0 | _(module has no anchor)_ |
+| `mfg_compound_die` | 3 | 250.0 | _(module has no anchor)_ |
+| `mfg_control_chart` | 3 | 200.0 | _(module has no anchor)_ |
+| `mfg_cylindrical_grinder` | 3 | 300.0 | _(module has no anchor)_ |
+| `mfg_deep_drawing` | 3 | 350.0 | _(module has no anchor)_ |
+| `mfg_dial_indicator` | 3 | 180.0 | _(module has no anchor)_ |
+| `mfg_electroplating` | 3 | 150.0 | _(module has no anchor)_ |
+| `mfg_engine_lathe` | 3 | 300.0 | _(module has no anchor)_ |
+| `mfg_escapement_lever` | 3 | 240.0 | _(module has no anchor)_ |
+| `mfg_gear_shaper` | 3 | 400.0 | _(module has no anchor)_ |
+| `mfg_height_gauge` | 3 | 160.0 | _(module has no anchor)_ |
+| `mfg_honing` | 3 | 280.0 | _(module has no anchor)_ |
+| `mfg_horizontal_mill` | 3 | 350.0 | _(module has no anchor)_ |
+| `mfg_hydraulic_press` | 3 | 350.0 | _(module has no anchor)_ |
+| `mfg_indexing_head` | 3 | 250.0 | _(module has no anchor)_ |
+| `mfg_lapping` | 3 | 300.0 | _(module has no anchor)_ |
+| `mfg_magnetic_chuck` | 3 | 200.0 | _(module has no anchor)_ |
+| `mfg_mushet_steel` | 3 | 150.0 | _(module has no anchor)_ |
+| `mfg_oxy_acetylene` | 3 | 180.0 | _(module has no anchor)_ |
+| `mfg_planer` | 3 | 350.0 | _(module has no anchor)_ |
+| `mfg_progressive_die` | 3 | 280.0 | _(module has no anchor)_ |
+| `mfg_radial_drill` | 3 | 300.0 | _(module has no anchor)_ |
+| `mfg_roll_former` | 3 | 350.0 | _(module has no anchor)_ |
+| `mfg_sampling_plan` | 3 | 180.0 | _(module has no anchor)_ |
+| `mfg_shaper` | 3 | 300.0 | _(module has no anchor)_ |
+| `mfg_sine_bar` | 3 | 150.0 | _(module has no anchor)_ |
+| `mfg_slotter` | 3 | 250.0 | _(module has no anchor)_ |
+| `mfg_surface_grinder` | 3 | 300.0 | _(module has no anchor)_ |
+| `mfg_tool_grinder` | 3 | 300.0 | _(module has no anchor)_ |
+| `mfg_turret_lathe` | 3 | 400.0 | _(module has no anchor)_ |
+| `mfg_universal_mill` | 3 | 400.0 | _(module has no anchor)_ |
+| `mfg_upsetter` | 3 | 400.0 | _(module has no anchor)_ |
+| `mfg_vertical_mill` | 3 | 350.0 | _(module has no anchor)_ |
+| `micrometer_gauges` | 3 | 500.0 | [`micrometer_gauge_blocks`](40_power_precision.md#micrometer_gauge_blocks---screw-micrometer-vernier-scale-and-end) |
+| `prc_autocollimator` | 3 | 110.0 | _(module has no anchor)_ |
+| `prc_automatic_screw_machine` | 3 | 200.0 | _(module has no anchor)_ |
+| `prc_ball_roller_bearing` | 3 | 140.0 | _(module has no anchor)_ |
+| `prc_ballscrew` | 3 | 130.0 | _(module has no anchor)_ |
+| `prc_broach_machine` | 3 | 110.0 | _(module has no anchor)_ |
+| `prc_comparator_optical` | 3 | 100.0 | _(module has no anchor)_ |
+| `prc_cylindrical_grinder` | 3 | 130.0 | _(module has no anchor)_ |
+| `prc_die_sinker` | 3 | 110.0 | _(module has no anchor)_ |
+| `prc_gauge_blocks_johansson` | 3 | 120.0 | _(module has no anchor)_ |
+| `prc_honing_machine` | 3 | 100.0 | _(module has no anchor)_ |
+| `prc_jig_boring_machine` | 3 | 150.0 | _(module has no anchor)_ |
+| `prc_lead_screw_error_cam` | 3 | 100.0 | _(module has no anchor)_ |
+| `prc_metrology_room_20c` | 3 | 200.0 | _(module has no anchor)_ |
+| `prc_optical_flat` | 3 | 100.0 | _(module has no anchor)_ |
+| `prc_profile_projector` | 3 | 110.0 | _(module has no anchor)_ |
+| `prc_roundness_measurement` | 3 | 100.0 | _(module has no anchor)_ |
+| `prc_surface_grinder` | 3 | 140.0 | _(module has no anchor)_ |
+| `prc_tool_cutter_grinder` | 3 | 120.0 | _(module has no anchor)_ |
+| `prc_tool_steel_hss_carbide` | 3 | 100.0 | _(module has no anchor)_ |
+| `prc_toolmaker_microscope` | 3 | 130.0 | _(module has no anchor)_ |
+| `prc_tracer_lathe` | 3 | 140.0 | _(module has no anchor)_ |
+| `prc_universal_milling_machine` | 3 | 180.0 | _(module has no anchor)_ |
+| `prc_vibration_and_chatter` | 3 | 100.0 | _(module has no anchor)_ |
+| `pwr_boiler_cornish` | 3 | 250.0 | _(module has no anchor)_ |
+| `pwr_boiler_lancashire` | 3 | 250.0 | _(module has no anchor)_ |
+| `pwr_boiler_water_tube` | 3 | 300.0 | _(module has no anchor)_ |
+| `pwr_feedwater_heating` | 3 | 200.0 | _(module has no anchor)_ |
+| `pwr_gas_engine` | 3 | 350.0 | _(module has no anchor)_ |
+| `pwr_high_voltage_transmission` | 3 | 300.0 | _(module has no anchor)_ |
+| `pwr_lead_acid_battery` | 3 | 250.0 | _(module has no anchor)_ |
+| `pwr_pipeline` | 3 | 250.0 | _(module has no anchor)_ |
+| `pwr_pumped_storage` | 3 | 400.0 | _(module has no anchor)_ |
+| `pwr_rotary_drilling` | 3 | 350.0 | _(module has no anchor)_ |
+| `pwr_selenium_metal` | 3 | 200.0 | _(module has no anchor)_ |
+| `pwr_steam_turbine_parsons` | 3 | 400.0 | _(module has no anchor)_ |
+| `pwr_stirling_engine` | 3 | 300.0 | _(module has no anchor)_ |
+| `pwr_substation` | 3 | 300.0 | _(module has no anchor)_ |
+| `pwr_superheater` | 3 | 200.0 | _(module has no anchor)_ |
+| `pwr_thermoelectric_couple` | 3 | 200.0 | _(module has no anchor)_ |
+| `pwr_thermopile` | 3 | 150.0 | _(module has no anchor)_ |
+| `pwr_three_phase_ac` | 3 | 250.0 | _(module has no anchor)_ |
+| `pwr_transformer` | 3 | 250.0 | _(module has no anchor)_ |
+| `screw_lathe` | 3 | 900.0 | [`screw_cutting_lathe`](40_power_precision.md#screw_cutting_lathe---the-lead-screw-slide-rest-and-change-gears) |
+| `steam_atmospheric` | 3 | 900.0 | [`steam_atmospheric`](40_power_precision.md#steam_atmospheric---the-newcomen-atmospheric-engine-no-latin-term) |
+| `mfg_air_gauge` | 4 | 250.0 | _(module has no anchor)_ |
+| `mfg_automatic_screw` | 4 | 500.0 | _(module has no anchor)_ |
+| `mfg_cam_lobe` | 4 | 300.0 | _(module has no anchor)_ |
+| `mfg_centreless_grinder` | 4 | 400.0 | _(module has no anchor)_ |
+| `mfg_dividing_engine` | 4 | 350.0 | _(module has no anchor)_ |
+| `mfg_extrusion_press` | 4 | 450.0 | _(module has no anchor)_ |
+| `mfg_flash_butt` | 4 | 200.0 | _(module has no anchor)_ |
+| `mfg_gear_grinder` | 4 | 400.0 | _(module has no anchor)_ |
+| `mfg_gear_hobber` | 4 | 450.0 | _(module has no anchor)_ |
+| `mfg_horizontal_jig_borer` | 4 | 350.0 | _(module has no anchor)_ |
+| `mfg_hss_development` | 4 | 400.0 | _(module has no anchor)_ |
+| `mfg_hss_production` | 4 | 80.0 | _(module has no anchor)_ |
+| `mfg_internal_grinder` | 4 | 350.0 | _(module has no anchor)_ |
+| `mfg_multi_spindle` | 4 | 600.0 | _(module has no anchor)_ |
+| `mfg_optical_comparator` | 4 | 300.0 | _(module has no anchor)_ |
+| `mfg_profile_mill` | 4 | 450.0 | _(module has no anchor)_ |
+| `mfg_resistance_seam` | 4 | 220.0 | _(module has no anchor)_ |
+| `mfg_resistance_spot` | 4 | 200.0 | _(module has no anchor)_ |
+| `mfg_stellite_tool` | 4 | 120.0 | _(module has no anchor)_ |
+| `mfg_submerged_arc` | 4 | 250.0 | _(module has no anchor)_ |
+| `mfg_superfinishing` | 4 | 350.0 | _(module has no anchor)_ |
+| `mfg_vertical_jig_borer` | 4 | 400.0 | _(module has no anchor)_ |
+| `prc_standard_meter_wavelength` | 4 | 150.0 | _(module has no anchor)_ |
+| `pwr_electric_motor_industry` | 4 | 300.0 | _(module has no anchor)_ |
+| `pwr_fuel_cell` | 4 | 300.0 | _(module has no anchor)_ |
+| `pwr_load_factor_economics` | 4 | 200.0 | _(module has no anchor)_ |
+| `pwr_nickel_iron_battery` | 4 | 300.0 | _(module has no anchor)_ |
+| `pwr_selenium_cell` | 4 | 150.0 | _(module has no anchor)_ |
+| `pwr_selenium_photovoltaic` | 4 | 200.0 | _(module has no anchor)_ |
+| `steam_high_pressure` | 4 | 700.0 | [`steam_high_pressure`](40_power_precision.md#steam_high_pressure---high-pressure-non-condensing-steam-no-latin) |
+| `steam_watt` | 4 | 800.0 | [`steam_watt`](40_power_precision.md#steam_watt---watts-separate-condenser-no-latin-term) |
+| `mfg_cemented_carbide` | 5 | 200.0 | _(module has no anchor)_ |
+| `mfg_indexable_insert` | 5 | 150.0 | _(module has no anchor)_ |
+| `pwr_nuclear_fission` | 5 | 500.0 | _(module has no anchor)_ |
 
 ### 50_electricity.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `em_theory` | 0 | 800 | _(module has no anchor)_ |
-| `com_optical_codebook` | 1 | 100 | _(module has no anchor)_ |
-| `com_signal_flags` | 1 | 40 | _(module has no anchor)_ |
-| `crude_cell` | 1 | 120 | [`crude_cell`](50_electricity.md#crude_cell---iron-and-copper-brine-cell) |
-| `com_heliograph` | 2 | 80 | _(module has no anchor)_ |
-| `com_jacquard_loom` | 2 | 120 | _(module has no anchor)_ |
-| `com_morse_code` | 2 | 60 | _(module has no anchor)_ |
-| `com_morse_register` | 2 | 100 | _(module has no anchor)_ |
-| `com_morse_sounder` | 2 | 80 | _(module has no anchor)_ |
-| `com_napiers_bones` | 2 | 100 | _(module has no anchor)_ |
-| `com_optical_tower` | 2 | 120 | _(module has no anchor)_ |
-| `com_relay` | 2 | 100 | _(module has no anchor)_ |
-| `com_stepped_drum` | 2 | 80 | _(module has no anchor)_ |
-| `com_stock_ticker` | 2 | 100 | _(module has no anchor)_ |
-| `com_telegraph_battery` | 2 | 60 | _(module has no anchor)_ |
-| `electrostatics` | 2 | 350 | [`electrostatics`](50_electricity.md#electrostatics---static-machines-and-the-leyden-jar-electrum-vis-electrica) |
-| `com_analytical_engine` | 3 | 250 | _(module has no anchor)_ |
-| `com_antenna_ground` | 3 | 60 | _(module has no anchor)_ |
-| `com_arithmometer` | 3 | 120 | _(module has no anchor)_ |
-| `com_baudot_code` | 3 | 60 | _(module has no anchor)_ |
-| `com_coherer` | 3 | 60 | _(module has no anchor)_ |
-| `com_comptometer` | 3 | 140 | _(module has no anchor)_ |
-| `com_cryptography_substitution` | 3 | 80 | _(module has no anchor)_ |
-| `com_difference_engine` | 3 | 200 | _(module has no anchor)_ |
-| `com_duplex_telegraph` | 3 | 120 | _(module has no anchor)_ |
-| `com_loading_coil` | 3 | 80 | _(module has no anchor)_ |
-| `com_mechanical_calculator` | 3 | 150 | _(module has no anchor)_ |
-| `com_multiplexing` | 3 | 120 | _(module has no anchor)_ |
-| `com_quadruplex_telegraph` | 3 | 140 | _(module has no anchor)_ |
-| `com_slide_rule` | 3 | 80 | _(module has no anchor)_ |
-| `com_strowger_exchange` | 3 | 180 | _(module has no anchor)_ |
-| `com_submarine_cable` | 3 | 200 | _(module has no anchor)_ |
-| `com_telephone_carbon_mic` | 3 | 100 | _(module has no anchor)_ |
-| `com_telephone_diaphragm` | 3 | 80 | _(module has no anchor)_ |
-| `com_telephone_manual_exchange` | 3 | 150 | _(module has no anchor)_ |
-| `com_teleprinter` | 3 | 140 | _(module has no anchor)_ |
-| `com_trunk_lines` | 3 | 100 | _(module has no anchor)_ |
-| `com_tuned_circuit` | 3 | 100 | _(module has no anchor)_ |
-| `com_tv_mechanical_scanning` | 3 | 140 | _(module has no anchor)_ |
-| `copper_refining` | 3 | 400 | [`wire_insulation`](50_electricity.md#wire_insulation---insulated-wire-varnish-and-cable) |
-| `daniell_cell` | 3 | 250 | [`daniell_cell`](50_electricity.md#daniell_cell---two-fluid-cell-daniell-no-latin-name) |
-| `electromagnet` | 3 | 350 | [`electromagnet`](50_electricity.md#electromagnet---iron-core-electromagnet-and-relay) |
-| `electroplating` | 3 | 350 | [`electrolysis_industrial`](50_electricity.md#electrolysis_industrial---electroplating-electro-refining-chlor-alkali-aluminium) |
-| `galvanometer` | 3 | 400 | [`galvanometer`](50_electricity.md#galvanometer---tangent-galvanometer-and-the-absolute-measurement-bootstrap) |
-| `telegraph_electric` | 3 | 700 | [`telegraph`](50_electricity.md#telegraph---electric-line-telegraph) |
-| `voltaic_pile` | 3 | 300 | [`voltaic_pile`](50_electricity.md#voltaic_pile---zinc-and-copper-disc-pile) |
-| `arc_light_lamp` | 4 | 500 | [`incandescent_lamp`](50_electricity.md#incandescent_lamp---filament-lamp-carbon-then-tungsten) |
-| `com_accumulator` | 4 | 130 | _(module has no anchor)_ |
-| `com_amplitude_modulation` | 4 | 100 | _(module has no anchor)_ |
-| `com_binary_arithmetic` | 4 | 100 | _(module has no anchor)_ |
-| `com_boolean_algebra` | 4 | 120 | _(module has no anchor)_ |
-| `com_broadcasting_institution` | 4 | 200 | _(module has no anchor)_ |
-| `com_cathode_ray_tube` | 4 | 120 | _(module has no anchor)_ |
-| `com_continuous_wave` | 4 | 120 | _(module has no anchor)_ |
-| `com_crystal_set` | 4 | 80 | _(module has no anchor)_ |
-| `com_flip_flop` | 4 | 100 | _(module has no anchor)_ |
-| `com_frequency_modulation` | 4 | 140 | _(module has no anchor)_ |
-| `com_hollerith_tabulation` | 4 | 180 | _(module has no anchor)_ |
-| `com_logic_gate` | 4 | 100 | _(module has no anchor)_ |
-| `com_magnetic_core_memory` | 4 | 140 | _(module has no anchor)_ |
-| `com_magnetic_drum_storage` | 4 | 110 | _(module has no anchor)_ |
-| `com_magnetic_tape_storage` | 4 | 120 | _(module has no anchor)_ |
-| `com_magnetic_wire_storage` | 4 | 100 | _(module has no anchor)_ |
-| `com_one_time_pad` | 4 | 100 | _(module has no anchor)_ |
-| `com_radar_magnetron` | 4 | 160 | _(module has no anchor)_ |
-| `com_radio_spark_transmitter` | 4 | 120 | _(module has no anchor)_ |
-| `com_register_computing` | 4 | 120 | _(module has no anchor)_ |
-| `com_relay_computer` | 4 | 300 | _(module has no anchor)_ |
-| `com_ring_counter` | 4 | 110 | _(module has no anchor)_ |
-| `com_rotor_machine` | 4 | 160 | _(module has no anchor)_ |
-| `com_superheterodyne_receiver` | 4 | 160 | _(module has no anchor)_ |
-| `com_triode_oscillator` | 4 | 100 | _(module has no anchor)_ |
-| `com_tv_electronic_camera` | 4 | 160 | _(module has no anchor)_ |
-| `com_tv_raster_sync` | 4 | 120 | _(module has no anchor)_ |
-| `com_vacuum_tube_computer` | 4 | 400 | _(module has no anchor)_ |
-| `com_vacuum_tube_pentode` | 4 | 110 | _(module has no anchor)_ |
-| `com_vacuum_tube_tetrode` | 4 | 100 | _(module has no anchor)_ |
-| `com_waveguide` | 4 | 80 | _(module has no anchor)_ |
-| `dynamo` | 4 | 800 | [`dynamo_motor`](50_electricity.md#dynamo_motor---faraday-disc-ring-and-drum-armatures-self-excitation) |
-| `motor_transformer_ac` | 4 | 700 | [`transformer_ac`](50_electricity.md#transformer_ac---ac-generation-transformers-lamination-three-phase) |
-| `com_compiler_and_language` | 5 | 300 | _(module has no anchor)_ |
-| `com_error_detecting_code` | 5 | 140 | _(module has no anchor)_ |
-| `com_information_theory` | 5 | 160 | _(module has no anchor)_ |
-| `com_integrated_circuit` | 5 | 220 | _(module has no anchor)_ |
-| `com_photolithography` | 5 | 180 | _(module has no anchor)_ |
-| `com_public_key_cryptography` | 5 | 200 | _(module has no anchor)_ |
-| `com_semiconductor_diode` | 5 | 100 | _(module has no anchor)_ |
-| `com_stored_program_concept` | 5 | 180 | _(module has no anchor)_ |
-| `electrolysis_industrial` | 5 | 700 | [`electrolysis_industrial`](50_electricity.md#electrolysis_industrial---electroplating-electro-refining-chlor-alkali-aluminium) |
-| `power_grid` | 5 | 900 | [`transformer_ac`](50_electricity.md#transformer_ac---ac-generation-transformers-lamination-three-phase) |
+| `em_theory` | 0 | 800.0 | _(module has no anchor)_ |
+| `com_optical_codebook` | 1 | 100.0 | _(module has no anchor)_ |
+| `com_signal_flags` | 1 | 40.0 | _(module has no anchor)_ |
+| `crude_cell` | 1 | 120.0 | [`crude_cell`](50_electricity.md#crude_cell---iron-and-copper-brine-cell) |
+| `el2_fuse_wire_element` | 1 | 30.0 | _(module has no anchor)_ |
+| `el2_inductor_air_core` | 1 | 30.0 | _(module has no anchor)_ |
+| `el2_switch_knife` | 1 | 20.0 | _(module has no anchor)_ |
+| `el2_transformer_core_air` | 1 | 40.0 | _(module has no anchor)_ |
+| `com_heliograph` | 2 | 80.0 | _(module has no anchor)_ |
+| `com_jacquard_loom` | 2 | 120.0 | _(module has no anchor)_ |
+| `com_morse_code` | 2 | 60.0 | _(module has no anchor)_ |
+| `com_morse_register` | 2 | 100.0 | _(module has no anchor)_ |
+| `com_morse_sounder` | 2 | 80.0 | _(module has no anchor)_ |
+| `com_napiers_bones` | 2 | 100.0 | _(module has no anchor)_ |
+| `com_optical_tower` | 2 | 120.0 | _(module has no anchor)_ |
+| `com_relay` | 2 | 100.0 | _(module has no anchor)_ |
+| `com_stepped_drum` | 2 | 80.0 | _(module has no anchor)_ |
+| `com_stock_ticker` | 2 | 100.0 | _(module has no anchor)_ |
+| `com_telegraph_battery` | 2 | 60.0 | _(module has no anchor)_ |
+| `el2_alternator_rotating_field` | 2 | 120.0 | _(module has no anchor)_ |
+| `el2_amplifier_gain_voltage_current` | 2 | 80.0 | _(module has no anchor)_ |
+| `el2_bandpass_filter_notch_filter` | 2 | 70.0 | _(module has no anchor)_ |
+| `el2_capacitor_fixed_mica` | 2 | 50.0 | _(module has no anchor)_ |
+| `el2_capacitor_fixed_paper` | 2 | 60.0 | _(module has no anchor)_ |
+| `el2_capacitor_variable_air` | 2 | 70.0 | _(module has no anchor)_ |
+| `el2_circuit_breaker_thermal` | 2 | 60.0 | _(module has no anchor)_ |
+| `el2_detector_demodulation_envelope_product` | 2 | 75.0 | _(module has no anchor)_ |
+| `el2_dynamo_compound_wound` | 2 | 100.0 | _(module has no anchor)_ |
+| `el2_dynamo_series_wound` | 2 | 75.0 | _(module has no anchor)_ |
+| `el2_dynamo_shunt_wound` | 2 | 80.0 | _(module has no anchor)_ |
+| `el2_earthing_grounding_system` | 2 | 80.0 | _(module has no anchor)_ |
+| `el2_electroplating_and_electrorefining` | 2 | 80.0 | _(module has no anchor)_ |
+| `el2_impedance_matching_transformer_network` | 2 | 70.0 | _(module has no anchor)_ |
+| `el2_induction_motor_squirrel_cage` | 2 | 100.0 | _(module has no anchor)_ |
+| `el2_inductor_iron_core` | 2 | 60.0 | _(module has no anchor)_ |
+| `el2_insulator_pin_porcelain` | 2 | 40.0 | _(module has no anchor)_ |
+| `el2_lightning_arrestor_gap` | 2 | 50.0 | _(module has no anchor)_ |
+| `el2_low_pass_filter_high_pass_filter` | 2 | 50.0 | _(module has no anchor)_ |
+| `el2_meter_moving_coil_galvanometer` | 2 | 70.0 | _(module has no anchor)_ |
+| `el2_meter_moving_iron_attraction` | 2 | 60.0 | _(module has no anchor)_ |
+| `el2_microphone_carbon_contact` | 2 | 70.0 | _(module has no anchor)_ |
+| `el2_mixer_frequency_translation` | 2 | 80.0 | _(module has no anchor)_ |
+| `el2_modulator_amplitude_frequency_phase` | 2 | 90.0 | _(module has no anchor)_ |
+| `el2_oscillator_feedback_frequency_generation` | 2 | 90.0 | _(module has no anchor)_ |
+| `el2_power_supply_rectification_filtering` | 2 | 80.0 | _(module has no anchor)_ |
+| `el2_relay_electromagnetic` | 2 | 50.0 | _(module has no anchor)_ |
+| `el2_resistor_wirewound` | 2 | 40.0 | _(module has no anchor)_ |
+| `el2_resonance_frequency_selectivity` | 2 | 70.0 | _(module has no anchor)_ |
+| `el2_rheostat` | 2 | 80.0 | _(module has no anchor)_ |
+| `el2_tuned_circuit_resonance_tank` | 2 | 60.0 | _(module has no anchor)_ |
+| `electrostatics` | 2 | 350.0 | [`electrostatics`](50_electricity.md#electrostatics---static-machines-and-the-leyden-jar-electrum-vis-electrica) |
+| `com_analytical_engine` | 3 | 250.0 | _(module has no anchor)_ |
+| `com_antenna_ground` | 3 | 60.0 | _(module has no anchor)_ |
+| `com_arithmometer` | 3 | 120.0 | _(module has no anchor)_ |
+| `com_baudot_code` | 3 | 60.0 | _(module has no anchor)_ |
+| `com_coherer` | 3 | 60.0 | _(module has no anchor)_ |
+| `com_comptometer` | 3 | 140.0 | _(module has no anchor)_ |
+| `com_cryptography_substitution` | 3 | 80.0 | _(module has no anchor)_ |
+| `com_difference_engine` | 3 | 200.0 | _(module has no anchor)_ |
+| `com_duplex_telegraph` | 3 | 120.0 | _(module has no anchor)_ |
+| `com_loading_coil` | 3 | 80.0 | _(module has no anchor)_ |
+| `com_mechanical_calculator` | 3 | 150.0 | _(module has no anchor)_ |
+| `com_multiplexing` | 3 | 120.0 | _(module has no anchor)_ |
+| `com_quadruplex_telegraph` | 3 | 140.0 | _(module has no anchor)_ |
+| `com_slide_rule` | 3 | 80.0 | _(module has no anchor)_ |
+| `com_strowger_exchange` | 3 | 180.0 | _(module has no anchor)_ |
+| `com_submarine_cable` | 3 | 200.0 | _(module has no anchor)_ |
+| `com_telephone_carbon_mic` | 3 | 100.0 | _(module has no anchor)_ |
+| `com_telephone_diaphragm` | 3 | 80.0 | _(module has no anchor)_ |
+| `com_telephone_manual_exchange` | 3 | 150.0 | _(module has no anchor)_ |
+| `com_teleprinter` | 3 | 140.0 | _(module has no anchor)_ |
+| `com_trunk_lines` | 3 | 100.0 | _(module has no anchor)_ |
+| `com_tuned_circuit` | 3 | 100.0 | _(module has no anchor)_ |
+| `com_tv_mechanical_scanning` | 3 | 140.0 | _(module has no anchor)_ |
+| `copper_refining` | 3 | 400.0 | [`wire_insulation`](50_electricity.md#wire_insulation---insulated-wire-varnish-and-cable) |
+| `daniell_cell` | 3 | 250.0 | [`daniell_cell`](50_electricity.md#daniell_cell---two-fluid-cell-daniell-no-latin-name) |
+| `el2_antenna_patterns_radiation_efficiency` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_arc_welding_carbon_metal_electrode` | 3 | 120.0 | _(module has no anchor)_ |
+| `el2_bridge_resistance_AC_impedance` | 3 | 120.0 | _(module has no anchor)_ |
+| `el2_circuit_breaker_magnetic` | 3 | 70.0 | _(module has no anchor)_ |
+| `el2_contactor_industrial` | 3 | 80.0 | _(module has no anchor)_ |
+| `el2_counter_frequency_scaling_binary` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_diode_thermionic_rectifying_tube` | 3 | 70.0 | _(module has no anchor)_ |
+| `el2_discriminator_FM_demodulator` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_electric_drill_handheld_motor` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_electric_lift_motor_gear_reduction` | 3 | 130.0 | _(module has no anchor)_ |
+| `el2_electric_locomotive_traction_motor` | 3 | 150.0 | _(module has no anchor)_ |
+| `el2_electropolishing_etching_surface_finish` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_flip_flop_binary_latch_memory` | 3 | 120.0 | _(module has no anchor)_ |
+| `el2_galvanometer_ballistic_impulse` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_induction_heating_inductor_coupling` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_induction_motor_wound_rotor` | 3 | 120.0 | _(module has no anchor)_ |
+| `el2_insulator_bushing` | 3 | 60.0 | _(module has no anchor)_ |
+| `el2_loudspeaker_moving_coil_magnetic` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_megger_resistance_tester` | 3 | 90.0 | _(module has no anchor)_ |
+| `el2_meter_electrodynamometer_wattmeter` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_meter_energy_kWh_meter` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_microphone_dynamic_moving_coil` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_microphone_ribbon_velocity` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_motor_rotary_converter_AC_DC` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_multivibrator_binary_oscillator` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_negative_feedback_stability_gain` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_oscillograph_string_recorder` | 3 | 130.0 | _(module has no anchor)_ |
+| `el2_pentode_five_electrode_tube` | 3 | 120.0 | _(module has no anchor)_ |
+| `el2_photocell_vacuum_gas_photoelectric` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_photodiode_photocell_selenium` | 3 | 80.0 | _(module has no anchor)_ |
+| `el2_plug_socket_portable` | 3 | 70.0 | _(module has no anchor)_ |
+| `el2_potentiometer` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_potentiometer_method_measurement` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_power_factor_correction_capacitor` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_protective_relaying_differential` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_resistance_welding_spot_seam` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_resistor_carbon` | 3 | 60.0 | _(module has no anchor)_ |
+| `el2_ring_main_distribution` | 3 | 130.0 | _(module has no anchor)_ |
+| `el2_standard_cell_weston_saturated` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_standard_resistor_manganin` | 3 | 80.0 | _(module has no anchor)_ |
+| `el2_substation_voltage_regulation` | 3 | 140.0 | _(module has no anchor)_ |
+| `el2_synchronous_motor` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_synchroscope_phase_angle_indicator` | 3 | 80.0 | _(module has no anchor)_ |
+| `el2_tap_changer_load_compensator` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_tetrode_four_electrode_tube` | 3 | 110.0 | _(module has no anchor)_ |
+| `el2_three_wire_distribution_system` | 3 | 120.0 | _(module has no anchor)_ |
+| `el2_transmission_line_coaxial_cable` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_triode_amplifying_tube` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_trolleybus_catenary_power` | 3 | 120.0 | _(module has no anchor)_ |
+| `el2_universal_motor_AC_DC` | 3 | 90.0 | _(module has no anchor)_ |
+| `el2_voltage_regulation_series_shunt` | 3 | 100.0 | _(module has no anchor)_ |
+| `electromagnet` | 3 | 350.0 | [`electromagnet`](50_electricity.md#electromagnet---iron-core-electromagnet-and-relay) |
+| `electroplating` | 3 | 350.0 | [`electrolysis_industrial`](50_electricity.md#electrolysis_industrial---electroplating-electro-refining-chlor-alkali-aluminium) |
+| `galvanometer` | 3 | 400.0 | [`galvanometer`](50_electricity.md#galvanometer---tangent-galvanometer-and-the-absolute-measurement-bootstrap) |
+| `telegraph_electric` | 3 | 700.0 | [`telegraph`](50_electricity.md#telegraph---electric-line-telegraph) |
+| `voltaic_pile` | 3 | 300.0 | [`voltaic_pile`](50_electricity.md#voltaic_pile---zinc-and-copper-disc-pile) |
+| `arc_light_lamp` | 4 | 500.0 | [`incandescent_lamp`](50_electricity.md#incandescent_lamp---filament-lamp-carbon-then-tungsten) |
+| `com_accumulator` | 4 | 130.0 | _(module has no anchor)_ |
+| `com_amplitude_modulation` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_binary_arithmetic` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_boolean_algebra` | 4 | 120.0 | _(module has no anchor)_ |
+| `com_broadcasting_institution` | 4 | 200.0 | _(module has no anchor)_ |
+| `com_cathode_ray_tube` | 4 | 120.0 | _(module has no anchor)_ |
+| `com_continuous_wave` | 4 | 120.0 | _(module has no anchor)_ |
+| `com_crystal_set` | 4 | 80.0 | _(module has no anchor)_ |
+| `com_flip_flop` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_frequency_modulation` | 4 | 140.0 | _(module has no anchor)_ |
+| `com_hollerith_tabulation` | 4 | 180.0 | _(module has no anchor)_ |
+| `com_logic_gate` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_magnetic_core_memory` | 4 | 140.0 | _(module has no anchor)_ |
+| `com_magnetic_drum_storage` | 4 | 110.0 | _(module has no anchor)_ |
+| `com_magnetic_tape_storage` | 4 | 120.0 | _(module has no anchor)_ |
+| `com_magnetic_wire_storage` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_one_time_pad` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_radar_magnetron` | 4 | 160.0 | _(module has no anchor)_ |
+| `com_radio_spark_transmitter` | 4 | 120.0 | _(module has no anchor)_ |
+| `com_register_computing` | 4 | 120.0 | _(module has no anchor)_ |
+| `com_relay_computer` | 4 | 300.0 | _(module has no anchor)_ |
+| `com_ring_counter` | 4 | 110.0 | _(module has no anchor)_ |
+| `com_rotor_machine` | 4 | 160.0 | _(module has no anchor)_ |
+| `com_superheterodyne_receiver` | 4 | 160.0 | _(module has no anchor)_ |
+| `com_triode_oscillator` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_tv_electronic_camera` | 4 | 160.0 | _(module has no anchor)_ |
+| `com_tv_raster_sync` | 4 | 120.0 | _(module has no anchor)_ |
+| `com_vacuum_tube_computer` | 4 | 400.0 | _(module has no anchor)_ |
+| `com_vacuum_tube_pentode` | 4 | 110.0 | _(module has no anchor)_ |
+| `com_vacuum_tube_tetrode` | 4 | 100.0 | _(module has no anchor)_ |
+| `com_waveguide` | 4 | 80.0 | _(module has no anchor)_ |
+| `dynamo` | 4 | 800.0 | [`dynamo_motor`](50_electricity.md#dynamo_motor---faraday-disc-ring-and-drum-armatures-self-excitation) |
+| `el2_beam_tetrode_output_tube` | 4 | 130.0 | _(module has no anchor)_ |
+| `el2_capacitor_electrolytic` | 4 | 120.0 | _(module has no anchor)_ |
+| `el2_cathode_ray_tube_oscilloscope` | 4 | 150.0 | _(module has no anchor)_ |
+| `el2_dielectric_heating_capacitor_coupling` | 4 | 120.0 | _(module has no anchor)_ |
+| `el2_electrostatic_precipitation_dust_collection` | 4 | 130.0 | _(module has no anchor)_ |
+| `el2_load_dispatch_and_scheduling` | 4 | 150.0 | _(module has no anchor)_ |
+| `el2_microphone_condenser_electrostatic` | 4 | 130.0 | _(module has no anchor)_ |
+| `el2_quartz_crystal` | 4 | 100.0 | _(module has no anchor)_ |
+| `el2_radar_pulse_modulation_detection` | 4 | 200.0 | _(module has no anchor)_ |
+| `el2_rectifier_mercury_arc` | 4 | 100.0 | _(module has no anchor)_ |
+| `el2_rectifier_metal_layer` | 4 | 80.0 | _(module has no anchor)_ |
+| `el2_servo_motor_feedback` | 4 | 120.0 | _(module has no anchor)_ |
+| `el2_sonar_acoustic_detection_ranging` | 4 | 180.0 | _(module has no anchor)_ |
+| `el2_standardised_frequency_nominal` | 4 | 180.0 | _(module has no anchor)_ |
+| `el2_standardised_voltage_nominal` | 4 | 200.0 | _(module has no anchor)_ |
+| `el2_stepper_motor_PM` | 4 | 100.0 | _(module has no anchor)_ |
+| `el2_telephone_exchange_switching_network` | 4 | 200.0 | _(module has no anchor)_ |
+| `el2_thermistor_thermally_sensitive_resistor` | 4 | 100.0 | _(module has no anchor)_ |
+| `el2_thyratron_gas_filled_switching_tube` | 4 | 100.0 | _(module has no anchor)_ |
+| `el2_valve_voltmeter_high_impedance` | 4 | 120.0 | _(module has no anchor)_ |
+| `el2_varistor_voltage_dependent_resistor` | 4 | 90.0 | _(module has no anchor)_ |
+| `el2_waveguide_rectangular_propagation` | 4 | 130.0 | _(module has no anchor)_ |
+| `el2_xray_tube_high_voltage_cathode_rays` | 4 | 150.0 | _(module has no anchor)_ |
+| `motor_transformer_ac` | 4 | 700.0 | [`transformer_ac`](50_electricity.md#transformer_ac---ac-generation-transformers-lamination-three-phase) |
+| `com_compiler_and_language` | 5 | 300.0 | _(module has no anchor)_ |
+| `com_error_detecting_code` | 5 | 140.0 | _(module has no anchor)_ |
+| `com_information_theory` | 5 | 160.0 | _(module has no anchor)_ |
+| `com_integrated_circuit` | 5 | 220.0 | _(module has no anchor)_ |
+| `com_photolithography` | 5 | 180.0 | _(module has no anchor)_ |
+| `com_public_key_cryptography` | 5 | 200.0 | _(module has no anchor)_ |
+| `com_semiconductor_diode` | 5 | 100.0 | _(module has no anchor)_ |
+| `com_stored_program_concept` | 5 | 180.0 | _(module has no anchor)_ |
+| `el2_electron_microscope_electromagnetic_lens` | 5 | 200.0 | _(module has no anchor)_ |
+| `el2_inductor_ferrite_core` | 5 | 80.0 | _(module has no anchor)_ |
+| `el2_klystron_microwave_amplifier` | 5 | 150.0 | _(module has no anchor)_ |
+| `el2_magnetron_microwave_oscillator` | 5 | 160.0 | _(module has no anchor)_ |
+| `el2_photomultiplier_single_photon` | 5 | 140.0 | _(module has no anchor)_ |
+| `el2_printed_circuit_board` | 5 | 100.0 | _(module has no anchor)_ |
+| `el2_travelling_wave_tube_linear_amplifier` | 5 | 170.0 | _(module has no anchor)_ |
+| `electrolysis_industrial` | 5 | 700.0 | [`electrolysis_industrial`](50_electricity.md#electrolysis_industrial---electroplating-electro-refining-chlor-alkali-aluminium) |
+| `power_grid` | 5 | 900.0 | [`transformer_ac`](50_electricity.md#transformer_ac---ac-generation-transformers-lamination-three-phase) |
 
 ### 55_semiconductors.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `quantum_solidstate_theory` | 0 | 1,800 | [`semiconductor_theory`](55_semiconductors.md#semiconductor_theory---what-to-write-down-before-you-can-test-any-of-it-doctrina-de-semiconductoribus) |
-| `galena_detector` | 2 | 150 | [`galena_detector`](55_semiconductors.md#galena_detector---the-cats-whisker-rectifier-plumbago-fulminans-informal) |
-| `vacuum_pumps` | 4 | 500 | [`vacuum_pumps`](55_semiconductors.md#vacuum_pumps---pumps-and-gauges-for-empty-space-antlia-pneumatica) |
-| `diffusion_pump` | 5 | 600 | [`vacuum_pumps`](55_semiconductors.md#vacuum_pumps---pumps-and-gauges-for-empty-space-antlia-pneumatica) |
-| `discharge_xray` | 5 | 700 | [`crookes_xray_electron`](55_semiconductors.md#crookes_xray_electron---discharge-tubes-x-rays-and-the-electron-tubus-vacuus-electricus) |
-| `ge_reduction` | 5 | 600 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
-| `gecl4_purification` | 5 | 900 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
-| `germanium_extraction` | 5 | 900 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
-| `junction_transistor` | 5 | 800 | [`junction_transistor`](55_semiconductors.md#junction_transistor---grown-and-alloy-junctions-iunctio-amplificans-informal) |
-| `point_contact_transistor` | 5 | 900 | [`point_contact_transistor`](55_semiconductors.md#point_contact_transistor---the-first-transistor-punctum-amplificans-informal) |
-| `radio` | 5 | 700 | [`radio_spark_to_valve`](55_semiconductors.md#radio_spark_to_valve---from-spark-transmitter-to-the-crystal-set-and-the-valve-radio-telegraphia-sine-filo) |
-| `semiconductor_metrology` | 5 | 800 | [`semiconductor_metrology`](55_semiconductors.md#semiconductor_metrology---measuring-what-you-have-made-mensura-resistentiae-informal) |
-| `silicon_path` | 5 | 1,000 | [`silicon_path`](55_semiconductors.md#silicon_path---the-alternative-substrate-and-why-to-defer-it-silex-amplificans-informal) |
-| `single_crystal` | 5 | 1,000 | [`single_crystal_growth`](55_semiconductors.md#single_crystal_growth---pulling-a-single-crystal-from-the-melt-cristallus-tractus-informal) |
-| `vacuum_tube` | 5 | 900 | [`vacuum_tube`](55_semiconductors.md#vacuum_tube---the-diode-and-triode-lampas-electrica) |
-| `zinc_industry_scale` | 5 | 600 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
-| `zone_refining` | 5 | 1,200 | [`zone_refining`](55_semiconductors.md#zone_refining---pfanns-travelling-molten-zone-purgatio-per-zonam-informal) |
+| `quantum_solidstate_theory` | 0 | 1,800.0 | [`semiconductor_theory`](55_semiconductors.md#semiconductor_theory---what-to-write-down-before-you-can-test-any-of-it-doctrina-de-semiconductoribus) |
+| `galena_detector` | 2 | 150.0 | [`galena_detector`](55_semiconductors.md#galena_detector---the-cats-whisker-rectifier-plumbago-fulminans-informal) |
+| `vacuum_pumps` | 4 | 500.0 | [`vacuum_pumps`](55_semiconductors.md#vacuum_pumps---pumps-and-gauges-for-empty-space-antlia-pneumatica) |
+| `diffusion_pump` | 5 | 600.0 | [`vacuum_pumps`](55_semiconductors.md#vacuum_pumps---pumps-and-gauges-for-empty-space-antlia-pneumatica) |
+| `discharge_xray` | 5 | 700.0 | [`crookes_xray_electron`](55_semiconductors.md#crookes_xray_electron---discharge-tubes-x-rays-and-the-electron-tubus-vacuus-electricus) |
+| `ge_reduction` | 5 | 600.0 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
+| `gecl4_purification` | 5 | 900.0 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
+| `germanium_extraction` | 5 | 900.0 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
+| `junction_transistor` | 5 | 800.0 | [`junction_transistor`](55_semiconductors.md#junction_transistor---grown-and-alloy-junctions-iunctio-amplificans-informal) |
+| `point_contact_transistor` | 5 | 900.0 | [`point_contact_transistor`](55_semiconductors.md#point_contact_transistor---the-first-transistor-punctum-amplificans-informal) |
+| `radio` | 5 | 700.0 | [`radio_spark_to_valve`](55_semiconductors.md#radio_spark_to_valve---from-spark-transmitter-to-the-crystal-set-and-the-valve-radio-telegraphia-sine-filo) |
+| `semiconductor_metrology` | 5 | 800.0 | [`semiconductor_metrology`](55_semiconductors.md#semiconductor_metrology---measuring-what-you-have-made-mensura-resistentiae-informal) |
+| `silicon_path` | 5 | 1,000.0 | [`silicon_path`](55_semiconductors.md#silicon_path---the-alternative-substrate-and-why-to-defer-it-silex-amplificans-informal) |
+| `single_crystal` | 5 | 1,000.0 | [`single_crystal_growth`](55_semiconductors.md#single_crystal_growth---pulling-a-single-crystal-from-the-melt-cristallus-tractus-informal) |
+| `vacuum_tube` | 5 | 900.0 | [`vacuum_tube`](55_semiconductors.md#vacuum_tube---the-diode-and-triode-lampas-electrica) |
+| `zinc_industry_scale` | 5 | 600.0 | [`germanium_sourcing`](55_semiconductors.md#germanium_sourcing---finding-germanium-at-all-plumbum-cinereum-informal) |
+| `zone_refining` | 5 | 1,200.0 | [`zone_refining`](55_semiconductors.md#zone_refining---pfanns-travelling-molten-zone-purgatio-per-zonam-informal) |
 
 ### 60_mathematics_method.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `algebra_symbolic` | 0 | 500 | _(module has no anchor)_ |
-| `arithmetic_positional` | 0 | 450 | _(module has no anchor)_ |
-| `atomic_theory` | 0 | 1,000 | _(module has no anchor)_ |
-| `calculus` | 0 | 800 | _(module has no anchor)_ |
-| `geometry_analytic` | 0 | 350 | _(module has no anchor)_ |
-| `logarithms` | 0 | 400 | _(module has no anchor)_ |
-| `newtonian_mechanics` | 0 | 600 | _(module has no anchor)_ |
-| `scientific_method` | 0 | 350 | _(module has no anchor)_ |
-| `statistics_basic` | 0 | 300 | _(module has no anchor)_ |
-| `thermodynamics_theory` | 0 | 700 | _(module has no anchor)_ |
-| `world_map` | 0 | 250 | _(module has no anchor)_ |
+| `algebra_symbolic` | 0 | 500.0 | _(module has no anchor)_ |
+| `arithmetic_positional` | 0 | 450.0 | _(module has no anchor)_ |
+| `atomic_theory` | 0 | 1,000.0 | _(module has no anchor)_ |
+| `calculus` | 0 | 800.0 | _(module has no anchor)_ |
+| `geometry_analytic` | 0 | 350.0 | _(module has no anchor)_ |
+| `logarithms` | 0 | 400.0 | _(module has no anchor)_ |
+| `newtonian_mechanics` | 0 | 600.0 | _(module has no anchor)_ |
+| `scientific_method` | 0 | 350.0 | _(module has no anchor)_ |
+| `statistics_basic` | 0 | 300.0 | _(module has no anchor)_ |
+| `thermodynamics_theory` | 0 | 700.0 | _(module has no anchor)_ |
+| `world_map` | 0 | 250.0 | _(module has no anchor)_ |
 
 ### 70_medicine_biology.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `germ_theory` | 0 | 350 | [`germ_theory`](70_medicine_biology.md#germ_theory---germ-theory-of-disease-no-roman-term-the-closest-existing-idea-is-varros-semina-morbi-seeds-of-disease) |
-| `med_amputation` | 0 | 0 | _(module has no anchor)_ |
-| `med_aqueducts_latrines` | 0 | 0 | _(module has no anchor)_ |
-| `med_bone_setting` | 0 | 0 | _(module has no anchor)_ |
-| `med_cataract_couching` | 0 | 0 | _(module has no anchor)_ |
-| `med_herbal_pharmacy` | 0 | 100 | _(module has no anchor)_ |
-| `med_legal_physician` | 0 | 0 | _(module has no anchor)_ |
-| `med_obstetric_practice` | 0 | 0 | _(module has no anchor)_ |
-| `med_opium_mandrake` | 0 | 0 | _(module has no anchor)_ |
-| `med_surgical_kit_good` | 0 | 0 | _(module has no anchor)_ |
-| `med_trepanation` | 0 | 0 | _(module has no anchor)_ |
-| `med_valetudinaria` | 0 | 200 | _(module has no anchor)_ |
-| `med_wound_suturing` | 0 | 0 | _(module has no anchor)_ |
-| `med_clinical_thermometer` | 1 | 60 | _(module has no anchor)_ |
-| `med_epidemiology_statistics` | 1 | 150 | _(module has no anchor)_ |
-| `med_handwashing_semmelweis` | 1 | 80 | _(module has no anchor)_ |
-| `med_hospital_institution` | 1 | 200 | _(module has no anchor)_ |
-| `med_ligature_haemostasis` | 1 | 60 | _(module has no anchor)_ |
-| `med_medical_education` | 1 | 200 | _(module has no anchor)_ |
-| `med_nursing_profession` | 1 | 150 | _(module has no anchor)_ |
-| `med_nutrition_vitamins` | 1 | 120 | _(module has no anchor)_ |
-| `med_obstetric_antisepsis` | 1 | 120 | _(module has no anchor)_ |
-| `med_quarantine_sanitation` | 1 | 150 | _(module has no anchor)_ |
-| `med_saline_resuscitation` | 1 | 60 | _(module has no anchor)_ |
-| `med_spectacles_refraction` | 1 | 60 | _(module has no anchor)_ |
-| `med_stethoscope_percussion` | 1 | 60 | _(module has no anchor)_ |
-| `med_surgical_gloves_mask` | 1 | 40 | _(module has no anchor)_ |
-| `med_vector_control` | 1 | 100 | _(module has no anchor)_ |
-| `sanitation_antisepsis` | 1 | 300 | [`sanitation_antisepsis`](70_medicine_biology.md#sanitation_antisepsis---boiled-water-handwashing-wound-irrigation-quarantine-aqua-fervens-manus-lotae-no-single-roman-term-covers-the-practice) |
-| `med_antitoxin_serum` | 2 | 120 | _(module has no anchor)_ |
-| `med_asepsis_antisepsis` | 2 | 120 | _(module has no anchor)_ |
-| `med_aspirin` | 2 | 80 | _(module has no anchor)_ |
-| `med_autoclave` | 2 | 150 | _(module has no anchor)_ |
-| `med_blood_groups` | 2 | 150 | _(module has no anchor)_ |
-| `med_clinical_trials` | 2 | 200 | _(module has no anchor)_ |
-| `med_dentistry` | 2 | 120 | _(module has no anchor)_ |
-| `med_ether_anaesthesia` | 2 | 120 | _(module has no anchor)_ |
-| `med_forensic_medicine` | 2 | 120 | _(module has no anchor)_ |
-| `med_gram_stain_culture` | 2 | 100 | _(module has no anchor)_ |
-| `med_hypodermic_syringe` | 2 | 100 | _(module has no anchor)_ |
-| `med_microscopy_pathology` | 2 | 120 | _(module has no anchor)_ |
-| `med_ophthalmoscope` | 2 | 100 | _(module has no anchor)_ |
-| `med_sphygmomanometer` | 2 | 100 | _(module has no anchor)_ |
-| `med_sterile_technique` | 2 | 100 | _(module has no anchor)_ |
-| `med_vaccination_progression` | 2 | 150 | _(module has no anchor)_ |
-| `plague_preparedness` | 2 | 700 | [`quarantine_publichealth`](70_medicine_biology.md#quarantine_publichealth---quarantine-clean-water-sewage-separation-and-food-inspection-custodia-cura-aquarum-no-single-roman-term-covers-the-whole-programme) |
-| `med_endoscope` | 3 | 200 | _(module has no anchor)_ |
-| `med_sulfonamides` | 3 | 150 | _(module has no anchor)_ |
-| `med_xray_imaging` | 3 | 200 | _(module has no anchor)_ |
-| `med_electrocardiogram` | 4 | 200 | _(module has no anchor)_ |
-| `med_insulin` | 4 | 200 | _(module has no anchor)_ |
-| `med_penicillin` | 4 | 250 | _(module has no anchor)_ |
+| `germ_theory` | 0 | 350.0 | [`germ_theory`](70_medicine_biology.md#germ_theory---germ-theory-of-disease-no-roman-term-the-closest-existing-idea-is-varros-semina-morbi-seeds-of-disease) |
+| `md2_mosquito_net` | 0 | 40.0 | _(module has no anchor)_ |
+| `md2_pit_latrine` | 0 | 80.0 | _(module has no anchor)_ |
+| `med_amputation` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_aqueducts_latrines` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_bone_setting` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_cataract_couching` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_herbal_pharmacy` | 0 | 100.0 | _(module has no anchor)_ |
+| `med_legal_physician` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_obstetric_practice` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_opium_mandrake` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_surgical_kit_good` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_trepanation` | 0 | 0.0 | _(module has no anchor)_ |
+| `med_valetudinaria` | 0 | 200.0 | _(module has no anchor)_ |
+| `med_wound_suturing` | 0 | 0.0 | _(module has no anchor)_ |
+| `md2_auscultation` | 1 | 100.0 | _(module has no anchor)_ |
+| `md2_catgut_suture` | 1 | 100.0 | _(module has no anchor)_ |
+| `md2_contact_tracing` | 1 | 120.0 | _(module has no anchor)_ |
+| `md2_food_adulteration_law` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_haemostat` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_hernia_repair` | 1 | 120.0 | _(module has no anchor)_ |
+| `md2_iv_saline` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_local_anaesthesia` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_meat_inspection` | 1 | 100.0 | _(module has no anchor)_ |
+| `md2_milk_pasteurisation` | 1 | 120.0 | _(module has no anchor)_ |
+| `md2_notifiable_disease` | 1 | 100.0 | _(module has no anchor)_ |
+| `md2_otoscope` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_percussion` | 1 | 40.0 | _(module has no anchor)_ |
+| `md2_plant_chemistry` | 1 | 100.0 | _(module has no anchor)_ |
+| `md2_plaster_cast` | 1 | 100.0 | _(module has no anchor)_ |
+| `md2_sand_filtration` | 1 | 150.0 | _(module has no anchor)_ |
+| `md2_staining_methylene` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_stethoscope` | 1 | 60.0 | _(module has no anchor)_ |
+| `md2_surgical_drape` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_surgical_glove` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_surgical_gown` | 1 | 70.0 | _(module has no anchor)_ |
+| `md2_surgical_mask` | 1 | 60.0 | _(module has no anchor)_ |
+| `md2_tourniquet` | 1 | 80.0 | _(module has no anchor)_ |
+| `md2_traction` | 1 | 120.0 | _(module has no anchor)_ |
+| `md2_urinalysis` | 1 | 60.0 | _(module has no anchor)_ |
+| `md2_vector_control` | 1 | 100.0 | _(module has no anchor)_ |
+| `med_clinical_thermometer` | 1 | 60.0 | _(module has no anchor)_ |
+| `med_epidemiology_statistics` | 1 | 150.0 | _(module has no anchor)_ |
+| `med_handwashing_semmelweis` | 1 | 80.0 | _(module has no anchor)_ |
+| `med_hospital_institution` | 1 | 200.0 | _(module has no anchor)_ |
+| `med_ligature_haemostasis` | 1 | 60.0 | _(module has no anchor)_ |
+| `med_medical_education` | 1 | 200.0 | _(module has no anchor)_ |
+| `med_nursing_profession` | 1 | 150.0 | _(module has no anchor)_ |
+| `med_nutrition_vitamins` | 1 | 120.0 | _(module has no anchor)_ |
+| `med_obstetric_antisepsis` | 1 | 120.0 | _(module has no anchor)_ |
+| `med_quarantine_sanitation` | 1 | 150.0 | _(module has no anchor)_ |
+| `med_saline_resuscitation` | 1 | 60.0 | _(module has no anchor)_ |
+| `med_spectacles_refraction` | 1 | 60.0 | _(module has no anchor)_ |
+| `med_stethoscope_percussion` | 1 | 60.0 | _(module has no anchor)_ |
+| `med_surgical_gloves_mask` | 1 | 40.0 | _(module has no anchor)_ |
+| `med_vector_control` | 1 | 100.0 | _(module has no anchor)_ |
+| `sanitation_antisepsis` | 1 | 300.0 | [`sanitation_antisepsis`](70_medicine_biology.md#sanitation_antisepsis---boiled-water-handwashing-wound-irrigation-quarantine-aqua-fervens-manus-lotae-no-single-roman-term-covers-the-practice) |
+| `md2_antitoxin` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_appendicectomy` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_autoclave` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_basal_metabolic_rate` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_biopsy` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_blood_sugar_test` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_blood_transfusion` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_blood_typing` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_caesarean_section` | 2 | 180.0 | _(module has no anchor)_ |
+| `md2_cataract_extraction` | 2 | 160.0 | _(module has no anchor)_ |
+| `md2_child_clinic` | 2 | 110.0 | _(module has no anchor)_ |
+| `md2_chlorination` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_citrate_anticoagulation` | 2 | 80.0 | _(module has no anchor)_ |
+| `md2_clinical_thermometer` | 2 | 80.0 | _(module has no anchor)_ |
+| `md2_cystoscope` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_differential_count` | 2 | 80.0 | _(module has no anchor)_ |
+| `md2_digitalis` | 2 | 140.0 | _(module has no anchor)_ |
+| `md2_endotracheal_intubation` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_frozen_section` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_gastrectomy` | 2 | 200.0 | _(module has no anchor)_ |
+| `md2_haemocytometer` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_hospital_infection_control` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_iodised_salt` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_isolation_hospital` | 2 | 180.0 | _(module has no anchor)_ |
+| `md2_laryngoscope` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_light_source` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_maternal_clinic` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_morphine` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_ophthalmoscope` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_oral_rehydration` | 2 | 90.0 | _(module has no anchor)_ |
+| `md2_orthopaedic_fixation` | 2 | 180.0 | _(module has no anchor)_ |
+| `md2_quinine` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_retractor` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_salicylate` | 2 | 130.0 | _(module has no anchor)_ |
+| `md2_sewage_separation` | 2 | 180.0 | _(module has no anchor)_ |
+| `md2_skin_graft` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_sphygmomanometer` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_spinal_anaesthesia` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_spirometer` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_thyroid_extract` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_thyroidectomy` | 2 | 170.0 | _(module has no anchor)_ |
+| `md2_tuberculin_test` | 2 | 80.0 | _(module has no anchor)_ |
+| `md2_vaccine_cholera` | 2 | 130.0 | _(module has no anchor)_ |
+| `md2_vaccine_diphtheria` | 2 | 160.0 | _(module has no anchor)_ |
+| `md2_vaccine_pertussis` | 2 | 140.0 | _(module has no anchor)_ |
+| `md2_vaccine_plague` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_vaccine_rabies` | 2 | 180.0 | _(module has no anchor)_ |
+| `md2_vaccine_smallpox` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_vaccine_tetanus` | 2 | 150.0 | _(module has no anchor)_ |
+| `md2_vaccine_typhoid` | 2 | 140.0 | _(module has no anchor)_ |
+| `md2_vitamin_a` | 2 | 110.0 | _(module has no anchor)_ |
+| `md2_vitamin_b1` | 2 | 100.0 | _(module has no anchor)_ |
+| `md2_vitamin_c` | 2 | 110.0 | _(module has no anchor)_ |
+| `md2_vitamin_d` | 2 | 120.0 | _(module has no anchor)_ |
+| `md2_wassermann_test` | 2 | 120.0 | _(module has no anchor)_ |
+| `med_antitoxin_serum` | 2 | 120.0 | _(module has no anchor)_ |
+| `med_asepsis_antisepsis` | 2 | 120.0 | _(module has no anchor)_ |
+| `med_aspirin` | 2 | 80.0 | _(module has no anchor)_ |
+| `med_autoclave` | 2 | 150.0 | _(module has no anchor)_ |
+| `med_blood_groups` | 2 | 150.0 | _(module has no anchor)_ |
+| `med_clinical_trials` | 2 | 200.0 | _(module has no anchor)_ |
+| `med_dentistry` | 2 | 120.0 | _(module has no anchor)_ |
+| `med_ether_anaesthesia` | 2 | 120.0 | _(module has no anchor)_ |
+| `med_forensic_medicine` | 2 | 120.0 | _(module has no anchor)_ |
+| `med_gram_stain_culture` | 2 | 100.0 | _(module has no anchor)_ |
+| `med_hypodermic_syringe` | 2 | 100.0 | _(module has no anchor)_ |
+| `med_microscopy_pathology` | 2 | 120.0 | _(module has no anchor)_ |
+| `med_ophthalmoscope` | 2 | 100.0 | _(module has no anchor)_ |
+| `med_sphygmomanometer` | 2 | 100.0 | _(module has no anchor)_ |
+| `med_sterile_technique` | 2 | 100.0 | _(module has no anchor)_ |
+| `med_vaccination_progression` | 2 | 150.0 | _(module has no anchor)_ |
+| `plague_preparedness` | 2 | 700.0 | [`quarantine_publichealth`](70_medicine_biology.md#quarantine_publichealth---quarantine-clean-water-sewage-separation-and-food-inspection-custodia-cura-aquarum-no-single-roman-term-covers-the-whole-programme) |
+| `md2_activated_sludge` | 3 | 250.0 | _(module has no anchor)_ |
+| `md2_adrenaline` | 3 | 140.0 | _(module has no anchor)_ |
+| `md2_anaesthetic_machine` | 3 | 250.0 | _(module has no anchor)_ |
+| `md2_barbiturates` | 3 | 160.0 | _(module has no anchor)_ |
+| `md2_blood_bank` | 3 | 180.0 | _(module has no anchor)_ |
+| `md2_contrast_media` | 3 | 120.0 | _(module has no anchor)_ |
+| `md2_ecg` | 3 | 250.0 | _(module has no anchor)_ |
+| `md2_electrocautery` | 3 | 200.0 | _(module has no anchor)_ |
+| `md2_endoscope` | 3 | 200.0 | _(module has no anchor)_ |
+| `md2_fluoroscopy` | 3 | 250.0 | _(module has no anchor)_ |
+| `md2_insulin` | 3 | 200.0 | _(module has no anchor)_ |
+| `md2_penicillin_freeze_dry` | 3 | 220.0 | _(module has no anchor)_ |
+| `md2_penicillin_production` | 3 | 200.0 | _(module has no anchor)_ |
+| `md2_streptomycin` | 3 | 200.0 | _(module has no anchor)_ |
+| `md2_sulphonamides` | 3 | 180.0 | _(module has no anchor)_ |
+| `md2_synthetic_suture` | 3 | 150.0 | _(module has no anchor)_ |
+| `md2_vaccine_yellow_fever` | 3 | 180.0 | _(module has no anchor)_ |
+| `md2_vitamin_b12` | 3 | 160.0 | _(module has no anchor)_ |
+| `md2_xray_plate` | 3 | 200.0 | _(module has no anchor)_ |
+| `med_endoscope` | 3 | 200.0 | _(module has no anchor)_ |
+| `med_sulfonamides` | 3 | 150.0 | _(module has no anchor)_ |
+| `med_xray_imaging` | 3 | 200.0 | _(module has no anchor)_ |
+| `md2_eeg` | 4 | 300.0 | _(module has no anchor)_ |
+| `md2_penicillin_fermentation` | 4 | 300.0 | _(module has no anchor)_ |
+| `med_cocaine_unobtainable` | 4 | 60.0 | _(module has no anchor)_ |
+| `med_electrocardiogram` | 4 | 200.0 | _(module has no anchor)_ |
+| `med_insulin` | 4 | 200.0 | _(module has no anchor)_ |
+| `med_penicillin` | 4 | 250.0 | _(module has no anchor)_ |
 
 ### 75_agriculture_food.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `crop_rotation` | 1 | 450 | [`crop_rotation`](75_agriculture_food.md#crop_rotation---three-course-rotation-with-a-legume-break) |
-| `fud_alfalfa` | 1 | 100 | _(module has no anchor)_ |
-| `fud_bone_meal_fertilizer` | 1 | 100 | _(module has no anchor)_ |
-| `fud_bottling_sealed_cork` | 1 | 80 | _(module has no anchor)_ |
-| `fud_brewing_with_hops` | 1 | 120 | _(module has no anchor)_ |
-| `fud_clover_winter_fodder` | 1 | 80 | _(module has no anchor)_ |
-| `fud_coffee_trade_import` | 1 | 60 | _(module has no anchor)_ |
-| `fud_controlled_pollination` | 1 | 150 | _(module has no anchor)_ |
-| `fud_dairy_butter_production` | 1 | 120 | _(module has no anchor)_ |
-| `fud_dairy_cheese_aging` | 1 | 100 | _(module has no anchor)_ |
-| `fud_distillation_spirits` | 1 | 150 | _(module has no anchor)_ |
-| `fud_enclosure_of_common_land` | 1 | 150 | _(module has no anchor)_ |
-| `fud_farm_as_capital_enterprise` | 1 | 200 | _(module has no anchor)_ |
-| `fud_fish_curing_and_smoking` | 1 | 120 | _(module has no anchor)_ |
-| `fud_guano_import_trade` | 1 | 80 | _(module has no anchor)_ |
-| `fud_hay_making_storage` | 1 | 100 | _(module has no anchor)_ |
-| `fud_horse_hoe` | 1 | 120 | _(module has no anchor)_ |
-| `fud_ice_harvesting_and_cutting` | 1 | 100 | _(module has no anchor)_ |
-| `fud_ice_house_construction` | 1 | 150 | _(module has no anchor)_ |
-| `fud_liming_acid_soils` | 1 | 100 | _(module has no anchor)_ |
-| `fud_livestock_selective_cattle` | 1 | 200 | _(module has no anchor)_ |
-| `fud_livestock_selective_sheep` | 1 | 180 | _(module has no anchor)_ |
-| `fud_malt_production` | 1 | 120 | _(module has no anchor)_ |
-| `fud_nitrogen_fixing_understanding` | 1 | 80 | _(module has no anchor)_ |
-| `fud_rice_cultivation` | 1 | 120 | _(module has no anchor)_ |
-| `fud_root_cellar_storage` | 1 | 120 | _(module has no anchor)_ |
-| `fud_seed_drill` | 1 | 180 | _(module has no anchor)_ |
-| `fud_selective_breeding_pedigree` | 1 | 200 | _(module has no anchor)_ |
-| `fud_sourdough_starter` | 1 | 100 | _(module has no anchor)_ |
-| `fud_sugar_cane_cultivation` | 1 | 100 | _(module has no anchor)_ |
-| `fud_tea_trade_import` | 1 | 60 | _(module has no anchor)_ |
-| `fud_three_field_rotation` | 1 | 120 | _(module has no anchor)_ |
-| `fud_turnips_winter_fodder` | 1 | 100 | _(module has no anchor)_ |
-| `fud_vegetable_oil_extraction` | 1 | 100 | _(module has no anchor)_ |
-| `fud_vinegar_production` | 1 | 80 | _(module has no anchor)_ |
-| `horse_collar` | 1 | 200 | [`horse_collar_harness`](75_agriculture_food.md#horse_collar_harness---see-module-40-for-construction-agronomic-case-here) |
-| `fud_beet_sugar_processing` | 2 | 200 | _(module has no anchor)_ |
-| `fud_canning_appert_method` | 2 | 200 | _(module has no anchor)_ |
-| `fud_drying_evaporated_milk` | 2 | 150 | _(module has no anchor)_ |
-| `fud_grain_storage_silos` | 2 | 200 | _(module has no anchor)_ |
-| `fud_heavy_mouldboard_plough_coulter` | 2 | 200 | _(module has no anchor)_ |
-| `fud_ice_trade_logistics` | 2 | 120 | _(module has no anchor)_ |
-| `fud_mechanical_reaper` | 2 | 300 | _(module has no anchor)_ |
-| `fud_pasteurisation` | 2 | 180 | _(module has no anchor)_ |
-| `fud_roller_mill` | 2 | 250 | _(module has no anchor)_ |
-| `fud_roller_milled_white_flour` | 2 | 150 | _(module has no anchor)_ |
-| `fud_silage_fermentation` | 2 | 150 | _(module has no anchor)_ |
-| `fud_threshing_machine` | 2 | 250 | _(module has no anchor)_ |
-| `fud_whaling_industry` | 2 | 300 | _(module has no anchor)_ |
-| `fud_winnowing_machine` | 2 | 150 | _(module has no anchor)_ |
-| `fud_yeast_pure_culture` | 2 | 200 | _(module has no anchor)_ |
-| `fud_can_opener` | 3 | 100 | _(module has no anchor)_ |
-| `fud_margarine_synthesis` | 3 | 200 | _(module has no anchor)_ |
-| `fud_mechanical_refrigeration` | 3 | 300 | _(module has no anchor)_ |
-| `fud_superphosphate_fertilizer` | 3 | 200 | _(module has no anchor)_ |
-| `fud_tin_plate_cans` | 3 | 200 | _(module has no anchor)_ |
-| `fud_cold_chain_refrigerated_shipping` | 4 | 200 | _(module has no anchor)_ |
-| `fud_combine_harvester` | 4 | 400 | _(module has no anchor)_ |
-| `fud_freezing_with_mechanical_cold` | 4 | 150 | _(module has no anchor)_ |
-| `fud_haber_process_synthetic_nitrogen` | 5 | 600 | _(module has no anchor)_ |
+| `crop_rotation` | 1 | 450.0 | [`crop_rotation`](75_agriculture_food.md#crop_rotation---three-course-rotation-with-a-legume-break) |
+| `fud_alfalfa` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_bone_meal_fertilizer` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_bottling_sealed_cork` | 1 | 80.0 | _(module has no anchor)_ |
+| `fud_brewing_with_hops` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_clover_winter_fodder` | 1 | 80.0 | _(module has no anchor)_ |
+| `fud_coffee_trade_import` | 1 | 60.0 | _(module has no anchor)_ |
+| `fud_controlled_pollination` | 1 | 150.0 | _(module has no anchor)_ |
+| `fud_dairy_butter_production` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_dairy_cheese_aging` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_distillation_spirits` | 1 | 150.0 | _(module has no anchor)_ |
+| `fud_enclosure_of_common_land` | 1 | 150.0 | _(module has no anchor)_ |
+| `fud_farm_as_capital_enterprise` | 1 | 200.0 | _(module has no anchor)_ |
+| `fud_fish_curing_and_smoking` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_guano_import_trade` | 1 | 80.0 | _(module has no anchor)_ |
+| `fud_hay_making_storage` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_horse_hoe` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_ice_harvesting_and_cutting` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_ice_house_construction` | 1 | 150.0 | _(module has no anchor)_ |
+| `fud_liming_acid_soils` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_livestock_selective_cattle` | 1 | 200.0 | _(module has no anchor)_ |
+| `fud_livestock_selective_sheep` | 1 | 180.0 | _(module has no anchor)_ |
+| `fud_malt_production` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_nitrogen_fixing_understanding` | 1 | 80.0 | _(module has no anchor)_ |
+| `fud_rice_cultivation` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_root_cellar_storage` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_seed_drill` | 1 | 180.0 | _(module has no anchor)_ |
+| `fud_selective_breeding_pedigree` | 1 | 200.0 | _(module has no anchor)_ |
+| `fud_sourdough_starter` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_sugar_cane_cultivation` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_tea_trade_import` | 1 | 60.0 | _(module has no anchor)_ |
+| `fud_three_field_rotation` | 1 | 120.0 | _(module has no anchor)_ |
+| `fud_turnips_winter_fodder` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_vegetable_oil_extraction` | 1 | 100.0 | _(module has no anchor)_ |
+| `fud_vinegar_production` | 1 | 80.0 | _(module has no anchor)_ |
+| `horse_collar` | 1 | 200.0 | [`horse_collar_harness`](75_agriculture_food.md#horse_collar_harness---see-module-40-for-construction-agronomic-case-here) |
+| `fud_beet_sugar_processing` | 2 | 200.0 | _(module has no anchor)_ |
+| `fud_canning_appert_method` | 2 | 200.0 | _(module has no anchor)_ |
+| `fud_drying_evaporated_milk` | 2 | 150.0 | _(module has no anchor)_ |
+| `fud_grain_storage_silos` | 2 | 200.0 | _(module has no anchor)_ |
+| `fud_heavy_mouldboard_plough_coulter` | 2 | 200.0 | _(module has no anchor)_ |
+| `fud_ice_trade_logistics` | 2 | 120.0 | _(module has no anchor)_ |
+| `fud_mechanical_reaper` | 2 | 300.0 | _(module has no anchor)_ |
+| `fud_pasteurisation` | 2 | 180.0 | _(module has no anchor)_ |
+| `fud_roller_mill` | 2 | 250.0 | _(module has no anchor)_ |
+| `fud_roller_milled_white_flour` | 2 | 150.0 | _(module has no anchor)_ |
+| `fud_silage_fermentation` | 2 | 150.0 | _(module has no anchor)_ |
+| `fud_threshing_machine` | 2 | 250.0 | _(module has no anchor)_ |
+| `fud_whaling_industry` | 2 | 300.0 | _(module has no anchor)_ |
+| `fud_winnowing_machine` | 2 | 150.0 | _(module has no anchor)_ |
+| `fud_yeast_pure_culture` | 2 | 200.0 | _(module has no anchor)_ |
+| `fud_can_opener` | 3 | 100.0 | _(module has no anchor)_ |
+| `fud_margarine_synthesis` | 3 | 200.0 | _(module has no anchor)_ |
+| `fud_mechanical_refrigeration` | 3 | 300.0 | _(module has no anchor)_ |
+| `fud_superphosphate_fertilizer` | 3 | 200.0 | _(module has no anchor)_ |
+| `fud_tin_plate_cans` | 3 | 200.0 | _(module has no anchor)_ |
+| `fud_chocolate_tier9` | 4 | 60.0 | _(module has no anchor)_ |
+| `fud_cold_chain_refrigerated_shipping` | 4 | 200.0 | _(module has no anchor)_ |
+| `fud_combine_harvester` | 4 | 400.0 | _(module has no anchor)_ |
+| `fud_freezing_with_mechanical_cold` | 4 | 150.0 | _(module has no anchor)_ |
+| `fud_maize_tier9` | 4 | 60.0 | _(module has no anchor)_ |
+| `fud_potato_tier9` | 4 | 60.0 | _(module has no anchor)_ |
+| `fud_haber_process_synthetic_nitrogen` | 5 | 600.0 | _(module has no anchor)_ |
 
 ### 80_information_printing.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `prn_carbon_ink` | 0 | 0 | _(module has no anchor)_ |
-| `prn_codex_bound` | 0 | 0 | _(module has no anchor)_ |
-| `prn_mosaic_fresco` | 0 | 0 | _(module has no anchor)_ |
-| `prn_papyrus_sheets` | 0 | 0 | _(module has no anchor)_ |
-| `prn_parchment_sheets` | 0 | 0 | _(module has no anchor)_ |
-| `prn_scribal_copying` | 0 | 0 | _(module has no anchor)_ |
-| `prn_sculpture` | 0 | 0 | _(module has no anchor)_ |
-| `prn_seals_stamps` | 0 | 0 | _(module has no anchor)_ |
-| `prn_theatre_pantomime` | 0 | 0 | _(module has no anchor)_ |
-| `prn_wax_tablets` | 0 | 0 | _(module has no anchor)_ |
-| `corpus_written` | 1 | 6,000 | _(module has no anchor)_ |
-| `printing_press` | 1 | 900 | _(module has no anchor)_ |
-| `prn_hand_papermaking` | 1 | 80 | _(module has no anchor)_ |
-| `prn_magic_lantern` | 1 | 120 | _(module has no anchor)_ |
-| `prn_pulp_stamper` | 1 | 100 | _(module has no anchor)_ |
-| `prn_relief_printing` | 1 | 60 | _(module has no anchor)_ |
-| `prn_sizing_surface` | 1 | 50 | _(module has no anchor)_ |
-| `prn_wire_mould_deckle` | 1 | 150 | _(module has no anchor)_ |
-| `prn_woodblock_carving` | 1 | 120 | _(module has no anchor)_ |
-| `rag_paper` | 1 | 400 | _(module has no anchor)_ |
-| `semaphore_telegraph` | 1 | 700 | _(module has no anchor)_ |
-| `corpus_dispersed` | 2 | 800 | _(module has no anchor)_ |
-| `prn_calotype_process` | 2 | 250 | _(module has no anchor)_ |
-| `prn_cinema_projection` | 2 | 120 | _(module has no anchor)_ |
-| `prn_cinema_shutter` | 2 | 100 | _(module has no anchor)_ |
-| `prn_composing_stick` | 2 | 40 | _(module has no anchor)_ |
-| `prn_daguerreotype` | 2 | 200 | _(module has no anchor)_ |
-| `prn_disc_record` | 2 | 150 | _(module has no anchor)_ |
-| `prn_enlarger` | 2 | 150 | _(module has no anchor)_ |
-| `prn_etching_technique` | 2 | 200 | _(module has no anchor)_ |
-| `prn_film_studio` | 2 | 300 | _(module has no anchor)_ |
-| `prn_gelatin_dry_plate` | 2 | 150 | _(module has no anchor)_ |
-| `prn_hand_mould_adjustable` | 2 | 80 | _(module has no anchor)_ |
-| `prn_intaglio_engraving` | 2 | 300 | _(module has no anchor)_ |
-| `prn_intermittent_motion` | 2 | 180 | _(module has no anchor)_ |
-| `prn_lithography_stone` | 2 | 200 | _(module has no anchor)_ |
-| `prn_loudspeaker` | 2 | 120 | _(module has no anchor)_ |
-| `prn_newspaper_institution` | 2 | 400 | _(module has no anchor)_ |
-| `prn_nitrate_film_safety` | 2 | 100 | _(module has no anchor)_ |
-| `prn_oil_based_ink` | 2 | 100 | _(module has no anchor)_ |
-| `prn_phonograph_cylinder` | 2 | 250 | _(module has no anchor)_ |
-| `prn_platen_press` | 2 | 200 | _(module has no anchor)_ |
-| `prn_silver_halide_chemistry` | 2 | 150 | _(module has no anchor)_ |
-| `prn_stereotype_plate` | 2 | 120 | _(module has no anchor)_ |
-| `prn_type_matrix` | 2 | 60 | _(module has no anchor)_ |
-| `prn_type_metal_alloy` | 2 | 100 | _(module has no anchor)_ |
-| `prn_type_punch` | 2 | 200 | _(module has no anchor)_ |
-| `prn_wet_collodion_plate` | 2 | 200 | _(module has no anchor)_ |
-| `prn_wood_pulp` | 2 | 120 | _(module has no anchor)_ |
-| `prn_colour_photography` | 3 | 250 | _(module has no anchor)_ |
-| `prn_cylinder_press` | 3 | 250 | _(module has no anchor)_ |
-| `prn_electrical_recording` | 3 | 200 | _(module has no anchor)_ |
-| `prn_electrotype_plate` | 3 | 150 | _(module has no anchor)_ |
-| `prn_four_colour_separation` | 3 | 200 | _(module has no anchor)_ |
-| `prn_fourdrinier_machine` | 3 | 400 | _(module has no anchor)_ |
-| `prn_halftone_screen` | 3 | 150 | _(module has no anchor)_ |
-| `prn_magnetic_tape_recording` | 3 | 250 | _(module has no anchor)_ |
-| `prn_offset_lithography` | 3 | 250 | _(module has no anchor)_ |
-| `prn_radio_broadcasting` | 3 | 300 | _(module has no anchor)_ |
-| `prn_roll_film_celluloid` | 3 | 200 | _(module has no anchor)_ |
-| `prn_rotary_press` | 3 | 300 | _(module has no anchor)_ |
-| `prn_typewriter` | 3 | 300 | _(module has no anchor)_ |
-| `prn_linotype_machine` | 4 | 600 | _(module has no anchor)_ |
-| `prn_monotype_machine` | 4 | 500 | _(module has no anchor)_ |
+| `prn_carbon_ink` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_codex_bound` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_mosaic_fresco` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_papyrus_sheets` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_parchment_sheets` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_scribal_copying` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_sculpture` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_seals_stamps` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_theatre_pantomime` | 0 | 0.0 | _(module has no anchor)_ |
+| `prn_wax_tablets` | 0 | 0.0 | _(module has no anchor)_ |
+| `corpus_written` | 1 | 6,000.0 | _(module has no anchor)_ |
+| `printing_press` | 1 | 900.0 | _(module has no anchor)_ |
+| `prn_hand_papermaking` | 1 | 80.0 | _(module has no anchor)_ |
+| `prn_magic_lantern` | 1 | 120.0 | _(module has no anchor)_ |
+| `prn_pulp_stamper` | 1 | 100.0 | _(module has no anchor)_ |
+| `prn_relief_printing` | 1 | 60.0 | _(module has no anchor)_ |
+| `prn_sizing_surface` | 1 | 50.0 | _(module has no anchor)_ |
+| `prn_wire_mould_deckle` | 1 | 150.0 | _(module has no anchor)_ |
+| `prn_woodblock_carving` | 1 | 120.0 | _(module has no anchor)_ |
+| `rag_paper` | 1 | 400.0 | _(module has no anchor)_ |
+| `semaphore_telegraph` | 1 | 700.0 | _(module has no anchor)_ |
+| `corpus_dispersed` | 2 | 800.0 | _(module has no anchor)_ |
+| `prn_calotype_process` | 2 | 250.0 | _(module has no anchor)_ |
+| `prn_cinema_projection` | 2 | 120.0 | _(module has no anchor)_ |
+| `prn_cinema_shutter` | 2 | 100.0 | _(module has no anchor)_ |
+| `prn_composing_stick` | 2 | 40.0 | _(module has no anchor)_ |
+| `prn_daguerreotype` | 2 | 200.0 | _(module has no anchor)_ |
+| `prn_disc_record` | 2 | 150.0 | _(module has no anchor)_ |
+| `prn_enlarger` | 2 | 150.0 | _(module has no anchor)_ |
+| `prn_etching_technique` | 2 | 200.0 | _(module has no anchor)_ |
+| `prn_film_studio` | 2 | 300.0 | _(module has no anchor)_ |
+| `prn_gelatin_dry_plate` | 2 | 150.0 | _(module has no anchor)_ |
+| `prn_hand_mould_adjustable` | 2 | 80.0 | _(module has no anchor)_ |
+| `prn_intaglio_engraving` | 2 | 300.0 | _(module has no anchor)_ |
+| `prn_intermittent_motion` | 2 | 180.0 | _(module has no anchor)_ |
+| `prn_lithography_stone` | 2 | 200.0 | _(module has no anchor)_ |
+| `prn_loudspeaker` | 2 | 120.0 | _(module has no anchor)_ |
+| `prn_newspaper_institution` | 2 | 400.0 | _(module has no anchor)_ |
+| `prn_nitrate_film_safety` | 2 | 100.0 | _(module has no anchor)_ |
+| `prn_oil_based_ink` | 2 | 100.0 | _(module has no anchor)_ |
+| `prn_phonograph_cylinder` | 2 | 250.0 | _(module has no anchor)_ |
+| `prn_platen_press` | 2 | 200.0 | _(module has no anchor)_ |
+| `prn_silver_halide_chemistry` | 2 | 150.0 | _(module has no anchor)_ |
+| `prn_stereotype_plate` | 2 | 120.0 | _(module has no anchor)_ |
+| `prn_type_matrix` | 2 | 60.0 | _(module has no anchor)_ |
+| `prn_type_metal_alloy` | 2 | 100.0 | _(module has no anchor)_ |
+| `prn_type_punch` | 2 | 200.0 | _(module has no anchor)_ |
+| `prn_wet_collodion_plate` | 2 | 200.0 | _(module has no anchor)_ |
+| `prn_wood_pulp` | 2 | 120.0 | _(module has no anchor)_ |
+| `prn_colour_photography` | 3 | 250.0 | _(module has no anchor)_ |
+| `prn_cylinder_press` | 3 | 250.0 | _(module has no anchor)_ |
+| `prn_electrical_recording` | 3 | 200.0 | _(module has no anchor)_ |
+| `prn_electrotype_plate` | 3 | 150.0 | _(module has no anchor)_ |
+| `prn_four_colour_separation` | 3 | 200.0 | _(module has no anchor)_ |
+| `prn_fourdrinier_machine` | 3 | 400.0 | _(module has no anchor)_ |
+| `prn_halftone_screen` | 3 | 150.0 | _(module has no anchor)_ |
+| `prn_magnetic_tape_recording` | 3 | 250.0 | _(module has no anchor)_ |
+| `prn_offset_lithography` | 3 | 250.0 | _(module has no anchor)_ |
+| `prn_radio_broadcasting` | 3 | 300.0 | _(module has no anchor)_ |
+| `prn_roll_film_celluloid` | 3 | 200.0 | _(module has no anchor)_ |
+| `prn_rotary_press` | 3 | 300.0 | _(module has no anchor)_ |
+| `prn_typewriter` | 3 | 300.0 | _(module has no anchor)_ |
+| `prn_linotype_machine` | 4 | 600.0 | _(module has no anchor)_ |
+| `prn_monotype_machine` | 4 | 500.0 | _(module has no anchor)_ |
 
 ### 85_transport_civil.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `air_balloon_ballast` | 0 | 20 | _(module has no anchor)_ |
-| `air_compass_magnetic` | 0 | 30 | _(module has no anchor)_ |
-| `air_hot_air_balloon_ref` | 0 | 0 | _(module has no anchor)_ |
-| `air_kite_basic` | 0 | 20 | _(module has no anchor)_ |
-| `civ_amphitheatre` | 0 | 0 | _(module has no anchor)_ |
-| `civ_aqueduct_roman` | 0 | 0 | _(module has no anchor)_ |
-| `civ_arch_roman` | 0 | 0 | _(module has no anchor)_ |
-| `civ_brick_tile` | 0 | 0 | _(module has no anchor)_ |
-| `civ_chorobates` | 0 | 0 | _(module has no anchor)_ |
-| `civ_cofferdam` | 0 | 0 | _(module has no anchor)_ |
-| `civ_crane_treadwheel` | 0 | 0 | _(module has no anchor)_ |
-| `civ_dome_roman` | 0 | 0 | _(module has no anchor)_ |
-| `civ_glass_windows` | 0 | 0 | _(module has no anchor)_ |
-| `civ_insula` | 0 | 0 | _(module has no anchor)_ |
-| `civ_iron_wrought` | 0 | 0 | _(module has no anchor)_ |
-| `civ_marble_facing` | 0 | 0 | _(module has no anchor)_ |
-| `civ_road_paved` | 0 | 0 | _(module has no anchor)_ |
-| `civ_sewer_roman` | 0 | 0 | _(module has no anchor)_ |
-| `civ_surveying_groma` | 0 | 0 | _(module has no anchor)_ |
-| `civ_vault_barrel` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_axle_pivot_front` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_bridge` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_cursus_publicus` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_four_wheel_cart` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_harness_throat_girth` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_horse_saddle_basic` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_litter` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_milestone` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_mule_transport` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_ox_transport` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_paved_road_network` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_two_wheel_cart` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_tyre_iron` | 0 | 0 | _(module has no anchor)_ |
-| `lnd_wheel_spoked` | 0 | 0 | _(module has no anchor)_ |
-| `sea_anchor` | 0 | 0 | _(module has no anchor)_ |
-| `sea_coastal_pilotage` | 0 | 0 | _(module has no anchor)_ |
-| `sea_harbours_pozzolana` | 0 | 0 | _(module has no anchor)_ |
-| `sea_lead_sheathing` | 0 | 0 | _(module has no anchor)_ |
-| `sea_merchant_ships_large` | 0 | 0 | _(module has no anchor)_ |
-| `sea_monsoon_route` | 0 | 0 | _(module has no anchor)_ |
-| `sea_mortise_tenon` | 0 | 0 | _(module has no anchor)_ |
-| `sea_pharos_lighthouse` | 0 | 0 | _(module has no anchor)_ |
-| `sea_sounding_lines` | 0 | 0 | _(module has no anchor)_ |
-| `sea_spritsail` | 0 | 0 | _(module has no anchor)_ |
-| `sea_square_sail` | 0 | 0 | _(module has no anchor)_ |
-| `sea_steering_oars` | 0 | 0 | _(module has no anchor)_ |
-| `air_balloon_valve` | 1 | 60 | _(module has no anchor)_ |
-| `air_elevator_pitch` | 1 | 50 | _(module has no anchor)_ |
-| `air_goldbeater_skin` | 1 | 200 | _(module has no anchor)_ |
-| `air_observation_balloon_tethered` | 1 | 120 | _(module has no anchor)_ |
-| `air_rudder_vertical` | 1 | 60 | _(module has no anchor)_ |
-| `air_varnished_silk_envelope` | 1 | 150 | _(module has no anchor)_ |
-| `civ_bridge_timber_truss` | 1 | 200 | _(module has no anchor)_ |
-| `civ_foundation_piles` | 1 | 100 | _(module has no anchor)_ |
-| `civ_foundation_spread` | 1 | 80 | _(module has no anchor)_ |
-| `civ_gate_sluice` | 1 | 100 | _(module has no anchor)_ |
-| `civ_roof_king_post` | 1 | 80 | _(module has no anchor)_ |
-| `civ_roof_queen_post` | 1 | 100 | _(module has no anchor)_ |
-| `civ_street_paved` | 1 | 80 | _(module has no anchor)_ |
-| `civ_truss_triangulated` | 1 | 120 | _(module has no anchor)_ |
-| `civ_water_tower` | 1 | 100 | _(module has no anchor)_ |
-| `civ_wire_drawn` | 1 | 100 | _(module has no anchor)_ |
-| `lnd_coach` | 1 | 200 | _(module has no anchor)_ |
-| `lnd_hobby_horse` | 1 | 40 | _(module has no anchor)_ |
-| `lnd_horseshoe_nailed` | 1 | 40 | _(module has no anchor)_ |
-| `lnd_spring_leaf` | 1 | 80 | _(module has no anchor)_ |
-| `lnd_stirrup` | 1 | 60 | _(module has no anchor)_ |
-| `lnd_wheelbarrow` | 1 | 30 | _(module has no anchor)_ |
-| `lnd_whippletree` | 1 | 50 | _(module has no anchor)_ |
-| `sea_bowsprit` | 1 | 60 | _(module has no anchor)_ |
-| `sea_carvel_planking` | 1 | 200 | _(module has no anchor)_ |
-| `sea_clinker_planking` | 1 | 100 | _(module has no anchor)_ |
-| `sea_dry_compass_card` | 1 | 60 | _(module has no anchor)_ |
-| `sea_fore_aft_rig` | 1 | 100 | _(module has no anchor)_ |
-| `sea_jib` | 1 | 40 | _(module has no anchor)_ |
-| `sea_lateen_sail` | 1 | 80 | _(module has no anchor)_ |
-| `sea_lodestone` | 1 | 20 | _(module has no anchor)_ |
-| `sea_log_line` | 1 | 30 | _(module has no anchor)_ |
-| `sea_multiple_masts` | 1 | 150 | _(module has no anchor)_ |
-| `sea_skeleton_first` | 1 | 250 | _(module has no anchor)_ |
-| `sea_sternpost_rudder` | 1 | 120 | _(module has no anchor)_ |
-| `sea_traverse_board` | 1 | 40 | _(module has no anchor)_ |
-| `air_aerial_photography` | 2 | 120 | _(module has no anchor)_ |
-| `air_aerial_reconnaissance` | 2 | 100 | _(module has no anchor)_ |
-| `air_aerodrome` | 2 | 100 | _(module has no anchor)_ |
-| `air_aerofoil_section` | 2 | 200 | _(module has no anchor)_ |
-| `air_aileron` | 2 | 140 | _(module has no anchor)_ |
-| `air_airspeed_indicator` | 2 | 100 | _(module has no anchor)_ |
-| `air_altimeter` | 2 | 120 | _(module has no anchor)_ |
-| `air_biplane` | 2 | 140 | _(module has no anchor)_ |
-| `air_cayley_forces` | 2 | 250 | _(module has no anchor)_ |
-| `air_elongated_envelope` | 2 | 120 | _(module has no anchor)_ |
-| `air_glider_simple` | 2 | 160 | _(module has no anchor)_ |
-| `air_hydrogen_generation_charcoal` | 2 | 100 | _(module has no anchor)_ |
-| `air_parachute` | 2 | 80 | _(module has no anchor)_ |
-| `air_pitot_tube` | 2 | 50 | _(module has no anchor)_ |
-| `air_propeller_wing` | 2 | 180 | _(module has no anchor)_ |
-| `air_three_axis_control` | 2 | 200 | _(module has no anchor)_ |
-| `air_wind_tunnel` | 2 | 150 | _(module has no anchor)_ |
-| `air_wing_warping` | 2 | 120 | _(module has no anchor)_ |
-| `civ_bridge_cast_iron` | 2 | 150 | _(module has no anchor)_ |
-| `civ_bridge_wrought_iron_truss` | 2 | 200 | _(module has no anchor)_ |
-| `civ_caisson` | 2 | 150 | _(module has no anchor)_ |
-| `civ_canal_pound_lock` | 2 | 150 | _(module has no anchor)_ |
-| `civ_dam_earth_fill` | 2 | 150 | _(module has no anchor)_ |
-| `civ_dam_gravity` | 2 | 200 | _(module has no anchor)_ |
-| `civ_dredging` | 2 | 120 | _(module has no anchor)_ |
-| `civ_harbour_dock` | 2 | 200 | _(module has no anchor)_ |
-| `civ_lightning_conductor` | 2 | 80 | _(module has no anchor)_ |
-| `civ_precise_levelling` | 2 | 120 | _(module has no anchor)_ |
-| `civ_pumping_station` | 2 | 150 | _(module has no anchor)_ |
-| `civ_sewer_separate` | 2 | 120 | _(module has no anchor)_ |
-| `civ_spillway` | 2 | 150 | _(module has no anchor)_ |
-| `civ_theodolite` | 2 | 150 | _(module has no anchor)_ |
-| `civ_town_planning` | 2 | 180 | _(module has no anchor)_ |
-| `civ_tunnel_rock_drill` | 2 | 180 | _(module has no anchor)_ |
-| `hot_air_balloon` | 2 | 400 | _(module has no anchor)_ |
-| `lnd_ball_bearing` | 2 | 80 | _(module has no anchor)_ |
-| `lnd_boneshaker` | 2 | 80 | _(module has no anchor)_ |
-| `lnd_chain_drive_bicycle` | 2 | 100 | _(module has no anchor)_ |
-| `lnd_coal_tar_gas` | 2 | 80 | _(module has no anchor)_ |
-| `lnd_fishplate` | 2 | 50 | _(module has no anchor)_ |
-| `lnd_flanged_wheel` | 2 | 80 | _(module has no anchor)_ |
-| `lnd_gas_engine_atmospheric` | 2 | 250 | _(module has no anchor)_ |
-| `lnd_iron_edge_rail` | 2 | 60 | _(module has no anchor)_ |
-| `lnd_macadam` | 2 | 80 | _(module has no anchor)_ |
-| `lnd_penny_farthing` | 2 | 100 | _(module has no anchor)_ |
-| `lnd_point_switch` | 2 | 120 | _(module has no anchor)_ |
-| `lnd_signal_railway` | 2 | 80 | _(module has no anchor)_ |
-| `lnd_stagecoach` | 2 | 250 | _(module has no anchor)_ |
-| `lnd_turnpike` | 2 | 50 | _(module has no anchor)_ |
-| `sea_astronomical_tables` | 2 | 400 | _(module has no anchor)_ |
-| `sea_backstaff` | 2 | 100 | _(module has no anchor)_ |
-| `sea_buoy` | 2 | 60 | _(module has no anchor)_ |
-| `sea_charts_navigation` | 2 | 200 | _(module has no anchor)_ |
-| `sea_cross_staff` | 2 | 80 | _(module has no anchor)_ |
-| `sea_diving_bell` | 2 | 120 | _(module has no anchor)_ |
-| `sea_drydock` | 2 | 300 | _(module has no anchor)_ |
-| `sea_lead_line_hydro` | 2 | 120 | _(module has no anchor)_ |
-| `sea_magnetic_compass` | 2 | 80 | _(module has no anchor)_ |
-| `sea_mercator_projection` | 2 | 180 | _(module has no anchor)_ |
-| `sea_sextant` | 2 | 150 | _(module has no anchor)_ |
-| `air_aerial_bombing` | 3 | 150 | _(module has no anchor)_ |
-| `air_autogyro` | 3 | 200 | _(module has no anchor)_ |
-| `air_coal_gas_generation` | 3 | 180 | _(module has no anchor)_ |
-| `air_dirigible_engine_mount` | 3 | 200 | _(module has no anchor)_ |
-| `air_flying_boat` | 3 | 220 | _(module has no anchor)_ |
-| `air_hydrogen_danger` | 3 | 100 | _(module has no anchor)_ |
-| `air_light_petrol_engine` | 3 | 250 | _(module has no anchor)_ |
-| `air_power_to_weight` | 3 | 150 | _(module has no anchor)_ |
-| `air_powered_aeroplane` | 3 | 300 | _(module has no anchor)_ |
-| `air_radial_engine` | 3 | 200 | _(module has no anchor)_ |
-| `air_rotary_engine` | 3 | 220 | _(module has no anchor)_ |
-| `civ_bridge_suspension` | 3 | 300 | _(module has no anchor)_ |
-| `civ_building_code` | 3 | 200 | _(module has no anchor)_ |
-| `civ_caisson_compressed_air` | 3 | 200 | _(module has no anchor)_ |
-| `civ_dam_arch` | 3 | 250 | _(module has no anchor)_ |
-| `civ_elevator_otis` | 3 | 250 | _(module has no anchor)_ |
-| `civ_fireproofing` | 3 | 150 | _(module has no anchor)_ |
-| `civ_glass_plate` | 3 | 100 | _(module has no anchor)_ |
-| `civ_tunnel_shield` | 3 | 250 | _(module has no anchor)_ |
-| `civ_water_treatment` | 3 | 200 | _(module has no anchor)_ |
-| `lnd_air_brake` | 3 | 250 | _(module has no anchor)_ |
-| `lnd_block_system` | 3 | 150 | _(module has no anchor)_ |
-| `lnd_carburettor` | 3 | 120 | _(module has no anchor)_ |
-| `lnd_caterpillar_track` | 3 | 200 | _(module has no anchor)_ |
-| `lnd_differential` | 3 | 150 | _(module has no anchor)_ |
-| `lnd_gearbox_clutch` | 3 | 200 | _(module has no anchor)_ |
-| `lnd_magneto` | 3 | 150 | _(module has no anchor)_ |
-| `lnd_otto_cycle_four_stroke` | 3 | 350 | _(module has no anchor)_ |
-| `lnd_safety_bicycle` | 3 | 120 | _(module has no anchor)_ |
-| `lnd_spark_plug` | 3 | 100 | _(module has no anchor)_ |
-| `lnd_standard_gauge` | 3 | 200 | _(module has no anchor)_ |
-| `lnd_steam_locomotive` | 3 | 400 | _(module has no anchor)_ |
-| `lnd_steering_geometry` | 3 | 100 | _(module has no anchor)_ |
-| `lnd_superheater` | 3 | 200 | _(module has no anchor)_ |
-| `lnd_tarmacadam` | 3 | 100 | _(module has no anchor)_ |
-| `lnd_tender` | 3 | 120 | _(module has no anchor)_ |
-| `sea_canal_lock` | 3 | 250 | _(module has no anchor)_ |
-| `sea_compartmented_hull` | 3 | 150 | _(module has no anchor)_ |
-| `sea_copper_sheathing` | 3 | 180 | _(module has no anchor)_ |
-| `sea_diving_suit` | 3 | 180 | _(module has no anchor)_ |
-| `sea_dredging` | 3 | 200 | _(module has no anchor)_ |
-| `sea_iron_hull` | 3 | 250 | _(module has no anchor)_ |
-| `sea_lifeboat` | 3 | 100 | _(module has no anchor)_ |
-| `sea_lunar_distances` | 3 | 200 | _(module has no anchor)_ |
-| `sea_marine_chronometer` | 3 | 250 | _(module has no anchor)_ |
-| `sea_paddle_wheel` | 3 | 200 | _(module has no anchor)_ |
-| `sea_screw_propeller` | 3 | 220 | _(module has no anchor)_ |
-| `air_artificial_horizon` | 4 | 250 | _(module has no anchor)_ |
-| `air_helicopter_rotor` | 4 | 280 | _(module has no anchor)_ |
-| `air_jet_engine_concept` | 4 | 200 | _(module has no anchor)_ |
-| `air_monoplane_structure` | 4 | 200 | _(module has no anchor)_ |
-| `air_rigid_airship_frame` | 4 | 300 | _(module has no anchor)_ |
-| `air_stressed_skin_fuselage` | 4 | 180 | _(module has no anchor)_ |
-| `civ_box_girder` | 4 | 120 | _(module has no anchor)_ |
-| `civ_bridge_cantilever` | 4 | 250 | _(module has no anchor)_ |
-| `civ_bridge_steel_arch` | 4 | 250 | _(module has no anchor)_ |
-| `civ_curtain_wall` | 4 | 150 | _(module has no anchor)_ |
-| `civ_prestressed_concrete` | 4 | 180 | _(module has no anchor)_ |
-| `civ_reinforced_concrete` | 4 | 200 | _(module has no anchor)_ |
-| `civ_sewage_treatment` | 4 | 200 | _(module has no anchor)_ |
-| `civ_steel_frame` | 4 | 300 | _(module has no anchor)_ |
-| `civ_street_lighting` | 4 | 120 | _(module has no anchor)_ |
-| `lnd_assembly_line` | 4 | 600 | _(module has no anchor)_ |
-| `lnd_automobile` | 4 | 500 | _(module has no anchor)_ |
-| `lnd_diesel_cycle` | 4 | 400 | _(module has no anchor)_ |
-| `lnd_diesel_supply` | 4 | 180 | _(module has no anchor)_ |
-| `lnd_omnibus` | 4 | 250 | _(module has no anchor)_ |
-| `lnd_pneumatic_tyre` | 4 | 120 | _(module has no anchor)_ |
-| `lnd_tractor` | 4 | 350 | _(module has no anchor)_ |
-| `lnd_truck` | 4 | 300 | _(module has no anchor)_ |
-| `railway` | 4 | 800 | _(module has no anchor)_ |
-| `sea_boiler_water_tube` | 4 | 200 | _(module has no anchor)_ |
-| `sea_compound_expansion` | 4 | 300 | _(module has no anchor)_ |
-| `sea_diesel_engine` | 4 | 250 | _(module has no anchor)_ |
-| `sea_electromagnetic_wave_theory` | 4 | 200 | _(module has no anchor)_ |
-| `sea_fresnel_lens` | 4 | 180 | _(module has no anchor)_ |
-| `sea_fuel_oil_burner` | 4 | 140 | _(module has no anchor)_ |
-| `sea_steam_turbine` | 4 | 280 | _(module has no anchor)_ |
-| `sea_steel_hull` | 4 | 200 | _(module has no anchor)_ |
-| `sea_submarine` | 4 | 300 | _(module has no anchor)_ |
-| `sea_submarine_cable` | 4 | 200 | _(module has no anchor)_ |
-| `sea_torpedo` | 4 | 180 | _(module has no anchor)_ |
-| `air_jet_engine_build` | 5 | 350 | _(module has no anchor)_ |
-| `lnd_motor_road_network` | 5 | 250 | _(module has no anchor)_ |
-| `sea_sonar` | 5 | 250 | _(module has no anchor)_ |
+| `air_balloon_ballast` | 0 | 20.0 | _(module has no anchor)_ |
+| `air_compass_magnetic` | 0 | 30.0 | _(module has no anchor)_ |
+| `air_hot_air_balloon_ref` | 0 | 0.0 | _(module has no anchor)_ |
+| `air_kite_basic` | 0 | 20.0 | _(module has no anchor)_ |
+| `civ_amphitheatre` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_aqueduct_roman` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_arch_roman` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_brick_tile` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_chorobates` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_cofferdam` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_crane_treadwheel` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_dome_roman` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_glass_windows` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_insula` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_iron_wrought` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_marble_facing` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_road_paved` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_sewer_roman` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_surveying_groma` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_vault_barrel` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_axle_pivot_front` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_bridge` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_cursus_publicus` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_four_wheel_cart` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_harness_throat_girth` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_horse_saddle_basic` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_litter` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_milestone` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_mule_transport` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_ox_transport` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_paved_road_network` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_two_wheel_cart` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_tyre_iron` | 0 | 0.0 | _(module has no anchor)_ |
+| `lnd_wheel_spoked` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_anchor` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_coastal_pilotage` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_harbours_pozzolana` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_lead_sheathing` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_merchant_ships_large` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_monsoon_route` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_mortise_tenon` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_pharos_lighthouse` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_sounding_lines` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_spritsail` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_square_sail` | 0 | 0.0 | _(module has no anchor)_ |
+| `sea_steering_oars` | 0 | 0.0 | _(module has no anchor)_ |
+| `air_balloon_valve` | 1 | 60.0 | _(module has no anchor)_ |
+| `air_elevator_pitch` | 1 | 50.0 | _(module has no anchor)_ |
+| `air_goldbeater_skin` | 1 | 200.0 | _(module has no anchor)_ |
+| `air_observation_balloon_tethered` | 1 | 120.0 | _(module has no anchor)_ |
+| `air_rudder_vertical` | 1 | 60.0 | _(module has no anchor)_ |
+| `air_varnished_silk_envelope` | 1 | 150.0 | _(module has no anchor)_ |
+| `civ_bridge_timber_truss` | 1 | 200.0 | _(module has no anchor)_ |
+| `civ_foundation_piles` | 1 | 100.0 | _(module has no anchor)_ |
+| `civ_foundation_spread` | 1 | 80.0 | _(module has no anchor)_ |
+| `civ_gate_sluice` | 1 | 100.0 | _(module has no anchor)_ |
+| `civ_roof_king_post` | 1 | 80.0 | _(module has no anchor)_ |
+| `civ_roof_queen_post` | 1 | 100.0 | _(module has no anchor)_ |
+| `civ_street_paved` | 1 | 80.0 | _(module has no anchor)_ |
+| `civ_truss_triangulated` | 1 | 120.0 | _(module has no anchor)_ |
+| `civ_water_tower` | 1 | 100.0 | _(module has no anchor)_ |
+| `civ_wire_drawn` | 1 | 100.0 | _(module has no anchor)_ |
+| `lnd_coach` | 1 | 200.0 | _(module has no anchor)_ |
+| `lnd_hobby_horse` | 1 | 40.0 | _(module has no anchor)_ |
+| `lnd_horseshoe_nailed` | 1 | 40.0 | _(module has no anchor)_ |
+| `lnd_spring_leaf` | 1 | 80.0 | _(module has no anchor)_ |
+| `lnd_stirrup` | 1 | 60.0 | _(module has no anchor)_ |
+| `lnd_wheelbarrow` | 1 | 30.0 | _(module has no anchor)_ |
+| `lnd_whippletree` | 1 | 50.0 | _(module has no anchor)_ |
+| `sea_bowsprit` | 1 | 60.0 | _(module has no anchor)_ |
+| `sea_carvel_planking` | 1 | 200.0 | _(module has no anchor)_ |
+| `sea_clinker_planking` | 1 | 100.0 | _(module has no anchor)_ |
+| `sea_dry_compass_card` | 1 | 60.0 | _(module has no anchor)_ |
+| `sea_fore_aft_rig` | 1 | 100.0 | _(module has no anchor)_ |
+| `sea_jib` | 1 | 40.0 | _(module has no anchor)_ |
+| `sea_lateen_sail` | 1 | 80.0 | _(module has no anchor)_ |
+| `sea_lodestone` | 1 | 20.0 | _(module has no anchor)_ |
+| `sea_log_line` | 1 | 30.0 | _(module has no anchor)_ |
+| `sea_multiple_masts` | 1 | 150.0 | _(module has no anchor)_ |
+| `sea_skeleton_first` | 1 | 250.0 | _(module has no anchor)_ |
+| `sea_sternpost_rudder` | 1 | 120.0 | _(module has no anchor)_ |
+| `sea_traverse_board` | 1 | 40.0 | _(module has no anchor)_ |
+| `air_aerial_photography` | 2 | 120.0 | _(module has no anchor)_ |
+| `air_aerial_reconnaissance` | 2 | 100.0 | _(module has no anchor)_ |
+| `air_aerodrome` | 2 | 100.0 | _(module has no anchor)_ |
+| `air_aerofoil_section` | 2 | 200.0 | _(module has no anchor)_ |
+| `air_aileron` | 2 | 140.0 | _(module has no anchor)_ |
+| `air_airspeed_indicator` | 2 | 100.0 | _(module has no anchor)_ |
+| `air_altimeter` | 2 | 120.0 | _(module has no anchor)_ |
+| `air_biplane` | 2 | 140.0 | _(module has no anchor)_ |
+| `air_cayley_forces` | 2 | 250.0 | _(module has no anchor)_ |
+| `air_elongated_envelope` | 2 | 120.0 | _(module has no anchor)_ |
+| `air_glider_simple` | 2 | 160.0 | _(module has no anchor)_ |
+| `air_hydrogen_generation_charcoal` | 2 | 100.0 | _(module has no anchor)_ |
+| `air_parachute` | 2 | 80.0 | _(module has no anchor)_ |
+| `air_pitot_tube` | 2 | 50.0 | _(module has no anchor)_ |
+| `air_propeller_wing` | 2 | 180.0 | _(module has no anchor)_ |
+| `air_three_axis_control` | 2 | 200.0 | _(module has no anchor)_ |
+| `air_wind_tunnel` | 2 | 150.0 | _(module has no anchor)_ |
+| `air_wing_warping` | 2 | 120.0 | _(module has no anchor)_ |
+| `civ_bridge_cast_iron` | 2 | 150.0 | _(module has no anchor)_ |
+| `civ_bridge_wrought_iron_truss` | 2 | 200.0 | _(module has no anchor)_ |
+| `civ_caisson` | 2 | 150.0 | _(module has no anchor)_ |
+| `civ_canal_pound_lock` | 2 | 150.0 | _(module has no anchor)_ |
+| `civ_dam_earth_fill` | 2 | 150.0 | _(module has no anchor)_ |
+| `civ_dam_gravity` | 2 | 200.0 | _(module has no anchor)_ |
+| `civ_dredging` | 2 | 120.0 | _(module has no anchor)_ |
+| `civ_harbour_dock` | 2 | 200.0 | _(module has no anchor)_ |
+| `civ_lightning_conductor` | 2 | 80.0 | _(module has no anchor)_ |
+| `civ_precise_levelling` | 2 | 120.0 | _(module has no anchor)_ |
+| `civ_pumping_station` | 2 | 150.0 | _(module has no anchor)_ |
+| `civ_sewer_separate` | 2 | 120.0 | _(module has no anchor)_ |
+| `civ_spillway` | 2 | 150.0 | _(module has no anchor)_ |
+| `civ_theodolite` | 2 | 150.0 | _(module has no anchor)_ |
+| `civ_town_planning` | 2 | 180.0 | _(module has no anchor)_ |
+| `civ_tunnel_rock_drill` | 2 | 180.0 | _(module has no anchor)_ |
+| `hot_air_balloon` | 2 | 400.0 | _(module has no anchor)_ |
+| `lnd_ball_bearing` | 2 | 80.0 | _(module has no anchor)_ |
+| `lnd_boneshaker` | 2 | 80.0 | _(module has no anchor)_ |
+| `lnd_chain_drive_bicycle` | 2 | 100.0 | _(module has no anchor)_ |
+| `lnd_coal_tar_gas` | 2 | 80.0 | _(module has no anchor)_ |
+| `lnd_fishplate` | 2 | 50.0 | _(module has no anchor)_ |
+| `lnd_flanged_wheel` | 2 | 80.0 | _(module has no anchor)_ |
+| `lnd_gas_engine_atmospheric` | 2 | 250.0 | _(module has no anchor)_ |
+| `lnd_iron_edge_rail` | 2 | 60.0 | _(module has no anchor)_ |
+| `lnd_macadam` | 2 | 80.0 | _(module has no anchor)_ |
+| `lnd_penny_farthing` | 2 | 100.0 | _(module has no anchor)_ |
+| `lnd_point_switch` | 2 | 120.0 | _(module has no anchor)_ |
+| `lnd_signal_railway` | 2 | 80.0 | _(module has no anchor)_ |
+| `lnd_stagecoach` | 2 | 250.0 | _(module has no anchor)_ |
+| `lnd_turnpike` | 2 | 50.0 | _(module has no anchor)_ |
+| `sea_astronomical_tables` | 2 | 400.0 | _(module has no anchor)_ |
+| `sea_backstaff` | 2 | 100.0 | _(module has no anchor)_ |
+| `sea_buoy` | 2 | 60.0 | _(module has no anchor)_ |
+| `sea_charts_navigation` | 2 | 200.0 | _(module has no anchor)_ |
+| `sea_cross_staff` | 2 | 80.0 | _(module has no anchor)_ |
+| `sea_diving_bell` | 2 | 120.0 | _(module has no anchor)_ |
+| `sea_drydock` | 2 | 300.0 | _(module has no anchor)_ |
+| `sea_lead_line_hydro` | 2 | 120.0 | _(module has no anchor)_ |
+| `sea_magnetic_compass` | 2 | 80.0 | _(module has no anchor)_ |
+| `sea_mercator_projection` | 2 | 180.0 | _(module has no anchor)_ |
+| `sea_sextant` | 2 | 150.0 | _(module has no anchor)_ |
+| `air_aerial_bombing` | 3 | 150.0 | _(module has no anchor)_ |
+| `air_autogyro` | 3 | 200.0 | _(module has no anchor)_ |
+| `air_coal_gas_generation` | 3 | 180.0 | _(module has no anchor)_ |
+| `air_dirigible_engine_mount` | 3 | 200.0 | _(module has no anchor)_ |
+| `air_flying_boat` | 3 | 220.0 | _(module has no anchor)_ |
+| `air_hydrogen_danger` | 3 | 100.0 | _(module has no anchor)_ |
+| `air_light_petrol_engine` | 3 | 250.0 | _(module has no anchor)_ |
+| `air_power_to_weight` | 3 | 150.0 | _(module has no anchor)_ |
+| `air_powered_aeroplane` | 3 | 300.0 | _(module has no anchor)_ |
+| `air_radial_engine` | 3 | 200.0 | _(module has no anchor)_ |
+| `air_rotary_engine` | 3 | 220.0 | _(module has no anchor)_ |
+| `civ_bridge_suspension` | 3 | 300.0 | _(module has no anchor)_ |
+| `civ_building_code` | 3 | 200.0 | _(module has no anchor)_ |
+| `civ_caisson_compressed_air` | 3 | 200.0 | _(module has no anchor)_ |
+| `civ_dam_arch` | 3 | 250.0 | _(module has no anchor)_ |
+| `civ_elevator_otis` | 3 | 250.0 | _(module has no anchor)_ |
+| `civ_fireproofing` | 3 | 150.0 | _(module has no anchor)_ |
+| `civ_glass_plate` | 3 | 100.0 | _(module has no anchor)_ |
+| `civ_tunnel_shield` | 3 | 250.0 | _(module has no anchor)_ |
+| `civ_water_treatment` | 3 | 200.0 | _(module has no anchor)_ |
+| `lnd_air_brake` | 3 | 250.0 | _(module has no anchor)_ |
+| `lnd_block_system` | 3 | 150.0 | _(module has no anchor)_ |
+| `lnd_carburettor` | 3 | 120.0 | _(module has no anchor)_ |
+| `lnd_caterpillar_track` | 3 | 200.0 | _(module has no anchor)_ |
+| `lnd_differential` | 3 | 150.0 | _(module has no anchor)_ |
+| `lnd_gearbox_clutch` | 3 | 200.0 | _(module has no anchor)_ |
+| `lnd_magneto` | 3 | 150.0 | _(module has no anchor)_ |
+| `lnd_otto_cycle_four_stroke` | 3 | 350.0 | _(module has no anchor)_ |
+| `lnd_safety_bicycle` | 3 | 120.0 | _(module has no anchor)_ |
+| `lnd_spark_plug` | 3 | 100.0 | _(module has no anchor)_ |
+| `lnd_standard_gauge` | 3 | 200.0 | _(module has no anchor)_ |
+| `lnd_steam_locomotive` | 3 | 400.0 | _(module has no anchor)_ |
+| `lnd_steering_geometry` | 3 | 100.0 | _(module has no anchor)_ |
+| `lnd_superheater` | 3 | 200.0 | _(module has no anchor)_ |
+| `lnd_tarmacadam` | 3 | 100.0 | _(module has no anchor)_ |
+| `lnd_tender` | 3 | 120.0 | _(module has no anchor)_ |
+| `sea_canal_lock` | 3 | 250.0 | _(module has no anchor)_ |
+| `sea_compartmented_hull` | 3 | 150.0 | _(module has no anchor)_ |
+| `sea_copper_sheathing` | 3 | 180.0 | _(module has no anchor)_ |
+| `sea_diving_suit` | 3 | 180.0 | _(module has no anchor)_ |
+| `sea_dredging` | 3 | 200.0 | _(module has no anchor)_ |
+| `sea_iron_hull` | 3 | 250.0 | _(module has no anchor)_ |
+| `sea_lifeboat` | 3 | 100.0 | _(module has no anchor)_ |
+| `sea_lunar_distances` | 3 | 200.0 | _(module has no anchor)_ |
+| `sea_marine_chronometer` | 3 | 250.0 | _(module has no anchor)_ |
+| `sea_paddle_wheel` | 3 | 200.0 | _(module has no anchor)_ |
+| `sea_screw_propeller` | 3 | 220.0 | _(module has no anchor)_ |
+| `air_artificial_horizon` | 4 | 250.0 | _(module has no anchor)_ |
+| `air_helicopter_rotor` | 4 | 280.0 | _(module has no anchor)_ |
+| `air_jet_engine_concept` | 4 | 200.0 | _(module has no anchor)_ |
+| `air_monoplane_structure` | 4 | 200.0 | _(module has no anchor)_ |
+| `air_rigid_airship_frame` | 4 | 300.0 | _(module has no anchor)_ |
+| `air_stressed_skin_fuselage` | 4 | 180.0 | _(module has no anchor)_ |
+| `civ_box_girder` | 4 | 120.0 | _(module has no anchor)_ |
+| `civ_bridge_cantilever` | 4 | 250.0 | _(module has no anchor)_ |
+| `civ_bridge_steel_arch` | 4 | 250.0 | _(module has no anchor)_ |
+| `civ_curtain_wall` | 4 | 150.0 | _(module has no anchor)_ |
+| `civ_prestressed_concrete` | 4 | 180.0 | _(module has no anchor)_ |
+| `civ_reinforced_concrete` | 4 | 200.0 | _(module has no anchor)_ |
+| `civ_sewage_treatment` | 4 | 200.0 | _(module has no anchor)_ |
+| `civ_steel_frame` | 4 | 300.0 | _(module has no anchor)_ |
+| `civ_street_lighting` | 4 | 120.0 | _(module has no anchor)_ |
+| `lnd_assembly_line` | 4 | 600.0 | _(module has no anchor)_ |
+| `lnd_automobile` | 4 | 500.0 | _(module has no anchor)_ |
+| `lnd_diesel_cycle` | 4 | 400.0 | _(module has no anchor)_ |
+| `lnd_diesel_supply` | 4 | 180.0 | _(module has no anchor)_ |
+| `lnd_omnibus` | 4 | 250.0 | _(module has no anchor)_ |
+| `lnd_pneumatic_tyre` | 4 | 120.0 | _(module has no anchor)_ |
+| `lnd_tractor` | 4 | 350.0 | _(module has no anchor)_ |
+| `lnd_truck` | 4 | 300.0 | _(module has no anchor)_ |
+| `railway` | 4 | 800.0 | _(module has no anchor)_ |
+| `sea_boiler_water_tube` | 4 | 200.0 | _(module has no anchor)_ |
+| `sea_compound_expansion` | 4 | 300.0 | _(module has no anchor)_ |
+| `sea_diesel_engine` | 4 | 250.0 | _(module has no anchor)_ |
+| `sea_electromagnetic_wave_theory` | 4 | 200.0 | _(module has no anchor)_ |
+| `sea_fresnel_lens` | 4 | 180.0 | _(module has no anchor)_ |
+| `sea_fuel_oil_burner` | 4 | 140.0 | _(module has no anchor)_ |
+| `sea_steam_turbine` | 4 | 280.0 | _(module has no anchor)_ |
+| `sea_steel_hull` | 4 | 200.0 | _(module has no anchor)_ |
+| `sea_submarine` | 4 | 300.0 | _(module has no anchor)_ |
+| `sea_submarine_cable` | 4 | 200.0 | _(module has no anchor)_ |
+| `sea_torpedo` | 4 | 180.0 | _(module has no anchor)_ |
+| `air_jet_engine_build` | 5 | 350.0 | _(module has no anchor)_ |
+| `lnd_motor_road_network` | 5 | 250.0 | _(module has no anchor)_ |
+| `sea_sonar` | 5 | 250.0 | _(module has no anchor)_ |
 
 ### 90_textiles.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `tex_cotton_trade` | 0 | 0 | _(module has no anchor)_ |
-| `tex_drop_spindle` | 0 | 0 | _(module has no anchor)_ |
-| `tex_dye_madder` | 0 | 0 | _(module has no anchor)_ |
-| `tex_dye_murex` | 0 | 0 | _(module has no anchor)_ |
-| `tex_dye_woad` | 0 | 0 | _(module has no anchor)_ |
-| `tex_felting` | 0 | 0 | _(module has no anchor)_ |
-| `tex_fulling` | 0 | 0 | _(module has no anchor)_ |
-| `tex_linen` | 0 | 0 | _(module has no anchor)_ |
-| `tex_sailcloth` | 0 | 0 | _(module has no anchor)_ |
-| `tex_silk_trade` | 0 | 0 | _(module has no anchor)_ |
-| `tex_two_beam_loom` | 0 | 0 | _(module has no anchor)_ |
-| `tex_warp_weighted_loom` | 0 | 0 | _(module has no anchor)_ |
-| `tex_wool` | 0 | 0 | _(module has no anchor)_ |
-| `tex_canvas` | 1 | 40 | _(module has no anchor)_ |
-| `tex_carding` | 1 | 60 | _(module has no anchor)_ |
-| `tex_combing` | 1 | 50 | _(module has no anchor)_ |
-| `tex_fitted_garment` | 1 | 50 | _(module has no anchor)_ |
-| `tex_hand_ginning` | 1 | 30 | _(module has no anchor)_ |
-| `tex_horizontal_loom` | 1 | 80 | _(module has no anchor)_ |
-| `tex_indigo` | 1 | 60 | _(module has no anchor)_ |
-| `tex_mordanting` | 1 | 40 | _(module has no anchor)_ |
-| `tex_rope_walk` | 1 | 70 | _(module has no anchor)_ |
-| `tex_shoddy` | 1 | 40 | _(module has no anchor)_ |
-| `tex_spinning_wheel` | 1 | 100 | _(module has no anchor)_ |
-| `tex_treadle_loom` | 1 | 90 | _(module has no anchor)_ |
-| `tex_buttons_buttonholes` | 2 | 50 | _(module has no anchor)_ |
-| `tex_calico_printing` | 2 | 140 | _(module has no anchor)_ |
-| `tex_cotton_gin` | 2 | 80 | _(module has no anchor)_ |
-| `tex_field_bleaching` | 2 | 50 | _(module has no anchor)_ |
-| `tex_flying_shuttle` | 2 | 120 | _(module has no anchor)_ |
-| `tex_fulling_water` | 2 | 120 | _(module has no anchor)_ |
-| `tex_hosiery` | 2 | 70 | _(module has no anchor)_ |
-| `tex_knitting_frame` | 2 | 150 | _(module has no anchor)_ |
-| `tex_pattern_cutting` | 2 | 80 | _(module has no anchor)_ |
-| `tex_power_loom` | 2 | 250 | _(module has no anchor)_ |
-| `tex_sewing_machine` | 2 | 160 | _(module has no anchor)_ |
-| `tex_spinning_jenny` | 2 | 100 | _(module has no anchor)_ |
-| `tex_tape_measure` | 2 | 40 | _(module has no anchor)_ |
-| `tex_textile_factory` | 2 | 300 | _(module has no anchor)_ |
-| `tex_vegetable_tanning` | 2 | 100 | _(module has no anchor)_ |
-| `tex_water_frame` | 2 | 280 | _(module has no anchor)_ |
-| `tex_wool_combing_machinery` | 2 | 180 | _(module has no anchor)_ |
-| `tex_jacquard_loom` | 3 | 250 | _(module has no anchor)_ |
-| `tex_mercerisation` | 3 | 100 | _(module has no anchor)_ |
-| `tex_roller_printing` | 3 | 180 | _(module has no anchor)_ |
-| `tex_spinning_mule` | 3 | 200 | _(module has no anchor)_ |
-| `tex_chlorine_bleaching` | 4 | 120 | _(module has no anchor)_ |
-| `tex_chrome_tanning` | 4 | 140 | _(module has no anchor)_ |
-| `tex_rayon_nitro` | 4 | 180 | _(module has no anchor)_ |
-| `tex_rayon_viscose` | 4 | 200 | _(module has no anchor)_ |
-| `tex_synthetic_dyes` | 4 | 80 | _(module has no anchor)_ |
-| `tex_nylon` | 5 | 250 | _(module has no anchor)_ |
+| `tex_cotton_trade` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_drop_spindle` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_dye_madder` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_dye_murex` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_dye_woad` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_felting` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_fulling` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_linen` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_sailcloth` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_silk_trade` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_two_beam_loom` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_warp_weighted_loom` | 0 | 0.0 | _(module has no anchor)_ |
+| `tex_wool` | 0 | 0.0 | _(module has no anchor)_ |
+| `tx2_bleaching_sun` | 0 | 30.0 | _(module has no anchor)_ |
+| `tx2_bottle` | 0 | 60.0 | _(module has no anchor)_ |
+| `tx2_button_bone` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_button_horn` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_flax_fibre` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_hackling` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_heddle` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_hemp_fibre` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_needle` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_pin` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_retting` | 0 | 30.0 | _(module has no anchor)_ |
+| `tx2_rope_lay` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_scutching` | 0 | 50.0 | _(module has no anchor)_ |
+| `tx2_shaft` | 0 | 50.0 | _(module has no anchor)_ |
+| `tx2_shed` | 0 | 30.0 | _(module has no anchor)_ |
+| `tx2_silk_fibre` | 0 | 40.0 | _(module has no anchor)_ |
+| `tx2_vegetable_tanning` | 0 | 50.0 | _(module has no anchor)_ |
+| `tx2_wool_fibre` | 0 | 40.0 | _(module has no anchor)_ |
+| `tex_canvas` | 1 | 40.0 | _(module has no anchor)_ |
+| `tex_carding` | 1 | 60.0 | _(module has no anchor)_ |
+| `tex_combing` | 1 | 50.0 | _(module has no anchor)_ |
+| `tex_fitted_garment` | 1 | 50.0 | _(module has no anchor)_ |
+| `tex_hand_ginning` | 1 | 30.0 | _(module has no anchor)_ |
+| `tex_horizontal_loom` | 1 | 80.0 | _(module has no anchor)_ |
+| `tex_indigo` | 1 | 60.0 | _(module has no anchor)_ |
+| `tex_mordanting` | 1 | 40.0 | _(module has no anchor)_ |
+| `tex_rope_walk` | 1 | 70.0 | _(module has no anchor)_ |
+| `tex_shoddy` | 1 | 40.0 | _(module has no anchor)_ |
+| `tex_spinning_wheel` | 1 | 100.0 | _(module has no anchor)_ |
+| `tex_treadle_loom` | 1 | 90.0 | _(module has no anchor)_ |
+| `tx2_alum_tanning` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_beam` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_board_game` | 1 | 100.0 | _(module has no anchor)_ |
+| `tx2_bobbin_and_flyer` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_button_shell` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_cap_frame` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_cardboard_box` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_carding` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_cashmere` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_comb` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_combing` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_cordage_paperboard` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_corset` | 1 | 100.0 | _(module has no anchor)_ |
+| `tx2_cotton_ginning` | 1 | 120.0 | _(module has no anchor)_ |
+| `tx2_count_standard` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_currying` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_cutting_table` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_desizing` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_doll` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_doubling_frame` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_drawing` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_drawing_pin` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_dyeing_fibre` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_dyeing_piece` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_dyeing_yarn` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_envelope_flap` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_envelope_gummed` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_eye_pointed_needle` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_flyer` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_friction_match` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_fulling` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_gilling` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_hook_and_eye` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_jute_fibre` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_let_off_motion` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_milling` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_mirror` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_mohair` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_paper_bag` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_paperclip` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_pattern_grading` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_pencil` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_playing_card` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_postcard` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_printing_block` | 1 | 100.0 | _(module has no anchor)_ |
+| `tx2_ramie_fibre` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_resist_dyeing` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_roving_frame` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_scouring` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_screw_cap` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_selvedge` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_sericulture` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_shuttle` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_sizing_systems` | 1 | 100.0 | _(module has no anchor)_ |
+| `tx2_sliver_preparation` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_spectacle_frame` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_splitting` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_take_up_motion` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_temple` | 1 | 40.0 | _(module has no anchor)_ |
+| `tx2_tin_can` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_toothbrush` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_twist_insertion` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_warp_sizing` | 1 | 50.0 | _(module has no anchor)_ |
+| `tx2_warping_mill` | 1 | 60.0 | _(module has no anchor)_ |
+| `tx2_watch_case` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_wild_silk` | 1 | 70.0 | _(module has no anchor)_ |
+| `tx2_worsted` | 1 | 60.0 | _(module has no anchor)_ |
+| `tex_buttons_buttonholes` | 2 | 50.0 | _(module has no anchor)_ |
+| `tex_calico_printing` | 2 | 140.0 | _(module has no anchor)_ |
+| `tex_cotton_gin` | 2 | 80.0 | _(module has no anchor)_ |
+| `tex_field_bleaching` | 2 | 50.0 | _(module has no anchor)_ |
+| `tex_flying_shuttle` | 2 | 120.0 | _(module has no anchor)_ |
+| `tex_fulling_water` | 2 | 120.0 | _(module has no anchor)_ |
+| `tex_hosiery` | 2 | 70.0 | _(module has no anchor)_ |
+| `tex_knitting_frame` | 2 | 150.0 | _(module has no anchor)_ |
+| `tex_pattern_cutting` | 2 | 80.0 | _(module has no anchor)_ |
+| `tex_power_loom` | 2 | 250.0 | _(module has no anchor)_ |
+| `tex_sewing_machine` | 2 | 160.0 | _(module has no anchor)_ |
+| `tex_spinning_jenny` | 2 | 100.0 | _(module has no anchor)_ |
+| `tex_tape_measure` | 2 | 40.0 | _(module has no anchor)_ |
+| `tex_textile_factory` | 2 | 300.0 | _(module has no anchor)_ |
+| `tex_vegetable_tanning` | 2 | 100.0 | _(module has no anchor)_ |
+| `tex_water_frame` | 2 | 280.0 | _(module has no anchor)_ |
+| `tex_wool_combing_machinery` | 2 | 180.0 | _(module has no anchor)_ |
+| `tx2_asbestos_cloth` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_band_knife` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_brassiere` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_buttonhole_machine` | 2 | 120.0 | _(module has no anchor)_ |
+| `tx2_calendering` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_chain_stitch` | 2 | 90.0 | _(module has no anchor)_ |
+| `tx2_circular_knitting` | 2 | 120.0 | _(module has no anchor)_ |
+| `tx2_clockwork_toy` | 2 | 110.0 | _(module has no anchor)_ |
+| `tx2_corrugated_box` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_cropping` | 2 | 90.0 | _(module has no anchor)_ |
+| `tx2_crown_cork` | 2 | 90.0 | _(module has no anchor)_ |
+| `tx2_discharge_printing` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_dobby` | 2 | 140.0 | _(module has no anchor)_ |
+| `tx2_dyeing_garment` | 2 | 90.0 | _(module has no anchor)_ |
+| `tx2_embossing` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_eraser` | 2 | 70.0 | _(module has no anchor)_ |
+| `tx2_fountain_pen` | 2 | 110.0 | _(module has no anchor)_ |
+| `tx2_jacquard_cards` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_jacquard_head` | 2 | 200.0 | _(module has no anchor)_ |
+| `tx2_jigsaw_puzzle` | 2 | 90.0 | _(module has no anchor)_ |
+| `tx2_lasting_machine` | 2 | 120.0 | _(module has no anchor)_ |
+| `tx2_latch_needle` | 2 | 90.0 | _(module has no anchor)_ |
+| `tx2_lockstitch` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_mass_soap` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_mercerising` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_mule_jenny` | 2 | 160.0 | _(module has no anchor)_ |
+| `tx2_overlock_stitch` | 2 | 110.0 | _(module has no anchor)_ |
+| `tx2_paper_pattern` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_picking_mechanism` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_press_stud` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_printing_roller` | 2 | 160.0 | _(module has no anchor)_ |
+| `tx2_raising` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_razor_blade` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_ready_to_wear` | 2 | 120.0 | _(module has no anchor)_ |
+| `tx2_ring_frame` | 2 | 120.0 | _(module has no anchor)_ |
+| `tx2_ropemaking_machine` | 2 | 110.0 | _(module has no anchor)_ |
+| `tx2_safety_match` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_safety_razor` | 2 | 120.0 | _(module has no anchor)_ |
+| `tx2_sewing_machine_domestic` | 2 | 140.0 | _(module has no anchor)_ |
+| `tx2_sewing_machine_industrial` | 2 | 150.0 | _(module has no anchor)_ |
+| `tx2_shampoo` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_shearing` | 2 | 70.0 | _(module has no anchor)_ |
+| `tx2_shoemaking_mechanised` | 2 | 150.0 | _(module has no anchor)_ |
+| `tx2_singeing` | 2 | 60.0 | _(module has no anchor)_ |
+| `tx2_stapler` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_stocking_frame` | 2 | 140.0 | _(module has no anchor)_ |
+| `tx2_throstle_frame` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_tin_toy` | 2 | 90.0 | _(module has no anchor)_ |
+| `tx2_toothpaste_tube` | 2 | 100.0 | _(module has no anchor)_ |
+| `tx2_warp_knitting` | 2 | 130.0 | _(module has no anchor)_ |
+| `tx2_waterproofing` | 2 | 80.0 | _(module has no anchor)_ |
+| `tx2_zip_fastener` | 2 | 140.0 | _(module has no anchor)_ |
+| `tex_jacquard_loom` | 3 | 250.0 | _(module has no anchor)_ |
+| `tex_mercerisation` | 3 | 100.0 | _(module has no anchor)_ |
+| `tex_roller_printing` | 3 | 180.0 | _(module has no anchor)_ |
+| `tex_spinning_mule` | 3 | 200.0 | _(module has no anchor)_ |
+| `tx2_automatic_bobbin_changer` | 3 | 140.0 | _(module has no anchor)_ |
+| `tx2_automatic_loom` | 3 | 180.0 | _(module has no anchor)_ |
+| `tx2_ballpoint_pen` | 3 | 120.0 | _(module has no anchor)_ |
+| `tx2_bicycle_consumer` | 3 | 140.0 | _(module has no anchor)_ |
+| `tx2_bleaching_chlorine` | 3 | 80.0 | _(module has no anchor)_ |
+| `tx2_bleaching_peroxide` | 3 | 90.0 | _(module has no anchor)_ |
+| `tx2_button_plastic` | 3 | 70.0 | _(module has no anchor)_ |
+| `tx2_camera_consumer` | 3 | 130.0 | _(module has no anchor)_ |
+| `tx2_chrome_tanning` | 3 | 120.0 | _(module has no anchor)_ |
+| `tx2_elastic` | 3 | 90.0 | _(module has no anchor)_ |
+| `tx2_flameproofing` | 3 | 100.0 | _(module has no anchor)_ |
+| `tx2_glass_fibre` | 3 | 130.0 | _(module has no anchor)_ |
+| `tx2_gramophone` | 3 | 140.0 | _(module has no anchor)_ |
+| `tx2_mothproofing` | 3 | 90.0 | _(module has no anchor)_ |
+| `tx2_printing_screen` | 3 | 120.0 | _(module has no anchor)_ |
+| `tx2_rayon_cupro` | 3 | 150.0 | _(module has no anchor)_ |
+| `tx2_rayon_nitro` | 3 | 140.0 | _(module has no anchor)_ |
+| `tx2_rayon_viscose` | 3 | 160.0 | _(module has no anchor)_ |
+| `tx2_rubber_soles` | 3 | 100.0 | _(module has no anchor)_ |
+| `tx2_vacuum_flask` | 3 | 120.0 | _(module has no anchor)_ |
+| `tex_chlorine_bleaching` | 4 | 120.0 | _(module has no anchor)_ |
+| `tex_chrome_tanning` | 4 | 140.0 | _(module has no anchor)_ |
+| `tex_rayon_nitro` | 4 | 180.0 | _(module has no anchor)_ |
+| `tex_rayon_viscose` | 4 | 200.0 | _(module has no anchor)_ |
+| `tex_synthetic_dyes` | 4 | 80.0 | _(module has no anchor)_ |
+| `tx2_acrylic` | 4 | 170.0 | _(module has no anchor)_ |
+| `tx2_nylon_6_6` | 4 | 180.0 | _(module has no anchor)_ |
+| `tx2_permanent_press` | 4 | 120.0 | _(module has no anchor)_ |
+| `tx2_polyester` | 4 | 180.0 | _(module has no anchor)_ |
+| `tx2_radio_set` | 4 | 150.0 | _(module has no anchor)_ |
+| `tx2_rayon_acetate` | 4 | 140.0 | _(module has no anchor)_ |
+| `tex_nylon` | 5 | 250.0 | _(module has no anchor)_ |
 
 ### 91_household.md
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `hom_board_games` | 0 | 0 | _(module has no anchor)_ |
-| `hom_candle_beeswax` | 0 | 0 | _(module has no anchor)_ |
-| `hom_candle_tallow` | 0 | 0 | _(module has no anchor)_ |
-| `hom_cosmetics_roman` | 0 | 0 | _(module has no anchor)_ |
-| `hom_flush_latrine_simple` | 0 | 0 | _(module has no anchor)_ |
-| `hom_furniture_wooden` | 0 | 0 | _(module has no anchor)_ |
-| `hom_glass_windows` | 0 | 0 | _(module has no anchor)_ |
-| `hom_hypocaust` | 0 | 0 | _(module has no anchor)_ |
-| `hom_lead_plumbing` | 0 | 0 | _(module has no anchor)_ |
-| `hom_locks_keys` | 0 | 0 | _(module has no anchor)_ |
-| `hom_mirror_bronze_polished` | 0 | 0 | _(module has no anchor)_ |
-| `hom_musical_instruments` | 0 | 0 | _(module has no anchor)_ |
-| `hom_oil_lamp_simple` | 0 | 0 | _(module has no anchor)_ |
-| `hom_perfume_enfleurage` | 0 | 0 | _(module has no anchor)_ |
-| `hom_public_bath` | 0 | 0 | _(module has no anchor)_ |
-| `hom_button` | 1 | 40 | _(module has no anchor)_ |
-| `hom_eraser_breadcrumb` | 1 | 30 | _(module has no anchor)_ |
-| `hom_fireplace_chimney` | 1 | 120 | _(module has no anchor)_ |
-| `hom_flush_toilet_trap` | 1 | 80 | _(module has no anchor)_ |
-| `hom_jigsaw_puzzle` | 1 | 100 | _(module has no anchor)_ |
-| `hom_latrine_water_trap` | 1 | 60 | _(module has no anchor)_ |
-| `hom_matches_friction` | 1 | 60 | _(module has no anchor)_ |
-| `hom_mirror_silvered_glass` | 1 | 90 | _(module has no anchor)_ |
-| `hom_pencil` | 1 | 70 | _(module has no anchor)_ |
-| `hom_playing_cards_printed` | 1 | 60 | _(module has no anchor)_ |
-| `hom_punkah_ceiling` | 1 | 50 | _(module has no anchor)_ |
-| `hom_safety_pin` | 1 | 40 | _(module has no anchor)_ |
-| `hom_soap_hard` | 1 | 80 | _(module has no anchor)_ |
-| `hom_spectacles` | 1 | 90 | _(module has no anchor)_ |
-| `hom_toothbrush` | 1 | 50 | _(module has no anchor)_ |
-| `hom_umbrella` | 1 | 80 | _(module has no anchor)_ |
-| `hom_kitchen_range` | 2 | 130 | _(module has no anchor)_ |
-| `hom_lamp_argand` | 2 | 100 | _(module has no anchor)_ |
-| `hom_lamp_kerosene` | 2 | 90 | _(module has no anchor)_ |
-| `hom_mangle_wringer` | 2 | 100 | _(module has no anchor)_ |
-| `hom_mechanical_clock_home` | 2 | 180 | _(module has no anchor)_ |
-| `hom_metronome` | 2 | 110 | _(module has no anchor)_ |
-| `hom_perfume_distilled` | 2 | 140 | _(module has no anchor)_ |
-| `hom_piano` | 2 | 250 | _(module has no anchor)_ |
-| `hom_pocket_watch` | 2 | 200 | _(module has no anchor)_ |
-| `hom_pressure_cooker` | 2 | 150 | _(module has no anchor)_ |
-| `hom_printed_books` | 2 | 160 | _(module has no anchor)_ |
-| `hom_sewing_machine_hand` | 2 | 180 | _(module has no anchor)_ |
-| `hom_sprung_mattress` | 2 | 120 | _(module has no anchor)_ |
-| `hom_stove_enclosed` | 2 | 100 | _(module has no anchor)_ |
-| `hom_toys_dolls` | 2 | 60 | _(module has no anchor)_ |
-| `hom_washing_machine_hand` | 2 | 140 | _(module has no anchor)_ |
-| `hom_attar_roses` | 3 | 150 | _(module has no anchor)_ |
-| `hom_bath_piped_hot_water` | 3 | 140 | _(module has no anchor)_ |
-| `hom_carpet_sweeper` | 3 | 100 | _(module has no anchor)_ |
-| `hom_deodorant` | 3 | 70 | _(module has no anchor)_ |
-| `hom_doll_fashion` | 3 | 110 | _(module has no anchor)_ |
-| `hom_double_glazing` | 3 | 120 | _(module has no anchor)_ |
-| `hom_fountain_pen` | 3 | 130 | _(module has no anchor)_ |
-| `hom_gas_lamp` | 3 | 140 | _(module has no anchor)_ |
-| `hom_refrigeration_mechanical` | 3 | 200 | _(module has no anchor)_ |
-| `hom_safety_razor` | 3 | 110 | _(module has no anchor)_ |
-| `hom_sewer_stormwater_separation` | 3 | 180 | _(module has no anchor)_ |
-| `hom_shampoo_soap_based` | 3 | 80 | _(module has no anchor)_ |
-| `hom_toothpaste_commercial` | 3 | 90 | _(module has no anchor)_ |
-| `hom_vacuum_flask` | 3 | 120 | _(module has no anchor)_ |
-| `hom_zip_fastener` | 3 | 180 | _(module has no anchor)_ |
-| `hom_cosmetics_modern_warning` | 4 | 100 | _(module has no anchor)_ |
-| `hom_dishwasher` | 4 | 200 | _(module has no anchor)_ |
-| `hom_electric_fan` | 4 | 100 | _(module has no anchor)_ |
-| `hom_electric_lighting` | 4 | 150 | _(module has no anchor)_ |
-| `hom_heating_hot_water_radiator` | 4 | 180 | _(module has no anchor)_ |
-| `hom_refrigerator_home_electric` | 4 | 200 | _(module has no anchor)_ |
-| `hom_vacuum_cleaner` | 4 | 140 | _(module has no anchor)_ |
-| `hom_washing_machine_electric` | 4 | 160 | _(module has no anchor)_ |
+| `hom_board_games` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_candle_beeswax` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_candle_tallow` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_cosmetics_roman` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_flush_latrine_simple` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_furniture_wooden` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_glass_windows` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_hypocaust` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_lead_plumbing` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_locks_keys` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_mirror_bronze_polished` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_musical_instruments` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_oil_lamp_simple` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_perfume_enfleurage` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_public_bath` | 0 | 0.0 | _(module has no anchor)_ |
+| `hom_button` | 1 | 40.0 | _(module has no anchor)_ |
+| `hom_eraser_breadcrumb` | 1 | 30.0 | _(module has no anchor)_ |
+| `hom_fireplace_chimney` | 1 | 120.0 | _(module has no anchor)_ |
+| `hom_flush_toilet_trap` | 1 | 80.0 | _(module has no anchor)_ |
+| `hom_jigsaw_puzzle` | 1 | 100.0 | _(module has no anchor)_ |
+| `hom_latrine_water_trap` | 1 | 60.0 | _(module has no anchor)_ |
+| `hom_matches_friction` | 1 | 60.0 | _(module has no anchor)_ |
+| `hom_mirror_silvered_glass` | 1 | 90.0 | _(module has no anchor)_ |
+| `hom_pencil` | 1 | 70.0 | _(module has no anchor)_ |
+| `hom_playing_cards_printed` | 1 | 60.0 | _(module has no anchor)_ |
+| `hom_punkah_ceiling` | 1 | 50.0 | _(module has no anchor)_ |
+| `hom_safety_pin` | 1 | 40.0 | _(module has no anchor)_ |
+| `hom_soap_hard` | 1 | 80.0 | _(module has no anchor)_ |
+| `hom_spectacles` | 1 | 90.0 | _(module has no anchor)_ |
+| `hom_toothbrush` | 1 | 50.0 | _(module has no anchor)_ |
+| `hom_umbrella` | 1 | 80.0 | _(module has no anchor)_ |
+| `hom_kitchen_range` | 2 | 130.0 | _(module has no anchor)_ |
+| `hom_lamp_argand` | 2 | 100.0 | _(module has no anchor)_ |
+| `hom_lamp_kerosene` | 2 | 90.0 | _(module has no anchor)_ |
+| `hom_mangle_wringer` | 2 | 100.0 | _(module has no anchor)_ |
+| `hom_mechanical_clock_home` | 2 | 180.0 | _(module has no anchor)_ |
+| `hom_metronome` | 2 | 110.0 | _(module has no anchor)_ |
+| `hom_perfume_distilled` | 2 | 140.0 | _(module has no anchor)_ |
+| `hom_piano` | 2 | 250.0 | _(module has no anchor)_ |
+| `hom_pocket_watch` | 2 | 200.0 | _(module has no anchor)_ |
+| `hom_pressure_cooker` | 2 | 150.0 | _(module has no anchor)_ |
+| `hom_printed_books` | 2 | 160.0 | _(module has no anchor)_ |
+| `hom_sewing_machine_hand` | 2 | 180.0 | _(module has no anchor)_ |
+| `hom_sprung_mattress` | 2 | 120.0 | _(module has no anchor)_ |
+| `hom_stove_enclosed` | 2 | 100.0 | _(module has no anchor)_ |
+| `hom_toys_dolls` | 2 | 60.0 | _(module has no anchor)_ |
+| `hom_washing_machine_hand` | 2 | 140.0 | _(module has no anchor)_ |
+| `hom_attar_roses` | 3 | 150.0 | _(module has no anchor)_ |
+| `hom_bath_piped_hot_water` | 3 | 140.0 | _(module has no anchor)_ |
+| `hom_carpet_sweeper` | 3 | 100.0 | _(module has no anchor)_ |
+| `hom_deodorant` | 3 | 70.0 | _(module has no anchor)_ |
+| `hom_doll_fashion` | 3 | 110.0 | _(module has no anchor)_ |
+| `hom_double_glazing` | 3 | 120.0 | _(module has no anchor)_ |
+| `hom_fountain_pen` | 3 | 130.0 | _(module has no anchor)_ |
+| `hom_gas_lamp` | 3 | 140.0 | _(module has no anchor)_ |
+| `hom_refrigeration_mechanical` | 3 | 200.0 | _(module has no anchor)_ |
+| `hom_safety_razor` | 3 | 110.0 | _(module has no anchor)_ |
+| `hom_sewer_stormwater_separation` | 3 | 180.0 | _(module has no anchor)_ |
+| `hom_shampoo_soap_based` | 3 | 80.0 | _(module has no anchor)_ |
+| `hom_toothpaste_commercial` | 3 | 90.0 | _(module has no anchor)_ |
+| `hom_vacuum_flask` | 3 | 120.0 | _(module has no anchor)_ |
+| `hom_zip_fastener` | 3 | 180.0 | _(module has no anchor)_ |
+| `hom_cosmetics_modern_warning` | 4 | 100.0 | _(module has no anchor)_ |
+| `hom_dishwasher` | 4 | 200.0 | _(module has no anchor)_ |
+| `hom_electric_fan` | 4 | 100.0 | _(module has no anchor)_ |
+| `hom_electric_lighting` | 4 | 150.0 | _(module has no anchor)_ |
+| `hom_heating_hot_water_radiator` | 4 | 180.0 | _(module has no anchor)_ |
+| `hom_refrigerator_home_electric` | 4 | 200.0 | _(module has no anchor)_ |
+| `hom_vacuum_cleaner` | 4 | 140.0 | _(module has no anchor)_ |
+| `hom_washing_machine_electric` | 4 | 160.0 | _(module has no anchor)_ |
 
 ## Documentation coverage
 
 | status | nodes |
 |---|---:|
 | linked to a specific recipe entry | 96 |
-| linked to a domain module, no specific entry | 929 |
+| linked to a domain module, no specific entry | 1650 |
 | documented in a top-level prose file | 13 |
-| no link BY DESIGN (capability rungs, materials, unobtainables) | 110 |
-| **undocumented, a real gap** | **28** |
+| no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
+| **undocumented, a real gap** | **112** |
 
 The undocumented nodes, listed so the gap is visible rather than hidden:
 
-`civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fud_agricultural_treatises`, `fud_chocolate_tier9`, `fud_maize_tier9`, `fud_potato_tier9`, `fud_soil_composition_analysis`, `med_cocaine_unobtainable`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`
+`civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`
+
+## Broken links
+
+- `exp_africa_circumnavigation` points at `95_expeditions.md`, which does not exist
+- `exp_americas_factory` points at `95_expeditions.md`, which does not exist
+- `exp_atlantic_crossing` points at `95_expeditions.md`, which does not exist
+- `exp_coastal_africa` points at `95_expeditions.md`, which does not exist
+- `exp_colony_administration` points at `95_expeditions.md`, which does not exist
+- `exp_conquest_resource` points at `95_expeditions.md`, which does not exist
+- `exp_oceangoing_hull` points at `95_expeditions.md`, which does not exist
+- `exp_openocean_navigation` points at `95_expeditions.md`, which does not exist
+- `exp_provisioning_scurvy` points at `95_expeditions.md`, which does not exist
+- `exp_trade_route_extend` points at `95_expeditions.md`, which does not exist
+- `exp_transplant_botany` points at `95_expeditions.md`, which does not exist
+- `fin_advertising` points at `96_finance.md`, which does not exist
+- `fin_almanac` points at `96_finance.md`, which does not exist
+- `fin_annona` points at `96_finance.md`, which does not exist
+- `fin_annuity` points at `96_finance.md`, which does not exist
+- `fin_apprenticeship` points at `96_finance.md`, which does not exist
+- `fin_arabic_numerals` points at `96_finance.md`, which does not exist
+- `fin_arbitrage` points at `96_finance.md`, which does not exist
+- `fin_argentarii` points at `96_finance.md`, which does not exist
+- `fin_auction` points at `96_finance.md`, which does not exist
+- `fin_bankruptcy` points at `96_finance.md`, which does not exist
+- `fin_bill_exchange` points at `96_finance.md`, which does not exist
+- `fin_bimetallism` points at `96_finance.md`, which does not exist
+- `fin_bond` points at `96_finance.md`, which does not exist
+- `fin_brand` points at `96_finance.md`, which does not exist
+- `fin_canal_company` points at `96_finance.md`, which does not exist
+- `fin_cartel` points at `96_finance.md`, which does not exist
+- `fin_central_bank` points at `96_finance.md`, which does not exist
+- `fin_chain_store` points at `96_finance.md`, which does not exist
+- `fin_cheque` points at `96_finance.md`, which does not exist
+- `fin_classified_ad` points at `96_finance.md`, which does not exist
+- `fin_clearing_house` points at `96_finance.md`, which does not exist
+- `fin_coffeehouse` points at `96_finance.md`, which does not exist
+- `fin_coined_money` points at `96_finance.md`, which does not exist
+- `fin_company_town` points at `96_finance.md`, which does not exist
+- `fin_contract_law` points at `96_finance.md`, which does not exist
+- `fin_copyright` points at `96_finance.md`, which does not exist
+- `fin_department_store` points at `96_finance.md`, which does not exist
+- `fin_deposit_bank` points at `96_finance.md`, which does not exist
+- `fin_directory` points at `96_finance.md`, which does not exist
+- `fin_discounting` points at `96_finance.md`, which does not exist
+- `fin_double_entry` points at `96_finance.md`, which does not exist
+- `fin_employment_contract` points at `96_finance.md`, which does not exist
+- `fin_endorsement` points at `96_finance.md`, which does not exist
+- `fin_factory` points at `96_finance.md`, which does not exist
+- `fin_ferry` points at `96_finance.md`, which does not exist
+- `fin_fire_insurance` points at `96_finance.md`, which does not exist
+- `fin_fractional_reserve` points at `96_finance.md`, which does not exist
+- `fin_futures` points at `96_finance.md`, which does not exist
+- `fin_gambling_house` points at `96_finance.md`, which does not exist
+- `fin_hotel` points at `96_finance.md`, which does not exist
+- `fin_inn` points at `96_finance.md`, which does not exist
+- `fin_ledger` points at `96_finance.md`, which does not exist
+- `fin_lending_library` points at `96_finance.md`, which does not exist
+- `fin_life_insurance` points at `96_finance.md`, which does not exist
+- `fin_limited_liability` points at `96_finance.md`, which does not exist
+- `fin_lottery` points at `96_finance.md`, which does not exist
+- `fin_mail_order` points at `96_finance.md`, which does not exist
+- `fin_marine_insurance` points at `96_finance.md`, which does not exist
+- `fin_maritime_loan` points at `96_finance.md`, which does not exist
+- `fin_market` points at `96_finance.md`, which does not exist
+- `fin_monopoly` points at `96_finance.md`, which does not exist
+- `fin_mortgage` points at `96_finance.md`, which does not exist
+- `fin_news_agency` points at `96_finance.md`, which does not exist
+- `fin_newspaper_business` points at `96_finance.md`, which does not exist
+- `fin_omnibus` points at `96_finance.md`, which does not exist
+- `fin_paper_money` points at `96_finance.md`, which does not exist
+- `fin_patent` points at `96_finance.md`, which does not exist
+- `fin_pawnshop` points at `96_finance.md`, which does not exist
+- `fin_pension` points at `96_finance.md`, which does not exist
+- `fin_plantation` points at `96_finance.md`, which does not exist
+- `fin_playing_card` points at `96_finance.md`, which does not exist
+- `fin_postal_service` points at `96_finance.md`, which does not exist
+- `fin_professional_sport` points at `96_finance.md`, which does not exist
+- `fin_promissory_note` points at `96_finance.md`, which does not exist
+- `fin_public_debt` points at `96_finance.md`, which does not exist
+- `fin_racecourse` points at `96_finance.md`, which does not exist
+- `fin_railway_company` points at `96_finance.md`, which does not exist
+- `fin_reinsurance` points at `96_finance.md`, which does not exist
+- `fin_restaurant` points at `96_finance.md`, which does not exist
+- `fin_savings_bank` points at `96_finance.md`, which does not exist
+- `fin_seigniorage` points at `96_finance.md`, which does not exist
+- `fin_share` points at `96_finance.md`, which does not exist
+- `fin_stamp` points at `96_finance.md`, which does not exist
+- `fin_stock_exchange` points at `96_finance.md`, which does not exist
+- `fin_tariff` points at `96_finance.md`, which does not exist
+- `fin_tax_farming` points at `96_finance.md`, which does not exist
+- `fin_telegraph_business` points at `96_finance.md`, which does not exist
+- `fin_testament` points at `96_finance.md`, which does not exist
+- `fin_theatre_business` points at `96_finance.md`, which does not exist
+- `fin_toll_bridge` points at `96_finance.md`, which does not exist
+- `fin_trademark` points at `96_finance.md`, which does not exist
+- `fin_trading_post` points at `96_finance.md`, which does not exist
+- `fin_tramway` points at `96_finance.md`, which does not exist
+- `fin_trial_balance` points at `96_finance.md`, which does not exist
+- `fin_turnpike_trust` points at `96_finance.md`, which does not exist
+- `fin_usury_evasion` points at `96_finance.md`, which does not exist
+- `fin_usury_law` points at `96_finance.md`, which does not exist
+- `fin_wage` points at `96_finance.md`, which does not exist
+- `mil_aerial_camera` points at `97_military.md`, which does not exist
+- `mil_aerial_reconnaissance` points at `97_military.md`, which does not exist
+- `mil_aircraft_carrier` points at `97_military.md`, which does not exist
+- `mil_aircraft_catapult` points at `97_military.md`, which does not exist
+- `mil_anti_aircraft_gun` points at `97_military.md`, which does not exist
+- `mil_anti_tank_ditch` points at `97_military.md`, which does not exist
+- `mil_armoured_car` points at `97_military.md`, which does not exist
+- `mil_armoured_cruiser` points at `97_military.md`, which does not exist
+- `mil_armoured_cupola` points at `97_military.md`, which does not exist
+- `mil_arrester_wire` points at `97_military.md`, which does not exist
+- `mil_artillery_carriage` points at `97_military.md`, which does not exist
+- `mil_artillery_piece` points at `97_military.md`, which does not exist
+- `mil_artillery_shell` points at `97_military.md`, which does not exist
+- `mil_asdic` points at `97_military.md`, which does not exist
+- `mil_atomic_bomb` points at `97_military.md`, which does not exist
+- `mil_ballistic_rocket` points at `97_military.md`, which does not exist
+- `mil_barbed_wire` points at `97_military.md`, which does not exist
+- `mil_bastion` points at `97_military.md`, which does not exist
+- `mil_battlecruiser` points at `97_military.md`, which does not exist
+- `mil_belt_feed` points at `97_military.md`, which does not exist
+- `mil_bolt_action` points at `97_military.md`, which does not exist
+- `mil_bomb_general_purpose` points at `97_military.md`, which does not exist
+- `mil_bomb_sight` points at `97_military.md`, which does not exist
+- `mil_bomber_aircraft` points at `97_military.md`, which does not exist
+- `mil_breech_block` points at `97_military.md`, which does not exist
+- `mil_breech_loader` points at `97_military.md`, which does not exist
+- `mil_cartridge_metallic` points at `97_military.md`, which does not exist
+- `mil_cartridge_paper` points at `97_military.md`, which does not exist
+- `mil_casemate` points at `97_military.md`, which does not exist
+- `mil_centrefire_primer` points at `97_military.md`, which does not exist
+- `mil_chain_home` points at `97_military.md`, which does not exist
+- `mil_chemical_chlorine` points at `97_military.md`, which does not exist
+- `mil_chemical_mustard` points at `97_military.md`, which does not exist
+- `mil_chemical_phosgene` points at `97_military.md`, which does not exist
+- `mil_concrete_fortification` points at `97_military.md`, which does not exist
+- `mil_cordite` points at `97_military.md`, which does not exist
+- `mil_corned_powder` points at `97_military.md`, which does not exist
+- `mil_depth_charge` points at `97_military.md`, which does not exist
+- `mil_destroyer` points at `97_military.md`, which does not exist
+- `mil_dive_bomber` points at `97_military.md`, which does not exist
+- `mil_dreadnought` points at `97_military.md`, which does not exist
+- `mil_face_hardened_armour` points at `97_military.md`, which does not exist
+- `mil_field_telephone` points at `97_military.md`, which does not exist
+- `mil_fighter_aircraft` points at `97_military.md`, which does not exist
+- `mil_fire_control_computing` points at `97_military.md`, which does not exist
+- `mil_fire_control_director` points at `97_military.md`, which does not exist
+- `mil_flamethrower` points at `97_military.md`, which does not exist
+- `mil_flintlock` points at `97_military.md`, which does not exist
+- `mil_forward_observer` points at `97_military.md`, which does not exist
+- `mil_fuse_quick_match` points at `97_military.md`, which does not exist
+- `mil_fuse_slow_match` points at `97_military.md`, which does not exist
+- `mil_fuse_types` points at `97_military.md`, which does not exist
+- `mil_gas_mask` points at `97_military.md`, which does not exist
+- `mil_glacis` points at `97_military.md`, which does not exist
+- `mil_guided_bomb` points at `97_military.md`, which does not exist
+- `mil_gun_synchroniser` points at `97_military.md`, which does not exist
+- `mil_gunpowder_base` points at `97_military.md`, which does not exist
+- `mil_half_track` points at `97_military.md`, which does not exist
+- `mil_high_explosive_shell` points at `97_military.md`, which does not exist
+- `mil_howitzer` points at `97_military.md`, which does not exist
+- `mil_iff_system` points at `97_military.md`, which does not exist
+- `mil_incendiary_bomb` points at `97_military.md`, which does not exist
+- `mil_incorporating_mill` points at `97_military.md`, which does not exist
+- `mil_indirect_fire` points at `97_military.md`, which does not exist
+- `mil_ironclad` points at `97_military.md`, which does not exist
+- `mil_jet_fighter` points at `97_military.md`, which does not exist
+- `mil_lever_action` points at `97_military.md`, which does not exist
+- `mil_machine_gun_gas` points at `97_military.md`, which does not exist
+- `mil_machine_gun_nest` points at `97_military.md`, which does not exist
+- `mil_machine_gun_recoil` points at `97_military.md`, which does not exist
+- `mil_magazine` points at `97_military.md`, which does not exist
+- `mil_matchlock` points at `97_military.md`, which does not exist
+- `mil_minesweeper` points at `97_military.md`, which does not exist
+- `mil_minie_ball` points at `97_military.md`, which does not exist
+- `mil_mortar` points at `97_military.md`, which does not exist
+- `mil_napalm` points at `97_military.md`, which does not exist
+- `mil_naval_mine` points at `97_military.md`, which does not exist
+- `mil_observation_balloon` points at `97_military.md`, which does not exist
+- `mil_percussion_cap` points at `97_military.md`, which does not exist
+- `mil_periscope` points at `97_military.md`, which does not exist
+- `mil_pillbox` points at `97_military.md`, which does not exist
+- `mil_plate_armour_firearms` points at `97_military.md`, which does not exist
+- `mil_powder_mill` points at `97_military.md`, which does not exist
+- `mil_proximity_fuse` points at `97_military.md`, which does not exist
+- `mil_radar` points at `97_military.md`, which does not exist
+- `mil_range_table` points at `97_military.md`, which does not exist
+- `mil_rangefinder` points at `97_military.md`, which does not exist
+- `mil_ravelin` points at `97_military.md`, which does not exist
+- `mil_recoil_mechanism` points at `97_military.md`, which does not exist
+- `mil_revolver` points at `97_military.md`, which does not exist
+- `mil_rifling` points at `97_military.md`, which does not exist
+- `mil_self_loading_pistol` points at `97_military.md`, which does not exist
+- `mil_self_propelled_gun` points at `97_military.md`, which does not exist
+- `mil_serpentine_powder` points at `97_military.md`, which does not exist
+- `mil_shrapnel_shell` points at `97_military.md`, which does not exist
+- `mil_sloped_armour` points at `97_military.md`, which does not exist
+- `mil_smokeless_powder` points at `97_military.md`, which does not exist
+- `mil_sponson` points at `97_military.md`, which does not exist
+- `mil_submarine` points at `97_military.md`, which does not exist
+- `mil_tank` points at `97_military.md`, which does not exist
+- `mil_tank_turret` points at `97_military.md`, which does not exist
+- `mil_torpedo` points at `97_military.md`, which does not exist
+- `mil_torpedo_boat` points at `97_military.md`, which does not exist
+- `mil_torpedo_tube` points at `97_military.md`, which does not exist
+- `mil_trace_italienne` points at `97_military.md`, which does not exist
+- `mil_track` points at `97_military.md`, which does not exist
+- `mil_trench` points at `97_military.md`, which does not exist
+- `mil_trunnion` points at `97_military.md`, which does not exist
+- `mil_turret_traverse` points at `97_military.md`, which does not exist
+- `mil_water_jacket` points at `97_military.md`, which does not exist
+- `mil_wheel_lock` points at `97_military.md`, which does not exist
+- `mil_wireless_set` points at `97_military.md`, which does not exist
 

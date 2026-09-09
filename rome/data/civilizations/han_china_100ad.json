@@ -1,0 +1,77 @@
+{
+ "id": "han_china_100ad",
+ "name": "The Later Han Empire",
+ "year": 100,
+ "blurb": "Rome's exact contemporary and ahead of it in metallurgy, agriculture and bureaucracy. Cast iron for five centuries already, the seed drill, the moldboard plough, paper in the year 105, water-powered blast bellows in 31 AD.",
+ "population": 58000000,
+ "urban_fraction": 0.1,
+ "literacy_elite": 0.95,
+ "literacy_general": 0.06,
+ "currency": "wu zhu cash",
+ "price_index": 0.75,
+ "wage_index": 0.7,
+ "state_capacity": 0.9,
+ "home_regions": [
+  "china"
+ ],
+ "base_reach": 2,
+ "institutions": {
+  "partnership": true,
+  "corporation": false,
+  "guild": "hang, state-supervised",
+  "testament": true,
+  "charter": "imperial",
+  "bank": "early credit notes",
+  "patent": false,
+  "note": "An examined civil service and state monopolies on salt and iron. The state is a far more capable customer than Rome's, and a far more capable competitor."
+ },
+ "starting_techs": [
+  "blast_furnace",
+  "mat_cast_iron",
+  "cap_heat_1300",
+  "rag_paper",
+  "mat_paper",
+  "crank_conrod",
+  "bellows_water_blown",
+  "horse_collar",
+  "fud_seed_drill",
+  "fud_heavy_plough",
+  "sea_sternpost_rudder",
+  "sea_magnetic_compass"
+ ],
+ "values": {
+  "w_military": 0.8,
+  "w_labour_saving": -0.2,
+  "w_information": 0.2,
+  "w_novelty": -0.2,
+  "w_magic_fear": 0.35,
+  "w_religious_rigidity": 0.15,
+  "w_commerce": -0.2,
+  "bribability": 0.6,
+  "patronage_weight": 0.7,
+  "adaptation_rate": 0.1,
+  "_note": "Merchants rank BELOW farmers and artisans in Confucian order, so w_commerce is negative: getting rich is not a route to status here, passing the examinations is. But alchemy and technical craft are far less likely to be called sorcery than in Rome."
+ },
+ "hazards": [
+  {
+   "name": "Yellow Turban rebellion",
+   "years": [
+    184,
+    205
+   ],
+   "sack_chance": 0.2
+  },
+  {
+   "name": "Three Kingdoms fragmentation",
+   "years": [
+    220,
+    280
+   ],
+   "output_factor": 0.6
+  }
+ ],
+ "notes": [
+  "You start with cast iron, paper, the horse collar, the seed drill and water-powered bellows already in hand. That is roughly a thousand years of head start over Rome on the metallurgy and agriculture branches.",
+  "The bureaucracy is the customer, the funder and the competition. Impress the examiners, not a patron."
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "england_1300",
+ "name": "England under Edward I",
+ "year": 1300,
+ "blurb": "Watermills and windmills everywhere, a real legal system, chartered towns, universities, the horse collar, the crank, the mechanical clock arriving, and about to be hit by the worst demographic catastrophe in European history.",
+ "population": 4500000,
+ "urban_fraction": 0.12,
+ "literacy_elite": 0.5,
+ "literacy_general": 0.06,
+ "currency": "sterling penny",
+ "price_index": 1.1,
+ "wage_index": 0.8,
+ "state_capacity": 0.6,
+ "home_regions": [
+  "britannia",
+  "gaul_germania"
+ ],
+ "base_reach": 2,
+ "institutions": {
+  "partnership": true,
+  "corporation": "borough and guild corporations, genuinely perpetual",
+  "guild": "strong, and protective of monopoly",
+  "testament": true,
+  "charter": "royal, purchasable",
+  "bank": "Italian merchant banks operating",
+  "patent": "letters patent exist by 1331",
+  "note": "A PERPETUAL CORPORATION EXISTS HERE and it is the single most important institutional advantage over Rome: an enterprise can outlive its founder without a testamentary trick."
+ },
+ "starting_techs": [
+  "horse_collar",
+  "crank_conrod",
+  "water_power_scale",
+  "cap_power_water",
+  "blast_furnace",
+  "mat_cast_iron",
+  "rag_paper",
+  "mat_paper",
+  "clock_pendulum",
+  "cap_heat_1300",
+  "sea_sternpost_rudder"
+ ],
+ "values": {
+  "w_military": 0.8,
+  "w_labour_saving": -0.4,
+  "w_information": -0.4,
+  "w_novelty": -0.3,
+  "w_magic_fear": 0.7,
+  "w_religious_rigidity": 0.8,
+  "w_commerce": 0.6,
+  "bribability": 0.65,
+  "patronage_weight": 0.7,
+  "adaptation_rate": 0.09,
+  "_note": "w_religious_rigidity 0.8 and w_magic_fear 0.7: this is the environment that produced heresy trials and, later, witch trials. Far more dangerous for a natural philosopher than Trajanic Rome, which had no doctrine to offend. Guilds resist labour-saving machinery violently and have legal standing to do it."
+ },
+ "hazards": [
+  {
+   "name": "Great Famine",
+   "years": [
+    1315,
+    1317
+   ],
+   "staff_loss": 0.12
+  },
+  {
+   "name": "Black Death",
+   "years": [
+    1348,
+    1350
+   ],
+   "staff_loss": 0.45,
+   "note": "and recurrent thereafter"
+  },
+  {
+   "name": "Hundred Years War",
+   "years": [
+    1337,
+    1453
+   ],
+   "output_factor": 0.85
+  }
+ ],
+ "notes": [
+  "You arrive 48 years before the Black Death kills something like 45% of the population.",
+  "The perpetual corporation is worth more to a multi-generation programme than any machine in the tree.",
+  "Guilds will litigate against your fulling mill. They did, repeatedly, and sometimes won."
+ ]
+}

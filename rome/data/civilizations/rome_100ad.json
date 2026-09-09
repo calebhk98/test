@@ -1,0 +1,89 @@
+{
+ "id": "rome_100ad",
+ "name": "The Roman Empire under Trajan",
+ "year": 100,
+ "blurb": "Peak territorial extent, sound currency, superb civil engineering, an economy resting on slavery, and an elite that despises manual work.",
+ "population": 65000000,
+ "urban_fraction": 0.12,
+ "literacy_elite": 0.9,
+ "literacy_general": 0.12,
+ "currency": "denarius",
+ "price_index": 1.0,
+ "wage_index": 1.0,
+ "state_capacity": 0.85,
+ "home_regions": [
+  "italia",
+  "gaul_germania",
+  "britannia",
+  "hispania",
+  "north_africa",
+  "greece_anatolia",
+  "levant_mesopotamia"
+ ],
+ "base_reach": 2,
+ "institutions": {
+  "partnership": true,
+  "corporation": false,
+  "guild": "collegium, licensed and watched",
+  "testament": true,
+  "charter": "imperial grant only",
+  "bank": "argentarii, deposit and credit",
+  "patent": false,
+  "note": "No limited liability and no corporation. A societas dissolves on a partner's death. This is a real constraint on any enterprise meant to outlive you, and the workaround is a testamentary foundation endowed in land."
+ },
+ "values": {
+  "w_military": 0.9,
+  "w_labour_saving": -0.6,
+  "w_information": -0.3,
+  "w_novelty": -0.4,
+  "w_magic_fear": 0.8,
+  "w_religious_rigidity": 0.2,
+  "w_commerce": 0.3,
+  "bribability": 0.55,
+  "patronage_weight": 0.85,
+  "adaptation_rate": 0.08,
+  "_note": "w_magic_fear 0.8 because the Lex Cornelia is used against malefici and astrologers are expelled repeatedly. w_religious_rigidity only 0.2 because Roman religion is pluralistic and absorbs new cults readily; it is MAGIC that is criminal, not heterodoxy. w_labour_saving negative because of the Vespasian precedent and cheap coerced labour."
+ },
+ "hazards": [
+  {
+   "name": "Antonine plague",
+   "years": [
+    165,
+    180
+   ],
+   "staff_loss": 0.28,
+   "note": "probably smallpox or measles"
+  },
+  {
+   "name": "Plague of Cyprian",
+   "years": [
+    249,
+    262
+   ],
+   "staff_loss": 0.28
+  },
+  {
+   "name": "Third century crisis",
+   "years": [
+    235,
+    284
+   ],
+   "sack_chance": 0.16,
+   "output_factor": 0.62
+  },
+  {
+   "name": "Currency debasement",
+   "years": [
+    190,
+    275
+   ],
+   "real_erosion": 0.06
+  }
+ ],
+ "notes": [
+  "Slavery is the central economic institution and it suppresses the business case for every labour-saving device.",
+  "Manual work is socially degrading: Cicero De Officiis 1.150-151, Seneca Ep. 90.",
+  "Unlicensed associations are illegal: Trajan refuses Pliny even a fire brigade, Ep. 10.34.",
+  "Already trades annually to India on the monsoon and by relay to China."
+ ]
+}

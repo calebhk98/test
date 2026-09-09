@@ -32,6 +32,27 @@ STRATS = os.path.join(HERE, "strategies")
 # Loading and derived economics
 # ----------------------------------------------------------------------------
 
+CIVDIR = os.path.join(ROOT, "data", "civilizations")
+
+def load_civ(name="rome_100ad"):
+    """A civilization is DATA, not code. Swapping Rome for Han China, Viking
+    Norway, Mexica Tenochtitlan or somewhere invented is a different file, not a
+    different simulator. See data/civilizations/_SCHEMA.md."""
+    f = os.path.join(CIVDIR, name + ".json")
+    if not os.path.exists(f):
+        have = sorted(x[:-5] for x in os.listdir(CIVDIR) if x.endswith(".json"))
+        raise SystemExit("unknown civilization %r. available: %s" % (name, ", ".join(have)))
+    c = json.load(open(f))
+    c.setdefault("starting_techs", [])
+    c.setdefault("values", {})
+    for k, d in (("w_military",0.5),("w_labour_saving",0.0),("w_information",0.0),
+                 ("w_novelty",0.0),("w_magic_fear",0.4),("w_religious_rigidity",0.3),
+                 ("w_commerce",0.3),("bribability",0.4),("patronage_weight",0.6),
+                 ("adaptation_rate",0.10)):
+        c["values"].setdefault(k, d)
+    return c
+
+
 def load():
     tree = json.load(open(TREE))
     prices = json.load(open(PRICES))
@@ -109,6 +130,16 @@ def critical_path(nodes, goal):
 # Simulation
 # ----------------------------------------------------------------------------
 
+STARTING_KITS = {
+    "destitute":   {"den": 0,     "desc": "the clothes you stand in. You must earn your first meal."},
+    "poor_scholar":{"den": 400,   "desc": "DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About what a working teacher has."},
+    "artisan":     {"den": 1200,  "desc": "enough to rent a workshop and buy a first set of tools."},
+    "merchant":    {"den": 4000,  "desc": "a modest trading capital. You can fund one real venture."},
+    "rich_merchant":{"den": 20000,"desc": "wealthy but well under the equestrian census of 100,000."},
+    "equestrian":  {"den": 100000,"desc": "the equestrian census exactly. Conspicuous."},
+    "absurd":      {"den": 1000000,"desc": "four senatorial fortunes in unminted gold. Included to show that it makes things WORSE, not better."},
+}
+
 DEFAULTS = dict(
     # IMMORTALITY IS THE DEFAULT. The point of this simulator is to test the TREE,
     # and a mortality lottery that ends one run in five drowns the signal from the
@@ -118,7 +149,9 @@ DEFAULTS = dict(
     founder_life_mean=28.0,
     founder_life_sd=8.0,
     start_year=100,
-    start_capital=10320,        # scholar_modest kit, 3 kg of gold at 3,440 den/kg
+    # DEFAULT IS A POOR SCHOLAR. Arriving with a noble's fortune is a strange
+    # premise and the sweep shows it is also a worse one. Pick a kit with --kit.
+    start_capital=400,
     founder_arrival_age=35,
     founder_hours_per_year=2400,
     director_hours_per_year=1800,
@@ -141,7 +174,7 @@ SHOCKS = dict(
 
 class Sim:
     def __init__(self, nodes, order, rng, events=True, cfg=None, verbose=False,
-                 bounty_set=None):
+                 bounty_set=None, civ=None):
         self.nodes = nodes
         self.order = list(order)
         self.rng = rng
@@ -149,8 +182,17 @@ class Sim:
         self.cfg = dict(DEFAULTS, **(cfg or {}))
         self.verbose = verbose
         self.bounty_set = set(bounty_set or ())
+        self.civ = civ or load_civ()
+        self.w = self.civ["values"]
+        # A civilization brings its own date, its own price level and its own
+        # capacity to fund things. Norse Scandinavia does not start in 100 AD.
+        self.cfg["start_year"] = int(self.civ.get("year", self.cfg["start_year"]))
+        self.price_index = float(self.civ.get("price_index", 1.0))
+        self.wage_index = float(self.civ.get("wage_index", 1.0))
+        self.state_capacity = float(self.civ.get("state_capacity", 0.7))
+        self.pop_scale = max(0.05, float(self.civ.get("population", 65e6)) / 65e6)
+        self.year = self.cfg["start_year"]
         c = self.cfg
-        self.year = c["start_year"]
         self.capital = float(c["start_capital"])
         self.done = set()
         self.active = {}          # id -> dict(ph_left, years_elapsed, spent)
@@ -184,6 +226,23 @@ class Sim:
         # and from political protection. A man with a great reputation gets his
         # ideas adopted; a man without one gets them ignored however right he is.
         self.reputation = 5.0
+        # SCANDAL replaces the old scalar "suspicion". Doing something a society
+        # cannot explain is alarming; doing a lot of ordinary things over decades
+        # is not. The old model conflated speed with sorcery, which is wrong: the
+        # iPhone was astonishing in 2007 and boring by 2012.
+        self.scandal = 0.0
+        self.familiarity = 0.0      # how used to you the world has become
+        self.protection = 0.0       # patrons, office, citizenship, priesthood
+        self.bribes_ytd = 0.0
+        self.slaves = 0
+        self.freedmen = 0
+        self.manumitted_total = 0
+        self.living_cost_paid = 0.0
+        self.atrocity = 0           # counted, never scored as a benefit
+        # whatever this civilization already has is free and already done
+        for k in self.civ.get("starting_techs", []):
+            if k in self.nodes:
+                self.done.add(k)
 
     # -- helpers ------------------------------------------------------------
     def has(self, k):
@@ -229,18 +288,80 @@ class Sim:
         # you cannot keep staff you cannot pay
         # a famous school attracts students and patrons it did not have to pay for
         income = (self.revenue() + max(0.0, self.capital) * 0.12) * self.rep_factor()
-        afford = income / 900.0        # c. 900 den/yr all-in for one trained person
+        afford = income / (900.0 * self.price_index)        # c. 900 den/yr all-in for one trained person
         scale = max(0.10, min(1.0, afford / max(1.0, sc + ar)))
-        return base_sc + sc * scale, base_ar + ar * scale, di * min(1.0, scale * 1.3)
+        # A civilization of 1.5 million simply cannot field the trained people a
+        # civilization of 65 million can, however rich you are. This is the single
+        # biggest structural difference between playing Rome and playing Norway.
+        # Softened after a first pass made every small civilization fail outright.
+        # A 4.5 million person society CAN eventually staff a semiconductor
+        # programme, it just has to grow into it. Making that impossible was a
+        # modelling error, not a finding.
+        pop = 0.45 + 0.55 * min(1.0, self.pop_scale ** 0.35)
+        return (base_sc + sc * scale * pop, base_ar + ar * scale * pop,
+                di * min(1.0, scale * 1.3) * pop)
 
     def hired_cap(self):
-        cap = self.cfg["hired_hours_cap_base"]
+        # a civilization of 1.5 million cannot staff what one of 65 million can
+        cap = self.cfg["hired_hours_cap_base"] * (0.25 + 0.75 * min(1.0, self.pop_scale))
         if self.has("school_founded"):    cap *= 2.0
         if self.has("freedman_staff"):    cap *= 1.5
         if self.has("patron_imperial"):   cap *= 3.0
         if self.has("academy_network"):   cap *= 2.5
         if self.has("interchangeable_parts"): cap *= 1.5
         return cap
+
+    # ---- how a SOCIETY reacts to a TECHNOLOGY -------------------------------
+    STATE_WEIGHTS = {"infrastructure":0.5, "food":0.7, "medical":0.5,
+                     "luxury":0.1, "spectacle":0.1, "inexplicable":0.0,
+                     "status_threatening":-0.6, "weapon_democratising":-0.5}
+
+    def state_interest(self, n):
+        w = self.w
+        m = dict(self.STATE_WEIGHTS)
+        m.update({"military": w["w_military"], "labour_saving": w["w_labour_saving"],
+                  "information": w["w_information"], "commerce": w["w_commerce"],
+                  "religious_adjacent": -0.9 * w["w_religious_rigidity"]})
+        return sum(m.get(t, 0.0) for t in n.get("traits", []))
+
+    def alarm_of(self, n):
+        """How alarming this technology is TO THIS CIVILIZATION, before defences.
+
+        Note what is NOT in here: speed, and money. Building fast does not make
+        you a sorcerer. Producing an effect a society has no category for does.
+        """
+        w = self.w
+        a = 0.0
+        for t in n.get("traits", []):
+            if   t == "inexplicable":        a += 10.0 * w["w_magic_fear"]
+            elif t == "spectacle":           a += 4.0  * w["w_magic_fear"]
+            elif t == "religious_adjacent":  a += 9.0  * w["w_religious_rigidity"]
+            elif t == "status_threatening":  a += 5.0
+            elif t == "weapon_democratising":a += 6.0
+            elif t == "labour_saving":       a += 4.0  * max(0.0, -w["w_labour_saving"])
+        a *= (1.0 + max(0.0, -w["w_novelty"]))
+        a *= max(0.12, 1.0 - self.familiarity)      # people habituate, fast
+        a *= max(0.15, 1.0 - self.protection)       # patrons, office, money
+        return a
+
+    def update_protection(self):
+        """Standing, office and MONEY all protect. The old model had money only
+        endangering you, which is backwards: wealth buys advocates, priesthoods,
+        magistracies and, in a society with a bribability of 0.55, verdicts."""
+        p = 0.0
+        w = self.w
+        if self.has("patron_local"):        p += 0.18 * w["patronage_weight"]
+        if self.has("patron_senatorial"):   p += 0.26 * w["patronage_weight"]
+        if self.has("patron_imperial"):     p += 0.32 * w["patronage_weight"]
+        if self.has("citizenship"):         p += 0.10
+        if self.has("collegium_licensed"):  p += 0.10
+        if self.has("endowment_land"):      p += 0.08   # conspicuous benefaction
+        if self.has("fin_university") or self.has("school_founded"): p += 0.06
+        p += min(0.30, self.reputation / 260.0)
+        # BRIBERY, ADVOCACY AND PIETY: an explicit, spendable defence.
+        income = max(1.0, self.revenue())
+        p += min(0.30, (self.bribes_ytd / (income * 0.6)) * w["bribability"])
+        self.protection = min(0.92, p)
 
     def rep_factor(self):
         """How much easier reputation makes everything. 1.0 at zero reputation."""
@@ -264,7 +385,8 @@ class Sim:
     def state_funding(self):
         if not self.has("patron_imperial"):
             return 0.0
-        return 2500.0 * self.economy * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor()
+        return (2500.0 * self.economy * self.state_capacity * self.pop_scale ** 0.4
+                * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor())
 
     def revenue(self):
         r = 0.0
@@ -278,6 +400,53 @@ class Sim:
 
     def upkeep(self):
         return sum(self.nodes[k]["up"] for k in self.done)
+
+    def living_cost(self):
+        """You have to eat, sleep somewhere, pay tax, and look the part.
+
+        The last one is not a joke. In a patronage society a man who is visibly
+        richer than he dresses is suspected, and a man seeking status must spend
+        on it: clothes, a household, hospitality, and public benefaction. That
+        expense RISES with your wealth and with your standing, which is why so
+        many Roman fortunes went sideways into games and buildings.
+        """
+        base = 120.0                                  # bare subsistence, one person
+        household = 90.0 * (1 + self.freedmen * 0.5 + self.slaves * 0.35)
+        tax = max(0.0, self.revenue()) * 0.06         # portoria, vicesima, local dues
+        status = 0.0
+        if self.has("citizenship"):        status += 200
+        if self.has("patron_senatorial"):  status += 900
+        if self.has("patron_imperial"):    status += 2500
+        status += max(0.0, self.capital) * 0.015      # you cannot look poor and rich
+        return base + household + tax + status
+
+    def buy_slaves(self, n_people):
+        """The option the model refuses to hide, and refuses to make costless.
+
+        Roman labour is cheap because much of it is coerced, and any honest model
+        of a Roman enterprise has to let you do this. It is available, it works,
+        it is counted separately, and manumission is modelled as strictly better
+        on the numbers as well as on every other ground: a freedman is paid, is
+        literate, stays, and transmits what he knows.
+        """
+        price = 300.0 * n_people
+        if price > self.capital:
+            return 0
+        self.capital -= price
+        self.slaves += n_people
+        self.artisans += n_people * 0.55        # unfree labour is less productive
+        return n_people
+
+    def manumit(self, n_people):
+        n_people = min(n_people, self.slaves)
+        if not n_people:
+            return 0
+        self.slaves -= n_people
+        self.freedmen += n_people
+        self.manumitted_total += n_people
+        self.artisans += n_people * 0.55        # same person, now working properly
+        self.reputation += 0.4 * n_people       # manumission was publicly admired
+        return n_people
 
     def bounty_eligible(self, k):
         """Can this be bought as a prize instead of built with your own hands?
@@ -313,6 +482,30 @@ class Sim:
                          % (n["name"], f"{price:,.0f}")))
         return True
 
+    def substitution_quality(self, k):
+        """Resolve `req_any` groups: for each, the best option you actually have.
+
+        A steam engine does not REQUIRE coal and steel. It requires a fuel and a
+        pressure vessel. Wood in a bronze boiler works. It is just bad, and the
+        quality factor is how bad: it multiplies output and divides efficiency.
+        """
+        n = self.nodes[k]
+        groups = n.get("req_any") or []
+        if not groups:
+            return 1.0, True
+        q = 1.0
+        for g in groups:
+            best = 0.0
+            for opt, qual in (g.get("options") or {}).items():
+                if opt in self.done or opt in self.nodes.get(k, {}).get("mat", {}):
+                    best = max(best, float(qual))
+                elif opt not in self.nodes:
+                    best = max(best, float(qual) * 0.9)   # a purchasable commodity
+            if best <= 0:
+                return 0.0, False        # no option in this group is available
+            q *= best
+        return q, True
+
     def can_start(self, k):
         n = self.nodes[k]
         if k in self.done or k in self.active:
@@ -324,14 +517,24 @@ class Sim:
             return False
         if not all(p in self.done for p in n["pre"]):
             return False
+        if not self.substitution_quality(k)[1]:
+            return False
         if n["sch"] > self.scholars or n["art"] > self.artisans:
             return False
         # SOCIAL APPROVAL GATE. Some things the State does not want built, and no
         # amount of money substitutes for someone powerful being willing to be
         # associated with it. See 03_SOCIAL_POLITICS.md section 4.
-        if n["gov"] < 0 and not self.has("patron_local"):
+        # SOCIAL APPROVAL. Computed from this civilization's values and this
+        # technology's traits, not from a number baked into the technology.
+        # Never let the gate ask for a thing in order to get that same thing:
+        # the patronage and institution nodes are how you BUY permission, so they
+        # cannot themselves require permission.
+        if n["cat"] in ("social", "institution", "foundation", "capability", "material"):
+            return True
+        si = self.state_interest(n)
+        if si < -0.4 and not self.has("patron_local"):
             return False
-        if n["gov"] <= -2 and not self.has("patron_senatorial"):
+        if si < -1.2 and not (self.has("patron_senatorial") or self.protection > 0.45):
             return False
         return True
 
@@ -354,21 +557,19 @@ class Sim:
 
         # 2. money
         self.economy = self.economy_index()
-        self.capital += self.revenue() - self.upkeep()
-        if yr >= SHOCKS["debasement_starts"]:
-            # The denarius loses almost all its silver between 190 and 275. This
-            # destroys anyone holding coin. It does NOT destroy real output, because
-            # prices adjust. Hold land and tools, never a chest of denarii.
-            rate = 0.02 if yr < 235 else (0.09 if yr < 275 else 0.03)
-            self.money_real *= (1 - rate)
-            hedge = 0.35 if self.has("endowment_land") else 1.0
-            self.capital *= (1 - rate * 0.85 * hedge)
-        # real output: war, plague and broken trade routes, then a partial recovery
-        a, b = SHOCKS["third_century_crisis"]
-        if a <= yr <= b:
-            self.output_factor = 0.62
-        elif yr > b:
-            self.output_factor = min(0.85, 0.62 + 0.006 * (yr - b))
+        lc = self.living_cost()
+        self.living_cost_paid += lc
+        self.capital += self.revenue() - self.upkeep() - lc
+        # a standing workforce policy: buy when short of hands and flush, and
+        # free them steadily, which is both the decent and the efficient choice
+        if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
+            self.buy_slaves(min(6, int(self.capital // 1500)))
+        if self.slaves and self.rng.random() < 0.25:
+            self.manumit(max(1, self.slaves // 4))
+        # currency debasement and war damage now come from the civilization's
+        # own hazard list, not from Rome's dates baked into the engine
+        if self.output_factor < 1.0:
+            self.output_factor = min(1.0, self.output_factor + 0.006)
 
         # 3. dated shocks
         if self.events:
@@ -424,7 +625,7 @@ class Sim:
                 st["yrs"] += 1
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
                 # opposed work costs more: bribes, delay, a provincial site, a front man
-                opposition = 1.0 + 0.25 * max(0, -n["gov"])
+                opposition = 1.0 + 0.25 * max(0.0, -self.state_interest(n))
                 money = n["_total_cost"] * frac * self.money_real * opposition
                 hh = n["_hired_hours"] * frac
                 if hh > hired_left:
@@ -444,27 +645,30 @@ class Sim:
                 if st["ph_left"] <= 0 and st["yrs"] >= floor:
                     self._complete(k)
 
-        # 6. reputation decays if you stop delivering; suspicion decays anyway
+        # 6. reputation, familiarity, protection, scandal
         self.reputation *= 0.97
-        self.suspicion *= (1 - c["suspicion_decay"])
-        # Protection is multiplicative and it is the whole reason to spend years
-        # courting people instead of building things. An unprotected philosopher
-        # doing chemistry in a rented room is a defendant waiting to be named.
-        mult = 1.0
-        if self.has("patron_local"):       mult *= 0.60
-        if self.has("collegium_licensed"): mult *= 0.65
-        if self.has("citizenship"):        mult *= 0.80
-        if self.has("patron_senatorial"):  mult *= 0.70
-        if self.has("patron_imperial"):    mult *= 0.55
-        if self.has("sanitation_antisepsis"): mult *= 0.85   # a famous healer is forgiven much
-        if self.has("endowment_land"):     mult *= 0.90      # conspicuous public benefaction
-        mult *= max(0.35, 1.0 - self.reputation / 220.0)      # a famous man is harder to accuse
-        self.suspicion_mult = mult
-        self.suspicion = max(0.0, self.suspicion)
-        if self.events and self.suspicion > c["suspicion_danger"]:
-            p = (self.suspicion - c["suspicion_danger"]) / 120.0
+        # ADAPTATION. Every year the world has known you, and every visible thing
+        # you have already done, makes the next one less astonishing.
+        pub = sum(1 for k in self.done
+                  if set(self.nodes[k].get("traits", [])) & {"spectacle", "inexplicable"})
+        self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
+                                                   (0.5 * pub + 0.25 * (self.year - 100))))
+        self.update_protection()
+        self.scandal *= 0.90
+        # you can buy your way out of trouble, and a sane player does
+        if self.scandal > 8 and self.capital > 2000:
+            spend = min(self.capital * 0.12, self.scandal * 260)
+            self.capital -= spend
+            self.bribes_ytd = 0.7 * self.bribes_ytd + spend
+            self.scandal -= spend / 300.0 * self.w["bribability"]
+        else:
+            self.bribes_ytd *= 0.7
+        self.scandal = max(0.0, self.scandal)
+        if self.events and self.scandal > c["suspicion_danger"]:
+            p = (self.scandal - c["suspicion_danger"]) / 60.0
             if self.rng.random() < p:
-                self._catastrophe("denounced as a magician: property seized, school closed")
+                self._catastrophe("denounced: %s" % ("as a sorcerer" if self.w["w_magic_fear"] > 0.5
+                                                     else "as a subversive"))
 
         # 7. founder mortality
         if self.founder_alive:
@@ -510,10 +714,11 @@ class Sim:
         # Visible, useful, State-approved work builds standing. Obscure laboratory
         # work does not, however important it is, which is a real and annoying fact
         # about how credibility actually accrues.
-        gain = 0.6 + 0.5 * max(0, n["gov"]) + (1.2 if n["rev"] > 0 else 0.0) + 0.25 * n["tier"]
+        gain = (0.6 + 0.5 * max(0.0, self.state_interest(n))
+                + (1.2 if n["rev"] > 0 else 0.0) + 0.25 * n["tier"])
         self.reputation = min(100.0, self.reputation + gain)
-        self.suspicion += (n["sus"] + 3 * max(0, -n["gov"])) * self.suspicion_mult
-        self.gov += n["gov"]
+        self.scandal += self.alarm_of(n)
+        self.gov += self.state_interest(n)
         if k == "freedman_staff":     self.artisans += 8
         if k == "school_founded":     self.scholars += 4
         if k == "academy_network":    self.scholars += 10; self.artisans += 10
@@ -524,64 +729,67 @@ class Sim:
 
     # -- shocks -------------------------------------------------------------
     def _shocks(self, yr):
-        """The three dated catastrophes you have foreknowledge of, and cannot avoid.
+        """Dated catastrophes, read from the CIVILIZATION file.
 
-        You can only mitigate them, and the mitigations are cheap defensive nodes
-        with no technical payoff, which is exactly why a greedy strategy skips them
-        and then loses the run 130 years later.
+        Rome gets the Antonine plague and the third century crisis. England 1300
+        gets the Great Famine and the Black Death. The Mexica get the contact
+        epidemics, which are the most severe hazard in the whole directory and
+        are not a fair fight. None of it is hardcoded here any more.
         """
         r = self.rng
         prep = self.has("plague_preparedness")
-        for name, (a, b) in (("Antonine plague", SHOCKS["antonine_plague"]),
-                             ("Plague of Cyprian", SHOCKS["cyprian_plague"])):
-            if a <= yr <= b and r.random() < 0.34:
-                loss = 0.08 if prep else 0.32
-                self.scholars *= (1 - loss)
-                self.artisans *= (1 - loss)
-                self.directors_extra *= (1 - loss)
-                self.capital *= (1 - loss * 0.7)
-                self.log.append((yr, "%s: staff -%d%%%s"
-                                 % (name, loss * 100, " (mitigated)" if prep else "")))
-
-        a, b = SHOCKS["third_century_crisis"]
-        if a <= yr <= b:
-            p = 0.16
-            if self.has("academy_network"): p *= 0.40   # three sites, not one
-            if self.has("patron_imperial"): p *= 0.85
-            if self.has("endowment_land"):  p *= 0.85   # land survives what coin does not
-            if r.random() < p:
-                self.capital *= 0.40
-                self.artisans *= 0.55
-                self.scholars *= 0.55
-                self.directors_extra *= 0.65
-                for k in list(self.active):
-                    self.active[k]["ph_left"] = self.nodes[k]["ph"]
-                    self.active[k]["yrs"] = 0.0
-                self.log.append((yr, "third-century crisis: a site is sacked; work in hand is lost"))
-                # THE decisive mechanic: was the knowledge printed and dispersed?
-                if self.has("corpus_dispersed"):
-                    pl, frac = 0.12, 0.08
-                elif self.has("corpus_written"):
-                    pl, frac = 0.45, 0.22     # manuscripts in one place burn with the place
-                else:
-                    pl, frac = 0.80, 0.40
-                if r.random() < pl:
-                    losable = [k for k in self.done if self.nodes[k]["tier"] >= 2]
-                    if losable:
-                        drop = r.sample(losable, max(1, int(len(losable) * frac)))
-                        for k in drop:
-                            self.done.discard(k)
-                        self.log.append((yr, "KNOWLEDGE LOST: %d technologies forgotten%s"
-                                         % (len(drop),
-                                            "" if self.has("corpus_dispersed")
-                                            else " (the corpus was never printed and dispersed)")))
+        for h in self.civ.get("hazards", []):
+            a, b = h.get("years", [0, 0])
+            if not (a <= yr <= b):
+                continue
+            if "staff_loss" in h and r.random() < 0.32:
+                loss = h["staff_loss"] * (0.25 if prep else 1.0)
+                self.scholars *= (1 - loss); self.artisans *= (1 - loss)
+                self.directors_extra *= (1 - loss); self.capital *= (1 - loss * 0.6)
+                self.log.append((yr, "%s: staff -%d%%%s" % (h.get("name","hazard"),
+                                 loss * 100, " (mitigated)" if prep else "")))
+            if "sack_chance" in h:
+                p = h["sack_chance"]
+                if self.has("academy_network"): p *= 0.40
+                if self.has("endowment_land"):  p *= 0.85
+                if r.random() < p:
+                    self.capital *= 0.40
+                    self.artisans *= 0.55; self.scholars *= 0.55
+                    self.directors_extra *= 0.65
+                    for k in list(self.active):
+                        self.active[k]["ph_left"] = self.nodes[k]["ph"]
+                        self.active[k]["yrs"] = 0.0
+                    self.log.append((yr, "%s: a site is sacked" % h.get("name","crisis")))
+                    if self.has("corpus_dispersed"):   pl, frac = 0.12, 0.08
+                    elif self.has("corpus_written"):   pl, frac = 0.45, 0.22
+                    else:                              pl, frac = 0.80, 0.40
+                    if r.random() < pl:
+                        losable = [k for k in self.done if self.nodes[k]["tier"] >= 2]
+                        if losable:
+                            drop = r.sample(losable, max(1, int(len(losable) * frac)))
+                            for k in drop: self.done.discard(k)
+                            self.log.append((yr, "KNOWLEDGE LOST: %d technologies forgotten%s"
+                                % (len(drop), "" if self.has("corpus_dispersed")
+                                   else " (the corpus was never printed and dispersed)")))
+            if "output_factor" in h:
+                self.output_factor = min(self.output_factor, h["output_factor"])
+            if "real_erosion" in h:
+                self.money_real *= (1 - h["real_erosion"])
+                self.capital *= (1 - h["real_erosion"] * 0.85 *
+                                 (0.35 if self.has("endowment_land") else 1.0))
 
     def _random_events(self, yr):
         r = self.rng
-        if r.random() < 0.04 and self.has("patron_local"):
-            self.suspicion += 6
-            self.capital -= 800 * self.money_real
-            self.log.append((yr, "a patron dies; you must court his heir"))
+        # A patron dies ONCE and then you have courted his heir. The old model
+        # rolled 4% every year forever, so a long run logged the same line six
+        # times, which is not how having a patron works.
+        if (r.random() < 0.05 and self.has("patron_local")
+                and yr - getattr(self, "_last_patron_death", -99) > 25):
+            self._last_patron_death = yr
+            self.scandal += 4
+            self.protection *= 0.6
+            self.capital -= 800
+            self.log.append((yr, "your patron dies; his heir must be courted afresh"))
         if r.random() < 0.03:
             self.capital *= 0.82
             self.log.append((yr, "fire in the insula district"))
@@ -744,7 +952,8 @@ def _summarise(results, label):
         q = lambda p: ys[min(len(ys) - 1, int(p * len(ys)))]
         print("year reached        : best %d | p25 %d | median %d | p75 %d | worst %d"
               % (ys[0], q(.25), q(.5), q(.75), ys[-1]))
-        print("elapsed from 100 AD : median %d years" % (q(.5) - 100))
+        start = results[0].cfg["start_year"]
+        print("elapsed from %d AD  : median %d years" % (start, q(.5) - start))
     rep = sorted(r.reputation for r in results)
     print("final reputation    : median %.0f/100" % rep[len(rep) // 2])
     b = [r.bounties_paid for r in results]
@@ -779,7 +988,9 @@ def cmd_run(a):
     for i in range(a.mc):
         rng = random.Random(a.seed + i)
         s = Sim(nodes, order, rng, events=not a.no_events,
-                cfg={"immortal": not a.mortal},
+                cfg={"immortal": not a.mortal,
+                     "start_capital": STARTING_KITS[a.kit]["den"]},
+                civ=load_civ(a.civ),
                 bounty_set=(set() if a.no_bounties else bounties)).run(goal, a.horizon)
         res.append(s)
     _summarise(res, "%s%s" % (label, "  [events disabled]" if a.no_events else ""))
@@ -799,7 +1010,10 @@ def cmd_compare(a):
         except SystemExit:
             continue
         res = [Sim(nodes, order, random.Random(a.seed + i), events=True,
-                   cfg={"immortal": not getattr(a, "mortal", False)},
+                   cfg={"immortal": not getattr(a, "mortal", False),
+                        "start_capital": STARTING_KITS.get(getattr(a,"kit","poor_scholar"),
+                                                           STARTING_KITS["poor_scholar"])["den"]},
+                   civ=load_civ(getattr(a, "civ", "rome_100ad")),
                    bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
         _summarise(res, label)
@@ -1006,10 +1220,34 @@ def cmd_sweep(a):
     print("binding constraint has changed and so should your strategy.")
 
 
+def cmd_civs(a):
+    """List the civilizations you can play, and what makes each one different."""
+    for f in sorted(os.listdir(CIVDIR)):
+        if not f.endswith(".json"):
+            continue
+        c = json.load(open(os.path.join(CIVDIR, f)))
+        v = c["values"]
+        print("%-16s %s, %s" % (c["id"], c["name"], c["year"]))
+        print("   %s" % c.get("blurb", ""))
+        print("   population %s   state capacity %.2f   reach %d   starts with %d technologies"
+              % (f"{c.get('population',0):,}", c.get("state_capacity", 0),
+                 c.get("base_reach", 0), len(c.get("starting_techs", []))))
+        print("   fears the inexplicable %.2f | fears heterodoxy %.2f | resents machines %+.2f "
+              "| bribable %.2f | habituates %.2f"
+              % (v["w_magic_fear"], v["w_religious_rigidity"], v["w_labour_saving"],
+                 v["bribability"], v["adaptation_rate"]))
+        print()
+    print("starting kits (--kit):")
+    for k, d in STARTING_KITS.items():
+        print("   %-14s %9s den   %s" % (k, f"{d['den']:,}", d["desc"]))
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("validate")
+    sub.add_parser("civs")
     q = sub.add_parser("path"); q.add_argument("goal", nargs="?")
     q = sub.add_parser("costs"); q.add_argument("--top", type=int, default=20)
     q = sub.add_parser("why"); q.add_argument("node")
@@ -1027,6 +1265,10 @@ def main():
         q.add_argument("--horizon", type=int, default=500)
         q.add_argument("--no-events", action="store_true")
         q.add_argument("--no-bounties", action="store_true")
+        q.add_argument("--civ", default="rome_100ad",
+                       help="which civilization to play. See data/civilizations/")
+        q.add_argument("--kit", default="poor_scholar",
+                       help="starting wealth: " + ", ".join(STARTING_KITS))
         q.add_argument("--mortal", action="store_true",
                        help="turn the founder's mortality back on (default: immortal, "
                             "so the run measures the TREE and not a lifespan lottery)")
@@ -1041,7 +1283,7 @@ def main():
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
     a = p.parse_args()
-    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs, "why": cmd_why, "sweep": cmd_sweep,
+    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs, "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play,
             "sensitivity": cmd_sensitivity}[a.cmd](a)
 

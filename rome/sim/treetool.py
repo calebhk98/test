@@ -32,8 +32,51 @@ def load_trades():
     p = json.load(open(os.path.join(DATA, "prices.json")))
     return set(k for k in p["wage_rates_denarii_per_hour"] if not k.startswith("_"))
 
-REQUIRED = ["id","name","tier","cat","pre","ph","lab","mat","cap","up","yrs",
-            "risk","sus","gov","rev","sch","art","conf","note"]
+# Schema v2. `yrs`, `sus` and `gov` are v1 and are backfilled, not demanded.
+# Only these are genuinely required. Everything else has a sane default, because
+# rejecting a whole node over a missing `up` throws away real work.
+REQUIRED = ["id","name","tier","cat","pre","note"]
+DEFAULTS = {"ph":60,"lab":{},"mat":{},"cap":200,"up":40,"risk":0.15,"rev":0,
+            "sch":0,"art":1,"conf":"C","kb":""}
+
+def _num(v, d=0.0):
+    """Branch authors sometimes write a number as a string, or as a range like
+    '200-400'. Coerce rather than crash, and fall back to the default."""
+    if isinstance(v, (int, float)): return float(v)
+    if isinstance(v, str):
+        m = re.findall(r"-?\d+(?:\.\d+)?", v)
+        if m: return float(m[0])
+    return float(d)
+
+
+def normalise_v2(n):
+    for k, v in DEFAULTS.items():
+        n.setdefault(k, json.loads(json.dumps(v)))
+    for k, d in (("ph",60),("cap",200),("up",40),("risk",0.15),("rev",0),
+                 ("sch",0),("art",1),("tier",2)):
+        n[k] = _num(n.get(k), d)
+    n["risk"] = min(0.95, max(0.0, n["risk"]))
+    n["tier"] = int(n["tier"])
+    for fld in ("lab","mat"):
+        if not isinstance(n.get(fld), dict): n[fld] = {}
+        else: n[fld] = {k: _num(v, 0) for k, v in n[fld].items()}
+    if not isinstance(n.get("pre"), list): n["pre"] = []
+    if not isinstance(n.get("traits"), list): n["traits"] = []
+    """Accept either schema and leave the node in v2 shape with v1 fields
+    backfilled, so the simulator and the audit keep working during the change."""
+    if "build_yrs" not in n and "yrs" in n:
+        y = float(n.get("yrs", 0) or 0)
+        if y >= 5 and n.get("tier", 0) >= 3:
+            n["build_yrs"], n["adopt_yrs"] = min(3.0, y / 3.0), y
+        else:
+            n["build_yrs"], n["adopt_yrs"] = y, 0.0
+    n.setdefault("build_yrs", 0.0); n.setdefault("adopt_yrs", 0.0)
+    n["yrs"] = max(float(n["build_yrs"]), float(n["adopt_yrs"]))
+    n.setdefault("req_any", []); n.setdefault("traits", [])
+    n.setdefault("dev_years", None); n.setdefault("dev_people", None)
+    # v1 scalars are derived from traits so old code paths still run
+    n.setdefault("gov", 0); n.setdefault("sus", 0)
+    return n
 
 # ---------------------------------------------------------------- MERGE
 def load_aliases():
@@ -54,7 +97,7 @@ def cmd_merge(a):
     TRADES = load_trades()
     alias, dropset = load_aliases()
     base = json.load(open(TREE))
-    nodes = {n["id"]: n for n in base["nodes"]}
+    nodes = {n["id"]: normalise_v2(n) for n in base["nodes"]}
     for n in nodes.values():
         n.setdefault("_src", "core")
     errs, warns, added = [], [], 0
@@ -78,6 +121,7 @@ def cmd_merge(a):
             if n["id"] in nodes:
                 warns.append("%s: duplicate id %s, keeping the first" % (fn, n["id"]))
                 continue
+            normalise_v2(n)
             # resolve trade aliases rather than silently dropping the labour,
             # which would make the technology look cheaper than it is
             lab = {}
@@ -392,6 +436,13 @@ PREFIX_MODULE = {
  "pwr_":"40_power_precision.md","chm_":"20_chemistry.md","met_":"10_metallurgy.md",
  "prc_":"40_power_precision.md","med_":"70_medicine_biology.md","civ_":"85_transport_civil.md",
  "opt_":"30_glass_optics.md","tex_":"90_textiles.md","hom_":"91_household.md",
+ # schema v2 branches
+ "exp_":"95_expeditions.md","fin_":"96_finance.md","mil_":"97_military.md",
+ "ch2_":"20_chemistry.md","el2_":"50_electricity.md","mfg_":"40_power_precision.md",
+ "md2_":"70_medicine_biology.md","tr2_":"92_vehicles_flight.md","mt2_":"10_metallurgy.md",
+ "tx2_":"90_textiles.md","ag2_":"75_agriculture_food.md","in2_":"30_glass_optics.md",
+ "cv2_":"85_transport_civil.md","en2_":"93_energy.md","if2_":"80_information_printing.md",
+ "sc2_":"60_mathematics_method.md",
 }
 # com_ splits: calculation and logic go to module 94, everything that moves a
 # signal down a wire or through the air goes to module 50.
