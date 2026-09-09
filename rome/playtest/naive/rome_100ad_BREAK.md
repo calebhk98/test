@@ -152,3 +152,48 @@ Root-cause guess (not verified against source, per the rules): the per-year econ
 
 - Finding 2 (above): at year 100 in Trajan's Rome, `available` under fog of war listed things like nuclear fission (explicitly citing Meitner/Frisch 1938-39 and the Manhattan Project in its own summary text), Schrödinger wave mechanics (1926), and ANOVA statistics (Fisher, 1920s) as buildable **right now** for a few hundred denarii and a few hundred founder-hours, i.e. cheaper and faster than "Drawing office" (504 denarii) or "Coffee house as information market" (2610 denarii). I was not able to confirm whether `start`ing one of these would itself be blocked by a hidden prerequisite check, because by the time I found this, Finding 1 had already bricked `available`/`state` on every session I tried it against (this is itself telling: I never managed to get a long enough clean run to chase this before the save-corruption bug ate the session). Flagging as unverified but worth a second pass in a future session.
 
+
+---
+
+## FINDING 5 (critical — confirms and upgrades Finding 2): a lone Roman in 100 AD can be *taught and awarded* Nuclear fission and chain reaction, completed in the year 103
+
+Key discovery that unlocked this: **`state`/`available` only stay alive if `step` is called at least once *before* them.** Calling `step` first (even `{"cmd":"step","years":1}`) evidently initializes whatever field Finding 1 needs; calling `state`/`available`/`help` first does not, and permanently bricks the session (Finding 1) the moment it is saved and reloaded. This was confirmed on 10/10 fresh scratch sessions: `step`-first sessions stayed fully healthy across restarts; `state`/`available`/`help`-first sessions broke 100% of the time on the very next process start. (It is possible for `state` to also fail on its *very first ever* call without any reload in between — this happened for real on the graded session `rome_100ad_BREAK.json` itself, see Finding 1 — so the trigger condition may have a second, non-deterministic path in addition to the 100%-reliable "read-before-step" one; I could not fully pin that second path down, but the "step first" workaround reliably avoids it, which is what let me chase this finding at all.)
+
+Using a *healthy* scratch session (`step`'d first so nothing is bricked), on `{"cmd":"available"}` I confirmed year-100/101 Rome (fog of war ON) offers, as things "you could begin today", nodes such as:
+
+- `sc2_physics_nuclear_fission` — "Nuclear fission and chain reaction" — cost 252.0 denarii, your_hours 140.0, least_years 2.0, chance_of_failure 0.15
+- `sc2_physics_wave_mechanics` — "Wave mechanics and Schrödinger equation" — cost 316.8, your_hours 180.0, least_years 15.0
+
+I started nuclear fission (`{"cmd":"start","id":"sc2_physics_nuclear_fission"}`) in year 102. `{"cmd":"why",...}` on it, right after starting, showed:
+```
+"direct_prerequisites": [], "missing_prerequisites": [], "chain_size": 0, "chain_founder_hours": 0, "chain_cost": 0, "staff_needed": {"scholars": 0.0, "artisans": 1.0}, "hired_labour": {"scribe": 260.0}, "risk": 0.15
+```
+i.e. this is wired into the tech graph as a **root node with zero prerequisites**, needing one hired scribe and one artisan, no scholars at all, no physics groundwork of any kind first.
+
+I then stepped 2 years. The reply:
+```
+{"ok": true, "completed": [{"id": "sc2_physics_nuclear_fission", "name": "Nuclear fission and chain reaction", "year": 103}],
+ "events": [{"year": 103, "message": "completed: Nuclear fission and chain reaction"}],
+ "year": 104, ... "done_earned": 1, "knowledge_risk": {"technologies_at_risk": 1, ...}}
+```
+
+So: **in this simulation, Trajan's Rome in the year 103 AD successfully discovers and internalizes nuclear fission and the chain reaction** — a discovery the game's own flavour text dates to "Meitner and Frisch (1938-1939); Manhattan Project (1942-1945)" — using one hired scribe, 252 denarii, and 140 personal hours, in 2 years, with only a 15% chance of failure and no dependency on any other technology whatsoever (no atomic theory, no electricity, no vacuum equipment, nothing). I separately confirmed `sc2_physics_wave_mechanics` ("Schrödinger (1926)") is equally startable with `{"ok": true, "started": ...}` and no special handling — I did not additionally run it to completion, but see no reason it would behave differently. Double-starting an already-active project and using `bounty` on an already-active project were both correctly rejected, so the surrounding machinery is fine; the actual bug is specifically that this whole branch of "20th century theoretical/nuclear physics" content has no prerequisite edges wired into the tech graph at all under fog of war, so it surfaces immediately in turn 1's `available` list alongside genuinely-ancient items like "Wooden furniture" and "Sundial", and nothing stops you from completing it three years into the reign of Trajan.
+
+**Impact**: this is squarely "report a number that cannot be true" (the completion year, 103 AD, for nuclear fission) and "let you do something it clearly did not mean to allow" (there is no plausible reading of the game's own premise — "knowing how a thing works is free... building it is not" — under which a lone provincial administrator with a scribe should be able to build a fission chain reaction for the price of a market stall). Given the game explicitly gates the tech tree by prerequisites for ordinary items (`missing_prerequisites`, `direct_prerequisites`, `chain_size` are all populated fields the engine clearly tracks and enforces elsewhere — e.g. `path` correctly refuses to reveal routes to undiscovered nodes), this reads like specific tier-3 "modern science" content that was added without its prerequisite chain, rather than a deliberate design choice.
+
+---
+
+## Summary of what actually breaks the game
+
+1. **Finding 1** — calling `state`, `available`, or `help` before ever calling `step`, then restarting the process (the officially-documented `--session` workflow), permanently and irrecoverably breaks `state`/`available` on that save file with an uncaught `TypeError` (`NoneType doesn't define __round__`, or `'>=' not supported between NoneType and int`), despite the game claiming "the game is intact." 100% reproducible with the minimal repro in Finding 1. This also happened on the very first two commands of real play against the graded session itself.
+2. **Finding 3** — once a session is in that broken state, `step` also throws every time (`'NoneType' object is not iterable'`), but each failing call still *partially applies* an inconsistent, sign-flipped economic update: after the first (correct) −216 living-cost hit, every further failing `step` call *adds* ~85-100 free denarii, forever, while `save` proves the year never advances. This is an unlimited, zero-risk money exploit obtainable by pure accident (just by playing "correctly" — quitting and resuming — and then trying to keep going).
+3. **Finding 5** (with Finding 2 as its first sighting) — the tech-prerequisite graph is missing/broken for at least some tier-3 "modern science" content (nuclear fission confirmed startable *and completable*; wave mechanics confirmed startable), letting a 2nd-century Roman with one hired scribe discover nuclear fission in 2 years for 252 denarii.
+
+Workaround discovered for anyone continuing this playtest: **always issue at least one `{"cmd":"step","years":1}` before the first `state`/`available`/`help` in any new session**, to avoid Finding 1 entirely.
+
+## Things attacked hard and NOT broken (see also the list above)
+- Double `start` on an already-active project → clean `"already active"` error.
+- `bounty` on an already-active project → clean, informative error.
+- Buying a wildly oversized slave order (100,000) → clean rejection with a sane, escalating price-impact model ("the market moves against a purchase this size") rather than a crash or an exploitable price.
+- `step` argument validation (`years:0`, negative, non-integer) is solid.
+- Unknown command / malformed JSON / missing `cmd` field are all handled gracefully without crashing the process.

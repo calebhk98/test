@@ -168,6 +168,39 @@ kr = r[0]["knowledge_risk"]
 check("no loss risk is reported where nothing sacks",
       kr["expected_technologies_lost_per_sacking"] == 0.0, str(kr)[:80])
 
+# --- naive BREAK: read-only commands before the first step
+r, _, rc = proto([{"cmd": "available"}, {"cmd": "state"}, {"cmd": "help"}])
+check("state/available/help work before the first step",
+      rc == 0 and all(x.get("ok") for x in r), str(r[:1])[:90])
+
+# --- naive C/A/BREAK: save then restart must not brick the game
+import tempfile
+sp = os.path.join(tempfile.mkdtemp(), "sess.json")
+proto([{"cmd": "state"}], )  # warm
+subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "agent",
+                "--session", sp], input='{"cmd":"state"}\n',
+               capture_output=True, text=True, timeout=300, cwd=ROOT)
+p2 = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "agent",
+                     "--session", sp], input='{"cmd":"state"}\n',
+                    capture_output=True, text=True, timeout=300, cwd=ROOT)
+check("a saved game reloads without bricking",
+      '"ok": true' in p2.stdout, p2.stdout[:90])
+
+# --- naive BREAK: no advanced physics on the first morning
+early = {"sc2_physics_nuclear_fission", "sc2_physics_wave_mechanics",
+         "el2_sonar_acoustic_detection_ranging", "el2_photomultiplier_single_photon"}
+r, _, _ = proto([{"cmd": "available"}])
+offered = {a["id"] for a in r[0]["available"]} & early
+check("no advanced physics is startable in year one", not offered, str(offered))
+
+# --- naive A: debasement must not make everything cheaper
+s = sim()
+base = s.cost_money_factor()
+s.money_real = 0.005
+check("a debased currency does not collapse prices",
+      abs(s.cost_money_factor() - base) < 1e-9,
+      "%.4f -> %.4f" % (base, s.cost_money_factor()))
+
 # --- reproducibility: the same seed must give the same answer
 outs = set()
 for _ in range(2):
@@ -178,7 +211,7 @@ for _ in range(2):
 check("the same seed gives the same result", len(outs) == 1)
 
 print("=" * 72)
-print("%d checks, %d failures" % (16, len(FAILURES)))
+print("%d checks, %d failures" % (20, len(FAILURES)))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)

@@ -22262,7 +22262,9 @@
    "name": "Substitution and polyalphabetic ciphers",
    "note": "Caesar cipher (shift alphabet by N) was known to Rome. Vigenere cipher (shift depends on a repeating key) was stronger (1553 onward). Both are vulnerable to frequency analysis (common letters are obvious). The Vigenere cipher remained unbroken until the 19th century (Kasiski examination), making it militarily useful for 300 years. Encryption was the luxury of armies and empires; telegraph traffic required it, making cryptography a core technology. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "ph": 80.0,
-   "pre": [],
+   "pre": [
+    "corpus_written"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.05,
@@ -28802,7 +28804,11 @@
    "name": "Photomultiplier single photon detector",
    "note": "Gain millions; extremely sensitive to light; dark current limits sensitivity; useful for weak light detection and scintillation counters. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "ph": 140.0,
-   "pre": [],
+   "pre": [
+    "el2_photocell_vacuum_gas_photoelectric",
+    "vacuum_tube",
+    "cap_vac_1e6"
+   ],
    "req_any": [
     {
      "group": "photocathode",
@@ -29909,7 +29915,11 @@
    "name": "Sonar acoustic detection and ranging",
    "note": "Frequency 20 kHz to MHz for resolution; attenuation in water limits range; multibeam arrays scan volume; target motion analysis reveals speed.",
    "ph": 180.0,
-   "pre": [],
+   "pre": [
+    "el2_amplifier_gain_voltage_current",
+    "el2_triode_amplifying_tube",
+    "cap_power_electric"
+   ],
    "req_any": [
     {
      "group": "transducer",
@@ -69758,7 +69768,10 @@
    "name": "Dimensioning and tolerancing conventions",
    "note": "Defines basic size, deviation, fit type. All operators read from the same playbook. Reduces ambiguity that causes scrap.",
    "ph": 160.0,
-   "pre": [],
+   "pre": [
+    "cap_measure_len",
+    "mfg_drawing_office"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.1,
@@ -95300,7 +95313,11 @@
    "name": "Nuclear fission and chain reaction",
    "note": "Meitner and Frisch (1938-1939); Manhattan Project (1942-1945). Teaching: Einstein's E = mc\u00b2, mass defect, reaction rates. Adoption: immediate military application (bomb and reactor).",
    "ph": 140.0,
-   "pre": [],
+   "pre": [
+    "sc2_physics_wave_mechanics",
+    "in2_geiger_counter",
+    "analytical_chemistry"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.15,
@@ -95648,7 +95665,11 @@
    "name": "Wave mechanics and Schr\u00f6dinger equation",
    "note": "Schr\u00f6dinger (1926). Teaching is technically hard and philosophically confusing (wave vs particle). Adoption: slow but now universal in quantum chemistry.",
    "ph": 180.0,
-   "pre": [],
+   "pre": [
+    "sc2_calculus_pde",
+    "atomic_theory",
+    "sc2_physics_photoelectric_effect"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.15,
@@ -95889,7 +95910,9 @@
    "name": "Analysis of variance (ANOVA)",
    "note": "Fisher (1920s). Teaching: one-way then multi-way. Adoption by agricultural and later all experimental science.",
    "ph": 140.0,
-   "pre": [],
+   "pre": [
+    "sc2_probability_normal_distribution"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.15,
@@ -111898,7 +111921,9 @@
    "name": "Mothproofing: insect resistance",
    "note": "Toxic treatment repels moths, essential for wool storage, formulations including arsenic compounds, durability limited",
    "ph": 90.0,
-   "pre": [],
+   "pre": [
+    "chm_benzene"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.15,

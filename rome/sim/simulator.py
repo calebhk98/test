@@ -328,6 +328,7 @@ class Sim:
         self.dead_reason = None
         self.goal_year = None
         self.money_real = 1.0     # purchasing power of a denarius, 1.0 at 100 AD
+
         self.economy = 1.0        # size of the imperial economy relative to 100 AD
         self.output_factor = 1.0  # real output, crushed by war and plague, not by debasement
         self.director_hours_spent_founder = 0.0
@@ -1048,6 +1049,25 @@ class Sim:
         return (2500.0 * self.economy * self.state_capacity * self.pop_scale ** 0.4
                 * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor())
 
+    def cost_money_factor(self):
+        """What a denarius of QUOTED cost means, for spending purposes.
+
+        This exists because money_real was being multiplied into every price,
+        and money_real FALLS as the currency is debased. So the worse the money
+        got, the cheaper everything became: a naive tester found a pawnshop
+        quoted at 5 denarii in 278 AD that had cost 1,025 when they built one in
+        160, and correctly said debasement should push nominal prices UP, not
+        collapse them by two orders of magnitude. They guessed the cause exactly:
+        a multiplier tending to zero being multiplied in rather than divided.
+
+        The model is in REAL terms. Debasement destroys the value of CASH, which
+        is already handled by taking a haircut off capital when it fires. Real
+        prices do not fall, so nothing here tracks money_real; it survives only
+        as something to report. Applying both would have been a double count in
+        opposite directions.
+        """
+        return float(self.price_index)
+
     def revenue(self):
         r = 0.0
         for k in self.done:
@@ -1495,7 +1515,7 @@ class Sim:
         # node while `bounty` demanded 588 for the same thing, because the
         # bounty ignored the civilization and price factors the build applies.
         price = (n["_total_cost"] * 2.5 * self.civ_cost_factor(k)
-                 * self.material_cost_factor(k) * self.money_real)
+                 * self.material_cost_factor(k) * self.cost_money_factor())
         if price > self.capital:
             return False
         self.capital -= price
@@ -1572,7 +1592,7 @@ class Sim:
         # horizon. First hatch: creditors care about PERSISTENT insolvency, not
         # one bad year. Second: anything you can fund from this year's income
         # needs nobody's permission.
-        cheap_enough = (n["_total_cost"] * self.money_real * self.civ_cost_factor(k)
+        cheap_enough = (n["_total_cost"] * self.cost_money_factor() * self.civ_cost_factor(k)
                         <= max(800.0, self.revenue()))
         if (getattr(self, "insolvent_years", 0) >= 3
                 and not cheap_enough
@@ -1811,7 +1831,7 @@ class Sim:
                 # located material (mat_gutta_percha and the like) costs more
                 # or less to reach depending on how far THIS civ actually is
                 # from it, not on Rome's distance to it.
-                if (n["_total_cost"] * self.money_real * self.civ_cost_factor(k)
+                if (n["_total_cost"] * self.cost_money_factor() * self.civ_cost_factor(k)
                         * self.material_cost_factor(k)) > self.capital * 3 + self.revenue() * 6:
                     continue
                 if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
@@ -1880,7 +1900,7 @@ class Sim:
                 # material_cost_factor: how far THIS civilization is from
                 # wherever geography.json says this thing actually comes
                 # from. 1.0 for every node that is not a located material.
-                money = (n["_total_cost"] * frac * self.money_real * opposition
+                money = (n["_total_cost"] * frac * self.cost_money_factor() * opposition
                          * self.civ_cost_factor(k) * self.material_cost_factor(k))
                 self._spend_this_year = getattr(self, "_spend_this_year", 0.0) + money
                 hh = n["_hired_hours"] * frac
@@ -2010,7 +2030,7 @@ class Sim:
             self.failed_attempts[k] += 1
             self.active[k]["ph_left"] = n["ph"] * 0.4
             self.active[k]["yrs"] = 0.0
-            self.capital -= n["_total_cost"] * 0.4 * self.money_real
+            self.capital -= n["_total_cost"] * 0.4 * self.cost_money_factor()
             return
         del self.active[k]
         self.bountied.discard(k)
@@ -2605,7 +2625,7 @@ def _agent_available(s, nodes):
             out.append({"id": k, "name": n["name"],
                         "summary": s.fog_summary(k),
                         "cost": round(n["_total_cost"] * s.civ_cost_factor(k)
-                                      * s.material_cost_factor(k) * s.money_real, 1),
+                                      * s.material_cost_factor(k) * s.cost_money_factor(), 1),
                         "your_hours": n["ph"],
                         "least_years": n["yrs"],
                         "chance_of_failure": n["risk"]})
@@ -2655,7 +2675,7 @@ def _node_explain(s, nodes, k):
                  "material_distance_factor": round(s.material_cost_factor(k), 3),
                  "price_index": round(s.money_real, 3),
                  "total": round(n["_total_cost"] * s.civ_cost_factor(k)
-                                * s.material_cost_factor(k) * s.money_real, 1)},
+                                * s.material_cost_factor(k) * s.cost_money_factor(), 1)},
         "upkeep": n["up"], "revenue": n["rev"],
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
@@ -2769,7 +2789,7 @@ def _agent_dispatch(s, nodes, cmd):
             return {"ok": False, "error": "not bounty-eligible (tier %d, category %s): a Roman "
                                           "artisan could not recognise success at this" % (n["tier"], n["cat"])}
         price = (nodes[k]["_total_cost"] * 2.5 * s.civ_cost_factor(k)
-                 * s.material_cost_factor(k) * s.money_real)
+                 * s.material_cost_factor(k) * s.cost_money_factor())
         if not s.post_bounty(k):
             return {"ok": False, "error": "cannot afford the bounty: needs about %.0f denarii, "
                                           "you have %.0f. Earn or wait, then try again" % (price, s.capital)}
