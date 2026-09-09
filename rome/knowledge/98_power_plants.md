@@ -18,7 +18,7 @@ Also covers: en_treadwheel, en_horse_gin
 
 **Roman-available inputs.** Oak or elm wheel; iron bar (ferrum, Noricum) for gearing.
 
-**Procedure.** Build paddle wheel geared to shaft on any stream; for a gin, harness draft animal to a geared beam.
+**Procedure.** Build paddle wheel geared to shaft on any stream; for a gin, harness draft animal to.
 
 **How you know it worked.** Shaft turns steadily under load.
 
@@ -146,7 +146,7 @@ Also covers: en_tower_mill
 
 **Cost & labour.** ESTIMATED: weeks for post mill, months with masonry for tower.
 
-**Danger.** Being struck by a moving sail is a recorded common cause of death.
+**Danger.** Being struck by a moving sail is a recorded common cause.
 
 **Confidence: HIGH** - well attested medieval and early modern practice.
 
@@ -164,7 +164,7 @@ Also covers: en_spring_sail, en_windmill_fantail
 
 **Procedure.** Fit spring-tensioned shutters linked to a control rod; mount fantail rotor geared to the slewing ring.
 
-**How you know it worked.** Shutters open in a gust and speed stays roughly constant.
+**How you know it worked.** Shutters open in a gust and speed stays roughly.
 
 **Failure modes.** Fatigued spring lets shutters flap; rusted fantail gearing seizes and the mill runs broadside.
 
@@ -186,7 +186,7 @@ Also covers: en_wind_electric
 
 **Roman-available inputs.** Bronze pump valves; iron pump rod.
 
-**Procedure.** Replace millstone drive with crank and pump rod to a header tank; add step-up gearing to a dynamo for the electric form.
+**Procedure.** Replace millstone drive with crank and pump rod to a header tank; add step-up gearing to.
 
 **How you know it worked.** Tank fills steadily; pump rod does not bind.
 
@@ -212,13 +212,13 @@ Also covers: en_double_acting
 
 **Procedure.** Bore true cylinder, fit packed piston, fit boiler and beam linkage to pump rod.
 
-**How you know it worked.** Piston completes full strokes and the pump lifts water each cycle.
+**How you know it worked.** Piston completes full strokes and the pump lifts water.
 
 **Failure modes.** Packing leak loses vacuum; injection valve stuck open floods the cylinder.
 
 **Cost & labour.** ESTIMATED: a skilled foundry crew, weeks.
 
-**Danger.** LOW pressure, no explosion risk; the beam's weight is the main hazard.
+**Danger.** LOW pressure, no explosion risk; the beam's weight is the main.
 
 **Confidence: HIGH** - Newcomen's cycle is extremely well attested.
 
@@ -260,7 +260,7 @@ Also covers: en_steam_turbine_curtis, en_steam_turbine_reaction
 
 **Procedure.** Machine nozzles to precise throat dimension; machine and balance the bladed rotor.
 
-**How you know it worked.** Rotor reaches design speed with no vibration by hand on the casing.
+**How you know it worked.** Rotor reaches design speed with no vibration by hand.
 
 **Failure modes.** Wet steam erodes blades rapidly; a cracked blade at speed is a shrapnel event.
 
@@ -284,13 +284,13 @@ Also covers: en_boiler_wagon
 
 **Procedure.** Braze or rivet the shell; stay flat ends with iron rods; fit safety valve before firing.
 
-**How you know it worked.** Holds steady pressure, no visible seam leak over a day.
+**How you know it worked.** Holds steady pressure, no visible seam leak over a.
 
 **Failure modes.** Seam brazing fails under thermal cycling; flat ends bulge and tear.
 
 **Cost & labour.** ESTIMATED: weeks of coppersmith work.
 
-**Danger.** HIGH even at low pressure - a sudden seam failure sprays scalding steam.
+**Danger.** HIGH even at low pressure - a sudden seam failure sprays.
 
 **Confidence: HIGH** - the best-documented earliest boiler forms.
 
@@ -306,17 +306,17 @@ Also covers: en_boiler_lancashire, en_boiler_locomotive
 
 **Roman-available inputs.** Wrought iron plate and rivets.
 
-**Procedure.** Fit one or two internal fire tubes, or a firebox with crown sheet and small-tube bank; fit gauge glass and a fusible plug.
+**Procedure.** Fit one or two internal fire tubes, or a firebox with crown sheet and small-tube bank.
 
-**How you know it worked.** Gauge shows a stable water level with the fire lit.
+**How you know it worked.** Gauge shows a stable water level with the fire.
 
 **Failure modes.** Crown sheet failure from low water ("blew its crown") is the classic explosion cause.
 
 **Cost & labour.** ESTIMATED: a specialist boilershop for months.
 
-**Danger.** HIGH - the fusible plug melts and vents steam before the iron fails catastrophically.
+**Danger.** HIGH - the fusible plug melts and vents steam before the.
 
-**Confidence: HIGH** - crown sheet failure is a well-documented cause of boiler deaths.
+**Confidence: HIGH** - crown sheet failure is a well-documented cause of.
 
 ---
 
@@ -364,7 +364,7 @@ Also covers: en_condenser_jet, en_condenser_surface
 
 **Danger.** LOW physically; socially this was Watt's most fiercely litigated patent (1769-1800).
 
-**Confidence: HIGH** - the three-quarters fuel-waste figure is Watt's own documented measurement.
+**Confidence: HIGH** - the three-quarters fuel-waste figure is Watt's own documented.
 
 ---
 
@@ -380,7 +380,7 @@ Also covers: en_cutoff_valve, en_corliss_valve
 
 **Procedure.** Fit a slide or trip valve with adjustable cutoff; lap valve faces flat.
 
-**How you know it worked.** Fuel use falls as cutoff shortens, until power visibly suffers.
+**How you know it worked.** Fuel use falls as cutoff shortens, until power visibly.
 
 **Failure modes.** Valve seat wear reintroduces leakage; wrong timing makes the engine knock.
 
@@ -388,7 +388,7 @@ Also covers: en_cutoff_valve, en_corliss_valve
 
 **Danger.** LOW beyond the base engine's own pressure hazard.
 
-**Confidence: HIGH** - the 20 percent gain is a standard cited figure.
+**Confidence: HIGH** - the 20 percent gain is a standard cited.
 
 ---
 
@@ -404,7 +404,7 @@ Also covers: en_feedwater_heater, en_superheater
 
 **Procedure.** Route a tube bank through the flue; route feedwater through a coil heated by exhaust steam.
 
-**How you know it worked.** Chimney gas feels cooler by hand-test; steam shows no wetness on a briefly-held plate.
+**How you know it worked.** Chimney gas feels cooler by hand-test; steam shows no.
 
 **Failure modes.** Superheater tubes scale and oxidise fastest of anything in the boiler.
 
@@ -484,7 +484,7 @@ Also covers: en_turbine_condenser_vacuum
 
 **Danger.** HIGH - a burst rotor disc at speed is lethal nearby.
 
-**Confidence: MEDIUM** - solid physics, but the sensitivity figure is a rule of thumb.
+**Confidence: MEDIUM** - solid physics, but the sensitivity figure is a.
 
 ---
 
@@ -506,7 +506,7 @@ Also covers: en_two_stroke_cycle, en_gas_engine
 
 **Cost & labour.** ESTIMATED: weeks to months per engine.
 
-**Danger.** MEDIUM - a flawed cylinder's explosion is violent, though contained compared to a boiler.
+**Danger.** MEDIUM - a flawed cylinder's explosion is violent, though contained compared.
 
 **Confidence: HIGH** - figures are well documented for these historical engines.
 
@@ -524,7 +524,7 @@ Also covers: en_carburetted_engine, en_compression_ignition
 
 **Procedure.** Fit a glowing bulb chamber, or a Venturi and float chamber; preheat before first start.
 
-**How you know it worked.** Reliable restart from a warm bulb or cold-cranking compression alone.
+**How you know it worked.** Reliable restart from a warm bulb or cold-cranking compression.
 
 **Failure modes.** Hot bulb goes cold and won't restart; carburettor float sticks.
 
@@ -548,7 +548,7 @@ Also covers: en_sleeve_valve, en_fuel_injection
 
 **Procedure.** Cut cam profiles to required timing; fit matched valve springs.
 
-**How you know it worked.** Quiet valve train; injected fuel forms a fine haze, not a stream.
+**How you know it worked.** Quiet valve train; injected fuel forms a fine haze.
 
 **Failure modes.** Spring fatigue lets a valve float and strike the piston.
 
@@ -556,7 +556,7 @@ Also covers: en_sleeve_valve, en_fuel_injection
 
 **Danger.** MEDIUM, moving-machinery and high-pressure fuel hazards.
 
-**Confidence: MEDIUM-HIGH** - 200-atmosphere injection at Roman-adjacent tooling is the open question.
+**Confidence: MEDIUM-HIGH** - 200-atmosphere injection at Roman-adjacent tooling is the open.
 
 ---
 
@@ -628,7 +628,7 @@ Also covers: en_jet_engine, en_rocket_motor, en_liquid_propellant
 
 **Danger.** HIGH - uncontained failure at these temperatures is instantly lethal nearby.
 
-**Confidence: LOW-MEDIUM** - materials and tolerances sit at or beyond this tree's earlier metallurgy.
+**Confidence: LOW-MEDIUM** - materials and tolerances sit at or beyond this.
 
 ---
 
@@ -668,7 +668,7 @@ Also covers: en_battery_nickel_iron
 
 **Procedure.** Cast differing lead plates; assemble in an acid-resistant case; charge slowly on first fill.
 
-**How you know it worked.** A cell holds measurable voltage for hours after charging stops.
+**How you know it worked.** A cell holds measurable voltage for hours after charging.
 
 **Failure modes.** Overcharge gassing is a fire hazard; undercharge sulfates the plates permanently.
 
@@ -764,7 +764,7 @@ Also covers: en_grid_interconnection, en_frequency_standardisation, en_power_fac
 
 **Procedure.** House step-down transformers, switchgear, and protection together; link substations in a mesh.
 
-**How you know it worked.** Voltage across town stays within a narrow band through the day.
+**How you know it worked.** Voltage across town stays within a narrow band through.
 
 **Failure modes.** Transformer oil overheats and can rupture catastrophically.
 
@@ -772,7 +772,7 @@ Also covers: en_grid_interconnection, en_frequency_standardisation, en_power_fac
 
 **Danger.** HIGH, combining every transformer and switchgear hazard at scale.
 
-**Confidence: MEDIUM** - the 50/60 Hz standard and diversity range are period conventions, not physical constants.
+**Confidence: MEDIUM** - the 50/60 Hz standard and diversity range are.
 
 ---
 
@@ -836,15 +836,15 @@ Also covers: en_hydraulic_power_main
 
 **Procedure.** Fit a weighted piston accumulator downstream of the pump; lay cast iron main to actuators.
 
-**How you know it worked.** Pressure at the far end stays in useful range during a demand burst.
+**How you know it worked.** Pressure at the far end stays in useful range.
 
 **Failure modes.** A burst main floods streets and cuts every downstream actuator.
 
 **Cost & labour.** ESTIMATED: a season's crew, pipe-laying dominates cost.
 
-**Danger.** A burst main can knock a person down; bleed pressure before servicing.
+**Danger.** A burst main can knock a person down; bleed pressure before.
 
-**Confidence: HIGH** - the historical London and Manchester networks are documented working examples.
+**Confidence: HIGH** - the historical London and Manchester networks are documented.
 
 ---
 
@@ -858,7 +858,7 @@ Also covers: en_peat_fuel, en_coal_mining_washing
 
 **Roman-available inputs.** Managed coppice (established Roman practice, 75_agriculture_food.md); bog peat (Britain, Germania); coal (known but barely exploited in Roman Britain).
 
-**Procedure.** Stack cut wood in an earth-covered clamp with a controlled vent; air-dry peat a full season; wash coal in a flowing trough.
+**Procedure.** Stack cut wood in an earth-covered clamp with a controlled vent; air-dry peat a full season.
 
 **How you know it worked.** Charcoal rings and breaks with a clean, brittle fracture.
 
@@ -866,9 +866,9 @@ Also covers: en_peat_fuel, en_coal_mining_washing
 
 **Cost & labour.** ESTIMATED: days per batch; the land is the real, ongoing cost.
 
-**Danger.** Carbon monoxide poisoning tending a clamp; coal mining carries roof collapse and firedamp risk.
+**Danger.** Carbon monoxide poisoning tending a clamp; coal mining carries roof collapse.
 
-**Confidence: HIGH** - coppice yield and conversion figures are standard, widely cited.
+**Confidence: HIGH** - coppice yield and conversion figures are standard, widely.
 
 ---
 
@@ -882,7 +882,7 @@ Also covers: en_town_gas_retort, en_gas_holder, en_gas_producer
 
 **Roman-available inputs.** Coal or wood feedstock; cast iron oven and pipework.
 
-**Procedure.** Heat coal in a sealed chamber collecting gas; scrub through water to strip ammonia and tar; store under a water-sealed bell.
+**Procedure.** Heat coal in a sealed chamber collecting gas; scrub through water to strip ammonia and tar.
 
 **How you know it worked.** Coke rings clean and grey when struck.
 
@@ -890,9 +890,9 @@ Also covers: en_town_gas_retort, en_gas_holder, en_gas_producer
 
 **Cost & labour.** ESTIMATED: months to build a gasworks, ongoing skilled labour to run.
 
-**Danger.** HIGH - carbon monoxide poisoning and gas explosion are well documented hazards.
+**Danger.** HIGH - carbon monoxide poisoning and gas explosion are well documented.
 
-**Confidence: HIGH** - coking and town gas manufacture are extremely well documented.
+**Confidence: HIGH** - coking and town gas manufacture are extremely well.
 
 ---
 
@@ -906,7 +906,7 @@ Also covers: en_oil_shale_retorting, en_oil_refining_distillation, en_oil_cracki
 
 **Roman-available inputs.** Iron bar for drill string; copper for retort and condensers; oil seeps were known to Rome, never systematically drilled.
 
-**Procedure.** Sink a well by cable-tool or rotary rig with mud; feed crude to a heated fractionating column.
+**Procedure.** Sink a well by cable-tool or rotary rig with mud; feed crude to a heated fractionating.
 
 **How you know it worked.** Distinct fractions collect at different tray levels.
 
@@ -914,9 +914,9 @@ Also covers: en_oil_shale_retorting, en_oil_refining_distillation, en_oil_cracki
 
 **Cost & labour.** ESTIMATED: a season's crew for drilling, a further coppersmithing project for refining.
 
-**Danger.** HIGH for drilling (blowout, fire) and cracking furnaces (hydrocarbon vapour at any leak).
+**Danger.** HIGH for drilling (blowout, fire) and cracking furnaces (hydrocarbon vapour at.
 
-**Confidence: MEDIUM** - deep rotary drilling at Roman-adjacent tooling is genuinely uncertain.
+**Confidence: MEDIUM** - deep rotary drilling at Roman-adjacent tooling is genuinely.
 
 ---
 
@@ -930,9 +930,9 @@ Also covers: en_kerosene, en_fuel_oil, en_lubricating_oil
 
 **Roman-available inputs.** Refined crude oil fractions; none of these have a Roman name.
 
-**Procedure.** Draw the desired cut from the column; test flash point at a safe distance; store sealed away from flame.
+**Procedure.** Draw the desired cut from the column; test flash point at a safe distance; store sealed.
 
-**How you know it worked.** Petrol ignites readily from a spark at safe test distance.
+**How you know it worked.** Petrol ignites readily from a spark at safe test.
 
 **Failure modes.** Petrol vapour pooling and igniting from a spark yards away; unheated fuel oil won't flow in cold weather.
 
@@ -940,7 +940,7 @@ Also covers: en_kerosene, en_fuel_oil, en_lubricating_oil
 
 **Danger.** Petrol vapour is the most acutely dangerous substance in this module.
 
-**Confidence: HIGH** - refining fractions and their properties are extremely well documented.
+**Confidence: HIGH** - refining fractions and their properties are extremely well.
 
 ---
 

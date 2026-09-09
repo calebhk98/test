@@ -142,7 +142,7 @@ STARTING_KITS = {
     "merchant":    {"den": 4000,  "desc": "a modest trading capital. You can fund one real venture."},
     "rich_merchant":{"den": 20000,"desc": "wealthy but well under the equestrian census of 100,000."},
     "equestrian":  {"den": 100000,"desc": "the equestrian census exactly. Conspicuous."},
-    "absurd":      {"den": 1000000,"desc": "four senatorial fortunes in unminted gold. Included to show that it makes things WORSE, not better."},
+    "absurd":      {"den": 1000000,"desc": "four senatorial fortunes in unminted gold. It used to make things worse and no longer does: once money can be converted into protection and into sunk mines, wealth helps. What it does NOT do is make you a magician, and across the whole kit range the medians sit inside the noise band anyway."},
 }
 
 DEFAULTS = dict(

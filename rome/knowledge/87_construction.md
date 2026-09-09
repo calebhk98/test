@@ -57,7 +57,7 @@ Also covers: cn_stone_saw, cn_stone_polish, cn_gang_saw.
 **What it is.** Compression-only load path around an opening. Already extensive Roman practice.
 Also covers: cn_groin_vault, cn_ribbed_vault, cn_flying_buttress.
 
-**Why never guess.** Missing is not the arch but calculating safe thickness instead of copying a proportion into a bigger arch where it quietly fails. The thrust line, the true compression path, must stay inside the stone everywhere; nobody in 100 AD can compute that curve, so they build thick and watch.
+**Why never guess.** Missing is not the arch but calculating safe thickness instead of copying a proportion into a bigger arch where it quietly fails. The thrust line, the true compression path, must stay inside the stone everywhere; nobody in 100 AD can compute that curve, so they build thick.
 
 **Prerequisites.** `cap_tol_1mm`, cn_quarrying_wedge, centring carpentry.
 
@@ -148,7 +148,7 @@ Also covers: cn_siphon, cn_sewer_system, cn_water_main.
 **What it is.** A binder fired hot enough to clinker, not merely calcine, giving strength and consistency pozzolana cannot match batch to batch.
 Also covers: cn_rotary_cement_kiln, cn_cement_clinker_grinding, cn_gypsum_plaster, cn_artificial_stone.
 
-**Why never guess.** "Cement" tricks a visitor into thinking Rome has this. Lime burning calcines around 900-1000 C; Portland clinker needs roughly 1450 C, hot enough the raw meal partly melts and recombines into calcium silicates pozzolana never forms, a different kiln, not a stronger old one. Grinding the clinker after matters almost as much as firing: unground clinker is nearly inert.
+**Why never guess.** "Cement" tricks a visitor into thinking Rome has this. Lime burning calcines around 900-1000 C; Portland clinker needs roughly 1450 C, hot enough the raw meal partly melts into calcium silicates pozzolana never forms, a different kiln, not a stronger old one. Grinding the clinker matters almost as much as firing: unground clinker is nearly inert.
 
 **Prerequisites.** `cap_heat_1600` (~`10_metallurgy.md#high_temp_furnace`), limestone/clay quarrying, a mechanical mill (`40_power_precision.md#water_power_scaleup`).
 
@@ -171,7 +171,7 @@ Also covers: cn_rotary_cement_kiln, cn_cement_clinker_grinding, cn_gypsum_plaste
 **What it is.** The plain beam across two supports, and the mathematics of why it holds or breaks, which nobody in 100 AD has though everybody builds beams.
 Also covers: cn_cantilever.
 
-**Why never guess.** The real kernel of this module. A loaded beam bends: top fibre shortens (compression), bottom stretches (tension), a neutral plane between carries nothing. Stone and plain concrete are weak in tension, so they fail bottom-up, invisible until nearly through. Deflection scales with the *cube* of span, so doubling length gives eight times the sag for the same load, why copying a proportion at twice scale fails badly. A cantilever's fixed end carries the full moment alone, worst exactly where it can't be seen.
+**Why never guess.** The real kernel of this module. A loaded beam bends: top fibre shortens (compression), bottom stretches (tension), a neutral plane between carries nothing. Stone and plain concrete are weak in tension, failing bottom-up, invisible until nearly through. Deflection scales with the *cube* of span, so doubling length gives eight times the sag for the same load, why copying a proportion at twice scale fails badly. A cantilever's fixed end carries the full moment alone, worst where it can't be seen.
 
 **Prerequisites.** `cap_tol_1mm`, timber or dressed stone.
 
@@ -194,7 +194,7 @@ Also covers: cn_cantilever.
 **What it is.** A triangular timber frame converting bending into pure tension and compression, spanning further than one beam.
 Also covers: cn_queen_post, cn_timber_truss, cn_trussed_arch.
 
-**Why never guess.** Wood is strong along the grain, weak in long unsupported bending. Triangulate it, a central post in pure compression, rafters and tie beam closing a triangle, and every member works its strong direction, at the cost of needing every joint to actually hold.
+**Why never guess.** Wood is strong along the grain, weak in long unsupported bending. Triangulate it, a post in pure compression, rafters and tie beam closing a triangle, and every member works its strong direction, at the cost of needing every joint to actually hold.
 
 **Prerequisites.** cn_post_lintel, joinery, iron strap at tie joints.
 
@@ -217,7 +217,7 @@ Also covers: cn_queen_post, cn_timber_truss, cn_trussed_arch.
 **What it is.** A beam cast in iron, far stronger in compression than stone or timber. First item gated on the metal itself, not calculation.
 Also covers: cn_iron_column.
 
-**Why never guess.** The classic killer: cast iron is brittle, weaker in tension than compression by roughly a third to half (ESTIMATED, known grey-iron ratios), almost no warning before snapping. A beam's bottom fibre is in tension, exactly where stone-trained instinct says thickness matters least. Columns are the opposite done right: pure compression, cast iron's strength, so hollow cast iron columns genuinely work and cast iron beams genuinely don't.
+**Why never guess.** The classic killer: cast iron is brittle, weaker in tension than compression by roughly a third to half (ESTIMATED, known grey-iron ratios), almost no warning before snapping. A beam's bottom fibre is in tension, exactly where stone-trained instinct says thickness matters least. Columns are the opposite done right: pure compression, cast iron's strength, so hollow columns work and beams don't.
 
 **Prerequisites.** Cast iron supply (`10_metallurgy.md#blast_furnace_cast_iron`, absent in the Roman West, bloomery gives only wrought iron), cn_post_lintel.
 
@@ -246,7 +246,7 @@ Also covers: cn_rolled_I_beam, cn_plate_girder, cn_box_girder, cn_steel_frame_sk
 
 **Roman inputs.** Bloomery wrought iron bar, routine but small-batch, nowhere near structural tonnage.
 
-**Procedure.** Forge-weld plates into a riveted girder, deep web for stiffness, thick flanges (flanges carry bending, web carries shear). Once rolling exists, roll one I-bar instead. Close a girder into a box by welding both flange edges shut where twisting matters.
+**Procedure.** Forge-weld plates into a riveted girder, deep web for stiffness, thick flanges (flanges carry bending, web carries shear). Once rolling exists, roll one I-bar instead. Close into a box by welding both flange edges shut where twisting matters.
 
 **How you know.** A girder deflects predictably, returns to true; a box resists hand-twisting an open section would not.
 
@@ -292,7 +292,7 @@ Also covers: cn_bolted_connection, cn_gusset_plate, cn_welded_connection.
 
 **Roman inputs.** Iron rod stock, forge, tongs, hammers.
 
-**Procedure.** Heat a rivet bright orange-yellow, hammer flat against a backing bar before it cools past dull red. Cut threads accurately (`40_power_precision.md#screw_cutting_lathe`), torque by feel, expect loosening without a lock nut. Weld with a steady arc, cool slowly, never quench.
+**Procedure.** Heat a rivet bright orange-yellow, hammer flat against a backing bar before it cools past dull red. Cut threads accurately (`40_power_precision.md#screw_cutting_lathe`), torque by feel. Weld with a steady arc, cool slowly, never quench.
 
 **How you know.** No gap under a cooled rivet head; a bolted joint survives a hard shake; a weld bead is smooth when tapped.
 
@@ -333,6 +333,8 @@ Also covers: cn_deformed_rebar, cn_precast_panel.
 Also covers: cn_post_tensioning.
 
 **Why never guess.** Ordinary reinforced concrete still cracks near the bar under tension. Stress the tendon first, stretched before pour or jacked through cured concrete after, and the concrete is squeezed permanently before service load arrives, staying crack-free under loads that would split ordinary reinforced concrete.
+
+**Prerequisites.** cn_reinforced_concrete, high-strength steel wire, a hydraulic jack.
 
 **Prerequisites.** cn_reinforced_concrete, high-strength steel wire, a hydraulic jack.
 
@@ -377,7 +379,7 @@ Also covers: cn_cable_anchorage, cn_wire_cable_spinning, cn_stiffening_truss.
 
 **What it is.** The masonry arch's compression path rebuilt in steel, reaching much further than stone voussoirs.
 
-**Why never guess.** A masonry arch is fixed and heavy of necessity, stone only pushes, and any temperature change or settlement in a rigid arch builds hidden internal stress with nowhere to go. A steel arch hinged at its base (sometimes the crown too) can rotate slightly, absorbing thermal change as a small rotation instead of hidden stress a rigid arch won't show until it cracks.
+**Why never guess.** A masonry arch is fixed and heavy of necessity, stone only pushes, and any temperature change or settlement in a rigid arch builds hidden internal stress with nowhere to go. A steel arch hinged at its base can rotate slightly, absorbing thermal change instead of hiding stress a rigid arch won't show until it cracks.
 
 **Prerequisites.** cn_wrought_iron_girder or steel, cn_true_arch, a hinge carrying full thrust while rotating freely.
 
@@ -400,7 +402,7 @@ Also covers: cn_cable_anchorage, cn_wire_cable_spinning, cn_stiffening_truss.
 **What it is.** Three ways to open a bridge for river traffic: a counterweighted tilting leaf, a whole span pivoting centrally, and a floating anchored roadway.
 Also covers: cn_swing_bridge, cn_pontoon_bridge.
 
-**Why never guess.** A bascule's counterweight balance point shifts through its arc, the mechanism must suit the whole range of motion or it jams. A swing bridge's central pivot carries the whole deck on one bearing, enormous friction, any binding on the guide rail jams it. Pontoon is simplest and already within Roman reach (Caesar's Rhine crossings); it rises and falls with the water, ramps must accommodate that, and it's normally removable for winter ice.
+**Why never guess.** A bascule's counterweight balance point shifts through its arc, the mechanism must suit the whole range of motion or it jams. A swing bridge's central pivot carries the whole deck on one bearing, enormous friction, any binding on the guide rail jams it. Pontoon is simplest and already within Roman reach (Caesar's Rhine crossings); it rises with the water, and is normally removable for winter ice.
 
 **Prerequisites.** Bascule/swing: bulk iron or steel, precise bearings. Pontoon: Roman carpentry and boat-building only.
 
@@ -446,7 +448,7 @@ Also covers: cn_arch_dam, cn_earth_dam, cn_spillway, cn_retaining_wall.
 **What it is.** Raising a foundation's bearing capacity in soft ground, driving a pile or densifying the soil itself.
 Also covers: cn_screw_pile, cn_soil_compaction.
 
-**Why never guess.** A drop-hammer pile compresses the soil around it as it goes, so driving gets harder with depth, and a foreman tracking diminishing penetration per blow is measuring bearing capacity in real time without any instrument. A screw pile, a shaft with a helical blade, is twisted rather than hammered, but wrong pitch means it spins in place without advancing. Soil compaction by rolling works the same logic, but only within an optimal moisture range, too dry or too wet both resist it.
+**Why never guess.** A drop-hammer pile compresses the soil around it as it goes, so driving gets harder with depth, and a foreman tracking diminishing penetration per blow is measuring bearing capacity in real time without any instrument. A screw pile is twisted rather than hammered, but wrong pitch means it spins without advancing. Compaction by rolling works the same logic, but only within an optimal moisture range, too dry or too wet resist it.
 
 **Prerequisites.** cn_crane_treadwheel or a gin-pole hoist, iron for the helix.
 
@@ -538,7 +540,7 @@ Also covers: cn_tunnel_cut_cover, cn_ventilation_shaft.
 **What it is.** A protective shell pushed by jacks through soft ground, letting men excavate safely while lining rings go in immediately behind.
 Also covers: cn_tunnel_lining.
 
-**Why never guess.** In hard rock the rock briefly holds its own shape. In soft ground the face can collapse instantly, no grace period, which the shield solves, holding the face open, pushed forward by jacks bearing against lining already installed behind, so the tunnel builds its own advancing anchor. In waterlogged ground the face may need pressurising (cn_caisson's logic) or it flows into the shield faster than it can be removed. Lining rings are cast and cured before installation, so installation is fast, but every joint must be tight, water finding a joint slowly rots the lining from inside over years.
+**Why never guess.** In hard rock the rock briefly holds its own shape. In soft ground the face can collapse instantly, no grace period, which the shield solves, holding the face open, pushed forward by jacks bearing against lining already installed behind, the tunnel builds its own advancing anchor. In waterlogged ground the face may need pressurising (cn_caisson's logic) or it flows in faster than it can be removed. Lining rings are cast and cured before installation, so installation is fast, but every joint must be tight, water finding one slowly rots the lining from inside.
 
 **Prerequisites.** cn_wrought_iron_girder or steel, cn_concrete_mixer-scale production, cn_caisson's sealing logic.
 
@@ -636,7 +638,7 @@ Also covers: cn_damp_proof_course, cn_insulation.
 
 **Roman inputs.** Fired brick and mortar, bitumen as a plausible damp course, wool or chaff as plausible insulation, not currently used this way.
 
-**Procedure.** Build two leaves with a clear gap, ties that shed water rather than carry it across, keep the cavity clear of debris. Lay a continuous damp course, one gap defeats the whole course. Pack insulation loosely, never compressed.
+**Procedure.** Build two leaves with a clear gap, ties that shed water rather than carry it across. Lay a continuous damp course, one gap defeats it. Pack insulation loosely, never compressed.
 
 **How you know.** No damp staining above a proper damp course after a wet season; an insulated wall feels less cold.
 
@@ -653,7 +655,7 @@ Also covers: cn_damp_proof_course, cn_insulation.
 **What it is.** Distributing heat via circulating hot water and moving air mechanically, beyond a Roman hypocaust.
 Also covers: cn_radiator, cn_forced_ventilation.
 
-**Why never guess.** A hot water system must stay filled and air-free, an air pocket stops circulation exactly like an air lock stops a siphon (cn_aqueduct); an expansion tank is needed because water expands as it heats, without one a sealed system builds dangerous pressure. Radiators lose heat transfer to mineral scale with no outward sign until the room is simply colder. Forced ventilation's fan noise rises sharply with speed, so an undersized duct forces the fan to run faster than comfortable.
+**Why never guess.** A hot water system must stay filled and air-free, an air pocket stops circulation like an air lock stops a siphon (cn_aqueduct); an expansion tank is needed because water expands as it heats, without one a sealed system builds dangerous pressure. Radiators lose heat transfer to mineral scale with no outward sign until the room is simply colder. A fan's noise rises sharply with speed, so an undersized duct forces it to run faster than comfortable.
 
 **Prerequisites.** Iron for radiators and piping, mechanical power for the fan, the existing hypocaust as a starting point.
 
@@ -676,7 +678,7 @@ Also covers: cn_radiator, cn_forced_ventilation.
 **What it is.** A vertical waste pipe with water-sealed traps at every fixture, avoiding the smell and disease vector of an open drain.
 Also covers: cn_trapped_drain.
 
-**Why never guess.** A soil stack sized too narrow siphons itself, waste dragging the air behind it, and that suction can pull the water seal out of every trap on that stack at once, even sound ones. A trap's seal is only a few centimetres of standing water, broken by siphoning or by evaporation from a fixture unused long enough, which is why an occasional bathroom can smell of sewage with no fault, the trap simply dried out.
+**Why never guess.** A soil stack sized too narrow siphons itself, waste dragging air behind it, and that suction can pull the water seal out of every trap on that stack at once, even sound ones. A trap's seal is only a few centimetres of standing water, broken by siphoning or by evaporation from a fixture unused long enough, why an occasional bathroom can smell of sewage with no fault, the trap simply dried out.
 
 **Prerequisites.** Ceramic or lead pipe (prefer ceramic), correct fall surveyed with the chorobates.
 
@@ -699,7 +701,7 @@ Also covers: cn_trapped_drain.
 **What it is.** Getting people safely out of a burning multi-storey building, and suppressing fire automatically.
 Also covers: cn_sprinkler.
 
-**Why never guess.** A fire escape is only as good as its worst point: stairs that can be locked defeat the whole purpose at the one moment it matters, and a pivoting ladder can itself jam at the hinge, a real historical cause of fire escape deaths unrelated to the fire. A sprinkler's thermal element, historically a soldered joint, must melt reliably at a set temperature, but that solder plug can be damaged in installation and fail to melt, or trigger falsely; the system is only as good as its pressure reaching the most distant nozzle.
+**Why never guess.** A fire escape is only as good as its worst point: locked stairs defeat the whole purpose at the moment it matters, and a pivoting ladder can jam at the hinge, a real historical cause of fire escape deaths unrelated to the fire itself. A sprinkler's thermal element, historically a soldered joint, must melt reliably at a set temperature, but that plug can be damaged in installation and fail to melt, or trigger falsely; the system is only as good as its pressure reaching the most distant nozzle.
 
 **Prerequisites.** Iron for stairs and piping, a reliable fusible alloy, `85_transport_civil.md#water_supply_sanitation`-level pressurised supply.
 
@@ -721,7 +723,7 @@ Also covers: cn_sprinkler.
 
 **What it is.** A floor of stone chips set in binder, ground flat and glossy, a marble-like finish at a fraction of solid marble's cost and weight.
 
-**Why never guess.** The binder's set state matters more than the recipe: aggregate size and binder porosity must match so the surface grinds to a stone-wide sheen without pulling chips loose; an under-fired binder yields to the abrasive before the chips do, an over-fired binder tears the chips out instead of grinding evenly with them.
+**Why never guess.** The binder's set state matters more than the recipe: aggregate size and porosity must match so the surface grinds to a stone-wide sheen without pulling chips loose; an under-fired binder yields to the abrasive before the chips do, an over-fired one tears the chips out instead.
 
 **Prerequisites.** cn_mortar or cn_gypsum_plaster, cn_stone_polish's grinding skill, marble chip waste.
 

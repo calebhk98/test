@@ -48,13 +48,11 @@ Also covers: if_punch_and_matrix, if_type_mould, if_type_metal_alloy, if_linotyp
 
 **Roman-available inputs.** Lead (*plumbum*, Britain/Spain), tin (*stannum*, Cornwall), antimony (*stibium*, Anatolia). Lead alone is too soft; tin hardens; antimony **expands** slightly on cooling, filling the mould instead of shrinking from it. DERIVED ratio from later foundry practice: roughly 4 lead : 1 tin : 1 antimony.
 
-**Procedure.** Cut punch square and mirror-reversed; strike vertically into matrix blank; true the matrix; ladle molten alloy (cherry-red to orange, ~240-300 C) into the mould, jerk once, eject; repeat per letter, thousands of times.
-
-**How you know it worked.** A straightedge across ten sorts of one letter shows no rock, no light under any one.
+**Procedure.** Cut punch square and mirror-reversed; strike vertically into matrix blank; true the matrix; ladle molten alloy (cherry-red to orange, ~240-300 C) into the mould, jerk once, eject; repeat per letter. A straightedge across ten sorts of one letter should show no rock, no light under any.
 
 **Failure modes.** Uneven height prints patchy. Cold metal gives a short cast; overheated metal etches the matrix.
 
-**Linotype**: matrices fall from a magazine by operator keystroke; each has a unique notch pattern on its edge letting a rotating distributor bar sort it home automatically after use. One operator replaces roughly six hand compositors (MEASURED, standard trade figure). Needs interchangeable-parts precision; a tier-4 destination, not a start.
+**Linotype**: matrices fall from a magazine by keystroke; each has a unique notch pattern letting a rotating distributor bar sort it home automatically. One operator replaces roughly six hand compositors (MEASURED, standard trade figure); needs interchangeable-parts precision, a tier-4 destination, not a start.
 
 **Cost & labour.** ESTIMATED, DERIVED from Gutenberg-scale shops: a full font (~300 sorts, thousands of pieces) is 2-3 punchcutter-months plus a month's casting; several thousand denarii capital.
 
@@ -104,7 +102,7 @@ Also covers: if_iron_hand_press.
 
 **Failure modes.** Platen and bed out of parallel print one side dark; too much ink fills letter counters solid.
 
-**Iron hand press**: cast iron (Rome's West has none natively, see below) and a toggle-lever giving almost no advantage through most of the pull, then multiplying force enormously in the last few degrees, delivering peak pressure exactly at contact.
+**Iron hand press**: cast iron (Rome's West has none natively) and a toggle-lever giving almost no advantage through most of the pull, then multiplying force enormously in the last few degrees, peak pressure exactly at contact.
 
 **Cost & labour.** DERIVED from wine-press carpentry: 3-4 carpenter-weeks plus a screw-cutter's day, under 1,000 denarii.
 
@@ -152,7 +150,7 @@ Also covers: if_electrotype.
 
 **Failure modes.** A slow pour leaves air pockets printing as white holes; fast drying cracks the flong.
 
-**Electrotype**: grows a copper shell electrolytically (`50_electricity.md`) onto a wax or lead impression over hours, far crisper edges (needed for halftone reproduction), but the thin shell must be backed with lead or it buckles under press pressure.
+**Electrotype**: grows a copper shell electrolytically (`50_electricity.md`) onto a wax or lead impression over hours, far crisper edges, but the shell must be backed with lead or it buckles under press pressure.
 
 **Cost & labour.** ESTIMATED. A stereotype plate is roughly a day once the forme exists; electrotype several days, mostly unattended electrolysis.
 
@@ -172,17 +170,17 @@ Also covers: if_chromolithography, if_offset_lithography.
 
 **Prerequisites.** `cap_tol_1mm`, `mat_alum`.
 
-**Roman-available inputs.** The historical stone, fine-grained Solnhofen limestone from Bavaria, lies outside the empire and is not a documented Roman quarry good. ESTIMATED: a fine Italian or Anatolian limestone may substitute if it holds an even wetting film; test before committing a run.
+**Roman-available inputs.** The historical stone, fine-grained Solnhofen limestone from Bavaria, lies outside the empire, not a documented Roman quarry good. ESTIMATED: a fine Italian or Anatolian limestone may substitute if it holds an even wetting film; test before a run.
 
-**Procedure.** Polish the slab fine; draw in greasy crayon; etch lightly with dilute nitric acid and gum arabic to fix the grease chemically; before each print, sponge with water then roll with ink; press paper against the stone.
+**Procedure.** Polish the slab fine; draw in greasy crayon; etch lightly with dilute nitric acid and gum arabic to fix the grease; before each print, sponge with water then roll with ink; press paper against the stone.
 
-**Failure modes.** A stone that dries mid-run picks up ink everywhere ("scumming"); over-etching destroys fine detail.
+**Failure modes.** A stone drying mid-run picks up ink everywhere ("scumming"); over-etching destroys fine detail.
 
-**Chromolithography**: one stone per colour, registered to a fraction of a millimetre by hand. **Offset**: a rubber blanket carries stone-to-paper, so the image reads correctly on the stone (not mirror-reversed) and the rubber is gentler on the stone, at roughly half the pressure.
+**Chromolithography**: one stone per colour, registered to a fraction of a millimetre by hand. **Offset**: a rubber blanket carries stone-to-paper, so the image reads correctly (not reversed) and is gentler on the stone, at roughly half the pressure.
 
-**Cost & labour.** ESTIMATED, high for the stone and for hand-drawn colour separations; a later, wealthier-shop technology.
+**Cost & labour.** ESTIMATED, high for the stone and hand-drawn colour separations, a later shop technology.
 
-**Danger.** Low physical beyond dilute acid; socially, a stone looks nothing like a scribal tool and may draw less immediate suspicion than a type-filled press.
+**Danger.** Low beyond dilute acid; a stone looks nothing like a scribal tool, less immediate suspicion than a type-filled press.
 
 **Confidence: LOW on the stone source** (unattested in Roman hands); **MEDIUM on the chemistry**.
 
@@ -228,7 +226,7 @@ Also covers: if_stencil_duplicator.
 
 **Cost & labour.** ESTIMATED. A stencil is minutes; the duplicator, a drum and crank, is a modest metalworking job, well under any press above.
 
-**Danger.** Social: this is the module's samizdat technology, no forme, no type, no visible press, runnable from a back room and dismantled in minutes; use it for anything you cannot afford traced to a fixed shop.
+**Danger.** Social: the module's samizdat technology, no forme, no type, no visible press, run from a back room and dismantled in minutes; use it for anything you cannot afford traced to a fixed shop.
 
 **Confidence: MEDIUM** - simple mechanically, depends on `mat_nitrocellulose` (`20_chemistry.md`) for the stencil coating.
 
@@ -244,7 +242,7 @@ Also covers: if_stencil_duplicator.
 
 Also covers: if_iron_gall_ink, if_steel_pen_nib.
 
-**Iron gall ink**: tannic/gallic acid from oak galls binds chemically to iron from green vitriol (*atramentum sutorium*), pale on application, oxidising over hours to a black-blue that bonds into the substrate's fibres rather than sitting on top, unlike carbon ink which can be sponged off. This is why medieval iron gall documents survive, and why it cannot be erased once dry, good for a legal record, bad for a correctable account.
+**Iron gall ink**: tannic/gallic acid from oak galls binds chemically to iron from green vitriol (*atramentum sutorium*), pale on application, oxidising over hours to a black-blue that bonds into the substrate's fibres rather than sitting on top, unlike carbon ink, which can be sponged off. Cannot be erased once dry: good for a legal record, bad for a correctable account.
 
 **Steel pen nib**: stamped, hardened steel that never needs re-cutting; the kernel is heat treatment, harden fully then temper to spring hardness, not full hardness, or the nib snaps.
 
@@ -286,7 +284,7 @@ Also covers: if_pencil_graphite, if_carbon_paper.
 
 **What it is.** A machine striking a fixed, legible character per keystroke, faster and more legible than any hand.
 
-**Why you would never guess this.** QWERTY is not for finger speed; it keeps letter pairs common in English typing on opposite sides of the type-bar basket so their bars swing in from different angles and do not collide and jam mid-stroke. Optimised for mechanical clearance, not speed.
+**Why you would never guess this.** QWERTY is not for finger speed; it keeps letter pairs common in English typing on opposite sides of the basket so their bars swing in from different angles and do not collide mid-stroke. Optimised for clearance, not speed.
 
 Also covers: if_shift_key_mechanism.
 
@@ -310,7 +308,7 @@ Also covers: if_shift_key_mechanism.
 
 **What it is.** A standard-format card whose hole pattern encodes information, readable and sortable by machine.
 
-**Why you would never guess this.** The ancestor is the loom, not the office. Jacquard cards, fed through a loom one at a time, each lift or block hooks controlling which warp threads rise; a chain of thousands weaves an arbitrarily complex pattern automatically, arguably the birth of the stored program. It took a leap to realise the same trick, hole positions controlling a mechanism, could encode anything.
+**Why you would never guess this.** The ancestor is the loom, not the office. Jacquard cards, fed through a loom one at a time, lift or block hooks controlling which warp threads rise; a chain of thousands weaves a complex pattern automatically, arguably the birth of the stored program. It took a leap to realise hole positions controlling a mechanism could encode anything.
 
 Also covers: if_jacquard_chain, if_keypunch.
 
@@ -342,7 +340,7 @@ Also covers: if_hollerith_tabulator.
 
 **Procedure.** Feed cards past a brush bank wired to gate solenoids, one per hole position of interest; a completed circuit fires the matching gate.
 
-**Hollerith tabulator**: adds an odometer-style counter advancing on every sensed hole, so the machine counts and cross-tabulates categories automatically. MEASURED (widely cited): the 1880 US census took roughly eight years to tabulate by hand; the 1890 census, with Hollerith machines, roughly one.
+**Hollerith tabulator**: adds an odometer-style counter advancing on every sensed hole, counting and cross-tabulating categories automatically. MEASURED: the 1880 US census took roughly eight years by hand; the 1890 census, with Hollerith machines, roughly one.
 
 **Failure modes.** A worn brush misses a hole intermittently, undercounting silently; dirty contacts give false triggers.
 
@@ -438,11 +436,7 @@ Also covers: if_disc_cutting_lathe, if_gramophone_motor, if_acoustic_horn_record
 
 **Prerequisites.** `if_wax_cylinder`, `mat_shellac` (Indian lac resin, a reachable Far-East good).
 
-**Disc-cutting lathe**: the stylus must feed sideways at a constant precise pitch while the disc spins at dead-constant speed, or groove spacing, and playback pitch, wavers.
-
-**Gramophone motor**: solved with a spring or weight drive fitted with a centrifugal governor (identical in principle to a steam engine governor) and a flywheel smoothing short-term ripple.
-
-**Acoustic horn**: a purely passive amplifier, gain rising only logarithmically with size, so doubling the horn gives far less than double the loudness; the diaphragm's own stiffness caps how much air it moves, which is why bass is essentially absent, a real physical ceiling, not workmanship.
+**Disc-cutting lathe**: the stylus feeds sideways at a constant precise pitch while the disc spins at dead-constant speed, or groove spacing and playback pitch wavers. **Gramophone motor**: a spring or weight drive fitted with a centrifugal governor (as in a steam engine) and a flywheel smoothing short-term ripple. **Acoustic horn**: a purely passive amplifier, gain rising only logarithmically with size, so doubling the horn gives far less than double the loudness; the diaphragm's own stiffness caps how much air it moves, why bass is essentially absent, a physical ceiling, not workmanship.
 
 **Failure modes.** Uneven disc speed distorts pitch; shellac is brittle and shatters on impact.
 
@@ -508,9 +502,7 @@ Also covers: if_morse_key_and_sounder, if_telegraph_relay.
 
 **Prerequisites.** `electromagnet`, `crude_cell`.
 
-**Procedure.** Space relay stations by wire resistance and battery strength (a few tens of miles per hop, ESTIMATED from 19th-century line practice); a key opens and closes the circuit in short and long pulses (Morse); a sounder, an electromagnet clicking an armature, reproduces them at the far end.
-
-**How you know it worked.** A trained operator reads the **rhythm** of the clicks as words directly, not by counting.
+**Procedure.** Space relay stations by wire resistance and battery strength (a few tens of miles per hop, ESTIMATED from 19th-century line practice); a key opens and closes the circuit in short and long pulses (Morse); a sounder, an electromagnet clicking an armature, reproduces them at the far end. A trained operator reads the **rhythm** of the clicks as words directly, not by counting.
 
 **Failure modes.** Dirty relay contacts drop the signal; a relay spaced too far from its neighbour receives too weak a trigger.
 
@@ -558,9 +550,9 @@ Also covers: if_telephone_receiver, if_loading_coil.
 
 **Failure modes.** Receiver and transmitter too close or too loud causes acoustic feedback squeal.
 
-**Telephone receiver**: a small loudspeaker run in reverse, an electromagnet pulling a thin iron diaphragm. Fidelity is deliberately poor: the system passes only roughly 300-3400 Hz, why a phone voice sounds thin, and that band is all intelligibility needs and all the diaphragm economically supports.
+**Telephone receiver**: a small loudspeaker run in reverse, an electromagnet pulling a thin iron diaphragm. Fidelity is deliberately poor, passing only roughly 300-3400 Hz, why a phone voice sounds thin, all intelligibility needs and all the diaphragm supports.
 
-**Loading coil**: an inductor inserted periodically to cancel some of the cable's own capacitance, extending range roughly from 20 km unloaded to 50 km loaded; wrong spacing increases crosstalk, and the coils make the line worse for anything but voice-band audio, a real trade-off.
+**Loading coil**: an inductor inserted periodically to cancel the cable's own capacitance, extending range roughly from 20 km unloaded to 50 km loaded; wrong spacing increases crosstalk, and worsens the line for anything but voice-band audio.
 
 **Cost & labour.** ESTIMATED, a handset modest once the microphone exists; a full network is the real capital sink.
 
@@ -580,7 +572,7 @@ Also covers: if_strowger_exchange.
 
 **Prerequisites.** `if_telegraph_relay`, `if_telephone_transmitter`.
 
-**Strowger exchange**: an electromechanical stepping switch moves a wiper vertically then rotates it horizontally, driven purely by the caller's own dial pulses, removing the operator entirely. A persistent ATTRIBUTED (unverified) anecdote holds its inventor was an undertaker who suspected the town operator, related to a rival, was diverting his calls; true or not, it captures exactly the danger the automation solves. Bearing wear on the switches is rapid, a real ongoing maintenance cost.
+**Strowger exchange**: an electromechanical stepping switch moves a wiper vertically then rotates it horizontally, driven purely by the caller's own dial pulses, removing the operator entirely. A persistent ATTRIBUTED (unverified) anecdote holds its inventor was an undertaker who suspected the town operator was diverting his calls to a rival; true or not, it captures exactly the danger the automation solves. Bearing wear on the switches is rapid, an ongoing maintenance cost.
 
 **Failure modes.** Manual: an overwhelmed board cannot connect calls fast enough at peak. Strowger: worn contacts misroute calls intermittently.
 
@@ -698,13 +690,13 @@ Also covers: if_panchromatic_emulsion, if_autochrome_plate.
 
 Also covers: if_flashbulb.
 
-**Roman-available inputs.** A real stopgap: dried lycopodium powder (clubmoss spores, MEASURED as a stage-flash material for centuries before magnesium) burns bright but dim and yellow-orange when blown through a flame, usable for dramatic effect, not a real exposure.
+**Roman-available inputs.** A real stopgap: dried lycopodium powder (clubmoss spores, MEASURED as a stage-flash material for centuries before magnesium) burns bright but dim and yellow-orange when blown through a flame, dramatic, not a real exposure.
 
-**Procedure.** Grind magnesium fine to maximise burning surface; ignite by spark or flame at exposure, held well clear of anything flammable.
+**Procedure.** Grind magnesium fine to maximise burning surface; ignite by spark or flame at exposure, held clear of anything flammable.
 
-**Failure modes.** Coarse powder burns too slowly for a sharp exposure; damp powder fails to ignite.
+**Failure modes.** Coarse powder burns too slowly; damp powder fails to ignite.
 
-**Flashbulb**: thin magnesium foil sealed in a glass bulb filled with pure oxygen, fired electrically, single-use and safer than loose powder; the seal must be perfect, any oxygen leak, even slow, ruins the bulb before firing.
+**Flashbulb**: thin magnesium foil sealed in a glass bulb filled with pure oxygen, fired electrically, single-use and safer than loose powder; the seal must be perfect, any leak ruins it before firing.
 
 **Cost & labour.** ESTIMATED, high, gated on magnesium; lycopodium is cheap but does not solve the actual exposure problem.
 
@@ -748,7 +740,7 @@ Also covers: if_film_projector.
 
 **Prerequisites.** `if_celluloid_roll_film`.
 
-**Film projector**: the same intermittent problem in reverse, holding each frame still while light shines through it, adding one genuinely dangerous element: a bright, hot light inches from flammable nitrocellulose film for an extended screening. Heat dissipation (heat-absorbing glass, forced air) is a life-safety requirement, not a refinement.
+**Film projector**: the same problem in reverse, holding each frame still while light shines through it, adding a bright, hot light inches from flammable nitrocellulose film. Heat dissipation is a life-safety requirement, not a refinement.
 
 **Failure modes.** Incomplete blanking smears or flickers the picture; inadequate heat dissipation can ignite jammed film in seconds.
 
@@ -774,7 +766,7 @@ Also covers: if_antenna_dipole.
 
 **Procedure.** Wind a coil with as few resistive joints as possible in pure annealed copper; pair with a low-loss variable capacitor; tune until the desired frequency peaks.
 
-**Dipole antenna**: counterintuitively, an antenna's own radiation resistance is very low, so impedance matching matters more than almost anything else for efficient power transfer, and height above ground matters far more than a good ground connection.
+**Dipole antenna**: an antenna's own radiation resistance is very low, so impedance matching matters more than anything else for efficient transfer, and height above ground matters far more than a good ground connection.
 
 **Failure modes.** A resistive coil or lossy capacitor gives a broad resonance that cannot separate close stations; a mismatched antenna radiates or receives only a fraction of its power.
 
