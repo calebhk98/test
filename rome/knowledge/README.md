@@ -20,7 +20,7 @@ in this directory, read that one.
 
 | Module | Subject | Entries | Tree nodes it documents |
 |---|---|---:|---:|
-| [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 1 | 0 |
+| [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 11 | 0 |
 | [`03_SOCIAL_POLITICS.md`](03_SOCIAL_POLITICS.md) |  | 10 | 0 |
 | [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 188 |
 | [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 197 |
@@ -31,18 +31,20 @@ in this directory, read that one.
 | [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 72 |
 | [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 154 |
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 63 |
+| [`76_farming_food_deep.md`](76_farming_food_deep.md) |  | 115 | 115 |
 | [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 64 |
 | [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 223 |
 | [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 199 |
 | [`87_construction.md`](87_construction.md) |  | 101 | 97 |
 | [`88_media_signals.md`](88_media_signals.md) |  | 100 | 83 |
+| [`89_remaining_arts.md`](89_remaining_arts.md) |  | 214 | 189 |
 | [`90_textiles.md`](90_textiles.md) |  | 20 | 215 |
 | [`91_household.md`](91_household.md) |  | 27 | 70 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
 | [`93_energy.md`](93_energy.md) |  | 27 | 0 |
 | [`94_computing.md`](94_computing.md) |  | 22 | 0 |
 | [`95_expeditions.md`](95_expeditions.md) |  | 11 | 11 |
-| [`96_finance.md`](96_finance.md) |  | 30 | 88 |
+| [`96_finance.md`](96_finance.md) |  | 34 | 88 |
 | [`97_military.md`](97_military.md) |  | 29 | 110 |
 | [`98_power_plants.md`](98_power_plants.md) |  | 115 | 99 |
 | [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 0 | 0 |
@@ -1439,6 +1441,126 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fud_potato_tier9` | 4 | 60.0 | _(module has no anchor)_ |
 | `fud_haber_process_synthetic_nitrogen` | 5 | 600.0 | _(module has no anchor)_ |
 
+### 76_farming_food_deep.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `ag2_bottling` | 0 | 60.0 | [`ag2_bottling`](76_farming_food_deep.md#ag2_bottling-ag2_crown_cork---sealing-liquids-for-storage-and-transport) |
+| `ag2_budding` | 0 | 45.0 | [`ag2_grafting`](76_farming_food_deep.md#ag2_grafting-ag2_budding-ag2_layering-ag2_rootstocks---vegetative-propagation-as-knowledge) |
+| `ag2_butter` | 0 | 50.0 | [`ag2_butter`](76_farming_food_deep.md#ag2_butter-ag2_cheese_families-ag2_condensed_milk-ag2_evaporated_milk---dairy-processing-and-preservation) |
+| `ag2_chaff_cutter` | 0 | 50.0 | [`ag2_winnower`](76_farming_food_deep.md#ag2_winnower-ag2_fanning_mill-ag2_chaff_cutter-ag2_baler---cleaning-sizing-and-packing-bulk) |
+| `ag2_cheese_families` | 0 | 80.0 | [`ag2_butter`](76_farming_food_deep.md#ag2_butter-ag2_cheese_families-ag2_condensed_milk-ag2_evaporated_milk---dairy-processing-and-preservation) |
+| `ag2_composting` | 0 | 40.0 | [`ag2_norfolk_course`](76_farming_food_deep.md#ag2_norfolk_course---four-course-rotation-without-fallow) |
+| `ag2_coulter` | 0 | 40.0 | [`ag2_seed_drill`](76_farming_food_deep.md#ag2_seed_drill-ag2_horse_hoe-ag2_coulter---rows-instead-of-broadcast) |
+| `ag2_grafting` | 0 | 50.0 | [`ag2_grafting`](76_farming_food_deep.md#ag2_grafting-ag2_budding-ag2_layering-ag2_rootstocks---vegetative-propagation-as-knowledge) |
+| `ag2_harrow` | 0 | 45.0 | [`ag2_cultivator`](76_farming_food_deep.md#ag2_cultivator-ag2_subsoiler-ag2_harrow-ag2_roller---working-ground-between-sowing-and-harvest) |
+| `ag2_hopping` | 0 | 40.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
+| `ag2_hydrometer` | 0 | 50.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
+| `ag2_layering` | 0 | 40.0 | [`ag2_grafting`](76_farming_food_deep.md#ag2_grafting-ag2_budding-ag2_layering-ag2_rootstocks---vegetative-propagation-as-knowledge) |
+| `ag2_liming` | 0 | 30.0 | [`ag2_liming`](76_farming_food_deep.md#ag2_liming-ag2_marling-ag2_soil_testing---reading-and-fixing-soil-chemistry) |
+| `ag2_malting` | 0 | 60.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
+| `ag2_marling` | 0 | 25.0 | [`ag2_liming`](76_farming_food_deep.md#ag2_liming-ag2_marling-ag2_soil_testing---reading-and-fixing-soil-chemistry) |
+| `ag2_mashing` | 0 | 50.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
+| `ag2_nicotine_pesticide` | 0 | 60.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
+| `ag2_oil_pressing` | 0 | 60.0 | [`ag2_oil_pressing`](76_farming_food_deep.md#ag2_oil_pressing-ag2_fat_hydrogenation---extracting-and-modifying-fats) |
+| `ag2_pot_still` | 0 | 60.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
+| `ag2_potash` | 0 | 40.0 | [`ag2_potash`](76_farming_food_deep.md#ag2_potash---wood-ash-as-fertiliser) |
+| `ag2_roller` | 0 | 40.0 | [`ag2_cultivator`](76_farming_food_deep.md#ag2_cultivator-ag2_subsoiler-ag2_harrow-ag2_roller---working-ground-between-sowing-and-harvest) |
+| `ag2_root_cutter` | 0 | 60.0 | [`ag2_ridging_plough`](76_farming_food_deep.md#ag2_ridging_plough-ag2_root_cutter-ag2_potato_lifter---handling-root-crops) |
+| `ag2_sheep_dip` | 0 | 70.0 | [`ag2_tuberculin_test`](76_farming_food_deep.md#ag2_tuberculin_test-ag2_veterinary_vaccination-ag2_sheep_dip---disease-control-in-livestock) |
+| `ag2_terracing` | 0 | 50.0 | [`ag2_erosion_control`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
+| `ag2_adulteration_law` | 1 | 110.0 | [`ag2_adulteration_law`](76_farming_food_deep.md#ag2_adulteration_law-ag2_food_laboratory---regulation-and-the-means-to-enforce-it) |
+| `ag2_balanced_ration` | 1 | 110.0 | [`ag2_progeny_testing`](76_farming_food_deep.md#ag2_progeny_testing-ag2_herd_book-ag2_artificial_insemination-ag2_balanced_ration---livestock-breeding-and-feeding-as-bookkeeping) |
+| `ag2_bone_meal` | 1 | 70.0 | [`ag2_guano`](76_farming_food_deep.md#ag2_guano-ag2_bone_meal-ag2_basic_slag---imported-and-recycled-phosphate) |
+| `ag2_bordeaux_mixture` | 1 | 80.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
+| `ag2_botanic_garden` | 1 | 110.0 | [`ag2_botanic_garden`](76_farming_food_deep.md#ag2_botanic_garden-ag2_wardian_case-ag2_plant_quarantine---moving-living-plants-across-oceans) |
+| `ag2_canning` | 1 | 100.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
+| `ag2_centrifugal_sugar` | 1 | 95.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
+| `ag2_coffee_voyage` | 1 | 90.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
+| `ag2_cold_store` | 1 | 110.0 | [`ag2_refrigeration_ice`](76_farming_food_deep.md#ag2_refrigeration_ice-ag2_refrigerated_ship-ag2_cold_store---the-cold-chain) |
+| `ag2_column_still` | 1 | 120.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
+| `ag2_condensed_milk` | 1 | 100.0 | [`ag2_butter`](76_farming_food_deep.md#ag2_butter-ag2_cheese_families-ag2_condensed_milk-ag2_evaporated_milk---dairy-processing-and-preservation) |
+| `ag2_contour_ploughing` | 1 | 70.0 | [`ag2_erosion_control`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
+| `ag2_controlled_pollination` | 1 | 100.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
+| `ag2_cream_separator` | 1 | 100.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
+| `ag2_crown_cork` | 1 | 80.0 | [`ag2_bottling`](76_farming_food_deep.md#ag2_bottling-ag2_crown_cork---sealing-liquids-for-storage-and-transport) |
+| `ag2_cultivator` | 1 | 70.0 | [`ag2_cultivator`](76_farming_food_deep.md#ag2_cultivator-ag2_subsoiler-ag2_harrow-ag2_roller---working-ground-between-sowing-and-harvest) |
+| `ag2_double_seam_can` | 1 | 100.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
+| `ag2_erosion_control` | 1 | 60.0 | [`ag2_erosion_control`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
+| `ag2_evaporated_milk` | 1 | 95.0 | [`ag2_butter`](76_farming_food_deep.md#ag2_butter-ag2_cheese_families-ag2_condensed_milk-ag2_evaporated_milk---dairy-processing-and-preservation) |
+| `ag2_fanning_mill` | 1 | 110.0 | [`ag2_winnower`](76_farming_food_deep.md#ag2_winnower-ag2_fanning_mill-ag2_chaff_cutter-ag2_baler---cleaning-sizing-and-packing-bulk) |
+| `ag2_fermentation_control` | 1 | 100.0 | [`ag2_yeast_culture`](76_farming_food_deep.md#ag2_yeast_culture-ag2_fermentation_control---controlling-fermentation-deliberately) |
+| `ag2_gravity_irrigation` | 1 | 110.0 | [`ag2_tile_drainage`](76_farming_food_deep.md#ag2_tile_drainage-ag2_gravity_irrigation---moving-water-off-and-onto-fields) |
+| `ag2_green_manure` | 1 | 50.0 | [`ag2_norfolk_course`](76_farming_food_deep.md#ag2_norfolk_course---four-course-rotation-without-fallow) |
+| `ag2_guano` | 1 | 30.0 | [`ag2_guano`](76_farming_food_deep.md#ag2_guano-ag2_bone_meal-ag2_basic_slag---imported-and-recycled-phosphate) |
+| `ag2_herd_book` | 1 | 100.0 | [`ag2_progeny_testing`](76_farming_food_deep.md#ag2_progeny_testing-ag2_herd_book-ag2_artificial_insemination-ag2_balanced_ration---livestock-breeding-and-feeding-as-bookkeeping) |
+| `ag2_horse_hoe` | 1 | 90.0 | [`ag2_seed_drill`](76_farming_food_deep.md#ag2_seed_drill-ag2_horse_hoe-ag2_coulter---rows-instead-of-broadcast) |
+| `ag2_lime_sulphur` | 1 | 90.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
+| `ag2_maize_newworld` | 1 | 65.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
+| `ag2_mower` | 1 | 95.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
+| `ag2_nitrite_curing` | 1 | 100.0 | [`ag2_pasteurisation`](76_farming_food_deep.md#ag2_pasteurisation-ag2_nitrite_curing---milder-preservation-with-narrower-margins) |
+| `ag2_nitrogen_cycle` | 1 | 120.0 | [`ag2_rhizobia`](76_farming_food_deep.md#ag2_rhizobia---legume-root-nodules-and-the-nitrogen-cycle-attributed) |
+| `ag2_norfolk_course` | 1 | 60.0 | [`ag2_norfolk_course`](76_farming_food_deep.md#ag2_norfolk_course---four-course-rotation-without-fallow) |
+| `ag2_pasteurisation` | 1 | 90.0 | [`ag2_pasteurisation`](76_farming_food_deep.md#ag2_pasteurisation-ag2_nitrite_curing---milder-preservation-with-narrower-margins) |
+| `ag2_plant_quarantine` | 1 | 90.0 | [`ag2_botanic_garden`](76_farming_food_deep.md#ag2_botanic_garden-ag2_wardian_case-ag2_plant_quarantine---moving-living-plants-across-oceans) |
+| `ag2_potato_lifter` | 1 | 65.0 | [`ag2_ridging_plough`](76_farming_food_deep.md#ag2_ridging_plough-ag2_root_cutter-ag2_potato_lifter---handling-root-crops) |
+| `ag2_potato_newworld` | 1 | 70.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
+| `ag2_progeny_testing` | 1 | 110.0 | [`ag2_progeny_testing`](76_farming_food_deep.md#ag2_progeny_testing-ag2_herd_book-ag2_artificial_insemination-ag2_balanced_ration---livestock-breeding-and-feeding-as-bookkeeping) |
+| `ag2_pure_line_selection` | 1 | 110.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
+| `ag2_purifier` | 1 | 100.0 | [`ag2_roller_mill`](76_farming_food_deep.md#ag2_roller_mill-ag2_purifier-ag2_white_flour_loss---milling-wheat-and-the-cost-it-hides) |
+| `ag2_pyrethrum` | 1 | 70.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
+| `ag2_reaper` | 1 | 110.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
+| `ag2_record_keeping_breeding` | 1 | 90.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
+| `ag2_refrigeration_ice` | 1 | 70.0 | [`ag2_refrigeration_ice`](76_farming_food_deep.md#ag2_refrigeration_ice-ag2_refrigerated_ship-ag2_cold_store---the-cold-chain) |
+| `ag2_retort` | 1 | 110.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
+| `ag2_ridging_plough` | 1 | 60.0 | [`ag2_ridging_plough`](76_farming_food_deep.md#ag2_ridging_plough-ag2_root_cutter-ag2_potato_lifter---handling-root-crops) |
+| `ag2_roller_mill` | 1 | 120.0 | [`ag2_roller_mill`](76_farming_food_deep.md#ag2_roller_mill-ag2_purifier-ag2_white_flour_loss---milling-wheat-and-the-cost-it-hides) |
+| `ag2_rootstocks` | 1 | 100.0 | [`ag2_grafting`](76_farming_food_deep.md#ag2_grafting-ag2_budding-ag2_layering-ag2_rootstocks---vegetative-propagation-as-knowledge) |
+| `ag2_seed_drill` | 1 | 120.0 | [`ag2_seed_drill`](76_farming_food_deep.md#ag2_seed_drill-ag2_horse_hoe-ag2_coulter---rows-instead-of-broadcast) |
+| `ag2_seed_trade` | 1 | 80.0 | [`ag2_seed_certification`](76_farming_food_deep.md#ag2_seed_certification-ag2_seed_trade---guaranteeing-what-is-in-the-sack) |
+| `ag2_silage_silo` | 1 | 100.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
+| `ag2_sprayer` | 1 | 95.0 | [`ag2_sprayer`](76_farming_food_deep.md#ag2_sprayer-ag2_biological_control-ag2_resistant_variety---applying-and-avoiding-chemicals) |
+| `ag2_subsoiler` | 1 | 55.0 | [`ag2_cultivator`](76_farming_food_deep.md#ag2_cultivator-ag2_subsoiler-ag2_harrow-ag2_roller---working-ground-between-sowing-and-harvest) |
+| `ag2_sugar_refining` | 1 | 110.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
+| `ag2_sugar_voyage` | 1 | 80.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
+| `ag2_tedder` | 1 | 65.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
+| `ag2_threshing_machine` | 1 | 130.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
+| `ag2_tile_drainage` | 1 | 80.0 | [`ag2_tile_drainage`](76_farming_food_deep.md#ag2_tile_drainage-ag2_gravity_irrigation---moving-water-off-and-onto-fields) |
+| `ag2_tuberculin_test` | 1 | 90.0 | [`ag2_tuberculin_test`](76_farming_food_deep.md#ag2_tuberculin_test-ag2_veterinary_vaccination-ag2_sheep_dip---disease-control-in-livestock) |
+| `ag2_vacuum_pan` | 1 | 100.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
+| `ag2_wardian_case` | 1 | 100.0 | [`ag2_botanic_garden`](76_farming_food_deep.md#ag2_botanic_garden-ag2_wardian_case-ag2_plant_quarantine---moving-living-plants-across-oceans) |
+| `ag2_white_flour_loss` | 1 | 90.0 | [`ag2_roller_mill`](76_farming_food_deep.md#ag2_roller_mill-ag2_purifier-ag2_white_flour_loss---milling-wheat-and-the-cost-it-hides) |
+| `ag2_winnower` | 1 | 80.0 | [`ag2_winnower`](76_farming_food_deep.md#ag2_winnower-ag2_fanning_mill-ag2_chaff_cutter-ag2_baler---cleaning-sizing-and-packing-bulk) |
+| `ag2_yeast_culture` | 1 | 110.0 | [`ag2_yeast_culture`](76_farming_food_deep.md#ag2_yeast_culture-ag2_fermentation_control---controlling-fermentation-deliberately) |
+| `ag2_artificial_insemination` | 2 | 140.0 | [`ag2_progeny_testing`](76_farming_food_deep.md#ag2_progeny_testing-ag2_herd_book-ag2_artificial_insemination-ag2_balanced_ration---livestock-breeding-and-feeding-as-bookkeeping) |
+| `ag2_baler` | 2 | 150.0 | [`ag2_winnower`](76_farming_food_deep.md#ag2_winnower-ag2_fanning_mill-ag2_chaff_cutter-ag2_baler---cleaning-sizing-and-packing-bulk) |
+| `ag2_basic_slag` | 2 | 50.0 | [`ag2_guano`](76_farming_food_deep.md#ag2_guano-ag2_bone_meal-ag2_basic_slag---imported-and-recycled-phosphate) |
+| `ag2_battery_poultry` | 2 | 110.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
+| `ag2_biological_control` | 2 | 110.0 | [`ag2_sprayer`](76_farming_food_deep.md#ag2_sprayer-ag2_biological_control-ag2_resistant_variety---applying-and-avoiding-chemicals) |
+| `ag2_caterpillar_track` | 2 | 140.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
+| `ag2_fat_hydrogenation` | 2 | 120.0 | [`ag2_oil_pressing`](76_farming_food_deep.md#ag2_oil_pressing-ag2_fat_hydrogenation---extracting-and-modifying-fats) |
+| `ag2_food_laboratory` | 2 | 120.0 | [`ag2_adulteration_law`](76_farming_food_deep.md#ag2_adulteration_law-ag2_food_laboratory---regulation-and-the-means-to-enforce-it) |
+| `ag2_gasworks_ammonia` | 2 | 80.0 | [`ag2_gasworks_ammonia`](76_farming_food_deep.md#ag2_gasworks_ammonia-ag2_urea---synthetic-nitrogen) |
+| `ag2_hybrid_maize` | 2 | 150.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
+| `ag2_hybridisation` | 2 | 120.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
+| `ag2_lead_arsenate` | 2 | 100.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
+| `ag2_milking_machine` | 2 | 130.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
+| `ag2_power_take_off` | 2 | 100.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
+| `ag2_reaper_binder` | 2 | 180.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
+| `ag2_refrigerated_ship` | 2 | 140.0 | [`ag2_refrigeration_ice`](76_farming_food_deep.md#ag2_refrigeration_ice-ag2_refrigerated_ship-ag2_cold_store---the-cold-chain) |
+| `ag2_resistant_variety` | 2 | 120.0 | [`ag2_sprayer`](76_farming_food_deep.md#ag2_sprayer-ag2_biological_control-ag2_resistant_variety---applying-and-avoiding-chemicals) |
+| `ag2_rhizobia` | 2 | 150.0 | [`ag2_rhizobia`](76_farming_food_deep.md#ag2_rhizobia---legume-root-nodules-and-the-nitrogen-cycle-attributed) |
+| `ag2_seed_certification` | 2 | 100.0 | [`ag2_seed_certification`](76_farming_food_deep.md#ag2_seed_certification-ag2_seed_trade---guaranteeing-what-is-in-the-sack) |
+| `ag2_soil_testing` | 2 | 100.0 | [`ag2_liming`](76_farming_food_deep.md#ag2_liming-ag2_marling-ag2_soil_testing---reading-and-fixing-soil-chemistry) |
+| `ag2_superphosphate` | 2 | 100.0 | [`ag2_superphosphate`](76_farming_food_deep.md#ag2_superphosphate---acid-treated-phosphate) |
+| `ag2_tea_voyage` | 2 | 120.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
+| `ag2_three_point_linkage` | 2 | 90.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
+| `ag2_tractor_steam` | 2 | 160.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
+| `ag2_veterinary_vaccination` | 2 | 120.0 | [`ag2_tuberculin_test`](76_farming_food_deep.md#ag2_tuberculin_test-ag2_veterinary_vaccination-ag2_sheep_dip---disease-control-in-livestock) |
+| `ag2_combine_harvester` | 3 | 240.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
+| `ag2_ddt` | 3 | 140.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
+| `ag2_urea` | 3 | 60.0 | [`ag2_gasworks_ammonia`](76_farming_food_deep.md#ag2_gasworks_ammonia-ag2_urea---synthetic-nitrogen) |
+
 ### 80_information_printing.md
 
 | Node | Tier | Your hours | Recipe |
@@ -1975,7 +2097,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_groin_vault` | 1 | 100.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
 | `cn_gusset_plate` | 1 | 60.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
 | `cn_iron_column` | 1 | 65.0 | [`cn_cast_iron_beam`](87_construction.md#cn_cast_iron_beam---cast-iron-beam) |
-| `cn_lattice_truss` | 1 | 70.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_lattice_truss` | 1 | 70.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_plumbing_stack` | 1 | 80.0 | [`cn_plumbing_stack`](87_construction.md#cn_plumbing_stack---plumbing-stack-and-trapped-drains) |
 | `cn_pontoon_bridge` | 1 | 85.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
 | `cn_radiator` | 1 | 65.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
@@ -1988,7 +2110,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_soil_compaction` | 1 | 70.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
 | `cn_spillway` | 1 | 95.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
 | `cn_swing_bridge` | 1 | 110.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
-| `cn_terrazzo` | 1 | 60.0 | [`cn_terrazzo`](87_construction.md#cn_terrazzo---terrazzo-floor-finish) |
+| `cn_terrazzo` | 1 | 60.0 | [`cn_terrazzo`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_trapped_drain` | 1 | 60.0 | [`cn_plumbing_stack`](87_construction.md#cn_plumbing_stack---plumbing-stack-and-trapped-drains) |
 | `cn_trussed_arch` | 1 | 100.0 | [`cn_king_post`](87_construction.md#cn_king_post---king-post-roof-truss) |
 | `cn_tunnel_cut_cover` | 1 | 105.0 | [`cn_drill_blast`](87_construction.md#cn_drill_blast---tunnelling-by-drill-and-blast) |
@@ -2017,7 +2139,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_plate_glass_window` | 2 | 120.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_pneumatic_caisson` | 2 | 140.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
 | `cn_portland_cement` | 2 | 120.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
-| `cn_pratt_truss` | 2 | 90.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_pratt_truss` | 2 | 90.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_precast_panel` | 2 | 110.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
 | `cn_reinforced_concrete` | 2 | 115.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
 | `cn_rolled_I_beam` | 2 | 110.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
@@ -2029,15 +2151,15 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_tunnel_shield` | 2 | 150.0 | [`cn_tunnel_shield`](87_construction.md#cn_tunnel_shield---tunnel-shield-method-and-tunnel-lining) |
 | `cn_underpinning` | 2 | 130.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
 | `cn_vibratory_compaction` | 2 | 85.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
-| `cn_warren_truss` | 2 | 85.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_warren_truss` | 2 | 85.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_wire_cable_spinning` | 2 | 110.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
 | `cn_curtain_wall` | 3 | 140.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_diaphragm_wall` | 3 | 160.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
-| `cn_post_tensioning` | 3 | 135.0 | [`cn_prestressed_concrete`](87_construction.md#cn_prestressed_concrete---prestressed-concrete-element) |
-| `cn_prestressed_concrete` | 3 | 145.0 | [`cn_prestressed_concrete`](87_construction.md#cn_prestressed_concrete---prestressed-concrete-element) |
+| `cn_post_tensioning` | 3 | 135.0 | [`cn_prestressed_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
+| `cn_prestressed_concrete` | 3 | 145.0 | [`cn_prestressed_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
 | `cn_rotary_cement_kiln` | 3 | 160.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_slipform` | 3 | 160.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
-| `cn_space_frame` | 3 | 150.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_space_frame` | 3 | 150.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_steel_frame_skeleton` | 3 | 180.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_suspension_bridge` | 3 | 200.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
 | `cn_welded_connection` | 3 | 125.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
@@ -2129,6 +2251,200 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `if_superheterodyne_receiver` | 3 | 170.0 | [`if_superheterodyne_receiver`](88_media_signals.md#if_superheterodyne_receiver---superheterodyne-receiver) |
 | `if_triode_oscillator` | 3 | 160.0 | [`if_triode_oscillator`](88_media_signals.md#if_triode_oscillator---triode-oscillator) |
 | `if_submarine_cable_gutta_percha` | 5 | 200.0 | [`if_submarine_cable_gutta_percha`](88_media_signals.md#if_submarine_cable_gutta_percha---submarine-cable-with-gutta-percha) |
+
+### 89_remaining_arts.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `fin_collegium` | 0 | 0.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `fin_government` | 0 | 0.0 | [`fin_government`](89_remaining_arts.md#fin_government---standing-bureaucracy-post-office-civil-service-exam) |
+| `fin_societas` | 0 | 0.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `prn_library_archive` | 0 | 0.0 | [`prn_library_archive`](89_remaining_arts.md#prn_library_archive---library-archive-cataloguing-indexing-copyright-economics) |
+| `fin_guild` | 1 | 100.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `fin_standard_weights` | 1 | 150.0 | [`fin_standard_weights`](89_remaining_arts.md#fin_standard_weights---standard-weights-assay-office-customs-house) |
+| `fud_agricultural_treatises` | 1 | 300.0 | [`fud_agricultural_treatises`](89_remaining_arts.md#fud_agricultural_treatises---written-treatises-and-soil-testing) |
+| `gp_carbon_brushes` | 1 | 50.0 | [`gp_carbon_brushes`](89_remaining_arts.md#gp_carbon_brushes---carbon-and-graphite-brush-contacts) |
+| `in2_analytical_balance` | 1 | 50.0 | [`in2_analytical_balance`](89_remaining_arts.md#in2_analytical_balance---precision-balances-equal-arm-torsion-quartz-microbalance) |
+| `in2_mercury_barometer` | 1 | 45.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
+| `in2_orifice_flow_meter` | 1 | 50.0 | [`in2_pitot_tube`](89_remaining_arts.md#in2_pitot_tube---flow-measurement-pitot-venturi-orifice) |
+| `in2_pitot_tube` | 1 | 45.0 | [`in2_pitot_tube`](89_remaining_arts.md#in2_pitot_tube---flow-measurement-pitot-venturi-orifice) |
+| `in2_thermocouple` | 1 | 45.0 | [`in2_thermocouple`](89_remaining_arts.md#in2_thermocouple---temperature-measurement-thermocouple-rtd-gas-thermometry) |
+| `in2_tuning_fork_oscillator` | 1 | 60.0 | [`in2_quartz_resonator_frequency`](89_remaining_arts.md#in2_quartz_resonator_frequency---frequency-standards-quartz-tuning-fork-hairspring) |
+| `md2_cadaver_dissection` | 1 | 100.0 | [`md2_agar_media`](89_remaining_arts.md#md2_agar_media---laboratory-and-anatomical-method-agar-culture-microbiology-bioassay-drug-standardisation-cadaver-dissection) |
+| `md2_case_record` | 1 | 80.0 | [`md2_case_record`](89_remaining_arts.md#md2_case_record---medical-practice-institutions-case-records-journals-licensing-nursing-pharmacopoeia) |
+| `md2_case_series` | 1 | 100.0 | [`md2_case_series`](89_remaining_arts.md#md2_case_series---clinical-study-design-case-series-to-randomised-controlled-trial) |
+| `md2_medical_journal` | 1 | 120.0 | [`md2_case_record`](89_remaining_arts.md#md2_case_record---medical-practice-institutions-case-records-journals-licensing-nursing-pharmacopoeia) |
+| `md2_medical_licensing` | 1 | 100.0 | [`md2_case_record`](89_remaining_arts.md#md2_case_record---medical-practice-institutions-case-records-journals-licensing-nursing-pharmacopoeia) |
+| `md2_mortality_table` | 1 | 120.0 | [`md2_medical_statistics`](89_remaining_arts.md#md2_medical_statistics---medical-statistics-and-vital-registration) |
+| `md2_vital_registration` | 1 | 100.0 | [`md2_medical_statistics`](89_remaining_arts.md#md2_medical_statistics---medical-statistics-and-vital-registration) |
+| `prc_apprentice_system` | 1 | 150.0 | [`prc_apprentice_system`](89_remaining_arts.md#prc_apprentice_system---apprentice-system-and-toolroom-institution) |
+| `prn_cataloguing_system` | 1 | 200.0 | [`prn_library_archive`](89_remaining_arts.md#prn_library_archive---library-archive-cataloguing-indexing-copyright-economics) |
+| `prn_index_concordance` | 1 | 300.0 | [`prn_library_archive`](89_remaining_arts.md#prn_library_archive---library-archive-cataloguing-indexing-copyright-economics) |
+| `sc2_institution_citation` | 1 | 80.0 | [`sc2_institution_journal`](89_remaining_arts.md#sc2_institution_journal---scientific-publication-journal-learned-society-citation-peer-review) |
+| `sc2_institution_curriculum` | 1 | 120.0 | [`sc2_institution_curriculum`](89_remaining_arts.md#sc2_institution_curriculum---academic-teaching-institutions-curriculum-textbook-examination-doctorate) |
+| `sc2_institution_doctorate` | 1 | 150.0 | [`sc2_institution_curriculum`](89_remaining_arts.md#sc2_institution_curriculum---academic-teaching-institutions-curriculum-textbook-examination-doctorate) |
+| `sc2_institution_examination` | 1 | 80.0 | [`sc2_institution_curriculum`](89_remaining_arts.md#sc2_institution_curriculum---academic-teaching-institutions-curriculum-textbook-examination-doctorate) |
+| `sc2_institution_funded_programme` | 1 | 120.0 | [`sc2_institution_funded_programme`](89_remaining_arts.md#sc2_institution_funded_programme---research-funding-and-management) |
+| `sc2_institution_journal` | 1 | 110.0 | [`sc2_institution_journal`](89_remaining_arts.md#sc2_institution_journal---scientific-publication-journal-learned-society-citation-peer-review) |
+| `sc2_institution_learned_society` | 1 | 100.0 | [`sc2_institution_journal`](89_remaining_arts.md#sc2_institution_journal---scientific-publication-journal-learned-society-citation-peer-review) |
+| `sc2_institution_patent_disclosure` | 1 | 100.0 | [`sc2_institution_funded_programme`](89_remaining_arts.md#sc2_institution_funded_programme---research-funding-and-management) |
+| `sc2_institution_referee` | 1 | 100.0 | [`sc2_institution_journal`](89_remaining_arts.md#sc2_institution_journal---scientific-publication-journal-learned-society-citation-peer-review) |
+| `sc2_institution_research_group` | 1 | 100.0 | [`sc2_institution_funded_programme`](89_remaining_arts.md#sc2_institution_funded_programme---research-funding-and-management) |
+| `sc2_institution_textbook` | 1 | 200.0 | [`sc2_institution_curriculum`](89_remaining_arts.md#sc2_institution_curriculum---academic-teaching-institutions-curriculum-textbook-examination-doctorate) |
+| `sc2_method_controlled_experiment` | 1 | 100.0 | [`sc2_method_hypothesis`](89_remaining_arts.md#sc2_method_hypothesis---hypothesis-controlled-experiment-lab-notebook-replication-peer-criticism-negative-results) |
+| `sc2_method_hypothesis` | 1 | 90.0 | [`sc2_method_hypothesis`](89_remaining_arts.md#sc2_method_hypothesis---hypothesis-controlled-experiment-lab-notebook-replication-peer-criticism-negative-results) |
+| `sc2_method_lab_notebook` | 1 | 70.0 | [`sc2_method_hypothesis`](89_remaining_arts.md#sc2_method_hypothesis---hypothesis-controlled-experiment-lab-notebook-replication-peer-criticism-negative-results) |
+| `sc2_method_negative_result` | 1 | 90.0 | [`sc2_method_hypothesis`](89_remaining_arts.md#sc2_method_hypothesis---hypothesis-controlled-experiment-lab-notebook-replication-peer-criticism-negative-results) |
+| `sc2_method_peer_criticism` | 1 | 100.0 | [`sc2_method_hypothesis`](89_remaining_arts.md#sc2_method_hypothesis---hypothesis-controlled-experiment-lab-notebook-replication-peer-criticism-negative-results) |
+| `sc2_method_replication` | 1 | 80.0 | [`sc2_method_hypothesis`](89_remaining_arts.md#sc2_method_hypothesis---hypothesis-controlled-experiment-lab-notebook-replication-peer-criticism-negative-results) |
+| `sc2_physics_elasticity` | 1 | 110.0 | [`sc2_physics_elasticity`](89_remaining_arts.md#sc2_physics_elasticity---elasticity-wave-motion-acoustics-aerodynamic-lift) |
+| `sc2_physics_electrostatics` | 1 | 100.0 | [`sc2_physics_electrostatics`](89_remaining_arts.md#sc2_physics_electrostatics---electromagnetism-electrostatics-magnetostatics-maxwells-equations-em-waves-spectrum) |
+| `sc2_physics_energy` | 1 | 110.0 | [`sc2_physics_newtons_laws`](89_remaining_arts.md#sc2_physics_newtons_laws---classical-mechanics-newtons-laws-kinematics-momentum-energy-work-gravitation) |
+| `sc2_physics_fluid_statics` | 1 | 80.0 | [`sc2_physics_fluid_statics`](89_remaining_arts.md#sc2_physics_fluid_statics---fluid-mechanics-statics-bernoulli-viscosity-reynolds-number) |
+| `sc2_physics_geometric_optics` | 1 | 100.0 | [`sc2_physics_geometric_optics`](89_remaining_arts.md#sc2_physics_geometric_optics---optics-geometric-rays-diffraction-speed-of-light) |
+| `sc2_physics_gravitation` | 1 | 100.0 | [`sc2_physics_newtons_laws`](89_remaining_arts.md#sc2_physics_newtons_laws---classical-mechanics-newtons-laws-kinematics-momentum-energy-work-gravitation) |
+| `sc2_physics_kinematics` | 1 | 90.0 | [`sc2_physics_newtons_laws`](89_remaining_arts.md#sc2_physics_newtons_laws---classical-mechanics-newtons-laws-kinematics-momentum-energy-work-gravitation) |
+| `sc2_physics_magnetostatics` | 1 | 100.0 | [`sc2_physics_electrostatics`](89_remaining_arts.md#sc2_physics_electrostatics---electromagnetism-electrostatics-magnetostatics-maxwells-equations-em-waves-spectrum) |
+| `sc2_physics_momentum` | 1 | 80.0 | [`sc2_physics_newtons_laws`](89_remaining_arts.md#sc2_physics_newtons_laws---classical-mechanics-newtons-laws-kinematics-momentum-energy-work-gravitation) |
+| `sc2_physics_newtons_laws` | 1 | 100.0 | [`sc2_physics_newtons_laws`](89_remaining_arts.md#sc2_physics_newtons_laws---classical-mechanics-newtons-laws-kinematics-momentum-energy-work-gravitation) |
+| `sc2_physics_work_power` | 1 | 100.0 | [`sc2_physics_newtons_laws`](89_remaining_arts.md#sc2_physics_newtons_laws---classical-mechanics-newtons-laws-kinematics-momentum-energy-work-gravitation) |
+| `civ_factor_safety` | 2 | 100.0 | [`civ_materials_testing`](89_remaining_arts.md#civ_materials_testing---materials-testing-safety-factor-soil-mechanics) |
+| `civ_materials_testing` | 2 | 150.0 | [`civ_materials_testing`](89_remaining_arts.md#civ_materials_testing---materials-testing-safety-factor-soil-mechanics) |
+| `civ_method_joints` | 2 | 150.0 | [`civ_statics`](89_remaining_arts.md#civ_statics---statics-forces-and-moments-in-balance) |
+| `civ_neutral_axis` | 2 | 120.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
+| `civ_statics` | 2 | 200.0 | [`civ_statics`](89_remaining_arts.md#civ_statics---statics-forces-and-moments-in-balance) |
+| `fin_assay_office` | 2 | 180.0 | [`fin_standard_weights`](89_remaining_arts.md#fin_standard_weights---standard-weights-assay-office-customs-house) |
+| `fin_census` | 2 | 200.0 | [`fin_census`](89_remaining_arts.md#fin_census---census-survey-statistics-office-mortality-table) |
+| `fin_civil_service_exam` | 2 | 180.0 | [`fin_government`](89_remaining_arts.md#fin_government---standing-bureaucracy-post-office-civil-service-exam) |
+| `fin_customs_house` | 2 | 120.0 | [`fin_standard_weights`](89_remaining_arts.md#fin_standard_weights---standard-weights-assay-office-customs-house) |
+| `fin_endowed_chair` | 2 | 150.0 | [`fin_university`](89_remaining_arts.md#fin_university---academic-and-research-institutions) |
+| `fin_museum` | 2 | 180.0 | [`fin_university`](89_remaining_arts.md#fin_university---academic-and-research-institutions) |
+| `fin_post_office` | 2 | 150.0 | [`fin_government`](89_remaining_arts.md#fin_government---standing-bureaucracy-post-office-civil-service-exam) |
+| `fin_professional_exam` | 2 | 150.0 | [`fin_professional_exam`](89_remaining_arts.md#fin_professional_exam---professional-licensing-and-patent-office) |
+| `fin_survey_map` | 2 | 250.0 | [`fin_census`](89_remaining_arts.md#fin_census---census-survey-statistics-office-mortality-table) |
+| `fin_university` | 2 | 200.0 | [`fin_university`](89_remaining_arts.md#fin_university---academic-and-research-institutions) |
+| `fud_soil_composition_analysis` | 2 | 200.0 | [`fud_agricultural_treatises`](89_remaining_arts.md#fud_agricultural_treatises---written-treatises-and-soil-testing) |
+| `gp_laminated_core` | 2 | 90.0 | [`gp_laminated_core`](89_remaining_arts.md#gp_laminated_core---laminated-iron-core) |
+| `in2_aneroid_capsule` | 2 | 70.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
+| `in2_balance_spring_watch` | 2 | 100.0 | [`in2_quartz_resonator_frequency`](89_remaining_arts.md#in2_quartz_resonator_frequency---frequency-standards-quartz-tuning-fork-hairspring) |
+| `in2_bourdon_pressure_gauge` | 2 | 75.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
+| `in2_mcleod_vacuum_gauge` | 2 | 85.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
+| `in2_optical_comparator` | 2 | 70.0 | [`in2_optical_comparator`](89_remaining_arts.md#in2_optical_comparator---optical-length-measurement-comparator-and-travelling-microscope) |
+| `in2_resistance_thermometer_RTD` | 2 | 80.0 | [`in2_thermocouple`](89_remaining_arts.md#in2_thermocouple---temperature-measurement-thermocouple-rtd-gas-thermometry) |
+| `in2_torsion_balance` | 2 | 85.0 | [`in2_analytical_balance`](89_remaining_arts.md#in2_analytical_balance---precision-balances-equal-arm-torsion-quartz-microbalance) |
+| `in2_travelling_microscope` | 2 | 80.0 | [`in2_optical_comparator`](89_remaining_arts.md#in2_optical_comparator---optical-length-measurement-comparator-and-travelling-microscope) |
+| `in2_venturi_flow_meter` | 2 | 70.0 | [`in2_pitot_tube`](89_remaining_arts.md#in2_pitot_tube---flow-measurement-pitot-venturi-orifice) |
+| `md2_agar_media` | 2 | 100.0 | [`md2_agar_media`](89_remaining_arts.md#md2_agar_media---laboratory-and-anatomical-method-agar-culture-microbiology-bioassay-drug-standardisation-cadaver-dissection) |
+| `md2_bioassay` | 2 | 140.0 | [`md2_agar_media`](89_remaining_arts.md#md2_agar_media---laboratory-and-anatomical-method-agar-culture-microbiology-bioassay-drug-standardisation-cadaver-dissection) |
+| `md2_blinding` | 2 | 100.0 | [`md2_case_series`](89_remaining_arts.md#md2_case_series---clinical-study-design-case-series-to-randomised-controlled-trial) |
+| `md2_case_control_study` | 2 | 160.0 | [`md2_case_series`](89_remaining_arts.md#md2_case_series---clinical-study-design-case-series-to-randomised-controlled-trial) |
+| `md2_cell_theory` | 2 | 100.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
+| `md2_circulation` | 2 | 150.0 | [`md2_circulation`](89_remaining_arts.md#md2_circulation---core-physiology-circulation-digestion-respiration-kidney-nerves-hormones-immunity) |
+| `md2_cohort_study` | 2 | 180.0 | [`md2_case_series`](89_remaining_arts.md#md2_case_series---clinical-study-design-case-series-to-randomised-controlled-trial) |
+| `md2_digestion` | 2 | 140.0 | [`md2_circulation`](89_remaining_arts.md#md2_circulation---core-physiology-circulation-digestion-respiration-kidney-nerves-hormones-immunity) |
+| `md2_drug_standardisation` | 2 | 150.0 | [`md2_agar_media`](89_remaining_arts.md#md2_agar_media---laboratory-and-anatomical-method-agar-culture-microbiology-bioassay-drug-standardisation-cadaver-dissection) |
+| `md2_gas_exchange` | 2 | 120.0 | [`md2_circulation`](89_remaining_arts.md#md2_circulation---core-physiology-circulation-digestion-respiration-kidney-nerves-hormones-immunity) |
+| `md2_kidney` | 2 | 130.0 | [`md2_circulation`](89_remaining_arts.md#md2_circulation---core-physiology-circulation-digestion-respiration-kidney-nerves-hormones-immunity) |
+| `md2_medical_statistics` | 2 | 140.0 | [`md2_medical_statistics`](89_remaining_arts.md#md2_medical_statistics---medical-statistics-and-vital-registration) |
+| `md2_microbiology_culture` | 2 | 140.0 | [`md2_agar_media`](89_remaining_arts.md#md2_agar_media---laboratory-and-anatomical-method-agar-culture-microbiology-bioassay-drug-standardisation-cadaver-dissection) |
+| `md2_nervous_system` | 2 | 160.0 | [`md2_circulation`](89_remaining_arts.md#md2_circulation---core-physiology-circulation-digestion-respiration-kidney-nerves-hormones-immunity) |
+| `md2_nursing_profession` | 2 | 150.0 | [`md2_case_record`](89_remaining_arts.md#md2_case_record---medical-practice-institutions-case-records-journals-licensing-nursing-pharmacopoeia) |
+| `md2_pharmacopoeia` | 2 | 180.0 | [`md2_case_record`](89_remaining_arts.md#md2_case_record---medical-practice-institutions-case-records-journals-licensing-nursing-pharmacopoeia) |
+| `md2_placebo` | 2 | 100.0 | [`md2_case_series`](89_remaining_arts.md#md2_case_series---clinical-study-design-case-series-to-randomised-controlled-trial) |
+| `met_phase_diagram_knowledge` | 2 | 300.0 | [`met_metallography`](89_remaining_arts.md#met_metallography---metal-structure-analysis-metallography-phase-diagrams-spectroscopy) |
+| `mfg_bill_materials` | 2 | 140.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
+| `mfg_blueprint` | 2 | 140.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
+| `mfg_change_order` | 2 | 120.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
+| `mfg_drawing_office` | 2 | 150.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
+| `mfg_inventory_mgmt` | 2 | 120.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
+| `mfg_maintenance` | 2 | 130.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
+| `mfg_orthographic` | 2 | 130.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
+| `mfg_piece_rate` | 2 | 100.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
+| `mfg_production_schedule` | 2 | 130.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
+| `mfg_standard_hour` | 2 | 120.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
+| `mfg_time_study` | 2 | 140.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
+| `mfg_tool_room` | 2 | 140.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
+| `mil_ammunition_standardisation` | 2 | 80.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
+| `mil_arsenal_manufacturing` | 2 | 110.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
+| `mil_conscription_reserve` | 2 | 60.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
+| `mil_general_staff` | 2 | 100.0 | [`mil_general_staff`](89_remaining_arts.md#mil_general_staff---professional-military-planning-general-staff-and-war-college) |
+| `mil_logistics_discipline` | 2 | 90.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
+| `mil_railway_mobilisation` | 2 | 100.0 | [`mil_conscription_reserve`](89_remaining_arts.md#mil_conscription_reserve---mass-mobilisation-conscription-railways-logistics-arsenal-manufacture) |
+| `mil_war_college` | 2 | 100.0 | [`mil_general_staff`](89_remaining_arts.md#mil_general_staff---professional-military-planning-general-staff-and-war-college) |
+| `prc_toolroom_institution` | 2 | 100.0 | [`prc_apprentice_system`](89_remaining_arts.md#prc_apprentice_system---apprentice-system-and-toolroom-institution) |
+| `prn_copyright_economics` | 2 | 150.0 | [`prn_library_archive`](89_remaining_arts.md#prn_library_archive---library-archive-cataloguing-indexing-copyright-economics) |
+| `sc2_physics_acoustics` | 2 | 120.0 | [`sc2_physics_elasticity`](89_remaining_arts.md#sc2_physics_elasticity---elasticity-wave-motion-acoustics-aerodynamic-lift) |
+| `sc2_physics_aerodynamic_lift` | 2 | 130.0 | [`sc2_physics_elasticity`](89_remaining_arts.md#sc2_physics_elasticity---elasticity-wave-motion-acoustics-aerodynamic-lift) |
+| `sc2_physics_blackbody_radiation` | 2 | 140.0 | [`sc2_physics_kinetic_theory`](89_remaining_arts.md#sc2_physics_kinetic_theory---kinetic-theory-and-statistical-mechanics) |
+| `sc2_physics_boltzmann_distribution` | 2 | 120.0 | [`sc2_physics_kinetic_theory`](89_remaining_arts.md#sc2_physics_kinetic_theory---kinetic-theory-and-statistical-mechanics) |
+| `sc2_physics_diffraction` | 2 | 120.0 | [`sc2_physics_geometric_optics`](89_remaining_arts.md#sc2_physics_geometric_optics---optics-geometric-rays-diffraction-speed-of-light) |
+| `sc2_physics_em_wave` | 2 | 120.0 | [`sc2_physics_electrostatics`](89_remaining_arts.md#sc2_physics_electrostatics---electromagnetism-electrostatics-magnetostatics-maxwells-equations-em-waves-spectrum) |
+| `sc2_physics_hydrodynamics` | 2 | 130.0 | [`sc2_physics_fluid_statics`](89_remaining_arts.md#sc2_physics_fluid_statics---fluid-mechanics-statics-bernoulli-viscosity-reynolds-number) |
+| `sc2_physics_kinetic_theory` | 2 | 130.0 | [`sc2_physics_kinetic_theory`](89_remaining_arts.md#sc2_physics_kinetic_theory---kinetic-theory-and-statistical-mechanics) |
+| `sc2_physics_maxwell_equations` | 2 | 140.0 | [`sc2_physics_electrostatics`](89_remaining_arts.md#sc2_physics_electrostatics---electromagnetism-electrostatics-magnetostatics-maxwells-equations-em-waves-spectrum) |
+| `sc2_physics_neutron_discovery` | 2 | 110.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
+| `sc2_physics_nucleus_discovery` | 2 | 120.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
+| `sc2_physics_photoelectric_effect` | 2 | 110.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
+| `sc2_physics_quantum_photon` | 2 | 120.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
+| `sc2_physics_reynolds_number` | 2 | 110.0 | [`sc2_physics_fluid_statics`](89_remaining_arts.md#sc2_physics_fluid_statics---fluid-mechanics-statics-bernoulli-viscosity-reynolds-number) |
+| `sc2_physics_spectrum` | 2 | 100.0 | [`sc2_physics_electrostatics`](89_remaining_arts.md#sc2_physics_electrostatics---electromagnetism-electrostatics-magnetostatics-maxwells-equations-em-waves-spectrum) |
+| `sc2_physics_speed_of_light` | 2 | 100.0 | [`sc2_physics_geometric_optics`](89_remaining_arts.md#sc2_physics_geometric_optics---optics-geometric-rays-diffraction-speed-of-light) |
+| `sc2_physics_uncertainty_principle` | 2 | 120.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
+| `sc2_physics_viscosity` | 2 | 120.0 | [`sc2_physics_fluid_statics`](89_remaining_arts.md#sc2_physics_fluid_statics---fluid-mechanics-statics-bernoulli-viscosity-reynolds-number) |
+| `sc2_physics_wave_motion` | 2 | 130.0 | [`sc2_physics_elasticity`](89_remaining_arts.md#sc2_physics_elasticity---elasticity-wave-motion-acoustics-aerodynamic-lift) |
+| `civ_bending_moment` | 3 | 200.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
+| `civ_euler_buckling` | 3 | 180.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
+| `fin_commodity_exchange` | 3 | 180.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `fin_joint_stock` | 3 | 250.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `fin_learned_society` | 3 | 200.0 | [`fin_university`](89_remaining_arts.md#fin_university---academic-and-research-institutions) |
+| `fin_mortality_table` | 3 | 250.0 | [`fin_census`](89_remaining_arts.md#fin_census---census-survey-statistics-office-mortality-table) |
+| `fin_patent_office` | 3 | 200.0 | [`fin_professional_exam`](89_remaining_arts.md#fin_professional_exam---professional-licensing-and-patent-office) |
+| `fin_research_institute` | 3 | 250.0 | [`fin_university`](89_remaining_arts.md#fin_university---academic-and-research-institutions) |
+| `fin_statistical_office` | 3 | 220.0 | [`fin_census`](89_remaining_arts.md#fin_census---census-survey-statistics-office-mortality-table) |
+| `fin_totalisator` | 3 | 200.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `fin_trade_union` | 3 | 120.0 | [`fin_societas`](89_remaining_arts.md#fin_societas---business-organisation-partnership-to-joint-stock-exchange-guilds-unions-totalisator) |
+| `gp_magnet_wire_enamelled` | 3 | 120.0 | [`gp_magnet_wire_enamelled`](89_remaining_arts.md#gp_magnet_wire_enamelled---enamelled-magnet-wire) |
+| `in2_gas_thermometry_absolute` | 3 | 140.0 | [`in2_thermocouple`](89_remaining_arts.md#in2_thermocouple---temperature-measurement-thermocouple-rtd-gas-thermometry) |
+| `in2_microbalance_quartz` | 3 | 100.0 | [`in2_analytical_balance`](89_remaining_arts.md#in2_analytical_balance---precision-balances-equal-arm-torsion-quartz-microbalance) |
+| `in2_quartz_resonator_frequency` | 3 | 110.0 | [`in2_quartz_resonator_frequency`](89_remaining_arts.md#in2_quartz_resonator_frequency---frequency-standards-quartz-tuning-fork-hairspring) |
+| `md2_chromosome` | 3 | 120.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
+| `md2_endocrine_system` | 3 | 180.0 | [`md2_circulation`](89_remaining_arts.md#md2_circulation---core-physiology-circulation-digestion-respiration-kidney-nerves-hormones-immunity) |
+| `md2_gene` | 3 | 100.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
+| `md2_immunity` | 3 | 200.0 | [`md2_circulation`](89_remaining_arts.md#md2_circulation---core-physiology-circulation-digestion-respiration-kidney-nerves-hormones-immunity) |
+| `md2_mendelian_inheritance` | 3 | 80.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
+| `md2_randomised_controlled_trial` | 3 | 250.0 | [`md2_case_series`](89_remaining_arts.md#md2_case_series---clinical-study-design-case-series-to-randomised-controlled-trial) |
+| `met_hardness_test` | 3 | 140.0 | [`met_tensile_test`](89_remaining_arts.md#met_tensile_test---mechanical-testing-tensile-hardness-fatigue) |
+| `met_mannesmann_piercing` | 3 | 300.0 | [`met_mannesmann_piercing`](89_remaining_arts.md#met_mannesmann_piercing---mannesmann-piercing-for-seamless-tube) |
+| `met_metallography` | 3 | 200.0 | [`met_metallography`](89_remaining_arts.md#met_metallography---metal-structure-analysis-metallography-phase-diagrams-spectroscopy) |
+| `met_spectroscopic_assay` | 3 | 160.0 | [`met_metallography`](89_remaining_arts.md#met_metallography---metal-structure-analysis-metallography-phase-diagrams-spectroscopy) |
+| `met_tensile_test` | 3 | 240.0 | [`met_tensile_test`](89_remaining_arts.md#met_tensile_test---mechanical-testing-tensile-hardness-fatigue) |
+| `mfg_assembly_line` | 3 | 250.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
+| `mfg_dimensioning` | 3 | 160.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
+| `mfg_quality_dept` | 3 | 160.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
+| `mfg_work_study` | 3 | 200.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
+| `mil_cryptanalysis` | 3 | 110.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
+| `mil_signals_intelligence` | 3 | 80.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
+| `sc2_physics_nuclear_fission` | 3 | 140.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
+| `sc2_physics_statistical_mechanics` | 3 | 160.0 | [`sc2_physics_kinetic_theory`](89_remaining_arts.md#sc2_physics_kinetic_theory---kinetic-theory-and-statistical-mechanics) |
+| `sc2_physics_wave_mechanics` | 3 | 180.0 | [`sc2_physics_quantum_photon`](89_remaining_arts.md#sc2_physics_quantum_photon---quantum-and-nuclear-physics-photon-photoelectric-effect-uncertainty-wave-mechanics-nucleus-neutron-fission) |
+| `civ_elasticity_theory` | 4 | 300.0 | [`civ_bending_moment`](89_remaining_arts.md#civ_bending_moment---bending-moment-shear-neutral-axis-elasticity-buckling) |
+| `civ_soil_mechanics` | 4 | 250.0 | [`civ_materials_testing`](89_remaining_arts.md#civ_materials_testing---materials-testing-safety-factor-soil-mechanics) |
+| `gp_exhaust_pinchoff` | 4 | 100.0 | [`gp_exhaust_pinchoff`](89_remaining_arts.md#gp_exhaust_pinchoff---exhaust-and-pinch-off-technique) |
+| `gp_getter` | 4 | 130.0 | [`gp_getter`](89_remaining_arts.md#gp_getter---chemical-getter) |
+| `gp_glass_metal_seal` | 4 | 150.0 | [`gp_glass_metal_seal`](89_remaining_arts.md#gp_glass_metal_seal---glass-to-metal-vacuum-seal) |
+| `mat_chile_nitrate` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_cryolite` | 4 | 200.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_gutta_percha` | 4 | 120.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_natural_rubber` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_newworld_crops` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_platinum_bulk` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_quinine` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `md2_dna` | 4 | 150.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
+| `met_fatigue_testing` | 4 | 280.0 | [`met_tensile_test`](89_remaining_arts.md#met_tensile_test---mechanical-testing-tensile-hardness-fatigue) |
+| `mil_operational_research` | 4 | 120.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
+| `gp_controlled_atmosphere_chamber` | 5 | 180.0 | [`gp_controlled_atmosphere_chamber`](89_remaining_arts.md#gp_controlled_atmosphere_chamber---controlled-atmosphere-furnace-chamber) |
+| `gp_czochralski_puller` | 5 | 200.0 | [`gp_czochralski_puller`](89_remaining_arts.md#gp_czochralski_puller---seed-and-pull-crystal-grower) |
+| `gp_whisker_forming` | 5 | 200.0 | [`gp_whisker_forming`](89_remaining_arts.md#gp_whisker_forming---point-contact-whisker-forming) |
 
 ### 90_textiles.md
 
@@ -2757,13 +3073,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | status | nodes |
 |---|---:|
-| linked to a specific recipe entry | 574 |
+| linked to a specific recipe entry | 878 |
 | linked to a domain module, no specific entry | 2006 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
-| **undocumented, a real gap** | **304** |
-
-The undocumented nodes, listed so the gap is visible rather than hidden:
-
-`ag2_adulteration_law`, `ag2_artificial_insemination`, `ag2_balanced_ration`, `ag2_baler`, `ag2_basic_slag`, `ag2_battery_poultry`, `ag2_biological_control`, `ag2_bone_meal`, `ag2_bordeaux_mixture`, `ag2_botanic_garden`, `ag2_bottling`, `ag2_budding`, `ag2_butter`, `ag2_canning`, `ag2_caterpillar_track`, `ag2_centrifugal_sugar`, `ag2_chaff_cutter`, `ag2_cheese_families`, `ag2_coffee_voyage`, `ag2_cold_store`, `ag2_column_still`, `ag2_combine_harvester`, `ag2_composting`, `ag2_condensed_milk`, `ag2_contour_ploughing`, `ag2_controlled_pollination`, `ag2_coulter`, `ag2_cream_separator`, `ag2_crown_cork`, `ag2_cultivator`, `ag2_ddt`, `ag2_double_seam_can`, `ag2_erosion_control`, `ag2_evaporated_milk`, `ag2_fanning_mill`, `ag2_fat_hydrogenation`, `ag2_fermentation_control`, `ag2_food_laboratory`, `ag2_gasworks_ammonia`, `ag2_grafting`, `ag2_gravity_irrigation`, `ag2_green_manure`, `ag2_guano`, `ag2_harrow`, `ag2_herd_book`, `ag2_hopping`, `ag2_horse_hoe`, `ag2_hybrid_maize`, `ag2_hybridisation`, `ag2_hydrometer`, `ag2_layering`, `ag2_lead_arsenate`, `ag2_lime_sulphur`, `ag2_liming`, `ag2_maize_newworld`, `ag2_malting`, `ag2_marling`, `ag2_mashing`, `ag2_milking_machine`, `ag2_mower`, `ag2_nicotine_pesticide`, `ag2_nitrite_curing`, `ag2_nitrogen_cycle`, `ag2_norfolk_course`, `ag2_oil_pressing`, `ag2_pasteurisation`, `ag2_plant_quarantine`, `ag2_pot_still`, `ag2_potash`, `ag2_potato_lifter`, `ag2_potato_newworld`, `ag2_power_take_off`, `ag2_progeny_testing`, `ag2_pure_line_selection`, `ag2_purifier`, `ag2_pyrethrum`, `ag2_reaper`, `ag2_reaper_binder`, `ag2_record_keeping_breeding`, `ag2_refrigerated_ship`, `ag2_refrigeration_ice`, `ag2_resistant_variety`, `ag2_retort`, `ag2_rhizobia`, `ag2_ridging_plough`, `ag2_roller`, `ag2_roller_mill`, `ag2_root_cutter`, `ag2_rootstocks`, `ag2_seed_certification`, `ag2_seed_drill`, `ag2_seed_trade`, `ag2_sheep_dip`, `ag2_silage_silo`, `ag2_soil_testing`, `ag2_sprayer`, `ag2_subsoiler`, `ag2_sugar_refining`, `ag2_sugar_voyage`, `ag2_superphosphate`, `ag2_tea_voyage`, `ag2_tedder`, `ag2_terracing`, `ag2_three_point_linkage`, `ag2_threshing_machine`, `ag2_tile_drainage`, `ag2_tractor_steam`, `ag2_tuberculin_test`, `ag2_urea`, `ag2_vacuum_pan`, `ag2_veterinary_vaccination`, `ag2_wardian_case`, `ag2_white_flour_loss`, `ag2_winnower`, `ag2_yeast_culture`, `civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `gp_carbon_brushes`, `gp_controlled_atmosphere_chamber`, `gp_czochralski_puller`, `gp_exhaust_pinchoff`, `gp_getter`, `gp_glass_metal_seal`, `gp_laminated_core`, `gp_magnet_wire_enamelled`, `gp_whisker_forming`, `in2_analytical_balance`, `in2_aneroid_capsule`, `in2_balance_spring_watch`, `in2_bourdon_pressure_gauge`, `in2_gas_thermometry_absolute`, `in2_mcleod_vacuum_gauge`, `in2_mercury_barometer`, `in2_microbalance_quartz`, `in2_optical_comparator`, `in2_orifice_flow_meter`, `in2_pitot_tube`, `in2_quartz_resonator_frequency`, `in2_resistance_thermometer_RTD`, `in2_thermocouple`, `in2_torsion_balance`, `in2_travelling_microscope`, `in2_tuning_fork_oscillator`, `in2_venturi_flow_meter`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`
+| **undocumented, a real gap** | **0** |
 

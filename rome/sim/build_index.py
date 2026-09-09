@@ -55,12 +55,20 @@ def main():
         txt = open(os.path.join(KB, f)).read()
         anchors[f], slugs[f] = set(), {}
         for line in txt.splitlines():
-            m = re.match(r"^##\#?\s+`?([A-Za-z0-9_]+)`?(?=\s*[-:])", line)
+            m = re.match(r"^##\#?\s+`?([A-Za-z0-9_]+)`?(?=\s*[-:,])", line)
             if not m:
                 continue
             tid = m.group(1)
             anchors[f].add(tid)
-            slugs[f][tid] = github_slug(line.lstrip("#").strip())
+            slug = github_slug(line.lstrip("#").strip())
+            slugs[f][tid] = slug
+            # A heading may name SEVERAL ids before the dash, as
+            # "### a, b, c - Name". Register them all against the same anchor,
+            # otherwise everything after the first comma reports as undocumented.
+            head = line.lstrip("#").split(" - ")[0]
+            for extra in re.findall(r"[A-Za-z][A-Za-z0-9_]{2,}", head):
+                anchors[f].add(extra)
+                slugs[f].setdefault(extra, slug)
             cur = tid
         # A module section covers a CLUSTER of nodes, not one. The heading names
         # a representative and an "Also covers:" line names the rest. Without

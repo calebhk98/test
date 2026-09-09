@@ -91,7 +91,7 @@ python3 rome/sim/treetool.py judge --id zinc_metal
 
 gives a report card: grade, tier, direct prerequisites, full ancestry depth,
 which capability rungs appear in its chain, cost, calendar floor, and every
-defect by name. Across all 3,001 nodes the mean is **96.4/100**.
+defect by name. Across all 3,001 nodes the mean is **96.8/100**.
 
 **Discount that number, and here is precisely why.** Three separate times in
 this project the score rose because a CHECK was wrong, not because the data
@@ -122,20 +122,25 @@ done by a separate reviewer against a random sample.
 
 Stated plainly, because a list of achievements without this is marketing.
 
-- **304 nodes have no how-to entry.** They have costs, prerequisites and a note,
-  and no recipe. Every remaining link is verified: broken links are 0, but a gap
-  is a gap.
+- Every node now resolves to a specific how-to entry: 2,897 of 3,001 linked to
+  an anchor rather than to a bare domain module, 104 correctly unlinked because
+  they are capability rungs or raw materials, 0 broken and 0 undocumented. That
+  was the single largest outstanding complaint and it is closed.
 - **213 nodes still declare no capability rung anywhere in their ancestry.**
-  Some of those are correct, because an idea needs no furnace. Not all of them.
+  Some of those are correct, because an idea needs no furnace. Not all of them,
+  and I would rather leave them flagged than infer edges from keywords again.
+- **148 nodes are SHALLOW**, meaning their prerequisite chain is thinner than
+  the technology really is.
 - **Substitution reaches about 10% of nodes.** The mechanism is right and the
   coverage is thin.
 - **166 is the closure of a POINT CONTACT transistor**, which needs no
   photolithography and no zone-refined silicon. A reviewer expecting 500 is
   arguing about the goal, not the graph, and that is a fair argument to have.
-- **Civilization differentiation is thinly calibrated.** Five civilizations are
-  modelled and the spread between them is narrower than it should be. The Mexica
-  having no draught animals and no wheel is not yet modelled as a negative
-  capability.
+- **Civilization differentiation is still thin.** Five civilizations are
+  modelled. The Mexica having no draught animals and no wheel is not yet
+  modelled as a negative capability, and the social nodes are still named for
+  Roman institutions (patron_senatorial, collegium_licensed), which is a real
+  limit on how generic the abstraction actually is.
 - The cost model is the weak part throughout. See "How much to trust it".
 
 ## What is here
@@ -146,7 +151,7 @@ Stated plainly, because a list of achievements without this is marketing.
 | [`rome/01_WORLD_STATE_100AD.md`](rome/01_WORLD_STATE_100AD.md) | What Rome has, what it lacks, where every material comes from, what everything costs. |
 | [`rome/02_STRATEGY.md`](rome/02_STRATEGY.md) | The master plan and the simulator evidence that it beats the alternatives. |
 | [`rome/knowledge/03_SOCIAL_POLITICS.md`](rome/knowledge/03_SOCIAL_POLITICS.md) | **The ten nodes without which every run fails.** Patronage, citizenship, the school, the licence, and why money protects you only once it is converted into obligation. |
-| [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** 26 modules of real recipes with masses, temperatures and failure modes, plus a generated index linking 2,593 tree nodes to the specific entry that documents them. |
+| [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** 28 modules of real recipes with masses, temperatures and failure modes, plus a generated index linking 2,897 tree nodes to the specific entry that documents them. |
 | [`rome/knowledge/00_NONOBVIOUS_TRICKS.md`](rome/knowledge/00_NONOBVIOUS_TRICKS.md) | **Start here in the library.** The specific physical tricks that make everything else buildable. |
 | [`rome/knowledge/95_expeditions.md`](rome/knowledge/95_expeditions.md) | Why nothing is unobtainable, and what going to get it actually costs. |
 | [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | **3,001 nodes, 4,720 edges**, fully costed in hours, denarii, materials, risk and social consequence. |

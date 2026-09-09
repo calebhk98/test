@@ -5,824 +5,609 @@
   "defects": []
  },
  "ag2_adulteration_law": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_artificial_insemination": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
+   "CAP-NONE"
   ]
  },
  "ag2_balanced_ration": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_baler": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_basic_slag": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_battery_poultry": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_biological_control": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
+   "CAP-NONE"
   ]
  },
  "ag2_bone_meal": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_bordeaux_mixture": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_botanic_garden": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_bottling": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_budding": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_butter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_canning": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_caterpillar_track": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_centrifugal_sugar": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_chaff_cutter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_cheese_families": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_coffee_voyage": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_cold_store": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_column_still": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_combine_harvester": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_composting": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_condensed_milk": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-VAC",
-   "NO-RECIPE"
-  ]
- },
- "ag2_contour_ploughing": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_controlled_pollination": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_coulter": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "NOTE-THIN",
-   "NO-RECIPE"
-  ]
- },
- "ag2_cream_separator": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_crown_cork": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_cultivator": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_ddt": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_double_seam_can": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT",
-   "NO-RECIPE"
-  ]
- },
- "ag2_erosion_control": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_evaporated_milk": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_fanning_mill": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_fat_hydrogenation": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_fermentation_control": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_food_laboratory": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_gasworks_ammonia": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_grafting": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_gravity_irrigation": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_green_manure": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_guano": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_harrow": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_herd_book": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_hopping": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_horse_hoe": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_hybrid_maize": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
-  ]
- },
- "ag2_hybridisation": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
-  ]
- },
- "ag2_hydrometer": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_layering": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_lead_arsenate": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
-  ]
- },
- "ag2_lime_sulphur": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_liming": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_maize_newworld": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_malting": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT",
-   "NO-RECIPE"
-  ]
- },
- "ag2_marling": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_mashing": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_milking_machine": {
   "score": 88,
   "grade": "B",
   "defects": [
-   "COST-HIGH",
-   "NO-RECIPE"
+   "CAP-VAC"
   ]
  },
- "ag2_mower": {
-  "score": 94,
+ "ag2_contour_ploughing": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_nicotine_pesticide": {
-  "score": 94,
+ "ag2_controlled_pollination": {
+  "score": 100,
   "grade": "A",
+  "defects": []
+ },
+ "ag2_coulter": {
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "NO-RECIPE"
+   "NOTE-THIN"
   ]
  },
- "ag2_nitrite_curing": {
-  "score": 94,
+ "ag2_cream_separator": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_nitrogen_cycle": {
-  "score": 94,
+ "ag2_crown_cork": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_norfolk_course": {
-  "score": 94,
+ "ag2_cultivator": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_oil_pressing": {
-  "score": 94,
+ "ag2_ddt": {
+  "score": 100,
   "grade": "A",
+  "defects": []
+ },
+ "ag2_double_seam_can": {
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "NO-RECIPE"
+   "CAP-HEAT"
   ]
  },
- "ag2_pasteurisation": {
-  "score": 94,
+ "ag2_erosion_control": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_plant_quarantine": {
-  "score": 94,
+ "ag2_evaporated_milk": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_pot_still": {
-  "score": 94,
+ "ag2_fanning_mill": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_potash": {
-  "score": 94,
+ "ag2_fat_hydrogenation": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_potato_lifter": {
-  "score": 94,
+ "ag2_fermentation_control": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_potato_newworld": {
-  "score": 94,
+ "ag2_food_laboratory": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_power_take_off": {
-  "score": 94,
+ "ag2_gasworks_ammonia": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_progeny_testing": {
-  "score": 94,
+ "ag2_grafting": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_pure_line_selection": {
-  "score": 94,
+ "ag2_gravity_irrigation": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_purifier": {
-  "score": 94,
+ "ag2_green_manure": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_pyrethrum": {
-  "score": 94,
+ "ag2_guano": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_reaper": {
-  "score": 94,
+ "ag2_harrow": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_reaper_binder": {
-  "score": 94,
+ "ag2_herd_book": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_record_keeping_breeding": {
-  "score": 94,
+ "ag2_hopping": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_refrigerated_ship": {
-  "score": 94,
+ "ag2_horse_hoe": {
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
- "ag2_refrigeration_ice": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_resistant_variety": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
-  ]
- },
- "ag2_retort": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_rhizobia": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_ridging_plough": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_roller": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_roller_mill": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_root_cutter": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_rootstocks": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_seed_certification": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_seed_drill": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_seed_trade": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_sheep_dip": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_silage_silo": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_soil_testing": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_sprayer": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_subsoiler": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_sugar_refining": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_sugar_voyage": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_superphosphate": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
-  ]
- },
- "ag2_tea_voyage": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
-  ]
- },
- "ag2_tedder": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_terracing": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_three_point_linkage": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_threshing_machine": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_tile_drainage": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_tractor_steam": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_tuberculin_test": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_urea": {
-  "score": 94,
-  "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
- },
- "ag2_vacuum_pan": {
+ "ag2_hybrid_maize": {
   "score": 82,
   "grade": "B",
   "defects": [
-   "CAP-VAC",
-   "NO-RECIPE"
+   "CAP-NONE"
+  ]
+ },
+ "ag2_hybridisation": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "CAP-NONE"
+  ]
+ },
+ "ag2_hydrometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_layering": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_lead_arsenate": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "CAP-NONE"
+  ]
+ },
+ "ag2_lime_sulphur": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_liming": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_maize_newworld": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_malting": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "CAP-HEAT"
+  ]
+ },
+ "ag2_marling": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_mashing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_milking_machine": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "ag2_mower": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_nicotine_pesticide": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_nitrite_curing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_nitrogen_cycle": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_norfolk_course": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_oil_pressing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_pasteurisation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_plant_quarantine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_pot_still": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_potash": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_potato_lifter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_potato_newworld": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_power_take_off": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_progeny_testing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_pure_line_selection": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_purifier": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_pyrethrum": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_reaper": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_reaper_binder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_record_keeping_breeding": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_refrigerated_ship": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_refrigeration_ice": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_resistant_variety": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "CAP-NONE"
+  ]
+ },
+ "ag2_retort": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_rhizobia": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_ridging_plough": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_roller": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_roller_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_root_cutter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_rootstocks": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_seed_certification": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_seed_drill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_seed_trade": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_sheep_dip": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_silage_silo": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_soil_testing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_sprayer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_subsoiler": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_sugar_refining": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_sugar_voyage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_superphosphate": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "CAP-NONE"
+  ]
+ },
+ "ag2_tea_voyage": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "CAP-NONE"
+  ]
+ },
+ "ag2_tedder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_terracing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_three_point_linkage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_threshing_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_tile_drainage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_tractor_steam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_tuberculin_test": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_urea": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ag2_vacuum_pan": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "CAP-VAC"
   ]
  },
  "ag2_veterinary_vaccination": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
+   "CAP-NONE"
   ]
  },
  "ag2_wardian_case": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_white_flour_loss": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_winnower": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "ag2_yeast_culture": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "air_aerial_bombing": {
   "score": 94,
@@ -6181,75 +5966,64 @@
   "defects": []
  },
  "gp_carbon_brushes": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "gp_controlled_atmosphere_chamber": {
   "score": 94,
   "grade": "A",
   "defects": [
-   "NO-RECIPE"
-  ]
- },
- "gp_controlled_atmosphere_chamber": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "NO-FLOOR",
-   "NO-RECIPE"
+   "NO-FLOOR"
   ]
  },
  "gp_czochralski_puller": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "NO-FLOOR",
-   "NO-RECIPE"
-  ]
- },
- "gp_exhaust_pinchoff": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "NO-FLOOR",
-   "NO-RECIPE"
-  ]
- },
- "gp_getter": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-VAC",
-   "NO-FLOOR",
-   "NO-RECIPE"
-  ]
- },
- "gp_glass_metal_seal": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-VAC",
-   "NO-FLOOR",
-   "NO-RECIPE"
-  ]
- },
- "gp_laminated_core": {
   "score": 94,
   "grade": "A",
   "defects": [
-   "NO-RECIPE"
+   "NO-FLOOR"
   ]
  },
- "gp_magnet_wire_enamelled": {
+ "gp_exhaust_pinchoff": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-FLOOR"
+  ]
+ },
+ "gp_getter": {
   "score": 82,
   "grade": "B",
   "defects": [
-   "CAP-POWER",
-   "NO-RECIPE"
+   "CAP-VAC",
+   "NO-FLOOR"
   ]
  },
- "gp_whisker_forming": {
+ "gp_glass_metal_seal": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "CAP-VAC",
+   "NO-FLOOR"
+  ]
+ },
+ "gp_laminated_core": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "gp_magnet_wire_enamelled": {
   "score": 88,
   "grade": "B",
   "defects": [
-   "NO-FLOOR",
-   "NO-RECIPE"
+   "CAP-POWER"
+  ]
+ },
+ "gp_whisker_forming": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-FLOOR"
   ]
  },
  "gunpowder": {
@@ -6664,167 +6438,123 @@
   "defects": []
  },
  "if_acoustic_horn_recording": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_adding_machine": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_amplitude_modulation": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_antenna_dipole": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_autochrome_plate": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_bookbinding_case": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_cable_repeater": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_calotype": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_camera_lucida": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_carbon_microphone": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
+   "CAP-NONE"
   ]
  },
  "if_carbon_paper": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
+   "CAP-NONE"
   ]
  },
  "if_card_sorter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_cash_register": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_cathode_ray_tube": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_celluloid_roll_film": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_chase_and_forme": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_chromolithography": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_cine_camera": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_coherer": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_composing_stick": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_comptometer": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_continuous_wave_transmitter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_crystal_detector": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_cylinder_press": {
   "score": 100,
@@ -6837,32 +6567,24 @@
   "defects": []
  },
  "if_dewey_classification": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_disc_cutting_lathe": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_disc_record": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_dry_gelatin_plate": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_electrotype": {
   "score": 88,
@@ -6872,39 +6594,29 @@
   ]
  },
  "if_facsimile_transmission": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_film_projector": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_flash_powder": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_flashbulb": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_focal_plane_shutter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_fountain_pen": {
   "score": 100,
@@ -6912,81 +6624,59 @@
   "defects": []
  },
  "if_frequency_modulation": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_gramophone_motor": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_halftone_screen": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_hollerith_tabulator": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_iconoscope": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_index_card_system": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_iron_gall_ink": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_iron_hand_press": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_jacquard_chain": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_keypunch": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_leaf_shutter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_linotype_machine": {
   "score": 100,
@@ -6999,88 +6689,64 @@
   "defects": []
  },
  "if_loading_coil": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_magnetic_tape": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_mimeograph": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_morse_key_and_sounder": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_movable_type": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_moving_coil_loudspeaker": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_panchromatic_emulsion": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_papyrus": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_parchment": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_pencil_graphite": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_phonautograph": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_photoengraving": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_printing_ink": {
   "score": 100,
@@ -7088,46 +6754,34 @@
   "defects": []
  },
  "if_punch_and_matrix": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_punched_card": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_quill": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_radio_direction_finding": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_rag_paper": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_recording_bias": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_rotary_press": {
   "score": 100,
@@ -7135,138 +6789,101 @@
   "defects": []
  },
  "if_screw_press": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_shift_key_mechanism": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_silver_halide_sensitivity": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_slide_rule": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_spark_transmitter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_steel_pen_nib": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_stencil_duplicator": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_strowger_exchange": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_submarine_cable_gutta_percha": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_superheterodyne_receiver": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_telegraph_relay": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_telephone_exchange": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_telephone_receiver": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_telephone_transmitter": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "NO-RECIPE"
+   "CAP-NONE"
   ]
  },
  "if_television_mechanical": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_tin_foil_phonograph": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_triode_oscillator": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_tuned_circuit": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_type_mould": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_typewriter": {
   "score": 100,
@@ -7274,25 +6891,19 @@
   "defects": []
  },
  "if_video_scanning_standard": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_wax_cylinder": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "if_woodblock_printing": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_adiabatic_demagnetization": {
   "score": 100,
@@ -7310,18 +6921,15 @@
   "defects": []
  },
  "in2_analytical_balance": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_aneroid_capsule": {
-  "score": 82,
+  "score": 88,
   "grade": "B",
   "defects": [
-   "CAP-VAC",
-   "NO-RECIPE"
+   "CAP-VAC"
   ]
  },
  "in2_antireflection_coating": {
@@ -7335,11 +6943,9 @@
   "defects": []
  },
  "in2_balance_spring_watch": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_baseline_measurement_apparatus": {
   "score": 100,
@@ -7357,11 +6963,9 @@
   "defects": []
  },
  "in2_bourdon_pressure_gauge": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_cassegrain_reflector": {
   "score": 100,
@@ -7490,11 +7094,9 @@
   "defects": []
  },
  "in2_gas_thermometry_absolute": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_geiger_counter": {
   "score": 82,
@@ -7587,26 +7189,21 @@
   ]
  },
  "in2_mcleod_vacuum_gauge": {
-  "score": 82,
+  "score": 88,
   "grade": "B",
   "defects": [
-   "CAP-VAC",
-   "NO-RECIPE"
+   "CAP-VAC"
   ]
  },
  "in2_mercury_barometer": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_microbalance_quartz": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_microtome_rotary": {
   "score": 100,
@@ -7624,18 +7221,14 @@
   "defects": []
  },
  "in2_optical_comparator": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_orifice_flow_meter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_oscilloscope_crt": {
   "score": 88,
@@ -7690,11 +7283,9 @@
   "defects": []
  },
  "in2_pitot_tube": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_plane_table": {
   "score": 100,
@@ -7733,11 +7324,9 @@
   ]
  },
  "in2_quartz_resonator_frequency": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_radio_direction_finder": {
   "score": 100,
@@ -7745,11 +7334,9 @@
   "defects": []
  },
  "in2_resistance_thermometer_RTD": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_reticle_crosshair": {
   "score": 100,
@@ -7851,18 +7438,14 @@
   "defects": []
  },
  "in2_thermocouple": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_torsion_balance": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_towing_tank": {
   "score": 82,
@@ -7872,11 +7455,9 @@
   ]
  },
  "in2_travelling_microscope": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_triangulation_tripod_station": {
   "score": 100,
@@ -7889,11 +7470,9 @@
   "defects": []
  },
  "in2_tuning_fork_oscillator": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_ultracentrifuge": {
   "score": 88,
@@ -7917,11 +7496,9 @@
   ]
  },
  "in2_venturi_flow_meter": {
-  "score": 94,
+  "score": 100,
   "grade": "A",
-  "defects": [
-   "NO-RECIPE"
-  ]
+  "defects": []
  },
  "in2_vibration_table": {
   "score": 100,
@@ -8407,12 +7984,11 @@
   "defects": []
  },
  "mat_chile_nitrate": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
    "COST-LOW",
    "NO-FLOOR",
-   "NO-RECIPE",
    "SOCIAL-FLAT"
   ]
  },
@@ -8446,14 +8022,13 @@
   ]
  },
  "mat_cryolite": {
-  "score": 34,
+  "score": 40,
   "grade": "F",
   "defects": [
    "CAP-NONE",
    "SHALLOW",
    "THIN-CHAIN",
    "NO-FLOOR",
-   "NO-RECIPE",
    "SOCIAL-FLAT"
   ]
  },
@@ -8528,13 +8103,12 @@
   ]
  },
  "mat_gutta_percha": {
-  "score": 46,
-  "grade": "F",
+  "score": 52,
+  "grade": "D",
   "defects": [
    "CAP-NONE",
    "SHALLOW",
-   "THIN-CHAIN",
-   "NO-RECIPE"
+   "THIN-CHAIN"
   ]
  },
  "mat_gypsum": {
@@ -8596,23 +8170,21 @@
   "defects": []
  },
  "mat_natural_rubber": {
-  "score": 58,
-  "grade": "D",
+  "score": 64,
+  "grade": "C",
   "defects": [
    "SHALLOW",
    "COST-LOW",
    "NO-FLOOR",
-   "NO-RECIPE",
    "SOCIAL-FLAT"
   ]
  },
  "mat_newworld_crops": {
-  "score": 82,
+  "score": 88,
   "grade": "B",
   "defects": [
    "COST-LOW",
-   "NO-FLOOR",
-   "NO-RECIPE"
+   "NO-FLOOR"
   ]
  },
  "mat_nickel": {
@@ -8662,12 +8234,11 @@
   ]
  },
  "mat_platinum_bulk": {
-  "score": 76,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
    "COST-LOW",
    "NO-FLOOR",
-   "NO-RECIPE",
    "SOCIAL-FLAT"
   ]
  },
@@ -8687,12 +8258,11 @@
   "defects": []
  },
  "mat_quinine": {
-  "score": 82,
+  "score": 88,
   "grade": "B",
   "defects": [
    "COST-LOW",
-   "NO-FLOOR",
-   "NO-RECIPE"
+   "NO-FLOOR"
   ]
  },
  "mat_salt": {

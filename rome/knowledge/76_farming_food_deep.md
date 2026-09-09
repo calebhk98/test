@@ -1,405 +1,405 @@
 # Module 76: Farming and Food, the Deep Layer
 
-Rome already feeds roughly a million people in the capital alone, with the plough, terracing, irrigation, grafting, real viticulture, and a working literature: Cato, Varro, Columella. Rome rotates, fallows, and manures without knowing why a legume year restores land. That gap, nitrogen, is the single highest-value item below, because it costs no capital and it abolishes the fallow year (the Norfolk rotation, roughly a third more cropped land from nothing but reordering). Second highest: the seed drill and horse hoe, because broadcast seed cannot be hoed between and rows can. Third: selection and breeding as bookkeeping, progeny testing and pure line selection work before anyone understands genes. Fourth: preservation, canning, pasteurisation, mechanical cold, none of which need germ theory to work, though teach germ theory anyway (`70_medicine_biology.md`) since it explains the failures. Fifth, stated plainly: roller milling strips the germ and bran, which stops flour going rancid and also strips out most of the thiamine, and white bread as a dominant food caused beriberi at scale. Rome already poisons itself the same way, boiling *defrutum* in lead pans. New technology is not automatically a free win; several items below are progress with a bill attached, and this module tries to hand over the bill along with the gain. A last category needs a ship, not a technique: potato and maize each need one successful Atlantic crossing (`exp_atlantic_crossing`, see `95_expeditions.md`) and then propagate forever from what you bring back; sugar, coffee, and tea need a standing trade route or colony instead, since none of the three will grow in Italy's climate at all.
+Rome already feeds roughly a million people in the capital, with plough, terracing, irrigation, grafting, real viticulture, and a working literature: Cato, Varro, Columella. It rotates, fallows, and manures without knowing why a legume year restores land. That gap, nitrogen, is the highest-value item below: it costs no capital and it abolishes the fallow year (the Norfolk rotation, ESTIMATED roughly a third more cropped land from reordering alone). Second: the seed drill and horse hoe, since broadcast seed cannot be hoed between and rows can. Third: selection and breeding as bookkeeping, progeny testing and pure line selection work before anyone understands genes. Fourth: preservation, canning, pasteurisation, mechanical cold, none needing germ theory to work, though teach germ theory anyway (`70_medicine_biology.md`) since it explains the failures. Fifth, stated plainly: roller milling strips the germ and bran, stopping flour going rancid and also stripping out most thiamine, and white bread as a dominant food caused beriberi at scale. Rome already poisons itself the same way, boiling *defrutum* in lead pans. New technology is not automatically a free win; several items below are progress with a bill attached, and this module hands over the bill with the gain. A last category needs a ship, not a technique: potato and maize each need one successful Atlantic crossing (`exp_atlantic_crossing`, `95_expeditions.md`) and then propagate forever; sugar, coffee, and tea need a standing trade route or colony instead, since none of the three grows in Italy's climate.
 
 ---
 
 ### ag2_rhizobia - Legume root nodules and the nitrogen cycle (*attributed*)
 Also covers: ag2_nitrogen_cycle.
 
-**What it is / why you want it.** Cut open a bean or clover root nodule: the pink-red interior holds bacteria pulling nitrogen gas from the air into a form plants use. This is why a legume year restores soil better than fallow, the actual mechanism behind a practice Rome already runs blind.
+**What it is / why you want it.** Cut open a bean or clover root nodule: the pink-red interior holds bacteria pulling nitrogen gas from air into a form plants use, the mechanism behind why a legume year restores soil.
 
-**Why you would never guess this.** A root nodule looks like a disease, not a factory; nothing about soil or air suggests they trade nitrogen.
+**Why you would never guess this.** A nodule looks like a disease, not a factory.
 
-**Prerequisites.** A lens helps confirm bacteria inside the nodule; not required to use the finding.
+**Prerequisites.** A lens helps confirm the bacteria; not required to use the finding.
 
-**Roman-available inputs.** Faba beans, chickpea, lentil, vetch, lucerne (*medica*), all already grown.
+**Roman-available inputs.** Faba bean, chickpea, lentil, vetch, lucerne (*medica*), all already grown.
 
-**Procedure.** 1. Pull a healthy legume mid-season, wash roots, cut nodules open. 2. Pink-red interior means active fixation; grey-brown means dead, fixed nothing. 3. Compare wheat following a legume year against wheat following fallow at equal manure. 4. Record: nodule-bearing crops feed the next crop, others only take.
+**Procedure.** 1. Cut nodules from a mid-season legume root; pink-red means active fixation, grey-brown means dead. 2. Compare wheat after a legume year against wheat after fallow at equal manure. 3. Record: nodule-bearing crops feed the next crop, others only take.
 
-**How you know it worked.** Wheat after a legume year stands markedly thicker than wheat after fallow.
+**How you know it worked.** Wheat after a legume year stands markedly thicker than after fallow.
 
-**Failure modes.** Waterlogged or acid soil kills the nodule bacteria; a legume grows but fixes little, and only nodule colour reveals this.
+**Failure modes.** Waterlogged or acid soil kills the nodule bacteria; only nodule colour reveals a failed year.
 
-**Cost & labour.** ESTIMATED (basis: one season's observation, no new tools).
+**Cost & labour.** ESTIMATED (basis: one season's observation, no tools).
 
-**Danger.** None physical.
+**Danger.** None.
 
 **Confidence: HIGH.**
 
 ### ag2_norfolk_course - Four-course rotation without fallow
 Also covers: ag2_green_manure, ag2_composting.
 
-**What it is / why you want it.** Replace the fallow year with turnips and clover: wheat, turnips, barley undersown with clover, clover, cycling on. Every year grows something; turnips and clover feed livestock over winter, whose manure feeds the wheat. Green manure is clover ploughed under while still green instead of harvested, all its nitrogen staying in the field. Composting turns manure and plant waste into usable humus in months by controlling moisture and heap temperature instead of leaving it to rot at random.
+**What it is / why you want it.** Replace fallow with turnips and clover: wheat, turnips, barley undersown with clover, clover, cycling on; every year grows something and winter fodder manures the wheat. Green manure ploughs clover under while still green instead of harvesting it. Composting turns waste into humus in months by controlling heap moisture and heat instead of random rot.
 
 **Why you would never guess this.** Only makes sense once ag2_rhizobia is known; otherwise feeding livestock on the "rest" year looks like it should exhaust ground faster.
 
-**Prerequisites.** ag2_rhizobia, turnip and clover seed (both already Roman-grown), livestock to fold onto the fodder years.
+**Prerequisites.** ag2_rhizobia, turnip and clover seed (already Roman-grown), livestock to fold.
 
 **Roman-available inputs.** As above.
 
-**Procedure.** 1. Split arable land into four blocks. 2. Wheat, then turnips, then barley/clover undersown, then clover (grazed, cut, or ploughed green). 3. Fold penned livestock onto the fodder blocks so manure lands where wheat will grow next. 4. For composting, layer manure and plant waste, keep moist, turn periodically to keep the heap hot enough to break down fully.
+**Procedure.** 1. Split arable land into four blocks: wheat, turnips, barley/clover, clover. 2. Fold penned livestock onto fodder blocks so manure lands where wheat grows next. 3. For compost, layer and turn manure and waste, keeping the heap moist and hot.
 
-**How you know it worked.** Roughly a third more cropped land in any year (ESTIMATED, basis: no block sits idle); wheat yield matches or beats fallow-rotation wheat within a few cycles.
+**How you know it worked.** ESTIMATED roughly a third more cropped land yearly, no block idle; wheat yield matches or beats fallow-rotation wheat within a few cycles.
 
-**Failure modes.** Skipping the folding step wastes most of the gain; clover sown too many years running suffers "clover sickness."
+**Failure modes.** Skipping folding wastes most of the gain; repeated clover years cause "clover sickness."
 
-**Cost & labour.** DERIVED: no new capital, only reordered existing seed and livestock.
+**Cost & labour.** DERIVED: no new capital, reordered existing seed and stock.
 
-**Danger.** None. Socially: farmers taught fallow is rest may resist; the nodule demonstration is the argument.
+**Danger.** None; socially, farmers taught fallow is rest may resist.
 
 **Confidence: HIGH.**
 
 ### ag2_guano, ag2_bone_meal, ag2_basic_slag - Imported and recycled phosphate
-**What it is / why you want it.** Three phosphorus and nitrogen sources beyond manure. Guano, dried seabird droppings from arid coasts, is far more concentrated than manure. Bone meal, ground and steamed bone, releases phosphorus over three to five years. Basic slag, skimmed from smelting phosphoric iron ore, is a metallurgical byproduct that also corrects soil acidity.
+**What it is / why you want it.** Guano (dried seabird droppings from arid coasts) is far more concentrated than manure. Bone meal (ground, steamed bone) releases phosphorus over three to five years. Basic slag, skimmed from smelting phosphoric iron ore, supplies phosphate and corrects acidity together.
 
-**Why you would never guess this.** Guano needs a specific rainless coastline no Mediterranean shore offers. Bone meal needs steaming, not just burial, or phosphorus releases too slowly to matter. Basic slag needs an existing furnace on phosphoric ore and the sense to keep the "waste."
+**Why you would never guess this.** Guano needs a rainless coastline no Mediterranean shore offers; bone meal needs steaming or phosphorus releases too slowly; slag needs a furnace on phosphoric ore and the sense to keep the "waste."
 
-**Prerequisites.** Guano: an ocean voyage to an arid coast (`95_expeditions.md`, distinct from the Atlantic crossing). Bone meal: a mill and boiling/steam source. Slag: an iron furnace on phosphoric ore.
+**Prerequisites.** Guano: an arid-coast voyage (`95_expeditions.md`). Bone meal: a mill and steam source. Slag: a furnace on phosphoric ore.
 
-**Roman-available inputs.** Bone everywhere; iron smelting everywhere, phosphoric ore only where the deposit has it.
+**Roman-available inputs.** Bone everywhere; iron smelting everywhere, phosphoric ore only locally.
 
-**Procedure.** Bone meal: boil bone clean, steam or prolong-boil to embrittle, grind fine, broadcast and plough in. Slag: grind fine, broadcast, ideally before a legume year. Guano: ship, store dry, broadcast, apply close to planting since it leaches fast.
+**Procedure.** Bone meal: boil, steam-embrittle, grind, plough in. Slag: grind fine, broadcast before a legume year. Guano: ship dry, apply close to planting since it leaches fast.
 
-**How you know it worked.** Guano acts within one season like a strong manure; bone meal and slag show gradual thickening over several seasons.
+**How you know it worked.** Guano acts within a season like strong manure; bone meal and slag thicken crops gradually over seasons.
 
-**Failure modes.** Unground bone or slag is nearly inert.
+**Failure modes.** Unground material is nearly inert.
 
-**Cost & labour.** DERIVED: guano cost scales with voyage cost (`95_expeditions.md`); bone meal and slag reuse existing waste streams plus milling.
+**Cost & labour.** DERIVED: guano scales with voyage cost; bone meal/slag reuse existing waste streams.
 
 **Danger.** Guano dust irritates lungs in bulk handling.
 
 **Confidence: MEDIUM.**
 
 ### ag2_superphosphate - Acid-treated phosphate
-**What it is / why you want it.** Treating bone meal or rock phosphate with strong acid makes its phosphorus available within weeks instead of years, at 15-20% content against bone meal's 3-4%.
+**What it is / why you want it.** Acid-treated bone or rock phosphate becomes available within weeks instead of years, 15-20% content against bone meal's 3-4%.
 
-**Why you would never guess this.** The treated material looks and smells worse than the untreated bone; nothing about it signals improvement by eye.
+**Why you would never guess this.** Treated material looks and smells worse than untreated bone; nothing signals improvement by eye.
 
-**Prerequisites.** Bulk sulfuric acid (`sulfuric_retort`, `chm_contact_sulfuric`, see `20_chemistry.md`), acid-resistant mixing vessel.
+**Prerequisites.** Bulk sulfuric acid (`sulfuric_retort`, `chm_contact_sulfuric`, `20_chemistry.md`), acid-resistant vessel.
 
-**Roman-available inputs.** Bone or rock phosphate as above; sulfuric acid is not a standard Roman product and is the real bottleneck.
+**Roman-available inputs.** Bone/rock phosphate; sulfuric acid is the real bottleneck.
 
-**Procedure.** 1. Grind phosphate fine. 2. Add concentrated acid slowly in a ventilated, lined vessel; ratio to be field-tested, not assumed. 3. Let the reaction finish. 4. Dry, grind, store dry (it cakes with damp).
+**Procedure.** 1. Grind phosphate. 2. Add acid slowly in a lined vessel, ratio field-tested not assumed. 3. Dry, grind, store dry.
 
-**How you know it worked.** Treated material dissolves faster in water than raw bone meal; crop response shows the same season.
+**How you know it worked.** Dissolves faster than raw bone meal; crop response shows the same season.
 
-**Failure modes.** Under-acidified batches stay slow-release; damp storage cakes it unusable.
+**Failure modes.** Under-acidified batches stay slow-release; damp storage cakes it.
 
-**Cost & labour.** DERIVED: dominated by acid production cost, itself capital-heavy.
+**Cost & labour.** DERIVED: dominated by acid production cost.
 
-**Danger.** Concentrated sulfuric acid burns severely; add acid to moistened material slowly, never the reverse.
+**Danger.** Concentrated acid burns severely; acid into moistened material, never reverse.
 
 **Confidence: MEDIUM**, gated on `20_chemistry.md`.
 
 ### ag2_potash - Wood ash as fertiliser
-**What it is / why you want it.** Wood ash, already at hand, is crude potash. The addition worth teaching is the dose curve: a little strengthens stems and roots, too much salts the soil, since potash is a salt, not organic matter.
+**What it is / why you want it.** Wood ash is crude potash. The addition is the dose curve: a little strengthens stems, too much salts the soil, since potash is a salt, not organic matter.
 
 **Why you would never guess this.** "More manure helps" is the natural rule; potash breaks it at the high end.
 
 **Prerequisites.** None beyond ash-leaching, already a Roman lye technique.
 
-**Roman-available inputs.** Hearth and land-clearing ash.
+**Roman-available inputs.** Hearth and clearing ash.
 
-**Procedure.** 1. Leach ash with water. 2. Evaporate to a liquor or solid. 3. Apply moderately, test increasing doses on marked strips. 4. Watch for scorched leaf edges (excess) versus stronger stems (correct dose).
+**Procedure.** 1. Leach ash with water, evaporate to a liquor. 2. Test increasing doses on marked strips, watching for scorched edges (excess) versus stronger stems (correct).
 
 **How you know it worked.** Moderate dose strengthens straw without leaf damage.
 
-**Failure modes.** Over-application salinises and reduces yield, unlike excess nitrogen.
+**Failure modes.** Over-application salinises and cuts yield, unlike excess nitrogen.
 
-**Cost & labour.** ESTIMATED (basis: existing leaching technique, low new cost).
+**Cost & labour.** ESTIMATED (basis: existing leaching technique, low cost).
 
 **Danger.** Concentrated liquor is caustic like lye.
 
-**Confidence: MEDIUM**, dosing is trial and error without an assay method.
+**Confidence: MEDIUM**, dosing is trial and error without assay.
 
 ### ag2_gasworks_ammonia, ag2_urea - Synthetic nitrogen
-**What it is / why you want it.** Ammonium sulphate recovered from coal-gas ammonia liquor is roughly 20% nitrogen, soluble, active within weeks. Urea is pure manufactured nitrogen, denser and easier to store, but needs full Haber-Bosch synthesis.
+**What it is / why you want it.** Ammonium sulphate from coal-gas ammonia liquor is roughly 20% nitrogen, active within weeks. Urea is pure manufactured nitrogen, needing full Haber-Bosch synthesis.
 
-**Why you would never guess this.** That a foul gasworks waste liquor is valuable plant food is not obvious; that pure nitrogen fertiliser can be made from air and water is the deepest surprise here, and far beyond unaided Roman chemistry.
+**Why you would never guess this.** That gasworks waste is valuable plant food is not obvious; that pure nitrogen can be made from air and water is the deepest surprise, far beyond unaided Roman chemistry.
 
-**Prerequisites.** A coal-gas industry (`20_chemistry.md`, `93_energy.md`) for ammonia; Haber-Bosch (`chm_haber_bosch`) for urea, needing high-pressure catalysis Rome does not have.
+**Prerequisites.** A coal-gas industry (`20_chemistry.md`, `93_energy.md`) for ammonia; `chm_haber_bosch` for urea.
 
 **Roman-available inputs.** None until those chains exist.
 
-**Procedure.** 1. Condense ammonia liquor from coal distillation. 2. Fix with sulfuric acid as ammonium sulphate. 3. Apply dissolved, timed close to active growth since it leaches fast. Urea synthesis is out of farm scope, an end-state good, not a farm recipe.
+**Procedure.** 1. Condense ammonia liquor from coal distillation. 2. Fix with sulfuric acid as ammonium sulphate. 3. Apply dissolved, timed near active growth. Urea synthesis is an end-state good, not a farm recipe.
 
-**How you know it worked.** Rapid greening within one to two weeks, faster than organic sources.
+**How you know it worked.** Rapid greening within one to two weeks.
 
-**Failure modes.** Both leach out in heavy rain if applied too early; ammonium sulphate acidifies soil over years.
+**Failure modes.** Both leach out if applied too early; ammonium sulphate acidifies soil over years.
 
-**Cost & labour.** DERIVED: entirely gated on the industrial chain in `20_chemistry.md`/`93_energy.md`.
+**Cost & labour.** DERIVED: gated on the industrial chain.
 
-**Danger.** Ammonia liquor and gas are caustic and damage lungs and eyes.
+**Danger.** Ammonia liquor and gas are caustic to lungs and eyes.
 
-**Confidence: LOW** for near-term Roman feasibility; HIGH on the chemistry once prerequisites exist.
+**Confidence: LOW** near-term; HIGH on the chemistry once prerequisites exist.
 
 ### ag2_liming, ag2_marling, ag2_soil_testing - Reading and fixing soil chemistry
-**What it is / why you want it.** Acid soil chemically locks up phosphorus that manure has already supplied; liming raises pH and unlocks it. Marl (natural clay-lime) corrects texture and acidity together. Soil testing tells you which fields need either instead of guessing.
+**What it is / why you want it.** Acid soil locks up phosphorus already supplied by manure; liming raises pH and unlocks it. Marl (natural clay-lime) fixes texture and acidity together. Soil testing shows which fields need either.
 
-**Why you would never guess this.** A field can be well-manured and still starved, because the nutrient is present but chemically unavailable, invisible to inspection.
+**Why you would never guess this.** A field can be well-manured and still starved, the nutrient present but chemically unavailable.
 
-**Prerequisites.** For rigorous testing, dilute acid and eventually gravimetric/acid-extraction methods (`20_chemistry.md`); rough testing needs nothing new.
+**Prerequisites.** For rigorous testing, `20_chemistry.md` acid-extraction methods; rough testing needs nothing new.
 
-**Roman-available inputs.** Lime already burned everywhere; marl beds dug in some provinces (Pliny, attributed unverified).
+**Roman-available inputs.** Lime burned everywhere; marl beds dug in some provinces (Pliny, attributed unverified).
 
-**Procedure.** 1. Pour weak acid on a soil sample; vigorous fizzing means free lime already present, no more needed. 2. Where it does not fizz, broadcast slaked lime well ahead of planting. 3. Spread marl thicker but less often where available. 4. For real dosing, move to quantitative acid-extraction testing once lab glassware exists.
+**Procedure.** 1. Weak acid on a soil sample; vigorous fizzing means enough lime already present. 2. Where it does not fizz, broadcast slaked lime ahead of planting. 3. Spread marl thicker but less often.
 
-**How you know it worked.** A previously stunted, known-acid field responds within one to two seasons.
+**How you know it worked.** A known-acid, previously stunted field responds within one to two seasons.
 
-**Failure modes.** Over-liming locks up iron and manganese instead; marling sandy soil with clay-heavy marl can make it waterlogged.
+**Failure modes.** Over-liming locks up iron and manganese instead.
 
-**Cost & labour.** ESTIMATED (basis: existing lime-burning and marl-digging trades, redirected labour).
+**Cost & labour.** ESTIMATED (basis: existing lime-burning and marl-digging trades).
 
-**Danger.** Burned lime causes chemical burns on wet skin.
+**Danger.** Burned lime burns wet skin.
 
-**Confidence: HIGH** on liming/marling; MEDIUM on quantitative testing.
+**Confidence: HIGH** liming/marling; MEDIUM quantitative testing.
 
 ### ag2_erosion_control, ag2_terracing, ag2_contour_ploughing - Keeping soil in place
-**What it is / why you want it.** Windbreaks and mulch blunt wind and rain impact; terracing turns a slope into flat benches; contour ploughing runs furrows across a slope instead of straight down it.
+**What it is / why you want it.** Windbreaks and mulch blunt wind and rain impact; terracing benches a slope; contour ploughing runs furrows across a slope, not down it.
 
-**Why you would never guess this.** Rome already terraces extensively; the missed detail is a slight inward tilt on each bench so water soaks rather than sheets off the outer edge, easy to build wrong and invisible until the first storm.
+**Why you would never guess this.** Rome already terraces; the missed detail is a slight inward tilt per bench so water soaks instead of sheeting off the outer edge, invisible until the first storm.
 
-**Prerequisites.** A level (chorobates/water level, `85_transport_civil.md`) to survey the contour.
+**Prerequisites.** A level (chorobates, `85_transport_civil.md`) to survey the contour.
 
-**Roman-available inputs.** Standard ploughs, terracing labour, hedge or tree windbreaks.
+**Roman-available inputs.** Standard ploughs, terracing labour, hedge windbreaks.
 
-**Procedure.** 1. Cut terrace benches with a few degrees of backward tilt, retain the outer edge with a wall. 2. Survey a contour line with stakes, plough parallel to it, not to the field's straight edges. 3. Plant a windbreak line upwind, sheltering roughly ten to twenty times its height downwind (ESTIMATED, general shelterbelt behaviour). 4. Mulch bare soil thinly, not so thick as to smother germination.
+**Procedure.** 1. Cut benches with a slight backward tilt, retain the outer edge. 2. Stake and plough along the contour, not the field's straight edge. 3. Plant windbreaks upwind; mulch bare soil thinly.
 
-**How you know it worked.** After heavy rain, treated slopes show no new gullies; an untreated slope nearby does.
+**How you know it worked.** Treated slopes show no new gullies after heavy rain.
 
-**Failure modes.** A bench built flat or outward-sloping washes out at the first storm.
+**Failure modes.** A flat or outward-sloping bench washes out at the first storm.
 
-**Cost & labour.** ESTIMATED: terracing is heavy one-time labour; contour ploughing and windbreaks are near-zero marginal cost.
+**Cost & labour.** ESTIMATED: terracing is heavy one-time labour; the rest is near-zero marginal cost.
 
 **Danger.** None beyond ordinary slope work.
 
 **Confidence: HIGH.**
 
 ### ag2_tile_drainage, ag2_gravity_irrigation - Moving water off and onto fields
-**What it is / why you want it.** Buried, angled clay pipe drains waterlogged soil without losing cropland to open ditches. Weirs, sluices, and sized channels deliver water to fields that need it without flooding or starving either end.
+**What it is / why you want it.** Buried, angled clay pipe drains waterlogged soil without losing cropland to ditches. Weirs, sluices, and sized channels deliver water without flooding or starving either end of a field.
 
-**Why you would never guess this.** The non-obvious part is sizing: a lateral channel too wide drowns the near end or starves the far end, a real design problem, not just digging a trench.
+**Why you would never guess this.** Sizing is the hard part: a lateral too wide drowns the near end or starves the far end.
 
-**Prerequisites.** Fired clay pipe (existing Roman ceramics), a gradient survey tool, force pumps for pump irrigation.
+**Prerequisites.** Fired clay pipe (Roman ceramics), a gradient survey tool, force pumps.
 
-**Roman-available inputs.** Clay tile, existing aqueduct-engineering skill, the screw and force pump.
+**Roman-available inputs.** Clay tile, aqueduct-engineering skill, the force pump.
 
-**Procedure.** Drainage: 1. Survey a gentle fall. 2. Lay a main drain with herringbone laterals feeding in. 3. Bed pipe on shallow gradient, wrap joints in gravel or straw as a crude silt filter. 4. Backfill. Irrigation: 1. Build a weir or install a pump. 2. Cut main channel and laterals, spacing tuned over a season so the far end still gets flow without flooding the near end. 3. Use sluice gates to ration water across the system.
+**Procedure.** Drainage: survey a gentle fall, lay a main with herringbone laterals, wrap joints in gravel as a silt filter, backfill. Irrigation: build a weir or pump, cut laterals sized over a season, ration flow with sluice gates.
 
 **How you know it worked.** Drained ground clears standing water within a day; irrigated fields grow evenly end to end.
 
-**Failure modes.** Unfiltered drain pipe silts up within a season or two; mis-sized laterals flood one end and starve the other, indistinguishable from a distance.
+**Failure modes.** Unfiltered pipe silts up within seasons; mis-sized laterals flood one end and starve the other.
 
-**Cost & labour.** ESTIMATED: pipe is a standard ceramic product; trenching labour is substantial but uses existing tools.
+**Cost & labour.** ESTIMATED: standard ceramic pipe, substantial trenching labour.
 
 **Danger.** Standing water breeds disease vectors (`70_medicine_biology.md`).
 
-**Confidence: HIGH** on drainage; MEDIUM on lateral spacing, genuinely field-specific.
+**Confidence: HIGH** drainage; MEDIUM lateral spacing, field-specific.
 
 ### ag2_seed_drill, ag2_horse_hoe, ag2_coulter - Rows instead of broadcast
-**What it is / why you want it.** Broadcasting wastes seed to depth mismatch and birds. A seed drill meters seed at a fixed rate through a funnel, dropping it at controlled depth in straight rows. Once seed is in rows, a wheeled, depth-controlled horse hoe kills weeds between them without stoop labour. The coulter is the disc that cuts a clean line ahead of drill or plough share.
+**What it is / why you want it.** Broadcasting wastes seed to depth mismatch and birds. A seed drill meters seed through a funnel at controlled depth in straight rows. A wheeled, depth-controlled horse hoe then kills weeds between rows without stoop labour. The coulter is the disc cutting a clean line ahead of drill or plough share.
 
-**Why you would never guess this.** The drill's real value is not sowing itself; it is that it makes the horse hoe possible, turning weeding, the largest recurring labour cost, into one man and one animal walking straight rows.
+**Why you would never guess this.** The drill's real value is making the horse hoe possible, turning weeding, the largest recurring labour cost, into one man and one animal walking straight rows.
 
-**Prerequisites.** Ironwork for metering gears and coulter, carpentry for the frame, a draft animal.
+**Prerequisites.** Ironwork for metering gears and coulter, carpentry, a draft animal.
 
 **Roman-available inputs.** Iron, timber, existing plough experience.
 
-**Procedure.** 1. Build a hopper over a notched metering wheel turned by the ground wheel, so seed drops at a rate tied to forward speed. 2. Feed seed through a funnel behind a small coulter opening the furrow. 3. Space units four to six inches apart, wide enough for a hoe blade to pass. 4. Close the furrow with a light drag. 5. Once the crop is a few inches tall, run the horse hoe's depth-controlled tines down the row gaps.
+**Procedure.** 1. Build a hopper over a notched metering wheel geared to the ground wheel. 2. Drop seed through a funnel behind a small coulter, rows four to six inches apart. 3. Close the furrow with a light drag. 4. Once the crop is inches tall, run the hoe's tines down the gaps.
 
-**How you know it worked.** Rows are straight and even end to end; a hoed field shows bare, weed-free soil between crisp rows.
+**How you know it worked.** Rows are straight end to end; hoeing leaves bare, weed-free soil between crisp rows.
 
-**Failure modes.** A worn metering wheel drops seed in clumps and gaps; a hoe set too deep clips crop roots.
+**Failure modes.** A worn metering wheel drops seed in clumps; a hoe set too deep clips roots.
 
-**Cost & labour.** ESTIMATED: a carpenter-blacksmith pair, days to weeks for a first working pair, given iron and timber on hand.
+**Cost & labour.** ESTIMATED: a carpenter-blacksmith pair, days to weeks for a first working pair.
 
 **Danger.** None beyond ordinary draft-animal handling.
 
 **Confidence: HIGH.**
 
 ### ag2_cultivator, ag2_subsoiler, ag2_harrow, ag2_roller - Working ground between sowing and harvest
-**What it is / why you want it.** A cultivator's tines float at set depth over uneven ground via a parallelogram linkage, stirring soil between rows. A subsoiler shatters a compacted hardpan below the ploughed layer without turning soil over. A harrow drags a tine-bed to break clods into a seedbed. A roller firms loose soil around seed for moisture contact.
+**What it is / why you want it.** A cultivator's tines float at set depth via a parallelogram linkage. A subsoiler shatters a compacted hardpan without turning soil over. A harrow breaks clods into a seedbed. A roller firms loose soil around seed.
 
-**Why you would never guess this.** The subsoiler is counterintuitive: the instinct with compacted ground is to plough deeper and invert more soil, which buries fertile topsoil; the fix shatters the barrier in place, leaving topsoil on top.
+**Why you would never guess this.** The subsoiler is counterintuitive: the instinct is to plough deeper, which buries fertile topsoil; the fix shatters the barrier in place, leaving topsoil on top.
 
-**Prerequisites.** Ironwork for tines and blades, existing plough-frame carpentry.
+**Prerequisites.** Ironwork for tines and blades, plough-frame carpentry.
 
 **Roman-available inputs.** Iron and timber as with the seed drill.
 
-**Procedure.** Cultivator: tines on a floating linkage, pulled between rows post-emergence. Subsoiler: a single blade, no mouldboard, run well below plough depth once per problem field, not every season. Harrow: tine-bed dragged over ploughed ground, more aggressive on clay, gentler on light soil. Roller: heavy cylinder pulled after sowing on light soils; skip on wet clay, which it seals into a crust.
+**Procedure.** Cultivator: floating tines pulled between rows post-emergence. Subsoiler: a single blade run below plough depth once per problem field. Harrow: tine-bed dragged over ploughed ground. Roller: pulled after sowing on light soils; skip on wet clay, which it crusts.
 
 **How you know it worked.** Subsoiled ground drains a heavy rain within a day where it used to pond.
 
-**Failure modes.** Rolling wet clay crusts the surface; a rigid cultivator digs too deep in low spots.
+**Failure modes.** Rolling wet clay crusts the surface.
 
-**Cost & labour.** ESTIMATED: existing iron-and-timber implement construction, no new material class.
+**Cost & labour.** ESTIMATED: existing implement-scale ironwork and timber.
 
 **Danger.** None beyond ordinary tool handling.
 
 **Confidence: HIGH.**
 
 ### ag2_ridging_plough, ag2_root_cutter, ag2_potato_lifter - Handling root crops
-**What it is / why you want it.** A ridging plough's two mirror-image mouldboards throw soil both ways at once, building the ridge root crops want. A root cutter chops turnips or mangolds into chips at set blade spacing so livestock can eat them safely. A potato lifter runs angled tines under the ridge at harvest, lifting the row onto a shaking screen that frees soil without spearing tubers.
+**What it is / why you want it.** A ridging plough's mirror mouldboards throw soil both ways, building a ridge. A root cutter chops turnips into chips at set blade spacing. A potato lifter runs tines under the ridge onto a shaking screen that frees soil without spearing tubers.
 
-**Why you would never guess this.** This cluster only matters once root crops are grown at rotation scale (ag2_norfolk_course); Rome grows turnips but not yet as a field-scale winter fodder crop, so the handling machinery has no reason to exist yet.
+**Why you would never guess this.** This cluster only matters once root crops are grown at rotation scale (ag2_norfolk_course); Rome grows turnips but not yet at that scale.
 
 **Prerequisites.** ag2_norfolk_course or equivalent scale, ordinary ironwork.
 
 **Roman-available inputs.** Iron blades, timber frames.
 
-**Procedure.** Ridging plough: two mirror mouldboards on one beam, one pass builds a ridge. Root cutter: a drum with fixed angled blades, spacing set to avoid clogging or oversized chips. Potato lifter: tines wider than the smallest expected tuber, run just under the ridge onto a shaking grate.
+**Procedure.** Ridging plough: two mirror mouldboards, one pass. Root cutter: a blade drum, spacing set to avoid clogging. Potato lifter: tines wider than the smallest tuber, run under the ridge onto a shaking grate.
 
-**How you know it worked.** Lifted rows leave the great majority of tubers unbroken on the surface.
+**How you know it worked.** Lifted rows leave most tubers unbroken on the surface.
 
-**Failure modes.** Cutter blades too close clog constantly; a lifter run too shallow slices the crop instead of lifting it.
+**Failure modes.** Close-set cutter blades clog; a shallow lifter slices the crop.
 
-**Cost & labour.** ESTIMATED: standard implement-scale ironwork, no new material.
+**Cost & labour.** ESTIMATED: standard implement-scale ironwork.
 
-**Danger.** Root cutter blades are an amputation hazard if hand-fed carelessly; guard the hopper.
+**Danger.** Root cutter blades are an amputation hazard if hand-fed; guard the hopper.
 
 **Confidence: HIGH.**
 
 ### ag2_reaper, ag2_reaper_binder, ag2_mower, ag2_tedder - Cutting and handling grain and hay
-**What it is / why you want it.** A reaper's sickle bar, driven side to side by a cam off the ground wheel, cuts standing grain faster than scythes; a reel lays grain into its reach. A reaper-binder adds a mechanism gathering, wrapping, and tying each bundle while moving. A mower is the same sickle-bar idea at hay-cutting height. A tedder tosses cut hay up and back with timed tines to dry it evenly.
+**What it is / why you want it.** A reaper's sickle bar, driven by a cam off the ground wheel, cuts faster than scythes, a reel laying grain into reach. A reaper-binder gathers, wraps, and ties bundles while moving. A mower is the same idea at hay height. A tedder tosses cut hay to dry it evenly.
 
-**Why you would never guess this.** The reaper's real part is the cam turning rotary wheel motion into back-and-forth blade motion, plus a reel timed to lay grain in reach; a blade alone just flails. The binder's knotter, tying a reliable knot at speed with no hands, was a famously hard, long-unsolved problem; present it as such, not a simple add-on.
+**Why you would never guess this.** The reaper's real part is the cam and a timed reel, not the blade alone. The binder's knotter, tying a reliable knot at speed unaided, was a famously hard, long-unsolved problem.
 
 **Prerequisites.** Seed-drill-grade ironwork and cam experience, existing harnessing.
 
-**Roman-available inputs.** Iron, timber, standard harness gear.
+**Roman-available inputs.** Iron, timber, harness gear.
 
-**Procedure.** Reaper: sickle bar in a guarded channel, driven by a crank off the ground wheel, a slow reel laying grain onto a platform behind. Mower: same bar principle, lower height, no reel. Tedder: spring tines flinging hay up and back, tine speed matched to forward speed. Binder (multi-season project): a bundle-sizing, twine-wrapping, knot-tying mechanism synchronised to the platform's cycle; expect failed prototypes before a reliable knot forms every time.
+**Procedure.** Reaper: guarded sickle bar, crank off the ground wheel, a slow reel laying grain onto a platform. Mower: same bar, lower, no reel. Tedder: spring tines timed to forward speed. Binder (multi-season project): a bundle-and-knot mechanism synchronised to the platform's cycle; expect failed prototypes first.
 
-**How you know it worked.** A working binder ties uniform sheaves that do not come apart when lifted.
+**How you know it worked.** A working binder ties uniform sheaves that hold when lifted.
 
-**Failure modes.** A sickle bar without a working reel tangles cut grain; an unreliable knotter is the most common failure point.
+**Failure modes.** No reel tangles cut grain; an unreliable knotter is the common failure.
 
-**Cost & labour.** ESTIMATED: reaper and mower, a season or two of development; DERIVED: the binder's knotter alone as a multi-season project.
+**Cost & labour.** ESTIMATED: reaper/mower, a season or two; DERIVED: the binder's knotter as a multi-season project.
 
-**Danger.** Sickle bars are a serious laceration hazard; guard the blade run, never clear jams while moving.
+**Danger.** Sickle bars are a serious laceration hazard; never clear jams while moving.
 
-**Confidence: HIGH** on reaper/mower; MEDIUM on binder timeline.
+**Confidence: HIGH** reaper/mower; MEDIUM binder timeline.
 
 ### ag2_threshing_machine, ag2_combine_harvester - Separating grain from straw by machine
-**What it is / why you want it.** A threshing machine beats grain between a spinning drum and a fixed concave, hard enough to knock grain loose, gentle enough not to crack it, then separates grain from straw on shaking, air-blasted sieves. A combine harvester does reaping and threshing in one pass, adding a chaffer and powered elevator on the moving frame.
+**What it is / why you want it.** A threshing machine beats grain between a spinning drum and fixed concave, hard enough to loosen grain, gentle enough not to crack it, then separates on air-blasted sieves. A combine adds a cutting bar, chaffer, and elevator on one moving frame.
 
-**Why you would never guess this.** The drum-concave gap and surface texture is the whole game and needs testing against the specific grain, not a universal setting; the combine's difficulty is keeping every stage synchronised at one forward speed, since a jam anywhere backs up the rest.
+**Why you would never guess this.** The drum-concave gap needs testing against the specific grain; a combine's difficulty is keeping every stage synchronised, since a jam anywhere backs up the rest.
 
-**Prerequisites.** ag2_reaper for a combine's cutting stage; continuous rotary power (`40_power_precision.md`, `93_energy.md`) for the drum.
+**Prerequisites.** ag2_reaper for a combine's cutting stage; continuous rotary power (`40_power_precision.md`, `93_energy.md`).
 
-**Roman-available inputs.** Iron for drum and concave, existing Roman water-driven mills reusable for a stationary thresher.
+**Roman-available inputs.** Iron, existing Roman water-driven mills reusable for a stationary thresher.
 
-**Procedure.** Threshing: 1. Build a studded drum inside a matching concave. 2. Feed grain heads-first into the gap. 3. Pass the output over shaking, air-blasted sieves (see ag2_winnower). 4. Tune the gap by trial, checking for cracked seed. Combine: mount cutting bar, conveyor, drum-thresher, and chaffer-elevator on one wheeled frame, tuning each stage's speed to match at working forward speed.
+**Procedure.** Threshing: studded drum in a matching concave, grain fed heads-first, output passed over air-blasted sieves (ag2_winnower), gap tuned by trial. Combine: mount cutting bar, conveyor, drum, and chaffer-elevator on one frame, speeds matched.
 
-**How you know it worked.** Threshed output is clean and mostly free of cracked kernels or unthreshed heads.
+**How you know it worked.** Output is clean, mostly free of cracked kernels.
 
-**Failure modes.** An aggressive drum cracks seed grain, ruining it for replanting; any out-of-sync stage jams a combine.
+**Failure modes.** An aggressive drum cracks seed grain; an out-of-sync combine stage jams.
 
-**Cost & labour.** ESTIMATED: a stationary thresher is a weeks-long blacksmith-millwright project; DERIVED: a full combine is a major late-stage integration.
+**Cost & labour.** ESTIMATED: a stationary thresher, weeks-long project; DERIVED: a combine, major late-stage integration.
 
-**Danger.** The drum-concave gap is a severe crush hazard; never clear a jam with the drum turning.
+**Danger.** The drum-concave gap is a severe crush hazard.
 
-**Confidence: HIGH** on stationary threshing; MEDIUM on combine integration.
+**Confidence: HIGH** stationary threshing; MEDIUM combine integration.
 
 ### ag2_winnower, ag2_fanning_mill, ag2_chaff_cutter, ag2_baler - Cleaning, sizing, and packing bulk
-**What it is / why you want it.** A winnower uses a directed, tunable air blast (bellows or fan) to blow chaff away from heavier grain, replacing tossing grain in an unpredictable breeze. A fanning mill adds vibrating screens of different mesh, sorting by size as well as weight in one pass. A chaff cutter chops straw into short lengths at set blade speed and feed rate. A baler compresses loose hay with a double-screw press and ties it with the same knotting problem as the reaper-binder, in miniature.
+**What it is / why you want it.** A winnower's tunable air blast separates chaff from grain, replacing an unpredictable breeze. A fanning mill adds vibrating screens, sorting by size too. A chaff cutter chops straw at set blade speed. A baler compresses hay and ties it with the reaper-binder's knotting problem in miniature.
 
-**Why you would never guess this.** Directed air sounds trivial but is not: a natural breeze varies with the weather, while bellows or a fan let you tune airflow to the exact weight difference, making separation repeatable regardless of the day.
+**Why you would never guess this.** Tuned bellows or fan air makes separation repeatable regardless of the day's weather, unlike a natural breeze.
 
-**Prerequisites.** Existing Roman bellows and fan-blade technology, ironwork for screens and press.
+**Prerequisites.** Existing Roman bellows and fan-blade technology, ironwork for screens.
 
-**Roman-available inputs.** Bellows, timber, iron, woven-wire sieve material (Roman sieve-making already exists).
+**Roman-available inputs.** Bellows, timber, iron, woven-wire sieve material.
 
-**Procedure.** Winnower: feed grain in a thin curtain past a tunable airstream; too strong blows grain away, too weak leaves chaff in. Fanning mill: add shaking screens below, coarse first then fine. Chaff cutter: blade drum at set spacing, feed rate matched to blade speed. Baler: compress hay in a chamber, tie with the reaper-binder's knotting principle at smaller scale.
+**Procedure.** Winnower: grain fed past a tuned airstream. Fanning mill: shaking screens added below, coarse then fine. Chaff cutter: blade drum, feed matched to blade speed. Baler: compress hay, tie via the binder's knot principle.
 
-**How you know it worked.** Cleaned grain shows uniform size with negligible weed seed by eye; a baled block holds shape when dropped.
+**How you know it worked.** Cleaned grain shows uniform size with negligible weed seed.
 
-**Failure modes.** Wrong air setting either leaves chaff in or blows grain out; an overfed chaff cutter jams or cuts unsafe lengths.
+**Failure modes.** Wrong air setting leaves chaff in or blows grain out; an overfed cutter jams.
 
-**Cost & labour.** ESTIMATED: reuses existing bellows, screen-weaving, and press technology.
+**Cost & labour.** ESTIMATED: reuses existing bellows, screen-weaving, press technology.
 
-**Danger.** Chaff cutter and baler mechanisms are crush and laceration hazards; guard feed points.
+**Danger.** Chaff cutter and baler are crush and laceration hazards; guard feed points.
 
-**Confidence: HIGH** on winnower/fanning mill; MEDIUM on baler knotter.
+**Confidence: HIGH** winnower/fanning mill; MEDIUM baler knotter.
 
 ### ag2_tractor_steam, ag2_three_point_linkage, ag2_power_take_off, ag2_caterpillar_track - Mechanising traction
-**What it is / why you want it.** A steam tractor needs a differential gear so its two drive wheels can turn at different speeds on a corner. Three-point linkage lets a towed implement's depth self-adjust to soil resistance instead of needing constant hand correction. A power take-off shaft carries rotary power to a towed implement through a universal joint that tolerates the shaft flexing, with a clutch to disengage without stopping the engine. Caterpillar tracks spread a heavy machine's weight so it crosses soft ground, using an idler, a tensioner, and a steering clutch per side.
+**What it is / why you want it.** A steam tractor needs a differential so drive wheels turn at different speeds on a corner. Three-point linkage self-adjusts a towed implement's depth to soil resistance. A power take-off shaft carries rotary power through a universal joint with a disengaging clutch. Caterpillar tracks spread weight over soft ground via idler, tensioner, and per-side steering clutch.
 
-**Why you would never guess this.** Every one of these four only matters once the previous mechanisation stage already exists; this whole cluster is downstream of continuous mechanical power at field scale, itself the hard part (`40_power_precision.md`, `93_energy.md`).
+**Why you would never guess this.** Each of these four only matters once the prior mechanisation stage exists; the whole cluster is downstream of continuous mechanical power at field scale (`40_power_precision.md`, `93_energy.md`).
 
-**Prerequisites.** A working tractor-scale steam engine (`93_energy.md`), differential gear concept (`92_vehicles_flight.md`), universal joint and track-link ironwork.
+**Prerequisites.** A tractor-scale steam engine (`93_energy.md`), differential concept (`92_vehicles_flight.md`), universal joint and track-link ironwork.
 
-**Roman-available inputs.** Iron for gearing and links; the power source itself is not Roman-available without the steam-engine chain.
+**Roman-available inputs.** Iron for gearing and links; the power source is not Roman-available without the steam-engine chain.
 
-**Procedure.** 1. Fit a differential between the drive wheels. 2. Build a three-point linkage whose lower-arm geometry lifts the implement slightly as soil resistance increases. 3. Take rotary output through a universal joint to a power take-off shaft with a simple clutch. 4. For tracks, build a continuous iron-link belt around a drive sprocket and idler, tensioned by a screw, with a per-side clutch to steer.
+**Procedure.** 1. Fit a differential between drive wheels. 2. Build a three-point linkage that lifts the implement as resistance increases. 3. Run a power take-off shaft through a universal joint with a clutch. 4. Build tracks as an iron-link belt around a sprocket and idler, tensioned by a screw, steered per side.
 
-**How you know it worked.** The tractor corners without a wheel skidding; a towed implement holds consistent depth across uneven ground unattended.
+**How you know it worked.** The tractor corners without a wheel skidding; a towed implement holds consistent depth unattended.
 
-**Failure modes.** A missing differential skids or cannot turn at all; a mistensioned track throws itself off the sprocket.
+**Failure modes.** A missing differential cannot turn; a mistensioned track throws itself off.
 
-**Cost & labour.** ESTIMATED as late-stage and capital-heavy, gated entirely on `93_energy.md`.
+**Cost & labour.** ESTIMATED as late-stage, capital-heavy, gated entirely on `93_energy.md`.
 
-**Danger.** Boiler-explosion risk (`93_energy.md`); tracks and power-take-off shafts are severe entanglement hazards.
+**Danger.** Boiler-explosion risk; tracks and power-take-off shafts are entanglement hazards.
 
 **Confidence: MEDIUM**, contingent on the steam-engine prerequisite.
 
 ### ag2_grafting, ag2_budding, ag2_layering, ag2_rootstocks - Vegetative propagation as knowledge
-**What it is / why you want it.** Grafting, already routine Roman practice, joins a cutting to a rooted stem. Budding grafts a single bud under a bark flap, timed to when bark "slips" in spring, healing over summer. Layering roots a still-attached stem bent into moist soil over one to two seasons before cutting free. Rootstocks as knowledge means treating the rooting half of a graft as its own deliberate variable, since it controls eventual tree size and disease tolerance independent of what fruit the scion produces.
+**What it is / why you want it.** Grafting, already routine, joins a cutting to a rooted stem. Budding grafts a single bud under a bark flap when bark "slips" in spring. Layering roots a still-attached stem bent into moist soil over one to two seasons. Rootstocks as knowledge treats the rooting half as its own variable, controlling tree size and disease tolerance independent of the scion's fruit.
 
-**Why you would never guess this.** Rome already grafts; what is missing is systematically cataloguing that the same scion on different rootstocks yields a large tree or a small one, easy or fussy rooting, all independent of the fruit itself.
+**Why you would never guess this.** Rome already grafts; missing is cataloguing that the same scion on different rootstocks yields a large or small tree, independent of the fruit itself.
 
-**Prerequisites.** Grafting knife, wax or clay sealant (already Roman), a nursery bed.
+**Prerequisites.** Grafting knife, wax sealant (already Roman), a nursery bed.
 
-**Roman-available inputs.** All Italian and provincial fruit and vine species, grafting wax, bast fibre.
+**Roman-available inputs.** All Italian/provincial fruit and vine species, grafting wax, bast fibre.
 
-**Procedure.** Budding: 1. In spring when bark slips, cut a bark slit in the rootstock. 2. Insert a single bud with a bark sliver. 3. Bind, leave the bud exposed. 4. Following spring, cut the rootstock above the healed bud. Layering: bend a low branch into moist covered soil, keep damp one to two seasons, cut free once rooted. Rootstock cataloguing: graft the same scion onto several rootstocks side by side, record size and outcome over years.
+**Procedure.** Budding: cut a bark slit when it slips, insert a bud with a bark sliver, bind, next spring cut the rootstock above it. Layering: bend a branch into moist covered soil, cut free once rooted. Rootstocks: graft one scion onto several rootstocks side by side, record outcomes over years.
 
-**How you know it worked.** A budded graft shows green growth from the bud, not the rootstock stem, the following spring.
+**How you know it worked.** A budded graft shows growth from the bud, not the rootstock stem, the following spring.
 
-**Failure modes.** Budding when bark does not slip tears and fails; layered branches left dry fail to root.
+**Failure modes.** Budding when bark does not slip tears and fails.
 
-**Cost & labour.** ESTIMATED (basis: existing orchard tools and labour, plus multi-season record-keeping).
+**Cost & labour.** ESTIMATED (basis: existing orchard tools, multi-season record-keeping).
 
-**Danger.** Ordinary cut risk from grafting knives.
+**Danger.** Ordinary knife-cut risk.
 
 **Confidence: HIGH**, close to attested Columella practice (*De Re Rustica* V, attributed).
 
 ### ag2_record_keeping_breeding, ag2_pure_line_selection, ag2_hybridisation, ag2_hybrid_maize, ag2_controlled_pollination - Selection and breeding as bookkeeping
-**What it is / why you want it.** None of this needs genetics theory. Record-keeping breeding tracks parentage and measured performance across generations for evidence-based selection. Pure line selection deliberately inbreeds a line, purifying traits into reliable transmission at the cost of vigour. Hybridisation crosses two pure lines for "hybrid vigour," offspring outperforming either parent, a real, repeatable effect. Hybrid maize is the dramatic case: crossing two inbred lines sharply raises yield, but the improvement does not carry into the hybrid's own replanted seed. Controlled pollination, removing a flower's male parts before its own pollen matures and hand-applying chosen pollen, is what makes deliberate crossing possible at all.
+**What it is / why you want it.** None of this needs genetics theory. Record-keeping tracks parentage and measured performance across generations. Pure line selection inbreeds a line, purifying traits at the cost of vigour. Hybridisation crosses two pure lines for real "hybrid vigour." Hybrid maize is the dramatic case: crossing inbred lines sharply raises yield, but the gain does not carry into the hybrid's own replanted seed. Controlled pollination, removing a flower's male parts before its pollen matures and hand-applying chosen pollen, makes deliberate crossing possible.
 
-**Why you would never guess this.** The counterintuitive core: inbreeding, which looks purely weakening, is the necessary first step toward a hybrid stronger than either parent.
+**Why you would never guess this.** Inbreeding, which looks purely weakening, is the necessary first step toward a hybrid stronger than either parent.
 
 **Prerequisites.** Patience, individual tracking, isolation from unwanted cross-pollination.
 
 **Roman-available inputs.** Every crop and livestock species already farmed.
 
-**Procedure.** 1. Select and record the best performers by measured criteria each season. 2. Self-pollinate a chosen line for several generations to purify it, watching vigour decline as traits stabilise. 3. Cross two pure lines: emasculate the mother line's flowers before their pollen sheds, hand-apply father-line pollen at stigma receptivity. 4. Measure offspring against both parents. 5. Note the cross's own seed will not repeat the effect; remake it from the parent lines each time.
+**Procedure.** 1. Record best performers by measured criteria each season. 2. Self-pollinate a line for generations to purify it. 3. Cross two pure lines by emasculating the mother's flowers and hand-applying father pollen. 4. Note the cross's own seed will not repeat the effect; remake it each time.
 
-**How you know it worked.** A hybrid's first generation measurably outperforms both parents; that advantage disappears when its own seed is replanted.
+**How you know it worked.** A hybrid's first generation measurably outperforms both parents; the advantage disappears on replanting its own seed.
 
-**Failure modes.** Uncontrolled cross-pollination silently ruins a "pure" line; replanting hybrid seed expecting continued vigour is the costliest common mistake.
+**Failure modes.** Uncontrolled cross-pollination silently ruins a "pure" line; replanting hybrid seed is the costliest common mistake.
 
-**Cost & labour.** ESTIMATED (basis: multi-year record and hand-pollination labour, no capital, mainly calendar time).
+**Cost & labour.** ESTIMATED (basis: multi-year record and hand-pollination labour, mainly calendar time).
 
 **Danger.** None.
 
 **Confidence: HIGH.**
 
 ### ag2_seed_certification, ag2_seed_trade - Guaranteeing what is in the sack
-**What it is / why you want it.** Certification tests germination rate and freedom from weed or off-type seed before sale. The seed trade is the surrounding structure: isolated multiplication fields and testing plots grown out each season to confirm a lot still breeds true.
+**What it is / why you want it.** Certification tests germination rate and freedom from weed or off-type seed before sale. The seed trade is isolated multiplication fields and yearly test plots confirming a lot still breeds true.
 
-**Why you would never guess this.** Once breeding produces something worth selling, its whole value depends on staying pure between breeder and buyer, invisible until a crop fails months later.
+**Why you would never guess this.** A breeding line's whole value depends on staying pure between breeder and buyer, invisible until a crop fails months later.
 
-**Prerequisites.** ag2_record_keeping_breeding and ag2_pure_line_selection to have something worth certifying; isolated land.
+**Prerequisites.** ag2_record_keeping_breeding and ag2_pure_line_selection; isolated land.
 
 **Roman-available inputs.** None new; organisational.
 
-**Procedure.** 1. Grow multiplication fields isolated by distance or flowering timing from other varieties. 2. Sample each lot, count and germinate a fixed number to measure rate. 3. Grow a small test plot to confirm true type. 4. Mark sacks with variety and measured germination rate, and stand behind it.
+**Procedure.** 1. Grow multiplication fields isolated from other varieties. 2. Sample and germinate a fixed count to measure rate. 3. Grow a test plot to confirm true type. 4. Mark sacks with variety and rate.
 
-**How you know it worked.** Certified seed provably delivers the labelled germination rate and uniform type.
+**How you know it worked.** Certified seed provably delivers the labelled rate and type.
 
-**Failure modes.** Skipped isolation lets cross-pollination silently mix the lot; skipped testing means a buyer discovers a bad lot only after a poor stand.
+**Failure modes.** Skipped isolation silently mixes the lot.
 
 **Cost & labour.** ESTIMATED (basis: land set-aside plus routine testing labour, low capital).
 
@@ -408,407 +408,407 @@ Also covers: ag2_green_manure, ag2_composting.
 **Confidence: HIGH.**
 
 ### ag2_progeny_testing, ag2_herd_book, ag2_artificial_insemination, ag2_balanced_ration - Livestock breeding and feeding as bookkeeping
-**What it is / why you want it.** Progeny testing judges a sire by offspring performance, not appearance, since a muscular bull can still sire weak calves. A herd book records ancestry and offspring performance so a "prepotent" sire can be identified and used widely. Artificial insemination, timed to observed oestrus and delivered by a catheter reaching the cervix without trauma, lets one proven sire reach far more females than natural service. A balanced ration, following something like the Wolff-Lehmann standard, matches calculated feed units to an animal's actual production level instead of feeding by eye.
+**What it is / why you want it.** Progeny testing judges a sire by offspring performance, since a muscular bull can still sire weak calves. A herd book records ancestry and offspring performance so a "prepotent" sire is found. Artificial insemination, timed to oestrus and delivered by catheter to the cervix, lets one proven sire reach far more females. A balanced ration matches calculated feed units to production level instead of feeding by eye.
 
-**Why you would never guess this.** Progeny testing's insight, that appearance and breeding value can point opposite directions, only shows through patient multi-year comparison. Balanced ration says more or richer feed is not automatically better once calculated need is known.
+**Why you would never guess this.** Appearance and breeding value can point opposite directions, shown only by patient multi-year comparison.
 
-**Prerequisites.** ag2_record_keeping_breeding; rough feed chemical analysis (`20_chemistry.md`) for balanced ration.
+**Prerequisites.** ag2_record_keeping_breeding; rough feed analysis (`20_chemistry.md`) for ration.
 
-**Roman-available inputs.** Existing livestock; simple collection and catheter tools for insemination.
+**Roman-available inputs.** Existing livestock; simple catheter tools.
 
-**Procedure.** 1. Record parentage and multi-season offspring performance for every breeding animal. 2. Identify sires whose offspring consistently beat herd average regardless of dam. 3. For insemination, observe oestrus behaviour, collect semen, introduce gently via clean catheter to the cervix. 4. For ration, get rough feed composition, calculate daily need by production level, adjust over seasons.
+**Procedure.** 1. Record parentage and offspring performance for breeding animals. 2. Identify sires consistently beating herd average. 3. For insemination, observe oestrus, collect and introduce semen via clean catheter. 4. For ration, get feed composition, calculate need by production level.
 
-**How you know it worked.** Herd-book sires produce measurably above-average offspring across many dams; a balanced ration matches or beats prior output on measurably less feed.
+**How you know it worked.** Herd-book sires produce measurably above-average offspring across many dams.
 
-**Failure modes.** Selecting sires by appearance alone regularly promotes poor breeders undetected for generations; a dirty or poorly made catheter injures the animal.
+**Failure modes.** Selecting sires by looks alone promotes poor breeders undetected for generations.
 
-**Cost & labour.** ESTIMATED (basis: record-keeping labour dominates; insemination needs minor purpose-made tools).
+**Cost & labour.** ESTIMATED (basis: record-keeping labour dominates).
 
-**Danger.** Catheter misuse risks injury; otherwise none.
+**Danger.** Catheter misuse risks injury.
 
-**Confidence: HIGH** on testing/records/ration; MEDIUM on insemination technique detail.
+**Confidence: HIGH** testing/records/ration; MEDIUM insemination technique.
 
 ### ag2_tuberculin_test, ag2_veterinary_vaccination, ag2_sheep_dip - Disease control in livestock
-**What it is / why you want it.** The tuberculin test injects a small tuberculosis extract under the skin and reads the swelling days later, revealing symptomless infection. Vaccination trains immunity against a specific disease using a weakened or related pathogen, working well before germ theory explains why (see `70_medicine_biology.md` and the Jenner cowpox precedent). Sheep dip is a controlled bath at set temperature, duration, and replenishment that kills external parasites without poisoning wool.
+**What it is / why you want it.** The tuberculin test injects a small extract and reads skin swelling days later, revealing symptomless infection. Vaccination trains immunity using a weakened or related pathogen, working before germ theory explains why (`70_medicine_biology.md`, the Jenner cowpox precedent). Sheep dip is a controlled bath killing external parasites without poisoning wool.
 
-**Why you would never guess this.** A harmless swelling test revealing hidden infection is not obvious; it depends on immune memory reacting to a tiny reintroduced dose, a concept needing at least germ-theory grounding.
+**Why you would never guess this.** The swelling test depends on immune memory reacting to a tiny reintroduced dose, needing at least germ-theory grounding.
 
-**Prerequisites.** `germ_theory` and immune-response grounding (`70_medicine_biology.md`) for the test and vaccination; ordinary handling infrastructure for dipping.
+**Prerequisites.** `germ_theory` and immune-response grounding (`70_medicine_biology.md`) for test/vaccination.
 
-**Roman-available inputs.** None novel for dipping; test and vaccination need the medical-biology groundwork first.
+**Roman-available inputs.** None novel for dipping; test/vaccination need the medical groundwork first.
 
-**Procedure.** Test: inject a measured extract dose, measure swelling at a fixed interval (roughly three days). Dip: bathe sheep briefly in a warm insecticidal wash, covering fully without submerging the head, replenishing the bath's strength as it is used. Vaccination: follow `70_medicine_biology.md`'s inoculation procedure with a weakened or related pathogen, tested on a small group first.
+**Procedure.** Test: inject a measured dose, measure swelling at a fixed interval. Dip: bathe briefly in a warm insecticidal wash, replenishing strength as used. Vaccination: follow `70_medicine_biology.md`'s inoculation procedure, tested on a small group first.
 
-**How you know it worked.** Tested animals split clearly into minimal-reaction and marked-swelling groups; dipped sheep show parasite-free fleece within days.
+**How you know it worked.** Tested animals split clearly into minimal-reaction and marked-swelling groups.
 
-**Failure modes.** A weakening, unreplenished dip bath stops working while looking the same; a test read outside the correct interval is unreliable.
+**Failure modes.** An unreplenished dip stops working while looking the same.
 
-**Cost & labour.** ESTIMATED (basis: dipping uses existing washing infrastructure; test and vaccination cost is dominated by the `70_medicine_biology.md` prerequisite).
+**Cost & labour.** ESTIMATED (basis: dipping uses existing infrastructure; test/vaccination cost gated on `70_medicine_biology.md`).
 
-**Danger.** Dip chemicals can be toxic to the handler concentrated; ventilate, use gloves.
+**Danger.** Dip chemicals can be toxic concentrated; ventilate, use gloves.
 
-**Confidence: MEDIUM**, dipping is HIGH, test/vaccination gated on the medical module.
+**Confidence: MEDIUM** overall, dipping HIGH.
 
-### ag2_milking_machine, ag2_cream_separator, ag2_battery_poultry, ag2_silage_silo - Dairy, poultry, and fodder storage at scale
-**What it is / why you want it.** A milking machine draws milk through soft cups using pulsating vacuum, copying the squeeze-release rhythm hand milking uses, since steady vacuum damages the teat. A cream separator spins whole milk fast enough that cream separates by density; too slow leaves cream in the skim, too fast shatters fat into foam. Battery poultry crowds laying birds into cages, raising output density at the cost of higher disease-outbreak risk once any pathogen enters. Silage packs green fodder airtight so *Lactobacillus* ferments its sugars to lactic acid, and once pH drops to roughly 3.8-4.0 (three to six weeks) the acidity itself halts spoilage.
+### ag2_milking_machine, ag2_cream_separator, ag2_battery_poultry, ag2_silage_silo - Dairy, poultry, and fodder at scale
+**What it is / why you want it.** A milking machine draws milk through soft cups via pulsating vacuum, copying hand-milking's squeeze-release rhythm since steady vacuum damages the teat. A cream separator spins milk fast enough to separate cream by density; too slow leaves cream in, too fast foams it. Battery poultry raises output density at the cost of higher disease-outbreak risk. Silage packs green fodder airtight so lactic fermentation drops pH to roughly 3.8-4.0 in three to six weeks, halting spoilage.
 
-**Why you would never guess this.** Pulsation is the non-obvious part of milking machines. Silage's mechanism runs against instinct: controlled, self-limiting fermentation is the preservation method itself, not a failure to prevent.
+**Why you would never guess this.** Silage's mechanism runs against instinct: controlled fermentation is the preservation method itself, not a failure to prevent.
 
-**Prerequisites.** A vacuum source and flexible teat cups (rubber is unavailable, leather substitutes); rotary power for the separator; airtight pit or tower for silage.
+**Prerequisites.** A vacuum source and flexible teat cups (leather, not rubber); rotary power for the separator; an airtight pit for silage.
 
-**Roman-available inputs.** Standard iron/bronze work; leather in place of rubber, a real substitution worth stating; existing masonry/timber for silos.
+**Roman-available inputs.** Iron/bronze work; leather substituting for unavailable rubber; existing masonry for silos.
 
-**Procedure.** Milking machine: a pulsator alternating vacuum and release roughly once per second (ESTIMATED, basis: hand-milking cadence) feeding soft cups. Separator: spin, tune speed by trial until skim shows no cream and cream shows no foam. Battery poultry: stacked wire cages, mechanical feed, understood explicitly as a welfare-for-output trade. Silage: chop, pack tightly in layers treading out air, seal, leave three to six weeks, feed from one open face at a time, resealing the rest.
+**Procedure.** Milker: a pulsator alternating vacuum roughly once per second (ESTIMATED, basis: hand-milking cadence). Separator: tune spin speed by trial. Battery poultry: stacked cages, an explicit welfare-for-output trade. Silage: chop, pack tight excluding air, seal, feed from one face at a time.
 
-**How you know it worked.** Correctly fermented silage smells sharply acidic, not putrid, and livestock eat it readily.
+**How you know it worked.** Correctly fermented silage smells sharply acidic, not putrid.
 
-**Failure modes.** A loosely packed or poorly sealed silage pit rots instead of fermenting, sometimes producing toxins; battery crowding lets one disease sweep the whole flock in days.
+**Failure modes.** A poorly sealed silage pit rots instead of fermenting, sometimes toxically; battery crowding lets one disease sweep the flock in days.
 
-**Cost & labour.** ESTIMATED (basis: moderate ironwork and a leather substitute for the milker; silage needs only pit construction and timed labour).
+**Cost & labour.** ESTIMATED (basis: moderate ironwork; silage needs only pit construction).
 
-**Danger.** Sealed silos can build dangerous gas; ventilate before entry. Battery poultry's disease risk is a stated trade-off, not a hidden one.
+**Danger.** Sealed silos build dangerous gas; ventilate before entry.
 
-**Confidence: HIGH** on silage and separator; MEDIUM on the milking machine given the rubber substitution.
+**Confidence: HIGH** silage/separator; MEDIUM milking machine given the rubber substitution.
 
 ### ag2_botanic_garden, ag2_wardian_case, ag2_plant_quarantine - Moving living plants across oceans
-**What it is / why you want it.** A botanic garden used as an instrument of empire propagates a valuable plant at multiple gardens and ships follow-up batches staggered in time, so one lost shipment does not end the effort. The Wardian case, a sealed glass box, recycles its own condensation, keeping soil moist for months at sea without ever being opened. Plant quarantine isolates new arrivals for a set period long enough for disease symptoms to show before release to open fields.
+**What it is / why you want it.** A botanic garden propagates a plant at multiple sites and staggers follow-up shipments so one loss does not end the effort. The Wardian case, a sealed glass box, recycles its own condensation, keeping soil moist for months unopened. Quarantine isolates new arrivals long enough for disease symptoms to show before release.
 
-**Why you would never guess this.** A sealed box keeping a plant alive for months without watering looks impossible until the internal cycle is understood: daytime evaporation condenses on cooler glass at night and drips back; opening it "to check," the natural instinct, breaks the cycle and kills the plant.
+**Why you would never guess this.** A sealed box keeping a plant alive for months looks impossible until the cycle is understood: night condensation on the glass drips back; opening it "to check" breaks the cycle and kills the plant.
 
-**Prerequisites.** Clear Roman glass (`30_glass_optics.md`), case carpentry, an ocean voyage to the plant's source region (`95_expeditions.md`).
+**Prerequisites.** Clear Roman glass (`30_glass_optics.md`), case carpentry, an ocean voyage (`95_expeditions.md`).
 
 **Roman-available inputs.** Roman glass and timber are adequate.
 
-**Procedure.** Wardian case: 1. Build a glass-paned wood frame, sealed against water-vapour loss but not fully airtight. 2. Plant in soil, water once, seal. 3. Do not open during the voyage. 4. Acclimatise gradually on arrival. Garden redundancy: propagate at more than one location, ship staggered follow-up batches. Quarantine: hold new material isolated for a full growing season (ESTIMATED, basis: covers most crop disease incubation), inspecting regularly before release.
+**Procedure.** 1. Build a glass-paned frame sealed against vapour loss but not fully airtight. 2. Plant, water once, seal, do not open during the voyage. 3. Propagate at more than one garden, stagger shipments. 4. Quarantine new arrivals a full growing season (ESTIMATED, basis: covers most disease incubation) before release.
 
-**How you know it worked.** A case opened at destination holds a living, if travel-stressed, plant, not a dried husk.
+**How you know it worked.** A case opened at destination holds a living plant, not a dried husk.
 
-**Failure modes.** Opening a case mid-voyage is the single most common way to kill the plant inside; skipped quarantine risks an unnoticed disease establishing in open fields.
+**Failure modes.** Opening a case mid-voyage kills the plant.
 
-**Cost & labour.** ESTIMATED: the case itself is cheap; the real cost is the voyage (`95_expeditions.md`).
+**Cost & labour.** ESTIMATED: the case is cheap; the real cost is the voyage (`95_expeditions.md`).
 
-**Danger.** None physical; the strategic danger is skipping quarantine to rush a crop into production.
+**Danger.** None physical; skipping quarantine risks an unnoticed disease reaching open fields.
 
 **Confidence: HIGH.**
 
 ### ag2_potato_newworld, ag2_maize_newworld - Staple crops locked behind one voyage
-**What it is / why you want it.** Neither crop exists anywhere in the Roman world at 100 AD (*_TEMPLATE.md* is explicit on this). Both need exactly one successful Atlantic round trip (`exp_atlantic_crossing`, `95_expeditions.md`) to acquire viable tubers or seed, and after that one voyage both propagate indefinitely from what is already held, no further voyages required.
+**What it is / why you want it.** Neither crop exists anywhere in the Roman world at 100 AD (*_TEMPLATE.md* is explicit). Both need one successful Atlantic round trip (`exp_atlantic_crossing`, `95_expeditions.md`) to acquire tubers or seed, then propagate indefinitely, no further voyages required.
 
-**Why you would never guess this.** The trap is treating this as a farming problem when it is a shipping problem: no farming skill gets you a potato, and no special skill is needed to keep growing one afterward.
+**Why you would never guess this.** The trap is treating this as a farming problem when it is a shipping problem.
 
-**Prerequisites.** `exp_atlantic_crossing`, `exp_oceangoing_hull`, `exp_openocean_navigation`, ideally `exp_provisioning_scurvy` so the crew survives to bring propagating material back alive.
+**Prerequisites.** `exp_atlantic_crossing`, `exp_oceangoing_hull`, `exp_openocean_navigation`, ideally `exp_provisioning_scurvy`.
 
-**Roman-available inputs.** None until the voyage returns; ordinary Roman field technique applies afterward.
+**Roman-available inputs.** None until the voyage returns; ordinary Roman field technique applies after.
 
-**Procedure.** 1. Complete the crossing, return with tubers kept cool and dry, and maize seed kept dry. 2. Plant a small first-year trial plot rather than committing full acreage, since day length and frost timing differ from the source region. 3. Expect the first few generations to need local selection (ag2_record_keeping_breeding applied to a new crop). 4. After establishment, no further voyages are needed.
+**Procedure.** 1. Return with tubers kept cool and dry, maize seed kept dry. 2. Plant a small trial plot first, since day length and frost timing differ from source. 3. Expect early generations to need local selection.
 
-**How you know it worked.** Planted tubers sprout and multiply the same season; maize seed germinates and matures given a full warm season.
+**How you know it worked.** Planted tubers sprout and multiply the same season.
 
-**Failure modes.** Tubers frozen or dried in transit are dead even if the ship returns safely; planting the entire stock in an unproven first season risks losing the whole genetic base to one bad season.
+**Failure modes.** Frozen or dried tubers are dead even if the ship returns; planting the entire stock in an unproven season risks the whole genetic base.
 
-**Cost & labour.** DERIVED: agricultural cost after arrival is low; the dominant cost is the voyage, priced in `95_expeditions.md`, not here.
+**Cost & labour.** DERIVED: agricultural cost after arrival is low; the dominant cost is the voyage (`95_expeditions.md`).
 
-**Danger.** None agricultural; a lost ship loses the entire introduction attempt, so stagger shipments as with ag2_botanic_garden.
+**Danger.** None agricultural; a lost ship loses the whole attempt, stagger shipments as with ag2_botanic_garden.
 
-**Confidence: HIGH** on the one-voyage-then-self-sufficient structure; MEDIUM on exact voyage cost, which belongs to `95_expeditions.md`.
+**Confidence: HIGH** on the structure; MEDIUM on exact voyage cost.
 
 ### ag2_sugar_voyage, ag2_coffee_voyage, ag2_tea_voyage - Cash crops needing ongoing trade, not one trip
-**What it is / why you want it.** Unlike potato and maize, none of these three grows in Italy's climate at all: cane needs tropical heat, coffee needs highland shade at altitude, tea needs warm humid acidic-soil highland. All three need a standing trade route or colonial cultivation (`exp_trade_route_extend`, `exp_colony_administration`, `exp_conquest_resource`, `95_expeditions.md`), not a single seed-fetching voyage.
+**What it is / why you want it.** None of these three grows in Italy's climate: cane needs tropical heat, coffee highland shade, tea warm humid acidic highland. All three need a standing trade route or colony (`exp_trade_route_extend`, `exp_colony_administration`, `exp_conquest_resource`, `95_expeditions.md`), not one voyage.
 
-**Why you would never guess this.** The potato/maize precedent tempts the assumption that every exotic crop is "one voyage, self-sufficient forever." It is not; climate, not seed access, is the binding constraint here.
+**Why you would never guess this.** The potato/maize precedent tempts assuming every exotic crop is "one voyage, forever"; here climate, not seed access, is the constraint.
 
-**Prerequisites.** `exp_trade_route_extend` at minimum; `exp_colony_administration` or `exp_conquest_resource` for direct cultivation abroad.
+**Prerequisites.** `exp_trade_route_extend` at minimum; `exp_colony_administration` or `exp_conquest_resource` for direct cultivation.
 
-**Roman-available inputs.** None domestically. Cane propagates from cuttings with careful post-harvest burn timing to control disease. Coffee needs shade trees and roughly three years to first harvest (ESTIMATED, basis: typical maturation). Tea needs similar altitude/shade and roughly four years to harvest (ESTIMATED, same basis), plus skilled selective plucking as an ongoing, not one-time, technique.
+**Roman-available inputs.** None domestically. Cane propagates from cuttings with post-harvest burn timing against disease. Coffee needs roughly three years to first harvest (ESTIMATED, typical maturation); tea roughly four (ESTIMATED, same basis), plus ongoing skilled plucking.
 
-**Procedure.** 1. Secure a trade route or colonial holding matching the crop's climate. 2. Cane: plant cuttings, burn fields after harvest before the next cycle. 3. Coffee: plant nursery seedlings under shade at correct altitude, wait years for first harvest. 4. Tea: plant at correct altitude and climate, train for plucking, wait years to harvest scale. 5. Maintain the supply line or colony indefinitely.
+**Procedure.** 1. Secure a route or colony matching climate. 2. Cane: plant cuttings, burn fields after harvest. 3. Coffee/tea: plant under shade at correct altitude, wait years to harvest.
 
-**How you know it worked.** A sustained, repeatable harvest arriving year after year, not a single shipment.
+**How you know it worked.** A sustained, repeatable harvest year after year, not one shipment.
 
-**Failure modes.** Treating any of these like potato/maize, expecting Italian soil to grow them after one voyage, fails outright; neglected cane burn timing lets disease build across cutting generations.
+**Failure modes.** Expecting Italian soil to grow these after one voyage fails outright.
 
-**Cost & labour.** ESTIMATED as an ongoing trade or colonial cost (`95_expeditions.md`, `96_finance.md`), a standing investment, not a purchase.
+**Cost & labour.** ESTIMATED as an ongoing trade or colonial cost (`95_expeditions.md`, `96_finance.md`).
 
-**Danger.** Political and military risk of colonial administration and extended trade routes (`95_expeditions.md`, `97_military.md`).
+**Danger.** Political and military risk of colonial administration (`95_expeditions.md`, `97_military.md`).
 
-**Confidence: MEDIUM**: climate constraint is HIGH confidence; maturation timelines are ESTIMATED, since Rome has never grown any of the three.
+**Confidence: MEDIUM**: climate constraint HIGH, maturation timelines ESTIMATED.
 
-### ag2_bordeaux_mixture, ag2_lime_sulphur, ag2_lead_arsenate, ag2_nicotine_pesticide, ag2_pyrethrum, ag2_ddt - Pest and disease chemicals, oldest to most dangerous
-**What it is / why you want it.** Bordeaux mixture, copper sulfate and lime in a precise ratio, coats leaves against fungal disease if applied ahead of rain; too much copper burns the leaf. Lime sulphur, sulfur boiled with lime into a stable polysulphide, works even on cold mornings. Lead arsenate is valued for insolubility, clinging through rain, but that same property leaves a poisonous residue on harvested fruit. Nicotine, extracted from tobacco waste as a soluble sulphate, is a neurotoxin lethal to insects at doses far below mammalian harm, and genuinely dangerous to mishandle. Pyrethrum, ground dried flowers of a highland chrysanthemum relative, degrades rapidly in sunlight, so evening application matters. DDT is the most persistent, effective for a very long time, and that persistence is exactly its danger: it accumulates in predator fat tissue and thins eggshells decades after use.
+### ag2_bordeaux_mixture, ag2_lime_sulphur, ag2_lead_arsenate, ag2_nicotine_pesticide, ag2_pyrethrum, ag2_ddt - Pest chemicals, oldest to most dangerous
+**What it is / why you want it.** Bordeaux mixture (copper sulfate and lime) coats leaves against fungus; too much copper burns leaves. Lime sulphur (sulfur boiled with lime into polysulphide) works even in cold. Lead arsenate's insolubility clings through rain but leaves a poisonous fruit residue. Nicotine, from tobacco waste, kills insects at doses far below mammalian harm. Pyrethrum, ground highland-flower heads, degrades rapidly in sunlight. DDT is most persistent, and that persistence is its danger: it accumulates in predator fat and thins eggshells decades later.
 
-**Why you would never guess this.** These six are not a simple progression from worse to better; each solves the previous one's weakness while adding a new hazard the previous one lacked.
+**Why you would never guess this.** These six are not a simple progression from worse to better; each fixes the last's weakness while adding a new hazard.
 
-**Prerequisites.** Copper and lime (Bordeaux); sulfur and lime (lime sulphur); lead and arsenic minerals (lead arsenate); tobacco, a New World plant gated like ag2_maize_newworld (nicotine); the highland flower species, a trade dependency like ag2_tea_voyage (pyrethrum); an organic chlorine synthesis chain well beyond Roman chemistry (DDT, flagged as late-stage, not near-term).
+**Prerequisites.** Copper/lime (Bordeaux); sulfur/lime (lime sulphur); lead/arsenic minerals (arsenate); tobacco, New World-gated like ag2_maize_newworld (nicotine); the highland flower, trade-gated like ag2_tea_voyage (pyrethrum); organic chlorine chemistry (DDT, late-stage, not near-term).
 
-**Roman-available inputs.** Copper, lime, sulfur, lead, and arsenic minerals are all genuinely Roman-available; tobacco and the pyrethrum flower are not.
+**Roman-available inputs.** Copper, lime, sulfur, lead, arsenic minerals genuinely available; tobacco and pyrethrum flower are not.
 
-**Procedure.** Bordeaux: dissolve copper sulfate and slaked lime separately, combine slowly at a tested ratio (test with a clean iron nail; visible copper plating means too acid and leaf-burning), spray before rain. Lime sulphur: boil sulfur and lime until the liquid turns amber-brown, dilute for spraying. Lead arsenate: precipitate from lead acetate and sodium arsenate, wash, dry, suspend for spraying; handle the dry powder with great care. Nicotine: steep or steam-extract from tobacco waste, convert to the sulphate salt. Pyrethrum: dry and grind flower heads, apply as dust or infusion in the evening. DDT: not a near-term recipe, requires `20_chemistry.md` organic chlorine chemistry first.
+**Procedure.** Bordeaux: combine copper sulfate and slaked lime slowly at a tested ratio, spray before rain. Lime sulphur: boil to an amber polysulphide. Lead arsenate: precipitate, wash, dry, handle powder carefully. Nicotine: extract from tobacco waste as the sulphate salt. Pyrethrum: dry, grind, apply evenings. DDT: needs `20_chemistry.md` organic chlorine chemistry first.
 
-**How you know it worked.** Bordeaux-treated vines show no mildew spread against an untreated row; lead arsenate leaves visible dying insects and a residue that survives rain, the whole point and also the later problem.
+**How you know it worked.** Bordeaux-treated vines show no mildew spread; lead arsenate leaves visible dying insects and a rain-resistant residue, the point and later the problem.
 
-**Failure modes.** Bordeaux too copper-heavy scorches leaves; lead arsenate and DDT both "succeed" at killing the pest while quietly building a residue or bioaccumulation problem that surfaces later, a failure the *_TEMPLATE.md* danger rule requires naming honestly.
+**Failure modes.** Lead arsenate and DDT both "succeed" at the pest while quietly building a residue or bioaccumulation problem later.
 
-**Cost & labour.** ESTIMATED: Bordeaux and lime sulphur are cheap and Roman-material; lead arsenate needs careful hazardous small-batch chemistry; nicotine and pyrethrum carry an import cost; DDT is not currently costable.
+**Cost & labour.** ESTIMATED: Bordeaux/lime sulphur cheap; lead arsenate hazardous small-batch chemistry; nicotine/pyrethrum carry import cost; DDT not costable yet.
 
-**Danger.** Copper/sulfur are mild irritants. Lead arsenate is acutely toxic and leaves a poisonous food residue, a genuine long-term food-safety hazard. Nicotine sulphate absorbs through skin. DDT's harm is delayed and ecosystem-wide, the least visible at use and the most serious in aggregate.
+**Danger.** Lead arsenate is acutely toxic and leaves a poisonous food residue. Nicotine absorbs through skin. DDT's harm is delayed and ecosystem-wide.
 
-**Confidence: HIGH** on chemistry and toxicity profiles; MEDIUM on Roman-era arsenic purity control for lead arsenate.
+**Confidence: HIGH** on chemistry/toxicity; MEDIUM on Roman-era arsenic purity control.
 
 ### ag2_sprayer, ag2_biological_control, ag2_resistant_variety - Applying and avoiding chemicals
-**What it is / why you want it.** The sprayer's nozzle geometry and pump pressure produce a fine, even mist instead of wasteful runoff drops. Biological control rears a pest's natural predator and releases it at the right timing, carrying its own risk that the control organism itself becomes a pest with no natural check in a new environment. Resistant varieties are bred and confirmed by deliberate test crosses (using ag2_record_keeping_breeding and ag2_controlled_pollination), though pests evolve, and resistance-breaking mutants can emerge within a few years.
+**What it is / why you want it.** A sprayer's nozzle and pump pressure produce a fine, even mist instead of wasteful runoff. Biological control rears a pest's natural predator, released at the right timing, risking that the control organism becomes a pest itself with no local check. Resistant varieties are bred and confirmed by test crosses, though pests evolve and resistance-breaking mutants can emerge within years.
 
-**Why you would never guess this.** Biological control's second-order risk, the fix becoming its own pest, is the part most worth stating: an organism with no local predator can multiply unchecked, the same mechanism that made the original pest a problem.
+**Why you would never guess this.** Biological control's second-order risk, the fix becoming its own pest, is the least obvious part.
 
-**Prerequisites.** A force pump and fine nozzle for the sprayer; identification and captive rearing for biological control; the breeding disciplines above for resistant varieties.
+**Prerequisites.** A force pump for the sprayer; captive rearing for biological control; the breeding disciplines above for resistant varieties.
 
 **Roman-available inputs.** Bronze or iron for pump parts.
 
-**Procedure.** Sprayer: build a lever pump and nozzle, tune bore and pressure for a fine, even mist covering leaf undersides. Biological control: identify and rear the target's natural enemy, release before the pest peaks, then monitor specifically for the released organism becoming a problem itself. Resistant variety: screen stock for survivors of an outbreak, breed forward with controlled pollination, test-cross to confirm the trait is stable, keep monitoring for pests that overcome it.
+**Procedure.** Sprayer: build a lever pump and nozzle, tune for a fine mist. Biological control: identify and rear the predator, release before the pest peaks, monitor the released organism itself. Resistant variety: screen survivors, breed forward, test-cross to confirm the trait is stable.
 
-**How you know it worked.** A calibrated sprayer coats leaves evenly with minimal ground runoff; a resistant variety shows measurably lower damage than the standard variety under identical conditions.
+**How you know it worked.** A calibrated sprayer coats leaves evenly with minimal runoff.
 
-**Failure modes.** A coarse nozzle wastes most pesticide as runoff; biological control released at the wrong pest life stage fails to establish; resistant varieties can lose their edge within a few seasons as pests adapt.
+**Failure modes.** A coarse nozzle wastes pesticide; badly timed release fails to establish.
 
-**Cost & labour.** ESTIMATED (basis: sprayer is minor ironwork; biological control needs ongoing rearing labour; resistant breeding reuses the record-keeping cost above).
+**Cost & labour.** ESTIMATED (basis: sprayer is minor ironwork; biological control needs ongoing rearing labour).
 
-**Danger.** Sprayer danger matches whatever chemical is loaded; biological control's danger is ecological and delayed, a documented failure mode worth weighing, not dismissing.
+**Danger.** Sprayer danger matches the loaded chemical; biological control's danger is ecological and delayed.
 
-**Confidence: HIGH** on sprayer and resistant-variety mechanism; MEDIUM on biological control, genuinely species-specific with no universal recipe.
+**Confidence: HIGH** sprayer/resistant variety; MEDIUM biological control, species-specific.
 
 ### ag2_canning, ag2_retort, ag2_double_seam_can - Preservation that worked before anyone knew why
-**What it is / why you want it.** Canning seals food airtight and heats it enough, long enough, to kill spoilage organisms and prevent botulism toxin, the central risk of inadequate heat. The retort reaches pressurised temperatures above plain boiling (100°C), needed because botulism organisms specifically need hotter, longer treatment, with a gauge and a temperature log confirming heat reached the can's centre. The double seam can's rolled, folded seam geometry, backed by well-maintained sealing-tool rollers, holds a pressure-tight seal through both the retort and later handling.
+**What it is / why you want it.** Canning seals food airtight and heats it long enough to kill spoilage organisms and prevent botulism toxin. The retort reaches pressurised heat above 100°C, needed since botulism organisms need hotter, longer treatment, with logged temperature confirming heat reached the can's centre. The double seam's rolled, folded geometry holds a pressure-tight seal.
 
-**Why you would never guess this.** State this plainly: Appert had canning working reliably decades before Pasteur's germ theory explained why. You do not need to know heat kills microorganisms to discover empirically that a well-sealed, well-heated jar keeps and an under-heated one does not. Teach germ theory anyway (`70_medicine_biology.md`) since it sets safe minimum times deliberately instead of by trial and fatal error.
+**Why you would never guess this.** Appert had canning working reliably decades before Pasteur's germ theory explained why. Teach germ theory anyway (`70_medicine_biology.md`) since it sets safe minimum times deliberately instead of by trial and fatal error.
 
-**Prerequisites.** Airtight containers (glass jars with wax seal, or tinplate cans, `fud_tin_plate_cans`), a heat source, ideally a pressure retort for low-acid foods.
+**Prerequisites.** Airtight containers (glass with wax, or tinplate, `fud_tin_plate_cans`), a heat source, ideally a pressure retort for low-acid foods.
 
-**Roman-available inputs.** Roman glassblowing (`30_glass_optics.md`) and wax sealing; Cornish tin for tinplate.
+**Roman-available inputs.** Roman glassblowing (`30_glass_optics.md`) and wax sealing; Cornish tin.
 
-**Procedure.** 1. Pack food leaving headspace. 2. Seal (wax and lid, or a double seam, a two-stage rolled crimp kept tight by well-maintained sealing rollers). 3. Heat in boiling water for acidic foods or a pressure retort above 100°C for low-acid foods, long enough that a marker at the can's centre confirms heat penetration. 4. Log time and temperature. 5. Cool; a good seal draws the lid slightly concave. A bulging lid at any later point means spoilage gas; discard unopened, never taste to check.
+**Procedure.** 1. Pack food leaving headspace. 2. Seal (wax lid, or a two-stage rolled crimp). 3. Heat in boiling water (acidic foods) or a pressure retort above 100°C (low-acid), long enough that a centre marker confirms penetration. 4. Log time and temperature. 5. A good seal draws the lid concave; a later bulge means spoilage, discard unopened.
 
-**How you know it worked.** A stored can keeps its concave lid for months to years with no bulging or off smell.
+**How you know it worked.** A stored can keeps its concave lid for months to years, no bulging.
 
-**Failure modes.** Underprocessing low-acid foods without a pressure retort is the single most dangerous failure, since botulism toxin is odourless and tasteless; a poor seam leaks slowly after correct heat treatment.
+**Failure modes.** Underprocessing low-acid foods is the single most dangerous failure, since botulism toxin is odourless and tasteless.
 
-**Cost & labour.** ESTIMATED: glass-jar canning is near-zero new capital; tinplate cans and a pressure retort are a real capital step up.
+**Cost & labour.** ESTIMATED: glass-jar canning is near-zero new capital; tinplate and a retort are a real capital step up.
 
-**Danger.** Botulism is the central, lethal danger here, stated without hedging. Never open or taste a bulging container. Pressure retorts carry a secondary explosion risk if the gauge fails.
+**Danger.** Botulism is the central, lethal danger here, stated without hedging. Never taste a bulging container.
 
-**Confidence: HIGH.** Appert's success is documented history; the time-temperature-botulism relationship is settled food science.
+**Confidence: HIGH**, Appert's success is documented history.
 
 ### ag2_pasteurisation, ag2_nitrite_curing - Milder preservation with narrower margins
-**What it is / why you want it.** Pasteurisation heats a liquid to a temperature and hold time chosen to be well above what kills ordinary pathogens but below what destroys heat-resistant spores, then cools rapidly to limit cooked-flavour change. Nitrite curing forms nitrous acid in meat's own acidity, which is what actually suppresses bacterial growth including botulism risk, but the same nitrite reacting during storage and cooking forms carcinogenic N-nitrosamines, a real long-term cost.
+**What it is / why you want it.** Pasteurisation heats a liquid to a temperature and hold time killing pathogens but not heat-resistant spores, then cools rapidly. Nitrite curing forms nitrous acid in meat, suppressing bacteria including botulism, but the same nitrite forms carcinogenic N-nitrosamines during storage and cooking.
 
-**Why you would never guess this.** Nitrite curing's danger is the harder one to guess: the same chemical action giving an acute safety benefit creates a smaller but real chronic risk, discovered only through long-term epidemiology, exactly the kind of hidden bill the *_TEMPLATE.md* rules require naming, not glossing.
+**Why you would never guess this.** The same chemical action giving an acute safety benefit creates a smaller but real chronic risk, discovered only through long-term epidemiology.
 
-**Prerequisites.** A controllable heat source with a thermometer (`20_chemistry.md`) for pasteurisation; a genuine nitrite/nitrate salt from `nitre_beds` for curing, not Roman *nitrum* (sodium carbonate), a direct instance of the *_TEMPLATE.md*'s named common error.
+**Prerequisites.** A controllable heat source with a thermometer (`20_chemistry.md`); a genuine nitrite salt from `nitre_beds`, not Roman *nitrum* (sodium carbonate), the *_TEMPLATE.md*'s named common error.
 
 **Roman-available inputs.** Milk and meat universally; the nitrite salt is the genuine gap.
 
-**Procedure.** Pasteurisation: heat well below boiling, hold at a set time, cool rapidly rather than slowly. Curing: dissolve a carefully measured small quantity of nitrite salt into brine or rub, hold for a period matched to the cut's size, store as normal, understanding nitrosamine risk accumulates with lifetime quantity, not from one meal.
+**Procedure.** Pasteurisation: heat below boiling, hold, cool rapidly. Curing: dissolve a carefully measured small nitrite quantity into brine, hold per cut size, store normally.
 
-**How you know it worked.** Pasteurised milk keeps longer than raw milk without a fully cooked taste; correctly cured meat resists spoilage and specifically resists botulism.
+**How you know it worked.** Pasteurised milk keeps longer without a fully cooked taste; cured meat resists botulism.
 
-**Failure modes.** Too-low temperature or too-short hold leaves pathogens alive with false confidence; too little nitrite fails to protect against botulism, too much worsens both flavour and nitrosamine risk.
+**Failure modes.** Too little nitrite fails to protect; too much worsens flavour and nitrosamine risk.
 
-**Cost & labour.** ESTIMATED: pasteurisation needs only a controlled water bath and thermometer; curing's cost is dominated by the `nitre_beds` prerequisite.
+**Cost & labour.** ESTIMATED: pasteurisation needs only a controlled water bath; curing's cost is dominated by `nitre_beds`.
 
-**Danger.** Under-treated pasteurisation gives false safety confidence. Nitrite curing's nitrosamine formation is a real, worth-flagging chronic risk alongside white flour and lead cookware elsewhere in this module.
+**Danger.** Nitrite curing's nitrosamine formation is a real chronic risk worth flagging alongside white flour and lead cookware elsewhere in this module.
 
-**Confidence: HIGH** on both mechanisms, well-established food science.
+**Confidence: HIGH** on both mechanisms.
 
 ### ag2_refrigeration_ice, ag2_refrigerated_ship, ag2_cold_store - The cold chain
-**What it is / why you want it.** Ice trade preservation harvests winter ice, stacks it insulated with sawdust, and moves it timed against its melt rate. A refrigerated ship holds cargo at roughly -15°C for weeks using an engine-driven mechanical compressor instead of stored ice, though odour transfer between cargo types is a real problem. A cold store's insulation thickness, air circulation path, and humidity control together prevent condensation dripping onto food and encouraging the spoilage the cold was meant to stop.
+**What it is / why you want it.** Ice trade preservation harvests winter ice, insulates it with sawdust, and moves it timed against melt rate. A refrigerated ship holds cargo at roughly -15°C for weeks using a compressor instead of stored ice, though odour transfer between cargo is a real problem. A cold store's insulation, air circulation, and humidity control together prevent condensation dripping onto food.
 
-**Why you would never guess this.** Ice alone is obvious given winter ice; mechanical refrigeration, an engine doing continuous work to keep something cold, needs the compression-expansion cooling principle (`chm_refrigerant_ammonia`, `20_chemistry.md`) to work at all, not just a strong engine.
+**Why you would never guess this.** Mechanical refrigeration needs the compression-expansion cooling principle (`chm_refrigerant_ammonia`, `20_chemistry.md`), not just a strong engine.
 
-**Prerequisites.** Winter freezing conditions and transport timing for ice; a compressor-driven refrigerant cycle (`20_chemistry.md`, `40_power_precision.md`) for mechanical cold.
+**Prerequisites.** Winter freezing and transport timing for ice; a compressor refrigerant cycle (`20_chemistry.md`, `40_power_precision.md`) for mechanical cold.
 
-**Roman-available inputs.** Ice from northern provinces or mountain regions; mechanical refrigeration needs the ammonia-refrigerant chain, not Roman-available without that prerequisite.
+**Roman-available inputs.** Ice from northern provinces; mechanical refrigeration needs the ammonia chain, not Roman-available.
 
-**Procedure.** Ice trade: saw blocks, stack with sawdust insulation, transport with a comfortable time margin against melt-through. Mechanical cold: build continuous insulation with no thermal bridges, design even air circulation, control humidity with a condensate drain, treated as a separate problem from temperature.
+**Procedure.** Ice trade: saw blocks, insulate with sawdust, transport with a margin against melt. Mechanical: build continuous insulation, even air circulation, a condensate drain for humidity.
 
-**How you know it worked.** Ice-trade cargo arrives with usable ice remaining; a cold store holds food fresh well past normal spoilage time without condensation dripping onto goods.
+**How you know it worked.** A cold store holds food fresh well past normal spoilage without condensation.
 
-**Failure modes.** Underestimated melt rate arrives with nothing useful; a hold without humidity control condenses water onto food and actively promotes the mould and bacteria the cold was meant to prevent.
+**Failure modes.** A hold without humidity control condenses water and promotes the spoilage the cold was meant to prevent.
 
-**Cost & labour.** ESTIMATED: ice-trade logistics use existing Roman sawing and transport at modest cost; mechanical refrigeration is DERIVED as gated entirely on `20_chemistry.md`.
+**Cost & labour.** ESTIMATED: ice-trade logistics modest cost; DERIVED: mechanical refrigeration gated entirely on `20_chemistry.md`.
 
-**Danger.** Ice harvesting on frozen water risks drowning and hypothermia; ammonia refrigerant is toxic and caustic on a line leak, ventilate.
+**Danger.** Ice harvesting risks drowning and hypothermia; ammonia refrigerant is toxic on a line leak.
 
-**Confidence: HIGH** on ice-trade logistics; MEDIUM on mechanical refrigeration's Roman-era timeline.
+**Confidence: HIGH** ice-trade; MEDIUM mechanical refrigeration timeline.
 
 ### ag2_bottling, ag2_crown_cork - Sealing liquids for storage and transport
-**What it is / why you want it.** Standardised bottling prevents both oxidation and breakage in transport by giving every bottle a consistent, predictable shape. The crown cork's serrated skirt grips the bottle rim evenly all the way round, holding pressure without cracking the glass or slipping loose.
+**What it is / why you want it.** Standardised bottling prevents oxidation and breakage with a consistent shape. The crown cork's serrated skirt grips the rim evenly, holding pressure without cracking glass.
 
-**Why you would never guess this.** A smooth metal cap either seals too loosely to hold pressure or grips unevenly and cracks the glass; crimping the edge into many small serrations lets it grip evenly while still flexing.
+**Why you would never guess this.** A smooth cap either seals too loosely or grips unevenly and cracks the glass; crimped serrations grip evenly while still flexing.
 
-**Prerequisites.** Standardised glass-bottle moulding (an extension of existing Roman glassblowing, `30_glass_optics.md`), cork (cork oak grows around the western Mediterranean, already Roman-known), sheet-metal forming.
+**Prerequisites.** Standardised bottle moulding (`30_glass_optics.md`), cork (western Mediterranean cork oak, already Roman-known), sheet-metal forming.
 
-**Roman-available inputs.** Roman glass and cork are both genuinely available; standardisation, not raw material, is the gap.
+**Roman-available inputs.** Roman glass and cork are both available; standardisation is the gap.
 
-**Procedure.** Bottling: standardise a mould so neck diameter and rim shape are consistent across a batch, fill with headspace, seal with shaped cork, wax over for long storage. Crown cork: cut a cork-lined metal disc slightly larger than the mouth, press onto the filled bottle's rim, crimp the edge into many small serrations with a capping tool, distributing grip evenly.
+**Procedure.** Bottling: standardise a mould so neck and rim are consistent, fill with headspace, seal with cork and wax. Crown cork: press a cork-lined disc onto the rim, crimp into many small serrations distributing grip evenly.
 
-**How you know it worked.** A crown-capped bottle holds internal pressure without the cap working loose or the glass cracking.
+**How you know it worked.** A crown-capped bottle holds pressure without the cap working loose.
 
-**Failure modes.** Inconsistent bottle-neck dimensions from unstandardised moulding make caps fit some bottles and not others; an unevenly crimped cap leaks slowly at the loose point.
+**Failure modes.** Inconsistent bottle necks make caps fit some bottles and not others.
 
-**Cost & labour.** ESTIMATED: reuses existing glass and cork materials, modest new tooling for the mould and crimper.
+**Cost & labour.** ESTIMATED: reuses existing glass and cork, modest new tooling.
 
 **Danger.** None beyond ordinary glass-handling cuts.
 
 **Confidence: HIGH.**
 
 ### ag2_butter, ag2_cheese_families, ag2_condensed_milk, ag2_evaporated_milk - Dairy processing and preservation
-**What it is / why you want it.** Butter churning is an emulsion inversion: fat flips from suspended droplets to the continuous phase, and buttermilk separates out, a genuinely different structure, not just thickened cream. Hard cheeses cut the curd and cook it hot before pressing for a dense, long-keeping result; soft cheeses set whole curd low and handle it minimally, keeping more moisture and a shorter shelf life. Condensed milk removes water by vacuum boiling at low temperature to avoid caramelising, and sugar concentration itself prevents crystallisation and spoilage. Evaporated milk is unsweetened, and needs homogenisation, forcing milk through a fine valve to shrink fat globules so they stay suspended through the can's shelf life, plus a heat-shock step stabilising the proteins against curdling.
+**What it is / why you want it.** Butter churning is an emulsion inversion: fat flips from suspended droplets to the continuous phase, buttermilk separating out. Hard cheeses cut and cook curd hot before pressing for dense, long-keeping results; soft cheeses set curd low with minimal handling. Condensed milk vacuum-boils at low temperature and uses sugar concentration to prevent crystallisation and spoilage. Evaporated milk needs homogenisation, shrinking fat globules so they stay suspended, plus heat-shock stabilising proteins against curdling.
 
-**Why you would never guess this.** Butter's "inversion" is the non-obvious part: churning suddenly flips which phase is continuous rather than gradually thickening, which is why butter "comes" all at once. Homogenisation's necessity is similarly non-obvious: ordinary milk's fat globules separate over weeks, fine fresh but fatal to a canned product on a year's shelf.
+**Why you would never guess this.** Butter suddenly flips which phase is continuous rather than gradually thickening. Ordinary milk's fat globules separate over weeks, fine fresh but fatal to a year-shelf canned product.
 
-**Prerequisites.** Standard dairy equipment (Roman, already); vacuum-boiling apparatus (`20_chemistry.md`) and a homogenising valve for condensed/evaporated milk; ag2_double_seam_can for shelf-stable form.
+**Prerequisites.** Standard dairy equipment (Roman); vacuum-boiling apparatus (`20_chemistry.md`) and a homogenising valve; ag2_double_seam_can for shelf-stable form.
 
 **Roman-available inputs.** Milk, rennet, salt, imported sugar, existing churns and presses.
 
-**Procedure.** Butter: churn until fat suddenly coalesces from thin buttermilk, drain, work out residual buttermilk. Hard cheese: cut curd small, cook hot while stirring, press firmly. Soft cheese: set curd low, handle whole, little pressing. Condensed milk: boil under reduced pressure while adding sugar progressively to a preserving concentration. Evaporated milk: boil under reduced pressure, force through a homogenising valve, heat-shock briefly, can and retort-process.
+**Procedure.** Butter: churn until fat suddenly coalesces, drain, work out buttermilk. Hard cheese: cut curd, cook hot, press. Soft cheese: set low, handle whole. Condensed milk: vacuum-boil with progressive sugar. Evaporated milk: vacuum-boil, homogenise, heat-shock, can and retort-process.
 
-**How you know it worked.** Butter shows a clean, sudden separation, not gradual thickening; evaporated milk stays uniformly opaque in the can with no cream layer rising.
+**How you know it worked.** Butter shows a clean, sudden separation; evaporated milk stays uniform in the can with no cream layer.
 
-**Failure modes.** Under-worked butter retains buttermilk and turns rancid faster; skipping homogenisation lets a visible cream layer separate and, without heat-shock, the concentrated proteins can curdle.
+**Failure modes.** Skipping homogenisation lets a cream layer separate and, without heat-shock, curdles.
 
-**Cost & labour.** ESTIMATED: butter and cheese reuse existing equipment; condensed and evaporated milk need moderate new vacuum and homogenising capital.
+**Cost & labour.** ESTIMATED: butter/cheese reuse existing equipment; condensed/evaporated milk need moderate new capital.
 
 **Danger.** None acute beyond ordinary dairy hygiene (`70_medicine_biology.md`).
 
-**Confidence: HIGH** on butter/cheese; MEDIUM on condensed/evaporated milk equipment reaching reliable Roman-era manufacture.
+**Confidence: HIGH** butter/cheese; MEDIUM condensed/evaporated milk equipment.
 
 ### ag2_yeast_culture, ag2_fermentation_control - Controlling fermentation deliberately
-**What it is / why you want it.** Yeast culture propagates one known, pure strain rather than relying on wild yeast, giving faster, cleaner, more consistent fermentation with markedly lower *Acetobacter* infection (which turns alcohol to vinegar). Fermentation control limits the ferment's air exposure, since *Acetobacter* needs oxygen, and lets the ferment's own acid build a protective level before any necessary exposure.
+**What it is / why you want it.** Yeast culture propagates one known strain rather than wild yeast, giving faster, cleaner fermentation with lower *Acetobacter* infection (which turns alcohol to vinegar). Fermentation control limits air exposure, since *Acetobacter* needs oxygen, letting protective acid build first.
 
-**Why you would never guess this.** Rome already ferments without any concept of yeast as a living organism; the leap is realising a batch's inconsistency (good one time, vinegar the next) is explained by which microorganism happens to dominate, and that carrying forward a good batch's yeast, instead of starting fresh each time, biases that competition in your favour.
+**Why you would never guess this.** A batch's inconsistency, good one time, vinegar the next, is explained by which organism dominates, and carrying forward a good batch's yeast biases that competition.
 
-**Prerequisites.** A lens or simple microscope helps confirm yeast as a discrete organism (`70_medicine_biology.md`, `30_glass_optics.md`) but is not required; the empirical carry-forward method works without it, as Appert's canning did without germ theory.
+**Prerequisites.** A lens helps confirm yeast as an organism (`70_medicine_biology.md`, `30_glass_optics.md`) but is not required; the carry-forward method works empirically, as Appert's canning did.
 
-**Roman-available inputs.** Wine, beer-adjacent ferments, and bread all already exist with naturally occurring yeast.
+**Roman-available inputs.** Wine, beer-adjacent ferments, and bread all already exist with wild yeast.
 
-**Procedure.** Yeast culture: 1. Identify a batch that finished clean and fast with no vinegar taint. 2. Reserve a portion of its active ferment. 3. Use it to start the next batch instead of ambient wild yeast, repeating each cycle. Fermentation control: 1. Ferment in a narrow-necked or loosely covered vessel limiting air. 2. Let acid and alcohol build before any exposure such as racking. 3. Keep vessels and tools scrupulously clean between batches.
+**Procedure.** 1. Reserve active ferment from a batch that finished clean, no vinegar taint. 2. Use it to start the next batch instead of ambient yeast. 3. Ferment in a narrow-necked or loosely covered vessel limiting air, keeping tools scrupulously clean.
 
-**How you know it worked.** A cultured batch ferments faster and tastes consistent batch to batch; a controlled ferment shows no surface souring where an exposed batch would.
+**How you know it worked.** A cultured batch ferments faster and tastes consistent batch to batch.
 
-**Failure modes.** Carrying forward an already-infected batch propagates the infection into every future batch; a too-open vessel lets *Acetobacter* establish before protective acid builds.
+**Failure modes.** Carrying forward an infected batch propagates it into every future batch.
 
 **Cost & labour.** ESTIMATED (basis: no new equipment, only vessel choice and carry-forward discipline).
 
-**Danger.** None physical.
+**Danger.** None.
 
-**Confidence: HIGH**, matching the Appert precedent of working before the theory is understood.
+**Confidence: HIGH**, matching the Appert precedent.
 
 ### ag2_malting, ag2_mashing, ag2_hopping, ag2_hydrometer, ag2_pot_still, ag2_column_still - Brewing and distilling as controlled process
-**What it is / why you want it.** Malting germinates grain to activate enzymes, then kiln-dries at the right moment to halt germination without destroying them. Mashing holds malted grain in water at specific temperature rests, each favouring a different enzyme, directly controlling the final drink's fermentability. Hopping's boil time controls how much bittering compound isomerises, with late additions contributing aroma instead, since it would boil off if added early. The hydrometer measures density, and since fermentation steadily lowers it in a known way, tracking the drop tells a brewer precisely when fermentation is finished, replacing guesswork. A pot still, built in copper specifically because copper scrubs sulphurous off-flavours, concentrates alcohol by boiling and condensing, with the distiller's skill in cutting the harsh early "heads" and weak late "tails," keeping only the clean "hearts." A column still repeats the boil-condense cycle across many stacked plates, producing a nearly flavourless, high-purity spirit continuously rather than batch by batch.
+**What it is / why you want it.** Malting germinates grain to activate enzymes, then kiln-dries to halt germination without destroying them. Mashing holds malted grain at temperature rests favouring different enzymes, controlling fermentability. Hopping's boil time controls bittering isomerisation; late additions give aroma instead. The hydrometer's density reading tracks fermentation's progress precisely, replacing guesswork. A copper pot still (copper scrubs sulphurous off-flavours) concentrates alcohol, the distiller cutting harsh "heads" and weak "tails" from the clean "hearts." A column still repeats the cycle across stacked plates for a continuous, near-flavourless spirit.
 
-**Why you would never guess this.** The hydrometer turns judgement into a number, removing guesswork about when fermentation finishes. Copper's role in a pot still is the least obvious material detail: any metal separates alcohol by boiling point, but only copper actively removes sulphurous off-flavours, a chemical side-effect of the still's material, not its shape.
+**Why you would never guess this.** The hydrometer turns judgement into a number. Copper's role is the least obvious material detail: any metal separates by boiling point, only copper removes sulphurous off-flavours.
 
-**Prerequisites.** ag2_yeast_culture for consistent fermentation; distillation apparatus is flagged by *_TEMPLATE.md* as something Rome does not have, a genuinely new capability, not a refinement; copper for stills; glasswork for the hydrometer (`20_chemistry.md`, `30_glass_optics.md`).
+**Prerequisites.** ag2_yeast_culture for consistent fermentation; distillation is flagged by *_TEMPLATE.md* as a genuine Roman gap, not a refinement; copper for stills; glasswork for the hydrometer (`20_chemistry.md`, `30_glass_optics.md`).
 
-**Roman-available inputs.** Malted grain, hops (cultivation transferable), copper, glass.
+**Roman-available inputs.** Malted grain, hops, copper, glass.
 
-**Procedure.** Malting: soak until sprouting begins, halt at the right point by kiln-drying without scorching. Mashing: crush, hold at temperature rests favouring starch or protein breakdown, strain the wort. Hopping: boil most hops early for bitterness, add a reserved portion late for aroma. Hydrometer: float in the liquid before and daily during fermentation; a falling reading that levels off signals completion and gives alcohol yield. Pot still: boil in copper, condense through a copper coil, discard the heads, collect the hearts, stop at weakening flow or off flavour (tails). Column still: stack perforated plates so vapour repeatedly condenses and re-boils, concentrating purity at each stage.
+**Procedure.** Malting: soak, sprout, kiln-dry at the right point. Mashing: crush, hold at temperature rests, strain. Hopping: bulk hops early for bitterness, a portion late for aroma. Hydrometer: track density daily until it levels off. Pot still: boil in copper, discard heads, collect hearts, stop at weakening tails. Column still: stack perforated plates for repeated condense-reboil cycles.
 
-**How you know it worked.** A correctly cut pot-still batch tastes clean through the hearts, with heads' harshness and tails' thinness clearly distinguishable during collection.
+**How you know it worked.** A correctly cut pot-still batch tastes clean through the hearts.
 
-**Failure modes.** Over-germinated or scorched malt ruins enzyme activity; a mash at the wrong temperature gives an unfermentable or thin wort; skipping the heads/tails cut risks carrying over concentrated volatile compounds, a safety issue, not just a taste one.
+**Failure modes.** Skipping the heads/tails cut risks carrying over concentrated volatile compounds, a safety issue.
 
-**Cost & labour.** ESTIMATED: malting, mashing, hopping, and the hydrometer reuse existing or moderate new capability; stills are a genuinely new capital item, copper the main cost, column stills substantially more complex than pot stills.
+**Cost & labour.** ESTIMATED: malting/mashing/hopping/hydrometer reuse or moderate new capability; stills are a genuinely new capital item.
 
-**Danger.** Alcohol vapour is flammable near open-flame stills; the heads fraction can contain methanol and other genuinely toxic compounds at higher concentration, discarding it is a safety practice, stated plainly.
+**Danger.** Alcohol vapour is flammable near open flame; the heads fraction can contain toxic methanol at higher concentration.
 
-**Confidence: HIGH** on malting/mashing/hopping/hydrometer; MEDIUM on stills, genuinely new ground for Rome per *_TEMPLATE.md*.
+**Confidence: HIGH** malting/mashing/hopping/hydrometer; MEDIUM stills, genuinely new ground for Rome.
 
 ### ag2_centrifugal_sugar, ag2_vacuum_pan, ag2_sugar_refining - Turning cane or beet juice into refined sugar
-**What it is / why you want it.** The vacuum pan boils sugar juice under reduced pressure, concentrating and crystallising at lower temperature to save fuel and avoid the scorching plain boiling causes. The centrifugal machine spins the sugar-molasses mixture in a perforated drum so molasses flings out through the mesh while crystals stay, needing deliberate vibration to stop sugar caking against the screen and a timed automatic discharge. Sugar refining runs successive A, B, and C crystallisation batches, each extracting more sugar from progressively less pure liquid.
+**What it is / why you want it.** The vacuum pan boils sugar juice under reduced pressure, avoiding the scorching plain boiling causes. The centrifuge spins the sugar-molasses mixture so molasses flings out through a mesh while crystals stay, needing agitation against caking and a timed discharge. Refining runs successive A, B, C crystallisation batches, extracting more sugar from progressively less pure liquid.
 
-**Why you would never guess this.** Vacuum boiling to lower the boiling point is the same trick as ag2_condensed_milk above, independently useful here since atmospheric boiling scorches sugar brown and bitter before it concentrates enough to crystallise cleanly.
+**Why you would never guess this.** Vacuum boiling to lower the boiling point is the same trick as ag2_condensed_milk, independently useful here since atmospheric boiling scorches sugar before it crystallises cleanly.
 
-**Prerequisites.** A vacuum-capable sealed vessel (`20_chemistry.md`), a centrifuge with reliable bearings and a power source, cane (ag2_sugar_voyage) or beet (Mediterranean-compatible, no voyage needed).
+**Prerequisites.** A vacuum-capable sealed vessel (`20_chemistry.md`), a centrifuge with reliable bearings, cane (ag2_sugar_voyage) or beet (no voyage needed).
 
 **Roman-available inputs.** Sugar beet is climate-compatible; the vacuum pan and centrifuge are both new capital equipment.
 
-**Procedure.** 1. Press juice (extending existing Roman oil/wine pressing). 2. Clarify with lime (existing Roman use elsewhere). 3. Boil under reduced pressure, watching for many small, even crystals rather than one uncontrolled boil. 4. Spin the massecuite in the centrifuge with light agitation so sugar does not cake; discharge automatically at a set point. 5. Repeat the boil-crystallise-spin cycle on the resulting molasses for B, then C batches.
+**Procedure.** 1. Press juice (extending Roman oil/wine pressing). 2. Clarify with lime. 3. Boil under reduced pressure for many small, even crystals. 4. Spin with light agitation, discharge automatically. 5. Repeat the cycle on the resulting molasses for B, then C batches.
 
-**How you know it worked.** Vacuum-pan sugar comes out pale and clean-tasting; centrifuged sugar separates cleanly with the screen staying clear.
+**How you know it worked.** Vacuum-pan sugar is pale and clean-tasting; centrifuged sugar separates cleanly.
 
-**Failure modes.** Atmospheric boiling scorches and darkens sugar; an unagitated centrifuge cakes solid and jams; skipping the A/B/C sequence wastes recoverable sugar.
+**Failure modes.** Atmospheric boiling scorches sugar; an unagitated centrifuge cakes and jams.
 
-**Cost & labour.** ESTIMATED as capital-intensive: both the vacuum pan and centrifuge are new mechanical builds beyond existing Roman equipment.
+**Cost & labour.** ESTIMATED as capital-intensive: both are new mechanical builds beyond existing Roman equipment.
 
-**Danger.** Vacuum vessels risk implosion if mishandled; hot syrup causes severe clinging burns; a spinning centrifuge drum is a serious entanglement hazard if unevenly loaded or unguarded.
+**Danger.** Vacuum vessels risk implosion; hot syrup causes severe clinging burns; a spinning drum is an entanglement hazard.
 
-**Confidence: MEDIUM.** Sound chemistry and mechanism, but genuine new capital engineering for Rome.
+**Confidence: MEDIUM.** Sound mechanism, genuine new capital engineering for Rome.
 
 ### ag2_roller_mill, ag2_purifier, ag2_white_flour_loss - Milling wheat and the cost it hides
-**What it is / why you want it.** Roller milling passes grain between successive roller pairs at increasing pressure, producing fine flour in one continuous pass without the reheating millstones cause. The purifier is an air-chamber stage with tapered channels separating bran, germ, and pure endosperm by density in a moving airstream. The result, white flour, keeps far longer than whole-grain flour because the oil-rich germ, the part most prone to rancidity, has been removed.
+**What it is / why you want it.** Roller milling passes grain between roller pairs at increasing pressure, producing fine flour in one continuous pass. The purifier's tapered air-chamber channels separate bran, germ, and endosperm by density. The result, white flour, keeps far longer since the oil-rich germ, most prone to rancidity, is removed.
 
-**Why you would never guess this.** State this plainly, the dark side the brief demands: removing the germ solves a real problem (rancidity within weeks) but the same germ holds most of the grain's thiamine, and a population eating white flour as its dominant food, without other thiamine sources, developed beriberi at scale historically. This is a documented public-health cost, not a hypothetical.
+**Why you would never guess this.** State this plainly: removing the germ solves rancidity but the germ holds most of the grain's thiamine, and a population eating white flour as its dominant food developed beriberi at scale historically, a documented public-health cost, not a hypothetical.
 
-**Prerequisites.** Metal rollers at consistent adjustable gap, sufficient power (water or animal), an air-chamber purifier.
+**Prerequisites.** Metal rollers at adjustable gap, sufficient power (water or animal), an air-chamber purifier.
 
-**Roman-available inputs.** Iron for rollers, existing Roman water-mill power directly reusable (the Barbegal complex is standing proof of scale).
+**Roman-available inputs.** Iron for rollers, existing Roman water-mill power (the Barbegal complex is standing proof of scale).
 
-**Procedure.** 1. Pass grain through a wide-gap, low-pressure first roller pair, cracking rather than pulverising. 2. Sift, pass the coarser fraction through progressively tighter pairs. 3. At each stage, run the output through the purifier's air chamber, lifting off lighter bran and germ without losing fine flour dust out the exhaust. 4. Collect pure white flour; sell removed bran and germ as feed, or blend back in for a whole-grain product, a choice worth presenting explicitly, not assuming white flour is always the goal.
+**Procedure.** 1. Crack grain through a wide-gap first roller pair. 2. Sift, pass coarser fraction through progressively tighter pairs. 3. Run output through the purifier's air chamber at each stage. 4. Collect white flour; sell or blend back bran and germ, a choice worth presenting explicitly.
 
-**How you know it worked.** Roller-milled flour is visibly finer and whiter, storing for months without the rancid taste whole-grain flour develops.
+**How you know it worked.** Roller-milled flour is finer and whiter, storing for months without rancidity.
 
-**Failure modes.** A weak purifier leaves bran in the flour (a quality complaint); the larger failure is dietary, a population relying on this flour without other thiamine sources develops beriberi, the specific harm this entry must not omit.
+**Failure modes.** The larger failure is dietary: reliance on this flour without other thiamine sources causes beriberi.
 
-**Cost & labour.** ESTIMATED: significant capital for precision rollers and purifier ducting, operating cost comparable to or lower than millstone grinding per unit.
+**Cost & labour.** ESTIMATED: significant capital for precision rollers and purifier ducting.
 
-**Danger.** Rollers are a severe crush hazard, guard fully, never clear jams while turning. The dietary danger is real and documented; state the fix too: other thiamine sources (whole grains, legumes, pork) alongside white bread, see `70_medicine_biology.md`.
+**Danger.** Rollers are a severe crush hazard. The dietary danger is real; state the fix: other thiamine sources (whole grains, legumes, pork) alongside white bread (`70_medicine_biology.md`).
 
 **Confidence: HIGH** on both milling mechanism and the beriberi consequence, well-documented medical history.
 
 ### ag2_oil_pressing, ag2_fat_hydrogenation - Extracting and modifying fats
-**What it is / why you want it.** Cold pressing, already Roman for olive oil, preserves flavour at a lower yield; hot pressing (preheating before pressing) extracts noticeably more oil at the cost of a coarser flavour. Fat hydrogenation chemically adds hydrogen to liquid oil to solidify it, a genuinely new industrial chemistry step needing careful temperature control, since overheating causes polymerisation, while imprecise partial hydrogenation unknowingly creates trans-fats, a category now known to carry its own long-term health cost.
+**What it is / why you want it.** Cold pressing (already Roman) preserves flavour at lower yield; hot pressing extracts more oil at coarser flavour. Fat hydrogenation adds hydrogen to liquid oil to solidify it, needing careful temperature control since overheating causes polymerisation, while imprecise partial hydrogenation unknowingly creates trans-fats, now known to carry their own long-term health cost.
 
-**Why you would never guess this.** Hydrogenation's trans-fat problem is the least obvious part: the harmful byproduct forms invisibly during an otherwise straightforward process aimed at a useful goal, discovered only much later through long-term epidemiology, the same hidden-bill pattern as white flour's thiamine loss.
+**Why you would never guess this.** The trans-fat problem forms invisibly during an otherwise straightforward process aimed at a useful goal, discovered only through long-term epidemiology, the same hidden-bill pattern as white flour's thiamine loss.
 
-**Prerequisites.** Oil pressing needs only existing Roman presses. Hydrogenation needs a hydrogen source and catalyst under controlled pressure and temperature, belonging with `20_chemistry.md`'s gas-handling and catalysis groundwork, not a farm workshop.
+**Prerequisites.** Oil pressing needs only existing Roman presses. Hydrogenation needs a hydrogen source and catalyst under controlled pressure (`20_chemistry.md`), not a farm workshop.
 
-**Roman-available inputs.** Olive oil pressing already at commercial scale; sesame oil similarly. Hydrogenation has no Roman-available path without its chemistry prerequisites.
+**Roman-available inputs.** Olive oil pressing already at commercial scale. Hydrogenation has no Roman path without its chemistry prerequisites.
 
-**Procedure.** Cold press: press at ambient temperature for quality. Hot press: preheat gently before pressing for yield, useful where quantity matters more than flavour. Hydrogenation (gated on `20_chemistry.md`): bubble hydrogen through oil with a catalyst under controlled temperature and pressure, monitoring closely to stop at the desired solidity, since carrying it too far risks polymerisation and stopping it partway maximises trans-fat formation.
+**Procedure.** Cold press: ambient temperature, quality over yield. Hot press: gentle preheat before pressing, yield over delicacy. Hydrogenation (gated on `20_chemistry.md`): bubble hydrogen through oil with a catalyst under controlled conditions, monitoring closely to stop at the desired solidity.
 
-**How you know it worked.** Cold-pressed oil is lighter and cleaner-tasting at lower yield than hot-pressed; correctly hydrogenated fat is solid at room temperature and stable without rancidity risk.
+**How you know it worked.** Cold-pressed oil is lighter and cleaner-tasting at lower yield; correctly hydrogenated fat is stable and solid without rancidity risk.
 
-**Failure modes.** Excessive preheat scorches and degrades hot-pressed oil; imprecise hydrogenation maximises trans-fat content, the worst outcome for both quality and long-term health.
+**Failure modes.** Imprecise hydrogenation maximises trans-fat content, the worst outcome for quality and health.
 
-**Cost & labour.** ESTIMATED: pressing is near-zero additional cost; hydrogenation is DERIVED as gated entirely on `20_chemistry.md`, a late-stage, high-capital project.
+**Cost & labour.** ESTIMATED: pressing is near-zero additional cost; DERIVED: hydrogenation gated entirely on `20_chemistry.md`.
 
-**Danger.** Hot pressing carries ordinary burn risk. Hydrogenation involves flammable hydrogen under pressure, a genuine explosion risk, on top of the chronic trans-fat health cost; state both plainly.
+**Danger.** Hydrogenation involves flammable hydrogen under pressure, a real explosion risk, on top of the chronic trans-fat health cost.
 
-**Confidence: HIGH** on pressing trade-offs; MEDIUM on hydrogenation, sound chemistry but a real Roman capability gap and a technology whose downside deserves explicit mention.
+**Confidence: HIGH** pressing trade-offs; MEDIUM hydrogenation, a real Roman capability gap with a downside worth stating explicitly.
 
 ### ag2_adulteration_law, ag2_food_laboratory - Regulation and the means to enforce it
-**What it is / why you want it.** An adulteration law defines fraudulent or unsafe practice (watered wine, chalk in flour, lead-based sweetening) and creates enforcement, but its actual effect depends entirely on inspection capacity behind it, a law with no inspectors is a statement of values, not a working control. The food laboratory is that capacity: gravimetric testing (weighing before and after a controlled process to measure fat or protein content), acidimetry (titrating against a known-strength acid or base to measure acidity or dilution), and microscopy (examining a sample for mould, insect fragments, or adulterant particles invisible to the eye) let an inspector prove adulteration, not merely suspect it.
+**What it is / why you want it.** An adulteration law defines fraudulent practice (watered wine, chalk in flour, lead-based sweetening) and creates enforcement, but its effect depends entirely on inspection capacity, a law with no inspectors is a statement of values, not a working control. The food laboratory supplies that capacity: gravimetric testing (weighing before/after to measure fat or protein), acidimetry (titrating to measure acidity or dilution), and microscopy (examining for mould or adulterant particles) let an inspector prove adulteration, not merely suspect it.
 
-**Why you would never guess this.** Passing a law feels like the whole solution; the laboratory methods are the unglamorous, unavoidable second half. Rome already has market oversight (the aedile) but not yet the analytic toolkit to make inspection rigorous rather than impressionistic.
+**Why you would never guess this.** Passing a law feels like the whole solution; the laboratory methods are the unglamorous, unavoidable second half. Rome has market oversight (the aedile) but not yet the analytic toolkit.
 
-**Prerequisites.** Precise balances, calibrated acid/base solutions and volume measurement (`20_chemistry.md`), a compound microscope (`microscope_compound`, `30_glass_optics.md`), and inspectors empowered to sample goods at market.
+**Prerequisites.** Precise balances, calibrated acid/base solutions (`20_chemistry.md`), a compound microscope (`microscope_compound`, `30_glass_optics.md`), inspectors empowered to sample at market.
 
-**Roman-available inputs.** The aedile's existing market-oversight role and trade balances are directly reusable; the microscope and titration apparatus are the genuine new capability.
+**Roman-available inputs.** The aedile's existing role and trade balances are reusable; the microscope and titration apparatus are the genuine new capability.
 
-**Procedure.** 1. Draft the law naming specific prohibited practices and real penalties, including lead-based sweetening, a directly relevant Roman example given *defrutum*'s lead-pan preparation. 2. Establish a laboratory with balances, titration apparatus, and a microscope. 3. Train inspectors in weighing-and-reweighing for fat/moisture content, titrating to a colour-change endpoint for acidity, and mounting samples for microscopic inspection. 4. Empower routine market sampling, not only complaint-driven inspection, since routine sampling catches what a complaint system misses.
+**Procedure.** 1. Draft the law naming prohibited practices, including lead-based sweetening, directly relevant given *defrutum*'s lead-pan preparation. 2. Establish a laboratory with balances, titration apparatus, and a microscope. 3. Train inspectors in the three methods. 4. Sample routinely, not only on complaint.
 
-**How you know it worked.** Sampled goods found adulterated can be demonstrated with a specific, repeatable measurement, not an inspector's opinion, and successful penalties reduce the adulteration rate in subsequent routine sampling.
+**How you know it worked.** Adulteration can be demonstrated with a repeatable measurement, not an inspector's opinion.
 
-**Failure modes.** A law without a funded laboratory or inspection staff changes little, since sellers correctly judge the real risk of being caught as near zero; complaint-only sampling catches only blatant cases.
+**Failure modes.** A law without a funded laboratory or staff changes little, since sellers correctly judge the risk of being caught as near zero.
 
-**Cost & labour.** ESTIMATED: equipment cost dominated by the microscope and precision balance/titration apparatus (`20_chemistry.md`, `30_glass_optics.md`); ongoing cost is inspector staffing, a recurring administrative expense.
+**Cost & labour.** ESTIMATED: equipment cost dominated by the microscope and titration apparatus; ongoing cost is inspector staffing.
 
-**Danger.** None physical beyond ordinary chemical handling. Socially, effective regulation directly threatens established adulteration profits, most sharply relevant to lead-based sweetening, a practice Rome already engages in and needs to hear named as actively harmful, not merely regulated.
+**Danger.** None physical. Effective regulation threatens established adulteration profits, most sharply lead-based sweetening, a practice Rome already engages in and needs named as actively harmful.
 
-**Confidence: MEDIUM.** The laboratory methods are HIGH confidence, textbook analytic chemistry; the law-plus-enforcement combination's effectiveness is a governance question with more historical variation.
+**Confidence: MEDIUM.** Laboratory methods are HIGH confidence; the law-plus-enforcement combination is a governance question with more variation.
 
 ## Sources and confidence
 
-Most entries rest on well-documented history: the Norfolk rotation's yield effect, Appert's pre-germ-theory canning success, the reaper-binder knotter's genuine engineering difficulty, and the roller-milling/beriberi connection are HIGH confidence, meaning mechanism and historical outcome are both solidly attested outside this module's own reasoning. MEDIUM confidence entries are ones where the science is textbook but Roman-era practicality is a real open question, mechanical refrigeration, superphosphate, hybrid seed timelines, and every item explicitly gated on `20_chemistry.md` prerequisites (sulfuric acid, synthetic ammonia, refrigerant chemistry) fall here. LOW confidence is reserved for items honestly out of near-term reach, synthetic urea via Haber-Bosch chief among them. Every figure not drawn from a well-known historical constant (the silage pH range, the pasteurisation temperature logic, the roughly one-third fallow-abolition gain) is marked ESTIMATED with its reasoning stated. Cato, Varro, and Columella are cited by name for existing Roman practice; specific book/chapter citations are marked attributed, unverified where this module could not confirm the exact passage.
+Most entries rest on well-documented history: the Norfolk rotation's yield effect, Appert's pre-germ-theory canning success, the reaper-binder knotter's genuine engineering difficulty, and the roller-milling/beriberi connection are HIGH confidence, mechanism and historical outcome both solidly attested outside this module's own reasoning. MEDIUM confidence entries have textbook science but a real open question about Roman-era practicality: mechanical refrigeration, superphosphate, hybrid seed timelines, and every item gated on `20_chemistry.md` prerequisites (sulfuric acid, synthetic ammonia, refrigerant chemistry). LOW confidence is reserved for items honestly out of near-term reach, synthetic urea via Haber-Bosch chief among them. Every figure not drawn from a well-known historical constant (the silage pH range, the roughly one-third fallow-abolition gain) is marked ESTIMATED with its reasoning stated. Cato, Varro, and Columella are cited by name for existing Roman practice; specific book/chapter citations are marked attributed, unverified where the exact passage could not be confirmed.
 
 ## Where to go next
 

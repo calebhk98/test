@@ -24,18 +24,18 @@ Also covers: civ_method_joints.
 ### civ_bending_moment - Bending moment, shear, neutral axis, elasticity, buckling
 
 **What/why.** Integrating load along a beam gives shear, integrating shear gives bending moment, showing exactly where a beam fails first.
-**Kernel.** A beam has a neutral axis, unstressed, at its centre depth, compression on one face, tension on the other, why an I-beam is efficient.
+**Kernel.** A beam has a neutral axis, unstressed, at its centre depth, compression on one face, tension on the other, which is why an I-beam is efficient.
 **Needs.** civ_statics, elementary calculus, Young's modulus and Poisson's ratio.
-**Check & failure.** A test beam loaded to predicted moment shows predicted deflection and cracks where stress is calculated highest; ignoring buckling on a slender column.
+**Check & failure.** A test beam loaded to predicted moment shows predicted deflection and cracks where stress is calculated highest; ignoring buckling on a slender column is the common miss.
 **Cost, danger, confidence.** DERIVED: days of calculation. A test beam can drop at failure, keep clear. Confidence: HIGH, textbook.
 Also covers: civ_neutral_axis, civ_elasticity_theory, civ_euler_buckling.
 
 ### civ_materials_testing - Materials testing, safety factor, soil mechanics
 
 **What/why.** Pulling real samples to failure gives the strength and stiffness numbers a calculation needs; multiplying design load by a safety factor (2 to 5) absorbs the gap between calculation and reality.
-**Kernel.** Soil is the surprise: strength depends heavily on water content and confinement, and before Terzaghi's effective-stress theory foundation depth was guesswork.
+**Kernel.** Soil is the surprise: strength depends heavily on water content and confinement, and before Terzaghi's effective-stress theory, foundation depth was guesswork.
 **Needs.** civ_statics, civ_bending_moment, a calibrated loading frame or lever press.
-**Check & failure.** Structures built to tested numbers survive design load with the expected margin repeatedly; testing one sample as if it represents a whole batch.
+**Check & failure.** Structures built to tested numbers survive design load with the expected margin repeatedly; testing one sample as if it represents a whole batch is the common failure.
 **Cost, danger, confidence.** DERIVED: a frame is one-time capital, weeks; each test after is hours. A press under load can whip a sample. Confidence: HIGH.
 Also covers: civ_factor_safety, civ_soil_mechanics.
 
@@ -56,7 +56,7 @@ Also covers: fin_assay_office, fin_customs_house.
 
 ### fin_census - Census, survey, statistics office, mortality table
 
-**What/why.** Continuous registration of births, deaths (with age), and land, plus a baseline territorial survey and a permanent statistics office that keeps and re-uses the data, produces the population and death numbers tax.
+**What/why.** Continuous registration of births, deaths (with age), and land, plus a baseline territorial survey and a permanent statistics office, produces the population and death numbers tax and insurance need.
 **Kernel.** The mortality table is the payoff: dividing deaths in an age band by the number alive at that age's start gives the annual probability of death.
 **Needs.** Literate clerks, a standard record form, several years of consistent data before the table.
 **Check & failure.** The table predicts next year's deaths in a band within a small margin; undercounting the poor or mobile population skews every downstream number.
@@ -68,7 +68,7 @@ Also covers: fin_survey_map, fin_statistical_office, fin_mortality_table.
 **What/why.** A permanent professional administrative staff, a mail office centralising and tracking correspondence, and a competitive written exam for appointment replace patronage staffing with something that scales past one patron's lifetime.
 **Kernel.** The exam is cheap (paper, examiners) and attacks incompetent placement by birth or favour directly, with no new technology required.
 **Needs.** Widespread literacy among candidates, a stable syllabus, elite willingness to accept merit appointment.
-**Check & failure.** Administrative errors and corruption complaints fall over years relative to patronage offices; an exam testing memorised rhetoric rather than administrative skill selects the wrong.
+**Check & failure.** Administrative errors and corruption complaints fall over years relative to patronage offices; an exam testing memorised rhetoric rather than administrative skill selects the wrong trait.
 **Cost, danger, confidence.** DERIVED: examiners and paper are cheap, the cost is political. Purely social danger. Confidence: MEDIUM, elite acceptance is a real gamble.
 Also covers: fin_post_office, fin_civil_service_exam.
 
@@ -92,7 +92,7 @@ Also covers: fin_patent_office.
 
 ### fin_university - Academic and research institutions
 
-**What/why.** A university, an endowed chair (capital whose income pays a scholar indefinitely), a learned society, a research institute freed from teaching duty, and a public museum together give scholarship a durable.
+**What/why.** A university, an endowed chair (capital whose income pays a scholar indefinitely), a learned society, a research institute freed from teaching duty, and a public museum together give scholarship a durable home.
 **Kernel.** The endowment converts a one-time gift into a perpetual salary, exactly the way a joint-stock charter converts one-time investment into a perpetual company.
 **Needs.** A perpetual-fund mechanism, students or scholars, buildings.
 **Check & failure.** The chair, society, or museum still functions a generation after its founder's death, funded from the endowment alone; badly invested capital starves it over decades.
@@ -105,7 +105,7 @@ Also covers: fin_endowed_chair, fin_learned_society, fin_research_institute, fin
 
 ### fud_agricultural_treatises - Written treatises and soil testing
 
-**What/why.** Writing down crop rotation, fertiliser rates, and machinery designs spreads best practice beyond one estate's oral tradition; simple field tests need no laboratory at all.
+**What/why.** Writing down crop rotation, fertiliser rates, and machinery designs spreads best practice beyond one estate's oral tradition; simple field tests turn fertiliser choice into a fitted response.
 **Kernel.** Obvious that writing helps; less obvious that useful soil tests need no laboratory at all, only consistent observation.
 **Needs.** Literacy, an existing body of practical farming knowledge (`75_agriculture_food.md`).
 **Check & failure.** A farmer following the treatise on similar soil gets a comparable yield gain.
@@ -129,14 +129,14 @@ Each entry is a narrow, specific failure mode between "we have electricity" and 
 ### gp_glass_metal_seal - Glass to metal vacuum seal
 
 **What/why.** A current lead-in wire through a sealed glass tube wall must survive repeated heating and cooling without cracking the seal; this is what lets a vacuum tube carry current at all.
-**Kernel.** This looks like glassblowing and is really a coefficient-matching problem: mismatched thermal expansion between glass and wire cracks the seal on the first heat cycle. Platinum.
+**Kernel.** This looks like glassblowing and is really a coefficient-matching problem: mismatched thermal expansion between glass and wire cracks the seal on the first heat cycle. Platinum tracks soda-lime glass closely.
 **Needs.** Glass furnace with local controlled reheating, platinum wire (via long-distance trade, mat_platinum_bulk).
 **Check & failure.** A sample cycled hot-cold several times shows no crack under magnification and holds vacuum over days.
 **Cost, danger, confidence.** ESTIMATED (basis: platinum cost dominates): an hour of glasswork per seal. Furnace burns; platinum invites theft. Confidence: MEDIUM, glass's expansion curve untested.
 
 ### gp_getter - Chemical getter
 
-**What/why.** After sealing, gas continues to seep out of a tube's internal metal parts for weeks, ruining the vacuum; a getter, a pellet of barium or magnesium flashed (vaporised) inside the sealed tube.
+**What/why.** After sealing, gas continues to seep out of a tube's internal metal parts for weeks, ruining the vacuum; a getter, a pellet of barium or magnesium flashed inside the sealed tube, absorbs it.
 **Kernel.** The pump only gets you started; it cannot run on a sealed tube. A freshly flashed metal film is chemically hungry for oxygen and nitrogen and keeps absorbing it for months.
 **Needs.** gp_exhaust_pinchoff sequence, magnesium metal (more reachable than barium at this level).
 **Check & failure.** The flashed film stays bright and mirror-like; a film turning dull over days means the getter has already absorbed all it can.
@@ -147,7 +147,7 @@ Each entry is a narrow, specific failure mode between "we have electricity" and 
 **What/why.** The final sealing step: pump the assembled tube down, bake it, flash the getter, then pinch the connecting glass tail shut permanently while still under vacuum.
 **Kernel.** Baking under vacuum, to drive adsorbed gas out of the internal metal parts, must happen before the getter flashes.
 **Needs.** gp_getter, gp_glass_metal_seal, a vacuum pump, even heating for the bake.
-**Check & failure.** The pinched tail shows a clean, fully closed seal with no pinhole; the tube holds vacuum for weeks after. Pinching before the bake-and-pump cycle.
+**Check & failure.** The pinched tail shows a clean, fully closed seal with no pinhole; the tube holds vacuum for weeks after. Pinching before the bake-and-pump cycle traps gas permanently.
 **Cost, danger, confidence.** ESTIMATED (basis: culminating step): tens of minutes per tube. Open flame near vacuum, standard risk. Confidence: MEDIUM.
 
 ### gp_carbon_brushes - Carbon and graphite brush contacts
@@ -161,7 +161,7 @@ Each entry is a narrow, specific failure mode between "we have electricity" and 
 ### gp_laminated_core - Laminated iron core
 
 **What/why.** Slicing a dynamo or transformer core into thin, insulated sheets instead of leaving it solid cuts the heat a changing magnetic field otherwise induces directly in the iron.
-**Kernel.** A solid core has eddy currents induced in it, circulating in large loops and wasting energy as heat; thinly sliced.
+**Kernel.** A solid core has eddy currents induced in it, circulating in large loops and wasting energy as heat; thinly sliced insulated sheets confine each loop to one sheet.
 **Needs.** Thin sheet iron (rolled or hammered), thin insulating varnish between sheets (gp_magnet_wire_enamelled chemistry).
 **Check & failure.** A laminated core stays measurably cooler and delivers more usable output than a solid core of the same size.
 **Cost, danger, confidence.** ESTIMATED (basis: sheet-metal skill plus coating): moderate labour, offset by reduced heat loss. Sharp edges. Confidence: HIGH, textbook.
@@ -217,7 +217,7 @@ Also covers: in2_aneroid_capsule, in2_mercury_barometer, in2_mcleod_vacuum_gauge
 **What/why.** A pitot tube compares total against static pressure for local velocity; a venturi narrows then widens, its throat pressure drop giving flow rate with good pressure recovery.
 **Kernel.** The three trade cost against accuracy and lost energy in a predictable order: orifice cheapest and crudest, venturi smoother and costlier.
 **Needs.** sc2_physics_hydrodynamics (Bernoulli's relation), a manometer or Bourdon gauge sensitive enough for the pressure differences.
-**Check & failure.** Computed flow rate matches a timed known-volume fill; an orifice coefficient taken from a table rather than calibrated for the actual installation gives systematic.
+**Check & failure.** Computed flow rate matches a timed known-volume fill; an orifice coefficient taken from a table rather than calibrated for the installation gives systematic error.
 **Cost, danger, confidence.** DERIVED: fabrication days, calibration hours. No unusual danger. Confidence: HIGH, textbook.
 Also covers: in2_venturi_flow_meter, in2_orifice_flow_meter.
 
@@ -233,7 +233,7 @@ Also covers: in2_resistance_thermometer_RTD, in2_gas_thermometry_absolute.
 ### in2_quartz_resonator_frequency - Frequency standards: quartz, tuning fork, hairspring
 
 **What/why.** A precisely cut quartz crystal vibrates at a stable frequency (better than 1 part per million yearly, temperature-controlled); a tuning fork is a cruder mechanical equivalent (about 1 in 1,000).
-**Kernel.** Quartz's piezoelectric effect, squeezing generates a voltage and a voltage flexes it back, lets it oscillate electrically at its own mechanical frequency with almost no external.
+**Kernel.** Quartz's piezoelectric effect, squeezing generates a voltage and a voltage flexes it back, lets it oscillate electrically at its own mechanical frequency with almost no external disturbance.
 **Needs.** Precisely cut oriented quartz plus basic electrical drive (`55_semiconductors.md`).
 **Check & failure.** Two independently made units run side by side drift apart less than stated tolerance; a poorly oriented quartz cut is far more temperature-sensitive.
 **Cost, danger, confidence.** DERIVED: days per unit. No danger. Confidence: MEDIUM, quartz needs later electronics.
@@ -435,7 +435,7 @@ Also covers: prc_toolroom_institution.
 ### prn_library_archive - Library, archive, cataloguing, indexing, copyright economics
 
 **What/why.** A library or archive preserves texts beyond any one owner's lifetime; a cataloguing system turns a pile of scrolls into a searchable resource; an index or concordance gives a complete word-location list.
-**Kernel.** Copyright's timing is the surprise: it barely makes sense before printing exists, since hand-copying a whole scroll is already so slow that unauthorised copies pose little.
+**Kernel.** Copyright's timing is the surprise: it barely makes sense before printing exists, since hand-copying a whole scroll is already so slow that unauthorised copies pose little threat.
 **Needs.** A building with fire, damp, and theft protection, literate cataloguers.
 **Check & failure.** An unfamiliar reader locates a specific passage in minutes using catalogue and index.
 **Cost, danger, confidence.** DERIVED: cataloguing scales with collection size, the building is the larger cost. Fire is the dominant danger, Alexandria the caution. Confidence: HIGH.
@@ -529,7 +529,7 @@ Also covers: sc2_physics_magnetostatics, sc2_physics_maxwell_equations, sc2_phys
 
 ### sc2_physics_geometric_optics - Optics: geometric rays, diffraction, speed of light
 
-**What/why.** Geometric optics (Fermat's least-time principle) lets mirrors and lenses be designed by ray tracing; diffraction (Fraunhofer, 1819-1823) explains how a fine slit grating splits light by wavelength; the speed of light.
+**What/why.** Geometric optics (Fermat's least-time principle) lets mirrors and lenses be designed by ray tracing; diffraction (Fraunhofer, 1819-1823) explains how a fine slit grating splits light by wavelength; the speed of light is a fundamental constant.
 **Kernel.** Fermat's principle sounds like it attributes intention to light ("chooses the fastest path"), when it is really a mathematical consequence of wave behaviour.
 **Needs.** `30_glass_optics.md`'s lens and mirror grinding skill.
 **Check & failure.** Ray-traced predictions for a lens or mirror match where the real image forms.
@@ -547,10 +547,10 @@ Also covers: sc2_physics_boltzmann_distribution, sc2_physics_statistical_mechani
 
 ### sc2_physics_quantum_photon - Quantum and nuclear physics: photon, photoelectric effect, uncertainty, wave mechanics, nucleus, neutron, fission
 
-**What/why.** Planck's 1900 quantum hypothesis, extended by Einstein (1905) to the photoelectric effect (frequency, not intensity, ejects electrons, confirmed by Millikan in 1916), the Heisenberg uncertainty principle (1927, a fundamental limit).
+**What/why.** Planck's 1900 quantum hypothesis, extended by Einstein (1905) to the photoelectric effect (frequency, not intensity, ejects electrons, confirmed by Millikan in 1916), the Heisenberg uncertainty principle (1927, a fundamental limit), and Rutherford's nucleus and the neutron, together sketch modern quantum and nuclear physics, ending in fission.
 **Kernel and why it sits at the far end of this survey.** The photoelectric effect is the sharpest surprise here: a brighter light at the same colour knocks out exactly as many electrons, no more energetic, while only changing colour (frequency) changes their energy, a result that seemed absurd until Millikan's decade-long measurement confirmed it.
 **Needs.** sc2_physics_electrostatics and sc2_physics_kinetic_theory as the classical foundation this overturns.
-**Check & failure.** Historically: Millikan's measurements confirmed the photoelectric prediction precisely, Rutherford's scattering pattern confirmed a small dense nucleus. Treating this cluster as achievable at the same.
+**Check & failure.** Historically: Millikan's measurements confirmed the photoelectric prediction precisely, Rutherford's scattering pattern confirmed a small dense nucleus. Treating this cluster as achievable at the same level as the rest of this module is the biggest mistake a reader could make.
 **Cost, danger, confidence.** ESTIMATED (basis: real programme needed national infrastructure): the most distant entry here, for completeness. Fission carries catastrophic danger. Confidence: HIGH history.
 Also covers: sc2_physics_photoelectric_effect, sc2_physics_uncertainty_principle, sc2_physics_wave_mechanics, sc2_physics_nucleus_discovery, sc2_physics_neutron_discovery, sc2_physics_nuclear_fission.
 
