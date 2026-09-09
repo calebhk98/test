@@ -273,7 +273,8 @@ class Sim:
         self.scholars += (sc_cap - self.scholars) * 0.18 - self.scholars * ATTRITION
         self.artisans += (ar_cap - self.artisans) * 0.22 - self.artisans * ATTRITION
         self.directors_extra += (di_cap - self.directors_extra) * 0.12 - self.directors_extra * ATTRITION
-        self.scholars = max(0.0, self.scholars)
+        # while you live you are always at least one natural philosopher
+        self.scholars = max(1.0 if self.founder_alive else 0.0, self.scholars)
         self.artisans = max(1.0, self.artisans)
         self.directors_extra = max(0.0, self.directors_extra)
 
@@ -693,7 +694,7 @@ def cmd_play(a):
           "Type a node id to begin work on it, 'a' for what is available,\n"
           "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
     while s.year < 100 + (a.horizon or 400) and not s.dead_reason and not s.goal_year:
-        cmd = input("[%d AD | %d den | you:%d hr | sch %d art %d | susp %.0f] > "
+        cmd = input("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | susp %.0f] > "
                     % (s.year, s.capital, s.director_pool(), s.scholars, s.artisans, s.suspicion)).strip()
         if cmd == "q": break
         if cmd == "n":

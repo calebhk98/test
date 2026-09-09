@@ -482,7 +482,7 @@
    "pre": [
     "glass_bead_microscope"
    ],
-   "kb": "70_medicine_biology.md",
+   "kb": "70_medicine_biology.md#germ_theory",
    "ph": 350,
    "lab": {
     "scholar": 1500
@@ -777,7 +777,7 @@
     "germ_theory",
     "school_founded"
    ],
-   "kb": "70_medicine_biology.md",
+   "kb": "70_medicine_biology.md#quarantine_publichealth",
    "ph": 700,
    "lab": {
     "scholar": 2500,
@@ -1086,7 +1086,7 @@
    "pre": [
     "arrival_orientation"
    ],
-   "kb": "40_power_precision.md#horse_collar_harness",
+   "kb": "75_agriculture_food.md#horse_collar_harness",
    "ph": 200,
    "lab": {
     "artisan": 900,
@@ -1209,7 +1209,7 @@
     "horse_collar",
     "statistics_basic"
    ],
-   "kb": "75_agriculture_food.md",
+   "kb": "75_agriculture_food.md#crop_rotation",
    "ph": 450,
    "lab": {
     "labourer": 6000,
@@ -1238,7 +1238,7 @@
    "pre": [
     "distillation_alcohol"
    ],
-   "kb": "70_medicine_biology.md",
+   "kb": "70_medicine_biology.md#sanitation_antisepsis",
    "ph": 300,
    "lab": {
     "scholar": 900
