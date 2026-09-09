@@ -43,7 +43,7 @@ in this directory, read that one.
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
 | [`93_energy.md`](93_energy.md) |  | 27 | 0 |
 | [`94_computing.md`](94_computing.md) |  | 22 | 0 |
-| [`95_expeditions.md`](95_expeditions.md) |  | 11 | 11 |
+| [`95_expeditions.md`](95_expeditions.md) |  | 11 | 12 |
 | [`96_finance.md`](96_finance.md) |  | 34 | 86 |
 | [`97_military.md`](97_military.md) |  | 29 | 109 |
 | [`98_power_plants.md`](98_power_plants.md) |  | 115 | 94 |
@@ -1305,7 +1305,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `med_xray_imaging` | 3 | 200.0 | _(module has no anchor)_ |
 | `md2_eeg` | 4 | 300.0 | _(module has no anchor)_ |
 | `md2_penicillin_fermentation` | 4 | 300.0 | _(module has no anchor)_ |
-| `med_cocaine_unobtainable` | 4 | 60.0 | _(module has no anchor)_ |
+| `med_coca_alkaloid` | 4 | 60.0 | _(module has no anchor)_ |
 | `med_electrocardiogram` | 4 | 200.0 | _(module has no anchor)_ |
 | `med_insulin` | 4 | 200.0 | _(module has no anchor)_ |
 | `med_penicillin` | 4 | 250.0 | _(module has no anchor)_ |
@@ -1366,11 +1366,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fud_mechanical_refrigeration` | 3 | 300.0 | _(module has no anchor)_ |
 | `fud_superphosphate_fertilizer` | 3 | 200.0 | _(module has no anchor)_ |
 | `fud_tin_plate_cans` | 3 | 200.0 | _(module has no anchor)_ |
-| `fud_chocolate_tier9` | 4 | 60.0 | _(module has no anchor)_ |
+| `fud_cacao` | 4 | 60.0 | _(module has no anchor)_ |
 | `fud_cold_chain_refrigerated_shipping` | 4 | 200.0 | _(module has no anchor)_ |
 | `fud_freezing_with_mechanical_cold` | 4 | 150.0 | _(module has no anchor)_ |
-| `fud_maize_tier9` | 4 | 60.0 | _(module has no anchor)_ |
-| `fud_potato_tier9` | 4 | 60.0 | _(module has no anchor)_ |
+| `fud_maize` | 4 | 60.0 | _(module has no anchor)_ |
+| `fud_potato` | 4 | 60.0 | _(module has no anchor)_ |
 | `fud_haber_process_synthetic_nitrogen` | 5 | 600.0 | _(module has no anchor)_ |
 
 ### 76_farming_food_deep.md
@@ -2598,6 +2598,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `exp_africa_circumnavigation` | 3 | 400.0 | _(module has no anchor)_ |
 | `exp_atlantic_crossing` | 3 | 400.0 | _(module has no anchor)_ |
 | `exp_colony_administration` | 3 | 400.0 | _(module has no anchor)_ |
+| `exp_import_draught_animals` | 3 | 300 | [`transplant_botany`](95_expeditions.md#transplant_botany---moving-the-garden) |
 | `exp_transplant_botany` | 3 | 350.0 | _(module has no anchor)_ |
 | `exp_americas_factory` | 4 | 500.0 | _(module has no anchor)_ |
 | `exp_conquest_resource` | 4 | 300.0 | _(module has no anchor)_ |
@@ -2910,7 +2911,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | status | nodes |
 |---|---:|
-| linked to a specific recipe entry | 847 |
+| linked to a specific recipe entry | 848 |
 | linked to a domain module, no specific entry | 1874 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 87 |

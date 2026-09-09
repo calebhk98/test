@@ -541,7 +541,23 @@ class Sim:
         civ_r, italia_r = best
         if civ_r <= 0:
             return 0, 1.0      # it is, in effect, home ground for this civilization
-        return civ_r, base_mult ** (civ_r / italia_r)
+        raw = base_mult ** (civ_r / italia_r)
+        # Cap it. The exponent could reach x235 for gutta percha and x468 for
+        # rubber, and a several-hundred-fold cost is not an expense, it is the
+        # abolished "unobtainable" category wearing a price tag. The ceiling is
+        # argued from the Roman evidence rather than chosen for feel: pepper
+        # carried roughly a tenfold to twentyfold markup and silk about a
+        # hundredfold, both RETAIL across a chain of middlemen. This node buys
+        # your OWN supply, which should cost less per unit than retail, not
+        # more. 60 is therefore generous rather than punitive, which is the
+        # right way to be wrong here.
+        # Compress rather than clamp. A hard ceiling flattened the very
+        # distinction this function exists to draw: Rome's 235 and Han China's
+        # 60 both hit a cap of 60 and came out identical, so the geography fix
+        # stopped doing anything. Raising to a fractional power keeps the
+        # ORDERING intact while pulling the magnitudes back to something
+        # defensible, and the ceiling stays only as a backstop.
+        return civ_r, min(raw ** 0.6, 45.0)
 
     def material_cost_factor(self, k):
         """Cost multiplier a located-material tech node picks up from
@@ -803,7 +819,7 @@ class Sim:
     def revenue(self):
         r = 0.0
         for k in self.done:
-            if k in self.granted:
+            if k in self.granted and not self._practisable(k):
                 continue          # the society's, not yours
             n = self.nodes[k]
             if n["rev"]:
@@ -812,9 +828,28 @@ class Sim:
                 r += n["rev"] * ramp
         return (r * (self.economy ** 0.75) + self.state_funding()) * self.output_factor
 
+    # Of the auto-granted nodes that carry revenue, seven are medicine and two
+    # are shipping, and the difference decides who gets paid. Cataract couching
+    # is a skill a single trained person practises with their own hands, and
+    # practising it is exactly the cover the guide tells you to adopt. A fleet
+    # of large merchant ships is owned by other people and you are not entitled
+    # to its freight. Removing the revenue from BOTH, which is what I did first,
+    # was too blunt: it left every civilization with no way to earn a living at
+    # all, and the Norse, who are poorer and pay a 1.4 price index, could then
+    # never accumulate the 1,580 denarii for identity_cover. They failed 100% of
+    # runs, blocked on the first node in the game.
+    PRACTISABLE_CATS = {"surgery", "obstetrics", "pharmacology", "medicine",
+                        "diagnosis", "dentistry"}
+
+    def _practisable(self, k):
+        """Is this granted node a skill YOU can practise for a fee?"""
+        return self.nodes[k].get("cat") in self.PRACTISABLE_CATS
+
     def upkeep(self):
-        # Symmetrically, you do not pay to maintain what you do not own.
-        return sum(self.nodes[k]["up"] for k in self.done if k not in self.granted)
+        # Symmetrically, you do not pay to maintain what you do not own, but you
+        # do bear the small standing cost of the practice you actually run.
+        return sum(self.nodes[k]["up"] for k in self.done
+                   if k not in self.granted or self._practisable(k))
 
     # ---- raw material supply ------------------------------------------------
     CHARCOAL_PER_HA = 0.75          # tonnes per hectare per year, sustainable
@@ -1514,7 +1549,12 @@ class Sim:
         if not self.founder_alive and self.directors_extra < 0.5:
             self.stalled += 1
             if self.stalled >= 3:
-                losable = [k for k in self.done if self.nodes[k]["tier"] >= 2]
+                losable = sorted(k for k in self.done if self.nodes[k]["tier"] >= 2)
+                # sorted() matters: self.done is a SET, and a set iterates in an
+                # order that depends on PYTHONHASHSEED, so feeding it unsorted to
+                # rng.sample made the same --seed give a different answer on every
+                # invocation. Every figure this project has reported was, strictly,
+                # unreproducible.
                 if losable:
                     for k in self.rng.sample(losable, max(1, len(losable) // 6)):
                         self.done.discard(k)
@@ -1587,7 +1627,7 @@ class Sim:
                     self.capital *= 0.40
                     self.artisans *= 0.55; self.scholars *= 0.55
                     self.directors_extra *= 0.65
-                    for k in list(self.active):
+                    for k in sorted(self.active):
                         self.active[k]["ph_left"] = self.nodes[k]["ph"]
                         self.active[k]["yrs"] = 0.0
                     self.log.append((yr, "%s: a site is sacked" % h.get("name","crisis")))
@@ -1595,7 +1635,12 @@ class Sim:
                     elif self.has("corpus_written"):   pl, frac = 0.45, 0.22
                     else:                              pl, frac = 0.80, 0.40
                     if r.random() < pl:
-                        losable = [k for k in self.done if self.nodes[k]["tier"] >= 2]
+                        losable = sorted(k for k in self.done if self.nodes[k]["tier"] >= 2)
+                # sorted() matters: self.done is a SET, and a set iterates in an
+                # order that depends on PYTHONHASHSEED, so feeding it unsorted to
+                # rng.sample made the same --seed give a different answer on every
+                # invocation. Every figure this project has reported was, strictly,
+                # unreproducible.
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
                             for k in drop: self.done.discard(k)
