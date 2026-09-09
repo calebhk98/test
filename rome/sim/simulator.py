@@ -846,6 +846,22 @@ class Sim:
                              "sack_chance_per_year": h.get("sack_chance"),
                              "staff_loss": h.get("staff_loss"),
                              "note": h.get("note")})
+        # Norse hazards do not sack anything, and a playtester watched this
+        # advertise a loss risk and recommend a hedge for a full 500 year run in
+        # which no sacking could ever occur. Risk you cannot face is not risk.
+        can_be_sacked = any(h.get("sacks_a_site") for h in upcoming)
+        if not can_be_sacked:
+            return {
+                "technologies_at_risk": at_risk,
+                "loss_chance_if_a_site_is_sacked": round(chance, 2),
+                "fraction_lost_when_it_happens": round(frac, 2),
+                "expected_technologies_lost_per_sacking": 0.0,
+                "hedged_by": hedge,
+                "better_hedge_available": None,
+                "note": "no remaining hazard for this civilization sacks a site, "
+                        "so nothing here is currently at risk of being forgotten",
+                "known_hazards_ahead": upcoming,
+            }
         return {
             "technologies_at_risk": at_risk,
             "loss_chance_if_a_site_is_sacked": round(chance, 2),
@@ -860,6 +876,15 @@ class Sim:
     # was the bug; refusing to let anyone else BUILD them would be a worse one,
     # because a founder can perfectly well introduce an aqueduct to Tenochtitlan.
     # This only blocks the free gift.
+    # Standing, knowledge and persona are not plant. They carry upkeep because
+    # they cost you to maintain, and they cannot be let go to save money the way
+    # a mill or a mine can. A playtester went bankrupt and the abandonment
+    # mechanic shed `identity_cover`, which is a persona AND a real prerequisite
+    # of the goal, and they sat softlocked for 470 years unable to rebuild it.
+    NEVER_ABANDON = {"social", "institution", "foundation", "law", "organisation",
+                     "mathematics", "physics", "information", "method",
+                     "notation", "algebra", "geometry", "probability", "analysis"}
+
     FOREIGN_MARKERS = ("_roman", "_rome", "annona", "insula", "societas",
                        "collegium", "argentarii", "latifundi")
 
@@ -1152,18 +1177,29 @@ class Sim:
         if t_per_yr <= 0:
             return 0.0
         self.capital -= cost
+        # Each investment is its own working with its own sinking time. Pooling
+        # them and taking the LATEST ready date meant a player who invested
+        # spare cash every year, which is exactly what a poor civilization must
+        # do, pushed the finish line back annually and never got any capacity at
+        # all: a playtester funded sixty consecutive years and ended with an
+        # empty mine_capacity.
+        self.mine_tranches = getattr(self, "mine_tranches", [])
+        self.mine_tranches.append([mat, t_per_yr, self.year + self.MINE_LEAD_YEARS])
         self.mine_pending[mat] = self.mine_pending.get(mat, 0.0) + t_per_yr
-        self.mine_ready[mat] = max(self.mine_ready.get(mat, 0.0),
-                                   self.year + self.MINE_LEAD_YEARS)
         return t_per_yr
 
     def commission_mines(self):
-        """Move finished workings from pending into capacity."""
-        for mat, ready in list(self.mine_ready.items()):
-            if self.year >= ready and self.mine_pending.get(mat, 0.0) > 0:
-                self.mine_capacity[mat] = (self.mine_capacity.get(mat, 0.0)
-                                           + self.mine_pending.pop(mat))
-                self.mine_ready.pop(mat, None)
+        """Move finished workings from pending into capacity, tranche by tranche."""
+        still = []
+        for mat, amount, ready in getattr(self, "mine_tranches", []):
+            if self.year >= ready:
+                self.mine_capacity[mat] = self.mine_capacity.get(mat, 0.0) + amount
+                self.mine_pending[mat] = max(0.0, self.mine_pending.get(mat, 0.0) - amount)
+                if self.mine_pending.get(mat, 0.0) <= 0:
+                    self.mine_pending.pop(mat, None)
+            else:
+                still.append([mat, amount, ready])
+        self.mine_tranches = still
 
     def mothball_mines(self):
         """Stop working what you cannot pay for, worst value first.
@@ -1184,7 +1220,12 @@ class Sim:
                                         "not pay to keep them running" % m))
             if self.mine_capacity[m] < 1.0:
                 self.mine_capacity.pop(m)
-        self.capital = max(self.capital, -abs(self.revenue()))
+        # This used to clamp capital to minus one year's revenue every time any
+        # mine was held, which forgave debt the mothballing had not actually
+        # paid off. A playtester proved it to the cent: capital landed on
+        # exactly -revenue() on two separate steps with different amounts
+        # mothballed in between, so the floor, not the arithmetic, set the
+        # number. Debt is now whatever the arithmetic says it is.
 
     def mine_operating_cost(self):
         """Charged every year the workings stand, whether or not you use them."""
@@ -1241,9 +1282,16 @@ class Sim:
         # as sellers restock, so buying in slices is now priced as one large
         # purchase unless you actually wait between them.
         depth = max(8.0, 40.0 * self.pop_scale ** 0.5)
+        # Integrate the rising price ACROSS the purchase instead of applying one
+        # surcharge to the whole block. Applying the end-price to every head
+        # overcharged a single large call relative to the same number bought in
+        # slices, which is why slicing still saved about a fifth. Now the nth
+        # head costs what the nth head costs however you group them.
         already = getattr(self, "market_pressure", 0.0)
-        surcharge = 1.0 + ((already + n_people) / depth) ** 0.85
-        return 300.0 * n_people * surcharge * self.price_index
+        n = float(n_people)
+        e = 1.85                       # 1 + 0.85
+        integral = (((already + n) ** e) - (already ** e)) / (e * (depth ** 0.85))
+        return 300.0 * (n + integral) * self.price_index
 
     def buy_slaves(self, n_people):
         """The option the model refuses to hide, and refuses to make costless.
@@ -1414,11 +1462,23 @@ class Sim:
         # useful half. Staff is not a technical prerequisite so it never appears
         # in `path`, and the player had no way to discover the answer except by
         # reading prose they had no reason to think was relevant.
-        if self.capital < -max(1000.0, self.revenue()):
-            return False, ("you are %.0f denarii in arrears; nobody will fund a new "
-                           "undertaking until you are solvent again. Finish or stop "
-                           "what you have running, or raise revenue."
-                           % -self.capital)
+        # Arrears blocks NEW commitments, with two escape hatches, because
+        # without them this is a trap rather than a setback. A playtester went
+        # bankrupt, had a prerequisite abandoned out from under them, and then
+        # could not rebuild it: they sat softlocked for 470 years until the
+        # horizon. First hatch: creditors care about PERSISTENT insolvency, not
+        # one bad year. Second: anything you can fund from this year's income
+        # needs nobody's permission.
+        cheap_enough = (n["_total_cost"] * self.money_real * self.civ_cost_factor(k)
+                        <= max(800.0, self.revenue()))
+        if (getattr(self, "insolvent_years", 0) >= 3
+                and not cheap_enough
+                and self.capital < -max(4000.0, self.revenue() * 2.0)):
+            return False, ("you have been in arrears %d years and are %.0f denarii down; "
+                           "nobody will fund a new undertaking of this size. Something "
+                           "you can pay for out of this year's income is still allowed, "
+                           "so is finishing or stopping what is running."
+                           % (getattr(self, "insolvent_years", 0), -self.capital))
         if n["sch"] > self.scholars:
             return False, ("needs %d trained scholars, you have %.1f. %s"
                            % (n["sch"], self.scholars, self._staff_advice("scholars")))
@@ -1556,7 +1616,9 @@ class Sim:
                        - self.mine_operating_cost())
                 if net < 0:
                     burden = sorted((k for k in self.done
-                                     if self.nodes[k]["up"] > 0 and k not in self.granted),
+                                     if self.nodes[k]["up"] > 0
+                                     and k not in self.granted
+                                     and self.nodes[k]["cat"] not in self.NEVER_ABANDON),
                                     key=lambda k: (self.nodes[k]["rev"] - self.nodes[k]["up"]))
                     shed = []
                     for k in burden:
@@ -2021,6 +2083,13 @@ def cmd_validate(a):
             if t not in wages: errs.append("%s: unknown trade %s" % (k, t))
         if not 0 <= n["risk"] <= 1: errs.append("%s: risk out of range" % k)
         if n["conf"] not in "ABC": warns.append("%s: odd confidence %s" % (k, n["conf"]))
+        # A `why` on seven hand-written nodes killed the process with KeyError
+        # 'sus' because I added them without the v1 scalars the explain path
+        # still reads. Catch a missing field here, where it is a warning, rather
+        # than in a player's session, where it is the end of their game.
+        for f in ("sus", "gov", "tier", "cat", "pre", "ph", "cap", "up", "risk"):
+            if f not in n:
+                errs.append("%s: missing required field '%s'" % (k, f))
     try:
         topo_order(nodes)
     except RuntimeError as e:
@@ -2381,7 +2450,7 @@ def _node_explain(s, nodes, k):
         "upkeep": n["up"], "revenue": n["rev"],
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
-        "suspicion": n["sus"], "state_interest_trait_score": n["gov"],
+        "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
         "bounty_eligible_by_type": bounty_by_type,
         "direct_prerequisites": n["pre"],
         "missing_prerequisites": [p for p in n["pre"] if p not in s.done],
@@ -2621,9 +2690,20 @@ def cmd_agent(a):
         except ValueError as e:
             emit({"ok": False, "error": "invalid JSON: %s" % e})
             continue
-        resp = _agent_dispatch(s, nodes, cmd)
+        # The dispatcher guards non-object input and replies politely, and then
+        # THIS line used to kill the process: cmd.get on a bare null, number,
+        # string or list is an AttributeError. A playtester reopened the
+        # "malformed input ends your game" class through the quit check, one
+        # line after the guard that was supposed to prevent exactly that.
+        try:
+            resp = _agent_dispatch(s, nodes, cmd)
+        except Exception as e:                      # never lose a session to a bug
+            resp = {"ok": False,
+                    "error": "internal error handling that command: %s: %s. "
+                             "The game is intact; try something else."
+                             % (type(e).__name__, e)}
         emit(resp)
-        if cmd.get("cmd") == "quit":
+        if isinstance(cmd, dict) and cmd.get("cmd") == "quit":
             break
     return 0
 
@@ -2708,11 +2788,11 @@ def cmd_why(a):
     print("Calendar floor  : %.1f years (money cannot buy this down)" % n["yrs"])
     print("Failure risk    : %.0f%% per attempt" % (100 * n["risk"]))
     print("Staff needed    : %d trained scholars, %d trained artisans" % (n["sch"], n["art"]))
-    print("Suspicion       : %+d       State interest: %+d%s" % (n["sus"], n["gov"],
+    print("Suspicion       : %+d       State interest: %+d%s" % (n.get("sus", 0), n.get("gov", 0),
           ("  <- OPPOSED. Costs %d%% more, +%d extra suspicion, needs %s"
-           % (25 * -n["gov"], 3 * -n["gov"],
-              "senatorial patronage" if n["gov"] <= -2 else "a patron"))
-          if n["gov"] < 0 else ""))
+           % (25 * -n.get("gov", 0), 3 * -n.get("gov", 0),
+              "senatorial patronage" if n.get("gov", 0) <= -2 else "a patron"))
+          if n.get("gov", 0) < 0 else ""))
     eligible = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                 "power", "agriculture", "information", "instruments"))
     print("Bounty          : %s" % ("YES, can be bought as a public prize for about %s den"

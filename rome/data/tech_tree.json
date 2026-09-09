@@ -114980,6 +114980,7 @@
    "conf": "B",
    "dev_people": 0,
    "dev_years": 0,
+   "gov": 3,
    "id": "exp_import_draught_animals",
    "kb": "95_expeditions.md#transplant_botany",
    "lab": {
@@ -115002,6 +115003,7 @@
    "rev": 0,
    "risk": 0.45,
    "sch": 0,
+   "sus": 2,
    "tier": 3,
    "traits": [
     "commerce",
@@ -115020,6 +115022,7 @@
    "conf": "B",
    "dev_people": 0,
    "dev_years": 0,
+   "gov": 2,
    "id": "fud_chinampa",
    "kb": "76_farming_food_deep.md#ag2_terracing",
    "lab": {
@@ -115035,6 +115038,7 @@
    "rev": 900,
    "risk": 0.1,
    "sch": 0,
+   "sus": 0,
    "tier": 1,
    "traits": [
     "food",
@@ -115052,6 +115056,7 @@
    "conf": "B",
    "dev_people": 0,
    "dev_years": 0,
+   "gov": 4,
    "id": "civ_monumental_stone",
    "kb": "87_construction.md#cn_quarry_wedge",
    "lab": {
@@ -115066,6 +115071,7 @@
    "rev": 0,
    "risk": 0.12,
    "sch": 0,
+   "sus": 0,
    "tier": 1,
    "traits": [
     "infrastructure",
@@ -115084,6 +115090,7 @@
    "conf": "A",
    "dev_people": 0,
    "dev_years": 0,
+   "gov": 0,
    "id": "mat_obsidian_blade",
    "kb": "",
    "lab": {
@@ -115097,6 +115104,7 @@
    "rev": 150,
    "risk": 0.05,
    "sch": 0,
+   "sus": 0,
    "tier": 0,
    "traits": [
     "commerce"
@@ -115113,6 +115121,7 @@
    "conf": "A",
    "dev_people": 0,
    "dev_years": 0,
+   "gov": 3,
    "id": "sea_clinker_hull",
    "kb": "86_transport_deep.md#tr_clinker_planking",
    "lab": {
@@ -115129,6 +115138,7 @@
    "rev": 700,
    "risk": 0.12,
    "sch": 0,
+   "sus": 0,
    "tier": 1,
    "traits": [
     "infrastructure",
@@ -115147,6 +115157,7 @@
    "conf": "A",
    "dev_people": 0,
    "dev_years": 0,
+   "gov": 2,
    "id": "sea_keel_deep",
    "kb": "86_transport_deep.md#tr_frame_first_construction",
    "lab": {
@@ -115162,6 +115173,7 @@
    "rev": 300,
    "risk": 0.1,
    "sch": 0,
+   "sus": 0,
    "tier": 1,
    "traits": [
     "infrastructure",
@@ -115179,6 +115191,7 @@
    "conf": "A",
    "dev_people": 0,
    "dev_years": 0,
+   "gov": 2,
    "id": "met_bloomery_bog_iron",
    "kb": "10_metallurgy.md#bloomery_iron",
    "lab": {
@@ -115196,6 +115209,7 @@
    "rev": 420,
    "risk": 0.15,
    "sch": 0,
+   "sus": 0,
    "tier": 1,
    "traits": [
     "infrastructure",
