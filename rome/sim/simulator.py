@@ -766,6 +766,79 @@ class Sim:
             h *= 0.65
         return h
 
+    STAFF_SOURCES = {
+        "scholars": [("school_founded", "the school is the only thing that produces scholars in "
+                                        "quantity, and it grants more every year it runs"),
+                     ("academy_network", "three academies produce more than one school"),
+                     ("collegium_licensed", "required before the school is legal")],
+        "artisans": [("freedman_staff", "buy, teach and free a technical staff"),
+                     ("workshop_first", "you need somewhere for them to work"),
+                     ("BUY", "{\"cmd\":\"buy\",\"what\":\"slaves\",\"n\":N} then "
+                             "manumit, though they are untrained for three years")],
+    }
+
+    def _staff_advice(self, kind):
+        """Name the remedy, not just the shortfall."""
+        bits = []
+        for node, why in self.STAFF_SOURCES.get(kind, []):
+            if node == "BUY":
+                bits.append(why)
+            elif node not in self.done:
+                bits.append("build %s (%s)" % (node, why))
+        if not bits:
+            return "wait: your existing institutions add %s each year." % kind
+        return "To get more %s: %s." % (kind, "; ".join(bits[:3]))
+
+    def knowledge_risk(self):
+        """How exposed your finished work is to being forgotten, and to what.
+
+        A playtester read the guide's warning about the Third Century Crisis,
+        then reasonably decided to skip the academies because `path` told them,
+        correctly, that no academy is a technical prerequisite of a transistor.
+        They then lost 25 technologies in one year, 24 more nine years later,
+        and 16 more after that, and rebuilt them while the goal stood still.
+
+        Their complaint is the sharp one: this project's whole thesis is that
+        the technical dependency graph is not the real dependency graph, and
+        the protocol was exposing only the technical graph. The risk existed
+        solely as prose, in a knowledge file, attached to the MITIGATION rather
+        than to anything the player could see while deciding. A tool that shows
+        you one graph while the guide insists a second one governs you is a tool
+        that misleads by omission.
+
+        So the numbers behind the dice are now readable while there is still
+        time to act on them.
+        """
+        if self.has("corpus_dispersed"):   chance, frac, hedge = 0.12, 0.08, "corpus_dispersed"
+        elif self.has("corpus_written"):   chance, frac, hedge = 0.45, 0.22, "corpus_written"
+        else:                              chance, frac, hedge = 0.80, 0.40, None
+        at_risk = sum(1 for k in self.done if self.nodes[k]["tier"] >= 2)
+        upcoming = []
+        for h in (self.civ.get("hazards") or []):
+            yrs = h.get("years") or []
+            if not yrs:
+                continue
+            y0 = yrs[0]
+            y1 = yrs[1] if len(yrs) > 1 else yrs[0]
+            if self.year > y1:
+                continue                      # already survived, or missed
+            upcoming.append({"name": h.get("name", "hazard"),
+                             "years": [y0, y1],
+                             "in_progress": y0 <= self.year <= y1,
+                             "sacks_a_site": bool(h.get("sack_chance")),
+                             "sack_chance_per_year": h.get("sack_chance"),
+                             "staff_loss": h.get("staff_loss"),
+                             "note": h.get("note")})
+        return {
+            "technologies_at_risk": at_risk,
+            "loss_chance_if_a_site_is_sacked": round(chance, 2),
+            "fraction_lost_when_it_happens": round(frac, 2),
+            "expected_technologies_lost_per_sacking": round(at_risk * chance * frac, 1),
+            "hedged_by": hedge,
+            "better_hedge_available": None if hedge == "corpus_dispersed" else "corpus_dispersed",
+            "known_hazards_ahead": upcoming,
+        }
+
     def civ_cost_factor(self, k):
         """What this society is unusually good or bad at building.
 
@@ -1274,12 +1347,18 @@ class Sim:
             return False, "missing prerequisites: " + ", ".join(missing)
         if not self.substitution_quality(k)[1]:
             return False, "no viable option in a required substitution group (fuel, vessel, etc.)"
+        # A playtester hit a scholar wall that stopped ALL progress and reported
+        # that nothing in the protocol told them how to get more scholars. The
+        # refusal named the shortfall and not the remedy, which is the least
+        # useful half. Staff is not a technical prerequisite so it never appears
+        # in `path`, and the player had no way to discover the answer except by
+        # reading prose they had no reason to think was relevant.
         if n["sch"] > self.scholars:
-            return False, ("needs %d trained scholars, you have %.1f"
-                           % (n["sch"], self.scholars))
+            return False, ("needs %d trained scholars, you have %.1f. %s"
+                           % (n["sch"], self.scholars, self._staff_advice("scholars")))
         if n["art"] > self.artisans:
-            return False, ("needs %d trained artisans, you have %.1f"
-                           % (n["art"], self.artisans))
+            return False, ("needs %d trained artisans, you have %.1f. %s"
+                           % (n["art"], self.artisans, self._staff_advice("artisans")))
         # SOCIAL APPROVAL GATE. Some things the State does not want built, and no
         # amount of money substitutes for someone powerful being willing to be
         # associated with it. See 03_SOCIAL_POLITICS.md section 4.
@@ -1689,12 +1768,11 @@ class Sim:
                     elif self.has("corpus_written"):   pl, frac = 0.45, 0.22
                     else:                              pl, frac = 0.80, 0.40
                     if r.random() < pl:
+                        # sorted() matters: self.done is a SET and iterates in an
+                        # order that depends on PYTHONHASHSEED, so feeding it
+                        # unsorted to rng.sample made the same --seed give a
+                        # different answer every invocation.
                         losable = sorted(k for k in self.done if self.nodes[k]["tier"] >= 2)
-                # sorted() matters: self.done is a SET, and a set iterates in an
-                # order that depends on PYTHONHASHSEED, so feeding it unsorted to
-                # rng.sample made the same --seed give a different answer on every
-                # invocation. Every figure this project has reported was, strictly,
-                # unreproducible.
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
                             for k in drop: self.done.discard(k)
@@ -2098,6 +2176,7 @@ def _agent_state(s, nodes):
         "done_granted": len(s.granted & s.done),
         "done_earned": len(s.done - s.granted),
         "active": active,
+        "knowledge_risk": s.knowledge_risk(),
         "resource_throttle": round(s.throttle, 3), "throttle_binding": s.binding,
         "forest_ha": round(s.forest_ha, 1),
         "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},
