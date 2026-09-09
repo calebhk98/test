@@ -110,5 +110,6 @@
    "node": "rag_paper",
    "residual": 1.0
   }
- }
+ },
+ "starting_techs": []
 }

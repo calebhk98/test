@@ -115010,6 +115010,199 @@
    ],
    "up": 2600,
    "yrs": 12.0
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 0,
+   "build_yrs": 2.0,
+   "cap": 600,
+   "cat": "agriculture",
+   "conf": "B",
+   "dev_people": 0,
+   "dev_years": 0,
+   "id": "fud_chinampa",
+   "kb": "76_farming_food_deep.md#ag2_terracing",
+   "lab": {
+    "labourer": 4000
+   },
+   "mat": {
+    "timber_m3": 40
+   },
+   "name": "Chinampa raised-bed agriculture",
+   "note": "Lake-bed plots built up from dredged mud and staked with willow, cropped several times a year with the water table always at the roots. Yields per hectare beat anything in Europe and it needs no plough and no draught animal, which is exactly why Mesoamerica could carry dense cities without either.",
+   "ph": 120,
+   "pre": [],
+   "rev": 900,
+   "risk": 0.1,
+   "sch": 0,
+   "tier": 1,
+   "traits": [
+    "food",
+    "infrastructure"
+   ],
+   "up": 120,
+   "yrs": 2.0
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 2,
+   "build_yrs": 4.0,
+   "cap": 3000,
+   "cat": "structures",
+   "conf": "B",
+   "dev_people": 0,
+   "dev_years": 0,
+   "id": "civ_monumental_stone",
+   "kb": "87_construction.md#cn_quarry_wedge",
+   "lab": {
+    "labourer": 20000,
+    "mason": 9000
+   },
+   "mat": {},
+   "name": "Monumental stone construction without iron tools",
+   "note": "Dressing and placing large stone using stone tools, sand abrasive, ramps and enormous organised labour. The absence of iron chisels is not the obstacle people assume: it changes the time per block, not the possibility.",
+   "ph": 150,
+   "pre": [],
+   "rev": 0,
+   "risk": 0.12,
+   "sch": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "religious_adjacent",
+    "spectacle"
+   ],
+   "up": 150,
+   "yrs": 4.0
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 0,
+   "build_yrs": 0.5,
+   "cap": 120,
+   "cat": "material",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "id": "mat_obsidian_blade",
+   "kb": "",
+   "lab": {
+    "artisan": 600
+   },
+   "mat": {},
+   "name": "Obsidian blade knapping",
+   "note": "A pressure-flaked obsidian edge is sharper than any steel scalpel, a few molecules across, and it is the reason Mesoamerican surgery and butchery needed no metal. It is also brittle and blunts at once, so it is a consumable, not a tool.",
+   "ph": 40,
+   "pre": [],
+   "rev": 150,
+   "risk": 0.05,
+   "sch": 0,
+   "tier": 0,
+   "traits": [
+    "commerce"
+   ],
+   "up": 20,
+   "yrs": 0.5
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 2,
+   "build_yrs": 1.5,
+   "cap": 2200,
+   "cat": "ships",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "id": "sea_clinker_hull",
+   "kb": "86_transport_deep.md#tr_clinker_planking",
+   "lab": {
+    "carpenter": 6000
+   },
+   "mat": {
+    "iron_bar_kg": 400,
+    "timber_m3": 90
+   },
+   "name": "Clinker-built hull",
+   "note": "Overlapping strakes riveted along their laps, so the SKIN carries the load and the frames only hold its shape. The hull flexes in a seaway instead of resisting it, which is why a Norse ship survives water that would open a rigid Mediterranean hull.",
+   "ph": 150,
+   "pre": [],
+   "rev": 700,
+   "risk": 0.12,
+   "sch": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "military",
+    "commerce"
+   ],
+   "up": 180,
+   "yrs": 1.5
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 1,
+   "build_yrs": 1.0,
+   "cap": 900,
+   "cat": "ships",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "id": "sea_keel_deep",
+   "kb": "86_transport_deep.md#tr_frame_first_construction",
+   "lab": {
+    "carpenter": 3000
+   },
+   "mat": {
+    "timber_m3": 40
+   },
+   "name": "Deep keel and the ability to sail to windward",
+   "note": "A deep keel resists leeway, which is what lets a square-rigged ship make ground upwind instead of only running before the wind. It is the difference between a boat that goes where the weather sends it and one that goes where you choose.",
+   "ph": 100,
+   "pre": [],
+   "rev": 300,
+   "risk": 0.1,
+   "sch": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "commerce"
+   ],
+   "up": 60,
+   "yrs": 1.0
+  },
+  {
+   "adopt_yrs": 0,
+   "art": 1,
+   "build_yrs": 1.0,
+   "cap": 700,
+   "cat": "metallurgy",
+   "conf": "A",
+   "dev_people": 0,
+   "dev_years": 0,
+   "id": "met_bloomery_bog_iron",
+   "kb": "10_metallurgy.md#bloomery_iron",
+   "lab": {
+    "furnaceman": 2500,
+    "labourer": 2000
+   },
+   "mat": {
+    "charcoal_kg": 9000,
+    "clay_kg": 800
+   },
+   "name": "Bloomery smelting of bog iron",
+   "note": "Bog ore is iron precipitated by bacteria in wetlands, gathered with a spade rather than mined, and it renews over a human lifetime. It is poor ore and it is everywhere in Scandinavia, which is why a society with no mining industry still had abundant iron.",
+   "ph": 100,
+   "pre": [],
+   "rev": 420,
+   "risk": 0.15,
+   "sch": 0,
+   "tier": 1,
+   "traits": [
+    "infrastructure",
+    "military"
+   ],
+   "up": 90,
+   "yrs": 1.0
   }
  ]
 }

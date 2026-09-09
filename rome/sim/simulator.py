@@ -385,6 +385,7 @@ class Sim:
                                           "tin", "silver", "saltpetre")}
         self.forest_ha = 0.0        # coppice you own, in hectares
         self.nitre_bed_m2 = 0.0
+        self.market_pressure = 0.0  # how hard you have recently leaned on the slave market
         self.mine_capacity = {}     # material -> tonnes/yr of your OWN workings
         self.mine_pending = {}      # sunk but not yet producing
         self.mine_ready = {}        # material -> year it comes on stream
@@ -392,10 +393,26 @@ class Sim:
         self.shortages = collections.Counter()
         self.throttle = 1.0
         self.binding = None
-        # whatever this civilization already has is free and already done
+        # Whatever this civilization already has is free and already done, and it
+        # is GRANTED, not earned. A playtester pointed out that these were being
+        # counted in done_earned as though the founder had built them, which both
+        # flatters the player and, worse, exposed a society's own ancestral
+        # crafts to being "forgotten" in a sacking. Han China does not forget how
+        # to cast iron because your workshop burned down.
+        missing = []
         for k in self.civ.get("starting_techs", []):
             if k in self.nodes:
                 self.done.add(k)
+                self.granted.add(k)
+            else:
+                missing.append(k)
+        if missing:
+            # Loudly. Eight of these were silently dropped across three
+            # civilizations, including four of the Mexica's five, so their
+            # entire stated identity was fiction that nothing ever reported.
+            sys.stderr.write("WARNING: %s lists starting technologies that do not "
+                             "exist in the tree and have been ignored: %s\n"
+                             % (self.civ.get("id", "?"), ", ".join(missing)))
 
     # -- helpers ------------------------------------------------------------
     def has(self, k):
@@ -839,6 +856,19 @@ class Sim:
             "known_hazards_ahead": upcoming,
         }
 
+    # Institutions that belong to one named society. Granting them to everyone
+    # was the bug; refusing to let anyone else BUILD them would be a worse one,
+    # because a founder can perfectly well introduce an aqueduct to Tenochtitlan.
+    # This only blocks the free gift.
+    FOREIGN_MARKERS = ("_roman", "_rome", "annona", "insula", "societas",
+                       "collegium", "argentarii", "latifundi")
+
+    def _is_foreign_institution(self, k):
+        if self.civ.get("id") == "rome_100ad":
+            return False
+        hay = (k + " " + self.nodes[k].get("name", "")).lower()
+        return any(m in hay for m in self.FOREIGN_MARKERS)
+
     def civ_cost_factor(self, k):
         """What this society is unusually good or bad at building.
 
@@ -1201,8 +1231,18 @@ class Sim:
         """
         if n_people <= 0:
             return 0.0
+        # The surcharge has to remember. My first version priced each CALL by
+        # its own size and kept no memory, so a playtester bought 1,000 people
+        # in a hundred calls of ten and paid 297 a head instead of 3,868, a
+        # thirteenfold discount, with no cap. A market that resets between two
+        # purchases made in the same instant is not a market.
+        #
+        # market_pressure accumulates with every purchase and decays each year
+        # as sellers restock, so buying in slices is now priced as one large
+        # purchase unless you actually wait between them.
         depth = max(8.0, 40.0 * self.pop_scale ** 0.5)
-        surcharge = 1.0 + (n_people / depth) ** 0.85
+        already = getattr(self, "market_pressure", 0.0)
+        surcharge = 1.0 + ((already + n_people) / depth) ** 0.85
         return 300.0 * n_people * surcharge * self.price_index
 
     def buy_slaves(self, n_people):
@@ -1241,6 +1281,7 @@ class Sim:
             return 0
         self.capital -= price
         self.slaves += n_people
+        self.market_pressure = getattr(self, "market_pressure", 0.0) + n_people
         # Untrained on arrival. They become productive through self.training.
         self.training.append([n_people * 0.55, self.year + self.TRAINING_YEARS])
         return n_people
@@ -1254,7 +1295,22 @@ class Sim:
         self.manumitted_total += n_people
         # The SAME person, working properly: 0.55 to 1.0, not another whole
         # worker. This was the double count.
-        self.artisans += n_people * 0.45
+        #
+        # But only for people who are actually TRAINED. A playtester noticed
+        # that freeing someone bought this morning still handed over the 0.45
+        # uplift immediately while their 0.55 sat in the training queue, so
+        # buy-and-free bought 82 per cent of a trained artisan with no calendar
+        # time at all, which is most of the way back to the exploit the training
+        # lag was added to close. Freeing an untrained person upgrades what they
+        # will be worth WHEN they mature; it does not skip the maturing.
+        pending = sum(1 for _ in self.training)
+        untrained = min(n_people, int(sum(c for c, _ in self.training) / 0.55 + 0.5))
+        trained_freed = max(0, n_people - untrained)
+        self.artisans += trained_freed * 0.45
+        if untrained:
+            share = untrained / max(1.0, sum(c for c, _ in self.training) / 0.55)
+            for row in self.training:
+                row[0] *= 1.0 + 0.45 / 0.55 * min(1.0, share)
         # Manumission was publicly admired, and admiration saturates. The first
         # freedmen you make are a statement; the four hundredth is a payroll.
         # Uncapped, this was a reputation pump that beat taking a patron.
@@ -1283,7 +1339,12 @@ class Sim:
     def post_bounty(self, k):
         """Pay well over the odds, save 65% of your own hours, gain visibility."""
         n = self.nodes[k]
-        price = n["_total_cost"] * 2.5
+        # 2.5x the cost THIS society would actually incur, not 2.5x an
+        # abstract base. A playtester found `why` quoting 188 denarii to build a
+        # node while `bounty` demanded 588 for the same thing, because the
+        # bounty ignored the civilization and price factors the build applies.
+        price = (n["_total_cost"] * 2.5 * self.civ_cost_factor(k)
+                 * self.material_cost_factor(k) * self.money_real)
         if price > self.capital:
             return False
         self.capital -= price
@@ -1353,6 +1414,11 @@ class Sim:
         # useful half. Staff is not a technical prerequisite so it never appears
         # in `path`, and the player had no way to discover the answer except by
         # reading prose they had no reason to think was relevant.
+        if self.capital < -max(1000.0, self.revenue()):
+            return False, ("you are %.0f denarii in arrears; nobody will fund a new "
+                           "undertaking until you are solvent again. Finish or stop "
+                           "what you have running, or raise revenue."
+                           % -self.capital)
         if n["sch"] > self.scholars:
             return False, ("needs %d trained scholars, you have %.1f. %s"
                            % (n["sch"], self.scholars, self._staff_advice("scholars")))
@@ -1450,6 +1516,62 @@ class Sim:
         # the log reported as being "blocked" on a treadle lathe.
         if self.capital < 0 and self.mine_capacity:
             self.mothball_mines()
+
+        # INSOLVENCY. A playtester ran to minus 4.12 million denarii over eighty
+        # years and nothing whatever happened: no event, no block, no attrition.
+        # That is not a hard game made easy, it is an accounting fiction, and it
+        # quietly made every cost in the model optional.
+        #
+        # The consequence is deliberately the realistic one rather than a
+        # dramatic one. Nobody arrests you for debt. What happens is that people
+        # you cannot pay stop turning up, and nobody will extend you credit for
+        # something new while you are in arrears.
+        if self.capital < 0:
+            self.insolvent_years = getattr(self, "insolvent_years", 0) + 1
+            floor = -max(4000.0, self.revenue() * 2.0)
+            if self.capital < floor and self.insolvent_years >= 3:
+                # wages unpaid: freedmen leave first, they are free to
+                # A FLOOR, because the first version was a doom loop. Staff bled
+                # without limit, so fewer people earned less, which deepened the
+                # arrears, which bled more people. One Norse run sat insolvent
+                # for 495 years with 2.9 artisans left, unable to recover and
+                # unable to end. Insolvency should cost you your expansion, not
+                # trap you in a state you can never leave: a household that has
+                # shed everything also stops paying for it, and can climb back.
+                bleed = min(0.15, 0.04 * self.insolvent_years)
+                self.artisans = max(3.0, self.artisans * (1.0 - bleed))
+                self.scholars = max(1.0, self.scholars * (1.0 - bleed * 0.6))
+                if self.insolvent_years in (3, 6, 12, 25):
+                    self.log.append((yr, "IN ARREARS for %d years: staff are leaving "
+                                         "because you cannot pay them" % self.insolvent_years))
+                # ABANDONMENT, and this is what makes insolvency survivable.
+                # The failed Norse run carried 3,920 denarii of upkeep against
+                # 3,134 of revenue: permanently underwater, floored at three
+                # artisans, simulating 495 years of nothing and reporting it as
+                # "ran out of horizon". An enterprise that cannot maintain its
+                # works does not pay for them for five centuries. It lets them
+                # go, and the buildings fall down. You lose what they gave you
+                # and can rebuild later, which is a real cost and a real way out.
+                net = (self.revenue() - self.upkeep() - self.living_cost()
+                       - self.mine_operating_cost())
+                if net < 0:
+                    burden = sorted((k for k in self.done
+                                     if self.nodes[k]["up"] > 0 and k not in self.granted),
+                                    key=lambda k: (self.nodes[k]["rev"] - self.nodes[k]["up"]))
+                    shed = []
+                    for k in burden:
+                        if net >= 0:
+                            break
+                        n = self.nodes[k]
+                        net += n["up"] - n["rev"]
+                        self.done.discard(k)
+                        shed.append(k)
+                    if shed:
+                        self.log.append((yr, "ABANDONED %d works you could no longer "
+                                             "maintain; they have fallen into disrepair"
+                                             % len(shed)))
+        else:
+            self.insolvent_years = 0
         # a standing workforce policy: buy when short of hands and flush, and
         # free them steadily, which is both the decent and the efficient choice
         if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
@@ -1467,11 +1589,20 @@ class Sim:
             if self.dead_reason:
                 return
 
-        # 4a. Anything Rome ALREADY HAS costs nothing and takes nobody's attention.
-        #     Grant it the moment its prerequisites are met instead of making it
-        #     queue behind real work.
+        # 4a. Anything THIS SOCIETY already has costs nothing and takes nobody's
+        #     attention. Grant it the moment its prerequisites are met instead of
+        #     making it queue behind real work.
+        #
+        #     It used to say "anything ROME already has", and meant it: a Han
+        #     playtester was handed civ_aqueduct_roman, civ_sewer_roman,
+        #     civ_insula, fin_annona and fin_societas for free in year one. The
+        #     annona is the Roman grain dole. Han China does not have one, and a
+        #     model that gives every society Rome's institutions is not modelling
+        #     societies at all.
         for k in self.order:
             n = self.nodes[k]
+            if self._is_foreign_institution(k):
+                continue
             if (n["tier"] == 0 and n["ph"] == 0 and n["_total_cost"] <= 1
                     and k not in self.done and k not in self.active
                     and all(p in self.done for p in n["pre"])):
@@ -1612,6 +1743,8 @@ class Sim:
                   if set(self.nodes[k].get("traits", [])) & {"spectacle", "inexplicable"})
         self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
+        # Sellers restock, so the pressure your buying put on the market fades.
+        self.market_pressure = max(0.0, getattr(self, "market_pressure", 0.0) * 0.55 - 2.0)
         # People bought this year are not artisans this year.
         if self.training:
             still = []
@@ -1772,7 +1905,11 @@ class Sim:
                         # order that depends on PYTHONHASHSEED, so feeding it
                         # unsorted to rng.sample made the same --seed give a
                         # different answer every invocation.
-                        losable = sorted(k for k in self.done if self.nodes[k]["tier"] >= 2)
+                        # Never the society's own inheritance: you can lose what
+                        # YOU built, not what the civilization has always known.
+                        losable = sorted(k for k in self.done
+                                         if self.nodes[k]["tier"] >= 2
+                                         and k not in self.granted)
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
                             for k in drop: self.done.discard(k)
@@ -2211,8 +2348,23 @@ def _node_explain(s, nodes, k):
         "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
         "note": n["note"], "kb": n["kb"],
         "founder_hours": n["ph"], "hired_labour": n["lab"], "materials": n["mat"],
-        "cost": {"labour": round(n["_labour_cost"], 1), "materials": round(n["_material_cost"], 1),
-                 "capital": n["cap"], "total": round(n["_total_cost"], 1)},
+        # `why` used to quote the BASE cost, identical for every civilization,
+        # while step() charged that base multiplied by this society's domain
+        # factor and by how far it sits from the material's source. A Han
+        # playtester compared `why` across two civs, saw byte-identical numbers,
+        # and reasonably concluded the whole civilization model was inert
+        # flavour text. It is not: the CHARGE has always applied both factors.
+        # The QUOTE was lying, which is the more embarrassing half, because a
+        # player plans against the quote.
+        "cost": {"labour": round(n["_labour_cost"], 1),
+                 "materials": round(n["_material_cost"], 1),
+                 "capital": n["cap"],
+                 "base_total": round(n["_total_cost"], 1),
+                 "civ_domain_factor": round(s.civ_cost_factor(k), 3),
+                 "material_distance_factor": round(s.material_cost_factor(k), 3),
+                 "price_index": round(s.money_real, 3),
+                 "total": round(n["_total_cost"] * s.civ_cost_factor(k)
+                                * s.material_cost_factor(k) * s.money_real, 1)},
         "upkeep": n["up"], "revenue": n["rev"],
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
@@ -2312,7 +2464,8 @@ def _agent_dispatch(s, nodes, cmd):
                 return {"ok": False, "error": "missing prerequisites: " + ", ".join(missing)}
             return {"ok": False, "error": "not bounty-eligible (tier %d, category %s): a Roman "
                                           "artisan could not recognise success at this" % (n["tier"], n["cat"])}
-        price = nodes[k]["_total_cost"] * 2.5
+        price = (nodes[k]["_total_cost"] * 2.5 * s.civ_cost_factor(k)
+                 * s.material_cost_factor(k) * s.money_real)
         if not s.post_bounty(k):
             return {"ok": False, "error": "cannot afford the bounty: needs about %.0f denarii, "
                                           "you have %.0f. Earn or wait, then try again" % (price, s.capital)}
