@@ -97,7 +97,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Why you would never guess this.** "More manure helps" is the natural rule; potash breaks it at the high end.
 
-**Prerequisites.** None beyond ash-leaching, an existing Roman lye technique.
+**Prerequisites.** None beyond ash-leaching, a Roman lye technique.
 
 **Roman-available inputs.** Hearth and clearing ash.
 
@@ -116,7 +116,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_gasworks_ammonia, ag2_urea - Synthetic nitrogen
 **What it is / why you want it.** Ammonium sulphate from coal-gas liquor is roughly 20% nitrogen, active within weeks. Urea is pure manufactured nitrogen, needing full Haber-Bosch synthesis.
 
-**Why you would never guess this.** That gasworks waste is valuable plant food is not obvious; making nitrogen from air and water is the deepest surprise, far beyond unaided Roman chemistry.
+**Why you would never guess this.** That gasworks waste is valuable plant food is not obvious; making nitrogen from air and water is the deepest surprise, beyond unaided Roman chemistry.
 
 **Prerequisites.** A coal-gas industry (`20_chemistry.md`, `93_energy.md`); `chm_haber_bosch` for urea.
 
@@ -372,7 +372,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Prerequisites.** Patience, individual tracking, isolation from cross-pollination.
 
-**Roman-available inputs.** Every crop and livestock species already farmed.
+**Roman-available inputs.** Every crop and livestock species farmed.
 
 **Procedure.** 1. Record best performers each season. 2. Self-pollinate a line for generations to purify it. 3. Cross pure lines: emasculate the mother, hand-apply father pollen. 4. Remake the cross each time; its own seed will not repeat.
 
@@ -590,7 +590,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Failure modes.** Underprocessing low-acid foods is the single most dangerous failure, since botulism toxin is odourless and tasteless.
 
-**Cost & labour.** ESTIMATED: glass-jar canning near-zero new capital; tinplate and a retort a real step up.
+**Cost & labour.** ESTIMATED: glass-jar canning near-zero new capital; tinplate and a retort a step up.
 
 **Danger.** Botulism is the central, lethal danger here. Never taste a bulging container.
 
@@ -613,7 +613,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Cost & labour.** ESTIMATED: pasteurisation needs only a water bath; curing's cost is dominated by `nitre_beds`.
 
-**Danger.** Nitrite curing's nitrosamine formation is a real chronic risk, worth flagging alongside white flour and lead cookware elsewhere in this module.
+**Danger.** Nitrite curing's nitrosamine formation is a chronic risk, worth flagging alongside white flour and lead cookware elsewhere here.
 
 **Confidence: HIGH** on both mechanisms.
 
@@ -643,7 +643,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Why you would never guess this.** A smooth cap either seals too loosely or grips unevenly and cracks the glass; crimped serrations grip evenly while flexing.
 
-**Prerequisites.** Standardised bottle moulding (`30_glass_optics.md`), cork (western Mediterranean, already Roman-known), sheet-metal forming.
+**Prerequisites.** Standardised bottle moulding (`30_glass_optics.md`), cork (western Mediterranean, Roman-known), sheet-metal forming.
 
 **Roman-available inputs.** Roman glass and cork are both available; standardisation is the gap.
 
@@ -687,7 +687,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Prerequisites.** A lens helps confirm yeast as an organism but is not required; the carry-forward method works empirically, as Appert's canning did.
 
-**Roman-available inputs.** Wine, beer-adjacent ferments, and bread all already exist with wild yeast.
+**Roman-available inputs.** Wine, beer-adjacent ferments, and bread all exist with wild yeast.
 
 **Procedure.** 1. Reserve active ferment from a clean, no-taint batch. 2. Use it to start the next batch instead of ambient yeast. 3. Ferment in an air-limiting vessel, keeping tools scrupulously clean.
 
@@ -750,7 +750,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Prerequisites.** Metal rollers at adjustable gap, sufficient power, an air-chamber purifier.
 
-**Roman-available inputs.** Iron for rollers, existing Roman water-mill power (the Barbegal complex proves scale).
+**Roman-available inputs.** Iron for rollers, Roman water-mill power (the Barbegal complex proves scale).
 
 **Procedure.** 1. Crack grain through a wide-gap first roller. 2. Sift, pass through tighter pairs. 3. Purify each stage's output by air. 4. Collect white flour; sell or blend back bran and germ.
 
@@ -765,7 +765,7 @@ Also covers: ag2_green_manure, ag2_composting.
 **Confidence: HIGH**, well-documented medical history.
 
 ### ag2_oil_pressing, ag2_fat_hydrogenation - Extracting and modifying fats
-**What it is / why you want it.** Cold pressing (already Roman) preserves flavour at lower yield; hot pressing extracts more at coarser flavour; fat hydrogenation adds hydrogen to solidify oil, needing careful temperature control since overheating causes polymerisation, while imprecise partial hydrogenation unknowingly creates trans-fats, a category with its own long-term health cost.
+**What it is / why you want it.** Cold pressing (Roman) preserves flavour at lower yield; hot pressing extracts more at coarser flavour; fat hydrogenation adds hydrogen to solidify oil, needing careful temperature control since overheating causes polymerisation, while imprecise partial hydrogenation unknowingly creates trans-fats, a category with its own long-term health cost.
 
 **Why you would never guess this.** The trans-fat problem forms invisibly during an otherwise useful process, found only through long-term epidemiology, the same hidden-bill pattern as white flour.
 
@@ -781,7 +781,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Cost & labour.** ESTIMATED: pressing near-zero cost; DERIVED: hydrogenation gated entirely on `20_chemistry.md`.
 
-**Danger.** Flammable hydrogen under pressure is a real explosion risk, on top of the chronic trans-fat cost.
+**Danger.** Flammable hydrogen under pressure is a explosion risk, on top of the chronic trans-fat cost.
 
 **Confidence: HIGH** pressing; MEDIUM hydrogenation, a Roman gap with a downside worth stating.
 
@@ -808,7 +808,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 ## Sources and confidence
 
-Most entries rest on documented history: the Norfolk rotation's yield effect, Appert's pre-germ-theory canning, the reaper-binder knotter's difficulty, and the roller-milling/beriberi connection are HIGH confidence. MEDIUM confidence covers textbook science with a real open question about Roman-era practicality: mechanical refrigeration, superphosphate, hybrid seed timelines, and items gated on `20_chemistry.md` (sulfuric acid, synthetic ammonia, refrigerant chemistry). LOW is reserved for items honestly out of near-term reach, synthetic urea chief among them. Every figure not a known historical constant is marked ESTIMATED with its reasoning. Cato, Varro, and Columella are cited by name for existing practice; specific citations are marked attributed, unverified where the exact passage could not be confirmed.
+Most entries rest on documented history: the Norfolk rotation's yield effect, Appert's pre-germ-theory canning, the reaper-binder knotter's difficulty, and the roller-milling/beriberi connection are HIGH confidence. MEDIUM confidence covers textbook science with a open question about Roman-era practicality: mechanical refrigeration, superphosphate, hybrid seed timelines, and items gated on `20_chemistry.md` (sulfuric acid, synthetic ammonia, refrigerant chemistry). LOW is reserved for items honestly out of near-term reach, synthetic urea chief among them. Every figure not a known historical constant is marked ESTIMATED with its reasoning. Cato, Varro, and Columella are cited by name for existing practice; specific citations are marked attributed, unverified where the exact passage could not be confirmed.
 
 ## Where to go next
 

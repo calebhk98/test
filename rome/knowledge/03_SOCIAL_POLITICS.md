@@ -1,5 +1,10 @@
 # Module 03: Standing, Patrons, and the Right to Exist
 
+> There is a second file with this name: [`rome/03_SOCIAL_POLITICS.md`](../03_SOCIAL_POLITICS.md).
+> That one describes the MODEL, meaning how the simulator computes approval, suspicion and
+> protection. This one is the HOW-TO, meaning what you actually do about it, entry by entry,
+> and it is what the tech tree's ten social nodes link to.
+
 ## Why this module is first among equals
 
 The simulator has been run many thousands of times. The result that survives every parameter sweep, every ablation and every change of civilization is this:

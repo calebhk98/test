@@ -1,5 +1,9 @@
 # 03 - Social, Political and Legal Model
 
+> There is a second file with this name: [`rome/knowledge/03_SOCIAL_POLITICS.md`](knowledge/03_SOCIAL_POLITICS.md).
+> That one is the HOW-TO, one entry per social node, and is what the tech tree links to.
+> This one describes the MODEL: how approval, suspicion and protection are computed.
+
 *The technical tree is the easy half. This file is the half that gets you
 killed, and it is the half the simulator models most aggressively.*
 
