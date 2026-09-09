@@ -1,4 +1,4 @@
-# rome/ — how this project is put together
+# rome/ - how this project is put together
 
 Three artefacts that share one dataset.
 

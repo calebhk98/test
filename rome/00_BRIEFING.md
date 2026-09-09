@@ -13,7 +13,7 @@ Read this file before you do anything clever.
 ## The four things that are actually true
 
 **1. You will not see a transistor.** Nobody alive will. The simulator in
-`sim/` puts the median at **386 AD**, about 286 years out, across 600 runs of
+`sim/` puts the median at **385 AD**, about 285 years out, across 600 runs of
 the best strategy I could write. Your job is not to build a transistor.
 Your job is to build the *institution and the corpus* that builds it, and to get
 them through two pandemics and a fifty-year civil war that you know are coming
@@ -115,15 +115,15 @@ From 600 simulated runs of the recommended strategy:
 
 | Failure | Share | The fix |
 |---|---|---|
-| The founder died without training successors and the school dispersed | 18% | Found the school in your first fifteen years. It is the pivot of the whole game. |
+| The founder died without training successors and the school dispersed | 16% | Found the school in your first fifteen years. It is the pivot of the whole game. |
 | Denounced as a magician, property seized | 5% | Patron, licensed collegium, citizenship, and never work alone at night. |
 | Ran out of time | ~1% | Usually a staffing ceiling, meaning the revenue was never built. |
 
 Under the greedy "rush straight at the goal" strategy, **zero runs in 600
-succeeded**. It gets stuck on `atomic_theory`, of all things, in 590 of them,
+succeeded**. It gets stuck on `atomic_theory`, of all things,
 because it never trained a second natural philosopher and that node needs two.
 
-Under a bare topological ordering of the *technical* prerequisites, three runs
+Under a bare topological ordering of the *technical* prerequisites, five runs
 in 600 succeeded, because the technical graph does not require you to become a
 citizen, find a patron, or teach anybody, and you cannot do a single step of it
 without all three.

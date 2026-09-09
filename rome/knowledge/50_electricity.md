@@ -183,26 +183,26 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### electromagnet - iron-core electromagnet and relay
 
-**What it is / why you want it.** A coil of insulated wire wound on a soft iron core turns a weak current into a strong, instantly on/off magnetic pull, far beyond what the bare coil or a lodestone can do. It is also the single most convincing demonstration you can stage in Rome.
+**What it is / why you want it.** A coil of insulated wire on a soft iron core turns a weak current into a strong, instantly on/off pull, far beyond the bare coil or a lodestone. Also the single most alarming demonstration in Rome.
 
-**Why you would never guess this.** That an ordinary iron bar becomes many times more magnetic than the coil alone, and loses it all again the instant the current stops, is not predictable from static magnetism (lodestones do not turn off).
+**Why you would never guess this.** An ordinary iron bar becoming many times more magnetic than the coil alone, then losing it all the instant current stops, is not predictable from static magnetism (lodestones do not turn off).
 
 **Prerequisites.** `wire_insulation`, `crude_cell` or better, soft wrought iron bar.
 
-**Roman-available inputs.** Wrought iron bar, low-carbon and unhardened (hardened/high-carbon steel keeps its magnetism and works badly here); insulated copper wire.
+**Roman-available inputs.** Wrought iron bar, low-carbon, unhardened (hardened steel keeps its magnetism, works badly here); insulated copper wire.
 
 **Procedure.**
-1. Wind 100-300 turns of insulated wire tightly around a straight soft iron bar, both wire ends free.
-2. Connect to a cell bank; the bar becomes strongly magnetic only while current flows, pulling force roughly scales with the number of turns times the current (ampere-turns), then with the square of that for the horseshoe-shape pull-in designs.
-3. Relay: a small electromagnet's armature, spring-loaded away from the core, snaps shut against the core when even a weak, far-travelled current arrives, and its own contact closes a second, local, strong circuit. This is how a signal that has grown too weak over kilometres of resistive wire still triggers a full-strength local action.
+1. Wind 100-300 turns of insulated wire tightly around a straight soft iron bar, both ends free.
+2. Connect to a cell bank; the bar is strongly magnetic only while current flows, pull scales with turns times current (ampere-turns), squared for horseshoe pull-in designs.
+3. Relay: a small electromagnet's spring-loaded armature snaps shut when even a weak, far-travelled current arrives, its contact closing a second, local, strong circuit, so a signal too weak after kilometres of resistive wire still triggers full-strength local action.
 
-**How you know it worked.** The energized bar lifts an iron chain or a stack of nails several times its own weight instantly on connection, drops them instantly on disconnection.
+**How you know it worked.** The energized bar lifts an iron chain or nail-stack several times its own weight instantly on connection, drops it instantly on disconnection.
 
-**Failure modes.** Hardened or high-carbon iron stays magnetized after current stops (bad for a relay, which must reset). Too few turns or too weak a cell bank gives a barely-detectable pull, more turns beats a stronger cell for a given wire budget up to the wire's own resistance limit.
+**Failure modes.** Hardened/high-carbon iron stays magnetized after current stops (bad for a relay, which must reset). Too few turns or too weak a bank gives barely-detectable pull.
 
-**Cost & labour.** ESTIMATED. A demonstration electromagnet: half a blacksmith-day for the bar, one weaver/winder-day for 200 turns of insulated wire.
+**Cost & labour.** ESTIMATED. Half a blacksmith-day for the bar, one winder-day for 200 turns of insulated wire.
 
-**Danger.** Physically minor at these current levels. Socially, this is the single most alarming thing you will show in Rome: an inert iron bar that seizes and drops metal on command, silently, with no visible cause, reads unmistakably as divine or demonic power. Stage it deliberately as *ars*, explained mechanism first, demonstration second, or expect accusations of sorcery.
+**Danger.** Physically minor at these currents. Socially, an inert bar that seizes and drops metal silently on command reads unmistakably as sorcery. Stage it as *ars*, mechanism explained first, demonstration second.
 
 **Confidence: HIGH** - textbook electromagnetism, all materials Roman-attested once `wire_insulation` and any working cell exist.
 
@@ -210,35 +210,35 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### galvanometer - tangent galvanometer and the absolute-measurement bootstrap
 
-**What it is / why you want it.** A ring of known radius and known turns, with a compass needle at its centre, converts the needle's deflection angle into an absolute measurement of electric current, in real physical units, using only geometry, the Earth's own magnetic field, and no prior calibrated instrument of any kind. This is how Rome bootstraps electrical measurement from nothing.
+**What it is / why you want it.** A ring of known radius and turns, with a compass needle at its centre, converts deflection angle into an absolute measurement of current, in real physical units, from geometry, the Earth's own field, and no prior calibrated instrument. This is how Rome bootstraps electrical measurement from nothing.
 
-**Why you would never guess this.** It seems like you would need a calibrated ammeter to build a calibrated ammeter, a circular problem. The way out is that the Earth's magnetic field itself, though initially unknown in strength, can be measured absolutely by a separate, self-contained experiment (Gauss's method, 1832), and once that field strength is known, a plain coil-and-needle geometry gives you current for free.
+**Why you would never guess this.** It looks circular: you seem to need a calibrated ammeter to build a calibrated ammeter. The way out is that the Earth's field, though initially unknown, can itself be measured absolutely by a separate, self-contained experiment (Gauss's method, 1832); once that field strength is known, plain coil-and-needle geometry gives current for free.
 
-**Prerequisites.** `wire_insulation`, a compass needle, a plain unweighted magnetized needle for the calibration step.
+**Prerequisites.** `wire_insulation`, a compass needle, a plain magnetized needle for calibration.
 
-**Roman-available inputs.** Lodestone (natural magnetite, for magnetizing needles by stroking), fine steel or iron needle, wood or brass coil former, insulated wire, a protractor scale (geometry is well within Roman mathematics).
+**Roman-available inputs.** Lodestone (magnetizing needles by stroking), fine steel/iron needle, wood or brass coil former, insulated wire, a protractor (geometry is well within Roman mathematics).
 
 **Procedure, part 1: build the instrument.**
-1. Wind N turns of insulated wire in a flat vertical ring or coil of measured radius R (say N=10 turns, R=0.10 m, both chosen for convenience and recorded exactly).
-2. Orient the coil's plane exactly along the local magnetic north-south line (align it with a resting compass needle).
-3. Suspend or pivot a small compass needle at the coil's centre, free to swing in the horizontal plane, with a scale beneath it to read the deflection angle theta from north.
-4. When current flows through the coil, the needle deflects to a new angle theta; theta = 0 with no current confirms correct alignment.
+1. Wind N turns of insulated wire in a flat vertical ring of measured radius R (e.g. N=10, R=0.10 m, recorded exactly).
+2. Orient the coil's plane along the local magnetic north-south line (align with a resting compass).
+3. Pivot a small compass needle at the coil's centre, free to swing horizontally, with a scale to read deflection angle theta from north.
+4. Current through the coil deflects the needle to theta; theta=0 with no current confirms alignment.
 
-**Procedure, part 2: find the Earth's field absolutely (Gauss's method), needed once, reusable forever.**
-1. Take a small magnetized needle of known mass and simple shape (a uniform rod is easiest to compute), suspend it to swing freely, horizontally, under the Earth's field alone.
-2. Time its oscillation period T over many swings for precision. Its moment of inertia K is computable from its measured mass and dimensions (a plain rod: K = mass x length^2 / 12). This gives you the product (magnetic moment m) x (Earth's field H), because T = 2*pi*sqrt(K / (m*H)).
-3. Separately, place the same needle at a carefully measured distance d, on the east-west line level with a second, free compass needle, and read that needle's deflection angle phi. At this "equatorial" position the test needle's field opposes part of the Earth's field, and tan(phi) equals the ratio of the test needle's field there to the Earth's field, giving you the ratio m / H once d is plugged into the standard dipole formula.
-4. Multiply the two results together and take the square root to get m alone; divide them and take the square root to get H alone. Both come out in absolute physical units, derived purely from a measured mass, length, time, distance and angle, no prior electrical or magnetic standard was needed anywhere in the chain.
+**Procedure, part 2: find the Earth's field absolutely (Gauss's method), done once, reused forever.**
+1. Suspend a small magnetized needle of known mass and simple shape (a uniform rod computes easiest), swinging freely under the Earth's field alone.
+2. Time its oscillation period T over many swings. Moment of inertia K comes from measured mass and dimensions (rod: K = mass x length^2/12). This gives (magnetic moment m) x (Earth's field H), since T = 2*pi*sqrt(K/(m*H)).
+3. Separately, place the same needle at a measured distance d on the east-west line level with a second free compass needle, read its deflection phi. tan(phi) equals the ratio of the test needle's field there to Earth's field, giving m/H via the standard dipole formula.
+4. Multiply the two results, take the square root, for m; divide and take the square root, for H. Both come out in absolute units from mass, length, time, distance and angle alone, no prior electrical or magnetic standard anywhere in the chain.
 
-**Procedure, part 3: use it.** With H now known, the tangent galvanometer's current follows directly from I = (2 * R * H * tan(theta)) / N (in consistent absolute units), so from now on any coil of known R and N reads current directly off a needle's angle, no meter needed ever again as a starting point, only geometry.
+**Procedure, part 3: use it.** With H known, current follows directly from I = (2*R*H*tan(theta)) / N, so any coil of known R and N reads current straight off a needle's angle from then on, only geometry needed.
 
-**How you know it worked.** The instrument's own internal check: double the current (add an identical cell in series) and confirm the deflection follows the tangent law, not a straight-line law, small angles change fast, near 45 degrees the needle is most sensitive, near 90 degrees it barely moves further, that curve shape is the signature that the geometry is behaving correctly.
+**How you know it worked.** Double the current (add an identical cell in series) and confirm deflection follows the tangent law, not a straight line: fast near small angles, most sensitive near 45 degrees, barely moving near 90, that curve is the signature the geometry is correct.
 
-**Failure modes.** Coil not aligned to magnetic north introduces a fixed offset error in every reading, realign before each measurement session. Nearby iron tools or another energized coil distorts the local field, clear the bench. Needle friction at the pivot flattens small deflections, use the lightest possible jewel or thread suspension.
+**Failure modes.** Coil misaligned to magnetic north gives a fixed offset error, realign each session. Nearby iron or another energized coil distorts the local field, clear the bench. Pivot friction flattens small deflections, use the lightest suspension possible.
 
-**Cost & labour.** ESTIMATED. 2-3 days of careful bench work for one skilled experimenter to complete the Gauss determination once; the tangent galvanometer itself is a day's work in winding and mounting.
+**Cost & labour.** ESTIMATED. 2-3 days bench work for one experimenter to complete the Gauss determination once; the galvanometer itself is a day's winding and mounting.
 
-**Danger.** None physically. This entry is pure metrology, its only risk is a sloppy geometry measurement propagating into every current figure in this module thereafter, take the mass, length, time and angle measurements seriously and repeat them.
+**Danger.** None physically. Pure metrology, the only risk is sloppy geometry propagating into every current figure downstream, take the measurements seriously and repeat them.
 
 **Confidence: HIGH** - Gauss's absolute method is a real, historically executed (1832) technique requiring nothing beyond mechanics and geometry Rome already has; the tangent galvanometer itself is elementary and well attested.
 
@@ -246,24 +246,24 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### ammeter_voltmeter - moving-coil meters, standard resistances, Wheatstone bridge
 
-**What it is / why you want it.** Once you have an absolute current standard (`galvanometer`) you can build faster, more convenient meters and, critically, measure unknown resistances precisely by nulling a bridge rather than reading a dial.
+**What it is / why you want it.** Once you have an absolute current standard (`galvanometer`) you can build faster, more convenient meters, and measure unknown resistances precisely by nulling a bridge instead of reading a dial.
 
-**Why you would never guess this.** The Wheatstone bridge's trick, that you do not need an accurate meter at all if you only need to detect zero current, is the non-obvious part: a crude, nonlinear galvanometer is perfectly adequate as a null detector even though it would make a poor absolute meter.
+**Why you would never guess this.** The Wheatstone bridge's trick: you need no accurate meter at all if you only need to detect zero current, so a crude, nonlinear galvanometer is a perfectly adequate null detector even though it would make a poor absolute meter.
 
 **Prerequisites.** `galvanometer`, `electromagnet` (for magnetizing steel bars), `wire_insulation`.
 
-**Roman-available inputs.** Hardened steel bar (for the permanent magnet, magnetized by prolonged insertion in a strong electromagnet's coil, itself powered by a pile bank, a self-bootstrapping step since no strong permanent magnets exist beforehand); drawn wire of known, consistent gauge for standard resistance coils.
+**Roman-available inputs.** Hardened steel bar for the permanent magnet, magnetized by prolonged insertion in a strong electromagnet's coil (itself pile-powered, a self-bootstrapping step since no strong permanent magnets exist beforehand); drawn wire of known, consistent gauge for standard resistance coils.
 
 **Procedure.**
-1. Moving coil meter: a small coil of wire suspended between the poles of a hardened, pre-magnetized steel bar magnet, a spring provides restoring force, current through the coil produces a torque proportional to current, deflection reads on a scale calibrated against the tangent galvanometer.
-2. Standard resistance coils: draw wire to a precise, repeatable gauge, cut a measured length, resistance is calculable as R = resistivity x length / cross-sectional area for the known metal; verify a coil against another of double the length (should read double the resistance) as a consistency check.
-3. Wheatstone bridge: arrange four resistances (two known standards, one adjustable known standard, one unknown) in a diamond, with the galvanometer bridging the two midpoints and the battery across the two ends. Adjust the known adjustable resistance until the galvanometer reads zero; at that balance point, unknown = (known adjustable) x (ratio of the other two known arms), read straight off the dial with no current-magnitude accuracy required from the galvanometer at all.
+1. Moving coil meter: a small coil suspended between poles of a hardened, pre-magnetized steel bar magnet, a spring restoring force, current produces torque proportional to itself, deflection reads on a scale calibrated against the tangent galvanometer.
+2. Standard resistance coils: draw wire to a precise, repeatable gauge, cut a measured length, R = resistivity x length / cross-section; verify against a coil of double the length (should read double) as a consistency check.
+3. Wheatstone bridge: four resistances (two known, one adjustable known, one unknown) in a diamond, galvanometer bridging the two midpoints, battery across the ends. Adjust the known variable resistance until the galvanometer reads zero; unknown = (known adjustable) x (ratio of the other two arms), no current-magnitude accuracy required from the galvanometer at all.
 
-**How you know it worked.** The bridge balances at the same setting regardless of which cell or how many cells power it (proof that only the ratio matters, not the absolute current), and repeated trials with a swapped pair of known arms give the same unknown value.
+**How you know it worked.** The bridge balances at the same setting regardless of how many cells power it (proof only the ratio matters), and swapped known arms give the same unknown value.
 
-**Failure modes.** Loose or corroded contacts add unaccounted resistance and shift the balance point, clean and tighten all junctions before each measurement. Wire gauge inconsistent along a "standard" coil's length invalidates the calculation, only trust coils drawn in one continuous pass.
+**Failure modes.** Loose or corroded contacts add unaccounted resistance and shift the balance, clean all junctions first. Inconsistent wire gauge along a "standard" coil invalidates the calculation, trust only coils drawn in one continuous pass.
 
-**Cost & labour.** ESTIMATED. 1 skilled instrument-maker week for a working bridge and a matched set of standard coils.
+**Cost & labour.** ESTIMATED. 1 instrument-maker week for a working bridge and matched standard coils.
 
 **Danger.** None beyond ordinary battery handling.
 

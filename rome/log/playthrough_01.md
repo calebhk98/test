@@ -17,7 +17,7 @@ Regenerate with `python3 rome/sim/simulator.py run --strategy recommended --mc 4
 | Dominant failure | the founder dies without training successors |
 
 The same tree under a greedy beeline strategy reaches the goal in **0 of 600
-runs**, and under a bare topological ordering in **3 of 600**.
+runs**, and under a bare topological ordering in **5 of 600**.
 
 Trust the ORDERING and the FAILURE MODES. Do not trust the absolute years to
 better than a factor of about 1.5. See `../README.md` for what is weak and why.

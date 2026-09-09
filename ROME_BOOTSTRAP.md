@@ -14,13 +14,14 @@ Everything lives in [`rome/`](rome/). Start with
 - The irreducible serial calendar time to a working transistor is **133 years**,
   across 23 nodes, even with unlimited money and labour.
 - Across 600 simulated runs of the best strategy I could write, the median is
-  **386 AD**, about **286 years** after arrival, with **77%** of runs succeeding
+  **385 AD**, about **285 years** after arrival, with **78%** of runs succeeding
   within five centuries.
 - **You will not see it.** You will die around 128 AD having personally directed
   about **44%** of the tree.
 - The naive strategy, beelining at the goal, **succeeds in 0 of 600 runs.** It
   does not fail at the transistor. It fails at basic atomic chemistry, because
-  it never trained a second person who understood anything.
+  it never trained a second person who understood anything. A bare topological
+  ordering of the technical prerequisites manages 5 of 600.
 - **The technical dependency graph is not the real dependency graph.** Nothing
   in the chain from zinc ore to a germanium crystal requires you to be a Roman
   citizen, to have a patron, or to have taught anybody. Remove those and the

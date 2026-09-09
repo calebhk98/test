@@ -4,7 +4,7 @@ Two ledgers, because two different people did work on this project.
 
 ---
 
-# PART 1 — The founder's personal hours (in the game)
+# PART 1 - The founder's personal hours (in the game)
 
 Your own hours are the binding constraint of the whole enterprise. Money is
 recoverable; a year of your attention is not. This ledger is computed from 300
@@ -97,7 +97,7 @@ Every simulated run that fails is a founder who got this wrong.
 
 ---
 
-# PART 2 — The author's hours (building this guide)
+# PART 2 - The author's hours (building this guide)
 
 Recorded because the exercise asked for it and because a tool should say how it
 was made.

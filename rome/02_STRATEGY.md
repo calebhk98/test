@@ -20,9 +20,9 @@ catastrophes active.
 
 | Strategy | Reaches the transistor | Median year | Elapsed | Dominant failure |
 |---|---|---|---|---|
-| **RUSH** (beeline at the goal, skip revenue, institutions, defence) | **0 of 600** | never | - | founder dies with no successors, 94% |
-| **TOPO** (bare topological order of the technical prerequisites) | **3 of 600** | 432 AD | 332 yr | founder dies with no successors, 94% |
-| **RECOMMENDED** | **462 of 600 (77%)** | **386 AD** | **286 yr** | founder dies with no successors, 18% |
+| **RUSH** (beeline at the goal, skip revenue, institutions, defence) | **0 of 600** | never | - | founder dies with no successors, 93% |
+| **TOPO** (bare topological order of the technical prerequisites) | **5 of 600** | 417 AD | 317 yr | founder dies with no successors, 94% |
+| **RECOMMENDED** | **471 of 600 (78%)** | **385 AD** | **285 yr** | founder dies with no successors, 16% |
 
 With all random events switched off, so pure engineering with no plague, no
 civil war and no denunciation, the recommended strategy reaches the goal in 84%
@@ -35,8 +35,8 @@ people, money and catastrophe.
 
 ## 2. Why the two obvious strategies score zero
 
-**RUSH does not fail at the transistor. It fails at `atomic_theory`**, in 590 of
-600 runs, because that node needs two trained natural philosophers and the rush
+**RUSH does not fail at the transistor. It fails long before it**, in every one
+of 600 runs, because that node needs two trained natural philosophers and the rush
 strategy never founded a school. It gets a blast furnace, crucible steel, a
 screw-cutting lathe and mineral acids, and then stops, because there is nobody
 to hand them to.
@@ -51,7 +51,7 @@ school, both patrons and the optical telegraph out of the technical closure of
 the goal entirely.** Nothing in physics requires any of them.
 
 The topological strategy, which follows the technical graph, promptly collapsed
-from a 58% success rate to 0.5%.
+from a 58% success rate to under 1%.
 
 That is the finding: **the technical dependency graph is not the real dependency
 graph.** Nothing in the chain from calamine to a germanium crystal requires you
