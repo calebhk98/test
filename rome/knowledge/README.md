@@ -37,6 +37,8 @@ in this directory, read that one.
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
 | [`93_energy.md`](93_energy.md) |  | 27 | 0 |
 | [`94_computing.md`](94_computing.md) |  | 22 | 0 |
+| [`95_expeditions.md`](95_expeditions.md) |  | 0 | 11 |
+| [`97_military.md`](97_military.md) |  | 28 | 112 |
 | [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 4 | 0 |
 
 ### Nodes documented in the top-level prose files
@@ -1876,12 +1878,145 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_vacuum_cleaner` | 4 | 140.0 | _(module has no anchor)_ |
 | `hom_washing_machine_electric` | 4 | 160.0 | _(module has no anchor)_ |
 
+### 95_expeditions.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `exp_provisioning_scurvy` | 1 | 200.0 | _(module has no anchor)_ |
+| `exp_trade_route_extend` | 1 | 250.0 | _(module has no anchor)_ |
+| `exp_coastal_africa` | 2 | 350.0 | _(module has no anchor)_ |
+| `exp_oceangoing_hull` | 2 | 250.0 | _(module has no anchor)_ |
+| `exp_openocean_navigation` | 2 | 300.0 | _(module has no anchor)_ |
+| `exp_africa_circumnavigation` | 3 | 400.0 | _(module has no anchor)_ |
+| `exp_atlantic_crossing` | 3 | 400.0 | _(module has no anchor)_ |
+| `exp_colony_administration` | 3 | 400.0 | _(module has no anchor)_ |
+| `exp_transplant_botany` | 3 | 350.0 | _(module has no anchor)_ |
+| `exp_americas_factory` | 4 | 500.0 | _(module has no anchor)_ |
+| `exp_conquest_resource` | 4 | 300.0 | _(module has no anchor)_ |
+
+### 97_military.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `mil_gunpowder_base` | 0 | 0.0 | _(module has no anchor)_ |
+| `mil_artillery_carriage` | 1 | 120.0 | _(module has no anchor)_ |
+| `mil_artillery_piece` | 1 | 140.0 | _(module has no anchor)_ |
+| `mil_bastion` | 1 | 90.0 | _(module has no anchor)_ |
+| `mil_corned_powder` | 1 | 60.0 | _(module has no anchor)_ |
+| `mil_fuse_slow_match` | 1 | 30.0 | _(module has no anchor)_ |
+| `mil_glacis` | 1 | 60.0 | _(module has no anchor)_ |
+| `mil_incorporating_mill` | 1 | 140.0 | _(module has no anchor)_ |
+| `mil_mortar` | 1 | 80.0 | _(module has no anchor)_ |
+| `mil_plate_armour_firearms` | 1 | 70.0 | _(module has no anchor)_ |
+| `mil_powder_mill` | 1 | 120.0 | _(module has no anchor)_ |
+| `mil_ravelin` | 1 | 75.0 | _(module has no anchor)_ |
+| `mil_serpentine_powder` | 1 | 40.0 | _(module has no anchor)_ |
+| `mil_trace_italienne` | 1 | 100.0 | _(module has no anchor)_ |
+| `mil_trunnion` | 1 | 80.0 | _(module has no anchor)_ |
+| `mil_anti_tank_ditch` | 2 | 50.0 | _(module has no anchor)_ |
+| `mil_artillery_shell` | 2 | 60.0 | _(module has no anchor)_ |
+| `mil_barbed_wire` | 2 | 50.0 | _(module has no anchor)_ |
+| `mil_bomb_general_purpose` | 2 | 70.0 | _(module has no anchor)_ |
+| `mil_breech_block` | 2 | 95.0 | _(module has no anchor)_ |
+| `mil_breech_loader` | 2 | 95.0 | _(module has no anchor)_ |
+| `mil_cartridge_paper` | 2 | 35.0 | _(module has no anchor)_ |
+| `mil_casemate` | 2 | 85.0 | _(module has no anchor)_ |
+| `mil_chemical_chlorine` | 2 | 60.0 | _(module has no anchor)_ |
+| `mil_concrete_fortification` | 2 | 95.0 | _(module has no anchor)_ |
+| `mil_flamethrower` | 2 | 75.0 | _(module has no anchor)_ |
+| `mil_flintlock` | 2 | 100.0 | _(module has no anchor)_ |
+| `mil_fuse_quick_match` | 2 | 40.0 | _(module has no anchor)_ |
+| `mil_fuse_types` | 2 | 70.0 | _(module has no anchor)_ |
+| `mil_gas_mask` | 2 | 60.0 | _(module has no anchor)_ |
+| `mil_high_explosive_shell` | 2 | 100.0 | _(module has no anchor)_ |
+| `mil_howitzer` | 2 | 110.0 | _(module has no anchor)_ |
+| `mil_incendiary_bomb` | 2 | 70.0 | _(module has no anchor)_ |
+| `mil_ironclad` | 2 | 140.0 | _(module has no anchor)_ |
+| `mil_lever_action` | 2 | 85.0 | _(module has no anchor)_ |
+| `mil_magazine` | 2 | 65.0 | _(module has no anchor)_ |
+| `mil_matchlock` | 2 | 60.0 | _(module has no anchor)_ |
+| `mil_minie_ball` | 2 | 50.0 | _(module has no anchor)_ |
+| `mil_naval_mine` | 2 | 70.0 | _(module has no anchor)_ |
+| `mil_observation_balloon` | 2 | 60.0 | _(module has no anchor)_ |
+| `mil_percussion_cap` | 2 | 90.0 | _(module has no anchor)_ |
+| `mil_pillbox` | 2 | 70.0 | _(module has no anchor)_ |
+| `mil_rifling` | 2 | 70.0 | _(module has no anchor)_ |
+| `mil_shrapnel_shell` | 2 | 85.0 | _(module has no anchor)_ |
+| `mil_torpedo` | 2 | 120.0 | _(module has no anchor)_ |
+| `mil_torpedo_boat` | 2 | 100.0 | _(module has no anchor)_ |
+| `mil_torpedo_tube` | 2 | 90.0 | _(module has no anchor)_ |
+| `mil_trench` | 2 | 40.0 | _(module has no anchor)_ |
+| `mil_wheel_lock` | 2 | 80.0 | _(module has no anchor)_ |
+| `mil_aerial_camera` | 3 | 95.0 | _(module has no anchor)_ |
+| `mil_aerial_reconnaissance` | 3 | 80.0 | _(module has no anchor)_ |
+| `mil_aircraft_catapult` | 3 | 120.0 | _(module has no anchor)_ |
+| `mil_anti_aircraft_gun` | 3 | 115.0 | _(module has no anchor)_ |
+| `mil_armoured_car` | 3 | 120.0 | _(module has no anchor)_ |
+| `mil_armoured_cruiser` | 3 | 150.0 | _(module has no anchor)_ |
+| `mil_armoured_cupola` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_arrester_wire` | 3 | 85.0 | _(module has no anchor)_ |
+| `mil_battlecruiser` | 3 | 160.0 | _(module has no anchor)_ |
+| `mil_belt_feed` | 3 | 100.0 | _(module has no anchor)_ |
+| `mil_bolt_action` | 3 | 120.0 | _(module has no anchor)_ |
+| `mil_bomb_sight` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_cartridge_metallic` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_centrefire_primer` | 3 | 85.0 | _(module has no anchor)_ |
+| `mil_chemical_mustard` | 3 | 85.0 | _(module has no anchor)_ |
+| `mil_chemical_phosgene` | 3 | 80.0 | _(module has no anchor)_ |
+| `mil_cordite` | 3 | 100.0 | _(module has no anchor)_ |
+| `mil_depth_charge` | 3 | 100.0 | _(module has no anchor)_ |
+| `mil_destroyer` | 3 | 130.0 | _(module has no anchor)_ |
+| `mil_dreadnought` | 3 | 180.0 | _(module has no anchor)_ |
+| `mil_face_hardened_armour` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_field_telephone` | 3 | 80.0 | _(module has no anchor)_ |
+| `mil_forward_observer` | 3 | 70.0 | _(module has no anchor)_ |
+| `mil_gun_synchroniser` | 3 | 120.0 | _(module has no anchor)_ |
+| `mil_indirect_fire` | 3 | 80.0 | _(module has no anchor)_ |
+| `mil_machine_gun_gas` | 3 | 150.0 | _(module has no anchor)_ |
+| `mil_machine_gun_nest` | 3 | 60.0 | _(module has no anchor)_ |
+| `mil_machine_gun_recoil` | 3 | 160.0 | _(module has no anchor)_ |
+| `mil_minesweeper` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_periscope` | 3 | 80.0 | _(module has no anchor)_ |
+| `mil_range_table` | 3 | 100.0 | _(module has no anchor)_ |
+| `mil_rangefinder` | 3 | 105.0 | _(module has no anchor)_ |
+| `mil_recoil_mechanism` | 3 | 130.0 | _(module has no anchor)_ |
+| `mil_revolver` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_sloped_armour` | 3 | 85.0 | _(module has no anchor)_ |
+| `mil_smokeless_powder` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_sponson` | 3 | 85.0 | _(module has no anchor)_ |
+| `mil_submarine` | 3 | 150.0 | _(module has no anchor)_ |
+| `mil_tank_turret` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_track` | 3 | 120.0 | _(module has no anchor)_ |
+| `mil_turret_traverse` | 3 | 100.0 | _(module has no anchor)_ |
+| `mil_water_jacket` | 3 | 90.0 | _(module has no anchor)_ |
+| `mil_wireless_set` | 3 | 100.0 | _(module has no anchor)_ |
+| `mil_aircraft_carrier` | 4 | 170.0 | _(module has no anchor)_ |
+| `mil_asdic` | 4 | 140.0 | _(module has no anchor)_ |
+| `mil_atomic_bomb` | 4 | 200.0 | _(module has no anchor)_ |
+| `mil_ballistic_rocket` | 4 | 150.0 | _(module has no anchor)_ |
+| `mil_bomber_aircraft` | 4 | 150.0 | _(module has no anchor)_ |
+| `mil_chain_home` | 4 | 140.0 | _(module has no anchor)_ |
+| `mil_dive_bomber` | 4 | 130.0 | _(module has no anchor)_ |
+| `mil_fighter_aircraft` | 4 | 140.0 | _(module has no anchor)_ |
+| `mil_fire_control_computing` | 4 | 120.0 | _(module has no anchor)_ |
+| `mil_fire_control_director` | 4 | 140.0 | _(module has no anchor)_ |
+| `mil_guided_bomb` | 4 | 140.0 | _(module has no anchor)_ |
+| `mil_half_track` | 4 | 130.0 | _(module has no anchor)_ |
+| `mil_iff_system` | 4 | 120.0 | _(module has no anchor)_ |
+| `mil_jet_fighter` | 4 | 160.0 | _(module has no anchor)_ |
+| `mil_napalm` | 4 | 100.0 | _(module has no anchor)_ |
+| `mil_proximity_fuse` | 4 | 150.0 | _(module has no anchor)_ |
+| `mil_radar` | 4 | 150.0 | _(module has no anchor)_ |
+| `mil_self_loading_pistol` | 4 | 140.0 | _(module has no anchor)_ |
+| `mil_self_propelled_gun` | 4 | 150.0 | _(module has no anchor)_ |
+| `mil_tank` | 4 | 160.0 | _(module has no anchor)_ |
+
 ## Documentation coverage
 
 | status | nodes |
 |---|---:|
 | linked to a specific recipe entry | 96 |
-| linked to a domain module, no specific entry | 1650 |
+| linked to a domain module, no specific entry | 1773 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
 | **undocumented, a real gap** | **112** |
@@ -1892,17 +2027,6 @@ The undocumented nodes, listed so the gap is visible rather than hidden:
 
 ## Broken links
 
-- `exp_africa_circumnavigation` points at `95_expeditions.md`, which does not exist
-- `exp_americas_factory` points at `95_expeditions.md`, which does not exist
-- `exp_atlantic_crossing` points at `95_expeditions.md`, which does not exist
-- `exp_coastal_africa` points at `95_expeditions.md`, which does not exist
-- `exp_colony_administration` points at `95_expeditions.md`, which does not exist
-- `exp_conquest_resource` points at `95_expeditions.md`, which does not exist
-- `exp_oceangoing_hull` points at `95_expeditions.md`, which does not exist
-- `exp_openocean_navigation` points at `95_expeditions.md`, which does not exist
-- `exp_provisioning_scurvy` points at `95_expeditions.md`, which does not exist
-- `exp_trade_route_extend` points at `95_expeditions.md`, which does not exist
-- `exp_transplant_botany` points at `95_expeditions.md`, which does not exist
 - `fin_advertising` points at `96_finance.md`, which does not exist
 - `fin_almanac` points at `96_finance.md`, which does not exist
 - `fin_annona` points at `96_finance.md`, which does not exist
@@ -1991,116 +2115,213 @@ The undocumented nodes, listed so the gap is visible rather than hidden:
 - `fin_usury_evasion` points at `96_finance.md`, which does not exist
 - `fin_usury_law` points at `96_finance.md`, which does not exist
 - `fin_wage` points at `96_finance.md`, which does not exist
-- `mil_aerial_camera` points at `97_military.md`, which does not exist
-- `mil_aerial_reconnaissance` points at `97_military.md`, which does not exist
-- `mil_aircraft_carrier` points at `97_military.md`, which does not exist
-- `mil_aircraft_catapult` points at `97_military.md`, which does not exist
-- `mil_anti_aircraft_gun` points at `97_military.md`, which does not exist
-- `mil_anti_tank_ditch` points at `97_military.md`, which does not exist
-- `mil_armoured_car` points at `97_military.md`, which does not exist
-- `mil_armoured_cruiser` points at `97_military.md`, which does not exist
-- `mil_armoured_cupola` points at `97_military.md`, which does not exist
-- `mil_arrester_wire` points at `97_military.md`, which does not exist
-- `mil_artillery_carriage` points at `97_military.md`, which does not exist
-- `mil_artillery_piece` points at `97_military.md`, which does not exist
-- `mil_artillery_shell` points at `97_military.md`, which does not exist
-- `mil_asdic` points at `97_military.md`, which does not exist
-- `mil_atomic_bomb` points at `97_military.md`, which does not exist
-- `mil_ballistic_rocket` points at `97_military.md`, which does not exist
-- `mil_barbed_wire` points at `97_military.md`, which does not exist
-- `mil_bastion` points at `97_military.md`, which does not exist
-- `mil_battlecruiser` points at `97_military.md`, which does not exist
-- `mil_belt_feed` points at `97_military.md`, which does not exist
-- `mil_bolt_action` points at `97_military.md`, which does not exist
-- `mil_bomb_general_purpose` points at `97_military.md`, which does not exist
-- `mil_bomb_sight` points at `97_military.md`, which does not exist
-- `mil_bomber_aircraft` points at `97_military.md`, which does not exist
-- `mil_breech_block` points at `97_military.md`, which does not exist
-- `mil_breech_loader` points at `97_military.md`, which does not exist
-- `mil_cartridge_metallic` points at `97_military.md`, which does not exist
-- `mil_cartridge_paper` points at `97_military.md`, which does not exist
-- `mil_casemate` points at `97_military.md`, which does not exist
-- `mil_centrefire_primer` points at `97_military.md`, which does not exist
-- `mil_chain_home` points at `97_military.md`, which does not exist
-- `mil_chemical_chlorine` points at `97_military.md`, which does not exist
-- `mil_chemical_mustard` points at `97_military.md`, which does not exist
-- `mil_chemical_phosgene` points at `97_military.md`, which does not exist
-- `mil_concrete_fortification` points at `97_military.md`, which does not exist
-- `mil_cordite` points at `97_military.md`, which does not exist
-- `mil_corned_powder` points at `97_military.md`, which does not exist
-- `mil_depth_charge` points at `97_military.md`, which does not exist
-- `mil_destroyer` points at `97_military.md`, which does not exist
-- `mil_dive_bomber` points at `97_military.md`, which does not exist
-- `mil_dreadnought` points at `97_military.md`, which does not exist
-- `mil_face_hardened_armour` points at `97_military.md`, which does not exist
-- `mil_field_telephone` points at `97_military.md`, which does not exist
-- `mil_fighter_aircraft` points at `97_military.md`, which does not exist
-- `mil_fire_control_computing` points at `97_military.md`, which does not exist
-- `mil_fire_control_director` points at `97_military.md`, which does not exist
-- `mil_flamethrower` points at `97_military.md`, which does not exist
-- `mil_flintlock` points at `97_military.md`, which does not exist
-- `mil_forward_observer` points at `97_military.md`, which does not exist
-- `mil_fuse_quick_match` points at `97_military.md`, which does not exist
-- `mil_fuse_slow_match` points at `97_military.md`, which does not exist
-- `mil_fuse_types` points at `97_military.md`, which does not exist
-- `mil_gas_mask` points at `97_military.md`, which does not exist
-- `mil_glacis` points at `97_military.md`, which does not exist
-- `mil_guided_bomb` points at `97_military.md`, which does not exist
-- `mil_gun_synchroniser` points at `97_military.md`, which does not exist
-- `mil_gunpowder_base` points at `97_military.md`, which does not exist
-- `mil_half_track` points at `97_military.md`, which does not exist
-- `mil_high_explosive_shell` points at `97_military.md`, which does not exist
-- `mil_howitzer` points at `97_military.md`, which does not exist
-- `mil_iff_system` points at `97_military.md`, which does not exist
-- `mil_incendiary_bomb` points at `97_military.md`, which does not exist
-- `mil_incorporating_mill` points at `97_military.md`, which does not exist
-- `mil_indirect_fire` points at `97_military.md`, which does not exist
-- `mil_ironclad` points at `97_military.md`, which does not exist
-- `mil_jet_fighter` points at `97_military.md`, which does not exist
-- `mil_lever_action` points at `97_military.md`, which does not exist
-- `mil_machine_gun_gas` points at `97_military.md`, which does not exist
-- `mil_machine_gun_nest` points at `97_military.md`, which does not exist
-- `mil_machine_gun_recoil` points at `97_military.md`, which does not exist
-- `mil_magazine` points at `97_military.md`, which does not exist
-- `mil_matchlock` points at `97_military.md`, which does not exist
-- `mil_minesweeper` points at `97_military.md`, which does not exist
-- `mil_minie_ball` points at `97_military.md`, which does not exist
-- `mil_mortar` points at `97_military.md`, which does not exist
-- `mil_napalm` points at `97_military.md`, which does not exist
-- `mil_naval_mine` points at `97_military.md`, which does not exist
-- `mil_observation_balloon` points at `97_military.md`, which does not exist
-- `mil_percussion_cap` points at `97_military.md`, which does not exist
-- `mil_periscope` points at `97_military.md`, which does not exist
-- `mil_pillbox` points at `97_military.md`, which does not exist
-- `mil_plate_armour_firearms` points at `97_military.md`, which does not exist
-- `mil_powder_mill` points at `97_military.md`, which does not exist
-- `mil_proximity_fuse` points at `97_military.md`, which does not exist
-- `mil_radar` points at `97_military.md`, which does not exist
-- `mil_range_table` points at `97_military.md`, which does not exist
-- `mil_rangefinder` points at `97_military.md`, which does not exist
-- `mil_ravelin` points at `97_military.md`, which does not exist
-- `mil_recoil_mechanism` points at `97_military.md`, which does not exist
-- `mil_revolver` points at `97_military.md`, which does not exist
-- `mil_rifling` points at `97_military.md`, which does not exist
-- `mil_self_loading_pistol` points at `97_military.md`, which does not exist
-- `mil_self_propelled_gun` points at `97_military.md`, which does not exist
-- `mil_serpentine_powder` points at `97_military.md`, which does not exist
-- `mil_shrapnel_shell` points at `97_military.md`, which does not exist
-- `mil_sloped_armour` points at `97_military.md`, which does not exist
-- `mil_smokeless_powder` points at `97_military.md`, which does not exist
-- `mil_sponson` points at `97_military.md`, which does not exist
-- `mil_submarine` points at `97_military.md`, which does not exist
-- `mil_tank` points at `97_military.md`, which does not exist
-- `mil_tank_turret` points at `97_military.md`, which does not exist
-- `mil_torpedo` points at `97_military.md`, which does not exist
-- `mil_torpedo_boat` points at `97_military.md`, which does not exist
-- `mil_torpedo_tube` points at `97_military.md`, which does not exist
-- `mil_trace_italienne` points at `97_military.md`, which does not exist
-- `mil_track` points at `97_military.md`, which does not exist
-- `mil_trench` points at `97_military.md`, which does not exist
-- `mil_trunnion` points at `97_military.md`, which does not exist
-- `mil_turret_traverse` points at `97_military.md`, which does not exist
-- `mil_water_jacket` points at `97_military.md`, which does not exist
-- `mil_wheel_lock` points at `97_military.md`, which does not exist
-- `mil_wireless_set` points at `97_military.md`, which does not exist
+- `in2_adiabatic_demagnetization` points at `Magnetic field aligns spins; adiabatic removal of field allows spins to disorder, cooling`, which does not exist
+- `in2_aerial_camera_mount` points at `Camera mounted on gyroscopic platform; vibration isolation allows sharp photos from aircraft`, which does not exist
+- `in2_alidade_ruler` points at `Ruler with telescopic sights; sets direction on map from observation point`, which does not exist
+- `in2_antireflection_coating` points at `Quarter-wave coating reduces reflection from 4% to <0.1% at one wavelength`, which does not exist
+- `in2_artificial_horizon_bubble` points at `Small spirit level defines horizontal reference when sea horizon is not visible`, which does not exist
+- `in2_baseline_measurement_apparatus` points at `Known length baseline; correction for slope, temperature, tension; used as reference for triangulation`, which does not exist
+- `in2_beam_splitter` points at `Partial reflector divides light into two paths; angle selects wavelength with coatings`, which does not exist
+- `in2_bolometer_thermal_detector` points at `Blackened metal foil heated by infrared; resistance change measured`, which does not exist
+- `in2_cassegrain_reflector` points at `Secondary convex mirror bounces light back through hole in primary`, which does not exist
+- `in2_chain_surveyor` points at `66 feet (20 m) of steel links; handles at ends; numbered every 10 links`, which does not exist
+- `in2_chronometer_rate_check` points at `Lunar distance or lunar occultation gives time; chronometer rate determined`, which does not exist
+- `in2_claude_cycle_air_liquefaction` points at `Expander cools more efficiently than Joule-Thomson; some gas expands to do work`, which does not exist
+- `in2_cloud_chamber_wilson` points at `Sudden expansion cools air to supersaturation; charged particles trigger condensation trails`, which does not exist
+- `in2_condenser_substage` points at `Converging lens below the sample focuses illumination and houses iris diaphragm`, which does not exist
+- `in2_cooke_triplet_photography` points at `Symmetrical three-element design for uniform field correction`, which does not exist
+- `in2_creep_furnace` points at `Specimen held at fixed stress and temperature; elongation measured vs time`, which does not exist
+- `in2_cryostat_dewar_flask` points at `Vacuum between walls; liquid nitrogen or helium maintains cryogenic temperature`, which does not exist
+- `in2_cyclotron` points at `Magnetic field bends particles in spiral; RF accelerates between gaps`, which does not exist
+- `in2_dark_field_condenser` points at `Light cone with large angle misses objective; only scattered light enters`, which does not exist
+- `in2_diffraction_grating` points at `Thousands of parallel grooves per mm, ruled with precision screw and diamond`, which does not exist
+- `in2_doublet_lens` points at `Crown and flint glass cemented together to correct chromatic aberration`, which does not exist
+- `in2_echo_sounder_acoustic` points at `Spark or transducer emits sound pulse; reflected echo arrives after time proportional to depth`, which does not exist
+- `in2_electron_diffraction_camera` points at `Electrons diffract from crystal planes; low energy gives surface sensitivity`, which does not exist
+- `in2_electron_microscope_column` points at `Vacuum tube with high voltage, electromagnetic lenses focus electron beam`, which does not exist
+- `in2_electron_source_cathode` points at `Tungsten filament heated to 2700K; thermionic emission produces electron beam`, which does not exist
+- `in2_electroscope_gold_leaf` points at `Gold leaf suspended from high-potential conductor; repulsion angle indicates charge`, which does not exist
+- `in2_eyepiece_erfle` points at `Five-element wide field eyepiece with 60-68 degree angle of view`, which does not exist
+- `in2_eyepiece_huygens` points at `Two plano-convex lenses separated by their focal lengths`, which does not exist
+- `in2_eyepiece_kellner` points at `Plano-convex field lens and achromatic eyelens`, which does not exist
+- `in2_eyepiece_orthoscopic` points at `Triplet eyelens with wide flat field and high magnification`, which does not exist
+- `in2_eyepiece_ramsden` points at `Two identical plano-convex lenses cemented or close-spaced`, which does not exist
+- `in2_fatigue_machine` points at `Sample in rotating fixture; stress oscillates sinusoidally; failure recorded vs cycle count`, which does not exist
+- `in2_geiger_counter` points at `Gas avalanche multiplication in cylindrical electrode; each ion produces 10^6 electrons`, which does not exist
+- `in2_geodetic_apparatus` points at `Network of triangulation points; height determined by precise levelling`, which does not exist
+- `in2_gravimeter_spring_balance` points at `Mass hangs on calibrated spring; period or deflection indicates local gravity`, which does not exist
+- `in2_gyro_horizon_artificial` points at `Gyroscope spin axis maintains reference; precession from aircraft maneuvers indicated on dial`, which does not exist
+- `in2_gyrocompass` points at `Rotor spins at high speed; gravity precession aligns axis with meridian`, which does not exist
+- `in2_high_pressure_cell` points at `Hydraulic or screw press confines sample; pressure measured by pressure gauge`, which does not exist
+- `in2_immersion_objective_oil` points at `Objective designed to work through oil between lens and coverslip; refractive index matched`, which does not exist
+- `in2_interference_filter` points at `Multilayer dielectric coatings create bandpass filter by coherent reflection`, which does not exist
+- `in2_interferometer_fabry_perot` points at `Two parallel silvered surfaces; light bounces many times; sharp resonance peaks`, which does not exist
+- `in2_interferometer_michelson` points at `Beam splitter divides light; mirrors reflect; recombined beams interfere`, which does not exist
+- `in2_ionisation_chamber` points at `Gas ionised by radiation; ions collected by electric field; current measured`, which does not exist
+- `in2_joule_thomson_valve` points at `Gas expands through throttle; cooling is proportional to enthalpy drop`, which does not exist
+- `in2_linde_cycle_expansion_engine` points at `Compressed gas cools against expanding outflow; cascade stages liquefy air`, which does not exist
+- `in2_magnetometer_compass` points at `Magnetic needle suspended by fine quartz fiber; deflection angle measures field`, which does not exist
+- `in2_marine_chronometer` points at `Balance spring oscillator; bimetallic compensation maintains frequency at sea temperature variation`, which does not exist
+- `in2_mass_spectrograph` points at `Ions accelerated and deflected by magnetic field; detection plate measures trajectories`, which does not exist
+- `in2_microtome_rotary` points at `Rotating handle advances specimen by screw; produces ribbons of thin serial sections`, which does not exist
+- `in2_microtome_sliding` points at `Blade slides past specimen; spring controls thickness; produces thin sections`, which does not exist
+- `in2_newtonian_reflector` points at `Flat mirror at 45 degrees directs focal point to side of tube`, which does not exist
+- `in2_oscilloscope_crt` points at `Electron beam deflected by electric or magnetic fields; strikes phosphor screen`, which does not exist
+- `in2_petzval_portrait_lens` points at `Rear convergent group and front achromat for high aperture`, which does not exist
+- `in2_ph_meter_potentiometer` points at `Glass electrode voltage responds to hydrogen ion concentration; amplifier measures millivolts`, which does not exist
+- `in2_phase_contrast_objective` points at `Annular source and phase plate convert amplitude variations to visible contrast`, which does not exist
+- `in2_photocell_vacuum_photoelectric` points at `Photon ejects electron from cathode; current proportional to light intensity`, which does not exist
+- `in2_photogrammetry_stereoscope` points at `Pair of aerial photos viewed stereoscopically; parallax gives elevation; comparator measures precise positions`, which does not exist
+- `in2_photographic_emulsion` points at `Silver halide grains record particle tracks at nanometer resolution`, which does not exist
+- `in2_photometer_visual_comparison` points at `Light source compared to standard candle; intensity by distance inverse-square law`, which does not exist
+- `in2_photomultiplier_cascade_amplifier` points at `Initial photocurrent amplified by secondary emission from dynode chain`, which does not exist
+- `in2_plane_table` points at `Board on tripod; graphite paper and straightedge; draw map directly in field`, which does not exist
+- `in2_polariser_crystal` points at `Birefringent calcite transmits one polarisation state, rejects other`, which does not exist
+- `in2_precise_levelling_rod` points at `Calibrated rod with mm graduations; telescope focuses on graticule; difference of sights gives height difference`, which does not exist
+- `in2_primary_mirror` points at `Parabolic surface focuses parallel light to point; thin speculum metal or silvered glass`, which does not exist
+- `in2_prism_amici` points at `Roof-shaped prism erects image and folds light path for compact binoculars`, which does not exist
+- `in2_prism_porro` points at `Two 45-90-45 prisms erect image and separate exit pupils for eye relief`, which does not exist
+- `in2_radio_direction_finder` points at `Loop antenna orientation for minimum signal indicates bearing to transmitter`, which does not exist
+- `in2_reticle_crosshair` points at `Fine lines or dots etched or photographed onto glass plate`, which does not exist
+- `in2_ruling_engine` points at `Master screw with diamond point advances across glass or metal; grooves separated by wavelength precision`, which does not exist
+- `in2_schmidt_corrector_plate` points at `Aspheric glass plate corrects spherical mirror aberrations; wide field possible`, which does not exist
+- `in2_scintillation_detector` points at `Radiation hits crystal; fluorescence photons counted by photomultiplier`, which does not exist
+- `in2_sextant_navigation` points at `Moving mirror superimposes sun or star images; arc angle gives latitude or distance`, which does not exist
+- `in2_shock_tube` points at `Rupture diaphragm between high and low pressure gas; shock wave propagates`, which does not exist
+- `in2_simple_lens` points at `Ground and polished spherical single surface`, which does not exist
+- `in2_sounding_machine_lead_line` points at `Weighted rope marked every fathom; bottom sample in cavity of lead`, which does not exist
+- `in2_spectral_radiometer` points at `Spectrum dispersed by grating; many photocells measure intensity at different wavelengths`, which does not exist
+- `in2_spectrograph_grating` points at `Diffraction grating disperses light; objective focuses higher orders onto plate`, which does not exist
+- `in2_spectrograph_prism` points at `Prism disperses light; objective focuses spectrum onto photographic plate`, which does not exist
+- `in2_spirit_level` points at `Curved tube 90% filled with alcohol; bubble indicates deviation from horizontal`, which does not exist
+- `in2_strain_gauge_bridge` points at `Wheatstone bridge with strain gauge and vacuum tube amplifier measures tiny resistance changes`, which does not exist
+- `in2_strain_gauge_electric` points at `Wire resistance changes with strain; stretched wire has higher resistance`, which does not exist
+- `in2_tacheometer` points at `Theodolite with special stadia reticle; staff reading gives distance directly`, which does not exist
+- `in2_tape_measure_steel` points at `100-300 feet steel tape; tension handle and brake; gradient mark for slope distance`, which does not exist
+- `in2_telephoto_design` points at `Converging front, diverging rear, makes focal length exceed physical length`, which does not exist
+- `in2_tessar_lens` points at `Four-element design with cemented doublet`, which does not exist
+- `in2_theodolite` points at `Telescope with two perpendicular rotating circles; horizontal and vertical angles`, which does not exist
+- `in2_towing_tank` points at `Long water channel; model on carriage; drag measured against water balance`, which does not exist
+- `in2_triangulation_tripod_station` points at `Stable tripod with fixed marks for theodolite centering`, which does not exist
+- `in2_triplet_lens` points at `Three-glass combination corrects to secondary spectrum`, which does not exist
+- `in2_ultracentrifuge` points at `Rotor spins at 100,000 rpm; centrifugal field separates molecules by size`, which does not exist
+- `in2_ultramicroscope` points at `Intense line source illuminates specimen at high angle; Tyndall scattering visible`, which does not exist
+- `in2_van_de_graaff_generator` points at `Moving belt transfers charge to dome; voltage accumulates; sparks at high voltage`, which does not exist
+- `in2_vibration_table` points at `Armature driven by AC field; table oscillates at mains frequency; amplitude controlled`, which does not exist
+- `in2_waveplate_mica` points at `Anisotropic crystal retards one polarisation by fraction of wavelength`, which does not exist
+- `in2_wide_angle_lens` points at `Reversed Petzval or symmetrical design, focal length shorter than image diagonal`, which does not exist
+- `in2_wind_tunnel_subsonic` points at `Contoured duct delivers uniform flow; model attached; forces measured by balance`, which does not exist
+- `in2_xray_diffraction_camera` points at `X-rays diffract from crystal planes; angles and intensities reveal atomic structure`, which does not exist
+- `sc2_algebra_binomial` points at `(x + y)ⁿ expands to a sum of terms with binomial coefficients C(n,k)`, which does not exist
+- `sc2_algebra_complex_numbers` points at `Quadratics always have solutions in complex numbers; polar form re^(iθ); Euler's e^(iθ) = cos θ + i sin θ`, which does not exist
+- `sc2_algebra_determinant` points at `det(A) = 0 means A is singular (non-invertible); A⁻¹ exists if det(A) ≠ 0`, which does not exist
+- `sc2_algebra_infinite_series` points at `Sum of infinitely many terms: 1 + 1/2 + 1/4 + ... = 2; when does it converge?`, which does not exist
+- `sc2_algebra_interpolation` points at `Given n points, unique polynomial of degree n-1 passes through them; Newton forward differences for tables`, which does not exist
+- `sc2_algebra_least_squares` points at `Minimize sum of squared errors between data points and model; normal equations from setting derivatives to zero`, which does not exist
+- `sc2_algebra_logarithm` points at `If b^x = a, then log_b(a) = x; rules: log(xy) = log(x) + log(y)`, which does not exist
+- `sc2_algebra_matrix` points at `Rectangular arrays of numbers; AB is not the same as BA; determinant measures invertibility`, which does not exist
+- `sc2_algebra_numerical_methods` points at `Algorithms to find roots or solve equations when closed forms do not exist; choosing method depends on smoothness and number of solutions`, which does not exist
+- `sc2_algebra_polynomial` points at `Expressions like x³ - 6x² + 11x - 6 = (x-1)(x-2)(x-3); finding roots`, which does not exist
+- `sc2_algebra_quadratic` points at `ax² + bx + c = 0 has solution x = (-b ± √(b² - 4ac)) / 2a`, which does not exist
+- `sc2_algebra_symbolic` points at `Using letters for unknown quantities; rules for manipulating equations`, which does not exist
+- `sc2_algebra_tensor` points at `Generalizing scalars, vectors, matrices; stress is a tensor (force per unit area in each direction)`, which does not exist
+- `sc2_algebra_vector` points at `Directed quantities; dot product a·b = |a||b|cos(angle); cross product a×b perpendicular to both`, which does not exist
+- `sc2_calculus_derivative` points at `f'(x) = lim[h→0] (f(x+h) - f(x)) / h; rules: product, chain, quotient`, which does not exist
+- `sc2_calculus_fourier_series` points at `Any periodic function is a sum of sines and cosines with the right amplitudes and phases`, which does not exist
+- `sc2_calculus_fourier_transform` points at `Generalizing Fourier series to non-periodic signals; converting between time and frequency domains`, which does not exist
+- `sc2_calculus_fundamental_theorem` points at `d/dx ∫f = f and ∫df/dx = f; connects rate of change to total change`, which does not exist
+- `sc2_calculus_integral` points at `∫f(x)dx is the area under f; fundamental theorem: antiderivative of f has derivative f`, which does not exist
+- `sc2_calculus_limit` points at `As x → a, f(x) → L means values cluster arbitrarily close to L; formal: for any ε > 0, choose δ > 0 such that |x - a| < δ implies |f(x) - L| < ε`, which does not exist
+- `sc2_calculus_ode` points at `Equations like y' = -ky describe decay or growth; separation of variables, integrating factors`, which does not exist
+- `sc2_calculus_pde` points at `Equations with derivatives with respect to multiple variables; heat, wave, Laplace equations`, which does not exist
+- `sc2_geometry_conics` points at `All are second-degree equations ax² + bxy + cy² + dx + ey + f = 0; eccentricity e determines shape`, which does not exist
+- `sc2_geometry_coordinate` points at `Representing curves as equations: circle is x² + y² = r²; line is ax + by + c = 0`, which does not exist
+- `sc2_geometry_descriptive` points at `Three orthographic views (top, front, side) fully describe a 3D object; sections; auxiliary views`, which does not exist
+- `sc2_geometry_differential` points at `Curvature, torsion, geodesics, Gaussian curvature, first and second fundamental forms`, which does not exist
+- `sc2_geometry_non_euclidean` points at `Gauss, Lobachevsky, Riemann: parallel postulate is independent; curved spaces have their own geometry`, which does not exist
+- `sc2_geometry_spherical_trig` points at `Solving triangles on a sphere; great circles; spherical excess; rhumb line vs. geodesic`, which does not exist
+- `sc2_geometry_trigonometry` points at `sin, cos, tan; inverse functions; tables for every degree or tenth of degree; identities like sin² + cos² = 1`, which does not exist
+- `sc2_institution_citation` points at `Footnote naming source of idea or fact; enables tracking influence and crediting prior work`, which does not exist
+- `sc2_institution_curriculum` points at `Planned sequence of courses building toward degree; prerequisites ensure logical progression`, which does not exist
+- `sc2_institution_doctorate` points at `PhD requires original research contribution; defended before experts; credential for independent researcher`, which does not exist
+- `sc2_institution_examination` points at `Written or oral test to verify mastery; degree or certificate signals to employers`, which does not exist
+- `sc2_institution_funded_programme` points at `Government or foundation grants money for specific research goals; researcher proposes, peer review decides`, which does not exist
+- `sc2_institution_journal` points at `Monthly or quarterly publication of peer-reviewed articles with title, methods, results, discussion`, which does not exist
+- `sc2_institution_learned_society` points at `Membership of scientists; regular meetings; publications; elect fellows; set standards`, which does not exist
+- `sc2_institution_patent_disclosure` points at `Technical description filed with government; grants monopoly for term; requires disclosure of how it works`, which does not exist
+- `sc2_institution_referee` points at `Editor sends manuscript to expert referees anonymously; accepts or rejects based on review`, which does not exist
+- `sc2_institution_research_group` points at `Senior scientist leads team of postdocs and students; collective work; shared credit`, which does not exist
+- `sc2_institution_textbook` points at `Book that teaches subject from first principles; worked examples; exercises with answers`, which does not exist
+- `sc2_method_controlled_experiment` points at `Manipulate one variable (treatment), hold others constant, measure outcome; compare to control`, which does not exist
+- `sc2_method_hypothesis` points at `Propose specific prediction from theory; design experiment to test it; null hypothesis is baseline`, which does not exist
+- `sc2_method_lab_notebook` points at `Daily record of observations, conditions, calculations, false starts; dated, sequential, no erasure`, which does not exist
+- `sc2_method_negative_result` points at `Experiment where predicted effect did not occur; equally valid as positive, often more informative`, which does not exist
+- `sc2_method_peer_criticism` points at `Colleagues check logic, methods, calculations; public critique in meetings or correspondence`, which does not exist
+- `sc2_method_replication` points at `Another researcher, different time and place, obtains same results with same methods`, which does not exist
+- `sc2_notation_decimal_fraction` points at `Tenths, hundredths, thousandths as a continuation of positional notation past zero`, which does not exist
+- `sc2_notation_decimal_point` points at `Standardizing a marker between whole and fractional parts`, which does not exist
+- `sc2_notation_dimension` points at `Treating dimensions as algebraic quantities; force = mass times acceleration means newtons = kg⋅m/s²`, which does not exist
+- `sc2_notation_equals_sign` points at `Symbol = means both sides have the same value`, which does not exist
+- `sc2_notation_error_propagation` points at `If x has uncertainty Δx and y = f(x), then Δy = |df/dx| Δx; rules for multiple variables`, which does not exist
+- `sc2_notation_exponents` points at `Small superscript numbers for powers; x squared is x²`, which does not exist
+- `sc2_notation_metric_unit` points at `Decimal prefixes; base 10 throughout; no accidents like 12 inches to a foot`, which does not exist
+- `sc2_notation_negative` points at `Numbers less than zero; rules for addition and multiplication`, which does not exist
+- `sc2_notation_operator_symbols` points at `Standardized marks for operations instead of words`, which does not exist
+- `sc2_notation_positional` points at `Digits hold different values by position; ten is one and zero`, which does not exist
+- `sc2_notation_roots` points at `Radical sign √ for square, cube, and nth roots`, which does not exist
+- `sc2_notation_scientific` points at `Writing 0.0000314 as 3.14 × 10⁻⁵ or 3.14 E-5`, which does not exist
+- `sc2_notation_significant_figures` points at `Recording measurement uncertainty by digit count; multiplication and division rules for combining measurements`, which does not exist
+- `sc2_notation_zero` points at `Zero is a digit, not absence`, which does not exist
+- `sc2_physics_acoustics` points at `Sound speed v = √(K/ρ) where K is bulk modulus; intensity I = (1/2) ρ v (p0)²`, which does not exist
+- `sc2_physics_aerodynamic_lift` points at `Pressure difference between upper and lower surfaces due to velocity difference; L = (1/2) ρ v² A CL`, which does not exist
+- `sc2_physics_blackbody_radiation` points at `Energy density u(ν,T) = (8πhν³/c³) / (exp(hν/kT) - 1); Rayleigh-Jeans fails at high ν`, which does not exist
+- `sc2_physics_boltzmann_distribution` points at `Probability of state with energy E is proportional to exp(-E/kT); explains chemical equilibrium`, which does not exist
+- `sc2_physics_diffraction` points at `Light bends around edges and slits; diffraction grating has many slits for high resolution`, which does not exist
+- `sc2_physics_elasticity` points at `Stress σ = F/A (force per area); strain ε = ΔL/L (fractional change); E = σ/ε (Young's modulus)`, which does not exist
+- `sc2_physics_electrostatics` points at `F = k q1 q2 / r²; like gravity but for electric charge; field E = F/q`, which does not exist
+- `sc2_physics_em_wave` points at `Oscillating E and B fields perpendicular to each other and direction of travel; speed c = 1/√(ε0 μ0)`, which does not exist
+- `sc2_physics_energy` points at `KE = (1/2) m v²; PE = mgh; energy is conserved when forces are conservative`, which does not exist
+- `sc2_physics_fluid_statics` points at `Pressure P = ρ g h (density times gravity times depth); Archimedes' principle`, which does not exist
+- `sc2_physics_geometric_optics` points at `Light travels in straight rays; reflects at angle of incidence; refracts by Snell's law n1 sin θ1 = n2 sin θ2`, which does not exist
+- `sc2_physics_gravitation` points at `F = G m1 m2 / r²; same law governs apples and planets`, which does not exist
+- `sc2_physics_hydrodynamics` points at `P + (1/2) ρ v² + ρ g h = constant along streamline; relates pressure, velocity, height`, which does not exist
+- `sc2_physics_kinematics` points at `v = dx/dt; a = dv/dt; for constant acceleration, x = x0 + v0*t + (1/2)*a*t²`, which does not exist
+- `sc2_physics_kinetic_theory` points at `Gas pressure is momentum transfer from colliding molecules; P = (1/3) ρ <v²>; explains ideal gas law`, which does not exist
+- `sc2_physics_magnetostatics` points at `Magnetic field B; dipole moment m; torque τ = m × B; force on current F = I L × B`, which does not exist
+- `sc2_physics_maxwell_equations` points at `Four equations unify electricity, magnetism, and light; predict electromagnetic waves`, which does not exist
+- `sc2_physics_momentum` points at `p = mv; dp/dt = F; momentum is conserved when external forces are zero`, which does not exist
+- `sc2_physics_neutron_discovery` points at `Neutral nuclear particle; mass nearly equals proton; Chadwick proved (1932) from alpha bombardment`, which does not exist
+- `sc2_physics_newtons_laws` points at `1) No force, no change. 2) F = ma. 3) Action equals reaction`, which does not exist
+- `sc2_physics_nuclear_fission` points at `Heavy nucleus splits into fragments; releases neutrons and 200 MeV; self-sustaining chain if k > 1`, which does not exist
+- `sc2_physics_nucleus_discovery` points at `Rutherford showed atoms have tiny dense nuclei; three types of radiation (alpha, beta, gamma)`, which does not exist
+- `sc2_physics_photoelectric_effect` points at `Light knocks electrons from metal; E = hν - φ (work function); proves photon hypothesis`, which does not exist
+- `sc2_physics_quantum_photon` points at `Light is quantised in packets of energy E = hν; Planck constant h = 6.626 × 10^-34 J⋅s`, which does not exist
+- `sc2_physics_reynolds_number` points at `Re = (ρ v L) / η; low Re is viscous (creeping) flow, high Re is turbulent`, which does not exist
+- `sc2_physics_spectrum` points at `Radio waves, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays; all c/λ = f`, which does not exist
+- `sc2_physics_speed_of_light` points at `c ≈ 3 × 10^8 m/s; same in all inertial reference frames; appears in E = mc²`, which does not exist
+- `sc2_physics_statics` points at `Leverage, moments, center of gravity; force balance and moment balance`, which does not exist
+- `sc2_physics_statistical_mechanics` points at `Macroscopic properties from microstate probabilities; Boltzmann distribution P(E) ~ exp(-E/kT)`, which does not exist
+- `sc2_physics_uncertainty_principle` points at `Δx · Δp ≥ ℏ/2; cannot know position and momentum simultaneously with arbitrary precision`, which does not exist
+- `sc2_physics_viscosity` points at `Shear stress τ = η (dv/dy); viscosity η depends on fluid and temperature; Stokes drag`, which does not exist
+- `sc2_physics_wave_mechanics` points at `Ψ(x,t) is wave function; |Ψ|² is probability density; iℏ ∂Ψ/∂t = -ℏ²/2m ∇²Ψ + V Ψ`, which does not exist
+- `sc2_physics_wave_motion` points at `∂²u/∂t² = v² ∂²u/∂x²; solutions are traveling and standing waves`, which does not exist
+- `sc2_physics_work_power` points at `Work W = F · d (force dot displacement); power P = dW/dt; efficiency = output/input`, which does not exist
+- `sc2_probability_axioms` points at `P(A or B) = P(A) + P(B) - P(A and B); P(A|B) = P(A and B)/P(B); Bayes' theorem`, which does not exist
+- `sc2_probability_central_limit` points at `Sum of many independent random variables is approximately normal, regardless of their individual distributions`, which does not exist
+- `sc2_probability_combinatorics` points at `nPr = n!/(n-r)!, nCr = n!/(r!(n-r)!); binomial coefficients C(n,k)`, which does not exist
+- `sc2_probability_normal_distribution` points at `f(x) = (1/(σ√(2π))) exp(-(x-μ)²/(2σ²)); most natural distribution for sums of independent errors`, which does not exist
+- `sc2_statistics_anova` points at `Partitions variance into groups and residuals; F-test whether group means differ`, which does not exist
+- `sc2_statistics_blinding` points at `Neither subject nor experimenter knows who got treatment; reveals biases in observation and reporting`, which does not exist
+- `sc2_statistics_blocking` points at `Divide subjects into homogeneous blocks, randomise within block, to reduce variance from known confounders`, which does not exist
+- `sc2_statistics_confidence_interval` points at `95% CI is estimate ± 1.96 SE; if we repeat the survey 100 times, about 95 contain the true value`, which does not exist
+- `sc2_statistics_control_chart` points at `Plot process output over time with control limits (μ ± 3σ); trends or excursions signal problems`, which does not exist
+- `sc2_statistics_control_group` points at `Run the same experiment without treatment to measure placebo effect and natural variation`, which does not exist
+- `sc2_statistics_correlation` points at `Pearson r = Σ(x-μx)(y-μy) / (n σx σy); r ranges from -1 to +1; r² is fraction of variance explained`, which does not exist
+- `sc2_statistics_mean_variance` points at `Mean μ = sum/n; variance σ² = average squared deviation; standard deviation σ = √(variance)`, which does not exist
+- `sc2_statistics_mortality_table` points at `Probability of death at each age; lx survivors at age x; ex life expectancy`, which does not exist
+- `sc2_statistics_randomisation` points at `Assigning subjects to treatment or control by random mechanism ensures balance on unknown confounders`, which does not exist
+- `sc2_statistics_regression` points at `y = a + bx where b = r(σy/σx); minimizes squared vertical distances`, which does not exist
+- `sc2_statistics_sampling_theory` points at `SE = σ/√n; determines precision of sample mean estimate; confidence interval is mean ± t*SE`, which does not exist
+- `sc2_statistics_significance_test` points at `p is probability of data if null hypothesis is true; p < 0.05 usually means reject null`, which does not exist
+- `sc2_statistics_t_test` points at `t = (mean1 - mean2) / (SE of difference); compares two small samples`, which does not exist
 

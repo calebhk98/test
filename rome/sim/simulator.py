@@ -20,6 +20,7 @@ No third-party dependencies. Python 3.8+.
 
 import argparse, json, math, os, random, sys
 sys.setrecursionlimit(20000)
+import collections
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -33,6 +34,10 @@ STRATS = os.path.join(HERE, "strategies")
 # ----------------------------------------------------------------------------
 
 CIVDIR = os.path.join(ROOT, "data", "civilizations")
+RESFILE = os.path.join(ROOT, "data", "world", "resources.json")
+
+def load_resources():
+    return json.load(open(RESFILE))
 
 def load_civ(name="rome_100ad"):
     """A civilization is DATA, not code. Swapping Rome for Han China, Viking
@@ -239,6 +244,16 @@ class Sim:
         self.manumitted_total = 0
         self.living_cost_paid = 0.0
         self.atrocity = 0           # counted, never scored as a benefit
+        # --- RAW MATERIAL QUANTITIES -------------------------------------
+        # Until this existed the model assumed that if a material existed
+        # anywhere you had unlimited quantities of it. That was the largest
+        # remaining falsehood in the simulation.
+        self.res = load_resources()
+        self.forest_ha = 0.0        # coppice you own, in hectares
+        self.nitre_bed_m2 = 0.0
+        self.shortages = collections.Counter()
+        self.throttle = 1.0
+        self.binding = None
         # whatever this civilization already has is free and already done
         for k in self.civ.get("starting_techs", []):
             if k in self.nodes:
@@ -400,6 +415,84 @@ class Sim:
 
     def upkeep(self):
         return sum(self.nodes[k]["up"] for k in self.done)
+
+    # ---- raw material supply ------------------------------------------------
+    CHARCOAL_PER_HA = 0.75          # tonnes per hectare per year, sustainable
+    # How much of the empire's annual output you can actually BUY. This is not
+    # one number: charcoal is bulky, crumbles when carted, and is therefore a
+    # LOCAL commodity no matter how much of it the empire makes in total, while
+    # coal is barely used by anyone so you can have almost all of it.
+    MARKET_SHARE = {"charcoal": 0.002, "iron": 0.03, "copper": 0.03, "lead": 0.03,
+                    "tin": 0.05, "silver": 0.01, "coal": 0.50, "saltpetre": 0.0}
+
+    def annual_material_demand(self):
+        """Tonnes per year of the materials that actually bind, from work in hand."""
+        d = collections.Counter()
+        for k in self.active:
+            n = self.nodes[k]
+            span = max(1.0, float(n.get("build_yrs") or n.get("yrs") or 1.0))
+            for m, q in n["mat"].items():
+                d[m] += float(q) / span / 1000.0     # kg -> tonnes per year
+        # A furnace does not eat charcoal only while it is being built. It eats
+        # charcoal every year it runs, forever. Omitting that was why forest
+        # ownership never mattered in the model and always mattered in reality.
+        for k in self.done:
+            n = self.nodes[k]
+            if n["up"] <= 0 or not n["mat"]:
+                continue
+            span = max(1.0, float(n.get("build_yrs") or n.get("yrs") or 1.0))
+            for m, q in n["mat"].items():
+                d[m] += 0.5 * float(q) / span / 1000.0
+        return d
+
+    def resource_throttle(self):
+        """How much of this year's planned work the materials will actually support.
+
+        Charcoal is the one that bites, because it is not mined, it is GROWN.
+        A hectare of coppice yields about 0.75 tonnes of charcoal a year, and a
+        single blast furnace making 300 tonnes of iron eats 900 tonnes of it. If
+        you have not bought the woodland, the furnace idles.
+        """
+        emp = self.res["empire_output_100ad"]
+        demand = self.annual_material_demand()
+        worst, who = 1.0, None
+        checks = {
+            "charcoal_kg": ("charcoal", self.forest_ha * self.CHARCOAL_PER_HA),
+            "firewood_kg": ("charcoal", self.forest_ha * self.CHARCOAL_PER_HA * 4),
+            "iron_bar_kg": ("iron", 0.0), "iron_ore_kg": ("iron", 0.0),
+            "coal_kg": ("coal", 0.0), "copper_kg": ("copper", 0.0),
+            "lead_kg": ("lead", 0.0), "tin_kg": ("tin", 0.0),
+            "silver_kg": ("silver", 0.0), "nitre_kg": ("saltpetre", self.nitre_bed_m2 * 0.0008),
+        }
+        for mat, (emp_key, own) in checks.items():
+            need = demand.get(mat, 0.0)
+            if need <= 0:
+                continue
+            share = self.MARKET_SHARE.get(emp_key, 0.03)
+            market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * self.pop_scale
+            # Bengal saltpetre: an existing annual sea route, not a nitre bed.
+            # This is the single most useful thing in the geography file.
+            if emp_key == "saltpetre" and self.has("exp_trade_route_extend"):
+                market += 60.0
+            supply = own + market
+            if supply < need:
+                f = max(0.05, supply / need)
+                if f < worst:
+                    worst, who = f, emp_key
+        self.throttle, self.binding = worst, who
+        if who:
+            self.shortages[who] += 1
+        return worst
+
+    def buy_forest(self, ha):
+        """Coppice woodland, bought outright. The cheapest thing in the tree that
+        nobody thinks to buy, and the one that decides whether a furnace runs."""
+        cost = ha * 250.0 * self.price_index      # ~1 iugerum of woodland per 0.25 ha
+        if cost > self.capital:
+            return 0.0
+        self.capital -= cost
+        self.forest_ha += ha
+        return ha
 
     def living_cost(self):
         """You have to eat, sleep somewhere, pay tax, and look the part.
@@ -608,6 +701,21 @@ class Sim:
                 continue
             self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0)
 
+        # 4c. materials. Buy the woodland and dig the beds BEFORE the shortage
+        #     bites, which is what a competent manager does and what the old
+        #     model never had to think about at all.
+        thr = self.resource_throttle()
+        if thr < 0.9 and self.capital > 3000:
+            if self.binding in ("charcoal", "iron", "copper", "lead"):
+                self.buy_forest(min(400.0, self.capital / 900.0))
+            elif self.binding == "saltpetre":
+                spend = min(self.capital * 0.05, 2000)
+                self.capital -= spend
+                self.nitre_bed_m2 += spend / 2.0
+        if thr < 0.6 and self.binding:
+            self.log.append((yr, "SHORT OF %s: work running at %d%% of plan"
+                             % (self.binding.upper(), thr * 100)))
+
         # 5. progress. Director hours go to the HIGHEST-PRIORITY active projects
         #    first, not spread evenly: a director who gives every project equal
         #    attention finishes nothing, which is a real failure mode but not the
@@ -618,7 +726,7 @@ class Sim:
         for k in active_sorted:
                 st = self.active[k]
                 n = self.nodes[k]
-                per = min(remaining, max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0)))
+                per = min(remaining, max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0))) * self.throttle
                 remaining -= per
                 st["ph_left"] -= per
                 self.director_hours_spent_founder += per if self.founder_alive else 0
@@ -954,6 +1062,15 @@ def _summarise(results, label):
               % (ys[0], q(.25), q(.5), q(.75), ys[-1]))
         start = results[0].cfg["start_year"]
         print("elapsed from %d AD  : median %d years" % (start, q(.5) - start))
+    sh = collections.Counter()
+    for r in results:
+        sh.update(r.shortages)
+    if sh:
+        print("years spent short of a raw material (median run):")
+        for k, v in sh.most_common(5):
+            print("   %-12s %d run-years" % (k, v))
+    fh = sorted(r.forest_ha for r in results)
+    print("coppice woodland owned: median %.0f hectares" % fh[len(fh) // 2])
     rep = sorted(r.reputation for r in results)
     print("final reputation    : median %.0f/100" % rep[len(rep) // 2])
     b = [r.bounties_paid for r in results]
