@@ -2089,7 +2089,15 @@ def _agent_state(s, nodes):
         "reputation": round(s.reputation, 1), "suspicion": round(s.suspicion, 2),
         "scandal": round(s.scandal, 2), "eminence": round(s.eminence, 2),
         "protection": round(s.protection, 3), "familiarity": round(s.familiarity, 3),
-        "done_count": len(s.done), "active": active,
+        # A playtester could not tell the difference between technologies the
+        # society already had and ones they had earned: about 140 nodes complete
+        # in year one and appeared in done_count as if the player had built
+        # them. Separate the two, because "you have 140 technologies" and "you
+        # have built 3 technologies" are very different situations.
+        "done_count": len(s.done),
+        "done_granted": len(s.granted & s.done),
+        "done_earned": len(s.done - s.granted),
+        "active": active,
         "resource_throttle": round(s.throttle, 3), "throttle_binding": s.binding,
         "forest_ha": round(s.forest_ha, 1),
         "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},

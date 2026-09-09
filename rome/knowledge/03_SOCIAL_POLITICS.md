@@ -19,7 +19,7 @@ So this module is about buying the right to keep working. Read it before you rea
 
 ---
 
-## The three things that can end you
+## The three things that can end you (there is a fourth, further down)
 
 Understand the actual threat model before you spend a denarius defending against the wrong one.
 
@@ -337,6 +337,62 @@ This is also where the guide's own honesty is tested. Elsewhere I have argued th
 **Confidence: HIGH** on the Crisis and on Egyptian preservation, **MEDIUM** on the specific sites.
 
 ---
+
+## The fourth thing that can end you, and it is the one you will not see coming
+
+Near the top of this module I listed three threats: the magistrate, the crowd,
+and your own success. That list was incomplete, and a playtester found the gap
+by being killed by something the guide never mentioned.
+
+**Eminence is a hazard in its own right, and none of your defences touch it.**
+
+Everything else in this module is a shield. Patrons, citizenship, a licensed
+collegium, a reputation for piety, and money spent on the right people all
+reduce the chance that an accusation lands. They work. Push them far enough and
+almost nothing can be made to stick.
+
+That is precisely the problem. In an autocracy the danger is not only that
+someone accuses you. It is that you become large enough to be worth removing,
+and the people best placed to remove you are the ones protecting you.
+
+Sejanus was the most protected man in Rome, Praetorian Prefect and the emperor's
+own instrument, until the morning a letter was read out in the Senate and he was
+dead by evening. Seneca was Nero's tutor and one of the richest men in the
+empire; he was ordered to open his veins. Thrasea Paetus was not accused of
+plotting anything. He was admired, he was conspicuous, and he was too obviously
+his own man. None of these were brought down by a mob or by a charge of sorcery.
+They were brought down by being too eminent in a system with one man at the top.
+
+**How the model treats it.** Prominence accumulates in a pool of its own,
+separately from ordinary suspicion, and it rises with your reputation and your
+visible wealth. Bribery does not reduce it. You can buy a magistrate, an accuser
+and a jury; you cannot buy an emperor's judgement that you have grown too large,
+and the attempt is itself evidence for the case. Holding imperial patronage
+makes it worse rather than better, because the closer you stand to the throne
+the more exposed you are to its turnover.
+
+Usually it costs you a bad year rather than your life. Roughly:
+
+- a confiscation, and you withdraw from public life for a while
+- a patron destroyed in somebody else's quarrel, taking his protection with him
+- and, less often, the end of the run
+
+**What actually reduces it.** One thing: dispersal. A network of academies in
+separate provinces is materially harder to destroy than one great man, and the
+model gives it about a third off. This is the same argument as the redundancy
+argument for surviving the Third Century Crisis, arrived at from a different
+direction, and it is the strongest reason to build the network before you think
+you need it.
+
+**What does not reduce it.** More money. More patrons. A better reputation.
+Those are the defences against everything else, and against this one they are
+the cause.
+
+The honest summary is that the game will let you become powerful enough that
+nothing can touch you, and then kill you for exactly that. Both halves are
+historically fair, and a player who has read only the first three threats will
+feel ambushed by the fourth. That was a real complaint from a real tester, and
+this section exists because of it.
 
 ## What this module does not let you do
 
