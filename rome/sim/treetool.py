@@ -529,7 +529,7 @@ def cmd_apply_caps(a):
     nodes = {n["id"]: n for n in tree["nodes"]}
     applied = refused = empty = unknown = 0
     reasons = {}
-    for f in sorted(glob.glob(os.path.join(DATA, "caps_fix_*.json"))):
+    for f in sorted(glob.glob(os.path.join(DATA, "review", "caps_fix_*.json"))):
         try:
             fixes = json.load(open(f))
         except Exception as e:

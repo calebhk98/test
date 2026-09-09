@@ -104,23 +104,29 @@ was made.
 
 ## Division of labour
 
-| Work | Done by | Notes |
-|---|---|---|
-| Branch setup, repository structure | author | |
-| `01_WORLD_STATE_100AD.md` | author | The gap list and the material sourcing table are the load-bearing content. |
-| `03_SOCIAL_POLITICS.md` | author | |
-| `knowledge/00_NONOBVIOUS_TRICKS.md` | author | The flagship file. |
-| `knowledge/_TEMPLATE.md` | author | Including the anachronism trap list given to every agent. |
-| `data/tech_tree.json` core spine (128 nodes) | author | Written by hand. |
-| `data/branches/` 15 domain files (1,048 nodes) | 15 Haiku subagents in parallel | Written to a strict CONTRACT and a fixed VOCABULARY of allowed prerequisite ids, then merged, validated and repaired by the author's tooling. |
-| `data/branches/00_capabilities.json`, `01_materials.json` | author | The capability rungs and material layer, which are the load-bearing correction to the first version. |
-| `sim/treetool.py` (merge, repair, judge) | author | The per-technology audit. |
-| `data/prices.json` | author | |
-| `sim/simulator.py` | author | |
-| `sim/strategies/*.json` | author | |
-| `00_BRIEFING.md`, `02_STRATEGY.md`, `04_ECONOMICS.md` | author | Numbers computed from the data files, not asserted. |
-| `log/playthrough_01.md` | generated | Real simulator output, not a story. |
-| `knowledge/10` through `knowledge/85` | 10 Sonnet subagents, 5 at a time | Each given the template, an explicit list of TECH_IDs matching the tree, and the anachronism trap list. |
+**Round 1: the 128-node version**
+
+| Work | Done by |
+|---|---|
+| Branch setup, repository structure, world state, social model, non-obvious tricks index, the 128-node core spine, prices, the simulator, the strategies, all prose | author |
+| 11 knowledge modules (10 through 99) | 10 Sonnet subagents, 5 at a time |
+| Adversarial fact-check of modules 10, 20, 30, 40 | 1 Sonnet subagent |
+
+**Round 2: the rebuild to 1,176 nodes**
+
+| Work | Done by |
+|---|---|
+| Capability rung layer (33 nodes) and material layer (77 nodes) | author. These are the load-bearing correction and were not delegated. |
+| The CONTRACT and VOCABULARY the branch authors worked to | author |
+| 15 domain branches, 1,048 nodes | 15 Haiku subagents in parallel |
+| `treetool.py` (merge, repair, apply-caps, judge) | author |
+| Simulator changes: immortality default, reputation, bug fixes | author |
+| 5 new knowledge modules (90 through 94) | 5 Haiku subagents |
+| **Independent audit of 70 sampled nodes** | 1 Sonnet subagent, deliberately given no sight of the author's own checker |
+| Node-by-node capability assignment, 318 nodes | 5 Haiku subagents |
+
+Agent budget observed throughout: never more than 5 Sonnet-equivalents at once,
+counting 3 Haiku as 1 Sonnet.
 
 ## Why the split fell that way
 
@@ -133,6 +139,26 @@ metallurgy recipe is a bug in one paragraph. A wrong prerequisite edge in
 
 That is the same allocation rule as Part 1, applied to this document: delegate
 what can be specified, keep what cannot.
+
+## The most important thing that happened in round 2
+
+I wrote a repair script that inferred missing capability prerequisites by
+matching keywords against each node's prose. It added 112 edges and my own audit
+score rose from 80.8 to 98.0.
+
+The independent reviewer then sampled 70 nodes and found that **every one of the
+eight carrying an inferred prerequisite was wrong.** A 1300 C blast furnace rung
+on a room-temperature explosives mix. A 1600 C furnace on a paperwork node about
+binary arithmetic. A vacuum rung on mercury extraction, which reverses the
+dependency, because mercury is what makes vacuum technology possible.
+
+All 112 were reverted. Inference is off by default. The score fell to 93.1.
+
+**I had already written, in round 1, that the danger was "my own checker being
+satisfied by my own repair", and then I did exactly that anyway.** Noticing a
+failure mode in prose is not the same as avoiding it. The thing that caught it
+was an outside reviewer with no sight of my heuristics, which is the only reason
+this project has a trustworthy number anywhere in it.
 
 ## Verification actually performed
 
