@@ -28,16 +28,39 @@ TITLES = {
  "99_AUDIT.md":             "Adversarial audit of the technical modules",
 }
 
+def github_slug(heading):
+    """Reproduce GitHub's heading-anchor algorithm.
+
+    Lowercase, strip anything that is not a word character, space or hyphen,
+    then turn spaces into hyphens. Underscores SURVIVE, which is the detail an
+    earlier version of this script got wrong: it emitted "#zinc-metal" for a
+    heading whose real anchor is "#zinc_metal---zinc-metal-by-downward-distillation".
+    Every link in the generated index was silently broken.
+    """
+    s = heading.strip().lower()
+    s = re.sub(r"[`*]", "", s)
+    s = re.sub(r"[^\w\s-]", "", s)
+    return re.sub(r"\s+", "-", s).strip("-")
+
+
 def main():
     tree = json.load(open(os.path.join(ROOT, "data", "tech_tree.json")))
     nodes = tree["nodes"]
 
+    slugs = {}          # file -> {tech_id: github anchor slug for the whole heading}
     anchors, files = {}, sorted(f for f in os.listdir(KB)
                                 if f.endswith(".md") and not f.startswith("_")
                                 and f != "README.md")
     for f in files:
         txt = open(os.path.join(KB, f)).read()
-        anchors[f] = set(re.findall(r"^###\s+`?([A-Za-z0-9_]+)`?", txt, re.M))
+        anchors[f], slugs[f] = set(), {}
+        for line in txt.splitlines():
+            m = re.match(r"^###\s+`?([A-Za-z0-9_]+)`?", line)
+            if not m:
+                continue
+            tid = m.group(1)
+            anchors[f].add(tid)
+            slugs[f][tid] = github_slug(line[3:].strip())
 
     # Some nodes are institutional or political rather than technical, and their
     # "how to" lives in the top-level prose files rather than in a recipe module.
@@ -104,9 +127,28 @@ def main():
         out += ["### %s" % f, "",
                 "| Node | Tier | Your hours | Recipe |", "|---|---:|---:|---|"]
         for n, a in sorted(by_file[f], key=lambda x: (x[0]["tier"], x[0]["id"])):
-            link = "[`%s`](%s#%s)" % (a, f, a.lower().replace("_", "-")) if a else "_(module has no anchor)_"
+            link = ("[`%s`](%s#%s)" % (a, f, slugs[f].get(a, a))) if a else "_(module has no anchor)_"
             mark = "" if (not a or a in anchors[f]) else " **BROKEN**"
             out.append("| `%s` | %d | %s | %s%s |" % (n["id"], n["tier"], f"{n['ph']:,}", link, mark))
+        out.append("")
+
+    # Inline cross-references written inside the modules themselves. Nothing
+    # validated these before, and 7 of them were broken.
+    parent_md = {f for f in os.listdir(ROOT) if f.endswith(".md")}
+    inline_bad = []
+    for f in files:
+        txt = open(os.path.join(KB, f)).read()
+        for m in re.finditer(r"([0-9A-Za-z_]+\.md)#([A-Za-z0-9_]+)", txt):
+            fn, an = m.group(1), m.group(2)
+            if fn in anchors:
+                if an not in anchors[fn]:
+                    inline_bad.append((f, fn + "#" + an, "no such entry"))
+            elif fn not in parent_md:
+                inline_bad.append((f, fn + "#" + an, "no such file"))
+    if inline_bad:
+        out += ["## Broken cross-references inside the modules", ""]
+        for a_, b_, c_ in inline_bad:
+            out.append("- `%s` links to `%s`: %s" % (a_, b_, c_))
         out.append("")
 
     if broken_file or broken_anchor:
@@ -125,9 +167,12 @@ def main():
              sum(len(v) for v in by_file.values()) + len(prose), len(nodes)))
     print("  broken files    : %d" % len(broken_file))
     print("  broken anchors  : %d" % len(broken_anchor))
+    print("  broken inline   : %d" % len(inline_bad))
+    for a_, b_, c_ in inline_bad:
+        print("     %-28s -> %-44s %s" % (a_, b_, c_))
     for i, k in broken_file + broken_anchor:
         print("     %-32s -> %s" % (i, k))
-    return 1 if (broken_file or broken_anchor) else 0
+    return 1 if (broken_file or broken_anchor or inline_bad) else 0
 
 if __name__ == "__main__":
     sys.exit(main())

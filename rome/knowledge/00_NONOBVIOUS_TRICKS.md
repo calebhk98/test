@@ -197,20 +197,20 @@ verify that your germanium is actually germanium.
 A coil of known radius and turn count, a compass needle at its centre, and the
 Earth's field. You get absolute current measurement with no calibrated
 instrument to start from. This solves the electrical metrology bootstrap.
-→ `55_semiconductors.md#galvanometer`
+→ `50_electricity.md#galvanometer`
 
 **24. Self-excitation solves the dynamo chicken-and-egg.** You need a magnetic
 field to generate current, and an electromagnet needs current. Residual
 magnetism in the iron core is enough to start it, and it builds up. Nobody
 guesses this; everybody assumes you need permanent magnets.
-→ `55_semiconductors.md#dynamo_motor`
+→ `50_electricity.md#dynamo_motor`
 
 **25. You have no rubber. Insulate with silk, oiled linen and shellac.**
 There is no natural rubber and no gutta percha in the Old World until the
 Americas open. Wire insulation is a genuine blocker and the answers are silk
 wrapping, linseed-oil varnish, shellac imported via the Indian trade, and
 bitumen for cables.
-→ `55_semiconductors.md#wire_insulation`
+→ `50_electricity.md#wire_insulation`
 
 **26. Wilkinson's boring mill, not the idea of steam, is what gates the steam
 engine.** Newcomen and Watt both had the concept long before anyone could bore

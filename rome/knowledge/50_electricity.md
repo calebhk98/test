@@ -16,7 +16,7 @@ Three things decide the shape of this whole module. Read them before anything el
 
 **Why you would never guess this.** High voltage at negligible current can shock, spark, jump a gap, charge a jar; it cannot light a lamp or run a motor. Current is the missing ingredient the rest of the module supplies. No electromagnetic theory is needed.
 
-**Prerequisites.** Glassblowing (`30_glass_optics.md#glassblowing`), tin or silver foil, dry silk or catskin, sulfur or resin.
+**Prerequisites.** Glassblowing (`30_glass_optics.md#glass_lab_ware`), tin or silver foil, dry silk or catskin, sulfur or resin.
 
 **Roman-available inputs.** Blown glass globe or cylinder; tin foil (Cornwall/Iberia); dry wool, catskin or silk rubbing pad; amber (*electrum*, Baltic Amber Road, known since Thales to attract chaff); pitch or bitumen for an electrophorus cake.
 
@@ -103,7 +103,7 @@ Three things decide the shape of this whole module. Read them before anything el
 
 **Prerequisites.** `voltaic_pile` (zinc supply, cell-building skill), copper sulfate (*blue vitriol*, native, Cyprus/Spain), unglazed earthenware.
 
-**Roman-available inputs.** Copper sulfate crystals (blue vitriol, Cyprus/Rio Tinto); zinc plate; dilute acid brine or plain brine for the zinc side (zinc sulfate better if available, `20_chemistry.md#vitriols`); unglazed clay pot as porous membrane, or bladder/parchment diaphragm.
+**Roman-available inputs.** Copper sulfate crystals (blue vitriol, Cyprus/Rio Tinto); zinc plate; dilute acid brine or plain brine for the zinc side (zinc sulfate better if available, `20_chemistry.md#sulfuric_acid_retort`); unglazed clay pot as porous membrane, or bladder/parchment diaphragm.
 
 **Procedure.**
 1. Outer vessel: copper plate rolled into a cylinder, standing in saturated copper sulfate solution.
@@ -129,7 +129,7 @@ Three things decide the shape of this whole module. Read them before anything el
 
 **Why you would never guess this.** That a lead plate "charges" into two different active materials (spongy lead and lead dioxide) by simply running current through it in acid, rather than being built already-charged, is not intuitive.
 
-**Prerequisites.** `daniell_cell` (or `dynamo_motor`) as charging source, sulfuric acid (`20_chemistry.md#sulfuric_acid`), lead, litharge.
+**Prerequisites.** `daniell_cell` (or `dynamo_motor`) as charging source, sulfuric acid (`20_chemistry.md#sulfuric_acid_retort`), lead, litharge.
 
 **Roman-available inputs.** Lead sheet and litharge (cupellation byproduct, already produced from silver refining); dilute sulfuric acid (roasted/distilled green vitriol, laborious but attested); glass or wax-lined wood cell.
 
@@ -157,7 +157,7 @@ Three things decide the shape of this whole module. Read them before anything el
 
 **Why you would never guess this.** Obvious once needed; the twist is shellac, normally solvent-cast in alcohol, must be applied hot-melt in Rome because there is no distilled spirit to dissolve it in.
 
-**Prerequisites.** Drawn copper wire (`10_metallurgy.md#copper_metal`), silk or flax thread, linseed oil, lac resin (Indian Ocean trade), bitumen (Judaea/Mesopotamia).
+**Prerequisites.** Drawn copper wire (`10_metallurgy.md#copper_refining`), silk or flax thread, linseed oil, lac resin (Indian Ocean trade), bitumen (Judaea/Mesopotamia).
 
 **Roman-available inputs.** Copper wire, iron drawplate; raw silk (costly import) or flax/linen thread (cheap, local); linseed oil (pressed flax, common); shellac/lac resin (India, Red Sea/Indian Ocean route, the Periplus trade); bitumen (Dead Sea or Hit, Mesopotamia).
 
@@ -390,27 +390,27 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### arc_light - carbon arc lamp
 
-**What it is / why you want it.** Two carbon rods with a high-current, low-voltage supply between them strike a blinding, sustained electric arc, the first electric light bright enough to matter for a public square or a lighthouse.
+**What it is / why you want it.** Two carbon rods with a high-current, low-voltage supply strike a blinding, sustained arc, the first electric light bright enough for a public square or lighthouse.
 
-**Why you would never guess this.** That pulling two touching conductors slightly apart under load creates a stable, self-sustaining glowing gas bridge (ionised air/carbon vapour) rather than simply extinguishing the circuit, is not predictable from the batteries-and-wires picture built so far.
+**Why you would never guess this.** That pulling two touching conductors slightly apart under load creates a stable, self-sustaining glowing gas bridge, rather than simply extinguishing the circuit, is not predictable from the batteries-and-wires picture so far.
 
-**Prerequisites.** `dynamo_motor` (batteries alone are too weak/short-lived for sustained arc use), pure carbon rod stock.
+**Prerequisites.** `dynamo_motor` (batteries too weak/short-lived for sustained arc use), pure carbon rod stock.
 
-**Roman-available inputs.** Charred hardwood or lampblack pressed and baked into rod form for carbon electrodes; dynamo-supplied current.
+**Roman-available inputs.** Charred hardwood or lampblack pressed and baked into rods; dynamo-supplied current.
 
 **Procedure.**
-1. Prepare carbon rods: char dense hardwood in a low-air kiln, or press lampblack with a starch binder into rod moulds and bake hard, roughly 1 cm diameter, 20-30 cm long.
-2. Mount two rods point to point in a lamp housing, connected to a dynamo supply of roughly 40-60 V and several tens of amps for a bright arc.
-3. Touch the rods together to strike the arc, then draw them apart a few mm, the arc bridges the gap and glows intensely.
-4. Fit a simple clockwork or weighted feed mechanism to advance the rods slowly as their tips burn away, maintaining the gap automatically.
+1. Prepare carbon rods: char dense hardwood in a low-air kiln, or press lampblack with a starch binder into rod moulds and bake hard, ~1 cm diameter, 20-30 cm long.
+2. Mount two rods point to point, connected to a dynamo supply of ~40-60 V and several tens of amps.
+3. Touch rods together to strike the arc, draw apart a few mm, the arc bridges the gap and glows intensely.
+4. Fit a clockwork or weighted feed to advance the rods as tips burn away, maintaining the gap automatically.
 
-**How you know it worked.** A stable, steady, very bright blue-white light with a faint hiss, rods visibly shorten over the course of an hour.
+**How you know it worked.** Stable, very bright blue-white light with a faint hiss, rods visibly shorten over an hour.
 
-**Failure modes.** Gap too wide extinguishes the arc, too narrow just short-circuits with no arc at all. Rods of inconsistent density burn unevenly and the arc wanders or dies.
+**Failure modes.** Gap too wide extinguishes the arc, too narrow short-circuits with no arc. Inconsistent rod density burns unevenly, arc wanders or dies.
 
-**Cost & labour.** ESTIMATED. Rod-making is cheap; the dynamo supply is the real capital cost, shared with other module entries.
+**Cost & labour.** ESTIMATED. Rod-making is cheap; the dynamo supply is the real capital cost, shared with other entries.
 
-**Danger.** Arc light is dangerously bright to view directly (eye damage with prolonged close viewing) and the electrodes run very hot, fire risk if housed carelessly. High current supply is a serious shock and burn hazard at the terminals.
+**Danger.** Dangerously bright to view directly, electrodes run very hot, fire risk if housed carelessly. High current supply is a serious shock/burn hazard at the terminals.
 
 **Confidence: HIGH** - simple, well attested 19th-century technology, no material gap once a dynamo exists.
 
@@ -418,32 +418,32 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### incandescent_lamp - filament lamp, carbon then tungsten
 
-**What it is / why you want it.** A thin filament heated to incandescence inside an evacuated glass bulb gives soft, steady, room-scale light, safe and practical in a way an open arc is not, and in a city whose insulae burn down routinely, "light without flame" is a serious public-safety selling point.
+**What it is / why you want it.** A thin filament heated to incandescence inside an evacuated glass bulb gives soft, steady, room-scale light, safer and more practical than an open arc, and in a city whose insulae burn down routinely, "light without flame" is a serious public-safety selling point.
 
-**Why you would never guess this.** The vacuum requirement is the trap: a filament heated to glowing in open air burns to ash in seconds, and it is not obvious beforehand that removing the air entirely, rather than somehow protecting the filament, is the actual fix.
+**Why you would never guess this.** The vacuum requirement is the trap: a filament glowing in open air burns to ash in seconds, and it is not obvious beforehand that removing the air entirely, rather than protecting the filament some other way, is the actual fix.
 
-**Prerequisites.** `30_glass_optics.md#glassblowing`, `dynamo_motor` or a large battery bank, a vacuum-pumping method.
+**Prerequisites.** `30_glass_optics.md#glass_lab_ware`, `dynamo_motor` or a large battery bank, a vacuum-pumping method.
 
-**Roman-available inputs.** Carbonised bamboo fibre or cotton thread for the first-generation filament (charred in a sealed crucible, no air, until it is pure brittle carbon); blown glass bulbs; mercury (Almadén, Spain, imperially operated mines) for a mercury-column vacuum pump built on the same siphon/piston principles as existing Roman force pumps.
+**Roman-available inputs.** Carbonised bamboo fibre or cotton thread for the first-generation filament (charred in a sealed crucible until pure brittle carbon); blown glass bulbs; mercury (Almadén, Spain) for a mercury-column vacuum pump built on the same siphon/piston principles as existing Roman force pumps.
 
 **Procedure.**
-1. Carbonise a thin thread or bamboo splint: seal it in a covered crucible packed with charcoal dust (excludes air), heat to a dull-to-cherry red for an hour or more, cool before opening, the thread comes out as fragile pure carbon, shape it into a thin loop or filament before or during carbonising.
-2. Mount the carbon filament on two lead-in wires sealed through the glass bulb's neck (a glassblowing skill, sealing metal through glass without cracking it).
-3. Evacuate the bulb: connect to a mercury or piston vacuum pump before sealing the neck shut, draw as hard a vacuum as the pump achieves, residual air still oxidises the filament slowly, so "as good a vacuum as achievable" is the standing goal, not a fixed number.
-4. Seal the neck closed under vacuum (glassblower's torch, working fast).
-5. Connect to a dynamo or large battery bank at low voltage, high current, the filament glows orange-yellow when correctly matched to the supply.
+1. Carbonise a thin thread or bamboo splint: seal in a covered crucible packed with charcoal dust (excludes air), heat to dull-to-cherry red for an hour or more, cool before opening, shape into a loop or filament before or during carbonising.
+2. Mount the filament on two lead-in wires sealed through the glass bulb's neck (a glassblowing skill, sealing metal through glass without cracking it).
+3. Evacuate the bulb with a mercury or piston vacuum pump before sealing, draw as hard a vacuum as the pump achieves, residual air still slowly oxidises the filament so this is a standing goal, not a fixed number.
+4. Seal the neck closed under vacuum, working fast.
+5. Connect to a dynamo or large battery bank at low voltage, high current, the filament glows orange-yellow when matched correctly.
 
-**How you know it worked.** Steady, sustained glow for extended use (target hours, not seconds); a bulb with a poor vacuum blackens inside and the filament burns out within minutes, a good one lasts far longer.
+**How you know it worked.** Steady, sustained glow for hours, not seconds; a poor vacuum blackens the bulb and burns out the filament within minutes.
 
-**Failure modes.** Any air leak at the glass-metal seal shortens filament life drastically, test seals carefully before committing a finished filament. Filament too thick draws too much current for available supply and never gets hot enough to glow; too thin burns out almost immediately.
+**Failure modes.** Any glass-metal seal leak shortens filament life drastically, test seals before committing a finished filament. Filament too thick draws too much current and never glows; too thin burns out almost immediately.
 
-**Cost & labour.** ESTIMATED. A skilled glassblower-day per bulb early on, dropping fast with practice; the vacuum pump is a one-time capital build, reused for every bulb after.
+**Cost & labour.** ESTIMATED. A glassblower-day per bulb early on, dropping fast with practice; the vacuum pump is a one-time capital build, reused for every bulb.
 
-**Tungsten upgrade, later stage.** Tungsten filaments run hotter and last far longer than carbon, but tungsten ore is scarce, its extraction and the powder-metallurgy techniques needed to draw it into fine wire (melting point 3422 C, far beyond any Roman furnace, so it must be sintered from powder, not cast) are a substantial separate technology project. Treat carbon filaments as the workable centuries-long solution and tungsten as a distant stretch goal, not a near-term requirement.
+**Tungsten upgrade, later stage.** Tungsten runs hotter and lasts far longer than carbon, but tungsten ore is scarce and its melting point (3422 C) is far beyond any Roman furnace, it must be sintered from powder, a substantial separate project. Carbon filaments are the workable centuries-long solution, tungsten a distant stretch goal.
 
-**Danger.** Vacuum-sealed glass bulbs can implode if struck or over-stressed, throwing glass fragments. Mercury (for the vacuum pump) is a cumulative poison, handle spills immediately and never heat mercury in an open room.
+**Danger.** Vacuum-sealed bulbs can implode if struck, throwing glass fragments. Mercury is a cumulative poison, handle spills immediately, never heat it in an open room.
 
-**Political value.** Rome's insulae burn constantly (the fire of 64 AD under Nero is the famous case, but tenement fires from oil lamps and cooking fires are a routine hazard throughout the city). A sealed glass bulb that gives light with no open flame, no oil to spill, and no wick to tip over is a direct, visible answer to the city's single most dangerous everyday risk, and is worth making explicitly in any pitch for imperial or civic funding.
+**Political value.** Rome's insulae burn constantly (the 64 AD fire under Nero the famous case, but oil-lamp and cooking-fire tenement fires are routine). A sealed bulb with no open flame, no oil to spill, no wick to tip is a direct, visible answer to the city's most dangerous everyday risk, worth stating explicitly in any funding pitch.
 
 **Confidence: MEDIUM for carbon filament** (textbook 1870s-80s technology, every material Roman-reachable, but the vacuum pump and glass-metal seal both need real practiced skill); **LOW for tungsten** (metallurgically far beyond near-term Roman capability, flagged as a later-centuries upgrade only).
 
@@ -451,4 +451,4 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ## Sources and confidence
 
-The physics and chemistry throughout are standard 18th-20th century textbook material (Volta 1800, Daniell 1836, Gauss's absolute magnetic measurements 1832, Wheatstone bridge popularised 1843 after Christie 1833, Pacinotti/Gramme/self-excitation dynamos 1860s, Edison/Swan incandescent lamps 1879-80, Hall-Heroult aluminium 1886); none of it is in doubt. What is genuinely uncertain is Roman-era feasibility of specific material substitutions: shellac's hot-melt application in place of a solvent varnish, sulfuric acid production by vitriol distillation at useful scale, and a Roman-sourced synthetic cryolite chain for aluminium, all marked MEDIUM or LOW above and flagged as schedule risks rather than physics risks. Roman antiquity already had a documented, if unexplained, brush with bioelectricity: Scribonius Largus (1st century AD, *Compositiones*) recommended standing on a live torpedo/electric ray to treat headache and gout, attested, unverified beyond the secondary literature, worth mentioning to a Roman audience as evidence the phenomenon was never truly unknown to them, only unexplained. Cross-references: `10_metallurgy.md#zinc_metal` for the zinc bottleneck, `10_metallurgy.md#copper_metal` for wire stock, `20_chemistry.md#sulfuric_acid` and `#vitriols` for acid and vitriol chemistry, `30_glass_optics.md#glassblowing` for jars, bulbs, and sealed vacuum vessels.
+The physics and chemistry here are standard 18th-20th century textbook material (Volta 1800, Daniell 1836, Gauss's absolute magnetic measurements 1832, Wheatstone bridge 1843/Christie 1833, self-excitation dynamos 1860s, Edison/Swan lamps 1879-80, Hall-Heroult aluminium 1886), none of it in doubt. Genuinely uncertain: Roman-era feasibility of specific substitutions, shellac's hot-melt application, sulfuric acid at useful scale, a Roman-sourced synthetic cryolite chain, all marked MEDIUM or LOW above as schedule risks, not physics risks. Roman antiquity already had a documented, unexplained brush with bioelectricity: Scribonius Largus (1st century AD, *Compositiones*) recommended standing on a live torpedo ray for headache and gout, attributed, unverified beyond secondary literature, worth citing as evidence the phenomenon was never wholly unknown to them. Cross-references: `10_metallurgy.md#zinc_metal`, `10_metallurgy.md#copper_refining`, `20_chemistry.md#sulfuric_acid_retort` and `#vitriols`, `30_glass_optics.md#glass_lab_ware`.
