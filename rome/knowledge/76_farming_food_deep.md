@@ -7,7 +7,7 @@ Rome feeds roughly a million people in the capital with plough, terracing, irrig
 ### ag2_rhizobia - Legume root nodules and the nitrogen cycle (*attributed*)
 Also covers: ag2_nitrogen_cycle.
 
-**What it is / why you want it.** A legume root nodule's pink-red interior holds bacteria fixing atmospheric nitrogen into soil, the mechanism behind why a legume year restores land.
+**What it is / why you want it.** A legume root nodule's pink-red interior holds bacteria fixing atmospheric nitrogen into soil, why a legume year restores land.
 
 **Why you would never guess this.** A nodule looks like a disease, not a factory.
 
@@ -17,11 +17,11 @@ Also covers: ag2_nitrogen_cycle.
 
 **Procedure.** 1. Cut nodules from a legume root; pink-red means active, grey-brown dead. 2. Compare wheat after a legume year against wheat after fallow.
 
-**How you know it worked.** Wheat after legumes stands markedly thicker than after fallow.
+**How you know it worked.** Wheat after legumes stands thicker than after fallow.
 
-**Failure modes.** Waterlogged or acid soil kills the bacteria; only nodule colour reveals it.
+**Failure modes.** Waterlogged or acid soil kills the bacteria; nodule colour reveals it.
 
-**Cost & labour.** ESTIMATED (one season's observation, no tools).
+**Cost & labour.** ESTIMATED (basis: one season's observation of two adjacent plots, no tools and no capital).
 
 **Danger.** None.
 
@@ -42,18 +42,18 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **How you know it worked.** ESTIMATED roughly a third more cropped land yearly; wheat matches or beats fallow-rotation wheat within a few cycles.
 
-**Failure modes.** Skipping folding wastes the gain; repeated clover causes "clover sickness."
+**Failure modes.** Skipping folding wastes the gain; repeated clover causes clover sickness.
 
-**Cost & labour.** DERIVED: no new capital, reordered existing seed and stock.
+**Cost & labour.** DERIVED: reordered existing seed and stock.
 
-**Danger.** None; socially, fallow-taught farmers may resist.
+**Danger.** None; fallow-taught farmers may resist.
 
 **Confidence: HIGH.**
 
 ### ag2_guano, ag2_bone_meal, ag2_basic_slag - Imported and recycled phosphate
 **What it is / why you want it.** Guano (arid-coast seabird droppings) is far more concentrated than manure. Bone meal (ground, steamed) releases phosphorus over three to five years.
 
-**Why you would never guess this.** Guano needs a rainless coast no Mediterranean shore offers; bone meal needs steaming or it releases too slowly; slag needs the sense to keep smelting "waste."
+**Why you would never guess this.** Guano needs a rainless coast no Mediterranean shore offers; bone meal needs steaming or it releases too slowly.
 
 **Prerequisites.** Guano: an arid-coast voyage (`95_expeditions.md`). Bone meal: a mill and steam source. Slag: a furnace on phosphoric ore.
 
@@ -63,7 +63,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **How you know it worked.** Guano acts within a season like strong manure; bone meal/slag thicken crops gradually.
 
-**Failure modes.** Unground material is nearly inert.
+**Failure modes.** Unground material is inert.
 
 **Cost & labour.** DERIVED: guano scales with voyage cost; the rest reuses waste streams.
 
@@ -103,11 +103,11 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Procedure.** 1. Leach ash, evaporate to a liquor. 2. Test doses on marked strips, watching for scorched edges (excess) or stronger stems (correct).
 
-**How you know it worked.** Moderate dose strengthens straw without leaf damage.
+**How you know it worked.** Moderate dose strengthens straw, no leaf damage.
 
-**Failure modes.** Over-application salinises and cuts yield.
+**Failure modes.** Over-application salinises soil.
 
-**Cost & labour.** ESTIMATED (existing leaching technique, low cost).
+**Cost & labour.** ESTIMATED: existing technique, low cost.
 
 **Danger.** Concentrated liquor is caustic like lye.
 
@@ -116,7 +116,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_gasworks_ammonia, ag2_urea - Synthetic nitrogen
 **What it is / why you want it.** Ammonium sulphate from coal-gas liquor is roughly 20% nitrogen, active within weeks. Urea is pure manufactured nitrogen, needing full Haber-Bosch synthesis.
 
-**Why you would never guess this.** That gasworks waste is valuable plant food is not obvious; making nitrogen from air and water is the deepest surprise, beyond unaided Roman chemistry.
+**Why you would never guess this.** That gasworks waste is valuable plant food is not obvious; making nitrogen from air and water is beyond unaided Roman chemistry.
 
 **Prerequisites.** A coal-gas industry (`20_chemistry.md`, `93_energy.md`); `chm_haber_bosch` for urea.
 
@@ -158,7 +158,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_erosion_control, ag2_terracing, ag2_contour_ploughing - Keeping soil in place
 **What it is / why you want it.** Windbreaks and mulch blunt rain impact; terracing benches a slope; contour ploughing furrows across it, not down it.
 
-**Why you would never guess this.** Rome already terraces; the missed detail is a slight inward tilt per bench so water soaks instead of sheeting off, invisible until the first storm.
+**Why you would never guess this.** Rome already terraces; the missed detail is a slight inward bench tilt so water soaks instead of sheeting off.
 
 **Prerequisites.** A level (chorobates, `85_transport_civil.md`).
 
@@ -168,11 +168,11 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **How you know it worked.** Treated slopes show no new gullies after heavy rain.
 
-**Failure modes.** A flat or outward-sloping bench washes out.
+**Failure modes.** A flat bench washes out.
 
 **Cost & labour.** ESTIMATED: terracing is heavy one-time labour; the rest near-zero.
 
-**Danger.** None beyond ordinary slope work.
+**Danger.** None.
 
 **Confidence: HIGH.**
 
@@ -214,7 +214,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Cost & labour.** ESTIMATED: a carpenter-blacksmith pair, days to weeks.
 
-**Danger.** None beyond ordinary draft-animal handling.
+**Danger.** None.
 
 **Confidence: HIGH.**
 
@@ -231,11 +231,11 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **How you know it worked.** Subsoiled ground drains a heavy rain within a day.
 
-**Failure modes.** Rolling wet clay crusts the surface.
+**Failure modes.** Wet-clay rolling crusts the surface.
 
 **Cost & labour.** ESTIMATED: existing implement-scale ironwork.
 
-**Danger.** None beyond ordinary tool handling.
+**Danger.** None.
 
 **Confidence: HIGH.**
 
@@ -254,7 +254,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Failure modes.** Close-set blades clog; a shallow lifter slices the crop.
 
-**Cost & labour.** ESTIMATED: standard implement-scale ironwork.
+**Cost & labour.** ESTIMATED: standard ironwork.
 
 **Danger.** Root cutter blades risk amputation if hand-fed; guard the hopper.
 
@@ -338,7 +338,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Failure modes.** A missing differential cannot turn; a mistensioned track throws itself off.
 
-**Cost & labour.** ESTIMATED as late-stage, gated entirely on `93_energy.md`.
+**Cost & labour.** ESTIMATED (basis: not costed here because the cost is the engine, not the implement; see `93_energy.md` for the internal combustion chain this waits on).
 
 **Danger.** Boiler-explosion risk; tracks are entanglement hazards.
 
@@ -361,7 +361,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Cost & labour.** ESTIMATED: existing orchard tools, multi-season record-keeping.
 
-**Danger.** Ordinary knife-cut risk.
+**Danger.** Ordinary cut risk.
 
 **Confidence: HIGH**, close to attested Columella practice (*De Re Rustica* V, attributed).
 
@@ -473,7 +473,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_botanic_garden, ag2_wardian_case, ag2_plant_quarantine - Moving living plants across oceans
 **What it is / why you want it.** A botanic garden propagates at multiple sites and staggers shipments so one loss does not end the effort; the Wardian case, a sealed glass box, recycles its own condensation, keeping soil moist for months unopened; quarantine isolates arrivals until disease symptoms would show.
 
-**Why you would never guess this.** A sealed box keeping a plant alive for months looks impossible until the cycle is understood: night condensation drips back; opening it "to check" kills the plant.
+**Why you would never guess this.** A sealed box keeping a plant alive for months looks impossible: night condensation drips back; opening it "to check" kills the plant.
 
 **Prerequisites.** Clear Roman glass (`30_glass_optics.md`), case carpentry, an ocean voyage (`95_expeditions.md`).
 
@@ -655,14 +655,14 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Cost & labour.** ESTIMATED: reuses existing materials, modest new tooling.
 
-**Danger.** None beyond ordinary glass-handling cuts.
+**Danger.** None beyond ordinary cuts.
 
 **Confidence: HIGH.**
 
 ### ag2_butter, ag2_cheese_families, ag2_condensed_milk, ag2_evaporated_milk - Dairy processing and preservation
 **What it is / why you want it.** Butter churning inverts an emulsion, fat flipping from droplets to the continuous phase; hard cheeses cut and cook curd hot before pressing, soft cheeses set curd low with minimal handling; condensed milk vacuum-boils low and uses sugar concentration to prevent spoilage; evaporated milk needs homogenisation, shrinking fat globules to stay suspended, plus heat-shock stabilising proteins.
 
-**Why you would never guess this.** Butter suddenly flips which phase is continuous rather than gradually thickening; ordinary milk's fat globules separate over weeks, fatal to a year-shelf can.
+**Why you would never guess this.** Butter suddenly flips which phase is continuous, not gradually thickening; ordinary milk's fat globules separate over weeks, fatal to a year-shelf can.
 
 **Prerequisites.** Standard dairy equipment; vacuum-boiling apparatus (`20_chemistry.md`) and a homogenising valve; ag2_double_seam_can for shelf-stable form.
 
@@ -704,9 +704,9 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_malting, ag2_mashing, ag2_hopping, ag2_hydrometer, ag2_pot_still, ag2_column_still - Brewing and distilling as controlled process
 **What it is / why you want it.** Malting germinates grain to activate enzymes, then kiln-dries to halt it without destroying them; mashing holds grain at temperature rests favouring different enzymes; hopping's boil time controls bitterness, late additions giving aroma; the hydrometer's density reading tracks fermentation precisely; a copper pot still (copper scrubs sulphurous off-flavours) cuts harsh "heads" and weak "tails" from clean "hearts"; a column still repeats the cycle across plates for a continuous, near-flavourless spirit.
 
-**Why you would never guess this.** The hydrometer turns judgement into a number; only copper removes sulphurous off-flavours.
+**Why you would never guess this.** The hydrometer turns judgement into a number.
 
-**Prerequisites.** ag2_yeast_culture; distillation is a genuine Roman gap per *_TEMPLATE.md*; copper for stills; glasswork for the hydrometer.
+**Prerequisites.** ag2_yeast_culture; distillation is a Roman gap per *_TEMPLATE.md*; copper for stills; glass for the hydrometer.
 
 **Roman-available inputs.** Malted grain, hops, copper, glass.
 
@@ -746,7 +746,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_roller_mill, ag2_purifier, ag2_white_flour_loss - Milling wheat and the cost it hides
 **What it is / why you want it.** Roller milling passes grain between roller pairs at increasing pressure for fine flour in one pass; the purifier's air-chamber channels separate bran, germ, and endosperm by density; white flour keeps far longer since the oil-rich, rancidity-prone germ is removed.
 
-**Why you would never guess this.** Removing the germ solves rancidity but the germ holds most of the grain's thiamine, and a white-flour-dominant diet caused beriberi at scale historically, a documented cost.
+**Why you would never guess this.** Removing the germ solves rancidity but it holds most of the grain's thiamine, and a white-flour-dominant diet caused beriberi at scale historically, a documented cost.
 
 **Prerequisites.** Metal rollers at adjustable gap, sufficient power, an air-chamber purifier.
 
@@ -767,7 +767,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_oil_pressing, ag2_fat_hydrogenation - Extracting and modifying fats
 **What it is / why you want it.** Cold pressing (Roman) preserves flavour at lower yield; hot pressing extracts more at coarser flavour; fat hydrogenation adds hydrogen to solidify oil, needing careful temperature control since overheating causes polymerisation, while imprecise partial hydrogenation unknowingly creates trans-fats, a category with its own long-term health cost.
 
-**Why you would never guess this.** The trans-fat problem forms invisibly during an otherwise useful process, found only through long-term epidemiology, the same hidden-bill pattern as white flour.
+**Why you would never guess this.** The trans-fat problem forms invisibly, found only through long-term epidemiology, the same hidden-bill pattern as white flour.
 
 **Prerequisites.** Oil pressing needs only existing presses; hydrogenation needs hydrogen and a catalyst under controlled pressure (`20_chemistry.md`), not a farm workshop.
 
@@ -802,7 +802,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Cost & labour.** ESTIMATED: cost dominated by the microscope and titration apparatus; ongoing cost is inspector staffing.
 
-**Danger.** None physical.
+**Danger.** None.
 
 **Confidence: MEDIUM.** Laboratory methods HIGH; enforcement effectiveness a governance question.
 
