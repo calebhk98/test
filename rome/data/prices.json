@@ -877,6 +877,21 @@
       "p": 0.0,
       "conf": "C",
       "note": "Not a material. A sodium flame costs nothing; priced at zero so recipes can name it honestly."
+    },
+    "calcite_kg": {
+      "p": 8.0,
+      "conf": "C",
+      "note": "Iceland spar, optically clear calcite. The Nicol prism needs a large clear rhomb and there is no glass substitute: the whole point is calcite's birefringence."
+    },
+    "caesium_g": {
+      "p": 120.0,
+      "conf": "C",
+      "note": "Alkali metal for a photoemissive surface. Not isolable until you have electrolysis and spectroscopy."
+    },
+    "agar_or_gelatin_kg": {
+      "p": 8.0,
+      "conf": "C",
+      "note": "Solid culture medium. Gelatin melts at body temperature and is digested by many bacteria; agar, from seaweed, does neither, which is why it won."
     }
   },
   "transport_multipliers": {

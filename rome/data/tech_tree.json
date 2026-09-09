@@ -189,8 +189,7 @@
    "tier": 2,
    "cat": "aviation",
    "pre": [
-    "scientific_method",
-    "cap_tol_100um"
+    "scientific_method"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -208,7 +207,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Cayley's central discovery: a curved (cambered) plate lifts far better than a flat plate at the same angle of attack. The reason is non-obvious and requires experiment: curved surfaces create lower pressure on the back side. A wing with a cambered section can generate substantial lift at shallow angles. This is not merely a geometry trick; it is the foundation of mechanical flight. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Cayley's central discovery: a curved (cambered) plate lifts far better than a flat plate at the same angle of attack. The reason is non-obvious and requires experiment: curved surfaces create lower pressure on the back side. A wing with a cambered section can generate substantial lift at shallow angles. This is not merely a geometry trick; it is the foundation of mechanical flight. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "16_aviation.json",
    "_total_cost": 160.0,
    "kb_level": "module"
@@ -255,8 +254,7 @@
    "cat": "aviation",
    "pre": [
     "air_pitot_tube",
-    "barometer",
-    "cap_tol_100um"
+    "barometer"
    ],
    "kb": "85_transport_civil.md",
    "ph": 100,
@@ -279,7 +277,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "A pitot tube measures dynamic pressure, which is velocity squared. Display it on a dial. A pilot cannot fly safely by feel; speed is invisible. This is the most important instrument. Early versions used a simple gauge; later ones an anemometer-style rotor. Without it, powered flight is nearly impossible. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A pitot tube measures dynamic pressure, which is velocity squared. Display it on a dial. A pilot cannot fly safely by feel; speed is invisible. This is the most important instrument. Early versions used a simple gauge; later ones an anemometer-style rotor. Without it, powered flight is nearly impossible. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "16_aviation.json",
    "_total_cost": 124.6,
    "kb_level": "module"
@@ -525,8 +523,7 @@
    "cat": "aviation",
    "pre": [
     "coal_coke",
-    "destructive_distillation",
-    "cap_heat_1300"
+    "destructive_distillation"
    ],
    "kb": "85_transport_civil.md",
    "ph": 180,
@@ -549,7 +546,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Destructive distillation of coal produces a mixture rich in hydrogen and methane: coal gas. Vastly cheaper than chemical hydrogen. A coal-gas plant can fill balloons continuously. Requires establishing a permanent retort house and managing by-products. The lift is slightly less than pure hydrogen but the cost difference is transformative. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Destructive distillation of coal produces a mixture rich in hydrogen and methane: coal gas. Vastly cheaper than chemical hydrogen. A coal-gas plant can fill balloons continuously. Requires establishing a permanent retort house and managing by-products. The lift is slightly less than pure hydrogen but the cost difference is transformative. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "16_aviation.json",
    "_total_cost": 291.308,
    "kb_level": "module"
@@ -659,8 +656,7 @@
    "tier": 2,
    "cat": "aviation",
    "pre": [
-    "air_varnished_silk_envelope",
-    "cap_tol_100um"
+    "air_varnished_silk_envelope"
    ],
    "kb": "85_transport_civil.md",
    "ph": 120,
@@ -681,7 +677,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Instead of a sphere, make the envelope elongated, pointed at both ends. This shape reduces drag hugely when the balloon drifts. The envelope must still be sealed and symmetrical. This is the form needed for a dirigible: long, narrow, and pointed. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Instead of a sphere, make the envelope elongated, pointed at both ends. This shape reduces drag hugely when the balloon drifts. The envelope must still be sealed and symmetrical. This is the form needed for a dirigible: long, narrow, and pointed. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "16_aviation.json",
    "_total_cost": 3190.0,
    "kb_level": "module"
@@ -890,8 +886,7 @@
     "mat_wrought_iron",
     "mat_charcoal",
     "mat_salt",
-    "distillation_alcohol",
-    "cap_tol_100um"
+    "distillation_alcohol"
    ],
    "kb": "85_transport_civil.md",
    "ph": 100,
@@ -915,7 +910,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Dilute sulfuric acid (from distillation) reacts with iron to produce hydrogen gas. Must be generated in sealed vessels with a tube fed to the envelope. Dangerous: hydrogen ignites explosively in air. Filling a balloon takes hours. This is the reliable source until coal gas is available. Rate is limited by acid strength and temperature control. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Dilute sulfuric acid (from distillation) reacts with iron to produce hydrogen gas. Must be generated in sealed vessels with a tube fed to the envelope. Dangerous: hydrogen ignites explosively in air. Filling a balloon takes hours. This is the reliable source until coal gas is available. Rate is limited by acid strength and temperature control. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "16_aviation.json",
    "_total_cost": 223.114,
    "kb_level": "module"
@@ -966,8 +961,7 @@
    "pre": [
     "thermodynamics_theory",
     "newtonian_mechanics",
-    "mat_tool_steel_hss",
-    "cap_tol_10um"
+    "mat_tool_steel_hss"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -986,7 +980,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Newton's third law: jet out the back, thrust forward. A compressor forces air in, fuel burns in a combustion chamber, hot gas expands and exits at high velocity. No piston engine, no propeller. Much simpler mechanically than reciprocating engines but requires materials that survive continuous high temperature under pressure. [AUDIT: capability prerequisite(s) cap_tol_10um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Newton's third law: jet out the back, thrust forward. A compressor forces air in, fuel burns in a combustion chamber, hot gas expands and exits at high velocity. No piston engine, no propeller. Much simpler mechanically than reciprocating engines but requires materials that survive continuous high temperature under pressure. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "16_aviation.json",
    "_total_cost": 260.0,
    "kb_level": "module"
@@ -1138,8 +1132,7 @@
    "cat": "aviation",
    "pre": [
     "air_observation_balloon_tethered",
-    "mat_linen",
-    "cap_tol_100um"
+    "mat_linen"
    ],
    "kb": "85_transport_civil.md",
    "ph": 80,
@@ -1159,7 +1152,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A cone of stiff linen attached to a harness. When opened in free fall, it spreads and catches air, slowing descent to survivable speeds. Requires both invention and extraordinary nerve to test. A man who falls from the sky with a cloth and lives appears either blessed or damned. The key insight is that air resistance, not upward force, saves you. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A cone of stiff linen attached to a harness. When opened in free fall, it spreads and catches air, slowing descent to survivable speeds. Requires both invention and extraordinary nerve to test. A man who falls from the sky with a cloth and lives appears either blessed or damned. The key insight is that air resistance, not upward force, saves you. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "16_aviation.json",
    "_total_cost": 91.5,
    "kb_level": "module"
@@ -1167,7 +1160,7 @@
   {
    "id": "air_pitot_tube",
    "name": "Pitot tube",
-   "tier": 1,
+   "tier": 2,
    "cat": "aviation",
    "pre": [
     "barometer"
@@ -1190,7 +1183,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A simple tube with an opening into the airstream and a side port. Dynamic pressure at the front is higher than static pressure at the side. The difference is proportional to velocity squared. This is purely fluid statics, not magic.",
+   "note": "A simple tube with an opening into the airstream and a side port. Dynamic pressure at the front is higher than static pressure at the side. The difference is proportional to velocity squared. This is purely fluid statics, not magic. [FIXED after independent audit: tier raised to match its barometer dependency.]",
    "_src": "16_aviation.json",
    "_total_cost": 57.0,
    "kb_level": "module"
@@ -1376,7 +1369,8 @@
    "cat": "aviation",
    "pre": [
     "air_light_petrol_engine",
-    "cap_tol_100um"
+    "cap_tol_100um",
+    "cap_tol_10um"
    ],
    "kb": "85_transport_civil.md",
    "ph": 220,
@@ -1641,8 +1635,7 @@
     "balance_analytical",
     "atomic_theory",
     "nitric_acid",
-    "hydrochloric_acid",
-    "cap_heat_1300"
+    "hydrochloric_acid"
    ],
    "kb": "20_chemistry.md#analytical_chemistry",
    "ph": 900,
@@ -1662,7 +1655,7 @@
    "sch": 4,
    "art": 3,
    "conf": "B",
-   "note": "Not optional and not glamorous. Without quantitative analysis every process in your programme is a folk recipe that degrades with each retelling. This node is what makes the corpus reproducible by people you never met. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Not optional and not glamorous. Without quantitative analysis every process in your programme is a folk recipe that degrades with each retelling. This node is what makes the corpus reproducible by people you never met. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 5800.0,
    "kb_level": "recipe"
@@ -1709,8 +1702,7 @@
    "cat": "electrical",
    "pre": [
     "dynamo",
-    "vacuum_pumps",
-    "cap_vac_1e3"
+    "vacuum_pumps"
    ],
    "kb": "50_electricity.md#incandescent_lamp",
    "ph": 500,
@@ -1733,7 +1725,7 @@
    "sch": 3,
    "art": 10,
    "conf": "B",
-   "note": "Light without fire, in a city terrified of fire, is one of the great political gifts you can make. Rome's insulae burn constantly and the fear is real. Carbon filaments first; tungsten needs a metallurgy you will not have for a long time. [AUDIT: capability prerequisite(s) cap_vac_1e3 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Light without fire, in a city terrified of fire, is one of the great political gifts you can make. Rome's insulae burn constantly and the fear is real. Carbon filaments first; tungsten needs a metallurgy you will not have for a long time. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 11787.0,
    "kb_level": "recipe"
@@ -1828,8 +1820,7 @@
    "pre": [
     "cementation_steel",
     "precision_three_plate",
-    "units_standards",
-    "cap_tol_100um"
+    "units_standards"
    ],
    "kb": "30_glass_optics.md#balance_analytical",
    "ph": 700,
@@ -1852,7 +1843,7 @@
    "sch": 2,
    "art": 3,
    "conf": "B",
-   "note": "Agate or hardened steel knife edges, a beam stiff enough not to sag, damping, a draught shield, and a master weight set. This is the instrument that converts alchemy into chemistry. Nothing downstream is reproducible without it. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Agate or hardened steel knife edges, a beam stiff enough not to sag, damping, a draught shield, and a master weight set. This is the instrument that converts alchemy into chemistry. Nothing downstream is reproducible without it. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 3871.0,
    "kb_level": "recipe"
@@ -1864,8 +1855,7 @@
    "cat": "instruments",
    "pre": [
     "glass_labware",
-    "mercury_supply",
-    "cap_vac_1torr"
+    "mercury_supply"
    ],
    "kb": "30_glass_optics.md#thermometer",
    "ph": 200,
@@ -1886,7 +1876,7 @@
    "sch": 1,
    "art": 1,
    "conf": "A",
-   "note": "The Torricellian space above the column is free vacuum and it will shock every philosopher in the Empire, because Aristotle says it cannot exist. Handle that argument carefully; it is a bigger cultural event than a technical one. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "The Torricellian space above the column is free vacuum and it will shock every philosopher in the Empire, because Aristotle says it cannot exist. Handle that argument carefully; it is a bigger cultural event than a technical one. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 1210.0,
    "kb_level": "recipe"
@@ -1898,8 +1888,7 @@
    "cat": "metallurgy",
    "pre": [
     "water_power_scale",
-    "refractory_fireclay",
-    "cap_tol_100um"
+    "refractory_fireclay"
    ],
    "kb": "10_metallurgy.md#bellows_water_blown",
    "ph": 300,
@@ -1922,7 +1911,7 @@
    "sch": 0,
    "art": 2,
    "conf": "B",
-   "note": "The single highest-leverage mechanical change available to Roman metallurgy. Continuous high-volume blast is what separates a bloomery from a blast furnace. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "The single highest-leverage mechanical change available to Roman metallurgy. Continuous high-volume blast is what separates a bloomery from a blast furnace. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 3146.5,
    "kb_level": "recipe"
@@ -1972,8 +1961,7 @@
    "cat": "metallurgy",
    "pre": [
     "bellows_water_blown",
-    "charcoal_industrial",
-    "cap_heat_1300"
+    "charcoal_industrial"
    ],
    "kb": "10_metallurgy.md#blast_furnace_cast_iron",
    "ph": 900,
@@ -1999,7 +1987,7 @@
    "sch": 1,
    "art": 6,
    "conf": "B",
-   "note": "The biggest single technology gap between Rome and contemporary Han China, which has had cast iron for 500 years. Height, continuous blast and a limestone flux turn a bloomery into a foundry. High risk: the first two or three furnaces will chill, scaffold or burn through. This becomes the financial engine of the middle game. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "The biggest single technology gap between Rome and contemporary Han China, which has had cast iron for 500 years. Height, continuous blast and a limestone flux turn a bloomery into a foundry. High risk: the first two or three furnaces will chill, scaffold or burn through. This becomes the financial engine of the middle game. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 35850.0,
    "kb_level": "recipe"
@@ -2987,8 +2975,7 @@
    "cat": "metallurgy",
    "pre": [
     "workshop_first",
-    "units_standards",
-    "cap_heat_1100"
+    "units_standards"
    ],
    "kb": "10_metallurgy.md#case_hardening",
    "ph": 300,
@@ -3010,7 +2997,7 @@
    "sch": 0,
    "art": 2,
    "conf": "B",
-   "note": "Roman smiths do all of this already but inconsistently and without a temperature scale. Give them temper colours on polished steel as a repeatable index and the reject rate collapses. Cheap, immediate, militarily valuable, entirely unmagical. [AUDIT: capability prerequisite(s) cap_heat_1100 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Roman smiths do all of this already but inconsistently and without a temperature scale. Give them temper colours on polished steel as a repeatable index and the reject rate collapses. Cheap, immediate, militarily valuable, entirely unmagical. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 1595.0,
    "kb_level": "recipe"
@@ -3057,8 +3044,7 @@
    "tier": 2,
    "cat": "metallurgy",
    "pre": [
-    "workshop_first",
-    "cap_heat_1300"
+    "workshop_first"
    ],
    "kb": "10_metallurgy.md#charcoal_industrial",
    "ph": 250,
@@ -3079,7 +3065,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Charcoal supply, not ore, is the real ceiling on pre-coke iron output, and it deforests regions. Coppice rotation of 15-20 years on dedicated land is the answer. Budget the land or your furnace will starve. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Charcoal supply, not ore, is the real ceiling on pre-coke iron output, and it deforests regions. Coppice rotation of 15-20 years on dedicated land is the answer. Budget the land or your furnace will starve. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "core",
    "_total_cost": 57600.0,
    "kb_level": "recipe"
@@ -3221,7 +3207,7 @@
    "cat": "organic_chemistry",
    "pre": [
     "chm_benzene",
-    "industrial_gases"
+    "nitric_acid"
    ],
    "kb": "20_chemistry.md",
    "ph": 180,
@@ -3242,7 +3228,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Oleum nitrates benzene to nitrobenzene in minutes. Reduction with iron powder in dilute acid yields aniline. Aniline is a colourless liquid, bp 184 C, that polymerises in air to a black tar unless kept dry. It is the keystone of synthetic dyes and must be kept under nitrogen or mineral oil.",
+   "note": "Oleum nitrates benzene to nitrobenzene in minutes. Reduction with iron powder in dilute acid yields aniline. Aniline is a colourless liquid, bp 184 C, that polymerises in air to a black tar unless kept dry. It is the keystone of synthetic dyes and must be kept under nitrogen or mineral oil. [FIXED after independent audit: nitration of benzene needs nitric acid, which was missing. The Bechamp reduction uses iron in dilute acid, not hydrogen, so the industrial_gases prerequisite was not load-bearing and has been removed.]",
    "_src": "18_chemicals.json",
    "_total_cost": 3153.0,
    "kb_level": "module"
@@ -3347,7 +3333,8 @@
    "tier": 4,
    "cat": "plastics",
    "pre": [
-    "chm_phenol"
+    "chm_phenol",
+    "mat_formaldehyde"
    ],
    "kb": "20_chemistry.md",
    "ph": 150,
@@ -3356,7 +3343,8 @@
     "scholar": 100
    },
    "mat": {
-    "coal_kg": 100
+    "coal_kg": 100,
+    "formaldehyde_kg": 200
    },
    "cap": 3000,
    "up": 200,
@@ -3368,7 +3356,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Phenol and formaldehyde condense at 150-180 C in the presence of acid catalyst. The resin is thermoset: once cured, it cannot be remelted. Bakelite is hard, brittle, and heat-resistant. It is used for electrical insulation, radio bodies, and industrial equipment. It was the first fully synthetic plastic and dominated the 1920s.",
+   "note": "Phenol and formaldehyde condense at 150-180 C in the presence of acid catalyst. The resin is thermoset: once cured, it cannot be remelted. Bakelite is hard, brittle, and heat-resistant. It is used for electrical insulation, radio bodies, and industrial equipment. It was the first fully synthetic plastic and dominated the 1920s. [FIXED after independent audit: the note said phenol and formaldehyde condense, but formaldehyde appeared in neither the prerequisites nor the materials.]",
    "_src": "18_chemicals.json",
    "_total_cost": 3122.0,
    "kb_level": "module"
@@ -3574,8 +3562,7 @@
    "pre": [
     "chm_chlor_alkali_mercury",
     "potash_soda",
-    "cap_heat_1100",
-    "cap_vac_1torr"
+    "cap_heat_1100"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -3597,7 +3584,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Caustic soda boils above 100 C, so direct heating to dryness would decompose it. Vacuum evaporation keeps temperature below 100 C while removing water. The product is chemically pure but must be handled in glass or lead; iron is attacked immediately and dissolved. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Caustic soda boils above 100 C, so direct heating to dryness would decompose it. Vacuum evaporation keeps temperature below 100 C while removing water. The product is chemically pure but must be handled in glass or lead; iron is attacked immediately and dissolved. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2093.0,
    "kb_level": "module"
@@ -3608,8 +3595,7 @@
    "tier": 4,
    "cat": "plastics",
    "pre": [
-    "chm_guncotton",
-    "cap_heat_1600"
+    "chm_guncotton"
    ],
    "kb": "20_chemistry.md",
    "ph": 120,
@@ -3629,7 +3615,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Nitrocellulose becomes plastic when mixed with camphor. Sheet is then made by rolling between heated cylinders. Celluloid revolutionises photography by replacing glass plates, enables flexible film stock, and is used for combs, buttons, piano keys. The material is flammable and degrades over time to become increasingly brittle. [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Nitrocellulose becomes plastic when mixed with camphor. Sheet is then made by rolling between heated cylinders. Celluloid revolutionises photography by replacing glass plates, enables flexible film stock, and is used for combs, buttons, piano keys. The material is flammable and degrades over time to become increasingly brittle. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2061.6,
    "kb_level": "module"
@@ -4078,7 +4064,8 @@
    "cat": "chemical_engineering",
    "pre": [
     "coal_coke",
-    "cap_heat_3000"
+    "cap_heat_3000",
+    "arc_furnace_ferroalloys"
    ],
    "kb": "20_chemistry.md",
    "ph": 200,
@@ -4100,7 +4087,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Calcium carbide is made by arc furnace: limestone and coke to 3000 C in one step. The carbide then reacts with nitrogen gas at 1000 C to yield calcium cyanamide, which hydrolyses to ammonia. This route predates Haber-Bosch and requires less pressure, but yields fewer tonnes per unit energy. Arc furnace demands kilowatts of electric power.",
+   "note": "Calcium carbide is made by arc furnace: limestone and coke to 3000 C in one step. The carbide then reacts with nitrogen gas at 1000 C to yield calcium cyanamide, which hydrolyses to ammonia. This route predates Haber-Bosch and requires less pressure, but yields fewer tonnes per unit energy. Arc furnace demands kilowatts of electric power. [FIXED after independent audit: the cyanamide route runs through calcium carbide, which needs the electric arc furnace.]",
    "_src": "18_chemicals.json",
    "_total_cost": 5098.0,
    "kb_level": "module"
@@ -4146,7 +4133,8 @@
    "tier": 4,
    "cat": "chemical_engineering",
    "pre": [
-    "mat_petroleum_refined"
+    "mat_petroleum_refined",
+    "soda_leblanc"
    ],
    "kb": "20_chemistry.md",
    "ph": 150,
@@ -4154,7 +4142,8 @@
     "chemist": 200
    },
    "mat": {
-    "coal_kg": 100
+    "coal_kg": 100,
+    "sulfuric_acid_kg": 400
    },
    "cap": 2000,
    "up": 150,
@@ -4166,7 +4155,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Synthetic detergents are made by sulfonation of alkenes from cracking petroleum fractions. The sulfonic acid is neutralised with soda ash. Detergent molecules have a long nonpolar hydrocarbon tail that dissolves in grease and a polar sulfonate head that dissolves in water. Synthetic detergents work better in cold water than soap and do not leave scum.",
+   "note": "Synthetic detergents are made by sulfonation of alkenes from cracking petroleum fractions. The sulfonic acid is neutralised with soda ash. Detergent molecules have a long nonpolar hydrocarbon tail that dissolves in grease and a polar sulfonate head that dissolves in water. Synthetic detergents work better in cold water than soap and do not leave scum. [FIXED after independent audit: sulfonation needs sulfuric acid and the neutralisation needs soda ash; neither was listed.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2082.0,
    "kb_level": "module"
@@ -4177,8 +4166,7 @@
    "tier": 3,
    "cat": "explosives",
    "pre": [
-    "chm_nitroglycerin",
-    "cap_heat_1300"
+    "chm_nitroglycerin"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -4198,7 +4186,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Nitroglycerin soaks into diatomaceous earth, rendering it safe from accidental detonation during handling but equally detonatable by blasting cap. This makes large-scale mining and construction possible. The name dynamite became synonymous with Nobel's wealth and the peace prize. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Nitroglycerin soaks into diatomaceous earth, rendering it safe from accidental detonation during handling but equally detonatable by blasting cap. This makes large-scale mining and construction possible. The name dynamite became synonymous with Nobel's wealth and the peace prize. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2540.0,
    "kb_level": "module"
@@ -4243,8 +4231,7 @@
    "cat": "electrochemistry",
    "pre": [
     "electroplating",
-    "cap_measure_elec",
-    "cap_power_water"
+    "cap_measure_elec"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -4265,7 +4252,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "The object to be coated is the cathode. Current density must be controlled; too high and the deposit is burnt and powdery, too low and adhesion suffers. Electroplating of chromium requires three stages: copper strike, nickel, then thin chromium for corrosion resistance. [AUDIT: capability prerequisite(s) cap_power_water were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "The object to be coated is the cathode. Current density must be controlled; too high and the deposit is burnt and powdery, too low and adhesion suffers. Electroplating of chromium requires three stages: copper strike, nickel, then thin chromium for corrosion resistance. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 1980.0,
    "kb_level": "module"
@@ -4412,8 +4399,7 @@
    "cat": "explosives",
    "pre": [
     "mercury_supply",
-    "nitric_acid",
-    "cap_heat_1300"
+    "nitric_acid"
    ],
    "kb": "20_chemistry.md",
    "ph": 80,
@@ -4434,7 +4420,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Mercury is dissolved in dilute nitric acid and ethanol added. After a few hours, white crystals of mercury fulminate form. These are highly shock-sensitive and explode from any mechanical disturbance. Synthesis must be done in tiny batches and handled with extreme caution. Lead fulminate is safer but less reliable. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Mercury is dissolved in dilute nitric acid and ethanol added. After a few hours, white crystals of mercury fulminate form. These are highly shock-sensitive and explode from any mechanical disturbance. Synthesis must be done in tiny batches and handled with extreme caution. Lead fulminate is safer but less reliable. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2261.0,
    "kb_level": "module"
@@ -4446,8 +4432,7 @@
    "cat": "explosives",
    "pre": [
     "chm_nitroglycerin",
-    "chm_guncotton",
-    "cap_heat_1300"
+    "chm_guncotton"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -4467,7 +4452,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "When nitroglycerin is mixed with nitrocellulose dissolved in acetone or diethyl phthalate, the cellulose swells and gelatinises, creating a putty. Gelignite is more powerful than dynamite and handles more safely. It is the standard explosive for controlled demolition. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "When nitroglycerin is mixed with nitrocellulose dissolved in acetone or diethyl phthalate, the cellulose swells and gelatinises, creating a putty. Gelignite is more powerful than dynamite and handles more safely. It is the standard explosive for controlled demolition. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2061.6,
    "kb_level": "module"
@@ -4478,8 +4463,7 @@
    "tier": 3,
    "cat": "chemical_engineering",
    "pre": [
-    "chm_soap_hard",
-    "cap_vac_1torr"
+    "chm_soap_hard"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -4499,7 +4483,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Soap manufacture produces a glycerol-rich lye as byproduct. The lye is acidified and glycerol is extracted with ethanol, then distilled under vacuum. Glycerol is a primary feedstock for nitroglycerin and explosives, and also a humectant in textiles and pharmaceuticals. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Soap manufacture produces a glycerol-rich lye as byproduct. The lye is acidified and glycerol is extracted with ethanol, then distilled under vacuum. Glycerol is a primary feedstock for nitroglycerin and explosives, and also a humectant in textiles and pharmaceuticals. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 1561.6,
    "kb_level": "module"
@@ -4510,8 +4494,7 @@
    "tier": 3,
    "cat": "explosives",
    "pre": [
-    "nitric_acid",
-    "cap_heat_1300"
+    "nitric_acid"
    ],
    "kb": "20_chemistry.md",
    "ph": 120,
@@ -4532,7 +4515,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Linen is nitrated with mixed acid at 0 C. Temperature control is absolutely critical; deviation to 5 C causes runaway and explosion. Guncotton is more powerful than black powder and is initially unstable, spontaneously heating if stored damp. Modern stabilisation uses diphenylamine to suppress decomposition. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Linen is nitrated with mixed acid at 0 C. Temperature control is absolutely critical; deviation to 5 C causes runaway and explosion. Guncotton is more powerful than black powder and is initially unstable, spontaneously heating if stored damp. Modern stabilisation uses diphenylamine to suppress decomposition. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2093.0,
    "kb_level": "module"
@@ -4615,8 +4598,7 @@
    "tier": 3,
    "cat": "occupational_health",
    "pre": [
-    "germ_theory",
-    "cap_heat_1300"
+    "germ_theory"
    ],
    "kb": "20_chemistry.md",
    "ph": 200,
@@ -4635,7 +4617,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Phosphorus necrosis (phossy jaw) comes from white phosphorus dust eroding jaw bone. Mercury causes tremor and neurological damage. Lead accumulates in bone and poisons the nervous system. Benzene vapour causes aplastic anaemia. Chlorine gas causes pulmonary oedema. No safe level exists; only elimination of exposure through ventilation and process redesign stops the poisoning. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Phosphorus necrosis (phossy jaw) comes from white phosphorus dust eroding jaw bone. Mercury causes tremor and neurological damage. Lead accumulates in bone and poisons the nervous system. Benzene vapour causes aplastic anaemia. Chlorine gas causes pulmonary oedema. No safe level exists; only elimination of exposure through ventilation and process redesign stops the poisoning. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 160.0,
    "kb_level": "module"
@@ -4646,8 +4628,7 @@
    "tier": 4,
    "cat": "chemical_engineering",
    "pre": [
-    "mat_bulk_steel",
-    "cap_pure_4N"
+    "mat_bulk_steel"
    ],
    "kb": "20_chemistry.md",
    "ph": 200,
@@ -4668,7 +4649,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Phenolic or acrylic polymer beads are cross-linked with divinylbenzene and charged with either H+ cations or OH- anions. Water percolated through the column exchanges Ca2+ for H+, softening and acidifying simultaneously. The resin is regenerated with acid or base. Ion exchange is essential for producing ultrapure process water and boiler feedwater. [AUDIT: capability prerequisite(s) cap_pure_4N were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Phenolic or acrylic polymer beads are cross-linked with divinylbenzene and charged with either H+ cations or OH- anions. Water percolated through the column exchanges Ca2+ for H+, softening and acidifying simultaneously. The resin is regenerated with acid or base. Ion exchange is essential for producing ultrapure process water and boiler feedwater. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 3123.0,
    "kb_level": "module"
@@ -4678,9 +4659,7 @@
    "name": "Friction matches: red phosphorus safety match",
    "tier": 3,
    "cat": "chemical_engineering",
-   "pre": [
-    "cap_heat_1300"
-   ],
+   "pre": [],
    "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
@@ -4700,7 +4679,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Match heads are formed by dipping wooden sticks into a paste of red phosphorus, antimony sulfide, potassium dichromate, glue and ground glass. The glass provides friction. Friction heats the phosphorus enough to ignite the sulfide and then the wood. Early white phosphorus matches were poisonous and workers developed phossy jaw; red phosphorus matches solved this. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Match heads are formed by dipping wooden sticks into a paste of red phosphorus, antimony sulfide, potassium dichromate, glue and ground glass. The glass provides friction. Friction heats the phosphorus enough to ignite the sulfide and then the wood. Early white phosphorus matches were poisonous and workers developed phossy jaw; red phosphorus matches solved this. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "18_chemicals.json",
    "_total_cost": 1575.4,
    "kb_level": "module"
@@ -5039,8 +5018,7 @@
    "tier": 2,
    "cat": "mineral_extraction",
    "pre": [
-    "mining_concession",
-    "cap_tol_100um"
+    "mining_concession"
    ],
    "kb": "20_chemistry.md",
    "ph": 150,
@@ -5061,7 +5039,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Potash salts like sylvinite are mined like any mineral ore. The mined rock is then dissolved in water, filtered to remove insoluble matter, and crystallised. Potassium is essential to agriculture: wheat and potatoes are heavy exporters of K2O, depleting soils rapidly without replenishment. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Potash salts like sylvinite are mined like any mineral ore. The mined rock is then dissolved in water, filtered to remove insoluble matter, and crystallised. Potassium is essential to agriculture: wheat and potatoes are heavy exporters of K2O, depleting soils rapidly without replenishment. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 3067.0,
    "kb_level": "module"
@@ -5308,8 +5286,7 @@
    "cat": "chemical_engineering",
    "pre": [
     "soap_hard",
-    "potash_soda",
-    "cap_tol_100um"
+    "potash_soda"
    ],
    "kb": "20_chemistry.md",
    "ph": 0,
@@ -5325,7 +5302,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Rome does not have soap as a cleanser. This is already in the vocabulary; do not redefine it. It is included here to prevent anachronism. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Rome does not have soap as a cleanser. This is already in the vocabulary; do not redefine it. It is included here to prevent anachronism. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "18_chemicals.json",
    "_total_cost": 0,
    "kb_level": "module"
@@ -5408,8 +5385,7 @@
    "cat": "chemical_engineering",
    "pre": [
     "sulfuric_retort",
-    "lead_chamber",
-    "cap_heat_1300"
+    "lead_chamber"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -5431,7 +5407,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Rock phosphate is insoluble calcium phosphate. Sulfuric acid converts it to a mixture of soluble monocalcium phosphate and gypsum. The product is simply filtered and dried. This produces tens of tonnes of agricultural fertiliser from a tonne of sulfuric acid. The phosphate is now bioavailable to plants. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Rock phosphate is insoluble calcium phosphate. Sulfuric acid converts it to a mixture of soluble monocalcium phosphate and gypsum. The product is simply filtered and dried. This produces tens of tonnes of agricultural fertiliser from a tonne of sulfuric acid. The phosphate is now bioavailable to plants. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "18_chemicals.json",
    "_total_cost": 2087.0,
    "kb_level": "module"
@@ -6028,8 +6004,7 @@
    "tier": 3,
    "cat": "institutional",
    "pre": [
-    "civ_factor_safety",
-    "cap_heat_1300"
+    "civ_factor_safety"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -6047,7 +6022,7 @@
    "sch": 2,
    "art": 0,
    "conf": "B",
-   "note": "Written rules for minimum structural capacity, fire safety, exits, materials. Enforced by inspection. The first comprehensive code was New York (1901). Codification stops guesswork and protects the public. Elite builders resist rules; lives saved prove the value. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Written rules for minimum structural capacity, fire safety, exits, materials. Enforced by inspection. The first comprehensive code was New York (1901). Codification stops guesswork and protects the public. Elite builders resist rules; lives saved prove the value. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 260.0,
    "kb_level": "module"
@@ -6058,8 +6033,7 @@
    "tier": 2,
    "cat": "foundations",
    "pre": [
-    "civ_cofferdam",
-    "cap_tol_100um"
+    "civ_cofferdam"
    ],
    "kb": "85_transport_civil.md",
    "ph": 150,
@@ -6081,7 +6055,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "A large hollow box sunk into water or soft ground, interior pumped dry, filled with concrete. London Bridge (1831) used caissons. Allows foundation work below water. Risk of leaking, and the deeper you go, the harder to keep dry. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A large hollow box sunk into water or soft ground, interior pumped dry, filled with concrete. London Bridge (1831) used caissons. Allows foundation work below water. Risk of leaking, and the deeper you go, the harder to keep dry. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 469.0,
    "kb_level": "module"
@@ -6125,8 +6099,7 @@
    "tier": 2,
    "cat": "transport",
    "pre": [
-    "civ_gate_sluice",
-    "cap_tol_100um"
+    "civ_gate_sluice"
    ],
    "kb": "85_transport_civil.md",
    "ph": 150,
@@ -6148,7 +6121,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "A chamber with gates at each end. A barge enters the lock, the gates close, water is let in or out (changing the barge's level), then the exit gates open. Brilliant: it allows a canal to climb hills without continuous flow. The canal network (1750-1850) moved goods and coal. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A chamber with gates at each end. A barge enters the lock, the gates close, water is let in or out (changing the barge's level), then the exit gates open. Brilliant: it allows a canal to climb hills without continuous flow. The canal network (1750-1850) moved goods and coal. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 777.0,
    "kb_level": "module"
@@ -6273,8 +6246,7 @@
    "cat": "water",
    "pre": [
     "civ_dam_gravity",
-    "civ_arch_roman",
-    "cap_heat_1300"
+    "civ_arch_roman"
    ],
    "kb": "85_transport_civil.md",
    "ph": 250,
@@ -6295,7 +6267,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "A curved dam transfers water pressure sideways to the canyon walls, not to the base. Thinner and lighter than a gravity dam. Requires rock walls on both sides and calculation of the arch stress. The Hoover Dam (1936) is an arch; it can hold a lake with less concrete than gravity. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A curved dam transfers water pressure sideways to the canyon walls, not to the base. Thinner and lighter than a gravity dam. Requires rock walls on both sides and calculation of the arch stress. The Hoover Dam (1936) is an arch; it can hold a lake with less concrete than gravity. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 697.6,
    "kb_level": "module"
@@ -6338,8 +6310,7 @@
    "cat": "water",
    "pre": [
     "civ_arch_roman",
-    "civ_statics",
-    "cap_tol_100um"
+    "civ_statics"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -6361,7 +6332,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "A thick wall holding back water by its own weight. Water pressure increases with depth (proportional to depth squared). The base must resist both the vertical load and the horizontal thrust. Most dam failures are not structural (cracking) but hydraulic (seepage, overtopping). [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A thick wall holding back water by its own weight. Water pressure increases with depth (proportional to depth squared). The base must resist both the vertical load and the horizontal thrust. Most dam failures are not structural (cracking) but hydraulic (seepage, overtopping). [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 2305.0,
    "kb_level": "module"
@@ -6738,8 +6709,7 @@
    "cat": "water",
    "pre": [
     "civ_cofferdam",
-    "civ_arch_roman",
-    "cap_tol_100um"
+    "civ_arch_roman"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -6761,7 +6731,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "A protected basin with stone or wooden walls. Breakwaters outside reduce waves. Quays allow cargo loading and unloading. Docks with gates can maintain constant water level despite tides. Venice was the model; modern container ports are different in scale only. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A protected basin with stone or wooden walls. Breakwaters outside reduce waves. Quays allow cargo loading and unloading. Docks with gates can maintain constant water level despite tides. Venice was the model; modern container ports are different in scale only. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 1806.0,
    "kb_level": "module"
@@ -6800,8 +6770,7 @@
    "tier": 0,
    "cat": "materials",
    "pre": [
-    "mat_wrought_iron",
-    "cap_heat_0700"
+    "mat_wrought_iron"
    ],
    "kb": "85_transport_civil.md",
    "ph": 0,
@@ -6817,7 +6786,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Wrought iron from bloomery furnace is ductile, tough, and resistant to corrosion. Smith heating and hand-forging creates toughness. Rivets are driven hot; the cooled rivet locks parts together. Roman and medieval smiths knew this; it is not high art, but skilled work. [AUDIT: capability prerequisite(s) cap_heat_0700 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Wrought iron from bloomery furnace is ductile, tough, and resistant to corrosion. Smith heating and hand-forging creates toughness. Rivets are driven hot; the cooled rivet locks parts together. Roman and medieval smiths knew this; it is not high art, but skilled work. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 0,
    "kb_level": "module"
@@ -6828,8 +6797,7 @@
    "tier": 2,
    "cat": "safety",
    "pre": [
-    "mat_wrought_iron",
-    "cap_tol_100um"
+    "mat_wrought_iron"
    ],
    "kb": "85_transport_civil.md",
    "ph": 80,
@@ -6849,7 +6817,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A copper or iron rod running from the roof to ground rod(s) in moist earth. Captures lightning and shunts it safely into the ground. Franklin (1752) invented this; it saved many buildings. Reduces fire and injury. Requires good earth contact; a dry ground rod does nothing. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A copper or iron rod running from the roof to ground rod(s) in moist earth. Captures lightning and shunts it safely into the ground. Franklin (1752) invented this; it saved many buildings. Reduces fire and injury. Requires good earth contact; a dry ground rod does nothing. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 142.0,
    "kb_level": "module"
@@ -7191,8 +7159,7 @@
    "cat": "water",
    "pre": [
     "civ_sewer_separate",
-    "germ_theory",
-    "cap_heat_1600"
+    "germ_theory"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -7213,7 +7180,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Sewage (biological waste) requires aerobic decomposition. Activated sludge is bacteria and protozoa that eat organic matter when aerated. Germ theory explains why pathogens die in treatment; without it, the mechanism is invisible. Treated effluent is safe to discharge. [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Sewage (biological waste) requires aerobic decomposition. Activated sludge is bacteria and protozoa that eat organic matter when aerated. Germ theory explains why pathogens die in treatment; without it, the mechanism is invisible. Treated effluent is safe to discharge. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 542.5,
    "kb_level": "module"
@@ -7252,8 +7219,7 @@
    "tier": 2,
    "cat": "water",
    "pre": [
-    "civ_sewer_roman",
-    "cap_tol_100um"
+    "civ_sewer_roman"
    ],
    "kb": "85_transport_civil.md",
    "ph": 120,
@@ -7273,7 +7239,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Two pipes: foul (sewage) and storm (rain). Storm sewers are large but infrequent flow; foul sewers are constant. Combined sewers overflow during heavy rain, contaminating rivers. Separation is expensive but hygienic; Victorian engineers standardised it. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Two pipes: foul (sewage) and storm (rain). Storm sewers are large but infrequent flow; foul sewers are constant. Combined sewers overflow during heavy rain, contaminating rivers. Separation is expensive but hygienic; Victorian engineers standardised it. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 900.0,
    "kb_level": "module"
@@ -7413,8 +7379,7 @@
    "cat": "urban",
    "pre": [
     "arc_light_lamp",
-    "power_grid",
-    "cap_power_electric"
+    "power_grid"
    ],
    "kb": "85_transport_civil.md",
    "ph": 120,
@@ -7434,7 +7399,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Gas lamps (post-1800) were bright but hot. Arc lamps (post-1850) were bright and stable. Incandescent bulbs (post-1880) were safer. Electric grid power (post-1900) made street lighting universal. Crime dropped; nightlife boomed. The cost was perpetual maintenance of wiring and poles. [AUDIT: capability prerequisite(s) cap_power_electric were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Gas lamps (post-1800) were bright but hot. Arc lamps (post-1850) were bright and stable. Incandescent bulbs (post-1880) were safer. Electric grid power (post-1900) made street lighting universal. Crime dropped; nightlife boomed. The cost was perpetual maintenance of wiring and poles. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 380.0,
    "kb_level": "module"
@@ -7536,8 +7501,7 @@
    "tier": 2,
    "cat": "institutional",
    "pre": [
-    "civ_surveying_groma",
-    "cap_tol_100um"
+    "civ_surveying_groma"
    ],
    "kb": "85_transport_civil.md",
    "ph": 180,
@@ -7555,7 +7519,7 @@
    "sch": 1,
    "art": 1,
    "conf": "B",
-   "note": "Systematic design of streets, squares, and districts rather than organic growth. Rome's colonial towns used a grid (the orthogonal plan). Haussmann (Paris, 1850s) imposed radial avenues and parks. Planning is contentious (disrupts existing patterns), but saves lives (fire lanes, flood avoidance, sanitation) and improves efficiency. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Systematic design of streets, squares, and districts rather than organic growth. Rome's colonial towns used a grid (the orthogonal plan). Haussmann (Paris, 1850s) imposed radial avenues and parks. Planning is contentious (disrupts existing patterns), but saves lives (fire lanes, flood avoidance, sanitation) and improves efficiency. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "22_civil.json",
    "_total_cost": 320.0,
    "kb_level": "module"
@@ -7956,7 +7920,9 @@
    "tier": 3,
    "cat": "calculation",
    "pre": [
-    "com_difference_engine"
+    "com_difference_engine",
+    "interchangeable_parts",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 250,
@@ -7981,7 +7947,7 @@
    "sch": 1,
    "art": 0,
    "conf": "C",
-   "note": "Babbage's design for a universal mechanical computer: a large mill (arithmetic unit) and store (memory), programmed by punched cards like Jacquard looms. It could perform any sequence of arithmetic operations, conditional on intermediate results. The killer insight: a general-purpose machine can solve many problems if programmed differently. Ada Lovelace sketched an algorithm for it (1843). It was never built (same tolerance problems as the Difference Engine), but it was the conceptual foundation of the stored-program computer.",
+   "note": "Babbage's design for a universal mechanical computer: a large mill (arithmetic unit) and store (memory), programmed by punched cards like Jacquard looms. It could perform any sequence of arithmetic operations, conditional on intermediate results. The killer insight: a general-purpose machine can solve many problems if programmed differently. Ada Lovelace sketched an algorithm for it (1843). It was never built (same tolerance problems as the Difference Engine), but it was the conceptual foundation of the stored-program computer. [FIXED after independent audit: the note itself said Babbage failed on tolerance, and the node listed no tolerance prerequisite at all.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 16147.5,
    "kb_level": "module"
@@ -7991,9 +7957,7 @@
    "name": "Antenna and ground system for radio",
    "tier": 3,
    "cat": "radio",
-   "pre": [
-    "cap_heat_1300"
-   ],
+   "pre": [],
    "kb": "50_electricity.md",
    "ph": 60,
    "lab": {
@@ -8015,7 +7979,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "An antenna is just a wire at a height or length that couples to the air (transmitting) or the air couples to it (receiving). A ground is a connection to earth (literally a copper plate or rod buried 2 metres). Radio waves need an antenna and a return path (ground) to form a closed loop. The antenna length determines efficiency at a given frequency. This was not obvious: early radio pioneers accidentally discovered that tall antennas worked better. Design theory came later. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "An antenna is just a wire at a height or length that couples to the air (transmitting) or the air couples to it (receiving). A ground is a connection to earth (literally a copper plate or rod buried 2 metres). Radio waves need an antenna and a return path (ground) to form a closed loop. The antenna length determines efficiency at a given frequency. This was not obvious: early radio pioneers accidentally discovered that tall antennas worked better. Design theory came later. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 914.0,
    "kb_level": "module"
@@ -8093,8 +8057,7 @@
    "cat": "computing",
    "pre": [
     "arithmetic_positional",
-    "com_boolean_algebra",
-    "cap_heat_1600"
+    "com_boolean_algebra"
    ],
    "kb": "50_electricity.md",
    "ph": 100,
@@ -8114,7 +8077,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Binary: digits 0 and 1 only. Addition, multiplication, and logic are all simpler in binary than decimal. A two-state device (relay on/off, transistor on/off) represents 0 or 1 directly. Decimal requires devices with 10 states (complex and error-prone). All electronic computers use binary for this reason. The conceptual link: binary numbers are data, Boolean logic is control, they use the same substrates (switches). [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Binary: digits 0 and 1 only. Addition, multiplication, and logic are all simpler in binary than decimal. A two-state device (relay on/off, transistor on/off) represents 0 or 1 directly. Decimal requires devices with 10 states (complex and error-prone). All electronic computers use binary for this reason. The conceptual link: binary numbers are data, Boolean logic is control, they use the same substrates (switches). [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 124.0,
    "kb_level": "module"
@@ -8124,9 +8087,7 @@
    "name": "Boolean algebra - logic and switching equivalence",
    "tier": 4,
    "cat": "computing",
-   "pre": [
-    "cap_heat_1600"
-   ],
+   "pre": [],
    "kb": "50_electricity.md",
    "ph": 120,
    "lab": {
@@ -8145,7 +8106,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Boolean algebra: true/false, AND, OR, NOT. Claude Shannon's insight (1938): switching circuits are Boolean algebras. A series switch is AND (both must be closed), parallel is OR. This is the single most important conceptual link in computing: abstract logic is isomorphic to physical electronics. Once realized, designing computers becomes designing logic circuits, which become routine engineering. No breakthrough in physics or chemistry needed, just the right mathematical language. [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Boolean algebra: true/false, AND, OR, NOT. Claude Shannon's insight (1938): switching circuits are Boolean algebras. A series switch is AND (both must be closed), parallel is OR. This is the single most important conceptual link in computing: abstract logic is isomorphic to physical electronics. Once realized, designing computers becomes designing logic circuits, which become routine engineering. No breakthrough in physics or chemistry needed, just the right mathematical language. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 150.0,
    "kb_level": "module"
@@ -8323,8 +8284,7 @@
    "cat": "radio",
    "pre": [
     "vacuum_tube",
-    "com_tuned_circuit",
-    "cap_power_electric"
+    "com_tuned_circuit"
    ],
    "kb": "50_electricity.md",
    "ph": 120,
@@ -8347,7 +8307,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "A triode acts as an amplifier: a small signal on the grid amplifies a large signal in the anode. Fed back to the grid through a tuned circuit, this creates sustained oscillation (feedback), generating continuous RF at the resonant frequency. The generator is stable, efficient, and clean (no spark noise). Morse code is sent by turning the oscillator on/off with a telegraph key. Continuous wave replaced spark transmitters by 1920. [AUDIT: capability prerequisite(s) cap_power_electric were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A triode acts as an amplifier: a small signal on the grid amplifies a large signal in the anode. Fed back to the grid through a tuned circuit, this creates sustained oscillation (feedback), generating continuous RF at the resonant frequency. The generator is stable, efficient, and clean (no spark noise). Morse code is sent by turning the oscillator on/off with a telegraph key. Continuous wave replaced spark transmitters by 1920. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 1750.5,
    "kb_level": "module"
@@ -8357,9 +8317,7 @@
    "name": "Substitution and polyalphabetic ciphers",
    "tier": 3,
    "cat": "cryptography",
-   "pre": [
-    "cap_heat_1300"
-   ],
+   "pre": [],
    "kb": "50_electricity.md",
    "ph": 80,
    "lab": {
@@ -8378,7 +8336,7 @@
    "sch": 1,
    "art": 0,
    "conf": "A",
-   "note": "Caesar cipher (shift alphabet by N) was known to Rome. Vigenere cipher (shift depends on a repeating key) was stronger (1553 onward). Both are vulnerable to frequency analysis (common letters are obvious). The Vigenere cipher remained unbroken until the 19th century (Kasiski examination), making it militarily useful for 300 years. Encryption was the luxury of armies and empires; telegraph traffic required it, making cryptography a core technology. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Caesar cipher (shift alphabet by N) was known to Rome. Vigenere cipher (shift depends on a repeating key) was stronger (1553 onward). Both are vulnerable to frequency analysis (common letters are obvious). The Vigenere cipher remained unbroken until the 19th century (Kasiski examination), making it militarily useful for 300 years. Encryption was the luxury of armies and empires; telegraph traffic required it, making cryptography a core technology. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 64.0,
    "kb_level": "module"
@@ -8390,8 +8348,7 @@
    "cat": "radio",
    "pre": [
     "galena_detector",
-    "com_antenna_ground",
-    "cap_vac_1e3"
+    "com_antenna_ground"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -8414,7 +8371,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A tuned coil and capacitor select one radio station, a galena rectifier converts the RF signal to audio (crystal detects, headphones reproduce). No power source needed (rectified signal drives headphones directly). Range is short (5 km), quality is poor (strong local station only), but the cost is near zero. Crystal sets were toys in 1910, but mass-produced for every youth by 1920. They taught radio to the world, but they are obsolete once vacuum tube amplifiers exist. [AUDIT: capability prerequisite(s) cap_vac_1e3 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A tuned coil and capacitor select one radio station, a galena rectifier converts the RF signal to audio (crystal detects, headphones reproduce). No power source needed (rectified signal drives headphones directly). Range is short (5 km), quality is poor (strong local station only), but the cost is near zero. Crystal sets were toys in 1910, but mass-produced for every youth by 1920. They taught radio to the world, but they are obsolete once vacuum tube amplifiers exist. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 191.8,
    "kb_level": "module"
@@ -8527,8 +8484,7 @@
    "tier": 4,
    "cat": "computing",
    "pre": [
-    "com_relay",
-    "cap_vac_1e3"
+    "com_relay"
    ],
    "kb": "50_electricity.md",
    "ph": 100,
@@ -8551,7 +8507,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Two relays (or vacuum tube stages) cross-coupled: output of one feeds input of the other. The system has two stable states: relay A on and B off, or vice versa. A pulse on 'Set' line (via a contact closure) fires relay A, which holds itself on. A pulse on 'Reset' line fires relay B, which forces A off. This is a one-bit storage element: it 'remembers' whether it was last set or reset. The flip-flop is the foundation of all memory and state machines. [AUDIT: capability prerequisite(s) cap_vac_1e3 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Two relays (or vacuum tube stages) cross-coupled: output of one feeds input of the other. The system has two stable states: relay A on and B off, or vice versa. A pulse on 'Set' line (via a contact closure) fires relay A, which holds itself on. A pulse on 'Reset' line fires relay B, which forces A off. This is a one-bit storage element: it 'remembers' whether it was last set or reset. The flip-flop is the foundation of all memory and state machines. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 1012.0,
    "kb_level": "module"
@@ -8597,8 +8553,7 @@
    "tier": 2,
    "cat": "signalling",
    "pre": [
-    "com_optical_codebook",
-    "cap_tol_100um"
+    "com_optical_codebook"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -8619,7 +8574,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A polished mirror reflects sunlight to encode Morse dots and dashes. Works in daylight at range up to 50 km. Lighter and cheaper than optical towers. Cannot work at night or in cloud. The constraint is weather: an overcast day stops all communication, but the apparatus itself is simpler and more portable. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A polished mirror reflects sunlight to encode Morse dots and dashes. Works in daylight at range up to 50 km. Lighter and cheaper than optical towers. Cannot work at night or in cloud. The constraint is weather: an overcast day stops all communication, but the apparatus itself is simpler and more portable. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 344.0,
    "kb_level": "module"
@@ -8630,8 +8585,7 @@
    "tier": 4,
    "cat": "calculation",
    "pre": [
-    "com_jacquard_loom",
-    "cap_heat_1600"
+    "com_jacquard_loom"
    ],
    "kb": "50_electricity.md",
    "ph": 180,
@@ -8655,7 +8609,7 @@
    "sch": 0,
    "art": 1,
    "conf": "A",
-   "note": "Punched cards record data (census: age, occupation, birthplace, etc., each in a column). A machine reads the holes and closes electromagnetic switches, incrementing counters. The 1890 U.S. Census was tallied in months instead of years. This created data processing as an industry: IBM emerged from tabulating machines. The insight: data can be stored and processed mechanically, and this is faster than manual accounting. [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Punched cards record data (census: age, occupation, birthplace, etc., each in a column). A machine reads the holes and closes electromagnetic switches, incrementing counters. The 1890 U.S. Census was tallied in months instead of years. This created data processing as an industry: IBM emerged from tabulating machines. The insight: data can be stored and processed mechanically, and this is faster than manual accounting. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 5548.75,
    "kb_level": "module"
@@ -8735,8 +8689,7 @@
    "tier": 2,
    "cat": "calculation",
    "pre": [
-    "crank_conrod",
-    "cap_tol_100um"
+    "crank_conrod"
    ],
    "kb": "50_electricity.md",
    "ph": 120,
@@ -8760,7 +8713,7 @@
    "sch": 0,
    "art": 1,
    "conf": "A",
-   "note": "A loom with thousands of vertical threads (warp). A deck of punched cards controls which threads are lifted on each pass of the shuttle. Complex patterns (brocade, damask) can be woven automatically. This was the first programmable machine: change the cards and the output changes. The innovation is separating control (the cards) from mechanism (the loom). This idea was revolutionary and inspired Babbage's Analytical Engine. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A loom with thousands of vertical threads (warp). A deck of punched cards controls which threads are lifted on each pass of the shuttle. Complex patterns (brocade, damask) can be woven automatically. This was the first programmable machine: change the cards and the output changes. The innovation is separating control (the cards) from mechanism (the loom). This idea was revolutionary and inspired Babbage's Analytical Engine. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 2689.5,
    "kb_level": "module"
@@ -9113,8 +9066,7 @@
    "tier": 3,
    "cat": "telephone",
    "pre": [
-    "com_trunk_lines",
-    "cap_vac_1torr"
+    "com_trunk_lines"
    ],
    "kb": "50_electricity.md",
    "ph": 120,
@@ -9137,7 +9089,7 @@
    "sch": 0,
    "art": 0,
    "conf": "C",
-   "note": "Time-division multiplexing: 4 calls take turns using the same trunk line, each getting 1/4 of the time (switching at 1000 Hz, fast enough that voice sounds continuous). Frequency-division: use different frequency bands on the same line. Both require precision filters and were impractical until vacuum tube amplifiers. The principle: more calls per cable = more revenue per infrastructure dollar. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Time-division multiplexing: 4 calls take turns using the same trunk line, each getting 1/4 of the time (switching at 1000 Hz, fast enough that voice sounds continuous). Frequency-division: use different frequency bands on the same line. Both require precision filters and were impractical until vacuum tube amplifiers. The principle: more calls per cable = more revenue per infrastructure dollar. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 1756.75,
    "kb_level": "module"
@@ -9148,8 +9100,7 @@
    "tier": 2,
    "cat": "calculation",
    "pre": [
-    "arithmetic_positional",
-    "cap_tol_100um"
+    "arithmetic_positional"
    ],
    "kb": "50_electricity.md",
    "ph": 100,
@@ -9170,7 +9121,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Rods with multiplication tables engraved in rows (one rod for each digit 0-9). To multiply 45*67, lay out the 4 and 5 rods, read the rows for 6 and 7, add diagonally. Reduces multiplication to table-lookup and addition. Slow compared to memorized multiplication, but eliminates error. Used by merchants and accountants. Fell out of use by 1700 as slide rules became popular, but conceptually important (separation of the multiplication table into components that can be recombined). [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Rods with multiplication tables engraved in rows (one rod for each digit 0-9). To multiply 45*67, lay out the 4 and 5 rods, read the rows for 6 and 7, add diagonally. Reduces multiplication to table-lookup and addition. Slow compared to memorized multiplication, but eliminates error. Used by merchants and accountants. Fell out of use by 1700 as slide rules became popular, but conceptually important (separation of the multiplication table into components that can be recombined). [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 333.0,
    "kb_level": "module"
@@ -9243,8 +9194,7 @@
    "tier": 2,
    "cat": "signalling",
    "pre": [
-    "com_optical_codebook",
-    "cap_tol_100um"
+    "com_optical_codebook"
    ],
    "kb": "50_electricity.md",
    "ph": 120,
@@ -9267,7 +9217,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Tall wooden or brick tower with rotating wooden arms on three axes (shutter positions: open, half, closed). Operator turns cranks to set position, next tower sees it through telescope, relays instantly. No power needed. Can send 20 words per minute across 100 km chain. The killer innovation: a message travels the length of France in hours instead of weeks. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Tall wooden or brick tower with rotating wooden arms on three axes (shutter positions: open, half, closed). Operator turns cranks to set position, next tower sees it through telescope, relays instantly. No power needed. Can send 20 words per minute across 100 km chain. The killer innovation: a message travels the length of France in hours instead of weeks. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 2150.0,
    "kb_level": "module"
@@ -9384,8 +9334,7 @@
    "cat": "radar",
    "pre": [
     "vacuum_tube",
-    "electromagnet",
-    "cap_power_electric"
+    "electromagnet"
    ],
    "kb": "50_electricity.md",
    "ph": 160,
@@ -9410,7 +9359,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A thermionic tube with a hot cathode that emits electrons, a strong axial magnetic field that curves them into a circular path, and resonant cavities around the periphery. Electrons oscillate between cavities, exchanging energy with the RF field. The result: very high power (kilowatts) at very high frequency (microwave, 9 GHz). Compact because the wavelength is tiny. Invented in 1939, it was classified as a weapon; it made radar practical for aircraft detection. [AUDIT: capability prerequisite(s) cap_power_electric were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A thermionic tube with a hot cathode that emits electrons, a strong axial magnetic field that curves them into a circular path, and resonant cavities around the periphery. Electrons oscillate between cavities, exchanging energy with the RF field. The result: very high power (kilowatts) at very high frequency (microwave, 9 GHz). Compact because the wavelength is tiny. Invented in 1939, it was classified as a weapon; it made radar practical for aircraft detection. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 2901.6,
    "kb_level": "module"
@@ -9422,8 +9371,7 @@
    "cat": "radio",
    "pre": [
     "vacuum_tube",
-    "com_relay",
-    "cap_power_electric"
+    "com_relay"
    ],
    "kb": "50_electricity.md",
    "ph": 120,
@@ -9447,7 +9395,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A high-voltage battery (5000 V) charged a capacitor that discharged across an air gap, creating a spark. The spark radiates radio waves across a broad spectrum. A telegraph key interrupts the spark stream, encoding Morse code. Inefficient (most energy is heat and light), unreliable (spark gap is erratic), and creates tons of radio interference across all frequencies. But it works and requires no vacuum tubes. Replaced by continuous wave (CW) generation after 1915. [AUDIT: capability prerequisite(s) cap_power_electric were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A high-voltage battery (5000 V) charged a capacitor that discharged across an air gap, creating a spark. The spark radiates radio waves across a broad spectrum. A telegraph key interrupts the spark stream, encoding Morse code. Inefficient (most energy is heat and light), unreliable (spark gap is erratic), and creates tons of radio interference across all frequencies. But it works and requires no vacuum tubes. Replaced by continuous wave (CW) generation after 1915. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 2257.7,
    "kb_level": "module"
@@ -9697,8 +9645,7 @@
    "tier": 3,
    "cat": "calculation",
    "pre": [
-    "logarithms",
-    "cap_heat_1300"
+    "logarithms"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -9721,7 +9668,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Two wooden rules with logarithmic scales, aligned by hand and compared visually. To multiply 5*7, you find 5 on one scale and 7 on the other, align them, and read 35 off the fixed scale. Uses the log identity: log(a*b)=log(a)+log(b). Accuracy is 3 digits, good enough for engineering work. Ubiquitous by 1900, slide rules were the dominant calculation tool until electronic calculators (1970s). Simple, cheap, and fast enough for design iteration. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Two wooden rules with logarithmic scales, aligned by hand and compared visually. To multiply 5*7, you find 5 on one scale and 7 on the other, align them, and read 35 off the fixed scale. Uses the log identity: log(a*b)=log(a)+log(b). Accuracy is 3 digits, good enough for engineering work. Ubiquitous by 1900, slide rules were the dominant calculation tool until electronic calculators (1970s). Simple, cheap, and fast enough for design iteration. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 573.6,
    "kb_level": "module"
@@ -9732,8 +9679,7 @@
    "tier": 2,
    "cat": "calculation",
    "pre": [
-    "crank_conrod",
-    "cap_tol_100um"
+    "crank_conrod"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -9755,7 +9701,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A drum with 10 pins at different radial distances (0 to 9 steps). A rotating arm engages the appropriate pin and lifts a counter register once per turn. Used in Pascal's and Leibniz's calculators to perform addition and carry-over (successive addition is multiplication). The stepped drum was a brilliant mechanical innovation, but hand-cranked operation was tedious. Every mechanical calculator from 1600 onward used this principle or something similar. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A drum with 10 pins at different radial distances (0 to 9 steps). A rotating arm engages the appropriate pin and lifts a counter register once per turn. Used in Pascal's and Leibniz's calculators to perform addition and carry-over (successive addition is multiplication). The stepped drum was a brilliant mechanical innovation, but hand-cranked operation was tedious. Every mechanical calculator from 1600 onward used this principle or something similar. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 924.75,
    "kb_level": "module"
@@ -10153,8 +10099,7 @@
    "cat": "telephone",
    "pre": [
     "com_telephone_manual_exchange",
-    "com_loading_coil",
-    "cap_vac_1torr"
+    "com_loading_coil"
    ],
    "kb": "50_electricity.md",
    "ph": 100,
@@ -10178,7 +10123,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Heavy-gauge copper wire strung on poles between cities, with loading coils every 2 km. A trunk line connects two exchanges, not individual subscribers. Calls are routed: local exchange A -> trunk to distant exchange B -> local delivery. The killer problem: telephone signals attenuate badly over distance. A 50 km trunk line needs repeater amplifiers every 15 km, which requires vacuum tubes (not available until 1915). Before that, trunk lines were limited to 50-100 km range. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Heavy-gauge copper wire strung on poles between cities, with loading coils every 2 km. A trunk line connects two exchanges, not individual subscribers. Calls are routed: local exchange A -> trunk to distant exchange B -> local delivery. The killer problem: telephone signals attenuate badly over distance. A 50 km trunk line needs repeater amplifiers every 15 km, which requires vacuum tubes (not available until 1915). Before that, trunk lines were limited to 50-100 km range. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "24_comms_computing.json",
    "_total_cost": 15594.0,
    "kb_level": "module"
@@ -10599,8 +10544,7 @@
    "tier": 1,
    "cat": "power",
    "pre": [
-    "workshop_first",
-    "cap_heat_1100"
+    "workshop_first"
    ],
    "kb": "40_power_precision.md#crank_connecting_rod",
    "ph": 300,
@@ -10622,7 +10566,7 @@
    "sch": 0,
    "art": 2,
    "conf": "B",
-   "note": "Not attested in the Roman world until the Hierapolis sawmill relief, c. 3rd century. One afternoon for a good carpenter. Unlocks sawmills, ore stamps, forge hammers, pumps and eventually every engine. [AUDIT: capability prerequisite(s) cap_heat_1100 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Not attested in the Roman world until the Hierapolis sawmill relief, c. 3rd century. One afternoon for a good carpenter. Unlocks sawmills, ore stamps, forge hammers, pumps and eventually every engine. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 1316.0,
    "kb_level": "recipe"
@@ -10736,8 +10680,7 @@
    "cat": "electrical",
    "pre": [
     "voltaic_pile",
-    "sulfuric_retort",
-    "cap_power_water"
+    "sulfuric_retort"
    ],
    "kb": "50_electricity.md#daniell_cell",
    "ph": 250,
@@ -10761,7 +10704,7 @@
    "sch": 2,
    "art": 2,
    "conf": "A",
-   "note": "The two-solution design stops polarisation, so the cell holds its voltage for hours instead of minutes. Around 1.1 volts and dependable, which is what makes telegraphy and electroplating practical rather than theatrical. [AUDIT: capability prerequisite(s) cap_power_water were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "The two-solution design stops polarisation, so the cell holds its voltage for hours instead of minutes. Around 1.1 volts and dependable, which is what makes telegraphy and electroplating practical rather than theatrical. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 3116.4,
    "kb_level": "recipe"
@@ -11090,8 +11033,7 @@
    "cat": "electrical",
    "pre": [
     "glass_labware",
-    "lab_apparatus",
-    "cap_tol_100um"
+    "lab_apparatus"
    ],
    "kb": "50_electricity.md#electrostatics",
    "ph": 350,
@@ -11114,7 +11056,7 @@
    "sch": 2,
    "art": 2,
    "conf": "A",
-   "note": "Spectacular, cheap, and it produces exactly the kind of effect that gets a man tried for magic. Do it in daylight, in front of a magistrate, and explain it as a property of amber long known to the Greeks, which is even true (elektron is Greek for amber). High voltage, negligible current: useless for chemistry, excellent for persuasion. CORRECTION to an earlier version of this tree: this no longer requires electromagnetic theory. Franklin and Volta had none. Making the theory a prerequisite for the experiment put the whole of calculus on the electrical critical path, which is backwards. The State neither wants this nor forbids it. It simply looks like sorcery, which is a different and worse problem. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Spectacular, cheap, and it produces exactly the kind of effect that gets a man tried for magic. Do it in daylight, in front of a magistrate, and explain it as a property of amber long known to the Greeks, which is even true (elektron is Greek for amber). High voltage, negligible current: useless for chemistry, excellent for persuasion. CORRECTION to an earlier version of this tree: this no longer requires electromagnetic theory. Franklin and Volta had none. Making the theory a prerequisite for the experiment put the whole of calculus on the electrical critical path, which is backwards. The State neither wants this nor forbids it. It simply looks like sorcery, which is a different and worse problem. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 2511.0,
    "kb_level": "recipe"
@@ -11306,8 +11248,7 @@
    "tier": 2,
    "cat": "crops",
    "pre": [
-    "fud_sugar_cane_cultivation",
-    "cap_vac_1torr"
+    "fud_sugar_cane_cultivation"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 200,
@@ -11329,7 +11270,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Grow sugar beets in cool northern climates where cane fails. Extract juice, treat with lime and acid to remove impurities (sulfur dioxide helps), evaporate under vacuum, and crystallize. Refinery is capital-intensive. Enables sugar production independent of tropical trade. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Grow sugar beets in cool northern climates where cane fails. Extract juice, treat with lime and acid to remove impurities (sulfur dioxide helps), evaporate under vacuum, and crystallize. Refinery is capital-intensive. Enables sugar production independent of tropical trade. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 804.5,
    "kb_level": "module"
@@ -11548,8 +11489,7 @@
    "tier": 1,
    "cat": "crops",
    "pre": [
-    "crop_rotation",
-    "cap_heat_1100"
+    "crop_rotation"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 60,
@@ -11567,7 +11507,7 @@
    "sch": 0,
    "art": 0,
    "conf": "C",
-   "note": "Import coffee beans from Arabian and Ethiopian merchants. Roast, grind, and brew with hot water. Later becomes urban necessity in coffeehouses. Currently rare and expensive in the Mediterranean. [AUDIT: capability prerequisite(s) cap_heat_1100 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Import coffee beans from Arabian and Ethiopian merchants. Roast, grind, and brew with hot water. Later becomes urban necessity in coffeehouses. Currently rare and expensive in the Mediterranean. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 25.0,
    "kb_level": "module"
@@ -11770,8 +11710,7 @@
    "cat": "preservation",
    "pre": [
     "fud_pasteurisation",
-    "cap_heat_1100",
-    "cap_vac_1torr"
+    "cap_heat_1100"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 150,
@@ -11792,7 +11731,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Heat milk gently in copper pan under partial vacuum (reduces boiling point) or in open pan to evaporate water until thick. Can milk solids are concentrated 2-3 fold. Stores several months in sealed tin. Reconstitutes with water or used directly in cooking. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Heat milk gently in copper pan under partial vacuum (reduces boiling point) or in open pan to evaporate water until thick. Can milk solids are concentrated 2-3 fold. Stores several months in sealed tin. Reconstitutes with water or used directly in cooking. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 432.0,
    "kb_level": "module"
@@ -11920,9 +11859,7 @@
    "name": "Cylindrical silos for bulk grain storage",
    "tier": 2,
    "cat": "storage",
-   "pre": [
-    "cap_tol_100um"
-   ],
+   "pre": [],
    "kb": "75_agriculture_food.md",
    "ph": 200,
    "lab": {
@@ -11943,7 +11880,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Build tall cylindrical brick or wooden towers for grain storage. Pressure from grain weight above excludes insects and rodents. Chutes at bottom for withdrawal. More efficient than rectangular granaries. Enables large centralized storage for grain dole. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Build tall cylindrical brick or wooden towers for grain storage. Pressure from grain weight above excludes insects and rodents. Chutes at bottom for withdrawal. More efficient than rectangular granaries. Enables large centralized storage for grain dole. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 977.0,
    "kb_level": "module"
@@ -12018,9 +11955,7 @@
    "name": "Hay making and dry storage",
    "tier": 1,
    "cat": "agriculture",
-   "pre": [
-    "crop_rotation"
-   ],
+   "pre": [],
    "kb": "75_agriculture_food.md",
    "ph": 100,
    "lab": {
@@ -12039,7 +11974,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Cut grass at peak nutrition, dry thoroughly in sun and wind, store in dry barn or haybarn. Timing and weather are critical - rain-soaked hay rots or molts. Enables winter feeding of draft animals when pasture is gone.",
+   "note": "Cut grass at peak nutrition, dry thoroughly in sun and wind, store in dry barn or haybarn. Timing and weather are critical - rain-soaked hay rots or molts. Enables winter feeding of draft animals when pasture is gone. [FIXED after independent audit: hay needs a scythe and a dry barn, both of which Rome has. Crop rotation is unrelated.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 235.0,
    "kb_level": "module"
@@ -12182,8 +12117,7 @@
    "tier": 2,
    "cat": "refrigeration",
    "pre": [
-    "fud_ice_harvesting_and_cutting",
-    "cap_tol_100um"
+    "fud_ice_harvesting_and_cutting"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 120,
@@ -12202,7 +12136,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Transport harvested ice via wagon or ship to towns 50-100 miles away, insulated with sawdust and straw. Arrive with 30-50% loss. Sells to affluent households and restaurants for drinks and food preservation. High loss but profitable if demand is strong. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Transport harvested ice via wagon or ship to towns 50-100 miles away, insulated with sawdust and straw. Arrive with 30-50% loss. Sells to affluent households and restaurants for drinks and food preservation. High loss but profitable if demand is strong. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 352.5,
    "kb_level": "module"
@@ -12327,8 +12261,7 @@
    "tier": 1,
    "cat": "fermentation",
    "pre": [
-    "crop_rotation",
-    "cap_heat_1100"
+    "crop_rotation"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 120,
@@ -12346,7 +12279,7 @@
    "sch": 0,
    "art": 1,
    "conf": "A",
-   "note": "Soak barley, allow it to germinate, then dry in kiln to stop germination. Malting converts starches to fermentable sugars. Malt stores for months and is essential for brewing consistent beer. Requires cool storage to prevent mold. [AUDIT: capability prerequisite(s) cap_heat_1100 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Soak barley, allow it to germinate, then dry in kiln to stop germination. Malting converts starches to fermentable sugars. Malt stores for months and is essential for brewing consistent beer. Requires cool storage to prevent mold. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 222.5,
    "kb_level": "module"
@@ -12738,8 +12671,7 @@
    "tier": 2,
    "cat": "agriculture",
    "pre": [
-    "fud_hay_making_storage",
-    "cap_tol_100um"
+    "fud_hay_making_storage"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 150,
@@ -12761,7 +12693,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Pack fresh grass tightly in pits or wooden silos with salt, exclude air, and let anaerobic bacteria ferment it. Preserves nutrition without sun-drying and works in wet climates. Requires understanding of fermentation and airtight storage design. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Pack fresh grass tightly in pits or wooden silos with salt, exclude air, and let anaerobic bacteria ferment it. Preserves nutrition without sun-drying and works in wet climates. Requires understanding of fermentation and airtight storage design. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 367.5,
    "kb_level": "module"
@@ -12772,7 +12704,8 @@
    "tier": 2,
    "cat": "knowledge",
    "pre": [
-    "fud_agricultural_treatises"
+    "fud_agricultural_treatises",
+    "analytical_chemistry"
    ],
    "kb": "",
    "ph": 200,
@@ -13113,9 +13046,7 @@
    "name": "Organized whaling industry for oil and meat",
    "tier": 2,
    "cat": "fishing",
-   "pre": [
-    "cap_tol_100um"
-   ],
+   "pre": [],
    "kb": "75_agriculture_food.md",
    "ph": 300,
    "lab": {
@@ -13133,7 +13064,7 @@
    "sch": 0,
    "art": 0,
    "conf": "C",
-   "note": "Organize fleets of whaleboats and processing ships to hunt large whales. Render whale blubber into oil for lamps (the best non-animal oil light). Whale meat is tough but provides protein. Dangerous work; whales fight back. Requires capital and international coordination. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Organize fleets of whaleboats and processing ships to hunt large whales. Render whale blubber into oil for lamps (the best non-animal oil light). Whale meat is tough but provides protein. Dangerous work; whales fight back. Requires capital and international coordination. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 2070.0,
    "kb_level": "module"
@@ -13178,8 +13109,7 @@
    "tier": 2,
    "cat": "fermentation",
    "pre": [
-    "distillation_alcohol",
-    "cap_tol_100um"
+    "distillation_alcohol"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 200,
@@ -13200,7 +13130,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Isolate yeast strain from wild fermentation by serial dilution and propagation in sterile medium. Maintain culture in sealed glass vials. Enables reproducible beer and bread fermentation without wild cultures. Looks like alchemy; requires careful technique and documentation. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Isolate yeast strain from wild fermentation by serial dilution and propagation in sterile medium. Maintain culture in sealed glass vials. Enables reproducible beer and bread fermentation without wild cultures. Looks like alchemy; requires careful technique and documentation. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 500.0,
    "kb_level": "module"
@@ -13248,8 +13178,7 @@
    "pre": [
     "drawplate_wire",
     "crude_cell",
-    "lead_metallurgy",
-    "cap_vac_1torr"
+    "lead_metallurgy"
    ],
    "kb": "55_semiconductors.md#galena_detector",
    "ph": 150,
@@ -13271,7 +13200,7 @@
    "sch": 2,
    "art": 1,
    "conf": "A",
-   "note": "A working semiconductor device in Rome, using mineral lead sulfide straight out of the mine and a springy wire. No purification, no doping, no vacuum, no theory. It is nearly free, it is a genuine rectifier, and it is the proof-of-concept that justifies a two-century programme to a sceptical patron. Build it the moment you have a cell and fine wire. It depends on the crude brine cell, not on the voltaic pile, which is what makes the year-three claim in 00_NONOBVIOUS_TRICKS actually true. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A working semiconductor device in Rome, using mineral lead sulfide straight out of the mine and a springy wire. No purification, no doping, no vacuum, no theory. It is nearly free, it is a genuine rectifier, and it is the proof-of-concept that justifies a two-century programme to a sceptical patron. Build it the moment you have a cell and fine wire. It depends on the crude brine cell, not on the voltaic pile, which is what makes the year-three claim in 00_NONOBVIOUS_TRICKS actually true. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 283.75,
    "kb_level": "recipe"
@@ -13319,8 +13248,7 @@
    "pre": [
     "gecl4_purification",
     "industrial_gases",
-    "fused_quartz",
-    "cap_pure_6N"
+    "fused_quartz"
    ],
    "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 600,
@@ -13342,7 +13270,7 @@
    "sch": 18,
    "art": 12,
    "conf": "A",
-   "note": "Hydrogen at roughly 650 C reduces the dioxide to grey powder; melt it into an ingot in a high purity graphite boat under hydrogen. Everything that touches the metal from here on contaminates it, so the boat, the tube and the gas must all be purer than the product. [AUDIT: capability prerequisite(s) cap_pure_6N were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Hydrogen at roughly 650 C reduces the dioxide to grey powder; melt it into an ingot in a high purity graphite boat under hydrogen. Everything that touches the metal from here on contaminates it, so the boat, the tube and the gas must all be purer than the product. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 26710.0,
    "kb_level": "recipe"
@@ -13355,8 +13283,7 @@
    "pre": [
     "germanium_extraction",
     "glass_borosilicate",
-    "fused_quartz",
-    "cap_pure_6N"
+    "fused_quartz"
    ],
    "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 900,
@@ -13377,7 +13304,7 @@
    "sch": 20,
    "art": 14,
    "conf": "A",
-   "note": "The door. Germanium is a nightmare to purify as metal or oxide and easy as a volatile chloride boiling at about 86 C, which you can fractionate like brandy. Distil repeatedly in a tall packed column, hydrolyse back to the dioxide with ultrapure water, and you are already at parts per million before you have done anything clever. [AUDIT: capability prerequisite(s) cap_pure_6N were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "The door. Germanium is a nightmare to purify as metal or oxide and easy as a volatile chloride boiling at about 86 C, which you can fractionate like brandy. Distil repeatedly in a tall packed column, hydrolyse back to the dioxide with ultrapure water, and you are already at parts per million before you have done anything clever. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 40600.0,
    "kb_level": "recipe"
@@ -13517,8 +13444,7 @@
    "cat": "glass_optics",
    "pre": [
     "glass_labware",
-    "sulfuric_retort",
-    "cap_heat_1300"
+    "sulfuric_retort"
    ],
    "kb": "30_glass_optics.md#glass_borosilicate",
    "ph": 500,
@@ -13542,7 +13468,7 @@
    "sch": 2,
    "art": 4,
    "conf": "C",
-   "note": "Needs boron. The Larderello fumaroles in Tuscany emit boric acid and are inside the Empire, which is a genuinely lucky break if it holds; verify on arrival before planning around it. Low thermal expansion is the difference between a laboratory and a pile of broken retorts. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Needs boron. The Larderello fumaroles in Tuscany emit boric acid and are inside the Empire, which is a genuinely lucky break if it holds; verify on arrival before planning around it. Low thermal expansion is the difference between a laboratory and a pile of broken retorts. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 8590.0,
    "kb_level": "recipe"
@@ -13554,8 +13480,7 @@
    "cat": "glass_optics",
    "pre": [
     "workshop_first",
-    "refractory_fireclay",
-    "cap_heat_1100"
+    "refractory_fireclay"
    ],
    "kb": "30_glass_optics.md#glass_clear_cristallo",
    "ph": 400,
@@ -13580,7 +13505,7 @@
    "sch": 0,
    "art": 3,
    "conf": "B",
-   "note": "Rome already makes near-colourless glass and already knows pyrolusite is glassmaker's soap. What it does not have is control: iron-free sand chosen deliberately, a weighed manganese dose, and a proper annealing lehr. Cheapest high-value upgrade to a live industry in the Empire. [AUDIT: capability prerequisite(s) cap_heat_1100 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Rome already makes near-colourless glass and already knows pyrolusite is glassmaker's soap. What it does not have is control: iron-free sand chosen deliberately, a weighed manganese dose, and a proper annealing lehr. Cheapest high-value upgrade to a live industry in the Empire. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 6627.0,
    "kb_level": "recipe"
@@ -13871,8 +13796,7 @@
    "cat": "cleaning",
    "pre": [
     "cap_tol_1mm",
-    "mat_wrought_iron",
-    "cap_vac_1torr"
+    "mat_wrought_iron"
    ],
    "kb": "91_household.md",
    "ph": 100,
@@ -13895,7 +13819,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Wheeled frame with rotating brush underneath. Push it across carpet to collect dust and lint. No electricity needed. Precedes vacuum cleaners; faster than hand-brushing. Carpet sweepers are labour-replacing and displace sweeping servants. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Wheeled frame with rotating brush underneath. Push it across carpet to collect dust and lint. No electricity needed. Precedes vacuum cleaners; faster than hand-brushing. Carpet sweepers are labour-replacing and displace sweeping servants. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "12_household.json",
    "_total_cost": 143.3,
    "kb_level": "module"
@@ -13907,8 +13831,7 @@
    "cat": "personal",
    "pre": [
     "germ_theory",
-    "hom_cosmetics_roman",
-    "cap_heat_1600"
+    "hom_cosmetics_roman"
    ],
    "kb": "91_household.md",
    "ph": 100,
@@ -13931,7 +13854,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Once germ theory and toxicology establish that white lead causes chronic poisoning, cosmetics reformulate. Lead face paint is phased out; zinc oxide and iron oxides replace it. Labels warn of hazards. Modern cosmetics prioritise safety and truthful marketing. [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Once germ theory and toxicology establish that white lead causes chronic poisoning, cosmetics reformulate. Lead face paint is phased out; zinc oxide and iron oxides replace it. Labels warn of hazards. Modern cosmetics prioritise safety and truthful marketing. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "12_household.json",
    "_total_cost": 206.75,
    "kb_level": "module"
@@ -14458,9 +14381,7 @@
    "name": "Hypocaust underfloor heating",
    "tier": 0,
    "cat": "heating",
-   "pre": [
-    "cap_heat_0700"
-   ],
+   "pre": [],
    "kb": "91_household.md",
    "ph": 0,
    "lab": {},
@@ -14475,7 +14396,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Hot air from a furnace flows through hollow spaces beneath the floor. Expensive; only wealthy houses and public baths use it. Rome never develops the chimney, so room heating otherwise requires a brazier and open flame. [AUDIT: capability prerequisite(s) cap_heat_0700 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Hot air from a furnace flows through hollow spaces beneath the floor. Expensive; only wealthy houses and public baths use it. Rome never develops the chimney, so room heating otherwise requires a brazier and open flame. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "12_household.json",
    "_total_cost": 0,
    "kb_level": "module"
@@ -15424,8 +15345,7 @@
    "tier": 3,
    "cat": "sanitation",
    "pre": [
-    "hom_latrine_water_trap",
-    "cap_heat_1300"
+    "hom_latrine_water_trap"
    ],
    "kb": "91_household.md",
    "ph": 180,
@@ -15448,7 +15368,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Sewage and rain runoff follow separate pipes to prevent sewage backup during storms. Public health innovation; requires city-scale investment. Many 19th-century cities combine sewers (causing problems); separation is a later upgrade. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Sewage and rain runoff follow separate pipes to prevent sewage backup during storms. Public health innovation; requires city-scale investment. Many 19th-century cities combine sewers (causing problems); separation is a later upgrade. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "12_household.json",
    "_total_cost": 2182.0,
    "kb_level": "module"
@@ -15627,11 +15547,13 @@
   {
    "id": "hom_stove_enclosed",
    "name": "Enclosed stove",
-   "tier": 1,
+   "tier": 2,
    "cat": "heating",
    "pre": [
     "hom_fireplace_chimney",
-    "cap_heat_1100"
+    "cap_heat_1100",
+    "blast_furnace",
+    "mat_cast_iron"
    ],
    "kb": "91_household.md",
    "ph": 100,
@@ -15654,7 +15576,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A metal or ceramic box with fire inside, heating room air by radiation and conduction. More efficient than open fireplace because less heat escapes up the chimney. Requires cast iron or tile manufacture.",
+   "note": "A metal or ceramic box with fire inside, heating room air by radiation and conduction. More efficient than open fireplace because less heat escapes up the chimney. Requires cast iron or tile manufacture. [FIXED after independent audit: it consumed 40 kg of cast iron at tier 1. There is no cast iron in the Roman West; it needs the blast furnace and cannot be a cheap early win.]",
    "_src": "12_household.json",
    "_total_cost": 222.51999999999998,
    "kb_level": "module"
@@ -15802,8 +15724,7 @@
    "pre": [
     "motor_transformer_ac",
     "cap_power_electric",
-    "cap_heat_1100",
-    "cap_vac_1e3"
+    "cap_heat_1100"
    ],
    "kb": "91_household.md",
    "ph": 140,
@@ -15827,7 +15748,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Electric motor drives a suction fan that pulls dirt through a cloth bag filter. Replaces carpet sweepers and hand-brushing entirely. Servants become redundant. Cord length and motor noise are early limitations; wireless and quiet models come later. [AUDIT: capability prerequisite(s) cap_vac_1e3 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Electric motor drives a suction fan that pulls dirt through a cloth bag filter. Replaces carpet sweepers and hand-brushing entirely. Servants become redundant. Cord length and motor noise are early limitations; wireless and quiet models come later. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "12_household.json",
    "_total_cost": 314.95,
    "kb_level": "module"
@@ -16013,10 +15934,7 @@
    "name": "Hot air balloon for observation",
    "tier": 2,
    "cat": "military",
-   "pre": [
-    "rag_paper",
-    "distillation_alcohol"
-   ],
+   "pre": [],
    "kb": "85_transport_civil.md",
    "ph": 400,
    "lab": {
@@ -16038,7 +15956,7 @@
    "sch": 1,
    "art": 3,
    "conf": "B",
-   "note": "Low technology, moderate cost, high spectacle, and the State wants it for siege observation and signalling. Also one of the fastest ways to be accused of sorcery, so fly it first for the army with the governor watching, never privately at night. Linen sized with oil is the envelope; Rome has excellent sailcloth.",
+   "note": "Low technology, moderate cost, high spectacle, and the State wants it for siege observation and signalling. Also one of the fastest ways to be accused of sorcery, so fly it first for the army with the governor watching, never privately at night. Linen sized with oil is the envelope; Rome has excellent sailcloth. [FIXED after independent audit: paper and distilled spirits were listed and neither is load-bearing. An oiled linen envelope over a wood fire needs Roman sailcloth and oil, both tier 0.]",
    "_src": "core",
    "_total_cost": 4361.5,
    "kb_level": "module"
@@ -17932,7 +17850,7 @@
    "tier": 3,
    "cat": "transport",
    "pre": [
-    "cap_heat_1300"
+    "cap_tol_100um"
    ],
    "kb": "85_transport_civil.md",
    "ph": 100,
@@ -17953,7 +17871,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Front wheels must turn at different angles during a turn so both follow the same curved path. This geometry is counterintuitive but essential for stable handling. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Front wheels must turn at different angles during a turn so both follow the same curved path. This geometry is counterintuitive but essential for stable handling. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "14_land_transport.json",
    "_total_cost": 1642.0,
    "kb_level": "module"
@@ -17964,8 +17882,8 @@
    "tier": 1,
    "cat": "transport",
    "pre": [
-    "horse_collar",
-    "mat_wrought_iron"
+    "mat_wrought_iron",
+    "lnd_horse_saddle_basic"
    ],
    "kb": "85_transport_civil.md",
    "ph": 60,
@@ -17987,7 +17905,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Metal foot-loops hanging from saddle revolutionise horseback riding. Rider can brace legs, rise from seat, and deliver force in combat or work. This is as much a military technology as a transport one.",
+   "note": "Metal foot-loops hanging from saddle revolutionise horseback riding. Rider can brace legs, rise from seat, and deliver force in combat or work. This is as much a military technology as a transport one. [FIXED after independent audit: the horse collar is draught harness and has nothing to do with a mounted rider's balance. The real missing input is a framed saddle.]",
    "_src": "14_land_transport.json",
    "_total_cost": 291.9,
    "kb_level": "module"
@@ -18705,9 +18623,7 @@
    "name": "Calamine (zinc carbonate/silicate ore)",
    "tier": 0,
    "cat": "material",
-   "pre": [
-    "cap_heat_0700"
-   ],
+   "pre": [],
    "kb": "",
    "ph": 0,
    "lab": {},
@@ -18722,7 +18638,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "ROME HAS THIS and already smelts it into brass. [AUDIT: capability prerequisite(s) cap_heat_0700 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "ROME HAS THIS and already smelts it into brass. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -19105,9 +19021,7 @@
    "name": "Emery (Naxos)",
    "tier": 0,
    "cat": "material",
-   "pre": [
-    "cap_tol_1mm"
-   ],
+   "pre": [],
    "kb": "",
    "ph": 0,
    "lab": {},
@@ -19122,7 +19036,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "ROME HAS THIS. Your abrasive for every ground surface in this document. [AUDIT: capability prerequisite(s) cap_tol_1mm were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "ROME HAS THIS. Your abrasive for every ground surface in this document. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -19162,8 +19076,7 @@
    "cat": "material",
    "pre": [
     "fused_quartz",
-    "cap_heat_2000",
-    "cap_pure_4N"
+    "cap_heat_2000"
    ],
    "kb": "",
    "ph": 20,
@@ -19179,7 +19092,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Pure silica worked at 1700 to 2000 C with an oxy-hydrogen flame. Indispensable later: you cannot zone refine germanium in anything that contaminates it. [AUDIT: capability prerequisite(s) cap_pure_4N were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Pure silica worked at 1700 to 2000 C with an oxy-hydrogen flame. Indispensable later: you cannot zone refine germanium in anything that contaminates it. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -19348,8 +19261,7 @@
    "tier": 5,
    "cat": "material",
    "pre": [
-    "cap_heat_3000",
-    "cap_pure_6N"
+    "cap_heat_3000"
    ],
    "kb": "",
    "ph": 60,
@@ -19365,7 +19277,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Acheson process: heat carbon to about 2500 C. Crucibles and boats that do not contaminate what is melted in them, which is exactly what zone refining needs. [AUDIT: capability prerequisite(s) cap_pure_6N were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Acheson process: heat carbon to about 2500 C. Crucibles and boats that do not contaminate what is melted in them, which is exactly what zone refining needs. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -19792,9 +19704,7 @@
    "name": "Olive oil",
    "tier": 0,
    "cat": "material",
-   "pre": [
-    "cap_heat_0700"
-   ],
+   "pre": [],
    "kb": "",
    "ph": 0,
    "lab": {},
@@ -19809,7 +19719,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "ROME HAS THIS in industrial quantity. Soap, lighting, quenching, varnish base. [AUDIT: capability prerequisite(s) cap_heat_0700 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "ROME HAS THIS in industrial quantity. Soap, lighting, quenching, varnish base. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -20153,8 +20063,7 @@
    "pre": [
     "mat_tool_steel_hss",
     "mat_chromium",
-    "cap_pure_4N",
-    "cap_vac_1e6"
+    "cap_pure_4N"
    ],
    "kb": "",
    "ph": 80,
@@ -20170,7 +20079,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Chromium above about 11% forms a self-healing passive oxide. Chemical plant, cutlery, vacuum systems. [AUDIT: capability prerequisite(s) cap_vac_1e6 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Chromium above about 11% forms a self-healing passive oxide. Chemical plant, cutlery, vacuum systems. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -20565,7 +20474,7 @@
    "tier": 2,
    "cat": "pharmacology",
    "pre": [
-    "nitric_acid"
+    "destructive_distillation"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 80,
@@ -20585,7 +20494,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Acetylation of salicylic acid (from willow bark). Safer than salicylate because absorbed slowly. Reduces fever, pain, inflammation. Bayer trademark.",
+   "note": "Acetylation of salicylic acid (from willow bark). Safer than salicylate because absorbed slowly. Reduces fever, pain, inflammation. Bayer trademark. [FIXED after independent audit: acetylation needs acetic anhydride, from acetic acid via wood distillation. Nitric acid was wrong and has been removed.]",
    "_src": "21_medicine.json",
    "_total_cost": 648.03,
    "kb_level": "module"
@@ -20597,8 +20506,7 @@
    "cat": "instruments",
    "pre": [
     "steam_high_pressure",
-    "glass_labware",
-    "cap_heat_1300"
+    "glass_labware"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 150,
@@ -20620,7 +20528,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Sealed vessel with high-pressure steam at 120 C for 15 minutes sterilizes instruments. Requires precision engineering; leaks render it useless.",
+   "note": "Sealed vessel with high-pressure steam at 120 C for 15 minutes sterilizes instruments. Requires precision engineering; leaks render it useless. [FIXED after independent audit: the heat rung was redundant with the high pressure steam prerequisite.]",
    "_src": "21_medicine.json",
    "_total_cost": 2313.5,
    "kb_level": "module"
@@ -20757,8 +20665,7 @@
    "cat": "public_health",
    "pre": [
     "med_epidemiology_statistics",
-    "scientific_method",
-    "cap_tol_100um"
+    "scientific_method"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 200,
@@ -20776,7 +20683,7 @@
    "sch": 2,
    "art": 0,
    "conf": "B",
-   "note": "Case control: backward look at exposure. Fast and cheap. Randomised controlled trial: random assignment to treatment or placebo, prospective, blind. Eliminates bias but takes years. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Case control: backward look at exposure. Fast and cheap. Randomised controlled trial: random assignment to treatment or placebo, prospective, blind. Eliminates bias but takes years. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "21_medicine.json",
    "_total_cost": 1300.0,
    "kb_level": "module"
@@ -21018,7 +20925,8 @@
    },
    "mat": {
     "glass_raw_kg": 2,
-    "dye_kg": 0.2
+    "dye_kg": 0.2,
+    "agar_or_gelatin_kg": 4
    },
    "cap": 600,
    "up": 100,
@@ -21853,8 +21761,7 @@
    "tier": 2,
    "cat": "serology",
    "pre": [
-    "germ_theory",
-    "cap_tol_100um"
+    "germ_theory"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 150,
@@ -21872,7 +21779,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Variolation: pus from smallpox pustule (0.5-2% death). Cowpox: Jenner's insight, much safer. Pasteur: heat or chemical attenuation for rabies, anthrax, cholera. Toxoids (diphtheria, tetanus) are safest. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Variolation: pus from smallpox pustule (0.5-2% death). Cowpox: Jenner's insight, much safer. Pasteur: heat or chemical attenuation for rabies, anthrax, cholera. Toxoids (diphtheria, tetanus) are safest. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "21_medicine.json",
    "_total_cost": 860.0,
    "kb_level": "module"
@@ -22011,8 +21918,7 @@
    "cat": "metallurgy",
    "pre": [
     "lead_metallurgy",
-    "lab_apparatus",
-    "cap_vac_1torr"
+    "lab_apparatus"
    ],
    "kb": "10_metallurgy.md#mercury",
    "ph": 150,
@@ -22033,7 +21939,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Almaden is an imperial monopoly, so this is a political node before it is a technical one. Mercury gives you barometers, the Sprengel pump, mirrors and the first hard vacuum humans have ever had. Quantity sized for programme needs, not for trade: 400 kg of cinnabar yields roughly 300 kg of mercury, which is ample for barometers, thermometers, Sprengel pumps and a mirror works. Cinnabar is priced from Pliny NH 33.118. CORRECTION: this no longer requires the imperial mining concession. Cinnabar is traded across the Empire as the pigment minium and you can simply buy it and retort it yourself. The concession buys you BULK mercury cheaply, which matters later for mirrors and pumps, and it is a separate problem from getting your first kilogramme. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Almaden is an imperial monopoly, so this is a political node before it is a technical one. Mercury gives you barometers, the Sprengel pump, mirrors and the first hard vacuum humans have ever had. Quantity sized for programme needs, not for trade: 400 kg of cinnabar yields roughly 300 kg of mercury, which is ample for barometers, thermometers, Sprengel pumps and a mirror works. Cinnabar is priced from Pliny NH 33.118. CORRECTION: this no longer requires the imperial mining concession. Cinnabar is traded across the Empire as the pigment minium and you can simply buy it and retort it yourself. The concession buys you BULK mercury cheaply, which matters later for mirrors and pumps, and it is a separate problem from getting your first kilogramme. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 24424.0,
    "kb_level": "recipe"
@@ -22045,8 +21951,7 @@
    "cat": "materials",
    "pre": [
     "cap_heat_1600",
-    "industrial_gases",
-    "cap_power_water"
+    "industrial_gases"
    ],
    "kb": "10_metallurgy.md",
    "ph": 200,
@@ -22070,7 +21975,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Heat coke and lime to 2000 C in an electric furnace to make calcium carbide, then mix with water and collect the acetylene gas. The carbide reacts violently with water so the generator must be robust and well-designed or it leaks. Acetylene is unstable and cannot be pressurized above 2 atmospheres without risk of explosion, so it must be dissolved in acetone in a porous mass (a carbide lamp cartridge) for transport. [AUDIT: capability prerequisite(s) cap_power_water were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Heat coke and lime to 2000 C in an electric furnace to make calcium carbide, then mix with water and collect the acetylene gas. The carbide reacts violently with water so the generator must be robust and well-designed or it leaks. Acetylene is unstable and cannot be pressurized above 2 atmospheres without risk of explosion, so it must be dissolved in acetone in a porous mass (a carbide lamp cartridge) for transport. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 1770.8,
    "kb_level": "module"
@@ -22326,7 +22231,7 @@
   {
    "id": "met_cupola_furnace",
    "name": "Cupola furnace for iron casting",
-   "tier": 1,
+   "tier": 2,
    "cat": "smelting",
    "pre": [
     "cap_heat_1300",
@@ -22356,7 +22261,7 @@
    "sch": 1,
    "art": 0,
    "conf": "A",
-   "note": "A small tall furnace that melts scrap and pig iron for casting into sand moulds. Much hotter than an open hearth because the stack draft is strong. The problem is contamination from coke ash unless you use charcoal and then your fuel bill is punishing. Solves small-batch casting need cheaply.",
+   "note": "A small tall furnace that melts scrap and pig iron for casting into sand moulds. Much hotter than an open hearth because the stack draft is strong. The problem is contamination from coke ash unless you use charcoal and then your fuel bill is punishing. Solves small-batch casting need cheaply. [FIXED after independent audit: it was tier 1 while depending on the blast furnace, which is a major independent metallurgical leap.]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 898.7,
    "kb_level": "module"
@@ -22822,9 +22727,8 @@
    "tier": 2,
    "cat": "surface_treatment",
    "pre": [
-    "mat_zinc",
     "zinc_metal",
-    "cap_heat_1300"
+    "cap_heat_0700"
    ],
    "kb": "10_metallurgy.md",
    "ph": 120,
@@ -22847,7 +22751,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Dip clean iron into molten zinc. Zinc bonds metallurgically to iron and protects it from rust. The zinc-iron interface layer is hard and brittle; if you bend the bar sharply right after galvanizing it spalls and exposes the iron. Needs a pickling step with acid to remove rust and oxide before the dip, and flux (powdered chloride) to prevent oxidation of the zinc.",
+   "note": "Dip clean iron into molten zinc. Zinc bonds metallurgically to iron and protects it from rust. The zinc-iron interface layer is hard and brittle; if you bend the bar sharply right after galvanizing it spalls and exposes the iron. Needs a pickling step with acid to remove rust and oxide before the dip, and flux (powdered chloride) to prevent oxidation of the zinc. [FIXED after independent audit: molten zinc is about 450 C, nowhere near a blast furnace. Zinc metal was also listed twice.]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 1143.2,
    "kb_level": "module"
@@ -22998,9 +22902,7 @@
    "name": "Investment casting and lost wax",
    "tier": 0,
    "cat": "casting",
-   "pre": [
-    "cap_heat_0700"
-   ],
+   "pre": [],
    "kb": "10_metallurgy.md",
    "ph": 100,
    "lab": {
@@ -23021,7 +22923,7 @@
    "sch": 0,
    "art": 1,
    "conf": "A",
-   "note": "Carve fine details in wax, embed in clay and sand, fire to melt and drive out the wax, pour molten metal into the cavity. Results in intricate castings with no parting lines. Rome has this for jewelry. For large castings it becomes expensive in wax and labor but the precision is unmatched. The name investment refers to the clay-sand shell that receives the investment. [AUDIT: capability prerequisite(s) cap_heat_0700 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Carve fine details in wax, embed in clay and sand, fire to melt and drive out the wax, pour molten metal into the cavity. Results in intricate castings with no parting lines. Rome has this for jewelry. For large castings it becomes expensive in wax and labor but the precision is unmatched. The name investment refers to the clay-sand shell that receives the investment. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 329.8,
    "kb_level": "module"
@@ -23620,7 +23522,7 @@
    "sch": 1,
    "art": 0,
    "conf": "A",
-   "note": "Heat ore in an open pile to drive off volatile sulfur and water, and to crack the rock for easier reduction. Many sulfide ores cannot be smelted without roasting first; the roast fumes are toxic. Needs a scholar to understand stoichiometry or roasters waste half their ore.",
+   "note": "Heat ore in an open pile to drive off volatile sulfur and water, and to crack the rock for easier reduction. Many sulfide ores cannot be smelted without roasting first; the roast fumes are toxic. Needs a scholar to understand empirical craft proportion or roasters waste half their ore. [FIXED after independent audit: the word stoichiometry is anachronistic for a tier 1 node; Richter is 1792. Ancient roasters worked by craft knowledge.]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 182.0,
    "kb_level": "module"
@@ -24320,8 +24222,7 @@
    "tier": 2,
    "cat": "chemistry",
    "pre": [
-    "workshop_first",
-    "cap_tol_100um"
+    "workshop_first"
    ],
    "kb": "20_chemistry.md#saltpetre_nitre_beds",
    "ph": 350,
@@ -24345,7 +24246,7 @@
    "sch": 1,
    "art": 2,
    "conf": "B",
-   "note": "START THIS IN MONTH ONE. It is the longest lead-time item in the tree: the beds take 12-24 months to mature no matter what you spend. Roman nitrum is sodium carbonate, not nitre; there is no saltpetre anywhere in the Roman economy. The non-obvious step is boiling the leachate with wood-ash potash to convert calcium nitrate to the potassium salt, which is the one that actually works. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "START THIS IN MONTH ONE. It is the longest lead-time item in the tree: the beds take 12-24 months to mature no matter what you spend. Roman nitrum is sodium carbonate, not nitre; there is no saltpetre anywhere in the Roman economy. The non-obvious step is boiling the leachate with wood-ash potash to convert calcium nitrate to the potassium salt, which is the one that actually works. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 4805.0,
    "kb_level": "recipe"
@@ -24497,8 +24398,7 @@
    "cat": "measurement",
    "pre": [
     "cap_tol_100um",
-    "mat_cast_iron",
-    "cap_vac_1torr"
+    "mat_cast_iron"
    ],
    "kb": "30_glass_optics.md",
    "ph": 140,
@@ -24521,7 +24421,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Partial vacuum box with corrugated brass diaphragm. Spring restores motion calibrated to mercury barometer. No mercury; portable and linear. Hysteresis and dial friction require friction compensation. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Partial vacuum box with corrugated brass diaphragm. Spring restores motion calibrated to mercury barometer. No mercury; portable and linear. Hysteresis and dial friction require friction compensation. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 761.575,
    "kb_level": "module"
@@ -25472,7 +25372,7 @@
     "master": 60
    },
    "mat": {
-    "glass_raw_kg": 0.8
+    "calcite_kg": 3
    },
    "cap": 350,
    "up": 15,
@@ -25484,7 +25384,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Calcite (Iceland spar) crystal cut and cemented at Brewster angle passes one polarization. Extraordinary ray refracted 90 degrees, separated by cement into wasted beam. Alignment precise to 1 degree.",
+   "note": "Calcite (Iceland spar) crystal cut and cemented at Brewster angle passes one polarization. Extraordinary ray refracted 90 degrees, separated by cement into wasted beam. Alignment precise to 1 degree. [FIXED after independent audit: a Nicol prism is cleaved calcite. Glass cannot substitute: birefringence is the entire mechanism.]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 393.3,
    "kb_level": "module"
@@ -25613,7 +25513,8 @@
     "artisan": 120
    },
    "mat": {
-    "copper_kg": 0.5
+    "copper_kg": 0.5,
+    "caesium_g": 5
    },
    "cap": 1200,
    "up": 50,
@@ -25625,7 +25526,7 @@
    "sch": 1,
    "art": 0,
    "conf": "C",
-   "note": "Cesium or other photoemissive surface in vacuum emits electrons when light strikes. Current amplified by dynamo or triode. Single photon detectable in dark conditions.",
+   "note": "Cesium or other photoemissive surface in vacuum emits electrons when light strikes. Current amplified by dynamo or triode. Single photon detectable in dark conditions. [FIXED after independent audit: a photoemissive surface needs an alkali metal, which was not in the materials.]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 1271.2,
    "kb_level": "module"
@@ -25912,7 +25813,8 @@
    "cat": "measurement",
    "pre": [
     "cap_measure_elec",
-    "thermodynamics_theory"
+    "thermodynamics_theory",
+    "opt_photocell"
    ],
    "kb": "30_glass_optics.md",
    "ph": 180,
@@ -26504,7 +26406,6 @@
    "tier": 3,
    "cat": "measurement",
    "pre": [
-    "photography",
     "cap_power_electric"
    ],
    "kb": "30_glass_optics.md",
@@ -26528,7 +26429,7 @@
    "sch": 1,
    "art": 0,
    "conf": "C",
-   "note": "Rotating disk or electric lamp flash synchronized to object rotation freezes motion. Variable frequency allows measuring RPM directly. Spectator error (aliasing) common.",
+   "note": "Rotating disk or electric lamp flash synchronized to object rotation freezes motion. Variable frequency allows measuring RPM directly. Spectator error (aliasing) common. [FIXED after independent audit: a mechanical stroboscope is a slotted disc and needs no photography.]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 854.975,
    "kb_level": "module"
@@ -26838,8 +26739,7 @@
    "cat": "medicine",
    "pre": [
     "germ_theory",
-    "school_founded",
-    "cap_tol_100um"
+    "school_founded"
    ],
    "kb": "70_medicine_biology.md#quarantine_publichealth",
    "ph": 700,
@@ -26858,7 +26758,7 @@
    "sch": 3,
    "art": 0,
    "conf": "C",
-   "note": "You know the Antonine Plague arrives in 165 AD. This node is what decides whether your institute survives it. Highest expected-value defensive investment in the game. It is also the thing most likely to be called sorcery, so do it under a patron and in public. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "You know the Antonine Plague arrives in 165 AD. This node is what decides whether your institute survives it. Highest expected-value defensive investment in the game. It is also the thing most likely to be called sorcery, so do it under a patron and in public. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 7450.0,
    "kb_level": "recipe"
@@ -27222,8 +27122,8 @@
    "cat": "machine_tools",
    "pre": [
     "prc_slotter_machine",
-    "cap_tol_100um",
-    "prc_drill_press"
+    "prc_drill_press",
+    "cap_tol_10um"
    ],
    "kb": "40_power_precision.md",
    "ph": 110,
@@ -27783,8 +27683,8 @@
    "tier": 3,
    "cat": "machine_tools",
    "pre": [
-    "cap_tol_10um",
-    "cap_power_electric"
+    "cap_power_electric",
+    "cap_tol_1um"
    ],
    "kb": "40_power_precision.md",
    "ph": 100,
@@ -27806,7 +27706,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Multiple small honing stones in rotating mandrel cut on expansion, removing 0.002 to 0.005 inch (50-125 micron) from bore. Produces 0.5 micron finish and 0.01mm roundness. Critical for engine cylinders and hydraulic actuators.",
+   "note": "Multiple small honing stones in rotating mandrel cut on expansion, removing 0.002 to 0.005 inch (50-125 micron) from bore. Produces 0.5 micron finish and 0.01mm roundness. Critical for engine cylinders and hydraulic actuators. [FIXED after independent audit: honing works to a micron; the 0.01 mm rung understated it.]",
    "_src": "20_precision.json",
    "_total_cost": 751.0,
    "kb_level": "module"
@@ -27927,7 +27827,8 @@
    "cat": "machine_tools",
    "pre": [
     "cap_tol_1mm",
-    "crank_conrod"
+    "crank_conrod",
+    "prc_treadle_lathe_flywheel"
    ],
    "kb": "40_power_precision.md",
    "ph": 40,
@@ -27948,7 +27849,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Cast-iron plate bolts to spindle nose; work bolts to plate. Hand-scraped face ensures coplanarity to 1mm. Without it, work runout is uncontrolled. Enables chucking of large irregular work.",
+   "note": "Cast-iron plate bolts to spindle nose; work bolts to plate. Hand-scraped face ensures coplanarity to 1mm. Without it, work runout is uncontrolled. Enables chucking of large irregular work. [FIXED after independent audit: it listed no lathe at all. Corrected to the treadle lathe with a flywheel, which is the right tier 1 parent; an automated first pass had wrongly attached the tier 2 turret lathe.]",
    "_src": "20_precision.json",
    "_total_cost": 115.4,
    "kb_level": "module"
@@ -27956,7 +27857,7 @@
   {
    "id": "prc_lead_screw_error_cam",
    "name": "Lead screw error correction cam and follower",
-   "tier": 2,
+   "tier": 3,
    "cat": "machine_tools",
    "pre": [
     "master_screw",
@@ -27983,7 +27884,7 @@
    "sch": 0,
    "art": 1,
    "conf": "C",
-   "note": "Grinding a lead screw leaves periodic runout (0.05mm). Measuring runout and grinding a cam follower that compensates enables 0.01mm lead accuracy. Follower attached to tool post cancels runout. Expensive, rarely done. Enables perfect pitch on long lead screws.",
+   "note": "Grinding a lead screw leaves periodic runout (0.05mm). Measuring runout and grinding a cam follower that compensates enables 0.01mm lead accuracy. Follower attached to tool post cancels runout. Expensive, rarely done. Enables perfect pitch on long lead screws. [FIXED after independent audit: it was tier 2 while depending on a tier 3 measuring instrument.]",
    "_src": "20_precision.json",
    "_total_cost": 410.5,
    "kb_level": "module"
@@ -32426,9 +32327,7 @@
    "name": "Petroleum seeps and collection",
    "tier": 2,
    "cat": "power",
-   "pre": [
-    "cap_tol_100um"
-   ],
+   "pre": [],
    "kb": "40_power_precision.md",
    "ph": 100,
    "lab": {
@@ -32447,7 +32346,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Oil seeps from rock faces and pools in low ground. Early collection by bucket and pit. No pressure, no depth, just ambient flow. Pitch, naphtha, light oil; use depends on locality. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Oil seeps from rock faces and pools in low ground. Early collection by bucket and pit. No pressure, no depth, just ambient flow. Pitch, naphtha, light oil; use depends on locality. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "17_energy.json",
    "_total_cost": 120.0,
    "kb_level": "module"
@@ -32694,7 +32593,7 @@
    "cat": "power",
    "pre": [
     "copper_refining",
-    "cap_heat_1300"
+    "cap_heat_1100"
    ],
    "kb": "40_power_precision.md",
    "ph": 200,
@@ -32862,8 +32761,7 @@
    "cat": "power",
    "pre": [
     "cap_heat_1300",
-    "cap_tol_100um",
-    "cap_power_water"
+    "cap_tol_100um"
    ],
    "kb": "40_power_precision.md",
    "ph": 300,
@@ -32886,7 +32784,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Two cylinders with a hot end and cold end, connected via a regenerator. Displacement and timing are offset so heat is recycled. External combustion, any fuel, but complex mechanics and modest power. Useful for stationary engines where simplicity matters. [AUDIT: capability prerequisite(s) cap_power_water were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Two cylinders with a hot end and cold end, connected via a regenerator. Displacement and timing are offset so heat is recycled. External combustion, any fuel, but complex mechanics and modest power. Useful for stationary engines where simplicity matters. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "17_energy.json",
    "_total_cost": 1161.0,
    "kb_level": "module"
@@ -33004,8 +32902,7 @@
    "cat": "power",
    "pre": [
     "pwr_thermoelectric_couple",
-    "cap_heat_1100",
-    "cap_power_water"
+    "cap_heat_1100"
    ],
    "kb": "40_power_precision.md",
    "ph": 150,
@@ -33028,7 +32925,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "A stack of thermoelectric couples, all hot ends at a furnace, all cold ends at water, producing a steady voltage without zinc consumption. Early telegraph relays and electroplating work used thermopiles before batteries became cheap. [AUDIT: capability prerequisite(s) cap_power_water were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "A stack of thermoelectric couples, all hot ends at a furnace, all cold ends at water, producing a steady voltage without zinc consumption. Early telegraph relays and electroplating work used thermopiles before batteries became cheap. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "17_energy.json",
    "_total_cost": 482.0,
    "kb_level": "module"
@@ -33651,8 +33548,7 @@
    "tier": 2,
    "cat": "navigation",
    "pre": [
-    "newtonian_mechanics",
-    "cap_tol_100um"
+    "newtonian_mechanics"
    ],
    "kb": "85_transport_civil.md",
    "ph": 400,
@@ -33672,7 +33568,7 @@
    "sch": 2,
    "art": 0,
    "conf": "A",
-   "note": "Pre-compute the position of the sun, moon, and stars for centuries ahead; used for latitude, longitude by lunar distances, and checking accuracy; the Nautical Almanac. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Pre-compute the position of the sun, moon, and stars for centuries ahead; used for latitude, longitude by lunar distances, and checking accuracy; the Nautical Almanac. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "15_ships.json",
    "_total_cost": 1620.0,
    "kb_level": "module"
@@ -33784,8 +33680,7 @@
    "tier": 2,
    "cat": "navigation",
    "pre": [
-    "sea_harbours_pozzolana",
-    "cap_tol_100um"
+    "sea_harbours_pozzolana"
    ],
    "kb": "85_transport_civil.md",
    "ph": 60,
@@ -33807,7 +33702,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A floating marker anchored to a rock or sandbar; guides ships around hazards; a coded system of colors and shapes lets pilots recognize them at distance. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A floating marker anchored to a rock or sandbar; guides ships around hazards; a coded system of colors and shapes lets pilots recognize them at distance. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "15_ships.json",
    "_total_cost": 362.75,
    "kb_level": "module"
@@ -33885,8 +33780,7 @@
    "tier": 2,
    "cat": "navigation",
    "pre": [
-    "sea_magnetic_compass",
-    "cap_tol_100um"
+    "sea_magnetic_compass"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -33907,7 +33801,7 @@
    "sch": 1,
    "art": 0,
    "conf": "C",
-   "note": "Systematically plot known coastlines, harbours, and hazards; use magnetic compass rose; accumulate centuries of observation; early charts are crude but better than guesswork. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Systematically plot known coastlines, harbours, and hazards; use magnetic compass rose; accumulate centuries of observation; early charts are crude but better than guesswork. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "15_ships.json",
    "_total_cost": 840.0,
    "kb_level": "module"
@@ -34041,8 +33935,7 @@
    "cat": "ships",
    "pre": [
     "sea_lead_sheathing",
-    "mat_copper",
-    "cap_heat_1300"
+    "mat_copper"
    ],
    "kb": "85_transport_civil.md",
    "ph": 180,
@@ -34063,7 +33956,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Thin copper sheet nailed over the hull below the waterline; resists shipworm better than lead and does not pit; very expensive but saves years of ship life. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Thin copper sheet nailed over the hull below the waterline; resists shipworm better than lead and does not pit; very expensive but saves years of ship life. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "15_ships.json",
    "_total_cost": 11120.0,
    "kb_level": "module"
@@ -34141,8 +34034,7 @@
    "tier": 2,
    "cat": "undersea",
    "pre": [
-    "sea_anchor",
-    "cap_tol_100um"
+    "sea_anchor"
    ],
    "kb": "85_transport_civil.md",
    "ph": 120,
@@ -34164,7 +34056,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "An air-filled bell lowered to the seafloor on a rope; a diver climbs in, breathes the air, works for a few minutes, then is pulled up; depth limited to 40 feet and time to 15 minutes. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "An air-filled bell lowered to the seafloor on a rope; a diver climbs in, breathes the air, works for a few minutes, then is pulled up; depth limited to 40 feet and time to 15 minutes. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "15_ships.json",
    "_total_cost": 968.5,
    "kb_level": "module"
@@ -34312,8 +34204,7 @@
    "tier": 4,
    "cat": "navigation",
    "pre": [
-    "em_theory",
-    "cap_heat_1600"
+    "em_theory"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -34331,7 +34222,7 @@
    "sch": 2,
    "art": 0,
    "conf": "B",
-   "note": "Maxwell showed that light is an electromagnetic wave; this understanding underpins sonar, radar, and radio; converts acoustic and optical problems into a unified framework. [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Maxwell showed that light is an electromagnetic wave; this understanding underpins sonar, radar, and radio; converts acoustic and optical problems into a unified framework. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "15_ships.json",
    "_total_cost": 700.0,
    "kb_level": "module"
@@ -34751,8 +34642,7 @@
    "tier": 2,
    "cat": "navigation",
    "pre": [
-    "sea_dry_compass_card",
-    "cap_tol_100um"
+    "sea_dry_compass_card"
    ],
    "kb": "85_transport_civil.md",
    "ph": 80,
@@ -34775,7 +34665,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "A pivoted compass card with a magnetized needle shows north in any weather, by day or night, independent of landmarks; one of the pivotal inventions for open-sea navigation. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A pivoted compass card with a magnetized needle shows north in any weather, by day or night, independent of landmarks; one of the pivotal inventions for open-sea navigation. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "15_ships.json",
    "_total_cost": 332.2,
    "kb_level": "module"
@@ -35233,7 +35123,8 @@
    "pre": [
     "steam_high_pressure",
     "cap_tol_100um",
-    "interchangeable_parts"
+    "interchangeable_parts",
+    "cap_tol_10um"
    ],
    "kb": "85_transport_civil.md",
    "ph": 280,
@@ -35359,8 +35250,7 @@
    "cat": "warships",
    "pre": [
     "sea_iron_hull",
-    "sea_compartmented_hull",
-    "cap_power_electric"
+    "sea_compartmented_hull"
    ],
    "kb": "85_transport_civil.md",
    "ph": 300,
@@ -35383,7 +35273,7 @@
    "sch": 0,
    "art": 0,
    "conf": "C",
-   "note": "A small strong hull that submerges; propelled by electric motors on batteries or a diesel on the surface; requires precise depth control, air supply, and crew training; first military use in WWI. [AUDIT: capability prerequisite(s) cap_power_electric were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "A small strong hull that submerges; propelled by electric motors on batteries or a diesel on the surface; requires precise depth control, air supply, and crew training; first military use in WWI. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "15_ships.json",
    "_total_cost": 13672.0,
    "kb_level": "module"
@@ -35710,7 +35600,8 @@
    "pre": [
     "telescope",
     "balance_analytical",
-    "atomic_theory"
+    "atomic_theory",
+    "cap_tol_10um"
    ],
    "kb": "30_glass_optics.md#spectroscope",
    "ph": 500,
@@ -35732,7 +35623,7 @@
    "sch": 3,
    "art": 2,
    "conf": "B",
-   "note": "Highest information yield per denarius of any instrument you can build. Emission lines identify elements you have no other way to detect, and much later it is how you verify that your germanium is actually germanium.",
+   "note": "Highest information yield per denarius of any instrument you can build. Emission lines identify elements you have no other way to detect, and much later it is how you verify that your germanium is actually germanium. [FIXED after independent audit: a ruled grating needs the finest screw you own; the node declared no tolerance rung.]",
    "_src": "core",
    "_total_cost": 3075.0,
    "kb_level": "recipe"
@@ -36415,8 +36306,7 @@
    "cat": "textiles",
    "pre": [
     "tex_linen",
-    "tex_sailcloth",
-    "cap_tol_100um"
+    "tex_sailcloth"
    ],
    "kb": "90_textiles.md",
    "ph": 50,
@@ -36436,7 +36326,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Spreading wet cloth on grass, rewetting daily, exposed to sunlight for weeks. Oxidizes and bleaches fibers white. Bottleneck of textile production: chlorine bleaching is 100x faster. Weather dependent. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Spreading wet cloth on grass, rewetting daily, exposed to sunlight for weeks. Oxidizes and bleaches fibers white. Bottleneck of textile production: chlorine bleaching is 100x faster. Weather dependent. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 222.5,
    "kb_level": "module"
@@ -36812,8 +36702,7 @@
    "cat": "textiles",
    "pre": [
     "tex_cotton_trade",
-    "potash_soda",
-    "cap_heat_1300"
+    "potash_soda"
    ],
    "kb": "90_textiles.md",
    "ph": 100,
@@ -36835,7 +36724,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Treating cotton yarn or cloth with sodium hydroxide under tension causes fibers to swell and straighten, increasing luster and dye uptake. Mercerized cotton resembles silk. Requires caustic soda production and careful process control. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Treating cotton yarn or cloth with sodium hydroxide under tension causes fibers to swell and straighten, increasing luster and dye uptake. Mercerized cotton resembles silk. Requires caustic soda production and careful process control. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 1337.5,
    "kb_level": "module"
@@ -36881,8 +36770,7 @@
    "pre": [
     "mat_ammonia",
     "industrial_gases",
-    "cap_tol_100um",
-    "cap_vac_1e6"
+    "cap_tol_100um"
    ],
    "kb": "90_textiles.md",
    "ph": 250,
@@ -36905,7 +36793,7 @@
    "sch": 2,
    "art": 0,
    "conf": "B",
-   "note": "Polyamide fiber synthesized from coal tar via complex organic chemistry (Carothers, 1935). Requires high-temperature reactors, vacuum conditions, precise monomer synthesis, and polymerization control. Strongest fiber yet, endless customization. Fully replaces some natural uses. [AUDIT: capability prerequisite(s) cap_vac_1e6 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Polyamide fiber synthesized from coal tar via complex organic chemistry (Carothers, 1935). Requires high-temperature reactors, vacuum conditions, precise monomer synthesis, and polymerization control. Strongest fiber yet, endless customization. Fully replaces some natural uses. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "10_textiles.json",
    "_total_cost": 8720.0,
    "kb_level": "module"
@@ -37529,8 +37417,7 @@
    "tier": 2,
    "cat": "textiles",
    "pre": [
-    "mat_leather",
-    "cap_tol_100um"
+    "mat_leather"
    ],
    "kb": "90_textiles.md",
    "ph": 100,
@@ -37553,7 +37440,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Tanning hides with oak or chestnut bark tannins in vats over weeks. Produces flexible, durable leather resistant to rot. Process is standardized by medieval period but knowledge of bark selection and timing matters. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Tanning hides with oak or chestnut bark tannins in vats over weeks. Produces flexible, durable leather resistant to rot. Process is standardized by medieval period but knowledge of bark selection and timing matters. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 863.4,
    "kb_level": "module"
@@ -37896,8 +37783,7 @@
    "tier": 1,
    "cat": "power",
    "pre": [
-    "crank_conrod",
-    "cap_tol_1mm"
+    "crank_conrod"
    ],
    "kb": "40_power_precision.md#water_power_scaleup",
    "ph": 450,
@@ -37920,7 +37806,7 @@
    "sch": 0,
    "art": 3,
    "conf": "B",
-   "note": "Rome already has this (Barbegal, 16 wheels). What is missing is applying it to anything other than grinding grain. Put the bellows, the stamps, the paper mill, the boring mill and the lathe on the same shaft. [AUDIT: capability prerequisite(s) cap_tol_1mm were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
+   "note": "Rome already has this (Barbegal, 16 wheels). What is missing is applying it to anything other than grinding grain. Put the bellows, the stamps, the paper mill, the boring mill and the lathe on the same shaft. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
    "_src": "core",
    "_total_cost": 6781.0,
    "kb_level": "recipe"

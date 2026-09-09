@@ -459,12 +459,23 @@ def cmd_repair(a):
                 return
             n["pre"].append(cap_id); added.append(cap_id)
         t = min(5, max(0, n["tier"]))
-        if "CAP-HEAT" in codes: add(HEAT_BY_TIER.get(t))
-        if "CAP-TOL"  in codes: add(TOL_BY_TIER.get(t))
-        if "CAP-VAC"  in codes: add(VAC_BY_TIER.get(max(3, t)))
-        if "CAP-PURITY" in codes: add(PUR_BY_TIER.get(max(3, t)))
-        if "CAP-POWER"in codes: add(PWR_BY_TIER.get(max(3, t)))
-        if "CAP-NONE" in codes and not added:
+        # CAPABILITY INFERENCE IS OFF BY DEFAULT AND SHOULD STAY OFF.
+        # An independent reviewer sampled eight nodes carrying an inferred rung
+        # and found all eight wrong: a 1300 C furnace bolted onto a room
+        # temperature gelignite mix, a 1600 C furnace onto a pure paperwork node
+        # about binary arithmetic, a vacuum rung onto mercury extraction (which is
+        # backwards, mercury is what makes vacuum technology possible). A keyword
+        # heuristic over prose cannot infer physics. Pass --infer-caps only if you
+        # intend to review every edge it adds by hand.
+        if not getattr(a, "infer_caps", False):
+            if codes & {"CAP-NONE","CAP-HEAT","CAP-TOL","CAP-VAC","CAP-PURITY","CAP-POWER"}:
+                counts["capability gaps LEFT VISIBLE (not guessed at)"] += 1
+        elif "CAP-HEAT" in codes: add(HEAT_BY_TIER.get(t))
+        if getattr(a, "infer_caps", False) and "CAP-TOL"  in codes: add(TOL_BY_TIER.get(t))
+        if getattr(a, "infer_caps", False) and "CAP-VAC"  in codes: add(VAC_BY_TIER.get(max(3, t)))
+        if getattr(a, "infer_caps", False) and "CAP-PURITY" in codes: add(PUR_BY_TIER.get(max(3, t)))
+        if getattr(a, "infer_caps", False) and "CAP-POWER"in codes: add(PWR_BY_TIER.get(max(3, t)))
+        if getattr(a, "infer_caps", False) and "CAP-NONE" in codes and not added:
             # give it the rung its tier implies rather than leaving it groundless
             add(TOL_BY_TIER.get(t) if t <= 2 else HEAT_BY_TIER.get(t))
         if added:
@@ -509,7 +520,11 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("merge")
-    sub.add_parser("repair")
+    q = sub.add_parser("repair")
+    q.add_argument("--infer-caps", action="store_true",
+                   help="guess missing capability rungs from keywords. OFF BY DEFAULT: an "
+                        "independent review found a 100 percent error rate on the edges this "
+                        "produced. Every edge it adds must be reviewed by hand.")
     q = sub.add_parser("judge")
     q.add_argument("--full", action="store_true")
     q.add_argument("--id")
