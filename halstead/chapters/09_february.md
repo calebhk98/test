@@ -1,6 +1,6 @@
 ## Chapter Nine: February
 
-*February 2013 – March 2013*
+*February 2013 – April 2013*
 
 February passes with the telephone silent; the sheet in the morning is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past empty seats to get to the seat at the very back, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, but the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words; Chloe finishes the words in no time, but then colors the diagram very slowly, going right up to the lines and stopping exactly there. There have been a handful of visits to Dr. Ammons since October; at the last of them, a fortnight ago, Dr. Ammons asked whether any of it had got easier, and she said some of it had.
 
@@ -24,7 +24,7 @@ Her mother puts a hand out, but Chloe does not take it.
 
 "Chloe."
 
-"You can take the bike back. I don't. I never even. Not in July either, you can just take it back."
+"You can take the bike back. I don't. I never even ride it. You can have it back, you can just take it back."
 
 The hand stays where it is.
 
@@ -58,17 +58,19 @@ Later, when she is in bed and supposed to be asleep, her parents are at the kitc
 
 "You haven't said it back, though, which is exactly what I'm telling you, and I have been the only one saying anything about any of this since August, and I am so tired of being the only one who has to."
 
+"What kind of family sends a seven-year-old away to live in a building four hours from her mother? Say that one out loud in a room and listen to how it sounds, because I have been saying it to myself since August and it has not got any better."
+
 Her voice comes harder now. "Say something, Dave, actually say something, instead of standing in doorways with a dishcloth."
 
 A chair scrapes on the kitchen tiles, and somebody runs the tap for a moment, then shuts it off again.
 
-"What do you want me to say, Meg, when you already know what I think? I've thought it since the car ride home in July, I've thought it most days since, and you've known that the whole time without me having to say it out loud at this table."
+"What do you want me to say, Meg, when you already know what I think? I've thought it since the car ride home in August, I've thought it most days since, and you've known that the whole time without me having to say it out loud at this table."
 
 "Then say it out loud at this table, because I need to actually hear it from you, not guess at it from the other side of the room. I've been filling in your side of this conversation in my head for months now, and I could be filling it in wrong."
 
 Chloe lies with her eyes open and her hands under the pillow, listening to the fridge, until her dad says something she can't make out at all but her mom says the words four hours, in the voice she uses about a thing she has lost.
 
-Then it's the middle of February, then the last week of it; dinner passes most nights with neither of them bringing it up, so she stops waiting for them to. Chloe sees Dr. Ammons on a Thursday, says the weeks since have been fine, and has no answer when he asks what fine means.
+Then it's the middle of February, then the last week of it; dinner passes most nights with neither of them bringing it up, so she stops waiting for them to. Chloe sees Dr. Ammons on a Thursday, says the weeks since have been fine, and has no answer when she asks what fine means.
 
 They tell her on the fourteenth of March.
 
@@ -146,9 +148,13 @@ Dave rubs a hand over his face. "Then give me one reason. I have been sitting he
 
 Dave looks at the table.
 
-"That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head. I said yes to a summer camp, not to putting our whole address inside their gate, and there is a difference between those two things even if you've stopped seeing it. You can hand somebody a month. You cannot hand somebody a street. I want to hear you say that back to me. Then either of us can say another word about the paperwork."
+"It's a lease, Meg, not a deed. People move out of houses every week of the year, and we would be no different from any of them."
 
-"It's how it is, though, and you know it is, because you said yes to the whole idea back in July. Neither of us had even heard the word furnished yet."
+"A lease that ends the day we take her out. That is not somewhere to live, that is a hold on us, and the people who wrote that offer know it, and so do you, because you read contracts for a living and you have not once told me I have this one wrong."
+
+Her dad has something ready and then doesn't use it, and looks at the letter instead, at the crease down the middle of it. "Every day of the week, Meg. Instead of ten weeks a year."
+
+"I know how many weeks it is. I have counted them."
 
 Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and later he walks up the road for Chloe, who talks all the way back down it about a dog that is allowed on the furniture.
 
