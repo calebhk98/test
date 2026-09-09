@@ -113,6 +113,43 @@ must climb it in this order and you cannot skip a rung.
   he refuses even a fire brigade at Nicomedia for fear it becomes a faction).
   **Register your school as a licensed collegium of physicians or teachers.**
 
+
+## 4a. The approval gate, as the simulator actually enforces it
+
+Section 4 above is prose. This is the mechanic, and it is in the data: every
+node in `data/tech_tree.json` carries a `gov` field from -3 to +3.
+
+**A node with `gov` below zero cannot be built by money alone.**
+
+| Rule | Effect |
+|---|---|
+| `gov < 0` | Costs 25% more per point: bribes, delay, relocating to a province, paying a compliant Roman citizen to front the enterprise |
+| `gov < 0` | Adds 3 extra suspicion per point |
+| `gov < 0` | **Cannot be attempted at all without a local patron** |
+| `gov <= -2` | **Cannot be attempted at all without senatorial patronage** |
+
+The nodes currently marked as opposed, and why:
+
+| Node | `gov` | Why the State or the elite resists it |
+|---|---|---|
+| `academy_network` | **-2** | A large private association operating across several provinces is precisely what Roman government fears: a *factio*. Trajan refuses Pliny even a licensed fire brigade at Nicomedia for this reason (*Ep.* 10.34). Site the three houses under three different patrons so it does not look like one organisation. |
+| `interchangeable_parts` | -1 | Visibly replaces free urban artisans with unskilled hands and gauges. This is the Vespasian precedent exactly (*Vesp.* 18). Put it in the provinces, staff it with freedmen, and sell it as arming the legions, never as saving wages. |
+| `printing_press` | -1 | Cheap accurate copying breaks elite control of what is known and by whom. Print Homer, Virgil and the Twelve Tables first, visibly. |
+| `corpus_dispersed` | -1 | The same objection, multiplied. Hundreds of copies of a technical corpus in private hands is what an anxious regime dislikes most. Give the first copies to the emperor's own foundations. |
+| `scientific_method` | -1 | Contradicting Aristotle and Galen in public is a social act before it is an intellectual one, and their defenders hold the chairs and the guild. |
+| `newtonian_mechanics` | -1 | Publicly overturns Aristotle on motion. Win it with predictions nobody can argue with, not with argument. |
+
+Note what this list is: **the two nodes that the ablation study says are worth 40
+and 47 years, `printing_press` and `corpus_dispersed`, are both politically
+opposed.** The most valuable things you can do are among the things you will have
+the most trouble being allowed to do. That is not a coincidence and it is the
+reason the patronage ladder in section 3 comes before everything else.
+
+Conversely, the highest `gov` scores (+3) sit on the optical and electric
+telegraph, gunpowder, bulk steel, high pressure steam, the railway, crop
+rotation, plague preparedness and the hot air balloon. Those are the things you
+trade for the permission to do everything else.
+
 ## 5. The suspicion model
 
 `suspicion` accrues when you do something that a Roman cannot explain by any

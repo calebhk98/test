@@ -18,7 +18,7 @@
    "yrs": "minimum calendar years, a floor that labour cannot buy down (curing, growing, seasoning, maturation)",
    "risk": "probability a given attempt fails outright and must be retried at 40% of cost",
    "sus": "suspicion delta on completion, see 03_SOCIAL_POLITICS.md",
-   "gov": "State interest, -3 (will suppress) to +3 (will fund and demand)",
+   "gov": "State interest, -3 (will actively suppress) to +3 (will fund and demand). NEGATIVE VALUES ARE ENFORCED BY THE SIMULATOR: a node with gov < 0 costs 25% more per point (bribes, delay, relocation to a province, a compliant front man), adds 3 extra suspicion per point, cannot be attempted without at least a local patron, and at gov <= -2 requires senatorial patronage. This is the 'you need social approval for this' mechanic.",
    "rev": "net revenue in denarii per year at maturity, 0 if not a product",
    "sch": "minimum trained natural philosophers required on staff to attempt",
    "art": "minimum trained technical artisans required on staff to attempt",
@@ -334,12 +334,12 @@
    "yrs": 2,
    "risk": 0.2,
    "sus": 3,
-   "gov": 0,
+   "gov": -1,
    "rev": 0,
    "sch": 0,
    "art": 0,
    "conf": "C",
-   "note": "The hard part is not stating it, it is displacing Aristotelian authority. Risk is high because the failure mode is cultural, not technical. Multiplier on every research node thereafter."
+   "note": "The hard part is not stating it, it is displacing Aristotelian authority. Risk is high because the failure mode is cultural, not technical. Multiplier on every research node thereafter. Contradicting Aristotle and Galen in public is a social act before it is an intellectual one, and their defenders hold the chairs, the patronage and the medical guild. Expect organised opposition, not curiosity."
   },
   {
    "id": "statistics_basic",
@@ -387,12 +387,12 @@
    "yrs": 2,
    "risk": 0.1,
    "sus": 2,
-   "gov": 1,
+   "gov": -1,
    "rev": 0,
    "sch": 3,
    "art": 0,
    "conf": "C",
-   "note": "Directly contradicts Aristotle in public, which is the expensive part. The astronomical predictions it makes are your proof and they are unanswerable."
+   "note": "Directly contradicts Aristotle in public, which is the expensive part. The astronomical predictions it makes are your proof and they are unanswerable. Publicly overturns Aristotle on motion. Make the case with predictions that cannot be argued with (planetary positions, pendulum periods, artillery trajectories) rather than with argument."
   },
   {
    "id": "thermodynamics_theory",
@@ -762,12 +762,12 @@
    "yrs": 10,
    "risk": 0.2,
    "sus": 2,
-   "gov": 1,
+   "gov": -2,
    "rev": 0,
    "sch": 10,
    "art": 10,
    "conf": "C",
-   "note": "Alexandria (dry, preserves papyrus), a western site, an eastern site. The Third Century Crisis will destroy at least one. Redundancy is the only defence and it is not optional. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down."
+   "note": "Alexandria (dry, preserves papyrus), a western site, an eastern site. The Third Century Crisis will destroy at least one. Redundancy is the only defence and it is not optional. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. THE STATE WILL ACTIVELY RESIST THIS. A large private association operating across several provinces is precisely what Roman government fears: a faction. Trajan refuses Pliny even a licensed fire brigade at Nicomedia for this reason (Ep. 10.34). You need senatorial or imperial cover before you attempt it, and you should site the three houses under three different patrons so that it does not look like one organisation."
   },
   {
    "id": "plague_preparedness",
@@ -1012,12 +1012,12 @@
    "yrs": 2,
    "risk": 0.25,
    "sus": 3,
-   "gov": 0,
+   "gov": -1,
    "rev": 3400,
    "sch": 0,
    "art": 4,
    "conf": "C",
-   "note": "Rome already has the screw press for oil and wine, so half the machine exists. The hard parts are the punch-cut matrix, the adjustable hand mould for casting type at speed, and oil-based ink that will not bead on metal. Politically ambiguous: frame it as multiplying the classics, never as publishing."
+   "note": "Rome already has the screw press for oil and wine, so half the machine exists. The hard parts are the punch-cut matrix, the adjustable hand mould for casting type at speed, and oil-based ink that will not bead on metal. Politically ambiguous: frame it as multiplying the classics, never as publishing. POLITICALLY AMBIGUOUS. Cheap accurate copying breaks the elite's control of what is known and by whom. Frame it as multiplying Homer, Virgil and the Twelve Tables, never as publishing. Print the classics first and visibly."
   },
   {
    "id": "corpus_written",
@@ -1072,12 +1072,12 @@
    "yrs": 8,
    "risk": 0.1,
    "sus": 3,
-   "gov": 0,
+   "gov": -1,
    "rev": 900,
    "sch": 0,
    "art": 5,
    "conf": "C",
-   "note": "THE highest expected-value node in the tree, and it is cheap. The lesson of Alexandria is not that books burn, it is that single copies burn. Push copies into every library, temple archive and private collection from Britain to India. This is what carries the programme through 235-284 AD. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down."
+   "note": "THE highest expected-value node in the tree, and it is cheap. The lesson of Alexandria is not that books burn, it is that single copies burn. Push copies into every library, temple archive and private collection from Britain to India. This is what carries the programme through 235-284 AD. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. Same objection as the press, multiplied. Hundreds of copies of a technical corpus in private hands is exactly what an anxious regime dislikes. Present it as a gift to the libraries of the Empire and give the first copies to the emperor's own foundations."
   },
   {
    "id": "horse_collar",
@@ -2714,12 +2714,12 @@
    "yrs": 8,
    "risk": 0.3,
    "sus": 2,
-   "gov": 2,
+   "gov": -1,
    "rev": 8000,
    "sch": 2,
    "art": 30,
    "conf": "B",
-   "note": "A management and measurement innovation more than a mechanical one, and it is what turns a workshop into an industry. The army will want it for weapons before anyone else does, which is your funding argument. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down."
+   "note": "A management and measurement innovation more than a mechanical one, and it is what turns a workshop into an industry. The army will want it for weapons before anyone else does, which is your funding argument. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. THE STATE WILL RESIST THIS. Interchangeable manufacture visibly replaces free urban artisans with unskilled hands and gauges. Suetonius, Vespasian 18: an engineer offers a cheap machine for hauling columns to the Capitol, and Vespasian rewards him but declines to use it, saying he must be allowed to feed his poor commons. Site it in the provinces, staff it conspicuously with freedmen, and frame it as arming the legions rather than as saving wages."
   },
   {
    "id": "clock_pendulum",
@@ -2943,12 +2943,12 @@
    "yrs": 1.5,
    "risk": 0.2,
    "sus": 15,
-   "gov": 1,
+   "gov": 0,
    "rev": 600,
    "sch": 2,
    "art": 2,
    "conf": "A",
-   "note": "Spectacular, cheap, and it produces exactly the kind of effect that gets a man tried for magic. Do it in daylight, in front of a magistrate, and explain it as a property of amber long known to the Greeks, which is even true (elektron is Greek for amber). High voltage, negligible current: useless for chemistry, excellent for persuasion. CORRECTION to an earlier version of this tree: this no longer requires electromagnetic theory. Franklin and Volta had none. Making the theory a prerequisite for the experiment put the whole of calculus on the electrical critical path, which is backwards."
+   "note": "Spectacular, cheap, and it produces exactly the kind of effect that gets a man tried for magic. Do it in daylight, in front of a magistrate, and explain it as a property of amber long known to the Greeks, which is even true (elektron is Greek for amber). High voltage, negligible current: useless for chemistry, excellent for persuasion. CORRECTION to an earlier version of this tree: this no longer requires electromagnetic theory. Franklin and Volta had none. Making the theory a prerequisite for the experiment put the whole of calculus on the electrical critical path, which is backwards. The State neither wants this nor forbids it. It simply looks like sorcery, which is a different and worse problem."
   },
   {
    "id": "voltaic_pile",

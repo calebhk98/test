@@ -297,6 +297,13 @@ class Sim:
             return False
         if n["sch"] > self.scholars or n["art"] > self.artisans:
             return False
+        # SOCIAL APPROVAL GATE. Some things the State does not want built, and no
+        # amount of money substitutes for someone powerful being willing to be
+        # associated with it. See 03_SOCIAL_POLITICS.md section 4.
+        if n["gov"] < 0 and not self.has("patron_local"):
+            return False
+        if n["gov"] <= -2 and not self.has("patron_senatorial"):
+            return False
         return True
 
     # -- main loop ----------------------------------------------------------
@@ -373,7 +380,9 @@ class Sim:
                 self.director_hours_spent_founder += per if self.founder_alive else 0
                 st["yrs"] += 1
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
-                money = n["_total_cost"] * frac * self.money_real
+                # opposed work costs more: bribes, delay, a provincial site, a front man
+                opposition = 1.0 + 0.25 * max(0, -n["gov"])
+                money = n["_total_cost"] * frac * self.money_real * opposition
                 hh = n["_hired_hours"] * frac
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
@@ -450,7 +459,7 @@ class Sim:
         self.bountied.discard(k)
         self.done.add(k)
         self.done_year[k] = self.year
-        self.suspicion += n["sus"] * self.suspicion_mult
+        self.suspicion += (n["sus"] + 3 * max(0, -n["gov"])) * self.suspicion_mult
         self.gov += n["gov"]
         if k == "freedman_staff":     self.artisans += 8
         if k == "school_founded":     self.scholars += 4
@@ -851,7 +860,11 @@ def cmd_why(a):
     print("Calendar floor  : %.1f years (money cannot buy this down)" % n["yrs"])
     print("Failure risk    : %.0f%% per attempt" % (100 * n["risk"]))
     print("Staff needed    : %d trained scholars, %d trained artisans" % (n["sch"], n["art"]))
-    print("Suspicion       : %+d       State interest: %+d" % (n["sus"], n["gov"]))
+    print("Suspicion       : %+d       State interest: %+d%s" % (n["sus"], n["gov"],
+          ("  <- OPPOSED. Costs %d%% more, +%d extra suspicion, needs %s"
+           % (25 * -n["gov"], 3 * -n["gov"],
+              "senatorial patronage" if n["gov"] <= -2 else "a patron"))
+          if n["gov"] < 0 else ""))
     eligible = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                 "power", "agriculture", "information", "instruments"))
     print("Bounty          : %s" % ("YES, can be bought as a public prize for about %s den"
