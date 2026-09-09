@@ -79,6 +79,31 @@ significant figures at you.
   industrial scale it is 83% of the entire tree's fuel demand; and **a single
   glass bead is a 250x microscope you can build in a week**.
 
+## The same tree, five societies
+
+The tech tree does not change. The society does, and it is loaded from a JSON
+file, so adding a sixth is data rather than code. 12 runs each, so treat the
+years as approximate.
+
+| Society | Reaches the transistor | Median years | Why |
+|---|---|---|---|
+| Han China, 100 | 100% | **313** | Cast iron for five centuries already, the blast furnace, and paper in 105 AD. It starts several rungs up in exactly the places Rome is weakest. |
+| Rome, 100 | 100% | 339 | Enormous, rich, superb at concrete, and an elite that despises manual work and has cheap coerced labour, so every labour-saving device is politically unwelcome. |
+| Norse Scandinavia, 900 | 100% | 356 | The best ships in Europe and no state at all. Nobody will stop you and nobody can fund you: public works cost nearly twice what they cost Rome. |
+| England, 1300 | 100% | 415 | Wool, watermills, chartered towns and a legal system, against a much smaller population. |
+| The Mexica, 1500 | 92% | 454 | No domesticable large mammal exists in Mesoamerica. Every load moves on a human back, so animal traction costs 3x and field machinery 2.4x. That single fact, which the founder cannot teach away, is the largest handicap in the file. |
+
+The spread is about 140 years, and the causes are legible rather than a fudge
+factor: what a society already has, what it can organise, what it is willing to
+tolerate, and in the Mexica case a fact about which animals happen to live on
+which continent.
+
+Norse and Mexica both used to fail 100% of the time. Neither failure was a
+finding. One was a mine ceiling keyed to a Rome-specific node id, one was a
+mine-sizing bug that counted ore in the shortage and bar in the response, and a
+third was an enterprise that went bankrupt and could not shut a mine down. When
+a run fails, read why before believing the reason it reports.
+
 ## How this is graded
 
 **Not by the end date.** Each technology is judged on its own:
