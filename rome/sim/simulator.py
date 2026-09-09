@@ -142,6 +142,23 @@ def _load_tech_effects():
 TECH_EFFECTS = _load_tech_effects()
 
 
+def _load_wages():
+    """The wage table, skipping the _note entry that is a bare string.
+
+    My first version did `v["rate"]` over every entry, hit the explanatory
+    _note string, raised, and a bare `except` turned that into an empty dict. So
+    every trade reported "no such trade" and the error helpfully listed nothing
+    at all. Swallowing an exception into a silent empty default is the same
+    failure as the save file writing nulls: the bug is the except, not the data.
+    """
+    p = json.load(open(PRICES))
+    return {k: v["rate"] for k, v in p["wage_rates_denarii_per_hour"].items()
+            if isinstance(v, dict) and "rate" in v}
+
+
+WAGES = _load_wages()
+
+
 def load_civ(name="rome_100ad"):
     """A civilization is DATA, not code. Swapping Rome for Han China, Viking
     Norway, Mexica Tenochtitlan or somewhere invented is a different file, not a
@@ -411,6 +428,7 @@ class Sim:
         # flatters the player and, worse, exposed a society's own ancestral
         # crafts to being "forgotten" in a sacking. Han China does not forget how
         # to cast iron because your workshop burned down.
+        self.grant_ambient()          # see below: before turn one, not after it
         missing = []
         for k in self.civ.get("starting_techs", []):
             if k in self.nodes:
@@ -1084,6 +1102,36 @@ class Sim:
         return (2500.0 * self.economy * self.state_capacity * self.pop_scale ** 0.4
                 * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor())
 
+    def grant_ambient(self):
+        """Credit this society's existing technology immediately.
+
+        It used to happen on the first `step`, which meant turn-one `available`
+        listed a hundred and thirty things the player was about to be handed for
+        nothing, and `done_count` then jumped from 12 to 140 for free. Every
+        naive tester remarked on it, one called it "a 128-technology free dump",
+        and the reviewer's instruction is the obviously right one: these are
+        COMPLETED before the game starts, not available to research.
+        """
+        changed = True
+        while changed:
+            changed = False
+            for k in self.order:
+                n = self.nodes[k]
+                if k in self.done or k in self.active:
+                    continue
+                if self._is_foreign_institution(k):
+                    continue
+                if (n["tier"] == 0 and n["ph"] == 0 and n["_total_cost"] <= 1
+                        and all(p in self.done for p in n["pre"])):
+                    self.done.add(k)
+                    self.granted.add(k)
+                    # done_year is set by the callers after construction, so do
+                    # not assume it exists yet at grant time.
+                    if not hasattr(self, "done_year"):
+                        self.done_year = {}
+                    self.done_year[k] = self.cfg["start_year"]
+                    changed = True
+
     def credit_limit(self):
         """How far into arrears anyone will actually let you go.
 
@@ -1100,7 +1148,14 @@ class Sim:
         What you can borrow depends on who will stand behind you, which is the
         same currency as everything else in this model.
         """
-        base = max(2000.0, self.revenue() * 1.5)
+        # What a STRANGER can borrow is almost nothing, which is the reviewer's
+        # question and the right answer. You have walked into a town with no
+        # name, no land and no one to vouch for you. The old floor of 2,000
+        # denarii handed a newcomer roughly two years of living expenses on
+        # nothing but arrival. Credit here is what someone will advance against
+        # your income and the people who will stand behind you.
+        base = self.revenue() * 0.5
+        if self.has("identity_cover"):     base += 400.0
         if self.has("patron_local"):       base += 3000.0
         if self.has("patron_senatorial"):  base += 15000.0
         if self.has("patron_imperial"):    base += 60000.0
@@ -1148,6 +1203,71 @@ class Sim:
         if shed:
             self.log.append((yr, "stopped maintaining %d works that cost more than "
                                  "they returned" % len(shed)))
+
+    def work_for_wages(self, trade, hours):
+        """Do a job. For money. Like everybody else.
+
+        The reviewer asked for this and it is a fair gap: you could hire a smith,
+        a glassblower or a farmer all day long and had no way to BE one. A
+        founder with no capital and a useful pair of hands should be able to earn
+        a wage, and at the start it is one of the few things he can do.
+
+        It is paid at the ordinary rate for that trade, which is the same table
+        the game charges you when you hire someone, so there is no arbitrage in
+        either direction. The cost is your own hours, which are the one resource
+        nothing else can buy, so this is always a trade of time for money and
+        usually a bad one once you have anything better to do. That is the
+        honest shape of wage labour.
+        """
+        w = WAGES.get(trade)
+        if w is None:
+            return 0.0, ("no such trade. you could work as: "
+                         + ", ".join(sorted(WAGES)))
+        hours = float(hours)
+        if hours <= 0:
+            return 0.0, "hours must be greater than zero"
+        left = self.director_pool() - getattr(self, "wage_hours_this_year", 0.0)
+        if hours > left:
+            return 0.0, ("you have %.0f of your own hours left this year, not %.0f"
+                         % (max(0.0, left), hours))
+        # Your own labour is worth the trade rate. A famous man is paid better.
+        pay = hours * w * self.price_index * (1.0 + min(0.5, self.reputation / 200.0))
+        self.capital += pay
+        self.wage_hours_this_year = getattr(self, "wage_hours_this_year", 0.0) + hours
+        self.wages_earned = getattr(self, "wages_earned", 0.0) + pay
+        return pay, None
+
+    def debt_interest_rate(self):
+        """What arrears cost you a year.
+
+        Roman lending was expensive and the legal ceiling of twelve per cent was
+        a ceiling on the RESPECTABLE end of it; maritime loans ran far higher
+        because the risk was real. A man with no standing borrows from whoever
+        will have him and pays for it. Standing is what makes money cheap, which
+        is the same rule as everything else in this model: patronage is the
+        currency underneath the currency.
+        """
+        r = 0.12
+        if self.has("patron_local"):        r -= 0.015
+        if self.has("patron_senatorial"):   r -= 0.03
+        if self.has("patron_imperial"):     r -= 0.03
+        if self.has("endowment_land"):      r -= 0.02          # secured, not personal
+        if self.has("fin_argentarii"):      r -= 0.01          # a banker you know
+        r -= min(0.03, max(0.0, self.reputation) / 3000.0)
+        return max(0.0, r)
+
+    def charge_interest(self, yr):
+        """Arrears accrue. They did not before, which made debt free money."""
+        if self.capital >= 0:
+            return 0.0
+        rate = self.debt_interest_rate()
+        owed = -self.capital * rate
+        self.capital -= owed
+        self.interest_paid = getattr(self, "interest_paid", 0.0) + owed
+        if owed > 0 and (getattr(self, "insolvent_years", 0) in (1, 5, 15)):
+            self.log.append((yr, "interest on %0.f denarii of arrears at %.1f%% a year"
+                                 % (-self.capital, rate * 100)))
+        return owed
 
     def enforce_credit_limit(self, yr):
         """Nobody lends past the limit, so past the limit you simply stop.
@@ -1856,6 +1976,7 @@ class Sim:
         # the log reported as being "blocked" on a treadle lathe.
         if self.capital < 0 and self.mine_capacity:
             self.mothball_mines()
+        self.charge_interest(yr)
         self.shed_loss_makers(yr)
         self.enforce_credit_limit(yr)
 
@@ -2105,6 +2226,7 @@ class Sim:
                   if set(self.nodes[k].get("traits", [])) & {"spectacle", "inexplicable"})
         self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
+        self.wage_hours_this_year = 0.0
         self.spend_last_year = getattr(self, "_spend_this_year", 0.0)
         self._spend_this_year = 0.0
         # Sellers restock, so the pressure your buying put on the market fades.
@@ -2645,6 +2767,13 @@ def _agent_end_reason(s):
     if s.goal_year:
         return "goal reached: %s completed in %d AD" % (s.goal, s.goal_year)
     if s.year >= end_year:
+        # Under fog there IS no stated goal, so saying the player failed to reach
+        # one is incoherent. A tester finished a 500 year run and was told they
+        # had missed a goal they were never shown and had no way to set.
+        if getattr(s, "fog", False):
+            return ("the horizon at %d AD is reached. You built %d things of your "
+                    "own. There was no target to hit; how far you got is the whole "
+                    "of the result." % (end_year, len(s.done - s.granted)))
         return "ran out of horizon (%d AD) without reaching the goal" % end_year
     return None
 
@@ -2700,6 +2829,19 @@ def _agent_state(s, nodes):
         "done_granted": len(s.granted & s.done),
         "done_earned": len(s.done - s.granted),
         "active": active,
+        # A tester spent 284 years with scholars frozen at 1.0 and artisans
+        # plateaued, and wrote that they never found any way to grow either. The
+        # remedy was only ever mentioned in a refusal message, so a player who
+        # never happened to try a staff-gated project never saw it at all. Staff
+        # is not a technical prerequisite, so it appears in no dependency list
+        # either. Tell them unprompted.
+        "how_to_grow_staff": {
+            "scholars": s._staff_advice("scholars"),
+            "artisans": s._staff_advice("artisans"),
+        },
+        "credit_limit": round(s.credit_limit(), 1),
+        "debt_interest_rate": round(s.debt_interest_rate(), 4),
+        "interest_paid_total": round(getattr(s, "interest_paid", 0.0), 1),
         "knowledge_risk": s.knowledge_risk(),
         "resource_throttle": round(s.throttle, 3), "throttle_binding": s.binding,
         "forest_ha": round(s.forest_ha, 1),
@@ -2754,6 +2896,8 @@ def _agent_help(s):
             "bounty <id>": "pay someone else to solve it instead of building it",
             "path <id>": ("not available under fog of war"
                           if fog else "what something still needs"),
+            "work <trade> <hours>": "do an ordinary job for ordinary pay, which is "
+                                    "sometimes all you can afford to do",
             "save <file>": "write the game to a file",
             "load <file>": "read a game back",
             "help": "this",
@@ -3054,6 +3198,17 @@ def _agent_dispatch(s, nodes, cmd):
                 return {"ok": False, "error": "you have no slaves to free"}
             return {"ok": True, "manumitted": got, "freedmen": s.freedmen, "slaves": s.slaves}
         return {"ok": False, "error": "what must be one of: forest, mine, slaves, manumit"}
+
+    if op == "work":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        pay, err = s.work_for_wages(cmd.get("trade"), cmd.get("hours", 0))
+        if err:
+            return {"ok": False, "error": err}
+        return {"ok": True, "trade": cmd.get("trade"), "hours": cmd.get("hours"),
+                "earned": round(pay, 1), "capital": round(s.capital, 1),
+                "your_hours_left_this_year": round(
+                    max(0.0, s.director_pool() - s.wage_hours_this_year), 1)}
 
     if op in ("save", "load"):
         path = cmd.get("file") or cmd.get("path")

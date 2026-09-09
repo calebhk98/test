@@ -228,3 +228,171 @@ throughout, so either it's not modeled for this hazard or it's a fogged
 field. I'd have liked one line in the event log translating "a site is
 sacked" into what concretely changed, the way the knowledge-loss line did.
 
+### Years 231-600: rebuilding, compounding, and running out the clock
+
+From here I settled into a rhythm: check `available`, start whatever batch
+of a half-dozen to a dozen items looked useful or interesting, step 15-50
+years, repeat. The economy fully recovered from the rebellion and then some
+— capital passed 100k at year 281, 1 million at year 350, and finished at
+2.74 million at year 600, with revenue climbing from ~5k/yr post-rebellion
+to 134k/yr at the end. Past roughly year 300, capital stopped being a
+meaningful constraint at all — everything in my price range cost hundreds
+to tens of thousands against a balance in the hundreds of thousands to
+millions. The real bottleneck in the back half of the game was founder
+hours (flat at 2400/year, never changed) and each project's calendar floor,
+not money. A few concrete oddities from this stretch:
+
+- Artisans grew steadily from ~4 to ~30 through year 316, then flatlined at
+  exactly 29.62 for the remaining 284 years (year 316 to 600) no matter what
+  I built, including a dedicated `freedman_staff` project ("+8 artisans")
+  that fired once and then nothing further moved the number. Scholars
+  stayed at a flat 1.0 for the entire 500-year run — I built five different
+  "institution" techs (curriculum, doctorate, referee, research group,
+  funded programme) that read like they should grow a research
+  establishment, and none of them touched the scholars count as far as I
+  could see. If there's a way to grow scholars, I never found it, and
+  that's a real gap for a game about technology transfer, since so much of
+  the tree's flavour text is specifically about the collective, generational
+  nature of establishing science.
+- Reputation quietly decayed almost the entire game even while I was
+  actively building: it peaked around 28-29 in the 130s-180s and then
+  drifted down almost monotonically to 0.8 by year 600, despite dozens of
+  further completed projects. Scandal crept up to 3.29 at its highest with
+  no visible consequence I could detect. I don't know what reputation and
+  scandal actually gate — suspicion (the one meter the UI explicitly frames
+  as dangerous) stayed at a flat 0.0 for all 500 years, so whatever
+  cover-blowing mechanic those other meters feed into, I never triggered it,
+  possibly because `identity_cover`'s "-6 suspicion" early investment simply
+  outran everything else I did.
+- `founder_alive` stayed `true` for the entire 500-year run and
+  `founder_hours_available` never changed from 2400/year. The game's own
+  framing is "you are one person" who personally spends founder-hours on
+  each project — but that one person is apparently still personally
+  spending 2400 hours a year on things in the year 600, four centuries
+  after starting. I went looking for a succession/heir/mortality mechanic
+  under fog (grepped my own `available` output for heir/succession/age/
+  death-adjacent ids) and found nothing. Either the founder is meant to be
+  read as an institutional role rather than a literal single lifespan (in
+  which case the opening text is misleading), or there's a mortality/
+  succession system I simply never unlocked the prerequisite for. Either
+  way it undercuts the human-scale premise the game opens with.
+- "Buy, train and manumit a technical staff" (`freedman_staff`) — the tech
+  whose own note calls itself "the ethical and efficient answer" — actually
+  implements its ethics by first *buying* 8 skilled slaves as a plain
+  material line-item (`"slave_skilled": 8.0`, priced exactly like buying
+  kg of bronze) before freeing them within the same project. And yet the
+  top-level `slaves` and `freedmen` counters in `state` stayed at 0/0 for
+  the entire game, including after this project completed — so the
+  explicit "how many people do you currently hold" accounting the game
+  clearly wants you to see (it's right there in `state` every turn) doesn't
+  actually reflect slave labour consumed as an ordinary project material
+  elsewhere in the tree. If the designers want the player to reckon with
+  the slavery mechanic (and the `buy`/`manumit` commands and the framing
+  text suggest they do), having a chunk of it happen silently inside a
+  cost dictionary, invisible to the one counter meant to track it, feels
+  like a real gap between the stated intent and what the numbers actually
+  show me.
+- The `available` list kept surfacing a few items that read as generic
+  template content rather than Han-China-specific: `citizenship` ("Roman
+  citizenship by grant... the difference between a governor executing you
+  and Rome hearing you") and the free `civ_aqueduct_roman` / `civ_insula` /
+  `civ_sewer_roman` entries sat in my Han-dynasty China game's list the
+  entire run. I never took `citizenship` for exactly this reason — a
+  Roman legal-appeal mechanic makes no sense for a persona operating in
+  Han China — but its continued presence in `available` for 500 years,
+  fog or no fog, reads like unfinished civ-gating rather than a deliberate
+  choice.
+- Recurring flavour events: "fire in the insula district" fired roughly 20
+  times across the game with no visible mechanical effect I could isolate
+  (I eventually built `fin_fire_insurance`, which didn't visibly change the
+  frequency), and "your patron dies; his heir must be courted afresh" fired
+  six separate times after I'd specifically paid to `patron_local` — every
+  single patron I secured died and had to be re-courted, which reads as
+  intentional dark comedy about patronage in a pre-industrial autocracy
+  rather than a bug, but the game never told me whether the investment was
+  a one-time sunk cost against permanent churn or something I should be
+  budgeting for repeatedly. I only ever paid for it once.
+
+### The ending, and the biggest thing I missed
+
+The game ended itself automatically at year 600 without my prompting:
+
+    "ended": true, "end_reason": "ran out of horizon (600 AD) without
+    reaching the goal"
+
+Final numbers: 139 technologies I personally built ("done_earned", up from
+0), 144 granted/ambient ones, 283 total known; capital 2,741,428.5; revenue
+134,475.8/year; reputation had drifted down to 0.8; no further hazards
+pending. The session file still answers `state` and `available` after
+`ended: true`, so nothing is destroyed by finishing — it just stops
+advancing.
+
+Two things stood out about the ending:
+
+1. **"Without reaching the goal" is a strange note to end on when I was
+   never offered a way to set a goal.** `state.goal` was `null` for the
+   entire 500 years, and every `why <id>` response carried an
+   `on_goal_path` boolean the whole game that I could never act on
+   directly, since `path <id>` is explicitly disabled under fog of war and
+   no `start`/`buy`/other command in `help` mentions setting one. Querying
+   `why goal` at the very end just returned "unknown node 'goal'." Either
+   there's a `--goal` launch flag I never knew to pass (I only used `--civ`
+   and `--fog`), or goals are set some other way I never discovered, or the
+   phrase is boilerplate that fires whenever `goal_reached` is false
+   regardless of whether a goal was ever in play. Any of those would be
+   worth a line of clarification, because as written it reads like I lost
+   at something I was never told how to try to win.
+
+2. **I had been silently ignoring half of every `available` response for
+   the entire game.** My scripts had been parsing `d['available']` and
+   printing that array since turn one; only at the very last query did I
+   notice the response object also carries a sibling key,
+   `heard_of_but_cannot_begin`, listing named-but-locked technologies
+   together with the specific prerequisite(s) blocking each one — e.g.
+   `corpus_dispersed`: "Print and disperse hundreds of copies across three
+   continents", blocked only on a `printing_press` I apparently never
+   built despite completing both `prn_hand_papermaking` and
+   `mt2_type_metal` along the way. That is almost certainly the "better
+   hedge" the game kept telling me existed and that I "had not found yet"
+   for the entire back half of the game (`corpus_written` only got me to
+   45%/22% sack-loss odds; `corpus_dispersed` reads like the mechanic that
+   would have zeroed them out). Had I read this field from the start, I
+   would have had a standing checklist of specific, nameable targets under
+   fog instead of guessing from one-line summaries — which is exactly the
+   kind of information the game says fog of war permits you to see
+   ("things you have heard of but cannot yet begin"). This was entirely on
+   me as a player, not a flaw in the game, but it's the single biggest
+   thing I'd do differently on a second run: read the whole response
+   object, not just the list I expected to find in it.
+
+### Overall impressions
+
+This is a genuinely unusual and well-thought-through simulation. The
+central tension — you know everything, but knowing costs nothing while
+doing costs your own irreplaceable hours plus other people's hours plus
+money plus years, and the knowledge you've built can simply be burned down
+by history on a schedule it half-tells you about in advance — actually
+played out exactly as advertised over five centuries. The Yellow Turban
+rebellion was the standout moment: a clearly telegraphed, escapable danger
+that I ignored while chasing growth, that then extracted a specific and
+legible cost, whose specific remedy had been buildable the entire time
+using pieces I'd already built for other reasons. The in-content developer
+honesty (the `water_power_scale` audit note admitting a data-quality
+limitation, in-fiction, rather than papering over it) was the single most
+surprising thing I found in the whole game.
+
+Against that: the granular one-line-at-a-time JSON protocol makes genuine
+strategic planning slow and easy to shortcut into "start everything
+affordable, step, repeat," which likely flattens a lot of the intended
+decision-making (prioritising specific chains, husbanding founder-hours,
+reading the full fog-of-war picture including `heard_of_but_cannot_begin`)
+into something closer to bulk-buying. Several meters (reputation, scandal,
+eminence, protection, familiarity, scholars headcount) accumulated
+significant numbers over five centuries without ever visibly mattering to
+an outcome I could observe, which made them feel more like flavour
+instrumentation than levers — possibly they matter in ways gated behind
+content I never reached, but nothing in `state` or `why` ever told me what
+they were for. And the ending message's reference to an unset "goal" is a
+loose thread I'd want explained before calling this run a clean pass or
+fail.
+
