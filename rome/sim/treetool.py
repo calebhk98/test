@@ -113,6 +113,35 @@ def cmd_merge(a):
         if not isinstance(batch, list):
             errs.append("%s: top level is not a list" % fn)
             continue
+
+        # Branch authors routinely refer to their OWN nodes without the file's
+        # id prefix: a file of ag2_* nodes asks for "coulter" when it means
+        # "ag2_coulter". Left alone the prereq resolver below silently drops
+        # those edges, which makes the technology look cheaper and earlier than
+        # it is. Repair them here, but only where the fix is unambiguous.
+        own = {n["id"] for n in batch if isinstance(n, dict) and "id" in n}
+        prefixes = set()
+        for i in own:
+            if "_" in i:
+                prefixes.add(i.split("_", 1)[0] + "_")
+        for n in batch:
+            if not isinstance(n, dict):
+                continue
+            fixed = []
+            for p in n.get("pre", []):
+                if p in own or p in nodes:
+                    fixed.append(p)
+                    continue
+                cands = {pf + p for pf in prefixes if pf + p in own}
+                if len(cands) == 1:
+                    q = cands.pop()
+                    fixed.append(q)
+                    warns.append("%s: %s self-ref '%s' -> '%s'" % (fn, n.get("id", "?"), p, q))
+                else:
+                    fixed.append(p)
+            if "pre" in n:
+                n["pre"] = fixed
+
         for n in batch:
             missing = [k for k in REQUIRED if k not in n]
             if missing:

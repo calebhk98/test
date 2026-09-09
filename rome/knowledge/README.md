@@ -38,7 +38,8 @@ in this directory, read that one.
 | [`93_energy.md`](93_energy.md) |  | 27 | 0 |
 | [`94_computing.md`](94_computing.md) |  | 22 | 0 |
 | [`95_expeditions.md`](95_expeditions.md) |  | 0 | 11 |
-| [`97_military.md`](97_military.md) |  | 28 | 112 |
+| [`96_finance.md`](96_finance.md) |  | 29 | 88 |
+| [`97_military.md`](97_military.md) |  | 29 | 112 |
 | [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 4 | 0 |
 
 ### Nodes documented in the top-level prose files
@@ -2052,6 +2053,99 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `exp_americas_factory` | 4 | 500.0 | _(module has no anchor)_ |
 | `exp_conquest_resource` | 4 | 300.0 | _(module has no anchor)_ |
 
+### 96_finance.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `fin_annona` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_argentarii` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_auction` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_coined_money` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_contract_law` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_maritime_loan` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_market` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_tax_farming` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_testament` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_wage` | 0 | 0.0 | _(module has no anchor)_ |
+| `fin_apprenticeship` | 1 | 80.0 | _(module has no anchor)_ |
+| `fin_arabic_numerals` | 1 | 120.0 | _(module has no anchor)_ |
+| `fin_employment_contract` | 1 | 60.0 | _(module has no anchor)_ |
+| `fin_ferry` | 1 | 100.0 | _(module has no anchor)_ |
+| `fin_gambling_house` | 1 | 100.0 | _(module has no anchor)_ |
+| `fin_hotel` | 1 | 120.0 | _(module has no anchor)_ |
+| `fin_inn` | 1 | 100.0 | _(module has no anchor)_ |
+| `fin_pawnshop` | 1 | 60.0 | _(module has no anchor)_ |
+| `fin_playing_card` | 1 | 100.0 | _(module has no anchor)_ |
+| `fin_trading_post` | 1 | 100.0 | _(module has no anchor)_ |
+| `fin_almanac` | 2 | 150.0 | _(module has no anchor)_ |
+| `fin_arbitrage` | 2 | 80.0 | _(module has no anchor)_ |
+| `fin_bankruptcy` | 2 | 120.0 | _(module has no anchor)_ |
+| `fin_bill_exchange` | 2 | 150.0 | _(module has no anchor)_ |
+| `fin_bimetallism` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_brand` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_cartel` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_cheque` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_coffeehouse` | 2 | 120.0 | _(module has no anchor)_ |
+| `fin_deposit_bank` | 2 | 200.0 | _(module has no anchor)_ |
+| `fin_discounting` | 2 | 120.0 | _(module has no anchor)_ |
+| `fin_double_entry` | 2 | 200.0 | _(module has no anchor)_ |
+| `fin_endorsement` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_factory` | 2 | 180.0 | _(module has no anchor)_ |
+| `fin_fractional_reserve` | 2 | 150.0 | _(module has no anchor)_ |
+| `fin_ledger` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_lending_library` | 2 | 140.0 | _(module has no anchor)_ |
+| `fin_lottery` | 2 | 150.0 | _(module has no anchor)_ |
+| `fin_monopoly` | 2 | 80.0 | _(module has no anchor)_ |
+| `fin_mortgage` | 2 | 120.0 | _(module has no anchor)_ |
+| `fin_omnibus` | 2 | 140.0 | _(module has no anchor)_ |
+| `fin_plantation` | 2 | 200.0 | _(module has no anchor)_ |
+| `fin_postal_service` | 2 | 180.0 | _(module has no anchor)_ |
+| `fin_professional_sport` | 2 | 140.0 | _(module has no anchor)_ |
+| `fin_promissory_note` | 2 | 80.0 | _(module has no anchor)_ |
+| `fin_racecourse` | 2 | 130.0 | _(module has no anchor)_ |
+| `fin_restaurant` | 2 | 120.0 | _(module has no anchor)_ |
+| `fin_seigniorage` | 2 | 80.0 | _(module has no anchor)_ |
+| `fin_tariff` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_theatre_business` | 2 | 150.0 | _(module has no anchor)_ |
+| `fin_toll_bridge` | 2 | 150.0 | _(module has no anchor)_ |
+| `fin_trademark` | 2 | 80.0 | _(module has no anchor)_ |
+| `fin_trial_balance` | 2 | 80.0 | _(module has no anchor)_ |
+| `fin_usury_evasion` | 2 | 80.0 | _(module has no anchor)_ |
+| `fin_usury_law` | 2 | 100.0 | _(module has no anchor)_ |
+| `fin_advertising` | 3 | 160.0 | _(module has no anchor)_ |
+| `fin_annuity` | 3 | 140.0 | _(module has no anchor)_ |
+| `fin_bond` | 3 | 120.0 | _(module has no anchor)_ |
+| `fin_canal_company` | 3 | 250.0 | _(module has no anchor)_ |
+| `fin_central_bank` | 3 | 250.0 | _(module has no anchor)_ |
+| `fin_chain_store` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_classified_ad` | 3 | 100.0 | _(module has no anchor)_ |
+| `fin_clearing_house` | 3 | 180.0 | _(module has no anchor)_ |
+| `fin_company_town` | 3 | 150.0 | _(module has no anchor)_ |
+| `fin_copyright` | 3 | 120.0 | _(module has no anchor)_ |
+| `fin_department_store` | 3 | 180.0 | _(module has no anchor)_ |
+| `fin_directory` | 3 | 140.0 | _(module has no anchor)_ |
+| `fin_fire_insurance` | 3 | 180.0 | _(module has no anchor)_ |
+| `fin_futures` | 3 | 140.0 | _(module has no anchor)_ |
+| `fin_life_insurance` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_limited_liability` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_mail_order` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_marine_insurance` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_news_agency` | 3 | 180.0 | _(module has no anchor)_ |
+| `fin_newspaper_business` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_paper_money` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_patent` | 3 | 140.0 | _(module has no anchor)_ |
+| `fin_pension` | 3 | 180.0 | _(module has no anchor)_ |
+| `fin_public_debt` | 3 | 150.0 | _(module has no anchor)_ |
+| `fin_railway_company` | 3 | 300.0 | _(module has no anchor)_ |
+| `fin_reinsurance` | 3 | 150.0 | _(module has no anchor)_ |
+| `fin_savings_bank` | 3 | 160.0 | _(module has no anchor)_ |
+| `fin_share` | 3 | 100.0 | _(module has no anchor)_ |
+| `fin_stamp` | 3 | 120.0 | _(module has no anchor)_ |
+| `fin_stock_exchange` | 3 | 180.0 | _(module has no anchor)_ |
+| `fin_telegraph_business` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_tramway` | 3 | 200.0 | _(module has no anchor)_ |
+| `fin_turnpike_trust` | 3 | 200.0 | _(module has no anchor)_ |
+
 ### 97_military.md
 
 | Node | Tier | Your hours | Recipe |
@@ -2174,103 +2268,12 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | status | nodes |
 |---|---:|
 | linked to a specific recipe entry | 96 |
-| linked to a domain module, no specific entry | 1931 |
+| linked to a domain module, no specific entry | 2019 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
-| **undocumented, a real gap** | **163** |
+| **undocumented, a real gap** | **296** |
 
 The undocumented nodes, listed so the gap is visible rather than hidden:
 
-`civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statics`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`
-
-## Broken links
-
-- `fin_advertising` points at `96_finance.md`, which does not exist
-- `fin_almanac` points at `96_finance.md`, which does not exist
-- `fin_annona` points at `96_finance.md`, which does not exist
-- `fin_annuity` points at `96_finance.md`, which does not exist
-- `fin_apprenticeship` points at `96_finance.md`, which does not exist
-- `fin_arabic_numerals` points at `96_finance.md`, which does not exist
-- `fin_arbitrage` points at `96_finance.md`, which does not exist
-- `fin_argentarii` points at `96_finance.md`, which does not exist
-- `fin_auction` points at `96_finance.md`, which does not exist
-- `fin_bankruptcy` points at `96_finance.md`, which does not exist
-- `fin_bill_exchange` points at `96_finance.md`, which does not exist
-- `fin_bimetallism` points at `96_finance.md`, which does not exist
-- `fin_bond` points at `96_finance.md`, which does not exist
-- `fin_brand` points at `96_finance.md`, which does not exist
-- `fin_canal_company` points at `96_finance.md`, which does not exist
-- `fin_cartel` points at `96_finance.md`, which does not exist
-- `fin_central_bank` points at `96_finance.md`, which does not exist
-- `fin_chain_store` points at `96_finance.md`, which does not exist
-- `fin_cheque` points at `96_finance.md`, which does not exist
-- `fin_classified_ad` points at `96_finance.md`, which does not exist
-- `fin_clearing_house` points at `96_finance.md`, which does not exist
-- `fin_coffeehouse` points at `96_finance.md`, which does not exist
-- `fin_coined_money` points at `96_finance.md`, which does not exist
-- `fin_company_town` points at `96_finance.md`, which does not exist
-- `fin_contract_law` points at `96_finance.md`, which does not exist
-- `fin_copyright` points at `96_finance.md`, which does not exist
-- `fin_department_store` points at `96_finance.md`, which does not exist
-- `fin_deposit_bank` points at `96_finance.md`, which does not exist
-- `fin_directory` points at `96_finance.md`, which does not exist
-- `fin_discounting` points at `96_finance.md`, which does not exist
-- `fin_double_entry` points at `96_finance.md`, which does not exist
-- `fin_employment_contract` points at `96_finance.md`, which does not exist
-- `fin_endorsement` points at `96_finance.md`, which does not exist
-- `fin_factory` points at `96_finance.md`, which does not exist
-- `fin_ferry` points at `96_finance.md`, which does not exist
-- `fin_fire_insurance` points at `96_finance.md`, which does not exist
-- `fin_fractional_reserve` points at `96_finance.md`, which does not exist
-- `fin_futures` points at `96_finance.md`, which does not exist
-- `fin_gambling_house` points at `96_finance.md`, which does not exist
-- `fin_hotel` points at `96_finance.md`, which does not exist
-- `fin_inn` points at `96_finance.md`, which does not exist
-- `fin_ledger` points at `96_finance.md`, which does not exist
-- `fin_lending_library` points at `96_finance.md`, which does not exist
-- `fin_life_insurance` points at `96_finance.md`, which does not exist
-- `fin_limited_liability` points at `96_finance.md`, which does not exist
-- `fin_lottery` points at `96_finance.md`, which does not exist
-- `fin_mail_order` points at `96_finance.md`, which does not exist
-- `fin_marine_insurance` points at `96_finance.md`, which does not exist
-- `fin_maritime_loan` points at `96_finance.md`, which does not exist
-- `fin_market` points at `96_finance.md`, which does not exist
-- `fin_monopoly` points at `96_finance.md`, which does not exist
-- `fin_mortgage` points at `96_finance.md`, which does not exist
-- `fin_news_agency` points at `96_finance.md`, which does not exist
-- `fin_newspaper_business` points at `96_finance.md`, which does not exist
-- `fin_omnibus` points at `96_finance.md`, which does not exist
-- `fin_paper_money` points at `96_finance.md`, which does not exist
-- `fin_patent` points at `96_finance.md`, which does not exist
-- `fin_pawnshop` points at `96_finance.md`, which does not exist
-- `fin_pension` points at `96_finance.md`, which does not exist
-- `fin_plantation` points at `96_finance.md`, which does not exist
-- `fin_playing_card` points at `96_finance.md`, which does not exist
-- `fin_postal_service` points at `96_finance.md`, which does not exist
-- `fin_professional_sport` points at `96_finance.md`, which does not exist
-- `fin_promissory_note` points at `96_finance.md`, which does not exist
-- `fin_public_debt` points at `96_finance.md`, which does not exist
-- `fin_racecourse` points at `96_finance.md`, which does not exist
-- `fin_railway_company` points at `96_finance.md`, which does not exist
-- `fin_reinsurance` points at `96_finance.md`, which does not exist
-- `fin_restaurant` points at `96_finance.md`, which does not exist
-- `fin_savings_bank` points at `96_finance.md`, which does not exist
-- `fin_seigniorage` points at `96_finance.md`, which does not exist
-- `fin_share` points at `96_finance.md`, which does not exist
-- `fin_stamp` points at `96_finance.md`, which does not exist
-- `fin_stock_exchange` points at `96_finance.md`, which does not exist
-- `fin_tariff` points at `96_finance.md`, which does not exist
-- `fin_tax_farming` points at `96_finance.md`, which does not exist
-- `fin_telegraph_business` points at `96_finance.md`, which does not exist
-- `fin_testament` points at `96_finance.md`, which does not exist
-- `fin_theatre_business` points at `96_finance.md`, which does not exist
-- `fin_toll_bridge` points at `96_finance.md`, which does not exist
-- `fin_trademark` points at `96_finance.md`, which does not exist
-- `fin_trading_post` points at `96_finance.md`, which does not exist
-- `fin_tramway` points at `96_finance.md`, which does not exist
-- `fin_trial_balance` points at `96_finance.md`, which does not exist
-- `fin_turnpike_trust` points at `96_finance.md`, which does not exist
-- `fin_usury_evasion` points at `96_finance.md`, which does not exist
-- `fin_usury_law` points at `96_finance.md`, which does not exist
-- `fin_wage` points at `96_finance.md`, which does not exist
+`ag2_adulteration_law`, `ag2_artificial_insemination`, `ag2_balanced_ration`, `ag2_baler`, `ag2_basic_slag`, `ag2_battery_poultry`, `ag2_biological_control`, `ag2_bone_meal`, `ag2_bordeaux_mixture`, `ag2_botanic_garden`, `ag2_bottling`, `ag2_budding`, `ag2_butter`, `ag2_canning`, `ag2_caterpillar_track`, `ag2_centrifugal_sugar`, `ag2_chaff_cutter`, `ag2_cheese_families`, `ag2_coffee_voyage`, `ag2_cold_store`, `ag2_column_still`, `ag2_combine_harvester`, `ag2_composting`, `ag2_condensed_milk`, `ag2_contour_ploughing`, `ag2_controlled_pollination`, `ag2_coulter`, `ag2_cream_separator`, `ag2_crown_cork`, `ag2_cultivator`, `ag2_ddt`, `ag2_double_seam_can`, `ag2_erosion_control`, `ag2_evaporated_milk`, `ag2_fanning_mill`, `ag2_fat_hydrogenation`, `ag2_fermentation_control`, `ag2_food_laboratory`, `ag2_gasworks_ammonia`, `ag2_grafting`, `ag2_gravity_irrigation`, `ag2_green_manure`, `ag2_guano`, `ag2_harrow`, `ag2_herd_book`, `ag2_hopping`, `ag2_horse_hoe`, `ag2_hybrid_maize`, `ag2_hybridisation`, `ag2_hydrometer`, `ag2_layering`, `ag2_lead_arsenate`, `ag2_lime_sulphur`, `ag2_liming`, `ag2_maize_newworld`, `ag2_malting`, `ag2_marling`, `ag2_mashing`, `ag2_milking_machine`, `ag2_mower`, `ag2_nicotine_pesticide`, `ag2_nitrite_curing`, `ag2_nitrogen_cycle`, `ag2_norfolk_course`, `ag2_oil_pressing`, `ag2_pasteurisation`, `ag2_plant_quarantine`, `ag2_pot_still`, `ag2_potash`, `ag2_potato_lifter`, `ag2_potato_newworld`, `ag2_power_take_off`, `ag2_progeny_testing`, `ag2_pure_line_selection`, `ag2_purifier`, `ag2_pyrethrum`, `ag2_reaper`, `ag2_reaper_binder`, `ag2_record_keeping_breeding`, `ag2_refrigerated_ship`, `ag2_refrigeration_ice`, `ag2_resistant_variety`, `ag2_retort`, `ag2_rhizobia`, `ag2_ridging_plough`, `ag2_roller`, `ag2_roller_mill`, `ag2_root_cutter`, `ag2_rootstocks`, `ag2_seed_certification`, `ag2_seed_drill`, `ag2_seed_trade`, `ag2_sheep_dip`, `ag2_silage_silo`, `ag2_soil_testing`, `ag2_sprayer`, `ag2_subsoiler`, `ag2_sugar_refining`, `ag2_sugar_voyage`, `ag2_superphosphate`, `ag2_tea_voyage`, `ag2_tedder`, `ag2_terracing`, `ag2_three_point_linkage`, `ag2_threshing_machine`, `ag2_tile_drainage`, `ag2_tractor_steam`, `ag2_tuberculin_test`, `ag2_urea`, `ag2_vacuum_pan`, `ag2_veterinary_vaccination`, `ag2_wardian_case`, `ag2_white_flour_loss`, `ag2_winnower`, `ag2_yeast_culture`, `civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `in2_analytical_balance`, `in2_aneroid_capsule`, `in2_balance_spring_watch`, `in2_bourdon_pressure_gauge`, `in2_gas_thermometry_absolute`, `in2_mcleod_vacuum_gauge`, `in2_mercury_barometer`, `in2_microbalance_quartz`, `in2_optical_comparator`, `in2_orifice_flow_meter`, `in2_pitot_tube`, `in2_quartz_resonator_frequency`, `in2_resistance_thermometer_RTD`, `in2_thermocouple`, `in2_torsion_balance`, `in2_travelling_microscope`, `in2_tuning_fork_oscillator`, `in2_venturi_flow_meter`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statics`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`
 

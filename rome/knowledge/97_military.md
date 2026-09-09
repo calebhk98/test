@@ -1,8 +1,8 @@
 # Module 97: Weapons, and the Price of Building Them
 
-Rome in 100 AD commands the greatest military advantage any power has held or will hold for the next thousand years. The legion is a war machine of frightening efficiency. Rome has professional soldiers, continuous logistics, military roads, and an engineering corps that can siege a city to rubble. Rome has the torsion catapult, the ballista, the onager, segmented plate and mail armour, field fortifications, the marching camp. Rome has strategic roads and a medical corps. The empire is real. The question this module answers is: what does Rome build next, and what price does the future demand for those choices?
+Rome in 100 AD has the greatest military advantage any power will hold for centuries - professional soldiers, continuous logistics, engineering corps, torsion catapults, ballista, onager, plate armor, field fortifications, strategic roads, and medical corps. Rome is real. The question here is: what does Rome build next, and at what cost?
 
-The military technologies that follow are a tree of consequences. Each one defeats the previous. Each one demands the resources of a state to deploy. Each one changes what an army can do, what a fortress must become, what a rebellion costs to suppress. No Roman emperor should build any of these weapons lightly. Every one multiplies the violence Rome can inflict. Some multiply it so thoroughly that they change the shape of power itself.
+The military technologies below are a tree of consequences. Each defeats the previous. Each changes what armies can do and what fortresses must become. No emperor should build these lightly. Every one multiplies violence Rome can inflict. Some fundamentally change power's shape.
 
 ---
 
@@ -20,18 +20,17 @@ The military technologies that follow are a tree of consequences. Each one defea
 
 **Procedure.**
 
-1. Mill each component separately to a fine powder using a mortar and stone pestle, working no faster than the friction permits. Saltpetre and charcoal in one mortar, sulfur in another, on separate benches. Do not mix the components before wetting.
-2. Calculate mass ratios: 75 parts saltpetre, 15 parts charcoal, 10 parts sulfur by weight.
-3. In a marble or stone mortar, mix the three powders together in a ratio of 3:1:2. The mixture will be dark and uniform.
-4. Add water one drop at a time, mixing with a stone pestle, until the powder forms a thick paste resembling wet clay. This requires roughly 10-12% water by weight of the powder.
-5. Press the paste firmly into a flat stone mold or wooden box lined with cloth. Press hard - the mixture should be compressed to half its loose volume.
-6. Allow to dry for 3-4 days in a warm place (20-25 degrees Celsius) away from direct flame. Test readiness by checking that the cake is hard and does not crumble when struck lightly.
-7. Break the dried cake by hand into grains the size of a lentil to a pea. Larger grains are slower; finer particles more prone to separation.
-8. Sieve through cloth of increasing fineness, discarding the finest dust. The goal is uniform granules, each roughly the same size.
+1. Mill saltpetre, charcoal, and sulfur separately to fine powder in separate mortars. Do not mix before wetting.
+2. Mix 75 saltpetre, 15 charcoal, 10 sulfur by weight.
+3. Add water dropwise (10-12% by weight) until thick paste forms.
+4. Press firmly into mold to half loose volume.
+5. Dry 3-4 days at 20-25°C, away from flame.
+6. Break cake into grains (lentil to pea size).
+7. Sieve through cloth, discard finest dust. Goal: uniform granules.
 
-**How you know it worked.** Ignite a small handful with a spark or match. Corned powder burns with a white flash, a distinct sharp bang, and a smell of sulfur. Serpentine powder burns with a yellow flame, much slower, and produces a smaller report. If the powder produces a distinct white flash and a sharp sound, the corning worked. If it burns slowly and produces mostly smoke, the corning did not take.
+**How you know it worked.** Ignite handful with spark. Corned powder: white flash, sharp bang, sulfur smell. Serpentine: yellow flame, slow, small report.
 
-**Failure modes.** The most common failure is insufficient water or pressing - the cake remains crumbly and does not grain. The remedy is to add more water and press harder. Another common failure is over-drying, which causes the cake to become so hard that breaking it produces dust, not grains; this is partially correctable by adding a small amount of water and re-pressing for one day. If the grains separate during storage - the coarser settling at the bottom - the original corning was insufficient and the powder should be remade.
+**Failure modes.** Insufficient water/pressing: cake crumbly, doesn't grain. Add water, press harder. Over-drying: breaks to dust not grains. Separate grains in storage: original corning insufficient, remake powder.
 
 **Cost & labour.** Personal hours: 8 hours per 10 kg batch (mixing, pressing, drying, breaking, sieving). Artisan hours: none required beyond your own. Materials: saltpetre (5 denarii per kg, MEASURED from medieval sources), charcoal (0.5 denarii per kg, ESTIMATED), sulfur (2 denarii per kg, MEASURED). Capital: stone mortar and pestle (20 denarii), drying mold (5 denarii), sieves (10 denarii). Total materials for 10 kg batch: 47.5 denarii. ESTIMATED calendar time: 4 days for one batch. A powder mill can produce 50-100 kg per month once staffed and supplied.
 
@@ -73,36 +72,34 @@ The military technologies that follow are a tree of consequences. Each one defea
 
 ### matchlock - Matchlock Musket
 
-**What it is / why you want it.** A firearm in which a slow-burning match (a twisted cord treated with a smoldering compound) is held in a clamp and brought into contact with a pan of primed powder to fire the weapon. The matchlock is the first firearm that a non-specialist can reliably operate.
+**What it is / why you want it.** Firearm with slow-burning match held in clamp, brought into powder pan by trigger pull. First firearm non-specialists can operate.
 
-**Why you would never guess this.** Earlier hand cannons required the operator to hold a lit match in one hand while aiming and firing with the other. The matchlock is a mechanical innovation: a pivoting clamp (the serpentine) holds the match. The operator pulls a trigger - a levered arm that rotates the clamp downward, bringing the match into the pan. The genius is the trigger: it converts an awkward simultaneous action (hold, aim, light) into a sequential one (aim, pull trigger). This is mechanical, not chemical. It has nothing to do with the powder.
+**Why you would never guess this.** Hand cannons required operator to hold lit match while aiming. Matchlock innovation: pivoting clamp holds match, trigger pull (levered arm) rotates clamp into pan. Converts awkward simultaneous action to sequential (aim, pull). Mechanical, not chemical.
 
-**Prerequisites.** Corned powder, metalworking (steel and iron), gunsmithing skill, musket ball molds.
+**Prerequisites.** Corned powder, metalworking (steel/iron), gunsmithing, ball molds.
 
-**Roman-available inputs.** Steel (from bloomery iron, carbon-enriched by repeated heating and quenching), iron (abundant), tin (from Cornwall, traded), brass (from copper and zinc by cementation), saltpetre and charcoal and sulfur (see corned_powder).
+**Roman-available inputs.** Steel, iron, tin, brass, saltpetre/charcoal/sulfur.
 
 **Procedure.**
 
-1. Forge a barrel from iron by drawing and welding. Start with a bar of iron, heat to cherry red (700-800 degrees Celsius), and draw it thin over the forge horn. This takes 20-30 hours of smithing for a musket barrel.
-2. Coil the drawn bar into a spiral shape and weld the overlapping edges by forge-welding at white heat (1400+ degrees Celsius). The overlap should be 2-3 cm.
-3. Drive the coiled tube over a mandrel of the desired bore size while heated, hammering the weld shut. Test for leaks by filling with water.
-4. Flare the breech end (the thick end) by driving the tube over a tapered mandrel.
-5. Drill a touch hole (a small hole connecting the powder pan to the barrel) 3 mm in diameter at an angle of 45 degrees.
-6. Attach a pan (a small brass cup) to the side of the barrel at the touch hole, using silver solder or forge-welding. The pan should hold about 2 grams of powder.
-7. Forge or cast a lock mechanism (the serpentine) from iron. This is a hinged clamp that holds a slow match and rotates into the pan when a trigger is pulled.
-8. Attach the lock to the side of the barrel with screws and bands.
-9. Fashion a stock from wood, deep enough to support the barrel and comfortable for shouldering.
-10. Mold lead bullets to fit the barrel bore, using a two-part brass mold.
+1. Forge iron barrel by drawing and welding at white heat (1400+ degrees Celsius). 20-30 hours smithing.
+2. Coil and weld overlapping edges 2-3 cm.
+3. Drive tube over mandrel, hammer weld shut. Test leaks.
+4. Flare breech end.
+5. Drill touch hole 3 mm at 45 degrees.
+6. Attach brass pan (2 grams capacity) to side.
+7. Forge iron serpentine (hinged clamp for match).
+8. Attach lock to barrel.
+9. Make wood stock.
+10. Mold lead bullets.
 
-**How you know it worked.** Load the barrel with 2-3 grams of corned powder, place a lead ball in the muzzle, and drive it down with a wooden ramrod. Prime the pan with 0.5 grams of fine powder. Hold a slow match (a cord smoldering at about 20-30 mm per minute) in the serpentine. Pull the trigger. The musket should fire with a report and significant recoil.
+**How you know it worked.** Load 2-3 grams powder, ball, ramrod. Prime pan 0.5 grams. Hold slow match 20-30 mm/minute in serpentine. Pull trigger. Fire with report and recoil.
 
-**Failure modes.** The most common failure is poor weld in the barrel - leaks, cracks, or separation during firing. The remedy is to re-weld or scrap the barrel. Another common failure is a poorly fitted lock or trigger - misfires or delayed ignition. The pan can also fail to ignite the barrel charge if the touch hole becomes fouled with ash. The gun can also fail to fire if the match is not hot enough or if the priming powder is damp.
+**Cost & labour.** 80-120 hours gunsmith labor. Materials: 5-10 denarii. Total: 15-20 denarii per musket. 1-2 per month.
 
-**Cost & labour.** Personal hours: 80-120 hours of a skilled gunsmith per musket (including barrel making, lock, stock, and testing). Artisan hours: negligible beyond the gunsmith. Materials: iron (2 kg at 0.1 denarii per kg), steel (0.5 kg at 0.2 denarii per kg), brass (0.2 kg at 0.5 denarii per kg), wood for stock (2 denarii), lead for bullets (0.1 denarii per kg), slow match cord (1 denarius per roll). MEASURED total: 5-10 denarii in materials. Capital: gunsmith tools (200+ denarii). Total cost per musket: 15-20 denarii in materials and labor (MEASURED from 16th-century records). A skilled gunsmith can produce 1-2 muskets per month.
+**Danger.** Physical: Weak welding causes explosion. Slow match fire hazard near powder. Social: Unauthorized musket possession is military crime.
 
-**Danger.** Physical: A musket can explode if the barrel is weakly welded or the powder charge is excessive. Slow match is a constant fire hazard in an army. Soldiers carrying lit matches near powder supplies can cause catastrophic explosions. Social: The matchlock musket is a firearm. Its possession by unauthorized persons is a military crime. Its use by rebels arms individuals against the state.
-
-**Confidence: HIGH.** The technology is textbook ironworking and is well documented from the 15th century onward. Roman-era feasibility is high - all the materials and skills exist.
+**Confidence: HIGH.** Well documented from 15th century.
 
 ---
 
@@ -224,106 +221,89 @@ The military technologies that follow are a tree of consequences. Each one defea
 
 ### breech_loader - Breech-Loading Musket
 
-**What it is / why you want it.** A musket in which the barrel does not load from the muzzle but from the rear (breech), where a hinged or removable section allows the insertion of a cartridge and a quick closing of the breech. The breech-loader increases rate of fire and eliminates the slow ramrod.
+**What it is / why you want it.** Load cartridges from the rear instead of muzzle. Much faster than ramrod loading.
 
-**Why you would never guess this.** Muzzle-loaders require pushing a ball down the bore with a ramrod - slow and awkward. A breech-loader solves this by allowing the cartridge to be dropped into the open breech and the breech closed. This seems obvious but it requires two non-obvious solutions: first, the breech must seal perfectly when closed, or gas escapes and power is lost; second, metallic cartridges must be available (the cartridge contains the charge and is sealed). The breech-loading rifle is therefore dependent on both the metallic cartridge and perfect breech-sealing.
+**Why you would never guess this.** Requires perfect gas seal when breech closes. Dependent on metallic cartridges and precision machine work.
 
-**Prerequisites.** Metallic cartridge, precision machining or fitting, hardened steel springs, metalworking.
+**Prerequisites.** Metallic cartridge, precision machining, hardened steel springs.
 
-**Roman-available inputs.** Steel, iron, brass, springs.
+**Roman-available inputs.** Steel, iron, brass.
 
 **Procedure.**
 
-1. Forge a barrel from iron, rifled if desired (see rifling).
-2. Machine or carefully file a flat surface at the breech end of the barrel. This surface must be perpendicular to the bore.
-3. Machine a breech block - a hardened steel piece that fits into the open breech. The block should be approximately 2-3 cm tall and 1.5 cm wide.
-4. Install a hinge pin on one side of the block. The block swings upward and to the side on this hinge.
-5. Drill a hole through the block (the chamber) sized to accept a metallic cartridge. The chamber should be a tight fit for the cartridge - 0.1 mm tolerance on diameter.
-6. Install a firing pin - a spring-loaded steel post - in the block, positioned to strike the percussion cap of a cartridge when the block is closed and a hammer strikes the firing pin.
-7. Attach the barrel to a wooden or metal stock with bands or screws.
-8. Attach a hammer and trigger to the stock, positioned to strike the firing pin when the trigger is pulled.
+1. Forge and rifle barrel.
+2. Machine flat breech surface perpendicular to bore.
+3. Create breech block 2-3 cm tall, swinging on hinge pin.
+4. Drill chamber for cartridge, 0.1 mm tolerance.
+5. Install firing pin in block.
+6. Attach barrel to wooden stock with bands.
+7. Attach hammer and trigger.
 
-**How you know it worked.** Insert a metallic cartridge into the breech with the block open. Close the block by swinging it upward and to the side until it sits flush against the breech. The cartridge should be firmly seated in the chamber. Pull the trigger. The hammer should strike the firing pin, which should strike the cartridge's percussion cap, firing the charge.
+**How you know it worked.** Insert cartridge, close block, fire. Cartridge must be firmly seated.
 
-**Failure modes.** Poor breech seal: if the block does not close perfectly, gas leaks around it and the gun loses power or makes a loud hiss. Adjustment by filing is required. Misfires: if the firing pin is not properly aligned or springs correctly, it may not strike the cartridge hard enough to detonate the cap. Extraction failures: once fired, the cartridge case expands inside the chamber and must be extracted. If no extractor is present, the cartridge is stuck and must be pushed out, a tedious process.
+**Cost & labour.** 120-180 hours gunsmith labor. Materials: 3-5 denarii. Total: 30-50 denarii per rifle.
 
-**Cost & labour.** Personal hours: 120-180 hours of a skilled gunsmith per rifle. Materials: steel (2 kg at 0.2 denarii per kg), iron, brass, springs, wood. ESTIMATED total materials: 3-5 denarii. Capital: precision machining tools or filing equipment (200+ denarii). Total cost per rifle: 30-50 denarii. Production rate: 1-2 rifles per month.
+**Danger.** Physical: Gas pressure focused at breech. Social: Significant military technology advance.
 
-**Danger.** Physical: Breech-loading rifles are as dangerous as muzzle-loaders when fired. Gas pressure is focused at the breech, and a poor seal can cause injury. Social: Breech-loading rifles represent a significant advance in military technology and are under strict imperial control.
-
-**Confidence: HIGH.** The technology is well documented from the 19th century. All materials and processes are within Roman capability.
+**Confidence: HIGH.** Well documented from 19th century.
 
 ---
 
 ### bolt_action - Bolt-Action Rifle
 
-**What it is / why you want it.** A breech-loading rifle in which a bolt (a cylindrical locking mechanism) rotates to lock the breech shut and is rotated back to extract and eject the spent cartridge. The bolt-action provides reliable breech-sealing and fast loading in a compact mechanism.
+**What it is / why you want it.** A rotating bolt locks and unlocks breech in one smooth motion, combining sealing and extraction faster than hinged breech.
 
-**Why you would never guess this.** The flipping-block breech is slow. A bolt is faster because it combines sealing and extraction in one rotation. The bolt has lugs (rectangular protrusions) on its sides that engage slots in the barrel extension, locking the breech shut. When the trigger is pulled, the sear releases and the bolt rotates 90 degrees (or sometimes 60) to unlock the lugs. The bolt is then pulled to the rear, extracting and ejecting the spent cartridge. This is a single smooth motion, much faster than swinging a block.
+**Why you would never guess this.** Bolt has lugs that engage slots in barrel extension. Rotate 90 degrees to lock/unlock. Much faster than swinging a block.
 
-**Prerequisites.** Breech-loading rifle, metallic cartridge, precision drilling and threading, hardened steel springs, lugs and locking seats.
+**Prerequisites.** Breech-loading rifle, metallic cartridge, precision drilling, hardened steel.
 
-**Roman-available inputs.** Steel (hardened), iron, brass, wood.
+**Roman-available inputs.** Steel, iron, brass, wood.
 
 **Procedure.**
 
-1. Forge and rifle a barrel from iron (see rifling). Machine a barrel extension at the breech - a cylindrical section 2 cm in diameter and 2-3 cm long, threaded to accept a breech ring.
-2. Forge or machine a bolt - a cylindrical steel piece 2 cm in diameter. The bolt should have two or more radial lugs (rectangular protrusions, 1 cm x 0.5 cm) on its exterior, spaced 180 degrees apart (for two lugs) or 90 degrees apart (for four lugs).
-3. Drill the bolt lengthwise to accept a firing pin (a hardened steel post). Install the firing pin with a spring to keep it retracted until struck by the hammer.
-4. Machine a bolt carrier (a guide for the bolt) that allows the bolt to slide backward and rotate. The carrier should allow rotation of about 90 degrees.
-5. Machine locking seats in the barrel extension - slots that accept the bolt lugs when the bolt is rotated. The lugs should fit snugly, with less than 1 mm play.
-6. Drill the bolt for an extractor - a hooked lever that grips the cartridge rim and pulls the cartridge out of the chamber as the bolt is withdrawn.
-7. Assemble: thread the bolt carrier into the barrel extension, install the bolt in the carrier, install the firing pin in the bolt, and install the extractor.
-8. Attach the barrel assembly to a wooden stock with a trigger guard and trigger.
+1. Forge rifled barrel with threaded breech extension 2 cm diameter.
+2. Machine bolt 2 cm diameter with radial lugs 1 cm x 0.5 cm.
+3. Install firing pin with spring in bolt.
+4. Machine bolt carrier guide.
+5. Machine locking seats in barrel extension, less than 1 mm play.
+6. Install extractor to pull cartridge rim.
+7. Assemble and attach to stock.
 
-**How you know it worked.** With the action open, insert a metallic cartridge into the chamber (the rear end of the rifled bore). Rotate the bolt 90 degrees to lock the lugs into the locking seats. The bolt should lock with a solid *click*. Pull the trigger. The firing pin should strike the cartridge's percussion cap. After firing, rotate the bolt 90 degrees to unlock. Pull the bolt backward. The extractor should grip the cartridge rim and pull it out of the chamber, ejecting it.
+**How you know it worked.** Insert cartridge, rotate bolt 90 degrees, lock with solid click. Fire. Rotate back, pull bolt, extractor ejects cartridge.
 
-**Failure modes.** Loose lugs: if the locking seats are too large or the lugs too small, the bolt will not lock solidly and gas may leak. The rifle should be re-machined. Weak extractor: if the extractor does not grip the cartridge rim firmly, the cartridge will not extract. Misaligned chamber: if the chamber is not properly aligned with the barrel, cartridges will jam during loading.
+**Cost & labour.** 150-200 hours gunsmith labor. Materials: 5-8 denarii. Total: 40-60 denarii per rifle.
 
-**Cost & labour.** Personal hours: 150-200 hours of a skilled gunsmith per rifle. Materials: steel for bolt and carrier (2 kg), iron and wood. ESTIMATED total materials: 5-8 denarii. Capital: precision drilling and threading equipment (300+ denarii). Total cost per rifle: 40-60 denarii. Production rate: 1-2 rifles per month without precision lathes.
-
-**Danger.** Physical: Bolt-action rifles are as dangerous as any firearm when fired. Improper locking can cause a dangerous failure. Social: Bolt-action rifles are modern military weapons and under strict imperial control.
-
-**Confidence: MEDIUM-HIGH.** The technology is well documented from the 19th century. The precision required is achievable with Roman tools, but each rifle must be carefully machined and tested.
+**Confidence: MEDIUM-HIGH.** Well documented from 19th century. Precision required is achievable.
 
 ---
 
 ### machine_gun - Machine Gun
 
-**What it is / why you want it.** A firearm that uses the recoil energy (or expanding gas) from one shot to automatically eject the spent cartridge, reload the next cartridge, and fire again, all without operator intervention. A machine gun can fire hundreds of times per minute.
+**What it is / why you want it.** Uses recoil or gas to automatically cycle the bolt, ejecting cartridge and feeding next one. Fires 300-600 rounds per minute.
 
-**Why you would never guess this.** The critical invention is not multiple barrels or complex mechanisms. It is using the gun's own recoil or gas expansion to power the loading cycle. Every firearm recoils. A machine gun harnesses that recoil to push backward a bolt or slide, which extracts the spent cartridge, ejects it, feeds the next cartridge, and returns to fire. The operator merely holds the trigger down. This is elegant but requires precision: the bolt must travel exactly the right distance and return at exactly the right speed.
+**Why you would never guess this.** The invention is using the gun's own recoil to power the loading cycle. Bolt travels exactly the right distance and returns at exactly the right speed.
 
-**Prerequisites.** Bolt-action rifle (the basic mechanism), recoil spring, precision machining, metallic cartridge, feed system (magazine or belt).
+**Prerequisites.** Bolt-action rifle, recoil spring, precision machining, metallic cartridge, magazine feed system.
 
-**Roman-available inputs.** Steel (hardened and spring steel), iron, brass, wood.
+**Roman-available inputs.** Steel (hardened spring steel), iron, brass, wood.
 
 **Procedure.**
 
-1. Start with a bolt-action rifle mechanism (see bolt_action).
-2. Design a recoil spring - a coiled steel spring that will absorb the recoil energy and push the bolt back to battery (the firing position). The spring must be wound from spring steel and hardened to withstand repeated compression.
-3. Machine a feed system. The simplest is a magazine - a rectangular box that holds 10-30 cartridges stacked vertically or horizontally. The magazine should have a spring follower that pushes the cartridges upward.
-4. Attach the magazine to the receiver (the frame of the rifle) below the action.
-5. Machine or design a feed lever - a small pivoting arm that pushes the topmost cartridge from the magazine into the chamber.
-6. Connect the feed lever to the bolt. As the bolt cycles backward, the feed lever should push the next cartridge into the chamber.
-7. Attach a trigger sear that will hold the bolt at full cock and release it each time the feed lever resets. With the trigger held down, the sear will release the bolt repeatedly.
-8. Test the cycling without firing - operate the mechanism by hand 50+ times to ensure smooth operation.
+1. Start with bolt-action mechanism.
+2. Design recoil spring from coiled spring steel, hardened.
+3. Machine magazine box holding 10-30 cartridges with spring follower.
+4. Attach magazine to receiver below action.
+5. Machine feed lever pushing cartridge into chamber as bolt cycles.
+6. Attach trigger sear holding bolt at full cock, releasing repeatedly while trigger held down.
+7. Test cycling by hand 50+ times.
 
-For a gas-operated system (alternative method):
-1. Drill a small hole in the barrel near the muzzle.
-2. Attach a gas tube and piston. As the bullet passes the hole, expanding gas enters the tube and pushes the piston backward.
-3. The piston rod is attached to the bolt carrier. Gas pressure pushes the bolt backward to start the cycle.
-4. A regulator valve controls gas flow to prevent the gun from firing too fast or too slow.
+Alternative: Gas-operated - drill hole in barrel near muzzle, attach gas tube and piston, gas pushes bolt backward to start cycle.
 
-**How you know it worked.** Load the magazine with cartridges. Chamber a round (manually close the bolt on the first cartridge). Pull the trigger. The gun should fire, recoil, cycle the bolt backward (ejecting the spent cartridge), feed the next cartridge, and fire again. With the trigger held down, the gun should continue firing until the magazine is empty. Rate of fire should be 300-600 rounds per minute (MEASURED from military sources). If the gun fires once and stops, the trigger release mechanism is faulty.
+**Cost & labour.** 200-300 hours gunsmith labor. Materials: 10-15 denarii. Total: 50-80 denarii per gun.
 
-**Failure modes.** Weak recoil spring: if the spring is too weak, the bolt will not return to battery before firing again, and rounds will be short-stroked (underpowered). Too-stiff spring: the spring will cause the bolt to overshoot and not chamber the next round smoothly. Magazine failure: if the magazine feed is unreliable, cartridges will jam and the gun will stop. Firing pin breakage: the firing pin is struck 300-600 times per minute and can break after 10,000-50,000 rounds.
+**Danger.** Physical: Severe rapid injury. Social: Weapon of mass casualty under strict control.
 
-**Cost & labour.** Personal hours: 200-300 hours of a skilled gunsmith per gun. Materials: steel for springs and receiver, iron, brass, wood. ESTIMATED total materials: 10-15 denarii. Capital: precision machining equipment (500+ denarii), tools for spring-making (100 denarii). Total cost per gun: 50-80 denarii (ESTIMATED from manufacturing complexity).
-
-**Danger.** Physical: Machine guns fire hundreds of rounds per minute and can cause severe, rapid injury. A single trigger pull can empty an entire magazine into a person in seconds. Gun jamming can lead to dangerous situations. Social: A machine gun is a weapon of mass casualty. Its possession and operation are under strict imperial military control. Unauthorized manufacture is a serious crime.
-
-**Confidence: MEDIUM.** The basic mechanism is straightforward and well documented from the 19th century. The critical challenge is precision manufacturing of the spring, bolt, and feeding mechanism. Roman metalworking can achieve this, but it requires organized production and quality control.
+**Confidence: MEDIUM.** Basic mechanism straightforward but requires precision manufacturing.
 
 ---
 
@@ -331,137 +311,114 @@ For a gas-operated system (alternative method):
 
 ### smokeless_powder - Smokeless Powder
 
-**What it is / why you want it.** A propellant made from nitrocellulose (cellulose treated with nitric acid) that burns much faster and produces much less smoke than black powder. Smokeless powder achieves higher muzzle velocities and less barrel fouling.
+**What it is / why you want it.** Nitrocellulose burns far faster than black powder, achieving 1800-2400 m/s muzzle velocity versus 1000-1200 m/s. Far less smoke and barrel fouling.
 
-**Why you would never guess this.** Black powder (corned gunpowder) reaches its practical limit around 1000-1200 meters per second muzzle velocity. Beyond that, the reaction speed becomes a bottleneck. Smokeless powder is not mainly about smoke - the real advantage is far higher burning rate, which produces higher velocity (1800-2400 m/s) and far less fouling. The barrel stays clean for much longer, which means a magazine-fed rifle stays reliable. This is what makes modern rifle tactics possible.
+**Why you would never guess this.** Not mainly about smoke - the real advantage is higher burning rate and reliability in magazine-fed rifles.
 
-**Prerequisites.** Cellulose (cotton or wood), nitric acid (distilled from saltpetre and sulfur), advanced chemistry knowledge, industrial facilities.
+**Prerequisites.** Cellulose (cotton or wood), nitric acid, advanced chemistry, industrial facilities.
 
-**Roman-available inputs.** Saltpetre and sulfur (for nitric acid), cotton (imported from Egypt and India, expensive), wood pulp (abundant).
+**Roman-available inputs.** Saltpetre, sulfur, cotton (expensive import from India), wood pulp.
 
 **Procedure.**
 
-This is a simplified summary. The actual process is hazardous and requires multiple steps:
+1. Obtain cotton or wood pulp, cut into 1-2 cm pieces.
+2. Prepare dilute nitric acid (50-60% concentration) via saltpetre and sulfur distillation.
+3. Soak cotton/pulp in nitric acid 2-3 hours. Cellulose nitrates.
+4. Rinse with water multiple times until clear.
+5. Dry completely.
+6. Break into granules and sieve.
 
-1. Obtain cotton or wood pulp. Cut into small pieces (1-2 cm).
-2. Prepare dilute nitric acid (see percussion_cap entry for acid-making). For smokeless powder, use acid that is about 50-60% concentration.
-3. Soak the cotton or wood pulp in the dilute nitric acid for 2-3 hours at room temperature. The cellulose nitrates.
-4. Rinse the nitrated material with water multiple times until the water runs clear.
-5. Allow to dry completely.
-6. The dried nitrated cellulose is smokeless powder. It should be broken into granules and sieved.
+**How you know it worked.** Burns much faster than black powder with sharp report, white flame, minimal smoke, ash residue.
 
-**How you know it worked.** Ignite a small handful of smokeless powder with a spark or match. It should burn much faster than black powder, producing a sharp report and white flame without the heavy smoke. The residue should be nearly all ash.
+**Cost & labour.** 40-60 hours per 10 kg batch. Cotton import: 2 denarii per kg. ESTIMATED materials: 30-40 denarii per 10 kg.
 
-**Failure modes.** Under-nitration: if the cellulose is not nitrated enough, it burns like black powder. Over-nitration: if the cellulose is too highly nitrated, it becomes unstable and can self-detonate. Improper drying: if the powder is not fully dried, it is unstable and prone to decomposition.
+**Danger.** Physical: Prone to self-decomposition and spontaneous detonation. Social: Military propellant under strict control.
 
-**Cost & labour.** Personal hours: 40-60 hours per 10 kg batch. Materials: cotton (2 denarii per kg from import), sulfur (already counted in acid-making), materials for nitric acid. ESTIMATED total materials: 30-40 denarii per 10 kg. Capital: drying oven (100 denarii), storage containers (50 denarii).
-
-**Danger.** Physical: Smokeless powder is even more dangerous than black powder. It is prone to self-decomposition and can spontaneously detonate. Storage is hazardous. Contact with skin or eyes can cause burns. Inhalation of dust can cause lung damage. Social: Smokeless powder is a military propellant. Its manufacture is under strict imperial control.
-
-**Confidence: LOW.** The chemistry is well understood from the 19th century. But Roman-era feasibility is poor: the knowledge required is advanced, the materials are limited (cotton import from India is expensive), and the safety challenges are severe. This is a technology that becomes practical only after significant industrialization.
+**Confidence: LOW.** Chemistry well understood but Roman-era feasibility poor - knowledge and materials (cotton) are limiting factors.
 
 ---
 
 ### artillery_recoil - Artillery Recoil Mechanism
 
-**What it is / why you want it.** A system of springs, hydraulics, or other mechanisms that absorbs the recoil of a cannon, allowing it to remain sighted on target between shots. A gun with a recoil mechanism can fire many times faster than one that must be re-aimed after each shot.
+**What it is / why you want it.** Spring or hydraulic system absorbs recoil, keeps gun aimed on target. Multiplies rate of fire from 1-2 shots per minute to 6-10.
 
-**Why you would never guess this.** Early cannons recoil violently - a 6-pounder gun recoils 1-2 meters. To fire again, the crew must manhandle the gun back to position and re-aim. With a recoil mechanism (hydraulic cylinders in modern guns), the gun absorbs the recoil smoothly, stays aimed, and is ready to fire again in seconds. This single innovation multiplies the effective rate of fire from 1-2 shots per minute to 6-10 shots per minute. The French 75 mm gun of 1897 was revolutionary because it had a modern recoil mechanism that allowed rapid fire. This is more important than the gun itself.
+**Why you would never guess this.** Early cannons recoil 1-2 meters violently. Without recoil mechanism, crew must manhandle gun back and re-aim for each shot. With spring or hydraulic system, gun returns to battery automatically.
 
-**Prerequisites.** Bronze or steel cannon (existing), hydraulic systems or heavy spring systems, precision machining, understanding of recoil dynamics.
+**Prerequisites.** Cannon, spring steel or hydraulic system, precision machining.
 
-**Roman-available inputs.** Bronze or steel (for cannon), steel springs, brass or lead for hydraulic seals.
+**Roman-available inputs.** Steel springs, brass or steel for hydraulic cylinder, hydraulic fluid (oil or animal fat mixture).
 
-**Procedure.**
+**Procedure - Spring System:**
 
-A simple spring-based recoil mechanism (early version):
+1. Design gun carriage with barrel sliding mechanism, barrel slides 30-50 cm backward then forward.
+2. Mount heavy coil springs under barrel to absorb recoil.
+3. Design guide rail keeping barrel moving straight.
+4. Test by firing - barrel should recoil smoothly and return to original position.
 
-1. Design a gun carriage with a sliding mechanism. The barrel should slide backward 30-50 cm when the gun fires, then slide forward again.
-2. Mount heavy coil springs under the barrel (or wrapped around it) to absorb recoil energy. The springs should be wound from spring steel (see machine_gun for spring manufacturing).
-3. Design a guide rail on the carriage to keep the barrel moving straight backward and forward.
-4. Machine the springs to the right stiffness - they must absorb the recoil energy without bouncing the gun wildly.
-5. Test by firing the gun. After each shot, the barrel should recoil smoothly and return to battery (firing position) without manual adjustment.
+**Procedure - Hydraulic System:**
 
-A hydraulic recoil system (more complex):
+1. Design hydraulic cylinder 5-10 cm diameter, 50-100 cm long.
+2. Attach under barrel. Piston inside, piston rod attached to fixed carriage.
+3. Fill with oil. Small orifice allows fluid to pass slowly.
+4. As gun recoils, piston forces fluid through orifice, absorbing energy as heat.
+5. Recovery spring brings gun back to battery.
 
-1. Design a hydraulic cylinder - a brass or steel tube 5-10 cm in diameter, 50-100 cm long, with a piston inside.
-2. Attach the cylinder under the gun barrel. The cylinder rod is attached to the gun carriage (which is fixed).
-3. Fill the cylinder with a hydraulic fluid (oil, or in a pinch, a mixture of animal fat and turpentine). The piston slides inside, with a small orifice that allows fluid to pass slowly from one end to the other.
-4. As the gun recoils, the piston moves, forcing fluid through the orifice. The fluid resistance absorbs the recoil energy as heat.
-5. A recovery spring brings the gun back to battery.
+**Cost & labour.** 200-300 hours design and fitting. Materials: 50-70 denarii. Capital: precision equipment 500+ denarii. Total: 100-150 denarii per gun retrofit.
 
-**How you know it worked.** Fire the gun. After firing, the barrel should move backward smoothly about 30-50 cm without violent shock. The gun should stop moving and return to its original position, ready to fire again. Mark the target before firing, and the gun should still be pointed at the mark after recoil.
-
-**Failure modes.** Springs too soft: the gun recoils more than 50 cm and is hard to control. Springs too stiff: the gun does not recoil enough and excessive stress is placed on the gun structure. Hydraulic system leaks: the recoil mechanism is ineffective. The orifice size controls recoil speed - too small, and recoil is slow; too large, and recoil is sudden.
-
-**Cost & labour.** Personal hours: 200-300 hours to design and fit a recoil mechanism to an existing gun. Materials: spring steel (20 kg at 0.2 denarii per kg), brass or steel for hydraulic cylinder (10 kg at 0.2-0.5 denarii per kg), hydraulic fluid (10 liters of oil, 1 denarius per liter). ESTIMATED total materials: 50-70 denarii. Capital: precision drilling and boring equipment (500+ denarii). Total cost per gun: 100-150 denarii for retrofit.
-
-**Danger.** Physical: A recoil mechanism failure can cause the gun to recoil violently and strike crew members. Broken springs can snap and injure nearby personnel. Social: Artillery is a military weapon under strict state control.
-
-**Confidence: MEDIUM.** Spring-based recoil systems are feasible with Roman technology. Hydraulic systems require more precision and are closer to the edge of Roman capability. Both are well documented from the 19th century.
+**Confidence: MEDIUM.** Spring systems are feasible. Hydraulic systems require more precision.
 
 ---
 
 ### shrapnel_shell - Shrapnel Shell
 
-**What it is / why you want it.** An artillery shell filled with lead balls or iron fragments and a small powder charge. When the shell bursts in the air above a target, the powder charge scatters the fragments over a wide area. A shrapnel shell is far more effective against infantry than a solid shot.
+**What it is / why you want it.** Hollow iron sphere filled with lead balls or fragments, with timed fuse that bursts in air above target. Far more effective against infantry than solid shot.
 
-**Why you would never guess this.** Solid cannonballs are kinetic weapons - they kill by impact. Shrapnel shells kill with fragments. A solid cannonball kills one person and leaves a hole. A shrapnel shell bursts in the air and sends hundreds of fragments in all directions, killing dozens. The innovation is the fuse - a hollow tube of powder that burns at a known rate. By cutting the fuse to the right length, the shell bursts at the right moment. Without a reliable fuse, shells burst at random times or do not burst at all.
+**Why you would never guess this.** Solid cannonballs kill by impact - one person per shot. Shrapnel bursts scatter fragments killing dozens. The innovation is the reliable fuse - hollow tube of powder that burns at known rate.
 
-**Prerequisites.** Cannon (existing), shell casting, fuse technology, lead or iron fragments.
+**Prerequisites.** Cannon, shell casting, fuse technology, lead or iron.
 
-**Roman-available inputs.** Iron (from bloomery), lead (abundant), wood (for fuse), gunpowder.
+**Roman-available inputs.** Iron, lead, wood, gunpowder.
 
 **Procedure.**
 
-1. Cast a hollow iron sphere, 5-10 cm in diameter, with a hole (1 cm diameter) at the top. The wall thickness should be 1-2 cm. Heat iron to 1200+ degrees Celsius and pour into a mold. This requires a foundry.
-2. Create a fuse: a hollow tube of wood or paper, 5-10 cm long, filled with powder and sealed. The fuse should burn at a known rate - about 1 second per 3-4 cm of length. Test fuses by lighting and measuring burn time.
-3. Insert the fuse into the hole at the top of the shell and seal with lead solder or glue.
-4. Fill the shell with lead balls (1-2 cm diameter) or iron fragments. Pack them densely, leaving a small cavity at the top for the powder charge.
-5. Fill the cavity with loose gunpowder (about 30-50 grams, ESTIMATED).
-6. Seal the hole with a wooden plug, and then seal the plug with lead solder.
+1. Cast hollow iron sphere 5-10 cm diameter with 1 cm hole at top. Wall thickness 1-2 cm. Requires foundry at 1200+ degrees Celsius.
+2. Create fuse: hollow wood/paper tube 5-10 cm long, filled with powder, sealed. Burns at ~1 second per 3-4 cm.
+3. Insert fuse into hole, seal with lead solder.
+4. Fill with lead balls (1-2 cm) or iron fragments, densely packed, leaving cavity at top for 30-50 grams loose powder.
+5. Seal hole with wooden plug and lead solder.
 
-**How you know it worked.** Load the shell into a cannon. The shell should fire, travel through the air, and burst at the intended time (determined by the fuse length). The burst should scatter fragments over a radius of 20-30 meters.
+**How you know it worked.** Fire shell from cannon. Bursts at intended time. Scatters fragments over 20-30 meter radius.
 
-**Failure modes.** Fuse mismatch: if the fuse burns too fast, the shell bursts too soon (over the gun or too close). If the fuse burns too slow, it bursts after hitting the ground. Weak shell: if the iron is too thin or brittle, the shell cracks or fails to burst. Poor fragmentation: if the shell does not break into small enough pieces, the fragments are less effective.
+**Cost & labour.** 30-40 hours per shell. Iron: 0.5 denarii, lead: 0.9 denarii, fuse/powder: 0.7 denarii. Total: 2.5-3.5 denarii per shell.
 
-**Cost & labour.** Personal hours: 30-40 hours per shell (including casting, filling, fusing). Materials: iron (5 kg at 0.1 denarii per kg), lead for filling and sealing (3 kg at 0.3 denarii per kg), fuse materials (0.5 denarii), powder (0.2 denarii). ESTIMATED total: 2.5-3.5 denarii per shell. Capital: foundry equipment (1000+ denarii for a small operation).
+**Danger.** Physical: Highly explosive. Social: Military weapon sanctioned only in war.
 
-**Danger.** Physical: Shrapnel shells are explosives. Mishandled shells can detonate. A shell with a faulty fuse can detonate in the gun. Social: Shrapnel shells are weapons of war. Their use is sanctioned only in military context.
-
-**Confidence: MEDIUM-HIGH.** Shrapnel shells are well documented from the 18th century (Shrapnel himself invented them). The challenge is making reliable fuses and consistent shells.
+**Confidence: MEDIUM-HIGH.** Well documented from 18th century.
 
 ---
 
 ### indirect_fire - Indirect Fire Tactics
 
-**What it is / why you want it.** A method of firing artillery over obstacles or terrain, using ballistic calculations and spotters to direct fire at unseen targets. Indirect fire allows artillery to engage targets beyond the cannon's sight line.
+**What it is / why you want it.** Fire artillery over obstacles using ballistic calculations and spotters to direct fire at unseen targets.
 
-**Why you would never guess this.** Early cannons were used like large muskets - aimed directly at a visible target. Indirect fire requires two developments: first, the realization that artillery can fire over a ridge or hill and still hit targets on the far side; second, a method for calculating the trajectory and adjusting fire based on observations from spotters. This is a problem of mathematics and communication, not machinery.
+**Why you would never guess this.** Early cannons aimed directly at visible targets. Indirect fire requires mathematical tables for trajectories and spotters observing from high ground.
 
-**Prerequisites.** Artillery (cannon, see matchlock-era artillery), spotters (observers), signal methods (flags, mirrors, runners), mathematical tables for trajectories.
+**Prerequisites.** Cannon, spotters, signal methods, mathematical tables.
 
-**Roman-available inputs.** Paper or parchment (for tables), ink, flags or mirrors (for signaling).
+**Roman-available inputs.** Paper/parchment, ink, flags/mirrors.
 
 **Procedure.**
 
-1. Establish a gun line - position the artillery units in a chosen location, often behind a ridge or hill so that they cannot see their targets.
-2. Position observers (spotters) on high ground where they can see both the target and the gun line. Establish a signal system (flags, mirrors, runners).
-3. Estimate the range to the target using pacing, visual estimation, or (if available) surveying instruments.
-4. Use mathematical tables to determine the elevation angle for the gun to reach the estimated range. (These tables must be calculated in advance - see general_staff for how this is organized.)
-5. Set the gun's elevation to the calculated angle.
-6. Fire. The observer reports where the shot lands relative to the target.
-7. Adjust: if the shot was short, increase the charge or elevation; if long, decrease. Repeat until the target is hit.
+1. Position gun line behind ridge/hill, out of sight of target.
+2. Position spotters on high ground seeing target and gun line. Establish signal system.
+3. Estimate range using pacing or surveying.
+4. Use trajectory tables to determine elevation angle.
+5. Fire. Observer reports where shot lands relative to target.
+6. Adjust elevation and repeat until target is hit.
 
-**How you know it worked.** A battery of guns can engage a target 1-2 km away that is not visible from the gun position. With 5-10 shots, the guns should achieve hits on the target, even though the gunners cannot see it.
+**How you know it worked.** Battery can engage target 1-2 km away not visible from gun position. Hits achieved in 5-10 shots.
 
-**Failure modes.** Poor range estimation: if the initial range guess is far off, it takes many shots to zero in. Broken communication: if the spotters cannot signal the gun line, there is no feedback and shots are wasted. Mathematical error: if the trajectory tables are wrong, the guns will not hit at the calculated elevation.
-
-**Cost & labour.** Personal hours: negligible beyond the spotters (observers). Artisan hours: a mathematician or engineer must calculate the trajectory tables in advance. Materials: paper or parchment for tables, ink. Capital: surveying instruments if available (200+ denarii). ESTIMATED labor for calculating tables: 200+ hours for a skilled mathematician.
-
-**Danger.** Physical: Artillery is dangerous, even indirectly. Social: Indirect fire is a military tactic that requires coordination and discipline.
-
-**Confidence: HIGH.** The tactic is simple and has been used since at least the 16th century. The challenge is obtaining accurate range estimates and maintaining communication with spotters.
+**Confidence: HIGH.** Simple tactic, used since 16th century. Challenge is range estimation and communication.
 
 ---
 
@@ -469,190 +426,136 @@ A hydraulic recoil system (more complex):
 
 ### bastion_fort - Bastion Fort (Trace Italienne)
 
-**What it is / why you want it.** A fortress with angled bastions at the corners and along the walls, allowing defenders to see and cover the entire perimeter with enfilading (angled) fire from artillery and muskets. The bastion fort is the answer to the cannon - a fortress that cannot be breached by artillery.
+**What it is / why you want it.** Fortress with angled bastions allowing defenders to cover entire perimeter with enfilading artillery and musket fire. Cannot be breached by artillery.
 
-**Why you would never guess this.** Medieval castles have tall, straight walls. A cannon can knock down a straight wall from 200 meters away. A round tower has dead ground at its foot - the base cannot be covered by defenders on top. An angled bastion solves both problems: the bastion corners point outward at 45-60 degrees, and defenders in the bastions can shoot along the walls, preventing anyone from approaching. A cannon can breach a wall, but a bastion's wall is low and thick, and a breach in one corner does not breach the whole fort. The trace italienne is not a materials problem (medieval castles could be built of the same stone). It is a geometry problem.
+**Why you would never guess this.** Medieval castles have tall straight walls that cannons breach from 200 meters. Round towers have dead ground at base. Angled bastions pointing outward 45-60 degrees solve both: defenders in bastions shoot along walls, prevent approach. Thick low walls mean a breach does not compromise the fort. Pure geometry, not materials.
 
-**Prerequisites.** Understanding of artillery and enfilade, stone masonry, surveying.
+**Prerequisites.** Understanding of artillery enfilade, stone masonry, surveying.
 
-**Roman-available inputs.** Stone (abundant), timber (for scaffolding), lime and mortar (abundant), earth (for embankments).
+**Roman-available inputs.** Stone, timber (scaffolding), lime/mortar, earth (embankments).
 
 **Procedure.**
 
-1. Survey the fort location. Lay out a pentagon or hexagon (five or six sides) with angled bastions at each corner.
-2. Each bastion should be an isosceles triangle pointing outward, with an angle of about 60-90 degrees at the point and 45-60 degree angles at the base.
-3. The walls connecting bastions should be low (3-4 meters) and thick (5-10 meters). The angle of the wall should be perpendicular to the sight line of the adjacent bastion.
-4. Build embankments (earth walls) behind and around the fort to absorb cannon shot. The embankments should be 10+ meters thick to stop a cannonball.
-5. Build the stone walls on top of the embankments. The stone wall should be 1-2 meters thick at the top, tapering to the embankment base.
-6. Construct gun emplacements in the bastions - platforms for 4-6 cannons per bastion, with protective walls behind them.
-7. Construct covered way (protected trench with walls) around the outside of the fort for counterattack.
+1. Survey location. Lay out pentagon or hexagon with angled bastions at corners.
+2. Each bastion is isosceles triangle pointing outward, 60-90 degree point angle.
+3. Connecting walls low (3-4 meters) and thick (5-10 meters).
+4. Build embankments (10+ meters thick) to absorb cannon shot behind fort.
+5. Build stone walls on embankments (1-2 meters thick).
+6. Install 4-6 cannon per bastion platform.
+7. Build covered way around outside for counterattack.
 
-**How you know it worked.** A battery of cannons positioned 200 meters away should fire at the fort for hours without breaching the walls significantly. The fort's cannons should be able to fire down the walls in both directions, preventing anyone from approaching.
+**How you know it worked.** Cannon battery at 200 meters fires for hours without significant wall breach. Fort cannons cover walls in both directions.
 
-**Failure modes.** Poor bastion angles: if the bastions do not point outward sufficiently, defenders cannot cover the walls. Too-thin embankments: cannonballs penetrate and cause structural damage. Poor siting: if the fort is in a valley or at a disadvantage, artillery on higher ground can bombard it.
+**Cost & labour.** Thousands of cubic meters stone, timber, lime. Total: 10,000-50,000 denarii. 1-3 years.
 
-**Cost & labour.** Personal hours: hundreds to thousands for surveying, planning, and inspection. Artisan hours: thousands of hours of stone workers and earth workers. Materials: stone (thousands of cubic meters, cost ~0.1 denarii per kg = thousands of denarii), timber for scaffolding (hundreds of denarii), lime for mortar (hundreds of denarii). Capital: intensive. ESTIMATED total cost for a small fort: 10,000-50,000 denarii (MEASURED from 16th-century records). Calendar time: 1-3 years to build.
-
-**Danger.** Physical: Construction of tall walls and embankments is dangerous; workers can fall or be crushed by stone. Social: A bastion fort is a military installation of the highest importance. Its location and design are secrets.
-
-**Confidence: HIGH.** The bastion fort is well documented from the 16th century onward. The geometry is straightforward. Roman stone masonry and surveying can achieve this.
+**Confidence: HIGH.** Well documented from 16th century. Geometry straightforward. Roman capability adequate.
 
 ---
 
 ### trench_wire - Barbed Wire Entanglement
 
-**What it is / why you want it.** Wire strung between posts in a twisted pattern to create a barrier that is difficult to cross on foot and painful to attempt. Barbed wire placed in front of a trench makes a frontal assault extremely costly.
+**What it is / why you want it.** Wire with sharp barbs strung between posts. Slows charging soldiers, tears them, exposes to fire longer.
 
-**Why you would never guess this.** Barbed wire is simply wire twisted at intervals to create sharp barbs. It is a trivial innovation but extraordinarily effective. A soldier charging through barbed wire is slowed, torn, and exposed to fire for longer. A front line protected by barbed wire can hold against much larger forces.
+**Why you would never guess this.** Barbs wrapped every 10 cm on core wire. Trivial innovation but extraordinarily effective.
 
-**Prerequisites.** Wire drawing (wire mills or hand-drawing), barbs (sharpened steel wire or thorns), posts (wood or iron), twisting mechanism.
+**Prerequisites.** Wire drawing, barbs (sharpened wire), posts, twisting mechanism.
 
-**Roman-available inputs.** Iron wire (from wire mills or hand-drawn from iron rod), steel (for barbs), wood (for posts), nails or hooks.
+**Roman-available inputs.** Iron wire (2-3 mm diameter), steel barbs, wood posts.
 
 **Procedure.**
 
-1. Draw iron wire 2-3 mm in diameter from iron rods using a wire mill (see powder_mill for mechanical principles) or hand-drawing through a hardened steel die. Produce 1000+ meters per battery position.
-2. Create barbs by wrapping sharp wire around a twisted core wire. A barb is created every 10 cm: a 5 cm segment of sharp wire is wrapped tightly around the core wire, twisted, and the ends are cut sharp.
-3. Stretch the barbed wire between wooden posts set 2-3 meters apart, forming a zigzag pattern. The wire should be 50-100 cm high.
-4. Place additional horizontal wire behind the first line to prevent breakthrough.
+1. Draw iron wire from iron rods using wire mill or hand-drawing.
+2. Wrap sharp wire around core wire every 10 cm to create barbs.
+3. Stretch barbed wire between posts 2-3 meters apart, zigzag pattern, 50-100 cm high.
+4. Place additional horizontal wire behind for backup.
 
-**How you know it worked.** A person attempting to cross barbed wire entanglement at speed is cut and caught. A slow advance through the barrier is possible but extremely time-consuming (5-10 minutes per 10 meters) and exposes the advancing person to fire.
+**How you know it worked.** Person crossing at speed is cut and caught. Slow advance takes 5-10 minutes per 10 meters, exposing to fire.
 
-**Failure modes.** Wire breaking: rust or overloading can break wire strands. Dull barbs: if barbs are not sharp, they are less effective. Posts rotting: wood posts can rot and the entanglement fails.
+**Cost & labour.** 10-20 hours per position. Iron wire: 0.2 denarii, steel barbs: 0.1 denarii, posts: 0.5 denarii. Total: 1 denarius per battery.
 
-**Cost & labour.** Personal hours: 10-20 hours per battery position (installing wire and posts). Materials: iron wire (2 kg per battery, 0.2 denarii), steel for barbs (0.5 kg, 0.1 denarii), wood for posts (0.5 denarii). ESTIMATED total: 1 denarius per battery. Capital: wire mill or drawing dies (200+ denarii).
-
-**Danger.** Physical: Barbed wire can cause deep cuts and infection. Social: Barbed wire is a military defensive measure.
-
-**Confidence: HIGH.** Barbed wire is straightforward technology, well documented from the 19th century. All materials are Roman-available.
+**Confidence: HIGH.** Well documented from 19th century.
 
 ---
 
 ### ironclad - Ironclad Warship
 
-**What it is / why you want it.** A wooden warship covered with armor plating of iron or steel. The ironclad is immune to cannon fire from wooden ships and is therefore far more valuable in naval warfare.
+**What it is / why you want it.** Wooden warship covered with iron plating. Immune to cannonballs from wooden ships.
 
-**Why you would never guess this.** Wooden ships are damaged by cannonballs. An ironclad ship covered with 5-10 cm of iron plate will bounce off cannonballs or dent them without penetrating. The ship is heavier and slower but unkillable by traditional wooden warship tactics. The ironclad changes naval warfare from tactics to technology.
+**Why you would never guess this.** 5-10 cm iron plate bounces or dents cannonballs without penetrating. Changes naval warfare from tactics to technology.
 
-**Prerequisites.** Large wooden ship frame (existing), iron or steel plating, waterproofing, riveting or welding.
+**Prerequisites.** Large wooden ship, iron/steel plating, waterproofing, riveting.
 
-**Roman-available inputs.** Wood (abundant, for ship frame), iron (abundant, for plating), steel (for critical parts), copper or tin (for sheathing the hull underwater to prevent rot and barnacles).
+**Roman-available inputs.** Wood, iron, steel, copper/tin for underwater sheathing.
 
 **Procedure.**
 
-1. Build or obtain a large wooden ship (100+ tons, with substantial beam).
-2. Cover the hull with iron or steel plate, 5-10 cm thick, riveted or welded to the wooden frame. Iron plate is easier than steel (steel is harder to weld and more brittle).
-3. Leave openings for gun ports - rectangular openings in the armor for cannon. Each gun port should have a protective shutter.
-4. Sheathe the underwater hull with copper or tin plate to prevent rot and marine growth.
-5. Place the gun deck inside the armor, protected from cannon fire.
+1. Obtain large wooden ship 100+ tons.
+2. Cover hull with iron/steel plate 5-10 cm thick, riveted to frame.
+3. Leave gun ports with protective shutters.
+4. Sheathe underwater hull with copper/tin.
+5. Place gun deck inside armor.
 
-**How you know it worked.** The ship floats with the weight of the armor plating. Fire a cannon at the armored hull from 100 meters away. The cannonball should not penetrate, leaving only a dent in the iron plate.
+**How you know it worked.** Ship floats with armor plating. Cannonball doesn't penetrate at 100 meters - only dents.
 
-**Failure modes.** Armor separation: if the rivets are not driven properly or the armor is not fitted closely to the hull, cannonballs can penetrate between plates. Poor waterproofing: water enters at armor seams and the ship can sink. The weight of armor plating affects ship speed and maneuverability - an ironclad is slower than a wooden ship.
+**Cost & labour.** 500+ hours installation. 1000+ artisan hours. Iron plating 50-100 tons (5000-10000 denarii). Total: 8000-15000 denarii. 6-12 months.
 
-**Cost & labour.** Personal hours: 500+ hours for armor installation. Artisan hours: 1000+ hours of iron workers and carpenters. Materials: iron plating (50-100 tons, cost ~0.1 denarii per kg = 5000-10000 denarii), rivets (1000+ rivets, 100+ denarii). Capital: foundry equipment for large plates (1000+ denarii). ESTIMATED total cost: 8000-15000 denarii for an ironclad conversion. Calendar time: 6-12 months.
-
-**Danger.** Physical: An ironclad ship is extremely heavy and can be difficult to handle. The weight can cause structural damage if not properly supported. Social: An ironclad warship is a vessel of war that changes naval power significantly.
-
-**Confidence: MEDIUM-HIGH.** The technology is well documented from the 19th century. Large iron plates can be wrought in Roman foundries. The challenge is managing the weight and ensuring proper waterproofing.
+**Confidence: MEDIUM-HIGH.** Well documented from 19th century.
 
 ---
 
 ### dreadnought - Dreadnought Battleship
 
-**What it is / why you want it.** A battleship with an all-big-gun armament (all cannons of the same large caliber) and steam-powered propulsion, making it far more powerful than previous ships.
+**What it is / why you want it.** All-big-gun battleship with uniform cannon caliber and steam turbine propulsion. Far more powerful than mixed-armament ships.
 
-**Why you would never guess this.** Previous battleships carried cannons of many sizes. A ship might have 6 large cannons and 20 small cannons. The Dreadnought (launched 1906) carried 10 large cannons, all of the same size. This allowed coordinated gunfire - all guns firing the same ammunition, with the same ballistics. It also made the ship simpler and cheaper to operate. The steam turbine allowed higher speed (20+ knots) and better maneuverability.
+**Why you would never guess this.** Previous ships had 6 large and 20 small cannons. All-big-gun allows coordinated gunfire with same ammunition and ballistics.
 
-**Prerequisites.** Ironclad ship (the hull), large-caliber artillery (long-range cannons firing 10+ km), steam engine and turbine, all-steel hull construction.
+**Prerequisites.** Ironclad ship, large-caliber artillery (30-50 cm), steam engine and turbine, all-steel hull, fire control system.
 
-**Roman-available inputs.** Steel (from bloomery, carbon enriched - challenging but possible), iron, copper, wood (for interior).
+**Roman-available inputs.** Steel (from bloomery, carbon enriched), iron, copper.
 
-**Procedure.**
-
-The Dreadnought is a flagship development technology, requiring multiple prerequisites:
-
-1. Develop 30-50 cm caliber cannon (see artillery entries).
-2. Build an all-steel hull (not wooden frame with armor plate). The hull must be 3-5 cm of steel, welded or riveted.
-3. Install a steam engine and turbine to drive propellers. (This requires advanced engineering - see steam engine entry in a foundational module.)
-4. Install a fire control system - a range finder and fire control computer to calculate hits at long range (10+ km). This is a mechanical computer that solves ballistics equations.
-
-**How you know it worked.** The ship achieves a speed of 20+ knots and carries 10 cannons of uniform caliber. At 10 km distance, the ship's fire control system should allow coordinated salvos to bracket and hit targets.
-
-**Failure modes.** The all-steel hull requires advanced metallurgy. Poor welds or brittle steel can cause structural failure. The fire control system requires mechanical precision and mathematical skill. Steam turbines are prone to vibration and bearing wear at high speed.
-
-**Cost & labour.** Personal hours: thousands. Artisan hours: tens of thousands of iron workers, engineers, and machine operators. Materials: steel (500+ tons, 50000+ denarii), copper for wiring and fittings (5000+ denarii). Capital: shipyard with heavy tools (10000+ denarii). ESTIMATED total cost: 100,000-200,000 denarii. Calendar time: 2-3 years.
-
-**Danger.** Physical: A battleship is an enormous machine with hundreds of crew members in close quarters, operating under dangerous conditions (high pressure steam, large guns). Social: A dreadnought battleship is the ultimate symbol of naval power and national strength. Its construction marks a commitment to military dominance.
-
-**Confidence: LOW.** The Dreadnought is a 20th-century design requiring multiple advanced technologies (all-steel construction, steam turbines, fire control systems). Roman-era feasibility is possible in principle but requires a level of industrial organization and technical skill that Rome has not yet developed. This should not be attempted until after steel production, steam engines, and mechanical computers are mature.
+**Confidence: LOW.** Requires 20th-century advanced technologies (all-steel hulls, steam turbines, fire control computers). Roman-era feasibility marginal. Not attempted until steel production, steam engines, and mechanical computers are mature.
 
 ---
 
-### torpedo - Torpedo (Self-Propelled)
+### torpedo - Torpedo
 
-**What it is / why you want it.** A self-propelled underwater projectile carrying an explosive charge, launched from a ship or submarine to strike enemy ships. The torpedo is the greatest threat to any battleship.
+**What it is / why you want it.** Self-propelled underwater projectile with explosive charge. Single torpedo sinks a battleship.
 
-**Why you would never guess this.** A torpedo is a miniature warship - it has a steam engine, a boiler, propeller, and steering mechanism, all packed into a 50 cm diameter, 5+ meter long iron tube. Early torpedoes (Whitehead, 1870s) were mechanical marvels of complexity. A single torpedo can sink a battleship costing millions of denarii and months of construction time.
+**Why you would never guess this.** Miniature warship with steam engine, boiler, propeller, and steering, all in 50 cm diameter tube.
 
-**Prerequisites.** Steam engine (miniaturized), bronze or steel tube, explosive charge (TNT or similar), mechanical steering, propeller.
+**Prerequisites.** Steam engine (miniaturized), steel/bronze tube, explosive charge (TNT), mechanical steering.
 
-**Roman-available inputs.** Steel or bronze (for tube and machinery), steam engine (see steam entry), explosive (see shrapnel entry for high explosive).
+**Roman-available inputs.** Steel/bronze, steam engine, explosive.
 
-**Procedure.**
-
-This is a simplified description. A working torpedo requires precision manufacturing:
-
-1. Forge or cast a steel or bronze tube, 50 cm diameter, 5+ meters long, with conical front and blunt rear.
-2. Install a small steam engine inside the tube: a boiler fired by fuel, connected to a steam engine with a small propeller at the rear.
-3. Fill the forward section with explosive charge (50-100 kg of TNT, ESTIMATED for a large warhead).
-4. Install a mechanical fuse - a contact mechanism that detonates the explosive when the torpedo strikes a ship's hull.
-5. Install a rudder and depth control mechanism to steer the torpedo underwater.
-6. Test the torpedo by launching it from a tube on a ship, steering it toward a target ship, and observing the strike.
-
-**How you know it worked.** When a torpedo strikes a ship's hull, the impact fuse should detonate the explosive charge, tearing a hole in the ship and sinking it.
-
-**Failure modes.** Engine failure: the steam engine can fail, and the torpedo sinks. Depth control failure: the torpedo runs too deep or too shallow and misses the target. Fuse failure: the torpedo does not detonate on impact. Steering failure: the rudder does not respond and the torpedo runs in a circle.
-
-**Cost & labour.** Personal hours: 500+ hours for a skilled engineer. Materials: steel or bronze (500 kg, 100-200 denarii), steam engine machinery (500+ denarii in materials), explosive charge (100+ denarii), fuel (50+ denarii). ESTIMATED total: 800-1000 denarii per torpedo. Capital: precision machine shop (2000+ denarii). Torpedoes are expensive and built in small numbers.
-
-**Danger.** Physical: A steam-powered torpedo can malfunction catastrophically. Boiler explosion can destroy the torpedo and injure handlers. The explosive warhead is extremely dangerous. Social: A torpedo is a naval weapon of devastating power. Its use changes naval warfare fundamentally.
-
-**Confidence: MEDIUM.** Torpedo technology is well documented from the 19th century. The mechanics are sound but require precision engineering and steam engine technology. Roman-era feasibility depends on having mature steam engine technology.
+**Confidence: MEDIUM.** Well documented from 19th century. Requires precision engineering and mature steam technology.
 
 ---
 
 ### submarine - Submarine
 
-**What it is / why you want it.** A naval vessel that operates underwater, avoiding detection and attack from surface ships, and capable of firing torpedoes from beneath the surface. The submarine is the ultimate naval weapon - it cannot be reliably detected or defended against with available technology.
+**What it is / why you want it.** Vessel that operates underwater, fires torpedoes from below surface. Ultimate naval weapon - undetectable defense.
 
-**Why you would never guess this.** Early submarines (17th-18th century) were experimental oddities. The problem is air - the submarine must carry air for the crew or manufacture it somehow. The solution is to make air from stored chemicals (soda lime can absorb CO2) or to surface briefly to breathe. The submarine that carries compressed air or oxygen can stay submerged for hours. When equipped with torpedoes, it is a powerful weapon.
+**Why you would never guess this.** Must carry compressed air or manufacture it (soda lime absorbs CO2). Submerged hours when equipped with torpedoes.
 
-**Prerequisites.** Submarine hull (pressure-resistant steel), ballast tanks (for diving and surfacing), air supply (compressed air or oxygen), torpedo launch system, steering and propulsion (steam engine or electric motor - steam is problematic underwater).
+**Prerequisites.** Pressure-resistant steel hull, ballast tanks, air supply (compressed/oxygen), torpedo tubes, propulsion.
 
-**Roman-available inputs.** Steel (for pressure hull), copper (for wiring and fittings), wood (interior fittings), mechanical pumps (for ballast).
+**Roman-available inputs.** Steel, copper, wood, mechanical pumps.
 
-**Procedure.**
+**Confidence: LOW.** Feasible in principle but requires advanced technologies (steel pressure hulls, compressed air systems, precision engineering). All pieces exist but integration requires engineering discipline Rome hasn't achieved.
 
-This is a simplified description:
+---
 
-1. Design a pressure hull - a steel cylinder with hemispherical ends, 3-4 meters in diameter, 10-15 meters long.
-2. Make the hull 1-2 cm of steel, thick enough to withstand water pressure at 50-100 meters depth (~5-10 atmospheres pressure).
-3. Install ballast tanks - large water-filled compartments that can be flooded or pumped out to change buoyancy.
-4. Install an air purification system: mechanical scrapers or soda lime to absorb CO2, and a reserve of compressed air for crew.
-5. Install a propulsion system. Steam engines are problematic underwater (smoke is visible). A compressed air engine is better: compressed air drives a piston engine that turns a propeller. A reserve of compressed air is stored in tanks for 2-4 hours of travel.
-6. Install torpedo tubes at the bow, with mechanisms to open and fire torpedoes underwater.
-7. Install a small conning tower for observation when surfaced.
+### tank - Tank
 
-**How you know it worked.** The submarine can dive to 50 meters depth and remain submerged for 2-4 hours, traveling at 5-10 knots. It can fire a torpedo at a target ship from underwater.
+**What it is / why you want it.** Armored vehicle with tracked propulsion, cannon, and machine guns. Breaks trench deadlock by crossing barbed wire and trenches.
 
-**Failure modes.** Hull rupture: if the hull is not thick enough or is cracked, water floods in and the submarine sinks. Air supply failure: if the air purification system fails, CO2 builds up and the crew loses consciousness. Ballast malfunction: if ballast pumps fail, the submarine cannot surface or dive. Torpedo malfunction: if a torpedo detonates in the tube, the submarine is destroyed.
+**Why you would never guess this.** World War I trenches were defensible against infantry and artillery. A mobile fortified platform that crosses trenches, climbs embankments, and fires while moving defeats static defense.
 
-**Cost & labour.** Personal hours: 1000+ hours for a skilled engineer. Artisan hours: 5000+ hours of steel workers and machinists. Materials: steel (50+ tons, 5000+ denarii), copper (500 kg, 250+ denarii), mechanical components (1000+ denarii). Capital: machine shop (2000+ denarii). ESTIMATED total: 10,000-15,000 denarii per submarine. Only the largest states can afford to build submarines.
+**Prerequisites.** Internal combustion engine (diesel or gasoline), tracked propulsion system, steel armor plate, cannon, machine guns.
 
-**Danger.** Physical: A submarine crew faces extreme danger - crush depth can be fatal, air supply failures are deadly, and mechanical failures are catastrophic. Social: A submarine is a military weapon that changes naval strategy. Its stealth and lethality are unprecedented.
+**Roman-available inputs.** Steel (armor), iron (tracks), gasoline/diesel fuel.
 
-**Confidence: LOW.** Submarine technology is feasible in principle but requires multiple advanced technologies (steel pressure hulls, compressed air systems, mechanical engineering at high precision). Roman-era feasibility is marginal - all the pieces exist, but integrating them into a functional submarine requires engineering discipline and quality control that Rome has not yet developed.
+**Confidence: LOW.** Requires internal combustion engines and tracked propulsion technology. Not feasible in Roman era - requires 20th-century automotive engineering.
 
 ---
 
@@ -660,90 +563,60 @@ This is a simplified description:
 
 ### observation_balloon - Observation Balloon
 
-**What it is / why you want it.** A large tethered balloon carrying observers (and later, cameras) to see beyond the horizon and observe enemy movements. An observation balloon extends the range of reconnaissance from a few km to 10+ km.
+**What it is / why you want it.** Tethered balloon carrying observers to see 20-30 km beyond horizon. Extends reconnaissance range dramatically.
 
-**Why you would never guess this.** A balloon rises into the air because hot air is less dense than cold air. A large linen balloon filled with hot air from a fire can carry two observers to 1000+ meters altitude in less than an hour. From that height, an observer can see 20-30 km in clear weather. The balloon is tethered with a rope to prevent drifting. This is simple but revolutionizes reconnaissance.
+**Why you would never guess this.** Hot air balloon rises because air is less dense than cold air. Large linen balloon reaches 1000+ meters in an hour from charcoal fire beneath it.
 
-**Prerequisites.** Large linen construction, rope, wicker basket, fire/heating source (or hydrogen - see below), mathematics for balloon calculations.
+**Prerequisites.** Large linen construction, rope, wicker basket, fire or hydrogen.
 
-**Roman-available inputs.** Linen (abundant, from Egypt), wool or hemp rope (abundant), wicker for basket, fire from charcoal, or hydrogen gas.
+**Roman-available inputs.** Linen (from Egypt), hemp/wool rope, wicker, charcoal, or hydrogen gas.
 
-**Procedure.**
+**Procedure - Hot Air:**
 
-Version 1: Hot air balloon
+1. Construct linen envelope 20+ meters diameter (sphere). Seal seams with glue/resin.
+2. Construct wicker basket 1-2 meters diameter, 1 meter tall.
+3. Attach basket with 50+ ropes evenly around balloon equator.
+4. Position charcoal fire brazier under balloon opening.
+5. Attach 100-300 meter tether rope.
+6. Release - rises to 500-1000+ meters.
 
-1. Construct a large linen envelope, 20+ meters in diameter (a sphere). Seams must be sealed with glue or resin to prevent air leakage.
-2. Construct a wicker basket (1-2 meters diameter, 1 meter tall) to carry observers and equipment.
-3. Attach the basket to the envelope with 50+ ropes of hemp or wool, spaced evenly around the balloon's equator.
-4. Position an open fire (brazier of charcoal or wood) under the balloon's opening to heat air inside.
-5. Once enough hot air collects, the balloon becomes buoyant. Attach a long rope (100-300 meters) to the basket for tethering.
-6. Release the balloon. It will rise to 500-1000+ meters, depending on the temperature and balloon volume.
+**Procedure - Hydrogen:**
 
-Version 2: Hydrogen balloon
+1. Generate hydrogen by reacting iron/zinc with dilute acid.
+2. Fill linen envelope with hydrogen.
+3. Stays aloft for hours without heating.
 
-1. Generate hydrogen gas by reacting iron or zinc with dilute sulfuric acid or hydrochloric acid. The gas is collected in a bladder or tube.
-2. Fill a large linen envelope with hydrogen (much lighter than hot air).
-3. Hydrogen is invisible, colorless, and odorless - far better than hot air for sustained flight.
-4. The hydrogen balloon can stay aloft for hours without any heating.
-
-**How you know it worked.** The balloon rises and remains stable at a chosen altitude, visible to observers at ground level. Observers in the basket can see far beyond the horizon and spot enemy movements at 10+ km distance.
-
-**Failure modes.** Envelope leakage: linen can rot or tear, losing buoyancy. Fire safety: a hot air balloon is a fire hazard if the fire extends into the envelope. Rope breakage: a strong wind can snap the tether rope. Hydrogen explosion: hydrogen is explosible when mixed with air (especially if ignited by sparks or flame).
-
-**Cost & labour.** Personal hours: 200-300 hours for linen work. Artisan hours: 300-400 hours of linen workers and rope makers. Materials: linen (100-200 meters of cloth, 50-100 denarii), hemp rope (500 meters, 50 denarii), wicker (10 denarii), wood for fire support (5 denarii). ESTIMATED total: 150-200 denarii per balloon. Capital: construction tools (50 denarii). Balloons are typically built once and reused.
-
-**Danger.** Physical: Observers in a balloon can fall from great height. Fire in the balloon is catastrophic. Wind can toss the balloon violently. Social: An observation balloon reveals the positions of armies and fortifications. Its use is an act of war.
-
-**Confidence: HIGH.** Hot air balloons are well documented from the 18th century (Montgolfier brothers, 1783). Hydrogen balloons are also 18th-century technology. Both are feasible with Roman materials and knowledge.
+**Confidence: HIGH.** Well documented from 18th century (Montgolfier brothers, 1783). Feasible with Roman materials.
 
 ---
 
 ### aerial_reconnaissance - Aerial Reconnaissance (Photography)
 
-**What it is / why you want it.** Mounting a camera in an observation balloon or aircraft to photograph enemy positions, fortifications, and movements. Photographs provide a permanent record that can be analyzed in detail.
+**What it is / why you want it.** Mount camera on observation balloon to photograph enemy positions. Permanent record for analysis.
 
-**Why you would never guess this.** Photography requires chemistry: a light-sensitive compound (silver halide salts) on paper or film, exposed to light to create a negative, then developed and printed. The invention of photography (1820s-1830s) created a new form of reconnaissance. A camera suspended from a balloon can photograph a 50-100 km area in an afternoon. Photographs are evidence - they can be studied, measured, and analyzed to extract intelligence.
+**Why you would never guess this.** Photography uses light-sensitive silver halide salts on paper. Camera from balloon photographs 50-100 km area in afternoon.
 
-**Prerequisites.** Observation balloon (above), camera (developed optics and mechanics), silver halide chemistry, photographic paper/film.
+**Prerequisites.** Observation balloon, camera (optics and mechanics), silver halide chemistry, photographic paper.
 
-**Roman-available inputs.** Silver (from mines, abundant), salt (sodium chloride, abundant), glass (for lens - Roman glassblowing is excellent), paper (if Chinese paper is available through trade, otherwise papyrus from Egypt).
+**Roman-available inputs.** Silver (abundant), salt (sodium chloride), glass (lens - Roman glassblowing excellent), papyrus.
 
-**Procedure.**
+**Cost & labour.** 50-100 hours per mission. 30 denarii per photograph. 10-20 photos per mission.
 
-This is simplified - actual photography requires careful chemistry:
-
-1. Coat photographic paper or film with silver halide salt (silver bromide or silver chloride). This is done by dissolving silver nitrate and potassium bromide in water, coating paper with the solution, and drying.
-2. Mount the coated paper/film in a camera with a glass lens.
-3. Expose to light for a precise time (1-30 seconds, depending on light and aperture).
-4. Develop the exposed paper in a chemical bath (gallic acid or similar reducing agent) to darken the silver salt where it was exposed.
-5. Fix the image by soaking in sodium thiosulfate (hypo) to remove unaffected silver salts.
-6. The negative image can be printed onto another sheet of photographic paper to create a positive image.
-
-**How you know it worked.** A photograph clearly shows buildings, roads, fortifications, and troop positions. The image is permanent and can be studied for weeks.
-
-**Failure modes.** Over-exposure: too much light creates a blank image. Under-exposure: too little light creates a very faint image. Uneven exposure: clouds passing over during exposure create areas of varying brightness. Chemical contamination: impure chemicals create foggy or corrupted images. Motion blur: the balloon moving in wind or exposure vibration creates blurred images.
-
-**Cost & labour.** Personal hours: 50-100 hours per balloon mission (preparing camera, developing photographs). Artisan hours: chemical preparation (varies). Materials: silver nitrate (5 grams per photo, 5 denarii per gram = 25 denarii per photo from high cost of silver), potassium bromide (1 gram, 0.5 denarii), paper or film (1 denarius), developing chemicals (2 denarii). ESTIMATED total: 30 denarii per photograph. A single balloon reconnaissance mission can create 10-20 photographs.
-
-**Danger.** Physical: Silver nitrate and other chemicals are corrosive and toxic. Handling requires care. Social: Aerial reconnaissance photographs can reveal state secrets and military positions. Their use is strictly controlled.
-
-**Confidence: MEDIUM.** Photography is well documented from the 19th century. The chemistry is sound. Roman-era feasibility is challenged by the cost of silver and the difficulty of obtaining quality glass lenses, but both are possible.
+**Confidence: MEDIUM.** Photography well documented from 19th century. Roman-era feasibility challenged by silver cost and lens quality.
 
 ---
 
-### radar_defence - Radar Defense (Radio Detection)
+### radar_defence - Radar Defense
 
-**What it is / why you want it.** An electronic system using radio waves to detect objects at a distance (aircraft, ships, etc.) and calculate their distance and direction. Radar provides warning of attack and allows anti-aircraft guns to engage targets invisible to the naked eye.
+**What it is / why you want it.** Electronic system using radio waves to detect distant aircraft or ships, calculate distance and direction.
 
-**Why you would never guess this.** Radar depends on three developments that are not available until the 20th century: radio transmission and reception (19th century), vacuum tubes as amplifiers (20th century), and the understanding of radio waves and their reflection. A radar system transmits a radio pulse and listens for the echo bouncing off a distant object. The time delay between transmission and echo tells the distance. The direction of the antenna tells the bearing. This is a technology far beyond Rome's reach in 100 AD.
+**Why you would never guess this.** Radar depends on radio transmission (19th century), vacuum tubes as amplifiers (20th century), and understanding of radio wave reflection.
 
-**Prerequisites.** Radio transmission and reception technology (see radio in a foundational module), vacuum tubes (20th-century electronics), understanding of electromagnetic waves.
+**Prerequisites.** Radio technology, vacuum tubes, electromagnetic wave theory.
 
-**Roman-available inputs.** None directly available. This is a 20th-century technology.
+**Roman-available inputs.** None directly.
 
-**Procedure.** Cannot be fully specified for Roman implementation. Radar is not practically achievable in 100 AD.
-
-**Confidence: LOW.** Radar requires advanced electronics and understanding of electromagnetic theory far beyond Rome. Do not attempt to implement this technology in the early imperial period.
+**Confidence: LOW.** Requires 20th-century advanced electronics and electromagnetic theory far beyond Rome. Do not attempt in early imperial period.
 
 ---
 
@@ -821,105 +694,81 @@ A single modern strategic nuclear warhead (100 kilotons) is 7 times the power of
 
 ### general_staff - General Staff Organization
 
-**What it is / why you want it.** An organization of trained officers dedicated to planning military operations, managing logistics, calculating trajectories and ballistics, and coordinating the movement of armies. The general staff turns military science into military practice.
+**What it is / why you want it.** Organization of trained officers planning operations, managing logistics, calculating ballistics, coordinating armies.
 
-**Why you would never guess this.** A general can plan an attack, but implementing it requires detailed coordination. When do 50,000 soldiers move? Who carries the ammunition? What roads do they use? When do they eat? A general staff solves these problems by creating a hierarchical organization of officers, each responsible for one aspect (supply, movement, fire support, etc.). The general staff also maintains permanent sections for specialized knowledge (ballistics calculations, map-making, fortification design, logistics modeling).
+**Why you would never guess this.** Implementation requires detailed coordination - when do 50,000 move, who carries ammunition, what routes, when do they eat? General staff organizes hierarchically with specialized sections.
 
-**Prerequisites.** Trained officer corps, mathematical education, map-making, communications systems.
+**Prerequisites.** Trained officer corps, mathematical education, map-making, communications.
 
-**Roman-available inputs.** Educated officers (existing - Rome has a military tradition), mathematicians and engineers, papyrus or parchment for records.
+**Roman-available inputs.** Officers, mathematicians, engineers, papyrus/parchment.
 
 **Procedure.**
 
-1. Establish a general staff section for each major responsibility:
-   - Operations (planning and directing battle)
-   - Intelligence (information about enemy forces and terrain)
-   - Supply (ammunition, food, replacement troops)
-   - Engineering (fortifications, siege equipment, roads)
-   - Communications (messengers, signals, coordination)
-   - Artillery (ballistics, gun positions, fire control)
-   - Medical (field hospitals, evacuation)
+1. Establish sections: Operations, Intelligence, Supply, Engineering, Communications, Artillery, Medical.
+2. Assign 10-30 trained officers per section.
+3. Establish permanent headquarters with records and maps.
+4. Develop standard procedures for movements, supply, evacuation, fire support.
+5. Conduct regular training exercises.
+6. Maintain detailed records.
 
-2. Assign trained officers to each section. Each section should have 10-30 officers, depending on the army size.
+**How you know it worked.** Army moves 50 km, attacks fortified position on schedule, with supplies and coordinated fire support.
 
-3. Establish a permanent headquarters with records, maps, communication center, and meeting spaces.
+**Cost & labour.** Minimal ongoing. 500-1000 hours annual planning/training. Materials: papyrus/parchment, ink (150+ denarii annually). Capital: headquarters building (1000+ denarii), equipment (300+ denarii).
 
-4. Develop standard procedures for unit movements, supply delivery, casualty evacuation, and artillery support.
-
-5. Conduct regular training exercises to practice coordination under field conditions.
-
-6. Maintain detailed records of all orders, supply inventories, and personnel.
-
-**How you know it worked.** When an army receives orders to move 50 km and attack a fortified position, the movement happens on schedule, supplies are available, and fire support is coordinated. An army with a functioning general staff can execute complex maneuvers and coordinate forces across multiple units. Without it, armies tend toward chaos.
-
-**Failure modes.** Poor communication: if orders do not reach units, or reports do not return to headquarters, coordination fails. Incompetent officers: if the officers assigned to the staff are not educated or trained, decisions are poor. Insufficient resources: if supplies do not arrive or ammunition is not available, the army cannot function. Inadequate training: if the army has not practiced coordinated maneuvers, it will fail under pressure.
-
-**Cost & labour.** Personal hours: minimal ongoing (the staff is permanent). Artisan hours: 500-1000 hours per year for planning, training, and record-keeping. Materials: papyrus/parchment (500+ sheets per year, 100+ denarii), ink, seals, and official items (50 denarii per year). Capital: headquarters building (1000+ denarii), communication equipment (300+ denarii). ESTIMATED annual cost: 500-1000 denarii for a small general staff.
-
-**Danger.** Physical: none directly. Social: A competent general staff makes an army far more effective and therefore more powerful. A poorly organized general staff can lose battles and waste soldiers' lives.
-
-**Confidence: HIGH.** The general staff is well documented from Prussian military practice (18th-19th centuries). The principles are straightforward. Rome's existing military tradition and officer corps can support this.
+**Confidence: HIGH.** Well documented from Prussian military practice. Rome's military tradition supports this.
 
 ---
 
 ### logistics_railway - Military Railway Logistics
 
-**What it is / why you want it.** A railway system built specifically for military logistics, moving supplies, ammunition, and replacement troops rapidly and in bulk. A military railway can move 500+ tons per day reliably, replacing thousands of soldiers carrying supplies.
+**What it is / why you want it.** Railway system for military logistics. Moves 500+ tons per day, replacing thousands carrying supplies by wagon.
 
-**Why you would never guess this.** A railway is a logistics network. It is not primarily about tactics or weapons - it is about getting supplies and soldiers to the place they are needed. A railway connected to a front-line fortress can supply 10,000 soldiers with food, ammunition, and replacement troops every day. Without the railway, supply wagons must be driven slowly over roads, and many soldiers are tied up in logistics. The railway multiplies the number of soldiers who can actually fight.
+**Why you would never guess this.** Railway is logistics network, not tactics. Connects rear to front-line fortress. Without railway, soldiers wasted on supply transport. Railway multiplies fighters available.
 
-**Prerequisites.** Railroad technology (see steam_engine and railway_technology in foundational modules), track construction, rolling stock (cars and locomotives), coordination with military supply.
+**Prerequisites.** Railroad technology, track construction, rolling stock (cars and locomotives).
 
-**Roman-available inputs.** Iron (for track and locomotives), steel (for track), coal (for fuel), wood (for sleepers and cars).
+**Roman-available inputs.** Iron (track and locomotives), steel (track), coal (fuel), wood (sleepers and cars).
 
 **Procedure.**
 
-1. Identify a supply route from the rear areas to the front-line fortress or army position.
-2. Lay track along the route. The track should be 1-1.5 meters wide (standard gauge for later railways). Use iron rails spiked to wooden sleepers (ties).
-3. Build sidings near the front line for loading/unloading supplies. The sidings should have warehouses for supply storage.
-4. Allocate rolling stock: 50-100 freight cars and 5-10 locomotives for a forward supply operation.
-5. Establish a supply schedule: trains run daily or every other day, carrying 50-100 tons per train.
-6. Coordinate with the quartermaster to ensure supplies are loaded and unloaded on schedule.
+1. Identify supply route from rear to front-line.
+2. Lay 1-1.5 meter gauge track with iron rails spiked to wooden sleepers.
+3. Build sidings and warehouses near front.
+4. Allocate 50-100 freight cars, 5-10 locomotives.
+5. Schedule daily/every-other-day trains carrying 50-100 tons.
+6. Coordinate with quartermaster.
 
-**How you know it worked.** A fortress that formerly required 1000 supply wagons (carrying 500 tons per day at 5 tons per wagon, requiring 20 km round trip per day) now requires only 10-20 railway cars running 10-20 km per day. The same 500 tons is delivered in a fraction of the time with 1/50th the transport animals and labor.
+**How you know it worked.** Fortress previously needing 1000 supply wagons (5 tons each, 20 km daily) now needs 10-20 railway cars, 1/50th the animals and labor.
 
-**Failure modes.** Track damage: if the railway is damaged by enemy action, supplies stop. Locomotive breakdown: if locomotives fail, trains stop. Insufficient capacity: if the railway cannot handle the supply volume, shortages result. Enemy sabotage: the railway is vulnerable to attack.
+**Cost & labour.** 500+ hours planning. 5000+ hours track laying. Iron rails: 50+ denarii, sleepers: 1000+ denarii. Capital: locomotives (1000+ per unit), buildings (1000+ denarii). ESTIMATED 100 km railway: 10,000-20,000 denarii. 6-12 months construction.
 
-**Cost & labour.** Personal hours: 500+ hours for planning and coordination. Artisan hours: 5000+ hours for track laying and maintenance. Materials: iron rails (500+ tons, 50+ denarii), wooden sleepers (2000+ pieces, 1000+ denarii), rolling stock (500+ denarii). Capital: locomotives (1000+ denarii per unit), depot buildings (1000+ denarii). ESTIMATED total for 100 km railway: 10,000-20,000 denarii. Calendar time: 6-12 months for construction.
-
-**Danger.** Physical: Railway construction and operation are dangerous. Social: A military railway is a strategic asset. Protecting it from enemy attack is a major concern.
-
-**Confidence: MEDIUM.** Railways are well documented from the 19th century. The military logistics are straightforward. Roman-era feasibility is good if railways have already been developed.
+**Confidence: MEDIUM.** Well documented from 19th century. Good Roman-era feasibility if railways developed.
 
 ---
 
 ### cryptanalysis - Cryptanalysis (Code-Breaking)
 
-**What it is / why you want it.** The science of decrypting enemy messages without knowing the key. Cryptanalysis can reveal enemy plans, dispositions, and supply routes.
+**What it is / why you want it.** Science of decrypting enemy messages without the key. Reveals enemy plans, dispositions, supply routes.
 
-**Why you would never guess this.** If the enemy sends messages in a cipher (an encrypted code), can you read them without the key? Yes - by analyzing patterns in the ciphertext and exploiting weaknesses in the cipher system. If the enemy uses the same cipher for many messages, statistical analysis can reveal the key. This is cryptanalysis - a combination of mathematics, linguistics, and pattern recognition.
+**Why you would never guess this.** Analyze patterns in ciphertext. Letter frequency analysis (E, T, A more common than Z, Q, X) and common word patterns reveal keys.
 
-**Prerequisites.** Mathematical education, knowledge of cipher systems, training in pattern analysis.
+**Prerequisites.** Mathematical education, cipher knowledge, pattern analysis.
 
-**Roman-available inputs.** Mathematicians (existing), papyrus or parchment for records, ink.
+**Roman-available inputs.** Mathematicians, papyrus/parchment, ink.
 
 **Procedure.**
 
-1. Collect many encrypted enemy messages (100+).
-2. Analyze the frequency of letters in the ciphertext. In most European languages, certain letters (E, T, A) appear far more frequently than others (Z, Q, X). If the cipher is a simple substitution (A->B, B->C, etc.), letter frequency analysis can reveal the key.
-3. Look for patterns: common words like "THE" or "AND" appear repeatedly. If the cipher preserves word lengths, these patterns are visible in the ciphertext.
-4. Try different keys (brute force if the key space is small, statistical methods if large).
-5. Once a partial key is recovered, use linguistic knowledge to guess the remaining letters (humans can often read text with missing letters: "TH_ QUICK BR_WN FOX").
+1. Collect 100+ encrypted enemy messages.
+2. Analyze letter frequency. In European languages, E, T, A appear far more than Z, Q, X.
+3. Look for patterns (THE, AND appear repeatedly).
+4. Try different keys (brute force or statistical methods).
+5. Recover partial key, use linguistics to guess remaining letters.
 
-**How you know it worked.** A message encrypted with a simple cipher (Caesar cipher, substitution cipher) can be decrypted in hours or days with cryptanalysis. More complex ciphers (Vigenère, Enigma-type rotor machines) require more work but are still breakable if enough messages are available.
+**How you know it worked.** Simple cipher (Caesar, substitution) decrypted in hours/days. Complex ciphers (Vigenère) need more work but breakable with enough messages.
 
-**Failure modes.** Strong cipher: if the cipher is very strong (random one-time pad), cryptanalysis is impossible. Insufficient messages: if only a few messages are available, statistical analysis is not reliable. Linguistic barriers: if the plaintext language is unfamiliar, pattern recognition is difficult.
+**Cost & labour.** 100-500 hours per message set. Trained cryptanalysts rare. Workshop capital: 100+ denarii.
 
-**Cost & labour.** Personal hours: 100-500 hours per message set (depending on cipher strength). Artisan hours: trained cryptanalysts are rare - must be specially trained mathematicians. Materials: papyrus, ink. Capital: cryptanalysis workshop (100+ denarii). ESTIMATED cost per broken cipher: highly variable, from hours to months depending on strength.
-
-**Danger.** Physical: none. Social: If the enemy learns that their cipher is broken, they change it. Cryptanalysis is most effective when kept secret.
-
-**Confidence: HIGH.** Cryptanalysis is well documented from World War II and earlier. The mathematics is sound. Simple ciphers are vulnerable. Rome's mathematical tradition can support this.
+**Confidence: HIGH.** Well documented from WWII and earlier. Rome's mathematical tradition supports this.
 
 ---
 
