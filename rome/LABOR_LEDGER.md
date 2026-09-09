@@ -16,11 +16,11 @@ hours, total, forever.
 
 | | |
 |---|---|
-| Median years the founder survives after arrival | **28** |
-| 10th / 90th percentile | 18 / 40 years |
-| Median founder-hours actually delivered in a lifetime | **35,414** |
-| Founder-hours the full tree demands | 80,520 |
-| Those hours as a share of the tree's total founder-hour demand | **44%** |
+| Median years the founder survives after arrival | **29** |
+| 10th / 90th percentile | 18 / 39 years |
+| Median founder-hours actually delivered in a lifetime | **39,132** |
+| Founder-hours the full tree demands | 215,600 |
+| Those hours as a share of the tree's total founder-hour demand | **18%** |
 
 ### What the founder personally lives to see finished
 
@@ -70,11 +70,11 @@ things you should assume you will NOT live to see:
 
 ## The single most important number in this project
 
-**44%.** Your entire working life delivers less than half the founder-hours the
-tree demands. And that is the flattering way to put it, because those hours are
+**18%.** Your entire working life delivers under a fifth of the founder-hours
+the tree demands. And that is the flattering way to put it, because those hours are
 spread across retries and abandoned attempts, not neatly banked against finished
 nodes. You are not the builder of a transistor. You are the first link in a
-relay of roughly eight to ten generations of directors, and the only things you
+relay of many generations of directors, and the only things you
 can hand forward are trained people and written words.
 
 Which is why the corpus is 6,000 hours, about 17% of everything you will ever
@@ -111,7 +111,10 @@ was made.
 | `03_SOCIAL_POLITICS.md` | author | |
 | `knowledge/00_NONOBVIOUS_TRICKS.md` | author | The flagship file. |
 | `knowledge/_TEMPLATE.md` | author | Including the anachronism trap list given to every agent. |
-| `data/tech_tree.json` (128 nodes) | author | Written by hand, not generated. The costs are the part most likely to be wrong. |
+| `data/tech_tree.json` core spine (128 nodes) | author | Written by hand. |
+| `data/branches/` 15 domain files (1,048 nodes) | 15 Haiku subagents in parallel | Written to a strict CONTRACT and a fixed VOCABULARY of allowed prerequisite ids, then merged, validated and repaired by the author's tooling. |
+| `data/branches/00_capabilities.json`, `01_materials.json` | author | The capability rungs and material layer, which are the load-bearing correction to the first version. |
+| `sim/treetool.py` (merge, repair, judge) | author | The per-technology audit. |
 | `data/prices.json` | author | |
 | `sim/simulator.py` | author | |
 | `sim/strategies/*.json` | author | |

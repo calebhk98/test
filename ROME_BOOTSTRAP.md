@@ -90,7 +90,7 @@ reviewer against a random sample of 70 nodes.
 | [`rome/01_WORLD_STATE_100AD.md`](rome/01_WORLD_STATE_100AD.md) | What Rome has, what it lacks, where every material comes from, what everything costs. |
 | [`rome/02_STRATEGY.md`](rome/02_STRATEGY.md) | The master plan, the six phases, and the simulator evidence that it beats the alternatives. |
 | [`rome/03_SOCIAL_POLITICS.md`](rome/03_SOCIAL_POLITICS.md) | Patronage, the law, what the State will fund, what gets you executed. |
-| [`rome/04_ECONOMICS.md`](rome/04_ECONOMICS.md) | Labour, materials, transport, and where the 5.1 million denarii goes. |
+| [`rome/04_ECONOMICS.md`](rome/04_ECONOMICS.md) | Labour, materials, transport, and where the 15.4 million denarii goes. |
 | [`rome/LABOR_LEDGER.md`](rome/LABOR_LEDGER.md) | Your personal hours, and the author's. |
 | [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** Eleven modules of actual recipes with masses, temperatures and failure modes, plus a generated index linking all 128 tree nodes to the entry that documents them. |
 | [`rome/knowledge/00_NONOBVIOUS_TRICKS.md`](rome/knowledge/00_NONOBVIOUS_TRICKS.md) | **Start here in the library.** The 33 specific physical tricks that make everything else buildable. |

@@ -15,89 +15,74 @@ anchored to silver through ratios implied by the Edict of Diocletian, which is
 
 ---
 
-## 1. The whole programme, by category
+## 1. The whole programme, by domain
 
-| Category | Nodes | Your hours | Total cost (den) | Revenue at maturity (den/yr) |
+1,176 nodes rolled up. Regenerate with `python3 rome/sim/simulator.py costs`.
+
+| Domain | Nodes | Your hours | Total cost (den) | Revenue at maturity (den/yr) |
 |---|---:|---:|---:|---:|
-| transport | 1 | 800 | 1,393,410 | 60,000 |
-| electrical | 15 | 7,720 | 988,108 | 237,700 |
-| metallurgy | 18 | 8,280 | 566,696 | 199,000 |
-| chemistry | 16 | 8,900 | 484,925 | 97,900 |
-| semiconductor | 10 | 8,250 | 443,949 | 70,000 |
-| institution | 6 | 6,750 | 235,797 | 5,300 |
-| power | 5 | 3,150 | 205,877 | 44,800 |
-| social | 5 | 2,550 | 59,200 | 20,000 |
-| glass_optics | 10 | 4,420 | 52,784 | 22,000 |
-| precision | 7 | 4,500 | 51,790 | 18,000 |
-| information | 6 | 9,050 | 50,207 | 7,400 |
-| instruments | 7 | 3,700 | 44,406 | 7,000 |
-| physics | 5 | 4,600 | 20,610 | 3,000 |
-| mathematics | 6 | 2,800 | 11,780 | 900 |
+| miscellaneous (a long tail of 60+ small categories) | 140 | 20,040 | 401,131 | 32,320 |
+| energy and power | 107 | 22,280 | 446,293 | 223,200 |
+| optics and instruments | 88 | 17,750 | 157,868 | 49,180 |
+| precision | 70 | 10,750 | 88,354 | 24,390 |
+| materials | 70 | 2,910 | 154,000 | 0 |
+| transport | 69 | 10,120 | 10,056,014 | 81,960 |
+| household | 58 | 4,740 | 16,406 | 14,785 |
+| textiles | 56 | 5,260 | 119,318 | 75,630 |
+| ships and navigation | 55 | 7,300 | 127,616 | 10,400 |
+| metallurgy and mining | 54 | 14,100 | 648,952 | 200,250 |
+| aviation | 46 | 7,070 | 16,323 | 7,530 |
+| chemicals | 45 | 12,770 | 557,133 | 193,400 |
+| food and agriculture | 42 | 6,630 | 31,690 | 7,050 |
+| media and information | 37 | 14,120 | 114,110 | 21,600 |
+| communications | 34 | 3,750 | 159,806 | 53,450 |
+| capabilities | 33 | 4,950 | 211,800 | 0 |
+| medicine | 33 | 3,990 | 32,614 | 20,550 |
+| knowledge and method | 28 | 11,930 | 38,686 | 3,900 |
+| computing | 27 | 4,220 | 213,256 | 5,300 |
+| institutions | 23 | 11,200 | 312,527 | 27,700 |
+| electrical | 21 | 8,530 | 1,058,837 | 239,700 |
+| civil engineering | 21 | 2,240 | 9,768 | 400 |
+| semiconductors | 10 | 8,250 | 443,949 | 70,000 |
+| unobtainable | 7 | 0 | 0 | 0 |
 | military | 2 | 700 | 10,724 | 6,000 |
-| medicine | 3 | 1,350 | 9,060 | 4,000 |
-| agriculture | 2 | 650 | 4,146 | 3,900 |
-| foundation | 4 | 2,350 | 2,824 | 0 |
-| **TOTAL** | **128** | **80,520** | **4,636,293** | **806,900** |
-
-### The twelve most expensive nodes
-
-| Node | Labour | Materials | Capital | TOTAL |
-|---|---:|---:|---:|---:|
-| `railway` | 13,410 | 1,290,000 | 90,000 | **1,393,410** |
-| `power_grid` | 18,000 | 544,000 | 150,000 | **712,000** |
-| `electrolysis_industrial` | 5,400 | 245,200 | 70,000 | **320,600** |
-| `zinc_industry_scale` | 4,165 | 143,000 | 50,000 | **197,165** |
-| `endowment_land` | 80 | 150,000 | 8,000 | **158,080** |
-| `steam_high_pressure` | 5,670 | 89,000 | 26,000 | **120,670** |
-| `silicon_path` | 10,050 | 31,045 | 60,000 | **101,095** |
-| `telegraph_electric` | 3,795 | 52,000 | 35,000 | **90,795** |
-| `bessemer_openhearth` | 4,165 | 42,800 | 40,000 | **86,965** |
-| `arc_furnace_ferroalloys` | 2,680 | 15,300 | 60,000 | **77,980** |
-| `zone_refining` | 7,500 | 28,500 | 35,000 | **71,000** |
-| `charcoal_industrial` | 900 | 53,200 | 3,500 | **57,600** |
-
-### Best return on capital: revenue per denarius of setup cost
-
-| Node | Revenue/yr | Setup cost | Payback |
-|---|---:|---:|---:|
-| `glass_bead_microscope` | 700 | 306 | 0.4 yr |
-| `sanitation_antisepsis` | 1,400 | 760 | 0.5 yr |
-| `telescope` | 2,000 | 1,094 | 0.5 yr |
-| `world_map` | 500 | 290 | 0.6 yr |
-| `lens_grinding` | 3,200 | 1,891 | 0.6 yr |
-| `camera_obscura` | 600 | 376 | 0.6 yr |
-| `drawplate_wire` | 800 | 638 | 0.8 yr |
-| `distillation_alcohol` | 4,200 | 3,458 | 0.8 yr |
-| `radio` | 25,000 | 21,152 | 0.8 yr |
-| `horse_collar` | 900 | 826 | 0.9 yr |
-| `crucible_steel` | 11,000 | 11,388 | 1.0 yr |
-| `finery_puddling` | 9,000 | 9,530 | 1.1 yr |
-
-### Where your own hours go
-
-| Node | Your hours | %% of a 72,000-hour life |
-|---|---:|---:|
-| `corpus_written` | 6,000 | 8.3% |
-| `academy_network` | 2,500 | 3.5% |
-| `school_founded` | 2,000 | 2.8% |
-| `quantum_solidstate_theory` | 1,800 | 2.5% |
-| `arrival_orientation` | 1,200 | 1.7% |
-| `zone_refining` | 1,200 | 1.7% |
-| `atomic_theory` | 1,000 | 1.4% |
-| `single_crystal` | 1,000 | 1.4% |
-| `silicon_path` | 1,000 | 1.4% |
-| `freedman_staff` | 900 | 1.2% |
-| `patron_imperial` | 900 | 1.2% |
-| `printing_press` | 900 | 1.2% |
+| **TOTAL** | **1176** | **215,600** | **15,427,174** | **1,368,695** |
 
 ---
 
+## 1a. What the totals mean
+
+| | |
+|---|---|
+| Total capital to build everything | **15.4 million denarii**, about 62 senatorial fortunes |
+| Total founder-hours demanded | **215,600**, about **three whole working lifetimes** |
+| Founder-hours available in one life | 72,000 |
+| Total revenue at full maturity | 1.37 million denarii a year |
+
+**One node, the railway, costs 10 million of the 15.4 million.** That is not an
+error, it is the honest shape of the thing: a demonstration line of about 4 km
+needs 400 tonnes of rail steel, and a network needs an order of magnitude more.
+Heavy transport infrastructure dwarfs everything else in the tree, which is why
+its calendar floor is a generation and why it cannot be done by an institute, only
+by a state.
+
+Against that, look at `household`: 58 technologies, 16,406 denarii for the whole
+domain, and it contains the chimney, the water trap, the Argand lamp, hard soap
+and the washing machine. **The domain with the most human benefit per denarius is
+the cheapest one in the table.** If you only ever finish one branch, finish that
+one.
+
+
 ## 2. What these tables actually say
 
-**Read the first table again.** `information` is the single largest consumer of
-*your own hours* in the entire programme, 9,050 of them, and one of the smallest
-consumers of *money*, about 50,207 denarii for the whole branch. Meanwhile
-`transport` (the railway) costs 1,393,410 denarii and 800 of your hours.
+**Read the table again and compare two rows.** `media and information` takes
+14,120 of your own hours, among the very highest in the tree, for 114,110
+denarii, which is under one percent of the total. `transport` takes 10,120 of
+your hours for **10.06 million denarii**, two thirds of everything.
+
+The same asymmetry runs through the whole table. `knowledge and method` is 28
+nodes, 11,930 of your hours, and 38,686 denarii. `electrical` is 21 nodes, 8,530
+of your hours, and 1.06 million denarii.
 
 That asymmetry is the whole strategic geometry of this problem:
 
@@ -113,7 +98,7 @@ That asymmetry is the whole strategic geometry of this problem:
 ## 3. The total is unaffordable, and that is the point
 
 The full tree costs about **4.6 million denarii**, which is roughly 19 senatorial
-fortunes, and **80,520 of your hours** against the roughly 72,000 you will ever have.
+fortunes, and **215,600 of your hours** against the 72,000 you will ever have.
 
 Neither number is meant to be paid by you. They are paid by:
 

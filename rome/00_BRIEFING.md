@@ -21,8 +21,9 @@ and nobody else does.
 
 **2. Your own hours are the scarce resource, not money.** You have about 2,400
 useful hours a year and about thirty years, so roughly 72,000 hours, total,
-forever. The full tree in `data/tech_tree.json` demands 80,520. You are short
-before you start. Every hour you spend doing something a hired man could do is
+forever. The full tree in `data/tech_tree.json` demands **215,600**, about three whole
+working lifetimes. You are short by a factor of three before you start, and no
+amount of money closes that gap. Only other people do. Every hour you spend doing something a hired man could do is
 an hour stolen from the only things nobody else can do: **teaching, writing, and
 deciding what to build next.**
 
