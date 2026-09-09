@@ -301,28 +301,28 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### dynamo_motor - Faraday disc, ring and drum armatures, self-excitation
 
-**What it is / why you want it.** A rotating machine that turns mechanical motion (water wheel, animal capstan) into large, sustained electric current, or runs backwards as a motor turning current back into mechanical work. This is what finally makes electricity a bulk industrial power source rather than a battery-limited curiosity.
+**What it is / why you want it.** A rotating machine turning mechanical motion (water wheel, animal capstan) into large, sustained current, or running backwards as a motor. This finally makes electricity a bulk industrial power source, not a battery-limited curiosity.
 
-**Why you would never guess this.** Self-excitation is the trap: you need a magnetic field to generate current, and the obvious way to get a strong field is an electromagnet, but an electromagnet needs current you do not yet have. Nobody guesses that the iron core's own faint residual magnetism (left over from any prior exposure to a magnetic field, however weak) is enough to start a tiny trickle of current, which strengthens the field coil, which strengthens the current, in a self-reinforcing climb up to full output within seconds of starting rotation. Years get wasted building ever-bigger permanent-magnet machines because this is not obvious.
+**Why you would never guess this.** Self-excitation is the trap: you need a field to generate current, and the obvious way to get a strong field is an electromagnet, which needs current you do not have. Nobody guesses that the iron core's own faint residual magnetism is enough to start a tiny trickle, which strengthens the field coil, which strengthens the current, climbing to full output within seconds. Years get wasted building ever-bigger permanent-magnet machines because this is not obvious.
 
-**Prerequisites.** `electromagnet`, `wire_insulation`, `galvanometer` (for setup verification), a water wheel or capstan for mechanical drive.
+**Prerequisites.** `electromagnet`, `wire_insulation`, `galvanometer` (setup verification), a water wheel or capstan for drive.
 
-**Roman-available inputs.** Soft iron for cores, insulated copper wire, wooden or bronze axle and bearings, existing Roman water-mill or animal-capstan infrastructure for the drive.
+**Roman-available inputs.** Soft iron for cores, insulated copper wire, wooden/bronze axle and bearings, existing Roman water-mill or capstan infrastructure.
 
 **Procedure.**
-1. Faraday disc (simplest, weakest): a copper disc spun rapidly between the poles of a fixed magnet, brushes contacting the rim and the axle draw off a low-voltage, high-current DC output. Useful as a proof of principle, poor for real power.
-2. Ring armature (Pacinotti-type): an iron ring wound with many coil sections around its circumference, rotating inside fixed field-coil poles; a commutator, a segmented copper ring the coil sections connect to in sequence, with fixed brushes riding on it, converts the internally-alternating current to steady DC at the output leads.
-3. Drum armature (Gramme-type): the practical successor, coils wound lengthwise around an iron drum rather than a ring, mechanically stronger and more efficient, otherwise the same commutator principle.
-4. Self-excitation: wind the field-coil poles with the same wire the armature will eventually feed, connect them in the circuit (shunt, across the output, is simplest to build first) rather than powering them from a separate battery. Spin the armature; the iron core's small residual magnetism (present in any iron that has ever been near another magnet, including the Earth) induces a tiny starting current, which flows into the field coil, strengthening the field, which increases the induced current, climbing rapidly to full rated output within seconds. No permanent magnet and no external battery are needed once the machine has run once.
-5. Run as motor: apply external current to the same machine's field and armature windings, the same electromagnetic force that generated current in reverse now produces torque, turning the shaft.
+1. Faraday disc (simplest, weakest): a copper disc spun between fixed magnet poles, brushes on rim and axle draw off low-voltage, high-current DC. Proof of principle only.
+2. Ring armature (Pacinotti-type): an iron ring wound with coil sections, rotating inside fixed field poles; a commutator (segmented copper ring, fixed brushes) converts the internally-alternating current to steady DC output.
+3. Drum armature (Gramme-type): coils wound lengthwise on an iron drum instead of a ring, stronger and more efficient, same commutator principle.
+4. Self-excitation: wind the field-coil poles with the same wire the armature will feed, connect in circuit (shunt, across the output, simplest) instead of a separate battery. Spin the armature; residual core magnetism induces a tiny starting current, which strengthens the field, which increases the induced current, climbing rapidly to full rated output within seconds. No permanent magnet, no external battery, needed once it has run once.
+5. Run as motor: apply external current to the same windings, the same electromagnetic force in reverse produces torque.
 
-**How you know it worked.** Spin the armature by hand or light drive: output leads produce a small but rapidly climbing deflection on the galvanometer over the first several seconds, a spark appears at the brushes as current builds, and a slack field-coil connection (breaking self-excitation) makes output collapse back to near zero, confirming the field really is self-sustaining, not from a hidden battery.
+**How you know it worked.** Spin the armature by hand: output climbs on the galvanometer over the first several seconds, a spark appears at the brushes as current builds; a slack field-coil connection collapses output back to near zero, confirming the field is self-sustaining.
 
-**Failure modes.** Field coil wound backwards relative to the armature's rotation direction actively cancels the residual field instead of reinforcing it, output stays near zero indefinitely, reverse either the winding direction or the rotation and try again. Commutator segments not properly insulated from each other short the armature windings together.
+**Failure modes.** Field coil wound backwards relative to rotation cancels the residual field instead of reinforcing it, output stays near zero, reverse the winding or rotation. Uninsulated commutator segments short the armature windings.
 
-**Cost & labour.** ESTIMATED. A working drum-armature dynamo is a multi-week project for a small instrument-making team, several skilled artisan-weeks in winding alone; the mechanical drive (water wheel, gearing) is standard Roman engineering, no new skill needed there.
+**Cost & labour.** ESTIMATED. A working drum-armature dynamo is a multi-week project, several artisan-weeks in winding; the mechanical drive is standard Roman engineering.
 
-**Danger.** A running dynamo's brushes and commutator can spark and burn fingers; larger machines can deliver a dangerous shock and enough current to cause real burns at points of poor contact. Spinning parts are a mechanical hazard, guard the drive belt and axle.
+**Danger.** Brushes and commutator spark and burn fingers; larger machines shock dangerously and burn at poor contacts. Spinning parts are a mechanical hazard, guard the belt and axle.
 
 **Confidence: HIGH** - self-excitation is a well documented, historically real discovery (Wilde, Siemens, Wheatstone, all 1866-67, converging independently once dynamos existed), the physics is textbook and every material is Roman-available once the earlier module entries exist.
 
@@ -330,28 +330,28 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### transformer_ac - AC generation, transformers, lamination, three phase
 
-**What it is / why you want it.** Alternating current lets you step voltage up for long-distance transmission (lower current for the same power, so much lower resistive loss in the wire) and step it back down for safe local use, something a DC-only system cannot do simply.
+**What it is / why you want it.** AC lets you step voltage up for long-distance transmission (lower current for the same power, less resistive line loss) and step it back down for safe local use, something a DC-only system cannot do simply.
 
-**Why you would never guess this.** That a transformer moves power between two entirely unconnected wire coils, with no direct electrical contact at all, purely through a changing magnetic field in a shared iron core, looks impossible until you have already accepted electromagnetic induction from `dynamo_motor`.
+**Why you would never guess this.** A transformer moving power between two unconnected coils, with no electrical contact, purely through a changing field in a shared iron core, looks impossible until you have already accepted induction from `dynamo_motor`.
 
 **Prerequisites.** `dynamo_motor`, `wire_insulation`.
 
-**Roman-available inputs.** Thin iron sheet (rolled and cut for lamination), insulated wire, varnish or paper for inter-sheet insulation.
+**Roman-available inputs.** Thin iron sheet (rolled, cut for lamination), insulated wire, varnish or paper for inter-sheet insulation.
 
 **Procedure.**
-1. Build an alternator: same as the `dynamo_motor` drum armature, but with slip rings (continuous copper rings, not a segmented commutator) at the brushes, this passes the coil's naturally alternating current straight out rather than rectifying it.
-2. Transformer: wind a primary coil and a separate secondary coil on a shared closed iron core (a rectangular or ring-shaped loop of thin iron). The ratio of turns sets the voltage ratio directly (turns_primary / turns_secondary = volts_primary / volts_secondary), power in equals power out minus small losses, so a step-up in voltage gives a matching step-down in current, and vice versa.
-3. Laminated core: build the core from thin iron sheets, roughly 0.3-0.5 mm, each coated with a thin varnish or separated by paper, stacked rather than cast solid. A solid iron core lets large circulating "eddy" currents flow inside the metal itself, wasting power as heat; thin insulated sheets each carry only a small local eddy current, cutting this loss drastically. This is not optional at any serious power level, a solid-core transformer can grow uncomfortably hot doing nothing useful.
-4. Three-phase: build three separate windings on the alternator, spaced 120 degrees apart around the rotor, giving three overlapping AC outputs. This smooths total power delivery (the three phases never all dip to zero together), uses the conductor material more efficiently for a given power, and, later, lets an AC motor start itself from the rotating field the three phases naturally produce, without extra starting machinery.
-5. Distribution logic: generate at moderate voltage, step up with a transformer for the transmission run, step back down with a second transformer near the point of use. Resistive loss in the line scales with current squared, so halving the transmission current (by doubling voltage) cuts line loss to a quarter for the same delivered power, this is the entire economic argument for AC over DC at any distance beyond a single building.
+1. Alternator: same as the `dynamo_motor` drum armature, but slip rings (continuous copper rings, not a commutator) at the brushes, passing the naturally alternating current straight out.
+2. Transformer: primary and secondary coils on a shared closed iron core. Turns ratio sets voltage ratio directly (turns_primary/turns_secondary = volts_primary/volts_secondary), power in equals power out minus small losses, so a voltage step-up gives a matching current step-down, and vice versa.
+3. Laminated core: thin iron sheets, ~0.3-0.5 mm, each varnished or paper-separated, stacked rather than cast solid. A solid core lets large circulating "eddy" currents heat the metal and waste power; thin insulated sheets each carry only a small local eddy current, cutting the loss drastically. Not optional at serious power, a solid-core transformer runs uncomfortably hot for nothing.
+4. Three-phase: three windings 120 degrees apart on the rotor, giving overlapping AC outputs. Smooths delivery, uses conductor more efficiently, and later lets an AC motor self-start from the rotating field, no extra machinery.
+5. Distribution logic: generate at moderate voltage, step up for the transmission run, step down near use. Line loss scales with current squared, so doubling voltage (halving current) cuts loss to a quarter for the same power, the entire economic case for AC over DC beyond one building.
 
-**How you know it worked.** The transformer's secondary produces a voltage on the galvanometer/meter test in the ratio predicted by the turns count, and a laminated-core transformer stays noticeably cooler to the touch after an hour of running than a solid-core one of the same size and load.
+**How you know it worked.** The secondary's voltage matches the turns ratio on the meter test, and a laminated core stays noticeably cooler than a solid one after an hour at the same load.
 
-**Failure modes.** Inter-sheet insulation damaged or omitted turns lamination back into a solid core electrically, losses return and the core overheats. Mismatched phase spacing on a three-phase winding produces uneven, juddering output.
+**Failure modes.** Damaged inter-sheet insulation turns lamination back into a solid core electrically, losses return and it overheats. Mismatched phase spacing gives uneven, juddering output.
 
-**Cost & labour.** ESTIMATED. A small transformer is a few artisan-days; sheet-iron rolling and coating for lamination is the slow step, expect it to be the bottleneck material for a while.
+**Cost & labour.** ESTIMATED. A small transformer is a few artisan-days; sheet-iron rolling and coating is the slow step, likely the bottleneck material.
 
-**Danger.** AC at transmission voltages is at least as dangerous as DC of the same voltage, and the stepped-up transmission voltage itself (potentially hundreds of volts) is lethal, insulate and fence transmission runs, never work on a live line.
+**Danger.** AC at transmission voltages is as dangerous as DC of the same voltage, and stepped-up voltage (potentially hundreds of volts) is lethal, insulate and fence transmission runs, never work on a live line.
 
 **Confidence: HIGH** - all textbook 19th-century electrical engineering, no material or skill gap beyond what earlier entries in this module already require.
 
@@ -359,30 +359,30 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### telegraph - electric line telegraph
 
-**What it is / why you want it.** A wire line with relay stations turns a message that takes a courier a month into one that arrives within the hour. This is the single strongest funding argument in this entire module: it is a strategic weapon, not a toy.
+**What it is / why you want it.** A wire line with relay stations turns a message that takes a courier a month into one that arrives within the hour. The single strongest funding argument in this module: a strategic weapon, not a toy.
 
-**Why you would never guess this.** The individual pieces (wire, cell, electromagnet, relay) are each already covered above; the non-obvious part is operational, that a chain of short relay hops, each one re-amplifying a weakening signal with its own local battery, can carry a message indefinitely far without the line resistance ever mattering end to end.
+**Why you would never guess this.** The pieces (wire, cell, electromagnet, relay) are already covered above; the non-obvious part is operational, that a chain of short relay hops, each re-amplifying a weakening signal with its own local battery, carries a message indefinitely far without line resistance ever mattering end to end.
 
-**Prerequisites.** `wire_insulation`, `daniell_cell`, `electromagnet` (as relay and as sounder), `galvanometer` for line testing.
+**Prerequisites.** `wire_insulation`, `daniell_cell`, `electromagnet` (relay and sounder), `galvanometer` for line testing.
 
-**Roman-available inputs.** Iron or copper line wire; wooden poles (set along the existing Roman road network, reusing its surveyed, maintained right-of-way and milestones); glass or fired-ceramic insulator knobs mounted on crossarms to hold the wire clear of the pole and shed rain; Daniell cell banks at every station.
+**Roman-available inputs.** Iron or copper line wire; wooden poles (along the existing Roman road network, reusing its surveyed right-of-way and milestones); glass or fired-ceramic insulator knobs on crossarms; Daniell cell banks at every station.
 
 **Procedure.**
-1. String wire on poles at a height clear of traffic and livestock, along the road network for ease of maintenance and right-of-way.
-2. Mount each wire on a glass or glazed-ceramic insulator knob at every pole, this is what actually stops the signal leaking to earth through a wet wooden pole, bare wire against wet wood loses current fast.
-3. Every 30-50 km (shorter in wet climates or with lower-grade insulation, longer in dry ones, ESTIMATED basis: 19th-century relay spacing on comparably-insulated lines), build a relay station: incoming weak current works a relay's electromagnet (see `electromagnet`), whose contact closes a fresh local circuit, powered by that station's own Daniell bank, driving the next leg of wire at full strength again.
-4. At each station, an operator reads the incoming clicks (electromagnet sounder) and keys the outgoing line by hand, relaying the message onward.
-5. Terminal stations: a keying switch to open/close the circuit in a code (simple on/off patterns suffice, a Morse-style dot/dash scheme is easy to teach and requires no new technology).
+1. String wire on poles clear of traffic and livestock, along the road network for maintenance and right-of-way.
+2. Mount wire on a glass or ceramic insulator knob at every pole, this stops the signal leaking to earth through wet wood, bare wire against wet wood loses current fast.
+3. Every 30-50 km (shorter in wet climates or weaker insulation, ESTIMATED basis: 19th-century relay spacing on comparably-insulated lines), a relay station: incoming weak current works a relay's electromagnet, whose contact closes a fresh local circuit powered by that station's own Daniell bank, driving the next leg at full strength.
+4. At each station an operator reads the incoming clicks and keys the outgoing line by hand.
+5. Terminal stations: a keying switch in a code (simple on/off patterns, a Morse-style dot/dash scheme is easy to teach and needs no new technology).
 
-**How you know it worked.** A message sent from one terminal is read back correctly at the other after transiting every relay, and total transit time is dominated by operator speed at each station (seconds per station), not by the wire itself, current in a copper wire moves at a large fraction of light speed for these purposes, effectively instantaneous over any Roman distance.
+**How you know it worked.** A message sent from one terminal reads back correctly at the other after every relay; transit time is dominated by operator speed per station (seconds), not the wire, current in copper moves at a large fraction of light speed, effectively instant over any Roman distance.
 
-**Failure modes.** A single broken wire or failed relay stops the whole line past that point, test each segment daily with the galvanometer continuity test from `wire_insulation`. Storms and lightning strikes damage exposed lines, a lightning gap or fuse device (a weak sacrificial link that arcs and breaks before finer equipment is damaged) at each station protects the relay coils.
+**Failure modes.** A broken wire or failed relay stops the line past that point, test each segment daily with the `wire_insulation` continuity test. Lightning damages exposed lines, a sacrificial fuse gap at each station protects the relay coils.
 
-**Cost & labour.** ESTIMATED (basis: 19th-century telegraph construction rates, adjusted for Roman road reuse). Pole-setting and wiring at perhaps 1 labourer-day per km with an established road to follow; a relay station is a small permanent posting, 1-2 operators, comparable to an existing *cursus publicus* mutatio.
+**Cost & labour.** ESTIMATED (basis: 19th-century telegraph construction, adjusted for Roman road reuse). ~1 labourer-day per km with an established road; a relay station is a small permanent posting, 1-2 operators, comparable to a *cursus publicus* mutatio.
 
-**Danger.** Lightning strikes on exposed line are a real fire and injury risk at stations, ground/fuse protection is not optional. Strategically, a working telegraph line is a target, treat frontier relay stations as fortified posts, not open sheds.
+**Danger.** Lightning is a real fire/injury risk at stations, fuse protection is not optional. A working telegraph line is a strategic target, treat frontier stations as fortified posts, not open sheds.
 
-**Cost argument for the Emperor.** The *cursus publicus* moves an urgent dispatch at perhaps 50-80 km/day under favourable conditions; Rome to the Rhine frontier, roughly 1,500 km, takes on the order of 20-30 days by courier. A telegraph line covering the same route, with roughly 30-50 relay stations each adding a few minutes of operator time, delivers the same message in under an hour. That collapse, a month of warning time for a frontier incursion down to under an hour, is what buys this module its funding.
+**Cost argument for the Emperor.** The *cursus publicus* moves an urgent dispatch at perhaps 50-80 km/day; Rome to the Rhine, ~1,500 km, takes 20-30 days by courier. A telegraph line with ~30-50 relay stations, each adding a few minutes, delivers the same message in under an hour. That collapse, a month of frontier warning time down to under an hour, is what buys this module its funding.
 
 **Confidence: HIGH** - every component is separately well attested above; the only genuinely new claim is operational (relay chaining), which is exactly how real 19th-century telegraph networks worked.
 
