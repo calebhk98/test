@@ -18727,7 +18727,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_aqueduct",
-   "kb": "",
+   "kb": "87_construction.md#cn_aqueduct",
    "lab": {
     "mason": 200.0
    },
@@ -18805,7 +18805,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "cn_arch_dam",
-   "kb": "",
+   "kb": "87_construction.md#cn_gravity_dam",
    "lab": {
     "engineer": 80.0,
     "mason": 180.0
@@ -18844,7 +18844,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_artificial_stone",
-   "kb": "",
+   "kb": "87_construction.md#cn_portland_cement",
    "lab": {
     "carpenter": 60.0,
     "mason": 80.0
@@ -18884,7 +18884,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_asphalt_roofing",
-   "kb": "",
+   "kb": "87_construction.md#cn_curtain_wall",
    "lab": {
     "carpenter": 100.0,
     "labourer": 80.0
@@ -18923,7 +18923,7 @@
    "dev_years": 11,
    "gov": 0,
    "id": "cn_bascule_bridge",
-   "kb": "",
+   "kb": "87_construction.md#cn_bascule_bridge",
    "lab": {
     "carpenter": 100.0,
     "electrician": 60.0,
@@ -18963,7 +18963,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "cn_block_tackle_hoist",
-   "kb": "",
+   "kb": "87_construction.md#cn_crane_treadwheel",
    "lab": {
     "carpenter": 60.0
    },
@@ -19000,7 +19000,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_bolted_connection",
-   "kb": "",
+   "kb": "87_construction.md#cn_riveted_connection",
    "lab": {
     "engineer": 50.0,
     "smith": 100.0
@@ -19038,7 +19038,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_box_girder",
-   "kb": "",
+   "kb": "87_construction.md#cn_wrought_iron_girder",
    "lab": {
     "engineer": 100.0,
     "smith": 90.0
@@ -19076,7 +19076,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_cable_anchorage",
-   "kb": "",
+   "kb": "87_construction.md#cn_suspension_bridge",
    "lab": {
     "engineer": 80.0,
     "mason": 100.0
@@ -19114,7 +19114,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_caisson",
-   "kb": "",
+   "kb": "87_construction.md#cn_caisson",
    "lab": {
     "carpenter": 120.0,
     "engineer": 80.0
@@ -19153,7 +19153,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_cantilever",
-   "kb": "",
+   "kb": "87_construction.md#cn_post_lintel",
    "lab": {
     "engineer": 100.0
    },
@@ -19191,7 +19191,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_cast_iron_beam",
-   "kb": "",
+   "kb": "87_construction.md#cn_cast_iron_beam",
    "lab": {
     "furnaceman": 80.0,
     "smith": 100.0
@@ -19229,7 +19229,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_cavity_wall",
-   "kb": "",
+   "kb": "87_construction.md#cn_cavity_wall",
    "lab": {
     "mason": 130.0
    },
@@ -19264,7 +19264,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_cement_clinker_grinding",
-   "kb": "",
+   "kb": "87_construction.md#cn_portland_cement",
    "lab": {
     "engineer": 100.0,
     "furnaceman": 80.0
@@ -19302,7 +19302,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_central_heating",
-   "kb": "",
+   "kb": "87_construction.md#cn_central_heating",
    "lab": {
     "engineer": 80.0,
     "plumber": 120.0
@@ -19342,7 +19342,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "cn_cofferdam",
-   "kb": "",
+   "kb": "87_construction.md#cn_cofferdam",
    "lab": {
     "carpenter": 100.0,
     "labourer": 100.0
@@ -19381,7 +19381,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_concrete_mixer",
-   "kb": "",
+   "kb": "87_construction.md#cn_concrete_mixer",
    "lab": {
     "engineer": 100.0,
     "smith": 80.0
@@ -19419,7 +19419,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "cn_crane_derrick",
-   "kb": "",
+   "kb": "87_construction.md#cn_crane_derrick",
    "lab": {
     "carpenter": 120.0,
     "sailor": 60.0
@@ -19457,7 +19457,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "cn_crane_tower",
-   "kb": "",
+   "kb": "87_construction.md#cn_crane_derrick",
    "lab": {
     "carpenter": 80.0,
     "electrician": 70.0,
@@ -19536,7 +19536,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "cn_curtain_wall",
-   "kb": "",
+   "kb": "87_construction.md#cn_curtain_wall",
    "lab": {
     "carpenter": 100.0,
     "engineer": 70.0
@@ -19574,7 +19574,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "cn_damp_proof_course",
-   "kb": "",
+   "kb": "87_construction.md#cn_cavity_wall",
    "lab": {
     "mason": 100.0
    },
@@ -19615,7 +19615,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_deformed_rebar",
-   "kb": "",
+   "kb": "87_construction.md#cn_reinforced_concrete",
    "lab": {
     "engineer": 60.0,
     "smith": 100.0
@@ -19660,7 +19660,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_dewatering",
-   "kb": "",
+   "kb": "87_construction.md#cn_cofferdam",
    "lab": {
     "carpenter": 60.0,
     "engineer": 70.0
@@ -19698,7 +19698,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "cn_diaphragm_wall",
-   "kb": "",
+   "kb": "87_construction.md#cn_cofferdam",
    "lab": {
     "carpenter": 80.0,
     "engineer": 120.0
@@ -19735,7 +19735,7 @@
    "dev_years": 9,
    "gov": 0,
    "id": "cn_drill_blast",
-   "kb": "",
+   "kb": "87_construction.md#cn_drill_blast",
    "lab": {
     "engineer": 100.0,
     "labourer": 120.0
@@ -19774,7 +19774,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_earth_dam",
-   "kb": "",
+   "kb": "87_construction.md#cn_gravity_dam",
    "lab": {
     "engineer": 90.0,
     "labourer": 150.0
@@ -19812,7 +19812,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_elevator_safety_brake",
-   "kb": "",
+   "kb": "87_construction.md#cn_crane_derrick",
    "lab": {
     "carpenter": 100.0,
     "engineer": 80.0,
@@ -19852,7 +19852,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_expansion_joint",
-   "kb": "",
+   "kb": "87_construction.md#cn_concrete_mixer",
    "lab": {
     "engineer": 90.0
    },
@@ -19888,7 +19888,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_fire_escape",
-   "kb": "",
+   "kb": "87_construction.md#cn_fire_escape",
    "lab": {
     "carpenter": 100.0,
     "smith": 80.0
@@ -19926,7 +19926,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_flying_buttress",
-   "kb": "",
+   "kb": "87_construction.md#cn_true_arch",
    "lab": {
     "mason": 150.0
    },
@@ -19961,7 +19961,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_forced_ventilation",
-   "kb": "",
+   "kb": "87_construction.md#cn_central_heating",
    "lab": {
     "carpenter": 80.0,
     "engineer": 100.0
@@ -19999,7 +19999,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_formwork_shuttering",
-   "kb": "",
+   "kb": "87_construction.md#cn_concrete_mixer",
    "lab": {
     "carpenter": 140.0,
     "labourer": 100.0
@@ -20037,7 +20037,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_gang_saw",
-   "kb": "",
+   "kb": "87_construction.md#cn_quarrying_wedge",
    "lab": {
     "mason": 60.0,
     "millwright": 120.0
@@ -20077,7 +20077,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_gravity_dam",
-   "kb": "",
+   "kb": "87_construction.md#cn_gravity_dam",
    "lab": {
     "mason": 200.0
    },
@@ -20114,7 +20114,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_groin_vault",
-   "kb": "",
+   "kb": "87_construction.md#cn_true_arch",
    "lab": {
     "mason": 200.0
    },
@@ -20149,7 +20149,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "cn_gusset_plate",
-   "kb": "",
+   "kb": "87_construction.md#cn_riveted_connection",
    "lab": {
     "smith": 90.0
    },
@@ -20184,7 +20184,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "cn_gypsum_plaster",
-   "kb": "",
+   "kb": "87_construction.md#cn_portland_cement",
    "lab": {
     "mason": 80.0
    },
@@ -20217,7 +20217,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_insulation",
-   "kb": "",
+   "kb": "87_construction.md#cn_cavity_wall",
    "lab": {
     "carpenter": 100.0,
     "engineer": 70.0
@@ -20255,7 +20255,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_iron_column",
-   "kb": "",
+   "kb": "87_construction.md#cn_cast_iron_beam",
    "lab": {
     "furnaceman": 60.0,
     "smith": 80.0
@@ -20291,7 +20291,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_lattice_truss",
-   "kb": "",
+   "kb": "87_construction.md#cn_pratt_truss",
    "lab": {
     "carpenter": 120.0
    },
@@ -20328,7 +20328,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "cn_mortar",
-   "kb": "",
+   "kb": "87_construction.md#cn_pozzolana_concrete",
    "lab": {
     "mason": 100.0
    },
@@ -20370,7 +20370,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "cn_pile_driving",
-   "kb": "",
+   "kb": "87_construction.md#cn_pile_driving",
    "lab": {
     "labourer": 150.0
    },
@@ -20408,7 +20408,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_plate_girder",
-   "kb": "",
+   "kb": "87_construction.md#cn_wrought_iron_girder",
    "lab": {
     "engineer": 90.0,
     "smith": 140.0
@@ -20453,7 +20453,7 @@
    "dev_years": 9,
    "gov": 0,
    "id": "cn_plate_glass_window",
-   "kb": "",
+   "kb": "87_construction.md#cn_curtain_wall",
    "lab": {
     "glassblower": 150.0,
     "optician": 100.0
@@ -20489,7 +20489,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_plumbing_stack",
-   "kb": "",
+   "kb": "87_construction.md#cn_plumbing_stack",
    "lab": {
     "plumber": 120.0
    },
@@ -20533,7 +20533,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "cn_pneumatic_caisson",
-   "kb": "",
+   "kb": "87_construction.md#cn_caisson",
    "lab": {
     "carpenter": 100.0,
     "engineer": 100.0
@@ -20573,7 +20573,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_pontoon_bridge",
-   "kb": "",
+   "kb": "87_construction.md#cn_bascule_bridge",
    "lab": {
     "carpenter": 100.0,
     "sailor": 80.0
@@ -20611,7 +20611,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_portland_cement",
-   "kb": "",
+   "kb": "87_construction.md#cn_portland_cement",
    "lab": {
     "chemist": 100.0,
     "furnaceman": 100.0
@@ -20650,7 +20650,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "cn_post_lintel",
-   "kb": "",
+   "kb": "87_construction.md#cn_post_lintel",
    "lab": {
     "carpenter": 50.0,
     "mason": 100.0
@@ -20687,7 +20687,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "cn_post_tensioning",
-   "kb": "",
+   "kb": "87_construction.md#cn_prestressed_concrete",
    "lab": {
     "carpenter": 90.0,
     "engineer": 130.0
@@ -20725,7 +20725,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "cn_pozzolana_concrete",
-   "kb": "",
+   "kb": "87_construction.md#cn_pozzolana_concrete",
    "lab": {
     "chemist": 40.0,
     "mason": 60.0
@@ -20762,7 +20762,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_pratt_truss",
-   "kb": "",
+   "kb": "87_construction.md#cn_pratt_truss",
    "lab": {
     "carpenter": 110.0,
     "engineer": 70.0
@@ -20801,7 +20801,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_precast_panel",
-   "kb": "",
+   "kb": "87_construction.md#cn_reinforced_concrete",
    "lab": {
     "engineer": 100.0,
     "mason": 100.0
@@ -20837,7 +20837,7 @@
    "dev_years": 11,
    "gov": 0,
    "id": "cn_prestressed_concrete",
-   "kb": "",
+   "kb": "87_construction.md#cn_prestressed_concrete",
    "lab": {
     "engineer": 140.0,
     "mason": 100.0
@@ -20875,7 +20875,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "cn_quarrying_wedge",
-   "kb": "",
+   "kb": "87_construction.md#cn_quarrying_wedge",
    "lab": {
     "labourer": 100.0
    },
@@ -20951,7 +20951,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "cn_radiator",
-   "kb": "",
+   "kb": "87_construction.md#cn_central_heating",
    "lab": {
     "furnaceman": 60.0,
     "smith": 100.0
@@ -20987,7 +20987,7 @@
    "dev_years": 9,
    "gov": 0,
    "id": "cn_reinforced_concrete",
-   "kb": "",
+   "kb": "87_construction.md#cn_reinforced_concrete",
    "lab": {
     "engineer": 120.0,
     "mason": 100.0
@@ -21039,7 +21039,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_retaining_wall",
-   "kb": "",
+   "kb": "87_construction.md#cn_gravity_dam",
    "lab": {
     "mason": 150.0
    },
@@ -21076,7 +21076,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "cn_ribbed_vault",
-   "kb": "",
+   "kb": "87_construction.md#cn_true_arch",
    "lab": {
     "mason": 200.0
    },
@@ -21111,7 +21111,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_riveted_connection",
-   "kb": "",
+   "kb": "87_construction.md#cn_riveted_connection",
    "lab": {
     "smith": 120.0
    },
@@ -21153,7 +21153,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_rolled_I_beam",
-   "kb": "",
+   "kb": "87_construction.md#cn_wrought_iron_girder",
    "lab": {
     "engineer": 80.0,
     "furnaceman": 100.0
@@ -21191,7 +21191,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_roof_truss_corrugated",
-   "kb": "",
+   "kb": "87_construction.md#cn_curtain_wall",
    "lab": {
     "carpenter": 110.0,
     "smith": 80.0
@@ -21230,7 +21230,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "cn_rotary_cement_kiln",
-   "kb": "",
+   "kb": "87_construction.md#cn_portland_cement",
    "lab": {
     "engineer": 140.0,
     "furnaceman": 120.0
@@ -21269,7 +21269,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_sash_window",
-   "kb": "",
+   "kb": "87_construction.md#cn_curtain_wall",
    "lab": {
     "carpenter": 120.0,
     "smith": 60.0
@@ -21306,7 +21306,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "cn_scaffolding",
-   "kb": "",
+   "kb": "87_construction.md#cn_scaffolding",
    "lab": {
     "carpenter": 120.0
    },
@@ -21343,7 +21343,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_screw_pile",
-   "kb": "",
+   "kb": "87_construction.md#cn_pile_driving",
    "lab": {
     "engineer": 80.0,
     "labourer": 100.0
@@ -21381,7 +21381,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_sewer_system",
-   "kb": "",
+   "kb": "87_construction.md#cn_aqueduct",
    "lab": {
     "engineer": 100.0,
     "mason": 100.0
@@ -21420,7 +21420,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_sheet_piling",
-   "kb": "",
+   "kb": "87_construction.md#cn_cofferdam",
    "lab": {
     "carpenter": 100.0,
     "labourer": 120.0
@@ -21458,7 +21458,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_shotcrete",
-   "kb": "",
+   "kb": "87_construction.md#cn_concrete_mixer",
    "lab": {
     "engineer": 100.0,
     "labourer": 100.0
@@ -21495,7 +21495,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_siphon",
-   "kb": "",
+   "kb": "87_construction.md#cn_aqueduct",
    "lab": {
     "engineer": 50.0,
     "plumber": 100.0
@@ -21534,7 +21534,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "cn_slipform",
-   "kb": "",
+   "kb": "87_construction.md#cn_concrete_mixer",
    "lab": {
     "carpenter": 120.0,
     "engineer": 140.0
@@ -21573,7 +21573,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "cn_soil_compaction",
-   "kb": "",
+   "kb": "87_construction.md#cn_pile_driving",
    "lab": {
     "labourer": 120.0
    },
@@ -21610,7 +21610,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "cn_space_frame",
-   "kb": "",
+   "kb": "87_construction.md#cn_pratt_truss",
    "lab": {
     "carpenter": 80.0,
     "engineer": 100.0
@@ -21650,7 +21650,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_spillway",
-   "kb": "",
+   "kb": "87_construction.md#cn_gravity_dam",
    "lab": {
     "engineer": 100.0,
     "mason": 100.0
@@ -21689,7 +21689,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_sprinkler",
-   "kb": "",
+   "kb": "87_construction.md#cn_fire_escape",
    "lab": {
     "engineer": 80.0,
     "plumber": 100.0
@@ -21729,7 +21729,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "cn_steel_frame_skeleton",
-   "kb": "",
+   "kb": "87_construction.md#cn_wrought_iron_girder",
    "lab": {
     "carpenter": 80.0,
     "engineer": 120.0,
@@ -21769,7 +21769,7 @@
    "dev_years": 9,
    "gov": 0,
    "id": "cn_stiffening_truss",
-   "kb": "",
+   "kb": "87_construction.md#cn_suspension_bridge",
    "lab": {
     "carpenter": 100.0,
     "engineer": 90.0
@@ -21807,7 +21807,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "cn_stone_polish",
-   "kb": "",
+   "kb": "87_construction.md#cn_quarrying_wedge",
    "lab": {
     "mason": 80.0
    },
@@ -21842,7 +21842,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "cn_stone_saw",
-   "kb": "",
+   "kb": "87_construction.md#cn_quarrying_wedge",
    "lab": {
     "carpenter": 60.0,
     "mason": 40.0
@@ -21881,7 +21881,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "cn_suspension_bridge",
-   "kb": "",
+   "kb": "87_construction.md#cn_suspension_bridge",
    "lab": {
     "carpenter": 100.0,
     "engineer": 150.0
@@ -21919,7 +21919,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_swing_bridge",
-   "kb": "",
+   "kb": "87_construction.md#cn_bascule_bridge",
    "lab": {
     "carpenter": 90.0,
     "engineer": 100.0
@@ -21957,7 +21957,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "cn_terrazzo",
-   "kb": "",
+   "kb": "87_construction.md#cn_terrazzo",
    "lab": {
     "mason": 100.0
    },
@@ -21994,7 +21994,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "cn_timber_truss",
-   "kb": "",
+   "kb": "87_construction.md#cn_king_post",
    "lab": {
     "carpenter": 120.0
    },
@@ -22029,7 +22029,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "cn_trapped_drain",
-   "kb": "",
+   "kb": "87_construction.md#cn_plumbing_stack",
    "lab": {
     "plumber": 90.0
    },
@@ -22066,7 +22066,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "cn_true_arch",
-   "kb": "",
+   "kb": "87_construction.md#cn_true_arch",
    "lab": {
     "mason": 120.0
    },
@@ -22101,7 +22101,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_trussed_arch",
-   "kb": "",
+   "kb": "87_construction.md#cn_king_post",
    "lab": {
     "carpenter": 100.0,
     "mason": 80.0
@@ -22139,7 +22139,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_tunnel_cut_cover",
-   "kb": "",
+   "kb": "87_construction.md#cn_drill_blast",
    "lab": {
     "carpenter": 120.0,
     "mason": 100.0
@@ -22177,7 +22177,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "cn_tunnel_lining",
-   "kb": "",
+   "kb": "87_construction.md#cn_tunnel_shield",
    "lab": {
     "engineer": 60.0,
     "mason": 110.0
@@ -22213,7 +22213,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "cn_tunnel_shield",
-   "kb": "",
+   "kb": "87_construction.md#cn_tunnel_shield",
    "lab": {
     "engineer": 120.0,
     "labourer": 150.0
@@ -22251,7 +22251,7 @@
    "dev_years": 9,
    "gov": 0,
    "id": "cn_underpinning",
-   "kb": "",
+   "kb": "87_construction.md#cn_caisson",
    "lab": {
     "engineer": 100.0,
     "mason": 100.0
@@ -22289,7 +22289,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "cn_ventilation_shaft",
-   "kb": "",
+   "kb": "87_construction.md#cn_drill_blast",
    "lab": {
     "engineer": 80.0,
     "mason": 100.0
@@ -22325,7 +22325,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_vibratory_compaction",
-   "kb": "",
+   "kb": "87_construction.md#cn_concrete_mixer",
    "lab": {
     "engineer": 80.0,
     "labourer": 70.0
@@ -22363,7 +22363,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_warren_truss",
-   "kb": "",
+   "kb": "87_construction.md#cn_pratt_truss",
    "lab": {
     "carpenter": 100.0,
     "engineer": 60.0
@@ -22403,7 +22403,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_water_main",
-   "kb": "",
+   "kb": "87_construction.md#cn_aqueduct",
    "lab": {
     "engineer": 70.0,
     "plumber": 100.0
@@ -22441,7 +22441,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "cn_welded_connection",
-   "kb": "",
+   "kb": "87_construction.md#cn_riveted_connection",
    "lab": {
     "electrician": 80.0,
     "smith": 100.0
@@ -22480,7 +22480,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "cn_wire_cable_spinning",
-   "kb": "",
+   "kb": "87_construction.md#cn_suspension_bridge",
    "lab": {
     "engineer": 80.0,
     "smith": 120.0
@@ -22524,7 +22524,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "cn_wrought_iron_girder",
-   "kb": "",
+   "kb": "87_construction.md#cn_wrought_iron_girder",
    "lab": {
     "engineer": 60.0,
     "smith": 120.0
@@ -32987,7 +32987,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_alternator",
-   "kb": "",
+   "kb": "98_power_plants.md#en_alternator",
    "lab": {
     "engineer": 386.0,
     "machinist": 322.0
@@ -33028,7 +33028,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_battery_charging",
-   "kb": "",
+   "kb": "98_power_plants.md#en_battery_charging",
    "lab": {
     "electrician": 294.0,
     "engineer": 358.0
@@ -33113,7 +33113,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_battery_nickel_iron",
-   "kb": "",
+   "kb": "98_power_plants.md#en_battery_lead_acid",
    "lab": {
     "chemist": 386.0
    },
@@ -33151,7 +33151,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_boiler_babcock",
-   "kb": "",
+   "kb": "98_power_plants.md#en_boiler_water_tube",
    "lab": {
     "engineer": 386.0,
     "machinist": 322.0
@@ -33314,7 +33314,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_boiler_locomotive",
-   "kb": "",
+   "kb": "98_power_plants.md#en_boiler_cornish",
    "lab": {
     "engineer": 368.0
    },
@@ -33352,7 +33352,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "en_boiler_stirling",
-   "kb": "",
+   "kb": "98_power_plants.md#en_boiler_water_tube",
    "lab": {
     "engineer": 404.0,
     "machinist": 349.0
@@ -33480,7 +33480,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_breastshot_wheel",
-   "kb": "",
+   "kb": "98_power_plants.md#en_overshot_wheel",
    "lab": {
     "millwright": 322.0
    },
@@ -33518,7 +33518,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_carburetted_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_hot_bulb_engine",
    "lab": {
     "engineer": 358.0,
     "machinist": 285.0
@@ -33558,7 +33558,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_centrifugal_governor",
-   "kb": "",
+   "kb": "98_power_plants.md#en_water_wheel_governor",
    "lab": {
     "engineer": 414.0
    },
@@ -33598,7 +33598,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_charcoal_burning",
-   "kb": "",
+   "kb": "98_power_plants.md#en_charcoal_burning",
    "lab": {
     "furnaceman": 250.0
    },
@@ -33633,7 +33633,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_circuit_breaker",
-   "kb": "",
+   "kb": "98_power_plants.md#en_switchgear",
    "lab": {
     "engineer": 414.0,
     "machinist": 331.0
@@ -33674,7 +33674,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_coal_mining_washing",
-   "kb": "",
+   "kb": "98_power_plants.md#en_charcoal_burning",
    "lab": {
     "engineer": 322.0,
     "miner": 552.0
@@ -33713,7 +33713,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_coke_oven",
-   "kb": "",
+   "kb": "98_power_plants.md#en_coke_oven",
    "lab": {
     "engineer": 358.0,
     "furnaceman": 322.0
@@ -33751,7 +33751,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_commutator",
-   "kb": "",
+   "kb": "98_power_plants.md#en_alternator",
    "lab": {
     "machinist": 294.0
    },
@@ -33791,7 +33791,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "en_compound_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_high_pressure_engine",
    "lab": {
     "engineer": 515.0,
     "machinist": 386.0
@@ -33831,7 +33831,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_compressed_air_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_stirling_engine",
    "lab": {
     "engineer": 331.0,
     "machinist": 280.0
@@ -33871,7 +33871,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_condenser_jet",
-   "kb": "",
+   "kb": "98_power_plants.md#en_separate_condenser",
    "lab": {
     "machinist": 250.0
    },
@@ -33909,7 +33909,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_condenser_surface",
-   "kb": "",
+   "kb": "98_power_plants.md#en_separate_condenser",
    "lab": {
     "engineer": 322.0,
     "machinist": 300.0
@@ -33949,7 +33949,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "en_corliss_valve",
-   "kb": "",
+   "kb": "98_power_plants.md#en_expansive_working",
    "lab": {
     "engineer": 460.0,
     "machinist": 368.0
@@ -33989,7 +33989,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "en_cutoff_valve",
-   "kb": "",
+   "kb": "98_power_plants.md#en_expansive_working",
    "lab": {
     "machinist": 322.0
    },
@@ -34028,7 +34028,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_double_acting",
-   "kb": "",
+   "kb": "98_power_plants.md#en_atmospheric_engine",
    "lab": {
     "engineer": 478.0
    },
@@ -34067,7 +34067,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_draft_tube",
-   "kb": "",
+   "kb": "98_power_plants.md#en_penstock",
    "lab": {
     "carpenter": 200.0,
     "engineer": 300.0
@@ -34105,7 +34105,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_dynamo",
-   "kb": "",
+   "kb": "98_power_plants.md#en_alternator",
    "lab": {},
    "mat": {},
    "name": "Dynamo (DC generator with self-excitation)",
@@ -34139,7 +34139,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_economiser",
-   "kb": "",
+   "kb": "98_power_plants.md#en_economiser",
    "lab": {
     "engineer": 331.0,
     "mason": 200.0
@@ -34178,7 +34178,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_exciter",
-   "kb": "",
+   "kb": "98_power_plants.md#en_alternator",
    "lab": {
     "machinist": 303.0
    },
@@ -34216,7 +34216,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_expansive_working",
-   "kb": "",
+   "kb": "98_power_plants.md#en_expansive_working",
    "lab": {
     "engineer": 386.0,
     "machinist": 300.0
@@ -34254,7 +34254,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_feedwater_heater",
-   "kb": "",
+   "kb": "98_power_plants.md#en_economiser",
    "lab": {
     "engineer": 303.0,
     "machinist": 280.0
@@ -34333,7 +34333,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_four_stroke_cycle",
-   "kb": "",
+   "kb": "98_power_plants.md#en_four_stroke_cycle",
    "lab": {
     "engineer": 349.0,
     "machinist": 300.0
@@ -34373,7 +34373,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_fourneyron_turbine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_fourneyron_turbine",
    "lab": {
     "engineer": 460.0,
     "machinist": 368.0
@@ -34414,7 +34414,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "en_francis_turbine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_fourneyron_turbine",
    "lab": {
     "engineer": 506.0,
     "machinist": 414.0
@@ -34454,7 +34454,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "en_frequency_standardisation",
-   "kb": "",
+   "kb": "98_power_plants.md#en_substation",
    "lab": {
     "engineer": 441.0
    },
@@ -34491,7 +34491,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_fuel_injection",
-   "kb": "",
+   "kb": "98_power_plants.md#en_poppet_valve",
    "lab": {
     "engineer": 441.0,
     "machinist": 368.0
@@ -34530,7 +34530,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_fuel_oil",
-   "kb": "",
+   "kb": "98_power_plants.md#en_petrol",
    "lab": {
     "chemist": 285.0
    },
@@ -34565,7 +34565,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_fuse",
-   "kb": "",
+   "kb": "98_power_plants.md#en_switchgear",
    "lab": {},
    "mat": {
     "lead_kg": 50.0,
@@ -34601,7 +34601,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_gas_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_four_stroke_cycle",
    "lab": {
     "engineer": 414.0,
     "machinist": 322.0
@@ -34650,7 +34650,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_gas_holder",
-   "kb": "",
+   "kb": "98_power_plants.md#en_coke_oven",
    "lab": {
     "engineer": 349.0
    },
@@ -34689,7 +34689,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_gas_producer",
-   "kb": "",
+   "kb": "98_power_plants.md#en_coke_oven",
    "lab": {
     "engineer": 386.0,
     "furnaceman": 300.0
@@ -34737,7 +34737,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "en_gas_turbine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_gas_turbine",
    "lab": {
     "engineer": 598.0,
     "machinist": 506.0
@@ -34777,7 +34777,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "en_grid_interconnection",
-   "kb": "",
+   "kb": "98_power_plants.md#en_substation",
    "lab": {
     "engineer": 506.0
    },
@@ -34814,7 +34814,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_high_pressure_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_high_pressure_engine",
    "lab": {
     "engineer": 506.0,
     "furnaceman": 368.0
@@ -34864,7 +34864,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_horse_gin",
-   "kb": "",
+   "kb": "98_power_plants.md#en_undershot_wheel",
    "lab": {
     "carpenter": 150.0
    },
@@ -34901,7 +34901,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_hot_bulb_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_hot_bulb_engine",
    "lab": {
     "engineer": 368.0,
     "machinist": 294.0
@@ -34951,7 +34951,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_hydraulic_accumulator",
-   "kb": "",
+   "kb": "98_power_plants.md#en_hydraulic_accumulator",
    "lab": {
     "engineer": 349.0
    },
@@ -34990,7 +34990,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_hydraulic_power_main",
-   "kb": "",
+   "kb": "98_power_plants.md#en_hydraulic_accumulator",
    "lab": {
     "engineer": 386.0,
     "plumber": 368.0
@@ -35077,7 +35077,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_insulator",
-   "kb": "",
+   "kb": "98_power_plants.md#en_transmission_line",
    "lab": {
     "potter": 322.0
    },
@@ -35114,7 +35114,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "en_jet_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_gas_turbine",
    "lab": {
     "engineer": 644.0,
     "machinist": 552.0
@@ -35152,7 +35152,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "en_kaplan_turbine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_fourneyron_turbine",
    "lab": {
     "engineer": 552.0,
     "machinist": 460.0
@@ -35192,7 +35192,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_kerosene",
-   "kb": "",
+   "kb": "98_power_plants.md#en_petrol",
    "lab": {
     "chemist": 300.0
    },
@@ -35227,7 +35227,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_lightning_arrester",
-   "kb": "",
+   "kb": "98_power_plants.md#en_switchgear",
    "lab": {
     "engineer": 303.0,
     "machinist": 280.0
@@ -35266,7 +35266,7 @@
    "dev_years": 14,
    "gov": 0,
    "id": "en_liquid_propellant",
-   "kb": "",
+   "kb": "98_power_plants.md#en_gas_turbine",
    "lab": {
     "chemist": 414.0,
     "engineer": 460.0
@@ -35304,7 +35304,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_load_factor_diversity",
-   "kb": "",
+   "kb": "98_power_plants.md#en_substation",
    "lab": {
     "engineer": 386.0
    },
@@ -35339,7 +35339,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_lubricating_oil",
-   "kb": "",
+   "kb": "98_power_plants.md#en_petrol",
    "lab": {
     "chemist": 322.0
    },
@@ -35374,7 +35374,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_oil_cracking",
-   "kb": "",
+   "kb": "98_power_plants.md#en_oil_drilling",
    "lab": {
     "chemist": 368.0,
     "engineer": 441.0
@@ -35412,7 +35412,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_oil_drilling",
-   "kb": "",
+   "kb": "98_power_plants.md#en_oil_drilling",
    "lab": {
     "engineer": 386.0,
     "miner": 368.0
@@ -35451,7 +35451,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "en_oil_refining_distillation",
-   "kb": "",
+   "kb": "98_power_plants.md#en_oil_drilling",
    "lab": {
     "chemist": 349.0,
     "engineer": 414.0
@@ -35490,7 +35490,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "en_oil_shale_retorting",
-   "kb": "",
+   "kb": "98_power_plants.md#en_oil_drilling",
    "lab": {
     "engineer": 377.0,
     "furnaceman": 312.0
@@ -35529,7 +35529,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_overshot_wheel",
-   "kb": "",
+   "kb": "98_power_plants.md#en_overshot_wheel",
    "lab": {
     "millwright": 368.0
    },
@@ -35567,7 +35567,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_parallel_motion",
-   "kb": "",
+   "kb": "98_power_plants.md#en_parallel_motion",
    "lab": {
     "engineer": 368.0,
     "machinist": 300.0
@@ -35606,7 +35606,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_patent_sail",
-   "kb": "",
+   "kb": "98_power_plants.md#en_patent_sail",
    "lab": {
     "carpenter": 368.0
    },
@@ -35645,7 +35645,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_peat_fuel",
-   "kb": "",
+   "kb": "98_power_plants.md#en_charcoal_burning",
    "lab": {
     "miner": 322.0
    },
@@ -35683,7 +35683,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_pelton_wheel",
-   "kb": "",
+   "kb": "98_power_plants.md#en_fourneyron_turbine",
    "lab": {
     "engineer": 441.0,
     "machinist": 368.0
@@ -35724,7 +35724,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_penstock",
-   "kb": "",
+   "kb": "98_power_plants.md#en_penstock",
    "lab": {
     "carpenter": 200.0,
     "mason": 368.0
@@ -35762,7 +35762,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_petrol",
-   "kb": "",
+   "kb": "98_power_plants.md#en_petrol",
    "lab": {
     "chemist": 294.0
    },
@@ -35797,7 +35797,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_poncelet_wheel",
-   "kb": "",
+   "kb": "98_power_plants.md#en_overshot_wheel",
    "lab": {
     "millwright": 322.0
    },
@@ -35835,7 +35835,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_poppet_valve",
-   "kb": "",
+   "kb": "98_power_plants.md#en_poppet_valve",
    "lab": {
     "machinist": 322.0
    },
@@ -35914,7 +35914,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_power_factor_correction",
-   "kb": "",
+   "kb": "98_power_plants.md#en_substation",
    "lab": {
     "electrician": 300.0,
     "engineer": 377.0
@@ -35952,7 +35952,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_pressure_gauge",
-   "kb": "",
+   "kb": "98_power_plants.md#en_safety_valve",
    "lab": {
     "machinist": 322.0
    },
@@ -36037,7 +36037,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_reduction_gear",
-   "kb": "",
+   "kb": "98_power_plants.md#en_parallel_motion",
    "lab": {
     "engineer": 368.0,
     "machinist": 322.0
@@ -36076,7 +36076,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "en_rocket_motor",
-   "kb": "",
+   "kb": "98_power_plants.md#en_gas_turbine",
    "lab": {
     "chemist": 368.0,
     "engineer": 460.0
@@ -36115,7 +36115,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_rotary_converter",
-   "kb": "",
+   "kb": "98_power_plants.md#en_battery_charging",
    "lab": {
     "engineer": 432.0,
     "machinist": 368.0
@@ -36155,7 +36155,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_safety_valve",
-   "kb": "",
+   "kb": "98_power_plants.md#en_safety_valve",
    "lab": {
     "machinist": 250.0
    },
@@ -36193,7 +36193,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_separate_condenser",
-   "kb": "",
+   "kb": "98_power_plants.md#en_separate_condenser",
    "lab": {
     "engineer": 552.0
    },
@@ -36232,7 +36232,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "en_sleeve_valve",
-   "kb": "",
+   "kb": "98_power_plants.md#en_poppet_valve",
    "lab": {
     "engineer": 386.0,
     "machinist": 349.0
@@ -36271,7 +36271,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_spring_motor",
-   "kb": "",
+   "kb": "98_power_plants.md#en_stirling_engine",
    "lab": {},
    "mat": {},
    "name": "Spring motor (large clockwork)",
@@ -36304,7 +36304,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "en_spring_sail",
-   "kb": "",
+   "kb": "98_power_plants.md#en_patent_sail",
    "lab": {
     "carpenter": 322.0
    },
@@ -36342,7 +36342,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "en_steam_trap",
-   "kb": "",
+   "kb": "98_power_plants.md#en_safety_valve",
    "lab": {
     "machinist": 280.0
    },
@@ -36380,7 +36380,7 @@
    "dev_years": 11,
    "gov": 0,
    "id": "en_steam_turbine_curtis",
-   "kb": "",
+   "kb": "98_power_plants.md#en_steam_turbine_impulse",
    "lab": {
     "engineer": 524.0,
     "machinist": 441.0
@@ -36418,7 +36418,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "en_steam_turbine_impulse",
-   "kb": "",
+   "kb": "98_power_plants.md#en_steam_turbine_impulse",
    "lab": {
     "engineer": 506.0,
     "machinist": 414.0
@@ -36458,7 +36458,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "en_steam_turbine_reaction",
-   "kb": "",
+   "kb": "98_power_plants.md#en_steam_turbine_impulse",
    "lab": {
     "engineer": 552.0,
     "machinist": 460.0
@@ -36497,7 +36497,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_stirling_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_stirling_engine",
    "lab": {
     "engineer": 368.0,
     "machinist": 294.0
@@ -36548,7 +36548,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_substation",
-   "kb": "",
+   "kb": "98_power_plants.md#en_substation",
    "lab": {
     "engineer": 460.0,
     "mason": 368.0
@@ -36587,7 +36587,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "en_sun_planet_gear",
-   "kb": "",
+   "kb": "98_power_plants.md#en_parallel_motion",
    "lab": {
     "engineer": 349.0,
     "machinist": 300.0
@@ -36627,7 +36627,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "en_supercharger",
-   "kb": "",
+   "kb": "98_power_plants.md#en_supercharger",
    "lab": {
     "engineer": 423.0,
     "machinist": 349.0
@@ -36667,7 +36667,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "en_switchgear",
-   "kb": "",
+   "kb": "98_power_plants.md#en_switchgear",
    "lab": {
     "engineer": 386.0,
     "machinist": 312.0
@@ -36707,7 +36707,7 @@
    "dev_years": 14,
    "gov": 0,
    "id": "en_thermal_station",
-   "kb": "",
+   "kb": "98_power_plants.md#en_hydroelectric_station",
    "lab": {
     "engineer": 598.0,
     "mason": 506.0
@@ -36757,7 +36757,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "en_three_phase_gen",
-   "kb": "",
+   "kb": "98_power_plants.md#en_alternator",
    "lab": {
     "engineer": 368.0,
     "machinist": 312.0
@@ -36886,7 +36886,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_town_gas_retort",
-   "kb": "",
+   "kb": "98_power_plants.md#en_coke_oven",
    "lab": {
     "engineer": 386.0,
     "furnaceman": 331.0
@@ -36964,7 +36964,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_transmission_line",
-   "kb": "",
+   "kb": "98_power_plants.md#en_transmission_line",
    "lab": {
     "engineer": 423.0
    },
@@ -37004,7 +37004,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_treadwheel",
-   "kb": "",
+   "kb": "98_power_plants.md#en_undershot_wheel",
    "lab": {
     "carpenter": 100.0
    },
@@ -37041,7 +37041,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_turbine_blading",
-   "kb": "",
+   "kb": "98_power_plants.md#en_turbine_blading",
    "lab": {
     "engineer": 441.0,
     "machinist": 349.0
@@ -37078,7 +37078,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_turbine_condenser_vacuum",
-   "kb": "",
+   "kb": "98_power_plants.md#en_turbine_blading",
    "lab": {
     "engineer": 460.0,
     "machinist": 368.0
@@ -37119,7 +37119,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "en_turbocharger",
-   "kb": "",
+   "kb": "98_power_plants.md#en_supercharger",
    "lab": {
     "engineer": 460.0,
     "machinist": 386.0
@@ -37158,7 +37158,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "en_two_stroke_cycle",
-   "kb": "",
+   "kb": "98_power_plants.md#en_four_stroke_cycle",
    "lab": {
     "engineer": 312.0,
     "machinist": 280.0
@@ -37196,7 +37196,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_undershot_wheel",
-   "kb": "",
+   "kb": "98_power_plants.md#en_undershot_wheel",
    "lab": {
     "millwright": 300.0
    },
@@ -37235,7 +37235,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_uniflow_engine",
-   "kb": "",
+   "kb": "98_power_plants.md#en_high_pressure_engine",
    "lab": {
     "engineer": 478.0,
     "machinist": 349.0
@@ -37275,7 +37275,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "en_water_wheel_governor",
-   "kb": "",
+   "kb": "98_power_plants.md#en_water_wheel_governor",
    "lab": {
     "millwright": 368.0
    },
@@ -37315,7 +37315,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "en_wind_electric",
-   "kb": "",
+   "kb": "98_power_plants.md#en_wind_pump",
    "lab": {
     "electrician": 300.0,
     "engineer": 368.0
@@ -37356,7 +37356,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "en_wind_pump",
-   "kb": "",
+   "kb": "98_power_plants.md#en_wind_pump",
    "lab": {
     "millwright": 414.0
    },
@@ -37394,7 +37394,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "en_windmill_fantail",
-   "kb": "",
+   "kb": "98_power_plants.md#en_patent_sail",
    "lab": {
     "millwright": 322.0
    },
@@ -106559,7 +106559,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_air_filter",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_carburettor",
    "lab": {
     "artisan": 80.0
    },
@@ -106592,7 +106592,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "tl_anti_siphon_valve",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_carburettor",
    "lab": {
     "machinist": 70.0
    },
@@ -106627,7 +106627,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_articulated_trailer",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_motor_lorry",
    "lab": {
     "carpenter": 250.0,
     "smith": 120.0
@@ -106668,7 +106668,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tl_automatic_transmission",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_plate_clutch",
    "lab": {
     "engineer": 350.0
    },
@@ -106706,7 +106706,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_ball_bearing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ball_bearing",
    "lab": {
     "machinist": 220.0
    },
@@ -106744,7 +106744,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_brake_shoe",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_brake_shoe",
    "lab": {
     "smith": 100.0
    },
@@ -106789,7 +106789,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_caliper_brake",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_chain_drive",
    "lab": {
     "machinist": 150.0
    },
@@ -106827,7 +106827,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_cam_follower",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_engine_block",
    "lab": {
     "machinist": 200.0
    },
@@ -106873,7 +106873,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_cambered_drainage",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_macadam_road",
    "lab": {
     "engineer": 150.0
    },
@@ -106906,7 +106906,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_carbide_lamp",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_headlamp",
    "lab": {
     "machinist": 150.0
    },
@@ -106943,7 +106943,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_carburettor",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_carburettor",
    "lab": {
     "machinist": 200.0
    },
@@ -106989,7 +106989,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tl_caterpillar_track",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_motor_lorry",
    "lab": {
     "machinist": 150.0,
     "smith": 250.0
@@ -107036,7 +107036,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_chain_drive",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_chain_drive",
    "lab": {
     "machinist": 180.0
    },
@@ -107082,7 +107082,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_coil_ignition",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_magneto_ignition",
    "lab": {
     "machinist": 200.0
    },
@@ -107120,7 +107120,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_coil_spring",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_leaf_spring",
    "lab": {
     "smith": 150.0
    },
@@ -107166,7 +107166,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tl_concrete_roadway",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_macadam_road",
    "lab": {
     "engineer": 400.0,
     "mason": 300.0
@@ -107204,7 +107204,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_cone_clutch",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_plate_clutch",
    "lab": {
     "machinist": 180.0
    },
@@ -107250,7 +107250,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_connecting_rod",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_engine_block",
    "lab": {
     "machinist": 240.0
    },
@@ -107296,7 +107296,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_cooling_fan",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_radiator",
    "lab": {
     "machinist": 140.0
    },
@@ -107333,7 +107333,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_dead_axle",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_differential",
    "lab": {
     "smith": 80.0
    },
@@ -107375,7 +107375,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_derailleur",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_chain_drive",
    "lab": {
     "machinist": 220.0
    },
@@ -107413,7 +107413,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_differential",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_differential",
    "lab": {
     "machinist": 100.0,
     "smith": 180.0
@@ -107460,7 +107460,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_disc_brake",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_brake_shoe",
    "lab": {
     "machinist": 250.0
    },
@@ -107506,7 +107506,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_distributor",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_magneto_ignition",
    "lab": {
     "machinist": 180.0
    },
@@ -107544,7 +107544,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_drum_brake",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_brake_shoe",
    "lab": {
     "machinist": 180.0
    },
@@ -107591,7 +107591,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_dynamo",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_dynamo",
    "lab": {
     "electrician": 220.0
    },
@@ -107629,7 +107629,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_electric_starter",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_dynamo",
    "lab": {
     "electrician": 250.0
    },
@@ -107666,7 +107666,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_electric_tram",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_omnibus",
    "lab": {
     "electrician": 280.0,
     "machinist": 150.0
@@ -107706,7 +107706,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_elliptic_spring",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_leaf_spring",
    "lab": {
     "smith": 180.0
    },
@@ -107744,7 +107744,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_engine_block",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_engine_block",
    "lab": {
     "furnaceman": 250.0,
     "machinist": 200.0
@@ -107792,7 +107792,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tl_epicyclic_gearbox",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_plate_clutch",
    "lab": {
     "machinist": 300.0
    },
@@ -107839,7 +107839,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_exhaust_valve",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_intake_valve",
    "lab": {
     "machinist": 240.0
    },
@@ -107877,7 +107877,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_fan_belt",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_radiator",
    "lab": {
     "machinist": 140.0
    },
@@ -107914,7 +107914,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_fifth_wheel",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ackermann_steering",
    "lab": {
     "machinist": 80.0,
     "smith": 180.0
@@ -107961,7 +107961,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_freewheel",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_chain_drive",
    "lab": {
     "machinist": 150.0
    },
@@ -107999,7 +107999,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_friction_damper",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_leaf_spring",
    "lab": {
     "machinist": 120.0
    },
@@ -108037,7 +108037,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_fuel_pump",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_carburettor",
    "lab": {
     "machinist": 140.0
    },
@@ -108075,7 +108075,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_grease_cup",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ball_bearing",
    "lab": {
     "smith": 60.0
    },
@@ -108159,7 +108159,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_handbrake",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_brake_shoe",
    "lab": {
     "smith": 100.0
    },
@@ -108203,7 +108203,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_headlamp",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_headlamp",
    "lab": {
     "optician": 150.0
    },
@@ -108239,7 +108239,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_horse_collar",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_horse_collar",
    "lab": {
     "artisan": 100.0
    },
@@ -108285,7 +108285,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_horse_tram",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_omnibus",
    "lab": {
     "carpenter": 350.0,
     "smith": 200.0
@@ -108373,7 +108373,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_hub_gear",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_chain_drive",
    "lab": {
     "machinist": 280.0
    },
@@ -108411,7 +108411,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_hydraulic_brake_line",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_brake_shoe",
    "lab": {
     "machinist": 200.0
    },
@@ -108457,7 +108457,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_hydraulic_shock",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_leaf_spring",
    "lab": {
     "machinist": 250.0
    },
@@ -108495,7 +108495,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_ignition_timing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_magneto_ignition",
    "lab": {
     "machinist": 170.0
    },
@@ -108533,7 +108533,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_indicator",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_headlamp",
    "lab": {
     "electrician": 100.0
    },
@@ -108568,7 +108568,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_inner_tube",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_pneumatic_tyre",
    "lab": {
     "chemist": 150.0
    },
@@ -108605,7 +108605,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_intake_valve",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_intake_valve",
    "lab": {
     "machinist": 220.0
    },
@@ -108651,7 +108651,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_iron_tyre",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_spoked_wheel",
    "lab": {
     "smith": 150.0
    },
@@ -108698,7 +108698,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_kerbing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_macadam_road",
    "lab": {
     "mason": 120.0
    },
@@ -108733,7 +108733,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_kingpin",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ackermann_steering",
    "lab": {
     "smith": 120.0
    },
@@ -108777,7 +108777,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_leaf_spring",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_leaf_spring",
    "lab": {
     "smith": 150.0
    },
@@ -108821,7 +108821,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_level_crossing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_road_roller",
    "lab": {
     "engineer": 250.0
    },
@@ -108858,7 +108858,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_live_axle",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_differential",
    "lab": {
     "smith": 150.0
    },
@@ -108895,7 +108895,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_magneto_ignition",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_magneto_ignition",
    "lab": {
     "machinist": 240.0
    },
@@ -108933,7 +108933,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_motor_dc",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_dynamo",
    "lab": {
     "electrician": 200.0
    },
@@ -108972,7 +108972,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tl_motor_lorry",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_motor_lorry",
    "lab": {
     "carpenter": 200.0,
     "engineer": 350.0
@@ -109013,7 +109013,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_motorcycle",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_omnibus",
    "lab": {},
    "mat": {
     "steel_plate_kg": 8.0
@@ -109050,7 +109050,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_muffler",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_muffler",
    "lab": {
     "smith": 100.0
    },
@@ -109095,7 +109095,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_oil_bath",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ball_bearing",
    "lab": {
     "machinist": 100.0
    },
@@ -109133,7 +109133,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_oil_pump",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_oil_pump",
    "lab": {
     "machinist": 180.0
    },
@@ -109171,7 +109171,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_omnibus",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_omnibus",
    "lab": {
     "carpenter": 300.0,
     "smith": 150.0
@@ -109212,7 +109212,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_penny_farthing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_safety_bicycle",
    "lab": {
     "carpenter": 140.0,
     "smith": 100.0
@@ -109251,7 +109251,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_piston_assembly",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_engine_block",
    "lab": {
     "machinist": 280.0
    },
@@ -109298,7 +109298,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_plain_bearing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ball_bearing",
    "lab": {
     "smith": 100.0
    },
@@ -109340,7 +109340,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_plate_clutch",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_plate_clutch",
    "lab": {
     "machinist": 200.0
    },
@@ -109387,7 +109387,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tl_pneumatic_tyre",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_pneumatic_tyre",
    "lab": {
     "chemist": 200.0
    },
@@ -109426,7 +109426,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_pressure_relief_valve",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_oil_pump",
    "lab": {
     "machinist": 130.0
    },
@@ -109463,7 +109463,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_propshaft",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_differential",
    "lab": {
     "machinist": 150.0
    },
@@ -109501,7 +109501,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_radiator",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_radiator",
    "lab": {
     "machinist": 200.0
    },
@@ -109547,7 +109547,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_road_roller",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_road_roller",
    "lab": {
     "engineer": 300.0,
     "machinist": 200.0
@@ -109589,7 +109589,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_roller_bearing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ball_bearing",
    "lab": {
     "machinist": 180.0
    },
@@ -109626,7 +109626,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_safety_bicycle",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_safety_bicycle",
    "lab": {
     "carpenter": 150.0,
     "machinist": 100.0
@@ -109665,7 +109665,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_shrink_fit",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_spoked_wheel",
    "lab": {
     "smith": 200.0
    },
@@ -109701,7 +109701,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_sliding_gearbox",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_plate_clutch",
    "lab": {
     "machinist": 220.0
    },
@@ -109748,7 +109748,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_snow_plough",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_motor_lorry",
    "lab": {
     "engineer": 200.0,
     "smith": 120.0
@@ -109786,7 +109786,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_solid_rubber_tyre",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_pneumatic_tyre",
    "lab": {
     "chemist": 130.0
    },
@@ -109823,7 +109823,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_spark_plug",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_magneto_ignition",
    "lab": {
     "machinist": 150.0
    },
@@ -109861,7 +109861,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_spoked_wheel",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_spoked_wheel",
    "lab": {
     "carpenter": 120.0,
     "smith": 80.0
@@ -109907,7 +109907,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tl_steam_tram",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_omnibus",
    "lab": {
     "engineer": 300.0,
     "machinist": 200.0
@@ -109948,7 +109948,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "tl_stirrup",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_horse_collar",
    "lab": {
     "smith": 60.0
    },
@@ -109995,7 +109995,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_synchromesh",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_plate_clutch",
    "lab": {
     "machinist": 280.0
    },
@@ -110033,7 +110033,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_tandem_harness",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_horse_collar",
    "lab": {
     "artisan": 120.0
    },
@@ -110078,7 +110078,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tl_taper_roller_bearing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_ball_bearing",
    "lab": {
     "machinist": 300.0
    },
@@ -110116,7 +110116,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_tarmacadam",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_macadam_road",
    "lab": {
     "chemist": 100.0,
     "engineer": 250.0
@@ -110156,7 +110156,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_thermostat",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_radiator",
    "lab": {
     "machinist": 120.0
    },
@@ -110202,7 +110202,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tl_throttle",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_carburettor",
    "lab": {
     "machinist": 120.0
    },
@@ -110239,7 +110239,7 @@
    "dev_years": 11,
    "gov": 0,
    "id": "tl_tractor",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_motor_lorry",
    "lab": {
     "engineer": 350.0,
     "machinist": 200.0
@@ -110278,7 +110278,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_transmission_lubrication",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_oil_pump",
    "lab": {
     "smith": 80.0
    },
@@ -110321,7 +110321,7 @@
    "dev_years": 7,
    "gov": 0,
    "id": "tl_trolleybus",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_omnibus",
    "lab": {
     "carpenter": 180.0,
     "electrician": 300.0
@@ -110361,7 +110361,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_tyre_bead",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_pneumatic_tyre",
    "lab": {
     "chemist": 140.0
    },
@@ -110399,7 +110399,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_tyre_tread",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_pneumatic_tyre",
    "lab": {
     "chemist": 160.0
    },
@@ -110435,7 +110435,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_universal_joint",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_differential",
    "lab": {
     "smith": 150.0
    },
@@ -110481,7 +110481,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_velocipede",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_safety_bicycle",
    "lab": {
     "carpenter": 120.0,
     "smith": 80.0
@@ -110520,7 +110520,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tl_vulcanized_rubber",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_pneumatic_tyre",
    "lab": {
     "chemist": 200.0
    },
@@ -110560,7 +110560,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_water_pump",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_radiator",
    "lab": {
     "machinist": 160.0
    },
@@ -110607,7 +110607,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_whippletree",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_horse_collar",
    "lab": {
     "carpenter": 80.0,
     "smith": 40.0
@@ -110655,7 +110655,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tl_windscreen_wiper",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_muffler",
    "lab": {
     "machinist": 150.0
    },
@@ -110692,7 +110692,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tl_wire_rope_brake",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_brake_shoe",
    "lab": {
     "smith": 80.0
    },
@@ -110734,7 +110734,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tl_wire_spoke_wheel",
-   "kb": "",
+   "kb": "86_transport_deep.md#tl_spoked_wheel",
    "lab": {
     "carpenter": 100.0,
     "smith": 140.0
@@ -110773,7 +110773,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_articulated_locomotive",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_slide_valve",
    "lab": {
     "engineer": 500.0,
     "machinist": 400.0,
@@ -110816,7 +110816,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_automatic_train_stop",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_semaphore_signal",
    "lab": {
     "electrician": 250.0,
     "engineer": 400.0
@@ -110855,7 +110855,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tr_axle_bearing_box",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_flanged_wheel",
    "lab": {
     "smith": 200.0
    },
@@ -110894,7 +110894,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_ballast_tank",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_windlass",
    "lab": {
     "engineer": 300.0
    },
@@ -110932,7 +110932,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_bilge_pump",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_windlass",
    "lab": {
     "carpenter": 150.0,
     "smith": 100.0
@@ -110972,7 +110972,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_blastpipe",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_locomotive_boiler",
    "lab": {
     "smith": 150.0
    },
@@ -111010,7 +111010,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_block_signalling",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_semaphore_signal",
    "lab": {
     "engineer": 250.0
    },
@@ -111047,7 +111047,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "tr_block_tackle",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_windlass",
    "lab": {
     "carpenter": 150.0,
     "smith": 50.0
@@ -111085,7 +111085,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_bogie_truck",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_flanged_wheel",
    "lab": {
     "engineer": 300.0,
     "smith": 200.0
@@ -111127,7 +111127,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_bowsprit",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_bowsprit",
    "lab": {
     "carpenter": 200.0,
     "smith": 50.0
@@ -111164,7 +111164,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tr_brake_shoe",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_brake_shoe",
    "lab": {
     "smith": 150.0
    },
@@ -111203,7 +111203,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_bullhead_rail",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_edge_rail",
    "lab": {
     "engineer": 250.0
    },
@@ -111242,7 +111242,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_canal_lift",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_canal_lock",
    "lab": {
     "engineer": 400.0
    },
@@ -111281,7 +111281,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_canal_lock",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_canal_lock",
    "lab": {
     "carpenter": 400.0,
     "engineer": 200.0
@@ -111320,7 +111320,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_capstan",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_windlass",
    "lab": {
     "carpenter": 150.0,
     "smith": 250.0
@@ -111361,7 +111361,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_carvel_planking",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_carvel_planking",
    "lab": {
     "carpenter": 600.0
    },
@@ -111397,7 +111397,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_catenary_overhead",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_electric_locomotive",
    "lab": {
     "engineer": 350.0
    },
@@ -111436,7 +111436,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tr_caulking_oakum",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_carvel_planking",
    "lab": {
     "sailor": 300.0
    },
@@ -111470,7 +111470,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_chain_cable",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_windlass",
    "lab": {
     "smith": 400.0
    },
@@ -111508,7 +111508,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tr_chair_key",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_edge_rail",
    "lab": {
     "smith": 200.0
    },
@@ -111547,7 +111547,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_clinker_planking",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_carvel_planking",
    "lab": {
     "carpenter": 500.0
    },
@@ -111583,7 +111583,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_compound_expansion",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_slide_valve",
    "lab": {
     "engineer": 400.0,
     "machinist": 300.0
@@ -111623,7 +111623,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_copper_sheathing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_carvel_planking",
    "lab": {
     "carpenter": 200.0,
     "smith": 300.0
@@ -111663,7 +111663,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "tr_diesel_electric",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_electric_locomotive",
    "lab": {
     "electrician": 300.0,
     "engineer": 500.0,
@@ -111706,7 +111706,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_double_bottom",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_iron_hull",
    "lab": {
     "engineer": 200.0,
     "smith": 300.0
@@ -111745,7 +111745,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "tr_dredger",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_dry_dock",
    "lab": {
     "engineer": 350.0,
     "machinist": 200.0
@@ -111786,7 +111786,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_dry_dock",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_dry_dock",
    "lab": {
     "engineer": 400.0
    },
@@ -111821,7 +111821,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_edge_rail",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_edge_rail",
    "lab": {
     "smith": 400.0
    },
@@ -111861,7 +111861,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_electric_locomotive",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_electric_locomotive",
    "lab": {
     "electrician": 300.0,
     "engineer": 400.0
@@ -111903,7 +111903,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tr_fishplate",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_edge_rail",
    "lab": {
     "smith": 150.0
    },
@@ -111942,7 +111942,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_flanged_wheel",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_flanged_wheel",
    "lab": {
     "millwright": 200.0,
     "smith": 300.0
@@ -111982,7 +111982,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_flatbottom_rail",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_edge_rail",
    "lab": {
     "engineer": 300.0
    },
@@ -112060,7 +112060,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tr_fore_and_aft_rigging",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_square_rig",
    "lab": {
     "sailor": 200.0
    },
@@ -112095,7 +112095,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_frame_first_construction",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_carvel_planking",
    "lab": {
     "carpenter": 400.0
    },
@@ -112130,7 +112130,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_grade_crossing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_points_frog",
    "lab": {
     "engineer": 200.0,
     "smith": 150.0
@@ -112169,7 +112169,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "tr_gyrocompass_repeater",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_chronometer",
    "lab": {
     "electrician": 200.0,
     "engineer": 300.0
@@ -112209,7 +112209,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tr_hopper_wagon",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_hopper_wagon",
    "lab": {
     "carpenter": 250.0,
     "smith": 100.0
@@ -112257,7 +112257,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tr_hull_sheathing_wood",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_carvel_planking",
    "lab": {
     "carpenter": 400.0
    },
@@ -112292,7 +112292,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_injector_feedwater",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_locomotive_boiler",
    "lab": {
     "engineer": 250.0,
     "machinist": 150.0
@@ -112333,7 +112333,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_interlocking_signal",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_semaphore_signal",
    "lab": {
     "engineer": 400.0,
     "machinist": 200.0
@@ -112375,7 +112375,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_iron_hull",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_iron_hull",
    "lab": {
     "smith": 500.0
    },
@@ -112414,7 +112414,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "tr_jib",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_square_rig",
    "lab": {},
    "mat": {
     "linen_kg": 200.0
@@ -112449,7 +112449,7 @@
    "dev_years": 4,
    "gov": 0,
    "id": "tr_keelson",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_carvel_planking",
    "lab": {
     "carpenter": 300.0
    },
@@ -112486,7 +112486,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_knuckle_coupler",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_screw_coupling",
    "lab": {
     "engineer": 400.0,
     "machinist": 250.0
@@ -112562,7 +112562,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_leading_truck",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_flanged_wheel",
    "lab": {
     "engineer": 250.0,
     "smith": 150.0
@@ -112603,7 +112603,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_lifeboat",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_lifeboat",
    "lab": {
     "carpenter": 300.0,
     "smith": 150.0
@@ -112642,7 +112642,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_locomotive_boiler",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_locomotive_boiler",
    "lab": {
     "engineer": 400.0,
     "smith": 300.0
@@ -112691,7 +112691,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "tr_log_sounding",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_chronometer",
    "lab": {
     "sailor": 150.0
    },
@@ -112729,7 +112729,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "tr_marine_chronometer",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_chronometer",
    "lab": {
     "optician": 200.0
    },
@@ -112768,7 +112768,7 @@
    "dev_years": 18,
    "gov": 0,
    "id": "tr_marine_diesel",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_engine",
    "lab": {
     "engineer": 400.0,
     "machinist": 300.0
@@ -112809,7 +112809,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_marine_engine",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_engine",
    "lab": {
     "engineer": 400.0,
     "machinist": 250.0
@@ -112851,7 +112851,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_marine_turbine",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_engine",
    "lab": {
     "engineer": 500.0,
     "machinist": 350.0
@@ -112891,7 +112891,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_marshalling_hump",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_points_frog",
    "lab": {
     "engineer": 300.0
    },
@@ -112928,7 +112928,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_mast_stepping",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_bowsprit",
    "lab": {
     "carpenter": 300.0,
     "smith": 150.0
@@ -112965,7 +112965,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_paddle_wheel",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_sternpost_rudder",
    "lab": {
     "carpenter": 300.0,
     "smith": 200.0
@@ -113006,7 +113006,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_pantograph",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_electric_locomotive",
    "lab": {
     "engineer": 250.0,
     "machinist": 150.0
@@ -113088,7 +113088,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_piston_valve",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_slide_valve",
    "lab": {
     "engineer": 300.0,
     "machinist": 200.0
@@ -113129,7 +113129,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "tr_points_frog",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_points_frog",
    "lab": {
     "engineer": 200.0,
     "smith": 400.0
@@ -113171,7 +113171,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tr_rail_gauge_standardization",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_sleeper_ballast",
    "lab": {},
    "mat": {},
    "name": "Standard rail gauge",
@@ -113205,7 +113205,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_rail_rolling",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_edge_rail",
    "lab": {
     "engineer": 400.0
    },
@@ -113245,7 +113245,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_rail_welding",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_edge_rail",
    "lab": {
     "engineer": 400.0,
     "machinist": 300.0
@@ -113286,7 +113286,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_reduction_gearing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_sternpost_rudder",
    "lab": {
     "engineer": 400.0,
     "machinist": 250.0
@@ -113326,7 +113326,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_reefing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_square_rig",
    "lab": {
     "sailor": 300.0
    },
@@ -113360,7 +113360,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_refrigerated_wagon",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_hopper_wagon",
    "lab": {
     "carpenter": 300.0,
     "engineer": 100.0
@@ -113400,7 +113400,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_rigging_block_lashing",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_bowsprit",
    "lab": {},
    "mat": {},
    "name": "Block rigging and rope lashing",
@@ -113431,7 +113431,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_riveted_plating",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_iron_hull",
    "lab": {
     "smith": 400.0
    },
@@ -113470,7 +113470,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_screw_coupling",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_screw_coupling",
    "lab": {
     "smith": 150.0
    },
@@ -113555,7 +113555,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_semaphore_signal",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_semaphore_signal",
    "lab": {
     "carpenter": 100.0,
     "smith": 100.0
@@ -113594,7 +113594,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_sextant_navigation",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_chronometer",
    "lab": {
     "engraver": 100.0,
     "optician": 300.0
@@ -113634,7 +113634,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_ship_telegraph",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_chronometer",
    "lab": {
     "electrician": 200.0
    },
@@ -113673,7 +113673,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_sleeper_ballast",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_sleeper_ballast",
    "lab": {
     "carpenter": 150.0,
     "labourer": 400.0
@@ -113710,7 +113710,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_sleeping_car",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_hopper_wagon",
    "lab": {
     "carpenter": 400.0,
     "smith": 100.0
@@ -113748,7 +113748,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_slide_valve",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_slide_valve",
    "lab": {
     "engineer": 200.0,
     "machinist": 150.0
@@ -113788,7 +113788,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_slipway_launch",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_dry_dock",
    "lab": {
     "carpenter": 300.0,
     "engineer": 150.0
@@ -113824,7 +113824,7 @@
    "dev_years": 3,
    "gov": 0,
    "id": "tr_smoke_box",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_locomotive_boiler",
    "lab": {
     "smith": 200.0
    },
@@ -113861,7 +113861,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_sprung_buffer",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_screw_coupling",
    "lab": {
     "millwright": 100.0,
     "smith": 200.0
@@ -113901,7 +113901,7 @@
    "dev_years": 2,
    "gov": 0,
    "id": "tr_square_rig",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_square_rig",
    "lab": {},
    "mat": {
     "linen_kg": 500.0
@@ -113934,7 +113934,7 @@
    "dev_years": 1,
    "gov": 0,
    "id": "tr_staysail",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_square_rig",
    "lab": {},
    "mat": {
     "linen_kg": 200.0
@@ -113969,7 +113969,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_steel_hull",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_iron_hull",
    "lab": {
     "engineer": 400.0,
     "smith": 400.0
@@ -114009,7 +114009,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_stephenson_linkmotion",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_slide_valve",
    "lab": {
     "engineer": 300.0,
     "smith": 200.0
@@ -114050,7 +114050,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_stern_tube",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_sternpost_rudder",
    "lab": {
     "engineer": 300.0,
     "machinist": 150.0
@@ -114090,7 +114090,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_stockless_anchor",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_windlass",
    "lab": {
     "smith": 300.0
    },
@@ -114129,7 +114129,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_submarine_hull",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_lifeboat",
    "lab": {
     "engineer": 500.0
    },
@@ -114168,7 +114168,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_superheater",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_locomotive_boiler",
    "lab": {
     "engineer": 250.0
    },
@@ -114209,7 +114209,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "tr_tank_wagon",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_hopper_wagon",
    "lab": {
     "smith": 300.0
    },
@@ -114248,7 +114248,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "tr_third_rail",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_electric_locomotive",
    "lab": {
     "engineer": 250.0
    },
@@ -114286,7 +114286,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "tr_track_circuit",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_semaphore_signal",
    "lab": {
     "electrician": 200.0,
     "engineer": 300.0
@@ -114328,7 +114328,7 @@
    "dev_years": 18,
    "gov": 0,
    "id": "tr_triple_expansion",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_marine_engine",
    "lab": {
     "engineer": 450.0,
     "machinist": 300.0
@@ -114369,7 +114369,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tr_tug",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_dry_dock",
    "lab": {
     "carpenter": 250.0,
     "engineer": 150.0
@@ -114410,7 +114410,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_turntable",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_points_frog",
    "lab": {
     "carpenter": 150.0,
     "smith": 300.0
@@ -114451,7 +114451,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_vacuum_brake",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_brake_shoe",
    "lab": {
     "engineer": 300.0,
     "machinist": 200.0
@@ -114493,7 +114493,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_variable_pitch_propeller",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_sternpost_rudder",
    "lab": {
     "engineer": 400.0,
     "machinist": 250.0
@@ -114534,7 +114534,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "tr_walschaerts_valve",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_slide_valve",
    "lab": {
     "engineer": 350.0,
     "machinist": 200.0
@@ -114575,7 +114575,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "tr_watertight_bulkhead",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_iron_hull",
    "lab": {
     "carpenter": 250.0
    },
@@ -114610,7 +114610,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_welded_hull",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_iron_hull",
    "lab": {
     "electrician": 300.0,
     "engineer": 400.0
@@ -114651,7 +114651,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "tr_westinghouse_brake",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_brake_shoe",
    "lab": {
     "engineer": 400.0,
     "machinist": 300.0
@@ -114693,7 +114693,7 @@
    "dev_years": 6,
    "gov": 0,
    "id": "tr_windlass",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_windlass",
    "lab": {
     "carpenter": 150.0,
     "smith": 300.0
@@ -114734,7 +114734,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "tr_wooden_waggonway",
-   "kb": "",
+   "kb": "86_transport_deep.md#tr_sleeper_ballast",
    "lab": {
     "carpenter": 200.0
    },

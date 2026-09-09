@@ -1,752 +1,752 @@
 # Module 87: Construction Engineering
 
-Say the honest thing first, because a builder who has raised the Pantheon's dome will stop listening the moment you patronise him. Rome already has hydraulic concrete that cures underwater and gets stronger for decades. Rome already has the true arch and the groin vault, and has used them to bridge valleys and roof bath halls wider than anything built again for a thousand years. Rome already has the groma and the chorobates and a corps of military engineers who can lay a camp, a road, and a siege ramp to a standard modern armies would recognise. If your plan for this module is "teach Romans to build," burn it. You have nothing to teach them there.
+Say the honest thing first, or a builder who raised the Pantheon's dome will stop listening. Rome already has hydraulic concrete that cures underwater and strengthens for decades. Rome already has the true arch and the groin vault, spanning valleys and bath halls nothing will match for a thousand years. Rome already has the groma, the chorobates, and a corps of military engineers as competent as any modern army's. If your plan is "teach Romans to build," burn it.
 
-What Rome does not have is four things, and every one of the 101 items below is one of those four things or a machine built to deliver one of them. First: a cement that behaves the same on the hundredth batch as the first, because Roman pozzolana concrete is excellent but its quality rides on which shore the ash came from and how the mason's eye judged the mix that morning. Second: iron, and later steel, doing useful work in tension, because Rome has plenty of wrought iron for cramps and dowels but no cast iron in the West, no crucible steel of its own, and nothing like the tonnage a load-bearing frame needs. Third: the theory of the beam, meaning the mathematics that tells you *why* a proportion worked, not just that it worked last time, so you can change the span without rebuilding a failure to find the new limit. Fourth: the machinery of scale, cranes and mixers and pumps and shafts that let ten men do what previously needed a thousand, mostly because it needs continuous mechanical power Rome has only in trickle amounts (see `40_power_precision.md`). Everything from cast iron beams to skyscraper frames to sewage traps below is downstream of solving one of those four. Fix them roughly in that order and the rest of this module is carpentry.
+What Rome lacks is four things, and all 101 items below serve one of them. First: a cement that behaves the same on the hundredth batch as the first, not one riding on which shore the ash came from and the mason's eye that morning. Second: iron, then steel, doing real work in tension, since Rome has wrought iron for cramps but no cast iron in the West, no crucible steel of its own, and nowhere near a load-bearing frame's tonnage. Third: the theory of the beam, the mathematics of *why* a proportion works, not just that it worked last time, so a span can change without rebuilding a failure to find the new limit. Fourth: machinery of scale, cranes, mixers, pumps, needing continuous mechanical power Rome has only in trickle amounts (`40_power_precision.md`). Fix those roughly in order and the rest is carpentry.
 
 ---
 
 ### cn_pozzolana_concrete - Pozzolana hydraulic concrete (*opus caementicium*)
 
-**What it is / why you want it.** The concrete Rome already makes: quicklime plus volcanic ash sets underwater and keeps gaining strength for decades. This entry exists to give the tech tree a node, not to teach it.
+**What it is.** Quicklime plus volcanic ash, sets underwater, gains strength for decades. Already Roman; this entry exists to give the tech tree a node.
 Also covers: cn_mortar.
 
-**Why you would never guess this.** Nothing here is non-obvious to a Roman. What is non-obvious to a modern visitor is that this is not a lesser Portland cement, it is chemically different and, for marine work, arguably better; see `85_transport_civil.md#concrete_and_cement` for the full account.
+**Why you'd never guess this.** Nothing here for a Roman. For a modern visitor: this is not lesser Portland cement, it is chemically different and, for marine work, arguably better. Full account: `85_transport_civil.md#concrete_and_cement`.
 
-**Prerequisites.** Lime burning (routine), pozzolana access, formwork carpentry.
+**Prerequisites.** Lime burning, pozzolana access, formwork carpentry.
 
-**Roman-available inputs.** *Calx* (quicklime, any limestone district), *pulvis puteolanus* (pozzolana, Bay of Naples, and other volcanic ash from Campania), *caementa* (rubble aggregate), fresh water. Plain lime mortar (no pozzolana) is the everyday binder for ordinary walling everywhere lime is burned.
+**Roman-available inputs.** *Calx* (quicklime), *pulvis puteolanus* (pozzolana, Bay of Naples), *caementa* (rubble), fresh water. Plain lime mortar is the everyday binder without pozzolana.
 
-**Procedure.** Slake the quicklime, mix with pozzolana and rubble roughly by Vitruvius's ratios (II.6, attributed, verify by testing your own ash), pack into formwork, cure weeks to years. The one genuine improvement available now, without any new chemistry: cast a labelled test cylinder from every batch, crush a matched cylinder at fixed intervals with known stone weights, and keep a written log. No Roman source shows this being done systematically.
+**Procedure.** Slake lime, mix with pozzolana and rubble near Vitruvius's ratios (II.6, verify by testing your own ash), pack in formwork, cure weeks to years. Real addition: cast a labelled test cylinder per batch, crush matched cylinders at intervals with known weights, log it. No Roman source does this systematically.
 
-**How you know it worked.** A month-old test cylinder resists a load your log predicts within a small margin; an opened underwater section is uniform and rings hard when struck, not crumbly.
+**How you know it worked.** A month-old cylinder resists the load your log predicts; an opened underwater section rings hard, not crumbly.
 
-**Failure modes.** Weak or wrong ash gives a soft set that never fully hardens. Batch-to-batch variation, invisible without testing, means one bad wall in ten looks identical to the other nine until it fails decades later.
+**Failure modes.** Weak ash never fully hardens. Batch variation is invisible without testing.
 
-**Cost & labour.** DERIVED: testing costs one attentive foreman and a wax tablet, nothing else.
+**Cost & labour.** DERIVED: one attentive foreman and a wax tablet.
 
-**Danger.** Slaking lime burns skin and eyes on contact, wash immediately with water. No social danger.
+**Danger.** Slaking lime burns skin and eyes, wash immediately. No social danger.
 
-**Confidence: HIGH** on the chemistry and Roman practice.
+**Confidence: HIGH.**
 
 ### cn_quarrying_wedge - Stone quarrying with wedges
 
-**What it is / why you want it.** Splitting stone along a chosen plane instead of fracturing it at random, which is what makes squared building block possible at all.
+**What it is.** Splitting stone along a chosen plane instead of random fracture, already routine in every legionary quarry.
 Also covers: cn_stone_saw, cn_stone_polish, cn_gang_saw.
 
-**Why you would never guess this.** Also nothing here for a Roman; every legionary quarry and every marble yard at Carrara and Docimium already runs this way.
+**Why you'd never guess this.** Nothing here for a Roman either.
 
-**Prerequisites.** Iron wedge and mallet, a reader of the stone's grain.
+**Prerequisites.** Iron wedges, a reader of the stone's grain.
 
-**Roman-available inputs.** Iron wedges (*cunei*), sometimes dry wood wedges swollen with water in a pinch, emery (Naxos) for polishing, sand and water for sawing, since the blade itself never touches the cut, the abrasive does the work and the blade is only a guide.
+**Roman-available inputs.** Iron *cunei*, emery (Naxos) for polish, sand and water for sawing, the abrasive cuts, the blade only guides.
 
-**Procedure.** Mark a line of holes along the natural bedding or a chosen split plane, drive wedges in sequence not all at once, listen for the pitch change that says the crack is running true. For sawing, drag an iron blade with wet sand under it back and forth; for polishing, work down through progressively finer emery grits by hand. Gang saw is the one genuine addition Rome lacks in practice, several parallel blades in one frame, water or slave-powered, cutting a whole block into slabs at once instead of one saw at a time; the hard part is keeping every blade cutting at the same rate, since one that binds ruins the block.
+**Procedure.** Mark holes along the bedding plane, drive wedges in sequence, not at once, listen for the pitch change that says the crack runs true. Sawing: drag iron blade with wet sand beneath. Polishing: work down through finer emery by hand. Gang saw is the genuine addition, several parallel blades cutting one block into slabs at once; the hard part is equal blade tension, one that binds ruins the block.
 
-**How you know it worked.** The split face is flat and follows your marked line, not a random fracture surface.
+**How you know it worked.** The split face follows your marked line.
 
-**Failure modes.** Wedges struck out of sequence split the block wrong. A gang saw with unequal blade tension warps or binds mid-cut, wasting the whole slab.
+**Failure modes.** Out-of-sequence wedges split wrong; unequal gang-saw tension warps the cut.
 
-**Cost & labour.** MEASURED order of magnitude: a skilled quarryman splits a modest building block in under a day; a large obelisk blank is a season's project with dozens of men, as Aswan's evidence shows.
+**Cost & labour.** MEASURED: a building block splits in under a day; an obelisk blank is a season, per Aswan.
 
-**Danger.** Flying stone chips, crushed fingers, collapsing quarry faces. No social danger, quarrying is a normal state and private industry.
+**Danger.** Flying chips, crushed fingers, collapsing faces. No social danger.
 
 **Confidence: HIGH.**
 
 ### cn_true_arch - True arch in stone (*fornix*)
 
-**What it is / why you want it.** Compression-only load path around an opening, letting stone (strong in compression, weak in tension) span without ever bending.
+**What it is.** Compression-only load path around an opening. Already extensive Roman practice.
 Also covers: cn_groin_vault, cn_ribbed_vault, cn_flying_buttress.
 
-**Why you would never guess this.** Also already Roman, extensively. What is missing is not the arch, it is a way to *calculate* the safe thickness instead of copying a proportion (span-to-thickness ratios that worked at the Colosseum) into a bigger arch where the same ratio quietly fails. The line of thrust, the true path the compression takes through the masonry, must stay inside the stone at every point; nobody in 100 AD can compute that curve, they can only build conservatively thick and watch what stands.
+**Why you'd never guess this.** What's missing is not the arch, it's calculating safe thickness instead of copying a proportion (Colosseum ratios) into a bigger arch where it quietly fails. The thrust line, the true compression path, must stay inside the stone everywhere; nobody in 100 AD can compute that curve, so they build thick and watch what stands.
 
-**Prerequisites.** `cap_tol_1mm` stonecutting tolerance, cn_quarrying_wedge, centring carpentry to hold voussoirs until the keystone locks.
+**Prerequisites.** `cap_tol_1mm`, cn_quarrying_wedge, centring carpentry.
 
-**Roman-available inputs.** Cut stone voussoirs, or Roman concrete cast over a wood centring and then the centring struck once cured, brick ribs (as used at the Pantheon).
+**Roman-available inputs.** Cut voussoirs, or concrete cast over struck centring, brick ribs (as at the Pantheon).
 
-**Procedure.** Rome already does this at scale. The two genuine additions: (1) the groin vault (two barrel vaults crossing at right angles) concentrates load onto four corner points instead of two continuous walls, already Roman practice, extend it deliberately to free up wall space for windows; (2) the ribbed vault, building the diagonal ribs first as a light stone skeleton, then filling thin webs between them, which is lighter and lets you see the load path by eye, a medieval refinement Rome can reach by simply building the ribs as temporary formwork for the web instead of one solid shell; (3) the flying buttress, an arch that leaps outward from a high wall to a free-standing pier, taking the vault's outward thrust away from the wall entirely so the wall itself can be thin and full of glass, useful only once a building wants tall thin walls, which Roman basilicas mostly do not.
+**Procedure.** (1) Groin vault: two barrel vaults crossing at right angles, concentrating load onto four corner points, already Roman, extend deliberately to free wall space. (2) Ribbed vault: build diagonal ribs first as a light skeleton, then thin webs between, lighter, and the load path is visible by eye; use the ribs as formwork for the web. (3) Flying buttress: an arch leaping from a high wall to a free pier, carrying vault thrust away so the wall stays thin and glazed, useful only where thin tall walls are wanted, which Roman basilicas mostly don't.
 
-**How you know it worked.** Struck centring, the arch stands with no visible sag; a straightedge across the underside shows no deflection after a year.
+**How you know it worked.** No sag against a straightedge a year after striking centring.
 
-**Failure modes.** Thrust escaping the masonry at the haunches, causing a crack pattern like a hinge; ribbed vault webs poured before the ribs have set, collapsing the whole skeleton; flying buttress abutment too small, which simply pushes the pier over.
+**Failure modes.** Thrust escaping at the haunches, a hinge-like crack; webs poured before ribs set, collapsing the skeleton; undersized buttress abutment, which just pushes the pier over.
 
-**Cost & labour.** ESTIMATED, scales with span cubed roughly; a modest ribbed vault bay is weeks of masons, a cathedral-scale nave is a generation's project as European history shows.
+**Cost & labour.** ESTIMATED, scales roughly with span cubed; a modest bay is weeks, cathedral-scale is a generation.
 
-**Danger.** Falling centring timber and collapsing partial vaults kill masons; this is the single most dangerous trade in this module.
+**Danger.** Falling centring and partial vault collapse, the deadliest trade in this module.
 
-**Confidence: HIGH** on Roman baseline, **MEDIUM** on ribbed/buttress transfer without any calculus, since it was in fact built that way historically by trial, injury, and accumulated craft rule.
+**Confidence: HIGH** on baseline, **MEDIUM** on rib/buttress transfer without calculus, historically built this way by trial and injury.
 
 ### cn_crane_treadwheel - Treadwheel crane (*polyspastos*)
 
-**What it is / why you want it.** A man-powered drum crane, already Roman, that raises several tonnes with a handful of men walking inside a wheel.
+**What it is.** Man-powered drum crane, already Roman, raising tonnes with a handful of men walking a wheel.
 Also covers: cn_block_tackle_hoist.
 
-**Why you would never guess this.** Not non-obvious, Vitruvius describes it (*De Architectura* X). What is worth stating is the arithmetic: mechanical advantage equals the number of rope parts under load, minus 10 to 20 percent lost to friction in the sheaves (ESTIMATED, basis: typical block friction losses in wooden-sheave tackle).
+**Why you'd never guess this.** Vitruvius describes it (*De Architectura* X). Worth stating: advantage equals rope parts under load, minus 10-20% to sheave friction (ESTIMATED, typical wooden-sheave loss).
 
-**Prerequisites.** Rope (hemp), timber, bronze or iron sheave bearings.
+**Prerequisites.** Hemp rope, timber, bronze sheave bearings.
 
-**Roman-available inputs.** Hemp rope, seasoned timber, bronze pulley wheels.
+**Roman-available inputs.** Hemp rope, seasoned timber, bronze pulleys.
 
-**Procedure.** Rig a rope through multiple pulley blocks; each additional rope part shares the load, so a five-part tackle needs roughly a fifth the pulling force for the same weight, less the friction tax. A treadwheel converts men walking on the inside of a large wheel into that pulling force, using their body weight rather than arm strength, which is why a handful of men can lift several tonnes.
+**Procedure.** Rig rope through multiple blocks; each part shares the load. A treadwheel turns men's body weight, not arm strength, into pull, which is why few men lift tonnes.
 
-**How you know it worked.** Load rises smoothly; if the rope creeps or slips on a sheave, the groove is worn smooth or wet, replace or dress it.
+**How you know it worked.** Load rises smoothly; creep or slip means a worn or wet groove.
 
-**Failure modes.** Rope slip on worn sheaves; overloading a single rope part beyond its breaking strength snaps it without warning, dropping the load.
+**Failure modes.** Slip on worn sheaves; overloading one rope part snaps it without warning.
 
-**Cost & labour.** MEASURED order of magnitude, attested at multiple-tonne column and obelisk lifts across the Empire.
+**Cost & labour.** MEASURED, attested at multi-tonne column and obelisk lifts.
 
-**Danger.** A snapped rope or a wheel operator caught inside a wheel that overruns kills. Socially unremarkable, a normal construction trade.
+**Danger.** Snapped rope, or an operator caught by an overrunning wheel. Socially unremarkable.
 
 **Confidence: HIGH.**
 
 ### cn_scaffolding - Timber scaffolding system
 
-**What it is / why you want it.** A temporary timber platform that lets masons work at height, already routine Roman practice on any tall building.
+**What it is.** Temporary timber platform for working at height, already routine.
 
-**Why you would never guess this.** Obvious once you want it. The one non-obvious point: lashing discipline, not lumber, is what actually holds a scaffold together, one untied joint at the wrong point can unravel a whole bay under load.
+**Why you'd never guess this.** Obvious once you want it. Non-obvious point: lashing discipline, not lumber, holds it together, one untied joint can unravel a bay.
 
-**Prerequisites.** Timber poles, rope or withies for lashing.
+**Prerequisites.** Timber poles, rope or withies.
 
-**Roman-available inputs.** Fir or pine poles, hemp rope or green withy for lashing.
+**Roman-available inputs.** Fir or pine poles, hemp rope, green withy.
 
-**Procedure.** Erect vertical standards, tie horizontal ledgers at working-height intervals, brace diagonally, and never trust a single lashing to carry a joint alone, double it. Inspect for creep (visible sag under load) daily.
+**Procedure.** Erect standards, tie ledgers at working height, brace diagonally, double every lashing that carries a joint. Inspect for creep daily.
 
-**How you know it worked.** No visible sag under a loaded plank; a hard shove doesn't rack the frame sideways.
+**How you know it worked.** No visible sag under a loaded plank; a shove doesn't rack the frame.
 
-**Failure modes.** A single failed lashing propagates, since load redistributes suddenly onto neighbouring ties which were not sized for it.
+**Failure modes.** One failed lashing propagates as load redistributes onto ties not sized for it.
 
-**Cost & labour.** MEASURED as a normal minor cost line on any Roman building project.
+**Cost & labour.** MEASURED, a normal minor cost line.
 
-**Danger.** Falls are the main hazard of the whole construction trade; workers visibly fear a scaffold that deflects, and they are right to.
+**Danger.** Falls are the trade's main hazard.
 
 **Confidence: HIGH.**
 
 ### cn_aqueduct - Masonry aqueduct arch bridge (*aqua ducta*)
 
-**What it is / why you want it.** Carrying a level water channel across a valley on an arcade, already Roman practice at enormous scale, nine lines feeding Rome by Frontinus's survey.
+**What it is.** Level water channel carried across a valley on an arcade, already Roman at huge scale, nine lines feeding Rome per Frontinus.
 Also covers: cn_siphon, cn_sewer_system, cn_water_main.
 
-**Why you would never guess this.** Also not non-obvious to Rome. Worth stating precisely: the channel gradient must stay nearly constant, water pressure in an open channel is static per section, not dynamic, so a single arch's failure among dozens is locally catastrophic but the rest of the line survives, unlike a single point of failure in a pressurised pipe.
+**Why you'd never guess this.** Not non-obvious to Rome. Worth stating: pressure in an open channel is static per section, so one arch's failure among dozens is local, unlike a single point of failure in a pressurised pipe.
 
-**Prerequisites.** cn_true_arch, chorobates levelling (see `85_transport_civil.md#surveying_precision`), lead or ceramic pipe for final runs.
+**Prerequisites.** cn_true_arch, chorobates levelling (`85_transport_civil.md#surveying_precision`), lead or ceramic pipe.
 
-**Roman-available inputs.** Cut stone and concrete arcading, lead pipe (*fistulae plumbeae*) or the safer earthenware pipe (*fistulae fictiles*, Vitruvius's own preference) for pressurised siphon crossings, ceramic sewer pipe.
+**Roman-available inputs.** Cut stone/concrete arcading, lead pipe (*fistulae plumbeae*) or safer ceramic (*fistulae fictiles*, Vitruvius's own preference), ceramic sewer pipe.
 
-**Procedure.** Level a gentle continuous fall with the chorobates, arcade across valleys too deep to fill, drop into an inverted siphon (a sealed pipe running down into the valley and back up, driven by the head of water behind it) where an arcade would be absurdly tall, and gravity-drain waste through sloped sewer pipe (Cloaca Maxima being the standing proof of scale). A siphon must stay entirely full and sealed, any trapped air pocket stops the flow dead, and sediment collects at the low point and must be periodically flushed.
+**Procedure.** Level a gentle continuous fall, arcade across deep valleys, drop into an inverted siphon (sealed pipe down and back up, driven by head of water) where an arcade would be absurd, drain waste through sloped sewer pipe (Cloaca Maxima the proof of scale). A siphon must stay full and sealed, one trapped air pocket stops flow; sediment collects at the low point and needs periodic flushing.
 
-**How you know it worked.** Continuous flow at the delivery end matching the intake, no air hammering in the siphon pipe.
+**How you know it worked.** Continuous matched flow at delivery, no hammering in the siphon.
 
-**Failure modes.** A single arch failure drops the channel locally; an air lock in a siphon halts the whole line until purged; unflushed sediment eventually chokes a main.
+**Failure modes.** One arch failure drops the channel locally; an air lock halts a siphon line; unflushed sediment chokes a main.
 
-**Cost & labour.** MEASURED, Rome's own aqueduct system is the evidence; a full line is a state-scale, multi-year project.
+**Cost & labour.** MEASURED, Rome's own system is the evidence.
 
-**Danger.** Collapsing arcading during construction; lead pipe risk is a slow chronic exposure, avoid boiling acidic liquids in it (see `85_transport_civil.md#water_supply_sanitation`), not an acute one.
+**Danger.** Collapsing arcading during construction; lead is a slow chronic risk, don't boil acidic liquids in it.
 
 **Confidence: HIGH.**
 
-### cn_portland_cement - Portland cement powder (*no ancient term*)
+### cn_portland_cement - Portland cement powder
 
-**What it is / why you want it.** A binder fired hot enough to *clinker*, not merely calcine, giving a strength and consistency pozzolana concrete cannot match batch to batch.
+**What it is.** A binder fired hot enough to clinker, not merely calcine, giving strength and consistency pozzolana cannot match batch to batch.
 Also covers: cn_rotary_cement_kiln, cn_cement_clinker_grinding, cn_gypsum_plaster, cn_artificial_stone.
 
-**Why you would never guess this.** The word "cement" tricks a modern visitor into thinking this is what Rome already has. It is not. Lime burning calcines limestone around 900-1000 C, driving off carbon dioxide. Portland clinker requires roughly 1450 C, hot enough that the raw meal partially melts and recombines into new mineral compounds (calcium silicates) that pozzolana concrete never forms. This is a different kiln, a different fuel budget, and a different furnace design, not a stronger version of the old one. And the grinding afterward matters almost as much as the firing: unground clinker is nearly inert, only fine grinding exposes enough surface area to hydrate fast.
+**Why you'd never guess this.** "Cement" tricks a visitor into thinking Rome already has this. Lime burning calcines around 900-1000 C; Portland clinker needs roughly 1450 C, hot enough the raw meal partly melts and recombines into calcium silicates pozzolana never forms. Different kiln, different fuel budget, not a stronger old one. Grinding the clinker after matters almost as much as firing it: unground clinker is nearly inert.
 
-**Prerequisites.** `cap_heat_1600` furnace capability (roughly matching `10_metallurgy.md#high_temp_furnace`), limestone and clay quarrying, a mechanical grinding mill (water or animal powered, see `40_power_precision.md#water_power_scaleup`).
+**Prerequisites.** `cap_heat_1600` (roughly `10_metallurgy.md#high_temp_furnace`), limestone and clay quarrying, a mechanical mill (`40_power_precision.md#water_power_scaleup`).
 
-**Roman-available inputs.** Limestone (everywhere lime is already burned), clay (any brickyard), gypsum (Cyprus, Sicily, widely traded already as *gypsum* for plaster) added at grinding to control set speed.
+**Roman-available inputs.** Limestone, clay, gypsum (Cyprus, Sicily, already traded) added at grinding to control set speed.
 
-**Procedure.** (1) Grind limestone and clay roughly 4:1 by mass (ESTIMATED, standard modern raw-mix ratio, not a Roman-attested figure) into a wet slurry. (2) Feed the slurry into a rotary kiln, a long slightly tilted cylinder turning 1-3 rpm so material tumbles slowly toward the hot end; flame temperature at the firing end must reach roughly 1800 C to hold the material at 1450 C, and refractory lining must survive that heat without slumping. (3) The output, clinker, is dark grey, glassy, pea to walnut sized nodules; quench and cool it. (4) Grind the clinker fine in a ball mill with a small amount of gypsum (a few percent) to slow the set to a workable hour or two instead of minutes; grinding heats the mill, and overheated cement begins hydrating inside the mill itself, ruining it, so cooling during grinding is essential. Gypsum plaster is a separate, easier product: calcine gypsum gently (under 200 C, far below clinkering) and it sets in minutes when wetted, useful for fast interior finishing but useless outdoors, it dissolves in rain. Cast artificial stone is simply Portland concrete poured into reusable moulds to mimic dressed masonry, saving quarrying labour at the cost of mould-making and slower curing per piece.
+**Procedure.** (1) Grind limestone:clay roughly 4:1 by mass (ESTIMATED, standard raw-mix ratio) into slurry. (2) Feed a rotary kiln, a long tilted cylinder turning 1-3 rpm; flame temperature at the firing end must reach roughly 1800 C to hold material at 1450 C; refractory lining must survive it. (3) Output is clinker, dark grey glassy nodules; quench and cool. (4) Grind fine in a ball mill with a little gypsum to slow set to an hour or two; grinding heats the mill, and overheated cement hydrates inside it, ruining the batch, so cool while grinding. Gypsum plaster is separate and easier: calcine gently under 200 C, sets in minutes wetted, fast but ruined by rain outdoors. Artificial stone is just Portland concrete poured into reusable moulds mimicking dressed masonry.
 
-**How you know it worked.** Clinker rings when struck and does not slake or crumble in water the way underburned lime does; ground cement mixed with water sets hard within hours and gains most of its strength within a month, testable the same way as pozzolana, cast cylinders, logged loads.
+**How you know it worked.** Clinker rings when struck, doesn't slake in water; ground cement sets hard within hours, most strength within a month, tested like pozzolana.
 
-**Failure modes.** Underfired clinker (too cool, or fed too fast) stays soft and chalky, useless. Overground, overheated cement in the mill "flash sets" before it ever reaches the site. Wrong gypsum dose gives either a set so fast you cannot place it or one so slow the site stalls.
+**Failure modes.** Underfired clinker stays chalky; overground overheated cement flash-sets in the mill; wrong gypsum dose ruins placement timing.
 
-**Cost & labour.** ESTIMATED as a major standalone industrial project: a purpose-built kiln, a fuel supply far beyond ordinary lime burning, and a grinding mill needing continuous mechanical power. Not a near-term craft project; treat as a generation-scale industrial commitment.
+**Cost & labour.** ESTIMATED, a major standalone industrial project, generation-scale, not a first attempt.
 
-**Danger.** Kiln burns, refractory collapse at the hot end, silicosis-type lung damage from clinker dust over years of grinding work without protection. No social danger, cement making reads as an ambitious but legitimate industrial venture.
+**Danger.** Kiln burns, refractory collapse, silicosis from long grinding exposure. No social danger.
 
-**Confidence: HIGH** on the chemistry and temperatures, **LOW** on any near-term Roman timeline; this is explicitly the far end of a long branch, not a first project.
+**Confidence: HIGH** on chemistry and temperatures, **LOW** on near-term Roman timeline.
 
-### cn_post_lintel - Post and lintel structure, the theory of the beam
+### cn_post_lintel - Post and lintel, the theory of the beam
 
-**What it is / why you want it.** The plain beam across two supports, and, more valuably, the mathematics of *why* it holds or breaks, which nobody in 100 AD possesses even though everybody in 100 AD builds beams.
+**What it is.** The plain beam across two supports, and the mathematics of why it holds or breaks, which nobody in 100 AD has even though everybody builds beams.
 Also covers: cn_cantilever.
 
-**Why you would never guess this.** This is the real non-obvious kernel of the whole module. A beam under load bends; the top fibre shortens (compression) and the bottom fibre stretches (tension), with a neutral plane between them carrying no stress at all. Stone and cast material are strong in compression and weak in tension, so a stone or plain-concrete beam always fails from the bottom up, a crack starting on the underside at midspan, invisible until it is most of the way through. A Roman mason knows empirically that a thicker beam spans further and that stone beams should stay short; he does not know that deflection scales with the *cube* of the span, so a beam twice as long sags eight times as much for the same load, which is why doubling a proportion that worked at one scale fails badly at twice the scale. This single relationship, correctly used, is why post-Roman engineers eventually stop copying old ratios and start calculating new ones; incorrectly ignored, it is why every "just make it bigger" bridge and roof in this module's failure list actually failed. A cantilever, a beam fixed at one end and free at the other, makes the problem worse: it has no support to redistribute load to, so its fixed end carries the full bending moment, and a short-looking overhang can already be close to its limit, since the deflection-cubed relationship punishes any added length hardest right where you can least see it.
+**Why you'd never guess this.** This is the real kernel of the module. A loaded beam bends: top fibre shortens (compression), bottom fibre stretches (tension), a neutral plane between carries nothing. Stone and plain concrete are strong in compression, weak in tension, so they always fail bottom-up, a crack starting underneath at midspan, invisible until nearly through. A mason knows a thicker beam spans further; he does not know deflection scales with the *cube* of span, so doubling the length gives eight times the sag for the same load, which is why copying a proportion at twice the scale fails badly. A cantilever, fixed one end, free the other, has no support to share load with, so its fixed end carries the full bending moment; a short-looking overhang can already be near its limit, worst exactly where you can't see it.
 
 **Prerequisites.** `cap_tol_1mm`, timber or dressed stone.
 
-**Roman-available inputs.** Seasoned oak or fir beams, dressed stone lintels, iron cramps to tie lintel to post where Rome already does so.
+**Roman-available inputs.** Seasoned oak or fir, dressed stone lintels, iron cramps.
 
-**Procedure.** For any beam, keep material where the calculation (even an empirical, tested-to-failure calculation, not a formal one) says tension will occur, and never rely on a material weak in tension to carry a span longer than proportions already tested to failure. For a cantilever, treat the fixed end as the single critical section and never extend it past a length you have tested a matching sample to destruction on first.
+**Procedure.** Keep material where tension will occur, never rely on tension-weak material past a span already tested to failure. Treat a cantilever's fixed end as the single critical section, never extend past a tested length.
 
-**How you know it worked.** A loaded test beam, taken to visible sag but not failure, springs back close to straight when unloaded; permanent set (a beam that stays bent) means you are near the limit and must not build that span again without more material.
+**How you know it worked.** A test beam loaded to visible sag, not failure, springs back near-straight when unloaded; permanent set means you're near the limit.
 
-**Failure modes.** Bottom-fibre cracking in stone or plain concrete beams, invisible from above; cantilevers extended past a tested length that fail suddenly with almost no warning sag, since brittle materials give little visible deflection before snapping.
+**Failure modes.** Invisible bottom-fibre cracking; cantilevers extended past a tested length fail suddenly with little warning sag.
 
-**Cost & labour.** ESTIMATED, testing to failure costs one destroyed sample per span you have not already proven, cheap insurance against a building-scale failure.
+**Cost & labour.** ESTIMATED, one destroyed test sample per unproven span, cheap insurance.
 
-**Danger.** Sudden, unannounced collapse, the single most dangerous property of any beam in tension-weak material. No social danger; beam-testing reads as ordinary engineering caution.
+**Danger.** Sudden unannounced collapse. No social danger.
 
-**Confidence: HIGH** on the physics, textbook and well attested; **HIGH** on Roman-era ignorance of it as formal theory, MEDIUM on how much was captured as informal craft rule.
+**Confidence: HIGH** on physics; **HIGH** on Roman ignorance of it as formal theory, **MEDIUM** on how much survives as craft rule.
 
 ### cn_king_post - King post roof truss
 
-**What it is / why you want it.** A triangular timber frame that converts a roof's bending problem into pure tension in some members and pure compression in others, spanning further than a single beam of the same timber ever could.
+**What it is.** A triangular timber frame converting a roof's bending problem into pure tension and compression, spanning further than one beam could.
 Also covers: cn_queen_post, cn_timber_truss, cn_trussed_arch.
 
-**Why you would never guess this.** Wood is strong in both tension and compression along the grain, but weak in bending over a long unsupported length, exactly the beam problem above. Triangulate it, put a central post in pure compression and two rafters and a tie beam in a closed triangle, and every member works in the direction wood is strongest, at the cost of needing every joint to actually hold, since a truss is only as good as its worst connection.
+**Why you'd never guess this.** Wood is strong along the grain in both tension and compression, weak in long unsupported bending. Triangulate it, a central post in pure compression, rafters and tie beam in a closed triangle, and every member works its strong direction, at the cost of needing every joint to actually hold.
 
-**Prerequisites.** cn_post_lintel (the beam problem this solves), joinery skill, iron strap or bolt for tie joints.
+**Prerequisites.** cn_post_lintel, joinery, iron strap or bolt at tie joints.
 
-**Roman-available inputs.** Seasoned timber, iron straps and pins for critical joints, since a mortise-and-tenon alone can creep under sustained load.
+**Roman-available inputs.** Seasoned timber, iron straps and pins, since mortise-and-tenon alone creeps under sustained load.
 
-**Procedure.** A king post truss uses one central vertical post from the tie beam to the roof apex, suited to narrow spans; a queen post uses two posts set inward from the ends, shortening the unsupported length of the tie beam and reaching wider spans at the cost of trickier geometry. A general timber truss extends this triangulation with more members for still wider roofs. A trussed arch bolts timber bracing onto a stone or masonry arch specifically to resist the arch's outward spreading force at points the masonry alone would need to be far thicker to resist, letting a thinner arch stand.
+**Procedure.** King post: one central post, tie beam to apex, narrow spans. Queen post: two posts set inward, shortening the tie beam's unsupported length, wider spans, trickier geometry. General timber truss: more members, still wider roofs. Trussed arch: timber bracing bolted onto a masonry arch specifically to resist its outward spread, letting a thinner arch stand.
 
-**How you know it worked.** No visible sag at the ridge after full seasonal load (snow, wind) has been carried at least once; joints show no daylight gap opening under load.
+**How you know it worked.** No visible ridge sag after a full seasonal load cycle; no daylight gap opening at joints under load.
 
-**Failure modes.** A single joint that slips lets the whole triangle rack out of shape, and because failure is progressive rather than sudden in timber, watch for a truss that visibly sags more each year, it is failing slowly and will eventually go quickly.
+**Failure modes.** One slipped joint racks the whole triangle; timber failure is progressive, watch for a truss sagging more each year.
 
-**Cost & labour.** MEASURED order of magnitude from surviving Roman and later timber roof spans, days to weeks of carpenter labour per bay depending on span.
+**Cost & labour.** MEASURED order of magnitude, days to weeks of carpentry per bay.
 
-**Danger.** Falling roof timbers during erection; a truss that fails in service can bring down the whole roof at once, more dangerous than a beam because more area is at risk from one failure.
+**Danger.** Falling roof timbers during erection; a failed truss can drop a whole roof at once.
 
-**Confidence: HIGH** on the triangulation principle; **MEDIUM** on exact Roman-attested truss geometry, since surviving evidence is indirect.
+**Confidence: HIGH** on triangulation; **MEDIUM** on exact Roman-attested geometry.
 
 ### cn_cast_iron_beam - Cast iron beam
 
-**What it is / why you want it.** A beam cast in iron instead of cut in stone or timber, far stronger in compression than either, and the first item in this module where the missing input is not calculation but the metal itself.
+**What it is.** A beam cast in iron, far stronger in compression than stone or timber. First item here gated on the metal itself, not calculation.
 Also covers: cn_iron_column.
 
-**Why you would never guess this.** This is the classic killer, and you must not build one without knowing it: cast iron is strong in compression but brittle and much weaker in tension, roughly a third to half its compressive strength depending on the casting (ESTIMATED, basis: known historical ratios for grey cast iron), and it gives almost no warning before it snaps, unlike timber which visibly sags first. Recall from cn_post_lintel that a beam's bottom fibre is in tension. A cast iron beam is therefore weakest exactly where a builder's instinct, trained on stone, says thickness should matter least. Iron columns are the opposite case done right: a column is in pure compression, cast iron's strength, which is why hollow cast iron columns genuinely work well and cast iron beams genuinely do not; the same metal is excellent in one orientation and treacherous in the other.
+**Why you'd never guess this.** The classic killer: cast iron is brittle, weaker in tension than compression by roughly a third to half (ESTIMATED, known grey-iron ratios), giving almost no warning before snapping. A beam's bottom fibre is in tension, so a cast iron beam is weakest exactly where stone-trained instinct says thickness matters least. Columns are the opposite done right: pure compression, cast iron's strength, which is why hollow cast iron columns genuinely work and cast iron beams genuinely don't.
 
-**Prerequisites.** Cast iron supply, meaning `10_metallurgy.md#blast_furnace_cast_iron`, which Rome does not have in the West (bloomery iron only produces wrought iron, never molten cast iron), plus cn_post_lintel's beam theory to know where the danger sits.
+**Prerequisites.** Cast iron supply (`10_metallurgy.md#blast_furnace_cast_iron`, absent in the Roman West, bloomery gives only wrought iron), cn_post_lintel's beam theory.
 
-**Roman-available inputs.** None directly; this whole entry is gated on the blast furnace tree in `10_metallurgy.md`. Once cast iron exists: sand moulds, a foundry, pig iron remelted in a cupola or reverbatory furnace.
+**Roman-available inputs.** None directly, gated on the blast furnace tree. Once cast iron exists: sand moulds, a foundry, remelted pig iron.
 
-**Procedure.** For a column: cast a hollow cylindrical section, since a hollow section resists buckling nearly as well as solid for far less weight, and load it only in pure axial compression, never off-centre. For a beam: never use plain cast iron where wrought iron or steel can be substituted; if you must, make the section deepest and thickest at the tension (bottom) face specifically, cast to a design already tested to failure at smaller scale, and never trust a cast iron beam under sudden or shock loading, since brittle fracture initiates from any internal casting flaw, and every casting has some.
+**Procedure.** Columns: cast hollow, load only in pure axial compression, never off-centre. Beams: prefer wrought iron or steel; if cast iron must be used, thicken the tension face, test to failure at smaller scale first, never trust it under shock loading, since fracture starts from a casting flaw and every casting has some.
 
-**How you know it worked.** A column carries its rated load with no visible deformation; there is no reliable visual warning sign for an overstressed cast iron beam before it fails, which is exactly the danger.
+**How you know it worked.** A column carries rated load with no deformation; there is no reliable visual warning before a beam fails, which is the danger.
 
-**Failure modes.** Sudden brittle fracture with no warning sag, the historical cause of multiple 19th century bridge and mill floor collapses; hidden casting flaws (blowholes, cold shuts) that halve real strength versus the design assumption.
+**Failure modes.** Sudden brittle fracture, no warning sag, cause of several 19th-century collapses; hidden casting flaws halving real strength.
 
-**Cost & labour.** ESTIMATED, gated entirely on bulk cast iron output existing first; treat as a mid-tree project, not a first casting.
+**Cost & labour.** ESTIMATED, gated entirely on bulk cast iron existing first.
 
-**Danger.** Sudden structural collapse with no warning, the single deadliest failure mode in this entire module. Socially, once cast iron beams gain a reputation for unexplained collapse, expect real reluctance from any patron who has heard of one.
+**Danger.** Sudden collapse with no warning, the deadliest failure mode in this module. Socially, a reputation for unexplained collapse kills future commissions.
 
-**Confidence: HIGH** on the tension/compression asymmetry, textbook and historically proven at great cost; **MEDIUM** on exact strength ratios, which vary with casting quality.
+**Confidence: HIGH** on the tension/compression asymmetry; **MEDIUM** on exact ratios, which vary with casting quality.
 
-### cn_wrought_iron_girder - Wrought iron plate girder, and later steel
+### cn_wrought_iron_girder - Wrought iron girder, and later steel
 
-**What it is / why you want it.** Getting iron to actually work in tension, which cast iron cannot reliably do, first with wrought iron (fibrous, ductile, ten times more tolerant of flaws than cast iron) and then with cheap bulk steel once the finery-forge-to-crucible chain in `10_metallurgy.md` is running.
+**What it is.** Getting iron to actually hold tension: first wrought iron, ductile and forgiving, then cheap bulk steel once `10_metallurgy.md`'s finery-to-crucible chain runs.
 Also covers: cn_rolled_I_beam, cn_plate_girder, cn_box_girder, cn_steel_frame_skeleton.
 
-**Why you would never guess this.** The obvious move after cast iron beams fail is "use more iron." The correct move is "use a different iron": wrought iron's fibrous grain structure, from repeated forging and folding, lets it deform visibly before it breaks, giving warning a cast iron beam never gives. Riveted wrought iron plate girders are flexible, not stiff, they visibly bend under load and spring back, which is a feature, not a flaw, since it is your warning system. Rolling instead of riveting plate together into a single I-shaped section is more efficient, but needs a rolling mill that can heat and squeeze the whole cross-section through shaped rollers in one pass, energy-intensive and hard on the roll dies. A box girder (a closed rectangular or trapezoidal tube) resists twisting far better than an open I-section, since an open section has almost no torsional stiffness at all, only a closed loop does; welding the box shut is expensive but is what makes long, twist-resistant spans possible. A full steel frame skeleton, once steel is cheap and reliable, moves all structural load into a steel grid so walls become weathertight skin only, not load-bearing, the change that eventually makes tall buildings possible.
+**Why you'd never guess this.** The obvious move after cast iron fails is "more iron"; the correct move is a different iron. Wrought iron's fibrous grain, from repeated forging and folding, deforms visibly before breaking, unlike cast iron. Riveted wrought iron girders are flexible, not stiff, they bend and spring back, a feature, since that flex is your warning system. Rolling instead of riveting a single I-section is more efficient but needs a mill heating and squeezing the whole cross-section through shaped rollers, hard on the dies. A box girder resists twisting far better than an open I, since an open section has almost no torsional stiffness; welding it shut is expensive but makes long twist-resistant spans possible. A full steel skeleton moves all load into a steel grid, so walls become weathertight skin only, the change that eventually makes tall buildings possible.
 
-**Prerequisites.** `10_metallurgy.md#finery_forge` for wrought iron; `10_metallurgy.md#cementation_steel` and `crucible_steel` for the small-batch steel that must exist before bulk steel is worth pursuing; rolling requires `40_power_precision.md#water_power_scaleup` or later steam power to turn heavy rolls continuously.
+**Prerequisites.** `10_metallurgy.md#finery_forge` for wrought iron; `cementation_steel`/`crucible_steel` before bulk steel is worth pursuing; rolling needs `40_power_precision.md#water_power_scaleup` or steam.
 
-**Roman-available inputs.** Bloomery wrought iron bar (already routine, but only in small quantities per bloom, nowhere near structural tonnage), charcoal fuel.
+**Roman-available inputs.** Bloomery wrought iron bar, routine but small-batch, nowhere near structural tonnage.
 
-**Procedure.** Forge and hammer-weld wrought iron plates into a built-up girder, riveted (see cn_riveted_connection) with the web deep for stiffness and the flanges (top and bottom edges) thickest, since flanges carry the bending, the web mainly carries shear (sideways sliding force). Once rolling capacity exists, roll a single I-shaped bar instead of building one up from plates, faster and stronger per unit weight, but requires heating the whole billet to rolling heat and passing it through progressively shaping rolls without tearing. Close an I or plate girder into a box by welding or riveting a second web and both flange edges shut, if the span must resist twisting (a curved bridge, a deck carrying off-centre traffic). A steel frame skeleton stacks columns and beams into a rigid three-dimensional grid, with walls hung on the outside afterward.
+**Procedure.** Forge-weld plates into a riveted girder, deep web for stiffness, thick flanges (flanges carry bending, web carries shear). Once rolling exists, roll one I-bar instead. Close a girder into a box by welding both flange edges and a second web shut where twisting matters.
 
-**How you know it worked.** A plate girder deflects visibly and predictably under test load, then returns to true when unloaded; a box section resists twisting by hand that an equivalent open I-section does not.
+**How you know it worked.** A girder deflects predictably under test load, returns to true unloaded; a box section resists hand-twisting an equivalent open section would not.
 
-**Failure modes.** Rivets sheared by vibration loosen a girder over years, invisible until a joint finally slips; an open I-section used where torsion is significant twists and eventually buckles; a rolling mill fed too cold tears the billet instead of shaping it.
+**Failure modes.** Rivets sheared by vibration loosen invisibly over years; an open section used where torsion matters twists and buckles; a cold-fed mill tears the billet.
 
-**Cost & labour.** ESTIMATED, entirely gated on bulk wrought iron and then steel output; a single riveted girder is weeks of forge work even with iron on hand.
+**Cost & labour.** ESTIMATED, gated on bulk wrought iron then steel; one riveted girder is weeks of forge work.
 
-**Danger.** Rivet failure under load, hot metal burns during forging and rolling. No unusual social danger once iron framing is an established trade.
+**Danger.** Rivet failure under load, hot-metal burns. No unusual social danger once framing is established.
 
-**Confidence: HIGH** on the tension/ductility argument; **LOW** on near-term Roman timelines, gated deep in the metallurgy tree.
+**Confidence: HIGH** on the tension/ductility argument; **LOW** on near-term timeline, deep in the metallurgy tree.
 
 ### cn_pratt_truss - Pratt truss, and the iron-age truss family
 
-**What it is / why you want it.** Once iron reliably holds tension, truss diagonals can be thin tension members instead of thick timber struts, cutting the weight of a long-span truss dramatically.
+**What it is.** Once iron reliably holds tension, diagonals can be thin tension members instead of thick timber struts, cutting truss weight dramatically.
 Also covers: cn_warren_truss, cn_lattice_truss, cn_space_frame.
 
-**Why you would never guess this.** A timber king post truss (cn_king_post) puts its diagonals in compression because timber joints handle compression better than tension. An iron-age truss deliberately inverts this: in a Pratt truss the diagonals run in tension and the verticals in compression, which lets the diagonals be thin iron rods instead of heavy timber struts, since a tension member never buckles the way a compression member does, so it can be far slimmer for the same strength. A Warren truss removes the verticals entirely and uses consistent 45-degree diagonals alternating tension and compression, the most material-efficient shape if the geometry is laid out precisely, but precision is exactly what the geometry demands, an inconsistent angle wastes the efficiency. A lattice truss crosses many thin diagonals to save weight at midspan while keeping full depth, at the cost of many more joints, each one a possible weak point that will not announce itself before it fails. A space frame extends triangulation into three dimensions at once, extremely light for its span, but every joint must carry load from several directions simultaneously, making the joints themselves the whole design problem.
+**Why you'd never guess this.** A timber king post truss puts diagonals in compression, since timber joints handle compression better. An iron-age truss inverts this deliberately: Pratt truss diagonals run in tension, verticals in compression, letting diagonals be thin rod, since a tension member never buckles the way a compression member does. Warren truss removes verticals for consistent 45-degree diagonals, most material-efficient if geometry is precise, wasteful if not. Lattice truss crosses many thin diagonals to save weight at full depth, at the cost of many joints, each an unannounced weak point. Space frame triangulates in three dimensions, very light for span, but every joint carries load from several directions at once, making the joint the whole design problem.
 
-**Prerequisites.** cn_wrought_iron_girder or steel supply, cn_riveted_connection or cn_bolted_connection for joints, cn_post_lintel's beam theory.
+**Prerequisites.** cn_wrought_iron_girder or steel, cn_riveted_connection, cn_post_lintel's beam theory.
 
-**Roman-available inputs.** None beyond ordinary iron bar stock, once bulk iron exists; the design principle itself needs no new material, only the willingness to put iron in tension deliberately.
+**Roman-available inputs.** Only ordinary bar stock once bulk iron exists; the principle needs no new material, only the will to put iron in tension deliberately.
 
-**Procedure.** Lay out the truss geometry precisely before fabrication, since these forms depend on angle for their efficiency, not on oversized members compensating for sloppy angles; size diagonals in tension for the load path calculated (or, absent formal calculation, tested at model scale first) and verticals or compression diagonals heavy enough not to buckle, which for a slender iron member happens well below its crushing strength, a separate failure mode from crushing entirely.
+**Procedure.** Lay out geometry precisely before fabrication, these forms depend on angle, not oversized members, for efficiency. Size diagonals for the tension load calculated or model-tested; size compression members against buckling, which happens well below crushing strength, a separate failure mode.
 
-**How you know it worked.** A loaded test truss deflects a small, predictable amount at midspan and returns to true; no joint shows visible slip.
+**How you know it worked.** A loaded test truss deflects a small predictable amount and returns true; no joint shows slip.
 
-**Failure modes.** A single failed joint in a lattice or space frame redistributes load onto neighbours that were not sized for the extra share, a chain failure; compression members buckling sideways rather than crushing, a mode invisible until the member is already curved.
+**Failure modes.** One failed joint redistributes load onto neighbours not sized for it, a chain failure; compression members buckling sideways, invisible until already curved.
 
-**Cost & labour.** ESTIMATED, precise geometry costs surveying and fabrication time up front but saves material weight overall.
+**Cost & labour.** ESTIMATED, precise geometry costs fabrication time but saves weight.
 
-**Danger.** Progressive chain-failure collapse once one joint goes. No unusual social danger.
+**Danger.** Progressive chain-failure collapse. No unusual social danger.
 
-**Confidence: HIGH** on the tension/compression logic, well documented from the historical truss-bridge era.
+**Confidence: HIGH**, well documented from the historical truss-bridge era.
 
-### cn_riveted_connection - Riveted joint, bolted, welded, and gusseted
+### cn_riveted_connection - Riveted, bolted, gusseted, and welded joints
 
-**What it is / why you want it.** How you actually join iron and steel members, since a beam or a truss is worthless if its joints are its weak point, which they usually are.
+**What it is.** How iron and steel members are actually joined, since a joint is usually the weak point, not the member.
 Also covers: cn_bolted_connection, cn_gusset_plate, cn_welded_connection.
 
-**Why you would never guess this.** A rivet is not just a metal pin, it is heated red hot, dropped through aligned holes in the two plates, and hammered flat on both ends while still hot; as it cools it contracts and clamps the plates together under real tension, which is where the joint's strength actually comes from, not from the pin filling the hole. A bolted connection instead relies on thread accuracy and how hard the nut is turned, weaker per fastener than a good rivet but far faster to assemble and, critically, removable. An electric arc weld, much later technology, can be as strong as the parent steel if cooled slowly, but cooled too fast it forms brittle martensite (a hard, crack-prone crystal structure) right at the joint, meaning weld quality depends entirely on technique, speed, angle, and heat input, not just on having the equipment. A gusset plate is simply a flat steel plate bolted or riveted across a joint to spread force along a stiffer path than the members alone provide, but overloading a gusset with too many rivets concentrates stress at the hole pattern instead of relieving it.
+**Why you'd never guess this.** A rivet is heated red hot, dropped through aligned holes, hammered flat both ends hot; cooling contraction, not the pin filling the hole, clamps the plates. A bolt relies on thread accuracy and how hard the nut is turned, weaker per fastener but fast and removable. An arc weld can match parent steel strength cooled slowly, but cooled fast forms brittle martensite right at the joint, so quality is entirely technique, not equipment. A gusset plate spreads force along a stiffer path than the members alone, but too many rivets in it concentrates stress at the hole pattern instead.
 
-**Prerequisites.** cn_wrought_iron_girder or steel supply, a forge for rivets, for welding: `10_metallurgy.md` alloy steel understanding plus a reliable electric arc, itself gated on `50_electricity.md`.
+**Prerequisites.** cn_wrought_iron_girder or steel, a forge, for welding `10_metallurgy.md` alloy steel plus a reliable arc (`50_electricity.md`).
 
-**Roman-available inputs.** Iron rod stock for rivets and bolts, a forge, tongs, hammers.
+**Roman-available inputs.** Iron rod stock, forge, tongs, hammers.
 
-**Procedure.** Heat a rivet to a bright orange-yellow, drop through the aligned hole, hammer the protruding end flat against a heavy backing bar (a "dolly") before it cools past a dull red, working fast since the clamping force comes entirely from cooling contraction. For bolts, cut matching threads accurately (a screw-cutting lathe, `40_power_precision.md#screw_cutting_lathe`, is what makes consistent threads possible at all) and torque by feel or a calibrated wrench; expect loosening under vibration unless a lock washer or a second jam nut is used. For welding, keep the arc moving at a steady rate, matched to plate thickness, and let the joint cool slowly, wrapped or shielded, never quenched.
+**Procedure.** Heat a rivet to bright orange-yellow, hammer the protruding end flat against a backing bar before it cools past dull red. Cut bolt threads accurately (`40_power_precision.md#screw_cutting_lathe`), torque by feel or gauge, expect vibration loosening without a lock nut. Weld with a steady arc rate matched to plate thickness, cool slowly, never quench.
 
-**How you know it worked.** A cooled rivet head is tight against the plate with no gap a thin blade can slip under; a bolted joint does not loosen after a hard shake test; a weld bead is smooth, not pitted or cracked when tapped with a hammer.
+**How you know it worked.** No gap a thin blade slips under a cooled rivet head; a bolted joint survives a hard shake test; a weld bead is smooth when hammer-tapped.
 
-**Failure modes.** A rivet driven cold never develops clamping force and works loose under vibration; an over-torqued bolt snaps its thread; a rushed weld cracks along the heat-affected zone months later under repeated load.
+**Failure modes.** A cold-driven rivet never clamps and works loose; an over-torqued bolt snaps its thread; a rushed weld cracks months later.
 
-**Cost & labour.** MEASURED for riveting, one rivet is minutes of skilled hammer work, a large bridge needs many thousands; DERIVED for bolting, faster per joint but needs precision thread-cutting capacity first.
+**Cost & labour.** MEASURED for riveting, minutes per rivet, thousands on a large bridge; DERIVED for bolting, faster but needs precision threading first.
 
-**Danger.** Hot rivet work burns; a snapped bolt or failed weld under load can release stored force violently. No unusual social danger.
+**Danger.** Hot rivet burns; a snapped bolt or failed weld releases stored force violently.
 
-**Confidence: HIGH** on riveting and bolting, well attested; **MEDIUM** on welding, since it is gated on electrical capability this tree may not yet have.
+**Confidence: HIGH** on riveting/bolting; **MEDIUM** on welding, gated on electrical capability.
 
 ### cn_reinforced_concrete - Reinforced concrete slab and beam
 
-**What it is / why you want it.** Concrete cast around steel bars so the steel carries the tension a plain concrete beam cannot, giving flat slabs and beams plain concrete or plain stone can never achieve.
+**What it is.** Concrete cast around steel bars so steel carries the tension plain concrete cannot, giving flat slabs and beams plain concrete never could.
 Also covers: cn_deformed_rebar, cn_precast_panel.
 
-**Why you would never guess this.** This is the second real kernel of the whole module, stated exactly as it should be stated: reinforced concrete works at all only because steel and set concrete happen to expand and contract with temperature at nearly the same rate, roughly 10-14 millionths per degree Celsius for both (MEASURED, a modern materials property, unverifiable to a Roman without precision thermal measurement). If they did not match, every summer-to-winter cycle would peel the bond apart at the interface, and the whole technology would be a curiosity, not a building method. Nobody engineered this match, it is a coincidence of what iron oxide and silicate rock happen to do when heated, and reinforced concrete exists because of it. The second non-obvious point, equally important: the steel must go exactly where the tension is, which for a simple beam resting on two supports is the *bottom*, and for a beam continuous over a support is the *top* at that support, since the bending direction reverses there. Put the steel on the wrong face and you have built an expensive, heavy, plain concrete beam that fails exactly like one, because the steel sitting in the compression zone does almost nothing.
+**Why you'd never guess this.** The second real kernel: reinforced concrete works only because steel and set concrete expand with temperature at nearly the same rate, roughly 10-14 millionths per degree C for both (MEASURED, unverifiable to a Roman without precision thermal measurement). If they didn't match, every seasonal cycle would peel the bond apart, and the whole technology would be a curiosity. Nobody engineered this, it is a coincidence of iron oxide and silicate rock under heat. Second point, equally load-bearing: steel must sit exactly where the tension is, the *bottom* of a simple beam, the *top* over a support where bending reverses. Wrong face and you've built an expensive plain concrete beam.
 
-**Prerequisites.** cn_portland_cement or high-quality tested pozzolana (weaker substitute, per the tech tree's own reinforcement/binder trade-off), bulk wrought iron or steel bar, cn_post_lintel's beam theory to know where tension falls.
+**Prerequisites.** cn_portland_cement or tested pozzolana (weaker), bulk wrought iron or steel bar, cn_post_lintel's beam theory.
 
-**Roman-available inputs.** None for bar steel; wrought iron bar can substitute at reduced effectiveness. Concrete side: Roman pozzolana concrete or Portland cement, either works chemically, Portland gives more predictable strength.
+**Roman-available inputs.** None for bar steel; wrought iron bar substitutes at reduced effect. Either concrete works chemically.
 
-**Procedure.** Place steel or iron bar in the formwork exactly along the tension face before pouring, never after; keep enough concrete cover (a few centimetres) over the bar, since concrete's alkaline pore water passively protects steel from rust only as long as it stays fully encased and uncracked. Pour and vibrate concrete around the bars so no voids trap air against the steel. Deformed rebar, bar with ribs rolled into its surface rather than smooth, bonds mechanically to the concrete instead of relying on friction alone, and this bond is what actually transfers load between the two materials; a bond failure is invisible from outside until the beam suddenly deflects or cracks along the bar's length. Precast panels apply the same logic in a factory setting, casting standardised reinforced panels off-site under controlled conditions for better consistency and faster on-site assembly, at the cost of transport expense and the fact that panel-to-panel connections become the weak point instead of the panel itself.
+**Procedure.** Place bar exactly along the tension face before pouring, never after; keep a few centimetres of cover, since concrete's alkaline pore water protects steel only while uncracked and fully encased. Vibrate around bars so no voids trap air against them. Deformed rebar (rolled ribs) bonds mechanically rather than by friction alone, and that bond transfers load, invisible failure until the beam suddenly deflects. Precast panels apply this in a factory for consistency and speed, at the cost of transport and weak panel-to-panel joints.
 
-**How you know it worked.** A test beam with steel on the tension face carries a load that snaps an identical unreinforced beam; a cut section shows the bar still fully bonded, with no rust stain bleeding along its length.
+**How you know it worked.** A reinforced test beam outlasts an identical unreinforced one; a cut section shows the bar still bonded, no rust bleed.
 
-**Failure modes.** Rebar placed in the compression zone by mistake, contributing almost nothing; inadequate concrete cover letting the bar rust, and rusting steel expands, which cracks and eventually spalls the concrete off from the inside, a slow failure with no Roman precedent since plain concrete has no embedded metal to corrode; bond failure between deformed bar and concrete, undetectable without destructive testing.
+**Failure modes.** Bar in the compression zone, doing almost nothing; inadequate cover letting the bar rust, and rust's greater volume spalls the concrete off from inside, slow, with no Roman precedent; undetectable bond failure.
 
-**Cost & labour.** ESTIMATED, gated on cement and bulk steel both existing; DERIVED that this is not a first project, it is a late-tree combination of two other hard-won capabilities.
+**Cost & labour.** ESTIMATED, gated on cement and bulk steel both, a late combination, not a first project.
 
-**Danger.** A wrongly reinforced member can fail suddenly, without the warning cracking that plain masonry usually gives first. No unusual social danger.
+**Danger.** Sudden failure with no warning cracking. No unusual social danger.
 
-**Confidence: HIGH** on the thermal-expansion coincidence and on tension-face placement, both textbook materials science; **LOW** on Roman-era timeline, this is explicitly a late combination technology.
+**Confidence: HIGH** on the coincidence and tension-face placement; **LOW** on Roman-era timeline.
 
 ### cn_prestressed_concrete - Prestressed concrete element
 
-**What it is / why you want it.** Stressing the steel before the concrete ever takes load, so the concrete starts in compression everywhere and the bending load only has to cancel that pre-existing compression before it can create any tension at all.
+**What it is.** Stressing steel before the concrete ever takes load, so concrete starts in compression everywhere; service load must cancel that first before creating any tension.
 Also covers: cn_post_tensioning.
 
-**Why you would never guess this.** Ordinary reinforced concrete still lets the concrete crack in tension near the bar, the steel then carries the crack's load, which works but limits span and lets water eventually reach the steel through the cracks. Stress the tendon first, either by stretching wire before the pour and releasing it after curing (pre-tensioning) or by threading ducted cable through already-cured concrete and jacking it tight afterward (post-tensioning), and the concrete is squeezed into permanent compression before any service load arrives, letting it stay crack-free under loads that would split ordinary reinforced concrete, and allowing longer, thinner spans for the same material.
+**Why you'd never guess this.** Ordinary reinforced concrete still cracks near the bar under tension; the crack's load then falls on the steel. Stress the tendon first, stretched before pour and released after cure, or threaded through cured concrete and jacked tight after, and the concrete is squeezed permanently before service load arrives, staying crack-free under loads that would split ordinary reinforced concrete, and allowing longer, thinner spans.
 
-**Prerequisites.** cn_reinforced_concrete, high-strength steel wire or cable (ordinary bar stretches too much to hold useful stress), a hydraulic jack able to apply large, controlled tension.
+**Prerequisites.** cn_reinforced_concrete, high-strength steel wire (ordinary bar stretches too much), a hydraulic jack for controlled tension.
 
-**Roman-available inputs.** None; needs both bulk high-strength steel wire (see cn_wire_cable_spinning) and hydraulic jacking capability well beyond Roman hydraulics.
+**Roman-available inputs.** None, needs bulk high-strength wire and hydraulics beyond Roman reach.
 
-**Procedure.** For post-tensioning specifically: cast the concrete with hollow ducts already placed where the tendons will run, cure fully, thread steel cable through the ducts, then jack each cable to a specified tension and lock it off with a wedge anchor before releasing the jack, grouting the duct afterward to bond and protect the cable.
+**Procedure.** Post-tensioning: cast with hollow ducts placed for the tendons, cure fully, thread cable, jack each to specified tension, lock with a wedge anchor, then grout the duct.
 
-**How you know it worked.** The stressed jack shows the target load on its gauge before lock-off; the finished element shows no cracking under a proof load that would crack an equivalent unstressed beam.
+**How you know it worked.** The jack gauge shows target load before lock-off; the element shows no cracking under a proof load that would crack an equivalent unstressed beam.
 
-**Failure modes.** Hydraulic jack failure under high pressure is violently dangerous to anyone nearby; a duct placed off from its planned line causes uneven stressing, damaging the concrete internally in a way invisible from outside; stress loss over years (the tendon slowly relaxing) if not designed with a safety margin.
+**Failure modes.** Jack failure under high pressure is violently dangerous; a mis-placed duct causes uneven, hidden internal damage; stress loss over years without margin.
 
-**Cost & labour.** ESTIMATED, gated on high-strength wire, jacking equipment, and cn_reinforced_concrete all existing first; a genuinely late-tree technique.
+**Cost & labour.** ESTIMATED, gated on wire, jacks, and reinforced concrete all existing first.
 
-**Danger.** A failed jack or snapped tendon under tension releases stored energy violently, among the more dangerous moments in this entire module. No unusual social danger.
+**Danger.** A failed jack or snapped tendon releases stored energy violently, one of the more dangerous moments in this module.
 
-**Confidence: MEDIUM-HIGH** on the physics; **LOW** on Roman-era reachability, this sits at the very end of several other chains.
+**Confidence: MEDIUM-HIGH** on physics; **LOW** on reachability, end of several chains.
 
 ### cn_suspension_bridge - Suspension bridge system
 
-**What it is / why you want it.** A deck hung from cables in pure tension, spanning gaps no beam, arch, or truss can reach economically.
+**What it is.** A deck hung from cables in pure tension, spanning gaps no beam or arch can reach economically.
 Also covers: cn_cable_anchorage, cn_wire_cable_spinning, cn_stiffening_truss.
 
-**Why you would never guess this.** The obvious-seeming problem is the cable, and the cable is in fact the easy part, since steel wire is superb in tension and a bundle of many thin wires, spun in place strand by strand across the span, is stronger and more reliably uniform than any single heavy chain link could be, provided the rotation of the bundle is controlled during spinning or it twists itself apart before it is ever loaded. The real problem, discovered expensively and repeatedly through history, is aerodynamic stiffness of the deck. A light deck flexes and, worse, can twist under wind in a way that feeds energy into its own oscillation rather than damping it out, a resonance that grows until the deck tears itself apart, the Tacoma Narrows collapse being the canonical, filmed example centuries after this. A stiffening truss along the deck adds weight and, crucially, torsional resistance, so the deck cannot twist freely, at the cost of extra material; the same problem can be solved with less weight but far more design difficulty using tuned dampers, which is a later refinement, not a first attempt. The towers, meanwhile, must resist the horizontal component of enormous cable tension, which is why they are always massive relative to the deck they appear to be merely holding up.
+**Why you'd never guess this.** The cable looks like the hard part and is actually the easy one: many thin wires spun in place strand by strand are stronger and more uniform than any chain link, provided bundle rotation is controlled during spinning or it twists itself apart before ever loaded. The real problem, learned expensively and repeatedly, is aerodynamic stiffness of the deck. A light deck can twist under wind in a way that feeds energy into its own oscillation instead of damping it, a resonance that grows until the deck tears apart, Tacoma Narrows being the filmed example. A stiffening truss adds weight and torsional resistance so the deck can't twist freely; tuned dampers do the same with less weight and far more design difficulty. Towers resist the horizontal component of enormous cable tension, which is why they dwarf the deck they seem to merely hold up.
 
-**Prerequisites.** Bulk steel wire (`10_metallurgy.md#wire_drawing`, at structural tonnage), cn_post_lintel and cn_pratt_truss's tension logic, a cable anchorage massive enough to resist the wedge of stress the cable imparts.
+**Prerequisites.** Bulk steel wire (`10_metallurgy.md#wire_drawing`), cn_post_lintel and cn_pratt_truss's tension logic, an anchorage massive enough for the cable's stress cone.
 
-**Roman-available inputs.** None; this is a late-tree, high-steel-tonnage technology with no partial Roman version.
+**Roman-available inputs.** None, a late high-tonnage technology with no partial Roman version.
 
-**Procedure.** Erect towers first, able to carry the full vertical load of the cables. Spin the main cable strand by strand across the span using a travelling wheel that carries one wire at a time back and forth, bundling and compacting thousands of individual wires into one cable, with rotation controlled throughout or the bundle twists on itself. Anchor each cable end into a massive block, the cable's tension forms a cone of stress that must stay entirely within the anchorage's own mass, an undersized block lets the wedge pull free, releasing the cable violently. Hang the deck from vertical hangers off the main cable, and stiffen the deck with a truss running its full length to resist twisting in wind.
+**Procedure.** Erect towers first. Spin the main cable strand by strand with a travelling wheel, controlling rotation throughout. Anchor each end into a block large enough that the cable's stress cone stays inside its mass, undersized and the wedge pulls free violently. Hang the deck from vertical hangers, stiffen it full-length against twist.
 
-**How you know it worked.** The deck shows minimal twist under a strong crosswind, tested with flags or streamers at multiple points along its length before trusting it with load; the cable shows uniform tension by hand-test or by consistent sag curve along its length.
+**How you know it worked.** Minimal deck twist under crosswind, tested with streamers before trusting load; uniform cable tension by sag curve.
 
-**Failure modes.** Deck aerodynamic flutter, a resonance that can destroy an otherwise perfectly engineered bridge in minutes; anchorage pull-out from an undersized block; a cable spun with uncontrolled rotation that develops internal twist and loses strength invisibly.
+**Failure modes.** Aerodynamic flutter, capable of destroying an otherwise sound bridge in minutes; anchorage pull-out; uncontrolled spinning rotation losing cable strength invisibly.
 
-**Cost & labour.** ESTIMATED, this is one of the largest and latest projects in the whole tree, gated on bulk steel wire production existing first.
+**Cost & labour.** ESTIMATED, one of the largest, latest projects in the tree, gated on bulk steel wire.
 
-**Danger.** Catastrophic, sudden, total collapse if aerodynamic stiffness is wrong, with essentially no warning to people already on the deck. No unusual social danger, but a public collapse would be a severe reputational blow.
+**Danger.** Catastrophic sudden collapse with almost no warning to people on the deck. A public collapse is a severe reputational blow.
 
-**Confidence: HIGH** on the cable tension and aerodynamic-flutter mechanisms, well documented historically; **LOW** on near-term Roman reachability.
+**Confidence: HIGH** on the mechanisms; **LOW** on near-term reachability.
 
 ### cn_arch_bridge_steel - Steel arch bridge
 
-**What it is / why you want it.** The masonry arch's compression-only load path, rebuilt in steel, letting a single span reach much further than stone voussoirs ever could.
+**What it is.** The masonry arch's compression path rebuilt in steel, reaching much further than stone voussoirs.
 
-**Why you would never guess this.** A masonry arch (cn_true_arch) is fixed and heavy by necessity, since stone can only push, not pull, and any temperature change or foundation settlement in a rigid fixed arch creates internal stress with nowhere to go, because the structure is over-determined, more connected than the minimum needed to stand, so it cannot simply flex to absorb the change. A steel arch, hinged at its base (and sometimes at its crown too), is instead free to rotate slightly at those hinge points, which lets the whole arch absorb thermal expansion and minor settlement as a small rotation instead of building up hidden internal stress that a rigid arch cannot show you until it cracks.
+**Why you'd never guess this.** A masonry arch is fixed and heavy of necessity, since stone can only push, and any temperature change or settlement in a rigid arch builds hidden internal stress with nowhere to go, over-determined and unable to flex. A steel arch hinged at its base (sometimes the crown too) can rotate slightly at those points, absorbing thermal change as a small rotation instead of hidden stress a rigid arch won't show until it cracks.
 
-**Prerequisites.** cn_wrought_iron_girder or steel supply, cn_true_arch's compression-load-path logic, a hinge mechanism strong enough to carry the full arch thrust while still rotating freely.
+**Prerequisites.** cn_wrought_iron_girder or steel, cn_true_arch's load-path logic, a hinge that carries full thrust while still rotating freely.
 
-**Roman-available inputs.** None; steel-tonnage technology.
+**Roman-available inputs.** None, steel-tonnage technology.
 
-**Procedure.** Design the arch curve to match the thrust line for its expected loading, as close to Rome's own arch practice as the material allows; place hinges at the base, and at the crown for very long spans, using a pin bearing that can rotate under full compressive load without binding or seizing with rust or debris.
+**Procedure.** Design the arch curve to match its expected thrust line. Place hinges at the base and, for very long spans, the crown, using a pin bearing that rotates under full compression without seizing from rust or debris.
 
-**How you know it worked.** The hinge visibly rotates a small, expected amount across a full seasonal temperature swing without developing new cracks anywhere else in the arch.
+**How you know it worked.** The hinge rotates a small expected amount across a seasonal swing with no new cracks elsewhere.
 
-**Failure modes.** A hinge that seizes (rust, dirt, poor lubrication) turns a hinged arch back into a rigid one silently, reintroducing the thermal stress problem it was built to avoid; an arch curve that does not match its actual thrust line concentrates stress at one point.
+**Failure modes.** A seized hinge silently becomes a rigid joint again, reintroducing the stress it was built to avoid; a mismatched thrust curve concentrates stress at one point.
 
-**Cost & labour.** ESTIMATED, gated on bulk steel and precision hinge fabrication.
+**Cost & labour.** ESTIMATED, gated on bulk steel and precision hinges.
 
-**Danger.** Sudden compression buckling if the thrust line drifts outside the material. No unusual social danger.
+**Danger.** Sudden compression buckling if the thrust line drifts outside the material.
 
-**Confidence: MEDIUM-HIGH** on the hinge logic; **LOW** on near-term reachability.
+**Confidence: MEDIUM-HIGH** on the hinge logic; **LOW** on reachability.
 
 ### cn_bascule_bridge - Bascule, swing, and pontoon bridges
 
-**What it is / why you want it.** Three different ways to open a bridge for river traffic without building it impossibly high: a counterweighted leaf that tilts up (bascule), a whole span that rotates on a central pivot (swing), and a floating roadway anchored across the water (pontoon).
+**What it is.** Three ways to open a bridge for river traffic: a counterweighted tilting leaf, a whole span pivoting centrally, and a floating anchored roadway.
 Also covers: cn_swing_bridge, cn_pontoon_bridge.
 
-**Why you would never guess this.** A bascule's counterweight must balance the leaf exactly, but the balance point is not fixed, since the effective load changes as the leaf rotates through its arc, meaning the mechanism must be designed for the whole range of motion, not just the closed or fully open position, or it either will not lift or will not stay open. A swing bridge's central pivot carries the entire deck's weight on one small bearing, so friction there is enormous, and any binding on the rail that guides the free end as it swings will jam a bridge that otherwise pivots freely. A pontoon bridge is the simplest of the three and the only one already within Roman reach in principle (Caesar's Rhine crossings show timber trestle and boat-bridge competence already), it simply rises and falls with the water and its approach ramps must be built to accommodate that motion, and it is normally removable entirely for winter ice or when clear passage is needed.
+**Why you'd never guess this.** A bascule's counterweight must balance the leaf, but the balance point shifts through its arc, so the mechanism must suit the whole range of motion, not just closed or open, or it jams. A swing bridge's central pivot carries the whole deck on one small bearing, enormous friction, and any binding on the guide rail jams a bridge that otherwise pivots freely. Pontoon is simplest and the only one already within Roman reach (Caesar's Rhine crossings show the competence); it rises and falls with the water, approach ramps must accommodate that, and it's normally removable for winter ice.
 
-**Prerequisites.** For bascule and swing: bulk iron or steel for the mechanism and counterweight (cn_wrought_iron_girder), precise bearing fabrication; pontoon needs only Roman-level carpentry and boat-building.
+**Prerequisites.** Bascule/swing: bulk iron or steel, precise bearings (cn_wrought_iron_girder). Pontoon: Roman carpentry and boat-building only.
 
-**Roman-available inputs.** Pontoon: timber, boats or floats, rope or chain anchoring, all already Roman. Bascule and swing: gated on iron/steel tonnage.
+**Roman-available inputs.** Pontoon: timber, boats, rope or chain, all Roman. Bascule/swing: gated on iron/steel tonnage.
 
-**Procedure.** Bascule: size the counterweight against the leaf's weight at several points through its arc, not just one, and never let the mechanism jam mid-swing under any load condition. Swing: centre the pivot bearing precisely and keep it lubricated and clear of debris, with a guide rail smooth enough that the free end does not bind on approach. Pontoon: anchor floats securely against current, build ramps with enough vertical play to follow water level, and plan for seasonal removal where ice or flood demands it.
+**Procedure.** Bascule: size the counterweight against the leaf's weight at several arc points, not one. Swing: centre and lubricate the pivot, keep the guide rail clear. Pontoon: anchor floats against current, build ramps with vertical play, plan seasonal removal.
 
-**How you know it worked.** Bascule and swing open and close through their full range without stalling or requiring more force than the design mechanism provides; pontoon rises and falls freely with the water without straining its anchor lines.
+**How you know it worked.** Bascule/swing open and close through full range without stalling; pontoon rises freely without straining its lines.
 
-**Failure modes.** Bascule counterweight miscalculated for mid-arc load, stalling the leaf partway; swing bridge pivot binding under its own weight; pontoon anchor failure in flood, releasing the whole span downstream.
+**Failure modes.** Miscalculated mid-arc load stalling a bascule; a binding swing pivot; pontoon anchor failure in flood, releasing the span downstream.
 
-**Cost & labour.** MEASURED for pontoon, well within Roman capability already; ESTIMATED and gated on iron/steel tonnage for bascule and swing.
+**Cost & labour.** MEASURED for pontoon, already within reach; ESTIMATED and gated for bascule/swing.
 
-**Danger.** A jammed or partially open moving bridge is a serious hazard to river and road traffic simultaneously. No unusual social danger.
+**Danger.** A jammed moving bridge is a serious hazard to river and road traffic at once.
 
-**Confidence: HIGH** on pontoon (already demonstrated by Rome); **MEDIUM** on bascule and swing mechanics.
+**Confidence: HIGH** on pontoon; **MEDIUM** on bascule and swing mechanics.
 
 ### cn_gravity_dam - Gravity dam, arch dam, earth dam, spillway, retaining wall
 
-**What it is / why you want it.** Holding back water or soil with mass, curvature, or both, and the calculation of whether the structure will slide, overturn, or simply be lifted off its foundation by the water pressing under it.
+**What it is.** Holding back water or soil with mass, curvature, or both, and calculating whether it slides, overturns, or is lifted off its foundation by water pressing beneath.
 Also covers: cn_arch_dam, cn_earth_dam, cn_spillway, cn_retaining_wall.
 
-**Why you would never guess this.** A gravity dam holds back water purely by being too heavy for the water's push to slide or tip it, which means the foundation, not the dam wall, is usually the real limit, soil cannot support the load, only rock can, and water seeping under the base creates uplift pressure that can lift the dam like a boat if the foundation is not sealed or drained. An arch dam instead curves horizontally, so it transfers water pressure sideways into its abutments the same way a masonry arch transfers vertical load into its supports, needing far less mass for the same height, but only where the abutments are themselves strong rock, a bad abutment makes an arch dam fail catastrophically rather than merely leak. An earth dam relies on an impermeable clay core surrounded by more permeable zones that drain any seepage safely away from the core; if the core is not more impermeable than the surrounding fill, seepage concentrates and erodes an internal channel through the dam, called piping, a failure mode that is silent until it is sudden and total. A spillway exists purely to control overtopping, since water flowing over a crest not designed for it erodes at very high velocity, and it must never be undersized relative to the worst flood the dam will ever see, one miscalculated crest elevation dooms the whole structure regardless of how well the dam itself was built. A retaining wall is the same soil-pressure problem at building scale, holding back earth rather than water, and needs enough mass and the right base geometry that soil pressure cannot overturn or slide it, helped by drainage that relieves water pressure from behind the wall, the same uplift-and-slide logic as the dam.
+**Why you'd never guess this.** A gravity dam holds back water by being too heavy to slide or tip, so the foundation, not the wall, is usually the real limit, soil can't support the load, only rock can, and seepage under the base creates uplift that can lift the dam like a boat if undrained. An arch dam curves the load sideways into its abutments the way a masonry arch transfers load into supports, needing far less mass, but a bad abutment fails catastrophically rather than merely leaking. An earth dam's clay core must be more impermeable than the surrounding fill or seepage concentrates into an internal channel, piping, silent until sudden and total. A spillway exists purely to control overtopping; water over an undesigned crest erodes at very high velocity, and one miscalculated crest elevation dooms the whole structure regardless of dam quality. A retaining wall is the same soil-pressure problem at building scale, needing enough mass and the right base geometry, aided by drainage relieving pressure from behind it.
 
-**Prerequisites.** cn_true_arch for arch dam curvature logic, cn_pozzolana_concrete or cn_portland_cement for masonry dams, rock foundation surveying.
+**Prerequisites.** cn_true_arch for arch-dam curvature, cn_pozzolana_concrete or cn_portland_cement, rock foundation surveying.
 
-**Roman-available inputs.** Cut stone, concrete, clay for cores, all already Roman materials; the missing piece is not material but the calculation of sliding, overturning, and uplift forces against a given foundation, currently done, where it is done at all, by conservative overbuilding rather than by number.
+**Roman-available inputs.** Cut stone, concrete, clay, all Roman; missing is the calculation of sliding/overturning/uplift, currently done, if at all, by conservative overbuilding.
 
-**Procedure.** Site any dam on sound rock wherever possible, never on soil alone; for a gravity dam, proportion the mass so its own weight, resisting slide and overturn, comfortably exceeds the water's horizontal push at full pool, and drain the foundation to relieve uplift pressure rather than trying to resist it with mass alone. For an arch dam, confirm the abutment rock itself can take the thrust before committing to the lighter design. For an earth dam, build the clay core distinctly less permeable than the shoulders around it, and monitor seepage continuously, since piping gives visible warning, cloudy or increasing seepage, before it gives catastrophic warning. Size the spillway for the worst flood you can reasonably estimate plus a margin, never trim it for cost.
+**Procedure.** Site on sound rock wherever possible. Gravity dam: proportion mass so weight comfortably exceeds water's horizontal push, and drain the foundation to relieve uplift rather than resist it with mass alone. Arch dam: confirm abutment rock can take the thrust first. Earth dam: build the core distinctly less permeable than shoulders, monitor seepage continuously, cloudy or rising seepage is early warning. Spillway: size for the worst flood plus margin, never trim for cost.
 
-**How you know it worked.** No measurable base movement after a full pool cycle; seepage, if any, runs clear, not cloudy with eroded core material; the spillway has been tested at a real flood without overtopping elsewhere.
+**How you know it worked.** No measurable base movement after a full pool cycle; seepage runs clear; the spillway has passed a real flood untopped elsewhere.
 
-**Failure modes.** Uplift lifting a gravity dam at its base; abutment failure in an arch dam is sudden and total; piping erosion through an earth dam's core, invisible until a sinkhole or cloudy seepage appears, by which point failure may already be near; an undersized spillway that lets the dam overtop anywhere but the spillway, eroding the dam body itself.
+**Failure modes.** Uplift lifting the base; sudden total abutment failure; invisible piping erosion until a sinkhole appears; an undersized spillway eroding the dam body itself.
 
-**Cost & labour.** ESTIMATED, scales steeply with height; a modest masonry gravity dam is within reach using only Roman materials and empirical caution, larger dams need real load calculation this tree does not yet have.
+**Cost & labour.** ESTIMATED, steep with height; a modest masonry gravity dam is reachable with Roman materials and caution, larger dams need real calculation this tree lacks.
 
-**Danger.** Dam failure downstream is mass-casualty scale, among the worst failure modes in this entire module for people who never even worked on the structure. No unusual social danger to the builder short of failure.
+**Danger.** Downstream failure is mass-casualty scale, among the worst modes in this module.
 
-**Confidence: HIGH** on the sliding/overturning/uplift/piping mechanisms, well documented; **MEDIUM** on Roman-era ability to size these correctly without formal calculation.
+**Confidence: HIGH** on the mechanisms; **MEDIUM** on Roman-era sizing without formal calculation.
 
 ### cn_pile_driving - Pile driving, screw piles, soil compaction
 
-**What it is / why you want it.** Getting a foundation's bearing capacity up in soft or loose ground, either by driving a pile down to firmer material or by densifying the soil itself.
+**What it is.** Raising a foundation's bearing capacity in soft ground, either driving a pile to firmer material or densifying the soil itself.
 Also covers: cn_screw_pile, cn_soil_compaction.
 
-**Why you would never guess this.** A drop-hammer pile does not simply punch a hole, it compresses and packs the soil around it as it goes, which is why driving gets progressively harder the deeper the pile goes, each blow achieves less penetration than the last as the soil densifies, and a foreman who tracks that diminishing penetration per blow is actually measuring the soil's improving bearing capacity in real time without any instrument. A screw pile, a shaft with a helical blade, is driven by twisting instead of hammering, eliminating the drop-hammer entirely, but the helix pitch and angle must be right or the pile simply spins in place without advancing, and a pile driven with uneven torque along its length loses capacity in a way that is not visible from the surface. Soil compaction by rolling works the same densification logic without a pile at all, but only within an optimal moisture range, soil too dry does not compact, soil too wet resists compaction just as badly, since water fills the pore spaces that compaction is trying to close.
+**Why you'd never guess this.** A drop-hammer pile compresses and packs the soil around it as it goes, which is why driving gets harder with depth, each blow achieving less penetration, and a foreman tracking that diminishing penetration is measuring bearing capacity in real time without any instrument. A screw pile, a shaft with a helical blade, is twisted rather than hammered, but wrong pitch or angle means it spins in place without advancing, and uneven torque along its length loses capacity invisibly. Soil compaction by rolling works the same densification logic, but only within an optimal moisture range, too dry or too wet both resist it, since water fills the pore space compaction is meant to close.
 
-**Prerequisites.** cn_crane_treadwheel or a simple gin-pole hoist for the drop hammer, iron for the screw pile's helix, none beyond ordinary Roman capability for compaction itself.
+**Prerequisites.** cn_crane_treadwheel or a gin-pole hoist for the drop hammer, iron for the helix, nothing beyond Roman baseline for compaction.
 
-**Roman-available inputs.** Timber piles, iron shoes for pile tips, iron helix blades once forged, rollers of stone or timber for compaction.
+**Roman-available inputs.** Timber piles, iron shoes, iron helix blades once forged, stone or timber rollers.
 
-**Procedure.** For drop-hammer piling: raise a weight on a guide frame and drop it repeatedly on the pile head, tracking penetration per blow, driving stops once penetration per blow falls below a set small amount, the practical sign the pile has reached adequate bearing. For screw piles: match helix pitch to soil type by trial, and apply steady, even torque throughout the drive. For compaction: test soil moisture by feel (a handful that holds a shape when squeezed but does not run wet is close to optimal) before rolling, and pass the roller repeatedly, tracking that each pass gives less additional benefit than the last.
+**Procedure.** Drop-hammer: raise and drop repeatedly, tracking penetration per blow, stop once it falls below a set small amount. Screw pile: match helix pitch to soil by trial, apply even torque throughout. Compaction: test moisture by feel (holds shape squeezed, not wet), roll repeatedly, tracking diminishing benefit per pass.
 
-**How you know it worked.** A driven pile's penetration per blow has dropped to a small, stable figure and stays there for several more blows; compacted soil resists a boot heel pressed firmly into it.
+**How you know it worked.** Penetration per blow has dropped to a small stable figure across several more blows; compacted soil resists a firmly pressed boot heel.
 
-**Failure modes.** A pile driven into a soft pocket that penetrates easily forever, never reaching real bearing capacity, invisible until the structure above it settles; a screw pile spun without advancing wastes effort and gives false confidence; over- or under-moist soil compaction that looks finished but is not.
+**Failure modes.** A pile in a soft pocket that never reaches bearing, invisible until the structure settles; a screw pile spinning without advancing; over- or under-moist compaction that looks finished but isn't.
 
-**Cost & labour.** MEASURED order of magnitude, pile driving is standard heavy construction labour, days per pile depending on depth and soil.
+**Cost & labour.** MEASURED order of magnitude, standard heavy labour, days per pile.
 
-**Danger.** Dropped hammer weight can crush workers; no unusual social danger.
+**Danger.** Dropped hammer weight crushes workers.
 
-**Confidence: HIGH** on the mechanics, well attested across history and easily observed in practice.
+**Confidence: HIGH**, easily observed in practice.
 
 ### cn_cofferdam - Cofferdam, dewatering, diaphragm wall, sheet piling
 
-**What it is / why you want it.** Four related ways to keep water out of a hole you need to dig or build in, ranging from a simple temporary dike to a permanent slurry-formed wall.
+**What it is.** Four ways to keep water out of a hole you need to dig, from a temporary dike to a permanent slurry-formed wall.
 Also covers: cn_dewatering, cn_diaphragm_wall, cn_sheet_piling.
 
-**Why you would never guess this.** A cofferdam is conceptually simple, a dike around the work area, pumped dry, but leakage increases as the water pressure outside builds relative to the dry pit inside, so the pump capacity needed grows through the job, not just at the start, and a single pump with no backup is a single point of failure for the whole excavation. Dewatering by continuous pumping lowers the water table more broadly, which sounds purely beneficial until you notice it also lets nearby ground settle as the water that was supporting it is removed, meaning a dewatering job can crack a neighbour's foundation even while perfectly protecting your own excavation. Sheet piling, interlocking vertical plates driven side by side into the ground, forms a wall in place without a separate cofferdam basin, but the interlock between sheets must be tight or water seeps between them, and, non-obviously, each new sheet driven is pushed down against the friction of every sheet already driven beside it, so the last sheets in a long run are always the hardest to drive, not the easiest. A diaphragm wall goes further, excavating a trench filled with bentonite clay slurry (a thick, heavy fluid, not yet a Roman-known technique in this application) that holds the trench walls open without any temporary shoring, then pouring concrete into the slurry-filled trench through a pipe that stays submerged in the fresh concrete as it rises, so the heavier concrete displaces the lighter slurry upward and out rather than mixing with it.
+**Why you'd never guess this.** A cofferdam is a dike, pumped dry, but leakage rises as outside water pressure builds relative to the dry pit, so pump capacity must grow through the job, and one pump with no backup is a single point of failure for the whole excavation. Dewatering lowers the water table more broadly, which also lets nearby ground settle as the water supporting it is removed, meaning a job can crack a neighbour's foundation while perfectly protecting your own. Sheet piling, interlocking plates driven side by side, needs a tight interlock or water seeps between sheets, and, non-obviously, each new sheet is pushed against the friction of every sheet already driven beside it, so the last sheets in a long run are hardest, not easiest. A diaphragm wall excavates a trench filled with clay slurry that holds the walls open without shoring, then concrete poured through a tremie pipe kept submerged displaces the lighter slurry upward rather than mixing with it, a use of clay Rome does not currently make.
 
-**Prerequisites.** Timber and iron for cofferdam and sheet piling, continuous mechanical pumping (`40_power_precision.md#hydraulics_pumps`) for dewatering, bentonite-equivalent clay slurry knowledge for diaphragm walls, a specific gap since Rome has clay but not this particular use of it.
+**Prerequisites.** Timber and iron, continuous mechanical pumping (`40_power_precision.md#hydraulics_pumps`), bentonite-equivalent slurry knowledge for diaphragm walls.
 
-**Roman-available inputs.** Timber, clay, iron sheet stock once forged; the pump technology is the real gate, Roman force pumps exist but not at the continuous, reliable capacity a flooding excavation demands.
+**Roman-available inputs.** Timber, clay, forged iron sheet; the pump is the real gate, Roman force pumps aren't reliable at the needed continuous capacity.
 
-**Procedure.** For a cofferdam: build the dike generously oversized against expected water rise, and run two pumps, not one, so a single failure does not flood the site in minutes. For dewatering: monitor nearby structures for settlement throughout the job, not just at the end, since settlement can begin before it is visible in the excavation itself. For sheet piling: drive sheets in a planned sequence, checking interlock tightness sheet by sheet, and expect driving force to increase toward the end of a long run. For a diaphragm wall: keep the slurry level high in the trench at all times work is paused, since a dropped slurry level is what lets trench walls collapse, and place concrete through a tremie pipe kept submerged throughout the pour.
+**Procedure.** Cofferdam: oversize the dike, run two pumps so one failure doesn't flood the site. Dewatering: monitor nearby structures throughout, not just at the end. Sheet piling: drive in sequence, check interlock tightness sheet by sheet. Diaphragm wall: keep slurry level high whenever work pauses, a dropped level is what lets trench walls collapse; place concrete through a submerged tremie.
 
-**How you know it worked.** A cofferdam stays dry with steady, manageable pump output, not increasing without explanation; a diaphragm wall trench holds its shape overnight without slumping.
+**How you know it worked.** A cofferdam stays dry with steady pump output; a diaphragm trench holds shape overnight.
 
-**Failure modes.** Single-pump cofferdam failure flooding the site suddenly; dewatering-induced settlement cracking nearby structures; loose sheet pile interlocks leaking and eventually letting soil wash through with the water; a diaphragm wall trench that collapses because slurry level was allowed to drop.
+**Failure modes.** Single-pump flooding; dewatering-induced settlement cracking neighbours; loose sheet interlocks leaking soil through with the water; a slumped diaphragm trench from a dropped slurry level.
 
-**Cost & labour.** ESTIMATED, cofferdam and sheet piling are within reach with Roman materials plus continuous pumping capacity; diaphragm wall technique is a genuinely new procedure Rome has no precedent for at all.
+**Cost & labour.** ESTIMATED, cofferdam and sheet piling reachable with Roman materials plus pumping; diaphragm wall has no Roman precedent at all.
 
-**Danger.** Sudden flooding of an occupied excavation is a real drowning and crush hazard; nearby-structure settlement is a legal and social hazard, a neighbour whose wall cracks from your dewatering will not care that your excavation stayed dry.
+**Danger.** Sudden flooding is a drowning/crush hazard; settlement is a legal and social hazard, a cracked neighbour's wall won't care your own site stayed dry.
 
-**Confidence: MEDIUM-HIGH** on cofferdam and sheet piling mechanics; **MEDIUM** on diaphragm wall procedure, a genuinely later technique with no Roman analogue to anchor confidence against.
+**Confidence: MEDIUM-HIGH** on cofferdam and sheet piling; **MEDIUM** on diaphragm wall.
 
 ### cn_caisson - Caisson, pneumatic caisson, underpinning
 
-**What it is / why you want it.** Building a foundation below water or below an existing structure by working inside a sealed or pressurised chamber, or by carefully replacing an old foundation piece by piece while the building above stays standing.
+**What it is.** Building a foundation below water or below an existing structure, inside a sealed or pressurised chamber, or by replacing an old foundation piece by piece while the building stays standing.
 Also covers: cn_pneumatic_caisson, cn_underpinning.
 
-**Why you would never guess this.** A simple caisson is a heavy open-topped box that sinks under its own weight as material is dug out from inside it, sealed at every corner and joint or it floods; if the seal fails while men are inside, the loss of air or buoyancy can be sudden. A pneumatic caisson takes this further by pressurising the working chamber with compressed air to match the water pressure at depth, keeping water out of an open-bottomed chamber entirely, which lets men dig directly at the working face, but it introduces a genuinely new and non-obvious danger: workers who ascend from high pressure back to normal too quickly develop caisson disease (the bends), nitrogen dissolved in the blood under pressure forming bubbles as pressure drops, a killer with no dramatic warning at the time of exposure and a delayed, agonising onset afterward, which means the safety procedure (slow, staged decompression) has to be followed even when nothing seems wrong. A sand boil, sudden inrush of sand and water when pressure drops even briefly, can undermine the whole chamber wall in moments. Underpinning is a different problem entirely, removing and replacing an existing foundation under a building that must not move, even a millimetre of uneven settlement can crack walls above, so the work proceeds in small sections at a time, each one shored, replaced, and allowed to take load again before the next section is touched.
+**Why you'd never guess this.** A simple caisson sinks under its own weight as material is dug from inside, sealed at every joint or it floods, and a failed seal with men inside can be sudden. A pneumatic caisson pressurises the chamber to match water pressure at depth, letting men dig the open face directly, but introduces a genuinely new danger: workers ascending from high pressure too fast get caisson disease (the bends), nitrogen bubbling out of the blood as pressure drops, with no warning at the time of exposure and an agonising delayed onset, so slow staged decompression must be followed even when nothing seems wrong. A sand boil, sudden inrush when pressure drops even briefly, can undermine a chamber wall in moments. Underpinning removes and replaces an existing foundation under a building that must not move, even a millimetre of uneven settlement can crack walls above, so work proceeds one small shored section at a time.
 
-**Prerequisites.** cn_cofferdam's sealing logic, compressed air supply and pressure control (a gap beyond Roman force-pump capability, needing reliable continuous air compression), for underpinning: adjustable shoring and very close monitoring of the structure above.
+**Prerequisites.** cn_cofferdam's sealing logic, compressed air supply and pressure control (beyond Roman force pumps), adjustable shoring for underpinning.
 
-**Roman-available inputs.** Timber for the caisson box, iron for seals and fittings; pneumatic capability and its pressure control are not Roman-reachable without dedicated development.
+**Roman-available inputs.** Timber, iron seals; pneumatic capability itself is not Roman-reachable without dedicated development.
 
-**Procedure.** For a simple caisson: seal every joint before sinking begins, and never assume a seal is sound without testing it under load before committing workers inside. For a pneumatic caisson: raise chamber pressure gradually to match working depth, and decompress workers on a slow, staged schedule after every shift regardless of how they feel, since symptoms of the bends appear after exposure, not during it. For underpinning: shore the existing structure section by section, remove and replace only one small section of old foundation at a time, and monitor for any settlement with a fixed reference mark before moving to the next section.
+**Procedure.** Simple caisson: seal every joint, test under load before committing workers. Pneumatic: raise pressure gradually, decompress on a slow staged schedule every shift regardless of how workers feel, since symptoms appear after exposure, not during. Underpinning: shore section by section, replace one small section at a time, monitor a fixed reference mark before moving to the next.
 
-**How you know it worked.** A caisson sinks evenly with no leaks visible at any joint; a pneumatic caisson crew shows no delayed joint pain or dizziness after decompression; underpinned sections show no new cracking in the structure above after each stage.
+**How you know it worked.** A caisson sinks evenly with no leaks; a crew shows no delayed pain or dizziness after decompression; underpinned sections show no new cracking above.
 
-**Failure modes.** A caisson seal failure floods the working chamber suddenly; skipped or rushed decompression causes the bends, sometimes fatally, hours after the men have left the caisson feeling fine; a sand boil undermines a chamber wall in moments; underpinning a section too large at once lets the building above settle unevenly and crack.
+**Failure modes.** Sudden flooding from a seal failure; rushed decompression causing the bends hours after the crew feels fine; a sand boil undermining a wall in moments; underpinning too large a section at once, cracking the structure above.
 
-**Cost & labour.** ESTIMATED, pneumatic caisson work is slow and specialised, a small number of trained men working short shifts at depth; underpinning is inherently slow by design, since speed is exactly what causes its failures.
+**Cost & labour.** ESTIMATED, slow specialised work, small crews on short shifts at depth.
 
-**Danger.** The bends is a genuinely novel danger this module must flag hard, since nothing in Roman experience prepares a worker to fear a symptom that appears only after the danger seems past; sand boils and seal failures are acute drowning risks. No unusual social danger beyond the obvious concern any patron would have about workers dying underground or underwater.
+**Danger.** The bends is a genuinely novel danger, a symptom appearing only after the danger seems past. Sand boils and seal failures are acute drowning risks.
 
-**Confidence: HIGH** on caisson disease's mechanism and the value of staged decompression, well established; **LOW** on Roman-era pneumatic capability, this needs compressed air technology this tree may not yet provide.
+**Confidence: HIGH** on the bends' mechanism; **LOW** on Roman-era pneumatic capability.
 
 ### cn_drill_blast - Tunnelling by drill and blast
 
-**What it is / why you want it.** Breaking rock by controlled explosive charges in a planned pattern of drilled holes, rather than by hand tools alone, the only way to advance a tunnel through hard rock at any useful speed.
+**What it is.** Breaking rock by planned explosive charges in drilled holes, the only way to advance through hard rock at useful speed.
 Also covers: cn_tunnel_cut_cover, cn_ventilation_shaft.
 
-**Why you would never guess this.** The obvious assumption is that more explosive means faster progress; the opposite is closer to true. Blast timing and hole pattern matter more than total charge: charges fired in the wrong sequence (rather than a planned pattern, typically a centre cut fired first to create a free face, followed by rings fired outward toward it) leave large unbroken boulders and poor fragmentation, meaning the crew spends as long breaking up the debris by hand as they saved by blasting; too much charge in any one hole wastes explosive and damages the surrounding rock, weakening the tunnel walls the crew will need to rely on later. Cut-and-cover, digging an open trench, building the tunnel structure inside it, then covering it over, is the right method only for shallow tunnels, since the roof structure must carry the full weight of everything piled back on top of it plus whatever traffic runs above, and that load only gets worse with depth, past a certain depth the shield method (cn_tunnel_shield) becomes the better choice. A ventilation shaft, usually much shallower than the main tunnel it serves, works by natural stack effect, warm air rising out of the shaft draws fresh air in through the tunnel entrance, unless the pressure difference is disrupted by an obstruction, in which case foul air and blast fumes simply pool at the working face.
+**Why you'd never guess this.** More explosive is not faster progress. Charges fired in the wrong sequence, rather than a planned pattern (centre cut first for a free face, rings fired outward toward it), leave large boulders and poor fragmentation, costing as much hand-breaking time as the blast saved; too much charge per hole wastes powder and damages walls the tunnel later relies on. Cut-and-cover, an open trench, structure built in it, covered over, suits only shallow tunnels, since the roof carries everything piled back on it plus traffic, worsening with depth; past a point the shield method is better. A ventilation shaft, usually far shallower than the tunnel, works by natural stack effect, warm air rising draws fresh air in, unless obstructed, in which case foul air and blast fumes pool at the face.
 
-**Prerequisites.** Gunpowder-equivalent explosive is a serious anachronism trap, Rome has none, this entire technique is gated on an explosive chemistry this tree may treat elsewhere (see `20_chemistry.md` if such an entry exists); rock drilling by hand or animal-powered drill, cn_quarrying_wedge's stone-reading skill.
+**Prerequisites.** Explosive is a genuine anachronism trap, Rome has none, this technique is gated on chemistry outside this module; rock drilling, cn_quarrying_wedge's grain-reading.
 
-**Roman-available inputs.** None for the explosive itself; drilling and rock-reading skill, timber for shoring, iron drill bits, all already Roman.
+**Roman-available inputs.** None for explosive; drilling and rock-reading, timber shoring, iron bits, all Roman.
 
-**Procedure.** Drill a planned pattern of holes, deepest and most numerous toward the centre of the face, load and fire the centre holes first to create a free surface, then fire surrounding rings outward toward that free face in sequence, never all at once, clear fumes (natural draft or a temporary shaft) before re-entering the face. For cut-and-cover, size the roof structure for the worst load it will ever carry, everything above it plus traffic, before backfilling. For ventilation shafts, site them to work with the tunnel's natural draft, not against it.
+**Procedure.** Drill a planned pattern, deepest toward centre, fire centre holes first for a free face, then rings outward in sequence, clear fumes before re-entering. Size a cut-and-cover roof for the worst load it will ever carry before backfilling. Site ventilation shafts to work with the tunnel's natural draft.
 
-**How you know it worked.** Broken rock at the face is well-fragmented, no boulders too large for a man to move without further breaking; a ventilation shaft draws a candle flame visibly toward the tunnel entrance.
+**How you know it worked.** Well-fragmented rock, no boulder too large to move by hand; a shaft draws a candle flame toward the entrance.
 
-**Failure modes.** Wrong blast sequence leaving unbroken boulders and wasted explosive; overcharged holes damaging tunnel walls that later collapse under their own disturbed stress; an under-sized cut-and-cover roof crushed by backfill and traffic load; a blocked ventilation shaft letting fumes pool at the working face, a suffocation risk with no warning smell for some blast gases.
+**Failure modes.** Wrong sequence leaving boulders and wasted charge; overcharged holes damaging walls that later collapse; an undersized cut-and-cover roof crushed by backfill; a blocked shaft pooling fumes, a suffocation risk with no warning smell for some gases.
 
-**Cost & labour.** ESTIMATED, entirely gated on explosive availability; without it, drill-and-hand-break progress in hard rock is measured in a few metres per week per crew (ESTIMATED, basis: pre-explosive tunnelling rates recorded historically).
+**Cost & labour.** ESTIMATED, gated on explosive availability; without it, hand-break progress is a few metres per week per crew (ESTIMATED, basis: pre-explosive historical rates).
 
-**Danger.** Explosive misfire, premature detonation, and fume poisoning are all acute, immediate dangers; tunnel roof collapse during cut-and-cover work before the structure is complete. Explosives themselves carry serious social danger, a magistrate will treat unauthorised large-scale explosive production as a direct threat, not an engineering curiosity.
+**Danger.** Misfire, premature detonation, fume poisoning, all acute; explosives carry real social danger, a magistrate treats unauthorised large-scale production as a threat, not a curiosity.
 
-**Confidence: MEDIUM** on the blast-sequence mechanics, well documented from later mining and tunnelling practice; explicitly gated and LOW on Roman-era availability of the explosive itself.
+**Confidence: MEDIUM** on blast mechanics; explicitly **LOW** on Roman-era explosive availability.
 
 ### cn_tunnel_shield - Tunnel shield method, and tunnel lining
 
-**What it is / why you want it.** A protective steel shell pushed forward through soft ground by jacks, letting men excavate the face safely while rings of permanent lining are installed immediately behind, the method that makes tunnelling through soft, unstable ground (rather than solid rock) survivable.
+**What it is.** A protective shell pushed forward by jacks through soft ground, letting men excavate safely while permanent lining rings go in immediately behind, the method that makes tunnelling soft, unstable ground survivable.
 Also covers: cn_tunnel_lining.
 
-**Why you would never guess this.** In hard rock, the rock itself briefly holds its own shape after excavation, giving time to shore it. In soft ground, sand, clay, waterlogged soil, the face can collapse the instant it is exposed, with no such grace period, which is exactly the problem the shield solves: it physically holds the face and the surrounding ground open while men work just behind its leading edge, and is pushed forward by jacks bearing against the lining rings already installed behind it, meaning the tunnel effectively builds its own advancing anchor as it goes. In very soft or waterlogged ground the face itself may need to be pressurised or otherwise supported (an early version of the same principle behind the pneumatic caisson, cn_caisson) or it simply flows into the shield faster than it can be removed. Lining rings are cast and cured before installation, so installation itself is fast, a ring or two a day once the routine is established, but every joint between segments must be tight, since water finding its way through a joint will slowly rot the lining from the inside over years, a slow failure with no dramatic warning until the lining itself starts to fail structurally.
+**Why you'd never guess this.** In hard rock the rock briefly holds its own shape, giving time to shore. In soft ground, sand, clay, waterlogged soil, the face can collapse the instant it's exposed, no grace period, which is exactly what the shield solves, holding the face open while men work just behind its leading edge, pushed forward by jacks bearing against the lining already installed behind, so the tunnel builds its own advancing anchor. In waterlogged ground the face may need pressurising or support (an early relative of cn_caisson's logic) or it flows into the shield faster than it can be removed. Lining rings are cast and cured before installation, so installation is fast, but every joint must be tight, water finding a joint slowly rots the lining from inside over years, no dramatic warning until it fails structurally.
 
-**Prerequisites.** cn_wrought_iron_girder or steel for the shield shell and jacks, cn_concrete_mixer-scale concrete production for lining segments, cn_caisson's sealing and pressure logic for waterlogged ground.
+**Prerequisites.** cn_wrought_iron_girder or steel for shell and jacks, cn_concrete_mixer-scale production for lining segments, cn_caisson's sealing and pressure logic.
 
-**Roman-available inputs.** None directly; this is a late, iron/steel-tonnage-and-concrete-industry combination technique with no partial Roman precedent, unlike cut-and-cover, which at least resembles a very deep foundation trench Rome could attempt.
+**Roman-available inputs.** None, a late steel-and-concrete-industry combination with no partial Roman precedent.
 
-**Procedure.** Push the shield forward in short, jacked increments, excavating only the small increment of face exposed at the front at any time, never more. Install a new lining ring immediately behind the shield's advance, providing the next jacking reaction point. Grout the small gap between the lining's outer face and the surrounding ground promptly, since an ungrouted void lets the ground above settle unevenly, a hazard to anything built above the tunnel line.
+**Procedure.** Push the shield forward in short jacked increments, excavating only the exposed increment at any time. Install a lining ring immediately behind, providing the next jacking point. Grout the gap behind the lining promptly, an ungrouted void lets the ground above settle unevenly.
 
-**How you know it worked.** The shield advances steadily with no sudden ground loss (surface settlement) visible above the tunnel line; lining joints show no water seepage after installation.
+**How you know it worked.** Steady advance with no sudden surface settlement above the line; no seepage at lining joints.
 
-**Failure modes.** Face collapse into the shield in waterlogged or very soft ground without pressure support; an ungrouted void behind the lining causing delayed surface settlement, sometimes long after the tunnel is finished and forgotten; leaking lining joints rotting the structure slowly from the inside.
+**Failure modes.** Face collapse into the shield without pressure support; an ungrouted void causing delayed settlement, sometimes long after the tunnel is forgotten; leaking joints rotting the lining slowly.
 
-**Cost & labour.** ESTIMATED, a genuinely late-tree, capital- and steel-intensive technique.
+**Cost & labour.** ESTIMATED, a late-tree, capital- and steel-intensive technique.
 
-**Danger.** Face collapse is an acute burial hazard to the crew working at the shield's leading edge; surface settlement from a poorly grouted tunnel is a hazard to anyone above ground who has no idea a tunnel runs beneath them. No unusual social danger beyond that.
+**Danger.** Face collapse is an acute burial hazard; poorly grouted settlement endangers anyone above ground unaware a tunnel runs beneath them.
 
-**Confidence: MEDIUM** on the mechanics, well documented historically; explicitly LOW on any near-term Roman reachability.
+**Confidence: MEDIUM** on mechanics; explicitly **LOW** on near-term reachability.
 
 ### cn_crane_derrick - Derrick and tower cranes, elevator safety brake
 
-**What it is / why you want it.** Lifting machinery beyond the Roman treadwheel's practical scale, once continuous mechanical power and steel are available to build taller, stronger masts.
+**What it is.** Lifting machinery beyond the treadwheel's practical scale, once continuous power and steel exist for taller, stronger masts.
 Also covers: cn_crane_tower, cn_elevator_safety_brake.
 
-**Why you would never guess this.** A derrick's mast is strong in the direction it is built for, straight-up compression, but weak against side load, which is exactly what an unevenly tensioned guy line introduces; if the guy cables holding the mast upright are not tensioned equally, the mast bends sideways under a load it was never designed to resist in that direction, and a loose stay that whips in wind is a warning sign, not a minor annoyance. A tower crane takes this further, with the jib and its load cantilevered out from a fixed vertical mast, meaning the base must be heavy enough to resist the overturning moment (the load's tendency to tip the whole tower over, worse the further out the jib reaches) and wind load on the tall exposed structure adds to that overturning tendency, so bracing that seems adequate in calm weather can fail in a storm the crane was never tested against. An elevator's safety brake is the clearest lesson in this whole cluster: the brake's jaws are held open by the tension of the very cable that might break, so as the cable's tension drops (because it is breaking), that drop in tension is what triggers the brake to close, meaning the failure event itself arms the safety device, an elegant design, but only if the wedge angle is exactly right, too shallow and the brake slips instead of gripping.
+**Why you'd never guess this.** A derrick's mast is strong in straight-up compression, weak against side load, exactly what unevenly tensioned guy lines introduce; a loose stay that whips in wind is a warning, not a nuisance. A tower crane's jib and load are cantilevered from a fixed mast, so the base must be heavy enough against the overturning moment, worse the further the jib reaches, and wind on the tall exposed structure adds to it, so bracing adequate in calm weather can fail in a storm never tested against. An elevator's safety brake is the clearest lesson here: its jaws are held open by tension in the very cable that might break, so as that tension drops, the drop itself triggers the brake, the failure event arms the safety device, elegant, but only if the wedge angle is exactly right, too shallow and it slips instead of gripping.
 
-**Prerequisites.** cn_wrought_iron_girder or steel for the mast and jib, cn_riveted_connection or bolted joints, continuous mechanical power (`40_power_precision.md#gearing_and_transmission`, `steam_high_pressure` for a powered hoist rather than muscle).
+**Prerequisites.** cn_wrought_iron_girder or steel, cn_riveted_connection, continuous power (`40_power_precision.md#gearing_and_transmission`, `steam_high_pressure`).
 
-**Roman-available inputs.** Timber can build a modest derrick within Roman means; a true tower crane and a mechanical elevator brake are iron/steel-tonnage technologies gated well beyond baseline Rome.
+**Roman-available inputs.** Timber builds a modest derrick within Roman means; tower crane and elevator brake are iron/steel-tonnage technologies gated well beyond baseline.
 
-**Procedure.** For a derrick: tension all guy lines equally before loading, and check tension again after any load change, since a mast that was balanced empty may be unbalanced loaded. For a tower crane: size the base counterweight against the worst combination of maximum load at maximum reach plus expected wind, not against calm-weather average conditions. For an elevator brake: set the wedge angle by testing against a deliberately cut cable under controlled conditions before ever trusting it with a rider, and inspect the brake mechanism regularly for corrosion or debris that could stop it engaging cleanly.
+**Procedure.** Derrick: tension all guy lines equally before loading, recheck after any load change. Tower crane: size the base counterweight against maximum load at maximum reach plus expected wind, not calm-weather average. Elevator brake: set the wedge angle by testing against a deliberately cut cable before ever trusting a rider, inspect regularly for corrosion or debris.
 
-**How you know it worked.** A derrick mast stays plumb under full working load in a stiff wind; a tower crane shows no measurable base uplift on the side opposite the load at maximum reach; a test-cut cable on an elevator brake stops the cage within a short, predictable distance.
+**How you know it worked.** A derrick stays plumb under full load in stiff wind; a tower crane shows no base uplift opposite the load at maximum reach; a test-cut cable stops the cage within a short predictable distance.
 
-**Failure modes.** Unequal guy tension bending or toppling a derrick mast; wind-driven overturning of a tower crane whose base counterweight was sized only for calm conditions; an elevator brake with the wrong wedge angle that slips rather than grips, the single most consequential failure in this section since it endangers a rider rather than a construction worker.
+**Failure modes.** Unequal guy tension bending or toppling a mast; wind-driven overturning of a crane sized only for calm conditions; a wrong wedge angle that slips instead of grips, the single most consequential failure here since it endangers a rider.
 
-**Cost & labour.** ESTIMATED, derricks are within Roman timber-and-rope reach at modest scale; tower cranes and elevator brakes are iron/steel and precision-fabrication technologies, late-tree.
+**Cost & labour.** ESTIMATED, derricks reachable at modest scale with Roman timber and rope; tower cranes and elevator brakes are late-tree.
 
-**Danger.** Toppling mast or crane crushes anyone nearby; a failed elevator brake is a fall hazard to an occupant with essentially no personal ability to save themselves once the cable has actually parted. No unusual social danger.
+**Danger.** A toppling mast or crane crushes anyone nearby; a failed elevator brake is a fall hazard the rider cannot personally prevent once the cable has parted.
 
-**Confidence: HIGH** on the mechanical logic of all three; **LOW** on Roman-era reachability for the tower crane and elevator brake specifically.
+**Confidence: HIGH** on the mechanical logic; **LOW** on reachability for the tower crane and elevator brake specifically.
 
 ### cn_concrete_mixer - Concrete mixing and placing at scale
 
-**What it is / why you want it.** The machinery and technique that let concrete be placed fast, evenly, and at real building scale, rather than one hand-mixed batch at a time.
+**What it is.** Machinery and technique that let concrete be placed fast and evenly at real building scale, not one hand batch at a time.
 Also covers: cn_formwork_shuttering, cn_slipform, cn_shotcrete, cn_vibratory_compaction, cn_expansion_joint.
 
-**Why you would never guess this.** A rotary drum mixer has a real, narrow optimum speed: too slow and the heavier aggregate simply settles to the bottom while the paste stays on top, segregating rather than mixing; too fast and centrifugal force pins everything to the drum wall instead of tumbling it, which looks like mixing but is not. Formwork, the timber or metal mould that holds wet concrete to shape, must be stiff enough that it does not deflect under the wet concrete's full weight, and the non-obvious part is that any deflection that happens while the concrete is still wet becomes permanently cast into the finished surface, a formwork problem you cannot fix after the fact, only before. Slipform construction raises this stakes further, the formwork itself creeps continuously upward as concrete is poured below it, so the creep rate must be tuned exactly against the concrete's setting speed, too fast and the wet concrete below breaks under its own unsupported weight, too slow and the concrete that has already set cracks against the friction of the form still dragging past it. Shotcrete, concrete sprayed on rather than poured, wastes a real fraction of its material to rebound on vertical or overhead surfaces, and needs slow, controlled curing afterward or drying shrinkage cracks the thin sprayed layer. Vibratory compaction is a genuinely narrow-window technique: too little vibration leaves voids and weak zones in the finished concrete, too much actually un-mixes it, shaking the heavy aggregate down and the light paste up, the opposite of what vibration was meant to achieve, and the whole working window per area is only five to ten seconds (ESTIMATED, basis: standard modern vibration practice), easy to overshoot without a trained eye. Expansion joints exist because concrete genuinely moves with temperature, roughly 10-15 millimetres per 100 metres across a 50-degree swing (ESTIMATED, basis: standard concrete thermal expansion coefficients), and without a joint to absorb that movement the slab cracks itself at a point of its own choosing rather than yours; joints are normally spaced under 20 metres apart for exactly this reason.
+**Why you'd never guess this.** A rotary mixer has a narrow optimum speed: too slow and heavy aggregate settles while paste stays on top, segregating rather than mixing; too fast and centrifugal force pins everything to the drum wall, which looks like mixing but isn't. Formwork must be stiff enough not to deflect under wet concrete's full weight, and any deflection while wet becomes permanently cast into the finished surface, unfixable after the fact. Slipform raises the stakes, the form creeps continuously upward as concrete is poured below, creep rate tuned exactly against setting speed, too fast breaks unsupported wet concrete, too slow cracks set concrete against the moving form's friction. Shotcrete wastes real material to rebound on vertical surfaces and needs slow controlled curing or drying shrinkage cracks the thin layer. Vibration has a narrow window, too little leaves voids, too much un-mixes it, shaking heavy aggregate down and light paste up, the working window is only five to ten seconds per area (ESTIMATED, standard modern practice). Expansion joints exist because concrete moves roughly 10-15 mm per 100 m across a 50-degree swing (ESTIMATED, standard thermal coefficients); without a joint it cracks itself at a point of its own choosing, so joints are normally spaced under 20 m apart.
 
-**Prerequisites.** cn_pozzolana_concrete or cn_portland_cement, mechanical power for a drum mixer and for a vibrator (`40_power_precision.md`), timber for formwork.
+**Prerequisites.** cn_pozzolana_concrete or cn_portland_cement, mechanical power for mixer and vibrator, timber for formwork.
 
-**Roman-available inputs.** Timber formwork, already Roman practice for concrete pours; mechanised mixing, slipform, shotcrete, and powered vibration are all beyond Roman baseline, gated on continuous mechanical power.
+**Roman-available inputs.** Timber formwork, already Roman; mechanised mixing, slipform, shotcrete, and powered vibration are beyond baseline, gated on continuous power.
 
-**Procedure.** Run a drum mixer at its tested optimum speed, neither creeping nor throwing material outward; build formwork stiff enough to show no visible deflection under a test load equal to the wet concrete it will hold, and strike it only once the concrete has enough strength to support itself. For slipform, match the creep rate to the concrete's actual setting time under current temperature and humidity, tested on-site rather than assumed. For shotcrete, angle the nozzle to minimise rebound and cure slowly, keeping the surface damp rather than letting it dry fast. Vibrate concrete in short bursts, moving the vibrator steadily rather than holding it in one place, watching for the surface to go from rough to smooth and glistening, the visual sign it is done, not before and not long after. Place expansion joints at regular intervals, filled with a compressible material that can squeeze rather than extrude out under the joint's own movement.
+**Procedure.** Run the mixer at tested optimum speed. Build formwork stiff enough to show no deflection under a test load equal to the wet concrete, strike only once self-supporting. Match slipform creep rate to on-site tested setting time. Angle the shotcrete nozzle to minimise rebound, cure damp and slow. Vibrate in short bursts, moving steadily, stop once the surface goes smooth and glistening. Place expansion joints regularly with compressible filler that squeezes rather than extrudes.
 
-**How you know it worked.** A mixed batch shows uniform colour and texture with no separated aggregate at the bottom; a struck formwork surface is flat and true to the mould with no visible sag lines; vibrated concrete rings solid when tapped, with no hollow-sounding voids.
+**How you know it worked.** Uniform mixed batch, no settled aggregate; a struck formwork surface is flat and true; vibrated concrete rings solid when tapped, no hollow spots.
 
-**Failure modes.** Segregated concrete from wrong mixer speed, weak and uneven once cured; formwork deflection permanently cast into the finished surface; slipform mismatch either breaking wet concrete below or cracking set concrete against the moving form; shotcrete rebound waste and shrinkage cracking from fast curing; over- or under-vibrated concrete, both weak in different ways; missing or too-widely-spaced expansion joints letting the slab crack itself at an uncontrolled point.
+**Failure modes.** Segregated concrete from wrong mixer speed; formwork deflection cast permanently into the surface; slipform mismatch breaking wet concrete or cracking set concrete; shotcrete rebound waste and shrinkage cracking; over- or under-vibrated concrete, weak either way; missing expansion joints cracking the slab uncontrolled.
 
-**Cost & labour.** DERIVED, formwork and hand mixing are within Roman means already; mechanised mixing, slipform, shotcrete, and vibration all require continuous mechanical power this tree may not yet have at construction-site scale.
+**Cost & labour.** DERIVED, formwork and hand mixing are within Roman means; mechanised versions need continuous power this tree may not yet have on site.
 
-**Danger.** Formwork collapse under wet concrete's full weight can bury or crush workers; shotcrete equipment under pressure can injure if mishandled. No unusual social danger.
+**Danger.** Formwork collapse under wet concrete can bury or crush workers.
 
-**Confidence: HIGH** on the underlying mechanics, well documented modern practice; **MEDIUM** on how much is reachable without dedicated mechanical power at the construction site itself.
+**Confidence: HIGH** on the mechanics; **MEDIUM** on reachability without dedicated site power.
 
 ### cn_curtain_wall - Curtain wall, plate glass, sash window, asphalt roofing, corrugated roof
 
-**What it is / why you want it.** How a building's outer skin works once a steel or reinforced concrete frame, not the wall itself, carries the structural load, freeing the wall to be thin, glazed, and purely weatherproofing.
+**What it is.** How a building's outer skin works once a frame, not the wall, carries structural load, freeing the wall to be thin and glazed.
 Also covers: cn_plate_glass_window, cn_sash_window, cn_asphalt_roofing, cn_roof_truss_corrugated.
 
-**Why you would never guess this.** A curtain wall panel is supported only at its top, hanging rather than standing, and every wind load on it must travel through its fasteners into the frame behind, meaning sealing is critical with essentially no redundancy, one failed seal or fastener is one failed panel, not a shared, forgiving load path the way a thick masonry wall provides. This entire idea only makes sense once cn_steel_frame_skeleton exists to carry the real structural load, without a frame there is nothing for the wall to hang from and it must simply be load-bearing, which is all Rome has ever needed a wall to be. Plate glass at real size is slow and expensive to cast, and the annealing step (controlled slow cooling) afterward matters as much as the casting, since internal stress left in glass cooled too fast can crack the pane months later with no warning, for no visible reason at the time. A sash window trades a simple opening for smooth vertical operation using a cord, pulley, and counterweight, but the weight must exactly balance the pane, or the window either will not stay open on its own or will slam shut, and cord wear is a slow, invisible failure until it snaps. Asphalt (bitumen) roofing is sharply temperature-sensitive at installation, too cold and it cracks rather than bonds, too hot and it simply flows away from where you placed it, and laps must overlap in the direction water actually runs, downslope, or the roofing traps water under itself instead of shedding it. Corrugated iron roofing is stiff specifically because of its corrugations, not despite them, flat iron sheet of the same thickness would sag badly, but fastening through the corrugation ridges concentrates stress at each hole, and daily thermal expansion and contraction against those fasteners is what produces the characteristic ticking and popping noise of a corrugated roof.
+**Why you'd never guess this.** A curtain panel is supported only at its top, hanging rather than standing, and every wind load travels through its fasteners into the frame, with essentially no redundancy, one failed seal is one failed panel. This idea only works once cn_steel_frame_skeleton exists to carry real load; without a frame there's nothing to hang from, so the wall must be load-bearing, all Rome has ever needed a wall to be. Plate glass at real size is slow to cast, and slow controlled annealing afterward matters as much as casting, internal stress left by fast cooling can crack a pane months later for no visible reason. A sash window trades a simple opening for smooth operation via cord, pulley, and counterweight, but the weight must exactly balance the pane or it won't stay open or will slam shut, and cord wear is invisible until it snaps. Asphalt roofing is sharply temperature-sensitive at installation, too cold it cracks, too hot it flows away, and laps must overlap downslope or trap water. Corrugated iron is stiff because of its corrugations, not despite them, flat sheet of the same thickness would sag badly, but fastening through the ridges concentrates stress at each hole, and daily thermal cycling against those fasteners is the source of a corrugated roof's characteristic ticking.
 
-**Prerequisites.** cn_steel_frame_skeleton for true curtain wall, glassblowing and casting skill Rome already has (see `30_glass_optics.md`) scaled up for plate glass, bitumen (already known and traded, the Dead Sea and Mesopotamian sources) for asphalt roofing, cn_wrought_iron_girder-tonnage rolled sheet for corrugated iron.
+**Prerequisites.** cn_steel_frame_skeleton for true curtain wall, Roman glassblowing (`30_glass_optics.md`) scaled up, bitumen (already traded) for roofing, cn_wrought_iron_girder-tonnage rolled sheet for corrugated iron.
 
-**Roman-available inputs.** Roman glassblowing already produces clear glass panes at modest size; bitumen is a known, traded Roman material; iron sheet rolling and true curtain-wall framing are both gated on the steel tonnage this module discusses above.
+**Roman-available inputs.** Roman glassblowing already produces clear panes at modest size; bitumen is a known traded material; sheet rolling and curtain framing are gated on tonnage above.
 
-**Procedure.** For plate glass: cast, then anneal slowly in a cooling oven with a controlled temperature gradient, checking with polarised light (a much later technique) or, absent that, simply allowing generous cooling time and accepting some loss to invisible internal stress. For a sash window: balance counterweights precisely to the pane's actual weight, and inspect cords for wear on a fixed schedule rather than waiting for a failure. For asphalt roofing: install within the stated temperature range for the bitumen in use, and always lap in the direction water runs. For corrugated roofing: fasten through ridges rather than valleys where possible to reduce standing water at the fastener, and allow slight play at fixings for thermal movement rather than pinning tight.
+**Procedure.** Anneal glass slowly with a controlled cooling gradient, generous time if no way to check for residual stress. Balance sash counterweights precisely, inspect cords on a schedule. Install asphalt within its stated temperature range, lap downslope always. Fasten corrugated roofing through ridges where possible, allow slight play for thermal movement.
 
-**How you know it worked.** A curtain wall panel shows no water ingress after a heavy storm; an annealed glass pane shows no spontaneous cracking after some weeks of temperature cycling; a sash window rises and stays at any height without drifting; roofing sheds a hose test with no leaks at the laps.
+**How you know it worked.** No water ingress at a curtain panel after a storm; an annealed pane shows no spontaneous cracking after weeks of cycling; a sash rises and holds at any height; roofing sheds a hose test.
 
-**Failure modes.** A single failed curtain wall seal or fastener with no redundancy behind it; unannealed glass cracking with no warning weeks after installation; a worn sash cord snapping suddenly; asphalt applied out of temperature range cracking or sliding; corrugated roof fasteners fatiguing from repeated thermal cycling and eventually leaking at every hole.
+**Failure modes.** A single failed curtain seal with no redundancy; unannealed glass cracking with no warning; a worn cord snapping suddenly; out-of-range asphalt cracking or sliding; fatigued corrugated fasteners leaking at every hole.
 
-**Cost & labour.** ESTIMATED, curtain wall is late-tree and steel-gated; plate glass, sash windows, asphalt roofing, and corrugated iron are each individually reachable earlier with Roman-adjacent materials, at real but modest cost.
+**Cost & labour.** ESTIMATED for curtain wall, late-tree and steel-gated; the other four are individually reachable earlier at modest cost.
 
-**Danger.** A falling curtain wall panel is a serious hazard to anyone below; a sash window with a snapped cord can injure fingers or drop suddenly on someone reaching through it. No unusual social danger.
+**Danger.** A falling curtain panel is a hazard below; a snapped sash cord can injure or drop suddenly.
 
-**Confidence: MEDIUM-HIGH** on individual components, well documented; **LOW** on curtain wall specifically as a system, since it is gated deep behind the steel frame.
+**Confidence: MEDIUM-HIGH** on components; **LOW** on curtain wall as a system.
 
 ### cn_cavity_wall - Cavity wall, damp proof course, insulation
 
-**What it is / why you want it.** Keeping moisture and heat where they belong in a wall, using an air gap, a moisture barrier, and trapped air respectively, none of which a solid Roman masonry wall does deliberately.
+**What it is.** Keeping moisture and heat where they belong using an air gap, a moisture barrier, and trapped air, none of which a solid Roman masonry wall does deliberately.
 Also covers: cn_damp_proof_course, cn_insulation.
 
-**Why you would never guess this.** A cavity wall's outer leaf (layer) is expected to weather and get wet, while the inner leaf stays dry across an air gap between them, but the metal ties holding the two leaves together, without which the wall is structurally two thin unstable skins rather than one, become thermal bridges, small paths that carry heat (or cold) straight across the gap the cavity was built to break, and the cavity itself must be kept clear of mortar droppings during construction or moisture bridges across on the debris instead of staying isolated. A damp proof course is a thin, deliberately impermeable layer built into a wall specifically to break capillary rise, since masonry can wick groundwater up several metres through nothing but capillary action in its pores, with no pump or pressure needed, a fact easy to underestimate until you see how far up a wall rot and salt staining can actually reach without one. Insulation works by trapping still air in small cells, since still air itself is what resists heat flow, not the material holding it in place, which is why compressing insulation destroys its performance, squeeze out the trapped air and you have removed the only thing doing the work; a vapour barrier is needed alongside it in cold climates or moisture migrating through the wall condenses inside the insulation and saturates it, again destroying the trapped-air effect from the inside.
+**Why you'd never guess this.** A cavity wall's outer leaf is expected to get wet while the inner stays dry across a gap, but the ties holding the leaves together, without which it's two unstable skins, become thermal bridges carrying heat straight across the gap meant to break it, and the cavity must stay clear of mortar droppings or moisture bridges across the debris instead. A damp proof course is a thin impermeable layer built in specifically to break capillary rise, since masonry wicks groundwater up several metres with no pump needed, easy to underestimate until you see how far rot and salt staining reach without one. Insulation works by trapping still air, since the still air is what resists heat flow, not the material holding it, which is why compressing insulation destroys it, and a vapour barrier is needed in cold climates or migrating moisture condenses inside and saturates it from within.
 
-**Prerequisites.** Ordinary masonry skill (already Roman) plus cn_wrought_iron_girder-scale iron for wall ties, a genuinely impermeable sheet material (bitumen-soaked felt or similar) for the damp course, any low-density fibrous or cellular material for insulation.
+**Prerequisites.** Ordinary masonry, cn_wrought_iron_girder-scale iron for ties, an impermeable sheet for the damp course, any low-density fibrous fill for insulation.
 
-**Roman-available inputs.** Fired brick and mortar (already Roman), bitumen (already traded) as a plausible damp course material, wool or chaff as a plausible crude insulating fill, though Roman builders do not currently use either deliberately for this purpose.
+**Roman-available inputs.** Fired brick and mortar, bitumen as a plausible damp course, wool or chaff as plausible crude insulation, though not currently used this way.
 
-**Procedure.** Build two independent wall leaves with a continuous clear air gap between them, tied at regular intervals with a tie shaped to shed water droplets rather than carry them across, and keep the cavity free of mortar debris as the wall rises, cleaning it out through temporary gaps left for that purpose. Lay a continuous impermeable damp course at the base of any wall, and at any point where groundwater could otherwise wick upward, with no gaps, since a single gap defeats the whole course. Pack insulating material loosely, never compressed, into wall or roof cavities, backed by a vapour-resistant layer on the warm side of the assembly in cold climates.
+**Procedure.** Build two independent leaves with a continuous clear gap, tied to shed water droplets rather than carry them across, keep the cavity clear of mortar debris. Lay a continuous damp course with no gaps, a single gap defeats the whole course. Pack insulation loosely, never compressed, with a vapour-resistant layer on the warm side in cold climates.
 
-**How you know it worked.** No damp staining above a properly installed damp course after a wet season; the inner leaf of a cavity wall stays visibly dry while the outer leaf weathers; a hand held against an insulated wall in cold weather feels noticeably less cold than an equivalent solid wall.
+**How you know it worked.** No damp staining above a proper damp course after a wet season; the inner leaf stays dry while the outer weathers; an insulated wall feels less cold to the hand.
 
-**Failure modes.** Mortar droppings bridging a cavity wall's gap, letting damp cross despite the ties; a damp course with even one gap, defeating the whole barrier; compressed or wet insulation, both silently useless despite still being physically present.
+**Failure modes.** Mortar droppings bridging the cavity gap; a damp course with even one gap; compressed or wet insulation, silently useless though still present.
 
-**Cost & labour.** DERIVED, modest additional material and care over ordinary Roman wall-building, no new heavy industry required for any of the three.
+**Cost & labour.** DERIVED, modest additional material and care, no new heavy industry.
 
-**Danger.** No acute physical danger; the risk is entirely long-term structural, rot and salt damage accumulating unseen behind a wall that looks fine from outside. No social danger.
+**Danger.** No acute danger, only long-term unseen rot and salt damage.
 
-**Confidence: HIGH** on the physics of capillary rise, thermal bridging, and trapped-air insulation, all well established and reachable with materials Rome already has, mainly missing the specific technique, not the material.
+**Confidence: HIGH**, physics well established, reachable with Roman materials, missing mainly the technique.
 
 ### cn_central_heating - Central heating, radiators, forced ventilation
 
-**What it is / why you want it.** Distributing heat through a building via circulating hot water and mechanically moving air, beyond what a Roman hypocaust already does with hot air under the floor.
+**What it is.** Distributing heat via circulating hot water and moving air mechanically, beyond what a Roman hypocaust does with hot air under the floor.
 Also covers: cn_radiator, cn_forced_ventilation.
 
-**Why you would never guess this.** A hot water central heating system must stay completely filled with water and free of trapped air, since an air pocket in a pipe stops circulation at that point exactly the way an air lock stops a siphon (cn_aqueduct); an expansion tank is needed specifically because water itself expands as it heats, and without somewhere for that expansion to go, a sealed system builds dangerous pressure. Radiators work by both convection and radiation off a large finned surface area, and mineral scale building up inside them from hard water steadily reduces heat transfer with no outward sign until the room is simply colder than it used to be for the same fuel. Forced ventilation, moving air by fan rather than relying on natural draft, has its own quiet failure mode: fan noise rises sharply with speed, so a duct sized too small forces the fan to run faster than comfortable just to move the required air, and dampers used to adjust flow must never be closed all the way, a fully stalled fan against a closed damper can overheat or damage itself.
+**Why you'd never guess this.** A hot water system must stay filled and free of trapped air, an air pocket stops circulation exactly the way one stops a siphon (cn_aqueduct); an expansion tank is needed because water expands as it heats, and without somewhere for that to go a sealed system builds dangerous pressure. Radiators lose heat transfer to mineral scale with no outward sign until the room is simply colder for the same fuel. Forced ventilation's fan noise rises sharply with speed, so an undersized duct forces a fan to run faster than comfortable, and a damper closed fully against a running fan can overheat it.
 
-**Prerequisites.** cn_wrought_iron_girder-scale iron or cast iron for radiators and piping, mechanical power for a forced ventilation fan, an understanding of the hypocaust Rome already runs as the natural starting point.
+**Prerequisites.** cn_wrought_iron_girder-scale iron for radiators and piping, mechanical power for the fan, the existing hypocaust as the natural starting point.
 
-**Roman-available inputs.** The hypocaust itself, hot air circulated under floors and through wall flues, already routine in bath complexes and villas; iron pipe and cast iron radiator sections are the missing pieces for a water-based system.
+**Roman-available inputs.** The hypocaust itself, already routine in baths and villas; iron pipe and radiator sections are the missing pieces for a water-based system.
 
-**Procedure.** Fill a hot water system completely before firing the boiler, bleeding air from every high point in the pipe run; size an expansion tank generously against the system's total water volume and expected temperature rise. Keep radiators on a water supply as clean and scale-free as practical, and expect to periodically flush accumulated scale. Size ventilation ducts generously enough that the fan need not run at maximum speed for ordinary operation, and never fully close a damper against a running fan.
+**Procedure.** Fill the system completely before firing, bleed air from every high point. Size an expansion tank generously against total water volume and temperature rise. Keep radiator water as scale-free as practical, flush periodically. Size ducts generously so the fan need not run at maximum for ordinary operation, never fully close a damper against a running fan.
 
-**How you know it worked.** Radiators run hot evenly along their whole length, not hot at one end and cool at the other, a sign of a trapped air pocket; ventilation air moves audibly but not uncomfortably loud at normal operating speed.
+**How you know it worked.** Radiators run hot evenly along their length; ventilation moves audibly but not uncomfortably at normal speed.
 
-**Failure modes.** Trapped air stopping circulation to part of a system; an undersized or missing expansion tank building dangerous pressure as water heats; scaled radiators losing capacity invisibly over seasons; a stalled fan against a closed damper overheating.
+**Failure modes.** Trapped air stopping circulation; a missing expansion tank building dangerous pressure; scaled radiators losing capacity invisibly; a stalled overheating fan.
 
-**Cost & labour.** ESTIMATED, gated on iron piping and radiator casting at real tonnage, well beyond the hypocaust's brick-and-tile construction.
+**Cost & labour.** ESTIMATED, gated on real iron tonnage well beyond the hypocaust's brick-and-tile.
 
-**Danger.** An unvented, over-pressured hot water system can rupture violently; a stalled, overheating fan is a fire risk. No unusual social danger; central heating reads as pure comfort, not suspicious.
+**Danger.** An over-pressured system can rupture violently; a stalled fan is a fire risk.
 
-**Confidence: MEDIUM-HIGH** on the mechanics; **LOW** on near-term Roman reachability given the iron tonnage required.
+**Confidence: MEDIUM-HIGH** on mechanics; **LOW** on near-term reachability.
 
 ### cn_plumbing_stack - Plumbing stack and trapped drains
 
-**What it is / why you want it.** A vertical waste pipe system with water-sealed traps at every fixture, carrying waste away reliably without the smell (and the disease vector) of an open drain.
+**What it is.** A vertical waste pipe with water-sealed traps at every fixture, carrying waste away without the smell, and disease vector, of an open drain.
 Also covers: cn_trapped_drain.
 
-**Why you would never guess this.** A soil stack must be sized generously or it siphons itself, waste flowing down a too-narrow pipe drags the air behind it, and that suction can pull the water seal straight out of every trap connected to that stack, defeating them all at once even though nothing about the traps themselves was faulty. A trap's water seal is genuinely small, typically only a few centimetres of standing water in a bent section of pipe, and it can be broken two ways: siphoning, as above, or simple evaporation from a fixture that goes unused for long enough, which is why a bathroom used only occasionally can develop a sewer smell with no plumbing fault at all, the trap simply dried out. Every fixture needs its own trap, since a single trap somewhere upstream does not protect a fixture connected below it, sewer gas will find any untrapped opening.
+**Why you'd never guess this.** A soil stack sized too narrow siphons itself, waste flowing down drags the air behind it, and that suction can pull the water seal straight out of every trap on that stack at once, even though the traps themselves are sound. A trap's seal is only a few centimetres of standing water, broken two ways: siphoning, or evaporation from a fixture unused long enough, which is why an occasionally used bathroom can smell of sewage with no plumbing fault, the trap simply dried out. Every fixture needs its own trap, one upstream doesn't protect a fixture connected below it.
 
-**Prerequisites.** Ceramic or lead pipe (already Roman, see cn_aqueduct's note on preferring ceramic), correct fall (slope) surveyed with the chorobates or a simple level.
+**Prerequisites.** Ceramic or lead pipe (prefer ceramic, per cn_aqueduct's caution), correct fall surveyed with the chorobates.
 
-**Roman-available inputs.** Ceramic pipe, lead pipe (avoid for anything carrying acidic waste, the same lead caution as drinking water), mortar joints.
+**Roman-available inputs.** Ceramic pipe, lead pipe (avoid for acidic waste), mortar joints.
 
-**Procedure.** Size the main soil stack generously relative to the fixtures it serves, so falling waste does not fill the pipe's full cross-section and drag air (and trap seals) down with it. Fit every single fixture, not just some, with its own trapped bend, and slope every supply and waste run consistently so no high point can trap air and no low point can trap solids.
+**Procedure.** Size the main stack generously so falling waste doesn't fill the pipe's cross-section and drag trap seals with it. Fit every fixture with its own trapped bend. Slope every run consistently, no high point trapping air, no low point trapping solids.
 
-**How you know it worked.** No sewer smell at any fixture after normal use; a fixture left unused for a season still shows a wet trap, or is deliberately flushed periodically to keep it so.
+**How you know it worked.** No sewer smell at any fixture after normal use; an unused fixture is flushed periodically to keep its trap wet.
 
-**Failure modes.** An undersized stack siphoning trap seals throughout the building at once, a single design flaw defeating many fixtures simultaneously; an unused fixture's trap drying out by evaporation; an untrapped fixture connected anywhere in the system undermining every trap elsewhere.
+**Failure modes.** An undersized stack siphoning many trap seals at once; an unused trap drying out; one untrapped fixture undermining every trap elsewhere.
 
-**Cost & labour.** MEASURED order of magnitude, well within Roman pipe-laying capability, the missing piece is the trap-and-stack-sizing knowledge, not any new material.
+**Cost & labour.** MEASURED order of magnitude, well within Roman pipe-laying, the gap is technique, not material.
 
-**Danger.** Sewer gas exposure is unpleasant and can be genuinely hazardous in confined, poorly ventilated spaces; no unusual social danger.
+**Danger.** Sewer gas exposure is unpleasant and hazardous in confined poorly ventilated spaces.
 
-**Confidence: HIGH**, this is straightforward hydraulics well within Roman material capability, the gap is purely in the specific technique.
+**Confidence: HIGH**, straightforward hydraulics within Roman material capability.
 
 ### cn_fire_escape - Fire escape and automatic sprinklers
 
-**What it is / why you want it.** Getting people safely out of a burning multi-storey building, and, separately, suppressing a fire automatically before it spreads, both aimed at a taller, denser style of building than Rome typically builds.
+**What it is.** Getting people safely out of a burning multi-storey building, and suppressing fire automatically before it spreads.
 Also covers: cn_sprinkler.
 
-**Why you would never guess this.** A fire escape is only as good as its worst point of failure: stairs or landings that can be obstructed or, worse, locked defeat the entire purpose in the one moment it matters most, and a pivoting ladder section meant to swing down to street level can itself jam at the hinge, historically a real cause of fire escape deaths that had nothing to do with the fire itself, people trapped by the escape mechanism rather than saved by it. An automatic sprinkler's core trick is a thermal element, historically a soldered joint, engineered to melt reliably at a set temperature, releasing water only where and when heat actually triggers it, but that solder plug can be damaged by careless handling during installation and fail to melt reliably later, or fail in the opposite direction and trigger falsely; the whole system is also only as good as its water pressure, adequate pressure must reach every nozzle in the building, not just the ones nearest the supply.
+**Why you'd never guess this.** A fire escape is only as good as its worst point: stairs that can be obstructed or locked defeat the whole purpose at the one moment it matters, and a pivoting ladder section can itself jam at the hinge, a real historical cause of fire escape deaths unrelated to the fire. A sprinkler's thermal element, historically a soldered joint, must melt reliably at a set temperature, but that solder plug can be damaged in installation and fail to melt later, or fail the other way and trigger falsely; the system is also only as good as its water pressure reaching the most distant nozzle, not just the nearest.
 
-**Prerequisites.** cn_wrought_iron_girder-scale iron for stairs and piping, a reliable, consistent solder or fusible alloy for the sprinkler's thermal element, `85_transport_civil.md#water_supply_sanitation`-level pressurised water supply.
+**Prerequisites.** cn_wrought_iron_girder-scale iron for stairs and piping, a reliable fusible alloy for the thermal element, `85_transport_civil.md#water_supply_sanitation`-level pressurised supply.
 
-**Roman-available inputs.** Iron for stairs and piping is within reach once bulk iron exists; a genuinely reliable fusible alloy for a sprinkler head is a small-scale metallurgy problem, tin-lead-bismuth alloys are known to Roman metalworkers in principle, but not tuned or tested for this specific melting-point application.
+**Roman-available inputs.** Iron is reachable once bulk supply exists; a tuned fusible alloy is a small metallurgy problem, tin-lead-bismuth alloys are known in principle but untested for this melting point.
 
-**Procedure.** Keep escape stairs and landings permanently unobstructed and unlockable from the inside, by policy as much as by design, and test any pivoting or folding section regularly under its own weight to confirm the hinge has not seized. For sprinklers, test a sample of each batch of thermal elements to destruction to confirm they melt at the intended temperature, not above it, and verify water pressure reaches the most distant nozzle in the system, not just the nearest.
+**Procedure.** Keep escape stairs permanently unobstructed and unlockable from inside, by policy as much as design, test pivoting sections regularly for a seized hinge. Sample-test thermal elements to destruction to confirm the rated melting temperature, and verify pressure reaches the most distant nozzle.
 
-**How you know it worked.** A fire escape's moving sections deploy freely under a supervised test; a sample sprinkler head triggers at its rated temperature and no other test element triggers falsely at room temperature over a long observation period.
+**How you know it worked.** Escape sections deploy freely under a supervised test; sample sprinkler heads trigger at rated temperature, none trigger falsely at room temperature over long observation.
 
-**Failure modes.** A locked or obstructed fire escape, useless in the exact emergency it exists for; a seized pivot hinge trapping people mid-escape; a sprinkler solder plug damaged in handling that never melts; inadequate pressure reaching distant nozzles, giving false confidence in a system that only half-works.
+**Failure modes.** A locked or obstructed escape, useless when it matters most; a seized hinge trapping people mid-escape; a damaged solder plug that never melts; inadequate pressure at distant nozzles, false confidence in a half-working system.
 
-**Cost & labour.** ESTIMATED, iron stairs are a moderate cost once bulk iron exists; sprinkler systems need both piping and a genuinely tested thermal element, a smaller but real development effort.
+**Cost & labour.** ESTIMATED, moderate for iron stairs once bulk iron exists, a smaller but real development effort for a tested fusible alloy.
 
-**Danger.** Fire itself is the obvious danger this equipment addresses; the equipment's own failure modes (locked doors, seized hinges, untested solder) are a second, less obvious danger layered on top, since people trust the escape and stop looking for another way out. Socially, an owner who locks a fire escape door for security reasons is trading one danger for another, and should be told so plainly.
+**Danger.** Fire is the obvious danger; the equipment's own failure modes are a second layer, since people trust it and stop looking for another way out.
 
-**Confidence: MEDIUM-HIGH** on the mechanics; **LOW** on near-term Roman reachability, gated on both iron tonnage and a tuned fusible alloy.
+**Confidence: MEDIUM-HIGH** on mechanics; **LOW** on near-term reachability.
 
 ### cn_terrazzo - Terrazzo floor finish
 
-**What it is / why you want it.** A floor of stone chips set in binder and ground flat and glossy, giving a marble-like finish at a fraction of the cost and weight of solid marble slab.
+**What it is.** A floor of stone chips set in binder, ground flat and glossy, a marble-like finish at a fraction of solid marble's cost and weight.
 
-**Why you would never guess this.** The binder's exact set state matters more than the recipe: aggregate size and the binder's porosity must be matched so the surface can be ground down to a stone-wide sheen without pulling chips loose, and an under-fired lime or gypsum binder stays too soft, yielding to the abrasive stone dust rather than holding the aggregate firmly, while an over-fired, over-hard binder instead tears the chips out of their sockets during grinding rather than grinding down evenly with them.
+**Why you'd never guess this.** The binder's set state matters more than the recipe: aggregate size and binder porosity must match so the surface grinds to a stone-wide sheen without pulling chips loose; an under-fired binder stays too soft and yields to the abrasive before the chips do, while an over-fired, over-hard binder tears the chips out instead of grinding evenly with them.
 
-**Prerequisites.** cn_mortar or cn_gypsum_plaster as binder, cn_stone_polish's grinding and finishing skill, a supply of decorative stone chips (marble offcuts are the obvious Roman source, already generated as quarry and workshop waste).
+**Prerequisites.** cn_mortar or cn_gypsum_plaster as binder, cn_stone_polish's grinding skill, marble chip waste.
 
-**Roman-available inputs.** Marble chip waste from any marble workshop, lime or gypsum binder, emery for grinding, all already Roman materials, this is very nearly a Roman-reachable technique already, mostly missing the specific deliberate combination.
+**Roman-available inputs.** Marble chip waste from any workshop, lime or gypsum binder, emery for grinding, all already Roman, this is very nearly reachable already, mostly missing the deliberate combination.
 
-**Procedure.** Set stone chips into a bed of binder over a solid base, let the binder cure to a firmness matched to the chip hardness by test (softer than the marble chips but not so soft it yields under the grinding stone before the chips do), then grind the surface flat with progressively finer abrasive until a stone-like polish emerges across both binder and chips together.
+**Procedure.** Set chips into a binder bed over a solid base, let it cure to a firmness matched by test to the chip hardness, then grind flat with progressively finer abrasive until a continuous polish emerges across both.
 
-**How you know it worked.** The ground surface shows a smooth, continuous polish across both chips and binder with no chips pulled loose or sitting proud of the surface.
+**How you know it worked.** A smooth continuous polish across chips and binder, no chips pulled loose or standing proud.
 
-**Failure modes.** Binder too soft, grinding gouges the matrix around firmly-set chips unevenly; binder too hard, chips tear free during grinding, leaving pits.
+**Failure modes.** Binder too soft, uneven gouging around firm chips; binder too hard, chips tear free leaving pits.
 
-**Cost & labour.** ESTIMATED, modest, using material Rome already discards as waste, a genuinely accessible near-term technique.
+**Cost & labour.** ESTIMATED, modest, uses waste Rome already discards.
 
-**Danger.** Dust exposure during grinding over long periods is a lung hazard, the same caution as any stone-grinding trade. No social danger.
+**Danger.** Grinding dust over long exposure is a lung hazard, the usual stone-trade caution.
 
-**Confidence: MEDIUM-HIGH**, the materials and skills are all Roman-available, the specific combined technique is the only genuinely new element.
+**Confidence: MEDIUM-HIGH**, materials and skills already Roman, only the combination is new.
 
 ---
 
 ## Sources and confidence
 
-Roman baseline claims (arch, vault, pozzolana concrete, aqueduct, crane, surveying) are HIGH confidence, drawn from Vitruvius's *De Architectura*, Frontinus's *De Aquaeductu*, and surviving structures still standing; see `85_transport_civil.md` for the fuller citation trail this module deliberately does not repeat. Beam theory, truss mechanics, cast/wrought iron tension behaviour, reinforced and prestressed concrete's thermal-expansion coincidence, and suspension bridge aerodynamics are all HIGH confidence on the physics, textbook materials science with well documented historical failures (bridge and roof collapses across the 18th to 20th centuries) as evidence. Portland cement chemistry and clinkering temperature are HIGH confidence, MEASURED figures from modern cement manufacture. Caisson disease's mechanism is HIGH confidence, well established medically. Anything marked LOW confidence in this module is LOW specifically on Roman-era reachability, not on the underlying physics, which is not in serious doubt; the gating items are almost always bulk iron and steel tonnage (see `10_metallurgy.md`) and continuous mechanical power (see `40_power_precision.md`), not any missing scientific insight. No number in this module has been invented; every figure is tagged MEASURED, DERIVED, or ESTIMATED with its basis stated inline.
+Roman baseline claims (arch, vault, pozzolana concrete, aqueduct, crane, surveying) are HIGH confidence, from Vitruvius's *De Architectura*, Frontinus's *De Aquaeductu*, and surviving structures; see `85_transport_civil.md` for the fuller citation trail this module deliberately doesn't repeat. Beam theory, truss mechanics, cast/wrought iron tension behaviour, reinforced and prestressed concrete's thermal-expansion coincidence, and suspension bridge aerodynamics are HIGH confidence on the physics, textbook materials science backed by well documented historical collapses. Portland cement chemistry and clinkering temperature are HIGH confidence, MEASURED figures from modern manufacture. Caisson disease's mechanism is HIGH confidence, well established medically. Anything marked LOW confidence in this module is LOW specifically on Roman-era reachability, not the underlying physics, which is not in doubt; the gating items are almost always bulk iron and steel tonnage (`10_metallurgy.md`) and continuous mechanical power (`40_power_precision.md`), not missing scientific insight. No number here is invented; every figure is tagged MEASURED, DERIVED, or ESTIMATED with its basis stated.
 
 ## Where to go next
 
-- `85_transport_civil.md` for the full account of what Rome's civil engineering already does well, the freight arithmetic that should decide where to build first, and the existing `structures_iron_steel`, `concrete_and_cement`, `surveying_precision`, and `water_supply_sanitation` entries this module builds directly on.
-- `10_metallurgy.md` for the blast furnace, finery forge, and cementation/crucible steel chain that gates nearly every iron and steel item in this module, from cast iron beams to suspension bridge cable.
-- `40_power_precision.md` for the continuous mechanical power (water wheels, steam engines, gearing) that gates rotary cement kilns, concrete mixers, powered cranes, and mechanical ventilation.
+- `85_transport_civil.md` for what Rome's civil engineering already does well, the freight arithmetic deciding where to build first, and the `structures_iron_steel`, `concrete_and_cement`, `surveying_precision`, and `water_supply_sanitation` entries this module builds on.
+- `10_metallurgy.md` for the blast furnace, finery forge, and cementation/crucible steel chain gating nearly every iron and steel item here, from cast iron beams to suspension bridge cable.
+- `40_power_precision.md` for the continuous mechanical power gating rotary cement kilns, concrete mixers, powered cranes, and mechanical ventilation.

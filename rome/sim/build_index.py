@@ -61,6 +61,22 @@ def main():
             tid = m.group(1)
             anchors[f].add(tid)
             slugs[f][tid] = github_slug(line[3:].strip())
+            cur = tid
+        # A module section covers a CLUSTER of nodes, not one. The heading names
+        # a representative and an "Also covers:" line names the rest. Without
+        # this, 700 nodes documented in a section still reported as undocumented
+        # because their id was not a heading.
+        cur = None
+        for line in txt.splitlines():
+            m = re.match(r"^###\s+`?([A-Za-z0-9_]+)`?", line)
+            if m:
+                cur = m.group(1)
+                continue
+            a = re.match(r"^\s*(?:\*\*)?Also covers:?(?:\*\*)?\s*(.+)$", line, re.I)
+            if a and cur:
+                for tid in re.findall(r"[A-Za-z][A-Za-z0-9_]{2,}", a.group(1)):
+                    anchors[f].add(tid)
+                    slugs[f].setdefault(tid, slugs[f].get(cur, cur))
 
     # Some nodes are institutional or political rather than technical, and their
     # "how to" lives in the top-level prose files rather than in a recipe module.

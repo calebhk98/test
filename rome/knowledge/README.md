@@ -23,16 +23,18 @@ in this directory, read that one.
 | [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 0 | 0 |
 | [`03_SOCIAL_POLITICS.md`](03_SOCIAL_POLITICS.md) |  | 10 | 0 |
 | [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 188 |
-| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 198 |
-| [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 181 |
-| [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 246 |
+| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 197 |
+| [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 179 |
+| [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 245 |
 | [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 206 |
 | [`55_semiconductors.md`](55_semiconductors.md) | Vacuum, high purity and semiconductors | 13 | 17 |
 | [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 72 |
-| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 157 |
+| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 154 |
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 63 |
 | [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 64 |
-| [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 227 |
+| [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 223 |
+| [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 199 |
+| [`87_construction.md`](87_construction.md) |  | 101 | 97 |
 | [`90_textiles.md`](90_textiles.md) |  | 20 | 215 |
 | [`91_household.md`](91_household.md) |  | 27 | 70 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
@@ -40,7 +42,8 @@ in this directory, read that one.
 | [`94_computing.md`](94_computing.md) |  | 22 | 0 |
 | [`95_expeditions.md`](95_expeditions.md) |  | 0 | 11 |
 | [`96_finance.md`](96_finance.md) |  | 29 | 88 |
-| [`97_military.md`](97_military.md) |  | 29 | 112 |
+| [`97_military.md`](97_military.md) |  | 29 | 110 |
+| [`98_power_plants.md`](98_power_plants.md) |  | 115 | 99 |
 | [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 4 | 0 |
 
 ### Nodes documented in the top-level prose files
@@ -329,7 +332,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ch2_phys_thermochemistry` | 3 | 90.0 | _(module has no anchor)_ |
 | `ch2_prod_acetic_acid` | 3 | 70.0 | _(module has no anchor)_ |
 | `ch2_prod_acetone` | 3 | 95.0 | _(module has no anchor)_ |
-| `ch2_prod_acetylene` | 3 | 75.0 | _(module has no anchor)_ |
 | `ch2_prod_aniline` | 3 | 75.0 | _(module has no anchor)_ |
 | `ch2_prod_benzene` | 3 | 70.0 | _(module has no anchor)_ |
 | `ch2_prod_carbon_tetrachloride` | 3 | 95.0 | _(module has no anchor)_ |
@@ -522,7 +524,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_cooke_triplet_photography` | 2 | 100.0 | _(module has no anchor)_ |
 | `in2_cryostat_dewar_flask` | 2 | 90.0 | _(module has no anchor)_ |
 | `in2_dark_field_condenser` | 2 | 70.0 | _(module has no anchor)_ |
-| `in2_doublet_lens` | 2 | 120.0 | _(module has no anchor)_ |
+| `in2_doublet_lens` | 2 | 180.0 | _(module has no anchor)_ |
 | `in2_eyepiece_erfle` | 2 | 90.0 | _(module has no anchor)_ |
 | `in2_eyepiece_orthoscopic` | 2 | 70.0 | _(module has no anchor)_ |
 | `in2_fatigue_machine` | 2 | 100.0 | _(module has no anchor)_ |
@@ -553,7 +555,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_ultramicroscope` | 2 | 85.0 | _(module has no anchor)_ |
 | `in2_waveplate_mica` | 2 | 70.0 | _(module has no anchor)_ |
 | `opt_abbe_condenser` | 2 | 120.0 | _(module has no anchor)_ |
-| `opt_achromatic_doublet` | 2 | 180.0 | _(module has no anchor)_ |
 | `opt_aneroid_barometer` | 2 | 140.0 | _(module has no anchor)_ |
 | `opt_bourdon_gauge` | 2 | 120.0 | _(module has no anchor)_ |
 | `opt_calorimeter` | 2 | 100.0 | _(module has no anchor)_ |
@@ -596,7 +597,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_gyro_horizon_artificial` | 3 | 120.0 | _(module has no anchor)_ |
 | `in2_interference_filter` | 3 | 110.0 | _(module has no anchor)_ |
 | `in2_interferometer_fabry_perot` | 3 | 130.0 | _(module has no anchor)_ |
-| `in2_interferometer_michelson` | 3 | 120.0 | _(module has no anchor)_ |
 | `in2_linde_cycle_expansion_engine` | 3 | 120.0 | _(module has no anchor)_ |
 | `in2_ph_meter_potentiometer` | 3 | 120.0 | _(module has no anchor)_ |
 | `in2_phase_contrast_objective` | 3 | 120.0 | _(module has no anchor)_ |
@@ -655,15 +655,23 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
+| `en_boiler_haystack` | 0 | 180.0 | _(module has no anchor)_ |
+| `en_boiler_wagon` | 0 | 200.0 | _(module has no anchor)_ |
+| `en_post_mill` | 0 | 250.0 | _(module has no anchor)_ |
+| `en_tower_mill` | 0 | 300.0 | _(module has no anchor)_ |
 | `pwr_animal_treadmill` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_force_pump` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_overshot_wheel` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_screw_press_power` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_ship_sail` | 0 | 0.0 | _(module has no anchor)_ |
-| `pwr_treadwheel_crane` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_undershot_wheel` | 0 | 0.0 | _(module has no anchor)_ |
 | `units_standards` | 0 | 300.0 | [`micrometer_gauge_blocks`](40_power_precision.md#micrometer_gauge_blocks---screw-micrometer-vernier-scale-and-end) |
 | `crank_conrod` | 1 | 300.0 | [`crank_connecting_rod`](40_power_precision.md#crank_connecting_rod---the-crank-and-connecting-rod-no-attested) |
+| `en_battery_lead_acid` | 1 | 250.0 | _(module has no anchor)_ |
+| `en_boiler_cornish` | 1 | 250.0 | _(module has no anchor)_ |
+| `en_boiler_lancashire` | 1 | 250.0 | _(module has no anchor)_ |
+| `en_flywheel_storage` | 1 | 200.0 | _(module has no anchor)_ |
+| `en_tide_mill` | 1 | 200.0 | _(module has no anchor)_ |
 | `mfg_arbor` | 1 | 100.0 | _(module has no anchor)_ |
 | `mfg_cold_riveting` | 1 | 100.0 | _(module has no anchor)_ |
 | `mfg_flux` | 1 | 60.0 | _(module has no anchor)_ |
@@ -695,6 +703,10 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `pwr_smeaton_efficiency` | 1 | 200.0 | _(module has no anchor)_ |
 | `water_power_scale` | 1 | 450.0 | [`water_power_scaleup`](40_power_precision.md#water_power_scaleup---scaling-up-the-water-wheel-rota-aquaria) |
 | `clock_pendulum` | 2 | 500.0 | [`clockwork_escapement`](40_power_precision.md#clockwork_escapement---verge-and-foliot-pendulum-and-balance) |
+| `en_boiler_water_tube` | 2 | 300.0 | _(module has no anchor)_ |
+| `en_hydroelectric_station` | 2 | 400.0 | _(module has no anchor)_ |
+| `en_pumped_storage` | 2 | 400.0 | _(module has no anchor)_ |
+| `en_transformer` | 2 | 250.0 | _(module has no anchor)_ |
 | `master_screw` | 2 | 700.0 | [`screw_cutting_lathe`](40_power_precision.md#screw_cutting_lathe---the-lead-screw-slide-rest-and-change-gears) |
 | `mfg_brazing` | 2 | 120.0 | _(module has no anchor)_ |
 | `mfg_buffing` | 2 | 130.0 | _(module has no anchor)_ |
@@ -757,27 +769,20 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_three_wire_thread_measure` | 2 | 70.0 | _(module has no anchor)_ |
 | `prc_vernier_caliper` | 2 | 60.0 | _(module has no anchor)_ |
 | `precision_three_plate` | 2 | 500.0 | [`precision_three_plate`](40_power_precision.md#precision_three_plate---whitworths-three-plate-method-no-latin) |
-| `pwr_boiler_haystack` | 2 | 180.0 | _(module has no anchor)_ |
-| `pwr_boiler_wagon` | 2 | 200.0 | _(module has no anchor)_ |
 | `pwr_cable_tool_drilling` | 2 | 300.0 | _(module has no anchor)_ |
 | `pwr_coal_gas` | 2 | 300.0 | _(module has no anchor)_ |
 | `pwr_coal_seam` | 2 | 150.0 | _(module has no anchor)_ |
 | `pwr_coking` | 2 | 200.0 | _(module has no anchor)_ |
 | `pwr_condenser` | 2 | 200.0 | _(module has no anchor)_ |
-| `pwr_flywheel_storage` | 2 | 200.0 | _(module has no anchor)_ |
 | `pwr_fuel_oil` | 2 | 150.0 | _(module has no anchor)_ |
 | `pwr_gas_main` | 2 | 250.0 | _(module has no anchor)_ |
 | `pwr_gas_meter` | 2 | 180.0 | _(module has no anchor)_ |
-| `pwr_hydroelectric_generation` | 2 | 400.0 | _(module has no anchor)_ |
 | `pwr_indicator_diagram` | 2 | 200.0 | _(module has no anchor)_ |
 | `pwr_kerosene` | 2 | 100.0 | _(module has no anchor)_ |
 | `pwr_oil_refinery` | 2 | 300.0 | _(module has no anchor)_ |
 | `pwr_pelton_wheel` | 2 | 250.0 | _(module has no anchor)_ |
 | `pwr_petroleum_seeps` | 2 | 100.0 | _(module has no anchor)_ |
-| `pwr_post_mill` | 2 | 250.0 | _(module has no anchor)_ |
 | `pwr_safety_valve` | 2 | 150.0 | _(module has no anchor)_ |
-| `pwr_tide_mill` | 2 | 200.0 | _(module has no anchor)_ |
-| `pwr_tower_mill` | 2 | 300.0 | _(module has no anchor)_ |
 | `pwr_trompe` | 2 | 180.0 | _(module has no anchor)_ |
 | `pwr_water_turbine_fourneyron` | 2 | 300.0 | _(module has no anchor)_ |
 | `pwr_windmill_fantail` | 2 | 200.0 | _(module has no anchor)_ |
@@ -846,15 +851,10 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_tracer_lathe` | 3 | 140.0 | _(module has no anchor)_ |
 | `prc_universal_milling_machine` | 3 | 180.0 | _(module has no anchor)_ |
 | `prc_vibration_and_chatter` | 3 | 100.0 | _(module has no anchor)_ |
-| `pwr_boiler_cornish` | 3 | 250.0 | _(module has no anchor)_ |
-| `pwr_boiler_lancashire` | 3 | 250.0 | _(module has no anchor)_ |
-| `pwr_boiler_water_tube` | 3 | 300.0 | _(module has no anchor)_ |
 | `pwr_feedwater_heating` | 3 | 200.0 | _(module has no anchor)_ |
 | `pwr_gas_engine` | 3 | 350.0 | _(module has no anchor)_ |
 | `pwr_high_voltage_transmission` | 3 | 300.0 | _(module has no anchor)_ |
-| `pwr_lead_acid_battery` | 3 | 250.0 | _(module has no anchor)_ |
 | `pwr_pipeline` | 3 | 250.0 | _(module has no anchor)_ |
-| `pwr_pumped_storage` | 3 | 400.0 | _(module has no anchor)_ |
 | `pwr_rotary_drilling` | 3 | 350.0 | _(module has no anchor)_ |
 | `pwr_selenium_metal` | 3 | 200.0 | _(module has no anchor)_ |
 | `pwr_steam_turbine_parsons` | 3 | 400.0 | _(module has no anchor)_ |
@@ -864,7 +864,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `pwr_thermoelectric_couple` | 3 | 200.0 | _(module has no anchor)_ |
 | `pwr_thermopile` | 3 | 150.0 | _(module has no anchor)_ |
 | `pwr_three_phase_ac` | 3 | 250.0 | _(module has no anchor)_ |
-| `pwr_transformer` | 3 | 250.0 | _(module has no anchor)_ |
 | `screw_lathe` | 3 | 900.0 | [`screw_cutting_lathe`](40_power_precision.md#screw_cutting_lathe---the-lead-screw-slide-rest-and-change-gears) |
 | `steam_atmospheric` | 3 | 900.0 | [`steam_atmospheric`](40_power_precision.md#steam_atmospheric---the-newcomen-atmospheric-engine-no-latin-term) |
 | `mfg_air_gauge` | 4 | 250.0 | _(module has no anchor)_ |
@@ -1257,7 +1256,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `md2_traction` | 1 | 120.0 | _(module has no anchor)_ |
 | `md2_urinalysis` | 1 | 60.0 | _(module has no anchor)_ |
 | `md2_vector_control` | 1 | 100.0 | _(module has no anchor)_ |
-| `med_clinical_thermometer` | 1 | 60.0 | _(module has no anchor)_ |
 | `med_epidemiology_statistics` | 1 | 150.0 | _(module has no anchor)_ |
 | `med_handwashing_semmelweis` | 1 | 80.0 | _(module has no anchor)_ |
 | `med_hospital_institution` | 1 | 200.0 | _(module has no anchor)_ |
@@ -1301,7 +1299,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `md2_light_source` | 2 | 120.0 | _(module has no anchor)_ |
 | `md2_maternal_clinic` | 2 | 120.0 | _(module has no anchor)_ |
 | `md2_morphine` | 2 | 120.0 | _(module has no anchor)_ |
-| `md2_ophthalmoscope` | 2 | 150.0 | _(module has no anchor)_ |
 | `md2_oral_rehydration` | 2 | 90.0 | _(module has no anchor)_ |
 | `md2_orthopaedic_fixation` | 2 | 180.0 | _(module has no anchor)_ |
 | `md2_quinine` | 2 | 150.0 | _(module has no anchor)_ |
@@ -1328,7 +1325,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `md2_vitamin_c` | 2 | 110.0 | _(module has no anchor)_ |
 | `md2_vitamin_d` | 2 | 120.0 | _(module has no anchor)_ |
 | `md2_wassermann_test` | 2 | 120.0 | _(module has no anchor)_ |
-| `med_antitoxin_serum` | 2 | 120.0 | _(module has no anchor)_ |
 | `med_asepsis_antisepsis` | 2 | 120.0 | _(module has no anchor)_ |
 | `med_aspirin` | 2 | 80.0 | _(module has no anchor)_ |
 | `med_autoclave` | 2 | 150.0 | _(module has no anchor)_ |
@@ -1340,7 +1336,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `med_gram_stain_culture` | 2 | 100.0 | _(module has no anchor)_ |
 | `med_hypodermic_syringe` | 2 | 100.0 | _(module has no anchor)_ |
 | `med_microscopy_pathology` | 2 | 120.0 | _(module has no anchor)_ |
-| `med_ophthalmoscope` | 2 | 100.0 | _(module has no anchor)_ |
+| `med_ophthalmoscope` | 2 | 150.0 | _(module has no anchor)_ |
 | `med_sphygmomanometer` | 2 | 100.0 | _(module has no anchor)_ |
 | `med_sterile_technique` | 2 | 100.0 | _(module has no anchor)_ |
 | `med_vaccination_progression` | 2 | 150.0 | _(module has no anchor)_ |
@@ -1457,6 +1453,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_theatre_pantomime` | 0 | 0.0 | _(module has no anchor)_ |
 | `prn_wax_tablets` | 0 | 0.0 | _(module has no anchor)_ |
 | `corpus_written` | 1 | 6,000.0 | _(module has no anchor)_ |
+| `if_daguerreotype` | 1 | 200.0 | _(module has no anchor)_ |
+| `if_printing_ink` | 1 | 100.0 | _(module has no anchor)_ |
 | `printing_press` | 1 | 900.0 | _(module has no anchor)_ |
 | `prn_hand_papermaking` | 1 | 80.0 | _(module has no anchor)_ |
 | `prn_magic_lantern` | 1 | 120.0 | _(module has no anchor)_ |
@@ -1468,11 +1466,12 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `rag_paper` | 1 | 400.0 | _(module has no anchor)_ |
 | `semaphore_telegraph` | 1 | 700.0 | _(module has no anchor)_ |
 | `corpus_dispersed` | 2 | 800.0 | _(module has no anchor)_ |
+| `if_lithography` | 2 | 200.0 | _(module has no anchor)_ |
+| `if_typewriter` | 2 | 300.0 | _(module has no anchor)_ |
 | `prn_calotype_process` | 2 | 250.0 | _(module has no anchor)_ |
 | `prn_cinema_projection` | 2 | 120.0 | _(module has no anchor)_ |
 | `prn_cinema_shutter` | 2 | 100.0 | _(module has no anchor)_ |
 | `prn_composing_stick` | 2 | 40.0 | _(module has no anchor)_ |
-| `prn_daguerreotype` | 2 | 200.0 | _(module has no anchor)_ |
 | `prn_disc_record` | 2 | 150.0 | _(module has no anchor)_ |
 | `prn_enlarger` | 2 | 150.0 | _(module has no anchor)_ |
 | `prn_etching_technique` | 2 | 200.0 | _(module has no anchor)_ |
@@ -1481,11 +1480,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_hand_mould_adjustable` | 2 | 80.0 | _(module has no anchor)_ |
 | `prn_intaglio_engraving` | 2 | 300.0 | _(module has no anchor)_ |
 | `prn_intermittent_motion` | 2 | 180.0 | _(module has no anchor)_ |
-| `prn_lithography_stone` | 2 | 200.0 | _(module has no anchor)_ |
 | `prn_loudspeaker` | 2 | 120.0 | _(module has no anchor)_ |
 | `prn_newspaper_institution` | 2 | 400.0 | _(module has no anchor)_ |
 | `prn_nitrate_film_safety` | 2 | 100.0 | _(module has no anchor)_ |
-| `prn_oil_based_ink` | 2 | 100.0 | _(module has no anchor)_ |
 | `prn_phonograph_cylinder` | 2 | 250.0 | _(module has no anchor)_ |
 | `prn_platen_press` | 2 | 200.0 | _(module has no anchor)_ |
 | `prn_silver_halide_chemistry` | 2 | 150.0 | _(module has no anchor)_ |
@@ -1495,10 +1492,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_type_punch` | 2 | 200.0 | _(module has no anchor)_ |
 | `prn_wet_collodion_plate` | 2 | 200.0 | _(module has no anchor)_ |
 | `prn_wood_pulp` | 2 | 120.0 | _(module has no anchor)_ |
+| `if_cylinder_press` | 3 | 250.0 | _(module has no anchor)_ |
+| `if_electrotype` | 3 | 150.0 | _(module has no anchor)_ |
+| `if_rotary_press` | 3 | 300.0 | _(module has no anchor)_ |
 | `prn_colour_photography` | 3 | 250.0 | _(module has no anchor)_ |
-| `prn_cylinder_press` | 3 | 250.0 | _(module has no anchor)_ |
 | `prn_electrical_recording` | 3 | 200.0 | _(module has no anchor)_ |
-| `prn_electrotype_plate` | 3 | 150.0 | _(module has no anchor)_ |
 | `prn_four_colour_separation` | 3 | 200.0 | _(module has no anchor)_ |
 | `prn_fourdrinier_machine` | 3 | 400.0 | _(module has no anchor)_ |
 | `prn_halftone_screen` | 3 | 150.0 | _(module has no anchor)_ |
@@ -1506,9 +1504,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_offset_lithography` | 3 | 250.0 | _(module has no anchor)_ |
 | `prn_radio_broadcasting` | 3 | 300.0 | _(module has no anchor)_ |
 | `prn_roll_film_celluloid` | 3 | 200.0 | _(module has no anchor)_ |
-| `prn_rotary_press` | 3 | 300.0 | _(module has no anchor)_ |
-| `prn_typewriter` | 3 | 300.0 | _(module has no anchor)_ |
-| `prn_linotype_machine` | 4 | 600.0 | _(module has no anchor)_ |
+| `if_linotype_machine` | 4 | 600.0 | _(module has no anchor)_ |
 | `prn_monotype_machine` | 4 | 500.0 | _(module has no anchor)_ |
 
 ### 85_transport_civil.md
@@ -1525,7 +1521,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `civ_brick_tile` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_chorobates` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_cofferdam` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_crane_treadwheel` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_dome_roman` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_glass_windows` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_insula` | 0 | 0.0 | _(module has no anchor)_ |
@@ -1535,6 +1530,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `civ_sewer_roman` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_surveying_groma` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_vault_barrel` | 0 | 0.0 | _(module has no anchor)_ |
+| `cn_crane_treadwheel` | 0 | 55.0 | _(module has no anchor)_ |
 | `lnd_axle_pivot_front` | 0 | 0.0 | _(module has no anchor)_ |
 | `lnd_bridge` | 0 | 0.0 | _(module has no anchor)_ |
 | `lnd_cursus_publicus` | 0 | 0.0 | _(module has no anchor)_ |
@@ -1561,6 +1557,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sea_spritsail` | 0 | 0.0 | _(module has no anchor)_ |
 | `sea_square_sail` | 0 | 0.0 | _(module has no anchor)_ |
 | `sea_steering_oars` | 0 | 0.0 | _(module has no anchor)_ |
+| `tr_fore_aft_rig` | 0 | 100.0 | _(module has no anchor)_ |
+| `tr_lateen_sail` | 0 | 80.0 | _(module has no anchor)_ |
 | `air_balloon_valve` | 1 | 60.0 | _(module has no anchor)_ |
 | `air_elevator_pitch` | 1 | 50.0 | _(module has no anchor)_ |
 | `air_goldbeater_skin` | 1 | 200.0 | _(module has no anchor)_ |
@@ -1572,14 +1570,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `civ_foundation_spread` | 1 | 80.0 | _(module has no anchor)_ |
 | `civ_gate_sluice` | 1 | 100.0 | _(module has no anchor)_ |
 | `civ_roof_king_post` | 1 | 80.0 | _(module has no anchor)_ |
-| `civ_roof_queen_post` | 1 | 100.0 | _(module has no anchor)_ |
 | `civ_street_paved` | 1 | 80.0 | _(module has no anchor)_ |
 | `civ_truss_triangulated` | 1 | 120.0 | _(module has no anchor)_ |
 | `civ_water_tower` | 1 | 100.0 | _(module has no anchor)_ |
 | `civ_wire_drawn` | 1 | 100.0 | _(module has no anchor)_ |
+| `cn_queen_post` | 1 | 100.0 | _(module has no anchor)_ |
 | `lnd_coach` | 1 | 200.0 | _(module has no anchor)_ |
 | `lnd_hobby_horse` | 1 | 40.0 | _(module has no anchor)_ |
-| `lnd_horseshoe_nailed` | 1 | 40.0 | _(module has no anchor)_ |
 | `lnd_spring_leaf` | 1 | 80.0 | _(module has no anchor)_ |
 | `lnd_stirrup` | 1 | 60.0 | _(module has no anchor)_ |
 | `lnd_wheelbarrow` | 1 | 30.0 | _(module has no anchor)_ |
@@ -1588,17 +1585,15 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sea_carvel_planking` | 1 | 200.0 | _(module has no anchor)_ |
 | `sea_clinker_planking` | 1 | 100.0 | _(module has no anchor)_ |
 | `sea_dry_compass_card` | 1 | 60.0 | _(module has no anchor)_ |
-| `sea_fore_aft_rig` | 1 | 100.0 | _(module has no anchor)_ |
 | `sea_jib` | 1 | 40.0 | _(module has no anchor)_ |
-| `sea_lateen_sail` | 1 | 80.0 | _(module has no anchor)_ |
 | `sea_lodestone` | 1 | 20.0 | _(module has no anchor)_ |
 | `sea_log_line` | 1 | 30.0 | _(module has no anchor)_ |
 | `sea_multiple_masts` | 1 | 150.0 | _(module has no anchor)_ |
 | `sea_skeleton_first` | 1 | 250.0 | _(module has no anchor)_ |
 | `sea_sternpost_rudder` | 1 | 120.0 | _(module has no anchor)_ |
 | `sea_traverse_board` | 1 | 40.0 | _(module has no anchor)_ |
+| `tl_horseshoe` | 1 | 40.0 | _(module has no anchor)_ |
 | `air_aerial_photography` | 2 | 120.0 | _(module has no anchor)_ |
-| `air_aerial_reconnaissance` | 2 | 100.0 | _(module has no anchor)_ |
 | `air_aerodrome` | 2 | 100.0 | _(module has no anchor)_ |
 | `air_aerofoil_section` | 2 | 200.0 | _(module has no anchor)_ |
 | `air_aileron` | 2 | 140.0 | _(module has no anchor)_ |
@@ -1631,6 +1626,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `civ_theodolite` | 2 | 150.0 | _(module has no anchor)_ |
 | `civ_town_planning` | 2 | 180.0 | _(module has no anchor)_ |
 | `civ_tunnel_rock_drill` | 2 | 180.0 | _(module has no anchor)_ |
+| `cn_arch_bridge_steel` | 2 | 250.0 | _(module has no anchor)_ |
 | `hot_air_balloon` | 2 | 400.0 | _(module has no anchor)_ |
 | `lnd_ball_bearing` | 2 | 80.0 | _(module has no anchor)_ |
 | `lnd_boneshaker` | 2 | 80.0 | _(module has no anchor)_ |
@@ -1640,7 +1636,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `lnd_flanged_wheel` | 2 | 80.0 | _(module has no anchor)_ |
 | `lnd_gas_engine_atmospheric` | 2 | 250.0 | _(module has no anchor)_ |
 | `lnd_iron_edge_rail` | 2 | 60.0 | _(module has no anchor)_ |
-| `lnd_macadam` | 2 | 80.0 | _(module has no anchor)_ |
+| `lnd_macadam` | 2 | 140.0 | _(module has no anchor)_ |
 | `lnd_penny_farthing` | 2 | 100.0 | _(module has no anchor)_ |
 | `lnd_point_switch` | 2 | 120.0 | _(module has no anchor)_ |
 | `lnd_signal_railway` | 2 | 80.0 | _(module has no anchor)_ |
@@ -1657,6 +1653,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sea_magnetic_compass` | 2 | 80.0 | _(module has no anchor)_ |
 | `sea_mercator_projection` | 2 | 180.0 | _(module has no anchor)_ |
 | `sea_sextant` | 2 | 150.0 | _(module has no anchor)_ |
+| `tr_screw_propeller` | 2 | 220.0 | _(module has no anchor)_ |
 | `air_aerial_bombing` | 3 | 150.0 | _(module has no anchor)_ |
 | `air_autogyro` | 3 | 200.0 | _(module has no anchor)_ |
 | `air_coal_gas_generation` | 3 | 180.0 | _(module has no anchor)_ |
@@ -1703,7 +1700,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sea_lunar_distances` | 3 | 200.0 | _(module has no anchor)_ |
 | `sea_marine_chronometer` | 3 | 250.0 | _(module has no anchor)_ |
 | `sea_paddle_wheel` | 3 | 200.0 | _(module has no anchor)_ |
-| `sea_screw_propeller` | 3 | 220.0 | _(module has no anchor)_ |
 | `air_artificial_horizon` | 4 | 250.0 | _(module has no anchor)_ |
 | `air_helicopter_rotor` | 4 | 280.0 | _(module has no anchor)_ |
 | `air_jet_engine_concept` | 4 | 200.0 | _(module has no anchor)_ |
@@ -1712,7 +1708,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `air_stressed_skin_fuselage` | 4 | 180.0 | _(module has no anchor)_ |
 | `civ_box_girder` | 4 | 120.0 | _(module has no anchor)_ |
 | `civ_bridge_cantilever` | 4 | 250.0 | _(module has no anchor)_ |
-| `civ_bridge_steel_arch` | 4 | 250.0 | _(module has no anchor)_ |
 | `civ_curtain_wall` | 4 | 150.0 | _(module has no anchor)_ |
 | `civ_prestressed_concrete` | 4 | 180.0 | _(module has no anchor)_ |
 | `civ_reinforced_concrete` | 4 | 200.0 | _(module has no anchor)_ |
@@ -1728,7 +1723,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `lnd_tractor` | 4 | 350.0 | _(module has no anchor)_ |
 | `lnd_truck` | 4 | 300.0 | _(module has no anchor)_ |
 | `railway` | 4 | 800.0 | _(module has no anchor)_ |
-| `sea_boiler_water_tube` | 4 | 200.0 | _(module has no anchor)_ |
 | `sea_compound_expansion` | 4 | 300.0 | _(module has no anchor)_ |
 | `sea_diesel_engine` | 4 | 250.0 | _(module has no anchor)_ |
 | `sea_electromagnetic_wave_theory` | 4 | 200.0 | _(module has no anchor)_ |
@@ -1737,11 +1731,315 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sea_steam_turbine` | 4 | 280.0 | _(module has no anchor)_ |
 | `sea_steel_hull` | 4 | 200.0 | _(module has no anchor)_ |
 | `sea_submarine` | 4 | 300.0 | _(module has no anchor)_ |
-| `sea_submarine_cable` | 4 | 200.0 | _(module has no anchor)_ |
-| `sea_torpedo` | 4 | 180.0 | _(module has no anchor)_ |
 | `air_jet_engine_build` | 5 | 350.0 | _(module has no anchor)_ |
 | `lnd_motor_road_network` | 5 | 250.0 | _(module has no anchor)_ |
 | `sea_sonar` | 5 | 250.0 | _(module has no anchor)_ |
+
+### 86_transport_deep.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `tr_bilge_pump` | 0 | 50.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
+| `tr_block_tackle` | 0 | 40.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
+| `tr_bowsprit` | 0 | 50.0 | [`tr_bowsprit`](86_transport_deep.md#tr_bowsprit---bowsprit-mast-stepping-and-rigging-hardware) |
+| `tr_caulking_oakum` | 0 | 60.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_clinker_planking` | 0 | 100.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_hull_sheathing_wood` | 0 | 100.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_jib` | 0 | 30.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
+| `tr_mast_stepping` | 0 | 80.0 | [`tr_bowsprit`](86_transport_deep.md#tr_bowsprit---bowsprit-mast-stepping-and-rigging-hardware) |
+| `tr_reefing` | 0 | 50.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
+| `tr_rigging_block_lashing` | 0 | 60.0 | [`tr_bowsprit`](86_transport_deep.md#tr_bowsprit---bowsprit-mast-stepping-and-rigging-hardware) |
+| `tr_square_rig` | 0 | 40.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
+| `tr_staysail` | 0 | 40.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
+| `tr_wooden_waggonway` | 0 | 40.0 | [`tr_sleeper_ballast`](86_transport_deep.md#tr_sleeper_ballast---sleeper-ballast-and-track-gauge) |
+| `tl_air_filter` | 1 | 60.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
+| `tl_anti_siphon_valve` | 1 | 50.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
+| `tl_brake_shoe` | 1 | 70.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
+| `tl_cambered_drainage` | 1 | 80.0 | [`tl_macadam_road`](86_transport_deep.md#tl_macadam_road---macadam-and-bound-road-surfaces) |
+| `tl_dead_axle` | 1 | 60.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
+| `tl_grease_cup` | 1 | 50.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
+| `tl_handbrake` | 1 | 70.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
+| `tl_horse_collar` | 1 | 50.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
+| `tl_indicator` | 1 | 70.0 | [`tl_headlamp`](86_transport_deep.md#tl_headlamp---headlamp-and-signal-lighting) |
+| `tl_iron_tyre` | 1 | 100.0 | [`tl_spoked_wheel`](86_transport_deep.md#tl_spoked_wheel---improved-spoked-and-wire-spoke-wheel) |
+| `tl_kerbing` | 1 | 60.0 | [`tl_macadam_road`](86_transport_deep.md#tl_macadam_road---macadam-and-bound-road-surfaces) |
+| `tl_kingpin` | 1 | 80.0 | [`tl_ackermann_steering`](86_transport_deep.md#tl_ackermann_steering---ackermann-steering-geometry) |
+| `tl_leaf_spring` | 1 | 100.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
+| `tl_plain_bearing` | 1 | 70.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
+| `tl_shrink_fit` | 1 | 120.0 | [`tl_spoked_wheel`](86_transport_deep.md#tl_spoked_wheel---improved-spoked-and-wire-spoke-wheel) |
+| `tl_spoked_wheel` | 1 | 80.0 | [`tl_spoked_wheel`](86_transport_deep.md#tl_spoked_wheel---improved-spoked-and-wire-spoke-wheel) |
+| `tl_stirrup` | 1 | 45.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
+| `tl_tandem_harness` | 1 | 70.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
+| `tl_transmission_lubrication` | 1 | 70.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
+| `tl_whippletree` | 1 | 60.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
+| `tl_wire_rope_brake` | 1 | 60.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
+| `tr_axle_bearing_box` | 1 | 60.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
+| `tr_blastpipe` | 1 | 50.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
+| `tr_brake_shoe` | 1 | 50.0 | [`tr_brake_shoe`](86_transport_deep.md#tr_brake_shoe---rail-brake-shoe-vacuum-and-westinghouse-air-brake) |
+| `tr_canal_lock` | 1 | 150.0 | [`tr_canal_lock`](86_transport_deep.md#tr_canal_lock---canal-lock-and-canal-lift) |
+| `tr_capstan` | 1 | 80.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
+| `tr_carvel_planking` | 1 | 120.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_chain_cable` | 1 | 80.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
+| `tr_chair_key` | 1 | 50.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
+| `tr_copper_sheathing` | 1 | 100.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_edge_rail` | 1 | 80.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
+| `tr_fishplate` | 1 | 40.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
+| `tr_flanged_wheel` | 1 | 50.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
+| `tr_fore_and_aft_rigging` | 1 | 100.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
+| `tr_frame_first_construction` | 1 | 80.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_grade_crossing` | 1 | 80.0 | [`tr_points_frog`](86_transport_deep.md#tr_points_frog---points-frog-turntable-and-yard-switching) |
+| `tr_hopper_wagon` | 1 | 50.0 | [`tr_hopper_wagon`](86_transport_deep.md#tr_hopper_wagon---specialised-wagons-hopper-tank-refrigerated-sleeping-car) |
+| `tr_keelson` | 1 | 80.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_leading_truck` | 1 | 80.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
+| `tr_lifeboat` | 1 | 80.0 | [`tr_lifeboat`](86_transport_deep.md#tr_lifeboat---lifeboat-submarine-hull-and-periscope) |
+| `tr_log_sounding` | 1 | 50.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
+| `tr_paddle_wheel` | 1 | 100.0 | [`tr_sternpost_rudder`](86_transport_deep.md#tr_sternpost_rudder---propulsion-rudder-propeller-and-shafting) |
+| `tr_rail_gauge_standardization` | 1 | 40.0 | [`tr_sleeper_ballast`](86_transport_deep.md#tr_sleeper_ballast---sleeper-ballast-and-track-gauge) |
+| `tr_riveted_plating` | 1 | 150.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
+| `tr_screw_coupling` | 1 | 40.0 | [`tr_screw_coupling`](86_transport_deep.md#tr_screw_coupling---screw-coupling-buffer-and-knuckle-coupler) |
+| `tr_semaphore_signal` | 1 | 40.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
+| `tr_ship_telegraph` | 1 | 60.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
+| `tr_sleeper_ballast` | 1 | 30.0 | [`tr_sleeper_ballast`](86_transport_deep.md#tr_sleeper_ballast---sleeper-ballast-and-track-gauge) |
+| `tr_sleeping_car` | 1 | 60.0 | [`tr_hopper_wagon`](86_transport_deep.md#tr_hopper_wagon---specialised-wagons-hopper-tank-refrigerated-sleeping-car) |
+| `tr_slide_valve` | 1 | 70.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
+| `tr_slipway_launch` | 1 | 80.0 | [`tr_dry_dock`](86_transport_deep.md#tr_dry_dock---shipyard-infrastructure-dry-dock-slipway-tugs-dredging) |
+| `tr_smoke_box` | 1 | 70.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
+| `tr_sprung_buffer` | 1 | 50.0 | [`tr_screw_coupling`](86_transport_deep.md#tr_screw_coupling---screw-coupling-buffer-and-knuckle-coupler) |
+| `tr_tug` | 1 | 100.0 | [`tr_dry_dock`](86_transport_deep.md#tr_dry_dock---shipyard-infrastructure-dry-dock-slipway-tugs-dredging) |
+| `tr_watertight_bulkhead` | 1 | 70.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
+| `tr_windlass` | 1 | 100.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
+| `tl_articulated_trailer` | 2 | 170.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
+| `tl_ball_bearing` | 2 | 150.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
+| `tl_caliper_brake` | 2 | 100.0 | [`tl_chain_drive`](86_transport_deep.md#tl_chain_drive---chain-drive-freewheel-and-gearing) |
+| `tl_carbide_lamp` | 2 | 100.0 | [`tl_headlamp`](86_transport_deep.md#tl_headlamp---headlamp-and-signal-lighting) |
+| `tl_chain_drive` | 2 | 120.0 | [`tl_chain_drive`](86_transport_deep.md#tl_chain_drive---chain-drive-freewheel-and-gearing) |
+| `tl_coil_spring` | 2 | 110.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
+| `tl_cone_clutch` | 2 | 120.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
+| `tl_cooling_fan` | 2 | 100.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
+| `tl_differential` | 2 | 140.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
+| `tl_drum_brake` | 2 | 120.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
+| `tl_elliptic_spring` | 2 | 120.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
+| `tl_fan_belt` | 2 | 100.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
+| `tl_fifth_wheel` | 2 | 130.0 | [`tl_ackermann_steering`](86_transport_deep.md#tl_ackermann_steering---ackermann-steering-geometry) |
+| `tl_freewheel` | 2 | 100.0 | [`tl_chain_drive`](86_transport_deep.md#tl_chain_drive---chain-drive-freewheel-and-gearing) |
+| `tl_friction_damper` | 2 | 90.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
+| `tl_fuel_pump` | 2 | 100.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
+| `tl_headlamp` | 2 | 120.0 | [`tl_headlamp`](86_transport_deep.md#tl_headlamp---headlamp-and-signal-lighting) |
+| `tl_horse_tram` | 2 | 180.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_hydraulic_brake_line` | 2 | 130.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
+| `tl_inner_tube` | 2 | 120.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
+| `tl_level_crossing` | 2 | 120.0 | [`tl_road_roller`](86_transport_deep.md#tl_road_roller---steam-road-roller-and-level-crossings) |
+| `tl_live_axle` | 2 | 120.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
+| `tl_muffler` | 2 | 80.0 | [`tl_muffler`](86_transport_deep.md#tl_muffler---muffler-and-windscreen-wiper) |
+| `tl_oil_bath` | 2 | 80.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
+| `tl_oil_pump` | 2 | 120.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
+| `tl_omnibus` | 2 | 160.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_penny_farthing` | 2 | 110.0 | [`tl_safety_bicycle`](86_transport_deep.md#tl_safety_bicycle---safety-bicycle-and-its-ancestors) |
+| `tl_plate_clutch` | 2 | 130.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
+| `tl_pressure_relief_valve` | 2 | 90.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
+| `tl_propshaft` | 2 | 100.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
+| `tl_road_roller` | 2 | 160.0 | [`tl_road_roller`](86_transport_deep.md#tl_road_roller---steam-road-roller-and-level-crossings) |
+| `tl_roller_bearing` | 2 | 120.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
+| `tl_safety_bicycle` | 2 | 130.0 | [`tl_safety_bicycle`](86_transport_deep.md#tl_safety_bicycle---safety-bicycle-and-its-ancestors) |
+| `tl_sliding_gearbox` | 2 | 140.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
+| `tl_snow_plough` | 2 | 150.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
+| `tl_solid_rubber_tyre` | 2 | 100.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
+| `tl_thermostat` | 2 | 90.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
+| `tl_throttle` | 2 | 80.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
+| `tl_tyre_bead` | 2 | 100.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
+| `tl_tyre_tread` | 2 | 110.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
+| `tl_universal_joint` | 2 | 110.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
+| `tl_velocipede` | 2 | 100.0 | [`tl_safety_bicycle`](86_transport_deep.md#tl_safety_bicycle---safety-bicycle-and-its-ancestors) |
+| `tl_water_pump` | 2 | 110.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
+| `tl_windscreen_wiper` | 2 | 100.0 | [`tl_muffler`](86_transport_deep.md#tl_muffler---muffler-and-windscreen-wiper) |
+| `tl_wire_spoke_wheel` | 2 | 120.0 | [`tl_spoked_wheel`](86_transport_deep.md#tl_spoked_wheel---improved-spoked-and-wire-spoke-wheel) |
+| `tr_ballast_tank` | 2 | 120.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
+| `tr_block_signalling` | 2 | 100.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
+| `tr_bogie_truck` | 2 | 120.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
+| `tr_bullhead_rail` | 2 | 70.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
+| `tr_canal_lift` | 2 | 250.0 | [`tr_canal_lock`](86_transport_deep.md#tr_canal_lock---canal-lock-and-canal-lift) |
+| `tr_compound_expansion` | 2 | 150.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
+| `tr_double_bottom` | 2 | 150.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
+| `tr_dredger` | 2 | 200.0 | [`tr_dry_dock`](86_transport_deep.md#tr_dry_dock---shipyard-infrastructure-dry-dock-slipway-tugs-dredging) |
+| `tr_dry_dock` | 2 | 200.0 | [`tr_dry_dock`](86_transport_deep.md#tr_dry_dock---shipyard-infrastructure-dry-dock-slipway-tugs-dredging) |
+| `tr_injector_feedwater` | 2 | 100.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
+| `tr_interlocking_signal` | 2 | 180.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
+| `tr_iron_hull` | 2 | 200.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
+| `tr_locomotive_boiler` | 2 | 150.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
+| `tr_marine_engine` | 2 | 180.0 | [`tr_marine_engine`](86_transport_deep.md#tr_marine_engine---marine-steam-and-diesel-propulsion-machinery) |
+| `tr_marshalling_hump` | 2 | 100.0 | [`tr_points_frog`](86_transport_deep.md#tr_points_frog---points-frog-turntable-and-yard-switching) |
+| `tr_pantograph` | 2 | 100.0 | [`tr_electric_locomotive`](86_transport_deep.md#tr_electric_locomotive---electric-and-diesel-electric-traction) |
+| `tr_piston_valve` | 2 | 100.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
+| `tr_points_frog` | 2 | 120.0 | [`tr_points_frog`](86_transport_deep.md#tr_points_frog---points-frog-turntable-and-yard-switching) |
+| `tr_refrigerated_wagon` | 2 | 80.0 | [`tr_hopper_wagon`](86_transport_deep.md#tr_hopper_wagon---specialised-wagons-hopper-tank-refrigerated-sleeping-car) |
+| `tr_sextant_navigation` | 2 | 100.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
+| `tr_stephenson_linkmotion` | 2 | 120.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
+| `tr_stern_tube` | 2 | 100.0 | [`tr_sternpost_rudder`](86_transport_deep.md#tr_sternpost_rudder---propulsion-rudder-propeller-and-shafting) |
+| `tr_stockless_anchor` | 2 | 100.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
+| `tr_superheater` | 2 | 110.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
+| `tr_tank_wagon` | 2 | 100.0 | [`tr_hopper_wagon`](86_transport_deep.md#tr_hopper_wagon---specialised-wagons-hopper-tank-refrigerated-sleeping-car) |
+| `tr_third_rail` | 2 | 80.0 | [`tr_electric_locomotive`](86_transport_deep.md#tr_electric_locomotive---electric-and-diesel-electric-traction) |
+| `tr_track_circuit` | 2 | 120.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
+| `tr_turntable` | 2 | 100.0 | [`tr_points_frog`](86_transport_deep.md#tr_points_frog---points-frog-turntable-and-yard-switching) |
+| `tr_vacuum_brake` | 2 | 100.0 | [`tr_brake_shoe`](86_transport_deep.md#tr_brake_shoe---rail-brake-shoe-vacuum-and-westinghouse-air-brake) |
+| `tr_walschaerts_valve` | 2 | 140.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
+| `tl_automatic_transmission` | 3 | 200.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
+| `tl_cam_follower` | 3 | 120.0 | [`tl_engine_block`](86_transport_deep.md#tl_engine_block---cast-engine-block) |
+| `tl_carburettor` | 3 | 150.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
+| `tl_caterpillar_track` | 3 | 200.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
+| `tl_coil_ignition` | 3 | 140.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
+| `tl_concrete_roadway` | 3 | 200.0 | [`tl_macadam_road`](86_transport_deep.md#tl_macadam_road---macadam-and-bound-road-surfaces) |
+| `tl_connecting_rod` | 3 | 150.0 | [`tl_engine_block`](86_transport_deep.md#tl_engine_block---cast-engine-block) |
+| `tl_derailleur` | 3 | 140.0 | [`tl_chain_drive`](86_transport_deep.md#tl_chain_drive---chain-drive-freewheel-and-gearing) |
+| `tl_disc_brake` | 3 | 150.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
+| `tl_distributor` | 3 | 130.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
+| `tl_dynamo` | 3 | 150.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
+| `tl_electric_starter` | 3 | 170.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
+| `tl_electric_tram` | 3 | 200.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_engine_block` | 3 | 170.0 | [`tl_engine_block`](86_transport_deep.md#tl_engine_block---cast-engine-block) |
+| `tl_epicyclic_gearbox` | 3 | 170.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
+| `tl_exhaust_valve` | 3 | 150.0 | [`tl_intake_valve`](86_transport_deep.md#tl_intake_valve---poppet-valve-with-cam-and-spring) |
+| `tl_hub_gear` | 3 | 160.0 | [`tl_chain_drive`](86_transport_deep.md#tl_chain_drive---chain-drive-freewheel-and-gearing) |
+| `tl_hydraulic_shock` | 3 | 160.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
+| `tl_ignition_timing` | 3 | 110.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
+| `tl_intake_valve` | 3 | 140.0 | [`tl_intake_valve`](86_transport_deep.md#tl_intake_valve---poppet-valve-with-cam-and-spring) |
+| `tl_magneto_ignition` | 3 | 160.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
+| `tl_motor_dc` | 3 | 140.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
+| `tl_motor_lorry` | 3 | 240.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
+| `tl_motorcycle` | 3 | 180.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_piston_assembly` | 3 | 160.0 | [`tl_engine_block`](86_transport_deep.md#tl_engine_block---cast-engine-block) |
+| `tl_pneumatic_tyre` | 3 | 160.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
+| `tl_radiator` | 3 | 140.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
+| `tl_spark_plug` | 3 | 120.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
+| `tl_steam_tram` | 3 | 220.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_synchromesh` | 3 | 160.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
+| `tl_taper_roller_bearing` | 3 | 180.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
+| `tl_tarmacadam` | 3 | 150.0 | [`tl_macadam_road`](86_transport_deep.md#tl_macadam_road---macadam-and-bound-road-surfaces) |
+| `tl_tractor` | 3 | 250.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
+| `tl_trolleybus` | 3 | 210.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_vulcanized_rubber` | 3 | 140.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
+| `tr_articulated_locomotive` | 3 | 200.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
+| `tr_automatic_train_stop` | 3 | 200.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
+| `tr_catenary_overhead` | 3 | 150.0 | [`tr_electric_locomotive`](86_transport_deep.md#tr_electric_locomotive---electric-and-diesel-electric-traction) |
+| `tr_electric_locomotive` | 3 | 200.0 | [`tr_electric_locomotive`](86_transport_deep.md#tr_electric_locomotive---electric-and-diesel-electric-traction) |
+| `tr_flatbottom_rail` | 3 | 90.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
+| `tr_gyrocompass_repeater` | 3 | 150.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
+| `tr_knuckle_coupler` | 3 | 150.0 | [`tr_screw_coupling`](86_transport_deep.md#tr_screw_coupling---screw-coupling-buffer-and-knuckle-coupler) |
+| `tr_marine_chronometer` | 3 | 250.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
+| `tr_marine_diesel` | 3 | 200.0 | [`tr_marine_engine`](86_transport_deep.md#tr_marine_engine---marine-steam-and-diesel-propulsion-machinery) |
+| `tr_marine_turbine` | 3 | 250.0 | [`tr_marine_engine`](86_transport_deep.md#tr_marine_engine---marine-steam-and-diesel-propulsion-machinery) |
+| `tr_rail_rolling` | 3 | 120.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
+| `tr_reduction_gearing` | 3 | 200.0 | [`tr_sternpost_rudder`](86_transport_deep.md#tr_sternpost_rudder---propulsion-rudder-propeller-and-shafting) |
+| `tr_steel_hull` | 3 | 250.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
+| `tr_submarine_hull` | 3 | 250.0 | [`tr_lifeboat`](86_transport_deep.md#tr_lifeboat---lifeboat-submarine-hull-and-periscope) |
+| `tr_triple_expansion` | 3 | 200.0 | [`tr_marine_engine`](86_transport_deep.md#tr_marine_engine---marine-steam-and-diesel-propulsion-machinery) |
+| `tr_variable_pitch_propeller` | 3 | 180.0 | [`tr_sternpost_rudder`](86_transport_deep.md#tr_sternpost_rudder---propulsion-rudder-propeller-and-shafting) |
+| `tr_welded_hull` | 3 | 200.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
+| `tr_westinghouse_brake` | 3 | 180.0 | [`tr_brake_shoe`](86_transport_deep.md#tr_brake_shoe---rail-brake-shoe-vacuum-and-westinghouse-air-brake) |
+| `tr_diesel_electric` | 4 | 250.0 | [`tr_electric_locomotive`](86_transport_deep.md#tr_electric_locomotive---electric-and-diesel-electric-traction) |
+| `tr_rail_welding` | 4 | 150.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
+
+### 87_construction.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `cn_aqueduct` | 0 | 110.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
+| `cn_block_tackle_hoist` | 0 | 30.0 | [`cn_crane_treadwheel`](87_construction.md#cn_crane_treadwheel---treadwheel-crane-polyspastos) |
+| `cn_cofferdam` | 0 | 60.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
+| `cn_damp_proof_course` | 0 | 50.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
+| `cn_gypsum_plaster` | 0 | 35.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_mortar` | 0 | 40.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
+| `cn_pile_driving` | 0 | 40.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
+| `cn_post_lintel` | 0 | 25.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-structure-the-theory-of-the-beam) |
+| `cn_pozzolana_concrete` | 0 | 50.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
+| `cn_quarrying_wedge` | 0 | 20.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
+| `cn_retaining_wall` | 0 | 80.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
+| `cn_scaffolding` | 0 | 50.0 | [`cn_scaffolding`](87_construction.md#cn_scaffolding---timber-scaffolding-system) |
+| `cn_stone_polish` | 0 | 30.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
+| `cn_stone_saw` | 0 | 40.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
+| `cn_timber_truss` | 0 | 45.0 | [`cn_king_post`](87_construction.md#cn_king_post---king-post-roof-truss) |
+| `cn_true_arch` | 0 | 35.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
+| `cn_artificial_stone` | 1 | 70.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_caisson` | 1 | 120.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
+| `cn_cavity_wall` | 1 | 75.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
+| `cn_crane_derrick` | 1 | 75.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
+| `cn_dewatering` | 1 | 85.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
+| `cn_earth_dam` | 1 | 100.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
+| `cn_expansion_joint` | 1 | 75.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
+| `cn_fire_escape` | 1 | 75.0 | [`cn_fire_escape`](87_construction.md#cn_fire_escape---fire-escape-and-automatic-sprinklers) |
+| `cn_flying_buttress` | 1 | 90.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
+| `cn_formwork_shuttering` | 1 | 95.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
+| `cn_gang_saw` | 1 | 80.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
+| `cn_gravity_dam` | 1 | 120.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
+| `cn_groin_vault` | 1 | 100.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
+| `cn_gusset_plate` | 1 | 60.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
+| `cn_iron_column` | 1 | 65.0 | [`cn_cast_iron_beam`](87_construction.md#cn_cast_iron_beam---cast-iron-beam) |
+| `cn_lattice_truss` | 1 | 70.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_plumbing_stack` | 1 | 80.0 | [`cn_plumbing_stack`](87_construction.md#cn_plumbing_stack---plumbing-stack-and-trapped-drains) |
+| `cn_pontoon_bridge` | 1 | 85.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
+| `cn_radiator` | 1 | 65.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
+| `cn_ribbed_vault` | 1 | 120.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
+| `cn_riveted_connection` | 1 | 70.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
+| `cn_sash_window` | 1 | 85.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
+| `cn_sewer_system` | 1 | 100.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
+| `cn_sheet_piling` | 1 | 100.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
+| `cn_siphon` | 1 | 75.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
+| `cn_soil_compaction` | 1 | 70.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
+| `cn_spillway` | 1 | 95.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
+| `cn_swing_bridge` | 1 | 110.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
+| `cn_terrazzo` | 1 | 60.0 | [`cn_terrazzo`](87_construction.md#cn_terrazzo---terrazzo-floor-finish) |
+| `cn_trapped_drain` | 1 | 60.0 | [`cn_plumbing_stack`](87_construction.md#cn_plumbing_stack---plumbing-stack-and-trapped-drains) |
+| `cn_trussed_arch` | 1 | 100.0 | [`cn_king_post`](87_construction.md#cn_king_post---king-post-roof-truss) |
+| `cn_tunnel_cut_cover` | 1 | 105.0 | [`cn_drill_blast`](87_construction.md#cn_drill_blast---tunnelling-by-drill-and-blast) |
+| `cn_tunnel_lining` | 1 | 95.0 | [`cn_tunnel_shield`](87_construction.md#cn_tunnel_shield---tunnel-shield-method-and-tunnel-lining) |
+| `cn_ventilation_shaft` | 1 | 85.0 | [`cn_drill_blast`](87_construction.md#cn_drill_blast---tunnelling-by-drill-and-blast) |
+| `cn_water_main` | 1 | 85.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
+| `cn_wrought_iron_girder` | 1 | 95.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_arch_dam` | 2 | 140.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
+| `cn_asphalt_roofing` | 2 | 80.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
+| `cn_bascule_bridge` | 2 | 140.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
+| `cn_bolted_connection` | 2 | 85.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
+| `cn_box_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_cable_anchorage` | 2 | 95.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
+| `cn_cantilever` | 2 | 85.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-structure-the-theory-of-the-beam) |
+| `cn_cast_iron_beam` | 2 | 80.0 | [`cn_cast_iron_beam`](87_construction.md#cn_cast_iron_beam---cast-iron-beam) |
+| `cn_cement_clinker_grinding` | 2 | 110.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_central_heating` | 2 | 95.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
+| `cn_concrete_mixer` | 2 | 100.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
+| `cn_crane_tower` | 2 | 130.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
+| `cn_deformed_rebar` | 2 | 85.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
+| `cn_drill_blast` | 2 | 125.0 | [`cn_drill_blast`](87_construction.md#cn_drill_blast---tunnelling-by-drill-and-blast) |
+| `cn_elevator_safety_brake` | 2 | 120.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
+| `cn_forced_ventilation` | 2 | 100.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
+| `cn_insulation` | 2 | 90.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
+| `cn_plate_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_plate_glass_window` | 2 | 120.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
+| `cn_pneumatic_caisson` | 2 | 140.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
+| `cn_portland_cement` | 2 | 120.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_pratt_truss` | 2 | 90.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_precast_panel` | 2 | 110.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
+| `cn_reinforced_concrete` | 2 | 115.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
+| `cn_rolled_I_beam` | 2 | 110.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_roof_truss_corrugated` | 2 | 95.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
+| `cn_screw_pile` | 2 | 95.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
+| `cn_shotcrete` | 2 | 110.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
+| `cn_sprinkler` | 2 | 110.0 | [`cn_fire_escape`](87_construction.md#cn_fire_escape---fire-escape-and-automatic-sprinklers) |
+| `cn_stiffening_truss` | 2 | 100.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
+| `cn_tunnel_shield` | 2 | 150.0 | [`cn_tunnel_shield`](87_construction.md#cn_tunnel_shield---tunnel-shield-method-and-tunnel-lining) |
+| `cn_underpinning` | 2 | 130.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
+| `cn_vibratory_compaction` | 2 | 85.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
+| `cn_warren_truss` | 2 | 85.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_wire_cable_spinning` | 2 | 110.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
+| `cn_curtain_wall` | 3 | 140.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
+| `cn_diaphragm_wall` | 3 | 160.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
+| `cn_post_tensioning` | 3 | 135.0 | [`cn_prestressed_concrete`](87_construction.md#cn_prestressed_concrete---prestressed-concrete-element) |
+| `cn_prestressed_concrete` | 3 | 145.0 | [`cn_prestressed_concrete`](87_construction.md#cn_prestressed_concrete---prestressed-concrete-element) |
+| `cn_rotary_cement_kiln` | 3 | 160.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_slipform` | 3 | 160.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
+| `cn_space_frame` | 3 | 150.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
+| `cn_steel_frame_skeleton` | 3 | 180.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_suspension_bridge` | 3 | 200.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
+| `cn_welded_connection` | 3 | 125.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
 
 ### 90_textiles.md
 
@@ -2014,13 +2312,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_stove_enclosed` | 2 | 100.0 | _(module has no anchor)_ |
 | `hom_toys_dolls` | 2 | 60.0 | _(module has no anchor)_ |
 | `hom_washing_machine_hand` | 2 | 140.0 | _(module has no anchor)_ |
+| `if_fountain_pen` | 2 | 130.0 | _(module has no anchor)_ |
 | `hom_attar_roses` | 3 | 150.0 | _(module has no anchor)_ |
 | `hom_bath_piped_hot_water` | 3 | 140.0 | _(module has no anchor)_ |
 | `hom_carpet_sweeper` | 3 | 100.0 | _(module has no anchor)_ |
 | `hom_deodorant` | 3 | 70.0 | _(module has no anchor)_ |
 | `hom_doll_fashion` | 3 | 110.0 | _(module has no anchor)_ |
 | `hom_double_glazing` | 3 | 120.0 | _(module has no anchor)_ |
-| `hom_fountain_pen` | 3 | 130.0 | _(module has no anchor)_ |
 | `hom_gas_lamp` | 3 | 140.0 | _(module has no anchor)_ |
 | `hom_refrigeration_mechanical` | 3 | 200.0 | _(module has no anchor)_ |
 | `hom_safety_razor` | 3 | 110.0 | _(module has no anchor)_ |
@@ -2155,7 +2453,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_artillery_carriage` | 1 | 120.0 | _(module has no anchor)_ |
 | `mil_artillery_piece` | 1 | 140.0 | _(module has no anchor)_ |
 | `mil_bastion` | 1 | 90.0 | _(module has no anchor)_ |
-| `mil_corned_powder` | 1 | 60.0 | _(module has no anchor)_ |
 | `mil_fuse_slow_match` | 1 | 30.0 | _(module has no anchor)_ |
 | `mil_glacis` | 1 | 60.0 | _(module has no anchor)_ |
 | `mil_incorporating_mill` | 1 | 140.0 | _(module has no anchor)_ |
@@ -2195,13 +2492,14 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_pillbox` | 2 | 70.0 | _(module has no anchor)_ |
 | `mil_rifling` | 2 | 70.0 | _(module has no anchor)_ |
 | `mil_shrapnel_shell` | 2 | 85.0 | _(module has no anchor)_ |
-| `mil_torpedo` | 2 | 120.0 | _(module has no anchor)_ |
+| `mil_torpedo` | 2 | 180.0 | _(module has no anchor)_ |
 | `mil_torpedo_boat` | 2 | 100.0 | _(module has no anchor)_ |
 | `mil_torpedo_tube` | 2 | 90.0 | _(module has no anchor)_ |
 | `mil_trench` | 2 | 40.0 | _(module has no anchor)_ |
 | `mil_wheel_lock` | 2 | 80.0 | _(module has no anchor)_ |
+| `tr_periscope` | 2 | 100.0 | _(module has no anchor)_ |
 | `mil_aerial_camera` | 3 | 95.0 | _(module has no anchor)_ |
-| `mil_aerial_reconnaissance` | 3 | 80.0 | _(module has no anchor)_ |
+| `mil_aerial_reconnaissance` | 3 | 100.0 | _(module has no anchor)_ |
 | `mil_aircraft_catapult` | 3 | 120.0 | _(module has no anchor)_ |
 | `mil_anti_aircraft_gun` | 3 | 115.0 | _(module has no anchor)_ |
 | `mil_armoured_car` | 3 | 120.0 | _(module has no anchor)_ |
@@ -2229,7 +2527,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_machine_gun_nest` | 3 | 60.0 | _(module has no anchor)_ |
 | `mil_machine_gun_recoil` | 3 | 160.0 | _(module has no anchor)_ |
 | `mil_minesweeper` | 3 | 110.0 | _(module has no anchor)_ |
-| `mil_periscope` | 3 | 80.0 | _(module has no anchor)_ |
 | `mil_range_table` | 3 | 100.0 | _(module has no anchor)_ |
 | `mil_rangefinder` | 3 | 105.0 | _(module has no anchor)_ |
 | `mil_recoil_mechanism` | 3 | 130.0 | _(module has no anchor)_ |
@@ -2237,12 +2534,12 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_sloped_armour` | 3 | 85.0 | _(module has no anchor)_ |
 | `mil_smokeless_powder` | 3 | 110.0 | _(module has no anchor)_ |
 | `mil_sponson` | 3 | 85.0 | _(module has no anchor)_ |
-| `mil_submarine` | 3 | 150.0 | _(module has no anchor)_ |
 | `mil_tank_turret` | 3 | 110.0 | _(module has no anchor)_ |
 | `mil_track` | 3 | 120.0 | _(module has no anchor)_ |
 | `mil_turret_traverse` | 3 | 100.0 | _(module has no anchor)_ |
 | `mil_water_jacket` | 3 | 90.0 | _(module has no anchor)_ |
 | `mil_wireless_set` | 3 | 100.0 | _(module has no anchor)_ |
+| `tl_half_track` | 3 | 220.0 | _(module has no anchor)_ |
 | `mil_aircraft_carrier` | 4 | 170.0 | _(module has no anchor)_ |
 | `mil_asdic` | 4 | 140.0 | _(module has no anchor)_ |
 | `mil_atomic_bomb` | 4 | 200.0 | _(module has no anchor)_ |
@@ -2254,27 +2551,130 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_fire_control_computing` | 4 | 120.0 | _(module has no anchor)_ |
 | `mil_fire_control_director` | 4 | 140.0 | _(module has no anchor)_ |
 | `mil_guided_bomb` | 4 | 140.0 | _(module has no anchor)_ |
-| `mil_half_track` | 4 | 130.0 | _(module has no anchor)_ |
 | `mil_iff_system` | 4 | 120.0 | _(module has no anchor)_ |
 | `mil_jet_fighter` | 4 | 160.0 | _(module has no anchor)_ |
 | `mil_napalm` | 4 | 100.0 | _(module has no anchor)_ |
 | `mil_proximity_fuse` | 4 | 150.0 | _(module has no anchor)_ |
-| `mil_radar` | 4 | 150.0 | _(module has no anchor)_ |
+| `mil_radar` | 4 | 250.0 | _(module has no anchor)_ |
 | `mil_self_loading_pistol` | 4 | 140.0 | _(module has no anchor)_ |
 | `mil_self_propelled_gun` | 4 | 150.0 | _(module has no anchor)_ |
 | `mil_tank` | 4 | 160.0 | _(module has no anchor)_ |
+
+### 98_power_plants.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `en_breastshot_wheel` | 0 | 70.0 | [`en_overshot_wheel`](98_power_plants.md#en_overshot_wheel---overshot-water-wheel) |
+| `en_charcoal_burning` | 0 | 60.0 | [`en_charcoal_burning`](98_power_plants.md#en_charcoal_burning---charcoal-production-by-burning) |
+| `en_coal_mining_washing` | 0 | 100.0 | [`en_charcoal_burning`](98_power_plants.md#en_charcoal_burning---charcoal-production-by-burning) |
+| `en_horse_gin` | 0 | 30.0 | [`en_undershot_wheel`](98_power_plants.md#en_undershot_wheel---undershot-water-wheel) |
+| `en_overshot_wheel` | 0 | 80.0 | [`en_overshot_wheel`](98_power_plants.md#en_overshot_wheel---overshot-water-wheel) |
+| `en_peat_fuel` | 0 | 70.0 | [`en_charcoal_burning`](98_power_plants.md#en_charcoal_burning---charcoal-production-by-burning) |
+| `en_penstock` | 0 | 50.0 | [`en_penstock`](98_power_plants.md#en_penstock---penstock-and-flume) |
+| `en_spring_motor` | 0 | 80.0 | [`en_stirling_engine`](98_power_plants.md#en_stirling_engine---stirling-hot-air-engine) |
+| `en_treadwheel` | 0 | 20.0 | [`en_undershot_wheel`](98_power_plants.md#en_undershot_wheel---undershot-water-wheel) |
+| `en_undershot_wheel` | 0 | 60.0 | [`en_undershot_wheel`](98_power_plants.md#en_undershot_wheel---undershot-water-wheel) |
+| `en_battery_charging` | 1 | 110.0 | [`en_battery_charging`](98_power_plants.md#en_battery_charging---battery-charging-system) |
+| `en_boiler_locomotive` | 1 | 120.0 | [`en_boiler_cornish`](98_power_plants.md#en_boiler_cornish---cornish-boiler) |
+| `en_carburetted_engine` | 1 | 110.0 | [`en_hot_bulb_engine`](98_power_plants.md#en_hot_bulb_engine---hot-bulb-engine) |
+| `en_coke_oven` | 1 | 120.0 | [`en_coke_oven`](98_power_plants.md#en_coke_oven---coke-oven-beehive-or-by-product) |
+| `en_commutator` | 1 | 90.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
+| `en_compressed_air_engine` | 1 | 100.0 | [`en_stirling_engine`](98_power_plants.md#en_stirling_engine---stirling-hot-air-engine) |
+| `en_condenser_jet` | 1 | 70.0 | [`en_separate_condenser`](98_power_plants.md#en_separate_condenser---separate-condenser-watt) |
+| `en_condenser_surface` | 1 | 100.0 | [`en_separate_condenser`](98_power_plants.md#en_separate_condenser---separate-condenser-watt) |
+| `en_cutoff_valve` | 1 | 90.0 | [`en_expansive_working`](98_power_plants.md#en_expansive_working---expansive-working-cutoff) |
+| `en_draft_tube` | 1 | 80.0 | [`en_penstock`](98_power_plants.md#en_penstock---penstock-and-flume) |
+| `en_economiser` | 1 | 100.0 | [`en_economiser`](98_power_plants.md#en_economiser---economiser) |
+| `en_exciter` | 1 | 100.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
+| `en_expansive_working` | 1 | 110.0 | [`en_expansive_working`](98_power_plants.md#en_expansive_working---expansive-working-cutoff) |
+| `en_feedwater_heater` | 1 | 90.0 | [`en_economiser`](98_power_plants.md#en_economiser---economiser) |
+| `en_four_stroke_cycle` | 1 | 100.0 | [`en_four_stroke_cycle`](98_power_plants.md#en_four_stroke_cycle---four-stroke-cycle-otto) |
+| `en_fuel_oil` | 1 | 85.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
+| `en_fuse` | 1 | 70.0 | [`en_switchgear`](98_power_plants.md#en_switchgear---switchgear-high-voltage-switch) |
+| `en_gas_engine` | 1 | 140.0 | [`en_four_stroke_cycle`](98_power_plants.md#en_four_stroke_cycle---four-stroke-cycle-otto) |
+| `en_gas_holder` | 1 | 110.0 | [`en_coke_oven`](98_power_plants.md#en_coke_oven---coke-oven-beehive-or-by-product) |
+| `en_gas_producer` | 1 | 130.0 | [`en_coke_oven`](98_power_plants.md#en_coke_oven---coke-oven-beehive-or-by-product) |
+| `en_hot_bulb_engine` | 1 | 120.0 | [`en_hot_bulb_engine`](98_power_plants.md#en_hot_bulb_engine---hot-bulb-engine) |
+| `en_hydraulic_accumulator` | 1 | 100.0 | [`en_hydraulic_accumulator`](98_power_plants.md#en_hydraulic_accumulator---hydraulic-accumulator) |
+| `en_hydraulic_power_main` | 1 | 140.0 | [`en_hydraulic_accumulator`](98_power_plants.md#en_hydraulic_accumulator---hydraulic-accumulator) |
+| `en_insulator` | 1 | 100.0 | [`en_transmission_line`](98_power_plants.md#en_transmission_line---transmission-line-high-voltage-power-cable) |
+| `en_kerosene` | 1 | 80.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
+| `en_lightning_arrester` | 1 | 90.0 | [`en_switchgear`](98_power_plants.md#en_switchgear---switchgear-high-voltage-switch) |
+| `en_load_factor_diversity` | 1 | 120.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
+| `en_lubricating_oil` | 1 | 100.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
+| `en_oil_drilling` | 1 | 130.0 | [`en_oil_drilling`](98_power_plants.md#en_oil_drilling---oil-drilling-and-production) |
+| `en_oil_refining_distillation` | 1 | 140.0 | [`en_oil_drilling`](98_power_plants.md#en_oil_drilling---oil-drilling-and-production) |
+| `en_oil_shale_retorting` | 1 | 130.0 | [`en_oil_drilling`](98_power_plants.md#en_oil_drilling---oil-drilling-and-production) |
+| `en_parallel_motion` | 1 | 100.0 | [`en_parallel_motion`](98_power_plants.md#en_parallel_motion---parallel-motion-linkage-watt) |
+| `en_patent_sail` | 1 | 110.0 | [`en_patent_sail`](98_power_plants.md#en_patent_sail---patent-sail) |
+| `en_petrol` | 1 | 90.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
+| `en_poncelet_wheel` | 1 | 100.0 | [`en_overshot_wheel`](98_power_plants.md#en_overshot_wheel---overshot-water-wheel) |
+| `en_poppet_valve` | 1 | 100.0 | [`en_poppet_valve`](98_power_plants.md#en_poppet_valve---poppet-valve-and-camshaft) |
+| `en_power_factor_correction` | 1 | 120.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
+| `en_pressure_gauge` | 1 | 100.0 | [`en_safety_valve`](98_power_plants.md#en_safety_valve---safety-valve-pop-off) |
+| `en_reduction_gear` | 1 | 120.0 | [`en_parallel_motion`](98_power_plants.md#en_parallel_motion---parallel-motion-linkage-watt) |
+| `en_safety_valve` | 1 | 70.0 | [`en_safety_valve`](98_power_plants.md#en_safety_valve---safety-valve-pop-off) |
+| `en_sleeve_valve` | 1 | 120.0 | [`en_poppet_valve`](98_power_plants.md#en_poppet_valve---poppet-valve-and-camshaft) |
+| `en_spring_sail` | 1 | 100.0 | [`en_patent_sail`](98_power_plants.md#en_patent_sail---patent-sail) |
+| `en_steam_trap` | 1 | 80.0 | [`en_safety_valve`](98_power_plants.md#en_safety_valve---safety-valve-pop-off) |
+| `en_stirling_engine` | 1 | 120.0 | [`en_stirling_engine`](98_power_plants.md#en_stirling_engine---stirling-hot-air-engine) |
+| `en_sun_planet_gear` | 1 | 100.0 | [`en_parallel_motion`](98_power_plants.md#en_parallel_motion---parallel-motion-linkage-watt) |
+| `en_town_gas_retort` | 1 | 140.0 | [`en_coke_oven`](98_power_plants.md#en_coke_oven---coke-oven-beehive-or-by-product) |
+| `en_two_stroke_cycle` | 1 | 90.0 | [`en_four_stroke_cycle`](98_power_plants.md#en_four_stroke_cycle---four-stroke-cycle-otto) |
+| `en_water_wheel_governor` | 1 | 100.0 | [`en_water_wheel_governor`](98_power_plants.md#en_water_wheel_governor---governor-for-water-wheel) |
+| `en_wind_pump` | 1 | 120.0 | [`en_wind_pump`](98_power_plants.md#en_wind_pump---wind-pump) |
+| `en_windmill_fantail` | 1 | 90.0 | [`en_patent_sail`](98_power_plants.md#en_patent_sail---patent-sail) |
+| `en_alternator` | 2 | 130.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
+| `en_battery_nickel_iron` | 2 | 140.0 | [`en_battery_lead_acid`](98_power_plants.md#en_battery_lead_acid---lead-acid-storage-battery) |
+| `en_boiler_babcock` | 2 | 140.0 | [`en_boiler_water_tube`](98_power_plants.md#en_boiler_water_tube---water-tube-boiler) |
+| `en_boiler_stirling` | 2 | 150.0 | [`en_boiler_water_tube`](98_power_plants.md#en_boiler_water_tube---water-tube-boiler) |
+| `en_centrifugal_governor` | 2 | 120.0 | [`en_water_wheel_governor`](98_power_plants.md#en_water_wheel_governor---governor-for-water-wheel) |
+| `en_circuit_breaker` | 2 | 140.0 | [`en_switchgear`](98_power_plants.md#en_switchgear---switchgear-high-voltage-switch) |
+| `en_compound_engine` | 2 | 180.0 | [`en_high_pressure_engine`](98_power_plants.md#en_high_pressure_engine---high-pressure-steam-engine) |
+| `en_corliss_valve` | 2 | 150.0 | [`en_expansive_working`](98_power_plants.md#en_expansive_working---expansive-working-cutoff) |
+| `en_double_acting` | 2 | 160.0 | [`en_atmospheric_engine`](98_power_plants.md#en_atmospheric_engine---atmospheric-engine-newcomen) |
+| `en_dynamo` | 2 | 0.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
+| `en_fourneyron_turbine` | 2 | 200.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
+| `en_francis_turbine` | 2 | 220.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
+| `en_frequency_standardisation` | 2 | 150.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
+| `en_fuel_injection` | 2 | 150.0 | [`en_poppet_valve`](98_power_plants.md#en_poppet_valve---poppet-valve-and-camshaft) |
+| `en_grid_interconnection` | 2 | 180.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
+| `en_high_pressure_engine` | 2 | 180.0 | [`en_high_pressure_engine`](98_power_plants.md#en_high_pressure_engine---high-pressure-steam-engine) |
+| `en_oil_cracking` | 2 | 150.0 | [`en_oil_drilling`](98_power_plants.md#en_oil_drilling---oil-drilling-and-production) |
+| `en_pelton_wheel` | 2 | 180.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
+| `en_rotary_converter` | 2 | 150.0 | [`en_battery_charging`](98_power_plants.md#en_battery_charging---battery-charging-system) |
+| `en_separate_condenser` | 2 | 200.0 | [`en_separate_condenser`](98_power_plants.md#en_separate_condenser---separate-condenser-watt) |
+| `en_steam_turbine_curtis` | 2 | 210.0 | [`en_steam_turbine_impulse`](98_power_plants.md#en_steam_turbine_impulse---impulse-steam-turbine-de-laval) |
+| `en_steam_turbine_impulse` | 2 | 200.0 | [`en_steam_turbine_impulse`](98_power_plants.md#en_steam_turbine_impulse---impulse-steam-turbine-de-laval) |
+| `en_steam_turbine_reaction` | 2 | 230.0 | [`en_steam_turbine_impulse`](98_power_plants.md#en_steam_turbine_impulse---impulse-steam-turbine-de-laval) |
+| `en_substation` | 2 | 150.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
+| `en_supercharger` | 2 | 140.0 | [`en_supercharger`](98_power_plants.md#en_supercharger---supercharger-mechanically-driven) |
+| `en_switchgear` | 2 | 120.0 | [`en_switchgear`](98_power_plants.md#en_switchgear---switchgear-high-voltage-switch) |
+| `en_thermal_station` | 2 | 220.0 | [`en_hydroelectric_station`](98_power_plants.md#en_hydroelectric_station---hydroelectric-power-station) |
+| `en_three_phase_gen` | 2 | 110.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
+| `en_transmission_line` | 2 | 140.0 | [`en_transmission_line`](98_power_plants.md#en_transmission_line---transmission-line-high-voltage-power-cable) |
+| `en_turbine_blading` | 2 | 150.0 | [`en_turbine_blading`](98_power_plants.md#en_turbine_blading---turbine-blade-design-and-profile) |
+| `en_turbine_condenser_vacuum` | 2 | 160.0 | [`en_turbine_blading`](98_power_plants.md#en_turbine_blading---turbine-blade-design-and-profile) |
+| `en_turbocharger` | 2 | 160.0 | [`en_supercharger`](98_power_plants.md#en_supercharger---supercharger-mechanically-driven) |
+| `en_uniflow_engine` | 2 | 160.0 | [`en_high_pressure_engine`](98_power_plants.md#en_high_pressure_engine---high-pressure-steam-engine) |
+| `en_gas_turbine` | 3 | 250.0 | [`en_gas_turbine`](98_power_plants.md#en_gas_turbine---gas-turbine-brayton-cycle) |
+| `en_jet_engine` | 3 | 300.0 | [`en_gas_turbine`](98_power_plants.md#en_gas_turbine---gas-turbine-brayton-cycle) |
+| `en_kaplan_turbine` | 3 | 250.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
+| `en_liquid_propellant` | 3 | 180.0 | [`en_gas_turbine`](98_power_plants.md#en_gas_turbine---gas-turbine-brayton-cycle) |
+| `en_rocket_motor` | 3 | 200.0 | [`en_gas_turbine`](98_power_plants.md#en_gas_turbine---gas-turbine-brayton-cycle) |
+| `en_wind_electric` | 3 | 180.0 | [`en_wind_pump`](98_power_plants.md#en_wind_pump---wind-pump) |
 
 ## Documentation coverage
 
 | status | nodes |
 |---|---:|
-| linked to a specific recipe entry | 96 |
-| linked to a domain module, no specific entry | 2019 |
+| linked to a specific recipe entry | 491 |
+| linked to a domain module, no specific entry | 2006 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
-| **undocumented, a real gap** | **823** |
+| **undocumented, a real gap** | **387** |
 
 The undocumented nodes, listed so the gap is visible rather than hidden:
 
-`ag2_adulteration_law`, `ag2_artificial_insemination`, `ag2_balanced_ration`, `ag2_baler`, `ag2_basic_slag`, `ag2_battery_poultry`, `ag2_biological_control`, `ag2_bone_meal`, `ag2_bordeaux_mixture`, `ag2_botanic_garden`, `ag2_bottling`, `ag2_budding`, `ag2_butter`, `ag2_canning`, `ag2_caterpillar_track`, `ag2_centrifugal_sugar`, `ag2_chaff_cutter`, `ag2_cheese_families`, `ag2_coffee_voyage`, `ag2_cold_store`, `ag2_column_still`, `ag2_combine_harvester`, `ag2_composting`, `ag2_condensed_milk`, `ag2_contour_ploughing`, `ag2_controlled_pollination`, `ag2_coulter`, `ag2_cream_separator`, `ag2_crown_cork`, `ag2_cultivator`, `ag2_ddt`, `ag2_double_seam_can`, `ag2_erosion_control`, `ag2_evaporated_milk`, `ag2_fanning_mill`, `ag2_fat_hydrogenation`, `ag2_fermentation_control`, `ag2_food_laboratory`, `ag2_gasworks_ammonia`, `ag2_grafting`, `ag2_gravity_irrigation`, `ag2_green_manure`, `ag2_guano`, `ag2_harrow`, `ag2_herd_book`, `ag2_hopping`, `ag2_horse_hoe`, `ag2_hybrid_maize`, `ag2_hybridisation`, `ag2_hydrometer`, `ag2_layering`, `ag2_lead_arsenate`, `ag2_lime_sulphur`, `ag2_liming`, `ag2_maize_newworld`, `ag2_malting`, `ag2_marling`, `ag2_mashing`, `ag2_milking_machine`, `ag2_mower`, `ag2_nicotine_pesticide`, `ag2_nitrite_curing`, `ag2_nitrogen_cycle`, `ag2_norfolk_course`, `ag2_oil_pressing`, `ag2_pasteurisation`, `ag2_plant_quarantine`, `ag2_pot_still`, `ag2_potash`, `ag2_potato_lifter`, `ag2_potato_newworld`, `ag2_power_take_off`, `ag2_progeny_testing`, `ag2_pure_line_selection`, `ag2_purifier`, `ag2_pyrethrum`, `ag2_reaper`, `ag2_reaper_binder`, `ag2_record_keeping_breeding`, `ag2_refrigerated_ship`, `ag2_refrigeration_ice`, `ag2_resistant_variety`, `ag2_retort`, `ag2_rhizobia`, `ag2_ridging_plough`, `ag2_roller`, `ag2_roller_mill`, `ag2_root_cutter`, `ag2_rootstocks`, `ag2_seed_certification`, `ag2_seed_drill`, `ag2_seed_trade`, `ag2_sheep_dip`, `ag2_silage_silo`, `ag2_soil_testing`, `ag2_sprayer`, `ag2_subsoiler`, `ag2_sugar_refining`, `ag2_sugar_voyage`, `ag2_superphosphate`, `ag2_tea_voyage`, `ag2_tedder`, `ag2_terracing`, `ag2_three_point_linkage`, `ag2_threshing_machine`, `ag2_tile_drainage`, `ag2_tractor_steam`, `ag2_tuberculin_test`, `ag2_urea`, `ag2_vacuum_pan`, `ag2_veterinary_vaccination`, `ag2_wardian_case`, `ag2_white_flour_loss`, `ag2_winnower`, `ag2_yeast_culture`, `civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `cn_aqueduct`, `cn_arch_bridge_steel`, `cn_arch_dam`, `cn_artificial_stone`, `cn_asphalt_roofing`, `cn_bascule_bridge`, `cn_block_tackle_hoist`, `cn_bolted_connection`, `cn_box_girder`, `cn_cable_anchorage`, `cn_caisson`, `cn_cantilever`, `cn_cast_iron_beam`, `cn_cavity_wall`, `cn_cement_clinker_grinding`, `cn_central_heating`, `cn_cofferdam`, `cn_concrete_mixer`, `cn_crane_derrick`, `cn_crane_tower`, `cn_crane_treadwheel`, `cn_curtain_wall`, `cn_damp_proof_course`, `cn_deformed_rebar`, `cn_dewatering`, `cn_diaphragm_wall`, `cn_drill_blast`, `cn_earth_dam`, `cn_elevator_safety_brake`, `cn_expansion_joint`, `cn_fire_escape`, `cn_flying_buttress`, `cn_forced_ventilation`, `cn_formwork_shuttering`, `cn_gang_saw`, `cn_gravity_dam`, `cn_groin_vault`, `cn_gusset_plate`, `cn_gypsum_plaster`, `cn_insulation`, `cn_iron_column`, `cn_king_post`, `cn_lattice_truss`, `cn_mortar`, `cn_pile_driving`, `cn_plate_girder`, `cn_plate_glass_window`, `cn_plumbing_stack`, `cn_pneumatic_caisson`, `cn_pontoon_bridge`, `cn_portland_cement`, `cn_post_lintel`, `cn_post_tensioning`, `cn_pozzolana_concrete`, `cn_pratt_truss`, `cn_precast_panel`, `cn_prestressed_concrete`, `cn_quarrying_wedge`, `cn_queen_post`, `cn_radiator`, `cn_reinforced_concrete`, `cn_retaining_wall`, `cn_ribbed_vault`, `cn_riveted_connection`, `cn_rolled_I_beam`, `cn_roof_truss_corrugated`, `cn_rotary_cement_kiln`, `cn_sash_window`, `cn_scaffolding`, `cn_screw_pile`, `cn_sewer_system`, `cn_sheet_piling`, `cn_shotcrete`, `cn_siphon`, `cn_slipform`, `cn_soil_compaction`, `cn_space_frame`, `cn_spillway`, `cn_sprinkler`, `cn_steel_frame_skeleton`, `cn_stiffening_truss`, `cn_stone_polish`, `cn_stone_saw`, `cn_suspension_bridge`, `cn_swing_bridge`, `cn_terrazzo`, `cn_timber_truss`, `cn_trapped_drain`, `cn_true_arch`, `cn_trussed_arch`, `cn_tunnel_cut_cover`, `cn_tunnel_lining`, `cn_tunnel_shield`, `cn_underpinning`, `cn_ventilation_shaft`, `cn_vibratory_compaction`, `cn_warren_truss`, `cn_water_main`, `cn_welded_connection`, `cn_wire_cable_spinning`, `cn_wrought_iron_girder`, `en_alternator`, `en_atmospheric_engine`, `en_battery_charging`, `en_battery_lead_acid`, `en_battery_nickel_iron`, `en_boiler_babcock`, `en_boiler_cornish`, `en_boiler_haystack`, `en_boiler_lancashire`, `en_boiler_locomotive`, `en_boiler_stirling`, `en_boiler_wagon`, `en_boiler_water_tube`, `en_breastshot_wheel`, `en_carburetted_engine`, `en_centrifugal_governor`, `en_charcoal_burning`, `en_circuit_breaker`, `en_coal_mining_washing`, `en_coke_oven`, `en_commutator`, `en_compound_engine`, `en_compressed_air_engine`, `en_compression_ignition`, `en_condenser_jet`, `en_condenser_surface`, `en_corliss_valve`, `en_cutoff_valve`, `en_double_acting`, `en_draft_tube`, `en_dynamo`, `en_economiser`, `en_exciter`, `en_expansive_working`, `en_feedwater_heater`, `en_flywheel_storage`, `en_four_stroke_cycle`, `en_fourneyron_turbine`, `en_francis_turbine`, `en_frequency_standardisation`, `en_fuel_injection`, `en_fuel_oil`, `en_fuse`, `en_gas_engine`, `en_gas_holder`, `en_gas_producer`, `en_gas_turbine`, `en_grid_interconnection`, `en_high_pressure_engine`, `en_horse_gin`, `en_hot_bulb_engine`, `en_hydraulic_accumulator`, `en_hydraulic_power_main`, `en_hydroelectric_station`, `en_insulator`, `en_jet_engine`, `en_kaplan_turbine`, `en_kerosene`, `en_lightning_arrester`, `en_liquid_propellant`, `en_load_factor_diversity`, `en_lubricating_oil`, `en_oil_cracking`, `en_oil_drilling`, `en_oil_refining_distillation`, `en_oil_shale_retorting`, `en_overshot_wheel`, `en_parallel_motion`, `en_patent_sail`, `en_peat_fuel`, `en_pelton_wheel`, `en_penstock`, `en_petrol`, `en_poncelet_wheel`, `en_poppet_valve`, `en_post_mill`, `en_power_factor_correction`, `en_pressure_gauge`, `en_pumped_storage`, `en_reduction_gear`, `en_rocket_motor`, `en_rotary_converter`, `en_safety_valve`, `en_separate_condenser`, `en_sleeve_valve`, `en_spring_motor`, `en_spring_sail`, `en_steam_trap`, `en_steam_turbine_curtis`, `en_steam_turbine_impulse`, `en_steam_turbine_reaction`, `en_stirling_engine`, `en_substation`, `en_sun_planet_gear`, `en_supercharger`, `en_superheater`, `en_switchgear`, `en_thermal_station`, `en_three_phase_gen`, `en_tide_mill`, `en_tower_mill`, `en_town_gas_retort`, `en_transformer`, `en_transmission_line`, `en_treadwheel`, `en_turbine_blading`, `en_turbine_condenser_vacuum`, `en_turbocharger`, `en_two_stroke_cycle`, `en_undershot_wheel`, `en_uniflow_engine`, `en_water_wheel_governor`, `en_wind_electric`, `en_wind_pump`, `en_windmill_fantail`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `if_acoustic_horn_recording`, `if_adding_machine`, `if_amplitude_modulation`, `if_antenna_dipole`, `if_autochrome_plate`, `if_bookbinding_case`, `if_cable_repeater`, `if_calotype`, `if_camera_lucida`, `if_camera_obscura_lens`, `if_carbon_microphone`, `if_carbon_paper`, `if_card_sorter`, `if_cash_register`, `if_cathode_ray_tube`, `if_celluloid_roll_film`, `if_chase_and_forme`, `if_chromolithography`, `if_cine_camera`, `if_coherer`, `if_composing_stick`, `if_comptometer`, `if_continuous_wave_transmitter`, `if_crystal_detector`, `if_cylinder_press`, `if_daguerreotype`, `if_dewey_classification`, `if_disc_cutting_lathe`, `if_disc_record`, `if_dry_gelatin_plate`, `if_electric_telegraph`, `if_electrotype`, `if_facsimile_transmission`, `if_film_projector`, `if_flash_powder`, `if_flashbulb`, `if_focal_plane_shutter`, `if_fountain_pen`, `if_frequency_modulation`, `if_gramophone_motor`, `if_halftone_screen`, `if_hollerith_tabulator`, `if_iconoscope`, `if_index_card_system`, `if_intermittent_film_movement`, `if_iron_gall_ink`, `if_iron_hand_press`, `if_jacquard_chain`, `if_keypunch`, `if_leaf_shutter`, `if_linotype_machine`, `if_lithography`, `if_loading_coil`, `if_magnetic_tape`, `if_mimeograph`, `if_morse_key_and_sounder`, `if_movable_type`, `if_moving_coil_loudspeaker`, `if_offset_lithography`, `if_panchromatic_emulsion`, `if_papyrus`, `if_parchment`, `if_pencil_graphite`, `if_phonautograph`, `if_photoengraving`, `if_printing_ink`, `if_punch_and_matrix`, `if_punched_card`, `if_quill`, `if_radar`, `if_radio_direction_finding`, `if_rag_paper`, `if_recording_bias`, `if_rotary_press`, `if_screw_press`, `if_shift_key_mechanism`, `if_silver_halide_sensitivity`, `if_slide_rule`, `if_spark_transmitter`, `if_steel_pen_nib`, `if_stencil_duplicator`, `if_stereotype`, `if_strowger_exchange`, `if_submarine_cable_gutta_percha`, `if_superheterodyne_receiver`, `if_telegraph_relay`, `if_telephone_exchange`, `if_telephone_receiver`, `if_telephone_transmitter`, `if_television_mechanical`, `if_tin_foil_phonograph`, `if_triode_oscillator`, `if_tuned_circuit`, `if_type_metal_alloy`, `if_type_mould`, `if_typewriter`, `if_video_scanning_standard`, `if_wax_cylinder`, `if_wet_collodion_plate`, `if_woodblock_printing`, `in2_analytical_balance`, `in2_aneroid_capsule`, `in2_balance_spring_watch`, `in2_bourdon_pressure_gauge`, `in2_gas_thermometry_absolute`, `in2_mcleod_vacuum_gauge`, `in2_mercury_barometer`, `in2_microbalance_quartz`, `in2_optical_comparator`, `in2_orifice_flow_meter`, `in2_pitot_tube`, `in2_quartz_resonator_frequency`, `in2_resistance_thermometer_RTD`, `in2_thermocouple`, `in2_torsion_balance`, `in2_travelling_microscope`, `in2_tuning_fork_oscillator`, `in2_venturi_flow_meter`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statics`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`, `tl_ackermann_steering`, `tl_air_filter`, `tl_anti_siphon_valve`, `tl_articulated_trailer`, `tl_automatic_transmission`, `tl_ball_bearing`, `tl_brake_shoe`, `tl_caliper_brake`, `tl_cam_follower`, `tl_cambered_drainage`, `tl_carbide_lamp`, `tl_carburettor`, `tl_caterpillar_track`, `tl_chain_drive`, `tl_coil_ignition`, `tl_coil_spring`, `tl_concrete_roadway`, `tl_cone_clutch`, `tl_connecting_rod`, `tl_cooling_fan`, `tl_dead_axle`, `tl_derailleur`, `tl_differential`, `tl_disc_brake`, `tl_distributor`, `tl_drum_brake`, `tl_dynamo`, `tl_electric_starter`, `tl_electric_tram`, `tl_elliptic_spring`, `tl_engine_block`, `tl_epicyclic_gearbox`, `tl_exhaust_valve`, `tl_fan_belt`, `tl_fifth_wheel`, `tl_freewheel`, `tl_friction_damper`, `tl_fuel_pump`, `tl_grease_cup`, `tl_half_track`, `tl_handbrake`, `tl_headlamp`, `tl_horse_collar`, `tl_horse_tram`, `tl_horseshoe`, `tl_hub_gear`, `tl_hydraulic_brake_line`, `tl_hydraulic_shock`, `tl_ignition_timing`, `tl_indicator`, `tl_inner_tube`, `tl_intake_valve`, `tl_iron_tyre`, `tl_kerbing`, `tl_kingpin`, `tl_leaf_spring`, `tl_level_crossing`, `tl_live_axle`, `tl_macadam_road`, `tl_magneto_ignition`, `tl_motor_dc`, `tl_motor_lorry`, `tl_motorcycle`, `tl_muffler`, `tl_oil_bath`, `tl_oil_pump`, `tl_omnibus`, `tl_penny_farthing`, `tl_piston_assembly`, `tl_plain_bearing`, `tl_plate_clutch`, `tl_pneumatic_tyre`, `tl_pressure_relief_valve`, `tl_propshaft`, `tl_radiator`, `tl_road_roller`, `tl_roller_bearing`, `tl_safety_bicycle`, `tl_shrink_fit`, `tl_sliding_gearbox`, `tl_snow_plough`, `tl_solid_rubber_tyre`, `tl_spark_plug`, `tl_spoked_wheel`, `tl_steam_tram`, `tl_stirrup`, `tl_storage_battery`, `tl_synchromesh`, `tl_tandem_harness`, `tl_taper_roller_bearing`, `tl_tarmacadam`, `tl_thermostat`, `tl_throttle`, `tl_tractor`, `tl_transmission_lubrication`, `tl_trolleybus`, `tl_tyre_bead`, `tl_tyre_tread`, `tl_universal_joint`, `tl_velocipede`, `tl_vulcanized_rubber`, `tl_water_pump`, `tl_whippletree`, `tl_windscreen_wiper`, `tl_wire_rope_brake`, `tl_wire_spoke_wheel`, `tr_articulated_locomotive`, `tr_automatic_train_stop`, `tr_axle_bearing_box`, `tr_ballast_tank`, `tr_bilge_pump`, `tr_blastpipe`, `tr_block_signalling`, `tr_block_tackle`, `tr_bogie_truck`, `tr_bowsprit`, `tr_brake_shoe`, `tr_bullhead_rail`, `tr_canal_lift`, `tr_canal_lock`, `tr_capstan`, `tr_carvel_planking`, `tr_catenary_overhead`, `tr_caulking_oakum`, `tr_chain_cable`, `tr_chair_key`, `tr_clinker_planking`, `tr_compound_expansion`, `tr_copper_sheathing`, `tr_diesel_electric`, `tr_double_bottom`, `tr_dredger`, `tr_dry_dock`, `tr_edge_rail`, `tr_electric_locomotive`, `tr_fishplate`, `tr_flanged_wheel`, `tr_flatbottom_rail`, `tr_fore_aft_rig`, `tr_fore_and_aft_rigging`, `tr_frame_first_construction`, `tr_grade_crossing`, `tr_gyrocompass_repeater`, `tr_hopper_wagon`, `tr_hull_sheathing_wood`, `tr_injector_feedwater`, `tr_interlocking_signal`, `tr_iron_hull`, `tr_jib`, `tr_keelson`, `tr_knuckle_coupler`, `tr_lateen_sail`, `tr_leading_truck`, `tr_lifeboat`, `tr_lighthouse_fresnel`, `tr_locomotive_boiler`, `tr_log_sounding`, `tr_marine_chronometer`, `tr_marine_diesel`, `tr_marine_engine`, `tr_marine_turbine`, `tr_marshalling_hump`, `tr_mast_stepping`, `tr_paddle_wheel`, `tr_pantograph`, `tr_periscope`, `tr_piston_valve`, `tr_points_frog`, `tr_rail_gauge_standardization`, `tr_rail_rolling`, `tr_rail_welding`, `tr_reduction_gearing`, `tr_reefing`, `tr_refrigerated_wagon`, `tr_rigging_block_lashing`, `tr_riveted_plating`, `tr_screw_coupling`, `tr_screw_propeller`, `tr_semaphore_signal`, `tr_sextant_navigation`, `tr_ship_telegraph`, `tr_sleeper_ballast`, `tr_sleeping_car`, `tr_slide_valve`, `tr_slipway_launch`, `tr_smoke_box`, `tr_sprung_buffer`, `tr_square_rig`, `tr_staysail`, `tr_steel_hull`, `tr_stephenson_linkmotion`, `tr_stern_tube`, `tr_sternpost_rudder`, `tr_stockless_anchor`, `tr_submarine_hull`, `tr_superheater`, `tr_tank_wagon`, `tr_third_rail`, `tr_track_circuit`, `tr_triple_expansion`, `tr_tug`, `tr_turntable`, `tr_vacuum_brake`, `tr_variable_pitch_propeller`, `tr_walschaerts_valve`, `tr_water_tube_boiler`, `tr_watertight_bulkhead`, `tr_welded_hull`, `tr_westinghouse_brake`, `tr_windlass`, `tr_wooden_waggonway`
+`ag2_adulteration_law`, `ag2_artificial_insemination`, `ag2_balanced_ration`, `ag2_baler`, `ag2_basic_slag`, `ag2_battery_poultry`, `ag2_biological_control`, `ag2_bone_meal`, `ag2_bordeaux_mixture`, `ag2_botanic_garden`, `ag2_bottling`, `ag2_budding`, `ag2_butter`, `ag2_canning`, `ag2_caterpillar_track`, `ag2_centrifugal_sugar`, `ag2_chaff_cutter`, `ag2_cheese_families`, `ag2_coffee_voyage`, `ag2_cold_store`, `ag2_column_still`, `ag2_combine_harvester`, `ag2_composting`, `ag2_condensed_milk`, `ag2_contour_ploughing`, `ag2_controlled_pollination`, `ag2_coulter`, `ag2_cream_separator`, `ag2_crown_cork`, `ag2_cultivator`, `ag2_ddt`, `ag2_double_seam_can`, `ag2_erosion_control`, `ag2_evaporated_milk`, `ag2_fanning_mill`, `ag2_fat_hydrogenation`, `ag2_fermentation_control`, `ag2_food_laboratory`, `ag2_gasworks_ammonia`, `ag2_grafting`, `ag2_gravity_irrigation`, `ag2_green_manure`, `ag2_guano`, `ag2_harrow`, `ag2_herd_book`, `ag2_hopping`, `ag2_horse_hoe`, `ag2_hybrid_maize`, `ag2_hybridisation`, `ag2_hydrometer`, `ag2_layering`, `ag2_lead_arsenate`, `ag2_lime_sulphur`, `ag2_liming`, `ag2_maize_newworld`, `ag2_malting`, `ag2_marling`, `ag2_mashing`, `ag2_milking_machine`, `ag2_mower`, `ag2_nicotine_pesticide`, `ag2_nitrite_curing`, `ag2_nitrogen_cycle`, `ag2_norfolk_course`, `ag2_oil_pressing`, `ag2_pasteurisation`, `ag2_plant_quarantine`, `ag2_pot_still`, `ag2_potash`, `ag2_potato_lifter`, `ag2_potato_newworld`, `ag2_power_take_off`, `ag2_progeny_testing`, `ag2_pure_line_selection`, `ag2_purifier`, `ag2_pyrethrum`, `ag2_reaper`, `ag2_reaper_binder`, `ag2_record_keeping_breeding`, `ag2_refrigerated_ship`, `ag2_refrigeration_ice`, `ag2_resistant_variety`, `ag2_retort`, `ag2_rhizobia`, `ag2_ridging_plough`, `ag2_roller`, `ag2_roller_mill`, `ag2_root_cutter`, `ag2_rootstocks`, `ag2_seed_certification`, `ag2_seed_drill`, `ag2_seed_trade`, `ag2_sheep_dip`, `ag2_silage_silo`, `ag2_soil_testing`, `ag2_sprayer`, `ag2_subsoiler`, `ag2_sugar_refining`, `ag2_sugar_voyage`, `ag2_superphosphate`, `ag2_tea_voyage`, `ag2_tedder`, `ag2_terracing`, `ag2_three_point_linkage`, `ag2_threshing_machine`, `ag2_tile_drainage`, `ag2_tractor_steam`, `ag2_tuberculin_test`, `ag2_urea`, `ag2_vacuum_pan`, `ag2_veterinary_vaccination`, `ag2_wardian_case`, `ag2_white_flour_loss`, `ag2_winnower`, `ag2_yeast_culture`, `civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `gp_carbon_brushes`, `gp_controlled_atmosphere_chamber`, `gp_czochralski_puller`, `gp_exhaust_pinchoff`, `gp_getter`, `gp_glass_metal_seal`, `gp_laminated_core`, `gp_magnet_wire_enamelled`, `gp_whisker_forming`, `if_acoustic_horn_recording`, `if_adding_machine`, `if_amplitude_modulation`, `if_antenna_dipole`, `if_autochrome_plate`, `if_bookbinding_case`, `if_cable_repeater`, `if_calotype`, `if_camera_lucida`, `if_carbon_microphone`, `if_carbon_paper`, `if_card_sorter`, `if_cash_register`, `if_cathode_ray_tube`, `if_celluloid_roll_film`, `if_chase_and_forme`, `if_chromolithography`, `if_cine_camera`, `if_coherer`, `if_composing_stick`, `if_comptometer`, `if_continuous_wave_transmitter`, `if_crystal_detector`, `if_dewey_classification`, `if_disc_cutting_lathe`, `if_disc_record`, `if_dry_gelatin_plate`, `if_facsimile_transmission`, `if_film_projector`, `if_flash_powder`, `if_flashbulb`, `if_focal_plane_shutter`, `if_frequency_modulation`, `if_gramophone_motor`, `if_halftone_screen`, `if_hollerith_tabulator`, `if_iconoscope`, `if_index_card_system`, `if_iron_gall_ink`, `if_iron_hand_press`, `if_jacquard_chain`, `if_keypunch`, `if_leaf_shutter`, `if_loading_coil`, `if_magnetic_tape`, `if_mimeograph`, `if_morse_key_and_sounder`, `if_movable_type`, `if_moving_coil_loudspeaker`, `if_panchromatic_emulsion`, `if_papyrus`, `if_parchment`, `if_pencil_graphite`, `if_phonautograph`, `if_photoengraving`, `if_punch_and_matrix`, `if_punched_card`, `if_quill`, `if_radio_direction_finding`, `if_rag_paper`, `if_recording_bias`, `if_screw_press`, `if_shift_key_mechanism`, `if_silver_halide_sensitivity`, `if_slide_rule`, `if_spark_transmitter`, `if_steel_pen_nib`, `if_stencil_duplicator`, `if_strowger_exchange`, `if_submarine_cable_gutta_percha`, `if_superheterodyne_receiver`, `if_telegraph_relay`, `if_telephone_exchange`, `if_telephone_receiver`, `if_telephone_transmitter`, `if_television_mechanical`, `if_tin_foil_phonograph`, `if_triode_oscillator`, `if_tuned_circuit`, `if_type_mould`, `if_video_scanning_standard`, `if_wax_cylinder`, `if_woodblock_printing`, `in2_analytical_balance`, `in2_aneroid_capsule`, `in2_balance_spring_watch`, `in2_bourdon_pressure_gauge`, `in2_gas_thermometry_absolute`, `in2_mcleod_vacuum_gauge`, `in2_mercury_barometer`, `in2_microbalance_quartz`, `in2_optical_comparator`, `in2_orifice_flow_meter`, `in2_pitot_tube`, `in2_quartz_resonator_frequency`, `in2_resistance_thermometer_RTD`, `in2_thermocouple`, `in2_torsion_balance`, `in2_travelling_microscope`, `in2_tuning_fork_oscillator`, `in2_venturi_flow_meter`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`
 
