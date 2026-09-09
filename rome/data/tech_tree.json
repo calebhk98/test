@@ -23,7 +23,8 @@
    "sch": "minimum trained natural philosophers required on staff to attempt",
    "art": "minimum trained technical artisans required on staff to attempt",
    "conf": "A well attested, B probable, C author's estimate",
-   "note": "commentary, warnings, and reasoning for the numbers"
+   "note": "commentary, warnings, and reasoning for the numbers",
+   "bounty_rule": "A node can be bought as a public prize instead of built, if tier <= 2 AND cat is one of glass_optics, metallurgy, precision, power, agriculture, information, instruments. The test is whether a Roman artisan could recognise success without understanding the theory. Price is c. 2.5x honest cost, saves 65% of founder hours, consumes no supervision slot. See 04_ECONOMICS.md section 7."
   },
   "cost_disclaimer": "Every ph/lab/cap figure is a [C] estimate unless the note says otherwise. They are calibrated so that the SHAPE of the tree is right: which items are cheap, which are slow, which are gated on people rather than money. Do not read three significant figures into any of them.",
   "version": "1.0"
@@ -1648,7 +1649,7 @@
     "furnaceman": 1200
    },
    "mat": {
-    "cinnabar_kg": 3000
+    "cinnabar_kg": 400
    },
    "cap": 2500,
    "up": 1800,
@@ -1660,7 +1661,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Almaden is an imperial monopoly, so this is a political node before it is a technical one. Mercury gives you barometers, the Sprengel pump, mirrors and the first hard vacuum humans have ever had."
+   "note": "Almaden is an imperial monopoly, so this is a political node before it is a technical one. Mercury gives you barometers, the Sprengel pump, mirrors and the first hard vacuum humans have ever had. Quantity sized for programme needs, not for trade: 400 kg of cinnabar yields roughly 300 kg of mercury, which is ample for barometers, thermometers, Sprengel pumps and a mirror works. Cinnabar is priced from Pliny NH 33.118."
   },
   {
    "id": "high_temp_furnace",
@@ -2914,7 +2915,7 @@
    "sch": 3,
    "art": 150,
    "conf": "B",
-   "note": "Rome's road network is already excellent, so the marginal gain is smaller than it was in Britain, but bulk freight overland at a fortieth of the cost changes what can be built inland. Politically superb: it is unambiguously an imperial instrument. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down."
+   "note": "Rome's road network is already excellent, so the marginal gain is smaller than it was in Britain, but bulk freight overland at a fortieth of the cost changes what can be built inland. Politically superb: it is unambiguously an imperial instrument. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. The 400 tonnes of rail steel is a demonstration line of roughly 4 km at about 100 kg per metre of track, not a network. A network is a further order of magnitude and is why the calendar floor here is a generation."
   },
   {
    "id": "electrostatics",

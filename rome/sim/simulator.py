@@ -828,12 +828,61 @@ def cmd_sensitivity(a):
               (k, r, m or "never", ("%d yr" % delay) if m else "n/a", verdict))
 
 
+def cmd_why(a):
+    """Explain one node: what it needs, what needs it, and what it costs."""
+    tree, prices, nodes, wages, goods = load()
+    k = a.node
+    if k not in nodes:
+        near = [x for x in nodes if a.node.lower() in x.lower()]
+        raise SystemExit("unknown node. did you mean: %s" % (", ".join(near[:8]) or "no idea"))
+    n = nodes[k]
+    print("%s  [tier %d, %s, confidence %s]" % (n["name"], n["tier"], n["cat"], n["conf"]))
+    print("=" * 78)
+    print(n["note"])
+    print()
+    print("Recipe          : rome/knowledge/%s" % n["kb"])
+    print("Your hours      : %s   (%.1f%% of a 72,000-hour life)" % (f"{n['ph']:,}", 100.0 * n["ph"] / 72000))
+    print("Hired labour    : %s" % (", ".join("%s %s h" % (t, f"{h:,}") for t, h in n["lab"].items()) or "none"))
+    print("Materials       : %s" % (", ".join("%s %s" % (m, f"{q:,}") for m, q in n["mat"].items()) or "none"))
+    print("Cost            : %s den labour + %s materials + %s capital = %s TOTAL"
+          % (f"{n['_labour_cost']:,.0f}", f"{n['_material_cost']:,.0f}",
+             f"{n['cap']:,}", f"{n['_total_cost']:,.0f}"))
+    print("Upkeep          : %s den/yr        Revenue: %s den/yr" % (f"{n['up']:,}", f"{n['rev']:,}"))
+    print("Calendar floor  : %.1f years (money cannot buy this down)" % n["yrs"])
+    print("Failure risk    : %.0f%% per attempt" % (100 * n["risk"]))
+    print("Staff needed    : %d trained scholars, %d trained artisans" % (n["sch"], n["art"]))
+    print("Suspicion       : %+d       State interest: %+d" % (n["sus"], n["gov"]))
+    eligible = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
+                "power", "agriculture", "information", "instruments"))
+    print("Bounty          : %s" % ("YES, can be bought as a public prize for about %s den"
+                                    % f"{n['_total_cost'] * 2.5:,.0f}" if eligible else
+                                    "no, a Roman artisan could not recognise success"))
+    print()
+    print("DIRECT PREREQUISITES")
+    for p_ in n["pre"] or ["(none, you can start this on arrival)"]:
+        print("   %s" % (("%-30s %s" % (p_, nodes[p_]["name"])) if p_ in nodes else p_))
+    need = closure(nodes, k) - {k}
+    print("\nFULL CHAIN BEHIND IT: %d nodes, %s of your hours, %s denarii, %.0f-year serial floor"
+          % (len(need), f"{sum(nodes[x]['ph'] for x in need):,}",
+             f"{sum(nodes[x]['_total_cost'] for x in need):,.0f}", critical_path(nodes, k)[0]))
+    print("   " + ", ".join(topo_order(nodes, need)))
+    unlocks = [m for m in nodes if k in nodes[m]["pre"]]
+    print("\nDIRECTLY UNLOCKS")
+    for u in unlocks or ["(nothing, this is a leaf)"]:
+        print("   %s" % (("%-30s %s" % (u, nodes[u]["name"])) if u in nodes else u))
+    blocks = {m for m in nodes if k in closure(nodes, m)} - {k}
+    print("\nTOTAL DOWNSTREAM: %d nodes depend on this, directly or indirectly." % len(blocks))
+    if "point_contact_transistor" in blocks:
+        print("   INCLUDING THE GOAL. This node is on the critical path.")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("validate")
     q = sub.add_parser("path"); q.add_argument("goal", nargs="?")
     q = sub.add_parser("costs"); q.add_argument("--top", type=int, default=20)
+    q = sub.add_parser("why"); q.add_argument("node")
     for name in ("run", "compare"):
         q = sub.add_parser(name)
         q.add_argument("--strategy", default="recommended")
@@ -853,7 +902,7 @@ def main():
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
     a = p.parse_args()
-    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs,
+    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs, "why": cmd_why,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play,
             "sensitivity": cmd_sensitivity}[a.cmd](a)
 

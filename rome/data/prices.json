@@ -142,9 +142,9 @@
       "conf": "A"
     },
     "mercury_kg": {
-      "p": 25.0,
-      "conf": "C",
-      "note": "imperial monopoly at Almaden; price is a guess and access is political"
+      "p": 60.0,
+      "conf": "B",
+      "note": "Anchored to Pliny NH 33.118, which reports the price of minium (cinnabar pigment) fixed by law at 70 sesterces per Roman pound of 324 g, i.e. c. 54 den/kg. Metallic mercury should be comparable or dearer. Almaden is an imperial monopoly, so access is a political problem before it is a price problem."
     },
     "sulfur_kg": {
       "p": 0.5,
@@ -171,8 +171,9 @@
       "conf": "C"
     },
     "calamine_kg": {
-      "p": 0.5,
-      "conf": "C"
+      "p": 0.15,
+      "conf": "C",
+      "note": "ore at the mine, not contained metal; previously overpriced at 0.50"
     },
     "galena_kg": {
       "p": 0.25,
@@ -271,13 +272,14 @@
       "conf": "C"
     },
     "copper_ore_kg": {
-      "p": 0.3,
-      "conf": "C"
+      "p": 0.15,
+      "conf": "C",
+      "note": "ore at the mine at c. 3-8% Cu"
     },
     "cinnabar_kg": {
-      "p": 3.0,
-      "conf": "C",
-      "note": "imperial monopoly, Almaden"
+      "p": 54.0,
+      "conf": "B",
+      "note": "Pliny NH 33.118: minium price-fixed at 70 HS per Roman pound."
     },
     "bauxite_kg": {
       "p": 0.08,
@@ -384,9 +386,9 @@
       "conf": "C"
     },
     "germanium_g": {
-      "p": 250.0,
+      "p": 40.0,
       "conf": "C",
-      "note": "your own cost of production, not a market price"
+      "note": "INTERNAL TRANSFER PRICE ONLY, to keep downstream nodes from looking free. The real cost of germanium is the extraction and purification plant, which is already costed in germanium_extraction, gecl4_purification and ge_reduction. Do not add these together and call it the cost of germanium."
     },
     "phosphor_bronze_g": {
       "p": 0.02,
