@@ -3,6 +3,23 @@
 Playing blind: agent CLI only, fog of war on. Not reading any source/data files, only
 what the running process tells me.
 
+## TL;DR verdict (written after finishing the run)
+Got all the way to the game's actual end (year 600, `ended: true`). Built 148 things,
+almost all of them in the first 135 years, then spent the remaining 365 years frozen
+in an unrecoverable debt spiral that a mid-run plague/crisis cascade tipped me into
+and that the game had no mechanism to resolve one way or the other (no bankruptcy, no
+forced sale, no succession) — it just let me sit there until the clock ran out. That
+outcome is itself a legitimate and pretty compelling emergent story (a promising
+start, a real "empire in crisis" collapse triggered by the Antonine plague hitting
+four times in five years, technologies genuinely lost to a sacked site, reputation
+draining to zero) — but I don't think it was a *choice* so much as a hole I fell into
+without visibility into how close to the edge I was, and then found no ladder out of.
+The single biggest thing I'd change: some way to see "you are overextended" before it
+happens, and some way to actively de-risk (shed upkeep, restructure debt) after it
+does, rather than the only lever being "start more things and hope." Second biggest:
+the save/reload bug below, which broke the game's own headline "stop and resume
+anytime" pitch every time I tried it. Full notes and blow-by-blow below.
+
 ## Setup notes (infra, not gameplay)
 - The game speaks line-delimited JSON on stdin/stdout and explicitly documents that
   you don't need to keep a process open — pass `--session FILE` and it reloads/saves
@@ -134,6 +151,124 @@ workflow and it is broken:
   a cash crunch. A running total that can dip below the "committed" line, or a
   distinct "uncommitted cash" vs "total wealth" figure, would remove a lot of the
   guessing I did here.
+
+## The tree is mostly flat, not a chain — a few "hub" nodes matter a lot
+- `downstream_count` is 0 for the overwhelming majority of things I checked via `why`
+  (straightedge, decimal point, type metal, world_map's 14 aside), even ones that
+  sound foundational. But three early social/institutional items had enormous
+  numbers: `units_standards` 1683, `identity_cover` 2151, `patron_local` 1984, and
+  later `workshop_first` (a lab/workshop building, gated behind `patron_local`) 1968.
+  So the "tech tree" isn't really a deep dependency chain for most of its ~2000+
+  entries — it looks more like a huge flat catalogue that fog-of-war keeps hidden
+  until a handful of specific narrative/institutional gates get built. Once you find
+  those gates (which `available`'s flat list gives you no way to distinguish from
+  the hundreds of trivial buttons/threads around them — you only find out by calling
+  `why` on a guess), the tree opens up wholesale rather than branch by branch. Given
+  fog of war explicitly won't show a tech tree or `path`, spotting these gate nodes
+  amid ~300+ starting options felt like guesswork rather than a legible decision.
+
+## A real fog-of-war inconsistency
+- `state.knowledge_risk.better_hedge_available` names `"corpus_dispersed"` as a
+  mitigation I don't have, as a direct hint from the game itself. But
+  `{"cmd":"why","id":"corpus_dispersed"}` replies `"you have never heard of that."`
+  So the game volunteers the id of a thing it then claims I don't know exists. Under
+  fog of war that hint shouldn't leak the id at all, or `why` should honour ids the
+  game itself has surfaced to me.
+
+## The debt spiral (years ~166-235) — the best and worst part of the run so far
+- I automated picking a handful of cheap projects per round and stepping 8-10 years
+  at a time (a script driving the same JSON interface, not reading any files). This
+  snowballed upkeep (workshop_first alone is 900/yr, plus hotel/coffeehouse/identity
+  cover/patron each adding their own) faster than revenue grew, and then the
+  Antonine plague hit not once but FOUR times in the years 176-180 (staff -28% each
+  time — compounding, so effectively devastating), on top of ongoing patron deaths,
+  fires, and banditry events. Consequences, in the game's own words:
+  - year 186: "ABANDONED 22 works you could no longer maintain; they have fallen
+    into disrepair" — and `done_count` genuinely dropped, from 181 to 159. Completed
+    work can be lost after the fact, not just active projects.
+  - year 187: "IN ARREARS for 12 years: staff are leaving because you cannot pay
+    them"
+  - capital went from +26k (peak, year ~156) to -7390 by year 190.
+  This is genuinely good, dramatic design — a plague-driven fiscal collapse that
+  claws back progress you thought was banked, with flavour text that lands hard. I
+  did not expect a management sim about Roman technology transfer to produce a real
+  "oh no" moment, but it did.
+- The bad part: recovery from this had no real signal or lever. `capital` stayed
+  negative from year 182 (-3330) through at least year 235 (-2228), a 53-year debt
+  that the game let me sit in indefinitely — `ended` stayed `false` the whole time,
+  `done_count` stayed frozen at 159 for 53 years (years 182-235, no new completions)
+  while reputation quietly drained from 17 down to ~5. There is no way to shed
+  upkeep on things you already built (no "demolish"/"lay off staff" command — `stop`
+  only applies to `active` in-progress projects, and I had none active), so once
+  you've over-built, the recurring cost is permanent and the only lever is starting
+  MORE revenue-generating projects on top of a deficit, which the game does let you
+  do — capital being negative never blocked `start`. That both makes sense (you'd
+  raise a loan) and feels risky: nothing warns you that you're compounding a debt
+  you may not claw back from, and there's no visible interest rate or "this is how
+  bad it can get" signal, just the raw capital number drifting down a little further
+  each turn. I'd have liked either a visible warning threshold, or a way to shed
+  upkeep (mothball a building) once you realize you've overextended.
+- Also noticed during this stretch: `slaves` and `freedmen` moved (10→8→2→0 slaves,
+  20→22→28→30 freedmen) entirely on their own — I never issued another `buy` after
+  the original 2-slaves-then-manumit test near year 116. So there's a background
+  slaves→freedmen manumission drift over time (plausible and rather nice, actually —
+  reads as ordinary Roman manumission-after-years-of-service), but also the *count*
+  of slaves I held had jumped to 10 by year 190 despite my only ever explicitly
+  buying 2 (and freeing those same 2 at year ~116). So some completed projects must
+  silently acquire slave labour as part of their `hired_labour` cost without saying
+  so anywhere in the `why` breakdown I read beforehand (which just showed labour
+  categories like "labourer"/"carpenter" with no indication some of that labour is
+  enslaved). That's a big thing to leave implicit given the game's own stated
+  reason for including slavery at all ("a model that hides it lies about the cost
+  of everything") — but then the UI is exactly the place it goes unstated: nothing
+  in `why` flagged that hiring labourers for workshop_first, say, would actually
+  mean buying people.
+
+## The rest of the run: an unrecoverable spiral, all the way to the horizon
+- Tried to dig out around year 270-280 by starting two more revenue businesses
+  (`fin_inn`, `fin_postal_service`). Both completed — and the very next event was
+  "ABANDONED 2 works you could no longer maintain," and `revenue`/`net_per_year`
+  came out of that step reading EXACTLY the same as before (1023.0 / -1978.4, to one
+  decimal place) despite two new businesses finishing. That's either a very cruel
+  coincidence (new revenue exactly offset by something else lost) or the completions
+  and abandonments are landing in the same step and cancelling out in the reported
+  numbers — either way, from the player's seat it reads as "nothing you do here
+  matters any more," which turned out to be true.
+- From there I just let the clock run (stepped by 10s, then jumped 290 years in one
+  call) to see whether the run had a bottom or a bankruptcy/game-over state. It does
+  not, at least not on a debt axis: capital went -14k (280) → -52.7k (310) → -181.8k
+  (600), reputation flat-lined at 0.0, and `done_count` never moved again after 148
+  (set at year 235) for the ENTIRE remaining 365 years of the run. The world kept
+  generating flavour events the whole time (patron dying and needing to be re-courted
+  roughly every 15-20 years, the odd fire/banditry) right up to year 598, so the
+  simulation clearly kept simulating — it just had nothing left for me to do or gain
+  from, and no mechanism ever forced a resolution (a bankruptcy, a forced sale, the
+  founder finally dying and an heir taking over with a fresh balance sheet, anything).
+  Turn 600 arrived and the game ended itself with `"ended": true, "end_reason": "ran
+  out of horizon (600 AD) without reaching the goal"`. After that, `start` and `step`
+  both correctly refuse with a clear message pointing at `state` for the final
+  position — that part is clean.
+- `founder_alive` was still `True` at year 600 — the same single named "you" the
+  game opens by saying "you are one person," 500 years and presumably several
+  human lifetimes later. Whatever aging/succession the game may intend, I never saw
+  it: no death from old age, no heir, no handoff. Given how central "you are one
+  mortal person, this is what one lifetime of hours buys" is to the pitch, this
+  felt like the biggest realism gap in the whole run — more than the plagues or the
+  debt, which both felt true to the period.
+- Final state, game over, year 600: capital -181804.2, revenue 1650.0, net_per_year
+  -1389.0, reputation 0.0, done_count 148 (of the 300+ real options that were ever
+  on offer, to say nothing of the thousands more fog-of-war implied), scholars 1,
+  artisans presumably similarly threadbare, founder still alive. A civilization of
+  one, bankrupt and irrelevant, that nonetheless never got told to stop.
+
+## How far I got
+Year 600 (the actual end of the game — `ended: true`), having built 148 things,
+most of them in the first ~135 years (100-235). The back three-quarters of the
+timeline (235-600, 365 years) were pure stagnation inside a debt spiral I never
+found a way out of. In terms of "the state of what you have built" (the game's own
+victory condition framing), I ended with essentially nothing standing — reputation
+0, revenue barely covering a fraction of upkeep, everything of note either
+abandoned or sacked.
 
 ## Turn 1 (year 100)
 - `state`: capital 400.0, revenue 0, living_cost 216/yr, net -216/yr, founder_hours 2400,

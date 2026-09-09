@@ -4,6 +4,51 @@ Playing "Rome 100ad" simulator, fog of war on. Rules I'm following: only look at
 what the running game tells me, never read the repo source/docs. Session file:
 rome/playtest/naive/rome_100ad_A.json
 
+## What actually happened, in order
+
+- Year 100: started with 400 capital, -216/yr living cost — less than 2
+  years of runway doing *nothing*. Started `units_standards` (444 cost, 0.5
+  yr floor) even though I was 44 short, and the game let me — money is
+  clearly not checked strictly against the full project cost up front.
+- Year 101 (after `step years:1`): the step auto-granted 139 technologies at
+  once — all the free "ROME ALREADY HAS THIS" items from `available`
+  (coined money, contract law, the arch, aqueducts, bronze, wool, dozens
+  more) — as `done_granted` rather than `done_earned`. Revenue jumped from
+  0 to 666.7 purely from this baseline package. I hadn't done anything to
+  cause this beyond stepping time once; it seems to be a one-time "Rome's
+  starting economy switches on" event.
+- Year 102-103: `units_standards` completed. Revenue climbed to 1000, then
+  capital (which had read exactly 0.0 for two straight yearly snapshots
+  despite different, once-positive `net_after_project_spend` values) jumped
+  to 700. See the "confusing numbers" note below.
+- Year 104-106: banked capital, then built `fin_pawnshop` (1025 cost, 0.3 yr
+  floor, revenue 300/upkeep 50). Reputation jumped 5.0 -> 6.9 on completion.
+- Year 108-111: built `identity_cover` (1580, the Alexandrian
+  physician-philosopher cover) and `scientific_method` (200, 2 yr, 20%
+  fail risk, needed identity_cover as a prerequisite) — scientific_method
+  succeeded despite the risk. `why` on these showed staggering
+  `downstream_count`: identity_cover 2151, scientific_method 1082,
+  patron_local (done next) 1984. These three "foundation/social" moves
+  gate a huge fraction of the whole tree.
+- Year 111-115: built `patron_local` (secure a town patron, 1200, halves
+  incoming suspicion) and `fin_trading_post` (1662.5, revenue 300/upkeep
+  100). Reputation climbed steadily to 9.1.
+- Year 115: experimented with the economy commands. `buy forest` at n=50
+  and n=10 both failed ("cannot afford", even though 10ha should have cost
+  2500 and I had 1587 — consistent, not a bug); n=1 succeeded and cost 250
+  denarii for that one hectare (first time the currency is named —
+  everywhere else it's just "capital"). Bought 2 slaves for 625.5 denarii
+  total; `scandal` immediately went from 0 to 1.06 — the only stat that
+  moved from the purchase. Manumitted both immediately: reputation ticked
+  up 9.1 -> 9.9, `freedmen` went 0 -> 2, but **scandal stayed at 1.06** —
+  freeing them did not erase the moral cost of having bought them, which
+  feels like a genuinely well-considered piece of modeling rather than an
+  oversight. Headcount-wise, freedmen contributed the same to the
+  `artisans` labour total as slaves had (3.45 either way); the help text's
+  claim that freed people "work better" isn't visible in that raw number,
+  so either it's a hidden multiplier elsewhere or it doesn't actually show
+  up in aggregate labour count.
+
 ## Session log
 
 ### Start

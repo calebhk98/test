@@ -948,8 +948,17 @@ class Sim:
             "loss_chance_if_a_site_is_sacked": round(chance, 2),
             "fraction_lost_when_it_happens": round(frac, 2),
             "expected_technologies_lost_per_sacking": round(at_risk * chance * frac, 1),
-            "hedged_by": hedge,
-            "better_hedge_available": None if hedge == "corpus_dispersed" else "corpus_dispersed",
+            # Under fog, do not name a node the player has not discovered. A
+            # tester was told in `state` that corpus_dispersed would hedge them,
+            # asked `why` about it, and was told they had never heard of it.
+            # Both replies came from the same program in the same second.
+            "hedged_by": hedge if (not getattr(self, "fog", False)
+                                   or self.is_visible(hedge or "")) else "nothing yet",
+            "better_hedge_available": (
+                None if hedge == "corpus_dispersed" else
+                ("corpus_dispersed" if not getattr(self, "fog", False)
+                 else "there is said to be a way to guard against this; "
+                      "you have not found it yet")),
             "known_hazards_ahead": upcoming,
         }
 
@@ -2583,6 +2592,13 @@ def _agent_available(s, nodes):
         if not s.can_start(k):
             continue
         n = nodes[k]
+        # Anything the society is about to be handed for nothing is not a
+        # decision. Before the first step these sat in `available` alongside
+        # real choices, and a tester reported the list as 300 entries of which
+        # most were background facts. They are granted in step() 4a anyway.
+        if n["tier"] == 0 and n["ph"] == 0 and n["_total_cost"] <= 1 \
+                and not s._is_foreign_institution(k):
+            continue
         if getattr(s, "fog", False):
             # One sentence, the price, and how long. No prerequisites, because
             # you already have them, and above all no hint of what it leads to.
@@ -2908,6 +2924,17 @@ def load_state(s, path):
         if f not in blob:
             continue
         v = blob[f]
+        # NEVER restore a null over a live default. A field that had not been
+        # initialised yet when the game was saved, spend_last_year and
+        # insolvent_years among them, was written as null and then loaded back
+        # OVER the number the constructor had just set, so the next `state`
+        # died on round(None). A naive tester hit this on the very first
+        # save-and-restart, which is the exact workflow the welcome text tells
+        # players is safe, and went back to holding a process open through a
+        # FIFO instead. My own round-trip tests missed it because I happened to
+        # step the clock first, which initialises those fields.
+        if v is None:
+            continue
         if isinstance(v, dict) and "__set__" in v:
             v = set(v["__set__"])
         setattr(s, f, v)
