@@ -77,6 +77,60 @@
       "day_hs": 11.0,
       "conf": "C",
       "note": "does not exist yet; you must create this trade"
+    },
+    "mason": {
+      "rate": 0.16,
+      "day_hs": 4.0,
+      "conf": "C",
+      "note": "Rome has these in abundance and they are good."
+    },
+    "millwright": {
+      "rate": 0.25,
+      "day_hs": 6.3,
+      "conf": "C",
+      "note": "Water-mill builder. Rome has them; they are the scarcest useful trade you can hire."
+    },
+    "plumber": {
+      "rate": 0.18,
+      "day_hs": 4.5,
+      "conf": "C",
+      "note": "Lead worker. Roman plumbarii are skilled and numerous."
+    },
+    "merchant": {
+      "rate": 0.25,
+      "day_hs": 6.3,
+      "conf": "C",
+      "note": "Agent and factor, paid on commission in practice."
+    },
+    "sailor": {
+      "rate": 0.1,
+      "day_hs": 2.5,
+      "conf": "C",
+      "note": "Cheap and abundant."
+    },
+    "engraver": {
+      "rate": 0.3,
+      "day_hs": 7.5,
+      "conf": "C",
+      "note": "Die and seal cutter. Rome has excellent ones; they become your punchcutters."
+    },
+    "optician": {
+      "rate": 0.35,
+      "day_hs": 8.8,
+      "conf": "C",
+      "note": "DOES NOT EXIST YET. You must create this trade from glassworkers."
+    },
+    "engineer": {
+      "rate": 0.5,
+      "day_hs": 12.5,
+      "conf": "C",
+      "note": "DOES NOT EXIST as a paid civilian profession. Rome has military and hydraulic engineers under state employ; a private one is your invention."
+    },
+    "electrician": {
+      "rate": 0.4,
+      "day_hs": 10.0,
+      "conf": "C",
+      "note": "DOES NOT EXIST. Cannot exist until Module 50 does."
     }
   },
   "purchase_prices_denarii": {
@@ -440,6 +494,389 @@
     "leather_kg": {
       "p": 2.2,
       "conf": "C"
+    },
+    "cast_iron_kg": {
+      "p": 0.45,
+      "conf": "C",
+      "note": "Cheaper per kilogramme than wrought bar because it comes straight from the furnace without the finery. Brittle: useless in tension."
+    },
+    "tool_steel_kg": {
+      "p": 12.0,
+      "conf": "C"
+    },
+    "aluminium_kg": {
+      "p": 6.0,
+      "conf": "C",
+      "note": "Post-electrolysis price. BEFORE the electrical age aluminium is a precious metal worth roughly 2,000 den/kg, dearer than silver, and Napoleon III served guests on it. The price collapse when Hall-Heroult arrives is one of the largest in the history of materials."
+    },
+    "chromium_kg": {
+      "p": 60.0,
+      "conf": "C"
+    },
+    "selenium_kg": {
+      "p": 90.0,
+      "conf": "C"
+    },
+    "bismuth_kg": {
+      "p": 30.0,
+      "conf": "C"
+    },
+    "molybdenum_kg": {
+      "p": 150.0,
+      "conf": "C"
+    },
+    "copper_wire_kg": {
+      "p": 6.0,
+      "conf": "C"
+    },
+    "limestone_kg": {
+      "p": 0.01,
+      "conf": "C"
+    },
+    "stone_kg": {
+      "p": 0.008,
+      "conf": "C"
+    },
+    "dolomite_kg": {
+      "p": 0.02,
+      "conf": "C"
+    },
+    "kieselguhr_kg": {
+      "p": 0.6,
+      "conf": "C"
+    },
+    "stone_broken_tons": {
+      "p": 8.0,
+      "conf": "C"
+    },
+    "stone_blocks": {
+      "p": 5.0,
+      "conf": "C"
+    },
+    "bone_kg": {
+      "p": 0.05,
+      "conf": "C"
+    },
+    "wood_kg": {
+      "p": 0.008,
+      "conf": "C"
+    },
+    "ceramic_kg": {
+      "p": 0.3,
+      "conf": "C"
+    },
+    "porcelain_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "coal_tar_kg": {
+      "p": 0.15,
+      "conf": "C"
+    },
+    "ethanol_kg": {
+      "p": 2.5,
+      "conf": "C"
+    },
+    "dye_kg": {
+      "p": 25.0,
+      "conf": "C"
+    },
+    "potassium_iodide_kg": {
+      "p": 40.0,
+      "conf": "C"
+    },
+    "acetylene_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "calcium_carbide_kg": {
+      "p": 1.5,
+      "conf": "C"
+    },
+    "nitroglycerin_kg": {
+      "p": 15.0,
+      "conf": "C"
+    },
+    "paint_kg": {
+      "p": 2.0,
+      "conf": "C"
+    },
+    "flux_kg": {
+      "p": 0.5,
+      "conf": "C"
+    },
+    "ink_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "pine_oil_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "paper_kg": {
+      "p": 1.2,
+      "conf": "C",
+      "note": "Your own production cost once the mill runs. Compare papyrus at roughly 10x per unit area and parchment at far more."
+    },
+    "soap_kg": {
+      "p": 1.5,
+      "conf": "C"
+    },
+    "essential_oil_kg": {
+      "p": 120.0,
+      "conf": "C",
+      "note": "Blended average. Attar of roses is worth many times this and is one of the highest-margin products available to you in year two."
+    },
+    "celluloid_kg": {
+      "p": 20.0,
+      "conf": "C"
+    },
+    "canvas_kg": {
+      "p": 2.5,
+      "conf": "C"
+    },
+    "cloth_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "fat_kg": {
+      "p": 0.25,
+      "conf": "C"
+    },
+    "milk_kg": {
+      "p": 0.08,
+      "conf": "C"
+    },
+    "lodestone_kg": {
+      "p": 5.0,
+      "conf": "C"
+    },
+    "diamond_g": {
+      "p": 40.0,
+      "conf": "C"
+    },
+    "water_kg": {
+      "p": 0.0,
+      "conf": "C",
+      "note": "Free at the aqueduct, which is a genuine Roman advantage. Priced at zero so that recipes can state their water honestly without distorting cost."
+    },
+    "rubber_kg": {
+      "p": 99999.0,
+      "conf": "A",
+      "note": "UNOBTAINABLE, priced at an absurd number deliberately so that any recipe depending on it shows up instantly as impossible. Natural rubber is American. There is no route. Use mat_synthetic_rubber, which sits behind a full petrochemical industry, or accept leather, shellac, oiled linen and bitumen and be honest about how much worse they are."
+    },
+    "thread_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "wool_kg": {
+      "p": 2.0,
+      "conf": "C",
+      "note": "Greasy fleece to scoured. Rome's largest textile input by far."
+    },
+    "cotton_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "oak_bark_kg": {
+      "p": 0.06,
+      "conf": "C"
+    },
+    "hemp_fiber_kg": {
+      "p": 1.2,
+      "conf": "C"
+    },
+    "horsehair_kg": {
+      "p": 2.5,
+      "conf": "C"
+    },
+    "bristles_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "fabric_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "cloth_bag_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "wick_cotton_m": {
+      "p": 0.02,
+      "conf": "C"
+    },
+    "wood_pulp_kg": {
+      "p": 0.35,
+      "conf": "C"
+    },
+    "rose_petals_kg": {
+      "p": 0.6,
+      "conf": "C",
+      "note": "About 3,000 kg of petals yields roughly 1 kg of attar, which is why attar is worth more than silver by weight and is one of the best products you can make in year two."
+    },
+    "chalk_kg": {
+      "p": 0.02,
+      "conf": "C"
+    },
+    "mineral_pigment_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "acetic_acid_kg": {
+      "p": 2.0,
+      "conf": "C"
+    },
+    "ammonia_kg": {
+      "p": 2.5,
+      "conf": "C"
+    },
+    "nitrocellulose_kg": {
+      "p": 8.0,
+      "conf": "C"
+    },
+    "phosphorus_red_kg": {
+      "p": 50.0,
+      "conf": "C",
+      "note": "Red allotrope. The white form is what caused phosphorus necrosis of the jaw in match workers, a genuine industrial atrocity you know how to avoid."
+    },
+    "chrome_salts_kg": {
+      "p": 45.0,
+      "conf": "C"
+    },
+    "petroleum_refined_kg": {
+      "p": 1.0,
+      "conf": "C"
+    },
+    "wire_drawn_kg": {
+      "p": 6.0,
+      "conf": "C"
+    },
+    "plaster_kg": {
+      "p": 0.05,
+      "conf": "C"
+    },
+    "gelatin_kg": {
+      "p": 6.0,
+      "conf": "C"
+    },
+    "felt_kg": {
+      "p": 2.5,
+      "conf": "C"
+    },
+    "cork_kg": {
+      "p": 1.5,
+      "conf": "C"
+    },
+    "rosin_kg": {
+      "p": 1.2,
+      "conf": "C"
+    },
+    "sand_kg": {
+      "p": 0.005,
+      "conf": "C"
+    },
+    "gravel_kg": {
+      "p": 0.004,
+      "conf": "C"
+    },
+    "mortar_kg": {
+      "p": 0.03,
+      "conf": "C"
+    },
+    "glue_kg": {
+      "p": 2.0,
+      "conf": "C"
+    },
+    "varnish_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "wax_kg": {
+      "p": 1.5,
+      "conf": "C"
+    },
+    "cordage_kg": {
+      "p": 1.5,
+      "conf": "C"
+    },
+    "twine_kg": {
+      "p": 1.5,
+      "conf": "C"
+    },
+    "sailcloth_kg": {
+      "p": 2.5,
+      "conf": "C"
+    },
+    "vellum_kg": {
+      "p": 8.0,
+      "conf": "C"
+    },
+    "agar_kg": {
+      "p": 25.0,
+      "conf": "C"
+    },
+    "aluminum_oxide_kg": {
+      "p": 2.0,
+      "conf": "C"
+    },
+    "ammonium_nitrate_kg": {
+      "p": 3.0,
+      "conf": "C"
+    },
+    "aniline_kg": {
+      "p": 12.0,
+      "conf": "C"
+    },
+    "bleach_kg": {
+      "p": 1.0,
+      "conf": "C"
+    },
+    "bone_ash_kg": {
+      "p": 0.4,
+      "conf": "C"
+    },
+    "concrete_reinforced_kg": {
+      "p": 0.15,
+      "conf": "C"
+    },
+    "cotton_fabric_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "formaldehyde_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "oil_mineral_kg": {
+      "p": 1.2,
+      "conf": "C"
+    },
+    "salicylic_acid_kg": {
+      "p": 18.0,
+      "conf": "C"
+    },
+    "sodium_citrate_kg": {
+      "p": 10.0,
+      "conf": "C"
+    },
+    "steam_kg": {
+      "p": 0.002,
+      "conf": "C"
+    },
+    "stone_tons": {
+      "p": 8.0,
+      "conf": "C"
+    },
+    "rubber_tubing_kg": {
+      "p": 99999.0,
+      "conf": "C",
+      "note": "UNOBTAINABLE, see rubber_kg. Substitute: lead pipe, glass tube with ground joints, or oiled leather."
+    },
+    "monochromatic_light_kg": {
+      "p": 0.0,
+      "conf": "C",
+      "note": "Not a material. A sodium flame costs nothing; priced at zero so recipes can name it honestly."
     }
   },
   "transport_multipliers": {

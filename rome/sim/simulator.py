@@ -19,6 +19,7 @@ No third-party dependencies. Python 3.8+.
 """
 
 import argparse, json, math, os, random, sys
+sys.setrecursionlimit(20000)
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -82,21 +83,26 @@ def closure(nodes, goal):
 
 
 def critical_path(nodes, goal):
-    """Longest chain by minimum calendar years + director-hours-at-one-director."""
-    memo = {}
-    def f(k):
-        if k in memo:
-            return memo[k]
+    """Longest chain by minimum calendar years plus director-hours at one director.
+
+    Iterative, over a topological order. The recursive version blew the stack once
+    the tree passed a thousand nodes, which is a fair warning that this is no
+    longer a toy graph.
+    """
+    need = closure(nodes, goal)
+    order = topo_order(nodes, need)
+    best = {}
+    chain = {}
+    for k in order:
         n = nodes[k]
         own = max(n["yrs"], n["ph"] / 2400.0)
-        best, chain = 0.0, []
+        pb, pc = 0.0, []
         for p in n["pre"]:
-            d, c = f(p)
-            if d > best:
-                best, chain = d, c
-        memo[k] = (best + own, chain + [k])
-        return memo[k]
-    return f(goal)
+            if p in best and best[p] > pb:
+                pb, pc = best[p], chain[p]
+        best[k] = pb + own
+        chain[k] = pc + [k]
+    return best[goal], chain[goal]
 
 
 # ----------------------------------------------------------------------------
@@ -104,6 +110,13 @@ def critical_path(nodes, goal):
 # ----------------------------------------------------------------------------
 
 DEFAULTS = dict(
+    # IMMORTALITY IS THE DEFAULT. The point of this simulator is to test the TREE,
+    # and a mortality lottery that ends one run in five drowns the signal from the
+    # technology in noise about how long one man happened to live. Turn death back
+    # on with --mortal when you want to study succession instead of engineering.
+    immortal=True,
+    founder_life_mean=28.0,
+    founder_life_sd=8.0,
     start_year=100,
     start_capital=10320,        # scholar_modest kit, 3 kg of gold at 3,440 den/kg
     founder_arrival_age=35,
@@ -164,7 +177,13 @@ class Sim:
         self.bountied = set()
         self.total_spend = 0.0
         # founder remaining lifespan, elite male already aged 35
-        self.life_left = max(5, rng.gauss(28, 8))
+        self.life_left = (1e9 if self.cfg["immortal"]
+                          else max(5, rng.gauss(self.cfg["founder_life_mean"],
+                                                self.cfg["founder_life_sd"])))
+        # REPUTATION: your ability to be believed and followed. Distinct from money
+        # and from political protection. A man with a great reputation gets his
+        # ideas adopted; a man without one gets them ignored however right he is.
+        self.reputation = 5.0
 
     # -- helpers ------------------------------------------------------------
     def has(self, k):
@@ -208,7 +227,8 @@ class Sim:
         if self.has("railway"):            ar += 95; sc += 8
         if self.has("power_grid"):         sc += 45; ar += 130; di += 6.0
         # you cannot keep staff you cannot pay
-        income = self.revenue() + max(0.0, self.capital) * 0.12
+        # a famous school attracts students and patrons it did not have to pay for
+        income = (self.revenue() + max(0.0, self.capital) * 0.12) * self.rep_factor()
         afford = income / 900.0        # c. 900 den/yr all-in for one trained person
         scale = max(0.10, min(1.0, afford / max(1.0, sc + ar)))
         return base_sc + sc * scale, base_ar + ar * scale, di * min(1.0, scale * 1.3)
@@ -221,6 +241,10 @@ class Sim:
         if self.has("academy_network"):   cap *= 2.5
         if self.has("interchangeable_parts"): cap *= 1.5
         return cap
+
+    def rep_factor(self):
+        """How much easier reputation makes everything. 1.0 at zero reputation."""
+        return 1.0 + self.reputation / 120.0
 
     def economy_index(self):
         """Diffused technology enriches the whole Empire, not only your workshop.
@@ -240,7 +264,7 @@ class Sim:
     def state_funding(self):
         if not self.has("patron_imperial"):
             return 0.0
-        return 2500.0 * self.economy * (1.0 + max(0.0, self.gov) / 25.0)
+        return 2500.0 * self.economy * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor()
 
     def revenue(self):
         r = 0.0
@@ -292,6 +316,11 @@ class Sim:
     def can_start(self, k):
         n = self.nodes[k]
         if k in self.done or k in self.active:
+            return False
+        # Tier 9 is UNOBTAINABLE by construction: rubber, quinine, New World crops.
+        # An earlier version cheerfully queued "potato" and let it occupy a project
+        # slot for four centuries, which quietly strangled the whole run.
+        if n["tier"] == 9 or n["cat"] == "unobtainable":
             return False
         if not all(p in self.done for p in n["pre"]):
             return False
@@ -347,10 +376,24 @@ class Sim:
             if self.dead_reason:
                 return
 
-        # 4. start new projects, cheapest-first among the strategy order
+        # 4a. Anything Rome ALREADY HAS costs nothing and takes nobody's attention.
+        #     Grant it the moment its prerequisites are met instead of making it
+        #     queue behind real work.
+        for k in self.order:
+            n = self.nodes[k]
+            if (n["tier"] == 0 and n["ph"] == 0 and n["_total_cost"] <= 1
+                    and k not in self.done and k not in self.active
+                    and all(p in self.done for p in n["pre"])):
+                self.done.add(k)
+                self.done_year[k] = self.year
+
+        # 4b. start new projects
         pool = self.director_pool()
         hired_left = self.hired_cap()
-        max_active = int(2 + self.director_pool() / 2400.0)
+        # More directors means more things in hand at once, and a big trained staff
+        # lets routine work proceed without the founder watching it.
+        max_active = int(2 + self.director_pool() / 2400.0
+                         + self.scholars / 12.0 + self.artisans / 25.0)
         for k in self.order:
             if len(self.active) - len(self.bountied & set(self.active)) >= max_active:
                 break
@@ -395,10 +438,14 @@ class Sim:
                 self.capital -= money
                 self.total_spend += money
                 st["spent"] += money
-                if st["ph_left"] <= 0 and st["yrs"] >= n["yrs"]:
+                floor = n["yrs"]
+                if n["yrs"] >= 5:   # diffusion-limited nodes, not physical curing
+                    floor = max(2.0, n["yrs"] / (1.0 + self.reputation / 90.0))
+                if st["ph_left"] <= 0 and st["yrs"] >= floor:
                     self._complete(k)
 
-        # 6. suspicion
+        # 6. reputation decays if you stop delivering; suspicion decays anyway
+        self.reputation *= 0.97
         self.suspicion *= (1 - c["suspicion_decay"])
         # Protection is multiplicative and it is the whole reason to spend years
         # courting people instead of building things. An unprotected philosopher
@@ -411,6 +458,7 @@ class Sim:
         if self.has("patron_imperial"):    mult *= 0.55
         if self.has("sanitation_antisepsis"): mult *= 0.85   # a famous healer is forgiven much
         if self.has("endowment_land"):     mult *= 0.90      # conspicuous public benefaction
+        mult *= max(0.35, 1.0 - self.reputation / 220.0)      # a famous man is harder to accuse
         self.suspicion_mult = mult
         self.suspicion = max(0.0, self.suspicion)
         if self.events and self.suspicion > c["suspicion_danger"]:
@@ -459,6 +507,11 @@ class Sim:
         self.bountied.discard(k)
         self.done.add(k)
         self.done_year[k] = self.year
+        # Visible, useful, State-approved work builds standing. Obscure laboratory
+        # work does not, however important it is, which is a real and annoying fact
+        # about how credibility actually accrues.
+        gain = 0.6 + 0.5 * max(0, n["gov"]) + (1.2 if n["rev"] > 0 else 0.0) + 0.25 * n["tier"]
+        self.reputation = min(100.0, self.reputation + gain)
         self.suspicion += (n["sus"] + 3 * max(0, -n["gov"])) * self.suspicion_mult
         self.gov += n["gov"]
         if k == "freedman_staff":     self.artisans += 8
@@ -560,7 +613,15 @@ def load_strategy(name, nodes, goal):
     if os.path.exists(path):
         s = json.load(open(path))
         order = [k for k in s["order"] if k in nodes]
-        rest = [k for k in topo_order(nodes) if k not in order]
+        # Everything the strategy did not name gets a sensible default ordering:
+        # things the goal needs first, then by tier, then cheapest first. Falling
+        # back to alphabetical order made the simulation spend a century acquiring
+        # ox carts before it touched a furnace.
+        need = closure(nodes, "point_contact_transistor")
+        rest = [k for k in nodes if k not in order]
+        rest.sort(key=lambda k: (k not in need, nodes[k]["tier"],
+                                 nodes[k]["_total_cost"], k))
+        rest = topo_stable(nodes, rest)
         return s.get("label", name), order + rest, set(s.get("bounties", []))
     if name == "topo":
         need = closure(nodes, goal)
@@ -684,6 +745,8 @@ def _summarise(results, label):
         print("year reached        : best %d | p25 %d | median %d | p75 %d | worst %d"
               % (ys[0], q(.25), q(.5), q(.75), ys[-1]))
         print("elapsed from 100 AD : median %d years" % (q(.5) - 100))
+    rep = sorted(r.reputation for r in results)
+    print("final reputation    : median %.0f/100" % rep[len(rep) // 2])
     b = [r.bounties_paid for r in results]
     if any(b):
         print("bounties posted     : mean %.1f per run" % (sum(b) / len(b)))
@@ -716,6 +779,7 @@ def cmd_run(a):
     for i in range(a.mc):
         rng = random.Random(a.seed + i)
         s = Sim(nodes, order, rng, events=not a.no_events,
+                cfg={"immortal": not a.mortal},
                 bounty_set=(set() if a.no_bounties else bounties)).run(goal, a.horizon)
         res.append(s)
     _summarise(res, "%s%s" % (label, "  [events disabled]" if a.no_events else ""))
@@ -735,6 +799,7 @@ def cmd_compare(a):
         except SystemExit:
             continue
         res = [Sim(nodes, order, random.Random(a.seed + i), events=True,
+                   cfg={"immortal": not getattr(a, "mortal", False)},
                    bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
         _summarise(res, label)
@@ -750,8 +815,9 @@ def cmd_play(a):
           "Type a node id to begin work on it, 'a' for what is available,\n"
           "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
     while s.year < 100 + (a.horizon or 400) and not s.dead_reason and not s.goal_year:
-        cmd = input("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | susp %.0f] > "
-                    % (s.year, s.capital, s.director_pool(), s.scholars, s.artisans, s.suspicion)).strip()
+        cmd = input("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f | susp %.0f] > "
+                    % (s.year, s.capital, s.director_pool(), s.scholars, s.artisans,
+                       s.reputation, s.suspicion)).strip()
         if cmd == "q": break
         if cmd == "n":
             before = set(s.done); s.step()
@@ -904,6 +970,7 @@ def cmd_sweep(a):
         "capital":  ("start_capital", [2000, 5000, 10320, 25000, 50000, 200000, 1000000]),
         "lifespan": ("founder_life",  [10, 15, 20, 28, 35, 45, 60]),
         "hours":    ("founder_hours_per_year", [1200, 1800, 2400, 3000, 3600]),
+        "mortality":("founder_life_mean", [10, 15, 20, 28, 40, 60]),
     }
     key, values = sweeps[a.axis]
     print("sweeping %s under strategy '%s', %d runs per point\n" % (a.axis, a.strategy, a.mc))
@@ -911,7 +978,9 @@ def cmd_sweep(a):
     print("-" * 78)
     for v in values:
         cfg, life = {}, None
-        if key == "founder_life":
+        if key == "founder_life_mean":
+            cfg = {"immortal": False, "founder_life_mean": v, "founder_life_sd": 4.0}
+        elif key == "founder_life":
             life = v
         else:
             cfg[key] = v
@@ -945,7 +1014,7 @@ def main():
     q = sub.add_parser("costs"); q.add_argument("--top", type=int, default=20)
     q = sub.add_parser("why"); q.add_argument("node")
     q = sub.add_parser("sweep")
-    q.add_argument("axis", choices=["capital", "lifespan", "hours"])
+    q.add_argument("axis", choices=["capital", "lifespan", "hours", "mortality"])
     q.add_argument("--strategy", default="recommended")
     q.add_argument("--mc", type=int, default=200)
     q.add_argument("--seed", type=int, default=1)
@@ -958,6 +1027,9 @@ def main():
         q.add_argument("--horizon", type=int, default=500)
         q.add_argument("--no-events", action="store_true")
         q.add_argument("--no-bounties", action="store_true")
+        q.add_argument("--mortal", action="store_true",
+                       help="turn the founder's mortality back on (default: immortal, "
+                            "so the run measures the TREE and not a lifespan lottery)")
         q.add_argument("--trace", action="store_true")
     q = sub.add_parser("sensitivity")
     q.add_argument("--strategy", default="recommended")

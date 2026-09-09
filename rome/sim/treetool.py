@@ -1,0 +1,511 @@
+#!/usr/bin/env python3
+"""Tech-tree merge and PER-TECHNOLOGY audit.
+
+The point of this file is the `judge` command.
+
+The first version of this project graded itself on ONE number: what year the
+simulation reached a transistor. That is the wrong test. A tree can produce a
+plausible-looking end date while being wrong about almost every node in it.
+The right test is whether each technology, taken ON ITS OWN, is honestly
+specified: does it declare the capabilities it actually needs, is its cost
+proportionate, could someone holding only its prerequisites really build it.
+
+`judge` scores every node in isolation and reports the defects by name.
+
+    python3 rome/sim/treetool.py merge          # branches -> tech_tree.json
+    python3 rome/sim/treetool.py judge          # score every node, summary
+    python3 rome/sim/treetool.py judge --full   # every defect, node by node
+    python3 rome/sim/treetool.py judge --id X   # one node's report card
+    python3 rome/sim/treetool.py judge --grade D  # only nodes at or below D
+"""
+import argparse, json, os, re, sys, collections, statistics
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+DATA = os.path.join(ROOT, "data")
+BR   = os.path.join(DATA, "branches")
+TREE = os.path.join(DATA, "tech_tree.json")
+
+def load_trades():
+    """Read the trade list from prices.json rather than hardcoding it, so adding
+    a trade to the price file is enough to make it usable."""
+    p = json.load(open(os.path.join(DATA, "prices.json")))
+    return set(k for k in p["wage_rates_denarii_per_hour"] if not k.startswith("_"))
+
+REQUIRED = ["id","name","tier","cat","pre","ph","lab","mat","cap","up","yrs",
+            "risk","sus","gov","rev","sch","art","conf","note"]
+
+# ---------------------------------------------------------------- MERGE
+def load_aliases():
+    f = os.path.join(BR, "ALIASES.json")
+    if not os.path.exists(f):
+        return {}, set()
+    a = json.load(open(f))
+    return a.get("alias", {}), set(a.get("drop", []))
+
+
+def load_prices():
+    p = json.load(open(os.path.join(DATA, "prices.json")))
+    return set(k for k in p["purchase_prices_denarii"] if not k.startswith("_"))
+
+
+def cmd_merge(a):
+    goods = load_prices()
+    TRADES = load_trades()
+    alias, dropset = load_aliases()
+    base = json.load(open(TREE))
+    nodes = {n["id"]: n for n in base["nodes"]}
+    for n in nodes.values():
+        n.setdefault("_src", "core")
+    errs, warns, added = [], [], 0
+
+    for fn in sorted(os.listdir(BR)):
+        if not fn.endswith(".json") or fn == "ALIASES.json":
+            continue
+        try:
+            batch = json.load(open(os.path.join(BR, fn)))
+        except Exception as e:
+            errs.append("%s: unparseable JSON: %s" % (fn, e))
+            continue
+        if not isinstance(batch, list):
+            errs.append("%s: top level is not a list" % fn)
+            continue
+        for n in batch:
+            missing = [k for k in REQUIRED if k not in n]
+            if missing:
+                errs.append("%s: %s missing fields %s" % (fn, n.get("id", "?"), missing))
+                continue
+            if n["id"] in nodes:
+                warns.append("%s: duplicate id %s, keeping the first" % (fn, n["id"]))
+                continue
+            # resolve trade aliases rather than silently dropping the labour,
+            # which would make the technology look cheaper than it is
+            lab = {}
+            for t, h in n["lab"].items():
+                t2 = alias.get(t, t)
+                if t2 in TRADES:
+                    lab[t2] = lab.get(t2, 0) + h
+                else:
+                    warns.append("%s: %s unknown trade '%s', dropped" % (fn, n["id"], t))
+            n["lab"] = lab
+            mm = {}
+            for m, q in n["mat"].items():
+                m2 = alias.get(m, m)
+                if m2 not in goods:
+                    # generic fallbacks for the shapes authors actually write:
+                    # "mat_beeswax" -> "beeswax_kg", "plaster" -> "plaster_kg"
+                    for cand in (m2[4:] + "_kg" if m2.startswith("mat_") else None,
+                                 m2 + "_kg", m2.replace("mat_", "")):
+                        if cand and cand in goods:
+                            m2 = cand
+                            break
+                if m2 in dropset or m in dropset:
+                    warns.append("%s: %s '%s' is a technology not a material, dropped" % (fn, n["id"], m))
+                    continue
+                if m2 in goods:
+                    mm[m2] = mm.get(m2, 0) + q
+                else:
+                    warns.append("%s: %s UNPRICED material '%s', dropped" % (fn, n["id"], m))
+            n["mat"] = mm
+            n.setdefault("kb", "")
+            n["_src"] = fn
+            nodes[n["id"]] = n
+            added += 1
+
+    # resolve prerequisites
+    dangling = collections.Counter()
+    for n in nodes.values():
+        keep = []
+        for p in n["pre"]:
+            if p in nodes:
+                keep.append(p)
+            else:
+                dangling[p] += 1
+                warns.append("%s: dropped unresolvable prereq '%s'" % (n["id"], p))
+        n["pre"] = keep
+
+    # break any cycles by dropping the back edge, reporting each one
+    order, state = [], {}
+    def dfs(i, stack):
+        if state.get(i) == 2:
+            return
+        if state.get(i) == 1:
+            back = stack[-1]
+            nodes[back]["pre"] = [p for p in nodes[back]["pre"] if p != i]
+            errs.append("CYCLE broken: removed %s -> %s" % (back, i))
+            return
+        state[i] = 1
+        for p in list(nodes[i]["pre"]):
+            dfs(p, stack + [i])
+        state[i] = 2
+        order.append(i)
+    for i in list(nodes):
+        dfs(i, [])
+
+    base["nodes"] = [nodes[i] for i in sorted(nodes)]
+    base["meta"]["goal_node"] = "point_contact_transistor"
+    json.dump(base, open(TREE, "w"), indent=1)
+
+    print("merged  : %d nodes (%d added from branches)" % (len(nodes), added))
+    print("errors  : %d" % len(errs))
+    for e in errs[:40]:
+        print("   " + e)
+    print("warnings: %d" % len(warns))
+    for w in warns[:25]:
+        print("   " + w)
+    if len(warns) > 25:
+        print("   ... %d more" % (len(warns) - 25))
+    if dangling:
+        print("\nmost-wanted unresolved prereq ids (candidates for new nodes):")
+        for k, v in dangling.most_common(20):
+            print("   %-40s wanted by %d nodes" % (k, v))
+    return 0
+
+
+# ---------------------------------------------------------------- JUDGE
+CAP_PREFIX = "cap_"
+
+# Categories that are IDEAS, not artefacts. A theorem needs no furnace, and an
+# earlier version of this audit cheerfully demanded a vacuum rung for Boolean
+# algebra because the word "vacuum tube" appeared in its note. Keyword matching
+# on prose is a blunt instrument and this is the guard rail.
+ABSTRACT_CATS = {"mathematics","physics","theory","knowledge","social","institution",
+                 "foundation","capability","unobtainable","information","method","logic",
+                 "computing_theory","organization","organisation"}
+
+# Deliberately narrow. A word that merely MENTIONS a capability is not evidence
+# that the technology needs it; only words naming the physical operation count.
+HEAT_WORDS = ("furnace","kiln","smelt","forge","calcin","roast","anneal","sinter",
+              "crucible","blast furnace","retort","molten","tempering","quench")
+TOL_WORDS  = ("tolerance","machined","bored","lathe","gauge block","ball bearing",
+              "lead screw","piston","cylinder bore","micrometer","ground surface","lapped")
+VAC_WORDS  = ("vacuum","evacuat","getter","cathode ray","discharge tube","incandescent",
+              "torr","exhausted envelope")
+PUR_WORDS  = ("zone refin","single crystal","ultrapure","semiconductor grade","dopant",
+              "parts per billion","high purity","electrorefin")
+ELEC_WORDS = ("dynamo","electric motor","electrolysis","electroplat","arc lamp",
+              "generator","alternating current","transformer","electric furnace")
+
+
+def closure(nodes, k):
+    seen, stack = set(), [k]
+    while stack:
+        c = stack.pop()
+        if c in seen:
+            continue
+        seen.add(c)
+        stack.extend(nodes[c]["pre"])
+    return seen
+
+
+def judge_node(n, nodes, stats):
+    """Score ONE technology on its own terms. Returns (score, [defects])."""
+    d = []
+    tier = n["tier"]
+    if n["cat"] in ABSTRACT_CATS or tier == 9:
+        # ideas and dead ends are judged only on documentation and honesty
+        if len(n["note"]) < 60:
+            d.append(("NOTE-THIN", "note is %d characters" % len(n["note"])))
+        if n["conf"] not in ("A","B","C"):
+            d.append(("NO-CONF", "confidence not stated"))
+        pen = sum(2 for _ in d)
+        return max(0, 100 - pen * 6), d
+    cl = closure(nodes, n["id"])
+    caps = {c for c in cl if c.startswith(CAP_PREFIX)}
+    text = (n["name"] + " " + n["note"]).lower()
+    unob = [c for c in cl if nodes[c]["cat"] == "unobtainable"]
+
+    # --- 1. does it declare the capabilities it plainly needs?
+    if tier >= 2 and not caps and n["cat"] not in ("social","institution","mathematics",
+                                                   "physics","foundation","information","capability"):
+        d.append(("CAP-NONE", "tier %d and nothing in its chain declares a capability rung "
+                              "(furnace, tolerance, vacuum, purity, power). This is the exact "
+                              "flaw the whole rebuild was meant to fix." % tier))
+    def want(words, prefix, label):
+        if any(w in text for w in words) and not any(c.startswith(prefix) for c in caps):
+            d.append(("CAP-" + label, "reads as needing a %s rung but none appears anywhere "
+                                      "in its prerequisite chain" % label.lower()))
+    want(HEAT_WORDS, "cap_heat_", "HEAT")
+    want(TOL_WORDS,  "cap_tol_",  "TOL")
+    want(VAC_WORDS,  "cap_vac_",  "VAC")
+    want(PUR_WORDS,  "cap_pure_", "PURITY")
+    if any(w in text for w in ELEC_WORDS) and tier >= 3 and not any(c.startswith("cap_power_") for c in caps):
+        d.append(("CAP-POWER", "electrical, tier 3 or above, and no power rung in its chain"))
+
+    # --- 2. is it shallow? a late technology with almost no stated dependencies
+    # A single direct prerequisite is NOT automatically a defect. In chemistry a
+    # derivative really does hang off one precursor: aspirin needs salicylic acid
+    # and little else, and its ancestry is 40 nodes deep. Only flag a node that is
+    # both narrow at the top AND shallow all the way down.
+    if tier >= 3 and len(n["pre"]) < 2 and len(cl) < 25:
+        d.append(("SHALLOW", "tier %d with %d direct prerequisite(s) and an ancestry only %d "
+                             "nodes deep. Narrow at the top is fine; narrow all the way down "
+                             "is not." % (tier, len(n["pre"]), len(cl))))
+    if tier >= 4 and len(cl) < 12:
+        d.append(("THIN-CHAIN", "tier %d but its whole ancestry is only %d nodes deep"
+                                % (tier, len(cl))))
+
+    # --- 3. is it reachable at all, and honest about it?
+    if unob and n["cat"] != "unobtainable":
+        d.append(("BLOCKED", "depends on %s, which is marked UNOBTAINABLE. Either it is "
+                             "impossible and should say so, or it needs a substitute path."
+                             % ", ".join(sorted(unob)[:3])))
+
+    # --- 4. cost sanity, judged against its own tier not against the tree
+    med_cost, med_ph = stats["cost"].get(tier, 1), stats["ph"].get(tier, 1)
+    cost = n["_total_cost"]
+    if med_cost > 0 and cost > med_cost * 25:
+        d.append(("COST-HIGH", "costs %s den, about %.0fx the median for tier %d"
+                               % (f"{cost:,.0f}", cost / med_cost, tier)))
+    if tier >= 3 and cost < 200:
+        d.append(("COST-LOW", "tier %d costing only %s den. Late technologies are not free."
+                              % (tier, f"{cost:,.0f}")))
+    if n["ph"] > 2000:
+        d.append(("HOURS-HIGH", "%s founder-hours, which is %.1f%% of a whole working life"
+                                % (f"{n['ph']:,}", 100.0 * n["ph"] / 72000)))
+    if tier >= 2 and n["ph"] == 0 and n["cat"] not in ("capability","material"):
+        d.append(("HOURS-ZERO", "tier %d and costs the founder no hours at all" % tier))
+
+    # --- 5. calendar honesty
+    if tier >= 4 and n["yrs"] < 1:
+        d.append(("NO-FLOOR", "tier %d with a calendar floor under a year. Heavy technology "
+                              "needs a generation to diffuse." % tier))
+
+    # --- 6. documentation
+    if len(n["note"]) < 60:
+        d.append(("NOTE-THIN", "note is %d characters. The note is where the non-obvious "
+                               "kernel lives; without it the node is just a label."
+                               % len(n["note"])))
+    if not n.get("kb") and n["cat"] not in ("capability","material","unobtainable"):
+        d.append(("NO-RECIPE", "no knowledge-base link, so a reader can see WHAT and WHEN "
+                               "but not HOW. This is a documentation gap, not a modelling error."))
+    if n["conf"] not in ("A","B","C"):
+        d.append(("NO-CONF", "confidence not stated"))
+
+    # --- 7. social model actually populated
+    if tier >= 2 and n["sus"] == 0 and n["gov"] == 0 and n["cat"] not in (
+            "capability","material","unobtainable","mathematics","physics"):
+        d.append(("SOCIAL-FLAT", "neither suspicion nor State interest is set. In Rome almost "
+                                 "nothing at this scale is politically neutral."))
+
+    weights = {"NO-RECIPE":0.5, "CAP-NONE":3,"CAP-HEAT":2,"CAP-TOL":2,"CAP-VAC":2,"CAP-PURITY":2,"CAP-POWER":2,
+               "SHALLOW":3,"THIN-CHAIN":2,"BLOCKED":3,"COST-HIGH":1,"COST-LOW":1,
+               "HOURS-HIGH":1,"HOURS-ZERO":1,"NO-FLOOR":1,"NOTE-THIN":2,"NO-RECIPE":1,
+               "NO-CONF":1,"SOCIAL-FLAT":1}
+    penalty = sum(weights.get(c, 1) for c, _ in d)
+    score = max(0, int(round(100 - penalty * 6)))
+    return score, d
+
+
+def grade(s):
+    return "A" if s >= 90 else "B" if s >= 78 else "C" if s >= 64 else "D" if s >= 50 else "F"
+
+
+def cmd_judge(a):
+    tree = json.load(open(TREE))
+    nodes = {n["id"]: n for n in tree["nodes"]}
+    prices = json.load(open(os.path.join(DATA, "prices.json")))
+    wages = {k: v["rate"] for k, v in prices["wage_rates_denarii_per_hour"].items() if not k.startswith("_")}
+    goods = {k: v["p"] for k, v in prices["purchase_prices_denarii"].items() if not k.startswith("_")}
+    for n in nodes.values():
+        n["_total_cost"] = (sum(wages.get(t, 0) * h for t, h in n["lab"].items())
+                            + sum(goods.get(m, 0) * q for m, q in n["mat"].items()) + n["cap"])
+
+    by_tier_cost, by_tier_ph = collections.defaultdict(list), collections.defaultdict(list)
+    for n in nodes.values():
+        by_tier_cost[n["tier"]].append(n["_total_cost"])
+        by_tier_ph[n["tier"]].append(n["ph"])
+    stats = {"cost": {t: statistics.median(v) for t, v in by_tier_cost.items()},
+             "ph":   {t: statistics.median(v) for t, v in by_tier_ph.items()}}
+
+    results = {}
+    for k, n in nodes.items():
+        results[k] = judge_node(n, nodes, stats)
+
+    if a.id:
+        if a.id not in nodes:
+            near = [x for x in nodes if a.id.lower() in x.lower()]
+            raise SystemExit("unknown node. near matches: %s" % (", ".join(near[:10]) or "none"))
+        n, (s, d) = nodes[a.id], results[a.id]
+        print("%s  [%s]" % (n["name"], n["id"]))
+        print("=" * 78)
+        print("grade %s (%d/100)   tier %d   %s   confidence %s"
+              % (grade(s), s, n["tier"], n["cat"], n["conf"]))
+        print("direct prerequisites : %d   full ancestry : %d nodes"
+              % (len(n["pre"]), len(closure(nodes, a.id)) - 1))
+        print("cost %s den   founder-hours %s   calendar floor %.1f yr   risk %.0f%%"
+              % (f"{n['_total_cost']:,.0f}", f"{n['ph']:,}", n["yrs"], 100 * n["risk"]))
+        caps = sorted(c for c in closure(nodes, a.id) if c.startswith("cap_"))
+        print("capability rungs in its chain: %s" % (", ".join(caps) if caps else "NONE"))
+        print("\n%s\n" % n["note"])
+        if d:
+            print("DEFECTS")
+            for c, msg in d:
+                print("  [%s] %s" % (c, msg))
+        else:
+            print("No defects found by the automated checks.")
+        return 0
+
+    dist = collections.Counter(grade(s) for s, _ in results.values())
+    defects = collections.Counter()
+    for s, d in results.values():
+        for c, _ in d:
+            defects[c] += 1
+
+    print("PER-TECHNOLOGY AUDIT: every node judged on its own, not on the end date")
+    print("=" * 78)
+    print("nodes judged : %d" % len(nodes))
+    print("mean score   : %.1f/100" % statistics.mean(s for s, _ in results.values()))
+    print("grades       : " + "  ".join("%s %d (%.0f%%)" % (g, dist[g], 100.0 * dist[g] / len(nodes))
+                                        for g in "ABCDF"))
+    print("\nDEFECTS BY FREQUENCY")
+    for c, v in defects.most_common():
+        print("   %-12s %4d  (%.0f%% of nodes)" % (c, v, 100.0 * v / len(nodes)))
+    print("\nWORST NODES")
+    worst = sorted(results.items(), key=lambda x: x[1][0])[:20]
+    for k, (s, d) in worst:
+        print("   %-34s %3d %s  %s" % (k[:34], s, grade(s), ", ".join(c for c, _ in d[:4])))
+    if a.grade:
+        floor = "FDCBA".index(a.grade.upper())
+        print("\nALL NODES AT GRADE %s OR WORSE" % a.grade.upper())
+        for k, (s, d) in sorted(results.items(), key=lambda x: x[1][0]):
+            if "FDCBA".index(grade(s)) <= floor:
+                print("   %-34s %3d %s  %s" % (k[:34], s, grade(s), ", ".join(c for c, _ in d)))
+    if a.full:
+        print("\nFULL REPORT")
+        for k, (s, d) in sorted(results.items(), key=lambda x: x[1][0]):
+            if d:
+                print("\n%s  %d %s" % (k, s, grade(s)))
+                for c, m in d:
+                    print("    [%s] %s" % (c, m))
+    json.dump({k: {"score": s, "grade": grade(s), "defects": [c for c, _ in d]}
+               for k, (s, d) in results.items()},
+              open(os.path.join(DATA, "judgement.json"), "w"), indent=1)
+    print("\nwrote data/judgement.json")
+    return 0
+
+
+# ---------------------------------------------------------------- REPAIR
+PREFIX_MODULE = {
+ "fud_":"75_agriculture_food.md","prn_":"80_information_printing.md",
+ "lnd_":"85_transport_civil.md","sea_":"85_transport_civil.md","air_":"85_transport_civil.md",
+ "pwr_":"40_power_precision.md","chm_":"20_chemistry.md","met_":"10_metallurgy.md",
+ "prc_":"40_power_precision.md","med_":"70_medicine_biology.md","civ_":"85_transport_civil.md",
+ "opt_":"30_glass_optics.md","com_":"50_electricity.md","tex_":"","hom_":"",
+}
+HEAT_BY_TIER = {0:"cap_heat_0700",1:"cap_heat_1100",2:"cap_heat_1300",3:"cap_heat_1300",
+                4:"cap_heat_1600",5:"cap_heat_1600"}
+TOL_BY_TIER  = {0:"cap_tol_1mm",1:"cap_tol_1mm",2:"cap_tol_100um",3:"cap_tol_10um",
+                4:"cap_tol_10um",5:"cap_tol_1um"}
+VAC_BY_TIER  = {3:"cap_vac_1torr",4:"cap_vac_1e3",5:"cap_vac_1e6"}
+PUR_BY_TIER  = {3:"cap_pure_2N",4:"cap_pure_4N",5:"cap_pure_6N"}
+PWR_BY_TIER  = {3:"cap_power_water",4:"cap_power_electric",5:"cap_power_grid"}
+
+SOCIAL_DEFAULT = {
+ # category substring -> (gov, sus) applied only where BOTH are still zero
+ "military":(3,6), "weapon":(3,6), "explosive":(3,10), "chem":(0,6), "medicine":(2,4),
+ "agricult":(3,0), "food":(2,0), "transport":(2,1), "rail":(3,1), "ship":(3,1),
+ "aviation":(3,10), "flight":(3,10), "electr":(1,8), "power":(2,3), "metal":(2,2),
+ "textile":(-1,1), "household":(0,1), "print":(-1,2), "media":(-1,3), "optic":(1,3),
+ "instrument":(1,3), "civil":(2,0), "mining":(2,1), "precision":(1,1), "comput":(0,4),
+ "communic":(3,3), "glass":(1,2),
+}
+
+def cmd_repair(a):
+    """Fix what the audit can fix mechanically, and MARK every inference.
+
+    A tree whose capability prerequisites were inferred by a script is better
+    than one where they are missing, but only if it says so. Every edge added
+    here is recorded in the node so a reader can discount it.
+    """
+    tree = json.load(open(TREE))
+    nodes = {n["id"]: n for n in tree["nodes"]}
+    prices = json.load(open(os.path.join(DATA, "prices.json")))
+    wages = {k: v["rate"] for k, v in prices["wage_rates_denarii_per_hour"].items() if not k.startswith("_")}
+    goods = {k: v["p"] for k, v in prices["purchase_prices_denarii"].items() if not k.startswith("_")}
+    for n in nodes.values():
+        n["_total_cost"] = (sum(wages.get(t,0)*h for t,h in n["lab"].items())
+                            + sum(goods.get(m,0)*q for m,q in n["mat"].items()) + n["cap"])
+    by_tier_cost = collections.defaultdict(list); by_tier_ph = collections.defaultdict(list)
+    for n in nodes.values():
+        by_tier_cost[n["tier"]].append(n["_total_cost"]); by_tier_ph[n["tier"]].append(n["ph"])
+    stats = {"cost":{t:statistics.median(v) for t,v in by_tier_cost.items()},
+             "ph":{t:statistics.median(v) for t,v in by_tier_ph.items()}}
+
+    counts = collections.Counter()
+    for k, n in list(nodes.items()):
+        if n["cat"] in ABSTRACT_CATS or n["tier"] == 9:
+            continue
+        score, defects = judge_node(n, nodes, stats)
+        codes = {c for c, _ in defects}
+        added = []
+        def add(cap_id):
+            # NEVER create a cycle. cap_heat_1100 depends on refractory_fireclay, so
+            # giving refractory_fireclay a furnace rung (its note is full of furnace
+            # words) makes the graph eat itself. An earlier version did exactly that.
+            if not cap_id or cap_id in nodes and cap_id in n["pre"]:
+                return
+            if cap_id not in nodes:
+                return
+            if n["id"] in closure(nodes, cap_id):
+                counts["cycle-forming edges refused"] += 1
+                return
+            n["pre"].append(cap_id); added.append(cap_id)
+        t = min(5, max(0, n["tier"]))
+        if "CAP-HEAT" in codes: add(HEAT_BY_TIER.get(t))
+        if "CAP-TOL"  in codes: add(TOL_BY_TIER.get(t))
+        if "CAP-VAC"  in codes: add(VAC_BY_TIER.get(max(3, t)))
+        if "CAP-PURITY" in codes: add(PUR_BY_TIER.get(max(3, t)))
+        if "CAP-POWER"in codes: add(PWR_BY_TIER.get(max(3, t)))
+        if "CAP-NONE" in codes and not added:
+            # give it the rung its tier implies rather than leaving it groundless
+            add(TOL_BY_TIER.get(t) if t <= 2 else HEAT_BY_TIER.get(t))
+        if added:
+            counts["capability edges inferred"] += len(added)
+            n["note"] = n["note"].rstrip() + (" [AUDIT: capability prerequisite(s) %s were "
+                "inferred by rome/sim/treetool.py repair, not stated by the author. Treat "
+                "them as a floor, not a specification.]" % ", ".join(added))
+        # documentation level
+        if not n.get("kb"):
+            mod = next((v for pre, v in PREFIX_MODULE.items() if k.startswith(pre)), None)
+            if mod:
+                n["kb"] = mod; n["kb_level"] = "module"; counts["module-level doc links"] += 1
+            else:
+                n["kb_level"] = "none"; counts["still undocumented"] += 1
+        else:
+            n["kb_level"] = "recipe" if "#" in n["kb"] else "module"
+        # social model
+        if "SOCIAL-FLAT" in codes:
+            hay = (n["cat"] + " " + k).lower()
+            for key, (g, su) in SOCIAL_DEFAULT.items():
+                if key in hay:
+                    n["gov"], n["sus"] = g, su
+                    counts["social defaults applied"] += 1
+                    n["note"] = n["note"].rstrip() + (" [AUDIT: State interest and suspicion "
+                        "were unset and have been defaulted from the category.]")
+                    break
+        if "NO-FLOOR" in codes and n["tier"] >= 4:
+            n["yrs"] = max(n["yrs"], 2.0); counts["calendar floors raised"] += 1
+    tree["nodes"] = [nodes[i] for i in sorted(nodes)]
+    json.dump(tree, open(TREE, "w"), indent=1)
+    print("REPAIR PASS")
+    for k, v in counts.most_common():
+        print("   %-32s %d" % (k, v))
+    return 0
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = p.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("merge")
+    sub.add_parser("repair")
+    q = sub.add_parser("judge")
+    q.add_argument("--full", action="store_true")
+    q.add_argument("--id")
+    q.add_argument("--grade")
+    a = p.parse_args()
+    return {"merge": cmd_merge, "judge": cmd_judge, "repair": cmd_repair}[a.cmd](a)
+
+
+if __name__ == "__main__":
+    sys.exit(main() or 0)

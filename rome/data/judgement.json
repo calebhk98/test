@@ -1,0 +1,6525 @@
+{
+ "academy_network": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_aerial_bombing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "air_aerial_photography": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_aerial_reconnaissance": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_aerodrome": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_aerofoil_section": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_aileron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_airspeed_indicator": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_altimeter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_artificial_horizon": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_autogyro": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_balloon_ballast": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_balloon_valve": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_biplane": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_cayley_forces": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_coal_gas_generation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_compass_magnetic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_dirigible_engine_mount": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_elevator_pitch": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_elongated_envelope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_flying_boat": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_glider_simple": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_goldbeater_skin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_helicopter_rotor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_hot_air_balloon_ref": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_hydrogen_danger": {
+  "score": 76,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "COST-LOW"
+  ]
+ },
+ "air_hydrogen_generation_charcoal": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_jet_engine_build": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_jet_engine_concept": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_kite_basic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_light_petrol_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_monoplane_structure": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_observation_balloon_tethered": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_parachute": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_pitot_tube": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_power_to_weight": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "air_powered_aeroplane": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_propeller_wing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_radial_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_rigid_airship_frame": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_rotary_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_rudder_vertical": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_stressed_skin_fuselage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_three_axis_control": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_varnished_silk_envelope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_wind_tunnel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "air_wing_warping": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "algebra_symbolic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "analytical_chemistry": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "arc_furnace_ferroalloys": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "arc_light_lamp": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "arithmetic_positional": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "arrival_orientation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "atomic_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "balance_analytical": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "barometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "bellows_water_blown": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "bessemer_openhearth": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "blast_furnace": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "boring_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "calculus": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "camera_obscura": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_gas_o2h2": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_heat_0700": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_heat_1100": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_heat_1300": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_heat_1600": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_heat_2000": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_heat_3000": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_measure_elec": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_measure_len": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_measure_light": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_measure_mass_mg": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_measure_temp": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_measure_temp_hi": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_measure_time_ms": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "cap_measure_time_s": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_power_electric": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_power_grid": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_power_muscle": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_power_steam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_power_water": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_pure_2N": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_pure_4N": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_pure_6N": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_pure_9N": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_tol_100nm": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_tol_100um": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_tol_10um": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_tol_1mm": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_tol_1um": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_vac_1e3": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_vac_1e6": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_vac_1e9": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cap_vac_1torr": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "case_hardening": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "cementation_steel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "charcoal_industrial": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "chm_activated_carbon": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_alizarin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_alkali_waste": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_ammonia_recovery": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_aniline": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_anthracene": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "chm_aspirin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_azo_dyes": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_bakelite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_benzene": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_black_powder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_blasting_cap": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_bleaching_powder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_casein": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "chm_catalyst_concept": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_caustic_soda": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_celluloid": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_centrifuge": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_chlor_alkali_diaphragm": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_chlor_alkali_mercury": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_chromatography": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_coal_tar_distillation": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "chm_contact_sulfuric": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_contact_vanadium": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_continuous_batch": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_corrosion_glass_lined": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_corrosion_lead": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "chm_corrosion_stainless": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "chm_corrosion_stoneware": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "chm_crystallisation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_cyanamide_fixation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_deacon_process": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_detergent_synthetic": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "chm_dynamite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_electric_arc_nitrogen": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_electroplating": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_evaporator_surface": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_filter_press": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "chm_formaldehyde_synthesis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_fractionating_column": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_fulminate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_gelignite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_glycerol": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_guncotton": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_haber_bosch": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_indigo_synthesis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_industrial_hygiene": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "chm_ion_exchange": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_matches": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "chm_naphthalene": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "chm_nitroglycerin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_nylon": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_oleum": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_ostwald_ammonia_oxidation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_phenol": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_phosphorus_extraction": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_photography": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_picric_acid": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_polyethylene": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_potash_mining": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_pressure_gauge": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_pressure_vessel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_pvc_synthesis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_refrigerant_ammonia": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_saccharin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_salicylic_acid": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_smokeless_powder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_soap_hard": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "HOURS-ZERO"
+  ]
+ },
+ "chm_solvay_process": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_sulfonamides": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_superphosphate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_tnt": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_toluene": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "chm_water_chlorination": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_water_coagulation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_water_filtration": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_weldon_process": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "citizenship": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_amphitheatre": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_aqueduct_roman": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_arch_roman": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_bending_moment": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_box_girder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_brick_tile": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_bridge_cantilever": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_bridge_cast_iron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_bridge_steel_arch": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_bridge_suspension": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_bridge_timber_truss": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_bridge_wrought_iron_truss": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_building_code": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_caisson": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_caisson_compressed_air": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_canal_pound_lock": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_chorobates": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_cofferdam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_crane_treadwheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_curtain_wall": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "civ_dam_arch": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_dam_earth_fill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_dam_gravity": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_dome_roman": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_dredging": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_elasticity_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_elevator_otis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_euler_buckling": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_factor_safety": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_fireproofing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_foundation_piles": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_foundation_spread": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_gate_sluice": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_glass_plate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_glass_windows": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_harbour_dock": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_insula": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_iron_wrought": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_lightning_conductor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_marble_facing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_materials_testing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_method_joints": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_neutral_axis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_precise_levelling": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_prestressed_concrete": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_pumping_station": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_reinforced_concrete": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_road_paved": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_roof_king_post": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_roof_queen_post": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_sewage_treatment": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_sewer_roman": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_sewer_separate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_soil_mechanics": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_spillway": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_statics": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_steel_frame": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_street_lighting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_street_paved": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_surveying_groma": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_theodolite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_town_planning": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_truss_triangulated": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_tunnel_rock_drill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_tunnel_shield": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_vault_barrel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_water_tower": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_water_treatment": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "civ_wire_drawn": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "clock_pendulum": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "coal_coke": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "collegium_licensed": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_accumulator": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_amplitude_modulation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_analytical_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_antenna_ground": {
+  "score": 76,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_arithmometer": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_baudot_code": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_binary_arithmetic": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "com_boolean_algebra": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "com_broadcasting_institution": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_cathode_ray_tube": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_coherer": {
+  "score": 70,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "COST-LOW",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_compiler_and_language": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_comptometer": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_continuous_wave": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_cryptography_substitution": {
+  "score": 76,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "COST-LOW"
+  ]
+ },
+ "com_crystal_set": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_difference_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_duplex_telegraph": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_error_detecting_code": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "com_flip_flop": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_frequency_modulation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_heliograph": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_hollerith_tabulation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_information_theory": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "com_integrated_circuit": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_jacquard_loom": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_loading_coil": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_logic_gate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_magnetic_core_memory": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_magnetic_drum_storage": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_magnetic_tape_storage": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_magnetic_wire_storage": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_mechanical_calculator": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_morse_code": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_morse_register": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_morse_sounder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_multiplexing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_napiers_bones": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_one_time_pad": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_optical_codebook": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_optical_tower": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_photolithography": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_public_key_cryptography": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_quadruplex_telegraph": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_radar_magnetron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_radio_spark_transmitter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_register_computing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_relay": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_relay_computer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_ring_counter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_rotor_machine": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "com_semiconductor_diode": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_signal_flags": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_slide_rule": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_stepped_drum": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_stock_ticker": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_stored_program_concept": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_strowger_exchange": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_submarine_cable": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "com_superheterodyne_receiver": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_telegraph_battery": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_telephone_carbon_mic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_telephone_diaphragm": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_telephone_manual_exchange": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_teleprinter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_triode_oscillator": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_trunk_lines": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_tuned_circuit": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_tv_electronic_camera": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_tv_mechanical_scanning": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "com_tv_raster_sync": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "com_vacuum_tube_computer": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "com_vacuum_tube_pentode": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_vacuum_tube_tetrode": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_waveguide": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "copper_fire_refined": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "copper_refining": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "corpus_dispersed": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "corpus_written": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "crank_conrod": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "crop_rotation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "crucible_steel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "crude_cell": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "daniell_cell": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "destructive_distillation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "diffusion_pump": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "discharge_xray": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "distillation_alcohol": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "drawplate_wire": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "dynamo": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "electrolysis_industrial": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "electromagnet": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "electroplating": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "electrostatics": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "em_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "endowment_land": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "finery_puddling": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "freedman_staff": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_agricultural_treatises": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_alfalfa": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_beet_sugar_processing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_bone_meal_fertilizer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_bottling_sealed_cork": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_brewing_with_hops": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_can_opener": {
+  "score": 70,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "COST-LOW",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "fud_canning_appert_method": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_chocolate_tier9": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_clover_winter_fodder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_coffee_trade_import": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_cold_chain_refrigerated_shipping": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_combine_harvester": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_controlled_pollination": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_dairy_butter_production": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_dairy_cheese_aging": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_distillation_spirits": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_drying_evaporated_milk": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "fud_enclosure_of_common_land": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_farm_as_capital_enterprise": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_fish_curing_and_smoking": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_freezing_with_mechanical_cold": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_grain_storage_silos": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_guano_import_trade": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_haber_process_synthetic_nitrogen": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_hay_making_storage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_heavy_mouldboard_plough_coulter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_horse_hoe": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_ice_harvesting_and_cutting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_ice_house_construction": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_ice_trade_logistics": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "fud_liming_acid_soils": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_livestock_selective_cattle": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_livestock_selective_sheep": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_maize_tier9": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_malt_production": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_margarine_synthesis": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "fud_mechanical_reaper": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_mechanical_refrigeration": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_nitrogen_fixing_understanding": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_pasteurisation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_potato_tier9": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_rice_cultivation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_roller_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_roller_milled_white_flour": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "fud_root_cellar_storage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_seed_drill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_selective_breeding_pedigree": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_silage_fermentation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_soil_composition_analysis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_sourdough_starter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_sugar_cane_cultivation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_superphosphate_fertilizer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_tea_trade_import": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_three_field_rotation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_threshing_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_tin_plate_cans": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_turnips_winter_fodder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_vegetable_oil_extraction": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_vinegar_production": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_whaling_industry": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_winnowing_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fud_yeast_pure_culture": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "fused_quartz": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "galena_detector": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "galvanometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "ge_reduction": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "gecl4_purification": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "geometry_analytic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "germ_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "germanium_extraction": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "glass_bead_microscope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "glass_borosilicate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "glass_clear": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "glass_labware": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "gunpowder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "high_temp_furnace": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "hom_attar_roses": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_bath_piped_hot_water": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_board_games": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_button": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_candle_beeswax": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_candle_tallow": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_carpet_sweeper": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "NO-RECIPE"
+  ]
+ },
+ "hom_cosmetics_modern_warning": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_cosmetics_roman": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_deodorant": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_dishwasher": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_doll_fashion": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_double_glazing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_electric_fan": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_electric_lighting": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_eraser_breadcrumb": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_fireplace_chimney": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_flush_latrine_simple": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_flush_toilet_trap": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_fountain_pen": {
+  "score": 70,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_furniture_wooden": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_gas_lamp": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_glass_windows": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_heating_hot_water_radiator": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_hypocaust": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_jigsaw_puzzle": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_kitchen_range": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_lamp_argand": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_lamp_kerosene": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_latrine_water_trap": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_lead_plumbing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_locks_keys": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_mangle_wringer": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_matches_friction": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_mechanical_clock_home": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_metronome": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_mirror_bronze_polished": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_mirror_silvered_glass": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_musical_instruments": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_oil_lamp_simple": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_pencil": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_perfume_distilled": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_perfume_enfleurage": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_piano": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_playing_cards_printed": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_pocket_watch": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_pressure_cooker": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_printed_books": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_public_bath": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_punkah_ceiling": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_refrigeration_mechanical": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_refrigerator_home_electric": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_safety_pin": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_safety_razor": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_sewer_stormwater_separation": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_sewing_machine_hand": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_shampoo_soap_based": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_soap_hard": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_spectacles": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_sprung_mattress": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_stove_enclosed": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_toothbrush": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_toothpaste_commercial": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "COST-LOW",
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_toys_dolls": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_umbrella": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_vacuum_cleaner": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_vacuum_flask": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "hom_washing_machine_electric": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_washing_machine_hand": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "hom_zip_fastener": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NO-RECIPE",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "horse_collar": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "hot_air_balloon": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "hydrochloric_acid": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "hydrofluoric_acid": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "identity_cover": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "industrial_gases": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "interchangeable_parts": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "junction_transistor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lab_apparatus": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lead_chamber": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lead_metallurgy": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lens_grinding": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_air_brake": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_assembly_line": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_automobile": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_axle_pivot_front": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_ball_bearing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_block_system": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_boneshaker": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_bridge": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_carburettor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_caterpillar_track": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "lnd_chain_drive_bicycle": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_coach": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_coal_tar_gas": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_cursus_publicus": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_diesel_cycle": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_diesel_supply": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_differential": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_fishplate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_flanged_wheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_four_wheel_cart": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_gas_engine_atmospheric": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_gearbox_clutch": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_harness_throat_girth": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_hobby_horse": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_horse_saddle_basic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_horseshoe_nailed": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_iron_edge_rail": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_litter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_macadam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_magneto": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_milestone": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_motor_road_network": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_mule_transport": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_omnibus": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_otto_cycle_four_stroke": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_ox_transport": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_paved_road_network": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_penny_farthing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_pneumatic_tyre": {
+  "score": 76,
+  "grade": "C",
+  "defects": [
+   "BLOCKED",
+   "COST-HIGH"
+  ]
+ },
+ "lnd_point_switch": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_safety_bicycle": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "lnd_signal_railway": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_spark_plug": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_spring_leaf": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_stagecoach": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_standard_gauge": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_steam_locomotive": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_steering_geometry": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "lnd_stirrup": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_superheater": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_tarmacadam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_tender": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_tractor": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "lnd_truck": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_turnpike": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_two_wheel_cart": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_tyre_iron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_wheel_spoked": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_wheelbarrow": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "lnd_whippletree": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "logarithms": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "master_screw": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_alum": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_aluminium": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_ammonia": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "mat_asbestos": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_bakelite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_beeswax": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_bitumen": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_blister_steel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_brass": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_bronze": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_bulk_steel": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_calamine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_camphor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_carbon_black": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_cast_iron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_celluloid": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_cement_portland": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_charcoal": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_chile_nitrate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_chlorine": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_chromium": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_concrete_reinforced": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_copper": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_crucible_steel": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_cryolite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_dyes_synthetic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_emery": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_formaldehyde": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_fused_quartz": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_galena": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_glass_boro": {
+  "score": 76,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "COST-LOW"
+  ]
+ },
+ "mat_glass_lead": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_glass_soda": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_glycerol": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_gold": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_graphite_pure": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_gutta_percha": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_gypsum": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_ice_artificial": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_lead": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_leather": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_lime": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_linen": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_magnesium": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_manganese": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_mercury": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_natron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_natural_rubber": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_newworld_crops": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_nickel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_nitrocellulose": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_nitroglycerin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_olive_oil": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_paper": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_papyrus": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_parchment": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_petroleum_refined": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_platinum_bulk": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_porcelain": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_pozzolana": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_pyrolusite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_quinine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_salt": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_shellac": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_silk": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_silver": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_stainless": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_sulfur": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_synthetic_rubber": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_tallow": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_tin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_tool_steel_hss": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-LOW"
+  ]
+ },
+ "mat_tungsten": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_vitriols": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_wool": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "NOTE-THIN"
+  ]
+ },
+ "mat_wrought_iron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mat_zinc": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_amputation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_antitoxin_serum": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_aqueducts_latrines": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_asepsis_antisepsis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_aspirin": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "med_autoclave": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_blood_groups": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_bone_setting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_cataract_couching": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_clinical_thermometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_clinical_trials": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_cocaine_unobtainable": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_dentistry": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "med_electrocardiogram": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_endoscope": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "med_epidemiology_statistics": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_ether_anaesthesia": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_forensic_medicine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_gram_stain_culture": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_handwashing_semmelweis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_herbal_pharmacy": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_hospital_institution": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_hypodermic_syringe": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_insulin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_legal_physician": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_ligature_haemostasis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_medical_education": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_microscopy_pathology": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_nursing_profession": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_nutrition_vitamins": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_obstetric_antisepsis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_obstetric_practice": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_ophthalmoscope": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "med_opium_mandrake": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_penicillin": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_quarantine_sanitation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_saline_resuscitation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_spectacles_refraction": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_sphygmomanometer": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "COST-HIGH",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "med_sterile_technique": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_stethoscope_percussion": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_sulfonamides": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_surgical_gloves_mask": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_surgical_kit_good": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_trepanation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_vaccination_progression": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_valetudinaria": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_vector_control": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_wound_suturing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "med_xray_imaging": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mercury_supply": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "met_acetylene_supply": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_annealing_recrystallization": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_arc_welding": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_basic_lining_phosphorus": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_black_powder_blasting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_chill_casting": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_continuous_casting": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_converter_furnace": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_cupola_furnace": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_deep_drawing": {
+  "score": 76,
+  "grade": "C",
+  "defects": [
+   "SHALLOW",
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_deep_shaft_sinking": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_die_casting": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_drawn_tube": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_drop_hammer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_dry_sand_mold": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_dynamite_blasting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_electro_refining": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_electroplating": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_extrusion_press": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_fatigue_testing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_fire_assay": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_froth_flotation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_galvanizing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_green_sand_mold": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_hardenability_alloys": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_hardness_test": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_hydraulic_press": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_investment_casting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_jigging_gravity": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_mannesmann_piercing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_metallography": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_mine_pumping": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_normalizing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_open_hearth_furnace": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_ore_crushing_sorting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_oxyacetylene_welding": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_phase_diagram_knowledge": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_pneumatic_drill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_powder_metallurgy": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_quenching_media": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_rail_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_resistance_welding": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_reverberatory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_reversing_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_roasting_calcining": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_safety_lamps_ventilation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_section_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_spectroscopic_assay": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_steam_hammer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_tempering_color": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_tensile_test": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_three_high_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_tin_plate": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "met_trip_hammer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_tube_mill_seamless": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_two_high_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_water_ore_stamp": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_winding_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "met_wire_rod_rolling": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "micrometer_gauges": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "microscope_compound": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mining_concession": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "mirror_amalgam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "motor_transformer_ac": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "newtonian_mechanics": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "nitre_beds": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "nitric_acid": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_abbe_condenser": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_abbe_resolution_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_achromatic_doublet": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_anemometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_aneroid_barometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_apochromat": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "opt_artificial_horizon": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_ballistic_galvanometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_bolometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_bourdon_gauge": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_burning_glass": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_calorimeter": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "opt_chronograph": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_clock_drive": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_crown_flint_pair": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_diffraction_grating": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_dioptra": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_electrometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_electron_microscope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_equatorial_mount": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_flame_spark_spectra": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_focal_length_measurement": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_fraunhofer_lines": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_geared_mechanisms": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_gravimeter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_groma": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_high_speed_camera": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_hygrometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_level": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_magnetometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_manometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_metal_mirror_polished": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_michelson_interferometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_newton_rings": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "opt_nicol_prism": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_oil_immersion_objective": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_oscilloscope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_phase_contrast": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_photocell": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_photometry": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "opt_pitot_tube": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_plane_table": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_plano_convex_lens": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_polarimeter": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "opt_potentiometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_pyrometer_contraction": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "opt_pyrometer_optical": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_pyrometer_radiation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_pyrometer_thermoelectric": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "BLOCKED"
+  ]
+ },
+ "opt_reflecting_telescope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_refractometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_ruling_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_seismograph": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_sextant": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_silvered_glass_mirror": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_spectacles": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_spectroheliograph": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_spectroscopy_absorption": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_spectroscopy_emission": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_speculum_metal": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_spherometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_standards_laboratory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_steelyards": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_stellar_parallax": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_stroboscope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_sundial": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_theodolite": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_transit_instrument": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_ultramicroscope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_water_clock": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_water_globe_magnifier": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "opt_wavelength_standard": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "patron_imperial": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "patron_local": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "patron_senatorial": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "photography": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "plague_preparedness": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "point_contact_transistor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "potash_soda": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "power_grid": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "prc_apprentice_system": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_arbor_press": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_autocollimator": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_automatic_screw_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_back_gear": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_ball_roller_bearing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_ballscrew": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_broach_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_capstan_turret_lathe": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_change_gears_quadrant": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_comparator_optical": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_compound_slide_rest": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_coolant_cutting_fluid": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_cylindrical_grinder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_cylindrical_square": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_depth_gauge": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_dial_indicator": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_die_sinker": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_dividing_head": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_drill_press": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_fly_cutter": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_gauge_blocks_johansson": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_go_nogo_gauge": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_honing_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_jig_and_fixture": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_jig_boring_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_lapping_plate": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_lathe_faceplate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_lead_screw_error_cam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_machine_frame_cast_iron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_mandrel_chuck": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_metrology_room_20c": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_milling_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_optical_flat": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_pantograph_copying": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_planer_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_profile_projector": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_reamer_hand_flute": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_roundness_measurement": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_scraped_surface_plate": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_shaper_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_sine_bar": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_slide_rest_simple": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_slotter_machine": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_square_reference": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_standard_meter_wavelength": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_straightedge": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_surface_grinder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_tailstock_deadcentre": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_tap_die": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_three_wire_thread_measure": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_tool_cutter_grinder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_tool_steel_hss_carbide": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_toolmaker_microscope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_toolroom_institution": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_tracer_lathe": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_treadle_lathe_flywheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_twist_drill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_universal_milling_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prc_vernier_caliper": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prc_vibration_and_chatter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "precision_three_plate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "printing_press": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_calotype_process": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_carbon_ink": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_cataloguing_system": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_cinema_projection": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_cinema_shutter": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_codex_bound": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_colour_photography": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_composing_stick": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_copyright_economics": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_cylinder_press": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_daguerreotype": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_disc_record": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_electrical_recording": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_electrotype_plate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_enlarger": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_etching_technique": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_film_studio": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_four_colour_separation": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_fourdrinier_machine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_gelatin_dry_plate": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_halftone_screen": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_hand_mould_adjustable": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_hand_papermaking": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_index_concordance": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_intaglio_engraving": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_intermittent_motion": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_library_archive": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_linotype_machine": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_lithography_stone": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_loudspeaker": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_magic_lantern": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_magnetic_tape_recording": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_monotype_machine": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_mosaic_fresco": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_newspaper_institution": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_nitrate_film_safety": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_offset_lithography": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_oil_based_ink": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_papyrus_sheets": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_parchment_sheets": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_phonograph_cylinder": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_platen_press": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_pulp_stamper": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_radio_broadcasting": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_relief_printing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_roll_film_celluloid": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_rotary_press": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_scribal_copying": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_sculpture": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_seals_stamps": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_silver_halide_chemistry": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_sizing_surface": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_stereotype_plate": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_theatre_pantomime": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_type_matrix": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_type_metal_alloy": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_type_punch": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_typewriter": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_wax_tablets": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_wet_collodion_plate": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_wire_mould_deckle": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "prn_wood_pulp": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "prn_woodblock_carving": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_animal_treadmill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_boiler_cornish": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_boiler_haystack": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_boiler_lancashire": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_boiler_wagon": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_boiler_water_tube": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_breastshot_wheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_cable_tool_drilling": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_coal_gas": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_coal_seam": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_coking": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_condenser": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_electric_motor_industry": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_feedwater_heating": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_flywheel_governor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_flywheel_storage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_force_pump": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_fuel_cell": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_fuel_oil": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_gas_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_gas_main": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_gas_meter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_high_voltage_transmission": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_hydroelectric_generation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_indicator_diagram": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_kerosene": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_lead_acid_battery": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_leat_and_weir": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_load_factor_economics": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_millpond": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_nickel_iron_battery": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_norse_waterwheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_nuclear_fission": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_oil_refinery": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_oil_shale": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_overshot_wheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_peat": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_pelton_wheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_petroleum_seeps": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_pipeline": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_post_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_pumped_storage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_rotary_drilling": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_safety_valve": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_screw_press_power": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_selenium_cell": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_selenium_metal": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_selenium_photovoltaic": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "pwr_ship_sail": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_smeaton_efficiency": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_steam_turbine_parsons": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_stirling_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_substation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_superheater": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_thermoelectric_couple": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_thermopile": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_three_phase_ac": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_tide_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_tower_mill": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_transformer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_treadwheel_crane": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_trompe": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_undershot_wheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_water_turbine_fourneyron": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "pwr_windmill_fantail": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "quantum_solidstate_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "radio": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "rag_paper": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "railway": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "refractory_fireclay": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sanitation_antisepsis": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "school_founded": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "scientific_method": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "screw_lathe": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_anchor": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_astronomical_tables": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_backstaff": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "sea_boiler_water_tube": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_bowsprit": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_buoy": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_canal_lock": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_carvel_planking": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_charts_navigation": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_clinker_planking": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_coastal_pilotage": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_compartmented_hull": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "sea_compound_expansion": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_copper_sheathing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_cross_staff": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "sea_diesel_engine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_diving_bell": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_diving_suit": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_dredging": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_dry_compass_card": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_drydock": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_electromagnetic_wave_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_fore_aft_rig": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_fresnel_lens": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_fuel_oil_burner": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_harbours_pozzolana": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_iron_hull": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_jib": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_lateen_sail": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_lead_line_hydro": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_lead_sheathing": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_lifeboat": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "SHALLOW"
+  ]
+ },
+ "sea_lodestone": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_log_line": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_lunar_distances": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "sea_magnetic_compass": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "sea_marine_chronometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_mercator_projection": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "sea_merchant_ships_large": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_monsoon_route": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_mortise_tenon": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_multiple_masts": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_paddle_wheel": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_pharos_lighthouse": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_screw_propeller": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_sextant": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "SOCIAL-FLAT"
+  ]
+ },
+ "sea_skeleton_first": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_sonar": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_sounding_lines": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_spritsail": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_square_sail": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_steam_turbine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_steel_hull": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_steering_oars": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_sternpost_rudder": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_submarine": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_submarine_cable": {
+  "score": 82,
+  "grade": "B",
+  "defects": [
+   "BLOCKED"
+  ]
+ },
+ "sea_torpedo": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sea_traverse_board": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "semaphore_telegraph": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "semiconductor_metrology": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "silicon_path": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "single_crystal": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "soap_hard": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "soda_leblanc": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "spectroscope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "statistics_basic": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "steam_atmospheric": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "steam_high_pressure": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "steam_watt": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "sulfuric_retort": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "telegraph_electric": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "telescope": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "tex_buttons_buttonholes": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_calico_printing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_canvas": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_carding": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_chlorine_bleaching": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_chrome_tanning": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_combing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_cotton_gin": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_cotton_trade": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_drop_spindle": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_dye_madder": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_dye_murex": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_dye_woad": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_felting": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_field_bleaching": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_fitted_garment": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_flying_shuttle": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_fulling": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_fulling_water": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_hand_ginning": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_horizontal_loom": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_hosiery": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_indigo": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_jacquard_loom": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_knitting_frame": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_linen": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_mercerisation": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_mordanting": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_nylon": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_pattern_cutting": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_power_loom": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_rayon_nitro": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_rayon_viscose": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_roller_printing": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_rope_walk": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_sailcloth": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_sewing_machine": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_shoddy": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_silk_trade": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_spinning_jenny": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_spinning_mule": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_spinning_wheel": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_synthetic_dyes": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_tape_measure": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_textile_factory": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "COST-HIGH",
+   "NO-RECIPE"
+  ]
+ },
+ "tex_treadle_loom": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_two_beam_loom": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_vegetable_tanning": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_warp_weighted_loom": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_water_frame": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_wool": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "tex_wool_combing_machinery": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "NO-RECIPE"
+  ]
+ },
+ "thermodynamics_theory": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "thermometer": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "units_standards": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "vacuum_pumps": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "vacuum_tube": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "voltaic_pile": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "water_power_scale": {
+  "score": 94,
+  "grade": "A",
+  "defects": [
+   "COST-HIGH"
+  ]
+ },
+ "workshop_first": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "world_map": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "zinc_industry_scale": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "zinc_metal": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "zone_refining": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ }
+}
