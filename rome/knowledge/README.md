@@ -22,7 +22,7 @@ in this directory, read that one.
 |---|---|---:|---:|
 | [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 0 | 0 |
 | [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 69 |
-| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 15 |
+| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 92 |
 | [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 84 |
 | [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 137 |
 | [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 90 |
@@ -32,8 +32,11 @@ in this directory, read that one.
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 60 |
 | [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 64 |
 | [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 227 |
-| [`90_textiles.md`](90_textiles.md) |  | 20 | 0 |
+| [`90_textiles.md`](90_textiles.md) |  | 20 | 52 |
+| [`91_household.md`](91_household.md) |  | 27 | 70 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
+| [`93_energy.md`](93_energy.md) |  | 27 | 0 |
+| [`94_computing.md`](94_computing.md) |  | 22 | 0 |
 | [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 4 | 0 |
 
 ### Nodes documented in the top-level prose files
@@ -140,21 +143,98 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
+| `chm_black_powder` | 0 | 0 | _(module has no anchor)_ |
 | `distillation_alcohol` | 1 | 450 | [`distillation_fractional`](20_chemistry.md#distillation_fractional---fractional-distillation-and-the-worm-still) |
 | `potash_soda` | 1 | 200 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
 | `soap_hard` | 1 | 250 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
+| `chm_alkali_waste` | 2 | 150 | _(module has no anchor)_ |
+| `chm_catalyst_concept` | 2 | 120 | _(module has no anchor)_ |
+| `chm_continuous_batch` | 2 | 100 | _(module has no anchor)_ |
+| `chm_corrosion_lead` | 2 | 80 | _(module has no anchor)_ |
+| `chm_corrosion_stoneware` | 2 | 100 | _(module has no anchor)_ |
+| `chm_crystallisation` | 2 | 60 | _(module has no anchor)_ |
+| `chm_phosphorus_extraction` | 2 | 120 | _(module has no anchor)_ |
+| `chm_potash_mining` | 2 | 150 | _(module has no anchor)_ |
+| `chm_soap_hard` | 2 | 0 | _(module has no anchor)_ |
+| `chm_water_coagulation` | 2 | 60 | _(module has no anchor)_ |
+| `chm_water_filtration` | 2 | 60 | _(module has no anchor)_ |
 | `gunpowder` | 2 | 300 | [`gunpowder`](20_chemistry.md#gunpowder---gunpowder-pulvis-pyrius-a-later-coinage-no-roman) |
 | `lab_apparatus` | 2 | 600 | [`lab_apparatus`](20_chemistry.md#lab_apparatus---laboratory-apparatus-vasa-chymica) |
 | `nitre_beds` | 2 | 350 | [`saltpetre_nitre_beds`](20_chemistry.md#saltpetre_nitre_beds---saltpetre-nitre-beds-no-roman-name-this) |
 | `sulfuric_retort` | 2 | 800 | [`sulfuric_acid_retort`](20_chemistry.md#sulfuric_acid_retort---oil-of-vitriol-by-dry-distillation) |
 | `analytical_chemistry` | 3 | 900 | [`analytical_chemistry`](20_chemistry.md#analytical_chemistry---analytical-chemistry-and-the-assay-bench) |
+| `chm_activated_carbon` | 3 | 100 | _(module has no anchor)_ |
+| `chm_ammonia_recovery` | 3 | 100 | _(module has no anchor)_ |
+| `chm_anthracene` | 3 | 100 | _(module has no anchor)_ |
+| `chm_aspirin` | 3 | 60 | _(module has no anchor)_ |
+| `chm_benzene` | 3 | 80 | _(module has no anchor)_ |
+| `chm_blasting_cap` | 3 | 100 | _(module has no anchor)_ |
+| `chm_bleaching_powder` | 3 | 80 | _(module has no anchor)_ |
+| `chm_caustic_soda` | 3 | 100 | _(module has no anchor)_ |
+| `chm_centrifuge` | 3 | 200 | _(module has no anchor)_ |
+| `chm_coal_tar_distillation` | 3 | 250 | _(module has no anchor)_ |
+| `chm_contact_sulfuric` | 3 | 300 | _(module has no anchor)_ |
+| `chm_cyanamide_fixation` | 3 | 200 | _(module has no anchor)_ |
+| `chm_deacon_process` | 3 | 150 | _(module has no anchor)_ |
+| `chm_dynamite` | 3 | 100 | _(module has no anchor)_ |
+| `chm_electric_arc_nitrogen` | 3 | 150 | _(module has no anchor)_ |
+| `chm_electroplating` | 3 | 100 | _(module has no anchor)_ |
+| `chm_evaporator_surface` | 3 | 120 | _(module has no anchor)_ |
+| `chm_filter_press` | 3 | 150 | _(module has no anchor)_ |
+| `chm_formaldehyde_synthesis` | 3 | 100 | _(module has no anchor)_ |
+| `chm_fractionating_column` | 3 | 200 | _(module has no anchor)_ |
+| `chm_fulminate` | 3 | 80 | _(module has no anchor)_ |
+| `chm_gelignite` | 3 | 100 | _(module has no anchor)_ |
+| `chm_glycerol` | 3 | 100 | _(module has no anchor)_ |
+| `chm_guncotton` | 3 | 120 | _(module has no anchor)_ |
+| `chm_industrial_hygiene` | 3 | 200 | _(module has no anchor)_ |
+| `chm_matches` | 3 | 100 | _(module has no anchor)_ |
+| `chm_naphthalene` | 3 | 100 | _(module has no anchor)_ |
+| `chm_nitroglycerin` | 3 | 150 | _(module has no anchor)_ |
+| `chm_oleum` | 3 | 120 | _(module has no anchor)_ |
+| `chm_phenol` | 3 | 120 | _(module has no anchor)_ |
+| `chm_photography` | 3 | 150 | _(module has no anchor)_ |
+| `chm_picric_acid` | 3 | 100 | _(module has no anchor)_ |
+| `chm_pressure_gauge` | 3 | 80 | _(module has no anchor)_ |
+| `chm_pressure_vessel` | 3 | 200 | _(module has no anchor)_ |
+| `chm_refrigerant_ammonia` | 3 | 100 | _(module has no anchor)_ |
+| `chm_salicylic_acid` | 3 | 100 | _(module has no anchor)_ |
+| `chm_smokeless_powder` | 3 | 180 | _(module has no anchor)_ |
+| `chm_solvay_process` | 3 | 250 | _(module has no anchor)_ |
+| `chm_superphosphate` | 3 | 100 | _(module has no anchor)_ |
+| `chm_tnt` | 3 | 150 | _(module has no anchor)_ |
+| `chm_toluene` | 3 | 80 | _(module has no anchor)_ |
+| `chm_water_chlorination` | 3 | 80 | _(module has no anchor)_ |
+| `chm_weldon_process` | 3 | 100 | _(module has no anchor)_ |
 | `destructive_distillation` | 3 | 600 | [`destructive_distillation`](20_chemistry.md#destructive_distillation---destructive-distillation-of-wood-and-coal) |
 | `hydrochloric_acid` | 3 | 300 | [`hydrochloric_acid`](20_chemistry.md#hydrochloric_acid---spirit-of-salt-muriatic-acid) |
 | `industrial_gases` | 3 | 450 | [`industrial_gases`](20_chemistry.md#industrial_gases---industrial-gases-oxygen-and-hydrogen-without) |
 | `lead_chamber` | 3 | 900 | [`lead_chamber`](20_chemistry.md#lead_chamber---the-lead-chamber-process) |
 | `nitric_acid` | 3 | 400 | [`nitric_acid`](20_chemistry.md#nitric_acid---nitric-acid-aqua-fortis) |
 | `soda_leblanc` | 3 | 600 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
+| `chm_alizarin` | 4 | 200 | _(module has no anchor)_ |
+| `chm_aniline` | 4 | 180 | _(module has no anchor)_ |
+| `chm_azo_dyes` | 4 | 150 | _(module has no anchor)_ |
+| `chm_bakelite` | 4 | 150 | _(module has no anchor)_ |
+| `chm_casein` | 4 | 100 | _(module has no anchor)_ |
+| `chm_celluloid` | 4 | 120 | _(module has no anchor)_ |
+| `chm_chlor_alkali_diaphragm` | 4 | 250 | _(module has no anchor)_ |
+| `chm_chlor_alkali_mercury` | 4 | 300 | _(module has no anchor)_ |
+| `chm_chromatography` | 4 | 100 | _(module has no anchor)_ |
+| `chm_contact_vanadium` | 4 | 150 | _(module has no anchor)_ |
+| `chm_corrosion_glass_lined` | 4 | 150 | _(module has no anchor)_ |
+| `chm_detergent_synthetic` | 4 | 150 | _(module has no anchor)_ |
+| `chm_haber_bosch` | 4 | 400 | _(module has no anchor)_ |
+| `chm_indigo_synthesis` | 4 | 220 | _(module has no anchor)_ |
+| `chm_ion_exchange` | 4 | 200 | _(module has no anchor)_ |
+| `chm_ostwald_ammonia_oxidation` | 4 | 250 | _(module has no anchor)_ |
+| `chm_polyethylene` | 4 | 250 | _(module has no anchor)_ |
+| `chm_pvc_synthesis` | 4 | 200 | _(module has no anchor)_ |
+| `chm_saccharin` | 4 | 120 | _(module has no anchor)_ |
+| `chm_sulfonamides` | 4 | 150 | _(module has no anchor)_ |
 | `hydrofluoric_acid` | 4 | 400 | [`hydrofluoric_acid`](20_chemistry.md#hydrofluoric_acid---hydrofluoric-acid-no-established-roman-name) |
+| `chm_corrosion_stainless` | 5 | 80 | _(module has no anchor)_ |
+| `chm_nylon` | 5 | 300 | _(module has no anchor)_ |
 
 ### 30_glass_optics.md
 
@@ -943,343 +1023,149 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `lnd_motor_road_network` | 5 | 250 | _(module has no anchor)_ |
 | `sea_sonar` | 5 | 250 | _(module has no anchor)_ |
 
-## Broken links
+### 90_textiles.md
 
-- `cap_gas_o2h2` points at ``, which does not exist
-- `cap_heat_0700` points at ``, which does not exist
-- `cap_heat_1100` points at ``, which does not exist
-- `cap_heat_1300` points at ``, which does not exist
-- `cap_heat_1600` points at ``, which does not exist
-- `cap_heat_2000` points at ``, which does not exist
-- `cap_heat_3000` points at ``, which does not exist
-- `cap_measure_elec` points at ``, which does not exist
-- `cap_measure_len` points at ``, which does not exist
-- `cap_measure_light` points at ``, which does not exist
-- `cap_measure_mass_mg` points at ``, which does not exist
-- `cap_measure_temp` points at ``, which does not exist
-- `cap_measure_temp_hi` points at ``, which does not exist
-- `cap_measure_time_ms` points at ``, which does not exist
-- `cap_measure_time_s` points at ``, which does not exist
-- `cap_power_electric` points at ``, which does not exist
-- `cap_power_grid` points at ``, which does not exist
-- `cap_power_muscle` points at ``, which does not exist
-- `cap_power_steam` points at ``, which does not exist
-- `cap_power_water` points at ``, which does not exist
-- `cap_pure_2N` points at ``, which does not exist
-- `cap_pure_4N` points at ``, which does not exist
-- `cap_pure_6N` points at ``, which does not exist
-- `cap_pure_9N` points at ``, which does not exist
-- `cap_tol_100nm` points at ``, which does not exist
-- `cap_tol_100um` points at ``, which does not exist
-- `cap_tol_10um` points at ``, which does not exist
-- `cap_tol_1mm` points at ``, which does not exist
-- `cap_tol_1um` points at ``, which does not exist
-- `cap_vac_1e3` points at ``, which does not exist
-- `cap_vac_1e6` points at ``, which does not exist
-- `cap_vac_1e9` points at ``, which does not exist
-- `cap_vac_1torr` points at ``, which does not exist
-- `chm_activated_carbon` points at `Activation of charcoal by steam or acid washing to create high surface area adsorbent`, which does not exist
-- `chm_alizarin` points at `Oxidation of anthraquinone to alizarin, a red dye replacing madder root`, which does not exist
-- `chm_alkali_waste` points at `Recognition that Leblanc produces enormous volumes of CaS and CaSO4 waste requiring regulation`, which does not exist
-- `chm_ammonia_recovery` points at `Distillation column to recover NH3 from mother liquor and recycle to ammonia absorber`, which does not exist
-- `chm_aniline` points at `Nitration of benzene to nitrobenzene, then reduction with iron and acid`, which does not exist
-- `chm_anthracene` points at `Distillation of coal tar above 280 C and crystallisation to yield anthracene`, which does not exist
-- `chm_aspirin` points at `Acetylation of salicylic acid with acetic anhydride to give acetylsalicylic acid`, which does not exist
-- `chm_azo_dyes` points at `Conversion of aniline to diazonium salts, then coupling with phenols or naphthols`, which does not exist
-- `chm_bakelite` points at `Polycondensation of phenol with formaldehyde under heat and pressure in a mould`, which does not exist
-- `chm_benzene` points at `Fractional distillation of coal tar to isolate pure benzene`, which does not exist
-- `chm_black_powder` points at `Mixture of saltpetre, charcoal and sulfur, corned for stability`, which does not exist
-- `chm_blasting_cap` points at `Sealed copper tube containing mercury or lead fulminate to initiate high explosives`, which does not exist
-- `chm_bleaching_powder` points at `Absorption of chlorine gas into dry slaked lime to make stable powder`, which does not exist
-- `chm_casein` points at `Precipitation of casein from milk, hardening with formaldehyde to yield hard plastic`, which does not exist
-- `chm_catalyst_concept` points at `Catalysis speeds reaction by lowering activation energy without being consumed itself`, which does not exist
-- `chm_caustic_soda` points at `Concentration of dilute NaOH solution to 50% by evaporation under vacuum`, which does not exist
-- `chm_celluloid` points at `Plasticisation of nitrocellulose with camphor to yield flexible thermoplastic sheet`, which does not exist
-- `chm_centrifuge` points at `Rotating cylinder to separate solids from liquids by density, with scroll discharge`, which does not exist
-- `chm_chlor_alkali_diaphragm` points at `Electrolysis of brine with asbestos cloth diaphragm separating anode and cathode`, which does not exist
-- `chm_chlor_alkali_mercury` points at `Electrolysis of brine with liquid mercury cathode to produce Cl2 gas and NaOH solution`, which does not exist
-- `chm_chromatography` points at `Separation of mixtures by differential adsorption on a stationary phase`, which does not exist
-- `chm_coal_tar_distillation` points at `Separation of coal tar into volatile fractions: benzene, toluene, naphthalene, anthracene`, which does not exist
-- `chm_contact_sulfuric` points at `Catalytic oxidation of SO2 to SO3 across heated platinum at high purity`, which does not exist
-- `chm_contact_vanadium` points at `V2O5 on silica support as cheaper alternative to platinum`, which does not exist
-- `chm_continuous_batch` points at `Design choice between continuous reactors and batch kettles based on production rate and product lifetime`, which does not exist
-- `chm_corrosion_glass_lined` points at `Fused glass coating on steel for acid resistance and thermal shock resistance`, which does not exist
-- `chm_corrosion_lead` points at `Lined vessels of lead sheet to contain sulfuric acid and chlorine`, which does not exist
-- `chm_corrosion_stainless` points at `Chromium-nickel stainless steel resistant to most chemicals and oxidising acids`, which does not exist
-- `chm_corrosion_stoneware` points at `High-fired stoneware vessels glazed with acid-resistant glaze for chemical storage`, which does not exist
-- `chm_crystallisation` points at `Cooling of saturated solution to grow crystals, which are filtered and dried`, which does not exist
-- `chm_cyanamide_fixation` points at `Production of calcium carbide, then reaction with nitrogen gas to make cyanamide`, which does not exist
-- `chm_deacon_process` points at `Gas-phase oxidation of HCl with air over hot copper chloride catalyst`, which does not exist
-- `chm_detergent_synthetic` points at `Sulfonation of long-chain alkene to yield sulfonic acid, then neutralisation to salt`, which does not exist
-- `chm_dynamite` points at `Adsorption of liquid nitroglycerin onto porous diatomaceous earth for safe transport and storage`, which does not exist
-- `chm_electric_arc_nitrogen` points at `High-temperature arc oxidises nitrogen in air to nitric oxide, absorbed to yield nitric acid`, which does not exist
-- `chm_electroplating` points at `Electrodeposition of metal ions onto a cathode to coat an object`, which does not exist
-- `chm_evaporator_surface` points at `Heated tube bundle in liquid to evaporate solvent slowly while concentrating dissolved salts`, which does not exist
-- `chm_filter_press` points at `Packed plates with cloth or paper filter medium under mechanical pressure`, which does not exist
-- `chm_formaldehyde_synthesis` points at `Catalytic oxidation of methanol vapour over silver or copper catalyst`, which does not exist
-- `chm_fractionating_column` points at `Vertical column with bubble-cap trays to separate liquids by boiling point`, which does not exist
-- `chm_fulminate` points at `Reaction of mercury with dilute nitric acid and ethanol to yield mercury fulminate`, which does not exist
-- `chm_gelignite` points at `Stabilisation of nitroglycerin by absorbing into gelatinised nitrocellulose`, which does not exist
-- `chm_glycerol` points at `Recovery of glycerol from saponification of oils and fats`, which does not exist
-- `chm_guncotton` points at `Cellulose nitrated with mixed acid to yield highly explosive nitrocellulose`, which does not exist
-- `chm_haber_bosch` points at `Synthesis of NH3 from N2 and H2 at 200 atm and 500 C over iron catalyst`, which does not exist
-- `chm_indigo_synthesis` points at `Fusion of indole intermediate to yield indigo; fusion with molten NaOH at 180 C`, which does not exist
-- `chm_industrial_hygiene` points at `Recognition of specific occupational poisons: phosphorus necrosis, mercury, lead, benzene, chlorine gas`, which does not exist
-- `chm_ion_exchange` points at `Synthetic resin beads with exchangeable ions to remove hardness and trace metals`, which does not exist
-- `chm_matches` points at `Wooden sticks coated with red phosphorus, antimony sulfide and potassium dichromate`, which does not exist
-- `chm_naphthalene` points at `Distillation of coal tar above 250 C to obtain naphthalene; crystallisation and recrystallisation`, which does not exist
-- `chm_nitroglycerin` points at `Nitration of glycerol to yield highly sensitive volatile liquid explosive`, which does not exist
-- `chm_nylon` points at `Polycondensation of adipic acid with hexamethylenediamine to yield nylon fibre`, which does not exist
-- `chm_oleum` points at `Concentration of sulfuric acid by absorption of SO3 into 100% H2SO4`, which does not exist
-- `chm_ostwald_ammonia_oxidation` points at `Catalytic oxidation of gaseous ammonia with air over hot platinum gauze`, which does not exist
-- `chm_phenol` points at `Distillation of coal tar yields crude phenol; direct synthesis via benzene sulfonation`, which does not exist
-- `chm_phosphorus_extraction` points at `Roasting of bone ash with carbon in retort at 1300 C, collecting phosphorus vapour on water`, which does not exist
-- `chm_photography` points at `Sensitisation of silver halide emulsions and development chemistry for silver images`, which does not exist
-- `chm_picric_acid` points at `Nitration of phenol to yield picric acid (trinitrophenol)`, which does not exist
-- `chm_polyethylene` points at `Polymerisation of ethylene at 1000 atm and 150 C with organic peroxide initiator`, which does not exist
-- `chm_potash_mining` points at `Extraction of naturally-occurring potassium salt deposits`, which does not exist
-- `chm_pressure_gauge` points at `Spring-loaded metal tube to measure and limit pressure safely`, which does not exist
-- `chm_pressure_vessel` points at `Containment of reaction at elevated temperature and pressure using riveted iron`, which does not exist
-- `chm_pvc_synthesis` points at `Polymerisation of vinyl chloride monomer under free-radical initiation`, which does not exist
-- `chm_refrigerant_ammonia` points at `Use of ammonia as working fluid in mechanical refrigeration compression cycles`, which does not exist
-- `chm_saccharin` points at `Sulfonation then oxidation of methylbenzene to benzosulfimide`, which does not exist
-- `chm_salicylic_acid` points at `Sulfonation and alkali fusion to convert benzenesulfonic acid to phenol`, which does not exist
-- `chm_smokeless_powder` points at `Stabilised nitrocellulose grains for ballistic use, stable for decades`, which does not exist
-- `chm_soap_hard` points at `Saponification of tallow or vegetable oil with caustic soda and salt precipitation`, which does not exist
-- `chm_solvay_process` points at `Absorbing ammonia in brine, then carbonating to precipitate sodium bicarbonate`, which does not exist
-- `chm_sulfonamides` points at `Sulfonation of aniline derivatives followed by amidation to yield sulfonamides`, which does not exist
-- `chm_superphosphate` points at `Treatment of rock phosphate with sulfuric acid to make soluble phosphate fertiliser`, which does not exist
-- `chm_tnt` points at `Nitration of toluene in three stages to yield trinitrotoluene`, which does not exist
-- `chm_toluene` points at `Fractional distillation of coal tar to isolate methylbenzene`, which does not exist
-- `chm_water_chlorination` points at `Addition of chlorine gas or bleaching powder to water to kill pathogens`, which does not exist
-- `chm_water_coagulation` points at `Use of aluminum sulfate or ferric salts to destabilise colloids and settle suspended solids`, which does not exist
-- `chm_water_filtration` points at `Passage of coagulated water through layers of sand and gravel to remove particles`, which does not exist
-- `chm_weldon_process` points at `Oxidation of MnCl2 with bleach to regenerate MnO2, closing the chlorine cycle`, which does not exist
-- `civ_bending_moment` points at ``, which does not exist
-- `civ_elasticity_theory` points at ``, which does not exist
-- `civ_euler_buckling` points at ``, which does not exist
-- `civ_factor_safety` points at ``, which does not exist
-- `civ_materials_testing` points at ``, which does not exist
-- `civ_method_joints` points at ``, which does not exist
-- `civ_neutral_axis` points at ``, which does not exist
-- `civ_soil_mechanics` points at ``, which does not exist
-- `civ_statics` points at ``, which does not exist
-- `fud_agricultural_treatises` points at ``, which does not exist
-- `fud_chocolate_tier9` points at ``, which does not exist
-- `fud_maize_tier9` points at ``, which does not exist
-- `fud_potato_tier9` points at ``, which does not exist
-- `fud_soil_composition_analysis` points at ``, which does not exist
-- `hom_attar_roses` points at ``, which does not exist
-- `hom_bath_piped_hot_water` points at ``, which does not exist
-- `hom_board_games` points at ``, which does not exist
-- `hom_button` points at ``, which does not exist
-- `hom_candle_beeswax` points at ``, which does not exist
-- `hom_candle_tallow` points at ``, which does not exist
-- `hom_carpet_sweeper` points at ``, which does not exist
-- `hom_cosmetics_modern_warning` points at ``, which does not exist
-- `hom_cosmetics_roman` points at ``, which does not exist
-- `hom_deodorant` points at ``, which does not exist
-- `hom_dishwasher` points at ``, which does not exist
-- `hom_doll_fashion` points at ``, which does not exist
-- `hom_double_glazing` points at ``, which does not exist
-- `hom_electric_fan` points at ``, which does not exist
-- `hom_electric_lighting` points at ``, which does not exist
-- `hom_eraser_breadcrumb` points at ``, which does not exist
-- `hom_fireplace_chimney` points at ``, which does not exist
-- `hom_flush_latrine_simple` points at ``, which does not exist
-- `hom_flush_toilet_trap` points at ``, which does not exist
-- `hom_fountain_pen` points at ``, which does not exist
-- `hom_furniture_wooden` points at ``, which does not exist
-- `hom_gas_lamp` points at ``, which does not exist
-- `hom_glass_windows` points at ``, which does not exist
-- `hom_heating_hot_water_radiator` points at ``, which does not exist
-- `hom_hypocaust` points at ``, which does not exist
-- `hom_jigsaw_puzzle` points at ``, which does not exist
-- `hom_kitchen_range` points at ``, which does not exist
-- `hom_lamp_argand` points at ``, which does not exist
-- `hom_lamp_kerosene` points at ``, which does not exist
-- `hom_latrine_water_trap` points at ``, which does not exist
-- `hom_lead_plumbing` points at ``, which does not exist
-- `hom_locks_keys` points at ``, which does not exist
-- `hom_mangle_wringer` points at ``, which does not exist
-- `hom_matches_friction` points at ``, which does not exist
-- `hom_mechanical_clock_home` points at ``, which does not exist
-- `hom_metronome` points at ``, which does not exist
-- `hom_mirror_bronze_polished` points at ``, which does not exist
-- `hom_mirror_silvered_glass` points at ``, which does not exist
-- `hom_musical_instruments` points at ``, which does not exist
-- `hom_oil_lamp_simple` points at ``, which does not exist
-- `hom_pencil` points at ``, which does not exist
-- `hom_perfume_distilled` points at ``, which does not exist
-- `hom_perfume_enfleurage` points at ``, which does not exist
-- `hom_piano` points at ``, which does not exist
-- `hom_playing_cards_printed` points at ``, which does not exist
-- `hom_pocket_watch` points at ``, which does not exist
-- `hom_pressure_cooker` points at ``, which does not exist
-- `hom_printed_books` points at ``, which does not exist
-- `hom_public_bath` points at ``, which does not exist
-- `hom_punkah_ceiling` points at ``, which does not exist
-- `hom_refrigeration_mechanical` points at ``, which does not exist
-- `hom_refrigerator_home_electric` points at ``, which does not exist
-- `hom_safety_pin` points at ``, which does not exist
-- `hom_safety_razor` points at ``, which does not exist
-- `hom_sewer_stormwater_separation` points at ``, which does not exist
-- `hom_sewing_machine_hand` points at ``, which does not exist
-- `hom_shampoo_soap_based` points at ``, which does not exist
-- `hom_soap_hard` points at ``, which does not exist
-- `hom_spectacles` points at ``, which does not exist
-- `hom_sprung_mattress` points at ``, which does not exist
-- `hom_stove_enclosed` points at ``, which does not exist
-- `hom_toothbrush` points at ``, which does not exist
-- `hom_toothpaste_commercial` points at ``, which does not exist
-- `hom_toys_dolls` points at ``, which does not exist
-- `hom_umbrella` points at ``, which does not exist
-- `hom_vacuum_cleaner` points at ``, which does not exist
-- `hom_vacuum_flask` points at ``, which does not exist
-- `hom_washing_machine_electric` points at ``, which does not exist
-- `hom_washing_machine_hand` points at ``, which does not exist
-- `hom_zip_fastener` points at ``, which does not exist
-- `mat_alum` points at ``, which does not exist
-- `mat_aluminium` points at ``, which does not exist
-- `mat_ammonia` points at ``, which does not exist
-- `mat_asbestos` points at ``, which does not exist
-- `mat_bakelite` points at ``, which does not exist
-- `mat_beeswax` points at ``, which does not exist
-- `mat_bitumen` points at ``, which does not exist
-- `mat_blister_steel` points at ``, which does not exist
-- `mat_brass` points at ``, which does not exist
-- `mat_bronze` points at ``, which does not exist
-- `mat_bulk_steel` points at ``, which does not exist
-- `mat_calamine` points at ``, which does not exist
-- `mat_camphor` points at ``, which does not exist
-- `mat_carbon_black` points at ``, which does not exist
-- `mat_cast_iron` points at ``, which does not exist
-- `mat_celluloid` points at ``, which does not exist
-- `mat_cement_portland` points at ``, which does not exist
-- `mat_charcoal` points at ``, which does not exist
-- `mat_chile_nitrate` points at ``, which does not exist
-- `mat_chlorine` points at ``, which does not exist
-- `mat_chromium` points at ``, which does not exist
-- `mat_concrete_reinforced` points at ``, which does not exist
-- `mat_copper` points at ``, which does not exist
-- `mat_crucible_steel` points at ``, which does not exist
-- `mat_cryolite` points at ``, which does not exist
-- `mat_dyes_synthetic` points at ``, which does not exist
-- `mat_emery` points at ``, which does not exist
-- `mat_formaldehyde` points at ``, which does not exist
-- `mat_fused_quartz` points at ``, which does not exist
-- `mat_galena` points at ``, which does not exist
-- `mat_glass_boro` points at ``, which does not exist
-- `mat_glass_lead` points at ``, which does not exist
-- `mat_glass_soda` points at ``, which does not exist
-- `mat_glycerol` points at ``, which does not exist
-- `mat_gold` points at ``, which does not exist
-- `mat_graphite_pure` points at ``, which does not exist
-- `mat_gutta_percha` points at ``, which does not exist
-- `mat_gypsum` points at ``, which does not exist
-- `mat_ice_artificial` points at ``, which does not exist
-- `mat_lead` points at ``, which does not exist
-- `mat_leather` points at ``, which does not exist
-- `mat_lime` points at ``, which does not exist
-- `mat_linen` points at ``, which does not exist
-- `mat_magnesium` points at ``, which does not exist
-- `mat_manganese` points at ``, which does not exist
-- `mat_mercury` points at ``, which does not exist
-- `mat_natron` points at ``, which does not exist
-- `mat_natural_rubber` points at ``, which does not exist
-- `mat_newworld_crops` points at ``, which does not exist
-- `mat_nickel` points at ``, which does not exist
-- `mat_nitrocellulose` points at ``, which does not exist
-- `mat_nitroglycerin` points at ``, which does not exist
-- `mat_olive_oil` points at ``, which does not exist
-- `mat_paper` points at ``, which does not exist
-- `mat_papyrus` points at ``, which does not exist
-- `mat_parchment` points at ``, which does not exist
-- `mat_petroleum_refined` points at ``, which does not exist
-- `mat_platinum_bulk` points at ``, which does not exist
-- `mat_porcelain` points at ``, which does not exist
-- `mat_pozzolana` points at ``, which does not exist
-- `mat_pyrolusite` points at ``, which does not exist
-- `mat_quinine` points at ``, which does not exist
-- `mat_salt` points at ``, which does not exist
-- `mat_shellac` points at ``, which does not exist
-- `mat_silk` points at ``, which does not exist
-- `mat_silver` points at ``, which does not exist
-- `mat_stainless` points at ``, which does not exist
-- `mat_sulfur` points at ``, which does not exist
-- `mat_synthetic_rubber` points at ``, which does not exist
-- `mat_tallow` points at ``, which does not exist
-- `mat_tin` points at ``, which does not exist
-- `mat_tool_steel_hss` points at ``, which does not exist
-- `mat_tungsten` points at ``, which does not exist
-- `mat_vitriols` points at ``, which does not exist
-- `mat_wool` points at ``, which does not exist
-- `mat_wrought_iron` points at ``, which does not exist
-- `mat_zinc` points at ``, which does not exist
-- `med_cocaine_unobtainable` points at ``, which does not exist
-- `met_fatigue_testing` points at ``, which does not exist
-- `met_hardness_test` points at ``, which does not exist
-- `met_mannesmann_piercing` points at ``, which does not exist
-- `met_metallography` points at ``, which does not exist
-- `met_phase_diagram_knowledge` points at ``, which does not exist
-- `met_spectroscopic_assay` points at ``, which does not exist
-- `met_tensile_test` points at ``, which does not exist
-- `prc_apprentice_system` points at ``, which does not exist
-- `prc_toolroom_institution` points at ``, which does not exist
-- `prn_cataloguing_system` points at ``, which does not exist
-- `prn_copyright_economics` points at ``, which does not exist
-- `prn_index_concordance` points at ``, which does not exist
-- `prn_library_archive` points at ``, which does not exist
-- `tex_buttons_buttonholes` points at ``, which does not exist
-- `tex_calico_printing` points at ``, which does not exist
-- `tex_canvas` points at ``, which does not exist
-- `tex_carding` points at ``, which does not exist
-- `tex_chlorine_bleaching` points at ``, which does not exist
-- `tex_chrome_tanning` points at ``, which does not exist
-- `tex_combing` points at ``, which does not exist
-- `tex_cotton_gin` points at ``, which does not exist
-- `tex_cotton_trade` points at ``, which does not exist
-- `tex_drop_spindle` points at ``, which does not exist
-- `tex_dye_madder` points at ``, which does not exist
-- `tex_dye_murex` points at ``, which does not exist
-- `tex_dye_woad` points at ``, which does not exist
-- `tex_felting` points at ``, which does not exist
-- `tex_field_bleaching` points at ``, which does not exist
-- `tex_fitted_garment` points at ``, which does not exist
-- `tex_flying_shuttle` points at ``, which does not exist
-- `tex_fulling` points at ``, which does not exist
-- `tex_fulling_water` points at ``, which does not exist
-- `tex_hand_ginning` points at ``, which does not exist
-- `tex_horizontal_loom` points at ``, which does not exist
-- `tex_hosiery` points at ``, which does not exist
-- `tex_indigo` points at ``, which does not exist
-- `tex_jacquard_loom` points at ``, which does not exist
-- `tex_knitting_frame` points at ``, which does not exist
-- `tex_linen` points at ``, which does not exist
-- `tex_mercerisation` points at ``, which does not exist
-- `tex_mordanting` points at ``, which does not exist
-- `tex_nylon` points at ``, which does not exist
-- `tex_pattern_cutting` points at ``, which does not exist
-- `tex_power_loom` points at ``, which does not exist
-- `tex_rayon_nitro` points at ``, which does not exist
-- `tex_rayon_viscose` points at ``, which does not exist
-- `tex_roller_printing` points at ``, which does not exist
-- `tex_rope_walk` points at ``, which does not exist
-- `tex_sailcloth` points at ``, which does not exist
-- `tex_sewing_machine` points at ``, which does not exist
-- `tex_shoddy` points at ``, which does not exist
-- `tex_silk_trade` points at ``, which does not exist
-- `tex_spinning_jenny` points at ``, which does not exist
-- `tex_spinning_mule` points at ``, which does not exist
-- `tex_spinning_wheel` points at ``, which does not exist
-- `tex_synthetic_dyes` points at ``, which does not exist
-- `tex_tape_measure` points at ``, which does not exist
-- `tex_textile_factory` points at ``, which does not exist
-- `tex_treadle_loom` points at ``, which does not exist
-- `tex_two_beam_loom` points at ``, which does not exist
-- `tex_vegetable_tanning` points at ``, which does not exist
-- `tex_warp_weighted_loom` points at ``, which does not exist
-- `tex_water_frame` points at ``, which does not exist
-- `tex_wool` points at ``, which does not exist
-- `tex_wool_combing_machinery` points at ``, which does not exist
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `tex_cotton_trade` | 0 | 0 | _(module has no anchor)_ |
+| `tex_drop_spindle` | 0 | 0 | _(module has no anchor)_ |
+| `tex_dye_madder` | 0 | 0 | _(module has no anchor)_ |
+| `tex_dye_murex` | 0 | 0 | _(module has no anchor)_ |
+| `tex_dye_woad` | 0 | 0 | _(module has no anchor)_ |
+| `tex_felting` | 0 | 0 | _(module has no anchor)_ |
+| `tex_fulling` | 0 | 0 | _(module has no anchor)_ |
+| `tex_linen` | 0 | 0 | _(module has no anchor)_ |
+| `tex_sailcloth` | 0 | 0 | _(module has no anchor)_ |
+| `tex_silk_trade` | 0 | 0 | _(module has no anchor)_ |
+| `tex_two_beam_loom` | 0 | 0 | _(module has no anchor)_ |
+| `tex_warp_weighted_loom` | 0 | 0 | _(module has no anchor)_ |
+| `tex_wool` | 0 | 0 | _(module has no anchor)_ |
+| `tex_canvas` | 1 | 40 | _(module has no anchor)_ |
+| `tex_carding` | 1 | 60 | _(module has no anchor)_ |
+| `tex_combing` | 1 | 50 | _(module has no anchor)_ |
+| `tex_fitted_garment` | 1 | 50 | _(module has no anchor)_ |
+| `tex_hand_ginning` | 1 | 30 | _(module has no anchor)_ |
+| `tex_horizontal_loom` | 1 | 80 | _(module has no anchor)_ |
+| `tex_indigo` | 1 | 60 | _(module has no anchor)_ |
+| `tex_mordanting` | 1 | 40 | _(module has no anchor)_ |
+| `tex_rope_walk` | 1 | 70 | _(module has no anchor)_ |
+| `tex_shoddy` | 1 | 40 | _(module has no anchor)_ |
+| `tex_spinning_wheel` | 1 | 100 | _(module has no anchor)_ |
+| `tex_treadle_loom` | 1 | 90 | _(module has no anchor)_ |
+| `tex_buttons_buttonholes` | 2 | 50 | _(module has no anchor)_ |
+| `tex_calico_printing` | 2 | 140 | _(module has no anchor)_ |
+| `tex_cotton_gin` | 2 | 80 | _(module has no anchor)_ |
+| `tex_field_bleaching` | 2 | 50 | _(module has no anchor)_ |
+| `tex_flying_shuttle` | 2 | 120 | _(module has no anchor)_ |
+| `tex_fulling_water` | 2 | 120 | _(module has no anchor)_ |
+| `tex_hosiery` | 2 | 70 | _(module has no anchor)_ |
+| `tex_knitting_frame` | 2 | 150 | _(module has no anchor)_ |
+| `tex_pattern_cutting` | 2 | 80 | _(module has no anchor)_ |
+| `tex_power_loom` | 2 | 250 | _(module has no anchor)_ |
+| `tex_sewing_machine` | 2 | 160 | _(module has no anchor)_ |
+| `tex_spinning_jenny` | 2 | 100 | _(module has no anchor)_ |
+| `tex_tape_measure` | 2 | 40 | _(module has no anchor)_ |
+| `tex_textile_factory` | 2 | 300 | _(module has no anchor)_ |
+| `tex_vegetable_tanning` | 2 | 100 | _(module has no anchor)_ |
+| `tex_water_frame` | 2 | 280 | _(module has no anchor)_ |
+| `tex_wool_combing_machinery` | 2 | 180 | _(module has no anchor)_ |
+| `tex_jacquard_loom` | 3 | 250 | _(module has no anchor)_ |
+| `tex_mercerisation` | 3 | 100 | _(module has no anchor)_ |
+| `tex_roller_printing` | 3 | 180 | _(module has no anchor)_ |
+| `tex_spinning_mule` | 3 | 200 | _(module has no anchor)_ |
+| `tex_chlorine_bleaching` | 4 | 120 | _(module has no anchor)_ |
+| `tex_chrome_tanning` | 4 | 140 | _(module has no anchor)_ |
+| `tex_rayon_nitro` | 4 | 180 | _(module has no anchor)_ |
+| `tex_rayon_viscose` | 4 | 200 | _(module has no anchor)_ |
+| `tex_synthetic_dyes` | 4 | 80 | _(module has no anchor)_ |
+| `tex_nylon` | 5 | 250 | _(module has no anchor)_ |
+
+### 91_household.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `hom_board_games` | 0 | 0 | _(module has no anchor)_ |
+| `hom_candle_beeswax` | 0 | 0 | _(module has no anchor)_ |
+| `hom_candle_tallow` | 0 | 0 | _(module has no anchor)_ |
+| `hom_cosmetics_roman` | 0 | 0 | _(module has no anchor)_ |
+| `hom_flush_latrine_simple` | 0 | 0 | _(module has no anchor)_ |
+| `hom_furniture_wooden` | 0 | 0 | _(module has no anchor)_ |
+| `hom_glass_windows` | 0 | 0 | _(module has no anchor)_ |
+| `hom_hypocaust` | 0 | 0 | _(module has no anchor)_ |
+| `hom_lead_plumbing` | 0 | 0 | _(module has no anchor)_ |
+| `hom_locks_keys` | 0 | 0 | _(module has no anchor)_ |
+| `hom_mirror_bronze_polished` | 0 | 0 | _(module has no anchor)_ |
+| `hom_musical_instruments` | 0 | 0 | _(module has no anchor)_ |
+| `hom_oil_lamp_simple` | 0 | 0 | _(module has no anchor)_ |
+| `hom_perfume_enfleurage` | 0 | 0 | _(module has no anchor)_ |
+| `hom_public_bath` | 0 | 0 | _(module has no anchor)_ |
+| `hom_button` | 1 | 40 | _(module has no anchor)_ |
+| `hom_eraser_breadcrumb` | 1 | 30 | _(module has no anchor)_ |
+| `hom_fireplace_chimney` | 1 | 120 | _(module has no anchor)_ |
+| `hom_flush_toilet_trap` | 1 | 80 | _(module has no anchor)_ |
+| `hom_jigsaw_puzzle` | 1 | 100 | _(module has no anchor)_ |
+| `hom_latrine_water_trap` | 1 | 60 | _(module has no anchor)_ |
+| `hom_matches_friction` | 1 | 60 | _(module has no anchor)_ |
+| `hom_mirror_silvered_glass` | 1 | 90 | _(module has no anchor)_ |
+| `hom_pencil` | 1 | 70 | _(module has no anchor)_ |
+| `hom_playing_cards_printed` | 1 | 60 | _(module has no anchor)_ |
+| `hom_punkah_ceiling` | 1 | 50 | _(module has no anchor)_ |
+| `hom_safety_pin` | 1 | 40 | _(module has no anchor)_ |
+| `hom_soap_hard` | 1 | 80 | _(module has no anchor)_ |
+| `hom_spectacles` | 1 | 90 | _(module has no anchor)_ |
+| `hom_stove_enclosed` | 1 | 100 | _(module has no anchor)_ |
+| `hom_toothbrush` | 1 | 50 | _(module has no anchor)_ |
+| `hom_umbrella` | 1 | 80 | _(module has no anchor)_ |
+| `hom_kitchen_range` | 2 | 130 | _(module has no anchor)_ |
+| `hom_lamp_argand` | 2 | 100 | _(module has no anchor)_ |
+| `hom_lamp_kerosene` | 2 | 90 | _(module has no anchor)_ |
+| `hom_mangle_wringer` | 2 | 100 | _(module has no anchor)_ |
+| `hom_mechanical_clock_home` | 2 | 180 | _(module has no anchor)_ |
+| `hom_metronome` | 2 | 110 | _(module has no anchor)_ |
+| `hom_perfume_distilled` | 2 | 140 | _(module has no anchor)_ |
+| `hom_piano` | 2 | 250 | _(module has no anchor)_ |
+| `hom_pocket_watch` | 2 | 200 | _(module has no anchor)_ |
+| `hom_pressure_cooker` | 2 | 150 | _(module has no anchor)_ |
+| `hom_printed_books` | 2 | 160 | _(module has no anchor)_ |
+| `hom_sewing_machine_hand` | 2 | 180 | _(module has no anchor)_ |
+| `hom_sprung_mattress` | 2 | 120 | _(module has no anchor)_ |
+| `hom_toys_dolls` | 2 | 60 | _(module has no anchor)_ |
+| `hom_washing_machine_hand` | 2 | 140 | _(module has no anchor)_ |
+| `hom_attar_roses` | 3 | 150 | _(module has no anchor)_ |
+| `hom_bath_piped_hot_water` | 3 | 140 | _(module has no anchor)_ |
+| `hom_carpet_sweeper` | 3 | 100 | _(module has no anchor)_ |
+| `hom_deodorant` | 3 | 70 | _(module has no anchor)_ |
+| `hom_doll_fashion` | 3 | 110 | _(module has no anchor)_ |
+| `hom_double_glazing` | 3 | 120 | _(module has no anchor)_ |
+| `hom_fountain_pen` | 3 | 130 | _(module has no anchor)_ |
+| `hom_gas_lamp` | 3 | 140 | _(module has no anchor)_ |
+| `hom_refrigeration_mechanical` | 3 | 200 | _(module has no anchor)_ |
+| `hom_safety_razor` | 3 | 110 | _(module has no anchor)_ |
+| `hom_sewer_stormwater_separation` | 3 | 180 | _(module has no anchor)_ |
+| `hom_shampoo_soap_based` | 3 | 80 | _(module has no anchor)_ |
+| `hom_toothpaste_commercial` | 3 | 90 | _(module has no anchor)_ |
+| `hom_vacuum_flask` | 3 | 120 | _(module has no anchor)_ |
+| `hom_zip_fastener` | 3 | 180 | _(module has no anchor)_ |
+| `hom_cosmetics_modern_warning` | 4 | 100 | _(module has no anchor)_ |
+| `hom_dishwasher` | 4 | 200 | _(module has no anchor)_ |
+| `hom_electric_fan` | 4 | 100 | _(module has no anchor)_ |
+| `hom_electric_lighting` | 4 | 150 | _(module has no anchor)_ |
+| `hom_heating_hot_water_radiator` | 4 | 180 | _(module has no anchor)_ |
+| `hom_refrigerator_home_electric` | 4 | 200 | _(module has no anchor)_ |
+| `hom_vacuum_cleaner` | 4 | 140 | _(module has no anchor)_ |
+| `hom_washing_machine_electric` | 4 | 160 | _(module has no anchor)_ |
+
+## Documentation coverage
+
+| status | nodes |
+|---|---:|
+| linked to a specific recipe entry | 96 |
+| linked to a domain module, no specific entry | 929 |
+| documented in a top-level prose file | 13 |
+| no link BY DESIGN (capability rungs, materials, unobtainables) | 110 |
+| **undocumented, a real gap** | **28** |
+
+The undocumented nodes, listed so the gap is visible rather than hidden:
+
+`civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fud_agricultural_treatises`, `fud_chocolate_tier9`, `fud_maize_tier9`, `fud_potato_tier9`, `fud_soil_composition_analysis`, `med_cocaine_unobtainable`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`
 

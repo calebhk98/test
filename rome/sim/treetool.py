@@ -391,8 +391,15 @@ PREFIX_MODULE = {
  "lnd_":"85_transport_civil.md","sea_":"85_transport_civil.md","air_":"85_transport_civil.md",
  "pwr_":"40_power_precision.md","chm_":"20_chemistry.md","met_":"10_metallurgy.md",
  "prc_":"40_power_precision.md","med_":"70_medicine_biology.md","civ_":"85_transport_civil.md",
- "opt_":"30_glass_optics.md","com_":"50_electricity.md","tex_":"","hom_":"",
+ "opt_":"30_glass_optics.md","tex_":"90_textiles.md","hom_":"91_household.md",
 }
+# com_ splits: calculation and logic go to module 94, everything that moves a
+# signal down a wire or through the air goes to module 50.
+COMPUTING_WORDS = ("calc","comput","boolean","binary","logic","punch","hollerith",
+                   "crypt","informatio","flip_flop","register","accumulator","memory",
+                   "core","drum","tape","compiler","stored_program","error_","slide_rule",
+                   "napier","difference_engine","analytical_engine","arithmometer",
+                   "comptometer","ring_counter","integrated_circuit","photolith")
 HEAT_BY_TIER = {0:"cap_heat_0700",1:"cap_heat_1100",2:"cap_heat_1300",3:"cap_heat_1300",
                 4:"cap_heat_1600",5:"cap_heat_1600"}
 TOL_BY_TIER  = {0:"cap_tol_1mm",1:"cap_tol_1mm",2:"cap_tol_100um",3:"cap_tol_10um",
@@ -467,7 +474,11 @@ def cmd_repair(a):
                 "them as a floor, not a specification.]" % ", ".join(added))
         # documentation level
         if not n.get("kb"):
-            mod = next((v for pre, v in PREFIX_MODULE.items() if k.startswith(pre)), None)
+            if k.startswith("com_"):
+                mod = ("94_computing.md" if any(w in k for w in COMPUTING_WORDS)
+                       else "50_electricity.md")
+            else:
+                mod = next((v for pre, v in PREFIX_MODULE.items() if k.startswith(pre)), None)
             if mod:
                 n["kb"] = mod; n["kb_level"] = "module"; counts["module-level doc links"] += 1
             else:

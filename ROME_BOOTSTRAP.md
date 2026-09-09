@@ -1,43 +1,86 @@
-# ROME 100 AD → THE TRANSISTOR
+# ROME 100 AD -> MODERN TECHNOLOGY
 
 **A guide, a record, a game and a planning tool for someone sent back to the
-Roman Empire under Trajan with the job of getting to solid-state electronics as
-fast as physically possible.**
+Roman Empire under Trajan with the job of rebuilding modern technology as fast
+as physically possible.**
+
+The transistor is the *marker* the simulator aims at, because it is the deepest
+single point in the tree and everything else is upstream of it. It is not the
+subject. The subject is all 1,176 technologies, and the ones that matter most to
+the people who would actually live there are chimneys, water traps, soap and
+lamps.
 
 Everything lives in [`rome/`](rome/). Start with
 [`rome/00_BRIEFING.md`](rome/00_BRIEFING.md).
 
 ---
 
+## Scale
+
+**1,176 technologies, 2,156 dependency edges**, across fifteen domains from
+spinning wheels to jet engines to public key cryptography. Every node is costed
+in the founder's own hours, hired labour by trade, materials, capital, calendar
+floor, failure risk, State interest and suspicion.
+
+Three layers, because the point is to show WHY things are hard:
+
+- **33 capability rungs**: furnace temperature 700 C to 3000 C, machining
+  tolerance 1 mm to 0.1 micron, vacuum 1 torr to 1e-9, purity 99% to one part in
+  a billion, power from muscle to grid, and eight kinds of measurement. A
+  technology names the rung it needs and the tree proves you can reach it.
+- **70 materials as nodes with their own prerequisites**, including **11 marked
+  UNOBTAINABLE** (rubber, gutta percha, quinine, Chile saltpetre, cryolite, bulk
+  platinum, potato, maize, chocolate, cocaine) so that the tree states the
+  impossibility instead of quietly omitting it.
+- **1,073 technologies.**
+
+**The transistor needs 97 of them. The other 1,079 are the rest of technology**,
+and that is deliberate: a tree that only covers the path to a transistor is
+dishonest about what technology is for. Most human benefit is in module 91,
+which is about chimneys, water traps and lamps.
+
 ## The answer, in seven lines
 
-- The irreducible serial calendar time to a working transistor is **133 years**,
-  across 23 nodes, even with unlimited money and labour.
-- Across 600 simulated runs of the best strategy I could write, the median is
-  **385 AD**, about **285 years** after arrival, with **78%** of runs succeeding
-  within five centuries.
-- **You will not see it.** You will die around 128 AD having personally directed
-  about **44%** of the tree.
-- The naive strategy, beelining at the goal, **succeeds in 0 of 600 runs.** It
-  does not fail at the transistor. It fails at basic atomic chemistry, because
-  it never trained a second person who understood anything. A bare topological
-  ordering of the technical prerequisites manages 5 of 600.
-- **The technical dependency graph is not the real dependency graph.** Nothing
-  in the chain from zinc ore to a germanium crystal requires you to be a Roman
-  citizen, to have a patron, or to have taught anybody. Remove those and the
-  success rate goes to zero.
-- The four highest-value *technical* nodes in the tree are **write it down,
-  print it, copy it, and make the paper**. Removing them costs 83, 47, 40 and 42
-  years. No furnace or engine comes close.
+- The irreducible serial calendar time to a working transistor is **141 years**
+  across 28 nodes, even with unlimited money, labour and life.
+- With the founder immortal, which is the default, the median run reaches it in
+  **275 AD**, about **175 years** after arrival, in **86%** of 200 runs.
+- Turning mortality back on (`--mortal`) barely changes it: 90%, median 276 AD.
+  The programme now survives its founder, which it could not in the first
+  version. **The dominant failure mode has shifted from succession to politics:
+  14% of immortal runs end with the founder denounced as a magician**, because an
+  immortal who never stops producing marvels accumulates suspicion faster than
+  any patron can absorb it.
+- **Reputation is now a resource** distinct from money and protection. It
+  shortens diffusion floors, attracts staff you did not pay for, and makes you
+  harder to accuse. Median final reputation in a successful run: 74/100.
+- Past about 50,000 denarii, **more starting gold makes you less likely to
+  succeed**, because money buys speed, speed buys visibility, and visibility in
+  Trajanic Italy is dangerous.
 - Three things that will surprise you: **Roman *nitrum* is sodium carbonate, not
   saltpetre**; **zinc metal is the hidden gate on the entire electrical age**;
   and **a single glass bead is a 250x microscope you can build in a week**.
-- Two results the simulator produced that I did not expect and did not tune away:
-  **past about 50,000 denarii, more starting gold makes you *less* likely to
-  succeed** (the failure mode switches from dying untaught to being denounced as
-  a magician), and **the founder's lifespan is a cliff, not a slope**: below 20
-  years the success rate is zero, at 28 years it is 86%, and living to 95 buys
-  almost nothing over living to 63.
+- The four highest-value nodes are still **write it down, print it, copy it, and
+  make the paper**.
+
+## How this is graded
+
+**Not by the end date.** Each technology is judged on its own:
+*could someone holding exactly this node's prerequisites, and nothing else,
+actually build it?*
+
+```bash
+python3 rome/sim/treetool.py judge --id zinc_metal
+```
+
+gives a report card: grade, tier, direct prerequisites, full ancestry depth,
+which capability rungs appear in its chain, cost, calendar floor, and every
+defect by name. Across all 1,176 nodes the mean is 98/100 after repair, and
+**you should discount that number**, because a large part of the rise from 80.8
+is my own checker being satisfied by my own repair. Every prerequisite the
+repair inferred is stamped into the node so you can find all 112 of them. The
+trustworthy check is `rome/data/INDEPENDENT_AUDIT.md`, done by a separate
+reviewer against a random sample of 70 nodes.
 
 ## What is here
 
@@ -52,7 +95,10 @@ Everything lives in [`rome/`](rome/). Start with
 | [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** Eleven modules of actual recipes with masses, temperatures and failure modes, plus a generated index linking all 128 tree nodes to the entry that documents them. |
 | [`rome/knowledge/00_NONOBVIOUS_TRICKS.md`](rome/knowledge/00_NONOBVIOUS_TRICKS.md) | **Start here in the library.** The 33 specific physical tricks that make everything else buildable. |
 | [`rome/knowledge/99_AUDIT.md`](rome/knowledge/99_AUDIT.md) | An adversarial fact-check of the technical modules. It found real errors and they have been fixed. |
-| [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | 128 nodes, 254 dependency edges, fully costed in hours, denarii, materials, risk and political consequence. |
+| [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | **1,176 nodes, 2,156 edges**, fully costed in hours, denarii, materials, risk and political consequence. |
+| [`rome/data/branches/`](rome/data/branches/) | Per-domain source files, plus the CONTRACT and VOCABULARY the branch authors worked to. |
+| [`rome/sim/treetool.py`](rome/sim/treetool.py) | **Merge, repair, and JUDGE EACH TECHNOLOGY IN ISOLATION.** |
+| [`rome/data/INDEPENDENT_AUDIT.md`](rome/data/INDEPENDENT_AUDIT.md) | A hostile reviewer's findings against a random sample of 70 nodes. |
 | [`rome/data/prices.json`](rome/data/prices.json) | Roman wages and commodity prices, every figure confidence-tagged. |
 | [`rome/sim/simulator.py`](rome/sim/simulator.py) | The tool. Validates, plans, Monte-Carlos, ablates, and plays. |
 | [`rome/log/playthrough_01.md`](rome/log/playthrough_01.md) | Real simulator traces: the lucky run, the typical run, and a failure. |
@@ -68,6 +114,10 @@ python3 rome/sim/simulator.py compare --mc 500                # rush vs topologi
 python3 rome/sim/simulator.py sensitivity --mc 300            # what is each choice worth
 python3 rome/sim/simulator.py sweep capital                   # how much gold should you bring
 python3 rome/sim/simulator.py sweep lifespan                  # how long must you live
+python3 rome/sim/simulator.py run --mortal                    # turn death back on
+python3 rome/sim/treetool.py  judge                           # score all 1,176 nodes
+python3 rome/sim/treetool.py  judge --id zinc_metal           # one report card
+python3 rome/sim/treetool.py  merge                           # branches -> tree
 python3 rome/sim/simulator.py run --strategy recommended --trace
 python3 rome/sim/simulator.py play                            # play it year by year
 python3 rome/sim/build_index.py                               # regenerate the library index

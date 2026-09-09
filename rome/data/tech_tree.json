@@ -3093,7 +3093,7 @@
     "charcoal_industrial",
     "cap_heat_1100"
    ],
-   "kb": "Activation of charcoal by steam or acid washing to create high surface area adsorbent",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "furnaceman": 150,
@@ -3127,7 +3127,7 @@
     "chm_coal_tar_distillation",
     "electrolysis_industrial"
    ],
-   "kb": "Oxidation of anthraquinone to alizarin, a red dye replacing madder root",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "chemist": 250,
@@ -3159,7 +3159,7 @@
    "pre": [
     "soda_leblanc"
    ],
-   "kb": "Recognition that Leblanc produces enormous volumes of CaS and CaSO4 waste requiring regulation",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "scholar": 200
@@ -3189,7 +3189,7 @@
     "chm_solvay_process",
     "distillation_alcohol"
    ],
-   "kb": "Distillation column to recover NH3 from mother liquor and recycle to ammonia absorber",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -3223,7 +3223,7 @@
     "chm_benzene",
     "industrial_gases"
    ],
-   "kb": "Nitration of benzene to nitrobenzene, then reduction with iron and acid",
+   "kb": "20_chemistry.md",
    "ph": 180,
    "lab": {
     "chemist": 250
@@ -3255,7 +3255,7 @@
    "pre": [
     "chm_coal_tar_distillation"
    ],
-   "kb": "Distillation of coal tar above 280 C and crystallisation to yield anthracene",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -3286,7 +3286,7 @@
    "pre": [
     "chm_salicylic_acid"
    ],
-   "kb": "Acetylation of salicylic acid with acetic anhydride to give acetylsalicylic acid",
+   "kb": "20_chemistry.md",
    "ph": 60,
    "lab": {
     "chemist": 100
@@ -3318,7 +3318,7 @@
     "chm_aniline",
     "nitric_acid"
    ],
-   "kb": "Conversion of aniline to diazonium salts, then coupling with phenols or naphthols",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200
@@ -3349,7 +3349,7 @@
    "pre": [
     "chm_phenol"
    ],
-   "kb": "Polycondensation of phenol with formaldehyde under heat and pressure in a mould",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200,
@@ -3382,7 +3382,7 @@
     "chm_coal_tar_distillation",
     "cap_pure_4N"
    ],
-   "kb": "Fractional distillation of coal tar to isolate pure benzene",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "chemist": 150
@@ -3413,7 +3413,7 @@
    "pre": [
     "gunpowder"
    ],
-   "kb": "Mixture of saltpetre, charcoal and sulfur, corned for stability",
+   "kb": "20_chemistry.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -3441,7 +3441,7 @@
     "chm_fulminate",
     "cap_tol_1mm"
    ],
-   "kb": "Sealed copper tube containing mercury or lead fulminate to initiate high explosives",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -3475,7 +3475,7 @@
     "soda_leblanc",
     "chm_deacon_process"
    ],
-   "kb": "Absorption of chlorine gas into dry slaked lime to make stable powder",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "chemist": 120,
@@ -3508,7 +3508,7 @@
    "pre": [
     "analytical_chemistry"
    ],
-   "kb": "Precipitation of casein from milk, hardening with formaldehyde to yield hard plastic",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -3541,7 +3541,7 @@
     "thermodynamics_theory",
     "crucible_steel"
    ],
-   "kb": "Catalysis speeds reaction by lowering activation energy without being consumed itself",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "scholar": 200,
@@ -3577,7 +3577,7 @@
     "cap_heat_1100",
     "cap_vac_1torr"
    ],
-   "kb": "Concentration of dilute NaOH solution to 50% by evaporation under vacuum",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -3611,7 +3611,7 @@
     "chm_guncotton",
     "cap_heat_1600"
    ],
-   "kb": "Plasticisation of nitrocellulose with camphor to yield flexible thermoplastic sheet",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "chemist": 150
@@ -3643,7 +3643,7 @@
     "cap_tol_100um",
     "cap_power_steam"
    ],
-   "kb": "Rotating cylinder to separate solids from liquids by density, with scroll discharge",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "machinist": 300
@@ -3676,7 +3676,7 @@
     "electrolysis_industrial",
     "cap_measure_elec"
    ],
-   "kb": "Electrolysis of brine with asbestos cloth diaphragm separating anode and cathode",
+   "kb": "20_chemistry.md",
    "ph": 250,
    "lab": {
     "chemist": 350,
@@ -3713,7 +3713,7 @@
     "cap_tol_1mm",
     "cap_measure_elec"
    ],
-   "kb": "Electrolysis of brine with liquid mercury cathode to produce Cl2 gas and NaOH solution",
+   "kb": "20_chemistry.md",
    "ph": 300,
    "lab": {
     "chemist": 400,
@@ -3749,7 +3749,7 @@
     "analytical_chemistry",
     "cap_pure_4N"
    ],
-   "kb": "Separation of mixtures by differential adsorption on a stationary phase",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -3781,7 +3781,7 @@
    "pre": [
     "destructive_distillation"
    ],
-   "kb": "Separation of coal tar into volatile fractions: benzene, toluene, naphthalene, anthracene",
+   "kb": "20_chemistry.md",
    "ph": 250,
    "lab": {
     "chemist": 300,
@@ -3819,7 +3819,7 @@
     "chm_catalyst_concept",
     "chm_pressure_gauge"
    ],
-   "kb": "Catalytic oxidation of SO2 to SO3 across heated platinum at high purity",
+   "kb": "20_chemistry.md",
    "ph": 300,
    "lab": {
     "chemist": 400,
@@ -3856,7 +3856,7 @@
     "analytical_chemistry",
     "cap_pure_4N"
    ],
-   "kb": "V2O5 on silica support as cheaper alternative to platinum",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200,
@@ -3889,7 +3889,7 @@
    "pre": [
     "cap_measure_time_s"
    ],
-   "kb": "Design choice between continuous reactors and batch kettles based on production rate and product lifetime",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "scholar": 150,
@@ -3921,7 +3921,7 @@
     "mat_bulk_steel",
     "cap_heat_1600"
    ],
-   "kb": "Fused glass coating on steel for acid resistance and thermal shock resistance",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "glassblower": 200,
@@ -3955,7 +3955,7 @@
     "lead_metallurgy",
     "cap_tol_1mm"
    ],
-   "kb": "Lined vessels of lead sheet to contain sulfuric acid and chlorine",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "smith": 150,
@@ -3988,7 +3988,7 @@
     "mat_stainless",
     "mat_bulk_steel"
    ],
-   "kb": "Chromium-nickel stainless steel resistant to most chemicals and oxidising acids",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "smith": 150
@@ -4019,7 +4019,7 @@
    "pre": [
     "mat_porcelain"
    ],
-   "kb": "High-fired stoneware vessels glazed with acid-resistant glaze for chemical storage",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "potter": 200
@@ -4050,7 +4050,7 @@
    "pre": [
     "cap_measure_temp"
    ],
-   "kb": "Cooling of saturated solution to grow crystals, which are filtered and dried",
+   "kb": "20_chemistry.md",
    "ph": 60,
    "lab": {
     "artisan": 80
@@ -4080,7 +4080,7 @@
     "coal_coke",
     "cap_heat_3000"
    ],
-   "kb": "Production of calcium carbide, then reaction with nitrogen gas to make cyanamide",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "furnaceman": 250,
@@ -4115,7 +4115,7 @@
     "cap_heat_1600",
     "chm_catalyst_concept"
    ],
-   "kb": "Gas-phase oxidation of HCl with air over hot copper chloride catalyst",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200,
@@ -4148,7 +4148,7 @@
    "pre": [
     "mat_petroleum_refined"
    ],
-   "kb": "Sulfonation of long-chain alkene to yield sulfonic acid, then neutralisation to salt",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200
@@ -4180,7 +4180,7 @@
     "chm_nitroglycerin",
     "cap_heat_1300"
    ],
-   "kb": "Adsorption of liquid nitroglycerin onto porous diatomaceous earth for safe transport and storage",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -4212,7 +4212,7 @@
     "industrial_gases",
     "cap_heat_3000"
    ],
-   "kb": "High-temperature arc oxidises nitrogen in air to nitric oxide, absorbed to yield nitric acid",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "furnaceman": 150,
@@ -4246,7 +4246,7 @@
     "cap_measure_elec",
     "cap_power_water"
    ],
-   "kb": "Electrodeposition of metal ions onto a cathode to coat an object",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -4279,7 +4279,7 @@
     "cap_heat_1100",
     "cap_measure_temp"
    ],
-   "kb": "Heated tube bundle in liquid to evaporate solvent slowly while concentrating dissolved salts",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "smith": 150,
@@ -4312,7 +4312,7 @@
    "pre": [
     "cap_tol_1mm"
    ],
-   "kb": "Packed plates with cloth or paper filter medium under mechanical pressure",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "machinist": 200,
@@ -4346,7 +4346,7 @@
     "distillation_alcohol",
     "chm_catalyst_concept"
    ],
-   "kb": "Catalytic oxidation of methanol vapour over silver or copper catalyst",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -4380,7 +4380,7 @@
     "cap_heat_1100",
     "cap_tol_1mm"
    ],
-   "kb": "Vertical column with bubble-cap trays to separate liquids by boiling point",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "machinist": 300,
@@ -4415,7 +4415,7 @@
     "nitric_acid",
     "cap_heat_1300"
    ],
-   "kb": "Reaction of mercury with dilute nitric acid and ethanol to yield mercury fulminate",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "chemist": 150
@@ -4449,7 +4449,7 @@
     "chm_guncotton",
     "cap_heat_1300"
    ],
-   "kb": "Stabilisation of nitroglycerin by absorbing into gelatinised nitrocellulose",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -4481,7 +4481,7 @@
     "chm_soap_hard",
     "cap_vac_1torr"
    ],
-   "kb": "Recovery of glycerol from saponification of oils and fats",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -4513,7 +4513,7 @@
     "nitric_acid",
     "cap_heat_1300"
    ],
-   "kb": "Cellulose nitrated with mixed acid to yield highly explosive nitrocellulose",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "chemist": 180
@@ -4550,7 +4550,7 @@
     "chm_pressure_gauge",
     "cap_pure_4N"
    ],
-   "kb": "Synthesis of NH3 from N2 and H2 at 200 atm and 500 C over iron catalyst",
+   "kb": "20_chemistry.md",
    "ph": 400,
    "lab": {
     "chemist": 400,
@@ -4585,7 +4585,7 @@
     "chm_aniline",
     "analytical_chemistry"
    ],
-   "kb": "Fusion of indole intermediate to yield indigo; fusion with molten NaOH at 180 C",
+   "kb": "20_chemistry.md",
    "ph": 220,
    "lab": {
     "chemist": 300,
@@ -4618,7 +4618,7 @@
     "germ_theory",
     "cap_heat_1300"
    ],
-   "kb": "Recognition of specific occupational poisons: phosphorus necrosis, mercury, lead, benzene, chlorine gas",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "scholar": 300,
@@ -4649,7 +4649,7 @@
     "mat_bulk_steel",
     "cap_pure_4N"
    ],
-   "kb": "Synthetic resin beads with exchangeable ions to remove hardness and trace metals",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "chemist": 200,
@@ -4681,7 +4681,7 @@
    "pre": [
     "cap_heat_1300"
    ],
-   "kb": "Wooden sticks coated with red phosphorus, antimony sulfide and potassium dichromate",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -4713,7 +4713,7 @@
    "pre": [
     "chm_coal_tar_distillation"
    ],
-   "kb": "Distillation of coal tar above 250 C to obtain naphthalene; crystallisation and recrystallisation",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -4745,7 +4745,7 @@
     "chm_glycerol",
     "nitric_acid"
    ],
-   "kb": "Nitration of glycerol to yield highly sensitive volatile liquid explosive",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 250
@@ -4777,7 +4777,7 @@
     "chm_aniline",
     "analytical_chemistry"
    ],
-   "kb": "Polycondensation of adipic acid with hexamethylenediamine to yield nylon fibre",
+   "kb": "20_chemistry.md",
    "ph": 300,
    "lab": {
     "chemist": 350,
@@ -4810,7 +4810,7 @@
     "chm_contact_sulfuric",
     "lead_chamber"
    ],
-   "kb": "Concentration of sulfuric acid by absorption of SO3 into 100% H2SO4",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "chemist": 150,
@@ -4846,7 +4846,7 @@
     "nitric_acid",
     "industrial_gases"
    ],
-   "kb": "Catalytic oxidation of gaseous ammonia with air over hot platinum gauze",
+   "kb": "20_chemistry.md",
    "ph": 250,
    "lab": {
     "chemist": 300,
@@ -4880,7 +4880,7 @@
     "chm_coal_tar_distillation",
     "chm_salicylic_acid"
    ],
-   "kb": "Distillation of coal tar yields crude phenol; direct synthesis via benzene sulfonation",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "chemist": 150
@@ -4911,7 +4911,7 @@
    "pre": [
     "cap_heat_1300"
    ],
-   "kb": "Roasting of bone ash with carbon in retort at 1300 C, collecting phosphorus vapour on water",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "furnaceman": 150
@@ -4944,7 +4944,7 @@
     "photography",
     "analytical_chemistry"
    ],
-   "kb": "Sensitisation of silver halide emulsions and development chemistry for silver images",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200,
@@ -4977,7 +4977,7 @@
    "pre": [
     "chm_phenol"
    ],
-   "kb": "Nitration of phenol to yield picric acid (trinitrophenol)",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -5009,7 +5009,7 @@
     "chm_pressure_vessel",
     "industrial_gases"
    ],
-   "kb": "Polymerisation of ethylene at 1000 atm and 150 C with organic peroxide initiator",
+   "kb": "20_chemistry.md",
    "ph": 250,
    "lab": {
     "chemist": 300,
@@ -5042,7 +5042,7 @@
     "mining_concession",
     "cap_tol_100um"
    ],
-   "kb": "Extraction of naturally-occurring potassium salt deposits",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "miner": 300,
@@ -5077,7 +5077,7 @@
     "mat_brass",
     "master_screw"
    ],
-   "kb": "Spring-loaded metal tube to measure and limit pressure safely",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "machinist": 200,
@@ -5114,7 +5114,7 @@
     "mat_wrought_iron",
     "steam_high_pressure"
    ],
-   "kb": "Containment of reaction at elevated temperature and pressure using riveted iron",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "smith": 400,
@@ -5147,7 +5147,7 @@
    "pre": [
     "electrolysis_industrial"
    ],
-   "kb": "Polymerisation of vinyl chloride monomer under free-radical initiation",
+   "kb": "20_chemistry.md",
    "ph": 200,
    "lab": {
     "chemist": 250,
@@ -5180,7 +5180,7 @@
     "chm_haber_bosch",
     "thermodynamics_theory"
    ],
-   "kb": "Use of ammonia as working fluid in mechanical refrigeration compression cycles",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -5213,7 +5213,7 @@
    "pre": [
     "chm_benzene"
    ],
-   "kb": "Sulfonation then oxidation of methylbenzene to benzosulfimide",
+   "kb": "20_chemistry.md",
    "ph": 120,
    "lab": {
     "chemist": 180
@@ -5245,7 +5245,7 @@
     "chm_benzene",
     "cap_heat_1100"
    ],
-   "kb": "Sulfonation and alkali fusion to convert benzenesulfonic acid to phenol",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150
@@ -5277,7 +5277,7 @@
     "chm_guncotton",
     "cap_pure_4N"
    ],
-   "kb": "Stabilised nitrocellulose grains for ballistic use, stable for decades",
+   "kb": "20_chemistry.md",
    "ph": 180,
    "lab": {
     "chemist": 200,
@@ -5311,7 +5311,7 @@
     "potash_soda",
     "cap_tol_100um"
    ],
-   "kb": "Saponification of tallow or vegetable oil with caustic soda and salt precipitation",
+   "kb": "20_chemistry.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -5342,7 +5342,7 @@
     "chm_pressure_gauge",
     "mat_ammonia"
    ],
-   "kb": "Absorbing ammonia in brine, then carbonating to precipitate sodium bicarbonate",
+   "kb": "20_chemistry.md",
    "ph": 250,
    "lab": {
     "chemist": 300,
@@ -5377,7 +5377,7 @@
     "chm_aniline",
     "chm_salicylic_acid"
    ],
-   "kb": "Sulfonation of aniline derivatives followed by amidation to yield sulfonamides",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200,
@@ -5411,7 +5411,7 @@
     "lead_chamber",
     "cap_heat_1300"
    ],
-   "kb": "Treatment of rock phosphate with sulfuric acid to make soluble phosphate fertiliser",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -5444,7 +5444,7 @@
    "pre": [
     "chm_toluene"
    ],
-   "kb": "Nitration of toluene in three stages to yield trinitrotoluene",
+   "kb": "20_chemistry.md",
    "ph": 150,
    "lab": {
     "chemist": 200
@@ -5475,7 +5475,7 @@
    "pre": [
     "chm_coal_tar_distillation"
    ],
-   "kb": "Fractional distillation of coal tar to isolate methylbenzene",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "chemist": 150
@@ -5507,7 +5507,7 @@
     "chm_deacon_process",
     "chm_bleaching_powder"
    ],
-   "kb": "Addition of chlorine gas or bleaching powder to water to kill pathogens",
+   "kb": "20_chemistry.md",
    "ph": 80,
    "lab": {
     "chemist": 120
@@ -5538,7 +5538,7 @@
    "pre": [
     "analytical_chemistry"
    ],
-   "kb": "Use of aluminum sulfate or ferric salts to destabilise colloids and settle suspended solids",
+   "kb": "20_chemistry.md",
    "ph": 60,
    "lab": {
     "chemist": 100
@@ -5569,7 +5569,7 @@
    "pre": [
     "chm_water_coagulation"
    ],
-   "kb": "Passage of coagulated water through layers of sand and gravel to remove particles",
+   "kb": "20_chemistry.md",
    "ph": 60,
    "lab": {
     "artisan": 100
@@ -5601,7 +5601,7 @@
     "hydrochloric_acid",
     "chm_deacon_process"
    ],
-   "kb": "Oxidation of MnCl2 with bleach to regenerate MnO2, closing the chlorine cycle",
+   "kb": "20_chemistry.md",
    "ph": 100,
    "lab": {
     "chemist": 150,
@@ -13697,7 +13697,7 @@
     "distillation_alcohol",
     "hom_perfume_distilled"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 150,
    "lab": {
     "chemist": 140,
@@ -13720,7 +13720,7 @@
    "note": "Distilled rose oil (4 kg of petals for 1 g of oil). Extremely expensive and high-margin. Attar is one of the best early revenue products: small weight, non-perishable, high demand from the wealthy. Bulgarian and Persian atar dominate the market.",
    "_src": "12_household.json",
    "_total_cost": 236.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_bath_piped_hot_water",
@@ -13731,7 +13731,7 @@
     "steam_high_pressure",
     "cap_power_steam"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 140,
    "lab": {
     "plumber": 150,
@@ -13755,7 +13755,7 @@
    "note": "A boiler (steam-driven or later electric) supplies hot water on demand. Luxurious; middle-class homes gain hot water later than wealthy houses. Requires pressurised pipes and heating infrastructure. Modern thermostatic mixing valves prevent scalding.",
    "_src": "12_household.json",
    "_total_cost": 537.6,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_board_games",
@@ -13763,7 +13763,7 @@
    "tier": 0,
    "cat": "leisure",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -13780,7 +13780,7 @@
    "note": "Latrunculi (small stones on a board), duodecim scripta (twelve marks, ancestor of backgammon), and knucklebones for gaming. Dice are carved bone or stone.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_button",
@@ -13790,7 +13790,7 @@
    "pre": [
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 40,
    "lab": {
     "artisan": 60
@@ -13812,7 +13812,7 @@
    "note": "Buttons exist in Rome but are rare and made of stone or bone. The eyelet (sewn loop) adds cost. Horn buttons become viable later with better tools. Buttons displace expensive brooches, freeing wealth.",
    "_src": "12_household.json",
    "_total_cost": 31.55,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_candle_beeswax",
@@ -13820,7 +13820,7 @@
    "tier": 0,
    "cat": "lighting",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -13837,7 +13837,7 @@
    "note": "Expensive, clean-burning, fragrant. Beeswax is a byproduct of honey extraction and remains expensive through the early modern period.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_candle_tallow",
@@ -13845,7 +13845,7 @@
    "tier": 0,
    "cat": "lighting",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -13862,7 +13862,7 @@
    "note": "Cheap animal-fat candles; smoky and foul-smelling but accessible to the poor. Tallow is rendered from beef and mutton fat.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_carpet_sweeper",
@@ -13874,7 +13874,7 @@
     "mat_wrought_iron",
     "cap_vac_1torr"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 100,
    "lab": {
     "artisan": 120,
@@ -13898,7 +13898,7 @@
    "note": "Wheeled frame with rotating brush underneath. Push it across carpet to collect dust and lint. No electricity needed. Precedes vacuum cleaners; faster than hand-brushing. Carpet sweepers are labour-replacing and displace sweeping servants. [AUDIT: capability prerequisite(s) cap_vac_1torr were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
    "_src": "12_household.json",
    "_total_cost": 143.3,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_cosmetics_modern_warning",
@@ -13910,7 +13910,7 @@
     "hom_cosmetics_roman",
     "cap_heat_1600"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 100,
    "lab": {
     "chemist": 120,
@@ -13934,7 +13934,7 @@
    "note": "Once germ theory and toxicology establish that white lead causes chronic poisoning, cosmetics reformulate. Lead face paint is phased out; zinc oxide and iron oxides replace it. Labels warn of hazards. Modern cosmetics prioritise safety and truthful marketing. [AUDIT: capability prerequisite(s) cap_heat_1600 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
    "_src": "12_household.json",
    "_total_cost": 206.75,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_cosmetics_roman",
@@ -13942,7 +13942,7 @@
    "tier": 0,
    "cat": "personal",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -13959,7 +13959,7 @@
    "note": "Powders, kohl eyeliner, rouge, and white lead face paint (cerussa). The white lead is cosmetically effective but chronically poisoning users. No warning label exists.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_deodorant",
@@ -13970,7 +13970,7 @@
     "soap_hard",
     "hom_perfume_distilled"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 70,
    "lab": {
     "chemist": 80,
@@ -13994,7 +13994,7 @@
    "note": "Alum or zinc oxide in a fat or powder base. Alum acts as an astringent, reducing sweat and odour. Roman use of alum for textiles; applied to skin for personal use. Modern antiperspirants require aluminium chloride (20th century).",
    "_src": "12_household.json",
    "_total_cost": 123.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_dishwasher",
@@ -14006,7 +14006,7 @@
     "motor_transformer_ac",
     "soap_hard"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 200,
    "lab": {
     "master": 250,
@@ -14031,7 +14031,7 @@
    "note": "Cochran's 1886 machine uses pressurised water spray, hot water, and soap. Requires a pressurised water supply (pump), a heat source (steam or electric), and a motor. Hot water and soap do most of the work; the machine's innovation is automation and pressure. Kitchen staff is displaced.",
    "_src": "12_household.json",
    "_total_cost": 1019.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_doll_fashion",
@@ -14042,7 +14042,7 @@
     "hom_toys_dolls",
     "mat_paper"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 110,
    "lab": {
     "carpenter": 120,
@@ -14066,7 +14066,7 @@
    "note": "Articulated wooden or bisque doll with interchangeable clothing. Allows girls to dress dolls in fashionable gowns. Drives textile consumption and toy industry growth. Later porcelain and plastic dolls command higher prices; bisque allows fine detail.",
    "_src": "12_household.json",
    "_total_cost": 140.925,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_double_glazing",
@@ -14077,7 +14077,7 @@
     "glass_clear",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 120,
    "lab": {
     "glassblower": 140,
@@ -14100,7 +14100,7 @@
    "note": "Two panes of glass with an air gap reduces heat loss by half. Expensive to produce and install; assembly requires careful spacing and lead frame. Widespread only in the 18th-19th centuries as glass prices fall.",
    "_src": "12_household.json",
    "_total_cost": 404.6,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_electric_fan",
@@ -14112,7 +14112,7 @@
     "cap_power_electric",
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 100,
    "lab": {
     "master": 120,
@@ -14138,7 +14138,7 @@
    "note": "Small electric motor drives a blade assembly. Expensive initially; prices fall with mass production. Rome would value this enormously in a Mediterranean summer; ceiling punkah fans pulled by servants are the low-tech precursor.",
    "_src": "12_household.json",
    "_total_cost": 253.65,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_electric_lighting",
@@ -14150,7 +14150,7 @@
     "power_grid",
     "cap_power_electric"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 150,
    "lab": {
     "master": 180,
@@ -14175,7 +14175,7 @@
    "note": "Incandescent bulbs (Edison carbon, then tungsten filament) or arc lamps. Grid electricity required. Replaces gas lamps and kerosene. Cost per lumen falls; brightness increases. Urban electrification spreads from 1880s onward.",
    "_src": "12_household.json",
    "_total_cost": 415.2,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_eraser_breadcrumb",
@@ -14183,7 +14183,7 @@
    "tier": 1,
    "cat": "writing",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 30,
    "lab": {},
    "mat": {
@@ -14202,7 +14202,7 @@
    "note": "Breadcrumbs (white bread preferred) erase pencil marks by mechanical abrasion. Later rubber erasers require natural rubber, which is UNOBTAINABLE. Breadcrumb remains the substitute through the 19th century in resource-limited settings.",
    "_src": "12_household.json",
    "_total_cost": 5.0065,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_fireplace_chimney",
@@ -14212,7 +14212,7 @@
    "pre": [
     "cap_heat_0700"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 120,
    "lab": {
     "mason": 200,
@@ -14236,7 +14236,7 @@
    "note": "Rome never develops the chimney. The innovation is the flue and draft that draws smoke out of a room while allowing air intake from below. Transforms cold-weather living. Early chimneys are smoky and dangerous; the design improves over centuries.",
    "_src": "12_household.json",
    "_total_cost": 271.46,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_flush_latrine_simple",
@@ -14244,7 +14244,7 @@
    "tier": 0,
    "cat": "sanitation",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14261,7 +14261,7 @@
    "note": "Rome has flush latrines connected to running water and sewers, but lacks the water trap. Sewer gas backs up into the house at night when flow stops. This is the fatal gap.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_flush_toilet_trap",
@@ -14271,7 +14271,7 @@
    "pre": [
     "hom_flush_latrine_simple"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 80,
    "lab": {
     "plumber": 100,
@@ -14295,7 +14295,7 @@
    "note": "The water trap is the non-obvious critical innovation: standing water in an S-bend or U-bend below the bowl blocks sewer gas from backing into the house. Crapper patents an improved design in 1884. Modern plumbing code mandates traps.",
    "_src": "12_household.json",
    "_total_cost": 199.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_fountain_pen",
@@ -14305,7 +14305,7 @@
    "pre": [
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 130,
    "lab": {
     "artisan": 150,
@@ -14329,7 +14329,7 @@
    "note": "Ink reservoir under the nib, with capillary feed. Early designs leak; improved feeds (Waterman, Parker) in the 1880s fix this. Replaces dip pens and quills. Refillable or cartridge designs follow; mass production drives prices down.",
    "_src": "12_household.json",
    "_total_cost": 278.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_furniture_wooden",
@@ -14337,7 +14337,7 @@
    "tier": 0,
    "cat": "comfort",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14354,7 +14354,7 @@
    "note": "Chairs, tables, beds, and chests. Quality varies from crude to fine (imported citrus wood). Beds are typically frames with rope supports, no springs.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_gas_lamp",
@@ -14366,7 +14366,7 @@
     "destructive_distillation",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 140,
    "lab": {
     "smith": 140,
@@ -14390,7 +14390,7 @@
    "note": "Coal-gas (coke-oven gas) piped to rooms. Brighter than oil lamps but smoky and dangerous (carbon monoxide, explosions). Gas lighting spreads in cities; rural areas remain oil-lit for decades. Gasolier chandeliers replace candles in urban mansions.",
    "_src": "12_household.json",
    "_total_cost": 499.7,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_glass_windows",
@@ -14398,7 +14398,7 @@
    "tier": 0,
    "cat": "comfort",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14415,7 +14415,7 @@
    "note": "Rare and expensive. Glassblowing technology exists, but glass remains thick, poorly transparent, and valuable. Most windows are oil-paper or shutters.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_heating_hot_water_radiator",
@@ -14426,7 +14426,7 @@
     "steam_high_pressure",
     "cap_power_steam"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 180,
    "lab": {
     "plumber": 200,
@@ -14451,7 +14451,7 @@
    "note": "Boiler in basement or furnace room heats water, which circulates through cast-iron radiators in all rooms. Replaces fireplaces and central stove heating. Enables uniform comfort; transforms house design. Requires piping, a circulating pump, and constant fuel supply.",
    "_src": "12_household.json",
    "_total_cost": 1793.4,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_hypocaust",
@@ -14461,7 +14461,7 @@
    "pre": [
     "cap_heat_0700"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14478,7 +14478,7 @@
    "note": "Hot air from a furnace flows through hollow spaces beneath the floor. Expensive; only wealthy houses and public baths use it. Rome never develops the chimney, so room heating otherwise requires a brazier and open flame. [AUDIT: capability prerequisite(s) cap_heat_0700 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_jigsaw_puzzle",
@@ -14489,7 +14489,7 @@
     "printing_press",
     "mat_blister_steel"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 100,
    "lab": {
     "carpenter": 150,
@@ -14512,7 +14512,7 @@
    "note": "Hand-cut wooden jigsaw (using a saw, hence the name). Early puzzles are mounted hand-coloured prints glued to wood, then sawn into interlocking pieces. Expensive and educational for wealthy families.",
    "_src": "12_household.json",
    "_total_cost": 117.25,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_kitchen_range",
@@ -14523,7 +14523,7 @@
     "hom_fireplace_chimney",
     "blast_furnace"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 130,
    "lab": {
     "smith": 150,
@@ -14546,7 +14546,7 @@
    "note": "A fireplace-integrated cooking structure with a hot surface (cooking plate) and an oven. Cast iron conducts heat evenly. Requires blast furnace for casting; transforms cooking from dangling pots over flames. Labour-displacing for kitchen servants (negative gov).",
    "_src": "12_household.json",
    "_total_cost": 483.8,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_lamp_argand",
@@ -14558,7 +14558,7 @@
     "glass_clear",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 100,
    "lab": {
     "artisan": 120,
@@ -14582,7 +14582,7 @@
    "note": "The flat circular wick and glass chimney allow air circulation from both sides of the flame, increasing brightness 3x over simple lamps. The chimney creates draft, keeping the flame in the hot zone. Oil consumption stays the same; light output soars.",
    "_src": "12_household.json",
    "_total_cost": 207.7,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_lamp_kerosene",
@@ -14593,7 +14593,7 @@
     "hom_lamp_argand",
     "mat_petroleum_refined"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 90,
    "lab": {
     "artisan": 100
@@ -14616,7 +14616,7 @@
    "note": "Kerosene (paraffin) burns hotter and cleaner than whale oil or plant oil. Brighter than Argand lamps with less smoke. Requires refined petroleum; supply depends on oil fields and distillation capacity.",
    "_src": "12_household.json",
    "_total_cost": 166.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_latrine_water_trap",
@@ -14626,7 +14626,7 @@
    "pre": [
     "hom_flush_latrine_simple"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 60,
    "lab": {
     "artisan": 100,
@@ -14649,7 +14649,7 @@
    "note": "The water trap is the critical innovation: standing water in an S-bend or U-bend below the toilet bowl blocks sewer gas from backing into the house. Non-obvious but essential for sanitary plumbing. Rome discovers this late or not at all in the West.",
    "_src": "12_household.json",
    "_total_cost": 146.9,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_lead_plumbing",
@@ -14657,7 +14657,7 @@
    "tier": 0,
    "cat": "sanitation",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14674,7 +14674,7 @@
    "note": "Rome masters lead pipe-making and ceramic drainage. The lead slowly poisons users; Rome's elite show signs of lead poisoning but attribute it to other causes.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_locks_keys",
@@ -14682,7 +14682,7 @@
    "tier": 0,
    "cat": "security",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14699,7 +14699,7 @@
    "note": "Pin-tumbler locks exist in Egypt; Rome develops excellent examples in bronze and iron. Locks are expensive and a sign of wealth (or slavery).",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_mangle_wringer",
@@ -14710,7 +14710,7 @@
     "cap_tol_1mm",
     "mat_wrought_iron"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 100,
    "lab": {
     "artisan": 120,
@@ -14733,7 +14733,7 @@
    "note": "Paired hard rollers (wood or stone) squeeze water from cloth under pressure. Early mangling flattens linen; later wringer versions extract water faster. Eliminates the wringing-by-hand step; hand-wringer maids face unemployment.",
    "_src": "12_household.json",
    "_total_cost": 185.3,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_matches_friction",
@@ -14741,7 +14741,7 @@
    "tier": 1,
    "cat": "lighting",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 60,
    "lab": {
     "chemist": 80,
@@ -14765,7 +14765,7 @@
    "note": "White phosphorus matches ignite easily but cause phosphorus necrosis (rotting jawbone) in workers from chronic exposure. Safety matches use red phosphorus instead, less toxic. Early matches are dangerous to makers and users alike.",
    "_src": "12_household.json",
    "_total_cost": 148.025,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_mechanical_clock_home",
@@ -14777,7 +14777,7 @@
     "cap_tol_1mm",
     "water_power_scale"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 180,
    "lab": {
     "master": 250,
@@ -14802,7 +14802,7 @@
    "note": "Escapement mechanism converts continuous power (falling weight or spring) into regulated ticks. Medieval clocks are weight-driven with iron verge escapement; later designs use springs. Accuracy improves from hours to minutes as escapements advance.",
    "_src": "12_household.json",
    "_total_cost": 974.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_metronome",
@@ -14813,7 +14813,7 @@
     "clock_pendulum",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 110,
    "lab": {
     "master": 160,
@@ -14837,7 +14837,7 @@
    "note": "Pendulum-driven clock ticking at adjustable rates for musical practice. Inverted design pivots the weight on a rod. Musicians find it essential; composers use metronome markings to standardise tempo. Early metronomes are wooden; later all-metal designs are more durable.",
    "_src": "12_household.json",
    "_total_cost": 230.20600000000002,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_mirror_bronze_polished",
@@ -14845,7 +14845,7 @@
    "tier": 0,
    "cat": "personal",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14862,7 +14862,7 @@
    "note": "Polished bronze reflects poorly (70-80% at best) and tarnishes. Small, expensive, and slowly replaced by silvered glass mirrors.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_mirror_silvered_glass",
@@ -14874,7 +14874,7 @@
     "glass_clear",
     "cap_heat_1100"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 90,
    "lab": {
     "glassblower": 100,
@@ -14899,7 +14899,7 @@
    "note": "Mercury and tin amalgam fused to glass back creates a reflective layer (90%+ vs 70% for bronze). Expensive and technically demanding; production moves to Venice in the 13th century. Frames are precious metal or fine wood.",
    "_src": "12_household.json",
    "_total_cost": 608.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_musical_instruments",
@@ -14907,7 +14907,7 @@
    "tier": 0,
    "cat": "leisure",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14924,7 +14924,7 @@
    "note": "Lyres, kitharas, flutes, Pan pipes, and percussion. All handmade; quality varies by maker. String instruments require catgut or sinew from animals.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_oil_lamp_simple",
@@ -14932,7 +14932,7 @@
    "tier": 0,
    "cat": "lighting",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -14949,7 +14949,7 @@
    "note": "Rome has simple clay and bronze oil lamps, burning olive oil or animal fat. The innovation ahead is the flat wick and glass chimney, which doubles brightness.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_pencil",
@@ -14959,7 +14959,7 @@
    "pre": [
     "mat_paper"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 70,
    "lab": {
     "carpenter": 60,
@@ -14982,7 +14982,7 @@
    "note": "Graphite pencils arrive in the 16th century after graphite discovery in Cumberland. Early designs slot graphite into wood holders; later hexagonal wood casing is carved around it. Graphite is cheap once located; supply is the constraint.",
    "_src": "12_household.json",
    "_total_cost": 47.225,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_perfume_distilled",
@@ -14993,7 +14993,7 @@
     "distillation_alcohol",
     "hom_perfume_enfleurage"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 140,
    "lab": {
     "chemist": 160,
@@ -15016,7 +15016,7 @@
    "note": "Alcohol dissolves and carries fragrance far better than fat alone. Volatile alcohols evaporate, leaving scent on skin and clothes. Concentrated distilled perfumes (attar) command high prices and excellent margins. The innovation is distillation, not enfleurage.",
    "_src": "12_household.json",
    "_total_cost": 331.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_perfume_enfleurage",
@@ -15024,7 +15024,7 @@
    "tier": 0,
    "cat": "personal",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -15041,7 +15041,7 @@
    "note": "Flower petals are laid on cold fat, which absorbs fragrance. Repeated; expensive and used by the wealthy. Yields poor revenue; the innovation is distillation for concentrates.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_piano",
@@ -15054,7 +15054,7 @@
     "mat_blister_steel",
     "mat_brass"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 250,
    "lab": {
     "master": 400,
@@ -15080,7 +15080,7 @@
    "note": "Struck strings with escapement mechanism allowing rapid re-strike. Cristofori invents the hammer action around 1700, replacing plucked harpsichords. Touche and dynamic range enable entirely new music. Expensive; requires years of training to play well.",
    "_src": "12_household.json",
    "_total_cost": 1802.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_playing_cards_printed",
@@ -15091,7 +15091,7 @@
     "rag_paper",
     "printing_press"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 60,
    "lab": {
     "scribe": 80,
@@ -15114,7 +15114,7 @@
    "note": "Woodcut or engraved cards printed in volume. Early printed decks (15th century) are hand-coloured. Standardised designs (Italian, Spanish, French suits) emerge later. Cards were originally hand-painted and very expensive.",
    "_src": "12_household.json",
    "_total_cost": 66.8,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_pocket_watch",
@@ -15126,7 +15126,7 @@
     "cap_tol_100um",
     "master_screw"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 200,
    "lab": {
     "master": 300,
@@ -15150,7 +15150,7 @@
    "note": "Miniaturized spring-driven mechanism with balance wheel (spiral spring regulating oscillation). Requires high precision machining and jeweled pivots to reduce friction. Early watches lose 5-10 minutes per day; later escapements improve accuracy.",
    "_src": "12_household.json",
    "_total_cost": 635.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_pressure_cooker",
@@ -15162,7 +15162,7 @@
     "blast_furnace",
     "cap_heat_1300"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 150,
    "lab": {
     "smith": 140,
@@ -15186,7 +15186,7 @@
    "note": "A sealed vessel where steam pressure raises water boiling point, accelerating cooking 3x. Papin invents the digester in 1679 to demonstrate steam power; it becomes both a cooking device AND the conceptual ancestor of the steam engine. Requires safety valve.",
    "_src": "12_household.json",
    "_total_cost": 253.15,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_printed_books",
@@ -15197,7 +15197,7 @@
     "printing_press",
     "rag_paper"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 160,
    "lab": {
     "scribe": 120,
@@ -15221,7 +15221,7 @@
    "note": "Printed volumes replace hand-copied manuscripts. Early books are expensive; gradually price falls as standardisation and competition reduce costs. Literacy spreads; libraries become personal, not institutional.",
    "_src": "12_household.json",
    "_total_cost": 307.2,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_public_bath",
@@ -15229,7 +15229,7 @@
    "tier": 0,
    "cat": "sanitation",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -15246,7 +15246,7 @@
    "note": "The thermae are social centers with heated water pools, caldarium and frigidarium. Rome's public hygiene infrastructure is remarkable for its era; yet most private homes lack hot water.",
    "_src": "12_household.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_punkah_ceiling",
@@ -15254,7 +15254,7 @@
    "tier": 1,
    "cat": "comfort",
    "pre": [],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 50,
    "lab": {
     "carpenter": 80
@@ -15276,7 +15276,7 @@
    "note": "A large cloth fan suspended from the ceiling, pulled by a cord to and fro by a servant. Provides air circulation and cooling in hot climates. Entirely mechanical and labour-intensive; electric fans are the obvious 19th-century replacement.",
    "_src": "12_household.json",
    "_total_cost": 83.05,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_refrigeration_mechanical",
@@ -15288,7 +15288,7 @@
     "mat_ammonia",
     "cap_power_steam"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 200,
    "lab": {
     "master": 250,
@@ -15313,7 +15313,7 @@
    "note": "Ammonia or ether evaporation in a compressor cools an ice chamber. Requires a steam engine to drive the compressor. Early mechanical ice-makers (Carve, 1850s) free wealthy households from dependence on natural ice harvesting and storage.",
    "_src": "12_household.json",
    "_total_cost": 1462.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_refrigerator_home_electric",
@@ -15325,7 +15325,7 @@
     "motor_transformer_ac",
     "cap_power_electric"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 200,
    "lab": {
     "master": 240,
@@ -15350,7 +15350,7 @@
    "note": "Domestic refrigerator with electric compressor. Freon (CFC) replaces ammonia for safety (1930s). Standard feature in wealthy homes by 1950s; middle-class penetration spreads with electrification and price falls. Transforms food preservation and cooking.",
    "_src": "12_household.json",
    "_total_cost": 848.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_safety_pin",
@@ -15361,7 +15361,7 @@
     "cap_tol_1mm",
     "mat_wrought_iron"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 40,
    "lab": {
     "smith": 50
@@ -15382,7 +15382,7 @@
    "note": "Bent iron wire with a catch. Simpler than brooches and more secure for fastening cloth or diapers. Mass production requires drawn wire and stamping, both later innovations.",
    "_src": "12_household.json",
    "_total_cost": 24.1,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_safety_razor",
@@ -15393,7 +15393,7 @@
     "cap_tol_100um",
     "mat_blister_steel"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 110,
    "lab": {
     "smith": 120,
@@ -15416,7 +15416,7 @@
    "note": "Replaceable blade held at a fixed angle in a handle guard, preventing deep cuts. Earlier straight razors require stropping and honing; safety razors are simpler for users. Gillette disposable blades (early 1900s) create a consumable product with huge margins.",
    "_src": "12_household.json",
    "_total_cost": 170.6,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_sewer_stormwater_separation",
@@ -15427,7 +15427,7 @@
     "hom_latrine_water_trap",
     "cap_heat_1300"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 180,
    "lab": {
     "artisan": 200,
@@ -15451,7 +15451,7 @@
    "note": "Sewage and rain runoff follow separate pipes to prevent sewage backup during storms. Public health innovation; requires city-scale investment. Many 19th-century cities combine sewers (causing problems); separation is a later upgrade. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
    "_src": "12_household.json",
    "_total_cost": 2182.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_sewing_machine_hand",
@@ -15462,7 +15462,7 @@
     "crank_conrod",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 180,
    "lab": {
     "master": 200,
@@ -15487,7 +15487,7 @@
    "note": "Reciprocating needle driven by crank mechanism. Howe and Singer commercialize sewing machines in the 1850s; hand-crank models precede treadle and electric drives. Stitches much faster than hand-sewing; domestic servants' value plummets.",
    "_src": "12_household.json",
    "_total_cost": 389.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_shampoo_soap_based",
@@ -15498,7 +15498,7 @@
     "soap_hard",
     "hom_perfume_distilled"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 80,
    "lab": {
     "chemist": 100,
@@ -15522,7 +15522,7 @@
    "note": "Soap solution with perfume. Romans wash hair with lye (harsh) or oil. Soap-based shampoo is gentle and effective. Liquid and powdered forms compete; bars arrive later. Fragrance matters for premium products.",
    "_src": "12_household.json",
    "_total_cost": 187.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_soap_hard",
@@ -15532,7 +15532,7 @@
    "pre": [
     "soap_hard"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 80,
    "lab": {
     "artisan": 120
@@ -15555,7 +15555,7 @@
    "note": "Hot saponification of animal fat and plant oil with caustic lye, producing hard soap. Rome lacks this; soap is invented in the Eastern Mediterranean around 6th century. Labour-intensive but small-scale.",
    "_src": "12_household.json",
    "_total_cost": 64.49000000000001,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_spectacles",
@@ -15565,7 +15565,7 @@
    "pre": [
     "lens_grinding"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 90,
    "lab": {
     "artisan": 140
@@ -15587,7 +15587,7 @@
    "note": "Convex lenses for presbyopia (age-related farsightedness) arrive around 1300. Concave lenses for myopia come later. The hinge and bridge are crafted from brass. Spectacles are luxury goods until mass production.",
    "_src": "12_household.json",
    "_total_cost": 160.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_sprung_mattress",
@@ -15598,7 +15598,7 @@
     "cap_tol_1mm",
     "mat_wrought_iron"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 120,
    "lab": {
     "artisan": 150,
@@ -15622,7 +15622,7 @@
    "note": "Coiled iron springs in a wood frame topped with ticking and stuffing (wool, horsehair, or coconut fiber). Dramatically more comfortable than rope-frame beds. Requires drawn wire and coil-forming tools. Mass production follows industrial tooling.",
    "_src": "12_household.json",
    "_total_cost": 285.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_stove_enclosed",
@@ -15633,7 +15633,7 @@
     "hom_fireplace_chimney",
     "cap_heat_1100"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 100,
    "lab": {
     "mason": 150,
@@ -15657,7 +15657,7 @@
    "note": "A metal or ceramic box with fire inside, heating room air by radiation and conduction. More efficient than open fireplace because less heat escapes up the chimney. Requires cast iron or tile manufacture.",
    "_src": "12_household.json",
    "_total_cost": 222.51999999999998,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_toothbrush",
@@ -15667,7 +15667,7 @@
    "pre": [
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 50,
    "lab": {
     "artisan": 40
@@ -15689,7 +15689,7 @@
    "note": "Bone or wood handle with bristles of horsehair or bamboo fiber. Romans use twigs and charcoal powder for dental cleaning. The toothbrush format is luxury; mass adoption requires cheap bristles and handles.",
    "_src": "12_household.json",
    "_total_cost": 21.275,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_toothpaste_commercial",
@@ -15700,7 +15700,7 @@
     "soap_hard",
     "hom_toothbrush"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 90,
    "lab": {
     "chemist": 100,
@@ -15724,7 +15724,7 @@
    "note": "Soap base with abrasive chalk or pumice powder, flavoured. Early toothpastes are gritty; fluoride is added in the 1950s. Toothbrushes + paste replace charcoal and salt rubbing. Marketing drives adoption; modern formulations include whiteners and stain removers.",
    "_src": "12_household.json",
    "_total_cost": 143.7,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_toys_dolls",
@@ -15734,7 +15734,7 @@
    "pre": [
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 60,
    "lab": {
     "carpenter": 80,
@@ -15758,7 +15758,7 @@
    "note": "Carved wooden dolls with jointed limbs or cloth bodies. Lead and tin soldiers for boys; fashion dolls for girls. Decoration and articulation increase cost. Toys become a significant retail category in the 18th and 19th centuries.",
    "_src": "12_household.json",
    "_total_cost": 75.45,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_umbrella",
@@ -15768,7 +15768,7 @@
    "pre": [
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 80,
    "lab": {
     "carpenter": 100,
@@ -15792,7 +15792,7 @@
    "note": "Wood frame with linen canopy. Rome and later cultures have parasols (sun protection); rain umbrellas arrive in northern Europe around 1500s. Widespread adoption requires industrial metal frames and waterproof cotton textiles.",
    "_src": "12_household.json",
    "_total_cost": 89.725,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_vacuum_cleaner",
@@ -15805,7 +15805,7 @@
     "cap_heat_1100",
     "cap_vac_1e3"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 140,
    "lab": {
     "master": 160,
@@ -15830,7 +15830,7 @@
    "note": "Electric motor drives a suction fan that pulls dirt through a cloth bag filter. Replaces carpet sweepers and hand-brushing entirely. Servants become redundant. Cord length and motor noise are early limitations; wireless and quiet models come later. [AUDIT: capability prerequisite(s) cap_vac_1e3 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
    "_src": "12_household.json",
    "_total_cost": 314.95,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_vacuum_flask",
@@ -15842,7 +15842,7 @@
     "cap_vac_1torr",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 120,
    "lab": {
     "glassblower": 140,
@@ -15866,7 +15866,7 @@
    "note": "Double-walled glass with vacuum between walls and silvered inner surface. Dewar invents it in 1892 for laboratory use; commercial thermos bottles follow. Keeps hot drinks hot for hours; cold drinks cold. Expensive; mass production eventually lowers cost.",
    "_src": "12_household.json",
    "_total_cost": 564.8,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_washing_machine_electric",
@@ -15878,7 +15878,7 @@
     "motor_transformer_ac",
     "cap_power_electric"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 160,
    "lab": {
     "master": 180,
@@ -15903,7 +15903,7 @@
    "note": "Motor-driven drum or agitator. No cranking required. Faster cycles, cooler operation, less wear on fabric. Laundry becomes a household task rather than a full-time servant job. Early motors are noisy and prone to breakage; reliability improves.",
    "_src": "12_household.json",
    "_total_cost": 462.1,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_washing_machine_hand",
@@ -15914,7 +15914,7 @@
     "cap_tol_1mm",
     "water_power_scale"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 140,
    "lab": {
     "artisan": 160,
@@ -15938,7 +15938,7 @@
    "note": "A wooden or metal tub with paddles or rollers rotated by crank. Hot soapy water and mechanical action replace hours of hand-scrubbing. Laundry maids become surplus; wealthy households buy machines rather than slaves.",
    "_src": "12_household.json",
    "_total_cost": 239.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "hom_zip_fastener",
@@ -15949,7 +15949,7 @@
     "cap_tol_100um",
     "mat_brass"
    ],
-   "kb": "",
+   "kb": "91_household.md",
    "ph": 180,
    "lab": {
     "master": 200,
@@ -15973,7 +15973,7 @@
    "note": "Interlocking teeth or loops fastened by sliding slider. Whitcomb L. Judson invents the 'clasp locker' in 1891; Gideon Sundback perfects the modern zip in 1913. Requires precision stamping and assembly. Replaces buttons for boots and jackets.",
    "_src": "12_household.json",
    "_total_cost": 539.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "horse_collar",
@@ -35991,7 +35991,7 @@
     "tex_fitted_garment",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 50,
    "lab": {
     "artisan": 120
@@ -36013,7 +36013,7 @@
    "note": "Buttonholes cut and sewn by hand initially, later machine-cut. Buttons turned from bone, wood, or cast metals. Enables fitted garments that open and close easily, replacing laces and ties. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 163.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_calico_printing",
@@ -36025,7 +36025,7 @@
     "tex_canvas",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 140,
    "lab": {
     "artisan": 250,
@@ -36049,7 +36049,7 @@
    "note": "Hand-carved wooden blocks print colors onto cloth by pressing into dye paste then cloth. Each color requires separate block and pass. Produces decorative cotton fabrics. Hand skill and artistic eye essential. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 1949.25,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_canvas",
@@ -36060,7 +36060,7 @@
     "tex_linen",
     "tex_horizontal_loom"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 40,
    "lab": {
     "artisan": 80
@@ -36081,7 +36081,7 @@
    "note": "Heavy, tightly-woven linen cloth for sails, tents, and durable goods. Weave density and thread weight matter more than fiber fineness.",
    "_src": "10_textiles.json",
    "_total_cost": 126.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_carding",
@@ -36092,7 +36092,7 @@
     "tex_wool",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 60,
    "lab": {
     "artisan": 150
@@ -36114,7 +36114,7 @@
    "note": "Wooden carding combs with wire teeth card wool into parallel fibers ready for spinning. Increases fineness of yarn but slower than combing.",
    "_src": "10_textiles.json",
    "_total_cost": 106.75,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_chlorine_bleaching",
@@ -36126,7 +36126,7 @@
     "mat_chlorine",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 120,
    "lab": {
     "chemist": 250,
@@ -36151,7 +36151,7 @@
    "note": "Cl2 gas or hypochlorite solution bleaches cloth in hours instead of weeks. 100x speedup ends field bleaching bottleneck. Risks fabric damage if concentration not controlled. Requires chlorine production (electrolytic or chemical) from heavy industry. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 2703.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_chrome_tanning",
@@ -36162,7 +36162,7 @@
     "mat_chromium",
     "mat_leather"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 140,
    "lab": {
     "chemist": 250,
@@ -36186,7 +36186,7 @@
    "note": "Chromium salts cross-link collagen in hides in days instead of weeks (vegetable tanning). Produces soft, supple leather resistant to heat. Requires chromium compound production and process control. Overtakes vegetable tanning by early 1900s. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 4382.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_combing",
@@ -36197,7 +36197,7 @@
     "tex_wool",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 50,
    "lab": {
     "artisan": 120
@@ -36219,7 +36219,7 @@
    "note": "Iron-toothed combs arrange long fibers in parallel. Faster and cleaner output than carding, produces stronger yarn. Older technique than carding.",
    "_src": "10_textiles.json",
    "_total_cost": 80.75,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_cotton_gin",
@@ -36231,7 +36231,7 @@
     "crank_conrod",
     "tex_hand_ginning"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 80,
    "lab": {
     "carpenter": 160,
@@ -36256,7 +36256,7 @@
    "note": "Rotating saw cylinder draws lint through spacing slots while stationary brush removes lint. Whitney saw gin (1793) produces 50 lbs/day vs 1 lb/day by hand. Game-changing for cotton profitability, tragically driving slavery expansion.",
    "_src": "10_textiles.json",
    "_total_cost": 565.6,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_cotton_trade",
@@ -36264,7 +36264,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36281,7 +36281,7 @@
    "note": "Cotton imported from India and traded in Roman markets. Small quantities, expensive.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_drop_spindle",
@@ -36289,7 +36289,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36306,7 +36306,7 @@
    "note": "Simple weighted spindle suspended by thread. Skill-dependent, slow. Standard Roman spinning method.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_dye_madder",
@@ -36314,7 +36314,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36331,7 +36331,7 @@
    "note": "Madder root (Rubia tinctorum) produces reds and oranges. Requires mordanting to set dye. Standard Roman dye.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_dye_murex",
@@ -36339,7 +36339,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36356,7 +36356,7 @@
    "note": "Purple dye from murex snail gland secretion. Tyrian purple, supremely expensive, only for imperial and elite garments.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_dye_woad",
@@ -36364,7 +36364,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36381,7 +36381,7 @@
    "note": "Woad (Isatis tinctoria) produces blues. Leaves fermented then oxidized. Common and relatively cheap blue dye.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_felting",
@@ -36389,7 +36389,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36406,7 +36406,7 @@
    "note": "Matting wool fibers with moisture and heat to create felt. Ancient technique for hats, cloaks, armor padding.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_field_bleaching",
@@ -36418,7 +36418,7 @@
     "tex_sailcloth",
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 50,
    "lab": {
     "labourer": 300
@@ -36439,7 +36439,7 @@
    "note": "Spreading wet cloth on grass, rewetting daily, exposed to sunlight for weeks. Oxidizes and bleaches fibers white. Bottleneck of textile production: chlorine bleaching is 100x faster. Weather dependent. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 222.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_fitted_garment",
@@ -36450,7 +36450,7 @@
     "tex_linen",
     "cap_measure_len"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 50,
    "lab": {
     "artisan": 150
@@ -36472,7 +36472,7 @@
    "note": "Cutting and sewing cloth to body shape instead of wrapping rectangles. Requires pattern pieces scaled to measurements. Enables close-fitting tunics and garments.",
    "_src": "10_textiles.json",
    "_total_cost": 111.8,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_flying_shuttle",
@@ -36484,7 +36484,7 @@
     "crank_conrod",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 120,
    "lab": {
     "carpenter": 250,
@@ -36508,7 +36508,7 @@
    "note": "Mechanical shuttle box throws shuttle left-right via spring or lever, eliminating need to reach across loom. One weaver now handles wide looms. Kay 1733. Triples weaving speed. Labor displacement sparks Luddite unrest.",
    "_src": "10_textiles.json",
    "_total_cost": 402.85,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_fulling",
@@ -36516,7 +36516,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36533,7 +36533,7 @@
    "note": "Hand fulling: beating woven cloth in lye-filled tub to felt and shrink fibers. Labor-intensive, done by fullers.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_fulling_water",
@@ -36545,7 +36545,7 @@
     "cap_power_water",
     "crank_conrod"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 120,
    "lab": {
     "carpenter": 280,
@@ -36571,7 +36571,7 @@
    "note": "Water-driven heavy mallets or rollers beat cloth in lye to felt and shrink. Replaces hand fullers working for hours in tubs. Enables fuller scale production. Requires water power site and capital infrastructure.",
    "_src": "10_textiles.json",
    "_total_cost": 2034.95,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_hand_ginning",
@@ -36581,7 +36581,7 @@
    "pre": [
     "tex_cotton_trade"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 30,
    "lab": {
     "labourer": 200
@@ -36600,7 +36600,7 @@
    "note": "Removing seeds from cotton by hand using a stick or roller. Slow: produces about 1 lb clean cotton per day. Mechanical ginning is revolutionary leap.",
    "_src": "10_textiles.json",
    "_total_cost": 65.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_horizontal_loom",
@@ -36611,7 +36611,7 @@
     "tex_two_beam_loom",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 80,
    "lab": {
     "carpenter": 200,
@@ -36634,7 +36634,7 @@
    "note": "Refined horizontal loom with better shaft control and cloth beam tension. Slightly faster than two-beam. Intermediate step toward mechanized looms.",
    "_src": "10_textiles.json",
    "_total_cost": 210.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_hosiery",
@@ -36646,7 +36646,7 @@
     "tex_wool",
     "tex_cotton_trade"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 70,
    "lab": {
     "artisan": 180
@@ -36668,7 +36668,7 @@
    "note": "Production of stockings and socks via knitting frame. Enables mass market for close-fitting legwear. Comfort and fit improve dramatically over hand-knit. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 367.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_indigo",
@@ -36679,7 +36679,7 @@
     "tex_dye_woad",
     "mat_natron"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 60,
    "lab": {
     "artisan": 140
@@ -36702,7 +36702,7 @@
    "note": "Indigo vat requires reduction (removal of oxygen) with lime and charcoal. Color sets by oxidation in air after dipping. Produces brilliant fast blue superior to woad. Imported indigo becomes available medieval period onward.",
    "_src": "10_textiles.json",
    "_total_cost": 174.7,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_jacquard_loom",
@@ -36714,7 +36714,7 @@
     "cap_tol_1mm",
     "mat_paper"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 250,
    "lab": {
     "carpenter": 350,
@@ -36741,7 +36741,7 @@
    "note": "Punched cards control which warp threads rise per pick. Each card has holes engaging or disengaging hooks. Complex patterns woven without hand shaft control. Cards must be hand-prepared; later inspires computer punch-card era. Transforms pattern-weaving from artisanal to systematic. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 4359.4,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_knitting_frame",
@@ -36753,7 +36753,7 @@
     "crank_conrod",
     "mat_wrought_iron"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 150,
    "lab": {
     "carpenter": 200,
@@ -36778,7 +36778,7 @@
    "note": "Stocking frame (William Lee, 1589). Reciprocating needles with closing latches, hand or foot powered. Produces stockings mechanically. Displaces hand knitters, enables mass hosiery. Complex precision mechanism.",
    "_src": "10_textiles.json",
    "_total_cost": 1059.75,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_linen",
@@ -36786,7 +36786,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -36803,7 +36803,7 @@
    "note": "Linen from flax after retting and breaking. Rome produces linen cloth routinely.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_mercerisation",
@@ -36815,7 +36815,7 @@
     "potash_soda",
     "cap_heat_1300"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 100,
    "lab": {
     "chemist": 200,
@@ -36838,7 +36838,7 @@
    "note": "Treating cotton yarn or cloth with sodium hydroxide under tension causes fibers to swell and straighten, increasing luster and dye uptake. Mercerized cotton resembles silk. Requires caustic soda production and careful process control. [AUDIT: capability prerequisite(s) cap_heat_1300 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 1337.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_mordanting",
@@ -36849,7 +36849,7 @@
     "tex_dye_madder",
     "mat_alum"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 40,
    "lab": {
     "artisan": 100
@@ -36871,7 +36871,7 @@
    "note": "Alum mordant fixes dyes to fiber. Cloth treated with alum before dyeing absorbs color much more effectively and resists fading. Standard practice for madder and other dyes.",
    "_src": "10_textiles.json",
    "_total_cost": 120.3,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_nylon",
@@ -36884,7 +36884,7 @@
     "cap_tol_100um",
     "cap_vac_1e6"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 250,
    "lab": {
     "chemist": 400,
@@ -36908,7 +36908,7 @@
    "note": "Polyamide fiber synthesized from coal tar via complex organic chemistry (Carothers, 1935). Requires high-temperature reactors, vacuum conditions, precise monomer synthesis, and polymerization control. Strongest fiber yet, endless customization. Fully replaces some natural uses. [AUDIT: capability prerequisite(s) cap_vac_1e6 were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.]",
    "_src": "10_textiles.json",
    "_total_cost": 8720.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_pattern_cutting",
@@ -36920,7 +36920,7 @@
     "cap_measure_len",
     "mat_paper"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 80,
    "lab": {
     "master": 150,
@@ -36943,7 +36943,7 @@
    "note": "Standardized paper patterns for garment pieces scaled to common sizes (small/medium/large). Enables fast cutting and consistent fit without measuring individuals. Speeds production and reduces skilled labor in cutting. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 383.15,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_power_loom",
@@ -36957,7 +36957,7 @@
     "cap_tol_1mm",
     "cap_measure_len"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 250,
    "lab": {
     "carpenter": 400,
@@ -36983,7 +36983,7 @@
    "note": "Water-driven loom with automatic shuttle throw and shaft control via cams. Weaving speed increases 4-5x. Cloth quality variable until tension control perfected. Enormous labor displacement.",
    "_src": "10_textiles.json",
    "_total_cost": 3845.55,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_rayon_nitro",
@@ -36995,7 +36995,7 @@
     "mat_chlorine",
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 180,
    "lab": {
     "chemist": 300,
@@ -37019,7 +37019,7 @@
    "note": "Dissolving nitrocellulose in ether-alcohol, forcing through spinnerets into acid coagulant, regenerating cellulose. First synthetic fiber, 1889 (Chardonnet). Requires precise chemistry, temperature, and concentration control. Somewhat fragile in wet state.",
    "_src": "10_textiles.json",
    "_total_cost": 4495.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_rayon_viscose",
@@ -37031,7 +37031,7 @@
     "potash_soda",
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 200,
    "lab": {
     "chemist": 350,
@@ -37056,7 +37056,7 @@
    "note": "Dissolving wood pulp in alkaline sulfide creating viscose paste, aging, forcing through spinnerets into acid bath regenerating cellulose fiber. By 1900 displaces much nitrocellulose. More robust than nitro-rayon. Requires wood pulp supply and chemical process control.",
    "_src": "10_textiles.json",
    "_total_cost": 5047.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_roller_printing",
@@ -37068,7 +37068,7 @@
     "cap_tol_100um",
     "cap_power_water"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 180,
    "lab": {
     "machinist": 300,
@@ -37094,7 +37094,7 @@
    "note": "Engraved copper or steel rollers rotate through dye paste then press pattern onto cloth continuously. Replaces block printing entirely: 100x faster, consistent patterns, multiple colors per pass via multiple rollers. Requires precision engraving and gear coordination.",
    "_src": "10_textiles.json",
    "_total_cost": 4575.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_rope_walk",
@@ -37105,7 +37105,7 @@
     "tex_linen",
     "cap_measure_len"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 70,
    "lab": {
     "artisan": 200,
@@ -37128,7 +37128,7 @@
    "note": "Long building (300-400 ft) where fiber strands are twisted together while walking backward. Produces rope and cordage at scale. Standard for ship rigging and maritime use.",
    "_src": "10_textiles.json",
    "_total_cost": 467.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_sailcloth",
@@ -37136,7 +37136,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -37153,7 +37153,7 @@
    "note": "Heavy linen or hemp cloth used for sails. Rome produces for naval fleet. Requires tight weave and strong yarn.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_sewing_machine",
@@ -37165,7 +37165,7 @@
     "crank_conrod",
     "mat_wrought_iron"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 160,
    "lab": {
     "artisan": 280,
@@ -37189,7 +37189,7 @@
    "note": "Two non-obvious inventions: lockstitch (needle passes through cloth-held loop made by shuttle beneath, creating loop for next pass) and eye-pointed needle (eye at tip, not butt). Hand or treadle powered. Serrated presser foot holds fabric. Replaces hand sewers, mostly women.",
    "_src": "10_textiles.json",
    "_total_cost": 758.7,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_shoddy",
@@ -37200,7 +37200,7 @@
     "tex_wool",
     "tex_carding"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 40,
    "lab": {
     "labourer": 150
@@ -37221,7 +37221,7 @@
    "note": "Shredding old wool cloth into fibers, then re-carding and re-spinning into new yarn. Produces weaker yarn but enables reuse of scrap wool for cheaper cloth.",
    "_src": "10_textiles.json",
    "_total_cost": 112.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_silk_trade",
@@ -37229,7 +37229,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -37246,7 +37246,7 @@
    "note": "Silk traded via Silk Road, closely guarded by Persia. Rare, luxury good.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_spinning_jenny",
@@ -37258,7 +37258,7 @@
     "crank_conrod",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 100,
    "lab": {
     "carpenter": 180,
@@ -37282,7 +37282,7 @@
    "note": "Hand-cranked machine with 8-16 spindles on one rail, all driven by single crank. One operator spins multiple threads simultaneously. Hargreaves 1764. Enables 8-16x labor displacement. Massive unemployment among spinners.",
    "_src": "10_textiles.json",
    "_total_cost": 367.55,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_spinning_mule",
@@ -37296,7 +37296,7 @@
     "crank_conrod",
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 200,
    "lab": {
     "machinist": 350,
@@ -37321,7 +37321,7 @@
    "note": "Hand-cranked carriage on rails moves in-out while spindles rotate. Moving carriage stretches roving as spindles twist, producing finer, stronger thread than jenny or frame alone. Can produce very fine yarn. Later steam-powered. Skilled operation essential.",
    "_src": "10_textiles.json",
    "_total_cost": 3917.3,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_spinning_wheel",
@@ -37333,7 +37333,7 @@
     "crank_conrod",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 100,
    "lab": {
     "carpenter": 200,
@@ -37356,7 +37356,7 @@
    "note": "The flyer is the invention, not the wheel. The flyer twists and winds yarn simultaneously rather than alternately, roughly tripling output per spinner. Hand or foot powered. Displaces many spinners.",
    "_src": "10_textiles.json",
    "_total_cost": 179.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_synthetic_dyes",
@@ -37367,7 +37367,7 @@
     "mat_dyes_synthetic",
     "tex_mordanting"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 80,
    "lab": {
     "chemist": 200
@@ -37389,7 +37389,7 @@
    "note": "Aniline dyes (Mauveine and successors) from coal tar offer brilliant colors, lower cost, and consistency vs natural dyes. No mordanting required for most. Destroys market for madder, indigo, cochineal. By-product of coal industry. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 4180.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_tape_measure",
@@ -37399,7 +37399,7 @@
    "pre": [
     "cap_measure_len"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 40,
    "lab": {
     "artisan": 80
@@ -37421,7 +37421,7 @@
    "note": "Flexible calibrated tape in inches or centimeters with brass end caps. Enables rapid precise body measurements for fitting. Standardization of units also enables pattern size labeling. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 223.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_textile_factory",
@@ -37434,7 +37434,7 @@
     "cap_power_water",
     "interchangeable_parts"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 300,
    "lab": {
     "carpenter": 500,
@@ -37461,7 +37461,7 @@
    "note": "Multi-story water-powered mill integrating spinning, weaving, finishing under one roof. Centralized production, child and female labor prevalent. Requires water power, capital, organization, and transportation. Birth of industrial production system.",
    "_src": "10_textiles.json",
    "_total_cost": 51761.0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_treadle_loom",
@@ -37473,7 +37473,7 @@
     "crank_conrod",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 90,
    "lab": {
     "carpenter": 250,
@@ -37496,7 +37496,7 @@
    "note": "Foot pedals control loom shafts via connecting rods and cams, freeing hands to throw shuttle. Speeds weaving noticeably. Weaver must still operate shuttle by hand.",
    "_src": "10_textiles.json",
    "_total_cost": 280.75,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_two_beam_loom",
@@ -37504,7 +37504,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -37521,7 +37521,7 @@
    "note": "Horizontal loom with warp tensioned between two beams. Faster than warp-weighted, standard for linen and wool in Roman period.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_vegetable_tanning",
@@ -37532,7 +37532,7 @@
     "mat_leather",
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 100,
    "lab": {
     "artisan": 250,
@@ -37556,7 +37556,7 @@
    "note": "Tanning hides with oak or chestnut bark tannins in vats over weeks. Produces flexible, durable leather resistant to rot. Process is standardized by medieval period but knowledge of bark selection and timing matters. [AUDIT: capability prerequisite(s) cap_tol_100um were inferred by rome/sim/treetool.py repair, not stated by the author. Treat them as a floor, not a specification.] [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
    "_src": "10_textiles.json",
    "_total_cost": 863.4,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_warp_weighted_loom",
@@ -37564,7 +37564,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -37581,7 +37581,7 @@
    "note": "Vertical loom with weights hanging on warp threads. Slow but reliable for narrow textiles and tapestries.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_water_frame",
@@ -37594,7 +37594,7 @@
     "crank_conrod",
     "cap_tol_100um"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 280,
    "lab": {
     "carpenter": 400,
@@ -37620,7 +37620,7 @@
    "note": "Water-powered spinning: spindle shaft driven continuously by water wheel via gearing. Produces tightly twisted warp yarn suitable for looms. Arkwright 1769. Requires factory-scale capital. Transforms spinning from cottage to factory.",
    "_src": "10_textiles.json",
    "_total_cost": 4839.5,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_wool",
@@ -37628,7 +37628,7 @@
    "tier": 0,
    "cat": "textiles",
    "pre": [],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 0,
    "lab": {},
    "mat": {},
@@ -37645,7 +37645,7 @@
    "note": "Wool fiber from sheep, available in Roman households. No processing required beyond shearing and basic cleaning.",
    "_src": "10_textiles.json",
    "_total_cost": 0,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "tex_wool_combing_machinery",
@@ -37658,7 +37658,7 @@
     "crank_conrod",
     "cap_tol_1mm"
    ],
-   "kb": "",
+   "kb": "90_textiles.md",
    "ph": 180,
    "lab": {
     "carpenter": 300,
@@ -37684,7 +37684,7 @@
    "note": "Water-powered rollers with metal pins comb wool fibers to parallelism. Produces cleaner, stronger yarn than hand combing. One machine replaces many combers. Requires substantial capital and water power.",
    "_src": "10_textiles.json",
    "_total_cost": 2481.4,
-   "kb_level": "none"
+   "kb_level": "module"
   },
   {
    "id": "thermodynamics_theory",

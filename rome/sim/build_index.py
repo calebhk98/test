@@ -68,10 +68,17 @@ def main():
 
     by_file = collections.defaultdict(list)
     broken_file, broken_anchor, prose = [], [], []
+    bydesign, gap = [], []
     for n in nodes:
         f, _, a = n["kb"].partition("#")
         f = os.path.basename(f)
-        if f in parent_files:
+        if not f:
+            # Capability rungs, materials and unobtainables are DEFINED by the
+            # tree itself and need no separate recipe. Anything else with no
+            # link is a genuine documentation gap and is reported as one.
+            (bydesign if n["cat"] in ("capability", "material", "unobtainable")
+             else gap).append(n["id"])
+        elif f in parent_files:
             prose.append((n, f, a))
         elif f in anchors:
             by_file[f].append((n, a))
@@ -151,6 +158,17 @@ def main():
             out.append("- `%s` links to `%s`: %s" % (a_, b_, c_))
         out.append("")
 
+    out += ["## Documentation coverage", "",
+            "| status | nodes |", "|---|---:|",
+            "| linked to a specific recipe entry | %d |" % sum(1 for f in files for n, a in by_file.get(f, []) if a),
+            "| linked to a domain module, no specific entry | %d |" % sum(1 for f in files for n, a in by_file.get(f, []) if not a),
+            "| documented in a top-level prose file | %d |" % len(prose),
+            "| no link BY DESIGN (capability rungs, materials, unobtainables) | %d |" % len(bydesign),
+            "| **undocumented, a real gap** | **%d** |" % len(gap), ""]
+    if gap:
+        out += ["The undocumented nodes, listed so the gap is visible rather than hidden:", "",
+                "`" + "`, `".join(sorted(gap)) + "`", ""]
+
     if broken_file or broken_anchor:
         out += ["## Broken links", ""]
         for i, k in broken_file:
@@ -165,6 +183,7 @@ def main():
     print("  nodes linked    : %d recipe + %d prose = %d of %d"
           % (sum(len(v) for v in by_file.values()), len(prose),
              sum(len(v) for v in by_file.values()) + len(prose), len(nodes)))
+    print("  no link by design: %d   undocumented gap: %d" % (len(bydesign), len(gap)))
     print("  broken files    : %d" % len(broken_file))
     print("  broken anchors  : %d" % len(broken_anchor))
     print("  broken inline   : %d" % len(inline_bad))
