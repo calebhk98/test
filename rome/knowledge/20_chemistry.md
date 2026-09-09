@@ -33,7 +33,7 @@ you are making straight into the room. Getting the lute right is as
 important as getting the vessel shape right.
 
 **Prerequisites.** A kiln reaching stoneware heat (roughly 1000-1100 C,
-cherry-orange, bellows-fed), glassblowing, a coppersmith, charcoal supply.
+orange on the canonical colour scale in 10_metallurgy.md, so roughly 900-1000 C, bellows-fed), glassblowing, a coppersmith, charcoal supply.
 Cross-reference the pottery/kiln and glass modules for exact TECH_IDs.
 
 **Roman-available inputs.** Fine potter's clay for retorts and crucibles;

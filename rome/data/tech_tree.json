@@ -457,7 +457,7 @@
     "calculus",
     "newtonian_mechanics"
    ],
-   "kb": "50_electricity_semiconductors.md",
+   "kb": "50_electricity.md",
    "ph": 800,
    "lab": {
     "scholar": 2500
@@ -510,7 +510,7 @@
     "em_theory",
     "atomic_theory"
    ],
-   "kb": "50_electricity_semiconductors.md#semiconductor_theory",
+   "kb": "55_semiconductors.md#semiconductor_theory",
    "ph": 1800,
    "lab": {
     "scholar": 6000
@@ -2927,7 +2927,7 @@
     "glass_labware",
     "lab_apparatus"
    ],
-   "kb": "50_electricity_semiconductors.md#electrostatics",
+   "kb": "50_electricity.md#electrostatics",
    "ph": 350,
    "lab": {
     "artisan": 1500,
@@ -2960,7 +2960,7 @@
     "copper_fire_refined",
     "crude_cell"
    ],
-   "kb": "50_electricity_semiconductors.md#voltaic_pile",
+   "kb": "50_electricity.md#voltaic_pile",
    "ph": 300,
    "lab": {
     "artisan": 900
@@ -2992,7 +2992,7 @@
     "voltaic_pile",
     "sulfuric_retort"
    ],
-   "kb": "50_electricity_semiconductors.md#daniell_cell",
+   "kb": "50_electricity.md#daniell_cell",
    "ph": 250,
    "lab": {
     "artisan": 1200,
@@ -3025,7 +3025,7 @@
     "drawplate_wire",
     "copper_fire_refined"
    ],
-   "kb": "50_electricity_semiconductors.md#wire_insulation",
+   "kb": "50_electricity.md#wire_insulation",
    "ph": 400,
    "lab": {
     "smith": 2500,
@@ -3090,7 +3090,7 @@
     "copper_refining",
     "geometry_analytic"
    ],
-   "kb": "50_electricity_semiconductors.md#galvanometer",
+   "kb": "50_electricity.md#galvanometer",
    "ph": 400,
    "lab": {
     "machinist": 1800,
@@ -3120,7 +3120,7 @@
    "pre": [
     "galvanometer"
    ],
-   "kb": "50_electricity_semiconductors.md#electromagnet",
+   "kb": "50_electricity.md#electromagnet",
    "ph": 350,
    "lab": {
     "artisan": 2000,
@@ -3153,7 +3153,7 @@
     "daniell_cell",
     "semaphore_telegraph"
    ],
-   "kb": "50_electricity_semiconductors.md#telegraph",
+   "kb": "50_electricity.md#telegraph",
    "ph": 700,
    "lab": {
     "artisan": 8000,
@@ -3187,7 +3187,7 @@
     "daniell_cell",
     "analytical_chemistry"
    ],
-   "kb": "50_electricity_semiconductors.md#electrolysis_industrial",
+   "kb": "50_electricity.md#electrolysis_industrial",
    "ph": 350,
    "lab": {
     "chemist": 2000,
@@ -3221,7 +3221,7 @@
     "interchangeable_parts",
     "copper_refining"
    ],
-   "kb": "50_electricity_semiconductors.md#dynamo_motor",
+   "kb": "50_electricity.md#dynamo_motor",
    "ph": 800,
    "lab": {
     "machinist": 6000,
@@ -3253,7 +3253,7 @@
     "dynamo",
     "em_theory"
    ],
-   "kb": "50_electricity_semiconductors.md#transformer_ac",
+   "kb": "50_electricity.md#transformer_ac",
    "ph": 700,
    "lab": {
     "machinist": 7000,
@@ -3286,7 +3286,7 @@
     "steam_high_pressure",
     "railway"
    ],
-   "kb": "50_electricity_semiconductors.md#transformer_ac",
+   "kb": "50_electricity.md#transformer_ac",
    "ph": 900,
    "lab": {
     "machinist": 20000,
@@ -3319,7 +3319,7 @@
     "dynamo",
     "vacuum_pumps"
    ],
-   "kb": "50_electricity_semiconductors.md#incandescent_lamp",
+   "kb": "50_electricity.md#incandescent_lamp",
    "ph": 500,
    "lab": {
     "artisan": 4000,
@@ -3351,7 +3351,7 @@
     "power_grid",
     "electroplating"
    ],
-   "kb": "50_electricity_semiconductors.md#electrolysis_industrial",
+   "kb": "50_electricity.md#electrolysis_industrial",
    "ph": 700,
    "lab": {
     "chemist": 9000,
@@ -3417,7 +3417,7 @@
     "glass_labware",
     "mercury_supply"
    ],
-   "kb": "50_electricity_semiconductors.md#vacuum_pumps",
+   "kb": "55_semiconductors.md#vacuum_pumps",
    "ph": 500,
    "lab": {
     "glassblower": 2500,
@@ -3449,7 +3449,7 @@
     "interchangeable_parts",
     "motor_transformer_ac"
    ],
-   "kb": "50_electricity_semiconductors.md#vacuum_pumps",
+   "kb": "55_semiconductors.md#vacuum_pumps",
    "ph": 600,
    "lab": {
     "machinist": 4000,
@@ -3482,7 +3482,7 @@
     "dynamo",
     "em_theory"
    ],
-   "kb": "50_electricity_semiconductors.md#crookes_xray_electron",
+   "kb": "55_semiconductors.md#crookes_xray_electron",
    "ph": 700,
    "lab": {
     "glassblower": 3000,
@@ -3515,7 +3515,7 @@
     "discharge_xray",
     "copper_refining"
    ],
-   "kb": "50_electricity_semiconductors.md#vacuum_tube",
+   "kb": "55_semiconductors.md#vacuum_tube",
    "ph": 900,
    "lab": {
     "glassblower": 6000,
@@ -3549,7 +3549,7 @@
     "vacuum_tube",
     "galena_detector"
    ],
-   "kb": "50_electricity_semiconductors.md#radio_spark_to_valve",
+   "kb": "55_semiconductors.md#radio_spark_to_valve",
    "ph": 700,
    "lab": {
     "artisan": 6000,
@@ -3582,7 +3582,7 @@
     "crude_cell",
     "lead_metallurgy"
    ],
-   "kb": "50_electricity_semiconductors.md#galena_detector",
+   "kb": "55_semiconductors.md#galena_detector",
    "ph": 150,
    "lab": {
     "artisan": 400
@@ -3614,7 +3614,7 @@
     "galvanometer",
     "quantum_solidstate_theory"
    ],
-   "kb": "50_electricity_semiconductors.md#semiconductor_theory",
+   "kb": "55_semiconductors.md#semiconductor_metrology",
    "ph": 800,
    "lab": {
     "chemist": 5000,
@@ -3646,7 +3646,7 @@
     "high_temp_furnace",
     "power_grid"
    ],
-   "kb": "50_electricity_semiconductors.md#germanium_sourcing",
+   "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 600,
    "lab": {
     "furnaceman": 12000,
@@ -3681,7 +3681,7 @@
     "hydrochloric_acid",
     "lead_chamber"
    ],
-   "kb": "50_electricity_semiconductors.md#germanium_sourcing",
+   "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 900,
    "lab": {
     "chemist": 9000,
@@ -3714,7 +3714,7 @@
     "glass_borosilicate",
     "fused_quartz"
    ],
-   "kb": "50_electricity_semiconductors.md#germanium_sourcing",
+   "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 900,
    "lab": {
     "chemist": 12000
@@ -3745,7 +3745,7 @@
     "industrial_gases",
     "fused_quartz"
    ],
-   "kb": "50_electricity_semiconductors.md#germanium_sourcing",
+   "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 600,
    "lab": {
     "chemist": 6000,
@@ -3778,7 +3778,7 @@
     "semiconductor_metrology",
     "arc_furnace_ferroalloys"
    ],
-   "kb": "50_electricity_semiconductors.md#zone_refining",
+   "kb": "55_semiconductors.md#zone_refining",
    "ph": 1200,
    "lab": {
     "chemist": 12000,
@@ -3811,7 +3811,7 @@
     "zone_refining",
     "semiconductor_metrology"
    ],
-   "kb": "50_electricity_semiconductors.md#single_crystal_growth",
+   "kb": "55_semiconductors.md#single_crystal_growth",
    "ph": 1000,
    "lab": {
     "chemist": 9000,
@@ -3845,7 +3845,7 @@
     "quantum_solidstate_theory",
     "micrometer_gauges"
    ],
-   "kb": "50_electricity_semiconductors.md#point_contact_transistor",
+   "kb": "55_semiconductors.md#point_contact_transistor",
    "ph": 900,
    "lab": {
     "chemist": 8000,
@@ -3876,7 +3876,7 @@
    "pre": [
     "point_contact_transistor"
    ],
-   "kb": "50_electricity_semiconductors.md#junction_transistor",
+   "kb": "55_semiconductors.md#junction_transistor",
    "ph": 800,
    "lab": {
     "chemist": 9000,
@@ -3908,7 +3908,7 @@
     "hydrofluoric_acid",
     "arc_furnace_ferroalloys"
    ],
-   "kb": "50_electricity_semiconductors.md#silicon_path",
+   "kb": "55_semiconductors.md#silicon_path",
    "ph": 1000,
    "lab": {
     "chemist": 15000,
@@ -3940,7 +3940,7 @@
     "workshop_first",
     "lead_metallurgy"
    ],
-   "kb": "50_electricity_semiconductors.md#voltaic_pile",
+   "kb": "50_electricity.md#crude_cell",
    "ph": 120,
    "lab": {
     "artisan": 300

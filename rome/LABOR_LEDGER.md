@@ -20,7 +20,7 @@ hours, total, forever.
 | 10th / 90th percentile | 18 / 40 years |
 | Median founder-hours actually delivered in a lifetime | **35,414** |
 | Founder-hours the full tree demands | 80,520 |
-| Fraction of the tree one lifetime can personally direct | **44%** |
+| Those hours as a share of the tree's total founder-hour demand | **44%** |
 
 ### What the founder personally lives to see finished
 
@@ -70,8 +70,10 @@ things you should assume you will NOT live to see:
 
 ## The single most important number in this project
 
-**44%.** That is the fraction of the tree one lifetime of personal direction can
-cover. You are not the builder of a transistor. You are the first link in a
+**44%.** Your entire working life delivers less than half the founder-hours the
+tree demands. And that is the flattering way to put it, because those hours are
+spread across retries and abandoned attempts, not neatly banked against finished
+nodes. You are not the builder of a transistor. You are the first link in a
 relay of roughly eight to ten generations of directors, and the only things you
 can hand forward are trained people and written words.
 

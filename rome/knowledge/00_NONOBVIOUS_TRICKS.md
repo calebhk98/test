@@ -75,7 +75,7 @@ demonstration that rectification is real, which is the seed of everything in
 Module 50.
 *(Saves: nothing on the critical path, but it is the proof-of-concept that
 justifies the whole 200-year programme to a sceptical patron)*
-→ `50_electricity_semiconductors.md#galena_detector`
+→ `55_semiconductors.md#galena_detector`
 
 **6. Zero, positional notation and symbolic algebra cost you nothing.**
 Roman numerals make multiplication a specialist skill. You carry decimal
@@ -174,7 +174,7 @@ carry it out. No pistons, no seals, no tolerances. It reaches pressures good
 enough for incandescent lamps and discharge tubes, using nothing but glass
 tubing and mercury. **This is the single cheapest route from "Rome" to "vacuum
 physics" and it skips the entire precision-machining prerequisite.**
-→ `50_electricity_semiconductors.md#vacuum_pumps`
+→ `55_semiconductors.md#vacuum_pumps`
 
 **20. Fixed points make thermometry, and thermometry makes chemistry
 reproducible.** Melting ice and boiling water. Without a repeatable temperature
@@ -197,20 +197,20 @@ verify that your germanium is actually germanium.
 A coil of known radius and turn count, a compass needle at its centre, and the
 Earth's field. You get absolute current measurement with no calibrated
 instrument to start from. This solves the electrical metrology bootstrap.
-→ `50_electricity_semiconductors.md#galvanometer`
+→ `55_semiconductors.md#galvanometer`
 
 **24. Self-excitation solves the dynamo chicken-and-egg.** You need a magnetic
 field to generate current, and an electromagnet needs current. Residual
 magnetism in the iron core is enough to start it, and it builds up. Nobody
 guesses this; everybody assumes you need permanent magnets.
-→ `50_electricity_semiconductors.md#dynamo_motor`
+→ `55_semiconductors.md#dynamo_motor`
 
 **25. You have no rubber. Insulate with silk, oiled linen and shellac.**
 There is no natural rubber and no gutta percha in the Old World until the
 Americas open. Wire insulation is a genuine blocker and the answers are silk
 wrapping, linseed-oil varnish, shellac imported via the Indian trade, and
 bitumen for cables.
-→ `50_electricity_semiconductors.md#wire_insulation`
+→ `55_semiconductors.md#wire_insulation`
 
 **26. Wilkinson's boring mill, not the idea of steam, is what gates the steam
 engine.** Newcomen and Watt both had the concept long before anyone could bore
@@ -233,7 +233,7 @@ you reach purities of one part in ten billion, which is otherwise unreachable by
 any chemical method. **This is the specific trick that makes semiconductors
 possible at all**, and it needs only a tube furnace, a quartz or graphite boat,
 an inert atmosphere and a way to move a heater slowly.
-→ `50_electricity_semiconductors.md#zone_refining`
+→ `55_semiconductors.md#zone_refining`
 
 **29. Germanium tetrachloride boils at about 86 C.** That is the door.
 Germanium is a nightmare to purify as a metal or an oxide and trivially easy as
@@ -241,14 +241,14 @@ a volatile chloride you can fractionally distil like brandy. Convert oxide to
 chloride, distil it many times, hydrolyse back to the oxide, reduce with
 hydrogen. Chemical purity first, then zone refining for the last few orders of
 magnitude.
-→ `50_electricity_semiconductors.md#germanium_sourcing`
+→ `55_semiconductors.md#germanium_sourcing`
 
 **30. Germanium hides in zinc smelter flue dust and in coal ash.**
 It is 1.6 ppm in the crust and essentially never occurs as its own ore in
 reachable quantity. The realistic route is: build a zinc industry, then collect
 the dust from the flues. **This is the second reason zinc metal is on the
 critical path.**
-→ `50_electricity_semiconductors.md#germanium_sourcing`
+→ `55_semiconductors.md#germanium_sourcing`
 
 **31. You already know the answer to solid state physics.**
 Band structure, doping, majority and minority carriers, the p-n junction and
@@ -257,14 +257,14 @@ out. You carry the conclusions. This is the largest single time saving in the
 whole programme, worth more than any tool, and it costs nothing but the
 teaching. **Write it down in the first decade, before you can possibly test it,
 because you may not live to teach it twice.**
-→ `50_electricity_semiconductors.md#semiconductor_theory`
+→ `55_semiconductors.md#semiconductor_theory`
 
 **32. Germanium before silicon.** Silicon is everywhere and germanium is rare,
 and germanium is still the right first target: it melts at 938 C rather than
 1414 C, its chloride distils at a convenient temperature, and its oxide is water
 soluble, which makes separation easy. History did germanium first for exactly
 these reasons and a bootstrap should too.
-→ `50_electricity_semiconductors.md#silicon_path`
+→ `55_semiconductors.md#silicon_path`
 
 **33. Photography is not a luxury, it is an instrument.**
 It is how you record spectra, measure star positions, image metal

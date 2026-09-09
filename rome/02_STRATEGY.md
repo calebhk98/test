@@ -102,6 +102,28 @@ real finding, and I say so rather than deleting the line. And
 staff regrow too easily after a plague, so it understates the value of not
 losing them.
 
+
+## 3a. The one number that reframes the whole problem
+
+`python3 rome/sim/simulator.py path` reports that the minimum technical closure
+of the goal is **84 nodes, 49,550 founder-hours and 3.54 million denarii**,
+against the roughly **72,000 hours** you will ever have.
+
+So on hours alone, one person could in principle direct the entire technical
+path to a transistor. It is the other two constraints that make that a fantasy:
+
+1. **The calendar floor is 133 years** and you have about 30. Nitre beds take
+   two years whatever you spend. A generation of economic diffusion takes a
+   generation. Money buys neither.
+2. **The 84 technical nodes do not include a single one of the 44 nodes that
+   provide the money and the people.** No patron, no citizenship, no school, no
+   revenue, no printing, no defence against plague. Ablate any of the first
+   three and the success rate is zero.
+
+The technical problem is one lifetime of work. The actual problem is three
+centuries of institution-building, and that is the problem this project is
+really about.
+
 ## 4. The phases
 
 ### Phase A - Years 0 to 5. Survive, and start the slow things.

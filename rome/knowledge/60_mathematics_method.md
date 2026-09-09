@@ -27,7 +27,7 @@ to accept it is a genuine judgment call, and each entry says so plainly.
 
 ---
 
-### arithmetic_positional — Plain English name: place-value numbers, zero, negatives, decimals (no Latin/Greek term exists for this system; it has not been invented anywhere in the world your students can reach in 100 AD)
+### arithmetic_positional - Plain English name: place-value numbers, zero, negatives, decimals (no Latin/Greek term exists for this system; it has not been invented anywhere in the world your students can reach in 100 AD)
 
 **What it is / why you want it.** Ten digit-shapes (including one for
 "nothing in this column"), used so that a digit's position tells you its
@@ -140,7 +140,7 @@ in the module; only the exact labour-hour figures are estimated.
 
 ---
 
-### algebra_symbolic — Plain English name: symbols for unknowns, the equals sign, systematic equation-solving (no established Latin/Greek term; "algebra" itself is an Arabic loanword from *al-jabr*, centuries in your future)
+### algebra_symbolic - Plain English name: symbols for unknowns, the equals sign, systematic equation-solving (no established Latin/Greek term; "algebra" itself is an Arabic loanword from *al-jabr*, centuries in your future)
 
 **What it is / why you want it.** Letters (or other marks) standing for an
 unknown or general quantity, a symbol meaning "the same value as," and a
@@ -239,7 +239,7 @@ labour estimate carry more judgment than arithmetic_positional's.
 
 ---
 
-### geometry_analytic — Plain English name: coordinates and trigonometric tables (*geometria* already exists as a general term; the coordinate-algebra fusion and true trigonometric, as opposed to chord, tables do not)
+### geometry_analytic - Plain English name: coordinates and trigonometric tables (*geometria* already exists as a general term; the coordinate-algebra fusion and true trigonometric, as opposed to chord, tables do not)
 
 **What it is / why you want it.** A way to describe any point by two
 signed numbers (its distance from two fixed perpendicular reference lines),
@@ -337,7 +337,7 @@ math and the Roman-era feasibility well grounded.
 
 ---
 
-### logarithms — Plain English name: tables that turn multiplication into addition, and the slide rule that reads them cheaply (no Latin/Greek term exists)
+### logarithms - Plain English name: tables that turn multiplication into addition, and the slide rule that reads them cheaply (no Latin/Greek term exists)
 
 **What it is / why you want it.** A table pairing each number with an
 "exponent" such that multiplying two numbers corresponds to simply adding
@@ -431,7 +431,7 @@ genuine, clearly flagged guess, pulling overall confidence down to MEDIUM.
 
 ---
 
-### calculus — Plain English name: limits, derivatives, integrals (*calculus* already exists as a Latin word meaning a small pebble used for counting; a pleasant accident, not a claim that Romans have the mathematics)
+### calculus - Plain English name: limits, derivatives, integrals (*calculus* already exists as a Latin word meaning a small pebble used for counting; a pleasant accident, not a claim that Romans have the mathematics)
 
 **What it is / why you want it.** The mathematics of continuous change: a
 rigorous way to handle "instantaneous rate of change" (the derivative) and
@@ -524,7 +524,7 @@ judgment calls, MEDIUM.
 
 ---
 
-### scientific_method — Plain English name: controlled experiment, hypothesis, replication, publication, peer criticism (no Latin/Greek term exists as a unified concept)
+### scientific_method - Plain English name: controlled experiment, hypothesis, replication, publication, peer criticism (no Latin/Greek term exists as a unified concept)
 
 **What it is / why you want it.** A disciplined package for finding true
 claims about nature: state a hypothesis and what would prove it wrong
@@ -675,7 +675,7 @@ education_pedagogy.
 
 ---
 
-### statistics_basic — Plain English name: mean, variance, sampling, the control group (no Latin/Greek term exists)
+### statistics_basic - Plain English name: mean, variance, sampling, the control group (no Latin/Greek term exists)
 
 **What it is / why you want it.** The arithmetic mean (a single number
 summarizing a set of measurements), variance or spread (how much
@@ -759,7 +759,7 @@ real and honestly flagged ethical and social friction point.
 
 ---
 
-### newtonian_mechanics — Plain English name: the laws of motion, universal gravitation, and public prediction (*mechanica* already exists as a general term for the study of machines and motion)
+### newtonian_mechanics - Plain English name: the laws of motion, universal gravitation, and public prediction (*mechanica* already exists as a general term for the study of machines and motion)
 
 **What it is / why you want it.** Three laws (a body keeps its state of
 motion unless acted on; force equals mass times acceleration; every action
@@ -863,7 +863,7 @@ and timeline for introducing it, a genuine judgment call.
 
 ---
 
-### thermodynamics_theory — Plain English name: heat as energy, the gas laws, entropy, efficiency limits (no Latin/Greek term exists)
+### thermodynamics_theory - Plain English name: heat as energy, the gas laws, entropy, efficiency limits (no Latin/Greek term exists)
 
 **What it is / why you want it.** The recognition that heat is a form of
 energy, disordered motion, rather than a fluid substance; the gas laws
@@ -963,7 +963,7 @@ specific labour estimates are judgment calls, pulling the entry to MEDIUM.
 
 ---
 
-### atomic_theory — Plain English name: atoms, elements, atomic weights, stoichiometry, the periodic table (*atomus*, from Greek *atomos*, already exists and is already used by Lucretius)
+### atomic_theory - Plain English name: atoms, elements, atomic weights, stoichiometry, the periodic table (*atomus*, from Greek *atomos*, already exists and is already used by Lucretius)
 
 **What it is / why you want it.** The idea that matter is made of atoms;
 that an element is a substance of one atom-type; that atomic weight is a
@@ -1069,7 +1069,7 @@ flagged accordingly.
 
 ---
 
-### units_standards — Plain English name: defined, published, reproducible standards for length, mass, time, temperature (*mensura* already exists as a general term for a measure)
+### units_standards - Plain English name: defined, published, reproducible standards for length, mass, time, temperature (*mensura* already exists as a general term for a measure)
 
 **What it is / why you want it.** A formally defined and published
 standard for length, mass, time, and temperature, each backed by BOTH a
@@ -1211,7 +1211,7 @@ estimates given, all explicitly flagged as ESTIMATED.
 
 ---
 
-### education_pedagogy — Plain English name: how to actually teach all of this to Romans (*disciplina* and *paedagogia* already exist as general terms)
+### education_pedagogy - Plain English name: how to actually teach all of this to Romans (*disciplina* and *paedagogia* already exist as general terms)
 
 **What it is / why you want it.** The concrete system for teaching
 everything above to enough Romans, reliably, across generations:
@@ -1336,7 +1336,7 @@ of the entire module alongside scientific_method itself.
 
 ---
 
-### notation_and_writing — Plain English name: how to write the corpus so it survives (no single Latin/Greek term covers this)
+### notation_and_writing - Plain English name: how to write the corpus so it survives (no single Latin/Greek term covers this)
 
 **What it is / why you want it.** The concrete rules for writing the whole
 knowledge corpus, not only this module, so it survives transmission across

@@ -222,3 +222,27 @@ re-deriving it, except where I had specific reason to doubt the citation
 ESTIMATED labour-cost or yield figure (charcoal yields, artisan-day counts,
 crucible attrition rates, etc.), since these are consistently and honestly
 flagged as estimates throughout and are not presented as settled fact.
+
+
+---
+
+# RESOLUTION (added by the project author after the audit)
+
+Every finding above was acted on. This section records what was changed, so that
+a later reader can tell which parts of the audit are still live.
+
+| Finding | Status | What was done |
+|---|---|---|
+| Colour-temperature scale contradicts itself between modules 10 and 30 | **FIXED** | A single canonical scale is now stated in `10_metallurgy.md#refractory_fireclay` and referenced from `30_glass_optics.md`. Both were replaced with: faint red 500-550, dull red 600-700, cherry red 700-800, bright cherry 800-900, orange 900-1000, yellow 1000-1150, white above 1300 C. An ambient-light caveat and a calibration instruction (silver melts at 962 C, copper at 1085 C) were added, because this scale genuinely does read 100 C or more differently in daylight than in a dark shop. Module 20's ambiguous "cherry-orange" was replaced with an explicit temperature. |
+| "Molten NaCl or NaOH" given jointly as the historical route to sodium | **FIXED** | Davy's 1807 route was molten NaOH. NaCl electrolysis is the Downs process, 1924, and needs a much hotter cell and a calcium chloride flux. Module 20 now says so and warns against planning around it. |
+| Module 40 justifies bronze cylinders by saying Rome has no cast iron | **FIXED** | True of Rome as you find it, false by the time you can build an engine, since the tech tree puts the blast furnace long before `steam_atmospheric`. The entry now says cast iron is the better choice and bronze is the fallback. |
+| Orpiment and realgar cited to Pliny NH XXXIII-XXXIV | **FIXED** | Changed to NH 33 and 35. Pliny discusses auripigmentum and sandaraca in Book 33 and the painters' pigments systematically in Book 35. |
+| Unverifiable citations | **LEFT AS FLAGGED** | The auditor could not confirm several Pliny and Seneca references. Most were already marked "attributed, unverified" in the modules themselves. That flag is the correct treatment and it has been left in place rather than converted into a false claim of verification in either direction. |
+
+## What this audit did NOT cover
+
+Modules 50, 55, 60, 70, 75, 80 and 85 were written after this audit ran and have
+not been adversarially checked. Treat any single number in them as `[C]` unless
+it carries its own MEASURED tag. The audit also did not check `data/tech_tree.json`
+or `data/prices.json`, whose cost figures are the author's estimates throughout
+and are the weakest part of the project. See `../README.md`.
