@@ -115,4 +115,141 @@ founder who never dies, purely from the free initial-tech backlog described
 in #2 plus passive tax/background revenue. That is a pretty strong candidate
 for "should not work but does."
 
+(Switched back to the real WEIRD session for everything below. The
+`civ_arch_roman` free item from section 1 was actually completed in this
+session, which is why `done_earned` starts at 1 rather than 0 below.)
+
+### 4. Dev/QA note leaking straight into player-facing text
+
+    {"cmd":"why","id":"water_power_scale"}
+
+Reply `note` field, verbatim:
+
+> "Rome already has this (Barbegal, 16 wheels). What is missing is applying
+> it to anything other than grinding grain. Put the bellows, the stamps, the
+> paper mill, the boring mill and the lathe on the same shaft. **[AUDIT: this
+> node does not declare the capability rung it needs. An automated pass once
+> inferred one, and an independent review found that EVERY inferred rung it
+> sampled was wrong, so all of them were reverted. The gap is left visible on
+> purpose: a missing prerequisite you can see beats a wrong one you cannot.]**"
+
+That bracketed `[AUDIT: ...]` sentence is obviously an internal
+data-QA/developer annotation about the content pipeline itself (an "automated
+pass" that inferred something wrong, "an independent review", reverted
+values) — not in-world flavour text. It's shown to the player through the
+ordinary `why` command with no special flag. This is the single most
+"unrealistic" thing I found in the sense of breaking the fourth wall: found
+on the very first non-trivial item I inspected with `why`, so it is likely
+not an isolated case — there are probably more `[AUDIT: ...]` notes lurking
+on other nodes with the same authoring gap.
+
+### 5. Slave-buy-then-manumit as a reputation-laundering loop (partial exploit — costed, not free)
+
+    {"cmd":"buy","what":"slaves","n":5}   -> {"ok": true, "bought": 5, "capital": 7434.6}   (cost 1234, capital 8668.6->7434.6)
+    {"cmd":"buy","what":"manumit","n":5}  -> {"ok": true, "manumitted": 5, "freedmen": 5, "slaves": 0}
+    {"cmd":"state"}                       -> reputation 3.1 -> 4.8, capital UNCHANGED at 7434.6
+
+Manumitting is completely free (no capital cost at all) and gives an
+immediate, guaranteed reputation bump (+1.7 the first time, +1.4 the second
+time on a repeat of the same buy/free cycle — so it does taper, but it never
+costs anything beyond the purchase price of the slaves). So "reputation" is
+directly purchasable with capital via a buy-then-immediately-free loop, no
+risk, no time delay, no `chance_of_failure` roll at all (unlike almost every
+tech). Freed people also make your labour force permanently better
+(`artisan_capacity` training target rose from 2.75 to 5.0 the moment the same
+5 people flipped from slave to freedmen), at the cost of higher ongoing
+`living_cost` upkeep for them from then on. Not "free money", but it is a
+completely deterministic, zero-risk way to convert capital directly into
+reputation and workforce quality, with no other mechanic (suspicion, scandal,
+review) reacting to a founder who is very transparently buying and freeing
+slaves back to back purely to farm reputation.
+
+### 6. Things that worked as advertised (tried to break them, could not)
+
+- **`stop` really does forfeit 100% of spend.** Started `water_power_scale`
+  (total cost 5085.8), stepped 1 year, `spent` reached 2542.9, then
+  `{"cmd":"stop","id":"water_power_scale"}`. Capital before and after the stop
+  was identical (3464.0 -> 3464.0) — no partial refund, no residual credit
+  toward anything else, no side-channel to recover the sunk cost. Correctly
+  brutal, as documented ("losing what you have spent").
+- **`bounty` is a real premium, not a shortcut.** `{"cmd":"bounty","id":"water_power_scale"}`
+  quoted "needs about 12714 denarii" versus a build cost of 5085.8 for the
+  same tech — bounty is ~2.5x the DIY price here, so there's no "pay someone
+  else, it's cheaper" trick available; it correctly refuses if you can't
+  afford it rather than letting you go into debt for it.
+- **`buy slaves`/`buy mine`/`buy forest` are gated up front.** Tried
+  `{"cmd":"buy","what":"slaves","n":5}` with insufficient capital and got a
+  clean refusal (`"cannot afford 5 slaves: 1234 denarii ... and you have
+  184"`) rather than silently letting me go negative. Price also rises with
+  purchase size ("the market moves against a purchase this size") and
+  persists somewhat between purchases rather than instantly resetting, so you
+  can't cheaply grind slave-buying either.
+
+### 7. THE BIG ECONOMIC EXPLOIT — `start` never checks whether you can afford the project, at all
+
+This is the most exploitable thing I found, and unlike #2 it *is* a
+repeatable, at-will lever the player can pull any time.
+
+While sitting at **capital 3483.6**, I issued three `start`s back to back for
+projects whose *listed* costs alone total roughly 12,573 denarii
+(`fin_postal_service` 4609.6, `civ_monumental_stone` 4455.0, `fin_inn`
+3508.8) — nearly 4x my cash on hand:
+
+    {"cmd":"start","id":"fin_postal_service"}     -> {"ok": true, "started": "fin_postal_service", ...}
+    {"cmd":"start","id":"civ_monumental_stone"}   -> {"ok": true, "started": "civ_monumental_stone", ...}
+    {"cmd":"start","id":"fin_inn"}                -> {"ok": true, "started": "fin_inn", ...}
+
+Every single one is accepted unconditionally — no "can you afford this"
+check exists for `start` the way it demonstrably does exist for `buy`. I
+pushed this much further a bit later: at **capital 6414.8** I started seven
+more big-ticket items at once —
+
+    fin_chain_store 34854.5, tl_windscreen_wiper 15575.5, tx2_watch_case 13060.9,
+    fin_plantation 9993.1, fin_theatre_business 7631.4, mil_artillery_piece 6797.7,
+    fin_hotel 5776.7
+
+— a combined listed cost of **93,689.8 denarii against 6,414.8 in the
+treasury** (about 14.6x over budget), all seven `start`s returned `"ok":
+true` with no warning.
+
+What actually happened when I stepped time forward:
+
+    {"cmd":"step","years":1}
+    -> year 134, capital: 0.0, project_spend_last_year: 51195.4, scandal: 0.65 (up from 0)
+
+    {"cmd":"step","years":4}
+    -> year 138, capital: -2910.4, revenue: 16720.5, scandal: 1.05
+       completed: tl_windscreen_wiper, tx2_watch_case, fin_theatre_business,
+                  mil_artillery_piece, fin_hotel, fin_plantation  (6 of 7 done)
+
+So the engine spent **51,195.4 in a single year** against a treasury that
+never held more than a few thousand, capital was allowed to swing to a
+genuinely negative **-2910.4**, and yet:
+
+- No bankruptcy, no forced project cancellation, no game-over, no error of
+  any kind.
+- Every project still completed on its own schedule as if fully funded.
+- The *only* visible consequence was a slowly-climbing `scandal` stat
+  (0.0 -> 0.65 -> 1.05) — a number I never saw explained or connected to any
+  penalty in anything I tried. Reputation, meanwhile, kept climbing anyway
+  (13.5 -> 22.1) because each completed business adds its own reputation
+  bonus, so being reckless with money was net *good* for my reputation in
+  this run.
+- Capital self-repaired within a handful of years purely because the newly
+  completed businesses immediately started generating heavy `revenue`
+  (778.2/yr at the start of this experiment -> 16,720.5/yr four years later).
+
+Net effect: the game's own stated premise — "Building it is not [free]: it
+takes your own hours, other people's hours, money, materials" — is not
+actually enforced for money. You can start an unlimited pile of expensive
+projects you have no way to pay for today, run a large operating deficit
+(capital below zero) with only a mild cosmetic `scandal` tick as
+consequence, and let tomorrow's revenue from those very projects bail you
+out. This is a "debt spree" strategy: front-load as many `start`s as your
+`founder_hours_available` (2400/yr) can service in parallel, ignore capital
+entirely, and let completions snowball your revenue to cover the deficit
+after the fact. It never once produced a refusal, an error, or any
+consequence worse than a slowly rising number I couldn't find a use for.
+
+
 

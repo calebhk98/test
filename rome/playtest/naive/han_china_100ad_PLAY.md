@@ -82,3 +82,81 @@ each visible item still shown one-line/fog-of-war style. No way to see the
 tree shape, only breadth right now. It genuinely feels like exploring a
 research tree blind, which is the stated design.
 
+### Years 106-156: building out an economic/scientific base
+
+Kept a loop going: check `available`, start a batch of affordable things,
+`step` several years, repeat. Economy snowballed nicely: capital went from
+0 -> ~1000 (yr136) -> ~5500 (yr156), revenue climbed from 778 to 2719/yr,
+artisans grew from ~4 to 8.46 automatically (I never explicitly hired
+anyone — headcount seems to grow on its own from active projects/reputation).
+Scholars stayed pinned at 1.0 the entire time despite building multiple
+"institution" techs (curriculum, doctorate, research group, referee, funded
+programme) — I expected those to grow my scholar headcount and they didn't,
+which was confusing; I never found a `buy scholars` or hire command, only
+`buy` for forest/mine/slaves/manumit. If scholar count matters for research
+speed I don't know how to increase it deliberately.
+
+Random flavour events fire during `step`: several "fire in the insula
+district" messages with no visible consequence in the numbers I could see,
+and once "stopped maintaining 1 works that cost more than they returned" —
+i.e. the game will auto-abandon an unprofitable holding rather than bleed me
+forever, which is a nice bit of automatic housekeeping I wasn't expecting
+and wasn't warned about either.
+
+One genuinely delightful event: completing "Controlled experiment,
+hypothesis, replication, publication" (the scientific-method bundle) fired
+`"changes the society: w_magic_fear, w_novelty"` — i.e. the tech chain
+doesn't just unlock more tech, it measurably moves the culture's underlying
+belief weights (fear of magic down, openness to novelty up, presumably).
+That's the first sign the world model is reacting to what I've taught it,
+not just gating a tree.
+
+The `knowledge_risk` block in `state` has been climbing the whole game —
+technologies_at_risk 5 -> 18, expected loss per sacking 1.6 -> 5.8 — and
+every single state dump repeats the same line: "there is said to be a way
+to guard against this; you have not found it yet." I went looking for it
+under fog (grepped my own `available` dump for library/archive/backup/
+monastery/vault/secret/scatter) and found nothing yet at year 156. This is
+good tension design — the risk clock is visibly ticking toward the Yellow
+Turban rebellion (184-205) and I still haven't found the mitigation — but
+after ~10 checks of the same unresolved hint I did start to find the
+repetition a little naggy rather than ominous.
+
+The single most striking thing so far: `why water_power_scale` returned a
+note field containing a literal developer audit comment left in the game
+content itself: *"[AUDIT: this node does not declare the capability rung it
+needs. An automated pass once inferred one, and an independent review found
+that EVERY inferred rung it sampled was wrong, so all of them were reverted.
+The gap is left visible on purpose: a missing prerequisite you can see beats
+a wrong one you cannot.]"* That is remarkably honest — the game is telling
+me, in character as a knowledge-note, about a limitation in its own
+procedural content generation, and defending the design choice to leave a
+visible gap rather than a silently-wrong one. I did not expect a simulation
+like this to be self-aware about its own data quality in the player-facing
+text. It's the kind of thing I'd have assumed was left in by accident, but
+the framing ("left visible on purpose") reads deliberate.
+
+Also notable: the tech tree happily offers wildly anachronistic, era-skipping
+jumps very cheaply once a few prerequisites are met — e.g. `mt2_basic_converter`
+("Basic Bessemer converter for steel from iron-ore matte", historically 1856)
+was sitting in my available list at year ~146 for a mere 200 capital, right
+next to buttons and paperclips in the sorted-by-cost list. Mustard gas
+(`mil_chemical_mustard`) and general-purpose bombs (`mil_bomb_general_purpose`)
+were both available for ~41-46 capital as early as year 106, cheaper than a
+lot of textile odds and ends. I chose not to build either — partly roleplay,
+partly curiosity about whether the game would react — but their presence,
+priced like a commodity, is a pointed reminder of what "carrying modern
+knowledge into the past" actually implies once you stop being precious
+about it. Worth trying in a future playthrough to see what the game does if
+you actually pull that lever.
+
+Started `water_power_scale` (line-shaft power: mill + bellows + stamps +
+paper mill + boring mill + lathe all off one shaft) at year 156, cost 5085.8,
+revenue 2200/yr, downstream_count 1276 — clearly a load-bearing mid-game
+infrastructure piece. Its own note text again has the Rome-comparison
+flavour ("Rome already has this... what's missing is applying it to
+anything other than grinding grain") that a lot of these entries carry —
+the writing consistently frames Han China's opportunity against what Rome
+is doing in parallel, which is a nice worldbuilding touch given the chosen
+civ.
+
