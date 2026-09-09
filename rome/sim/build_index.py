@@ -55,12 +55,12 @@ def main():
         txt = open(os.path.join(KB, f)).read()
         anchors[f], slugs[f] = set(), {}
         for line in txt.splitlines():
-            m = re.match(r"^###\s+`?([A-Za-z0-9_]+)`?", line)
+            m = re.match(r"^##\#?\s+`?([A-Za-z0-9_]+)`?(?=\s*[-:])", line)
             if not m:
                 continue
             tid = m.group(1)
             anchors[f].add(tid)
-            slugs[f][tid] = github_slug(line[3:].strip())
+            slugs[f][tid] = github_slug(line.lstrip("#").strip())
             cur = tid
         # A module section covers a CLUSTER of nodes, not one. The heading names
         # a representative and an "Also covers:" line names the rest. Without
@@ -68,7 +68,7 @@ def main():
         # because their id was not a heading.
         cur = None
         for line in txt.splitlines():
-            m = re.match(r"^###\s+`?([A-Za-z0-9_]+)`?", line)
+            m = re.match(r"^##\#?\s+`?([A-Za-z0-9_]+)`?(?=\s*[-:])", line)
             if m:
                 cur = m.group(1)
                 continue

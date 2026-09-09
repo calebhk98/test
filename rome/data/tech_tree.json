@@ -48769,7 +48769,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "if_acoustic_horn_recording",
-   "kb": "",
+   "kb": "88_media_signals.md#if_disc_record",
    "lab": {
     "engineer": 280.0
    },
@@ -48807,7 +48807,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_adding_machine",
-   "kb": "",
+   "kb": "88_media_signals.md#if_adding_machine",
    "lab": {
     "machinist": 350.0
    },
@@ -48845,7 +48845,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_amplitude_modulation",
-   "kb": "",
+   "kb": "88_media_signals.md#if_triode_oscillator",
    "lab": {
     "electrician": 350.0
    },
@@ -48880,7 +48880,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "if_antenna_dipole",
-   "kb": "",
+   "kb": "88_media_signals.md#if_tuned_circuit",
    "lab": {
     "electrician": 240.0
    },
@@ -48917,7 +48917,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_autochrome_plate",
-   "kb": "",
+   "kb": "88_media_signals.md#if_celluloid_roll_film",
    "lab": {
     "artisan": 300.0,
     "chemist": 500.0
@@ -48953,7 +48953,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_bookbinding_case",
-   "kb": "",
+   "kb": "88_media_signals.md#if_papyrus",
    "lab": {
     "artisan": 350.0
    },
@@ -48994,7 +48994,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_cable_repeater",
-   "kb": "",
+   "kb": "88_media_signals.md#if_submarine_cable_gutta_percha",
    "lab": {
     "electrician": 400.0
    },
@@ -49032,7 +49032,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_calotype",
-   "kb": "",
+   "kb": "88_media_signals.md#if_calotype",
    "lab": {
     "chemist": 380.0
    },
@@ -49071,7 +49071,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_camera_lucida",
-   "kb": "",
+   "kb": "88_media_signals.md#if_camera_obscura_lens",
    "lab": {
     "optician": 280.0
    },
@@ -49107,7 +49107,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_carbon_microphone",
-   "kb": "",
+   "kb": "88_media_signals.md#if_carbon_microphone",
    "lab": {
     "electrician": 320.0
    },
@@ -49145,7 +49145,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_carbon_paper",
-   "kb": "",
+   "kb": "88_media_signals.md#if_fountain_pen",
    "lab": {
     "artisan": 200.0
    },
@@ -49185,7 +49185,7 @@
    "dev_years": 18,
    "gov": 0,
    "id": "if_card_sorter",
-   "kb": "",
+   "kb": "88_media_signals.md#if_card_sorter",
    "lab": {
     "electrician": 250.0,
     "engineer": 400.0
@@ -49225,7 +49225,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_cash_register",
-   "kb": "",
+   "kb": "88_media_signals.md#if_adding_machine",
    "lab": {
     "engineer": 400.0,
     "machinist": 250.0
@@ -49266,7 +49266,7 @@
    "dev_years": 30,
    "gov": 0,
    "id": "if_cathode_ray_tube",
-   "kb": "",
+   "kb": "88_media_signals.md#if_cathode_ray_tube",
    "lab": {
     "engineer": 550.0,
     "glassblower": 300.0
@@ -49304,7 +49304,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_celluloid_roll_film",
-   "kb": "",
+   "kb": "88_media_signals.md#if_celluloid_roll_film",
    "lab": {
     "chemist": 500.0,
     "machinist": 250.0
@@ -49346,7 +49346,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "if_chase_and_forme",
-   "kb": "",
+   "kb": "88_media_signals.md#if_printing_ink",
    "lab": {
     "smith": 250.0
    },
@@ -49383,7 +49383,7 @@
    "dev_years": 30,
    "gov": 0,
    "id": "if_chromolithography",
-   "kb": "",
+   "kb": "88_media_signals.md#if_lithography",
    "lab": {
     "engraver": 550.0
    },
@@ -49423,7 +49423,7 @@
    "dev_years": 30,
    "gov": 0,
    "id": "if_cine_camera",
-   "kb": "",
+   "kb": "88_media_signals.md#if_cine_camera",
    "lab": {
     "engineer": 450.0,
     "machinist": 300.0
@@ -49462,7 +49462,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_coherer",
-   "kb": "",
+   "kb": "88_media_signals.md#if_spark_transmitter",
    "lab": {
     "electrician": 300.0
    },
@@ -49499,7 +49499,7 @@
    "dev_years": 5,
    "gov": 0,
    "id": "if_composing_stick",
-   "kb": "",
+   "kb": "88_media_signals.md#if_printing_ink",
    "lab": {
     "smith": 180.0
    },
@@ -49537,7 +49537,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_comptometer",
-   "kb": "",
+   "kb": "88_media_signals.md#if_adding_machine",
    "lab": {
     "engineer": 150.0,
     "machinist": 450.0
@@ -49575,7 +49575,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_continuous_wave_transmitter",
-   "kb": "",
+   "kb": "88_media_signals.md#if_triode_oscillator",
    "lab": {
     "electrician": 450.0,
     "engineer": 200.0
@@ -49614,7 +49614,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_crystal_detector",
-   "kb": "",
+   "kb": "88_media_signals.md#if_spark_transmitter",
    "lab": {
     "electrician": 320.0
    },
@@ -49742,7 +49742,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_dewey_classification",
-   "kb": "",
+   "kb": "88_media_signals.md#if_index_card_system",
    "lab": {
     "scribe": 250.0
    },
@@ -49777,7 +49777,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_disc_cutting_lathe",
-   "kb": "",
+   "kb": "88_media_signals.md#if_disc_record",
    "lab": {
     "engineer": 250.0,
     "machinist": 450.0
@@ -49817,7 +49817,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_disc_record",
-   "kb": "",
+   "kb": "88_media_signals.md#if_disc_record",
    "lab": {
     "engineer": 420.0
    },
@@ -49856,7 +49856,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_dry_gelatin_plate",
-   "kb": "",
+   "kb": "88_media_signals.md#if_calotype",
    "lab": {
     "chemist": 450.0
    },
@@ -49938,7 +49938,7 @@
    "dev_years": 30,
    "gov": 0,
    "id": "if_facsimile_transmission",
-   "kb": "",
+   "kb": "88_media_signals.md#if_superheterodyne_receiver",
    "lab": {
     "engineer": 500.0
    },
@@ -49976,7 +49976,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_film_projector",
-   "kb": "",
+   "kb": "88_media_signals.md#if_cine_camera",
    "lab": {
     "engineer": 400.0,
     "optician": 200.0
@@ -50016,7 +50016,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_flash_powder",
-   "kb": "",
+   "kb": "88_media_signals.md#if_flash_powder",
    "lab": {
     "chemist": 300.0
    },
@@ -50053,7 +50053,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_flashbulb",
-   "kb": "",
+   "kb": "88_media_signals.md#if_flash_powder",
    "lab": {
     "chemist": 250.0,
     "glassblower": 400.0
@@ -50092,7 +50092,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_focal_plane_shutter",
-   "kb": "",
+   "kb": "88_media_signals.md#if_focal_plane_shutter",
    "lab": {
     "machinist": 380.0
    },
@@ -50172,7 +50172,7 @@
    "dev_years": 30,
    "gov": 0,
    "id": "if_frequency_modulation",
-   "kb": "",
+   "kb": "88_media_signals.md#if_triode_oscillator",
    "lab": {
     "electrician": 500.0,
     "engineer": 300.0
@@ -50210,7 +50210,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_gramophone_motor",
-   "kb": "",
+   "kb": "88_media_signals.md#if_disc_record",
    "lab": {
     "engineer": 300.0
    },
@@ -50245,7 +50245,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_halftone_screen",
-   "kb": "",
+   "kb": "88_media_signals.md#if_halftone_screen",
    "lab": {
     "engraver": 400.0,
     "optician": 200.0
@@ -50283,7 +50283,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_hollerith_tabulator",
-   "kb": "",
+   "kb": "88_media_signals.md#if_card_sorter",
    "lab": {
     "electrician": 450.0,
     "engineer": 250.0
@@ -50323,7 +50323,7 @@
    "dev_years": 30,
    "gov": 0,
    "id": "if_iconoscope",
-   "kb": "",
+   "kb": "88_media_signals.md#if_cathode_ray_tube",
    "lab": {
     "engineer": 600.0,
     "glassblower": 250.0
@@ -50361,7 +50361,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_index_card_system",
-   "kb": "",
+   "kb": "88_media_signals.md#if_index_card_system",
    "lab": {
     "scribe": 200.0
    },
@@ -50400,7 +50400,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_iron_gall_ink",
-   "kb": "",
+   "kb": "88_media_signals.md#if_quill",
    "lab": {
     "chemist": 120.0
    },
@@ -50438,7 +50438,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_iron_hand_press",
-   "kb": "",
+   "kb": "88_media_signals.md#if_screw_press",
    "lab": {
     "machinist": 150.0,
     "smith": 350.0
@@ -50478,7 +50478,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_jacquard_chain",
-   "kb": "",
+   "kb": "88_media_signals.md#if_punched_card",
    "lab": {
     "artisan": 350.0
    },
@@ -50515,7 +50515,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_keypunch",
-   "kb": "",
+   "kb": "88_media_signals.md#if_punched_card",
    "lab": {
     "machinist": 400.0
    },
@@ -50554,7 +50554,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_leaf_shutter",
-   "kb": "",
+   "kb": "88_media_signals.md#if_focal_plane_shutter",
    "lab": {
     "machinist": 400.0
    },
@@ -50678,7 +50678,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_loading_coil",
-   "kb": "",
+   "kb": "88_media_signals.md#if_telephone_transmitter",
    "lab": {
     "electrician": 350.0
    },
@@ -50716,7 +50716,7 @@
    "dev_years": 30,
    "gov": 0,
    "id": "if_magnetic_tape",
-   "kb": "",
+   "kb": "88_media_signals.md#if_magnetic_tape",
    "lab": {
     "engineer": 500.0
    },
@@ -50755,7 +50755,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_mimeograph",
-   "kb": "",
+   "kb": "88_media_signals.md#if_mimeograph",
    "lab": {
     "engineer": 400.0,
     "machinist": 250.0
@@ -50796,7 +50796,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_morse_key_and_sounder",
-   "kb": "",
+   "kb": "88_media_signals.md#if_electric_telegraph",
    "lab": {
     "electrician": 300.0
    },
@@ -50833,7 +50833,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_movable_type",
-   "kb": "",
+   "kb": "88_media_signals.md#if_movable_type",
    "lab": {
     "engraver": 300.0,
     "smith": 600.0
@@ -50871,7 +50871,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_moving_coil_loudspeaker",
-   "kb": "",
+   "kb": "88_media_signals.md#if_carbon_microphone",
    "lab": {
     "electrician": 380.0,
     "engineer": 150.0
@@ -50910,7 +50910,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_panchromatic_emulsion",
-   "kb": "",
+   "kb": "88_media_signals.md#if_celluloid_roll_film",
    "lab": {
     "chemist": 400.0
    },
@@ -50949,7 +50949,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_papyrus",
-   "kb": "",
+   "kb": "88_media_signals.md#if_papyrus",
    "lab": {
     "scribe": 60.0
    },
@@ -50984,7 +50984,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_parchment",
-   "kb": "",
+   "kb": "88_media_signals.md#if_papyrus",
    "lab": {
     "scribe": 80.0
    },
@@ -51019,7 +51019,7 @@
    "dev_years": 40,
    "gov": 0,
    "id": "if_pencil_graphite",
-   "kb": "",
+   "kb": "88_media_signals.md#if_fountain_pen",
    "lab": {
     "chemist": 100.0,
     "potter": 250.0
@@ -51058,7 +51058,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_phonautograph",
-   "kb": "",
+   "kb": "88_media_signals.md#if_phonautograph",
    "lab": {
     "engineer": 350.0
    },
@@ -51096,7 +51096,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_photoengraving",
-   "kb": "",
+   "kb": "88_media_signals.md#if_halftone_screen",
    "lab": {
     "engraver": 380.0
    },
@@ -51175,7 +51175,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_punch_and_matrix",
-   "kb": "",
+   "kb": "88_media_signals.md#if_movable_type",
    "lab": {
     "smith": 500.0
    },
@@ -51212,7 +51212,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_punched_card",
-   "kb": "",
+   "kb": "88_media_signals.md#if_punched_card",
    "lab": {
     "artisan": 250.0
    },
@@ -51250,7 +51250,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_quill",
-   "kb": "",
+   "kb": "88_media_signals.md#if_quill",
    "lab": {
     "scribe": 40.0
    },
@@ -51287,7 +51287,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_radio_direction_finding",
-   "kb": "",
+   "kb": "88_media_signals.md#if_superheterodyne_receiver",
    "lab": {
     "electrician": 380.0
    },
@@ -51325,7 +51325,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_rag_paper",
-   "kb": "",
+   "kb": "88_media_signals.md#if_papyrus",
    "lab": {
     "scribe": 100.0
    },
@@ -51362,7 +51362,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_recording_bias",
-   "kb": "",
+   "kb": "88_media_signals.md#if_magnetic_tape",
    "lab": {
     "electrician": 350.0
    },
@@ -51441,7 +51441,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_screw_press",
-   "kb": "",
+   "kb": "88_media_signals.md#if_screw_press",
    "lab": {
     "carpenter": 400.0,
     "smith": 200.0
@@ -51481,7 +51481,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_shift_key_mechanism",
-   "kb": "",
+   "kb": "88_media_signals.md#if_typewriter",
    "lab": {
     "machinist": 300.0
    },
@@ -51517,7 +51517,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_silver_halide_sensitivity",
-   "kb": "",
+   "kb": "88_media_signals.md#if_silver_halide_sensitivity",
    "lab": {
     "chemist": 350.0
    },
@@ -51555,7 +51555,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_slide_rule",
-   "kb": "",
+   "kb": "88_media_signals.md#if_adding_machine",
    "lab": {
     "artisan": 300.0
    },
@@ -51593,7 +51593,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_spark_transmitter",
-   "kb": "",
+   "kb": "88_media_signals.md#if_spark_transmitter",
    "lab": {
     "electrician": 380.0
    },
@@ -51631,7 +51631,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_steel_pen_nib",
-   "kb": "",
+   "kb": "88_media_signals.md#if_quill",
    "lab": {
     "artisan": 100.0,
     "smith": 200.0
@@ -51672,7 +51672,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_stencil_duplicator",
-   "kb": "",
+   "kb": "88_media_signals.md#if_mimeograph",
    "lab": {},
    "mat": {
     "nitrocellulose_kg": 20.0,
@@ -51711,7 +51711,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_strowger_exchange",
-   "kb": "",
+   "kb": "88_media_signals.md#if_telephone_exchange",
    "lab": {
     "engineer": 500.0,
     "machinist": 300.0
@@ -51752,7 +51752,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_submarine_cable_gutta_percha",
-   "kb": "",
+   "kb": "88_media_signals.md#if_submarine_cable_gutta_percha",
    "lab": {
     "engineer": 600.0,
     "sailor": 300.0
@@ -51792,7 +51792,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_superheterodyne_receiver",
-   "kb": "",
+   "kb": "88_media_signals.md#if_superheterodyne_receiver",
    "lab": {
     "electrician": 500.0,
     "engineer": 250.0
@@ -51832,7 +51832,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "if_telegraph_relay",
-   "kb": "",
+   "kb": "88_media_signals.md#if_electric_telegraph",
    "lab": {
     "electrician": 280.0
    },
@@ -51869,7 +51869,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_telephone_exchange",
-   "kb": "",
+   "kb": "88_media_signals.md#if_telephone_exchange",
    "lab": {
     "electrician": 250.0,
     "engineer": 400.0
@@ -51908,7 +51908,7 @@
    "dev_years": 8,
    "gov": 0,
    "id": "if_telephone_receiver",
-   "kb": "",
+   "kb": "88_media_signals.md#if_telephone_transmitter",
    "lab": {
     "electrician": 250.0
    },
@@ -51946,7 +51946,7 @@
    "dev_years": 12,
    "gov": 0,
    "id": "if_telephone_transmitter",
-   "kb": "",
+   "kb": "88_media_signals.md#if_telephone_transmitter",
    "lab": {
     "electrician": 330.0
    },
@@ -51984,7 +51984,7 @@
    "dev_years": 25,
    "gov": 0,
    "id": "if_television_mechanical",
-   "kb": "",
+   "kb": "88_media_signals.md#if_cathode_ray_tube",
    "lab": {
     "engineer": 450.0
    },
@@ -52022,7 +52022,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_tin_foil_phonograph",
-   "kb": "",
+   "kb": "88_media_signals.md#if_phonautograph",
    "lab": {
     "engineer": 380.0
    },
@@ -52058,7 +52058,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_triode_oscillator",
-   "kb": "",
+   "kb": "88_media_signals.md#if_triode_oscillator",
    "lab": {
     "electrician": 450.0,
     "engineer": 200.0
@@ -52098,7 +52098,7 @@
    "dev_years": 10,
    "gov": 0,
    "id": "if_tuned_circuit",
-   "kb": "",
+   "kb": "88_media_signals.md#if_tuned_circuit",
    "lab": {
     "electrician": 270.0
    },
@@ -52135,7 +52135,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_type_mould",
-   "kb": "",
+   "kb": "88_media_signals.md#if_movable_type",
    "lab": {
     "machinist": 150.0,
     "smith": 400.0
@@ -52218,7 +52218,7 @@
    "dev_years": 15,
    "gov": 0,
    "id": "if_video_scanning_standard",
-   "kb": "",
+   "kb": "88_media_signals.md#if_cathode_ray_tube",
    "lab": {
     "engineer": 300.0
    },
@@ -52254,7 +52254,7 @@
    "dev_years": 20,
    "gov": 0,
    "id": "if_wax_cylinder",
-   "kb": "",
+   "kb": "88_media_signals.md#if_phonautograph",
    "lab": {
     "engineer": 400.0
    },
@@ -52293,7 +52293,7 @@
    "dev_years": 0,
    "gov": 0,
    "id": "if_woodblock_printing",
-   "kb": "",
+   "kb": "88_media_signals.md#if_printing_ink",
    "lab": {
     "engraver": 400.0
    },

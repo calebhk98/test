@@ -20,7 +20,7 @@ in this directory, read that one.
 
 | Module | Subject | Entries | Tree nodes it documents |
 |---|---|---:|---:|
-| [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 0 | 0 |
+| [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 1 | 0 |
 | [`03_SOCIAL_POLITICS.md`](03_SOCIAL_POLITICS.md) |  | 10 | 0 |
 | [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 188 |
 | [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 197 |
@@ -35,16 +35,17 @@ in this directory, read that one.
 | [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 223 |
 | [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 199 |
 | [`87_construction.md`](87_construction.md) |  | 101 | 97 |
+| [`88_media_signals.md`](88_media_signals.md) |  | 100 | 83 |
 | [`90_textiles.md`](90_textiles.md) |  | 20 | 215 |
 | [`91_household.md`](91_household.md) |  | 27 | 70 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
 | [`93_energy.md`](93_energy.md) |  | 27 | 0 |
 | [`94_computing.md`](94_computing.md) |  | 22 | 0 |
-| [`95_expeditions.md`](95_expeditions.md) |  | 0 | 11 |
-| [`96_finance.md`](96_finance.md) |  | 29 | 88 |
+| [`95_expeditions.md`](95_expeditions.md) |  | 11 | 11 |
+| [`96_finance.md`](96_finance.md) |  | 30 | 88 |
 | [`97_military.md`](97_military.md) |  | 29 | 110 |
 | [`98_power_plants.md`](98_power_plants.md) |  | 115 | 99 |
-| [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 4 | 0 |
+| [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 0 | 0 |
 
 ### Nodes documented in the top-level prose files
 
@@ -1825,7 +1826,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_friction_damper` | 2 | 90.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
 | `tl_fuel_pump` | 2 | 100.0 | [`tl_carburettor`](86_transport_deep.md#tl_carburettor---carburettor-fuel-atomiser) |
 | `tl_headlamp` | 2 | 120.0 | [`tl_headlamp`](86_transport_deep.md#tl_headlamp---headlamp-and-signal-lighting) |
-| `tl_horse_tram` | 2 | 180.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_horse_tram` | 2 | 180.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_hydraulic_brake_line` | 2 | 130.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
 | `tl_inner_tube` | 2 | 120.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
 | `tl_level_crossing` | 2 | 120.0 | [`tl_road_roller`](86_transport_deep.md#tl_road_roller---steam-road-roller-and-level-crossings) |
@@ -1833,7 +1834,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_muffler` | 2 | 80.0 | [`tl_muffler`](86_transport_deep.md#tl_muffler---muffler-and-windscreen-wiper) |
 | `tl_oil_bath` | 2 | 80.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
 | `tl_oil_pump` | 2 | 120.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
-| `tl_omnibus` | 2 | 160.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_omnibus` | 2 | 160.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_penny_farthing` | 2 | 110.0 | [`tl_safety_bicycle`](86_transport_deep.md#tl_safety_bicycle---safety-bicycle-and-its-ancestors) |
 | `tl_plate_clutch` | 2 | 130.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
 | `tl_pressure_relief_valve` | 2 | 90.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
@@ -1895,7 +1896,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_distributor` | 3 | 130.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
 | `tl_dynamo` | 3 | 150.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
 | `tl_electric_starter` | 3 | 170.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
-| `tl_electric_tram` | 3 | 200.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_electric_tram` | 3 | 200.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_engine_block` | 3 | 170.0 | [`tl_engine_block`](86_transport_deep.md#tl_engine_block---cast-engine-block) |
 | `tl_epicyclic_gearbox` | 3 | 170.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
 | `tl_exhaust_valve` | 3 | 150.0 | [`tl_intake_valve`](86_transport_deep.md#tl_intake_valve---poppet-valve-with-cam-and-spring) |
@@ -1906,17 +1907,17 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_magneto_ignition` | 3 | 160.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
 | `tl_motor_dc` | 3 | 140.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
 | `tl_motor_lorry` | 3 | 240.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
-| `tl_motorcycle` | 3 | 180.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_motorcycle` | 3 | 180.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_piston_assembly` | 3 | 160.0 | [`tl_engine_block`](86_transport_deep.md#tl_engine_block---cast-engine-block) |
 | `tl_pneumatic_tyre` | 3 | 160.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
 | `tl_radiator` | 3 | 140.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
 | `tl_spark_plug` | 3 | 120.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
-| `tl_steam_tram` | 3 | 220.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_steam_tram` | 3 | 220.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_synchromesh` | 3 | 160.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
 | `tl_taper_roller_bearing` | 3 | 180.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
 | `tl_tarmacadam` | 3 | 150.0 | [`tl_macadam_road`](86_transport_deep.md#tl_macadam_road---macadam-and-bound-road-surfaces) |
 | `tl_tractor` | 3 | 250.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
-| `tl_trolleybus` | 3 | 210.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-roadrail-transit) |
+| `tl_trolleybus` | 3 | 210.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_vulcanized_rubber` | 3 | 140.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
 | `tr_articulated_locomotive` | 3 | 200.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
 | `tr_automatic_train_stop` | 3 | 200.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
@@ -1947,10 +1948,10 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_block_tackle_hoist` | 0 | 30.0 | [`cn_crane_treadwheel`](87_construction.md#cn_crane_treadwheel---treadwheel-crane-polyspastos) |
 | `cn_cofferdam` | 0 | 60.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
 | `cn_damp_proof_course` | 0 | 50.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
-| `cn_gypsum_plaster` | 0 | 35.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_gypsum_plaster` | 0 | 35.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_mortar` | 0 | 40.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
 | `cn_pile_driving` | 0 | 40.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
-| `cn_post_lintel` | 0 | 25.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-structure-the-theory-of-the-beam) |
+| `cn_post_lintel` | 0 | 25.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-the-theory-of-the-beam) |
 | `cn_pozzolana_concrete` | 0 | 50.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
 | `cn_quarrying_wedge` | 0 | 20.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
 | `cn_retaining_wall` | 0 | 80.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
@@ -1959,7 +1960,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_stone_saw` | 0 | 40.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
 | `cn_timber_truss` | 0 | 45.0 | [`cn_king_post`](87_construction.md#cn_king_post---king-post-roof-truss) |
 | `cn_true_arch` | 0 | 35.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
-| `cn_artificial_stone` | 1 | 70.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_artificial_stone` | 1 | 70.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_caisson` | 1 | 120.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
 | `cn_cavity_wall` | 1 | 75.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
 | `cn_crane_derrick` | 1 | 75.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
@@ -1972,14 +1973,14 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_gang_saw` | 1 | 80.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
 | `cn_gravity_dam` | 1 | 120.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
 | `cn_groin_vault` | 1 | 100.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
-| `cn_gusset_plate` | 1 | 60.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
+| `cn_gusset_plate` | 1 | 60.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
 | `cn_iron_column` | 1 | 65.0 | [`cn_cast_iron_beam`](87_construction.md#cn_cast_iron_beam---cast-iron-beam) |
 | `cn_lattice_truss` | 1 | 70.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
 | `cn_plumbing_stack` | 1 | 80.0 | [`cn_plumbing_stack`](87_construction.md#cn_plumbing_stack---plumbing-stack-and-trapped-drains) |
 | `cn_pontoon_bridge` | 1 | 85.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
 | `cn_radiator` | 1 | 65.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
 | `cn_ribbed_vault` | 1 | 120.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
-| `cn_riveted_connection` | 1 | 70.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
+| `cn_riveted_connection` | 1 | 70.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
 | `cn_sash_window` | 1 | 85.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_sewer_system` | 1 | 100.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
 | `cn_sheet_piling` | 1 | 100.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
@@ -1994,16 +1995,16 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_tunnel_lining` | 1 | 95.0 | [`cn_tunnel_shield`](87_construction.md#cn_tunnel_shield---tunnel-shield-method-and-tunnel-lining) |
 | `cn_ventilation_shaft` | 1 | 85.0 | [`cn_drill_blast`](87_construction.md#cn_drill_blast---tunnelling-by-drill-and-blast) |
 | `cn_water_main` | 1 | 85.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
-| `cn_wrought_iron_girder` | 1 | 95.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_wrought_iron_girder` | 1 | 95.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_arch_dam` | 2 | 140.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
 | `cn_asphalt_roofing` | 2 | 80.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_bascule_bridge` | 2 | 140.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
-| `cn_bolted_connection` | 2 | 85.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
-| `cn_box_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_bolted_connection` | 2 | 85.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
+| `cn_box_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_cable_anchorage` | 2 | 95.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
-| `cn_cantilever` | 2 | 85.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-structure-the-theory-of-the-beam) |
+| `cn_cantilever` | 2 | 85.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-the-theory-of-the-beam) |
 | `cn_cast_iron_beam` | 2 | 80.0 | [`cn_cast_iron_beam`](87_construction.md#cn_cast_iron_beam---cast-iron-beam) |
-| `cn_cement_clinker_grinding` | 2 | 110.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_cement_clinker_grinding` | 2 | 110.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_central_heating` | 2 | 95.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
 | `cn_concrete_mixer` | 2 | 100.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
 | `cn_crane_tower` | 2 | 130.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
@@ -2012,14 +2013,14 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_elevator_safety_brake` | 2 | 120.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
 | `cn_forced_ventilation` | 2 | 100.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
 | `cn_insulation` | 2 | 90.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
-| `cn_plate_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_plate_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_plate_glass_window` | 2 | 120.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_pneumatic_caisson` | 2 | 140.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
-| `cn_portland_cement` | 2 | 120.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_portland_cement` | 2 | 120.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_pratt_truss` | 2 | 90.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
 | `cn_precast_panel` | 2 | 110.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
 | `cn_reinforced_concrete` | 2 | 115.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
-| `cn_rolled_I_beam` | 2 | 110.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_rolled_I_beam` | 2 | 110.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_roof_truss_corrugated` | 2 | 95.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_screw_pile` | 2 | 95.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
 | `cn_shotcrete` | 2 | 110.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
@@ -2034,12 +2035,100 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_diaphragm_wall` | 3 | 160.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
 | `cn_post_tensioning` | 3 | 135.0 | [`cn_prestressed_concrete`](87_construction.md#cn_prestressed_concrete---prestressed-concrete-element) |
 | `cn_prestressed_concrete` | 3 | 145.0 | [`cn_prestressed_concrete`](87_construction.md#cn_prestressed_concrete---prestressed-concrete-element) |
-| `cn_rotary_cement_kiln` | 3 | 160.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder-no-ancient-term) |
+| `cn_rotary_cement_kiln` | 3 | 160.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_slipform` | 3 | 160.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
 | `cn_space_frame` | 3 | 150.0 | [`cn_pratt_truss`](87_construction.md#cn_pratt_truss---pratt-truss-and-the-iron-age-truss-family) |
-| `cn_steel_frame_skeleton` | 3 | 180.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-plate-girder-and-later-steel) |
+| `cn_steel_frame_skeleton` | 3 | 180.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_suspension_bridge` | 3 | 200.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
-| `cn_welded_connection` | 3 | 125.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-joint-bolted-welded-and-gusseted) |
+| `cn_welded_connection` | 3 | 125.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
+
+### 88_media_signals.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `if_dewey_classification` | 0 | 80.0 | [`if_index_card_system`](88_media_signals.md#if_index_card_system---index-card-and-filing-system) |
+| `if_index_card_system` | 0 | 70.0 | [`if_index_card_system`](88_media_signals.md#if_index_card_system---index-card-and-filing-system) |
+| `if_iron_gall_ink` | 0 | 40.0 | [`if_quill`](88_media_signals.md#if_quill---quill-pen-penna) |
+| `if_papyrus` | 0 | 20.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
+| `if_parchment` | 0 | 30.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
+| `if_quill` | 0 | 15.0 | [`if_quill`](88_media_signals.md#if_quill---quill-pen-penna) |
+| `if_acoustic_horn_recording` | 1 | 90.0 | [`if_disc_record`](88_media_signals.md#if_disc_record---disc-record) |
+| `if_adding_machine` | 1 | 120.0 | [`if_adding_machine`](88_media_signals.md#if_adding_machine---adding-machine) |
+| `if_antenna_dipole` | 1 | 80.0 | [`if_tuned_circuit`](88_media_signals.md#if_tuned_circuit---tuned-lc-circuit) |
+| `if_bookbinding_case` | 1 | 120.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
+| `if_camera_lucida` | 1 | 90.0 | [`if_camera_obscura_lens`](88_media_signals.md#if_camera_obscura_lens---camera-obscura-with-lens) |
+| `if_chase_and_forme` | 1 | 80.0 | [`if_printing_ink`](88_media_signals.md#if_printing_ink---printing-ink-oil-based) |
+| `if_coherer` | 1 | 100.0 | [`if_spark_transmitter`](88_media_signals.md#if_spark_transmitter---spark-transmitter) |
+| `if_composing_stick` | 1 | 60.0 | [`if_printing_ink`](88_media_signals.md#if_printing_ink---printing-ink-oil-based) |
+| `if_gramophone_motor` | 1 | 100.0 | [`if_disc_record`](88_media_signals.md#if_disc_record---disc-record) |
+| `if_jacquard_chain` | 1 | 120.0 | [`if_punched_card`](88_media_signals.md#if_punched_card---punched-card) |
+| `if_morse_key_and_sounder` | 1 | 100.0 | [`if_electric_telegraph`](88_media_signals.md#if_electric_telegraph---electric-telegraph) |
+| `if_phonautograph` | 1 | 110.0 | [`if_phonautograph`](88_media_signals.md#if_phonautograph---phonautograph) |
+| `if_punched_card` | 1 | 80.0 | [`if_punched_card`](88_media_signals.md#if_punched_card---punched-card) |
+| `if_rag_paper` | 1 | 40.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
+| `if_silver_halide_sensitivity` | 1 | 120.0 | [`if_silver_halide_sensitivity`](88_media_signals.md#if_silver_halide_sensitivity---silver-halide-photographic-sensitivity) |
+| `if_slide_rule` | 1 | 100.0 | [`if_adding_machine`](88_media_signals.md#if_adding_machine---adding-machine) |
+| `if_spark_transmitter` | 1 | 130.0 | [`if_spark_transmitter`](88_media_signals.md#if_spark_transmitter---spark-transmitter) |
+| `if_steel_pen_nib` | 1 | 80.0 | [`if_quill`](88_media_signals.md#if_quill---quill-pen-penna) |
+| `if_telegraph_relay` | 1 | 90.0 | [`if_electric_telegraph`](88_media_signals.md#if_electric_telegraph---electric-telegraph) |
+| `if_telephone_receiver` | 1 | 80.0 | [`if_telephone_transmitter`](88_media_signals.md#if_telephone_transmitter---telephone-transmitter) |
+| `if_tin_foil_phonograph` | 1 | 130.0 | [`if_phonautograph`](88_media_signals.md#if_phonautograph---phonautograph) |
+| `if_tuned_circuit` | 1 | 90.0 | [`if_tuned_circuit`](88_media_signals.md#if_tuned_circuit---tuned-lc-circuit) |
+| `if_woodblock_printing` | 1 | 150.0 | [`if_printing_ink`](88_media_signals.md#if_printing_ink---printing-ink-oil-based) |
+| `if_amplitude_modulation` | 2 | 120.0 | [`if_triode_oscillator`](88_media_signals.md#if_triode_oscillator---triode-oscillator) |
+| `if_cable_repeater` | 2 | 140.0 | [`if_submarine_cable_gutta_percha`](88_media_signals.md#if_submarine_cable_gutta_percha---submarine-cable-with-gutta-percha) |
+| `if_calotype` | 2 | 130.0 | [`if_calotype`](88_media_signals.md#if_calotype---calotype-paper-negative) |
+| `if_carbon_microphone` | 2 | 110.0 | [`if_carbon_microphone`](88_media_signals.md#if_carbon_microphone---carbon-microphone) |
+| `if_card_sorter` | 2 | 140.0 | [`if_card_sorter`](88_media_signals.md#if_card_sorter---card-sorter) |
+| `if_cash_register` | 2 | 140.0 | [`if_adding_machine`](88_media_signals.md#if_adding_machine---adding-machine) |
+| `if_comptometer` | 2 | 160.0 | [`if_adding_machine`](88_media_signals.md#if_adding_machine---adding-machine) |
+| `if_continuous_wave_transmitter` | 2 | 150.0 | [`if_triode_oscillator`](88_media_signals.md#if_triode_oscillator---triode-oscillator) |
+| `if_crystal_detector` | 2 | 110.0 | [`if_spark_transmitter`](88_media_signals.md#if_spark_transmitter---spark-transmitter) |
+| `if_disc_cutting_lathe` | 2 | 150.0 | [`if_disc_record`](88_media_signals.md#if_disc_record---disc-record) |
+| `if_disc_record` | 2 | 150.0 | [`if_disc_record`](88_media_signals.md#if_disc_record---disc-record) |
+| `if_dry_gelatin_plate` | 2 | 160.0 | [`if_calotype`](88_media_signals.md#if_calotype---calotype-paper-negative) |
+| `if_film_projector` | 2 | 140.0 | [`if_cine_camera`](88_media_signals.md#if_cine_camera---cine-camera) |
+| `if_flash_powder` | 2 | 100.0 | [`if_flash_powder`](88_media_signals.md#if_flash_powder---flash-powder) |
+| `if_focal_plane_shutter` | 2 | 130.0 | [`if_focal_plane_shutter`](88_media_signals.md#if_focal_plane_shutter---focal-plane-shutter) |
+| `if_hollerith_tabulator` | 2 | 150.0 | [`if_card_sorter`](88_media_signals.md#if_card_sorter---card-sorter) |
+| `if_iron_hand_press` | 2 | 140.0 | [`if_screw_press`](88_media_signals.md#if_screw_press---screw-press-for-printing) |
+| `if_keypunch` | 2 | 130.0 | [`if_punched_card`](88_media_signals.md#if_punched_card---punched-card) |
+| `if_leaf_shutter` | 2 | 140.0 | [`if_focal_plane_shutter`](88_media_signals.md#if_focal_plane_shutter---focal-plane-shutter) |
+| `if_loading_coil` | 2 | 120.0 | [`if_telephone_transmitter`](88_media_signals.md#if_telephone_transmitter---telephone-transmitter) |
+| `if_movable_type` | 2 | 200.0 | [`if_movable_type`](88_media_signals.md#if_movable_type---movable-type-cast-metal-typi-mobiles) |
+| `if_moving_coil_loudspeaker` | 2 | 130.0 | [`if_carbon_microphone`](88_media_signals.md#if_carbon_microphone---carbon-microphone) |
+| `if_pencil_graphite` | 2 | 100.0 | [`if_fountain_pen`](88_media_signals.md#if_fountain_pen---fountain-pen) |
+| `if_punch_and_matrix` | 2 | 180.0 | [`if_movable_type`](88_media_signals.md#if_movable_type---movable-type-cast-metal-typi-mobiles) |
+| `if_radio_direction_finding` | 2 | 130.0 | [`if_superheterodyne_receiver`](88_media_signals.md#if_superheterodyne_receiver---superheterodyne-receiver) |
+| `if_recording_bias` | 2 | 120.0 | [`if_magnetic_tape`](88_media_signals.md#if_magnetic_tape---magnetic-tape-recording) |
+| `if_screw_press` | 2 | 160.0 | [`if_screw_press`](88_media_signals.md#if_screw_press---screw-press-for-printing) |
+| `if_shift_key_mechanism` | 2 | 100.0 | [`if_typewriter`](88_media_signals.md#if_typewriter---typewriter) |
+| `if_stencil_duplicator` | 2 | 140.0 | [`if_mimeograph`](88_media_signals.md#if_mimeograph---mimeograph) |
+| `if_telephone_exchange` | 2 | 150.0 | [`if_telephone_exchange`](88_media_signals.md#if_telephone_exchange---telephone-exchange-and-switchboard) |
+| `if_telephone_transmitter` | 2 | 110.0 | [`if_telephone_transmitter`](88_media_signals.md#if_telephone_transmitter---telephone-transmitter) |
+| `if_television_mechanical` | 2 | 160.0 | [`if_cathode_ray_tube`](88_media_signals.md#if_cathode_ray_tube---cathode-ray-tube) |
+| `if_type_mould` | 2 | 140.0 | [`if_movable_type`](88_media_signals.md#if_movable_type---movable-type-cast-metal-typi-mobiles) |
+| `if_video_scanning_standard` | 2 | 100.0 | [`if_cathode_ray_tube`](88_media_signals.md#if_cathode_ray_tube---cathode-ray-tube) |
+| `if_wax_cylinder` | 2 | 140.0 | [`if_phonautograph`](88_media_signals.md#if_phonautograph---phonautograph) |
+| `if_autochrome_plate` | 3 | 180.0 | [`if_celluloid_roll_film`](88_media_signals.md#if_celluloid_roll_film---celluloid-roll-film) |
+| `if_carbon_paper` | 3 | 70.0 | [`if_fountain_pen`](88_media_signals.md#if_fountain_pen---fountain-pen) |
+| `if_cathode_ray_tube` | 3 | 200.0 | [`if_cathode_ray_tube`](88_media_signals.md#if_cathode_ray_tube---cathode-ray-tube) |
+| `if_celluloid_roll_film` | 3 | 180.0 | [`if_celluloid_roll_film`](88_media_signals.md#if_celluloid_roll_film---celluloid-roll-film) |
+| `if_chromolithography` | 3 | 200.0 | [`if_lithography`](88_media_signals.md#if_lithography---lithography) |
+| `if_cine_camera` | 3 | 180.0 | [`if_cine_camera`](88_media_signals.md#if_cine_camera---cine-camera) |
+| `if_facsimile_transmission` | 3 | 170.0 | [`if_superheterodyne_receiver`](88_media_signals.md#if_superheterodyne_receiver---superheterodyne-receiver) |
+| `if_flashbulb` | 3 | 150.0 | [`if_flash_powder`](88_media_signals.md#if_flash_powder---flash-powder) |
+| `if_frequency_modulation` | 3 | 180.0 | [`if_triode_oscillator`](88_media_signals.md#if_triode_oscillator---triode-oscillator) |
+| `if_halftone_screen` | 3 | 140.0 | [`if_halftone_screen`](88_media_signals.md#if_halftone_screen---halftone-screen-and-dot-matrix) |
+| `if_iconoscope` | 3 | 200.0 | [`if_cathode_ray_tube`](88_media_signals.md#if_cathode_ray_tube---cathode-ray-tube) |
+| `if_magnetic_tape` | 3 | 170.0 | [`if_magnetic_tape`](88_media_signals.md#if_magnetic_tape---magnetic-tape-recording) |
+| `if_mimeograph` | 3 | 160.0 | [`if_mimeograph`](88_media_signals.md#if_mimeograph---mimeograph) |
+| `if_panchromatic_emulsion` | 3 | 140.0 | [`if_celluloid_roll_film`](88_media_signals.md#if_celluloid_roll_film---celluloid-roll-film) |
+| `if_photoengraving` | 3 | 130.0 | [`if_halftone_screen`](88_media_signals.md#if_halftone_screen---halftone-screen-and-dot-matrix) |
+| `if_strowger_exchange` | 3 | 180.0 | [`if_telephone_exchange`](88_media_signals.md#if_telephone_exchange---telephone-exchange-and-switchboard) |
+| `if_superheterodyne_receiver` | 3 | 170.0 | [`if_superheterodyne_receiver`](88_media_signals.md#if_superheterodyne_receiver---superheterodyne-receiver) |
+| `if_triode_oscillator` | 3 | 160.0 | [`if_triode_oscillator`](88_media_signals.md#if_triode_oscillator---triode-oscillator) |
+| `if_submarine_cable_gutta_percha` | 5 | 200.0 | [`if_submarine_cable_gutta_percha`](88_media_signals.md#if_submarine_cable_gutta_percha---submarine-cable-with-gutta-percha) |
 
 ### 90_textiles.md
 
@@ -2668,13 +2757,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | status | nodes |
 |---|---:|
-| linked to a specific recipe entry | 491 |
+| linked to a specific recipe entry | 574 |
 | linked to a domain module, no specific entry | 2006 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
-| **undocumented, a real gap** | **387** |
+| **undocumented, a real gap** | **304** |
 
 The undocumented nodes, listed so the gap is visible rather than hidden:
 
-`ag2_adulteration_law`, `ag2_artificial_insemination`, `ag2_balanced_ration`, `ag2_baler`, `ag2_basic_slag`, `ag2_battery_poultry`, `ag2_biological_control`, `ag2_bone_meal`, `ag2_bordeaux_mixture`, `ag2_botanic_garden`, `ag2_bottling`, `ag2_budding`, `ag2_butter`, `ag2_canning`, `ag2_caterpillar_track`, `ag2_centrifugal_sugar`, `ag2_chaff_cutter`, `ag2_cheese_families`, `ag2_coffee_voyage`, `ag2_cold_store`, `ag2_column_still`, `ag2_combine_harvester`, `ag2_composting`, `ag2_condensed_milk`, `ag2_contour_ploughing`, `ag2_controlled_pollination`, `ag2_coulter`, `ag2_cream_separator`, `ag2_crown_cork`, `ag2_cultivator`, `ag2_ddt`, `ag2_double_seam_can`, `ag2_erosion_control`, `ag2_evaporated_milk`, `ag2_fanning_mill`, `ag2_fat_hydrogenation`, `ag2_fermentation_control`, `ag2_food_laboratory`, `ag2_gasworks_ammonia`, `ag2_grafting`, `ag2_gravity_irrigation`, `ag2_green_manure`, `ag2_guano`, `ag2_harrow`, `ag2_herd_book`, `ag2_hopping`, `ag2_horse_hoe`, `ag2_hybrid_maize`, `ag2_hybridisation`, `ag2_hydrometer`, `ag2_layering`, `ag2_lead_arsenate`, `ag2_lime_sulphur`, `ag2_liming`, `ag2_maize_newworld`, `ag2_malting`, `ag2_marling`, `ag2_mashing`, `ag2_milking_machine`, `ag2_mower`, `ag2_nicotine_pesticide`, `ag2_nitrite_curing`, `ag2_nitrogen_cycle`, `ag2_norfolk_course`, `ag2_oil_pressing`, `ag2_pasteurisation`, `ag2_plant_quarantine`, `ag2_pot_still`, `ag2_potash`, `ag2_potato_lifter`, `ag2_potato_newworld`, `ag2_power_take_off`, `ag2_progeny_testing`, `ag2_pure_line_selection`, `ag2_purifier`, `ag2_pyrethrum`, `ag2_reaper`, `ag2_reaper_binder`, `ag2_record_keeping_breeding`, `ag2_refrigerated_ship`, `ag2_refrigeration_ice`, `ag2_resistant_variety`, `ag2_retort`, `ag2_rhizobia`, `ag2_ridging_plough`, `ag2_roller`, `ag2_roller_mill`, `ag2_root_cutter`, `ag2_rootstocks`, `ag2_seed_certification`, `ag2_seed_drill`, `ag2_seed_trade`, `ag2_sheep_dip`, `ag2_silage_silo`, `ag2_soil_testing`, `ag2_sprayer`, `ag2_subsoiler`, `ag2_sugar_refining`, `ag2_sugar_voyage`, `ag2_superphosphate`, `ag2_tea_voyage`, `ag2_tedder`, `ag2_terracing`, `ag2_three_point_linkage`, `ag2_threshing_machine`, `ag2_tile_drainage`, `ag2_tractor_steam`, `ag2_tuberculin_test`, `ag2_urea`, `ag2_vacuum_pan`, `ag2_veterinary_vaccination`, `ag2_wardian_case`, `ag2_white_flour_loss`, `ag2_winnower`, `ag2_yeast_culture`, `civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `gp_carbon_brushes`, `gp_controlled_atmosphere_chamber`, `gp_czochralski_puller`, `gp_exhaust_pinchoff`, `gp_getter`, `gp_glass_metal_seal`, `gp_laminated_core`, `gp_magnet_wire_enamelled`, `gp_whisker_forming`, `if_acoustic_horn_recording`, `if_adding_machine`, `if_amplitude_modulation`, `if_antenna_dipole`, `if_autochrome_plate`, `if_bookbinding_case`, `if_cable_repeater`, `if_calotype`, `if_camera_lucida`, `if_carbon_microphone`, `if_carbon_paper`, `if_card_sorter`, `if_cash_register`, `if_cathode_ray_tube`, `if_celluloid_roll_film`, `if_chase_and_forme`, `if_chromolithography`, `if_cine_camera`, `if_coherer`, `if_composing_stick`, `if_comptometer`, `if_continuous_wave_transmitter`, `if_crystal_detector`, `if_dewey_classification`, `if_disc_cutting_lathe`, `if_disc_record`, `if_dry_gelatin_plate`, `if_facsimile_transmission`, `if_film_projector`, `if_flash_powder`, `if_flashbulb`, `if_focal_plane_shutter`, `if_frequency_modulation`, `if_gramophone_motor`, `if_halftone_screen`, `if_hollerith_tabulator`, `if_iconoscope`, `if_index_card_system`, `if_iron_gall_ink`, `if_iron_hand_press`, `if_jacquard_chain`, `if_keypunch`, `if_leaf_shutter`, `if_loading_coil`, `if_magnetic_tape`, `if_mimeograph`, `if_morse_key_and_sounder`, `if_movable_type`, `if_moving_coil_loudspeaker`, `if_panchromatic_emulsion`, `if_papyrus`, `if_parchment`, `if_pencil_graphite`, `if_phonautograph`, `if_photoengraving`, `if_punch_and_matrix`, `if_punched_card`, `if_quill`, `if_radio_direction_finding`, `if_rag_paper`, `if_recording_bias`, `if_screw_press`, `if_shift_key_mechanism`, `if_silver_halide_sensitivity`, `if_slide_rule`, `if_spark_transmitter`, `if_steel_pen_nib`, `if_stencil_duplicator`, `if_strowger_exchange`, `if_submarine_cable_gutta_percha`, `if_superheterodyne_receiver`, `if_telegraph_relay`, `if_telephone_exchange`, `if_telephone_receiver`, `if_telephone_transmitter`, `if_television_mechanical`, `if_tin_foil_phonograph`, `if_triode_oscillator`, `if_tuned_circuit`, `if_type_mould`, `if_video_scanning_standard`, `if_wax_cylinder`, `if_woodblock_printing`, `in2_analytical_balance`, `in2_aneroid_capsule`, `in2_balance_spring_watch`, `in2_bourdon_pressure_gauge`, `in2_gas_thermometry_absolute`, `in2_mcleod_vacuum_gauge`, `in2_mercury_barometer`, `in2_microbalance_quartz`, `in2_optical_comparator`, `in2_orifice_flow_meter`, `in2_pitot_tube`, `in2_quartz_resonator_frequency`, `in2_resistance_thermometer_RTD`, `in2_thermocouple`, `in2_torsion_balance`, `in2_travelling_microscope`, `in2_tuning_fork_oscillator`, `in2_venturi_flow_meter`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`
+`ag2_adulteration_law`, `ag2_artificial_insemination`, `ag2_balanced_ration`, `ag2_baler`, `ag2_basic_slag`, `ag2_battery_poultry`, `ag2_biological_control`, `ag2_bone_meal`, `ag2_bordeaux_mixture`, `ag2_botanic_garden`, `ag2_bottling`, `ag2_budding`, `ag2_butter`, `ag2_canning`, `ag2_caterpillar_track`, `ag2_centrifugal_sugar`, `ag2_chaff_cutter`, `ag2_cheese_families`, `ag2_coffee_voyage`, `ag2_cold_store`, `ag2_column_still`, `ag2_combine_harvester`, `ag2_composting`, `ag2_condensed_milk`, `ag2_contour_ploughing`, `ag2_controlled_pollination`, `ag2_coulter`, `ag2_cream_separator`, `ag2_crown_cork`, `ag2_cultivator`, `ag2_ddt`, `ag2_double_seam_can`, `ag2_erosion_control`, `ag2_evaporated_milk`, `ag2_fanning_mill`, `ag2_fat_hydrogenation`, `ag2_fermentation_control`, `ag2_food_laboratory`, `ag2_gasworks_ammonia`, `ag2_grafting`, `ag2_gravity_irrigation`, `ag2_green_manure`, `ag2_guano`, `ag2_harrow`, `ag2_herd_book`, `ag2_hopping`, `ag2_horse_hoe`, `ag2_hybrid_maize`, `ag2_hybridisation`, `ag2_hydrometer`, `ag2_layering`, `ag2_lead_arsenate`, `ag2_lime_sulphur`, `ag2_liming`, `ag2_maize_newworld`, `ag2_malting`, `ag2_marling`, `ag2_mashing`, `ag2_milking_machine`, `ag2_mower`, `ag2_nicotine_pesticide`, `ag2_nitrite_curing`, `ag2_nitrogen_cycle`, `ag2_norfolk_course`, `ag2_oil_pressing`, `ag2_pasteurisation`, `ag2_plant_quarantine`, `ag2_pot_still`, `ag2_potash`, `ag2_potato_lifter`, `ag2_potato_newworld`, `ag2_power_take_off`, `ag2_progeny_testing`, `ag2_pure_line_selection`, `ag2_purifier`, `ag2_pyrethrum`, `ag2_reaper`, `ag2_reaper_binder`, `ag2_record_keeping_breeding`, `ag2_refrigerated_ship`, `ag2_refrigeration_ice`, `ag2_resistant_variety`, `ag2_retort`, `ag2_rhizobia`, `ag2_ridging_plough`, `ag2_roller`, `ag2_roller_mill`, `ag2_root_cutter`, `ag2_rootstocks`, `ag2_seed_certification`, `ag2_seed_drill`, `ag2_seed_trade`, `ag2_sheep_dip`, `ag2_silage_silo`, `ag2_soil_testing`, `ag2_sprayer`, `ag2_subsoiler`, `ag2_sugar_refining`, `ag2_sugar_voyage`, `ag2_superphosphate`, `ag2_tea_voyage`, `ag2_tedder`, `ag2_terracing`, `ag2_three_point_linkage`, `ag2_threshing_machine`, `ag2_tile_drainage`, `ag2_tractor_steam`, `ag2_tuberculin_test`, `ag2_urea`, `ag2_vacuum_pan`, `ag2_veterinary_vaccination`, `ag2_wardian_case`, `ag2_white_flour_loss`, `ag2_winnower`, `ag2_yeast_culture`, `civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `gp_carbon_brushes`, `gp_controlled_atmosphere_chamber`, `gp_czochralski_puller`, `gp_exhaust_pinchoff`, `gp_getter`, `gp_glass_metal_seal`, `gp_laminated_core`, `gp_magnet_wire_enamelled`, `gp_whisker_forming`, `in2_analytical_balance`, `in2_aneroid_capsule`, `in2_balance_spring_watch`, `in2_bourdon_pressure_gauge`, `in2_gas_thermometry_absolute`, `in2_mcleod_vacuum_gauge`, `in2_mercury_barometer`, `in2_microbalance_quartz`, `in2_optical_comparator`, `in2_orifice_flow_meter`, `in2_pitot_tube`, `in2_quartz_resonator_frequency`, `in2_resistance_thermometer_RTD`, `in2_thermocouple`, `in2_torsion_balance`, `in2_travelling_microscope`, `in2_tuning_fork_oscillator`, `in2_venturi_flow_meter`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`
 
