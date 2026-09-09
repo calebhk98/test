@@ -5,7 +5,8 @@ ROME 100 AD -> TRANSISTOR : tech-tree simulator, planner and game.
 Three things at once, as requested:
   * a RECORD    : `validate`, `costs`, `path` dump the tree and its economics
   * a TOOL      : `run` Monte-Carlos a strategy and tells you where it breaks
-  * a GAME      : `play` steps you through it year by year
+  * a GAME      : `play` steps you through it year by year, and `agent` lets a
+                  script or an AI play it instead of a person at a keyboard
 
 No third-party dependencies. Python 3.8+.
 
@@ -16,6 +17,67 @@ No third-party dependencies. Python 3.8+.
     python3 rome/sim/simulator.py run --strategy recommended --no-events   # pure engineering timeline
     python3 rome/sim/simulator.py compare --mc 400
     python3 rome/sim/simulator.py play --strategy recommended
+    python3 rome/sim/simulator.py play --manual                            # real free choice, no autopilot
+    python3 rome/sim/simulator.py agent                                    # JSON protocol, see below
+
+MACHINE-PLAYABLE INTERFACE (`agent`, and `play --manual`)
+-----------------------------------------------------------------------------
+`play` used to be a demonstration, not a game: typing a node id only moved it
+to the front of the OPTIMIZER's own ordering, and the optimizer (step() 4b)
+went on starting whatever else it wanted that year regardless. There was no
+way to make a choice and live with only that choice's consequences, and
+nothing but a human typing into input() could drive it at all.
+
+Two fixes, usable separately or together:
+
+  --manual (on `play`, and always-on inside `agent`)
+      Switches off step() 4b, the optimizer's auto-start loop, entirely.
+      Nothing becomes active except what start_project() was explicitly told
+      to start. Money, materials, staff, hazards and the calendar all still
+      proceed on their own; only the research CHOICE stops being automatic.
+      A player who starts nothing makes no progress. That is correct.
+
+  `agent`  a line-oriented JSON protocol, for a script or an LLM
+      Reads one JSON command per line from stdin and writes one JSON object
+      per line to stdout (or, with --script FILE, reads a JSON list of the
+      same command objects from a file and plays them in order). Every
+      response is exactly one line of valid JSON; a failed command comes back
+      as {"ok": false, "error": "..."} explaining what to do instead, never a
+      stack trace or a bare False.
+
+      {"cmd":"state"}                              current situation, in full
+      {"cmd":"available"}                          every node that can legally start now,
+                                                    with cost, founder hours, calendar
+                                                    floor, prerequisites and its note
+      {"cmd":"why","id":"zinc_metal"}              the full explanation for one node:
+                                                    cost, staff, risk, chain, what it
+                                                    unlocks, why it is or isn't startable
+      {"cmd":"path","id":"zinc_metal"}             everything still undone on the way
+                                                    to this node, in dependency order
+      {"cmd":"start","id":"zinc_metal"}            begin a project (error explains
+                                                    exactly what is missing if you can't)
+      {"cmd":"stop","id":"zinc_metal"}             abandon a project; sunk cost is sunk
+      {"cmd":"bounty","id":"zinc_metal"}           post a public prize instead of
+                                                    building it yourself (tier <=2 crafts
+                                                    only; converts denarii into hours)
+      {"cmd":"buy","what":"forest","n":100}        buy 100 ha of coppice woodland
+      {"cmd":"buy","what":"mine","material":"iron","n":500}   sink a mine
+      {"cmd":"buy","what":"slaves","n":4}          the economic actions the optimizer
+      {"cmd":"buy","what":"manumit","n":4}         could take, exposed to the player
+      {"cmd":"step","years":5}                     advance the calendar; returns what
+                                                    completed and what happened
+      {"cmd":"quit"}                               end the session
+
+      The `state` object (also embedded in every `step` reply) reports: year,
+      capital, revenue, founder hours available, founder_alive, scholars,
+      artisans, reputation, suspicion, scandal, eminence, protection,
+      done_count, active (each project's progress), resource_throttle and
+      throttle_binding (what is limiting work, if anything), and ended /
+      end_reason once the run is over (goal reached, died, or ran out of
+      horizon). `available` and `why` never consult the optimizer's own
+      ordering for a decision, only for a stable listing order; every
+      decision an agent needs is reachable through start/stop/bounty/buy/step
+      alone, all the way to the transistor.
 """
 
 import argparse, json, math, os, random, sys
@@ -180,7 +242,7 @@ SHOCKS = dict(
 
 class Sim:
     def __init__(self, nodes, order, rng, events=True, cfg=None, verbose=False,
-                 bounty_set=None, civ=None):
+                 bounty_set=None, civ=None, manual=False):
         self.nodes = nodes
         self.order = list(order)
         self.rng = rng
@@ -189,6 +251,12 @@ class Sim:
         self.verbose = verbose
         self.bounty_set = set(bounty_set or ())
         self.civ = civ or load_civ()
+        # MANUAL MODE: the optimizer in step() 4b never starts anything on its
+        # own. The only projects that ever become active are ones something
+        # called start_project() on, i.e. a human or an agent choosing them.
+        # See the comment on step() 4b and on start_project() for why this
+        # exists: without it, "choosing" a node in `play` was cosmetic.
+        self.manual = bool(manual)
         self.w = self.civ["values"]
         # A civilization brings its own date, its own price level and its own
         # capacity to fund things. Norse Scandinavia does not start in 100 AD.
@@ -201,6 +269,7 @@ class Sim:
         c = self.cfg
         self.capital = float(c["start_capital"])
         self.done = set()
+        self.granted = set()      # held because the SOCIETY has it, not because you built it
         self.active = {}          # id -> dict(ph_left, years_elapsed, spent)
         self.failed_attempts = defaultdict(int)
         # You are one scholar. Rome already has excellent craftsmen for hire;
@@ -470,6 +539,8 @@ class Sim:
     def revenue(self):
         r = 0.0
         for k in self.done:
+            if k in self.granted:
+                continue          # the society's, not yours
             n = self.nodes[k]
             if n["rev"]:
                 age = self.year - self.done_year.get(k, self.year)
@@ -478,7 +549,8 @@ class Sim:
         return (r * (self.economy ** 0.75) + self.state_funding()) * self.output_factor
 
     def upkeep(self):
-        return sum(self.nodes[k]["up"] for k in self.done)
+        # Symmetrically, you do not pay to maintain what you do not own.
+        return sum(self.nodes[k]["up"] for k in self.done if k not in self.granted)
 
     # ---- raw material supply ------------------------------------------------
     CHARCOAL_PER_HA = 0.75          # tonnes per hectare per year, sustainable
@@ -819,10 +891,20 @@ class Sim:
             q *= best
         return q, True
 
-    def can_start(self, k):
+    def start_reason(self, k):
+        """Same legality test as `can_start`, but explains a refusal instead of
+        just returning False. `can_start` is a thin wrapper around this now;
+        the wrapper exists because the optimizer's inner loop calls it a huge
+        number of times and does not want to build a string it will discard.
+        The reason text is what a PLAYER needs (human or agent): not just "no",
+        but "no, because you need a local patron first"."""
+        if k not in self.nodes:
+            return False, "no such node"
         n = self.nodes[k]
-        if k in self.done or k in self.active:
-            return False
+        if k in self.done:
+            return False, "already done"
+        if k in self.active:
+            return False, "already active"
         # Tier 9 once meant UNOBTAINABLE: rubber, quinine, New World crops. That
         # concept was abolished, because nothing is unobtainable, only elsewhere,
         # and the tree now routes those through exp_* expedition nodes instead.
@@ -830,13 +912,18 @@ class Sim:
         # silently making a technology permanently unbuildable; treetool now
         # retiers them on merge, so this should never fire.
         if n["tier"] == 9 or n["cat"] == "unobtainable":
-            return False
-        if not all(p in self.done for p in n["pre"]):
-            return False
+            return False, "retired category: unobtainable in this tree"
+        missing = [p for p in n["pre"] if p not in self.done]
+        if missing:
+            return False, "missing prerequisites: " + ", ".join(missing)
         if not self.substitution_quality(k)[1]:
-            return False
-        if n["sch"] > self.scholars or n["art"] > self.artisans:
-            return False
+            return False, "no viable option in a required substitution group (fuel, vessel, etc.)"
+        if n["sch"] > self.scholars:
+            return False, ("needs %d trained scholars, you have %.1f"
+                           % (n["sch"], self.scholars))
+        if n["art"] > self.artisans:
+            return False, ("needs %d trained artisans, you have %.1f"
+                           % (n["art"], self.artisans))
         # SOCIAL APPROVAL GATE. Some things the State does not want built, and no
         # amount of money substitutes for someone powerful being willing to be
         # associated with it. See 03_SOCIAL_POLITICS.md section 4.
@@ -846,13 +933,56 @@ class Sim:
         # the patronage and institution nodes are how you BUY permission, so they
         # cannot themselves require permission.
         if n["cat"] in ("social", "institution", "foundation", "capability", "material"):
-            return True
+            return True, None
         si = self.state_interest(n)
         if si < -0.4 and not self.has("patron_local"):
-            return False
+            return False, ("the state is wary of this (state interest %.1f); "
+                           "get at least a local patron first" % si)
         if si < -1.2 and not (self.has("patron_senatorial") or self.protection > 0.45):
-            return False
-        return True
+            return False, ("the state actively opposes this (state interest %.1f); "
+                           "you need senatorial patronage, or protection above 0.45 "
+                           "(you have %.2f)" % (si, self.protection))
+        return True, None
+
+    def can_start(self, k):
+        return self.start_reason(k)[0]
+
+    def start_project(self, k):
+        """PLAYER-CHOSEN start. This is the whole reason `--manual` and the
+        `agent` JSON protocol exist: the old `play` command let you type a
+        node id, but all that did was move it to the front of `order`, the
+        list the OPTIMIZER in step() still walked on its own; the optimizer
+        went on starting whatever ELSE it wanted that year regardless of what
+        you typed. You never actually chose anything, you only nudged a
+        priority queue you did not otherwise control. This method is the real
+        thing: it applies the same legality check as the optimizer
+        (`start_reason`), and if it passes, THIS is the only place besides the
+        optimizer's own loop that ever adds to `self.active`. In `--manual`
+        mode the optimizer's loop is switched off entirely (see step(), 4b),
+        so this becomes the only way anything ever starts.
+        """
+        ok, why = self.start_reason(k)
+        if not ok:
+            return False, why
+        n = self.nodes[k]
+        self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0)
+        # Director hours in step() 5 are handed out by priority in `order`.
+        # A thing you just chose to work on should get first call on your own
+        # hours, exactly as the old (cosmetic) reprioritisation implied it did.
+        if k in self.order:
+            self.order.remove(k)
+        self.order.insert(0, k)
+        return True, None
+
+    def stop_project(self, k):
+        """Abandon a project the player started. Money and hours already spent
+        on it are gone, same as they would be for a real abandoned enterprise;
+        there is no refund."""
+        if k not in self.active:
+            return False, "not active"
+        del self.active[k]
+        self.bountied.discard(k)
+        return True, None
 
     # -- main loop ----------------------------------------------------------
     def step(self):
@@ -912,26 +1042,45 @@ class Sim:
                     and all(p in self.done for p in n["pre"])):
                 self.done.add(k)
                 self.done_year[k] = self.year
+                # This node is granted because THE SOCIETY already has it, not
+                # because you built it. Rome having large merchant ships means
+                # the ships exist, not that you own the fleet, so you do not
+                # collect their revenue. Left unmarked, the 148 auto-granted
+                # nodes paid the founder 11,650 den a year for existing, 8,000
+                # of it from a merchant fleet belonging to other people.
+                self.granted.add(k)
 
         # 4b. start new projects
         pool = self.director_pool()
         hired_left = self.hired_cap()
-        # More directors means more things in hand at once, and a big trained staff
-        # lets routine work proceed without the founder watching it.
-        max_active = int(2 + self.director_pool() / 2400.0
-                         + self.scholars / 12.0 + self.artisans / 25.0)
-        for k in self.order:
-            if len(self.active) - len(self.bountied & set(self.active)) >= max_active:
-                break
-            if not self.can_start(k):
-                continue
-            n = self.nodes[k]
-            # do not start something we cannot plausibly fund this decade
-            if n["_total_cost"] * self.money_real * self.civ_cost_factor(k) > self.capital * 3 + self.revenue() * 6:
-                continue
-            if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
-                continue
-            self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0)
+        # MANUAL MODE STOPS HERE. This loop is "the optimizer": it walks
+        # `order` and starts whatever it judges best, which is exactly the
+        # behaviour a free-choice player must NOT get. The old `play` command
+        # let you type a node id, but that only did `order.remove/insert(0)`
+        # a few lines above this loop's own input; the loop then ran anyway
+        # and started other things you never asked for. `self.manual` cuts
+        # that off at the root: nothing is ever added to `self.active` here,
+        # so the only way anything starts is start_project(), called by a
+        # human or a script. Everything below this block (materials, staff,
+        # money, hazards, the calendar) is untouched by `manual` and keeps
+        # running exactly as before.
+        if not self.manual:
+            # More directors means more things in hand at once, and a big trained staff
+            # lets routine work proceed without the founder watching it.
+            max_active = int(2 + self.director_pool() / 2400.0
+                             + self.scholars / 12.0 + self.artisans / 25.0)
+            for k in self.order:
+                if len(self.active) - len(self.bountied & set(self.active)) >= max_active:
+                    break
+                if not self.can_start(k):
+                    continue
+                n = self.nodes[k]
+                # do not start something we cannot plausibly fund this decade
+                if n["_total_cost"] * self.money_real * self.civ_cost_factor(k) > self.capital * 3 + self.revenue() * 6:
+                    continue
+                if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
+                    continue
+                self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0)
 
         # 4c. materials. Buy the woodland and dig the beds BEFORE the shortage
         #     bites, which is what a competent manager does and what the old
@@ -1433,14 +1582,35 @@ def cmd_compare(a):
 
 
 def cmd_play(a):
+    """Interactive human REPL. Two modes:
+
+    Default (no --manual): unchanged from before. Typing a node id only
+    reprioritises `order`; the optimizer in step() 4b still starts whatever
+    else it wants that year. This mode exists to WATCH the optimizer, and it
+    is honestly labelled below as advisory, not a real choice.
+
+    --manual: the optimizer's 4b loop is switched off (see Sim.manual). Typing
+    a node id now calls start_project(), which is the ONLY thing that starts
+    it. Nothing else will ever become active on its own. This is a real game:
+    what you do not start, does not happen. See the `agent` command for the
+    same guarantee driven by a script instead of a keyboard.
+    """
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
-    s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=bounties)
+    s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=bounties,
+            manual=a.manual)
     s.goal = goal; s.done_year = {}
-    print("You arrive in %d AD with %d denarii in unminted gold.\n"
-          "Type a node id to begin work on it, 'a' for what is available,\n"
-          "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
+    if a.manual:
+        print("You arrive in %d AD with %d denarii in unminted gold. MANUAL MODE:\n"
+              "nothing starts unless you start it. Type a node id to start it,\n"
+              "'x <id>' to abandon it, 'a' for what is available,\n"
+              "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
+    else:
+        print("You arrive in %d AD with %d denarii in unminted gold.\n"
+              "Type a node id to PRIORITISE it (the optimizer still runs the rest;\n"
+              "pass --manual for real free choice), 'a' for what is available,\n"
+              "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
     while s.year < 100 + (a.horizon or 400) and not s.dead_reason and not s.goal_year:
         cmd = input("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f | susp %.0f] > "
                     % (s.year, s.capital, s.director_pool(), s.scholars, s.artisans,
@@ -1461,8 +1631,16 @@ def cmd_play(a):
         if cmd == "s":
             print("   done: %d  active: %s" % (len(s.done), ", ".join(s.active) or "nothing"))
             continue
+        if cmd.startswith("x ") and a.manual:
+            target = cmd[2:].strip()
+            ok, why = s.stop_project(target)
+            print("   stopped." if ok else "   can't: %s" % why)
+            continue
         if cmd in nodes:
-            if s.can_start(cmd):
+            if a.manual:
+                ok, why = s.start_project(cmd)
+                print("   started." if ok else "   blocked: %s" % why)
+            elif s.can_start(cmd):
                 s.order.remove(cmd); s.order.insert(0, cmd); print("   prioritised.")
             else:
                 miss = [p for p in nodes[cmd]["pre"] if p not in s.done]
@@ -1471,6 +1649,302 @@ def cmd_play(a):
         else:
             print("   unknown command")
     print("\nEnded %d AD. %s" % (s.year, s.dead_reason or ("GOAL REACHED" if s.goal_year else "horizon")))
+
+
+# ----------------------------------------------------------------------------
+# Machine-playable interface: `agent`
+#
+# See the module docstring for the protocol table. In short: every line in,
+# every line out, is one JSON object. `state` reports; `start`/`stop`/`bounty`/
+# `buy` act; `step` advances the calendar. It is built on the same Sim.manual
+# and start_project()/stop_project() this file's step()/can_start() comments
+# already explain, so an agent driving this gets EXACTLY the consequences of
+# its own choices, nothing the optimizer would have chosen for it.
+# ----------------------------------------------------------------------------
+
+def _agent_end_reason(s):
+    """None while the run is live; otherwise why it stopped, for state() and
+    to refuse further start/stop/bounty/buy commands once it has."""
+    end_year = getattr(s, "end_year", s.cfg["start_year"] + s.cfg["horizon_years"])
+    if s.dead_reason:
+        return s.dead_reason
+    if s.goal_year:
+        return "goal reached: %s completed in %d AD" % (s.goal, s.goal_year)
+    if s.year >= end_year:
+        return "ran out of horizon (%d AD) without reaching the goal" % end_year
+    return None
+
+
+def _agent_state(s, nodes):
+    active = {}
+    for k, st in s.active.items():
+        n = nodes[k]
+        active[k] = {"name": n["name"], "founder_hours_left": round(st["ph_left"], 1),
+                     "founder_hours_total": n["ph"], "years_in_progress": st["yrs"],
+                     "spent": round(st["spent"], 1), "bountied": k in s.bountied}
+    end_reason = _agent_end_reason(s)
+    return {
+        "year": s.year, "capital": round(s.capital, 1), "revenue": round(s.revenue(), 1),
+        "upkeep": round(s.upkeep(), 1),
+        "founder_hours_available": round(s.director_pool(), 1),
+        "founder_alive": s.founder_alive,
+        "scholars": round(s.scholars, 2), "artisans": round(s.artisans, 2),
+        "directors_extra": round(s.directors_extra, 2),
+        "reputation": round(s.reputation, 1), "suspicion": round(s.suspicion, 2),
+        "scandal": round(s.scandal, 2), "eminence": round(s.eminence, 2),
+        "protection": round(s.protection, 3), "familiarity": round(s.familiarity, 3),
+        "done_count": len(s.done), "active": active,
+        "resource_throttle": round(s.throttle, 3), "throttle_binding": s.binding,
+        "forest_ha": round(s.forest_ha, 1),
+        "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},
+        "slaves": s.slaves, "freedmen": s.freedmen,
+        "goal": s.goal, "goal_reached": s.goal_year is not None, "goal_year": s.goal_year,
+        "manual": s.manual, "ended": end_reason is not None, "end_reason": end_reason,
+    }
+
+
+def _agent_available(s, nodes):
+    out = []
+    for k in s.order:
+        if not s.can_start(k):
+            continue
+        n = nodes[k]
+        out.append({"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
+                    "cost": round(n["_total_cost"], 1), "founder_hours": n["ph"],
+                    "calendar_floor_years": n["yrs"], "risk": n["risk"],
+                    "prerequisites": n["pre"], "note": n["note"]})
+    return {"count": len(out), "available": out}
+
+
+def _node_explain(s, nodes, k):
+    n = nodes[k]
+    need = closure(nodes, k) - {k}
+    unlocks = [m for m in nodes if k in nodes[m]["pre"]]
+    blocks = {m for m in nodes if k in closure(nodes, m)} - {k}
+    bounty_by_type = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
+                      "power", "agriculture", "information", "instruments"))
+    started = k in s.done or k in s.active
+    return {
+        "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
+        "note": n["note"], "kb": n["kb"],
+        "founder_hours": n["ph"], "hired_labour": n["lab"], "materials": n["mat"],
+        "cost": {"labour": round(n["_labour_cost"], 1), "materials": round(n["_material_cost"], 1),
+                 "capital": n["cap"], "total": round(n["_total_cost"], 1)},
+        "upkeep": n["up"], "revenue": n["rev"],
+        "calendar_floor_years": n["yrs"], "risk": n["risk"],
+        "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
+        "suspicion": n["sus"], "state_interest_trait_score": n["gov"],
+        "bounty_eligible_by_type": bounty_by_type,
+        "direct_prerequisites": n["pre"],
+        "missing_prerequisites": [p for p in n["pre"] if p not in s.done],
+        "chain_size": len(need), "chain_founder_hours": sum(nodes[x]["ph"] for x in need),
+        "chain_cost": round(sum(nodes[x]["_total_cost"] for x in need), 1),
+        "critical_path_years": critical_path(nodes, k)[0],
+        "unlocks": unlocks, "downstream_count": len(blocks),
+        "on_goal_path": k == s.goal or s.goal in blocks,
+        "done": k in s.done, "active": k in s.active,
+        "can_start_now": (not started) and s.can_start(k),
+        "start_blocked_reason": None if started else s.start_reason(k)[1],
+    }
+
+
+def _agent_dispatch(s, nodes, cmd):
+    if not isinstance(cmd, dict) or "cmd" not in cmd:
+        return {"ok": False, "error": "each line must be a JSON object with a 'cmd' field, "
+                                      "e.g. {\"cmd\":\"state\"}"}
+    op = cmd.get("cmd")
+    ended = _agent_end_reason(s)
+
+    if op == "state":
+        return dict(ok=True, **_agent_state(s, nodes))
+
+    if op == "available":
+        return dict(ok=True, **_agent_available(s, nodes))
+
+    if op == "why":
+        k = cmd.get("id")
+        if k not in nodes:
+            near = [x for x in nodes if str(k).lower() in x.lower()]
+            return {"ok": False, "error": "unknown node %r. did you mean: %s"
+                    % (k, ", ".join(near[:8]) or "no idea")}
+        return dict(ok=True, **_node_explain(s, nodes, k))
+
+    if op == "path":
+        k = cmd.get("id")
+        if k not in nodes:
+            return {"ok": False, "error": "unknown node id %r" % k}
+        need = closure(nodes, k)
+        order = topo_order(nodes, need)
+        remaining = [x for x in order if x not in s.done]
+        return {"ok": True, "id": k, "done": k in s.done,
+                "remaining_count": len(remaining), "remaining": remaining}
+
+    if op == "start":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s); nothing more can be started" % ended}
+        k = cmd.get("id")
+        if k not in nodes:
+            return {"ok": False, "error": "unknown node id %r. use {\"cmd\":\"available\"} "
+                                          "or {\"cmd\":\"why\",\"id\":...} to find valid ids" % k}
+        ok, why = s.start_project(k)
+        if not ok:
+            return {"ok": False, "error": why}
+        n = nodes[k]
+        return {"ok": True, "started": k, "name": n["name"], "founder_hours_needed": n["ph"],
+                "calendar_floor_years": n["yrs"]}
+
+    if op == "stop":
+        k = cmd.get("id")
+        ok, why = s.stop_project(k)
+        if not ok:
+            return {"ok": False, "error": why}
+        return {"ok": True, "stopped": k}
+
+    if op == "bounty":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s); nothing more can be bought" % ended}
+        k = cmd.get("id")
+        if k not in nodes:
+            return {"ok": False, "error": "unknown node id %r" % k}
+        if k in s.done:
+            return {"ok": False, "error": "%s is already done" % k}
+        if k in s.active:
+            return {"ok": False, "error": "%s is already active; stop it first if you want "
+                                          "to switch to a bounty instead" % k}
+        if not s.bounty_eligible(k):
+            n = nodes[k]
+            missing = [p for p in n["pre"] if p not in s.done]
+            if missing:
+                return {"ok": False, "error": "missing prerequisites: " + ", ".join(missing)}
+            return {"ok": False, "error": "not bounty-eligible (tier %d, category %s): a Roman "
+                                          "artisan could not recognise success at this" % (n["tier"], n["cat"])}
+        price = nodes[k]["_total_cost"] * 2.5
+        if not s.post_bounty(k):
+            return {"ok": False, "error": "cannot afford the bounty: needs about %.0f denarii, "
+                                          "you have %.0f. Earn or wait, then try again" % (price, s.capital)}
+        return {"ok": True, "posted": k, "price": round(price, 1), "capital": round(s.capital, 1)}
+
+    if op == "buy":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s); nothing more can be bought" % ended}
+        what = cmd.get("what")
+        try:
+            n = float(cmd.get("n", 0))
+        except (TypeError, ValueError):
+            return {"ok": False, "error": "n must be a number"}
+        if what == "forest":
+            got = s.buy_forest(n)
+            if got <= 0:
+                return {"ok": False, "error": "cannot afford %.0f ha of coppice woodland "
+                                              "(you have %.0f denarii)" % (n, s.capital)}
+            return {"ok": True, "bought_ha": got, "forest_ha": round(s.forest_ha, 1),
+                    "capital": round(s.capital, 1)}
+        if what == "mine":
+            mat = cmd.get("material")
+            if mat not in s.MINE_CAPEX_PER_T_YR:
+                return {"ok": False, "error": "material must be one of: "
+                                              + ", ".join(s.MINE_CAPEX_PER_T_YR)}
+            got = s.open_mine(mat, n)
+            if got <= 0:
+                return {"ok": False, "error": "could not commission any %s capacity right now "
+                                              "(capital too low, ceiling reached, or standing "
+                                              "too low for a concession that size)" % mat}
+            return {"ok": True, "commissioned_t_per_yr": round(got, 2),
+                    "ready_year": s.mine_ready.get(mat), "capital": round(s.capital, 1)}
+        if what == "slaves":
+            got = s.buy_slaves(int(n))
+            if got <= 0:
+                return {"ok": False, "error": "cannot afford %d slaves at 300 denarii each "
+                                              "(you have %.0f denarii)" % (int(n), s.capital)}
+            return {"ok": True, "bought": got, "slaves": s.slaves, "capital": round(s.capital, 1)}
+        if what == "manumit":
+            got = s.manumit(int(n))
+            if got <= 0:
+                return {"ok": False, "error": "you have no slaves to free"}
+            return {"ok": True, "manumitted": got, "freedmen": s.freedmen, "slaves": s.slaves}
+        return {"ok": False, "error": "what must be one of: forest, mine, slaves, manumit"}
+
+    if op == "step":
+        try:
+            years = int(cmd.get("years", 1))
+        except (TypeError, ValueError):
+            return {"ok": False, "error": "years must be an integer"}
+        if years < 1:
+            return {"ok": False, "error": "years must be >= 1"}
+        completed, events = [], []
+        end_year = s.end_year
+        for _ in range(years):
+            if s.dead_reason or s.goal_year or s.year >= end_year:
+                break
+            before_done, before_log = set(s.done), len(s.log)
+            s.step()
+            for k in s.done - before_done:
+                completed.append({"id": k, "name": nodes[k]["name"], "year": s.done_year.get(k)})
+            for y, m in s.log[before_log:]:
+                events.append({"year": y, "message": m})
+        out = dict(ok=True, completed=completed, events=events)
+        out.update(_agent_state(s, nodes))
+        return out
+
+    if op == "quit":
+        return {"ok": True, "bye": True}
+
+    return {"ok": False, "error": "unknown cmd %r. use one of: state, available, why, path, "
+                                  "start, stop, bounty, buy, step, quit" % op}
+
+
+def cmd_agent(a):
+    """Machine-playable driver: JSON in, JSON out. See the module docstring for
+    the protocol. Runs in Sim.manual mode ALWAYS, regardless of any other flag:
+    the entire point of this command is that a script chooses the research
+    path, so the optimizer's own auto-start (step() 4b) is never in play here.
+    That is different from `play --manual`, which is the same guarantee for a
+    human at a keyboard; `agent` is that guarantee for a script or an LLM.
+    """
+    tree, prices, nodes, wages, goods = load()
+    goal = tree["meta"]["goal_node"]
+    label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    s = Sim(nodes, order, random.Random(a.seed), events=not a.no_events,
+            cfg={"start_capital": STARTING_KITS[a.kit]["den"], "horizon_years": a.horizon},
+            civ=load_civ(a.civ), bounty_set=set(), manual=True)
+    s.goal = goal
+    s.done_year = {}
+    s.end_year = s.cfg["start_year"] + a.horizon
+
+    def emit(obj):
+        sys.stdout.write(json.dumps(obj) + "\n")
+        sys.stdout.flush()
+
+    if a.script:
+        try:
+            cmds = json.load(open(a.script))
+        except (OSError, ValueError) as e:
+            emit({"ok": False, "error": "could not read script %r: %s" % (a.script, e)})
+            return 1
+        if not isinstance(cmds, list):
+            emit({"ok": False, "error": "--script file must contain a JSON list of command objects"})
+            return 1
+        for c in cmds:
+            emit(_agent_dispatch(s, nodes, c))
+        return 0
+
+    # REPL over stdin/stdout: one JSON command per line in, one JSON object
+    # per line out. This is the primary form; --script above is a thin
+    # wrapper that replays a fixed list through the same dispatcher.
+    for line in sys.stdin:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            cmd = json.loads(line)
+        except ValueError as e:
+            emit({"ok": False, "error": "invalid JSON: %s" % e})
+            continue
+        resp = _agent_dispatch(s, nodes, cmd)
+        emit(resp)
+        if cmd.get("cmd") == "quit":
+            break
+    return 0
 
 
 def cmd_sensitivity(a):
@@ -1705,9 +2179,29 @@ def main():
     q.add_argument("--strategy", default="recommended")
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
+    q.add_argument("--manual", action="store_true",
+                   help="nothing starts on its own; only nodes you type actually begin. "
+                        "Without this flag, typing a node id only reprioritises the "
+                        "optimizer, which keeps starting things on its own.")
+    q = sub.add_parser("agent", help="JSON protocol so a script or an AI agent can play "
+                                     "and choose its own research path. See the module "
+                                     "docstring for the command table.")
+    q.add_argument("--strategy", default="recommended",
+                   help="only used to seed the display order in 'available'; nothing "
+                        "is auto-started, this command always runs manual")
+    q.add_argument("--seed", type=int, default=1)
+    q.add_argument("--horizon", type=int, default=500)
+    q.add_argument("--civ", default="rome_100ad")
+    q.add_argument("--kit", default="poor_scholar",
+                   help="starting wealth: " + ", ".join(STARTING_KITS))
+    q.add_argument("--no-events", action="store_true",
+                   help="turn off random hazards, for a deterministic scripted playthrough")
+    q.add_argument("--script", default=None,
+                   help="path to a JSON file holding a list of command objects, "
+                        "played in order instead of reading stdin")
     a = p.parse_args()
     return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs, "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs,
-            "run": cmd_run, "compare": cmd_compare, "play": cmd_play,
+            "run": cmd_run, "compare": cmd_compare, "play": cmd_play, "agent": cmd_agent,
             "sensitivity": cmd_sensitivity}[a.cmd](a)
 
 

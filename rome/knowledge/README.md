@@ -22,31 +22,31 @@ in this directory, read that one.
 |---|---|---:|---:|
 | [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 11 | 0 |
 | [`03_SOCIAL_POLITICS.md`](03_SOCIAL_POLITICS.md) |  | 10 | 0 |
-| [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 188 |
-| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 197 |
-| [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 179 |
-| [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 245 |
-| [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 206 |
+| [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 180 |
+| [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 190 |
+| [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 168 |
+| [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 223 |
+| [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 194 |
 | [`55_semiconductors.md`](55_semiconductors.md) | Vacuum, high purity and semiconductors | 13 | 17 |
-| [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 72 |
-| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 154 |
-| [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 63 |
-| [`76_farming_food_deep.md`](76_farming_food_deep.md) |  | 115 | 115 |
-| [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 64 |
-| [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 223 |
-| [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 199 |
-| [`87_construction.md`](87_construction.md) |  | 101 | 97 |
-| [`88_media_signals.md`](88_media_signals.md) |  | 100 | 83 |
-| [`89_remaining_arts.md`](89_remaining_arts.md) |  | 214 | 189 |
-| [`90_textiles.md`](90_textiles.md) |  | 20 | 215 |
-| [`91_household.md`](91_household.md) |  | 27 | 70 |
+| [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 71 |
+| [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 152 |
+| [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 58 |
+| [`76_farming_food_deep.md`](76_farming_food_deep.md) |  | 115 | 111 |
+| [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 57 |
+| [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 189 |
+| [`86_transport_deep.md`](86_transport_deep.md) |  | 211 | 190 |
+| [`87_construction.md`](87_construction.md) |  | 101 | 93 |
+| [`88_media_signals.md`](88_media_signals.md) |  | 100 | 80 |
+| [`89_remaining_arts.md`](89_remaining_arts.md) |  | 214 | 183 |
+| [`90_textiles.md`](90_textiles.md) |  | 20 | 198 |
+| [`91_household.md`](91_household.md) |  | 27 | 67 |
 | [`92_vehicles_flight.md`](92_vehicles_flight.md) |  | 29 | 0 |
 | [`93_energy.md`](93_energy.md) |  | 27 | 0 |
 | [`94_computing.md`](94_computing.md) |  | 22 | 0 |
 | [`95_expeditions.md`](95_expeditions.md) |  | 11 | 11 |
-| [`96_finance.md`](96_finance.md) |  | 34 | 88 |
-| [`97_military.md`](97_military.md) |  | 29 | 110 |
-| [`98_power_plants.md`](98_power_plants.md) |  | 115 | 99 |
+| [`96_finance.md`](96_finance.md) |  | 34 | 86 |
+| [`97_military.md`](97_military.md) |  | 29 | 109 |
+| [`98_power_plants.md`](98_power_plants.md) |  | 115 | 94 |
 | [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 0 | 0 |
 
 ### Nodes documented in the top-level prose files
@@ -79,8 +79,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
+| `mat_copper` | 0 | 200.0 | [`copper_refining`](10_metallurgy.md#copper_refining---fire-refining-copper-aes) |
 | `met_electro_refining` | 0 | 100.0 | _(module has no anchor)_ |
-| `met_electroplating` | 0 | 60.0 | _(module has no anchor)_ |
 | `met_fire_assay` | 0 | 60.0 | _(module has no anchor)_ |
 | `met_investment_casting` | 0 | 100.0 | _(module has no anchor)_ |
 | `met_ore_crushing_sorting` | 0 | 20.0 | _(module has no anchor)_ |
@@ -90,7 +90,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `drawplate_wire` | 1 | 180.0 | [`wire_drawing`](10_metallurgy.md#wire_drawing---the-drawplate) |
 | `lead_metallurgy` | 1 | 200.0 | [`lead_silver_cupellation`](10_metallurgy.md#lead_silver_cupellation---refining-silver-from-lead-ore-cupellatio) |
 | `met_annealing_recrystallization` | 1 | 100.0 | _(module has no anchor)_ |
-| `met_drop_hammer` | 1 | 120.0 | _(module has no anchor)_ |
+| `met_drop_hammer` | 1 | 280.0 | _(module has no anchor)_ |
 | `met_green_sand_mold` | 1 | 80.0 | _(module has no anchor)_ |
 | `met_jigging_gravity` | 1 | 80.0 | _(module has no anchor)_ |
 | `met_mine_pumping` | 1 | 180.0 | _(module has no anchor)_ |
@@ -108,7 +108,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cementation_steel` | 2 | 400.0 | [`cementation_steel`](10_metallurgy.md#cementation_steel---blister-steel) |
 | `charcoal_industrial` | 2 | 250.0 | [`charcoal_industrial`](10_metallurgy.md#charcoal_industrial---charcoal-at-scale-carbo) |
 | `coal_coke` | 2 | 350.0 | [`coal_and_coke`](10_metallurgy.md#coal_and_coke---sea-coal-and-coking-carbo-fossilis) |
-| `copper_fire_refined` | 2 | 200.0 | [`copper_refining`](10_metallurgy.md#copper_refining---fire-refining-copper-aes) |
 | `crucible_steel` | 2 | 600.0 | [`crucible_steel`](10_metallurgy.md#crucible_steel---melted-homogeneous-steel-huntsman-process) |
 | `finery_puddling` | 2 | 500.0 | [`finery_forge`](10_metallurgy.md#finery_forge---converting-pig-iron-to-wrought-iron-fining) |
 | `mercury_supply` | 2 | 150.0 | [`mercury`](10_metallurgy.md#mercury---retorting-cinnabar-hydrargyrum) |
@@ -157,16 +156,14 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `zinc_metal` | 2 | 700.0 | [`zinc_metal`](10_metallurgy.md#zinc_metal---distilling-metallic-zinc-per-descensum) |
 | `high_temp_furnace` | 3 | 800.0 | [`high_temp_furnace`](10_metallurgy.md#high_temp_furnace---pushing-past-1500-c) |
 | `met_acetylene_supply` | 3 | 200.0 | _(module has no anchor)_ |
-| `met_deep_drawing` | 3 | 220.0 | _(module has no anchor)_ |
+| `met_deep_drawing` | 3 | 350.0 | _(module has no anchor)_ |
 | `met_die_casting` | 3 | 180.0 | _(module has no anchor)_ |
 | `met_dynamite_blasting` | 3 | 100.0 | _(module has no anchor)_ |
-| `met_extrusion_press` | 3 | 200.0 | _(module has no anchor)_ |
+| `met_extrusion_press` | 3 | 450.0 | _(module has no anchor)_ |
 | `met_hardenability_alloys` | 3 | 280.0 | _(module has no anchor)_ |
-| `met_hydraulic_press` | 3 | 240.0 | _(module has no anchor)_ |
-| `met_oxyacetylene_welding` | 3 | 160.0 | _(module has no anchor)_ |
+| `met_hydraulic_press` | 3 | 350.0 | _(module has no anchor)_ |
 | `met_pneumatic_drill` | 3 | 180.0 | _(module has no anchor)_ |
 | `met_powder_metallurgy` | 3 | 260.0 | _(module has no anchor)_ |
-| `met_resistance_welding` | 3 | 180.0 | _(module has no anchor)_ |
 | `met_reversing_mill` | 3 | 240.0 | _(module has no anchor)_ |
 | `met_section_mill` | 3 | 200.0 | _(module has no anchor)_ |
 | `met_steam_hammer` | 3 | 180.0 | _(module has no anchor)_ |
@@ -199,13 +196,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mt2_safety_lamp_mining` | 3 | 130.0 | _(module has no anchor)_ |
 | `mt2_shot_firer_blasting` | 3 | 140.0 | _(module has no anchor)_ |
 | `mt2_sintering_process` | 3 | 130.0 | _(module has no anchor)_ |
-| `mt2_speculum_metal` | 3 | 150.0 | _(module has no anchor)_ |
 | `mt2_spring_steel` | 3 | 160.0 | _(module has no anchor)_ |
-| `mt2_tensile_test` | 3 | 120.0 | _(module has no anchor)_ |
+| `mt2_tensile_test` | 3 | 240.0 | _(module has no anchor)_ |
 | `mt2_work_hardening` | 3 | 130.0 | _(module has no anchor)_ |
 | `mt2_zinc_by_retort` | 3 | 150.0 | _(module has no anchor)_ |
-| `bessemer_openhearth` | 4 | 900.0 | [`alloy_steels_ferroalloys`](10_metallurgy.md#alloy_steels_ferroalloys---ferromanganese-ferrosilicon-tungsten-and-chrome-steels) |
-| `met_arc_welding` | 4 | 140.0 | _(module has no anchor)_ |
+| `mat_bulk_steel` | 4 | 900.0 | [`alloy_steels_ferroalloys`](10_metallurgy.md#alloy_steels_ferroalloys---ferromanganese-ferrosilicon-tungsten-and-chrome-steels) |
 | `mt2_alumina_ceramic` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_carborundum_ceramic` | 4 | 220.0 | _(module has no anchor)_ |
 | `mt2_charpy_impact_test` | 4 | 180.0 | _(module has no anchor)_ |
@@ -219,8 +214,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mt2_dye_penetrant_inspection` | 4 | 160.0 | _(module has no anchor)_ |
 | `mt2_electrorefining` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_elinvar_alloy` | 4 | 220.0 | _(module has no anchor)_ |
-| `mt2_fatigue_testing` | 4 | 200.0 | _(module has no anchor)_ |
-| `mt2_froth_flotation` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_glass_fibre_insulation` | 4 | 220.0 | _(module has no anchor)_ |
 | `mt2_grain_size_control` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_hadfield_manganese_steel` | 4 | 210.0 | _(module has no anchor)_ |
@@ -238,7 +231,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mt2_nickel_extraction` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_nitriding` | 4 | 180.0 | _(module has no anchor)_ |
 | `mt2_optical_glass_development` | 4 | 250.0 | _(module has no anchor)_ |
-| `mt2_powder_metallurgy` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_rockwell_hardness` | 4 | 160.0 | _(module has no anchor)_ |
 | `mt2_silicon_steel_transformer` | 4 | 200.0 | _(module has no anchor)_ |
 | `mt2_stainless_austenitic` | 4 | 220.0 | _(module has no anchor)_ |
@@ -303,7 +295,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `chm_crystallisation` | 2 | 60.0 | _(module has no anchor)_ |
 | `chm_phosphorus_extraction` | 2 | 120.0 | _(module has no anchor)_ |
 | `chm_potash_mining` | 2 | 150.0 | _(module has no anchor)_ |
-| `chm_soap_hard` | 2 | 0.0 | _(module has no anchor)_ |
 | `chm_water_coagulation` | 2 | 60.0 | _(module has no anchor)_ |
 | `chm_water_filtration` | 2 | 60.0 | _(module has no anchor)_ |
 | `gunpowder` | 2 | 300.0 | [`gunpowder`](20_chemistry.md#gunpowder---gunpowder-pulvis-pyrius-a-later-coinage-no-roman) |
@@ -311,6 +302,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `nitre_beds` | 2 | 350.0 | [`saltpetre_nitre_beds`](20_chemistry.md#saltpetre_nitre_beds---saltpetre-nitre-beds-no-roman-name-this) |
 | `sulfuric_retort` | 2 | 800.0 | [`sulfuric_acid_retort`](20_chemistry.md#sulfuric_acid_retort---oil-of-vitriol-by-dry-distillation) |
 | `analytical_chemistry` | 3 | 900.0 | [`analytical_chemistry`](20_chemistry.md#analytical_chemistry---analytical-chemistry-and-the-assay-bench) |
+| `cap_gas_o2h2` | 3 | 450.0 | [`industrial_gases`](20_chemistry.md#industrial_gases---industrial-gases-oxygen-and-hydrogen-without) |
 | `ch2_analysis_colorimetry` | 3 | 75.0 | _(module has no anchor)_ |
 | `ch2_analysis_combustion` | 3 | 125.0 | _(module has no anchor)_ |
 | `ch2_analysis_complexometric` | 3 | 100.0 | _(module has no anchor)_ |
@@ -336,13 +328,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ch2_prod_acetic_acid` | 3 | 70.0 | _(module has no anchor)_ |
 | `ch2_prod_acetone` | 3 | 95.0 | _(module has no anchor)_ |
 | `ch2_prod_aniline` | 3 | 75.0 | _(module has no anchor)_ |
-| `ch2_prod_benzene` | 3 | 70.0 | _(module has no anchor)_ |
 | `ch2_prod_carbon_tetrachloride` | 3 | 95.0 | _(module has no anchor)_ |
 | `ch2_prod_chloroform` | 3 | 85.0 | _(module has no anchor)_ |
 | `ch2_prod_citric_acid` | 3 | 100.0 | _(module has no anchor)_ |
 | `ch2_prod_formaldehyde` | 3 | 90.0 | _(module has no anchor)_ |
 | `ch2_prod_phenol` | 3 | 110.0 | _(module has no anchor)_ |
-| `ch2_prod_toluene` | 3 | 75.0 | _(module has no anchor)_ |
 | `ch2_prod_urea` | 3 | 95.0 | _(module has no anchor)_ |
 | `ch2_prod_xylene` | 3 | 90.0 | _(module has no anchor)_ |
 | `ch2_rxn_addition_polymerisation` | 3 | 110.0 | _(module has no anchor)_ |
@@ -372,7 +362,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `chm_deacon_process` | 3 | 150.0 | _(module has no anchor)_ |
 | `chm_dynamite` | 3 | 100.0 | _(module has no anchor)_ |
 | `chm_electric_arc_nitrogen` | 3 | 150.0 | _(module has no anchor)_ |
-| `chm_electroplating` | 3 | 100.0 | _(module has no anchor)_ |
 | `chm_evaporator_surface` | 3 | 120.0 | _(module has no anchor)_ |
 | `chm_filter_press` | 3 | 150.0 | _(module has no anchor)_ |
 | `chm_formaldehyde_synthesis` | 3 | 100.0 | _(module has no anchor)_ |
@@ -384,16 +373,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `chm_industrial_hygiene` | 3 | 200.0 | _(module has no anchor)_ |
 | `chm_matches` | 3 | 100.0 | _(module has no anchor)_ |
 | `chm_naphthalene` | 3 | 100.0 | _(module has no anchor)_ |
-| `chm_nitroglycerin` | 3 | 150.0 | _(module has no anchor)_ |
 | `chm_oleum` | 3 | 120.0 | _(module has no anchor)_ |
 | `chm_phenol` | 3 | 120.0 | _(module has no anchor)_ |
-| `chm_photography` | 3 | 150.0 | _(module has no anchor)_ |
 | `chm_picric_acid` | 3 | 100.0 | _(module has no anchor)_ |
-| `chm_pressure_gauge` | 3 | 80.0 | _(module has no anchor)_ |
+| `chm_pressure_gauge` | 3 | 100.0 | _(module has no anchor)_ |
 | `chm_pressure_vessel` | 3 | 200.0 | _(module has no anchor)_ |
 | `chm_refrigerant_ammonia` | 3 | 100.0 | _(module has no anchor)_ |
 | `chm_salicylic_acid` | 3 | 100.0 | _(module has no anchor)_ |
-| `chm_smokeless_powder` | 3 | 180.0 | _(module has no anchor)_ |
 | `chm_solvay_process` | 3 | 250.0 | _(module has no anchor)_ |
 | `chm_superphosphate` | 3 | 100.0 | _(module has no anchor)_ |
 | `chm_tnt` | 3 | 150.0 | _(module has no anchor)_ |
@@ -402,7 +388,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `chm_weldon_process` | 3 | 100.0 | _(module has no anchor)_ |
 | `destructive_distillation` | 3 | 600.0 | [`destructive_distillation`](20_chemistry.md#destructive_distillation---destructive-distillation-of-wood-and-coal) |
 | `hydrochloric_acid` | 3 | 300.0 | [`hydrochloric_acid`](20_chemistry.md#hydrochloric_acid---spirit-of-salt-muriatic-acid) |
-| `industrial_gases` | 3 | 450.0 | [`industrial_gases`](20_chemistry.md#industrial_gases---industrial-gases-oxygen-and-hydrogen-without) |
 | `lead_chamber` | 3 | 900.0 | [`lead_chamber`](20_chemistry.md#lead_chamber---the-lead-chamber-process) |
 | `nitric_acid` | 3 | 400.0 | [`nitric_acid`](20_chemistry.md#nitric_acid---nitric-acid-aqua-fortis) |
 | `soda_leblanc` | 3 | 600.0 | [`potash_and_soda`](20_chemistry.md#potash_and_soda---potash-and-soda-ash-soda-overlaps-with-roman) |
@@ -424,7 +409,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ch2_polymer_polyester` | 4 | 135.0 | _(module has no anchor)_ |
 | `ch2_polymer_polyethylene` | 4 | 120.0 | _(module has no anchor)_ |
 | `ch2_polymer_polystyrene` | 4 | 110.0 | _(module has no anchor)_ |
-| `ch2_polymer_pvc` | 4 | 115.0 | _(module has no anchor)_ |
+| `ch2_polymer_pvc` | 4 | 200.0 | _(module has no anchor)_ |
 | `ch2_polymer_silicone` | 4 | 145.0 | _(module has no anchor)_ |
 | `ch2_polymer_urea_formaldehyde` | 4 | 125.0 | _(module has no anchor)_ |
 | `ch2_polymer_viscose` | 4 | 130.0 | _(module has no anchor)_ |
@@ -444,14 +429,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ch2_process_ostwald` | 4 | 125.0 | _(module has no anchor)_ |
 | `ch2_process_reforming` | 4 | 140.0 | _(module has no anchor)_ |
 | `ch2_process_sulfite_pulping` | 4 | 120.0 | _(module has no anchor)_ |
-| `ch2_process_thermal_cracking` | 4 | 110.0 | _(module has no anchor)_ |
+| `ch2_process_thermal_cracking` | 4 | 150.0 | _(module has no anchor)_ |
 | `ch2_prod_methanol` | 4 | 125.0 | _(module has no anchor)_ |
 | `chm_alizarin` | 4 | 200.0 | _(module has no anchor)_ |
 | `chm_aniline` | 4 | 180.0 | _(module has no anchor)_ |
 | `chm_azo_dyes` | 4 | 150.0 | _(module has no anchor)_ |
 | `chm_bakelite` | 4 | 150.0 | _(module has no anchor)_ |
 | `chm_casein` | 4 | 100.0 | _(module has no anchor)_ |
-| `chm_celluloid` | 4 | 120.0 | _(module has no anchor)_ |
 | `chm_chlor_alkali_diaphragm` | 4 | 250.0 | _(module has no anchor)_ |
 | `chm_chlor_alkali_mercury` | 4 | 300.0 | _(module has no anchor)_ |
 | `chm_chromatography` | 4 | 100.0 | _(module has no anchor)_ |
@@ -463,10 +447,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `chm_ion_exchange` | 4 | 200.0 | _(module has no anchor)_ |
 | `chm_ostwald_ammonia_oxidation` | 4 | 250.0 | _(module has no anchor)_ |
 | `chm_polyethylene` | 4 | 250.0 | _(module has no anchor)_ |
-| `chm_pvc_synthesis` | 4 | 200.0 | _(module has no anchor)_ |
 | `chm_saccharin` | 4 | 120.0 | _(module has no anchor)_ |
 | `chm_sulfonamides` | 4 | 150.0 | _(module has no anchor)_ |
 | `hydrofluoric_acid` | 4 | 400.0 | [`hydrofluoric_acid`](20_chemistry.md#hydrofluoric_acid---hydrofluoric-acid-no-established-roman-name) |
+| `mat_celluloid` | 4 | 150.0 | _(module has no anchor)_ |
+| `mat_nitroglycerin` | 4 | 150.0 | _(module has no anchor)_ |
 | `chm_corrosion_stainless` | 5 | 80.0 | _(module has no anchor)_ |
 | `chm_nylon` | 5 | 300.0 | _(module has no anchor)_ |
 
@@ -497,7 +482,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_eyepiece_ramsden` | 1 | 40.0 | _(module has no anchor)_ |
 | `in2_microtome_sliding` | 1 | 60.0 | _(module has no anchor)_ |
 | `in2_photometer_visual_comparison` | 1 | 50.0 | _(module has no anchor)_ |
-| `in2_plane_table` | 1 | 60.0 | _(module has no anchor)_ |
+| `in2_plane_table` | 1 | 100.0 | _(module has no anchor)_ |
 | `in2_reticle_crosshair` | 1 | 30.0 | _(module has no anchor)_ |
 | `in2_sounding_machine_lead_line` | 1 | 35.0 | _(module has no anchor)_ |
 | `in2_spirit_level` | 1 | 50.0 | _(module has no anchor)_ |
@@ -506,15 +491,12 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `lens_grinding` | 1 | 600.0 | [`lens_grinding`](30_glass_optics.md#lens_grinding---grinding-and-polishing-lenses) |
 | `mirror_amalgam` | 1 | 350.0 | [`mirrors_amalgam`](30_glass_optics.md#mirrors_amalgam---tin-mercury-amalgam-mirror-later-venetian-mirror) |
 | `opt_anemometer` | 1 | 60.0 | _(module has no anchor)_ |
-| `opt_artificial_horizon` | 1 | 60.0 | _(module has no anchor)_ |
 | `opt_focal_length_measurement` | 1 | 50.0 | _(module has no anchor)_ |
 | `opt_hygrometer` | 1 | 70.0 | _(module has no anchor)_ |
 | `opt_level` | 1 | 80.0 | _(module has no anchor)_ |
 | `opt_manometer` | 1 | 60.0 | _(module has no anchor)_ |
-| `opt_plane_table` | 1 | 100.0 | _(module has no anchor)_ |
 | `opt_plano_convex_lens` | 1 | 40.0 | _(module has no anchor)_ |
-| `opt_sextant` | 1 | 120.0 | _(module has no anchor)_ |
-| `opt_spectacles` | 1 | 60.0 | _(module has no anchor)_ |
+| `opt_sextant` | 1 | 150.0 | _(module has no anchor)_ |
 | `opt_spherometer` | 1 | 80.0 | _(module has no anchor)_ |
 | `balance_analytical` | 2 | 700.0 | [`balance_analytical`](30_glass_optics.md#balance_analytical---analytical-balance-milligram-precision) |
 | `barometer` | 2 | 200.0 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
@@ -535,7 +517,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_ionisation_chamber` | 2 | 85.0 | _(module has no anchor)_ |
 | `in2_joule_thomson_valve` | 2 | 80.0 | _(module has no anchor)_ |
 | `in2_magnetometer_compass` | 2 | 75.0 | _(module has no anchor)_ |
-| `in2_marine_chronometer` | 2 | 140.0 | _(module has no anchor)_ |
+| `in2_marine_chronometer` | 2 | 250.0 | _(module has no anchor)_ |
 | `in2_microtome_rotary` | 2 | 80.0 | _(module has no anchor)_ |
 | `in2_newtonian_reflector` | 2 | 80.0 | _(module has no anchor)_ |
 | `in2_petzval_portrait_lens` | 2 | 90.0 | _(module has no anchor)_ |
@@ -547,22 +529,21 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_primary_mirror` | 2 | 140.0 | _(module has no anchor)_ |
 | `in2_prism_amici` | 2 | 80.0 | _(module has no anchor)_ |
 | `in2_prism_porro` | 2 | 75.0 | _(module has no anchor)_ |
-| `in2_sextant_navigation` | 2 | 110.0 | _(module has no anchor)_ |
 | `in2_simple_lens` | 2 | 60.0 | _(module has no anchor)_ |
 | `in2_spectrograph_prism` | 2 | 85.0 | _(module has no anchor)_ |
 | `in2_strain_gauge_electric` | 2 | 80.0 | _(module has no anchor)_ |
 | `in2_tacheometer` | 2 | 80.0 | _(module has no anchor)_ |
 | `in2_telephoto_design` | 2 | 85.0 | _(module has no anchor)_ |
 | `in2_tessar_lens` | 2 | 110.0 | _(module has no anchor)_ |
-| `in2_theodolite` | 2 | 100.0 | _(module has no anchor)_ |
-| `in2_ultramicroscope` | 2 | 85.0 | _(module has no anchor)_ |
+| `in2_theodolite` | 2 | 200.0 | _(module has no anchor)_ |
+| `in2_ultramicroscope` | 2 | 150.0 | _(module has no anchor)_ |
 | `in2_waveplate_mica` | 2 | 70.0 | _(module has no anchor)_ |
 | `opt_abbe_condenser` | 2 | 120.0 | _(module has no anchor)_ |
 | `opt_aneroid_barometer` | 2 | 140.0 | _(module has no anchor)_ |
 | `opt_bourdon_gauge` | 2 | 120.0 | _(module has no anchor)_ |
 | `opt_calorimeter` | 2 | 100.0 | _(module has no anchor)_ |
 | `opt_clock_drive` | 2 | 160.0 | _(module has no anchor)_ |
-| `opt_diffraction_grating` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_diffraction_grating` | 2 | 150.0 | _(module has no anchor)_ |
 | `opt_electrometer` | 2 | 120.0 | _(module has no anchor)_ |
 | `opt_equatorial_mount` | 2 | 180.0 | _(module has no anchor)_ |
 | `opt_flame_spark_spectra` | 2 | 80.0 | _(module has no anchor)_ |
@@ -572,17 +553,14 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `opt_nicol_prism` | 2 | 100.0 | _(module has no anchor)_ |
 | `opt_oil_immersion_objective` | 2 | 130.0 | _(module has no anchor)_ |
 | `opt_photometry` | 2 | 100.0 | _(module has no anchor)_ |
-| `opt_pitot_tube` | 2 | 80.0 | _(module has no anchor)_ |
 | `opt_polarimeter` | 2 | 120.0 | _(module has no anchor)_ |
 | `opt_pyrometer_contraction` | 2 | 80.0 | _(module has no anchor)_ |
 | `opt_reflecting_telescope` | 2 | 200.0 | _(module has no anchor)_ |
 | `opt_refractometer` | 2 | 140.0 | _(module has no anchor)_ |
-| `opt_silvered_glass_mirror` | 2 | 150.0 | _(module has no anchor)_ |
 | `opt_spectroscopy_absorption` | 2 | 120.0 | _(module has no anchor)_ |
 | `opt_spectroscopy_emission` | 2 | 100.0 | _(module has no anchor)_ |
-| `opt_speculum_metal` | 2 | 120.0 | _(module has no anchor)_ |
+| `opt_speculum_metal` | 2 | 150.0 | _(module has no anchor)_ |
 | `opt_stellar_parallax` | 2 | 150.0 | _(module has no anchor)_ |
-| `opt_theodolite` | 2 | 200.0 | _(module has no anchor)_ |
 | `opt_transit_instrument` | 2 | 200.0 | _(module has no anchor)_ |
 | `telescope` | 2 | 350.0 | [`telescope`](30_glass_optics.md#telescope---refracting-telescope) |
 | `thermometer` | 2 | 400.0 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
@@ -591,7 +569,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_claude_cycle_air_liquefaction` | 3 | 130.0 | _(module has no anchor)_ |
 | `in2_cloud_chamber_wilson` | 3 | 140.0 | _(module has no anchor)_ |
 | `in2_creep_furnace` | 3 | 130.0 | _(module has no anchor)_ |
-| `in2_diffraction_grating` | 3 | 150.0 | _(module has no anchor)_ |
 | `in2_electron_diffraction_camera` | 3 | 140.0 | _(module has no anchor)_ |
 | `in2_electron_source_cathode` | 3 | 100.0 | _(module has no anchor)_ |
 | `in2_geiger_counter` | 3 | 110.0 | _(module has no anchor)_ |
@@ -625,16 +602,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `opt_michelson_interferometer` | 3 | 250.0 | _(module has no anchor)_ |
 | `opt_phase_contrast` | 3 | 200.0 | _(module has no anchor)_ |
 | `opt_photocell` | 3 | 180.0 | _(module has no anchor)_ |
-| `opt_potentiometer` | 3 | 180.0 | _(module has no anchor)_ |
 | `opt_pyrometer_optical` | 3 | 120.0 | _(module has no anchor)_ |
 | `opt_pyrometer_radiation` | 3 | 180.0 | _(module has no anchor)_ |
 | `opt_pyrometer_thermoelectric` | 3 | 150.0 | _(module has no anchor)_ |
-| `opt_ruling_engine` | 3 | 400.0 | _(module has no anchor)_ |
 | `opt_seismograph` | 3 | 200.0 | _(module has no anchor)_ |
 | `opt_spectroheliograph` | 3 | 250.0 | _(module has no anchor)_ |
 | `opt_standards_laboratory` | 3 | 500.0 | _(module has no anchor)_ |
 | `opt_stroboscope` | 3 | 140.0 | _(module has no anchor)_ |
-| `opt_ultramicroscope` | 3 | 150.0 | _(module has no anchor)_ |
 | `photography` | 3 | 800.0 | [`camera_obscura_photography`](30_glass_optics.md#camera_obscura_photography---camera-obscura-and-silver-halide-photography) |
 | `spectroscope` | 3 | 500.0 | [`spectroscope`](30_glass_optics.md#spectroscope---prism-spectroscope) |
 | `fused_quartz` | 4 | 700.0 | [`fused_quartz`](30_glass_optics.md#fused_quartz---fused-silica-pure-quartz-glass) |
@@ -645,7 +619,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_high_pressure_cell` | 4 | 150.0 | _(module has no anchor)_ |
 | `in2_mass_spectrograph` | 4 | 180.0 | _(module has no anchor)_ |
 | `in2_oscilloscope_crt` | 4 | 160.0 | _(module has no anchor)_ |
-| `in2_ruling_engine` | 4 | 250.0 | _(module has no anchor)_ |
+| `in2_ruling_engine` | 4 | 400.0 | _(module has no anchor)_ |
 | `in2_shock_tube` | 4 | 180.0 | _(module has no anchor)_ |
 | `in2_ultracentrifuge` | 4 | 180.0 | _(module has no anchor)_ |
 | `in2_van_de_graaff_generator` | 4 | 200.0 | _(module has no anchor)_ |
@@ -664,10 +638,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `en_tower_mill` | 0 | 300.0 | _(module has no anchor)_ |
 | `pwr_animal_treadmill` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_force_pump` | 0 | 0.0 | _(module has no anchor)_ |
-| `pwr_overshot_wheel` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_screw_press_power` | 0 | 0.0 | _(module has no anchor)_ |
 | `pwr_ship_sail` | 0 | 0.0 | _(module has no anchor)_ |
-| `pwr_undershot_wheel` | 0 | 0.0 | _(module has no anchor)_ |
 | `units_standards` | 0 | 300.0 | [`micrometer_gauge_blocks`](40_power_precision.md#micrometer_gauge_blocks---screw-micrometer-vernier-scale-and-end) |
 | `crank_conrod` | 1 | 300.0 | [`crank_connecting_rod`](40_power_precision.md#crank_connecting_rod---the-crank-and-connecting-rod-no-attested) |
 | `en_battery_lead_acid` | 1 | 250.0 | _(module has no anchor)_ |
@@ -696,7 +668,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_tailstock_deadcentre` | 1 | 50.0 | _(module has no anchor)_ |
 | `prc_treadle_lathe_flywheel` | 1 | 80.0 | _(module has no anchor)_ |
 | `prc_twist_drill` | 1 | 50.0 | _(module has no anchor)_ |
-| `pwr_breastshot_wheel` | 1 | 180.0 | _(module has no anchor)_ |
 | `pwr_flywheel_governor` | 1 | 150.0 | _(module has no anchor)_ |
 | `pwr_leat_and_weir` | 1 | 200.0 | _(module has no anchor)_ |
 | `pwr_millpond` | 1 | 150.0 | _(module has no anchor)_ |
@@ -720,7 +691,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mfg_cutting_fluid` | 2 | 40.0 | _(module has no anchor)_ |
 | `mfg_cutting_speed` | 2 | 100.0 | _(module has no anchor)_ |
 | `mfg_die_set` | 2 | 180.0 | _(module has no anchor)_ |
-| `mfg_drop_hammer` | 2 | 280.0 | _(module has no anchor)_ |
 | `mfg_enamelling` | 2 | 120.0 | _(module has no anchor)_ |
 | `mfg_forging_press` | 2 | 300.0 | _(module has no anchor)_ |
 | `mfg_four_jaw_chuck` | 2 | 140.0 | _(module has no anchor)_ |
@@ -754,7 +724,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_coolant_cutting_fluid` | 2 | 50.0 | _(module has no anchor)_ |
 | `prc_cylindrical_square` | 2 | 60.0 | _(module has no anchor)_ |
 | `prc_depth_gauge` | 2 | 40.0 | _(module has no anchor)_ |
-| `prc_dial_indicator` | 2 | 90.0 | _(module has no anchor)_ |
 | `prc_dividing_head` | 2 | 100.0 | _(module has no anchor)_ |
 | `prc_fly_cutter` | 2 | 50.0 | _(module has no anchor)_ |
 | `prc_go_nogo_gauge` | 2 | 60.0 | _(module has no anchor)_ |
@@ -766,7 +735,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_planer_machine` | 2 | 140.0 | _(module has no anchor)_ |
 | `prc_scraped_surface_plate` | 2 | 200.0 | _(module has no anchor)_ |
 | `prc_shaper_machine` | 2 | 100.0 | _(module has no anchor)_ |
-| `prc_sine_bar` | 2 | 80.0 | _(module has no anchor)_ |
 | `prc_slotter_machine` | 2 | 70.0 | _(module has no anchor)_ |
 | `prc_tap_die` | 2 | 80.0 | _(module has no anchor)_ |
 | `prc_three_wire_thread_measure` | 2 | 70.0 | _(module has no anchor)_ |
@@ -781,14 +749,10 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `pwr_gas_main` | 2 | 250.0 | _(module has no anchor)_ |
 | `pwr_gas_meter` | 2 | 180.0 | _(module has no anchor)_ |
 | `pwr_indicator_diagram` | 2 | 200.0 | _(module has no anchor)_ |
-| `pwr_kerosene` | 2 | 100.0 | _(module has no anchor)_ |
 | `pwr_oil_refinery` | 2 | 300.0 | _(module has no anchor)_ |
-| `pwr_pelton_wheel` | 2 | 250.0 | _(module has no anchor)_ |
 | `pwr_petroleum_seeps` | 2 | 100.0 | _(module has no anchor)_ |
-| `pwr_safety_valve` | 2 | 150.0 | _(module has no anchor)_ |
 | `pwr_trompe` | 2 | 180.0 | _(module has no anchor)_ |
 | `pwr_water_turbine_fourneyron` | 2 | 300.0 | _(module has no anchor)_ |
-| `pwr_windmill_fantail` | 2 | 200.0 | _(module has no anchor)_ |
 | `boring_mill` | 3 | 600.0 | [`boring_mill`](40_power_precision.md#boring_mill---the-cylinder-boring-machine-no-latin-term) |
 | `interchangeable_parts` | 3 | 800.0 | [`interchangeable_parts`](40_power_precision.md#interchangeable_parts---gono-go-gauges-tolerance-jigs-and) |
 | `mfg_adhesive_bond` | 3 | 140.0 | _(module has no anchor)_ |
@@ -801,16 +765,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mfg_compound_die` | 3 | 250.0 | _(module has no anchor)_ |
 | `mfg_control_chart` | 3 | 200.0 | _(module has no anchor)_ |
 | `mfg_cylindrical_grinder` | 3 | 300.0 | _(module has no anchor)_ |
-| `mfg_deep_drawing` | 3 | 350.0 | _(module has no anchor)_ |
 | `mfg_dial_indicator` | 3 | 180.0 | _(module has no anchor)_ |
-| `mfg_electroplating` | 3 | 150.0 | _(module has no anchor)_ |
 | `mfg_engine_lathe` | 3 | 300.0 | _(module has no anchor)_ |
 | `mfg_escapement_lever` | 3 | 240.0 | _(module has no anchor)_ |
 | `mfg_gear_shaper` | 3 | 400.0 | _(module has no anchor)_ |
 | `mfg_height_gauge` | 3 | 160.0 | _(module has no anchor)_ |
 | `mfg_honing` | 3 | 280.0 | _(module has no anchor)_ |
 | `mfg_horizontal_mill` | 3 | 350.0 | _(module has no anchor)_ |
-| `mfg_hydraulic_press` | 3 | 350.0 | _(module has no anchor)_ |
 | `mfg_indexing_head` | 3 | 250.0 | _(module has no anchor)_ |
 | `mfg_lapping` | 3 | 300.0 | _(module has no anchor)_ |
 | `mfg_magnetic_chuck` | 3 | 200.0 | _(module has no anchor)_ |
@@ -824,7 +785,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mfg_shaper` | 3 | 300.0 | _(module has no anchor)_ |
 | `mfg_sine_bar` | 3 | 150.0 | _(module has no anchor)_ |
 | `mfg_slotter` | 3 | 250.0 | _(module has no anchor)_ |
-| `mfg_surface_grinder` | 3 | 300.0 | _(module has no anchor)_ |
 | `mfg_tool_grinder` | 3 | 300.0 | _(module has no anchor)_ |
 | `mfg_turret_lathe` | 3 | 400.0 | _(module has no anchor)_ |
 | `mfg_universal_mill` | 3 | 400.0 | _(module has no anchor)_ |
@@ -837,7 +797,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_ballscrew` | 3 | 130.0 | _(module has no anchor)_ |
 | `prc_broach_machine` | 3 | 110.0 | _(module has no anchor)_ |
 | `prc_comparator_optical` | 3 | 100.0 | _(module has no anchor)_ |
-| `prc_cylindrical_grinder` | 3 | 130.0 | _(module has no anchor)_ |
 | `prc_die_sinker` | 3 | 110.0 | _(module has no anchor)_ |
 | `prc_gauge_blocks_johansson` | 3 | 120.0 | _(module has no anchor)_ |
 | `prc_honing_machine` | 3 | 100.0 | _(module has no anchor)_ |
@@ -847,7 +806,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_optical_flat` | 3 | 100.0 | _(module has no anchor)_ |
 | `prc_profile_projector` | 3 | 110.0 | _(module has no anchor)_ |
 | `prc_roundness_measurement` | 3 | 100.0 | _(module has no anchor)_ |
-| `prc_surface_grinder` | 3 | 140.0 | _(module has no anchor)_ |
+| `prc_surface_grinder` | 3 | 300.0 | _(module has no anchor)_ |
 | `prc_tool_cutter_grinder` | 3 | 120.0 | _(module has no anchor)_ |
 | `prc_tool_steel_hss_carbide` | 3 | 100.0 | _(module has no anchor)_ |
 | `prc_toolmaker_microscope` | 3 | 130.0 | _(module has no anchor)_ |
@@ -855,15 +814,10 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_universal_milling_machine` | 3 | 180.0 | _(module has no anchor)_ |
 | `prc_vibration_and_chatter` | 3 | 100.0 | _(module has no anchor)_ |
 | `pwr_feedwater_heating` | 3 | 200.0 | _(module has no anchor)_ |
-| `pwr_gas_engine` | 3 | 350.0 | _(module has no anchor)_ |
 | `pwr_high_voltage_transmission` | 3 | 300.0 | _(module has no anchor)_ |
 | `pwr_pipeline` | 3 | 250.0 | _(module has no anchor)_ |
 | `pwr_rotary_drilling` | 3 | 350.0 | _(module has no anchor)_ |
 | `pwr_selenium_metal` | 3 | 200.0 | _(module has no anchor)_ |
-| `pwr_steam_turbine_parsons` | 3 | 400.0 | _(module has no anchor)_ |
-| `pwr_stirling_engine` | 3 | 300.0 | _(module has no anchor)_ |
-| `pwr_substation` | 3 | 300.0 | _(module has no anchor)_ |
-| `pwr_superheater` | 3 | 200.0 | _(module has no anchor)_ |
 | `pwr_thermoelectric_couple` | 3 | 200.0 | _(module has no anchor)_ |
 | `pwr_thermopile` | 3 | 150.0 | _(module has no anchor)_ |
 | `pwr_three_phase_ac` | 3 | 250.0 | _(module has no anchor)_ |
@@ -874,7 +828,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mfg_cam_lobe` | 4 | 300.0 | _(module has no anchor)_ |
 | `mfg_centreless_grinder` | 4 | 400.0 | _(module has no anchor)_ |
 | `mfg_dividing_engine` | 4 | 350.0 | _(module has no anchor)_ |
-| `mfg_extrusion_press` | 4 | 450.0 | _(module has no anchor)_ |
 | `mfg_flash_butt` | 4 | 200.0 | _(module has no anchor)_ |
 | `mfg_gear_grinder` | 4 | 400.0 | _(module has no anchor)_ |
 | `mfg_gear_hobber` | 4 | 450.0 | _(module has no anchor)_ |
@@ -895,7 +848,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `pwr_electric_motor_industry` | 4 | 300.0 | _(module has no anchor)_ |
 | `pwr_fuel_cell` | 4 | 300.0 | _(module has no anchor)_ |
 | `pwr_load_factor_economics` | 4 | 200.0 | _(module has no anchor)_ |
-| `pwr_nickel_iron_battery` | 4 | 300.0 | _(module has no anchor)_ |
 | `pwr_selenium_cell` | 4 | 150.0 | _(module has no anchor)_ |
 | `pwr_selenium_photovoltaic` | 4 | 200.0 | _(module has no anchor)_ |
 | `steam_high_pressure` | 4 | 700.0 | [`steam_high_pressure`](40_power_precision.md#steam_high_pressure---high-pressure-non-condensing-steam-no-latin) |
@@ -912,12 +864,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `com_optical_codebook` | 1 | 100.0 | _(module has no anchor)_ |
 | `com_signal_flags` | 1 | 40.0 | _(module has no anchor)_ |
 | `crude_cell` | 1 | 120.0 | [`crude_cell`](50_electricity.md#crude_cell---iron-and-copper-brine-cell) |
-| `el2_fuse_wire_element` | 1 | 30.0 | _(module has no anchor)_ |
 | `el2_inductor_air_core` | 1 | 30.0 | _(module has no anchor)_ |
 | `el2_switch_knife` | 1 | 20.0 | _(module has no anchor)_ |
 | `el2_transformer_core_air` | 1 | 40.0 | _(module has no anchor)_ |
 | `com_heliograph` | 2 | 80.0 | _(module has no anchor)_ |
-| `com_jacquard_loom` | 2 | 120.0 | _(module has no anchor)_ |
+| `com_jacquard_loom` | 2 | 250.0 | _(module has no anchor)_ |
 | `com_morse_code` | 2 | 60.0 | _(module has no anchor)_ |
 | `com_morse_register` | 2 | 100.0 | _(module has no anchor)_ |
 | `com_morse_sounder` | 2 | 80.0 | _(module has no anchor)_ |
@@ -957,30 +908,25 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `el2_resistor_wirewound` | 2 | 40.0 | _(module has no anchor)_ |
 | `el2_resonance_frequency_selectivity` | 2 | 70.0 | _(module has no anchor)_ |
 | `el2_rheostat` | 2 | 80.0 | _(module has no anchor)_ |
-| `el2_tuned_circuit_resonance_tank` | 2 | 60.0 | _(module has no anchor)_ |
+| `el2_tuned_circuit_resonance_tank` | 2 | 100.0 | _(module has no anchor)_ |
 | `electrostatics` | 2 | 350.0 | [`electrostatics`](50_electricity.md#electrostatics---static-machines-and-the-leyden-jar-electrum-vis-electrica) |
 | `com_analytical_engine` | 3 | 250.0 | _(module has no anchor)_ |
 | `com_antenna_ground` | 3 | 60.0 | _(module has no anchor)_ |
 | `com_arithmometer` | 3 | 120.0 | _(module has no anchor)_ |
 | `com_baudot_code` | 3 | 60.0 | _(module has no anchor)_ |
-| `com_coherer` | 3 | 60.0 | _(module has no anchor)_ |
-| `com_comptometer` | 3 | 140.0 | _(module has no anchor)_ |
 | `com_cryptography_substitution` | 3 | 80.0 | _(module has no anchor)_ |
 | `com_difference_engine` | 3 | 200.0 | _(module has no anchor)_ |
 | `com_duplex_telegraph` | 3 | 120.0 | _(module has no anchor)_ |
-| `com_loading_coil` | 3 | 80.0 | _(module has no anchor)_ |
+| `com_loading_coil` | 3 | 120.0 | _(module has no anchor)_ |
 | `com_mechanical_calculator` | 3 | 150.0 | _(module has no anchor)_ |
 | `com_multiplexing` | 3 | 120.0 | _(module has no anchor)_ |
 | `com_quadruplex_telegraph` | 3 | 140.0 | _(module has no anchor)_ |
-| `com_slide_rule` | 3 | 80.0 | _(module has no anchor)_ |
-| `com_strowger_exchange` | 3 | 180.0 | _(module has no anchor)_ |
 | `com_submarine_cable` | 3 | 200.0 | _(module has no anchor)_ |
 | `com_telephone_carbon_mic` | 3 | 100.0 | _(module has no anchor)_ |
 | `com_telephone_diaphragm` | 3 | 80.0 | _(module has no anchor)_ |
 | `com_telephone_manual_exchange` | 3 | 150.0 | _(module has no anchor)_ |
 | `com_teleprinter` | 3 | 140.0 | _(module has no anchor)_ |
 | `com_trunk_lines` | 3 | 100.0 | _(module has no anchor)_ |
-| `com_tuned_circuit` | 3 | 100.0 | _(module has no anchor)_ |
 | `com_tv_mechanical_scanning` | 3 | 140.0 | _(module has no anchor)_ |
 | `copper_refining` | 3 | 400.0 | [`wire_insulation`](50_electricity.md#wire_insulation---insulated-wire-varnish-and-cable) |
 | `daniell_cell` | 3 | 250.0 | [`daniell_cell`](50_electricity.md#daniell_cell---two-fluid-cell-daniell-no-latin-name) |
@@ -1007,7 +953,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `el2_meter_energy_kWh_meter` | 3 | 110.0 | _(module has no anchor)_ |
 | `el2_microphone_dynamic_moving_coil` | 3 | 100.0 | _(module has no anchor)_ |
 | `el2_microphone_ribbon_velocity` | 3 | 110.0 | _(module has no anchor)_ |
-| `el2_motor_rotary_converter_AC_DC` | 3 | 110.0 | _(module has no anchor)_ |
 | `el2_multivibrator_binary_oscillator` | 3 | 110.0 | _(module has no anchor)_ |
 | `el2_negative_feedback_stability_gain` | 3 | 100.0 | _(module has no anchor)_ |
 | `el2_oscillograph_string_recorder` | 3 | 130.0 | _(module has no anchor)_ |
@@ -1015,7 +960,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `el2_photocell_vacuum_gas_photoelectric` | 3 | 100.0 | _(module has no anchor)_ |
 | `el2_photodiode_photocell_selenium` | 3 | 80.0 | _(module has no anchor)_ |
 | `el2_plug_socket_portable` | 3 | 70.0 | _(module has no anchor)_ |
-| `el2_potentiometer` | 3 | 100.0 | _(module has no anchor)_ |
+| `el2_potentiometer` | 3 | 180.0 | _(module has no anchor)_ |
 | `el2_potentiometer_method_measurement` | 3 | 100.0 | _(module has no anchor)_ |
 | `el2_power_factor_correction_capacitor` | 3 | 100.0 | _(module has no anchor)_ |
 | `el2_protective_relaying_differential` | 3 | 110.0 | _(module has no anchor)_ |
@@ -1042,15 +987,12 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `voltaic_pile` | 3 | 300.0 | [`voltaic_pile`](50_electricity.md#voltaic_pile---zinc-and-copper-disc-pile) |
 | `arc_light_lamp` | 4 | 500.0 | [`incandescent_lamp`](50_electricity.md#incandescent_lamp---filament-lamp-carbon-then-tungsten) |
 | `com_accumulator` | 4 | 130.0 | _(module has no anchor)_ |
-| `com_amplitude_modulation` | 4 | 100.0 | _(module has no anchor)_ |
 | `com_binary_arithmetic` | 4 | 100.0 | _(module has no anchor)_ |
 | `com_boolean_algebra` | 4 | 120.0 | _(module has no anchor)_ |
 | `com_broadcasting_institution` | 4 | 200.0 | _(module has no anchor)_ |
-| `com_cathode_ray_tube` | 4 | 120.0 | _(module has no anchor)_ |
 | `com_continuous_wave` | 4 | 120.0 | _(module has no anchor)_ |
 | `com_crystal_set` | 4 | 80.0 | _(module has no anchor)_ |
 | `com_flip_flop` | 4 | 100.0 | _(module has no anchor)_ |
-| `com_frequency_modulation` | 4 | 140.0 | _(module has no anchor)_ |
 | `com_hollerith_tabulation` | 4 | 180.0 | _(module has no anchor)_ |
 | `com_logic_gate` | 4 | 100.0 | _(module has no anchor)_ |
 | `com_magnetic_core_memory` | 4 | 140.0 | _(module has no anchor)_ |
@@ -1064,8 +1006,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `com_relay_computer` | 4 | 300.0 | _(module has no anchor)_ |
 | `com_ring_counter` | 4 | 110.0 | _(module has no anchor)_ |
 | `com_rotor_machine` | 4 | 160.0 | _(module has no anchor)_ |
-| `com_superheterodyne_receiver` | 4 | 160.0 | _(module has no anchor)_ |
-| `com_triode_oscillator` | 4 | 100.0 | _(module has no anchor)_ |
 | `com_tv_electronic_camera` | 4 | 160.0 | _(module has no anchor)_ |
 | `com_tv_raster_sync` | 4 | 120.0 | _(module has no anchor)_ |
 | `com_vacuum_tube_computer` | 4 | 400.0 | _(module has no anchor)_ |
@@ -1155,7 +1095,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `world_map` | 0 | 250.0 | _(module has no anchor)_ |
 | `sc2_algebra_logarithm` | 1 | 70.0 | _(module has no anchor)_ |
 | `sc2_algebra_quadratic` | 1 | 80.0 | _(module has no anchor)_ |
-| `sc2_algebra_symbolic` | 1 | 60.0 | _(module has no anchor)_ |
 | `sc2_geometry_coordinate` | 1 | 80.0 | _(module has no anchor)_ |
 | `sc2_geometry_trigonometry` | 1 | 100.0 | _(module has no anchor)_ |
 | `sc2_notation_decimal_fraction` | 1 | 45.0 | _(module has no anchor)_ |
@@ -1304,7 +1243,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `md2_morphine` | 2 | 120.0 | _(module has no anchor)_ |
 | `md2_oral_rehydration` | 2 | 90.0 | _(module has no anchor)_ |
 | `md2_orthopaedic_fixation` | 2 | 180.0 | _(module has no anchor)_ |
-| `md2_quinine` | 2 | 150.0 | _(module has no anchor)_ |
 | `md2_retractor` | 2 | 120.0 | _(module has no anchor)_ |
 | `md2_salicylate` | 2 | 130.0 | _(module has no anchor)_ |
 | `md2_sewage_separation` | 2 | 180.0 | _(module has no anchor)_ |
@@ -1314,7 +1252,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `md2_spirometer` | 2 | 100.0 | _(module has no anchor)_ |
 | `md2_thyroid_extract` | 2 | 120.0 | _(module has no anchor)_ |
 | `md2_thyroidectomy` | 2 | 170.0 | _(module has no anchor)_ |
-| `md2_tuberculin_test` | 2 | 80.0 | _(module has no anchor)_ |
 | `md2_vaccine_cholera` | 2 | 130.0 | _(module has no anchor)_ |
 | `md2_vaccine_diphtheria` | 2 | 160.0 | _(module has no anchor)_ |
 | `md2_vaccine_pertussis` | 2 | 140.0 | _(module has no anchor)_ |
@@ -1384,7 +1321,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fud_brewing_with_hops` | 1 | 120.0 | _(module has no anchor)_ |
 | `fud_clover_winter_fodder` | 1 | 80.0 | _(module has no anchor)_ |
 | `fud_coffee_trade_import` | 1 | 60.0 | _(module has no anchor)_ |
-| `fud_controlled_pollination` | 1 | 150.0 | _(module has no anchor)_ |
 | `fud_dairy_butter_production` | 1 | 120.0 | _(module has no anchor)_ |
 | `fud_dairy_cheese_aging` | 1 | 100.0 | _(module has no anchor)_ |
 | `fud_distillation_spirits` | 1 | 150.0 | _(module has no anchor)_ |
@@ -1393,7 +1329,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fud_fish_curing_and_smoking` | 1 | 120.0 | _(module has no anchor)_ |
 | `fud_guano_import_trade` | 1 | 80.0 | _(module has no anchor)_ |
 | `fud_hay_making_storage` | 1 | 100.0 | _(module has no anchor)_ |
-| `fud_horse_hoe` | 1 | 120.0 | _(module has no anchor)_ |
 | `fud_ice_harvesting_and_cutting` | 1 | 100.0 | _(module has no anchor)_ |
 | `fud_ice_house_construction` | 1 | 150.0 | _(module has no anchor)_ |
 | `fud_liming_acid_soils` | 1 | 100.0 | _(module has no anchor)_ |
@@ -1420,11 +1355,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fud_heavy_mouldboard_plough_coulter` | 2 | 200.0 | _(module has no anchor)_ |
 | `fud_ice_trade_logistics` | 2 | 120.0 | _(module has no anchor)_ |
 | `fud_mechanical_reaper` | 2 | 300.0 | _(module has no anchor)_ |
-| `fud_pasteurisation` | 2 | 180.0 | _(module has no anchor)_ |
 | `fud_roller_mill` | 2 | 250.0 | _(module has no anchor)_ |
 | `fud_roller_milled_white_flour` | 2 | 150.0 | _(module has no anchor)_ |
 | `fud_silage_fermentation` | 2 | 150.0 | _(module has no anchor)_ |
-| `fud_threshing_machine` | 2 | 250.0 | _(module has no anchor)_ |
 | `fud_whaling_industry` | 2 | 300.0 | _(module has no anchor)_ |
 | `fud_winnowing_machine` | 2 | 150.0 | _(module has no anchor)_ |
 | `fud_yeast_pure_culture` | 2 | 200.0 | _(module has no anchor)_ |
@@ -1435,7 +1368,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fud_tin_plate_cans` | 3 | 200.0 | _(module has no anchor)_ |
 | `fud_chocolate_tier9` | 4 | 60.0 | _(module has no anchor)_ |
 | `fud_cold_chain_refrigerated_shipping` | 4 | 200.0 | _(module has no anchor)_ |
-| `fud_combine_harvester` | 4 | 400.0 | _(module has no anchor)_ |
 | `fud_freezing_with_mechanical_cold` | 4 | 150.0 | _(module has no anchor)_ |
 | `fud_maize_tier9` | 4 | 60.0 | _(module has no anchor)_ |
 | `fud_potato_tier9` | 4 | 60.0 | _(module has no anchor)_ |
@@ -1481,9 +1413,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_column_still` | 1 | 120.0 | [`ag2_malting`](76_farming_food_deep.md#ag2_malting-ag2_mashing-ag2_hopping-ag2_hydrometer-ag2_pot_still-ag2_column_still---brewing-and-distilling-as-controlled-process) |
 | `ag2_condensed_milk` | 1 | 100.0 | [`ag2_butter`](76_farming_food_deep.md#ag2_butter-ag2_cheese_families-ag2_condensed_milk-ag2_evaporated_milk---dairy-processing-and-preservation) |
 | `ag2_contour_ploughing` | 1 | 70.0 | [`ag2_erosion_control`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
-| `ag2_controlled_pollination` | 1 | 100.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
+| `ag2_controlled_pollination` | 1 | 150.0 | [`ag2_record_keeping_breeding`](76_farming_food_deep.md#ag2_record_keeping_breeding-ag2_pure_line_selection-ag2_hybridisation-ag2_hybrid_maize-ag2_controlled_pollination---selection-and-breeding-as-bookkeeping) |
 | `ag2_cream_separator` | 1 | 100.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
-| `ag2_crown_cork` | 1 | 80.0 | [`ag2_bottling`](76_farming_food_deep.md#ag2_bottling-ag2_crown_cork---sealing-liquids-for-storage-and-transport) |
+| `ag2_crown_cork` | 1 | 90.0 | [`ag2_bottling`](76_farming_food_deep.md#ag2_bottling-ag2_crown_cork---sealing-liquids-for-storage-and-transport) |
 | `ag2_cultivator` | 1 | 70.0 | [`ag2_cultivator`](76_farming_food_deep.md#ag2_cultivator-ag2_subsoiler-ag2_harrow-ag2_roller---working-ground-between-sowing-and-harvest) |
 | `ag2_double_seam_can` | 1 | 100.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
 | `ag2_erosion_control` | 1 | 60.0 | [`ag2_erosion_control`](76_farming_food_deep.md#ag2_erosion_control-ag2_terracing-ag2_contour_ploughing---keeping-soil-in-place) |
@@ -1494,14 +1426,14 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_green_manure` | 1 | 50.0 | [`ag2_norfolk_course`](76_farming_food_deep.md#ag2_norfolk_course---four-course-rotation-without-fallow) |
 | `ag2_guano` | 1 | 30.0 | [`ag2_guano`](76_farming_food_deep.md#ag2_guano-ag2_bone_meal-ag2_basic_slag---imported-and-recycled-phosphate) |
 | `ag2_herd_book` | 1 | 100.0 | [`ag2_progeny_testing`](76_farming_food_deep.md#ag2_progeny_testing-ag2_herd_book-ag2_artificial_insemination-ag2_balanced_ration---livestock-breeding-and-feeding-as-bookkeeping) |
-| `ag2_horse_hoe` | 1 | 90.0 | [`ag2_seed_drill`](76_farming_food_deep.md#ag2_seed_drill-ag2_horse_hoe-ag2_coulter---rows-instead-of-broadcast) |
+| `ag2_horse_hoe` | 1 | 120.0 | [`ag2_seed_drill`](76_farming_food_deep.md#ag2_seed_drill-ag2_horse_hoe-ag2_coulter---rows-instead-of-broadcast) |
 | `ag2_lime_sulphur` | 1 | 90.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
 | `ag2_maize_newworld` | 1 | 65.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
 | `ag2_mower` | 1 | 95.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
 | `ag2_nitrite_curing` | 1 | 100.0 | [`ag2_pasteurisation`](76_farming_food_deep.md#ag2_pasteurisation-ag2_nitrite_curing---milder-preservation-with-narrower-margins) |
 | `ag2_nitrogen_cycle` | 1 | 120.0 | [`ag2_rhizobia`](76_farming_food_deep.md#ag2_rhizobia---legume-root-nodules-and-the-nitrogen-cycle-attributed) |
 | `ag2_norfolk_course` | 1 | 60.0 | [`ag2_norfolk_course`](76_farming_food_deep.md#ag2_norfolk_course---four-course-rotation-without-fallow) |
-| `ag2_pasteurisation` | 1 | 90.0 | [`ag2_pasteurisation`](76_farming_food_deep.md#ag2_pasteurisation-ag2_nitrite_curing---milder-preservation-with-narrower-margins) |
+| `ag2_pasteurisation` | 1 | 180.0 | [`ag2_pasteurisation`](76_farming_food_deep.md#ag2_pasteurisation-ag2_nitrite_curing---milder-preservation-with-narrower-margins) |
 | `ag2_plant_quarantine` | 1 | 90.0 | [`ag2_botanic_garden`](76_farming_food_deep.md#ag2_botanic_garden-ag2_wardian_case-ag2_plant_quarantine---moving-living-plants-across-oceans) |
 | `ag2_potato_lifter` | 1 | 65.0 | [`ag2_ridging_plough`](76_farming_food_deep.md#ag2_ridging_plough-ag2_root_cutter-ag2_potato_lifter---handling-root-crops) |
 | `ag2_potato_newworld` | 1 | 70.0 | [`ag2_potato_newworld`](76_farming_food_deep.md#ag2_potato_newworld-ag2_maize_newworld---staple-crops-locked-behind-one-voyage) |
@@ -1514,9 +1446,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_refrigeration_ice` | 1 | 70.0 | [`ag2_refrigeration_ice`](76_farming_food_deep.md#ag2_refrigeration_ice-ag2_refrigerated_ship-ag2_cold_store---the-cold-chain) |
 | `ag2_retort` | 1 | 110.0 | [`ag2_canning`](76_farming_food_deep.md#ag2_canning-ag2_retort-ag2_double_seam_can---preservation-that-worked-before-anyone-knew-why) |
 | `ag2_ridging_plough` | 1 | 60.0 | [`ag2_ridging_plough`](76_farming_food_deep.md#ag2_ridging_plough-ag2_root_cutter-ag2_potato_lifter---handling-root-crops) |
-| `ag2_roller_mill` | 1 | 120.0 | [`ag2_roller_mill`](76_farming_food_deep.md#ag2_roller_mill-ag2_purifier-ag2_white_flour_loss---milling-wheat-and-the-cost-it-hides) |
 | `ag2_rootstocks` | 1 | 100.0 | [`ag2_grafting`](76_farming_food_deep.md#ag2_grafting-ag2_budding-ag2_layering-ag2_rootstocks---vegetative-propagation-as-knowledge) |
-| `ag2_seed_drill` | 1 | 120.0 | [`ag2_seed_drill`](76_farming_food_deep.md#ag2_seed_drill-ag2_horse_hoe-ag2_coulter---rows-instead-of-broadcast) |
 | `ag2_seed_trade` | 1 | 80.0 | [`ag2_seed_certification`](76_farming_food_deep.md#ag2_seed_certification-ag2_seed_trade---guaranteeing-what-is-in-the-sack) |
 | `ag2_silage_silo` | 1 | 100.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
 | `ag2_sprayer` | 1 | 95.0 | [`ag2_sprayer`](76_farming_food_deep.md#ag2_sprayer-ag2_biological_control-ag2_resistant_variety---applying-and-avoiding-chemicals) |
@@ -1524,7 +1454,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_sugar_refining` | 1 | 110.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
 | `ag2_sugar_voyage` | 1 | 80.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
 | `ag2_tedder` | 1 | 65.0 | [`ag2_reaper`](76_farming_food_deep.md#ag2_reaper-ag2_reaper_binder-ag2_mower-ag2_tedder---cutting-and-handling-grain-and-hay) |
-| `ag2_threshing_machine` | 1 | 130.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
+| `ag2_threshing_machine` | 1 | 250.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
 | `ag2_tile_drainage` | 1 | 80.0 | [`ag2_tile_drainage`](76_farming_food_deep.md#ag2_tile_drainage-ag2_gravity_irrigation---moving-water-off-and-onto-fields) |
 | `ag2_tuberculin_test` | 1 | 90.0 | [`ag2_tuberculin_test`](76_farming_food_deep.md#ag2_tuberculin_test-ag2_veterinary_vaccination-ag2_sheep_dip---disease-control-in-livestock) |
 | `ag2_vacuum_pan` | 1 | 100.0 | [`ag2_centrifugal_sugar`](76_farming_food_deep.md#ag2_centrifugal_sugar-ag2_vacuum_pan-ag2_sugar_refining---turning-cane-or-beet-juice-into-refined-sugar) |
@@ -1537,7 +1467,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_basic_slag` | 2 | 50.0 | [`ag2_guano`](76_farming_food_deep.md#ag2_guano-ag2_bone_meal-ag2_basic_slag---imported-and-recycled-phosphate) |
 | `ag2_battery_poultry` | 2 | 110.0 | [`ag2_milking_machine`](76_farming_food_deep.md#ag2_milking_machine-ag2_cream_separator-ag2_battery_poultry-ag2_silage_silo---dairy-poultry-and-fodder-at-scale) |
 | `ag2_biological_control` | 2 | 110.0 | [`ag2_sprayer`](76_farming_food_deep.md#ag2_sprayer-ag2_biological_control-ag2_resistant_variety---applying-and-avoiding-chemicals) |
-| `ag2_caterpillar_track` | 2 | 140.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
 | `ag2_fat_hydrogenation` | 2 | 120.0 | [`ag2_oil_pressing`](76_farming_food_deep.md#ag2_oil_pressing-ag2_fat_hydrogenation---extracting-and-modifying-fats) |
 | `ag2_food_laboratory` | 2 | 120.0 | [`ag2_adulteration_law`](76_farming_food_deep.md#ag2_adulteration_law-ag2_food_laboratory---regulation-and-the-means-to-enforce-it) |
 | `ag2_gasworks_ammonia` | 2 | 80.0 | [`ag2_gasworks_ammonia`](76_farming_food_deep.md#ag2_gasworks_ammonia-ag2_urea---synthetic-nitrogen) |
@@ -1552,12 +1481,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `ag2_rhizobia` | 2 | 150.0 | [`ag2_rhizobia`](76_farming_food_deep.md#ag2_rhizobia---legume-root-nodules-and-the-nitrogen-cycle-attributed) |
 | `ag2_seed_certification` | 2 | 100.0 | [`ag2_seed_certification`](76_farming_food_deep.md#ag2_seed_certification-ag2_seed_trade---guaranteeing-what-is-in-the-sack) |
 | `ag2_soil_testing` | 2 | 100.0 | [`ag2_liming`](76_farming_food_deep.md#ag2_liming-ag2_marling-ag2_soil_testing---reading-and-fixing-soil-chemistry) |
-| `ag2_superphosphate` | 2 | 100.0 | [`ag2_superphosphate`](76_farming_food_deep.md#ag2_superphosphate---acid-treated-phosphate) |
 | `ag2_tea_voyage` | 2 | 120.0 | [`ag2_sugar_voyage`](76_farming_food_deep.md#ag2_sugar_voyage-ag2_coffee_voyage-ag2_tea_voyage---cash-crops-needing-ongoing-trade-not-one-trip) |
 | `ag2_three_point_linkage` | 2 | 90.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
 | `ag2_tractor_steam` | 2 | 160.0 | [`ag2_tractor_steam`](76_farming_food_deep.md#ag2_tractor_steam-ag2_three_point_linkage-ag2_power_take_off-ag2_caterpillar_track---mechanising-traction) |
 | `ag2_veterinary_vaccination` | 2 | 120.0 | [`ag2_tuberculin_test`](76_farming_food_deep.md#ag2_tuberculin_test-ag2_veterinary_vaccination-ag2_sheep_dip---disease-control-in-livestock) |
-| `ag2_combine_harvester` | 3 | 240.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
+| `ag2_combine_harvester` | 3 | 400.0 | [`ag2_threshing_machine`](76_farming_food_deep.md#ag2_threshing_machine-ag2_combine_harvester---separating-grain-from-straw-by-machine) |
 | `ag2_ddt` | 3 | 140.0 | [`ag2_bordeaux_mixture`](76_farming_food_deep.md#ag2_bordeaux_mixture-ag2_lime_sulphur-ag2_lead_arsenate-ag2_nicotine_pesticide-ag2_pyrethrum-ag2_ddt---pest-chemicals-oldest-to-most-dangerous) |
 | `ag2_urea` | 3 | 60.0 | [`ag2_gasworks_ammonia`](76_farming_food_deep.md#ag2_gasworks_ammonia-ag2_urea---synthetic-nitrogen) |
 
@@ -1594,12 +1522,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_calotype_process` | 2 | 250.0 | _(module has no anchor)_ |
 | `prn_cinema_projection` | 2 | 120.0 | _(module has no anchor)_ |
 | `prn_cinema_shutter` | 2 | 100.0 | _(module has no anchor)_ |
-| `prn_composing_stick` | 2 | 40.0 | _(module has no anchor)_ |
-| `prn_disc_record` | 2 | 150.0 | _(module has no anchor)_ |
 | `prn_enlarger` | 2 | 150.0 | _(module has no anchor)_ |
 | `prn_etching_technique` | 2 | 200.0 | _(module has no anchor)_ |
 | `prn_film_studio` | 2 | 300.0 | _(module has no anchor)_ |
-| `prn_gelatin_dry_plate` | 2 | 150.0 | _(module has no anchor)_ |
 | `prn_hand_mould_adjustable` | 2 | 80.0 | _(module has no anchor)_ |
 | `prn_intaglio_engraving` | 2 | 300.0 | _(module has no anchor)_ |
 | `prn_intermittent_motion` | 2 | 180.0 | _(module has no anchor)_ |
@@ -1608,7 +1533,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_nitrate_film_safety` | 2 | 100.0 | _(module has no anchor)_ |
 | `prn_phonograph_cylinder` | 2 | 250.0 | _(module has no anchor)_ |
 | `prn_platen_press` | 2 | 200.0 | _(module has no anchor)_ |
-| `prn_silver_halide_chemistry` | 2 | 150.0 | _(module has no anchor)_ |
 | `prn_stereotype_plate` | 2 | 120.0 | _(module has no anchor)_ |
 | `prn_type_matrix` | 2 | 60.0 | _(module has no anchor)_ |
 | `prn_type_metal_alloy` | 2 | 100.0 | _(module has no anchor)_ |
@@ -1622,11 +1546,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prn_electrical_recording` | 3 | 200.0 | _(module has no anchor)_ |
 | `prn_four_colour_separation` | 3 | 200.0 | _(module has no anchor)_ |
 | `prn_fourdrinier_machine` | 3 | 400.0 | _(module has no anchor)_ |
-| `prn_halftone_screen` | 3 | 150.0 | _(module has no anchor)_ |
-| `prn_magnetic_tape_recording` | 3 | 250.0 | _(module has no anchor)_ |
 | `prn_offset_lithography` | 3 | 250.0 | _(module has no anchor)_ |
 | `prn_radio_broadcasting` | 3 | 300.0 | _(module has no anchor)_ |
-| `prn_roll_film_celluloid` | 3 | 200.0 | _(module has no anchor)_ |
 | `if_linotype_machine` | 4 | 600.0 | _(module has no anchor)_ |
 | `prn_monotype_machine` | 4 | 500.0 | _(module has no anchor)_ |
 
@@ -1636,14 +1557,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 |---|---:|---:|---|
 | `air_balloon_ballast` | 0 | 20.0 | _(module has no anchor)_ |
 | `air_compass_magnetic` | 0 | 30.0 | _(module has no anchor)_ |
-| `air_hot_air_balloon_ref` | 0 | 0.0 | _(module has no anchor)_ |
 | `air_kite_basic` | 0 | 20.0 | _(module has no anchor)_ |
 | `civ_amphitheatre` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_aqueduct_roman` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_arch_roman` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_brick_tile` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_chorobates` | 0 | 0.0 | _(module has no anchor)_ |
-| `civ_cofferdam` | 0 | 0.0 | _(module has no anchor)_ |
+| `civ_cofferdam` | 0 | 60.0 | _(module has no anchor)_ |
 | `civ_dome_roman` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_glass_windows` | 0 | 0.0 | _(module has no anchor)_ |
 | `civ_insula` | 0 | 0.0 | _(module has no anchor)_ |
@@ -1701,12 +1621,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `lnd_coach` | 1 | 200.0 | _(module has no anchor)_ |
 | `lnd_hobby_horse` | 1 | 40.0 | _(module has no anchor)_ |
 | `lnd_spring_leaf` | 1 | 80.0 | _(module has no anchor)_ |
-| `lnd_stirrup` | 1 | 60.0 | _(module has no anchor)_ |
 | `lnd_wheelbarrow` | 1 | 30.0 | _(module has no anchor)_ |
-| `lnd_whippletree` | 1 | 50.0 | _(module has no anchor)_ |
 | `sea_bowsprit` | 1 | 60.0 | _(module has no anchor)_ |
-| `sea_carvel_planking` | 1 | 200.0 | _(module has no anchor)_ |
-| `sea_clinker_planking` | 1 | 100.0 | _(module has no anchor)_ |
 | `sea_dry_compass_card` | 1 | 60.0 | _(module has no anchor)_ |
 | `sea_jib` | 1 | 40.0 | _(module has no anchor)_ |
 | `sea_lodestone` | 1 | 20.0 | _(module has no anchor)_ |
@@ -1728,39 +1644,33 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `air_glider_simple` | 2 | 160.0 | _(module has no anchor)_ |
 | `air_hydrogen_generation_charcoal` | 2 | 100.0 | _(module has no anchor)_ |
 | `air_parachute` | 2 | 80.0 | _(module has no anchor)_ |
-| `air_pitot_tube` | 2 | 50.0 | _(module has no anchor)_ |
+| `air_pitot_tube` | 2 | 80.0 | _(module has no anchor)_ |
 | `air_propeller_wing` | 2 | 180.0 | _(module has no anchor)_ |
 | `air_three_axis_control` | 2 | 200.0 | _(module has no anchor)_ |
 | `air_wind_tunnel` | 2 | 150.0 | _(module has no anchor)_ |
 | `air_wing_warping` | 2 | 120.0 | _(module has no anchor)_ |
 | `civ_bridge_cast_iron` | 2 | 150.0 | _(module has no anchor)_ |
 | `civ_bridge_wrought_iron_truss` | 2 | 200.0 | _(module has no anchor)_ |
-| `civ_caisson` | 2 | 150.0 | _(module has no anchor)_ |
 | `civ_canal_pound_lock` | 2 | 150.0 | _(module has no anchor)_ |
 | `civ_dam_earth_fill` | 2 | 150.0 | _(module has no anchor)_ |
 | `civ_dam_gravity` | 2 | 200.0 | _(module has no anchor)_ |
-| `civ_dredging` | 2 | 120.0 | _(module has no anchor)_ |
+| `civ_dredging` | 2 | 200.0 | _(module has no anchor)_ |
 | `civ_harbour_dock` | 2 | 200.0 | _(module has no anchor)_ |
 | `civ_lightning_conductor` | 2 | 80.0 | _(module has no anchor)_ |
 | `civ_precise_levelling` | 2 | 120.0 | _(module has no anchor)_ |
 | `civ_pumping_station` | 2 | 150.0 | _(module has no anchor)_ |
 | `civ_sewer_separate` | 2 | 120.0 | _(module has no anchor)_ |
-| `civ_spillway` | 2 | 150.0 | _(module has no anchor)_ |
-| `civ_theodolite` | 2 | 150.0 | _(module has no anchor)_ |
 | `civ_town_planning` | 2 | 180.0 | _(module has no anchor)_ |
 | `civ_tunnel_rock_drill` | 2 | 180.0 | _(module has no anchor)_ |
 | `cn_arch_bridge_steel` | 2 | 250.0 | _(module has no anchor)_ |
 | `hot_air_balloon` | 2 | 400.0 | _(module has no anchor)_ |
-| `lnd_ball_bearing` | 2 | 80.0 | _(module has no anchor)_ |
 | `lnd_boneshaker` | 2 | 80.0 | _(module has no anchor)_ |
 | `lnd_chain_drive_bicycle` | 2 | 100.0 | _(module has no anchor)_ |
 | `lnd_coal_tar_gas` | 2 | 80.0 | _(module has no anchor)_ |
-| `lnd_fishplate` | 2 | 50.0 | _(module has no anchor)_ |
 | `lnd_flanged_wheel` | 2 | 80.0 | _(module has no anchor)_ |
 | `lnd_gas_engine_atmospheric` | 2 | 250.0 | _(module has no anchor)_ |
-| `lnd_iron_edge_rail` | 2 | 60.0 | _(module has no anchor)_ |
+| `lnd_iron_edge_rail` | 2 | 80.0 | _(module has no anchor)_ |
 | `lnd_macadam` | 2 | 140.0 | _(module has no anchor)_ |
-| `lnd_penny_farthing` | 2 | 100.0 | _(module has no anchor)_ |
 | `lnd_point_switch` | 2 | 120.0 | _(module has no anchor)_ |
 | `lnd_signal_railway` | 2 | 80.0 | _(module has no anchor)_ |
 | `lnd_stagecoach` | 2 | 250.0 | _(module has no anchor)_ |
@@ -1775,7 +1685,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `sea_lead_line_hydro` | 2 | 120.0 | _(module has no anchor)_ |
 | `sea_magnetic_compass` | 2 | 80.0 | _(module has no anchor)_ |
 | `sea_mercator_projection` | 2 | 180.0 | _(module has no anchor)_ |
-| `sea_sextant` | 2 | 150.0 | _(module has no anchor)_ |
 | `tr_screw_propeller` | 2 | 220.0 | _(module has no anchor)_ |
 | `air_aerial_bombing` | 3 | 150.0 | _(module has no anchor)_ |
 | `air_autogyro` | 3 | 200.0 | _(module has no anchor)_ |
@@ -1795,45 +1704,28 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `civ_elevator_otis` | 3 | 250.0 | _(module has no anchor)_ |
 | `civ_fireproofing` | 3 | 150.0 | _(module has no anchor)_ |
 | `civ_glass_plate` | 3 | 100.0 | _(module has no anchor)_ |
-| `civ_tunnel_shield` | 3 | 250.0 | _(module has no anchor)_ |
 | `civ_water_treatment` | 3 | 200.0 | _(module has no anchor)_ |
 | `lnd_air_brake` | 3 | 250.0 | _(module has no anchor)_ |
 | `lnd_block_system` | 3 | 150.0 | _(module has no anchor)_ |
-| `lnd_carburettor` | 3 | 120.0 | _(module has no anchor)_ |
-| `lnd_caterpillar_track` | 3 | 200.0 | _(module has no anchor)_ |
-| `lnd_differential` | 3 | 150.0 | _(module has no anchor)_ |
 | `lnd_gearbox_clutch` | 3 | 200.0 | _(module has no anchor)_ |
 | `lnd_magneto` | 3 | 150.0 | _(module has no anchor)_ |
 | `lnd_otto_cycle_four_stroke` | 3 | 350.0 | _(module has no anchor)_ |
-| `lnd_safety_bicycle` | 3 | 120.0 | _(module has no anchor)_ |
-| `lnd_spark_plug` | 3 | 100.0 | _(module has no anchor)_ |
 | `lnd_standard_gauge` | 3 | 200.0 | _(module has no anchor)_ |
 | `lnd_steam_locomotive` | 3 | 400.0 | _(module has no anchor)_ |
 | `lnd_steering_geometry` | 3 | 100.0 | _(module has no anchor)_ |
-| `lnd_superheater` | 3 | 200.0 | _(module has no anchor)_ |
-| `lnd_tarmacadam` | 3 | 100.0 | _(module has no anchor)_ |
+| `lnd_tarmacadam` | 3 | 150.0 | _(module has no anchor)_ |
 | `lnd_tender` | 3 | 120.0 | _(module has no anchor)_ |
-| `sea_canal_lock` | 3 | 250.0 | _(module has no anchor)_ |
 | `sea_compartmented_hull` | 3 | 150.0 | _(module has no anchor)_ |
-| `sea_copper_sheathing` | 3 | 180.0 | _(module has no anchor)_ |
 | `sea_diving_suit` | 3 | 180.0 | _(module has no anchor)_ |
-| `sea_dredging` | 3 | 200.0 | _(module has no anchor)_ |
 | `sea_iron_hull` | 3 | 250.0 | _(module has no anchor)_ |
-| `sea_lifeboat` | 3 | 100.0 | _(module has no anchor)_ |
 | `sea_lunar_distances` | 3 | 200.0 | _(module has no anchor)_ |
-| `sea_marine_chronometer` | 3 | 250.0 | _(module has no anchor)_ |
-| `sea_paddle_wheel` | 3 | 200.0 | _(module has no anchor)_ |
 | `air_artificial_horizon` | 4 | 250.0 | _(module has no anchor)_ |
 | `air_helicopter_rotor` | 4 | 280.0 | _(module has no anchor)_ |
 | `air_jet_engine_concept` | 4 | 200.0 | _(module has no anchor)_ |
 | `air_monoplane_structure` | 4 | 200.0 | _(module has no anchor)_ |
 | `air_rigid_airship_frame` | 4 | 300.0 | _(module has no anchor)_ |
 | `air_stressed_skin_fuselage` | 4 | 180.0 | _(module has no anchor)_ |
-| `civ_box_girder` | 4 | 120.0 | _(module has no anchor)_ |
 | `civ_bridge_cantilever` | 4 | 250.0 | _(module has no anchor)_ |
-| `civ_curtain_wall` | 4 | 150.0 | _(module has no anchor)_ |
-| `civ_prestressed_concrete` | 4 | 180.0 | _(module has no anchor)_ |
-| `civ_reinforced_concrete` | 4 | 200.0 | _(module has no anchor)_ |
 | `civ_sewage_treatment` | 4 | 200.0 | _(module has no anchor)_ |
 | `civ_steel_frame` | 4 | 300.0 | _(module has no anchor)_ |
 | `civ_street_lighting` | 4 | 120.0 | _(module has no anchor)_ |
@@ -1841,18 +1733,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `lnd_automobile` | 4 | 500.0 | _(module has no anchor)_ |
 | `lnd_diesel_cycle` | 4 | 400.0 | _(module has no anchor)_ |
 | `lnd_diesel_supply` | 4 | 180.0 | _(module has no anchor)_ |
-| `lnd_omnibus` | 4 | 250.0 | _(module has no anchor)_ |
-| `lnd_pneumatic_tyre` | 4 | 120.0 | _(module has no anchor)_ |
-| `lnd_tractor` | 4 | 350.0 | _(module has no anchor)_ |
 | `lnd_truck` | 4 | 300.0 | _(module has no anchor)_ |
 | `railway` | 4 | 800.0 | _(module has no anchor)_ |
-| `sea_compound_expansion` | 4 | 300.0 | _(module has no anchor)_ |
 | `sea_diesel_engine` | 4 | 250.0 | _(module has no anchor)_ |
 | `sea_electromagnetic_wave_theory` | 4 | 200.0 | _(module has no anchor)_ |
 | `sea_fresnel_lens` | 4 | 180.0 | _(module has no anchor)_ |
 | `sea_fuel_oil_burner` | 4 | 140.0 | _(module has no anchor)_ |
 | `sea_steam_turbine` | 4 | 280.0 | _(module has no anchor)_ |
-| `sea_steel_hull` | 4 | 200.0 | _(module has no anchor)_ |
 | `sea_submarine` | 4 | 300.0 | _(module has no anchor)_ |
 | `air_jet_engine_build` | 5 | 350.0 | _(module has no anchor)_ |
 | `lnd_motor_road_network` | 5 | 250.0 | _(module has no anchor)_ |
@@ -1864,7 +1751,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 |---|---:|---:|---|
 | `tr_bilge_pump` | 0 | 50.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
 | `tr_block_tackle` | 0 | 40.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
-| `tr_bowsprit` | 0 | 50.0 | [`tr_bowsprit`](86_transport_deep.md#tr_bowsprit---bowsprit-mast-stepping-and-rigging-hardware) |
 | `tr_caulking_oakum` | 0 | 60.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
 | `tr_clinker_planking` | 0 | 100.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
 | `tr_hull_sheathing_wood` | 0 | 100.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
@@ -1882,7 +1768,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_dead_axle` | 1 | 60.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
 | `tl_grease_cup` | 1 | 50.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
 | `tl_handbrake` | 1 | 70.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
-| `tl_horse_collar` | 1 | 50.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
 | `tl_indicator` | 1 | 70.0 | [`tl_headlamp`](86_transport_deep.md#tl_headlamp---headlamp-and-signal-lighting) |
 | `tl_iron_tyre` | 1 | 100.0 | [`tl_spoked_wheel`](86_transport_deep.md#tl_spoked_wheel---improved-spoked-and-wire-spoke-wheel) |
 | `tl_kerbing` | 1 | 60.0 | [`tl_macadam_road`](86_transport_deep.md#tl_macadam_road---macadam-and-bound-road-surfaces) |
@@ -1891,32 +1776,29 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_plain_bearing` | 1 | 70.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
 | `tl_shrink_fit` | 1 | 120.0 | [`tl_spoked_wheel`](86_transport_deep.md#tl_spoked_wheel---improved-spoked-and-wire-spoke-wheel) |
 | `tl_spoked_wheel` | 1 | 80.0 | [`tl_spoked_wheel`](86_transport_deep.md#tl_spoked_wheel---improved-spoked-and-wire-spoke-wheel) |
-| `tl_stirrup` | 1 | 45.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
+| `tl_stirrup` | 1 | 60.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
 | `tl_tandem_harness` | 1 | 70.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
 | `tl_transmission_lubrication` | 1 | 70.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
 | `tl_whippletree` | 1 | 60.0 | [`tl_horse_collar`](86_transport_deep.md#tl_horse_collar---horse-collar-horseshoe-stirrup-and-harness) |
 | `tl_wire_rope_brake` | 1 | 60.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
 | `tr_axle_bearing_box` | 1 | 60.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
 | `tr_blastpipe` | 1 | 50.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
-| `tr_brake_shoe` | 1 | 50.0 | [`tr_brake_shoe`](86_transport_deep.md#tr_brake_shoe---rail-brake-shoe-vacuum-and-westinghouse-air-brake) |
-| `tr_canal_lock` | 1 | 150.0 | [`tr_canal_lock`](86_transport_deep.md#tr_canal_lock---canal-lock-and-canal-lift) |
+| `tr_canal_lock` | 1 | 250.0 | [`tr_canal_lock`](86_transport_deep.md#tr_canal_lock---canal-lock-and-canal-lift) |
 | `tr_capstan` | 1 | 80.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
-| `tr_carvel_planking` | 1 | 120.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_carvel_planking` | 1 | 200.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
 | `tr_chain_cable` | 1 | 80.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
 | `tr_chair_key` | 1 | 50.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
-| `tr_copper_sheathing` | 1 | 100.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
-| `tr_edge_rail` | 1 | 80.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
-| `tr_fishplate` | 1 | 40.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
-| `tr_flanged_wheel` | 1 | 50.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
+| `tr_copper_sheathing` | 1 | 180.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
+| `tr_fishplate` | 1 | 50.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
 | `tr_fore_and_aft_rigging` | 1 | 100.0 | [`tr_square_rig`](86_transport_deep.md#tr_square_rig---sail-plans-square-lateen-fore-and-aft-jib-staysail-reefing) |
 | `tr_frame_first_construction` | 1 | 80.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
 | `tr_grade_crossing` | 1 | 80.0 | [`tr_points_frog`](86_transport_deep.md#tr_points_frog---points-frog-turntable-and-yard-switching) |
 | `tr_hopper_wagon` | 1 | 50.0 | [`tr_hopper_wagon`](86_transport_deep.md#tr_hopper_wagon---specialised-wagons-hopper-tank-refrigerated-sleeping-car) |
 | `tr_keelson` | 1 | 80.0 | [`tr_carvel_planking`](86_transport_deep.md#tr_carvel_planking---hull-planking-framing-and-caulking) |
 | `tr_leading_truck` | 1 | 80.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
-| `tr_lifeboat` | 1 | 80.0 | [`tr_lifeboat`](86_transport_deep.md#tr_lifeboat---lifeboat-submarine-hull-and-periscope) |
+| `tr_lifeboat` | 1 | 100.0 | [`tr_lifeboat`](86_transport_deep.md#tr_lifeboat---lifeboat-submarine-hull-and-periscope) |
 | `tr_log_sounding` | 1 | 50.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
-| `tr_paddle_wheel` | 1 | 100.0 | [`tr_sternpost_rudder`](86_transport_deep.md#tr_sternpost_rudder---propulsion-rudder-propeller-and-shafting) |
+| `tr_paddle_wheel` | 1 | 200.0 | [`tr_sternpost_rudder`](86_transport_deep.md#tr_sternpost_rudder---propulsion-rudder-propeller-and-shafting) |
 | `tr_rail_gauge_standardization` | 1 | 40.0 | [`tr_sleeper_ballast`](86_transport_deep.md#tr_sleeper_ballast---sleeper-ballast-and-track-gauge) |
 | `tr_riveted_plating` | 1 | 150.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
 | `tr_screw_coupling` | 1 | 40.0 | [`tr_screw_coupling`](86_transport_deep.md#tr_screw_coupling---screw-coupling-buffer-and-knuckle-coupler) |
@@ -1939,7 +1821,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_coil_spring` | 2 | 110.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
 | `tl_cone_clutch` | 2 | 120.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
 | `tl_cooling_fan` | 2 | 100.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
-| `tl_differential` | 2 | 140.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
+| `tl_differential` | 2 | 150.0 | [`tl_differential`](86_transport_deep.md#tl_differential---differential-bevel-gears) |
 | `tl_drum_brake` | 2 | 120.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
 | `tl_elliptic_spring` | 2 | 120.0 | [`tl_leaf_spring`](86_transport_deep.md#tl_leaf_spring---leaf-spring-suspension) |
 | `tl_fan_belt` | 2 | 100.0 | [`tl_radiator`](86_transport_deep.md#tl_radiator---radiator-water-cooling) |
@@ -1956,7 +1838,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_muffler` | 2 | 80.0 | [`tl_muffler`](86_transport_deep.md#tl_muffler---muffler-and-windscreen-wiper) |
 | `tl_oil_bath` | 2 | 80.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
 | `tl_oil_pump` | 2 | 120.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
-| `tl_omnibus` | 2 | 160.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
+| `tl_omnibus` | 2 | 250.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_penny_farthing` | 2 | 110.0 | [`tl_safety_bicycle`](86_transport_deep.md#tl_safety_bicycle---safety-bicycle-and-its-ancestors) |
 | `tl_plate_clutch` | 2 | 130.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
 | `tl_pressure_relief_valve` | 2 | 90.0 | [`tl_oil_pump`](86_transport_deep.md#tl_oil_pump---pressure-oil-pump) |
@@ -1981,13 +1863,12 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tr_bogie_truck` | 2 | 120.0 | [`tr_flanged_wheel`](86_transport_deep.md#tr_flanged_wheel---flanged-wheel-axle-box-and-bogie) |
 | `tr_bullhead_rail` | 2 | 70.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
 | `tr_canal_lift` | 2 | 250.0 | [`tr_canal_lock`](86_transport_deep.md#tr_canal_lock---canal-lock-and-canal-lift) |
-| `tr_compound_expansion` | 2 | 150.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
+| `tr_compound_expansion` | 2 | 300.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
 | `tr_double_bottom` | 2 | 150.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
 | `tr_dredger` | 2 | 200.0 | [`tr_dry_dock`](86_transport_deep.md#tr_dry_dock---shipyard-infrastructure-dry-dock-slipway-tugs-dredging) |
 | `tr_dry_dock` | 2 | 200.0 | [`tr_dry_dock`](86_transport_deep.md#tr_dry_dock---shipyard-infrastructure-dry-dock-slipway-tugs-dredging) |
 | `tr_injector_feedwater` | 2 | 100.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
 | `tr_interlocking_signal` | 2 | 180.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
-| `tr_iron_hull` | 2 | 200.0 | [`tr_iron_hull`](86_transport_deep.md#tr_iron_hull---iron-and-steel-hull-plating-and-bulkheads) |
 | `tr_locomotive_boiler` | 2 | 150.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
 | `tr_marine_engine` | 2 | 180.0 | [`tr_marine_engine`](86_transport_deep.md#tr_marine_engine---marine-steam-and-diesel-propulsion-machinery) |
 | `tr_marshalling_hump` | 2 | 100.0 | [`tr_points_frog`](86_transport_deep.md#tr_points_frog---points-frog-turntable-and-yard-switching) |
@@ -1995,11 +1876,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tr_piston_valve` | 2 | 100.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
 | `tr_points_frog` | 2 | 120.0 | [`tr_points_frog`](86_transport_deep.md#tr_points_frog---points-frog-turntable-and-yard-switching) |
 | `tr_refrigerated_wagon` | 2 | 80.0 | [`tr_hopper_wagon`](86_transport_deep.md#tr_hopper_wagon---specialised-wagons-hopper-tank-refrigerated-sleeping-car) |
-| `tr_sextant_navigation` | 2 | 100.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
+| `tr_sextant_navigation` | 2 | 110.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
 | `tr_stephenson_linkmotion` | 2 | 120.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
 | `tr_stern_tube` | 2 | 100.0 | [`tr_sternpost_rudder`](86_transport_deep.md#tr_sternpost_rudder---propulsion-rudder-propeller-and-shafting) |
 | `tr_stockless_anchor` | 2 | 100.0 | [`tr_windlass`](86_transport_deep.md#tr_windlass---deck-machinery-windlass-capstan-anchor-chain-bilge-pump-ballast-block-and-tackle) |
-| `tr_superheater` | 2 | 110.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
+| `tr_superheater` | 2 | 200.0 | [`tr_locomotive_boiler`](86_transport_deep.md#tr_locomotive_boiler---locomotive-boiler-smokebox-blastpipe-superheater-injector) |
 | `tr_tank_wagon` | 2 | 100.0 | [`tr_hopper_wagon`](86_transport_deep.md#tr_hopper_wagon---specialised-wagons-hopper-tank-refrigerated-sleeping-car) |
 | `tr_third_rail` | 2 | 80.0 | [`tr_electric_locomotive`](86_transport_deep.md#tr_electric_locomotive---electric-and-diesel-electric-traction) |
 | `tr_track_circuit` | 2 | 120.0 | [`tr_semaphore_signal`](86_transport_deep.md#tr_semaphore_signal---semaphore-block-and-interlocking-signalling) |
@@ -2016,7 +1897,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_derailleur` | 3 | 140.0 | [`tl_chain_drive`](86_transport_deep.md#tl_chain_drive---chain-drive-freewheel-and-gearing) |
 | `tl_disc_brake` | 3 | 150.0 | [`tl_brake_shoe`](86_transport_deep.md#tl_brake_shoe---brake-shoe-on-a-drum) |
 | `tl_distributor` | 3 | 130.0 | [`tl_magneto_ignition`](86_transport_deep.md#tl_magneto_ignition---magneto-ignition) |
-| `tl_dynamo` | 3 | 150.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
 | `tl_electric_starter` | 3 | 170.0 | [`tl_dynamo`](86_transport_deep.md#tl_dynamo---dynamo-and-electric-starting) |
 | `tl_electric_tram` | 3 | 200.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_engine_block` | 3 | 170.0 | [`tl_engine_block`](86_transport_deep.md#tl_engine_block---cast-engine-block) |
@@ -2037,8 +1917,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tl_steam_tram` | 3 | 220.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_synchromesh` | 3 | 160.0 | [`tl_plate_clutch`](86_transport_deep.md#tl_plate_clutch---plate-clutch-and-gearbox) |
 | `tl_taper_roller_bearing` | 3 | 180.0 | [`tl_ball_bearing`](86_transport_deep.md#tl_ball_bearing---ball-roller-and-taper-bearings) |
-| `tl_tarmacadam` | 3 | 150.0 | [`tl_macadam_road`](86_transport_deep.md#tl_macadam_road---macadam-and-bound-road-surfaces) |
-| `tl_tractor` | 3 | 250.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
+| `tl_tractor` | 3 | 350.0 | [`tl_motor_lorry`](86_transport_deep.md#tl_motor_lorry---motor-lorry-and-heavy-road-vehicles) |
 | `tl_trolleybus` | 3 | 210.0 | [`tl_omnibus`](86_transport_deep.md#tl_omnibus---omnibus-and-public-transit) |
 | `tl_vulcanized_rubber` | 3 | 140.0 | [`tl_pneumatic_tyre`](86_transport_deep.md#tl_pneumatic_tyre---pneumatic-tyre) |
 | `tr_articulated_locomotive` | 3 | 200.0 | [`tr_slide_valve`](86_transport_deep.md#tr_slide_valve---slide-valve-piston-valve-and-valve-gear) |
@@ -2048,7 +1927,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tr_flatbottom_rail` | 3 | 90.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
 | `tr_gyrocompass_repeater` | 3 | 150.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
 | `tr_knuckle_coupler` | 3 | 150.0 | [`tr_screw_coupling`](86_transport_deep.md#tr_screw_coupling---screw-coupling-buffer-and-knuckle-coupler) |
-| `tr_marine_chronometer` | 3 | 250.0 | [`tr_marine_chronometer`](86_transport_deep.md#tr_marine_chronometer---navigation-instruments-chronometer-sextant-gyrocompass-log-lighthouse-ship-telegraph) |
 | `tr_marine_diesel` | 3 | 200.0 | [`tr_marine_engine`](86_transport_deep.md#tr_marine_engine---marine-steam-and-diesel-propulsion-machinery) |
 | `tr_marine_turbine` | 3 | 250.0 | [`tr_marine_engine`](86_transport_deep.md#tr_marine_engine---marine-steam-and-diesel-propulsion-machinery) |
 | `tr_rail_rolling` | 3 | 120.0 | [`tr_edge_rail`](86_transport_deep.md#tr_edge_rail---edge-rail-bullhead-and-flat-bottom-profiles) |
@@ -2068,13 +1946,11 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 |---|---:|---:|---|
 | `cn_aqueduct` | 0 | 110.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
 | `cn_block_tackle_hoist` | 0 | 30.0 | [`cn_crane_treadwheel`](87_construction.md#cn_crane_treadwheel---treadwheel-crane-polyspastos) |
-| `cn_cofferdam` | 0 | 60.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
 | `cn_damp_proof_course` | 0 | 50.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
 | `cn_gypsum_plaster` | 0 | 35.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
-| `cn_mortar` | 0 | 40.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
+| `cn_mortar` | 0 | 80.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
 | `cn_pile_driving` | 0 | 40.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
 | `cn_post_lintel` | 0 | 25.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-the-theory-of-the-beam) |
-| `cn_pozzolana_concrete` | 0 | 50.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
 | `cn_quarrying_wedge` | 0 | 20.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
 | `cn_retaining_wall` | 0 | 80.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
 | `cn_scaffolding` | 0 | 50.0 | [`cn_scaffolding`](87_construction.md#cn_scaffolding---timber-scaffolding-system) |
@@ -2082,8 +1958,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_stone_saw` | 0 | 40.0 | [`cn_quarrying_wedge`](87_construction.md#cn_quarrying_wedge---stone-quarrying-with-wedges) |
 | `cn_timber_truss` | 0 | 45.0 | [`cn_king_post`](87_construction.md#cn_king_post---king-post-roof-truss) |
 | `cn_true_arch` | 0 | 35.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
+| `mat_pozzolana` | 0 | 50.0 | [`cn_pozzolana_concrete`](87_construction.md#cn_pozzolana_concrete---pozzolana-hydraulic-concrete-opus-caementicium) |
 | `cn_artificial_stone` | 1 | 70.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
-| `cn_caisson` | 1 | 120.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
+| `cn_caisson` | 1 | 150.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
 | `cn_cavity_wall` | 1 | 75.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
 | `cn_crane_derrick` | 1 | 75.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
 | `cn_dewatering` | 1 | 85.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
@@ -2100,7 +1977,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_lattice_truss` | 1 | 70.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_plumbing_stack` | 1 | 80.0 | [`cn_plumbing_stack`](87_construction.md#cn_plumbing_stack---plumbing-stack-and-trapped-drains) |
 | `cn_pontoon_bridge` | 1 | 85.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
-| `cn_radiator` | 1 | 65.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
 | `cn_ribbed_vault` | 1 | 120.0 | [`cn_true_arch`](87_construction.md#cn_true_arch---true-arch-in-stone-fornix) |
 | `cn_riveted_connection` | 1 | 70.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
 | `cn_sash_window` | 1 | 85.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
@@ -2108,7 +1984,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_sheet_piling` | 1 | 100.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
 | `cn_siphon` | 1 | 75.0 | [`cn_aqueduct`](87_construction.md#cn_aqueduct---masonry-aqueduct-arch-bridge-aqua-ducta) |
 | `cn_soil_compaction` | 1 | 70.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
-| `cn_spillway` | 1 | 95.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
+| `cn_spillway` | 1 | 150.0 | [`cn_gravity_dam`](87_construction.md#cn_gravity_dam---gravity-dam-arch-dam-earth-dam-spillway-retaining-wall) |
 | `cn_swing_bridge` | 1 | 110.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
 | `cn_terrazzo` | 1 | 60.0 | [`cn_terrazzo`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_trapped_drain` | 1 | 60.0 | [`cn_plumbing_stack`](87_construction.md#cn_plumbing_stack---plumbing-stack-and-trapped-drains) |
@@ -2122,17 +1998,16 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_asphalt_roofing` | 2 | 80.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_bascule_bridge` | 2 | 140.0 | [`cn_bascule_bridge`](87_construction.md#cn_bascule_bridge---bascule-swing-and-pontoon-bridges) |
 | `cn_bolted_connection` | 2 | 85.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
-| `cn_box_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
+| `cn_box_girder` | 2 | 120.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_cable_anchorage` | 2 | 95.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
 | `cn_cantilever` | 2 | 85.0 | [`cn_post_lintel`](87_construction.md#cn_post_lintel---post-and-lintel-the-theory-of-the-beam) |
 | `cn_cast_iron_beam` | 2 | 80.0 | [`cn_cast_iron_beam`](87_construction.md#cn_cast_iron_beam---cast-iron-beam) |
 | `cn_cement_clinker_grinding` | 2 | 110.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
-| `cn_central_heating` | 2 | 95.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
+| `cn_central_heating` | 2 | 180.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
 | `cn_concrete_mixer` | 2 | 100.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
 | `cn_crane_tower` | 2 | 130.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
 | `cn_deformed_rebar` | 2 | 85.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
 | `cn_drill_blast` | 2 | 125.0 | [`cn_drill_blast`](87_construction.md#cn_drill_blast---tunnelling-by-drill-and-blast) |
-| `cn_elevator_safety_brake` | 2 | 120.0 | [`cn_crane_derrick`](87_construction.md#cn_crane_derrick---derrick-and-tower-cranes-elevator-safety-brake) |
 | `cn_forced_ventilation` | 2 | 100.0 | [`cn_central_heating`](87_construction.md#cn_central_heating---central-heating-radiators-forced-ventilation) |
 | `cn_insulation` | 2 | 90.0 | [`cn_cavity_wall`](87_construction.md#cn_cavity_wall---cavity-wall-damp-proof-course-insulation) |
 | `cn_plate_girder` | 2 | 105.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
@@ -2141,26 +2016,25 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `cn_portland_cement` | 2 | 120.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_pratt_truss` | 2 | 90.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_precast_panel` | 2 | 110.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
-| `cn_reinforced_concrete` | 2 | 115.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
+| `cn_reinforced_concrete` | 2 | 200.0 | [`cn_reinforced_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
 | `cn_rolled_I_beam` | 2 | 110.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_roof_truss_corrugated` | 2 | 95.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_screw_pile` | 2 | 95.0 | [`cn_pile_driving`](87_construction.md#cn_pile_driving---pile-driving-screw-piles-soil-compaction) |
 | `cn_shotcrete` | 2 | 110.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
 | `cn_sprinkler` | 2 | 110.0 | [`cn_fire_escape`](87_construction.md#cn_fire_escape---fire-escape-and-automatic-sprinklers) |
 | `cn_stiffening_truss` | 2 | 100.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
-| `cn_tunnel_shield` | 2 | 150.0 | [`cn_tunnel_shield`](87_construction.md#cn_tunnel_shield---tunnel-shield-method-and-tunnel-lining) |
+| `cn_tunnel_shield` | 2 | 250.0 | [`cn_tunnel_shield`](87_construction.md#cn_tunnel_shield---tunnel-shield-method-and-tunnel-lining) |
 | `cn_underpinning` | 2 | 130.0 | [`cn_caisson`](87_construction.md#cn_caisson---caisson-pneumatic-caisson-underpinning) |
 | `cn_vibratory_compaction` | 2 | 85.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
 | `cn_warren_truss` | 2 | 85.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_wire_cable_spinning` | 2 | 110.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
-| `cn_curtain_wall` | 3 | 140.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
+| `cn_curtain_wall` | 3 | 150.0 | [`cn_curtain_wall`](87_construction.md#cn_curtain_wall---curtain-wall-plate-glass-sash-window-asphalt-roofing-corrugated-roof) |
 | `cn_diaphragm_wall` | 3 | 160.0 | [`cn_cofferdam`](87_construction.md#cn_cofferdam---cofferdam-dewatering-diaphragm-wall-sheet-piling) |
 | `cn_post_tensioning` | 3 | 135.0 | [`cn_prestressed_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
-| `cn_prestressed_concrete` | 3 | 145.0 | [`cn_prestressed_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
+| `cn_prestressed_concrete` | 3 | 180.0 | [`cn_prestressed_concrete`](87_construction.md#cn_reinforced_concrete---reinforced-concrete-slab-and-beam) |
 | `cn_rotary_cement_kiln` | 3 | 160.0 | [`cn_portland_cement`](87_construction.md#cn_portland_cement---portland-cement-powder) |
 | `cn_slipform` | 3 | 160.0 | [`cn_concrete_mixer`](87_construction.md#cn_concrete_mixer---concrete-mixing-and-placing-at-scale) |
 | `cn_space_frame` | 3 | 150.0 | [`cn_pratt_truss`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
-| `cn_steel_frame_skeleton` | 3 | 180.0 | [`cn_wrought_iron_girder`](87_construction.md#cn_wrought_iron_girder---wrought-iron-girder-and-later-steel) |
 | `cn_suspension_bridge` | 3 | 200.0 | [`cn_suspension_bridge`](87_construction.md#cn_suspension_bridge---suspension-bridge-system) |
 | `cn_welded_connection` | 3 | 125.0 | [`cn_riveted_connection`](87_construction.md#cn_riveted_connection---riveted-bolted-gusseted-and-welded-joints) |
 
@@ -2171,9 +2045,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `if_dewey_classification` | 0 | 80.0 | [`if_index_card_system`](88_media_signals.md#if_index_card_system---index-card-and-filing-system) |
 | `if_index_card_system` | 0 | 70.0 | [`if_index_card_system`](88_media_signals.md#if_index_card_system---index-card-and-filing-system) |
 | `if_iron_gall_ink` | 0 | 40.0 | [`if_quill`](88_media_signals.md#if_quill---quill-pen-penna) |
-| `if_papyrus` | 0 | 20.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
-| `if_parchment` | 0 | 30.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
 | `if_quill` | 0 | 15.0 | [`if_quill`](88_media_signals.md#if_quill---quill-pen-penna) |
+| `mat_papyrus` | 0 | 20.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
+| `mat_parchment` | 0 | 30.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
 | `if_acoustic_horn_recording` | 1 | 90.0 | [`if_disc_record`](88_media_signals.md#if_disc_record---disc-record) |
 | `if_adding_machine` | 1 | 120.0 | [`if_adding_machine`](88_media_signals.md#if_adding_machine---adding-machine) |
 | `if_antenna_dipole` | 1 | 80.0 | [`if_tuned_circuit`](88_media_signals.md#if_tuned_circuit---tuned-lc-circuit) |
@@ -2187,7 +2061,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `if_morse_key_and_sounder` | 1 | 100.0 | [`if_electric_telegraph`](88_media_signals.md#if_electric_telegraph---electric-telegraph) |
 | `if_phonautograph` | 1 | 110.0 | [`if_phonautograph`](88_media_signals.md#if_phonautograph---phonautograph) |
 | `if_punched_card` | 1 | 80.0 | [`if_punched_card`](88_media_signals.md#if_punched_card---punched-card) |
-| `if_rag_paper` | 1 | 40.0 | [`if_papyrus`](88_media_signals.md#if_papyrus---papyrus-sheet-papyrus-biblus) |
 | `if_silver_halide_sensitivity` | 1 | 120.0 | [`if_silver_halide_sensitivity`](88_media_signals.md#if_silver_halide_sensitivity---silver-halide-photographic-sensitivity) |
 | `if_slide_rule` | 1 | 100.0 | [`if_adding_machine`](88_media_signals.md#if_adding_machine---adding-machine) |
 | `if_spark_transmitter` | 1 | 130.0 | [`if_spark_transmitter`](88_media_signals.md#if_spark_transmitter---spark-transmitter) |
@@ -2195,7 +2068,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `if_telegraph_relay` | 1 | 90.0 | [`if_electric_telegraph`](88_media_signals.md#if_electric_telegraph---electric-telegraph) |
 | `if_telephone_receiver` | 1 | 80.0 | [`if_telephone_transmitter`](88_media_signals.md#if_telephone_transmitter---telephone-transmitter) |
 | `if_tin_foil_phonograph` | 1 | 130.0 | [`if_phonautograph`](88_media_signals.md#if_phonautograph---phonautograph) |
-| `if_tuned_circuit` | 1 | 90.0 | [`if_tuned_circuit`](88_media_signals.md#if_tuned_circuit---tuned-lc-circuit) |
 | `if_woodblock_printing` | 1 | 150.0 | [`if_printing_ink`](88_media_signals.md#if_printing_ink---printing-ink-oil-based) |
 | `if_amplitude_modulation` | 2 | 120.0 | [`if_triode_oscillator`](88_media_signals.md#if_triode_oscillator---triode-oscillator) |
 | `if_cable_repeater` | 2 | 140.0 | [`if_submarine_cable_gutta_percha`](88_media_signals.md#if_submarine_cable_gutta_percha---submarine-cable-with-gutta-percha) |
@@ -2216,7 +2088,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `if_iron_hand_press` | 2 | 140.0 | [`if_screw_press`](88_media_signals.md#if_screw_press---screw-press-for-printing) |
 | `if_keypunch` | 2 | 130.0 | [`if_punched_card`](88_media_signals.md#if_punched_card---punched-card) |
 | `if_leaf_shutter` | 2 | 140.0 | [`if_focal_plane_shutter`](88_media_signals.md#if_focal_plane_shutter---focal-plane-shutter) |
-| `if_loading_coil` | 2 | 120.0 | [`if_telephone_transmitter`](88_media_signals.md#if_telephone_transmitter---telephone-transmitter) |
 | `if_movable_type` | 2 | 200.0 | [`if_movable_type`](88_media_signals.md#if_movable_type---movable-type-cast-metal-typi-mobiles) |
 | `if_moving_coil_loudspeaker` | 2 | 130.0 | [`if_carbon_microphone`](88_media_signals.md#if_carbon_microphone---carbon-microphone) |
 | `if_pencil_graphite` | 2 | 100.0 | [`if_fountain_pen`](88_media_signals.md#if_fountain_pen---fountain-pen) |
@@ -2235,15 +2106,15 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `if_autochrome_plate` | 3 | 180.0 | [`if_celluloid_roll_film`](88_media_signals.md#if_celluloid_roll_film---celluloid-roll-film) |
 | `if_carbon_paper` | 3 | 70.0 | [`if_fountain_pen`](88_media_signals.md#if_fountain_pen---fountain-pen) |
 | `if_cathode_ray_tube` | 3 | 200.0 | [`if_cathode_ray_tube`](88_media_signals.md#if_cathode_ray_tube---cathode-ray-tube) |
-| `if_celluloid_roll_film` | 3 | 180.0 | [`if_celluloid_roll_film`](88_media_signals.md#if_celluloid_roll_film---celluloid-roll-film) |
+| `if_celluloid_roll_film` | 3 | 200.0 | [`if_celluloid_roll_film`](88_media_signals.md#if_celluloid_roll_film---celluloid-roll-film) |
 | `if_chromolithography` | 3 | 200.0 | [`if_lithography`](88_media_signals.md#if_lithography---lithography) |
 | `if_cine_camera` | 3 | 180.0 | [`if_cine_camera`](88_media_signals.md#if_cine_camera---cine-camera) |
 | `if_facsimile_transmission` | 3 | 170.0 | [`if_superheterodyne_receiver`](88_media_signals.md#if_superheterodyne_receiver---superheterodyne-receiver) |
 | `if_flashbulb` | 3 | 150.0 | [`if_flash_powder`](88_media_signals.md#if_flash_powder---flash-powder) |
 | `if_frequency_modulation` | 3 | 180.0 | [`if_triode_oscillator`](88_media_signals.md#if_triode_oscillator---triode-oscillator) |
-| `if_halftone_screen` | 3 | 140.0 | [`if_halftone_screen`](88_media_signals.md#if_halftone_screen---halftone-screen-and-dot-matrix) |
+| `if_halftone_screen` | 3 | 150.0 | [`if_halftone_screen`](88_media_signals.md#if_halftone_screen---halftone-screen-and-dot-matrix) |
 | `if_iconoscope` | 3 | 200.0 | [`if_cathode_ray_tube`](88_media_signals.md#if_cathode_ray_tube---cathode-ray-tube) |
-| `if_magnetic_tape` | 3 | 170.0 | [`if_magnetic_tape`](88_media_signals.md#if_magnetic_tape---magnetic-tape-recording) |
+| `if_magnetic_tape` | 3 | 250.0 | [`if_magnetic_tape`](88_media_signals.md#if_magnetic_tape---magnetic-tape-recording) |
 | `if_mimeograph` | 3 | 160.0 | [`if_mimeograph`](88_media_signals.md#if_mimeograph---mimeograph) |
 | `if_panchromatic_emulsion` | 3 | 140.0 | [`if_celluloid_roll_film`](88_media_signals.md#if_celluloid_roll_film---celluloid-roll-film) |
 | `if_photoengraving` | 3 | 130.0 | [`if_halftone_screen`](88_media_signals.md#if_halftone_screen---halftone-screen-and-dot-matrix) |
@@ -2267,7 +2138,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `in2_analytical_balance` | 1 | 50.0 | [`in2_analytical_balance`](89_remaining_arts.md#in2_analytical_balance---precision-balances-equal-arm-torsion-quartz-microbalance) |
 | `in2_mercury_barometer` | 1 | 45.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
 | `in2_orifice_flow_meter` | 1 | 50.0 | [`in2_pitot_tube`](89_remaining_arts.md#in2_pitot_tube---flow-measurement-pitot-venturi-orifice) |
-| `in2_pitot_tube` | 1 | 45.0 | [`in2_pitot_tube`](89_remaining_arts.md#in2_pitot_tube---flow-measurement-pitot-venturi-orifice) |
 | `in2_thermocouple` | 1 | 45.0 | [`in2_thermocouple`](89_remaining_arts.md#in2_thermocouple---temperature-measurement-thermocouple-rtd-gas-thermometry) |
 | `in2_tuning_fork_oscillator` | 1 | 60.0 | [`in2_quartz_resonator_frequency`](89_remaining_arts.md#in2_quartz_resonator_frequency---frequency-standards-quartz-tuning-fork-hairspring) |
 | `md2_cadaver_dissection` | 1 | 100.0 | [`md2_agar_media`](89_remaining_arts.md#md2_agar_media---laboratory-and-anatomical-method-agar-culture-microbiology-bioassay-drug-standardisation-cadaver-dissection) |
@@ -2275,7 +2145,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `md2_case_series` | 1 | 100.0 | [`md2_case_series`](89_remaining_arts.md#md2_case_series---clinical-study-design-case-series-to-randomised-controlled-trial) |
 | `md2_medical_journal` | 1 | 120.0 | [`md2_case_record`](89_remaining_arts.md#md2_case_record---medical-practice-institutions-case-records-journals-licensing-nursing-pharmacopoeia) |
 | `md2_medical_licensing` | 1 | 100.0 | [`md2_case_record`](89_remaining_arts.md#md2_case_record---medical-practice-institutions-case-records-journals-licensing-nursing-pharmacopoeia) |
-| `md2_mortality_table` | 1 | 120.0 | [`md2_medical_statistics`](89_remaining_arts.md#md2_medical_statistics---medical-statistics-and-vital-registration) |
 | `md2_vital_registration` | 1 | 100.0 | [`md2_medical_statistics`](89_remaining_arts.md#md2_medical_statistics---medical-statistics-and-vital-registration) |
 | `prc_apprentice_system` | 1 | 150.0 | [`prc_apprentice_system`](89_remaining_arts.md#prc_apprentice_system---apprentice-system-and-toolroom-institution) |
 | `prn_cataloguing_system` | 1 | 200.0 | [`prn_library_archive`](89_remaining_arts.md#prn_library_archive---library-archive-cataloguing-indexing-copyright-economics) |
@@ -2327,9 +2196,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `gp_laminated_core` | 2 | 90.0 | [`gp_laminated_core`](89_remaining_arts.md#gp_laminated_core---laminated-iron-core) |
 | `in2_aneroid_capsule` | 2 | 70.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
 | `in2_balance_spring_watch` | 2 | 100.0 | [`in2_quartz_resonator_frequency`](89_remaining_arts.md#in2_quartz_resonator_frequency---frequency-standards-quartz-tuning-fork-hairspring) |
-| `in2_bourdon_pressure_gauge` | 2 | 75.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
 | `in2_mcleod_vacuum_gauge` | 2 | 85.0 | [`in2_bourdon_pressure_gauge`](89_remaining_arts.md#in2_bourdon_pressure_gauge---pressure-and-vacuum-gauges) |
-| `in2_optical_comparator` | 2 | 70.0 | [`in2_optical_comparator`](89_remaining_arts.md#in2_optical_comparator---optical-length-measurement-comparator-and-travelling-microscope) |
 | `in2_resistance_thermometer_RTD` | 2 | 80.0 | [`in2_thermocouple`](89_remaining_arts.md#in2_thermocouple---temperature-measurement-thermocouple-rtd-gas-thermometry) |
 | `in2_torsion_balance` | 2 | 85.0 | [`in2_analytical_balance`](89_remaining_arts.md#in2_analytical_balance---precision-balances-equal-arm-torsion-quartz-microbalance) |
 | `in2_travelling_microscope` | 2 | 80.0 | [`in2_optical_comparator`](89_remaining_arts.md#in2_optical_comparator---optical-length-measurement-comparator-and-travelling-microscope) |
@@ -2417,8 +2284,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `met_mannesmann_piercing` | 3 | 300.0 | [`met_mannesmann_piercing`](89_remaining_arts.md#met_mannesmann_piercing---mannesmann-piercing-for-seamless-tube) |
 | `met_metallography` | 3 | 200.0 | [`met_metallography`](89_remaining_arts.md#met_metallography---metal-structure-analysis-metallography-phase-diagrams-spectroscopy) |
 | `met_spectroscopic_assay` | 3 | 160.0 | [`met_metallography`](89_remaining_arts.md#met_metallography---metal-structure-analysis-metallography-phase-diagrams-spectroscopy) |
-| `met_tensile_test` | 3 | 240.0 | [`met_tensile_test`](89_remaining_arts.md#met_tensile_test---mechanical-testing-tensile-hardness-fatigue) |
-| `mfg_assembly_line` | 3 | 250.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
 | `mfg_dimensioning` | 3 | 160.0 | [`mfg_drawing_office`](89_remaining_arts.md#mfg_drawing_office---engineering-drawing-and-documentation) |
 | `mfg_quality_dept` | 3 | 160.0 | [`mfg_production_schedule`](89_remaining_arts.md#mfg_production_schedule---production-planning-and-control) |
 | `mfg_work_study` | 3 | 200.0 | [`mfg_time_study`](89_remaining_arts.md#mfg_time_study---scientific-management-time-study-work-study-standard-hour-piece-rate-assembly-line) |
@@ -2438,7 +2303,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mat_natural_rubber` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
 | `mat_newworld_crops` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
 | `mat_platinum_bulk` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
-| `mat_quinine` | 4 | 60.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
+| `mat_quinine` | 4 | 150.0 | [`mat_natural_rubber`](89_remaining_arts.md#mat_natural_rubber---distant-materials-that-are-reachable-not-exotic) |
 | `md2_dna` | 4 | 150.0 | [`md2_cell_theory`](89_remaining_arts.md#md2_cell_theory---cell-theory-and-heredity-chromosomes-genes-dna-mendelian-ratios) |
 | `met_fatigue_testing` | 4 | 280.0 | [`met_tensile_test`](89_remaining_arts.md#met_tensile_test---mechanical-testing-tensile-hardness-fatigue) |
 | `mil_operational_research` | 4 | 120.0 | [`mil_cryptanalysis`](89_remaining_arts.md#mil_cryptanalysis---signals-intelligence-cryptanalysis-operational-research) |
@@ -2450,14 +2315,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
+| `mat_linen` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_cotton_trade` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_drop_spindle` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_dye_madder` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_dye_murex` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_dye_woad` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_felting` | 0 | 0.0 | _(module has no anchor)_ |
-| `tex_fulling` | 0 | 0.0 | _(module has no anchor)_ |
-| `tex_linen` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_sailcloth` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_silk_trade` | 0 | 0.0 | _(module has no anchor)_ |
 | `tex_two_beam_loom` | 0 | 0.0 | _(module has no anchor)_ |
@@ -2479,11 +2343,8 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_shaft` | 0 | 50.0 | _(module has no anchor)_ |
 | `tx2_shed` | 0 | 30.0 | _(module has no anchor)_ |
 | `tx2_silk_fibre` | 0 | 40.0 | _(module has no anchor)_ |
-| `tx2_vegetable_tanning` | 0 | 50.0 | _(module has no anchor)_ |
 | `tx2_wool_fibre` | 0 | 40.0 | _(module has no anchor)_ |
 | `tex_canvas` | 1 | 40.0 | _(module has no anchor)_ |
-| `tex_carding` | 1 | 60.0 | _(module has no anchor)_ |
-| `tex_combing` | 1 | 50.0 | _(module has no anchor)_ |
 | `tex_fitted_garment` | 1 | 50.0 | _(module has no anchor)_ |
 | `tex_hand_ginning` | 1 | 30.0 | _(module has no anchor)_ |
 | `tex_horizontal_loom` | 1 | 80.0 | _(module has no anchor)_ |
@@ -2534,8 +2395,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_paper_bag` | 1 | 60.0 | _(module has no anchor)_ |
 | `tx2_paperclip` | 1 | 50.0 | _(module has no anchor)_ |
 | `tx2_pattern_grading` | 1 | 80.0 | _(module has no anchor)_ |
-| `tx2_pencil` | 1 | 80.0 | _(module has no anchor)_ |
-| `tx2_playing_card` | 1 | 80.0 | _(module has no anchor)_ |
+| `tx2_playing_card` | 1 | 100.0 | _(module has no anchor)_ |
 | `tx2_postcard` | 1 | 70.0 | _(module has no anchor)_ |
 | `tx2_printing_block` | 1 | 100.0 | _(module has no anchor)_ |
 | `tx2_ramie_fibre` | 1 | 50.0 | _(module has no anchor)_ |
@@ -2553,7 +2413,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_take_up_motion` | 1 | 60.0 | _(module has no anchor)_ |
 | `tx2_temple` | 1 | 40.0 | _(module has no anchor)_ |
 | `tx2_tin_can` | 1 | 80.0 | _(module has no anchor)_ |
-| `tx2_toothbrush` | 1 | 60.0 | _(module has no anchor)_ |
 | `tx2_twist_insertion` | 1 | 50.0 | _(module has no anchor)_ |
 | `tx2_warp_sizing` | 1 | 50.0 | _(module has no anchor)_ |
 | `tx2_warping_mill` | 1 | 60.0 | _(module has no anchor)_ |
@@ -2587,16 +2446,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_clockwork_toy` | 2 | 110.0 | _(module has no anchor)_ |
 | `tx2_corrugated_box` | 2 | 100.0 | _(module has no anchor)_ |
 | `tx2_cropping` | 2 | 90.0 | _(module has no anchor)_ |
-| `tx2_crown_cork` | 2 | 90.0 | _(module has no anchor)_ |
 | `tx2_discharge_printing` | 2 | 100.0 | _(module has no anchor)_ |
 | `tx2_dobby` | 2 | 140.0 | _(module has no anchor)_ |
 | `tx2_dyeing_garment` | 2 | 90.0 | _(module has no anchor)_ |
 | `tx2_embossing` | 2 | 80.0 | _(module has no anchor)_ |
 | `tx2_eraser` | 2 | 70.0 | _(module has no anchor)_ |
-| `tx2_fountain_pen` | 2 | 110.0 | _(module has no anchor)_ |
 | `tx2_jacquard_cards` | 2 | 80.0 | _(module has no anchor)_ |
 | `tx2_jacquard_head` | 2 | 200.0 | _(module has no anchor)_ |
-| `tx2_jigsaw_puzzle` | 2 | 90.0 | _(module has no anchor)_ |
 | `tx2_lasting_machine` | 2 | 120.0 | _(module has no anchor)_ |
 | `tx2_latch_needle` | 2 | 90.0 | _(module has no anchor)_ |
 | `tx2_lockstitch` | 2 | 100.0 | _(module has no anchor)_ |
@@ -2614,7 +2470,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_ring_frame` | 2 | 120.0 | _(module has no anchor)_ |
 | `tx2_ropemaking_machine` | 2 | 110.0 | _(module has no anchor)_ |
 | `tx2_safety_match` | 2 | 100.0 | _(module has no anchor)_ |
-| `tx2_safety_razor` | 2 | 120.0 | _(module has no anchor)_ |
 | `tx2_sewing_machine_domestic` | 2 | 140.0 | _(module has no anchor)_ |
 | `tx2_sewing_machine_industrial` | 2 | 150.0 | _(module has no anchor)_ |
 | `tx2_shampoo` | 2 | 100.0 | _(module has no anchor)_ |
@@ -2628,8 +2483,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_toothpaste_tube` | 2 | 100.0 | _(module has no anchor)_ |
 | `tx2_warp_knitting` | 2 | 130.0 | _(module has no anchor)_ |
 | `tx2_waterproofing` | 2 | 80.0 | _(module has no anchor)_ |
-| `tx2_zip_fastener` | 2 | 140.0 | _(module has no anchor)_ |
-| `tex_jacquard_loom` | 3 | 250.0 | _(module has no anchor)_ |
 | `tex_mercerisation` | 3 | 100.0 | _(module has no anchor)_ |
 | `tex_roller_printing` | 3 | 180.0 | _(module has no anchor)_ |
 | `tex_spinning_mule` | 3 | 200.0 | _(module has no anchor)_ |
@@ -2641,7 +2494,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_bleaching_peroxide` | 3 | 90.0 | _(module has no anchor)_ |
 | `tx2_button_plastic` | 3 | 70.0 | _(module has no anchor)_ |
 | `tx2_camera_consumer` | 3 | 130.0 | _(module has no anchor)_ |
-| `tx2_chrome_tanning` | 3 | 120.0 | _(module has no anchor)_ |
 | `tx2_elastic` | 3 | 90.0 | _(module has no anchor)_ |
 | `tx2_flameproofing` | 3 | 100.0 | _(module has no anchor)_ |
 | `tx2_glass_fibre` | 3 | 130.0 | _(module has no anchor)_ |
@@ -2649,22 +2501,18 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `tx2_mothproofing` | 3 | 90.0 | _(module has no anchor)_ |
 | `tx2_printing_screen` | 3 | 120.0 | _(module has no anchor)_ |
 | `tx2_rayon_cupro` | 3 | 150.0 | _(module has no anchor)_ |
-| `tx2_rayon_nitro` | 3 | 140.0 | _(module has no anchor)_ |
-| `tx2_rayon_viscose` | 3 | 160.0 | _(module has no anchor)_ |
 | `tx2_rubber_soles` | 3 | 100.0 | _(module has no anchor)_ |
-| `tx2_vacuum_flask` | 3 | 120.0 | _(module has no anchor)_ |
+| `mat_dyes_synthetic` | 4 | 200.0 | _(module has no anchor)_ |
 | `tex_chlorine_bleaching` | 4 | 120.0 | _(module has no anchor)_ |
 | `tex_chrome_tanning` | 4 | 140.0 | _(module has no anchor)_ |
 | `tex_rayon_nitro` | 4 | 180.0 | _(module has no anchor)_ |
 | `tex_rayon_viscose` | 4 | 200.0 | _(module has no anchor)_ |
-| `tex_synthetic_dyes` | 4 | 80.0 | _(module has no anchor)_ |
 | `tx2_acrylic` | 4 | 170.0 | _(module has no anchor)_ |
 | `tx2_nylon_6_6` | 4 | 180.0 | _(module has no anchor)_ |
 | `tx2_permanent_press` | 4 | 120.0 | _(module has no anchor)_ |
 | `tx2_polyester` | 4 | 180.0 | _(module has no anchor)_ |
 | `tx2_radio_set` | 4 | 150.0 | _(module has no anchor)_ |
 | `tx2_rayon_acetate` | 4 | 140.0 | _(module has no anchor)_ |
-| `tex_nylon` | 5 | 250.0 | _(module has no anchor)_ |
 
 ### 91_household.md
 
@@ -2676,7 +2524,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_cosmetics_roman` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_flush_latrine_simple` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_furniture_wooden` | 0 | 0.0 | _(module has no anchor)_ |
-| `hom_glass_windows` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_hypocaust` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_lead_plumbing` | 0 | 0.0 | _(module has no anchor)_ |
 | `hom_locks_keys` | 0 | 0.0 | _(module has no anchor)_ |
@@ -2692,14 +2539,13 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_jigsaw_puzzle` | 1 | 100.0 | _(module has no anchor)_ |
 | `hom_latrine_water_trap` | 1 | 60.0 | _(module has no anchor)_ |
 | `hom_matches_friction` | 1 | 60.0 | _(module has no anchor)_ |
-| `hom_mirror_silvered_glass` | 1 | 90.0 | _(module has no anchor)_ |
-| `hom_pencil` | 1 | 70.0 | _(module has no anchor)_ |
+| `hom_mirror_silvered_glass` | 1 | 150.0 | _(module has no anchor)_ |
+| `hom_pencil` | 1 | 80.0 | _(module has no anchor)_ |
 | `hom_playing_cards_printed` | 1 | 60.0 | _(module has no anchor)_ |
 | `hom_punkah_ceiling` | 1 | 50.0 | _(module has no anchor)_ |
 | `hom_safety_pin` | 1 | 40.0 | _(module has no anchor)_ |
-| `hom_soap_hard` | 1 | 80.0 | _(module has no anchor)_ |
 | `hom_spectacles` | 1 | 90.0 | _(module has no anchor)_ |
-| `hom_toothbrush` | 1 | 50.0 | _(module has no anchor)_ |
+| `hom_toothbrush` | 1 | 60.0 | _(module has no anchor)_ |
 | `hom_umbrella` | 1 | 80.0 | _(module has no anchor)_ |
 | `hom_kitchen_range` | 2 | 130.0 | _(module has no anchor)_ |
 | `hom_lamp_argand` | 2 | 100.0 | _(module has no anchor)_ |
@@ -2725,8 +2571,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_doll_fashion` | 3 | 110.0 | _(module has no anchor)_ |
 | `hom_double_glazing` | 3 | 120.0 | _(module has no anchor)_ |
 | `hom_gas_lamp` | 3 | 140.0 | _(module has no anchor)_ |
-| `hom_refrigeration_mechanical` | 3 | 200.0 | _(module has no anchor)_ |
-| `hom_safety_razor` | 3 | 110.0 | _(module has no anchor)_ |
+| `hom_safety_razor` | 3 | 120.0 | _(module has no anchor)_ |
 | `hom_sewer_stormwater_separation` | 3 | 180.0 | _(module has no anchor)_ |
 | `hom_shampoo_soap_based` | 3 | 80.0 | _(module has no anchor)_ |
 | `hom_toothpaste_commercial` | 3 | 90.0 | _(module has no anchor)_ |
@@ -2736,10 +2581,10 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_dishwasher` | 4 | 200.0 | _(module has no anchor)_ |
 | `hom_electric_fan` | 4 | 100.0 | _(module has no anchor)_ |
 | `hom_electric_lighting` | 4 | 150.0 | _(module has no anchor)_ |
-| `hom_heating_hot_water_radiator` | 4 | 180.0 | _(module has no anchor)_ |
 | `hom_refrigerator_home_electric` | 4 | 200.0 | _(module has no anchor)_ |
 | `hom_vacuum_cleaner` | 4 | 140.0 | _(module has no anchor)_ |
 | `hom_washing_machine_electric` | 4 | 160.0 | _(module has no anchor)_ |
+| `mat_ice_artificial` | 4 | 200.0 | _(module has no anchor)_ |
 
 ### 95_expeditions.md
 
@@ -2779,7 +2624,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fin_hotel` | 1 | 120.0 | _(module has no anchor)_ |
 | `fin_inn` | 1 | 100.0 | _(module has no anchor)_ |
 | `fin_pawnshop` | 1 | 60.0 | _(module has no anchor)_ |
-| `fin_playing_card` | 1 | 100.0 | _(module has no anchor)_ |
 | `fin_trading_post` | 1 | 100.0 | _(module has no anchor)_ |
 | `fin_almanac` | 2 | 150.0 | _(module has no anchor)_ |
 | `fin_arbitrage` | 2 | 80.0 | _(module has no anchor)_ |
@@ -2801,7 +2645,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `fin_lottery` | 2 | 150.0 | _(module has no anchor)_ |
 | `fin_monopoly` | 2 | 80.0 | _(module has no anchor)_ |
 | `fin_mortgage` | 2 | 120.0 | _(module has no anchor)_ |
-| `fin_omnibus` | 2 | 140.0 | _(module has no anchor)_ |
 | `fin_plantation` | 2 | 200.0 | _(module has no anchor)_ |
 | `fin_postal_service` | 2 | 180.0 | _(module has no anchor)_ |
 | `fin_professional_sport` | 2 | 140.0 | _(module has no anchor)_ |
@@ -2861,7 +2704,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_fuse_slow_match` | 1 | 30.0 | _(module has no anchor)_ |
 | `mil_glacis` | 1 | 60.0 | _(module has no anchor)_ |
 | `mil_incorporating_mill` | 1 | 140.0 | _(module has no anchor)_ |
-| `mil_mortar` | 1 | 80.0 | _(module has no anchor)_ |
 | `mil_plate_armour_firearms` | 1 | 70.0 | _(module has no anchor)_ |
 | `mil_powder_mill` | 1 | 120.0 | _(module has no anchor)_ |
 | `mil_ravelin` | 1 | 75.0 | _(module has no anchor)_ |
@@ -2937,7 +2779,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `mil_recoil_mechanism` | 3 | 130.0 | _(module has no anchor)_ |
 | `mil_revolver` | 3 | 110.0 | _(module has no anchor)_ |
 | `mil_sloped_armour` | 3 | 85.0 | _(module has no anchor)_ |
-| `mil_smokeless_powder` | 3 | 110.0 | _(module has no anchor)_ |
+| `mil_smokeless_powder` | 3 | 180.0 | _(module has no anchor)_ |
 | `mil_sponson` | 3 | 85.0 | _(module has no anchor)_ |
 | `mil_tank_turret` | 3 | 110.0 | _(module has no anchor)_ |
 | `mil_track` | 3 | 120.0 | _(module has no anchor)_ |
@@ -2969,7 +2811,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | Node | Tier | Your hours | Recipe |
 |---|---:|---:|---|
-| `en_breastshot_wheel` | 0 | 70.0 | [`en_overshot_wheel`](98_power_plants.md#en_overshot_wheel---overshot-water-wheel) |
+| `en_breastshot_wheel` | 0 | 180.0 | [`en_overshot_wheel`](98_power_plants.md#en_overshot_wheel---overshot-water-wheel) |
 | `en_charcoal_burning` | 0 | 60.0 | [`en_charcoal_burning`](98_power_plants.md#en_charcoal_burning---charcoal-production-by-burning) |
 | `en_coal_mining_washing` | 0 | 100.0 | [`en_charcoal_burning`](98_power_plants.md#en_charcoal_burning---charcoal-production-by-burning) |
 | `en_horse_gin` | 0 | 30.0 | [`en_undershot_wheel`](98_power_plants.md#en_undershot_wheel---undershot-water-wheel) |
@@ -2993,17 +2835,15 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `en_exciter` | 1 | 100.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
 | `en_expansive_working` | 1 | 110.0 | [`en_expansive_working`](98_power_plants.md#en_expansive_working---expansive-working-cutoff) |
 | `en_feedwater_heater` | 1 | 90.0 | [`en_economiser`](98_power_plants.md#en_economiser---economiser) |
-| `en_four_stroke_cycle` | 1 | 100.0 | [`en_four_stroke_cycle`](98_power_plants.md#en_four_stroke_cycle---four-stroke-cycle-otto) |
-| `en_fuel_oil` | 1 | 85.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
 | `en_fuse` | 1 | 70.0 | [`en_switchgear`](98_power_plants.md#en_switchgear---switchgear-high-voltage-switch) |
-| `en_gas_engine` | 1 | 140.0 | [`en_four_stroke_cycle`](98_power_plants.md#en_four_stroke_cycle---four-stroke-cycle-otto) |
+| `en_gas_engine` | 1 | 350.0 | [`en_four_stroke_cycle`](98_power_plants.md#en_four_stroke_cycle---four-stroke-cycle-otto) |
 | `en_gas_holder` | 1 | 110.0 | [`en_coke_oven`](98_power_plants.md#en_coke_oven---coke-oven-beehive-or-by-product) |
 | `en_gas_producer` | 1 | 130.0 | [`en_coke_oven`](98_power_plants.md#en_coke_oven---coke-oven-beehive-or-by-product) |
 | `en_hot_bulb_engine` | 1 | 120.0 | [`en_hot_bulb_engine`](98_power_plants.md#en_hot_bulb_engine---hot-bulb-engine) |
 | `en_hydraulic_accumulator` | 1 | 100.0 | [`en_hydraulic_accumulator`](98_power_plants.md#en_hydraulic_accumulator---hydraulic-accumulator) |
 | `en_hydraulic_power_main` | 1 | 140.0 | [`en_hydraulic_accumulator`](98_power_plants.md#en_hydraulic_accumulator---hydraulic-accumulator) |
 | `en_insulator` | 1 | 100.0 | [`en_transmission_line`](98_power_plants.md#en_transmission_line---transmission-line-high-voltage-power-cable) |
-| `en_kerosene` | 1 | 80.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
+| `en_kerosene` | 1 | 100.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
 | `en_lightning_arrester` | 1 | 90.0 | [`en_switchgear`](98_power_plants.md#en_switchgear---switchgear-high-voltage-switch) |
 | `en_load_factor_diversity` | 1 | 120.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
 | `en_lubricating_oil` | 1 | 100.0 | [`en_petrol`](98_power_plants.md#en_petrol---petrol-gasoline-production) |
@@ -3016,21 +2856,20 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `en_poncelet_wheel` | 1 | 100.0 | [`en_overshot_wheel`](98_power_plants.md#en_overshot_wheel---overshot-water-wheel) |
 | `en_poppet_valve` | 1 | 100.0 | [`en_poppet_valve`](98_power_plants.md#en_poppet_valve---poppet-valve-and-camshaft) |
 | `en_power_factor_correction` | 1 | 120.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
-| `en_pressure_gauge` | 1 | 100.0 | [`en_safety_valve`](98_power_plants.md#en_safety_valve---safety-valve-pop-off) |
 | `en_reduction_gear` | 1 | 120.0 | [`en_parallel_motion`](98_power_plants.md#en_parallel_motion---parallel-motion-linkage-watt) |
-| `en_safety_valve` | 1 | 70.0 | [`en_safety_valve`](98_power_plants.md#en_safety_valve---safety-valve-pop-off) |
+| `en_safety_valve` | 1 | 150.0 | [`en_safety_valve`](98_power_plants.md#en_safety_valve---safety-valve-pop-off) |
 | `en_sleeve_valve` | 1 | 120.0 | [`en_poppet_valve`](98_power_plants.md#en_poppet_valve---poppet-valve-and-camshaft) |
 | `en_spring_sail` | 1 | 100.0 | [`en_patent_sail`](98_power_plants.md#en_patent_sail---patent-sail) |
 | `en_steam_trap` | 1 | 80.0 | [`en_safety_valve`](98_power_plants.md#en_safety_valve---safety-valve-pop-off) |
-| `en_stirling_engine` | 1 | 120.0 | [`en_stirling_engine`](98_power_plants.md#en_stirling_engine---stirling-hot-air-engine) |
+| `en_stirling_engine` | 1 | 300.0 | [`en_stirling_engine`](98_power_plants.md#en_stirling_engine---stirling-hot-air-engine) |
 | `en_sun_planet_gear` | 1 | 100.0 | [`en_parallel_motion`](98_power_plants.md#en_parallel_motion---parallel-motion-linkage-watt) |
 | `en_town_gas_retort` | 1 | 140.0 | [`en_coke_oven`](98_power_plants.md#en_coke_oven---coke-oven-beehive-or-by-product) |
 | `en_two_stroke_cycle` | 1 | 90.0 | [`en_four_stroke_cycle`](98_power_plants.md#en_four_stroke_cycle---four-stroke-cycle-otto) |
 | `en_water_wheel_governor` | 1 | 100.0 | [`en_water_wheel_governor`](98_power_plants.md#en_water_wheel_governor---governor-for-water-wheel) |
 | `en_wind_pump` | 1 | 120.0 | [`en_wind_pump`](98_power_plants.md#en_wind_pump---wind-pump) |
-| `en_windmill_fantail` | 1 | 90.0 | [`en_patent_sail`](98_power_plants.md#en_patent_sail---patent-sail) |
+| `en_windmill_fantail` | 1 | 200.0 | [`en_patent_sail`](98_power_plants.md#en_patent_sail---patent-sail) |
 | `en_alternator` | 2 | 130.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
-| `en_battery_nickel_iron` | 2 | 140.0 | [`en_battery_lead_acid`](98_power_plants.md#en_battery_lead_acid---lead-acid-storage-battery) |
+| `en_battery_nickel_iron` | 2 | 300.0 | [`en_battery_lead_acid`](98_power_plants.md#en_battery_lead_acid---lead-acid-storage-battery) |
 | `en_boiler_babcock` | 2 | 140.0 | [`en_boiler_water_tube`](98_power_plants.md#en_boiler_water_tube---water-tube-boiler) |
 | `en_boiler_stirling` | 2 | 150.0 | [`en_boiler_water_tube`](98_power_plants.md#en_boiler_water_tube---water-tube-boiler) |
 | `en_centrifugal_governor` | 2 | 120.0 | [`en_water_wheel_governor`](98_power_plants.md#en_water_wheel_governor---governor-for-water-wheel) |
@@ -3038,21 +2877,19 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `en_compound_engine` | 2 | 180.0 | [`en_high_pressure_engine`](98_power_plants.md#en_high_pressure_engine---high-pressure-steam-engine) |
 | `en_corliss_valve` | 2 | 150.0 | [`en_expansive_working`](98_power_plants.md#en_expansive_working---expansive-working-cutoff) |
 | `en_double_acting` | 2 | 160.0 | [`en_atmospheric_engine`](98_power_plants.md#en_atmospheric_engine---atmospheric-engine-newcomen) |
-| `en_dynamo` | 2 | 0.0 | [`en_alternator`](98_power_plants.md#en_alternator---alternator-ac-generator) |
 | `en_fourneyron_turbine` | 2 | 200.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
 | `en_francis_turbine` | 2 | 220.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
 | `en_frequency_standardisation` | 2 | 150.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
 | `en_fuel_injection` | 2 | 150.0 | [`en_poppet_valve`](98_power_plants.md#en_poppet_valve---poppet-valve-and-camshaft) |
 | `en_grid_interconnection` | 2 | 180.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
 | `en_high_pressure_engine` | 2 | 180.0 | [`en_high_pressure_engine`](98_power_plants.md#en_high_pressure_engine---high-pressure-steam-engine) |
-| `en_oil_cracking` | 2 | 150.0 | [`en_oil_drilling`](98_power_plants.md#en_oil_drilling---oil-drilling-and-production) |
-| `en_pelton_wheel` | 2 | 180.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
+| `en_pelton_wheel` | 2 | 250.0 | [`en_fourneyron_turbine`](98_power_plants.md#en_fourneyron_turbine---fourneyron-turbine) |
 | `en_rotary_converter` | 2 | 150.0 | [`en_battery_charging`](98_power_plants.md#en_battery_charging---battery-charging-system) |
 | `en_separate_condenser` | 2 | 200.0 | [`en_separate_condenser`](98_power_plants.md#en_separate_condenser---separate-condenser-watt) |
 | `en_steam_turbine_curtis` | 2 | 210.0 | [`en_steam_turbine_impulse`](98_power_plants.md#en_steam_turbine_impulse---impulse-steam-turbine-de-laval) |
 | `en_steam_turbine_impulse` | 2 | 200.0 | [`en_steam_turbine_impulse`](98_power_plants.md#en_steam_turbine_impulse---impulse-steam-turbine-de-laval) |
-| `en_steam_turbine_reaction` | 2 | 230.0 | [`en_steam_turbine_impulse`](98_power_plants.md#en_steam_turbine_impulse---impulse-steam-turbine-de-laval) |
-| `en_substation` | 2 | 150.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
+| `en_steam_turbine_reaction` | 2 | 400.0 | [`en_steam_turbine_impulse`](98_power_plants.md#en_steam_turbine_impulse---impulse-steam-turbine-de-laval) |
+| `en_substation` | 2 | 300.0 | [`en_substation`](98_power_plants.md#en_substation---substation-transformer-station) |
 | `en_supercharger` | 2 | 140.0 | [`en_supercharger`](98_power_plants.md#en_supercharger---supercharger-mechanically-driven) |
 | `en_switchgear` | 2 | 120.0 | [`en_switchgear`](98_power_plants.md#en_switchgear---switchgear-high-voltage-switch) |
 | `en_thermal_station` | 2 | 220.0 | [`en_hydroelectric_station`](98_power_plants.md#en_hydroelectric_station---hydroelectric-power-station) |
@@ -3073,9 +2910,9 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 
 | status | nodes |
 |---|---:|
-| linked to a specific recipe entry | 878 |
-| linked to a domain module, no specific entry | 2006 |
+| linked to a specific recipe entry | 847 |
+| linked to a domain module, no specific entry | 1874 |
 | documented in a top-level prose file | 13 |
-| no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
+| no link BY DESIGN (capability rungs, materials, unobtainables) | 87 |
 | **undocumented, a real gap** | **0** |
 
