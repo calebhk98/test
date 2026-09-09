@@ -273,27 +273,27 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### electrolysis_industrial - electroplating, electro-refining, chlor-alkali, aluminium
 
-**What it is / why you want it.** Four industrial processes ride on the same trick, passing current through a solution to move metal or split molecules apart, and the first of them (electroplating) is immediately, enormously profitable in a status-obsessed Roman market.
+**What it is / why you want it.** Four industrial processes ride on the same trick, current through a solution moving metal or splitting molecules, and the first (electroplating) is immediately, enormously profitable in a status-obsessed Roman market.
 
-**Why you would never guess this.** That the same weak battery current which barely warms a wire can, given enough time, physically transfer measurable quantities of metal from one electrode to another, atom by atom, is not intuitive from anything in mechanics.
+**Why you would never guess this.** That the same weak battery current which barely warms a wire can, given time, physically transfer measurable metal from one electrode to another, atom by atom, is not intuitive from mechanics.
 
 **Prerequisites.** `daniell_cell` or `dynamo_motor` for current, `wire_insulation`.
 
-**Roman-available inputs.** Copper sulfate (native, for copper plating and refining baths); brine (for chlor-alkali); silver or gold objects/scrap as anode material for plating; for aluminium, bauxite-type clay (Gallic deposits, aluminium-rich clays are workable even if true bauxite is not confirmed locally) and fluorspar (for synthetic cryolite, see below).
+**Roman-available inputs.** Copper sulfate (native, plating/refining baths); brine (chlor-alkali); silver or gold scrap as plating anode; for aluminium, bauxite-type clay (Gallic deposits, workable even if true bauxite is unconfirmed locally) and fluorspar (synthetic cryolite, below).
 
 **Procedure.**
-1. Electroplating: hang the object to be plated as cathode, a bar of the plating metal as anode, both in a solution of that metal's salt (copper sulfate for copper), pass a steady low current for hours to days depending on thickness wanted. Cheap bronze or iron statuary, plated silver or gold, is visually near-identical to solid precious metal at a fraction of the material cost.
-2. Electro-refining copper: impure "blister" copper as anode, a thin sheet of pure copper as starter cathode, dilute copper sulfate/sulfuric bath, current dissolves the impure anode and redeposits 99.9%+ pure copper on the cathode; valuable silver and gold in the ore-impure copper collect undissolved as "anode slime", a recoverable byproduct. This purity is what low-resistance wire actually needs.
-3. Chlor-alkali: electrolyse strong brine between inert electrodes (carbon anode, iron cathode); chlorine gas evolves at the anode, hydrogen at the cathode, sodium hydroxide accumulates in solution. First cheap source of caustic soda and chlorine (bleach, disinfectant) in the ancient world.
-4. Aluminium, Hall-Heroult: dissolve alumina (from roasted, purified bauxite-type clay) in a molten bath of cryolite or a synthetic fluoride flux (made by reacting fluorspar with sulfuric acid to get hydrofluoric acid, then reacting that with soda and alumina), electrolyse at roughly 950-980 C with carbon electrodes and heavy current, molten aluminium collects at the cathode. This step needs `dynamo_motor`-scale current, a battery bank cannot supply it economically.
+1. Electroplating: object to be plated as cathode, a bar of the plating metal as anode, both in that metal's salt solution (copper sulfate for copper), steady low current for hours to days depending on thickness. Cheap bronze/iron statuary plated silver or gold is visually near-identical to solid precious metal at a fraction of the cost.
+2. Electro-refining copper: impure "blister" copper anode, thin pure-copper starter cathode, dilute copper sulfate/sulfuric bath, current dissolves the impure anode and redeposits 99.9%+ pure copper on the cathode; silver/gold impurities collect as recoverable "anode slime". This purity is what low-resistance wire needs.
+3. Chlor-alkali: electrolyse strong brine between inert electrodes (carbon anode, iron cathode); chlorine at the anode, hydrogen at the cathode, sodium hydroxide accumulates in solution. First cheap ancient source of caustic soda and chlorine.
+4. Aluminium, Hall-Heroult: dissolve alumina (roasted, purified bauxite-clay) in molten cryolite or synthetic fluoride flux (fluorspar plus sulfuric acid gives hydrofluoric acid, reacted with soda and alumina), electrolyse at ~950-980 C with carbon electrodes and heavy current, molten aluminium collects at the cathode. Needs `dynamo_motor`-scale current, a battery bank cannot supply it economically.
 
-**How you know it worked.** Plating: a visible, adherent, evenly coloured metal layer that does not flake under a fingernail scrape. Refining: cathode sheet grows measurably heavier and visibly more lustrous over days. Chlor-alkali: sharp chlorine smell at the anode confirms gas evolution. Aluminium: a silvery, light metal pool forms at the cathode, distinctly lighter than any prior known metal for the same volume.
+**How you know it worked.** Plating: visible, adherent, evenly coloured layer that does not flake under a fingernail. Refining: cathode grows measurably heavier and more lustrous over days. Chlor-alkali: sharp chlorine smell confirms gas evolution. Aluminium: a silvery pool distinctly lighter than any prior metal for the same volume.
 
-**Failure modes.** Plating: too high a current gives a rough, poorly-adherent, "burnt" black deposit, keep current density low and patient. Aluminium bath: contamination or wrong flux ratio raises the melting point past what the furnace can sustain, or fails to dissolve the alumina at all.
+**Failure modes.** Plating: too high a current gives a rough "burnt" deposit, keep current density low. Aluminium bath: wrong flux ratio raises the melting point past what the furnace holds, or fails to dissolve the alumina.
 
-**Cost & labour.** ESTIMATED. Plating is cheap and fast to profit, days to positive cash flow once a Daniell bank exists. Aluminium is a late, capital-heavy, dynamo-dependent process, treat it as a capstone project, not an early win.
+**Cost & labour.** ESTIMATED. Plating is cheap, fast to profit. Aluminium is a late, capital-heavy, dynamo-dependent capstone project, not an early win.
 
-**Danger.** Chlorine gas is acutely toxic, work outdoors or with strong ventilation, never in an enclosed room. Hydrofluoric acid (for synthetic cryolite) is severely corrosive and absorbs through skin causing delayed, dangerous poisoning, handle only in lead or wax-lined vessels with full skin protection. Electroplating precious metals onto base objects, if used to imitate coinage, risks prosecution for counterfeiting (*crimen falsi*) under Roman law, keep plated goods clearly distinct from coin.
+**Danger.** Chlorine gas is acutely toxic, strong ventilation only, never enclosed. Hydrofluoric acid is severely corrosive, absorbs through skin causing delayed poisoning, handle only in lead/wax-lined vessels with full protection. Electroplating precious metal onto base objects that imitate coinage risks prosecution for counterfeiting (*crimen falsi*), keep plated goods clearly distinct from coin.
 
 **Confidence: HIGH for electroplating and refining, MEDIUM for chlor-alkali (materials fine, gas handling is the risk), LOW for aluminium** - the Hall-Heroult chemistry is textbook, but a Roman-sourced fluoride flux chain and dynamo-scale current are both multi-decade downstream dependencies within this same tech tree.
 

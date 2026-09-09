@@ -261,6 +261,18 @@ in tension.
 
 Stated plainly, because someone is going to check.
 
+- **The calibration was tuned by me until the output looked defensible, and you
+  should discount it accordingly.** The first version of this simulator returned
+  a median of 253 AD, which I judged far too fast for a programme that has to
+  build a power grid and a railway, so I raised the workforce requirements on the
+  heavy nodes and added generational diffusion floors. Those changes were
+  reasoned, and they were also chosen because the answer they produced looked
+  more plausible to me. That is not an independent measurement. The parts of this
+  project that are NOT tuned in that way, and are therefore worth more, are the
+  dependency structure, the ablation ORDERING, and the two sweeps in section 3b,
+  where the shape of the result (an optimum in starting wealth, a cliff in
+  lifespan) was not something I designed for and did not expect.
+
 - **The absolute years.** Trust them to a factor of about 1.5, not better. The
   ordering and the failure modes are far more robust than the dates.
 - **The revenue side is the weakest part.** Roman bulk commodity prices marked
