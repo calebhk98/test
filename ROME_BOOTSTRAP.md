@@ -206,6 +206,9 @@ python3 rome/sim/treetool.py  judge                           # score all 3,001 
 python3 rome/sim/treetool.py  judge --id zinc_metal           # one report card
 python3 rome/sim/treetool.py  merge                           # branches -> tree
 python3 rome/sim/simulator.py play                            # play it year by year
+python3 rome/sim/simulator.py play --manual                   # real free choice: nothing starts but what you start
+python3 rome/sim/simulator.py agent                            # JSON protocol: let a script or an AI play instead
+python3 rome/sim/simulator.py agent --script commands.json     # same protocol, from a file instead of stdin
 python3 rome/sim/build_index.py                               # regenerate the library index
 ```
 

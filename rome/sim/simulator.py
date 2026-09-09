@@ -97,9 +97,39 @@ STRATS = os.path.join(HERE, "strategies")
 
 CIVDIR = os.path.join(ROOT, "data", "civilizations")
 RESFILE = os.path.join(ROOT, "data", "world", "resources.json")
+GEOFILE = os.path.join(ROOT, "data", "world", "geography.json")
 
 def load_resources():
     return json.load(open(RESFILE))
+
+def load_geography():
+    """Where things are, not just what they cost.
+
+    geography.json used to carry a single hard-coded `reach` per region,
+    measured from Italy, and nothing in this file ever read it: the `civs`
+    command printed `base_reach` from the civ file and that was the entire
+    effect either number had. Play Han China and the tree still behaved as
+    though Italy were reach 0 and Malaya, which Chinese and Malay traders
+    already sail to routinely, were an exotic reach-3 frontier. That is
+    backwards for every civilization except Rome. See Sim.region_reach and
+    Sim.material_reach for the fix: this loader just hands back the raw data.
+    """
+    return json.load(open(GEOFILE))
+
+
+def haversine_km(lat1, lon1, lat2, lon2):
+    """Great-circle distance between two lat/lon points, in kilometres.
+
+    Coarse on purpose: geography.json's coordinates are region centroids, not
+    ports, so this is a reach ESTIMATE, the same spirit as everything else in
+    this file being an order-of-magnitude model rather than a survey.
+    """
+    r = 6371.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlmb = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlmb / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(a))
 
 def load_civ(name="rome_100ad"):
     """A civilization is DATA, not code. Swapping Rome for Han China, Viking
@@ -320,6 +350,38 @@ class Sim:
         # anywhere you had unlimited quantities of it. That was the largest
         # remaining falsehood in the simulation.
         self.res = load_resources()
+        # --- GEOGRAPHY: where things are, FOR THE CIVILIZATION IN PLAY -----
+        # geography.json used to give every region one Rome-centric `reach`
+        # and nothing in this file ever read it. See load_geography() and
+        # region_reach()/material_reach() below for the fix: real coordinates,
+        # a reach computed from THIS civ's own home ground, and a material
+        # cost that follows from it. All of the below depends only on the
+        # civ file and the (static) geography file, so it is computed once.
+        self.geo = load_geography()
+        self._regions = {k: v for k, v in (self.geo.get("regions") or {}).items()
+                          if not k.startswith("_")}
+        self._home_centroid = self._compute_home_centroid()
+        # node id -> located_materials key. Lets material_cost_factor() find
+        # the geography entry for a location-gated tech node (mat_gutta_percha,
+        # mat_natural_rubber, ...) without the tech tree needing to know
+        # anything about geography itself.
+        self._mat_unlock = {}
+        for mk, md in (self.geo.get("located_materials") or {}).items():
+            if mk.startswith("_"):
+                continue
+            for nid in (md.get("unlocks") or []):
+                self._mat_unlock[nid] = mk
+        # Mineral market access used to be `self.pop_scale`, i.e. "how much
+        # coal can you buy" scaled by HOW MANY PEOPLE YOU HAVE. That is wrong
+        # in both directions: Norse Scandinavia got 2.3% of Rome's coal
+        # because it has 2.3% of the people, and England in 1300 got 7%,
+        # when England is precisely where the coal actually IS. Geology is
+        # not demography. See _compute_mineral_scale() for the replacement.
+        # It depends only on home_regions and reach, neither of which change
+        # during a run, so it is computed once here rather than every year.
+        self._mineral_scale = {m: self._compute_mineral_scale(m)
+                                for m in ("iron", "coal", "copper", "lead",
+                                          "tin", "silver", "saltpetre")}
         self.forest_ha = 0.0        # coppice you own, in hectares
         self.nitre_bed_m2 = 0.0
         self.mine_capacity = {}     # material -> tonnes/yr of your OWN workings
@@ -337,6 +399,208 @@ class Sim:
     # -- helpers ------------------------------------------------------------
     def has(self, k):
         return k in self.done
+
+    # ---- GEOGRAPHY: reach and material cost, FOR THE CIVILIZATION IN PLAY --
+    # geography.json used to hard-code one `reach` per region, measured from
+    # Italy, and nothing in this file ever read it as a cost: `civs` printed
+    # `base_reach` and that was the entire effect either number had. Play Han
+    # China and the model still treated Chinese silk as three reach-steps
+    # away and Malaya, which Chinese and Malay traders already sail to
+    # routinely, as an exotic frontier, while Italy -- a place that
+    # civilization has never seen -- was reach 0. That is backwards for
+    # every civilization except Rome. Everything below computes reach from
+    # the ACTUAL civilization's own home ground instead.
+
+    def _compute_home_centroid(self):
+        """Average lat/lon of this civilization's own home_regions.
+
+        A crude centroid, not a capital city, but that matches the rest of
+        this model: regions are already coarse political/geographic blocks,
+        not points, so a coarse average of them is the right level of detail.
+        """
+        homes = [r for r in (self.civ.get("home_regions") or []) if r in self._regions]
+        if not homes:
+            # A civ file with no valid home_regions would otherwise crash
+            # region_reach for everyone; falling back to Italy or to
+            # whatever region exists keeps this from being a hard wall.
+            homes = ["italia"] if "italia" in self._regions else list(self._regions)[:1]
+        lat = sum(self._regions[r]["lat"] for r in homes) / len(homes)
+        lon = sum(self._regions[r]["lon"] for r in homes) / len(homes)
+        return lat, lon
+
+    # Straight-line kilometres (after geography.json's route_difficulty and
+    # this civilization's own travel speed, below, have been applied) banded
+    # onto the same 0-6 scale reach_levels already uses. Chosen so that
+    # ROME, at its own base_reach of 2, lands close to its own OLD
+    # hand-authored reach_from_italia numbers across the whole region list
+    # (checked by hand while building this): this is a generalisation of the
+    # old table, not an unrelated replacement for it.
+    RAW_DISTANCE_BANDS = ((1200.0, 1), (2500.0, 2), (4500.0, 3), (7000.0, 4), (11000.0, 5))
+
+    # How much base_reach shortens the EFFECTIVE distance, not the band.
+    # An earlier version of this subtracted base_reach straight off the
+    # band number, which looked right for Rome but broke on the Norse: with
+    # only 6 bands total, subtracting 4 (their base_reach) collapsed nearly
+    # every coastal region in the world, China included, to band 1 -- "as
+    # easy as sailing to Gaul", which overstates even Norse mobility. Dividing
+    # the DISTANCE by a speed factor instead degrades gracefully: closer
+    # places still get much easier, but a civilization does not get to treat
+    # the far side of the planet as next door no matter how good its ships.
+    REACH_SPEED_COEF = 0.22
+
+    def region_reach(self, region_id):
+        """How hard `region_id` is to reach, FOR THIS CIVILIZATION, 0-6.
+
+        Three things determine it, none of which the old model had:
+          1. HOME IS HOME. If the region is one of this civ's own
+             home_regions the reach is 0, full stop, regardless of geometry.
+          2. RAW DISTANCE. Great-circle distance from this civ's own home
+             centroid to the region's centroid, scaled by route_difficulty
+             (ice, open ocean and mountain relay routes are harder than the
+             straight line suggests; a scheduled wind system like the
+             monsoon is easier).
+          3. WHAT YOU ALREADY DO. base_reach is how far this society already
+             routinely travels -- the Norse (base_reach 4) really do sail to
+             Greenland and the Black Sea, Rome (base_reach 2) really does
+             run the India trade every year -- and it SHRINKS that distance
+             before banding (see REACH_SPEED_COEF above for why division,
+             not subtraction). A society with no ocean-going tradition at
+             all still gets base_reach >= 1 in every civ file in this
+             directory, so nobody's effective distance is ever left
+             un-shrunk.
+          Sea vs land matters too: the shrink applies in full to a COASTAL
+          destination (this is mostly what "routinely travels" means for
+          these five civilizations) and at reduced strength (square root)
+          to a landlocked one, because a fleet does not help you cross a
+          desert.
+
+        The result is never below 1 for a non-home region: reach 0 is
+        reserved for "this is actually your own ground", not for "the
+        arithmetic rounded down to nothing."
+        """
+        if region_id not in self._regions:
+            return 6           # unknown region: treat as maximally far, not a crash
+        if region_id in (self.civ.get("home_regions") or []):
+            return 0
+        reg = self._regions[region_id]
+        hlat, hlon = self._home_centroid
+        dist = haversine_km(hlat, hlon, reg["lat"], reg["lon"]) * float(reg.get("route_difficulty", 1.0))
+        base_reach = float(self.civ.get("base_reach", 2))
+        speed = 1.0 + self.REACH_SPEED_COEF * base_reach
+        coastal = bool(reg.get("coastal", True))
+        effective = dist / speed if coastal else dist / (speed ** 0.5)
+        band = 6
+        for edge, b in self.RAW_DISTANCE_BANDS:
+            if effective <= edge:
+                band = b
+                break
+        return max(1, min(6, band))
+
+    # How much of a region's output reaches your market by ordinary trade
+    # when you do NOT hold the region yourself, fading with reach rather
+    # than cutting off: nothing in this model is a wall, only a price.
+    TRADE_ACCESS_BY_REACH = {0: 1.0, 1: 0.5, 2: 0.3, 3: 0.15, 4: 0.08, 5: 0.04, 6: 0.02}
+
+    def material_reach(self, material_key):
+        """Reach and cost multiplier for `material_key`, FOR THIS CIVILIZATION.
+
+        Looks the material up in geography.json's located_materials, picks
+        whichever of its regions is EASIEST for this civ to reach (a rational
+        buyer sources from the nearest deposit, not always the "primary"
+        one), and turns that region's reach into a cost multiplier.
+
+        The published cost_multiplier in geography.json was written for
+        Rome: it is calibrated against that region's reach_from_italia, the
+        old Roman-only reach number. So: at civ_reach 0 (you live there) the
+        multiplier is 1, at civ_reach == reach_from_italia it reproduces the
+        published number exactly (which is why Rome's own numbers barely
+        move), and at civ_reach below reach_from_italia -- Han China and
+        Malayan gutta percha is the case this bug report was written about
+        -- it comes out CHEAPER than Rome pays, because the material
+        genuinely is closer for that civilization. Above reach_from_italia
+        it costs MORE than Rome's figure, for the same reason in reverse.
+        Power, not a straight line, so it is smooth at both ends and never
+        goes negative or hits exactly zero.
+        """
+        materials = self.geo.get("located_materials") or {}
+        md = materials.get(material_key)
+        if not md:
+            return 0, 1.0
+        base_mult = float(md.get("cost_multiplier", 1.0))
+        best = None
+        for rid in (md.get("regions") or []):
+            reg = self._regions.get(rid)
+            if not reg:
+                continue
+            civ_r = self.region_reach(rid)
+            if best is None or civ_r < best[0]:
+                italia_r = max(1, int(reg.get("reach_from_italia", civ_r) or 1))
+                best = (civ_r, italia_r)
+        if best is None:
+            return 0, base_mult
+        civ_r, italia_r = best
+        if civ_r <= 0:
+            return 0, 1.0      # it is, in effect, home ground for this civilization
+        return civ_r, base_mult ** (civ_r / italia_r)
+
+    def material_cost_factor(self, k):
+        """Cost multiplier a located-material tech node picks up from
+        geography, for the civilization in play.
+
+        Only applies to nodes geography.json actually names (via
+        located_materials.*.unlocks, e.g. mat_gutta_percha, mat_natural_rubber):
+        everything else returns 1.0 and is untouched. This is the wiring the
+        bug report asked for: before this existed, geography.json's
+        cost_multiplier field was read by nobody, so gutta percha cost
+        exactly the same (nothing extra) whether you were playing Rome or
+        Han China, and the entire India-and-east trade advantage a
+        China-based civilization actually has was invisible to the model.
+        """
+        mk = self._mat_unlock.get(k)
+        if not mk:
+            return 1.0
+        _, mult = self.material_reach(mk)
+        return mult
+
+    def _compute_mineral_scale(self, material):
+        """Fraction of a mined mineral's reference output this civilization
+        can draw on: geology and reach, not population.
+
+        resource_throttle() used to multiply by self.pop_scale here, i.e.
+        "how much coal can you buy" scaled by HOW MANY PEOPLE YOU HAVE. That
+        is backwards twice over: Norse Scandinavia got 2.3% of Rome's coal
+        because it has 2.3% of the people, and England in 1300 got 7%, when
+        England is precisely where the coal actually is. A coalfield does
+        not care how many people live near it.
+
+        geography.json's per-region `minerals` gives each region's rough
+        share of a material's total output, normalised so ROME'S OWN home
+        regions sum to about 1.0 -- which is what reproduces
+        resources.json's Roman totals exactly for a Rome-based civ and
+        changes nothing about the Rome baseline. For any other civilization:
+        regions it actually HOLDS (home_regions) count in full, and every
+        other region contributes a SHRINKING but never-zero share as it
+        fades with reach (TRADE_ACCESS_BY_REACH), because a civilization
+        with no local ore can still buy imported metal, just less of it.
+        Floored well above zero so this is a price, never a wall.
+        """
+        home = set(self.civ.get("home_regions") or [])
+        total = 0.0
+        for rid, reg in self._regions.items():
+            ab = float((reg.get("minerals") or {}).get(material, 0.0))
+            if ab <= 0:
+                continue
+            if rid in home:
+                total += ab
+            else:
+                total += ab * self.TRADE_ACCESS_BY_REACH.get(self.region_reach(rid), 0.02)
+        return max(0.05, total)
+
+    def mineral_scale(self, material):
+        """Cached result of _compute_mineral_scale(). Geology and reach do
+        not change during a run, so this is computed once in __init__
+        rather than recomputed every simulated year."""
+        return self._mineral_scale.get(material, self.pop_scale)
 
     def director_pool(self):
         h = 0.0
@@ -657,7 +921,19 @@ class Sim:
                 elif self.has("patron_senatorial"): share *= 2.5
                 elif self.has("citizenship"):       share *= 1.4
                 share = min(share, 0.60)
-            market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * self.pop_scale
+            # GEOLOGY, NOT DEMOGRAPHY. This used to be `* self.pop_scale`:
+            # mineral availability scaled by population, so Norse Scandinavia
+            # got 2.3% of Rome's coal because it has 2.3% of the people, and
+            # England in 1300 got 7%, when England is precisely where the
+            # coal actually is. A coalfield does not care how many people
+            # live near it. mineral_scale() derives this instead from the
+            # regions this civilization actually holds and can trade with
+            # (see _compute_mineral_scale). Charcoal stays on pop_scale: it
+            # is not mined, it is a local wood market, and THAT genuinely
+            # does track how much local economic activity there is to buy
+            # firewood from.
+            scale = self.pop_scale if emp_key == "charcoal" else self.mineral_scale(emp_key)
+            market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * scale
             # Bengal saltpetre: an existing annual sea route, not a nitre bed.
             # This is the single most useful thing in the geography file.
             if emp_key == "saltpetre" and self.has("exp_trade_route_extend"):
@@ -1075,8 +1351,13 @@ class Sim:
                 if not self.can_start(k):
                     continue
                 n = self.nodes[k]
-                # do not start something we cannot plausibly fund this decade
-                if n["_total_cost"] * self.money_real * self.civ_cost_factor(k) > self.capital * 3 + self.revenue() * 6:
+                # do not start something we cannot plausibly fund this decade.
+                # material_cost_factor is geography.json's contribution: a
+                # located material (mat_gutta_percha and the like) costs more
+                # or less to reach depending on how far THIS civ actually is
+                # from it, not on Rome's distance to it.
+                if (n["_total_cost"] * self.money_real * self.civ_cost_factor(k)
+                        * self.material_cost_factor(k)) > self.capital * 3 + self.revenue() * 6:
                     continue
                 if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
                     continue
@@ -1141,7 +1422,11 @@ class Sim:
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
                 # opposed work costs more: bribes, delay, a provincial site, a front man
                 opposition = 1.0 + 0.25 * max(0.0, -self.state_interest(n))
-                money = n["_total_cost"] * frac * self.money_real * opposition * self.civ_cost_factor(k)
+                # material_cost_factor: how far THIS civilization is from
+                # wherever geography.json says this thing actually comes
+                # from. 1.0 for every node that is not a located material.
+                money = (n["_total_cost"] * frac * self.money_real * opposition
+                         * self.civ_cost_factor(k) * self.material_cost_factor(k))
                 hh = n["_hired_hours"] * frac
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
@@ -2108,15 +2393,32 @@ def cmd_sweep(a):
 
 
 def cmd_civs(a):
-    """List the civilizations you can play, and what makes each one different."""
+    """List the civilizations you can play, and what makes each one different.
+
+    home_regions and base_reach used to be printed here and read NOWHERE
+    ELSE: that was the entire bug this session fixed. They now actually
+    drive Sim.region_reach() and Sim.material_reach() (see simulator.py),
+    which is a much better reason to show them, so this now also names the
+    home ground itself rather than just the region ids.
+    """
+    geo = load_geography()
+    region_names = {rid: r.get("name", rid)
+                    for rid, r in (geo.get("regions") or {}).items()
+                    if not rid.startswith("_")}
     for f in sorted(os.listdir(CIVDIR)):
-        if not f.endswith(".json"):
+        # Files starting with "_" are schema/reference data, not a playable
+        # civilization (e.g. _TECH_EFFECTS.json), same convention this file
+        # already uses everywhere else for "_"-prefixed keys and entries.
+        if not f.endswith(".json") or f.startswith("_"):
             continue
         c = json.load(open(os.path.join(CIVDIR, f)))
         v = c["values"]
         print("%-16s %s, %s" % (c["id"], c["name"], c["year"]))
         print("   %s" % c.get("blurb", ""))
-        print("   population %s   state capacity %.2f   reach %d   starts with %d technologies"
+        homes = [region_names.get(r, r) for r in c.get("home_regions") or []]
+        print("   home ground: %s" % (", ".join(homes) if homes else "(none set)"))
+        print("   population %s   state capacity %.2f   base_reach %d (how far it already "
+              "routinely travels)   starts with %d technologies"
               % (f"{c.get('population',0):,}", c.get("state_capacity", 0),
                  c.get("base_reach", 0), len(c.get("starting_techs", []))))
         print("   fears the inexplicable %.2f | fears heterodoxy %.2f | resents machines %+.2f "
