@@ -97,6 +97,10 @@ def cmd_merge(a):
     TRADES = load_trades()
     alias, dropset = load_aliases()
     base = json.load(open(TREE))
+    # Ids retired by deduplication. Branch files still contain both spellings
+    # of a technology that two authors invented independently, so without this
+    # the next merge silently resurrects every duplicate.
+    retired = base.get("meta", {}).get("merged_duplicate_ids", {})
     nodes = {n["id"]: normalise_v2(n) for n in base["nodes"]}
     for n in nodes.values():
         n.setdefault("_src", "core")
@@ -147,6 +151,10 @@ def cmd_merge(a):
             if missing:
                 errs.append("%s: %s missing fields %s" % (fn, n.get("id", "?"), missing))
                 continue
+            if n["id"] in retired:
+                warns.append("%s: %s was merged into %s, skipping"
+                             % (fn, n["id"], retired[n["id"]]))
+                continue
             if n["id"] in nodes:
                 warns.append("%s: duplicate id %s, keeping the first" % (fn, n["id"]))
                 continue
@@ -180,7 +188,16 @@ def cmd_merge(a):
                 else:
                     warns.append("%s: %s UNPRICED material '%s', dropped" % (fn, n["id"], m))
             n["mat"] = mm
-            n.setdefault("kb", "")
+            # Branch authors keep writing the RECIPE PROSE into the kb link
+            # field. Left alone it reports as a broken link to a file whose
+            # name is a sentence. Move it to note where note is empty and
+            # clear the field, so it reports as an honest documentation gap.
+            kb = str(n.get("kb", "")).strip()
+            if kb and not re.match(r"^\d\d_[A-Za-z0-9_]+\.md(#|$)", kb):
+                if not str(n.get("note", "")).strip():
+                    n["note"] = kb
+                kb = ""
+            n["kb"] = kb
             n["_src"] = fn
             nodes[n["id"]] = n
             added += 1
@@ -188,6 +205,9 @@ def cmd_merge(a):
     # resolve prerequisites
     dangling = collections.Counter()
     for n in nodes.values():
+        n["pre"] = [retired.get(p, p) for p in n["pre"]]
+        for gp in n.get("req_any", []):
+            gp["options"] = {retired.get(o, o): q for o, q in gp.get("options", {}).items()}
         keep = []
         for p in n["pre"]:
             if p in nodes:
