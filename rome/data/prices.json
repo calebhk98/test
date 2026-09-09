@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "base_year": 100,
+    "currency": "denarius",
+    "note": "1 aureus = 25 denarii = 100 sestertii (HS) = 400 asses. Denarius under Trajan is c. 3.4 g at c. 85-90% fine, so c. 3.0 g fine silver. Prices marked [C] are the author's derived estimates and are the weakest numbers in this project. Bulk metal prices are anchored to silver using ratios implied by the Edict of Diocletian (301 AD), used for RATIOS ONLY because the Edict's own unit is a collapsed currency 200 years later.",
+    "confidence_key": {
+      "A": "well attested",
+      "B": "probable, scholarly consensus, contested in detail",
+      "C": "author's estimate or inference"
+    }
+  },
+  "wage_rates_denarii_per_hour": {
+    "_note": "Assumes a 10-hour working day and c. 250 working days per year, so 2500 worker-hours per person-year. Roman festival days are numerous; 250 is already generous.",
+    "labourer": {
+      "rate": 0.075,
+      "day_hs": 2.0,
+      "conf": "B"
+    },
+    "artisan": {
+      "rate": 0.15,
+      "day_hs": 4.0,
+      "conf": "B"
+    },
+    "master": {
+      "rate": 0.32,
+      "day_hs": 8.0,
+      "conf": "B"
+    },
+    "glassblower": {
+      "rate": 0.32,
+      "day_hs": 8.0,
+      "conf": "C"
+    },
+    "smith": {
+      "rate": 0.18,
+      "day_hs": 4.5,
+      "conf": "C"
+    },
+    "carpenter": {
+      "rate": 0.16,
+      "day_hs": 4.0,
+      "conf": "B"
+    },
+    "miner": {
+      "rate": 0.09,
+      "day_hs": 2.3,
+      "conf": "C"
+    },
+    "scribe": {
+      "rate": 0.2,
+      "day_hs": 5.0,
+      "conf": "C"
+    },
+    "scholar": {
+      "rate": 0.4,
+      "day_hs": 10.0,
+      "conf": "C"
+    },
+    "furnaceman": {
+      "rate": 0.12,
+      "day_hs": 3.0,
+      "conf": "C"
+    },
+    "potter": {
+      "rate": 0.14,
+      "day_hs": 3.5,
+      "conf": "C"
+    },
+    "chemist": {
+      "rate": 0.4,
+      "day_hs": 10.0,
+      "conf": "C",
+      "note": "does not exist yet; you must create this trade"
+    },
+    "machinist": {
+      "rate": 0.45,
+      "day_hs": 11.0,
+      "conf": "C",
+      "note": "does not exist yet; you must create this trade"
+    }
+  },
+  "purchase_prices_denarii": {
+    "_unit_note": "per kg unless stated",
+    "wheat_kg": {
+      "p": 0.13,
+      "conf": "B"
+    },
+    "olive_oil_kg": {
+      "p": 0.3,
+      "conf": "C"
+    },
+    "wine_common_kg": {
+      "p": 0.15,
+      "conf": "C"
+    },
+    "charcoal_kg": {
+      "p": 0.03,
+      "conf": "C"
+    },
+    "firewood_kg": {
+      "p": 0.008,
+      "conf": "C"
+    },
+    "coal_kg": {
+      "p": 0.02,
+      "conf": "C"
+    },
+    "iron_bar_kg": {
+      "p": 1.0,
+      "conf": "C"
+    },
+    "iron_bloom_kg": {
+      "p": 0.45,
+      "conf": "C"
+    },
+    "steel_noric_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "copper_kg": {
+      "p": 4.0,
+      "conf": "C"
+    },
+    "tin_kg": {
+      "p": 10.0,
+      "conf": "C"
+    },
+    "lead_kg": {
+      "p": 0.6,
+      "conf": "C"
+    },
+    "brass_kg": {
+      "p": 5.0,
+      "conf": "C"
+    },
+    "silver_kg": {
+      "p": 333.0,
+      "conf": "A"
+    },
+    "gold_kg": {
+      "p": 3900.0,
+      "conf": "A"
+    },
+    "mercury_kg": {
+      "p": 25.0,
+      "conf": "C",
+      "note": "imperial monopoly at Almaden; price is a guess and access is political"
+    },
+    "sulfur_kg": {
+      "p": 0.5,
+      "conf": "C"
+    },
+    "natron_kg": {
+      "p": 0.35,
+      "conf": "C"
+    },
+    "lime_kg": {
+      "p": 0.02,
+      "conf": "C"
+    },
+    "alum_kg": {
+      "p": 1.2,
+      "conf": "C"
+    },
+    "green_vitriol_kg": {
+      "p": 0.4,
+      "conf": "C"
+    },
+    "pyrolusite_kg": {
+      "p": 0.8,
+      "conf": "C"
+    },
+    "calamine_kg": {
+      "p": 0.5,
+      "conf": "C"
+    },
+    "galena_kg": {
+      "p": 0.25,
+      "conf": "C"
+    },
+    "fluorspar_kg": {
+      "p": 0.6,
+      "conf": "C",
+      "note": "not a traded commodity; you will have to source it yourself"
+    },
+    "sand_quartz_kg": {
+      "p": 0.005,
+      "conf": "C"
+    },
+    "clay_kg": {
+      "p": 0.004,
+      "conf": "C"
+    },
+    "glass_raw_kg": {
+      "p": 2.0,
+      "conf": "C"
+    },
+    "linen_rag_kg": {
+      "p": 0.4,
+      "conf": "C"
+    },
+    "papyrus_sheet": {
+      "p": 0.1,
+      "conf": "C"
+    },
+    "parchment_sheet": {
+      "p": 0.6,
+      "conf": "C"
+    },
+    "silk_kg": {
+      "p": 300.0,
+      "conf": "C",
+      "note": "Silk Road; Pliny complains of the bullion drain east"
+    },
+    "shellac_kg": {
+      "p": 40.0,
+      "conf": "C",
+      "note": "Indian Ocean trade via Berenice-Muziris; 1-3 year lead time"
+    },
+    "beeswax_kg": {
+      "p": 1.5,
+      "conf": "C"
+    },
+    "tallow_kg": {
+      "p": 0.2,
+      "conf": "C"
+    },
+    "emery_kg": {
+      "p": 1.0,
+      "conf": "C"
+    },
+    "asbestos_kg": {
+      "p": 6.0,
+      "conf": "C"
+    },
+    "bitumen_kg": {
+      "p": 0.3,
+      "conf": "C"
+    },
+    "timber_m3": {
+      "p": 2.5,
+      "conf": "C"
+    },
+    "brick_1000": {
+      "p": 8.0,
+      "conf": "C"
+    },
+    "ox": {
+      "p": 350.0,
+      "conf": "B"
+    },
+    "mule": {
+      "p": 190.0,
+      "conf": "C"
+    },
+    "slave_unskilled": {
+      "p": 300.0,
+      "conf": "B"
+    },
+    "slave_skilled": {
+      "p": 1000.0,
+      "conf": "B"
+    },
+    "iugerum_land": {
+      "p": 250.0,
+      "conf": "B",
+      "note": "0.25 hectare"
+    },
+    "iron_ore_kg": {
+      "p": 0.05,
+      "conf": "C"
+    },
+    "copper_ore_kg": {
+      "p": 0.3,
+      "conf": "C"
+    },
+    "cinnabar_kg": {
+      "p": 3.0,
+      "conf": "C",
+      "note": "imperial monopoly, Almaden"
+    },
+    "bauxite_kg": {
+      "p": 0.08,
+      "conf": "C",
+      "note": "not a Roman commodity; you will identify and open the deposit yourself"
+    },
+    "manganese_kg": {
+      "p": 1.2,
+      "conf": "C"
+    },
+    "wood_ash_kg": {
+      "p": 0.006,
+      "conf": "C"
+    },
+    "manure_kg": {
+      "p": 0.002,
+      "conf": "C",
+      "note": "effectively free, but cartage is not"
+    },
+    "salt_kg": {
+      "p": 0.05,
+      "conf": "B",
+      "note": "cheap and taxed; Ostia salt pans"
+    },
+    "blue_vitriol_kg": {
+      "p": 0.9,
+      "conf": "C"
+    },
+    "boric_acid_kg": {
+      "p": 2.5,
+      "conf": "C",
+      "note": "Larderello, speculative"
+    },
+    "agate_kg": {
+      "p": 30.0,
+      "conf": "C"
+    },
+    "antimony_kg": {
+      "p": 6.0,
+      "conf": "C"
+    },
+    "cryolite_kg": {
+      "p": 25.0,
+      "conf": "C",
+      "note": "Greenland is unreachable; assume a synthetic fluoride bath from your own HF"
+    },
+    "flue_dust_kg": {
+      "p": 0.01,
+      "conf": "C",
+      "note": "a waste stream from your own zinc smelter; cost is handling only"
+    },
+    "graphite_kg": {
+      "p": 8.0,
+      "conf": "C",
+      "note": "high purity; you will make it, not buy it"
+    },
+    "quartz_tube_kg": {
+      "p": 45.0,
+      "conf": "C",
+      "note": "self-produced, see fused_quartz"
+    },
+    "bronze_kg": {
+      "p": 4.5,
+      "conf": "C"
+    },
+    "zinc_kg": {
+      "p": 9.0,
+      "conf": "C",
+      "note": "does not exist until you make it; price is your own cost"
+    },
+    "iron_sheet_kg": {
+      "p": 1.6,
+      "conf": "C"
+    },
+    "steel_plate_kg": {
+      "p": 3.2,
+      "conf": "C"
+    },
+    "nickel_kg": {
+      "p": 40.0,
+      "conf": "C",
+      "note": "not isolated in antiquity; a late-programme item"
+    },
+    "tungsten_kg": {
+      "p": 120.0,
+      "conf": "C",
+      "note": "needs the arc furnace; do not plan around it early"
+    },
+    "barium_kg": {
+      "p": 60.0,
+      "conf": "C"
+    },
+    "platinum_g": {
+      "p": 2.5,
+      "conf": "C",
+      "note": "South American platinum is unreachable; Ural and alluvial sources only, effectively unobtainable in quantity"
+    },
+    "gold_g": {
+      "p": 3.9,
+      "conf": "A"
+    },
+    "indium_g": {
+      "p": 6.0,
+      "conf": "C"
+    },
+    "germanium_g": {
+      "p": 250.0,
+      "conf": "C",
+      "note": "your own cost of production, not a market price"
+    },
+    "phosphor_bronze_g": {
+      "p": 0.02,
+      "conf": "C"
+    },
+    "sulfuric_acid_kg": {
+      "p": 1.2,
+      "conf": "C",
+      "note": "internal transfer price; retort route is ~5x this, chamber route ~0.4x"
+    },
+    "nitric_acid_kg": {
+      "p": 3.5,
+      "conf": "C",
+      "note": "internal transfer price"
+    },
+    "hydrochloric_acid_kg": {
+      "p": 1.0,
+      "conf": "C",
+      "note": "internal transfer price"
+    },
+    "nitre_kg": {
+      "p": 2.2,
+      "conf": "C",
+      "note": "your own nitre beds; there is no market for this in Rome"
+    },
+    "carbon_kg": {
+      "p": 0.1,
+      "conf": "C"
+    },
+    "hydrogen_m3": {
+      "p": 0.35,
+      "conf": "C"
+    },
+    "oxygen_m3": {
+      "p": 0.5,
+      "conf": "C"
+    },
+    "argon_or_h2_m3": {
+      "p": 0.4,
+      "conf": "C",
+      "note": "argon is not separable for you; use purified hydrogen or nitrogen"
+    },
+    "linen_kg": {
+      "p": 1.8,
+      "conf": "C"
+    },
+    "leather_kg": {
+      "p": 2.2,
+      "conf": "C"
+    }
+  },
+  "transport_multipliers": {
+    "_note": "Multiply delivered cost. The single most important economic fact in the Empire: put every facility on navigable water.",
+    "sea_per_1000km": {
+      "m": 1.02,
+      "conf": "B"
+    },
+    "river_per_1000km": {
+      "m": 1.15,
+      "conf": "C"
+    },
+    "road_per_100km": {
+      "m": 1.2,
+      "conf": "B",
+      "note": "grain roughly doubles in price over c. 500 km of road haulage"
+    }
+  },
+  "status_thresholds_denarii": {
+    "decurion": 25000,
+    "equestrian": 100000,
+    "senator": 250000
+  },
+  "starting_kit_options": {
+    "_note": "What you carry back. Chosen to be sellable without being visibly anachronistic. Value in denarii at 100 AD prices.",
+    "scholar_modest": {
+      "gold_bullion_kg": 3.0,
+      "value_denarii": 11700,
+      "items": [
+        "unmarked gold in rough ingot and dust form",
+        "a bound codex of notes in Greek (this guide)",
+        "a small steel knife and files (explain as Noric or Indian work)",
+        "a hand lens",
+        "a compass needle and lodestone",
+        "seeds: none from the Americas; do not attempt",
+        "a small quantity of high-purity chemical reagents as 'Egyptian samples'"
+      ],
+      "conf": "C"
+    },
+    "merchant_rich": {
+      "gold_bullion_kg": 12.0,
+      "value_denarii": 46800,
+      "note": "Enough to buy an estate and a workshop immediately, but a stranger arriving with an equestrian fortune in unminted gold attracts the fiscus. Higher start, higher suspicion.",
+      "conf": "C"
+    }
+  }
+}
