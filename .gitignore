@@ -1,5 +1,11 @@
+# Naive playtest save files and stray driver output: transient game state that
 # Throwaway tutorial verification runs (created by test agents); not deliverables
+# rewrites after every command. The testers' NOTES (.md) are the deliverable.
 *.pyc
 .selftest*/
 __pycache__/
+rome/playtest/naive/*.json
+rome/playtest/naive/*.log
+rome/playtest/naive/*.out
+rome/playtest/scratchpad/
 tutorial-runs/
