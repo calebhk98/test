@@ -345,28 +345,28 @@ Also covers: ag2_green_manure, ag2_composting.
 **Confidence: MEDIUM**, contingent on the steam-engine prerequisite.
 
 ### ag2_grafting, ag2_budding, ag2_layering, ag2_rootstocks - Vegetative propagation as knowledge
-**What it is / why you want it.** Grafting, already routine, joins a cutting to a rooted stem; budding grafts a single bud under a bark flap when bark "slips" in spring; layering roots a still-attached stem bent into moist soil; rootstocks as knowledge treats the rooting half as its own variable, controlling tree size independent of the scion's fruit.
+**What it is / why you want it.** Grafting joins a cutting to a rooted stem; budding grafts a single bud under a bark flap when bark "slips" in spring; layering roots a still-attached stem bent into moist soil; rootstocks as knowledge treats the rooting half as its own variable, controlling tree size independent of the scion's fruit.
 
-**Why you would never guess this.** Rome already grafts; missing is cataloguing that one scion on different rootstocks yields a large or small tree, independent of the fruit.
+**Why you would never guess this.** Rome already grafts; missing is cataloguing that one scion on different rootstocks yields a large or small tree.
 
 **Prerequisites.** Grafting knife, wax sealant, a nursery bed.
 
 **Roman-available inputs.** All Italian/provincial fruit and vine species, grafting wax, bast fibre.
 
-**Procedure.** Budding: cut a bark slit when it slips, insert a bud, bind, cut the rootstock above it next spring. Layering: bend a branch into moist covered soil, cut free once rooted. Rootstocks: graft one scion onto several rootstocks, record outcomes over years.
+**Procedure.** Budding: slit bark when it slips, insert a bud, bind, cut the rootstock above it next spring. Layering: bend a branch into moist covered soil, cut free once rooted. Rootstocks: graft one scion onto several, record outcomes over years.
 
-**How you know it worked.** A budded graft shows growth from the bud, not the rootstock, next spring.
+**How you know it worked.** A budded graft grows from the bud, not the rootstock, next spring.
 
 **Failure modes.** Budding when bark does not slip tears and fails.
 
-**Cost & labour.** ESTIMATED (existing orchard tools, multi-season record-keeping).
+**Cost & labour.** ESTIMATED: existing orchard tools, multi-season record-keeping.
 
 **Danger.** Ordinary knife-cut risk.
 
 **Confidence: HIGH**, close to attested Columella practice (*De Re Rustica* V, attributed).
 
 ### ag2_record_keeping_breeding, ag2_pure_line_selection, ag2_hybridisation, ag2_hybrid_maize, ag2_controlled_pollination - Selection and breeding as bookkeeping
-**What it is / why you want it.** None of this needs genetics theory. Record-keeping tracks parentage and performance across generations. Pure line selection inbreeds a line, purifying traits at the cost of vigour. Hybridisation crosses two pure lines for real "hybrid vigour." Hybrid maize crosses inbred lines for sharply higher yield, but the gain does not carry into the hybrid's own replanted seed. Controlled pollination, emasculating a flower before its pollen matures and hand-applying chosen pollen, makes deliberate crossing possible.
+**What it is / why you want it.** None needs genetics theory. Record-keeping tracks parentage and performance across generations. Pure line selection inbreeds a line, purifying traits at the cost of vigour. Hybridisation crosses two pure lines for real "hybrid vigour." Hybrid maize crosses inbred lines for sharply higher yield, but the gain does not carry into the hybrid's own replanted seed. Controlled pollination, emasculating a flower before its pollen matures and hand-applying chosen pollen, makes deliberate crossing possible.
 
 **Why you would never guess this.** Inbreeding, which looks purely weakening, is the necessary first step toward a hybrid stronger than either parent.
 
@@ -374,13 +374,13 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Every crop and livestock species already farmed.
 
-**Procedure.** 1. Record best performers each season. 2. Self-pollinate a line for generations to purify it. 3. Cross two pure lines: emasculate the mother, hand-apply father pollen. 4. Remake the cross each time; its own seed will not repeat the effect.
+**Procedure.** 1. Record best performers each season. 2. Self-pollinate a line for generations to purify it. 3. Cross pure lines: emasculate the mother, hand-apply father pollen. 4. Remake the cross each time; its own seed will not repeat.
 
-**How you know it worked.** A hybrid's first generation outperforms both parents; the advantage disappears on replanting.
+**How you know it worked.** A hybrid's first generation outperforms both parents; the advantage vanishes on replanting.
 
 **Failure modes.** Uncontrolled cross-pollination silently ruins a "pure" line; replanting hybrid seed is the costliest mistake.
 
-**Cost & labour.** ESTIMATED (multi-year labour, no capital, mainly calendar time).
+**Cost & labour.** ESTIMATED: multi-year labour, no capital, mainly calendar time.
 
 **Danger.** None.
 
@@ -452,7 +452,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_milking_machine, ag2_cream_separator, ag2_battery_poultry, ag2_silage_silo - Dairy, poultry, and fodder at scale
 **What it is / why you want it.** A milking machine draws milk via pulsating vacuum, copying hand-milking's rhythm since steady vacuum damages the teat; a cream separator spins milk to separate cream by density; battery poultry raises density at the cost of disease-outbreak risk; silage packs fodder airtight so lactic fermentation drops pH to roughly 3.8-4.0 in three to six weeks, halting spoilage.
 
-**Why you would never guess this.** Silage's mechanism runs against instinct: controlled fermentation is the preservation, not a failure to prevent.
+**Why you would never guess this.** Silage runs against instinct: controlled fermentation is itself the preservation, not a failure to prevent.
 
 **Prerequisites.** A vacuum source and leather teat cups (rubber unavailable); rotary power for the separator; an airtight pit for silage.
 
@@ -464,11 +464,11 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Failure modes.** A poorly sealed pit rots instead of fermenting, sometimes toxically; crowding lets disease sweep a flock in days.
 
-**Cost & labour.** ESTIMATED (moderate ironwork; silage needs only pit construction).
+**Cost & labour.** ESTIMATED: moderate ironwork; silage needs only pit construction.
 
 **Danger.** Sealed silos build dangerous gas; ventilate before entry.
 
-**Confidence: HIGH** silage/separator; MEDIUM milking machine given the substitution.
+**Confidence: HIGH** silage/separator; MEDIUM milking machine.
 
 ### ag2_botanic_garden, ag2_wardian_case, ag2_plant_quarantine - Moving living plants across oceans
 **What it is / why you want it.** A botanic garden propagates at multiple sites and staggers shipments so one loss does not end the effort; the Wardian case, a sealed glass box, recycles its own condensation, keeping soil moist for months unopened; quarantine isolates arrivals until disease symptoms would show.
@@ -534,25 +534,25 @@ Also covers: ag2_green_manure, ag2_composting.
 **Confidence: MEDIUM**: climate constraint HIGH, maturation ESTIMATED.
 
 ### ag2_bordeaux_mixture, ag2_lime_sulphur, ag2_lead_arsenate, ag2_nicotine_pesticide, ag2_pyrethrum, ag2_ddt - Pest chemicals, oldest to most dangerous
-**What it is / why you want it.** Bordeaux mixture (copper sulfate/lime) coats leaves against fungus, too much copper burns leaves. Lime sulphur (sulfur boiled with lime) works even in cold. Lead arsenate's insolubility clings through rain but leaves a poisonous fruit residue. Nicotine kills insects at doses far below mammalian harm. Pyrethrum degrades rapidly in sunlight. DDT is most persistent, and that persistence is its danger: it accumulates in predator fat and thins eggshells decades later.
+**What it is / why you want it.** Bordeaux mixture (copper sulfate/lime) coats leaves against fungus; too much copper burns leaves. Lime sulphur (sulfur boiled with lime) works even in cold. Lead arsenate's insolubility clings through rain but leaves a poisonous fruit residue. Nicotine kills insects at doses far below mammalian harm. Pyrethrum degrades rapidly in sunlight. DDT is most persistent, and that persistence is its danger: it accumulates in predator fat and thins eggshells decades later.
 
-**Why you would never guess this.** These six are not a progression from worse to better; each fixes the last's weakness while adding a new hazard.
+**Why you would never guess this.** Not a progression from worse to better; each fixes the last's weakness while adding a new hazard.
 
 **Prerequisites.** Copper/lime; sulfur/lime; lead/arsenic minerals; tobacco, New World-gated (nicotine); a highland flower, trade-gated (pyrethrum); organic chlorine chemistry (DDT, late-stage).
 
 **Roman-available inputs.** Copper, lime, sulfur, lead, arsenic minerals available; tobacco and pyrethrum flower are not.
 
-**Procedure.** Bordeaux: combine slowly at a tested ratio, spray before rain. Lime sulphur: boil to an amber polysulphide. Lead arsenate: precipitate, wash, dry, handle carefully. Nicotine: extract as sulphate salt. Pyrethrum: dry, grind, apply evenings. DDT: needs `20_chemistry.md` organic chlorine chemistry.
+**Procedure.** Bordeaux: combine slowly at a tested ratio, spray before rain. Lime sulphur: boil to an amber polysulphide. Lead arsenate: precipitate, wash, dry, handle carefully. Nicotine: extract as sulphate salt. Pyrethrum: dry, grind, apply evenings. DDT needs `20_chemistry.md` organic chlorine chemistry.
 
 **How you know it worked.** Bordeaux-treated vines show no mildew spread; lead arsenate leaves a rain-resistant residue, the point and later the problem.
 
-**Failure modes.** Lead arsenate and DDT both "succeed" at the pest while quietly building a residue or bioaccumulation problem.
+**Failure modes.** Lead arsenate and DDT "succeed" at the pest while quietly building a residue or bioaccumulation problem.
 
-**Cost & labour.** ESTIMATED: Bordeaux/lime sulphur cheap; lead arsenate hazardous chemistry; nicotine/pyrethrum import cost; DDT not costable yet.
+**Cost & labour.** ESTIMATED: Bordeaux/lime sulphur cheap; lead arsenate hazardous; nicotine/pyrethrum import cost; DDT not costable yet.
 
-**Danger.** Lead arsenate is acutely toxic with a food residue. Nicotine absorbs through skin. DDT's harm is delayed and ecosystem-wide.
+**Danger.** Lead arsenate is acutely toxic with a food residue; nicotine absorbs through skin; DDT's harm is delayed and ecosystem-wide.
 
-**Confidence: HIGH** chemistry/toxicity; MEDIUM Roman-era arsenic purity control.
+**Confidence: HIGH** chemistry/toxicity; MEDIUM arsenic purity control.
 
 ### ag2_sprayer, ag2_biological_control, ag2_resistant_variety - Applying and avoiding chemicals
 **What it is / why you want it.** A sprayer's nozzle and pump pressure produce a fine mist instead of wasteful runoff; biological control rears a pest's natural predator, released at the right timing, risking that it becomes a pest itself; resistant varieties are bred and confirmed by test crosses, though resistance-breaking mutants can emerge within years.
@@ -576,9 +576,9 @@ Also covers: ag2_green_manure, ag2_composting.
 **Confidence: HIGH** sprayer/resistant variety; MEDIUM biological control.
 
 ### ag2_canning, ag2_retort, ag2_double_seam_can - Preservation that worked before anyone knew why
-**What it is / why you want it.** Canning seals food airtight and heats it long enough to kill spoilage organisms and prevent botulism toxin; the retort reaches pressurised heat above 100°C, since botulism organisms need hotter, longer treatment, logged to confirm heat reached the can's centre; the double seam's rolled geometry holds a pressure-tight seal.
+**What it is / why you want it.** Canning seals food airtight and heats it long enough to kill spoilage organisms and prevent botulism toxin; the retort reaches pressurised heat above 100°C, since botulism needs hotter, longer treatment, logged to confirm heat reached the can's centre; the double seam's rolled geometry holds a pressure-tight seal.
 
-**Why you would never guess this.** Appert had canning working decades before Pasteur's germ theory explained why. Teach germ theory anyway (`70_medicine_biology.md`) since it sets safe times deliberately instead of by trial and fatal error.
+**Why you would never guess this.** Appert had canning working decades before Pasteur's germ theory explained why. Teach germ theory anyway (`70_medicine_biology.md`), it sets safe times deliberately instead of by trial and fatal error.
 
 **Prerequisites.** Airtight containers (glass with wax, or tinplate, `fud_tin_plate_cans`), a heat source, ideally a retort for low-acid foods.
 
@@ -586,11 +586,11 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Procedure.** 1. Pack food leaving headspace. 2. Seal with wax lid or a rolled crimp. 3. Heat in boiling water (acidic) or a retort above 100°C (low-acid) until a centre marker confirms penetration. 4. Log time and temperature. 5. A good seal draws the lid concave; a later bulge means spoilage, discard unopened.
 
-**How you know it worked.** A stored can keeps its concave lid for months to years, no bulging.
+**How you know it worked.** A stored can keeps its concave lid for months, no bulging.
 
 **Failure modes.** Underprocessing low-acid foods is the single most dangerous failure, since botulism toxin is odourless and tasteless.
 
-**Cost & labour.** ESTIMATED: glass-jar canning is near-zero new capital; tinplate and a retort are a real step up.
+**Cost & labour.** ESTIMATED: glass-jar canning near-zero new capital; tinplate and a retort a real step up.
 
 **Danger.** Botulism is the central, lethal danger here. Never taste a bulging container.
 
@@ -662,7 +662,7 @@ Also covers: ag2_green_manure, ag2_composting.
 ### ag2_butter, ag2_cheese_families, ag2_condensed_milk, ag2_evaporated_milk - Dairy processing and preservation
 **What it is / why you want it.** Butter churning inverts an emulsion, fat flipping from droplets to the continuous phase; hard cheeses cut and cook curd hot before pressing, soft cheeses set curd low with minimal handling; condensed milk vacuum-boils low and uses sugar concentration to prevent spoilage; evaporated milk needs homogenisation, shrinking fat globules to stay suspended, plus heat-shock stabilising proteins.
 
-**Why you would never guess this.** Butter suddenly flips which phase is continuous rather than gradually thickening. Ordinary milk's fat globules separate over weeks, fatal to a year-shelf canned product.
+**Why you would never guess this.** Butter suddenly flips which phase is continuous rather than gradually thickening; ordinary milk's fat globules separate over weeks, fatal to a year-shelf can.
 
 **Prerequisites.** Standard dairy equipment; vacuum-boiling apparatus (`20_chemistry.md`) and a homogenising valve; ag2_double_seam_can for shelf-stable form.
 
@@ -702,11 +702,11 @@ Also covers: ag2_green_manure, ag2_composting.
 **Confidence: HIGH**, matching the Appert precedent.
 
 ### ag2_malting, ag2_mashing, ag2_hopping, ag2_hydrometer, ag2_pot_still, ag2_column_still - Brewing and distilling as controlled process
-**What it is / why you want it.** Malting germinates grain to activate enzymes, then kiln-dries to halt it without destroying them; mashing holds grain at temperature rests favouring different enzymes; hopping's boil time controls bitterness, late additions giving aroma; the hydrometer's density reading tracks fermentation precisely; a copper pot still (copper scrubs sulphurous off-flavours) concentrates alcohol, cutting harsh "heads" and weak "tails" from clean "hearts"; a column still repeats the cycle across plates for a continuous, near-flavourless spirit.
+**What it is / why you want it.** Malting germinates grain to activate enzymes, then kiln-dries to halt it without destroying them; mashing holds grain at temperature rests favouring different enzymes; hopping's boil time controls bitterness, late additions giving aroma; the hydrometer's density reading tracks fermentation precisely; a copper pot still (copper scrubs sulphurous off-flavours) cuts harsh "heads" and weak "tails" from clean "hearts"; a column still repeats the cycle across plates for a continuous, near-flavourless spirit.
 
-**Why you would never guess this.** The hydrometer turns judgement into a number. Copper's role is the least obvious detail: only copper removes sulphurous off-flavours.
+**Why you would never guess this.** The hydrometer turns judgement into a number; only copper removes sulphurous off-flavours.
 
-**Prerequisites.** ag2_yeast_culture; distillation is a genuine Roman gap per *_TEMPLATE.md*, not a refinement; copper for stills; glasswork for the hydrometer.
+**Prerequisites.** ag2_yeast_culture; distillation is a genuine Roman gap per *_TEMPLATE.md*; copper for stills; glasswork for the hydrometer.
 
 **Roman-available inputs.** Malted grain, hops, copper, glass.
 
@@ -714,24 +714,24 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **How you know it worked.** A correctly cut pot-still batch tastes clean through the hearts.
 
-**Failure modes.** Skipping the heads/tails cut risks carrying over toxic volatile compounds.
+**Failure modes.** Skipping the heads/tails cut risks toxic volatile compounds.
 
-**Cost & labour.** ESTIMATED: malting/mashing/hopping/hydrometer reuse or moderate capability; stills are genuinely new capital.
+**Cost & labour.** ESTIMATED: the first four reuse or need moderate capability; stills are new capital.
 
-**Danger.** Alcohol vapour is flammable near flame; the heads fraction can contain toxic methanol.
+**Danger.** Alcohol vapour is flammable near flame; heads can contain toxic methanol.
 
-**Confidence: HIGH** malting group; MEDIUM stills, genuinely new ground for Rome.
+**Confidence: HIGH** malting group; MEDIUM stills, new ground for Rome.
 
 ### ag2_centrifugal_sugar, ag2_vacuum_pan, ag2_sugar_refining - Turning cane or beet juice into refined sugar
-**What it is / why you want it.** The vacuum pan boils sugar juice under reduced pressure, avoiding scorching; the centrifuge spins the mixture so molasses flings out through a mesh while crystals stay, needing agitation against caking; refining runs successive A, B, C batches, extracting more from progressively less pure liquid.
+**What it is / why you want it.** The vacuum pan boils sugar juice under reduced pressure, avoiding scorching; the centrifuge spins the mixture so molasses flings through a mesh while crystals stay, needing agitation against caking; refining runs successive A, B, C batches, extracting more from progressively less pure liquid.
 
-**Why you would never guess this.** Vacuum boiling to lower the boiling point is the same trick as ag2_condensed_milk, since atmospheric boiling scorches sugar before it crystallises cleanly.
+**Why you would never guess this.** Vacuum boiling to lower the boiling point is the ag2_condensed_milk trick again; atmospheric boiling scorches sugar before it crystallises cleanly.
 
 **Prerequisites.** A vacuum-capable vessel (`20_chemistry.md`), a centrifuge, cane (ag2_sugar_voyage) or beet (no voyage needed).
 
-**Roman-available inputs.** Sugar beet is climate-compatible; both machines are new capital equipment.
+**Roman-available inputs.** Sugar beet is climate-compatible; both machines are new equipment.
 
-**Procedure.** 1. Press juice (extending Roman pressing). 2. Clarify with lime. 3. Boil under reduced pressure for small, even crystals. 4. Spin with light agitation, discharge automatically. 5. Repeat on the molasses for B, then C.
+**Procedure.** Press juice (extending Roman pressing); clarify with lime; boil under reduced pressure for small, even crystals; spin with light agitation, auto-discharge; repeat on the molasses for B, then C.
 
 **How you know it worked.** Vacuum-pan sugar is pale and clean-tasting.
 
@@ -739,72 +739,72 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Cost & labour.** ESTIMATED as capital-intensive: both are new mechanical builds.
 
-**Danger.** Vacuum vessels risk implosion; hot syrup causes severe burns; a spinning drum is an entanglement hazard.
+**Danger.** Vacuum vessels risk implosion; hot syrup burns severely; a spinning drum is an entanglement hazard.
 
-**Confidence: MEDIUM.** Sound mechanism, genuine new capital engineering for Rome.
+**Confidence: MEDIUM.** Sound mechanism, new capital engineering for Rome.
 
 ### ag2_roller_mill, ag2_purifier, ag2_white_flour_loss - Milling wheat and the cost it hides
 **What it is / why you want it.** Roller milling passes grain between roller pairs at increasing pressure for fine flour in one pass; the purifier's air-chamber channels separate bran, germ, and endosperm by density; white flour keeps far longer since the oil-rich, rancidity-prone germ is removed.
 
-**Why you would never guess this.** Removing the germ solves rancidity but the germ holds most of the grain's thiamine, and a white-flour-dominant diet caused beriberi at scale historically, a documented public-health cost.
+**Why you would never guess this.** Removing the germ solves rancidity but the germ holds most of the grain's thiamine, and a white-flour-dominant diet caused beriberi at scale historically, a documented cost.
 
 **Prerequisites.** Metal rollers at adjustable gap, sufficient power, an air-chamber purifier.
 
-**Roman-available inputs.** Iron for rollers, existing Roman water-mill power (the Barbegal complex is proof of scale).
+**Roman-available inputs.** Iron for rollers, existing Roman water-mill power (the Barbegal complex proves scale).
 
-**Procedure.** 1. Crack grain through a wide-gap first roller. 2. Sift, pass through progressively tighter pairs. 3. Purify each stage's output by air. 4. Collect white flour; sell or blend back bran and germ.
+**Procedure.** 1. Crack grain through a wide-gap first roller. 2. Sift, pass through tighter pairs. 3. Purify each stage's output by air. 4. Collect white flour; sell or blend back bran and germ.
 
-**How you know it worked.** Roller-milled flour is finer, storing for months without rancidity.
+**How you know it worked.** Roller-milled flour is finer, storing months without rancidity.
 
 **Failure modes.** The larger failure is dietary: reliance on this flour without other thiamine sources causes beriberi.
 
 **Cost & labour.** ESTIMATED: significant capital for precision rollers and ducting.
 
-**Danger.** Rollers are a severe crush hazard. State the dietary fix: other thiamine sources (whole grains, legumes, pork) alongside white bread (`70_medicine_biology.md`).
+**Danger.** Rollers are a severe crush hazard. State the fix: other thiamine sources (whole grains, legumes, pork) alongside white bread (`70_medicine_biology.md`).
 
-**Confidence: HIGH** on mechanism and the beriberi consequence, well-documented medical history.
+**Confidence: HIGH**, well-documented medical history.
 
 ### ag2_oil_pressing, ag2_fat_hydrogenation - Extracting and modifying fats
 **What it is / why you want it.** Cold pressing (already Roman) preserves flavour at lower yield; hot pressing extracts more at coarser flavour; fat hydrogenation adds hydrogen to solidify oil, needing careful temperature control since overheating causes polymerisation, while imprecise partial hydrogenation unknowingly creates trans-fats, a category with its own long-term health cost.
 
-**Why you would never guess this.** The trans-fat problem forms invisibly during an otherwise useful process, discovered only through long-term epidemiology, the same hidden-bill pattern as white flour.
+**Why you would never guess this.** The trans-fat problem forms invisibly during an otherwise useful process, found only through long-term epidemiology, the same hidden-bill pattern as white flour.
 
-**Prerequisites.** Oil pressing needs only existing presses. Hydrogenation needs hydrogen and a catalyst under controlled pressure (`20_chemistry.md`), not a farm workshop.
+**Prerequisites.** Oil pressing needs only existing presses; hydrogenation needs hydrogen and a catalyst under controlled pressure (`20_chemistry.md`), not a farm workshop.
 
-**Roman-available inputs.** Olive oil pressing already at commercial scale; hydrogenation has no path without its chemistry prerequisites.
+**Roman-available inputs.** Olive oil pressing already commercial scale; hydrogenation has no path without its chemistry prerequisites.
 
 **Procedure.** Cold press: ambient temperature, quality over yield. Hot press: gentle preheat, yield over delicacy. Hydrogenation (gated): bubble hydrogen through oil with a catalyst, stopping precisely at the desired solidity.
 
-**How you know it worked.** Cold-pressed oil is lighter-tasting; correctly hydrogenated fat is stable and solid without rancidity risk.
+**How you know it worked.** Cold-pressed oil is lighter-tasting; correctly hydrogenated fat is stable without rancidity risk.
 
 **Failure modes.** Imprecise hydrogenation maximises trans-fat content, the worst outcome for quality and health.
 
 **Cost & labour.** ESTIMATED: pressing near-zero cost; DERIVED: hydrogenation gated entirely on `20_chemistry.md`.
 
-**Danger.** Hydrogenation involves flammable hydrogen under pressure, a real explosion risk, on top of the chronic trans-fat cost.
+**Danger.** Flammable hydrogen under pressure is a real explosion risk, on top of the chronic trans-fat cost.
 
-**Confidence: HIGH** pressing; MEDIUM hydrogenation, a real Roman gap with a downside worth stating explicitly.
+**Confidence: HIGH** pressing; MEDIUM hydrogenation, a Roman gap with a downside worth stating.
 
 ### ag2_adulteration_law, ag2_food_laboratory - Regulation and the means to enforce it
-**What it is / why you want it.** An adulteration law names fraudulent practice (watered wine, chalk in flour, lead-based sweetening) but its effect depends entirely on inspection capacity, a law with no inspectors is a statement of values, not a control. The food laboratory supplies that: gravimetric testing (fat/protein by weighing), acidimetry (titrating for acidity or dilution), and microscopy (mould or adulterant particles) let an inspector prove, not merely suspect, adulteration.
+**What it is / why you want it.** An adulteration law names fraudulent practice (watered wine, chalk in flour, lead-based sweetening) but its effect depends entirely on inspection capacity; the food laboratory supplies that: gravimetric testing (fat/protein by weighing), acidimetry (titrating for dilution), and microscopy (mould or adulterant particles) let an inspector prove, not merely suspect, adulteration.
 
-**Why you would never guess this.** Passing a law feels like the whole solution; the laboratory methods are the unglamorous second half. Rome has market oversight (the aedile) but not yet the analytic toolkit.
+**Why you would never guess this.** A law feels like the whole solution; the lab methods are the unglamorous second half. Rome has market oversight (the aedile) but not the analytic toolkit.
 
 **Prerequisites.** Precise balances, calibrated acid/base solutions (`20_chemistry.md`), a compound microscope (`30_glass_optics.md`), empowered inspectors.
 
-**Roman-available inputs.** The aedile's existing role and trade balances are reusable; the microscope and titration apparatus are the new capability.
+**Roman-available inputs.** The aedile's role and trade balances are reusable; the microscope and titration apparatus are new.
 
-**Procedure.** 1. Draft the law naming prohibited practices, including lead-based sweetening, given *defrutum*'s lead-pan preparation. 2. Build a laboratory with balances, titration apparatus, and a microscope. 3. Train inspectors in the three methods. 4. Sample routinely, not only on complaint.
+**Procedure.** 1. Draft the law naming prohibited practices, including lead-based sweetening, given *defrutum*'s lead-pan preparation. 2. Build a lab with balances, titration apparatus, and a microscope. 3. Train inspectors. 4. Sample routinely, not only on complaint.
 
 **How you know it worked.** Adulteration is demonstrated with a repeatable measurement, not an opinion.
 
-**Failure modes.** A law without a funded laboratory changes little; sellers correctly judge the risk of being caught as near zero.
+**Failure modes.** A law without a funded lab changes little; sellers judge the risk of being caught as near zero.
 
-**Cost & labour.** ESTIMATED: equipment cost dominated by the microscope and titration apparatus; ongoing cost is inspector staffing.
+**Cost & labour.** ESTIMATED: cost dominated by the microscope and titration apparatus; ongoing cost is inspector staffing.
 
-**Danger.** None physical. Effective regulation threatens established adulteration profits, most sharply lead-based sweetening, a practice Rome already engages in.
+**Danger.** None physical. Regulation threatens established adulteration profits, most sharply lead-based sweetening, which Rome already practices.
 
-**Confidence: MEDIUM.** Laboratory methods are HIGH; the law-plus-enforcement combination is a governance question with more variation.
+**Confidence: MEDIUM.** Laboratory methods HIGH; enforcement effectiveness a governance question.
 
 ## Sources and confidence
 

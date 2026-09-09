@@ -678,6 +678,27 @@ class Sim:
                                            + self.mine_pending.pop(mat))
                 self.mine_ready.pop(mat, None)
 
+    def mothball_mines(self):
+        """Stop working what you cannot pay for, worst value first.
+
+        Mothballing is not free to reverse: the shaft floods, the timbering
+        rots and the crew disperses, so bringing capacity back means paying to
+        sink it again through open_mine. That is the honest cost of having
+        overbuilt."""
+        order = sorted(self.mine_capacity,
+                       key=lambda m: -self.MINE_OPEX_PER_T.get(m, 0.0))
+        for m in order:
+            if self.capital >= 0:
+                break
+            cut = self.mine_capacity[m] * 0.5
+            self.mine_capacity[m] -= cut
+            self.capital += cut * self.MINE_OPEX_PER_T.get(m, 0.0) * self.price_index
+            self.log.append((self.year, "MOTHBALLED half the %s workings; you could "
+                                        "not pay to keep them running" % m))
+            if self.mine_capacity[m] < 1.0:
+                self.mine_capacity.pop(m)
+        self.capital = max(self.capital, -abs(self.revenue()))
+
     def mine_operating_cost(self):
         """Charged every year the workings stand, whether or not you use them."""
         return sum(self.mine_capacity.get(m, 0.0) * self.MINE_OPEX_PER_T.get(m, 0.0)
@@ -857,6 +878,13 @@ class Sim:
         mo = self.mine_operating_cost()
         self.mine_cost_paid += mo
         self.capital += self.revenue() - self.upkeep() - lc - mo
+        # A mine you cannot pay for is a mine you stop working. Without this the
+        # opex accrued for ever against a bankrupt enterprise: the England run
+        # sank a large mine, lost its revenue and then ran three centuries at
+        # minus four million denarii, unable to afford anything at all, which
+        # the log reported as being "blocked" on a treadle lathe.
+        if self.capital < 0 and self.mine_capacity:
+            self.mothball_mines()
         # a standing workforce policy: buy when short of hands and flush, and
         # free them steadily, which is both the decent and the efficient choice
         if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
