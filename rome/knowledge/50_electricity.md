@@ -4,7 +4,7 @@ Three things decide the shape of this whole module. Read them before anything el
 
 **Zinc is the gate.** Zinc boils at 907 C, below the ~1000-1200 C needed to reduce its ore (calamine) with charcoal. In an open furnace the metal leaves as vapour, burns to white oxide smoke, and reburns into hot copper as brass rather than condensing as ingots. This is why Rome has brass by cementation without anyone ever holding a bar of zinc. See `10_metallurgy.md#zinc_metal` for the sealed-retort fix (condense vapour under a liquid seal, the historical Zawar/European process). Without it: no good pile, no cheap steady DC, no electroplating, no serious electromagnets. Everything past `voltaic_pile` waits on that trick.
 
-**No rubber, no gutta percha, ever.** Both are New World/Southeast Asian latex, outside Rome's reach (gutta percha not traded west in quantity until the 19th century; rubber is American). Insulated wire is a real bottleneck. Working answers: silk wrapping (excellent, ruinous price), oiled linen tape (cheap, adequate), shellac varnish applied hot rather than solvent-cast (no distilled spirits to dissolve it in), bitumen for buried/submerged cable. See `wire_insulation`.
+**No rubber, no gutta percha, ever.** Both are New World/Southeast Asian latex, outside Rome's reach (gutta percha not traded west in quantity until the 19th century; rubber is American). Insulated wire is a real bottleneck. Working answers: silk wrapping (excellent, ruinous price), oiled linen tape (cheap, adequate), shellac varnish (Rome as you find it has no distilled spirits to dissolve it in, so apply it hot; once you have built the worm condenser in `20_chemistry.md#distillation_fractional`, which is a tier 1 node you should have long before any winding, use alcohol as the solvent and the work becomes far easier), bitumen for buried/submerged cable. See `wire_insulation`.
 
 **You do not have to wait for zinc.** A copper plate and an iron plate in brine give roughly 0.4-0.7 V immediately, high internal resistance, fast polarisation. No electroplating, but it swings a compass needle and biases a crystal contact. Static electricity (friction machines, Leyden jars) needs no electrochemistry and no electromagnetic theory, Franklin and Volta had none. Build the electrostatics bench and the brine cell in month one; let the zinc chain mature in parallel.
 
@@ -41,27 +41,27 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### crude_cell - iron and copper brine cell
 
-**What it is / why you want it.** Two dissimilar metal plates in salt water make a battery on day one, before any zinc is available. Weak, but real: it deflects a needle and biases a point contact.
+**What it is / why you want it.** Two dissimilar metal plates in salt water make a battery on day one, before any zinc exists. Weak but real: deflects a needle, biases a point contact.
 
-**Why you would never guess this.** Obvious once you know galvanic couples exist; not obvious beforehand, because nothing about rubbing glass suggests that two wet metals sitting near each other will push current.
+**Why you would never guess this.** Obvious once galvanic couples are known; not obvious beforehand, nothing about rubbing glass suggests two wet metals push current.
 
 **Prerequisites.** Sheet copper, wrought iron plate, salt or vinegar, a non-conducting vessel.
 
-**Roman-available inputs.** Copper sheet (common); wrought iron plate (bloomery iron, common); *sal* (rock or sea salt) dissolved in water, or wine vinegar; a glazed ceramic or glass vessel.
+**Roman-available inputs.** Copper sheet (common); wrought iron plate (bloomery, common); *sal* (salt) in water, or wine vinegar; glazed ceramic or glass vessel.
 
 **Procedure.**
-1. Cut a copper plate and an iron plate, each roughly 10x10 cm, keep them from touching.
-2. Dissolve salt in water to a strong brine (roughly 1 part salt to 5 parts water by weight) or use undiluted wine vinegar.
-3. Stand both plates in the vessel a few cm apart, submerged 8-10 cm, connect each to a wire lead.
-4. Read the voltage only by its effects (see below); there is no meter yet.
+1. Cut a copper plate and an iron plate, ~10x10 cm, keep them apart.
+2. Brine: roughly 1 part salt to 5 parts water by weight; or use undiluted wine vinegar.
+3. Stand both plates in the vessel a few cm apart, submerged 8-10 cm, wire lead on each.
+4. Read voltage only by effects (no meter yet).
 
-**How you know it worked.** Touch the two leads to a compass needle's wire loop (see `galvanometer`): the needle twitches and settles off north. Touch the leads to your tongue: a faint metallic tingle.
+**How you know it worked.** Touch the leads to a compass needle's wire loop (`galvanometer`): needle twitches and settles off north. Touch leads to your tongue: faint metallic tingle.
 
-**Failure modes.** Output drops within seconds to a couple of minutes as hydrogen bubbles coat the copper plate (polarisation), current falls even though the plates are undamaged, brush the bubbles off or use fresh brine to restore it briefly. Rusted iron plate gives erratic, lower output.
+**Failure modes.** Output drops within seconds to minutes as hydrogen bubbles coat the copper (polarisation); brush off or refresh brine to restore briefly. Rusted iron plate gives erratic, lower output.
 
 **Cost & labour.** ESTIMATED. Under 1 denarius in scrap metal, half an hour to build.
 
-**Danger.** Negligible physically at this scale (well under 1 V, milliamps). Socially trivial, looks like a curiosity, not a threat.
+**Danger.** Negligible physically (under 1 V, milliamps). Socially trivial.
 
 **Confidence: HIGH** - standard galvanic couple, ~0.4-0.7 V is a well attested real-world range for a dirty iron/copper brine couple (theoretical Fe/Cu couple is about 0.78 V from standard potentials, polarisation and impure metal knock it down).
 
@@ -69,27 +69,27 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### voltaic_pile - zinc and copper disc pile
 
-**What it is / why you want it.** A stack of zinc and copper discs separated by brine-soaked card gives a steady, scalable DC source, the first source strong enough to do real electrochemistry and magnetism.
+**What it is / why you want it.** Zinc and copper discs separated by brine-soaked card give a steady, scalable DC source, the first strong enough for real electrochemistry and magnetism.
 
-**Why you would never guess this.** The stacking itself, discovered by Volta in 1800 by pure trial, is not obvious: single cells are weak, but cells in series add their voltages while sharing the stack's mechanical structure.
+**Why you would never guess this.** Stacking, found by Volta in 1800 by trial, is not obvious: single cells are weak, but series cells add their voltages while sharing the stack's structure.
 
 **Prerequisites.** `10_metallurgy.md#zinc_metal` (metallic zinc, sealed-retort produced), copper sheet, brine, card or felt.
 
-**Roman-available inputs.** Zinc discs (once produced per the metallurgy module); copper discs; coarse linen card or wool felt discs cut to the same diameter; brine.
+**Roman-available inputs.** Zinc discs (once produced per the metallurgy module); copper discs; linen card or wool felt discs, same diameter; brine.
 
 **Procedure.**
 1. Cut zinc and copper discs, ~4 cm diameter, and matching brine-soaked card discs.
-2. Stack in strict repeating order: zinc, card, copper, zinc, card, copper..., top to bottom.
-3. Compress the stack lightly between two wooden or wax-impregnated boards, three vertical insulating rods (wax-coated wood) hold alignment.
-4. Take leads off the top and bottom metal discs.
+2. Stack in repeating order: zinc, card, copper, zinc, card, copper..., top to bottom.
+3. Compress lightly between two boards, three insulating rods hold alignment.
+4. Leads off the top and bottom discs.
 
-**How you know it worked.** Stack of 10-20 cells sparks visibly when the leads are touched together and shocks two fingers touching top and bottom.
+**How you know it worked.** A 10-20 cell stack sparks visibly when leads touch and shocks two fingers on top and bottom.
 
-**Failure modes.** Card drying out kills output within an hour or two, re-wet periodically. Cells short if brine runs down the outside of the stack and bridges discs.
+**Failure modes.** Card drying kills output within an hour or two, re-wet periodically. Cells short if brine bridges discs down the outside.
 
-**Cost & labour.** ESTIMATED. Roughly 0.76 V per cell (standard Zn/Cu potential), a 20-cell pile gives roughly 10-15 V open circuit with high, rising internal resistance as cells dry. 1 artisan-day to cut and stack 20 cells; zinc cost dominates until domestic zinc production is running.
+**Cost & labour.** ESTIMATED. ~0.76 V per cell (standard Zn/Cu potential); a 20-cell pile gives ~10-15 V open circuit, internal resistance rises as cells dry. 1 artisan-day for 20 cells; zinc cost dominates until domestic production runs.
 
-**Danger.** Low voltage, low current, minor shock only. Zinc dust and fumes from cutting/casting are the real hazard, ventilate.
+**Danger.** Low voltage/current, minor shock only. Zinc dust and fumes from cutting/casting, ventilate.
 
 **Confidence: HIGH** - this is exactly Volta's 1800 design, well documented, all non-zinc materials Roman-attested.
 
@@ -97,27 +97,27 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### daniell_cell - two-fluid cell (*Daniell, no Latin name*)
 
-**What it is / why you want it.** Separating the zinc and copper into different solutions stops the pile's fast polarisation, giving a steady ~1.1 V that holds for days under light load. This, not the pile, is what makes telegraphy and electroplating industries rather than lecture demonstrations.
+**What it is / why you want it.** Separating zinc and copper into different solutions stops the pile's fast polarisation, giving a steady ~1.1 V that holds for days under light load. This, not the pile, is what makes telegraphy and electroplating industries rather than demonstrations.
 
-**Why you would never guess this.** The pile's failure (hydrogen coats the copper, blocking current) looks like a materials-purity problem. The fix is topological, not chemical: keep the two electrode's solutions apart with a porous barrier so copper ions, not hydrogen, deposit at the cathode.
+**Why you would never guess this.** The pile's failure (hydrogen coats the copper) looks like a purity problem. The fix is topological, not chemical: keep the two electrodes' solutions apart with a porous barrier so copper, not hydrogen, deposits at the cathode.
 
-**Prerequisites.** `voltaic_pile` (for zinc supply and basic cell-building skill), copper sulfate (*blue vitriol*, native, Cyprus and Spain), unglazed earthenware.
+**Prerequisites.** `voltaic_pile` (zinc supply, cell-building skill), copper sulfate (*blue vitriol*, native, Cyprus/Spain), unglazed earthenware.
 
-**Roman-available inputs.** Copper sulfate crystals (blue vitriol, mined natively, Cyprus/Rio Tinto); zinc plate; dilute sulfuric-acid brine or plain brine for the zinc side (zinc sulfate is better if available, see `20_chemistry.md#vitriols` for vitriol chemistry); an unglazed clay pot as the porous membrane, or a bladder/parchment diaphragm.
+**Roman-available inputs.** Copper sulfate crystals (blue vitriol, Cyprus/Rio Tinto); zinc plate; dilute acid brine or plain brine for the zinc side (zinc sulfate better if available, `20_chemistry.md#vitriols`); unglazed clay pot as porous membrane, or bladder/parchment diaphragm.
 
 **Procedure.**
 1. Outer vessel: copper plate rolled into a cylinder, standing in saturated copper sulfate solution.
-2. Inner unglazed clay pot inside the copper cylinder, filled with dilute brine (or zinc sulfate if you have made it), zinc rod or plate suspended in it, not touching the pot.
-3. Top up copper sulfate crystals as the solution depletes with use, this is the standard maintenance task.
-4. Connect leads from zinc rod (negative) and copper cylinder (positive).
+2. Inner unglazed clay pot inside the cylinder, filled with dilute brine (or zinc sulfate), zinc rod suspended in it, not touching the pot.
+3. Top up copper sulfate crystals as solution depletes, standard maintenance.
+4. Leads from zinc rod (negative) and copper cylinder (positive).
 
-**How you know it worked.** Voltage under light load barely sags over hours, unlike the pile; a compass-needle test (see `galvanometer`) shows a steady, unwavering deflection instead of one that fades within a minute.
+**How you know it worked.** Voltage barely sags over hours under light load, unlike the pile; compass-needle test (`galvanometer`) shows steady deflection instead of one fading within a minute.
 
-**Failure modes.** Clay pot too dense: current is choked, too porous: solutions mix and the cell fouls within a day. Copper sulfate exhausted: voltage falls, blue crystals must be renewed.
+**Failure modes.** Clay pot too dense chokes current; too porous, solutions mix and the cell fouls within a day. Copper sulfate exhausted: voltage falls, renew crystals.
 
-**Cost & labour.** ESTIMATED. About 1.1 V per cell (well attested modern figure for the CuSO4/ZnSO4 couple). 1 potter-day per 50 porous pots; copper sulfate is cheap and native.
+**Cost & labour.** ESTIMATED. ~1.1 V per cell (attested CuSO4/ZnSO4 figure). 1 potter-day per 50 porous pots; copper sulfate cheap and native.
 
-**Danger.** Copper sulfate is toxic if ingested in quantity, mild skin irritant. Otherwise as safe as the pile.
+**Danger.** Copper sulfate toxic in quantity, mild skin irritant. Otherwise as safe as the pile.
 
 **Confidence: HIGH** - textbook 1836 design, every material Roman-available except the choice between zinc sulfate and brine, brine substitution is a documented (if slightly weaker and shorter-lived) workaround.
 
@@ -125,27 +125,27 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### lead_acid - lead-acid accumulator
 
-**What it is / why you want it.** The first genuinely rechargeable store: charge it from a battery bank or dynamo, then carry the charge to where you need it (a telegraph relay hut with no cell bank of its own, a lit lamp away from a generator).
+**What it is / why you want it.** The first genuinely rechargeable store: charge from a battery bank or dynamo, then carry the charge to where it's needed (a relay hut, a lamp away from a generator).
 
-**Why you would never guess this.** That a lead plate can be electrochemically "charged" into two different active materials (spongy lead and lead dioxide) by simply running current through it in acid, rather than being built already-charged, is not intuitive.
+**Why you would never guess this.** That a lead plate "charges" into two different active materials (spongy lead and lead dioxide) by simply running current through it in acid, rather than being built already-charged, is not intuitive.
 
-**Prerequisites.** `daniell_cell` (or better, `dynamo_motor`) as a charging source, sulfuric acid (see `20_chemistry.md#sulfuric_acid`), lead, litharge.
+**Prerequisites.** `daniell_cell` (or `dynamo_motor`) as charging source, sulfuric acid (`20_chemistry.md#sulfuric_acid`), lead, litharge.
 
-**Roman-available inputs.** Lead sheet and lead oxide/litharge (a cupellation byproduct, Rome already produces it in quantity from silver refining); dilute sulfuric acid (from roasting and distilling green vitriol, iron sulfate, an attested if laborious process, see chemistry module); glass or wax-lined wood cell.
+**Roman-available inputs.** Lead sheet and litharge (cupellation byproduct, already produced from silver refining); dilute sulfuric acid (roasted/distilled green vitriol, laborious but attested); glass or wax-lined wood cell.
 
 **Procedure.**
-1. Cast lead grids, paste both with litharge (lead monoxide) worked into a stiff paste with dilute sulfuric acid.
-2. Stand grids in dilute sulfuric acid (roughly 1 part strong acid to 4 parts water by volume, added acid to water, never the reverse, it spatters violently otherwise).
-3. "Form" the plates: pass current from a Daniell bank through the cell for several hours, one plate converts to brown lead dioxide (positive), the other stays or becomes grey spongy lead (negative). Reverse and repeat a few cycles to build up active material.
-4. Charge fully before first use: constant current until gas (hydrogen/oxygen) bubbles freely from both plates.
+1. Cast lead grids, paste both with litharge worked into a stiff paste with dilute sulfuric acid.
+2. Stand grids in dilute sulfuric acid (~1 part strong acid to 4 parts water, acid into water, never reverse, it spatters otherwise).
+3. "Form" the plates: current from a Daniell bank for several hours, one plate converts to brown lead dioxide (positive), the other to grey spongy lead (negative). Reverse and repeat a few cycles.
+4. Charge fully before first use: constant current until both plates gas freely.
 
-**How you know it worked.** A charged cell reads about 2.0-2.1 V by the deflection test and holds a compass-needle deflection for hours of modest discharge, dropping sharply near exhaustion (a useful "empty" warning).
+**How you know it worked.** Charged cell reads ~2.0-2.1 V by the deflection test, holds deflection for hours of light discharge, drops sharply near exhaustion.
 
-**Failure modes.** Overcharging boils off water and warps plates. Undercharging leaves soft, low-capacity plates. Left discharged for weeks, plates sulfate (hard white crystal) and lose capacity permanently.
+**Failure modes.** Overcharging boils off water, warps plates. Undercharging leaves soft, low-capacity plates. Discharged for weeks, plates sulfate (hard white crystal), permanent capacity loss.
 
-**Cost & labour.** ESTIMATED. About 2.05 V per cell (well attested). 1 lead-worker day per cell for casting and pasting, several days of bank time to form properly.
+**Cost & labour.** ESTIMATED. ~2.05 V per cell (attested). 1 lead-worker day per cell for casting/pasting, several days of bank time to form properly.
 
-**Danger.** Sulfuric acid causes severe burns, always add acid to water. Charging cells vent hydrogen, explosive in a closed room, ventilate and keep flames away. Lead is cumulative poison, wash hands, do not eat near the workshop.
+**Danger.** Sulfuric acid, severe burns, acid into water always. Charging vents hydrogen, explosive indoors, ventilate, no flames. Lead is cumulative poison, wash hands.
 
 **Confidence: MEDIUM** - the electrochemistry is textbook (1859 design), but Roman-era sulfuric acid production is laborious and not independently attested at scale for this period; treat the acid supply chain as the real schedule risk.
 
@@ -153,29 +153,29 @@ Three things decide the shape of this whole module. Read them before anything el
 
 ### wire_insulation - insulated wire, varnish, and cable
 
-**What it is / why you want it.** Every entry below this one needs wire that does not short against itself, its neighbours, or the earth. This is the New World materials gap (`no rubber, no gutta percha`) worked around with silk, oil, resin and bitumen.
+**What it is / why you want it.** Every entry below needs wire that does not short against itself, its neighbours, or the earth. This is the New World materials gap worked around with silk, oil, resin and bitumen.
 
-**Why you would never guess this.** Obvious once you need it; the non-obvious part is that shellac, normally solvent-cast in alcohol, has to be applied hot-melt in Rome because there is no distilled spirit to dissolve it in.
+**Why you would never guess this.** Obvious once needed; the twist is shellac, normally solvent-cast in alcohol, must be applied hot-melt in Rome because there is no distilled spirit to dissolve it in.
 
 **Prerequisites.** Drawn copper wire (`10_metallurgy.md#copper_metal`), silk or flax thread, linseed oil, lac resin (Indian Ocean trade), bitumen (Judaea/Mesopotamia).
 
-**Roman-available inputs.** Copper wire, iron drawplate; raw silk thread (costly Far East import) or flax/linen thread (cheap, local); linseed oil (flax seed, pressed, common); shellac/lac resin (Kerria lacca insect resin, India, via Red Sea/Indian Ocean route, the Periplus trade); bitumen (Dead Sea or Hit, Mesopotamia, both Roman-reachable).
+**Roman-available inputs.** Copper wire, iron drawplate; raw silk (costly import) or flax/linen thread (cheap, local); linseed oil (pressed flax, common); shellac/lac resin (India, Red Sea/Indian Ocean route, the Periplus trade); bitumen (Dead Sea or Hit, Mesopotamia).
 
 **Procedure.**
-1. Draw copper rod through successively smaller holes in an iron drawplate; anneal (heat to dull red, ~600-700 C, then air cool) after every 3-4 passes, copper work-hardens and cracks otherwise.
-2. Fine/critical wire (galvanometer coils, delicate instruments): spiral-wrap with a single strand of raw silk under light constant tension, overlapping by roughly half the thread width, using a hand or foot-treadle winder.
-3. Bulk wire (telegraph lines, power windings): wrap with linen tape pre-soaked in boiled linseed oil ("boiled" meaning simmered for several hours until it thickens, this is standard Roman painters'-oil technique), let cure 2-3 days until tacky-dry.
-4. Extra protection: melt shellac resin in a shallow pan (melts around 80-120 C, well below scorching), draw the wrapped wire through the melt, wipe excess, let cool, this hot-dip replaces the solvent-varnish method Rome cannot build.
-5. Buried or underwater cable: bundle several oil-and-shellac-coated wires, wrap in tarred linen, then pour molten bitumen over the whole run in a wooden or lead trough mould, let set.
-6. Winding technique for coils: wind in even layers on a wooden former, a strip of oiled linen tape between each completed layer, keep tension constant to avoid gaps that let turns migrate and touch.
+1. Draw copper rod through successively smaller drawplate holes; anneal (dull red, ~600-700 C, air cool) every 3-4 passes, copper work-hardens and cracks otherwise.
+2. Fine/critical wire (galvanometer coils): spiral-wrap a single strand of raw silk under light constant tension, overlap ~half thread width, hand or treadle winder.
+3. Bulk wire (telegraph, power windings): wrap linen tape pre-soaked in boiled linseed oil (simmered hours until thick, standard Roman painters'-oil technique), cure 2-3 days.
+4. Extra protection: melt shellac in a shallow pan (~80-120 C), draw the wrapped wire through, wipe excess, cool, this hot-dip replaces the solvent-varnish Rome cannot build.
+5. Buried/underwater cable: bundle coated wires, wrap in tarred linen, pour molten bitumen over the run in a trough mould, let set.
+6. Coil winding: even layers on a wooden former, oiled linen tape between layers, constant tension so turns cannot migrate and touch.
 
-**How you know it worked.** Continuity test: connect a Daniell cell and the compass-needle loop (see `galvanometer`) in series with the two ends of the finished winding, a steady deflection means the wire is unbroken end to end. Short test: with the winding otherwise disconnected, touch the two cell leads between the winding and something it must stay isolated from (the iron core, an adjacent layer, the earth): any deflection at all means a short exists somewhere in the insulation, no deflection confirms isolation.
+**How you know it worked.** Continuity: Daniell cell plus compass-needle loop (`galvanometer`) in series with the winding's two ends, steady deflection means unbroken conductor. Short test: with the winding otherwise disconnected, touch the cell leads between the winding and whatever it must stay isolated from (core, adjacent layer, earth): any deflection means a short; none confirms isolation.
 
-**Failure modes.** Silk wrap too loose migrates and bares copper under vibration. Linseed oil applied too thick never fully cures, stays tacky and picks up dust that bridges turns. Shellac dip too hot scorches and embrittles the silk beneath it, dip fast.
+**Failure modes.** Loose silk wrap migrates, bares copper under vibration. Oil too thick never cures, stays tacky, picks up dust that bridges turns. Shellac dip too hot scorches and embrittles the silk beneath.
 
-**Cost & labour.** ESTIMATED. Silk thread priced roughly at parity with silver by weight per ancient accounts (Pliny complains of the drain of Roman coin to buy Eastern silk); reserve silk for fine instrument coils only. Linen/oil insulation, by contrast, costs artisan time more than materials, roughly 1 weaver-day per 200 m of wrapped wire.
+**Cost & labour.** ESTIMATED. Silk priced near parity with silver by weight (Pliny on the coin drain to Eastern silk), reserve for fine coils only. Linen/oil insulation costs labour more than material, ~1 weaver-day per 200 m.
 
-**Danger.** Hot shellac and bitumen both burn badly on skin contact, work with long tools, not bare hands. Bitumen fumes are unpleasant but not acutely poisonous in open air.
+**Danger.** Hot shellac and bitumen burn badly on skin, use long tools. Bitumen fumes unpleasant, not acutely poisonous outdoors.
 
 **Confidence: MEDIUM** - the individual materials and processes are all well attested for Rome; their specific use as electrical insulation is a reasoned substitution for materials Rome will never have, not a historically attested electrical practice.
 

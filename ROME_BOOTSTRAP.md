@@ -31,6 +31,12 @@ Everything lives in [`rome/`](rome/). Start with
 - Three things that will surprise you: **Roman *nitrum* is sodium carbonate, not
   saltpetre**; **zinc metal is the hidden gate on the entire electrical age**;
   and **a single glass bead is a 250x microscope you can build in a week**.
+- Two results the simulator produced that I did not expect and did not tune away:
+  **past about 50,000 denarii, more starting gold makes you *less* likely to
+  succeed** (the failure mode switches from dying untaught to being denounced as
+  a magician), and **the founder's lifespan is a cliff, not a slope**: below 20
+  years the success rate is zero, at 28 years it is 86%, and living to 95 buys
+  almost nothing over living to 63.
 
 ## What is here
 
@@ -42,7 +48,7 @@ Everything lives in [`rome/`](rome/). Start with
 | [`rome/03_SOCIAL_POLITICS.md`](rome/03_SOCIAL_POLITICS.md) | Patronage, the law, what the State will fund, what gets you executed. |
 | [`rome/04_ECONOMICS.md`](rome/04_ECONOMICS.md) | Labour, materials, transport, and where the 5.1 million denarii goes. |
 | [`rome/LABOR_LEDGER.md`](rome/LABOR_LEDGER.md) | Your personal hours, and the author's. |
-| [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** Eleven modules of actual recipes with masses, temperatures and failure modes. |
+| [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** Eleven modules of actual recipes with masses, temperatures and failure modes, plus a generated index linking all 128 tree nodes to the entry that documents them. |
 | [`rome/knowledge/00_NONOBVIOUS_TRICKS.md`](rome/knowledge/00_NONOBVIOUS_TRICKS.md) | **Start here in the library.** The 33 specific physical tricks that make everything else buildable. |
 | [`rome/knowledge/99_AUDIT.md`](rome/knowledge/99_AUDIT.md) | An adversarial fact-check of the technical modules. It found real errors and they have been fixed. |
 | [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | 128 nodes, 254 dependency edges, fully costed in hours, denarii, materials, risk and political consequence. |
@@ -53,14 +59,17 @@ Everything lives in [`rome/`](rome/). Start with
 ## Run it
 
 ```bash
-python3 rome/sim/simulator.py validate                      # DAG, prices, reachability
-python3 rome/sim/simulator.py path point_contact_transistor  # the critical path, costed
-python3 rome/sim/simulator.py costs --top 25                 # where the money goes
-python3 rome/sim/simulator.py compare --mc 500               # rush vs topological vs recommended
-python3 rome/sim/simulator.py sensitivity --mc 300           # what is each choice actually worth
-python3 rome/sim/simulator.py why zinc_metal                  # explain any one node
+python3 rome/sim/simulator.py validate                       # DAG, prices, reachability
+python3 rome/sim/simulator.py path point_contact_transistor   # the critical path, costed
+python3 rome/sim/simulator.py why zinc_metal                  # explain any single node
+python3 rome/sim/simulator.py costs --top 25                  # where the money goes
+python3 rome/sim/simulator.py compare --mc 500                # rush vs topological vs recommended
+python3 rome/sim/simulator.py sensitivity --mc 300            # what is each choice worth
+python3 rome/sim/simulator.py sweep capital                   # how much gold should you bring
+python3 rome/sim/simulator.py sweep lifespan                  # how long must you live
 python3 rome/sim/simulator.py run --strategy recommended --trace
-python3 rome/sim/simulator.py play                           # play it year by year
+python3 rome/sim/simulator.py play                            # play it year by year
+python3 rome/sim/build_index.py                               # regenerate the library index
 ```
 
 No dependencies beyond the Python 3 standard library.

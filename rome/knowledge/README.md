@@ -25,6 +25,8 @@ in this directory, read that one.
 | [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 15 |
 | [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 15 |
 | [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 13 |
+| [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 15 |
+| [`55_semiconductors.md`](55_semiconductors.md) | Vacuum, high purity and semiconductors | 13 | 17 |
 | [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 11 |
 | [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 3 |
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 2 |
@@ -138,6 +140,48 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `steam_high_pressure` | 4 | 700 | [`steam_high_pressure`](40_power_precision.md#steam-high-pressure) |
 | `steam_watt` | 4 | 800 | [`steam_watt`](40_power_precision.md#steam-watt) |
 
+### 50_electricity.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `em_theory` | 0 | 800 | _(module has no anchor)_ |
+| `crude_cell` | 1 | 120 | [`crude_cell`](50_electricity.md#crude-cell) |
+| `electrostatics` | 2 | 350 | [`electrostatics`](50_electricity.md#electrostatics) |
+| `copper_refining` | 3 | 400 | [`wire_insulation`](50_electricity.md#wire-insulation) |
+| `daniell_cell` | 3 | 250 | [`daniell_cell`](50_electricity.md#daniell-cell) |
+| `electromagnet` | 3 | 350 | [`electromagnet`](50_electricity.md#electromagnet) |
+| `electroplating` | 3 | 350 | [`electrolysis_industrial`](50_electricity.md#electrolysis-industrial) |
+| `galvanometer` | 3 | 400 | [`galvanometer`](50_electricity.md#galvanometer) |
+| `telegraph_electric` | 3 | 700 | [`telegraph`](50_electricity.md#telegraph) |
+| `voltaic_pile` | 3 | 300 | [`voltaic_pile`](50_electricity.md#voltaic-pile) |
+| `arc_light_lamp` | 4 | 500 | [`incandescent_lamp`](50_electricity.md#incandescent-lamp) |
+| `dynamo` | 4 | 800 | [`dynamo_motor`](50_electricity.md#dynamo-motor) |
+| `motor_transformer_ac` | 4 | 700 | [`transformer_ac`](50_electricity.md#transformer-ac) |
+| `electrolysis_industrial` | 5 | 700 | [`electrolysis_industrial`](50_electricity.md#electrolysis-industrial) |
+| `power_grid` | 5 | 900 | [`transformer_ac`](50_electricity.md#transformer-ac) |
+
+### 55_semiconductors.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `quantum_solidstate_theory` | 0 | 1,800 | [`semiconductor_theory`](55_semiconductors.md#semiconductor-theory) |
+| `galena_detector` | 2 | 150 | [`galena_detector`](55_semiconductors.md#galena-detector) |
+| `vacuum_pumps` | 4 | 500 | [`vacuum_pumps`](55_semiconductors.md#vacuum-pumps) |
+| `diffusion_pump` | 5 | 600 | [`vacuum_pumps`](55_semiconductors.md#vacuum-pumps) |
+| `discharge_xray` | 5 | 700 | [`crookes_xray_electron`](55_semiconductors.md#crookes-xray-electron) |
+| `ge_reduction` | 5 | 600 | [`germanium_sourcing`](55_semiconductors.md#germanium-sourcing) |
+| `gecl4_purification` | 5 | 900 | [`germanium_sourcing`](55_semiconductors.md#germanium-sourcing) |
+| `germanium_extraction` | 5 | 900 | [`germanium_sourcing`](55_semiconductors.md#germanium-sourcing) |
+| `junction_transistor` | 5 | 800 | [`junction_transistor`](55_semiconductors.md#junction-transistor) |
+| `point_contact_transistor` | 5 | 900 | [`point_contact_transistor`](55_semiconductors.md#point-contact-transistor) |
+| `radio` | 5 | 700 | [`radio_spark_to_valve`](55_semiconductors.md#radio-spark-to-valve) |
+| `semiconductor_metrology` | 5 | 800 | [`semiconductor_metrology`](55_semiconductors.md#semiconductor-metrology) |
+| `silicon_path` | 5 | 1,000 | [`silicon_path`](55_semiconductors.md#silicon-path) |
+| `single_crystal` | 5 | 1,000 | [`single_crystal_growth`](55_semiconductors.md#single-crystal-growth) |
+| `vacuum_tube` | 5 | 900 | [`vacuum_tube`](55_semiconductors.md#vacuum-tube) |
+| `zinc_industry_scale` | 5 | 600 | [`germanium_sourcing`](55_semiconductors.md#germanium-sourcing) |
+| `zone_refining` | 5 | 1,200 | [`zone_refining`](55_semiconductors.md#zone-refining) |
+
 ### 60_mathematics_method.md
 
 | Node | Tier | Your hours | Recipe |
@@ -185,39 +229,4 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 |---|---:|---:|---|
 | `hot_air_balloon` | 2 | 400 | _(module has no anchor)_ |
 | `railway` | 4 | 800 | _(module has no anchor)_ |
-
-## Broken links
-
-- `em_theory` points at `50_electricity.md`, which does not exist
-- `quantum_solidstate_theory` points at `55_semiconductors.md#semiconductor_theory`, which does not exist
-- `electrostatics` points at `50_electricity.md#electrostatics`, which does not exist
-- `voltaic_pile` points at `50_electricity.md#voltaic_pile`, which does not exist
-- `daniell_cell` points at `50_electricity.md#daniell_cell`, which does not exist
-- `copper_refining` points at `50_electricity.md#wire_insulation`, which does not exist
-- `galvanometer` points at `50_electricity.md#galvanometer`, which does not exist
-- `electromagnet` points at `50_electricity.md#electromagnet`, which does not exist
-- `telegraph_electric` points at `50_electricity.md#telegraph`, which does not exist
-- `electroplating` points at `50_electricity.md#electrolysis_industrial`, which does not exist
-- `dynamo` points at `50_electricity.md#dynamo_motor`, which does not exist
-- `motor_transformer_ac` points at `50_electricity.md#transformer_ac`, which does not exist
-- `power_grid` points at `50_electricity.md#transformer_ac`, which does not exist
-- `arc_light_lamp` points at `50_electricity.md#incandescent_lamp`, which does not exist
-- `electrolysis_industrial` points at `50_electricity.md#electrolysis_industrial`, which does not exist
-- `vacuum_pumps` points at `55_semiconductors.md#vacuum_pumps`, which does not exist
-- `diffusion_pump` points at `55_semiconductors.md#vacuum_pumps`, which does not exist
-- `discharge_xray` points at `55_semiconductors.md#crookes_xray_electron`, which does not exist
-- `vacuum_tube` points at `55_semiconductors.md#vacuum_tube`, which does not exist
-- `radio` points at `55_semiconductors.md#radio_spark_to_valve`, which does not exist
-- `galena_detector` points at `55_semiconductors.md#galena_detector`, which does not exist
-- `semiconductor_metrology` points at `55_semiconductors.md#semiconductor_metrology`, which does not exist
-- `zinc_industry_scale` points at `55_semiconductors.md#germanium_sourcing`, which does not exist
-- `germanium_extraction` points at `55_semiconductors.md#germanium_sourcing`, which does not exist
-- `gecl4_purification` points at `55_semiconductors.md#germanium_sourcing`, which does not exist
-- `ge_reduction` points at `55_semiconductors.md#germanium_sourcing`, which does not exist
-- `zone_refining` points at `55_semiconductors.md#zone_refining`, which does not exist
-- `single_crystal` points at `55_semiconductors.md#single_crystal_growth`, which does not exist
-- `point_contact_transistor` points at `55_semiconductors.md#point_contact_transistor`, which does not exist
-- `junction_transistor` points at `55_semiconductors.md#junction_transistor`, which does not exist
-- `silicon_path` points at `55_semiconductors.md#silicon_path`, which does not exist
-- `crude_cell` points at `50_electricity.md#crude_cell`, which does not exist
 
