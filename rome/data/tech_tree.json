@@ -961,7 +961,8 @@
    "pre": [
     "thermodynamics_theory",
     "newtonian_mechanics",
-    "mat_tool_steel_hss"
+    "mat_tool_steel_hss",
+    "cap_heat_1600"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -980,7 +981,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Newton's third law: jet out the back, thrust forward. A compressor forces air in, fuel burns in a combustion chamber, hot gas expands and exits at high velocity. No piston engine, no propeller. Much simpler mechanically than reciprocating engines but requires materials that survive continuous high temperature under pressure. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Newton's third law: jet out the back, thrust forward. A compressor forces air in, fuel burns in a combustion chamber, hot gas expands and exits at high velocity. No piston engine, no propeller. Much simpler mechanically than reciprocating engines but requires materials that survive continuous high temperature under pressure. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_1600 added by a reviewer working node by node. Reason: combustion chamber operates at sustained 1600+ C, requires regenerative furnace scale heat]",
    "_src": "16_aviation.json",
    "_total_cost": 260.0,
    "kb_level": "module"
@@ -1667,7 +1668,8 @@
    "cat": "metallurgy",
    "pre": [
     "power_grid",
-    "high_temp_furnace"
+    "high_temp_furnace",
+    "cap_heat_3000"
    ],
    "kb": "10_metallurgy.md#alloy_steels_ferroalloys",
    "ph": 600,
@@ -1690,7 +1692,7 @@
    "sch": 6,
    "art": 60,
    "conf": "B",
-   "note": "Temperatures no fuel-fired furnace reaches. Gives calcium carbide (hence acetylene), ferrosilicon, ferromanganese, tungsten and chromium steels, and high-purity graphite for the semiconductor programme. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "Temperatures no fuel-fired furnace reaches. Gives calcium carbide (hence acetylene), ferrosilicon, ferromanganese, tungsten and chromium steels, and high-purity graphite for the semiconductor programme. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [REVIEWED: prerequisite(s) cap_heat_3000 added by a reviewer working node by node. Reason: calcium carbide production at 2000 C requires electric arc furnace]",
    "_src": "core",
    "_total_cost": 77980.0,
    "kb_level": "recipe"
@@ -1702,7 +1704,8 @@
    "cat": "electrical",
    "pre": [
     "dynamo",
-    "vacuum_pumps"
+    "vacuum_pumps",
+    "cap_vac_1e3"
    ],
    "kb": "50_electricity.md#incandescent_lamp",
    "ph": 500,
@@ -1725,7 +1728,7 @@
    "sch": 3,
    "art": 10,
    "conf": "B",
-   "note": "Light without fire, in a city terrified of fire, is one of the great political gifts you can make. Rome's insulae burn constantly and the fear is real. Carbon filaments first; tungsten needs a metallurgy you will not have for a long time. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Light without fire, in a city terrified of fire, is one of the great political gifts you can make. Rome's insulae burn constantly and the fear is real. Carbon filaments first; tungsten needs a metallurgy you will not have for a long time. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: incandescent carbon filaments require high vacuum bulb to prevent oxidation]",
    "_src": "core",
    "_total_cost": 11787.0,
    "kb_level": "recipe"
@@ -1820,7 +1823,8 @@
    "pre": [
     "cementation_steel",
     "precision_three_plate",
-    "units_standards"
+    "units_standards",
+    "cap_tol_100um"
    ],
    "kb": "30_glass_optics.md#balance_analytical",
    "ph": 700,
@@ -1843,7 +1847,7 @@
    "sch": 2,
    "art": 3,
    "conf": "B",
-   "note": "Agate or hardened steel knife edges, a beam stiff enough not to sag, damping, a draught shield, and a master weight set. This is the instrument that converts alchemy into chemistry. Nothing downstream is reproducible without it. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Agate or hardened steel knife edges, a beam stiff enough not to sag, damping, a draught shield, and a master weight set. This is the instrument that converts alchemy into chemistry. Nothing downstream is reproducible without it. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: precise knife edges and beam require fine manufacturing tolerance]",
    "_src": "core",
    "_total_cost": 3871.0,
    "kb_level": "recipe"
@@ -1961,7 +1965,8 @@
    "cat": "metallurgy",
    "pre": [
     "bellows_water_blown",
-    "charcoal_industrial"
+    "charcoal_industrial",
+    "cap_heat_1300"
    ],
    "kb": "10_metallurgy.md#blast_furnace_cast_iron",
    "ph": 900,
@@ -1987,7 +1992,7 @@
    "sch": 1,
    "art": 6,
    "conf": "B",
-   "note": "The biggest single technology gap between Rome and contemporary Han China, which has had cast iron for 500 years. Height, continuous blast and a limestone flux turn a bloomery into a foundry. High risk: the first two or three furnaces will chill, scaffold or burn through. This becomes the financial engine of the middle game. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "The biggest single technology gap between Rome and contemporary Han China, which has had cast iron for 500 years. Height, continuous blast and a limestone flux turn a bloomery into a foundry. High risk: the first two or three furnaces will chill, scaffold or burn through. This becomes the financial engine of the middle game. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_1300 added by a reviewer working node by node. Reason: produces liquid cast iron requiring water-blown continuous blast furnace heat]",
    "_src": "core",
    "_total_cost": 35850.0,
    "kb_level": "recipe"
@@ -1999,7 +2004,8 @@
    "cat": "precision",
    "pre": [
     "screw_lathe",
-    "blast_furnace"
+    "blast_furnace",
+    "cap_tol_100um"
    ],
    "kb": "40_power_precision.md#boring_mill",
    "ph": 600,
@@ -2022,7 +2028,7 @@
    "sch": 1,
    "art": 5,
    "conf": "A",
-   "note": "Wilkinson's machine, and the actual reason there was no useful steam engine before 1775. The bar must be supported at both ends so it cannot follow the existing crooked hole. Without this there is no piston that seals, and without that there is no engine.",
+   "note": "Wilkinson's machine, and the actual reason there was no useful steam engine before 1775. The bar must be supported at both ends so it cannot follow the existing crooked hole. Without this there is no piston that seals, and without that there is no engine. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: steam engine cylinders need tight tolerance for piston sealing]",
    "_src": "core",
    "_total_cost": 11955.0,
    "kb_level": "recipe"
@@ -3009,7 +3015,8 @@
    "cat": "metallurgy",
    "pre": [
     "case_hardening",
-    "refractory_fireclay"
+    "refractory_fireclay",
+    "cap_heat_1100"
    ],
    "kb": "10_metallurgy.md#cementation_steel",
    "ph": 400,
@@ -3033,7 +3040,7 @@
    "sch": 0,
    "art": 3,
    "conf": "B",
-   "note": "Bar iron packed in charcoal in a sealed chest, held at roughly 1000 C for days. Carbon diffuses in slowly, on the order of millimetres per day, so use thin bars. Consistent steel in quantity for the first time.",
+   "note": "Bar iron packed in charcoal in a sealed chest, held at roughly 1000 C for days. Carbon diffuses in slowly, on the order of millimetres per day, so use thin bars. Consistent steel in quantity for the first time. [REVIEWED: prerequisite(s) cap_heat_1100 added by a reviewer working node by node. Reason: carbon diffusion into iron bars at sustained ~1000C]",
    "_src": "core",
    "_total_cost": 8937.0,
    "kb_level": "recipe"
@@ -3562,7 +3569,8 @@
    "pre": [
     "chm_chlor_alkali_mercury",
     "potash_soda",
-    "cap_heat_1100"
+    "cap_heat_1100",
+    "cap_vac_1torr"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -3584,7 +3592,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Caustic soda boils above 100 C, so direct heating to dryness would decompose it. Vacuum evaporation keeps temperature below 100 C while removing water. The product is chemically pure but must be handled in glass or lead; iron is attacked immediately and dissolved. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Caustic soda boils above 100 C, so direct heating to dryness would decompose it. Vacuum evaporation keeps temperature below 100 C while removing water. The product is chemically pure but must be handled in glass or lead; iron is attacked immediately and dissolved. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_vac_1torr added by a reviewer working node by node. Reason: vacuum evaporation at low temperature to avoid decomposition of caustic soda]",
    "_src": "18_chemicals.json",
    "_total_cost": 2093.0,
    "kb_level": "module"
@@ -3595,7 +3603,8 @@
    "tier": 4,
    "cat": "plastics",
    "pre": [
-    "chm_guncotton"
+    "chm_guncotton",
+    "cap_measure_temp"
    ],
    "kb": "20_chemistry.md",
    "ph": 120,
@@ -3615,7 +3624,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Nitrocellulose becomes plastic when mixed with camphor. Sheet is then made by rolling between heated cylinders. Celluloid revolutionises photography by replacing glass plates, enables flexible film stock, and is used for combs, buttons, piano keys. The material is flammable and degrades over time to become increasingly brittle. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Nitrocellulose becomes plastic when mixed with camphor. Sheet is then made by rolling between heated cylinders. Celluloid revolutionises photography by replacing glass plates, enables flexible film stock, and is used for combs, buttons, piano keys. The material is flammable and degrades over time to become increasingly brittle. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: sheet rolling requires temperature control for viscosity management]",
    "_src": "18_chemicals.json",
    "_total_cost": 2061.6,
    "kb_level": "module"
@@ -4331,7 +4340,8 @@
    "cat": "organic_chemistry",
    "pre": [
     "distillation_alcohol",
-    "chm_catalyst_concept"
+    "chm_catalyst_concept",
+    "cap_heat_0700"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -4352,7 +4362,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Methanol vapour is oxidised over silver gauze at 600 C. Formaldehyde is produced as an equilibrium mixture with methanol and water; the product is stabilised by dissolving in water as formalin. Formaldehyde is a cross-linking reagent for proteins and cellulose, essential for resins.",
+   "note": "Methanol vapour is oxidised over silver gauze at 600 C. Formaldehyde is produced as an equilibrium mixture with methanol and water; the product is stabilised by dissolving in water as formalin. Formaldehyde is a cross-linking reagent for proteins and cellulose, essential for resins. [REVIEWED: prerequisite(s) cap_heat_0700 added by a reviewer working node by node. Reason: methanol oxidation over silver at 600 C, within pottery kiln range]",
    "_src": "18_chemicals.json",
    "_total_cost": 1573.6,
    "kb_level": "module"
@@ -4463,7 +4473,8 @@
    "tier": 3,
    "cat": "chemical_engineering",
    "pre": [
-    "chm_soap_hard"
+    "chm_soap_hard",
+    "cap_vac_1torr"
    ],
    "kb": "20_chemistry.md",
    "ph": 100,
@@ -4483,7 +4494,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Soap manufacture produces a glycerol-rich lye as byproduct. The lye is acidified and glycerol is extracted with ethanol, then distilled under vacuum. Glycerol is a primary feedstock for nitroglycerin and explosives, and also a humectant in textiles and pharmaceuticals. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Soap manufacture produces a glycerol-rich lye as byproduct. The lye is acidified and glycerol is extracted with ethanol, then distilled under vacuum. Glycerol is a primary feedstock for nitroglycerin and explosives, and also a humectant in textiles and pharmaceuticals. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_vac_1torr added by a reviewer working node by node. Reason: vacuum distillation of ethanol-glycerol requires rough vacuum]",
    "_src": "18_chemicals.json",
    "_total_cost": 1561.6,
    "kb_level": "module"
@@ -4494,7 +4505,8 @@
    "tier": 3,
    "cat": "explosives",
    "pre": [
-    "nitric_acid"
+    "nitric_acid",
+    "cap_measure_temp"
    ],
    "kb": "20_chemistry.md",
    "ph": 120,
@@ -4515,7 +4527,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Linen is nitrated with mixed acid at 0 C. Temperature control is absolutely critical; deviation to 5 C causes runaway and explosion. Guncotton is more powerful than black powder and is initially unstable, spontaneously heating if stored damp. Modern stabilisation uses diphenylamine to suppress decomposition. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Linen is nitrated with mixed acid at 0 C. Temperature control is absolutely critical; deviation to 5 C causes runaway and explosion. Guncotton is more powerful than black powder and is initially unstable, spontaneously heating if stored damp. Modern stabilisation uses diphenylamine to suppress decomposition. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: nitration at 0 C with deviation to 5 C causing explosion; critical temperature control needed]",
    "_src": "18_chemicals.json",
    "_total_cost": 2093.0,
    "kb_level": "module"
@@ -4722,7 +4734,8 @@
    "cat": "explosives",
    "pre": [
     "chm_glycerol",
-    "nitric_acid"
+    "nitric_acid",
+    "cap_measure_temp"
    ],
    "kb": "20_chemistry.md",
    "ph": 150,
@@ -4742,7 +4755,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Nitroglycerin is prepared by adding glycerol dropwise to a mixture of nitric and sulfuric acid at 10 C or below. It is a contact explosive - shock or friction detonates it with no need for a fuse. It is also unstable on storage and can spontaneously explode. Absorption onto diatomaceous earth (dynamite) is the only practical way to handle it safely.",
+   "note": "Nitroglycerin is prepared by adding glycerol dropwise to a mixture of nitric and sulfuric acid at 10 C or below. It is a contact explosive - shock or friction detonates it with no need for a fuse. It is also unstable on storage and can spontaneously explode. Absorption onto diatomaceous earth (dynamite) is the only practical way to handle it safely. [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: preparation at 10 C or below requires precise temperature control]",
    "_src": "18_chemicals.json",
    "_total_cost": 3101.6,
    "kb_level": "module"
@@ -4921,7 +4934,8 @@
    "cat": "photochemistry",
    "pre": [
     "photography",
-    "analytical_chemistry"
+    "analytical_chemistry",
+    "cap_measure_temp"
    ],
    "kb": "20_chemistry.md",
    "ph": 150,
@@ -4943,7 +4957,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Silver halide crystals are formed by mixing silver nitrate and sodium halide. Gelatin is added as a binder. Development is performed with reducing agents like hydroquinone or metol in alkaline conditions. Each step requires strict control of temperature, pH and oxidising impurities. Photographic film is the foundation of cinema and still photography.",
+   "note": "Silver halide crystals are formed by mixing silver nitrate and sodium halide. Gelatin is added as a binder. Development is performed with reducing agents like hydroquinone or metol in alkaline conditions. Each step requires strict control of temperature, pH and oxidising impurities. Photographic film is the foundation of cinema and still photography. [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: strict control of temperature required for consistent photographic emulsion behavior]",
    "_src": "18_chemicals.json",
    "_total_cost": 5292.0,
    "kb_level": "module"
@@ -5317,7 +5331,8 @@
     "soda_leblanc",
     "distillation_alcohol",
     "chm_pressure_gauge",
-    "mat_ammonia"
+    "mat_ammonia",
+    "cap_heat_0700"
    ],
    "kb": "20_chemistry.md",
    "ph": 250,
@@ -5340,7 +5355,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "The genius: ammonia is expensive so you recycle it. Limestone calcines to CO2 which carbonates the ammonia-brine. NaHCO3 precipitates, is filtered, then thermally decomposed to soda ash. The ammonia is recovered by treating the residue with lime and distilling. Leblanc loses all this to slag mountains. Solvay's yield is 80% versus Leblanc's 40%, and the only waste is calcium chloride brines.",
+   "note": "The genius: ammonia is expensive so you recycle it. Limestone calcines to CO2 which carbonates the ammonia-brine. NaHCO3 precipitates, is filtered, then thermally decomposed to soda ash. The ammonia is recovered by treating the residue with lime and distilling. Leblanc loses all this to slag mountains. Solvay's yield is 80% versus Leblanc's 40%, and the only waste is calcium chloride brines. [REVIEWED: prerequisite(s) cap_heat_0700 added by a reviewer working node by node. Reason: limestone calcining produces lime; thermal decomposition of NaHCO3 at low temperature]",
    "_src": "18_chemicals.json",
    "_total_cost": 8183.0,
    "kb_level": "module"
@@ -5418,7 +5433,8 @@
    "tier": 3,
    "cat": "explosives",
    "pre": [
-    "chm_toluene"
+    "chm_toluene",
+    "cap_measure_temp"
    ],
    "kb": "20_chemistry.md",
    "ph": 150,
@@ -5438,7 +5454,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Toluene is nitrated to mononitrotoluene, then dinitrotoluene, then trinitrotoluene. Each stage requires strong acid and careful temperature control. TNT is relatively stable compared to nitroglycerin and can be melted to pour into shells. Its insensitivity to shock makes it ideal for military use.",
+   "note": "Toluene is nitrated to mononitrotoluene, then dinitrotoluene, then trinitrotoluene. Each stage requires strong acid and careful temperature control. TNT is relatively stable compared to nitroglycerin and can be melted to pour into shells. Its insensitivity to shock makes it ideal for military use. [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: exothermic nitration reactions require careful temperature measurement and control]",
    "_src": "18_chemicals.json",
    "_total_cost": 3082.0,
    "kb_level": "module"
@@ -6652,7 +6668,8 @@
    "cat": "materials",
    "pre": [
     "mat_glass_soda",
-    "precision_three_plate"
+    "precision_three_plate",
+    "cap_tol_100um"
    ],
    "kb": "85_transport_civil.md",
    "ph": 100,
@@ -6670,7 +6687,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Large flat panes of clear glass. Cast plate glass (poured onto a flat table, then ground and polished) allows sizes to 3-4 metres. Transforms storefronts and windows. Sheet glass (drawn from a bath) is cheaper but smaller. Large panes are fragile but stunning. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "Large flat panes of clear glass. Cast plate glass (poured onto a flat table, then ground and polished) allows sizes to 3-4 metres. Transforms storefronts and windows. Sheet glass (drawn from a bath) is cheaper but smaller. Large panes are fragile but stunning. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.] [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: grinding and polishing flat glass requires 0.1mm surface accuracy]",
    "_src": "22_civil.json",
    "_total_cost": 280.0,
    "kb_level": "module"
@@ -6770,7 +6787,8 @@
    "tier": 0,
    "cat": "materials",
    "pre": [
-    "mat_wrought_iron"
+    "mat_wrought_iron",
+    "cap_heat_0700"
    ],
    "kb": "85_transport_civil.md",
    "ph": 0,
@@ -6786,7 +6804,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Wrought iron from bloomery furnace is ductile, tough, and resistant to corrosion. Smith heating and hand-forging creates toughness. Rivets are driven hot; the cooled rivet locks parts together. Roman and medieval smiths knew this; it is not high art, but skilled work. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Wrought iron from bloomery furnace is ductile, tough, and resistant to corrosion. Smith heating and hand-forging creates toughness. Rivets are driven hot; the cooled rivet locks parts together. Roman and medieval smiths knew this; it is not high art, but skilled work. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_0700 added by a reviewer working node by node. Reason: riveting and forging require heating wrought iron to cherry red approximately 750 C]",
    "_src": "22_civil.json",
    "_total_cost": 0,
    "kb_level": "module"
@@ -7756,7 +7774,8 @@
    "cat": "precision",
    "pre": [
     "master_screw",
-    "case_hardening"
+    "case_hardening",
+    "cap_tol_100um"
    ],
    "kb": "40_power_precision.md#clockwork_escapement",
    "ph": 500,
@@ -7779,7 +7798,7 @@
    "sch": 1,
    "art": 3,
    "conf": "B",
-   "note": "The Antikythera mechanism proves Roman-era gear-cutting is already good enough; what is missing is the escapement and the pendulum's isochronism. Accurate time gives navigation, longitude, physics, and later electrical measurement. Also a superb luxury product.",
+   "note": "The Antikythera mechanism proves Roman-era gear-cutting is already good enough; what is missing is the escapement and the pendulum's isochronism. Accurate time gives navigation, longitude, physics, and later electrical measurement. Also a superb luxury product. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: escapement and clock wheels require 0.1mm tolerance work]",
    "_src": "core",
    "_total_cost": 4316.0,
    "kb_level": "recipe"
@@ -7790,7 +7809,8 @@
    "tier": 2,
    "cat": "metallurgy",
    "pre": [
-    "charcoal_industrial"
+    "charcoal_industrial",
+    "cap_heat_1100"
    ],
    "kb": "10_metallurgy.md#coal_and_coke",
    "ph": 350,
@@ -7811,7 +7831,7 @@
    "sch": 1,
    "art": 2,
    "conf": "B",
-   "note": "Romans burn coal in Britain but never coke it. Raw coal ruins iron through sulfur; coking drives off sulfur and volatiles and leaves a strong porous fuel that will bear the burden in a tall furnace. Breaks the charcoal ceiling permanently.",
+   "note": "Romans burn coal in Britain but never coke it. Raw coal ruins iron through sulfur; coking drives off sulfur and volatiles and leaves a strong porous fuel that will bear the burden in a tall furnace. Breaks the charcoal ceiling permanently. [REVIEWED: prerequisite(s) cap_heat_1100 added by a reviewer working node by node. Reason: coking coal to 900-1000 C to remove sulfur and volatiles]",
    "_src": "core",
    "_total_cost": 8990.0,
    "kb_level": "recipe"
@@ -8149,7 +8169,8 @@
    "cat": "television",
    "pre": [
     "vacuum_tube",
-    "electromagnet"
+    "electromagnet",
+    "cap_vac_1e3"
    ],
    "kb": "50_electricity.md",
    "ph": 120,
@@ -8172,7 +8193,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "An evacuated glass tube with a heated cathode that emits electrons, accelerated by 10,000 V towards a phosphor-coated anode. The electron beam is steered by magnetic coils (X and Y deflection). Where the beam hits the screen, the phosphor glows. Varying the beam current modulates the brightness. This is the display technology that made electronic television possible. The key: the beam is fast (MHz), allowing full-screen raster scanning at video rate.",
+   "note": "An evacuated glass tube with a heated cathode that emits electrons, accelerated by 10,000 V towards a phosphor-coated anode. The electron beam is steered by magnetic coils (X and Y deflection). Where the beam hits the screen, the phosphor glows. Varying the beam current modulates the brightness. This is the display technology that made electronic television possible. The key: the beam is fast (MHz), allowing full-screen raster scanning at video rate. [REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: evacuated tube for electron beam display requires high vacuum]",
    "_src": "24_comms_computing.json",
    "_total_cost": 2204.7,
    "kb_level": "module"
@@ -8553,7 +8574,8 @@
    "tier": 2,
    "cat": "signalling",
    "pre": [
-    "com_optical_codebook"
+    "com_optical_codebook",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -8574,7 +8596,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A polished mirror reflects sunlight to encode Morse dots and dashes. Works in daylight at range up to 50 km. Lighter and cheaper than optical towers. Cannot work at night or in cloud. The constraint is weather: an overcast day stops all communication, but the apparatus itself is simpler and more portable. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "A polished mirror reflects sunlight to encode Morse dots and dashes. Works in daylight at range up to 50 km. Lighter and cheaper than optical towers. Cannot work at night or in cloud. The constraint is weather: an overcast day stops all communication, but the apparatus itself is simpler and more portable. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: polished mirror surface requires fine finishing quality]",
    "_src": "24_comms_computing.json",
    "_total_cost": 344.0,
    "kb_level": "module"
@@ -8724,7 +8746,8 @@
    "tier": 3,
    "cat": "signalling",
    "pre": [
-    "com_submarine_cable"
+    "com_submarine_cable",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -8746,7 +8769,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A coil of wire inserted periodically into a long telegraph or telephone line. Wire acts as a capacitor that stores charge; the coil inductance smooths it out. This compensates for cable distortion and allows signals to travel further before attenuation kills them. A loading coil every 2 km extends range from 50 km to 500 km on a submarine cable. The physics is: inductance and capacitance in series form a filter that attenuates high frequencies (noise) less than the signal distortion.",
+   "note": "A coil of wire inserted periodically into a long telegraph or telephone line. Wire acts as a capacitor that stores charge; the coil inductance smooths it out. This compensates for cable distortion and allows signals to travel further before attenuation kills them. A loading coil every 2 km extends range from 50 km to 500 km on a submarine cable. The physics is: inductance and capacitance in series form a filter that attenuates high frequencies (noise) less than the signal distortion. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: coil winding requires file and gauge precision to achieve specified inductance]",
    "_src": "24_comms_computing.json",
    "_total_cost": 503.25,
    "kb_level": "module"
@@ -8793,7 +8816,8 @@
    "cat": "storage",
    "pre": [
     "electromagnet",
-    "com_register_computing"
+    "com_register_computing",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 140,
@@ -8817,7 +8841,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Toroidal ferrite cores (0.5 mm) arranged in a 2D grid (64x64 cores = 4096 bits). Each core stores 1 bit (magnetized clockwise or counter-clockwise). Access time is 1 microsecond (1000x faster than tape). Each core is addressed by X and Y wires (select row and column), read and write wires complete the circuit. Core memory was the standard for mainframe computers (1960s-1970s) until semiconductor RAM replaced it. Handwiring a core array took weeks.",
+   "note": "Toroidal ferrite cores (0.5 mm) arranged in a 2D grid (64x64 cores = 4096 bits). Each core stores 1 bit (magnetized clockwise or counter-clockwise). Access time is 1 microsecond (1000x faster than tape). Each core is addressed by X and Y wires (select row and column), read and write wires complete the circuit. Core memory was the standard for mainframe computers (1960s-1970s) until semiconductor RAM replaced it. Handwiring a core array took weeks. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: 0.5 mm ferrite cores need precise size consistency]",
    "_src": "24_comms_computing.json",
    "_total_cost": 5685.0,
    "kb_level": "module"
@@ -8828,7 +8852,8 @@
    "tier": 4,
    "cat": "storage",
    "pre": [
-    "com_magnetic_wire_storage"
+    "com_magnetic_wire_storage",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 110,
@@ -8851,7 +8876,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A cylinder coated with iron oxide, rotating at 3600 RPM. Read/write heads are stationary, positioned around the drum. Average access time is half a rotation (8 ms). Faster than tape, but requires synchronization with the rotating medium. Used as main memory in early computers (1950s) and later as auxiliary storage. Eventually replaced by moving-head disk drives (faster, fewer mechanical issues).",
+   "note": "A cylinder coated with iron oxide, rotating at 3600 RPM. Read/write heads are stationary, positioned around the drum. Average access time is half a rotation (8 ms). Faster than tape, but requires synchronization with the rotating medium. Used as main memory in early computers (1950s) and later as auxiliary storage. Eventually replaced by moving-head disk drives (faster, fewer mechanical issues). [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: rotating cylinder storage needs precise cylindrical geometry and head spacing]",
    "_src": "24_comms_computing.json",
    "_total_cost": 4071.5,
    "kb_level": "module"
@@ -9546,7 +9571,8 @@
    "tier": 4,
    "cat": "cryptography",
    "pre": [
-    "com_cryptography_substitution"
+    "com_cryptography_substitution",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 160,
@@ -9570,7 +9596,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A rotor (circular disk) with internal wiring that implements a substitution. As you type, each rotor rotates one position (like an odometer), changing the substitution. Three to five rotors in sequence give enormous key space (26^N combinations). The Enigma machine (1923 onward) was adopted by German military and was believed unbreakable until codebreakers (Turing, Rejewski) found flaws. The rotor machine was the standard for military encryption until electronics arrived.",
+   "note": "A rotor (circular disk) with internal wiring that implements a substitution. As you type, each rotor rotates one position (like an odometer), changing the substitution. Three to five rotors in sequence give enormous key space (26^N combinations). The Enigma machine (1923 onward) was adopted by German military and was believed unbreakable until codebreakers (Turing, Rejewski) found flaws. The rotor machine was the standard for military encryption until electronics arrived. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: rotor with internal wiring needs precise electrical contact and alignment]",
    "_src": "24_comms_computing.json",
    "_total_cost": 4431.5,
    "kb_level": "module"
@@ -9581,7 +9607,8 @@
    "tier": 5,
    "cat": "electronics",
    "pre": [
-    "junction_transistor"
+    "junction_transistor",
+    "cap_pure_6N"
    ],
    "kb": "50_electricity.md",
    "ph": 100,
@@ -9604,7 +9631,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A junction between p-type (hole-doped) and n-type (electron-doped) semiconductor. Forward bias allows current flow (low resistance), reverse bias blocks it (high resistance). Used as rectifier (AC to DC), detector, and digital switch. Silicon and germanium diodes were reliable by 1952. In logic, diodes replace vacuum tubes: smaller, cooler, longer-lived. The key is that the diode's threshold voltage sets the logic swing (0-5V typical). [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "A junction between p-type (hole-doped) and n-type (electron-doped) semiconductor. Forward bias allows current flow (low resistance), reverse bias blocks it (high resistance). Used as rectifier (AC to DC), detector, and digital switch. Silicon and germanium diodes were reliable by 1952. In logic, diodes replace vacuum tubes: smaller, cooler, longer-lived. The key is that the diode's threshold voltage sets the logic swing (0-5V typical). [AUDIT: State interest and suspicion were unset and have been defaulted from the category.] [REVIEWED: prerequisite(s) cap_pure_6N added by a reviewer working node by node. Reason: reliable germanium and silicon diodes require high-purity semiconductor material]",
    "_src": "24_comms_computing.json",
    "_total_cost": 1355.44,
    "kb_level": "module"
@@ -9645,7 +9672,8 @@
    "tier": 3,
    "cat": "calculation",
    "pre": [
-    "logarithms"
+    "logarithms",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -9668,7 +9696,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Two wooden rules with logarithmic scales, aligned by hand and compared visually. To multiply 5*7, you find 5 on one scale and 7 on the other, align them, and read 35 off the fixed scale. Uses the log identity: log(a*b)=log(a)+log(b). Accuracy is 3 digits, good enough for engineering work. Ubiquitous by 1900, slide rules were the dominant calculation tool until electronic calculators (1970s). Simple, cheap, and fast enough for design iteration. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Two wooden rules with logarithmic scales, aligned by hand and compared visually. To multiply 5*7, you find 5 on one scale and 7 on the other, align them, and read 35 off the fixed scale. Uses the log identity: log(a*b)=log(a)+log(b). Accuracy is 3 digits, good enough for engineering work. Ubiquitous by 1900, slide rules were the dominant calculation tool until electronic calculators (1970s). Simple, cheap, and fast enough for design iteration. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: logarithmic scale marking needs precise layout for readable accuracy]",
    "_src": "24_comms_computing.json",
    "_total_cost": 573.6,
    "kb_level": "module"
@@ -9780,7 +9808,8 @@
    "cat": "telephone",
    "pre": [
     "com_telephone_manual_exchange",
-    "com_relay"
+    "com_relay",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 180,
@@ -9804,7 +9833,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A caller dials pulses on the handset (1=one pulse, 2=two pulses, etc). These pulses drive a stepper motor which rotates a wiper across a grid of contacts, selecting the called party's line. No human operator needed. The 1890 Strowger exchange was a mechanical marvel: 100 stepper units could handle 10,000 lines. Reliability was marginal (mechanical wear, misalignment), but no wage bill. Replaced manual exchanges over 30 years. The real innovation is replacing human labor with electromechanics.",
+   "note": "A caller dials pulses on the handset (1=one pulse, 2=two pulses, etc). These pulses drive a stepper motor which rotates a wiper across a grid of contacts, selecting the called party's line. No human operator needed. The 1890 Strowger exchange was a mechanical marvel: 100 stepper units could handle 10,000 lines. Reliability was marginal (mechanical wear, misalignment), but no wage bill. Replaced manual exchanges over 30 years. The real innovation is replacing human labor with electromechanics. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: stepper motor and wiper-contact grid require precision mechanical steps]",
    "_src": "24_comms_computing.json",
    "_total_cost": 8613.5,
    "kb_level": "module"
@@ -10029,7 +10058,8 @@
    "cat": "signalling",
    "pre": [
     "telegraph_electric",
-    "electromagnet"
+    "electromagnet",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 140,
@@ -10053,7 +10083,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Operator types on a keyboard (like a typewriter). Solenoids pull levers that position type wheels for each character, a hammer fires on command, the character prints on paper, and the whole sequence is transmitted as electrical pulses down the telegraph line. The receiving teleprinter receives the same pulses and reproduces each character. No skilled Morse operator needed; anyone who can type can use a teleprinter. Slower than Morse (40 words/minute vs. 100+), but usable by clerical staff.",
+   "note": "Operator types on a keyboard (like a typewriter). Solenoids pull levers that position type wheels for each character, a hammer fires on command, the character prints on paper, and the whole sequence is transmitted as electrical pulses down the telegraph line. The receiving teleprinter receives the same pulses and reproduces each character. No skilled Morse operator needed; anyone who can type can use a teleprinter. Slower than Morse (40 words/minute vs. 100+), but usable by clerical staff. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: character wheel indexing mechanism needs mechanical precision]",
    "_src": "24_comms_computing.json",
    "_total_cost": 2777.5,
    "kb_level": "module"
@@ -10064,7 +10094,8 @@
    "tier": 4,
    "cat": "radio",
    "pre": [
-    "vacuum_tube"
+    "vacuum_tube",
+    "cap_vac_1e3"
    ],
    "kb": "50_electricity.md",
    "ph": 100,
@@ -10087,7 +10118,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A triode with feedback can generate any frequency from audio (10 Hz) to microwave (1000 MHz), tuned by the LC circuit. The oscillation amplitude is limited by the triode's power supply and efficiency. Used in radio transmitters, local oscillators for superheterodyne receivers, and audio oscillators for music synthesis. The triode is THE electronic oscillator until solid-state transistors arrive.",
+   "note": "A triode with feedback can generate any frequency from audio (10 Hz) to microwave (1000 MHz), tuned by the LC circuit. The oscillation amplitude is limited by the triode's power supply and efficiency. Used in radio transmitters, local oscillators for superheterodyne receivers, and audio oscillators for music synthesis. The triode is THE electronic oscillator until solid-state transistors arrive. [REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: vacuum tube oscillator needs high vacuum for electron operation]",
    "_src": "24_comms_computing.json",
    "_total_cost": 997.0,
    "kb_level": "module"
@@ -10168,7 +10199,8 @@
    "tier": 4,
    "cat": "television",
    "pre": [
-    "com_cathode_ray_tube"
+    "com_cathode_ray_tube",
+    "cap_vac_1e6"
    ],
    "kb": "50_electricity.md",
    "ph": 160,
@@ -10191,7 +10223,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "A vacuum tube where an electron beam scans a photosensitive mosaic (thousands of tiny silver-mica capacitors). Light on each capacitor charges it; the beam discharges each spot sequentially, producing a current proportional to light. This is a camera: it converts an optical image to an electrical signal suitable for transmission. The iconoscope was unreliable (mosaic damage, burn-in), but it launched electronic television and was the standard for decades.",
+   "note": "A vacuum tube where an electron beam scans a photosensitive mosaic (thousands of tiny silver-mica capacitors). Light on each capacitor charges it; the beam discharges each spot sequentially, producing a current proportional to light. This is a camera: it converts an optical image to an electrical signal suitable for transmission. The iconoscope was unreliable (mosaic damage, burn-in), but it launched electronic television and was the standard for decades. [REVIEWED: prerequisite(s) cap_vac_1e6 added by a reviewer working node by node. Reason: iconoscope tube requires very high vacuum to achieve usable photoemission]",
    "_src": "24_comms_computing.json",
    "_total_cost": 4352.004,
    "kb_level": "module"
@@ -10202,7 +10234,8 @@
    "tier": 3,
    "cat": "television",
    "pre": [
-    "com_antenna_ground"
+    "com_antenna_ground",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 140,
@@ -10226,7 +10259,7 @@
    "sch": 0,
    "art": 0,
    "conf": "C",
-   "note": "A spinning disc with holes arranged in a spiral (Nipkow disc) scans an image line by line. Light from the scene passes through a hole onto a selenium photocell, which modulates current proportional to brightness. This signal is transmitted by radio; a receiver feeds it to a similar spinning disc, with light shining behind it, reconstructing the image on a screen. The whole system is mechanical, unreliable, and limited to about 30 lines of resolution. Electronic television replaced it by 1935.",
+   "note": "A spinning disc with holes arranged in a spiral (Nipkow disc) scans an image line by line. Light from the scene passes through a hole onto a selenium photocell, which modulates current proportional to brightness. This signal is transmitted by radio; a receiver feeds it to a similar spinning disc, with light shining behind it, reconstructing the image on a screen. The whole system is mechanical, unreliable, and limited to about 30 lines of resolution. Electronic television replaced it by 1935. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: Nipkow disc hole pattern must be precise for image resolution]",
    "_src": "24_comms_computing.json",
    "_total_cost": 3275.25,
    "kb_level": "module"
@@ -10310,7 +10343,8 @@
    "tier": 4,
    "cat": "electronics",
    "pre": [
-    "com_vacuum_tube_tetrode"
+    "com_vacuum_tube_tetrode",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 110,
@@ -10333,7 +10367,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "A tetrode with a fifth electrode (suppressor grid, at cathode potential) that prevents secondary electrons from the anode reaching the screen. This was a problem in tetrodes (screen current wasted power). A pentode has higher efficiency and better linearity. It became the standard audio output tube and RF power tube from 1930 onward. Five or more grids became common in specialized tubes (hexode, heptode) for mixing and frequency conversion. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
+   "note": "A tetrode with a fifth electrode (suppressor grid, at cathode potential) that prevents secondary electrons from the anode reaching the screen. This was a problem in tetrodes (screen current wasted power). A pentode has higher efficiency and better linearity. It became the standard audio output tube and RF power tube from 1930 onward. Five or more grids became common in specialized tubes (hexode, heptode) for mixing and frequency conversion. [AUDIT: State interest and suspicion were unset and have been defaulted from the category.] [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: five closely-spaced electrodes require 0.1 mm precision]",
    "_src": "24_comms_computing.json",
    "_total_cost": 863.5,
    "kb_level": "module"
@@ -10378,7 +10412,8 @@
    "tier": 4,
    "cat": "radar",
    "pre": [
-    "com_radar_magnetron"
+    "com_radar_magnetron",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md",
    "ph": 80,
@@ -10399,7 +10434,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "At microwave frequencies (GHz), conventional wires radiate their signal into space (useless). A rectangular copper tube confines the microwave to propagate only in the TM01 mode (specific to the tube dimensions). Loss is low, and the signal is contained. Waveguide is like a plumbing system for microwaves: you assemble it with flanges and bolts, couple to a magnetron at one end and an antenna at the other. This solved the long-standing problem of transmitting high-frequency signals over distance.",
+   "note": "At microwave frequencies (GHz), conventional wires radiate their signal into space (useless). A rectangular copper tube confines the microwave to propagate only in the TM01 mode (specific to the tube dimensions). Loss is low, and the signal is contained. Waveguide is like a plumbing system for microwaves: you assemble it with flanges and bolts, couple to a magnetron at one end and an antenna at the other. This solved the long-standing problem of transmitting high-frequency signals over distance. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: dimensional accuracy critical for microwave mode propagation]",
    "_src": "24_comms_computing.json",
    "_total_cost": 1390.0,
    "kb_level": "module"
@@ -10410,7 +10445,8 @@
    "tier": 2,
    "cat": "metallurgy",
    "pre": [
-    "blast_furnace"
+    "blast_furnace",
+    "cap_heat_1100"
    ],
    "kb": "10_metallurgy.md#copper_refining",
    "ph": 200,
@@ -10432,7 +10468,7 @@
    "sch": 0,
    "art": 3,
    "conf": "B",
-   "note": "Poling and fire refining to get copper clean enough to draw into long fine wire without breaking. A separate node from electro-refining because you need it before you have any electricity.",
+   "note": "Poling and fire refining to get copper clean enough to draw into long fine wire without breaking. A separate node from electro-refining because you need it before you have any electricity. [REVIEWED: prerequisite(s) cap_heat_1100 added by a reviewer working node by node. Reason: copper melts at 1085 C requiring hand-bellows charcoal furnace]",
    "_src": "core",
    "_total_cost": 8656.0,
    "kb_level": "recipe"
@@ -10444,7 +10480,8 @@
    "cat": "electrical",
    "pre": [
     "drawplate_wire",
-    "copper_fire_refined"
+    "copper_fire_refined",
+    "cap_pure_4N"
    ],
    "kb": "50_electricity.md#wire_insulation",
    "ph": 400,
@@ -10469,7 +10506,7 @@
    "sch": 1,
    "art": 4,
    "conf": "B",
-   "note": "You have no rubber and no gutta percha and will not have either. Silk wrapping, oiled linen, shellac varnish from the Indian trade, and bitumen for cables. Impurities in copper cost you conductivity badly, so fire-refine now and electro-refine as soon as you have current to spare.",
+   "note": "You have no rubber and no gutta percha and will not have either. Silk wrapping, oiled linen, shellac varnish from the Indian trade, and bitumen for cables. Impurities in copper cost you conductivity badly, so fire-refine now and electro-refine as soon as you have current to spare. [REVIEWED: prerequisite(s) cap_pure_4N added by a reviewer working node by node. Reason: electrorefining produces 99.99 percent pure copper]",
    "_src": "core",
    "_total_cost": 17950.0,
    "kb_level": "recipe"
@@ -10716,7 +10753,8 @@
    "cat": "chemistry",
    "pre": [
     "coal_coke",
-    "lab_apparatus"
+    "lab_apparatus",
+    "cap_heat_1100"
    ],
    "kb": "20_chemistry.md#destructive_distillation",
    "ph": 600,
@@ -10740,7 +10778,7 @@
    "sch": 3,
    "art": 5,
    "conf": "B",
-   "note": "Wood gives methanol, acetic acid, tar and charcoal. Coal gives coke, coal gas, coal tar and ammonia liquor. Coal tar is the gateway to phenol, benzene, aniline dyes and eventually plastics; coal gas gives you street lighting, which is a spectacular and profitable public benefaction.",
+   "note": "Wood gives methanol, acetic acid, tar and charcoal. Coal gives coke, coal gas, coal tar and ammonia liquor. Coal tar is the gateway to phenol, benzene, aniline dyes and eventually plastics; coal gas gives you street lighting, which is a spectacular and profitable public benefaction. [REVIEWED: prerequisite(s) cap_heat_1100 added by a reviewer working node by node. Reason: coal coking and wood tar production require 1000+ C heating]",
    "_src": "core",
    "_total_cost": 17625.0,
    "kb_level": "recipe"
@@ -10893,7 +10931,8 @@
     "electromagnet",
     "water_power_scale",
     "interchangeable_parts",
-    "copper_refining"
+    "copper_refining",
+    "cap_measure_elec"
    ],
    "kb": "50_electricity.md#dynamo_motor",
    "ph": 800,
@@ -10916,7 +10955,7 @@
    "sch": 4,
    "art": 25,
    "conf": "B",
-   "note": "The chicken-and-egg looks fatal: you need a field to make current and an electromagnet needs current. Residual magnetism in the iron core is enough to start it and the output builds itself up. Nobody guesses this and everybody wastes years on permanent magnets. Put it on the millpond shaft you already built. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "The chicken-and-egg looks fatal: you need a field to make current and an electromagnet needs current. Residual magnetism in the iron core is enough to start it and the output builds itself up. Nobody guesses this and everybody wastes years on permanent magnets. Put it on the millpond shaft you already built. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [REVIEWED: prerequisite(s) cap_measure_elec added by a reviewer working node by node. Reason: self-excited generator requires electrical measurement to understand and regulate output]",
    "_src": "core",
    "_total_cost": 33200.0,
    "kb_level": "recipe"
@@ -11126,7 +11165,8 @@
    "tier": 2,
    "cat": "metallurgy",
    "pre": [
-    "blast_furnace"
+    "blast_furnace",
+    "cap_heat_1300"
    ],
    "kb": "10_metallurgy.md#finery_forge",
    "ph": 500,
@@ -11149,7 +11189,7 @@
    "sch": 1,
    "art": 4,
    "conf": "B",
-   "note": "Cast iron is brittle and useless for anything that must bend. Decarburise it back to wrought iron in a finery, then in a reverberatory puddling furnace where the fuel never touches the metal. Now you have cheap bar iron in quantity, which is the input to everything mechanical.",
+   "note": "Cast iron is brittle and useless for anything that must bend. Decarburise it back to wrought iron in a finery, then in a reverberatory puddling furnace where the fuel never touches the metal. Now you have cheap bar iron in quantity, which is the input to everything mechanical. [REVIEWED: prerequisite(s) cap_heat_1300 added by a reviewer working node by node. Reason: decarburizing cast iron in puddling furnace at 1300 C requires water-blown blast furnace heat]",
    "_src": "core",
    "_total_cost": 9530.0,
    "kb_level": "recipe"
@@ -11248,7 +11288,8 @@
    "tier": 2,
    "cat": "crops",
    "pre": [
-    "fud_sugar_cane_cultivation"
+    "fud_sugar_cane_cultivation",
+    "cap_vac_1torr"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 200,
@@ -11270,7 +11311,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Grow sugar beets in cool northern climates where cane fails. Extract juice, treat with lime and acid to remove impurities (sulfur dioxide helps), evaporate under vacuum, and crystallize. Refinery is capital-intensive. Enables sugar production independent of tropical trade. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Grow sugar beets in cool northern climates where cane fails. Extract juice, treat with lime and acid to remove impurities (sulfur dioxide helps), evaporate under vacuum, and crystallize. Refinery is capital-intensive. Enables sugar production independent of tropical trade. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_vac_1torr added by a reviewer working node by node. Reason: vacuum pan evaporation essential for consistent sugar crystallization]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 804.5,
    "kb_level": "module"
@@ -13109,7 +13150,8 @@
    "tier": 2,
    "cat": "fermentation",
    "pre": [
-    "distillation_alcohol"
+    "distillation_alcohol",
+    "cap_measure_temp"
    ],
    "kb": "75_agriculture_food.md",
    "ph": 200,
@@ -13130,7 +13172,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Isolate yeast strain from wild fermentation by serial dilution and propagation in sterile medium. Maintain culture in sealed glass vials. Enables reproducible beer and bread fermentation without wild cultures. Looks like alchemy; requires careful technique and documentation. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Isolate yeast strain from wild fermentation by serial dilution and propagation in sterile medium. Maintain culture in sealed glass vials. Enables reproducible beer and bread fermentation without wild cultures. Looks like alchemy; requires careful technique and documentation. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: sterile culture isolation and maintenance requires temperature control of growth medium]",
    "_src": "11_food_agriculture.json",
    "_total_cost": 500.0,
    "kb_level": "module"
@@ -13142,7 +13184,8 @@
    "cat": "glass_optics",
    "pre": [
     "high_temp_furnace",
-    "industrial_gases"
+    "industrial_gases",
+    "cap_heat_2000"
    ],
    "kb": "30_glass_optics.md#fused_quartz",
    "ph": 700,
@@ -13165,7 +13208,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Needs an oxy-hydrogen flame at roughly 1700-2000 C. Indispensable for the semiconductor endgame: you cannot zone-refine germanium in anything that contaminates it, and quartz is the only affordable material that does not.",
+   "note": "Needs an oxy-hydrogen flame at roughly 1700-2000 C. Indispensable for the semiconductor endgame: you cannot zone-refine germanium in anything that contaminates it, and quartz is the only affordable material that does not. [REVIEWED: prerequisite(s) cap_heat_2000 added by a reviewer working node by node. Reason: oxy-hydrogen flame at 1700-2000 C needed for silica working]",
    "_src": "core",
    "_total_cost": 18290.0,
    "kb_level": "recipe"
@@ -13213,7 +13256,8 @@
    "pre": [
     "daniell_cell",
     "copper_refining",
-    "geometry_analytic"
+    "geometry_analytic",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md#galvanometer",
    "ph": 400,
@@ -13235,7 +13279,7 @@
    "sch": 3,
    "art": 2,
    "conf": "A",
-   "note": "A coil of known radius and turn count, a compass needle, and the Earth's field give absolute current from pure geometry, with no calibrated instrument to start from. This solves the electrical metrology bootstrap that otherwise looks circular.",
+   "note": "A coil of known radius and turn count, a compass needle, and the Earth's field give absolute current from pure geometry, with no calibrated instrument to start from. This solves the electrical metrology bootstrap that otherwise looks circular. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: coil windings and compass needle require fine wire and precision]",
    "_src": "core",
    "_total_cost": 2475.0,
    "kb_level": "recipe"
@@ -13248,7 +13292,9 @@
    "pre": [
     "gecl4_purification",
     "industrial_gases",
-    "fused_quartz"
+    "fused_quartz",
+    "cap_heat_0700",
+    "cap_pure_6N"
    ],
    "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 600,
@@ -13270,7 +13316,7 @@
    "sch": 18,
    "art": 12,
    "conf": "A",
-   "note": "Hydrogen at roughly 650 C reduces the dioxide to grey powder; melt it into an ingot in a high purity graphite boat under hydrogen. Everything that touches the metal from here on contaminates it, so the boat, the tube and the gas must all be purer than the product. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Hydrogen at roughly 650 C reduces the dioxide to grey powder; melt it into an ingot in a high purity graphite boat under hydrogen. Everything that touches the metal from here on contaminates it, so the boat, the tube and the gas must all be purer than the product. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_0700, cap_pure_6N added by a reviewer working node by node. Reason: hydrogen reduction at 650 C requires furnace; graphite boat must be purer than semiconductor product]",
    "_src": "core",
    "_total_cost": 26710.0,
    "kb_level": "recipe"
@@ -13283,7 +13329,8 @@
    "pre": [
     "germanium_extraction",
     "glass_borosilicate",
-    "fused_quartz"
+    "fused_quartz",
+    "cap_pure_6N"
    ],
    "kb": "55_semiconductors.md#germanium_sourcing",
    "ph": 900,
@@ -13304,7 +13351,7 @@
    "sch": 20,
    "art": 14,
    "conf": "A",
-   "note": "The door. Germanium is a nightmare to purify as metal or oxide and easy as a volatile chloride boiling at about 86 C, which you can fractionate like brandy. Distil repeatedly in a tall packed column, hydrolyse back to the dioxide with ultrapure water, and you are already at parts per million before you have done anything clever. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "The door. Germanium is a nightmare to purify as metal or oxide and easy as a volatile chloride boiling at about 86 C, which you can fractionate like brandy. Distil repeatedly in a tall packed column, hydrolyse back to the dioxide with ultrapure water, and you are already at parts per million before you have done anything clever. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_pure_6N added by a reviewer working node by node. Reason: fractional distillation of volatile germanium tetrachloride requires high-purity refining technique]",
    "_src": "core",
    "_total_cost": 40600.0,
    "kb_level": "recipe"
@@ -13444,7 +13491,8 @@
    "cat": "glass_optics",
    "pre": [
     "glass_labware",
-    "sulfuric_retort"
+    "sulfuric_retort",
+    "cap_heat_1600"
    ],
    "kb": "30_glass_optics.md#glass_borosilicate",
    "ph": 500,
@@ -13468,7 +13516,7 @@
    "sch": 2,
    "art": 4,
    "conf": "C",
-   "note": "Needs boron. The Larderello fumaroles in Tuscany emit boric acid and are inside the Empire, which is a genuinely lucky break if it holds; verify on arrival before planning around it. Low thermal expansion is the difference between a laboratory and a pile of broken retorts. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Needs boron. The Larderello fumaroles in Tuscany emit boric acid and are inside the Empire, which is a genuinely lucky break if it holds; verify on arrival before planning around it. Low thermal expansion is the difference between a laboratory and a pile of broken retorts. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_1600 added by a reviewer working node by node. Reason: borosilicate melting requires sustained 1600 C furnace heat]",
    "_src": "core",
    "_total_cost": 8590.0,
    "kb_level": "recipe"
@@ -13480,7 +13528,8 @@
    "cat": "glass_optics",
    "pre": [
     "workshop_first",
-    "refractory_fireclay"
+    "refractory_fireclay",
+    "cap_heat_1100"
    ],
    "kb": "30_glass_optics.md#glass_clear_cristallo",
    "ph": 400,
@@ -13505,7 +13554,7 @@
    "sch": 0,
    "art": 3,
    "conf": "B",
-   "note": "Rome already makes near-colourless glass and already knows pyrolusite is glassmaker's soap. What it does not have is control: iron-free sand chosen deliberately, a weighed manganese dose, and a proper annealing lehr. Cheapest high-value upgrade to a live industry in the Empire. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Rome already makes near-colourless glass and already knows pyrolusite is glassmaker's soap. What it does not have is control: iron-free sand chosen deliberately, a weighed manganese dose, and a proper annealing lehr. Cheapest high-value upgrade to a live industry in the Empire. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_1100 added by a reviewer working node by node. Reason: soda-lime glass melting requires 1000-1100 C furnace]",
    "_src": "core",
    "_total_cost": 6627.0,
    "kb_level": "recipe"
@@ -13516,7 +13565,8 @@
    "tier": 2,
    "cat": "glass_optics",
    "pre": [
-    "glass_clear"
+    "glass_clear",
+    "cap_tol_100um"
    ],
    "kb": "30_glass_optics.md#glass_lab_ware",
    "ph": 500,
@@ -13537,7 +13587,7 @@
    "sch": 1,
    "art": 3,
    "conf": "B",
-   "note": "The single item that most limits early chemistry. You will break a great deal of it. Until borosilicate, thermal shock is your main enemy: heat on a sand bath, never on a flame.",
+   "note": "The single item that most limits early chemistry. You will break a great deal of it. Until borosilicate, thermal shock is your main enemy: heat on a sand bath, never on a flame. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: graduated vessels and tubing require 0.1mm precision marks and smoothness]",
    "_src": "core",
    "_total_cost": 5830.0,
    "kb_level": "recipe"
@@ -14071,7 +14121,8 @@
    "pre": [
     "arc_light_lamp",
     "power_grid",
-    "cap_power_electric"
+    "cap_power_electric",
+    "cap_vac_1e3"
    ],
    "kb": "91_household.md",
    "ph": 150,
@@ -14095,7 +14146,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Incandescent bulbs (Edison carbon, then tungsten filament) or arc lamps. Grid electricity required. Replaces gas lamps and kerosene. Cost per lumen falls; brightness increases. Urban electrification spreads from 1880s onward.",
+   "note": "Incandescent bulbs (Edison carbon, then tungsten filament) or arc lamps. Grid electricity required. Replaces gas lamps and kerosene. Cost per lumen falls; brightness increases. Urban electrification spreads from 1880s onward. [REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: incandescent filament requires vacuum to prevent oxidation]",
    "_src": "12_household.json",
    "_total_cost": 415.2,
    "kb_level": "module"
@@ -16099,7 +16150,8 @@
    "pre": [
     "micrometer_gauges",
     "screw_lathe",
-    "statistics_basic"
+    "statistics_basic",
+    "cap_tol_100um"
    ],
    "kb": "40_power_precision.md#interchangeable_parts",
    "ph": 800,
@@ -16121,7 +16173,7 @@
    "sch": 2,
    "art": 30,
    "conf": "B",
-   "note": "A management and measurement innovation more than a mechanical one, and it is what turns a workshop into an industry. The army will want it for weapons before anyone else does, which is your funding argument. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. THE STATE WILL RESIST THIS. Interchangeable manufacture visibly replaces free urban artisans with unskilled hands and gauges. Suetonius, Vespasian 18: an engineer offers a cheap machine for hauling columns to the Capitol, and Vespasian rewards him but declines to use it, saying he must be allowed to feed his poor commons. Site it in the provinces, staff it conspicuously with freedmen, and frame it as arming the legions rather than as saving wages.",
+   "note": "A management and measurement innovation more than a mechanical one, and it is what turns a workshop into an industry. The army will want it for weapons before anyone else does, which is your funding argument. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. THE STATE WILL RESIST THIS. Interchangeable manufacture visibly replaces free urban artisans with unskilled hands and gauges. Suetonius, Vespasian 18: an engineer offers a cheap machine for hauling columns to the Capitol, and Vespasian rewards him but declines to use it, saying he must be allowed to feed his poor commons. Site it in the provinces, staff it conspicuously with freedmen, and frame it as arming the legions rather than as saving wages. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: manufacturing tolerance standard based on 0.1mm precision]",
    "_src": "core",
    "_total_cost": 13800.0,
    "kb_level": "recipe"
@@ -16132,7 +16184,8 @@
    "tier": 5,
    "cat": "semiconductor",
    "pre": [
-    "point_contact_transistor"
+    "point_contact_transistor",
+    "cap_tol_10um"
    ],
    "kb": "55_semiconductors.md#junction_transistor",
    "ph": 800,
@@ -16154,7 +16207,7 @@
    "sch": 25,
    "art": 30,
    "conf": "A",
-   "note": "The point-contact device is a laboratory curiosity. The junction transistor is manufacturable, rugged and reproducible, and it is what actually replaces the vacuum tube. If you only get one generation past the goal, get this one.",
+   "note": "The point-contact device is a laboratory curiosity. The junction transistor is manufacturable, rugged and reproducible, and it is what actually replaces the vacuum tube. If you only get one generation past the goal, get this one. [REVIEWED: prerequisite(s) cap_tol_10um added by a reviewer working node by node. Reason: emitter and collector regions require 10-50 micrometer manufacturing precision]",
    "_src": "core",
    "_total_cost": 56500.0,
    "kb_level": "recipe"
@@ -16710,7 +16763,8 @@
    "cat": "materials",
    "pre": [
     "coal_coke",
-    "destructive_distillation"
+    "destructive_distillation",
+    "cap_heat_1100"
    ],
    "kb": "85_transport_civil.md",
    "ph": 80,
@@ -16731,7 +16785,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Coke and steam passed through hot coal produces combustible gas. Used for lighting and early engines. Supply is local and pipeline-dependent; replaced by petrol in vehicles.",
+   "note": "Coke and steam passed through hot coal produces combustible gas. Used for lighting and early engines. Supply is local and pipeline-dependent; replaced by petrol in vehicles. [REVIEWED: prerequisite(s) cap_heat_1100 added by a reviewer working node by node. Reason: steam-coke reaction at 900-1000C for coal gas production]",
    "_src": "14_land_transport.json",
    "_total_cost": 1286.0,
    "kb_level": "module"
@@ -18302,7 +18356,8 @@
    "cat": "precision",
    "pre": [
     "precision_three_plate",
-    "cementation_steel"
+    "cementation_steel",
+    "cap_tol_100um"
    ],
    "kb": "40_power_precision.md#screw_cutting_lathe",
    "ph": 700,
@@ -18324,7 +18379,7 @@
    "sch": 0,
    "art": 3,
    "conf": "B",
-   "note": "The bootstrap problem: to cut an accurate screw you need an accurate screw. Escape it by wrapping a strip round a cylinder to generate a first rough helix, then correcting a master by lapping with a long nut, which averages out the errors. Slow, fiddly, and it is the gate on all measurement.",
+   "note": "The bootstrap problem: to cut an accurate screw you need an accurate screw. Escape it by wrapping a strip round a cylinder to generate a first rough helix, then correcting a master by lapping with a long nut, which averages out the errors. Slow, fiddly, and it is the gate on all measurement. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: lapping master screw with a long nut requires file and gauge precision to average errors]",
    "_src": "core",
    "_total_cost": 3690.0,
    "kb_level": "recipe"
@@ -18361,7 +18416,8 @@
    "cat": "material",
    "pre": [
     "electrolysis_industrial",
-    "cap_power_grid"
+    "cap_power_grid",
+    "cap_heat_1100"
    ],
    "kb": "",
    "ph": 80,
@@ -18377,7 +18433,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Hall-Heroult in a molten fluoride bath. Cryolite is Greenlandic and unobtainable, so you must synthesise the bath from your own hydrofluoric acid. Before electricity aluminium is a precious metal; after it, it is roofing.",
+   "note": "Hall-Heroult in a molten fluoride bath. Cryolite is Greenlandic and unobtainable, so you must synthesise the bath from your own hydrofluoric acid. Before electricity aluminium is a precious metal; after it, it is roofing. [REVIEWED: prerequisite(s) cap_heat_1100 added by a reviewer working node by node. Reason: Hall-Heroult bath must be maintained at 950-1000 C]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -18995,7 +19051,8 @@
    "pre": [
     "destructive_distillation",
     "nitric_acid",
-    "analytical_chemistry"
+    "analytical_chemistry",
+    "cap_measure_temp"
    ],
    "kb": "",
    "ph": 200,
@@ -19011,7 +19068,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Coal tar to benzene to aniline to mauveine and the rest. Historically this single industry funded organic chemistry, created the first industrial research laboratories, and led directly to pharmaceuticals. Enormously profitable and politically harmless.",
+   "note": "Coal tar to benzene to aniline to mauveine and the rest. Historically this single industry funded organic chemistry, created the first industrial research laboratories, and led directly to pharmaceuticals. Enormously profitable and politically harmless. [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: coal tar to aniline synthesis involves exothermic reactions needing temperature control]",
    "_src": "01_materials.json",
    "_total_cost": 15000,
    "kb_level": "none"
@@ -19128,7 +19185,8 @@
    "tier": 3,
    "cat": "material",
    "pre": [
-    "glass_borosilicate"
+    "glass_borosilicate",
+    "cap_heat_1600"
    ],
    "kb": "",
    "ph": 20,
@@ -19144,7 +19202,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Low thermal expansion. The difference between a laboratory and a pile of broken retorts. Needs boron; the Larderello fumaroles in Tuscany are inside the Empire, which is a genuinely lucky break if it holds.",
+   "note": "Low thermal expansion. The difference between a laboratory and a pile of broken retorts. Needs boron; the Larderello fumaroles in Tuscany are inside the Empire, which is a genuinely lucky break if it holds. [REVIEWED: prerequisite(s) cap_heat_1600 added by a reviewer working node by node. Reason: borosilicate glass melting at 1650-1700 C]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -20063,7 +20121,8 @@
    "pre": [
     "mat_tool_steel_hss",
     "mat_chromium",
-    "cap_pure_4N"
+    "cap_pure_4N",
+    "cap_heat_1600"
    ],
    "kb": "",
    "ph": 80,
@@ -20079,7 +20138,7 @@
    "sch": 4,
    "art": 8,
    "conf": "B",
-   "note": "Chromium above about 11% forms a self-healing passive oxide. Chemical plant, cutlery, vacuum systems. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Chromium above about 11% forms a self-healing passive oxide. Chemical plant, cutlery, vacuum systems. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_1600 added by a reviewer working node by node. Reason: steel with 11% chromium requires 1500-1600 C melting]",
    "_src": "01_materials.json",
    "_total_cost": 0,
    "kb_level": "none"
@@ -20444,7 +20503,8 @@
    "pre": [
     "germ_theory",
     "sanitation_antisepsis",
-    "steam_high_pressure"
+    "steam_high_pressure",
+    "cap_measure_temp"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 120,
@@ -20463,7 +20523,7 @@
    "sch": 1,
    "art": 1,
    "conf": "B",
-   "note": "Asepsis: prevention of contamination. Antisepsis: chemical disinfection. Steam sterilization beats carbolic spray because it kills spores, not just surface germs.",
+   "note": "Asepsis: prevention of contamination. Antisepsis: chemical disinfection. Steam sterilization beats carbolic spray because it kills spores, not just surface germs. [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: steam sterilization and high-pressure steam processing require temperature monitoring]",
    "_src": "21_medicine.json",
    "_total_cost": 1075.0,
    "kb_level": "module"
@@ -20916,7 +20976,8 @@
    "pre": [
     "germ_theory",
     "glass_labware",
-    "mat_dyes_synthetic"
+    "mat_dyes_synthetic",
+    "cap_measure_temp"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 100,
@@ -20938,7 +20999,7 @@
    "sch": 1,
    "art": 0,
    "conf": "A",
-   "note": "Petri's shallow agar dishes allow colonies to grow. Gram staining distinguishes by cell wall: crystal violet for gram-positive, red for gram-negative. Guides antibiotic choice.",
+   "note": "Petri's shallow agar dishes allow colonies to grow. Gram staining distinguishes by cell wall: crystal violet for gram-positive, red for gram-negative. Guides antibiotic choice. [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: bacterial culture growth requires precise temperature control of incubation medium]",
    "_src": "21_medicine.json",
    "_total_cost": 657.0,
    "kb_level": "module"
@@ -21358,7 +21419,8 @@
    "cat": "diagnostics",
    "pre": [
     "lens_grinding",
-    "mirror_amalgam"
+    "mirror_amalgam",
+    "cap_tol_100um"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 100,
@@ -21379,7 +21441,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Mirror and lens to view the retina. Reveals aneurysms, cotton-wool spots, diabetic changes. Requires skilled assembly.",
+   "note": "Mirror and lens to view the retina. Reveals aneurysms, cotton-wool spots, diabetic changes. Requires skilled assembly. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: lens and mirror optics require precision grinding]",
    "_src": "21_medicine.json",
    "_total_cost": 899.0,
    "kb_level": "module"
@@ -21645,7 +21707,8 @@
    "cat": "pharmacology",
    "pre": [
     "mat_dyes_synthetic",
-    "analytical_chemistry"
+    "analytical_chemistry",
+    "cap_measure_temp"
    ],
    "kb": "70_medicine_biology.md",
    "ph": 150,
@@ -21665,7 +21728,7 @@
    "sch": 1,
    "art": 0,
    "conf": "A",
-   "note": "First broad-spectrum antibiotic 1935, derived from aniline dyes. Inhibits bacterial folate synthesis. Saves millions from streptococcal and gram-negative infections.",
+   "note": "First broad-spectrum antibiotic 1935, derived from aniline dyes. Inhibits bacterial folate synthesis. Saves millions from streptococcal and gram-negative infections. [REVIEWED: prerequisite(s) cap_measure_temp added by a reviewer working node by node. Reason: sulfonation with concentrated acid is exothermic and requires careful temperature management]",
    "_src": "21_medicine.json",
    "_total_cost": 1105.0,
    "kb_level": "module"
@@ -21951,7 +22014,8 @@
    "cat": "materials",
    "pre": [
     "cap_heat_1600",
-    "industrial_gases"
+    "industrial_gases",
+    "cap_heat_3000"
    ],
    "kb": "10_metallurgy.md",
    "ph": 200,
@@ -21975,7 +22039,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Heat coke and lime to 2000 C in an electric furnace to make calcium carbide, then mix with water and collect the acetylene gas. The carbide reacts violently with water so the generator must be robust and well-designed or it leaks. Acetylene is unstable and cannot be pressurized above 2 atmospheres without risk of explosion, so it must be dissolved in acetone in a porous mass (a carbide lamp cartridge) for transport. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Heat coke and lime to 2000 C in an electric furnace to make calcium carbide, then mix with water and collect the acetylene gas. The carbide reacts violently with water so the generator must be robust and well-designed or it leaks. Acetylene is unstable and cannot be pressurized above 2 atmospheres without risk of explosion, so it must be dissolved in acetone in a porous mass (a carbide lamp cartridge) for transport. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_heat_3000 added by a reviewer working node by node. Reason: calcium carbide at 2000 C in electric furnace; current prerequisite insufficient]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 1770.8,
    "kb_level": "module"
@@ -22199,7 +22263,8 @@
    "cat": "smelting",
    "pre": [
     "bessemer_openhearth",
-    "met_basic_lining_phosphorus"
+    "met_basic_lining_phosphorus",
+    "cap_heat_1600"
    ],
    "kb": "10_metallurgy.md",
    "ph": 180,
@@ -22223,7 +22288,7 @@
    "sch": 1,
    "art": 1,
    "conf": "A",
-   "note": "Blast compressed air through molten iron-carbon; exothermic oxidation of silicon and carbon raises temperature while generating heat. Brittle and rapid\u2014if the converter tips or the air supply fails during a heat, you have a disaster of molten metal on the floor. Speed and low labour cost per ton is the payoff.",
+   "note": "Blast compressed air through molten iron-carbon; exothermic oxidation of silicon and carbon raises temperature while generating heat. Brittle and rapid\u2014if the converter tips or the air supply fails during a heat, you have a disaster of molten metal on the floor. Speed and low labour cost per ton is the payoff. [REVIEWED: prerequisite(s) cap_heat_1600 added by a reviewer working node by node. Reason: molten iron oxidation furnace reaches 1600-1700 C]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 2135.7,
    "kb_level": "module"
@@ -22380,7 +22445,8 @@
    "cat": "forming",
    "pre": [
     "drawplate_wire",
-    "cap_power_water"
+    "cap_power_water",
+    "cap_tol_100um"
    ],
    "kb": "10_metallurgy.md",
    "ph": 100,
@@ -22403,7 +22469,7 @@
    "sch": 0,
    "art": 0,
    "conf": "A",
-   "note": "Anneal a tube, coat with soap as lubricant, draw it through a die on a water-powered wire draw to reduce diameter and thicken walls uniformly. Much slower than rolling but gives excellent surface finish and precise dimensions. The soaped tube must be perfectly round or it jams in the die.",
+   "note": "Anneal a tube, coat with soap as lubricant, draw it through a die on a water-powered wire draw to reduce diameter and thicken walls uniformly. Much slower than rolling but gives excellent surface finish and precise dimensions. The soaped tube must be perfectly round or it jams in the die. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: wire-drawing die precision and resulting surface finish]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 995.8,
    "kb_level": "module"
@@ -22868,7 +22934,8 @@
    "pre": [
     "steam_high_pressure",
     "cap_power_steam",
-    "screw_lathe"
+    "screw_lathe",
+    "cap_tol_100um"
    ],
    "kb": "10_metallurgy.md",
    "ph": 240,
@@ -22892,7 +22959,7 @@
    "sch": 1,
    "art": 1,
    "conf": "B",
-   "note": "A pump driven by steam fills a cylinder with oil; the incompressible oil presses a ram with immense steady force. An accumulator (air-charged vessel) smooths pulsation and stores energy. Pascal's law means a small pump can generate large forces through a large piston. The limit is seal quality and pipe strength; if oil leaks you lose pressure instantly.",
+   "note": "A pump driven by steam fills a cylinder with oil; the incompressible oil presses a ram with immense steady force. An accumulator (air-charged vessel) smooths pulsation and stores energy. Pascal's law means a small pump can generate large forces through a large piston. The limit is seal quality and pipe strength; if oil leaks you lose pressure instantly. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: pressure seal quality and pipe strength require file and gauge precision machining]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 3844.2,
    "kb_level": "module"
@@ -23779,7 +23846,8 @@
    "cat": "surface_treatment",
    "pre": [
     "electroplating",
-    "mat_tin"
+    "mat_tin",
+    "cap_heat_0700"
    ],
    "kb": "10_metallurgy.md",
    "ph": 100,
@@ -23802,7 +23870,7 @@
    "sch": 1,
    "art": 0,
    "conf": "A",
-   "note": "Electroplate iron sheet with tin or dip into molten tin. Tin is non-toxic and corrosion-resistant, so tinned steel is ideal for food storage. The tin coating must be continuous or rust starts at the pin-holes. Electroplated tin plate is thinner and cheaper than dipped; dipped is thicker but more durable. The difference is in the tin-iron bond strength.",
+   "note": "Electroplate iron sheet with tin or dip into molten tin. Tin is non-toxic and corrosion-resistant, so tinned steel is ideal for food storage. The tin coating must be continuous or rust starts at the pin-holes. Electroplated tin plate is thinner and cheaper than dipped; dipped is thicker but more durable. The difference is in the tin-iron bond strength. [REVIEWED: prerequisite(s) cap_heat_0700 added by a reviewer working node by node. Reason: molten tin dipping at 232 C within pottery kiln range]",
    "_src": "19_metallurgy_mining.json",
    "_total_cost": 1232.6,
    "kb_level": "module"
@@ -24160,7 +24228,8 @@
    "cat": "electrical",
    "pre": [
     "dynamo",
-    "em_theory"
+    "em_theory",
+    "cap_tol_100um"
    ],
    "kb": "50_electricity.md#transformer_ac",
    "ph": 700,
@@ -24183,7 +24252,7 @@
    "sch": 4,
    "art": 40,
    "conf": "B",
-   "note": "Laminate the cores or eddy currents will eat your efficiency and cook the iron. Three-phase and transformers make distribution possible, which is what turns a workshop generator into a grid. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "Laminate the cores or eddy currents will eat your efficiency and cook the iron. Three-phase and transformers make distribution possible, which is what turns a workshop generator into a grid. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: laminated cores require thin consistent sheets for efficiency]",
    "_src": "core",
    "_total_cost": 51950.0,
    "kb_level": "recipe"
@@ -25433,7 +25502,8 @@
    "pre": [
     "cap_power_electric",
     "discharge_xray",
-    "vacuum_tube"
+    "vacuum_tube",
+    "cap_vac_1e3"
    ],
    "kb": "30_glass_optics.md",
    "ph": 300,
@@ -25457,7 +25527,7 @@
    "sch": 2,
    "art": 1,
    "conf": "C",
-   "note": "Cathode ray tube, beam deflected by time-base and signal voltages. Traces waveform directly on screen. Requires 1000+ volt HT supply and precise synchronization.",
+   "note": "Cathode ray tube, beam deflected by time-base and signal voltages. Traces waveform directly on screen. Requires 1000+ volt HT supply and precise synchronization. [REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: cathode ray tube requires vacuum for electron beam propagation]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 2671.0,
    "kb_level": "module"
@@ -25504,7 +25574,8 @@
    "cat": "measurement",
    "pre": [
     "discharge_xray",
-    "vacuum_tube"
+    "vacuum_tube",
+    "cap_vac_1e3"
    ],
    "kb": "30_glass_optics.md",
    "ph": 180,
@@ -25526,7 +25597,7 @@
    "sch": 1,
    "art": 0,
    "conf": "C",
-   "note": "Cesium or other photoemissive surface in vacuum emits electrons when light strikes. Current amplified by dynamo or triode. Single photon detectable in dark conditions. [FIXED after independent audit: a photoemissive surface needs an alkali metal, which was not in the materials.]",
+   "note": "Cesium or other photoemissive surface in vacuum emits electrons when light strikes. Current amplified by dynamo or triode. Single photon detectable in dark conditions. [FIXED after independent audit: a photoemissive surface needs an alkali metal, which was not in the materials.] [REVIEWED: prerequisite(s) cap_vac_1e3 added by a reviewer working node by node. Reason: photoemissive surface in vacuum tube needs high vacuum]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 1271.2,
    "kb_level": "module"
@@ -25993,7 +26064,8 @@
    "cat": "measurement",
    "pre": [
     "galvanometer",
-    "clock_pendulum"
+    "clock_pendulum",
+    "cap_tol_100um"
    ],
    "kb": "30_glass_optics.md",
    "ph": 200,
@@ -26017,7 +26089,7 @@
    "sch": 2,
    "art": 1,
    "conf": "B",
-   "note": "Heavy mass damped by springs or pendulum. Frame sits on ground. Relative motion drives pen against rotating drum. Natural period of 10-20 seconds maximizes sensitivity to distant earthquakes.",
+   "note": "Heavy mass damped by springs or pendulum. Frame sits on ground. Relative motion drives pen against rotating drum. Natural period of 10-20 seconds maximizes sensitivity to distant earthquakes. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: precision mechanical linkage and pen mechanism]",
    "_src": "23_optics_instruments.json",
    "_total_cost": 1316.1,
    "kb_level": "module"
@@ -33935,7 +34007,8 @@
    "cat": "ships",
    "pre": [
     "sea_lead_sheathing",
-    "mat_copper"
+    "mat_copper",
+    "cap_tol_100um"
    ],
    "kb": "85_transport_civil.md",
    "ph": 180,
@@ -33956,7 +34029,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Thin copper sheet nailed over the hull below the waterline; resists shipworm better than lead and does not pit; very expensive but saves years of ship life. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Thin copper sheet nailed over the hull below the waterline; resists shipworm better than lead and does not pit; very expensive but saves years of ship life. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: sheet thickness uniformity important for corrosion resistance]",
    "_src": "15_ships.json",
    "_total_cost": 11120.0,
    "kb_level": "module"
@@ -35013,7 +35086,8 @@
    "tier": 5,
    "cat": "navigation",
    "pre": [
-    "vacuum_tube"
+    "vacuum_tube",
+    "cap_measure_time_ms"
    ],
    "kb": "85_transport_civil.md",
    "ph": 250,
@@ -35035,7 +35109,7 @@
    "sch": 1,
    "art": 0,
    "conf": "B",
-   "note": "Transmit an acoustic pulse into water, listen for the echo; measures depth and detects underwater objects; replaces the lead-line and adds a new dimension to navigation.",
+   "note": "Transmit an acoustic pulse into water, listen for the echo; measures depth and detects underwater objects; replaces the lead-line and adds a new dimension to navigation. [REVIEWED: prerequisite(s) cap_measure_time_ms added by a reviewer working node by node. Reason: echo sounding requires millisecond timing for distance measurement]",
    "_src": "15_ships.json",
    "_total_cost": 3435.0,
    "kb_level": "module"
@@ -35250,7 +35324,8 @@
    "cat": "warships",
    "pre": [
     "sea_iron_hull",
-    "sea_compartmented_hull"
+    "sea_compartmented_hull",
+    "cap_tol_10um"
    ],
    "kb": "85_transport_civil.md",
    "ph": 300,
@@ -35273,7 +35348,7 @@
    "sch": 0,
    "art": 0,
    "conf": "C",
-   "note": "A small strong hull that submerges; propelled by electric motors on batteries or a diesel on the surface; requires precise depth control, air supply, and crew training; first military use in WWI. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "A small strong hull that submerges; propelled by electric motors on batteries or a diesel on the surface; requires precise depth control, air supply, and crew training; first military use in WWI. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_tol_10um added by a reviewer working node by node. Reason: pressure hull requires slide rest and micrometer precision for structural integrity at depth]",
    "_src": "15_ships.json",
    "_total_cost": 13672.0,
    "kb_level": "module"
@@ -35285,7 +35360,8 @@
    "cat": "communication",
    "pre": [
     "telegraph_electric",
-    "mat_gutta_percha"
+    "mat_gutta_percha",
+    "cap_tol_100um"
    ],
    "kb": "85_transport_civil.md",
    "ph": 200,
@@ -35307,7 +35383,7 @@
    "sch": 0,
    "art": 0,
    "conf": "B",
-   "note": "Copper conductor insulated with gutta percha (unobtainable), wrapped in iron armor; gutta percha fails, so use bitumen and later synthetic rubber instead, accepting higher loss.",
+   "note": "Copper conductor insulated with gutta percha (unobtainable), wrapped in iron armor; gutta percha fails, so use bitumen and later synthetic rubber instead, accepting higher loss. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: insulation uniformity critical for underwater telegraph signal quality]",
    "_src": "15_ships.json",
    "_total_cost": 2910.0,
    "kb_level": "module"
@@ -35422,7 +35498,8 @@
    "pre": [
     "vacuum_tube",
     "galvanometer",
-    "quantum_solidstate_theory"
+    "quantum_solidstate_theory",
+    "cap_measure_elec"
    ],
    "kb": "55_semiconductors.md#semiconductor_metrology",
    "ph": 800,
@@ -35444,7 +35521,7 @@
    "sch": 14,
    "art": 10,
    "conf": "B",
-   "note": "You cannot purify what you cannot measure. Resistivity to four significant figures and a Hall measurement for carrier type and density are the feedback loop that makes the entire purification programme convergent instead of blind.",
+   "note": "You cannot purify what you cannot measure. Resistivity to four significant figures and a Hall measurement for carrier type and density are the feedback loop that makes the entire purification programme convergent instead of blind. [REVIEWED: prerequisite(s) cap_measure_elec added by a reviewer working node by node. Reason: four-point probe and Hall effect require electrical measurement]",
    "_src": "core",
    "_total_cost": 12890.0,
    "kb_level": "recipe"
@@ -35457,7 +35534,8 @@
    "pre": [
     "junction_transistor",
     "hydrofluoric_acid",
-    "arc_furnace_ferroalloys"
+    "arc_furnace_ferroalloys",
+    "cap_measure_temp_hi"
    ],
    "kb": "55_semiconductors.md#silicon_path",
    "ph": 1000,
@@ -35480,7 +35558,7 @@
    "sch": 30,
    "art": 40,
    "conf": "B",
-   "note": "Silicon is everywhere, which is why it wins in the end, and it melts at 1414 C against germanium's 938 C, needs far better crucible chemistry, and its purification runs through trichlorosilane. Germanium first is the right bootstrap order and history agrees for exactly these reasons.",
+   "note": "Silicon is everywhere, which is why it wins in the end, and it melts at 1414 C against germanium's 938 C, needs far better crucible chemistry, and its purification runs through trichlorosilane. Germanium first is the right bootstrap order and history agrees for exactly these reasons. [REVIEWED: prerequisite(s) cap_measure_temp_hi added by a reviewer working node by node. Reason: 1414 C crystal growth requires high-temperature pyrometry]",
    "_src": "core",
    "_total_cost": 101095.0,
    "kb_level": "recipe"
@@ -35492,7 +35570,9 @@
    "cat": "semiconductor",
    "pre": [
     "zone_refining",
-    "semiconductor_metrology"
+    "semiconductor_metrology",
+    "cap_measure_temp_hi",
+    "cap_tol_10um"
    ],
    "kb": "55_semiconductors.md#single_crystal_growth",
    "ph": 1000,
@@ -35515,7 +35595,7 @@
    "sch": 25,
    "art": 25,
    "conf": "A",
-   "note": "Dip a seed into the melt and pull slowly while rotating. Grain boundaries destroy carrier lifetime, so polycrystalline germanium will never make a working transistor no matter how pure it is. Add the dopant to the melt in weighed traces; this is where the analytical balance earns its keep two centuries later.",
+   "note": "Dip a seed into the melt and pull slowly while rotating. Grain boundaries destroy carrier lifetime, so polycrystalline germanium will never make a working transistor no matter how pure it is. Add the dopant to the melt in weighed traces; this is where the analytical balance earns its keep two centuries later. [REVIEWED: prerequisite(s) cap_measure_temp_hi, cap_tol_10um added by a reviewer working node by node. Reason: Czochralski pulling requires high-temperature pyrometry at melting point and slide rest precision for seed control]",
    "_src": "core",
    "_total_cost": 53700.0,
    "kb_level": "recipe"
@@ -35736,7 +35816,8 @@
    "cat": "power",
    "pre": [
     "steam_atmospheric",
-    "interchangeable_parts"
+    "interchangeable_parts",
+    "cap_tol_100um"
    ],
    "kb": "40_power_precision.md#steam_watt",
    "ph": 800,
@@ -35759,7 +35840,7 @@
    "sch": 3,
    "art": 35,
    "conf": "B",
-   "note": "Roughly a fourfold fuel saving, plus rotative motion via the sun and planet gear, which puts an engine anywhere rather than only at a pithead. This is the node that lets industry leave the riverbank. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "Roughly a fourfold fuel saving, plus rotative motion via the sun and planet gear, which puts an engine anywhere rather than only at a pithead. This is the node that lets industry leave the riverbank. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [REVIEWED: prerequisite(s) cap_tol_100um added by a reviewer working node by node. Reason: piston-cylinder precision for efficient sealing and smooth operation]",
    "_src": "core",
    "_total_cost": 43480.0,
    "kb_level": "recipe"
@@ -35771,7 +35852,8 @@
    "cat": "chemistry",
    "pre": [
     "lab_apparatus",
-    "glass_labware"
+    "glass_labware",
+    "cap_heat_0700"
    ],
    "kb": "20_chemistry.md#sulfuric_acid_retort",
    "ph": 800,
@@ -35795,7 +35877,7 @@
    "sch": 2,
    "art": 3,
    "conf": "B",
-   "note": "The master key to all chemistry. Green vitriol lies in heaps at every pyrite mine as a weathering product and Rome has no idea what it is for. High risk because the retorts fail constantly at the temperature required. Small scale, expensive acid, but it bootstraps the chamber process.",
+   "note": "The master key to all chemistry. Green vitriol lies in heaps at every pyrite mine as a weathering product and Rome has no idea what it is for. High risk because the retorts fail constantly at the temperature required. Small scale, expensive acid, but it bootstraps the chamber process. [REVIEWED: prerequisite(s) cap_heat_0700 added by a reviewer working node by node. Reason: green vitriol dehydration at approximately 480 C requires pottery kiln scale heat]",
    "_src": "core",
    "_total_cost": 8904.0,
    "kb_level": "recipe"
@@ -36770,7 +36852,8 @@
    "pre": [
     "mat_ammonia",
     "industrial_gases",
-    "cap_tol_100um"
+    "cap_tol_100um",
+    "cap_vac_1torr"
    ],
    "kb": "90_textiles.md",
    "ph": 250,
@@ -36793,7 +36876,7 @@
    "sch": 2,
    "art": 0,
    "conf": "B",
-   "note": "Polyamide fiber synthesized from coal tar via complex organic chemistry (Carothers, 1935). Requires high-temperature reactors, vacuum conditions, precise monomer synthesis, and polymerization control. Strongest fiber yet, endless customization. Fully replaces some natural uses. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
+   "note": "Polyamide fiber synthesized from coal tar via complex organic chemistry (Carothers, 1935). Requires high-temperature reactors, vacuum conditions, precise monomer synthesis, and polymerization control. Strongest fiber yet, endless customization. Fully replaces some natural uses. [AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.] [REVIEWED: prerequisite(s) cap_vac_1torr added by a reviewer working node by node. Reason: polyamide polymerization requires rough vacuum to remove water and ammonia byproducts]",
    "_src": "10_textiles.json",
    "_total_cost": 8720.0,
    "kb_level": "module"
@@ -37711,7 +37794,8 @@
    "pre": [
     "diffusion_pump",
     "discharge_xray",
-    "copper_refining"
+    "copper_refining",
+    "cap_vac_1e6"
    ],
    "kb": "55_semiconductors.md#vacuum_tube",
    "ph": 900,
@@ -37736,7 +37820,7 @@
    "sch": 14,
    "art": 25,
    "conf": "B",
-   "note": "Glass-to-metal seals need matched thermal expansion (Dumet wire) or they crack; getters finish the vacuum after sealing. A working amplifier transforms every instrument you own and is the practical precondition for doing sensitive semiconductor measurements at all. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "Glass-to-metal seals need matched thermal expansion (Dumet wire) or they crack; getters finish the vacuum after sealing. A working amplifier transforms every instrument you own and is the practical precondition for doing sensitive semiconductor measurements at all. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [REVIEWED: prerequisite(s) cap_vac_1e6 added by a reviewer working node by node. Reason: triode and amplifier require very high vacuum to prevent arcing and ensure long tube life]",
    "_src": "core",
    "_total_cost": 22440.0,
    "kb_level": "recipe"
@@ -37954,7 +38038,9 @@
     "ge_reduction",
     "motor_transformer_ac",
     "semiconductor_metrology",
-    "arc_furnace_ferroalloys"
+    "arc_furnace_ferroalloys",
+    "cap_measure_temp_hi",
+    "cap_tol_10um"
    ],
    "kb": "55_semiconductors.md#zone_refining",
    "ph": 1200,
@@ -37978,7 +38064,7 @@
    "sch": 25,
    "art": 25,
    "conf": "A",
-   "note": "The specific trick that makes semiconductors possible at all. Most impurities prefer the liquid, so a narrow molten zone dragged along an ingot sweeps them to one end; repeat and the purity compounds. Nothing else reaches these levels. It needs a tube furnace, a quartz or graphite boat, a hydrogen or inert atmosphere, and a way to move a heater slowly and repeatably, which is why it waits on motors.",
+   "note": "The specific trick that makes semiconductors possible at all. Most impurities prefer the liquid, so a narrow molten zone dragged along an ingot sweeps them to one end; repeat and the purity compounds. Nothing else reaches these levels. It needs a tube furnace, a quartz or graphite boat, a hydrogen or inert atmosphere, and a way to move a heater slowly and repeatably, which is why it waits on motors. [REVIEWED: prerequisite(s) cap_measure_temp_hi, cap_tol_10um added by a reviewer working node by node. Reason: dragging molten zone requires high-temperature pyrometry at melting point and slide rest precision for heater control]",
    "_src": "core",
    "_total_cost": 71000.0,
    "kb_level": "recipe"

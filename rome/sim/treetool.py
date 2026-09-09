@@ -516,10 +516,70 @@ def cmd_repair(a):
     return 0
 
 
+def cmd_apply_caps(a):
+    """Apply reviewer-assigned capability rungs from data/caps_fix_*.json.
+
+    Unlike the keyword heuristic this replaces, every edge here was chosen by a
+    reviewer looking at one node at a time with the failure modes of the previous
+    attempt written into their brief. Each edge is still validated: it must name a
+    real node, it must not already be present, and it must not create a cycle.
+    """
+    import glob
+    tree = json.load(open(TREE))
+    nodes = {n["id"]: n for n in tree["nodes"]}
+    applied = refused = empty = unknown = 0
+    reasons = {}
+    for f in sorted(glob.glob(os.path.join(DATA, "caps_fix_*.json"))):
+        try:
+            fixes = json.load(open(f))
+        except Exception as e:
+            print("unparseable: %s (%s)" % (os.path.basename(f), e))
+            continue
+        for nid, fix in fixes.items():
+            if nid not in nodes:
+                unknown += 1
+                continue
+            add = fix.get("add") or []
+            if not add:
+                empty += 1
+                continue
+            n = nodes[nid]
+            got = []
+            for cap in add:
+                if cap not in nodes:
+                    refused += 1
+                    continue
+                if cap in n["pre"]:
+                    continue
+                if nid in closure(nodes, cap):
+                    refused += 1          # would make the graph eat itself
+                    continue
+                n["pre"].append(cap)
+                got.append(cap)
+                applied += 1
+            if got:
+                reasons[nid] = (got, fix.get("reason", ""))
+                n["note"] = n["note"].rstrip() + (
+                    " [REVIEWED: prerequisite(s) %s added by a reviewer working node by node. "
+                    "Reason: %s]" % (", ".join(got), fix.get("reason", "not given")))
+    tree["nodes"] = [nodes[i] for i in sorted(nodes)]
+    json.dump(tree, open(TREE, "w"), indent=1)
+    print("APPLY REVIEWER-ASSIGNED PREREQUISITES")
+    print("   edges applied                    %d" % applied)
+    print("   nodes judged to need none        %d" % empty)
+    print("   edges refused (unknown or cycle) %d" % refused)
+    print("   unknown node ids                 %d" % unknown)
+    print("\nsample of what was added:")
+    for nid, (got, why) in list(reasons.items())[:12]:
+        print("   %-34s + %-38s %s" % (nid[:34], ", ".join(got)[:38], why[:70]))
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("merge")
+    sub.add_parser("apply-caps")
     q = sub.add_parser("repair")
     q.add_argument("--infer-caps", action="store_true",
                    help="guess missing capability rungs from keywords. OFF BY DEFAULT: an "
@@ -530,7 +590,8 @@ def main():
     q.add_argument("--id")
     q.add_argument("--grade")
     a = p.parse_args()
-    return {"merge": cmd_merge, "judge": cmd_judge, "repair": cmd_repair}[a.cmd](a)
+    return {"merge": cmd_merge, "judge": cmd_judge, "repair": cmd_repair,
+            "apply-caps": cmd_apply_caps}[a.cmd](a)
 
 
 if __name__ == "__main__":

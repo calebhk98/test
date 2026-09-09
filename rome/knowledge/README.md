@@ -79,7 +79,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `drawplate_wire` | 1 | 180 | [`wire_drawing`](10_metallurgy.md#wire_drawing---the-drawplate) |
 | `lead_metallurgy` | 1 | 200 | [`lead_silver_cupellation`](10_metallurgy.md#lead_silver_cupellation---refining-silver-from-lead-ore-cupellatio) |
 | `met_annealing_recrystallization` | 1 | 100 | _(module has no anchor)_ |
-| `met_cupola_furnace` | 1 | 150 | _(module has no anchor)_ |
 | `met_drop_hammer` | 1 | 120 | _(module has no anchor)_ |
 | `met_green_sand_mold` | 1 | 80 | _(module has no anchor)_ |
 | `met_jigging_gravity` | 1 | 80 | _(module has no anchor)_ |
@@ -102,6 +101,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `met_chill_casting` | 2 | 100 | _(module has no anchor)_ |
 | `met_continuous_casting` | 2 | 140 | _(module has no anchor)_ |
 | `met_converter_furnace` | 2 | 180 | _(module has no anchor)_ |
+| `met_cupola_furnace` | 2 | 150 | _(module has no anchor)_ |
 | `met_deep_shaft_sinking` | 2 | 240 | _(module has no anchor)_ |
 | `met_drawn_tube` | 2 | 100 | _(module has no anchor)_ |
 | `met_dry_sand_mold` | 2 | 120 | _(module has no anchor)_ |
@@ -373,7 +373,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_go_nogo_gauge` | 2 | 60 | _(module has no anchor)_ |
 | `prc_jig_and_fixture` | 2 | 120 | _(module has no anchor)_ |
 | `prc_lapping_plate` | 2 | 60 | _(module has no anchor)_ |
-| `prc_lead_screw_error_cam` | 2 | 100 | _(module has no anchor)_ |
 | `prc_machine_frame_cast_iron` | 2 | 120 | _(module has no anchor)_ |
 | `prc_milling_machine` | 2 | 160 | _(module has no anchor)_ |
 | `prc_pantograph_copying` | 2 | 80 | _(module has no anchor)_ |
@@ -424,6 +423,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `prc_gauge_blocks_johansson` | 3 | 120 | _(module has no anchor)_ |
 | `prc_honing_machine` | 3 | 100 | _(module has no anchor)_ |
 | `prc_jig_boring_machine` | 3 | 150 | _(module has no anchor)_ |
+| `prc_lead_screw_error_cam` | 3 | 100 | _(module has no anchor)_ |
 | `prc_metrology_room_20c` | 3 | 200 | _(module has no anchor)_ |
 | `prc_optical_flat` | 3 | 100 | _(module has no anchor)_ |
 | `prc_profile_projector` | 3 | 110 | _(module has no anchor)_ |
@@ -845,7 +845,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `air_elevator_pitch` | 1 | 50 | _(module has no anchor)_ |
 | `air_goldbeater_skin` | 1 | 200 | _(module has no anchor)_ |
 | `air_observation_balloon_tethered` | 1 | 120 | _(module has no anchor)_ |
-| `air_pitot_tube` | 1 | 50 | _(module has no anchor)_ |
 | `air_rudder_vertical` | 1 | 60 | _(module has no anchor)_ |
 | `air_varnished_silk_envelope` | 1 | 150 | _(module has no anchor)_ |
 | `civ_bridge_timber_truss` | 1 | 200 | _(module has no anchor)_ |
@@ -891,6 +890,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `air_glider_simple` | 2 | 160 | _(module has no anchor)_ |
 | `air_hydrogen_generation_charcoal` | 2 | 100 | _(module has no anchor)_ |
 | `air_parachute` | 2 | 80 | _(module has no anchor)_ |
+| `air_pitot_tube` | 2 | 50 | _(module has no anchor)_ |
 | `air_propeller_wing` | 2 | 180 | _(module has no anchor)_ |
 | `air_three_axis_control` | 2 | 200 | _(module has no anchor)_ |
 | `air_wind_tunnel` | 2 | 150 | _(module has no anchor)_ |
@@ -1113,7 +1113,6 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_safety_pin` | 1 | 40 | _(module has no anchor)_ |
 | `hom_soap_hard` | 1 | 80 | _(module has no anchor)_ |
 | `hom_spectacles` | 1 | 90 | _(module has no anchor)_ |
-| `hom_stove_enclosed` | 1 | 100 | _(module has no anchor)_ |
 | `hom_toothbrush` | 1 | 50 | _(module has no anchor)_ |
 | `hom_umbrella` | 1 | 80 | _(module has no anchor)_ |
 | `hom_kitchen_range` | 2 | 130 | _(module has no anchor)_ |
@@ -1129,6 +1128,7 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `hom_printed_books` | 2 | 160 | _(module has no anchor)_ |
 | `hom_sewing_machine_hand` | 2 | 180 | _(module has no anchor)_ |
 | `hom_sprung_mattress` | 2 | 120 | _(module has no anchor)_ |
+| `hom_stove_enclosed` | 2 | 100 | _(module has no anchor)_ |
 | `hom_toys_dolls` | 2 | 60 | _(module has no anchor)_ |
 | `hom_washing_machine_hand` | 2 | 140 | _(module has no anchor)_ |
 | `hom_attar_roses` | 3 | 150 | _(module has no anchor)_ |
