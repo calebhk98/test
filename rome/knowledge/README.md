@@ -25,8 +25,12 @@ in this directory, read that one.
 | [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 15 |
 | [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 15 |
 | [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 13 |
+| [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 11 |
 | [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 3 |
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 2 |
+| [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 5 |
+| [`85_transport_civil.md`](85_transport_civil.md) | Transport, mining and civil engineering | 12 | 2 |
+| [`99_AUDIT.md`](99_AUDIT.md) | Adversarial audit of the technical modules | 4 | 0 |
 
 ### Nodes documented in the top-level prose files
 
@@ -134,6 +138,22 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `steam_high_pressure` | 4 | 700 | [`steam_high_pressure`](40_power_precision.md#steam-high-pressure) |
 | `steam_watt` | 4 | 800 | [`steam_watt`](40_power_precision.md#steam-watt) |
 
+### 60_mathematics_method.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `algebra_symbolic` | 0 | 500 | _(module has no anchor)_ |
+| `arithmetic_positional` | 0 | 450 | _(module has no anchor)_ |
+| `atomic_theory` | 0 | 1,000 | _(module has no anchor)_ |
+| `calculus` | 0 | 800 | _(module has no anchor)_ |
+| `geometry_analytic` | 0 | 350 | _(module has no anchor)_ |
+| `logarithms` | 0 | 400 | _(module has no anchor)_ |
+| `newtonian_mechanics` | 0 | 600 | _(module has no anchor)_ |
+| `scientific_method` | 0 | 350 | _(module has no anchor)_ |
+| `statistics_basic` | 0 | 300 | _(module has no anchor)_ |
+| `thermodynamics_theory` | 0 | 700 | _(module has no anchor)_ |
+| `world_map` | 0 | 250 | _(module has no anchor)_ |
+
 ### 70_medicine_biology.md
 
 | Node | Tier | Your hours | Recipe |
@@ -149,28 +169,27 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `crop_rotation` | 1 | 450 | [`crop_rotation`](75_agriculture_food.md#crop-rotation) |
 | `horse_collar` | 1 | 200 | [`horse_collar_harness`](75_agriculture_food.md#horse-collar-harness) |
 
+### 80_information_printing.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `corpus_written` | 1 | 6,000 | _(module has no anchor)_ |
+| `printing_press` | 1 | 900 | _(module has no anchor)_ |
+| `rag_paper` | 1 | 400 | _(module has no anchor)_ |
+| `semaphore_telegraph` | 1 | 700 | _(module has no anchor)_ |
+| `corpus_dispersed` | 2 | 800 | _(module has no anchor)_ |
+
+### 85_transport_civil.md
+
+| Node | Tier | Your hours | Recipe |
+|---|---:|---:|---|
+| `hot_air_balloon` | 2 | 400 | _(module has no anchor)_ |
+| `railway` | 4 | 800 | _(module has no anchor)_ |
+
 ## Broken links
 
-- `world_map` points at `60_mathematics_method.md`, which does not exist
-- `arithmetic_positional` points at `60_mathematics_method.md`, which does not exist
-- `algebra_symbolic` points at `60_mathematics_method.md`, which does not exist
-- `geometry_analytic` points at `60_mathematics_method.md`, which does not exist
-- `logarithms` points at `60_mathematics_method.md`, which does not exist
-- `calculus` points at `60_mathematics_method.md`, which does not exist
-- `scientific_method` points at `60_mathematics_method.md`, which does not exist
-- `statistics_basic` points at `60_mathematics_method.md`, which does not exist
-- `newtonian_mechanics` points at `60_mathematics_method.md`, which does not exist
-- `thermodynamics_theory` points at `60_mathematics_method.md`, which does not exist
-- `atomic_theory` points at `60_mathematics_method.md`, which does not exist
 - `em_theory` points at `50_electricity_semiconductors.md`, which does not exist
 - `quantum_solidstate_theory` points at `50_electricity_semiconductors.md#semiconductor_theory`, which does not exist
-- `rag_paper` points at `80_information_printing.md`, which does not exist
-- `printing_press` points at `80_information_printing.md`, which does not exist
-- `corpus_written` points at `80_information_printing.md`, which does not exist
-- `corpus_dispersed` points at `80_information_printing.md`, which does not exist
-- `semaphore_telegraph` points at `80_information_printing.md`, which does not exist
-- `hot_air_balloon` points at `85_transport_civil.md`, which does not exist
-- `railway` points at `85_transport_civil.md`, which does not exist
 - `electrostatics` points at `50_electricity_semiconductors.md#electrostatics`, which does not exist
 - `voltaic_pile` points at `50_electricity_semiconductors.md#voltaic_pile`, which does not exist
 - `daniell_cell` points at `50_electricity_semiconductors.md#daniell_cell`, which does not exist
@@ -200,4 +219,5 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 - `point_contact_transistor` points at `50_electricity_semiconductors.md#point_contact_transistor`, which does not exist
 - `junction_transistor` points at `50_electricity_semiconductors.md#junction_transistor`, which does not exist
 - `silicon_path` points at `50_electricity_semiconductors.md#silicon_path`, which does not exist
+- `crude_cell` points at `50_electricity_semiconductors.md#voltaic_pile`, which does not exist
 

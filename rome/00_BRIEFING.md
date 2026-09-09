@@ -1,7 +1,7 @@
 # 00 - Arrival Briefing: your first thousand days
 
 You are a competent modern adult. You speak Latin and Koine Greek. You carry
-roughly three kilogrammes of unminted gold (about 11,700 denarii, comfortable
+roughly three kilogrammes of unminted gold (about 10,300 denarii, comfortable
 but well short of the equestrian census of 100,000) and this guide. It is
 roughly 100 AD, Trajan is emperor, and you are going to die of something
 ordinary in about thirty years.
@@ -13,15 +13,15 @@ Read this file before you do anything clever.
 ## The four things that are actually true
 
 **1. You will not see a transistor.** Nobody alive will. The simulator in
-`sim/` puts the median at around 380 AD, roughly 280 years out, across 400
-runs of the best strategy I could write. Your job is not to build a transistor.
+`sim/` puts the median at **386 AD**, about 286 years out, across 600 runs of
+the best strategy I could write. Your job is not to build a transistor.
 Your job is to build the *institution and the corpus* that builds it, and to get
 them through two pandemics and a fifty-year civil war that you know are coming
 and nobody else does.
 
 **2. Your own hours are the scarce resource, not money.** You have about 2,400
 useful hours a year and about thirty years, so roughly 72,000 hours, total,
-forever. The full tree in `data/tech_tree.json` demands 80,400. You are short
+forever. The full tree in `data/tech_tree.json` demands 80,520. You are short
 before you start. Every hour you spend doing something a hired man could do is
 an hour stolen from the only things nobody else can do: **teaching, writing, and
 deciding what to build next.**
@@ -88,18 +88,22 @@ When you are deciding what to do next, in order:
 
 ## The specific ways runs end badly, in order of frequency
 
-From 400 simulated runs of the recommended strategy:
+From 600 simulated runs of the recommended strategy:
 
 | Failure | Share | The fix |
 |---|---|---|
-| The founder died without training successors and the school dispersed | 20% | Found the school in your first fifteen years. It is the pivot of the whole game. |
-| Ran out of time | ~2% | Usually a staffing ceiling, meaning the revenue was never built. |
-| Denounced as a magician, property seized | 2% | Patron, licensed collegium, citizenship, and never work alone at night. |
+| The founder died without training successors and the school dispersed | 18% | Found the school in your first fifteen years. It is the pivot of the whole game. |
+| Denounced as a magician, property seized | 5% | Patron, licensed collegium, citizenship, and never work alone at night. |
+| Ran out of time | ~1% | Usually a staffing ceiling, meaning the revenue was never built. |
 
-Under the greedy "rush straight at the goal" strategy, **zero runs in 500
-succeeded**, and every single one died of the first failure. It gets stuck on
-`atomic_theory`, of all things, because it never trained a second natural
-philosopher and that node needs two.
+Under the greedy "rush straight at the goal" strategy, **zero runs in 600
+succeeded**. It gets stuck on `atomic_theory`, of all things, in 590 of them,
+because it never trained a second natural philosopher and that node needs two.
+
+Under a bare topological ordering of the *technical* prerequisites, three runs
+in 600 succeeded, because the technical graph does not require you to become a
+citizen, find a patron, or teach anybody, and you cannot do a single step of it
+without all three.
 
 That is the whole lesson of this project in one sentence: **the bottleneck is
 never the machine, it is the number of people who understand it.**

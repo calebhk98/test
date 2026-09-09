@@ -115,7 +115,7 @@ times. **[B]** Shellac matters: it is your only good wire varnish for a long tim
 | Gold | Las Médulas (Hispania), Dacia (from 106 AD) | Trajan's Dacian conquest floods Rome with gold; a deflationary opportunity for you. **[A]** |
 | Tin | Cornwall, Iberia | Long haul, expensive. **[A]** |
 | Iron | Noricum (Styria/Carinthia), Elba, Gaul, Britain | Noricum ore is naturally manganese-rich, which is why Noric steel is famous. **[B]** |
-| Mercury | Almadén (Hispania) | Imperial monopoly. You will need State permission. **[A]** |
+| Mercury | Almaden (Hispania) | Imperial monopoly. Pliny NH 33.118 records minium price-fixed at 70 HS per Roman pound, c. 54 den/kg. You will need State permission. **[A]** |
 | Sulfur | Sicily, the Aeolian islands, Campi Flegrei | Abundant. **[A]** |
 | Alum | Melos, Egypt | **[A]** |
 | Natron (Na2CO3) | Wadi Natrun, Egypt | Not saltpetre. **[A]** |
@@ -132,8 +132,11 @@ times. **[B]** Shellac matters: it is your only good wire varnish for a long tim
 
 **Coinage [A]**
 - 1 *aureus* = 25 *denarii* = 100 *sestertii* (HS) = 400 *asses*.
-- Denarius under Trajan: c. 3.4 g at roughly 85-90% fine, so c. 3.0 g fine silver.
-- Aureus: c. 7.2-7.5 g gold. Implied gold:silver ratio c. 11-12:1.
+- Denarius at 100 AD: c. 3.4 g at roughly 93% fine, so c. 3.15 g fine silver.
+  Trajan reduces the fineness to about 89% in his reform of 107 AD, so this
+  number is already sliding while you watch. **[B]**
+- Aureus: 1/45 of a Roman pound, c. 7.27 g, worth 25 denarii. Implied
+  gold:silver ratio about 11:1. **[A]**
 
 **Wages [B]**
 | Role | Per day | Per year (250 working days) |
@@ -163,8 +166,8 @@ in a collapsed unit, so I use it for **ratios only** and anchor to silver. **[C]
 | Copper | c. 4 den/kg | [C] |
 | Lead | c. 0.6 den/kg | [C] |
 | Tin | c. 10 den/kg | [C] |
-| Silver | c. 330 den/kg (definitionally, 3.0 g fine per den) | [A] |
-| Gold | c. 3,900 den/kg | [A] |
+| Silver | c. 317 den/kg (definitionally, 3.15 g fine per den) | [A] |
+| Gold | c. 3,440 den/kg, from the aureus | [A] |
 | Charcoal | c. 0.03 den/kg | [C] |
 | Raw glass | c. 1-3 den/kg | [C] |
 | Olive oil | c. 2-4 den per 10 kg, bulk | [C] |

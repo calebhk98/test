@@ -105,7 +105,7 @@ def critical_path(nodes, goal):
 
 DEFAULTS = dict(
     start_year=100,
-    start_capital=11700,        # scholar_modest kit, 3 kg of gold
+    start_capital=10320,        # scholar_modest kit, 3 kg of gold at 3,440 den/kg
     founder_arrival_age=35,
     founder_hours_per_year=2400,
     director_hours_per_year=1800,

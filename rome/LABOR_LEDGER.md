@@ -18,9 +18,9 @@ hours, total, forever.
 |---|---|
 | Median years the founder survives after arrival | **28** |
 | 10th / 90th percentile | 18 / 40 years |
-| Median founder-hours actually delivered in a lifetime | **34,340** |
-| Founder-hours the full tree demands | 80,400 |
-| Fraction of the tree one lifetime can personally direct | **43%** |
+| Median founder-hours actually delivered in a lifetime | **35,414** |
+| Founder-hours the full tree demands | 80,520 |
+| Fraction of the tree one lifetime can personally direct | **44%** |
 
 ### What the founder personally lives to see finished
 
@@ -28,50 +28,49 @@ Share of 300 runs in which this node was complete before the founder died.
 
 | Node | Completed before death | Tier |
 |---|---:|---:|
+| `workshop_first` | 100% | 1 |
+| `patron_local` | 100% | 0 |
 | `world_map` | 100% | 0 |
 | `arithmetic_positional` | 100% | 0 |
+| `units_standards` | 100% | 0 |
+| `identity_cover` | 100% | 0 |
 | `horse_collar` | 100% | 1 |
 | `arrival_orientation` | 100% | 0 |
-| `patron_local` | 100% | 0 |
-| `workshop_first` | 100% | 1 |
-| `identity_cover` | 100% | 0 |
-| `units_standards` | 100% | 0 |
 | `citizenship` | 100% | 0 |
-| `soap_hard` | 99% | 1 |
-| `case_hardening` | 99% | 1 |
-| `glass_bead_microscope` | 99% | 1 |
-| `lens_grinding` | 99% | 1 |
 | `scientific_method` | 99% | 0 |
-| `drawplate_wire` | 99% | 1 |
-| `refractory_fireclay` | 99% | 2 |
-| `potash_soda` | 99% | 1 |
-| `camera_obscura` | 98% | 1 |
-| `crank_conrod` | 98% | 1 |
-| `glass_clear` | 98% | 1 |
-| `freedman_staff` | 96% | 1 |
-| `water_power_scale` | 94% | 1 |
-| `collegium_licensed` | 94% | 1 |
-| `mirror_amalgam` | 93% | 1 |
-| `glass_labware` | 84% | 2 |
-| `nitre_beds` | 82% | 2 |
-| `distillation_alcohol` | 81% | 1 |
-| `lead_metallurgy` | 78% | 1 |
-| `algebra_symbolic` | 71% | 0 |
-| `school_founded` | 68% | 1 |
-| `corpus_written` | 62% | 1 |
-| `charcoal_industrial` | 60% | 2 |
-| `germ_theory` | 58% | 0 |
-| `sanitation_antisepsis` | 56% | 1 |
-| `rag_paper` | 51% | 1 |
+| `nitre_beds` | 99% | 2 |
+| `lens_grinding` | 97% | 1 |
+| `glass_bead_microscope` | 97% | 1 |
+| `case_hardening` | 97% | 1 |
+| `soap_hard` | 97% | 1 |
+| `drawplate_wire` | 97% | 1 |
+| `crank_conrod` | 96% | 1 |
+| `potash_soda` | 96% | 1 |
+| `refractory_fireclay` | 95% | 2 |
+| `camera_obscura` | 95% | 1 |
+| `glass_clear` | 92% | 1 |
+| `freedman_staff` | 92% | 1 |
+| `collegium_licensed` | 88% | 1 |
+| `glass_labware` | 88% | 2 |
+| `water_power_scale` | 87% | 1 |
+| `mirror_amalgam` | 84% | 1 |
+| `distillation_alcohol` | 83% | 1 |
+| `lead_metallurgy` | 71% | 1 |
+| `school_founded` | 71% | 1 |
+| `algebra_symbolic` | 69% | 0 |
+| `crude_cell` | 67% | 1 |
+| `charcoal_industrial` | 57% | 2 |
+| `corpus_written` | 54% | 1 |
+| `germ_theory` | 53% | 0 |
 
 Nodes reached in fewer than half of runs before the founder dies, and therefore
-things you should assume you will NOT see:
+things you should assume you will NOT live to see:
 
-`cementation_steel`, `precision_three_plate`, `telescope`, `bellows_water_blown`, `blast_furnace`, `statistics_basic`, `geometry_analytic`, `patron_senatorial`, `semaphore_telegraph`, `patron_imperial`, `lab_apparatus`, `sulfuric_retort`, `mining_concession`, `mercury_supply`, `nitric_acid`, `hydrochloric_acid`, `barometer`, `thermometer`, `master_screw`, `balance_analytical`, `atomic_theory`, `calculus`, `finery_puddling`, `coal_coke`, `crucible_steel`, `copper_fire_refined`, `zinc_metal`, `newtonian_mechanics` ...
+`cementation_steel`, `precision_three_plate`, `telescope`, `bellows_water_blown`, `blast_furnace`, `statistics_basic`, `geometry_analytic`, `lab_apparatus`, `sulfuric_retort`, `mercury_supply`, `nitric_acid`, `hydrochloric_acid`, `barometer`, `thermometer`, `master_screw`, `balance_analytical`, `atomic_theory`, `calculus`, `finery_puddling`, `coal_coke`, `crucible_steel`, `copper_fire_refined`, `zinc_metal`, `newtonian_mechanics`, `em_theory`, `screw_lathe`, `micrometer_gauges`, `lead_chamber`, `voltaic_pile`, `copper_refining` ...
 
 ## The single most important number in this project
 
-**43%.** That is the fraction of the tree one lifetime of personal direction can
+**44%.** That is the fraction of the tree one lifetime of personal direction can
 cover. You are not the builder of a transistor. You are the first link in a
 relay of roughly eight to ten generations of directors, and the only things you
 can hand forward are trained people and written words.
@@ -110,7 +109,7 @@ was made.
 | `03_SOCIAL_POLITICS.md` | author | |
 | `knowledge/00_NONOBVIOUS_TRICKS.md` | author | The flagship file. |
 | `knowledge/_TEMPLATE.md` | author | Including the anachronism trap list given to every agent. |
-| `data/tech_tree.json` (127 nodes) | author | Written by hand, not generated. The costs are the part most likely to be wrong. |
+| `data/tech_tree.json` (128 nodes) | author | Written by hand, not generated. The costs are the part most likely to be wrong. |
 | `data/prices.json` | author | |
 | `sim/simulator.py` | author | |
 | `sim/strategies/*.json` | author | |

@@ -9,24 +9,28 @@ Everything lives in [`rome/`](rome/). Start with
 
 ---
 
-## The answer, in six lines
+## The answer, in seven lines
 
-- The irreducible serial calendar time to a working transistor is **144 years**,
-  even with unlimited money and labour.
-- Across 400 simulated runs of the best strategy I could write, the median is
-  **384 AD**, about **284 years** after arrival, with **79%** of runs succeeding
-  within four centuries.
-- **You will not see it.** You will die around 130 AD having personally directed
-  about **43%** of the tree.
-- The naive strategy, beelining at the goal, **succeeds in 0 of 500 runs.** It
-  does not fail at the transistor. It fails at basic chemistry, because it never
-  trained a second person who understood anything.
-- The four highest-value nodes in the entire tree are **write it down, print it,
-  copy it, and make the paper**. Removing them costs 90, 50, 38 and 32 years
-  respectively. No furnace or engine comes close.
-- The three things that will surprise you: **Roman *nitrum* is sodium carbonate,
-  not saltpetre**; **zinc metal is the hidden gate on the entire electrical
-  age**; and **a single glass bead is a 250x microscope you can build in a week**.
+- The irreducible serial calendar time to a working transistor is **133 years**,
+  across 23 nodes, even with unlimited money and labour.
+- Across 600 simulated runs of the best strategy I could write, the median is
+  **386 AD**, about **286 years** after arrival, with **77%** of runs succeeding
+  within five centuries.
+- **You will not see it.** You will die around 128 AD having personally directed
+  about **44%** of the tree.
+- The naive strategy, beelining at the goal, **succeeds in 0 of 600 runs.** It
+  does not fail at the transistor. It fails at basic atomic chemistry, because
+  it never trained a second person who understood anything.
+- **The technical dependency graph is not the real dependency graph.** Nothing
+  in the chain from zinc ore to a germanium crystal requires you to be a Roman
+  citizen, to have a patron, or to have taught anybody. Remove those and the
+  success rate goes to zero.
+- The four highest-value *technical* nodes in the tree are **write it down,
+  print it, copy it, and make the paper**. Removing them costs 83, 47, 40 and 42
+  years. No furnace or engine comes close.
+- Three things that will surprise you: **Roman *nitrum* is sodium carbonate, not
+  saltpetre**; **zinc metal is the hidden gate on the entire electrical age**;
+  and **a single glass bead is a 250x microscope you can build in a week**.
 
 ## What is here
 
@@ -40,7 +44,8 @@ Everything lives in [`rome/`](rome/). Start with
 | [`rome/LABOR_LEDGER.md`](rome/LABOR_LEDGER.md) | Your personal hours, and the author's. |
 | [`rome/knowledge/`](rome/knowledge/) | **The how-to library.** Eleven modules of actual recipes with masses, temperatures and failure modes. |
 | [`rome/knowledge/00_NONOBVIOUS_TRICKS.md`](rome/knowledge/00_NONOBVIOUS_TRICKS.md) | **Start here in the library.** The 33 specific physical tricks that make everything else buildable. |
-| [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | 127 nodes, 251 dependency edges, fully costed in hours, denarii, materials, risk and political consequence. |
+| [`rome/knowledge/99_AUDIT.md`](rome/knowledge/99_AUDIT.md) | An adversarial fact-check of the technical modules. It found real errors and they have been fixed. |
+| [`rome/data/tech_tree.json`](rome/data/tech_tree.json) | 128 nodes, 254 dependency edges, fully costed in hours, denarii, materials, risk and political consequence. |
 | [`rome/data/prices.json`](rome/data/prices.json) | Roman wages and commodity prices, every figure confidence-tagged. |
 | [`rome/sim/simulator.py`](rome/sim/simulator.py) | The tool. Validates, plans, Monte-Carlos, ablates, and plays. |
 | [`rome/log/playthrough_01.md`](rome/log/playthrough_01.md) | Real simulator traces: the lucky run, the typical run, and a failure. |
@@ -53,6 +58,7 @@ python3 rome/sim/simulator.py path point_contact_transistor  # the critical path
 python3 rome/sim/simulator.py costs --top 25                 # where the money goes
 python3 rome/sim/simulator.py compare --mc 500               # rush vs topological vs recommended
 python3 rome/sim/simulator.py sensitivity --mc 300           # what is each choice actually worth
+python3 rome/sim/simulator.py why zinc_metal                  # explain any one node
 python3 rome/sim/simulator.py run --strategy recommended --trace
 python3 rome/sim/simulator.py play                           # play it year by year
 ```
@@ -61,7 +67,7 @@ No dependencies beyond the Python 3 standard library.
 
 ## The premise
 
-You speak Latin and Greek. You carry about 3 kg of unminted gold, roughly 11,700
+You speak Latin and Greek. You carry about 3 kg of unminted gold, roughly 10,300
 denarii, which is comfortable and well short of the equestrian census of
 100,000. You pass as a Greek physician and natural philosopher of Alexandria,
 which is the cover that explains your accent, your apparatus, your chemistry and

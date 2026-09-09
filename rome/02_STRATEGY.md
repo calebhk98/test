@@ -15,57 +15,94 @@ python3 rome/sim/simulator.py path point_contact_transistor
 
 ## 1. The result, up front
 
-400 Monte Carlo runs per strategy, 500-year horizon, all three dated
+600 Monte Carlo runs per strategy, 500-year horizon, all three dated
 catastrophes active.
 
 | Strategy | Reaches the transistor | Median year | Elapsed | Dominant failure |
 |---|---|---|---|---|
-| **RUSH** (beeline at the goal, skip revenue, institutions, defence) | **0%** | never | - | founder dies with no successors, 100% |
-| **TOPO** (bare topological order) | 58% | 396 AD | 296 yr | founder dies with no successors, 41% |
-| **RECOMMENDED** | **79%** | **384 AD** | **284 yr** | founder dies with no successors, 20% |
+| **RUSH** (beeline at the goal, skip revenue, institutions, defence) | **0 of 600** | never | - | founder dies with no successors, 94% |
+| **TOPO** (bare topological order of the technical prerequisites) | **3 of 600** | 432 AD | 332 yr | founder dies with no successors, 94% |
+| **RECOMMENDED** | **462 of 600 (77%)** | **386 AD** | **286 yr** | founder dies with no successors, 18% |
+
+With all random events switched off, so pure engineering with no plague, no
+civil war and no denunciation, the recommended strategy reaches the goal in 84%
+of runs with a median of **367 AD**. The catastrophes cost about **19 years and
+7 percentage points**. The strategy choice costs everything.
 
 The irreducible serial calendar time on the critical path, if money and labour
-were infinite, is **144 years**. Everything above that is people, money and
-catastrophe.
+were infinite, is **133 years across 23 nodes**. Everything above that is
+people, money and catastrophe.
 
-**The rush strategy scores zero.** It does not fail at the transistor. It fails
-at `atomic_theory`, a node that requires two trained natural philosophers,
-because it never founded a school. This is not a quirk of the model. It is the
-central finding: *the bottleneck is never the machine, it is the number of
-people who understand it.*
+## 2. Why the two obvious strategies score zero
 
-## 2. The value of each choice, measured
+**RUSH does not fail at the transistor. It fails at `atomic_theory`**, in 590 of
+600 runs, because that node needs two trained natural philosophers and the rush
+strategy never founded a school. It gets a blast furnace, crucible steel, a
+screw-cutting lathe and mineral acids, and then stops, because there is nobody
+to hand them to.
 
-From the ablation study. "Delay" is how many years later the median run reaches
-the transistor if that node is never built.
+**TOPO fails for a subtler and more interesting reason, and finding it was the
+most useful thing this project did.** Halfway through building the tree I
+removed one prerequisite edge that was wrong: I had made mercury supply depend
+on an imperial mining concession, when in fact cinnabar was traded across the
+Empire as the pigment *minium* and you can simply buy it. Removing that single
+edge dropped **citizenship, the licensed collegium, the freedman staff, the
+school, both patrons and the optical telegraph out of the technical closure of
+the goal entirely.** Nothing in physics requires any of them.
 
-| Node removed | Delay | Verdict |
-|---|---|---|
-| `corpus_written` | **+90 yr** | CRITICAL |
-| `corpus_dispersed` | **+50 yr** | CRITICAL |
-| `printing_press` | +38 yr | clearly worth it |
-| `rag_paper` | +32 yr | clearly worth it |
-| `endowment_land` | +23 yr | clearly worth it |
-| `academy_network` | +17 yr | clearly worth it |
-| `plague_preparedness` | +8 yr | worth it |
-| `telegraph_electric` | +6 yr | worth it |
-| `world_map` | +5 yr | worth it |
-| `crop_rotation` | +4 yr | marginal |
-| `mirror_amalgam` | +1 yr, and success rate *rises* 6 points | the model says this costs more than it returns |
+The topological strategy, which follows the technical graph, promptly collapsed
+from a 58% success rate to 0.5%.
 
-**The four biggest items in the entire tech tree are: write it down, print it,
-copy it, and make the paper to copy it onto.** Not the blast furnace. Not the
-steam engine. That result held under every calibration I tried, and it is the
-single most useful thing this project produced.
+That is the finding: **the technical dependency graph is not the real dependency
+graph.** Nothing in the chain from calamine to a germanium crystal requires you
+to be a citizen, or to have a patron, or to have taught anybody. And you cannot
+do a single step of it without all three.
 
-The `mirror_amalgam` result is the model criticising my own strategy: once the
-economy-growth term is active, luxury revenue is not worth the founder-hours it
-costs. I have left it in the recommended order and flagged it rather than
-quietly deleting it, because the revenue model is the weakest part of the
-simulator and I do not trust that finding enough to act on it. Treat it as a
-question, not an answer.
+## 3. The value of each choice, measured
 
-## 3. The phases
+Ablation study, 300 runs per variant. "Delay" is how many years later the median
+run reaches the transistor if that node is never built.
+
+| Node removed | Success rate | Delay | Verdict |
+|---|---|---|---|
+| `freedman_staff` | **0%** | never | CRITICAL |
+| `collegium_licensed` | **0%** | never | CRITICAL |
+| `citizenship` | **0%** | never | CRITICAL |
+| `school_founded` | **0%** | +173 yr | CRITICAL |
+| `corpus_written` | 73% | **+83 yr** | CRITICAL |
+| `corpus_dispersed` | 76% | **+47 yr** | CRITICAL |
+| `rag_paper` | 77% | +42 yr | clearly worth it |
+| `printing_press` | 76% | +40 yr | clearly worth it |
+| `patron_senatorial` | **37%** | +6 yr | CRITICAL |
+| `world_map` | **49%** | +3 yr | CRITICAL (as early revenue and early favour) |
+| `endowment_land` | 76% | +27 yr | clearly worth it |
+| `academy_network` | 75% | +21 yr | clearly worth it |
+| `patron_imperial` | 70% | +16 yr | clearly worth it |
+| `semaphore_telegraph` | 68% | +7 yr | clearly worth it |
+| `telegraph_electric` | 74% | +4 yr | worth it |
+| `plague_preparedness` | 77% | +7 yr | marginal in this model, and I distrust that |
+| `crop_rotation` | 77% | +2 yr | marginal |
+| `sanitation_antisepsis` | 75% | +1 yr | marginal |
+| `mirror_amalgam` | **80%** | 0 yr | the model says this costs more than it returns |
+
+Two things to take from that table.
+
+**The four biggest technical items in the entire tree are: write it down, print
+it, copy it, and make the paper to copy it onto.** Not the blast furnace, not
+the steam engine, not the dynamo. That result survived every recalibration I
+tried.
+
+**Everything with a 0% row is a social or legal node, not a technical one.**
+
+Two results I have left in rather than tuning away. `mirror_amalgam`, one of my
+own recommended revenue businesses, apparently costs more founder-hours than it
+returns; I think that is an artefact of the weak revenue model rather than a
+real finding, and I say so rather than deleting the line. And
+`plague_preparedness` scores as marginal, which I do not believe: the model lets
+staff regrow too easily after a plague, so it understates the value of not
+losing them.
+
+## 4. The phases
 
 ### Phase A - Years 0 to 5. Survive, and start the slow things.
 Do nothing impressive for six months. Then, in parallel:
@@ -124,7 +161,7 @@ tetrachloride distilled like brandy at 86 C, hydrogen reduction, zone refining,
 Czochralski pulling, and finally two phosphor bronze points a fraction of a
 millimetre apart on an n-type slab.
 
-## 4. Three decisions I made deliberately, and why
+## 5. Three decisions I made deliberately, and why
 
 **Gunpowder is scheduled last, on purpose.** It is cheap, it is easy once the
 nitre beds run, and it would buy imperial favour instantly. It would also arm
@@ -144,7 +181,7 @@ are nearly free and they are what decides whether your school still exists in
 181 AD. It is also, separately, the right thing to do, and the two facts are not
 in tension.
 
-## 5. What the model is probably wrong about
+## 6. What the model is probably wrong about
 
 Stated plainly, because someone is going to check.
 

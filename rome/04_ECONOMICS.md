@@ -20,24 +20,24 @@ anchored to silver through ratios implied by the Edict of Diocletian, which is
 | Category | Nodes | Your hours | Total cost (den) | Revenue at maturity (den/yr) |
 |---|---:|---:|---:|---:|
 | transport | 1 | 800 | 1,393,410 | 60,000 |
-| electrical | 14 | 7,600 | 988,102 | 237,700 |
-| metallurgy | 18 | 8,280 | 880,596 | 199,000 |
-| semiconductor | 10 | 8,250 | 611,958 | 70,000 |
+| electrical | 15 | 7,720 | 988,108 | 237,700 |
+| metallurgy | 18 | 8,280 | 566,696 | 199,000 |
 | chemistry | 16 | 8,900 | 484,925 | 97,900 |
+| semiconductor | 10 | 8,250 | 443,949 | 70,000 |
 | institution | 6 | 6,750 | 235,797 | 5,300 |
 | power | 5 | 3,150 | 205,877 | 44,800 |
 | social | 5 | 2,550 | 59,200 | 20,000 |
+| glass_optics | 10 | 4,420 | 52,784 | 22,000 |
 | precision | 7 | 4,500 | 51,790 | 18,000 |
-| glass_optics | 10 | 4,420 | 51,384 | 22,000 |
 | information | 6 | 9,050 | 50,207 | 7,400 |
-| instruments | 7 | 3,700 | 39,004 | 7,000 |
+| instruments | 7 | 3,700 | 44,406 | 7,000 |
 | physics | 5 | 4,600 | 20,610 | 3,000 |
 | mathematics | 6 | 2,800 | 11,780 | 900 |
 | military | 2 | 700 | 10,724 | 6,000 |
 | medicine | 3 | 1,350 | 9,060 | 4,000 |
 | agriculture | 2 | 650 | 4,146 | 3,900 |
 | foundation | 4 | 2,350 | 2,824 | 0 |
-| **TOTAL** | **127** | **80,400** | **5,111,394** | **806,900** |
+| **TOTAL** | **128** | **80,520** | **4,636,293** | **806,900** |
 
 ### The twelve most expensive nodes
 
@@ -45,16 +45,16 @@ anchored to silver through ratios implied by the Edict of Diocletian, which is
 |---|---:|---:|---:|---:|
 | `railway` | 13,410 | 1,290,000 | 90,000 | **1,393,410** |
 | `power_grid` | 18,000 | 544,000 | 150,000 | **712,000** |
-| `zinc_industry_scale` | 4,165 | 458,000 | 50,000 | **512,165** |
 | `electrolysis_industrial` | 5,400 | 245,200 | 70,000 | **320,600** |
-| `junction_transistor` | 6,300 | 151,200 | 25,000 | **182,500** |
+| `zinc_industry_scale` | 4,165 | 143,000 | 50,000 | **197,165** |
 | `endowment_land` | 80 | 150,000 | 8,000 | **158,080** |
 | `steam_high_pressure` | 5,670 | 89,000 | 26,000 | **120,670** |
 | `silicon_path` | 10,050 | 31,045 | 60,000 | **101,095** |
 | `telegraph_electric` | 3,795 | 52,000 | 35,000 | **90,795** |
 | `bessemer_openhearth` | 4,165 | 42,800 | 40,000 | **86,965** |
 | `arc_furnace_ferroalloys` | 2,680 | 15,300 | 60,000 | **77,980** |
-| `point_contact_transistor` | 5,900 | 50,079 | 20,000 | **75,979** |
+| `zone_refining` | 7,500 | 28,500 | 35,000 | **71,000** |
+| `charcoal_industrial` | 900 | 53,200 | 3,500 | **57,600** |
 
 ### Best return on capital: revenue per denarius of setup cost
 
@@ -66,16 +66,16 @@ anchored to silver through ratios implied by the Edict of Diocletian, which is
 | `world_map` | 500 | 290 | 0.6 yr |
 | `lens_grinding` | 3,200 | 1,891 | 0.6 yr |
 | `camera_obscura` | 600 | 376 | 0.6 yr |
-| `mirror_amalgam` | 5,000 | 3,956 | 0.8 yr |
 | `drawplate_wire` | 800 | 638 | 0.8 yr |
 | `distillation_alcohol` | 4,200 | 3,458 | 0.8 yr |
 | `radio` | 25,000 | 21,152 | 0.8 yr |
 | `horse_collar` | 900 | 826 | 0.9 yr |
 | `crucible_steel` | 11,000 | 11,388 | 1.0 yr |
+| `finery_puddling` | 9,000 | 9,530 | 1.1 yr |
 
 ### Where your own hours go
 
-| Node | Your hours | % of a 72,000-hour life |
+| Node | Your hours | %% of a 72,000-hour life |
 |---|---:|---:|
 | `corpus_written` | 6,000 | 8.3% |
 | `academy_network` | 2,500 | 3.5% |
@@ -96,8 +96,8 @@ anchored to silver through ratios implied by the Edict of Diocletian, which is
 
 **Read the first table again.** `information` is the single largest consumer of
 *your own hours* in the entire programme, 9,050 of them, and one of the smallest
-consumers of *money*, about 50,000 denarii for the whole branch. Meanwhile
-`transport` (the railway) costs 1.4 million denarii and 800 of your hours.
+consumers of *money*, about 50,207 denarii for the whole branch. Meanwhile
+`transport` (the railway) costs 1,393,410 denarii and 800 of your hours.
 
 That asymmetry is the whole strategic geometry of this problem:
 
@@ -112,15 +112,14 @@ That asymmetry is the whole strategic geometry of this problem:
 
 ## 3. The total is unaffordable, and that is the point
 
-The full tree costs about **5.1 million denarii**, which is roughly twenty
-senatorial fortunes, and **80,400 of your hours** against the roughly 72,000 you
-will ever have.
+The full tree costs about **4.6 million denarii**, which is roughly 19 senatorial
+fortunes, and **80,520 of your hours** against the roughly 72,000 you will ever have.
 
 Neither number is meant to be paid by you. They are paid by:
 
 1. **Compounding revenue.** The programme's own products fund it. Note the
-   revenue column totals about 807,000 denarii a year at full maturity, which
-   pays back the entire capital cost in under seven years, if you live long
+   revenue column totals about 806,900 denarii a year at full maturity, which
+   pays back the entire capital cost in about 6 years, if you live long
    enough to get there, which you do not.
 2. **The State.** Once the optical telegraph exists, imperial funding is worth
    more than every product you sell.

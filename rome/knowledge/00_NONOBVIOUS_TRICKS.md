@@ -64,8 +64,12 @@ gate on the voltaic pile and therefore on the entire electrical age.**
 
 **5. Galena straight out of a lead mine is a working semiconductor.**
 A cleaved crystal of lead sulfide touched with a fine springy wire is a
-point-contact rectifier. It needs no purification, no doping, no vacuum and no
-theory. **Rome can build a working semiconductor diode in year three.** It is
+point-contact rectifier. It needs no purification, no doping, no vacuum, no
+theory, and no good battery. **Rome can build a working semiconductor diode within about five years of
+arrival**, which is what the tech tree's serial floor for `galena_detector`
+actually works out to. You do not need the voltaic pile for it: a crude copper
+and iron cell in brine gives half a volt, which is plenty to bias a crystal and
+move a compass needle. It is
 also the detector for the first radio receiver and the cheapest possible
 demonstration that rectification is real, which is the seed of everything in
 Module 50.

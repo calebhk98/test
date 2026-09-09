@@ -1640,7 +1640,8 @@
    "tier": 2,
    "cat": "metallurgy",
    "pre": [
-    "mining_concession"
+    "lead_metallurgy",
+    "lab_apparatus"
    ],
    "kb": "10_metallurgy.md#mercury",
    "ph": 150,
@@ -1661,7 +1662,7 @@
    "sch": 0,
    "art": 1,
    "conf": "B",
-   "note": "Almaden is an imperial monopoly, so this is a political node before it is a technical one. Mercury gives you barometers, the Sprengel pump, mirrors and the first hard vacuum humans have ever had. Quantity sized for programme needs, not for trade: 400 kg of cinnabar yields roughly 300 kg of mercury, which is ample for barometers, thermometers, Sprengel pumps and a mirror works. Cinnabar is priced from Pliny NH 33.118."
+   "note": "Almaden is an imperial monopoly, so this is a political node before it is a technical one. Mercury gives you barometers, the Sprengel pump, mirrors and the first hard vacuum humans have ever had. Quantity sized for programme needs, not for trade: 400 kg of cinnabar yields roughly 300 kg of mercury, which is ample for barometers, thermometers, Sprengel pumps and a mirror works. Cinnabar is priced from Pliny NH 33.118. CORRECTION: this no longer requires the imperial mining concession. Cinnabar is traded across the Empire as the pigment minium and you can simply buy it and retort it yourself. The concession buys you BULK mercury cheaply, which matters later for mirrors and pumps, and it is a separate problem from getting your first kilogramme."
   },
   {
    "id": "high_temp_furnace",
@@ -2924,7 +2925,7 @@
    "cat": "electrical",
    "pre": [
     "glass_labware",
-    "em_theory"
+    "lab_apparatus"
    ],
    "kb": "50_electricity_semiconductors.md#electrostatics",
    "ph": 350,
@@ -2947,7 +2948,7 @@
    "sch": 2,
    "art": 2,
    "conf": "A",
-   "note": "Spectacular, cheap, and it produces exactly the kind of effect that gets a man tried for magic. Do it in daylight, in front of a magistrate, and explain it as a property of amber long known to the Greeks, which is even true (elektron is Greek for amber). High voltage, negligible current: useless for chemistry, excellent for persuasion."
+   "note": "Spectacular, cheap, and it produces exactly the kind of effect that gets a man tried for magic. Do it in daylight, in front of a magistrate, and explain it as a property of amber long known to the Greeks, which is even true (elektron is Greek for amber). High voltage, negligible current: useless for chemistry, excellent for persuasion. CORRECTION to an earlier version of this tree: this no longer requires electromagnetic theory. Franklin and Volta had none. Making the theory a prerequisite for the experiment put the whole of calculus on the electrical critical path, which is backwards."
   },
   {
    "id": "voltaic_pile",
@@ -2956,8 +2957,8 @@
    "cat": "electrical",
    "pre": [
     "zinc_metal",
-    "copper_refining",
-    "electrostatics"
+    "copper_fire_refined",
+    "crude_cell"
    ],
    "kb": "50_electricity_semiconductors.md#voltaic_pile",
    "ph": 300,
@@ -2980,7 +2981,7 @@
    "sch": 2,
    "art": 2,
    "conf": "A",
-   "note": "Trivially cheap once zinc metal exists, and utterly impossible before it. This is why zinc is on the critical path and why almost every plan misses it. Continuous current for the first time in history, and everything electrical follows."
+   "note": "Trivially cheap once zinc metal exists, and utterly impossible before it. This is why zinc is on the critical path and why almost every plan misses it. Continuous current for the first time in history, and everything electrical follows. It needs copper DISCS, not fine insulated wire, so it does not wait on the wire-insulation node."
   },
   {
    "id": "daniell_cell",
@@ -3578,7 +3579,7 @@
    "cat": "semiconductor",
    "pre": [
     "drawplate_wire",
-    "daniell_cell",
+    "crude_cell",
     "lead_metallurgy"
    ],
    "kb": "50_electricity_semiconductors.md#galena_detector",
@@ -3601,7 +3602,7 @@
    "sch": 2,
    "art": 1,
    "conf": "A",
-   "note": "A working semiconductor device in Rome, using mineral lead sulfide straight out of the mine and a springy wire. No purification, no doping, no vacuum, no theory. It is nearly free, it is a genuine rectifier, and it is the proof-of-concept that justifies a two-century programme to a sceptical patron. Build it the moment you have a cell and fine wire."
+   "note": "A working semiconductor device in Rome, using mineral lead sulfide straight out of the mine and a springy wire. No purification, no doping, no vacuum, no theory. It is nearly free, it is a genuine rectifier, and it is the proof-of-concept that justifies a two-century programme to a sceptical patron. Build it the moment you have a cell and fine wire. It depends on the crude brine cell, not on the voltaic pile, which is what makes the year-three claim in 00_NONOBVIOUS_TRICKS actually true."
   },
   {
    "id": "semiconductor_metrology",
@@ -3929,6 +3930,37 @@
    "art": 40,
    "conf": "B",
    "note": "Silicon is everywhere, which is why it wins in the end, and it melts at 1414 C against germanium's 938 C, needs far better crucible chemistry, and its purification runs through trichlorosilane. Germanium first is the right bootstrap order and history agrees for exactly these reasons."
+  },
+  {
+   "id": "crude_cell",
+   "name": "Copper-iron brine cell",
+   "tier": 1,
+   "cat": "electrical",
+   "pre": [
+    "workshop_first",
+    "lead_metallurgy"
+   ],
+   "kb": "50_electricity_semiconductors.md#voltaic_pile",
+   "ph": 120,
+   "lab": {
+    "artisan": 300
+   },
+   "mat": {
+    "copper_kg": 10,
+    "iron_bar_kg": 10,
+    "salt_kg": 20
+   },
+   "cap": 150,
+   "up": 60,
+   "yrs": 0.5,
+   "risk": 0.15,
+   "sus": 6,
+   "gov": 0,
+   "rev": 0,
+   "sch": 1,
+   "art": 1,
+   "conf": "B",
+   "note": "A poor cell, and you can have it on arrival. Copper and iron in brine give roughly 0.4 to 0.7 volts with high internal resistance, and it polarises within minutes. It will not electroplate and it will not electrolyse water usefully. It WILL deflect a compass needle and it will bias a galena crystal, which means the crystal rectifier and the first electrical measurements do not have to wait thirty years for zinc metal. Use it as the teaching instrument and the proof of concept, then replace it the day the pile exists."
   }
  ]
 }

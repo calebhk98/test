@@ -12,7 +12,7 @@ rome/
 ├── LABOR_LEDGER.md           the founder's hours, and the author's
 ├── knowledge/                THE HOW-TO LIBRARY (start at 00_NONOBVIOUS_TRICKS.md)
 ├── data/
-│   ├── tech_tree.json        127 nodes, 251 edges, fully costed
+│   ├── tech_tree.json        128 nodes, 254 edges, fully costed
 │   └── prices.json           wages and commodity prices, confidence-tagged
 ├── sim/
 │   ├── simulator.py          validate / path / costs / run / compare / sensitivity / play

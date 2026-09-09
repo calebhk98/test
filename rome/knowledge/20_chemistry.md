@@ -938,7 +938,10 @@ only missing ingredient is a source of direct electric current.
 
 **Procedure.** Chlor-alkali: electrolyse brine, `2 NaCl + 2 H2O -> Cl2 +
 H2 + 2 NaOH`, a far cleaner route to both than the chemical methods used
-earlier in this module. Sodium metal: electrolyse molten NaCl or NaOH,
+earlier in this module. Sodium metal: electrolyse molten NaOH, which is what Davy actually did in
+1807. Electrolysing molten sodium chloride is the Downs process and is a
+20th-century industrial development needing a much higher cell temperature and
+a calcium chloride flux; do not plan around it.
 the original historical route to isolated sodium. Aluminium: electrolyse
 alumina dissolved in molten cryolite, more electricity-hungry than the
 rest, a later, more ambitious target. Hydrogen and oxygen: `2 H2O -> 2 H2

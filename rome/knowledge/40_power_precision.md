@@ -653,7 +653,11 @@ suffice; crank_connecting_rod is not needed (a simple rocking beam is
 used); this is deliberately the cheap, crude, real starting point.
 
 **Roman-available inputs.** Copper or bronze boiler, cast bronze cylinder
-(Rome has no cast iron in the West, bloomery wrought iron only, so bronze
+(Rome AS YOU FIND IT has no cast iron in the West, bloomery wrought iron
+only. By the time you can build an engine at all you will have introduced the
+blast furnace, so cast iron cylinders will in fact be available and are the
+better choice; the bronze option below is the fallback if you reach this point
+first, which the tech tree says you should not. Bronze
 is the practical cylinder metal here), leather piston seal, coal (mined
 in Roman Britain) or wood as fuel.
 

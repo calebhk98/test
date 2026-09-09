@@ -134,12 +134,14 @@
       "conf": "C"
     },
     "silver_kg": {
-      "p": 333.0,
-      "conf": "A"
+      "p": 317.0,
+      "conf": "A",
+      "note": "Definitional: 1 den = c. 3.15 g fine silver at 100 AD."
     },
     "gold_kg": {
-      "p": 3900.0,
-      "conf": "A"
+      "p": 3440.0,
+      "conf": "A",
+      "note": "From the aureus at c. 7.27 g = 25 den. Implied gold:silver c. 11:1."
     },
     "mercury_kg": {
       "p": 60.0,
@@ -378,7 +380,7 @@
       "note": "South American platinum is unreachable; Ural and alluvial sources only, effectively unobtainable in quantity"
     },
     "gold_g": {
-      "p": 3.9,
+      "p": 3.44,
       "conf": "A"
     },
     "indium_g": {
@@ -465,7 +467,7 @@
     "_note": "What you carry back. Chosen to be sellable without being visibly anachronistic. Value in denarii at 100 AD prices.",
     "scholar_modest": {
       "gold_bullion_kg": 3.0,
-      "value_denarii": 11700,
+      "value_denarii": 10320,
       "items": [
         "unmarked gold in rough ingot and dust form",
         "a bound codex of notes in Greek (this guide)",
@@ -479,7 +481,7 @@
     },
     "merchant_rich": {
       "gold_bullion_kg": 12.0,
-      "value_denarii": 46800,
+      "value_denarii": 41280,
       "note": "Enough to buy an estate and a workshop immediately, but a stranger arriving with an equestrian fortune in unminted gold attracts the fiscus. Higher start, higher suspicion.",
       "conf": "C"
     }

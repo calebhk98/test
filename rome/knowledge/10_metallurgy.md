@@ -60,9 +60,15 @@ fired pottery or kiln waste, crushed to sand/gravel size.
 free of air. Add crushed grog to a test batch, roughly 20-40% by volume, to
 cut shrinkage and cracking (ESTIMATED, modern refractory practice). Fire
 test pieces alongside your real furnace load, using furnace colour as your
-only thermometer: dull red ~600-700 °C, cherry red ~800-900 °C, orange
-~1000-1100 °C, yellow ~1200-1300 °C, whitish-yellow above roughly 1400 °C
-(textbook blackbody-glow progression). Pull test pieces at intervals: a
+only thermometer: faint red ~500-550 °C, dull red ~600-700 °C, cherry red
+~700-800 °C, bright cherry ~800-900 °C, orange ~900-1000 °C, yellow
+~1000-1150 °C, dazzling white above roughly 1300 °C. NOTE: this scale is
+strongly affected by ambient light and every smith reads it 100 °C or more
+differently in daylight than in a dark shop, so judge colour in consistent
+dim light and calibrate your own eye against a known melting point (silver
+962 °C, copper 1085 °C) before trusting it. An earlier draft of this module
+gave a scale 100-200 °C higher than this one and disagreed with Module 30;
+the audit in 99_AUDIT.md caught it and this is the corrected version. Pull test pieces at intervals: a
 good refractory clay stays matte and rigid, a bad one goes glossy, sags, or
 bloats.
 
@@ -934,8 +940,9 @@ aside for later.
 **Prerequisites.** None; basic mining/roasting already Roman practice.
 
 **Roman-available inputs.** Stibnite (antimony sulfide, cosmetic kohl,
-Pliny NH XXXIII); orpiment and realgar (arsenic sulfides, pigments, Pliny
-NH XXXIII-XXXIV). Bismuth: no confirmed Roman-available source at all.
+Pliny NH XXXIII); orpiment and realgar (arsenic sulfides, pigments; Pliny
+discusses auripigmentum and sandaraca in NH 33, and the painters' pigments
+systematically in NH 35, so cite 33 and 35 rather than 33-34). Bismuth: no confirmed Roman-available source at all.
 
 **Procedure.** Antimony: stibnite is reducible to metal by roasting and
 carbon reduction, similar to lead, though Roman use stays at the
