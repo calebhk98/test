@@ -21,6 +21,7 @@ in this directory, read that one.
 | Module | Subject | Entries | Tree nodes it documents |
 |---|---|---:|---:|
 | [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 0 | 0 |
+| [`03_SOCIAL_POLITICS.md`](03_SOCIAL_POLITICS.md) |  | 10 | 0 |
 | [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 188 |
 | [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 198 |
 | [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 181 |
