@@ -299,6 +299,7 @@ class Sim:
         c = self.cfg
         self.capital = float(c["start_capital"])
         self.done = set()
+        self.training = []        # [[artisan_capacity, year_it_matures], ...]
         self.granted = set()      # held because the SOCIETY has it, not because you built it
         self.active = {}          # id -> dict(ph_left, years_elapsed, spent)
         self.failed_attempts = defaultdict(int)
@@ -1116,6 +1117,21 @@ class Sim:
         status += max(0.0, self.capital) * 0.015      # you cannot look poor and rich
         return base + household + tax + status
 
+    TRAINING_YEARS = 3.0      # nobody is a useful artisan the week you buy them
+
+    def slave_quote(self, n_people):
+        """What buying this many people actually costs, here, today.
+
+        A town's slave market has a depth; buying beyond it bids the price up.
+        Flat pricing let a playtester take 3,333 people in one instant at list
+        price, which no market of any period would absorb.
+        """
+        if n_people <= 0:
+            return 0.0
+        depth = max(8.0, 40.0 * self.pop_scale ** 0.5)
+        surcharge = 1.0 + (n_people / depth) ** 0.85
+        return 300.0 * n_people * surcharge * self.price_index
+
     def buy_slaves(self, n_people):
         """The option the model refuses to hide, and refuses to make costless.
 
@@ -1124,13 +1140,36 @@ class Sim:
         it is counted separately, and manumission is modelled as strictly better
         on the numbers as well as on every other ground: a freedman is paid, is
         literate, stays, and transmits what he knows.
+
+        A playtester found three separate holes here and they compounded.
+
+        First, buy_slaves added 0.55 artisans per person and manumit then added
+        ANOTHER 0.55 for the SAME PERSON, so one human being yielded 1.1 workers.
+        Manumission does not clone anybody. It makes the same person work
+        properly, which is a rise from 0.55 to 1.0, so it adds 0.45.
+
+        Second, the price was flat at 300 denarii however many you bought, so
+        3,333 people could be had in a single instant at list price. No market
+        of any period absorbs that. The price now rises with the size of the
+        purchase against the local market's depth.
+
+        Third, it was INSTANT. Buy and free ten people and you had eleven
+        trained artisans in the same tick, for money alone, with no founder
+        hours and no calendar time. That strictly dominated freedman_staff, the
+        node that models the same thing honestly at 900 founder hours and two
+        years, so the narrated route was always the worse deal. People now
+        arrive untrained and become useful over a training lag.
         """
-        price = 300.0 * n_people
+        if n_people <= 0:
+            return 0
+        # A town's slave market has a depth. Buying beyond it bids the price up.
+        price = self.slave_quote(n_people)
         if price > self.capital:
             return 0
         self.capital -= price
         self.slaves += n_people
-        self.artisans += n_people * 0.55        # unfree labour is less productive
+        # Untrained on arrival. They become productive through self.training.
+        self.training.append([n_people * 0.55, self.year + self.TRAINING_YEARS])
         return n_people
 
     def manumit(self, n_people):
@@ -1140,8 +1179,14 @@ class Sim:
         self.slaves -= n_people
         self.freedmen += n_people
         self.manumitted_total += n_people
-        self.artisans += n_people * 0.55        # same person, now working properly
-        self.reputation += 0.4 * n_people       # manumission was publicly admired
+        # The SAME person, working properly: 0.55 to 1.0, not another whole
+        # worker. This was the double count.
+        self.artisans += n_people * 0.45
+        # Manumission was publicly admired, and admiration saturates. The first
+        # freedmen you make are a statement; the four hundredth is a payroll.
+        # Uncapped, this was a reputation pump that beat taking a patron.
+        gain = 0.4 * n_people / (1.0 + self.manumitted_total / 25.0)
+        self.reputation += min(gain, 6.0)
         return n_people
 
     def bounty_eligible(self, k):
@@ -1488,6 +1533,15 @@ class Sim:
                   if set(self.nodes[k].get("traits", [])) & {"spectacle", "inexplicable"})
         self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
+        # People bought this year are not artisans this year.
+        if self.training:
+            still = []
+            for cap, ready in self.training:
+                if self.year >= ready:
+                    self.artisans += cap
+                else:
+                    still.append([cap, ready])
+            self.training = still
         self.update_protection()
         self.scandal *= 0.90
         # Eminence accumulates in a SEPARATE pool, because bribery does not
@@ -2184,8 +2238,15 @@ def _agent_dispatch(s, nodes, cmd):
         if what == "slaves":
             got = s.buy_slaves(int(n))
             if got <= 0:
-                return {"ok": False, "error": "cannot afford %d slaves at 300 denarii each "
-                                              "(you have %.0f denarii)" % (int(n), s.capital)}
+                # Quote the price actually asked. It is no longer 300 flat: a
+                # large purchase bids the local market up, and saying "300 each"
+                # while charging far more is the model lying to the player.
+                q = s.slave_quote(int(n))
+                return {"ok": False,
+                        "error": "cannot afford %d slaves: %.0f denarii "
+                                 "(%.0f each after the market moves against a purchase "
+                                 "this size) and you have %.0f"
+                                 % (int(n), q, q / max(1, int(n)), s.capital)}
             return {"ok": True, "bought": got, "slaves": s.slaves, "capital": round(s.capital, 1)}
         if what == "manumit":
             got = s.manumit(int(n))
