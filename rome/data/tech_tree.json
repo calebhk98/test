@@ -6765,7 +6765,9 @@
    "pre": [
     "analytical_chemistry",
     "finery_puddling",
-    "high_temp_furnace"
+    "high_temp_furnace",
+    "mt2_basic_converter",
+    "mt2_silica_brick_refractory"
    ],
    "req_any": [],
    "rev": 45000.0,
@@ -25865,7 +25867,16 @@
     "blast_furnace",
     "cap_heat_1100"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.85,
+      "coal_coke": 1.0,
+      "mat_charcoal": 0.85
+     }
+    }
+   ],
    "rev": 2500.0,
    "risk": 0.2,
    "sch": 0.0,
@@ -26124,13 +26135,23 @@
     "iron_bar_kg": 3000.0
    },
    "name": "Crucible steel",
-   "note": "Melt blister steel in a closed crucible so the composition homogenises and the slag separates. The crucible surviving 1600 C is the hard part and is why this waits on good refractories. Gate on every cutting tool, every lead screw, and therefore on all precision. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [SCALED: this is an INDUSTRY, not a demonstration. At 30 tonnes of product a year it consumes about 60 tonnes of charcoal annually, derived from the physical ratio in data/world/resources.json rather than guessed. At 0.75 tonnes of charcoal per hectare of coppice per year that is roughly 80 hectares of forest under permanent management, which you must own before you light it.]",
+   "note": "Huntsman fired his crucibles with coke, which is possible only because the steel is sealed inside a lidded clay pot: the fuel and the metal never meet, so the sulfur cannot get in. The closed crucible is doing as much work as the temperature. Melt blister steel in a closed crucible so the composition homogenises and the slag separates. The crucible surviving 1600 C is the hard part and is why this waits on good refractories. Gate on every cutting tool, every lead screw, and therefore on all precision. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [SCALED: this is an INDUSTRY, not a demonstration. At 30 tonnes of product a year it consumes about 60 tonnes of charcoal annually, derived from the physical ratio in data/world/resources.json rather than guessed. At 0.75 tonnes of charcoal per hectare of coppice per year that is roughly 80 hectares of forest under permanent management, which you must own before you light it.]",
    "ph": 600.0,
    "pre": [
     "cementation_steel",
     "coal_coke"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.9,
+      "coal_coke": 1.0,
+      "coal_kg": 0.9,
+      "mat_charcoal": 0.9
+     }
+    }
+   ],
    "rev": 11000.0,
    "risk": 0.35,
    "sch": 1.0,
@@ -26307,7 +26328,8 @@
    "pre": [
     "interchangeable_parts",
     "motor_transformer_ac",
-    "vacuum_pumps"
+    "vacuum_pumps",
+    "cap_vac_1torr"
    ],
    "req_any": [],
    "rev": 800.0,
@@ -26483,7 +26505,11 @@
     "copper_refining",
     "electromagnet",
     "interchangeable_parts",
-    "water_power_scale"
+    "water_power_scale",
+    "en_commutator",
+    "gp_magnet_wire_enamelled",
+    "gp_laminated_core",
+    "gp_carbon_brushes"
    ],
    "req_any": [
     {
@@ -42233,13 +42259,23 @@
     "clay_kg": 15000.0
    },
    "name": "Finery forge and the puddling furnace",
-   "note": "Cast iron is brittle and useless for anything that must bend. Decarburise it back to wrought iron in a finery, then in a reverberatory puddling furnace where the fuel never touches the metal. Now you have cheap bar iron in quantity, which is the input to everything mechanical. [REVIEWED: prerequisite(s) cap_heat_1300 added by a reviewer working node by node. Reason: decarburizing cast iron in puddling furnace at 1300 C requires water-blown blast furnace heat] [SCALED: this is an INDUSTRY, not a demonstration. At 250 tonnes of product a year it consumes about 1,500 tonnes of charcoal annually, derived from the physical ratio in data/world/resources.json rather than guessed. At 0.75 tonnes of charcoal per hectare of coppice per year that is roughly 2,000 hectares of forest under permanent management, which you must own before you light it.]",
+   "note": "Cort's reverberatory hearth is the point: the coal burns in a separate chamber and the flame is reflected onto the metal, so the sulfur never touches the iron. That single arrangement is what let Britain stop making wrought iron out of forests. Cast iron is brittle and useless for anything that must bend. Decarburise it back to wrought iron in a finery, then in a reverberatory puddling furnace where the fuel never touches the metal. Now you have cheap bar iron in quantity, which is the input to everything mechanical. [REVIEWED: prerequisite(s) cap_heat_1300 added by a reviewer working node by node. Reason: decarburizing cast iron in puddling furnace at 1300 C requires water-blown blast furnace heat] [SCALED: this is an INDUSTRY, not a demonstration. At 250 tonnes of product a year it consumes about 1,500 tonnes of charcoal annually, derived from the physical ratio in data/world/resources.json rather than guessed. At 0.75 tonnes of charcoal per hectare of coppice per year that is roughly 2,000 hectares of forest under permanent management, which you must own before you light it.]",
    "ph": 500.0,
    "pre": [
     "blast_furnace",
     "cap_heat_1300"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.9,
+      "coal_coke": 0.95,
+      "coal_kg": 1.0,
+      "mat_charcoal": 0.9
+     }
+    }
+   ],
    "rev": 9000.0,
    "risk": 0.25,
    "sch": 1.0,
@@ -45265,7 +45301,17 @@
     "cap_tol_100um",
     "glass_clear"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.85,
+      "coal_coke": 1.0,
+      "coal_kg": 0.9,
+      "mat_charcoal": 0.85
+     }
+    }
+   ],
    "rev": 1200.0,
    "risk": 0.25,
    "sch": 1.0,
@@ -45277,6 +45323,367 @@
    ],
    "up": 1400.0,
    "yrs": 1.5
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.2,
+   "cap": 60.0,
+   "cat": "electrical",
+   "conf": "B",
+   "dev_people": 1,
+   "dev_years": 4,
+   "gov": 0,
+   "id": "gp_carbon_brushes",
+   "kb": "",
+   "lab": {
+    "artisan": 60.0,
+    "smith": 30.0
+   },
+   "mat": {
+    "copper_kg": 1.0,
+    "graphite_kg": 8.0
+   },
+   "name": "Carbon and graphite brush contacts",
+   "note": "A soft, self-lubricating carbon block bearing on the commutator or slip ring under light spring pressure. Metal brushes weld and gouge; carbon wears the contact surface instead of cutting it, and its resistance limits sparking current at the moment of break. Baked lampblack or coke fired without air gives a usable brush; graphite is better and Rome has both. Every rotating machine with a commutator or slip ring needs this, and nothing in the tree makes it before now.",
+   "ph": 50.0,
+   "pre": [
+    "cap_heat_1100"
+   ],
+   "req_any": [],
+   "rev": 100.0,
+   "risk": 0.08,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 1,
+   "traits": [
+    "labour_saving"
+   ],
+   "up": 12.0,
+   "yrs": 0.2
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.7,
+   "cap": 600.0,
+   "cat": "semiconductor",
+   "conf": "C",
+   "dev_people": 2,
+   "dev_years": 10,
+   "gov": 0,
+   "id": "gp_controlled_atmosphere_chamber",
+   "kb": "",
+   "lab": {
+    "glassblower": 150.0,
+    "machinist": 200.0
+   },
+   "mat": {
+    "argon_or_h2_m3": 100.0,
+    "porcelain_kg": 10.0,
+    "quartz_tube_kg": 8.0
+   },
+   "name": "Controlled atmosphere furnace chamber",
+   "note": "Molten germanium takes up oxygen and nitrogen from ordinary air instantly and ruins its own purity in seconds. Enclose the melt in a fused quartz vessel purged and continuously bled with hydrogen or an inert gas, with a rotary vacuum-tight gland where the pull rod or the induction coil's traveller has to pass through the wall while moving. The gland, not the gas supply, is the hard part: any leak past a moving seal undoes the whole purification programme upstream of it.",
+   "ph": 180.0,
+   "pre": [
+    "cap_vac_1torr",
+    "fused_quartz",
+    "industrial_gases"
+   ],
+   "req_any": [],
+   "rev": 500.0,
+   "risk": 0.18,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 5,
+   "traits": [
+    "infrastructure"
+   ],
+   "up": 100.0,
+   "yrs": 0.7
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.8,
+   "cap": 700.0,
+   "cat": "semiconductor",
+   "conf": "C",
+   "dev_people": 2,
+   "dev_years": 12,
+   "gov": 0,
+   "id": "gp_czochralski_puller",
+   "kb": "",
+   "lab": {
+    "engineer": 150.0,
+    "machinist": 300.0
+   },
+   "mat": {
+    "brass_kg": 5.0,
+    "steel_noric_kg": 8.0
+   },
+   "name": "Seed-and-pull crystal grower",
+   "note": "A chuck holding an oriented seed crystal is lowered to touch the melt surface, then withdrawn slowly while turning, so the melt freezes onto the seed one atomic layer at a time and copies its lattice. Pull too fast and the crystal thins and breaks free; too slow and it thickens uncontrollably; turn too fast and the melt surface distorts. The mechanism is a worm-geared rotation drive coupled to a lead-screw pull carriage with an independently adjustable rate, both needing the fine thread and steady motor speed that only now exist together.",
+   "ph": 200.0,
+   "pre": [
+    "cap_tol_10um",
+    "motor_transformer_ac"
+   ],
+   "req_any": [],
+   "rev": 600.0,
+   "risk": 0.2,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 5,
+   "traits": [
+    "infrastructure"
+   ],
+   "up": 120.0,
+   "yrs": 0.8
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.2,
+   "cap": 200.0,
+   "cat": "electrical",
+   "conf": "B",
+   "dev_people": 1,
+   "dev_years": 6,
+   "gov": 0,
+   "id": "gp_exhaust_pinchoff",
+   "kb": "",
+   "lab": {
+    "glassblower": 150.0
+   },
+   "mat": {
+    "glass_raw_kg": 1.0
+   },
+   "name": "Exhaust and pinch-off technique",
+   "note": "The assembled tube sits on a thin glass tail connected to the pump. Bake the whole envelope to drive off adsorbed gas from the internal metal parts while pumping, flash the getter, then heat the tail to softening with an oxy-hydrogen point flame and pinch it shut with tongs while it is still attached to the pump, sealing the vacuum inside as the glass fuses. Get the timing wrong and you either reopen the tube to air or leave a leak that will not show up for a week.",
+   "ph": 100.0,
+   "pre": [
+    "cap_vac_1e6",
+    "cap_heat_2000"
+   ],
+   "req_any": [],
+   "rev": 250.0,
+   "risk": 0.1,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 4,
+   "traits": [
+    "infrastructure"
+   ],
+   "up": 30.0,
+   "yrs": 0.2
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.3,
+   "cap": 250.0,
+   "cat": "electrical",
+   "conf": "B",
+   "dev_people": 2,
+   "dev_years": 8,
+   "gov": 0,
+   "id": "gp_getter",
+   "kb": "",
+   "lab": {
+    "chemist": 100.0,
+    "glassblower": 80.0
+   },
+   "mat": {
+    "mercury_kg": 0.5,
+    "phosphorus_red_kg": 0.3
+   },
+   "name": "Chemical getter",
+   "note": "No pump reaches the vacuum a hot cathode needs; it only gets you started. Seal a pellet of red phosphorus or a magnesium strip inside the envelope, and once the tube is sealed off, flash it by induction heating from outside the glass. It vaporises, coats the inner wall, and chemically scavenges the last of the oxygen and nitrogen the pump could not touch, dropping the pressure by another order of magnitude or more. This is the difference between a tube that lasts an afternoon and one that lasts a year.",
+   "ph": 130.0,
+   "pre": [
+    "el2_induction_heating_inductor_coupling",
+    "glass_clear"
+   ],
+   "req_any": [],
+   "rev": 350.0,
+   "risk": 0.14,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 4,
+   "traits": [
+    "infrastructure"
+   ],
+   "up": 40.0,
+   "yrs": 0.3
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.4,
+   "cap": 300.0,
+   "cat": "electrical",
+   "conf": "B",
+   "dev_people": 2,
+   "dev_years": 10,
+   "gov": 0,
+   "id": "gp_glass_metal_seal",
+   "kb": "",
+   "lab": {
+    "artisan": 80.0,
+    "glassblower": 200.0
+   },
+   "mat": {
+    "glass_raw_kg": 3.0,
+    "nickel_kg": 0.3,
+    "platinum_g": 2.0
+   },
+   "name": "Glass to metal vacuum seal",
+   "note": "A lead-in wire that carries current through the wall of an evacuated glass envelope must expand and contract with the glass across the whole firing and operating range or the seal cracks the moment it cools. Platinum happens to match soda-lime glass closely; a nickel-iron wire matches better and costs far less. Fuse the wire into the glass while both are hot, in the glassblower's flame, and check every seal by chilling it hard. Without a matched seal there is no way to get current into a vacuum tube at all.",
+   "ph": 150.0,
+   "pre": [
+    "glass_clear",
+    "cap_tol_100um"
+   ],
+   "req_any": [],
+   "rev": 400.0,
+   "risk": 0.16,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 4,
+   "traits": [
+    "infrastructure"
+   ],
+   "up": 50.0,
+   "yrs": 0.4
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.4,
+   "cap": 250.0,
+   "cat": "electrical",
+   "conf": "B",
+   "dev_people": 2,
+   "dev_years": 8,
+   "gov": 0,
+   "id": "gp_laminated_core",
+   "kb": "",
+   "lab": {
+    "artisan": 100.0,
+    "smith": 150.0
+   },
+   "mat": {
+    "iron_sheet_kg": 150.0,
+    "shellac_kg": 4.0
+   },
+   "name": "Laminated iron core",
+   "note": "A solid iron core changing field builds up eddy currents that turn most of the input into heat instead of current or torque. Slice the core into thin sheets, varnish or shellac each face, and stack them so the eddy loops cannot close except across a thin insulated gap. Every dynamo, transformer and AC motor core needs this and the tree currently lets them all use a solid block for free.",
+   "ph": 90.0,
+   "pre": [
+    "cementation_steel",
+    "cap_tol_100um"
+   ],
+   "req_any": [],
+   "rev": 300.0,
+   "risk": 0.1,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 2,
+   "traits": [
+    "labour_saving",
+    "infrastructure"
+   ],
+   "up": 40.0,
+   "yrs": 0.4
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.4,
+   "cap": 350.0,
+   "cat": "electrical",
+   "conf": "B",
+   "dev_people": 2,
+   "dev_years": 10,
+   "gov": 0,
+   "id": "gp_magnet_wire_enamelled",
+   "kb": "",
+   "lab": {
+    "artisan": 200.0,
+    "chemist": 60.0
+   },
+   "mat": {
+    "shellac_kg": 4.0,
+    "varnish_kg": 8.0,
+    "wire_drawn_kg": 100.0
+   },
+   "name": "Enamelled magnet wire",
+   "note": "Silk-wrapped and oiled-linen wire, which is what copper_refining gives you, is fine for a telegraph line but far too fat to pack thousands of turns into a dynamo or transformer coil. Draw the wire fine, then pass it through a shellac or varnish bath and a sizing die repeatedly, baking a thin tough film on each pass. The insulation is now microns thick instead of a wrapped thread, and a coil that needed a barrel now fits in a hand. Without this a dynamo works but is the size of a house.",
+   "ph": 120.0,
+   "pre": [
+    "copper_refining"
+   ],
+   "req_any": [],
+   "rev": 500.0,
+   "risk": 0.12,
+   "sch": 0.0,
+   "sus": 0,
+   "tier": 3,
+   "traits": [
+    "labour_saving",
+    "infrastructure"
+   ],
+   "up": 60.0,
+   "yrs": 0.4
+  },
+  {
+   "_src": "60_goalpath_deep.json",
+   "adopt_yrs": 0.0,
+   "art": 1.0,
+   "build_yrs": 0.3,
+   "cap": 300.0,
+   "cat": "semiconductor",
+   "conf": "C",
+   "dev_people": 2,
+   "dev_years": 6,
+   "gov": 0,
+   "id": "gp_whisker_forming",
+   "kb": "",
+   "lab": {
+    "artisan": 150.0,
+    "engineer": 100.0
+   },
+   "mat": {
+    "phosphor_bronze_g": 20.0
+   },
+   "name": "Point contact whisker forming",
+   "note": "Two springy phosphor bronze points are set onto the polished germanium surface a few hundredths of a millimetre apart, close enough that the depletion regions they create can interact. A bare point merely rectifies, like the galena detector; what makes it amplify is the forming pulse, a brief surge of current driven backward through each point after it is set, which locally heats and alloys a tiny puddle of the metal into the germanium and converts that point's contact from a simple barrier into one that can inject carriers. Point spacing and forming pulse energy are both found by trial on scrap slices before touching a slab you mean to keep.",
+   "ph": 200.0,
+   "pre": [
+    "cap_tol_10um",
+    "daniell_cell"
+   ],
+   "req_any": [],
+   "rev": 400.0,
+   "risk": 0.2,
+   "sch": 1.0,
+   "sus": 0,
+   "tier": 5,
+   "traits": [
+    "infrastructure"
+   ],
+   "up": 40.0,
+   "yrs": 0.3
   },
   {
    "_src": "core",
@@ -45355,9 +45762,20 @@
    "ph": 800.0,
    "pre": [
     "crucible_steel",
-    "thermodynamics_theory"
+    "thermodynamics_theory",
+    "cap_measure_temp_hi",
+    "mt2_silica_brick_refractory"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.85,
+      "coal_coke": 1.0,
+      "mat_charcoal": 0.85
+     }
+    }
+   ],
    "rev": 7000.0,
    "risk": 0.3,
    "sch": 2.0,
@@ -51329,7 +51747,7 @@
    "build_yrs": 3,
    "cap": 8000.0,
    "cat": "telegraphy",
-   "conf": "C",
+   "conf": "B",
    "dev_people": 8,
    "dev_years": 25,
    "gov": 0,
@@ -51343,7 +51761,7 @@
     "copper_kg": 1000.0
    },
    "name": "Submarine cable with gutta percha",
-   "note": "Gutta percha only usable insulator; unavailable locally. Requires tropical expedition. Laying hazardous.",
+   "note": "The insulation IS the invention. Rubber perishes and cotton is useless wet, but gutta percha, the latex of Palaquium from Malaya, is thermoplastic: it softens in hot water, can be moulded round a copper core, sets hard, and does not rot in seawater. It is reached by extending east the India route Rome already sails annually, so it is a trading problem, not an impossibility. The second, harder lesson is electrical: a long submerged cable is a capacitor, pulses smear into each other, and pushing more voltage at it destroys the insulation, which is what killed the first Atlantic cable in 1858. Signal slowly and detect sensitively.",
    "ph": 200.0,
    "pre": [
     "mat_gutta_percha",
@@ -51354,7 +51772,7 @@
    "risk": 0.2,
    "sch": 5.0,
    "sus": 0,
-   "tier": 9,
+   "tier": 5,
    "traits": [
     "infrastructure",
     "military"
@@ -56342,7 +56760,8 @@
     "cap_tol_100um",
     "micrometer_gauges",
     "screw_lathe",
-    "statistics_basic"
+    "statistics_basic",
+    "prc_dividing_head"
    ],
    "req_any": [],
    "rev": 8000.0,
@@ -56520,7 +56939,16 @@
    "pre": [
     "workshop_first"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.85,
+      "coal_coke": 1.0,
+      "mat_charcoal": 0.85
+     }
+    }
+   ],
    "rev": 1600.0,
    "risk": 0.1,
    "sch": 0.0,
@@ -59928,9 +60356,9 @@
    "adopt_yrs": 0.0,
    "art": 0.0,
    "build_yrs": 0.0,
-   "cap": 0.0,
+   "cap": 2600.0,
    "cat": "located_material",
-   "conf": "A",
+   "conf": "B",
    "dev_people": null,
    "dev_years": null,
    "gov": 0,
@@ -59938,12 +60366,22 @@
    "kb": "",
    "kb_level": "none",
    "lab": {},
-   "mat": {},
+   "mat": {
+    "fluorspar_kg": 400.0
+   },
    "name": "Cryolite, or a synthetic fluoride bath",
-   "note": "NOT UNOBTAINABLE. Ivigtut in Greenland is the only workable natural deposit, but a synthetic fluoride bath made from your own hydrofluoric acid works, which is what industry moved to anyway. See data/world/geography.json for where it is and what reaching it costs.",
-   "ph": 60.0,
+   "note": "NOT UNOBTAINABLE, and the interesting part is that you should not go and get it. Ivigtut in Greenland is the only workable natural deposit and reaching it is a North Atlantic voyage far harder than anything else in this tree. The synthetic route is easier: cryolite is sodium aluminium fluoride, and you can make the bath from hydrofluoric acid, which you get by warming fluorspar with sulfuric acid. Fluorspar occurs in Britain and the Alps. The catch is that HF attacks glass, so it must be handled in lead or wax-lined vessels, and it does something worse to people: it penetrates skin painlessly and destroys bone calcium hours later. Treat every splash as serious even when it does not hurt.",
+   "ph": 200.0,
    "pre": [],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fluoride_bath",
+     "options": {
+      "exp_trade_route_extend": 0.4,
+      "hydrofluoric_acid": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.95,
    "sch": 0.0,
@@ -60327,8 +60765,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 2.0,
+   "cap": 1800.0,
    "cat": "located_material",
    "conf": "A",
    "dev_people": null,
@@ -60341,7 +60779,7 @@
    "mat": {},
    "name": "Gutta percha",
    "note": "NOT UNOBTAINABLE. Palaquium latex from Malaya, reached by extending east the India route Rome already sails annually. Indian and Malay traders already carry it partway. See data/world/geography.json for where it is and what reaching it costs.",
-   "ph": 60.0,
+   "ph": 120.0,
    "pre": [
     "exp_trade_route_extend"
    ],
@@ -60351,9 +60789,12 @@
    "sch": 0.0,
    "sus": 0,
    "tier": 4,
-   "traits": [],
+   "traits": [
+    "commerce",
+    "infrastructure"
+   ],
    "up": 20.0,
-   "yrs": 0.0
+   "yrs": 2.0
   },
   {
    "_src": "01_materials.json",
@@ -89568,7 +90009,10 @@
     "micrometer_gauges",
     "quantum_solidstate_theory",
     "single_crystal",
-    "vacuum_tube"
+    "vacuum_tube",
+    "gp_whisker_forming",
+    "galena_detector",
+    "prc_lapping_plate"
    ],
    "req_any": [
     {
@@ -89663,7 +90107,14 @@
    "pre": [
     "motor_transformer_ac",
     "railway",
-    "steam_high_pressure"
+    "steam_high_pressure",
+    "en_transformer",
+    "en_switchgear",
+    "en_circuit_breaker",
+    "en_insulator",
+    "en_transmission_line",
+    "en_substation",
+    "en_frequency_standardisation"
    ],
    "req_any": [],
    "rev": 120000.0,
@@ -96805,7 +97256,23 @@
    "ph": 800.0,
    "pre": [
     "bessemer_openhearth",
-    "steam_high_pressure"
+    "steam_high_pressure",
+    "tr_flatbottom_rail",
+    "tr_fishplate",
+    "tr_sleeper_ballast",
+    "tr_rail_rolling",
+    "tr_flanged_wheel",
+    "tr_points_frog",
+    "tr_locomotive_boiler",
+    "tr_blastpipe",
+    "tr_injector_feedwater",
+    "tr_bogie_truck",
+    "tr_axle_bearing_box",
+    "tr_screw_coupling",
+    "tr_sprung_buffer",
+    "tr_vacuum_brake",
+    "tr_block_signalling",
+    "tr_interlocking_signal"
    ],
    "req_any": [
     {
@@ -100939,7 +101406,9 @@
    "pre": [
     "crucible_steel",
     "master_screw",
-    "water_power_scale"
+    "water_power_scale",
+    "prc_slide_rest_simple",
+    "prc_change_gears_quadrant"
    ],
    "req_any": [],
    "rev": 3500.0,
@@ -103163,7 +103632,10 @@
     "cap_measure_elec",
     "galvanometer",
     "quantum_solidstate_theory",
-    "vacuum_tube"
+    "vacuum_tube",
+    "el2_potentiometer_method_measurement",
+    "el2_valve_voltmeter_high_impedance",
+    "electromagnet"
    ],
    "req_any": [],
    "rev": 0.0,
@@ -103253,7 +103725,11 @@
     "cap_measure_temp_hi",
     "cap_tol_10um",
     "semiconductor_metrology",
-    "zone_refining"
+    "zone_refining",
+    "gp_czochralski_puller",
+    "gp_controlled_atmosphere_chamber",
+    "in2_xray_diffraction_camera",
+    "prc_gauge_blocks_johansson"
    ],
    "req_any": [],
    "rev": 0.0,
@@ -103660,7 +104136,17 @@
     "glass_labware",
     "lab_apparatus"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.85,
+      "coal_coke": 1.0,
+      "coal_kg": 0.9,
+      "mat_charcoal": 0.85
+     }
+    }
+   ],
    "rev": 1500.0,
    "risk": 0.4,
    "sch": 2.0,
@@ -120558,7 +121044,11 @@
     "cap_vac_1e6",
     "copper_refining",
     "diffusion_pump",
-    "discharge_xray"
+    "discharge_xray",
+    "in2_electron_source_cathode",
+    "gp_glass_metal_seal",
+    "gp_getter",
+    "gp_exhaust_pinchoff"
    ],
    "req_any": [],
    "rev": 12000.0,
@@ -120767,14 +121257,23 @@
     "coal_kg": 400000.0
    },
    "name": "Zinc smelting at industrial scale, with flue dust collection",
-   "note": "Zinc earns its own way as brass, galvanising and batteries. Its second and hidden purpose is that germanium concentrates in the flue dust of zinc smelters, at the parts-per-thousand level in the dust against 1.6 ppm in the crust. Design the flues for dust collection from the first furnace or you will rebuild them later. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [SCALED: this is an INDUSTRY, not a demonstration. At 1500 tonnes of product a year it consumes about 18,000 tonnes of charcoal annually, derived from the physical ratio in data/world/resources.json rather than guessed. At 0.75 tonnes of charcoal per hectare of coppice per year that is roughly 24,000 hectares of forest under permanent management, which you must own before you light it.]",
+   "note": "Zinc is the hidden gate on the electrical age and this node is 83 per cent of the whole tree's charcoal. The carbon here does two jobs, reducing the oxide inside the retort and firing the retort from outside, and coke serves for both: the Belgian horizontal retorts ran on coal. That matters enormously, because 54,000 tonnes of charcoal a year is 72,000 hectares of coppice, and coal you can dig. Zinc earns its own way as brass, galvanising and batteries. Its second and hidden purpose is that germanium concentrates in the flue dust of zinc smelters, at the parts-per-thousand level in the dust against 1.6 ppm in the crust. Design the flues for dust collection from the first furnace or you will rebuild them later. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. [SCALED: this is an INDUSTRY, not a demonstration. At 1500 tonnes of product a year it consumes about 18,000 tonnes of charcoal annually, derived from the physical ratio in data/world/resources.json rather than guessed. At 0.75 tonnes of charcoal per hectare of coppice per year that is roughly 24,000 hectares of forest under permanent management, which you must own before you light it.]",
    "ph": 600.0,
    "pre": [
     "high_temp_furnace",
     "power_grid",
     "zinc_metal"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.85,
+      "coal_coke": 1.0,
+      "mat_charcoal": 0.85
+     }
+    }
+   ],
    "rev": 45000.0,
    "risk": 0.3,
    "sch": 5.0,
@@ -120819,7 +121318,16 @@
     "cementation_steel",
     "refractory_fireclay"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "fuel",
+     "options": {
+      "charcoal_industrial": 0.85,
+      "coal_coke": 1.0,
+      "mat_charcoal": 0.85
+     }
+    }
+   ],
    "rev": 4000.0,
    "risk": 0.4,
    "sch": 1.0,
@@ -120865,7 +121373,9 @@
     "cap_tol_10um",
     "ge_reduction",
     "motor_transformer_ac",
-    "semiconductor_metrology"
+    "semiconductor_metrology",
+    "el2_induction_heating_inductor_coupling",
+    "gp_controlled_atmosphere_chamber"
    ],
    "req_any": [],
    "rev": 0.0,

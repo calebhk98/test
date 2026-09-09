@@ -158,6 +158,16 @@ def cmd_merge(a):
             if n["id"] in nodes:
                 warns.append("%s: duplicate id %s, keeping the first" % (fn, n["id"]))
                 continue
+            # Tier 9 meant UNOBTAINABLE and that concept was abolished: nothing
+            # is unobtainable, only elsewhere. A new branch reintroduced it on
+            # the submarine cable, which made the node permanently unbuildable
+            # even though its prerequisites were correctly wired through the
+            # expedition. Reject the convention here so it cannot come back.
+            if n.get("tier") == 9:
+                n["tier"] = 5
+                warns.append("%s: %s used the abolished tier 9 'unobtainable'; "
+                             "retiered to 5, depend on an exp_* node instead"
+                             % (fn, n["id"]))
             normalise_v2(n)
             # resolve trade aliases rather than silently dropping the labour,
             # which would make the technology look cheaper than it is

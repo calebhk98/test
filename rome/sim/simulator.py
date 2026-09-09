@@ -429,13 +429,46 @@ class Sim:
     MARKET_SHARE = {"charcoal": 0.002, "iron": 0.03, "copper": 0.03, "lead": 0.03,
                     "tin": 0.05, "silver": 0.01, "coal": 0.50, "saltpetre": 0.0}
 
+    # Coke and charcoal are not interchangeable at one kg for one kg. A charcoal
+    # blast furnace burns about 3 kg of charcoal per kg of iron; a coke furnace
+    # burns about 1.6 kg of coke, and coke is about 1.6 kg of coal, so 2.56 kg
+    # of coal. Switching fuel therefore MOVES the demand to a different material
+    # at 0.85 of the mass, and that is the whole reason coke mattered: not that
+    # it is better fuel, but that coal is dug and charcoal has to be grown.
+    COKE_PER_CHARCOAL = 0.85
+
+    def chosen_fuel(self, k):
+        """Which fuel this node would actually burn, given what you have.
+
+        The tree had a fuel OR-group on the blast furnace and a hard-coded
+        4,500 tonnes of charcoal in its material list. The group was decorative:
+        picking coke changed the quality factor and left the charcoal demand
+        exactly where it was, so the model could never show the one substitution
+        that actually decided industrial history.
+        """
+        for g in (self.nodes[k].get("req_any") or []):
+            if "fuel" not in str(g.get("group", "")).lower():
+                continue
+            best, pick = 0.0, None
+            for opt, qual in (g.get("options") or {}).items():
+                have = opt in self.done or opt not in self.nodes
+                if have and float(qual) > best:
+                    best, pick = float(qual), opt
+            if pick and ("coke" in pick or "coal" in pick):
+                return "coke"
+        return "charcoal"
+
     def annual_material_demand(self):
         """Tonnes per year of the materials that actually bind, from work in hand."""
         d = collections.Counter()
         for k in self.active:
             n = self.nodes[k]
             span = max(1.0, float(n.get("build_yrs") or n.get("yrs") or 1.0))
+            coke = self.chosen_fuel(k) == "coke"
             for m, q in n["mat"].items():
+                if coke and m in ("charcoal_kg", "firewood_kg"):
+                    d["coal_kg"] += float(q) * self.COKE_PER_CHARCOAL / span / 1000.0
+                    continue
                 d[m] += float(q) / span / 1000.0     # kg -> tonnes per year
         # A furnace does not eat charcoal only while it is being built. It eats
         # charcoal every year it runs, forever. Omitting that was why forest
@@ -445,7 +478,11 @@ class Sim:
             if n["up"] <= 0 or not n["mat"]:
                 continue
             span = max(1.0, float(n.get("build_yrs") or n.get("yrs") or 1.0))
+            coke = self.chosen_fuel(k) == "coke"
             for m, q in n["mat"].items():
+                if coke and m in ("charcoal_kg", "firewood_kg"):
+                    d["coal_kg"] += 0.5 * float(q) * self.COKE_PER_CHARCOAL / span / 1000.0
+                    continue
                 d[m] += 0.5 * float(q) / span / 1000.0
         return d
 
@@ -477,6 +514,17 @@ class Sim:
             if need <= 0:
                 continue
             share = self.MARKET_SHARE.get(emp_key, 0.03)
+            # How much of a market you can command is a function of STANDING, not
+            # just of money. A stranger buys at the margin; a man with senatorial
+            # backing buys through their agents; a holder of imperial patronage
+            # has the fiscus itself as a supplier, and the metalla were largely
+            # imperial property. Charcoal is exempt because no amount of standing
+            # makes a bulky crumbling fuel travel further than it can travel.
+            if emp_key != "charcoal":
+                if self.has("patron_imperial"):     share *= 6.0
+                elif self.has("patron_senatorial"): share *= 2.5
+                elif self.has("citizenship"):       share *= 1.4
+                share = min(share, 0.60)
             market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * self.pop_scale
             # Bengal saltpetre: an existing annual sea route, not a nitre bed.
             # This is the single most useful thing in the geography file.
@@ -677,9 +725,12 @@ class Sim:
         n = self.nodes[k]
         if k in self.done or k in self.active:
             return False
-        # Tier 9 is UNOBTAINABLE by construction: rubber, quinine, New World crops.
-        # An earlier version cheerfully queued "potato" and let it occupy a project
-        # slot for four centuries, which quietly strangled the whole run.
+        # Tier 9 once meant UNOBTAINABLE: rubber, quinine, New World crops. That
+        # concept was abolished, because nothing is unobtainable, only elsewhere,
+        # and the tree now routes those through exp_* expedition nodes instead.
+        # The guard stays only to stop a stray tier 9 from a new branch file
+        # silently making a technology permanently unbuildable; treetool now
+        # retiers them on merge, so this should never fire.
         if n["tier"] == 9 or n["cat"] == "unobtainable":
             return False
         if not all(p in self.done for p in n["pre"]):
