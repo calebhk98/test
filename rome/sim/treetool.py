@@ -356,10 +356,17 @@ def judge_node(n, nodes, stats):
         d.append(("NO-CONF", "confidence not stated"))
 
     # --- 7. social model actually populated
-    if tier >= 2 and n["sus"] == 0 and n["gov"] == 0 and n["cat"] not in (
-            "capability","material","unobtainable","mathematics","physics"):
-        d.append(("SOCIAL-FLAT", "neither suspicion nor State interest is set. In Rome almost "
-                                 "nothing at this scale is politically neutral."))
+    # Schema v2 replaced the scalar gov/sus pair with `traits`, which the
+    # civilization file weights. A node is only socially flat if it has
+    # NEITHER representation. Checking gov/sus alone flagged 769 fully tagged
+    # v2 nodes as defective, which inflated the largest defect category in the
+    # audit by a factor of four and measured nothing.
+    if tier >= 2 and not n.get("traits") and n["sus"] == 0 and n["gov"] == 0 \
+            and n["cat"] not in ("capability","material","unobtainable",
+                                 "mathematics","physics"):
+        d.append(("SOCIAL-FLAT", "no traits and no scalar gov/sus, so every civilization "
+                                 "reacts to this identically, which is to say not at all. "
+                                 "Almost nothing at this scale is politically neutral."))
 
     weights = {"NO-RECIPE":0.5, "CAP-NONE":3,"CAP-HEAT":2,"CAP-TOL":2,"CAP-VAC":2,"CAP-PURITY":2,"CAP-POWER":2,
                "SHALLOW":3,"THIN-CHAIN":2,"BLOCKED":3,"COST-HIGH":1,"COST-LOW":1,
