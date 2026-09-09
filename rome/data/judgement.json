@@ -39,11 +39,9 @@
   "defects": []
  },
  "air_airspeed_indicator": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "air_altimeter": {
   "score": 100,
@@ -83,12 +81,9 @@
   ]
  },
  "air_coal_gas_generation": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "air_compass_magnetic": {
   "score": 100,
@@ -138,20 +133,17 @@
   "defects": []
  },
  "air_hydrogen_danger": {
-  "score": 58,
-  "grade": "D",
+  "score": 76,
+  "grade": "C",
   "defects": [
-   "CAP-NONE",
    "SHALLOW",
    "COST-LOW"
   ]
  },
  "air_hydrogen_generation_charcoal": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "air_jet_engine_build": {
   "score": 100,
@@ -159,11 +151,9 @@
   "defects": []
  },
  "air_jet_engine_concept": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-TOL"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "air_kite_basic": {
   "score": 100,
@@ -193,10 +183,9 @@
   ]
  },
  "air_pitot_tube": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -268,27 +257,19 @@
   "defects": []
  },
  "analytical_chemistry": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "arc_furnace_ferroalloys": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "arc_light_lamp": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "arithmetic_positional": {
   "score": 100,
@@ -306,17 +287,14 @@
   "defects": []
  },
  "balance_analytical": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "barometer": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-VAC"
   ]
  },
@@ -329,29 +307,23 @@
   ]
  },
  "bessemer_openhearth": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-HIGH"
   ]
  },
  "blast_furnace": {
-  "score": 64,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
-   "CAP-HEAT",
    "COST-HIGH"
   ]
  },
  "boring_mill": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-TOL"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "calculus": {
   "score": 100,
@@ -538,11 +510,9 @@
   ]
  },
  "cementation_steel": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "charcoal_industrial": {
   "score": 64,
@@ -559,18 +529,14 @@
   "defects": []
  },
  "chm_alizarin": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_alkali_waste": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_ammonia_recovery": {
   "score": 100,
@@ -583,10 +549,9 @@
   "defects": []
  },
  "chm_anthracene": {
-  "score": 64,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "SHALLOW"
   ]
  },
@@ -626,35 +591,26 @@
   "defects": []
  },
  "chm_casein": {
-  "score": 58,
-  "grade": "D",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
-   "SHALLOW",
    "SOCIAL-FLAT"
   ]
  },
  "chm_catalyst_concept": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_caustic_soda": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_celluloid": {
-  "score": 64,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "SHALLOW"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_centrifuge": {
   "score": 100,
@@ -677,10 +633,9 @@
   "defects": []
  },
  "chm_coal_tar_distillation": {
-  "score": 64,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "SHALLOW"
   ]
  },
@@ -746,12 +701,9 @@
   "defects": []
  },
  "chm_dynamite": {
-  "score": 64,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "SHALLOW"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_electric_arc_nitrogen": {
   "score": 100,
@@ -778,11 +730,9 @@
   ]
  },
  "chm_formaldehyde_synthesis": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_fractionating_column": {
   "score": 100,
@@ -790,35 +740,24 @@
   "defects": []
  },
  "chm_fulminate": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_gelignite": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_glycerol": {
-  "score": 52,
-  "grade": "D",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC",
-   "SHALLOW"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_guncotton": {
-  "score": 64,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "SHALLOW"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_haber_bosch": {
   "score": 100,
@@ -855,19 +794,16 @@
   ]
  },
  "chm_naphthalene": {
-  "score": 64,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "SHALLOW"
   ]
  },
  "chm_nitroglycerin": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_nylon": {
   "score": 100,
@@ -895,11 +831,9 @@
   "defects": []
  },
  "chm_photography": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_picric_acid": {
   "score": 100,
@@ -912,11 +846,9 @@
   "defects": []
  },
  "chm_potash_mining": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_pressure_gauge": {
   "score": 100,
@@ -929,11 +861,9 @@
   "defects": []
  },
  "chm_pvc_synthesis": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_refrigerant_ammonia": {
   "score": 100,
@@ -964,11 +894,9 @@
   ]
  },
  "chm_solvay_process": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_sulfonamides": {
   "score": 100,
@@ -976,25 +904,19 @@
   "defects": []
  },
  "chm_superphosphate": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_tnt": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "chm_toluene": {
   "score": 82,
   "grade": "B",
   "defects": [
-   "CAP-NONE"
-  ]
- },
- "chm_tnt": {
-  "score": 64,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "SHALLOW"
-  ]
- },
- "chm_toluene": {
-  "score": 64,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
    "SHALLOW"
   ]
  },
@@ -1004,18 +926,14 @@
   "defects": []
  },
  "chm_water_coagulation": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_water_filtration": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "chm_weldon_process": {
   "score": 100,
@@ -1063,11 +981,9 @@
   "defects": []
  },
  "civ_bridge_cast_iron": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "civ_bridge_steel_arch": {
   "score": 100,
@@ -1146,11 +1062,9 @@
   ]
  },
  "civ_dam_earth_fill": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "civ_dam_gravity": {
   "score": 82,
@@ -1212,11 +1126,9 @@
   "defects": []
  },
  "civ_glass_plate": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "civ_glass_windows": {
   "score": 100,
@@ -1236,11 +1148,9 @@
   "defects": []
  },
  "civ_iron_wrought": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "civ_lightning_conductor": {
   "score": 82,
@@ -1346,11 +1256,9 @@
   "defects": []
  },
  "civ_street_lighting": {
-  "score": 58,
-  "grade": "D",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "CAP-VAC",
    "CAP-POWER"
   ]
  },
@@ -1402,11 +1310,9 @@
   "defects": []
  },
  "civ_water_treatment": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "civ_wire_drawn": {
   "score": 100,
@@ -1414,19 +1320,14 @@
   "defects": []
  },
  "clock_pendulum": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "coal_coke": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "collegium_licensed": {
   "score": 100,
@@ -1434,18 +1335,14 @@
   "defects": []
  },
  "com_accumulator": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_amplitude_modulation": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_analytical_engine": {
   "score": 100,
@@ -1469,10 +1366,9 @@
   ]
  },
  "com_baudot_code": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "COST-LOW",
    "SOCIAL-FLAT"
   ]
@@ -1497,18 +1393,14 @@
   ]
  },
  "com_broadcasting_institution": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_cathode_ray_tube": {
-  "score": 64,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
-   "CAP-VAC",
    "SOCIAL-FLAT"
   ]
  },
@@ -1535,12 +1427,9 @@
   ]
  },
  "com_continuous_wave": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-POWER"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_cryptography_substitution": {
   "score": 58,
@@ -1567,11 +1456,9 @@
   "defects": []
  },
  "com_duplex_telegraph": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_error_detecting_code": {
   "score": 46,
@@ -1584,26 +1471,21 @@
   ]
  },
  "com_flip_flop": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-VAC"
   ]
  },
  "com_frequency_modulation": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_heliograph": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_hollerith_tabulation": {
   "score": 52,
@@ -1638,11 +1520,9 @@
   ]
  },
  "com_loading_coil": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_logic_gate": {
   "score": 100,
@@ -1650,34 +1530,30 @@
   "defects": []
  },
  "com_magnetic_core_memory": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "com_magnetic_drum_storage": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "com_magnetic_tape_storage": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "com_magnetic_wire_storage": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -1689,31 +1565,24 @@
   ]
  },
  "com_morse_code": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_morse_register": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_morse_sounder": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_multiplexing": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-VAC"
   ]
  },
@@ -1756,73 +1625,53 @@
   "defects": []
  },
  "com_quadruplex_telegraph": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_radar_magnetron": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-POWER"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_radio_spark_transmitter": {
-  "score": 58,
-  "grade": "D",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC",
-   "CAP-POWER"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_register_computing": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_relay": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_relay_computer": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC"
-  ]
- },
- "com_ring_counter": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
- },
- "com_rotor_machine": {
-  "score": 52,
-  "grade": "D",
-  "defects": [
-   "CAP-NONE",
-   "SHALLOW",
-   "THIN-CHAIN"
-  ]
- },
- "com_semiconductor_diode": {
   "score": 88,
   "grade": "B",
   "defects": [
    "CAP-VAC"
   ]
+ },
+ "com_ring_counter": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
+ },
+ "com_rotor_machine": {
+  "score": 88,
+  "grade": "B",
+  "defects": [
+   "THIN-CHAIN"
+  ]
+ },
+ "com_semiconductor_diode": {
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_signal_flags": {
   "score": 100,
@@ -1830,11 +1679,9 @@
   "defects": []
  },
  "com_slide_rule": {
-  "score": 58,
-  "grade": "D",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
-   "SHALLOW",
    "SOCIAL-FLAT"
   ]
  },
@@ -1847,11 +1694,9 @@
   ]
  },
  "com_stock_ticker": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_stored_program_concept": {
   "score": 100,
@@ -1859,156 +1704,118 @@
   "defects": []
  },
  "com_strowger_exchange": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_submarine_cable": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-HIGH"
   ]
  },
  "com_superheterodyne_receiver": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "com_telegraph_battery": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_telephone_carbon_mic": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_telephone_diaphragm": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_telephone_manual_exchange": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_teleprinter": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_triode_oscillator": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "com_trunk_lines": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-VAC"
   ]
  },
  "com_tuned_circuit": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "com_tv_electronic_camera": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_tv_mechanical_scanning": {
-  "score": 64,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "SHALLOW"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_tv_raster_sync": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "com_vacuum_tube_computer": {
-  "score": 64,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
-   "CAP-VAC",
    "COST-HIGH"
   ]
  },
  "com_vacuum_tube_pentode": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_vacuum_tube_tetrode": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "com_waveguide": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "copper_fire_refined": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "copper_refining": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "corpus_dispersed": {
   "score": 100,
@@ -2033,11 +1840,9 @@
   "defects": []
  },
  "crucible_steel": {
-  "score": 58,
-  "grade": "D",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "CAP-HEAT",
    "CAP-TOL"
   ]
  },
@@ -2047,25 +1852,21 @@
   "defects": []
  },
  "daniell_cell": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-POWER"
   ]
  },
  "destructive_distillation": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "diffusion_pump": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-VAC"
   ]
  },
@@ -2087,42 +1888,35 @@
   ]
  },
  "dynamo": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-POWER"
   ]
  },
  "electrolysis_industrial": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "electromagnet": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-POWER"
   ]
  },
  "electroplating": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-POWER"
   ]
  },
  "electrostatics": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "em_theory": {
   "score": 100,
@@ -2135,12 +1929,9 @@
   "defects": []
  },
  "finery_puddling": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "freedman_staff": {
   "score": 100,
@@ -2158,12 +1949,9 @@
   "defects": []
  },
  "fud_beet_sugar_processing": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "fud_bone_meal_fertilizer": {
   "score": 100,
@@ -2347,10 +2135,9 @@
   ]
  },
  "fud_margarine_synthesis": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -2486,18 +2273,14 @@
   "defects": []
  },
  "fud_yeast_pure_culture": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "fused_quartz": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "galena_detector": {
   "score": 70,
@@ -2508,25 +2291,19 @@
   ]
  },
  "galvanometer": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "ge_reduction": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-PURITY"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "gecl4_purification": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-PURITY"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "geometry_analytic": {
   "score": 100,
@@ -2549,28 +2326,21 @@
   "defects": []
  },
  "glass_borosilicate": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "glass_clear": {
-  "score": 82,
-  "grade": "B",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-HEAT",
    "COST-HIGH"
   ]
  },
  "glass_labware": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "gunpowder": {
   "score": 82,
@@ -2580,18 +2350,14 @@
   ]
  },
  "high_temp_furnace": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "hom_attar_roses": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -2643,20 +2409,17 @@
   "defects": []
  },
  "hom_deodorant": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "COST-LOW",
    "SOCIAL-FLAT"
   ]
  },
  "hom_dishwasher": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "hom_doll_fashion": {
   "score": 88,
@@ -2677,11 +2440,9 @@
   "defects": []
  },
  "hom_electric_lighting": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "hom_eraser_breadcrumb": {
   "score": 100,
@@ -2727,11 +2488,9 @@
   "defects": []
  },
  "hom_heating_hot_water_radiator": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "hom_hypocaust": {
   "score": 88,
@@ -2823,11 +2582,9 @@
   "defects": []
  },
  "hom_perfume_distilled": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "hom_perfume_enfleurage": {
   "score": 100,
@@ -2855,11 +2612,9 @@
   "defects": []
  },
  "hom_printed_books": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "hom_public_bath": {
   "score": 100,
@@ -2908,10 +2663,9 @@
   "defects": []
  },
  "hom_shampoo_soap_based": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "COST-LOW",
    "SOCIAL-FLAT"
   ]
@@ -3007,19 +2761,16 @@
   ]
  },
  "hydrochloric_acid": {
-  "score": 64,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "SHALLOW"
   ]
  },
  "hydrofluoric_acid": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "identity_cover": {
   "score": 100,
@@ -3027,41 +2778,29 @@
   "defects": []
  },
  "industrial_gases": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "interchangeable_parts": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-TOL"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "junction_transistor": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "lab_apparatus": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "lead_chamber": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "lead_metallurgy": {
   "score": 100,
@@ -3138,11 +2877,9 @@
   "defects": []
  },
  "lnd_coal_tar_gas": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "lnd_cursus_publicus": {
   "score": 100,
@@ -3396,11 +3133,9 @@
   "defects": []
  },
  "master_screw": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "mat_alum": {
   "score": 88,
@@ -3410,18 +3145,16 @@
   ]
  },
  "mat_aluminium": {
-  "score": 82,
-  "grade": "B",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-HEAT",
    "COST-LOW"
   ]
  },
  "mat_ammonia": {
-  "score": 64,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "SHALLOW"
   ]
  },
@@ -3512,10 +3245,9 @@
   "defects": []
  },
  "mat_chlorine": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-LOW"
   ]
  },
@@ -3535,10 +3267,9 @@
   "defects": []
  },
  "mat_crucible_steel": {
-  "score": 82,
-  "grade": "B",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-TOL",
    "COST-LOW"
   ]
  },
@@ -3548,11 +3279,9 @@
   "defects": []
  },
  "mat_dyes_synthetic": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "mat_emery": {
   "score": 88,
@@ -3580,20 +3309,16 @@
   "defects": []
  },
  "mat_glass_boro": {
-  "score": 46,
-  "grade": "F",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
-   "CAP-HEAT",
-   "SHALLOW",
    "COST-LOW"
   ]
  },
  "mat_glass_lead": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-LOW"
   ]
  },
@@ -3617,10 +3342,9 @@
   ]
  },
  "mat_graphite_pure": {
-  "score": 82,
-  "grade": "B",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-PURITY",
    "COST-LOW"
   ]
  },
@@ -3703,11 +3427,9 @@
   "defects": []
  },
  "mat_nitrocellulose": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "mat_nitroglycerin": {
   "score": 100,
@@ -3874,26 +3596,21 @@
   "defects": []
  },
  "med_asepsis_antisepsis": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_aspirin": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
  "med_autoclave": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_blood_groups": {
   "score": 100,
@@ -3957,18 +3674,14 @@
   "defects": []
  },
  "med_forensic_medicine": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_gram_stain_culture": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_handwashing_semmelweis": {
   "score": 100,
@@ -3991,12 +3704,9 @@
   "defects": []
  },
  "med_insulin": {
-  "score": 64,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "SHALLOW"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_legal_physician": {
   "score": 100,
@@ -4014,11 +3724,9 @@
   "defects": []
  },
  "med_microscopy_pathology": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_nursing_profession": {
   "score": 100,
@@ -4041,10 +3749,9 @@
   "defects": []
  },
  "med_ophthalmoscope": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -4054,11 +3761,9 @@
   "defects": []
  },
  "med_penicillin": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_quarantine_sanitation": {
   "score": 100,
@@ -4084,11 +3789,9 @@
   ]
  },
  "med_sterile_technique": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_stethoscope_percussion": {
   "score": 100,
@@ -4096,11 +3799,9 @@
   "defects": []
  },
  "med_sulfonamides": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "med_surgical_gloves_mask": {
   "score": 100,
@@ -4145,21 +3846,17 @@
   "defects": []
  },
  "mercury_supply": {
-  "score": 52,
-  "grade": "D",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "CAP-HEAT",
    "CAP-VAC",
    "COST-HIGH"
   ]
  },
  "met_acetylene_supply": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-POWER"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_annealing_recrystallization": {
   "score": 100,
@@ -4172,11 +3869,9 @@
   "defects": []
  },
  "met_basic_lining_phosphorus": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_black_powder_blasting": {
   "score": 82,
@@ -4200,12 +3895,9 @@
   ]
  },
  "met_converter_furnace": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_cupola_furnace": {
   "score": 94,
@@ -4315,11 +4007,9 @@
   "defects": []
  },
  "met_hydraulic_press": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-TOL"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_investment_casting": {
   "score": 88,
@@ -4366,10 +4056,9 @@
   "defects": []
  },
  "met_oxyacetylene_welding": {
-  "score": 82,
-  "grade": "B",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-POWER",
    "SOCIAL-FLAT"
   ]
  },
@@ -4379,11 +4068,9 @@
   "defects": []
  },
  "met_pneumatic_drill": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-TOL"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_powder_metallurgy": {
   "score": 100,
@@ -4391,11 +4078,9 @@
   "defects": []
  },
  "met_quenching_media": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_rail_mill": {
   "score": 100,
@@ -4440,18 +4125,14 @@
   "defects": []
  },
  "met_steam_hammer": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_tempering_color": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "met_tensile_test": {
   "score": 100,
@@ -4464,11 +4145,9 @@
   "defects": []
  },
  "met_tin_plate": {
-  "score": 64,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
-   "CAP-HEAT",
    "SOCIAL-FLAT"
   ]
  },
@@ -4507,19 +4186,14 @@
   ]
  },
  "micrometer_gauges": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-TOL"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "microscope_compound": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "mining_concession": {
   "score": 100,
@@ -4532,10 +4206,9 @@
   "defects": []
  },
  "motor_transformer_ac": {
-  "score": 70,
-  "grade": "C",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "CAP-POWER"
   ]
  },
@@ -4552,11 +4225,9 @@
   ]
  },
  "nitric_acid": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "opt_abbe_condenser": {
   "score": 100,
@@ -4611,10 +4282,9 @@
   "defects": []
  },
  "opt_calorimeter": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -4736,11 +4406,9 @@
   "defects": []
  },
  "opt_oscilloscope": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "opt_phase_contrast": {
   "score": 100,
@@ -4748,13 +4416,9 @@
   "defects": []
  },
  "opt_photocell": {
-  "score": 58,
-  "grade": "D",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC",
-   "CAP-POWER"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "opt_photometry": {
   "score": 94,
@@ -4828,11 +4492,9 @@
   "defects": []
  },
  "opt_seismograph": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "opt_sextant": {
   "score": 100,
@@ -4940,11 +4602,9 @@
   "defects": []
  },
  "photography": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "plague_preparedness": {
   "score": 82,
@@ -4964,11 +4624,9 @@
   "defects": []
  },
  "power_grid": {
-  "score": 52,
-  "grade": "D",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "CAP-HEAT",
    "CAP-POWER",
    "COST-HIGH"
   ]
@@ -5322,10 +4980,9 @@
   "defects": []
  },
  "prn_calotype_process": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -5385,10 +5042,9 @@
   ]
  },
  "prn_daguerreotype": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -5445,10 +5101,9 @@
   "defects": []
  },
  "prn_gelatin_dry_plate": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -5506,10 +5161,9 @@
   "defects": []
  },
  "prn_loudspeaker": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -5538,18 +5192,14 @@
   "defects": []
  },
  "prn_newspaper_institution": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "prn_nitrate_film_safety": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "prn_offset_lithography": {
   "score": 94,
@@ -5595,11 +5245,9 @@
   "defects": []
  },
  "prn_radio_broadcasting": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "prn_relief_printing": {
   "score": 100,
@@ -5636,11 +5284,9 @@
   "defects": []
  },
  "prn_silver_halide_chemistry": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "prn_sizing_surface": {
   "score": 100,
@@ -5692,10 +5338,9 @@
   "defects": []
  },
  "prn_wet_collodion_plate": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "SOCIAL-FLAT"
   ]
  },
@@ -5727,11 +5372,9 @@
   "defects": []
  },
  "pwr_boiler_haystack": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "pwr_boiler_lancashire": {
   "score": 100,
@@ -5739,11 +5382,9 @@
   "defects": []
  },
  "pwr_boiler_wagon": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "pwr_boiler_water_tube": {
   "score": 100,
@@ -5776,11 +5417,9 @@
   "defects": []
  },
  "pwr_condenser": {
-  "score": 58,
-  "grade": "D",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "CAP-TOL",
    "CAP-VAC"
   ]
  },
@@ -5940,11 +5579,9 @@
   "defects": []
  },
  "pwr_pumped_storage": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "pwr_rotary_drilling": {
   "score": 100,
@@ -6025,11 +5662,9 @@
   ]
  },
  "pwr_three_phase_ac": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "pwr_tide_mill": {
   "score": 100,
@@ -6082,11 +5717,9 @@
   "defects": []
  },
  "radio": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "rag_paper": {
   "score": 100,
@@ -6094,10 +5727,9 @@
   "defects": []
  },
  "railway": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-HIGH"
   ]
  },
@@ -6124,12 +5756,9 @@
   "defects": []
  },
  "screw_lathe": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-TOL"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "sea_anchor": {
   "score": 100,
@@ -6209,11 +5838,9 @@
   "defects": []
  },
  "sea_copper_sheathing": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "sea_cross_staff": {
   "score": 94,
@@ -6240,11 +5867,9 @@
   "defects": []
  },
  "sea_dredging": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "sea_dry_compass_card": {
   "score": 100,
@@ -6407,11 +6032,9 @@
   "defects": []
  },
  "sea_sonar": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "sea_sounding_lines": {
   "score": 100,
@@ -6456,19 +6079,16 @@
   ]
  },
  "sea_submarine_cable": {
-  "score": 64,
-  "grade": "C",
+  "score": 82,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
    "BLOCKED"
   ]
  },
  "sea_torpedo": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "sea_traverse_board": {
   "score": 100,
@@ -6481,25 +6101,19 @@
   "defects": []
  },
  "semiconductor_metrology": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "silicon_path": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "single_crystal": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-PURITY"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "soap_hard": {
   "score": 100,
@@ -6507,10 +6121,9 @@
   "defects": []
  },
  "soda_leblanc": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-HIGH"
   ]
  },
@@ -6525,49 +6138,38 @@
   "defects": []
  },
  "steam_atmospheric": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "steam_high_pressure": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-HIGH"
   ]
  },
  "steam_watt": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "sulfuric_retort": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "telegraph_electric": {
-  "score": 76,
-  "grade": "C",
+  "score": 94,
+  "grade": "A",
   "defects": [
-   "CAP-NONE",
    "COST-HIGH"
   ]
  },
  "telescope": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "tex_buttons_buttonholes": {
   "score": 100,
@@ -6714,11 +6316,9 @@
   "defects": []
  },
  "tex_nylon": {
-  "score": 88,
-  "grade": "B",
-  "defects": [
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "tex_pattern_cutting": {
   "score": 100,
@@ -6786,11 +6386,9 @@
   "defects": []
  },
  "tex_synthetic_dyes": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "tex_tape_measure": {
   "score": 100,
@@ -6847,11 +6445,9 @@
   "defects": []
  },
  "thermometer": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "units_standards": {
   "score": 100,
@@ -6859,28 +6455,21 @@
   "defects": []
  },
  "vacuum_pumps": {
-  "score": 58,
-  "grade": "D",
+  "score": 88,
+  "grade": "B",
   "defects": [
-   "CAP-NONE",
-   "CAP-TOL",
    "CAP-VAC"
   ]
  },
  "vacuum_tube": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-VAC"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "voltaic_pile": {
-  "score": 82,
-  "grade": "B",
-  "defects": [
-   "CAP-NONE"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "water_power_scale": {
   "score": 82,
@@ -6901,27 +6490,18 @@
   "defects": []
  },
  "zinc_industry_scale": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "zinc_metal": {
-  "score": 70,
-  "grade": "C",
-  "defects": [
-   "CAP-NONE",
-   "CAP-HEAT"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  },
  "zone_refining": {
-  "score": 76,
-  "grade": "C",
-  "defects": [
-   "CAP-HEAT",
-   "CAP-PURITY"
-  ]
+  "score": 100,
+  "grade": "A",
+  "defects": []
  }
 }

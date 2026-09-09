@@ -2,18 +2,18 @@
 
 ## Verdict
 
-The sample is uneven. About half the 70 nodes are sound in isolation: their listed prerequisites, materials and costs are internally consistent with what the note itself describes, and I found nothing wrong with them. The other half fail at least one test, and the errors cluster into two families rather than being randomly scattered. The single dominant error is a **capability prerequisite that does not match the physics or chemistry of the thing being built** — most often a heat rung (`cap_heat_1300`, `cap_heat_1600`) or a tolerance rung (`cap_tol_100um`) bolted onto a node whose own note describes a room-temperature chemical reaction, a paperwork/theory exercise, or an institutional programme with no machining in it at all. Eight nodes in the sample carry an explicit `[AUDIT: ... inferred by rome/sim/treetool.py repair, not stated by the author]` tag, and every one of the eight that I checked (`chm_gelignite`, `civ_dam_arch`, `com_binary_arithmetic`, `lnd_steering_geometry`, `mercury_supply`, `plague_preparedness`, `sea_charts_navigation`, `tex_mercerisation`) turned out to be wrong — a 100% failure rate on the auto-repaired capability floors in this sample. That is the single most actionable finding in this audit: the repair script's heuristic for inferring capability floors is not trustworthy and everything it touched should be reviewed by a human, not just in this sample but tree-wide. The second-largest class is missing chemical reagents and materials that the node's own note names but the prerequisite list omits — nitric acid for nitration (twice, in two different nodes, once wrongly and once rightly needed elsewhere), formaldehyde for Bakelite, soda ash for synthetic detergent, calcite instead of glass for a Nicol prism, a photoemissive alkali metal for a photocell. A smaller but real class is backwards or category-confused prerequisites (mercury needing vacuum technology that mercury itself is what makes possible; a stirrup needing a horse collar) and two outright tier inversions (a tier-2 node depending on a tier-3 node; a tier-1 node depending on a technology, blast-furnace cast iron, that is a major independent metallurgical leap).
+The sample is uneven. About half the 70 nodes are sound in isolation: their listed prerequisites, materials and costs are internally consistent with what the note itself describes, and I found nothing wrong with them. The other half fail at least one test, and the errors cluster into two families rather than being randomly scattered. The single dominant error is a **capability prerequisite that does not match the physics or chemistry of the thing being built** - most often a heat rung (`cap_heat_1300`, `cap_heat_1600`) or a tolerance rung (`cap_tol_100um`) bolted onto a node whose own note describes a room-temperature chemical reaction, a paperwork/theory exercise, or an institutional programme with no machining in it at all. Eight nodes in the sample carry an explicit `[AUDIT: ... inferred by rome/sim/treetool.py repair, not stated by the author]` tag, and every one of the eight that I checked (`chm_gelignite`, `civ_dam_arch`, `com_binary_arithmetic`, `lnd_steering_geometry`, `mercury_supply`, `plague_preparedness`, `sea_charts_navigation`, `tex_mercerisation`) turned out to be wrong - a 100% failure rate on the auto-repaired capability floors in this sample. That is the single most actionable finding in this audit: the repair script's heuristic for inferring capability floors is not trustworthy and everything it touched should be reviewed by a human, not just in this sample but tree-wide. The second-largest class is missing chemical reagents and materials that the node's own note names but the prerequisite list omits - nitric acid for nitration (twice, in two different nodes, once wrongly and once rightly needed elsewhere), formaldehyde for Bakelite, soda ash for synthetic detergent, calcite instead of glass for a Nicol prism, a photoemissive alkali metal for a photocell. A smaller but real class is backwards or category-confused prerequisites (mercury needing vacuum technology that mercury itself is what makes possible; a stirrup needing a horse collar) and two outright tier inversions (a tier-2 node depending on a tier-3 node; a tier-1 node depending on a technology, blast-furnace cast iron, that is a major independent metallurgical leap).
 
 ## Findings
 
 ### chm_aniline (severity: HIGH)
 - **Test failed:** Missing prerequisite; wrong prerequisite
-- **Finding:** The note says "oleum nitrates benzene to nitrobenzene" — nitration of benzene requires nitric acid (mixed with sulfuric acid/oleum), and no nitric-acid technology is listed. Meanwhile `industrial_gases` (bulk O2/H2) is listed but the note's own reduction step uses iron powder in dilute acid (Béchamp reduction), not catalytic hydrogenation, so the hydrogen gas prerequisite is not actually used by the process described.
+- **Finding:** The note says "oleum nitrates benzene to nitrobenzene" - nitration of benzene requires nitric acid (mixed with sulfuric acid/oleum), and no nitric-acid technology is listed. Meanwhile `industrial_gases` (bulk O2/H2) is listed but the note's own reduction step uses iron powder in dilute acid (Béchamp reduction), not catalytic hydrogenation, so the hydrogen gas prerequisite is not actually used by the process described.
 - **Fix:** Add `nitric_acid` as a prerequisite. Drop or justify `industrial_gases`; it is not used by the Béchamp route the note describes.
 
 ### chm_bakelite (severity: HIGH)
 - **Test failed:** Missing prerequisite
-- **Finding:** The note states plainly that "phenol and formaldehyde condense" to form the resin, but only `chm_phenol` is listed. Formaldehyde (`mat_formaldehyde`, tier 4 — meaning it is not free, it needs its own production chain) is completely absent from both `pre` and `mat`.
+- **Finding:** The note states plainly that "phenol and formaldehyde condense" to form the resin, but only `chm_phenol` is listed. Formaldehyde (`mat_formaldehyde`, tier 4 - meaning it is not free, it needs its own production chain) is completely absent from both `pre` and `mat`.
 - **Fix:** Add the technology that yields `mat_formaldehyde` (methanol oxidation from destructive distillation) as a prerequisite, and add `mat_formaldehyde` to materials.
 
 ### chm_detergent_synthetic (severity: HIGH)
@@ -23,12 +23,12 @@ The sample is uneven. About half the 70 nodes are sound in isolation: their list
 
 ### chm_gelignite (severity: HIGH)
 - **Test failed:** Wrong prerequisite
-- **Finding:** `cap_heat_1300` (sustained 1300 C blast-furnace-grade heat) was auto-inferred and attached to this node, but gelignite manufacture as the note itself describes it — dissolving nitrocellulose in nitroglycerin with acetone or diethyl phthalate — is a room-temperature compounding operation. No heat capability of this kind is used anywhere in the process.
+- **Finding:** `cap_heat_1300` (sustained 1300 C blast-furnace-grade heat) was auto-inferred and attached to this node, but gelignite manufacture as the note itself describes it - dissolving nitrocellulose in nitroglycerin with acetone or diethyl phthalate - is a room-temperature compounding operation. No heat capability of this kind is used anywhere in the process.
 - **Fix:** Remove `cap_heat_1300`. If any capability floor is wanted here it would be a solvent-handling/ventilation one, not a heat rung.
 
 ### com_analytical_engine (severity: HIGH)
 - **Test failed:** Missing prerequisite
-- **Finding:** The note explicitly says the machine "was never built (same tolerance problems as the Difference Engine)" — yet no tolerance capability or `interchangeable_parts` appears anywhere in `pre`. A machine with thousands of precision gears and rods cannot be built by "same tolerance problems" hand-waving with zero tolerance prerequisite listed, especially when the much simpler `com_comptometer` in this same sample correctly lists `interchangeable_parts`.
+- **Finding:** The note explicitly says the machine "was never built (same tolerance problems as the Difference Engine)" - yet no tolerance capability or `interchangeable_parts` appears anywhere in `pre`. A machine with thousands of precision gears and rods cannot be built by "same tolerance problems" hand-waving with zero tolerance prerequisite listed, especially when the much simpler `com_comptometer` in this same sample correctly lists `interchangeable_parts`.
 - **Fix:** Add `cap_tol_100um` at minimum (arguably `interchangeable_parts`, matching `com_comptometer`'s own convention).
 
 ### com_binary_arithmetic (severity: HIGH)
@@ -43,37 +43,37 @@ The sample is uneven. About half the 70 nodes are sound in isolation: their list
 
 ### hot_air_balloon (severity: HIGH)
 - **Test failed:** Wrong prerequisite
-- **Finding:** The listed prerequisites are `rag_paper` and `distillation_alcohol`, but the node's own note says "Linen sized with oil is the envelope; Rome has excellent sailcloth" — no paper appears anywhere in the materials (`linen_kg`, `olive_oil_kg`, `firewood_kg` only) or in the described construction, and the heat source is a wood fire (`firewood_kg: 8000`), not an alcohol burner. Neither prerequisite is actually used by the recipe as written.
+- **Finding:** The listed prerequisites are `rag_paper` and `distillation_alcohol`, but the node's own note says "Linen sized with oil is the envelope; Rome has excellent sailcloth" - no paper appears anywhere in the materials (`linen_kg`, `olive_oil_kg`, `firewood_kg` only) or in the described construction, and the heat source is a wood fire (`firewood_kg: 8000`), not an alcohol burner. Neither prerequisite is actually used by the recipe as written.
 - **Fix:** Remove `rag_paper` and `distillation_alcohol`. Neither is load-bearing for an oiled-linen, wood-fire-heated balloon; if anything is needed it is a textile-sizing/waterproofing craft note, which is already tier-0 (`mat_olive_oil`, `mat_linen`).
 
 ### lnd_stirrup (severity: HIGH)
 - **Test failed:** Wrong prerequisite; missing prerequisite
-- **Finding:** `horse_collar` (rigid padded collar, whippletree, nailed horseshoe) is listed as a prerequisite, but the stirrup and the horse collar are historically and functionally unrelated — one is a draft-harness efficiency device for pulling loads, the other is a mounted-rider balance device. A stirrup is a metal loop hung from a saddle strap; what it actually needs and does not have listed is a proper riding saddle.
+- **Finding:** `horse_collar` (rigid padded collar, whippletree, nailed horseshoe) is listed as a prerequisite, but the stirrup and the horse collar are historically and functionally unrelated - one is a draft-harness efficiency device for pulling loads, the other is a mounted-rider balance device. A stirrup is a metal loop hung from a saddle strap; what it actually needs and does not have listed is a proper riding saddle.
 - **Fix:** Remove `horse_collar`. Add a saddle-construction prerequisite (if one exists elsewhere in the tree); `mat_wrought_iron` (already listed) and `mat_leather`/saddle craft are the real inputs.
 
 ### med_aspirin (severity: HIGH)
 - **Test failed:** Factually wrong note; wrong prerequisite; missing prerequisite
-- **Finding:** Aspirin is made by acetylating salicylic acid with acetic anhydride (or acetyl chloride) — not by any reaction involving nitric acid. Nitration of salicylic acid does not produce acetylsalicylic acid; it produces nitro-substituted aromatic compounds. `nitric_acid` is simply the wrong reagent for this synthesis, and no acetylating agent (acetic anhydride) is listed at all.
+- **Finding:** Aspirin is made by acetylating salicylic acid with acetic anhydride (or acetyl chloride) - not by any reaction involving nitric acid. Nitration of salicylic acid does not produce acetylsalicylic acid; it produces nitro-substituted aromatic compounds. `nitric_acid` is simply the wrong reagent for this synthesis, and no acetylating agent (acetic anhydride) is listed at all.
 - **Fix:** Replace `nitric_acid` with a prerequisite that yields acetic anhydride (acetic acid distillation/anhydride formation). `nitric_acid` should be removed from this node.
 
 ### mercury_supply (severity: HIGH)
 - **Test failed:** Wrong prerequisite; backwards causal direction
-- **Finding:** `cap_vac_1torr` (rough vacuum, piston pump) was auto-inferred as a prerequisite for extracting mercury from cinnabar, but the note itself describes simple retort roasting of cinnabar with condensation of the vapour — an atmospheric-pressure thermal process needing no vacuum equipment at all. Worse, the causal order is backwards: the tree's own vocabulary and this node's note both note that mercury is what *enables* the first hard vacuum (barometers, Sprengel pumps), not the other way around.
+- **Finding:** `cap_vac_1torr` (rough vacuum, piston pump) was auto-inferred as a prerequisite for extracting mercury from cinnabar, but the note itself describes simple retort roasting of cinnabar with condensation of the vapour - an atmospheric-pressure thermal process needing no vacuum equipment at all. Worse, the causal order is backwards: the tree's own vocabulary and this node's note both note that mercury is what *enables* the first hard vacuum (barometers, Sprengel pumps), not the other way around.
 - **Fix:** Remove `cap_vac_1torr`. If a heat capability is wanted, `cap_heat_0700` or `cap_heat_1100` (roasting/retort temperatures) is the right family, not a vacuum rung.
 
 ### opt_nicol_prism (severity: HIGH)
 - **Test failed:** Missing/wrong material
 - **Finding:** The note correctly describes a Nicol prism as cut from "Calcite (Iceland spar) crystal," but the material listed is `glass_raw_kg: 0.8`. Glass is not birefringent in the way calcite is and cannot be substituted for it; the material listed contradicts the note's own physics.
-- **Fix:** Replace `glass_raw_kg` with a calcite/Iceland-spar material line (not currently in the shared vocabulary materials table — this itself is a gap worth flagging to the vocabulary maintainers).
+- **Fix:** Replace `glass_raw_kg` with a calcite/Iceland-spar material line (not currently in the shared vocabulary materials table - this itself is a gap worth flagging to the vocabulary maintainers).
 
 ### plague_preparedness (severity: HIGH)
 - **Test failed:** Wrong prerequisite
-- **Finding:** `cap_tol_100um` (0.1 mm machining tolerance) was auto-inferred onto a public-health institution node — quarantine, clean water, sanitation, variolation. Nothing in this programme involves precision machining; its labour is 2500 scholar-hours and 6000 labourer-hours, and its materials list is empty.
+- **Finding:** `cap_tol_100um` (0.1 mm machining tolerance) was auto-inferred onto a public-health institution node - quarantine, clean water, sanitation, variolation. Nothing in this programme involves precision machining; its labour is 2500 scholar-hours and 6000 labourer-hours, and its materials list is empty.
 - **Fix:** Remove `cap_tol_100um`. It has no bearing on a quarantine/sanitation programme.
 
 ### prc_lathe_faceplate (severity: HIGH)
 - **Test failed:** Missing prerequisite
-- **Finding:** A faceplate is a fixture that "bolts to spindle nose" of a lathe, per the node's own note — but no lathe (`screw_lathe` or any earlier lathe technology) is listed as a prerequisite anywhere. The entire premise of the device presupposes a working lathe already exists. `crank_conrod` is listed instead, which has no obvious connection to a cast-iron mounting plate; separately, crank-and-connecting-rod mechanisms are not well attested in Rome before roughly the 3rd century AD (the Hierapolis sawmill relief), which is worth checking against whatever calendar floor tier 1 represents in the full tree.
+- **Finding:** A faceplate is a fixture that "bolts to spindle nose" of a lathe, per the node's own note - but no lathe (`screw_lathe` or any earlier lathe technology) is listed as a prerequisite anywhere. The entire premise of the device presupposes a working lathe already exists. `crank_conrod` is listed instead, which has no obvious connection to a cast-iron mounting plate; separately, crank-and-connecting-rod mechanisms are not well attested in Rome before roughly the 3rd century AD (the Hierapolis sawmill relief), which is worth checking against whatever calendar floor tier 1 represents in the full tree.
 - **Fix:** Add a base lathe technology (e.g. `screw_lathe`, or whatever earlier lathe node exists in the full tree) as a prerequisite. Reconsider whether `crank_conrod` belongs here at all.
 
 ### prc_lead_screw_error_cam (severity: HIGH)
@@ -88,12 +88,12 @@ The sample is uneven. About half the 70 nodes are sound in isolation: their list
 
 ### tex_mercerisation (severity: HIGH)
 - **Test failed:** Wrong prerequisite
-- **Finding:** `cap_heat_1300` was auto-inferred onto a process the note itself describes as treating cotton with sodium hydroxide "under tension" — mercerisation is done cold or barely warm; it needs no sustained 1300 C heat of any kind.
+- **Finding:** `cap_heat_1300` was auto-inferred onto a process the note itself describes as treating cotton with sodium hydroxide "under tension" - mercerisation is done cold or barely warm; it needs no sustained 1300 C heat of any kind.
 - **Fix:** Remove `cap_heat_1300`.
 
 ### air_pitot_tube (severity: MEDIUM)
 - **Test failed:** Wrong tier
-- **Finding:** This is tier 1, but its only prerequisite is `barometer` ("Mercury barometer, and the first hard vacuum"). Elsewhere in this same sample, `mercury_supply` — the node that secures the mercury a barometer needs — is tier 2. A tier-1 node should not depend on a technology whose own input chain sits at tier 2.
+- **Finding:** This is tier 1, but its only prerequisite is `barometer` ("Mercury barometer, and the first hard vacuum"). Elsewhere in this same sample, `mercury_supply` - the node that secures the mercury a barometer needs - is tier 2. A tier-1 node should not depend on a technology whose own input chain sits at tier 2.
 - **Fix:** Either raise `air_pitot_tube` to tier 2, or confirm `barometer`'s tier independently is genuinely achievable at tier 1 (unlikely given the mercury dependency).
 
 ### air_rotary_engine (severity: MEDIUM)
@@ -103,12 +103,12 @@ The sample is uneven. About half the 70 nodes are sound in isolation: their list
 
 ### chm_cyanamide_fixation (severity: MEDIUM)
 - **Test failed:** Missing prerequisite
-- **Finding:** The note describes making calcium carbide "by arc furnace" — which is exactly what `arc_furnace_ferroalloys` ("Electric arc furnace, carbides and ferroalloys") covers in the shared vocabulary, yet it is not listed; only the generic `cap_heat_3000` capability rung is cited.
+- **Finding:** The note describes making calcium carbide "by arc furnace" - which is exactly what `arc_furnace_ferroalloys` ("Electric arc furnace, carbides and ferroalloys") covers in the shared vocabulary, yet it is not listed; only the generic `cap_heat_3000` capability rung is cited.
 - **Fix:** Add `arc_furnace_ferroalloys` as a prerequisite.
 
 ### civ_dam_arch (severity: MEDIUM)
 - **Test failed:** Wrong prerequisite
-- **Finding:** `cap_heat_1300` was auto-inferred, but the only material this node consumes is `lime_kg: 80` — lime burning runs at roughly 900-1000 C, well within `cap_heat_1100`. Nothing in an arch dam's construction (masonry, mortar, geometry) calls for blast-furnace-grade heat.
+- **Finding:** `cap_heat_1300` was auto-inferred, but the only material this node consumes is `lime_kg: 80` - lime burning runs at roughly 900-1000 C, well within `cap_heat_1100`. Nothing in an arch dam's construction (masonry, mortar, geometry) calls for blast-furnace-grade heat.
 - **Fix:** Remove `cap_heat_1300`, or replace with `cap_heat_1100` if a heat floor is wanted at all.
 
 ### fud_hay_making_storage (severity: MEDIUM)
@@ -118,7 +118,7 @@ The sample is uneven. About half the 70 nodes are sound in isolation: their list
 
 ### fud_soil_composition_analysis (severity: MEDIUM)
 - **Test failed:** Missing prerequisite
-- **Finding:** The note describes testing "soil pH, organic matter, and nutrient content via chemical analysis" — genuine quantitative chemical testing — but the only prerequisite is `fud_agricultural_treatises` (written knowledge codification). The shared vocabulary has `analytical_chemistry` ("Gravimetric and volumetric analysis") for exactly this kind of work, and it is not cited.
+- **Finding:** The note describes testing "soil pH, organic matter, and nutrient content via chemical analysis" - genuine quantitative chemical testing - but the only prerequisite is `fud_agricultural_treatises` (written knowledge codification). The shared vocabulary has `analytical_chemistry` ("Gravimetric and volumetric analysis") for exactly this kind of work, and it is not cited.
 - **Fix:** Add `analytical_chemistry` as a prerequisite.
 
 ### lnd_steering_geometry (severity: MEDIUM)
@@ -133,42 +133,42 @@ The sample is uneven. About half the 70 nodes are sound in isolation: their list
 
 ### met_cupola_furnace (severity: MEDIUM)
 - **Test failed:** Wrong tier
-- **Finding:** This node is tier 1 (the earliest tier) yet requires `blast_furnace` ("Tall shaft blast furnace and cast iron") as a prerequisite — a major, non-trivial metallurgical leap in its own right, not something that belongs at the very start of the tree alongside basic hand crafts.
+- **Finding:** This node is tier 1 (the earliest tier) yet requires `blast_furnace` ("Tall shaft blast furnace and cast iron") as a prerequisite - a major, non-trivial metallurgical leap in its own right, not something that belongs at the very start of the tree alongside basic hand crafts.
 - **Fix:** Raise `met_cupola_furnace` to at least the same tier as `blast_furnace`, or later.
 
 ### met_galvanizing (severity: MEDIUM)
 - **Test failed:** Wrong prerequisite; redundant prerequisite
-- **Finding:** Two issues. First, `pre` lists both `mat_zinc` (a materials-table id, "Zinc metal") and `zinc_metal` (the actual technology, "Zinc metal by downward distillation") — these name the same underlying capability twice under two different id namespaces. Second, `cap_heat_1300` is far more heat than a zinc dip bath needs: zinc melts at 420 C and a galvanizing bath runs around 450-460 C, well inside `cap_heat_0700`.
+- **Finding:** Two issues. First, `pre` lists both `mat_zinc` (a materials-table id, "Zinc metal") and `zinc_metal` (the actual technology, "Zinc metal by downward distillation") - these name the same underlying capability twice under two different id namespaces. Second, `cap_heat_1300` is far more heat than a zinc dip bath needs: zinc melts at 420 C and a galvanizing bath runs around 450-460 C, well inside `cap_heat_0700`.
 - **Fix:** Drop `mat_zinc` from `pre` (it is already covered by `zinc_metal`). Replace `cap_heat_1300` with `cap_heat_0700`.
 
 ### met_roasting_calcining (severity: MEDIUM)
 - **Test failed:** Internally inconsistent note
-- **Finding:** The note ends "Needs a scholar to understand stoichiometry or roasters waste half their ore," but the labour list is `furnaceman: 150, labourer: 100` — zero scholar hours, and no theory prerequisite is listed either. The note asserts a requirement the node's own fields do not provide.
-- **Fix:** Either add scholar hours and a chemistry-theory prerequisite, or remove the stoichiometry claim from the note — ancient roasters worked by empirical craft knowledge, not formal stoichiometry (a term that postdates Richter, 1792, and is anachronistic for a tier-1 node).
+- **Finding:** The note ends "Needs a scholar to understand stoichiometry or roasters waste half their ore," but the labour list is `furnaceman: 150, labourer: 100` - zero scholar hours, and no theory prerequisite is listed either. The note asserts a requirement the node's own fields do not provide.
+- **Fix:** Either add scholar hours and a chemistry-theory prerequisite, or remove the stoichiometry claim from the note - ancient roasters worked by empirical craft knowledge, not formal stoichiometry (a term that postdates Richter, 1792, and is anachronistic for a tier-1 node).
 
 ### opt_photocell (severity: MEDIUM)
 - **Test failed:** Missing material
-- **Finding:** The note says "Cesium or other photoemissive surface in vacuum emits electrons when light strikes," but no alkali-metal material appears in `mat` (only `copper_kg: 0.5`). Elsewhere in this sample, exotic/rare inputs are tracked explicitly when used (e.g. `com_semiconductor_diode` lists `germanium_g`, `indium_g`, `gold_g`) — this node breaks that convention.
+- **Finding:** The note says "Cesium or other photoemissive surface in vacuum emits electrons when light strikes," but no alkali-metal material appears in `mat` (only `copper_kg: 0.5`). Elsewhere in this sample, exotic/rare inputs are tracked explicitly when used (e.g. `com_semiconductor_diode` lists `germanium_g`, `indium_g`, `gold_g`) - this node breaks that convention.
 - **Fix:** Add a cesium or alkali-metal material line to `mat`.
 
 ### opt_pyrometer_radiation (severity: MEDIUM)
 - **Test failed:** Missing prerequisite
-- **Finding:** The note says radiation "focuses... onto bolometer or photocell," but neither `opt_photocell` nor any bolometer technology is listed as a prerequisite — only the abstract `cap_measure_elec` and `thermodynamics_theory`.
+- **Finding:** The note says radiation "focuses... onto bolometer or photocell," but neither `opt_photocell` nor any bolometer technology is listed as a prerequisite - only the abstract `cap_measure_elec` and `thermodynamics_theory`.
 - **Fix:** Add `opt_photocell` as a prerequisite (or a bolometer-equivalent if one exists elsewhere in the tree).
 
 ### opt_stroboscope (severity: MEDIUM)
 - **Test failed:** Wrong prerequisite
-- **Finding:** `photography` is listed as a prerequisite, but the note describes the device purely as a visual RPM instrument — "rotating disk or electric lamp flash synchronized to object rotation... measuring RPM directly" — with no camera or film involved anywhere. The mechanical rotating-disk stroboscope (Plateau/Stampfer, 1832) long predates photography and needs neither photographic technology nor, for the disk variant, electric power.
+- **Finding:** `photography` is listed as a prerequisite, but the note describes the device purely as a visual RPM instrument - "rotating disk or electric lamp flash synchronized to object rotation... measuring RPM directly" - with no camera or film involved anywhere. The mechanical rotating-disk stroboscope (Plateau/Stampfer, 1832) long predates photography and needs neither photographic technology nor, for the disk variant, electric power.
 - **Fix:** Remove `photography`. Keep `cap_power_electric` only if the intended variant is specifically the electric-flash version.
 
 ### prc_broach_machine (severity: MEDIUM)
 - **Test failed:** Wrong tier of capability listed
-- **Finding:** The note states the machine "Requires 0.05mm tooth accuracy," but the listed capability is `cap_tol_100um` (0.1 mm) — a capability that by definition does not guarantee 0.05 mm precision. The note's own number falls below what the cited prerequisite can deliver.
+- **Finding:** The note states the machine "Requires 0.05mm tooth accuracy," but the listed capability is `cap_tol_100um` (0.1 mm) - a capability that by definition does not guarantee 0.05 mm precision. The note's own number falls below what the cited prerequisite can deliver.
 - **Fix:** Cite `cap_tol_10um` (0.01 mm) instead, which comfortably covers the stated 0.05 mm need.
 
 ### prc_honing_machine (severity: MEDIUM)
 - **Test failed:** Wrong tier of capability listed
-- **Finding:** The note claims the process "Produces 0.5 micron finish," but the listed capability is `cap_tol_10um` (10 micron) — twenty times coarser than the claimed output.
+- **Finding:** The note claims the process "Produces 0.5 micron finish," but the listed capability is `cap_tol_10um` (10 micron) - twenty times coarser than the claimed output.
 - **Fix:** Cite `cap_tol_1um` (1 micron, "lapping, grinding, optical flats") instead of `cap_tol_10um`.
 
 ### pwr_selenium_metal (severity: MEDIUM)
@@ -205,7 +205,7 @@ air_aerodrome, air_dirigible_engine_mount, air_wing_warping, chm_filter_press, c
 ## What I could not assess
 
 - The full 1,179-node tree was not available, only this 70-node sample plus the shared vocabulary. Several findings above (e.g. `com_analytical_engine`'s missing tolerance capability, `prc_lathe_faceplate`'s missing lathe) assume the gap is real at the node level; it is possible, though I judge it unlikely given the instruction to judge each node in isolation, that an un-sampled sibling node supplies the missing piece through a different mechanism I cannot see.
-- I do not know exactly what the `tier` field's absolute calendar meaning is (I inferred ordering only from tier-to-tier comparisons within the sample), nor what `yrs` measures precisely (development duration vs. calendar floor) — `steam_high_pressure`'s note suggests `yrs` sometimes encodes calendar diffusion time rather than build time, which I could not verify against other nodes.
+- I do not know exactly what the `tier` field's absolute calendar meaning is (I inferred ordering only from tier-to-tier comparisons within the sample), nor what `yrs` measures precisely (development duration vs. calendar floor) - `steam_high_pressure`'s note suggests `yrs` sometimes encodes calendar diffusion time rather than build time, which I could not verify against other nodes.
 - None of the 70 sampled nodes touch natural rubber, gutta percha, quinine, or New World crops, so I could not check how the tree handles those specific historically-flagged materials.
 - I could not verify the tiers of prerequisite technologies named but not themselves included in the sample (`barometer`, `blast_furnace`, `com_difference_engine`, `crank_conrod`, and others) beyond what the shared vocabulary's plain-text descriptions imply; tier-inversion findings that depend on those (`air_pitot_tube`, `met_cupola_furnace`) are argued from the vocabulary's descriptions and from other sampled nodes' tiers, not from a direct reading of the un-sampled node's own tier field.
 - Cost and hour magnitudes (test 4) were largely unremarkable in this sample once the capability/material errors above are set aside; I did not find a clean factor-of-five-or-more cost outlier that was not already explained by a capability or material mismatch, so no separate "wrong cost" findings are listed. This may reflect real soundness in costing, or it may reflect that I lack a reliable outside reference for what a Roman-to-modern tech tree should charge in its abstracted currency and hour units.
