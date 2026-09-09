@@ -251,5 +251,89 @@ entirely, and let completions snowball your revenue to cover the deficit
 after the fact. It never once produced a refusal, an error, or any
 consequence worse than a slowly rising number I couldn't find a use for.
 
+By contrast, **founder-hours *are* honestly and visibly rationed.** In a
+follow-up test I started 8 more projects at once needing 900+500+450+400+
+300+300+300+300 = 3450 founder-hours against only 2400 available that year.
+Unlike money, `start` still accepted all 8 unconditionally, but the actual
+hour allocation after `step 1` showed real contention: `hot_air_balloon`
+(400h) and `mfg_punch_press` (300h) got fully funded down to 0 left, two
+small projects (`units_standards`, `fud_whaling_industry`, 300h each)
+finished outright and dropped off the active list, `identity_cover` and
+`water_power_scale` got partially funded (325/500 and 225/450 left), and
+`arrival_orientation` — the single biggest ask at 900h — got **zero** hours
+that year (900/900 left, no progress at all), and a pre-existing project
+(`fin_chain_store`) that had been ticking along also stalled (40/200 left,
+unchanged). So the engine clearly *does* implement a real, contested
+resource-allocation pass for founder-hours (with some scheduling bias toward
+finishing cheap projects first, apparently at the expense of big or
+already-running ones) — it just doesn't do the equivalent thing for money.
+That inconsistency (hours are honestly scarce, capital is not) is itself
+worth flagging: the fix for the debt-spree exploit above is presumably to
+give `start`/the yearly project-spend pass the same kind of hard budget
+constraint that `founder_hours_available` already visibly enforces.
+
+---
+
+## Summary (end of this sitting)
+
+Session left at **year 139**, capital 0.0, revenue 17,711.2/yr, reputation
+24.2 (started at 5.0), scandal 0.95, done_count 157, 7 projects mid-flight,
+founder still alive, game not ended. State is fully persisted in
+`han_china_100ad_WEIRD.json` and can be resumed at any time with the same
+start command.
+
+**Biggest bug/silly-result found:** `start` places zero check on whether the
+founder can afford a project, ever — unlike `buy`, which does check.
+Capital can and does go negative with no bankruptcy, no forced cancellation,
+and no real penalty (just a slow-climbing, apparently inert `scandal`
+number), while `founder_hours_available` is a genuinely enforced, contested
+resource in the same code path. Net effect: a "debt spree" — start every
+expensive thing you can see the instant you see it, regardless of your
+treasury — is a strictly dominant strategy over playing it safe, since new
+projects' own revenue reliably bails out the deficit they created and being
+broke has (as far as I could find) no real downside. See section 7.
+
+**Second biggest:** the game silently owes the Han-China start a backlog of
+roughly 128 "ambient" technologies that do not show up in `state.done_count`
+at turn 0, and only get dumped in all at once the instant you call `step`
+for the very first time — no matter how small that step is, and even if you
+start and do nothing else. See section 2. This makes turn-0 `state` actively
+misleading about your true position.
+
+**Funniest/most immersion-breaking:** a literal developer QA/audit comment
+(complete with "[AUDIT: ... an independent review found that EVERY inferred
+rung it sampled was wrong, so all of them were reverted...]") is shown to the
+player as if it were in-world flavour text, on the very first non-trivial
+item I inspected with `why`. See section 4.
+
+**Most unrealistic (thematically):** the founder is a single named person
+who is explicitly the load-bearing resource in this game ("you are one
+person") yet survives, unaged and unremarked upon, from 100 AD clear through
+to the 600 AD horizon with zero aging, retirement, succession, or death
+mechanic ever triggering, even over 500 years of pure inaction. Also, event
+flavour text for a Han-China game is inconsistently Rome-flavoured
+("fire in the insula district" — insula is a Roman apartment block — and
+Roman-named starting techs like `fin_argentarii`/`civ_arch_roman` showing up
+in a Han China `available` list), while other events correctly reference
+Han-specific history (Yellow Turban rebellion, dated exactly 184-205 AD).
+
+**Tried hard and could NOT break:** `stop` (100% loss of sunk cost, no
+partial refund, no bug found); `bounty` (correctly priced at a ~2.5x premium
+over DIY, correctly refuses if unaffordable); `buy slaves`/`buy mine`/`buy
+forest` (all correctly gated on affordability up front, with a rising
+market-impact price that persists between purchases rather than resetting
+for free re-grinding).
+
+**What I'd change:** give `start` the same affordability check `buy`
+already has (or explicitly design "financed" projects as a real mechanic
+with real interest/risk, rather than an accidental free one); make scandal
+from running a deficit actually bite (visible cap on suspicion/state
+interest, or an actual bankruptcy state); populate turn-0 `state` with the
+real starting tech count instead of a number that jumps 12x on the first
+`step`; add a founder-mortality/succession mechanic given the game's whole
+framing is "you are one person"; and sweep the KB text for other leaked
+`[AUDIT: ...]`-style developer notes, since finding one on the first item I
+inspected suggests there are more.
+
 
 

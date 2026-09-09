@@ -2073,7 +2073,6 @@ class Sim:
                 # from. 1.0 for every node that is not a located material.
                 money = (n["_total_cost"] * frac * self.cost_money_factor() * opposition
                          * self.civ_cost_factor(k) * self.material_cost_factor(k))
-                self._spend_this_year = getattr(self, "_spend_this_year", 0.0) + money
                 hh = n["_hired_hours"] * frac
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
@@ -2086,6 +2085,12 @@ class Sim:
                 self.capital -= money
                 self.total_spend += money
                 st["spent"] += money
+                # Count it HERE, after the hired-hours scaling and the
+                # affordability clamp, not before them. Accumulating the
+                # notional figure made project_spend_last_year disagree with
+                # the actual capital movement by a factor of 89, which a tester
+                # caught by comparing three numbers in a single `state` reply.
+                self._spend_this_year = getattr(self, "_spend_this_year", 0.0) + money
                 floor = n["yrs"]
                 if n["yrs"] >= 5:   # diffusion-limited nodes, not physical curing
                     floor = max(2.0, n["yrs"] / (1.0 + self.reputation / 90.0))
@@ -2669,7 +2674,9 @@ def _agent_state(s, nodes):
         # consecutive years while capital sat at exactly 0.0, every denarius
         # going into the work in progress. A field that says you are making
         # money while you are visibly making none is worse than no field.
-        "project_spend_last_year": round(getattr(s, "spend_last_year", 0.0), 1),
+        # Named for what it is. The roll happens after the spending loop, so this
+        # is the year just simulated, not the one before it.
+        "project_spend_this_year": round(getattr(s, "spend_last_year", 0.0), 1),
         "net_after_project_spend": round(s.revenue() - s.upkeep() - s.living_cost()
                                          - s.mine_operating_cost()
                                          - getattr(s, "spend_last_year", 0.0), 1),
@@ -2722,8 +2729,11 @@ def _agent_help(s):
             "own hours, other people's hours, money, materials, and years."
             % (s.civ.get("name", "a society"), s.cfg["start_year"])),
         "how a turn works": (
-            "Nothing happens until you make it happen. You begin projects, then "
-            "advance time. Projects consume money and hours while they run. You "
+            "You begin projects, then advance time. In the first year you are also "
+            "credited with everything this society ALREADY knows how to do, which "
+            "is over a hundred things and costs you nothing; `state` counts those "
+            "separately as granted rather than earned, because they are not your "
+            "doing. After that first year, nothing happens unless you make it. Projects consume money and hours while they run. You "
             "are charged for food, rent and appearances every year whether or not "
             "you are building anything."),
         "what you are trying to do": (
@@ -3004,8 +3014,27 @@ def _agent_dispatch(s, nodes, cmd):
                 return {"ok": False, "error": "could not commission any %s capacity right now "
                                               "(capital too low, ceiling reached, or standing "
                                               "too low for a concession that size)" % mat}
-            return {"ok": True, "commissioned_t_per_yr": round(got, 2),
-                    "ready_year": s.mine_ready.get(mat), "capital": round(s.capital, 1)}
+            # Say what was actually commissioned and WHEN it arrives. A tester
+            # asked for 999,999,999 tonnes a year, silently got 59, and found
+            # ready_year was always null so there was no way to know whether the
+            # workings would appear in four years or ninety-five. Both of those
+            # are the model being coy about its own arithmetic.
+            tranche = [t for t in getattr(s, "mine_tranches", []) if t[0] == mat]
+            ready = min((t[2] for t in tranche), default=None)
+            asked = float(n)
+            reply = {"ok": True, "material": mat,
+                     "you_asked_for_t_per_yr": asked,
+                     "commissioned_t_per_yr": round(got, 2),
+                     "ready_year": ready,
+                     "years_until_producing": (None if ready is None
+                                               else round(ready - s.year, 1)),
+                     "already_producing_t_per_yr": round(s.mine_capacity.get(mat, 0.0), 2),
+                     "capital": round(s.capital, 1)}
+            if got < asked * 0.999:
+                reply["note"] = ("less than you asked for: limited by capital, by the "
+                                 "ceiling your standing supports, or both. Nothing was "
+                                 "wasted, you paid only for what was sunk.")
+            return reply
         if what == "slaves":
             got = s.buy_slaves(int(n))
             if got <= 0:

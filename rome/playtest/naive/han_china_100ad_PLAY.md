@@ -160,3 +160,71 @@ the writing consistently frames Han China's opportunity against what Rome
 is doing in parallel, which is a nice worldbuilding touch given the chosen
 civ.
 
+### Years 156-205: the economy takes off, then the Yellow Turban rebellion hits
+
+Kept queueing batches (financial techs, manufacturing presses, cold
+storage, marine insurance, Newton's laws, regression/control-group
+statistics, positional decimal notation) and stepping in big jumps. The
+snowball got dramatic: capital went 5497 (yr156) -> 15426 (yr166) -> 74787
+(yr184), revenue 2719 -> 5760 -> 10949/yr, artisans 8 -> 13 -> 16. It felt
+genuinely good, like the game was rewarding sustained investment with
+compounding returns, and I got a little complacent about the looming
+hazard I'd been warned about since turn one.
+
+At year 184 the Yellow Turban rebellion arrived exactly on schedule
+(`in_progress` flipped true). Over the next 21 years, stepping through it:
+- Six separate "a site is sacked" events (184, 186, 189, 191, 195, 201,
+  203 — more than one per sack_chance_per_year=0.2 would suggest across 21
+  years, so the odds bit repeatedly).
+- One "banditry or a frontier war disrupts supply" event.
+- Capital cratered from 74,787 to a low around 14-21k over the course of
+  it — a ~70% wealth loss even though revenue never stopped flowing. I
+  never got an explanation of what exactly the "sack" spends capital on;
+  I just watched the number fall.
+- Two explicit "KNOWLEDGE LOST" events: at year 195, "8 technologies
+  forgotten (the corpus was never printed and dispersed)", and at year 201,
+  "5 technologies forgotten" for the same reason. done_earned dropped from
+  71 to 58 — thirteen techs I had actually built with my own hours, gone,
+  permanently (nothing since has restored that count). This is the single
+  harshest, most consequential moment of the game so far, and it landed
+  as a direct, legible punishment for a warning I'd been shown at every
+  single `state` call and had failed to act on.
+
+That loss message ("the corpus was never printed and dispersed") was also
+the answer to the running "there is said to be a way to guard against
+this" hint: right after the losses, a new item appeared in `available`:
+`corpus_written` — "Write the corpus: everything you know, in plain
+quantitative Greek and Latin" — prerequisites `scientific_method` +
+`units_standards` (both of which I'd already done, apparently coincidentally,
+months before I had any idea this was the payoff). Its own text is
+unusually direct for this game: *"The largest single call on your personal
+hours in the entire game, and the one you must not cut. Write plainly and
+with numbers. The alchemists' habit of deliberate obscurity destroyed
+centuries of work."* Founder-hours cost: 6000 (versus a 2400/year personal
+budget — this alone is two and a half years of nothing but writing), a
+961-capital cost that's trivial by comparison, and a 10-year calendar
+floor. I started it immediately at year 205, too late to save the 13 techs
+already lost, but presumably in time for the next hazard window (Three
+Kingdoms fragmentation, 220-280, though that one is flagged
+`sacks_a_site: false` so maybe moot for this particular risk).
+
+This is worth calling out as the best-designed moment I've hit so far: the
+game telegraphed a real, specific, escapable danger from the very first
+`state` call, let me ignore it for a hundred years while I chased visible
+economic growth, then cashed in the consequence in a way that was painful
+but fair — and the fix was always sitting right there once I had the two
+unglamorous prerequisites (a units-of-measure standard and the scientific
+method) that I'd built for unrelated reasons. I do think the repeated,
+verbatim "you have not found it yet" line across ~15 `state` calls was more
+naggy than suspenseful in the moment-to-moment — a version that varied its
+wording, or hinted slightly harder as the risk number climbed, would have
+sold the tension better without giving away the answer.
+
+One open confusion: I still don't know what exactly a "sack" *costs* beyond
+capital and the explicit knowledge-loss lines — whether it kills staff,
+destroys a specific building, or is purely an abstraction of "you lost a
+site's worth of value." `staff_loss` in the hazard block has stayed `null`
+throughout, so either it's not modeled for this hazard or it's a fogged
+field. I'd have liked one line in the event log translating "a site is
+sacked" into what concretely changed, the way the knowledge-loss line did.
+
