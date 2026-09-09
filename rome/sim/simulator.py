@@ -2070,6 +2070,18 @@ def _agent_state(s, nodes):
     return {
         "year": s.year, "capital": round(s.capital, 1), "revenue": round(s.revenue(), 1),
         "upkeep": round(s.upkeep(), 1),
+        # A playtester watched capital fall 400 to 184 on the first step with
+        # nothing active and both revenue and upkeep reported as zero, and no
+        # field in the protocol explained where the money went. It went on food,
+        # rent, tax and keeping up appearances, which the model has always
+        # charged and never showed. Anything that moves your money should be
+        # visible in the state that claims to describe your money.
+        "living_cost": round(s.living_cost(), 1),
+        "mine_operating_cost": round(s.mine_operating_cost(), 1),
+        "net_per_year": round(s.revenue() - s.upkeep() - s.living_cost()
+                              - s.mine_operating_cost(), 1),
+        "training_pending": [{"artisan_capacity": round(c, 2), "ready_year": y}
+                             for c, y in getattr(s, "training", [])],
         "founder_hours_available": round(s.director_pool(), 1),
         "founder_alive": s.founder_alive,
         "scholars": round(s.scholars, 2), "artisans": round(s.artisans, 2),
@@ -2139,6 +2151,15 @@ def _agent_dispatch(s, nodes, cmd):
     op = cmd.get("cmd")
     ended = _agent_end_reason(s)
 
+    # One central guard rather than five. A playtester sent {"id": {"a": 1}} and
+    # the process died on `k not in nodes` with an unhashable-type TypeError,
+    # losing the whole session. A malformed command must cost you the command,
+    # never the game.
+    if "id" in cmd and not isinstance(cmd["id"], str):
+        return {"ok": False,
+                "error": "id must be a string, got %s. Nothing was changed."
+                         % type(cmd["id"]).__name__}
+
     if op == "state":
         return dict(ok=True, **_agent_state(s, nodes))
 
@@ -2147,6 +2168,8 @@ def _agent_dispatch(s, nodes, cmd):
 
     if op == "why":
         k = cmd.get("id")
+        if not isinstance(k, str):
+            return {"ok": False, "error": "id must be a string, got %s" % type(k).__name__}
         if k not in nodes:
             near = [x for x in nodes if str(k).lower() in x.lower()]
             return {"ok": False, "error": "unknown node %r. did you mean: %s"
@@ -2216,6 +2239,14 @@ def _agent_dispatch(s, nodes, cmd):
             n = float(cmd.get("n", 0))
         except (TypeError, ValueError):
             return {"ok": False, "error": "n must be a number"}
+        # A playtester passed n:-5 and got money from nothing. buy_forest(-5)
+        # computed a NEGATIVE cost, passed the affordability test because
+        # -1250 > 400 is false, then credited the capital and set forest_ha to
+        # -5, while the reply said ok:false. The refusal was reported AFTER the
+        # mutation had already happened. Validate before touching anything.
+        if not (n > 0):
+            return {"ok": False,
+                    "error": "n must be greater than zero, got %g. Nothing was changed." % n}
         if what == "forest":
             got = s.buy_forest(n)
             if got <= 0:
@@ -2256,6 +2287,12 @@ def _agent_dispatch(s, nodes, cmd):
         return {"ok": False, "error": "what must be one of: forest, mine, slaves, manumit"}
 
     if op == "step":
+        # It used to advance the clock silently after the run was over, which
+        # looks identical to a working game that has simply stopped progressing.
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s); time cannot advance. "
+                                          "Use {\"cmd\":\"state\"} to see the final position."
+                                          % ended}
         try:
             years = int(cmd.get("years", 1))
         except (TypeError, ValueError):
