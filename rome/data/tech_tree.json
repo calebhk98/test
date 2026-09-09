@@ -35765,7 +35765,7 @@
     "in2_cryostat_dewar_flask"
    ],
    "traits": [],
-   "kb": "Magnetic field aligns spins; adiabatic removal of field allows spins to disorder, cooling",
+   "kb": "30_glass_optics.md",
    "ph": 150.0,
    "lab": {
     "engineer": 500.0
@@ -35803,7 +35803,7 @@
     "in2_gyrocompass"
    ],
    "traits": [],
-   "kb": "Camera mounted on gyroscopic platform; vibration isolation allows sharp photos from aircraft",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "engineer": 420.0
@@ -35841,7 +35841,7 @@
     "in2_plane_table"
    ],
    "traits": [],
-   "kb": "Ruler with telescopic sights; sets direction on map from observation point",
+   "kb": "30_glass_optics.md",
    "ph": 45.0,
    "lab": {
     "optician": 150.0
@@ -35880,7 +35880,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Quarter-wave coating reduces reflection from 4% to <0.1% at one wavelength",
+   "kb": "30_glass_optics.md",
    "ph": 90.0,
    "lab": {
     "optician": 280.0
@@ -35917,7 +35917,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Small spirit level defines horizontal reference when sea horizon is not visible",
+   "kb": "30_glass_optics.md",
    "ph": 40.0,
    "lab": {
     "glassblower": 120.0
@@ -35953,7 +35953,7 @@
     "cap_measure_len"
    ],
    "traits": [],
-   "kb": "Known length baseline; correction for slope, temperature, tension; used as reference for triangulation",
+   "kb": "30_glass_optics.md",
    "ph": 90.0,
    "lab": {},
    "mat": {
@@ -35990,7 +35990,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Partial reflector divides light into two paths; angle selects wavelength with coatings",
+   "kb": "30_glass_optics.md",
    "ph": 70.0,
    "lab": {
     "optician": 200.0
@@ -36027,7 +36027,7 @@
     "micrometer_gauges"
    ],
    "traits": [],
-   "kb": "Blackened metal foil heated by infrared; resistance change measured",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "electrician": 250.0
@@ -36066,7 +36066,7 @@
    "traits": [
     "spectacle"
    ],
-   "kb": "Secondary convex mirror bounces light back through hole in primary",
+   "kb": "30_glass_optics.md",
    "ph": 100.0,
    "lab": {
     "optician": 350.0
@@ -36103,7 +36103,7 @@
     "cap_measure_len"
    ],
    "traits": [],
-   "kb": "66 feet (20 m) of steel links; handles at ends; numbered every 10 links",
+   "kb": "30_glass_optics.md",
    "ph": 30.0,
    "lab": {
     "smith": 100.0
@@ -36140,7 +36140,7 @@
     "in2_marine_chronometer"
    ],
    "traits": [],
-   "kb": "Lunar distance or lunar occultation gives time; chronometer rate determined",
+   "kb": "30_glass_optics.md",
    "ph": 60.0,
    "lab": {},
    "mat": {
@@ -36176,7 +36176,7 @@
     "in2_linde_cycle_expansion_engine"
    ],
    "traits": [],
-   "kb": "Expander cools more efficiently than Joule-Thomson; some gas expands to do work",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "engineer": 420.0
@@ -36214,7 +36214,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Sudden expansion cools air to supersaturation; charged particles trigger condensation trails",
+   "kb": "30_glass_optics.md",
    "ph": 140.0,
    "lab": {
     "engineer": 450.0,
@@ -36253,7 +36253,7 @@
     "in2_simple_lens"
    ],
    "traits": [],
-   "kb": "Converging lens below the sample focuses illumination and houses iris diaphragm",
+   "kb": "30_glass_optics.md",
    "ph": 45.0,
    "lab": {
     "optician": 140.0
@@ -36290,7 +36290,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Symmetrical three-element design for uniform field correction",
+   "kb": "30_glass_optics.md",
    "ph": 100.0,
    "lab": {
     "optician": 350.0
@@ -36325,7 +36325,7 @@
     "cap_heat_1600"
    ],
    "traits": [],
-   "kb": "Specimen held at fixed stress and temperature; elongation measured vs time",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "furnaceman": 400.0,
@@ -36363,7 +36363,7 @@
     "fused_quartz"
    ],
    "traits": [],
-   "kb": "Vacuum between walls; liquid nitrogen or helium maintains cryogenic temperature",
+   "kb": "30_glass_optics.md",
    "ph": 90.0,
    "lab": {
     "glassblower": 300.0,
@@ -36404,7 +36404,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Magnetic field bends particles in spiral; RF accelerates between gaps",
+   "kb": "30_glass_optics.md",
    "ph": 250.0,
    "lab": {
     "engineer": 1000.0,
@@ -36444,7 +36444,7 @@
     "in2_condenser_substage"
    ],
    "traits": [],
-   "kb": "Light cone with large angle misses objective; only scattered light enters",
+   "kb": "30_glass_optics.md",
    "ph": 70.0,
    "lab": {
     "optician": 220.0
@@ -36481,7 +36481,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Thousands of parallel grooves per mm, ruled with precision screw and diamond",
+   "kb": "30_glass_optics.md",
    "ph": 150.0,
    "lab": {
     "machinist": 500.0
@@ -36520,7 +36520,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Crown and flint glass cemented together to correct chromatic aberration",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "optician": 400.0
@@ -36558,7 +36558,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Spark or transducer emits sound pulse; reflected echo arrives after time proportional to depth",
+   "kb": "30_glass_optics.md",
    "ph": 140.0,
    "lab": {
     "electrician": 400.0
@@ -36598,7 +36598,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Electrons diffract from crystal planes; low energy gives surface sensitivity",
+   "kb": "30_glass_optics.md",
    "ph": 140.0,
    "lab": {
     "engineer": 450.0,
@@ -36639,7 +36639,7 @@
    "traits": [
     "spectacle"
    ],
-   "kb": "Vacuum tube with high voltage, electromagnetic lenses focus electron beam",
+   "kb": "30_glass_optics.md",
    "ph": 200.0,
    "lab": {
     "engineer": 800.0,
@@ -36679,7 +36679,7 @@
     "discharge_xray"
    ],
    "traits": [],
-   "kb": "Tungsten filament heated to 2700K; thermionic emission produces electron beam",
+   "kb": "30_glass_optics.md",
    "ph": 100.0,
    "lab": {
     "electrician": 350.0
@@ -36716,7 +36716,7 @@
     "electrostatics"
    ],
    "traits": [],
-   "kb": "Gold leaf suspended from high-potential conductor; repulsion angle indicates charge",
+   "kb": "30_glass_optics.md",
    "ph": 45.0,
    "lab": {
     "optician": 140.0
@@ -36753,7 +36753,7 @@
     "in2_triplet_lens"
    ],
    "traits": [],
-   "kb": "Five-element wide field eyepiece with 60-68 degree angle of view",
+   "kb": "30_glass_optics.md",
    "ph": 90.0,
    "lab": {
     "optician": 320.0
@@ -36788,7 +36788,7 @@
     "in2_simple_lens"
    ],
    "traits": [],
-   "kb": "Two plano-convex lenses separated by their focal lengths",
+   "kb": "30_glass_optics.md",
    "ph": 40.0,
    "lab": {
     "optician": 120.0
@@ -36823,7 +36823,7 @@
     "in2_doublet_lens"
    ],
    "traits": [],
-   "kb": "Plano-convex field lens and achromatic eyelens",
+   "kb": "30_glass_optics.md",
    "ph": 50.0,
    "lab": {
     "optician": 160.0
@@ -36858,7 +36858,7 @@
     "in2_triplet_lens"
    ],
    "traits": [],
-   "kb": "Triplet eyelens with wide flat field and high magnification",
+   "kb": "30_glass_optics.md",
    "ph": 70.0,
    "lab": {
     "optician": 240.0
@@ -36893,7 +36893,7 @@
     "in2_simple_lens"
    ],
    "traits": [],
-   "kb": "Two identical plano-convex lenses cemented or close-spaced",
+   "kb": "30_glass_optics.md",
    "ph": 40.0,
    "lab": {
     "optician": 120.0
@@ -36928,7 +36928,7 @@
     "motor_transformer_ac"
    ],
    "traits": [],
-   "kb": "Sample in rotating fixture; stress oscillates sinusoidally; failure recorded vs cycle count",
+   "kb": "30_glass_optics.md",
    "ph": 100.0,
    "lab": {
     "engineer": 300.0
@@ -36966,7 +36966,7 @@
     "in2_ionisation_chamber"
    ],
    "traits": [],
-   "kb": "Gas avalanche multiplication in cylindrical electrode; each ion produces 10^6 electrons",
+   "kb": "30_glass_optics.md",
    "ph": 110.0,
    "lab": {
     "electrician": 350.0
@@ -37004,7 +37004,7 @@
     "in2_theodolite"
    ],
    "traits": [],
-   "kb": "Network of triangulation points; height determined by precise levelling",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "optician": 300.0
@@ -37041,7 +37041,7 @@
     "micrometer_gauges"
    ],
    "traits": [],
-   "kb": "Mass hangs on calibrated spring; period or deflection indicates local gravity",
+   "kb": "30_glass_optics.md",
    "ph": 100.0,
    "lab": {
     "machinist": 300.0
@@ -37080,7 +37080,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Gyroscope spin axis maintains reference; precession from aircraft maneuvers indicated on dial",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "engineer": 400.0
@@ -37120,7 +37120,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Rotor spins at high speed; gravity precession aligns axis with meridian",
+   "kb": "30_glass_optics.md",
    "ph": 160.0,
    "lab": {
     "engineer": 500.0,
@@ -37160,7 +37160,7 @@
     "cap_heat_1600"
    ],
    "traits": [],
-   "kb": "Hydraulic or screw press confines sample; pressure measured by pressure gauge",
+   "kb": "30_glass_optics.md",
    "ph": 150.0,
    "lab": {
     "machinist": 450.0
@@ -37199,7 +37199,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Objective designed to work through oil between lens and coverslip; refractive index matched",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "optician": 280.0
@@ -37238,7 +37238,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Multilayer dielectric coatings create bandpass filter by coherent reflection",
+   "kb": "30_glass_optics.md",
    "ph": 110.0,
    "lab": {
     "optician": 350.0
@@ -37275,7 +37275,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Two parallel silvered surfaces; light bounces many times; sharp resonance peaks",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "optician": 420.0
@@ -37315,7 +37315,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Beam splitter divides light; mirrors reflect; recombined beams interfere",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "optician": 400.0
@@ -37352,7 +37352,7 @@
     "in2_electroscope_gold_leaf"
    ],
    "traits": [],
-   "kb": "Gas ionised by radiation; ions collected by electric field; current measured",
+   "kb": "30_glass_optics.md",
    "ph": 85.0,
    "lab": {
     "electrician": 280.0
@@ -37389,7 +37389,7 @@
     "cap_heat_1300"
    ],
    "traits": [],
-   "kb": "Gas expands through throttle; cooling is proportional to enthalpy drop",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {},
    "mat": {
@@ -37424,7 +37424,7 @@
     "in2_joule_thomson_valve"
    ],
    "traits": [],
-   "kb": "Compressed gas cools against expanding outflow; cascade stages liquefy air",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "engineer": 400.0
@@ -37460,7 +37460,7 @@
    "cat": "surveying",
    "pre": [],
    "traits": [],
-   "kb": "Magnetic needle suspended by fine quartz fiber; deflection angle measures field",
+   "kb": "30_glass_optics.md",
    "ph": 75.0,
    "lab": {
     "optician": 220.0
@@ -37498,7 +37498,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Balance spring oscillator; bimetallic compensation maintains frequency at sea temperature variation",
+   "kb": "30_glass_optics.md",
    "ph": 140.0,
    "lab": {
     "machinist": 450.0
@@ -37538,7 +37538,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Ions accelerated and deflected by magnetic field; detection plate measures trajectories",
+   "kb": "30_glass_optics.md",
    "ph": 180.0,
    "lab": {
     "engineer": 600.0,
@@ -37580,7 +37580,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "Rotating handle advances specimen by screw; produces ribbons of thin serial sections",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "machinist": 280.0
@@ -37617,7 +37617,7 @@
     "master_screw"
    ],
    "traits": [],
-   "kb": "Blade slides past specimen; spring controls thickness; produces thin sections",
+   "kb": "30_glass_optics.md",
    "ph": 60.0,
    "lab": {
     "machinist": 200.0
@@ -37654,7 +37654,7 @@
    "traits": [
     "spectacle"
    ],
-   "kb": "Flat mirror at 45 degrees directs focal point to side of tube",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "optician": 280.0
@@ -37694,7 +37694,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Electron beam deflected by electric or magnetic fields; strikes phosphor screen",
+   "kb": "30_glass_optics.md",
    "ph": 160.0,
    "lab": {
     "engineer": 550.0,
@@ -37735,7 +37735,7 @@
    "traits": [
     "spectacle"
    ],
-   "kb": "Rear convergent group and front achromat for high aperture",
+   "kb": "30_glass_optics.md",
    "ph": 90.0,
    "lab": {
     "optician": 300.0
@@ -37773,7 +37773,7 @@
    "traits": [
     "medical"
    ],
-   "kb": "Glass electrode voltage responds to hydrogen ion concentration; amplifier measures millivolts",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "electrician": 350.0,
@@ -37813,7 +37813,7 @@
    "traits": [
     "medical"
    ],
-   "kb": "Annular source and phase plate convert amplitude variations to visible contrast",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "optician": 400.0
@@ -37848,7 +37848,7 @@
     "discharge_xray"
    ],
    "traits": [],
-   "kb": "Photon ejects electron from cathode; current proportional to light intensity",
+   "kb": "30_glass_optics.md",
    "ph": 90.0,
    "lab": {
     "electrician": 300.0
@@ -37883,7 +37883,7 @@
     "in2_aerial_camera_mount"
    ],
    "traits": [],
-   "kb": "Pair of aerial photos viewed stereoscopically; parallax gives elevation; comparator measures precise positions",
+   "kb": "30_glass_optics.md",
    "ph": 100.0,
    "lab": {
     "optician": 300.0
@@ -37922,7 +37922,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Silver halide grains record particle tracks at nanometer resolution",
+   "kb": "30_glass_optics.md",
    "ph": 70.0,
    "lab": {
     "chemist": 200.0
@@ -37959,7 +37959,7 @@
     "in2_simple_lens"
    ],
    "traits": [],
-   "kb": "Light source compared to standard candle; intensity by distance inverse-square law",
+   "kb": "30_glass_optics.md",
    "ph": 50.0,
    "lab": {
     "optician": 160.0
@@ -37996,7 +37996,7 @@
     "in2_photocell_vacuum_photoelectric"
    ],
    "traits": [],
-   "kb": "Initial photocurrent amplified by secondary emission from dynode chain",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "electrician": 400.0
@@ -38031,7 +38031,7 @@
     "in2_spirit_level"
    ],
    "traits": [],
-   "kb": "Board on tripod; graphite paper and straightedge; draw map directly in field",
+   "kb": "30_glass_optics.md",
    "ph": 60.0,
    "lab": {
     "carpenter": 200.0
@@ -38071,7 +38071,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Birefringent calcite transmits one polarisation state, rejects other",
+   "kb": "30_glass_optics.md",
    "ph": 85.0,
    "lab": {
     "optician": 300.0
@@ -38109,7 +38109,7 @@
     "micrometer_gauges"
    ],
    "traits": [],
-   "kb": "Calibrated rod with mm graduations; telescope focuses on graticule; difference of sights gives height difference",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "optician": 280.0
@@ -38150,7 +38150,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Parabolic surface focuses parallel light to point; thin speculum metal or silvered glass",
+   "kb": "30_glass_optics.md",
    "ph": 140.0,
    "lab": {
     "optician": 600.0,
@@ -38192,7 +38192,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Roof-shaped prism erects image and folds light path for compact binoculars",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "optician": 280.0
@@ -38229,7 +38229,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Two 45-90-45 prisms erect image and separate exit pupils for eye relief",
+   "kb": "30_glass_optics.md",
    "ph": 75.0,
    "lab": {
     "optician": 260.0
@@ -38267,7 +38267,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Loop antenna orientation for minimum signal indicates bearing to transmitter",
+   "kb": "30_glass_optics.md",
    "ph": 110.0,
    "lab": {
     "electrician": 350.0
@@ -38305,7 +38305,7 @@
     "glass_clear"
    ],
    "traits": [],
-   "kb": "Fine lines or dots etched or photographed onto glass plate",
+   "kb": "30_glass_optics.md",
    "ph": 30.0,
    "lab": {
     "optician": 80.0
@@ -38343,7 +38343,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Master screw with diamond point advances across glass or metal; grooves separated by wavelength precision",
+   "kb": "30_glass_optics.md",
    "ph": 250.0,
    "lab": {
     "machinist": 800.0
@@ -38383,7 +38383,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Aspheric glass plate corrects spherical mirror aberrations; wide field possible",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "optician": 450.0
@@ -38420,7 +38420,7 @@
     "in2_photomultiplier_cascade_amplifier"
    ],
    "traits": [],
-   "kb": "Radiation hits crystal; fluorescence photons counted by photomultiplier",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "electrician": 400.0
@@ -38458,7 +38458,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Moving mirror superimposes sun or star images; arc angle gives latitude or distance",
+   "kb": "30_glass_optics.md",
    "ph": 110.0,
    "lab": {
     "optician": 350.0
@@ -38498,7 +38498,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Rupture diaphragm between high and low pressure gas; shock wave propagates",
+   "kb": "30_glass_optics.md",
    "ph": 180.0,
    "lab": {
     "engineer": 600.0
@@ -38537,7 +38537,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Ground and polished spherical single surface",
+   "kb": "30_glass_optics.md",
    "ph": 60.0,
    "lab": {
     "optician": 200.0
@@ -38574,7 +38574,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Weighted rope marked every fathom; bottom sample in cavity of lead",
+   "kb": "30_glass_optics.md",
    "ph": 35.0,
    "lab": {
     "sailor": 100.0
@@ -38612,7 +38612,7 @@
     "in2_photomultiplier_cascade_amplifier"
    ],
    "traits": [],
-   "kb": "Spectrum dispersed by grating; many photocells measure intensity at different wavelengths",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "electrician": 420.0
@@ -38650,7 +38650,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Diffraction grating disperses light; objective focuses higher orders onto plate",
+   "kb": "30_glass_optics.md",
    "ph": 110.0,
    "lab": {
     "optician": 350.0
@@ -38690,7 +38690,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Prism disperses light; objective focuses spectrum onto photographic plate",
+   "kb": "30_glass_optics.md",
    "ph": 85.0,
    "lab": {
     "optician": 300.0
@@ -38725,7 +38725,7 @@
     "cap_tol_1mm"
    ],
    "traits": [],
-   "kb": "Curved tube 90% filled with alcohol; bubble indicates deviation from horizontal",
+   "kb": "30_glass_optics.md",
    "ph": 50.0,
    "lab": {
     "glassblower": 150.0
@@ -38763,7 +38763,7 @@
     "vacuum_tube"
    ],
    "traits": [],
-   "kb": "Wheatstone bridge with strain gauge and vacuum tube amplifier measures tiny resistance changes",
+   "kb": "30_glass_optics.md",
    "ph": 120.0,
    "lab": {
     "electrician": 400.0,
@@ -38802,7 +38802,7 @@
     "copper_refining"
    ],
    "traits": [],
-   "kb": "Wire resistance changes with strain; stretched wire has higher resistance",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "machinist": 250.0
@@ -38841,7 +38841,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "Theodolite with special stadia reticle; staff reading gives distance directly",
+   "kb": "30_glass_optics.md",
    "ph": 80.0,
    "lab": {
     "optician": 280.0
@@ -38878,7 +38878,7 @@
     "cap_measure_len"
    ],
    "traits": [],
-   "kb": "100-300 feet steel tape; tension handle and brake; gradient mark for slope distance",
+   "kb": "30_glass_optics.md",
    "ph": 40.0,
    "lab": {
     "smith": 130.0
@@ -38915,7 +38915,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Converging front, diverging rear, makes focal length exceed physical length",
+   "kb": "30_glass_optics.md",
    "ph": 85.0,
    "lab": {
     "optician": 250.0
@@ -38952,7 +38952,7 @@
    "traits": [
     "spectacle"
    ],
-   "kb": "Four-element design with cemented doublet",
+   "kb": "30_glass_optics.md",
    "ph": 110.0,
    "lab": {
     "optician": 380.0
@@ -38990,7 +38990,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Telescope with two perpendicular rotating circles; horizontal and vertical angles",
+   "kb": "30_glass_optics.md",
    "ph": 100.0,
    "lab": {
     "optician": 350.0
@@ -39030,7 +39030,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Long water channel; model on carriage; drag measured against water balance",
+   "kb": "30_glass_optics.md",
    "ph": 140.0,
    "lab": {
     "engineer": 450.0
@@ -39068,7 +39068,7 @@
     "in2_theodolite"
    ],
    "traits": [],
-   "kb": "Stable tripod with fixed marks for theodolite centering",
+   "kb": "30_glass_optics.md",
    "ph": 40.0,
    "lab": {
     "carpenter": 120.0
@@ -39108,7 +39108,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Three-glass combination corrects to secondary spectrum",
+   "kb": "30_glass_optics.md",
    "ph": 180.0,
    "lab": {
     "optician": 600.0
@@ -39146,7 +39146,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "Rotor spins at 100,000 rpm; centrifugal field separates molecules by size",
+   "kb": "30_glass_optics.md",
    "ph": 180.0,
    "lab": {
     "engineer": 600.0,
@@ -39186,7 +39186,7 @@
    "traits": [
     "spectacle"
    ],
-   "kb": "Intense line source illuminates specimen at high angle; Tyndall scattering visible",
+   "kb": "30_glass_optics.md",
    "ph": 85.0,
    "lab": {
     "optician": 300.0
@@ -39226,7 +39226,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Moving belt transfers charge to dome; voltage accumulates; sparks at high voltage",
+   "kb": "30_glass_optics.md",
    "ph": 200.0,
    "lab": {
     "engineer": 700.0,
@@ -39267,7 +39267,7 @@
     "cap_power_electric"
    ],
    "traits": [],
-   "kb": "Armature driven by AC field; table oscillates at mains frequency; amplitude controlled",
+   "kb": "30_glass_optics.md",
    "ph": 110.0,
    "lab": {
     "engineer": 350.0
@@ -39308,7 +39308,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Anisotropic crystal retards one polarisation by fraction of wavelength",
+   "kb": "30_glass_optics.md",
    "ph": 70.0,
    "lab": {
     "optician": 200.0
@@ -39345,7 +39345,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Reversed Petzval or symmetrical design, focal length shorter than image diagonal",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "optician": 400.0
@@ -39383,7 +39383,7 @@
    "traits": [
     "military"
    ],
-   "kb": "Contoured duct delivers uniform flow; model attached; forces measured by balance",
+   "kb": "30_glass_optics.md",
    "ph": 150.0,
    "lab": {
     "engineer": 500.0,
@@ -39425,7 +39425,7 @@
    "traits": [
     "information"
    ],
-   "kb": "X-rays diffract from crystal planes; angles and intensities reveal atomic structure",
+   "kb": "30_glass_optics.md",
    "ph": 130.0,
    "lab": {
     "optician": 400.0,
@@ -80967,7 +80967,7 @@
    "traits": [
     "information"
    ],
-   "kb": "(x + y)\u207f expands to a sum of terms with binomial coefficients C(n,k)",
+   "kb": "60_mathematics_method.md",
    "ph": 90.0,
    "lab": {
     "scribe": 170.0
@@ -81004,7 +81004,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Quadratics always have solutions in complex numbers; polar form re^(i\u03b8); Euler's e^(i\u03b8) = cos \u03b8 + i sin \u03b8",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {
     "scribe": 200.0
@@ -81039,7 +81039,7 @@
    "traits": [
     "information"
    ],
-   "kb": "det(A) = 0 means A is singular (non-invertible); A\u207b\u00b9 exists if det(A) \u2260 0",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {
     "scribe": 200.0
@@ -81076,7 +81076,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Sum of infinitely many terms: 1 + 1/2 + 1/4 + ... = 2; when does it converge?",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {
     "scribe": 180.0
@@ -81111,7 +81111,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "Given n points, unique polynomial of degree n-1 passes through them; Newton forward differences for tables",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -81147,7 +81147,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Minimize sum of squared errors between data points and model; normal equations from setting derivatives to zero",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {},
    "mat": {},
@@ -81182,7 +81182,7 @@
    "traits": [
     "information"
    ],
-   "kb": "If b^x = a, then log_b(a) = x; rules: log(xy) = log(x) + log(y)",
+   "kb": "60_mathematics_method.md",
    "ph": 70.0,
    "lab": {
     "scribe": 140.0
@@ -81219,7 +81219,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Rectangular arrays of numbers; AB is not the same as BA; determinant measures invertibility",
+   "kb": "60_mathematics_method.md",
    "ph": 130.0,
    "lab": {
     "scribe": 240.0
@@ -81256,7 +81256,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "Algorithms to find roots or solve equations when closed forms do not exist; choosing method depends on smoothness and number of solutions",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {},
    "mat": {},
@@ -81291,7 +81291,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Expressions like x\u00b3 - 6x\u00b2 + 11x - 6 = (x-1)(x-2)(x-3); finding roots",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {
     "scribe": 180.0
@@ -81328,7 +81328,7 @@
    "traits": [
     "information"
    ],
-   "kb": "ax\u00b2 + bx + c = 0 has solution x = (-b \u00b1 \u221a(b\u00b2 - 4ac)) / 2a",
+   "kb": "60_mathematics_method.md",
    "ph": 80.0,
    "lab": {
     "scribe": 150.0
@@ -81365,7 +81365,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Using letters for unknown quantities; rules for manipulating equations",
+   "kb": "60_mathematics_method.md",
    "ph": 60.0,
    "lab": {
     "scribe": 120.0
@@ -81400,7 +81400,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Generalizing scalars, vectors, matrices; stress is a tensor (force per unit area in each direction)",
+   "kb": "60_mathematics_method.md",
    "ph": 180.0,
    "lab": {
     "scribe": 300.0
@@ -81437,7 +81437,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Directed quantities; dot product a\u00b7b = |a||b|cos(angle); cross product a\u00d7b perpendicular to both",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {
     "scribe": 220.0
@@ -81474,7 +81474,7 @@
    "traits": [
     "information"
    ],
-   "kb": "f'(x) = lim[h\u21920] (f(x+h) - f(x)) / h; rules: product, chain, quotient",
+   "kb": "60_mathematics_method.md",
    "ph": 140.0,
    "lab": {
     "scribe": 240.0
@@ -81509,7 +81509,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Any periodic function is a sum of sines and cosines with the right amplitudes and phases",
+   "kb": "60_mathematics_method.md",
    "ph": 160.0,
    "lab": {
     "scribe": 280.0
@@ -81544,7 +81544,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Generalizing Fourier series to non-periodic signals; converting between time and frequency domains",
+   "kb": "60_mathematics_method.md",
    "ph": 170.0,
    "lab": {
     "scribe": 290.0
@@ -81579,7 +81579,7 @@
    "traits": [
     "information"
    ],
-   "kb": "d/dx \u222bf = f and \u222bdf/dx = f; connects rate of change to total change",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {
     "scribe": 150.0
@@ -81614,7 +81614,7 @@
    "traits": [
     "information"
    ],
-   "kb": "\u222bf(x)dx is the area under f; fundamental theorem: antiderivative of f has derivative f",
+   "kb": "60_mathematics_method.md",
    "ph": 150.0,
    "lab": {
     "scribe": 250.0
@@ -81651,7 +81651,7 @@
    "traits": [
     "information"
    ],
-   "kb": "As x \u2192 a, f(x) \u2192 L means values cluster arbitrarily close to L; formal: for any \u03b5 > 0, choose \u03b4 > 0 such that |x - a| < \u03b4 implies |f(x) - L| < \u03b5",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {
     "scribe": 200.0
@@ -81688,7 +81688,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Equations like y' = -ky describe decay or growth; separation of variables, integrating factors",
+   "kb": "60_mathematics_method.md",
    "ph": 150.0,
    "lab": {
     "scribe": 250.0
@@ -81723,7 +81723,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Equations with derivatives with respect to multiple variables; heat, wave, Laplace equations",
+   "kb": "60_mathematics_method.md",
    "ph": 200.0,
    "lab": {
     "scribe": 300.0
@@ -81758,7 +81758,7 @@
    "traits": [
     "information"
    ],
-   "kb": "All are second-degree equations ax\u00b2 + bxy + cy\u00b2 + dx + ey + f = 0; eccentricity e determines shape",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {
     "scribe": 180.0
@@ -81796,7 +81796,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Representing curves as equations: circle is x\u00b2 + y\u00b2 = r\u00b2; line is ax + by + c = 0",
+   "kb": "60_mathematics_method.md",
    "ph": 80.0,
    "lab": {
     "scribe": 150.0
@@ -81831,7 +81831,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Three orthographic views (top, front, side) fully describe a 3D object; sections; auxiliary views",
+   "kb": "60_mathematics_method.md",
    "ph": 130.0,
    "lab": {
     "engineer": 220.0,
@@ -81869,7 +81869,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Curvature, torsion, geodesics, Gaussian curvature, first and second fundamental forms",
+   "kb": "60_mathematics_method.md",
    "ph": 170.0,
    "lab": {},
    "mat": {},
@@ -81902,7 +81902,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Gauss, Lobachevsky, Riemann: parallel postulate is independent; curved spaces have their own geometry",
+   "kb": "60_mathematics_method.md",
    "ph": 150.0,
    "lab": {},
    "mat": {},
@@ -81936,7 +81936,7 @@
     "military",
     "commerce"
    ],
-   "kb": "Solving triangles on a sphere; great circles; spherical excess; rhumb line vs. geodesic",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {},
    "mat": {},
@@ -81971,7 +81971,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "sin, cos, tan; inverse functions; tables for every degree or tenth of degree; identities like sin\u00b2 + cos\u00b2 = 1",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {
     "scribe": 80.0
@@ -82008,7 +82008,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Footnote naming source of idea or fact; enables tracking influence and crediting prior work",
+   "kb": "",
    "ph": 80.0,
    "lab": {
     "scribe": 160.0
@@ -82043,7 +82043,7 @@
     "information",
     "labour_saving"
    ],
-   "kb": "Planned sequence of courses building toward degree; prerequisites ensure logical progression",
+   "kb": "",
    "ph": 120.0,
    "lab": {},
    "mat": {},
@@ -82075,7 +82075,7 @@
    "traits": [
     "information"
    ],
-   "kb": "PhD requires original research contribution; defended before experts; credential for independent researcher",
+   "kb": "",
    "ph": 150.0,
    "lab": {},
    "mat": {},
@@ -82107,7 +82107,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Written or oral test to verify mastery; degree or certificate signals to employers",
+   "kb": "",
    "ph": 80.0,
    "lab": {},
    "mat": {
@@ -82141,7 +82141,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Government or foundation grants money for specific research goals; researcher proposes, peer review decides",
+   "kb": "",
    "ph": 120.0,
    "lab": {},
    "mat": {},
@@ -82175,7 +82175,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Monthly or quarterly publication of peer-reviewed articles with title, methods, results, discussion",
+   "kb": "",
    "ph": 110.0,
    "lab": {
     "scribe": 150.0
@@ -82213,7 +82213,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Membership of scientists; regular meetings; publications; elect fellows; set standards",
+   "kb": "",
    "ph": 100.0,
    "lab": {},
    "mat": {
@@ -82249,7 +82249,7 @@
    "traits": [
     "commerce"
    ],
-   "kb": "Technical description filed with government; grants monopoly for term; requires disclosure of how it works",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "scribe": 200.0
@@ -82283,7 +82283,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Editor sends manuscript to expert referees anonymously; accepts or rejects based on review",
+   "kb": "",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -82315,7 +82315,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Senior scientist leads team of postdocs and students; collective work; shared credit",
+   "kb": "",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -82348,7 +82348,7 @@
     "information",
     "labour_saving"
    ],
-   "kb": "Book that teaches subject from first principles; worked examples; exercises with answers",
+   "kb": "",
    "ph": 200.0,
    "lab": {
     "scholar": 400.0,
@@ -82387,7 +82387,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Manipulate one variable (treatment), hold others constant, measure outcome; compare to control",
+   "kb": "",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -82419,7 +82419,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Propose specific prediction from theory; design experiment to test it; null hypothesis is baseline",
+   "kb": "",
    "ph": 90.0,
    "lab": {},
    "mat": {},
@@ -82453,7 +82453,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Daily record of observations, conditions, calculations, false starts; dated, sequential, no erasure",
+   "kb": "",
    "ph": 70.0,
    "lab": {},
    "mat": {
@@ -82487,7 +82487,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Experiment where predicted effect did not occur; equally valid as positive, often more informative",
+   "kb": "",
    "ph": 90.0,
    "lab": {},
    "mat": {},
@@ -82521,7 +82521,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Colleagues check logic, methods, calculations; public critique in meetings or correspondence",
+   "kb": "",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -82553,7 +82553,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Another researcher, different time and place, obtains same results with same methods",
+   "kb": "",
    "ph": 80.0,
    "lab": {},
    "mat": {},
@@ -82587,7 +82587,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Tenths, hundredths, thousandths as a continuation of positional notation past zero",
+   "kb": "60_mathematics_method.md",
    "ph": 45.0,
    "lab": {
     "scribe": 90.0
@@ -82622,7 +82622,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Standardizing a marker between whole and fractional parts",
+   "kb": "60_mathematics_method.md",
    "ph": 20.0,
    "lab": {
     "scribe": 40.0
@@ -82659,7 +82659,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Treating dimensions as algebraic quantities; force = mass times acceleration means newtons = kg\u22c5m/s\u00b2",
+   "kb": "60_mathematics_method.md",
    "ph": 70.0,
    "lab": {
     "engineer": 150.0
@@ -82696,7 +82696,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Symbol = means both sides have the same value",
+   "kb": "60_mathematics_method.md",
    "ph": 30.0,
    "lab": {
     "scribe": 60.0
@@ -82733,7 +82733,7 @@
    "traits": [
     "information"
    ],
-   "kb": "If x has uncertainty \u0394x and y = f(x), then \u0394y = |df/dx| \u0394x; rules for multiple variables",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {
     "engineer": 250.0
@@ -82768,7 +82768,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Small superscript numbers for powers; x squared is x\u00b2",
+   "kb": "60_mathematics_method.md",
    "ph": 45.0,
    "lab": {
     "scribe": 90.0
@@ -82807,7 +82807,7 @@
    "traits": [
     "infrastructure"
    ],
-   "kb": "Decimal prefixes; base 10 throughout; no accidents like 12 inches to a foot",
+   "kb": "60_mathematics_method.md",
    "ph": 80.0,
    "lab": {
     "engineer": 200.0,
@@ -82847,7 +82847,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Numbers less than zero; rules for addition and multiplication",
+   "kb": "60_mathematics_method.md",
    "ph": 50.0,
    "lab": {
     "scribe": 100.0
@@ -82884,7 +82884,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Standardized marks for operations instead of words",
+   "kb": "60_mathematics_method.md",
    "ph": 35.0,
    "lab": {
     "scribe": 70.0
@@ -82919,7 +82919,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Digits hold different values by position; ten is one and zero",
+   "kb": "60_mathematics_method.md",
    "ph": 0.0,
    "lab": {},
    "mat": {},
@@ -82952,7 +82952,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Radical sign \u221a for square, cube, and nth roots",
+   "kb": "60_mathematics_method.md",
    "ph": 40.0,
    "lab": {
     "scribe": 80.0
@@ -82987,7 +82987,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Writing 0.0000314 as 3.14 \u00d7 10\u207b\u2075 or 3.14 E-5",
+   "kb": "60_mathematics_method.md",
    "ph": 60.0,
    "lab": {
     "scribe": 120.0
@@ -83025,7 +83025,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Recording measurement uncertainty by digit count; multiplication and division rules for combining measurements",
+   "kb": "60_mathematics_method.md",
    "ph": 90.0,
    "lab": {
     "chemist": 200.0,
@@ -83063,7 +83063,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Zero is a digit, not absence",
+   "kb": "60_mathematics_method.md",
    "ph": 40.0,
    "lab": {
     "scribe": 80.0
@@ -83098,7 +83098,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Sound speed v = \u221a(K/\u03c1) where K is bulk modulus; intensity I = (1/2) \u03c1 v (p0)\u00b2",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "engineer": 220.0
@@ -83135,7 +83135,7 @@
     "military",
     "labour_saving"
    ],
-   "kb": "Pressure difference between upper and lower surfaces due to velocity difference; L = (1/2) \u03c1 v\u00b2 A CL",
+   "kb": "",
    "ph": 130.0,
    "lab": {
     "engineer": 240.0
@@ -83169,7 +83169,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Energy density u(\u03bd,T) = (8\u03c0h\u03bd\u00b3/c\u00b3) / (exp(h\u03bd/kT) - 1); Rayleigh-Jeans fails at high \u03bd",
+   "kb": "",
    "ph": 140.0,
    "lab": {
     "scribe": 250.0
@@ -83203,7 +83203,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Probability of state with energy E is proportional to exp(-E/kT); explains chemical equilibrium",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "scribe": 220.0
@@ -83237,7 +83237,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Light bends around edges and slits; diffraction grating has many slits for high resolution",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "optician": 240.0
@@ -83271,7 +83271,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Stress \u03c3 = F/A (force per area); strain \u03b5 = \u0394L/L (fractional change); E = \u03c3/\u03b5 (Young's modulus)",
+   "kb": "",
    "ph": 110.0,
    "lab": {
     "engineer": 210.0
@@ -83307,7 +83307,7 @@
    "traits": [
     "information"
    ],
-   "kb": "F = k q1 q2 / r\u00b2; like gravity but for electric charge; field E = F/q",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "scribe": 190.0
@@ -83342,7 +83342,7 @@
     "military",
     "information"
    ],
-   "kb": "Oscillating E and B fields perpendicular to each other and direction of travel; speed c = 1/\u221a(\u03b50 \u03bc0)",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "scribe": 220.0
@@ -83378,7 +83378,7 @@
    "traits": [
     "information"
    ],
-   "kb": "KE = (1/2) m v\u00b2; PE = mgh; energy is conserved when forces are conservative",
+   "kb": "",
    "ph": 110.0,
    "lab": {
     "scribe": 200.0
@@ -83412,7 +83412,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Pressure P = \u03c1 g h (density times gravity times depth); Archimedes' principle",
+   "kb": "",
    "ph": 80.0,
    "lab": {
     "engineer": 160.0
@@ -83449,7 +83449,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Light travels in straight rays; reflects at angle of incidence; refracts by Snell's law n1 sin \u03b81 = n2 sin \u03b82",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "optician": 200.0
@@ -83483,7 +83483,7 @@
    "traits": [
     "information"
    ],
-   "kb": "F = G m1 m2 / r\u00b2; same law governs apples and planets",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "scribe": 180.0
@@ -83519,7 +83519,7 @@
    "traits": [
     "information"
    ],
-   "kb": "P + (1/2) \u03c1 v\u00b2 + \u03c1 g h = constant along streamline; relates pressure, velocity, height",
+   "kb": "",
    "ph": 130.0,
    "lab": {
     "engineer": 240.0
@@ -83553,7 +83553,7 @@
    "traits": [
     "information"
    ],
-   "kb": "v = dx/dt; a = dv/dt; for constant acceleration, x = x0 + v0*t + (1/2)*a*t\u00b2",
+   "kb": "",
    "ph": 90.0,
    "lab": {
     "scribe": 170.0
@@ -83589,7 +83589,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Gas pressure is momentum transfer from colliding molecules; P = (1/3) \u03c1 <v\u00b2>; explains ideal gas law",
+   "kb": "",
    "ph": 130.0,
    "lab": {
     "scribe": 240.0
@@ -83625,7 +83625,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Magnetic field B; dipole moment m; torque \u03c4 = m \u00d7 B; force on current F = I L \u00d7 B",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "scribe": 190.0
@@ -83661,7 +83661,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Four equations unify electricity, magnetism, and light; predict electromagnetic waves",
+   "kb": "",
    "ph": 140.0,
    "lab": {
     "scribe": 260.0
@@ -83695,7 +83695,7 @@
    "traits": [
     "information"
    ],
-   "kb": "p = mv; dp/dt = F; momentum is conserved when external forces are zero",
+   "kb": "",
    "ph": 80.0,
    "lab": {
     "scribe": 150.0
@@ -83729,7 +83729,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Neutral nuclear particle; mass nearly equals proton; Chadwick proved (1932) from alpha bombardment",
+   "kb": "",
    "ph": 110.0,
    "lab": {
     "scribe": 200.0
@@ -83764,7 +83764,7 @@
     "military",
     "labour_saving"
    ],
-   "kb": "1) No force, no change. 2) F = ma. 3) Action equals reaction",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "scribe": 180.0
@@ -83799,7 +83799,7 @@
     "military",
     "energy"
    ],
-   "kb": "Heavy nucleus splits into fragments; releases neutrons and 200 MeV; self-sustaining chain if k > 1",
+   "kb": "",
    "ph": 140.0,
    "lab": {
     "scribe": 260.0
@@ -83833,7 +83833,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Rutherford showed atoms have tiny dense nuclei; three types of radiation (alpha, beta, gamma)",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "scribe": 220.0
@@ -83867,7 +83867,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Light knocks electrons from metal; E = h\u03bd - \u03c6 (work function); proves photon hypothesis",
+   "kb": "",
    "ph": 110.0,
    "lab": {
     "scholar": 210.0,
@@ -83904,7 +83904,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Light is quantised in packets of energy E = h\u03bd; Planck constant h = 6.626 \u00d7 10^-34 J\u22c5s",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "scribe": 220.0
@@ -83938,7 +83938,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Re = (\u03c1 v L) / \u03b7; low Re is viscous (creeping) flow, high Re is turbulent",
+   "kb": "",
    "ph": 110.0,
    "lab": {
     "engineer": 200.0
@@ -83974,7 +83974,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Radio waves, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays; all c/\u03bb = f",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "scribe": 200.0
@@ -84008,7 +84008,7 @@
    "traits": [
     "information"
    ],
-   "kb": "c \u2248 3 \u00d7 10^8 m/s; same in all inertial reference frames; appears in E = mc\u00b2",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "scribe": 190.0
@@ -84042,7 +84042,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "Leverage, moments, center of gravity; force balance and moment balance",
+   "kb": "",
    "ph": 0.0,
    "lab": {},
    "mat": {},
@@ -84076,7 +84076,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Macroscopic properties from microstate probabilities; Boltzmann distribution P(E) ~ exp(-E/kT)",
+   "kb": "",
    "ph": 160.0,
    "lab": {
     "scribe": 280.0
@@ -84110,7 +84110,7 @@
    "traits": [
     "information"
    ],
-   "kb": "\u0394x \u00b7 \u0394p \u2265 \u210f/2; cannot know position and momentum simultaneously with arbitrary precision",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "scribe": 220.0
@@ -84144,7 +84144,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Shear stress \u03c4 = \u03b7 (dv/dy); viscosity \u03b7 depends on fluid and temperature; Stokes drag",
+   "kb": "",
    "ph": 120.0,
    "lab": {
     "engineer": 220.0
@@ -84178,7 +84178,7 @@
    "traits": [
     "information"
    ],
-   "kb": "\u03a8(x,t) is wave function; |\u03a8|\u00b2 is probability density; i\u210f \u2202\u03a8/\u2202t = -\u210f\u00b2/2m \u2207\u00b2\u03a8 + V \u03a8",
+   "kb": "",
    "ph": 180.0,
    "lab": {
     "scribe": 320.0
@@ -84214,7 +84214,7 @@
    "traits": [
     "information"
    ],
-   "kb": "\u2202\u00b2u/\u2202t\u00b2 = v\u00b2 \u2202\u00b2u/\u2202x\u00b2; solutions are traveling and standing waves",
+   "kb": "",
    "ph": 130.0,
    "lab": {
     "scribe": 240.0
@@ -84250,7 +84250,7 @@
     "labour_saving",
     "information"
    ],
-   "kb": "Work W = F \u00b7 d (force dot displacement); power P = dW/dt; efficiency = output/input",
+   "kb": "",
    "ph": 100.0,
    "lab": {
     "engineer": 200.0
@@ -84284,7 +84284,7 @@
    "traits": [
     "information"
    ],
-   "kb": "P(A or B) = P(A) + P(B) - P(A and B); P(A|B) = P(A and B)/P(B); Bayes' theorem",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -84317,7 +84317,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Sum of many independent random variables is approximately normal, regardless of their individual distributions",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {},
    "mat": {},
@@ -84352,7 +84352,7 @@
    "traits": [
     "information"
    ],
-   "kb": "nPr = n!/(n-r)!, nCr = n!/(r!(n-r)!); binomial coefficients C(n,k)",
+   "kb": "60_mathematics_method.md",
    "ph": 80.0,
    "lab": {},
    "mat": {},
@@ -84385,7 +84385,7 @@
    "traits": [
     "information"
    ],
-   "kb": "f(x) = (1/(\u03c3\u221a(2\u03c0))) exp(-(x-\u03bc)\u00b2/(2\u03c3\u00b2)); most natural distribution for sums of independent errors",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {},
    "mat": {},
@@ -84418,7 +84418,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Partitions variance into groups and residuals; F-test whether group means differ",
+   "kb": "60_mathematics_method.md",
    "ph": 140.0,
    "lab": {},
    "mat": {},
@@ -84451,7 +84451,7 @@
    "traits": [
     "medical"
    ],
-   "kb": "Neither subject nor experimenter knows who got treatment; reveals biases in observation and reporting",
+   "kb": "60_mathematics_method.md",
    "ph": 90.0,
    "lab": {},
    "mat": {},
@@ -84484,7 +84484,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Divide subjects into homogeneous blocks, randomise within block, to reduce variance from known confounders",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -84517,7 +84517,7 @@
    "traits": [
     "information"
    ],
-   "kb": "95% CI is estimate \u00b1 1.96 SE; if we repeat the survey 100 times, about 95 contain the true value",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -84550,7 +84550,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "Plot process output over time with control limits (\u03bc \u00b1 3\u03c3); trends or excursions signal problems",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {
     "engineer": 200.0
@@ -84587,7 +84587,7 @@
    "traits": [
     "medical"
    ],
-   "kb": "Run the same experiment without treatment to measure placebo effect and natural variation",
+   "kb": "60_mathematics_method.md",
    "ph": 70.0,
    "lab": {},
    "mat": {},
@@ -84620,7 +84620,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Pearson r = \u03a3(x-\u03bcx)(y-\u03bcy) / (n \u03c3x \u03c3y); r ranges from -1 to +1; r\u00b2 is fraction of variance explained",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -84655,7 +84655,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Mean \u03bc = sum/n; variance \u03c3\u00b2 = average squared deviation; standard deviation \u03c3 = \u221a(variance)",
+   "kb": "60_mathematics_method.md",
    "ph": 60.0,
    "lab": {},
    "mat": {},
@@ -84690,7 +84690,7 @@
    "traits": [
     "commerce"
    ],
-   "kb": "Probability of death at each age; lx survivors at age x; ex life expectancy",
+   "kb": "60_mathematics_method.md",
    "ph": 100.0,
    "lab": {},
    "mat": {},
@@ -84723,7 +84723,7 @@
    "traits": [
     "information"
    ],
-   "kb": "Assigning subjects to treatment or control by random mechanism ensures balance on unknown confounders",
+   "kb": "60_mathematics_method.md",
    "ph": 80.0,
    "lab": {},
    "mat": {},
@@ -84756,7 +84756,7 @@
    "traits": [
     "labour_saving"
    ],
-   "kb": "y = a + bx where b = r(\u03c3y/\u03c3x); minimizes squared vertical distances",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {},
    "mat": {},
@@ -84789,7 +84789,7 @@
    "traits": [
     "information"
    ],
-   "kb": "SE = \u03c3/\u221an; determines precision of sample mean estimate; confidence interval is mean \u00b1 t*SE",
+   "kb": "60_mathematics_method.md",
    "ph": 110.0,
    "lab": {},
    "mat": {},
@@ -84822,7 +84822,7 @@
    "traits": [
     "information"
    ],
-   "kb": "p is probability of data if null hypothesis is true; p < 0.05 usually means reject null",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {},
    "mat": {},
@@ -84855,7 +84855,7 @@
    "traits": [
     "information"
    ],
-   "kb": "t = (mean1 - mean2) / (SE of difference); compares two small samples",
+   "kb": "60_mathematics_method.md",
    "ph": 120.0,
    "lab": {},
    "mat": {},

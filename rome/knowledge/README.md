@@ -23,11 +23,11 @@ in this directory, read that one.
 | [`00_NONOBVIOUS_TRICKS.md`](00_NONOBVIOUS_TRICKS.md) | The tricks that make everything else buildable. READ FIRST. | 0 | 0 |
 | [`10_metallurgy.md`](10_metallurgy.md) | Metallurgy, fuel and refractories | 19 | 188 |
 | [`20_chemistry.md`](20_chemistry.md) | Chemistry, acids, alkalis and energetics | 16 | 198 |
-| [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 84 |
+| [`30_glass_optics.md`](30_glass_optics.md) | Glass, optics and scientific instruments | 17 | 181 |
 | [`40_power_precision.md`](40_power_precision.md) | Prime movers, machine tools and precision | 21 | 246 |
 | [`50_electricity.md`](50_electricity.md) | Electricity, magnetism and electrical machines | 15 | 206 |
 | [`55_semiconductors.md`](55_semiconductors.md) | Vacuum, high purity and semiconductors | 13 | 17 |
-| [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 11 |
+| [`60_mathematics_method.md`](60_mathematics_method.md) | Mathematics, physics and the scientific method | 13 | 72 |
 | [`70_medicine_biology.md`](70_medicine_biology.md) | Medicine, public health and biology | 13 | 157 |
 | [`75_agriculture_food.md`](75_agriculture_food.md) | Agriculture, food and surplus | 12 | 63 |
 | [`80_information_printing.md`](80_information_printing.md) | Paper, printing and the survival of knowledge | 11 | 64 |
@@ -479,6 +479,23 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `camera_obscura` | 1 | 120.0 | [`camera_obscura_photography`](30_glass_optics.md#camera_obscura_photography---camera-obscura-and-silver-halide-photography) |
 | `glass_bead_microscope` | 1 | 300.0 | [`glass_bead_microscope`](30_glass_optics.md#glass_bead_microscope---bead-microscope) |
 | `glass_clear` | 1 | 400.0 | [`glass_clear_cristallo`](30_glass_optics.md#glass_clear_cristallo---clear-glass-vitrum) |
+| `in2_alidade_ruler` | 1 | 45.0 | _(module has no anchor)_ |
+| `in2_artificial_horizon_bubble` | 1 | 40.0 | _(module has no anchor)_ |
+| `in2_chain_surveyor` | 1 | 30.0 | _(module has no anchor)_ |
+| `in2_chronometer_rate_check` | 1 | 60.0 | _(module has no anchor)_ |
+| `in2_condenser_substage` | 1 | 45.0 | _(module has no anchor)_ |
+| `in2_electroscope_gold_leaf` | 1 | 45.0 | _(module has no anchor)_ |
+| `in2_eyepiece_huygens` | 1 | 40.0 | _(module has no anchor)_ |
+| `in2_eyepiece_kellner` | 1 | 50.0 | _(module has no anchor)_ |
+| `in2_eyepiece_ramsden` | 1 | 40.0 | _(module has no anchor)_ |
+| `in2_microtome_sliding` | 1 | 60.0 | _(module has no anchor)_ |
+| `in2_photometer_visual_comparison` | 1 | 50.0 | _(module has no anchor)_ |
+| `in2_plane_table` | 1 | 60.0 | _(module has no anchor)_ |
+| `in2_reticle_crosshair` | 1 | 30.0 | _(module has no anchor)_ |
+| `in2_sounding_machine_lead_line` | 1 | 35.0 | _(module has no anchor)_ |
+| `in2_spirit_level` | 1 | 50.0 | _(module has no anchor)_ |
+| `in2_tape_measure_steel` | 1 | 40.0 | _(module has no anchor)_ |
+| `in2_triangulation_tripod_station` | 1 | 40.0 | _(module has no anchor)_ |
 | `lens_grinding` | 1 | 600.0 | [`lens_grinding`](30_glass_optics.md#lens_grinding---grinding-and-polishing-lenses) |
 | `mirror_amalgam` | 1 | 350.0 | [`mirrors_amalgam`](30_glass_optics.md#mirrors_amalgam---tin-mercury-amalgam-mirror-later-venetian-mirror) |
 | `opt_anemometer` | 1 | 60.0 | _(module has no anchor)_ |
@@ -495,6 +512,44 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `balance_analytical` | 2 | 700.0 | [`balance_analytical`](30_glass_optics.md#balance_analytical---analytical-balance-milligram-precision) |
 | `barometer` | 2 | 200.0 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
 | `glass_labware` | 2 | 500.0 | [`glass_lab_ware`](30_glass_optics.md#glass_lab_ware---laboratory-glassware) |
+| `in2_antireflection_coating` | 2 | 90.0 | _(module has no anchor)_ |
+| `in2_baseline_measurement_apparatus` | 2 | 90.0 | _(module has no anchor)_ |
+| `in2_beam_splitter` | 2 | 70.0 | _(module has no anchor)_ |
+| `in2_bolometer_thermal_detector` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_cassegrain_reflector` | 2 | 100.0 | _(module has no anchor)_ |
+| `in2_cooke_triplet_photography` | 2 | 100.0 | _(module has no anchor)_ |
+| `in2_cryostat_dewar_flask` | 2 | 90.0 | _(module has no anchor)_ |
+| `in2_dark_field_condenser` | 2 | 70.0 | _(module has no anchor)_ |
+| `in2_doublet_lens` | 2 | 120.0 | _(module has no anchor)_ |
+| `in2_eyepiece_erfle` | 2 | 90.0 | _(module has no anchor)_ |
+| `in2_eyepiece_orthoscopic` | 2 | 70.0 | _(module has no anchor)_ |
+| `in2_fatigue_machine` | 2 | 100.0 | _(module has no anchor)_ |
+| `in2_immersion_objective_oil` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_ionisation_chamber` | 2 | 85.0 | _(module has no anchor)_ |
+| `in2_joule_thomson_valve` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_magnetometer_compass` | 2 | 75.0 | _(module has no anchor)_ |
+| `in2_marine_chronometer` | 2 | 140.0 | _(module has no anchor)_ |
+| `in2_microtome_rotary` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_newtonian_reflector` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_petzval_portrait_lens` | 2 | 90.0 | _(module has no anchor)_ |
+| `in2_photocell_vacuum_photoelectric` | 2 | 90.0 | _(module has no anchor)_ |
+| `in2_photogrammetry_stereoscope` | 2 | 100.0 | _(module has no anchor)_ |
+| `in2_photographic_emulsion` | 2 | 70.0 | _(module has no anchor)_ |
+| `in2_polariser_crystal` | 2 | 85.0 | _(module has no anchor)_ |
+| `in2_precise_levelling_rod` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_primary_mirror` | 2 | 140.0 | _(module has no anchor)_ |
+| `in2_prism_amici` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_prism_porro` | 2 | 75.0 | _(module has no anchor)_ |
+| `in2_sextant_navigation` | 2 | 110.0 | _(module has no anchor)_ |
+| `in2_simple_lens` | 2 | 60.0 | _(module has no anchor)_ |
+| `in2_spectrograph_prism` | 2 | 85.0 | _(module has no anchor)_ |
+| `in2_strain_gauge_electric` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_tacheometer` | 2 | 80.0 | _(module has no anchor)_ |
+| `in2_telephoto_design` | 2 | 85.0 | _(module has no anchor)_ |
+| `in2_tessar_lens` | 2 | 110.0 | _(module has no anchor)_ |
+| `in2_theodolite` | 2 | 100.0 | _(module has no anchor)_ |
+| `in2_ultramicroscope` | 2 | 85.0 | _(module has no anchor)_ |
+| `in2_waveplate_mica` | 2 | 70.0 | _(module has no anchor)_ |
 | `opt_abbe_condenser` | 2 | 120.0 | _(module has no anchor)_ |
 | `opt_achromatic_doublet` | 2 | 180.0 | _(module has no anchor)_ |
 | `opt_aneroid_barometer` | 2 | 140.0 | _(module has no anchor)_ |
@@ -526,6 +581,36 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `telescope` | 2 | 350.0 | [`telescope`](30_glass_optics.md#telescope---refracting-telescope) |
 | `thermometer` | 2 | 400.0 | [`thermometer`](30_glass_optics.md#thermometer---sealed-liquid-in-glass-thermometer) |
 | `glass_borosilicate` | 3 | 500.0 | [`glass_borosilicate`](30_glass_optics.md#glass_borosilicate---boron-glass-no-roman-name-propose-vitrum-larderellianum) |
+| `in2_aerial_camera_mount` | 3 | 130.0 | _(module has no anchor)_ |
+| `in2_claude_cycle_air_liquefaction` | 3 | 130.0 | _(module has no anchor)_ |
+| `in2_cloud_chamber_wilson` | 3 | 140.0 | _(module has no anchor)_ |
+| `in2_creep_furnace` | 3 | 130.0 | _(module has no anchor)_ |
+| `in2_diffraction_grating` | 3 | 150.0 | _(module has no anchor)_ |
+| `in2_electron_diffraction_camera` | 3 | 140.0 | _(module has no anchor)_ |
+| `in2_electron_source_cathode` | 3 | 100.0 | _(module has no anchor)_ |
+| `in2_geiger_counter` | 3 | 110.0 | _(module has no anchor)_ |
+| `in2_geodetic_apparatus` | 3 | 130.0 | _(module has no anchor)_ |
+| `in2_gravimeter_spring_balance` | 3 | 100.0 | _(module has no anchor)_ |
+| `in2_gyro_horizon_artificial` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_interference_filter` | 3 | 110.0 | _(module has no anchor)_ |
+| `in2_interferometer_fabry_perot` | 3 | 130.0 | _(module has no anchor)_ |
+| `in2_interferometer_michelson` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_linde_cycle_expansion_engine` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_ph_meter_potentiometer` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_phase_contrast_objective` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_photomultiplier_cascade_amplifier` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_radio_direction_finder` | 3 | 110.0 | _(module has no anchor)_ |
+| `in2_schmidt_corrector_plate` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_scintillation_detector` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_spectral_radiometer` | 3 | 130.0 | _(module has no anchor)_ |
+| `in2_spectrograph_grating` | 3 | 110.0 | _(module has no anchor)_ |
+| `in2_strain_gauge_bridge` | 3 | 120.0 | _(module has no anchor)_ |
+| `in2_towing_tank` | 3 | 140.0 | _(module has no anchor)_ |
+| `in2_triplet_lens` | 3 | 180.0 | _(module has no anchor)_ |
+| `in2_vibration_table` | 3 | 110.0 | _(module has no anchor)_ |
+| `in2_wide_angle_lens` | 3 | 130.0 | _(module has no anchor)_ |
+| `in2_wind_tunnel_subsonic` | 3 | 150.0 | _(module has no anchor)_ |
+| `in2_xray_diffraction_camera` | 3 | 130.0 | _(module has no anchor)_ |
 | `microscope_compound` | 3 | 600.0 | [`microscope_compound`](30_glass_optics.md#microscope_compound---compound-microscope) |
 | `opt_apochromat` | 3 | 250.0 | _(module has no anchor)_ |
 | `opt_ballistic_galvanometer` | 3 | 160.0 | _(module has no anchor)_ |
@@ -548,9 +633,21 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `photography` | 3 | 800.0 | [`camera_obscura_photography`](30_glass_optics.md#camera_obscura_photography---camera-obscura-and-silver-halide-photography) |
 | `spectroscope` | 3 | 500.0 | [`spectroscope`](30_glass_optics.md#spectroscope---prism-spectroscope) |
 | `fused_quartz` | 4 | 700.0 | [`fused_quartz`](30_glass_optics.md#fused_quartz---fused-silica-pure-quartz-glass) |
+| `in2_adiabatic_demagnetization` | 4 | 150.0 | _(module has no anchor)_ |
+| `in2_echo_sounder_acoustic` | 4 | 140.0 | _(module has no anchor)_ |
+| `in2_electron_microscope_column` | 4 | 200.0 | _(module has no anchor)_ |
+| `in2_gyrocompass` | 4 | 160.0 | _(module has no anchor)_ |
+| `in2_high_pressure_cell` | 4 | 150.0 | _(module has no anchor)_ |
+| `in2_mass_spectrograph` | 4 | 180.0 | _(module has no anchor)_ |
+| `in2_oscilloscope_crt` | 4 | 160.0 | _(module has no anchor)_ |
+| `in2_ruling_engine` | 4 | 250.0 | _(module has no anchor)_ |
+| `in2_shock_tube` | 4 | 180.0 | _(module has no anchor)_ |
+| `in2_ultracentrifuge` | 4 | 180.0 | _(module has no anchor)_ |
+| `in2_van_de_graaff_generator` | 4 | 200.0 | _(module has no anchor)_ |
 | `opt_electron_microscope` | 4 | 400.0 | _(module has no anchor)_ |
 | `opt_high_speed_camera` | 4 | 280.0 | _(module has no anchor)_ |
 | `opt_oscilloscope` | 4 | 300.0 | _(module has no anchor)_ |
+| `in2_cyclotron` | 5 | 250.0 | _(module has no anchor)_ |
 
 ### 40_power_precision.md
 
@@ -1047,10 +1144,71 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | `geometry_analytic` | 0 | 350.0 | _(module has no anchor)_ |
 | `logarithms` | 0 | 400.0 | _(module has no anchor)_ |
 | `newtonian_mechanics` | 0 | 600.0 | _(module has no anchor)_ |
+| `sc2_notation_positional` | 0 | 0.0 | _(module has no anchor)_ |
 | `scientific_method` | 0 | 350.0 | _(module has no anchor)_ |
 | `statistics_basic` | 0 | 300.0 | _(module has no anchor)_ |
 | `thermodynamics_theory` | 0 | 700.0 | _(module has no anchor)_ |
 | `world_map` | 0 | 250.0 | _(module has no anchor)_ |
+| `sc2_algebra_logarithm` | 1 | 70.0 | _(module has no anchor)_ |
+| `sc2_algebra_quadratic` | 1 | 80.0 | _(module has no anchor)_ |
+| `sc2_algebra_symbolic` | 1 | 60.0 | _(module has no anchor)_ |
+| `sc2_geometry_coordinate` | 1 | 80.0 | _(module has no anchor)_ |
+| `sc2_geometry_trigonometry` | 1 | 100.0 | _(module has no anchor)_ |
+| `sc2_notation_decimal_fraction` | 1 | 45.0 | _(module has no anchor)_ |
+| `sc2_notation_decimal_point` | 1 | 20.0 | _(module has no anchor)_ |
+| `sc2_notation_equals_sign` | 1 | 30.0 | _(module has no anchor)_ |
+| `sc2_notation_exponents` | 1 | 45.0 | _(module has no anchor)_ |
+| `sc2_notation_negative` | 1 | 50.0 | _(module has no anchor)_ |
+| `sc2_notation_operator_symbols` | 1 | 35.0 | _(module has no anchor)_ |
+| `sc2_notation_roots` | 1 | 40.0 | _(module has no anchor)_ |
+| `sc2_notation_zero` | 1 | 40.0 | _(module has no anchor)_ |
+| `sc2_probability_axioms` | 1 | 100.0 | _(module has no anchor)_ |
+| `sc2_probability_combinatorics` | 1 | 80.0 | _(module has no anchor)_ |
+| `sc2_statistics_mean_variance` | 1 | 60.0 | _(module has no anchor)_ |
+| `sc2_algebra_binomial` | 2 | 90.0 | _(module has no anchor)_ |
+| `sc2_algebra_complex_numbers` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_algebra_determinant` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_algebra_infinite_series` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_algebra_interpolation` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_algebra_least_squares` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_algebra_matrix` | 2 | 130.0 | _(module has no anchor)_ |
+| `sc2_algebra_numerical_methods` | 2 | 120.0 | _(module has no anchor)_ |
+| `sc2_algebra_polynomial` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_algebra_vector` | 2 | 120.0 | _(module has no anchor)_ |
+| `sc2_calculus_derivative` | 2 | 140.0 | _(module has no anchor)_ |
+| `sc2_calculus_fundamental_theorem` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_calculus_integral` | 2 | 150.0 | _(module has no anchor)_ |
+| `sc2_calculus_limit` | 2 | 120.0 | _(module has no anchor)_ |
+| `sc2_geometry_conics` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_geometry_descriptive` | 2 | 130.0 | _(module has no anchor)_ |
+| `sc2_geometry_spherical_trig` | 2 | 120.0 | _(module has no anchor)_ |
+| `sc2_notation_dimension` | 2 | 70.0 | _(module has no anchor)_ |
+| `sc2_notation_metric_unit` | 2 | 80.0 | _(module has no anchor)_ |
+| `sc2_notation_scientific` | 2 | 60.0 | _(module has no anchor)_ |
+| `sc2_notation_significant_figures` | 2 | 90.0 | _(module has no anchor)_ |
+| `sc2_probability_central_limit` | 2 | 120.0 | _(module has no anchor)_ |
+| `sc2_probability_normal_distribution` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_statistics_blinding` | 2 | 90.0 | _(module has no anchor)_ |
+| `sc2_statistics_blocking` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_statistics_confidence_interval` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_statistics_control_chart` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_statistics_control_group` | 2 | 70.0 | _(module has no anchor)_ |
+| `sc2_statistics_correlation` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_statistics_mortality_table` | 2 | 100.0 | _(module has no anchor)_ |
+| `sc2_statistics_randomisation` | 2 | 80.0 | _(module has no anchor)_ |
+| `sc2_statistics_regression` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_statistics_sampling_theory` | 2 | 110.0 | _(module has no anchor)_ |
+| `sc2_statistics_significance_test` | 2 | 120.0 | _(module has no anchor)_ |
+| `sc2_statistics_t_test` | 2 | 120.0 | _(module has no anchor)_ |
+| `sc2_algebra_tensor` | 3 | 180.0 | _(module has no anchor)_ |
+| `sc2_calculus_fourier_series` | 3 | 160.0 | _(module has no anchor)_ |
+| `sc2_calculus_fourier_transform` | 3 | 170.0 | _(module has no anchor)_ |
+| `sc2_calculus_ode` | 3 | 150.0 | _(module has no anchor)_ |
+| `sc2_calculus_pde` | 3 | 200.0 | _(module has no anchor)_ |
+| `sc2_geometry_differential` | 3 | 170.0 | _(module has no anchor)_ |
+| `sc2_geometry_non_euclidean` | 3 | 150.0 | _(module has no anchor)_ |
+| `sc2_notation_error_propagation` | 3 | 120.0 | _(module has no anchor)_ |
+| `sc2_statistics_anova` | 3 | 140.0 | _(module has no anchor)_ |
 
 ### 70_medicine_biology.md
 
@@ -2016,14 +2174,14 @@ Sorted by module, then by tier. `tier 0` is knowledge you carry in your head;
 | status | nodes |
 |---|---:|
 | linked to a specific recipe entry | 96 |
-| linked to a domain module, no specific entry | 1773 |
+| linked to a domain module, no specific entry | 1931 |
 | documented in a top-level prose file | 13 |
 | no link BY DESIGN (capability rungs, materials, unobtainables) | 104 |
-| **undocumented, a real gap** | **112** |
+| **undocumented, a real gap** | **163** |
 
 The undocumented nodes, listed so the gap is visible rather than hidden:
 
-`civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`
+`civ_bending_moment`, `civ_elasticity_theory`, `civ_euler_buckling`, `civ_factor_safety`, `civ_materials_testing`, `civ_method_joints`, `civ_neutral_axis`, `civ_soil_mechanics`, `civ_statics`, `fin_assay_office`, `fin_census`, `fin_civil_service_exam`, `fin_collegium`, `fin_commodity_exchange`, `fin_customs_house`, `fin_endowed_chair`, `fin_government`, `fin_guild`, `fin_joint_stock`, `fin_learned_society`, `fin_mortality_table`, `fin_museum`, `fin_patent_office`, `fin_post_office`, `fin_professional_exam`, `fin_research_institute`, `fin_societas`, `fin_standard_weights`, `fin_statistical_office`, `fin_survey_map`, `fin_totalisator`, `fin_trade_union`, `fin_university`, `fud_agricultural_treatises`, `fud_soil_composition_analysis`, `mat_chile_nitrate`, `mat_cryolite`, `mat_gutta_percha`, `mat_natural_rubber`, `mat_newworld_crops`, `mat_platinum_bulk`, `mat_quinine`, `md2_agar_media`, `md2_bioassay`, `md2_blinding`, `md2_cadaver_dissection`, `md2_case_control_study`, `md2_case_record`, `md2_case_series`, `md2_cell_theory`, `md2_chromosome`, `md2_circulation`, `md2_cohort_study`, `md2_digestion`, `md2_dna`, `md2_drug_standardisation`, `md2_endocrine_system`, `md2_gas_exchange`, `md2_gene`, `md2_immunity`, `md2_kidney`, `md2_medical_journal`, `md2_medical_licensing`, `md2_medical_statistics`, `md2_mendelian_inheritance`, `md2_microbiology_culture`, `md2_mortality_table`, `md2_nervous_system`, `md2_nursing_profession`, `md2_pharmacopoeia`, `md2_placebo`, `md2_randomised_controlled_trial`, `md2_vital_registration`, `met_fatigue_testing`, `met_hardness_test`, `met_mannesmann_piercing`, `met_metallography`, `met_phase_diagram_knowledge`, `met_spectroscopic_assay`, `met_tensile_test`, `mfg_assembly_line`, `mfg_bill_materials`, `mfg_blueprint`, `mfg_change_order`, `mfg_dimensioning`, `mfg_drawing_office`, `mfg_inventory_mgmt`, `mfg_maintenance`, `mfg_orthographic`, `mfg_piece_rate`, `mfg_production_schedule`, `mfg_quality_dept`, `mfg_standard_hour`, `mfg_time_study`, `mfg_tool_room`, `mfg_work_study`, `mil_ammunition_standardisation`, `mil_arsenal_manufacturing`, `mil_conscription_reserve`, `mil_cryptanalysis`, `mil_general_staff`, `mil_logistics_discipline`, `mil_operational_research`, `mil_railway_mobilisation`, `mil_signals_intelligence`, `mil_war_college`, `prc_apprentice_system`, `prc_toolroom_institution`, `prn_cataloguing_system`, `prn_copyright_economics`, `prn_index_concordance`, `prn_library_archive`, `sc2_institution_citation`, `sc2_institution_curriculum`, `sc2_institution_doctorate`, `sc2_institution_examination`, `sc2_institution_funded_programme`, `sc2_institution_journal`, `sc2_institution_learned_society`, `sc2_institution_patent_disclosure`, `sc2_institution_referee`, `sc2_institution_research_group`, `sc2_institution_textbook`, `sc2_method_controlled_experiment`, `sc2_method_hypothesis`, `sc2_method_lab_notebook`, `sc2_method_negative_result`, `sc2_method_peer_criticism`, `sc2_method_replication`, `sc2_physics_acoustics`, `sc2_physics_aerodynamic_lift`, `sc2_physics_blackbody_radiation`, `sc2_physics_boltzmann_distribution`, `sc2_physics_diffraction`, `sc2_physics_elasticity`, `sc2_physics_electrostatics`, `sc2_physics_em_wave`, `sc2_physics_energy`, `sc2_physics_fluid_statics`, `sc2_physics_geometric_optics`, `sc2_physics_gravitation`, `sc2_physics_hydrodynamics`, `sc2_physics_kinematics`, `sc2_physics_kinetic_theory`, `sc2_physics_magnetostatics`, `sc2_physics_maxwell_equations`, `sc2_physics_momentum`, `sc2_physics_neutron_discovery`, `sc2_physics_newtons_laws`, `sc2_physics_nuclear_fission`, `sc2_physics_nucleus_discovery`, `sc2_physics_photoelectric_effect`, `sc2_physics_quantum_photon`, `sc2_physics_reynolds_number`, `sc2_physics_spectrum`, `sc2_physics_speed_of_light`, `sc2_physics_statics`, `sc2_physics_statistical_mechanics`, `sc2_physics_uncertainty_principle`, `sc2_physics_viscosity`, `sc2_physics_wave_mechanics`, `sc2_physics_wave_motion`, `sc2_physics_work_power`
 
 ## Broken links
 
@@ -2115,213 +2273,4 @@ The undocumented nodes, listed so the gap is visible rather than hidden:
 - `fin_usury_evasion` points at `96_finance.md`, which does not exist
 - `fin_usury_law` points at `96_finance.md`, which does not exist
 - `fin_wage` points at `96_finance.md`, which does not exist
-- `in2_adiabatic_demagnetization` points at `Magnetic field aligns spins; adiabatic removal of field allows spins to disorder, cooling`, which does not exist
-- `in2_aerial_camera_mount` points at `Camera mounted on gyroscopic platform; vibration isolation allows sharp photos from aircraft`, which does not exist
-- `in2_alidade_ruler` points at `Ruler with telescopic sights; sets direction on map from observation point`, which does not exist
-- `in2_antireflection_coating` points at `Quarter-wave coating reduces reflection from 4% to <0.1% at one wavelength`, which does not exist
-- `in2_artificial_horizon_bubble` points at `Small spirit level defines horizontal reference when sea horizon is not visible`, which does not exist
-- `in2_baseline_measurement_apparatus` points at `Known length baseline; correction for slope, temperature, tension; used as reference for triangulation`, which does not exist
-- `in2_beam_splitter` points at `Partial reflector divides light into two paths; angle selects wavelength with coatings`, which does not exist
-- `in2_bolometer_thermal_detector` points at `Blackened metal foil heated by infrared; resistance change measured`, which does not exist
-- `in2_cassegrain_reflector` points at `Secondary convex mirror bounces light back through hole in primary`, which does not exist
-- `in2_chain_surveyor` points at `66 feet (20 m) of steel links; handles at ends; numbered every 10 links`, which does not exist
-- `in2_chronometer_rate_check` points at `Lunar distance or lunar occultation gives time; chronometer rate determined`, which does not exist
-- `in2_claude_cycle_air_liquefaction` points at `Expander cools more efficiently than Joule-Thomson; some gas expands to do work`, which does not exist
-- `in2_cloud_chamber_wilson` points at `Sudden expansion cools air to supersaturation; charged particles trigger condensation trails`, which does not exist
-- `in2_condenser_substage` points at `Converging lens below the sample focuses illumination and houses iris diaphragm`, which does not exist
-- `in2_cooke_triplet_photography` points at `Symmetrical three-element design for uniform field correction`, which does not exist
-- `in2_creep_furnace` points at `Specimen held at fixed stress and temperature; elongation measured vs time`, which does not exist
-- `in2_cryostat_dewar_flask` points at `Vacuum between walls; liquid nitrogen or helium maintains cryogenic temperature`, which does not exist
-- `in2_cyclotron` points at `Magnetic field bends particles in spiral; RF accelerates between gaps`, which does not exist
-- `in2_dark_field_condenser` points at `Light cone with large angle misses objective; only scattered light enters`, which does not exist
-- `in2_diffraction_grating` points at `Thousands of parallel grooves per mm, ruled with precision screw and diamond`, which does not exist
-- `in2_doublet_lens` points at `Crown and flint glass cemented together to correct chromatic aberration`, which does not exist
-- `in2_echo_sounder_acoustic` points at `Spark or transducer emits sound pulse; reflected echo arrives after time proportional to depth`, which does not exist
-- `in2_electron_diffraction_camera` points at `Electrons diffract from crystal planes; low energy gives surface sensitivity`, which does not exist
-- `in2_electron_microscope_column` points at `Vacuum tube with high voltage, electromagnetic lenses focus electron beam`, which does not exist
-- `in2_electron_source_cathode` points at `Tungsten filament heated to 2700K; thermionic emission produces electron beam`, which does not exist
-- `in2_electroscope_gold_leaf` points at `Gold leaf suspended from high-potential conductor; repulsion angle indicates charge`, which does not exist
-- `in2_eyepiece_erfle` points at `Five-element wide field eyepiece with 60-68 degree angle of view`, which does not exist
-- `in2_eyepiece_huygens` points at `Two plano-convex lenses separated by their focal lengths`, which does not exist
-- `in2_eyepiece_kellner` points at `Plano-convex field lens and achromatic eyelens`, which does not exist
-- `in2_eyepiece_orthoscopic` points at `Triplet eyelens with wide flat field and high magnification`, which does not exist
-- `in2_eyepiece_ramsden` points at `Two identical plano-convex lenses cemented or close-spaced`, which does not exist
-- `in2_fatigue_machine` points at `Sample in rotating fixture; stress oscillates sinusoidally; failure recorded vs cycle count`, which does not exist
-- `in2_geiger_counter` points at `Gas avalanche multiplication in cylindrical electrode; each ion produces 10^6 electrons`, which does not exist
-- `in2_geodetic_apparatus` points at `Network of triangulation points; height determined by precise levelling`, which does not exist
-- `in2_gravimeter_spring_balance` points at `Mass hangs on calibrated spring; period or deflection indicates local gravity`, which does not exist
-- `in2_gyro_horizon_artificial` points at `Gyroscope spin axis maintains reference; precession from aircraft maneuvers indicated on dial`, which does not exist
-- `in2_gyrocompass` points at `Rotor spins at high speed; gravity precession aligns axis with meridian`, which does not exist
-- `in2_high_pressure_cell` points at `Hydraulic or screw press confines sample; pressure measured by pressure gauge`, which does not exist
-- `in2_immersion_objective_oil` points at `Objective designed to work through oil between lens and coverslip; refractive index matched`, which does not exist
-- `in2_interference_filter` points at `Multilayer dielectric coatings create bandpass filter by coherent reflection`, which does not exist
-- `in2_interferometer_fabry_perot` points at `Two parallel silvered surfaces; light bounces many times; sharp resonance peaks`, which does not exist
-- `in2_interferometer_michelson` points at `Beam splitter divides light; mirrors reflect; recombined beams interfere`, which does not exist
-- `in2_ionisation_chamber` points at `Gas ionised by radiation; ions collected by electric field; current measured`, which does not exist
-- `in2_joule_thomson_valve` points at `Gas expands through throttle; cooling is proportional to enthalpy drop`, which does not exist
-- `in2_linde_cycle_expansion_engine` points at `Compressed gas cools against expanding outflow; cascade stages liquefy air`, which does not exist
-- `in2_magnetometer_compass` points at `Magnetic needle suspended by fine quartz fiber; deflection angle measures field`, which does not exist
-- `in2_marine_chronometer` points at `Balance spring oscillator; bimetallic compensation maintains frequency at sea temperature variation`, which does not exist
-- `in2_mass_spectrograph` points at `Ions accelerated and deflected by magnetic field; detection plate measures trajectories`, which does not exist
-- `in2_microtome_rotary` points at `Rotating handle advances specimen by screw; produces ribbons of thin serial sections`, which does not exist
-- `in2_microtome_sliding` points at `Blade slides past specimen; spring controls thickness; produces thin sections`, which does not exist
-- `in2_newtonian_reflector` points at `Flat mirror at 45 degrees directs focal point to side of tube`, which does not exist
-- `in2_oscilloscope_crt` points at `Electron beam deflected by electric or magnetic fields; strikes phosphor screen`, which does not exist
-- `in2_petzval_portrait_lens` points at `Rear convergent group and front achromat for high aperture`, which does not exist
-- `in2_ph_meter_potentiometer` points at `Glass electrode voltage responds to hydrogen ion concentration; amplifier measures millivolts`, which does not exist
-- `in2_phase_contrast_objective` points at `Annular source and phase plate convert amplitude variations to visible contrast`, which does not exist
-- `in2_photocell_vacuum_photoelectric` points at `Photon ejects electron from cathode; current proportional to light intensity`, which does not exist
-- `in2_photogrammetry_stereoscope` points at `Pair of aerial photos viewed stereoscopically; parallax gives elevation; comparator measures precise positions`, which does not exist
-- `in2_photographic_emulsion` points at `Silver halide grains record particle tracks at nanometer resolution`, which does not exist
-- `in2_photometer_visual_comparison` points at `Light source compared to standard candle; intensity by distance inverse-square law`, which does not exist
-- `in2_photomultiplier_cascade_amplifier` points at `Initial photocurrent amplified by secondary emission from dynode chain`, which does not exist
-- `in2_plane_table` points at `Board on tripod; graphite paper and straightedge; draw map directly in field`, which does not exist
-- `in2_polariser_crystal` points at `Birefringent calcite transmits one polarisation state, rejects other`, which does not exist
-- `in2_precise_levelling_rod` points at `Calibrated rod with mm graduations; telescope focuses on graticule; difference of sights gives height difference`, which does not exist
-- `in2_primary_mirror` points at `Parabolic surface focuses parallel light to point; thin speculum metal or silvered glass`, which does not exist
-- `in2_prism_amici` points at `Roof-shaped prism erects image and folds light path for compact binoculars`, which does not exist
-- `in2_prism_porro` points at `Two 45-90-45 prisms erect image and separate exit pupils for eye relief`, which does not exist
-- `in2_radio_direction_finder` points at `Loop antenna orientation for minimum signal indicates bearing to transmitter`, which does not exist
-- `in2_reticle_crosshair` points at `Fine lines or dots etched or photographed onto glass plate`, which does not exist
-- `in2_ruling_engine` points at `Master screw with diamond point advances across glass or metal; grooves separated by wavelength precision`, which does not exist
-- `in2_schmidt_corrector_plate` points at `Aspheric glass plate corrects spherical mirror aberrations; wide field possible`, which does not exist
-- `in2_scintillation_detector` points at `Radiation hits crystal; fluorescence photons counted by photomultiplier`, which does not exist
-- `in2_sextant_navigation` points at `Moving mirror superimposes sun or star images; arc angle gives latitude or distance`, which does not exist
-- `in2_shock_tube` points at `Rupture diaphragm between high and low pressure gas; shock wave propagates`, which does not exist
-- `in2_simple_lens` points at `Ground and polished spherical single surface`, which does not exist
-- `in2_sounding_machine_lead_line` points at `Weighted rope marked every fathom; bottom sample in cavity of lead`, which does not exist
-- `in2_spectral_radiometer` points at `Spectrum dispersed by grating; many photocells measure intensity at different wavelengths`, which does not exist
-- `in2_spectrograph_grating` points at `Diffraction grating disperses light; objective focuses higher orders onto plate`, which does not exist
-- `in2_spectrograph_prism` points at `Prism disperses light; objective focuses spectrum onto photographic plate`, which does not exist
-- `in2_spirit_level` points at `Curved tube 90% filled with alcohol; bubble indicates deviation from horizontal`, which does not exist
-- `in2_strain_gauge_bridge` points at `Wheatstone bridge with strain gauge and vacuum tube amplifier measures tiny resistance changes`, which does not exist
-- `in2_strain_gauge_electric` points at `Wire resistance changes with strain; stretched wire has higher resistance`, which does not exist
-- `in2_tacheometer` points at `Theodolite with special stadia reticle; staff reading gives distance directly`, which does not exist
-- `in2_tape_measure_steel` points at `100-300 feet steel tape; tension handle and brake; gradient mark for slope distance`, which does not exist
-- `in2_telephoto_design` points at `Converging front, diverging rear, makes focal length exceed physical length`, which does not exist
-- `in2_tessar_lens` points at `Four-element design with cemented doublet`, which does not exist
-- `in2_theodolite` points at `Telescope with two perpendicular rotating circles; horizontal and vertical angles`, which does not exist
-- `in2_towing_tank` points at `Long water channel; model on carriage; drag measured against water balance`, which does not exist
-- `in2_triangulation_tripod_station` points at `Stable tripod with fixed marks for theodolite centering`, which does not exist
-- `in2_triplet_lens` points at `Three-glass combination corrects to secondary spectrum`, which does not exist
-- `in2_ultracentrifuge` points at `Rotor spins at 100,000 rpm; centrifugal field separates molecules by size`, which does not exist
-- `in2_ultramicroscope` points at `Intense line source illuminates specimen at high angle; Tyndall scattering visible`, which does not exist
-- `in2_van_de_graaff_generator` points at `Moving belt transfers charge to dome; voltage accumulates; sparks at high voltage`, which does not exist
-- `in2_vibration_table` points at `Armature driven by AC field; table oscillates at mains frequency; amplitude controlled`, which does not exist
-- `in2_waveplate_mica` points at `Anisotropic crystal retards one polarisation by fraction of wavelength`, which does not exist
-- `in2_wide_angle_lens` points at `Reversed Petzval or symmetrical design, focal length shorter than image diagonal`, which does not exist
-- `in2_wind_tunnel_subsonic` points at `Contoured duct delivers uniform flow; model attached; forces measured by balance`, which does not exist
-- `in2_xray_diffraction_camera` points at `X-rays diffract from crystal planes; angles and intensities reveal atomic structure`, which does not exist
-- `sc2_algebra_binomial` points at `(x + y)ⁿ expands to a sum of terms with binomial coefficients C(n,k)`, which does not exist
-- `sc2_algebra_complex_numbers` points at `Quadratics always have solutions in complex numbers; polar form re^(iθ); Euler's e^(iθ) = cos θ + i sin θ`, which does not exist
-- `sc2_algebra_determinant` points at `det(A) = 0 means A is singular (non-invertible); A⁻¹ exists if det(A) ≠ 0`, which does not exist
-- `sc2_algebra_infinite_series` points at `Sum of infinitely many terms: 1 + 1/2 + 1/4 + ... = 2; when does it converge?`, which does not exist
-- `sc2_algebra_interpolation` points at `Given n points, unique polynomial of degree n-1 passes through them; Newton forward differences for tables`, which does not exist
-- `sc2_algebra_least_squares` points at `Minimize sum of squared errors between data points and model; normal equations from setting derivatives to zero`, which does not exist
-- `sc2_algebra_logarithm` points at `If b^x = a, then log_b(a) = x; rules: log(xy) = log(x) + log(y)`, which does not exist
-- `sc2_algebra_matrix` points at `Rectangular arrays of numbers; AB is not the same as BA; determinant measures invertibility`, which does not exist
-- `sc2_algebra_numerical_methods` points at `Algorithms to find roots or solve equations when closed forms do not exist; choosing method depends on smoothness and number of solutions`, which does not exist
-- `sc2_algebra_polynomial` points at `Expressions like x³ - 6x² + 11x - 6 = (x-1)(x-2)(x-3); finding roots`, which does not exist
-- `sc2_algebra_quadratic` points at `ax² + bx + c = 0 has solution x = (-b ± √(b² - 4ac)) / 2a`, which does not exist
-- `sc2_algebra_symbolic` points at `Using letters for unknown quantities; rules for manipulating equations`, which does not exist
-- `sc2_algebra_tensor` points at `Generalizing scalars, vectors, matrices; stress is a tensor (force per unit area in each direction)`, which does not exist
-- `sc2_algebra_vector` points at `Directed quantities; dot product a·b = |a||b|cos(angle); cross product a×b perpendicular to both`, which does not exist
-- `sc2_calculus_derivative` points at `f'(x) = lim[h→0] (f(x+h) - f(x)) / h; rules: product, chain, quotient`, which does not exist
-- `sc2_calculus_fourier_series` points at `Any periodic function is a sum of sines and cosines with the right amplitudes and phases`, which does not exist
-- `sc2_calculus_fourier_transform` points at `Generalizing Fourier series to non-periodic signals; converting between time and frequency domains`, which does not exist
-- `sc2_calculus_fundamental_theorem` points at `d/dx ∫f = f and ∫df/dx = f; connects rate of change to total change`, which does not exist
-- `sc2_calculus_integral` points at `∫f(x)dx is the area under f; fundamental theorem: antiderivative of f has derivative f`, which does not exist
-- `sc2_calculus_limit` points at `As x → a, f(x) → L means values cluster arbitrarily close to L; formal: for any ε > 0, choose δ > 0 such that |x - a| < δ implies |f(x) - L| < ε`, which does not exist
-- `sc2_calculus_ode` points at `Equations like y' = -ky describe decay or growth; separation of variables, integrating factors`, which does not exist
-- `sc2_calculus_pde` points at `Equations with derivatives with respect to multiple variables; heat, wave, Laplace equations`, which does not exist
-- `sc2_geometry_conics` points at `All are second-degree equations ax² + bxy + cy² + dx + ey + f = 0; eccentricity e determines shape`, which does not exist
-- `sc2_geometry_coordinate` points at `Representing curves as equations: circle is x² + y² = r²; line is ax + by + c = 0`, which does not exist
-- `sc2_geometry_descriptive` points at `Three orthographic views (top, front, side) fully describe a 3D object; sections; auxiliary views`, which does not exist
-- `sc2_geometry_differential` points at `Curvature, torsion, geodesics, Gaussian curvature, first and second fundamental forms`, which does not exist
-- `sc2_geometry_non_euclidean` points at `Gauss, Lobachevsky, Riemann: parallel postulate is independent; curved spaces have their own geometry`, which does not exist
-- `sc2_geometry_spherical_trig` points at `Solving triangles on a sphere; great circles; spherical excess; rhumb line vs. geodesic`, which does not exist
-- `sc2_geometry_trigonometry` points at `sin, cos, tan; inverse functions; tables for every degree or tenth of degree; identities like sin² + cos² = 1`, which does not exist
-- `sc2_institution_citation` points at `Footnote naming source of idea or fact; enables tracking influence and crediting prior work`, which does not exist
-- `sc2_institution_curriculum` points at `Planned sequence of courses building toward degree; prerequisites ensure logical progression`, which does not exist
-- `sc2_institution_doctorate` points at `PhD requires original research contribution; defended before experts; credential for independent researcher`, which does not exist
-- `sc2_institution_examination` points at `Written or oral test to verify mastery; degree or certificate signals to employers`, which does not exist
-- `sc2_institution_funded_programme` points at `Government or foundation grants money for specific research goals; researcher proposes, peer review decides`, which does not exist
-- `sc2_institution_journal` points at `Monthly or quarterly publication of peer-reviewed articles with title, methods, results, discussion`, which does not exist
-- `sc2_institution_learned_society` points at `Membership of scientists; regular meetings; publications; elect fellows; set standards`, which does not exist
-- `sc2_institution_patent_disclosure` points at `Technical description filed with government; grants monopoly for term; requires disclosure of how it works`, which does not exist
-- `sc2_institution_referee` points at `Editor sends manuscript to expert referees anonymously; accepts or rejects based on review`, which does not exist
-- `sc2_institution_research_group` points at `Senior scientist leads team of postdocs and students; collective work; shared credit`, which does not exist
-- `sc2_institution_textbook` points at `Book that teaches subject from first principles; worked examples; exercises with answers`, which does not exist
-- `sc2_method_controlled_experiment` points at `Manipulate one variable (treatment), hold others constant, measure outcome; compare to control`, which does not exist
-- `sc2_method_hypothesis` points at `Propose specific prediction from theory; design experiment to test it; null hypothesis is baseline`, which does not exist
-- `sc2_method_lab_notebook` points at `Daily record of observations, conditions, calculations, false starts; dated, sequential, no erasure`, which does not exist
-- `sc2_method_negative_result` points at `Experiment where predicted effect did not occur; equally valid as positive, often more informative`, which does not exist
-- `sc2_method_peer_criticism` points at `Colleagues check logic, methods, calculations; public critique in meetings or correspondence`, which does not exist
-- `sc2_method_replication` points at `Another researcher, different time and place, obtains same results with same methods`, which does not exist
-- `sc2_notation_decimal_fraction` points at `Tenths, hundredths, thousandths as a continuation of positional notation past zero`, which does not exist
-- `sc2_notation_decimal_point` points at `Standardizing a marker between whole and fractional parts`, which does not exist
-- `sc2_notation_dimension` points at `Treating dimensions as algebraic quantities; force = mass times acceleration means newtons = kg⋅m/s²`, which does not exist
-- `sc2_notation_equals_sign` points at `Symbol = means both sides have the same value`, which does not exist
-- `sc2_notation_error_propagation` points at `If x has uncertainty Δx and y = f(x), then Δy = |df/dx| Δx; rules for multiple variables`, which does not exist
-- `sc2_notation_exponents` points at `Small superscript numbers for powers; x squared is x²`, which does not exist
-- `sc2_notation_metric_unit` points at `Decimal prefixes; base 10 throughout; no accidents like 12 inches to a foot`, which does not exist
-- `sc2_notation_negative` points at `Numbers less than zero; rules for addition and multiplication`, which does not exist
-- `sc2_notation_operator_symbols` points at `Standardized marks for operations instead of words`, which does not exist
-- `sc2_notation_positional` points at `Digits hold different values by position; ten is one and zero`, which does not exist
-- `sc2_notation_roots` points at `Radical sign √ for square, cube, and nth roots`, which does not exist
-- `sc2_notation_scientific` points at `Writing 0.0000314 as 3.14 × 10⁻⁵ or 3.14 E-5`, which does not exist
-- `sc2_notation_significant_figures` points at `Recording measurement uncertainty by digit count; multiplication and division rules for combining measurements`, which does not exist
-- `sc2_notation_zero` points at `Zero is a digit, not absence`, which does not exist
-- `sc2_physics_acoustics` points at `Sound speed v = √(K/ρ) where K is bulk modulus; intensity I = (1/2) ρ v (p0)²`, which does not exist
-- `sc2_physics_aerodynamic_lift` points at `Pressure difference between upper and lower surfaces due to velocity difference; L = (1/2) ρ v² A CL`, which does not exist
-- `sc2_physics_blackbody_radiation` points at `Energy density u(ν,T) = (8πhν³/c³) / (exp(hν/kT) - 1); Rayleigh-Jeans fails at high ν`, which does not exist
-- `sc2_physics_boltzmann_distribution` points at `Probability of state with energy E is proportional to exp(-E/kT); explains chemical equilibrium`, which does not exist
-- `sc2_physics_diffraction` points at `Light bends around edges and slits; diffraction grating has many slits for high resolution`, which does not exist
-- `sc2_physics_elasticity` points at `Stress σ = F/A (force per area); strain ε = ΔL/L (fractional change); E = σ/ε (Young's modulus)`, which does not exist
-- `sc2_physics_electrostatics` points at `F = k q1 q2 / r²; like gravity but for electric charge; field E = F/q`, which does not exist
-- `sc2_physics_em_wave` points at `Oscillating E and B fields perpendicular to each other and direction of travel; speed c = 1/√(ε0 μ0)`, which does not exist
-- `sc2_physics_energy` points at `KE = (1/2) m v²; PE = mgh; energy is conserved when forces are conservative`, which does not exist
-- `sc2_physics_fluid_statics` points at `Pressure P = ρ g h (density times gravity times depth); Archimedes' principle`, which does not exist
-- `sc2_physics_geometric_optics` points at `Light travels in straight rays; reflects at angle of incidence; refracts by Snell's law n1 sin θ1 = n2 sin θ2`, which does not exist
-- `sc2_physics_gravitation` points at `F = G m1 m2 / r²; same law governs apples and planets`, which does not exist
-- `sc2_physics_hydrodynamics` points at `P + (1/2) ρ v² + ρ g h = constant along streamline; relates pressure, velocity, height`, which does not exist
-- `sc2_physics_kinematics` points at `v = dx/dt; a = dv/dt; for constant acceleration, x = x0 + v0*t + (1/2)*a*t²`, which does not exist
-- `sc2_physics_kinetic_theory` points at `Gas pressure is momentum transfer from colliding molecules; P = (1/3) ρ <v²>; explains ideal gas law`, which does not exist
-- `sc2_physics_magnetostatics` points at `Magnetic field B; dipole moment m; torque τ = m × B; force on current F = I L × B`, which does not exist
-- `sc2_physics_maxwell_equations` points at `Four equations unify electricity, magnetism, and light; predict electromagnetic waves`, which does not exist
-- `sc2_physics_momentum` points at `p = mv; dp/dt = F; momentum is conserved when external forces are zero`, which does not exist
-- `sc2_physics_neutron_discovery` points at `Neutral nuclear particle; mass nearly equals proton; Chadwick proved (1932) from alpha bombardment`, which does not exist
-- `sc2_physics_newtons_laws` points at `1) No force, no change. 2) F = ma. 3) Action equals reaction`, which does not exist
-- `sc2_physics_nuclear_fission` points at `Heavy nucleus splits into fragments; releases neutrons and 200 MeV; self-sustaining chain if k > 1`, which does not exist
-- `sc2_physics_nucleus_discovery` points at `Rutherford showed atoms have tiny dense nuclei; three types of radiation (alpha, beta, gamma)`, which does not exist
-- `sc2_physics_photoelectric_effect` points at `Light knocks electrons from metal; E = hν - φ (work function); proves photon hypothesis`, which does not exist
-- `sc2_physics_quantum_photon` points at `Light is quantised in packets of energy E = hν; Planck constant h = 6.626 × 10^-34 J⋅s`, which does not exist
-- `sc2_physics_reynolds_number` points at `Re = (ρ v L) / η; low Re is viscous (creeping) flow, high Re is turbulent`, which does not exist
-- `sc2_physics_spectrum` points at `Radio waves, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays; all c/λ = f`, which does not exist
-- `sc2_physics_speed_of_light` points at `c ≈ 3 × 10^8 m/s; same in all inertial reference frames; appears in E = mc²`, which does not exist
-- `sc2_physics_statics` points at `Leverage, moments, center of gravity; force balance and moment balance`, which does not exist
-- `sc2_physics_statistical_mechanics` points at `Macroscopic properties from microstate probabilities; Boltzmann distribution P(E) ~ exp(-E/kT)`, which does not exist
-- `sc2_physics_uncertainty_principle` points at `Δx · Δp ≥ ℏ/2; cannot know position and momentum simultaneously with arbitrary precision`, which does not exist
-- `sc2_physics_viscosity` points at `Shear stress τ = η (dv/dy); viscosity η depends on fluid and temperature; Stokes drag`, which does not exist
-- `sc2_physics_wave_mechanics` points at `Ψ(x,t) is wave function; |Ψ|² is probability density; iℏ ∂Ψ/∂t = -ℏ²/2m ∇²Ψ + V Ψ`, which does not exist
-- `sc2_physics_wave_motion` points at `∂²u/∂t² = v² ∂²u/∂x²; solutions are traveling and standing waves`, which does not exist
-- `sc2_physics_work_power` points at `Work W = F · d (force dot displacement); power P = dW/dt; efficiency = output/input`, which does not exist
-- `sc2_probability_axioms` points at `P(A or B) = P(A) + P(B) - P(A and B); P(A|B) = P(A and B)/P(B); Bayes' theorem`, which does not exist
-- `sc2_probability_central_limit` points at `Sum of many independent random variables is approximately normal, regardless of their individual distributions`, which does not exist
-- `sc2_probability_combinatorics` points at `nPr = n!/(n-r)!, nCr = n!/(r!(n-r)!); binomial coefficients C(n,k)`, which does not exist
-- `sc2_probability_normal_distribution` points at `f(x) = (1/(σ√(2π))) exp(-(x-μ)²/(2σ²)); most natural distribution for sums of independent errors`, which does not exist
-- `sc2_statistics_anova` points at `Partitions variance into groups and residuals; F-test whether group means differ`, which does not exist
-- `sc2_statistics_blinding` points at `Neither subject nor experimenter knows who got treatment; reveals biases in observation and reporting`, which does not exist
-- `sc2_statistics_blocking` points at `Divide subjects into homogeneous blocks, randomise within block, to reduce variance from known confounders`, which does not exist
-- `sc2_statistics_confidence_interval` points at `95% CI is estimate ± 1.96 SE; if we repeat the survey 100 times, about 95 contain the true value`, which does not exist
-- `sc2_statistics_control_chart` points at `Plot process output over time with control limits (μ ± 3σ); trends or excursions signal problems`, which does not exist
-- `sc2_statistics_control_group` points at `Run the same experiment without treatment to measure placebo effect and natural variation`, which does not exist
-- `sc2_statistics_correlation` points at `Pearson r = Σ(x-μx)(y-μy) / (n σx σy); r ranges from -1 to +1; r² is fraction of variance explained`, which does not exist
-- `sc2_statistics_mean_variance` points at `Mean μ = sum/n; variance σ² = average squared deviation; standard deviation σ = √(variance)`, which does not exist
-- `sc2_statistics_mortality_table` points at `Probability of death at each age; lx survivors at age x; ex life expectancy`, which does not exist
-- `sc2_statistics_randomisation` points at `Assigning subjects to treatment or control by random mechanism ensures balance on unknown confounders`, which does not exist
-- `sc2_statistics_regression` points at `y = a + bx where b = r(σy/σx); minimizes squared vertical distances`, which does not exist
-- `sc2_statistics_sampling_theory` points at `SE = σ/√n; determines precision of sample mean estimate; confidence interval is mean ± t*SE`, which does not exist
-- `sc2_statistics_significance_test` points at `p is probability of data if null hypothesis is true; p < 0.05 usually means reject null`, which does not exist
-- `sc2_statistics_t_test` points at `t = (mean1 - mean2) / (SE of difference); compares two small samples`, which does not exist
 

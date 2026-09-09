@@ -139,98 +139,86 @@ The military technologies that follow are a tree of consequences. Each one defea
 
 ### percussion_cap - Percussion Cap
 
-**What it is / why you want it.** A small metal cup containing a detonating compound (fulminates of mercury) that ignites when struck by a hammer. The percussion cap eliminates the flint-and-frizzen mechanism and allows a musket to fire in any weather.
+**What it is / why you want it.** A small copper cup with mercury fulminate that detonates when struck. Reliable in any weather.
 
-**Why you would never guess this.** For 200 years, flintlock weapons were dominant. The problem is that flint degrades, requires constant maintenance, and misses in rain. The solution is a chemical discovery: fulminates are compounds that detonate from a sharp blow, unlike powder which requires sustained flame. A small amount of mercury fulminate packed in a copper or tin cup will fire reliably when struck. The cap is so small and reliable that it enabled the next generation of firearms.
+**Why you would never guess this.** Mercury fulminate detonates from a sharp blow, not flame. A small cap is far more reliable than flint and frizzen.
 
-**Prerequisites.** Mercury (Almaden mines, Spain), copper, tin, nitric acid, alcohol, gunsmithing skill.
+**Prerequisites.** Mercury (controlled imperial resource), copper, nitric acid.
 
-**Roman-available inputs.** Mercury (from Spain, imperially controlled - you need permission), copper (abundant), tin (from Cornwall), saltpetre and sulfur (for making nitric acid).
+**Roman-available inputs.** Mercury (Spain, imperial control), copper, tin, saltpetre, sulfur.
 
 **Procedure.**
 
-1. Obtain mercury: 1 kg per 1000 percussion caps (20 grams per cap). Mercury is under imperial control and requires authorization.
-2. Make nitric acid by distilling a mixture of saltpetre, sulfur, and charcoal (1:1:1 ratio by weight) in a sealed clay retort heated to 300-400 degrees Celsius. Collect the acid vapor and condense it by cooling in a flask. This is dangerous and requires a skilled chemist. Yield: about 50% by weight of the mixture.
-3. Dissolve mercury in hot nitric acid (1 kg mercury in 2 liters of dilute nitric acid). The reaction is vigorous and produces nitrogen oxide fumes (brown, toxic). Perform this outdoors.
-4. Dilute the resulting solution with water. Add potassium carbonate (leeched from ash, which Romans call *sal alcali*) dropwise to the acidic solution until it stops foaming. A white-gray precipitate forms.
-5. Filter the precipitate and wash with water and then alcohol. The dry material is mercury fulminate.
-6. Pack approximately 0.2 grams of mercury fulminate into a small copper or tin cup (0.5 cm diameter, 0.3 cm tall) and seal the top with a thin paper disk. This is one percussion cap.
-7. Attach the cap to a nipple (a small brass post) soldered to the breech of a musket, replacing the touch hole. The nipple is 0.3 cm in diameter and projects 0.5 cm.
+1. Make nitric acid by distilling saltpetre and sulfur mixture at 300-400 degrees Celsius.
+2. Dissolve mercury in hot nitric acid (outdoors - toxic brown fumes).
+3. Add potassium carbonate until foaming stops. Filter white-gray precipitate.
+4. Wash with water and alcohol. Dry to get mercury fulminate.
+5. Pack 0.2 grams into 0.5 cm copper cup, seal with paper.
+6. Attach to breech nipple.
 
-**How you know it worked.** Place a percussion cap on the nipple. Cock the hammer of the musket and pull the trigger. The hammer strikes the cap, the cap detonates, the percussion fires a channel into the breech powder charge.
+**How you know it worked.** Cap on nipple, hammer strikes, cap detonates, fires breech charge.
 
-**Failure modes.** Weak fulminate: if mercury fulminate is not fully decomposed from the acid reaction, it will not detonate reliably. The solution is to re-process. Weak seal on the cap: if the paper seal is not tight, moisture enters and the fulminate degrades. Use good paper and press firmly. Misaligned nipple: if the nipple is not properly aligned with the hammer, the cap will not be struck squarely.
+**Cost & labour.** 40-60 hours per 1000 caps. Mercury cost: 500-600 denarii. Total: 0.5-0.6 denarii per cap.
 
-**Cost & labour.** Personal hours: 40-60 hours per 1000 caps (preparation of fulminate and filling/sealing). Mercury required: expensive and controlled. Materials cost per 1000 caps: 500-600 denarii for mercury (MEASURED from 19th-century cost), 10 denarii for copper/tin cups, 5 denarii for paper and seals. MEASURED total: 515-615 denarii per 1000 caps or 0.5-0.6 denarii per cap. Capital: retort and glassware (200 denarii), drying equipment (50 denarii).
+**Danger.** Physical: Mercury fulminate is highly explosive. Mercury is poisonous. Nitric acid is corrosive. Social: Mercury is imperial controlled. Unauthorized manufacture is crime.
 
-**Danger.** Physical: Mercury fulminate is highly explosive. Even a small amount of friction or heat can detonate it. Mercury is poisonous. Nitric acid is a strong corrosive. Nitrogen oxide fumes are toxic. Improper handling can cause severe burns or death. Social: Percussion caps require mercury from imperial sources. Unauthorized manufacture is a serious crime.
-
-**Confidence: MEDIUM.** Mercury fulminate chemistry is well understood from the early 19th century. The hazards of manufacture are well documented and substantial. The safety practices required are rigorous. Roman-era feasibility is plausible but the social friction (mercury control, chemical knowledge) is significant.
+**Confidence: MEDIUM.** Chemistry well understood from 19th century. Mercury control is significant friction.
 
 ---
 
 ### metallic_cartridge - Metallic Cartridge
 
-**What it is / why you want it.** A brass or steel case containing powder, a bullet, and a primer (percussion cap), all in one unit. The cartridge enables rapid loading and simplifies ammunition supply.
+**What it is / why you want it.** A brass case holding powder, bullet, and percussion cap in one unit. Enables rapid loading.
 
-**Why you would never guess this.** For 200 years, soldiers loaded powder and ball separately. The cartridge combines them. This requires precision metalworking (brass or steel cases), a percussion cap pressed into a primer pocket, and testing so the case does not rupture. The cartridge is reliable only once metalworking precision reaches industrial standards. But once achieved, the cartridge changes everything about ammunition and loading.
+**Why you would never guess this.** Soldiers had loaded powder and ball separately for 200 years. The cartridge combines them, requiring precision metalworking to make cases that don't rupture.
 
-**Prerequisites.** Percussion cap, brass/steel working, drawn or stamped brass or steel cases, bullet casting, gunsmithing.
+**Prerequisites.** Percussion cap, brass/steel working, bullet casting.
 
-**Roman-available inputs.** Brass (from copper by cementation), steel, copper, lead.
+**Roman-available inputs.** Brass (from copper), steel, lead.
 
 **Procedure.**
 
-1. Draw a brass tube from a brass bar by heating and drawing over a mandrel (2.5 cm long, 1.2 cm outer diameter). Alternatively, cast and machine the case from brass.
-2. Flare one end of the tube to hold a percussion cap. The flare should be shallow - about 1 mm expansion.
-3. Seat a percussion cap in the flared end with a small press. The cap should sit flush with the case.
-4. Fill the case with 2-3 grams of corned powder, depending on the cartridge size.
-5. Seat a cast lead bullet into the mouth of the case. The bullet diameter should be 0.1-0.2 mm larger than the case diameter, so it is compressed slightly as it enters. This creates a tight seal.
-6. Crimp the case mouth slightly around the bullet base to hold it in place.
+1. Draw brass tube 2.5 cm long by heating over mandrel.
+2. Flare one end 1 mm to hold percussion cap.
+3. Press cap into flared end.
+4. Fill with 2-3 grams corned powder.
+5. Seat lead bullet (0.1-0.2 mm oversized) into mouth.
+6. Crimp case mouth around bullet base.
 
-**How you know it worked.** Load a single cartridge into a musket with a breech-loading mechanism (see breech_loader). Fire the weapon. The percussion cap should ignite, the powder should burn, and the bullet should fire. The case should be recoverable and not cracked or ruptured.
+**How you know it worked.** Load into breech-loader, fire, case doesn't rupture.
 
-**Failure modes.** Weak case: if the brass is drawn too thin, the case can rupture when fired, causing injury to the shooter and spilling powder. Improper primer: if the percussion cap is not seated firmly, it can separate during loading or firing. Loose bullet: if the bullet is too small for the case, it can move during transport or firing, causing misfires or inaccuracy.
+**Cost & labour.** 10-15 hours per 100 cartridges. Total: 1.15 denarii per 100 cartridges or 0.0115 per cartridge.
 
-**Cost & labour.** Personal hours: 10-15 hours per 100 cartridges (case drawing or casting, priming, loading, crimping). Materials per 100 cartridges: brass (0.3 kg at 0.5 denarii per kg = 0.15 denarii), percussion caps (0.6 denarii), powder (0.3 denarii), lead (0.1 denarii). MEASURED total: 1.15 denarii per 100 cartridges or 0.0115 denarii per cartridge. Capital: press equipment (150 denarii), case-drawing equipment (100 denarii).
+**Danger.** Physical: Can detonate if dropped or crushed. Social: Unauthorized manufacture is crime.
 
-**Danger.** Physical: Metallic cartridges contain live percussion caps and powder. They can detonate if dropped hard, crushed, or heated. Improper seating of the cap or bullet can cause a rupture when fired. Social: Metallic cartridges are military ammunition. Unauthorized possession or manufacture is a crime.
-
-**Confidence: MEDIUM.** The chemistry of percussion caps is well understood. The metalworking is straightforward. The main challenge is achieving the precision in case drawing or stamping required to make safe, consistent ammunition. Roman metalworking can achieve this, but it requires organized production.
+**Confidence: MEDIUM.** Metalworking is straightforward but requires precision.
 
 ---
 
 ### rifling - Rifled Barrel
 
-**What it is / why you want it.** A musket barrel with spiral grooves cut into the bore. The grooves cause the bullet to spin as it travels down the barrel, dramatically improving accuracy at long range.
+**What it is / why you want it.** Spiral grooves in the bore that make bullets spin, dramatically improving accuracy at long range.
 
-**Why you would never guess this.** A smooth-bore musket is inherently inaccurate. The bullet is smaller than the bore (to allow easy loading) and bounces around as it travels. A rifled barrel uses grooves that force a slightly larger bullet to spin, stabilizing its flight. The accuracy improvement is dramatic - a rifled musket at 100 meters is as accurate as a smooth-bore musket at 50 meters. But rifling requires precision machining or careful hand-work, and a rifled barrel is much harder to load because the bullet must be driven into the grooves. Rifling takes two developments: the rifled barrel itself (possible with 16th-century tools) and a fast-loading method (the minié ball, which expands on firing to engage the grooves).
+**Why you would never guess this.** Smooth-bore bullets bounce in the bore. Rifling forces a slightly larger bullet to spin, stabilizing flight. A rifled musket at 100 meters is as accurate as smooth-bore at 50 meters.
 
-**Prerequisites.** Barrel forging (from matchlock), steel working, machining tools or hand-cutting tools, bullet molds.
+**Prerequisites.** Barrel forging, steel working, hand-cutting tools.
 
-**Roman-available inputs.** Steel (from bloomery), iron tools, chisels, files.
+**Roman-available inputs.** Steel, iron tools, chisels, files.
 
 **Procedure.**
 
-1. Forge a barrel from iron as in the matchlock entry.
-2. Using a spiral template, mark the barrel with a line following a helix around the bore. The pitch should be one complete turn per 25-50 cm of barrel length (a slow twist for smooth, large-caliber weapons; a faster twist for smaller, longer-range rifles).
-3. Using a hand chisel or cutter, carefully cut a groove following the marked line. The groove should be 2-3 mm wide and 2-3 mm deep. This is very slow work - a single barrel may take 10-20 hours.
-4. Repeat for 4-6 grooves spaced evenly around the bore.
-5. Smooth the grooves with a file to remove burrs and rough edges.
+1. Forge barrel as in matchlock entry.
+2. Mark spiral line on bore following helix, one turn per 25-50 cm.
+3. Hand-cut 4-6 grooves 2-3 mm wide and deep following mark. 10-20 hours per barrel.
+4. Smooth with file to remove burrs.
 
-Alternatively, if precision lathes are available:
-1. Chuck the barrel in a precision lathe capable of controlling both rotation and linear travel (a 3rd-century invention if available, though probably not in Rome).
-2. Use a cutting tool to cut the grooves while the barrel rotates. This is much faster - 1-2 hours per barrel - but requires precision equipment.
+**How you know it worked.** Oversized lead bullet (.2-.5 mm), driven hard into grooves. Fire at 50-100 meters - hits within 10 cm of aim point. Smooth-bore would be accurate only within 30-50 cm.
 
-**How you know it worked.** Cast bullets slightly larger than the barrel bore (0.2-0.5 mm oversized). Load a rifle by starting the bullet at the muzzle and driving it down with a ramrod and wooden block. The ramrod should require significant force - the bullet must be compressed into the grooves. Fire the weapon. At 50-100 meters, the bullet should strike within 10 cm of the aimed point (a smooth-bore musket at the same range is accurate only within 30-50 cm).
+**Cost & labour.** 100-200 hours gunsmith labor. Total: 25-40 denarii per rifle. 1-2 per month.
 
-**Failure modes.** Shallow grooves: if the grooves are too shallow, the bullet does not engage properly and spinning is minimal. Deepen the grooves. Irregular grooves: if the grooves vary in width or depth, the bullet does not spin uniformly. This must be corrected by careful hand-work. Stripped grooves: if the grooves are too narrow or shallow, the bullet can strip the grooves and still slide past. This is poor accuracy.
+**Danger.** Physical: Chisel can slip and injure hand. Social: Rifled weapons represent military advantage.
 
-**Cost & labour.** Personal hours: 100-200 hours of a skilled gunsmith per barrel (including forging, marking, cutting, smoothing, and fitting). If lathes are available, reduce to 50 hours. Materials: steel (same as smooth-bore barrel, about 1 denarius). Capital: precision tools or lathe (if available, 500+ denarii). Total cost per rifle: 25-40 denarii. Production rate: 1-2 rifles per month without lathes, 3-4 with lathes.
-
-**Danger.** Physical: Cutting grooves by hand is tedious and error-prone. A chisel can slip and cut the gunsmith's hand. If grooves are cut unevenly, the rifle can fire erratically or dangerously. Social: Rifled weapons are superior to smooth-bore muskets in military value. An empire that controls rifled-weapon production gains a significant advantage.
-
-**Confidence: HIGH.** Rifling is well documented from the 15th century onward. Hand-cutting grooves is labor-intensive but straightforward. Lathe-cutting is more efficient but requires precision machinery.
+**Confidence: HIGH.** Well documented from 15th century. Labor-intensive but straightforward.
 
 ---
 

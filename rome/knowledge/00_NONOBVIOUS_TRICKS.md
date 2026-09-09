@@ -274,7 +274,16 @@ on glass. Get it early and it pays for itself in data.
 
 ---
 
-## Anti-tricks: things that look like shortcuts and are not
+## Anti-tricks: things that look like shortcuts and probably are not
+
+**This section is advice, not law, and the simulator does not enforce any of
+it.** Every strategy file is just an ordering, `play` mode lets you start
+anything whose prerequisites are met, and nothing here is blocked. If you think
+chasing the steam engine in year three is right, do it and see. The model exists
+to be argued with, and the list below is a prediction I could be wrong about,
+not a rule.
+
+With that said, here is what I expect to go badly and why:
 
 - **Do not chase the steam engine early.** It is gated on boring, on boiler
   plate, and on cheap coal. Water power is abundant in Italy and Gaul and gets
