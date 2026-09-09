@@ -3931,7 +3931,14 @@
    "note": "The crucial detail is the slight inward slope that keeps water on the bench instead of running off the outer edge",
    "ph": 50.0,
    "pre": [],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "intensive_land",
+     "options": {
+      "fud_chinampa": 1.0
+     }
+    }
+   ],
    "rev": 120.0,
    "risk": 0.08,
    "sch": 0.0,
@@ -36267,7 +36274,15 @@
    "pre": [
     "sea_sternpost_rudder"
    ],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "hull",
+     "options": {
+      "sea_clinker_hull": 0.9,
+      "tr_frame_first_construction": 1.0
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.25,
    "sch": 1.0,
@@ -59157,7 +59172,15 @@
    "note": "ROME HAS THIS at scale. Noricum is famous for it. Soft, tough, weldable, no useful casting.",
    "ph": 0.0,
    "pre": [],
-   "req_any": [],
+   "req_any": [
+    {
+     "group": "iron_source",
+     "options": {
+      "blast_furnace": 1.0,
+      "met_bloomery_bog_iron": 0.6
+     }
+    }
+   ],
    "rev": 0.0,
    "risk": 0.0,
    "sch": 0.0,
@@ -115065,7 +115088,7 @@
    },
    "mat": {},
    "name": "Monumental stone construction without iron tools",
-   "note": "Dressing and placing large stone using stone tools, sand abrasive, ramps and enormous organised labour. The absence of iron chisels is not the obstacle people assume: it changes the time per block, not the possibility.",
+   "note": "Dressing and placing large stone using stone tools, sand abrasive, ramps and enormous organised labour. The absence of iron chisels is not the obstacle people assume: it changes the time per block, not the possibility. Nothing downstream requires it: it is what a society builds WITH its capability, not a step toward more.",
    "ph": 150,
    "pre": [],
    "rev": 0,
@@ -115098,7 +115121,7 @@
    },
    "mat": {},
    "name": "Obsidian blade knapping",
-   "note": "A pressure-flaked obsidian edge is sharper than any steel scalpel, a few molecules across, and it is the reason Mesoamerican surgery and butchery needed no metal. It is also brittle and blunts at once, so it is a consumable, not a tool.",
+   "note": "A pressure-flaked obsidian edge is sharper than any steel scalpel, a few molecules across, and it is the reason Mesoamerican surgery and butchery needed no metal. It is also brittle and blunts at once, so it is a consumable, not a tool. Nothing downstream requires it: it is a finished tool, not a rung.",
    "ph": 40,
    "pre": [],
    "rev": 150,

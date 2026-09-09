@@ -131,6 +131,17 @@ def haversine_km(lat1, lon1, lat2, lon2):
     a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlmb / 2) ** 2
     return 2 * r * math.asin(math.sqrt(a))
 
+def _load_tech_effects():
+    p = os.path.join(CIVDIR, "_TECH_EFFECTS.json")
+    try:
+        return {k: v for k, v in json.load(open(p)).items() if not k.startswith("_")}
+    except Exception:
+        return {}
+
+
+TECH_EFFECTS = _load_tech_effects()
+
+
 def load_civ(name="rome_100ad"):
     """A civilization is DATA, not code. Swapping Rome for Han China, Viking
     Norway, Mexica Tenochtitlan or somewhere invented is a different file, not a
@@ -806,6 +817,36 @@ class Sim:
             return "wait: your existing institutions add %s each year." % kind
         return "To get more %s: %s." % (kind, "; ".join(bits[:3]))
 
+    def apply_tech_effects(self, k):
+        """Building something changes what this society is like.
+
+        _TECH_EFFECTS.json was written, committed with a description of what it
+        would do, and never referenced by any code. Printing raised nobody's
+        literacy; the scientific method reduced nobody's fear of the
+        inexplicable. The whole argument for teaching and printing early is that
+        they change people, and the model quietly did not implement it.
+        """
+        eff = TECH_EFFECTS.get(k)
+        if not eff:
+            return
+        changed = []
+        for field, delta in eff.items():
+            if field.startswith("_") or not isinstance(delta, (int, float)):
+                continue
+            if field in self.w:
+                before = self.w[field]
+                self.w[field] = max(-1.0, min(1.5, before + delta))
+                changed.append(field)
+            elif field in ("literacy_general", "literacy_elite", "state_capacity"):
+                before = float(self.civ.get(field, 0.0))
+                self.civ[field] = max(0.0, min(1.0, before + delta))
+                if field == "state_capacity":
+                    self.state_capacity = self.civ[field]
+                changed.append(field)
+        if changed:
+            self.log.append((self.year, "%s changes the society: %s"
+                             % (self.nodes[k]["name"], ", ".join(sorted(changed)))))
+
     def knowledge_risk(self):
         """How exposed your finished work is to being forgotten, and to what.
 
@@ -913,11 +954,24 @@ class Sim:
         mults = self.civ.get("cost_multipliers") or {}
         if not mults:
             return 1.0
+        # A remedy lifts a handicap once you have built the thing that answers
+        # it. This was written into every civilization file and then never wired
+        # into the code at all: a playtester built collegium_licensed, watched
+        # the public-works multiplier sit unchanged at 1.53, and went and read
+        # the source to find that `handicap_remedies` is referenced nowhere.
+        # They were right. The feature existed only as data and as a claim in a
+        # commit message.
+        rem = self.civ.get("handicap_remedies") or {}
         n = self.nodes[k]
         f = 1.0
         for key in (n.get("cat"), ) + tuple(n.get("traits") or ()):
-            if key in mults:
-                f *= float(mults[key])
+            if key not in mults:
+                continue
+            m = float(mults[key])
+            r = rem.get(key)
+            if isinstance(r, dict) and r.get("node") in self.done:
+                m = float(r.get("residual", 1.0))
+            f *= m
         return f
 
     def rep_factor(self):
@@ -1913,6 +1967,9 @@ class Sim:
         self.bountied.discard(k)
         self.done.add(k)
         self.done_year[k] = self.year
+        # A technology changes the society that built it. Only for work YOU
+        # completed: a society is not altered by owning something it always had.
+        self.apply_tech_effects(k)
         # Visible, useful, State-approved work builds standing. Obscure laboratory
         # work does not, however important it is, which is a real and annoying fact
         # about how credibility actually accrues.
