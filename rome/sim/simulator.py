@@ -878,6 +878,16 @@ class Sim:
         # see the work in front of you even if you cannot see past it
         return self.start_reason(k)[0]
 
+    def fog_scrub(self, text):
+        """Strip node ids the player has not discovered out of a message."""
+        if not text or not getattr(self, "fog", False):
+            return text
+        out = text
+        for k in self.nodes:
+            if k in out and not self.is_visible(k):
+                out = out.replace(k, "something you have not heard of")
+        return out
+
     def fog_summary(self, k):
         """One sentence. Deliberately not the whole note, and never the unlocks."""
         note = (self.nodes[k].get("note") or "").strip()
@@ -1757,12 +1767,24 @@ class Sim:
                                              % len(shed)))
         else:
             self.insolvent_years = 0
-        # a standing workforce policy: buy when short of hands and flush, and
-        # free them steadily, which is both the decent and the efficient choice
-        if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
-            self.buy_slaves(min(6, int(self.capital // 1500)))
-        if self.slaves and self.rng.random() < 0.25:
-            self.manumit(max(1, self.slaves // 4))
+        # A standing workforce policy, and ONLY when the optimizer is playing.
+        #
+        # This used to run in manual mode too, so a player who never issued a
+        # buy command watched `slaves` climb on its own with no prompt and no log
+        # line. A tester caught it and put the objection better than I can: the
+        # game's own justification for modelling slavery at all is that "a model
+        # that hides it lies about the cost of everything", and then it was
+        # hiding the acquisition. Buying people on someone's behalf without
+        # telling them is the worst version of that.
+        if not self.manual:
+            if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
+                got = self.buy_slaves(min(6, int(self.capital // 1500)))
+                if got:
+                    self.log.append((yr, "bought %d people for the workshop" % got))
+            if self.slaves and self.rng.random() < 0.25:
+                freed = self.manumit(max(1, self.slaves // 4))
+                if freed:
+                    self.log.append((yr, "freed %d people" % freed))
         # currency debasement and war damage now come from the civilization's
         # own hazard list, not from Rome's dates baked into the engine
         if self.output_factor < 1.0:
@@ -2690,7 +2712,12 @@ def _node_explain(s, nodes, k):
         "on_goal_path": k == s.goal or s.goal in blocks,
         "done": k in s.done, "active": k in s.active,
         "can_start_now": (not started) and s.can_start(k),
-        "start_blocked_reason": None if started else s.start_reason(k)[1],
+        # Under fog this used to name locked prerequisites in full, so a tester
+        # learned the name and description of the printing press from an
+        # unrelated node's explanation while `why` on the press itself said they
+        # had never heard of it. If you cannot see a thing, you cannot see its
+        # name in someone else's sentence either.
+        "start_blocked_reason": None if started else s.fog_scrub(s.start_reason(k)[1]),
     }
 
 
