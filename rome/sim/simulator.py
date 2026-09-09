@@ -847,6 +847,46 @@ class Sim:
             self.log.append((self.year, "%s changes the society: %s"
                              % (self.nodes[k]["name"], ", ".join(sorted(changed)))))
 
+    # FOG OF WAR. Without it the player sees the entire tree from the first
+    # minute, including exactly what a transistor needs, which is both a spoiler
+    # and a lie about what knowing something feels like. With fog on you see
+    # what you have built in full, what you could start next as a one line
+    # summary, and nothing at all about where any of it leads.
+    def reveal_from(self, k):
+        """Completing something teaches you what it leads towards, vaguely."""
+        if not getattr(self, "fog", False):
+            return
+        self.revealed = set(getattr(self, "revealed", set()))
+        self.revealed.add(k)
+        for other, n in self.nodes.items():
+            if k in n.get("pre", []):
+                self.revealed.add(other)
+            for g in n.get("req_any", []):
+                if k in (g.get("options") or {}):
+                    self.revealed.add(other)
+
+    def is_visible(self, k):
+        """Can the player see this node at all?"""
+        if not getattr(self, "fog", False):
+            return True
+        if k in self.done or k in self.active:
+            return True
+        if k in getattr(self, "revealed", set()):
+            return True
+        # anything you could start right now is visible by definition: you can
+        # see the work in front of you even if you cannot see past it
+        return self.start_reason(k)[0]
+
+    def fog_summary(self, k):
+        """One sentence. Deliberately not the whole note, and never the unlocks."""
+        note = (self.nodes[k].get("note") or "").strip()
+        if not note:
+            return self.nodes[k]["name"]
+        for sep in (". ", "? ", "! "):
+            if sep in note:
+                return note.split(sep)[0].strip() + "."
+        return (note[:160] + ("..." if len(note) > 160 else ""))
+
     def knowledge_risk(self):
         """How exposed your finished work is to being forgotten, and to what.
 
@@ -1970,6 +2010,7 @@ class Sim:
         # A technology changes the society that built it. Only for work YOU
         # completed: a society is not altered by owning something it always had.
         self.apply_tech_effects(k)
+        self.reveal_from(k)
         # Visible, useful, State-approved work builds standing. Obscure laboratory
         # work does not, however important it is, which is a real and annoying fact
         # about how credibility actually accrues.
@@ -2457,8 +2498,82 @@ def _agent_state(s, nodes):
         "forest_ha": round(s.forest_ha, 1),
         "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},
         "slaves": s.slaves, "freedmen": s.freedmen,
-        "goal": s.goal, "goal_reached": s.goal_year is not None, "goal_year": s.goal_year,
+        "goal": None if getattr(s, "fog", False) else s.goal,
+        "goal_reached": s.goal_year is not None, "goal_year": s.goal_year,
+        "fog_of_war": getattr(s, "fog", False),
         "manual": s.manual, "ended": end_reason is not None, "end_reason": end_reason,
+    }
+
+
+def _agent_help(s):
+    """Everything a player needs, from inside the game.
+
+    A tester should not have to be told the commands out of band, and neither
+    should a player. If the only way to learn this game is for someone to hand
+    you a protocol document, the game is not finished.
+    """
+    fog = getattr(s, "fog", False)
+    return {
+        "what this is": (
+            "You are one person, dropped into a pre-industrial society, carrying "
+            "the knowledge of how modern technology works but none of the "
+            "industry that makes it. You are playing %s, beginning in %d. "
+            "Knowing how a thing works is free. Building it is not: it takes your "
+            "own hours, other people's hours, money, materials, and years."
+            % (s.civ.get("name", "a society"), s.cfg["start_year"])),
+        "how a turn works": (
+            "Nothing happens until you make it happen. You begin projects, then "
+            "advance time. Projects consume money and hours while they run. You "
+            "are charged for food, rent and appearances every year whether or not "
+            "you are building anything."),
+        "what you are trying to do": (
+            "Advance as far as you can before the horizon at %d. There is no "
+            "score but the state of what you have built." % s.end_year
+            if fog else
+            "Reach %s, and see the rest of what you can build on the way."
+            % s.goal),
+        "commands": {
+            "state": "everything about your position right now",
+            "available": "what you could begin today" + (
+                ", one line each" if fog else ", in full"),
+            "why <id>": "everything known about one thing",
+            "start <id>": "begin work on something",
+            "stop <id>": "abandon it, losing what you have spent",
+            "step <years>": "let time pass",
+            "buy": "forest, mine, slaves, or manumit; see 'economy' below",
+            "bounty <id>": "pay someone else to solve it instead of building it",
+            "path <id>": ("not available under fog of war"
+                          if fog else "what something still needs"),
+            "save <file>": "write the game to a file",
+            "load <file>": "read a game back",
+            "help": "this",
+            "quit": "stop",
+        },
+        "how to send a command": (
+            'One JSON object per line on standard input, for example '
+            '{"cmd":"available"} or {"cmd":"step","years":5} or '
+            '{"cmd":"start","id":"some_id"}. Each reply is one JSON object.'),
+        "playing across several sittings": (
+            "Pass --session FILE on the command line. The game is written to that "
+            "file after every command and read back when you start again, so you "
+            "do not need to hold a process open or write a script."),
+        "economy": {
+            "buy forest": '{"cmd":"buy","what":"forest","n":100} hectares of coppice, '
+                          'which is where charcoal comes from',
+            "buy mine": '{"cmd":"buy","what":"mine","material":"coal","n":500} tonnes '
+                        'a year of your own workings; it takes years to sink',
+            "buy slaves": '{"cmd":"buy","what":"slaves","n":5}. This is available '
+                          'because it was the ordinary condition of production in '
+                          'most of these societies, and a model that hides it lies '
+                          'about the cost of everything.',
+            "manumit": '{"cmd":"buy","what":"manumit","n":5} frees people you hold. '
+                       'They then work better, and it is the decent thing.',
+        },
+        "fog of war": (
+            "ON. You can see what you have built, what you could begin today as a "
+            "one line summary, and things you have heard of but cannot yet begin. "
+            "You cannot see where anything leads, and there is no way to view the "
+            "whole tree." if fog else "OFF. You can see the whole tree."),
     }
 
 
@@ -2468,17 +2583,38 @@ def _agent_available(s, nodes):
         if not s.can_start(k):
             continue
         n = nodes[k]
-        out.append({"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
-                    "cost": round(n["_total_cost"], 1), "founder_hours": n["ph"],
-                    "calendar_floor_years": n["yrs"], "risk": n["risk"],
-                    "prerequisites": n["pre"], "note": n["note"]})
+        if getattr(s, "fog", False):
+            # One sentence, the price, and how long. No prerequisites, because
+            # you already have them, and above all no hint of what it leads to.
+            out.append({"id": k, "name": n["name"],
+                        "summary": s.fog_summary(k),
+                        "cost": round(n["_total_cost"] * s.civ_cost_factor(k)
+                                      * s.material_cost_factor(k) * s.money_real, 1),
+                        "your_hours": n["ph"],
+                        "least_years": n["yrs"],
+                        "chance_of_failure": n["risk"]})
+        else:
+            out.append({"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
+                        "cost": round(n["_total_cost"], 1), "founder_hours": n["ph"],
+                        "calendar_floor_years": n["yrs"], "risk": n["risk"],
+                        "prerequisites": n["pre"], "note": n["note"]})
+    if getattr(s, "fog", False):
+        heard = sorted(k for k in getattr(s, "revealed", set())
+                       if k not in s.done and k not in s.active
+                       and not s.start_reason(k)[0])
+        return {"count": len(out), "available": out,
+                "heard_of_but_cannot_begin": [
+                    {"id": k, "name": nodes[k]["name"],
+                     "why_not": s.start_reason(k)[1]} for k in heard[:40]],
+                "note": "Under fog you see only what you could begin now, and things "
+                        "you have heard of. There is no way to see the whole tree."}
     return {"count": len(out), "available": out}
 
 
 def _node_explain(s, nodes, k):
     n = nodes[k]
     need = closure(nodes, k) - {k}
-    unlocks = [m for m in nodes if k in nodes[m]["pre"]]
+    unlocks = [] if getattr(s, "fog", False) else [m for m in nodes if k in nodes[m]["pre"]]
     blocks = {m for m in nodes if k in closure(nodes, m)} - {k}
     bounty_by_type = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                       "power", "agriculture", "information", "instruments"))
@@ -2529,6 +2665,9 @@ def _agent_dispatch(s, nodes, cmd):
     op = cmd.get("cmd")
     ended = _agent_end_reason(s)
 
+    if op in ("help", "?", "commands"):
+        return {"ok": True, "help": _agent_help(s)}
+
     # One central guard rather than five. A playtester sent {"id": {"a": 1}} and
     # the process died on `k not in nodes` with an unhashable-type TypeError,
     # losing the whole session. A malformed command must cost you the command,
@@ -2546,6 +2685,10 @@ def _agent_dispatch(s, nodes, cmd):
 
     if op == "why":
         k = cmd.get("id")
+        if isinstance(k, str) and k in nodes and not s.is_visible(k):
+            return {"ok": False,
+                    "error": "you have never heard of that. You know what you have "
+                             "built and what you could begin now; use 'available'."}
         if not isinstance(k, str):
             return {"ok": False, "error": "id must be a string, got %s" % type(k).__name__}
         if k not in nodes:
@@ -2555,6 +2698,12 @@ def _agent_dispatch(s, nodes, cmd):
         return dict(ok=True, **_node_explain(s, nodes, k))
 
     if op == "path":
+        if getattr(s, "fog", False):
+            return {"ok": False,
+                    "error": "you cannot plan a route to something you have not "
+                             "discovered. Nobody can tell you what a thing requires "
+                             "until you know the thing exists. Use 'available' to see "
+                             "what you could begin now."}
         k = cmd.get("id")
         if k not in nodes:
             return {"ok": False, "error": "unknown node id %r" % k}
@@ -2665,6 +2814,19 @@ def _agent_dispatch(s, nodes, cmd):
             return {"ok": True, "manumitted": got, "freedmen": s.freedmen, "slaves": s.slaves}
         return {"ok": False, "error": "what must be one of: forest, mine, slaves, manumit"}
 
+    if op in ("save", "load"):
+        path = cmd.get("file") or cmd.get("path")
+        if not isinstance(path, str) or not path:
+            return {"ok": False, "error": 'give a filename, e.g. {"cmd":"save","file":"mygame.json"}'}
+        try:
+            if op == "save":
+                save_state(s, path)
+                return {"ok": True, "saved": path, "year": s.year}
+            load_state(s, path)
+            return {"ok": True, "loaded": path, "year": s.year}
+        except Exception as e:
+            return {"ok": False, "error": "could not %s %r: %s" % (op, path, e)}
+
     if op == "step":
         # It used to advance the clock silently after the run was over, which
         # looks identical to a working game that has simply stopped progressing.
@@ -2700,6 +2862,64 @@ def _agent_dispatch(s, nodes, cmd):
                                   "start, stop, bounty, buy, step, quit" % op}
 
 
+SAVE_FIELDS = (
+    "year", "capital", "done", "granted", "active", "done_year", "training",
+    "scholars", "artisans", "directors_extra", "reputation", "suspicion",
+    "scandal", "eminence", "protection", "familiarity", "forest_ha",
+    "nitre_bed_m2", "mine_capacity", "mine_pending", "mine_ready",
+    "mine_tranches", "market_pressure", "slaves", "freedmen",
+    "manumitted_total", "goal_year", "dead_reason", "insolvent_years",
+    "bribes_ytd", "living_cost_paid", "mine_cost_paid", "spend_last_year",
+    "output_factor", "economy", "throttle", "binding", "bountied",
+    "stalled", "life_left", "founder_alive", "revealed",
+)
+
+
+def save_state(s, path):
+    """Write the whole game to a file.
+
+    There was no save, which is why every playtester ended up writing a driver
+    script to hold one long session across many calls. That is a thing a tester
+    can do and a player should never have to, so the fix is not a better script,
+    it is a save file.
+    """
+    blob = {}
+    for f in SAVE_FIELDS:
+        v = getattr(s, f, None)
+        if isinstance(v, set):
+            v = {"__set__": sorted(v)}
+        blob[f] = v
+    blob["_civ"] = s.civ.get("id")
+    blob["_civ_live"] = {k: s.civ.get(k) for k in
+                         ("literacy_general", "literacy_elite", "state_capacity")}
+    blob["_weights"] = dict(s.w)
+    blob["_fog"] = getattr(s, "fog", False)
+    blob["_version"] = 1
+    tmp = path + ".tmp"
+    with open(tmp, "w") as fh:
+        json.dump(blob, fh, indent=1, sort_keys=True, default=str)
+    os.replace(tmp, path)          # atomic: a crash mid-save cannot eat the game
+    return path
+
+
+def load_state(s, path):
+    blob = json.load(open(path))
+    for f in SAVE_FIELDS:
+        if f not in blob:
+            continue
+        v = blob[f]
+        if isinstance(v, dict) and "__set__" in v:
+            v = set(v["__set__"])
+        setattr(s, f, v)
+    for k, v in (blob.get("_civ_live") or {}).items():
+        if v is not None:
+            s.civ[k] = v
+    s.w.update(blob.get("_weights") or {})
+    s.state_capacity = float(s.civ.get("state_capacity", s.state_capacity))
+    s.fog = bool(blob.get("_fog", False))
+    return s
+
+
 def cmd_agent(a):
     """Machine-playable driver: JSON in, JSON out. See the module docstring for
     the protocol. Runs in Sim.manual mode ALWAYS, regardless of any other flag:
@@ -2717,10 +2937,36 @@ def cmd_agent(a):
     s.goal = goal
     s.done_year = {}
     s.end_year = s.cfg["start_year"] + a.horizon
+    s.fog = bool(getattr(a, "fog", False))
+    s.revealed = set()
+
+    session = getattr(a, "session", None)
+    if session and os.path.exists(session):
+        try:
+            load_state(s, session)
+        except Exception as e:
+            sys.stdout.write(json.dumps(
+                {"ok": False, "error": "could not read the save file %r: %s" % (session, e)}
+            ) + "\n")
+            return 1
 
     def emit(obj):
         sys.stdout.write(json.dumps(obj) + "\n")
         sys.stdout.flush()
+
+    # A player who has been told nothing but the path to this file must still be
+    # able to start. On a new game the first line out is the whole briefing,
+    # unasked, because there is nowhere else for them to learn it.
+    # To STDERR, deliberately. stdout is the protocol and must stay exactly one
+    # reply per command: an unsolicited line there shifts every index and breaks
+    # anything parsing positionally, which it promptly did to my own tests.
+    if not (session and os.path.exists(session)):
+        sys.stderr.write(json.dumps(
+            {"welcome": _agent_help(s),
+             "read this first": "This is the only instruction you get. Everything "
+                                "else is here or in {\"cmd\":\"help\"}."},
+            indent=1) + "\n")
+        sys.stderr.flush()
 
     if a.script:
         try:
@@ -2733,6 +2979,8 @@ def cmd_agent(a):
             return 1
         for c in cmds:
             emit(_agent_dispatch(s, nodes, c))
+            if session:
+                save_state(s, session)
         return 0
 
     # REPL over stdin/stdout: one JSON command per line in, one JSON object
@@ -2760,6 +3008,8 @@ def cmd_agent(a):
                              "The game is intact; try something else."
                              % (type(e).__name__, e)}
         emit(resp)
+        if session:
+            save_state(s, session)
         if isinstance(cmd, dict) and cmd.get("cmd") == "quit":
             break
     return 0
@@ -3031,6 +3281,13 @@ def main():
                    help="starting wealth: " + ", ".join(STARTING_KITS))
     q.add_argument("--no-events", action="store_true",
                    help="turn off random hazards, for a deterministic scripted playthrough")
+    q.add_argument("--fog", action="store_true",
+                   help="fog of war: you see what you have built and what you could "
+                        "begin next, and nothing about where any of it leads")
+    q.add_argument("--session", default=None,
+                   help="a save file. Loaded if it exists, written after every "
+                        "command, so you can play across separate invocations "
+                        "without holding a process open")
     q.add_argument("--script", default=None,
                    help="path to a JSON file holding a list of command objects, "
                         "played in order instead of reading stdin")
