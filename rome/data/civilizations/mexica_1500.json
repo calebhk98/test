@@ -42,7 +42,9 @@
   "bribability": 0.35,
   "patronage_weight": 0.75,
   "adaptation_rate": 0.09,
-  "_note": "w_religious_rigidity 0.9 is the dominant constraint: the calendar and the ritual cycle govern the year and anything touching them is dangerous. But an inexplicable effect is likelier to be read as divine favour than as a crime, so w_magic_fear is LOWER than Rome's, which is a genuinely different strategic situation."
+  "_note": "w_religious_rigidity 0.9 is the dominant constraint: the calendar and the ritual cycle govern the year and anything touching them is dangerous. But an inexplicable effect is likelier to be read as divine favour than as a crime, so w_magic_fear is LOWER than Rome's, which is a genuinely different strategic situation.",
+  "w_eminence_danger": 0.7,
+  "_note_eminence": "A theocratic hierarchy with a strong priesthood; standing outside it is dangerous."
  },
  "hazards": [
   {

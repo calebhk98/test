@@ -50,7 +50,9 @@
   "bribability": 0.65,
   "patronage_weight": 0.7,
   "adaptation_rate": 0.09,
-  "_note": "w_religious_rigidity 0.8 and w_magic_fear 0.7: this is the environment that produced heresy trials and, later, witch trials. Far more dangerous for a natural philosopher than Trajanic Rome, which had no doctrine to offend. Guilds resist labour-saving machinery violently and have legal standing to do it."
+  "_note": "w_religious_rigidity 0.8 and w_magic_fear 0.7: this is the environment that produced heresy trials and, later, witch trials. Far more dangerous for a natural philosopher than Trajanic Rome, which had no doctrine to offend. Guilds resist labour-saving machinery violently and have legal standing to do it.",
+  "w_eminence_danger": 0.55,
+  "_note_eminence": "A king who can attaint you, but also chartered towns, guilds and a church with its own courts, so power is more divided than in Rome."
  },
  "hazards": [
   {

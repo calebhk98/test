@@ -50,7 +50,9 @@
   "bribability": 0.6,
   "patronage_weight": 0.7,
   "adaptation_rate": 0.1,
-  "_note": "Merchants rank BELOW farmers and artisans in Confucian order, so w_commerce is negative: getting rich is not a route to status here, passing the examinations is. But alchemy and technical craft are far less likely to be called sorcery than in Rome."
+  "_note": "Merchants rank BELOW farmers and artisans in Confucian order, so w_commerce is negative: getting rich is not a route to status here, passing the examinations is. But alchemy and technical craft are far less likely to be called sorcery than in Rome.",
+  "w_eminence_danger": 0.8,
+  "_note_eminence": "Court factions and eunuch politics make eminence dangerous in much the same way, and the examination-literati class resents an outsider."
  },
  "hazards": [
   {

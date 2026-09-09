@@ -2,9 +2,9 @@
 
 ## Why these hundred have no entry anywhere else
 
-These hundred technologies have costs and prerequisites in the tree but no build guide, because most are not chemistry or metallurgy, they are precision mechanics plus organisation, and the guide's other modules walk past them toward furnaces. A furnace is dramatic. A composing stick is not. But the composing stick lets one man outproduce a scriptorium of forty monks, and the punched card lets one clerk do what a hundred clerks did.
+These hundred technologies carry costs and prerequisites in the tree but no build guide, because most are precision mechanics plus organisation, not chemistry or metallurgy, and the guide's other modules walk past them toward furnaces. A furnace is dramatic. A composing stick is not. But the composing stick lets one man outproduce a scriptorium of forty monks, and the punched card lets one clerk do what a hundred clerks did.
 
-Two kinds appear below. The first is Roman-buildable now: papyrus, iron gall ink, the screw press, the crude telegraph relay. The second needs something Rome flatly lacks, usually a hard vacuum, a fine uniform powder, or a specific tropical latex, and each of those has an explicit note on where the missing piece lives.
+Two kinds appear below. The first is Roman-buildable now: papyrus, iron gall ink, the screw press, the crude telegraph relay. The second needs something Rome flatly lacks, usually a hard vacuum, a fine uniform powder, or a specific tropical latex, each flagged with a note on where the missing piece lives.
 
 Read the danger lines. Nothing else in this guide is as likely to get you killed by people rather than physics. A furnace that fails kills you. A press that runs kills the scribal economy's confidence in you, and a frightened elite is worse than a bad furnace, because it thinks.
 
@@ -14,197 +14,197 @@ Read the danger lines. Nothing else in this guide is as likely to get you killed
 
 ### if_papyrus - Papyrus sheet (*papyrus, biblus*)
 
-**What it is.** Rome's standard writing surface, from *Cyperus papyrus* pith, Nile Delta and Faiyum. You already have it; it is here so the two things built from misunderstanding it make sense.
+**What it is.** Rome's standard writing surface, *Cyperus papyrus* pith, Nile Delta and Faiyum. You already have it; it is here so the three things built from misunderstanding it make sense.
 
-**Why you would never guess this.** Papyrus never becomes pulp. Strips of pith laid crosswise, wetted, and pressed; the plant's own sap glues the layers as they dry. Beat it like rag pulp and you destroy it.
+**Why you would never guess this.** Papyrus never becomes pulp. Strips of pith, laid crosswise, wetted and pressed, are glued by the plant's own sap as they dry. Beat it like rag pulp and you destroy it.
 
 Also covers: if_parchment, if_rag_paper, if_bookbinding_case.
 
-**Parchment** (*pergamena*) is skin unhaired in a lime bath (2-3 weeks, turned daily), scraped, then dried stretched, never tanned; too much lime dissolves the collagen, too little leaves hair. Takes correction by knife-scrape, which papyrus cannot survive.
+**Parchment** (*pergamena*): skin unhaired in a lime bath (2-3 weeks, turned daily), scraped, dried under tension, never tanned; too much lime dissolves the collagen, too little leaves hair. Takes knife-scrape correction papyrus cannot survive.
 
-**Rag paper** is China's invention (Cai Lun, c.105 AD), not traded west for centuries; reinvent it by fulling linen rag to pulp until fibres **fray** (not merely soften, see `90_textiles.md`), diluting in a vat, lifting a wire-mesh mould through it, couching, pressing, drying.
+**Rag paper**: China's invention (Cai Lun, c.105 AD), not traded west for centuries; reinvent by fulling linen rag until fibres **fray**, not merely soften (`90_textiles.md`), diluting in a vat, lifting a wire-mesh mould through it, couching, pressing, drying.
 
-**Case binding**: sewn signatures through cords laced into boards survive centuries; glue alone fails in years. Raised bands protect the sewing from shear.
+**Case binding**: sewn signatures laced into boards survive centuries; glue alone fails in years.
 
-**Prerequisites.** `mat_papyrus`; `mat_parchment`; `mat_paper` plus fulling; `cap_tol_1mm`.
+**Prerequisites.** `mat_papyrus`, `mat_parchment`, `mat_paper` plus fulling, `cap_tol_1mm`.
 
-**Cost & labour.** ESTIMATED. A scribe copies 2-3 columns/hour; papyrus roughly a denarius per roll in Egypt, several times that shipped to Rome; parchment several times papyrus per equivalent area.
+**Cost & labour.** ESTIMATED. A scribe copies 2-3 columns/hour; papyrus roughly a denarius a roll in Egypt; parchment several times that per area.
 
-**Danger.** None. Build these first; no enemy is made by a better writing surface.
+**Danger.** None. Build these first.
 
-**Confidence: HIGH** for papyrus/parchment (attested daily use); **MEDIUM** for reinvented rag paper.
+**Confidence: HIGH** for papyrus/parchment; **MEDIUM** for reinvented rag paper.
 
 ---
 
 ### if_movable_type - Movable type, cast metal (*typi mobiles*)
 
-**What it is.** Casting thousands of identical metal letters that lock into a page and print thousands of impressions. The highest-leverage node in the tree for outrunning a magistrate's ability to suppress an idea.
+**What it is.** Casting thousands of identical letters that lock into a page and print thousands of impressions. The highest-leverage node in the tree for outrunning a magistrate's ability to suppress an idea.
 
-**Why you would never guess this.** The hard part is not the letter, it is that every piece of type must be the same height to a fraction of a millimetre or it does not print at all: tall pieces black, short ones blank. Gutenberg's invention was the **adjustable hand mould**: a punch (hardened steel, letter cut mirror-reversed) strikes a matrix (copper or brass) to leave a precise negative, which drops into a spring-adjustable mould casting every letter to one fixed body height regardless of width. One punch, unlimited identical type.
+**Why you would never guess this.** Every piece of type must be the same height to a fraction of a millimetre or it does not print: tall pieces black, short ones blank. Gutenberg's invention was the **adjustable hand mould**: a punch (steel, letter mirror-reversed) strikes a matrix (copper/brass) leaving a precise negative, which drops into a spring-adjustable mould casting every letter to one fixed body height regardless of width.
 
 Also covers: if_punch_and_matrix, if_type_mould, if_type_metal_alloy, if_linotype_machine.
 
 **Prerequisites.** `cap_tol_100um`, `mat_brass`, `cap_heat_1100`.
 
-**Roman-available inputs.** Lead (*plumbum*, Britain/Spain), tin (*stannum*, Cornwall), antimony (*stibium*, Anatolia). Lead alone is too soft; tin hardens; antimony **expands** slightly on cooling, filling the mould instead of shrinking from it. DERIVED ratio from later foundry practice: roughly 4 lead : 1 tin : 1 antimony.
+**Roman-available inputs.** Lead (*plumbum*), tin (*stannum*, Cornwall), antimony (*stibium*, Anatolia). Lead is too soft, tin hardens, antimony **expands** slightly on cooling, filling the mould. DERIVED ratio: roughly 4:1:1.
 
-**Procedure.** Cut punch square and mirror-reversed; strike vertically into matrix blank; true the matrix; ladle molten alloy (cherry-red to orange, ~240-300 C) into the mould, jerk once, eject; repeat per letter. A straightedge across ten sorts of one letter should show no rock, no light under any.
+**Procedure.** Cut punch mirror-reversed; strike into matrix; true it; cast (~240-300 C, cherry-red to orange), jerk once, eject. A straightedge across ten sorts of one letter should show no rock or light.
 
 **Failure modes.** Uneven height prints patchy. Cold metal gives a short cast; overheated metal etches the matrix.
 
-**Linotype**: matrices fall from a magazine by keystroke; each has a unique notch pattern letting a rotating distributor bar sort it home automatically. One operator replaces roughly six hand compositors (MEASURED, standard trade figure); needs interchangeable-parts precision, a tier-4 destination, not a start.
+**Linotype**: matrices fall from a magazine by keystroke, each notched uniquely so a distributor bar sorts it home after use. One operator replaces roughly six compositors (MEASURED); needs interchangeable-parts precision, a tier-4 destination.
 
-**Cost & labour.** ESTIMATED, DERIVED from Gutenberg-scale shops: a full font (~300 sorts, thousands of pieces) is 2-3 punchcutter-months plus a month's casting; several thousand denarii capital.
+**Cost & labour.** ESTIMATED, DERIVED from Gutenberg-scale shops: a full font is 2-3 punchcutter-months plus a caster's month; several thousand denarii.
 
-**Danger.** Physical: molten splash, lead fume, ventilate. Social, and this is the largest danger in the module: a scriptorium's income and a rhetor's status depend on copying staying scarce, and a press turning a month's work into an afternoon destroys that logic outright. Read `03_SOCIAL_POLITICS.md` first: this is the technology most likely to get its founder denounced, because everyone who matters sees instantly what it does to them. Still worth doing early, since everything downstream in this guide depends on enough literate people to use it. Build under a patron's name and disperse the corpus (`80_information_printing.md#corpus_dispersed`) before anyone official notices.
+**Danger.** Physical: molten splash, lead fume, ventilate. Social, and this is the largest danger in the module: a scriptorium's income depends on copying staying scarce, and a press turning a month's work into an afternoon destroys that logic. Read `03_SOCIAL_POLITICS.md` first: this is the technology most likely to get its founder denounced. Still worth doing early, since everything downstream depends on enough literate people to use it. Build under a patron's name and disperse the corpus (`80_information_printing.md#corpus_dispersed`).
 
-**Confidence: HIGH** on the metallurgy; the danger read is inference from `03_SOCIAL_POLITICS.md`'s pattern, not one attested case.
+**Confidence: HIGH** on the metallurgy; the danger read is inference, not one attested case.
 
 ---
 
 ### if_printing_ink - Printing ink, oil-based
 
-**What it is.** Ink that sticks to metal type and transfers cleanly under press pressure, without which movable type is a curiosity.
+**What it is.** Ink that sticks to metal type and transfers cleanly under press pressure.
 
-**Why you would never guess this.** Every ink a scribe knows, carbon or iron gall, is watery and beads off polished metal type. This is a paint problem, not a writing one: you need a sticky, oil-based varnish that clings to metal and does not spread sideways, and it defeated printers for years after they had working type.
+**Why you would never guess this.** Every ink a scribe knows is watery and beads off polished metal. This is a paint problem, not a writing one: a sticky, oil-based varnish that clings to metal without spreading, and it defeated printers for years.
 
 Also covers: if_composing_stick, if_chase_and_forme, if_woodblock_printing.
 
 **Prerequisites.** `cap_heat_1100`, `mat_olive_oil` (or linseed).
 
-**Roman-available inputs.** Linseed/walnut oil, boiled; lampblack (*fuligo*, lamp soot); pine resin (*colophonia, pix*) for tack.
+**Roman-available inputs.** Linseed/walnut oil, boiled; lampblack (*fuligo*); pine resin (*colophonia*) for tack.
 
-**Procedure.** Boil oil slowly, uncovered, to a thick varnish that strings between two fingers (~260-300 C, "flows like honey"); stir in resin hot; grind in lampblack on a stone until gritless; store sealed, skim any skin before use.
+**Procedure.** Boil oil to a varnish stringing between two fingers (~260-300 C, "flows like honey"); stir in resin hot; grind in lampblack until gritless.
 
-**Failure modes.** Under-boiled: never sets, stays sticky. Over-boiled: skins in the pot. Too little resin: ink squashes sideways, filling letters like "o" solid.
+**Failure modes.** Under-boiled never sets; over-boiled skins in the pot; too little resin fills letters solid.
 
-**Composing stick**: a hand-held width-adjustable gauge holding a justified line of type upside-down and mirror-reversed, spring catch holds without crushing. **Chase and forme**: iron frame locking a page with wedges (quoins) so press pressure cannot shift a letter; wood furniture swells with humidity, metal does not. **Woodblock**: China's earlier method, no type, a page carved in relief mirror-reversed from fine plank-cut fruitwood (pear, box); the bottleneck is cutting fine lines without splintering the grain.
+**Composing stick**: a width-adjustable gauge holding a justified line upside-down and mirror-reversed. **Chase and forme**: iron frame locking a page with wedges (quoins); wood furniture swells with humidity, metal does not. **Woodblock**: China's method, no type, a page carved in relief from fine plank-cut fruitwood; the bottleneck is cutting fine lines without splintering.
 
-**Cost & labour.** ESTIMATED. A run's ink batch (200-300 sheets) is a day's work; under 50 denarii.
+**Cost & labour.** ESTIMATED, a day's work per batch, under 50 denarii.
 
 **Danger.** Physical: boiling oil is a fire risk. Social: as with the type itself.
 
-**Confidence: HIGH** - textbook oxidative polymerisation, every input Roman-attested.
+**Confidence: HIGH** - textbook chemistry, every input Roman-attested.
 
 ---
 
 ### if_screw_press - Screw press for printing
 
-**What it is.** The machine that squeezes inked type against paper evenly, across a whole page, in one motion.
+**What it is.** The machine that squeezes inked type against paper evenly, in one motion.
 
-**Why you would never guess this.** Rome already has this press, the *torcular* for wine and oil. The catch is that a wine press's slow squeeze is wrong for printing; you need one quick, even, whole-page impression, so add a flat platen, a padded tympan, and a frisket masking the margins, hinged to swing over the locked forme.
+**Why you would never guess this.** Rome already has this press, the *torcular* for wine and oil. A wine press's slow squeeze is wrong for printing; add a platen, a padded tympan, and a frisket masking the margins, hinged over the locked forme.
 
 Also covers: if_iron_hand_press.
 
 **Prerequisites.** `master_screw`, `cap_tol_1mm`, `mat_wrought_iron`.
 
-**Procedure.** Lock forme; ink with a leather dabber; lay paper in the tympan, close the frisket over it, swing onto the forme; run the bed under the platen and pull hard and fast in one motion, release at once.
+**Procedure.** Lock forme; ink; close tympan and frisket over the paper, swing onto the forme; pull hard and fast, release at once.
 
-**Failure modes.** Platen and bed out of parallel print one side dark; too much ink fills letter counters solid.
+**Failure modes.** Platen and bed out of parallel print one side dark.
 
-**Iron hand press**: cast iron (Rome's West has none natively) and a toggle-lever giving almost no advantage through most of the pull, then multiplying force enormously in the last few degrees, peak pressure exactly at contact.
+**Iron hand press**: cast iron (Rome's West has none natively) and a toggle-lever giving almost no advantage through most of the pull, then multiplying force enormously at the last degrees.
 
-**Cost & labour.** DERIVED from wine-press carpentry: 3-4 carpenter-weeks plus a screw-cutter's day, under 1,000 denarii.
+**Cost & labour.** DERIVED from wine-press carpentry: 3-4 carpenter-weeks, under 1,000 denarii.
 
-**Danger.** Physical: fingers under a closing platen. Social: same as movable type, this is the visible machine an agent recognises as a press; site it discreetly.
+**Danger.** Physical: fingers under a closing platen. Social: the visible machine an agent recognises as a press.
 
-**Confidence: HIGH** for the screw press (direct Roman analogue); **MEDIUM** for the iron version. Han China has blast-furnace cast iron (MEASURED, attested since roughly the 5th century BC), a genuine import; see `10_metallurgy.md` for a cupola-furnace alternative.
+**Confidence: HIGH** for the screw press; **MEDIUM** for iron. Han China has cast iron (MEASURED, c. 5th century BC), a genuine import; see `10_metallurgy.md`.
 
 ---
 
 ### if_cylinder_press - Cylinder press
 
-**What it is.** A rotating cylinder rolls paper over the inked forme instead of a flat platen slamming down, sharply speeding printing.
+**What it is.** A rotating cylinder rolls paper over the inked forme instead of a platen slamming down, sharply speeding printing.
 
-**Why you would never guess this.** A platen applies its whole force to the whole page at once; a cylinder touches only a thin rolling line at any instant, so the same total force covers more ground and feed can be continuous. Even ink coverage on the curve is the trade-off.
+**Why you would never guess this.** A platen applies its whole force at once; a cylinder touches only a thin rolling line, so feed can be continuous. Even ink coverage on the curve is the trade-off.
 
 Also covers: if_rotary_press.
 
 **Prerequisites.** `if_iron_hand_press`, `cap_power_steam`, `boring_mill`.
 
-**Procedure.** Inked, locked forme on a reciprocating bed; paper feeds around a large iron cylinder rolling over it at steady low pressure; a steam or water-mill drive keeps bed and cylinder in step.
+**Procedure.** Locked forme on a reciprocating bed; paper feeds around a large iron cylinder rolling over it; steam or water-mill drive keeps both in step.
 
 **Failure modes.** A cylinder even slightly out of true prints heavier on one side every revolution.
 
-**Rotary press**: curves the type itself, cast as one stereotype plate around the cylinder, no reciprocating bed at all; register between impressions becomes the critical tolerance.
+**Rotary press**: curves the type itself as one stereotype plate around the cylinder; register becomes the critical tolerance.
 
-**Cost & labour.** ESTIMATED, DERIVED from an iron hand press plus steam drive (`93_energy.md`): several thousand denarii, throughput several times a hand press's ~200 sheets/hour.
+**Cost & labour.** ESTIMATED, several thousand denarii; throughput several times a hand press's ~200 sheets/hour.
 
-**Danger.** Physical: power-driven entanglement risk. Social: louder, harder to hide than a hand press.
+**Danger.** Physical: entanglement risk. Social: louder, harder to hide than a hand press.
 
-**Confidence: MEDIUM** - mechanically straightforward once steam power and precision boring exist.
+**Confidence: MEDIUM** - straightforward once steam power and precision boring exist.
 
 ---
 
 ### if_stereotype - Stereotype plate
 
-**What it is.** Casting a whole locked page as one solid plate, so several presses can print it at once or it can be stored and reprinted years later without tying up type.
+**What it is.** Casting a whole locked page as one plate, freeing the type for reuse.
 
-**Why you would never guess this.** Type is finite and every page kept set is type you cannot reuse. Take a mould of the locked forme in wet papier-mache (a "flong"), dry it rigid, then use it as a mould to cast one plate in a single fast pour.
+**Why you would never guess this.** Type kept set cannot be reused elsewhere. Take a mould of the forme in wet papier-mache (a "flong"), dry it rigid, then cast one plate from it in a single fast pour.
 
 Also covers: if_electrotype.
 
 **Prerequisites.** `if_movable_type`, `mat_lead`, `cap_heat_1100`.
 
-**Procedure.** Beat damp pulp into the forme; dry gently to rigidity; lay the flong in a casting box, pour molten type metal in one continuous pour; trim to type-height.
+**Procedure.** Beat pulp into the forme; dry to rigidity; pour molten metal into the flong-lined box in one pour; trim to type-height.
 
-**Failure modes.** A slow pour leaves air pockets printing as white holes; fast drying cracks the flong.
+**Failure modes.** A slow pour leaves air pockets printing as white holes.
 
-**Electrotype**: grows a copper shell electrolytically (`50_electricity.md`) onto a wax or lead impression over hours, far crisper edges, but the shell must be backed with lead or it buckles under press pressure.
+**Electrotype**: grows a copper shell electrolytically (`50_electricity.md`) over hours, crisper edges, but must be backed with lead or it buckles.
 
-**Cost & labour.** ESTIMATED. A stereotype plate is roughly a day once the forme exists; electrotype several days, mostly unattended electrolysis.
+**Cost & labour.** ESTIMATED, a day per plate; electrotype several days, mostly unattended.
 
-**Danger.** Low, hot metal and the same social risk as printing generally.
+**Danger.** Low, hot metal and the usual printing risk.
 
-**Confidence: MEDIUM** - stereotype chemistry is simple and attested; electrotype depends on `50_electricity.md`'s current chain, itself gated on zinc.
+**Confidence: MEDIUM** - stereotype is simple and attested; electrotype gated on `50_electricity.md`'s zinc chain.
 
 ---
 
 ### if_lithography - Lithography
 
-**What it is.** Printing from a flat stone with no carving and no relief at all, pure surface chemistry.
+**What it is.** Printing from a flat stone with no carving at all, pure surface chemistry.
 
-**Why you would never guess this.** Draw with a greasy crayon on porous limestone, dampen the whole stone (water clings to bare stone, is repelled by grease), roll oily ink over it (sticks only to the grease, repelled by the wet stone). No relief does any work; it is entirely chemical.
+**Why you would never guess this.** Draw with greasy crayon on porous limestone, dampen the stone (water clings to bare stone, repelled by grease), roll oily ink over it (sticks only to the grease). No relief does any work; it is entirely chemical.
 
 Also covers: if_chromolithography, if_offset_lithography.
 
 **Prerequisites.** `cap_tol_1mm`, `mat_alum`.
 
-**Roman-available inputs.** The historical stone, fine-grained Solnhofen limestone from Bavaria, lies outside the empire, not a documented Roman quarry good. ESTIMATED: a fine Italian or Anatolian limestone may substitute if it holds an even wetting film; test before a run.
+**Roman-available inputs.** The historical stone, Solnhofen limestone, lies outside the empire. ESTIMATED: a fine Italian or Anatolian limestone may substitute; test before a run.
 
-**Procedure.** Polish the slab fine; draw in greasy crayon; etch lightly with dilute nitric acid and gum arabic to fix the grease; before each print, sponge with water then roll with ink; press paper against the stone.
+**Procedure.** Polish the slab; draw in crayon; etch lightly with nitric acid and gum arabic; sponge with water, roll with ink, press paper.
 
-**Failure modes.** A stone drying mid-run picks up ink everywhere ("scumming"); over-etching destroys fine detail.
+**Failure modes.** A stone drying mid-run picks up ink everywhere ("scumming").
 
-**Chromolithography**: one stone per colour, registered to a fraction of a millimetre by hand. **Offset**: a rubber blanket carries stone-to-paper, so the image reads correctly (not reversed) and is gentler on the stone, at roughly half the pressure.
+**Chromolithography**: one stone per colour, registered by hand. **Offset**: a rubber blanket carries stone-to-paper, reading correctly and gentler on the stone.
 
-**Cost & labour.** ESTIMATED, high for the stone and hand-drawn colour separations, a later shop technology.
+**Cost & labour.** ESTIMATED, high, a later shop technology.
 
-**Danger.** Low beyond dilute acid; a stone looks nothing like a scribal tool, less immediate suspicion than a type-filled press.
+**Danger.** Low beyond dilute acid; a stone draws less suspicion than a type-filled press.
 
-**Confidence: LOW on the stone source** (unattested in Roman hands); **MEDIUM on the chemistry**.
+**Confidence: LOW** on the stone source; **MEDIUM** on the chemistry.
 
 ---
 
 ### if_halftone_screen - Halftone screen and dot matrix
 
-**What it is.** The trick letting a press, which lays down only solid ink or none, reproduce a photograph's full range of grey.
+**What it is.** The trick letting a press reproduce a photograph's full range of grey.
 
-**Why you would never guess this.** You cannot print a grey. Ink is there or it is not. Break the image into a fine grid of dots and vary their **size**, not their darkness; large dots read dark, small light, the eye blends them at a distance. The screen is a precisely ruled crossed-line grid, photographed slightly out of focus on purpose, in front of the plate, so blur turns sharp grid lines into graduated dot edges.
+**Why you would never guess this.** You cannot print a grey. Vary dot **size**, not darkness: large dots read dark, small light. The screen is a ruled crossed-line grid, photographed slightly out of focus on purpose, turning sharp lines into graduated dot edges.
 
 Also covers: if_photoengraving.
 
 **Prerequisites.** `cap_tol_10um`, `lens_grinding`.
 
-**Procedure.** Rule two glass plates with fine parallel lines (toward 100-150 lines/inch), fill grooves with pigment, cement the plates with lines crossed at 90 degrees; photograph the original through the screen; develop.
+**Procedure.** Rule two glass plates with fine parallel lines (toward 100-150/inch), cement crossed at 90 degrees; photograph the original through the screen.
 
-**Failure modes.** Uneven ruling or wrong screen angle between two colour separations gives a visible interference pattern (moire) instead of an image; screen ruling accuracy is the hard physical limit.
+**Failure modes.** Uneven ruling or wrong angle gives moire instead of an image; ruling accuracy is the hard limit.
 
-**Photoengraving**: coat metal with light-hardening bichromated gelatin, expose through the halftone negative, wash away unhardened gelatin, etch the bare metal so hardened dots stand in relief for the press.
+**Photoengraving**: coat metal with light-hardening bichromated gelatin, expose through the halftone negative, wash and acid-etch so dots stand in relief.
 
-**Cost & labour.** ESTIMATED. Ruling a good screen is weeks for a skilled instrument-maker; reused indefinitely once made.
+**Cost & labour.** ESTIMATED, weeks for a skilled instrument-maker, reused indefinitely.
 
-**Danger.** Low; photoengraving's acid bath is the main hazard.
+**Danger.** Low; the acid bath is the main hazard.
 
 **Confidence: MEDIUM** - optics are textbook, ruling fine enough needs precision this guide's early tiers lack.
 
@@ -212,23 +212,23 @@ Also covers: if_photoengraving.
 
 ### if_mimeograph - Mimeograph
 
-**What it is.** A cheap, press-free way to run a few hundred to a couple of thousand copies from a single master.
+**What it is.** A cheap, press-free way to run hundreds to thousands of copies from one master.
 
-**Why you would never guess this.** No ink chemistry and no metal type: a waxed fibrous stencil is written on with a stylus or typewriter, and the letterform's pressure simply displaces the wax, opening the fibre beneath. Ink forced through the open fibre prints onto a fresh sheet; the stencil is a mask, not a mould.
+**Why you would never guess this.** No ink chemistry, no type: a waxed stencil is written on, and the letterform's pressure displaces wax, opening the fibre beneath. Ink forced through prints a fresh sheet; the stencil is a mask, not a mould.
 
 Also covers: if_stencil_duplicator.
 
 **Prerequisites.** `if_typewriter` (or stylus), `mat_nitrocellulose`, `cap_power_muscle`.
 
-**Procedure.** Type or trace onto a waxed stencil backed by a smooth plate; mount it on an ink-fed drum; hand-crank paper through.
+**Procedure.** Type onto a waxed stencil; mount on an ink-fed drum; hand-crank paper through.
 
-**Failure modes.** The stencil degrades after roughly 200 (fine silk-screen) to 2,000 (waxed mimeograph) copies as channels wear larger and print blurs.
+**Failure modes.** The stencil degrades after roughly 200 (silk-screen) to 2,000 (waxed) copies.
 
-**Cost & labour.** ESTIMATED. A stencil is minutes; the duplicator, a drum and crank, is a modest metalworking job, well under any press above.
+**Cost & labour.** ESTIMATED, minutes per stencil, modest metalworking for the duplicator.
 
-**Danger.** Social: the module's samizdat technology, no forme, no type, no visible press, run from a back room and dismantled in minutes; use it for anything you cannot afford traced to a fixed shop.
+**Danger.** Social: this module's samizdat technology, run from a back room and dismantled in minutes.
 
-**Confidence: MEDIUM** - simple mechanically, depends on `mat_nitrocellulose` (`20_chemistry.md`) for the stencil coating.
+**Confidence: MEDIUM** - simple, depends on `mat_nitrocellulose` (`20_chemistry.md`).
 
 ---
 
@@ -238,115 +238,115 @@ Also covers: if_stencil_duplicator.
 
 **What it is.** A flexible pen cut from a flight feather, standard once parchment overtakes papyrus.
 
-**Why you would never guess this.** Obvious once you want it, with one non-obvious fact: Rome's reed pen (*calamus*) suits papyrus but scratches on parchment's tougher grain; a feather's spring glides where a reed digs in. The split holds ink by capillary action and meters flow, but wears and needs re-cutting every few hours.
+**Why you would never guess this.** Obvious once you want it: Rome's reed pen (*calamus*) suits papyrus but scratches parchment's tougher grain; a feather glides where a reed digs in. The split holds ink by capillary action but needs re-cutting hourly.
 
 Also covers: if_iron_gall_ink, if_steel_pen_nib.
 
-**Iron gall ink**: tannic/gallic acid from oak galls binds chemically to iron from green vitriol (*atramentum sutorium*), pale on application, oxidising over hours to a black-blue that bonds into the substrate's fibres rather than sitting on top, unlike carbon ink, which can be sponged off. Cannot be erased once dry: good for a legal record, bad for a correctable account.
+**Iron gall ink**: tannic acid from oak galls binds chemically to iron from green vitriol, pale at first, oxidising to black-blue that bonds into the fibres rather than sitting on top, unlike carbon ink, which sponges off. Cannot be erased once dry.
 
-**Steel pen nib**: stamped, hardened steel that never needs re-cutting; the kernel is heat treatment, harden fully then temper to spring hardness, not full hardness, or the nib snaps.
+**Steel pen nib**: stamped, hardened steel, no re-cutting; harden fully then temper to spring hardness, or it snaps.
 
 **Prerequisites.** Ink: `cap_heat_0700`, `mat_vitriols`. Nib: `mat_blister_steel`, `cap_tol_100um`, interchangeable-parts precision.
 
-**Cost & labour.** ESTIMATED. Quills near-free; ink a day's batch chemistry; nibs need real stamping-die tooling, a later industrial product.
+**Cost & labour.** ESTIMATED. Quills near-free; ink a day's batch; nibs need stamping-die tooling.
 
 **Danger.** None of weight.
 
-**Confidence: HIGH** for quill and ink (both attested); **MEDIUM** for the nib, gated on stamping precision.
+**Confidence: HIGH** for quill and ink; **MEDIUM** for the nib.
 
 ---
 
 ### if_fountain_pen - Fountain pen
 
-**What it is.** A pen carrying its own ink reservoir, writing continuously without dipping.
+**What it is.** A pen carrying its own ink reservoir.
 
-**Why you would never guess this.** The reservoir is trivial; the hard part is the feed, a comb of fine cuts that must let air bubble **in** at the same rate ink flows **out**, purely by capillary action, no valve. Wrong geometry floods the pen or starves it, a self-regulating plumbing problem that lagged the dip pen by centuries.
+**Why you would never guess this.** The reservoir is trivial; the feed, a comb of fine cuts, must let air bubble **in** at the same rate ink flows **out**, purely by capillary action. Wrong geometry floods or starves the pen.
 
 Also covers: if_pencil_graphite, if_carbon_paper.
 
 **Prerequisites.** `if_steel_pen_nib`, `mat_celluloid`, `cap_tol_100um`.
 
-**Graphite pencil**: pure native graphite is scarce (historically one large English deposit) and too soft alone. The Conte process grinds low-grade graphite with fine clay and fires it; the clay:graphite **ratio**, not graphite purity, sets hardness grade.
+**Graphite pencil**: native graphite is scarce and too soft alone; the Conte process grinds it with clay and fires it, the clay:graphite **ratio**, not purity, setting hardness.
 
-**Carbon paper**: an even oily lampblack coating in a thin wax carrier on tissue, transferring by pressure alone; too thick and it clogs and cracks when rolled.
+**Carbon paper**: an even lampblack coating in a thin wax carrier, transferring by pressure alone.
 
-**Failure modes.** Pen: flooding or starving. Pencil: too much clay barely marks, too little snaps. Carbon paper: uneven coating gives patchy copies.
+**Failure modes.** Pen floods or starves; too much clay barely marks; too little snaps.
 
-**Cost & labour.** ESTIMATED, small-batch craft goods once materials are in hand.
+**Cost & labour.** ESTIMATED, small-batch craft goods.
 
 **Danger.** None of weight.
 
-**Confidence: MEDIUM** across all three, limited by sourcing native graphite or celluloid.
+**Confidence: MEDIUM** - limited by sourcing graphite or celluloid.
 
 ---
 
 ### if_typewriter - Typewriter
 
-**What it is.** A machine striking a fixed, legible character per keystroke, faster and more legible than any hand.
+**What it is.** A machine striking a fixed character per keystroke.
 
-**Why you would never guess this.** QWERTY is not for finger speed; it keeps letter pairs common in English typing on opposite sides of the basket so their bars swing in from different angles and do not collide mid-stroke. Optimised for clearance, not speed.
+**Why you would never guess this.** QWERTY is not for finger speed; it keeps common letter pairs on opposite sides of the basket so bars swing in from different angles and do not jam. Optimised for clearance, not speed.
 
 Also covers: if_shift_key_mechanism.
 
 **Prerequisites.** `if_steel_pen_nib`, `cap_tol_100um`, interchangeable-parts precision.
 
-**Procedure.** Each key swings a type bar to strike an inked ribbon at a fixed point; bars must return fast and fully or the next stroke jams against one still retracting.
+**Procedure.** Each key swings a bar to strike an inked ribbon; bars must return fast or the next stroke jams.
 
-**Shift key**: the whole basket (or carriage) shifts one notch so the same bar strikes a different face of a two-character slug; the spring return must be precise or the next keystroke prints the wrong case.
+**Shift key**: the basket shifts one notch so the same bar strikes a different face of a two-character slug; return spring must be precise.
 
-**Failure modes.** Weak return springs jam under fast typing; an imprecise shift misprints case intermittently.
+**Failure modes.** Weak springs jam; imprecise shift misprints case.
 
-**Cost & labour.** ESTIMATED, comparable in skilled hours to a good clock; a mid-tier product, not an early one.
+**Cost & labour.** ESTIMATED, comparable to a good clock.
 
-**Danger.** None directly; a typed document's anonymous hand is useful for anything you would rather not trace to a known scribe.
+**Danger.** None directly; an anonymous typed hand is useful for what you cannot trace to a scribe.
 
-**Confidence: MEDIUM** - mechanism well documented; achievability gated on interchangeable-parts precision.
+**Confidence: MEDIUM** - gated on interchangeable-parts precision.
 
 ---
 
 ### if_punched_card - Punched card
 
-**What it is.** A standard-format card whose hole pattern encodes information, readable and sortable by machine.
+**What it is.** A card whose hole pattern encodes information, machine-readable and sortable.
 
-**Why you would never guess this.** The ancestor is the loom, not the office. Jacquard cards, fed through a loom one at a time, lift or block hooks controlling which warp threads rise; a chain of thousands weaves a complex pattern automatically, arguably the birth of the stored program. It took a leap to realise hole positions controlling a mechanism could encode anything.
+**Why you would never guess this.** The ancestor is the loom. Jacquard cards, fed one at a time, lift or block hooks controlling warp threads; a chain of thousands weaves a complex pattern automatically, arguably the birth of the stored program.
 
 Also covers: if_jacquard_chain, if_keypunch.
 
 **Prerequisites.** `cap_tol_1mm`, `mat_paper`.
 
-**Procedure.** Fix a card size and hole grid; any later machine depends on every card matching it exactly; punch holes at chosen positions to encode a record.
+**Procedure.** Fix a card size and hole grid; every later machine depends on cards matching it exactly.
 
-**Keypunch**: a modified typewriter driving a punch die per keystroke; the card must be held in precise register or the hole lands in the wrong column, silently.
+**Keypunch**: a modified typewriter driving a punch die per keystroke; the card must be held in precise register.
 
-**Failure modes.** Drift in card dimensions between batches makes cards from different runs unreadable together.
+**Failure modes.** Dimensional drift between batches makes cards unreadable together.
 
-**Cost & labour.** ESTIMATED. A Jacquard card chain for one pattern is days of cutting; a punched-card standard is cheap per card but expensive to establish and enforce across an organisation.
+**Cost & labour.** ESTIMATED, days per Jacquard chain, cheap per card once a standard is enforced.
 
-**Danger.** Low, mostly organisational: an unenforced standard is the real failure.
+**Danger.** Low, mostly organisational.
 
-**Confidence: HIGH** for Jacquard (well attested, in use); **MEDIUM** for a Roman-era card standard, a social achievement as much as a mechanical one.
+**Confidence: HIGH** for Jacquard; **MEDIUM** for a Roman-era card standard.
 
 ---
 
 ### if_card_sorter - Card sorter
 
-**What it is.** A machine routing punched cards into trays by which holes they carry, and, developed further, counting and cross-tabulating them.
+**What it is.** A machine routing punched cards by their holes, and counting them.
 
-**Why you would never guess this.** Sensing is bare electrical contact, not sight: fine wire brushes ride the card, and wherever a hole exists a brush touches a metal drum beneath, completing a circuit that trips a solenoid gate diverting the card. Nothing optical, decades before optical sensing existed.
+**Why you would never guess this.** Sensing is bare electrical contact: wire brushes touch a metal drum only where a hole exists, tripping a solenoid gate. Nothing optical.
 
 Also covers: if_hollerith_tabulator.
 
 **Prerequisites.** `if_punched_card`, `electromagnet`.
 
-**Procedure.** Feed cards past a brush bank wired to gate solenoids, one per hole position of interest; a completed circuit fires the matching gate.
+**Procedure.** Feed cards past a brush bank wired to gate solenoids; a completed circuit fires the matching gate.
 
-**Hollerith tabulator**: adds an odometer-style counter advancing on every sensed hole, counting and cross-tabulating categories automatically. MEASURED: the 1880 US census took roughly eight years by hand; the 1890 census, with Hollerith machines, roughly one.
+**Hollerith tabulator**: adds a counter advancing on every sensed hole. MEASURED: the 1880 US census took roughly eight years by hand; 1890, with Hollerith machines, roughly one.
 
-**Failure modes.** A worn brush misses a hole intermittently, undercounting silently; dirty contacts give false triggers.
+**Failure modes.** A worn brush misses a hole, undercounting silently.
 
-**Cost & labour.** ESTIMATED. A modest sorter is comparable in complexity to a telegraph relay bank; low thousands of denarii once electromagnets exist.
+**Cost & labour.** ESTIMATED, low thousands of denarii once electromagnets exist.
 
-**Danger.** Low physically; socially notable, a tabulator is a real census and tax accelerator, handing a magistrate a sharper tool for finding and taxing people.
+**Danger.** Socially notable: a tabulator hands a magistrate a sharper tool for taxing people.
 
 **Confidence: MEDIUM** - straightforward once electromagnets and punched cards exist.
 
@@ -354,25 +354,25 @@ Also covers: if_hollerith_tabulator.
 
 ### if_index_card_system - Index card and filing system
 
-**What it is.** A uniform card per record, filed in strict order in drawers, letting you insert new information without recopying a ledger.
+**What it is.** A uniform card per record, filed in strict order, letting insertion happen without recopying a ledger.
 
-**Why you would never guess this.** Obvious once you want it, yet nobody assembled it: Rome has alphabetical order and cheap slips already, and never combined uniform size with strict filed order and drawer storage. The invention is procedural discipline, nothing to build, only a convention to enforce.
+**Why you would never guess this.** Obvious once you want it, yet nobody assembled it: Rome has alphabetical order already, never combined with uniform size and drawer storage. The invention is procedural discipline, nothing to build.
 
 Also covers: if_dewey_classification.
 
 **Prerequisites.** `mat_paper`, `cap_tol_1mm`.
 
-**Procedure.** Fix a card size; file strictly by one agreed order; never let an unfiled backlog accumulate, since constant insertion cost is the whole value.
+**Procedure.** Fix a card size; file strictly by one order; never let backlog accumulate.
 
-**Dewey classification**: hierarchical decimal scheme (philosophy at the 100s, science at the 500s) lets you insert any new subject without renumbering existing cards, unlike sequential shelf order.
+**Dewey classification**: a hierarchical decimal scheme lets any new subject be inserted without renumbering.
 
-**Failure modes.** The system fails the moment filing discipline lapses; one misfiled card is effectively lost until the drawer is re-sorted.
+**Failure modes.** The system fails the moment filing discipline lapses.
 
-**Cost & labour.** ESTIMATED, negligible material cost; the real cost is a disciplined clerk and, for Dewey, designing the scheme.
+**Cost & labour.** ESTIMATED, negligible material cost, a disciplined clerk is the real cost.
 
-**Danger.** Low; the risk is organisational, adopting it without the labour to maintain it.
+**Danger.** Low, purely organisational risk.
 
-**Confidence: HIGH** - no unattested material, pure organisation, well demonstrated payoff.
+**Confidence: HIGH** - pure organisation, well demonstrated payoff.
 
 ---
 
@@ -380,23 +380,23 @@ Also covers: if_dewey_classification.
 
 **What it is.** A mechanical device adding numbers reliably without a human carrying.
 
-**Why you would never guess this.** The carry is the whole problem: each decade wheel, rolling 9 to 0, must physically kick the next wheel forward by one, and that kick must itself trigger a further carry down the line. A simple gear train cannot cascade this; it defeated skilled 17th-century mechanics for years.
+**Why you would never guess this.** The carry is the whole problem: each decade wheel, rolling 9 to 0, must kick the next forward by one, and that kick must itself cascade further. A simple gear train cannot do this; it defeated skilled mechanics for years.
 
 Also covers: if_comptometer, if_cash_register, if_slide_rule.
 
 **Prerequisites.** `cap_tol_1mm`, `crank_conrod`.
 
-**Procedure.** Each digit wheel carries a spring-loaded finger that, only passing 9 to 0, engages and advances the next wheel by one tooth; chain wheels to cover the largest expected sum. A correct carry gives identical results by hand and machine at any cascade length.
+**Procedure.** Each wheel carries a spring finger that, only passing 9 to 0, advances the next wheel one tooth.
 
-**Comptometer**: every keystroke adds instantly, no separate total stroke; faster once mastered, harder to learn. **Cash register**: a social device, not an arithmetic one, forcing a printed receipt and locked drawer per transaction to prevent an employee pocketing cash unrecorded. **Slide rule**: an analog lineage, multiplication as addition of lengths on a logarithmic scale, needing logarithm tables first (`60_mathematics_method.md`; Rome's lack of positional notation makes this real labour). The rule itself is simple carpentry once the scale exists; precision capped near three significant figures by eye.
+**Comptometer**: every keystroke adds instantly, faster once mastered. **Cash register**: a social device, forcing a printed receipt and locked drawer to prevent theft. **Slide rule**: multiplication as addition of logarithmic lengths, needing log tables first (`60_mathematics_method.md`; Rome's lack of positional notation makes this real labour), the rule itself simple carpentry once the scale exists.
 
-**Failure modes.** Adding machine: a mistimed finger skips or double-advances a carry. Slide rule: a warped rule throws every reading off consistently.
+**Failure modes.** A mistimed finger skips a carry; a warped rule throws readings off.
 
-**Cost & labour.** ESTIMATED, comparable to a mechanical clock; a slide rule a day's ruling once tables exist.
+**Cost & labour.** ESTIMATED, comparable to a mechanical clock.
 
-**Danger.** Low; the cash register reduces its owner's risk (catching theft) rather than adding any.
+**Danger.** Low; the cash register reduces its owner's risk.
 
-**Confidence: MEDIUM** - carry mechanisms and log scales are textbook once tolerance and tables exist; Rome's numerals are a real obstacle for the slide rule.
+**Confidence: MEDIUM** - textbook once tolerance and tables exist.
 
 ---
 
@@ -406,87 +406,87 @@ Also covers: if_comptometer, if_cash_register, if_slide_rule.
 
 **What it is.** The first device to record a sound wave's shape as a visible trace, without playback.
 
-**Why you would never guess this.** Built purely to let scholars *see* sound: a diaphragm and stiff bristle scratch a wavy line into lamp-blacked paper or glass on a rotating drum. Running the mechanism backward to reproduce sound did not occur to its own inventor; the historical traces were only converted to audible sound roughly a century and a half later, by modern optical scanning (ATTRIBUTED, a documented modern episode).
+**Why you would never guess this.** A diaphragm and stiff bristle scratch a wavy line into lamp-blacked paper on a rotating drum. Running it backward to reproduce sound did not occur to its own inventor; the traces were only played back a century and a half later, by modern optical scanning (ATTRIBUTED).
 
 Also covers: if_tin_foil_phonograph, if_wax_cylinder.
 
 **Prerequisites.** `cap_tol_1mm`.
 
-**Tin foil phonograph**: the same mechanism with the stylus **indenting** soft tin foil on a cylinder; running it back vibrates the diaphragm, reproducing a faint, harsh sound. The foil crinkles after roughly 10-20 plays (MEASURED, attested), a novelty.
+**Tin foil phonograph**: the stylus **indents** soft tin foil; running it back reproduces a faint sound. The foil crinkles after roughly 10-20 plays (MEASURED), a novelty.
 
-**Wax cylinder**: cuts, rather than indents, a groove into soft wax, cleaner, durable, and erasable and recuttable, good for 100+ plays, the basis of the first real recording industry.
+**Wax cylinder**: cuts, not indents, a groove into soft wax, durable and erasable, 100+ plays, the basis of the first recording industry.
 
-**Failure modes.** Too stiff a stylus or shallow groove gives faint, distorted playback; wax too soft wears fast, too hard skips.
+**Failure modes.** Too stiff a stylus gives faint, distorted playback.
 
-**Cost & labour.** ESTIMATED, a modest precision project comparable to a decent clock, once a sensitive diaphragm exists.
+**Cost & labour.** ESTIMATED, comparable to a decent clock.
 
-**Danger.** Low, though a stranger's voice from a spinning cylinder with no visible speaker reads as sorcery to a superstitious observer; stage the first demonstration carefully.
+**Danger.** Low; a stranger's voice with no visible speaker reads as sorcery, demonstrate carefully.
 
-**Confidence: MEDIUM** - all three attested and mechanically simple; the barrier is a sufficiently sensitive, even diaphragm.
+**Confidence: MEDIUM** - attested and simple; the barrier is a sensitive diaphragm.
 
 ---
 
 ### if_disc_record - Disc record
 
-**What it is.** Recorded sound on a flat disc mass-produced from a single master, rather than re-recorded one at a time.
+**What it is.** Sound on a flat disc mass-produced from a single master.
 
-**Why you would never guess this.** A cylinder duplicates slowly, one at a time; a disc's master groove can be electroplated into a metal "stamper" that presses thousands of identical copies in hot shellac in seconds each, like a coin die. This is why disc beat cylinder commercially despite the cylinder's arguably better fidelity.
+**Why you would never guess this.** A cylinder duplicates slowly; a disc's master groove can be electroplated into a "stamper" pressing thousands of copies in hot shellac in seconds, like a coin die.
 
 Also covers: if_disc_cutting_lathe, if_gramophone_motor, if_acoustic_horn_recording.
 
 **Prerequisites.** `if_wax_cylinder`, `mat_shellac` (Indian lac resin, a reachable Far-East good).
 
-**Disc-cutting lathe**: the stylus feeds sideways at a constant precise pitch while the disc spins at dead-constant speed, or groove spacing and playback pitch wavers. **Gramophone motor**: a spring or weight drive fitted with a centrifugal governor (as in a steam engine) and a flywheel smoothing short-term ripple. **Acoustic horn**: a purely passive amplifier, gain rising only logarithmically with size, so doubling the horn gives far less than double the loudness; the diaphragm's own stiffness caps how much air it moves, why bass is essentially absent, a physical ceiling, not workmanship.
+**Disc-cutting lathe**: the stylus feeds at constant pitch while the disc spins at dead-constant speed, or the groove wavers. **Gramophone motor**: a governor (as in a steam engine) and flywheel hold that speed. **Acoustic horn**: a passive amplifier, gain rising only logarithmically with size, and the diaphragm's own stiffness caps how much air it moves, why bass is absent, a physical ceiling.
 
-**Failure modes.** Uneven disc speed distorts pitch; shellac is brittle and shatters on impact.
+**Failure modes.** Uneven speed distorts pitch; shellac shatters on impact.
 
-**Cost & labour.** ESTIMATED, minutes of pressing per copy once master and stamper exist; the lathe and stamper tooling are the real capital cost.
+**Cost & labour.** ESTIMATED, minutes per copy once master and stamper exist.
 
-**Danger.** Low; manage reactions to a talking machine as with the phonautograph.
+**Danger.** Low; manage reactions to a talking machine.
 
-**Confidence: MEDIUM** - shellac is genuinely reachable; the electroplating stamper depends on `50_electricity.md`'s current chain.
+**Confidence: MEDIUM** - shellac reachable; the stamper depends on `50_electricity.md`'s current chain.
 
 ---
 
 ### if_carbon_microphone - Carbon microphone
 
-**What it is.** A device converting sound pressure directly into varying current, the basis of the telephone and electrical recording.
+**What it is.** A device converting sound pressure into varying current.
 
-**Why you would never guess this.** Loosely packed carbon granules (lampblack) between two electrodes change **resistance** as sound pressure compresses or relaxes their packing; a steady current through them is modulated in step with the sound. It needs no chemistry, but it is not passive, without current already flowing it produces nothing.
+**Why you would never guess this.** Loosely packed carbon granules change **resistance** as sound compresses their packing, modulating a steady current. It needs current already flowing; not passive.
 
 Also covers: if_moving_coil_loudspeaker.
 
 **Prerequisites.** `crude_cell`, `mat_carbon_black`.
 
-**Failure modes.** Granules pack down and lose sensitivity over weeks, needing tapping or replacement; too loose a pack drops sensitivity.
+**Failure modes.** Granules pack down and lose sensitivity over weeks.
 
-**Moving coil loudspeaker**: the electrical converse, a coil on a paper cone in a strong magnetic field, varying current makes varying force, pushing and pulling the cone. Cone size and material set bass response directly; a small cheap cone cannot move enough air for low notes, a physical limit.
+**Moving coil loudspeaker**: the converse, a coil on a paper cone in a magnetic field; cone size caps bass response, a physical limit, not a defect.
 
-**Cost & labour.** ESTIMATED, modest once electromagnets and current exist; the loudspeaker's magnet is the harder single component.
+**Cost & labour.** ESTIMATED, modest once electromagnets exist.
 
 **Danger.** Low.
 
-**Confidence: MEDIUM** - textbook, gated on `50_electricity.md`'s electromagnet and current chain.
+**Confidence: MEDIUM** - gated on `50_electricity.md`'s electromagnet chain.
 
 ---
 
 ### if_magnetic_tape - Magnetic tape recording
 
-**What it is.** Sound recorded as magnetisation along a moving tape, erasable and re-recordable indefinitely.
+**What it is.** Sound recorded as magnetisation on a moving tape, erasable indefinitely.
 
-**Why you would never guess this.** Fine magnetic oxide particles on the tape pick up magnetisation roughly proportional to recording current, but that curve is sharply nonlinear near zero, so a naive recording distorts badly. The fix, mixing in a strong, inaudible high-frequency "bias" (above 20 kHz) with the audio, is counterintuitive: add a huge signal you will never hear, purely to keep the tape's magnetic domains cycling through their full linear range.
+**Why you would never guess this.** The magnetisation curve is sharply nonlinear near zero current, so a naive recording distorts badly. Adding a strong, inaudible high-frequency "bias" mixed with the audio linearises it, a counterintuitive fix: add a huge signal you will never hear to make the one you want correct.
 
 Also covers: if_recording_bias.
 
 **Prerequisites.** `electromagnet`, `mat_paper`.
 
-**Failure modes.** Without bias, distortion is severe; uneven tension stretches tape and warps pitch.
+**Failure modes.** Without bias, distortion is severe.
 
-**Cost & labour.** ESTIMATED, high, the oxide coating must be extremely fine and uniform, well beyond reliable Roman-era grinding and settling.
+**Cost & labour.** ESTIMATED, high; oxide must be extremely fine and uniform.
 
 **Danger.** Low physically.
 
-**Confidence: LOW** - bias is textbook, but manufacturing fine, uniform oxide is a genuine late barrier; one of the hardest destinations in the module.
+**Confidence: LOW** - bias is textbook, uniform oxide manufacture is a genuine, late barrier.
 
 ---
 
@@ -496,91 +496,91 @@ Also covers: if_recording_bias.
 
 **What it is.** Sending messages instantly over long distances by electrical pulses on a wire.
 
-**Why you would never guess this.** A single circuit's range is capped at a few tens of miles by wire resistance and battery capacity. A telegraph crosses a continent because of the **relay**: at each station, the weak incoming current only moves a small local armature, which closes a separate, fresh-battery local circuit that retransmits full strength onward. Without the relay you have a curiosity; with it, a continental network. Nobody guesses the trick is "use the weak signal only to trigger a strong one."
+**Why you would never guess this.** A single circuit's range is capped at a few tens of miles. A telegraph crosses a continent because of the **relay**: at each station, the weak incoming current only moves a small local armature, which closes a fresh-battery local circuit retransmitting full strength onward. Nobody guesses the trick is using the weak signal only to trigger a strong one.
 
 Also covers: if_morse_key_and_sounder, if_telegraph_relay.
 
 **Prerequisites.** `electromagnet`, `crude_cell`.
 
-**Procedure.** Space relay stations by wire resistance and battery strength (a few tens of miles per hop, ESTIMATED from 19th-century line practice); a key opens and closes the circuit in short and long pulses (Morse); a sounder, an electromagnet clicking an armature, reproduces them at the far end. A trained operator reads the **rhythm** of the clicks as words directly, not by counting.
+**Procedure.** Space relays by wire resistance and battery strength (a few tens of miles per hop, ESTIMATED); a key pulses short and long (Morse); a sounder clicks them at the far end. Trained operators read the **rhythm**, not by counting.
 
-**Failure modes.** Dirty relay contacts drop the signal; a relay spaced too far from its neighbour receives too weak a trigger.
+**Failure modes.** Dirty relay contacts drop the signal.
 
-**Cost & labour.** ESTIMATED, DERIVED from wire resistance and battery output, scaling roughly with route length; comparable per mile to a lighter Roman road.
+**Cost & labour.** ESTIMATED, DERIVED from wire resistance, scaling with route length.
 
-**Danger.** Social: an instant long-distance network is exactly the cross-provincial capability the Roman state fears in private hands (`03_SOCIAL_POLITICS.md`); expect it to attract imperial oversight past one estate's boundary.
+**Danger.** Social: an instant long-distance network is exactly the cross-provincial capability the Roman state fears in private hands (`03_SOCIAL_POLITICS.md`).
 
-**Confidence: HIGH** - the relay principle is textbook and every material is Roman-available once `50_electricity.md`'s chain is solved.
+**Confidence: HIGH** - the relay is textbook, materials Roman-available once `50_electricity.md`'s chain is solved.
 
 ---
 
 ### if_submarine_cable_gutta_percha - Submarine cable with gutta percha
 
-**What it is.** A telegraph cable surviving on the sea floor without shorting through seawater for years.
+**What it is.** A telegraph cable surviving on the sea floor without shorting for years.
 
-**Why you would never guess this.** The problem is insulation, not the conductor; bare copper shorts instantly in seawater. Gutta percha, latex of the *Palaquium* tree, native only to Malaya, Sumatra and Borneo, is thermoplastic and chemically inert, and does not rot under seawater pressure the way rubber, tar or wax do. This one tree product from one distant region is why undersea telegraphy became possible, exactly the case `95_expeditions.md` describes: not unobtainable, elsewhere. `50_electricity.md` says flatly Rome will never have gutta percha; true only for passive trade, someone has to sail for it.
+**Why you would never guess this.** The problem is insulation; bare copper shorts instantly in seawater. Gutta percha, latex of the *Palaquium* tree, native only to Malaya, Sumatra and Borneo, is thermoplastic and inert, and does not rot under pressure. This one tree product is why undersea telegraphy became possible, exactly the case `95_expeditions.md` describes: elsewhere, not unobtainable. `50_electricity.md` says Rome will never have it; true only for passive trade, someone has to sail for it.
 
 Also covers: if_cable_repeater.
 
 **Prerequisites.** `if_electric_telegraph`, `mat_gutta_percha` (`95_expeditions.md#trade_route_extend`).
 
-**Procedure.** Warm gutta percha pliable and wrap layers around the copper conductor, well beyond bench-tested thickness since undersea faults are unrepairable; armour with wound iron wire near shore; pay out under tension at a slow, steady speed.
+**Procedure.** Warm gutta percha pliable, wrap thick layers around the conductor; armour with iron wire near shore; pay out slowly under tension.
 
-**Failure modes.** A pinhole shorts the whole line on submersion, detectable only by continuous continuity testing while laying.
+**Failure modes.** A pinhole shorts the whole line on submersion.
 
-**Cable repeater**: a submerged relay boosting a signal too weak after roughly 100-200 km, ESTIMATED from attenuation scaling; unrepairable once laid, so its own reliability, not its electronics, is the design limit.
+**Cable repeater**: a submerged relay boosting a signal weak after roughly 100-200 km, ESTIMATED; unrepairable once laid.
 
-**Cost & labour.** ESTIMATED, extremely high: an expedition, a purpose-built cable ship, and the cable itself before one message sends, among the largest single capital commitments in the tree.
+**Cost & labour.** ESTIMATED, extremely high, among the largest capital commitments in the tree.
 
-**Danger.** Both large: `95_expeditions.md`'s expedition risks, plus a laid cable is an obvious sabotage target.
+**Danger.** Large: expedition risk plus sabotage of a laid cable.
 
-**Confidence: HIGH** on the material science; **LOW** on Roman-era logistics, laying real cable length needs ship-handling this guide's early centuries likely lack.
+**Confidence: HIGH** on the material science; **LOW** on Roman-era laying logistics.
 
 ---
 
 ### if_telephone_transmitter - Telephone transmitter
 
-**What it is.** A device converting nearby voice into an electrical signal for wire transmission.
+**What it is.** A device converting nearby voice into an electrical signal.
 
-**Why you would never guess this.** The same carbon-granule mechanism as the microphone above, packaged for mouth distance, needing a constant small current at every handset, a real infrastructure burden: a telephone network needs power distributed to every subscriber, not just wire.
+**Why you would never guess this.** The same carbon-granule mechanism as the microphone above, needing constant current at every handset, a real infrastructure burden.
 
 Also covers: if_telephone_receiver, if_loading_coil.
 
 **Prerequisites.** `if_carbon_microphone`.
 
-**Failure modes.** Receiver and transmitter too close or too loud causes acoustic feedback squeal.
+**Failure modes.** Receiver and transmitter too close causes feedback squeal.
 
-**Telephone receiver**: a small loudspeaker run in reverse, an electromagnet pulling a thin iron diaphragm. Fidelity is deliberately poor, passing only roughly 300-3400 Hz, why a phone voice sounds thin, all intelligibility needs and all the diaphragm supports.
+**Telephone receiver**: a small loudspeaker in reverse; the system passes only roughly 300-3400 Hz, why a phone voice sounds thin.
 
-**Loading coil**: an inductor inserted periodically to cancel the cable's own capacitance, extending range roughly from 20 km unloaded to 50 km loaded; wrong spacing increases crosstalk, and worsens the line for anything but voice-band audio.
+**Loading coil**: an inductor cancelling cable capacitance, extending range from 20 km to 50 km loaded; wrong spacing increases crosstalk.
 
-**Cost & labour.** ESTIMATED, a handset modest once the microphone exists; a full network is the real capital sink.
+**Cost & labour.** ESTIMATED, modest once the microphone exists.
 
-**Danger.** Low physically; see the exchange entry below for the sharper risk.
+**Danger.** Low; see the exchange entry for the sharper risk.
 
-**Confidence: MEDIUM** - textbook once the carbon microphone and low-voltage supply exist.
+**Confidence: MEDIUM** - textbook once the microphone exists.
 
 ---
 
 ### if_telephone_exchange - Telephone exchange and switchboard
 
-**What it is.** A central point connecting any subscriber's line to any other's on demand.
+**What it is.** A central point connecting any subscriber's line to any other's.
 
-**Why you would never guess this.** A manual exchange works by an operator physically plugging a cord between jacks, meaning that operator hears, or can choose to listen to, every call passing through. This is the largest single social danger in this cluster: an exchange operator is a standing eavesdropper on every subscriber's business, and a rival, spouse or faction only needs one sympathetic operator to listen to anything routed through the board. Capacity is capped by staffed operators, not wire.
+**Why you would never guess this.** A manual exchange works by an operator plugging a cord between jacks, meaning that operator hears every call, the largest single social danger here: a standing eavesdropper on every subscriber's business.
 
 Also covers: if_strowger_exchange.
 
 **Prerequisites.** `if_telegraph_relay`, `if_telephone_transmitter`.
 
-**Strowger exchange**: an electromechanical stepping switch moves a wiper vertically then rotates it horizontally, driven purely by the caller's own dial pulses, removing the operator entirely. A persistent ATTRIBUTED (unverified) anecdote holds its inventor was an undertaker who suspected the town operator was diverting his calls to a rival; true or not, it captures exactly the danger the automation solves. Bearing wear on the switches is rapid, an ongoing maintenance cost.
+**Strowger exchange**: an electromechanical stepping switch moves vertically then rotates, driven by the caller's own dial pulses, removing the operator. A persistent ATTRIBUTED anecdote holds its inventor was an undertaker who suspected the town operator diverted his calls to a rival; true or not, it captures the danger solved.
 
-**Failure modes.** Manual: an overwhelmed board cannot connect calls fast enough at peak. Strowger: worn contacts misroute calls intermittently.
+**Failure modes.** An overwhelmed manual board cannot keep pace at peak.
 
-**Cost & labour.** ESTIMATED, a manual exchange scales with operator wages, ongoing; Strowger trades that for a large maintenance-heavy capital asset.
+**Cost & labour.** ESTIMATED, manual scales with operator wages; Strowger trades that for maintenance-heavy capital.
 
-**Danger.** Serious, not minor: assume any sensitive call through a manually-staffed exchange is not private; see `03_SOCIAL_POLITICS.md` on who is watching you.
+**Danger.** Serious: assume any call through a staffed exchange is not private (`03_SOCIAL_POLITICS.md`).
 
-**Confidence: MEDIUM** for manual (simple, attested); **LOW** for Strowger, precise stepping switches need tolerances this guide's early centuries will struggle to hold.
+**Confidence: MEDIUM** for manual; **LOW** for Strowger's precision switches.
 
 ---
 
@@ -588,21 +588,21 @@ Also covers: if_strowger_exchange.
 
 ### if_camera_obscura_lens - Camera obscura with lens
 
-**What it is.** A darkened box projecting a real, inverted image of the outside world, sharp and bright enough to trace or expose.
+**What it is.** A darkened box projecting a real image, bright enough to trace or expose.
 
-**Why you would never guess this.** Obvious once you want it: a pinhole projects an image but is extremely dim, bright sun only. A modest ground lens (Rome already grinds lenses, `30_glass_optics.md`) in place of the pinhole gathers far more light for a brighter image at a smaller aperture, essentially free once lens grinding exists.
+**Why you would never guess this.** A pinhole is extremely dim; a modest ground lens (Rome already grinds lenses, `30_glass_optics.md`) gathers far more light, essentially free once lens grinding exists.
 
 Also covers: if_camera_lucida.
 
 **Prerequisites.** `lens_grinding`, `cap_tol_1mm`.
 
-**Camera lucida**: an entirely different trick, no dark box, a prism (or angled mirrors) held above paper at exactly 45 degrees lets the artist see the scene and the paper superimposed, tracing an accurate outline freehand in daylight, no darkroom, no exposure.
+**Camera lucida**: no dark box, a prism at exactly 45 degrees lets the artist see scene and paper superimposed, tracing freehand, no exposure.
 
-**Failure modes.** A poor lens gives a soft image; a prism angle off by a couple degrees breaks the superimposition.
+**Failure modes.** A poor lens gives a soft image.
 
-**Cost & labour.** ESTIMATED, low, a modest lens-grinding job (`30_glass_optics.md`).
+**Cost & labour.** ESTIMATED, low, a modest lens-grinding job.
 
-**Danger.** Low; a "ghostly" projected image may unsettle a superstitious observer, demonstrate it as natural philosophy.
+**Danger.** Low; a "ghostly" projected image may unsettle a superstitious observer.
 
 **Confidence: HIGH** - straightforward optics once Roman lens-grinding exists.
 
@@ -610,27 +610,27 @@ Also covers: if_camera_lucida.
 
 ### if_silver_halide_sensitivity - Silver halide photographic sensitivity
 
-**What it is.** The chemical fact under almost every process here: certain silver salts darken under light in proportion to exposure.
+**What it is.** The chemical fact under almost every process here: certain silver salts darken under light.
 
-**Why you would never guess this.** Light breaks a small fraction of a halide crystal's ions to metallic silver, a latent image invisible to the eye; development amplifies it to visible. The non-obvious part: this does not stop on its own. Unexposed grains stay light-sensitive and keep darkening until the whole plate goes uniformly black. The craft is stopping it in time, dissolving away every unexposed grain (fixing) before it reacts further, a step almost nobody guesses is necessary until a ruined plate teaches them.
+**Why you would never guess this.** Light breaks a fraction of a halide crystal's ions to metallic silver, a latent image invisible to the eye. This does not stop on its own: unexposed grains keep darkening until the plate goes black. The craft is stopping it in time, dissolving away every unexposed grain (fixing), a step nobody guesses is necessary until a ruined plate teaches them.
 
 Also covers: if_daguerreotype.
 
 **Prerequisites.** `analytical_chemistry`, `mat_silver` (Cartagena mines).
 
-**Roman-available inputs.** Silver chloride, from silver nitrate plus sea salt, is readily reachable; bromide and iodide, more sensitive, need sources Rome cannot easily reach. ESTIMATED: start with chloride.
+**Roman-available inputs.** Silver chloride, from nitrate plus sea salt, is reachable; bromide and iodide are not.
 
-**Procedure.** Coat a surface with the halide; expose in a camera obscura; develop to amplify the latent image; fix by dissolving every unexposed grain, historically a hyposulfite bath, the step that makes photography possible at all.
+**Procedure.** Coat with the halide; expose in a camera obscura; develop; fix by dissolving unexposed grain, historically a hyposulfite bath, the step making photography possible at all.
 
-**Failure modes.** Skip fixing and the plate blackens within hours of returning to light.
+**Failure modes.** Skip fixing and the plate blackens within hours.
 
-**Daguerreotype**: develops by exposing the plate to hot mercury vapour, amalgamating onto exposed silver in proportion to light received, building a mirror-bright image directly on silvered copper, unique, no negative, no copies.
+**Daguerreotype**: develops by hot mercury vapour amalgamating onto exposed silver, a mirror-bright image on silvered copper, unique, no negative.
 
-**Cost & labour.** ESTIMATED, a skilled chemist's day per plate; silver a real material cost.
+**Cost & labour.** ESTIMATED, a chemist's day per plate.
 
-**Danger.** Physical: mercury vapour is a serious cumulative poison, ventilate. Social: an exact captured face reads as uncomfortably close to image-magic *devotio* effigies to many Romans; expect suspicion.
+**Danger.** Physical: mercury vapour is a cumulative poison. Social: an exact face reads as image-magic to many Romans.
 
-**Confidence: HIGH** on the chemistry; **MEDIUM** on sourcing anything beyond chloride.
+**Confidence: HIGH** on the chemistry; **MEDIUM** on sourcing beyond chloride.
 
 ---
 
@@ -638,117 +638,117 @@ Also covers: if_daguerreotype.
 
 **What it is.** A negative-positive process letting unlimited copies print from one exposure.
 
-**Why you would never guess this.** A paper negative (silver iodide, waxed translucent after exposure) can be contact-printed any number of times onto fresh paper, the first true photographic reproduction technology, at the cost of the paper's fibre texture showing faintly in every print.
+**Why you would never guess this.** A paper negative can be contact-printed repeatedly, the first true reproduction technology, at the cost of visible paper texture in every print.
 
 Also covers: if_wet_collodion_plate, if_dry_gelatin_plate.
 
 **Prerequisites.** `if_silver_halide_sensitivity`, `mat_paper`.
 
-**Wet collodion**: glass coated with collodion (nitrocellulose in ether and alcohol, `20_chemistry.md`) carrying silver salts gives a texture-free negative, but must be sensitised, exposed and developed while wet, evaporation ruins sensitivity in 10-15 minutes, forcing field photographers to carry a whole portable darkroom, a large hidden logistics tax.
+**Wet collodion**: glass coated with collodion (nitrocellulose in ether and alcohol, `20_chemistry.md`) gives a texture-free negative but must be developed within 10-15 minutes of coating, wet, forcing field photographers to carry a portable darkroom.
 
-**Dry gelatin**: gelatin heated permeates evenly with silver salts, and once dried, stays sensitive on the shelf for months, finally separating preparation, exposure and development in time and place, which enables amateur, handheld, spontaneous photography far more than the camera itself does.
+**Dry gelatin**: gelatin heated permeates evenly with silver salts and, once dried, stays sensitive for months, finally separating preparation from exposure from development, enabling amateur photography.
 
-**Failure modes.** Calotype: over-waxing blurs detail. Collodion: any delay past 10-15 minutes ruins the image. Gelatin: uneven heating leaves patchy sensitivity.
+**Failure modes.** Collodion: any delay past 10-15 minutes ruins the image.
 
-**Cost & labour.** ESTIMATED, moderate per batch; collodion additionally demands ongoing field logistics.
+**Cost & labour.** ESTIMATED, moderate; collodion demands ongoing field logistics.
 
-**Danger.** Low beyond standard darkroom handling; same image-magic suspicion as daguerreotype, somewhat softened since reproducible negatives look less like a captured soul.
+**Danger.** Low; same image-magic suspicion as the daguerreotype, softened by reproducibility.
 
-**Confidence: MEDIUM** - collodion depends on a working nitrocellulose supply, a real Roman-era chemistry project.
+**Confidence: MEDIUM** - collodion needs a working nitrocellulose supply.
 
 ---
 
 ### if_celluloid_roll_film - Celluloid roll film
 
-**What it is.** A flexible transparent plastic base manufacturable as a continuous roll, ending single-plate reloading.
+**What it is.** A flexible transparent base manufacturable as a continuous roll.
 
-**Why you would never guess this.** Celluloid (nitrocellulose plasticised with camphor, a Far-East import) coated with gelatin emulsion can be a long strip with sprocket holes for precise frame spacing, unlocking handheld cameras with dozens of exposures and, with fast repeated pulldown (see below), true motion pictures.
+**Why you would never guess this.** Celluloid (nitrocellulose plasticised with camphor, a Far-East import) with sprocket holes unlocks handheld cameras with dozens of exposures and, with fast pulldown, motion pictures.
 
 Also covers: if_panchromatic_emulsion, if_autochrome_plate.
 
 **Prerequisites.** `if_dry_gelatin_plate`, `mat_celluloid`, `cap_tol_100um`.
 
-**Panchromatic emulsion**: ordinary emulsion is blind to red, safe under a yellow safelight; special dye sensitisers extend sensitivity across the full spectrum including red, more realistic tone, but now even a dim red safelight fogs the plate.
+**Panchromatic emulsion**: extends sensitivity to red (ordinary emulsion is blind to it), but now even a dim red safelight fogs the plate.
 
-**Autochrome plate**: millions of transparent starch grains dyed red, green and violet, dusted onto glass as a random colour filter over a single panchromatic emulsion; light reaches the emulsion only through correctly-coloured grains, and viewing the developed plate backlit blends the dots into full colour. Resolution caps around 100 lines/mm; colours read soft and pastel.
+**Autochrome**: starch grains dyed red, green, violet, over a panchromatic emulsion, viewed backlit as a colour transparency; resolution caps near 100 lines/mm.
 
-**Failure modes.** Uneven camphor plasticising cracks the film; panchromatic plates fog invisibly under an ordinary safelight.
+**Failure modes.** Uneven camphor plasticising cracks the film.
 
-**Cost & labour.** ESTIMATED, high; camphor is a genuine expensive import, dye sensitisers a real synthetic-chemistry reach.
+**Cost & labour.** ESTIMATED, high; camphor and dye sensitisers are both real reaches.
 
-**Danger.** Physical: celluloid and nitrocellulose stock are genuinely flammable, closer to a slow explosive when aged; store away from flame.
+**Danger.** Physical: nitrocellulose stock is genuinely flammable, closer to a slow explosive when aged.
 
-**Confidence: MEDIUM** on celluloid; **LOW** on panchromatic and autochrome, both needing synthetic dye chemistry beyond this guide's early modules.
+**Confidence: MEDIUM** on celluloid; **LOW** on panchromatic and autochrome.
 
 ---
 
 ### if_flash_powder - Flash powder
 
-**What it is.** A way to produce a very bright, near-daylight burst of light in a fraction of a second, for exposures where lamp or gaslight is far too dim.
+**What it is.** A way to produce a bright, near-daylight burst for exposures where lamp light is too dim.
 
-**Why you would never guess this.** Burning magnesium metal gives blue-white light near daylight's spectrum in well under a second. The hard part is the magnesium itself: historically isolated only by electrolysis of molten salts, not achieved until the early 1800s; treat true magnesium flash as gated behind `50_electricity.md`'s current chain, a genuinely late capability.
+**Why you would never guess this.** Burning magnesium gives blue-white light near daylight's spectrum in under a second, but magnesium metal needs electrolysis, unavailable before the early 1800s, gated behind `50_electricity.md`.
 
 Also covers: if_flashbulb.
 
-**Roman-available inputs.** A real stopgap: dried lycopodium powder (clubmoss spores, MEASURED as a stage-flash material for centuries before magnesium) burns bright but dim and yellow-orange when blown through a flame, dramatic, not a real exposure.
+**Roman-available inputs.** A real stopgap: dried lycopodium powder (clubmoss spores, MEASURED as a stage-flash material) burns dim and yellow-orange, dramatic, not a real exposure.
 
-**Procedure.** Grind magnesium fine to maximise burning surface; ignite by spark or flame at exposure, held clear of anything flammable.
+**Procedure.** Grind magnesium fine; ignite by spark or flame, clear of anything flammable.
 
 **Failure modes.** Coarse powder burns too slowly; damp powder fails to ignite.
 
-**Flashbulb**: thin magnesium foil sealed in a glass bulb filled with pure oxygen, fired electrically, single-use and safer than loose powder; the seal must be perfect, any leak ruins it before firing.
+**Flashbulb**: magnesium foil sealed in an oxygen-filled glass bulb, single-use; any seal leak ruins it before firing.
 
-**Cost & labour.** ESTIMATED, high, gated on magnesium; lycopodium is cheap but does not solve the actual exposure problem.
+**Cost & labour.** ESTIMATED, high, gated on magnesium.
 
-**Danger.** Physical: burning magnesium is a fire and burn hazard, the smoke an eye/lung irritant indoors; ventilate.
+**Danger.** Physical: fire and burn hazard, ventilate the smoke.
 
-**Confidence: LOW** - chemistry is textbook, magnesium metal is a real late-tier barrier.
+**Confidence: LOW** - magnesium metal is a real late-tier barrier.
 
 ---
 
 ### if_focal_plane_shutter - Focal plane shutter
 
-**What it is.** A precise mechanism controlling exposure duration, essential below a fraction of a second.
+**What it is.** A mechanism controlling exposure duration below a fraction of a second.
 
-**Why you would never guess this.** A fabric curtain with a slit runs across the film plane itself; narrowing the slit's **width**, not the curtain's speed (roughly constant), shortens exposure. Above roughly 1/500 second needs multiple synchronised slits. Shutter speed here is a width, not a speed.
+**Why you would never guess this.** A curtain slit runs across the film plane; narrowing its **width**, not its speed, shortens exposure. Shutter speed here is a width, not a speed.
 
 Also covers: if_leaf_shutter, if_intermittent_film_movement.
 
 **Prerequisites.** `cap_tol_100um`.
 
-**Leaf shutter**: overlapping metal blades at the lens, opened and closed together by a small geared spring mechanism; because the whole aperture opens as one unit it flash-synchronises far more cleanly than a focal-plane curtain, whose slit exposes different parts of the frame at different instants.
+**Leaf shutter**: blades at the lens open together, flash-synchronising far more cleanly than a travelling curtain.
 
-**Intermittent film movement**: to hold a frame still for exposure then advance it in a fraction of a second needs a Geneva cross or claw-and-cam converting smooth rotation into a stop-start jerk. The cross-slot geometry must be cut precisely or the pin binds, tearing film or skipping a frame.
+**Intermittent film movement**: a Geneva cross or claw-and-cam holds a frame still then advances it in a fraction of a second; imprecise geometry binds the pin, tearing film.
 
-**Failure modes.** An uneven curtain over-exposes one edge; a weak leaf-shutter spring effectively lengthens exposure.
+**Failure modes.** An uneven curtain over-exposes one edge.
 
-**Cost & labour.** ESTIMATED, fine clockwork-level precision mechanism work.
+**Cost & labour.** ESTIMATED, fine clockwork-level precision.
 
 **Danger.** Low.
 
-**Confidence: MEDIUM** - well documented, achievability depends on holding the stated tolerance in production.
+**Confidence: MEDIUM** - well documented, achievability depends on holding tolerance in production.
 
 ---
 
 ### if_cine_camera - Cine camera
 
-**What it is.** A camera capturing a rapid sequence of stills on moving film, the basis of motion pictures.
+**What it is.** A camera capturing rapid stills on moving film, the basis of motion pictures.
 
-**Why you would never guess this.** It is celluloid roll film plus intermittent movement plus one easy-to-miss requirement: the shutter must **blank the lens during pulldown**, or every frame carries a smeared double image. Spring-wound drive is simple but drifts speed over a shot; a motor drive holds a steadier frame rate.
+**Why you would never guess this.** Celluloid roll film plus intermittent movement plus one easy-to-miss requirement: the shutter must **blank the lens during pulldown**, or every frame smears.
 
 Also covers: if_film_projector.
 
 **Prerequisites.** `if_celluloid_roll_film`.
 
-**Film projector**: the same problem in reverse, holding each frame still while light shines through it, adding a bright, hot light inches from flammable nitrocellulose film. Heat dissipation is a life-safety requirement, not a refinement.
+**Film projector**: the same problem in reverse, adding a bright, hot light inches from flammable film; heat dissipation is a life-safety requirement.
 
-**Failure modes.** Incomplete blanking smears or flickers the picture; inadequate heat dissipation can ignite jammed film in seconds.
+**Failure modes.** Incomplete blanking smears the picture; poor heat dissipation can ignite jammed film in seconds.
 
-**Cost & labour.** ESTIMATED, comparable to two fine clocks' worth of mechanism working in synchrony.
+**Cost & labour.** ESTIMATED, two fine clocks' worth of mechanism in synchrony.
 
-**Danger.** Physical, severe: nitrocellulose fires in enclosed cinemas were a real, repeated historical hazard (MEASURED as a documented class of incident) once projection became common; treat heat management as audience life-safety. Social: moving images of real people amplify the daguerreotype's image-magic anxiety.
+**Danger.** Physical, severe: nitrocellulose fires in enclosed cinemas were a real, repeated hazard (MEASURED). Social: moving images amplify image-magic anxiety.
 
-**Confidence: MEDIUM** on the mechanism; **HIGH** on the fire risk, nitrocellulose flammability is settled chemistry.
+**Confidence: MEDIUM** on the mechanism; **HIGH** on the fire risk.
 
 ---
 
@@ -756,121 +756,117 @@ Also covers: if_film_projector.
 
 ### if_tuned_circuit - Tuned LC circuit
 
-**What it is.** A coil-and-capacitor pair resonating at one frequency, letting a receiver select one signal from the whole spectrum.
+**What it is.** A coil-and-capacitor pair resonating at one frequency, letting a receiver select one signal from the spectrum.
 
-**Why you would never guess this.** A coil and capacitor together oscillate naturally at a set frequency, but how sharply that resonance selects one frequency and rejects others (its "Q") depends on minimising resistance in the loop, a fussy small-scale winding and low-loss-capacitor problem, not an exotic material one.
+**Why you would never guess this.** How sharply the resonance selects one frequency (its "Q") depends on minimising resistance in the loop, a fussy winding and low-loss-capacitor problem, not an exotic material one.
 
 Also covers: if_antenna_dipole.
 
 **Prerequisites.** `electromagnet`.
 
-**Procedure.** Wind a coil with as few resistive joints as possible in pure annealed copper; pair with a low-loss variable capacitor; tune until the desired frequency peaks.
+**Procedure.** Wind a coil in pure annealed copper; pair with a low-loss variable capacitor; tune until the frequency peaks.
 
-**Dipole antenna**: an antenna's own radiation resistance is very low, so impedance matching matters more than anything else for efficient transfer, and height above ground matters far more than a good ground connection.
+**Dipole antenna**: radiation resistance is very low, so impedance matching matters more than anything, and height above ground matters far more than a good ground connection.
 
-**Failure modes.** A resistive coil or lossy capacitor gives a broad resonance that cannot separate close stations; a mismatched antenna radiates or receives only a fraction of its power.
+**Failure modes.** A resistive coil gives a broad resonance that cannot separate close stations.
 
-**Cost & labour.** ESTIMATED, modest once copper and a basic capacitor exist; the cost is precision winding labour.
+**Cost & labour.** ESTIMATED, modest, the cost is precision winding labour.
 
-**Danger.** Low physically; socially, invisible long-distance signal detection reads as augury or sorcery to most Romans, be ready to explain it as natural philosophy.
+**Danger.** Low; invisible signal detection reads as sorcery to most Romans.
 
-**Confidence: MEDIUM** - textbook, gated on `50_electricity.md`'s electromagnet chain and winding precision.
+**Confidence: MEDIUM** - gated on `50_electricity.md`'s electromagnet chain and winding precision.
 
 ---
 
 ### if_spark_transmitter - Spark transmitter
 
-**What it is.** The earliest practical way to generate a radio signal strong enough to detect at a distance.
+**What it is.** The earliest practical way to generate a radio signal detectable at a distance.
 
-**Why you would never guess this.** A spark across a high-voltage gap produces a broadband, rapidly damped wave, not a clean tone, wasting energy and jamming every nearby transmitter at once, an early instance of the spectrum as a shared commons, a social problem as much as a technical one. Rotating the gap's electrodes so a fresh contact meets every spark reduces pitting but does not fix the broadband waste.
+**Why you would never guess this.** A spark produces a broadband, damped wave, jamming every nearby transmitter at once, an early instance of the spectrum as a shared commons.
 
 Also covers: if_coherer, if_crystal_detector.
 
 **Prerequisites.** `if_tuned_circuit`.
 
-**Coherer**: a glass tube loosely packed with metal filings briefly "cohere," clumping and sharply dropping resistance, when a radio wave passes, registering a click. The filings do not decohere on their own; a spring-driven tapper must bump the tube after every signal, or it stays stuck.
+**Coherer**: metal filings briefly "cohere," dropping resistance, when a radio wave passes; they do not decohere on their own, a spring tapper must bump the tube after every signal.
 
-**Crystal detector**: a fine wire ("cat's whisker") pressed against a galena crystal (lead ore, Spanish/British/Sardinian mines) forms a one-way rectifying junction at lucky spots, converting the wave directly to signal with no battery or moving parts, far more reliable than the coherer but temperamental, needing trial-and-error hunting for a sensitive spot, lost with a bump.
+**Crystal detector**: a "cat's whisker" against galena (lead ore, Spanish/British/Sardinian mines) rectifies with no battery, more reliable than the coherer but temperamental, the sensitive spot found by trial and lost with a bump.
 
-**Failure modes.** An unpitted gap gives an inconsistent tone; an untapped coherer stops responding; a crystal's sensitive spot drifts or is lost.
+**Failure modes.** An untapped coherer stops responding.
 
-**Cost & labour.** ESTIMATED, low to moderate, the crystal detector cheapest once galena is on hand.
+**Cost & labour.** ESTIMATED, low to moderate.
 
-**Danger.** Low physically; socially, visible sparking makes the sorcery suspicion worse, not better.
+**Danger.** Low; visible sparking worsens sorcery suspicion.
 
-**Confidence: HIGH** for spark gap and coherer (first working radio systems, well attested); **MEDIUM** for the crystal detector, reliability depending on finding a sensitive sample.
+**Confidence: HIGH** for spark and coherer; **MEDIUM** for the crystal detector.
 
 ---
 
 ### if_triode_oscillator - Triode oscillator
 
-**What it is.** A stable continuous single-frequency radio wave generator, replacing the spark's crude damped burst.
+**What it is.** A stable continuous radio wave generator, replacing spark's crude burst.
 
-**Why you would never guess this.** Once you have a hard vacuum tube (`50_electricity.md`, `55_semiconductors.md`), positive feedback from output back to input sustains continuous oscillation indefinitely. The fiddly part: coupling strength must sit in a narrow window, too little and it will not oscillate, too much and it chirps unstably.
+**Why you would never guess this.** With a hard vacuum tube (`50_electricity.md`, `55_semiconductors.md`), positive feedback sustains oscillation indefinitely, but coupling strength must sit in a narrow window, too little and it will not oscillate, too much and it chirps.
 
 Also covers: if_continuous_wave_transmitter, if_amplitude_modulation, if_frequency_modulation.
 
 **Prerequisites.** `vacuum_tube`, `if_tuned_circuit`.
 
-**Continuous wave**: the practical name for what a stable triode gives you, a steady, cleanly keyed tone using far less bandwidth than spark, letting many stations share a band without drowning each other.
+**Continuous wave**: a steady, cleanly keyed tone using far less bandwidth than spark. **Amplitude modulation**: varies carrier strength with audio, simple, but atmospheric noise is itself amplitude noise. **Frequency modulation**: varies frequency instead, far quieter, at the cost of bandwidth and complexity.
 
-**Amplitude modulation**: varies the carrier's strength with a microphone signal, bandwidth roughly twice audio frequency, simple, but atmospheric noise is itself amplitude noise and rides straight through as crackle.
-
-**Frequency modulation**: varies frequency instead, sidestepping that noise almost entirely (a limiter clips amplitude noise before a discriminator recovers the sound), far quieter, at the cost of more bandwidth and a more complex receiver.
-
-**Failure modes.** Loose feedback fails to oscillate; tight feedback chirps or drifts.
+**Failure modes.** Loose feedback fails to oscillate; tight feedback chirps.
 
 **Cost & labour.** ESTIMATED, high, gated on the vacuum tube.
 
-**Danger.** Low physically once the tube exists; socially, continuous deliberate broadcast is far more visible and harder to deny than a one-off spark demonstration.
+**Danger.** Low physically; continuous broadcast is more visible than a one-off spark demonstration.
 
-**Confidence: LOW** across all four, entirely gated on a working vacuum tube, treated as a hard, late-tier destination here.
+**Confidence: LOW** across all four, entirely gated on a working vacuum tube.
 
 ---
 
 ### if_superheterodyne_receiver - Superheterodyne receiver
 
-**What it is.** A receiver design letting a single dial select any station cleanly across a band.
+**What it is.** A receiver design letting one dial select any station cleanly across a band.
 
-**Why you would never guess this.** Rather than one stage sharp enough to isolate a station at its actual frequency, mix the incoming signal with a local oscillator to shift it to one fixed "intermediate frequency," where a single permanently-tuned sharp stage filters regardless of station. Deliberately converting to the "wrong" frequency to simplify everything downstream is the counterintuitive step.
+**Why you would never guess this.** Mix the incoming signal with a local oscillator to shift it to one fixed "intermediate frequency," where a single sharp stage filters regardless of station, deliberately using the "wrong" frequency to simplify everything downstream.
 
 Also covers: if_radio_direction_finding, if_facsimile_transmission, if_radar.
 
 **Prerequisites.** `if_triode_oscillator`, `if_amplitude_modulation`.
 
-**Radio direction finding**: a rotatable loop antenna has a sharp **null** edge-on to a transmitter, a far more precise bearing than its broad maximum; two stations taking simultaneous bearings triangulate a position. **Facsimile**: a rotating drum and photocell scan an image in a raster; receiving and sending drums must synchronise near-perfectly or the image smears; scan speed trades against resolution. **Radar**: transmit a short timed pulse, measure the echo's round-trip time for range, display on a CRT, a genuine capstone needing a stable oscillator, sub-microsecond timing and a working CRT together, essentially the far end of this guide's reconstruction path.
+**Radio direction finding**: a loop antenna's sharp **null** gives a far more precise bearing than its broad maximum; two stations triangulate. **Facsimile**: a rotating drum and photocell scan an image; sender and receiver must synchronise near-perfectly. **Radar**: a timed pulse's echo gives range on a CRT display, a genuine capstone needing everything above at once, essentially the far end of this guide's reconstruction path.
 
-**Failure modes.** A drifting oscillator loses the intermediate lock; a bent loop gives a false null; drum drift skews a facsimile image.
+**Failure modes.** A drifting oscillator loses the intermediate lock.
 
-**Cost & labour.** ESTIMATED, high across the cluster, all gated on the triode chain.
+**Cost & labour.** ESTIMATED, high across the cluster.
 
-**Danger.** Low physically; RDF and radar are recognisably military-relevant the moment a general understands them.
+**Danger.** Low physically; RDF and radar are recognisably military-relevant.
 
-**Confidence: LOW** across the cluster; radar marks the plausible end of this guide's reconstruction path.
+**Confidence: LOW** across the cluster; radar marks the plausible end of reconstruction.
 
 ---
 
 ### if_cathode_ray_tube - Cathode ray tube
 
-**What it is.** A vacuum tube steering a focused electron beam to draw an image on a glowing phosphor screen.
+**What it is.** A vacuum tube steering an electron beam to draw an image on a phosphor screen.
 
-**Why you would never guess this.** The beam is steered by magnetic coils or electrostatic plates striking a phosphor screen that glows at impact; the coils need genuine symmetry or the picture distorts. Phosphor wears out with use, dimming or "burning in" a ghost image.
+**Why you would never guess this.** Deflection coils need genuine symmetry or the picture distorts; phosphor wears out with use, dimming or "burning in" a ghost image.
 
 Also covers: if_iconoscope, if_video_scanning_standard, if_television_mechanical.
 
 **Prerequisites.** `discharge_xray`, `vacuum_tube`.
 
-**Iconoscope**: a mosaic of tiny light-sensitive cells, each capacitively isolated so it independently accumulates its own charge since last scanned; building this fine, uniform mosaic, not the tube, is the real barrier.
+**Iconoscope**: a mosaic of tiny light-sensitive cells, each capacitively isolated to accumulate its own charge; building this fine, uniform mosaic, not the tube, is the real barrier.
 
-**Video scanning standard**: fixing scan lines and frame rate, often matched to power-line frequency, is a coordination problem, not a technical one, every transmitter and receiver must agree or nothing displays (`03_SOCIAL_POLITICS.md`).
+**Video scanning standard**: fixing scan lines and frame rate is a coordination problem, not a technical one, every transmitter and receiver must agree (`03_SOCIAL_POLITICS.md`).
 
-**Mechanical television** (Nipkow disc): a spinning disc punched with a spiral of holes, before a photocell or lamp, scans an image mechanically, no vacuum tube at all, just precision disc-cutting, giving a real, dim, flickering picture; the sensible stepping stone before the electronic route.
+**Mechanical television** (Nipkow disc): a spinning punched disc scans an image mechanically, no vacuum tube at all, a dim, flickering but real stepping stone before the electronic route.
 
-**Failure modes.** Asymmetric coils skew the image; a poorly isolated mosaic bleeds and blurs; an off-speed disc rolls the image.
+**Failure modes.** Asymmetric coils skew the image.
 
-**Cost & labour.** ESTIMATED, very high for CRT/iconoscope; moderate for mechanical, closer to Roman-era precision engineering.
+**Cost & labour.** ESTIMATED, very high for CRT/iconoscope; moderate for mechanical.
 
-**Danger.** Low physically; socially, transmitted moving images amplify image-magic suspicion.
+**Danger.** Low physically; transmitted moving images amplify image-magic suspicion.
 
 **Confidence: LOW** for CRT and iconoscope; **MEDIUM** for mechanical television.
 

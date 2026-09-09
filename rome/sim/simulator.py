@@ -164,6 +164,7 @@ DEFAULTS = dict(
     revenue_ramp_years=3,
     suspicion_decay=0.045,
     suspicion_danger=25.0,
+    eminence_danger=26.0,
     horizon_years=500,
 )
 
@@ -236,6 +237,7 @@ class Sim:
         # is not. The old model conflated speed with sorcery, which is wrong: the
         # iPhone was astonishing in 2007 and boring by 2012.
         self.scandal = 0.0
+        self.eminence = 0.0
         self.familiarity = 0.0      # how used to you the world has become
         self.protection = 0.0       # patrons, office, citizenship, priesthood
         self.bribes_ytd = 0.0
@@ -381,6 +383,38 @@ class Sim:
         income = max(1.0, self.revenue())
         p += min(0.30, (self.bribes_ytd / (income * 0.6)) * w["bribability"])
         self.protection = min(0.92, p)
+
+    def prominence_hazard(self):
+        """Eminence is its own hazard, and protection does NOT reduce it.
+
+        The model had a defect that only showed once the tree got big: every
+        defence saturates. Protection caps at 0.92, familiarity decays alarm to
+        a tenth, reputation sits at 97 out of 100 by the second century, and the
+        result was 200 successful runs out of 200. Nothing could touch you.
+
+        What was missing is that in an autocracy prominence is not only a shield,
+        it is a target, and the people who protect you are the people who destroy
+        you when you outgrow them. Sejanus was the most protected man in Rome
+        until the morning he was not. Seneca was the emperor's own tutor. Thrasea
+        Paetus was merely admired. None of them was brought down by a mob or by a
+        magic charge; they were brought down by being too eminent in a system
+        with one man at the top.
+
+        So this rises with reputation and with visible wealth, it is multiplied
+        by having got close to the throne, and no amount of patronage reduces it.
+        It feeds scandal rather than killing you outright, because the usual
+        outcome is a bad year, a confiscation or a lost patron, not a death.
+        """
+        w = self.w
+        rep = max(0.0, self.reputation) / 100.0
+        wealth = min(1.0, max(0.0, self.capital) / 250000.0)
+        h = 2.2 * w.get("w_eminence_danger", 0.5) * (0.70 * rep * rep + 0.30 * wealth)
+        if self.has("patron_imperial"):
+            h *= 1.5          # nearest the throne, most exposed to its turnover
+        # A wide, dispersed institution is harder to destroy than one great man.
+        if self.has("academy_network"):
+            h *= 0.65
+        return h
 
     def rep_factor(self):
         """How much easier reputation makes everything. 1.0 at zero reputation."""
@@ -576,7 +610,24 @@ class Sim:
             return 0.0
         # Scale beyond a local lease needs a concession, which in practice means
         # the fiscus. Metalla were largely imperial property.
-        ceiling = 60000.0 if self.has("patron_imperial") else 4000.0
+        # The ceiling is about STANDING and STATE CAPACITY, not about one
+        # Rome-specific node id. Keying it on patron_imperial permanently capped
+        # every civilization that has no emperor, which is not a finding about
+        # the Norse, it is a bug about the model. A society with little state
+        # capacity genuinely cannot organise a very large mine, but a chieftain
+        # who can raise a crew can certainly do better than a foreigner with a
+        # local lease.
+        sc = float(self.civ.get("state_capacity", 0.5))
+        if self.has("patron_imperial"):     ceiling = 20000.0 + 60000.0 * sc
+        elif self.has("patron_senatorial"): ceiling = 9000.0 + 20000.0 * sc
+        elif self.has("citizenship"):       ceiling = 6000.0 + 8000.0 * sc
+        else:                               ceiling = 3000.0 + 4000.0 * sc
+        # And scale is buyable. What actually limits a mine is crews, timber,
+        # drainage and someone to run it, all of which a large enterprise can
+        # organise whether or not it holds a title. Without this the Norse run
+        # ended with 259 million denarii unspent and no iron mine, capped at
+        # 3,600 tonnes a year by institutions that civilization does not have.
+        ceiling *= 1.0 + min(5.0, max(0.0, self.revenue()) / 60000.0)
         t_per_yr = min(t_per_yr, max(0.0, ceiling - self.mine_capacity.get(mat, 0.0)
                                           - self.mine_pending.get(mat, 0.0)))
         if t_per_yr <= 0:
@@ -842,10 +893,18 @@ class Sim:
             if self.binding == "charcoal":
                 self.buy_forest(min(400.0, self.capital / 900.0))
             elif self.binding in self.MINE_CAPEX_PER_T_YR:
-                short = self.annual_material_demand().get(
-                    {"coal": "coal_kg", "iron": "iron_bar_kg", "copper": "copper_kg",
-                     "lead": "lead_kg", "tin": "tin_kg",
-                     "silver": "silver_kg"}[self.binding], 0.0)
+                # Size the mine from ALL the material keys that feed this
+                # bucket, not one of them. The throttle counted iron ore AND
+                # iron bar against "iron"; the investment response looked only
+                # at iron bar. A run needing 10,330 tonnes of ore a year sank a
+                # mine sized for the 13 tonnes of bar, stayed throttled for
+                # centuries, and ended with its capital untouched.
+                dem = self.annual_material_demand()
+                keys = {"coal": ("coal_kg",),
+                        "iron": ("iron_bar_kg", "iron_ore_kg"),
+                        "copper": ("copper_kg",), "lead": ("lead_kg",),
+                        "tin": ("tin_kg",), "silver": ("silver_kg",)}[self.binding]
+                short = sum(dem.get(kk, 0.0) for kk in keys)
                 want = max(0.0, short - self.mine_capacity.get(self.binding, 0.0))
                 self.open_mine(self.binding, min(want, self.capital * 0.25
                                                  / max(1.0, self.MINE_CAPEX_PER_T_YR[self.binding])))
@@ -908,6 +967,11 @@ class Sim:
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
         self.update_protection()
         self.scandal *= 0.90
+        # Eminence accumulates in a SEPARATE pool, because bribery does not
+        # touch it. You can buy a magistrate, an accuser and a jury. You cannot
+        # buy an emperor's judgement that you have grown too large, and the
+        # attempt is itself evidence against you.
+        self.eminence = self.eminence * 0.93 + self.prominence_hazard()
         # you can buy your way out of trouble, and a sane player does
         if self.scandal > 8 and self.capital > 2000:
             spend = min(self.capital * 0.12, self.scandal * 260)
@@ -922,6 +986,32 @@ class Sim:
             if self.rng.random() < p:
                 self._catastrophe("denounced: %s" % ("as a sorcerer" if self.w["w_magic_fear"] > 0.5
                                                      else "as a subversive"))
+        # The eminence hazard is separate and unbribable. Its usual outcome is a
+        # bad year rather than a death: a confiscation, a patron destroyed in
+        # someone else's quarrel, a forced withdrawal from public life.
+        if self.events and self.eminence > c["eminence_danger"]:
+            p = (self.eminence - c["eminence_danger"]) / 90.0
+            if self.rng.random() < p:
+                roll = self.rng.random()
+                if roll < 0.45:
+                    take = self.capital * 0.55
+                    self.capital -= take
+                    self.reputation = max(0.0, self.reputation - 18)
+                    self.eminence *= 0.45
+                    self.log.append((yr, "PROMINENCE: property confiscated, %d den lost, "
+                                         "and you withdraw from public life for a while" % take))
+                elif roll < 0.80:
+                    for pat in ("patron_imperial", "patron_senatorial"):
+                        if pat in self.done:
+                            self.done.discard(pat)
+                            self.log.append((yr, "PROMINENCE: your patron is destroyed in "
+                                                 "someone else's quarrel and you lose %s" % pat))
+                            break
+                    self.eminence *= 0.5
+                    self.reputation = max(0.0, self.reputation - 10)
+                else:
+                    self._catastrophe("too eminent: brought down not for what you built "
+                                      "but for how large you had become")
 
         # 7. founder mortality
         if self.founder_alive:

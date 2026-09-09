@@ -42,7 +42,9 @@
   "bribability": 0.55,
   "patronage_weight": 0.85,
   "adaptation_rate": 0.08,
-  "_note": "w_magic_fear 0.8 because the Lex Cornelia is used against malefici and astrologers are expelled repeatedly. w_religious_rigidity only 0.2 because Roman religion is pluralistic and absorbs new cults readily; it is MAGIC that is criminal, not heterodoxy. w_labour_saving negative because of the Vespasian precedent and cheap coerced labour."
+  "_note": "w_magic_fear 0.8 because the Lex Cornelia is used against malefici and astrologers are expelled repeatedly. w_religious_rigidity only 0.2 because Roman religion is pluralistic and absorbs new cults readily; it is MAGIC that is criminal, not heterodoxy. w_labour_saving negative because of the Vespasian precedent and cheap coerced labour.",
+  "w_eminence_danger": 0.85,
+  "_note_eminence": "An autocracy in which prominence is lethal: Sejanus, Seneca, Thrasea Paetus. The higher you rise the fewer people are above you, and every one of them is a threat."
  },
  "hazards": [
   {

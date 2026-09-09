@@ -42,7 +42,9 @@
   "bribability": 0.3,
   "patronage_weight": 0.3,
   "adaptation_rate": 0.2,
-  "_note": "Positive w_labour_saving because labour is scarce, not cheap: exactly the reverse of Rome, and the reason a labour-saving machine is welcome here and resented there. Very high w_commerce, high novelty tolerance, and seidr is feared but not prosecuted by a state, because there is no state."
+  "_note": "Positive w_labour_saving because labour is scarce, not cheap: exactly the reverse of Rome, and the reason a labour-saving machine is welcome here and resented there. Very high w_commerce, high novelty tolerance, and seidr is feared but not prosecuted by a state, because there is no state.",
+  "w_eminence_danger": 0.2,
+  "_note_eminence": "No state, no court, nobody to denounce you to. The danger here is a feud, not a treason charge."
  },
  "hazards": [
   {
