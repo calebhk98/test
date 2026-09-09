@@ -251,6 +251,10 @@ class Sim:
         self.res = load_resources()
         self.forest_ha = 0.0        # coppice you own, in hectares
         self.nitre_bed_m2 = 0.0
+        self.mine_capacity = {}     # material -> tonnes/yr of your OWN workings
+        self.mine_pending = {}      # sunk but not yet producing
+        self.mine_ready = {}        # material -> year it comes on stream
+        self.mine_cost_paid = 0.0
         self.shortages = collections.Counter()
         self.throttle = 1.0
         self.binding = None
@@ -459,10 +463,14 @@ class Sim:
         checks = {
             "charcoal_kg": ("charcoal", self.forest_ha * self.CHARCOAL_PER_HA),
             "firewood_kg": ("charcoal", self.forest_ha * self.CHARCOAL_PER_HA * 4),
-            "iron_bar_kg": ("iron", 0.0), "iron_ore_kg": ("iron", 0.0),
-            "coal_kg": ("coal", 0.0), "copper_kg": ("copper", 0.0),
-            "lead_kg": ("lead", 0.0), "tin_kg": ("tin", 0.0),
-            "silver_kg": ("silver", 0.0), "nitre_kg": ("saltpetre", self.nitre_bed_m2 * 0.0008),
+            "iron_bar_kg": ("iron", self.mine_capacity.get("iron", 0.0)),
+            "iron_ore_kg": ("iron", self.mine_capacity.get("iron", 0.0)),
+            "coal_kg": ("coal", self.mine_capacity.get("coal", 0.0)),
+            "copper_kg": ("copper", self.mine_capacity.get("copper", 0.0)),
+            "lead_kg": ("lead", self.mine_capacity.get("lead", 0.0)),
+            "tin_kg": ("tin", self.mine_capacity.get("tin", 0.0)),
+            "silver_kg": ("silver", self.mine_capacity.get("silver", 0.0)),
+            "nitre_kg": ("saltpetre", self.nitre_bed_m2 * 0.0008),
         }
         for mat, (emp_key, own) in checks.items():
             need = demand.get(mat, 0.0)
@@ -483,6 +491,72 @@ class Sim:
         if who:
             self.shortages[who] += 1
         return worst
+
+    # Capital to create one tonne per year of standing extraction capacity, and
+    # the recurring cost of actually getting that tonne out. DERIVED, not
+    # measured: a Roman coal hewer working a shallow drift wins on the order of
+    # a tonne a day, so 250 t/yr a man, and the miner wage of 0.09 den/hr over
+    # 2000 hours is 180 den a year, giving roughly 0.7 den per tonne in wages
+    # before haulage. Doubling it for haulage, timbering and overseers gives the
+    # figures below. Metal ores cost far more per tonne of METAL because of the
+    # ore grade and the smelting, and the capital rises with depth and drainage.
+    MINE_CAPEX_PER_T_YR = {"coal": 9.0, "iron": 60.0, "copper": 240.0,
+                           "lead": 80.0, "tin": 420.0, "silver": 9000.0}
+    MINE_OPEX_PER_T     = {"coal": 1.5, "iron": 12.0, "copper": 55.0,
+                           "lead": 18.0, "tin": 95.0, "silver": 2200.0}
+    MINE_LEAD_YEARS = 3.0        # sinking, drainage, roads, and hiring
+
+    def open_mine(self, mat, t_per_yr):
+        """Open your own workings.
+
+        The model used to treat the Empire's ATTESTED output as a hard ceiling,
+        so a founder who needed twenty thousand tonnes of coal a year simply
+        never got it and sat throttled for centuries. That is the unobtainable
+        fallacy wearing different clothes. Rome mined almost no coal because
+        almost nobody wanted coal, not because the coal was not there: Britain,
+        Gaul and Spain are sitting on it, and Roman engineers already sink
+        shafts, drive adits and drain them with wheels at Rio Tinto and Las
+        Medulas. If you know what coke is for, you open a mine.
+
+        What it is NOT is free or instant. You pay to sink it, you wait for it,
+        and you pay every year to work it.
+        """
+        if t_per_yr <= 0:
+            return 0.0
+        cap = self.MINE_CAPEX_PER_T_YR.get(mat)
+        if cap is None:
+            return 0.0
+        # Scale beyond a local lease needs a concession, which in practice means
+        # the fiscus. Metalla were largely imperial property.
+        ceiling = 60000.0 if self.has("patron_imperial") else 4000.0
+        t_per_yr = min(t_per_yr, max(0.0, ceiling - self.mine_capacity.get(mat, 0.0)
+                                          - self.mine_pending.get(mat, 0.0)))
+        if t_per_yr <= 0:
+            return 0.0
+        cost = t_per_yr * cap * self.price_index
+        if cost > self.capital:
+            t_per_yr = self.capital / (cap * self.price_index)
+            cost = self.capital
+        if t_per_yr <= 0:
+            return 0.0
+        self.capital -= cost
+        self.mine_pending[mat] = self.mine_pending.get(mat, 0.0) + t_per_yr
+        self.mine_ready[mat] = max(self.mine_ready.get(mat, 0.0),
+                                   self.year + self.MINE_LEAD_YEARS)
+        return t_per_yr
+
+    def commission_mines(self):
+        """Move finished workings from pending into capacity."""
+        for mat, ready in list(self.mine_ready.items()):
+            if self.year >= ready and self.mine_pending.get(mat, 0.0) > 0:
+                self.mine_capacity[mat] = (self.mine_capacity.get(mat, 0.0)
+                                           + self.mine_pending.pop(mat))
+                self.mine_ready.pop(mat, None)
+
+    def mine_operating_cost(self):
+        """Charged every year the workings stand, whether or not you use them."""
+        return sum(self.mine_capacity.get(m, 0.0) * self.MINE_OPEX_PER_T.get(m, 0.0)
+                   for m in self.mine_capacity) * self.price_index
 
     def buy_forest(self, ha):
         """Coppice woodland, bought outright. The cheapest thing in the tree that
@@ -652,7 +726,9 @@ class Sim:
         self.economy = self.economy_index()
         lc = self.living_cost()
         self.living_cost_paid += lc
-        self.capital += self.revenue() - self.upkeep() - lc
+        mo = self.mine_operating_cost()
+        self.mine_cost_paid += mo
+        self.capital += self.revenue() - self.upkeep() - lc - mo
         # a standing workforce policy: buy when short of hands and flush, and
         # free them steadily, which is both the decent and the efficient choice
         if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
@@ -704,10 +780,28 @@ class Sim:
         # 4c. materials. Buy the woodland and dig the beds BEFORE the shortage
         #     bites, which is what a competent manager does and what the old
         #     model never had to think about at all.
+        self.commission_mines()
         thr = self.resource_throttle()
         if thr < 0.9 and self.capital > 3000:
-            if self.binding in ("charcoal", "iron", "copper", "lead"):
+            # Charcoal is GROWN, so the answer is woodland. Everything else in
+            # this list is DUG, so the answer is a mine, and the old model had
+            # no answer at all for coal: the binding constraint fell through
+            # both branches and the run simply sat throttled. That is why coal
+            # showed 1,669 shortage-years in a 395 year run.
+            if self.binding == "charcoal":
                 self.buy_forest(min(400.0, self.capital / 900.0))
+            elif self.binding in self.MINE_CAPEX_PER_T_YR:
+                short = self.annual_material_demand().get(
+                    {"coal": "coal_kg", "iron": "iron_bar_kg", "copper": "copper_kg",
+                     "lead": "lead_kg", "tin": "tin_kg",
+                     "silver": "silver_kg"}[self.binding], 0.0)
+                want = max(0.0, short - self.mine_capacity.get(self.binding, 0.0))
+                self.open_mine(self.binding, min(want, self.capital * 0.25
+                                                 / max(1.0, self.MINE_CAPEX_PER_T_YR[self.binding])))
+                # Iron and the base metals are smelted with charcoal, so the
+                # ore is only half the answer.
+                if self.binding in ("iron", "copper", "lead"):
+                    self.buy_forest(min(200.0, self.capital / 1800.0))
             elif self.binding == "saltpetre":
                 spend = min(self.capital * 0.05, 2000)
                 self.capital -= spend
@@ -1126,6 +1220,12 @@ def cmd_compare(a):
             label, order, bounties = load_strategy(name, nodes, goal)
         except SystemExit:
             continue
+        # At 3000 nodes a full comparison takes tens of minutes. Without this
+        # line, and without the flushes below, the command looks hung: stdout
+        # is block-buffered when redirected, so nothing at all appeared until
+        # the very end.
+        sys.stderr.write("  running %s: %d trials...\n" % (name, a.mc))
+        sys.stderr.flush()
         res = [Sim(nodes, order, random.Random(a.seed + i), events=True,
                    cfg={"immortal": not getattr(a, "mortal", False),
                         "start_capital": STARTING_KITS.get(getattr(a,"kit","poor_scholar"),
@@ -1134,6 +1234,7 @@ def cmd_compare(a):
                    bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
         _summarise(res, label)
+        sys.stdout.flush()
 
 
 def cmd_play(a):
