@@ -87,5 +87,17 @@
   "Manual work is socially degrading: Cicero De Officiis 1.150-151, Seneca Ep. 90.",
   "Unlicensed associations are illegal: Trajan refuses Pliny even a fire brigade, Ep. 10.34.",
   "Already trades annually to India on the monsoon and by relay to China."
- ]
+ ],
+ "cost_multipliers": {
+  "structures": 0.75,
+  "buildings": 0.75,
+  "binders": 0.6,
+  "civil": 0.7,
+  "foundations": 0.8,
+  "bridges": 0.75,
+  "infrastructure": 0.85,
+  "information": 1.2,
+  "printing": 1.3
+ },
+ "_note_cost_multipliers": "Rome is extraordinary at building things out of stone and concrete and has pozzolana, which nobody else will have for 1,700 years. It is correspondingly bad at anything to do with copying information, because it has papyrus rather than paper and a scribal economy that has no reason to want a press."
 }

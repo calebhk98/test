@@ -416,6 +416,32 @@ class Sim:
             h *= 0.65
         return h
 
+    def civ_cost_factor(self, k):
+        """What this society is unusually good or bad at building.
+
+        Until now every civilization built every node at the same real cost and
+        differed only in population, prices, values and reach. That misses the
+        most important thing about them. The Mexica are not a small Rome: there
+        is no domesticable draught animal anywhere in Mesoamerica, so every load
+        moves on a human back, and that is a permanent fact about the continent
+        rather than something the founder can teach away. The Norse build the
+        best ships in Europe and cannot organise a public works programme. Han
+        China already has cast iron, paper and the blast furnace.
+
+        A factor above 1 means this society finds that domain harder than Rome
+        does; below 1, easier. It is deliberately a small table in the civ file
+        rather than logic in here, so a new civilization is data.
+        """
+        mults = self.civ.get("cost_multipliers") or {}
+        if not mults:
+            return 1.0
+        n = self.nodes[k]
+        f = 1.0
+        for key in (n.get("cat"), ) + tuple(n.get("traits") or ()):
+            if key in mults:
+                f *= float(mults[key])
+        return f
+
     def rep_factor(self):
         """How much easier reputation makes everything. 1.0 at zero reputation."""
         return 1.0 + self.reputation / 120.0
@@ -873,7 +899,7 @@ class Sim:
                 continue
             n = self.nodes[k]
             # do not start something we cannot plausibly fund this decade
-            if n["_total_cost"] * self.money_real > self.capital * 3 + self.revenue() * 6:
+            if n["_total_cost"] * self.money_real * self.civ_cost_factor(k) > self.capital * 3 + self.revenue() * 6:
                 continue
             if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
                 continue
@@ -938,7 +964,7 @@ class Sim:
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
                 # opposed work costs more: bribes, delay, a provincial site, a front man
                 opposition = 1.0 + 0.25 * max(0.0, -self.state_interest(n))
-                money = n["_total_cost"] * frac * self.money_real * opposition
+                money = n["_total_cost"] * frac * self.money_real * opposition * self.civ_cost_factor(k)
                 hh = n["_hired_hours"] * frac
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
@@ -1595,6 +1621,16 @@ def cmd_civs(a):
               "| bribable %.2f | habituates %.2f"
               % (v["w_magic_fear"], v["w_religious_rigidity"], v["w_labour_saving"],
                  v["bribability"], v["adaptation_rate"]))
+        print("   eminence is dangerous %.2f  (how much prominence ITSELF endangers you)"
+              % v.get("w_eminence_danger", 0.5))
+        mults = c.get("cost_multipliers") or {}
+        if mults:
+            easy = sorted((x for x in mults.items() if x[1] < 1.0), key=lambda x: x[1])[:4]
+            hard = sorted((x for x in mults.items() if x[1] > 1.0), key=lambda x: -x[1])[:4]
+            if easy:
+                print("   good at : " + ", ".join("%s x%.2f" % kv for kv in easy))
+            if hard:
+                print("   bad at  : " + ", ".join("%s x%.2f" % kv for kv in hard))
         print()
     print("starting kits (--kit):")
     for k, d in STARTING_KITS.items():

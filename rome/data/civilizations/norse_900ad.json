@@ -59,5 +59,22 @@
  "notes": [
   "Population is 1.5 million against Rome's 65 million. You will never assemble a large workforce, so every plan must be capital-light and skill-heavy.",
   "Base reach 4: these ships already go to Greenland, the Caspian and Newfoundland. The Atlantic is not a barrier here, which flips the entire expedition branch."
- ]
+ ],
+ "cost_multipliers": {
+  "ships": 0.6,
+  "marine": 0.65,
+  "navigation": 0.7,
+  "hull": 0.6,
+  "metallurgy": 0.85,
+  "alloys": 0.9,
+  "cutting": 0.85,
+  "infrastructure": 1.8,
+  "structures": 1.7,
+  "buildings": 1.6,
+  "civil": 1.8,
+  "binders": 2.2,
+  "foundations": 1.9,
+  "commerce": 1.1
+ },
+ "_note_cost_multipliers": "The best shipwrights and among the best smiths in Europe, and no state at all. Anything that is a public work rather than a private one costs nearly twice what it costs Rome, because there is nobody to compel or fund it. Concrete is worse still: no pozzolana, no tradition of masonry at scale."
 }

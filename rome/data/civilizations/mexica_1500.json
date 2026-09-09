@@ -69,5 +69,22 @@
   "NO IRON, NO DRAUGHT ANIMALS, NO PRACTICAL WHEEL. Obsidian is sharper than steel and shatters. Every metallurgy node starts from copper and gold.",
   "Chinampa agriculture yields more per hectare than any European system, so the food constraint that shapes the Roman tree does not bind here.",
   "The absence of draught animals is the deepest constraint: it removes the plough, the cart, the mill and the horse collar in one stroke."
- ]
+ ],
+ "cost_multipliers": {
+  "animal_traction": 3.0,
+  "transport": 2.2,
+  "land_transport": 2.2,
+  "carriage_engineering": 2.2,
+  "field_machinery": 2.4,
+  "agriculture": 1.3,
+  "bicycles": 2.0,
+  "alloys": 1.7,
+  "metallurgy": 1.7,
+  "casting": 1.5,
+  "infrastructure": 1.15,
+  "food": 0.85,
+  "textiles": 0.9,
+  "astronomy": 0.8
+ },
+ "_note_cost_multipliers": "No domesticable large mammal exists in Mesoamerica, so every load moves on a human back and every plough, cart, harness and horse-hoe in the tree is a far worse deal here. That is a fact about the continent, not something the founder can teach away, and it is the single largest handicap any civilization in this file carries. Against it: superb calendrical astronomy, intensive chinampa agriculture that outyields Roman farming per hectare, and cotton textiles."
 }

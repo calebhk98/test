@@ -75,5 +75,18 @@
  "notes": [
   "You start with cast iron, paper, the horse collar, the seed drill and water-powered bellows already in hand. That is roughly a thousand years of head start over Rome on the metallurgy and agriculture branches.",
   "The bureaucracy is the customer, the funder and the competition. Impress the examiners, not a patron."
- ]
+ ],
+ "cost_multipliers": {
+  "metallurgy": 0.7,
+  "alloys": 0.75,
+  "casting": 0.65,
+  "information": 0.6,
+  "printing": 0.6,
+  "paper": 0.5,
+  "agriculture": 0.8,
+  "field_machinery": 0.8,
+  "commerce": 1.15,
+  "finance": 1.2
+ },
+ "_note_cost_multipliers": "Han China already has the blast furnace and cast iron, which the Roman west does not, and paper, which nobody else has. It arrives at the tree several rungs up in exactly the places Rome is weakest. Its handicap is a state that distrusts private commerce and a literati class that ranks merchants near the bottom."
 }

@@ -85,5 +85,17 @@
   "You arrive 48 years before the Black Death kills something like 45% of the population.",
   "The perpetual corporation is worth more to a multi-generation programme than any machine in the tree.",
   "Guilds will litigate against your fulling mill. They did, repeatedly, and sometimes won."
- ]
+ ],
+ "cost_multipliers": {
+  "textiles": 0.7,
+  "fibres": 0.75,
+  "finishing": 0.8,
+  "agriculture": 0.85,
+  "animals": 0.85,
+  "commerce": 0.85,
+  "finance": 0.9,
+  "structures": 0.9,
+  "buildings": 0.9
+ },
+ "_note_cost_multipliers": "Wool is the English economy and the whole textile chain is cheaper here than anywhere. Chartered towns, guilds and a money economy make commerce easier than in Rome. Against that: a much smaller population and a king who can attaint you."
 }
