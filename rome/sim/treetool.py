@@ -289,8 +289,17 @@ def judge_node(n, nodes, stats):
     unob = [c for c in cl if nodes[c]["cat"] == "unobtainable"]
 
     # --- 1. does it declare the capabilities it plainly needs?
-    if tier >= 2 and not caps and n["cat"] not in ("social","institution","mathematics",
-                                                   "physics","foundation","information","capability"):
+    # The exemption used to be a list of category names. Branch authors have
+    # since invented 240 categories, so that list silently stopped matching and
+    # the check began flagging pure mathematics for lacking a furnace. Test
+    # physicality directly instead: a node that consumes materials or real
+    # capital is an artefact and must bottom out in some physical ability; a
+    # node that consumes neither is an idea, a proof or an institution, and
+    # correctly requires no rung.
+    physical = bool(n.get("mat")) or n.get("cap", 0) >= 200
+    if tier >= 2 and not caps and physical and n["cat"] not in (
+            "social","institution","mathematics","physics","foundation",
+            "information","capability"):
         d.append(("CAP-NONE", "tier %d and nothing in its chain declares a capability rung "
                               "(furnace, tolerance, vacuum, purity, power). This is the exact "
                               "flaw the whole rebuild was meant to fix." % tier))
