@@ -97,5 +97,8 @@
   "structures": 0.9,
   "buildings": 0.9
  },
- "_note_cost_multipliers": "Wool is the English economy and the whole textile chain is cheaper here than anywhere. Chartered towns, guilds and a money economy make commerce easier than in Rome. Against that: a much smaller population and a king who can attaint you."
+ "_note_cost_multipliers": "Wool is the English economy and the whole textile chain is cheaper here than anywhere. Chartered towns, guilds and a money economy make commerce easier than in Rome. Against that: a much smaller population and a king who can attaint you.",
+ "handicap_remedies": {
+  "_doc": "No handicaps above 1.0 to remedy."
+ }
 }

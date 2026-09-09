@@ -76,5 +76,36 @@
   "foundations": 1.9,
   "commerce": 1.1
  },
- "_note_cost_multipliers": "The best shipwrights and among the best smiths in Europe, and no state at all. Anything that is a public work rather than a private one costs nearly twice what it costs Rome, because there is nobody to compel or fund it. Concrete is worse still: no pozzolana, no tradition of masonry at scale."
+ "_note_cost_multipliers": "The best shipwrights and among the best smiths in Europe, and no state at all. Anything that is a public work rather than a private one costs nearly twice what it costs Rome, because there is nobody to compel or fund it. Concrete is worse still: no pozzolana, no tradition of masonry at scale.",
+ "handicap_remedies": {
+  "_doc": "The Norse handicap is not skill, it is that there is no body able to compel or fund a public work. Charter one and it goes away.",
+  "infrastructure": {
+   "node": "collegium_licensed",
+   "residual": 1.2
+  },
+  "structures": {
+   "node": "collegium_licensed",
+   "residual": 1.2
+  },
+  "buildings": {
+   "node": "collegium_licensed",
+   "residual": 1.15
+  },
+  "civil": {
+   "node": "collegium_licensed",
+   "residual": 1.2
+  },
+  "foundations": {
+   "node": "collegium_licensed",
+   "residual": 1.2
+  },
+  "binders": {
+   "node": "cn_portland_cement",
+   "residual": 1.0
+  },
+  "commerce": {
+   "node": "collegium_licensed",
+   "residual": 1.0
+  }
+ }
 }

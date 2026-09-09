@@ -86,5 +86,52 @@
   "textiles": 0.9,
   "astronomy": 0.8
  },
- "_note_cost_multipliers": "No domesticable large mammal exists in Mesoamerica, so every load moves on a human back and every plough, cart, harness and horse-hoe in the tree is a far worse deal here. That is a fact about the continent, not something the founder can teach away, and it is the single largest handicap any civilization in this file carries. Against it: superb calendrical astronomy, intensive chinampa agriculture that outyields Roman farming per hectare, and cotton textiles."
+ "_note_cost_multipliers": "No domesticable large mammal exists in Mesoamerica, so every load moves on a human back and every plough, cart, harness and horse-hoe in the tree is a far worse deal here. That is a fact about the continent, not something the founder can teach away, and it is the single largest handicap any civilization in this file carries. Against it: superb calendrical astronomy, intensive chinampa agriculture that outyields Roman farming per hectare, and cotton textiles.",
+ "handicap_remedies": {
+  "_doc": "Every handicap here can be lifted. That is the point: nothing about a society is permanent, and a founder who knows what is missing can go and fetch it.",
+  "animal_traction": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
+  },
+  "transport": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
+  },
+  "land_transport": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
+  },
+  "carriage_engineering": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.15
+  },
+  "field_machinery": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.2
+  },
+  "bicycles": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.0
+  },
+  "agriculture": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.0
+  },
+  "alloys": {
+   "node": "blast_furnace",
+   "residual": 1.0
+  },
+  "metallurgy": {
+   "node": "blast_furnace",
+   "residual": 1.0
+  },
+  "casting": {
+   "node": "blast_furnace",
+   "residual": 1.0
+  },
+  "infrastructure": {
+   "node": "exp_import_draught_animals",
+   "residual": 1.0
+  }
+ }
 }
