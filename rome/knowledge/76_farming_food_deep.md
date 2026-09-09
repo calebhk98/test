@@ -15,7 +15,7 @@ Also covers: ag2_nitrogen_cycle.
 
 **Roman-available inputs.** Faba bean, chickpea, lentil, vetch, lucerne (*medica*).
 
-**Procedure.** 1. Cut nodules from a legume root; pink-red means active, grey-brown dead. 2. Compare wheat after a legume year against wheat after fallow. 3.
+**Procedure.** 1. Cut nodules from a legume root; pink-red means active, grey-brown dead. 2. Compare wheat after a legume year against wheat after fallow.
 
 **How you know it worked.** Wheat after legumes stands markedly thicker than after fallow.
 
@@ -38,7 +38,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** As above.
 
-**Procedure.** 1. Split land into four blocks. 2. Fold livestock onto fodder blocks so manure lands where wheat grows next. 3.
+**Procedure.** 1. Split land into four blocks. 2. Fold livestock onto fodder blocks so manure lands where wheat grows next.
 
 **How you know it worked.** ESTIMATED roughly a third more cropped land yearly; wheat matches or beats fallow-rotation wheat within a few cycles.
 
@@ -206,7 +206,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Iron, timber, existing plough experience.
 
-**Procedure.** 1. Hopper over a metering wheel geared to the ground wheel. 2. Rows four to six inches apart via a small coulter. 3.
+**Procedure.** 1. Hopper over a metering wheel geared to the ground wheel. 2. Rows four to six inches apart via a small coulter, closed with a light drag.
 
 **How you know it worked.** Rows are straight; hoeing leaves bare, weed-free soil between them.
 
@@ -332,7 +332,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Iron for gearing; the power source itself is not Roman-available without the steam-engine chain.
 
-**Procedure.** 1. Fit a differential between drive wheels. 2. Build a linkage that lifts the implement as resistance increases. 3.
+**Procedure.** 1. Fit a differential between drive wheels. 2. Build a linkage that lifts the implement as resistance increases.
 
 **How you know it worked.** The tractor corners without a wheel skidding.
 
@@ -374,7 +374,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Every crop and livestock species farmed.
 
-**Procedure.** 1. Record best performers each season. 2. Self-pollinate a line for generations to purify it. 3. Cross pure lines: emasculate the mother, hand-apply father pollen. 4.
+**Procedure.** 1. Record best performers each season. 2. Self-pollinate a line for generations to purify it. 3. Cross pure lines: emasculate the mother, hand-apply father pollen; remake the cross each time.
 
 **How you know it worked.** A hybrid's first generation outperforms both parents; the advantage vanishes on replanting.
 
@@ -416,7 +416,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Existing livestock; simple catheter tools.
 
-**Procedure.** 1. Record parentage and offspring performance. 2. Identify sires consistently beating herd average. 3. Insemination: observe oestrus, introduce semen via clean catheter. 4.
+**Procedure.** 1. Record parentage and offspring performance. 2. Identify sires consistently beating herd average. 3. Insemination: observe oestrus, introduce semen via clean catheter.
 
 **How you know it worked.** Herd-book sires produce measurably above-average offspring across many dams.
 
@@ -479,7 +479,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Roman glass and timber are adequate.
 
-**Procedure.** 1. Build a glass frame sealed against vapour loss but not fully airtight. 2. Plant, water once, seal, never open in transit. 3.
+**Procedure.** 1. Build a glass frame sealed against vapour loss but not fully airtight. 2. Plant, water once, seal, never open in transit.
 
 **How you know it worked.** A case opened at destination holds a living plant.
 
@@ -500,7 +500,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** None until the voyage returns.
 
-**Procedure.** 1. Return with tubers cool and dry, maize seed dry. 2. Plant a small trial plot first, day length differs from source. 3.
+**Procedure.** 1. Return with tubers cool and dry, maize seed dry. 2. Plant a small trial plot first, day length differs from source.
 
 **How you know it worked.** Planted tubers sprout and multiply the same season.
 
@@ -584,7 +584,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Roman glassblowing (`30_glass_optics.md`) and wax sealing; Cornish tin.
 
-**Procedure.** 1. Pack food leaving headspace. 2. Seal with wax lid or a rolled crimp. 3.
+**Procedure.** Pack food leaving headspace; seal with wax lid or a rolled crimp; heat above 100°C in a retort until a centre marker confirms penetration; log time and temperature.
 
 **How you know it worked.** A stored can keeps its concave lid for months, no bulging.
 
@@ -605,7 +605,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Milk and meat universally; the nitrite salt is the genuine gap.
 
-**Procedure.** Pasteurisation: heat below boiling, hold, cool rapidly. Curing: dissolve a measured small nitrite quantity into brine, hold per cut size, store normally.
+**Procedure.** Pasteurisation: heat below boiling, hold, cool rapidly. Curing: dissolve a measured small nitrite quantity into brine, hold per cut size.
 
 **How you know it worked.** Pasteurised milk keeps longer without a cooked taste; cured meat resists botulism.
 
@@ -689,7 +689,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Wine, beer-adjacent ferments, and bread all exist with wild yeast.
 
-**Procedure.** 1. Reserve active ferment from a clean, no-taint batch. 2. Use it to start the next batch instead of ambient yeast. 3.
+**Procedure.** 1. Reserve active ferment from a clean, no-taint batch. 2. Use it to start the next batch in an air-limiting vessel, tools kept scrupulously clean.
 
 **How you know it worked.** A cultured batch ferments faster and tastes consistent batch to batch.
 
@@ -752,7 +752,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** Iron for rollers, Roman water-mill power (the Barbegal complex proves scale).
 
-**Procedure.** 1. Crack grain through a wide-gap first roller. 2. Sift, pass through tighter pairs. 3. Purify each stage's output by air. 4.
+**Procedure.** Crack grain through a wide-gap roller; sift, pass through tighter pairs; purify each stage's output by air; collect white flour.
 
 **How you know it worked.** Roller-milled flour is finer, storing months without rancidity.
 
@@ -794,7 +794,7 @@ Also covers: ag2_green_manure, ag2_composting.
 
 **Roman-available inputs.** The aedile's role and trade balances are reusable; the microscope and titration apparatus are new.
 
-**Procedure.** 1. Draft the law naming prohibited practices, including lead-based sweetening, given *defrutum*'s lead-pan preparation. 2. Build a lab with balances, titration apparatus, and a microscope. 3.
+**Procedure.** Draft the law naming prohibited practices, including lead-based sweetening (*defrutum*'s lead-pan preparation); build a lab with balances, titration apparatus, and a microscope; train inspectors; sample routinely, not only on complaint.
 
 **How you know it worked.** Adulteration is demonstrated with a repeatable measurement, not an opinion.
 
