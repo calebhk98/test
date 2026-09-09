@@ -1717,6 +1717,7 @@ class Sim:
                 # from. 1.0 for every node that is not a located material.
                 money = (n["_total_cost"] * frac * self.money_real * opposition
                          * self.civ_cost_factor(k) * self.material_cost_factor(k))
+                self._spend_this_year = getattr(self, "_spend_this_year", 0.0) + money
                 hh = n["_hired_hours"] * frac
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
@@ -1743,6 +1744,8 @@ class Sim:
                   if set(self.nodes[k].get("traits", [])) & {"spectacle", "inexplicable"})
         self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
+        self.spend_last_year = getattr(self, "_spend_this_year", 0.0)
+        self._spend_this_year = 0.0
         # Sellers restock, so the pressure your buying put on the market fades.
         self.market_pressure = max(0.0, getattr(self, "market_pressure", 0.0) * 0.55 - 2.0)
         # People bought this year are not artisans this year.
@@ -2293,6 +2296,16 @@ def _agent_state(s, nodes):
         # visible in the state that claims to describe your money.
         "living_cost": round(s.living_cost(), 1),
         "mine_operating_cost": round(s.mine_operating_cost(), 1),
+        # net_per_year counts the STANDING flows only. It never counted what
+        # projects consume, which is usually the largest outflow by far, so a
+        # playtester watched it report a healthy positive number for eight
+        # consecutive years while capital sat at exactly 0.0, every denarius
+        # going into the work in progress. A field that says you are making
+        # money while you are visibly making none is worse than no field.
+        "project_spend_last_year": round(getattr(s, "spend_last_year", 0.0), 1),
+        "net_after_project_spend": round(s.revenue() - s.upkeep() - s.living_cost()
+                                         - s.mine_operating_cost()
+                                         - getattr(s, "spend_last_year", 0.0), 1),
         "net_per_year": round(s.revenue() - s.upkeep() - s.living_cost()
                               - s.mine_operating_cost(), 1),
         "training_pending": [{"artisan_capacity": round(c, 2), "ready_year": y}
