@@ -124,6 +124,60 @@ The technical problem is one lifetime of work. The actual problem is three
 centuries of institution-building, and that is the problem this project is
 really about.
 
+
+## 3b. Two sweeps that changed how I would play this
+
+`python3 rome/sim/simulator.py sweep capital` and `sweep lifespan`, 200-250 runs
+per point. **Read the failure column, not the success column.** When the way you
+die changes, the binding constraint has changed and so should your strategy.
+
+### More starting money is not simply better
+
+| Starting capital | Success | Median | Dominant failure |
+|---|---|---|---|
+| 2,000 den | 69% | 388 AD | died without successors |
+| 5,000 den | 71% | 388 AD | died without successors |
+| **10,320 den** (the default kit, 3 kg of gold) | 76% | 380 AD | died without successors |
+| 25,000 den | 79% | 385 AD | died without successors |
+| **50,000 den** | **80%** | 374 AD | denounced as a magician |
+| 200,000 den | 74% | 373 AD | **denounced as a magician** |
+| 1,000,000 den | 71% | 375 AD | **denounced as a magician** |
+| 10,000,000 den | 71% | 375 AD | **denounced as a magician** |
+
+The optimum is somewhere around **25,000 to 50,000 denarii**, comfortably below
+the equestrian census of 100,000, and past that **more money makes you less
+likely to succeed**. The mechanism is not arbitrary: money buys speed, speed
+produces a stream of inexplicable marvels, and a stream of inexplicable marvels
+in Trajanic Italy gets you prosecuted before your patron can absorb it.
+
+Practical consequence: **bring enough gold to buy a workshop and a staff, and
+not enough to look like a magnate.** If you find yourself rich, spend it on
+people and on public benefaction, which lowers suspicion, rather than on
+building three more things at once, which raises it.
+
+### The founder's lifespan matters enormously, then abruptly stops mattering
+
+| Years the founder survives | Success | Median | Dominant failure |
+|---|---|---|---|
+| 10 | **0%** | never | died without successors |
+| 15 | **0%** | never | died without successors |
+| 20 | 48% | 383 AD | died without successors |
+| **28** (the median draw) | **86%** | 379 AD | denounced |
+| 35 | 90% | 378 AD | denounced |
+| 45 | 88% | 383 AD | denounced |
+| 60 | 88% | 372 AD | denounced |
+
+There is a cliff between 15 and 28 years and a plateau after it. Living to 95
+buys you almost nothing that living to 63 did not.
+
+**That is the clearest statement of the job.** Your entire task is to get the
+school founded and the corpus started before roughly year 20. Everything you
+personally build after that is a bonus, and everything you fail to transmit
+before then is lost whatever else you achieve. It also means the most valuable
+possible use of your medical knowledge is on yourself and your first students,
+early: the difference between dying at 15 years in and 28 years in is the
+difference between certain failure and 86%.
+
 ## 4. The phases
 
 ### Phase A - Years 0 to 5. Survive, and start the slow things.

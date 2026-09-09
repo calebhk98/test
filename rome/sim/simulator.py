@@ -889,6 +889,54 @@ def cmd_why(a):
         print("   INCLUDING THE GOAL. This node is on the critical path.")
 
 
+def cmd_sweep(a):
+    """Sweep a starting condition and show how the outcome and the FAILURE MODE move.
+
+    The failure mode moving is the interesting part. More starting capital does
+    not simply help: past a point it switches you from dying poor and untaught to
+    being denounced as a magician, because money buys speed, speed buys
+    visibility, and visibility in Trajanic Rome is dangerous.
+    """
+    tree, prices, nodes, wages, goods = load()
+    goal = tree["meta"]["goal_node"]
+    label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    sweeps = {
+        "capital":  ("start_capital", [2000, 5000, 10320, 25000, 50000, 200000, 1000000]),
+        "lifespan": ("founder_life",  [10, 15, 20, 28, 35, 45, 60]),
+        "hours":    ("founder_hours_per_year", [1200, 1800, 2400, 3000, 3600]),
+    }
+    key, values = sweeps[a.axis]
+    print("sweeping %s under strategy '%s', %d runs per point\n" % (a.axis, a.strategy, a.mc))
+    print("%-12s %8s %8s %8s   %s" % (a.axis, "success", "median", "p25", "dominant failure"))
+    print("-" * 78)
+    for v in values:
+        cfg, life = {}, None
+        if key == "founder_life":
+            life = v
+        else:
+            cfg[key] = v
+        res = []
+        for i in range(a.mc):
+            sim = Sim(nodes, order, random.Random(a.seed + i), events=True, cfg=cfg,
+                      bounty_set=bounties)
+            if life is not None:
+                sim.life_left = float(life)
+            res.append(sim.run(goal, a.horizon))
+        ok = sorted(r.goal_year for r in res if r.goal_year)
+        c = defaultdict(int)
+        for r in res:
+            if not r.goal_year:
+                c[(r.dead_reason or "ran out of horizon").split(":")[0]] += 1
+        worst = max(c.items(), key=lambda x: x[1]) if c else ("none", 0)
+        print("%-12s %7.0f%% %8s %8s   %s" %
+              (f"{v:,}", 100.0 * len(ok) / len(res),
+               ok[len(ok) // 2] if ok else "never",
+               ok[len(ok) // 4] if ok else "-",
+               "%s (%d)" % (worst[0][:44], worst[1]) if worst[1] else "-"))
+    print("\nWatch the failure column, not the success column. When it changes, the")
+    print("binding constraint has changed and so should your strategy.")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -896,6 +944,12 @@ def main():
     q = sub.add_parser("path"); q.add_argument("goal", nargs="?")
     q = sub.add_parser("costs"); q.add_argument("--top", type=int, default=20)
     q = sub.add_parser("why"); q.add_argument("node")
+    q = sub.add_parser("sweep")
+    q.add_argument("axis", choices=["capital", "lifespan", "hours"])
+    q.add_argument("--strategy", default="recommended")
+    q.add_argument("--mc", type=int, default=200)
+    q.add_argument("--seed", type=int, default=1)
+    q.add_argument("--horizon", type=int, default=500)
     for name in ("run", "compare"):
         q = sub.add_parser(name)
         q.add_argument("--strategy", default="recommended")
@@ -915,7 +969,7 @@ def main():
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
     a = p.parse_args()
-    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs, "why": cmd_why,
+    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs, "why": cmd_why, "sweep": cmd_sweep,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play,
             "sensitivity": cmd_sensitivity}[a.cmd](a)
 

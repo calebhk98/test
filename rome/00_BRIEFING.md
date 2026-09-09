@@ -75,6 +75,29 @@ And one thing to start writing on day one and never stop: **the corpus**.
 6,000 of your hours over ten years. It is the largest single call on your life
 and it is the one the model says you must not cut.
 
+## The single hardest deadline you have
+
+The simulator sweeps the founder's lifespan (`sweep lifespan`) and finds a
+cliff, not a slope:
+
+| You survive | You succeed |
+|---|---|
+| 10 years | **0%** |
+| 15 years | **0%** |
+| 20 years | 48% |
+| 28 years (the median draw) | 86% |
+| 45 years | 88% |
+
+Living a very long time buys you almost nothing that living an ordinary long
+time did not. **Everything hinges on whether the school exists and the corpus is
+started by roughly year 20.** After that your personal survival is close to
+irrelevant to the outcome, which is a strange and clarifying thing to know about
+your own life.
+
+It also means: use your medical knowledge on yourself and your first students,
+early. Boil your water. Do not let a cut go septic. The difference between dying
+15 years in and 28 years in is the difference between certain failure and 86%.
+
 ## The one-page decision rule
 
 When you are deciding what to do next, in order:
