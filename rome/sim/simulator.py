@@ -127,13 +127,15 @@ SHOCKS = dict(
 
 
 class Sim:
-    def __init__(self, nodes, order, rng, events=True, cfg=None, verbose=False):
+    def __init__(self, nodes, order, rng, events=True, cfg=None, verbose=False,
+                 bounty_set=None):
         self.nodes = nodes
         self.order = list(order)
         self.rng = rng
         self.events = events
         self.cfg = dict(DEFAULTS, **(cfg or {}))
         self.verbose = verbose
+        self.bounty_set = set(bounty_set or ())
         c = self.cfg
         self.year = c["start_year"]
         self.capital = float(c["start_capital"])
@@ -158,6 +160,8 @@ class Sim:
         self.output_factor = 1.0  # real output, crushed by war and plague, not by debasement
         self.director_hours_spent_founder = 0.0
         self.stalled = 0
+        self.bounties_paid = 0
+        self.bountied = set()
         self.total_spend = 0.0
         # founder remaining lifespan, elite male already aged 35
         self.life_left = max(5, rng.gauss(28, 8))
@@ -251,6 +255,40 @@ class Sim:
     def upkeep(self):
         return sum(self.nodes[k]["up"] for k in self.done)
 
+    def bounty_eligible(self, k):
+        """Can this be bought as a prize instead of built with your own hands?
+
+        A public prize ("ten thousand sesterces to the first glassworker who
+        brings me a clear sphere of glass the size of a millet seed") converts
+        DENARII into someone else's HOURS, which is the trade you most want to
+        make. It only works where the craft already exists in the Empire and the
+        artisan can recognise success without understanding the theory. You
+        cannot post a bounty for zone refining; nobody would know what to aim at.
+        """
+        n = self.nodes[k]
+        if n["tier"] > 2:
+            return False
+        if n["cat"] not in ("glass_optics", "metallurgy", "precision", "power",
+                            "agriculture", "information", "instruments"):
+            return False
+        return all(p in self.done for p in n["pre"])
+
+    def post_bounty(self, k):
+        """Pay well over the odds, save 65% of your own hours, gain visibility."""
+        n = self.nodes[k]
+        price = n["_total_cost"] * 2.5
+        if price > self.capital:
+            return False
+        self.capital -= price
+        self.total_spend += price
+        self.bounties_paid += 1
+        self.active[k] = dict(ph_left=n["ph"] * 0.35, yrs=0.0, spent=price)
+        self.bountied.add(k)
+        self.suspicion += 2 * self.suspicion_mult   # a public prize makes you conspicuous
+        self.log.append((self.year, "posted a public bounty for %s (%s den)"
+                         % (n["name"], f"{price:,.0f}")))
+        return True
+
     def can_start(self, k):
         n = self.nodes[k]
         if k in self.done or k in self.active:
@@ -307,13 +345,15 @@ class Sim:
         hired_left = self.hired_cap()
         max_active = int(2 + self.director_pool() / 2400.0)
         for k in self.order:
-            if len(self.active) >= max_active:
+            if len(self.active) - len(self.bountied & set(self.active)) >= max_active:
                 break
             if not self.can_start(k):
                 continue
             n = self.nodes[k]
             # do not start something we cannot plausibly fund this decade
             if n["_total_cost"] * self.money_real > self.capital * 3 + self.revenue() * 6:
+                continue
+            if k in self.bounty_set and self.bounty_eligible(k) and self.post_bounty(k):
                 continue
             self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0)
 
@@ -407,6 +447,7 @@ class Sim:
             self.capital -= n["_total_cost"] * 0.4 * self.money_real
             return
         del self.active[k]
+        self.bountied.discard(k)
         self.done.add(k)
         self.done_year[k] = self.year
         self.suspicion += n["sus"] * self.suspicion_mult
@@ -511,14 +552,15 @@ def load_strategy(name, nodes, goal):
         s = json.load(open(path))
         order = [k for k in s["order"] if k in nodes]
         rest = [k for k in topo_order(nodes) if k not in order]
-        return s.get("label", name), order + rest
+        return s.get("label", name), order + rest, set(s.get("bounties", []))
     if name == "topo":
         need = closure(nodes, goal)
         order = topo_order(nodes, need)
-        return "bare topological order to the goal", order + [k for k in topo_order(nodes) if k not in need]
+        return ("bare topological order to the goal",
+                order + [k for k in topo_order(nodes) if k not in need], set())
     if name == "cheapest":
         order = sorted(nodes, key=lambda k: nodes[k]["_total_cost"])
-        return "cheapest first", topo_stable(nodes, order)
+        return "cheapest first", topo_stable(nodes, order), set()
     raise SystemExit("unknown strategy: %s" % name)
 
 
@@ -633,6 +675,9 @@ def _summarise(results, label):
         print("year reached        : best %d | p25 %d | median %d | p75 %d | worst %d"
               % (ys[0], q(.25), q(.5), q(.75), ys[-1]))
         print("elapsed from 100 AD : median %d years" % (q(.5) - 100))
+    b = [r.bounties_paid for r in results]
+    if any(b):
+        print("bounties posted     : mean %.1f per run" % (sum(b) / len(b)))
     causes = defaultdict(int)
     for r in results:
         if r.dead_reason: causes[r.dead_reason.split(":")[0]] += 1
@@ -657,11 +702,12 @@ def _summarise(results, label):
 def cmd_run(a):
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
-    label, order = load_strategy(a.strategy, nodes, goal)
+    label, order, bounties = load_strategy(a.strategy, nodes, goal)
     res = []
     for i in range(a.mc):
         rng = random.Random(a.seed + i)
-        s = Sim(nodes, order, rng, events=not a.no_events).run(goal, a.horizon)
+        s = Sim(nodes, order, rng, events=not a.no_events,
+                bounty_set=(set() if a.no_bounties else bounties)).run(goal, a.horizon)
         res.append(s)
     _summarise(res, "%s%s" % (label, "  [events disabled]" if a.no_events else ""))
     if a.trace:
@@ -676,10 +722,11 @@ def cmd_compare(a):
     goal = tree["meta"]["goal_node"]
     for name in ["rush", "topo", "recommended"]:
         try:
-            label, order = load_strategy(name, nodes, goal)
+            label, order, bounties = load_strategy(name, nodes, goal)
         except SystemExit:
             continue
-        res = [Sim(nodes, order, random.Random(a.seed + i), events=True).run(goal, a.horizon)
+        res = [Sim(nodes, order, random.Random(a.seed + i), events=True,
+                   bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
         _summarise(res, label)
 
@@ -687,8 +734,8 @@ def cmd_compare(a):
 def cmd_play(a):
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
-    label, order = load_strategy(a.strategy, nodes, goal)
-    s = Sim(nodes, order, random.Random(a.seed), events=True)
+    label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=bounties)
     s.goal = goal; s.done_year = {}
     print("You arrive in %d AD with %d denarii in unminted gold.\n"
           "Type a node id to begin work on it, 'a' for what is available,\n"
@@ -732,12 +779,13 @@ def cmd_sensitivity(a):
     """
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
-    label, order = load_strategy(a.strategy, nodes, goal)
+    label, order, bounties = load_strategy(a.strategy, nodes, goal)
     need = closure(nodes, goal)
 
     def trial(drop=None):
         o = [k for k in order if k != drop]
-        res = [Sim(nodes, o, random.Random(a.seed + i), events=True).run(goal, a.horizon)
+        res = [Sim(nodes, o, random.Random(a.seed + i), events=True,
+                   bounty_set=bounties).run(goal, a.horizon)
                for i in range(a.mc)]
         ok = sorted(r.goal_year for r in res if r.goal_year)
         return (100.0 * len(ok) / len(res), ok[len(ok) // 2] if ok else None)
@@ -793,6 +841,7 @@ def main():
         q.add_argument("--seed", type=int, default=1)
         q.add_argument("--horizon", type=int, default=500)
         q.add_argument("--no-events", action="store_true")
+        q.add_argument("--no-bounties", action="store_true")
         q.add_argument("--trace", action="store_true")
     q = sub.add_parser("sensitivity")
     q.add_argument("--strategy", default="recommended")

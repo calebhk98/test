@@ -170,3 +170,47 @@ labour-saving device in this document. The model treats labour as a market with
 a manumission option. That understates the problem, and the honest version of
 the answer is in `03_SOCIAL_POLITICS.md` section 7: compete where headcount
 cannot substitute, which is precision, chemistry and optics.
+
+## 7. Bounties: buying other people's hours with money
+
+The third way to get something built, alongside doing it yourself and hiring
+labour by the hour, is to **post a public prize**.
+
+> *Decem milia sestertium ei vitrario qui primus mihi attulerit sphaerulam
+> vitream puram, milii grano parem.*
+> Ten thousand sesterces to the first glassworker who brings me a clear sphere of
+> glass the size of a millet grain.
+
+This is a genuinely different economic instrument and it is the one that best
+fits your actual constraint. Hiring labour by the hour still costs you the hours
+of **specifying and supervising** the work. A prize costs you only the hours of
+**writing the notice**. You are converting denarii, which you can regenerate,
+into somebody else's attention, which you cannot.
+
+**Terms modelled in the simulator** (`bounties` in a strategy file):
+
+| | |
+|---|---|
+| Price | about **2.5x** the honest cost of the work |
+| Your hours saved | **65%** |
+| Supervision slots consumed | **none**, which is the real advantage |
+| Side effect | +2 suspicion. A public prize makes you conspicuous. |
+
+**Where a bounty works, and where it cannot.** The craft must already exist in
+the Empire, and the artisan must be able to **recognise success without
+understanding why it works**. A glassworker can tell a clear bead from a cloudy
+one. A smith can tell whether a plate is flat by the marking. Neither needs your
+theory. That is why the eligible set in the model is limited to tier 0 to 2
+nodes in glass, metallurgy, precision, power, agriculture, instruments and
+information.
+
+You cannot post a bounty for zone refining. Nobody in the Empire would know what
+to aim at, or how to tell if they had hit it. Past about tier 3, the only people
+who can recognise success are people you trained, and at that point you are back
+to paying wages.
+
+**Measured effect**, 400 runs each: bounties move the median from 391 AD to
+**385 AD** and lift the success rate from 78% to 80%. Real but modest. They help
+most in the first thirty years, when your hours are the binding constraint and
+the cash premium is affordable relative to what an unmade lens is costing you in
+delay.

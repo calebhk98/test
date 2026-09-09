@@ -413,25 +413,23 @@ entirely, and if sealed airtight in a low-acid, oxygen-free jar it
 germinates and produces a lethal, odourless, tasteless toxin with no
 visible sign of spoilage. Killing those spores needs temperatures well
 above boiling, reachable only under pressure, which a simple pot cannot
-provide; an improvised pressure vessel is a genuine explosion risk without
-a working relief valve and is not given as a safe recipe here. Preserve
-low-acid foods only by the existing Roman methods, salting, smoking,
-drying, or true cold storage, never by sealing airtight after a mere
-boiling-water treatment.
+provide; an improvised pressure vessel risks exploding without a working
+relief valve and is not given as a safe recipe here. Preserve low-acid
+foods only by the existing Roman methods, salting, smoking, drying, or
+true cold storage, never by sealing airtight after a mere boiling-water
+treatment.
 
 **Procedure, granaries.** Roman *horrea* are already well designed, raised
 on piers for airflow, thick-walled (attested at Ostia and the Horrea
-Galbae). Push this down to every farm granary, not just prestige
-buildings: raised ventilated floors, tight doors against rodents and damp,
-and a lime wash on interior walls, since caustic lime discourages mould
-and insects on the surface.
+Galbae). Push this to every farm granary, not just prestige buildings:
+raised ventilated floors, tight doors against rodents and damp, and a lime
+wash on interior walls, since caustic lime discourages mould and insects.
 
 **Procedure, ice houses.** Rome already trades ice for cooling drinks;
 formalise it for food. Dig a deep pit, line with straw, pack with winter
-ice or snow, cover thickly with more straw and a rain-shedding roof, and
-drain meltwater from the bottom. Well built, such a pit holds usable ice
-through much of a Mediterranean summer for short-term meat and fish
-storage.
+ice or snow, cover thickly with straw and a rain-shedding roof, and drain
+meltwater from the bottom. Well built, such a pit holds usable ice through
+much of a Mediterranean summer for short-term meat and fish storage.
 
 **How you know it worked.** Open a test jar after a month; discard on any
 bulge, hiss or off smell, do not taste it. Check granary grain for
@@ -461,19 +459,17 @@ estimated.
 
 **What it is / why you want it.** Grinding grain into flour is a real
 constraint on how much bread a city can eat, regardless of how much grain
-arrives. Rome already runs large water mills (Barbegal near Arles, a
-battery of over a dozen wheels driving grain mills on one hillside, a
-MEASURED archaeological find, generally dated within the 2nd century AD,
-exact date ESTIMATED/debated) alongside countless animal- and slave-powered
-rotary mills, such as the hourglass lava mills found in Pompeii's bakeries.
-The windmill genuinely does not exist anywhere in the Roman world yet; do
-not claim otherwise.
+arrives. Rome already runs large water mills (Barbegal near Arles, over a
+dozen wheels driving grain mills on one hillside, a MEASURED archaeological
+find, dated within the 2nd century AD, exact date ESTIMATED/debated)
+alongside countless animal- and slave-powered rotary mills, such as the
+hourglass lava mills found in Pompeii's bakeries. The windmill genuinely
+does not exist anywhere in the Roman world yet; do not claim otherwise.
 
 **Why you would never guess this.** It is easy to assume secure grain
-supply (the annona's whole obsession) solves the food problem. It does
-not: grain in a horreum still has to be ground, and milling capacity is a
-separate, sometimes binding constraint, especially in a city the size of
-Rome.
+supply, the annona's whole obsession, solves the food problem. It does not:
+grain in a horreum still has to be ground, and milling capacity is a
+separate, sometimes binding constraint in a city the size of Rome.
 
 **Prerequisites.** Water-mill construction is already mature Roman skill
 (Vitruvius book 10, attributed). Windmills need only carpentry, sailcloth
