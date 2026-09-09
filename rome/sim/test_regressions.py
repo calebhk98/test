@@ -201,6 +201,34 @@ check("a debased currency does not collapse prices",
       abs(s.cost_money_factor() - base) < 1e-9,
       "%.4f -> %.4f" % (base, s.cost_money_factor()))
 
+# --- reviewer: debt must be bounded and ruin must be recoverable
+s = sim(manual=False, capital=1e6)
+s.buy_slaves(400)
+worst = 0.0
+for _ in range(200):
+    s.step()
+    worst = min(worst, s.capital)
+check("debt stays inside a credit limit", worst > -200000,
+      "worst capital %.0f" % worst)
+check("a ruined founder rebuilds rather than freezing",
+      len(s.done - s.granted) > 200, "earned %d in 200 years" % len(s.done - s.granted))
+check("ruin never deletes a step the goal needs",
+      "identity_cover" in s.done)
+
+# --- naive B: the game must not buy people on the player's behalf
+s = sim(capital=200000.0, manual=True)
+for _ in range(40):
+    s.step()
+check("manual play never buys people for you", s.slaves == 0 and s.freedmen == 0,
+      "slaves %d freedmen %d" % (s.slaves, s.freedmen))
+
+# --- naive WEIRD: nothing should repay its whole cost in weeks
+pumps = [k for k, n in NODES.items()
+         if float(n.get("rev") or 0) > 0 and n["_total_cost"] > 0
+         and n["_total_cost"] / float(n["rev"]) < 0.5]
+check("no node repays its entire cost in under six months", not pumps,
+      "%d pumps, e.g. %s" % (len(pumps), pumps[:3]))
+
 # --- reproducibility: the same seed must give the same answer
 outs = set()
 for _ in range(2):
@@ -211,7 +239,7 @@ for _ in range(2):
 check("the same seed gives the same result", len(outs) == 1)
 
 print("=" * 72)
-print("%d checks, %d failures" % (20, len(FAILURES)))
+print("%d checks, %d failures" % (25, len(FAILURES)))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)

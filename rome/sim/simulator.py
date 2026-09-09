@@ -982,9 +982,34 @@ class Sim:
     # a mill or a mine can. A playtester went bankrupt and the abandonment
     # mechanic shed `identity_cover`, which is a persona AND a real prerequisite
     # of the goal, and they sat softlocked for 470 years unable to rebuild it.
-    NEVER_ABANDON = {"social", "institution", "foundation", "law", "organisation",
-                     "mathematics", "physics", "information", "method",
-                     "notation", "algebra", "geometry", "probability", "analysis"}
+    # Knowledge cannot be repossessed. Everything else can lapse.
+    #
+    # This started as a broad category list, added to stop bankruptcy shedding
+    # `identity_cover` and softlocking the run. It then caused the opposite
+    # problem: it protected patron_local, collegium_licensed, freedman_staff and
+    # workshop_first, which between them carried 3,380 denarii of upkeep against
+    # 1,501 of revenue, so a ruined run could never stop bleeding and recovery
+    # took centuries. Both of those are real. A patronage can lapse and a
+    # workshop can close; what you cannot lose is who you are and what you know.
+    NEVER_ABANDON = {"mathematics", "physics", "method", "notation",
+                     "algebra", "geometry", "probability", "analysis"}
+
+    def never_abandon(self, k):
+        """Protected: knowledge, and anything the goal actually needs.
+
+        Keying the softlock guard on the GOAL CLOSURE rather than on a list of
+        category names is what makes both halves work. You can let a patron go
+        and rebuild him later; you cannot have the game quietly delete a step
+        you need and then refuse to fund rebuilding it.
+        """
+        if self.nodes[k]["cat"] in self.NEVER_ABANDON:
+            return True
+        if not hasattr(self, "_goal_closure"):
+            try:
+                self._goal_closure = closure(self.nodes, self.goal)
+            except Exception:
+                self._goal_closure = set()
+        return k in self._goal_closure
 
     FOREIGN_MARKERS = ("_roman", "_rome", "annona", "insula", "societas",
                        "collegium", "argentarii", "latifundi")
@@ -1058,6 +1083,128 @@ class Sim:
             return 0.0
         return (2500.0 * self.economy * self.state_capacity * self.pop_scale ** 0.4
                 * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor())
+
+    def credit_limit(self):
+        """How far into arrears anyone will actually let you go.
+
+        Unbounded debt is an accounting fiction, and it produced the single worst
+        outcome in the playtests: testers sat at minus 200,000 denarii for two
+        and three CENTURIES, making no progress, with the clock running. That is
+        not a hard game, it is a game that has stopped and not said so.
+
+        In reality credit stops long before that, and the moment it stops you are
+        merely poor. Poor is recoverable: you climbed out of it the first time
+        starting from 400 denarii and a physician's practice, and nothing has
+        taken that practice away from you.
+
+        What you can borrow depends on who will stand behind you, which is the
+        same currency as everything else in this model.
+        """
+        base = max(2000.0, self.revenue() * 1.5)
+        if self.has("patron_local"):       base += 3000.0
+        if self.has("patron_senatorial"):  base += 15000.0
+        if self.has("patron_imperial"):    base += 60000.0
+        if self.has("collegium_licensed"): base += 4000.0
+        if self.has("endowment_land"):     base += 30000.0      # real collateral
+        base += max(0.0, self.reputation) * 250.0
+        base += self.forest_ha * 120.0                           # also collateral
+        return base * self.price_index
+
+    def shed_loss_makers(self, yr):
+        """In arrears, stop maintaining anything that costs more than it returns.
+
+        This is what finally answers the reviewer's objection, which was the right
+        one: if you can build an enterprise starting from 400 denarii and a
+        physician's practice, you must be able to rebuild after ruin, and an
+        immortal founder should never spend two centuries making no progress.
+
+        The earlier fixes bounded the DEBT but not the BLEEDING. A ruined run
+        still held works whose upkeep exceeded their revenue, so net income sat
+        near zero for ever and the recovery took centuries. Nobody does that. You
+        let the loss-makers go the same year you notice, and then your income is
+        your practice again, which is what you started with and is enough.
+        """
+        if self.capital >= 0:
+            return
+        shed = []
+        while True:
+            net = (self.revenue() - self.upkeep() - self.living_cost()
+                   - self.mine_operating_cost())
+            if net >= 0:
+                break
+            worst = None
+            for k in sorted(self.done):
+                n = self.nodes[k]
+                if (n["up"] <= n["rev"] or k in self.granted
+                        or self.never_abandon(k)):
+                    continue
+                if worst is None or (n["rev"] - n["up"]) < (self.nodes[worst]["rev"]
+                                                           - self.nodes[worst]["up"]):
+                    worst = k
+            if worst is None:
+                break
+            self.done.discard(worst)
+            shed.append(worst)
+        if shed:
+            self.log.append((yr, "stopped maintaining %d works that cost more than "
+                                 "they returned" % len(shed)))
+
+    def enforce_credit_limit(self, yr):
+        """Nobody lends past the limit, so past the limit you simply stop.
+
+        The order matters and is the realistic one: first you stop paying for new
+        work, then you let go of what you cannot maintain, and only then, if it is
+        still hopeless, your creditors write the rest off and take everything
+        that was not nailed down. You are left poor rather than impossibly
+        indebted, which is a position you can work out of.
+        """
+        limit = self.credit_limit()
+        if self.capital >= -limit:
+            return
+        # stop everything in progress: you cannot fund it
+        if self.active:
+            dropped = sorted(self.active)
+            for k in dropped:
+                self.active.pop(k, None)
+                self.bountied.discard(k)
+            self.log.append((yr, "CREDIT EXHAUSTED: %d projects halted, unfinished"
+                                 % len(dropped)))
+        # let go of what you cannot maintain
+        if self.capital < -limit:
+            self.mothball_mines()
+        if self.capital < -limit:
+            burden = sorted((k for k in self.done
+                             if self.nodes[k]["up"] > 0 and k not in self.granted
+                             and not self.never_abandon(k)),
+                            key=lambda k: (self.nodes[k]["rev"] - self.nodes[k]["up"]))
+            for k in burden:
+                if self.capital >= -limit:
+                    break
+                self.done.discard(k)
+                self.capital += self.nodes[k]["up"] * 2.0
+            self.log.append((yr, "creditors took what they could; works let go"))
+        # And the household goes. This was the missing piece: a tester's run sat
+        # pinned at the credit floor making no progress for a century because the
+        # upkeep of a household they could no longer feed consumed every denarius
+        # of income forever. Nobody keeps four hundred dependants they cannot
+        # feed. People are sold or freed and they leave, and the point of modelling
+        # it is that shedding them is how you become solvent again.
+        if self.capital < -limit and (self.slaves or self.freedmen):
+            freed = self.slaves + self.freedmen
+            self.manumit(self.slaves)          # you do not sell them on
+            self.freedmen = 0
+            self.artisans = max(3.0, self.artisans * 0.4)
+            self.log.append((yr, "the household disperses: %d people leave, because "
+                                 "you can no longer feed them" % freed))
+
+        # and the rest is written off. You keep your standing, your knowledge and
+        # your practice, which is exactly what you started with.
+        if self.capital < -limit:
+            self.capital = -limit * 0.35
+            self.reputation = max(0.0, self.reputation - 12)
+            self.log.append((yr, "INSOLVENCY SETTLED: the debt is written off, you "
+                                 "keep your name and your knowledge, and you begin "
+                                 "again poor"))
 
     def cost_money_factor(self):
         """What a denarius of QUOTED cost means, for spending purposes.
@@ -1709,6 +1856,8 @@ class Sim:
         # the log reported as being "blocked" on a treadle lathe.
         if self.capital < 0 and self.mine_capacity:
             self.mothball_mines()
+        self.shed_loss_makers(yr)
+        self.enforce_credit_limit(yr)
 
         # INSOLVENCY. A playtester ran to minus 4.12 million denarii over eighty
         # years and nothing whatever happened: no event, no block, no attrition.
@@ -1751,7 +1900,7 @@ class Sim:
                     burden = sorted((k for k in self.done
                                      if self.nodes[k]["up"] > 0
                                      and k not in self.granted
-                                     and self.nodes[k]["cat"] not in self.NEVER_ABANDON),
+                                     and not self.never_abandon(k)),
                                     key=lambda k: (self.nodes[k]["rev"] - self.nodes[k]["up"]))
                     shed = []
                     for k in burden:
