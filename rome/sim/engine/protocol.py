@@ -43,6 +43,38 @@ def _agent_end_reason(s):
     return None
 
 
+def _waiting_on(s, nodes, k, st, bill):
+    """What is ACTUALLY holding this project up, checked against today."""
+    n = nodes[k]
+    frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
+    short = []
+    for t, want in (n["lab"] or {}).items():
+        need = want * frac
+        if need <= 0:
+            continue
+        supply = s.market_supply(t) + s.contract_hours.get(t, 0.0)
+        have = supply - s.trade_hours_used.get(t, 0.0)
+        if have < need:
+            # The society's CAPACITY is the durable fact and the one a player
+            # can act on; what is left after this year's bookings is noise that
+            # changes every step. Say the first, and only mention the second
+            # when it is what is actually binding.
+            if supply < need:
+                short.append("%s (wants %.0f hours a year; this society can "
+                             "field %.0f at most)" % (t, need, max(0.0, supply)))
+            else:
+                short.append("%s (wants %.0f hours a year; the %ss here can "
+                             "supply %.0f but your other work has them booked)"
+                             % (t, need, t, max(0.0, supply)))
+    if short:
+        return "nobody to do the work: " + "; ".join(sorted(short)[:3])
+    if st["ph_left"] <= 0 and bill > 0.5:
+        return "money"
+    if st["ph_left"] <= 0:
+        return "the calendar"
+    return "your hours"
+
+
 def _agent_state(s, nodes, cmd=None):
     active = {}
     for k, st in s.active.items():
@@ -57,12 +89,17 @@ def _agent_state(s, nodes, cmd=None):
                      # calendar-locked and could not use them, and only noticed by
                      # reading state closely. Say which of the three things it is
                      # actually waiting for.
-                     "waiting_on": (
-                         ("nobody to do the work: " + ", ".join(st["short_of_trade"]))
-                         if st.get("short_of_trade")
-                         else "money" if st["ph_left"] <= 0 and bill > 0.5
-                         else "the calendar" if st["ph_left"] <= 0
-                         else "your hours"),
+                     # WORKED OUT NOW, not read off what last year happened to
+                     # record. short_of_trade is only written when a step
+                     # actually ran the shortage branch, so a project could sit
+                     # for centuries reporting "your hours" while the founder
+                     # had 1,900 idle: a play tester watched `logarithms` stall
+                     # from 325 AD to the horizon that way, and the real cause
+                     # was 40,000 scribe-hours wanted from a society that can
+                     # field three and a half scribes. Telling somebody to
+                     # spend hours they cannot spend, for 275 years, is worse
+                     # than saying nothing.
+                     "waiting_on": _waiting_on(s, nodes, k, st, bill),
                      # WHERE THIS YEAR'S HOURS WENT, for this project specifically.
                      # offered is what step() gave it a shot at; effective is
                      # how much of that actually came off founder_hours_left.
@@ -147,6 +184,17 @@ def _agent_state(s, nodes, cmd=None):
             max(0.0, s.director_pool() - s.director_hours_committed()), 1),
         "founder_hours_sold_for_wages_this_year": round(
             getattr(s, "wage_hours_this_year", 0.0), 1),
+        # WHERE THE HOURS COME FROM. A play tester watched their year grow from
+        # 2,000 hours to 6,090 over a long run with nothing anywhere saying
+        # why. It is not the founder working harder: it is the deputies an
+        # institution gives you, each of whom directs work in your name.
+        "where_your_hours_come_from": {
+            "you": round(s.cfg["founder_hours_per_year"]
+                         * (0.25 if s.bondage_years_left > 0 else 1.0), 1)
+                   if s.founder_alive else 0.0,
+            "deputies_who_direct_work_for_you": round(s.directors_extra, 2),
+            "hours_each_deputy_adds": s.cfg["director_hours_per_year"],
+        },
         "founder_hours_spent_teaching_this_year": round(
             getattr(s, "teaching_hours_this_year", 0.0), 1),
         # LAST YEAR'S HOURS, ACCOUNTED FOR. Set in step(); see the comment
@@ -925,10 +973,17 @@ def render_state(out):
     # rendering did not carry it: a mortal run and an immortal one looked
     # identical here, though the menu asks you to choose between them and one
     # of them ends with everything you have not made permanent dying with you.
-    L.append("You: %s%s, %s founder-hours free this year"
+    _src = out.get("where_your_hours_come_from") or {}
+    _dep = _src.get("deputies_who_direct_work_for_you") or 0
+    L.append("You: %s%s, %s founder-hours free this year%s"
              % ("alive" if out.get("founder_alive") else "DEAD",
                 " and ageing" if out.get("founder_ages") else " (you do not age)",
-                _fmt_num(out.get("founder_hours_available"))))
+                _fmt_num(out.get("founder_hours_available")),
+                ("   (%s of your own, plus %s deputies directing work in your "
+                 "name at %s hours each)"
+                 % (_fmt_num(_src.get("you")), _fmt_num(_dep),
+                    _fmt_num(_src.get("hours_each_deputy_adds"))))
+                if _dep else ""))
 
     active = out.get("active") or {}
     L.append("")
@@ -2462,6 +2517,16 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "auto_bribe": "pay your way out of a scandal before it kills you",
                     "auto_shed": "let go of WORKS that cost more than they return "
                                  "(this is about buildings and practices, not people)",
+                    # SAY WHAT IT WILL NOT DO. A play tester found their
+                    # nitre beds, lab apparatus and glassware left closed by
+                    # this and concluded the lesson was "don't trust the
+                    # automation". It is not broken; it only opens what plainly
+                    # pays, and a capability you need but which earns less than
+                    # it costs is exactly what it will leave shut.
+                    "auto_open": "open concerns that plainly pay for themselves. "
+                                 "It will NOT open anything whose upkeep exceeds "
+                                 "its takings, however much you need it - open "
+                                 "those yourself with 'open <id>'",
                 },
                 "note": "Anything switched off here you can still do by hand: hire, "
                         "train, buy, commission, mothball, restore, bribe.",

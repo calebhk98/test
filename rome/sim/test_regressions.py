@@ -1829,6 +1829,31 @@ for _ in range(4):
     check("a year's hours add up to a year (%d)" % s.year,
           _tot <= _h["available"] + 1.0, _h)
 
+# 7. A project blamed the wrong resource for 275 years. `logarithms` sat at
+#    "waiting on your hours" from 325 AD to the horizon with 1,900 idle founder
+#    hours, while the real cause was 40,000 scribe-hours wanted from a society
+#    that can field a few thousand. waiting_on was read off whatever the last
+#    step happened to record instead of being worked out against today.
+s = sim(civ="han_china_100ad", capital=500000.0)
+for _p in NODES["logarithms"]["pre"]:
+    s.done.add(_p)
+s._done_changed()
+s.hire("scholar", 2)
+s.start_project("logarithms")
+s.step()
+_w = S._waiting_on(s, NODES, "logarithms", s.active["logarithms"], 0)
+check("a stalled project names the resource actually stalling it",
+      "scribe" in _w and "your hours" not in _w, _w)
+check("...and says how far short the society is, in numbers",
+      "can field" in _w or "booked" in _w, _w)
+
+# A play tester watched their year grow from 2,000 hours to 6,090 with nothing
+# saying why. It is deputies, not the founder working harder.
+_hrs, _, _ = proto([{"cmd": "state"}])
+check("state says where the founder's hours actually come from",
+      (_hrs[0].get("where_your_hours_come_from") or {}).get("hours_each_deputy_adds"),
+      _hrs[0].get("where_your_hours_come_from"))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

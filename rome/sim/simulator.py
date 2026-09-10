@@ -45,6 +45,7 @@ from engine.data import (ANNUAL_WAGE, CIVDIR, DEFAULTS, GEOFILE, PRICES,
 from engine.core import Sim                                  # noqa: F401
 from engine.protocol import (_agent_available, _agent_dispatch,  # noqa: F401
                              _agent_end_reason, _agent_help, _agent_state,
+                             _waiting_on,
                              _brief, _clean, _flag, _full_entry, _node_explain,
                              _num, _subject_of, load_state, save_state,
                              SAVE_FIELDS, SUBJECTS, HELP_TOPICS,
