@@ -66,7 +66,7 @@ def _waiting_on(s, nodes, k, st, bill):
         need = want * frac
         if need <= 0:
             continue
-        supply = s.market_supply(t) + s.contract_hours.get(t, 0.0)
+        supply = s.hours_you_can_call_on(t)
         have = supply - s.trade_hours_used.get(t, 0.0)
         if have < need:
             # The society's CAPACITY is the durable fact and the one a player
@@ -2962,7 +2962,7 @@ def _agent_dispatch_inner(s, nodes, cmd):
         _frac0 = min(1.0, 1.0 / max(1.0, _n0["yrs"]))
         for _t, _want in (_n0["lab"] or {}).items():
             _need = _want * _frac0
-            if _need > 0 and s.market_supply(_t) + s.contract_hours.get(_t, 0.0) < _need:
+            if _need > 0 and s.hours_you_can_call_on(_t) < _need:
                 _impossible.append("%s (wants %.0f hours a year; this society can "
                                    "field %.0f at most)"
                                    % (_t, _need, max(0.0, s.market_supply(_t))))

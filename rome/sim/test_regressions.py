@@ -3830,6 +3830,63 @@ check("...and says so plainly when you already hold every one of them",
       "every one of them" in s_rm2._room_advice(), s_rm2._room_advice())
 
 
+# --- BREAK: three places said the town could field 8,750 scribe-hours a year,
+# and commissioning the full 8,750 ON TOP of the standing pool let a
+# 10,000-hour project finish. Real ceiling 17,500; every one of the three
+# statements false.
+s_cm = sim(capital=5000000.0)
+_ceiling = s_cm.market_supply("scribe")
+s_cm.commission("scribe", _ceiling * 0.9)
+check("commissioning does not raise what the town can field",
+      s_cm.hours_you_can_call_on("scribe") <= _ceiling + 1e-6,
+      (_ceiling, s_cm.hours_you_can_call_on("scribe")))
+check("...and you cannot commission past the ceiling either",
+      s_cm.commission("scribe", _ceiling)[0] is False,
+      s_cm.commission("scribe", _ceiling)[1])
+
+# --- BREAK: a senatorial patron added 15,000 to the credit line whoever you
+# were, so a household with 1,800 of revenue could owe 23,000 - about 1,500 a
+# year of interest against 1,800 of income, which no practice can ever repay.
+s_cl = sim()
+_thin = s_cl.credit_limit()
+s_cl.done.add("patron_senatorial"); s_cl._done_changed()
+check("a grand friend does not lend you more than your income can carry",
+      s_cl.credit_limit() < _thin * 3, (_thin, s_cl.credit_limit()))
+check("...and the interest on the whole line stays under what you earn",
+      s_cl.credit_limit() * s_cl.debt_interest_rate() < s_cl.revenue(),
+      (s_cl.credit_limit() * s_cl.debt_interest_rate(), s_cl.revenue()))
+check("...while a founder with a practice can still just reach a cover identity",
+      sim().capital + sim().credit_limit() >= sim().project_cost("identity_cover"),
+      (sim().capital + sim().credit_limit(), sim().project_cost("identity_cover")))
+
+# --- BREAK: status upkeep was unconditional - 1,100 a year for a citizenship
+# and a senatorial patron a ruined household could not afford and had no way
+# to shed - and it bled a Rome run 741 a year for sixty-four years.
+s_st = sim()
+s_st.done.update({"citizenship", "patron_senatorial"}); s_st._done_changed()
+_rich = sim(capital=2000000.0)
+_rich.done.update({"citizenship", "patron_senatorial"}); _rich._done_changed()
+# The two ranks are worth 1,100 a year of show at Rome's prices; a household
+# with 233 of income does not pay it.
+check("a ruined household stops keeping up appearances",
+      s_st.living_cost() < sim().living_cost() + 50.0,
+      (s_st.living_cost(), sim().living_cost()))
+check("...and a household that can afford the show still pays for it",
+      _rich.living_cost() > s_st.living_cost() * 2, (_rich.living_cost(),
+                                                     s_st.living_cost()))
+
+# --- BREAK: the optimizer's budget for new work counted upkeep, living costs
+# and mines and NOT the interest it was already paying, so a household bleeding
+# 552 a year decided it had five years of headroom against money that did not
+# exist.
+s_bd = sim(capital=-20000.0, manual=False)
+s_bd.insolvent_years = 20
+_before = len(s_bd.active)
+s_bd.step()
+check("a household deep in arrears does not commit to new work",
+      len(s_bd.active) <= _before + 1, (len(s_bd.active), _before))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

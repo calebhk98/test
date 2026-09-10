@@ -906,7 +906,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     need = want * frac
                     if need <= 0:
                         continue
-                    have = (self.market_supply(t) + self.contract_hours.get(t, 0.0)
+                    have = (self.hours_you_can_call_on(t)
                             - self.trade_hours_used.get(t, 0.0))
                     if need > have:
                         worst = min(worst, max(0.0, have) / need)
@@ -942,8 +942,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     # mechanic was right and the label was a lie.
                     st["short_of_trade"] = sorted(
                         t for t, wnt in n["lab"].items()
-                        if wnt > 0 and (self.market_supply(t)
-                                        + self.contract_hours.get(t, 0.0)
+                        if wnt > 0 and (self.hours_you_can_call_on(t)
                                         - self.trade_hours_used.get(t, 0.0)) < wnt * frac)[:3]
                 else:
                     st.pop("short_of_trade", None)

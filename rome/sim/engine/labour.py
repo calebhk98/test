@@ -550,6 +550,19 @@ class LabourMixin:
             cap *= self.literacy_factor(t)
         return cap + self.employees.get(t, 0.0) * self.HOURS_PER_PERSON_YEAR
 
+    def hours_you_can_call_on(self, t):
+        """Hours of this trade a project can actually draw on this year.
+
+        COMMISSIONED HOURS ARE PART OF THE CEILING, NOT ON TOP OF IT. Three
+        places told a break tester the town could field 8,750 scribe-hours a
+        year; commissioning the full 8,750 on top of the standing pool then let
+        a 10,000-hour project finish, making the real ceiling 17,500 and every
+        one of those three statements false. A commission buys a job from
+        somebody else's shop - it is the same scribes. What it really buys is
+        certainty: hours reserved for your work rather than competed for.
+        """
+        return max(self.market_supply(t), self.contract_hours.get(t, 0.0))
+
     def market_supply_split(self, t):
         """(the town's hours, your own people's hours). Same total, said honestly.
 
