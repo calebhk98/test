@@ -1842,11 +1842,24 @@ def _agent_dispatch(s, nodes, cmd):
             if mat not in s.MINE_CAPEX_PER_T_YR:
                 return {"ok": False, "error": "material must be one of: "
                                               + ", ".join(s.MINE_CAPEX_PER_T_YR)}
-            got = s.open_mine(mat, n)
+            # partial=False: a mine you asked for by name is bought in full or
+            # not at all. It used to spend every denarius you had and hand back
+            # a fraction, without asking.
+            price = s.mine_quote(mat, n).get("to_sink_it") if hasattr(s, "mine_quote") else None
+            got = s.open_mine(mat, n, partial=False)
             if got <= 0:
+                if price is not None and price > s.capital:
+                    return {"ok": False,
+                            "error": "%.0f tonnes a year of %s costs %s denarii to "
+                                     "sink and you have %s. Nothing was changed - ask "
+                                     "for what you can pay for, or check the price "
+                                     'first with {"cmd":"quote","what":"mine",'
+                                     '"material":"%s","n":%g}.'
+                                     % (float(n), mat, "{:,.0f}".format(price),
+                                        "{:,.0f}".format(s.capital), mat, float(n))}
                 return {"ok": False, "error": "could not commission any %s capacity right now "
-                                              "(capital too low, ceiling reached, or standing "
-                                              "too low for a concession that size)" % mat}
+                                              "(ceiling reached, or standing too low for a "
+                                              "concession that size)" % mat}
             # Say what was actually commissioned and WHEN it arrives. A tester
             # asked for 999,999,999 tonnes a year, silently got 59, and found
             # ready_year was always null so there was no way to know whether the

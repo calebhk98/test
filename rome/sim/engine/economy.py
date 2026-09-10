@@ -799,7 +799,7 @@ class EconomyMixin:
                       "What you spent sinking them is gone, and reopening means "
                       "sinking them again." % (mat, saved))
 
-    def open_mine(self, mat, t_per_yr):
+    def open_mine(self, mat, t_per_yr, partial=True):
         """Open your own workings.
 
         The model used to treat the Empire's ATTESTED output as a hard ceiling,
@@ -845,6 +845,15 @@ class EconomyMixin:
             return 0.0
         cost = t_per_yr * cap * self.price_index
         if cost > self.capital:
+            # A COMMAND YOU TYPED IS NOT A STANDING ORDER TO SPEND EVERYTHING.
+            # This quietly took every denarius a break tester had and handed
+            # back 22% of the mine they asked for. `hire` refuses and quotes
+            # the price; so should this. The automatic policy (auto_mine) still
+            # buys what it can afford, because that is the whole of its job:
+            # it is spending spare cash on a bottleneck, not answering a
+            # request for a particular mine.
+            if not partial:
+                return 0.0
             t_per_yr = self.capital / (cap * self.price_index)
             cost = self.capital
         if t_per_yr <= 0:

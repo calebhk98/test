@@ -679,3 +679,64 @@ So the practical advice to anyone playing this build is: **do not use `train`**,
 backup copy of your session file. That is a bad place for a game to be, since `train` is the
 only route to chemists, engineers, machinists, opticians and electricians, and those five
 trades gate the entire chemistry, precision and electricity half of the tree.
+
+## RUN C — a complete playthrough, 1300 to the 1800 horizon
+Knowing the shape from run A, I replayed properly: trinkets -> textiles -> clock and knitting
+frame -> spine (units_standards, identity_cover, arithmetic, patron_local, scientific_method,
+workshop_first, citizenship) -> then a scripted breadth loop. I never used `train`, because
+`train` destroys the save in this build.
+
+Milestones:
+  1307  14 techs,      9,214 den, +3,902/yr   (vs run A: 1303, 15 techs, -1,867 den)
+  1330  33 techs,     18,903 den
+  1356 167 techs,    217,891 den   (Black Death survived)
+  1400 246 techs,    801,420 den
+  1490 509 techs,  2,150,304 den
+  1600 742 techs,  8,196,824 den
+  1700 809 techs, 16,362,847 den
+  1800 813 techs, 17,756,546 den, 308 staff, 951 technologies in total
+
+### AND THEN THE GAME TOLD ME WHAT IT WAS ABOUT
+At 1800 the run ends and `state` prints two things it has never printed once in 500 years:
+
+    *** THE RUN HAS ENDED: ran out of horizon (1800 AD) without reaching the goal ***
+    Goal: point_contact_transistor
+    EMINENCE is dangerous above 26 (settles near 8.1 ...)
+
+1. THERE IS A GOAL, AND IT IS SECRET UNTIL YOU FAIL. `help` told me "Advance as far as you
+   can before the horizon at 1800. There is no score but the state of what you have built."
+   That is not true. The goal is the point-contact transistor, and the end screen says so
+   flatly: "Getting here from 100 AD is the whole game." I played 500 years optimising
+   breadth — technologies built — when I should have been driving one specific chain.
+   This is the single biggest thing I would change. Under fog of war I accept not seeing
+   the tree. Not being told what I am aiming at is different: it is the difference between
+   a hard game and an unfair one. Even "your goal is the transistor; you cannot see the
+   route" would have completely changed how I played.
+2. "dangerous above 26" is about EMINENCE. The label appears only on the end screen. For 500
+   years that sentence sat under the reputation line with no subject, and I noted it twice as
+   confusing before finding out by accident at the very end.
+
+And with the run over, the fog lifts on `why`, which now prints what I wanted all game:
+    FULL CHAIN BEHIND IT: 145 nodes, 55,420 of your hours, 9,421,124 den,
+                          142.2-year serial floor
+    DIRECTLY UNLOCKS: junction_transistor
+    TOTAL DOWNSTREAM: 5 things depend on this -- INCLUDING THE GOAL
+    TRADES NOT YET TAUGHT HERE: chemist, machinist
+So the transistor was reachable: 145 nodes, 9.4M denarii (I finished with 17.8M) and a
+142-year serial floor against my 500. I had the money and the time. What I did not have was
+chemists and machinists — the two trades that require `train`, the one command that destroys
+the save in this build. The bug did not just annoy me; it cost me the game.
+
+## FINAL VERDICT AS A PLAYER
+The good: the spine is social and expensive and it is the truest thing here. `risk` naming
+which of your own works softened a famine is superb. The literacy ceiling, the trades that
+must be taught, the fact that selling your own labour becomes worthless, the fact that
+institutions take twenty years and money cannot buy the years down — all of that teaches
+something real.
+The bad: the interface hides the three numbers that decide everything (revenue, upkeep,
+downstream weight) behind a one-at-a-time command, so competent play degenerates into
+scripting `why` across the whole tree; catastrophic losses happen silently inside a `step`;
+quoted costs go stale by 100% over decades with no warning; and the goal is a secret.
+The fatal: `train` kills the save.
+What I would fix first, in order: (1) show the goal; (2) put revenue/upkeep/downstream in
+`available`; (3) make the loss of a finished work an EVENT line; (4) fix `train`.

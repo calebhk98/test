@@ -1302,6 +1302,16 @@ check("selling half your hours costs you half the practice, not all of it",
       abs(s2.revenue() - _rev_before * 0.5) < _rev_before * 0.06,
       "%.1f against half of %.1f" % (s2.revenue(), _rev_before))
 
+# 6. `buy mine` spent every denarius you had and handed back a fraction of the
+#    mine you asked for, without asking. A command you typed is not a standing
+#    order to spend everything.
+_mn, _, _ = proto([{"cmd": "buy", "what": "mine", "material": "coal", "n": 500},
+                   {"cmd": "state"}])
+check("a mine you cannot pay for is refused, not part-bought with all your money",
+      _mn[0].get("ok") is False and "Nothing was changed" in (_mn[0].get("error") or "")
+      and _mn[1]["capital"] > 300,
+      (_mn[0].get("error", "")[:80], _mn[1].get("capital")))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
