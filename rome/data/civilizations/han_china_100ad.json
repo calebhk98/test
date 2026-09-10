@@ -55,6 +55,89 @@
     220,
     280
    ]
+  },
+  {
+   "name": "Jin reunification and the Taikang peace",
+   "note": "Sima Yan's Jin took Wu in 280 and China had one court again for the first time since 220. The Taikang years (280-289) are remembered as a decade in which registered households climbed back, the canals were dredged and the roads were safe; the occupation-field and tax-field settlement of 280 put people back on land they were allowed to keep. This partly undoes the Three Kingdoms shift above and is modelled exactly that way, as a partial reversal rather than a return to the Han baseline. It does not last: the dynasty that made it spends the next fifteen years killing itself.",
+   "values": {
+    "patronage_weight": -0.08,
+    "w_commerce": 0.1
+   },
+   "years": [
+    280,
+    290
+   ]
+  },
+  {
+   "name": "War of the Eight Princes",
+   "note": "Sixteen years of civil war inside the imperial clan, beginning with the coup against Empress Jia Nanfeng in 291 and grinding on until Sima Yue was left standing in 306. It consumed the Jin field armies, and - decisively - it taught the Xiongnu, Xianbei and Jie horsemen the princes hired against each other that the dynasty could be beaten by people who were already inside it. Nothing else in this file does so much damage with so little to show for it.",
+   "output_factor": 0.65,
+   "sack_chance": 0.05,
+   "years": [
+    291,
+    306
+   ]
+  },
+  {
+   "name": "The Yongjia disaster and the fall of Luoyang",
+   "note": "Liu Yuan declared his own Han dynasty in 304. In 311 his son Liu Cong's army took Luoyang, burned the palaces and the imperial library and carried the emperor off as a prisoner - the Yongjia catastrophe, which Chinese historiography treats as the end of the ancient world in the way the west treats 410. Chang'an fell in 316 and the Western Jin was finished. The court and a large part of the northern elite fled south of the Yangtze - the yiguan nandu, the crossing south of caps and gowns - and proclaimed the Eastern Jin at Jiankang in 317. If your workshop is anywhere north of the Huai river, it is in the path of this.",
+   "output_factor": 0.5,
+   "sack_chance": 0.2,
+   "staff_loss": 0.3,
+   "years": [
+    307,
+    317
+   ]
+  },
+  {
+   "name": "The Sixteen Kingdoms",
+   "note": "A hundred and twenty years in which northern China was ruled by a rapid succession of short-lived states founded by Xiongnu, Jie, Xianbei, Di and Qiang rulers - conventionally sixteen, in fact rather more. Fu Jian's Former Qin came within one battle of reunifying everything and lost it in an afternoon at the Fei river in 383. Registered population in the north over this period is a small fraction of the Later Han totals; how much of that gap is death and how much is flight south and households that simply stopped being counted is disputed, which is why this is modelled as long sustained lost output and a low standing sack risk rather than as mass mortality. What is not disputed is that the thing that made Han China the easiest place in this game to organise anything - one court, one coinage, one set of examinations - is gone, and what replaces it is a warlord whose favour you either have or do not.",
+   "output_factor": 0.62,
+   "sack_chance": 0.025,
+   "values": {
+    "patronage_weight": 0.1,
+    "w_military": 0.1
+   },
+   "years": [
+    318,
+    439
+   ]
+  },
+  {
+   "name": "Northern Wei, the equal-field system, and the monasteries",
+   "note": "The Tuoba Wei finished off the last of the northern states in 439 and held the north for a century. The equal-field allotment of 485 and the three-elders village registration of 486 rebuilt a taxable peasantry out of the wreckage, and Emperor Xiaowen moved the capital to Luoyang in 494 and required Xianbei families to take Chinese dress, language and surnames. The part that matters for a workshop is the Buddhist establishment: Yungang from 460 and Longmen from 493 are the visible end of it, but the monasteries were also very large landholders that ran water-powered grain mills and oil presses on their estates and litigated to keep the water rights. That is an institutional home for machinery, with capital and a reason to want it, that Han China did not have. The cost side is that the state notices: Emperor Taiwu suppressed Buddhism in 446 and the Northern Zhou did it again from 574 to 577, forcibly returning something like three million monks and nuns and their land to the tax rolls, which is a state deciding what may be believed in a way the Later Han rarely did.",
+   "values": {
+    "w_labour_saving": 0.12,
+    "w_religious_rigidity": 0.1
+   },
+   "years": [
+    439,
+    534
+   ]
+  },
+  {
+   "name": "The Hou Jing rebellion and the sack of Jiankang",
+   "note": "Hou Jing, a general who defected from the Eastern Wei and was taken in by the Liang, turned on his hosts and besieged Jiankang for five months across 548 and 549; Emperor Wu, who had reigned for forty-seven years, starved to death in his own palace. The richest city in the Chinese world, and the refuge the northern elite had been building since 317, was destroyed, and the Liang state with it. Six years later, when Jiangling fell to the Western Wei in the winter of 554-555, Emperor Yuan burned the imperial library - some hundred and forty thousand scrolls by the traditional count - rather than hand it over, which is the single largest deliberate destruction of books in this file. The south never recovered its weight against the north after this, which is why reunification, when it came thirty-four years later, came from the north.",
+   "output_factor": 0.6,
+   "sack_chance": 0.18,
+   "staff_loss": 0.25,
+   "years": [
+    548,
+    555
+   ]
+  },
+  {
+   "name": "Sui reunification",
+   "note": "Yang Jian took the Northern Zhou throne in 581 and in 589 his armies crossed the Yangtze, took Jiankang and ended two hundred and seventy years of division. For anyone trying to build something, this is the most important favourable event in the whole file and it deserves to be said plainly. The Sui restored one five-zhu coinage for the whole country and closed the private mints; standardised weights, measures and the foot; issued the Kaihuang code of 581, which cut the number of capital offences sharply; and abolished the nine-rank system in 587 in favour of provincial candidates sent up to be examined, which is the root the imperial examination grows from - the jinshi degree itself is a few years later, under Yang - and which makes an unconnected clever man employable again. Canal-building starts immediately - the Guangtong canal from Chang'an to the Yellow River was cut in 584 - and the great works joining the Yangtze to the Yellow River and on to the northern frontier follow in 605-610, just past this simulation's horizon. The corvee that dug them was murderous and destroyed the dynasty within two generations; inside this window, it is the reunification that counts. w_commerce rises because there is one currency and one market again, and patronage_weight falls back because there is one court to be examined by instead of a warlord to be favoured by.",
+   "values": {
+    "patronage_weight": -0.1,
+    "w_commerce": 0.15,
+    "w_novelty": 0.05
+   },
+   "years": [
+    581,
+    600
+   ]
   }
  ],
  "home_regions": [
