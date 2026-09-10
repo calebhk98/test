@@ -50,7 +50,7 @@ from engine.protocol import (_agent_available, _agent_dispatch,  # noqa: F401
                              SAVE_FIELDS, SUBJECTS, HELP_TOPICS)
 from engine.cli import (cmd_agent, cmd_civs, cmd_compare, cmd_costs,  # noqa: F401
                         cmd_path, cmd_play, cmd_run, cmd_sensitivity, cmd_sweep,
-                        cmd_validate, cmd_why, load_strategy, main, topo_stable,
+                        cmd_validate, cmd_why, cmd_menu, load_strategy, main, topo_stable,
                         _summarise)
 
 if __name__ == "__main__":

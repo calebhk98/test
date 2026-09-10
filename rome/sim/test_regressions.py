@@ -17,6 +17,9 @@ TREE, PRICES, NODES, WAGES, GOODS = S.load()
 GOAL = TREE["meta"]["goal_node"]
 _LAB, ORDER, _B = S.load_strategy("recommended", NODES, GOAL)
 FAILURES = []
+# Counted rather than hand-maintained: the tally in the summary line was a
+# literal that three separate rounds of additions had to remember to update.
+CHECKS_RUN = []
 
 
 def sim(civ="rome_100ad", capital=None, manual=True, events=False):
@@ -28,6 +31,7 @@ def sim(civ="rome_100ad", capital=None, manual=True, events=False):
 
 
 def check(name, ok, detail=""):
+    CHECKS_RUN.append(name)
     print("  %-58s %s" % (name, "ok" if ok else "FAIL " + detail))
     if not ok:
         FAILURES.append(name + " " + detail)
@@ -334,6 +338,37 @@ check("available stays a summary as the tree opens up", digest < 12000,
       "%d bytes at year %d with %d things startable"
       % (digest, s.year, avail["count"]))
 
+# --- the menu: a bare invocation must open it, and every civ must be playable
+p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                   input="q\n", capture_output=True, text=True, timeout=120, cwd=ROOT)
+check("a bare invocation opens the menu rather than a usage error",
+      p.returncode == 0 and "ONE PERSON" in p.stdout, p.stdout[:80] + p.stderr[:80])
+
+check("the menu offers every civilisation with its lore",
+      all(w in p.stdout for w in ("Later Han", "Trajan", "Viking", "Edward I", "Mexica")),
+      "missing one of the five")
+
+# `play` was Rome-only and its loop ended at 100+horizon, so any civ that does
+# not start in year 100 ended before the player could type anything.
+for civ, first_year in (("norse_900ad", "900 AD"), ("mexica_1500", "1500 AD")):
+    p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                        "--manual", "--civ", civ],
+                       input="n\nq\n", capture_output=True, text=True, timeout=120, cwd=ROOT)
+    check("play runs a civilisation that does not start in 100 AD (%s)" % civ,
+          first_year in p.stdout and "Ended %s" % first_year not in p.stdout,
+          p.stdout[-120:])
+
+civ_files = [f for f in os.listdir(os.path.join(ROOT, "rome", "data", "civilizations"))
+             if f.endswith(".json") and not f.startswith("_")]
+missing_lore = []
+for f in civ_files:
+    d = json.load(open(os.path.join(ROOT, "rome", "data", "civilizations", f)))
+    op = d.get("opening") or {}
+    if not all(op.get(k) for k in ("arrival", "what_you_can_see",
+                                   "what_is_missing", "what_is_coming")):
+        missing_lore.append(d.get("id", f))
+check("every civilisation has its opening written", not missing_lore, str(missing_lore))
+
 # --- reproducibility: the same seed must give the same answer
 outs = set()
 for _ in range(2):
@@ -554,7 +589,7 @@ check("available returns quickly under fog, not in tens of seconds",
       elapsed < 5.0, "%.2fs" % elapsed)
 
 print("=" * 72)
-print("%d checks, %d failures" % (38 + 15 + 20, len(FAILURES)))
+print("%d checks, %d failures" % (len(CHECKS_RUN), len(FAILURES)))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)

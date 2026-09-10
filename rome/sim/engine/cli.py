@@ -261,9 +261,18 @@ def cmd_play(a):
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    # `play` used to always be Rome, with no way to say otherwise, while `run`
+    # and `agent` both took --civ. A human at the keyboard could not reach four
+    # of the five civilisations at all.
+    cfg = {"immortal": not getattr(a, "mortal", False)}
+    kit = getattr(a, "kit", None)
+    if kit:
+        cfg["start_capital"] = STARTING_KITS[kit]["den"]
     s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=bounties,
-            manual=a.manual)
+            manual=a.manual, civ=load_civ(getattr(a, "civ", None) or "rome_100ad"),
+            cfg=cfg)
     s.goal = goal; s.done_year = {}
+    s.fog = bool(getattr(a, "fog", False))
     if a.manual:
         print("You arrive in %d AD with %d denarii in unminted gold. MANUAL MODE:\n"
               "nothing starts unless you start it. Type a node id to start it,\n"
@@ -274,7 +283,13 @@ def cmd_play(a):
               "Type a node id to PRIORITISE it (the optimizer still runs the rest;\n"
               "pass --manual for real free choice), 'a' for what is available,\n"
               "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
-    while s.year < 100 + (a.horizon or 400) and not s.dead_reason and not s.goal_year:
+    # NOT 100 + horizon. That constant was Rome's start year, harmless while
+    # `play` could only ever be Rome, and fatal the moment it accepted --civ:
+    # a Norse game begins in 900, and 900 is not less than 600, so the loop
+    # ended before the player typed anything. The civilisation says when it
+    # starts; the horizon is measured from there.
+    end_year = getattr(s, "end_year", None) or (s.cfg["start_year"] + (a.horizon or 400))
+    while s.year < end_year and not s.dead_reason and not s.goal_year:
         cmd = input("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f | susp %.0f] > "
                     % (s.year, s.capital, s.director_pool(), s.scholars, s.artisans,
                        s.reputation, s.suspicion)).strip()
@@ -632,9 +647,189 @@ def cmd_civs(a):
     return 0
 
 
+def _wrap(text, width=76, indent="   "):
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        if len(cur) + len(w) + 1 > width:
+            lines.append(indent + cur); cur = w
+        else:
+            cur = (cur + " " + w).strip()
+    if cur:
+        lines.append(indent + cur)
+    return "\n".join(lines)
+
+
+def _ask(prompt, options, default=None):
+    """Ask until the answer is one of options. Empty input takes the default."""
+    while True:
+        try:
+            raw = input(prompt).strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print()
+            return None
+        if not raw and default is not None:
+            return default
+        if raw in ("q", "quit", "exit"):
+            return None
+        for o in options:
+            if raw == o or (len(raw) == 1 and o.startswith(raw)):
+                return o
+        print("   -- I did not understand that. Options: %s" % ", ".join(options))
+
+
+def cmd_menu(a):
+    """The front door for a person, rather than for a script.
+
+    Everything here can be done with command-line flags, and the flags are
+    what a script should use. This exists because "what do I type" was the
+    first thing every human tester had to be told out of band, and because a
+    game about arriving somewhere should be able to tell you where you have
+    arrived before it asks you to make decisions about it.
+    """
+    civs = []
+    for fn in sorted(os.listdir(CIVDIR)):
+        if not fn.endswith(".json") or fn.startswith("_"):
+            continue
+        civs.append(json.load(open(os.path.join(CIVDIR, fn))))
+    civs.sort(key=lambda c: c.get("year", 0))
+
+    print()
+    print("=" * 78)
+    print("   ONE PERSON, AND EVERYTHING THEY KNOW".center(78))
+    print("=" * 78)
+    print()
+    print(_wrap(
+        "You are one person, dropped into a pre-industrial society, carrying "
+        "the knowledge of how modern technology works and none of the industry "
+        "that makes it. Knowing how a thing works is free. Building it is not: "
+        "it costs your own hours, other people's hours, money, materials, and "
+        "years you do not get back."))
+    print()
+    print(_wrap(
+        "You arrive alone. No employees, no slaves, nobody who owes you "
+        "anything, and about enough money to eat for a few months."))
+    print()
+    print("-" * 78)
+    print("   WHERE, AND WHEN")
+    print("-" * 78)
+    for i, c in enumerate(civs, 1):
+        print()
+        print("   %d) %s, %d" % (i, c.get("name", c["id"]), c.get("year", 0)))
+        print(_wrap(c.get("blurb", ""), indent="      "))
+        print("      %s people   state capacity %.2f   prices %.2fx Rome"
+              % (f"{c.get('population', 0):,}", c.get("state_capacity", 0),
+                 c.get("price_index", 1.0)))
+    print()
+    while True:
+        try:
+            raw = input("   Which one? [1-%d, or q to leave] " % len(civs)).strip()
+        except (EOFError, KeyboardInterrupt):
+            print(); return
+        if raw.lower() in ("q", "quit", "exit"):
+            return
+        if raw.isdigit() and 1 <= int(raw) <= len(civs):
+            civ = civs[int(raw) - 1]
+            break
+        print("   -- a number from 1 to %d." % len(civs))
+
+    op = civ.get("opening") or {}
+    print()
+    print("=" * 78)
+    print(("   %s, %d" % (civ.get("name", civ["id"]), civ.get("year", 0))).upper())
+    print("=" * 78)
+    for key, heading in (("arrival", None),
+                         ("what_you_can_see", "What you can see"),
+                         ("what_is_missing", "What is missing"),
+                         ("what_is_coming", "What is coming, and only you know it")):
+        if not op.get(key):
+            continue
+        print()
+        if heading:
+            print("   %s" % heading.upper())
+        print(_wrap(op[key]))
+    if not op:
+        print()
+        print(_wrap(civ.get("blurb", "")))
+    print()
+
+    print("-" * 78)
+    print(_wrap("FOG OF WAR. With it on you see what you have built, what you "
+                "could begin today as a one-line summary, and things you have "
+                "heard of but cannot yet start. You cannot see where anything "
+                "leads. With it off you can see the whole tree and plan a "
+                "route through it.", indent="   "))
+    fog = _ask("\n   Fog of war? [Y/n] ", ["y", "n"], "y")
+    if fog is None:
+        return
+    print()
+    print("-" * 78)
+    print("   WHAT YOU ARRIVED WITH")
+    for name, kit in STARTING_KITS.items():
+        print("      %-14s %9s den" % (name, f"{kit['den']:,}"))
+        if kit.get("desc"):
+            print(_wrap(kit["desc"], indent="         "))
+    kit = _ask("\n   Which? [%s] " % "/".join(STARTING_KITS), list(STARTING_KITS),
+               "poor_scholar")
+    if kit is None:
+        return
+    print()
+    print("-" * 78)
+    print(_wrap("MORTALITY. By default the founder does not age, which measures "
+                "the tree rather than a lifespan lottery. Turned on, you get one "
+                "human life and everything you have not made permanent dies with "
+                "you. The premise of the whole game is that one is the honest "
+                "number.", indent="   "))
+    mortal = _ask("\n   Let the founder age and die? [y/N] ", ["y", "n"], "n")
+    if mortal is None:
+        return
+
+    cmdline = ["python3 rome/sim/simulator.py agent",
+               "--civ %s" % civ["id"]]
+    if fog == "y":
+        cmdline.append("--fog")
+    if kit != "poor_scholar":
+        cmdline.append("--kit %s" % kit)
+    if mortal == "y":
+        cmdline.append("--mortal")
+    cmdline.append("--session mygame.json")
+
+    print()
+    print("=" * 78)
+    print(_wrap("Two ways to play from here. At a keyboard, the game asks you "
+                "for a node id and steps a year at a time. Through the JSON "
+                "protocol, one object per line in and one out, which is how a "
+                "script or an agent plays and is also perfectly usable by hand.",
+                indent="   "))
+    print()
+    print("   The command for the JSON protocol, if you want it later:")
+    print()
+    print("      %s" % " \\\n         ".join(cmdline))
+    print()
+    how = _ask("   Play at the keyboard now? [Y/n] ", ["y", "n"], "y")
+    if how is None or how == "n":
+        print("\n   Good luck.\n")
+        return
+
+    class Args:
+        pass
+    args = Args()
+    args.strategy = "recommended"
+    args.seed = 1
+    args.horizon = 500
+    args.manual = True
+    args.civ = civ["id"]
+    args.kit = kit
+    args.mortal = (mortal == "y")
+    args.fog = (fog == "y")
+    print()
+    return cmd_play(args)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    sub = p.add_subparsers(dest="cmd", required=True)
+    # NOT required: typing the bare command should open the menu rather than
+    # print a usage error at somebody who has just arrived.
+    sub = p.add_subparsers(dest="cmd", required=False)
     sub.add_parser("validate")
     sub.add_parser("civs")
     q = sub.add_parser("path"); q.add_argument("goal", nargs="?")
@@ -667,10 +862,17 @@ def main():
     q.add_argument("--mc", type=int, default=200)
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
+    sub.add_parser("menu", help="pick a civilisation, read where you have landed, "
+                                "and start. This is what a bare invocation does.")
     q = sub.add_parser("play")
     q.add_argument("--strategy", default="recommended")
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
+    q.add_argument("--civ", default="rome_100ad")
+    q.add_argument("--kit", default="poor_scholar",
+                   help="starting wealth: " + ", ".join(STARTING_KITS))
+    q.add_argument("--fog", action="store_true")
+    q.add_argument("--mortal", action="store_true")
     q.add_argument("--manual", action="store_true",
                    help="nothing starts on its own; only nodes you type actually begin. "
                         "Without this flag, typing a node id only reprioritises the "
@@ -699,7 +901,10 @@ def main():
                    help="path to a JSON file holding a list of command objects, "
                         "played in order instead of reading stdin")
     a = p.parse_args()
-    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs, "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs,
+    if not a.cmd:
+        a.cmd = "menu"
+    return {"validate": cmd_validate, "path": cmd_path, "costs": cmd_costs,
+            "why": cmd_why, "sweep": cmd_sweep, "civs": cmd_civs, "menu": cmd_menu,
             "run": cmd_run, "compare": cmd_compare, "play": cmd_play, "agent": cmd_agent,
             "sensitivity": cmd_sensitivity}[a.cmd](a)
 

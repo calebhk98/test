@@ -94,6 +94,12 @@
   "Unlicensed associations are illegal: Trajan refuses Pliny even a fire brigade, Ep. 10.34.",
   "Already trades annually to India on the monsoon and by relay to China."
  ],
+ "opening": {
+  "arrival": "You come to on the Ostia road in the eighteenth year of Domitian's calendar, except Domitian is four years dead and nobody has corrected the milestone. It is the second consulship of Trajan. Rome is at its greatest extent and its most confident: the roads are the best in the world, the water arrives on schedule, the courts sit, the grain fleet comes in from Alexandria, and sixty-five million people are governed by men who genuinely believe the arrangement is permanent.",
+  "what_is_coming": "Sixty-five good years, then the Antonine plague. A century after that, the currency is debased to a tenth and the frontier stops holding. You know the dates. Nobody else does.",
+  "what_is_missing": "Not the ideas. The instruments. Nobody can measure a temperature, hold a tolerance, sustain a vacuum, or purify anything. Every single thing you know how to build waits behind those four.",
+  "what_you_can_see": "Concrete that sets under water. Glass windows. Surgical instruments a modern surgeon would recognise. Water-mills in banks of sixteen. A postal service that outruns anything Europe will have again for fourteen hundred years. And no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no zero."
+ },
  "population": 65000000,
  "price_index": 1.0,
  "starting_techs": [

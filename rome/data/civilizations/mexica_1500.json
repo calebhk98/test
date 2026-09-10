@@ -110,6 +110,12 @@
   "Chinampa agriculture yields more per hectare than any European system, so the food constraint that shapes the Roman tree does not bind here.",
   "The absence of draught animals is the deepest constraint: it removes the plough, the cart, the mill and the horse collar in one stroke."
  ],
+ "opening": {
+  "arrival": "You arrive in Tenochtitlan, a city of a quarter of a million people built on a lake, with causeways, an aqueduct of two channels so one can be cleaned while the other runs, botanical gardens, compulsory schooling, and a market that astonished the men who destroyed it.",
+  "what_is_coming": "Nineteen years. Then ships, and then smallpox, and the smallpox is the one that matters: a population with no immunity to anything the Old World has been trading back and forth for four thousand years. This is the hardest start in this game and it is not a fair fight.",
+  "what_is_missing": "The wheel is a toy here because there is nothing to pull a cart: no horse, no ox, no donkey anywhere in the hemisphere. Every load in this civilisation moves on a human back. That is not ignorance, and no amount of teaching will fix it. Neither will it fix the absence of iron, of large domesticated animals, or of the diseases that made Europeans survivable to each other.",
+  "what_you_can_see": "Chinampas that yield seven crops a year. Obsidian edges sharper than any steel. Featherwork and goldwork of a quality Europe cannot match. A writing system, an accurate calendar, and civil engineering on water that Venice would recognise as kin."
+ },
  "population": 5000000,
  "price_index": 0.8,
  "starting_techs": [

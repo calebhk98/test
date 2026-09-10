@@ -113,6 +113,12 @@
   "Population is 1.5 million against Rome's 65 million. You will never assemble a large workforce, so every plan must be capital-light and skill-heavy.",
   "Base reach 4: these ships already go to Greenland, the Caspian and Newfoundland. The Atlantic is not a barrier here, which flips the entire expedition branch."
  ],
+ "opening": {
+  "arrival": "You come ashore somewhere on the Vestfold, in a country with no king worth the name, no cities, no coinage anybody trusts, and no state to ask permission from. There are perhaps a million and a half people in the whole of Scandinavia. Every one of them is somebody's neighbour, and the law is an assembly of free men who will hear you.",
+  "what_is_coming": "A century of Christianisation and consolidation. Kings, bishops, written law, taxes and towns. The freedom you are enjoying now is the thing that is about to end.",
+  "what_is_missing": "Everything that needs a state. There is no one to fund a public work, no city to concentrate a trade in, no bureaucracy to keep a record for longer than a man's memory. What Rome finds trivial, you will find nearly impossible. What Rome finds impossible, you can simply do, because nobody here can stop you.",
+  "what_you_can_see": "The best ships in the world. Clinker-built, sprung, shallow enough for a river and sound enough for an ocean, and the men who build them do it by eye. Iron smelted from bog ore in every valley. Wool, tar, timber, and a trade network that reaches Baghdad in one direction and Newfoundland in the other."
+ },
  "population": 1500000,
  "price_index": 1.4,
  "starting_techs": [
