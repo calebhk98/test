@@ -1321,15 +1321,37 @@ class Sim:
         # commit message.
         rem = self.civ.get("handicap_remedies") or {}
         n = self.nodes[k]
-        f = 1.0
-        for key in (n.get("cat"), ) + tuple(n.get("traits") or ()):
-            if key not in mults:
-                continue
+
+        def mult(key):
             m = float(mults[key])
             r = rem.get(key)
             if isinstance(r, dict) and r.get("node") in self.done:
                 m = float(r.get("residual", 1.0))
-            f *= m
+            return m
+
+        # THE CATEGORY IS THE CRAFT; THE TRAITS ARE WHAT IT IS FOR, and treating
+        # them as equals inverted the whole system. Every matching key used to be
+        # multiplied together, so a longship - category `ships`, which the Norse
+        # file scores 0.60, the best in Europe - also carried its `infrastructure`
+        # trait at 1.80 and `commerce` at 1.10, and came out at 1.19. Measured
+        # across the tree before this fix: all 20 ship nodes, 48 of 50 marine
+        # nodes and all 19 navigation nodes cost the Norse MORE than they cost
+        # Rome. The one thing that civilisation is famous for was its worst
+        # domain, and the file said the opposite.
+        #
+        # What a thing takes to build is its craft. What it is used for should
+        # colour that, not overwhelm it, so traits apply at a damped exponent
+        # when the craft is known and at full weight when it is not.
+        cat = n.get("cat")
+        traits = [t for t in (n.get("traits") or ()) if t in mults]
+        if cat in mults:
+            f = mult(cat)
+            for t in traits:
+                f *= mult(t) ** 0.25
+            return f
+        f = 1.0
+        for t in traits:
+            f *= mult(t)
         return f
 
     def standing_floor(self):
@@ -2527,10 +2549,20 @@ class Sim:
         n = self.nodes[k]
         if n["tier"] > 2:
             return False
-        if n["cat"] not in ("glass_optics", "metallurgy", "precision", "power",
-                            "agriculture", "information", "instruments"):
-            return False
-        return all(p in self.done for p in n["pre"])
+        # THE ALLOW-LIST IS ROME'S CRAFTS, and it was applied to everybody. A
+        # Norse tester was refused a bounty on `sea_skeleton_first` -
+        # shipbuilding - by a civilisation whose own profile marks ships as the
+        # thing it is best at in the world, and told "a Roman artisan could not
+        # recognise success at this". So the list is now a floor, not the whole
+        # rule: anything this society is measurably GOOD at (its own cost
+        # multipliers say so) can be recognised by its own craftsmen, whatever
+        # Rome's craft categories happen to be.
+        if n["cat"] in ("glass_optics", "metallurgy", "precision", "power",
+                        "agriculture", "information", "instruments"):
+            return all(p in self.done for p in n["pre"])
+        if self.civ_cost_factor(k) < 0.95:
+            return all(p in self.done for p in n["pre"])
+        return False
 
     def post_bounty(self, k):
         """Pay well over the odds, save 65% of your own hours, gain visibility."""
@@ -4613,7 +4645,17 @@ def _node_explain(s, nodes, k):
                  "civ_domain_factor": round(s.civ_cost_factor(k), 3),
                  "material_distance_factor": round(s.material_cost_factor(k), 3),
                  "opposition_factor": round(s.opposition_factor(k), 3),
-                 "price_index": round(s.money_real, 3),
+                 # THE FACTOR ACTUALLY MULTIPLIED IN, not a decoy. This field
+                 # was filled with money_real while project_cost multiplies by
+                 # cost_money_factor(), which is price_index. For Norse, whose
+                 # prices are 1.4x Roman, the breakdown printed 1.0 here and
+                 # hid its largest term: a tester checked seven nodes, found the
+                 # total was 1.4000x the product of the parts every time, and
+                 # reasonably called it an undisclosed overhead multiplier. A
+                 # breakdown offered as the explanation of a total has to
+                 # reconcile with it, or it is worse than no breakdown.
+                 "price_index": round(s.cost_money_factor(), 3),
+                 "purchasing_power_of_the_coin": round(s.money_real, 3),
                  # The same figure the project will be billed, and must actually
                  # have paid in full before it can complete.
                  "total": round(s.project_cost(k), 1)},
@@ -4849,8 +4891,14 @@ def _agent_dispatch(s, nodes, cmd):
             missing = [p for p in n["pre"] if p not in s.done]
             if missing:
                 return {"ok": False, "error": "missing prerequisites: " + ", ".join(missing)}
-            return {"ok": False, "error": "not bounty-eligible (tier %d, category %s): a Roman "
-                                          "artisan could not recognise success at this" % (n["tier"], n["cat"])}
+            return {"ok": False,
+                    "error": "not bounty-eligible (tier %d, category %s): a craftsman "
+                             "in %s could not recognise success at this without "
+                             "understanding the theory, so there is nothing to "
+                             "award the prize for. A bounty works where the craft "
+                             "already exists here and success is visible."
+                             % (n["tier"], n["cat"],
+                                s.civ.get("name", "this society"))}
         price = (nodes[k]["_total_cost"] * 2.5 * s.civ_cost_factor(k)
                  * s.material_cost_factor(k) * s.cost_money_factor())
         if not s.post_bounty(k):
@@ -5418,7 +5466,7 @@ def cmd_why(a):
                 "power", "agriculture", "information", "instruments"))
     print("Bounty          : %s" % ("YES, can be bought as a public prize for about %s den"
                                     % f"{n['_total_cost'] * 2.5:,.0f}" if eligible else
-                                    "no, a Roman artisan could not recognise success"))
+                                    "no, a local craftsman could not recognise success"))
     print()
     print("DIRECT PREREQUISITES")
     for p_ in n["pre"] or ["(none, you can start this on arrival)"]:
