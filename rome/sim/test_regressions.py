@@ -1389,6 +1389,38 @@ _su, _, _ = proto([{"cmd": "state"}])
 check("no dead field is reported every turn as though it were a mechanic",
       "suspicion" not in _su[0], [k for k in _su[0] if "susp" in k])
 
+# --- the playtest-notes sweep -------------------------------------------------
+# S1: every capital loss was written `capital *= x`, which is sign-blind. At
+# minus a thousand denarii a sacking multiplied the DEBT by 0.4 and PAID the
+# player six hundred, which made the deepest hole in the game the safest place
+# to stand. Caught live twice in the notes: a Mexica sack -251 -> -100.5, an
+# England thatch fire -629.2 -> -569.4.
+s = sim()
+s.capital = -1000.0
+_gave = s.lose_capital(0.60)
+check("a catastrophe never pays off a debt",
+      s.capital == -1000.0 and _gave == 0.0,
+      "capital %.1f, took %.1f" % (s.capital, _gave))
+s.capital = 1000.0
+s.lose_capital(0.60)
+check("a catastrophe still takes its share of what you actually have",
+      abs(s.capital - 400.0) < 1e-6, "%.1f" % s.capital)
+
+# A1: hours_effective_this_year was `per - refunded`, and `per` is what was
+# OFFERED, which may exceed what the project had left. The refunds are capped at
+# spent_hours; this line was not, so a project reported 387.2 effective hours a
+# year for four years while founder_hours_left never moved.
+s = _starved(9e5)
+_before_left = s.active["identity_cover"]["ph_left"]
+s.step()
+_st3 = s.active.get("identity_cover") or {}
+check("hours reported as effective are hours that actually came off the work",
+      _st3.get("hours_effective_this_year", 0)
+      <= _before_left - _st3.get("ph_left", 0) + 1e-6,
+      "reported %.1f, actually %.1f"
+      % (_st3.get("hours_effective_this_year", -1),
+         _before_left - _st3.get("ph_left", 0)))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

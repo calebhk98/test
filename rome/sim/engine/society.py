@@ -388,6 +388,26 @@ class SocietyMixin:
         out.sort(key=lambda e: not e["can_begin_now"])
         return out
 
+    def lose_capital(self, fraction, floor_at_zero=True):
+        """Destroy a fraction of what you HAVE. Never a fraction of what you owe.
+
+        Every capital loss in this file used to be written `self.capital *= x`,
+        which is sign-blind: at minus a thousand denarii a sacking multiplied
+        the DEBT by 0.4 and handed the player six hundred denarii. A sweep of
+        the playtest notes caught it live twice - a Mexica sack took -251 to
+        -100.5, an England thatch fire took -629.2 to -569.4 - which made the
+        deepest hole in the game the safest place to stand, and made every
+        catastrophe a reason to stay in arrears.
+
+        A fire destroys goods. If you own nothing, the fire takes nothing; it
+        does not pay off your creditors.
+        """
+        if self.capital <= 0:
+            return 0.0
+        lost = self.capital * max(0.0, min(1.0, fraction))
+        self.capital -= lost
+        return lost
+
     def _shocks(self, yr):
         """Dated catastrophes, read from the CIVILIZATION file.
 
@@ -415,8 +435,7 @@ class SocietyMixin:
                 # message reading "staff -45%", and reasonably concluded the
                 # accounts were broken. A plague empties the market as well as
                 # the workshop; that is real, and it has to be said.
-                cash = self.capital * loss * 0.6
-                self.capital -= cash
+                cash = self.lose_capital(loss * 0.6)
                 self.log.append((yr, "%s: staff -%d%%, and %s denarii gone with "
                                      "the trade that stopped%s"
                                  % (h.get("name", "hazard"), loss * 100,
@@ -430,7 +449,7 @@ class SocietyMixin:
                     self.log.append((yr, "%s: an attack comes to nothing (%s)"
                                      % (h.get("name", "crisis"), "; ".join(why[:3]))))
                 if r.random() < p:
-                    self.capital *= 0.40
+                    self.lose_capital(0.60)
                     self.artisans *= 0.55; self.scholars *= 0.55
                     self.directors_extra *= 0.65
                     for k in sorted(self.active):
@@ -484,7 +503,7 @@ class SocietyMixin:
                 relief, why = self.hazard_relief("real_erosion")
                 self.money_real *= (1 - h["real_erosion"])
                 bite = h["real_erosion"] * 0.85 * relief
-                self.capital *= (1 - bite)
+                self.lose_capital(bite)
                 if not getattr(self, "_said_debasement", 0) or yr - self._said_debasement >= 15:
                     self._said_debasement = yr
                     self.log.append((yr, "%s: the coin is worth %d%% less than it was%s"
@@ -545,14 +564,14 @@ class SocietyMixin:
             self.capital -= 800
             self.log.append((yr, "your patron dies; his heir must be courted afresh"))
         if r.random() < 0.03:
-            self.capital *= 0.82
+            self.lose_capital(0.18)
             # An insula is a Roman tenement block, and a tester playing Han China
             # counted nine fires in the insula district of Luoyang in a hundred
             # years. Every civilization file names its own quarter.
             self.log.append((yr, "fire in the %s"
                              % self.civ.get("fire_quarter", "crowded quarter")))
         if r.random() < 0.02:
-            self.capital *= 0.9
+            self.lose_capital(0.10)
             self.log.append((yr, "banditry or a frontier war disrupts supply"))
 
     def _catastrophe(self, why):

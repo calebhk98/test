@@ -862,7 +862,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 self.total_spend += money
                 st["spent"] += money
                 st["cost_left"] = max(0.0, st["cost_left"] - money)
-                st["hours_effective_this_year"] = round(max(0.0, per - refunded), 1)
+                # spent_hours, NOT per. `per` is what was OFFERED, and it is
+                # allowed to exceed the hours the project actually had left; the
+                # refunds above are capped at spent_hours for exactly that
+                # reason, and this line was left uncapped. A sweep of the
+                # playtest notes found a project reporting 387.2 effective hours
+                # a year for four consecutive years while founder_hours_left sat
+                # unchanged at 112.8 - work reported that provably did not
+                # happen, about the one resource the whole game is built on.
+                st["hours_effective_this_year"] = round(max(0.0, spent_hours - refunded), 1)
                 hours_effective_total += st["hours_effective_this_year"]
                 # Count it HERE, after the hired-hours scaling and the
                 # affordability clamp, not before them. Accumulating the
