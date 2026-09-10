@@ -46,7 +46,14 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.pop_scale = max(0.05, float(self.civ.get("population", 65e6)) / 65e6)
         self.year = self.cfg["start_year"]
         c = self.cfg
-        self.capital = float(c["start_capital"])
+        # AT THIS SOCIETY'S PRICES, like everything else you will spend it on.
+        # The kits are quoted in Rome 100 AD denarii, and once revenue and
+        # living costs started converting (see economy.living_cost) leaving the
+        # purse flat meant "four hundred denarii" bought a third more months of
+        # bread in Luoyang than in Scandinavia, silently, for no modelled
+        # reason. A kit is "a few months' subsistence", and a few months'
+        # subsistence costs what it costs where you are.
+        self.capital = float(c["start_capital"]) * self.price_index
         self.done = set()
         self._done_seq = None
         self.training = []        # [[artisan_capacity, year_it_matures], ...]
@@ -694,7 +701,17 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # forgiven at completion. Now that the bill has to be paid, the
                 # same heuristic commits the household to more than it can ever
                 # fund, the creditors halt everything, and the spend is lost.
-                fixed = self.upkeep() + self.living_cost() + self.mine_operating_cost()
+                # INTEREST IS A FIXED COST, and leaving it out is how a
+                # household in arrears decides it has a surplus. A Rome run
+                # paying 552 a year of interest computed its five years of
+                # headroom as though that money did not exist, committed
+                # against it, and went from -369 to -7,827 in twenty-five
+                # years - then bled for four centuries. Every other net in this
+                # program was taught to count arrears; this one was missed
+                # because it is not a net, it is a budget.
+                fixed = (self.upkeep() + self.living_cost()
+                         + self.mine_operating_cost()
+                         + max(0.0, -self.capital) * self.debt_interest_rate())
                 room = (max(0.0, self.capital) + self.credit_limit() * 0.5
                         + max(0.0, self.revenue() - fixed) * 5.0
                         - sum(st.get("cost_left") or 0.0 for st in self.active.values()))

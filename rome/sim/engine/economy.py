@@ -98,7 +98,24 @@ class EconomyMixin:
         # a few denarii was declared insolvent, settled, and then declared
         # insolvent again the next year, for ever.
         floor = self.living_cost() + self.upkeep() * 0.5
-        return max(base, floor) * self.price_index
+        # AND BOUNDED BY WHAT YOU CAN SERVICE. A senatorial patron adds fifteen
+        # thousand to the line whoever you are, so a household with 1,800 of
+        # revenue could owe 23,000 - about 1,500 a year in interest against
+        # 1,800 of income. That is not a credit line, it is a trap with a
+        # patron's name on it, and every Rome run walked into it: five hundred
+        # years in arrears, the debt compounding faster than the practice could
+        # ever repay, with the optimizer and the player equally helpless.
+        #
+        # A patron will stand behind you; no lender advances more than your
+        # income can carry, however grand your friends. Five years of turnover
+        # on top of the running tab everyone gets - turnover and not margin,
+        # because much of what this model calls living costs is discretionary
+        # display a ruined man stops paying, and a lender knows it. Five is
+        # chosen to leave the OPENING where it was: a founder with a practice
+        # and nothing else could always just reach a respectable cover
+        # identity, and that is the first real decision in the game.
+        serviceable = floor + max(0.0, self.revenue()) * 5.0
+        return max(min(base, serviceable), floor) * self.price_index
 
     def shed_loss_makers(self, yr):
         """In arrears, stop maintaining anything that costs more than it returns.
@@ -1429,6 +1446,21 @@ class EconomyMixin:
         if self.has("patron_senatorial"):  status += 900 * px
         if self.has("patron_imperial"):    status += 2500 * px
         status += max(0.0, self.capital) * 0.015      # you cannot look poor and rich
+        # A RUINED MAN STOPS KEEPING UP APPEARANCES. This was unconditional and
+        # there was no way to shed it: a Rome run sat at 1,343 of revenue
+        # against 1,391 of living costs, of which 1,100 was the standing upkeep
+        # of a citizenship and a senatorial patron it could no longer afford,
+        # and bled 741 a year for sixty-four years with no lever anywhere. That
+        # is not what happens. You stop giving games, you dismiss the
+        # household, you are seen at fewer dinners - and everyone notices,
+        # which is what the reputation floor is already for.
+        #
+        # You spend on appearances out of what is left after eating; never more
+        # than the nominal figure, and never so much that the appearances
+        # themselves starve you.
+        room = max(0.0, self.revenue() - base - household - tax
+                   - self.upkeep() - self.wage_bill())
+        status = min(status, room * 0.75 + max(0.0, self.capital) * 0.015)
         return base + household + tax + status + self.wage_bill()
 
     HOURS_PER_PERSON_YEAR = 2000.0   # prices.json: a 10-hour day, 250 days, less feasts
