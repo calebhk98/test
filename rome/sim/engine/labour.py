@@ -323,8 +323,28 @@ class LabourMixin:
         """
         w = WAGES.get(trade)
         if w is None:
-            return 0.0, ("no such trade. you could work as: "
-                         + ", ".join(sorted(WAGES)))
+            here = sorted(t for t in WAGES if self.trade_available(t))
+            return 0.0, ("no such trade. you could work as: " + ", ".join(here))
+        # A TRADE NOBODY HERE PRACTISES IS A TRADE NOBODY HERE WILL PAY YOU FOR.
+        # A break tester earned wages as a chemist, an electrician and an
+        # engineer in 1500 Tenochtitlan, in the same session where `hire` had
+        # just refused all three ("there are no chemists to hire in this society
+        # at any price") and `labour` listed them under do_not_exist_here. The
+        # gate existed; this one command simply never applied it, and its own
+        # "no such trade" whitelist named the full civilisation-agnostic roster,
+        # which is what told the tester those jobs were available in the first
+        # place.
+        #
+        # The founder really does know chemistry - that is the premise. What he
+        # does not have is a customer. Wage labour is somebody else deciding
+        # your work is worth money, and there is nobody here to decide that
+        # until you have taught the trade, at which point trade_available()
+        # turns true and this opens by itself.
+        if not self.trade_available(trade):
+            return 0.0, ("nobody here will pay you to be a %s: the trade does "
+                         "not exist in this society, so there is no employer "
+                         "for it. Teach it first with train, or work at "
+                         "something they do recognise." % trade)
         hours = float(hours)
         if hours <= 0:
             return 0.0, "hours must be greater than zero"

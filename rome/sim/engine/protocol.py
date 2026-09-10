@@ -3,7 +3,7 @@
 One object per line in, one object per line out. It explains itself: there is
 no protocol document to read, on purpose.
 """
-import collections, json, math, os, random
+import collections, json, math, os, random, re
 from collections import defaultdict
 
 from .data import *          # the shared tables and loaders
@@ -77,7 +77,16 @@ def _agent_state(s, nodes, cmd=None):
         # rent, tax and keeping up appearances, which the model has always
         # charged and never showed. Anything that moves your money should be
         # visible in the state that claims to describe your money.
-        "living_cost": round(s.living_cost(), 1),
+        # SPLIT, because one number under this name was two things. A break
+        # tester proved `state.living_cost` was living_and_appearances PLUS the
+        # entire payroll (224.9 + 884.2 = 1109.1, to the decimal), while `money`
+        # reported those as two separate lines - the same quantity labelled two
+        # incompatible ways by two commands in one program, and the misleading
+        # label was on `state`, which the welcome text calls one of "the four
+        # you need first". A player watching only `state` after hiring would
+        # read their own payroll as their cost of living spiralling.
+        "living_cost": round(s.living_cost() - s.wage_bill(), 1),
+        "wage_bill": round(s.wage_bill(), 1),
         "mine_operating_cost": round(s.mine_operating_cost(), 1),
         # net_per_year counts the STANDING flows only. It never counted what
         # projects consume, which is usually the largest outflow by far, so a
@@ -746,8 +755,13 @@ def render_state(out):
         L.append("IN DEBT BONDAGE: %s years left owing %s den"
                  % (_fmt_num(out["in_bondage_for_debt"]), _fmt_num(out.get("debt_still_to_work_off"))))
 
-    L.append("You: %s, %s founder-hours free this year"
+    # WHETHER YOU AGE IS A FACT ABOUT THE GAME YOU ARE PLAYING, and the human
+    # rendering did not carry it: a mortal run and an immortal one looked
+    # identical here, though the menu asks you to choose between them and one
+    # of them ends with everything you have not made permanent dying with you.
+    L.append("You: %s%s, %s founder-hours free this year"
              % ("alive" if out.get("founder_alive") else "DEAD",
+                " and ageing" if out.get("founder_ages") else " (you do not age)",
                 _fmt_num(out.get("founder_hours_available"))))
 
     active = out.get("active") or {}
@@ -1135,6 +1149,60 @@ _RENDERERS = {
 }
 
 
+# A REPLY IS FULL OF WORKED EXAMPLES, and until now every one of them was
+# JSON: 'more: knowledge_risk -> {"cmd":"risk"}'. That is exactly right when a
+# script is reading, and exactly wrong in front of a person who has just been
+# told to type words. The JSON payload itself must not change - it is the
+# protocol - so the translation happens here, on the rendered text only, and
+# only when the caller says the reader is typing.
+TYPED_HINTS = False
+
+
+def _typed_form(obj):
+    """One command dict written the way a person would type it."""
+    op = obj.get("cmd")
+    if not op:
+        return None
+    bits = [str(op)]
+    if op == "policy" and isinstance(obj.get("set"), dict):
+        for k, v in obj["set"].items():
+            bits += [str(k), "on" if v else "off"]
+        return " ".join(bits)
+    for key in ("id", "topic", "trade", "what", "material", "subject", "group",
+                "file", "path"):
+        if obj.get(key) not in (None, "", False):
+            bits.append(str(obj[key]))
+    for key, word in (("find", "find"), ("search", "find"), ("afford", "afford"),
+                      ("limit", "limit"), ("offset", "offset")):
+        if obj.get(key) not in (None, "", False):
+            bits += [word, _fmt_num(obj[key]) if key != "find" and key != "search"
+                     else str(obj[key])]
+    for key in ("years", "n", "hours", "amount"):
+        if obj.get(key) not in (None, "", False):
+            bits.append(_fmt_num(obj[key]))
+    if obj.get("all") is True:
+        bits.append("all")
+    if obj.get("full") is True:
+        bits.append("full")
+    return " ".join(bits)
+
+
+_JSON_HINT = re.compile(r'\{"cmd"\s*:\s*"[a-z_]+"(?:\s*,\s*"[a-z_]+"\s*:\s*'
+                        r'(?:"[^"]*"|-?[0-9.]+|true|false|\{[^{}]*\}))*\}')
+
+
+def to_typed_hints(text):
+    """Rewrite every {"cmd":...} example in rendered text as a typed command.
+    Best-effort: anything that will not parse is left exactly as it was."""
+    def sub(m):
+        try:
+            obj = json.loads(m.group(0))
+        except ValueError:
+            return m.group(0)
+        return _typed_form(obj) or m.group(0)
+    return _JSON_HINT.sub(sub, text)
+
+
 def render_pretty(op, resp):
     """The human rendering of one reply. Never touches stdout or the JSON
     itself - see cli.py, which prints this to stderr alongside the unchanged
@@ -1147,9 +1215,11 @@ def render_pretty(op, resp):
     """
     try:
         if isinstance(resp, dict) and resp.get("ok") is False:
-            return render_error(resp)
+            err = render_error(resp)
+            return to_typed_hints(err) if TYPED_HINTS else err
         fn = _RENDERERS.get((op or "").strip().lower(), render_generic)
-        return fn(resp)
+        out = fn(resp)
+        return to_typed_hints(out) if TYPED_HINTS else out
     except Exception as e:
         return "(could not render a readable view of this reply: %s: %s)" % (type(e).__name__, e)
 
@@ -1260,6 +1330,222 @@ KNOWN_COMMANDS = (
 )
 
 
+# ---------------------------------------------------------------------------
+# TYPED COMMANDS, for a person at a keyboard.
+#
+# Everything a player can do lived only in the JSON protocol above. `play` -
+# the human front door - understood six things: next year, available, status,
+# start, stop, quit. Money, hiring, teaching a trade, working for wages,
+# policy, the ledger, saving: a human could not reach any of it without
+# typing JSON at a prompt, and the menu's answer was to hand them
+# {"cmd":"available"} and wish them luck.
+#
+# So this is a parser and NOT a second implementation. It turns a typed line
+# into exactly the dict the JSON protocol takes, and hands it to the same
+# _agent_dispatch below. There is one command set, one set of rules, and one
+# place a new command has to be added. A typed game and a scripted game
+# cannot disagree about what the game is, because underneath they are the
+# same call.
+# ---------------------------------------------------------------------------
+
+# What a person types on the left, the protocol's own name on the right. The
+# single letters are the ones `play` has always used, kept because the older
+# notes and anyone who has played before will still type them.
+TYPED_ALIASES = {
+    "s": "state", "st": "state", "status": "state",
+    "a": "available", "av": "available", "options": "available",
+    "n": "step", "next": "step", "wait": "step", "year": "step",
+    "x": "stop", "abandon": "stop", "cancel": "stop",
+    "q": "quit", "exit": "quit", "bye": "quit",
+    "h": "help", "?": "help", "commands": "help",
+    "ledger": "money", "accounts": "money", "cash": "money",
+    "hazards": "risk", "risks": "risk",
+    "people": "labour", "staff": "labour", "workers": "labour",
+    "dismiss": "fire", "sack": "fire", "lay": "fire",
+    "job": "commission", "hireout": "commission",
+    "teach": "train", "learn": "train",
+    "price": "quote", "cost": "quote",
+    "shut": "close", "closemine": "close", "close_mine": "close",
+    "begin": "start", "research": "start", "build": "start",
+    "explain": "why", "look": "why", "inspect": "why",
+    "route": "path", "plan": "path",
+}
+
+
+def _typed_number(tok):
+    """The token as a number, or None. Tolerates 1,000 and 1_000 because
+    people type both, and a thousand-separator is not a syntax error."""
+    try:
+        return float(str(tok).replace(",", "").replace("_", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def parse_typed(line):
+    """One typed line -> (command dict, None), or (None, a refusal to show).
+
+    Returns (None, None) for a blank line: nothing to do and nothing to say.
+    """
+    if line is None:
+        return None, None
+    text = line.strip()
+    if not text:
+        return None, None
+    # A player who has read the JSON docs, or pasted from their own notes,
+    # should not be told their own game's protocol is a syntax error.
+    if text.startswith("{"):
+        try:
+            obj = json.loads(text)
+        except ValueError as e:
+            return None, "that looked like JSON but would not parse: %s" % e
+        if isinstance(obj, dict) and "cmd" in obj:
+            return obj, None
+        return None, "a JSON command needs a 'cmd' field."
+
+    parts = text.split()
+    head = parts[0].lower()
+    rest = parts[1:]
+    op = TYPED_ALIASES.get(head, head)
+    if op not in KNOWN_COMMANDS:
+        near = [c for c in KNOWN_COMMANDS if c.startswith(head[:3])]
+        return None, ("no command called %r. Type 'help' for the list%s."
+                      % (head, (", or did you mean: " + ", ".join(near)) if near else ""))
+
+    words = [w for w in rest if _typed_number(w) is None]
+    nums = [_typed_number(w) for w in rest if _typed_number(w) is not None]
+
+    if op in ("money", "risk", "quit"):
+        return {"cmd": op}, None
+
+    if op == "state":
+        return {"cmd": "state", "full": bool(rest and rest[0].lower() == "full")}, None
+
+    if op == "available":
+        # 'available' alone is the digest. The rest are the same narrowings the
+        # digest itself suggests, spelled the way a person would say them:
+        #   available metallurgy      available find furnace
+        #   available afford 900      available all
+        #   available limit 30 offset 30
+        out = {"cmd": "available"}
+        low = [w.lower() for w in rest]
+        i = 0
+        while i < len(low):
+            w = low[i]
+            nxt = low[i + 1] if i + 1 < len(low) else None
+            if w == "all":
+                out["all"] = True
+            elif w in ("find", "search", "named") and nxt:
+                out["find"] = nxt; i += 1
+            elif w in ("afford", "under", "within") and nxt is not None:
+                out["afford"] = _typed_number(nxt) or 0; i += 1
+            elif w == "limit" and nxt is not None:
+                out["limit"] = int(_typed_number(nxt) or 0); i += 1
+            elif w == "offset" and nxt is not None:
+                out["offset"] = int(_typed_number(nxt) or 0); i += 1
+            elif _typed_number(w) is not None:
+                out["afford"] = _typed_number(w)
+            else:
+                # A bare word is a subject: 'available metallurgy'. Subjects are
+                # several words long ("roads, bridges and canals"), so take the
+                # whole tail rather than one token.
+                out["subject"] = " ".join(rest[i:])
+                break
+            i += 1
+        return out, None
+
+    if op == "help":
+        return {"cmd": "help", "topic": (rest[0].lower() if rest else None)}, None
+
+    if op == "step":
+        # A bare 'n' is one year, which is what it has always meant.
+        return {"cmd": "step", "years": (nums[0] if nums else 1)}, None
+
+    if op in ("why", "path", "start", "stop", "bounty", "mothball", "restore"):
+        if not rest:
+            return None, ("%s needs the name of a technology, e.g. '%s "
+                          "fud_wheelbarrow'. 'available' lists what you can "
+                          "begin now." % (op, op))
+        return {"cmd": op, "id": rest[0]}, None
+
+    if op == "bribe":
+        if not nums:
+            return None, "bribe needs an amount, e.g. 'bribe 500'."
+        return {"cmd": "bribe", "amount": nums[0]}, None
+
+    if op == "labour":
+        return {"cmd": "labour", "trade": (words[0].lower() if words else None)}, None
+
+    if op in ("hire", "fire"):
+        if not words:
+            return None, ("%s needs a trade, e.g. '%s smith 2'. 'labour' lists "
+                          "which trades exist here." % (op, op))
+        return {"cmd": op, "trade": words[0].lower(),
+                "n": (nums[0] if nums else 1)}, None
+
+    if op in ("work", "commission"):
+        if not words:
+            return None, ("%s needs a trade and a number of hours, e.g. "
+                          "'%s smith 200'." % (op, op))
+        if not nums:
+            return None, "%s needs a number of hours, e.g. '%s %s 200'." % (op, op, words[0])
+        return {"cmd": op, "trade": words[0].lower(), "hours": nums[0]}, None
+
+    if op == "train":
+        # 'train smith 2' and 'train smith 2 from labourer' both read naturally.
+        src_trade = None
+        low = [w.lower() for w in words]
+        if "from" in low:
+            i = low.index("from")
+            if i + 1 < len(low):
+                src_trade = low[i + 1]
+            low = low[:i]
+        if not low:
+            return None, ("train needs a trade to teach, e.g. 'train smith 2' "
+                          "or 'train chemist 1 from artisan'.")
+        out = {"cmd": "train", "trade": low[0], "n": (nums[0] if nums else 1)}
+        if src_trade:
+            out["from"] = src_trade
+        return out, None
+
+    if op in ("buy", "quote"):
+        if not words:
+            return None, ("%s needs something to %s, e.g. '%s iron 500'."
+                          % (op, op, op))
+        out = {"cmd": op, "what": words[0].lower()}
+        if nums:
+            out["n"] = nums[0]
+        return out, None
+
+    if op == "close":
+        if not words:
+            return None, "close needs a mine, e.g. 'close iron'."
+        return {"cmd": "close", "what": words[0].lower()}, None
+
+    if op == "policy":
+        if not rest:
+            return {"cmd": "policy"}, None
+        if len(rest) < 2:
+            return None, ("to change one, say which and whether, e.g. "
+                          "'policy auto_hire off'. Bare 'policy' lists them.")
+        val = rest[1].lower()
+        if val in ("on", "true", "yes", "y", "1"):
+            flag = True
+        elif val in ("off", "false", "no", "n", "0"):
+            flag = False
+        else:
+            return None, "say 'on' or 'off', e.g. 'policy auto_hire off'."
+        return {"cmd": "policy", "set": {rest[0].lower(): flag}}, None
+
+    if op in ("save", "load"):
+        if not rest:
+            return None, "%s needs a file name, e.g. '%s mygame.json'." % (op, op)
+        return {"cmd": op, "file": rest[0]}, None
+
+    # Any command added to KNOWN_COMMANDS that this parser has not been taught
+    # about still reaches the dispatcher rather than being refused here.
+    return {"cmd": op}, None
+
+
 def _agent_dispatch(s, nodes, cmd):
     if not isinstance(cmd, dict) or "cmd" not in cmd:
         return {"ok": False, "error": "each line must be a JSON object with a 'cmd' field, "
@@ -1313,10 +1599,17 @@ def _agent_dispatch(s, nodes, cmd):
 
     if op == "path":
         if getattr(s, "fog", False):
+            # THE REASON HAS TO BE THE REAL ONE. This said "you have not
+            # discovered this" for every id, including ones the player had
+            # already finished and could see `done: true` on in the same
+            # session. A player debugging that would go looking for a corrupt
+            # save. The command is switched off wholesale under fog, which is a
+            # different fact and the true one.
             return {"ok": False,
-                    "error": "you cannot plan a route to something you have not "
-                             "discovered. Nobody can tell you what a thing requires "
-                             "until you know the thing exists. Use 'available' to see "
+                    "error": "route planning is switched off under fog of war: "
+                             "nobody can lay out a road to somewhere they have "
+                             "not been, whether or not you have built this "
+                             "particular thing already. Use 'available' to see "
                              "what you could begin now."}
         k = cmd.get("id")
         if k not in nodes:
@@ -1676,11 +1969,24 @@ def _agent_dispatch(s, nodes, cmd):
                     "auto_mine": "sink a mine when a mineral is holding work up",
                     "auto_forest": "buy coppice when charcoal is holding work up",
                     "auto_mothball": "stop working mines you cannot pay for",
-                    "auto_shed": "let go of works that cost more than they return",
                     "auto_bribe": "pay your way out of a scandal before it kills you",
+                    "auto_shed": "let go of WORKS that cost more than they return "
+                                 "(this is about buildings and practices, not people)",
                 },
                 "note": "Anything switched off here you can still do by hand: hire, "
-                        "train, buy, commission, mothball, restore, bribe."}
+                        "train, buy, commission, mothball, restore, bribe.",
+                # A break tester read the note above as covering everything the
+                # game ever does without being asked, switched auto_shed off,
+                # and lost their whole staff anyway. The note was too broad and
+                # they were entitled to read it that way. A policy is something
+                # the game DECIDES for you; a consequence is the world answering
+                # a decision you already made, and no switch turns those off.
+                "not_policies": "Some things are consequences, not automation, "
+                                "and there is no switch for them: people you "
+                                "cannot pay leave, mines you cannot pay for stop "
+                                "being worked once your credit is gone, and "
+                                "creditors take what they are owed. Those follow "
+                                "from having no money, not from a setting."}
 
     if op in ("save", "load"):
         path = cmd.get("file") or cmd.get("path")
@@ -1719,6 +2025,15 @@ def _agent_dispatch(s, nodes, cmd):
             years = int(raw_years)
         except (TypeError, ValueError):
             return {"ok": False, "error": "years must be an integer"}
+        # 0.999 was rejected and 1.99 was silently floored to one year, which is
+        # the worst pair of answers to give: the boundary is invisible and the
+        # accepted side quietly does something other than what was asked. A
+        # calendar advances in years; say so, rather than rounding on the
+        # player's behalf and calling it "accepted".
+        if float(raw_years) != years:
+            return {"ok": False,
+                    "error": "years must be a whole number of years; %r is not. "
+                             "Nothing was changed." % raw_years}
         if years < 1:
             return {"ok": False, "error": "years must be >= 1"}
         # A tester sent 100000 and the run silently ended. Nothing is gained by

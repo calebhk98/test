@@ -319,12 +319,529 @@ needed generically as "craftsmen") looks like the next real bottleneck, not mone
 NEXT: check `labour` command for hiring costs and hire artisans before doing anything
 else, since so much of the tree is gated on headcount rather than cash.
 
-EXPECTATION: Given the Spanish invasion window starts in just 19 years (1500->1519),
-and sack chance is currently 90% even "after what I have built" (meaning baseline
-mitigation is already priced in and is small), my main early strategic goal should be
-racing to build hedges against these two catastrophes (walls/firearms/allies/copies of
-work for the invasion; clean water/quarantine/inoculation for the epidemic) rather than
-pure economic growth, since losing 80-100% of staff and having a 90% sack chance sounds
-like it could wipe out most progress. I'll try to verify this by reading `why` on
-relevant-sounding available techs before committing money in the early game.
+## Turn 12: 1511 -- hiring staff is the biggest single unlock so far
+
+EXPECTATION: several new "HEARD OF" items were blocked on "needs N trained craftsmen
+on your own staff, you have 0.0", with the game's own suggested remedy being
+`{"cmd":"hire","trade":"smith","n":3}`. I expected hiring artisans to unlock some of
+those specific items, but did not expect it to be bigger than the scientific_method
+unlock.
+
+ACTUAL: `{"cmd":"hire","trade":"smith","n":3}` (112 den/yr each, so ~403 den/yr wages
+including some day-one proration) unlocked an ENORMOUS jump: `available` went from
+72 startable items to **244**, with whole new subjects appearing that were not listed
+at all before (textiles 61 items, transport-in-depth 31, construction 16, metallurgy 9,
+power stations 3, etc.). This was a far bigger unlock than either identity_cover or
+scientific_method. LESSON: under fog of war, plain cash was never the binding
+constraint for most of the tree -- headcount was. A careful player should hire staff
+very early, probably before pouring money into more finance techs, since "0 employees"
+silently hides the majority of the visible game. Nothing in the earlier UI signalled
+how large this gate was in advance (each blocked item just said "needs 1/2/3 trained
+craftsmen", not "unlocks 170 further items").
+
+Searched `available find` for "wall", "quarantine", "gun", "cannon", "fort" again after
+this unlock: still nothing for any of them except "water" (chorobates, latrines,
+flush toilets, and now also `tr_watertight_bulkhead`, a ship part, cost 223 den) --
+none of these looked like they addressed the epidemic or invasion hazards directly by
+name. The hedges the risk text promises ("clean water, quarantine... walls, firearms,
+powerful friends") are still not visible 11 years in, 8 years before the Spanish
+invasion window opens. This is a real concern for a fog-of-war playthrough: I cannot
+tell whether I am one unlock away from finding them or many, and the clock (1519) does
+not wait.
+
+## Turn 13-16: 1511 -> 1515 -- a probable bug: `patron_local` progress resets to zero
+
+EXPECTATION: `patron_local` (960 den, 400 founder-hours, 0.5yr calendar floor) should
+complete within roughly a year or two given I have 2,400 free founder-hours/yr and
+nothing else was running concurrently against it.
+
+ACTUAL, tracked via `{"cmd":"state","full":true}"` (which under `--pretty` also prints
+the raw JSON on stdout, letting me see machine fields not shown in the text rendering):
+started turn 10 (1509). By 1512 it was reported "60% of your hours spent... waiting on
+your hours" and stayed frozen at exactly that 60% for 1512 AND 1513 (two full
+`step years:1` calls) despite the raw JSON showing, in 1513:
+```
+"patron_local": {"founder_hours_left": 160.0, "founder_hours_total": 400.0,
+ "years_in_progress": 0.0, "spent": 960.0, "still_to_pay": 0.0,
+ "waiting_on": "your hours", "hours_offered_this_year": 400.0,
+ "hours_effective_this_year": 400.0, "underfunded_this_year": false}
+```
+i.e. it says 400 of my hours were BOTH offered AND effective that year, yet
+`founder_hours_left` (160) did not move at all from the prior check. Then in 1515,
+after another step, the raw JSON showed:
+```
+"patron_local": {"founder_hours_left": 400.0, "founder_hours_total": 400.0,
+ "years_in_progress": 1.0, "spent": 960.0, "still_to_pay": 0.0,
+ "waiting_on": "your hours", "hours_offered_this_year": 400.0,
+ "hours_effective_this_year": 0.0, "underfunded_this_year": true}
+```
+i.e. `founder_hours_left` JUMPED BACK UP from 160 to the full 400 (progress fully
+erased) while simultaneously `hours_effective_this_year` dropped to 0 and
+`underfunded_this_year` flipped to true -- despite the human-readable text throughout
+showing "0 den still owed" (the 960 den was paid in full at the start and never
+refunded). The full 960 den stays spent either way.
+
+I cannot be certain whether this is a bug or an intentional-but-opaque "setback"
+mechanic (the item's own `why` text lists FAILURE RISK: 15%, and my best guess is this
+is exactly that risk landing -- a failed roll that wipes hour-progress without
+refunding money already committed, a genuinely harsh but at least legible design if so).
+What makes me suspect an actual bug rather than intended failure-risk flavour: the
+`hours_effective_this_year` field went from 400 (fully funded) directly to 0
+(`underfunded_this_year: true`) with nothing in between, right as my capital swung deep
+negative (-3,087 -> -3,823 den, driven by interest on arrears), which suggests the
+"underfunding" may be a cash-flow check against my (very negative) capital balance
+rather than a labour/skill check -- but I already had ample credit headroom
+(credit_limit ~5,600-5,900 den vs debt ~3,000-3,800 den) so by the numbers I should not
+have been "underfunded" by any plain reading of "credit limit". If being deep in debt
+silently stalls/reverses project progress even while under the stated credit limit,
+that is worth flagging clearly to the designers as either a bug or a very
+non-obvious rule that the UI does not explain anywhere I've found (`why`, `money`,
+`risk`, `policy`, `help` -- none of these mention debt stalling project hours).
+
+DECISION: since the 960 den is already fully spent regardless of whether I keep
+waiting or `stop` the project (stop only prevents further loss, and there is no
+further cost listed - `still_to_pay: 0.0`), I chose to leave it running and keep
+playing rather than abandon it, since the founder-hours it "occupies" (400 of 2,400)
+still leave 2,000/yr idle for other projects meanwhile.
+
+## Turn 17: 1515 -> 1516 -- the mystery resolves: this looks like a debt/credit-headroom mechanic, not a per-project bug
+
+Started a small, cheap `cn_quarrying_wedge` (90 den, 20 founder-hours, 0.1yr floor,
+revenue 50/yr) to use idle hours. After stepping, checked the raw JSON again: NOW BOTH
+`patron_local` and `cn_quarrying_wedge` show `hours_effective_this_year: 0.0` and
+`underfunded_this_year: true`, and critically the year-level summary shows
+`hours_this_year.effective_on_projects: 0.0` even though `offered_to_projects: 420.0`
+and `unused: 1980.0` -- i.e. EVERY project I have running got zero effective progress
+this year, not just the old one. At this point: capital -4,035 den, credit_limit 5,247
+den (so nominally 1,212 den of headroom left, well "under the limit").
+
+REVISED READING: I now believe this is not a per-project bug but a global
+"credit-crunch" mechanic -- once debt eats far enough into the gap between capital and
+credit_limit, ALL project hours stop being "effective" (even though they're still
+"offered"), so nothing progresses no matter how many idle founder-hours I have. The
+`money` ledger confirms how much this cost me: **"interest on arrears: 11% ... paid so
+far: 1,882"** den in cumulative interest alone, against a net income of only +195.2
+den/yr -- the interest bill has been eating a large share of my income, and debt
+actually GREW between checks (-3,823 -> -4,035) even with positive "net/yr", meaning
+interest was outpacing net income at that point. This looks like an intentional design
+lesson -- overleveraging early (I went from +400 den to -4,035 den by starting
+~1,264+960+267+160+90 den of projects back-to-back on credit) leads to a debt spiral
+where the credit system itself throttles you, not just your wallet. Nothing in `help
+money`, `why`, or `money` explicitly says "projects stall if your debt-to-credit-limit
+ratio gets too high" -- I only found this by comparing raw JSON across steps, which a
+player using only the human-readable text would likely not have been able to diagnose
+(the text just repeats "waiting on your hours" whether the true blocker is hours,
+money, or -- it turns out -- neither, but total leverage). This is the most important
+practical lesson of the playthrough so far: watch capital-vs-credit-limit headroom, not
+just the credit limit ceiling.
+
+DECISION: stop starting anything new; let net income pay debt down and see whether
+project effectiveness resumes once headroom improves.
+
+## Turn 18-20: 1516 -> 1519 -- fired all staff to fight the debt spiral, reached the invasion
+
+Fired all 3 (2.4 FTE) smiths (`{"cmd":"fire","trade":"smith","n":3}`) purely to cut the
+~272-282 den/yr wage bill, since the credit-crunch appeared to be stalling all project
+progress regardless of staff anyway. This worked as expected mechanically: net/yr
+jumped from 205.1 to 477.6 den/yr immediately, EMPLOY dropped to "0 people, 0 den/yr in
+wages". Debt very slowly started improving (-4,261 -> -4,210 -> -4,154 den across two
+more steps) but credit_limit kept shrinking in parallel (5,134 -> 5,024 -> 4,917),
+apparently tracking my declining reputation (which fell every single year from its
+peak of 26.3 in 1509 down to 20.8 by 1519, even though I did nothing to actively harm
+it -- looks like a slow natural decay of reputation/eminence-driven credit rather than
+anything I triggered). `cn_quarrying_wedge` and `patron_local` remained stuck at 0%
+hours-effective the whole time, confirming the credit-crunch theory: hours offered
+every year, never effective.
+
+One unexpected event fired: `EVENT 1518: IN ARREARS for 12 years: staff are leaving
+because you cannot pay them` -- this appeared AFTER I had already fired all my staff
+down to 0 the previous turn, so either it is a delayed/queued consequence from when I
+still had understaffed smiths during the crunch, or it is not actually tied to current
+headcount and just narrates the ongoing arrears situation generically. Confusing either
+way -- there was no one left on staff at that point for anyone to "leave."
+
+Reached 1519. `state` now shows **"HAPPENING NOW: Spanish invasion"** in the AHEAD
+section, and `risk`'s hazard entry switched its year tag from "[1519-1521]" to
+"[IN PROGRESS]". Sack chance is still stated as 90% (unchanged from the pre-invasion
+figure -- I found and built nothing that reduced it). I never found any wall, firearm,
+"powerful friend" (beyond the still-stuck patron_local), or backup-copy tech in the
+entire visible tree in 19 years of play, despite reaching 244 visible startable items
+at peak and deliberately searching `available find` for "wall", "fort", "gun",
+"cannon", "quarantine" repeatedly. Going into the invasion window completely
+unhedged. Current holdings at risk: 12 technologies built (expected loss 3.8 per
+sacking at current 80%/40% loss parameters), plus whatever my mismanaged
+finances/debt situation does under a shock.
+
+## Turn 21: 1519 -> 1520 -- the sack happens, and both stuck projects suddenly complete
+
+`step years:1` produced, in order:
+```
+COMPLETED 1519: Stone quarrying with wedge
+COMPLETED 1519: Secure a town patron
+EVENT 1519: Spanish invasion: a site is sacked
+EVENT 1519: Spanish invasion: the society's values are shifting (w_magic_fear now 0.32,
+  w_novelty now -0.29, w_religious_rigidity now 1.00)
+EVENT 1519: completed: Secure a town patron
+EVENT 1519: completed: Stone quarrying with wedge
+```
+SURPRISE #1: both of the long-stuck projects (`patron_local`, stuck since 1509 across
+multiple resets, and `cn_quarrying_wedge`, stuck since 1516) suddenly completed in the
+SAME step the invasion hit, with no action from me. This is consistent with my
+credit-crunch theory in one sense (my debt situation had been slowly recovering,
+-4,261 -> -4,210 -> -4,154 den over the prior 3 steps of zero new spending), but the
+exact-same-turn coincidence with the invasion is odd; I cannot rule out that the
+invasion event itself changed something (e.g. a forced resolution of pending projects,
+or the underlying "underfunded" gate finally clearing right as the war narrative fired)
+independent of my debt recovery.
+
+SURPRISE #2, the bigger one: capital JUMPED from -4,154 den to -1,727 den in a single
+step where `money` shows net/yr was only +305.8 and project spend was only 90 den (i.e.
+I'd expect roughly -4,154 + 306 - 90 = -3,938, not -1,727). That is an unexplained
+~2,211 den windfall landing in the exact same step as "a site is sacked." Also in that
+same step: credit_limit jumped from 4,917 to 7,755 den, and the interest rate DROPPED
+from 11% to 10%. My reputation also rose slightly (20.8 -> 22.9) despite nothing I did.
+**I cannot explain this from anything the game told me.** Best guesses, none confirmed:
+(a) getting sacked might force-write-off some debt as an in-fiction consequence
+("conquest cancels your debts to the old order" would be a very defensible piece of
+history, but nothing in the text said so); (b) completing `patron_local` might carry a
+one-time capital effect beyond its stated "0 den revenue" (its `why` text never
+mentioned a capital bonus); (c) this could be a step-ordering/accounting quirk where
+multiple large state changes (project completions + invasion event + interest tick) 
+landed in an order that produced a number I'm mis-attributing. Flagging as **unexplained,
+not confirmed bug or feature** -- a case where the program told me THAT something
+happened (the numbers) but not WHY, which is exactly the fog-of-war problem the
+exercise is testing for.
+
+SURPRISE #3: despite "sack chance: 90%" and the literal event text "a site is sacked",
+NO technology loss was reported anywhere (`technologies: 18 built by you` after the
+step, up from 16 only because the two stuck projects completed -- not down). `risk`
+afterward still shows "technologies at risk: 12" (unchanged) and no "lost N
+technologies" event appeared in the log. Since the hazard's own numbers say "chance
+lost IF a site is sacked: 80%, fraction lost when it happens: 40%", knowledge loss is
+apparently a second, separate roll from the sacking itself, and this time (whether by
+the game's dice or by some mitigation I'm not aware of) it seems I got the lucky ~20%
+outcome and lost no technologies from this pass. The invasion is a 1519-1521 window
+(3 years), not a single-year event, so this may not be over.
+
+## Turn 22: 1520 -> 1521 -- knowledge loss finally happens, and the "sack = debt relief" pattern repeats
+
+```
+EVENT 1520: Old World epidemics on contact: staff -80%
+EVENT 1520: Spanish invasion: a site is sacked
+EVENT 1520: KNOWLEDGE LOST: 3 technologies forgotten (the corpus was never printed and dispersed)
+```
+Lost `fin_mortgage` and `fin_brand` (both vanished from the `money` revenue breakdown)
+plus one more (technologies-built-by-me went 18 -> 15, "technologies at risk" 12 -> 9,
+consistent with exactly 3 lost as stated). The epidemic's "staff -80%" had nothing to
+bite on since I had already fired everyone (0 employees) -- so by accident, going
+into the epidemic with zero staff meant zero staff losses; whether that is a
+legitimate defensive strategy or a loophole I can't be sure, but it is worth recording:
+**having no employees makes you immune to the single worst-described hazard in the
+scenario ("the single most severe hazard of any civilization in this directory") purely
+because there is no staff to lose.**
+
+Capital AGAIN jumped far beyond what net income explains: -1,727 -> -324.3 den in one
+step (net income was only +252.4, no project spend), an unexplained ~+1,150 den on top
+of ordinary income, for the second time in two steps, both times landing on "a site is
+sacked" events. This makes me more confident (though still not certain, since I still
+have not seen the game say this outright) that **getting sacked forgives or writes off
+some of my debt in this engine** -- possibly narratively defensible (a conquest ending
+your obligations to the prior order) but never stated anywhere in `why`, `risk`,
+`money`, or `help`. If true, this is a strange incentive: the mechanic meant to
+represent catastrophic loss is, for a heavily-indebted player, financially a net
+positive. I'm flagging this explicitly as something the designers should check --
+either it's a real and intentional-but-undocumented interaction (debt owed to a
+regime that just got overthrown becomes uncollectable) or an accounting bug.
+
+## Where things stand at 1521 (invasion window closing, epidemic window still open to 1600)
+
+Capital -324 den, net +252/yr, credit limit 7,616 den (up from under 5,000 pre-invasion
+-- another data point for the "sack raises credit limit" pattern, alongside reputation
+22.3 and rising). 15 technologies of my own, 9 still "at risk". No employees. No hedge
+technology for either hazard was ever found under fog of war in 21 years of active
+searching. Next: check whether `arithmetic_positional` unblocked now that
+`patron_local` finally completed, and continue playing forward through the rest of the
+epidemic window and beyond.
+
+## Turn 23-24: 1521 -> 1522 -- the invasion window closes, `arithmetic_positional` finally reachable
+
+`arithmetic_positional` was STATUS: CAN START NOW as soon as `patron_local` finished --
+confirms its stated blocker ("get at least a local patron first") was exactly and only
+that. Started it (720 den) right as the last year of the invasion window (1521) played
+out:
+```
+EVENT 1521: Old World epidemics on contact: staff -80%
+EVENT 1521: Spanish invasion: a site is sacked
+EVENT 1521: KNOWLEDGE LOST: 2 technologies forgotten (the corpus was never printed and dispersed)
+EVENT 1521: Spanish invasion: the society's values are shifting (...)
+```
+So the Spanish invasion sacked my site in ALL THREE of its stated years (1519, 1520,
+1521) -- entirely consistent with the stated "sack chance after what you have built:
+90%" (three independent ~90% rolls almost certainly hit at least once, and did in
+fact hit every single time). Total knowledge lost across the whole window: 0 + 3 + 2 =
+**5 of my original 18 self-built technologies gone** -- specifically all my finance
+techs except `fin_cartel` (`fin_mortgage`, `fin_brand`, `fin_arbitrage`,
+`fin_seigniorage` all vanished from the revenue ledger over the three sackings), plus
+one more I didn't specifically track. `world_map`, both medical techs, `fin_cartel`,
+`cn_quarrying_wedge`, and `med_obstetric_practice`/`med_bone_setting` all survived.
+Losing 5/18 (about 28%) over the window is roughly in line with the stated "fraction
+lost when it happens: 40%" applied a few times, though not an exact match (expected
+value would suggest somewhat more loss given 3 sackings at 40% each) -- reasonable
+under a small-sample random process.
+
+The epidemic's "staff -80%" fired every single year the epidemic was active
+(1520, 1521, and presumably continuing) but, again, has nothing to act on since I still
+have 0 employees -- this appears to be a genuine, repeatable loophole: **statelessness
+(no employees) makes the epidemic's headline mechanic a no-op for me.** I consider this
+worth flagging clearly: whether intentional or not, "never hire anyone" is a strict
+defence against the single hazard the game's own text calls "the single most severe
+hazard of any civilization in this directory," which seems like an odd emergent result
+for a mechanic clearly meant to be punishing.
+
+The capital "windfall on sack" pattern continued but seemed to shrink in magnitude as
+my debt itself shrank (this step's unexplained gap was roughly +330 den, versus ~+2,200
+and ~+1,150 den on the two earlier sackings) -- consistent with a hypothesis that
+whatever this effect is, it scales with outstanding debt rather than being a fixed
+per-sack bonus. Still unconfirmed and still undocumented anywhere in the UI.
+
+## Current status snapshot heading into a second play phase (year 1522)
+
+- 13 technologies built by me (down from a peak of 18, after losing 5 to three
+  Spanish-invasion sackings), 141 total known (128 granted + 13 earned).
+- Capital -222 den, net income dropped to -38.1 den/yr this step only because of the
+  arithmetic_positional spend; underlying revenue-only income is healthy (984.8 den/yr
+  gross from world_map 598.2, med_cataract_couching 199.4, med_trepanation 79.8,
+  cn_quarrying_wedge 59.8, fin_cartel 39.8, med_obstetric_practice 15, med_bone_setting
+  7.4).
+- Credit limit 7,462 den, well above the shrunken debt -- healthy headroom again, no
+  more credit-crunch stalling expected for now.
+- 0 employees (by choice, to dodge the epidemic and cut costs -- also means I still
+  cannot start the ~15+ "needs trained craftsmen" items sitting in HEARD OF).
+- `arithmetic_positional` 71% done, "Highest return on personal hours in the entire
+  tree" and "HOW MUCH RESTS ON THIS: almost everything" -- expect a big unlock like
+  identity_cover's and scientific_method's once it lands.
+- Epidemic hazard still open until 1600 per its stated window, currently "HAPPENING
+  NOW" -- will keep watching for repeats, though so far harmless to me specifically
+  due to having no staff.
+- Never found any wall/firearm/quarantine/inoculation/clean-water/copy-of-work hedge
+  tech anywhere in the visible tree across 22 years of active searching. The entire
+  Spanish invasion was weathered completely unhedged, exactly as the "sack chance after
+  what you have built: 90%" figure (never dropping from its year-1500 baseline value)
+  implied it would be.
+
+## Turns 25-35ish: 1524 -> 1546 -- a second, more serious probable bug: asymptotic
+## "still_to_pay" that may never reach zero
+
+`arithmetic_positional` reached 71% of founder-hours almost immediately (by 1522) and
+then sat at exactly "71%... waiting on your hours" for the rest of this whole period,
+with `still_to_pay` (the money portion of its cost) draining ever more slowly:
+384.5 -> 281 -> 109.7 -> 58.6 -> 31.3 -> 22.9 -> 16.7 -> 3.5 -> 2.5 -> 1.9 -> 0.7 -> 0.5
+-> 0.4 -> 0.3 den, tracked over roughly TWENTY FIVE in-game years (1521 to 1546) and
+about 18 separate `step` calls. The amount paid off each step also shrank in lockstep
+(6.2, then 0.9, 0.7, 0.3, 0.2, 0.1, 0.1 den...) even though my net income stayed
+essentially flat around +115 to +122 den/yr throughout and I was not otherwise
+resource-constrained (once past the earlier debt-spiral period). The pattern looks
+exactly like **geometric/asymptotic decay of the remaining balance** (roughly -25 to
+-30% of what's left, each step) rather than "pay what you can afford toward the
+remainder" -- and critically, it is NOT tied to how much income or credit headroom I
+actually have. This means the last fraction of a project's cost can take a very long
+time to clear, and by the pattern observed, might mathematically never hit exactly
+0.0 in a reasonable number of turns (Zeno's-paradox style): after 25 years, `why` still
+showed 71% and a nonzero balance no matter how comfortable my finances were.
+
+I tried `{"cmd":"bounty","id":"arithmetic_positional"}` to see if paying someone else to
+finish it would bypass this -- refused: "arithmetic_positional is already active; stop
+it first if you want to switch to a bounty instead" (and `stop` would forfeit the ~720
+den and 20+ years already sunk into it). There does not appear to be, from anything
+`help`, `why`, or `money` told me, any in-band way to simply pay off the last scraps of
+a project's cost in one go. **This looks like a real bug**, distinct from the earlier
+debt-crunch stall (that one was explainable, even if undocumented, as a credit-headroom
+gate; this one persists regardless of headroom and shrinks toward zero without
+reaching it). A careful player relying only on the text output would see "waiting on
+your hours" forever and have no way to know that the true blocker is a vanishing
+decimal, not their own hours (which show 2,400 free every year, untouched).
+
+DECISION: given the project doesn't seem to be consuming my other capacity (I still
+show 2,400 founder-hours free most years net of this project's "offered" allocation),
+I am leaving it running in the background indefinitely and moving on to other
+priorities, since parking capital or hours specifically to accelerate it does not
+appear to help based on the data above.
+
+## Correction to an earlier guess: "dangerous above 26" is `prominence` (= eminence), not reputation or scandal
+
+Checked the raw JSON `state full:true` output directly: there is an explicit
+`"prominence"` block: `{"now": 0.38, "dangerous_above": 26.0, "settles_at_if_nothing_changes": 0.2,
+"chance_of_ruin_this_year": 0.0, "what_would_change_it": ["a wide, dispersed institution
+is harder to destroy than one great man"], "note": "This is prominence, not scandal. It
+cannot be bribed away, and every defence that makes you safer from accusation makes you
+larger and so raises this."}` -- and `"now": 0.38` matches the `eminence` field exactly.
+So my earlier guesses (turns 8-9 and 13-16) that the "dangerous above 26 / settles near
+X" line might refer to reputation or to scandal were WRONG -- it is prominence, which is
+just eminence under another name, and it explicitly is NOT scandal ("cannot be bribed
+away"). Correcting the record here since I flagged genuine uncertainty earlier and this
+is now confirmed directly from the game's own structured output (available to me via
+`--pretty`'s raw JSON on stdout, though a player using ONLY the human-readable text would
+have had a much harder time confirming this, since the rendered text never uses the word
+"prominence" -- it just says "dangerous above 26" inline with reputation/suspicion/
+scandal/eminence on the STANDING line, with no explicit label pointing at eminence
+specifically). At 0.38 against a danger threshold of 26, I am nowhere near this danger
+regardless.
+
+Scandal, separately, has climbed to 10.4 by 1546 (from lows near 0.1-0.2 mid-game) with
+no stated danger threshold I've found yet -- worth continuing to monitor.
+
+## Turns 36-50ish: 1567 -> 1653 -- steady state, both hazard windows close, and a WORSE version of the hours-progress bug appears
+
+Rebuilt the finance base (`fin_seigniorage`, `fin_arbitrage`, `fin_mortgage` re-bought
+after the invasion wiped them), re-hired smiths carefully this time (keeping cash
+buffer in mind), and let time run in large chunks (`step years:N` with N up to 45 -- it
+handles arbitrarily large multi-year steps fine, correctly narrating every year's
+events in order). Recurring background events settled into a predictable rhythm:
+`your patron dies; his heir must be courted afresh` (no visible cost each time, but
+seems to correlate with capital dips), `fire in the reed and adobe quarter by the
+canal`, and `banditry or a frontier war disrupts supply` -- flavour/ambient events with
+no visible mechanical effect I could isolate, alongside routine `interest on arrears`
+notices.
+
+By year **1600 the epidemic hazard's own stated window (1520-1600) ended**, and by 1605
+`risk` reported **"0 more hazard(s) known ahead"** with no active hazards listed at
+all -- I had passed both of the scenario's headline catastrophes. Final tally: the
+Spanish invasion sacked my site in all three of its years and cost me 5 of 18
+technologies (28%); the epidemic's "staff -80%" fired roughly 20 separate times across
+80 years and cost me nothing, because I deliberately kept zero employees the entire
+time it was active -- confirming my turn-22 note that "never hire anyone" is a complete,
+repeatable defence against the game's own "single most severe hazard" description.
+
+At 1650, with a healthy cash buffer (3,413 den, no debt) I hired 5 smiths at once,
+which triggered the same "huge unlock" pattern as the very first hire back in 1511:
+`available` jumped from 76 to **269** startable items in one step, with the "HEARD OF,
+CANNOT BEGIN YET" list shrinking from ~15 entries to 9, all but 2 of which trace back
+to the still-broken `arithmetic_positional`. This makes we more confident the "N
+trained craftsmen" gate is doing an enormous amount of the tree-gating work throughout
+the whole game, not just early on.
+
+Found and started `workshop_first` ("First workshop and laboratory", 4,606 den, 900
+den/yr upkeep, prereq exactly `patron_local`, **"HOW MUCH RESTS ON THIS: almost
+everything"**) -- its flavour text mentions "a walled yard" for the first time, the
+single closest thing to the invasion hazard's "walls" hint I found in the entire
+playthrough, though it reads as a workshop-security detail, not city fortification.
+
+Starting `workshop_first` while `arithmetic_positional` was still stuck produced a
+**worse and unambiguous version of the earlier bug**: `arithmetic_positional`'s
+displayed progress went from "71%" to **"-29%"** and then, one more step later
+(with 0 employees and healthy net income again), to **"-67%"** -- a NEGATIVE
+percentage, which cannot be a sane value under any reading of "hours spent so far."
+The raw JSON confirms the arithmetic: `founder_hours_left: 581.5` against
+`founder_hours_total: 450.0` -- the "hours left" figure exceeded the total requirement,
+something that should be structurally impossible if hours are only ever being
+subtracted from a fixed total. This happened exactly when both projects simultaneously
+showed `underfunded_this_year: true` in the raw JSON, reinforcing that the
+"credit-headroom crunch" I identified around turn 17 is real, recurring, and now shown
+to actively corrupt/worsen a stuck project's progress rather than merely freezing it.
+**I am now confident this whole family of behaviour (frozen progress, resets to 0%,
+and now negative percentages) is a genuine bug in how the engine accounts for
+founder-hours on projects that go "underfunded," not an intentional mechanic** -- no
+help text, `why` output, or `risk`/`money` explanation anywhere ever mentioned debt
+headroom affecting project hour-progress, and a negative percentage cannot be the
+designers' intended display for anything.
+
+## Final state at year 1654 (stopping the playthrough here)
+
+- Money: -2,464 den (in arrears again, credit limit 3,853 den, so still within nominal
+  headroom but evidently inside whatever threshold triggers the underfunded-progress
+  bug).
+- Net income: +260.8 den/yr with 0 employees (fired everyone again at the end to stop
+  new wage bleed while I write this up).
+- 16 technologies built by me, 144 known in total (128 granted + 16 earned) -- down
+  from a peak of 18 after losing 5 to the Spanish invasion, up again by rebuilding 3 of
+  the lost finance techs plus gaining `cn_quarrying_wedge` and `patron_local`.
+- 2 projects permanently stuck mid-flight: `arithmetic_positional` (started 1521, still
+  not done at 1654 -- 133 years and counting, now at a nonsensical -67%) and
+  `workshop_first` (started 1652, 0% hours effective, 134.7 den still owed and
+  shrinking asymptotically the same way).
+- Both scripted hazards (Spanish invasion 1519-1521, Old World epidemics 1520-1600)
+  have concluded; `risk` currently shows no active or upcoming hazards.
+- Never found any tech literally named/tagged for walls, firearms, quarantine, clean
+  water treatment as a hazard countermeasure, or "copies of your work kept elsewhere"
+  despite reaching 269 visible items and searching repeatedly by keyword throughout.
+  The closest hits were generic plumbing/water-engineering items (chorobates, S-bend
+  traps) and `workshop_first`'s incidental "walled yard" detail -- none of which
+  `risk`'s own "staff loss after what you have built" / "sack chance after what you
+  have built" figures ever reflected as improved (both stayed frozen at their year-1500
+  baseline: 80% and 90% respectively) the entire game.
+
+I am stopping active play here, at year 1654 of the 1500-2000 horizon, having reached
+what I judge to be a stable, well-documented picture of the simulator's core loop, its
+fog-of-war information design, and several concrete bugs -- see the summary below.
+
+---
+
+# Summary for the designers
+
+**What worked well:**
+- The `why <id>` command is excellent: cost/hours/risk/prereqs/upkeep/revenue/"HOW MUCH
+  RESTS ON THIS" is exactly the information a player needs to make an informed bet
+  under fog of war, and in every case I could verify, it was accurate (identity_cover,
+  scientific_method, patron_local, and workshop_first all said "almost everything"/"a
+  great deal" and then genuinely unlocked large swathes of the tree).
+- The "HEARD OF, CANNOT BEGIN YET" list with specific, actionable blockers ("needs 3
+  trained craftsmen, you have 0.0", "get at least a local patron first", "missing
+  prerequisites: X") is a very good compromise for fog of war: you know something
+  exists and exactly what's stopping you, without seeing the whole tree. This made it
+  possible to plan several moves ahead even under fog.
+- The scale of the two historical hazards was communicated honestly and the actual
+  outcome matched the stated odds closely (three sack rolls at a stated ~90%/yr chance,
+  three sacks; the epidemic's blunt "-80% staff" fired reliably every time it rolled).
+- Multi-year `step` calls work correctly and narrate every intervening year's events in
+  order, which made large time-skips practical without losing information.
+
+**What was confusing or seemed like a bug, ranked by how sure I am:**
+1. **(Very likely a bug)** A project that goes "underfunded" for a sustained period can
+   have its founder-hours progress not just freeze but actively worsen past 100%
+   remaining, producing a NEGATIVE percentage-complete ("-67% of your hours spent").
+   Reproduced twice on two different projects (`patron_local` froze/reset once,
+   `arithmetic_positional` went negative twice).
+2. **(Likely a bug, or at minimum needs a clearer explanation)** The "still_to_pay"
+   portion of a project's cost can decay asymptotically toward (but arguably never
+   reach) zero, independent of available cash or credit, taking 25+ years to go from
+   single digits to zero on `arithmetic_positional`. No in-game text explains this
+   pacing or offers a way to accelerate/force it.
+3. **(Confirmed pattern, not necessarily a bug, but definitely undocumented)** Running
+   a large negative capital balance relative to your credit limit silently stops ALL
+   active projects from making effective progress ("hours offered" but 0 "hours
+   effective"), even while nominally "under the credit limit." Nothing in `help`,
+   `why`, `money`, or `risk` mentions this threshold.
+4. **(Unexplained, possibly a feature)** On three separate occasions, the turn a
+   Spanish-invasion "site is sacked" event fired, my capital jumped up by an amount far
+   larger than that period's net income could explain (+2,200 den, then +1,150 den,
+   then +330 den, shrinking each time), alongside a jump in credit_limit and a drop in
+   the interest rate. My best guess is that getting sacked forgives some debt in-fiction
+   (a conquered city no longer owing its old creditors), but this is never stated
+   anywhere.
+5. **(Real design tension, not a bug)** Having zero employees is a complete, free
+   defence against the epidemic hazard the game's own text calls "the single most
+   severe hazard of any civilization in this directory." This feels like an unintended
+   emergent loophole given how the hazard is described.
+
+**What I expected to find and never did:** any hedge technology for either hazard
+(walls, firearms, "powerful friends" beyond patron_local, backup copies of work, clean
+water treatment, quarantine, inoculation) despite explicit hints in the hazard
+descriptions and a wide search across 269 visible tech entries. Either these exist much
+deeper in the tree than I reached in 154 years, or they were effectively unreachable in
+time for the 1519-1521 invasion window given how long the early game's patron/workshop
+prerequisites took to clear (patron_local alone consumed 1509-1519, almost the entire
+runway before the invasion). If the intended experience is "you cannot realistically
+hedge the Spanish invasion in time," the game communicates that very well through pure
+mechanical pressure; if hedges were meant to be reachable, the prerequisite chain
+(identity_cover -> patron_local, itself hit by the underfunded-progress bug) may be
+gating them behind more real-time cost than a careful player can clear in 19 years.
+
+**What struck me as unrealistic:** the sack-event capital windfalls (finding #4 above)
+read backwards from the fiction -- getting your city sacked by conquistadors should not
+plausibly improve your cash position and credit rating in the same turn it happens,
+regardless of the mechanism.
+
+(End of log. Session file left in place at
+/home/user/test/rome/playtest/naive3/mexica_1500_PLAY.json, year 1654, so play could
+resume from here in a future session.)
 

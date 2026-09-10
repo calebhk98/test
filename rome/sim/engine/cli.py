@@ -13,9 +13,11 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
 import argparse, sys
 
 from .core import Sim
+from . import protocol as _protocol
 from .protocol import (
     _agent_available, _agent_dispatch, _agent_end_reason, _agent_help,
-    _agent_state, _node_explain, load_state, render_pretty, save_state)
+    _agent_state, _node_explain, load_state, parse_typed, render_pretty,
+    save_state)
 
 
 def load_strategy(name, nodes, goal):
@@ -245,89 +247,111 @@ def cmd_compare(a):
 
 
 def cmd_play(a):
-    """Interactive human REPL. Two modes:
+    """The game, typed, for a person at a keyboard.
 
-    Default (no --manual): unchanged from before. Typing a node id only
-    reprioritises `order`; the optimizer in step() 4b still starts whatever
-    else it wants that year. This mode exists to WATCH the optimizer, and it
-    is honestly labelled below as advisory, not a real choice.
+    This used to be its own little REPL with six commands of its own - next
+    year, available, status, start, stop, quit - and its own copy of what each
+    one meant. Everything built since (money, hire, fire, train, work,
+    commission, labour, policy, quote, close, mothball, restore, bribe, risk,
+    save, load) went into the JSON protocol and none of it into here, so the
+    human front door showed a fraction of the game and the menu's answer was to
+    put a person in front of a JSON prompt.
 
-    --manual: the optimizer's 4b loop is switched off (see Sim.manual). Typing
-    a node id now calls start_project(), which is the ONLY thing that starts
-    it. Nothing else will ever become active on its own. This is a real game:
-    what you do not start, does not happen. See the `agent` command for the
-    same guarantee driven by a script instead of a keyboard.
+    It now parses a typed line into the SAME command the JSON protocol takes
+    (protocol.parse_typed) and hands it to the SAME dispatcher (_agent_dispatch),
+    printing the readable rendering the --pretty path already uses. There is no
+    second implementation to fall behind: a command added to the protocol is
+    typeable here the day it is added.
+
+    It is also always manual. The old default mode let the optimizer keep
+    starting things regardless of what you typed, and its own docstring called
+    that "advisory, not a real choice". A front door should not be the mode
+    where your choices do not count; `run --trace` is still the way to watch
+    the optimizer work.
     """
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
-    # `play` used to always be Rome, with no way to say otherwise, while `run`
-    # and `agent` both took --civ. A human at the keyboard could not reach four
-    # of the five civilisations at all.
-    cfg = {"immortal": not getattr(a, "mortal", False)}
+    cfg = {"immortal": not getattr(a, "mortal", False),
+           "horizon_years": a.horizon}
     kit = getattr(a, "kit", None)
     if kit:
         cfg["start_capital"] = STARTING_KITS[kit]["den"]
-    s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=bounties,
-            manual=a.manual, civ=load_civ(getattr(a, "civ", None) or "rome_100ad"),
+    s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=set(),
+            manual=True, civ=load_civ(getattr(a, "civ", None) or "rome_100ad"),
             cfg=cfg)
-    s.goal = goal; s.done_year = {}
+    s.goal = goal
+    s.done_year = {}
+    s.end_year = s.cfg["start_year"] + a.horizon
     s.fog = bool(getattr(a, "fog", False))
-    if a.manual:
-        print("You arrive in %d AD with %d denarii in unminted gold. MANUAL MODE:\n"
-              "nothing starts unless you start it. Type a node id to start it,\n"
-              "'x <id>' to abandon it, 'a' for what is available,\n"
-              "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
-    else:
-        print("You arrive in %d AD with %d denarii in unminted gold.\n"
-              "Type a node id to PRIORITISE it (the optimizer still runs the rest;\n"
-              "pass --manual for real free choice), 'a' for what is available,\n"
-              "'s' for status, 'n' to advance a year, 'q' to quit.\n" % (s.year, s.capital))
-    # NOT 100 + horizon. That constant was Rome's start year, harmless while
-    # `play` could only ever be Rome, and fatal the moment it accepted --civ:
-    # a Norse game begins in 900, and 900 is not less than 600, so the loop
-    # ended before the player typed anything. The civilisation says when it
-    # starts; the horizon is measured from there.
-    end_year = getattr(s, "end_year", None) or (s.cfg["start_year"] + (a.horizon or 400))
-    while s.year < end_year and not s.dead_reason and not s.goal_year:
-        cmd = input("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f | susp %.0f] > "
-                    % (s.year, s.capital, s.director_pool(), s.scholars, s.artisans,
-                       s.reputation, s.suspicion)).strip()
-        if cmd == "q": break
-        if cmd == "n":
-            before = set(s.done); s.step()
-            for k in sorted(s.done - before):    # sorted: see protocol.py
-                print("   completed:", nodes[k]["name"])
-            for y, m in s.log[-3:]: print("   %d %s" % (y, m))
+    s.revealed = set()
+    # The reader is a person typing words, so the worked examples inside every
+    # reply should be words too. See protocol.to_typed_hints.
+    _protocol.TYPED_HINTS = True
+
+    session = getattr(a, "session", None)
+    fresh = not (session and os.path.exists(session))
+    if not fresh:
+        try:
+            load_state(s, session)
+        except Exception as e:
+            print("could not read the save file %r: %s" % (session, e))
+            return 1
+        print("Resumed from %s: %d AD." % (session, s.year))
+
+    if fresh:
+        print()
+        print(_wrap("You arrive in %d AD with %d denarii and nothing else: no "
+                    "employees, no slaves, and nobody who owes you anything. "
+                    "What you have is everything you know."
+                    % (s.year, s.capital)))
+        print()
+        print(_wrap("Type commands in plain words. The four to start with are "
+                    "'state' (where you stand), 'available' (what you could "
+                    "begin today), 'why <name>' (what a thing is for and what "
+                    "it costs) and 'step' (let a year pass). 'help' explains "
+                    "the rest; 'quit' leaves."))
+        print()
+
+    while True:
+        prompt = ("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f] > "
+                  % (s.year, s.capital, s.director_pool(), s.scholars,
+                     s.artisans, s.reputation))
+        try:
+            line = input(prompt)
+        except (EOFError, KeyboardInterrupt):
+            # Piped input runs out, and a person presses ctrl-D. Neither is a
+            # crash, and the old loop raised EOFError out of the process.
+            print()
+            break
+        cmd, err = parse_typed(line)
+        if err:
+            print("   " + err)
             continue
-        if cmd == "a":
-            av = [k for k in s.order if s.can_start(k)][:20]
-            for k in av:
-                n = nodes[k]
-                print("   %-32s cost %8s  your-hrs %5d  %s"
-                      % (k, f"{n['_total_cost']:,.0f}", n["ph"], n["note"][:60]))
+        if cmd is None:
             continue
-        if cmd == "s":
-            print("   done: %d  active: %s" % (len(s.done), ", ".join(s.active) or "nothing"))
-            continue
-        if cmd.startswith("x ") and a.manual:
-            target = cmd[2:].strip()
-            ok, why = s.stop_project(target)
-            print("   stopped." if ok else "   can't: %s" % why)
-            continue
-        if cmd in nodes:
-            if a.manual:
-                ok, why = s.start_project(cmd)
-                print("   started." if ok else "   blocked: %s" % why)
-            elif s.can_start(cmd):
-                s.order.remove(cmd); s.order.insert(0, cmd); print("   prioritised.")
-            else:
-                miss = [p for p in nodes[cmd]["pre"] if p not in s.done]
-                print("   blocked. missing:", ", ".join(miss) or
-                      "staff (needs %d scholars, %d artisans)" % (nodes[cmd]["sch"], nodes[cmd]["art"]))
-        else:
-            print("   unknown command")
-    print("\nEnded %d AD. %s" % (s.year, s.dead_reason or ("GOAL REACHED" if s.goal_year else "horizon")))
+        try:
+            resp = _agent_dispatch(s, nodes, cmd)
+        except Exception as e:            # never lose a session to a bug
+            resp = {"ok": False,
+                    "error": "internal error handling that command: %s: %s. "
+                             "The game is intact; try something else."
+                             % (type(e).__name__, e)}
+        print(render_pretty(cmd.get("cmd"), resp))
+        print()
+        if session:
+            save_state(s, session)
+        if cmd.get("cmd") == "quit":
+            break
+        end = _agent_end_reason(s)
+        if end:
+            print(_wrap("The run has ended: %s" % end))
+            break
+    print("Ended %d AD. %s" % (s.year, _agent_end_reason(s) or "stopped"))
+    if session:
+        print("Saved to %s. Come back with:" % session)
+        print("   python3 rome/sim/simulator.py play --session %s" % session)
+    return 0
 
 
 # ----------------------------------------------------------------------------
@@ -823,18 +847,14 @@ def cmd_menu(a):
     # handing you a command line to go run yourself is not a front door, it
     # is a man page. So: pick where the save goes, say so once, and go.
     #
-    # This drops into `agent`, not `play`, even though `agent` speaks JSON
-    # rather than plain typed commands. Two reasons. First, only `agent` has
-    # a session file at all, and "then you immediately jump in" is worthless
-    # if the game vanishes the moment this process exits - the whole point of
-    # asking for a save name is that you can come back. Second, `play`
-    # WITHOUT --manual is explicitly not a real choice (see its docstring:
-    # the optimizer keeps starting things on its own regardless of what you
-    # type), and wiring --manual through the menu just to reach the same
-    # guarantee `agent` already provides by default would be reinventing it
-    # worse. --pretty is what actually answers the testers who found raw
-    # JSON hard to read, without giving up the one JSON object per line that
-    # makes the save/resume story work at all.
+    # AND IT USED TO GO INTO `agent`, which speaks JSON. The reason given at
+    # the time was that only `agent` had a session file, and that `play`
+    # without --manual was not a real choice. Both were true and neither was
+    # a good enough reason to sit a person down in front of
+    # {"cmd":"available"}: the answer was to fix `play`, which now takes a
+    # --session of its own and is always manual, and speaks typed words over
+    # the same dispatcher the JSON protocol uses. `agent` is still there, and
+    # is still the right thing for a script.
     session = _pick_session_filename(civ["id"])
     print()
     print("=" * 78)
@@ -843,14 +863,7 @@ def cmd_menu(a):
         "so you can stop any time - close the terminal, anything - and come "
         "back to exactly where you left off with:"))
     print()
-    print("      python3 rome/sim/simulator.py agent --session %s --pretty" % session)
-    print()
-    print(_wrap(
-        "Type one JSON command per line, for example {\"cmd\":\"available\"} or "
-        "{\"cmd\":\"step\",\"years\":5}. Each reply prints as JSON, followed by a "
-        "plain-English reading of the same reply. {\"cmd\":\"help\"} explains "
-        "everything else, and nothing you type here can be typed wrong badly "
-        "enough to lose the game.", indent=""))
+    print("      python3 rome/sim/simulator.py play --session %s" % session)
     print()
 
     class Args:
@@ -863,11 +876,9 @@ def cmd_menu(a):
     args.kit = kit
     args.mortal = (mortal == "y")
     args.fog = (fog == "y")
-    args.no_events = False
     args.session = session
-    args.script = None
-    args.pretty = True
-    return cmd_agent(args)
+    args.manual = True
+    return cmd_play(args)
 
 
 def main():
@@ -918,10 +929,14 @@ def main():
                    help="starting wealth: " + ", ".join(STARTING_KITS))
     q.add_argument("--fog", action="store_true")
     q.add_argument("--mortal", action="store_true")
+    q.add_argument("--session", default=None,
+                   help="a save file. Loaded if it exists, written after every "
+                        "command, so you can stop and come back later")
     q.add_argument("--manual", action="store_true",
-                   help="nothing starts on its own; only nodes you type actually begin. "
-                        "Without this flag, typing a node id only reprioritises the "
-                        "optimizer, which keeps starting things on its own.")
+                   help="accepted and ignored: play is always manual now. Nothing "
+                        "starts unless you start it. The old advisory mode, where "
+                        "the optimizer kept starting things regardless of what you "
+                        "typed, is gone; use 'run --trace' to watch it work.")
     q = sub.add_parser("agent", help="JSON protocol so a script or an AI agent can play "
                                      "and choose its own research path. See the module "
                                      "docstring for the command table.")

@@ -64,17 +64,23 @@ def check(name, ok, detail=""):
     took = now - _LAST_AT
     _LAST_AT = now
     CHECKS_RUN.append((name, took))
+    # str(): a failing check whose detail was a dict, a list or None used to
+    # kill the whole suite here on a TypeError, so the one run that had
+    # something to report was the one run that reported nothing.
+    detail = "" if detail is None else str(detail)
     print("  %-58s %s%s" % (name, "ok" if ok else "FAIL " + detail,
                             "   %4.0fs" % took if took >= 1.0 else ""))
     if not ok:
         FAILURES.append(name + " " + detail)
 
 
-def proto(lines, civ="rome_100ad", kit=None):
+def proto(lines, civ="rome_100ad", kit=None, fog=False):
     """Drive the real protocol in a real subprocess, as a player would."""
     cmd = [sys.executable, os.path.join(HERE, "simulator.py"), "agent", "--civ", civ]
     if kit:
         cmd += ["--kit", kit]
+    if fog:
+        cmd += ["--fog"]
     p = subprocess.run(cmd, input="\n".join(json.dumps(c) for c in lines) + "\n",
                        capture_output=True, text=True, timeout=300, cwd=ROOT)
     out = []
@@ -926,31 +932,69 @@ check("large numbers in the pretty rendering carry thousands separators",
 # and asking permission to run it. It must also honour the mortality choice
 # made in the menu, which `agent` never had a flag for at all before this.
 _menu_dir = tempfile.mkdtemp()
-_menu_input = "1\ny\n\ny\n" + json.dumps({"cmd": "state"}) + "\n" + json.dumps({"cmd": "quit"}) + "\n"
+# THE MENU NOW DROPS INTO `play`, NOT `agent`. It used to hand a person a JSON
+# prompt, which is the right front end for a script and the wrong one for the
+# human the menu exists to greet; `play` speaks typed words over the same
+# dispatcher. So the commands fed here are typed, and what comes back is the
+# rendered view rather than JSON.
+_menu_input = "1\ny\n\ny\nstate\nquit\n"
 _pm = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
                      input=_menu_input, capture_output=True, text=True, timeout=120,
                      cwd=_menu_dir)
 check("the menu says it is starting, not offering a command to run later",
       "Starting now" in _pm.stdout, _pm.stdout[-500:])
 check("the menu names a resumable --session file ending in .json",
-      "--session" in _pm.stdout and ".json --pretty" in _pm.stdout, _pm.stdout[-500:])
+      "--session" in _pm.stdout and ".json" in _pm.stdout, _pm.stdout[-500:])
 _saved = [f for f in os.listdir(_menu_dir) if f.endswith(".json")]
 check("the menu's chosen session file actually exists on disk after playing",
       len(_saved) == 1, os.listdir(_menu_dir))
-_menu_replies = []
-for _ln in _pm.stdout.splitlines():
-    _ln = _ln.strip()
-    if _ln.startswith("{"):
-        try:
-            _menu_replies.append(json.loads(_ln))
-        except ValueError:
-            pass
-_menu_states = [o for o in _menu_replies if isinstance(o, dict) and "year" in o and "capital" in o]
 check("the menu drops straight into a playable session, no extra prompt",
-      _pm.returncode == 0 and bool(_menu_states), _pm.stdout[-300:])
+      _pm.returncode == 0 and "YEAR" in _pm.stdout and "RUNNING" in _pm.stdout,
+      _pm.stdout[-300:])
 check("the mortality choice made in the menu reaches the actual game",
-      bool(_menu_states) and _menu_states[-1].get("founder_ages") is True,
-      _menu_states[-1] if _menu_states else None)
+      "and ageing" in _pm.stdout, _pm.stdout[-300:])
+# --- the user: "I wanted agents to play under the play that we were just
+# making". Everything built since the split went into the JSON protocol only,
+# and `play` still understood six commands of its own. It must now reach the
+# whole game, in typed words, and it must never answer a person in JSON.
+_PLAY_DIR = "_playtest_tmp"
+os.makedirs(os.path.join(ROOT, _PLAY_DIR), exist_ok=True)
+
+
+def _play(lines, civ="rome_100ad", extra=()):
+    p_ = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
+                         "--civ", civ] + list(extra),
+                        input="".join(l + "\n" for l in lines),
+                        capture_output=True, text=True, timeout=240, cwd=ROOT)
+    return p_.stdout, p_.returncode
+
+
+_pl, _rc = _play(["state", "money", "labour", "risk", "policy", "available",
+                  "hire smith 1", "step 1", "quit"])
+check("typed play reaches the whole game, not six commands of its own",
+      all(t in _pl for t in ("YEAR", "LEDGER", "ON YOUR STAFF", "AVAILABLE")) and _rc == 0,
+      [t for t in ("YEAR", "LEDGER", "ON YOUR STAFF", "AVAILABLE") if t not in _pl])
+check("typed play never answers a person in JSON",
+      '{"cmd"' not in _pl, [l for l in _pl.splitlines() if '{"cmd"' in l][:3])
+_pl2, _ = _play(["available metallurgy", "quit"])
+check("a typed narrowing of available works as the reply advertises it",
+      "AVAILABLE" in _pl2 and "metallurgy" in _pl2.lower(), _pl2[:200])
+_pl3, _ = _play(["frobnicate", "state", "quit"])
+check("an unknown typed word is refused without ending the session",
+      "no command called" in _pl3 and "YEAR" in _pl3, _pl3[:300])
+_sess = "%s/typed.json" % _PLAY_DIR
+# START FROM NOTHING. The first version of this check left its save behind, so
+# the NEXT run of the suite resumed it and stepped three more years: it passed
+# once and failed for ever after, on state left by itself.
+if os.path.exists(os.path.join(ROOT, _sess)):
+    os.remove(os.path.join(ROOT, _sess))
+_pl4, _ = _play(["step 3", "quit"], extra=["--session", _sess])
+_pl5, _ = _play(["state", "quit"], extra=["--session", _sess])
+check("a typed game can be stopped and resumed from its own save file",
+      "Resumed from" in _pl5 and "YEAR 103" in _pl5, _pl5[:300])
+_pl6, _rc6 = _play(["state"])       # stdin ends without 'quit'
+check("running out of input ends a typed game cleanly, not on a traceback",
+      _rc6 == 0 and "Traceback" not in _pl6, _pl6[-200:])
 
 # --- 3: `load` validates the file before touching the running game. `save`
 # and `load` both refuse an absolute path (see the robustness checks above),
@@ -1006,7 +1050,100 @@ check("load refuses a save that refers to a node the tree no longer has",
 check("that refusal leaves the running game untouched too",
       _r3[0].get("year") == _r3[2].get("year"), (_r3[0].get("year"), _r3[2].get("year")))
 
+# --- the Mexica break tester, six findings, one check each ------------------
+# Every one of these was reproduced from the tester's own transcript before it
+# was fixed; each check is the tester's repro, kept.
+
+# 1. `work` earned wages as a chemist in a society whose `hire` and `labour`
+#    both said chemists do not exist there.
+_wk, _, _ = proto([{"cmd": "hire", "trade": "chemist", "n": 1},
+                   {"cmd": "work", "trade": "chemist", "hours": 10},
+                   {"cmd": "work", "trade": "scribe", "hours": 10}])
+check("you cannot be paid for a trade this society does not have",
+      _wk[0].get("ok") is False and _wk[1].get("ok") is False
+      and _wk[2].get("ok") is True,
+      [r.get("ok") for r in _wk])
+
+# 2. Staff force-fired to zero with credit still to spare, and nothing logged.
+# The tester's exact condition: staff on the books, capital NEGATIVE but only a
+# third of the way into a credit line nobody has withdrawn. A household with
+# credit left borrows and makes payroll; that is what credit is for.
+# (a) A payroll the remaining credit COVERS costs you nobody but attrition.
+s = sim(capital=6000.0)
+s.policy["auto_hire"] = False
+s.hire("smith", 2)
+s.capital = -s.credit_limit() * 0.35
+_before = sum(s.employees.values())
+_room = s.capital + s.credit_limit() - (s.living_cost() - s.wage_bill())
+s.step()
+_after = sum(s.employees.values())
+check("staff are not let go while there is still credit to pay them",
+      _room > 0 and _after > _before * 0.95,
+      "%.2f -> %.2f with %.0f still to spend against a %.0f payroll"
+      % (_before, _after, _room, s.wage_bill()))
+
+# (b) A payroll it only PARTLY covers costs you part of the staff, not all of
+#     it. The tester's five went to zero in one step with two thirds of the
+#     credit line untouched; what should happen is that you keep as many as
+#     your remaining means will pay for.
+s = sim(capital=6000.0)
+s.policy["auto_hire"] = False
+s.hire("smith", 5)
+s.capital = -s.credit_limit() * 0.35
+_b3 = sum(s.employees.values())
+s.step()
+check("an unaffordable payroll is trimmed to what you can pay, not emptied",
+      0.5 < sum(s.employees.values()) < _b3,
+      "%.2f -> %.2f" % (_b3, sum(s.employees.values())))
+
+# ...and when they DO go, because there is genuinely no money left to borrow,
+# it is said. The old code logged only in the branch that never happened.
+s = sim(capital=6000.0)
+s.policy["auto_hire"] = False
+s.hire("smith", 5)
+s.capital = -s.credit_limit() * 1.5
+_b2 = sum(s.employees.values())
+s.step()
+check("losing staff you cannot pay is written in the log, never silent",
+      sum(s.employees.values()) < _b2
+      and any("cannot pay everyone" in m for _y, m in s.log),
+      "%.2f -> %.2f, log %r" % (_b2, sum(s.employees.values()), s.log[-3:]))
+
+# 3. state.living_cost was living_and_appearances PLUS the whole payroll, while
+#    `money` reported the two separately, to the decimal.
+_lc, _, _ = proto([{"cmd": "hire", "trade": "smith", "n": 3},
+                   {"cmd": "state"}, {"cmd": "money"}])
+_st, _mo = _lc[1], _lc[2]
+_costs = (_mo.get("what_it_costs_you") or {})
+check("state and money do not label the same money two different ways",
+      abs(_st.get("living_cost", 0) - _costs.get("living_and_appearances", -1)) < 0.15
+      and abs(_st.get("wage_bill", 0) - _costs.get("wages", -1)) < 0.15,
+      "state %r / money %r" % ({k: _st.get(k) for k in ("living_cost", "wage_bill")},
+                               {k: _costs.get(k) for k in ("living_and_appearances", "wages")}))
+
+# 4. `path` under fog said "you have not discovered this" about a technology
+#    the same session reported as done.
+_pa, _, _ = proto([{"cmd": "path", "id": "identity_cover"}], fog=True)
+check("path under fog gives the real reason, not a false one about discovery",
+      _pa[0].get("ok") is False and "not been" in (_pa[0].get("error") or "")
+      and "have not discovered" not in (_pa[0].get("error") or ""),
+      _pa[0].get("error"))
+
+# 5. The unknown-command hint named 10 of 27 real commands. (Fixed earlier;
+#    kept because a hand-maintained list drifts again the moment one is added.)
+_uc, _, _ = proto([{"cmd": "frobnicate"}])
+check("the unknown-command hint names every command there is",
+      all(c in (_uc[0].get("error") or "") for c in S.KNOWN_COMMANDS if c != "quit"),
+      [c for c in S.KNOWN_COMMANDS if c not in (_uc[0].get("error") or "")])
+
+# 6. 0.999 years was refused and 1.99 was silently floored to one.
+_fy, _, _ = proto([{"cmd": "step", "years": 1.99}, {"cmd": "step", "years": 2}])
+check("a fractional number of years is refused, not silently rounded",
+      _fy[0].get("ok") is False and _fy[1].get("ok") is True,
+      [r.get("ok") or r.get("error") for r in _fy])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
+_shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
 # =============================================================================
 # FINDINGS_ROUND2 section Q: literacy bounds who you can hire.

@@ -102,3 +102,128 @@ Confidence this is a real defect: HIGH for "the stated reason is factually wrong
 Expect: the suggestion list in an "unknown cmd" error to match the real command set (I already confirmed via `{"cmd":"help","topic":"commands"}` that money, quote, close, risk, labour, hire, fire, train, commission, work, mothball, restore, bribe, policy, save, load, help are all real, working commands).
 Actual: `{"cmd":"frobnicate"}` -> `{"ok": false, "error": "unknown cmd 'frobnicate'. use one of: state, available, why, path, start, stop, bounty, buy, step, quit"}`. This hint list has only 10 entries and omits at least 17 other real commands (money, quote, close, risk, labour, hire, fire, train, commission, work, mothball, restore, bribe, policy, save, load, help), all of which I separately confirmed work in this same session. A player who mistypes a command name and reads this list would be told a materially incomplete picture of what commands exist.
 Confidence this is a real defect: HIGH. It is a small thing (both the full `help` and this fallback list exist and disagree), but it is objectively inconsistent with the program's own `help` output from the same running session.
+
+## Debt goes negative gracefully; auto_shed silently reverses "wasted" hires with no log entry
+Setup: drained capital by hiring staff with no project running to give them.
+Expect: capital should be allowed to go negative up to some credit limit (per `help economy`: "You may spend past what you have, as far as somebody will lend you and no further. Arrears cost interest."), and interest should accrue on the negative balance.
+
+Actual, mostly as expected:
+- `{"cmd":"hire","trade":"smith","n":3}` while capital was 311.0 -> accepted, `"capital": -83.5"`. Debt is allowed as documented.
+- Stepping forward, `interest_paid_total` rose (0.0 -> 7.2 -> 12.5 -> 14.7 ...) and `credit_limit` shrank each year (1140.3 -> 1115.4 -> 1091.2 -> 1067.7), consistent with "arrears cost interest" and a shrinking headroom. Good, no crash, no runaway.
+
+Unexpected: after hiring the 3 idle smiths (no project assigned to use them), the very next `{"cmd":"step","years":1}` silently fired all of them — `employees` back to `{}`, `annual_wage_bill` back to `0.0` — with **no event or message anywhere in that step's reply** saying staff were let go. The only way to notice is diffing `labour`/`state` before and after. I confirmed this again by hiring 2 more smiths the same way: identical silent disappearance on the next step, the step's own `"events"` list contained only an unrelated flavor line ("fire in the reed and adobe quarter by the canal"), nothing about the firing.
+This matches the documented `policy.auto_mothball`/`auto_shed` defaults (`{"cmd":"policy"}` shows `"auto_shed": true` by default, described as "let go of works that cost more than they return"), so the *mechanism* is intended and documented as ON by default. But:
+1. The help text for `auto_shed` says it sheds "works" (i.e. completed projects/buildings), and does not mention that it also fires idle hired *staff*. Employees are a distinct concept from "works" everywhere else in the interface (`labour` vs. `available`/`why`/`active`). A player reading the policy help would not expect hiring a person to be undone by "auto_shed".
+2. Nothing in the `step` reply's `events`/`completed` lists, nor any other field I found, records that the firing happened. A player who hires staff and doesn't immediately hand them a project loses real capital (hiring 3 smiths cost about 338 capital up front here) for literally zero benefit, with no explanation offered by the program.
+
+By contrast, when I hired 1 smith and immediately `start`ed a project needing artisan labour (`med_bone_setting`) in the same turn before stepping, the project completed successfully using that staff, and the smith was shed only afterward once idle again — so the shedding logic itself is sensible; it is the total silence about it, and the "works" vs "staff" wording gap in `policy` help, that I'm flagging.
+
+Confidence: MEDIUM-HIGH that the missing event/log line is a real gap (the game logs other, less consequential things like a random fire event, but not the loss of your own staff you paid for). MEDIUM that the `policy` help text describing `auto_shed` as being about "works" rather than staff is a documentation/wording bug rather than deliberate broad phrasing.
+
+Reproduce:
+```
+{"cmd":"hire","trade":"smith","n":3}      # capital drops, "you_now_employ": 3.0
+{"cmd":"step","years":1}                  # employees now {} again, annual_wage_bill 0.0, no mention of it in events/completed
+```
+
+## `state.living_cost` silently bundles wages in with personal living expenses — confirmed defect
+Expect: the welcome text says "You are charged for food, rent and appearances every year whether or not you are building anything," and `state` reports `living_cost` right next to `revenue` and `upkeep` as if it were that fixed personal charge. `money`'s breakdown (`what_it_costs_you`) separately itemises `living_and_appearances` and `wages` as two different lines, so I expected `state.living_cost` to correspond only to the `living_and_appearances` figure.
+
+Actual: `state.living_cost` is actually `living_and_appearances + wages` added together, NOT just personal living expenses. Verified precisely in a clean isolated session (mexica_1500, fresh):
+- No staff: `state.living_cost = 230.0`, `money.living_and_appearances ≈ 230`, `annual_wage_bill = 0.0`.
+- After hiring 1 smith, one step later: `state.living_cost = 338.1`, `annual_wage_bill = 110.4` — difference from baseline living cost is ~108-110, matching the wage bill, not zero.
+- After hiring 5 more smiths (total wage bill 884.2): `state.living_cost = 1109.1` and, in the SAME snapshot, `money` reports `"living_and_appearances": 224.9, "wages": 884.2` — and 224.9 + 884.2 = 1109.1 EXACTLY, matching `state.living_cost` to the decimal.
+
+So `state`'s `living_cost` field name is misleading: it is really "living cost + entire staff payroll," while the `money` command's field of the same underlying concept is correctly split into two clearly-labelled parts. Since `state` is one of "the four you need first" per the welcome text, and a player would reasonably read `living_cost` as the fixed personal charge described in the welcome ("charged for food, rent and appearances every year"), this field name actively misleads about where a growing cost is coming from once staff are hired — a player watching only `state` could easily conclude their base cost-of-living itself is spiraling for no reason, when really it's their own payroll.
+Confidence this is a real defect: HIGH. It's not a crash, but the same number is labelled two different, incompatible ways by two different commands in the same program, and the more prominent one (`state`, the one the onboarding text pushes you to use) is the misleading one.
+
+Reproduce (fresh game):
+```
+{"cmd":"state"}                              # living_cost ~230, no staff
+{"cmd":"hire","trade":"smith","n":1}
+{"cmd":"step","years":1}                     # living_cost now ~338 (includes wages)
+{"cmd":"money"}                              # shows living_and_appearances + wages separately, summing to the same total
+```
+
+## Staff are force-fired to zero even with `auto_shed` explicitly OFF — likely a real defect
+This is the clearest bug found so far.
+
+Expect: `{"cmd":"policy"}`'s own note says "Anything switched off here you can still do by hand: hire, train, buy, commission, mothball, restore, bribe." — i.e. with `auto_shed:false`, the engine should NOT automatically let staff go; if my payroll becomes unsustainable that should be my problem to solve by hand (fire them myself, or let debt/interest handle it), not something the engine does for me silently.
+
+Steps (isolated fresh session, mexica_1500, fog on):
+```
+{"cmd":"policy","set":{"auto_shed":false}}     # confirmed in reply: "auto_shed": false
+{"cmd":"hire","trade":"smith","n":1}           # ok, 1 employed
+{"cmd":"step","years":1}                       # employees now {"smith":0.96} -- survives, only ~3.5% attrition (documented elsewhere as normal attrition rate). Good so far.
+{"cmd":"hire","trade":"smith","n":5}           # ok, "you_now_employ": 5.96, annual_wage_bill 884.2, capital -378.9 (credit_limit 1072.3, i.e. only ~35% of credit used, well short of the limit)
+{"cmd":"step","years":1}                       # -> employees: {}, annual_wage_bill: 0.0
+```
+Actual: the entire staff (5.96 FTE) was let go in a single step, dropping straight to zero — not the ~3.5%/yr attrition rate documented elsewhere (`state.staff_are_fractional_because`: "attrition (about 3.5%/yr) trims everyone a little rather than dismissing one person at a time"), and NOT something I did by hand, despite `auto_shed` being explicitly `false` at the time (confirmed by re-reading the `policy` reply immediately before). This happened again on every subsequent step in the same deep-debt condition — I re-hired and it was wiped again, and I let 5 further steps run with capital between roughly -380 and -440 (well inside the ~950-1070 credit_limit throughout, so this is not "hitting the credit ceiling" either) and `employees` stayed at `{}` throughout, `ended` stayed `false`.
+
+I also reproduced the same "staff silently vanish exactly one step after being hired with no active project" pattern in the main playthrough session BEFORE explicitly touching the `auto_shed` policy (i.e. with it at its default `true`), so at first I assumed `auto_shed` (documented as "let go of works that cost more than they return") was responsible, and that its help text just under-described covering staff as well as "works". This isolated test rules that reading out: it happens identically with `auto_shed:false`, so either (a) there is a second, undocumented forced-layoff mechanism independent of the `auto_shed` switch that fires whenever payroll looks unaffordable relative to net income, or (b) the `auto_shed` switch is simply not wired up to whatever code path is actually doing this. Either way, the `policy` command's own promise — "Anything switched off here you can still do by hand" — is false for this behaviour, since I did not do it by hand and could not stop it by switching off the one policy that claims to govern it.
+
+Confidence this is a real defect: HIGH. It is directly falsifiable against the program's own stated contract (`policy`'s note) using only the program's own commands, and I reproduced it twice (two separate hire batches) in a controlled session with the relevant switch off the whole time and capital comfortably within the credit limit.
+
+Also note: no event/log entry accompanies this loss either (same gap as noted above), and no field in `state`/`money` explains why or that it happened — a player has to notice their `annual_wage_bill` dropped to 0.0 on their own.
+
+## `work` lets you personally earn wages in a trade the game says "does not exist here"
+Expect: `{"cmd":"hire","trade":"chemist","n":1}` was already rejected earlier with "there are no chemists to hire in this society at any price: does not exist yet; you must create this trade" and `labour` explicitly lists `chemist` under `do_not_exist_here`. I expected `{"cmd":"work","trade":"chemist",...}` (the founder personally doing "an ordinary job for ordinary pay" per the help text) to be rejected the same way — you cannot moonlight in a trade nobody in the society practices or even recognises.
+
+Actual: it succeeded and paid out.
+```
+{"cmd":"work","trade":"chemist","hours":10}
+```
+-> `{"ok": true, "trade": "chemist", "hours": 10, "earned": 1.3, "capital": -549.0, "your_hours_left_this_year": 2390.0}`
+
+For comparison, a real, existing trade (`scribe`) at the same hour count pays a different, specific rate (`{"cmd":"work","trade":"scribe","hours":10}` -> `earned: 0.6`), so this isn't a generic/default fallback rate — the engine has a genuine wage-rate entry for "chemist" and is willing to pay it, contradicting its own claim elsewhere that the trade "does not exist yet" in this society.
+Confidence this is a real defect: HIGH. `hire` and `labour` both gate on the same "does this trade exist here" concept and agree with each other; `work` simply does not apply that gate, so the fiction that chemistry/electricity/engineering/machining/optics are unknown to 1500 Tenochtitlan (per `do_not_exist_here: ["chemist","electrician","engineer","machinist","optician"]`) is broken by the one command that should be checking it hardest, since it's the founder personally claiming expertise nobody around them has.
+
+(`{"cmd":"work","trade":"scribe","hours":100000}` correctly capped to available hours: `{"ok": false, "error": "you have 2380 of your own hours left this year, not 100000"}` — that guard works fine, so the missing check really is specific to trade-existence, not hours validation in general.)
+
+Further confirmation of the `work`-ignores-trade-existence bug: also reproduced with `electrician` (earned 1.3 for 10 hrs) and `engineer` (earned 1.6 for 10 hrs), both of which `labour` lists under `do_not_exist_here`. And tellingly, `{"cmd":"work","trade":"wizard","hours":10}` (a name that is not a trade at all) is correctly rejected with: `"no such trade. you could work as: artisan, carpenter, chemist, electrician, engineer, engraver, furnaceman, glassblower, labourer, machinist, mason, master, merchant, millwright, miner, optician, plumber, potter, sailor, scholar, scribe, smith"` — note this whitelist is the full civ-agnostic trade roster (it literally includes chemist/electrician/engineer/machinist/optician alongside the real ones), confirming `work` was never filtered by which trades this specific society has. This looks like a straightforward missing filter (the same one `hire`/`labour` clearly do apply), not intentional design — there is no in-fiction explanation offered anywhere for how the founder alone can practice electrical engineering in 1500 Tenochtitlan for pocket change.
+
+---
+
+# Summary
+
+## Confirmed defects, ranked by confidence
+
+1. **HIGH — `work <trade>` ignores trade-existence gating that `hire`/`labour` enforce.** The founder can earn real wages "working" as chemist, electrician, or engineer — trades the game itself says do not exist in this society (`do_not_exist_here` in `labour`, and `hire` refuses them outright) — at distinct, trade-specific pay rates, not a generic fallback. The `work` command's own "no such trade" error whitelist is the full, civ-agnostic trade list rather than what actually exists in 1500 Mexica society. Repro: `{"cmd":"work","trade":"chemist","hours":10}` -> `{"ok": true, ..., "earned": 1.3, ...}`.
+
+2. **HIGH — Staff are force-fired to zero even with `policy.auto_shed` explicitly set to `false`.** Contradicts the `policy` command's own stated contract ("Anything switched off here you can still do by hand"). Reproduced twice in an isolated session with ample credit headroom remaining (capital well within credit_limit). No event/log line records the layoff either. Repro:
+```
+{"cmd":"policy","set":{"auto_shed":false}}
+{"cmd":"hire","trade":"smith","n":5}
+{"cmd":"step","years":1}   # employees -> {} anyway
+```
+
+3. **HIGH — `state.living_cost` silently bundles the entire staff wage bill into what reads as the founder's personal living expense.** `money`'s breakdown cleanly separates `living_and_appearances` from `wages`; `state.living_cost` is their undocumented sum (verified to match to the decimal: 224.9 + 884.2 = 1109.1). `state` is one of "the four you need first" per onboarding, so this is the more visible of the two, and the misleading one.
+
+4. **HIGH — `path`'s error message under fog is factually wrong for a completed technology.** It claims "you cannot plan a route to something you have not discovered" even when called on a technology confirmed `"done": true`. The real reason (the whole command is disabled under fog, per its own `help` entry) is never stated.
+
+5. **HIGH (but low severity/cosmetic) — the "unknown cmd" fallback error's suggestion list is stale.** It names only 10 of the ~27 real commands, omitting money, quote, close, risk, labour, hire, fire, train, commission, work, mothball, restore, bribe, policy, save, load, help — all confirmed working commands in the same session.
+
+6. **MEDIUM — fractional `step years` values are silently floored with no acknowledgement**, and the floor-vs-reject boundary is inconsistent: 0.999 is rejected ("years must be >= 1") but 1.99 is silently accepted and treated as exactly 1 year, with nothing in the reply indicating less time passed than requested.
+
+## What I attacked and could NOT break
+- Input validation on numeric fields across the board: negative/zero `n`, `hours`, `amount`, `years` on `hire`, `fire`, `train`, `commission`, `buy`, `bribe`, `work`, `step` — all cleanly rejected with a specific, sensible message and (per state checks) no side effects ("Nothing was changed." is stated explicitly on several).
+- Absurdly large numbers (`hire ... n:1000000`, `step years:100000`, `work hours:100000`) — all cleanly rejected before committing any change, quoting real figures back (actual cost vs. capital on hand, actual hours remaining vs. requested).
+- Unknown/bogus ids and trade names across `start`, `stop`, `why`, `bounty`, `mothball`, `buy`, `quote`, `work` — all rejected with clear, on-topic errors; never a stack trace, never a silent no-op that also returned `ok:true`.
+- Malformed JSON and missing-`cmd`-field lines — clean parse-error / validation messages, no crash, program kept accepting further input afterward.
+- Double-starting an already-active project — rejected ("already active"), no duplicate spend.
+- Buying/manumitting with nothing to buy/free — rejected with an accurate reason ("you have no slaves to free").
+- Debt mechanics: capital was allowed to run deeply negative (well past -500 against 400 starting capital) without crashing, interest accrued correctly year over year, `credit_limit` shrank sensibly with rising debt, and the game never silently corrupted state; `ended`/`end_reason` stayed consistently `false`/`null` throughout (I did not manage to trigger a genuine bankruptcy end-state, but I also did not push capital past its still-substantial credit_limit headroom before running low on turns to test with, since 500 years is a lot to burn through by hand).
+- Save/resume across process restarts (the `--session FILE` "sittings" mechanism): quit mid-game, relaunched pointing at the same session file, and `year`, `capital`, `done_count`, `reputation`, and `revenue` all matched exactly what was in flight before quitting. No corruption, no drift.
+- `quit` command itself: clean acknowledgement (`{"ok": true, "bye": true}`) and the process actually exited.
+- Fractional employee counts (e.g. 1.5, 0.96 after attrition) are a deliberate, documented mechanic (`staff_are_fractional_because`), not a bug, and firing more staff than you employ safely clamps to zero rather than going negative or erroring oddly.
+- The `risk` command's historical-hazard content is genuinely Mexica-specific and well-written (Spanish invasion 1519-1521, Old World epidemics 1520-1600, with period-appropriate flavor about friars and the tlatoani's court) — this stands in real contrast to the generic/Roman-flavored cost-engine text (see below) and I could not find any inconsistency in it.
+
+## Things that struck me as confusing or unrealistic (not necessarily bugs)
+- The whole cost/currency layer speaks in Roman terms ("denarii" in `hire`'s cost-refusal message) and tech-note flavor text references "Rome" and "Mesopotamia" for a nominally Mexica, 1500 CE playthrough (`med_cataract_couching`'s note). Strongly suggests a shared, unlocalized knowledge base/engine (matches the `rome/sim/simulator.py` path) — thematically jarring against the otherwise careful, civ-specific `risk` content, but I'm not confident this counts as a "bug" versus a known scope limit of a reused engine.
+- `state.done_count` reporting 128 pre-existing "done" technologies at turn 0, before any player action, was initially confusing since nothing in the four-command onboarding primer explains `done_granted` vs `done_earned`; turned out to be legitimate (starting societal knowledge), confirmed via `why` on an available (not-done) item correctly showing `"done": false`.
+- Several commands (`stop` on a valid-but-inactive id, `fire` beyond what's employed, the forced staff-layoff above) silently no-op or clamp without ever surfacing an event/log line, in contrast to how the world DOES log unrelated flavor events (e.g. "fire in the reed and adobe quarter by the canal") on the very same steps. The asymmetry — trivia gets logged, consequential involuntary losses of the player's own money/staff do not — was the single most disorienting thing about play.
+
+## Session artifacts
+- Final session file: `/home/user/test/rome/playtest/naive3/mexica_1500_BREAK.json` (written by the program itself).
+- These notes: `/home/user/test/rome/playtest/naive3/mexica_1500_BREAK.md`.
+- No repository file was read (source, data, or docs) or modified other than this notes file, per the rules. A second, throwaway isolated session used to isolate the `auto_shed`/`living_cost` findings was run against the same program with its session file kept outside the repo (`/tmp/.../scratchpad/mexica_scratch2.json`), and is not part of the deliverable.

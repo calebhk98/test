@@ -255,28 +255,68 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # payroll it could not carry and never reduced. A run that fired its
         # staff, lived cheaply and started again earned 300 technologies; the
         # same run holding on to eleven people it could not pay earned 18.
-        net = (self.revenue() - self.upkeep() - self.living_cost()
-               - self.mine_operating_cost())
-        # Only when you are ACTUALLY in the red, not merely having an expensive
-        # year. Taking someone on is an investment that costs more than it
-        # returns at first; shedding on a single negative year undid every hire
-        # the moment it was made and a clean run never got a staff at all.
-        if net < 0 and self.capital < 0 and self.employees:
-            # shed, dearest first, until the books balance
+        # TWO THINGS WERE WRONG WITH HOW THIS USED TO DECIDE, and a break tester
+        # found both at once: they hired six smiths with two thirds of their
+        # credit line still unused, stepped one year, and every one of the six
+        # was gone, with nothing whatever in the log to say so.
+        #
+        # 1. The trigger was `capital < 0`, which is being overdrawn, not being
+        #    unable to pay. A household with credit left borrows and makes
+        #    payroll; that is what credit is for, and enforce_credit_limit
+        #    already models the point where it runs out. Letting your staff go
+        #    the first year you dip a denarius below zero, with the lender still
+        #    willing, is not what an enterprise does.
+        # 2. The gap it tried to close was measured with living_cost(), which
+        #    INCLUDES the wage bill, so the deficit being closed was the payroll
+        #    PLUS the founder's own food, rent and appearances. Firing people
+        #    cannot buy your own dinner. Whenever base living exceeded revenue -
+        #    which it does in every early game - the loop ran off the end of the
+        #    staff list and emptied it. And the log line sat inside `if net >=
+        #    0`, so the one case that always happened was the one case that said
+        #    nothing at all.
+        #
+        # The honest rule is that your people are paid out of what is left after
+        # everything else, INCLUDING what somebody will still lend you, and you
+        # shed only the part of the payroll that will not cover.
+        payroll = self.wage_bill()
+        other = (self.upkeep() + (self.living_cost() - payroll)
+                 + self.mine_operating_cost())
+        # capital is negative in arrears; credit_limit() is how far into arrears
+        # anyone will let you go, so this is what you can actually still spend.
+        headroom = max(0.0, self.capital + self.credit_limit())
+        can_pay = self.revenue() - other + headroom
+        # NOT GATED BY A POLICY, and this is the one automatic thing that is not.
+        # A policy switch is for something the game decides FOR you - who to
+        # hire, what to mothball - and every one of those is yours to turn off.
+        # People leaving a household that has no money and no credit to pay them
+        # is not a decision the game is making on your behalf, it is the world
+        # answering one you already made, the same as the arrears bleed below.
+        # The `policy` reply says so in as many words now, because the tester
+        # read its promise as covering this and was entitled to.
+        if payroll > can_pay and self.employees:
+            short = payroll - can_pay
+            gone = 0.0
+            # shed, dearest first, until the wages you are left with fit
             for t in sorted(self.employees, key=lambda t: -ANNUAL_WAGE.get(t, 375.0)):
-                if net >= 0:
+                if short <= 0:
                     break
                 wage = ANNUAL_WAGE.get(t, 375.0) * self.wage_index * self.price_index
                 if wage <= 0:
                     continue
-                cut = min(self.employees[t], (-net) / wage)
+                cut = min(self.employees[t], short / wage)
                 self.employees[t] -= cut
-                net += cut * wage
+                short -= cut * wage
+                gone += cut
                 if self.employees[t] < 0.05:
                     self.employees.pop(t)
             self._resync_pools()
-            if net >= 0:
-                self.log.append((yr, "you cannot pay everyone, so some of them go"))
+            # ALWAYS, not only when it worked. Losing the staff you paid to hire
+            # is more consequential than any of the flavour events that do get
+            # logged, and a player who is not told has to notice their own wage
+            # bill hit zero to find out.
+            if gone > 0.005:
+                self.log.append((yr, "you cannot pay everyone: %.1f of your staff "
+                                     "leave for work that pays" % gone))
         if (self.policy.get("auto_hire", not self.manual) and self.capital > 0):
             # Scaled by the SAME affordability figure staff_capacity() just
             # used for sc_cap/ar_cap (see the comment there): supervision-room
