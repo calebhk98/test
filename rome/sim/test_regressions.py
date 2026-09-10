@@ -383,6 +383,39 @@ for f in civ_files:
         missing_lore.append(d.get("id", f))
 check("every civilisation has its opening written", not missing_lore, str(missing_lore))
 
+# --- round two, section M: the robustness batch
+r, _, _ = proto([{"cmd": "save", "file": "/etc/should_not_happen.json"},
+                 {"cmd": "save", "file": "../../escape.json"},
+                 {"cmd": "save", "file": "notasave.txt"}])
+check("a save cannot be written outside the game directory",
+      all(not x.get("ok") for x in r), str([x.get("ok") for x in r]))
+check("/etc was not written to", not os.path.exists("/etc/should_not_happen.json"))
+
+r, _, _ = proto([{"cmd": "step", "years": 100000}, {"cmd": "step", "years": True}])
+check("step refuses more years than the game contains", not r[0].get("ok"),
+      str(r[0])[:80])
+check("step refuses true as a number of years", not r[1].get("ok"), str(r[1])[:80])
+
+r, _, _ = proto([{"cmd": "hire", "trade": "smith", "n": "banana"},
+                 {"cmd": "bribe", "amount": "lots"},
+                 {"cmd": "state"}])
+check("a quantity that is not a number is refused, not defaulted",
+      not r[0].get("ok") and not r[1].get("ok") and not r[2].get("employees"),
+      str(r[0].get("error"))[:70])
+
+r, _, _ = proto([{"cmd": "quote", "what": "mine", "material": "gold", "n": 1}])
+check("a mine can be priced before it is bought",
+      r[0].get("ok") and r[0].get("to_sink_it", 0) > 0
+      and r[0].get("every_year_it_stands", 0) > 0, str(r[0])[:90])
+
+r, _, _ = proto([{"cmd": "buy", "what": "mine", "material": "coal", "n": 20},
+                 {"cmd": "step", "years": 5}, {"cmd": "state"},
+                 {"cmd": "close", "material": "coal"}, {"cmd": "state"}])
+check("a mine can be closed, and stops costing",
+      r[2].get("mine_operating_cost", 0) > 0 and r[4].get("mine_operating_cost") == 0,
+      "before %s after %s" % (r[2].get("mine_operating_cost"),
+                              r[4].get("mine_operating_cost")))
+
 # --- reproducibility: the same seed must give the same answer, and it must not
 #     depend on PYTHONHASHSEED.
 #

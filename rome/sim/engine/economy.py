@@ -615,6 +615,58 @@ class EconomyMixin:
                            "gold": 42000.0}
     MINE_LEAD_YEARS = 3.0        # sinking, drainage, roads, and hiring
 
+    def mine_quote(self, mat, t_per_yr):
+        """What a mine would cost, BEFORE you commit to it.
+
+        A tester asked for one tonne of gold a year - the same order as the
+        example in the help text - and went from 38,151 denarii to zero on a
+        single command, with no price shown and no way to ask. Five years later
+        the workings were mothballed for non-payment and they were in debt
+        bondage. Every other purchase in this game quotes before it charges.
+        """
+        cap = self.MINE_CAPEX_PER_T_YR.get(mat)
+        if cap is None:
+            return None
+        t = max(0.0, float(t_per_yr))
+        sink = t * cap * self.price_index
+        opex = t * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index
+        return {"material": mat,
+                "tonnes_per_year": round(t, 3),
+                "to_sink_it": round(sink, 1),
+                "every_year_it_stands": round(opex, 1),
+                "years_before_it_produces": self.MINE_LEAD_YEARS,
+                "you_have": round(self.capital, 1),
+                "you_can_afford_about": round(
+                    max(0.0, self.capital) / max(cap * self.price_index, 1e-9), 3),
+                "note": "The yearly cost is charged whether or not you use the "
+                        "output, and goes on until you close it. Mothballing is "
+                        "not free to reverse: the shaft floods and the crew "
+                        "disperses, so reopening means sinking it again."}
+
+    def close_mine(self, mat):
+        """Shut your own workings down, on purpose.
+
+        The engine mothballs mines it cannot pay for and there was no way for a
+        player to ask. A tester was billed 28.1 a year in perpetuity for a gold
+        mine producing 0.0 tonnes and could do nothing about it.
+        """
+        mat = str(mat or "").strip().lower()
+        have = self.mine_capacity.get(mat, 0.0)
+        pend = [t for t in getattr(self, "mine_tranches", []) if t[0] == mat]
+        if not have and not pend:
+            return False, ("you have no %s workings, and none being sunk" % mat
+                           if mat in self.MINE_CAPEX_PER_T_YR
+                           else "no such material: %s. Mineable: %s"
+                                % (mat, ", ".join(sorted(self.MINE_CAPEX_PER_T_YR))))
+        saved = have * self.MINE_OPEX_PER_T.get(mat, 0.0) * self.price_index
+        self.mine_capacity.pop(mat, None)
+        self.mine_tranches = [t for t in getattr(self, "mine_tranches", [])
+                              if t[0] != mat]
+        self.log.append((self.year, "you close the %s workings" % mat))
+        return True, ("the %s workings are closed. You stop paying %.0f a year. "
+                      "What you spent sinking them is gone, and reopening means "
+                      "sinking them again." % (mat, saved))
+
     def open_mine(self, mat, t_per_yr):
         """Open your own workings.
 

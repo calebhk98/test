@@ -278,6 +278,11 @@ def _agent_help(s, topic=None):
             "stop <id>": "abandon it, losing what you have spent",
             "step <years>": "let time pass",
             "money": "the whole ledger: what comes in, what goes out",
+            "quote <what>": "what something would cost before you commit to it; "
+                            'so far {"cmd":"quote","what":"mine",'
+                            '"material":"coal","n":500}',
+            "close <material>": "shut your own workings down and stop paying to "
+                                "keep them standing",
             "risk": "what history is about to do to you, and what blunts it",
             "labour": "who you employ and what trades exist here",
             "hire / fire / train / commission": "see the labour topic",
@@ -320,7 +325,12 @@ def _agent_help(s, topic=None):
                               "coppice, which is where charcoal comes from",
                 "buy mine": '{"cmd":"buy","what":"mine","material":"coal","n":500} '
                             "tonnes a year of your own workings; it takes years "
-                            "to sink. Materials: " + ", ".join(Sim.MINE_CAPEX_PER_T_YR),
+                            "to sink, and it costs to keep standing whether or "
+                            "not you use it. ASK THE PRICE FIRST with "
+                            '{"cmd":"quote","what":"mine","material":"coal",'
+                            '"n":500}, and close it with '
+                            '{"cmd":"close","material":"coal"}. Materials: '
+                            + ", ".join(Sim.MINE_CAPEX_PER_T_YR),
                 "buy slaves": '{"cmd":"buy","what":"slaves","n":5}. This is '
                               "available because it was the ordinary condition of "
                               "production in most of these societies, and a model "
@@ -632,6 +642,60 @@ def _node_explain(s, nodes, k):
                                      "Different from hired_labour, which is hours of "
                                      "a job.")
     return out
+
+
+SAVE_SUFFIXES = (".json", ".save")
+
+
+def _unsafe_path(path):
+    """None if this is a reasonable place for a save file; a refusal if not.
+
+    Deliberately conservative rather than clever: a save must be a .json or
+    .save file, must not be absolute, and must not climb out of where the game
+    was started. That covers writing into /etc, which a tester did, without
+    pretending to be a security boundary - anyone who can send commands to this
+    process can already run code as this user. It is here so the ordinary
+    accident does not happen, not because a sandbox exists.
+    """
+    if os.path.isabs(path):
+        return ("a save file must be a relative path, not an absolute one. "
+                "Try {\"cmd\":\"save\",\"file\":\"mygame.json\"}")
+    norm = os.path.normpath(path)
+    if norm.startswith(".." + os.sep) or norm == "..":
+        return "a save file cannot be written outside the directory you started in"
+    if not norm.lower().endswith(SAVE_SUFFIXES):
+        return "a save file should end in %s" % " or ".join(SAVE_SUFFIXES)
+    return None
+
+
+def _qty(cmd, key, default=None):
+    """Read a quantity, or say why it is not one. Returns (value, error).
+
+    _num() silently substitutes a default for anything it cannot read, which
+    meant {"cmd":"hire","trade":"smith","n":"banana"} hired one smith and
+    echoed "n": "banana" back in the reply as though that had been honoured.
+    A number that cannot be read is a mistake, and the useful thing to do with
+    a mistake is name it. A numeric string is still accepted, because "5" is
+    unambiguous and refusing it helps nobody.
+    """
+    v = cmd.get(key, default)
+    if v is None:
+        return None, "%s is required" % key
+    if isinstance(v, bool):
+        return None, "%s must be a number, not true or false" % key
+    if isinstance(v, (int, float)):
+        f = float(v)
+    elif isinstance(v, str):
+        try:
+            f = float(v.strip())
+        except ValueError:
+            return None, "%s must be a number, not %r" % (key, v)
+    else:
+        return None, "%s must be a number, not %s" % (key, type(v).__name__)
+    if f != f or f in (float("inf"), float("-inf")):
+        return None, ("%s must be a real number; NaN and Infinity are not "
+                      "quantities" % key)
+    return f, None
 
 
 def _num(v, default=0.0):
@@ -968,7 +1032,10 @@ def _agent_dispatch(s, nodes, cmd):
     if op == "hire":
         if ended:
             return {"ok": False, "error": "the run has ended (%s)" % ended}
-        ok, err = s.hire(cmd.get("trade"), _num(cmd.get("n"), 1))
+        n, err = _qty(cmd, "n", 1)
+        if err:
+            return {"ok": False, "error": err + ". Nothing was changed."}
+        ok, err = s.hire(cmd.get("trade"), n)
         if not ok:
             return {"ok": False, "error": err}
         return {"ok": True, "hired": cmd.get("trade"), "n": cmd.get("n"),
@@ -977,7 +1044,10 @@ def _agent_dispatch(s, nodes, cmd):
                 "capital": round(s.capital, 1)}
 
     if op in ("fire", "dismiss"):
-        ok, err = s.fire(cmd.get("trade"), _num(cmd.get("n"), 1))
+        n, err = _qty(cmd, "n", 1)
+        if err:
+            return {"ok": False, "error": err + ". Nothing was changed."}
+        ok, err = s.fire(cmd.get("trade"), n)
         if not ok:
             return {"ok": False, "error": err}
         return {"ok": True, "let_go": cmd.get("trade"),
@@ -986,7 +1056,10 @@ def _agent_dispatch(s, nodes, cmd):
     if op == "train":
         if ended:
             return {"ok": False, "error": "the run has ended (%s)" % ended}
-        ok, msg = s.train(cmd.get("trade"), _num(cmd.get("n"), 1), cmd.get("from"))
+        n, err = _qty(cmd, "n", 1)
+        if err:
+            return {"ok": False, "error": err + ". Nothing was changed."}
+        ok, msg = s.train(cmd.get("trade"), n, cmd.get("from"))
         if not ok:
             return {"ok": False, "error": msg}
         return {"ok": True, "training": msg, "capital": round(s.capital, 1),
@@ -996,7 +1069,10 @@ def _agent_dispatch(s, nodes, cmd):
     if op in ("commission", "job"):
         if ended:
             return {"ok": False, "error": "the run has ended (%s)" % ended}
-        ok, msg = s.commission(cmd.get("trade"), _num(cmd.get("hours"), 0))
+        hours, err = _qty(cmd, "hours")
+        if err:
+            return {"ok": False, "error": err + ". Nothing was changed."}
+        ok, msg = s.commission(cmd.get("trade"), hours)
         if not ok:
             return {"ok": False, "error": msg}
         return {"ok": True, "commissioned": msg, "capital": round(s.capital, 1),
@@ -1014,8 +1090,37 @@ def _agent_dispatch(s, nodes, cmd):
             return {"ok": False, "error": msg}
         return {"ok": True, "restored": msg, "capital": round(s.capital, 1)}
 
+    if op in ("quote", "price"):
+        what = (cmd.get("what") or "mine").strip().lower()
+        if what != "mine":
+            return {"ok": False, "error": 'only mines can be quoted so far: '
+                                          '{"cmd":"quote","what":"mine",'
+                                          '"material":"coal","n":500}'}
+        n, err = _qty(cmd, "n", 1)
+        if err:
+            return {"ok": False, "error": err}
+        q = s.mine_quote(cmd.get("material"), n)
+        if q is None:
+            return {"ok": False, "error": "no such material: %r. Mineable: %s"
+                    % (cmd.get("material"), ", ".join(sorted(Sim.MINE_CAPEX_PER_T_YR)))}
+        return dict(ok=True, **q)
+
+    if op in ("close", "close_mine"):
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        ok, msg = s.close_mine(cmd.get("material") or cmd.get("what"))
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "closed": msg,
+                "mine_operating_cost": round(s.mine_operating_cost(), 1)}
+
     if op == "bribe":
-        ok, msg = s.bribe(_num(cmd.get("amount"), 0))
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        amount, err = _qty(cmd, "amount")
+        if err:
+            return {"ok": False, "error": err + ". Nothing was changed."}
+        ok, msg = s.bribe(amount)
         if not ok:
             return {"ok": False, "error": msg}
         return {"ok": True, "bribed": msg, "capital": round(s.capital, 1)}
@@ -1054,6 +1159,14 @@ def _agent_dispatch(s, nodes, cmd):
         path = cmd.get("file") or cmd.get("path")
         if not isinstance(path, str) or not path:
             return {"ok": False, "error": 'give a filename, e.g. {"cmd":"save","file":"mygame.json"}'}
+        # A SAVE FILE IS A SAVE FILE, not a way to write anywhere on the disk.
+        # A tester confirmed this would write into /etc/, and that a relative
+        # path scattered files through the repository root. The game is played
+        # by pointing agents and scripts at it; "name a path and I will write
+        # there" is not a thing it should offer.
+        bad = _unsafe_path(path)
+        if bad:
+            return {"ok": False, "error": bad}
         try:
             if op == "save":
                 save_state(s, path)
@@ -1070,12 +1183,27 @@ def _agent_dispatch(s, nodes, cmd):
             return {"ok": False, "error": "the run has ended (%s); time cannot advance. "
                                           "Use {\"cmd\":\"state\"} to see the final position."
                                           % ended}
+        raw_years = cmd.get("years", 1)
+        # `True` is an int in Python and stepped one year silently. A player who
+        # sends true meant something, and it was not that.
+        if isinstance(raw_years, bool):
+            return {"ok": False, "error": "years must be a number, not true or false"}
         try:
-            years = int(cmd.get("years", 1))
+            years = int(raw_years)
         except (TypeError, ValueError):
             return {"ok": False, "error": "years must be an integer"}
         if years < 1:
             return {"ok": False, "error": "years must be >= 1"}
+        # A tester sent 100000 and the run silently ended. Nothing is gained by
+        # accepting a number larger than the game can contain, and a typo that
+        # ends your run without saying so is the worst kind of accepted input.
+        left = max(0, s.end_year - s.year)
+        if years > left:
+            return {"ok": False,
+                    "error": "there are only %d years left before the horizon at "
+                             "%d. Ask for %d or fewer, or fewer still if you want "
+                             "to see what happens on the way."
+                             % (left, s.end_year, left)}
         completed, events = [], []
         end_year = s.end_year
         for _ in range(years):

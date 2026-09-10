@@ -272,6 +272,10 @@ class LabourMixin:
         if trade not in WAGES:
             return False, ("no such trade: %s. Trades: %s"
                            % (trade, ", ".join(sorted(WAGES))))
+        if isinstance(n, str) or isinstance(n, bool):
+            # `buy` and `start` both type-check and `hire` did not, so "5"
+            # walked straight in where 5 was meant.
+            return False, "n must be a number, not %r" % (n,)
         if n <= 0:
             return False, "n must be greater than zero. Nothing was changed."
         if not self.trade_available(trade):
