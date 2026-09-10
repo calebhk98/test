@@ -332,7 +332,18 @@ STARTING_KITS = {
     "merchant":    {"den": 4000,  "desc": "a modest trading capital. You can fund one real venture."},
     "rich_merchant":{"den": 20000,"desc": "wealthy but well under the equestrian census of 100,000."},
     "equestrian":  {"den": 100000,"desc": "the equestrian census exactly. Conspicuous."},
-    "absurd":      {"den": 1000000,"desc": "four senatorial fortunes in unminted gold. It used to make things worse and no longer does: once money can be converted into protection and into sunk mines, wealth helps. What it does NOT do is make you a magician, and across the whole kit range the medians sit inside the noise band anyway."},
+    # "the medians sit inside the noise band" is what this used to claim, and a
+    # break tester called it false. They were right, though their measurement
+    # (technologies built by year 12: 8 destitute, 51 poor_scholar, 143
+    # rich_merchant) was of the OPENING rather than the finish, which is the
+    # part money moves most. Measured on the finish as well - Rome, 8 runs a
+    # kit, one seed - the median year the transistor is reached runs 476
+    # destitute, 489 poor_scholar, 468 rich_merchant, 434 absurd. The first
+    # three are inside each other's spread; a million denarii is not. So the
+    # claim was true of the middle of the range and false at the top of it,
+    # which is exactly the kind of statement that should not be made in one
+    # sentence about "the whole kit range".
+    "absurd":      {"den": 1000000,"desc": "four senatorial fortunes in unminted gold. It used to make things worse and no longer does: once money can be converted into protection and into sunk mines, wealth helps. What it does NOT do is make you a magician: a million denarii buys perhaps a tenth off the time, not a different game. What money changes most is the OPENING - the first fifty years, where a poor founder is choosing between eating and building."},
 }
 
 DEFAULTS = dict(
