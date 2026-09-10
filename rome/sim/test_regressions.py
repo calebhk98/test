@@ -2930,6 +2930,120 @@ if os.path.exists(_wsvp):
     os.remove(_wsvp)
 
 
+# ======================================================================
+# ROUND 8d: things the game said that were not true, and levers it lacked.
+# ======================================================================
+
+# --- BREAK: "waiting on money" while holding 73,234,107 denarii against
+# 45,448 owed. step() pays at most one year's instalment - the cost over the
+# node's calendar floor - so a ten-year work absorbs a tenth a year however
+# rich you are, and nothing anywhere said there was a pace at all.
+from engine.protocol import _waiting_on as _WO
+s_pace = sim(capital=50000000.0)
+_slow = "academy_network"
+s_pace.active[_slow] = dict(ph_left=0.0, yrs=1.0, spent=0.0,
+                            cost_left=s_pace.project_cost(_slow))
+_msg_rich = _WO(s_pace, NODES, _slow, s_pace.active[_slow],
+                s_pace.active[_slow]["cost_left"])
+check("a rich player is told the pace, not that they are short of money",
+      "pace" in _msg_rich and "a year" in _msg_rich, _msg_rich)
+check("...and is told how many more years that pace needs",
+      "year" in _msg_rich and any(c.isdigit() for c in _msg_rich), _msg_rich)
+s_broke = sim(capital=1.0)
+s_broke.credit_limit = lambda: 0.0
+s_broke.active[_slow] = dict(ph_left=0.0, yrs=1.0, spent=0.0,
+                             cost_left=s_broke.project_cost(_slow))
+_msg_poor = _WO(s_broke, NODES, _slow, s_broke.active[_slow],
+                s_broke.active[_slow]["cost_left"])
+check("...and a player who really cannot raise the instalment is told that",
+      _msg_poor.startswith("money"), _msg_poor)
+
+# --- BREAK: auto_train started engineers, chemists AND machinists against a
+# thinner revenue than their wages, and turning the policy off did not stop
+# what was in flight. No command anywhere could.
+s_tr = sim(capital=200000.0)
+ok_t, _ = s_tr.train("machinist", 3)
+check("teaching a trade puts people in training", ok_t and s_tr.training, s_tr.training)
+ok_f, note_f = s_tr.fire("machinist", 3)
+check("dismissing a trade you are teaching cancels the apprenticeship",
+      ok_f and not [r for r in s_tr.training if len(r) > 3 and r[2] == "machinist"],
+      (note_f, s_tr.training))
+check("...and says so, because what you paid to feed them is spent",
+      note_f and "stopped teaching" in note_f, note_f)
+s_tr2 = sim(capital=200000.0)
+check("firing a trade you neither employ nor teach is still refused",
+      s_tr2.fire("machinist", 1)[0] is False, s_tr2.fire("machinist", 1)[1])
+
+# --- BREAK: `work` silently took the hours out of the practice. 500 hours as
+# a scribe paid 80.1 and cost 58.3 of practice income the same instant.
+_rw, _, _ = proto([{"cmd": "work", "trade": "scribe", "hours": 500}])
+check("selling your hours says what it cost your own practice",
+      _rw[0].get("it_cost_your_own_practice", 0) > 0.5, _rw[0])
+check("...and says what you are actually up on the trade",
+      abs((_rw[0]["earned"] - _rw[0]["it_cost_your_own_practice"])
+          - _rw[0]["so_you_are_up"]) < 0.11, _rw[0])
+
+# --- BREAK: the run ended with one sentence and then a queue of identical
+# refusals. A play tester started a whole second game with the fog off just to
+# learn how far along the road they had died.
+s_fin = sim()
+s_fin.year = 600
+from engine.protocol import final_report as _FRPT, render_final as _RF
+_fr = _FRPT(s_fin, NODES)
+check("the end of a run reports how far along the road it got",
+      _fr.get("the_whole_road_was", 0) > 100
+      and _fr.get("still_to_build_when_it_ended") is not None, _fr.get("the_goal"))
+check("...and names the steps that would have come next",
+      len(_fr.get("the_next_things_would_have_been") or []) > 0,
+      _fr.get("the_next_things_would_have_been"))
+check("...and renders as a page, not a dict dump",
+      "THE RUN IS OVER" in _RF(_fr) and "{" not in _RF(_fr), _RF(_fr)[:80])
+
+# --- BREAK: `help money` and `help economy` printed the same page, and both
+# were listed as separate topics.
+_hm, _, _ = proto([{"cmd": "help", "topic": "money"},
+                   {"cmd": "help", "topic": "economy"}])
+check("help money and help economy are not the same page",
+      json.dumps(_hm[0]) != json.dumps(_hm[1]),
+      list((_hm[0].get("help") or {}).keys())[:3])
+check("...and help money explains why the practice pays a third",
+      "third" in json.dumps(_hm[0]), json.dumps(_hm[0])[:120])
+
+# --- BREAK: `available "power and precision"` matched nothing while the
+# unquoted form worked, and said nothing about why.
+_aq, _, _ = proto([{"cmd": "available", "subject": '"power and precision"'},
+                   {"cmd": "available", "subject": "power and precision"}])
+check("a quoted subject means the same as an unquoted one",
+      _aq[0].get("count") == _aq[1].get("count") and _aq[0].get("count", 0) > 0,
+      (_aq[0].get("count"), _aq[1].get("count")))
+
+# --- BREAK: HEARD OF was a silent slice at 25 in a game with a thousand nodes
+# in play: no note that it was cut, and no way to see the rest.
+s_h = sim()
+s_h.fog = True
+s_h.done.update(list(NODES)[:900]); s_h._done_changed()
+for _k in list(NODES)[:900]:
+    s_h.reveal_from(_k)
+_p1 = S._agent_available(s_h, NODES, {})
+_p2 = S._agent_available(s_h, NODES, {"heard_offset": 25})
+check("a truncated 'heard of' list says it was truncated",
+      _p1.get("and_more_you_have_heard_of"), _p1.get("and_more_you_have_heard_of"))
+check("...and can be paged through",
+      _p2.get("heard_of_but_cannot_begin")
+      and not ({x["id"] for x in _p1["heard_of_but_cannot_begin"]}
+               & {x["id"] for x in _p2["heard_of_but_cannot_begin"]}),
+      len(_p2.get("heard_of_but_cannot_begin") or []))
+
+# --- BREAK: `_TECH_EFFECTS` offered as a playable civilisation.
+_civerr = ""
+try:
+    S.load_civ("rome")
+except SystemExit as e:
+    _civerr = str(e)
+check("the reference data files are not offered as civilisations to play",
+      "_TECH_EFFECTS" not in _civerr and "rome_100ad" in _civerr, _civerr)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

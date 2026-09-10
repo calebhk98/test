@@ -83,10 +83,98 @@ def _waiting_on(s, nodes, k, st, bill):
     if short:
         return "nobody to do the work: " + "; ".join(sorted(short)[:3])
     if st["ph_left"] <= 0 and bill > 0.5:
-        return "money"
+        # MONEY YOU HAVE IS NOT MONEY YOU ARE SHORT OF. step() pays at most one
+        # year's instalment - the cost divided by the node's calendar floor -
+        # so a ten-year work absorbs a tenth of its bill a year however rich
+        # you are. This said "waiting on money" to a play tester holding
+        # 73,234,107 denarii against 45,448 still owed, which is not a
+        # diagnosis, it is a contradiction. What they were waiting on was the
+        # calendar, and nothing anywhere said there was a pace at all.
+        per_year = s.project_cost(k) * frac
+        if per_year > 0.5 and s.capital + s.credit_limit() * 0.5 >= per_year:
+            return ("the pace it can absorb money: at most %s a year goes into "
+                    "this (%s still owed, about %.0f more year%s at that rate). "
+                    "Money in hand cannot buy it down faster"
+                    % ("{:,.0f}".format(per_year), "{:,.0f}".format(bill),
+                       math.ceil(bill / per_year),
+                       "" if math.ceil(bill / per_year) == 1 else "s"))
+        return ("money: %s still owed and this year's instalment of %s is more "
+                "than you can raise" % ("{:,.0f}".format(bill),
+                                        "{:,.0f}".format(per_year)))
     if st["ph_left"] <= 0:
         return "the calendar"
     return "your hours"
+
+
+def final_report(s, nodes):
+    """The scoreboard, once the run is over.
+
+    Two play testers finished long runs and got one sentence - "you built 1944
+    things and did not reach point-contact transistor" - then a queue of
+    identical refusals. One started a whole second game with the fog off and
+    ran `path` just to learn that the goal is 142 nodes deep and which one
+    they had stopped at. That is a question the game should answer when there
+    is nothing left to spoil: the run is finished, so showing the road is the
+    reward for finishing it, not a leak.
+    """
+    goal = getattr(s, "goal", None)
+    earned = sorted(s.done - s.granted)
+    out = {"ended_in": s.year, "why": _agent_end_reason(s),
+           "you_built": len(earned),
+           "this_society_already_had": len(s.granted),
+           "money": round(s.capital, 1),
+           "people": round(s.headcount(), 1),
+           "reputation": round(s.reputation, 1),
+           "concerns_you_were_running": len(getattr(s, "operating", ())),
+           "failed_attempts": sum(getattr(s, "failed_attempts", {}).values())}
+    if goal and goal in nodes:
+        need = closure(nodes, goal)
+        left = [x for x in topo_order(nodes, need) if x not in s.done]
+        out["the_goal"] = goal
+        out["reached_it"] = bool(s.goal_year)
+        out["the_whole_road_was"] = len(need)
+        out["you_had_%d_of_them" % (len(need) - len(left))] = len(need) - len(left)
+        out["still_to_build_when_it_ended"] = len(left)
+        # The next few steps you never took, in the order you would have taken
+        # them. Under fog this is the first sight of the road; the run is over.
+        out["the_next_things_would_have_been"] = left[:8]
+        out["and_the_last_step"] = goal
+    biggest = sorted(earned, key=lambda k: -nodes[k]["_total_cost"])[:6]
+    out["the_largest_things_you_built"] = biggest
+    return out
+
+
+def render_final(out):
+    L = ["=" * 70, "THE RUN IS OVER", "=" * 70]
+    L.append(_wrap(str(out.get("why") or ""), indent="  "))
+    L.append("")
+    L.append("  ended in %s AD" % _fmt_num(out.get("ended_in")))
+    L.append("  you built %s things; this society already had %s"
+             % (_fmt_num(out.get("you_built")),
+                _fmt_num(out.get("this_society_already_had"))))
+    L.append("  %s in hand, %s people, reputation %s, %s concerns running"
+             % (_fmt_num(out.get("money")), _fmt_num(out.get("people")),
+                _fmt_num(out.get("reputation")),
+                _fmt_num(out.get("concerns_you_were_running"))))
+    if out.get("failed_attempts"):
+        L.append("  %s attempts failed and had to be begun again"
+                 % _fmt_num(out["failed_attempts"]))
+    if out.get("the_goal"):
+        L.append("")
+        _had = next((v for k, v in out.items() if k.startswith("you_had_")), 0)
+        L.append("  THE ROAD TO %s" % str(out["the_goal"]).upper())
+        L.append("    %s nodes in all; you had %s of them and %s were still to build"
+                 % (_fmt_num(out.get("the_whole_road_was")), _fmt_num(_had),
+                    _fmt_num(out.get("still_to_build_when_it_ended"))))
+        nxt = out.get("the_next_things_would_have_been") or []
+        if nxt:
+            L.append("    the next steps would have been: " + ", ".join(nxt))
+    big = out.get("the_largest_things_you_built") or []
+    if big:
+        L.append("")
+        L.append("  the largest things you built: " + ", ".join(big))
+    L.append("=" * 70)
+    return "\n".join(L)
 
 
 def _agent_state(s, nodes, cmd=None):
@@ -481,7 +569,33 @@ def _agent_help(s, topic=None):
                               "buy a job rather than a person",
             }}
 
-    if topic in ("economy", "money", "buy"):
+    if topic == "money":
+        # `help money` and `help economy` printed the same page, and both were
+        # listed as separate topics, so a play tester read one and expected
+        # something else from the other. Money is where it comes from and where
+        # it goes; economy is what you can buy with it.
+        return {"where it comes from": (
+            "Your practice - the trade this society already had, which you can "
+            "do from the first day - plus every concern you have OPENED, plus "
+            'what your own workshop sells. {"cmd":"money"} itemises all of it '
+            "and the rows sum to the revenue above them."),
+            "your practice pays less than the tree quotes": (
+                "About a third: one person in a rented room is not an organised "
+                "concern, and that gap does not close with time. Selling your "
+                "hours for wages takes another bite, because you cannot be in "
+                "two places."),
+            "a concern you open starts small": (
+                "It reaches its full figure over about three years."),
+            "where it goes": (
+                "Living and appearances (which rise with your wealth and your "
+                "standing), wages, the upkeep of what you are RUNNING, mines "
+                "standing whether or not you work them, and interest on "
+                "arrears."),
+            "what you can buy": '{"cmd":"help","topic":"economy"}',
+            "debt": "You may spend past what you have, as far as somebody will "
+                    "lend you and no further. Arrears cost interest."}
+
+    if topic in ("economy", "buy"):
         return {"the ledger": '{"cmd":"money"} itemises what comes in and what '
                               "goes out, including where the income comes from",
                 "buy forest": '{"cmd":"buy","what":"forest","n":100} hectares of '
@@ -729,8 +843,12 @@ def _agent_available(s, nodes, cmd=None):
                   and nodes[k]["_total_cost"] <= 1
                   and not s._is_foreign_institution(k))]
 
-    want_subject = (cmd.get("subject") or cmd.get("group") or "").strip().lower()
-    find = (cmd.get("find") or cmd.get("search") or "").strip().lower()
+    # QUOTES ARE THE NATURAL INSTINCT for a subject with a space in it, and
+    # `available "power and precision"` silently matched nothing while the
+    # unquoted form worked. Strip them rather than failing quietly.
+    want_subject = (cmd.get("subject") or cmd.get("group") or "").strip()
+    want_subject = want_subject.strip('"\'').lower()
+    find = (cmd.get("find") or cmd.get("search") or "").strip().strip('"\'').lower()
     show_all = bool(cmd.get("all"))
     try:
         limit = int(cmd.get("limit", 0))
@@ -749,6 +867,19 @@ def _agent_available(s, nodes, cmd=None):
     elif want_subject:
         sel = [k for k in ok if want_subject in _subject_of(nodes[k]).lower()]
         why_these = "in %r" % want_subject
+        if not sel:
+            # THE SUMMARY COUNTED IT AND THE FILTER DID NOT. `available` listed
+            # "society and politics 1 1,200 1,200 1" and `available society and
+            # politics` answered "nothing in it", because the one item was
+            # already active. Say which, rather than appearing to disagree with
+            # the line above it.
+            _busy = sorted(k for k in nodes
+                           if want_subject in _subject_of(nodes[k]).lower()
+                           and (k in s.active or k in s.done)
+                           and (not fog or s.is_visible(k)))
+            if _busy:
+                why_these += (" - nothing left to begin; you already have or "
+                              "are working on " + ", ".join(_busy[:4]))
     if afford is not None:
         sel = [k for k in sel if s.project_cost(k) <= afford]
     # PAGE IN THE ORDER YOU DISPLAY. Each page was sorted by cost as it was
@@ -758,7 +889,7 @@ def _agent_available(s, nodes, cmd=None):
     if find or want_subject or limit or offset or show_all or afford is not None:
         sel = sorted(sel, key=lambda k: (s.project_cost(k), k))
 
-    heard, heard_more = [], 0
+    heard, heard_more, heard_from = [], 0, 0
     if fog:
         # CLOSEST FIRST, NOT ALPHABETICALLY. This sorted by id and cut at 25, so
         # the list a player reads was always the same handful of things
@@ -773,8 +904,17 @@ def _agent_available(s, nodes, cmd=None):
         _heard_all.sort(key=lambda k: (sum(1 for p_ in nodes[k]["pre"]
                                            if p_ not in s.done),
                                        nodes[k]["tier"], k))
-        heard = _heard_all[:25]
-        heard_more = max(0, len(_heard_all) - len(heard))
+        # PAGEABLE, and it says when it is cut. This was a silent slice at 25
+        # in a game where a play tester had a thousand nodes in play: no note
+        # that it was truncated and no way to see the rest. `heard_offset`
+        # pages it, the same way `offset` pages the startable list.
+        try:
+            _hoff = max(0, int(cmd.get("heard_offset", 0)))
+        except (TypeError, ValueError):
+            _hoff = 0
+        heard = _heard_all[_hoff:_hoff + 25]
+        heard_more = max(0, len(_heard_all) - _hoff - len(heard))
+        heard_from = _hoff
     heard_block = [{"id": k, "name": nodes[k]["name"],
                     "why_not": s.start_reason(k)[1]} for k in heard]
 
@@ -793,8 +933,13 @@ def _agent_available(s, nodes, cmd=None):
             # instead - and, under fog, say only what a player is entitled to
             # know: that nothing they can begin TODAY matches. Whether the
             # thing exists at all in the tree is exactly what fog withholds.
+            # SAY WHAT IT SEARCHED. A play tester read `available find cap_`
+            # coming back empty as the search ignoring ids - it does not; it
+            # searches both, and only among what is startable NOW, which at
+            # that point in their run was the true answer.
             out["nothing_matched"] = (
-                "Nothing you could begin today matches that."
+                "Nothing you could begin today matches that. This looks at both "
+                "ids and names, but only among what you could start now."
                 + (" That does not mean there is no such thing; it means "
                    "nothing in front of you right now answers to it. Try a "
                    "shorter word, or a subject: 'available metallurgy'."
@@ -806,7 +951,9 @@ def _agent_available(s, nodes, cmd=None):
         if fog and heard_block and offset == 0:
             out["heard_of_but_cannot_begin"] = heard_block
             if heard_more:
-                out["and_more_you_have_heard_of"] = heard_more
+                out["and_more_you_have_heard_of"] = (
+                    "%d more, nearest first; ask again with heard_offset %d"
+                    % (heard_more, heard_from + len(heard_block)))
         return out
 
     # DEFAULT: the digest.
@@ -865,7 +1012,10 @@ def _agent_available(s, nodes, cmd=None):
     if fog and heard_block:
         out["heard_of_but_cannot_begin"] = heard_block
         if heard_more:
-            out["and_more_you_have_heard_of"] = heard_more
+            out["and_more_you_have_heard_of"] = (
+                'ask again with {"cmd":"available","heard_offset":%d} for %d '
+                "more, nearest first"
+                % (heard_from + len(heard_block), heard_more))
     if fog:
         out["note"] = ("Under fog you see only what you could begin now, and things "
                        "you have heard of. There is no way to see the whole tree.")
@@ -1452,6 +1602,8 @@ def render_available(out):
         L.append("HEARD OF, CANNOT BEGIN YET:")
         for h in heard:
             L.append("  %-34s %s" % (h["id"], h.get("why_not") or ""))
+        if out.get("and_more_you_have_heard_of"):
+            L.append("  " + str(out["and_more_you_have_heard_of"]))
     if out.get("note"):
         L.append("")
         L.append(_wrap(out["note"]))
@@ -2194,6 +2346,8 @@ def parse_typed(line):
                 out["limit"] = int(_typed_number(nxt) or 0); i += 1
             elif w == "offset" and nxt is not None:
                 out["offset"] = int(_typed_number(nxt) or 0); i += 1
+            elif w in ("heard", "heard_offset") and nxt is not None:
+                out["heard_offset"] = int(_typed_number(nxt) or 0); i += 1
             elif _typed_number(w) is not None:
                 out["afford"] = _typed_number(w)
             elif w in ("subject", "group", "in") and nxt:
@@ -2785,15 +2939,32 @@ def _agent_dispatch_inner(s, nodes, cmd):
     if op == "work":
         if ended:
             return {"ok": False, "error": "the run has ended (%s)" % ended}
+        # WHAT THE PRACTICE WAS EARNING BEFORE YOU TOOK THE JOB. Selling your
+        # hours takes them out of your own surgery, which is where most of your
+        # income comes from at the start - so a play tester earned 80.1 for 500
+        # hours as a scribe and lost 58.3 of practice income the same instant,
+        # netting 22 for a quarter of their year. Nothing anywhere said founder
+        # hours drove revenue, and they only found it by diffing the ledger.
+        _rev_before = s.revenue()
         pay, err = s.work_for_wages(cmd.get("trade"), cmd.get("hours", 0))
         # A message WITH pay is a warning about a bad trade, not a refusal:
         # the work happened and the player should be told what it cost them.
         if err and pay <= 0:
             return {"ok": False, "error": err}
+        _rev_after = s.revenue()
+        _cost = _rev_before - _rev_after
         out = {"ok": True, "trade": cmd.get("trade"), "hours": cmd.get("hours"),
                "earned": round(pay, 1), "capital": round(s.capital, 1),
                "your_hours_left_this_year": round(
                    max(0.0, s.director_pool() - s.wage_hours_this_year), 1)}
+        if _cost > 0.5:
+            out["it_cost_your_own_practice"] = round(_cost, 1)
+            out["so_you_are_up"] = round(pay - _cost, 1)
+            out["why"] = ("You cannot be in two places. Hours sold for wages "
+                          "come out of the practice, so what you really made "
+                          "this year is the wage less what the surgery did not "
+                          "take. Hours you put into your OWN projects do not "
+                          "cost you this.")
         if err:
             out["but"] = err
         return out
@@ -2931,8 +3102,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
         ok, err = s.fire(cmd.get("trade"), n)
         if not ok:
             return {"ok": False, "error": err}
-        return {"ok": True, "let_go": cmd.get("trade"),
-                "annual_wage_bill": round(s.wage_bill(), 1)}
+        out = {"ok": True, "let_go": cmd.get("trade"),
+               "annual_wage_bill": round(s.wage_bill(), 1)}
+        if err:
+            out["what_happened"] = err
+        return out
 
     if op == "train":
         if ended:

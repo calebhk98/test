@@ -17,8 +17,8 @@ from . import protocol as _protocol
 from .data import money_word, money_short
 from .protocol import (
     _agent_available, _agent_dispatch, _agent_end_reason, _agent_help,
-    _agent_state, _node_explain, civ_of_save, load_state, parse_typed,
-    render_pretty, save_state)
+    _agent_state, _node_explain, civ_of_save, final_report, load_state,
+    parse_typed, render_final, render_pretty, save_state)
 
 
 def load_strategy(name, nodes, goal):
@@ -471,9 +471,15 @@ def cmd_play(a):
         end = _agent_end_reason(s)
         if end and not getattr(a, "_said_end", False):
             a._said_end = True
-            print(_wrap("The run has ended: %s You can still look at anything; "
-                        "'quit' when you are done." % end))
+            # THE SCOREBOARD, not one sentence. See protocol.final_report.
+            print(render_final(final_report(s, nodes)))
             print()
+            print(_wrap("You can still look at anything; 'quit' when you are "
+                        "done."))
+            print()
+    if _agent_end_reason(s) and not getattr(a, "_said_end", False):
+        print(render_final(final_report(s, nodes)))
+        print()
     print("Ended %d AD. %s" % (s.year, _agent_end_reason(s) or "stopped"))
     if session:
         print("Saved to %s. Come back with:" % session)

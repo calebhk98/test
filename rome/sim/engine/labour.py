@@ -537,17 +537,50 @@ class LabourMixin:
         return True, None
 
     def fire(self, trade, n):
-        """Let staff go. Their wages stop; so does what they were doing."""
+        """Let staff go. Their wages stop; so does what they were doing.
+
+        AND IT CANCELS AN APPRENTICESHIP. `auto_train` nearly ended a play
+        tester's run: it started engineers, chemists AND machinists at 781 a
+        year each against 1,005 of revenue, and turning the policy off did not
+        stop what was already in flight - four more people they never asked for
+        arrived over the next two years and the wage bill reached 2,491. There
+        was no command anywhere that could stop them. Dismissing a trade you
+        are still teaching is the obvious reading of `fire`, and it is the
+        missing lever: what you paid to feed them while they learned is spent,
+        the way any abandoned work is, and they do not arrive.
+        """
         trade = str(trade or "").strip().lower()
         have = self.employees.get(trade, 0.0)
-        if have <= 0:
-            return False, "you employ no %ss" % trade
-        n = min(float(n), have)
-        self.employees[trade] = have - n
-        if self.employees[trade] <= 1e-9:
-            self.employees.pop(trade)
+        pending = sum(r[3] for r in self.training
+                      if len(r) > 3 and r[2] == trade)
+        if have <= 0 and pending <= 0:
+            return False, "you employ no %ss, and none are being taught" % trade
+        n = float(n)
+        note = None
+        if have > 0:
+            gone = min(n, have)
+            self.employees[trade] = have - gone
+            if self.employees[trade] <= 1e-9:
+                self.employees.pop(trade)
+            n -= gone
+            note = "let %g %s%s go" % (gone, trade, "s" if gone != 1 else "")
+        if n > 0 and pending > 0:
+            stopped, still = 0.0, []
+            for r in self.training:
+                if len(r) > 3 and r[2] == trade and n > 0:
+                    take = min(n, r[3])
+                    r[3] -= take
+                    n -= take
+                    stopped += take
+                if len(r) <= 3 or r[3] > 1e-9:
+                    still.append(r)
+            self.training = still
+            if stopped > 0:
+                note = ((note + "; " if note else "")
+                        + "stopped teaching %g more (what you paid to keep them "
+                          "while they learned is gone)" % stopped)
         self._resync_pools()
-        return True, None
+        return True, note
 
     def train(self, trade, n, frm=None):
         """Teach a trade that does not exist here into existence.
