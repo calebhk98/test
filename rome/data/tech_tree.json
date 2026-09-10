@@ -5068,7 +5068,7 @@
     "silk_kg": 0.2
    },
    "name": "Compass for navigation",
-   "note": "A magnetized iron needle on a silk thread points north. Rome has this. A compass in an aircraft allows navigation when landmarks are obscured. Mount it in a card marked with degrees.",
+   "note": "A magnetized iron needle on a silk thread points north. This is already understood wherever iron and magnetism have been noticed together. A compass in an aircraft allows navigation when landmarks are obscured. Mount it in a card marked with degrees.",
    "ph": 30.0,
    "pre": [
     "mat_silk",
@@ -5594,7 +5594,7 @@
     "silk_kg": 0.5
    },
    "name": "Kite",
-   "note": "A framed silk or linen panel tied to cordage is humanity's first controlled aerofoil. Rome has all materials. The curved bow of a framed kite's sides produces lift from asymmetric air flow; this was never trivial to understand. Kites serve tethered observation, signalling and scientific experiment.",
+   "note": "A framed silk or linen panel tied to cordage is humanity's first controlled aerofoil, needing nothing beyond cord and cloth, both already at hand. The curved bow of a framed kite's sides produces lift from asymmetric air flow; this was never trivial to understand. Kites serve tethered observation, signalling and scientific experiment.",
    "ph": 20.0,
    "pre": [
     "mat_linen",
@@ -6533,7 +6533,7 @@
     "glass_raw_kg": 400.0
    },
    "name": "Arc lighting and incandescent lamps",
-   "note": "Light without fire, in a city terrified of fire, is one of the great political gifts you can make. Rome's insulae burn constantly and the fear is real. Carbon filaments first; tungsten needs a metallurgy you will not have for a long time.",
+   "note": "Light without fire, in a city terrified of fire, is one of the great political gifts you can make: the crowded wooden and tenement quarters of any pre-industrial city burn constantly and the fear is real (Rome's insulae are the best-documented case). Carbon filaments first; tungsten needs a metallurgy you will not have for a long time.",
    "ph": 500.0,
    "pre": [
     "cap_vac_1e3",
@@ -6781,7 +6781,7 @@
     "timber_m3": 25.0
    },
    "name": "Water-driven double-acting bellows",
-   "note": "The single highest-leverage mechanical change available to Roman metallurgy. Continuous high-volume blast is what separates a bloomery from a blast furnace.",
+   "note": "The single highest-leverage mechanical change available to pre-industrial metallurgy. Continuous high-volume blast is what separates a bloomery from a blast furnace.",
    "ph": 300.0,
    "pre": [
     "refractory_fireclay",
@@ -6829,7 +6829,7 @@
     "lime_kg": 25000.0
    },
    "name": "Tall shaft blast furnace and cast iron",
-   "note": "The biggest single technology gap between Rome and contemporary Han China, which has had cast iron for 500 years. Height, continuous blast and a limestone flux turn a bloomery into a foundry. High risk: the first two or three furnaces will chill, scaffold or burn through. This becomes the financial engine of the middle game. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "Cast iron has been routine in Han China for 500 years and is unknown in the Mediterranean and Atlantic worlds; whichever of those you are building from, this is the biggest single technology gap you face. Height, continuous blast and a limestone flux turn a bloomery into a foundry. High risk: the first two or three furnaces will chill, scaffold or burn through. This becomes the financial engine of the middle game. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
    "ph": 900.0,
    "pre": [
     "bellows_water_blown",
@@ -6929,7 +6929,7 @@
    },
    "mat": {},
    "name": "Differential and integral calculus",
-   "note": "Archimedes' method of exhaustion is the nearest Roman-available foundation, and it is a good one. Present as completing Archimedes.",
+   "note": "Archimedes' method of exhaustion, where it is available to you, is the nearest foundation, and it is a good one. Present as completing Archimedes.",
    "ph": 800.0,
    "pre": [
     "geometry_analytic"
@@ -7049,7 +7049,7 @@
    "lab": {},
    "mat": {},
    "name": "Sustained 700 C (pottery kiln)",
-   "note": "ROME ALREADY HAS THIS. Updraught pottery kiln, wood fired. Free starting capability. Glazes, bricks, lime, glass working.",
+   "note": "Already available wherever there is an updraught pottery kiln, wood fired. Free starting capability. Glazes, bricks, lime, glass working.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -7079,7 +7079,7 @@
    "lab": {},
    "mat": {},
    "name": "Sustained 1100 C (hand-blown charcoal)",
-   "note": "ROME ALREADY HAS THIS. Bloomery iron, bronze casting, glass melting. A man on a bellows tops out near here. Everything above this rung needs a machine.",
+   "note": "Already reached wherever bloomery iron, bronze casting and glass melting are practised. A man on a bellows tops out near here. Everything above this rung needs a machine.",
    "ph": 60.0,
    "pre": [
     "cap_heat_0700",
@@ -7573,7 +7573,7 @@
    "lab": {},
    "mat": {},
    "name": "Muscle and animal power",
-   "note": "ROME HAS THIS. A man sustains roughly 75 W; an ox perhaps 400 W. Free, and the reason Roman industry is shaped the way it is.",
+   "note": "A man sustains roughly 75 W; an ox perhaps 400 W. Free everywhere humans and draught animals exist, and the reason pre-industrial industry is shaped the way it is.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -7640,7 +7640,7 @@
    "lab": {},
    "mat": {},
    "name": "Water power, tens of kW on one shaft",
-   "note": "ROME ALREADY HAS THIS and barely uses it for anything but grinding grain. Barbegal runs 16 overshot wheels. The technology gap is imagination, not engineering.",
+   "note": "Already available and barely used for anything but grinding grain, wherever a water wheel turns (Rome's Barbegal runs 16 overshot wheels and still mostly grinds grain). The technology gap is imagination, not engineering.",
    "ph": 0.0,
    "pre": [
     "cap_power_muscle",
@@ -7675,7 +7675,7 @@
    "lab": {},
    "mat": {},
    "name": "Purity 99% (careful classical refining)",
-   "note": "Cupellation, fire refining, recrystallisation. Rome nearly reaches this for silver and gold already.",
+   "note": "Cupellation, fire refining, recrystallisation. Any advanced ancient metallurgical tradition nearly reaches this for silver and gold already.",
    "ph": 80.0,
    "pre": [
     "balance_analytical"
@@ -7909,7 +7909,7 @@
    "lab": {},
    "mat": {},
    "name": "Tolerance 1 mm (skilled hand craft)",
-   "note": "ROME ALREADY HAS THIS, and is very good at it. Carpentry, masonry, bronze casting, the Antikythera gearwork. Free.",
+   "note": "Already reached, and reached well, by any tradition with serious carpentry, masonry and bronze casting (the Antikythera gearwork is the standing proof). Free.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -8114,7 +8114,7 @@
     "olive_oil_kg": 150.0
    },
    "name": "Systematic case hardening, quenching and tempering",
-   "note": "Roman smiths do all of this already but inconsistently and without a temperature scale. Give them temper colours on polished steel as a repeatable index and the reject rate collapses. Cheap, immediate, militarily valuable, entirely unmagical.",
+   "note": "Smiths already do all of this in any developed ironworking tradition, but inconsistently and without a temperature scale. Give them temper colours on polished steel as a repeatable index and the reject rate collapses. Cheap, immediate, militarily valuable, entirely unmagical.",
    "ph": 300.0,
    "pre": [
     "units_standards",
@@ -13318,7 +13318,7 @@
    "lab": {},
    "mat": {},
    "name": "Black powder: gunpowder production",
-   "note": "Rome already has gunpowder. This node exists to prevent anachronism: Rome does NOT have potassium nitrate or saltpetre. The nitrum of Roman texts is sodium carbonate natron, entirely different.",
+   "note": "No society modelled here already has gunpowder at this stage. This node exists to prevent anachronism: what these economies' soda-ash deposits provide is sodium carbonate, not potassium nitrate. Real saltpetre exists nowhere yet; that is what nitre_beds is for.",
    "ph": 0.0,
    "pre": [
     "gunpowder"
@@ -15917,8 +15917,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 2.0,
+   "cap": 3000.0,
    "cat": "water",
    "conf": "A",
    "dev_people": null,
@@ -15927,11 +15927,14 @@
    "id": "civ_aqueduct_roman",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "labourer": 800.0,
+    "mason": 400.0
+   },
    "mat": {},
    "name": "Roman aqueduct with inverted siphons",
    "note": "Gravity-fed water under precise gradient over vast distances. At valleys, inverted siphons (pipes under pressure) carried water below ground, then up the other side. Rome's engineering was not obvious; this was clever and stable.",
-   "ph": 0.0,
+   "ph": 300.0,
    "pre": [
     "civ_arch_roman"
    ],
@@ -15942,16 +15945,16 @@
    "sus": 0,
    "tier": 0,
    "traits": [],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 150.0,
+   "yrs": 2.0
   },
   {
    "_src": "22_civil.json",
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 0.5,
+   "cap": 350.0,
    "cat": "structures",
    "conf": "A",
    "dev_people": null,
@@ -15960,11 +15963,13 @@
    "id": "civ_arch_roman",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "mason": 120.0
+   },
    "mat": {},
    "name": "Roman masonry arch",
    "note": "The wedge-shaped stone voussoir locked under compression. Rome perfected this; the arch remains the fundamental load-bearing form through the Middle Ages and beyond. Spans cannot be thrown long without collapse or immense depth, but the principle is unbreakable.",
-   "ph": 0.0,
+   "ph": 60.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -15975,8 +15980,8 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 10.0,
+   "yrs": 0.5
   },
   {
    "_src": "22_civil.json",
@@ -16020,8 +16025,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 0.3,
+   "cap": 200.0,
    "cat": "materials",
    "conf": "A",
    "dev_people": null,
@@ -16030,11 +16035,13 @@
    "id": "civ_brick_tile",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "potter": 80.0
+   },
    "mat": {},
    "name": "Roman fired brick and tile",
    "note": "Fired clay in standard sizes, facings for concrete, tiles for roofs. Uniform sizing was a Roman innovation; mass production of standard parts. The tiles lock together with ribs and survive centuries of weather.",
-   "ph": 0.0,
+   "ph": 40.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -16043,8 +16050,8 @@
    "sus": 0,
    "tier": 0,
    "traits": [],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 5.0,
+   "yrs": 0.3
   },
   {
    "_src": "22_civil.json",
@@ -16389,8 +16396,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 0.2,
+   "cap": 120.0,
    "cat": "tools",
    "conf": "B",
    "dev_people": null,
@@ -16399,11 +16406,13 @@
    "id": "civ_chorobates",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "carpenter": 30.0
+   },
    "mat": {},
    "name": "Chorobates: Roman water levelling rod",
    "note": "A long wooden rod with a water-filled groove along its length: the water surface itself is a perfect level. Roman engineers used this to grade aqueducts with millimetre precision over kilometres. Needs no mercury, no instruments.",
-   "ph": 0.0,
+   "ph": 25.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -16414,8 +16423,8 @@
    "traits": [
     "labour_saving"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 2.0,
+   "yrs": 0.2
   },
   {
    "_src": "22_civil.json",
@@ -16589,8 +16598,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 1.5,
+   "cap": 2500.0,
    "cat": "structures",
    "conf": "A",
    "dev_people": null,
@@ -16599,11 +16608,13 @@
    "id": "civ_dome_roman",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "mason": 300.0
+   },
    "mat": {},
    "name": "Roman concrete dome",
    "note": "The Pantheon dome (126 AD) measures 43.3 metres and is still the largest unreinforced concrete dome ever built. Pozzolanic concrete actually strengthens in seawater. Modern Portland cement does not; Pantheon beats it on durability.",
-   "ph": 0.0,
+   "ph": 250.0,
    "pre": [
     "civ_vault_barrel",
     "mat_pozzolana"
@@ -16617,8 +16628,8 @@
    "traits": [
     "infrastructure"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 100.0,
+   "yrs": 1.5
   },
   {
    "_src": "22_civil.json",
@@ -17028,7 +17039,7 @@
    "lab": {},
    "mat": {},
    "name": "Glass panes for windows",
-   "note": "By 100 AD Roman glassblowers produced clear soda-lime panes, often small. A luxury in Rome, it was still cheaper than oiled linen or mica. Roman houses with glass windows survive; the material itself is durable.",
+   "note": "By late antiquity, clear soda-lime glass panes were being produced in the Mediterranean world (Rome's glassblowers among them), often small. A luxury good, but still cheaper than oiled linen or mica. Surviving examples show the material is durable enough to last centuries in place.",
    "ph": 0.0,
    "pre": [
     "mat_glass_soda"
@@ -17093,8 +17104,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 1.0,
+   "cap": 1800.0,
    "cat": "buildings",
    "conf": "A",
    "dev_people": null,
@@ -17103,11 +17114,14 @@
    "id": "civ_insula",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "carpenter": 100.0,
+    "mason": 250.0
+   },
    "mat": {},
    "name": "Insula: Roman apartment block",
    "note": "Multi-storey blocks of small rented rooms around a courtyard, using brick and timber joists. Rome housed its poor in dense urban clusters; the form remains standard. Fire risk was immense (hence frequent collapse in literature).",
-   "ph": 0.0,
+   "ph": 200.0,
    "pre": [
     "civ_arch_roman",
     "civ_brick_tile"
@@ -17119,8 +17133,8 @@
    "sus": 0,
    "tier": 0,
    "traits": [],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 80.0,
+   "yrs": 1.0
   },
   {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]  [REVIEWED: prerequisite(s) cap_heat_0700 added by a reviewer working node by node. Reason: riveting and forging require heating wrought iron to cherry red approximately 750 C]",
@@ -17418,8 +17432,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 1.0,
+   "cap": 1200.0,
    "cat": "transport",
    "conf": "A",
    "dev_people": null,
@@ -17428,11 +17442,14 @@
    "id": "civ_road_paved",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "labourer": 600.0,
+    "mason": 100.0
+   },
    "mat": {},
    "name": "Roman paved road with surveying",
    "note": "Multilayered stone and gravel bed, crowned for drainage, aligned by groma (X-staff with plumb bobs). Roman roads lasted centuries. The technique is durable and maintainable; paving without surveying is wasteful.",
-   "ph": 0.0,
+   "ph": 150.0,
    "pre": [
     "civ_surveying_groma"
    ],
@@ -17446,8 +17463,8 @@
     "commerce",
     "infrastructure"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 40.0,
+   "yrs": 1.0
   },
   {
    "_src": "22_civil.json",
@@ -17537,8 +17554,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 1.5,
+   "cap": 2200.0,
    "cat": "water",
    "conf": "A",
    "dev_people": null,
@@ -17547,11 +17564,14 @@
    "id": "civ_sewer_roman",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "labourer": 200.0,
+    "mason": 300.0
+   },
    "mat": {},
    "name": "Roman sewer with gravity flow",
    "note": "The Cloaca Maxima in Rome still functions after 2400 years. Gravity-fed, arched, with gradient for scouring. Medieval towns often rebuilt sewers on Roman alignment; the Romans had solved the problem.",
-   "ph": 0.0,
+   "ph": 220.0,
    "pre": [
     "civ_arch_roman",
     "civ_surveying_groma"
@@ -17563,8 +17583,8 @@
    "sus": 0,
    "tier": 0,
    "traits": [],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 90.0,
+   "yrs": 1.5
   },
   {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
@@ -17813,8 +17833,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 0.2,
+   "cap": 100.0,
    "cat": "tools",
    "conf": "A",
    "dev_people": null,
@@ -17823,11 +17843,13 @@
    "id": "civ_surveying_groma",
    "kb": "85_transport_civil.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "carpenter": 20.0
+   },
    "mat": {},
    "name": "Groma: Roman X-staff surveying tool",
    "note": "Four plumb bobs hanging from the four arms of a cross allow rapid sighting of right angles and straight lines. Crude and ingenious. Used to lay out Roman towns and roads across the empire.",
-   "ph": 0.0,
+   "ph": 20.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -17838,8 +17860,8 @@
    "traits": [
     "labour_saving"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 2.0,
+   "yrs": 0.2
   },
   {
    "_internal": "[AUDIT: this node does not declare the capability rung it needs. An automated pass once inferred one, and an independent review found that EVERY inferred rung it sampled was wrong, so all of them were reverted. The gap is left visible on purpose: a missing prerequisite you can see beats a wrong one you cannot.]",
@@ -18142,7 +18164,7 @@
     "steel_noric_kg": 25.0
    },
    "name": "Pendulum clock and later the balance spring",
-   "note": "The Antikythera mechanism proves Roman-era gear-cutting is already good enough; what is missing is the escapement and the pendulum's isochronism. Accurate time gives navigation, longitude, physics, and later electrical measurement. Also a superb luxury product.",
+   "note": "Fine gear-cutting is already good enough wherever a bronze- or iron-age precision tradition has reached this level (the Antikythera mechanism shows the Mediterranean world had it by 100 BC); what is missing is the escapement and the pendulum's isochronism. Accurate time gives navigation, longitude, physics, and later electrical measurement. Also a superb luxury product.",
    "ph": 500.0,
    "pre": [
     "cap_tol_100um",
@@ -25327,7 +25349,7 @@
     "tallow_kg": 30.0
    },
    "name": "The drawplate and drawn wire",
-   "note": "Rome makes wire by cutting strip and swaging it. A hardened plate with graded tapered holes, tallow lubricant and annealing between passes gives long round wire cheaply. You will need tens of kilometres for a single dynamo, so build it now and forget about it.",
+   "note": "The old way of making wire, cutting strip and swaging it, is already common practice. A hardened plate with graded tapered holes, tallow lubricant and annealing between passes gives long round wire cheaply. You will need tens of kilometres for a single dynamo, so build it now and forget about it.",
    "ph": 180.0,
    "pre": [
     "case_hardening",
@@ -34268,7 +34290,7 @@
     "iron_bar_kg": 150.0
    },
    "name": "Overshot water wheel",
-   "note": "Rome has this too, notably the 16-wheel Barbegal complex. Weight of the water does the work; it needs a significant drop but delivers more power per wheel.",
+   "note": "This already exists wherever a flowing stream gives a significant drop, and it is capable of real scale: Rome's 16-wheel Barbegal complex is the standing example. Weight of the water does the work; it needs a significant drop but delivers more power per wheel.",
    "ph": 80.0,
    "pre": [
     "cap_power_water"
@@ -35945,7 +35967,7 @@
     "iron_bar_kg": 100.0
    },
    "name": "Undershot water wheel",
-   "note": "Rome already operates these at scale. The water pushes on the bucket; it is simple, portable, and tolerates muddy water and sand.",
+   "note": "This already operates at scale wherever there is a river to turn it. The water pushes on the bucket; it is simple, portable, and tolerates muddy water and sand.",
    "ph": 60.0,
    "pre": [
     "cap_power_water"
@@ -36185,7 +36207,7 @@
     "iugerum_land": 600.0
    },
    "name": "Endow the institute in land, not coin",
-   "note": "Roman testamentary law and the fundatio (Pliny's alimenta, Trajan's own) are durable vehicles. Coin will be debased to nothing by 270 AD. Land will not. This is how the programme outlives you.",
+   "note": "Land outlives coin: whatever currency you are using will eventually be debased or disrupted, and land will not. This is how a programme outlives its founder. In Rome the vehicle is testamentary law and the fundatio (Pliny's alimenta, Trajan's own); every society you can play has some durable equivalent, and it is bought or built the way endowments are always built here: with a public benefaction and the right friends.",
    "ph": 500.0,
    "pre": [
     "school_founded"
@@ -36309,7 +36331,7 @@
    },
    "mat": {},
    "name": "Cross the Atlantic",
-   "note": "About 5,600 km from the Canaries to the Caribbean on the trade winds, roughly five weeks. The Canaries are already known to Rome; Pliny describes them. The voyage is well within a good Roman hull. What kills you is water, food and scurvy, which is why the provisioning node comes first.",
+   "note": "About 5,600 km from the Canaries to the Caribbean on the trade winds, roughly five weeks. The Canaries are within reach of Mediterranean and Atlantic-facing sailors alike (Pliny already describes them from the Roman side). The voyage is well within a capable ocean-going hull. What kills you is water, food and scurvy, which is why the provisioning node comes first.",
    "ph": 400.0,
    "pre": [
     "exp_oceangoing_hull",
@@ -36395,7 +36417,7 @@
    },
    "mat": {},
    "name": "Colonial administration and a chartered company",
-   "note": "The legal and financial machinery that makes a distant post survive a bad decade: a chartered body with limited liability, a resident agent, a garrison, and a court. Rome has no corporation, so you must build one out of a societas plus a licensed collegium plus imperial charter.",
+   "note": "The legal and financial machinery that makes a distant post survive a bad decade: a durable body with some form of limited liability, a resident agent, a garrison, and a court. None of these societies starts with a ready-made corporation; Rome builds the equivalent out of a societas plus a licensed collegium plus an imperial charter, and every other society assembles its own version from whatever institutions it actually has (see the civilization file's `institutions` field).",
    "ph": 400.0,
    "pre": [
     "citizenship",
@@ -36436,7 +36458,7 @@
    },
    "mat": {},
    "name": "Take the source by force",
-   "note": "The option this tree refuses to pretend does not exist, because it is what actually happened. A pre-industrial society that meets one carrying firearms, iron ships and quinine does not win. Rome with a century's technical lead would take whatever it wanted. THE MODEL SCORES THIS AS AVAILABLE AND CHEAP AND ALSO AS THE SINGLE MOST DESTRUCTIVE NODE IN THE TREE. It is included so the tree is honest, not because it is recommended, and the simulator tracks a separate atrocity counter for it rather than folding it into the score.",
+   "note": "The option this tree refuses to pretend does not exist, because it is what actually happened. A pre-industrial society that meets one carrying firearms, iron ships and quinine does not win. Any society with a century's technical lead over its neighbours would take whatever it wanted. THE MODEL SCORES THIS AS AVAILABLE AND CHEAP AND ALSO AS THE SINGLE MOST DESTRUCTIVE NODE IN THE TREE. It is included so the tree is honest, not because it is recommended, and the simulator tracks a separate atrocity counter for it rather than folding it into the score.",
    "ph": 300.0,
    "pre": [
     "exp_colony_administration",
@@ -36482,7 +36504,7 @@
     "timber_m3": 300.0
    },
    "name": "An ocean-going hull",
-   "note": "Roman merchantmen are already large: the Alexandrian grain ships carried on the order of a thousand tonnes. What they are built for is the Mediterranean, not the North Atlantic in winter. Skeleton-first framing, a sternpost rudder and a rig that will beat to windward turn a coaster into an ocean ship.",
+   "note": "Existing merchant hulls are often already large (Roman grain ships to Alexandria carried on the order of a thousand tonnes; Norse ships already cross the open Atlantic in this era) but are built for calmer or coastal waters, not the worst of a winter ocean crossing. Skeleton-first framing, a sternpost rudder and a rig that will beat to windward turn a coaster into a true ocean ship.",
    "ph": 250.0,
    "pre": [
     "sea_sternpost_rudder"
@@ -36575,7 +36597,7 @@
     "wine_common_kg": 2000.0
    },
    "name": "Provisioning a long voyage against scurvy",
-   "note": "THE gate on every voyage over about ten weeks, and it is the cheapest thing in this branch. Scurvy killed more sailors than storms and battle combined for four centuries. You know the answer: fresh or preserved citrus, or any source of ascorbic acid, and sauerkraut works. Rome has lemons and citrons, and cabbage. Solve this and the Atlantic becomes a logistics problem instead of a death sentence.",
+   "note": "THE gate on every voyage over about ten weeks, and it is the cheapest thing in this branch. Scurvy killed more sailors than storms and battle combined for four centuries. You know the answer: fresh or preserved citrus, or any source of ascorbic acid, and sauerkraut works. Citrus grows through much of the Mediterranean and cabbage almost everywhere in the temperate world, including where citrus does not reach. Solve this and the ocean becomes a logistics problem instead of a death sentence.",
    "ph": 200.0,
    "pre": [
     "sanitation_antisepsis"
@@ -36614,7 +36636,7 @@
    },
    "mat": {},
    "name": "Extend the existing eastern trade routes",
-   "note": "Rome ALREADY trades to India annually on the monsoon and to China by relay. You do not need to discover anything: you need agents, capital and a standing order. This is the cheapest way to obtain saltpetre, shellac, cotton, wootz, camphor and pepper, and it should be one of your first commercial acts.",
+   "note": "Extending an existing long-distance trade network needs agents, capital and a standing order, not new discovery. Where you already have a route (Rome already trades to India annually on the monsoon and to China by relay; check your own civilization's notes for what you already reach) this is often the cheapest way to obtain goods your home region lacks, and it should be one of your first commercial acts.",
    "ph": 250.0,
    "pre": [
     "patron_local"
@@ -36764,8 +36786,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0,
    "art": 0.0,
-   "build_yrs": 0,
-   "cap": 0.0,
+   "build_yrs": 1.0,
+   "cap": 4000.0,
    "cat": "commerce",
    "conf": "A",
    "dev_people": null,
@@ -36774,11 +36796,13 @@
    "id": "fin_annona",
    "kb": "96_finance.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "scribe": 200.0
+   },
    "mat": {},
    "name": "Annona grain dole and administration",
    "note": "State purchase and distribution of grain. Requires contracts with producers, shipping, storage, and accounting.",
-   "ph": 0.0,
+   "ph": 600.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -36789,8 +36813,8 @@
    "traits": [
     "commerce"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 300.0,
+   "yrs": 1.0
   },
   {
    "_src": "40_finance_institutions.json",
@@ -36887,7 +36911,7 @@
    },
    "mat": {},
    "name": "Arabic numerals in commerce",
-   "note": "Position notation with zero makes arithmetic dramatically faster than Roman numerals. Merchants who adopt it can calculate faster than competitors, reducing error and increasing profit.",
+   "note": "Position notation with zero makes arithmetic dramatically faster than the tally, rod or numeral systems it replaces (Roman numerals among them). Merchants who adopt it can calculate faster than competitors, reducing error and increasing profit.",
    "ph": 120.0,
    "pre": [
     "arithmetic_positional"
@@ -36947,8 +36971,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0,
    "art": 0.0,
-   "build_yrs": 0,
-   "cap": 0.0,
+   "build_yrs": 0.5,
+   "cap": 1500.0,
    "cat": "banking",
    "conf": "A",
    "dev_people": null,
@@ -36957,11 +36981,13 @@
    "id": "fin_argentarii",
    "kb": "96_finance.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "scribe": 60.0
+   },
    "mat": {},
    "name": "Deposit bankers (argentarii)",
    "note": "Money changers and deposit takers in Rome. Accept deposits, testify to witnesses about amounts held, but do not systematically lend.",
-   "ph": 0.0,
+   "ph": 150.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -36972,8 +36998,8 @@
    "traits": [
     "commerce"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 60.0,
+   "yrs": 0.5
   },
   {
    "_src": "40_finance_institutions.json",
@@ -37651,7 +37677,7 @@
    "lab": {},
    "mat": {},
    "name": "Coined money",
-   "note": "Standardised metal coins as medium of exchange and store of value. Rome has perfected this for centuries.",
+   "note": "Standardised metal coins as medium of exchange and store of value are already well established practice across the literate ancient world by this date.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -37671,8 +37697,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0,
    "art": 0.0,
-   "build_yrs": 0,
-   "cap": 0.0,
+   "build_yrs": 0.5,
+   "cap": 900.0,
    "cat": "organisation",
    "conf": "A",
    "dev_people": null,
@@ -37680,11 +37706,13 @@
    "gov": 0,
    "id": "fin_collegium",
    "kb": "89_remaining_arts.md#fin_societas",
-   "lab": {},
+   "lab": {
+    "scribe": 40.0
+   },
    "mat": {},
    "name": "Professional associations (collegia)",
    "note": "Craft guilds and professional societies. Enforce standards, restrict entry, and provide mutual aid. State views them with suspicion.",
-   "ph": 0.0,
+   "ph": 120.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -37695,8 +37723,8 @@
    "traits": [
     "commerce"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 30.0,
+   "yrs": 0.5
   },
   {
    "_src": "40_finance_institutions.json",
@@ -38453,7 +38481,7 @@
    "lab": {},
    "mat": {},
    "name": "Standing bureaucracy",
-   "note": "Professional staff of administrators employed by the state to carry out government functions. Rome has developed extensive bureaucracy.",
+   "note": "Professional staff of administrators employed by the state to carry out government functions. Any society with meaningful state capacity already has some version of this.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -40030,8 +40058,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0,
    "art": 0.0,
-   "build_yrs": 0,
-   "cap": 0.0,
+   "build_yrs": 0.2,
+   "cap": 300.0,
    "cat": "organisation",
    "conf": "A",
    "dev_people": null,
@@ -40039,11 +40067,13 @@
    "gov": 0,
    "id": "fin_societas",
    "kb": "89_remaining_arts.md#fin_societas",
-   "lab": {},
+   "lab": {
+    "scribe": 20.0
+   },
    "mat": {},
    "name": "Partnership (societas)",
    "note": "Contractual partnership between two or more parties to share profits and losses. Legally recognised, but partners remain personally liable.",
-   "ph": 0.0,
+   "ph": 40.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -40054,8 +40084,8 @@
    "traits": [
     "commerce"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 5.0,
+   "yrs": 0.2
   },
   {
    "_internal": "[AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
@@ -40904,7 +40934,7 @@
    "lab": {},
    "mat": {},
    "name": "Wage and labour payment",
-   "note": "Regular payment for labour. Rome pays wages in coin or kind.",
+   "note": "Regular payment for labour, in coin or in kind, wherever a cash or barter economy already exists.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -40993,7 +41023,7 @@
     "slave_skilled": 8.0
    },
    "name": "Buy, train and manumit a technical staff",
-   "note": "Buy skilled slaves, teach them, free them, pay them, keep them. Freedmen retain obligation to their patron, can hold property, and ran much of Roman commerce. A paid literate freedman transmits knowledge; a coerced labourer does not. This is both the ethical and the efficient answer. Grants +8 artisans.",
+   "note": "Acquire, train and free a technical staff: buy or bind skilled workers, teach them, release them from their obligation, then pay and keep them. A freed worker who remains literate and paid transmits knowledge onward; a coerced one does not. In Rome this is manumission of skilled slaves, who retain an obligation to their former owner as patron and ran much of Roman commerce; the Norse equivalent is working off a debt-thrall's bond. Whichever form bondage takes where you are playing, this is both the ethical and the efficient answer. Grants +8 artisans.",
    "ph": 900.0,
    "pre": [
     "workshop_first"
@@ -41189,7 +41219,7 @@
    },
    "mat": {},
    "name": "Bottling with cork closure and sealed glass",
-   "note": "Store liquids in strong glass bottles, insert cork and secure with wire or cage. Anaerobic storage preserves wine, beer, vinegar. Glass is Roman technology; cork sealing enables long-term aging and transport. Enables wine trade and aging in cellars.",
+   "note": "Store liquids in strong glass bottles, insert cork and secure with wire or cage. Anaerobic storage preserves wine, beer, vinegar. Glass and cork sealing are both already available wherever a live glass industry and cork oak or an equivalent stopper material exist. Enables wine trade and aging in cellars.",
    "ph": 80.0,
    "pre": [
     "crop_rotation"
@@ -41922,7 +41952,7 @@
     "timber_m3": 5.0
    },
    "name": "Hay making and dry storage",
-   "note": "Cut grass at peak nutrition, dry thoroughly in sun and wind, store in dry barn or haybarn. Timing and weather are critical - rain-soaked hay rots or molts. Enables winter feeding of draft animals when pasture is gone. [FIXED after independent audit: hay needs a scythe and a dry barn, both of which Rome has. Crop rotation is unrelated.]",
+   "note": "Cut grass at peak nutrition, dry thoroughly in sun and wind, store in dry barn or haybarn. Timing and weather are critical - rain-soaked hay rots or molts. Enables winter feeding of draft animals when pasture is gone. [FIXED after independent audit: hay needs a scythe and a dry barn, both of which any settled agricultural society already has. Crop rotation is unrelated.]",
    "ph": 100.0,
    "pre": [],
    "req_any": [],
@@ -43358,7 +43388,7 @@
     "galena_kg": 3.0
    },
    "name": "Galena cat's whisker point-contact rectifier",
-   "note": "A working semiconductor device in Rome, using mineral lead sulfide straight out of the mine and a springy wire. No purification, no doping, no vacuum, no theory. It is nearly free, it is a genuine rectifier, and it is the proof-of-concept that justifies a two-century programme to a sceptical patron. Build it the moment you have a cell and fine wire. It depends on the crude brine cell, not on the voltaic pile, which is what makes the year-three claim in 00_NONOBVIOUS_TRICKS actually true.",
+   "note": "A working semiconductor device achievable in any pre-industrial economy with a lead mine, using mineral lead sulfide straight out of the ground and a springy wire. No purification, no doping, no vacuum, no theory. It is nearly free, it is a genuine rectifier, and it is the proof-of-concept that justifies a two-century programme to a sceptical patron. Build it the moment you have a cell and fine wire. It depends on the crude brine cell, not on the voltaic pile, which is what makes the year-three claim in 00_NONOBVIOUS_TRICKS actually true.",
    "ph": 150.0,
    "pre": [
     "crude_cell",
@@ -43754,7 +43784,7 @@
     "sand_quartz_kg": 52500.0
    },
    "name": "Deliberately water-clear soda-lime glass to specification",
-   "note": "Rome already makes near-colourless glass and already knows pyrolusite is glassmaker's soap. What it does not have is control: iron-free sand chosen deliberately, a weighed manganese dose, and a proper annealing lehr. Cheapest high-value upgrade to a live industry in the Empire.",
+   "note": "Near-colourless soda-lime glass, and the trick that pyrolusite is glassmaker's soap, are already known wherever a live glass industry exists (Rome is the best-documented case). What is missing is control: iron-free sand chosen deliberately, a weighed manganese dose, and a proper annealing lehr. Cheapest high-value upgrade to a live glass industry.",
    "ph": 400.0,
    "pre": [
     "cap_heat_1100",
@@ -43858,7 +43888,7 @@
     "graphite_kg": 8.0
    },
    "name": "Carbon and graphite brush contacts",
-   "note": "A soft, self-lubricating carbon block bearing on the commutator or slip ring under light spring pressure. Metal brushes weld and gouge; carbon wears the contact surface instead of cutting it, and its resistance limits sparking current at the moment of break. Baked lampblack or coke fired without air gives a usable brush; graphite is better and Rome has both. Every rotating machine with a commutator or slip ring needs this, and nothing in the tree makes it before now.",
+   "note": "A soft, self-lubricating carbon block bearing on the commutator or slip ring under light spring pressure. Metal brushes weld and gouge; carbon wears the contact surface instead of cutting it, and its resistance limits sparking current at the moment of break. Baked lampblack or coke fired without air gives a usable brush; graphite is better and both are already available almost anywhere charcoal is burned. Every rotating machine with a commutator or slip ring needs this, and nothing in the tree makes it before now.",
    "ph": 50.0,
    "pre": [
     "cap_heat_1100"
@@ -44438,7 +44468,7 @@
     "brass_kg": 0.5
    },
    "name": "Button with eyelet",
-   "note": "Buttons exist in Rome but are rare and made of stone or bone. The eyelet (sewn loop) adds cost. Horn buttons become viable later with better tools. Buttons displace expensive brooches, freeing wealth.",
+   "note": "Buttons already exist in most of these societies, but are rare and made of stone or bone. The eyelet (sewn loop) adds cost. Horn buttons become viable later with better tools. Buttons displace expensive brooches, freeing wealth.",
    "ph": 40.0,
    "pre": [
     "cap_tol_1mm"
@@ -44612,8 +44642,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0.0,
    "art": 0.0,
-   "build_yrs": 0.0,
-   "cap": 0.0,
+   "build_yrs": 0.1,
+   "cap": 80.0,
    "cat": "personal",
    "conf": "A",
    "dev_people": null,
@@ -44626,7 +44656,7 @@
    "mat": {},
    "name": "Roman cosmetics",
    "note": "Powders, kohl eyeliner, rouge, and white lead face paint (cerussa). The white lead is cosmetically effective but chronically poisoning users. No warning label exists.",
-   "ph": 0.0,
+   "ph": 20.0,
    "pre": [],
    "req_any": [],
    "rev": 0.0,
@@ -44637,8 +44667,8 @@
    "traits": [
     "luxury"
    ],
-   "up": 0.0,
-   "yrs": 0.0
+   "up": 3.0,
+   "yrs": 0.1
   },
   {
    "_src": "12_household.json",
@@ -44665,7 +44695,7 @@
     "fat_kg": 2.0
    },
    "name": "Deodorant",
-   "note": "Alum or zinc oxide in a fat or powder base. Alum acts as an astringent, reducing sweat and odour. Roman use of alum for textiles; applied to skin for personal use. Modern antiperspirants require aluminium chloride (20th century).",
+   "note": "Alum or zinc oxide in a fat or powder base. Alum acts as an astringent, reducing sweat and odour; it is already used on textiles in several ancient economies (Rome's is the best-attested), and the same substance applies as readily to skin. Modern antiperspirants require aluminium chloride (20th century).",
    "ph": 70.0,
    "pre": [
     "hom_perfume_distilled",
@@ -44839,7 +44869,7 @@
     "timber_m3": 0.1
    },
    "name": "Electric fan for air circulation",
-   "note": "Small electric motor drives a blade assembly. Expensive initially; prices fall with mass production. Rome would value this enormously in a Mediterranean summer; ceiling punkah fans pulled by servants are the low-tech precursor.",
+   "note": "Small electric motor drives a blade assembly. Expensive initially; prices fall with mass production. A hot climate values this enormously, wherever you find one; ceiling punkah fans pulled by servants are the low-tech precursor.",
    "ph": 100.0,
    "pre": [
     "cap_power_electric",
@@ -44965,7 +44995,7 @@
     "timber_m3": 1.0
    },
    "name": "Fireplace and chimney",
-   "note": "Rome never develops the chimney. The innovation is the flue and draft that draws smoke out of a room while allowing air intake from below. Transforms cold-weather living. Early chimneys are smoky and dangerous; the design improves over centuries.",
+   "note": "The chimney is missing from most of the ancient world's architecture at this point (Rome never develops it). The innovation is the flue and draft that draws smoke out of a room while allowing air intake from below. Transforms cold-weather living. Early chimneys are smoky and dangerous; the design improves over centuries.",
    "ph": 120.0,
    "pre": [
     "cap_heat_0700"
@@ -44998,7 +45028,7 @@
    "lab": {},
    "mat": {},
    "name": "Flush latrine with running water",
-   "note": "Rome has flush latrines connected to running water and sewers, but lacks the water trap. Sewer gas backs up into the house at night when flow stops. This is the fatal gap.",
+   "note": "Flush latrines connected to running water and sewers are already established wherever that infrastructure exists (Rome is the best-documented case), but lack the water trap. Sewer gas backs up into the house at night when flow stops. This is the fatal gap.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -45147,7 +45177,7 @@
    "lab": {},
    "mat": {},
    "name": "Hypocaust underfloor heating",
-   "note": "Hot air from a furnace flows through hollow spaces beneath the floor. Expensive; only wealthy houses and public baths use it. Rome never develops the chimney, so room heating otherwise requires a brazier and open flame.",
+   "note": "Hot air from a furnace flows through hollow spaces beneath the floor. Expensive; only wealthy houses and public baths use it. Without the chimney, which most of the ancient world lacks, room heating otherwise requires a brazier and open flame.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -45352,7 +45382,7 @@
     "lead_kg": 25.0
    },
    "name": "Latrine water trap (S-bend)",
-   "note": "The water trap is the critical innovation: standing water in an S-bend or U-bend below the toilet bowl blocks sewer gas from backing into the house. Non-obvious but essential for sanitary plumbing. Rome discovers this late or not at all in the West.",
+   "note": "The water trap is the critical innovation: standing water in an S-bend or U-bend below the toilet bowl blocks sewer gas from backing into the house. Non-obvious but essential for sanitary plumbing. This is discovered late, or not at all, in most of the ancient and early medieval world (Rome included).",
    "ph": 60.0,
    "pre": [
     "hom_flush_latrine_simple"
@@ -45387,7 +45417,7 @@
    "lab": {},
    "mat": {},
    "name": "Lead and ceramic plumbing",
-   "note": "Rome masters lead pipe-making and ceramic drainage. The lead slowly poisons users; Rome's elite show signs of lead poisoning but attribute it to other causes.",
+   "note": "Lead pipe-making and ceramic drainage are already mastered wherever there is a developed urban water system (Rome is the best-documented case). The lead slowly poisons users, who generally attribute the symptoms to other causes.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -45418,7 +45448,7 @@
    "lab": {},
    "mat": {},
    "name": "Locks and keys",
-   "note": "Pin-tumbler locks exist in Egypt; Rome develops excellent examples in bronze and iron. Locks are expensive and a sign of wealth (or slavery).",
+   "note": "Pin-tumbler locks exist already in Egypt, and excellent examples in bronze and iron exist wherever there is skilled metalworking (Rome's are especially well attested). Locks are expensive and a sign of wealth (or slavery).",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -45734,7 +45764,7 @@
    "lab": {},
    "mat": {},
    "name": "Oil lamp, simple",
-   "note": "Rome has simple clay and bronze oil lamps, burning olive oil or animal fat. The innovation ahead is the flat wick and glass chimney, which doubles brightness.",
+   "note": "Simple clay and bronze oil lamps, burning olive oil or animal fat, are already everywhere there is oil or fat to spare. The innovation ahead is the flat wick and glass chimney, which doubles brightness.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -46101,7 +46131,7 @@
    "lab": {},
    "mat": {},
    "name": "Public bath (thermae)",
-   "note": "The thermae are social centers with heated water pools, caldarium and frigidarium. Rome's public hygiene infrastructure is remarkable for its era; yet most private homes lack hot water.",
+   "note": "Public hygiene infrastructure at this scale is remarkable for its era wherever it exists (Rome's thermae are the model: heated water pools, caldarium and frigidarium as social centres); even so, most private homes still lack hot water.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -46523,7 +46553,7 @@
     "clay_kg": 30.0
    },
    "name": "Enclosed stove",
-   "note": "A metal or ceramic box with fire inside, heating room air by radiation and conduction. More efficient than open fireplace because less heat escapes up the chimney. Requires cast iron or tile manufacture. [FIXED after independent audit: it consumed 40 kg of cast iron at tier 1. There is no cast iron in the Roman West; it needs the blast furnace and cannot be a cheap early win.]",
+   "note": "A metal or ceramic box with fire inside, heating room air by radiation and conduction. More efficient than open fireplace because less heat escapes up the chimney. Requires cast iron or tile manufacture. [FIXED after independent audit: it consumed 40 kg of cast iron at tier 1. There is no cast iron yet outside societies that already have a blast furnace or an equivalent cast-iron tradition (Han China already has one); it cannot be a cheap early win anywhere else.]",
    "ph": 100.0,
    "pre": [
     "blast_furnace",
@@ -47015,9 +47045,11 @@
     "olive_oil_kg": 300.0
    },
    "name": "Hot air balloon for observation",
-   "note": "Low technology, moderate cost, high spectacle, and the State wants it for siege observation and signalling. Also one of the fastest ways to be accused of sorcery, so fly it first for the army with the governor watching, never privately at night. Linen sized with oil is the envelope; Rome has excellent sailcloth. [FIXED after independent audit: paper and distilled spirits were listed and neither is load-bearing. An oiled linen envelope over a wood fire needs Roman sailcloth and oil, both tier 0.]",
+   "note": "Low technology, moderate cost, high spectacle, and the State wants it for siege observation and signalling. Also one of the fastest ways to be accused of sorcery, so fly it first for the army with the governor watching, never privately at night. Linen sized with oil is the envelope. [FIXED after independent audit: paper and distilled spirits were listed and neither is load-bearing. An oiled linen envelope over a wood fire needs sailcloth and oil, both tier 0 and already available in any of these societies.]",
    "ph": 400.0,
-   "pre": [],
+   "pre": [
+    "tex_sailcloth"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.4,
@@ -47134,8 +47166,8 @@
     "scribe": 400.0
    },
    "mat": {},
-   "name": "Establish the Alexandrian physician-philosopher persona",
-   "note": "Buy books, a house, clothes, a Greek freedman secretary, and a reputation for piety. Reduces all future suspicion.",
+   "name": "Establish a respectable cover identity",
+   "note": "Buy books, a house, clothes, a literate freed or hired secretary, and a reputation for piety (in Rome this is specifically the Alexandrian physician-philosopher persona; every society has its own version of a scholar-notable it will not look at twice: a monk or clerk under any literate king, a temple-trained scribe in Mesoamerica, a rune-literate skald or lawspeaker in Scandinavia). Reduces all future suspicion.",
    "ph": 500.0,
    "pre": [],
    "req_any": [],
@@ -50075,7 +50107,7 @@
     "copper_kg": 1000.0
    },
    "name": "Submarine cable with gutta percha",
-   "note": "The insulation IS the invention. Rubber perishes and cotton is useless wet, but gutta percha, the latex of Palaquium from Malaya, is thermoplastic: it softens in hot water, can be moulded round a copper core, sets hard, and does not rot in seawater. It is reached by extending east the India route Rome already sails annually, so it is a trading problem, not an impossibility. The second, harder lesson is electrical: a long submerged cable is a capacitor, pulses smear into each other, and pushing more voltage at it destroys the insulation, which is what killed the first Atlantic cable in 1858. Signal slowly and detect sensitively.",
+   "note": "The insulation IS the invention. Rubber perishes and cotton is useless wet, but gutta percha, the latex of Palaquium from Malaya, is thermoplastic: it softens in hot water, can be moulded round a copper core, sets hard, and does not rot in seawater. It is reached by extending east whatever long-distance ocean trade route you already have (Rome already sails to India annually; adapt to your own reach), so it is a trading problem, not an impossibility. The second, harder lesson is electrical: a long submerged cable is a capacitor, pulses smear into each other, and pushing more voltage at it destroys the insulation, which is what killed the first Atlantic cable in 1858. Signal slowly and detect sensitively.",
    "ph": 200.0,
    "pre": [
     "mat_gutta_percha",
@@ -55016,7 +55048,7 @@
     "sulfur_kg": 18000.0
    },
    "name": "Lead chamber sulfuric acid at industrial scale",
-   "note": "Burn sulfur with saltpetre in a lead-lined chamber; the nitrogen oxides shuttle oxygen catalytically. Lead is the only Roman-available material that survives the conditions, and Rome has a great deal of cheap lead. This is the node that turns chemistry from a laboratory curiosity into an industry. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "Burn sulfur with saltpetre in a lead-lined chamber; the nitrogen oxides shuttle oxygen catalytically. Lead is the material across the ancient world that survives the conditions, and it is cheap and plentiful almost anywhere lead ore is worked. This is the node that turns chemistry from a laboratory curiosity into an industry. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
    "ph": 900.0,
    "pre": [
     "lead_metallurgy",
@@ -55062,7 +55094,7 @@
     "galena_kg": 280000.0
    },
    "name": "Lead sheet, pipe, litharge and cupellation control",
-   "note": "Rome does this already and does it well. You need lead in bulk for the lead chamber process, for cable sheathing, for accumulators, and for acid plumbing. Also secures your galena supply for the crystal detector.",
+   "note": "This is already done, and done well, wherever there is a developed lead-mining and -working tradition (Rome is the best-documented case). You need lead in bulk for the lead chamber process, for cable sheathing, for accumulators, and for acid plumbing. Also secures your galena supply for the crystal detector.",
    "ph": 200.0,
    "pre": [
     "workshop_first"
@@ -55288,7 +55320,7 @@
    "lab": {},
    "mat": {},
    "name": "Pivoting front axle",
-   "note": "ROME POSSIBLY HAS THIS but is disputed. Turning is impossible without it; evidence in Roman relief carvings is ambiguous. Assume present but mark confidence low.",
+   "note": "Whether this already exists is disputed even for the best-attested ancient societies (the evidence in Roman relief carvings is ambiguous). Turning is impossible without it. Assume present but mark confidence low.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -55410,7 +55442,7 @@
    "lab": {},
    "mat": {},
    "name": "Bridge",
-   "note": "ROME ALREADY HAS THIS. Stone arch bridges, magnificent examples, part of road network. This is why Roman roads are faster than mountain paths.",
+   "note": "Stone arch bridges are already common wherever the masonry arch is known, and are part of any serious road network. This is why a well-engineered road network moves faster than mountain paths.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -55576,7 +55608,7 @@
    "lab": {},
    "mat": {},
    "name": "Cursus publicus courier service",
-   "note": "ROME ALREADY HAS THIS. Imperial dispatch relay using stations and fresh horses. Shows that Rome recognizes speed of information matters; this logic applies to freight.",
+   "note": "A dispatch relay using stations and fresh horses is already established wherever a state has the capacity to maintain one (Rome's cursus publicus is the model). It shows that this state already recognises that speed of information matters; the same logic applies to freight.",
    "ph": 0.0,
    "pre": [
     "lnd_horse_saddle_basic",
@@ -55760,7 +55792,7 @@
    "lab": {},
    "mat": {},
    "name": "Four-wheeled cart",
-   "note": "ROME ALREADY HAS THIS. Four-wheel design allows steering the front axle independently, a fundamental shift from two-wheel carts. Capacity and maneuverability.",
+   "note": "Already built wherever cartwrights work. Four-wheel design allows steering the front axle independently, a fundamental shift from two-wheel carts. Capacity and maneuverability.",
    "ph": 0.0,
    "pre": [
     "lnd_axle_pivot_front",
@@ -55889,7 +55921,7 @@
    "lab": {},
    "mat": {},
    "name": "Harness of throat and girth type",
-   "note": "ROME ALREADY HAS THIS. Rope and leather harness distributes pull across the shoulders and chest. Impedes breathing but enables pulling; the rigid collar is later and better.",
+   "note": "Already in use wherever draught animals are harnessed at all. Rope and leather harness distributes pull across the shoulders and chest. Impedes breathing but enables pulling; the rigid collar is later and better.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -55965,7 +55997,7 @@
    "lab": {},
    "mat": {},
    "name": "Horse saddle (basic)",
-   "note": "ROME ALREADY HAS THIS. Basic saddle with cloth and leather distributes rider weight. Allows long-distance mounted travel. Stirrups come later.",
+   "note": "Already made wherever there is a leatherworking tradition and horses to ride. Basic saddle with cloth and leather distributes rider weight. Allows long-distance mounted travel. Stirrups come later.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -56044,7 +56076,7 @@
    "lab": {},
    "mat": {},
    "name": "Litter",
-   "note": "ROME ALREADY HAS THIS. Pole-carried passenger carriage used by the wealthy. Humans as motive power but avoids the discomfort of horseback for dignitaries.",
+   "note": "Already in use wherever there are enough hands and a wealthy passenger. Pole-carried passenger carriage. Humans as motive power but avoids the discomfort of horseback for dignitaries.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -56085,7 +56117,7 @@
     "stone_broken_tons": 50.0
    },
    "name": "Macadam road surface",
-   "note": "Broken stone, graded by size, compacted without binding agent. Much cheaper to build and maintain than Roman dressed-stone roads but degrades faster in wet. An economic trade-off, not an improvement.",
+   "note": "Broken stone, graded by size, compacted without binding agent. Much cheaper to build and maintain than a dressed-stone paved road but degrades faster in wet. An economic trade-off, not an improvement.",
    "ph": 140.0,
    "pre": [
     "cap_measure_len",
@@ -56170,7 +56202,7 @@
    "lab": {},
    "mat": {},
    "name": "Milestone",
-   "note": "ROME ALREADY HAS THIS. Stone pillars marking distance along roads. Enables speed prediction, time scheduling, loss prediction. Information infrastructure.",
+   "note": "Already set up wherever a state maintains its roads (Rome's are the best documented). Stone pillars marking distance along roads. Enables speed prediction, time scheduling, loss prediction. Information infrastructure.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -56248,7 +56280,7 @@
    "lab": {},
    "mat": {},
    "name": "Mule transport",
-   "note": "ROME ALREADY HAS THIS. Mules are preferred for mountain work because they are surefooted and eat less than horses. The pack mule is the backbone of supply in rough terrain.",
+   "note": "Already the standard wherever there is mountain work to do. Mules are preferred because they are surefooted and eat less than horses. The pack mule is the backbone of supply in rough terrain.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -56335,7 +56367,7 @@
    "lab": {},
    "mat": {},
    "name": "Ox transport",
-   "note": "ROME ALREADY HAS THIS. Oxen pull heavier loads than horses at slower speed and cost less to feed. Used for slow supply and field work; horses for speed.",
+   "note": "Already standard wherever oxen are kept. Oxen pull heavier loads than horses at slower speed and cost less to feed. Used for slow supply and field work; horses for speed.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -56369,7 +56401,7 @@
    "lab": {},
    "mat": {},
    "name": "Paved trunk road network",
-   "note": "ROME ALREADY HAS THIS. The via system of stone-laid trunk roads is the network substrate for everything below. Permits high-speed carriage travel and reliable supply movement.",
+   "note": "Already built wherever a state has the capacity to maintain one (Rome's via system of stone-laid trunk roads is the model). It is the network substrate for everything below: high-speed carriage travel and reliable supply movement.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -56719,7 +56751,7 @@
     "stone_broken_tons": 40.0
    },
    "name": "Tarmacadam road surface",
-   "note": "Macadam with tar binding is cheaper to build than Roman stone but still degrades. The advantage is speed of repair, not quality. Honest assessment: it is an economic choice for volume, not engineering superiority.",
+   "note": "Macadam with tar binding is cheaper to build than a dressed-stone road but still degrades. The advantage is speed of repair, not quality. Honest assessment: it is an economic choice for volume, not engineering superiority.",
    "ph": 150.0,
    "pre": [
     "destructive_distillation",
@@ -56886,7 +56918,7 @@
    "lab": {},
    "mat": {},
    "name": "Two-wheeled cart",
-   "note": "ROME ALREADY HAS THIS. Simple two-point suspension, lighter than four-wheel for local work, used everywhere by farmers and traders.",
+   "note": "Already in use everywhere farmers and traders need local haulage. Simple two-point suspension, lighter than a four-wheel cart for local work.",
    "ph": 0.0,
    "pre": [
     "lnd_wheel_spoked"
@@ -56922,7 +56954,7 @@
    "lab": {},
    "mat": {},
    "name": "Iron tyre (tire)",
-   "note": "ROME ALREADY HAS THIS. Iron band shrunk hot onto the rim protects the wooden wheel and spreads road impact. Vastly extends wheel life over bare wood.",
+   "note": "Already applied wherever there is a blacksmith and a wheelwright working together. Iron band shrunk hot onto the rim protects the wooden wheel and spreads road impact. Vastly extends wheel life over bare wood.",
    "ph": 0.0,
    "pre": [
     "lnd_wheel_spoked",
@@ -56959,7 +56991,7 @@
    "lab": {},
    "mat": {},
    "name": "Spoked wheel",
-   "note": "ROME ALREADY HAS THIS. Radial spokes in tension carry load far better than solid wood. This invention alone made fast carriages possible.",
+   "note": "Already built wherever there is a skilled wheelwright. Radial spokes in tension carry load far better than solid wood. This invention alone made fast carriages possible.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -56999,7 +57031,7 @@
     "timber_m3": 1.0
    },
    "name": "Wheelbarrow",
-   "note": "One-wheel handcart, invented in China, allows manual labour to move bulk goods. Rome does not have this; it is surprisingly absent. An enormous productivity gain once adopted.",
+   "note": "One-wheel handcart, invented in China, allows manual labour to move bulk goods. Missing from the Mediterranean and Atlantic worlds even though it is a huge productivity gain once adopted, and surprisingly absent given how simple it is.",
    "ph": 30.0,
    "pre": [
     "lnd_wheel_spoked"
@@ -57117,7 +57149,7 @@
    "lab": {},
    "mat": {},
    "name": "Alum",
-   "note": "ROME HAS THIS from Melos. Mordant, styptic, sizing.",
+   "note": "Already available wherever there is trade access to an alum source (Rome's is Melos). Mordant, styptic, sizing.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57217,7 +57249,7 @@
    "lab": {},
    "mat": {},
    "name": "Asbestos",
-   "note": "ROME HAS THIS from Cyprus. Pliny describes it. Useful, and it will kill your workers slowly.",
+   "note": "Already available wherever there is trade access to a deposit (Rome's is Cyprus; Pliny describes it). Useful, and it will kill your workers slowly.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57248,7 +57280,7 @@
    "lab": {},
    "mat": {},
    "name": "Beeswax",
-   "note": "ROME HAS THIS. Lost wax casting, luting, acid-proof coating.",
+   "note": "Already available wherever bees are kept. Lost wax casting, luting, acid-proof coating.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57279,7 +57311,7 @@
    "lab": {},
    "mat": {},
    "name": "Bitumen and naphtha seeps",
-   "note": "ROME HAS THIS from Mesopotamia and the Dead Sea. Cable insulation, waterproofing, and the seed of petroleum chemistry.",
+   "note": "Already available wherever there is trade access to a seep (Mesopotamia and the Dead Sea supply Rome's). Cable insulation, waterproofing, and the seed of petroleum chemistry.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57344,7 +57376,7 @@
    "lab": {},
    "mat": {},
    "name": "Brass (by cementation)",
-   "note": "ROME HAS THIS, made by heating copper with calamine and charcoal WITHOUT ever seeing zinc metal. See mat_zinc for why.",
+   "note": "Already made wherever copper is heated with calamine and charcoal, without anyone ever seeing zinc metal. See mat_zinc for why.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57375,7 +57407,7 @@
    "lab": {},
    "mat": {},
    "name": "Bronze",
-   "note": "ROME HAS THIS. Casting, bearings, statuary, instruments.",
+   "note": "Already available wherever there is bronze-casting skill. Casting, bearings, statuary, instruments.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57457,7 +57489,7 @@
    "lab": {},
    "mat": {},
    "name": "Calamine (zinc carbonate/silicate ore)",
-   "note": "ROME HAS THIS and already smelts it into brass.",
+   "note": "Already mined and already smelted into brass wherever both ore and the skill exist.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57519,7 +57551,7 @@
    "lab": {},
    "mat": {},
    "name": "Carbon black and lampblack",
-   "note": "ROME HAS THIS. Ink pigment, and much later the reinforcing filler that makes rubber into tyres.",
+   "note": "Already produced wherever lamps or fires are burned for soot. Ink pigment, and much later the reinforcing filler that makes rubber into tyres.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57660,7 +57692,7 @@
    "lab": {},
    "mat": {},
    "name": "Charcoal",
-   "note": "ROME HAS THIS. The real ceiling on iron output is forest, not ore.",
+   "note": "Already produced wherever wood is burned for it. The real ceiling on iron output is forest, not ore.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -57691,7 +57723,7 @@
    "lab": {},
    "mat": {},
    "name": "Sodium nitrate",
-   "note": "NOT UNOBTAINABLE, and also not needed. Bengal saltpetre is on a route Rome already sails and supplied the world's gunpowder for centuries, and nitre beds work anywhere. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE, and also not needed. Bengal saltpetre is already on a trade route reachable by long-distance sea trade (Rome's India route is one example) and supplied the world's gunpowder for centuries, and nitre beds work anywhere. See data/world/geography.json for where it is and what reaching it costs.",
    "ph": 60.0,
    "pre": [
     "exp_americas_factory"
@@ -57966,7 +57998,7 @@
    "lab": {},
    "mat": {},
    "name": "Emery (Naxos)",
-   "note": "ROME HAS THIS. Your abrasive for every ground surface in this document.",
+   "note": "Already available wherever there is trade access to a deposit. Your abrasive for every ground surface in this document.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58031,7 +58063,7 @@
    "lab": {},
    "mat": {},
    "name": "Galena (lead sulfide)",
-   "note": "ROME HAS THIS everywhere it mines lead. It is also a working semiconductor, which nobody will suspect for 1800 years.",
+   "note": "Already available everywhere lead is mined. It is also a working semiconductor, which nobody will suspect for 1800 years.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58098,7 +58130,7 @@
    "lab": {},
    "mat": {},
    "name": "Soda-lime glass",
-   "note": "ROME HAS THIS and is genuinely good at it, including deliberately decolourised near-colourless glass.",
+   "note": "Already made, and made well, wherever there is a live glass industry, including deliberately decolourised near-colourless glass.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58131,7 +58163,7 @@
    "lab": {},
    "mat": {},
    "name": "Gold",
-   "note": "ROME HAS THIS. Las Medulas, and Dacia from 106 AD.",
+   "note": "Already mined wherever there is a working goldfield (Rome's include Las Medulas, and Dacia from 106 AD).",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58196,7 +58228,7 @@
    "lab": {},
    "mat": {},
    "name": "Gutta percha",
-   "note": "NOT UNOBTAINABLE. Palaquium latex from Malaya, reached by extending east the India route Rome already sails annually. Indian and Malay traders already carry it partway. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE. Palaquium latex from Malaya, reached by extending east whatever long-distance ocean trade route you already have (Rome already sails there annually). Indian and Malay traders already carry it partway. See data/world/geography.json for where it is and what reaching it costs.",
    "ph": 120.0,
    "pre": [
     "exp_trade_route_extend"
@@ -58232,7 +58264,7 @@
    "lab": {},
    "mat": {},
    "name": "Gypsum plaster",
-   "note": "ROME HAS THIS.",
+   "note": "Already available wherever there is a gypsum deposit.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58308,7 +58340,7 @@
    "lab": {},
    "mat": {},
    "name": "Lead",
-   "note": "ROME HAS THIS in enormous quantity from Britannia and Hispania. Cheap. The only common material that survives hot sulfuric acid.",
+   "note": "Already available in enormous quantity wherever there is a major lead-mining region (Britannia and Hispania supply Rome's). Cheap. The only common material that survives hot sulfuric acid.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58339,7 +58371,7 @@
    "lab": {},
    "mat": {},
    "name": "Leather",
-   "note": "ROME HAS THIS. Bellows, seals, gaskets, drive belts.",
+   "note": "Already produced wherever livestock are kept and tanned. Bellows, seals, gaskets, drive belts.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58370,7 +58402,7 @@
    "lab": {},
    "mat": {},
    "name": "Quicklime and slaked lime",
-   "note": "ROME HAS THIS. Mortar, glass flux, causticising, agriculture.",
+   "note": "Already produced wherever limestone is burned. Mortar, glass flux, causticising, agriculture.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58401,7 +58433,7 @@
    "lab": {},
    "mat": {},
    "name": "Linen",
-   "note": "Linen from flax after retting and breaking. Rome produces linen cloth routinely.",
+   "note": "Linen from flax after retting and breaking. Already produced routinely wherever flax is grown and processed.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58469,7 +58501,7 @@
    "lab": {},
    "mat": {},
    "name": "Manganese and ferromanganese",
-   "note": "Deoxidises and desulfurises steel. Rome already mines the ore as a glass decolouriser without knowing it is a metal.",
+   "note": "Deoxidises and desulfurises steel. Already mined as a glass decolouriser in any developed glass industry (Rome among them), without anyone yet realising it is a metal.",
    "ph": 60.0,
    "pre": [
     "cap_heat_1600",
@@ -58503,7 +58535,7 @@
    "lab": {},
    "mat": {},
    "name": "Mercury",
-   "note": "ROME HAS THIS from Almaden, an imperial monopoly. Pliny NH 33.118 price-fixes minium at 70 HS per pound.",
+   "note": "Already available wherever there is trade access to a cinnabar source (Rome's is Almaden, an imperial monopoly; Pliny NH 33.118 price-fixes minium at 70 HS per pound).",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58534,7 +58566,7 @@
    "lab": {},
    "mat": {},
    "name": "Natron (sodium carbonate)",
-   "note": "ROME HAS THIS from Wadi Natrun. IT IS NOT SALTPETRE. This confusion has wrecked more bootstrap plans than any other single error.",
+   "note": "Already available wherever there is trade access to a natron source (Rome's is Wadi Natrun). IT IS NOT SALTPETRE. This confusion has wrecked more bootstrap plans than any other single error.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -58747,7 +58779,7 @@
    "lab": {},
    "mat": {},
    "name": "Olive oil",
-   "note": "ROME HAS THIS in industrial quantity. Soap, lighting, quenching, varnish base.",
+   "note": "Already available in industrial quantity wherever olives are grown at scale. Soap, lighting, quenching, varnish base.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59020,7 +59052,7 @@
    "lab": {},
    "mat": {},
    "name": "Pyrolusite (manganese dioxide)",
-   "note": "ROME HAS THIS and already uses it as glassmaker's soap without knowing why.",
+   "note": "Already mined and already used as glassmaker's soap, wherever there is a live glass industry, generally without anyone knowing why it works.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59053,7 +59085,7 @@
    },
    "mat": {},
    "name": "Quinine from cinchona",
-   "note": "NOT UNOBTAINABLE, only Andean. Malaria is endemic around Rome, which makes this worth an ocean crossing by itself. Once you have it, TRANSPLANT it: the Dutch and British both moved cinchona out of Peru and broke the monopoly. See data/world/geography.json for where it is and what reaching it costs.",
+   "note": "NOT UNOBTAINABLE, only Andean. Malaria is endemic across much of the Mediterranean and the tropical world, which makes this worth an ocean crossing by itself wherever it is a problem for you. Once you have it, TRANSPLANT it: the Dutch and British both moved cinchona out of Peru and broke the monopoly. See data/world/geography.json for where it is and what reaching it costs.",
    "ph": 150.0,
    "pre": [
     "exp_americas_factory",
@@ -59096,7 +59128,7 @@
    "lab": {},
    "mat": {},
    "name": "Salt",
-   "note": "ROME HAS THIS, taxed and strategically controlled. Feedstock for hydrochloric acid and the whole chlor-alkali branch.",
+   "note": "Already available, taxed and strategically controlled, wherever there is a salt works. Feedstock for hydrochloric acid and the whole chlor-alkali branch.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59189,7 +59221,7 @@
    "lab": {},
    "mat": {},
    "name": "Silver",
-   "note": "ROME HAS THIS. Cupellation from galena.",
+   "note": "Already produced wherever cupellation from galena is practised.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59257,7 +59289,7 @@
    "lab": {},
    "mat": {},
    "name": "Sulfur",
-   "note": "ROME HAS THIS from Sicily and the Aeolian islands.",
+   "note": "Already available wherever there is trade access to a volcanic source (Sicily and the Aeolian islands supply Rome's).",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59322,7 +59354,7 @@
    "lab": {},
    "mat": {},
    "name": "Tallow",
-   "note": "ROME HAS THIS. Lubricant for wire drawing and machining.",
+   "note": "Already available wherever animals are rendered. Lubricant for wire drawing and machining.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59353,7 +59385,7 @@
    "lab": {},
    "mat": {},
    "name": "Tin",
-   "note": "ROME HAS THIS from Cornwall and Iberia. Expensive, long haul.",
+   "note": "Already available wherever there is trade access to a source (Cornwall and Iberia supply Rome's). Expensive, long haul.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59455,7 +59487,7 @@
    "lab": {},
    "mat": {},
    "name": "Vitriols (iron and copper sulfates)",
-   "note": "ROME HAS THIS lying in heaps at pyrite mines as a weathering product, and has no idea what it is for. Feedstock for sulfuric acid.",
+   "note": "Already lying in heaps at pyrite mines as a weathering product everywhere pyrite is worked, and generally nobody yet has any idea what it is for. Feedstock for sulfuric acid.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -59486,7 +59518,7 @@
    "lab": {},
    "mat": {},
    "name": "Wrought iron (bloomery)",
-   "note": "ROME HAS THIS at scale. Noricum is famous for it. Soft, tough, weldable, no useful casting.",
+   "note": "Already produced at scale wherever there is a strong ironworking tradition (Noricum is famous for supplying Rome's). Soft, tough, weldable, no useful casting.",
    "ph": 0.0,
    "pre": [],
    "req_any": [
@@ -59525,7 +59557,7 @@
    "lab": {},
    "mat": {},
    "name": "Zinc metal",
-   "note": "CRITICAL PATH AND ALMOST NOBODY SEES IT. Zinc boils at 907 C, below the temperature at which its ore is reduced, so the metal leaves as vapour and reburns at the furnace mouth. That is exactly why Rome makes brass by cementation and has never seen the metal. Seal the retort and condense downward. No zinc, no voltaic pile, no electricity.",
+   "note": "CRITICAL PATH AND ALMOST NOBODY SEES IT. Zinc boils at 907 C, below the temperature at which its ore is reduced, so the metal leaves as vapour and reburns at the furnace mouth. That is exactly why brass gets made by cementation everywhere, without anyone having seen the metal itself. Seal the retort and condense downward. No zinc, no voltaic pile, no electricity.",
    "ph": 40.0,
    "pre": [
     "cap_heat_1300",
@@ -59637,7 +59669,7 @@
    },
    "mat": {},
    "name": "Agar culture media",
-   "note": "Agar is the whole point and it is not obvious: gelatin melts at blood heat and is digested by the very bacteria you are growing, so plates liquefy overnight. Agar from red seaweed sets at 40 C, melts at 85 C and almost nothing eats it, which is why solid plate culture works at all. Mediterranean red algae (Gelidium) are available to Rome.",
+   "note": "Agar is the whole point and it is not obvious: gelatin melts at blood heat and is digested by the very bacteria you are growing, so plates liquefy overnight. Agar from red seaweed sets at 40 C, melts at 85 C and almost nothing eats it, which is why solid plate culture works at all. Red seaweed (Gelidium and relatives) grows around most temperate and Mediterranean coastlines and is available wherever you have sea access to them.",
    "ph": 100.0,
    "pre": [
     "med_autoclave",
@@ -64574,7 +64606,7 @@
    "lab": {},
    "mat": {},
    "name": "Aqueducts and public latrines",
-   "note": "Rome has abundant clean water and sewage separation. This infrastructure is mature and the foundation for any public health improvement.",
+   "note": "Abundant clean water and sewage separation are already established wherever aqueduct and drainage engineering has matured. This infrastructure, once mature, is the foundation for any public health improvement.",
    "ph": 0.0,
    "pre": [
     "mat_pozzolana"
@@ -64816,7 +64848,7 @@
    "lab": {},
    "mat": {},
    "name": "Cataract couching",
-   "note": "Displacement of opaque lens via a hollow needle, an ancient Roman technique. The rev is patient fees.",
+   "note": "Displacement of opaque lens via a hollow needle, an ancient technique attested from Mesopotamia through Rome to India. The rev is patient fees.",
    "ph": 0.0,
    "pre": [
     "med_surgical_kit_good"
@@ -65498,7 +65530,7 @@
     "parchment_sheet": 50.0
    },
    "name": "Medical education and cadaver dissection",
-   "note": "Formal curriculum: dissection of cadavers, demonstration, case study. Rome forbids human dissection; physicians must apprentice illegally or learn abroad.",
+   "note": "Formal curriculum: dissection of cadavers, demonstration, case study. Several ancient societies restrict human dissection on religious or legal grounds (Rome forbids it outright, so physicians there must apprentice illegally or learn abroad); check whether an equivalent restriction applies to your own society.",
    "ph": 200.0,
    "pre": [
     "med_hospital_institution"
@@ -66175,7 +66207,7 @@
    "lab": {},
    "mat": {},
    "name": "Good surgical instrument kit",
-   "note": "Rome already has reliable bronze and iron surgical blades, forceps, and spatulas. This is the baseline.",
+   "note": "Reliable bronze and iron surgical blades, forceps, and spatulas are already the baseline wherever there is skilled metalworking.",
    "ph": 0.0,
    "pre": [
     "mat_bronze"
@@ -66210,7 +66242,7 @@
    "lab": {},
    "mat": {},
    "name": "Trepanation",
-   "note": "Drilling into the skull to relieve pressure or expel evil spirits. Infection and death are common; Rome will pay for emergency cases.",
+   "note": "Drilling into the skull to relieve pressure or expel evil spirits. Infection and death are common; emergency cases will still be paid for.",
    "ph": 0.0,
    "pre": [
     "med_surgical_kit_good"
@@ -66328,7 +66360,7 @@
     "timber_m3": 10.0
    },
    "name": "Vector control and drainage for malaria",
-   "note": "Malaria is endemic to Rome's marshes. Quinine is UNOBTAINABLE. Drainage of standing water eliminates mosquito breeding. Laborious but works.",
+   "note": "Malaria is endemic to many marshy lowlands of the ancient world (Rome's own marshes are the best-documented case). Drainage of standing water eliminates mosquito breeding. Laborious but works.",
    "ph": 100.0,
    "pre": [
     "germ_theory"
@@ -67426,7 +67458,7 @@
     "timber_m3": 2.0
    },
    "name": "Green sand molding for casting",
-   "note": "Damp sand mixed with clay is packed around a wooden pattern and fired gently to harden the mold without drying it out completely. The trapped water flashes to steam when molten metal enters, creating a small gap and preventing fusion. Cheap and fast but produces rough castings. Rome has this baseline method.",
+   "note": "Damp sand mixed with clay is packed around a wooden pattern and fired gently to harden the mold without drying it out completely. The trapped water flashes to steam when molten metal enters, creating a small gap and preventing fusion. Cheap and fast but produces rough castings. This baseline method is already established wherever there is a foundry tradition.",
    "ph": 80.0,
    "pre": [
     "cap_heat_1300"
@@ -67598,7 +67630,7 @@
     "sand_quartz_kg": 100.0
    },
    "name": "Investment casting and lost wax",
-   "note": "Carve fine details in wax, embed in clay and sand, fire to melt and drive out the wax, pour molten metal into the cavity. Results in intricate castings with no parting lines. Rome has this for jewelry. For large castings it becomes expensive in wax and labor but the precision is unmatched. The name investment refers to the clay-sand shell that receives the investment.",
+   "note": "Carve fine details in wax, embed in clay and sand, fire to melt and drive out the wax, pour molten metal into the cavity. Results in intricate castings with no parting lines. Already established for jewellery wherever fine metalworking exists. For large castings it becomes expensive in wax and labor but the precision is unmatched. The name investment refers to the clay-sand shell that receives the investment.",
    "ph": 100.0,
    "pre": [],
    "req_any": [],
@@ -67891,7 +67923,7 @@
     "timber_m3": 1.0
    },
    "name": "Ore dressing: crushing and hand sorting",
-   "note": "Breaking ore by hand and gravity-separating visible rich and waste rock is unchanged since antiquity. The skill is recognizing which rock will pay: this is entirely empirical and learned from the ground itself. Rome needs labour, not invention.",
+   "note": "Breaking ore by hand and gravity-separating visible rich and waste rock is unchanged since antiquity. The skill is recognizing which rock will pay: this is entirely empirical and learned from the ground itself. This needs labour, not invention, wherever mining already happens.",
    "ph": 20.0,
    "pre": [],
    "req_any": [],
@@ -68572,7 +68604,7 @@
     "timber_m3": 6.0
    },
    "name": "Trip hammer and water-driven forge hammer",
-   "note": "A cam on a water wheel shaft lifts a heavy hammer, then the cam releases it and gravity and the impact do the forging work. Much faster than hand hammering and the work is uniform. The key is that the head must be hard iron or the repeated impact will deform it; case-hardening is necessary to survive. Rome has this; it is the foundation of heavy forge work.",
+   "note": "A cam on a water wheel shaft lifts a heavy hammer, then the cam releases it and gravity and the impact do the forging work. Much faster than hand hammering and the work is uniform. The key is that the head must be hard iron or the repeated impact will deform it; case-hardening is necessary to survive. This is already established wherever there is a water-powered forge; it is the foundation of heavy forge work.",
    "ph": 80.0,
    "pre": [
     "cap_power_water",
@@ -75411,14 +75443,16 @@
    "note": "Blistering agent that damages skin and mucous membranes. Oily liquid, persists in soil and clothing. Casualties mount over days as soldiers do not realise exposure until burns appear. Deadliest chemical of the war.",
    "ph": 85.0,
    "pre": [
-    "mat_sulfur"
+    "mat_chlorine",
+    "mat_sulfur",
+    "mil_artillery_shell"
    ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.2,
    "sch": 0.0,
    "sus": 6,
-   "tier": 3,
+   "tier": 5,
    "traits": [
     "military"
    ],
@@ -75531,13 +75565,15 @@
    "name": "Conscription and reserve",
    "note": "Conscription and the reserve - compulsory military service produces trained reserve of millions. Mobilised in 1914, European armies grew from 2 million to 15 million within months. Trench warfare consumes manpower at unsustainable rates.",
    "ph": 60.0,
-   "pre": [],
+   "pre": [
+    "mil_general_staff"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.0,
    "sch": 0.0,
    "sus": 0,
-   "tier": 2,
+   "tier": 3,
    "traits": [
     "military"
    ],
@@ -76314,7 +76350,9 @@
    "name": "General staff",
    "note": "Permanent peacetime cadre of professional military planners. Plans campaign strategy, logistics, and mobilisation. Prussian innovation copied by all great powers.",
    "ph": 100.0,
-   "pre": [],
+   "pre": [
+    "fin_government"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.01,
@@ -76453,8 +76491,8 @@
    "_total_cost": 0.0,
    "adopt_yrs": 0,
    "art": 0.0,
-   "build_yrs": 0,
-   "cap": 0.0,
+   "build_yrs": 0.1,
+   "cap": 40.0,
    "cat": "weapons",
    "conf": "A",
    "dev_people": null,
@@ -76463,23 +76501,27 @@
    "id": "mil_gunpowder_base",
    "kb": "97_military.md",
    "kb_level": "module",
-   "lab": {},
+   "lab": {
+    "labourer": 20.0
+   },
    "mat": {},
    "name": "Gunpowder foundation",
-   "note": "ROME ALREADY HAS THIS. Saltpetre, charcoal, sulfur mixed in open vessels. Unreliable, separates in transport, cannot sustain rapid fire.",
-   "ph": 0.0,
-   "pre": [],
+   "note": "Saltpetre, charcoal, sulfur mixed in open vessels: unreliable, separates in transport, cannot sustain rapid fire. Nobody has this until they have real saltpetre (see nitre_beds); the natron/nitrum confusion in mat_natron has wrecked more bootstrap plans than any other single error.",
+   "ph": 10.0,
+   "pre": [
+    "nitre_beds"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.0,
    "sch": 0.0,
    "sus": 0,
-   "tier": 0,
+   "tier": 3,
    "traits": [
     "military"
    ],
    "up": 0.0,
-   "yrs": 0.0
+   "yrs": 0.1
   },
   {
    "_internal": "[AUDIT: State interest and suspicion were unset and have been defaulted from the category.]",
@@ -76970,7 +77012,7 @@
    "risk": 0.01,
    "sch": 0.0,
    "sus": 0,
-   "tier": 3,
+   "tier": 5,
    "traits": [
     "military",
     "infrastructure"
@@ -78459,13 +78501,15 @@
    "name": "Trace italienne",
    "note": "The bastion answers the cannon because a round tower has dead ground at its foot where attackers hide, and an angled bastion does not. Low angled walls cannot be battered. Defense trades height for firepower.",
    "ph": 100.0,
-   "pre": [],
+   "pre": [
+    "mil_artillery_piece"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.01,
    "sch": 0.0,
    "sus": 0,
-   "tier": 1,
+   "tier": 2,
    "traits": [
     "military",
     "infrastructure"
@@ -78536,13 +78580,16 @@
    "name": "Trench",
    "note": "Ditch protecting infantry from machine gun fire and artillery. Requires drainage and reinforcement with wood or concrete. Labor-intensive but fast to construct. Becomes primary infantry defense after 1900.",
    "ph": 40.0,
-   "pre": [],
+   "pre": [
+    "mil_artillery_shell",
+    "mil_machine_gun_recoil"
+   ],
    "req_any": [],
    "rev": 0.0,
    "risk": 0.01,
    "sch": 0.0,
    "sus": 0,
-   "tier": 2,
+   "tier": 4,
    "traits": [
     "military",
     "infrastructure"
@@ -78855,7 +78902,7 @@
     "tin_kg": 30.0
    },
    "name": "Tin-mercury amalgam plate mirrors",
-   "note": "Roman mirrors are small, dark and mostly polished bronze or lead-backed glass. A true plate mirror is a luxury good with an obscene margin. Mercury vapour will poison your workers; ventilate, rotate them, and do not let them eat in the shop.",
+   "note": "Existing mirrors are small, dark and mostly polished bronze or lead-backed glass. A true plate mirror is a luxury good with an obscene margin. Mercury vapour will poison your workers; ventilate, rotate them, and do not let them eat in the shop.",
    "ph": 350.0,
    "pre": [
     "glass_clear",
@@ -83716,7 +83763,7 @@
     "wood_ash_kg": 25000.0
    },
    "name": "Nitre beds and potassium nitrate",
-   "note": "START THIS IN MONTH ONE. It is the longest lead-time item in the tree: the beds take 12-24 months to mature no matter what you spend. Roman nitrum is sodium carbonate, not nitre; there is no saltpetre anywhere in the Roman economy. The non-obvious step is boiling the leachate with wood-ash potash to convert calcium nitrate to the potassium salt, which is the one that actually works.",
+   "note": "START THIS IN MONTH ONE. It is the longest lead-time item in the tree: the beds take 12-24 months to mature no matter what you spend. Real saltpetre exists in none of these economies yet; the word often used for it in old sources (Roman nitrum, for one) usually turns out to mean sodium carbonate instead, a common false-cognate trap. The non-obvious step is boiling the leachate with wood-ash potash to convert calcium nitrate to the potassium salt, which is the one that actually works.",
    "ph": 350.0,
    "pre": [
     "workshop_first"
@@ -84102,7 +84149,7 @@
    "lab": {},
    "mat": {},
    "name": "Burning glass",
-   "note": "Seneca describes how a globe of water can concentrate sunlight to ignite. Rome already possesses this effect; neither lens nor glass shaping needed, just geometry.",
+   "note": "This effect, a globe of water concentrating sunlight to ignite, is already understood wherever anyone has played with one in strong sun (Seneca is our best surviving description); neither lens nor glass shaping needed, just geometry.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -84604,7 +84651,7 @@
    "lab": {},
    "mat": {},
    "name": "Geared mechanical transmission",
-   "note": "Bronze and iron gears with involute or cycloidal flanks transmit rotary motion at calculated ratios. The Antikythera mechanism shows Rome's capability.",
+   "note": "Bronze and iron gears with involute or cycloidal flanks transmit rotary motion at calculated ratios. The Antikythera mechanism shows the Mediterranean world already has this capability by this era.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -84919,7 +84966,7 @@
    "lab": {},
    "mat": {},
    "name": "Polished metal mirror",
-   "note": "Bronze and silver polished to reflect. Rome makes excellent mirrors; the technology is established.",
+   "note": "Bronze and silver polished to reflect. Excellent mirrors are already made wherever this level of metalworking exists (Rome is the best-attested case); the technology is settled.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -86000,7 +86047,7 @@
    "lab": {},
    "mat": {},
    "name": "Steelyard balance",
-   "note": "Unequal arms with movable weight on calibrated beam weighs goods without counter-weights. Rome has this; precision limited to roughly 1 percent.",
+   "note": "Unequal arms with movable weight on calibrated beam weighs goods without counter-weights. Already established wherever there is a market economy that needs it; precision limited to roughly 1 percent.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -86115,7 +86162,7 @@
    "lab": {},
    "mat": {},
    "name": "Sundial",
-   "note": "Shadow cast by the gnomon measures hour angle. Rome has precise designs based on latitude.",
+   "note": "Shadow cast by the gnomon measures hour angle. Precise designs based on latitude are already known wherever astronomy has reached this level.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -86194,7 +86241,7 @@
    "lab": {},
    "mat": {},
    "name": "Water clock (clepsydra)",
-   "note": "Steady flow of water through orifice marks time independent of sky. Rome perfected this and added geared indicator dials.",
+   "note": "Steady flow of water through orifice marks time independent of sky. Already perfected, with geared indicator dials added, in the Hellenistic and Roman Mediterranean; wherever you are playing, an equivalent tradition of timekeeping is assumed to exist too.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -86519,7 +86566,7 @@
     "wood_ash_kg": 40000.0
    },
    "name": "Potash, caustic potash, soda and caustic soda",
-   "note": "Rome has natron in bulk from Egypt and wood ash everywhere. Causticising with slaked lime is the step they do not take. Feeds soap, glass and the nitre beds.",
+   "note": "Natron in bulk (Rome draws its from Egypt) and wood ash are both already available in most ancient economies, one or the other or both. Causticising with slaked lime is the step not yet taken. Feeds soap, glass and the nitre beds.",
    "ph": 200.0,
    "pre": [
     "workshop_first"
@@ -86562,7 +86609,7 @@
     "steel_plate_kg": 90000.0
    },
    "name": "Central generation and distribution",
-   "note": "The precondition for every energy-intensive process that follows: arc furnaces, electrolysis, aluminium, and the sustained laboratory power a semiconductor programme consumes. This is a civilisational-scale project, not a workshop one. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "The precondition for every energy-intensive process that follows: arc furnaces, electrolysis, aluminium, and the sustained laboratory power a semiconductor programme consumes. This is a civilisational-scale project, not a workshop one. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. A power grid needs generation, transformers, transmission and the steel to build all three. It does not need a railway: this node required one, which pulled the whole eighteen-node railway programme and its serial time into the critical path to a transistor. Bulk steel, which the railway also needed, is the real shared dependency.",
    "ph": 900.0,
    "pre": [
     "en_circuit_breaker",
@@ -86572,8 +86619,8 @@
     "en_switchgear",
     "en_transformer",
     "en_transmission_line",
+    "mat_bulk_steel",
     "motor_transformer_ac",
-    "railway",
     "steam_high_pressure"
    ],
    "req_any": [],
@@ -89130,7 +89177,7 @@
     "tallow_kg": 40.0
    },
    "name": "True plane surfaces by the three-plate method",
-   "note": "The foundation of everything mechanical, and it needs nothing Rome does not have. Two plates lapped together converge on a matched sphere and socket. Three plates lapped in rotation can only converge on flat. From the plane you derive the straightedge, the square, the gauge, the screw, and every machine after.",
+   "note": "The foundation of everything mechanical, and it needs nothing any Iron-Age workshop does not already have. Two plates lapped together converge on a matched sphere and socket. Three plates lapped in rotation can only converge on flat. From the plane you derive the straightedge, the square, the gauge, the screw, and every machine after.",
    "ph": 500.0,
    "pre": [
     "case_hardening",
@@ -89175,7 +89222,7 @@
     "tin_kg": 60.0
    },
    "name": "Movable type and the screw press",
-   "note": "Rome already has the screw press for oil and wine, so half the machine exists. The hard parts are the punch-cut matrix, the adjustable hand mould for casting type at speed, and oil-based ink that will not bead on metal. Politically ambiguous: frame it as multiplying the classics, never as publishing. POLITICALLY AMBIGUOUS. Cheap accurate copying breaks the elite's control of what is known and by whom. Frame it as multiplying Homer, Virgil and the Twelve Tables, never as publishing. Print the classics first and visibly.",
+   "note": "A screw press for oil and wine is already common wherever agriculture is pressed this way (Rome among others), so half the machine already exists. The hard parts are the punch-cut matrix, the adjustable hand mould for casting type at speed, and oil-based ink that will not bead on metal. POLITICALLY AMBIGUOUS. Cheap accurate copying breaks the elite's control of what is known and by whom. Frame it as multiplying the classics, never as publishing. Print the classics first and visibly.",
    "ph": 900.0,
    "pre": [
     "cementation_steel",
@@ -90285,7 +90332,7 @@
    "lab": {},
    "mat": {},
    "name": "Papyrus sheets",
-   "note": "Rome has abundant supply from Egypt. Writing surface, not an invention.",
+   "note": "Already abundant wherever there is trade access to Egypt (Rome's is the best-documented supply chain). Writing surface, not an invention; wherever you cannot reach it, an equivalent local writing surface is what you actually use.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -90319,7 +90366,7 @@
    "lab": {},
    "mat": {},
    "name": "Parchment sheets",
-   "note": "Rome produces from animal skin. Durable, reusable, erasable, expensive.",
+   "note": "Already produced from animal skin wherever livestock and tanning knowledge exist. Durable, reusable, erasable, expensive.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -91460,7 +91507,7 @@
    "lab": {},
    "mat": {},
    "name": "Force pump",
-   "note": "Roman force pumps lift water by mechanical displacement, not by suction alone. Critical for aqueducts and mines; requires a slave or animal to operate.",
+   "note": "Force pumps lift water by mechanical displacement, not by suction alone, wherever this technique is already known (Rome's are well documented). Critical for aqueducts and mines; requires a slave, servant or animal to operate.",
    "ph": 0.0,
    "pre": [
     "cap_power_muscle"
@@ -91919,7 +91966,7 @@
     "steel_plate_kg": 1500.0
    },
    "name": "Nuclear fission and power",
-   "note": "Honest assessment: nuclear power requires uranium enrichment to weapons-grade purity (99.9999+%), neutron physics at a level unknown to Rome, materials research for radiation damage, and a national security programme. The reactor is the easy part. Start this only if you have a state programme with decades and billions to spare.",
+   "note": "Honest assessment: nuclear power requires uranium enrichment to weapons-grade purity (99.9999+%), neutron physics unknown to any pre-modern society, materials research for radiation damage, and a national security programme. The reactor is the easy part. Start this only if you have a state programme with decades and billions to spare.",
    "ph": 500.0,
    "pre": [
     "atomic_theory",
@@ -92196,7 +92243,7 @@
    "lab": {},
    "mat": {},
    "name": "Screw press",
-   "note": "The screw and nut multiply force: oil, wine, coins. Rome has perfect screw threads; this is a force multiplier, not power generation.",
+   "note": "The screw and nut multiply force: oil, wine, coins. Wherever precise screw threads are already cut (Rome's are as good as any), this is a force multiplier, not power generation.",
    "ph": 0.0,
    "pre": [
     "cap_power_muscle"
@@ -92362,7 +92409,7 @@
    "lab": {},
    "mat": {},
    "name": "Sails on ships",
-   "note": "Rome uses wind to move ships. This is free power once mastered; the wind will not supply electricity or mechanical work directly ashore without new capture technology.",
+   "note": "Wind already moves ships wherever sailing rigs exist. This is free power once mastered; the wind will not supply electricity or mechanical work directly ashore without new capture technology.",
    "ph": 0.0,
    "pre": [
     "cap_power_water"
@@ -92791,7 +92838,7 @@
     "timber_m3": 4000.0
    },
    "name": "Iron rail, locomotive and permanent way",
-   "note": "Rome's road network is already excellent, so the marginal gain is smaller than it was in Britain, but bulk freight overland at a fortieth of the cost changes what can be built inland. Politically superb: it is unambiguously an imperial instrument. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. The 400 tonnes of rail steel is a demonstration line of roughly 4 km at about 100 kg per metre of track, not a network. A network is a further order of magnitude and is why the calendar floor here is a generation.",
+   "note": "Where the existing road network is already excellent (Rome's is the classic case) the marginal gain from rail is smaller than it was in 1830s Britain, but bulk freight overland at a fortieth of the cost still changes what can be built inland. Politically superb: it is unambiguously an instrument of whatever state you serve. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down. The 400 tonnes of rail steel is a demonstration line of roughly 4 km at about 100 kg per metre of track, not a network. A network is a further order of magnitude and is why the calendar floor here is a generation.",
    "ph": 800.0,
    "pre": [
     "lnd_flanged_wheel",
@@ -92859,7 +92906,7 @@
     "sand_quartz_kg": 6000.0
    },
    "name": "Fireclay, grog and silica refractories",
-   "note": "Nothing hot happens without a vessel that survives it. Rome has excellent ceramics but no systematic refractory grading. Test candidate clays by firing to failure and record the results; this is your first real experimental programme.",
+   "note": "Nothing hot happens without a vessel that survives it. Excellent ceramics already exist in most of these societies, but without systematic refractory grading. Test candidate clays by firing to failure and record the results; this is your first real experimental programme.",
    "ph": 350.0,
    "pre": [
     "workshop_first"
@@ -92896,7 +92943,7 @@
    },
    "mat": {},
    "name": "Boiled water, handwashing, wound irrigation, quarantine",
-   "note": "Costs an argument, not a denarius. Saves more Roman lives than every machine in this document combined. Sell it to the legions first: the army already has valetudinaria and an officer class that measures results.",
+   "note": "Costs an argument, not a coin. Saves more lives than every machine in this document combined, wherever it is adopted. Sell it to the army first: an army already has field hospitals and an officer class that measures results (Rome's valetudinaria is the model).",
    "ph": 300.0,
    "pre": [
     "distillation_alcohol"
@@ -94877,7 +94924,7 @@
    "lab": {},
    "mat": {},
    "name": "Positional notation and place value",
-   "note": "Babylonians and Indians used this. Rome has it for decimals and whole numbers already. Not universal yet in all trades.",
+   "note": "Babylonians and Indians used this. It is already established for decimals and whole numbers in most of these societies (Rome included). Not yet universal in all trades.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -97715,7 +97762,7 @@
    "lab": {},
    "mat": {},
    "name": "Artificial harbours in hydraulic concrete",
-   "note": "Rome builds harbours at Portus and Caesarea using pozzolanic concrete that sets underwater; breakwaters and jetties protect anchorages.",
+   "note": "Harbours built in hydraulic concrete that sets underwater are already achievable wherever pozzolana or an equivalent hydraulic binder exists (Rome's Portus and Caesarea are the standing examples); breakwaters and jetties protect anchorages.",
    "ph": 0.0,
    "pre": [
     "mat_pozzolana"
@@ -97882,7 +97929,7 @@
     "lead_kg": 1500.0
    },
    "name": "Lead sheathing against shipworm",
-   "note": "Lead sheet nailed over the underwater hull prevents shipworm (Teredo) boring into timber; Rome has done this for decades; it is perishable and must be renewed regularly.",
+   "note": "Lead sheet nailed over the underwater hull prevents shipworm (Teredo) boring into timber wherever this is already practised (Rome has done it for decades); it is perishable and must be renewed regularly.",
    "ph": 0.0,
    "pre": [
     "mat_lead"
@@ -97920,7 +97967,7 @@
    },
    "mat": {},
    "name": "Lodestone knowledge",
-   "note": "Rome knows that lodestones attract iron; the knowledge that this is true even when spinning, and points north, is not yet recorded in the literature.",
+   "note": "It is already known that lodestones attract iron; the further fact that this holds even while spinning, and points north, is not yet recorded in the literature.",
    "ph": 20.0,
    "pre": [],
    "req_any": [],
@@ -98120,7 +98167,7 @@
    "lab": {},
    "mat": {},
    "name": "Large merchant sailing ships",
-   "note": "Rome already operates grain ships of 350 tonnes or more to Alexandria; the Fayum papyri and wrecks confirm sophisticated hull design and large crews.",
+   "note": "Large merchant ships of 350 tonnes or more already operate on some routes (Rome's Alexandria grain fleet is the best-documented case; the Fayum papyri and shipwrecks confirm sophisticated hull design and large crews).",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -98188,7 +98235,7 @@
    "lab": {},
    "mat": {},
    "name": "Mortise-and-tenon hull construction",
-   "note": "Rome's Mediterranean shipwrights already lock planks edge-to-edge with interlocking joints; this is shell-first construction, building the hull shell before framing.",
+   "note": "Shipwrights in several Mediterranean and Atlantic traditions already lock planks edge-to-edge with interlocking joints (Rome's are the best-documented); this is shell-first construction, building the hull shell before framing.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -98263,7 +98310,7 @@
    "lab": {},
    "mat": {},
    "name": "Pharos lighthouse",
-   "note": "The great tower at Alexandria with fire beacon at night; one of Rome's most famous navigational aids; visible for miles at sea.",
+   "note": "The great tower at Alexandria with fire beacon at night; one of the ancient world's most famous navigational aids, visible for miles at sea.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -98896,7 +98943,7 @@
     "wood_ash_kg": 15.0
    },
    "name": "Hard soap from oil and causticised lye",
-   "note": "Rome does not have soap as a cleanser. This is already in the vocabulary; do not redefine it. It is included here to prevent anachronism.",
+   "note": "Soap as a cleanser is missing from some ancient economies and already known in others (notably attested among Gallic and Germanic peoples, per Pliny). This word is already in the vocabulary wherever it applies; do not redefine it. It is included here to prevent anachronism where soap does not yet exist for you.",
    "ph": 250.0,
    "pre": [
     "workshop_first",
@@ -99136,7 +99183,7 @@
     "steel_plate_kg": 25000.0
    },
    "name": "High pressure steam and adequate boilers",
-   "note": "Power density enough for locomotives and ships. Be honest with your students about how many people early boilers killed, and build a hydraulic test and a relief valve into the very first one. A boiler explosion in Rome will be read as divine judgment on the whole programme. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "Power density enough for locomotives and ships. Be honest with your students about how many people early boilers killed, and build a hydraulic test and a relief valve into the very first one. A boiler explosion anywhere in a pre-industrial society will be read as divine judgment on the whole programme. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
    "ph": 700.0,
    "pre": [
     "mat_bulk_steel",
@@ -99260,7 +99307,7 @@
     "green_vitriol_kg": 6000.0
    },
    "name": "Oil of vitriol by dry distillation of green vitriol",
-   "note": "The master key to all chemistry. Green vitriol lies in heaps at every pyrite mine as a weathering product and Rome has no idea what it is for. High risk because the retorts fail constantly at the temperature required. Small scale, expensive acid, but it bootstraps the chamber process.",
+   "note": "The master key to all chemistry. Green vitriol lies in heaps at every pyrite mine as a weathering product and nobody yet has any idea what it is for. High risk because the retorts fail constantly at the temperature required. Small scale, expensive acid, but it bootstraps the chamber process.",
    "ph": 800.0,
    "pre": [
     "cap_heat_0700",
@@ -99316,7 +99363,7 @@
     "shellac_kg": 150.0
    },
    "name": "Electric telegraph",
-   "note": "The killer application for an empire and the thing that makes your programme permanently indispensable to the State. Glass or ceramic insulators on poles, relays every few tens of kilometres, Daniell cells at each station. Once the Rhine frontier can answer Rome in an hour, no emperor will ever let your institute be closed. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
+   "note": "The killer application for an empire and the thing that makes your programme permanently indispensable to the State. Glass or ceramic insulators on poles, relays every few tens of kilometres, Daniell cells at each station. Once a distant frontier can answer the capital in an hour, no ruler will ever let your institute be closed. CALENDAR FLOOR is set by diffusion, not by construction: the economy needs roughly a generation to train the trades, form the capital and build the suppliers. Money cannot buy this down.",
    "ph": 700.0,
    "pre": [
     "crude_cell",
@@ -99694,7 +99741,7 @@
    "lab": {},
    "mat": {},
    "name": "Cotton by trade",
-   "note": "Cotton imported from India and traded in Roman markets. Small quantities, expensive.",
+   "note": "Cotton imported from India and traded wherever long-distance trade networks reach that far. Small quantities, expensive.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -99728,7 +99775,7 @@
    "lab": {},
    "mat": {},
    "name": "Drop spindle",
-   "note": "Simple weighted spindle suspended by thread. Skill-dependent, slow. Standard Roman spinning method.",
+   "note": "Simple weighted spindle suspended by thread. Skill-dependent, slow. Standard spinning method across most of the ancient and medieval world.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -99762,7 +99809,7 @@
    "lab": {},
    "mat": {},
    "name": "Dyeing with madder root",
-   "note": "Madder root (Rubia tinctorum) produces reds and oranges. Requires mordanting to set dye. Standard Roman dye.",
+   "note": "Madder root (Rubia tinctorum) produces reds and oranges. Requires mordanting to set dye. Standard dye across much of the ancient and medieval world.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -100662,7 +100709,7 @@
    "lab": {},
    "mat": {},
    "name": "Sailcloth",
-   "note": "Heavy linen or hemp cloth used for sails. Rome produces for naval fleet. Requires tight weave and strong yarn.",
+   "note": "Heavy linen or hemp cloth used for sails, already produced wherever there is a seafaring tradition that needs a fleet. Requires tight weave and strong yarn.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -101095,7 +101142,7 @@
    "lab": {},
    "mat": {},
    "name": "Two-beam loom",
-   "note": "Horizontal loom with warp tensioned between two beams. Faster than warp-weighted, standard for linen and wool in Roman period.",
+   "note": "Horizontal loom with warp tensioned between two beams. Faster than warp-weighted, standard for linen and wool across much of the ancient world by this period.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -101257,7 +101304,7 @@
    "lab": {},
    "mat": {},
    "name": "Wool fiber",
-   "note": "Wool fiber from sheep, available in Roman households. No processing required beyond shearing and basic cleaning.",
+   "note": "Wool fibre from sheep, available wherever sheep are kept. No processing required beyond shearing and basic cleaning.",
    "ph": 0.0,
    "pre": [],
    "req_any": [],
@@ -104215,7 +104262,7 @@
     "rubber_kg": 5.0
    },
    "name": "Pneumatic tyre: air-filled",
-   "note": "REQUIRES NATURAL RUBBER (tier 9 unobtainable in Rome). Air-filled tube and tyre absorb shocks perfectly. Solid rubber or leather tyre is a poor substitute: rides are harsh and efficiency is lost. This is an honest limitation.",
+   "note": "REQUIRES NATURAL RUBBER, reachable only through the New World expedition branch (see the exp_* nodes): rubber is not native to the Mediterranean, Scandinavia, North China or England, only to tropical Latin America. Air-filled tube and tyre absorb shocks perfectly. Solid rubber or leather tyre is a poor substitute: rides are harsh and efficiency is lost. This is an honest limitation.",
    "ph": 160.0,
    "pre": [
     "cap_heat_1100",
@@ -115318,7 +115365,7 @@
     "timber_m3": 90.0
    },
    "name": "Overshot wheels, millponds, leats, line shafting",
-   "note": "Rome already has this (Barbegal, 16 wheels). What is missing is applying it to anything other than grinding grain. Put the bellows, the stamps, the paper mill, the boring mill and the lathe on the same shaft.",
+   "note": "This scale of water power is already achieved wherever a strong multi-wheel complex exists (Rome's 16-wheel Barbegal complex is the standing example). What is missing is applying it to anything other than grinding grain. Put the bellows, the stamps, the paper mill, the boring mill and the lathe on the same shaft.",
    "ph": 450.0,
    "pre": [
     "crank_conrod"
@@ -115498,7 +115545,7 @@
     "clay_kg": 10000.0
    },
    "name": "Zinc metal by downward distillation",
-   "note": "CRITICAL PATH, and nobody guesses it. Zinc boils at 907 C, below the temperature at which calamine is reduced, so the metal leaves as vapour and reburns at the furnace mouth. That is precisely why Rome makes brass by cementation and has never seen the metal. Seal the retort and condense downward, as at Zawar. Without this there is no good voltaic pile, and without a pile there is no electricity. It is also your realistic germanium source, twice over.",
+   "note": "CRITICAL PATH, and nobody guesses it. Zinc boils at 907 C, below the temperature at which calamine is reduced, so the metal leaves as vapour and reburns at the furnace mouth. That is precisely why brass gets made by cementation everywhere, without anyone having seen the metal itself. Seal the retort and condense downward, as at Zawar. Without this there is no good voltaic pile, and without a pile there is no electricity. It is also your realistic germanium source, twice over.",
    "ph": 700.0,
    "pre": [
     "cementation_steel",
@@ -115637,14 +115684,16 @@
     "timber_m3": 40
    },
    "name": "Chinampa raised-bed agriculture",
-   "note": "Lake-bed plots built up from dredged mud and staked with willow, cropped several times a year with the water table always at the roots. Yields per hectare beat anything in Europe and it needs no plough and no draught animal, which is exactly why Mesoamerica could carry dense cities without either.",
+   "note": "Lake-bed plots built up from dredged mud and staked with willow, cropped several times a year with the water table always at the roots. Yields per hectare beat anything in Europe and it needs no plough and no draught animal, which is exactly why Mesoamerica could carry dense cities without either. This is native to the lake basins of central Mexico; anyone not already there needs to reach the Americas first (see exp_americas_factory) and then adapt the technique to their own wetlands.",
    "ph": 120,
-   "pre": [],
+   "pre": [
+    "exp_americas_factory"
+   ],
    "rev": 900,
    "risk": 0.1,
    "sch": 0,
    "sus": 0,
-   "tier": 1,
+   "tier": 4,
    "traits": [
     "food",
     "infrastructure"

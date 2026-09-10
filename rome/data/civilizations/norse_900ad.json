@@ -57,10 +57,38 @@
  "hazards": [
   {
    "name": "Christianisation and political consolidation",
-   "note": "changes the value vector rather than killing people",
+   "note": "The real effect of this is not deaths but a change to the VALUES vector: w_religious_rigidity and w_magic_fear both rise sharply as the old plural, no-doctrine seidr-tolerant religion gives way to a Church with a creed and an inquisition's ancestor. That vector shift is not a field this hazard schema can apply (only staff_loss, sack_chance, output_factor and real_erosion reach the engine; see data/civilizations/_SCHEMA.md's `values` section) -- ENGINE TODO: a hazard type that reweights `values` for the rest of the run. Until that exists, the output_factor below stands in for the real cost: temple-burnings, forced conversions and the kings' wars that came with them (Olaf Tryggvason's campaigns from 995, climaxing at the Battle of Stiklestad in 1030) did visibly disrupt production and did occasionally burn things down, even though the deeper damage was to what the society was willing to tolerate, not to its people or plant.",
+   "output_factor": 0.85,
    "years": [
     995,
     1100
+   ]
+  },
+  {
+   "name": "Norwegian civil war era",
+   "note": "Roughly a century of intermittent succession war between rival kings and the factions behind them (Baglers against Birkebeiner and their successors), settled only by the 1240 succession settlement under Hakon Hakonarson. Not a single campaign but a long run of raids, burnt farms and disputed levies -- dispersed damage across many farms and fjords rather than one capital worth besieging, which is why this is modelled as lost output rather than a sack: a decentralised assembly society has no single site whose fall ends the war.",
+   "output_factor": 0.8,
+   "years": [
+    1130,
+    1240
+   ]
+  },
+  {
+   "name": "Black Death in Scandinavia",
+   "note": "Reached Norway in 1349 on an English ship putting in at Bergen and killed on a scale even worse than England's, by some estimates more than half the population; entire farms and valleys were abandoned and some were never resettled. Recurs at reduced severity through the late 14th century, same as everywhere else in Europe, but this is the first and worst wave.",
+   "staff_loss": 0.55,
+   "years": [
+    1349,
+    1351
+   ]
+  },
+  {
+   "name": "Little Ice Age onset in the North Atlantic",
+   "note": "Cooling sets in from around 1300, shortening growing seasons in Norway itself and slowly strangling the Greenland settlements' already marginal farming and their sea lane to Europe; the Eastern and Western Settlements are gone by the mid 15th century. A slow economic squeeze on the whole North Atlantic world, not a single event.",
+   "output_factor": 0.9,
+   "years": [
+    1300,
+    1400
    ]
   }
  ],

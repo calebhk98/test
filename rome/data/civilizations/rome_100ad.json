@@ -96,7 +96,22 @@
  ],
  "population": 65000000,
  "price_index": 1.0,
- "starting_techs": [],
+ "starting_techs": [
+  "civ_aqueduct_roman",
+  "civ_arch_roman",
+  "civ_brick_tile",
+  "civ_chorobates",
+  "civ_dome_roman",
+  "civ_insula",
+  "civ_road_paved",
+  "civ_sewer_roman",
+  "civ_surveying_groma",
+  "fin_annona",
+  "fin_argentarii",
+  "fin_collegium",
+  "fin_societas",
+  "hom_cosmetics_roman"
+ ],
  "state_capacity": 0.85,
  "urban_fraction": 0.12,
  "values": {
