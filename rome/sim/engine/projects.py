@@ -893,13 +893,22 @@ class ProjectsMixin:
                            % ("{:,.0f}".format(owed), "{:,.0f}".format(owed + price),
                               "{:,.0f}".format(ceiling)))
         n = self.nodes[k]
+        # CREDIT FOR WHAT YOU ALREADY PAID. See enforce_credit_limit: when the
+        # creditors stop a project the money already sunk into it is kept
+        # against the node, and this is where it comes back off the bill.
+        _paid = getattr(self, "paid_towards", None) or {}
+        _already = min(price, max(0.0, _paid.pop(k, 0.0)))
         # A THING YOU ARE REBUILDING IS NOT A THING SITTING IDLE. If the
         # knowledge was destroyed and only the mothball entry survived, that
         # entry is stale the moment you begin again - and while it stands,
         # `available` hides the node and `restore` claims it can reopen it.
         self.mothballed.discard(k)
-        self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0,
-                              cost_left=price)
+        self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0,
+                              spent=_already, cost_left=price - _already)
+        if _already > 0.5:
+            self.log.append((self.year, "%s begun again; the %s denarii already "
+                                        "paid on it before comes off the bill"
+                             % (k, "{:,.0f}".format(_already))))
         # Director hours in step() 5 are handed out by priority in `order`.
         # A thing you just chose to work on should get first call on your own
         # hours, exactly as the old (cosmetic) reprioritisation implied it did.

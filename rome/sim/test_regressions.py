@@ -4150,6 +4150,59 @@ check("...and its NEEDS column is the supervision the engine charges",
       [(r["id"], r["needs"]) for r in _vr["running"]][:2])
 
 
+# --- BREAK: "CREDIT EXHAUSTED: 2 projects halted, unfinished" - "halted"
+# means paused to a reader and meant deleted here. A break tester watched 795
+# denarii and about 800 founder-hours vanish, with scientific_method dying 115
+# denarii short of done and every hour already spent, and `stop` losing the
+# same thing so no branch saved it.
+s_ce = sim()
+s_ce.start_project("identity_cover")
+for _ in range(3):
+    s_ce.step()
+_spent = s_ce.active["identity_cover"]["spent"]
+check("a project part-paid for has really been part-paid for",
+      _spent > 100, _spent)
+s_ce.credit_limit = lambda: 0.0
+s_ce.enforce_credit_limit(s_ce.year)
+check("the creditors stopping your work does not burn what you paid",
+      abs(s_ce.paid_towards.get("identity_cover", 0.0) - _spent) < 0.5,
+      s_ce.paid_towards)
+check("...and the event says so, and names what it stopped",
+      any("identity_cover" in m and "stands to your credit" in m
+          for _, m in s_ce.log),
+      [m for _, m in s_ce.log if "CREDIT EXHAUSTED" in m][:1])
+s_ce.capital, s_ce.credit_frozen_until = 50000.0, 0
+s_ce.start_project("identity_cover")
+check("...and beginning again takes it off the bill",
+      abs(s_ce.active["identity_cover"]["cost_left"]
+          - (s_ce.project_cost("identity_cover") - _spent)) < 0.5,
+      (s_ce.active["identity_cover"]["cost_left"],
+       s_ce.project_cost("identity_cover")))
+check("...and the credit is spent once, not every time",
+      "identity_cover" not in s_ce.paid_towards, s_ce.paid_towards)
+
+# --- BREAK: `restore` charged the full price for a concern the staffing rule
+# had shut, while the closing message promises a tenth.
+s_rs = sim(capital=500000.0)
+s_rs.done.update(NODES); s_rs._done_changed()
+s_rs.artisans = s_rs.scholars = 5.0
+_vv = next(k for k in sorted(NODES)
+           if s_rs.is_venture(k) and NODES[k]["rev"] > 500)
+s_rs.open_venture(_vv)
+_fullfee = max(s_rs.project_cost(_vv) * 0.3, NODES[_vv]["up"] * 2.0)
+s_rs.artisans = s_rs.scholars = 0.0
+s_rs.founder_alive = False
+s_rs.close_unstaffed_ventures(105)
+s_rs.artisans = s_rs.scholars = 5.0
+s_rs.founder_alive = True
+s_rs.year = 107
+_cap_rs = s_rs.capital
+s_rs.restore_work(_vv)
+check("restoring a shop the staffing rule shut costs the tenth it promised",
+      (_cap_rs - s_rs.capital) < _fullfee * 0.2,
+      (_cap_rs - s_rs.capital, _fullfee))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

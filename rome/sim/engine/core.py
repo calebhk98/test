@@ -82,6 +82,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.mothballed = set()          # completed works you shut down on purpose
         self.forgotten = {}              # {node: year} destroyed by a sacking
         self.opened_year = {}            # {node: year} the doors first opened
+        self.paid_towards = {}           # {node: denarii} sunk before it stopped
         self.last_taught = {}            # {trade: year} auto_train last taught it
         self.wages_prepaid = 0.0         # first-year wages `hire` already took
         # WHAT YOU ACTUALLY RUN, as opposed to what you know how to do. Revenue

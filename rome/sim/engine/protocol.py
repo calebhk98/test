@@ -4103,7 +4103,7 @@ SAVE_FIELDS = (
     "output_factor", "economy", "throttle", "binding", "bountied",
     "stalled", "life_left", "founder_alive", "revealed", "last_settlement",
     "employees", "trades_created", "policy", "mothballed", "operating",
-    "forgotten", "opened_year", "last_taught",
+    "forgotten", "opened_year", "last_taught", "paid_towards",
     "contract_hours",
     "commissioned", "teaching_hours_this_year", "wages_paid",
     "bondage_years_left", "bondage_debt", "money_real", "credit_frozen_until",

@@ -281,13 +281,33 @@ class EconomyMixin:
         # stop everything in progress: you cannot fund it
         if self.active:
             dropped = sorted(self.active)
+            # WHAT YOU PAID IS NOT BURNED. "Halted" means paused to a reader
+            # and meant deleted here: a break tester watched 795 denarii and
+            # about 800 founder-hours vanish, with scientific_method dying 115
+            # denarii short of done and every hour already spent. A half-built
+            # thing is still half built when the money runs out; the site does
+            # not un-dig itself. What you paid stands to your credit and comes
+            # off the bill when you begin again.
+            _paid = getattr(self, "paid_towards", None)
+            if _paid is None:
+                _paid = self.paid_towards = {}
+            _kept = 0.0
             for k in dropped:
-                self.active.pop(k, None)
+                st = self.active.pop(k, None)
+                if st:
+                    _paid[k] = _paid.get(k, 0.0) + max(0.0, st.get("spent", 0.0))
+                    _kept += max(0.0, st.get("spent", 0.0))
                 self.bountied.discard(k)
             self.credit_frozen_until = yr + 5
-            self.log.append((yr, "CREDIT EXHAUSTED: %d projects halted, unfinished. "
-                                 "Nobody will fund new work here for some years"
-                                 % len(dropped)))
+            self.log.append((yr, "CREDIT EXHAUSTED: %d project%s stopped, "
+                                 "unfinished: %s. The %s denarii already paid "
+                                 "stands to your credit and comes off the "
+                                 "bill if you begin again. Nobody will fund new "
+                                 "work here until %d"
+                             % (len(dropped), "" if len(dropped) == 1 else "s",
+                                ", ".join(dropped[:4])
+                                + (" and others" if len(dropped) > 4 else ""),
+                                "{:,.0f}".format(_kept), yr + 5)))
         # let go of what you cannot maintain
         if self.capital < -limit:
             self.mothball_mines()
