@@ -158,6 +158,30 @@ def trade_family(t):
     return TRADE_FAMILY.get(t, "craft")
 
 
+# WHAT MONEY IS CALLED WHERE YOU ARE. Every civilisation file has carried a
+# `currency` field since the schema was written and not one line of the engine
+# ever read it, so an English player in 1300 counted denarii, hired against an
+# equestrian census and was quoted for papyrus. The engine's arithmetic is all
+# calibrated to Rome 100 AD through price_index, which is a real and defensible
+# modelling choice; calling the unit a denarius in Tenochtitlan is not.
+#
+# The map is from the `currency` field to the form that reads correctly in a
+# sentence like "you have 400 ___". A civilisation whose currency is not listed
+# falls back to its own field, and then to denarii.
+MONEY_WORDS = {
+    "denarius": "denarii",
+    "sterling penny": "pence",
+    "wu zhu cash": "cash",
+    "hacksilver by weight": "in hacksilver",
+    "cacao bean and cotton cloth": "in cacao beans",
+}
+
+
+def money_word(civ):
+    cur = (civ or {}).get("currency") or "denarius"
+    return MONEY_WORDS.get(cur, cur)
+
+
 def load_civ(name="rome_100ad"):
     """A civilization is DATA, not code. Swapping Rome for Han China, Viking
     Norway, Mexica Tenochtitlan or somewhere invented is a different file, not a

@@ -62,12 +62,35 @@ class ProjectsMixin:
     # actually owe a going concern is supervision - somebody of yours has to
     # keep an eye on it - and that is a fraction of what it took to build.
     VENTURE_SUPERVISION = 0.25
+    # AND A FLOOR FROM ITS SIZE. Charging a fraction of the BUILD crew alone
+    # meant that the 19% of concerns which take nobody to build - a bottling
+    # shed, a butter trade, a chaff cutter - took nobody to RUN either. A break
+    # tester ended a Han run with between 51 and 94 concerns going at once,
+    # among them a whaling fleet, a coal seam, an inn and a gambling house,
+    # on nought employees and nought in wages, and pointed out that this is
+    # precisely what the opening screen promises the model will not do. A
+    # going concern needs somebody of yours to keep an eye on it whether or not
+    # it was hard to build, and a bigger one needs more: one pair of hands per
+    # 1,500 a year of takings, which puts a 130-a-year bottling shed at a tenth
+    # of a person and a 12,000-a-year fleet at eight.
+    VENTURE_HANDS_PER_REVENUE = 1500.0
+
+    def venture_hands(self, k):
+        """(scholars, craftsmen) of your own that running this ties up."""
+        n = self.nodes[k]
+        f = self.VENTURE_SUPERVISION
+        by_size = max(0.0, n["rev"]) / self.VENTURE_HANDS_PER_REVENUE
+        return n["sch"] * f, max(n["art"] * f, by_size)
 
     def venture_staff_used(self):
         """People of your own tied up supervising what you already have open."""
-        f = self.VENTURE_SUPERVISION
-        sch = sum(self.nodes[k]["sch"] * f for k in self.operating if k in self.nodes)
-        art = sum(self.nodes[k]["art"] * f for k in self.operating if k in self.nodes)
+        sch = art = 0.0
+        for k in self.operating:
+            if k not in self.nodes:
+                continue
+            a, b = self.venture_hands(k)
+            sch += a
+            art += b
         return sch, art
 
     def venture_staff_free(self):
@@ -108,8 +131,7 @@ class ProjectsMixin:
             return False, "you are already running that"
         n = self.nodes[k]
         sch_free, art_free = self.venture_staff_free()
-        f = self.VENTURE_SUPERVISION
-        need_sch, need_art = n["sch"] * f, n["art"] * f
+        need_sch, need_art = self.venture_hands(k)
         if need_sch > sch_free + 1e-9 or need_art > art_free + 1e-9:
             return False, ("nobody free to keep an eye on it: it needs %.1f "
                            "scholars and %.1f craftsmen to supervise, and you "
@@ -252,6 +274,21 @@ class ProjectsMixin:
             return False, "you have %.0f denarii" % self.capital
         before = self.scandal
         prot_before = self.protection
+        # DO NOT CHARGE FOR NOTHING. This took the money and then said, in the
+        # same breath, "you had no scandal to answer and are already as
+        # protected as money can make you, so this bought nothing" - a break
+        # tester lost 5,000 to a single mistyped command that way, with no cap
+        # and no confirmation. Work out whether it would move anything BEFORE
+        # taking the money, and refuse if it would not.
+        if before <= 0.0005:
+            spent = 0.7 * self.bribes_ytd + amount
+            income = max(1.0, self.revenue())
+            would = min(0.30, (spent / (income * 0.6)) * self.w["bribability"])
+            already = min(0.30, (self.bribes_ytd / (income * 0.6)) * self.w["bribability"])
+            if would - already < 0.005:
+                return False, ("you have no scandal to answer and you are already "
+                               "as protected as money can make you here, so this "
+                               "would buy nothing. Nothing was changed.")
         self.capital -= amount
         self.bribes_ytd = 0.7 * self.bribes_ytd + amount
         self.scandal = max(0.0, self.scandal - amount / 300.0 * self.w["bribability"])

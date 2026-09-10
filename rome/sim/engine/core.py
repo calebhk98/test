@@ -938,8 +938,14 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # and lost Rome a sixth of its runs. A man with a practice does not
             # go and copy documents for less than the practice earns; that is
             # the whole reason `work` is the thing you do BEFORE you have one.
-            pool = max(1.0, self.director_pool())
-            practice_lost = self.revenue() * (hours / pool) * (
+            # NOT `pool`. That name already held the year's project budget,
+            # computed at 4b, and reusing it here overwrote it - so
+            # hours_this_year then reported "offered_to_projects" against the
+            # WHOLE year instead of against the project budget. The year's
+            # hours added up to 2,900 out of 2,000, which is exactly the sort
+            # of arithmetic a player cannot argue with and cannot trust.
+            year_hours = max(1.0, self.director_pool())
+            practice_lost = self.revenue() * (hours / year_hours) * (
                 1.0 if self.practice_attention() > 0 else 0.0)
             rate = (ANNUAL_WAGE.get(trade, 375.0) / self.HOURS_PER_PERSON_YEAR
                     * self.price_index * self.wage_index

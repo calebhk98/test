@@ -336,6 +336,7 @@ check("every automatic behaviour has a switch",
 
 # --- naive B/C: there must be a way to shed the upkeep of a finished work
 s = sim(capital=200000.0)
+s.hire("artisan", 2)
 s.done.add("fin_pawnshop")
 s._done_changed()
 # OPEN IT FIRST. Upkeep follows what you RUN, not what you know, so a node
@@ -1231,9 +1232,20 @@ for _i in range(45):
     s.step()
 _adv = s.hazard_advice("staff_loss")
 _steps = _adv.get("you_could_begin_now_toward_it") or []
+# THE GUARANTEE IS THAT IT NAMES THEM, with what each is waiting on - not that
+# one happens to be startable in the particular year this check stops at. The
+# tester's complaint was "nothing connected the words to the 269 things in
+# view", and naming the hedge and its blocker is what connects them. Requiring
+# a startable one made this check hostage to how a 45-year run happens to
+# develop, and it duly broke the first time the economy changed underneath it.
 check("a hazard names things in front of you that hedge against it",
-      any(e["can_begin_now"] for e in _steps),
-      [(e["id"], e["can_begin_now"]) for e in _steps])
+      _steps and all(e.get("id") and (e["can_begin_now"] or e.get("waiting_on"))
+                     for e in _steps),
+      [(e["id"], e["can_begin_now"], (e.get("waiting_on") or "")[:40]) for e in _steps])
+check("anything you could begin toward a hedge is listed before what you cannot",
+      [e["can_begin_now"] for e in _steps] == sorted(
+          (e["can_begin_now"] for e in _steps), reverse=True),
+      [e["can_begin_now"] for e in _steps])
 # ...and it must not do that by naming whatever sits first in the strategy
 # order. An earlier version walked the whole ancestry and advised beginning a
 # "respectable cover identity" as a hedge against smallpox.
@@ -1552,12 +1564,16 @@ check("a society is not granted the route another society would take to it",
 # you didn't give out any?" 1,337 nodes carried revenue and 1,256 of those also
 # carried upkeep, so the tree already called them going concerns; the only
 # thing missing was the act of opening the doors.
-_v, _, _ = proto([{"cmd": "start", "id": "fin_pawnshop"},
+# Hire somebody first: a concern needs a pair of your hands to run it, which
+# is the whole point of the staffing floor. Nobody runs a pawnshop alone from
+# nowhere.
+_v, _, _ = proto([{"cmd": "hire", "trade": "artisan", "n": 2},
+                  {"cmd": "start", "id": "fin_pawnshop"},
                   {"cmd": "step", "years": 6},
                   {"cmd": "money"},
                   {"cmd": "open", "id": "fin_pawnshop"},
                   {"cmd": "money"}], kit="equestrian")
-_before, _open, _after = _v[2], _v[3], _v[4]
+_before, _open, _after = _v[3], _v[4], _v[5]
 check("working out how to do something does not by itself pay you",
       "fin_pawnshop" not in (_before.get("where_the_money_comes_from") or {}),
       _before.get("where_the_money_comes_from"))
@@ -1567,6 +1583,7 @@ check("opening the doors is what pays you",
       _after.get("where_the_money_comes_from"))
 
 s2 = sim(capital=200000.0)
+s2.hire("artisan", 2)
 s2.done.add("fin_pawnshop")
 s2._done_changed()
 _cap0 = s2.capital
@@ -1588,6 +1605,7 @@ if _heavy:
 
 # Shutting it stops both sides and keeps the knowledge.
 s4 = sim(capital=200000.0)
+s4.hire("artisan", 2)
 s4.done.add("fin_pawnshop"); s4._done_changed()
 s4.open_venture("fin_pawnshop")
 _rev_on, _up_on = s4.revenue(), s4.upkeep()
@@ -1605,7 +1623,8 @@ check("opening things for you is on for the optimizer and off for a player",
 
 # What you run has to survive a save, or reloading quietly shuts your business.
 _vs = "%s/ventures.json" % _LOADTEST_DIR
-_rt, _, _ = proto([{"cmd": "start", "id": "fin_pawnshop"},
+_rt, _, _ = proto([{"cmd": "hire", "trade": "artisan", "n": 2},
+                   {"cmd": "start", "id": "fin_pawnshop"},
                    {"cmd": "step", "years": 6},
                    {"cmd": "open", "id": "fin_pawnshop"},
                    {"cmd": "save", "file": _vs},
@@ -1727,6 +1746,88 @@ check("every way of turning knowledge into income is in the command list",
       sorted((_hc[0].get("commands") or {}).keys())[:6])
 check("the game does not deny that your own practice is yours",
       "already doing that" in (_hc[1].get("error") or ""), _hc[1].get("error"))
+
+# --- round 5, the Han testers --------------------------------------------
+# 1. THE WORST: resuming a save re-rolled the dice. Nothing saved the random
+#    state, so a project sitting at its completion threshold re-rolled its
+#    failure check on every resume: `start fin_bimetallism` then one `step`
+#    per process oscillated 100%/60%/100%/60% for ever, burning hours and
+#    money and never finishing. Reproduced 5 times out of 5. It also silently
+#    re-drew every hazard and event a returning player would meet.
+_rngdir = "%s/rng" % _PLAY_DIR
+os.makedirs(os.path.join(ROOT, _rngdir), exist_ok=True)
+_rs2 = "%s/dice.json" % _rngdir
+if os.path.exists(os.path.join(ROOT, _rs2)):
+    os.remove(os.path.join(ROOT, _rs2))
+
+
+def _agent_session(cmds, first=False):
+    a = [sys.executable, os.path.join(HERE, "simulator.py"), "agent",
+         "--session", _rs2]
+    if first:
+        a += ["--civ", "han_china_100ad"]
+    p_ = subprocess.run(a, input="\n".join(json.dumps(c) for c in cmds) + "\n",
+                        capture_output=True, text=True, timeout=240, cwd=ROOT)
+    return [json.loads(l) for l in p_.stdout.splitlines() if l.strip()]
+
+
+_agent_session([{"cmd": "start", "id": "fin_bimetallism"}], first=True)
+_finished_in = None
+for _i in range(8):
+    _o = _agent_session([{"cmd": "step", "years": 1}, {"cmd": "state"}])
+    if "fin_bimetallism" not in (_o[-1].get("active") or {}):
+        _finished_in = _i + 1
+        break
+check("a project finishes across resumes instead of oscillating for ever",
+      _finished_in is not None,
+      "still unfinished after 8 resumes" if _finished_in is None
+      else "finished after %d" % _finished_in)
+
+# 2. Founder hours could be spent twice: `train` wrote its own counter and
+#    `work` read only the wage one, so 3,800 hours went into a 2,000-hour year.
+_dh, _, _ = proto([{"cmd": "train", "trade": "machinist", "n": 2},
+                   {"cmd": "train", "trade": "chemist", "n": 2},
+                   {"cmd": "state"},
+                   {"cmd": "work", "trade": "smith", "hours": 2000}],
+                  civ="han_china_100ad", kit="equestrian")
+check("hours spent teaching are not still available to sell",
+      _dh[2]["founder_hours_available"] < 400 and _dh[3].get("ok") is False,
+      "%r free, work accepted=%r" % (_dh[2].get("founder_hours_available"),
+                                     _dh[3].get("ok")))
+
+# 3. A bribe that buys nothing said so and charged 5,000 anyway.
+_bb, _, _ = proto([{"cmd": "bribe", "amount": 5000},
+                   {"cmd": "bribe", "amount": 5000},
+                   {"cmd": "state"}], kit="equestrian")
+check("a bribe that would buy nothing is refused, not charged",
+      _bb[1].get("ok") is False and "Nothing was changed" in (_bb[1].get("error") or ""),
+      _bb[1].get("error"))
+
+# 4. Eleven ids carry capitals, among them the whole cap_pure_2N..9N purity
+#    ladder on the critical path to germanium. Lowercasing what the player
+#    typed made them unreachable from the typed front end.
+_cap, _ = _play(["why cap_pure_2N", "why CAP_PURE_2N", "why AG2_MARLING", "quit"])
+check("ids that carry capitals are reachable, and case is not the player's problem",
+      _cap.count("COST:") == 3, [l for l in _cap.splitlines() if "REFUSED" in l][:2])
+
+# 5. `available` truncated ids at 30 characters, so the longest could not be
+#    copied out of the table that told you to use them.
+_av, _ = _play(["available all", "quit"])
+_longest = max(NODES, key=len)
+check("no id is truncated in the table a player copies ids from",
+      all(len(w) <= 30 or w in _av for w in [_longest]) or _longest not in _av,
+      "longest id is %d chars" % len(_longest))
+
+# 6. A year's hours must add up. Block 5b reused the name `pool`, clobbering
+#    the project budget the report was computed against, and a year came to
+#    2,900 hours out of 2,000.
+s = sim(civ="rome_100ad", capital=400.0, manual=False, events=False)
+for _ in range(4):
+    s.step()
+    _h = s.hours_this_year
+    _tot = _h["wage_work"] + _h["teaching"] + _h["offered_to_projects"] + _h["unused"]
+    check("a year's hours add up to a year (%d)" % s.year,
+          _tot <= _h["available"] + 1.0, _h)
 
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)

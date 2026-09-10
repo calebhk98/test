@@ -11,7 +11,7 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
                    STARTING_KITS, trade_family, closure, critical_path,
                    topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources,
+                   load_geography, load_resources, money_word,
                    downstream_count, is_downstream)
 
 
@@ -144,10 +144,11 @@ def _agent_state(s, nodes, cmd=None):
         # is the pool; what is FREE is the pool less the hours already spent on
         # wage work.
         "founder_hours_available": round(
-            max(0.0, s.director_pool()
-                - getattr(s, "wage_hours_this_year", 0.0)), 1),
+            max(0.0, s.director_pool() - s.director_hours_committed()), 1),
         "founder_hours_sold_for_wages_this_year": round(
             getattr(s, "wage_hours_this_year", 0.0), 1),
+        "founder_hours_spent_teaching_this_year": round(
+            getattr(s, "teaching_hours_this_year", 0.0), 1),
         # LAST YEAR'S HOURS, ACCOUNTED FOR. Set in step(); see the comment
         # there. available is this year's fresh figure, not last year's -
         # read it alongside, not in place of, hours_this_year.
@@ -1057,15 +1058,21 @@ _RESTS_SHORT = {"almost everything": "ALL", "a great deal": "much",
                 "nothing else; this is worth having for itself": "-"}
 
 
-def _available_row(e):
+def _available_row(e, w=34):
     hours = e.get("founder_hours", e.get("your_hours"))
     years = e.get("calendar_floor_years", e.get("least_years"))
     risk = e.get("risk", e.get("chance_of_failure"))
     dc = e.get("downstream_count")
     rests = (_fmt_num(dc) if dc is not None
              else _RESTS_SHORT.get(e.get("how_much_rests_on_this"), "?"))
-    return "%-30s %-26s %9s %7s %5s %5s %8s %7s %6s" % (
-        (e.get("id") or "")[:30], (e.get("name") or "")[:26],
+    # THE ID IS NOT DECORATION, IT IS THE NEXT THING YOU TYPE. Truncating it to
+    # thirty characters meant the longest ids could not be copied out of the
+    # table at all, and both a play tester and a break tester lost time to
+    # `start` refusing an id the table had just printed - with the refusal
+    # helpfully suggesting they use `available` to find valid ids. Names get
+    # cut instead; nobody has to retype a name.
+    return "%-*s %-22s %9s %7s %5s %5s %8s %7s %6s" % (
+        w, (e.get("id") or ""), (e.get("name") or "")[:22],
         _fmt_num(e.get("cost")), _fmt_num(hours), _fmt_num(years), _pct(risk),
         _fmt_num(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
         rests)
@@ -1079,8 +1086,13 @@ def render_available(out):
     if out.get("showing"):
         L.append(out["showing"])
     L.append("")
-    header = ("%-30s %-26s %9s %7s %5s %5s %8s %7s %6s"
-              % ("ID", "NAME", "COST", "HOURS", "YEARS", "RISK", "EARNS/YR",
+    # Sized to the longest id ON THIS PAGE, so the table stays aligned without
+    # ever cutting the one string the player has to type next.
+    _rows_here = (out.get("available") or []) + (out.get("cheapest_now") or [])
+    _w = max([34] + [len(r.get("id") or "") for r in _rows_here
+                     if isinstance(r, dict)])
+    header = ("%-*s %-22s %9s %7s %5s %5s %8s %7s %6s"
+              % (_w, "ID", "NAME", "COST", "HOURS", "YEARS", "RISK", "EARNS/YR",
                  "UPKEEP", "RESTS"))
 
     if "subjects" in out:
@@ -1093,20 +1105,20 @@ def render_available(out):
         L.append("CHEAPEST SIX RIGHT NOW, sorted by cost:")
         L.append(header)
         for e in sorted(out.get("cheapest_six") or [], key=lambda e: e.get("cost", 0)):
-            L.append(_available_row(e))
+            L.append(_available_row(e, _w))
         if out.get("most_rests_on_these"):
             L.append("")
             L.append("MOST RESTS ON THESE, of what you could begin today:")
             L.append(header)
             for e in out["most_rests_on_these"]:
-                L.append(_available_row(e))
+                L.append(_available_row(e, _w))
         L.append("")
         for k, v in (out.get("to_see_more") or {}).items():
             L.append("  %s: %s" % (k, v))
     elif "available" in out:
         L.append(header)
         for e in sorted(out["available"], key=lambda e: e.get("cost", 0)):
-            L.append(_available_row(e))
+            L.append(_available_row(e, _w))
         if out.get("more"):
             L.append("")
             L.append(out["more"])
@@ -1116,7 +1128,7 @@ def render_available(out):
         L.append("")
         L.append("HEARD OF, CANNOT BEGIN YET:")
         for h in heard:
-            L.append("  %-28s %s" % (h["id"][:28], h.get("why_not") or ""))
+            L.append("  %-34s %s" % (h["id"], h.get("why_not") or ""))
     if out.get("note"):
         L.append("")
         L.append(_wrap(out["note"]))
@@ -1639,6 +1651,12 @@ def _typed_number(tok):
         return None
 
 
+# The real ids, and a case-folded index onto them. Built once: parse_typed has
+# no Sim to ask and runs on every line a player types.
+NODE_IDS = frozenset(load()[2])
+NODE_IDS_LOWER = {k.lower(): k for k in NODE_IDS}
+
+
 def parse_typed(line):
     """One typed line -> (command dict, None), or (None, a refusal to show).
 
@@ -1739,11 +1757,19 @@ def parse_typed(line):
             return None, ("%s needs the name of a technology, e.g. '%s "
                           "fud_wheelbarrow'. 'available' lists what you can "
                           "begin now." % (op, op))
-        # LOWERCASED. Every id in the tree is lower case, and `WHY AG2_MARLING`
-        # was refused with "unknown node 'AG2_MARLING'. did you mean:
-        # ag2_marling" - the game naming the right answer and declining to act
-        # on it. Case is not a decision the player is making.
-        return {"cmd": op, "id": rest[0].lower()}, None
+        # MATCHED CASE-INSENSITIVELY, NOT LOWERCASED. `WHY AG2_MARLING` was
+        # refused with "did you mean: ag2_marling", the game naming the right
+        # answer and declining to act on it - but flattening the case broke
+        # eleven ids that genuinely carry capitals, among them the whole
+        # cap_pure_2N/4N/6N/9N purity ladder, which sits on the critical path
+        # to germanium. A play tester lost the endgame to it and could only get
+        # past it by falling back to the raw JSON form. So: try what was typed,
+        # then try a case-insensitive match against the real ids, and keep
+        # whatever the tree actually calls it.
+        want = rest[0]
+        if want not in NODE_IDS:
+            want = NODE_IDS_LOWER.get(want.lower(), want)
+        return {"cmd": op, "id": want}, None
 
     if op == "bribe":
         if not nums:
@@ -1891,7 +1917,38 @@ def _did_you_mean(k, nodes, limit=8, s=None):
     return near[:limit]
 
 
+_MONEY_RE = re.compile(r"\bdenarii\b|\bdenarius\b")
+
+
+def _localise_money(obj, word):
+    """Rewrite the unit of account in anything a player is about to read.
+
+    Every message in the engine is written in denarii because the whole price
+    model is calibrated to Rome 100 AD, which is a real modelling decision and
+    stays. What does not have to stay is telling a player in 1300 England, or
+    in Tenochtitlan, that they are counting Roman coins. This is the one place
+    every reply passes through, so the substitution happens once here rather
+    than in the twenty-odd messages that mention money.
+    """
+    if word in ("denarii", "denarius"):
+        return obj
+    if isinstance(obj, str):
+        return _MONEY_RE.sub(word, obj)
+    if isinstance(obj, list):
+        return [_localise_money(x, word) for x in obj]
+    if isinstance(obj, dict):
+        # KEYS ARE NOT PROSE. A field name is part of the protocol and scripts
+        # match on it; only the values a person reads get rewritten.
+        return {k: _localise_money(v, word) for k, v in obj.items()}
+    return obj
+
+
 def _agent_dispatch(s, nodes, cmd):
+    """Every reply, in the money of the place you are standing in."""
+    return _localise_money(_agent_dispatch_inner(s, nodes, cmd), money_word(s.civ))
+
+
+def _agent_dispatch_inner(s, nodes, cmd):
     if not isinstance(cmd, dict) or "cmd" not in cmd:
         return {"ok": False, "error": "each line must be a JSON object with a 'cmd' field, "
                                       "e.g. {\"cmd\":\"state\"}"}
@@ -2582,6 +2639,20 @@ def save_state(s, path):
     # written here and never read back, so every resumed game silently had the
     # whole tree in view; see load_state.
     blob["_immortal"] = bool(s.cfg.get("immortal", True))
+    # THE DICE, TOO. Nothing saved the random state, so every resume restarted
+    # it from the seed and re-rolled everything the world does. A break tester
+    # found the sharp edge of that: a project sitting at its completion
+    # threshold re-rolls its failure check on each resume, so
+    # `start fin_bimetallism` then one `step` per process oscillated
+    # 100%/60%/100%/60% for ever, burning hours and money and never finishing.
+    # They reproduced it 5 times out of 5. It also meant hazards, sackings and
+    # events were silently re-drawn every time a player came back to a save,
+    # which is a different game from the one they left.
+    try:
+        st = s.rng.getstate()
+        blob["_rng"] = [st[0], list(st[1]), st[2]]
+    except Exception:
+        blob["_rng"] = None
     blob["_version"] = 1
     tmp = path + ".tmp"
     # A save into a directory that is not there killed the process outright on
@@ -2758,6 +2829,13 @@ def load_state(s, path):
             s.revealed = set()
     if "_immortal" in blob:
         s.cfg["immortal"] = bool(blob["_immortal"])
+    if blob.get("_rng"):
+        try:
+            _v, _keys, _g = blob["_rng"]
+            s.rng.setstate((_v, tuple(int(x) for x in _keys), _g))
+        except Exception:
+            pass          # an old save without dice is still a loadable save
+
     for k, v in (blob.get("_civ_live") or {}).items():
         if v is not None:
             s.civ[k] = v

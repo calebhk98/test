@@ -441,3 +441,156 @@ Also learned: `crop_rotation` needs `citizenship` (5,175 den, 3 yr, prereq
 patron_local); a venture can be REFUSED for want of a supervisor ("it needs 0.2
 craftsmen to supervise and you have 0.1 not already watching something else"), which is
 a nice constraint I only met once.
+
+### 12. 211-277: rebuilding, and the mid-game turning into bookkeeping
+The sackings cost me real ground: refractory_fireclay, precision_three_plate,
+glass_labware, nitre_beds, cementation_steel, master_screw, micrometer_gauges,
+prc_change_gears_quadrant and galena_detector all had to be REBUILT, in dependency
+order, one refusal at a time ("REFUSED: missing prerequisites: master_screw"). Roughly
+25 years of the 4th century went on re-doing 2nd-century work. That is a good, honest
+consequence and it is the only time the game made me feel a setback.
+
+Then the shape of the game changed and, I think, broke.
+Once income passed ~100k/yr I could simply start EVERYTHING. I extracted all startable
+ids from `available all` and started 650 projects in three batches. Nothing stopped me:
+not money (3.6M den and rising 300k/yr), not staff (auto_hire kept up), not risk. By
+277 AD I had 734 technologies built and 256 still running. The optimal play, once the
+economy tips, is "start every node in the game and press step", and the interface even
+makes that easy because `available all` prints the ids in a machine-readable column.
+There is no upkeep pressure that can catch a player who does this, because every
+concern's revenue is scaled by a reputation multiplier that grows as you build.
+
+Two things did resist, and they were the interesting ones:
+- **crucible_steel** stayed BLOCKED behind an unnamed prerequisite for ~100 years. It
+  turned out to be cap_heat_1600, which itself was gated behind cap_measure_temp_hi
+  ("high temperature by clay cones"). You cannot measure 1600 C, so you cannot hold
+  1600 C, so you cannot make crucible steel, so you have no lead screws, so you have
+  no precision. That is a beautiful chain and the fog made finding it feel earned.
+  My complaint is only that with 650 nodes in flight the way I found it was brute
+  force, not reasoning.
+- **The saltpetre shortage became chronic and unfixable.** From 251 onward, "SHORT OF
+  SALTPETRE: work running at 5% of plan" fires every single year and I never found the
+  cause or the cure. I stopped nitric_acid; still short. I tried to stop gunpowder,
+  matches, nitrite curing - "REFUSED: not active" for every id I could guess, because
+  `state` shows running projects by NAME and `stop` takes an ID, and there is no way to
+  map one to the other. I could not find any command that shows material stocks,
+  flows, or which project is starving.
+  Worst of all: despite the message, 185 projects completed in the next 15 years. So
+  either the 5% is not doing what it says, or it applies to a subset it does not name.
+  I stopped trusting the message, which is the opposite of what a warning should do.
+
+Wanted and could not do (accumulated list):
+- see or influence society `values`
+- prioritise founder-hours between projects
+- map a running project's display name back to its id
+- see material stocks / who consumes what / buy a material outright
+- see my supervision headcount cap before hitting it
+- see the whole HEARD-OF list (it is alphabetically truncated around "c", so half the
+  tree's near-misses are invisible)
+
+### 13. 283-600: the endgame, and how the run finished
+
+**Result: the run ended at the horizon in 600 AD. 1,042 technologies built by me,
+141 granted, and the point-contact transistor NOT reached.** Final blockers:
+  point_contact_transistor <- single_crystal, vacuum_tube
+    vacuum_tube <- gp_getter (blocked by something I never heard of)
+    single_crystal <- in2_xray_diffraction_camera (ditto),
+                      prc_gauge_blocks_johansson <- cap_measure_light,
+                      semiconductor_metrology <- vacuum_tube,
+                      zone_refining <- arc_furnace_ferroalloys <- cap_heat_3000
+                                                               <- cap_power_grid
+                                                               <- power_grid
+                                                               <- en_substation
+                                                               <- pwr_high_voltage_transmission
+                      and ge_reduction <- gecl4_purification <- germanium_extraction
+                                       <- zinc_industry_scale <- power_grid
+I missed by roughly 40-60 years, and the thing that cost me those years was the
+**power grid**: germanium extraction, 3000 C arc furnaces and industrial zinc all sit
+behind a national electricity grid (alternator -> transmission line -> switchgear ->
+circuit breaker -> substation -> grid), which in turn sits behind the dynamo, which
+sits behind copper purity, which sits behind analytical chemistry, which sits behind
+nitric acid, which is the thing the saltpetre shortage stalled for eighty years.
+That is a genuinely good causal spine and I enjoyed discovering it. If I replayed I
+would drive straight at nitric_acid -> analytical_chemistry -> dynamo -> power_grid
+from about year 150 and ignore everything else.
+
+Two bugs that cost me real time, both worth fixing:
+1. **The command parser lowercases node ids.** `start cap_pure_2N` fails with
+   "unknown node id 'cap_pure_2n'", and the game's own suggestion line prints
+   "did you mean: cap_pure_2N" - the exact string it just refused. Every id on the
+   purity ladder (cap_pure_2N, 4N, 6N) is unreachable through the normal interface,
+   and the purity ladder is on the critical path to germanium. I only got past it
+   because `help` mentions in passing that "Pasting a JSON command works too", and
+   `{"cmd":"start","id":"cap_pure_2N"}` preserves case. Without that aside the run
+   would have been unwinnable and I would never have known why.
+2. **`available` truncates ids to 30 characters**, so ids like
+   `ch2_lab_fractional_crystallisa` and `el2_potentiometer_method_measurement` cannot
+   be copied out of the table into a command.
+
+Late-game observations:
+- Founder-hours GREW from 2,000 to 6,090 a year over the run. Nothing announced this
+  or explained what caused it (staff? institutions? reputation?). It is the single
+  most important number in the game and it changed silently by 3x.
+- Trained trades never grew. At the end I had 166 artisans and 54 scholars but exactly
+  **2 chemists, 2 electricians, 2 engineers, 2 machinists** - the four trades this
+  society lacks, i.e. precisely the ones the endgame needs. `auto_hire` grows the
+  trades that already exist and never touches taught ones, and nothing warns you.
+  I suspect this quietly throttled my last 200 years.
+- I ended with 99.6 MILLION denarii, +850k/yr, and 568 completed works I had never
+  bothered to open. Money was meaningless for the last three centuries.
+- `state` at the end reported "435 running as concerns, 568 more you know how to run
+  and have not opened". Managing that by hand is impossible and the automation does
+  not do it for you.
+
+### 14. Overall reactions
+
+What the game teaches well, and I think correctly:
+- Knowing a thing and being able to make it are different, and the gap is money,
+  hours, materials and other people's trained hands. The `available` -> `why` -> `start`
+  loop makes that concrete every single turn.
+- The tree's real spine is metrology and capability tiers: you cannot hold 1600 C until
+  you can MEASURE 1600 C; you cannot make a lead screw without crucible steel; you
+  cannot make crucible steel without a crucible that survives the heat. Discovering
+  that under fog was the best part of the playthrough.
+- Institutions cost upkeep forever and produce nothing directly (identity_cover,
+  patron_local, workshop_first, corpus_written, lab_apparatus). That is exactly right
+  and it is the only thing that made the mid-game budget interesting.
+- Durability is a separate purchase from discovery. corpus_written + printing_press +
+  corpus_dispersed cost about 15,000 hours and 25 years, and when the Yellow Turbans
+  came the difference between having it and half-having it was 24 lost technologies.
+
+What I think is off:
+- **The economy inverts too early.** From about year 127 I was never again constrained
+  by money, and by 250 I could start literally every node in the game at once. A
+  premise of scarcity that dissolves after 5% of the timeline is not teaching scarcity.
+  The single lever is that venture revenue is scaled up by a multiplier that grows with
+  standing, so success compounds with nothing pushing back.
+- **Failure risk is invisible in practice.** Hundreds of 20-45% rolls; I noticed
+  exactly two failures (cap_heat_1600 once, master_screw possibly). I stopped reading
+  the column.
+- **Eminence never threatened me.** It is flagged as "dangerous above 26" in year 100
+  and it ended the run at 10.6 having peaked around 21. Whatever the danger is, I never
+  met it, and identity_cover + patron_local (which I bought in the first decade) seem
+  to be a permanent answer.
+- **The material system is a black box with a hair trigger.** One project short of one
+  material throttles everything to "5% of plan", forever, with no way to see stocks, no
+  way to buy the material, no way to tell which project is starving, and no way to map
+  a running project's display name back to an id so you can stop it.
+- **Tedium.** The mid-game is: read five hint rows, start five things, `step`, repeat.
+  I automated it with a shell script that scraped `available all` and started 650 nodes,
+  and the game let me. Anything the player can reduce to a scraper is a sign the choice
+  was not real.
+
+Smaller things I noticed:
+- `values` is referenced twice in `risk` text and once in event messages
+  ("changes the society: w_magic_fear, w_novelty") but is not a command.
+- `open` and `ventures` are core verbs and are missing from `help commands`.
+- `state` says "hedged by corpus_written" when you are in fact only half hedged.
+- The HEARD-OF list is alphabetically truncated around "c" with no paging, so most of
+  the near-miss frontier is permanently invisible.
+- Recurring events that I never learned to respond to: "fire in the timber wards of the
+  capital" (about eight times, no visible effect) and "your patron dies; his heir must
+  be courted afresh" (about six times, +3 scandal each, no action available).
+- The best-written thing in the game is the `bounty` refusal, and the second best is
+  the fractional-staff explanation in `state`. Both teach by explaining a mechanism
+  rather than stating a rule.

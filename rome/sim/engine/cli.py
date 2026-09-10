@@ -413,8 +413,7 @@ def cmd_play(a):
         # The same figure state reports: the pool LESS hours already sold for
         # wages. The prompt disagreeing with state about the one number on it
         # is how a tester found the accounting wrong in the first place.
-        free_hours = max(0.0, s.director_pool()
-                         - getattr(s, "wage_hours_this_year", 0.0))
+        free_hours = max(0.0, s.director_pool() - s.director_hours_committed())
         prompt = ("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f] > "
                   % (s.year, s.capital, free_hours, s.scholars,
                      s.artisans, s.reputation))

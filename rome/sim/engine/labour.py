@@ -348,7 +348,15 @@ class LabourMixin:
         hours = float(hours)
         if hours <= 0:
             return 0.0, "hours must be greater than zero"
-        left = self.director_pool() - getattr(self, "wage_hours_this_year", 0.0)
+        # EVERY HOUR ALREADY SPOKEN FOR, not just the ones sold for wages.
+        # director_hours_committed() has counted teaching as well as wage work
+        # since the "free second year inside every year" bug, and this line
+        # never used it: `train machinist 2` plus `train chemist 2` reported
+        # 200 hours left and `work smith 2000` was then accepted, for 3,800
+        # hours spent in a 2,000-hour year. A break tester found it in a
+        # session where the same counter refused them correctly in the other
+        # direction, which is what made it obvious it was one-way.
+        left = self.director_pool() - self.director_hours_committed()
         if hours > left:
             return 0.0, ("you have %.0f of your own hours left this year, not %.0f"
                          % (max(0.0, left), hours))

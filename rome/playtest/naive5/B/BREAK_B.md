@@ -327,3 +327,95 @@ before and after protection went 0.23 -> 0.53), so the one thing bribing does bu
 `available limit 999999999`, `available offset -5`, `available afford -100`, every command with no
 arguments (each gives a helpful one-line hint, not a traceback), `policy nonexistent on`.
 No traceback, no crash, no corrupted save in any of them.
+
+## A CLAIM I TESTED AND COULD NOT BREAK (the setup screen is honest about money)
+The purse screen says the `absurd` 1,000,000-den start "buys perhaps a tenth off the time, not a
+different game. What money changes most is the OPENING."
+I ran the same greedy strategy from both starts (Han China 100, fog on, no ageing), same driver,
+same 5-year rounds, both entirely in-process:
+                     year 130         year 195           year 200
+  poor_scholar 400    51 built       79,599 den, 317     276 built
+  absurd 1,000,000   181 built       88,098 den, 330     311 built
+By 200 AD the million-denarii founder is ~12% ahead on technologies built and the two are
+indistinguishable on capital. The opening is transformed (181 vs 51 by 130 AD) and the long run is
+not. The claim holds almost exactly. EXPECTED: the rich start would run away with it. It did not.
+
+## PARTIAL FOG LEAK (lower confidence, may be intended)
+`available` under fog prints a "HEARD OF, CANNOT BEGIN YET" block that names prerequisites by id:
+  air_cayley_forces      missing prerequisites: newtonian_mechanics
+  air_glider_simple      missing prerequisites: air_cayley_forces
+  air_three_axis_control missing prerequisites: air_glider_simple
+  air_powered_aeroplane  missing prerequisites: air_three_axis_control; and 2 other things you have not heard of yet
+That is a four-link forward chain of the tree, i.e. exactly "where things lead", which `help fog`
+says you cannot see. It does hide unheard-of prerequisites behind a count, so it is a partial leak
+and plausibly deliberate. Combined with the `did you mean` leak (Finding 5) it is a lot of map.
+
+## RUNNING RECORD OF EXPECTATIONS vs REALITY
+| I expected | What happened |
+|---|---|
+| A 400-den poor scholar starts with no income | Starts with 233.5 den/yr from two surgical practices he never built (F1/F2) |
+| `work` is how a poor founder earns his first denarii | It is a net loss of ~220 den/yr as soon as you have any granted revenue (F8) |
+| N x `step 1` across sittings == one `step N`, per `help sittings` | It is strictly worse, and floor>=2yr projects never finish at all (F4) |
+| A 20% "FAILURE RISK" project would sometimes fail | 10/10 identical runs completed. Never saw a failure roll fire |
+| The negative-number and huge-number attacks would find something | Every single one refused cleanly. Best-guarded part of the program |
+| save/load path traversal would escape the start directory | Refused, both absolute and `../` forms |
+| Fog would hide node names | `why <misspelling>` prints real ids from anywhere in the tree (F5) |
+| `available` gives me ids I can paste into `start` | It truncates them at 30 chars and `start` then rejects them (F10) |
+| Founder hours are one pool | `train` and `work` keep separate books; 3,800 hours spent in a 2,000-hour year (F14) |
+| A policy called "grow the staff toward what you can house and pay" would not bankrupt me | It bankrupts you from a standing start in 8 years (F6) |
+| `bribe` beyond saturation would be refused | It is charged in full and the game tells you it bought nothing (F18) |
+| Money would be scarce | 400 -> 153,422 den in 30 years of ordinary play; 2.5M by the horizon (F13) |
+| 51 running concerns incl. a whaling industry and a coal mine would need employees | 0 people, 0 den/yr in wages (F12) |
+| A project offered as startable can be finished | `logarithms` deadlocked for 275 years while blaming the wrong resource (F17) |
+
+## THINGS THAT STRUCK ME AS UNREALISTIC
+- A newly arrived stranger with 400 den already running a cataract-couching and trepanation
+  practice worth 233 den/yr in his first week.
+- One man personally running 51 to 94 simultaneous concerns - whaling fleet, coal seam, inn,
+  gambling house, pawnshop, ferry - with zero employees and zero wages.
+- Buying 20 slaves and freeing them, five times over, inside a single turn with no time passing.
+- A full year of skilled smithing (2,000 hours) earning 151 den against a 230 den/yr cost of living:
+  in this world an ordinary tradesman starves by construction.
+- Real revenue growing ~3.3% a year forever with nothing built and nothing done, in the Later Han.
+- Debt bondage that takes three quarters of your waking hours but costs your medical practice nothing.
+
+## FINDING 20 — "FAILURE RISK: N%" never fired in 28 trials, and the whole game is deterministic
+  fud_whaling_industry, labelled "FAILURE RISK 30%": 15 identical copies of the same save,
+  `start fud_whaling_industry` + `step 3` in 15 separate processes -> 15/15
+  "COMPLETED 101: Organized whaling industry for oil and meat", byte-identical output.
+  fin_bimetallism, labelled 20%: 10/10 completed. pwr_coal_seam, labelled 25%: 3/3 completed.
+28 trials at a labelled 20-30% chance of failure, zero failures. If the labels meant what they say
+that is about a 1-in-500 outcome. It also shows there is no RNG at all: identical save + identical
+commands gives identical results in different processes, every time (which is how I was able to
+isolate Finding 4). Either FAILURE RISK means something other than "chance this does not complete",
+or the roll never happens. Nothing in `help` explains what it means.
+CONFIDENCE: high that the number as displayed does not describe observed behaviour; medium on
+whether the determinism itself is deliberate.
+
+## CORRECTION to Findings 1/2 - the starting income IS deliberate
+The game does explain it, but only if you attack it:
+  > mothball med_cataract_couching
+  REFUSED: that is something the society has, not something you maintain; there is no upkeep of
+  yours to stop
+  > open med_cataract_couching
+  REFUSED: you are already doing that - it is your practice, and it is where most of your income
+  comes from. It is a skill this society has, not a concern you opened...
+So: you are a working physician from day one because the Han already have couching and trepanation
+and you know them. That is a coherent design. What remains wrong is that the OPENING TEXT says
+"You arrive in 100 AD with 400 denarii and nothing else: no employees, no slaves, and nobody who
+owes you anything", and the purse screen calls 400 den "a few months' subsistence" when the ledger
+charges 230 den/yr, i.e. 21 months. Both statements are contradicted by the first `money` screen.
+
+## SCOPE CHECK on Finding 4 (narrowing it honestly)
+`hom_sewer_stormwater_separation` (CALENDAR FLOOR 3 years) behaves IDENTICALLY in one process and
+across six separate `step 1` invocations - both complete in 364 AD. The difference is that that
+project was MONEY-limited the whole way ("1,091 den still owed - waiting on money"), never
+founder-hour-limited. `fin_bimetallism` is founder-hour-limited, and that is the case that breaks:
+the resume recomputes `ph_left` from 0 back to 40 and resets `yrs` to 0, so the calendar clock never
+reaches the floor. So Finding 4 is real and reproducible but scoped to projects whose progress
+depends on the founder's own hours - which, in a game about one person's hours, is most of them.
+
+## FILES
+Main honest playthrough: /home/user/test/rome/playtest/naive5/B/han_china_100ad.json (now 108 AD,
+3,527 den, 7 built, 7 concerns running). All experiments are in ./scratch/ and are copies; the main
+save was only used for the ordinary playthrough and the auto_hire/auto_open observation.
