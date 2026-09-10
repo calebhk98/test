@@ -6,7 +6,7 @@ and three of those were defects in the fix for the previous one. That pattern is
 the reason this file exists: a fix verified once by hand is a fix that silently
 rots. Run it with `python3 rome/sim/test_regressions.py`.
 """
-import json, os, random, subprocess, sys
+import json, os, random, subprocess, sys, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -20,6 +20,7 @@ FAILURES = []
 # Counted rather than hand-maintained: the tally in the summary line was a
 # literal that three separate rounds of additions had to remember to update.
 CHECKS_RUN = []
+_LAST_AT = time.time()
 
 
 def sim(civ="rome_100ad", capital=None, manual=True, events=False):
@@ -31,8 +32,21 @@ def sim(civ="rome_100ad", capital=None, manual=True, events=False):
 
 
 def check(name, ok, detail=""):
-    CHECKS_RUN.append(name)
-    print("  %-58s %s" % (name, "ok" if ok else "FAIL " + detail))
+    """Record a check, and how long the work before it took.
+
+    The elapsed figure is the gap since the previous check, which is near
+    enough to "what did this one cost" and needs no instrumentation at the
+    call sites. It exists because the suite grew past fifteen minutes and got
+    killed before finishing, and nobody could say which checks were expensive
+    without timing them one at a time by hand.
+    """
+    global _LAST_AT
+    now = time.time()
+    took = now - _LAST_AT
+    _LAST_AT = now
+    CHECKS_RUN.append((name, took))
+    print("  %-58s %s%s" % (name, "ok" if ok else "FAIL " + detail,
+                            "   %4.0fs" % took if took >= 1.0 else ""))
     if not ok:
         FAILURES.append(name + " " + detail)
 
@@ -369,14 +383,53 @@ for f in civ_files:
         missing_lore.append(d.get("id", f))
 check("every civilisation has its opening written", not missing_lore, str(missing_lore))
 
-# --- reproducibility: the same seed must give the same answer
-outs = set()
-for _ in range(2):
-    p = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"),
-                        "run", "--mc", "3", "--seed", "42"],
-                       capture_output=True, text=True, timeout=600, cwd=ROOT)
-    outs.add(p.stdout)
-check("the same seed gives the same result", len(outs) == 1)
+# --- reproducibility: the same seed must give the same answer, and it must not
+#     depend on PYTHONHASHSEED.
+#
+# This used to shell out to `run --mc 3 --seed 42` twice and compare stdout,
+# which is six complete 500-year Monte-Carlo runs and took longer than the
+# other seventy-odd checks put together - the whole suite stopped finishing
+# inside fifteen minutes and started getting killed. A check nobody can afford
+# to run is a check that rots, which is the exact thing this file exists to
+# prevent. It also could not pass at all while a second process was editing
+# the tree, because then it was comparing two different programs.
+#
+# Same property, measured directly: run the model in-process over a short
+# horizon and compare the state, under two different hash seeds. Set
+# explicitly, because Python randomises string hashing per process and three
+# separate bugs in this project have come from iterating a set of node ids.
+def _det_fingerprint():
+    src = """
+import sys, random
+sys.path.insert(0, %r)
+import simulator as S
+TREE, PRICES, NODES, WAGES, GOODS = S.load()
+GOAL = TREE["meta"]["goal_node"]
+_L, ORDER, _B = S.load_strategy("recommended", NODES, GOAL)
+out = []
+for seed in (42, 43):
+    s = S.Sim(NODES, ORDER, random.Random(seed), events=True, manual=False,
+              civ=S.load_civ("rome_100ad"))
+    s.goal, s.done_year = GOAL, {}
+    for _ in range(60):
+        s.step()
+    out.append("%%d|%%.9f|%%.9f|%%.6f" %% (len(s.done), s.capital, s.revenue(),
+                                         s.eminence))
+print(";".join(out))
+""" % HERE
+    seen = set()
+    for hashseed in ("0", "12345"):
+        env = dict(os.environ, PYTHONHASHSEED=hashseed)
+        r = subprocess.run([sys.executable, "-c", src], capture_output=True,
+                           text=True, timeout=600, cwd=ROOT, env=env)
+        seen.add(r.stdout.strip() or ("ERROR: " + r.stderr[-200:]))
+    return seen
+
+
+_seen = _det_fingerprint()
+check("the same seed gives the same result, whatever PYTHONHASHSEED is",
+      len(_seen) == 1 and not any(x.startswith("ERROR") for x in _seen),
+      " || ".join(sorted(_seen))[:160])
 
 # --- round 2 A: the setting is Rome wearing a hat -- notes must generalise
 _ROME_TEMPLATES = ("ROME ALREADY HAS THIS", "ROME HAS THIS", "ROME POSSIBLY HAS THIS")
@@ -589,7 +642,14 @@ check("available returns quickly under fog, not in tens of seconds",
       elapsed < 5.0, "%.2fs" % elapsed)
 
 print("=" * 72)
-print("%d checks, %d failures" % (len(CHECKS_RUN), len(FAILURES)))
+print("%d checks, %d failures, %.0fs" % (len(CHECKS_RUN), len(FAILURES),
+                                        sum(t for _, t in CHECKS_RUN)))
+slow = sorted(CHECKS_RUN, key=lambda r: -r[1])[:5]
+if slow and slow[0][1] >= 5.0:
+    print("slowest:")
+    for nm, t in slow:
+        if t >= 5.0:
+            print("   %5.0fs  %s" % (t, nm))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)
