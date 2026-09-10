@@ -469,9 +469,19 @@ class ProjectsMixin:
         # start 11,000-denarius projects every year for two centuries, each one
         # halted by the creditors a year later: 18 technologies in 200 years and
         # a log that was nothing but CREDIT EXHAUSTED.
-        surplus = (self.revenue() - self.upkeep() - self.living_cost()
-                   - self.mine_operating_cost())
-        cheap_enough = (self.project_cost(k) <= max(600.0, surplus * 2.0))
+        # COMPUTED ONLY WHEN IT CAN MATTER. revenue() walks every technology you
+        # have, and start_reason is called for every node in the tree, several
+        # times over, by can_start and by is_visible under fog. A 45-year
+        # fogged Mexica run made 335,276 calls to revenue() from here and spent
+        # 38 of its 100 seconds inside them - to compute a surplus that is only
+        # read when the household has been insolvent three years or more, which
+        # in most runs is never.
+        if getattr(self, "insolvent_years", 0) >= 3:
+            surplus = (self.revenue() - self.upkeep() - self.living_cost()
+                       - self.mine_operating_cost())
+            cheap_enough = (self.project_cost(k) <= max(600.0, surplus * 2.0))
+        else:
+            cheap_enough = True
         if (getattr(self, "insolvent_years", 0) >= 3
                 and not cheap_enough
                 and self.capital < -max(4000.0, self.revenue() * 2.0)):

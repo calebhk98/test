@@ -417,7 +417,21 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # you cannot pay stop turning up, and nobody will extend you credit for
         # something new while you are in arrears.
         if self.capital < 0:
-            self.insolvent_years = getattr(self, "insolvent_years", 0) + 1
+            # BEING IN DEBT IS NOT THE SAME AS BEING INSOLVENT. This counted a
+            # year of arrears for every year capital was below zero, whatever
+            # the household was earning - so a Rome run with revenue of 1,006
+            # against 470 of living costs, paying its debt down at 522 a year,
+            # was still "in arrears 183 years" and still refused permission to
+            # start anything, which is what kept it from ever climbing out. A
+            # household running a surplus is paying its creditors, and nobody
+            # calls that insolvency; what the counter is for is the household
+            # whose income does not cover its costs.
+            _net = (self.revenue() - self.upkeep() - self.living_cost()
+                    - self.mine_operating_cost())
+            if _net > 0:
+                self.insolvent_years = 0
+            else:
+                self.insolvent_years = getattr(self, "insolvent_years", 0) + 1
             floor = -max(4000.0, self.revenue() * 2.0)
             if self.capital < floor and self.insolvent_years >= 3:
                 # wages unpaid: freedmen leave first, they are free to

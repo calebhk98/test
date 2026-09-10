@@ -479,16 +479,19 @@ class EconomyMixin:
     def revenue(self):
         r = 0.0
         attention = self.practice_attention()
+        practice_set = self._practice_set()
+        granted = self.granted
+        operating = self.operating
         for k in self.done_in_order():
-            practice = k in self.granted and self._practisable(k)
-            if k in self.granted and not practice:
+            practice = k in practice_set
+            if k in granted and not practice:
                 continue          # the society's, not yours
             # KNOWING HOW IS NOT THE SAME AS RUNNING IT. A node pays when it is
             # open, and not for having been worked out. See is_venture and
             # open_venture in projects.py for why: the tree already described
             # these as concerns with a yearly running cost, and the only thing
             # missing was the decision to open the doors.
-            if not practice and k not in self.operating:
+            if not practice and k not in operating:
                 continue
             n = self.nodes[k]
             if n["rev"]:
@@ -583,6 +586,22 @@ class EconomyMixin:
         """Is this granted node a skill YOU can practise for a fee?"""
         return self.nodes[k].get("cat") in self.PRACTISABLE_CATS
 
+    def _practice_set(self):
+        """The granted skills you actually practise, as a set, computed once.
+
+        revenue() called _practisable once per done node per call, and
+        start_reason calls revenue() - so a 45-year fogged Mexica run made
+        SIXTY-ONE MILLION of those calls and spent 38 seconds inside revenue().
+        The answer never changes unless the granted set does, which happens at
+        setup and never again.
+        """
+        cache = getattr(self, "_practice_cache", None)
+        if cache is None or cache[0] != len(self.granted):
+            cache = (len(self.granted),
+                     frozenset(k for k in self.granted if self._practisable(k)))
+            self._practice_cache = cache
+        return cache[1]
+
     def upkeep(self):
         # Symmetrically, you do not pay to maintain what you do not own, but you
         # do bear the small standing cost of the practice you actually run - and
@@ -590,9 +609,9 @@ class EconomyMixin:
         # Both halves of that follow `operating`, so closing something really
         # does stop the bleeding, and knowing how to do something costs nothing
         # to know.
+        practice_set = self._practice_set()
         return sum(self.nodes[k]["up"] for k in self.done_in_order()
-                   if (k in self.operating
-                       or (k in self.granted and self._practisable(k))))
+                   if k in self.operating or k in practice_set)
 
     # ---- raw material supply ------------------------------------------------
     CHARCOAL_PER_HA = 0.75          # tonnes per hectare per year, sustainable
