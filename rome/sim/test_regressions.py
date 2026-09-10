@@ -2828,9 +2828,23 @@ _rows = _av[0].get("available") or []
 check("available says what standing staff a project needs",
       _rows and any(r.get("needs_staff") for r in _rows),
       [(r["id"], r.get("needs_staff")) for r in _rows][:3])
-check("...and marks the ones you could not staff today",
-      any(r.get("short_of_staff") for r in _rows),
-      [(r["id"], r.get("short_of_staff")) for r in _rows][:3])
+# The marker uses the SAME measure the gate uses - the founder's own hands and
+# anything under contract included - so on turn one, when the founder can do a
+# one-craftsman job themselves, nothing is starred. A break tester read "* means
+# the work waits" beside projects that built at full speed with nobody hired.
+from engine.protocol import _short_of_staff
+_s_star = sim()
+check("...and marks exactly the ones the start gate would refuse for staff",
+      all(bool(r.get("short_of_staff"))
+          == (NODES[r["id"]]["art"] > _s_star.craft_hands_available() + 1e-9
+              or NODES[r["id"]]["sch"] > _s_star.effective_scholars() + 1e-9)
+          for r in _rows),
+      [(r["id"], r.get("short_of_staff"), NODES[r["id"]]["art"],
+        _s_star.craft_hands_available()) for r in _rows][:3])
+_big = [k for k in sorted(NODES) if NODES[k]["art"] > 20][:1]
+if _big:
+    check("...and a job wanting twenty craftsmen IS starred on turn one",
+          _short_of_staff(_s_star, NODES[_big[0]]), _big[0])
 _av2, _, _ = proto([{"cmd": "available", "find": "zzzznosuchthing"}])
 check("a search that matches nothing says so instead of printing '1-0'",
       _av2[0].get("nothing_matched") and "1-0" not in str(_av2[0].get("showing")),

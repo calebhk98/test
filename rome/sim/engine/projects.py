@@ -399,7 +399,13 @@ class ProjectsMixin:
                          "{:,.0f}".format(self.nodes[k]["rev"]), k))
 
     def restore_work(self, k):
-        """Bring a mothballed work back. The plant rotted while it stood idle."""
+        """Bring a mothballed work back, and open its doors again.
+
+        It costs about twice what `open` costs on its own, because it does two
+        things: it puts the plant back up - which rotted while it stood idle -
+        and it starts the concern trading. `open` alone assumes the plant is
+        still there.
+        """
         if k not in getattr(self, "mothballed", set()):
             return False, "you have not shut that down"
         if k not in self.done:
@@ -418,9 +424,21 @@ class ProjectsMixin:
         # was an oversight rather than a decision. Two years of the upkeep you
         # avoided is what it costs to find the people and the plant again.
         fee = max(self.project_cost(k) * 0.3, n["up"] * 2.0)
-        if fee > self.capital + self.credit_limit() * 0.5:
-            return False, ("bringing it back costs %.0f denarii and you have %.0f"
-                           % (fee, self.capital))
+        # THE SAME GRACE `open` GIVES. A concern the staffing rule shut is a
+        # shop whose keeper you lost, not a work you abandoned: open_venture
+        # charges a tenth to reopen one within a few years and says so in the
+        # closing message, and `restore` - the verb a player actually reaches
+        # for - charged the full price, which is itself double open's. A break
+        # tester paid twice what the event had promised.
+        _shut = getattr(self, "shut_for_staff", {})
+        if k in _shut and self.year - _shut[k] <= self.STAFF_CLOSURE_GRACE:
+            fee *= 0.1
+        if fee > self.spending_power("buy"):
+            return False, ("bringing it back costs %s denarii, and between %s in "
+                           "cash and what anyone will advance against a purchase "
+                           "you can raise %s"
+                           % ("{:,.0f}".format(fee), "{:,.0f}".format(self.capital),
+                              "{:,.0f}".format(self.spending_power("buy"))))
         if any(p not in self.done for p in n["pre"]):
             return False, ("you no longer have what it stands on: "
                            + ", ".join(p for p in n["pre"] if p not in self.done))

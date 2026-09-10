@@ -804,8 +804,16 @@ def _staff_short(n):
 
 
 def _short_of_staff(s, n):
-    """True when you could NOT staff this today. Marks the row with a *."""
-    return bool(n["art"] > s.artisans + 1e-9
+    """True when you could NOT staff this today. Marks the row with a *.
+
+    THE SAME MEASURE start_reason USES. This compared against self.artisans
+    alone while the gate counts the founder's own hands and anything you have
+    under contract, so a break tester read "* means you do not have them yet -
+    the work waits" beside projects that started and built at full speed with
+    nobody on the payroll at all. A marker that contradicts the gate it is
+    describing is worse than no marker.
+    """
+    return bool(n["art"] > s.craft_hands_available() + 1e-9
                 or n["sch"] > s.effective_scholars() + 1e-9)
 
 
