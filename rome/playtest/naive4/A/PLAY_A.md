@@ -665,3 +665,17 @@ it is fatal:
 The game is teaching something quite precise here: each rung of the spine needs an income
 roughly equal to its own annual upkeep before you can carry it, and there is no way to see
 that in advance except by trying and failing.
+
+### MINIMAL REPRODUCTION OF THE SAVE-KILLING BUG
+On a healthy run-C save at 1380 AD (240 technologies, 691,891 den), one single command:
+    train optician 1
+and the very next invocation fails permanently:
+    could not read the save file 'england_1300_c.json': this save refers to node(s) the
+    current tech tree does not have: optician.
+Nothing else is needed — no auto_train, no step, no further play. Any `train` of a trade
+whose node id is not in the currently-installed tree destroys the save on write. I recovered
+by keeping a copy of the save file beside it, which is the only reason run C survived.
+So the practical advice to anyone playing this build is: **do not use `train`**, and keep a
+backup copy of your session file. That is a bad place for a game to be, since `train` is the
+only route to chemists, engineers, machinists, opticians and electricians, and those five
+trades gate the entire chemistry, precision and electricity half of the tree.

@@ -1287,6 +1287,21 @@ check("nothing that deletes your work is on by default for a player",
       and sim(manual=False).policy["auto_shed"] is True,
       (sim(manual=True).policy["auto_shed"], sim(manual=False).policy["auto_shed"]))
 
+# 5. You could sell every one of your 2,400 hours as a labourer and still
+#    collect the full fee from a surgery you were demonstrably not in. The
+#    practice is your own two hands; that was the same hours sold twice.
+s = sim()
+_rev_before = s.revenue()
+_earned, _err = s.work_for_wages("labourer", s.director_pool())
+check("hours sold as a labourer are not also spent practising medicine",
+      _err is None and _rev_before > 0 and s.revenue() < _rev_before * 0.05,
+      "revenue %.1f -> %.1f having sold every hour" % (_rev_before, s.revenue()))
+s2 = sim()
+s2.work_for_wages("labourer", s2.director_pool() * 0.5)
+check("selling half your hours costs you half the practice, not all of it",
+      abs(s2.revenue() - _rev_before * 0.5) < _rev_before * 0.06,
+      "%.1f against half of %.1f" % (s2.revenue(), _rev_before))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

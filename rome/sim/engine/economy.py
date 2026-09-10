@@ -372,16 +372,40 @@ class EconomyMixin:
             seq = self._done_seq = [k for k in self.order if k in self.done]
         return seq
 
+    def practice_attention(self):
+        """How much of your practice you are actually there to run.
+
+        The income from practising medicine is your own two hands: it is the
+        cover identity the guide tells you to adopt, and a weird-play tester
+        found you could sell every one of your 2,400 hours as a labourer and
+        still collect the full fee from a surgery you were demonstrably not in.
+        That is the same hours sold twice, which is an accounting error rather
+        than a balance choice.
+
+        Only hours sold for WAGES count against it. Hours that go into your own
+        projects do not: a physician who spends his evenings grinding lenses is
+        still a physician in the morning, and the whole model assumes you build
+        while your practice runs. Whether THAT should compete too is a real
+        question and a much larger one; this is the half that is simply wrong.
+        """
+        pool = self.director_pool()
+        if pool <= 0:
+            return 1.0
+        sold = min(pool, getattr(self, "wage_hours_this_year", 0.0))
+        return max(0.0, 1.0 - sold / pool)
+
     def revenue(self):
         r = 0.0
+        attention = self.practice_attention()
         for k in self.done_in_order():
-            if k in self.granted and not self._practisable(k):
+            practice = k in self.granted and self._practisable(k)
+            if k in self.granted and not practice:
                 continue          # the society's, not yours
             n = self.nodes[k]
             if n["rev"]:
                 age = self.year - self.done_year.get(k, self.year)
                 ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
-                r += n["rev"] * ramp
+                r += n["rev"] * ramp * (attention if practice else 1.0)
         # THERE IS ONLY SO MUCH MARKET. Uncapped, this compounds: every venture
         # pays back inside two years, so its income buys the next one, and a run
         # ended holding three billion denarii against an empire whose entire
@@ -441,6 +465,8 @@ class EconomyMixin:
             age = self.year - self.done_year.get(k, self.year)
             ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
             amt = n["rev"] * ramp * (self.economy ** 0.75) * self.output_factor
+            if k in self.granted and self._practisable(k):
+                amt *= self.practice_attention()
             if amt > 0.5:
                 rows[k] = round(amt, 1)
         out = dict(sorted(rows.items(), key=lambda kv: -kv[1])[:15])

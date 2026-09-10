@@ -835,7 +835,14 @@ def render_state(out):
                 _fmt_num(out.get("scandal")), _fmt_num(out.get("eminence"))))
     prom = out.get("prominence") or {}
     if prom:
-        L.append("  dangerous above %s (settles near %s if nothing changes; %s chance of ruin this year)"
+        # SAY WHICH NUMBER IT IS ABOUT. This line sat directly under the row
+        # showing reputation, suspicion, scandal and eminence, and refers to the
+        # LAST of those - so a break tester with suspicion pinned at 30 read
+        # "dangerous above 26 ... 0% chance of ruin this year" as a flat
+        # contradiction, and wrote the whole mechanic off as inert. It was
+        # answering a question they had not asked.
+        L.append("  EMINENCE is dangerous above %s (settles near %s if nothing "
+                 "changes; %s chance of ruin this year)"
                  % (_fmt_num(prom.get("dangerous_above")),
                     _fmt_num(prom.get("settles_at_if_nothing_changes")),
                     _pct(prom.get("chance_of_ruin_this_year"))))
