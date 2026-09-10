@@ -1,3 +1,101 @@
+# TOP PROBLEMS
+
+Ordered by how much they hurt. I played five runs, roughly 2,000 in-game years in total
+(Rome/Trajan every time), and never reached the transistor. Best result: 105 of 146
+nodes at the year-600 horizon.
+
+1. **`hire <trade> 6` is refused when the ceiling is 5.9, and the message makes it look
+   like you are capped out.** This single message cost me two runs.
+
+       hire machinist 6
+       REFUSED: this society's literacy will not supply more than 5.9 machinists in
+       total, ever, at any price; you already have 0.0
+
+   I had ZERO machinists. `hire machinist 5` works fine. Because I (and any player
+   asking for a round number) read "will not supply more than 5.9 ... ever, at any
+   price" as "you cannot have any more", the one node that 1,629 other nodes and the
+   goal depend on sat blocked for 200 in-game years while I had 17 million denarii in
+   the bank. Compare the household-room refusal three lines later, which does it right:
+   "you can supervise, house and teach 4.35 more people, not 5 - 4 is the most whole
+   people". The literacy refusal should say the same thing: "5 is the most you can take".
+
+2. **The literacy ceiling gates the win condition and is invisible everywhere.** The
+   goal needs 25 scholars on staff; this society will never supply more than 6.4. That
+   ceiling is not in `state`, not in `state full`, not in `labour`, not in `help`. I
+   found it in a refusal message in year 463 of a 500-year game. If the intended play is
+   "raise literacy to raise the ceiling", nothing anywhere says so.
+
+3. **Fog of war is the default and it hides the parts of the game that are actually
+   interesting.** With fog off, `path <goal>` prints the 142-node road and `why` adds
+   "FULL CHAIN BEHIND IT / DIRECTLY UNLOCKS / TOTAL DOWNSTREAM: 2,008 things depend on
+   this -- INCLUDING THE GOAL". With fog on you get 218 startable things, a four-value
+   hint column, and no way to tell which matters. Under fog I played 43 years without
+   ever learning that `workshop_first` exists, because blocked nodes are hidden - and it
+   is the gate for 2,008 things.
+
+4. **The automation switches reliably end your run, and the game never diagnoses it.**
+   `help automatic` invites you to turn them on ("Every one is a switch you control").
+   `auto_train` taught four trades no project of mine needed and put them on my payroll
+   at ~650 den/yr each; my wage bill went 217 -> 4,818 against revenue of 4,561 and I
+   was insolvent in eight years. In another run the same switches produced a 200-year
+   loop of "INSOLVENCY SETTLED" every twelve years with zero progress. `money` shows
+   wages as one undifferentiated line, so there is nothing to look at that would tell
+   you the automation is what is bleeding you.
+
+5. **`why` and `available` say a node is startable when the game already knows it
+   cannot progress at all.** `why precision_three_plate` -> "STATUS: CAN START NOW",
+   with a STAFF NEEDED line that is satisfied. Only `start` tells the truth - "this
+   society cannot supply the labour it wants ... machinist (wants 1500 hours a year;
+   this society can field 0 at most)" - i.e. after you have committed the money. The
+   HIRED LABOUR line is the real gate and `why` never checks it.
+
+6. **There is no "why am I stuck?" view.** I spent three separate stretches of 90-250
+   in-game years with millions in the bank and a goal counter that would not move. Each
+   time the cause was one node blocked on one trade, and each time I found it by typing
+   `why` at a guess. `state` has room for one line: "you are blocked on X".
+
+7. **The economy is not a constraint, which makes most of the best-written systems
+   inert.** A completely thoughtless strategy - dump `available all`, sort by cost,
+   start everything cheap - produced 2.3 million denarii by year 168 and 17 million by
+   year 372. The remaining bill for the whole goal chain is 9.4 million. After about
+   year 250 money is meaningless, and bounties, mines, debt, market saturation, `work`
+   and "an idle million bleeds fifteen thousand a year" all stop mattering.
+
+8. **"FULL CHAIN BEHIND IT" never counts down.** In year 436, after building 227
+   technologies and 42 of the goal's prerequisites, `why point_contact_transistor`
+   printed the identical "145 nodes, 55,420 of your hours, 9,421,124 den, 142.2-year
+   serial floor" it printed in year 100 with nothing built. That is the number you would
+   use to decide whether you can still make the horizon, and it told me I needed 142
+   more years when I had 161 left and most of the chain already done.
+
+9. **Staff silently evaporate and nothing raises an alarm.** Attrition is 3.5%/yr, so if
+   you stop hiring your workforce decays to nothing. One run ended with 91,934 denarii,
+   twelve concerns running and literally zero people, and had been in that state for
+   decades. Related: `train machinist 4` ate 1,800 of my 2,000 founder-hours for the
+   year with no warning, silently swallowed the four `train` commands I typed after it,
+   and closed a dozen of my businesses as a side effect ("EVENT 436: nobody left to keep
+   an eye on 2 concerns...").
+
+10. **Two smaller correctness things.** (a) `labour` lists machinist under "YOU COULD
+    HIRE" and "MUST BE TAUGHT: none" while `labour machinist` says "the town can supply:
+    0 hours" - the two screens contradict each other. (b) After I hired 5 machinists,
+    the same `state` block said both "waiting on your hours" and "!! ABANDONED IN 1 YEAR
+    unless you can find a machinist".
+
+## What is genuinely good
+
+The writing, the refusal messages ("did you mean: junction_transistor, ..."), the
+`money` ledger that sums and says it sums, `work scholar 500` showing that the wage cost
+me 58.4 of my own practice, the hazard counterfactuals ("would have been -28%: knowing
+what is actually killing them; variolation and then vaccination; hard soap, in
+quantity"), `withdraw` refusing to let me hurt myself for nothing, the end screen that
+tells you what the next steps would have been, and the historical detail throughout
+(Trajan refusing Pliny a fire brigade at Nicomedia; Sejanus; the milestone nobody
+corrected). When this game explains something it explains it better than almost anything
+I have played. The problem is entirely about what it does not surface at all.
+
+---
+
 # Playtest notes - naive9/a
 
 (Playing blind: no source, no docs. Notes appended as I go.)
@@ -406,3 +504,41 @@ invisible (attrition eats 3.5%/yr and the literacy ceiling caps you low).
     mid-parenthesis - "Rigid padded horse c", "Purity 99% (careful", "Codebook for
     optical", "Averages, error, sam". With 774 rows in `available all` and no way to
     widen the column, the list is genuinely hard to read.
+
+## Confirmation of problem #1
+
+I reloaded the save that had been frozen at "79 goal nodes remaining" for 200 in-game
+years with 17 million denarii, changed exactly ONE thing - ask for `hire machinist 4`
+instead of `hire machinist 6` - and the game immediately started moving again:
+
+    year 436   79 remaining   (frozen here since year 224)
+    year 440   75 remaining
+    year 460   64 remaining
+
+Nothing else was different. Two hundred years of a run were lost to a refusal message
+that says "will not supply more than 5.9 ... ever, at any price; you already have 0.0"
+instead of "4 is the most whole people you can take".
+
+## Final run, and one more thing about losing ground
+
+Last run ended:
+
+    ended in 600 AD
+    you built 272 things; this society already had 141
+    3,320,624 in hand, 128.8 people, reputation 22.5, 165 concerns running
+    146 nodes in all; you had 80 of them and 66 were still to build
+    the next steps would have been: charcoal_industrial, nitre_beds,
+    refractory_fireclay, cementation_steel, gp_laminated_core, zinc_metal, ...
+
+44. Note what the "next steps" are: charcoal_industrial, nitre_beds,
+    refractory_fireclay. Those are TIER 1 nodes I built in the second century. The
+    fifth-century hazards destroyed them and I dropped from 58 nodes remaining back to
+    66 without ever being told which technologies I had lost. `state` says "AHEAD: 95
+    technologies at risk if a hazard lands, hedged by nothing yet", and when a hazard
+    lands you get "a site is sacked - 1.0 of your people gone" but no list of what
+    knowledge went with it. Losing charcoal-burning in the year 540 and only finding out
+    from the end-of-game screen is a rough way to learn.
+
+45. Housekeeping: every fresh launch writes a new save into the repository root. My
+    session left 60+ rome_100ad_NN.json files lying next to the game. Reuse one file, or
+    put them in a saves/ directory.

@@ -548,12 +548,28 @@ class LabourMixin:
             cap = self.literate_capacity(trade)
             have = self._trade_headcount_pending(trade)
             if have + n > cap + 1e-6:
+                # SAY HOW MANY YOU CAN HAVE, NOT ONLY THAT YOU CANNOT HAVE
+                # SIX. A play tester asked for six machinists against a
+                # ceiling of 5.9, holding NONE, and read "will not supply more
+                # than 5.9 in total, ever, at any price" as being capped out.
+                # They stopped asking, and a run sat frozen for two hundred
+                # years with seventeen million denarii in the bank; changing
+                # the one number to four started it moving again in four. The
+                # household-room refusal in the same session gets this right
+                # ("4 is the most whole people you can take") and this did
+                # not. Say the number they should type.
+                _room = max(0.0, cap - have)
+                _whole = int(_room + 1e-9)
                 return False, ("this society's literacy will not supply more than "
-                               "%.1f %ss in total, ever, at any price; you already have "
-                               "%.1f (hired and still being taught). Raise "
-                               "literacy_general or literacy_elite -- printing, schools "
-                               "and libraries do -- to widen this pool."
-                               % (cap, trade, have))
+                               "%.1f %ss in total, ever, at any price, and you "
+                               "have %.1f (hired and still being taught). %s "
+                               "Printing, paper, schools and academies widen the "
+                               "pool - they raise how many people here can read, "
+                               "and this ceiling rises with it."
+                               % (cap, trade, have,
+                                  ("%d more is the most you can take right now."
+                                   % _whole) if _whole >= 1 else
+                                  "There is no room for even one more."))
         # A finder's fee and the first year in advance, which is what a household
         # actually pays to take a skilled man off someone else's bench. Buying
         # deep into a trade's LOCAL supply bids its price up, the same
@@ -668,12 +684,28 @@ class LabourMixin:
             cap = self.literate_capacity(trade)
             have = self._trade_headcount_pending(trade)
             if have + n > cap + 1e-6:
+                # SAY HOW MANY YOU CAN HAVE, NOT ONLY THAT YOU CANNOT HAVE
+                # SIX. A play tester asked for six machinists against a
+                # ceiling of 5.9, holding NONE, and read "will not supply more
+                # than 5.9 in total, ever, at any price" as being capped out.
+                # They stopped asking, and a run sat frozen for two hundred
+                # years with seventeen million denarii in the bank; changing
+                # the one number to four started it moving again in four. The
+                # household-room refusal in the same session gets this right
+                # ("4 is the most whole people you can take") and this did
+                # not. Say the number they should type.
+                _room = max(0.0, cap - have)
+                _whole = int(_room + 1e-9)
                 return False, ("this society's literacy will not supply more than "
-                               "%.1f %ss in total, ever, at any price; you already have "
-                               "%.1f (hired and still being taught). Raise "
-                               "literacy_general or literacy_elite -- printing, schools "
-                               "and libraries do -- to widen this pool."
-                               % (cap, trade, have))
+                               "%.1f %ss in total, ever, at any price, and you "
+                               "have %.1f (hired and still being taught). %s "
+                               "Printing, paper, schools and academies widen the "
+                               "pool - they raise how many people here can read, "
+                               "and this ceiling rises with it."
+                               % (cap, trade, have,
+                                  ("%d more is the most you can take right now."
+                                   % _whole) if _whole >= 1 else
+                                  "There is no room for even one more."))
         hours = 450.0 * n            # your hours, teaching, per person
         pool = self.director_pool() - self.director_hours_committed()
         if hours > pool:

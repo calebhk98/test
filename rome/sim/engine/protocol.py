@@ -1881,6 +1881,10 @@ def render_labour(out):
                            indent="  "))
     L.append("")
     L.append("YOU COULD HIRE: " + (", ".join(out.get("you_could_hire_here") or []) or "nobody new"))
+    if out.get("only_the_ones_you_taught"):
+        L.append("EXISTS ONLY BECAUSE YOU TAUGHT IT: "
+                 + ", ".join(out["only_the_ones_you_taught"])
+                 + "   (no market; teach more, or they come only from your own)")
     L.append("MUST BE TAUGHT: " + (", ".join(out.get("do_not_exist_here") or []) or "none"))
     training = out.get("in_training")
     if training:
@@ -3176,15 +3180,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
             r["exists_here"] = s.trade_available(one)
             return {"ok": True, "trade": r}
         have = sorted(t for t in WAGES if s.employees.get(t, 0.0) > 0.005)
-        # NOT "TRADES YOU DO NOT YET EMPLOY". Excluding the ones you have reads
-        # as "no more smiths available" the moment you hire your first smith,
-        # which is false and which `hire smith 1` then contradicts. It is every
-        # trade this society has.
-        hirable = sorted(t for t in WAGES if s.trade_available(t))
+        # NOT "TRADES YOU DO NOT YET EMPLOY", and not "trades that exist"
+        # either. Excluding the ones you have reads as "no more smiths
+        # available" the moment you hire your first smith, which `hire smith 1`
+        # then contradicts; including every available trade put machinist on
+        # the list while `labour machinist` said "the town can supply: 0
+        # hours", which a play tester read side by side. It is every trade
+        # there is actually somebody here to hire.
+        hirable = sorted(t for t in WAGES
+                         if s.trade_available(t) and s.market_supply_split(t)[0] > 0)
+        taught_only = sorted(t for t in WAGES
+                             if s.trade_available(t) and t not in hirable)
         absent = sorted(t for t in WAGES if not s.trade_available(t))
         return {"ok": True,
                 "on_your_staff": [row(t) for t in have] or "nobody",
                 "you_could_hire_here": hirable,
+                "only_the_ones_you_taught": taught_only,
                 "do_not_exist_here": absent,
                 "you_employ_in_total": round(sum(s.employees.values()), 2),
                 # THE CAP, WHERE A PLAYER CAN SEE IT. This number decided a

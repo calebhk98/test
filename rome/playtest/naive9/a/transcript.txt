@@ -26756,3 +26756,629 @@ HOW MUCH RESTS ON THIS: a few things
 Ended 192 AD. stopped
 Saved to rome_100ad_21.json. Come back with:
    python3 rome/sim/simulator.py play --session rome_100ad_21.json
+
+==================== ROUND-BY-ROUND SUMMARIES OF AUTOMATED SESSIONS ====================
+
+----- run2.log -----
+   GOAL: 
+round 0: year 144 cap 156955 -> started 16 (spent 65318) -> year None cap None
+    EVENT 144: tl_windscreen_wiper cannot go on: no machinist here. It has 3 years before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop tl_windscreen_wiper' now and keep your hours
+    EVENT 145: tl_windscreen_wiper cannot go on: no machinist here. It has 2 years before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop tl_windscreen_wiper' now and keep your hours
+    EVENT 145: FAILED at Inn and coaching house: it did not work. 40% of the hours are to do again (40 of your own) and 1,415 is gone. Attempt 2.
+    EVENT 146: completed: Public debt and government borrowing
+    EVENT 146: tl_windscreen_wiper cannot go on: no machinist here. It has 1 year before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop tl_windscreen_wiper' now and keep your hours
+    EVENT 147: HALTED tl_windscreen_wiper: there is nobody here who can do this work (machinist). What you spent is lost
+    EVENT 147: FAILED at Fireclay, grog and silica refractories: it did not work. 40% of the hours are to do again (140 of your own) and 871 is gone. Attempt 2.
+   GOAL: 
+round 1: year 148 cap 244771 -> started 60 (spent 120733) -> year None cap None
+    EVENT 148: completed: Orthographic projection and drawing conventions
+    EVENT 148: tl_windscreen_wiper cannot go on: no machinist here. It has 3 years before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop tl_windscreen_wiper' now and keep your hours
+    EVENT 149: tl_windscreen_wiper cannot go on: no machinist here. It has 2 years before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop tl_windscreen_wiper' now and keep your hours
+    EVENT 150: tl_windscreen_wiper cannot go on: no machinist here. It has 1 year before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop tl_windscreen_wiper' now and keep your hours
+    EVENT 150: your patron dies; his heir must be courted afresh. The courting cost 800 denarii, your protection falls from 57% to 34%, and you are talked about (scandal +4)
+    EVENT 151: FAILED at Kinetic energy and potential energy: it did not work. 40% of the hours are to do again (44 of your own) and 96 is gone. Attempt 2.
+    EVENT 151: FAILED at Drawing office: it did not work. 40% of the hours are to do again (60 of your own) and 168 is gone. Attempt 2.
+    EVENT 151: HALTED tl_windscreen_wiper: there is nobody here who can do this work (machinist). What you spent is lost
+   GOAL: 
+round 2: year 152 cap 402747 -> started 60 (spent 28775) -> year 152 cap 402747
+    EVENT 152: completed: Clover as winter grazing and fodder
+    EVENT 152: completed: Needle: sewing implement
+    EVENT 152: FAILED at Mechanical grain reaper: it did not work. 40% of the hours are to do again (120 of your own) and 376 is gone. Attempt 2.
+    EVENT 153: FAILED at Adhesive bonding: it did not work. 40% of the hours are to do again (56 of your own) and 88 is gone. Attempt 2.
+    EVENT 153: FAILED at Kinetic theory of gases: it did not work. 40% of the hours are to do again (52 of your own) and 99 is gone. Attempt 2.
+    EVENT 154: FAILED at Adhesive bonding: it did not work. 40% of the hours are to do again (56 of your own) and 88 is gone. Attempt 3.
+    EVENT 154: FAILED at Polynomial interpolation and finite differences: it did not work. 40% of the hours are to do again (40 of your own) and 80 is gone. Attempt 2.
+    EVENT 155: FAILED at The equals sign: it did not work. 40% of the hours are to do again (12 of your own) and 85 is gone. Attempt 2.
+   GOAL: 
+round 3: year 156 cap 821802 -> started 19 (spent 6552) -> year 156 cap 821802
+    EVENT 156: FAILED at Roving frame: fibre attenuation and twist: it did not work. 40% of the hours are to do again (24 of your own) and 9 is gone. Attempt 2.
+    EVENT 156: FAILED at Turnips as storable winter animal feed: it did not work. 40% of the hours are to do again (40 of your own) and 26 is gone. Attempt 2.
+    EVENT 156: FAILED at Mosquito bed net: it did not work. 40% of the hours are to do again (16 of your own) and 86 is gone. Attempt 2.
+    EVENT 156: FAILED at Research group and principal investigator: it did not work. 40% of the hours are to do again (40 of your own) and 80 is gone. Attempt 2.
+    EVENT 156: FAILED at Funded research programme: it did not work. 40% of the hours are to do again (48 of your own) and 80 is gone. Attempt 2.
+    EVENT 156: FAILED at Zero as a number: it did not work. 40% of the hours are to do again (16 of your own) and 86 is gone. Attempt 2.
+    EVENT 156: FAILED at Sericulture: silk production: it did not work. 40% of the hours are to do again (32 of your own) and 287 is gone. Attempt 2.
+    EVENT 156: FAILED at Kinetic energy and potential energy: it did not work. 40% of the hours are to do again (44 of your own) and 96 is gone. Attempt 3.
+    EVENT 156: FAILED at Kinetic theory of gases: it did not work. 40% of the hours are to do again (52 of your own) and 99 is gone. Attempt 3.
+    EVENT 156: completed: Drawing office
+    EVENT 157: completed: Paper pattern: home sewing pattern
+    EVENT 157: completed: Turnips as storable winter animal feed
+    EVENT 157: FAILED at Analysis of variance (ANOVA): it did not work. 40% of the hours are to do again (56 of your own) and 80 is gone. Attempt 2.
+    EVENT 157: FAILED at Solder: lead-tin for joining metals by melting: it did not work. 40% of the hours are to do again (40 of your own) and 2,218 is gone. Attempt 2.
+    EVENT 158: FAILED at Germ theory of disease: it did not work. 40% of the hours are to do again (140 of your own) and 340 is gone. Attempt 2.
+    EVENT 159: FAILED at Hypothesis and prediction: it did not work. 40% of the hours are to do again (36 of your own) and 80 is gone. Attempt 2.
+    EVENT 159: FAILED at Funded research programme: it did not work. 40% of the hours are to do again (48 of your own) and 80 is gone. Attempt 3.
+    EVENT 159: FAILED at Kinetic theory of gases: it did not work. 40% of the hours are to do again (52 of your own) and 99 is gone. Attempt 4.
+    EVENT 159: FAILED at Legal standing: a status the courts will hear: it did not work. 40% of the hours are to do again (100 of your own) and 2,400 is gone. Attempt 2.
+   GOAL: 
+round 4: year 160 cap 1308609 -> started 32 (spent 13173) -> year 160 cap 1308609
+    EVENT 160: FAILED at Trompe (water-driven air blast): it did not work. 40% of the hours are to do again (72 of your own) and 115 is gone. Attempt 2.
+    EVENT 161: FAILED at Trompe (water-driven air blast): it did not work. 40% of the hours are to do again (72 of your own) and 115 is gone. Attempt 3.
+    EVENT 163: FAILED at Hypothesis and prediction: it did not work. 40% of the hours are to do again (36 of your own) and 80 is gone. Attempt 3.
+   GOAL: 
+round 5: year 164 cap 1834727 -> started 28 (spent 34392) -> year 164 cap 1834727
+    EVENT 165: FAILED at Safety lamps and mine ventilation: it did not work. 40% of the hours are to do again (56 of your own) and 395 is gone. Attempt 2.
+    EVENT 166: FAILED at Fire assay for ore grade: it did not work. 40% of the hours are to do again (24 of your own) and 49 is gone. Attempt 2.
+    EVENT 166: FAILED at Refined petroleum fractions: it did not work. 40% of the hours are to do again (60 of your own) and 4,800 is gone. Attempt 2.
+    EVENT 167: FAILED at Breastshot water wheel: it did not work. 40% of the hours are to do again (72 of your own) and 176 is gone. Attempt 2.
+   GOAL: 
+round 6: year 168 cap 2292003 -> started 19 (spent 5350) -> year 168 cap 2292003
+    warning: no one can do this work YET: engineer. The trade exists here or is being taught, but nobody is trained and ready, and this project cannot progress at all until someone is. If that is still true after four years with no progress, it is halted and everything spent on it is lost. Check labour, and see train if nobody is being taught yet.
+    EVENT 169: FAILED at Medical licensing: it did not work. 40% of the hours are to do again (40 of your own) and 104 is gone. Attempt 2.
+    EVENT 170: Antonine plague: staff -7%, 129,835 gone with the trade that stopped (would have been -28%: knowing what is actually killing them; variolation and then vaccination; hard soap, in quantity; fields that do not fail together; fodder that keeps through a bad winter)
+    EVENT 170: FAILED at Non-Euclidean geometry: hyperbolic and elliptic: it did not work. 40% of the hours are to do again (60 of your own) and 80 is gone. Attempt 2.
+    EVENT 171: completed: Brewing with hops for flavor and preservation
+    EVENT 171: completed: Whippletree and swingletree
+   GOAL: 
+round 7: year 172 cap 2731746 -> started 57 (spent 47180) -> year None cap None
+    EVENT 172: in2_towing_tank cannot go on: no engineer here. It has 3 years before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop in2_towing_tank' now and keep your hours
+    EVENT 173: FAILED at Double glazing (two panes): it did not work. 40% of the hours are to do again (48 of your own) and 162 is gone. Attempt 2.
+    EVENT 173: in2_towing_tank cannot go on: no engineer here. It has 2 years before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop in2_towing_tank' now and keep your hours
+    EVENT 173: FAILED at Carbon paper: it did not work. 40% of the hours are to do again (28 of your own) and 335 is gone. Attempt 2.
+    EVENT 174: in2_towing_tank cannot go on: no engineer here. It has 1 year before it is abandoned and what you spent on it is lost. Teach the trade, or 'stop in2_towing_tank' now and keep your hours
+    EVENT 174: FAILED at Statics and equilibrium of forces: it did not work. 40% of the hours are to do again (80 of your own) and 144 is gone. Attempt 2.
+    EVENT 174: FAILED at University and degree-granting institution: it did not work. 40% of the hours are to do again (80 of your own) and 2,280 is gone. Attempt 2.
+    EVENT 174: FAILED at Tin-mercury amalgam plate mirrors: it did not work. 40% of the hours are to do again (140 of your own) and 2,142 is gone. Attempt 2.
+    EVENT 175: HALTED in2_towing_tank: there is nobody here who can do this work (engineer). What you spent is lost
+    EVENT 175: FAILED at Non-Euclidean geometry: hyperbolic and elliptic: it did not work. 40% of the hours are to do again (60 of your own) and 80 is gone. Attempt 3.
+   GOAL: 
+round 8: year 176 cap 3235024 -> started 22 (spent 6266) -> year 176 cap 3235024
+    warning: no one can do this work YET: engineer. The trade exists here or is being taught, but nobody is trained and ready, and this project cannot progress at all until someone is. If that is still true after four years with no progress, it is halted and everything spent on it is lost. Check labour, and see train if nobody is being taught yet.
+    EVENT 176: FAILED at Spread footing on compacted soil: it did not work. 40% of the hours are to do again (32 of your own) and 30 is gone. Attempt 2.
+    EVENT 176: FAILED at Deep shaft sinking techniques: it did not work. 40% of the hours are to do again (96 of your own) and 2,167 is gone. Attempt 2.
+    EVENT 177: FAILED at Spread footing on compacted soil: it did not work. 40% of the hours are to do again (32 of your own) and 30 is gone. Attempt 3.
+    EVENT 177: FAILED at Logarithms and computed tables: it did not work. 40% of the hours are to do again (160 of your own) and 3,800 is gone. Attempt 2.
+    EVENT 177: FAILED at Futures contract and forward dealing: it did not work. 40% of the hours are to do again (56 of your own) and 1,228 is gone. Attempt 2.
+    EVENT 178: FAILED at Ledger and account books: it did not work. 40% of the hours are to do again (40 of your own) and 54 is gone. Attempt 2.
+   GOAL: 
+round 9: year 180 cap 3974108 -> started 44 (spent 19162) -> year 180 cap 3974108
+    EVENT 181: FAILED at Cement varieties: Portland and alternatives for construction: it did not work. 40% of the hours are to do again (64 of your own) and 106 is gone. Attempt 2.
+    EVENT 181: completed: Copper converter: blowing air through molten matte
+    EVENT 181: FAILED at Controlled pollination: it did not work. 40% of the hours are to do again (60 of your own) and 152 is gone. Attempt 2.
+    EVENT 181: FAILED at Stockless anchor: it did not work. 40% of the hours are to do again (40 of your own) and 120 is gone. Attempt 2.
+    EVENT 181: FAILED at Logarithms and computed tables: it did not work. 40% of the hours are to do again (160 of your own) and 3,800 is gone. Attempt 3.
+    EVENT 181: FAILED at Lithography: it did not work. 40% of the hours are to do again (80 of your own) and 1,269 is gone. Attempt 3.
+    EVENT 183: FAILED at Cement varieties: Portland and alternatives for construction: it did not work. 40% of the hours are to do again (64 of your own) and 106 is gone. Attempt 3.
+   GOAL: 
+round 10: year 184 cap 5198758 -> started 60 (spent 79889) -> year None cap None
+    EVENT 184: FAILED at One-time pad - information-theoretically secure cipher: it did not work. 40% of the hours are to do again (40 of your own) and 900 is gone. Attempt 2.
+    EVENT 184: FAILED at Share and share transfer: it did not work. 40% of the hours are to do again (40 of your own) and 819 is gone. Attempt 2.
+    EVENT 184: FAILED at Jacquard card chain: it did not work. 40% of the hours are to do again (48 of your own) and 1,069 is gone. Attempt 2.
+    EVENT 184: FAILED at Hybridisation: it did not work. 40% of the hours are to do again (48 of your own) and 160 is gone. Attempt 2.
+    EVENT 184: FAILED at Ice harvesting from frozen lakes and rivers: it did not work. 40% of the hours are to do again (40 of your own) and 94 is gone. Attempt 2.
+    EVENT 184: FAILED at Selective breeding of draft and dairy cattle: it did not work. 40% of the hours are to do again (80 of your own) and 209 is gone. Attempt 2.
+    EVENT 185: FAILED at Logarithms and computed tables: it did not work. 40% of the hours are to do again (160 of your own) and 3,800 is gone. Attempt 4.
+    EVENT 186: FAILED at Life insurance: it did not work. 40% of the hours are to do again (80 of your own) and 2,042 is gone. Attempt 2.
+   GOAL: 
+round 11: year 188 cap 6700141 -> started 42 (spent 26282) -> year None cap None
+    EVENT 188: FAILED at Corrosion-resistant vessels: acid-resistant stoneware: it did not work. 40% of the hours are to do again (40 of your own) and 411 is gone. Attempt 2.
+    EVENT 189: FAILED at Movable type and the screw press: it did not work. 40% of the hours are to do again (360 of your own) and 2,668 is gone. Attempt 2.
+    EVENT 191: FAILED at Correlation and covariance: it did not work. 40% of the hours are to do again (40 of your own) and 80 is gone. Attempt 2.
+
+----- run3.log -----
+session rome_100ad_63.json
+path len 142
+r00 yr104 cap-2398 started3 spent315 | left 141 | net -1,750 | ppl 1.9/6.0 | emin 0.04
+    * EVENT 103: CLOSE TO THE LIMIT: you owe 2,398 of the 2,421 anyone here will advance you (99%). Past it every project in hand is halted unfinished and nobody funds new work
+r01 yr108 cap-1074 started0 spent0 | left 141 | net -103.7 | ppl 0/6.0 | emin 0.03
+    * EVENT 104: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 825 denarii. Your name is worth less for it (reputation -8.9), and you keep your kn
+r02 yr112 cap-1554 started0 spent0 | left 141 | net -156.5 | ppl 0/6.0 | emin 0.02
+r03 yr116 cap-71 started0 spent0 | left 141 | net +6.6 | ppl 0/6.0 | emin 0.01
+    * [112 AD | -1554 den | you:2000 hr | sch 0 art 0 | rep 0] >   EVENT 114: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 79 denarii. Your name 
+r04 yr120 cap-32 started0 spent0 | left 141 | net +10.9 | ppl 0/6.0 | emin 0.01
+r05 yr124 cap151 started0 spent0 | left 141 | net +160.2 | ppl 0/6.0 | emin 0.01
+r06 yr128 cap-16 started0 spent0 | left 141 | net +148.8 | ppl 0.04/6.0 | emin 0.01
+r07 yr132 cap-265 started0 spent0 | left 141 | net -391 | ppl 0.84/6.0 | emin 0.01
+    * EVENT 130: CLOSE TO THE LIMIT: you owe 1,992 of the 2,430 anyone here will advance you (81%). Past it every project in hand is halted unfinished and nobody funds new work
+    * EVENT 131: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 266 denarii. Your name is worth less for it (reputation -0.5), and you keep your kn
+r08 yr136 cap-982 started0 spent0 | left 141 | net -102.3 | ppl 0.25/6.0 | emin 0.01
+r09 yr140 cap-1395 started0 spent0 | left 141 | net -126.8 | ppl 0.22/6.0 | emin 0
+r10 yr144 cap-56 started0 spent0 | left 141 | net +38.3 | ppl 0.19/6.0 | emin 0
+    * EVENT 141: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 127 denarii. Your name is worth less for it (reputation -0.4), and you keep your kn
+r11 yr148 cap200 started0 spent0 | left 141 | net +84.4 | ppl 0.13/6.0 | emin 0
+r12 yr152 cap550 started0 spent0 | left 141 | net +111 | ppl 0.08/6.0 | emin 0
+r13 yr156 cap404 started0 spent0 | left 141 | net -1,230 | ppl 2.0/6.0 | emin 0.01
+r14 yr160 cap-1242 started3 spent310 | left 141 | net -136.6 | ppl 0.24/6.0 | emin 0
+    * EVENT 157: CLOSE TO THE LIMIT: you owe 1,682 of the 1,063 anyone here will advance you (158%). Past it every project in hand is halted unfinished and nobody funds new wor
+    * EVENT 157: CREDIT EXHAUSTED: 3 projects halted, unfinished. Nobody will fund new work here for some years
+    * EVENT 157: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 372 denarii. Your name is worth less for it (reputation -0.6), and you keep your kn
+r15 yr164 cap-1817 started0 spent0 | left 141 | net -178.2 | ppl 0.20/6.0 | emin 0
+r16 yr168 cap-113 started0 spent0 | left 141 | net +62.1 | ppl 0.13/6.0 | emin 0
+    * [164 AD | -1817 den | you:2000 hr | sch 0 art 0 | rep 0] >   EVENT 165: Antonine plague: staff -28%
+    * EVENT 167: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 113 denarii. Your name is worth less for it (reputation -0.4), and you keep your kn
+    * HAPPENING NOW: Antonine plague
+    * HAPPENING NOW: Antonine plague
+r17 yr172 cap204 started0 spent0 | left 141 | net +101.5 | ppl 0.08/6.0 | emin 0
+    * [168 AD | -113 den | you:2000 hr | sch 0 art 0 | rep 0] >   EVENT 170: Antonine plague: staff -28%, 20 gone with the trade that stopped
+    * HAPPENING NOW: Antonine plague
+    * HAPPENING NOW: Antonine plague
+r18 yr176 cap476 started0 spent0 | left 141 | net +148.4 | ppl 0.02/6.0 | emin 0
+    * [172 AD | 204 den | you:2000 hr | sch 0 art 0 | rep 0] >   EVENT 174: Antonine plague: staff -28%, 86 gone with the trade that stopped
+    * EVENT 175: Antonine plague: staff -28%, 96 gone with the trade that stopped
+    * HAPPENING NOW: Antonine plague
+    * HAPPENING NOW: Antonine plague
+r19 yr180 cap776 started0 spent0 | left 141 | net +141.7 | ppl 0.03/6.0 | emin 0.01
+    * [176 AD | 476 den | you:2000 hr | sch 0 art 0 | rep 0] >   EVENT 179: Antonine plague: staff -28%, 174 gone with the trade that stopped
+    * HAPPENING NOW: Antonine plague
+    * HAPPENING NOW: Antonine plague
+r20 yr184 cap-385 started4 spent617 | left 140 | net +277.7 | ppl 0/6.0 | emin 0.02
+r21 yr188 cap-672 started0 spent0 | left 140 | net -213.8 | ppl 0.83/6.0 | emin 0.02
+    * EVENT 186: CLOSE TO THE LIMIT: you owe 1,782 of the 1,958 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work
+    * EVENT 187: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 673 denarii. Your name is worth less for it (reputation -6.5), and you keep your kn
+r22 yr192 cap-1018 started0 spent0 | left 140 | net -90 | ppl 0.54/6.0 | emin 0.02
+r23 yr196 cap-1306 started0 spent0 | left 140 | net -82.1 | ppl 0.47/6.0 | emin 0.01
+r24 yr200 cap-1 started0 spent0 | left 140 | net +107.7 | ppl 0.41/6.0 | emin 0.01
+    * [196 AD | -1306 den | you:2000 hr | sch 0 art 0 | rep 0] >   EVENT 197: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 173 denarii. Your name
+r25 yr204 cap427 started0 spent0 | left 140 | net +127.2 | ppl 0.36/6.0 | emin 0.01
+r26 yr208 cap841 started0 spent0 | left 140 | net +145.5 | ppl 0.31/6.0 | emin 0.01
+r27 yr212 cap1234 started0 spent0 | left 140 | net +160.9 | ppl 0.28/6.0 | emin 0.01
+r28 yr216 cap2793 started6 spent978 | left 140 | net +1,466 | ppl 0.73/6.0 | emin 0.06
+r29 yr220 cap3627 started7 spent2231 | left 139 | net +1,878 | ppl 3.2/6.0 | emin 0.24
+r30 yr224 cap7908 started9 spent2894 | left 136 | net +2,248 | ppl 3.0/6.0 | emin 0.63
+r31 yr228 cap5837 started16 spent6295 | left 134 | net -1,767 | ppl 8.6/8.6 | emin 1.6
+r32 yr232 cap-12534 started17 spent4664 | left 132 | net -5,710 | ppl 13.6/13.6 | emin 3.3
+r33 yr236 cap-10423 started0 spent0 | left 132 | net -3,636 | ppl 8.4/8.4 | emin 3.9
+    * EVENT 233: CLOSE TO THE LIMIT: you owe 23,829 of the 25,530 anyone here will advance you (93%). Past it every project in hand is halted unfinished and nobody funds new wo
+    * EVENT 234: CREDIT EXHAUSTED: 3 projects halted, unfinished. Nobody will fund new work here for some years
+    * EVENT 234: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 8,743 denarii. Your name is worth less for it (reputation -12.0), and you keep your
+    * EVENT 235: Third century crisis: a site is sacked - 3.8 of your people gone
+r34 yr240 cap-22181 started0 spent0 | left 132 | net -1,886 | ppl 3.5/6.0 | emin 3.9
+    * [236 AD | -10423 den | you:2000 hr | sch 2 art 3 | rep 60] >   EVENT 236: CLOSE TO THE LIMIT: you owe 14,347 of the 19,966 anyone here will advance you (71%). Past it eve
+r35 yr244 cap-29476 started0 spent0 | left 132 | net -2,129 | ppl 2.9/6.0 | emin 3.7
+r36 yr248 cap-6724 started0 spent0 | left 132 | net -313.2 | ppl 2.5/6.0 | emin 3.1
+    * EVENT 244: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 5,824 denarii. Your name is worth less for it (reputation -12.0), and you keep your
+r37 yr252 cap-7454 started0 spent0 | left 132 | net -316.7 | ppl 2.2/6.0 | emin 2.6
+    * EVENT 251: Third century crisis: a site is sacked - 1.0 of your people gone
+r38 yr256 cap-8258 started0 spent0 | left 132 | net +45.1 | ppl 0.99/6.0 | emin 2.2
+    * [252 AD | -7454 den | you:2000 hr | sch 1 art 0 | rep 30] >   EVENT 253: CLOSE TO THE LIMIT: you owe 8,161 of the 11,627 anyone here will advance you (70%). Past it every
+r39 yr260 cap-9127 started0 spent0 | left 132 | net -286.9 | ppl 0.45/6.0 | emin 1.9
+r40 yr264 cap-3066 started0 spent0 | left 132 | net +325.7 | ppl 0.28/6.0 | emin 1.5
+    * EVENT 262: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 3,416 denarii. Your name is worth less for it (reputation -12.0), and you keep your
+r41 yr268 cap-2655 started0 spent0 | left 132 | net +384.6 | ppl 0.24/6.0 | emin 1.1
+r42 yr272 cap-2328 started0 spent0 | left 132 | net +433.1 | ppl 0.21/6.0 | emin 0.89
+r43 yr276 cap-1994 started0 spent0 | left 132 | net +426.1 | ppl 0.18/6.0 | emin 0.69
+    * EVENT 272: Third century crisis: a site is sacked - 0.1 of your people gone
+r44 yr280 cap-1541 started0 spent0 | left 132 | net +481.9 | ppl 0.16/6.0 | emin 0.54
+r45 yr284 cap-848 started0 spent0 | left 132 | net +558.1 | ppl 0.14/6.0 | emin 0.43
+r46 yr288 cap165 started0 spent0 | left 132 | net +831.7 | ppl 0.07/6.0 | emin 0.34
+r47 yr292 cap2466 started2 spent100 | left 132 | net +1,108 | ppl 0.65/6.0 | emin 0.30
+r48 yr296 cap5185 started14 spent1947 | left 132 | net +1,645 | ppl 1.3/6.0 | emin 0.63
+r49 yr300 cap9277 started6 spent4112 | left 132 | net +1,703 | ppl 2.2/6.0 | emin 1.2
+
+----- run4.log -----
+session rome_100ad_64.json
+path len 142
+r00 yr104 cap774 cmds4 spent239 | left 142 | net +307.5 | ppl 0/6.0 | emin 0.07
+r01 yr108 cap2388 cmds3 spent451 | left 142 | net +950.4 | ppl 0/6.0 | emin 0.19
+r02 yr112 cap4688 cmds11 spent1412 | left 142 | net +1,337 | ppl 0/6.0 | emin 0.71
+r03 yr116 cap6296 cmds11 spent2745 | left 142 | net +2,184 | ppl 3.5/6.0 | emin 1.6
+r04 yr120 cap13304 cmds12 spent3752 | left 142 | net +5,159 | ppl 4.7/6.0 | emin 2.9
+r05 yr124 cap26648 cmds25 spent7958 | left 142 | net +6,251 | ppl 5.0/6.0 | emin 5.7
+r06 yr128 cap33465 cmds22 spent15326 | left 138 | net +6,598 | ppl 4.3/6.0 | emin 7.8
+r07 yr132 cap51252 cmds26 spent11506 | left 135 | net +7,596 | ppl 4.6/6.0 | emin 9.4
+r08 yr136 cap60816 cmds38 spent30214 | left 133 | net +13,782 | ppl 4.9/18.0 | emin 10.7
+r09 yr140 cap126709 cmds13 spent13511 | left 129 | net +22,441 | ppl 7.7/18.0 | emin 11.8
+r10 yr144 cap181910 cmds24 spent63860 | left 123 | net +31,051 | ppl 10.1/18.0 | emin 12.9
+r11 yr148 cap242205 cmds19 spent98563 | left 117 | net +42,150 | ppl 12.3/18.0 | emin 13.8
+r12 yr152 cap365665 cmds21 spent77679 | left 113 | net +50,495 | ppl 14.1/18.0 | emin 14.8
+r13 yr156 cap584325 cmds11 spent12106 | left 110 | net +55,612 | ppl 14.8/18.0 | emin 15.4
+r14 yr160 cap595208 cmds4 spent271461 | left 110 | net -95.7 | ppl 14.6/18.0 | emin 15.6
+r15 yr164 cap753118 cmds0 spent0 | left 109 | net +46,879 | ppl 12.7/33.0 | emin 15.2
+r16 yr168 cap556611 cmds5 spent254229 | left 106 | net +50,334 | ppl 11.8/33.0 | emin 14.8
+r17 yr172 cap625807 cmds8 spent2236 | left 106 | net +44,235 | ppl 11.1/33.0 | emin 14.8
+r18 yr176 cap697959 cmds1 spent0 | left 106 | net +51,753 | ppl 13.1/33.0 | emin 14.4
+r19 yr180 cap849982 cmds1 spent0 | left 106 | net +56,694 | ppl 14.8/33.0 | emin 13.7
+r20 yr184 cap1105361 cmds1 spent0 | left 106 | net +58,483 | ppl 16.3/33.0 | emin 12.9
+r21 yr188 cap1367243 cmds1 spent0 | left 106 | net +60,474 | ppl 17.6/33.0 | emin 12.0
+r22 yr192 cap1354127 cmds1 spent0 | left 106 | net +65,100 | ppl 18.8/33.0 | emin 11.2
+r23 yr196 cap1390047 cmds1 spent0 | left 106 | net +68,380 | ppl 19.7/33.0 | emin 10.4
+r24 yr200 cap1429716 cmds1 spent0 | left 106 | net +71,014 | ppl 20.6/33.0 | emin 9.7
+r25 yr204 cap1473126 cmds1 spent0 | left 106 | net +73,116 | ppl 21.3/33.0 | emin 9.1
+r26 yr208 cap1516330 cmds1 spent0 | left 106 | net +74,787 | ppl 21.9/33.0 | emin 8.6
+r27 yr212 cap1556479 cmds1 spent0 | left 106 | net +76,122 | ppl 22.5/33.0 | emin 8.1
+r28 yr216 cap1594843 cmds1 spent0 | left 106 | net +77,645 | ppl 23.0/33.0 | emin 7.7
+r29 yr220 cap1632989 cmds1 spent0 | left 106 | net +78,613 | ppl 23.4/33.0 | emin 7.3
+r30 yr224 cap1668196 cmds1 spent0 | left 106 | net +79,341 | ppl 23.8/33.0 | emin 7.1
+r31 yr228 cap1429484 cmds1 spent0 | left 106 | net +84,034 | ppl 24.1/33.0 | emin 6.8
+r32 yr232 cap1515071 cmds1 spent0 | left 106 | net +83,651 | ppl 24.4/33.0 | emin 6.6
+r33 yr236 cap1586074 cmds1 spent0 | left 106 | net +57,780 | ppl 24.6/33.0 | emin 6.4
+r34 yr240 cap1548379 cmds1 spent0 | left 106 | net +58,852 | ppl 24.8/33.0 | emin 6.3
+r35 yr244 cap626418 cmds1 spent0 | left 111 | net +52,330 | ppl 25.0/33.0 | emin 6.2
+r36 yr248 cap644671 cmds22 spent110008 | left 107 | net +69,771 | ppl 25.1/33.0 | emin 6.9
+r37 yr252 cap755410 cmds3 spent55828 | left 106 | net +71,657 | ppl 25.2/33.0 | emin 7.7
+r38 yr256 cap392910 cmds1 spent0 | left 110 | net +53,584 | ppl 22.9/33.0 | emin 8.2
+r39 yr260 cap376537 cmds21 spent21366 | left 106 | net +45,524 | ppl 14.0/33.0 | emin 10.0
+r40 yr264 cap496172 cmds4 spent130 | left 106 | net +47,890 | ppl 15.6/33.0 | emin 11.5
+r41 yr268 cap604241 cmds1 spent0 | left 106 | net +50,490 | ppl 17.0/33.0 | emin 12.1
+r42 yr272 cap350430 cmds1 spent0 | left 106 | net +57,959 | ppl 18.2/33.0 | emin 12.1
+r43 yr276 cap515103 cmds1 spent0 | left 106 | net +58,564 | ppl 19.3/33.0 | emin 11.8
+r44 yr280 cap762510 cmds1 spent0 | left 106 | net +57,424 | ppl 20.2/33.0 | emin 11.3
+r45 yr284 cap1004641 cmds1 spent0 | left 106 | net +55,900 | ppl 21.0/33.0 | emin 10.7
+r46 yr288 cap1242021 cmds1 spent0 | left 106 | net +56,025 | ppl 21.7/33.0 | emin 10.1
+r47 yr292 cap1481868 cmds1 spent0 | left 106 | net +56,863 | ppl 22.2/33.0 | emin 9.6
+r48 yr296 cap1725703 cmds1 spent0 | left 106 | net +57,275 | ppl 22.8/33.0 | emin 9.0
+r49 yr300 cap1614535 cmds1 spent0 | left 106 | net +62,903 | ppl 23.2/33.0 | emin 8.5
+r50 yr304 cap1881399 cmds1 spent0 | left 106 | net +63,024 | ppl 23.6/33.0 | emin 8.1
+r51 yr308 cap2140123 cmds1 spent0 | left 106 | net +62,850 | ppl 23.9/33.0 | emin 7.7
+r52 yr312 cap2406131 cmds1 spent0 | left 106 | net +62,536 | ppl 24.2/33.0 | emin 7.4
+r53 yr316 cap2671283 cmds1 spent0 | left 106 | net +62,147 | ppl 24.5/33.0 | emin 7.1
+r54 yr320 cap2936841 cmds1 spent0 | left 106 | net +61,694 | ppl 24.7/33.0 | emin 6.8
+r55 yr324 cap3199306 cmds1 spent0 | left 106 | net +59,412 | ppl 24.9/33.0 | emin 6.6
+r56 yr328 cap3448432 cmds1 spent0 | left 106 | net +56,259 | ppl 25.1/33.0 | emin 6.4
+r57 yr332 cap3339956 cmds1 spent0 | left 106 | net +58,344 | ppl 25.2/33.0 | emin 6.3
+r58 yr336 cap3226673 cmds1 spent0 | left 106 | net +60,488 | ppl 25.3/33.0 | emin 6.2
+r59 yr340 cap3479256 cmds1 spent0 | left 106 | net +57,005 | ppl 25.4/33.0 | emin 6.0
+
+----- run5.log -----
+path len 106
+r00 yr344 cap3701462 cmds2 | left 106 | ppl 28.1/33.0 | emin 6.0 | trained 
+r01 yr348 cap3890766 cmds7 | left 102 | ppl 27.9/33.0 | emin 6.0 | trained 
+r02 yr352 cap3381513 cmds3 | left 101 | ppl 25.9/33.0 | emin 5.9 | trained 
+r03 yr356 cap3575352 cmds3 | left 100 | ppl 25.1/33.0 | emin 5.9 | trained 
+r04 yr360 cap3380543 cmds2 | left 100 | ppl 24.3/33.0 | emin 5.9 | trained 
+r05 yr364 cap3571923 cmds2 | left 100 | ppl 24.6/33.0 | emin 5.8 | trained 
+r06 yr368 cap3771788 cmds2 | left 100 | ppl 24.8/33.0 | emin 5.8 | trained 
+r07 yr372 cap3957223 cmds2 | left 100 | ppl 24.1/33.0 | emin 5.8 | trained 
+r08 yr376 cap3432163 cmds2 | left 100 | ppl 27.8/33.0 | emin 5.7 | trained 
+r09 yr380 cap3594398 cmds2 | left 100 | ppl 25.9/33.0 | emin 5.7 | trained 
+r10 yr384 cap3732803 cmds2 | left 100 | ppl 25.0/33.0 | emin 5.7 | trained 
+r11 yr388 cap3862308 cmds2 | left 100 | ppl 24.3/33.0 | emin 5.7 | trained 
+r12 yr392 cap3982808 cmds2 | left 100 | ppl 24.5/33.0 | emin 5.6 | trained 
+r13 yr396 cap4114934 cmds2 | left 100 | ppl 24.8/33.0 | emin 5.6 | trained 
+r14 yr400 cap3508626 cmds2 | left 100 | ppl 24.1/33.0 | emin 5.6 | trained 
+r15 yr404 cap3664542 cmds2 | left 100 | ppl 24.3/33.0 | emin 5.6 | trained 
+r16 yr408 cap3809715 cmds2 | left 100 | ppl 28.0/33.0 | emin 5.6 | trained 
+r17 yr412 cap3910160 cmds2 | left 100 | ppl 26.1/33.0 | emin 5.5 | trained 
+r18 yr416 cap3525166 cmds2 | left 100 | ppl 24.3/33.0 | emin 5.5 | trained 
+r19 yr420 cap3562083 cmds2 | left 100 | ppl 23.7/33.0 | emin 5.5 | trained 
+r20 yr424 cap3523305 cmds2 | left 100 | ppl 22.4/33.0 | emin 5.5 | trained 
+r21 yr428 cap2916429 cmds2 | left 100 | ppl 22.1/33.0 | emin 5.5 | trained 
+r22 yr432 cap2935119 cmds2 | left 100 | ppl 21.0/33.0 | emin 5.5 | trained 
+r23 yr436 cap1194215 cmds2 | left 103 | ppl 20.2/33.0 | emin 5.5 | trained 
+
+----- run6.log -----
+r00 yr442 cap1255428 cmds18 | left 99 | ppl 22.2 | emin 5.8 | teach chemist,electrician,engineer,optician
+r01 yr445 cap1170586 cmds12 | left 98 | ppl 23.0 | emin 6.8 | teach electrician,engineer,optician
+r02 yr448 cap1301846 cmds22 | left 94 | ppl 22.9 | emin 8.6 | teach engineer,optician
+r03 yr451 cap1431301 cmds18 | left 92 | ppl 22.9 | emin 10.2 | teach optician
+r04 yr454 cap1552421 cmds19 | left 87 | ppl 19.1 | emin 11.6 | teach none
+r05 yr457 cap1630069 cmds17 | left 84 | ppl 16.0 | emin 12.7 | teach none
+r06 yr460 cap1688504 cmds14 | left 78 | ppl 13.5 | emin 13.6 | teach none
+r07 yr463 cap1782219 cmds8 | left 74 | ppl 12.2 | emin 14.2 | teach none
+r08 yr466 cap1845779 cmds10 | left 72 | ppl 10.9 | emin 14.8 | teach none
+r09 yr469 cap1932035 cmds3 | left 70 | ppl 9.8 | emin 15.2 | teach none
+r10 yr472 cap1997272 cmds3 | left 69 | ppl 8.8 | emin 15.4 | teach none
+r11 yr475 cap2018917 cmds4 | left 69 | ppl 7.9 | emin 15.2 | teach none
+r12 yr478 cap1685286 cmds1 | left 68 | ppl 7.1 | emin 14.9 | teach none
+r13 yr481 cap1716523 cmds1 | left 68 | ppl 6.4 | emin 14.4 | teach none
+r14 yr484 cap1739316 cmds1 | left 67 | ppl 5.8 | emin 13.8 | teach none
+r15 yr487 cap1760046 cmds1 | left 66 | ppl 5.2 | emin 13.3 | teach none
+r16 yr490 cap1771185 cmds1 | left 66 | ppl 4.7 | emin 12.7 | teach none
+r17 yr493 cap1774503 cmds1 | left 66 | ppl 4.2 | emin 12.1 | teach none
+r18 yr496 cap1771341 cmds1 | left 66 | ppl 3.8 | emin 11.6 | teach none
+r19 yr499 cap1763803 cmds1 | left 66 | ppl 3.4 | emin 11.0 | teach none
+r20 yr502 cap1752277 cmds1 | left 66 | ppl 3.0 | emin 10.4 | teach none
+r21 yr505 cap1737273 cmds1 | left 66 | ppl 2.7 | emin 9.9 | teach none
+r22 yr508 cap1719137 cmds1 | left 66 | ppl 2.5 | emin 9.5 | teach none
+r23 yr511 cap1698454 cmds1 | left 66 | ppl 2.2 | emin 9.0 | teach none
+r24 yr514 cap1674801 cmds1 | left 66 | ppl 2.0 | emin 8.6 | teach none
+r25 yr517 cap1650204 cmds1 | left 66 | ppl 1.8 | emin 8.3 | teach none
+r26 yr520 cap1623748 cmds1 | left 66 | ppl 1.6 | emin 8.0 | teach none
+r27 yr523 cap1596463 cmds1 | left 66 | ppl 1.4 | emin 7.7 | teach none
+r28 yr526 cap1568032 cmds1 | left 66 | ppl 1.2 | emin 7.4 | teach none
+r29 yr529 cap1538958 cmds1 | left 66 | ppl 1.1 | emin 7.2 | teach none
+r30 yr532 cap1509353 cmds1 | left 66 | ppl 1.0 | emin 7.0 | teach none
+r31 yr535 cap1478936 cmds1 | left 66 | ppl 0.91 | emin 6.8 | teach none
+r32 yr538 cap1140570 cmds1 | left 66 | ppl 0.77 | emin 6.7 | teach none
+r33 yr541 cap429538 cmds1 | left 80 | ppl 0.65 | emin 6.5 | teach none
+r34 yr544 cap404099 cmds12 | left 80 | ppl 0.55 | emin 6.8 | teach none
+r35 yr547 cap328924 cmds3 | left 80 | ppl 0.25 | emin 7.0 | teach none
+r36 yr550 cap326695 cmds1 | left 80 | ppl 0.22 | emin 7.1 | teach none
+    * EVENT 547: HALTED chm_matches: there is nobody here who can do this work (chemist). What you spent is lost
+r37 yr553 cap312158 cmds2 | left 80 | ppl 0.14 | emin 7.2 | teach none
+r38 yr556 cap309086 cmds1 | left 80 | ppl 0.13 | emin 7.1 | teach none
+    * EVENT 553: HALTED chm_matches: there is nobody here who can do this work (chemist). What you spent is lost
+r39 yr559 cap306153 cmds2 | left 80 | ppl 0.12 | emin 7.1 | teach none
+r40 yr562 cap297981 cmds1 | left 80 | ppl 0.10 | emin 7.0 | teach none
+    * EVENT 559: HALTED chm_matches: there is nobody here who can do this work (chemist). What you spent is lost
+r41 yr565 cap295706 cmds2 | left 80 | ppl 0.09 | emin 6.9 | teach none
+r42 yr568 cap293671 cmds1 | left 80 | ppl 0.08 | emin 6.8 | teach none
+    * EVENT 565: HALTED chm_matches: there is nobody here who can do this work (chemist). What you spent is lost
+r43 yr571 cap291390 cmds2 | left 80 | ppl 0.07 | emin 6.7 | teach none
+r44 yr574 cap256183 cmds1 | left 80 | ppl 0.06 | emin 6.6 | teach none
+    * [571 AD | 291390 den | you:2000 hr | sch 0 art 0 | rep 27] >   EVENT 571: HALTED chm_matches: there is nobody here who can do this work (chemist). Wha
+r45 yr577 cap246285 cmds2 | left 80 | ppl 0.05 | emin 6.5 | teach none
+r46 yr580 cap94703 cmds1 | left 95 | ppl 0 | emin 6.1 | teach none
+    * EVENT 577: HALTED chm_matches: there is nobody here who can do this work (chemist). What you spent is lost
+r47 yr583 cap71614 cmds13 | left 94 | ppl 0 | emin 5.8 | teach none
+r48 yr586 cap75981 cmds3 | left 94 | ppl 0 | emin 5.5 | teach none
+r49 yr589 cap79178 cmds1 | left 94 | ppl 0 | emin 5.2 | teach none
+    * [586 AD | 75981 den | you:2000 hr | sch 0 art 0 | rep 46] >   EVENT 586: HALTED hom_matches_friction: there is nobody here who can do this work (chemi
+    * EVENT 586: HALTED chm_matches: there is nobody here who can do this work (chemist). What you spent is lost
+r50 yr592 cap80726 cmds3 | left 94 | ppl 0 | emin 5.0 | teach none
+r51 yr595 cap85088 cmds1 | left 94 | ppl 0 | emin 4.7 | teach none
+    * [592 AD | 80726 den | you:2000 hr | sch 0 art 0 | rep 40] >   EVENT 592: HALTED hom_matches_friction: there is nobody here who can do this work (chemi
+    * EVENT 592: HALTED chm_matches: there is nobody here who can do this work (chemist). What you spent is lost
+r52 yr598 cap89257 cmds3 | left 94 | ppl 0 | emin 4.5 | teach none
+horizon at 598
+
+----- run7.log -----
+session rome_100ad_65.json
+r00 yr104 cap1650 cmds30 | left 138 | ppl 5.2/6.0 | emin 1.2 | teach chemist,electrician,engineer,m
+r01 yr108 cap4242 cmds1 | left 137 | ppl 4.5/6.0 | emin 2.0 | teach chemist,electrician,engineer,m
+r02 yr112 cap4546 cmds12 | left 134 | ppl 4.8/6.0 | emin 3.0 | teach chemist,electrician,engineer,m
+r03 yr116 cap5495 cmds9 | left 133 | ppl 5.0/6.0 | emin 4.0 | teach chemist,electrician,engineer,m
+r04 yr120 cap8449 cmds8 | left 132 | ppl 4.3/6.0 | emin 5.1 | teach chemist,electrician,engineer,m
+r05 yr124 cap6671 cmds14 | left 132 | ppl 4.6/6.0 | emin 6.7 | teach chemist,electrician,engineer,m
+r06 yr128 cap3024 cmds15 | left 131 | ppl 4.9/6.0 | emin 8.3 | teach chemist,electrician,engineer,m
+r07 yr132 cap2717 cmds4 | left 130 | ppl 5.1/6.0 | emin 9.1 | teach chemist,electrician,engineer,m
+r08 yr136 cap4454 cmds2 | left 130 | ppl 4.4/6.0 | emin 9.4 | teach chemist,electrician,engineer,m
+r09 yr140 cap5960 cmds1 | left 130 | ppl 4.7/6.0 | emin 9.1 | teach chemist,electrician,engineer,m
+r10 yr144 cap5837 cmds1 | left 130 | ppl 5.0/6.0 | emin 8.5 | teach chemist,electrician,engineer,m
+r11 yr148 cap4010 cmds1 | left 130 | ppl 5.2/6.0 | emin 7.7 | teach chemist,electrician,engineer,m
+r12 yr152 cap2937 cmds0 | left 130 | ppl 4.5/6.0 | emin 6.8 | teach chemist,electrician,engineer,m
+r13 yr156 cap25 cmds1 | left 130 | ppl 4.8/6.0 | emin 6.0 | teach chemist,electrician,engineer,m
+r14 yr160 cap-876 cmds0 | left 130 | ppl 4.1/6.0 | emin 5.2 | teach chemist,electrician,engineer,m
+r15 yr164 cap-906 cmds0 | left 130 | ppl 3.6/6.0 | emin 4.4 | teach chemist,electrician,engineer,m
+r16 yr168 cap1002 cmds0 | left 130 | ppl 1.8/6.0 | emin 3.8 | teach chemist,electrician,engineer,m
+r17 yr172 cap4148 cmds0 | left 130 | ppl 0.90/6.0 | emin 3.2 | teach chemist,electrician,engineer,m
+r18 yr176 cap14512 cmds2 | left 130 | ppl 3.9/6.0 | emin 2.8 | teach chemist,electrician,engineer,m
+r19 yr180 cap18695 cmds4 | left 129 | ppl 3.0/13.6 | emin 2.4 | teach chemist,electrician,engineer,m
+r20 yr184 cap48317 cmds5 | left 128 | ppl 6.9/19.9 | emin 2.3 | teach chemist,electrician,engineer,m
+r21 yr188 cap91904 cmds35 | left 123 | ppl 13.1/38.3 | emin 4.2 | teach chemist,electrician,engineer,m
+r22 yr192 cap140117 cmds11 | left 119 | ppl 20.2/58.3 | emin 6.7 | teach electrician,engineer,machinist
+r23 yr196 cap174883 cmds14 | left 113 | ppl 26.4/69.7 | emin 8.6 | teach engineer,machinist,optician
+r24 yr200 cap305516 cmds36 | left 110 | ppl 31.8/74.8 | emin 10.6 | teach machinist,optician
+r25 yr204 cap514755 cmds39 | left 104 | ppl 36.4/87.3 | emin 12.2 | teach optician
+r26 yr208 cap789082 cmds23 | left 103 | ppl 38.5/91.8 | emin 13.4 | teach none
+r27 yr212 cap1206992 cmds36 | left 96 | ppl 40.4/109.1 | emin 14.4 | teach none
+r28 yr216 cap1658848 cmds23 | left 91 | ppl 41.9/110.3 | emin 15.0 | teach none
+r29 yr220 cap2367833 cmds30 | left 85 | ppl 43.3/110.9 | emin 15.6 | teach none
+r30 yr224 cap2671306 cmds16 | left 78 | ppl 44.5/111.2 | emin 16.0 | teach none
+r31 yr228 cap3426209 cmds7 | left 77 | ppl 45.5/111.4 | emin 16.2 | teach none
+r32 yr232 cap4104291 cmds7 | left 76 | ppl 46.4/111.4 | emin 16.3 | teach none
+r33 yr236 cap4700483 cmds5 | left 76 | ppl 47.2/111.5 | emin 16.0 | teach none
+r34 yr240 cap1972532 cmds3 | left 81 | ppl 47.9/92.1 | emin 15.4 | teach none
+r35 yr244 cap2218518 cmds31 | left 78 | ppl 48.4/103.5 | emin 15.8 | teach none
+r36 yr248 cap1139972 cmds3 | left 83 | ppl 48.9/94.5 | emin 15.8 | teach none
+r37 yr252 cap873610 cmds29 | left 81 | ppl 46.0/95.9 | emin 16.2 | teach none
+r38 yr256 cap1360180 cmds5 | left 80 | ppl 37.8/112.9 | emin 16.4 | teach none
+r39 yr260 cap712602 cmds3 | left 80 | ppl 32.1/105.8 | emin 16.1 | teach none
+r40 yr264 cap617125 cmds3 | left 80 | ppl 30.1/106.6 | emin 15.5 | teach none
+r41 yr268 cap842013 cmds3 | left 80 | ppl 33.0/111.0 | emin 14.7 | teach none
+r42 yr272 cap460124 cmds3 | left 80 | ppl 35.6/105.9 | emin 13.9 | teach none
+r43 yr276 cap658116 cmds3 | left 84 | ppl 37.8/97.6 | emin 13.0 | teach none
+r44 yr280 cap424310 cmds28 | left 88 | ppl 39.6/94.4 | emin 13.4 | teach none
+r45 yr284 cap541359 cmds29 | left 88 | ppl 41.3/96.2 | emin 14.3 | teach none
+r46 yr288 cap1177011 cmds31 | left 83 | ppl 42.7/103.7 | emin 15.0 | teach none
+r47 yr292 cap1950375 cmds30 | left 83 | ppl 43.9/107.5 | emin 15.2 | teach none
+r48 yr296 cap2727610 cmds30 | left 82 | ppl 45.0/121.5 | emin 15.0 | teach none
+r49 yr300 cap3512750 cmds31 | left 82 | ppl 46.0/122.5 | emin 14.5 | teach none
+r50 yr304 cap4304930 cmds31 | left 82 | ppl 46.8/123.0 | emin 13.8 | teach none
+r51 yr308 cap5078968 cmds31 | left 82 | ppl 47.5/123.2 | emin 13.1 | teach none
+r52 yr312 cap5831789 cmds31 | left 82 | ppl 48.1/123.4 | emin 12.3 | teach none
+r53 yr316 cap5446600 cmds31 | left 82 | ppl 48.7/123.4 | emin 11.6 | teach none
+r54 yr320 cap6225787 cmds31 | left 82 | ppl 49.2/123.5 | emin 10.9 | teach none
+r55 yr324 cap6968345 cmds32 | left 82 | ppl 49.6/123.5 | emin 10.3 | teach none
+r56 yr328 cap7671855 cmds32 | left 82 | ppl 49.9/123.5 | emin 9.8 | teach none
+r57 yr332 cap8343896 cmds31 | left 82 | ppl 50.2/123.5 | emin 9.3 | teach none
+r58 yr336 cap8979650 cmds31 | left 82 | ppl 50.5/123.5 | emin 8.9 | teach none
+r59 yr340 cap9582596 cmds31 | left 82 | ppl 50.7/123.5 | emin 8.5 | teach none
+r60 yr344 cap8418674 cmds31 | left 82 | ppl 50.9/123.5 | emin 8.2 | teach none
+r61 yr348 cap8211443 cmds31 | left 82 | ppl 51.1/123.5 | emin 7.9 | teach none
+r62 yr352 cap8868498 cmds31 | left 82 | ppl 51.2/123.5 | emin 7.6 | teach none
+r63 yr356 cap9488798 cmds31 | left 82 | ppl 51.4/123.5 | emin 7.4 | teach none
+r64 yr360 cap10075436 cmds31 | left 82 | ppl 51.5/123.5 | emin 7.2 | teach none
+r65 yr364 cap10627483 cmds31 | left 82 | ppl 51.6/123.5 | emin 7.0 | teach none
+r66 yr368 cap11150123 cmds31 | left 82 | ppl 51.7/123.5 | emin 6.8 | teach none
+r67 yr372 cap10508004 cmds31 | left 82 | ppl 51.8/123.5 | emin 6.7 | teach none
+r68 yr376 cap11039937 cmds31 | left 82 | ppl 51.8/123.5 | emin 6.6 | teach none
+r69 yr380 cap9563441 cmds31 | left 82 | ppl 51.9/123.5 | emin 6.5 | teach none
+r70 yr384 cap10076940 cmds31 | left 82 | ppl 51.9/123.5 | emin 6.4 | teach none
+r71 yr388 cap9531804 cmds31 | left 82 | ppl 52.0/123.5 | emin 6.3 | teach none
+r72 yr392 cap10048189 cmds31 | left 82 | ppl 52/123.5 | emin 6.3 | teach none
+r73 yr396 cap9508400 cmds31 | left 82 | ppl 52.0/123.5 | emin 6.2 | teach none
+r74 yr400 cap10026984 cmds31 | left 82 | ppl 52.0/123.5 | emin 6.2 | teach none
+r75 yr404 cap7045873 cmds31 | left 82 | ppl 52.1/123.5 | emin 6.2 | teach none
+r76 yr408 cap3131769 cmds31 | left 89 | ppl 50.8/101.3 | emin 6.1 | teach none
+r77 yr412 cap1491738 cmds38 | left 90 | ppl 49.8/88.5 | emin 6.5 | teach none
+r78 yr416 cap1735365 cmds38 | left 85 | ppl 47.7/100.8 | emin 8.0 | teach none
+r79 yr420 cap2399283 cmds37 | left 83 | ppl 47.1/105.5 | emin 9.3 | teach none
+r80 yr424 cap3048467 cmds34 | left 82 | ppl 45.5/119.4 | emin 10.1 | teach none
+r81 yr428 cap3691428 cmds35 | left 82 | ppl 45.2/120.9 | emin 10.6 | teach none
+r82 yr432 cap4285822 cmds35 | left 82 | ppl 45.0/121.4 | emin 10.7 | teach none
+r83 yr436 cap4702143 cmds35 | left 82 | ppl 42.7/120.7 | emin 10.6 | teach none
+r84 yr440 cap5199601 cmds35 | left 82 | ppl 42.9/121.5 | emin 10.4 | teach none
+r85 yr444 cap5745587 cmds35 | left 82 | ppl 44.1/122.5 | emin 10.0 | teach none
+r86 yr448 cap6182685 cmds35 | left 82 | ppl 44.1/122.3 | emin 9.6 | teach none
+r87 yr452 cap6586605 cmds35 | left 82 | ppl 44.0/122.5 | emin 9.2 | teach none
+r88 yr456 cap6963245 cmds35 | left 82 | ppl 44.0/122.2 | emin 8.8 | teach none
+r89 yr460 cap7423372 cmds35 | left 82 | ppl 45.1/122.8 | emin 8.5 | teach none
+
+----- run8.log -----
+r00 yr467 cap8344403 starts6 | left 76 | ppl 88.1
+r01 yr471 cap9188756 starts9 | left 70 | ppl 104.1
+r02 yr475 cap9247956 starts4 | left 64 | ppl 104.2
+r03 yr479 cap6649772 starts6 | left 63 | ppl 104.2
+r04 yr483 cap5287059 starts0 | left 56 | ppl 118.1
+r05 yr487 cap4702592 starts3 | left 56 | ppl 130.2
+r06 yr491 cap4094256 starts0 | left 55 | ppl 140.6
+r07 yr495 cap3513521 starts1 | left 53 | ppl 135.8
+r08 yr499 cap3070114 starts1 | left 51 | ppl 138.6
+r09 yr503 cap2815567 starts2 | left 50 | ppl 141
+r10 yr507 cap2552225 starts0 | left 50 | ppl 136.2
+r11 yr511 cap2323731 starts0 | left 50 | ppl 138.9
+r12 yr515 cap2287000 starts0 | left 50 | ppl 141.2
+r13 yr519 cap2214630 starts0 | left 50 | ppl 136.4
+r14 yr523 cap2292126 starts0 | left 50 | ppl 139.1
+r15 yr527 cap2408030 starts0 | left 50 | ppl 141.4
+r16 yr531 cap2479163 starts0 | left 49 | ppl 136.5
+r17 yr535 cap2639674 starts1 | left 48 | ppl 146.1
+r18 yr539 cap2393604 starts2 | left 46 | ppl 149.9
+r19 yr543 cap2002323 starts2 | left 44 | ppl 148.6
+r20 yr547 cap1663896 starts2 | left 42 | ppl 147.5
+r21 yr551 cap1326269 starts1 | left 41 | ppl 142.3
+r22 yr555 cap1062312 starts0 | left 41 | ppl 146.7
+r23 yr559 cap891581 starts0 | left 41 | ppl 150.4
+r24 yr563 cap625089 starts0 | left 41 | ppl 144.6
+r25 yr567 cap468679 starts0 | left 41 | ppl 140.0
+r26 yr571 cap334432 starts0 | left 41 | ppl 144.8
+r27 yr575 cap249369 starts0 | left 41 | ppl 144.3
+r28 yr579 cap156129 starts0 | left 41 | ppl 148.3
+r29 yr583 cap103253 starts0 | left 41 | ppl 151.7
+r30 yr587 cap65172 starts0 | left 41 | ppl 150.0
+r31 yr591 cap107410 starts0 | left 41 | ppl 153.2
+r32 yr595 cap1154564 starts0 | left 41 | ppl 155.9
+r33 yr599 cap840310 starts0 | left 41 | ppl 153.5
+horizon at 599
+
+----- run9.log -----
+session rome_100ad_66.json
+r00 yr104 cap4321 starts44 | left 138 | ppl 5.2 | hrs 2,000
+r01 yr108 cap12721 starts8 | left 135 | ppl 4.5 | hrs 2,000
+r02 yr112 cap20989 starts10 | left 133 | ppl 3.9 | hrs 2,000
+r03 yr116 cap20955 starts25 | left 130 | ppl 10.5 | hrs 2,000
+r04 yr120 cap13335 starts26 | left 125 | ppl 11.1 | hrs 2,000
+r05 yr124 cap29158 starts10 | left 123 | ppl 9.6 | hrs 2,000
+r06 yr128 cap59203 starts47 | left 120 | ppl 15.4 | hrs 2,000
+r07 yr132 cap157443 starts34 | left 117 | ppl 25.7 | hrs 2,000
+r08 yr136 cap393759 starts55 | left 111 | ppl 45.1 | hrs 3,366
+r09 yr140 cap695993 starts51 | left 107 | ppl 54.7 | hrs 4,461
+r10 yr144 cap1213371 starts56 | left 98 | ppl 68.2 | hrs 5,304
+r11 yr148 cap2375544 starts50 | left 93 | ppl 74.8 | hrs 5,734
+r12 yr152 cap3630293 starts48 | left 86 | ppl 90.9 | hrs 5,953
+r13 yr156 cap5353712 starts39 | left 80 | ppl 94.4 | hrs 6,064
+r14 yr160 cap7153898 starts25 | left 77 | ppl 92.3 | hrs 6,121
+r15 yr164 cap7540241 starts21 | left 76 | ppl 95.6 | hrs 6,150
+r16 yr168 cap8892536 starts18 | left 76 | ppl 86.9 | hrs 5,879
+r17 yr172 cap9709410 starts16 | left 75 | ppl 78.9 | hrs 5,681
+r18 yr176 cap9923208 starts18 | left 75 | ppl 72.1 | hrs 5,311
+r19 yr180 cap10563631 starts16 | left 73 | ppl 76.8 | hrs 5,430
+r20 yr184 cap11665317 starts17 | left 73 | ppl 91.1 | hrs 5,651
+r21 yr188 cap13289923 starts17 | left 72 | ppl 99.8 | hrs 5,910
+r22 yr192 cap11900344 starts17 | left 72 | ppl 102.1 | hrs 6,043
+r23 yr196 cap12318751 starts16 | left 71 | ppl 104.2 | hrs 6,110
+r24 yr200 cap12724417 starts16 | left 71 | ppl 106.0 | hrs 6,145
+r25 yr204 cap12998995 starts16 | left 71 | ppl 102.2 | hrs 6,162
+r26 yr208 cap13260492 starts18 | left 71 | ppl 104.2 | hrs 6,171
+r27 yr212 cap11290913 starts18 | left 71 | ppl 106 | hrs 6,176
+r28 yr216 cap11789014 starts17 | left 71 | ppl 102.3 | hrs 6,178
+r29 yr220 cap12240044 starts17 | left 71 | ppl 104.3 | hrs 6,179
+r30 yr224 cap12652295 starts18 | left 71 | ppl 106.0 | hrs 6,180
+r31 yr228 cap12941182 starts18 | left 71 | ppl 102.3 | hrs 6,180
+r32 yr232 cap13214944 starts18 | left 71 | ppl 104.3 | hrs 6,180
+r33 yr236 cap13480295 starts17 | left 71 | ppl 106.1 | hrs 6,181
+r34 yr240 cap5502027 starts17 | left 76 | ppl 102.4 | hrs 4,944
+r35 yr244 cap6214769 starts45 | left 73 | ppl 94 | hrs 5,550
+r36 yr248 cap6361595 starts32 | left 71 | ppl 102.3 | hrs 5,859
+r37 yr252 cap2936818 starts29 | left 71 | ppl 104.3 | hrs 5,029
+r38 yr256 cap3984392 starts29 | left 71 | ppl 89.1 | hrs 5,429
+r39 yr260 cap4647564 starts29 | left 71 | ppl 85.1 | hrs 5,400
+r40 yr264 cap5157225 starts29 | left 71 | ppl 86.5 | hrs 5,431
+r41 yr268 cap634775 starts31 | left 87 | ppl 101.1 | hrs 3,452
+r42 yr272 cap1118826 starts57 | left 80 | ppl 87.6 | hrs 4,107
+r43 yr276 cap734081 starts53 | left 84 | ppl 76 | hrs 4,257
+r44 yr280 cap562789 starts55 | left 86 | ppl 65.9 | hrs 4,080
+r45 yr284 cap1405357 starts55 | left 81 | ppl 78.0 | hrs 5,110
+r46 yr288 cap2565165 starts49 | left 80 | ppl 88.4 | hrs 5,635
+r47 yr292 cap3780584 starts50 | left 80 | ppl 102.7 | hrs 5,902
+r48 yr296 cap5015300 starts49 | left 79 | ppl 104.7 | hrs 6,039
+r49 yr300 cap6227926 starts49 | left 79 | ppl 101.2 | hrs 6,108
+r50 yr304 cap7436202 starts49 | left 79 | ppl 103.3 | hrs 6,144
+r51 yr308 cap8623802 starts49 | left 79 | ppl 105.2 | hrs 6,162
+r52 yr312 cap9801717 starts48 | left 79 | ppl 106.9 | hrs 6,171
+r53 yr316 cap9020524 starts48 | left 79 | ppl 103.1 | hrs 6,176
+r54 yr320 cap10200156 starts48 | left 79 | ppl 105.0 | hrs 6,178
+r55 yr324 cap11330258 starts48 | left 79 | ppl 106.7 | hrs 6,179
+r56 yr328 cap12355531 starts48 | left 79 | ppl 102.9 | hrs 6,180
+r57 yr332 cap13337099 starts48 | left 79 | ppl 104.8 | hrs 6,180
+r58 yr336 cap14280135 starts48 | left 79 | ppl 106.5 | hrs 6,180
+r59 yr340 cap15131362 starts48 | left 79 | ppl 102.8 | hrs 6,181
+r60 yr344 cap15915226 starts48 | left 79 | ppl 104.7 | hrs 6,181
+r61 yr348 cap13772220 starts49 | left 79 | ppl 106.4 | hrs 6,181
+r62 yr352 cap14682028 starts49 | left 79 | ppl 102.7 | hrs 6,181
+r63 yr356 cap15550996 starts49 | left 79 | ppl 104.7 | hrs 6,181
+r64 yr360 cap16392006 starts49 | left 79 | ppl 106.4 | hrs 6,181
+r65 yr364 cap17133221 starts49 | left 79 | ppl 102.7 | hrs 6,181
+r66 yr368 cap17841429 starts49 | left 79 | ppl 104.6 | hrs 6,181
+r67 yr372 cap13745716 starts49 | left 79 | ppl 106.3 | hrs 6,181
+r68 yr376 cap14636567 starts49 | left 79 | ppl 102.6 | hrs 6,181
+r69 yr380 cap6476006 starts49 | left 83 | ppl 104.6 | hrs 5,136
+r70 yr384 cap3207129 starts52 | left 82 | ppl 90.7 | hrs 4,952
+r71 yr388 cap4248763 starts49 | left 81 | ppl 83.9 | hrs 5,554
+r72 yr392 cap5419938 starts49 | left 80 | ppl 98.7 | hrs 5,861
+r73 yr396 cap6554266 starts48 | left 80 | ppl 101.2 | hrs 6,018
+r74 yr400 cap3535018 starts48 | left 85 | ppl 103.4 | hrs 5,244
+r75 yr404 cap4534098 starts51 | left 82 | ppl 100.1 | hrs 5,703
+r76 yr408 cap5496107 starts50 | left 80 | ppl 97.4 | hrs 5,762
+r77 yr412 cap6232902 starts48 | left 80 | ppl 92.9 | hrs 5,765
+r78 yr416 cap6896689 starts48 | left 80 | ppl 94.1 | hrs 5,767
+r79 yr420 cap7701677 starts48 | left 80 | ppl 99.9 | hrs 5,888
+r80 yr424 cap8373379 starts50 | left 79 | ppl 97.3 | hrs 5,865
+r81 yr428 cap8716633 starts49 | left 79 | ppl 90.5 | hrs 5,720
+r82 yr432 cap9311376 starts49 | left 79 | ppl 94.5 | hrs 5,824
+r83 yr436 cap10152020 starts49 | left 79 | ppl 102.8 | hrs 5,999
+
+----- run10.log (corrected hiring) -----
+r00 yr440 cap10712426 starts43 | left 75 | ppl 103.0
+r01 yr444 cap4442172 starts46 | left 80 | ppl 100.7
+r02 yr448 cap5237802 starts43 | left 74 | ppl 93.6
+r03 yr452 cap6049884 starts44 | left 72 | ppl 97.8
+r04 yr456 cap6108654 starts44 | left 68 | ppl 98.0
+r05 yr460 cap7031303 starts43 | left 64 | ppl 104.1
+r06 yr464 cap6681913 starts42 | left 62 | ppl 102.4
+r07 yr468 cap7859451 starts41 | left 61 | ppl 131.3
+r08 yr472 cap9002267 starts41 | left 61 | ppl 140.8
+r09 yr476 cap10179495 starts40 | left 59 | ppl 141.1
+r10 yr480 cap11309857 starts41 | left 58 | ppl 141.5
+r11 yr484 cap10365833 starts40 | left 58 | ppl 140.9
+r12 yr488 cap11486656 starts40 | left 58 | ppl 141.2
+r13 yr492 cap10370990 starts40 | left 58 | ppl 141.6
+r14 yr496 cap11509246 starts40 | left 58 | ppl 141.0
+r15 yr500 cap12631558 starts40 | left 58 | ppl 141.3
+r16 yr504 cap13745965 starts40 | left 58 | ppl 141.6
+r17 yr508 cap14858565 starts40 | left 58 | ppl 141.0
+r18 yr512 cap14519119 starts40 | left 58 | ppl 141.3
+r19 yr516 cap15701604 starts40 | left 58 | ppl 141.7
+r20 yr520 cap16869369 starts40 | left 58 | ppl 141.0
+r21 yr524 cap18006771 starts40 | left 58 | ppl 141.4
+r22 yr528 cap19079984 starts40 | left 58 | ppl 141.7
+r23 yr532 cap20084335 starts40 | left 58 | ppl 141.1
+r24 yr536 cap21037908 starts40 | left 58 | ppl 141.4
+r25 yr540 cap8957761 starts40 | left 68 | ppl 137.5
+r26 yr544 cap6606309 starts42 | left 67 | ppl 130.9
+r27 yr548 cap2851182 starts40 | left 67 | ppl 123.9
+r28 yr552 cap3887283 starts40 | left 67 | ppl 121.6
+r29 yr556 cap3525125 starts40 | left 67 | ppl 130.1
+r30 yr560 cap3811378 starts40 | left 67 | ppl 133.1
+r31 yr564 cap3710187 starts40 | left 66 | ppl 126.9
+r32 yr568 cap4996544 starts40 | left 66 | ppl 133.8
+r33 yr572 cap5337867 starts40 | left 66 | ppl 127.5
+r34 yr576 cap6546621 starts40 | left 66 | ppl 138.3
+r35 yr580 cap7687456 starts40 | left 66 | ppl 139.8
+r36 yr584 cap8605372 starts40 | left 66 | ppl 136.2
+r37 yr588 cap9290986 starts40 | left 66 | ppl 132.5
+r38 yr592 cap4705953 starts40 | left 66 | ppl 135.1
+r39 yr596 cap5713938 starts40 | left 66 | ppl 126.7
+r40 yr600 cap3320623 starts40 | left 66 | ppl 128.8
+horizon at 600

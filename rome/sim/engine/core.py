@@ -708,7 +708,21 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         #     model never had to think about at all.
         self.commission_mines()
         thr = self.resource_throttle()
-        if (thr < 0.9 and self.capital > 3000
+        # THE GATE WAS THE DEADLOCK. `capital > 3000` was meant to stop this
+        # spending a poor household's last coin, and instead it made charcoal
+        # a wall nobody in arrears could ever climb: no woodland, so the
+        # furnaces run at a fraction, so nothing is built, so no money, so
+        # still no woodland. An England run measured 521 charcoal-short years
+        # out of 700, ended on 31 technologies with 71 hectares of coppice and
+        # -6,332 in hand, and settled its debts twenty-eight times.
+        #
+        # Coppice is the cheapest thing in the tree and the one that decides
+        # whether a furnace runs at all, so what it is really gated on is
+        # whether you can raise the price of some, which is what
+        # spending_power says. Below that the branch does nothing anyway,
+        # because buy_forest refuses what you cannot pay for.
+        _can_raise = self.spending_power("buy")
+        if (thr < 0.9 and _can_raise > self.FOREST_COST_PER_HA * self.price_index
                 and (self.policy.get("auto_mine", not self.manual)
                      or self.policy.get("auto_forest", not self.manual))):
             # Charcoal is GROWN, so the answer is woodland. Everything else in
@@ -718,7 +732,16 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # showed 1,669 shortage-years in a 395 year run.
             if self.binding == "charcoal":
                 if self.policy.get("auto_forest", not self.manual):
-                    self.buy_forest(min(400.0, self.capital / 900.0))
+                    # SIZED FROM THE SHORTFALL, like the mine branch below,
+                    # rather than from a flat share of cash. A tenth of a
+                    # denarius of capital bought a ten-thousandth of a hectare
+                    # while the demand was measured in hundreds of tonnes.
+                    _need_t = (self.annual_material_demand().get("charcoal_kg", 0.0)
+                               / 1000.0) - self.forest_ha * self.CHARCOAL_PER_HA
+                    _want_ha = max(0.0, _need_t) / max(self.CHARCOAL_PER_HA, 1e-9)
+                    _afford_ha = (_can_raise * 0.35
+                                  / (self.FOREST_COST_PER_HA * self.price_index))
+                    self.buy_forest(min(400.0, _want_ha, _afford_ha))
             elif (self.binding in self.MINE_CAPEX_PER_T_YR
                     and self.policy.get("auto_mine", not self.manual)):
                 # Size the mine from ALL the material keys that feed this

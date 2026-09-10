@@ -238,15 +238,27 @@ class ProjectsMixin:
         staff and the money available. Default ON for the optimizer and OFF
         for a player, like every other automation in this game."""
         opened = []
+        # BEST MARGIN FOR THE MONEY IT TIES UP, not best margin outright. When
+        # what you can raise is the binding constraint - which is exactly when
+        # this matters - a 400-a-year shop that opens for 60 is worth more than
+        # a 3,200-a-year works you cannot afford at all.
         cands = sorted((k for k in self.done
                         if self.is_venture(k) and k not in self.operating
                         and self.nodes[k]["rev"] > self.nodes[k]["up"]),
-                       key=lambda k: -(self.nodes[k]["rev"] - self.nodes[k]["up"]))
+                       key=lambda k: -((self.nodes[k]["rev"] - self.nodes[k]["up"])
+                                       / max(1.0, self.venture_capex(k))))
         blocked = None
         for k in cands:
-            if self.capital <= 0:
-                blocked = blocked or (cands[0], "you have no money to open it with")
-                break
+            # NO SECOND, STRICTER GATE. This broke out the moment capital went
+            # negative, so a household in arrears could never open anything -
+            # and opening a concern is the only way to stop being in arrears.
+            # An England run went into the red in its first year, logged
+            # "tex_horizontal_loom would earn 400 a year against 30 of upkeep
+            # and is still shut: you have no money to open it with" for a
+            # century, and settled its debts twenty-eight times over seven
+            # hundred years. open_venture already refuses what you cannot
+            # raise, and a lender will advance against a shop with stock in it
+            # as readily as against half-built work.
             ok, why = self.open_venture(k)
             if ok:
                 opened.append(k)
