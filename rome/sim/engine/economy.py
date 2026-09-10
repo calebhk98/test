@@ -1091,10 +1091,15 @@ class EconomyMixin:
         return sum(self.mine_capacity.get(m, 0.0) * self.MINE_OPEX_PER_T.get(m, 0.0)
                    for m in self.mine_capacity) * self.price_index
 
+    # ~1 iugerum of woodland per 0.25 ha. Named so that `quote forest` and the
+    # purchase itself cannot drift apart: a break tester spent 68% of their
+    # capital on coppice with no way to ask the price first.
+    FOREST_COST_PER_HA = 250.0
+
     def buy_forest(self, ha):
         """Coppice woodland, bought outright. The cheapest thing in the tree that
         nobody thinks to buy, and the one that decides whether a furnace runs."""
-        cost = ha * 250.0 * self.price_index      # ~1 iugerum of woodland per 0.25 ha
+        cost = ha * self.FOREST_COST_PER_HA * self.price_index
         if cost > self.capital:
             return 0.0
         self.capital -= cost

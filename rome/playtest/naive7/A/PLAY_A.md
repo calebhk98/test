@@ -113,3 +113,76 @@ master 500, scholar 625.
 artisan to satisfy the "1 artisan" requirement of many projects at once, not to
 be consumed per project.
 
+### 103-107: compounding, failures, and staff as a hidden ceiling
+
+Working the loop (start what I can afford → dump leftover hours into
+`work scholar` → `step 1`) took me from 400 den to ~2,000 den/turn throughput by
+107. Built by 107: horizontal loom, indigo, hopper wagon, units_standards,
+horse_collar, scientific_method, arithmetic_positional (7 of my own).
+
+Things that surprised me:
+
+- **Projects fail and auto-retry.** scientific_method failed once (20% risk),
+  identity_cover failed once (5% risk, and it ate 632 den). The message is clear
+  and the retry is automatic, which is merciful. But a 5% risk costing 632 den
+  is a big variance spike for an early player; I lost about a third of a year's
+  income to one roll.
+- **`open` costs money too**, roughly a year of upkeep, and some things earn
+  literally nothing and only cost: units_standards is 0 earn / 30 upkeep,
+  scientific_method 0 earn / 100 upkeep. I opened them anyway on the theory that
+  a foundation must be *running* to count as a prerequisite. **I do not actually
+  know whether that is true** — nothing in the game says whether a prerequisite
+  must be built or built-and-open. That is the biggest piece of missing
+  information so far.
+- **Staff is the real ceiling, and it is invisible until you look.** `ventures`
+  has a line "free to put behind something new: 1 scholars, 0.40 craftsmen".
+  Running concerns *consume* craftsmen continuously (horse_collar 1, hopper
+  wagon 1). With 0.84 artisans and 2 craftsman-slots already committed I am
+  oversubscribed and did not notice for two turns. `state` shows headcount but
+  not commitment; only `ventures` shows commitment.
+- **Staff decays.** 1 artisan hired became 0.96, then 0.93, 0.87, 0.84 — 3.5%/yr
+  attrition. The explanation of fractional FTEs is one of the better bits of
+  writing in the game, but it means "hire 1" is really "hire 1 and top up
+  forever".
+
+### 108-112: the tree opens, and I overspend
+
+Finishing the four foundations (units_standards, scientific_method,
+arithmetic_positional, identity_cover) jumped `available` from 205 to 264 to 279.
+That is the clearest signal in the game that the "MOST RESTS ON THESE" hint is
+real, and it paid off exactly as advertised.
+
+Newly visible gates, and they are good ones:
+- **`patron_local`** (1,200 den). A whole family of agricultural and tool items
+  was listed as "the state is wary of this (state interest -0.6); get at least a
+  local patron first". So political cover is a literal prerequisite class, not
+  flavour. I like this a lot — it is the Rome blurb ("an elite that despises
+  manual work") turned into a mechanic.
+- **`atomic_theory`** — "needs 2 trained scholars, you have 1.0 (you are one of
+  them)". The game then *told me how to fix it*: hire scholar 2, or build
+  school_founded. That is the single most helpful error message I have seen.
+
+Mistake I made: I hired 2 scholars (625/yr each) at the same time as starting a
+1,200 den project, and went from +900/yr to **-710/yr and 886 den in debt** in
+one turn. The game let me, warned me nowhere, and charged 11% on arrears. In
+fairness `money` shows it plainly; I just did not look before committing.
+
+I dug out with shipbuilding: rope walk, mast stepping, caulking, carvel and
+clinker planking — all cheap (200-670 den), all 300-900 den/yr. Revenue went
+2,725 → 4,511/yr, net +1,474/yr.
+
+**Expectation vs reality on upkeep:** I now think opening a zero-revenue
+foundation is a mistake. `why identity_cover` shows STATUS: DONE, and prereqs
+elsewhere are phrased as "missing prerequisites", never "not opened". So DONE is
+almost certainly what counts, and the 100/yr I pay to keep scientific_method
+"running" is probably wasted. The game never says either way. I am leaving
+identity_cover, patron_local, algebra and statistics **unopened** on that theory.
+
+Also noticed: **`auto_open` did not fire while I was in arrears.** Sensible, but
+undocumented — the policy text says it opens "concerns that plainly pay for
+themselves" with no mention that being broke disables it.
+
+**Annoyance:** every single `available` call reprints the entire "HEARD OF,
+CANNOT BEGIN YET" list — 25+ lines, identical each time, even when I asked for
+one subject with 2 items in it. It buries the answer to the question I asked.
+

@@ -2487,7 +2487,19 @@ def _agent_dispatch_inner(s, nodes, cmd):
                           "wage_per_hour": round(WAGES[t] * s.wage_index
                                                  * s.price_index, 3),
                           "hours_the_market_can_supply": round(s.market_supply(t), 0),
-                          "note": TRADE_NOTES.get(t, "")})
+                          # THE NOTE IS STATIC AND THE WORLD IS NOT. A break
+                          # tester read "exists here: True" and "does not exist
+                          # yet; you must create this trade" three lines apart,
+                          # because the note is a fixed string about the
+                          # society as it started and they had since taught the
+                          # trade into existence. Teaching one is the whole
+                          # point of `train`; the reply has to notice it
+                          # happened.
+                          "note": (("you taught this trade into existence here; "
+                                    "the only %ss in this society are yours and "
+                                    "the ones they have taught since" % t)
+                                   if t in s.trades_created
+                                   else TRADE_NOTES.get(t, ""))})
             return r
         if one:
             r = row(one, long=True)
@@ -2582,10 +2594,41 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
     if op in ("quote", "price"):
         what = (cmd.get("what") or "mine").strip().lower()
+        # EVERYTHING YOU CAN BUY, NOT JUST MINES. `quote` exists because a
+        # tester went from 38,151 denarii to zero on one unpriced mine command.
+        # A break tester then spent 27,500 - 68% of their capital - on `buy
+        # forest 100`, with no price shown anywhere, no way to ask for one, and
+        # no market to sell it back into. Same lesson, same command, different
+        # counter.
+        if what in ("forest", "coppice", "woodland"):
+            n_f, err_f = _qty(cmd, "n", 100)
+            if err_f:
+                return {"ok": False, "error": err_f}
+            per = s.FOREST_COST_PER_HA * s.price_index
+            return {"ok": True, "what": "forest", "hectares": n_f,
+                    "to_buy_it": round(per * n_f, 1),
+                    "per_hectare": round(per, 2),
+                    "you_have": round(s.capital, 1),
+                    "you_can_afford_about": round(max(0.0, s.capital) / max(per, 1e-9), 1),
+                    "it_yields_per_hectare_per_year":
+                        "%.2f tonnes of charcoal, sustainably" % s.CHARCOAL_PER_HA,
+                    "note": "Coppice is bought once and yields every year after. "
+                            "There is no market to sell it back into."}
+        if what in ("slaves", "people"):
+            n_s, err_s = _qty(cmd, "n", 1)
+            if err_s:
+                return {"ok": False, "error": err_s}
+            return {"ok": True, "what": "slaves", "people": n_s,
+                    "to_buy_them": round(s.slave_quote(n_s), 1),
+                    "you_have": round(s.capital, 1),
+                    "note": "The price rises with how many you take at once, and "
+                            "they are worth nothing to you for the first few "
+                            "years while they learn the work. Freeing them "
+                            "afterwards makes them worth more, not less."}
         if what != "mine":
-            return {"ok": False, "error": 'only mines can be quoted so far: '
-                                          '{"cmd":"quote","what":"mine",'
-                                          '"material":"coal","n":500}'}
+            return {"ok": False,
+                    "error": "you can quote a mine, a forest or people: "
+                             "quote mine coal 500, quote forest 100, quote slaves 5"}
         n, err = _qty(cmd, "n", 1)
         if err:
             return {"ok": False, "error": err}

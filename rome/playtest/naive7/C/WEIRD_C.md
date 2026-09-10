@@ -139,3 +139,181 @@ wage bill is 8,750/yr against ~640/yr of income, so I should be destitute within
 year and, per `policy`, "people you cannot pay leave". I want to see whether the game
 narrates that or just silently deletes them. I also want to know whether hand-hiring
 respects the housing limit that `auto hire` mentions ("toward what you can house").
+
+### 5. The enormous staff, attempt one — and the slave loophole
+
+`hire labourer 70` ->
+  "REFUSED: you can supervise, house and teach **6.00 more people**, not 70".
+So there IS a cap on staff, tied to me. Good design; kills my "hire 500 idlers" plan
+through the front door. (Also note "6.00 more people" — a formatted float for a count of
+humans.)
+
+Also, still counterintuitive: **capital 9,408, credit limit 487.** I have gone from 400
+denarii and 1,367 of credit to 9,408 denarii and 487 of credit. Getting nine times richer
+made lenders trust me a third as much. Whatever formula is behind this, on screen it is
+simply backwards.
+
+So I went round the back:
+
+- `buy slaves 70` -> refused, but only on **price** (39,265 den, "561 each after the
+  market moves against a purchase this size" — nice touch, bulk buying moves the market).
+  Not one word about the supervision cap.
+- `buy slaves 6` -> **bought**. `buy slaves 1` -> **bought**. I now hold 7 people.
+
+**Finding: `buy slaves` does not check the supervise/house/teach cap that `hire` checks.**
+I was told to my face that I could take 6.00 more people, and then took 7 by a different
+verb, with no complaint and no penalty.
+
+It gets stranger. After buying, `labour` shows:
+
+    ON YOUR STAFF:
+      nobody
+    IN TRAINING:
+      None x3.3, ready 153.0
+      None x0.55, ready 153.0
+    Total employed: 0     annual wage bill: 0 den
+
+and `state` says "EMPLOY: 0 people".
+
+Three separate problems in five lines:
+1. The trade of these people prints as the literal string **`None`** — a null leaking
+   straight into the display.
+2. They are **fractional**: `x3.3` and `x0.55`. 3.3 people and 0.55 of a person.
+3. **3.3 + 0.55 = 3.85, but I bought 7.** Over half of the people I paid 2,358 denarii
+   for are not on any screen the game will show me. `state` says I employ 0, `labour`
+   says nobody, and the only evidence they exist is two lines of `None`.
+
+The game has lost track of who is in my household. This is exactly the kind of thing I
+was told to look for.
+
+Expectation going in: I assumed slaves would either be blocked by the same cap or appear
+as staff with a purchase price and no wage. Instead they went into a "training" limbo as
+`None`. `help economy` says "buy slaves 5" and "manumit ... they are untrained for three
+years", which is presumably the three-year training — but nothing said they'd be
+invisible or fractional in the meantime.
+
+### 6. Ten bought people, three different headcounts
+
+Stepping to 153 produced:
+
+    EVENT 153: 6 of the people you bought finish learning the work
+    EVENT 153: 1 of the people you bought finish learning the work
+    EVENT 153: 3 of the people you bought finish learning the work
+
+6 + 1 + 3 = 10, correct. So the engine knows perfectly well I bought ten. But it printed
+them as three separate events (one per purchase batch) rather than "10 of the people you
+bought", which reads as though three unrelated things happened in one year.
+
+After they finish, the prompt bar reads `art 7`. But:
+
+    labour  ->  ON YOUR STAFF: nobody     Total employed: 0
+    state   ->  EMPLOY: 0 people, 0 den/yr in wages / nobody
+
+**Three screens, three answers, same household: 10 bought, `art 7` in the status bar,
+0 everywhere else.** If I only ever looked at `labour` or `state` — the two screens whose
+whole job is to tell me who works for me — I would believe I own nobody.
+
+`state` did eventually print the explanation, but only once and in the wrong place:
+
+    EMPLOY: 0 people, 0 den/yr in wages
+      nobody
+      these are continuous full-time-equivalents, not a count of whole people:
+      ... 1.32 artisans is the wage and output of one artisan plus a third of another's.
+
+That paragraph is attached to the word "nobody" and cites "1.32 artisans", a number that
+appears nowhere on the screen or in my game. So the one explanation of the headcount
+model is printed underneath a headcount of zero, using an example figure from somewhere
+else.
+
+Also, in 150 AD: `EVENT 150: fire in the insula district, where the tenements stand six
+storeys in wood`. My capital moved 5,909 -> 4,522 across that step; upkeep accounts for
+maybe 370 of it, so the fire seems to have cost me roughly a thousand denarii. **The
+event line never says so.** It's atmosphere with an invisible bill attached. I own no
+buildings and employ nobody, so I have no idea what of mine burned.
+
+### 7. Manumission is free reputation
+
+    buy manumit 10
+    manumitted: 10   freedmen: 10   slaves: 0
+
+Capital: **unchanged** (3,419 before, 3,419 after). Reputation: **1.4 -> 4.2**, tripled,
+instantly, in the same year, for free. Artisan-equivalents `art 7 -> art 12`.
+
+So freeing people costs nothing, triples your standing and nearly doubles your output. The
+game frames it morally ("it is the decent thing") and it is also, mechanically, the single
+best-value action I have found in 54 years of play. That combination is worth a look:
+right now the optimal play is to buy people purely in order to free them.
+
+I was about to test exactly that — buy 5, free 5, buy 5, free 5, and see whether
+reputation just keeps going up — when the game broke.
+
+### 8. The program stopped working mid-session
+
+    ImportError: cannot import name 'load_state' from 'engine.protocol'
+
+Every invocation, three times in a row, including a bare `state`. I have not touched
+anything in the repository except this notes file and my own save. Someone or something is
+editing the engine underneath me while I play. Recording the time and moving on; I'll
+retry. My save `rome_100ad.json` is at 154 AD with ~3,419 den, rep 4.2, 10 freedmen.
+
+### 9. The engine came back, and reputation turns out to be farmable
+
+The ImportError cleared on its own after a few minutes; my save resumed at 154 AD exactly
+where it was. (So the crash was somebody editing the engine, not my save. Save integrity
+across it: fine.)
+
+**Reputation is farmable in a single turn, with no time cost.** In year 154, without ever
+calling `step`, I ran `buy slaves 2` / `buy manumit 2` four times:
+
+    rep 4.2 -> 4.8 -> 5.3 -> 5.8 -> 6.2      (freedmen 10 -> 18)
+
+Every cycle is +0.5 reputation for about 660 denarii and zero elapsed time. Nothing caps
+it, nothing comments on it, and there is no cooldown — the only limit is cash. My whole
+"become famous" persona reduces to a shopping loop I can run as many times as I can
+afford in one afternoon of 154 AD. A player trying to be famous will find this in about
+four minutes and it is strictly better than anything the game recommends.
+
+Two other things fell out of it:
+- `art` stayed frozen at 12 while freedmen went 10 -> 18, because new ones are untrained
+  for 3 years. Fine, but the status bar gives no hint that 8 people are pending.
+- Buying moves the price against me *within* a year (626 -> 666 -> 703 -> 737 for two
+  slaves each time) but resets between years. Nice touch.
+
+### 10. "RUNNING: nothing", while running two things
+
+    ventures  ->  RUNNING: nothing
+    state     ->  RUNNING: nothing
+    money     ->  Revenue 233.5/yr from med_cataract_couching, med_trepanation
+
+`open med_cataract_couching` -> "REFUSED: you are already doing that". So the game knows
+I'm doing it. It just refuses to list it under the heading called RUNNING, on the two
+screens whose job is to list what I'm running. The refusal message is good and explains
+the distinction (society's skill vs. my concern) — but it only appears if you guess to
+type `open` on something you already have.
+
+`why med_cataract_couching` says **REVENUE: 500 den/yr**. The ledger pays me **166.7**.
+Exactly one third. Nothing on either screen accounts for the factor of 3. If I were
+planning around the `why` numbers — which is what `why` is for — every projection I made
+would be 3x too high.
+
+Same screen, same second, two different headcounts:
+    ventures -> "free to put behind something new: 1 scholars, **12.5** craftsmen"
+    why      -> "STAFF NEEDED: 1 scholars, 0 artisans (you have 1, **11.5**)"
+Nothing happened in between.
+
+### 11. Poverty, on purpose
+
+Freeing 18 people has quietly wrecked me. "living and appearances" has gone
+365 -> **1,044 den/yr** and net is **-810.8/yr** against **688 denarii** in hand. I did
+the decent thing eight times and it is going to bankrupt me within the year.
+
+And the credit line keeps moving the wrong way: 9,408 capital -> 487 credit;
+688 capital -> **1,675** credit. Consistently, the poorer I get the more Rome will lend
+me. I now have more than twice the credit I started the game with, on a tenth of the
+money.
+
+**Expectation for the next move:** I am going to step ten years and do nothing —
+no work, no projects. I expect to burn through 688 den, then through 1,675 of credit at
+11%, and then per `policy` ("people you cannot pay leave, creditors take what they are
+owed") something should take my freedmen away and I should hit some kind of floor. I want
+to see whether the game has a bottom, and whether it tells me I've hit it.

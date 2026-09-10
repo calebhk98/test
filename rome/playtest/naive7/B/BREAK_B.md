@@ -110,3 +110,51 @@ all about the money in your strongbox is odd. Confidence: MEDIUM (could be delib
 "lending against income", but the direction of travel is clearly wrong to a player).
 Living-and-appearances also *fell* (230 -> 228.9 -> 225.6) as capital rose, which is
 backwards for a cost described as "appearances".
+
+### Note: the program became unrunnable mid-session (not caused by me)
+At 103 AD, after `available all`, every invocation began dying at import time:
+```
+Traceback (most recent call last):
+  File "/home/user/test/rome/sim/simulator.py", line 46, in <module>
+    from engine.protocol import (_agent_available, _agent_dispatch,  # noqa: F401
+ImportError: cannot import name 'load_state' from 'engine.protocol'
+```
+I have modified nothing in the repository; this appeared between two consecutive runs of
+the same command line, so the tree is being edited underneath me. Waiting and retrying.
+
+### FINDING 7 (confirmed) — "waiting on your hours" when my hours are not the constraint
+`start tr_hopper_wagon` (needs 50 founder hours, calendar floor 1 year), then `step 1`:
+```
+RUNNING (1):
+  tr_hopper_wagon   60% of your hours spent, 0 still owed - waiting on your hours
+You: alive (you do not age), 2,000 founder-hours free this year
+```
+It claims to be waiting on my hours while 2,000 of my hours sit unspent and it needs 20
+more. It was actually waiting on the one-year calendar floor - it finished the next step.
+A status line whose stated reason is not the real reason. Confidence: HIGH.
+
+### FINDING 8 (confirmed) — staff requirements are advertised and then not enforced
+`why tr_hopper_wagon` -> "STAFF NEEDED: 0 scholars, 1 artisans   (you have 1, 0)" and in
+the same breath "STATUS: CAN START NOW". `labour` says "Total employed: 0 ... nobody".
+I started and completed it with zero artisans on the staff. `help labour` insists
+"Trades are NOT interchangeable: a project asking for an engineer cannot be built by
+smiths however many you have" - but a project asking for an artisan can apparently be
+built by nobody at all. Confidence: HIGH that STAFF NEEDED is cosmetic here.
+
+### FINDING 9 (candidate) — the founder's hour has two prices, 24x apart
+`work scholar` pays the founder 0.3204 den/hr (80% of the 0.40 den/hr market scholar wage).
+`bounty tr_hopper_wagon` costs "about 649" against a build cost of 266.1 - i.e. 383 den to
+avoid spending 50 founder hours, or 7.66 den/founder-hour. The same hour is worth 0.32 den
+when you sell it and 7.66 den when you buy your way out of it. Confidence: MEDIUM
+(defensible as scarcity pricing, but nothing in the game says so).
+
+### Guarded successfully (could NOT break)
+- `work scholar -1000` / `hire scholar -3` / `buy slaves -5` / `bribe -1000` /
+  `commission smith -400` / `step -5` / `step 0`: all REFUSED with a clear reason.
+- `work scholar 99999` refused ("you have 1500 of your own hours left this year").
+- `work chemist 100` refused because the trade does not exist here - correct and consistent
+  with `labour`.
+- `work nonexistent 100` refused with the list of real trades.
+- Fog of war held: `path point_contact_transistor`, `why point_contact_transistor` and
+  `available find transistor` all reveal nothing ("you have never heard of any such thing").
+- `fire scholar 5` with 1 employed succeeded silently rather than refusing (cosmetic).

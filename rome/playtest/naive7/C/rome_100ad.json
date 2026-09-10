@@ -634,7 +634,7 @@
    747480833,
    3545787415,
    3656373148,
-   300
+   398
   ],
   null
  ],
@@ -666,10 +666,10 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": 7050.466861701578,
+ "capital": -1273.6227208545695,
  "commissioned": {},
  "contract_hours": {},
- "credit_frozen_until": 0,
+ "credit_frozen_until": 168,
  "dead_reason": null,
  "director_hours_spent_founder": 0.0,
  "directors_extra": 0.0,
@@ -821,9 +821,9 @@
   "civ_vault_barrel": 100
  },
  "economy": 1.0,
- "eminence": 0.2759070507833746,
+ "eminence": 0.10521150612598404,
  "employees": {},
- "familiarity": 0.738154331419674,
+ "familiarity": 0.8098610198984795,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
@@ -977,17 +977,17 @@
   "effective_on_projects": 0.0,
   "offered_to_projects": 0.0,
   "teaching": 0.0,
-  "unused": 0.0,
-  "wage_work": 2000.0
+  "unused": 2000.0,
+  "wage_work": 0.0
  },
  "insolvent_years": 0,
- "interest_paid": null,
+ "interest_paid": 1115.436269970271,
  "last_patron_death": null,
- "last_settlement": -999,
- "life_left": 999999950.0,
- "living_cost_paid": 16004.485035911217,
- "manumitted_total": 0,
- "market_pressure": 7.0,
+ "last_settlement": 156,
+ "life_left": 999999934.0,
+ "living_cost_paid": 23564.455597916378,
+ "manumitted_total": 18,
+ "market_pressure": 0.0,
  "mine_capacity": {},
  "mine_cost_paid": 0.0,
  "mine_pending": {},
@@ -1015,14 +1015,14 @@
   "auto_shed": false,
   "auto_train": false
  },
- "protection": 0.00569728534255128,
- "reputation": 1.4812941890633327,
+ "protection": 0.0005049536021251383,
+ "reputation": 0.13128793655253596,
  "revealed": {
   "__set__": []
  },
  "scandal": 0.0,
  "scholars": 0.0,
- "slaves": 7,
+ "slaves": 0,
  "spend_last_year": 0.0,
  "stalled": 0,
  "suspicion": 0.0,
@@ -1034,18 +1034,9 @@
  "trades_created": {
   "__set__": []
  },
- "training": [
-  [
-   3.3000000000000003,
-   153.0
-  ],
-  [
-   0.55,
-   153.0
-  ]
- ],
+ "training": [],
  "wage_hours_this_year": 0.0,
  "wages_earned": 31694.65685530591,
  "wages_paid": 0.0,
- "year": 150
+ "year": 166
 }

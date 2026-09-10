@@ -2123,6 +2123,34 @@ check("...and says nothing when they all can",
       S._agent_dispatch(sim(capital=50000.0), NODES, {"cmd": "policy"}),
       "field present on a solvent household")
 
+# `quote` existed because a tester went from 38,151 denarii to zero on one
+# unpriced mine command. A break tester then spent 27,500 - 68% of capital -
+# on `buy forest 100`, with no price shown and no way to ask for one.
+_qf, _, _ = proto([{"cmd": "quote", "what": "forest", "n": 100},
+                   {"cmd": "quote", "what": "slaves", "n": 5}], kit="equestrian")
+check("you can ask the price of a forest before you buy one",
+      _qf[0].get("ok") is True and _qf[0].get("to_buy_it", 0) > 0,
+      _qf[0].get("error") or _qf[0].get("to_buy_it"))
+check("...and of people",
+      _qf[1].get("ok") is True and _qf[1].get("to_buy_them", 0) > 0,
+      _qf[1].get("error") or _qf[1].get("to_buy_them"))
+s = sim(capital=100000.0)
+_before_f = s.capital
+_quoted = _qf[0]["to_buy_it"]
+s.buy_forest(100)
+check("the quoted price of a forest is the price you are charged",
+      abs((_before_f - s.capital) - _quoted) < 1.0,
+      "quoted %.1f, charged %.1f" % (_quoted, _before_f - s.capital))
+
+# A taught trade still read "does not exist yet" alongside "exists here: True".
+_tn, _, _ = proto([{"cmd": "train", "trade": "machinist", "n": 2},
+                   {"cmd": "labour", "trade": "machinist"}], kit="equestrian")
+_row = (_tn[1].get("trade") or {})
+check("a trade you taught does not still say it does not exist",
+      _row.get("exists_here") is True
+      and "does not exist yet" not in (_row.get("note") or ""),
+      (_row.get("exists_here"), (_row.get("note") or "")[:60]))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
