@@ -782,7 +782,18 @@ class LabourMixin:
         self.trades_created.add(trade)
         self.training.append([0.0, self.year + 2.0, trade, float(n)])
         self._add_labour_pressure(frm, float(n) * self.HOURS_PER_PERSON_YEAR)
-        return True, ("%g %s%s will be ready in 2 years" % (n, trade, "s" if n != 1 else ""))
+        # SAY WHAT IT TOOK. A play tester's `train machinist 4` quietly ate
+        # 1,800 of their 2,000 founder-hours and, with nothing left to
+        # supervise with, closed a dozen concerns as a side effect - and the
+        # reply was six words about two years' time. Teaching is the most
+        # expensive thing you can do with a year and it never said so.
+        _left = max(0.0, self.director_pool() - self.director_hours_committed())
+        return True, ("%g %s%s will be ready in %d. It took %s of your own hours "
+                      "(%s left this year) and %s denarii to keep them while "
+                      "they learn"
+                      % (n, trade, "s" if n != 1 else "", self.year + 2,
+                         "{:,.0f}".format(hours), "{:,.0f}".format(_left),
+                         "{:,.0f}".format(fee)))
 
     def auto_commission_for_blocked(self, look=40):
         """Buy the hands for the nearest thing that is blocked ONLY on hands.

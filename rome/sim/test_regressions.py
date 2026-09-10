@@ -3958,6 +3958,17 @@ check("...and no more than once a generation FOR THE SAME TRADE",
       _per_trade)
 
 
+# --- BREAK: `train machinist 4` quietly ate 1,800 of a play tester's 2,000
+# founder-hours and, with nothing left to supervise with, closed a dozen
+# concerns as a side effect. The reply was six words about two years' time.
+_rt3, _, _ = proto([{"cmd": "train", "trade": "machinist", "n": 4}], kit="absurd")
+check("teaching says what it took out of your year",
+      "of your own hours" in json.dumps(_rt3[0])
+      and "left this year" in json.dumps(_rt3[0]), _rt3[0])
+check("...and what it cost to keep them while they learn",
+      "denarii" in json.dumps(_rt3[0]), _rt3[0])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
