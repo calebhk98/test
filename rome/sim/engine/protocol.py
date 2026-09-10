@@ -1112,6 +1112,20 @@ def _advice_line(kind, advice, indent="  "):
     help_ = advice.get("what_would_help")
     if help_:
         line += "\n%s  what would help: %s" % (indent, help_)
+    # AND WHICH OF THE THINGS IN FRONT OF YOU IS ONE OF THOSE. A playtester was
+    # told the answer to the Spanish was "walls, firearms, powerful friends",
+    # then played 154 years with 269 startable things in view and reported
+    # finding no hedge of any kind. Naming the ones they can already see costs
+    # nothing and is the difference between advice and a slogan.
+    steps = advice.get("you_could_begin_now_toward_it") or []
+    now = [e for e in steps if e.get("can_begin_now")]
+    later = [e for e in steps if not e.get("can_begin_now")]
+    if now:
+        line += "\n%s  you could begin now: %s" % (
+            indent, ", ".join("%s (%s den)" % (e["id"], _fmt_num(e["cost"])) for e in now))
+    for e in later[:2]:
+        line += "\n%s  %s is one of them, waiting on: %s" % (
+            indent, e["id"], (e.get("waiting_on") or "").split(". To get")[0])
     return line
 
 
@@ -1522,7 +1536,22 @@ def parse_typed(line):
         if not words:
             return None, ("%s needs something to %s, e.g. '%s iron 500'."
                           % (op, op, op))
+        # 'buy mine coal 500' and 'quote mine iron 200' are the forms the help
+        # itself gives, and the first version of this parser took only the FIRST
+        # word and threw the material away - so every documented three-word buy
+        # failed with an error that listed the material the player had just
+        # typed. A weird-play tester lost the whole mining subsystem to it.
         out = {"cmd": op, "what": words[0].lower()}
+        if len(words) > 1:
+            out["material"] = words[1].lower()
+        elif out["what"] in ("mine", "mines"):
+            return None, "say which mineral, e.g. '%s mine coal 500'." % op
+        # 'buy coal 500' means the same thing and is what a person types; the
+        # protocol wants it spelled out as a mine in a mineral.
+        if out["what"] not in ("forest", "slaves", "mine", "mines", "people"):
+            out["material"], out["what"] = out["what"], "mine"
+        if out["what"] == "mines":
+            out["what"] = "mine"
         if nums:
             out["n"] = nums[0]
         return out, None
@@ -1530,7 +1559,9 @@ def parse_typed(line):
     if op == "close":
         if not words:
             return None, "close needs a mine, e.g. 'close iron'."
-        return {"cmd": "close", "what": words[0].lower()}, None
+        # 'close mine coal' and 'close coal' both mean the one thing close does.
+        mat = words[1].lower() if len(words) > 1 else words[0].lower()
+        return {"cmd": "close", "what": mat, "material": mat}, None
 
     if op == "policy":
         if not rest:
@@ -2142,6 +2173,12 @@ def save_state(s, path):
                          ("literacy_general", "literacy_elite", "state_capacity")}
     blob["_weights"] = dict(s.w)
     blob["_fog"] = getattr(s, "fog", False)
+    # WHETHER THE FOUNDER AGES, saved for the same reason fog is: they are
+    # choices the menu asks you to make about what game this is, and resuming
+    # into the other one is resuming into a different game. _fog was already
+    # written here and never read back, so every resumed game silently had the
+    # whole tree in view; see load_state.
+    blob["_immortal"] = bool(s.cfg.get("immortal", True))
     blob["_version"] = 1
     tmp = path + ".tmp"
     with open(tmp, "w") as fh:
@@ -2238,6 +2275,22 @@ def _validate_save(blob, s):
     return None
 
 
+def civ_of_save(path):
+    """Which civilisation a save file is from, or None if it will not say.
+
+    A save records the game it is; a command line resuming it should not have
+    to be told again. A playtester was handed `play --session england_1300.json`
+    by the game itself, ran exactly that, and was refused with "this save is
+    from a different civilisation" - because the flag defaulted to Rome. The
+    file knew the answer the whole time.
+    """
+    try:
+        with open(path) as fh:
+            return (json.load(fh) or {}).get("_civ")
+    except (OSError, ValueError, AttributeError):
+        return None
+
+
 def load_state(s, path):
     """Read a save from `path` and apply it to `s`, or raise ValueError with
     a clear reason and leave `s` completely untouched.
@@ -2268,6 +2321,13 @@ def load_state(s, path):
         if isinstance(v, dict) and "__set__" in v:
             v = set(v["__set__"])
         setattr(s, f, v)
+    # The game this save IS, not whatever the command line happened to say.
+    if "_fog" in blob:
+        s.fog = bool(blob["_fog"])
+        if s.fog and not hasattr(s, "revealed"):
+            s.revealed = set()
+    if "_immortal" in blob:
+        s.cfg["immortal"] = bool(blob["_immortal"])
     for k, v in (blob.get("_civ_live") or {}).items():
         if v is not None:
             s.civ[k] = v

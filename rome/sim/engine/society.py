@@ -331,6 +331,61 @@ class SocietyMixin:
         out = {"you_currently_take": round(mult, 3), "because_of": why}
         if mult > 0.75:
             out["what_would_help"] = words.get(kind, "")
+            # AND SOMETHING YOU CAN ACT ON. A playtester was told the answer to
+            # the Spanish was "walls, firearms, powerful friends, and copies of
+            # your work kept somewhere else", played 154 years, saw 269
+            # startable things, and reported finding no hedge of any kind. The
+            # hedges were there and shallow - a sand filter needs no
+            # prerequisite at all, only one artisan you do not have yet - but
+            # advice you cannot act on reads as advice about nothing.
+            #
+            # This does NOT name the hedge or open the tree. It names things you
+            # could begin TODAY, which you can already see, and says only that
+            # they lead that way. That is what a person who knows how the
+            # technology works would know and what fog has no business hiding:
+            # fog is about the society, not about your own education.
+            step = self.hedge_first_steps(kind)
+            if step:
+                out["you_could_begin_now_toward_it"] = step
+        return out
+
+    def hedge_first_steps(self, kind, limit=4):
+        """The hedges against `kind` that you can actually see, and what each
+        one is waiting for.
+
+        Deliberately NARROW: the counters themselves and their direct
+        prerequisites, and only those fog would let you see anyway. An earlier
+        version walked the whole ancestry and ranked by strategy order, which
+        duly advised beginning a "respectable cover identity" as a hedge
+        against smallpox - true, in that most of the tree is downstream of it,
+        and useless to a reader. If nothing near is visible, the words on their
+        own are the honest answer and this says nothing.
+        """
+        want = []
+        for node, _share, _label in self.HAZARD_COUNTERS.get(kind, ()):
+            if node not in self.nodes or node in self.done:
+                continue
+            want.append((0, node))
+            for pre in self.nodes[node]["pre"]:
+                if pre in self.nodes and pre not in self.done:
+                    want.append((1, pre))
+        memo = {}
+        seen, out = set(), []
+        for d, k in sorted(want):
+            if k in seen:
+                continue
+            seen.add(k)
+            if getattr(self, "fog", False) and not self.is_visible(k, _memo=memo):
+                continue
+            ok, why = self.start_reason(k)
+            out.append({"id": k, "name": self.nodes[k]["name"],
+                        "cost": round(self.project_cost(k), 1),
+                        "can_begin_now": bool(ok),
+                        "waiting_on": None if ok else why})
+            if len(out) >= limit:
+                break
+        # What you can start comes first: it is the part you can act on today.
+        out.sort(key=lambda e: not e["can_begin_now"])
         return out
 
     def _shocks(self, yr):

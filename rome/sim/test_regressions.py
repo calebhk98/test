@@ -962,12 +962,15 @@ _PLAY_DIR = "_playtest_tmp"
 os.makedirs(os.path.join(ROOT, _PLAY_DIR), exist_ok=True)
 
 
-def _play(lines, civ="rome_100ad", extra=()):
-    p_ = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play",
-                         "--civ", civ] + list(extra),
+def _play(lines, civ=None, extra=()):
+    p_ = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py"), "play"]
+                        + (["--civ", civ] if civ else []) + list(extra),
                         input="".join(l + "\n" for l in lines),
                         capture_output=True, text=True, timeout=240, cwd=ROOT)
-    return p_.stdout, p_.returncode
+    # BOTH STREAMS. A refusal printed on stderr is still a refusal the player
+    # sees, and a check that reads only stdout silently passes a game that
+    # started the wrong civilisation over the top of a save.
+    return p_.stdout + p_.stderr, p_.returncode
 
 
 _pl, _rc = _play(["state", "money", "labour", "risk", "policy", "available",
@@ -1193,6 +1196,53 @@ check("a small remaining bill is actually paid off, not approached for ever",
       "identity_cover" not in s.active,
       "%.4f den still owed after 60 years"
       % (s.active.get("identity_cover", {}).get("cost_left", 0.0)))
+
+# --- the Mexica play tester: advice you cannot act on is not advice ----------
+# They were told the answer to the Spanish was "walls, firearms, powerful
+# friends, and copies of your work kept somewhere else", played 154 years with
+# 269 startable things in view, and reported finding no hedge of any kind. The
+# hedges were there. Nothing ever connected the words to the list.
+s = sim(civ="mexica_1500", manual=False)
+s.fog = True
+s.revealed = set()
+for _i in range(45):
+    s.step()
+_adv = s.hazard_advice("staff_loss")
+_steps = _adv.get("you_could_begin_now_toward_it") or []
+check("a hazard names things in front of you that hedge against it",
+      any(e["can_begin_now"] for e in _steps),
+      [(e["id"], e["can_begin_now"]) for e in _steps])
+# ...and it must not do that by naming whatever sits first in the strategy
+# order. An earlier version walked the whole ancestry and advised beginning a
+# "respectable cover identity" as a hedge against smallpox.
+_counters = {n for n, _s2, _l in s.HAZARD_COUNTERS["staff_loss"]}
+_near = _counters | {p_ for n in _counters if n in NODES for p_ in NODES[n]["pre"]}
+check("a hedge is a hedge, not any ancestor of one",
+      all(e["id"] in _near for e in _steps),
+      [e["id"] for e in _steps if e["id"] not in _near])
+
+# --- the England weird-play tester -------------------------------------------
+# 1. The game printed its own resume command, `play --session england_1300.json`,
+#    and then refused it: --civ defaulted to Rome and the save was England. A
+#    save says what game it is; the command line should not have to.
+_rs = "%s/resume.json" % _PLAY_DIR
+if os.path.exists(os.path.join(ROOT, _rs)):
+    os.remove(os.path.join(ROOT, _rs))
+_r1, _ = _play(["step 2", "quit"], civ="england_1300", extra=["--session", _rs, "--fog"])
+_r2, _ = _play(["state", "quit"], extra=["--session", _rs])       # no --civ, as printed
+check("a save resumes without being told again which game it is",
+      "Resumed from" in _r2 and "1302" in _r2, _r2[:400])
+check("fog survives a save and reload, rather than opening the whole tree",
+      "Fog of war is on" in _r2, [l for l in _r2.splitlines() if "og of war" in l])
+_r3, _ = _play(["quit"], civ="rome_100ad", extra=["--session", _rs])
+check("a --civ that contradicts the save is refused, not started over the top",
+      "that save is a" in _r3 or "different civilisation" in _r3, _r3[:300])
+
+# 2. Every documented three-word buy lost its material to the typed parser, so
+#    the whole mining subsystem was unreachable from the front door.
+_mq, _ = _play(["quote mine coal 500", "quote coal 500", "quit"], civ="england_1300")
+check("the mining commands the help gives actually parse",
+      _mq.count("to sink it") == 2, _mq[:400])
 
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)

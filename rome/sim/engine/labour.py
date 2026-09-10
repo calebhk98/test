@@ -484,8 +484,20 @@ class LabourMixin:
         room = (self.staff_capacity()[1] + self.supervision_room()
                 - self.headcount())
         if n > room:
-            return False, ("you can supervise, house and teach %.1f more people, not %g. %s"
-                           % (max(0.0, room), n, self._staff_advice("artisans")))
+            # TRUNCATED, NOT ROUNDED, and it says what a whole number of people
+            # would be. A weird-play tester was refused `hire artisan 7` and
+            # told "you can supervise, house and teach 7.0 more people, not 7",
+            # which is a refusal that reads as a contradiction: the room was
+            # 6.96 and the %.1f rounded it up. A figure a player is meant to act
+            # on must never be rounded in the direction that overstates it.
+            room = max(0.0, room)
+            whole = int(room)
+            return False, ("you can supervise, house and teach %.2f more people, "
+                           "not %g%s. %s"
+                           % (math.floor(room * 100) / 100.0, n,
+                              " - %d is the most whole people you can take" % whole
+                              if whole else " - you have no room for even one",
+                              self._staff_advice("artisans")))
         self.capital -= fee
         self.employees[trade] = self.employees.get(trade, 0.0) + float(n)
         self._add_labour_pressure(trade, float(n) * self.HOURS_PER_PERSON_YEAR)

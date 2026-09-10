@@ -16,8 +16,8 @@ from .core import Sim
 from . import protocol as _protocol
 from .protocol import (
     _agent_available, _agent_dispatch, _agent_end_reason, _agent_help,
-    _agent_state, _node_explain, load_state, parse_typed, render_pretty,
-    save_state)
+    _agent_state, _node_explain, civ_of_save, load_state, parse_typed,
+    render_pretty, save_state)
 
 
 def load_strategy(name, nodes, goal):
@@ -246,6 +246,31 @@ def cmd_compare(a):
         sys.stdout.flush()
 
 
+def _civ_for_session(a):
+    """Which civilisation to start, honouring the save above the command line.
+
+    A save says what game it is. Resuming should not need the flag repeated,
+    and a flag that contradicts the file should say so rather than start the
+    wrong game over the top of it - a playtester was handed
+    `play --session england_1300.json` by the game itself and refused by it.
+    """
+    session = getattr(a, "session", None)
+    asked = getattr(a, "civ", None)
+    if session and os.path.exists(session):
+        saved = civ_of_save(session)
+        if saved:
+            if asked and asked != saved:
+                # Said out loud on stdout, where the player is looking, and then
+                # a non-zero exit. A refusal only argparse can see is a refusal
+                # nobody reads.
+                print("that save is a %s game; you asked for %s. Drop the --civ "
+                      "flag to resume it, or point --session somewhere else."
+                      % (saved, asked))
+                raise SystemExit(1)
+            return saved
+    return asked or "rome_100ad"
+
+
 def cmd_play(a):
     """The game, typed, for a person at a keyboard.
 
@@ -278,8 +303,7 @@ def cmd_play(a):
     if kit:
         cfg["start_capital"] = STARTING_KITS[kit]["den"]
     s = Sim(nodes, order, random.Random(a.seed), events=True, bounty_set=set(),
-            manual=True, civ=load_civ(getattr(a, "civ", None) or "rome_100ad"),
-            cfg=cfg)
+            manual=True, civ=load_civ(_civ_for_session(a)), cfg=cfg)
     s.goal = goal
     s.done_year = {}
     s.end_year = s.cfg["start_year"] + a.horizon
@@ -385,7 +409,7 @@ def cmd_agent(a):
     cfg = {"start_capital": STARTING_KITS[a.kit]["den"], "horizon_years": a.horizon,
            "immortal": not getattr(a, "mortal", False)}
     s = Sim(nodes, order, random.Random(a.seed), events=not a.no_events,
-            cfg=cfg, civ=load_civ(a.civ), bounty_set=set(), manual=True)
+            cfg=cfg, civ=load_civ(_civ_for_session(a)), bounty_set=set(), manual=True)
     s.goal = goal
     s.done_year = {}
     s.end_year = s.cfg["start_year"] + a.horizon
@@ -924,7 +948,9 @@ def main():
     q.add_argument("--strategy", default="recommended")
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
-    q.add_argument("--civ", default="rome_100ad")
+    q.add_argument("--civ", default=None,
+                   help="which civilisation. Omit when resuming a --session: the "
+                        "save says which game it is.")
     q.add_argument("--kit", default="poor_scholar",
                    help="starting wealth: " + ", ".join(STARTING_KITS))
     q.add_argument("--fog", action="store_true")
@@ -945,7 +971,9 @@ def main():
                         "is auto-started, this command always runs manual")
     q.add_argument("--seed", type=int, default=1)
     q.add_argument("--horizon", type=int, default=500)
-    q.add_argument("--civ", default="rome_100ad")
+    q.add_argument("--civ", default=None,
+                   help="which civilisation. Omit when resuming a --session: the "
+                        "save says which game it is.")
     q.add_argument("--kit", default="poor_scholar",
                    help="starting wealth: " + ", ".join(STARTING_KITS))
     q.add_argument("--no-events", action="store_true",

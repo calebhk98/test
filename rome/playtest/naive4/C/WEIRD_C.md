@@ -298,3 +298,186 @@ because nothing has ever gone wrong in the operating theatre.
 
 Minor: `state full:true` (offered in `help commands` as "add full:true for every field")
 printed exactly the same screen as plain `state`.
+## Phase 6: the day-job run -- refuse to use your knowledge, dig ditches for two centuries
+
+Commitment: from 1603 I do nothing but `work labourer 2400` (the worst-paid trade) and
+`step 1`, every year, forever. No projects. The founder who has the whole of modern
+technology in his head and chooses to be a farmhand.
+
+First the wage check:
+    work labourer 2400  -> earned 133.6 den
+    work scholar  2400  -> earned 667.8 den
+A full year of the founder's own labour as a labourer earns **133 den**, against living
+costs of 266-295 den/yr and a passive medical income of 253 den/yr. **Working full time
+for a year cannot pay half your rent**, while doing nothing at all pays it in full. As a
+statement about medieval unskilled labour that is arguably right; as a game affordance it
+means `work` is a trap for anyone who does not first check the numbers, and it is the
+only thing in the game you can do with your hours that has no risk attached.
+
+Results of 1603-1652, fifty consecutive years of ditch-digging:
+* Capital 704 -> 2,588. So it does work, slowly.
+* **BUG 9: the ledger's `Net/yr` is wrong for anyone who uses `work`.** Every single year
+  `state` insisted `net -43 den/yr` ... `net -62.6 den/yr` while my capital rose by about
+  85 den a year. The `money` screen agrees with the wrong number: `Net/yr: -62.6`. Wage
+  income from `work` is not in the ledger at all. A player watching the net number would
+  conclude he was bleeding out while actually getting richer.
+* `net` got steadily *worse* the richer I got (-43 -> -63) because "living and
+  appearances" scales with capital (240 -> 295). Meanwhile `Credit limit` **fell** from
+  797 to 558 as my capital more than tripled. Getting richer lowered my credit.
+* Reputation drifted 2.4 -> 1.5 over fifty years of honest work. Eminence crept 0.02 ->
+  0.06. Suspicion and scandal never moved off 0 through anything I have done, including
+  buying a human being.
+* 1607: `fire in the thatched lanes behind the market` and my capital dropped 1,689 ->
+  1,345, about 344 den. The identical event in 1304/1329/1336/1340/1356/1358/1361/1373
+  cost me nothing at all. Same sentence, sometimes free, sometimes a third of my money,
+  never a word about what burned.
+
+**BUG 7 continued: the ghost slave.** Fifty years on, the status bar says `art 1`, but:
+`EMPLOY: 0 people ... nobody`, `LABOUR / ON YOUR STAFF: nobody`, `Total employed: 0`,
+`wages 0 den`. He does no work, appears on no roster, and earns nothing. 354 denarii for a
+person who exists only in the status bar.
+
+Also, `state` prints this whether or not you employ anyone:
+  "1.32 artisans is the wage and output of one artisan plus a third of another's."
+A worked example about a number I do not have, printed under the word "nobody".
+
+NEXT EXPECTATION: grind to the 1800 horizon. I expect the game to end with a summary that
+notes I built two things in five hundred years (an eraser and a pendulum clock) and got
+nowhere near a transistor. I would like to see whether it says anything at all about that,
+because so far nothing in five hundred years has commented on my behaviour.
+## Phase 7: the horizon, 1800
+
+Grinding to 1800 with nothing but `work labourer`. Events 1652-1800 were: seven more
+identical thatch fires and five identical "banditry or a frontier war disrupts supply".
+That is the entire content of the last 148 years. Two sentences, twelve times.
+
+Final capital 4,929 den. Reputation 1.3. Suspicion 0. Scandal 0. Built: 2.
+
+The ending, in full:
+
+    *** THE RUN HAS ENDED: the horizon at 1800 AD is reached. You built 2 things of
+    your own. There was no target to hit; how far you got is the whole of the result. ***
+
+**BUG 10: the ending contradicts the tutorial.** `help` says, in its own words,
+"what you are trying to do: **Reach point_contact_transistor**, and see the rest of what
+you can build on the way", and with fog off `state` prints `Goal: point_contact_transistor`
+on every screen. The ending then tells me "**There was no target to hit**". One of those
+two is wrong, and a player who spent 500 years chasing a transistor is being told at the
+buzzer that it never counted.
+
+The ending also does not name the two things I built, does not show the ledger, does not
+say how close (or in my case how catastrophically far) I got, and does not remark in any
+way on the fact that a man with the whole of modern technology in his head spent five
+centuries digging ditches and drilling skulls. **In 500 turns the game never once reacted
+to what I was doing.**
+
+**BUG 11: you get exactly one command after the run ends.** Post-1800 the process
+executes the first line you send and then exits, discarding the rest of the input. I sent
+`state / money / available / help / work` and got `state` only, then "Ended". Any command
+that changes things is `REFUSED: the run has ended`, which is correct, but read-only
+post-mortem commands are also cut off after the first, so you cannot actually review your
+own run. And the final screen *still* prints the resume command that does not work.
+
+Also on the final screen: `net -97.7 den/yr` at 4,930 den. The living-costs-scale-with-
+capital rule means the endgame punishes you for the money the passive medical income
+forced on you.
+## Phase 8: second and third games, run as controls
+
+I started two more England 1300 games (`gameB/`, `gameC/`) purely to check whether the
+things that ignored me in game A ignore everybody.
+
+### The Great Famine of 1315 does not exist
+Three separate 1300->1350 runs. Zero famine events in any of them, idle or staffed. The
+scenario text sells it as one of the two dated catastrophes you are meant to plan around
+("Fifteen years to the Great Famine"). It is not in the game.
+
+### `COMPLETED 1300: Sails on ships` is reproducible
+Fresh game, first `step`, `RUNNING: nothing`, and the log announces a completion. It
+happened in game A and in game B identically. Whatever it is, it is labelled with the
+same word the game uses for *my* finished projects, which is the confusing part.
+
+### BUG 13: the Black Death silently eats ~28% of your capital
+`EVENT 1348: Black Death: staff -45%` is the whole message. In game C I went into 1348
+with 12,676 den and came out of it with 9,111 (-28%), and 1350 took 8,970 -> 6,447
+(-28% again), against a stated net of only -195 and -101 den/yr. So the plague *does*
+have teeth -- it takes more than a quarter of your money per year -- and the event text
+mentions only staff, which is the one thing it did not touch, because I had none.
+A player reading the log has no way to know where a quarter of his money went.
+(The staff-loss half does work: with staff I could not pay, I got
+`you cannot pay everyone: 2.7 of your staff leave for work that pays`, which is a good
+line.)
+
+### BUG 12: the last hiring slot is unreachable (off-by-one)
+    hire artisan 7
+    REFUSED: you can supervise, house and teach 7.0 more people, not 7.
+    hire artisan 1   (with 1.0 free)
+    REFUSED: you can supervise, house and teach 1.0 more people, not 1.
+It refuses n when the cap is exactly n. `hire artisan 6` against a cap of 7.0 works. The
+comparison is strict where it should be inclusive, so you can never fill your last place.
+
+The same refusal has two more problems:
+* It leaks the machine protocol into prose: *"...or commission smith 400 to buy one job
+  instead of employing anybody; **{"cmd":"buy","what":"slaves","n":N}** then manumit,
+  though they are untrained for three years."* Raw JSON, mid-sentence, in a game that
+  tells you to "type commands in plain words".
+* It answers the wrong question. `hire labourer 1` is refused with "To get more
+  **artisans**: hire smith 3". I did not ask for artisans or smiths.
+
+### BUG 14 (the big one): the whole mining subsystem is unreachable
+`help commands` says: `quote <what>: ... so far quote mine coal 500`.
+`help economy` says: `buy mine: buy mine coal 500 ... ASK THE PRICE FIRST with
+quote mine coal 500, and close it with close coal.`
+Both of those documented commands fail:
+
+    quote mine coal 500  -> REFUSED: no such material: None. Mineable: coal, copper, ...
+    buy mine coal 500    -> REFUSED: material must be one of: coal, iron, copper, ...
+    buy mine iron 100    -> REFUSED: material must be one of: coal, iron, copper, ...
+
+The error lists the material I just typed as a valid material. Every three-word form
+(`buy mine <material> <n>`, `quote mine <material> <n>`) drops the material argument;
+two-word forms (`buy forest 100`, `buy slaves 1`) parse fine. And the errors point at
+each other in a circle: `quote coal 500` is refused with *"only mines can be quoted so
+far: quote mine coal 500"* -- the form that doesn't work -- while bare `quote` suggests
+a third syntax, `quote iron 500`, which the first message says is impossible.
+
+Net effect: **you cannot sink a mine or buy ore in plain-word mode.** For a scenario
+whose stated bottleneck is "Cheap iron, and the temperature to make it. Everything
+downstream of steel waits on a furnace nobody has yet built", losing the iron supply
+chain to an argument-parsing bug is the most consequential thing I found.
+
+### Other small things from the controls
+* Hiring 5 artisans for 1,100 den with 400 den in hand was allowed (straight to -700 via
+  credit); the very next hire was refused for having -700. Fine on reflection -- credit
+  limit -- but the two messages read as a contradiction in the moment.
+* `help economy` and `help money` print the identical page.
+* `save mysave.json` / `load mysave.json` both work correctly in-process. It is only the
+  *printed resume line* (Bug 1) that is wrong.
+* `bounty hom_eraser_breadcrumb` gave the best-written refusal in the game:
+  "a craftsman in England under Edward I could not recognise success at this without
+  understanding the theory, so there is nothing to award the prize for." That is the
+  standard the rest of the messages should be held to.
+* Unknown commands, negative quantities, zero quantities, stop-and-restart, freeing
+  slaves you do not own, closing mines you do not have -- all refused cleanly and
+  correctly. The input handling is solid; it is the documented commands that break.
+
+## What I actually did, in one paragraph
+
+Played England 1300 as a man who refused to do anything. Idled 1300-1600 (300 turns,
+zero actions) and got richer. Discovered in 1602 that the engine had been running a
+cataract and trepanation practice in my name the whole time. Bought one free technology,
+one breadcrumb eraser and one slave, in that order. Spent 1603-1800 digging ditches for
+133 den a year while a 20 den/yr pendulum clock and an invisible artisan sat on my books.
+Reached the horizon in 1800 having built two things, with a reputation of 1.3, a
+suspicion of 0, a scandal of 0, and 4,929 denarii I did not want.
+
+## The thing that struck me hardest
+
+**In 500 turns the game never once responded to me.** Not when I did nothing for three
+centuries. Not when I went bankrupt eight times. Not when I bought a human being in
+Christian England. Not when a man carrying the whole of modern physics chose to be a
+farmhand for two hundred years. Suspicion and scandal never moved off zero through any
+of it. The systems that exist -- reputation decay, arrears interest, staff walking out --
+all work, and they are the good part. But they are all *thermostats*, not reactions.
+Nothing in the world has an opinion about the player. The game reads as though it was
+built and tested by people who were trying to reach the transistor, and it is completely
+undefended against someone who isn't.

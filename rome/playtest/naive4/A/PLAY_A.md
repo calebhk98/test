@@ -266,3 +266,208 @@ PLAN: hire a broad staff (artisan 3, smith 2, mason 2, carpenter 2, scholar 2, m
 and expect revenue growth plus new works to cover it. EXPECTATION: staffing unlocks
 civ_town_planning, fin_arabic_numerals, fin_survey_map immediately, and stops the "waiting
 on nobody" stalls for good.
+
+### 1308: a hard cap I cannot see or raise
+`hire mason 2` -> "REFUSED: you can supervise, house and teach 0.2 more people, not 2."
+So staff is capped at ~7 FTE and I have no idea what raises it. The refusal then advises:
+"To get more artisans: hire smith 3 or any trade in labour" — i.e. it tells me to do the
+exact thing it just refused. That error message is a loop and it is the worst text I have
+hit. WANTED AND COULD NOT FIND: any command that says what my supervision capacity is, what
+it is a function of, or what would increase it. `state`, `labour`, `policy` and `help
+labour` all stay silent on it.
+
+Third "almost everything" node found: `patron_local` "Secure a town patron", 1,122 den,
+400h, upkeep 200, prereq identity_cover, "Halves incoming suspicion."
+So the spine of this game is three tier-0 social/foundation nodes —
+units_standards, identity_cover, patron_local — none of which earn a penny, all of which
+are invisible unless you `why` them one at a time. Everything I found by playing the
+obvious way (cheapest first, best ROI first) was a side quest.
+
+New subject appeared after arithmetic_positional: "the remaining arts", 21 items, mostly
+sc2_* — the institutions of science (peer review, replication, doctorate, citation,
+textbook, curriculum) and Newtonian physics. Their striking feature is CALENDAR FLOORS of
+5, 8, 10 and even 20 years, at only ~242 den each. That is a clear "start these now and
+forget them" signal, and the nicest bit of design I've met: the game is saying institutions
+take a generation and money is not the constraint.
+EXPECTATION: starting all the long-floor sc2 nodes in 1308 means they mature 1316-1328,
+i.e. before the Black Death in 1348. If instead they turn out to need continuous founder
+hours each year, this will jam and I'll have wasted the decade.
+PLAN: patron_local + sc2_method_negative_result(20y) + sc2_method_replication(10y) +
+sc2_institution_doctorate(8y) + sc2_institution_referee(8y) + sc2_method_hypothesis(8y) +
+sc2_institution_examination(8y) + sc2_institution_textbook(8y).
+
+### 1309-1312: I overextended
+All 8 started fine — founder hours were NOT the constraint (each showed "100% of your hours
+spent" in year one). They then all sat "waiting on money" for years. By 1312:
+  revenue 3,108/yr but upkeep 873 + wages 1,430 + living 398 = net only +406/yr,
+  capital 90 den, and 1,555 still owed on work in hand.
+EXPECTATION BROKEN: I assumed the long calendar floors meant these were cheap to *carry*.
+They are not — each carries 40/yr upkeep FROM THE MOMENT IT COMPLETES, and I stacked eight
+of them on top of a wage bill I had just tripled. The lesson the game is teaching is real
+(institutions cost you every year forever) but I only learned it by nearly stalling.
+
+Also: staff is silently DECAYING (6.8 -> 5.9 FTE) because attrition is 3.5%/yr and auto_hire
+is off. Nothing warns you; you just get quietly poorer in people. I only noticed by
+comparing two `state` prints.
+
+GOOD SURPRISE: revenue from a finished work RISES over time — tex_field_bleaching was quoted
+400/yr, delivered 290 in 1303, and pays 452.9 in 1312. And world_map, which I never checked,
+turns out to be my single biggest earner at 566/yr. Interest on my debt also fell 12% -> 9%
+as reputation rose. None of this is documented anywhere I could find; `why` quotes one
+static REVENUE number that is wrong in both directions at different times.
+
+FIX: switch auto_hire on, and buy the two big earners I identified back in 1301 and never
+bought — tex_knitting_frame (877 -> ~1,100/yr) and hom_mechanical_clock_home (1,092 ->
+~1,200/yr). EXPECTATION: ~4 years to fund them out of cash flow, after which net jumps to
+roughly +2,500/yr and the eight institutions finish themselves.
+
+### 1317: the default policy quietly destroyed my tech tree
+By 1317 net is +2,264/yr (clock 1,410 + knitting frame 1,293 were exactly the earners I
+predicted). Great Famine came and went with no visible damage.
+
+Then I checked the frontier and found this, four times over:
+  "civ_arch_roman   you built this once and let it go; you already know how, so restoring it
+                    is cheaper than starting over: restore civ_arch_roman for about 110 den"
+`auto_shed` is ON BY DEFAULT and is described as "let go of WORKS that cost more than they
+return". Every one of my four civil-engineering prerequisites earns 0 den and costs upkeep,
+so the engine demolished all four — civ_arch_roman, civ_brick_tile, civ_surveying_groma,
+civ_truss_triangulated — and with them the roads/bridges/water branch, which is 14+ nodes.
+Nothing announced it. No event line, no warning, nothing in `state`. I found it only because
+I read the "cannot begin yet" list and saw prerequisites I KNOW I built listed as missing.
+THIS IS THE WORST THING I HAVE FOUND. A default-on automation that deletes tree progress and
+does not tell you, in a game whose entire point is the tree. The mitigation (restore is
+cheap: 37-110 den) is good; the silence is not.
+Fixed: `policy auto_shed off`, restored all four for 263 den total.
+
+Fourth "almost everything" node revealed by patron_local: `workshop_first` — "First workshop
+and laboratory. On navigable water. With a walled yard, a separate furnace shed downwind,
+and a door onto the street so that witnesses can see you are not conjuring." 5,383 den, 500h,
+upkeep 900/yr. That last clause is the best sentence in the game.
+So the spine, in order, is:
+  identity_cover -> patron_local -> workshop_first, plus units_standards and
+  scientific_method alongside. All zero-revenue, all upkeep, all mandatory, none signposted.
+
+EXPECTATION: workshop_first unlocks case_hardening -> precision_three_plate ->
+balance_analytical -> opt_standards_laboratory, plus school_founded and prc_apprentice_system,
+and I am guessing it is also what lifts the "you can supervise, house and teach 0.2 more
+people" cap, since it is literally a building with a yard. That last one is a guess; nothing
+says so.
+
+### 1322: the tree explodes
+workshop_first + chm_phosphorus_extraction built. Money 7,557, net +3,230/yr, 32 techs.
+`available` goes from 106 startable to **365**. Metallurgy 2 -> 28 items (dearest 106,513 —
+that will be the blast furnace the intro promised). Textiles 8 -> 69. New subjects appear:
+transport, construction, power stations, expeditions.
+EXPECTATION MET, spectacularly. The four spine nodes really were the whole game so far.
+This is the single most satisfying moment of the playthrough and it took 22 in-game years.
+
+Then the second wall, and it is a much better-written one than the supervision cap:
+  "REFUSED: this society's literacy will not supply more than 2.3 scholars in total, ever,
+   at any price; you already have 2.6. Raise literacy_general or literacy_elite -- printing,
+   schools and libraries do -- to widen this pool."
+That is a perfect refusal: it names the limit, says it is societal not personal, and tells
+me the three levers. Compare with the supervision-cap refusal which just told me to do the
+thing it refused. Same game, same command, two completely different qualities of message.
+Also learned: `train chemist 2` costs "about 450 of your own hours each, two years" — that
+is 900 of my 2,400 hours to create a trade this society does not have.
+
+NEW PLAN (1322): (a) printing + schools + libraries to raise literacy and widen the scholar
+pool; (b) train chemists; (c) drive at metallurgy, because the game's own opening briefing
+said England's missing piece is "cheap iron, and the temperature to make it".
+
+### 1322: found the real spine, and the real bottleneck
+`why school_founded`: "The pivot of the entire game. Converts your hours into other people's
+hours permanently. Every year of delay here costs more than any single technology.
+Grants +4 scholars and +2 scholars/yr thereafter... Money cannot buy this down." 12,650 den,
+2,000 founder hours, 4-year floor, upkeep 2,500. Blocked by collegium_licensed (which needs
+citizenship) and freedman_staff (+8 artisans, i.e. THE fix for the supervision cap).
+So the chain nobody told me about is:
+  identity_cover -> patron_local -> {workshop_first, citizenship} ->
+  {freedman_staff, collegium_licensed} -> school_founded
+Five to seven of my in-game decades, and the game calls the last one "the pivot of the
+entire game" only when you finally `why` it. EXPECTATION vs REALITY: I said in 1302 that I
+had found "the spine". I had found the first two vertebrae of seven.
+
+Started citizenship, freedman_staff, corpus_written (6,000 founder hours over 10 years —
+"the largest single call on your personal hours in the entire game, and the one you must
+not cut").
+
+Then I re-ran the `why`-everything survey over all 365 startable nodes. New high-leverage
+items now visible:
+  case_hardening      1,757 den, rev 1,500, "almost everything"
+  refractory_fireclay 2,395 den, rev   600, "almost everything"
+  lens_grinding       2,080 den, rev 3,200, "a great deal"   <- best thing in the game
+  finery_puddling   106,513 den, rev 9,000, "a great deal"   <- the blast furnace, at last
+  charcoal_industrial 63,360 / lead_metallurgy 88,582        <- the heavy industry tier
+and a long tail of works returning MORE THAN 1 denarius per year per denarius of cost
+(tex_treadle_loom 2.18, tex_rope_walk 2.10, tex_sewing_machine 1.82, tr_hopper_wagon 1.67).
+Money has stopped being a constraint; founder hours have become one.
+PLAN: start ~22 things at once — the >1.0-return works to fund everything, plus every cheap
+"a great deal"/"almost everything" node. ~12,400 den, ~3,400 founder hours (so ~2 years of
+me). EXPECTATION: revenue roughly quadruples to >12,000/yr, and case_hardening +
+refractory_fireclay open the metallurgy branch that leads to finery_puddling.
+
+### 1327-1341: compounding, and the hazards start to bend
+Started 22 works in 1322 and 24 metallurgy/power works in 1331. By 1341:
+  90 technologies of my own, 105,382 den in hand, revenue 31,817/yr, net +8,658/yr,
+  reputation 82.7, staff 20 FTE, founder hours 2,400 -> 2,500 (the school raised them).
+corpus_written completed and `risk` now reads "hedged by corpus_written", with the loss
+figures dropping from "80% chance, 40% lost" to "45% chance, 22% lost". That is exactly what
+the description promised and it is the clearest cause-and-effect the game has shown me.
+
+Better still, `risk` now itemises what my own works have already bought me:
+  Black Death staff loss 45% -> 34% "(softened by fields that do not fail together, fodder
+  that keeps through a bad winter)"
+  Hundred Years War output 80% -> 49% "(softened by you feed yourself, power that does not
+  come by ship, your own roads, losses spread rather than borne)"
+and then names what to do next: "you could begin now: soap_hard (2,840 den)". This is the
+best-designed screen in the game: it turns a scripted disaster into a shopping list, in
+plain English, naming the actual mechanism. I would put this in front of the player far
+earlier — I only started reading `risk` seriously in 1327.
+
+CONFUSION #7: projects report "waiting on money" while I am sitting on 31,000 denarii. There
+seems to be a per-year cap on how much a project can absorb, but nothing says so, and the
+phrase "waiting on money" is exactly wrong when I have thirty thousand of it.
+CONFUSION #8: `state` says "dangerous above 26" every single year while reputation has gone
+5 -> 83 and the chance of ruin has stayed at 0%. Ten thousand words in, I still don't know
+what number that sentence is about.
+
+### 1341-1371: THE DISASTER, and it is the most interesting thing in the game
+In 1341 I had 105,382 den, 90 technologies, 20 staff and net +8,658/yr, so I bought the
+thing the opening briefing had pointed at from the very first screen: `finery_puddling`,
+"Finery forge and the puddling furnace", quoted at 106,567 den. I could just afford it.
+
+Except I could not. Two things I did not know:
+1. The quoted COST IS NOT FIXED. By the time the project was running it wanted 207,811 den —
+   90,060 of that in materials — because prices had roughly doubled between 1331 and 1371.
+   `why` shows one number with no indication that it is a snapshot. This is the single most
+   expensive misunderstanding available in the game and nothing flags it.
+2. Being in arrears is not merely expensive, it is destructive. From 1349 to 1371 I sat at
+   -20,000 to -28,000 den. In that time:
+     - staff fell 20 -> 3.3 FTE (I could not pay them, so they left — this IS documented,
+       under `policy`, as "not policies: ... people you cannot pay leave")
+     - technologies fell 99 -> 85. Fourteen finished works were taken.
+     - among them: corpus_written (my ONLY hedge against knowledge loss), school_founded
+       ("the pivot of the entire game"), collegium_licensed, freedman_staff.
+     - finery_puddling itself was abandoned with ~106,000 den sunk into it. It now reads
+       STATUS: BLOCKED and wants 207,811 to start again.
+     - I paid 42,556 den in interest.
+   `risk` went from "hedged by corpus_written" back to "hedged by nothing yet".
+   I had turned `auto_shed` OFF precisely to stop this. It happened anyway, because
+   insolvency is a consequence and not a policy.
+
+WHAT I OBJECT TO: not the mechanic — the mechanic is excellent and it is the truest thing in
+the game, that a lone genius who overreaches loses the institutions first and the knowledge
+second. What I object to is that I watched it happen across a 12-year `step` and the only
+evidence was two numbers quietly getting smaller in a screen full of numbers. There was no
+"1362: your creditors took the school", no warning at 1350 that I was one bad decade from
+losing the corpus. A `step 12` should not be able to silently eat the pivot of the entire
+game. At minimum the loss of a work should be an EVENT line, the way completions are.
+
+WHAT I SHOULD HAVE DONE: not bought the furnace. Or rather — checked `why finery_puddling`
+again immediately before starting it, seen 207,811 instead of 106,567, and waited. There was
+no way to know I needed to, but there was a way to find out.
+
+Also tested `work scholar 1000`: 1,000 of my own hours as a jobbing scholar earns 359.9 den,
+against 30,000/yr from my works. Correct and quietly brutal: once you own capital, selling
+your own labour is pointless. I like that it is in the game and that it is a trap.

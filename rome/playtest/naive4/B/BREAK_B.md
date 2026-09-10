@@ -205,3 +205,211 @@ Argument validation is genuinely solid. All of these were cleanly refused with
 `work scholar inf`, `work scholar nan`, `step -5`, `step 0`, `step inf`,
 `step 1e9` ("only 499 years left before the horizon at 1800").
 NaN/Infinity are explicitly named and rejected everywhere I tried.
+
+## FINDING 9 (CRITICAL) — `bounty <id>` is an oracle that defeats fog of war entirely
+Setup chose fog of war ON. The game states: "With it on ... You cannot see where anything
+leads", and `path` is refused with "route planning is switched off under fog of war".
+`why <hidden id>` correctly refuses: "you have never heard of that."
+
+But `bounty` validates prerequisites BEFORE it checks whether you have heard of the thing,
+and prints the missing prerequisites **by name**:
+
+```
+[1302 AD] > bounty point_contact_transistor
+REFUSED: missing prerequisites: galena_detector, gp_whisker_forming, micrometer_gauges,
+prc_lapping_plate, quantum_solidstate_theory, single_crystal, vacuum_tube
+
+[1302 AD] > bounty vacuum_tube
+REFUSED: missing prerequisites: cap_vac_1e6, copper_refining, diffusion_pump,
+discharge_xray, gp_exhaust_pinchoff, gp_getter, gp_glass_metal_seal,
+in2_electron_source_cathode
+
+[1302 AD] > why vacuum_tube
+REFUSED: you have never heard of that.
+```
+Two commands in the same session disagree about whether I have heard of `vacuum_tube`.
+
+This is recursively exploitable. I wrote a breadth-first crawl that does nothing but
+issue `bounty <id>` and read the refusal text (script kept in my scratch dir, it drives the
+program only through stdin):
+
+```
+round 1: queried 1,  learned 1 nodes,   frontier 7
+round 2: queried 7,  learned 8 nodes,   frontier 27
+round 3: queried 27, learned 32 nodes,  frontier 53
+round 4: queried 53, learned 67 nodes,  frontier 59
+round 5: queried 59, learned 100 nodes, frontier 35
+round 6: queried 35, learned 121 nodes, frontier 13
+TOTAL distinct ids discovered: 134
+```
+In six rounds, from a standing start under fog, I recovered 134 hidden technology ids and
+the complete dependency graph from the goal backwards — precisely the thing the mode
+exists to withhold, and precisely what `path` refuses to give me.
+Confidence this is a real defect: **very high**. `stop`, `mothball`, `restore`, `why`,
+`path` and `available find` all guard the same information correctly; `bounty` is the
+single hole.
+
+## FINDING 10 (MEDIUM) — agent JSON protocol leaks into the plain-words UI
+`available` / `available all`, HEARD OF section:
+```
+  fin_company_town   needs 1 trained craftsmen on your own staff, you have 0.0. To get
+  more artisans: hire smith 3 or any trade in labour; or commission smith 400 to buy one
+  job instead of employing anybody; {"cmd":"buy","what":"slaves","n":N} then manumit,
+  though they are untrained for three years.
+```
+That `{"cmd":"buy","what":"slaves","n":N}` is machine protocol shown to a human player,
+in the middle of a sentence whose other two suggestions are in plain words. Pairs with
+Finding 3 (`help` telling a human to send JSON). Confidence: high.
+
+## FINDING 11 (LOW-MEDIUM) — `available find X` does not filter the "HEARD OF" section
+```
+> available find transistor
+AVAILABLE: 0 startable now
+1-0 matching 'transistor'
+(empty table)
+HEARD OF, CANNOT BEGIN YET:
+  cap_measure_time_ms ... chm_continuous_batch ... fin_company_town ... (all 9, unfiltered)
+```
+The same nine unrelated entries print for `available find vacuum`, `available find furnace`,
+etc. The search says "matching 'transistor'" and then lists nine things that do not match.
+Confidence: medium-high.
+
+## FINDING 12 (MEDIUM) — `bounty` says it buys the work from someone else, then charges
+## your own hours anyway (in the display at least)
+`help commands`: "bounty <id>: pay someone else to solve it instead".
+```
+[1301 AD] > bounty fin_employment_contract
+posted: fin_employment_contract / price: 23.4 / capital: 1,060
+[1301 AD] > state
+RUNNING (1):
+  Contract of employment        65% of your hours spent, 0 den still owed - waiting on your hours
+```
+It did complete a year later without consuming founder hours (state still showed 2,400 free),
+so the *outcome* looks right and the *status line* is wrong — "waiting on your hours" for a
+job you explicitly paid someone else to do. Confidence it's a display bug: medium-high.
+Side note: posting a bounty raised suspicion from 0 to 2, which is never explained anywhere.
+
+## Positive: bounty eligibility rules are well written
+```
+> bounty opt_gravimeter
+REFUSED: not bounty-eligible (tier 3, category measurement): a craftsman in England under
+Edward I could not recognise success at this without understanding the theory, so there is
+nothing to award the prize for. A bounty works where the craft already exists here and
+success is visible.
+```
+Good rule, well explained — which makes it more jarring that the same command leaks the tree.
+
+## Save-file handling: attacked, could not break
+- `save /tmp/x.json` -> "a save file must be a relative path, not an absolute one."
+- `save ../../../../../tmp/traversal2.json` -> "a save file cannot be written outside the
+  directory you started in." Nothing was written to /tmp.
+- `load /etc/passwd` -> refused (absolute path).
+- `load` of non-JSON, empty file, truncated JSON, and a valid-JSON-wrong-shape file all
+  produced clean REFUSED lines, including a helpful "A save this game writes always has all
+  of: year, capital, done, active, _civ, _version".
+- Hand-editing `capital` to `1e30` in the save and loading it is accepted (single-player,
+  low severity) and does NOT crash: stepping a year with 1e30 den works, and living costs
+  scale with wealth so it self-corrects downward. Worth noting: 1e30 denarii in 1302 England
+  produced suspicion 0 — conspicuous wealth appears not to be modelled as conspicuous.
+
+## FINDING 13 (MEDIUM-HIGH) — in the default England 1300 playthrough the Great Famine
+## never happens, though the game names it twice as a dated certainty
+Expectation: the scenario briefing says "Fifteen years to the Great Famine. Forty-eight to
+the Black Death", and `risk` lists `[1315-1317] Great Famine  staff loss: you take 100% of it`.
+I expected both to land on schedule.
+
+Repro — six independent fresh games, identical configuration, no player actions at all:
+```
+for i in 1..6:  printf '4\ny\npoor_scholar\nn\nstep 60\nstate\n' | python3 rome/sim/simulator.py
+```
+Every one produced: `EVENT 1348: Black Death: staff -45%`, `EVENT 1349: Black Death: staff -45%`
+and **zero** Great Famine events. `grep -i famine` finds the word only in the opening blurb.
+
+Two further points from the same experiment:
+- All six fresh games produced byte-identical event histories: same fires (1304, 1329, 1336,
+  1340), same war, same plague years. A new game is fully deterministic, so "the lifespan
+  lottery" the setup screen contrasts itself against does not exist for hazards either.
+- Yet the hazard rolls ARE perturbed by ordinary play. From a save made after a couple of
+  `work`/`start` commands, the Great Famine DOES fire (`EVENT 1315: Great Famine: staff -12%`,
+  `EVENT 1317: ...`); from another save two years later the **Black Death never fires at all**
+  across 1300-1800 (`grep -c 'Black Death'` = 0 over the whole run to the horizon).
+  So which of the two defining catastrophes of the scenario you get depends on incidental
+  earlier commands. Confidence: medium-high that at least the "certain, dated" framing is wrong.
+
+Related realism note: both plagues report "staff -12%" / "staff -45%" when you employ nobody,
+so in a solo run the two demographic catastrophes the scenario is built around have exactly
+zero mechanical effect. And `EVENT: fire in the thatched lanes behind the market` fires
+repeatedly against a player who owns no buildings.
+
+## FINDING 14 (MEDIUM) — `bribe` will take any amount of money to fix a scandal of zero
+```
+[1302 AD | 1052 den] > bribe 500
+bribed: scandal 0.00 -> 0.00 for 500 denarii
+capital: 552.8
+```
+Half my capital, gone, for a no-op. Every other command in the game refuses a pointless or
+impossible action with "Nothing was changed." (`buy manumit 999` -> "you have no slaves to
+free"; `close coal` -> "you have no coal workings"; `mothball fin_employment_contract` ->
+"that costs nothing to keep; there is nothing to save"). `bribe` alone silently burns it.
+Confidence: high.
+
+## FINDING 15 (MEDIUM) — `auto shed` is on by default and quietly deletes your score
+`policy` shows `auto shed: True`, described as "let go of WORKS that cost more than they
+return (this is about buildings and practices, not people)". In a long run:
+```
+EVENT 1359: stopped maintaining 1 works that cost more than they returned: cap_measure_time_s
+```
+and `state` went from "2 built by you" to "1 built by you". The end-of-run verdict is
+"You built 1 things of your own" — the game's only score, silently revised downward by an
+automation that is on unless you find and switch it off. Note the very first thing
+`available` offers a new player, `cap_measure_time_s`, is a 0-cost 0-hour item with 20 den/yr
+upkeep and no revenue, i.e. exactly the thing auto-shed will later delete.
+Also "You built 1 things" — grammar.
+
+## FINDING 16 (LOW) — mothball/restore is free and instant, so upkeep is optional
+```
+> mothball cap_measure_time_s
+mothballed: ... you stop paying 20 a year for it
+> restore cap_measure_time_s
+restored: cap_measure_time_s back in service for 0 denarii
+```
+No cost, no delay, unlimited repetition. Upkeep can be dodged by mothballing in the years
+you do not need a thing. Confidence it is exploitable: high; severity low.
+
+## FINDING 17 (MEDIUM) — the ledger pays you for things the game says are not yours
+`money` at 1302:
+```
+Capital: 552.8 den     Revenue: 253.5 den/yr
+  from:
+    med_cataract_couching        181.5
+    med_trepanation               72.6
+```
+That is my entire income. But:
+```
+> mothball med_cataract_couching
+REFUSED: that is something the society has, not something you maintain; there is no upkeep
+of yours to stop
+```
+So the same two technologies are simultaneously "the society's, not yours" and the sole
+source of your personal revenue, and you cannot stop, sell or mothball them. It also means
+the "poor scholar, 400 den, about enough to eat for a few months" framing is wrong: you
+actually start with a ~250 den/yr medieval eye-surgery and skull-drilling practice that you
+never chose and cannot decline. Confidence something is inconsistent: high.
+
+## FINDING 18 (LOW) — repeating insolvency loop with no way out and no warning
+Left alone, the England run goes bankrupt on a fixed 10-year cycle for centuries:
+```
+EVENT 1385: INSOLVENCY SETTLED: the debt is written off, you keep your name and your
+knowledge, and you begin again poor
+EVENT 1395: INSOLVENCY SETTLED: ...
+EVENT 1405: ... 1415 ... 1425 ... 1435 ... 1445 ... 1455 ... 1470 ...
+```
+Also note the text says "you keep your ... knowledge", yet my built-tech count had already
+dropped from 2 to 1 (Finding 15) — the two messages tell the player opposite things about
+whether what they built survives.
+
+## Determinism: attacked, could not break
+Same save + same commands is bit-for-bit reproducible. Slicing time differently does not
+change history: `step 60`, `step 20`x3, `step 1`+`step 59`, and `step 1`x60 from the same
+save all produce the identical 42-event log. Read-only commands (`state`, `labour`) inserted
+before a step do not perturb it. That is a good property and I could not shake it.

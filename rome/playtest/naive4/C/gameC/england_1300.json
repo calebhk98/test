@@ -6,7 +6,6 @@
   "state_capacity": 0.6
  },
  "_fog": true,
- "_immortal": true,
  "_said_debasement": null,
  "_version": 1,
  "_weights": {
@@ -14,18 +13,25 @@
   "_note_eminence": "A king who can attaint you, but also chartered towns, guilds and a church with its own courts, so power is more divided than in Rome.",
   "adaptation_rate": 0.09,
   "bribability": 0.65,
-  "patronage_weight": 0.7499999999999998,
+  "patronage_weight": 0.723076923076923,
   "w_commerce": 0.6,
   "w_eminence_danger": 0.55,
   "w_information": -0.4,
   "w_labour_saving": -0.4,
   "w_magic_fear": 0.7,
   "w_military": 0.8,
-  "w_novelty": -0.20000000000000034,
+  "w_novelty": -0.253846153846154,
   "w_religious_rigidity": 0.8
  },
- "active": {},
- "artisans": 0.7,
+ "active": {
+  "fin_trademark": {
+   "cost_left": 18.7,
+   "ph_left": 80.0,
+   "spent": 0.0,
+   "yrs": 0.0
+  }
+ },
+ "artisans": 0.0,
  "atrocity": 0,
  "binding": null,
  "bondage_debt": 0.0,
@@ -34,20 +40,19 @@
   "__set__": []
  },
  "bounties_paid": 0,
- "bribes_ytd": 2.135069039043722e-29,
- "capital": 4929.5396247852295,
+ "bribes_ytd": 0.0,
+ "capital": -132.81388964370004,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
  "dead_reason": null,
- "director_hours_spent_founder": 30.0,
+ "director_hours_spent_founder": 0.0,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
    "blast_furnace",
    "cap_heat_0700",
    "cap_heat_1300",
-   "cap_measure_time_s",
    "cap_power_muscle",
    "cap_power_water",
    "cap_tol_1mm",
@@ -68,7 +73,6 @@
    "hom_board_games",
    "hom_candle_beeswax",
    "hom_candle_tallow",
-   "hom_eraser_breadcrumb",
    "hom_flush_latrine_simple",
    "hom_furniture_wooden",
    "hom_hypocaust",
@@ -184,12 +188,10 @@
   ]
  },
  "done_year": {
-  "cap_measure_time_s": 1600,
-  "hom_eraser_breadcrumb": 1601,
   "pwr_ship_sail": 1300
  },
- "economy": 1.12,
- "eminence": 0.09731258349968384,
+ "economy": 1.09,
+ "eminence": 0.014657345991579371,
  "employees": {},
  "familiarity": 0.9,
  "forest_ha": 0.0,
@@ -341,15 +343,15 @@
   "effective_on_projects": 0.0,
   "offered_to_projects": 0.0,
   "teaching": 0.0,
-  "unused": 0.0,
-  "wage_work": 2400.0
+  "unused": 2400.0,
+  "wage_work": 0.0
  },
- "insolvent_years": 0,
- "interest_paid": 1956.5388338090074,
+ "insolvent_years": 36,
+ "interest_paid": 2333.778286925083,
  "last_patron_death": null,
- "last_settlement": 1458,
- "life_left": 999999500.0,
- "living_cost_paid": 130304.49411267394,
+ "last_settlement": 1386,
+ "life_left": 999999909.0,
+ "living_cost_paid": 35926.41996090227,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -362,7 +364,7 @@
   "__set__": []
  },
  "nitre_bed_m2": 0.0,
- "output_factor": 1.0,
+ "output_factor": 0.88,
  "policy": {
   "auto_bribe": false,
   "auto_buy_people": false,
@@ -374,39 +376,28 @@
   "auto_shed": true,
   "auto_train": false
  },
- "protection": 0.004924986923207183,
- "reputation": 1.2804966000338676,
+ "protection": 0.00027166533519230786,
+ "reputation": 0.07063298715000005,
  "revealed": {
-  "__set__": [
-   "cap_measure_time_ms",
-   "cap_measure_time_s",
-   "chm_continuous_batch",
-   "hom_eraser_breadcrumb",
-   "opt_ballistic_galvanometer",
-   "opt_gravimeter",
-   "opt_stellar_parallax",
-   "opt_transit_instrument",
-   "pwr_smeaton_efficiency",
-   "sc2_notation_metric_unit"
-  ]
+  "__set__": []
  },
  "scandal": 0.0,
  "scholars": 0.0,
- "slaves": 1,
+ "slaves": 0,
  "spend_last_year": 0.0,
  "stalled": 0,
  "suspicion": 0.0,
  "suspicion_mult": 1.0,
  "teaching_hours_this_year": 0.0,
  "throttle": 1.0,
- "total_spend": 5.50715,
+ "total_spend": 0.0,
  "trade_hours_used": {},
  "trades_created": {
   "__set__": []
  },
  "training": [],
  "wage_hours_this_year": 0.0,
- "wages_earned": 26861.67975865798,
+ "wages_earned": 30143.55058951143,
  "wages_paid": 0.0,
- "year": 1800
+ "year": 1391
 }
