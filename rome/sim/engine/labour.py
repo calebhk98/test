@@ -676,7 +676,16 @@ class LabourMixin:
         person is the whole point of `commission`."""
         contracted = sum(h for t, h in getattr(self, "contract_hours", {}).items()
                          if trade_family(t) == "craft")
-        return self.artisans + contracted / self.HOURS_PER_PERSON_YEAR
+        # AND YOURSELF. effective_scholars() has always counted the founder as
+        # one of the scholars - "you are your own natural philosopher" - and
+        # nothing counted them as a pair of hands, though the premise of the
+        # whole game is a person who knows how every one of these things is
+        # made. The asymmetry had a cost: workshop_first wants two craftsmen,
+        # and a Norse run that could field one could never build the place
+        # craftsmen work, so it ended six hundred years later with 136
+        # technologies and no staff at all.
+        own = 1.0 if self.founder_alive else 0.0
+        return self.artisans + own + contracted / self.HOURS_PER_PERSON_YEAR
 
     def commission(self, trade, hours):
         """Pay for a job, not for a person.

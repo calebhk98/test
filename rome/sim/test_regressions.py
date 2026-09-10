@@ -2074,6 +2074,25 @@ check("ventures is rendered as a table, not as raw Python",
       "CONCERNS" in _vr and "{'id':" not in _vr and "{\"id\":" not in _vr,
       [l for l in _vr.splitlines() if "{'" in l][:2])
 
+# effective_scholars() has always counted the founder as one of the scholars;
+# nothing counted them as a pair of hands, though the premise of the game is a
+# person who knows how every one of these things is made. workshop_first wants
+# two craftsmen, so a Norse run that could field one could never build the
+# place craftsmen work.
+s = sim(civ="norse_900ad")
+check("the founder is one of the craftsmen as well as one of the scholars",
+      s.craft_hands_available() >= 1.0 and s.effective_scholars() >= 1.0,
+      "%.1f hands, %.1f scholars, with nobody hired"
+      % (s.craft_hands_available(), s.effective_scholars()))
+s2 = sim(civ="norse_900ad")
+for _p in NODES["workshop_first"]["pre"]:
+    s2.done.add(_p)
+s2._done_changed()
+s2.hire("carpenter", 1)
+check("...so one hired hand is enough to raise your first workshop",
+      s2.start_reason("workshop_first")[0],
+      s2.start_reason("workshop_first")[1])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
