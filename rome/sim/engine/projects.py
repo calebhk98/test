@@ -63,7 +63,17 @@ class ProjectsMixin:
         if k not in getattr(self, "mothballed", set()):
             return False, "you have not shut that down"
         n = self.nodes[k]
-        fee = self.project_cost(k) * 0.3
+        # A FLOOR FROM THE UPKEEP, not only a share of the build cost. Thirty
+        # per cent of nothing is nothing, and a node that costs nothing to build
+        # while costing 20 a year to keep could be shut down and brought back
+        # around the annual tick for free, which made its upkeep optional. A
+        # tester did exactly that and the reply read "back in service for 0
+        # denarii". The engine already gets this right for mines - `quote mine`
+        # says in as many words that mothballing is not free to reverse,
+        # because the shaft floods and the crew disperses - so the asymmetry
+        # was an oversight rather than a decision. Two years of the upkeep you
+        # avoided is what it costs to find the people and the plant again.
+        fee = max(self.project_cost(k) * 0.3, n["up"] * 2.0)
         if fee > self.capital + self.credit_limit() * 0.5:
             return False, ("bringing it back costs %.0f denarii and you have %.0f"
                            % (fee, self.capital))
@@ -74,7 +84,8 @@ class ProjectsMixin:
         self.done.add(k)
         self._done_changed()
         self.mothballed.discard(k)
-        return True, ("%s back in service for %.0f denarii" % (k, fee))
+        return True, ("%s back in service for %s denarii"
+                      % (k, "{:,.0f}".format(fee)))
 
     def bribe(self, amount):
         """Pay your way out of trouble, deliberately, for a stated sum."""
@@ -332,9 +343,28 @@ class ProjectsMixin:
         ok, why = self.start_reason(k)
         if not ok:
             return False, why
+        # YOU MAY COMMIT PAST WHAT YOU HOLD, AND NOT PAST WHAT ANYONE WILL LEND.
+        # `help economy` states exactly that contract, and nothing enforced the
+        # second half. A break tester started all 104 available projects in a
+        # fresh England game - 43,914 denarii of work in hand against 400 in
+        # cash and a displayed credit limit of 1,503 - and was at -3,672 one
+        # step later. Committing to something you cannot yet afford is
+        # realistic project accounting and stays; committing to thirty times
+        # what anyone will advance you is not a plan, it is an accounting
+        # fiction, and the limit the player read a second earlier has to mean
+        # something.
+        price = self.project_cost(k)
+        owed = sum(st.get("cost_left") or 0.0 for st in self.active.values())
+        ceiling = max(0.0, self.capital) + self.credit_limit()
+        if self.active and owed + price > ceiling:
+            return False, ("you already owe %s denarii on work in hand; this "
+                           "would take it to %s, and between cash and credit "
+                           "you can raise %s. Finish or stop something first."
+                           % ("{:,.0f}".format(owed), "{:,.0f}".format(owed + price),
+                              "{:,.0f}".format(ceiling)))
         n = self.nodes[k]
         self.active[k] = dict(ph_left=float(n["ph"]), yrs=0.0, spent=0.0,
-                              cost_left=self.project_cost(k))
+                              cost_left=price)
         # Director hours in step() 5 are handed out by priority in `order`.
         # A thing you just chose to work on should get first call on your own
         # hours, exactly as the old (cosmetic) reprioritisation implied it did.

@@ -368,6 +368,17 @@ def cmd_play(a):
     _protocol.TYPED_HINTS = True
 
     session = getattr(a, "session", None)
+    # A --session THAT DOES NOT EXIST IS A TYPO, NOT AN INVITATION. Naming a
+    # save file that is not there used to start a brand new default game -
+    # Rome 100 AD, whatever you were playing - and then write it over that
+    # filename on the first command. A tester nearly lost a forty-year England
+    # run to a mistyped path. Starting a new game is what you do by naming a
+    # civilisation, so require that to be explicit.
+    if session and not os.path.exists(session) and not getattr(a, "civ", None):
+        print("there is no save at %r, and no --civ given, so I do not know "
+              "what game you meant. To resume, check the path; to start a new "
+              "game there, say which civilisation with --civ." % session)
+        return 1
     fresh = not (session and os.path.exists(session))
     if not fresh:
         try:

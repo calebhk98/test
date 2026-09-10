@@ -992,7 +992,9 @@ _sess = "%s/typed.json" % _PLAY_DIR
 # once and failed for ever after, on state left by itself.
 if os.path.exists(os.path.join(ROOT, _sess)):
     os.remove(os.path.join(ROOT, _sess))
-_pl4, _ = _play(["step 3", "quit"], extra=["--session", _sess])
+# --civ on the FIRST call, because that is the call that creates the game; the
+# resume below deliberately omits it, which is the whole point of the check.
+_pl4, _ = _play(["step 3", "quit"], civ="rome_100ad", extra=["--session", _sess])
 _pl5, _ = _play(["state", "quit"], extra=["--session", _sess])
 check("a typed game can be stopped and resumed from its own save file",
       "Resumed from" in _pl5 and "YEAR 103" in _pl5, _pl5[:300])
@@ -1440,6 +1442,60 @@ _last = max(_idx_o[k] for k in _need_o if k in _idx_o)
 check("everything the goal needs is near the front, not spread over the tree",
       _last < 400, "the last goal-critical node sits at index %d of %d"
                    % (_last, len(_order_o)))
+
+# --- the sweep of every playtest note: what was still live ------------------
+# S2. `start` took all 104 available projects in a fresh England game - 43,914
+# denarii of work in hand against 400 in cash and a displayed credit limit of
+# 1,503 - and put the player at -3,672 one step later. `help economy` promises
+# "as far as somebody will lend you and no further"; nothing enforced it.
+s = sim(civ="england_1300")
+_taken, _refused = 0, None
+for _k in list(s.order):
+    if s.can_start(_k):
+        _ok, _why = s.start_project(_k)
+        if _ok:
+            _taken += 1
+        elif "work in hand" in (_why or ""):
+            _refused = _why
+            break
+_owed = sum(st.get("cost_left") or 0.0 for st in s.active.values())
+check("you cannot commit to more work than cash and credit could ever cover",
+      _refused is not None and _owed <= max(0.0, s.capital) + s.credit_limit() + 1,
+      "took %d projects, owing %.0f against %.0f of cash and credit"
+      % (_taken, _owed, max(0.0, s.capital) + s.credit_limit()))
+
+# S14. A node that costs nothing to build and 20 a year to keep could be shut
+# down and brought back around the annual tick for nothing, so its upkeep was
+# optional. The engine already gets this right for mines.
+s = sim(civ="england_1300", capital=50000.0)
+_free = [k for k in NODES if NODES[k]["up"] > 0 and s.project_cost(k) < 1.0
+         and k not in s.granted and not NODES[k]["pre"]]
+s.done.add(_free[0])
+s._done_changed()
+s.mothball_work(_free[0])
+_cap = s.capital
+s.restore_work(_free[0])
+check("shutting a work down and reopening it is never free",
+      _cap - s.capital >= NODES[_free[0]]["up"],
+      "%s round trip cost %.0f against %.0f a year of upkeep"
+      % (_free[0], _cap - s.capital, NODES[_free[0]]["up"]))
+
+# S23/S24, both in the typed front end.
+_tp, _ = _play(["why AG2_MARLING", "step 1; step 1", "state", "quit"],
+               civ="england_1300")
+check("a typed id is not case-sensitive when the game knows the right one",
+      "COST:" in _tp, [l for l in _tp.splitlines() if "REFUSED" in l][:2])
+check("two commands on one line are refused, not half-executed",
+      "one command per line" in _tp and "YEAR 1300" in _tp, _tp[:200])
+
+# S3. Naming a save file that is not there started a brand new default game
+# and then wrote it over that filename. A tester nearly lost a forty-year
+# England run to a mistyped path.
+_missing, _rc_m = _play(["quit"], extra=["--session", "%s/no_such.json" % _PLAY_DIR])
+check("a save file that is not there is a typo, not a new game",
+      "do not know what game you meant" in _missing
+      and not os.path.exists(os.path.join(ROOT, _PLAY_DIR, "no_such.json")),
+      _missing[:200])
 
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)

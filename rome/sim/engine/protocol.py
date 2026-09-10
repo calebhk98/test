@@ -1599,6 +1599,15 @@ def parse_typed(line):
             return obj, None
         return None, "a JSON command needs a 'cmd' field."
 
+    # ONE COMMAND PER LINE. `step 1; step 1` advanced a single year and said
+    # nothing about the half of the line it dropped. Silently doing part of what
+    # was asked is the worst of the three options; the other two are doing all
+    # of it or saying you will not.
+    if ";" in text:
+        first = text.split(";")[0].strip()
+        return None, ("one command per line - I will not guess which half you "
+                      "meant. Send %r on its own line, then the next."
+                      % (first or text.strip()))
     parts = text.split()
     head = parts[0].lower()
     rest = parts[1:]
@@ -1665,7 +1674,11 @@ def parse_typed(line):
             return None, ("%s needs the name of a technology, e.g. '%s "
                           "fud_wheelbarrow'. 'available' lists what you can "
                           "begin now." % (op, op))
-        return {"cmd": op, "id": rest[0]}, None
+        # LOWERCASED. Every id in the tree is lower case, and `WHY AG2_MARLING`
+        # was refused with "unknown node 'AG2_MARLING'. did you mean:
+        # ag2_marling" - the game naming the right answer and declining to act
+        # on it. Case is not a decision the player is making.
+        return {"cmd": op, "id": rest[0].lower()}, None
 
     if op == "bribe":
         if not nums:
