@@ -588,14 +588,14 @@
    "p": 1.2
   },
   "rubber_kg": {
-   "conf": "A",
-   "note": "UNOBTAINABLE, priced at an absurd number deliberately so that any recipe depending on it shows up instantly as impossible. Natural rubber is American. There is no route. Use mat_synthetic_rubber, which sits behind a full petrochemical industry, or accept leather, shellac, oiled linen and bitumen and be honest about how much worse they are.",
-   "p": 99999.0
+   "conf": "C",
+   "p": 120.0,
+   "note": "Landolphia and Funtumia vine latex, tapped in west and central Africa and carried up the coast: real, and reachable behind exp_coastal_africa, but with no established trade to buy into, which is what the 95% failure risk on mat_natural_rubber is for. Priced between shellac (40, an existing Indian Ocean trade) and silk (300). It used to sit at 99,999 as a sentinel for the abolished 'unobtainable' tier - a play tester worked out that one kilo was four hundred artisan-years and that a breadcrumb eraser cost 5 denarii against three million for a rubber one. Nothing is unobtainable; it is only elsewhere."
   },
   "rubber_tubing_kg": {
    "conf": "C",
-   "note": "UNOBTAINABLE, see rubber_kg. Substitute: lead pipe, glass tube with ground joints, or oiled leather.",
-   "p": 99999.0
+   "p": 180.0,
+   "note": "Rubber, plus the making of it into tube. See rubber_kg."
   },
   "sailcloth_kg": {
    "conf": "C",

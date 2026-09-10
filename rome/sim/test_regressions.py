@@ -4280,6 +4280,35 @@ check("...and it is more than the bare payroll, having bought a mason's year",
       _why_cn["you_have"]["artisans"] > s_cn.artisans + 0.5,
       (_why_cn["you_have"]["artisans"], s_cn.artisans))
 
+# --- BREAK: rubber was priced at 99,999 a kilo, a sentinel left over from the
+# abolished "unobtainable" tier, and it survived the abolition of the concept
+# that justified it. A play tester worked out that one kilo was four hundred
+# artisan-years, that a rubber eraser cost 3,001,105 against 5 for a
+# breadcrumb, and that securing a rubber supply did not change the price by a
+# denarius. It was also over half of the whole tree's capital cost.
+_RUB = ("rubber_kg", "rubber_tubing_kg")
+for _r in _RUB:
+    check("%s is priced like a distant import, not like a sentinel" % _r,
+          0 < PRICES["purchase_prices_denarii"][_r]["p"] < 1000,
+          PRICES["purchase_prices_denarii"][_r]["p"])
+# ...and the reason the sentinel existed - that nothing stopped you buying it -
+# is answered where it belongs, in the tree: you cannot use rubber until you
+# have gone and got some.
+def _anc_of(k, seen=None):
+    seen = seen if seen is not None else set()
+    for _p in NODES[k]["pre"]:
+        if _p not in seen:
+            seen.add(_p); _anc_of(_p, seen)
+    return seen
+_rub_users = sorted(k for k, v in NODES.items()
+                    if any("rubber" in m for m in (v.get("mat") or {})))
+_ungated = [k for k in _rub_users
+            if not ({"mat_natural_rubber", "mat_synthetic_rubber"} & _anc_of(k))]
+check("nothing can be made of rubber without first securing rubber",
+      not _ungated, _ungated)
+check("(and there really are rubber recipes to gate)", len(_rub_users) > 10,
+      len(_rub_users))
+
 # --- BREAK: grant_ambient ran BEFORE the civ's named starting_techs were
 # added, so anything they unlocked was credited on the player's first `step`
 # and printed as "COMPLETED 100: Amphitheatre with tiered seating" - a
