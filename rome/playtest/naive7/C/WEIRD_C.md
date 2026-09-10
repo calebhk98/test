@@ -449,3 +449,54 @@ So `load` does not clear whatever set remembers which hazard announcements have 
 been made; it survives the load. The simulation is right and the narration is wrong. The
 practical effect is that a player who save-scums in-process is quietly shown a *less
 eventful* world than one who quits and comes back, and will conclude the crisis stopped.
+
+### 17. Debt makes the entire tech tree disappear
+
+While at -157 den, `available all` printed:
+
+    AVAILABLE: 0 startable now
+    1-0
+    ID   NAME   COST   HOURS   YEARS   RISK   EARNS/YR   UPKEEP   RESTS
+    (nothing)
+
+209 things became 0 because I was 157 denarii overdrawn, including the 5-denarius eraser.
+The pagination line renders as **"1-0"**. If a new player wandered into debt early — very
+easy, living costs run ahead of a poor scholar — the game would show them an empty world
+with no explanation on that screen at all. (The `state` nag does explain it, elsewhere.)
+
+### 18. "A site is sacked" takes 60% of your money and doesn't say so
+
+Working my way out of debt, year 283:
+
+    EVENT 283: Third century crisis: a site is sacked
+    money before step: 4,490      money after step: 1,685
+
+That is roughly **2,700 denarii, about 62% of everything I had**, removed by an event
+whose entire text is "a site is sacked", at a moment when `risk` was telling me
+"technologies at risk: **0**" and "hedge: nothing yet", and when `state` said I own
+nothing and employ nobody. I have no sites. The same event line had already fired five
+times during my idle century and cost me nothing, because I had nothing.
+
+So: the biggest single financial hit of my whole game arrived with no number attached, no
+mention on any screen, and a name that refers to property I do not own. Contrast, again,
+the plague's "you had nothing it could take", which is exactly the right treatment.
+
+### 19. 192 years pass and the tech tree has not moved a denarius
+
+Year 292 vs year 100, `available`:
+
+    year 100: 207 startable. cheapest: hom_eraser_breadcrumb 5 den. identity_cover 1,580.
+    year 292: 209 startable. cheapest: hom_eraser_breadcrumb 5 den. identity_cover 1,580.
+
+Between those two screens the currency lost **99%** of its value, the third century crisis
+cut trade and output to 65%, and Diocletian is about to fix wages and prices on pain of
+death. Wages: unchanged. Project costs: unchanged. Prices: unchanged. The only price in
+the game that responds to the debasement is my own revenue. The rest of the economy is a
+fixed price list wearing a century of monetary collapse as flavour text.
+
+**Expectation for the next move:** I have 4,578 den and I am going to try to
+**`start` all 209 things at once** — run everything, finish nothing. I expect the first
+few dozen cheap ones to be accepted and then a refusal on money or on staff ("STAFF
+NEEDED" appears on the `why` screens and I employ nobody). What I actually want to know is
+whether there is any cap on concurrent projects, because there is no mention of one
+anywhere in `help`.

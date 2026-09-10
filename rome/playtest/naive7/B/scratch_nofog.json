@@ -5,7 +5,7 @@
   "literacy_general": 0.12,
   "state_capacity": 0.85
  },
- "_fog": true,
+ "_fog": false,
  "_immortal": true,
  "_rng": [
   3,
@@ -634,7 +634,7 @@
    747480833,
    3545787415,
    3656373148,
-   104
+   48
   ],
   null
  ],
@@ -666,12 +666,12 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": 6832.713258562773,
+ "capital": 319.9523574002794,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
  "dead_reason": null,
- "director_hours_spent_founder": 370.0,
+ "director_hours_spent_founder": 160.0,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
@@ -810,37 +810,29 @@
    "tex_dye_murex",
    "tex_dye_woad",
    "tex_felting",
-   "tex_horizontal_loom",
-   "tex_indigo",
-   "tex_mordanting",
    "tex_sailcloth",
    "tex_silk_trade",
    "tex_two_beam_loom",
    "tex_warp_weighted_loom",
    "tex_wool",
-   "tr_hopper_wagon",
-   "tx2_retting"
+   "tr_hopper_wagon"
   ]
  },
  "done_year": {
   "civ_amphitheatre": 100,
   "civ_vault_barrel": 100,
   "hom_toys_dolls": 101,
-  "tex_horizontal_loom": 108,
-  "tex_indigo": 108,
-  "tex_mordanting": 108,
-  "tr_hopper_wagon": 105,
-  "tx2_retting": 107
+  "tr_hopper_wagon": 105
  },
  "economy": 1.03,
- "eminence": 0.20592621187329763,
+ "eminence": 0.041150030356573546,
  "employees": {},
- "familiarity": 0.47270757595695145,
+ "familiarity": 0.38121660819385916,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
  "goal_year": null,
- "gov": -0.8999999999999999,
+ "gov": 2.7755575615628914e-17,
  "granted": {
   "__set__": [
    "cap_heat_0700",
@@ -996,8 +988,8 @@
  "interest_paid": null,
  "last_patron_death": null,
  "last_settlement": -999,
- "life_left": 999999985.0,
- "living_cost_paid": 4307.488183052719,
+ "life_left": 999999993.0,
+ "living_cost_paid": 1617.8050448051988,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -1007,17 +999,13 @@
  "mine_tranches": [],
  "money_real": 1.0,
  "mothballed": {
-  "__set__": [
-   "tr_hopper_wagon"
-  ]
+  "__set__": []
  },
  "nitre_bed_m2": 0.0,
  "operating": {
   "__set__": [
    "hom_toys_dolls",
-   "tex_horizontal_loom",
-   "tex_indigo",
-   "tex_mordanting"
+   "tr_hopper_wagon"
   ]
  },
  "output_factor": 1.0,
@@ -1030,28 +1018,20 @@
   "auto_manumit": false,
   "auto_mine": false,
   "auto_mothball": true,
-  "auto_open": true,
+  "auto_open": false,
   "auto_shed": false,
   "auto_train": false
  },
- "protection": 0.04529767598910259,
- "reputation": 11.777395757166673,
+ "protection": 0.031032313785584464,
+ "reputation": 8.06840158425196,
  "revealed": {
   "__set__": [
    "hom_doll_fashion",
    "hom_toys_dolls",
-   "mat_dyes_synthetic",
-   "tex_canvas",
-   "tex_horizontal_loom",
-   "tex_indigo",
-   "tex_mordanting",
-   "tex_treadle_loom",
-   "tr_hopper_wagon",
-   "tx2_retting",
-   "tx2_scutching"
+   "tr_hopper_wagon"
   ]
  },
- "scandal": 3.5650958980272107,
+ "scandal": 1.7089364978257449,
  "scholars": 0.0,
  "slaves": 0,
  "spend_last_year": 0.0,
@@ -1060,7 +1040,7 @@
  "suspicion_mult": 1.0,
  "teaching_hours_this_year": 0.0,
  "throttle": 1.0,
- "total_spend": 890.4047499999999,
+ "total_spend": 341.52975,
  "trade_hours_used": {},
  "trades_created": {
   "__set__": []
@@ -1069,5 +1049,5 @@
  "wage_hours_this_year": 0.0,
  "wages_earned": 795.5147803125,
  "wages_paid": 0.0,
- "year": 115
+ "year": 107
 }

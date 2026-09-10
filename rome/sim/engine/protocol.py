@@ -809,6 +809,16 @@ def _node_explain(s, nodes, k):
                  "base_total": round(n["_total_cost"], 1),
                  "civ_domain_factor": round(s.civ_cost_factor(k), 3),
                  "material_distance_factor": round(s.material_cost_factor(k), 3),
+                 # THE SCARCITY PREMIUM, which project_cost multiplies in and
+                 # this breakdown did not list. A break tester multiplied the
+                 # shown factors out for clock_pendulum, got 4,747.6 against a
+                 # stated 4,834, and reported it as the one card in the game
+                 # whose arithmetic does not work. It was the only missing
+                 # term: what the market charges you for a material it barely
+                 # sells. Same lesson as price_index below - a breakdown that
+                 # omits a factor is worse than no breakdown, because it
+                 # invites exactly this check and then fails it.
+                 "scarce_material_premium": round(s.material_market_factor(k), 3),
                  "opposition_factor": round(s.opposition_factor(k), 3),
                  # THE FACTOR ACTUALLY MULTIPLIED IN, not a decoy. This field
                  # was filled with money_real while project_cost multiplies by
@@ -1287,10 +1297,13 @@ def render_why(out):
 
     L.append("")
     cost = out.get("cost") or {}
-    L.append("COST: %s den total  (%s labour + %s materials + %s capital, then x%s your civ, x%s distance, x%s prices)"
+    L.append("COST: %s den total  (%s labour + %s materials + %s capital, then "
+             "x%s your civ, x%s distance, x%s scarcity, x%s prices)"
              % (_fmt_num(cost.get("total")), _fmt_num(cost.get("labour")),
                 _fmt_num(cost.get("materials")), _fmt_num(cost.get("capital")),
-                _fmt_num(cost.get("civ_domain_factor")), _fmt_num(cost.get("material_distance_factor")),
+                _fmt_num(cost.get("civ_domain_factor")),
+                _fmt_num(cost.get("material_distance_factor")),
+                _fmt_num(cost.get("scarce_material_premium")),
                 _fmt_num(cost.get("price_index"))))
     L.append("YOUR HOURS: %s     CALENDAR FLOOR: %s years     FAILURE RISK: %s"
              % (_fmt_num(out.get("founder_hours")), _fmt_num(out.get("calendar_floor_years")),

@@ -182,3 +182,35 @@ once at setup and `help fog` says "there is no way to view the whole tree".
 (I restored `backup1.json` afterwards and kept playing with fog ON. The 1e12 experiment
 also revealed that living-and-appearances is ~1.5% of capital plus a base:
 capital 1e12 -> "living and appearances 15,000,000,270".)
+
+### FINDING 11 (confirmed) — supervision is enforced for some concerns and not others
+I employ nobody (`labour`: "Total employed: 0", wages 0). Yet:
+```
+> ventures
+RUNNING
+  tr_hopper_wagon    600  40   NEEDS 0 sch   1 cr      <- running on zero employees
+YOU KNOW HOW, AND HAVE NOT OPENED
+  tex_mordanting     150  15   TO OPEN 19.4
+> open tex_mordanting
+REFUSED: nobody free to keep an eye on it: it needs 0.0 scholars and 0.1 craftsmen to
+supervise, and you have 1.0 and 0.0 not already watching something else.
+```
+A concern needing 1 craftsman runs with none; a concern needing 0.1 craftsmen is refused.
+And in the same breath `ventures` says "free to put behind something new: 1 scholars,
+0.03 craftsmen" while `open` says "you have 1.0 and 0.0". 0.03 vs 0.0 for the same
+quantity, one line apart. Confidence: HIGH.
+
+### FINDING 12 (confirmed) — `policy auto_open` does not do what its own text says
+Text: "auto open: open concerns that plainly pay for themselves. It will NOT open anything
+whose upkeep exceeds its takings, however much you need it."
+With `auto_open` ON, 6,262 den in hand, `tex_mordanting` (earns 150/yr, upkeep 15/yr) sat
+unopened for 6 consecutive years. The real reason is the craftsman-supervision check above,
+which the policy text never mentions and which makes the stated rule wrong: the thing
+plainly pays for itself and is not opened. Confidence: HIGH that the description is wrong;
+MEDIUM that the behaviour is.
+
+### Hire/open/fire probe — engine catches it, but punishes the wrong thing
+`hire artisan 3` -> `open tex_mordanting` -> `fire artisan 3` -> `step 1` gives:
+"EVENT 114: nobody left to keep an eye on 1 concern, so tr_hopper_wagon closed."
+It closed the 600 den/yr concern and kept the 150 den/yr one I had just sneaked open.
+Not exploitable for profit, but the choice of victim is the worst possible one.

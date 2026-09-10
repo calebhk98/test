@@ -263,3 +263,40 @@ By 130: 30 techs of my own, 19 concerns running, 17 staff across 5 trades,
 +13,818 den/yr. Built the four RESTS:ALL items — precision_three_plate,
 water_power_scale, glass_clear, cementation_steel.
 
+### 130-145: the school, and the road to the transistor becomes visible
+
+**`risk` leaks what fog hides.** The hazard view listed "school_founded is one of
+them, waiting on: missing prerequisites: collegium_licensed, freedman_staff" —
+information `why school_founded` refused to give me ("2 other things you have not
+heard of yet"). I only found it because I was reading the plague entry. That is
+either a bug or a lovely accident; either way, `risk` is the best scouting tool
+in the game under fog.
+
+Chain to the school: patron_local → citizenship (5,100, 25% risk) →
+collegium_licensed (2,560) plus freedman_staff (10,000, buy 8 skilled slaves and
+free them) → school_founded (11,500, 2,000 founder hours, 4 years).
+
+The Roman framing here is the best writing in the game. `citizenship` is about
+provocatio, the right of appeal — "without it you are a body someone may dispose
+of". `collegium_licensed` cites Trajan refusing Pliny a fire brigade at
+Nicomedia in case it becomes a faction. `freedman_staff` argues that a freed,
+paid, literate worker transmits knowledge and a coerced one does not, so the
+ethical answer is also the efficient one. These are mechanics I would have
+guessed were flavour, and they are hard prerequisites.
+
+**The school did exactly what it promised.** Scholars 2 → 14.9. Revenue 35,219
+/yr with a new line "what your own workshop sells" at 15,304. And a new resource
+appeared in `state`: *"2,267 founder-hours free this year (2,000 of your own,
+plus 0.15 deputies directing work in your name at 1,800 hours each)"*. Deputies
+break the 2,000-hour ceiling that had become my hard limit. This is the single
+biggest structural change in the run and it justifies the "pivot of the entire
+game" language completely. My mistake was reaching it in 139 instead of ~115.
+
+Endgame road now legible through the "cannot begin yet" reasons:
+    calculus → newtonian_mechanics → em_theory → quantum_solidstate_theory
+    bellows_water_blown + cap_heat_1100 → cap_heat_1300 → blast_furnace → mat_copper → en_fuse
+    lead_metallurgy → crude_cell (first electricity) and → met_fire_assay
+    cap_power_steam → en_commutator, en_flywheel_storage
+blast_furnace is 270,274 den and "becomes the financial engine of the middle
+game" at 22,000/yr, 35% failure risk, 5-year floor that money cannot shorten.
+
