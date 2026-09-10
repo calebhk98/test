@@ -18,7 +18,7 @@ Drill Sergeant Ruiz has a voice built for open ground and shows no sign of ownin
 
 Ruiz pulls the blanket onto the floor with a single pull, stands up, then says the two words he says to everyone. "Again."
 
-Sam does it again, and it is wrong again in a different place, and it stays wrong day after day, until the rest of the bay stops finding it funny. A private named Okoro, brothers in the Guard, already knows most of it, and makes his own rack at half speed next to Sam so Sam can copy the folds. After that it takes Sam about ninety seconds, and he ends up in the back half of the platoon, roughly where he remains.
+Sam does it again, and it is wrong again in a different place, and it goes on being wrong for as long as Ruiz wants it wrong, because the fault moves each morning and the fold that passed on Tuesday does not pass on Wednesday. A private named Okoro, brothers in the Guard, already knows the trick of it and makes his own rack at half speed next to Sam so Sam can copy the folds. After that it takes Sam about forty seconds, and Ruiz finds his fault somewhere else.
 
 "I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
 
@@ -76,7 +76,7 @@ Word travels round the company by chow that day, the way a number like that alwa
 
 "Did you play ball or something, to put up a number like that on a cold morning? Because a guy in second platoon reckons most of those events were brand new to you."
 
-"They were. Boarding school." Sam, with most of a roll in his hand, is reaching past Okoro for the pitcher with the other. "I was middling there, so if you want a real number off me you can have my range number. Forty percent, every year I was there, sitting there whatever I tried on it."
+"They were. Boarding school." Sam, with most of a roll in his hand, is reaching past Okoro for the pitcher with the other. "I was middling there, so if you want a real number off me you can have my range number. Forty percent since I was fifteen, whatever I tried on it."
 
 "Forty percent of what, though?"
 
@@ -84,11 +84,11 @@ Word travels round the company by chow that day, the way a number like that alwa
 
 "Sure there were." The man who asked has both elbows planted either side of his tray, the way a man settles in for the rest of an argument he thinks is already over. "Nobody maxes that test on a cold morning but then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
 
-"The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, but then came and found me afterwards to apologize for it. She'd cracked a rib doing it, and wanted me to hear that part from her before the medic did."
+"The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She put me down twice inside a minute in front of thirty people, then came and found me afterwards to apologize for it. She'd cracked a rib doing it, and wanted me to hear that part from her before the medic did."
 
 "A girl."
 
-"She was second in the year and I was first, but she still put me down twice." He pours, taking his time, and sets the pitcher back in the middle of the table in exactly the spot he took it from. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
+"She was second in the year and I was first, but she still put me down twice." He pours, taking his time, and sets the pitcher back in the middle of the table in exactly the spot he took it from. "Then in April I lost a small thing out of my own boot and had to go and ask a friend to get me back in, so you can have that as well."
 
 By the end of it several of them are laughing at him, but another has stopped believing a word of any of it.
 
@@ -102,9 +102,9 @@ Later, watching the clock over the serving line, he makes the only gripe anybody
 
 ________________
 
-The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five meters, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a talk about it after. Half the groups coming off the line beside him would cover a dinner plate, from men his own age who have all been to school somewhere, and he cannot account for it. Sam waits all morning for somebody to say when the practice starts, and nobody does.
+The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five meters, groups of five on paper, at which point Sam puts all five inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a talk about it after. Half the groups coming off the line beside him would cover a dinner plate, from men his own age who have all been to school somewhere, and he cannot account for it. Sam waits all morning for somebody to say when the practice starts, and nobody does.
 
-This is roughly where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it squares with a single thing he knows about himself. At school his was the number that never moved, but Odile was level with him on the mat once and well ahead of him by the spring. Ruth shot ninety-one and found the whole business dull; Kavi beat him at every game with a board in it for years on end.
+This is roughly where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it squares with a single thing he knows about himself. At school his was the number that never moved, and Odile could still put him down on a day she had it and he did not. Ruth shot ninety-one and found the whole business dull; Kavi beat him at every game with a board in it for years on end.
 
 So he goes looking for the fault in the numbers.
 

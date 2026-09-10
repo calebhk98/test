@@ -108,7 +108,7 @@ But she stays where she is. The man in the doorway comes off the frame, walks ar
 
 "Eighteen since last June."
 
-"Jesus Christ." He looks over at the desk without lowering his voice at all. "She's eighteen years old, she's a kid, she's somebody's daughter. That is what is standing in the doorway of this office. Somebody at that desk had better say what we are doing about it."
+"Jesus Christ." He looks over at the desk without lowering his voice at all. "She's eighteen. Somebody at that desk had better say what we are doing about it."
 
 "Does your father know where you are this afternoon?"
 
@@ -146,7 +146,7 @@ At the same speed, she gives it back to him.
 
 A man at the folding table turns a printout face down.
 
-"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week. Every last name on his address gets a letter with a date on it, and everybody there signs a new lease somewhere else after that, because this address stops being usable the day the letter goes out, and finding a landlord who'll take cash from a room full of men with no company name works about as well as it sounds. I already have the letter drafted, sitting in a folder on my desktop with today's date on it, waiting on nothing but the send button."
+"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week. Every name on his address gets a letter with a date on it, and this address stops being usable the day it goes out. The letter is drafted and sitting on my desktop with today's date on it, waiting on the send button."
 
 The man behind the desk has come forward onto his elbows now.
 
@@ -242,35 +242,41 @@ So she makes it easier. The generator carries a difficulty figure, she moves it,
 
 The second thing is the interviews.
 
-In February she builds a pass over the submissions so that the reading gets done for her, tuned to put ten in front of her a week, and it does. The other sixty she reads as well, at the kitchen table before the phones start, because the ones it picks are not always the ones she'd have picked.
+In February she builds a pass over the submissions so the reading gets done for her, tuned to put ten in front of her a week, and it does. The other sixty she reads as well, at the kitchen table before the phones start, because the ones it picks are not always the ones she would have.
 
-She had meant to sit down with twelve people that year and she has sat down with thirty-one, nearly all of them by herself, in the back room with a folding table between chairs and a laptop open to whatever the candidate submitted the night before.
+She had meant to sit down with twelve people that year and has sat down with thirty-one, nearly all by herself, in the back room with a folding table between chairs and a laptop open to whatever the candidate submitted the night before.
 
-Something they built is what she asks them to explain, and most of them do that part fine, because years of resumes have taught people how to talk about their own work in front of a stranger. Then she asks two questions about it, and the first is usually fine as well, but the second asks what happens at the edge of the thing they built, out past the part they actually tested, and that is where most of them run out of road.
+Something they built is what she asks them to explain, and most do that part fine, because years of resumes have taught people to talk about their own work in front of a stranger. Then she asks two questions about it, and the first is usually fine as well, but the second asks what happens at the edge of the thing they built, past the part they tested, and that is where most of them run out of road.
 
 A candidate walks her carefully back through a payment system he'd built at his last job, confident throughout.
 
 "We put the whole thing behind a queue in the end, so nothing could reach the ledger twice. I wrote the retry logic and I wrote the piece that reconciles it against the bank file overnight. It ran eighteen months and it never lost a cent out of anybody's account."
 
-"What happens if two requests land in the same millisecond?" she asks.
+"What stops the same payment going in twice?" she asks.
 
-"That would be an edge case," he says.
+"Idempotency key on the request and a unique index on the ledger row. The second write hits the constraint and gets thrown away."
 
-She marks a line on his sheet and moves along to the next person.
+"What is the key made of?"
+
+"Account, amount, and the timestamp the client sends with it."
+
+"So a customer paying the same person the same amount twice inside a minute loses one of them, and the system files that as working. How would you find it in eighteen months?"
+
+He works at it out loud and gets as far as a complaint, then says he is not sure a complaint like that would reach him.
 
 Another spends the interview describing a scheduling tool with real pride in his voice.
 
 "It reads the constraints off the shift board and it hands back a whole week in about a second. The floor manager used to spend every Friday afternoon of his life on that, and now he doesn't. He printed the first week it made and put it up on the wall behind his desk, and it's still up there now, a little faded, next to the schedule it replaced."
 
-"Who checks it when the schedule it produces is simply wrong?" she asks.
+"What does it do when the constraints can't all be met?" she asks.
 
-"That's what the entire review step is there for."
+"Relaxes them in order. Coverage, then preferences, then the fairness rule, and it prints which one it broke along the bottom of the page."
 
-"Give me the name of the person who does the review."
+"He put the first week up on the wall. How long after that did he stop reading the bottom of the page?"
 
-"Whoever's on it that sprint, I suppose," he says, when she asks him a second time, and he still cannot produce a name.
+The candidate starts on the review step and hears himself somewhere in the middle of it.
 
-Whoever answers the second question properly gets a longer interview than the schedule allows for, because she would rather spend twenty extra minutes establishing where the boundary of that person's knowledge actually sits than finish the afternoon guessing at it.
+Whoever answers the second question properly gets a longer interview than the schedule allows for, because she would rather spend twenty minutes finding where that person's knowledge stops than finish the afternoon guessing at it.
 
 The ones she already has are the ones who answered it.
 

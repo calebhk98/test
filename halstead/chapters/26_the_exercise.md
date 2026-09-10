@@ -110,7 +110,7 @@ The soldier stands there listening to his own good luck read out loud, but looks
 
 Sam's turn comes third. Instead of calling him up to the front, the major leaves him where he is and starts in on the clipboard without a glance across the room.
 
-"Marsh." He looks up once from the clipboard. "Fence line, first night, two engagements, both of them yours, at twenty meters, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
+"Marsh." He looks up once from the clipboard. "Fence line, first night, two engagements, both of them yours, at twenty meters, against an element holding the far side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
 
 The next part he reads the way a form gets read.
 
