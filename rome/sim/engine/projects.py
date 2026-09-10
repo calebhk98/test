@@ -84,10 +84,25 @@ class ProjectsMixin:
         if amount > self.capital:
             return False, "you have %.0f denarii" % self.capital
         before = self.scandal
+        prot_before = self.protection
         self.capital -= amount
         self.bribes_ytd = 0.7 * self.bribes_ytd + amount
         self.scandal = max(0.0, self.scandal - amount / 300.0 * self.w["bribability"])
-        return True, ("scandal %.2f -> %.2f for %.0f denarii" % (before, self.scandal, amount))
+        self.update_protection()
+        # BOTH THINGS IT BUYS. A break tester spent 500 denarii against a
+        # scandal of zero, read "scandal 0.00 -> 0.00", and wrote it down as
+        # money silently burned. It was not: bribes_ytd feeds protection, which
+        # is what keeps an accusation from being made in the first place. A
+        # reply that names only the half that did not move is what made a real
+        # effect look like a bug.
+        msg = "scandal %.2f -> %.2f for %.0f denarii" % (before, self.scandal, amount)
+        if self.protection > prot_before + 0.0005:
+            msg += ("; advocacy and piety bought as well: protection %.2f -> %.2f"
+                    % (prot_before, self.protection))
+        elif before <= 0.0005:
+            msg += ("; you had no scandal to answer and are already as protected "
+                    "as money can make you, so this bought nothing")
+        return True, msg
 
     def bounty_eligible(self, k):
         """Can this be bought as a prize instead of built with your own hands?

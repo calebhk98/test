@@ -413,3 +413,199 @@ Same save + same commands is bit-for-bit reproducible. Slicing time differently 
 change history: `step 60`, `step 20`x3, `step 1`+`step 59`, and `step 1`x60 from the same
 save all produce the identical 42-event log. Read-only commands (`state`, `labour`) inserted
 before a step do not perturb it. That is a good property and I could not shake it.
+
+## FINDING 19 (HIGH) — `buy mine` takes every denarius you have, silently, and the only
+## tool the game tells you to use first was broken
+`help economy`: "buy mine coal 500 ... ASK THE PRICE FIRST with quote mine coal 500".
+At the time, `quote` was unusable (Finding 5). What `buy` actually did, with 1,084 den:
+```
+[1301 AD | 1083 den] > buy mine coal 500
+material: coal
+you asked for t per yr: 500
+commissioned t per yr: 109.5
+ready year: 1,304
+years until producing: 3
+capital: 0
+note: less than you asked for: limited by capital, by the ceiling your standing supports,
+or both. Nothing was wasted, you paid only for what was sunk.
+[1301 AD | 0 den ...]
+```
+It spent 100% of my capital on 22% of what I asked for, with no confirmation step, and the
+consolation note is "Nothing was wasted". Four years later:
+```
+Costs:  mines standing 180.6      Net/yr: -172.9
+> close coal
+closed: ... You stop paying 181 a year. What you spent sinking them is gone
+```
+i.e. 1,084 den sunk and destroyed, plus 181/yr, for coal that fed nothing. A single
+mistyped order can end a poor-scholar run. Confidence it is at least a serious usability
+defect: high. (Note the ledger also shows `mines standing 0` during the three years the
+shaft is being sunk, so the cost is invisible until it starts.)
+
+## FINDING 20 (MEDIUM) — "the debt is written off" leaves you in debt, and takes your name
+Repro: fresh England game, build two things, then start three projects you cannot afford
+(`fud_whaling_industry`, `chm_phosphorus_extraction`, `fin_inn`) and `step 12`:
+```
+EVENT 1310: CREDIT EXHAUSTED: 3 projects halted, unfinished. Nobody will fund new work here for some years
+EVENT 1310: INSOLVENCY SETTLED: the debt is written off, you keep your name and your knowledge, and you begin again poor
+```
+After it: `Capital: -820.4 den`, `Credit limit: 271.5`, `reputation 0.10` (was 8.6).
+So of the sentence's three promises — debt written off, keep your name, begin again — the
+debt is NOT written off (you are left owing three times your new credit limit, hence
+immediately insolvent again), and your name is gone. Only "knowledge" held up: built
+technologies did survive.
+This is the engine of Finding 18's endless 10-year insolvency cycle: settlement leaves you
+below your own credit line, so it re-fires forever. Confidence: high.
+
+## FINDING 21 (MEDIUM) — starting many projects at once blows past the stated credit limit
+```
+(fresh 1300 game, 400 den, "Credit limit: 1,503")
+> start <each of the 102 available ids>
+> step 1
+```
+102 projects accepted with no cap and no warning; `Still owed on work in hand: 44,063`
+against 400 den. From a 1,084-den save the same move spent 6,339 den in one year and left
+`Capital: -5,554` — 3x the 1,772 credit limit that was displayed when I made the decision.
+The limit is recomputed upward afterwards (reputation jumped 5.9 -> 31.7 from the 20
+completions), so the engine ends up "in limit" against a number that did not exist when the
+money was committed. `help economy` says "You may spend past what you have, as far as
+somebody will lend you and no further" — this is further. Confidence: medium-high.
+
+## FINDING 22 (MEDIUM) — the setup screen's claim about starting wealth is not true in play
+The purse menu says of `absurd`: "What it does NOT do is make you a magician, and across the
+whole kit range the medians sit inside the noise band anyway."
+I ran the identical scripted strategy (each year: start everything affordable within 60% of
+capital, then step) for 12 years, once per purse, same scenario, same fog setting:
+```
+destitute:      1312  built=8    money=83
+poor_scholar:   1312  built=51   money=2,366
+artisan:        1312  built=84   money=4,720
+merchant:       1312  built=115  money=16,862
+rich_merchant:  1312  built=143  money=30,590
+equestrian:     1312  built=109  money=35,459
+absurd:         1312  built=109  money=407,990
+```
+8 to 143 is not a noise band. A cruder strategy (bounty+start everything, unbudgeted) gives
+`poor_scholar built=0` vs `absurd built=86` over the same 12 years. Two secondary oddities:
+the curve is non-monotonic above 20,000 den (rich_merchant beats both equestrian and absurd,
+because "living and appearances" scales with capital), and `bounty` turns money straight into
+technology with no founder-hours at all — 9 completions in a single year from one round of
+bounty posting. Confidence the quoted claim is wrong as a player would read it: medium-high.
+
+## FINDING 23 (LOW) — misc parser/UI observations
+- `step 1; step 1` executes one step and silently discards the rest of the line.
+- `why AAAA...(5,000 chars)` echoes the whole 5,000-char string back inside the error.
+- `WHY AG2_MARLING` -> "unknown node 'AG2_MARLING'. did you mean: ag2_marling". It knows the
+  answer and still refuses; ids are case-sensitive with no reason given.
+- More JSON leaking into human errors: `start ../../etc/passwd` ->
+  `use available or {"cmd":"why","id":...} to find valid ids`.
+- Project status says "waiting on money" for a 10.2-den project while holding 1,084 den.
+- `EMPLOY: 0.05 people, 5.8 den/yr in wages` — fractional human beings on the payroll.
+- Bounty ineligibility reasons are category-derived and often absurd for the item:
+  `bounty hom_eraser_breadcrumb` (a breadcrumb used as an eraser) and
+  `bounty med_obstetric_practice` (tier 0 obstetrics) are both refused because "a craftsman
+  in England under Edward I could not recognise success at this without understanding the
+  theory". Midwives and bread existed.
+- The founder earns 0.28 den/hr doing `work scholar`, while `labour scholar` says the market
+  wage for a hired scholar is 0.35 den/hr. The man with all modern knowledge is paid 20%
+  below the going rate for an ordinary literate man.
+
+## FINDING 24 (REALISM) — chattel slaves for sale in Edward I's England
+```
+> buy slaves 5
+REFUSED: cannot afford 5 slaves: 2124 denarii (425 each after the market moves against a
+purchase this size) and you have 1084
+```
+The refusal is purely financial — the market exists and is priced. `help economy` defends the
+mechanic as "the ordinary condition of production in most of these societies", but chattel
+slavery was gone from England by ~1200; Edward I's England ran on villeinage. The same screen
+also prices everything in denarii and describes fortunes as multiples of "the equestrian
+census" and "senatorial fortunes" (Finding 4), and `available` in 1300 England offers me
+Papyrus, Parchment, Roman cosmetics, Obsidian blade knapping, a Groma, a Chorobates, a
+societas, argentarii and the Annona grain dole. The England scenario is very thinly
+localised over a Roman one. Confidence it is unintended: medium.
+
+---
+
+## LIVE-PATCH NOTE (important for reproducing my findings)
+The repository was being edited by someone else throughout this session. At 06:38 UTC,
+`git log --oneline -3` showed:
+```
+88d65a5 A save knows what game it is; the command line had to be told again
+0044f6e A project could be refunded hours it never spent
+```
+Re-verifying at 06:38 against the current build:
+- FINDING 5 (`quote` unusable) is now **FIXED**: `quote mine coal 500` and `quote coal 500`
+  both print a proper quote ("to sink it: 4,950 / every year it stands: 825 / years before
+  it produces: 3 / you can afford about: 109.5"). It was genuinely broken earlier in the
+  session; I am recording it because Finding 19 (`buy mine` eats your capital) was only
+  survivable in the window where it was broken.
+- FINDING 1b (`--civ` needed to resume) is now **FIXED**: `play --session england_1300.json`
+  resumes England correctly.
+- FINDING 1a still reproduces on the current build:
+  ```
+  mkdir /tmp/ttt && cd /tmp/ttt
+  printf '4\ny\npoor_scholar\nn\n' | python3 /home/user/test/rome/sim/simulator.py
+  -> "Saved to england_1300.json. Come back with: python3 rome/sim/simulator.py play --session england_1300.json"
+  ls /tmp/ttt   -> empty, no save written
+  printf 'state\n' | python3 rome/sim/simulator.py play --session england_1300.json
+  -> "You arrive in 100 AD ..."  (Rome, silently)
+  ```
+- FINDING 6 (`state` shows 2,400 founder-hours after spending them), FINDING 9 (bounty leaks
+  the hidden tree), FINDING 14 (`bribe` burns money on zero scandal) all still reproduce
+  at 06:38.
+
+## FINDING 25 (MEDIUM-HIGH) — the only warning in the STANDING block is inert, and its
+## prediction never comes true
+`state` prints, every turn:
+```
+STANDING: reputation 5   suspicion 0   scandal 0   eminence 0
+  dangerous above 26 (settles near 0.10 if nothing changes; 0% chance of ruin this year)
+```
+Expectation: crossing 26 should make ruin possible, and "settles near X" should be where the
+number drifts if I stop provoking it. Also, the line never says *which* of the four numbers
+26 applies to; by experiment it is suspicion (each `bounty` posted adds +2).
+
+Repro: load a save with 500,000 den, post ~15 bounties a year for three years, then idle:
+```
+STANDING: reputation 26.5   suspicion 30   scandal 2.0   eminence 0.43
+  dangerous above 26 (settles near 6 if nothing changes; 0% chance of ruin this year)
+> step 20
+STANDING: reputation 18.9   suspicion 30   scandal 0.20   eminence 4.3
+  dangerous above 26 (settles near 4.5 if nothing changes; 0% chance of ruin this year)
+```
+- suspicion sits at exactly 30 — four points past "dangerous" — and the chance of ruin is
+  reported as 0% every year for 23 consecutive years.
+- suspicion is apparently hard-capped at 30: further bounties do not move it.
+- "settles near 4.5 if nothing changes" — nothing changed for twenty years and it did not
+  move one point.
+So the game's single standing danger indicator names a threshold that does nothing, and
+makes a prediction that is contradicted by the next twenty turns of its own output.
+Confidence: high that at least the text is wrong.
+
+---
+
+# SUMMARY OF WHAT I ATTACKED AND COULD NOT BREAK
+- **Numeric validation.** Negative, zero, NaN, Infinity, 1e9 and non-numeric arguments to
+  `work`, `hire`, `fire`, `train`, `commission`, `buy`, `bribe`, `step`, `quote` are all
+  refused cleanly, usually with "Nothing was changed." NaN/Infinity are called out by name.
+- **Founder-hour budget.** Cannot be overdrawn; `work` is correctly capped at the remaining
+  hours (only the *display* of the remaining hours is wrong, Finding 6).
+- **Path handling.** `save`/`load` refuse absolute paths and `../` escapes; nothing was ever
+  written outside the start directory.
+- **Malformed saves.** Non-JSON, empty, truncated and wrong-shape JSON all refused with clear
+  messages; no traceback. Hand-tampered capital of 1e30 is accepted but does not overflow or
+  crash, and the wealth-scaled living costs pull it back down.
+- **Determinism.** Same save + same commands is bit-identical. `step 60` == `step 20`x3 ==
+  `step 1`x60 (identical 42-event log). Read-only commands do not perturb the RNG.
+- **Fog of war, everywhere except `bounty`.** `why`, `path`, `start`, `stop`, `mothball`,
+  `restore` and `available find` all refuse to name a technology you have not heard of.
+- **Duplicate/illegal state changes.** `start` twice -> "already active"; `stop` twice ->
+  "not active"; `restore` something not mothballed -> refused; `close` a mine you do not own
+  -> refused; `mothball` something with no upkeep -> refused.
+- **Command injection / odd input.** Shell metacharacters, SQL-ish strings, HTML, NUL bytes,
+  5,000-character ids, empty lines, tabs and non-ASCII all produce ordinary refusals, never
+  a crash.
+- No traceback or unhandled exception was ever produced by anything I typed. The single
+  crash I saw (`SyntaxError` in the engine, ~06:22) was another agent editing the source
+  mid-session, not my input.

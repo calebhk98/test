@@ -408,11 +408,21 @@ class SocietyMixin:
                 self.scholars *= (1 - loss); self.artisans *= (1 - loss)
                 for t in list(self.employees):
                     self.employees[t] *= (1 - loss)
-                self.directors_extra *= (1 - loss); self.capital *= (1 - loss * 0.6)
-                self.log.append((yr, "%s: staff -%d%%%s" % (h.get("name","hazard"),
-                                 loss * 100,
-                                 " (would have been -%d%%: %s)"
-                                 % (h["staff_loss"] * 100, "; ".join(why)) if why else "")))
+                self.directors_extra *= (1 - loss)
+                # THE MONEY GOES TOO, and the log never said so. A weird-play
+                # tester watched the Black Death take 12,676 denarii down to
+                # 9,111 against a stated net of -195 a year, with the only
+                # message reading "staff -45%", and reasonably concluded the
+                # accounts were broken. A plague empties the market as well as
+                # the workshop; that is real, and it has to be said.
+                cash = self.capital * loss * 0.6
+                self.capital -= cash
+                self.log.append((yr, "%s: staff -%d%%, and %s denarii gone with "
+                                     "the trade that stopped%s"
+                                 % (h.get("name", "hazard"), loss * 100,
+                                    "{:,.0f}".format(max(0.0, cash)),
+                                    " (would have been -%d%%: %s)"
+                                    % (h["staff_loss"] * 100, "; ".join(why)) if why else "")))
             if "sack_chance" in h:
                 relief, why = self.hazard_relief("sack_chance")
                 p = h["sack_chance"] * relief
@@ -456,9 +466,20 @@ class SocietyMixin:
                 floor = 1.0 - (1.0 - h["output_factor"]) * relief
                 before = self.output_factor
                 self.output_factor = min(self.output_factor, floor)
-                if before > self.output_factor:
+                # ONCE, AND THEN A REMINDER, not every year of a hundred-year
+                # war. output_factor recovers a little each step, so this line
+                # re-fired the moment the war pulled it back down - which is
+                # every single year. A weird-play tester read the same sentence
+                # about the Hundred Years War roughly eighty times and stopped
+                # reading the log, which is the real cost: a message repeated
+                # until it is noise has stopped being a message.
+                said = getattr(self, "_said_output", {})
+                key = h.get("name", "crisis")
+                if before > self.output_factor and yr - said.get(key, -99) >= 20:
+                    said[key] = yr
+                    self._said_output = said
                     self.log.append((yr, "%s: trade and output fall to %d%% of normal"
-                                     % (h.get("name", "crisis"), self.output_factor * 100)))
+                                     % (key, self.output_factor * 100)))
             if "real_erosion" in h:
                 relief, why = self.hazard_relief("real_erosion")
                 self.money_real *= (1 - h["real_erosion"])

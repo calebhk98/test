@@ -72,8 +72,16 @@ def _agent_state(s, nodes, cmd=None):
                      "bountied": k in s.bountied}
     end_reason = _agent_end_reason(s)
     full = bool((cmd or {}).get("full"))
+    end_year = getattr(s, "end_year", s.cfg["start_year"] + s.cfg["horizon_years"])
     out = {
-        "year": s.year, "capital": round(s.capital, 1), "revenue": round(s.revenue(), 1),
+        "year": s.year,
+        # HOW MUCH TIME IS LEFT. A weird-play tester ran to the end of a
+        # five-hundred-year game and wrote that "the hidden 1800 horizon is
+        # announced nowhere until you overshoot it". It was in one help topic
+        # and in no reply anybody reads every turn. A clock you cannot see is
+        # not a constraint, it is an ambush.
+        "horizon_year": end_year, "years_left": max(0, end_year - s.year),
+        "capital": round(s.capital, 1), "revenue": round(s.revenue(), 1),
         "upkeep": round(s.upkeep(), 1),
         # A playtester watched capital fall 400 to 184 on the first step with
         # nothing active and both revenue and upkeep reported as zero, and no
@@ -115,7 +123,17 @@ def _agent_state(s, nodes, cmd=None):
              "trade": (row[2] if len(row) > 2 else None),
              "people": (row[3] if len(row) > 3 else None)}
             for row in getattr(s, "training", [])],
-        "founder_hours_available": round(s.director_pool(), 1),
+        # LESS WHAT YOU HAVE ALREADY SOLD. A break tester worked 2,300 hours as
+        # a scholar, was told "hours left: 0" by the work reply, and then read
+        # "2,400 founder-hours free this year" in state and on the prompt in the
+        # same breath - and was refused one more hour for having none. The pool
+        # is the pool; what is FREE is the pool less the hours already spent on
+        # wage work.
+        "founder_hours_available": round(
+            max(0.0, s.director_pool()
+                - getattr(s, "wage_hours_this_year", 0.0)), 1),
+        "founder_hours_sold_for_wages_this_year": round(
+            getattr(s, "wage_hours_this_year", 0.0), 1),
         # LAST YEAR'S HOURS, ACCOUNTED FOR. Set in step(); see the comment
         # there. available is this year's fresh figure, not last year's -
         # read it alongside, not in place of, hours_this_year.
@@ -274,7 +292,15 @@ def _agent_help(s, topic=None):
                 "why <id>": "everything known about one thing",
                 "step <years>": "let time pass",
             },
+            # Which of the two front ends is reading. `play` types words and
+            # `agent` sends JSON, and telling a person at a keyboard to send
+            # one JSON object per line - which this did - is telling them to
+            # do something the program they are using does not ask for.
             "how to send a command": (
+                'One command per line, in plain words: "available", '
+                '"step 5", "hire smith 2", "why fud_wheelbarrow". Pasting a '
+                'JSON command works too, if you happen to have one.'
+                if TYPED_HINTS else
                 'One JSON object per line on standard input, for example '
                 '{"cmd":"available"} or {"cmd":"step","years":5}. Each reply is '
                 'one JSON object.'),
@@ -737,7 +763,13 @@ def render_state(out):
     L = []
     year = out.get("year")
     L.append("=" * 60)
-    L.append(("YEAR %s" % year) if year is not None else "STATE")
+    # WITH THE CLOCK ON IT. The horizon was in one help topic and in no reply
+    # anyone reads every turn, so a tester met it only by overshooting it.
+    left = out.get("years_left")
+    L.append(("YEAR %s%s" % (year, ("   (%s years to the horizon at %s)"
+                                    % (_fmt_num(left), out.get("horizon_year")))
+                             if left is not None else ""))
+             if year is not None else "STATE")
     L.append("=" * 60)
     if out.get("ended"):
         L.append("")
@@ -1212,19 +1244,33 @@ def _typed_form(obj):
     return " ".join(bits)
 
 
+# Values may be a bare word rather than a literal: several hints are written as
+# worked examples with a placeholder in them ({"cmd":"buy","what":"slaves",
+# "n":N}), which is not valid JSON and so survived the first version of this
+# untouched, in front of a person who had been told to type words.
 _JSON_HINT = re.compile(r'\{"cmd"\s*:\s*"[a-z_]+"(?:\s*,\s*"[a-z_]+"\s*:\s*'
-                        r'(?:"[^"]*"|-?[0-9.]+|true|false|\{[^{}]*\}))*\}')
+                        r'(?:"[^"]*"|-?[0-9.]+|true|false|[A-Za-z_][A-Za-z0-9_]*'
+                        r'|\{[^{}]*\}))*\}')
+_JSON_PAIR = re.compile(r'"([a-z_]+)"\s*:\s*("(?:[^"]*)"|-?[0-9.]+|true|false'
+                        r'|[A-Za-z_][A-Za-z0-9_]*)')
 
 
 def to_typed_hints(text):
     """Rewrite every {"cmd":...} example in rendered text as a typed command.
     Best-effort: anything that will not parse is left exactly as it was."""
     def sub(m):
+        raw = m.group(0)
         try:
-            obj = json.loads(m.group(0))
+            obj = json.loads(raw)
         except ValueError:
-            return m.group(0)
-        return _typed_form(obj) or m.group(0)
+            # A worked example with a placeholder in it. Read the pairs off
+            # textually and keep the placeholder as the player sees it.
+            obj = {}
+            for key, val in _JSON_PAIR.findall(raw):
+                obj[key] = val[1:-1] if val.startswith('"') else val
+            if "cmd" not in obj:
+                return raw
+        return _typed_form(obj) or raw
     return _JSON_HINT.sub(sub, text)
 
 
@@ -1443,7 +1489,10 @@ def parse_typed(line):
         return {"cmd": op}, None
 
     if op == "state":
-        return {"cmd": "state", "full": bool(rest and rest[0].lower() == "full")}, None
+        # 'state full' and 'state full:true' both mean the same thing, and a
+        # player who has read the JSON docs will type the second.
+        want_full = bool(rest) and rest[0].lower().split(":")[0] == "full"
+        return {"cmd": "state", "full": want_full}, None
 
     if op == "available":
         # 'available' alone is the digest. The rest are the same narrowings the
@@ -1548,7 +1597,8 @@ def parse_typed(line):
             return None, "say which mineral, e.g. '%s mine coal 500'." % op
         # 'buy coal 500' means the same thing and is what a person types; the
         # protocol wants it spelled out as a mine in a mineral.
-        if out["what"] not in ("forest", "slaves", "mine", "mines", "people"):
+        if out["what"] not in ("forest", "slaves", "mine", "mines", "people",
+                               "manumit", "manumission", "free"):
             out["material"], out["what"] = out["what"], "mine"
         if out["what"] == "mines":
             out["what"] = "mine"
@@ -1588,10 +1638,33 @@ def parse_typed(line):
     return {"cmd": op}, None
 
 
+# Every command that names a technology. Under fog, NONE of them may say
+# anything about one you have not heard of - including refusing it for a reason
+# that describes it.
+_ID_COMMANDS = ("why", "path", "start", "stop", "bounty", "mothball", "restore")
+
+
 def _agent_dispatch(s, nodes, cmd):
     if not isinstance(cmd, dict) or "cmd" not in cmd:
         return {"ok": False, "error": "each line must be a JSON object with a 'cmd' field, "
                                       "e.g. {\"cmd\":\"state\"}"}
+    # ONE GUARD, FOR EVERY COMMAND THAT TAKES AN ID. `why` checked visibility
+    # and `bounty` did not: it checked prerequisites first, so refusing a
+    # bounty on the goal node printed the goal's seven missing prerequisites by
+    # name. A break tester crawled that error recursively and recovered 134
+    # hidden technology ids and the entire dependency graph to the transistor
+    # in six rounds, with fog on the whole time. Patching bounty alone would
+    # leave the next command that grows an id to make the same mistake, so the
+    # check lives here, once, before any handler sees the id.
+    if getattr(s, "fog", False) and isinstance(cmd.get("cmd"), str):
+        _op = cmd["cmd"].strip().lower()
+        _k = cmd.get("id")
+        if _op in _ID_COMMANDS and isinstance(_k, str) and _k in nodes \
+                and not s.is_visible(_k):
+            return {"ok": False,
+                    "error": "you have never heard of that. You know what you have "
+                             "built and what you could begin next; nothing tells you "
+                             "what lies beyond that."}
     op = cmd.get("cmd")
     ended = _agent_end_reason(s)
 

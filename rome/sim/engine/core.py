@@ -101,7 +101,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             "auto_mine":     not manual,   # sink shafts when a material binds
             "auto_forest":   not manual,   # buy coppice when charcoal binds
             "auto_mothball": True,         # stop working what you cannot pay for
-            "auto_shed":     True,         # let go of works that cost more than they return
+            # OFF FOR A PLAYER, like every other automation, and on for the
+            # optimizer, which the long civilisation runs are calibrated
+            # against. This is the most consequential thing the game does
+            # without being asked: it discards technologies you built, which
+            # under fog are the only score there is. A break tester found it on
+            # by default and quietly deleting their work. Nothing stops a
+            # player shedding a loss-maker by hand - `mothball` does exactly
+            # that, and gets it back with `restore`.
+            "auto_shed":     not manual,
             "auto_bribe":    not manual,   # pay your way out of a scandal
         }
         self.founder_alive = True

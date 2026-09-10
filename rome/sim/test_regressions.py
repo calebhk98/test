@@ -1244,6 +1244,49 @@ _mq, _ = _play(["quote mine coal 500", "quote coal 500", "quit"], civ="england_1
 check("the mining commands the help gives actually parse",
       _mq.count("to sink it") == 2, _mq[:400])
 
+# --- the England break tester -------------------------------------------------
+# 1. THE FOG EXPLOIT. `bounty` checked prerequisites before it checked whether
+#    you had heard of the thing, so refusing a bounty on the goal printed the
+#    goal's seven missing prerequisites by name. The tester crawled that error
+#    recursively and recovered 134 hidden ids and the whole graph to the
+#    transistor, in six rounds, with fog on throughout.
+_bt, _, _ = proto([{"cmd": "bounty", "id": "point_contact_transistor"},
+                   {"cmd": "start", "id": "point_contact_transistor"},
+                   {"cmd": "mothball", "id": "point_contact_transistor"},
+                   {"cmd": "why", "id": "point_contact_transistor"}], fog=True)
+check("no command names a prerequisite of something you have not heard of",
+      all(r.get("ok") is False and "never heard of" in (r.get("error") or "")
+          for r in _bt),
+      [r.get("error", "")[:70] for r in _bt])
+
+# 2. The menu promises "Saved to X. Come back with ..."; a tester quit before
+#    typing anything, found no file, followed the printed line, and landed in a
+#    different civilisation's fresh game.
+_sv = "%s/promised.json" % _PLAY_DIR
+if os.path.exists(os.path.join(ROOT, _sv)):
+    os.remove(os.path.join(ROOT, _sv))
+_play(["quit"], civ="england_1300", extra=["--session", _sv])
+check("a save the game promised exists even if you type nothing",
+      os.path.exists(os.path.join(ROOT, _sv)), _sv)
+
+# 3. state and the prompt both said 2,400 founder-hours free after 2,300 of
+#    them had been sold, and then refused one more hour for having none.
+s = sim()
+_pool = s.director_pool()
+s.work_for_wages("scholar", _pool - 100)
+_st2, _, _ = proto([{"cmd": "work", "trade": "scholar", "hours": 2300},
+                    {"cmd": "state"}])
+check("hours already sold for wages are not still reported as free",
+      _st2[1]["founder_hours_available"] < 200,
+      "%r free after selling 2300" % _st2[1].get("founder_hours_available"))
+
+# 4. auto_shed discards technologies you built - under fog the only score there
+#    is - and it was on by default for a player.
+check("nothing that deletes your work is on by default for a player",
+      sim(manual=True).policy["auto_shed"] is False
+      and sim(manual=False).policy["auto_shed"] is True,
+      (sim(manual=True).policy["auto_shed"], sim(manual=False).policy["auto_shed"]))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

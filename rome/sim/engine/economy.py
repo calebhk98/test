@@ -289,9 +289,17 @@ class EconomyMixin:
             self.last_settlement = yr
             self.capital = -limit * 0.35
             self.reputation = max(0.0, self.reputation - 12)
-            self.log.append((yr, "INSOLVENCY SETTLED: the debt is written off, you "
-                                 "keep your name and your knowledge, and you begin "
-                                 "again poor"))
+            # SAY WHAT ACTUALLY HAPPENED. "The debt is written off" while
+            # leaving the player owing a third of their credit line is a
+            # sentence that contradicts the number on the next line, and a
+            # weird-play tester watched it fire eight times and concluded it
+            # did nothing at all. Most of it goes; what is left, and what it
+            # cost your name, is the part worth reading.
+            self.log.append((yr, "INSOLVENCY SETTLED: most of the debt is written "
+                                 "off and you still owe about %s denarii. Your "
+                                 "name is worth less for it (reputation -12), and "
+                                 "you keep your knowledge and your practice"
+                                 % "{:,.0f}".format(limit * 0.35)))
 
     def cost_money_factor(self):
         """What a denarius of QUOTED cost means, for spending purposes.

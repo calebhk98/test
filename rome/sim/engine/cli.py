@@ -323,6 +323,13 @@ def cmd_play(a):
             return 1
         print("Resumed from %s: %d AD." % (session, s.year))
 
+    if fresh and session:
+        # WRITE IT NOW, not after the first command. The menu tells the player
+        # "Saved to X. Come back with ..." and a break tester quit before
+        # typing anything, found no file, followed the printed line anyway and
+        # was dropped into a different civilisation's fresh game. A save the
+        # game has promised has to exist from the moment it is promised.
+        save_state(s, session)
     if fresh:
         print()
         print(_wrap("You arrive in %d AD with %d denarii and nothing else: no "
@@ -338,8 +345,13 @@ def cmd_play(a):
         print()
 
     while True:
+        # The same figure state reports: the pool LESS hours already sold for
+        # wages. The prompt disagreeing with state about the one number on it
+        # is how a tester found the accounting wrong in the first place.
+        free_hours = max(0.0, s.director_pool()
+                         - getattr(s, "wage_hours_this_year", 0.0))
         prompt = ("[%d AD | %d den | you:%d hr | sch %.0f art %.0f | rep %.0f] > "
-                  % (s.year, s.capital, s.director_pool(), s.scholars,
+                  % (s.year, s.capital, free_hours, s.scholars,
                      s.artisans, s.reputation))
         try:
             line = input(prompt)
@@ -367,10 +379,18 @@ def cmd_play(a):
             save_state(s, session)
         if cmd.get("cmd") == "quit":
             break
+        # NOT A BREAK. This used to end the process the moment the horizon was
+        # reached, so a weird-play tester who ran out of years could type
+        # exactly one more command and was then dropped back to the shell,
+        # unable to read their own final position. The dispatcher already
+        # refuses anything that would move the game on once it has ended; what
+        # is left is looking at it, which is the whole point of finishing.
         end = _agent_end_reason(s)
-        if end:
-            print(_wrap("The run has ended: %s" % end))
-            break
+        if end and not getattr(a, "_said_end", False):
+            a._said_end = True
+            print(_wrap("The run has ended: %s You can still look at anything; "
+                        "'quit' when you are done." % end))
+            print()
     print("Ended %d AD. %s" % (s.year, _agent_end_reason(s) or "stopped"))
     if session:
         print("Saved to %s. Come back with:" % session)

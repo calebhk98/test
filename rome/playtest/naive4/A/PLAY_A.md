@@ -471,3 +471,197 @@ no way to know I needed to, but there was a way to find out.
 Also tested `work scholar 1000`: 1,000 of my own hours as a jobbing scholar earns 359.9 den,
 against 30,000/yr from my works. Correct and quietly brutal: once you own capital, selling
 your own labour is pointless. I like that it is in the game and that it is a trap.
+
+### 1374-1395: recovery, and the game becomes a spreadsheet
+Restore prices are ~10% of build cost (corpus 1,271, collegium 718, freedman_staff 2,805,
+school 3,795), so recovering from the disaster cost 8,589 den and one command each. That is
+a merciful design and I was glad of it — but it also means the catastrophe that removed
+99 -> 85 technologies was undone for under 9,000 denarii, which slightly undercuts how
+frightening it was.
+Note: school_founded REFUSED to restore until collegium_licensed and freedman_staff were
+back — "you no longer have what it stands on". Correct and well-worded.
+
+By 1395: 221 technologies, 224,097 den, net +30,168/yr, 47.6 staff, reputation 91.
+Founder hours (3,350/yr and rising) are now the only real constraint; every big project sits
+at "90% of your hours spent, 0 den still owed - waiting on your hours". That is the right
+end-state for a game called ONE PERSON, AND EVERYTHING THEY KNOW, and I think it is the
+game's best structural idea: money -> people -> your own irreplaceable time.
+
+HONEST OBSERVATION ABOUT MY OWN PLAY: from about 1380 the optimal move stopped being
+interesting. The winning loop is mechanical — dump `available all`, run `why` on every id,
+score each by (revenue - upkeep)/cost plus a bonus for "almost everything"/"a great deal",
+start everything affordable, `step 10`, repeat. I wrote that loop as a script and it plays
+better than I did by hand. The reason it works is that the game gives no penalty for
+breadth: there is no attention limit, no maintenance-of-focus, nothing that makes starting
+84 projects at once worse than starting 8. The only limiter is money and founder hours, and
+both scale faster than the costs do once you are past the spine.
+
+### 1431-1437: trained the trades that do not exist
+`train chemist 3` / `engineer 3` / `machinist 3` were REFUSED with the same excellent
+literacy-ceiling message ("will not supply more than 2.8 chemists in total, ever, at any
+price"), but `train optician 2` and `train electrician 2` went through, and switching
+`policy auto_train on` then quietly produced 2 of every missing trade by 1435:
+  "EVENT 1433: 2 opticians finish their training" ... "EVENT 1435: 2 chemists finish"
+By 1437: 323 technologies, 662,276 den, 79.6 staff including 2 each of chemist, electrician,
+engineer, machinist, optician — the five trades the 1300 briefing said England did not have.
+That closed the loop on the very first thing the game told me about this civilisation, 137
+in-game years later. Satisfying.
+
+### 1437: RUN ENDED BY AN ENVIRONMENT FAULT, not by the game
+My next command failed with:
+  "could not read the save file 'england_1300.json': this save refers to node(s) the current
+   tech tree does not have: chemist, electrician, engineer, machinist, optician. The tree has
+   changed since this was saved; it cannot be loaded against this version of the game."
+The repository is being edited by others while I play (I had already hit a transient
+SyntaxError in the engine earlier in the run and worked around it by retrying). This time the
+tech-tree data changed underneath a live save and the save became permanently unloadable.
+That is not a fair criticism of the game design, but it IS a real robustness finding:
+  - a save that references trained trades cannot survive a tree edit,
+  - the failure is total (no partial load, no "drop the unknown nodes and continue"),
+  - and the message offers no recovery path at all, not even "start a new game".
+For a program whose whole selling point is "stop any time and come back", a save format
+this brittle is worth hardening: unknown node ids in a save could be dropped with a warning
+rather than refusing the file.
+FINAL STATE REACHED: 1437 AD, 323 technologies built by me (461 total), 662,276 denarii,
+79.6 staff, reputation ~70, corpus written, school founded, Black Death and half the
+Hundred Years War survived. 363 years short of the 1800 horizon.
+
+---
+
+## SUMMARY OF EXPECTATIONS vs REALITY
+
+| I expected | What happened | What made me expect it |
+|---|---|---|
+| I'd have to find an income | I started with a surgical practice earning 232.8/yr | The intro says "about enough money to eat for a few months" and never mentions the practice; only `money` reveals it |
+| Cheap + low-risk = good opening | Cheapness is nearly uncorrelated with value; the toothbrush is a permanent loss-maker | `available` sorts by cost and shows COST/HOURS/YEARS/RISK — the four columns that don't decide anything |
+| The quoted REVENUE is what I'll get | Got 0.711x of it at first, then more than 100% of it later as it grew year on year | `why` prints one flat number labelled REVENUE |
+| The quoted COST is what I'll pay | finery_puddling was quoted 106,567 and billed 207,811 forty years later | Same: `why` prints one flat COST with a visible formula, which makes it look computed and fixed |
+| A 0.5-year "calendar floor" delays a project | A 1-year `step` swallows it entirely | The phrase "calendar floor 0.50 years" |
+| Turning `auto_shed` off protects my works | Insolvency took 14 works anyway, including the corpus and the school | `policy` describes auto_shed as the thing that lets works go |
+| Founder hours would be the early constraint | Money, then people, then hours — in that order, decades apart | The framing "one person, and everything they know" |
+| "almost everything rests on this" would be rare | It is rare (5 nodes in ~460) and it is the entire game | Nothing — I had to brute-force 100 `why` calls to find the first two |
+
+## THINGS I WANTED TO DO AND COULD NOT FIND A WAY TO DO
+- Sort or filter `available` by revenue, upkeep, net return, or downstream weight. The one
+  field that decides everything ("HOW MUCH RESTS ON THIS") exists only inside `why`, one node
+  at a time. I ended up scripting 100, then 365, then 461 `why` calls to build the table the
+  game should have given me. This is the biggest single usability gap.
+- Find out what my supervision/housing capacity is, or what raises it. The refusal quotes a
+  number ("you can supervise, house and teach 0.2 more people") that appears nowhere else.
+- Prioritise which running project gets my founder hours. With 5 projects each stuck at
+  "90% of your hours spent", I could not tell the engine which one I cared about.
+- See the cost of a project *now* without a separate `why`, or be warned that a quote had
+  gone stale. `quote` exists but `help` only documents `quote mine coal 500`.
+- Get any event line when a finished work is lost. Completions produce EVENT lines; losses
+  do not.
+- Understand `eminence` or `scandal`. Both are printed every turn, both moved a lot, and
+  neither is explained by any `help` topic I could find.
+
+## THINGS THAT STRUCK ME AS UNREALISTIC OR ODD
+- In 1300 I already "had" clock_pendulum as a granted technology, three and a half centuries
+  before Huygens. The granted set seems to be the union of what the tree needs rather than
+  what the society had.
+- Revenue lines like "Toys and dolls: 169.8 den/yr" and "Umbrella: 67.7" are business
+  incomes, but the game calls them technologies and counts them in "technologies built by
+  you". Building an umbrella business and building the puddling furnace score the same way.
+- 47 to 80 employees, an aqueduct, a school, a licensed collegium, a paved road network and
+  a puddling furnace, and my `suspicion` stayed at exactly 0.0 for 137 years while the
+  Hundred Years War ran. The social-danger system (suspicion, scandal, "dangerous above 26")
+  never once did anything to me. Given how much text the game spends on Aristotelian
+  authority, guild litigation and being burned as a conjuror, I expected to be in trouble at
+  least once.
+- The Black Death killed 45% of my staff and nothing else. Prices, wages and the labour pool
+  did not visibly react to half of England dying, which historically is the single biggest
+  thing that happened to English labour.
+
+## TEDIOUS OR HARD TO READ
+- `why` is the only source of the decisive numbers and is one-node-at-a-time. 461 invocations
+  to see the board once.
+- `state` prints the same 20 lines whether or not anything changed, and prints them twice if
+  you type `step` and `state` in the same batch.
+- The footer "more: knowledge_risk -> risk; how_to_grow_staff -> labour; ..." reads like a
+  list of node ids. It is a list of topic-to-command mappings.
+- "dangerous above 26" on the reputation line, forever, while reputation is 83 and ruin risk
+  is 0%.
+- The refusal messages paste the same three-remedy block (hire / commission / JSON slaves)
+  into every unrelated error, including the one where the remedy is refused.
+- `help money` shows the economy topic, not the money command.
+- The resume line printed at every exit is wrong for every civilisation except Rome: it omits
+  `--civ`, so following the game's own instructions produces an error.
+
+## WHAT THE GAME TEACHES WELL
+- The spine is social, not technical: legal standing, a patron, a cover identity, a
+  workshop, a licence, a freed staff, a school. Every one is expensive, none earns anything,
+  and nothing works without them. That is the right lesson and it is the whole shape of the
+  game.
+- Institutions take a generation and money cannot buy the years down (5, 8, 10, 20-year
+  calendar floors on peer review, replication, the doctorate).
+- Selling your own labour is worthless once you own capital (1,000 founder-hours = 360 den
+  against 30,000/yr from works).
+- `risk` turning scripted catastrophes into a shopping list, and then naming which of your
+  own works softened them ("softened by hard soap, in quantity, fields that do not fail
+  together, fodder that keeps through a bad winter"), is excellent.
+- The literacy ceiling: "this society's literacy will not supply more than 2.8 chemists in
+  total, ever, at any price". A limit that is about the society and not about your money.
+
+---
+
+## RUN B (a control experiment, 1300 again)
+Run A's save was killed by the tree change, so I started a second England 1300 game in the
+same directory (`england_1300_b.json`) to test the conclusion I had drawn from run A:
+"the correct opening is units_standards + identity_cover, and my toys-and-dolls detour was a
+mistake."
+
+That conclusion is WRONG, and the game proves it in five years.
+Starting units_standards (415) and identity_cover (1,477) immediately from the 400-denarius
+poor-scholar purse puts you at -988 den with net income of +23.4/yr. Then:
+  "Establish a respectable cove  90% of your hours spent, 152.9 den still owed"
+  "Define and publish standard    0% of your hours spent, 415.1 den still owed"
+and nothing moves, at all, for years — in arrears your founder hours do almost nothing, so
+you cannot even work your way out. Five years in I had built zero technologies.
+So the real structure is: you MUST run a trinket economy first (buttons, dolls, umbrellas,
+then the textile cluster) to reach roughly 1,000 den/yr, and only then can you afford the
+foundations that actually open the tree. My "wasted" first two years in run A were in fact
+the only possible opening.
+That is a good piece of design — and it means my complaint about `available` burying the
+spine is only half right. The spine is unaffordable at the start anyway. What the interface
+should be telling a new player is not "buy this first" but "these exist, and here is what
+they will cost you when you can afford them".
+(Also visible in run B and not in run A: the header now reads
+"YEAR 1300   (500 years to the horizon at 1800)". Someone improved that line while I was
+playing — it is a real improvement, it was the one number I kept having to work out myself.)
+
+### Run B also killed, and now the fault is reproducible
+Run B reached 1328 AD (15 technologies) and then died with the same error as run A:
+  "could not read the save file 'england_1300_b.json': this save refers to node(s) the
+   current tech tree does not have: engineer, machinist."
+Run A died naming chemist, electrician, engineer, machinist, optician. Run B named engineer
+and machinist. In both cases the trigger was the same: the save had recorded TRAINED TRADES
+(run A by explicit `train` plus `policy auto_train on`; run B by `policy auto_train on`
+alone). Both saves were fine for many years until a trained trade entered them.
+So: trained trades are stored in the save as node ids, and any save containing them cannot
+be loaded once those ids move or change in the tree. Everything else in a save survives.
+That is a specific, reproducible robustness bug and it costs the player the entire run.
+Suggested fix: store trained trades as trade names, not tech-tree node ids; or drop unknown
+ids with a warning and load the rest, rather than refusing the file.
+(Caveat, stated plainly: the tree was being edited by other people while I played, so this
+is not something a normal player would hit every day. But a save format that cannot survive
+its own game being patched is worth fixing regardless, in a game explicitly sold on "stop
+any time, close the terminal, come back".)
+
+### Run B's own lesson, before it died
+Run B confirmed run A's shape twice over. Buying the spine early is not merely suboptimal,
+it is fatal:
+  - spine first from 400 den -> -1,061 den, net +23/yr, 0 technologies after 5 years, and in
+    arrears your founder hours do nothing, so you cannot even work the debt off through the
+    projects.
+  - the escape hatch is `work`: `work scholar 2400` earns ~673 den/yr, which is enough to
+    climb out of a 1,300-denarius hole in two years and nothing else. That is exactly what
+    that command is for, and I had dismissed it as useless in run A because by then it was.
+  - then, having bootstrapped textiles to +1,086/yr and immediately bought workshop_first
+    (5,383 + 900/yr) and citizenship (5,610), run B went straight back to -4,377 and
+    -790/yr. In run A I did not buy the workshop until net was +3,200/yr, and that is
+    apparently the real threshold.
+The game is teaching something quite precise here: each rung of the spine needs an income
+roughly equal to its own annual upkeep before you can carry it, and there is no way to see
+that in advance except by trying and failing.
