@@ -401,7 +401,22 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             if gone > 0.005:
                 self.log.append((yr, "you cannot pay everyone: %.1f of your staff "
                                      "leave for work that pays" % gone))
-        if (self.policy.get("auto_hire", not self.manual) and self.capital > 0):
+        # NOT `capital > 0`. This is the same catch-22 auto_open_ventures was
+        # already caught by and had fixed: a household in arrears could never
+        # take on the people whose work is the only way out of arrears. And a
+        # run that keeps a project going keeps a balance in the red almost
+        # permanently, so the gate was not "you are ruined", it was "you are
+        # building something". A Rome run traced for this comment sat at about
+        # -5,000 against a credit line of 8,000 for five hundred years with a
+        # clear surplus of 650 a year and hired NOBODY: zero scholars and zero
+        # craftsmen in 600 AD, 387 technologies, no goal. Deep in arrears is
+        # deep in arrears; the affordability arithmetic below - which already
+        # subtracts living cost, upkeep and the wages you are carrying - is
+        # what decides how many, and it correctly says nobody when there is
+        # nothing spare.
+        _hire_room = (self.capital >= 0
+                      or -self.capital <= self.credit_limit() * 0.75)
+        if (self.policy.get("auto_hire", not self.manual) and _hire_room):
             # Scaled by the SAME affordability figure staff_capacity() just
             # used for sc_cap/ar_cap (see the comment there): supervision-room
             # headroom is not a free six people, it is six people you still
@@ -733,7 +748,29 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 _taught = self.last_taught = {}
             want = {t: v for t, v in want.items()
                     if yr - _taught.get(t, -999) >= self.RETEACH_EVERY}
-            for t, _ in sorted(want.items(), key=lambda kv: (-kv[1], kv[0]))[:1]:
+            # AND ONLY IF YOU CAN PAY THEM. train() checked hours, literacy and
+            # household room and never once looked at money - so a Rome
+            # household earning 1,232 a year taught itself two engineers at
+            # 625 each, and every year after that its whole income went on
+            # their wages. That is the poverty trap three separate testers
+            # described from three directions: "auto_train bought me chemists,
+            # engineers, machinists and opticians I had no work for", "-6,900
+            # denarii in three steps", and a run that sat at 144 technologies
+            # from 125 AD to 300. A trade you cannot pay for is not a trade you
+            # have; it is a wage bill that stops you building anything.
+            #
+            # Two standards, because the two cases are not alike. A trade a
+            # project ALREADY IN HAND is waiting on (scored 500 above) is worth
+            # borrowing against: that work is paid for and stops without it.
+            # A trade for something you might start one day has to come out of
+            # what you are actually clearing.
+            _spare_tr = self.revenue() - self.upkeep() - self.living_cost()
+            for t, _score in sorted(want.items(), key=lambda kv: (-kv[1], kv[0]))[:1]:
+                _wages = 2.0 * ANNUAL_WAGE.get(t, 375.0) * self.price_index * self.wage_index
+                _budget = (max(0.0, _spare_tr) + max(0.0, self.capital) * 0.10
+                           if _score >= 500 else max(0.0, _spare_tr) * 0.5)
+                if _wages > _budget:
+                    continue
                 _first = t not in self.trades_created
                 ok, _msg = self.train(t, 2)
                 # THE COOLDOWN IS ON TEACHING, NOT ON TRYING. Recording the
