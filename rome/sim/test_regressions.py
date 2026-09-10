@@ -3612,6 +3612,105 @@ check("a substitution group reads as English, not as a data slug",
       "_" not in _msl.split("you have none")[0], _msl[:90])
 
 
+# ======================================================================
+# ROUND 9, the break tester: a deadlock, a silent death, and the same seed
+# giving three different answers.
+# ======================================================================
+
+# --- BREAK: `--seed` did not reproduce a run. Same script, same seed, three
+# runs: 587,300 / 6,664,218 / 6,652,459 in capital. PYTHONHASHSEED=0 made them
+# identical. Float sums over SETS: addition is not associative, the total
+# gates open_venture with a hard comparison, and one bit decides a century.
+def _one_run(seed=9, years=180, civ="rome_100ad"):
+    s_ = S.Sim(NODES, ORDER, random.Random(seed), events=True, manual=False,
+               civ=S.load_civ(civ), cfg={"start_capital": 100000.0})
+    s_.goal, s_.done_year = GOAL, {}
+    for _ in range(years):
+        s_.step()
+        if s_.dead_reason or s_.goal_year:
+            break
+    return (round(s_.capital, 6), len(s_.done), len(s_.operating),
+            round(s_.reputation, 9))
+
+_r_a = _one_run()
+check("the same seed gives the same run, twice in one process",
+      _one_run() == _r_a, (_r_a, _one_run()))
+_det = subprocess.run(
+    [sys.executable, "-c",
+     "import random,sys;sys.path.insert(0,%r);import simulator as S;"
+     "T,P,N,W,Gd=S.load();_l,O,_b=S.load_strategy('recommended',N,T['meta']['goal_node']);"
+     "s=S.Sim(N,O,random.Random(9),events=True,manual=False,civ=S.load_civ('rome_100ad'),"
+     "cfg={'start_capital':100000.0});s.goal,s.done_year=T['meta']['goal_node'],{};"
+     "[s.step() for _ in range(180)];"
+     "print(round(s.capital,6),len(s.done),len(s.operating),round(s.reputation,9))" % HERE],
+    capture_output=True, text=True, timeout=600,
+    env=dict(os.environ, PYTHONHASHSEED="1234"))
+check("...and the same run in a process with a different string hash seed",
+      _det.stdout.split() == [str(x) for x in _r_a],
+      (_det.stdout.strip(), _r_a))
+
+# --- BREAK: a permanent deadlock. `logarithms` wants 10,000 scribe-hours a
+# year where the society can field 8,750, so the throttle gives back a
+# fraction of the work every year - and with no floor under the refund it gave
+# back ALL of it. Founder-hours sat at exactly 5.0 for ever, the bill paid,
+# the calendar long past, holding the whole scribe pool and freezing eight
+# projects behind it - one of them scientific_method, a 230-denarius node
+# startable in year 100 and still unbuilt at the horizon.
+s_dl = sim(capital=20000000.0)
+for _p in NODES["logarithms"]["pre"]:
+    s_dl.done.add(_p)
+s_dl.scholars = s_dl.artisans = 50.0
+s_dl._done_changed()
+check("a project needing more of a trade than exists is startable",
+      s_dl.start_project("logarithms")[0], s_dl.start_reason("logarithms"))
+for _ in range(60):
+    s_dl.step()
+    if "logarithms" not in s_dl.active:
+        break
+check("...and it finishes, slowly, instead of freezing for ever",
+      "logarithms" in s_dl.done, (s_dl.year, s_dl.active.get("logarithms")))
+check("...and it took longer than its calendar floor, because it crawled",
+      s_dl.done_year.get("logarithms", 0) - 100 > NODES["logarithms"]["yrs"],
+      s_dl.done_year.get("logarithms"))
+
+# --- BREAK: "RUN ENDS: denounced: as a sorcerer" after eleven quiet years,
+# with `state` showing "scandal 33.55" and no threshold and no probability -
+# on the same screen where eminence explains itself in full.
+s_sc = sim(events=True)
+s_sc.scandal = 30.0
+s_sc.year = 150
+s_sc._said_scandal = 0
+_st_sc = S._agent_state(s_sc, NODES)
+check("state says what scandal is dangerous above",
+      _st_sc.get("scandal_danger") is not None, _st_sc.get("scandal_danger"))
+check("...and what the chance of being denounced this year is",
+      _st_sc.get("chance_of_being_denounced_this_year", 0) > 0,
+      _st_sc.get("chance_of_being_denounced_this_year"))
+check("...and the page prints both, next to the eminence line that already did",
+      "SCANDAL is dangerous above" in _RP("state", _st_sc),
+      [l for l in _RP("state", _st_sc).splitlines() if "dangerous above" in l])
+
+# --- BREAK: the advertised price index touched nothing a player feels.
+# Revenue ~233 and living costs 230.0 TO THE DECIMAL in all five civs, against
+# a selection screen advertising "prices 0.75x to 1.40x Rome" - while project
+# costs, wages, the workshop's output and state funding all did scale, so an
+# expensive society paid 1.4x to build and ate at Roman prices.
+_lc, _rv = {}, {}
+for _cid in ("rome_100ad", "han_china_100ad", "norse_900ad", "mexica_1500",
+             "england_1300"):
+    _s = sim(civ=_cid)
+    _lc[_cid] = round(_s.living_cost(), 2)
+    _rv[_cid] = round(_s.revenue(), 2)
+check("living costs follow this society's price level",
+      len(set(_lc.values())) == 5, _lc)
+check("...and so does what your practice pays",
+      len(set(_rv.values())) == 5, _rv)
+check("...and the dearest society really is the dearest",
+      max(_lc, key=lambda c: _lc[c]) == "norse_900ad", _lc)
+check("...and the cheapest really is the cheapest",
+      min(_lc, key=lambda c: _lc[c]) == "han_china_100ad", _lc)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

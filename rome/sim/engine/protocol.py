@@ -414,6 +414,11 @@ def _agent_state(s, nodes, cmd=None):
         # producing. The numbers stay; the prose lives in `risk`, which is the
         # command you type when you want it.
         "knowledge_risk": _risk_without_the_essays(s.knowledge_risk()),
+        # THE OTHER HAZARD THAT ENDS THE RUN, on the same screen as the one that
+        # already explains itself. See step() 6.
+        "scandal_danger": s.cfg["suspicion_danger"],
+        "chance_of_being_denounced_this_year": round(
+            max(0.0, (s.scandal - s.cfg["suspicion_danger"]) / 60.0), 4),
         "resource_throttle": round(s.throttle, 3), "throttle_binding": s.binding,
         "forest_ha": round(s.forest_ha, 1),
         "mine_capacity": {m: round(v, 1) for m, v in s.mine_capacity.items()},
@@ -1487,6 +1492,12 @@ def render_state(out):
         # of those somethings end the run. A play tester survived two
         # confiscations, was ended by the third roll, and had this same line in
         # front of them before all three. Print both figures.
+        if out.get("scandal_danger") is not None:
+            L.append("  SCANDAL is dangerous above %s (%s chance of being "
+                     "denounced this year, which ends the run; 'bribe' buys it "
+                     "down and it falls a tenth a year on its own)"
+                     % (_fmt_num(out["scandal_danger"]),
+                        _pct(out.get("chance_of_being_denounced_this_year"))))
         L.append("  EMINENCE is dangerous above %s (settles near %s if nothing "
                  "changes; %s chance something lands this year, of which %s "
                  "would end the run)"
@@ -3815,6 +3826,7 @@ SAVE_FIELDS = (
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
+    "_said_scandal",
     "_said_deputies",
     "_said_near_limit",
     "shut_for_staff",

@@ -84,8 +84,14 @@ class ProjectsMixin:
 
     def venture_staff_used(self):
         """People of your own tied up supervising what you already have open."""
+        # SORTED, for the same reason done_in_order exists: this sums FLOATS
+        # over a set, floating point addition is not associative, and the total
+        # gates open_venture with a hard comparison. A break tester ran the
+        # same seed three times and got 587,300 / 6,664,218 / 6,652,459 in
+        # capital; PYTHONHASHSEED=0 made all three identical. Every float sum
+        # over `operating` or `done` has to fix its order.
         sch = art = 0.0
-        for k in self.operating:
+        for k in sorted(self.operating):
             if k not in self.nodes:
                 continue
             a, b = self.venture_hands(k)
@@ -212,7 +218,9 @@ class ProjectsMixin:
             # a 600-a-year hopper wagon twice and keep a concern earning
             # nothing with identical staffing. Shut the one that returns least
             # for the people it ties up.
-            worst = min(self.operating,
+            # sorted(): min() over a set returns whichever equal-keyed element
+            # came first in iteration order, which is not fixed.
+            worst = min(sorted(self.operating),
                         key=lambda k: ((self.nodes[k]["rev"] - self.nodes[k]["up"])
                                        / max(0.01, self.venture_hands(k)[1]),
                                        -self.venture_hands(k)[1]))
@@ -242,7 +250,9 @@ class ProjectsMixin:
         # what you can raise is the binding constraint - which is exactly when
         # this matters - a 400-a-year shop that opens for 60 is worth more than
         # a 3,200-a-year works you cannot afford at all.
-        cands = sorted((k for k in self.done
+        # sorted() is stable, so ties keep the order of the input - and the
+        # input was a generator over a set. sorted(self.done) first.
+        cands = sorted((k for k in sorted(self.done)
                         if self.is_venture(k) and k not in self.operating
                         and self.nodes[k]["rev"] > self.nodes[k]["up"]),
                        key=lambda k: -((self.nodes[k]["rev"] - self.nodes[k]["up"])

@@ -895,7 +895,25 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 if worst < 1.0:
                     frac *= worst
                     hh *= worst
-                    give_back = min(spent_hours - refunded, per * 0.4 * (1.0 - worst))
+                    # NEVER ALL OF IT. The refund says "hours offered but not
+                    # usable, because the trade was booked" - and with no floor
+                    # under it, it could hand back every hour that had actually
+                    # gone in. `logarithms` wants 10,000 scribe-hours a year in
+                    # a society that can field 8,750, so worst is 0.875: a
+                    # break tester watched its founder-hours sit at exactly 5.0
+                    # for ever, the bill fully paid, the calendar long past,
+                    # making no progress at all while holding the entire scribe
+                    # pool and freezing eight other projects behind it - one of
+                    # them scientific_method, a 230-denarius node startable in
+                    # year 100 and still unbuilt in 600 AD with 10.6M in hand.
+                    #
+                    # If a fraction `worst` of the work could be done, then a
+                    # fraction `worst` of it WAS done, and that much can never
+                    # be given back. Progress is now strictly positive whenever
+                    # anybody at all can be found.
+                    give_back = min(spent_hours - refunded,
+                                    per * 0.4 * (1.0 - worst),
+                                    spent_hours * (1.0 - worst))
                     st["ph_left"] += max(0.0, give_back)
                     refunded += max(0.0, give_back)
                     # Remember it. A tester sat on 696,350 denarii watching three
@@ -1019,6 +1037,16 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     floor = max(2.0, n["yrs"] / (1.0 + self.reputation / 90.0))
                 # THE BILL HAS TO BE PAID. Hours done and years elapsed are not
                 # enough; if the money never arrived, the thing was never built.
+                # HALF AN HOUR IS NOTHING LEFT TO DO. The give-back hands back a
+                # fraction of what was offered, so on a throttled project
+                # ph_left decays geometrically towards zero and never reaches
+                # it: a break tester's `logarithms` sat at 1.29e-25 founder-hours
+                # with the bill paid and thirty years elapsed, complete in every
+                # sense except the comparison. The bill already had this exact
+                # fix and this exact reason (see `money` just above, and
+                # cost_left <= 0.5 on the same line); hours never got it.
+                if st["ph_left"] < 0.5:
+                    st["ph_left"] = 0.0
                 if st["ph_left"] <= 0 and st["yrs"] >= floor and st["cost_left"] <= 0.5:
                     self._complete(k)
                 elif st["ph_left"] <= 0 and st["yrs"] >= floor and st["cost_left"] > 0.5:
@@ -1182,6 +1210,28 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         else:
             self.bribes_ytd *= 0.7
         self.scandal = max(0.0, self.scandal)
+        # WARN, THE WAY EMINENCE DOES. Denunciation ends the run outright and
+        # said nothing at all first: a break tester read "RUN ENDS: denounced:
+        # as a sorcerer" after eleven quiet years, with `state` showing
+        # "scandal 33.55" and no threshold, no probability and no note - on the
+        # same screen where eminence carefully explains that it is "dangerous
+        # above 26 ... 0% chance the run ENDS this year". Two hazards of the
+        # same shape, one of them legible.
+        _sd = c["suspicion_danger"]
+        if self.scandal > _sd * 0.75:
+            _band = int(self.scandal / max(1.0, _sd * 0.15))
+            if _band > int(getattr(self, "_said_scandal", 0)):
+                self._said_scandal = _band
+                self.log.append((yr, "YOU ARE BEING TALKED ABOUT: scandal %.0f "
+                                     "against a line of %.0f. Past it you may be "
+                                     "denounced, and that ends the run - about "
+                                     "%.0f%% a year at this level. 'bribe' buys "
+                                     "advocacy and piety; it falls a tenth a "
+                                     "year on its own"
+                                 % (self.scandal, _sd,
+                                    100.0 * max(0.0, (self.scandal - _sd) / 60.0))))
+        elif self.scandal < _sd * 0.5:
+            self._said_scandal = 0
         if self.events and self.scandal > c["suspicion_danger"]:
             p = (self.scandal - c["suspicion_danger"]) / 60.0
             if self.rng.random() < p:

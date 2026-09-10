@@ -620,12 +620,18 @@ class EconomyMixin:
                 continue
             n = self.nodes[k]
             if n["rev"]:
+                # AT THIS SOCIETY'S PRICES, like everything else it charges you.
+                # The tree's revenue figures are Rome 100 AD denarii and this
+                # was the one flow that never converted them, so a physician's
+                # practice paid exactly 233.5 in Tenochtitlan, in Luoyang and
+                # in Scandinavia while the cost of building anything differed
+                # by up to 1.4x. See living_cost for the other half.
                 if practice:
-                    r += n["rev"] * self.PRACTICE_SHARE * attention
+                    r += n["rev"] * self.PRACTICE_SHARE * attention * self.price_index
                 else:
                     age = self.year - self.done_year.get(k, self.year)
                     ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
-                    r += n["rev"] * ramp
+                    r += n["rev"] * ramp * self.price_index
         # THERE IS ONLY SO MUCH MARKET. Uncapped, this compounds: every venture
         # pays back inside two years, so its income buys the next one, and a run
         # ended holding three billion denarii against an empire whose entire
@@ -727,7 +733,8 @@ class EconomyMixin:
             else:
                 age = self.year - self.done_year.get(k, self.year)
                 ramp = min(1.0, (age + 1) / self.cfg["revenue_ramp_years"])
-            amt = n["rev"] * ramp * (self.economy ** 0.75) * self.output_factor
+            amt = (n["rev"] * ramp * (self.economy ** 0.75) * self.output_factor
+                   * self.price_index)
             if practice:
                 amt *= self.practice_attention()
             if amt > 0.5:
@@ -765,7 +772,9 @@ class EconomyMixin:
             # total both live at a tenth, so the correction has to as well.
             resid = round(round(self.revenue(), 1) - sum(out.values()), 1)
             if out and abs(resid) > 0.049:
-                big = max(out, key=lambda k: abs(out[k]))
+                # sorted(): a tie in max() over a dict falls back to insertion
+                # order, which came from a set.
+                big = max(sorted(out), key=lambda k: abs(out[k]))
                 out[big] = round(out[big] + resid, 1)
         return out
 
@@ -798,7 +807,7 @@ class EconomyMixin:
         every value is a number that has to sum to the revenue above it.
         """
         young = []
-        for k in self.operating:
+        for k in sorted(self.operating):
             n = self.nodes.get(k)
             if not n or not n["rev"] or k in self.granted:
                 continue
@@ -1381,13 +1390,22 @@ class EconomyMixin:
         expense RISES with your wealth and with your standing, which is why so
         many Roman fortunes went sideways into games and buildings.
         """
-        base = 120.0                                  # bare subsistence, one person
-        household = 90.0 * (1 + self.freedmen * 0.5 + self.slaves * 0.35)
+        # AT THIS SOCIETY'S PRICES. Every figure here was a Rome 100 AD denarius
+        # and none of them was ever multiplied by price_index, so a break tester
+        # measured "living and appearances 230.0" to the decimal in all five
+        # civilisations, against a selection screen advertising "prices 0.75x to
+        # 1.40x Rome". Project costs DID scale, and so did wages, the workshop's
+        # output and state funding - which meant an expensive society paid 1.4x
+        # for everything it built and ate at Roman prices, and a cheap one got
+        # the discount twice. Bread costs what bread costs where you are.
+        px = self.price_index
+        base = 120.0 * px                             # bare subsistence, one person
+        household = 90.0 * px * (1 + self.freedmen * 0.5 + self.slaves * 0.35)
         tax = max(0.0, self.revenue()) * 0.06         # portoria, vicesima, local dues
         status = 0.0
-        if self.has("citizenship"):        status += 200
-        if self.has("patron_senatorial"):  status += 900
-        if self.has("patron_imperial"):    status += 2500
+        if self.has("citizenship"):        status += 200 * px
+        if self.has("patron_senatorial"):  status += 900 * px
+        if self.has("patron_imperial"):    status += 2500 * px
         status += max(0.0, self.capital) * 0.015      # you cannot look poor and rich
         return base + household + tax + status + self.wage_bill()
 
