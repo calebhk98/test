@@ -1312,6 +1312,54 @@ check("a mine you cannot pay for is refused, not part-bought with all your money
       and _mn[1]["capital"] > 300,
       (_mn[0].get("error", "")[:80], _mn[1].get("capital")))
 
+# --- the England normal-play tester -------------------------------------------
+# 1. `train optician 1` destroyed the save. trades_created holds TRADE names and
+#    was validated against the tech tree, so teaching any of the five trades
+#    that gate chemistry, precision and electricity wrote a name the next load
+#    refused as a missing technology. It cost that tester two runs and, by their
+#    own measurement, 1,230 technologies.
+_tr = "%s/trained.json" % _PLAY_DIR
+if os.path.exists(os.path.join(ROOT, _tr)):
+    os.remove(os.path.join(ROOT, _tr))
+_play(["train optician 1", "quit"], civ="rome_100ad", extra=["--session", _tr])
+_t2, _ = _play(["labour", "quit"], extra=["--session", _tr])
+check("teaching a trade does not destroy the save",
+      "Resumed from" in _t2 and "optician" in _t2 and "does not have" not in _t2,
+      _t2[:300])
+
+# 2. The one number that decides anything was the one `available` did not show.
+#    The tester scripted 460 `why` calls to reconstruct revenue, upkeep and how
+#    much rests on a node, and called competent play "writing a scraper".
+_av, _, _ = proto([{"cmd": "available"}], fog=True)
+_row = (_av[0].get("cheapest_six") or [{}])[0]
+check("available shows what a thing earns, costs after, and what rests on it",
+      all(f in _row for f in ("earns_per_year", "costs_per_year_after",
+                              "how_much_rests_on_this")),
+      sorted(_row))
+check("available names the high-leverage things, not only the cheap ones",
+      any(e.get("id") in ("identity_cover", "units_standards")
+          for e in (_av[0].get("most_rests_on_these") or [])),
+      [e.get("id") for e in (_av[0].get("most_rests_on_these") or [])])
+
+# 3. Under fog the game said "there is no score but what you have built" while
+#    an ending screen named a goal. The founder knows what a transistor is; fog
+#    hides the society's tree, not the player's own intent. The NAME, never the
+#    id - the id would hand back the prerequisite crawl.
+_gh, _, _ = proto([{"cmd": "help"}, {"cmd": "state"}], fog=True)
+_hw = json.dumps(_gh[0])
+check("fog hides the road to the goal, not the goal",
+      "transistor" in _hw.lower() and "point_contact_transistor" not in _hw
+      and _gh[1].get("goal") is None and _gh[1].get("goal_in_words"),
+      (_gh[1].get("goal"), _gh[1].get("goal_in_words")))
+
+# 4. downstream_count is asked for once a row now, so it cannot be the old
+#    per-call closure over all 2,831 nodes.
+_t0 = time.time()
+for _k in list(NODES)[:400]:
+    S.downstream_count(NODES, _k)
+check("what rests on a node is cheap enough to put in a table",
+      time.time() - _t0 < 1.0, "%.2fs for 400" % (time.time() - _t0))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

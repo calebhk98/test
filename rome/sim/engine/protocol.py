@@ -11,7 +11,8 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
                    TRADE_FAMILY, TECH_EFFECTS, DEFAULTS, SHOCKS,
                    STARTING_KITS, trade_family, closure, critical_path,
                    topo_order, load, load_civ, haversine_km,
-                   load_geography, load_resources)
+                   load_geography, load_resources,
+                   downstream_count, is_downstream)
 
 
 from .core import Sim
@@ -30,9 +31,14 @@ def _agent_end_reason(s):
         # one is incoherent. A tester finished a 500 year run and was told they
         # had missed a goal they were never shown and had no way to set.
         if getattr(s, "fog", False):
+            # It said "there was no target to hit", which was false: there is
+            # one, `help` names it now, and telling a player at the end that
+            # they were never aiming at anything is the same lie the other way
+            # round.
             return ("the horizon at %d AD is reached. You built %d things of your "
-                    "own. There was no target to hit; how far you got is the whole "
-                    "of the result." % (end_year, len(s.done - s.granted)))
+                    "own and did not reach %s."
+                    % (end_year, len(s.done - s.granted),
+                       s.nodes[s.goal]["name"].lower() if s.goal in s.nodes else "the goal"))
         return "ran out of horizon (%d AD) without reaching the goal" % end_year
     return None
 
@@ -211,6 +217,10 @@ def _agent_state(s, nodes, cmd=None):
         "scholars_including_you": round(s.effective_scholars(), 2),
         "founder_ages": not s.cfg.get("immortal", True),
         "goal": None if getattr(s, "fog", False) else s.goal,
+        # The NAME, not the id, so it survives fog without handing back the
+        # prerequisite crawl the visibility guard exists to stop.
+        "goal_in_words": (s.nodes[s.goal]["name"]
+                          if getattr(s, "goal", None) in s.nodes else None),
         "goal_reached": s.goal_year is not None, "goal_year": s.goal_year,
         "fog_of_war": getattr(s, "fog", False),
         "manual": s.manual, "ended": end_reason is not None, "end_reason": end_reason,
@@ -276,9 +286,21 @@ def _agent_help(s, topic=None):
                 "You begin projects, then advance time. Nothing happens unless "
                 "you make it. You are charged for food, rent and appearances "
                 "every year whether or not you are building anything."),
+            # UNDER FOG TOO. This used to say "there is no score but the state
+            # of what you have built", and a normal-play tester spent five
+            # hundred years optimising breadth on the strength of it, then met
+            # "Getting here from 100 AD is the whole game" on the ending
+            # screen. They had the money and the years to reach it. Fog hides
+            # the SOCIETY's tree; it has no business hiding what a man who
+            # knows how a transistor works is trying to build. The NAME, never
+            # the id: naming the id would hand back the prerequisite crawl that
+            # the visibility guard exists to stop.
             "what you are trying to do": (
-                "Advance as far as you can before the horizon at %d. There is no "
-                "score but the state of what you have built." % s.end_year
+                "Build %s, before the horizon at %d. You know what it is and "
+                "what it is for; what you cannot see is the road there, only "
+                "the next step of it."
+                % (s.nodes[s.goal]["name"].lower() if s.goal in s.nodes else "it",
+                   s.end_year)
                 if fog else
                 "Reach %s, and see the rest of what you can build on the way."
                 % s.goal),
@@ -429,16 +451,38 @@ def _subject_of(n):
 
 
 def _brief(s, nodes, k, fog):
+    """One row of `available`.
+    
+    IT USED TO CARRY COST, HOURS, YEARS AND RISK AND NOTHING ELSE, and a
+    normal-play tester who ran the game to its horizon wrote that none of those
+    decide anything: what decides is what a thing EARNS, what it costs you every
+    year afterwards, and how much else rests on it - all of which lived only in
+    `why`, one node at a time. They found the two nodes the whole opening turns
+    on by scripting a hundred `why` calls, and by the end were scripting four
+    hundred and sixty. "Competent play degenerates into writing a scraper" is a
+    fair description of an interface that hides its own decisive numbers.
+    """
     n = nodes[k]
+    # The SHORT band in a table row. `why` gets the long sentence, because it
+    # is explaining one thing; a row is a row, and eleven copies of "nothing
+    # else; this is worth having for itself" is half a kilobyte of a reply that
+    # has a size budget to keep.
+    rests = _rests_band(downstream_count(nodes, k)).split(";")[0]
     if fog:
         return {"id": k, "name": n["name"],
                 "cost": round(s.project_cost(k), 1),
                 "your_hours": n["ph"],
                 "least_years": n["yrs"],
-                "chance_of_failure": n["risk"]}
+                "chance_of_failure": n["risk"],
+                "earns_per_year": round(n["rev"], 1),
+                "costs_per_year_after": round(n["up"], 1),
+                "how_much_rests_on_this": rests}
     return {"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
             "cost": round(s.project_cost(k), 1), "founder_hours": n["ph"],
-            "calendar_floor_years": n["yrs"], "risk": n["risk"]}
+            "calendar_floor_years": n["yrs"], "risk": n["risk"],
+            "earns_per_year": round(n["rev"], 1),
+            "costs_per_year_after": round(n["up"], 1),
+            "downstream_count": downstream_count(nodes, k)}
 
 
 def _full_entry(s, nodes, k, fog):
@@ -541,11 +585,30 @@ def _agent_available(s, nodes, cmd=None):
                      "dearest": round(costs[-1], 1),
                      "you_could_pay_for": sum(1 for c in costs if c <= purse)})
     cheap = sorted(ok, key=lambda k: s.project_cost(k))[:6]
+    # AND THE SIX MOST RESTS ON. A normal-play tester found that the spine of
+    # the whole game is a handful of cheap, zero-revenue, tier-0 nodes -
+    # units_standards, identity_cover, patron_local, workshop_first - and that
+    # the only way to find them was to script a `why` call for every startable
+    # id, a hundred at first and four hundred and sixty by the end. The digest
+    # sorted by price, which is the one axis on which those nodes look like
+    # nothing. Leverage is a column the game already knows.
+    leverage = sorted(ok, key=lambda k: (-downstream_count(nodes, k),
+                                         s.project_cost(k)))[:5]
     out = {"ok": True, "count": len(ok),
            "showing": "a summary by subject, because the full list is %d things"
                       % len(ok),
            "subjects": rows,
-           "cheapest_six": [_full_entry(s, nodes, k, fog) for k in cheap],
+           # _brief for a DIGEST. _full_entry carried each node's prerequisites
+           # and full note - several hundred bytes apiece that the table never
+           # renders and that `why` exists to give you properly. The digest's
+           # job is to help you choose which `why` to run, and it has a size
+           # budget precisely so that it stays a digest.
+           "cheapest_six": [_brief(s, nodes, k, fog) for k in cheap],
+           # _brief, not _full_entry: the table renders only the columns, and a
+           # second block of fog summaries pushed the reply past the size a
+           # reply is allowed to be. See the wall-of-text check.
+           "most_rests_on_these": [_brief(s, nodes, k, fog)
+                                   for k in leverage if k not in cheap],
            "to_see_more": {
                "one subject": '{"cmd":"available","subject":"metallurgy"}',
                "by name": '{"cmd":"available","find":"furnace"}',
@@ -560,11 +623,24 @@ def _agent_available(s, nodes, cmd=None):
     return out
 
 
+def _rests_band(n):
+    """How much rests on a node, in the words a person in the year 100 could
+    actually use. The exact count is a fog spoiler; the band is not."""
+    return ("almost everything" if n > 1200 else
+            "a great deal" if n > 300 else
+            "a fair amount" if n > 40 else
+            "a few things" if n > 3 else
+            "nothing else; this is worth having for itself")
+
+
 def _node_explain(s, nodes, k):
     n = nodes[k]
     need = closure(nodes, k) - {k}
     unlocks = [] if getattr(s, "fog", False) else [m for m in nodes if k in nodes[m]["pre"]]
-    blocks = {m for m in nodes if k in closure(nodes, m)} - {k}
+    # Was: {m for m in nodes if k in closure(nodes, m)} - a full ancestor
+    # closure of all 2,831 nodes, per call. Same answers, computed once for the
+    # whole tree and cached. See data.descendants.
+    n_blocks = downstream_count(nodes, k)
     bounty_by_type = (n["tier"] <= 2 and n["cat"] in ("glass_optics", "metallurgy", "precision",
                       "power", "agriculture", "information", "instruments"))
     started = k in s.done or k in s.active
@@ -642,20 +718,15 @@ def _node_explain(s, nodes, k):
         # judge: whether this is a foundation others will build on, or an end in
         # itself. You can tell that much by looking at it.
         "unlocks": unlocks,
-        "downstream_count": (len(blocks) if not getattr(s, "fog", False) else None),
+        "downstream_count": (n_blocks if not getattr(s, "fog", False) else None),
         "how_much_rests_on_this": (
-            None if not getattr(s, "fog", False) else
-            "almost everything" if len(blocks) > 1200 else
-            "a great deal" if len(blocks) > 300 else
-            "a fair amount" if len(blocks) > 40 else
-            "a few things" if len(blocks) > 3 else
-            "nothing else; this is worth having for itself"),
+            None if not getattr(s, "fog", False) else _rests_band(n_blocks)),
         # Under fog there is no goal, so a boolean saying whether this is "on the
         # goal path" is either meaningless or a leak. A tester read it as
         # true/false for five hundred years while `state.goal` was null and
         # reasonably asked what path it could possibly mean.
         "on_goal_path": (None if getattr(s, "fog", False)
-                         else (k == s.goal or s.goal in blocks)),
+                         else (k == s.goal or is_downstream(nodes, k, s.goal))),
         "done": k in s.done, "active": k in s.active,
         "can_start_now": (not started) and s.can_start(k),
         # Under fog this used to name locked prerequisites in full, so a tester
@@ -873,8 +944,12 @@ def render_state(out):
 
     if out.get("fog_of_war"):
         L.append("")
-        L.append("Fog of war is on. No score but what you built: %s of your own so far."
-                 % _fmt_num(out.get("done_earned")))
+        L.append("Fog of war is on: you see the next step, never the road. "
+                 "%s of your own built so far." % _fmt_num(out.get("done_earned")))
+        if out.get("goal_in_words"):
+            L.append("Aiming at: %s%s" % (out["goal_in_words"],
+                     ("  -- REACHED in %s AD" % out.get("goal_year"))
+                     if out.get("goal_reached") else ""))
     elif out.get("goal"):
         L.append("")
         L.append("Goal: %s%s" % (out["goal"],
@@ -897,13 +972,24 @@ def render_state(out):
     return "\n".join(L)
 
 
+# The short forms of the bands, so the column stays a column.
+_RESTS_SHORT = {"almost everything": "ALL", "a great deal": "much",
+                "a fair amount": "some", "a few things": "few",
+                "nothing else; this is worth having for itself": "-"}
+
+
 def _available_row(e):
     hours = e.get("founder_hours", e.get("your_hours"))
     years = e.get("calendar_floor_years", e.get("least_years"))
     risk = e.get("risk", e.get("chance_of_failure"))
-    return "%-32s %-32s %10s %8s %6s %6s" % (
-        (e.get("id") or "")[:32], (e.get("name") or "")[:32],
-        _fmt_num(e.get("cost")), _fmt_num(hours), _fmt_num(years), _pct(risk))
+    dc = e.get("downstream_count")
+    rests = (_fmt_num(dc) if dc is not None
+             else _RESTS_SHORT.get(e.get("how_much_rests_on_this"), "?"))
+    return "%-30s %-26s %9s %7s %5s %5s %8s %7s %6s" % (
+        (e.get("id") or "")[:30], (e.get("name") or "")[:26],
+        _fmt_num(e.get("cost")), _fmt_num(hours), _fmt_num(years), _pct(risk),
+        _fmt_num(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
+        rests)
 
 
 def render_available(out):
@@ -914,7 +1000,9 @@ def render_available(out):
     if out.get("showing"):
         L.append(out["showing"])
     L.append("")
-    header = "%-32s %-32s %10s %8s %6s %6s" % ("ID", "NAME", "COST", "HOURS", "YEARS", "RISK")
+    header = ("%-30s %-26s %9s %7s %5s %5s %8s %7s %6s"
+              % ("ID", "NAME", "COST", "HOURS", "YEARS", "RISK", "EARNS/YR",
+                 "UPKEEP", "RESTS"))
 
     if "subjects" in out:
         L.append("%-24s %8s %10s %10s %10s" % ("SUBJECT", "THINGS", "CHEAPEST", "DEAREST", "AFFORD"))
@@ -927,6 +1015,12 @@ def render_available(out):
         L.append(header)
         for e in sorted(out.get("cheapest_six") or [], key=lambda e: e.get("cost", 0)):
             L.append(_available_row(e))
+        if out.get("most_rests_on_these"):
+            L.append("")
+            L.append("MOST RESTS ON THESE, of what you could begin today:")
+            L.append(header)
+            for e in out["most_rests_on_these"]:
+                L.append(_available_row(e))
         L.append("")
         for k, v in (out.get("to_see_more") or {}).items():
             L.append("  %s: %s" % (k, v))
@@ -2274,6 +2368,11 @@ def save_state(s, path):
     blob["_immortal"] = bool(s.cfg.get("immortal", True))
     blob["_version"] = 1
     tmp = path + ".tmp"
+    # A save into a directory that is not there killed the process outright on
+    # a FileNotFoundError, which is the one thing a save must never do.
+    parent = os.path.dirname(os.path.abspath(path))
+    if parent and not os.path.isdir(parent):
+        os.makedirs(parent, exist_ok=True)
     with open(tmp, "w") as fh:
         json.dump(blob, fh, indent=1, sort_keys=True, default=str)
     os.replace(tmp, path)          # atomic: a crash mid-save cannot eat the game
@@ -2290,8 +2389,18 @@ REQUIRED_SAVE_FIELDS = ("year", "capital", "done", "active", "_civ", "_version")
 # encoding). Anything named here is checked against the currently loaded
 # tree, because the tree is data and does get edited: a node can be renamed
 # or removed between when a save was written and when it is read back.
+# NOT trades_created. That holds TRADE names - "optician", "chemist" - and it
+# was in this list, so `train optician 1` wrote a perfectly valid trade into
+# the save and the next load refused the whole file for referring to a
+# technology called optician that the tree does not have and never did. A
+# normal-play tester lost two runs to it, and it is worse than losing a save:
+# the five trades that have to be taught are the ones gating chemistry,
+# precision and electricity, so the one action that opens the second half of
+# the game was the one action that destroyed the game.
 _SET_FIELDS_OF_NODE_IDS = ("done", "granted", "mothballed", "bountied",
-                           "trades_created", "revealed")
+                           "revealed")
+# Checked against the wage table instead, which is what they actually are.
+_SET_FIELDS_OF_TRADE_NAMES = ("trades_created",)
 
 
 def _validate_save(blob, s):
@@ -2358,6 +2467,17 @@ def _validate_save(blob, s):
             return "this save is corrupt: '%s' should be a set of id strings" % f
         unknown |= {x for x in ids if x not in s.nodes}
     unknown |= {k for k in active if k not in s.nodes}
+    for f in _SET_FIELDS_OF_TRADE_NAMES:
+        v = blob.get(f)
+        if v is None:
+            continue
+        ids = v.get("__set__") if isinstance(v, dict) else None
+        if ids is None or not all(isinstance(x, str) for x in ids):
+            return "this save is corrupt: '%s' should be a set of trade names" % f
+        strange = [x for x in ids if x not in WAGES]
+        if strange:
+            return ("this save refers to trade(s) this game does not have: %s"
+                    % ", ".join(sorted(strange)[:6]))
     if unknown:
         sample = ", ".join(sorted(unknown)[:6])
         more = "" if len(unknown) <= 6 else " and %d more" % (len(unknown) - 6)

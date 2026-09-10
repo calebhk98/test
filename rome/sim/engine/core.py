@@ -896,11 +896,25 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 and (self.capital < self.living_cost() * 2 or not self.active)):
             trade = ("scholar" if self.effective_scholars() >= 1 else "scribe")
             hours = min(remaining, 1200.0)
-            _, err = self.work_for_wages(trade, hours)
-            # Kept in step with `remaining` so hours_this_year (below) does not
-            # count hours sold for wages here as still unused.
-            if err is None:
-                remaining -= hours
+            # ONLY IF IT PAYS BETTER THAN THE PRACTICE IT DISPLACES. Wage hours
+            # now cost you the share of your practice they were sold out of
+            # (see practice_attention), and without this check the optimizer
+            # went on taking a scribe's wage at the price of a physician's fee
+            # and lost Rome a sixth of its runs. A man with a practice does not
+            # go and copy documents for less than the practice earns; that is
+            # the whole reason `work` is the thing you do BEFORE you have one.
+            pool = max(1.0, self.director_pool())
+            practice_lost = self.revenue() * (hours / pool) * (
+                1.0 if self.practice_attention() > 0 else 0.0)
+            rate = (ANNUAL_WAGE.get(trade, 375.0) / self.HOURS_PER_PERSON_YEAR
+                    * self.price_index * self.wage_index
+                    * (1.0 + min(0.5, self.reputation / 200.0)))
+            if hours * rate > practice_lost:
+                _, err = self.work_for_wages(trade, hours)
+                # Kept in step with `remaining` so hours_this_year (below) does
+                # not count hours sold for wages here as still unused.
+                if err is None:
+                    remaining -= hours
 
         # 6. reputation, familiarity, protection, scandal
         #

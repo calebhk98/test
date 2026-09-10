@@ -740,3 +740,70 @@ quoted costs go stale by 100% over decades with no warning; and the goal is a se
 The fatal: `train` kills the save.
 What I would fix first, in order: (1) show the goal; (2) put revenue/upkeep/downstream in
 `available`; (3) make the loss of a finished work an EVENT line; (4) fix `train`.
+
+---
+
+## RUN A, RESUMED AND FINISHED: 1437 -> 1800
+The tree edit settled after about ten minutes and run A's save loaded again at 1437 AD.
+That save was in a far better position than run C, for one reason: it already had the five
+trades on staff (2 each of chemist, electrician, engineer, machinist, optician) from before
+the `train` bug bit. So I played it out.
+
+  1452    388 techs      823k den
+  1492    609 techs    2.05M den
+  1532  1,095 techs   14.4M den
+  1592  1,492 techs   29.7M den
+  1692  1,645 techs   53.6M den
+  1792  2,011 techs   52.3M den
+  1800  2,043 techs   66.6M den, 388 staff, reputation 98.8
+
+    *** THE RUN HAS ENDED: the horizon at 1800 AD is reached. You built 2043 things of your
+        own and did not reach point-contact transistor. ***
+
+**2,043 technologies against run C's 813, from the same civilisation and the same opening,
+and the entire difference is five trained specialists.** Run C could not train them (the
+save bug), and that alone cost it 1,230 technologies and the whole industrial half of the
+tree. That is a very sharp demonstration of what the game says in its opening briefing about
+England: the missing thing is not money or ideas, it is people who know how.
+
+And the ending is genuinely dramatic: I finished **two prerequisites short of the goal**.
+    point_contact_transistor  STATUS: BLOCKED
+      missing prerequisites: single_crystal, vacuum_tube
+Everything else was in hand — 66.6M denarii against a 37,367-denarius build cost, 114
+scholars and 275 artisans against a requirement of 25 and 20. `single_crystal` in turn wanted
+five more nodes (Czochralski puller, controlled-atmosphere chamber, X-ray diffraction camera,
+semiconductor metrology, zone refining). So the last 5-year calendar floor is what actually
+beat me, not money and not labour. That is the right way for this game to end and I would not
+change it.
+
+The writing at the finish deserves quoting, because it is the best in the game:
+  "Grain boundaries destroy carrier lifetime, so polycrystalline germanium will never make a
+   working transistor no matter how pure it is. Add the dopant to the melt in weighed traces;
+   this is where the analytical balance earns its keep two centuries later."
+
+### Two of my complaints were fixed WHILE I WAS PLAYING
+The repo was being edited live, and by the last rounds:
+- `available` grew **EARNS/YR, UPKEEP and RESTS columns**. That was my single biggest
+  usability complaint (I had scripted 460 `why` calls to reconstruct exactly those three
+  fields) and it is now in the list where it belongs.
+- The reputation line now reads "**EMINENCE** is dangerous above 26", which answers the
+  question I logged twice as confusing.
+- The JSON blob in the hire-refusal prose is gone; it now reads "buy slaves N then manumit".
+- The header now shows "(363 years to the horizon at 1800)".
+Leaving those noted because they were real problems and they are real fixes.
+
+### One thing confirmed about the hidden goal
+During play, with fog on, `why point_contact_transistor` is refused outright:
+  "REFUSED: you have never heard of that. You know what you have built and what you could
+   begin next; nothing tells you what lies beyond that."
+So the goal is not merely unadvertised, it is unnameable until the run is over. Combined with
+`help` saying "There is no score but the state of what you have built", a fog-of-war player
+has no way at all to learn what they are playing for. That remains my number one change:
+tell the player the destination, keep the route hidden. Under fog, "get to the transistor"
+is still a hard problem — it is just an honest one.
+
+### FINAL POSITION
+England 1300, fog of war on, poor scholar, founder does not age.
+Ended 1800 AD: **2,043 technologies built by me, 2,184 total, 66.6M denarii, 388 staff,
+reputation 98.8, corpus written, Great Famine / Black Death / Hundred Years War all survived
+— and two nodes short of the transistor.**

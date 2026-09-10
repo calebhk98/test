@@ -193,6 +193,77 @@ def load():
     return tree, prices, nodes, wages, goods
 
 
+# How many things rest on each node, for the whole tree at once.
+#
+# The old answer to "what depends on this" was, per node asked about:
+#     blocks = {m for m in nodes if k in closure(nodes, m)}
+# - a full ancestor closure of every one of 2,831 nodes, every time. That is
+# affordable once, on `why`, and completely unaffordable for a table of thirty
+# rows, which is why the number a normal-play tester said was the only one that
+# decided anything was the one number `available` did not show. They ended up
+# scripting 460 separate `why` calls to recover it, and wrote that "competent
+# play degenerates into writing a scraper".
+#
+# So: one reverse-topological pass, descendants held as bitmasks in Python
+# integers, computed once per tree and cached. Ordinary set unions would be
+# 2,831 sets of up to 2,831 ids; an int OR is the same operation with the
+# machine doing the work.
+_DESC_CACHE = {}
+
+
+def descendants(nodes):
+    """{id: bitmask of everything downstream of it}, plus the index it uses."""
+    key = id(nodes)
+    hit = _DESC_CACHE.get(key)
+    if hit is not None and hit[0] == len(nodes):
+        return hit[1], hit[2]
+    index = {k: i for i, k in enumerate(sorted(nodes))}
+    kids = {k: [] for k in nodes}
+    for m in nodes:
+        for p in nodes[m]["pre"]:
+            if p in kids:
+                kids[p].append(m)
+    # Iterative post-order DFS rather than topo_order(): that one rescans every
+    # key for every key it pops, which is 8 million comparisons on this tree and
+    # three and a half seconds of stall the first time anybody typed
+    # "available". A DFS visits each edge once.
+    masks = {}
+    for root in sorted(nodes):
+        if root in masks:
+            continue
+        stack = [(root, False)]
+        while stack:
+            k, expanded = stack.pop()
+            if expanded:
+                m = 0
+                for c in kids[k]:
+                    m |= (1 << index[c]) | masks.get(c, 0)
+                masks[k] = m
+                continue
+            if k in masks:
+                continue
+            stack.append((k, True))
+            for c in kids[k]:
+                if c not in masks:
+                    stack.append((c, False))
+    _DESC_CACHE[key] = (len(nodes), masks, index)
+    return masks, index
+
+
+def downstream_count(nodes, k):
+    """How many nodes are downstream of k. Cheap after the first call."""
+    masks, _index = descendants(nodes)
+    return bin(masks.get(k, 0)).count("1")
+
+
+def is_downstream(nodes, k, target):
+    """Is `target` downstream of `k`?"""
+    masks, index = descendants(nodes)
+    if target not in index:
+        return False
+    return bool(masks.get(k, 0) >> index[target] & 1)
+
+
 def topo_order(nodes, subset=None):
     """Kahn topological sort. `subset` restricts to a set of ids."""
     keys = set(subset) if subset else set(nodes)
