@@ -491,8 +491,19 @@ class ProjectsMixin:
                 elif opt not in self.nodes:
                     best = max(best, float(qual) * 0.9)   # a purchasable commodity
             if best <= 0:
+                # WHICH GROUP, AND WHAT WOULD SATISFY IT. "no viable option in a
+                # required substitution group (fuel, vessel, etc.)" was the one
+                # blocked-reason a play tester never decoded in a whole run: it
+                # names no candidate and no fix, and the parenthesis is a guess
+                # at what the group might be about rather than what it is.
+                self._last_subst_gap = (
+                    g.get("name") or g.get("group") or "one of the things it "
+                    "can be made from",
+                    sorted((g.get("options") or {}), key=lambda o:
+                           -float((g.get("options") or {})[o]))[:4])
                 return 0.0, False        # no option in this group is available
             q *= best
+        self._last_subst_gap = None
         return q, True
 
     def start_reason(self, k, ignore_trade=False, _memo=None):
@@ -574,7 +585,17 @@ class ProjectsMixin:
                 ("this needs %s, and you do not yet know what %s"
                  % (bits[-1], "they are" if hidden > 1 else "it is"))
         if not self.substitution_quality(k)[1]:
-            return False, "no viable option in a required substitution group (fuel, vessel, etc.)"
+            _grp, _opts = getattr(self, "_last_subst_gap", None) or (None, [])
+            _seen = [o for o in _opts
+                     if o not in self.nodes or self.is_visible(o, _memo=_memo)]
+            return False, ("this needs %s and you have none of the things that "
+                           "would serve%s"
+                           % (_grp or "a material or a vessel it can be built "
+                                      "around",
+                              (": any of " + ", ".join(_seen) + " would do")
+                              if _seen else
+                              ", and none of them is anything you have heard "
+                              "of yet"))
         # A playtester hit a scholar wall that stopped ALL progress and reported
         # that nothing in the protocol told them how to get more scholars. The
         # refusal named the shortfall and not the remedy, which is the least

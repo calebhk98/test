@@ -308,7 +308,25 @@ class LabourMixin:
             if node in ("BUY", "HIRE"):
                 bits.append(why)
             elif node not in self.done and self.is_visible(node):
-                bits.append("build %s (%s)" % (node, why))
+                # NOT A CIRCLE. `why workshop_first` says it is blocked for want
+                # of artisans, and the advice on how to get artisans said "build
+                # workshop_first (you need somewhere for them to work)" - a play
+                # tester quoted the two lines against each other. If the remedy
+                # is itself waiting on the very thing it is meant to supply,
+                # naming it is worse than saying nothing: say what it is waiting
+                # on instead, so the reader knows which end to start at.
+                # Asked DIRECTLY of the node's own requirement, never through
+                # start_reason - which calls this function, so the obvious
+                # version of this test recurses until the stack gives out.
+                _n = self.nodes[node]
+                _short = (_n["art"] > self.artisans + 1e-9 if kind == "artisans"
+                          else _n["sch"] > self.effective_scholars() + 1e-9)
+                if _short:
+                    bits.append("build %s eventually (%s) - but it is itself "
+                                "waiting on %s, so hire or commission first"
+                                % (node, why, kind))
+                else:
+                    bits.append("build %s (%s)" % (node, why))
         if not bits:
             return "wait: your existing institutions add %s each year." % kind
         return "To get more %s: %s." % (kind, "; ".join(bits[:3]))

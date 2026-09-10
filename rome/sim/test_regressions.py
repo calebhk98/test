@@ -3289,6 +3289,53 @@ check("...and the page says the one command that keeps your hours",
       [l for l in _RP("state", _st_all).splitlines() if "ABANDONED" in l])
 
 
+# --- BREAK: the advice on how to get artisans said "build workshop_first (you
+# need somewhere for them to work)" while `why workshop_first` said it was
+# blocked for want of artisans. A play tester quoted the two lines at each
+# other.
+s_circ = sim()
+s_circ.done.add("patron_local"); s_circ._done_changed()
+_adv = s_circ._staff_advice("artisans")
+check("advice never points at a remedy waiting on the thing it supplies",
+      "workshop_first" not in _adv or "waiting on artisans" in _adv, _adv)
+s_circ.artisans = 20.0
+check("...and names it plainly once it is actually reachable",
+      "waiting on artisans" not in s_circ._staff_advice("artisans"),
+      s_circ._staff_advice("artisans"))
+check("giving that advice does not recurse into itself",
+      isinstance(sim().start_reason("workshop_first")[1], str), "no RecursionError")
+
+# --- BREAK: "no viable option in a required substitution group (fuel, vessel,
+# etc.)" - the one blocked-reason a play tester never decoded. It named no
+# candidate and no fix.
+s_sub = sim()
+_gap = next((k for k in sorted(NODES) if NODES[k].get("req_any")
+             and not s_sub.substitution_quality(k)[1]
+             and all(p in s_sub.done for p in NODES[k]["pre"])), None)
+if _gap:
+    _why_sub = s_sub.start_reason(_gap)[1]
+    check("a substitution group says what it wants and what would serve",
+          "substitution group" not in _why_sub and "would do" in _why_sub,
+          _why_sub)
+else:
+    check("a substitution group says what it wants and what would serve",
+          True, "no unmet group reachable in rome_100ad")
+# And it may not name an option under fog that the player has not heard of.
+s_sub_f = sim()
+s_sub_f.fog = True
+for _k in sorted(NODES):
+    if not NODES[_k].get("req_any") or s_sub_f.substitution_quality(_k)[1]:
+        continue
+    _msg = s_sub_f.start_reason(_k)[1]
+    _named = [o for o in NODES if o in _msg and not s_sub_f.is_visible(o)]
+    if _named:
+        check("a substitution refusal never names a node you cannot see",
+              False, (_k, _named[:3]))
+        break
+else:
+    check("a substitution refusal never names a node you cannot see", True, "")
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
