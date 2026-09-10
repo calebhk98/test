@@ -311,7 +311,7 @@ def critical_path(nodes, goal):
     chain = {}
     for k in order:
         n = nodes[k]
-        own = max(n["yrs"], n["ph"] / 2400.0)
+        own = max(n["yrs"], n["ph"] / 2000.0)
         pb, pc = 0.0, []
         for p in n["pre"]:
             if p in best and best[p] > pb:
@@ -359,7 +359,13 @@ DEFAULTS = dict(
     # premise and the sweep shows it is also a worse one. Pick a kit with --kit.
     start_capital=400,
     founder_arrival_age=35,
-    founder_hours_per_year=2400,
+    # 2,000, NOT 2,400. Everyone you HIRE is modelled at HOURS_PER_PERSON_YEAR
+    # = 2,000 - "a 10-hour day, 250 days, less feasts" - and the founder was
+    # given 2,400, twenty per cent more than a hired man, with no illness, no
+    # travel, no administration and no bad weather. There is no story in which
+    # the same person-year is worth more hours for you than for the smith you
+    # pay. A modern 40-hour week over 52 weeks with no holiday at all is 2,080.
+    founder_hours_per_year=2000,
     director_hours_per_year=1800,
     hired_hours_cap_base=25000,   # what a provincial town's labour market can actually supply
     revenue_ramp_years=3,

@@ -472,6 +472,7 @@ class SocietyMixin:
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
                             for k in drop:
+                                self.operating.discard(k)
                                 self.done.discard(k)
                             self._done_changed()
                             self.log.append((yr, "KNOWLEDGE LOST: %d technologies forgotten%s"

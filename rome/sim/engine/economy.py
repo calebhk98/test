@@ -133,6 +133,11 @@ class EconomyMixin:
                     worst = k
             if worst is None:
                 break
+            # CLOSE IT, do not unlearn it. Shedding a loss-maker in ruin is
+            # shutting the doors, and what that saves is its running cost. The
+            # knowledge stays: you cannot forget how a thing works because you
+            # could not pay for it this year.
+            self.operating.discard(worst)
             self.done.discard(worst)
             self._done_changed()
             # MOTHBALLED, not merely discarded: this is the plant falling into
@@ -401,6 +406,13 @@ class EconomyMixin:
             practice = k in self.granted and self._practisable(k)
             if k in self.granted and not practice:
                 continue          # the society's, not yours
+            # KNOWING HOW IS NOT THE SAME AS RUNNING IT. A node pays when it is
+            # open, and not for having been worked out. See is_venture and
+            # open_venture in projects.py for why: the tree already described
+            # these as concerns with a yearly running cost, and the only thing
+            # missing was the decision to open the doors.
+            if not practice and k not in self.operating:
+                continue
             n = self.nodes[k]
             if n["rev"]:
                 age = self.year - self.done_year.get(k, self.year)
@@ -457,7 +469,10 @@ class EconomyMixin:
         """
         rows = {}
         for k in self.done_in_order():
-            if k in self.granted and not self._practisable(k):
+            practice = k in self.granted and self._practisable(k)
+            if k in self.granted and not practice:
+                continue
+            if not practice and k not in self.operating:
                 continue
             n = self.nodes[k]
             if not n["rev"]:
@@ -493,9 +508,14 @@ class EconomyMixin:
 
     def upkeep(self):
         # Symmetrically, you do not pay to maintain what you do not own, but you
-        # do bear the small standing cost of the practice you actually run.
+        # do bear the small standing cost of the practice you actually run - and
+        # you do not pay the running costs of a concern you have not opened.
+        # Both halves of that follow `operating`, so closing something really
+        # does stop the bleeding, and knowing how to do something costs nothing
+        # to know.
         return sum(self.nodes[k]["up"] for k in self.done_in_order()
-                   if k not in self.granted or self._practisable(k))
+                   if (k in self.operating
+                       or (k in self.granted and self._practisable(k))))
 
     # ---- raw material supply ------------------------------------------------
     CHARCOAL_PER_HA = 0.75          # tonnes per hectare per year, sustainable

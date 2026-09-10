@@ -106,6 +106,12 @@ def _agent_state(s, nodes, cmd=None):
         "living_cost": round(s.living_cost() - s.wage_bill(), 1),
         "wage_bill": round(s.wage_bill(), 1),
         "mine_operating_cost": round(s.mine_operating_cost(), 1),
+        # Knowing how and running it are different, so say how many you know
+        # how to run and have not opened. Without this the difference is
+        # invisible until a player wonders why building things stopped paying.
+        "concerns_you_run": len(getattr(s, "operating", ())),
+        "you_know_how_to_run_but_have_not_opened": sum(
+            1 for k in s.done if s.is_venture(k) and k not in s.operating),
         # net_per_year counts the STANDING flows only. It never counted what
         # projects consume, which is usually the largest outflow by far, so a
         # playtester watched it report a healthy positive number for eight
@@ -927,6 +933,13 @@ def render_state(out):
         if st.get("why_underfunded"):
             L.append("      %s" % st["why_underfunded"])
 
+    idle_v = out.get("you_know_how_to_run_but_have_not_opened")
+    if out.get("concerns_you_run") or idle_v:
+        L.append("")
+        L.append("RUNNING AS CONCERNS: %s   (you know how to run %s more and "
+                 "have not opened them - 'ventures')"
+                 % (_fmt_num(out.get("concerns_you_run")), _fmt_num(idle_v)))
+
     employees = out.get("employees") or {}
     L.append("")
     L.append("EMPLOY: %s people, %s den/yr in wages"
@@ -1548,6 +1561,7 @@ KNOWN_COMMANDS = (
     "money", "risk", "labour", "policy", "help",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
+    "open", "ventures",
     "save", "load", "quit",
 )
 
@@ -1694,7 +1708,11 @@ def parse_typed(line):
         # A bare 'n' is one year, which is what it has always meant.
         return {"cmd": "step", "years": (nums[0] if nums else 1)}, None
 
-    if op in ("why", "path", "start", "stop", "bounty", "mothball", "restore"):
+    if op == "ventures":
+        return {"cmd": "ventures"}, None
+
+    if op in ("why", "path", "start", "stop", "bounty", "mothball",
+              "restore", "open"):
         if not rest:
             return None, ("%s needs the name of a technology, e.g. '%s "
                           "fud_wheelbarrow'. 'available' lists what you can "
@@ -2250,6 +2268,45 @@ def _agent_dispatch(s, nodes, cmd):
             return {"ok": False, "error": msg}
         return {"ok": True, "bribed": msg, "capital": round(s.capital, 1)}
 
+    if op == "open":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        k = cmd.get("id")
+        if not isinstance(k, str):
+            return {"ok": False, "error": 'give an id, e.g. {"cmd":"open","id":"fin_pawnshop"}'}
+        ok, msg = s.open_venture(k)
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "opened": msg, "capital": round(s.capital, 1),
+                "revenue": round(s.revenue(), 1), "upkeep": round(s.upkeep(), 1)}
+
+    if op == "ventures":
+        sch_free, art_free = s.venture_staff_free()
+        running = sorted(s.operating)
+        idle = sorted(k for k in s.done
+                      if s.is_venture(k) and k not in s.operating)
+
+        def _vrow(k):
+            n = nodes[k]
+            return {"id": k, "name": n["name"], "earns_a_year": n["rev"],
+                    "costs_a_year": n["up"],
+                    "needs": {"scholars": n["sch"], "craftsmen": n["art"]}}
+
+        out = {"ok": True,
+               "running": [_vrow(k) for k in running] or "nothing",
+               "you_know_how_but_have_not_opened":
+                   [dict(_vrow(k), to_open_it=round(s.venture_capex(k), 1))
+                    for k in idle[:20]] or "nothing",
+               "people_free_to_run_something_new": {
+                   "scholars": round(sch_free, 2), "craftsmen": round(art_free, 2)},
+               "note": "Knowing how to do a thing and running it are different. "
+                       "Only what you are RUNNING earns anything or costs "
+                       "anything. 'open <id>' starts one, 'mothball <id>' stops "
+                       "it, and you keep the knowledge either way."}
+        if len(idle) > 20:
+            out["and_more_you_could_open"] = len(idle) - 20
+        return out
+
     if op == "policy":
         want = cmd.get("set")
         changed = {}
@@ -2408,7 +2465,8 @@ SAVE_FIELDS = (
     "bribes_ytd", "living_cost_paid", "mine_cost_paid", "spend_last_year",
     "output_factor", "economy", "throttle", "binding", "bountied",
     "stalled", "life_left", "founder_alive", "revealed", "last_settlement",
-    "employees", "trades_created", "policy", "mothballed", "contract_hours",
+    "employees", "trades_created", "policy", "mothballed", "operating",
+    "contract_hours",
     "commissioned", "teaching_hours_this_year", "wages_paid",
     "bondage_years_left", "bondage_debt", "money_real", "credit_frozen_until",
     # Counters and within-year tallies that were being silently reset on every
@@ -2484,7 +2542,8 @@ REQUIRED_SAVE_FIELDS = ("year", "capital", "done", "active", "_civ", "_version")
 # the five trades that have to be taught are the ones gating chemistry,
 # precision and electricity, so the one action that opens the second half of
 # the game was the one action that destroyed the game.
-_SET_FIELDS_OF_NODE_IDS = ("done", "granted", "mothballed", "bountied",
+_SET_FIELDS_OF_NODE_IDS = ("done", "granted", "mothballed", "operating",
+                           "bountied",
                            "revealed")
 # Checked against the wage table instead, which is what they actually are.
 _SET_FIELDS_OF_TRADE_NAMES = ("trades_created",)

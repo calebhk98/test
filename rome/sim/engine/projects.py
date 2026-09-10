@@ -16,6 +16,134 @@ from .data import (WAGES, ANNUAL_WAGE, TRADE_NOTES, TRADES_ABSENT,
 
 
 class ProjectsMixin:
+    # ---- knowing how, and actually running it -------------------------------
+    # THE DEEPEST THING ANY PLAYTESTER SAID ABOUT THIS MODEL was not a bug
+    # report. It was: "you research the finance stuff and instantly make money
+    # -- but shouldn't that just unlock the ABILITY to do it? You research
+    # loans, now you can give out loans. What if you didn't give out any? And
+    # inventing stock market maths without building a stock market, or the
+    # assembly line without a factory, is a bit unlikely to pay."
+    #
+    # That was right, and it went to the middle of the economy. 1,337 of the
+    # 2,831 nodes carry revenue and 1,256 of those also carry upkeep, so the
+    # tree ALREADY described them as going concerns that cost money to run and
+    # pay money back. The only thing missing was the act of choosing to run
+    # one. Completing the research paid you whether or not you ever opened the
+    # doors.
+    #
+    # So: `done` is what you KNOW. `operating` is what you RUN. Revenue and
+    # upkeep follow `operating`, and nothing else does - the goal, the tree,
+    # the prerequisites and the standing you earn all still follow `done`,
+    # because knowing how to make a transistor is the achievement and does not
+    # require you to sell any.
+    def is_venture(self, k):
+        """Is this something you could run as a going concern, as opposed to a
+        piece of knowledge that simply changes what you can do?"""
+        n = self.nodes.get(k)
+        if n is None or k in self.granted:
+            return False
+        return n["rev"] > 0 or n["up"] > 0
+
+    def venture_capex(self, k):
+        """What it costs to open the doors, over and above having worked out
+        how. Stock, premises, the first year's materials: a fraction of what
+        the work itself cost, and never less than a year of its running cost,
+        so that a thing which is cheap to invent and expensive to run cannot
+        be opened for nothing."""
+        n = self.nodes[k]
+        return max(self.project_cost(k) * 0.15, n["up"] * 1.0)
+
+    # SUPERVISION, NOT OPERATION. A node's sch/art figures are what it takes to
+    # BUILD the thing, and its upkeep already pays the people who run it once
+    # built - so charging the full build crew against your own staff for ever
+    # would be billing you twice for the same hands, and it measurably was:
+    # Rome fell from half its runs reaching the goal to a quarter when the
+    # operating cost was the whole build crew. What your own trained people
+    # actually owe a going concern is supervision - somebody of yours has to
+    # keep an eye on it - and that is a fraction of what it took to build.
+    VENTURE_SUPERVISION = 0.25
+
+    def venture_staff_used(self):
+        """People of your own tied up supervising what you already have open."""
+        f = self.VENTURE_SUPERVISION
+        sch = sum(self.nodes[k]["sch"] * f for k in self.operating if k in self.nodes)
+        art = sum(self.nodes[k]["art"] * f for k in self.operating if k in self.nodes)
+        return sch, art
+
+    def venture_staff_free(self):
+        """People you could put behind something new. You cannot run fifty
+        businesses with three people, and this is the whole of why choosing
+        WHICH to run is a decision rather than an accounting formality."""
+        sch_used, art_used = self.venture_staff_used()
+        return (max(0.0, self.effective_scholars() - sch_used),
+                max(0.0, self.artisans - art_used))
+
+    def open_venture(self, k, pay=True):
+        """Start actually running something you have worked out how to do."""
+        if k not in self.nodes:
+            return False, "no such node"
+        if k not in self.done:
+            return False, ("you have not worked out how to do that yet, so there "
+                           "is nothing to open")
+        if k in self.granted:
+            return False, ("that is something the society has, not a concern of "
+                           "yours to run")
+        if not self.is_venture(k):
+            return False, ("that is knowledge, not a going concern: there is "
+                           "nothing to open and nothing it would earn. It has "
+                           "already changed what you can build")
+        if k in self.operating:
+            return False, "you are already running that"
+        n = self.nodes[k]
+        sch_free, art_free = self.venture_staff_free()
+        f = self.VENTURE_SUPERVISION
+        need_sch, need_art = n["sch"] * f, n["art"] * f
+        if need_sch > sch_free + 1e-9 or need_art > art_free + 1e-9:
+            return False, ("nobody free to keep an eye on it: it needs %.1f "
+                           "scholars and %.1f craftsmen to supervise, and you "
+                           "have %.1f and %.1f not already watching something "
+                           "else. Hire, teach, or close something."
+                           % (need_sch, need_art, sch_free, art_free))
+        fee = self.venture_capex(k)
+        if pay:
+            if fee > self.capital + self.credit_limit() * 0.5:
+                return False, ("opening it costs %s denarii in stock and premises "
+                               "and you have %s"
+                               % ("{:,.0f}".format(fee), "{:,.0f}".format(self.capital)))
+            self.capital -= fee
+        self.operating.add(k)
+        self.mothballed.discard(k)
+        return True, ("%s open: it earns %s a year and costs %s a year to run"
+                      % (k, "{:,.0f}".format(n["rev"]), "{:,.0f}".format(n["up"])))
+
+    def close_venture(self, k):
+        """Stop running it. You keep the knowledge; you stop paying for it and
+        stop being paid by it."""
+        if k not in self.operating:
+            return False, "you are not running that"
+        self.operating.discard(k)
+        self.mothballed.add(k)
+        n = self.nodes[k]
+        return True, ("%s closed: you stop paying %s a year and stop earning %s"
+                      % (k, "{:,.0f}".format(n["up"]), "{:,.0f}".format(n["rev"])))
+
+    def auto_open_ventures(self):
+        """Open what plainly pays for itself, best margin first, within the
+        staff and the money available. Default ON for the optimizer and OFF
+        for a player, like every other automation in this game."""
+        opened = []
+        cands = sorted((k for k in self.done
+                        if self.is_venture(k) and k not in self.operating
+                        and self.nodes[k]["rev"] > self.nodes[k]["up"]),
+                       key=lambda k: -(self.nodes[k]["rev"] - self.nodes[k]["up"]))
+        for k in cands:
+            if self.capital <= 0:
+                break
+            ok, _why = self.open_venture(k)
+            if ok:
+                opened.append(k)
+        return opened
+
     def mothball_work(self, k):
         """Shut a completed work down to stop paying its upkeep.
 
@@ -44,24 +172,35 @@ class ProjectsMixin:
         # thing they were not allowed to stop paying for, which is how a bad
         # year became "an unrecoverable softlock". Knowledge still cannot be
         # unlearned; a building can always be shut.
-        warn = None
-        if self.never_abandon(k):
-            if self.nodes[k]["cat"] in self.NEVER_ABANDON:
-                return False, ("that is knowledge, or it is who you are here. "
-                               "You cannot un-know a thing to save its upkeep")
-            warn = ("this is a step on the way to what you are trying to reach; "
-                    "you will have to restore or rebuild it before you can go on")
-        self.done.discard(k)
-        self._done_changed()
+        if self.never_abandon(k) and self.nodes[k]["cat"] in self.NEVER_ABANDON:
+            return False, ("that is knowledge, or it is who you are here. "
+                           "You cannot un-know a thing to save its upkeep")
+        # SHUTTING A SHOP DOWN IS NOT FORGETTING HOW IT WORKED. This used to
+        # discard the node from `done`, so closing a loss-maker cost you your
+        # place in the tree and the warning had to say "you will have to
+        # restore or rebuild it before you can go on". That was a real trap and
+        # it only existed because there was nowhere else to put "built but not
+        # running". There is now: what you know is `done`, what you run is
+        # `operating`, and this touches only the second.
+        was_running = k in self.operating
+        self.operating.discard(k)
         self.mothballed.add(k)
-        msg = ("%s shut down; you stop paying %.0f a year for it, and you stop "
-               "getting what it gave you" % (k, self.nodes[k]["up"]))
-        return True, (msg + (". Note: " + warn if warn else ""))
+        if not was_running:
+            return True, ("%s was not running, so there was nothing to stop "
+                          "paying for. You still know how to do it." % k)
+        return True, ("%s shut down; you stop paying %s a year for it and stop "
+                      "earning the %s a year it brought in. You still know how "
+                      "to do it, and 'restore %s' opens it again"
+                      % (k, "{:,.0f}".format(self.nodes[k]["up"]),
+                         "{:,.0f}".format(self.nodes[k]["rev"]), k))
 
     def restore_work(self, k):
         """Bring a mothballed work back. The plant rotted while it stood idle."""
         if k not in getattr(self, "mothballed", set()):
             return False, "you have not shut that down"
+        if k not in self.done:
+            return False, ("you no longer know how to do that; it has to be "
+                           "built again rather than reopened")
         n = self.nodes[k]
         # A FLOOR FROM THE UPKEEP, not only a share of the build cost. Thirty
         # per cent of nothing is nothing, and a node that costs nothing to build
@@ -84,6 +223,11 @@ class ProjectsMixin:
         self.done.add(k)
         self._done_changed()
         self.mothballed.discard(k)
+        # Back in service means back in OPERATION: restore is what a player
+        # types to reopen something they shut, so it must put it back on the
+        # books rather than leaving it known-but-closed.
+        if self.is_venture(k):
+            self.operating.add(k)
         return True, ("%s back in service for %s denarii"
                       % (k, "{:,.0f}".format(fee)))
 
@@ -414,7 +558,16 @@ class ProjectsMixin:
         if k == "school_founded":     self.scholars += 4
         if k == "academy_network":    self.scholars += 10; self.artisans += 10
         if k == "mining_concession":  pass
-        self.log.append((self.year, "completed: " + n["name"]))
+        # SAY THAT IT IS NOT YET RUNNING. Completing something that could be a
+        # going concern no longer starts it earning, and a player who is not
+        # told will reasonably conclude the money is broken rather than that
+        # they have not opened the doors.
+        if self.is_venture(k) and not self.policy.get("auto_open", not self.manual):
+            self.log.append((self.year, "completed: %s. You know how; nothing "
+                                        "is earning yet - 'open %s' to run it"
+                                        % (n["name"], k)))
+        else:
+            self.log.append((self.year, "completed: " + n["name"]))
         if k == self.goal and self.goal_year is None:
             self.goal_year = self.year
 

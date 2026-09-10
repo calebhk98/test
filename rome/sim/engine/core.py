@@ -73,6 +73,11 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         self.teaching_hours_this_year = 0.0
         self.trade_hours_used = {}       # trade -> hours consumed by projects this year
         self.mothballed = set()          # completed works you shut down on purpose
+        # WHAT YOU ACTUALLY RUN, as opposed to what you know how to do. Revenue
+        # and upkeep follow this set and nothing else does. See is_venture and
+        # open_venture in projects.py: completing the research used to start
+        # paying you whether or not you ever opened the doors.
+        self.operating = set()
         self.bondage_years_left = 0.0    # years of service still owed for a debt
         self.bondage_debt = 0.0
         self.credit_frozen_until = 0     # year until which nobody will fund new work
@@ -110,6 +115,11 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # player shedding a loss-maker by hand - `mothball` does exactly
             # that, and gets it back with `restore`.
             "auto_shed":     not manual,
+            # Open every concern that plainly pays for itself. On for the
+            # optimizer, whose long runs are calibrated against a household
+            # that does run what it builds, and off for a player, for whom
+            # deciding what to actually operate is the point.
+            "auto_open":     not manual,
             "auto_bribe":    not manual,   # pay your way out of a scandal
         }
         self.founder_alive = True
@@ -376,6 +386,10 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # the log reported as being "blocked" on a treadle lathe.
         if self.capital < 0 and self.mine_capacity and self.policy.get("auto_mothball", True):
             self.mothball_mines()
+        # Open what plainly pays for itself, before the books are struck: a
+        # concern you opened this year is a concern that earns this year.
+        if self.policy.get("auto_open", not self.manual):
+            self.auto_open_ventures()
         self.charge_interest(yr)
         if self.policy.get("auto_shed", True):
             self.shed_loss_makers(yr)
@@ -439,6 +453,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                             break
                         n = self.nodes[k]
                         net += n["up"] - n["rev"]
+                        self.operating.discard(k)
                         self.done.discard(k)
                         self._done_changed()
                         self.mothballed.add(k)   # you can buy it back
@@ -573,7 +588,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             # more projects in hand divide the same purse into smaller annual
             # payments, so everything crawls and nothing finishes. Spreading a
             # fixed budget across more work is not more work. Left as it was.
-            max_active = int(2 + self.director_pool() / 2400.0
+            max_active = int(2 + self.director_pool() / 2000.0
                              + self.scholars / 12.0 + self.artisans / 25.0)
             # EARN A LIVING FIRST. Now that a project must actually be paid for,
             # a founder who arrives with 400 denarii and walks the goal-ordered
@@ -1081,6 +1096,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # unreproducible.
                 if losable:
                     for k in self.rng.sample(losable, max(1, len(losable) // 6)):
+                        self.operating.discard(k)
                         self.done.discard(k)
                         self._done_changed()
             if self.stalled >= 12:

@@ -337,11 +337,20 @@ check("every automatic behaviour has a switch",
 # --- naive B/C: there must be a way to shed the upkeep of a finished work
 s = sim(capital=200000.0)
 s.done.add("fin_pawnshop")
+s._done_changed()
+# OPEN IT FIRST. Upkeep follows what you RUN, not what you know, so a node
+# sitting in `done` has no running cost to stop until you open its doors.
+_ok_open, _why_open = s.open_venture("fin_pawnshop")
 up_before = s.upkeep()
 ok_mb, _ = s.mothball_work("fin_pawnshop")
 check("a finished work can be shut down to stop its upkeep",
-      ok_mb and s.upkeep() < up_before,
-      "upkeep %.0f -> %.0f" % (up_before, s.upkeep()))
+      _ok_open and ok_mb and up_before > 0 and s.upkeep() < up_before,
+      "open %s (%s), upkeep %.0f -> %.0f"
+      % (_ok_open, _why_open, up_before, s.upkeep()))
+check("shutting a concern down does not make you forget how it worked",
+      "fin_pawnshop" in s.done and "fin_pawnshop" not in s.operating,
+      "done %s operating %s" % ("fin_pawnshop" in s.done,
+                                "fin_pawnshop" in s.operating))
 
 # --- the user: hazards must be answerable with technology
 s = sim()
@@ -1273,14 +1282,17 @@ check("a save the game promised exists even if you type nothing",
 
 # 3. state and the prompt both said 2,400 founder-hours free after 2,300 of
 #    them had been sold, and then refused one more hour for having none.
-s = sim()
-_pool = s.director_pool()
-s.work_for_wages("scholar", _pool - 100)
-_st2, _, _ = proto([{"cmd": "work", "trade": "scholar", "hours": 2300},
+# Derived from the pool, not a literal: this check hardcoded 2,300 hours and
+# started failing the moment the founder's year came down to 2,000, because
+# `work` correctly refused to sell hours that no longer existed.
+_pool = sim().director_pool()
+_sell = _pool - 100
+_st2, _, _ = proto([{"cmd": "work", "trade": "scholar", "hours": _sell},
                     {"cmd": "state"}])
 check("hours already sold for wages are not still reported as free",
-      _st2[1]["founder_hours_available"] < 200,
-      "%r free after selling 2300" % _st2[1].get("founder_hours_available"))
+      _st2[0].get("ok") is True and _st2[1]["founder_hours_available"] < 200,
+      "%r free after selling %g of %g" % (_st2[1].get("founder_hours_available"),
+                                          _sell, _pool))
 
 # 4. auto_shed discards technologies you built - under fog the only score there
 #    is - and it was on by default for a player.
@@ -1515,6 +1527,76 @@ check("a society is not granted the route another society would take to it",
       and "fud_maize" in _mx.done,
       [k for k in ("fud_maize", "cementation_steel", "clock_pendulum")
        if k in _mx.done])
+
+# --- knowing how, and actually running it ------------------------------------
+# The user, on the deepest thing anyone said about this model: "you research
+# the finance stuff and instantly make money -- but shouldn't that just unlock
+# the ABILITY to do it? You research loans, now you can give out loans. What if
+# you didn't give out any?" 1,337 nodes carried revenue and 1,256 of those also
+# carried upkeep, so the tree already called them going concerns; the only
+# thing missing was the act of opening the doors.
+_v, _, _ = proto([{"cmd": "start", "id": "fin_pawnshop"},
+                  {"cmd": "step", "years": 6},
+                  {"cmd": "money"},
+                  {"cmd": "open", "id": "fin_pawnshop"},
+                  {"cmd": "money"}], kit="equestrian")
+_before, _open, _after = _v[2], _v[3], _v[4]
+check("working out how to do something does not by itself pay you",
+      "fin_pawnshop" not in (_before.get("where_the_money_comes_from") or {}),
+      _before.get("where_the_money_comes_from"))
+check("opening the doors is what pays you",
+      _open.get("ok") is True
+      and (_after.get("where_the_money_comes_from") or {}).get("fin_pawnshop"),
+      _after.get("where_the_money_comes_from"))
+
+s2 = sim(capital=200000.0)
+s2.done.add("fin_pawnshop")
+s2._done_changed()
+_cap0 = s2.capital
+s2.open_venture("fin_pawnshop")
+check("opening a concern costs stock and premises, not nothing",
+      _cap0 - s2.capital >= NODES["fin_pawnshop"]["up"],
+      "%.0f to open against %.0f a year of running cost"
+      % (_cap0 - s2.capital, NODES["fin_pawnshop"]["up"]))
+
+# You cannot run fifty businesses with three people.
+s3 = sim(capital=1000000.0)
+_heavy = [k for k in NODES if NODES[k]["art"] >= 3 and NODES[k]["rev"] > 0][:1]
+if _heavy:
+    s3.done.add(_heavy[0]); s3._done_changed()
+    s3.artisans = 0.0
+    _okh, _whyh = s3.open_venture(_heavy[0])
+    check("a concern nobody is free to run cannot be opened",
+          _okh is False and "nobody free" in (_whyh or ""), _whyh)
+
+# Shutting it stops both sides and keeps the knowledge.
+s4 = sim(capital=200000.0)
+s4.done.add("fin_pawnshop"); s4._done_changed()
+s4.open_venture("fin_pawnshop")
+_rev_on, _up_on = s4.revenue(), s4.upkeep()
+s4.mothball_work("fin_pawnshop")
+check("closing a concern stops what it earned and what it cost, both",
+      s4.revenue() < _rev_on and s4.upkeep() < _up_on
+      and "fin_pawnshop" in s4.done,
+      "rev %.0f->%.0f up %.0f->%.0f, still known %s"
+      % (_rev_on, s4.revenue(), _up_on, s4.upkeep(), "fin_pawnshop" in s4.done))
+
+check("opening things for you is on for the optimizer and off for a player",
+      sim(manual=True).policy["auto_open"] is False
+      and sim(manual=False).policy["auto_open"] is True,
+      (sim(manual=True).policy["auto_open"], sim(manual=False).policy["auto_open"]))
+
+# What you run has to survive a save, or reloading quietly shuts your business.
+_vs = "%s/ventures.json" % _LOADTEST_DIR
+_rt, _, _ = proto([{"cmd": "start", "id": "fin_pawnshop"},
+                   {"cmd": "step", "years": 6},
+                   {"cmd": "open", "id": "fin_pawnshop"},
+                   {"cmd": "save", "file": _vs},
+                   {"cmd": "load", "file": _vs},
+                   {"cmd": "state"}], kit="equestrian")
+check("what you are running survives a save and reload",
+      _rt[-1].get("concerns_you_run") == 1,
+      "runs %r after a round trip" % _rt[-1].get("concerns_you_run"))
 
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)

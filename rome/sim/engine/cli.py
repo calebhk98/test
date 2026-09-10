@@ -183,7 +183,7 @@ def cmd_path(a):
     print("\nLongest serial chain (%.1f yr floor, cannot be bought down with money):" % yrs)
     for k in chain:
         print("   -> %s  (%.1f yr floor, %d your-hrs)" % (k, nodes[k]["yrs"], nodes[k]["ph"]))
-    print("\nFounder-hours available in one lifetime at 2400/yr for 30 yrs: 72,000")
+    print("\nFounder-hours available in one lifetime at 2000/yr for 30 yrs: 60,000")
     print("Founder-hours demanded by this path                          : %s" % f"{cum_ph:,.0f}")
     print("=> %s" % ("feasible alone in principle, but not with the calendar floors"
                      if cum_ph < 72000 else
@@ -709,7 +709,7 @@ def cmd_sweep(a):
     sweeps = {
         "capital":  ("start_capital", [2000, 5000, 10320, 25000, 50000, 200000, 1000000]),
         "lifespan": ("founder_life",  [10, 15, 20, 28, 35, 45, 60]),
-        "hours":    ("founder_hours_per_year", [1200, 1800, 2400, 3000, 3600]),
+        "hours":    ("founder_hours_per_year", [1000, 1500, 2000, 2500, 3000]),
         "mortality":("founder_life_mean", [10, 15, 20, 28, 40, 60]),
     }
     key, values = sweeps[a.axis]
