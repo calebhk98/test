@@ -1,0 +1,1713 @@
+########################################################
+### R1 opening state / ledger / available (Rome, poor_scholar)
+### INPUT:
+###   2
+###   n
+###   poor_scholar
+###   n
+###   state full:true
+###   money
+###   available
+###   help money
+###   quit
+### OUTPUT:
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_74.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 400 den    net +3.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk, 0 lost per sacking on average, hedged by nothing yet
+  [165-180] Antonine plague
+  [190-275] Currency debasement
+  [249-262] Plague of Cyprian
+  [235-284] Third century crisis
+  [284-305] Diocletian's reforms and the Price Edict
+  [312-375] The solidus and the end of the debasement
+  [313-400] Christianisation of the empire
+  [376-405] Adrianople and the Gothic settlement
+  [406-460] The crossings, and the sack of Rome
+  [461-492] The end of the western empire
+  [493-526] Ostrogothic Italy under Theodoric
+  [535-554] Justinian's Gothic War
+  [541-545] The Justinianic plague
+  [558-600] Recurrent plague
+  [568-600] The Lombard invasion
+
+Goal: point_contact_transistor
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > LEDGER
+Capital: 400 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         230
+  of which because you are rich  6
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: 3.5     spent on projects last step: 0
+Net/yr after it: 3.5   (this is the figure `state` prints)
+Credit limit: 1,367 (none used)     interest on arrears: 11%     paid so far: 0
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > AVAILABLE: 207 startable now
+a summary by subject, because the full list is 207 things
+
+SUBJECT                    THINGS   CHEAPEST    DEAREST     AFFORD
+textiles                       54          6     17,415         53
+finance                        24         10     10,831         16
+roads, bridges and canal       20       49.6      1,445         20
+the remaining arts             20       68.8      2,532         19
+power and precision            16       40.4      856.1         16
+farming, in depth              10        119        280         10
+the household                  10          5      285.5         10
+metallurgy                      9       74.4      6,296          6
+transport, in depth             9      200.4      1,258          9
+mathematics and method          7        230      1,032          7
+medicine and biology            7        9.3        580          7
+agriculture and food            5        235      2,070          4
+construction                    5       97.7        531          5
+signals and media               3      271.2      536.6          3
+electricity                     2       71.4      269.6          2
+glass and optics                2      315.9      337.2          2
+the briefing                    1        600        600          1
+society and politics            1      1,580      1,580          1
+everything else                 1        210        210          1
+printing and information        1      217.5      217.5          1
+
+CHEAPEST SIX RIGHT NOW, sorted by cost:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      0
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      0
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*      6
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*      7
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      0
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      0
+
+MOST RESTS ON THESE, of what you could begin today:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -  2,030
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -  1,714
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -  1,222
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -  1,111
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*     78
+
+  one subject: available metallurgy
+  by name: available find furnace
+  what you can pay for: available afford 1,766
+  a page of everything: available limit 30
+  all of it at once: available all (large)
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > help:
+  where it comes from: Your practice - the trade this society already had, which you can do from the first day - plus every concern you have OPENED, plus what your own workshop sells. money itemises all of it and the rows sum to the revenue above them.
+  your practice pays less than the tree quotes: About a third: one person in a rented room is not an organised concern, and that gap does not close with time. Selling your hours for wages takes another bite, because you cannot be in two places.
+  a concern you open starts small: It reaches its full figure over about three years.
+  where it goes: Living and appearances, wages, the upkeep of what you are RUNNING, mines standing whether or not you work them, and interest on arrears.
+  money costs money to hold: Living and appearances is about a sixtieth of your capital a year, on top of a subsistence floor and your household, plus a fixed sum for each rank you hold. In a patronage society a man visibly richer than he lives is suspected, and a man seeking standing must spend on it. An idle million bleeds about fifteen thousand a year doing nothing, which is why money sitting still is money going backwards.
+  what you can buy: help economy
+  debt: You may spend past what you have, as far as somebody will lend you and no further. Arrears cost interest.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to rome_100ad_74.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_74.json
+
+########################################################
+### R2 F10a: concern ramp claimed 3 years, is 1 year
+### INPUT:
+###   2
+###   n
+###   merchant
+###   n
+###   why tex_horizontal_loom
+###   start tex_horizontal_loom
+###   step 1
+###   open tex_horizontal_loom
+###   money
+###   step 1
+###   money
+###   quit
+### OUTPUT:
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_75.json
+
+
+   You arrive in 100 AD with 4000 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 4000 den | you:2000 hr | sch 0 art 0 | rep 5] > Horizontal loom  [tex_horizontal_loom]
+======================================
+tier 1, textiles, confidence B
+
+Refined horizontal loom with better shaft control and cloth beam tension.
+Slightly faster than two-beam. Intermediate step toward mechanized looms.
+
+COST: 225.8 den total  (47 labour + 13 materials + 150 capital, then x1 your civ, x1 distance, x1 scarcity, x1.075 opposition, x1 prices)
+YOUR HOURS: 80     CALENDAR FLOOR: 0.50 years     FAILURE RISK: 10%
+STAFF NEEDED: 0 scholars, 0 artisans   (you have 1, 0)
+HIRED LABOUR: artisan 100h, carpenter 200h
+MATERIALS: iron_bar_kg 8, timber_m3 2
+UPKEEP: 30 den/yr     REVENUE: 400 den/yr
+
+STATUS: CAN START NOW
+PREREQUISITES (all met, and finished counts for ever): cap_tol_1mm, tex_two_beam_loom
+
+FULL CHAIN BEHIND IT: 2 nodes, 0 of your hours, 0 den, 0.50-year serial floor
+
+DIRECTLY UNLOCKS: tex_canvas, tex_treadle_loom
+TOTAL DOWNSTREAM: 9 thing(s) depend on this
+
+[100 AD | 4000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: tex_horizontal_loom
+name: Horizontal loom
+founder hours needed: 80
+calendar floor years: 0.50
+the bill you have taken on: 225.8
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 4000 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Horizontal loom
+  EVENT 100: completed: Horizontal loom. You know how; nothing is earning yet - 'open tex_horizontal_loom' to run it
+
+============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 3,724 den    net -272.1 den/yr (after 225.8 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 370 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.8   protection 3%   scandal 3.0   eminence 0.01
+  EMINENCE is dangerous above 26 (settles near 0.20 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[101 AD | 3723 den | you:2000 hr | sch 0 art 0 | rep 7] > opened: tex_horizontal_loom open: it earns 400 a year and costs 30 a year to run
+capital: 3,690
+revenue: 500
+upkeep: 30
+
+[101 AD | 3689 den | you:2000 hr | sch 0 art 0 | rep 7] > LEDGER
+Capital: 3,690 den     Revenue: 500 den/yr
+  from:
+    tex_horizontal_loom                    266.6
+    med_cataract_couching                  166.7
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    STILL BUILDING UP: tex_horizontal_loom at 66% of full takings. A concern you
+    open reaches its full figure over 3 years, so what the ledger shows is not
+    what it will be.
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       30
+  living and appearances         295.3
+  of which because you are rich  55.3
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: 174.6     spent on projects last step: 225.8
+Net/yr after it: -51.1   (this is the figure `state` prints)
+Credit limit: 1,960 (none used)     interest on arrears: 11%     paid so far: 0
+
+[101 AD | 3689 den | you:2000 hr | sch 0 art 0 | rep 7] > ============================================================
+YEAR 102   (498 years to the horizon at 600)
+============================================================
+
+Money: 3,865 den    net +297.2 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 1   (you know how to run 0 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.6   protection 3%   scandal 2.7   eminence 0.02
+  EMINENCE is dangerous above 26 (settles near 0.20 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[102 AD | 3864 den | you:2000 hr | sch 0 art 0 | rep 7] > LEDGER
+Capital: 3,865 den     Revenue: 633.2 den/yr
+  from:
+    tex_horizontal_loom                    399.8
+    med_cataract_couching                  166.7
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       30
+  living and appearances         306
+  of which because you are rich  58
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: 297.2     spent on projects last step: 0
+Net/yr after it: 297.2   (this is the figure `state` prints)
+Credit limit: 1,975 (none used)     interest on arrears: 11%     paid so far: 0
+
+[102 AD | 3864 den | you:2000 hr | sch 0 art 0 | rep 7] > bye: True
+
+Ended 102 AD. stopped
+Saved to rome_100ad_75.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_75.json
+
+########################################################
+### R3 F10b: delaying the open skips the ramp entirely
+### INPUT:
+###   2
+###   n
+###   merchant
+###   n
+###   start tex_horizontal_loom
+###   step 3
+###   open tex_horizontal_loom
+###   money
+###   quit
+### OUTPUT:
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_76.json
+
+
+   You arrive in 100 AD with 4000 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 4000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: tex_horizontal_loom
+name: Horizontal loom
+founder hours needed: 80
+calendar floor years: 0.50
+the bill you have taken on: 225.8
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 4000 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Horizontal loom
+  EVENT 100: completed: Horizontal loom. You know how; nothing is earning yet - 'open tex_horizontal_loom' to run it
+
+============================================================
+YEAR 103   (497 years to the horizon at 600)
+============================================================
+
+Money: 3,632 den    net -45 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 370 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.4   protection 2%   scandal 2.5   eminence 0.03
+  EMINENCE is dangerous above 26 (settles near 0.20 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[103 AD | 3631 den | you:2000 hr | sch 0 art 0 | rep 6] > opened: tex_horizontal_loom open: it earns 400 a year and costs 30 a year to run
+capital: 3,598
+revenue: 633.2
+upkeep: 30
+
+[103 AD | 3597 den | you:2000 hr | sch 0 art 0 | rep 6] > LEDGER
+Capital: 3,598 den     Revenue: 633.2 den/yr
+  from:
+    tex_horizontal_loom                    399.8
+    med_cataract_couching                  166.7
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       30
+  living and appearances         302
+  of which because you are rich  54
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: 301.2     spent on projects last step: 0
+Net/yr after it: 301.2   (this is the figure `state` prints)
+Credit limit: 1,925 (none used)     interest on arrears: 11%     paid so far: 0
+
+[103 AD | 3597 den | you:2000 hr | sch 0 art 0 | rep 6] > bye: True
+
+Ended 103 AD. stopped
+Saved to rome_100ad_76.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_76.json
+
+########################################################
+### R4 F9: FULL CHAIN BEHIND IT ignores the x1.4 price index (Norse)
+### INPUT:
+###   3
+###   n
+###   absurd
+###   n
+###   why telescope
+###   quit
+### OUTPUT:
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   SCANDINAVIA IN THE VIKING AGE, 900
+==============================================================================
+
+   You come ashore somewhere on the Vestfold, in a country with no king worth
+   the name, no cities, no coinage anybody trusts, and no state to ask
+   permission from. There are perhaps a million and a half people in the whole
+   of Scandinavia. Every one of them is somebody's neighbour, and the law is an
+   assembly of free men who will hear you.
+
+   WHAT YOU CAN SEE
+   The best ships in the world. Clinker-built, sprung, shallow enough for a
+   river and sound enough for an ocean, and the men who build them do it by
+   eye. Iron smelted from bog ore in every valley. Wool, tar, timber, and a
+   trade network that reaches Baghdad in one direction and Newfoundland in the
+   other.
+
+   WHAT IS MISSING
+   Everything that needs a state. There is no one to fund a public work, no
+   city to concentrate a trade in, no bureaucracy to keep a record for longer
+   than a man's memory. What Rome finds trivial, you will find nearly
+   impossible. What Rome finds impossible, you can simply do, because nobody
+   here can stop you.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   A century of Christianisation and consolidation. Kings, bishops, written
+   law, taxes and towns. The freedom you are enjoying now is the thing that is
+   about to end.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session norse_900ad_3.json
+
+
+   You arrive in 900 AD with 1000000 in hacksilver and nothing else: no
+   employees, no slaves, and nobody who owes you anything. What you have is
+   everything you know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[900 AD | 1000000 hacksilver | you:2000 hr | sch 0 art 0 | rep 5] > Refracting telescope  [telescope]
+=================================
+tier 2, glass_optics, confidence B
+
+Military and naval value is immediate and obvious, which makes it one of the
+safest impressive things you can make. Chromatic aberration forces long
+tubes until you have flint glass for achromats.
+
+COST: 2,756 hacksilver total  (321 labour + 72.5 materials + 700 capital, then x1.8 your civ, x1 distance, x1 scarcity, x1 opposition, x1.4 prices)
+YOUR HOURS: 350     CALENDAR FLOOR: 1 years     FAILURE RISK: 20%
+STAFF NEEDED: 1 scholars, 2 artisans   (you have 1, 0)
+HIRED LABOUR: artisan 1,500h, carpenter 600h
+MATERIALS: emery_kg 15, glass_raw_kg 25, timber_m3 3
+UPKEEP: 250 hacksilver/yr     REVENUE: 2,000 hacksilver/yr
+
+STATUS: BLOCKED
+  missing prerequisites: glass_clear, lens_grinding
+
+FULL CHAIN BEHIND IT: 8 nodes, 2,810 of your hours, 24,175 hacksilver, 6.5-year serial floor
+
+DIRECTLY UNLOCKS: civ_precise_levelling, in2_plane_table, in2_theodolite, microscope_compound, opt_level, opt_reflecting_telescope, opt_sextant, opt_spectroheliograph, opt_stellar_parallax, opt_transit_instrument, prc_autocollimator, sc2_physics_geometric_optics, semaphore_telegraph, spectroscope, tr_sextant_navigation
+TOTAL DOWNSTREAM: 192 thing(s) depend on this -- INCLUDING THE GOAL
+
+BOUNTY: yes, could be posted as a public prize
+people kept on your own staff, who understand your methods and stay when
+this is finished. Different from hired_labour, which is hours of a job.
+
+[900 AD | 1000000 hacksilver | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 900 AD. stopped
+Saved to norse_900ad_3.json. Come back with:
+   python3 rome/sim/simulator.py play --session norse_900ad_3.json
+
+########################################################
+### R5 F5: bribe 1 refused with a false reason at protection 0%
+### INPUT:
+###   2
+###   n
+###   poor_scholar
+###   n
+###   bribe 1
+###   bribe 2
+###   state
+###   quit
+### OUTPUT:
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_77.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > REFUSED: you have no scandal to answer and you are already as protected as money can make you here, so this would buy nothing. Nothing was changed.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > bribed: scandal 0.00 -> 0.00 for 2 denarii; advocacy and piety bought as well: protection 0.00 -> 0.03
+capital: 398
+
+[100 AD | 398 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 398 den    net +3.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 3%   scandal 0   eminence 0
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+[100 AD | 398 den | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to rome_100ad_77.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_77.json
+
+########################################################
+### R6 F6/F7/F8: idle 500 years -> permanent insolvency loop, credit ban past the horizon
+### INPUT:
+###   2
+###   n
+###   poor_scholar
+###   n
+###   step 500
+###   state full:true
+###   money
+###   quit
+### OUTPUT:
+
+==============================================================================
+                      ONE PERSON, AND EVERYTHING THEY KNOW                    
+==============================================================================
+
+   You are one person, dropped into a pre-industrial society, carrying the
+   knowledge of how modern technology works and none of the industry that makes
+   it. Knowing how a thing works is free. Building it is not: it costs your own
+   hours, other people's hours, money, materials, and years you do not get
+   back.
+
+   You arrive alone. No employees, no slaves, nobody who owes you anything, and
+   about enough money to eat for a few months.
+
+------------------------------------------------------------------------------
+   WHERE, AND WHEN
+------------------------------------------------------------------------------
+
+   1) The Later Han Empire, 100
+      Rome's exact contemporary and ahead of it in metallurgy, agriculture and
+      bureaucracy. Cast iron for five centuries already, the seed drill, the
+      moldboard plough, paper in the year 105, water-powered blast bellows in 31
+      AD.
+      58,000,000 people   state capacity 0.90   prices 0.75x Rome
+
+   2) The Roman Empire under Trajan, 100
+      Peak territorial extent, sound currency, superb civil engineering, an
+      economy resting on slavery, and an elite that despises manual work.
+      65,000,000 people   state capacity 0.85   prices 1.00x Rome
+
+   3) Scandinavia in the Viking age, 900
+      Small population, no state to speak of, superb shipbuilding and ironworking,
+      and the best long-range mobility in Europe. The opposite problem from Rome:
+      nobody will stop you, and nobody can fund you either.
+      1,500,000 people   state capacity 0.15   prices 1.40x Rome
+
+   4) England under Edward I, 1300
+      Watermills and windmills everywhere, a real legal system, chartered towns,
+      universities, the horse collar, the crank, the mechanical clock arriving,
+      and about to be hit by the worst demographic catastrophe in European
+      history.
+      4,500,000 people   state capacity 0.60   prices 1.10x Rome
+
+   5) The Mexica Triple Alliance, 1500
+      A large, dense, literate, well-administered state with monumental
+      construction, chinampa agriculture that outyields anything in Europe, and no
+      draught animals, no iron, no wheel in practical use.
+      5,000,000 people   state capacity 0.80   prices 0.80x Rome
+
+   Which one? [1-5, or q to leave] 
+==============================================================================
+   THE ROMAN EMPIRE UNDER TRAJAN, 100
+==============================================================================
+
+   You come to on the Ostia road in the eighteenth year of Domitian's calendar,
+   except Domitian is four years dead and nobody has corrected the milestone.
+   It is the second consulship of Trajan. Rome is at its greatest extent and
+   its most confident: the roads are the best in the world, the water arrives
+   on schedule, the courts sit, the grain fleet comes in from Alexandria, and
+   sixty-five million people are governed by men who genuinely believe the
+   arrangement is permanent.
+
+   WHAT YOU CAN SEE
+   Concrete that sets under water. Glass windows. Surgical instruments a modern
+   surgeon would recognise. Water-mills in banks of sixteen. A postal service
+   that outruns anything Europe will have again for fourteen hundred years. And
+   no mechanical clock, no printing, no spectacles, no chimney, no stirrup, no
+   zero.
+
+   WHAT IS MISSING
+   Not the ideas. The instruments. Nobody can measure a temperature, hold a
+   tolerance, sustain a vacuum, or purify anything. Every single thing you know
+   how to build waits behind those four.
+
+   WHAT IS COMING, AND ONLY YOU KNOW IT
+   Sixty-five good years, then the Antonine plague. A century after that, the
+   currency is debased to a tenth and the frontier stops holding. You know the
+   dates. Nobody else does.
+
+------------------------------------------------------------------------------
+   FOG OF WAR. With it on you see what you have built, what you could begin
+   today as a one-line summary, and things you have heard of but cannot yet
+   start. You cannot see where anything leads. With it off you can see the
+   whole tree and plan a route through it.
+
+   Fog of war? [Y/n] 
+------------------------------------------------------------------------------
+   WHAT YOU ARRIVED WITH
+      destitute              0 den
+         the clothes you stand in. You must earn your first meal.
+      poor_scholar         400 den
+         DEFAULT. A few months' subsistence, a knife, a lens, a codex of notes. About
+         what a working teacher has.
+      artisan            1,200 den
+         enough to rent a workshop and buy a first set of tools.
+      merchant           4,000 den
+         a modest trading capital. You can fund one real venture.
+      rich_merchant     20,000 den
+         wealthy but well under the equestrian census of 100,000.
+      equestrian       100,000 den
+         the equestrian census exactly. Conspicuous.
+      absurd         1,000,000 den
+         four senatorial fortunes in unminted gold. It used to make things worse and
+         no longer does: once money can be converted into protection and into sunk
+         mines, wealth helps. What it does NOT do is make you a magician: a million
+         denarii buys perhaps a tenth off the time, not a different game. What money
+         changes most is the OPENING - the first fifty years, where a poor founder is
+         choosing between eating and building.
+
+   Which? [destitute/poor_scholar/artisan/merchant/rich_merchant/equestrian/absurd] 
+------------------------------------------------------------------------------
+   MORTALITY. By default the founder does not age, which measures the tree
+   rather than a lifespan lottery. Turned on, you get one human life and
+   everything you have not made permanent dies with you. The premise of the
+   whole game is that one is the honest number.
+
+   Let the founder age and die? [y/N] 
+==============================================================================
+   Starting now. Progress is written to this file after every command, so you
+   can stop any time - close the terminal, anything - and come back to exactly
+   where you left off with:
+
+      python3 rome/sim/simulator.py play --session rome_100ad_78.json
+
+
+   You arrive in 100 AD with 400 denarii and nothing else: no employees, no
+   slaves, and nobody who owes you anything. What you have is everything you
+   know.
+
+   Type commands in plain words. The four to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs) and 'step' (let a year pass). 'help' explains the
+   rest; 'quit' leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  EVENT 104: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 75 denarii
+  EVENT 130: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 79 denarii
+  EVENT 137: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 70 denarii
+  EVENT 141: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 60 denarii
+  EVENT 141: banditry or a frontier war disrupts supply: it cost you 28 denarii
+  EVENT 150: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 53 denarii
+  EVENT 159: banditry or a frontier war disrupts supply: it cost you 29 denarii
+  EVENT 165: Antonine plague: 50 gone with the trade that stopped
+  EVENT 167: Antonine plague: 43 gone with the trade that stopped
+  EVENT 172: Antonine plague: 41 gone with the trade that stopped
+  EVENT 178: Antonine plague: 41 gone with the trade that stopped
+  EVENT 180: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 38 denarii
+  EVENT 188: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 41 denarii
+  EVENT 190: Currency debasement: the coin is worth 6% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 10 denarii
+  EVENT 205: Currency debasement: the coin is worth 62% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 8 denarii
+  EVENT 220: Currency debasement: the coin is worth 85% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 8 denarii
+  EVENT 223: banditry or a frontier war disrupts supply: it cost you 14 denarii
+  EVENT 235: Third century crisis: trade and output fall to 65% of normal
+  EVENT 235: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.20)
+  EVENT 235: Currency debasement: the coin is worth 94% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took 7 denarii
+  EVENT 238: interest on 76 denarii of arrears at 11.0% a year
+  EVENT 239: CLOSE TO THE LIMIT: you owe 157 of the 219 anyone here will advance you (71%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 240: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.6), and you keep your knowledge and your practice
+  EVENT 240: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 242: interest on 248 denarii of arrears at 11.0% a year
+  EVENT 243: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 245: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.23)
+  EVENT 246: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 250: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 250: Currency debasement: the coin is worth 97% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took nothing, because you were holding none
+  EVENT 251: Plague of Cyprian: you had nothing it could take
+  EVENT 252: interest on 248 denarii of arrears at 11.0% a year
+  EVENT 252: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 254: Plague of Cyprian: you had nothing it could take
+  EVENT 255: Third century crisis: trade and output fall to 65% of normal
+  EVENT 255: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.26)
+  EVENT 255: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 258: Plague of Cyprian: you had nothing it could take
+  EVENT 259: Plague of Cyprian: you had nothing it could take
+  EVENT 260: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 265: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 265: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.29)
+  EVENT 265: Currency debasement: the coin is worth 99% less than it was. Quoted costs are what a thing really takes to make, so they do not move; what debases is the money in your chest, and this year it took nothing, because you were holding none
+  EVENT 270: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 270: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 275: Third century crisis: trade and output fall to 65% of normal
+  EVENT 275: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.32)
+  EVENT 280: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 283: Third century crisis: a site is sacked - you had nothing it could take
+  EVENT 284: Third century crisis: the society's values are shifting (w_religious_rigidity now 0.35)
+  EVENT 284: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.85, w_commerce now 0.30, w_military now 0.90, w_religious_rigidity now 0.35)
+  EVENT 290: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 292: CLOSE TO THE LIMIT: you owe 228 of the 220 anyone here will advance you (103%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 294: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.88, w_commerce now 0.25, w_military now 0.93, w_religious_rigidity now 0.39)
+  EVENT 295: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 300: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 302: CLOSE TO THE LIMIT: you owe 198 of the 221 anyone here will advance you (89%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 304: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.90, w_commerce now 0.20, w_military now 0.95, w_religious_rigidity now 0.43)
+  EVENT 305: Diocletian's reforms and the Price Edict: the society's values are shifting (patronage_weight now 0.90, w_commerce now 0.20, w_military now 0.95, w_religious_rigidity now 0.43)
+  EVENT 310: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 312: CLOSE TO THE LIMIT: you owe 167 of the 221 anyone here will advance you (75%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 312: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.20, w_labour_saving now -0.60)
+  EVENT 313: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.80, w_novelty now -0.40, w_religious_rigidity now 0.43)
+  EVENT 320: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 322: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.22, w_labour_saving now -0.57)
+  EVENT 323: CLOSE TO THE LIMIT: you owe 169 of the 222 anyone here will advance you (76%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 323: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.81, w_novelty now -0.41, w_religious_rigidity now 0.47)
+  EVENT 330: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 332: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.24, w_labour_saving now -0.55)
+  EVENT 333: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.82, w_novelty now -0.41, w_religious_rigidity now 0.51)
+  EVENT 336: CLOSE TO THE LIMIT: you owe 164 of the 224 anyone here will advance you (73%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 340: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 342: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.26, w_labour_saving now -0.53)
+  EVENT 343: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.84, w_novelty now -0.42, w_religious_rigidity now 0.55)
+  EVENT 352: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.28, w_labour_saving now -0.50)
+  EVENT 353: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.85, w_novelty now -0.42, w_religious_rigidity now 0.59)
+  EVENT 360: banditry or a frontier war disrupts supply: it cost you 3 denarii
+  EVENT 362: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.30, w_labour_saving now -0.48)
+  EVENT 363: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.86, w_novelty now -0.43, w_religious_rigidity now 0.63)
+  EVENT 372: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.31, w_labour_saving now -0.46)
+  EVENT 373: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.87, w_novelty now -0.43, w_religious_rigidity now 0.67)
+  EVENT 375: The solidus and the end of the debasement: the society's values are shifting (w_commerce now 0.32, w_labour_saving now -0.45)
+  EVENT 375: banditry or a frontier war disrupts supply: it cost you 15 denarii
+  EVENT 376: Adrianople and the Gothic settlement: trade and output fall to 86% of normal
+  EVENT 383: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.88, w_novelty now -0.44, w_religious_rigidity now 0.71)
+  EVENT 384: interest on 31 denarii of arrears at 11.0% a year
+  EVENT 388: interest on 151 denarii of arrears at 11.0% a year
+  EVENT 389: CLOSE TO THE LIMIT: you owe 190 of the 222 anyone here will advance you (85%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 390: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.4), and you keep your knowledge and your practice
+  EVENT 393: CLOSE TO THE LIMIT: you owe 181 of the 222 anyone here will advance you (81%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 393: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.89, w_novelty now -0.45, w_religious_rigidity now 0.75)
+  EVENT 394: Adrianople and the Gothic settlement: a site is sacked - you had nothing it could take
+  EVENT 396: Adrianople and the Gothic settlement: trade and output fall to 86% of normal
+  EVENT 398: interest on 444 denarii of arrears at 11.0% a year
+  EVENT 400: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 400: Christianisation of the empire: the society's values are shifting (w_magic_fear now 0.90, w_novelty now -0.45, w_religious_rigidity now 0.78)
+  EVENT 403: CLOSE TO THE LIMIT: you owe 181 of the 222 anyone here will advance you (81%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 406: The crossings, and the sack of Rome: trade and output fall to 74% of normal
+  EVENT 407: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 408: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 410: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 411: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 412: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 412: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 419: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 420: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 420: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 422: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 423: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 424: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 426: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 426: The crossings, and the sack of Rome: trade and output fall to 74% of normal
+  EVENT 429: The crossings, and the sack of Rome: a site is sacked - you had nothing it could take
+  EVENT 430: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 430: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 432: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 437: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 438: The crossings, and the sack of Rome: a site is sacked - you had nothing it could take
+  EVENT 440: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 442: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 443: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 445: The crossings, and the sack of Rome: a site is sacked - you had nothing it could take
+  EVENT 446: The crossings, and the sack of Rome: trade and output fall to 74% of normal
+  EVENT 450: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 451: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 452: CLOSE TO THE LIMIT: you owe 202 of the 220 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 452: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 453: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 458: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 459: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 460: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 460: The crossings, and the sack of Rome: you had nothing it could take
+  EVENT 461: The end of the western empire: trade and output fall to 63% of normal
+  EVENT 461: The end of the western empire: the society's values are shifting (patronage_weight now 0.90, w_commerce now 0.32)
+  EVENT 462: CLOSE TO THE LIMIT: you owe 229 of the 219 anyone here will advance you (104%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 470: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 471: The end of the western empire: the society's values are shifting (patronage_weight now 0.93, w_commerce now 0.27)
+  EVENT 479: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 480: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 481: The end of the western empire: trade and output fall to 63% of normal
+  EVENT 481: The end of the western empire: the society's values are shifting (patronage_weight now 0.97, w_commerce now 0.22)
+  EVENT 490: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 491: The end of the western empire: the society's values are shifting (patronage_weight now 1.00, w_commerce now 0.17)
+  EVENT 492: The end of the western empire: the society's values are shifting (patronage_weight now 1.00, w_commerce now 0.17)
+  EVENT 493: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.17, w_novelty now -0.45)
+  EVENT 500: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 502: CLOSE TO THE LIMIT: you owe 231 of the 220 anyone here will advance you (105%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 503: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.20, w_novelty now -0.43)
+  EVENT 510: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 511: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 512: CLOSE TO THE LIMIT: you owe 201 of the 221 anyone here will advance you (91%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 513: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.22, w_novelty now -0.42)
+  EVENT 520: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 522: CLOSE TO THE LIMIT: you owe 170 of the 221 anyone here will advance you (76%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 523: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.24, w_novelty now -0.40)
+  EVENT 526: Ostrogothic Italy under Theodoric: the society's values are shifting (w_commerce now 0.25, w_novelty now -0.40)
+  EVENT 530: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 78 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 533: CLOSE TO THE LIMIT: you owe 174 of the 222 anyone here will advance you (78%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 534: banditry or a frontier war disrupts supply: it cost you nothing, because you were holding none
+  EVENT 535: Justinian's Gothic War: a site is sacked - you had nothing it could take
+  EVENT 535: Justinian's Gothic War: trade and output fall to 59% of normal
+  EVENT 535: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 536: Justinian's Gothic War: you had nothing it could take
+  EVENT 537: Justinian's Gothic War: you had nothing it could take
+  EVENT 538: Justinian's Gothic War: you had nothing it could take
+  EVENT 539: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 540: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 76 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 545: Justinian's Gothic War: a site is sacked - you had nothing it could take
+  EVENT 547: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 550: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 76 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 554: Justinian's Gothic War: you had nothing it could take
+  EVENT 557: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 558: Recurrent plague: you had nothing it could take
+  EVENT 560: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 560: Recurrent plague: you had nothing it could take
+  EVENT 561: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 562: Recurrent plague: you had nothing it could take
+  EVENT 566: Recurrent plague: you had nothing it could take
+  EVENT 567: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 568: The Lombard invasion: a site is sacked - you had nothing it could take
+  EVENT 568: The Lombard invasion: trade and output fall to 65% of normal
+  EVENT 570: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 570: Recurrent plague: you had nothing it could take
+  EVENT 571: Recurrent plague: you had nothing it could take
+  EVENT 572: Recurrent plague: you had nothing it could take
+  EVENT 573: Recurrent plague: you had nothing it could take
+  EVENT 575: Recurrent plague: you had nothing it could take
+  EVENT 577: Recurrent plague: you had nothing it could take
+  EVENT 580: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 583: Recurrent plague: you had nothing it could take
+  EVENT 585: Recurrent plague: you had nothing it could take
+  EVENT 588: The Lombard invasion: trade and output fall to 65% of normal
+  EVENT 590: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 77 denarii. Your name is worth less for it (reputation -0.1), and you keep your knowledge and your practice
+  EVENT 591: Recurrent plague: you had nothing it could take
+  EVENT 592: Recurrent plague: you had nothing it could take
+  EVENT 593: Recurrent plague: you had nothing it could take
+  EVENT 593: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 594: Recurrent plague: you had nothing it could take
+  EVENT 595: Recurrent plague: you had nothing it could take
+  EVENT 599: Recurrent plague: you had nothing it could take
+
+============================================================
+YEAR 600   (0 years to the horizon at 600)
+============================================================
+
+*** THE RUN HAS ENDED: ran out of horizon (600 AD) without reaching the goal ***
+
+Money: -1,227 den    net -200.4 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0.10   protection 0%   scandal 0   eminence 0
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  HAPPENING NOW: Recurrent plague, The Lombard invasion
+  2 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour
+
+======================================================================
+THE RUN IS OVER
+======================================================================
+  ran out of horizon (600 AD) without reaching the goal
+
+  ended in 600 AD
+  you built 0 things; this society already had 139
+  -1,227 in hand, 0 people, reputation 0.10, 0 concerns running
+
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    146 nodes in all; you had 4 of them and 142 were still to build
+    the next steps would have been: arithmetic_positional, identity_cover, scientific_method, units_standards, algebra_symbolic, patron_local, atomic_theory, statistics_basic
+======================================================================
+
+   You can still look at anything; 'quit' when you are done.
+
+[600 AD | -1226 den | you:2000 hr | sch 0 art 0 | rep 0] > ============================================================
+YEAR 600   (0 years to the horizon at 600)
+============================================================
+
+*** THE RUN HAS ENDED: ran out of horizon (600 AD) without reaching the goal ***
+
+Money: -1,227 den    net -200.4 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0.10   protection 0%   scandal 0   eminence 0
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk, 0 lost per sacking on average, hedged by nothing yet
+  [IN PROGRESS] Recurrent plague
+  [IN PROGRESS] The Lombard invasion
+
+Goal: point_contact_transistor
+
+[600 AD | -1226 den | you:2000 hr | sch 0 art 0 | rep 0] > LEDGER
+Capital: -1,227 den     Revenue: 153.7 den/yr
+  from:
+    med_cataract_couching                  109.8
+    med_trepanation                        43.9
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         219.2
+  wages                          0
+  mines standing                 0
+  interest on arrears            134.9
+Net/yr before the work in hand: -200.4     spent on projects last step: 0
+Net/yr after it: -200.4   (this is the figure `state` prints)
+Credit limit: 219.2 (559% used)     interest on arrears: 11%     paid so far: 18,081
+
+[600 AD | -1226 den | you:2000 hr | sch 0 art 0 | rep 0] > bye: True
+
+Ended 600 AD. ran out of horizon (600 AD) without reaching the goal
+Saved to rome_100ad_78.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_78.json
+
+########################################################
+### R7 F2/F3: the scribe deadlock (agent protocol, JSON one command per line)
+### Command line:
+###   cd /home/user/test && python3 rome/sim/simulator.py agent --civ rome_100ad --kit absurd --seed 3 --no-events
+### INPUT (one JSON object per line):
+###   {"cmd":"hire","trade":"scholar","n":2}
+###   {"cmd":"start","id":"arithmetic_positional"}
+###   {"cmd":"start","id":"units_standards"}
+###   {"cmd":"step","years":4}
+###   {"cmd":"start","id":"algebra_symbolic"}
+###   {"cmd":"step","years":5}
+###   {"cmd":"why","id":"logarithms"}
+###   {"cmd":"start","id":"logarithms"}
+###   {"cmd":"step","years":20}
+###   {"cmd":"state","full":true}
+###   {"cmd":"labour","trade":"scribe"}
+###   {"cmd":"hire","trade":"scribe","n":20}
+### OUTPUT (extracts):
+why logarithms -> hired_labour: {'scribe': 40000.0} calendar_floor_years: 4.0 cost.total: 12255.0 can_start_now: True start_blocked_reason: None
+start logarithms -> {"ok": true, "started": "logarithms", "name": "Logarithms and computed tables", "founder_hours_needed": 400.0, "calendar_floor_years": 4.0, "the_bill_you_have_taken_on": 12255.0, "note": "This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.", "but": "started, but this society cannot supply the labour it wants and it will crawl until you can: scribe (wants 10000 hours a year; this society can field 8750 at most)"}
+state year 129 capital 617073.3
+  ACTIVE logarithms {"name": "Logarithms and computed tables", "founder_hours_left": 5.0, "founder_hours_total": 400.0, "years_in_progress": 20.0, "spent": 12255.0, "still_to_pay": 0.0, "waiting_on": "nobody to do the work: scribe (wants 10000 hours a year; this society can field 8750 at most)", "hours_offered_this_year": 100.0, "hours_effective_this_year": 0.0, "underfunded_this_year": false, "why_underfunded": null, "bountied": false}
+labour scribe -> {"ok": true, "trade": {"trade": "scribe", "a_year_of_one": 312.0, "you_employ": 0.0, "kind": "scholar", "wage_per_hour": 0.2, "hours_the_market_can_supply": 8750.0, "hours_your_own_people_add": 0.0, "hours_available_to_you_in_all": 8750.0, "note": "", "exists_here": true}}
+hire scribe 20 -> {"ok": false, "error": "this society's literacy will not supply more than 5.9 scribes in total, ever, at any price, and you have 0.0 (hired and still being taught). 5 more is the most you can take right now. Printing, paper, schools and academies widen the pool - they raise how many people here can read, and this ceiling rises with it."}
+
+########################################################
+### R8 F11: the run ends "denounced: as a sorcerer" with no warning of any kind
+### Command line:
+###   python3 rome/sim/simulator.py agent --civ rome_100ad --kit absurd --seed 11
+### Script: policy auto_hire/auto_train/auto_open/auto_commission on (auto_bribe left at its
+### default of FALSE), then each year start the 20 cheapest startable things and step 1 year.
+### OUTPUT (scandal each year, plus every non-"completed" event):
+== y101 scandal=21.92
+    you begin teaching the first engineers this world has ever had
+== y102 scandal=19.73
+    you begin teaching the first chemists this world has ever had
+    FAILED at Jute cultivation and fibre: it did not work. 40% of the hours are to do again (20 of your own) and 4 is gone. Attempt 2.
+    FAILED at Button: bone material: it did not work. 40% of the hours are to do again (16 of your own) and 4 is gone. Attempt 2.
+    FAILED at Wool: sheep fibre: it did not work. 40% of the hours are to do again (16 of your own) and 4 is gone. Attempt 2.
+== y103 scandal=17.76
+    you begin teaching the first machinists this world has ever had
+    FAILED at Flyer: the earliest spinning frame component: it did not work. 40% of the hours are to do again (28 of your own) and 11 is gone. Attempt 2.
+    FAILED at Currying: leather finish dressing: it did not work. 40% of the hours are to do again (24 of your own) and 6 is gone. Attempt 2.
+    2 engineers finish their training
+== y104 scandal=20.17
+    you begin teaching the first opticians this world has ever had
+    FAILED at Doll: articulated child plaything: it did not work. 40% of the hours are to do again (32 of your own) and 33 is gone. Attempt 2.
+    2 chemists finish their training
+== y105 scandal=30.43
+    FAILED at Carding: opening and aligning fibres: it did not work. 40% of the hours are to do again (24 of your own) and 43 is gone. Attempt 2.
+    FAILED at Eye-pointed needle: self-threading sewing: it did not work. 40% of the hours are to do again (20 of your own) and 46 is gone. Attempt 2.
+    2 machinists finish their training
+== y106 scandal=28.59
+    FAILED at Enamelling: it did not work. 40% of the hours are to do again (48 of your own) and 87 is gone. Attempt 2.
+    FAILED at Cheque and demand draft: it did not work. 40% of the hours are to do again (40 of your own) and 14 is gone. Attempt 2.
+    2 opticians finish their training
+== y107 scandal=30.47
+    FAILED at Adhesive bonding: it did not work. 40% of the hours are to do again (56 of your own) and 88 is gone. Attempt 2.
+    FAILED at Ligature over cautery for haemostasis: it did not work. 40% of the hours are to do again (24 of your own) and 87 is gone. Attempt 2.
+    FAILED at Doubling frame: twisting multiple yarns: it did not work. 40% of the hours are to do again (28 of your own) and 17 is gone. Attempt 2.
+== y108 scandal=29.75
+== y109 scandal=32.50
+    FAILED at Coal seam and mining: it did not work. 40% of the hours are to do again (60 of your own) and 128 is gone. Attempt 2.
+    Controlled experiment, hypothesis, replication, publication changes the society: w_magic_fear, w_novelty
+    FAILED at Adhesive bonding: it did not work. 40% of the hours are to do again (56 of your own) and 88 is gone. Attempt 3.
+== y110 scandal=33.55
+== y111 scandal=33.16
+    nobody left to keep an eye on 2 concerns, so fin_tariff, pwr_oil_shale closed. You still know how; reopen with 'open' once you have the people. The premises and the stock stand for a few years yet, so
+    FAILED at Cross-staff for latitude: it did not work. 40% of the hours are to do again (32 of your own) and 146 is gone. Attempt 2.
+    FAILED at Kinematics: position, velocity, acceleration: it did not work. 40% of the hours are to do again (36 of your own) and 94 is gone. Attempt 2.
+    RUN ENDS: denounced: as a sorcerer
+### and the whole of what `state` says about scandal in the year before it happens:
+year 110 scandal 33.55 protection 0.3
+KEYS mentioning scandal/suspicion: {'scandal': 33.55}
+RISK: {"ok": true, "knowledge_risk": {"technologies_at_risk": 36, "loss_chance_if_a_site_is_sacked": 0.8, "fraction_lost_when_it_happens": 0.4, "expected_technologies_lost_per_sacking": 11.5, "hedged_by": null, "better_hedge_available": "corpus_dispersed", "known_hazards_ahead": [{"name": "Antonine plague", "years": [165, 180], "in_progress": false, "sacks_a_site": false, "sack_chance_per_year": null, "staff_loss": 0.28, "note": "probably smallpox or measles", "what_you_can_do": {"staff_loss": {"you_currently_take": 1.0, "because_of": [], "what_would_help": "clean water, quarantine, and eventually inoculation", "you_could_begin_now_toward_it": [{"id": "ag2_silage_silo", "name": "Silage and the silo", "cost": 2115.0, "because_it_gives_you": "fodder that keeps through a bad winter", "can_begin_now": true, "waiting_on": null}, {"id": "crop_rotation", "name": "Legume rotation, heavy plough, marling, selective breeding", "cost": 2822.0, "because_it_gives_you": "fields that do not fail together", "can_begin_now": false, "waiting_on": "missing prerequisites: horse_collar, statistics_basic"}, {"id": "fud_canning_appert_method", "name": "Canning by Appert's method (heating in sealed glass)", "cost": 1260.1, "because_it_gives_you": "food that keeps", "can_begin_now": false, "waiting_on": "missing prerequisites: cap_heat_1100, fud_bottling_sealed_cork"}, {"id": "germ_theory", "name": "Germ theory of disease", "cost": 722.5, "because_it_gives_you": "a step toward quarantine, clean water, sewag
+### with `policy auto_bribe on` in the same seed, the same script survives:
+###   no auto_bribe: ENDED y111: denounced: as a sorcerer (max scandal seen 33.5)
+###   auto_bribe on: survived to 160 scandal 3.6 max 11.5
+
+########################################################
+### R9 F19: commissioned hours are additive to a pool the game calls a hard ceiling
+commission scribe 1000     -> {"ok": true, "commissioned": "1000 hours of a scribe bought for 320 denarii", "capital": 999680.0, "note": "These hours are available to your projects this year only."}
+commission scribe 8750     -> {"ok": true, "commissioned": "8750 hours of a scribe bought for 2800 denarii", "capital": 997200.0, "note": "These hours are available to your projects this year only."}
+commission scribe 9000     -> {"ok": false, "error": "the scribes here can spare 8750 more hours this year, not 9000"}
+commission scribe 50000    -> {"ok": false, "error": "the scribes here can spare 8750 more hours this year, not 50000"}
+commission scribe 1000000  -> {"ok": false, "error": "the scribes here can spare 8750 more hours this year, not 1000000"}
+labour scribe: {"trade": "scribe", "a_year_of_one": 312.0, "you_employ": 0.0, "kind": "scholar", "wage_per_hour": 0.2, "hours_the_market_can_supply": 8750.0, "hours_your_own_people_add": 0.0, "hours_available_to_you_in_all": 8750.0, "note": "", "exists_here": true}
+  repeat commission 8000: {"ok": true, "commissioned": "8000 hours of a scribe bought for 2560 denarii", "capital": 997440.0, "note": "These hours are available to your projects this yea
+  repeat commission 8000: {"ok": false, "error": "the scribes here can spare 750 more hours this year, not 8000"}
+  repeat commission 8000: {"ok": false, "error": "the scribes here can spare 750 more hours this year, not 8000"}
+  repeat commission 8000: {"ok": false, "error": "the scribes here can spare 750 more hours this year, not 8000"}
+labour scribe pool: 8750.0
+ y110 commission_ok=True  logarithms:400.0 eff, waiting: nobody to do the work: scribe (wants 10000 hours a year; this society 
+ y111 commission_ok=True  logarithms:0.0 eff, waiting: nobody to do the work: scribe (wants 10000 hours a year; this society 
+ y112 commission_ok=True  logarithms:0.0 eff, waiting: nobody to do the work: scribe (wants 10000 hours a year; this society 
+ y113 commission_ok=True  logarithms:COMPLETED
+
+########################################################
+### R10 F1: --seed does not reproduce a run (three identical scripted runs, same seed 7)
+###   (year, capital, techs_done, reputation, eminence)
+(160, 45414.1, 673, 96.5, 11.09)
+(160, 45414.1, 673, 96.5, 11.09)
+(160, 45414.1, 673, 96.5, 11.09)
+### the same three runs with PYTHONHASHSEED=0 exported:
+###   (160, 6648743.2, 848, 97.6, 16.87)
+###   (160, 6648743.2, 848, 97.6, 16.87)
+###   (160, 6648743.2, 848, 97.6, 16.87)
+
+########################################################
+### R11 F12: identical income and living cost in every civilisation, whatever the advertised price index
+rome_100ad       rev=233.5    living=230.0   labourer_yr=125.0   credit=1366.8   sources=[('med_cataract_couching', 166.8), ('med_trepanation', 66.7)]
+han_china_100ad  rev=233.5    living=230.0   labourer_yr=66.0    credit=1025.1   sources=[('med_cataract_couching', 166.8), ('med_trepanation', 66.7)]
+norse_900ad      rev=232.7    living=230.0   labourer_yr=105.0   credit=1912.9   sources=[('med_cataract_couching', 166.0), ('med_trepanation', 66.7)]
+england_1300     rev=232.8    living=230.0   labourer_yr=110.0   credit=1503.0   sources=[('med_cataract_couching', 166.1), ('med_trepanation', 66.7)]
+mexica_1500      rev=232.6    living=230.0   labourer_yr=50.0    credit=1093.0   sources=[('med_cataract_couching', 165.9), ('med_trepanation', 66.7)]
+
+########################################################
+### R12 F13: 400 starting denarii are worth exactly nothing if you idle to the horizon
+rome_100ad       destitute     start cap=0.0      rev=233.5    living=224.0    -> y600 cap=-1226.7      rep=0.1    end=ran out of horizon (600 AD) without reaching the goal
+rome_100ad       poor_scholar  start cap=400.0    rev=233.5    living=230.0    -> y600 cap=-1226.7      rep=0.1    end=ran out of horizon (600 AD) without reaching the goal
+han_china_100ad  destitute     start cap=0.0      rev=233.5    living=224.0    -> y600 cap=-172.3       rep=0.5    end=ran out of horizon (600 AD) without reaching the goal
+han_china_100ad  poor_scholar  start cap=400.0    rev=233.5    living=230.0    -> y600 cap=-172.3       rep=0.5    end=ran out of horizon (600 AD) without reaching the goal
+norse_900ad      destitute     start cap=0.0      rev=232.7    living=224.0    -> y1400 cap=-200.8       rep=0.5    end=ran out of horizon (1400 AD) without reaching the goal

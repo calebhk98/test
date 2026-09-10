@@ -259,5 +259,26 @@
   "w_religious_rigidity": 0.8
  },
  "wage_index": 0.8,
- "year": 1300
+ "year": 1300,
+ "local_words": {
+  "_doc": "Player-facing phrases this civilisation says differently. The tree is written from Rome 100 AD, which is the calibration baseline and stays; what does not have to stay is telling a player in Han China that they are writing their corpus in Greek and Latin and seeking Senatorial patronage. Applied to the words of a reply, exactly like `currency`, and only to phrases specific enough that they occur nowhere else. Historical notes ABOUT Rome are not rewritten: they are about Rome.",
+  "pairs": [
+   [
+    "in plain quantitative Greek and Latin",
+    "in plain quantitative Latin and English"
+   ],
+   [
+    "Senatorial patronage",
+    "The patronage of a baron"
+   ],
+   [
+    "Imperial patronage",
+    "The patronage of the Crown"
+   ],
+   [
+    "Licensed collegium of physicians and teachers",
+    "A chartered guild of physicians and teachers"
+   ]
+  ]
+ }
 }

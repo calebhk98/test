@@ -263,6 +263,15 @@ def _agent_state(s, nodes, cmd=None):
         "concerns_you_run": len(getattr(s, "operating", ())),
         "you_know_how_to_run_but_have_not_opened": sum(
             1 for k in s.done if s.is_venture(k) and k not in s.operating),
+        # WHAT THAT IS COSTING YOU, in money, on the main screen. A play tester
+        # built twenty concerns, left them all shut for twenty-five years and
+        # watched their income sit flat: the per-completion line saying "open
+        # it" was one line in a log full of them, and a count of shut shops is
+        # not a reason to act. A yearly figure is.
+        "shut_concerns_would_earn_a_year": round(sum(
+            nodes[k]["rev"] - nodes[k]["up"] for k in s.done
+            if s.is_venture(k) and k not in s.operating
+            and nodes[k]["rev"] > nodes[k]["up"]), 0) or None,
         # net_per_year counts the STANDING flows only. It never counted what
         # projects consume, which is usually the largest outflow by far, so a
         # playtester watched it report a healthy positive number for eight
@@ -1432,6 +1441,10 @@ def render_state(out):
         L.append("RUNNING AS CONCERNS: %s   (you know how to run %s more and "
                  "have not opened them - 'ventures')"
                  % (_fmt_num(out.get("concerns_you_run")), _fmt_num(idle_v)))
+        if out.get("shut_concerns_would_earn_a_year"):
+            L.append("  those shut concerns would clear %s den/yr between them, "
+                     "and earn nothing while they are shut"
+                     % _fmt_num(out["shut_concerns_would_earn_a_year"]))
 
     employees = out.get("employees") or {}
     L.append("")
@@ -1827,6 +1840,41 @@ def render_money(out):
     return "\n".join(L)
 
 
+def render_mines(out):
+    L = ["YOUR OWN WORKINGS"]
+    rows = out.get("mines_you_own")
+    if isinstance(rows, list) and rows:
+        L.append("  %-10s %10s %10s %8s %12s" % ("MATERIAL", "CAN RAISE",
+                                                 "YOU NEED", "USING", "COSTS/YR"))
+        for r in rows:
+            L.append("  %-10s %10s %10s %8s %12s%s"
+                     % (r["material"],
+                        _fmt_num(r.get("tonnes_a_year_when_it_is_ready")
+                                 or r["tonnes_a_year_it_can_raise"]),
+                        _fmt_num(r["tonnes_a_year_you_actually_need"]),
+                        r.get("using") or "-",
+                        _fmt_num(r["costs_you_a_year"]),
+                        "   (ready %s)" % _fmt_num(r["ready_in"])
+                        if r.get("ready_in") else ""))
+        L.append("")
+        L.append("  they cost %s den/yr in all, against revenue of %s"
+                 % (_fmt_num(out.get("they_cost_you_a_year_in_all")),
+                    _fmt_num(out.get("your_revenue_is"))))
+        L.append("  shut one with 'close <material>'")
+    else:
+        L.append("  none")
+    pend = out.get("still_being_sunk") or {}
+    if pend:
+        L.append("")
+        L.append("  still being sunk: "
+                 + ", ".join("%s (ready %s)" % (m, _fmt_num(y))
+                             for m, y in pend.items()))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"], indent="  "))
+    return "\n".join(L)
+
+
 def render_labour(out):
     if isinstance(out.get("trade"), dict):
         t = out["trade"]
@@ -1957,6 +2005,15 @@ def render_risk(out):
              % (_fmt_num(kr.get("technologies_at_risk")), _pct(kr.get("loss_chance_if_a_site_is_sacked")),
                 _pct(kr.get("fraction_lost_when_it_happens"))))
     L.append("hedge: %s" % (kr.get("hedged_by") or "none yet"))
+    if kr.get("you_have_already_lost"):
+        L.append("")
+        L.append("ALREADY LOST TO A SACKING: %s technolog%s, most recently in %s"
+                 % (_fmt_num(kr["you_have_already_lost"]),
+                    "y" if kr["you_have_already_lost"] == 1 else "ies",
+                    _fmt_num(kr.get("the_most_recent_went_in"))))
+        L.append(_wrap("you have to build these again: "
+                       + ", ".join(kr.get("and_have_to_build_again") or []),
+                       indent="  "))
     if kr.get("note"):
         L.append(_wrap(kr["note"]))
     L.append("")
@@ -2053,6 +2110,8 @@ _RENDERERS = {
     "why": render_why, "money": render_money, "ledger": render_money,
     "accounts": render_money, "labour": render_labour, "risk": render_risk,
     "hazards": render_risk, "ventures": render_ventures,
+    "mines": render_mines, "workings": render_mines,
+    "final": render_final,
 }
 
 
@@ -2289,7 +2348,7 @@ KNOWN_COMMANDS = (
     "money", "risk", "labour", "policy", "help",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
-    "open", "ventures", "withdraw",
+    "open", "ventures", "withdraw", "mines",
     "save", "load", "quit",
 )
 
@@ -2333,6 +2392,7 @@ TYPED_ALIASES = {
     "begin": "start", "research": "start", "build": "start",
     "explain": "why", "look": "why", "inspect": "why",
     "route": "path", "plan": "path",
+    "workings": "mines", "mine": "mines", "pits": "mines",
     "retire": "withdraw", "step_back": "withdraw", "obscurity": "withdraw",
 }
 
@@ -2482,6 +2542,9 @@ def parse_typed(line):
 
     if op in ("withdraw", "retire"):
         return {"cmd": "withdraw"}, None
+
+    if op == "mines":
+        return {"cmd": "mines"}, None
 
     if op == "bribe":
         if not nums:
@@ -2641,6 +2704,31 @@ def _did_you_mean(k, nodes, limit=8, s=None):
 _MONEY_RE = re.compile(r"\bdenarii\b|\bdenarius\b")
 
 
+def _localise_words(obj, pairs):
+    """Rewrite the phrases this civilisation says differently.
+
+    Same mechanism as _localise_money and the same reason: the tree is written
+    from Rome 100 AD and stays that way, and a play tester in Han China should
+    not be told they are writing their corpus "in plain quantitative Greek and
+    Latin" and seeking "Senatorial patronage". Only phrases specific enough to
+    occur nowhere else; a historical note ABOUT Rome is left alone, because it
+    is about Rome.
+    """
+    if not pairs:
+        return obj
+    if isinstance(obj, str):
+        for a, b in pairs:
+            if a in obj:
+                obj = obj.replace(a, b)
+        return obj
+    if isinstance(obj, list):
+        return [_localise_words(x, pairs) for x in obj]
+    if isinstance(obj, dict):
+        # Keys are protocol; only the values a person reads get rewritten.
+        return {k: _localise_words(v, pairs) for k, v in obj.items()}
+    return obj
+
+
 def _localise_money(obj, word):
     """Rewrite the unit of account in anything a player is about to read.
 
@@ -2666,7 +2754,8 @@ def _localise_money(obj, word):
 
 def _agent_dispatch(s, nodes, cmd):
     """Every reply, in the money of the place you are standing in."""
-    return _localise_money(_agent_dispatch_inner(s, nodes, cmd), money_word(s.civ))
+    _out = _localise_money(_agent_dispatch_inner(s, nodes, cmd), money_word(s.civ))
+    return _localise_words(_out, ((s.civ.get("local_words") or {}).get("pairs")))
 
 
 def _agent_dispatch_inner(s, nodes, cmd):
@@ -3129,6 +3218,57 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     if s.capital < 0 and s.credit_limit() > 0 else "none"),
                 "still_owed_on_work_in_hand": round(
                     sum(st.get("cost_left") or 0.0 for st in s.active.values()), 1)}
+
+    if op in ("mines", "workings"):
+        # A LIST OF YOUR OWN MINES. auto_mine quietly took 353,039 a year
+        # against 467,227 of revenue for a play tester, and there was no
+        # command anywhere that named what they owned or what it cost; two
+        # `close` calls took their net from -61,884 to +291,156. The verbs to
+        # sink one and to shut one both existed; nothing showed you the books.
+        dem = s.annual_material_demand()
+        _keys = {"coal": ("coal_kg",), "iron": ("iron_bar_kg", "iron_ore_kg"),
+                 "copper": ("copper_kg",), "lead": ("lead_kg",),
+                 "tin": ("tin_kg",), "silver": ("silver_kg",),
+                 "gold": ("gold_g",)}
+        rows = []
+        # PENDING WORKINGS COUNT. A shaft takes years to come into production
+        # and is paid for the moment you sink it, so a player who has just
+        # bought one and types `mines` must not be told they own none.
+        _pending = {}
+        for _m, _amt, _ready in sorted(getattr(s, "mine_tranches", [])):
+            _pending.setdefault(_m, [0.0, _ready])
+            _pending[_m][0] += _amt
+            _pending[_m][1] = min(_pending[_m][1], _ready)
+        for m, cap in sorted(s.mine_capacity.items()):
+            want = sum(dem.get(kk, 0.0) for kk in _keys.get(m, ()))
+            rows.append({
+                "material": m,
+                "tonnes_a_year_it_can_raise": round(cap, 2),
+                "tonnes_a_year_you_actually_need": round(want, 2),
+                "costs_you_a_year": round(cap * s.MINE_OPEX_PER_T.get(m, 0.0)
+                                          * s.price_index, 1),
+                "using": ("%d%%" % (100.0 * min(1.0, want / cap))) if cap > 0 else "-",
+                "shut_it_with": "close %s" % m})
+        for m, (amt, ready) in sorted(_pending.items()):
+            rows.append({
+                "material": m,
+                "tonnes_a_year_it_can_raise": 0.0,
+                "tonnes_a_year_you_actually_need":
+                    round(sum(dem.get(kk, 0.0) for kk in _keys.get(m, ())), 2),
+                "costs_you_a_year": 0.0,
+                "using": "sinking",
+                "ready_in": ready,
+                "tonnes_a_year_when_it_is_ready": round(amt, 2),
+                "shut_it_with": "close %s" % m})
+        return {"ok": True,
+                "mines_you_own": rows or "none",
+                "they_cost_you_a_year_in_all": round(s.mine_operating_cost(), 1),
+                "your_revenue_is": round(s.revenue(), 1),
+                "still_being_sunk": {m: v[1] for m, v in sorted(_pending.items())},
+                "note": "Workings are charged every year they stand, whether or "
+                        "not you use what they raise. One you no longer need is "
+                        "money going out for nothing: 'close <material>'. "
+                        "Reopening means sinking it again."}
 
     if op == "labour":
         one = (cmd.get("trade") or "").strip().lower()
@@ -3662,6 +3802,7 @@ SAVE_FIELDS = (
     "output_factor", "economy", "throttle", "binding", "bountied",
     "stalled", "life_left", "founder_alive", "revealed", "last_settlement",
     "employees", "trades_created", "policy", "mothballed", "operating",
+    "forgotten",
     "contract_hours",
     "commissioned", "teaching_hours_this_year", "wages_paid",
     "bondage_years_left", "bondage_debt", "money_real", "credit_frozen_until",

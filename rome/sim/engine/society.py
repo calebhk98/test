@@ -657,13 +657,40 @@ class SocietyMixin:
                                          and k not in self.granted)
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
+                            _lost = getattr(self, "forgotten", None)
+                            if _lost is None:
+                                _lost = self.forgotten = {}
                             for k in drop:
                                 self.operating.discard(k)
                                 self.done.discard(k)
+                                self.mothballed.discard(k)
+                                # KEPT, so `risk` can list what you have to
+                                # build again. Otherwise the only record is a
+                                # log line a century back.
+                                _lost[k] = yr
                             self._done_changed()
-                            self.log.append((yr, "KNOWLEDGE LOST: %d technologies forgotten%s"
-                                % (len(drop), "" if self.has("corpus_dispersed")
-                                   else " (the corpus was never printed and dispersed)")))
+                            # NAME THEM. A play tester discovered a loss decades
+                            # later, when `start X` said "missing prerequisites:
+                            # <thing you built two hundred years ago>", and then
+                            # rebuilt the chain one refusal at a time. A bare
+                            # count is not a report of what happened to you.
+                            _named = sorted(drop)
+                            _corpus = [c for c in ("corpus_written",
+                                                   "corpus_dispersed")
+                                       if c in drop]
+                            self.log.append((yr, "KNOWLEDGE LOST: %d technolog%s "
+                                                 "forgotten - %s%s%s"
+                                % (len(drop), "y" if len(drop) == 1 else "ies",
+                                   ", ".join(_named[:8])
+                                   + (" and %d more" % (len(_named) - 8)
+                                      if len(_named) > 8 else ""),
+                                   "" if self.has("corpus_dispersed")
+                                   else " (the corpus was never printed and "
+                                        "dispersed)",
+                                   ". THE CORPUS ITSELF WENT (%s): your hedge "
+                                   "against this is gone and 'risk' will say so "
+                                   "- build it again first" % ", ".join(_corpus)
+                                   if _corpus else "")))
             if "output_factor" in h:
                 relief, _why = self.hazard_relief("output_factor")
                 # relief moves the floor back toward 1.0 rather than scaling the

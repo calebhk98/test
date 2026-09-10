@@ -318,5 +318,26 @@
     "tl_tandem_harness"
    ]
   }
+ },
+ "local_words": {
+  "_doc": "Player-facing phrases this civilisation says differently. The tree is written from Rome 100 AD, which is the calibration baseline and stays; what does not have to stay is telling a player in Han China that they are writing their corpus in Greek and Latin and seeking Senatorial patronage. Applied to the words of a reply, exactly like `currency`, and only to phrases specific enough that they occur nowhere else. Historical notes ABOUT Rome are not rewritten: they are about Rome.",
+  "pairs": [
+   [
+    "in plain quantitative Greek and Latin",
+    "in plain quantitative Nahuatl, in a notation you devise for it"
+   ],
+   [
+    "Senatorial patronage",
+    "The patronage of a tecuhtli of the calpulli"
+   ],
+   [
+    "Imperial patronage",
+    "The patronage of the tlatoani"
+   ],
+   [
+    "Licensed collegium of physicians and teachers",
+    "A recognised body of ticitl and teachers"
+   ]
+  ]
  }
 }

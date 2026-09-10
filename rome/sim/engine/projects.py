@@ -508,9 +508,14 @@ class ProjectsMixin:
                 # blocked-reason a play tester never decoded in a whole run: it
                 # names no candidate and no fix, and the parenthesis is a guess
                 # at what the group might be about rather than what it is.
+                # A GROUP KEY IS A SLUG, NOT PROSE. Surfacing it verbatim put
+                # "unknown_source" in front of a player, which is data, not
+                # English. Say it as words.
+                _gname = (g.get("name") or g.get("group") or "").replace("_", " ")
+                if _gname:
+                    _gname = ("an " if _gname[0] in "aeiou" else "a ") + _gname
                 self._last_subst_gap = (
-                    g.get("name") or g.get("group") or "one of the things it "
-                    "can be made from",
+                    _gname or "one of the things it can be made from",
                     sorted((g.get("options") or {}), key=lambda o:
                            -float((g.get("options") or {})[o]))[:4])
                 return 0.0, False        # no option in this group is available

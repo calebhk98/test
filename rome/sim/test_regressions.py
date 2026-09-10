@@ -3508,6 +3508,110 @@ check("...so twenty electricians cannot be taught into a society of twelve",
       not _ok_el and "literacy" in str(_why_el), _why_el)
 
 
+# ======================================================================
+# ROUND 9: what the two play testers of round nine found.
+# ======================================================================
+
+# --- BREAK: a sacking destroyed technologies and named none of them. A play
+# tester discovered theirs decades later, when `start X` said "missing
+# prerequisites: <thing you built two hundred years ago>", and rebuilt the
+# chain one refusal at a time.
+s_sack = sim(events=True, capital=500000.0)
+for _k in list(NODES)[:400]:
+    s_sack.done.add(_k)
+s_sack._done_changed()
+s_sack.rng = random.Random(11)
+for _y in range(150, 320):
+    s_sack.year = _y
+    s_sack._shocks(_y)
+    if getattr(s_sack, "forgotten", None):
+        break
+check("a sacking names the technologies it destroyed",
+      any("KNOWLEDGE LOST" in m and "_" in m.split("forgotten")[-1]
+          for _, m in s_sack.log),
+      [m for _, m in s_sack.log if "KNOWLEDGE LOST" in m][:1])
+_kr = s_sack.knowledge_risk()
+check("...and `risk` lists what you have to build again",
+      _kr.get("you_have_already_lost", 0) > 0
+      and _kr.get("and_have_to_build_again"),
+      _kr.get("you_have_already_lost"))
+check("...and everything it lists really is gone from what you know",
+      all(x not in s_sack.done for x in _kr["and_have_to_build_again"]),
+      [x for x in _kr["and_have_to_build_again"] if x in s_sack.done])
+# The hedge follows what you KNOW, not what you run: a play tester thought it
+# followed `operating` because a sacking had quietly taken their corpus.
+s_hg = sim(capital=500000.0)
+_h0 = s_hg.knowledge_risk()["hedged_by"]
+s_hg.done.add("corpus_written"); s_hg._done_changed()
+_h1 = s_hg.knowledge_risk()["hedged_by"]
+s_hg.open_venture("corpus_written")
+_h2 = s_hg.knowledge_risk()["hedged_by"]
+check("building the corpus hedges you; opening it changes nothing",
+      _h0 is None and _h1 == "corpus_written" and _h2 == _h1, (_h0, _h1, _h2))
+
+# --- BREAK: twenty concerns, twenty-five years, income flat, because nothing
+# said on the main screen what leaving them shut was costing.
+s_sh = sim(capital=50000.0)
+for _k in list(NODES)[:200]:
+    s_sh.done.add(_k)
+s_sh._done_changed()
+_stsh = S._agent_state(s_sh, NODES)
+check("state says in money what your shut concerns would earn",
+      _stsh.get("shut_concerns_would_earn_a_year", 0) > 0,
+      _stsh.get("shut_concerns_would_earn_a_year"))
+check("...and a player running everything is not nagged about it",
+      S._agent_state(sim(), NODES).get("shut_concerns_would_earn_a_year") is None,
+      S._agent_state(sim(), NODES).get("shut_concerns_would_earn_a_year"))
+
+# --- BREAK: auto_mine took 353,039 a year against 467,227 of revenue and
+# there was no command that named what you owned or what it cost.
+s_mn = sim(capital=2000000.0)
+s_mn.open_mine("coal", 400, partial=False)
+_rmn_new = S._agent_dispatch(s_mn, NODES, {"cmd": "mines"})
+check("a shaft you have just sunk is listed while it is still being sunk",
+      _rmn_new["mines_you_own"] != "none"
+      and _rmn_new["still_being_sunk"].get("coal"),
+      _rmn_new.get("mines_you_own"))
+for _ in range(int(s_mn.MINE_LEAD_YEARS) + 1):
+    s_mn.year += 1
+    s_mn.commission_mines()
+_rmn = S._agent_dispatch(s_mn, NODES, {"cmd": "mines"})
+check("there is a command that lists the mines you own and their cost",
+      _rmn["mines_you_own"] != "none"
+      and _rmn["they_cost_you_a_year_in_all"] > 0, _rmn.get("mines_you_own"))
+check("...and each row says how to shut it",
+      all("close" in r["shut_it_with"] for r in _rmn["mines_you_own"]),
+      _rmn["mines_you_own"][:1])
+check("...and it renders as a table, not a dict dump",
+      "YOUR OWN WORKINGS" in _RP("mines", _rmn) and "{" not in _RP("mines", _rmn),
+      _RP("mines", _rmn)[:60])
+
+# --- BREAK: Han China was told it writes its corpus "in plain quantitative
+# Greek and Latin" and seeks "Senatorial patronage".
+for _cid, _bad in (("han_china_100ad", "Greek and Latin"),
+                   ("norse_900ad", "Senatorial patronage"),
+                   ("mexica_1500", "Greek and Latin"),
+                   ("england_1300", "Senatorial patronage")):
+    _rl, _, _ = proto([{"cmd": "why", "id": "corpus_written"},
+                       {"cmd": "why", "id": "patron_senatorial"}], civ=_cid)
+    check("%s is not handed Rome's own words" % _cid,
+          _bad not in json.dumps(_rl), _bad)
+_rr, _, _ = proto([{"cmd": "why", "id": "corpus_written"}], civ="rome_100ad")
+check("...and Rome, which the tree is written from, is left alone",
+      "Greek and Latin" in json.dumps(_rr), json.dumps(_rr)[:120])
+
+# --- BREAK: "unknown_source" reached a player-facing refusal, which is data,
+# not English.
+s_sl = sim()
+s_sl.done.update(NODES)
+s_sl.done.discard("el2_potentiometer_method_measurement")
+s_sl.done.discard("dynamo")
+s_sl._done_changed()
+_msl = s_sl.start_reason("el2_potentiometer_method_measurement")[1]
+check("a substitution group reads as English, not as a data slug",
+      "_" not in _msl.split("you have none")[0], _msl[:90])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

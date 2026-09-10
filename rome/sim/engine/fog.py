@@ -113,6 +113,13 @@ class FogMixin:
         elif self.has("corpus_written"):   chance, frac, hedge = 0.45, 0.22, "corpus_written"
         else:                              chance, frac, hedge = 0.80, 0.40, None
         at_risk = sum(1 for k in self.done if self.nodes[k]["tier"] >= 2)
+        # WHAT YOU HAVE ALREADY LOST, and have to build again. Without this the
+        # only record of a sacking is a log line a century back, and a play
+        # tester discovered theirs one refusal at a time - "missing
+        # prerequisites: <thing you built two hundred years ago>".
+        _gone = sorted((k for k, _y in (getattr(self, "forgotten", None) or {}).items()
+                        if k not in self.done),
+                       key=lambda k: -(self.forgotten[k]))
         upcoming = []
         for h in (self.civ.get("hazards") or []):
             yrs = h.get("years") or []
@@ -184,6 +191,9 @@ class FogMixin:
             "loss_chance_if_a_site_is_sacked": round(chance, 2),
             "fraction_lost_when_it_happens": round(frac, 2),
             "expected_technologies_lost_per_sacking": round(at_risk * chance * frac, 1),
+            **({"you_have_already_lost": len(_gone),
+                "and_have_to_build_again": _gone[:10],
+                "the_most_recent_went_in": self.forgotten[_gone[0]]} if _gone else {}),
             # Under fog, do not name a node the player has not discovered. A
             # tester was told in `state` that corpus_dispersed would hedge them,
             # asked `why` about it, and was told they had never heard of it.
