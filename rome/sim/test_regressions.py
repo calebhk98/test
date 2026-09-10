@@ -12,6 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 import simulator as S
+from engine import commodities as COMMOD
 
 TREE, PRICES, NODES, WAGES, GOODS = S.load()
 GOAL = TREE["meta"]["goal_node"]
@@ -1137,6 +1138,126 @@ check("resource_throttle still throttles a material the market will not "
 s.nitre_bed_m2 = 2_000_000.0
 check("...and stops once your own supply covers the need",
       s.resource_throttle() > 0.99, s.resource_throttle())
+
+# --- COMMODITY FRAMEWORK (rome/data/world/COMMODITIES.md,
+# rome/sim/engine/commodities.py). Standalone from Sim, so these checks
+# build a CommodityLedger directly off commodities.json and the tech tree's
+# NODES rather than going through `sim()`/`proto()`. See the design doc for
+# what each claim below is meant to prove and why.
+
+LED = COMMOD.CommodityLedger(nodes=NODES)
+
+check("commodities.json defines the nine commodities the design doc promises",
+      set(LED.commodities) == {"iron", "copper", "copper_wire", "coal", "gold",
+                                "wool", "cloth", "cotton", "coffee"},
+      sorted(LED.commodities))
+
+# --- gold: a water pump and chemical extraction should compound, not just
+# pick the better of the two, because they are independent improvements
+# stacked on the same mine (COMMODITIES.md section 3, "multiplier" entries).
+mult_none = LED.best_multiplier("gold", built=[])
+mult_pump = LED.best_multiplier("gold", built=["met_mine_pumping"])
+mult_both = LED.best_multiplier("gold", built=["met_mine_pumping", "mt2_cyanidation"])
+check("a mine with a water pump and chemical extraction multiplies gold "
+      "output by roughly the brief's own '20x' figure",
+      19.0 <= mult_both <= 23.0, mult_both)
+check("the two gold technologies compound rather than the model just taking "
+      "the better of the two",
+      mult_both > mult_pump > mult_none == 1.0,
+      "none=%.1f pump=%.1f both=%.1f" % (mult_none, mult_pump, mult_both))
+
+# --- cloth: automated looms make cloth more available, which drops its
+# price, which makes a hot air balloon (400 kg of linen_kg) cheaper to build.
+CLOTH_DEMAND_T = 20000.0
+price_hand = LED.price("cloth", CLOTH_DEMAND_T, LED.market_available("cloth", built=[]))
+price_power = LED.price("cloth", CLOTH_DEMAND_T, LED.market_available("cloth", built=["tex_power_loom"]))
+check("a power loom makes cloth more available (higher national output) "
+      "than the baseline loom, at the same demand",
+      LED.country_output("cloth", ["tex_power_loom"]) > LED.country_output("cloth", []))
+check("...which drops the market price of cloth, not just a premium on top "
+      "of a flat floor (the thing economy.py's material_price_factor cannot do)",
+      price_power < price_hand * 0.5,
+      "hand loom=%.2f power loom=%.2f den/kg" % (price_hand, price_power))
+balloon_linen_kg = NODES["hot_air_balloon"]["mat"]["linen_kg"]
+cost_hand = balloon_linen_kg * price_hand
+cost_power = balloon_linen_kg * price_power
+check("...which makes the real hot_air_balloon node's linen bill cheaper "
+      "to buy once the power loom exists",
+      cost_power < cost_hand, "hand=%.0f power=%.0f denarii" % (cost_hand, cost_power))
+
+# --- copper wire: the real test. A modest order is fully met; an industrial
+# order of 'kilometres of copper wire' is not, and the shortfall is
+# attributed to copper (the ore), not to copper_wire (the smiths' craft),
+# even though copper_wire also comes up short -- this is the distinction a
+# flat resource_throttle() cannot draw at all.
+modest = LED.propagate_demand("copper_wire", 5.0, built=[])
+check("a modest order of copper wire (5 t/yr) is fully met by the ordinary "
+      "market for copper",
+      modest["met_fraction"] > 0.999, modest["met_fraction"])
+
+big = LED.propagate_demand("copper_wire", 500.0, built=[])
+check("an industrial order for copper wire is NOT fully met: there is not "
+      "enough copper being mined to meet the demand",
+      big["met_fraction"] < 0.95, big["met_fraction"])
+check("the shortfall is attributed to copper specifically, not to copper_wire "
+      "-- the smiths' wire-drawing bench is not the bottleneck",
+      LED.bottlenecks(big) == ["copper"], LED.bottlenecks(big))
+check("copper_wire itself is NOT flagged as its own bottleneck: it only "
+      "inherited the shortage from its input",
+      big["bottleneck"] is None, big["bottleneck"])
+check("copper_wire's own wire-drawing capacity is not, in fact, the "
+      "constraint (it is far above what was asked)",
+      big["own_capacity_t"] > big["requested_t"], big["own_capacity_t"])
+
+fixed = LED.propagate_demand("copper_wire", 500.0, built=[],
+                             own_production={"copper": 100.0})
+check("opening your own copper mine (Sim.open_mine's real-world analogue) "
+      "relieves the same industrial order",
+      fixed["met_fraction"] > 0.999, fixed["met_fraction"])
+
+# --- monopoly: you know where coffee grows and how to process it, so you
+# sell it at a margin nobody can undercut, bounded by what a buyer's next
+# best alternative would cost them.
+sole = LED.monopoly_price("coffee", marginal_cost=2.0, alternative_price=None)
+competitive = LED.monopoly_price("coffee", marginal_cost=2.0, alternative_price=2.4)
+check("a sole supplier with no rival prices well above what a competitive "
+      "market (many sellers, price near marginal cost) would charge",
+      sole > competitive * 2, "sole=%.1f competitive=%.1f" % (sole, competitive))
+undercut = LED.monopoly_price("coffee", marginal_cost=2.0, alternative_price=9.0)
+check("...but never above what a buyer's next-best alternative would cost "
+      "them, once one exists",
+      undercut == 9.0, undercut)
+
+# --- price never runs away in either direction, however extreme the ratio
+# (price_floor_factor / price_ceiling_factor, COMMODITIES.md section 2).
+c = LED.commodities["iron"]
+base = c["base_price_denarii_per_kg"]
+lo = LED.price("iron", demand_t=0.0001, supply_t=1e9)
+hi = LED.price("iron", demand_t=1e9, supply_t=0.0001)
+check("a total glut never prices a commodity below its floor",
+      abs(lo - base * c["price_floor_factor"]) < 1e-6, lo)
+check("a total shortage never prices a commodity above its ceiling",
+      abs(hi - base * c["price_ceiling_factor"]) < 1e-6, hi)
+
+rng = random.Random(3)
+noisy = [LED.price_with_noise("iron", 2000.0, 2475.0, rng) for _ in range(200)]
+check("fluctuation stays within the same floor/ceiling bounds over many draws",
+      all(base * c["price_floor_factor"] - 1e-9 <= p <= base * c["price_ceiling_factor"] + 1e-9
+          for p in noisy),
+      (min(noisy), max(noisy)))
+check("fluctuation actually varies year to year rather than being decorative",
+      len(set(round(p, 4) for p in noisy)) > 50, len(set(noisy)))
+
+# --- 'how much you have' is a stock, tracked separately from the flows
+# above (COMMODITIES.md section 8): a minimal Ledger proves the distinction
+# is representable even though Sim itself has no inventory today.
+ledger = COMMOD.Ledger()
+ledger.add("copper", 500.0)
+taken = ledger.remove("copper", 800.0)
+check("a stock ledger cannot be overdrawn: taking more than is on hand "
+      "returns only what was actually there",
+      taken == 500.0 and ledger.on_hand("copper") == 0.0,
+      (taken, ledger.on_hand("copper")))
 
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
