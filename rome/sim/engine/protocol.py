@@ -991,6 +991,9 @@ def _agent_available(s, nodes, cmd=None):
     if find or want_subject or limit or offset or show_all or afford is not None:
         page = sel if show_all else sel[offset:offset + (limit or 30)]
         out = {"ok": True, "count": len(sel), "of_everything_startable": len(ok),
+               # The same figure the digest carries, so a paged list can mark
+               # what you could not raise today. See _cost_marker.
+               "you_could_raise_for_a_project": round(s.spending_power("start"), 1),
                "showing": ("nothing%s" % ((" " + why_these) if why_these else "")
                            if not page else
                            "%d-%d%s" % (offset + 1, offset + len(page),
@@ -1081,7 +1084,8 @@ def _agent_available(s, nodes, cmd=None):
                "by name": '{"cmd":"available","find":"furnace"}',
                "what you can pay for": '{"cmd":"available","afford":%d}' % int(max(0, purse)),
                "a page of everything": '{"cmd":"available","limit":30,"offset":0}',
-               "all of it at once": '{"cmd":"available","all":true} (large)'}}
+               "all of it at once": '{"cmd":"available","all":true} (large)'},
+           "you_could_raise_for_a_project": round(purse, 1)}
     if fog and heard_block:
         out["heard_of_but_cannot_begin"] = heard_block
         if heard_more:
@@ -1652,7 +1656,22 @@ _RESTS_SHORT = {"almost everything": "ALL", "a great deal": "much",
                 "nothing else; this is worth having for itself": "-"}
 
 
-def _available_row(e, w=34):
+def _cost_marker(e, purse):
+    """A row you cannot pay for today gets its cost marked.
+
+    "MOST RESTS ON THESE" heads its list with items at 230 to 1,580 denarii
+    against an opening purse of 400, and a break tester followed it into
+    CREDIT EXHAUSTED by year 106. The advice is right - those really are the
+    nodes everything rests on - and the reader needs to know which of them
+    they can act on this year.
+    """
+    c = e.get("cost")
+    if purse is None or not isinstance(c, (int, float)):
+        return ""
+    return "" if c <= purse else "*"
+
+
+def _available_row(e, w=34, purse=None):
     hours = e.get("founder_hours", e.get("your_hours"))
     years = e.get("calendar_floor_years", e.get("least_years"))
     risk = e.get("risk", e.get("chance_of_failure"))
@@ -1670,7 +1689,8 @@ def _available_row(e, w=34):
         staff += "*"
     return "%-*s %-20s %9s %7s %5s %5s %8s %7s %6s %6s" % (
         w, (e.get("id") or ""), (e.get("name") or "")[:20],
-        _fmt_num(e.get("cost")), _fmt_num(hours), _fmt_num(years), _pct(risk),
+        _fmt_num(e.get("cost")) + _cost_marker(e, purse),
+        _fmt_num(hours), _fmt_num(years), _pct(risk),
         _fmt_num(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
         staff, rests)
 
@@ -1685,6 +1705,7 @@ def render_available(out):
     L.append("")
     # Sized to the longest id ON THIS PAGE, so the table stays aligned without
     # ever cutting the one string the player has to type next.
+    _purse = out.get("you_could_raise_for_a_project")
     _rows_here = (out.get("available") or []) + (out.get("cheapest_now") or [])
     _w = max([34] + [len(r.get("id") or "") for r in _rows_here
                      if isinstance(r, dict)])
@@ -1702,13 +1723,13 @@ def render_available(out):
         L.append("CHEAPEST SIX RIGHT NOW, sorted by cost:")
         L.append(header)
         for e in sorted(out.get("cheapest_six") or [], key=lambda e: e.get("cost", 0)):
-            L.append(_available_row(e, _w))
+            L.append(_available_row(e, _w, _purse))
         if out.get("most_rests_on_these"):
             L.append("")
             L.append("MOST RESTS ON THESE, of what you could begin today:")
             L.append(header)
             for e in out["most_rests_on_these"]:
-                L.append(_available_row(e, _w))
+                L.append(_available_row(e, _w, _purse))
         L.append("")
         for k, v in (out.get("to_see_more") or {}).items():
             L.append("  %s: %s" % (k, v))
@@ -1721,7 +1742,7 @@ def render_available(out):
     elif "available" in out:
         L.append(header)
         for e in sorted(out["available"], key=lambda e: e.get("cost", 0)):
-            L.append(_available_row(e, _w))
+            L.append(_available_row(e, _w, _purse))
         if out.get("more"):
             L.append("")
             L.append(out["more"])
@@ -1736,8 +1757,13 @@ def render_available(out):
         L.append("  STAFF is the standing people it needs: 2s = two scholars, "
                  "1a = one craftsman.")
         if any(e.get("short_of_staff") for e in _shown if isinstance(e, dict)):
-            L.append("  A * means you do not have them yet - 'hire' or 'train' "
-                     "first, or the work waits.")
+            L.append("  A * after STAFF means you do not have them yet - 'hire' "
+                     "or 'train' first, or the work waits.")
+        if _purse is not None and any(_cost_marker(e, _purse) for e in _shown
+                                      if isinstance(e, dict)):
+            L.append("  A * after COST means you could not raise it today: "
+                     "between cash and credit you can put %s into a project."
+                     % _fmt_num(_purse))
 
     heard = out.get("heard_of_but_cannot_begin")
     if heard:

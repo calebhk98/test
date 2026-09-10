@@ -4256,6 +4256,26 @@ check("...and a nearly-paid project is not refused for its gross price",
       s_sp2.start_reason("identity_cover"))
 
 
+# --- BREAK: "MOST RESTS ON THESE" heads its list with items at 230 to 1,580
+# denarii against an opening purse of 400, and a break tester followed the
+# game's own headline advice into CREDIT EXHAUSTED by year 106. The advice is
+# right; the reader needs to know which of it they can act on this year.
+_rav, _, _ = proto([{"cmd": "available", "limit": 4, "offset": 200},
+                    {"cmd": "available"}])
+check("available says what you could raise for a project",
+      _rav[0].get("you_could_raise_for_a_project") is not None
+      and _rav[1].get("you_could_raise_for_a_project") is not None,
+      _rav[0].get("you_could_raise_for_a_project"))
+_page = _RP("available", _rav[0])
+check("...and marks the rows you could not raise it for",
+      "*" in _page and "A * after COST" in _page,
+      [l for l in _page.splitlines() if "after COST" in l])
+_cheap, _, _ = proto([{"cmd": "available", "limit": 2}])
+check("...and does not mark what you can plainly afford",
+      "A * after COST" not in _RP("available", _cheap),
+      _RP("available", _cheap)[:200])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
