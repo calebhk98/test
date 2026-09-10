@@ -134,3 +134,83 @@ climate, no trade shift, no diffusion of what you introduced.
 "The JSON-lines interface is precise... However, raw JSON is verbose for play
 and makes scanning long output harder than a formatted CLI." A human-readable
 rendering, alongside the machine one, was asked for by two testers.
+
+---
+
+# Wave two: found while wave one was running, with diagnoses
+
+## J. `why`'s cost breakdown shows a decoy factor  (simulator, confirmed)
+
+A tester checked the itemised cost against its own total across seven nodes and
+found the total was 1.4000x the product of the parts every time, and called it
+"an undisclosed constant 1.4 overhead multiplier".
+
+It is not undisclosed, it is mislabelled. Diagnosed:
+
+    base_total                                      444.0
+    civ_cost_factor                                 1.1
+    material_distance_factor                        1.0
+    opposition_factor                               1.0
+    price_index   <- the field `why` prints         1.0    (this is money_real)
+    price_index   <- the number actually multiplied 1.4    (this is price_index)
+
+`_node_explain` fills the field named `price_index` with `s.money_real`, while
+`project_cost` multiplies by `s.cost_money_factor()`, which returns
+`s.price_index`. Norse prices are 1.4x Roman, so for Norse the breakdown hides
+its largest factor and prints a 1.0 in its place. The fix is one line, and the
+lesson is that a breakdown offered as an explanation has to reconcile.
+
+## K. `bounty` refuses the one thing this civilisation is best at  (simulator)
+
+Of 86 startable nodes, 80 refuse a bounty. The refusal reads "not
+bounty-eligible (tier 1, category personal): a Roman artisan could not
+recognise success at this" — in a Norse game. It refuses `sea_skeleton_first`,
+shipbuilding, for a civilisation whose own profile says `ships x0.60`, the
+thing it is best at in the world.
+
+Two bugs: the eligibility test is tier AND an allow-list of categories while
+the help says "tier <=2 crafts", and the refusal text names a Roman artisan
+whatever society you are in. Bounty pricing itself is sound (2.5x build cost,
+removes 65% of founder hours, verified across six nodes) — leave that alone.
+
+## L. `buy mine` spends everything you have, with no price and no way to ask
+
+    (capital 38,151.6)
+    {"cmd":"buy","what":"mine","material":"gold","n":1}
+    -> ok: true, commissioned 0.17 t/yr, capital 0.0,
+       "Nothing was wasted, you paid only for what was sunk."
+
+One tonne a year is the same order as the example in the help text. There is no
+quote, no dry run, and no per-tonne sinking cost anywhere in `why` or `state`.
+Five years later the workings were mothballed for non-payment and the founder
+was in debt bondage. Separately, a small gold mine reports `"gold": 0.0`
+capacity while charging 588/yr of operating cost.
+
+Needs: a price before it commits, an operating cost disclosed before purchase,
+and a command to close a mine (there is `mothball_mines` internally and no way
+for a player to ask for it).
+
+## M. The robustness batch  (simulator)
+
+- `save` writes to any absolute path, confirmed into `/etc/`; a relative path
+  drops files into the repository root. `load` validates nothing.
+- `save`/`load` is unlimited undo, which defeats fog of war entirely.
+- `step` accepts `years: 100000`; `years: true` steps one year.
+- `bribe` works after the run has ended and charges to reduce 0.00 scandal.
+- `hire` accepts `"5"` as a string where `buy` and `start` type-check.
+- `buy forest` refuses without quoting the price.
+- `train` bypasses the supervision cap `hire` enforces, and pumps the labour
+  market ceiling without limit (smith supply 6,469 -> 36,433).
+- You can be paid to work as, and can train, engineers, chemists, electricians,
+  machinists and opticians in the year 900 — the trades the game itself says do
+  not exist yet.
+- The founder is immortal in every civilisation and `--mortal` is the only way
+  off; a 500-year run has no succession.
+- Under fog the run ENDS on a hidden goal after saying "there is no score" and
+  reporting `goal: null` throughout.
+- A granted capability appears in `completed` mixed in with things you paid for.
+
+## N. A human-readable rendering  (new work)
+
+Two testers asked for it. The JSON is precise and unreadable; a formatted view
+for a person, alongside the machine protocol, not replacing it.
