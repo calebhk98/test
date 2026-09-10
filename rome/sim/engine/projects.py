@@ -188,7 +188,16 @@ class ProjectsMixin:
             if (sch_used <= self.effective_scholars() + 1e-6
                     and art_used <= self.artisans + own + 1e-6):
                 break
-            worst = max(self.operating, key=lambda k: self.venture_hands(k)[1])
+            # THE LEAST WORTH KEEPING, not the largest. This picked whichever
+            # concern needed the most hands, which is very nearly the same as
+            # picking the most PROFITABLE one - a break tester watched it close
+            # a 600-a-year hopper wagon twice and keep a concern earning
+            # nothing with identical staffing. Shut the one that returns least
+            # for the people it ties up.
+            worst = min(self.operating,
+                        key=lambda k: ((self.nodes[k]["rev"] - self.nodes[k]["up"])
+                                       / max(0.01, self.venture_hands(k)[1]),
+                                       -self.venture_hands(k)[1]))
             self.operating.discard(worst)
             self.mothballed.add(worst)
             closed.append(worst)

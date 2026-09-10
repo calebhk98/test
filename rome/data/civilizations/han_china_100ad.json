@@ -33,7 +33,7 @@
  "hazards": [
   {
    "name": "Yellow Turban rebellion",
-   "note": "Not a bandit revolt: the Way of Supreme Peace was a millenarian Daoist religious movement, and it very nearly took the dynasty down. The court's lasting reaction, applied gradually below as `values`, is to stop treating unlicensed religious movements as a nuisance and start treating them as a standing threat to the state, a genuine tightening relative to the easy tolerance of alchemy and technical craft this civilization's baseline `values` describes.",
+   "note": "Not a bandit revolt: the Way of Supreme Peace was a millenarian Daoist religious movement, and it very nearly took the dynasty down. The court's lasting reaction, applied gradually below as shifts in what this society values, is to stop treating unlicensed religious movements as a nuisance and start treating them as a standing threat to the state, a genuine tightening relative to the easy tolerance of alchemy and technical craft this civilization's baseline shifts in what this society values describes.",
    "sack_chance": 0.2,
    "values": {
     "w_religious_rigidity": 0.15
@@ -45,7 +45,7 @@
   },
   {
    "name": "Three Kingdoms fragmentation",
-   "note": "The examined bureaucracy that makes Han China the easiest place in this game to organise anything depends on there being one court to examine for; once Wei, Shu and Wu each run their own court, a distant and increasingly fictional emperor buys you far less than a warlord's own favour does, applied gradually below as `values`. The unified currency and the state's coordination of long-distance trade fragment with the court, which is the values-side counterpart to the output_factor loss.",
+   "note": "The examined bureaucracy that makes Han China the easiest place in this game to organise anything depends on there being one court to examine for; once Wei, Shu and Wu each run their own court, a distant and increasingly fictional emperor buys you far less than a warlord's own favour does, applied gradually below as shifts in what this society values. The unified currency and the state's coordination of long-distance trade fragment with the court, which is the shifts in what this society values-side counterpart to the the fall in trade and output loss.",
    "output_factor": 0.6,
    "values": {
     "patronage_weight": 0.15,
@@ -128,7 +128,7 @@
   },
   {
    "name": "Sui reunification",
-   "note": "Yang Jian took the Northern Zhou throne in 581 and in 589 his armies crossed the Yangtze, took Jiankang and ended two hundred and seventy years of division. For anyone trying to build something, this is the most important favourable event in the whole file and it deserves to be said plainly. The Sui restored one five-zhu coinage for the whole country and closed the private mints; standardised weights, measures and the foot; issued the Kaihuang code of 581, which cut the number of capital offences sharply; and abolished the nine-rank system in 587 in favour of provincial candidates sent up to be examined, which is the root the imperial examination grows from - the jinshi degree itself is a few years later, under Yang - and which makes an unconnected clever man employable again. Canal-building starts immediately - the Guangtong canal from Chang'an to the Yellow River was cut in 584 - and the great works joining the Yangtze to the Yellow River and on to the northern frontier follow in 605-610, just past this simulation's horizon. The corvee that dug them was murderous and destroyed the dynasty within two generations; inside this window, it is the reunification that counts. w_commerce rises because there is one currency and one market again, and patronage_weight falls back because there is one court to be examined by instead of a warlord to be favoured by.",
+   "note": "Yang Jian took the Northern Zhou throne in 581 and in 589 his armies crossed the Yangtze, took Jiankang and ended two hundred and seventy years of division. For anyone trying to build something, this is the most important favourable event in the whole file and it deserves to be said plainly. The Sui restored one five-zhu coinage for the whole country and closed the private mints; standardised weights, measures and the foot; issued the Kaihuang code of 581, which cut the number of capital offences sharply; and abolished the nine-rank system in 587 in favour of provincial candidates sent up to be examined, which is the root the imperial examination grows from - the jinshi degree itself is a few years later, under Yang - and which makes an unconnected clever man employable again. Canal-building starts immediately - the Guangtong canal from Chang'an to the Yellow River was cut in 584 - and the great works joining the Yangtze to the Yellow River and on to the northern frontier follow in 605-610, just past this simulation's horizon. The corvee that dug them was murderous and destroyed the dynasty within two generations; inside this window, it is the reunification that counts. how much trade is honoured rises because there is one currency and one market again, and how much a patron's protection is worth falls back because there is one court to be examined by instead of a warlord to be favoured by.",
    "values": {
     "patronage_weight": -0.1,
     "w_commerce": 0.15,

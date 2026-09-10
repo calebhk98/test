@@ -1593,7 +1593,10 @@ def _advice_line(kind, advice, indent="  "):
     later = [e for e in steps if not e.get("can_begin_now")]
     if now:
         line += "\n%s  you could begin now: %s" % (
-            indent, ", ".join("%s (%s den)" % (e["id"], _fmt_num(e["cost"])) for e in now))
+            indent, ", ".join("%s (%s, %s)"
+                              % (e["id"], _fmt_num(e["cost"]),
+                                 e.get("because_it_gives_you") or "a hedge")
+                              for e in now))
     for e in later[:2]:
         line += "\n%s  %s is one of them, waiting on: %s" % (
             indent, e["id"], (e.get("waiting_on") or "").split(". To get")[0])
@@ -3194,6 +3197,20 @@ def load_state(s, path):
     bad = _validate_save(blob, s)
     if bad:
         raise ValueError(bad)
+    # FOG IS A PROPERTY OF THE GAME YOU CHOSE, NOT A FIELD IN A FILE, and this
+    # has to be checked BEFORE anything is applied - the fog flag is restored
+    # further down, so a check placed after it is checking the value it was
+    # about to reject. `load` validated the filename carefully and the contents
+    # barely at all, so a hand-edited save with "_fog": false turned the fog
+    # off in a running fogged game and `path` began answering, in a game whose
+    # own help says there is no way to view the whole tree. A break tester did
+    # exactly that. A save may resume the fog it was played with; it may not
+    # switch the fog off underneath you.
+    if getattr(s, "fog", False) and blob.get("_fog") is False:
+        raise ValueError("that save was played without fog of war and this "
+                         "game is being played with it. A save cannot turn the "
+                         "fog off; start a new game without it if that is what "
+                         "you want.")
     for f in SAVE_FIELDS:
         if f not in blob:
             continue

@@ -57,7 +57,7 @@
  "hazards": [
   {
    "name": "Christianisation and political consolidation",
-   "note": "The real effect of this is not mainly deaths but a change to the VALUES vector, applied gradually below: w_religious_rigidity and w_magic_fear both rise sharply as the old plural, no-doctrine seidr-tolerant religion gives way to a Church with a creed and an inquisition's ancestor -- what got you patronised in 950 gets you denounced in 1080. output_factor covers the physical, smaller half of the same event: temple-burnings, forced conversions and the kings' wars that came with them (Olaf Tryggvason's campaigns from 995, climaxing at the Battle of Stiklestad in 1030) visibly disrupted production and occasionally burned things down.",
+   "note": "The real effect of this is not mainly deaths but a change to the VALUES vector, applied gradually below: how much doctrine constrains what may be said and how readily an inexplicable effect is called sorcery both rise sharply as the old plural, no-doctrine seidr-tolerant religion gives way to a Church with a creed and an inquisition's ancestor -- what got you patronised in 950 gets you denounced in 1080. the fall in trade and output covers the physical, smaller half of the same event: temple-burnings, forced conversions and the kings' wars that came with them (Olaf Tryggvason's campaigns from 995, climaxing at the Battle of Stiklestad in 1030) visibly disrupted production and occasionally burned things down.",
    "output_factor": 0.85,
    "values": {
     "w_religious_rigidity": 0.45,

@@ -2548,6 +2548,80 @@ check("a stock ledger cannot be overdrawn: taking more than is on hand "
       taken == 500.0 and ledger.on_hand("copper") == 0.0,
       (taken, ledger.on_hand("copper")))
 
+# ======================================================================
+# ROUND 8: four fixes from the seventh break-testing round.
+# ======================================================================
+
+# --- BREAK: when the staff ran short, the closer picked the concern that
+# needed the MOST hands, which is very nearly the same as picking the most
+# profitable one. A tester watched a 600-a-year wagon shop close twice while a
+# concern earning nothing and staffed identically stayed open.
+s_cl = sim(capital=200000.0)
+_pair = [k for k in NODES
+         if NODES[k]["rev"] > 0 and NODES[k]["up"] >= 0 and not NODES[k]["pre"]]
+s_cl.done.update(NODES)                 # know everything, so `open` is free
+s_cl.operating = set()
+_rich = max(NODES, key=lambda k: NODES[k]["rev"] - NODES[k]["up"])
+_poor = min((k for k in NODES if NODES[k]["rev"] > 0),
+            key=lambda k: NODES[k]["rev"] - NODES[k]["up"])
+s_cl.operating.update([_rich, _poor])
+s_cl.scholars = s_cl.artisans = 0
+s_cl.founder_alive = False              # nobody at all: it must close both,
+_shut = s_cl.close_unstaffed_ventures(200)      # and in the right ORDER
+check("an unstaffed shutdown closes the least valuable concern first",
+      _shut[0] == _poor, (_shut[:2], _rich, _poor))
+check("...and keeps going until the payroll actually covers what is left",
+      not s_cl.operating, sorted(s_cl.operating)[:4])
+check("...and what it closed is still KNOWN, only stopped",
+      _rich in s_cl.done and _rich in s_cl.mothballed)
+
+# --- BREAK: player-facing hazard notes quoted the values vector by its
+# internal names ("raises w_magic_fear"), which is engine jargon a player has
+# no way to read. Nothing shown to a player may name a values-vector key.
+_JARGON = ("w_magic_fear", "w_eminence_danger", "w_religious_rigidity",
+           "w_labour_saving", "w_commerce", "w_information", "w_novelty",
+           "w_military", "adaptation_rate", "patronage_weight", "bribability")
+_dirty = []
+for _f in sorted(os.listdir(os.path.join(ROOT, "rome/data/civilizations"))):
+    if not _f.endswith(".json") or _f.startswith("_"):
+        continue
+    _civ = json.load(open(os.path.join(ROOT, "rome/data/civilizations", _f)))
+    for _h in _civ.get("hazards", []):
+        _txt = " ".join(str(_h.get(x, "")) for x in ("name", "note"))
+        _dirty += [(_f, _h.get("name"), _j) for _j in _JARGON if _j in _txt]
+check("no hazard a player reads names an internal values-vector key",
+      not _dirty, _dirty[:3])
+
+# --- BREAK: `risk` offered `horse_collar` as a hedge against the Antonine
+# plague with no word of why. Every entry must say what it leads to.
+s_hz = sim()
+_steps = []
+for _kind in sorted(S.Sim.HAZARD_COUNTERS):
+    _steps += s_hz.hedge_first_steps(_kind)
+check("every hedge the game suggests says what it gets you",
+      _steps and all(e.get("because_it_gives_you") for e in _steps),
+      [e["id"] for e in _steps if not e.get("because_it_gives_you")][:3])
+check("...and a prerequisite says which counter it is a step toward",
+      any(str(e["because_it_gives_you"]).startswith("a step toward")
+          for e in _steps))
+
+# --- BREAK: a save written with the fog OFF loaded into a fogged game and
+# handed the player the whole tree. The check has to run BEFORE the save's own
+# fog flag is restored, or it validates the value it is about to reject.
+_sv = "_fogtamper_test.json"          # saves must be relative paths
+_svp = os.path.join(ROOT, _sv)
+if os.path.exists(_svp):
+    os.remove(_svp)
+proto([{"cmd": "save", "file": _sv}])                       # written unfogged
+_r8, _out8, _rc8 = proto([{"cmd": "load", "file": _sv}, {"cmd": "state"}],
+                         fog=True)
+check("a save played without fog cannot be loaded into a fogged game",
+      any("fog" in json.dumps(x).lower() and x.get("ok") is False for x in _r8),
+      _out8[:200])
+check("...and refusing it does not kill the session", _rc8 == 0)
+if os.path.exists(_svp):
+    os.remove(_svp)
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

@@ -377,13 +377,24 @@ class SocietyMixin:
         own are the honest answer and this says nothing.
         """
         want = []
-        for node, _share, _label in self.HAZARD_COUNTERS.get(kind, ()):
+        leads_to = {}
+        for node, _share, label in self.HAZARD_COUNTERS.get(kind, ()):
             if node not in self.nodes or node in self.done:
                 continue
             want.append((0, node))
+            leads_to.setdefault(node, label)
             for pre in self.nodes[node]["pre"]:
                 if pre in self.nodes and pre not in self.done:
                     want.append((1, pre))
+                    # SAY WHAT IT LEADS TO. A break tester was offered
+                    # `horse_collar` as the thing to build against the Antonine
+                    # plague, directly under prose saying the remedy is "clean
+                    # water, quarantine, and eventually inoculation". It is a
+                    # prerequisite of crop rotation, which is a real hedge
+                    # against a famine year - but nothing said so, and an
+                    # unexplained horse collar under a plague warning reads as
+                    # the game being broken.
+                    leads_to.setdefault(pre, "a step toward %s" % label)
         memo = {}
         seen, out = set(), []
         for d, k in sorted(want):
@@ -395,6 +406,7 @@ class SocietyMixin:
             ok, why = self.start_reason(k)
             out.append({"id": k, "name": self.nodes[k]["name"],
                         "cost": round(self.project_cost(k), 1),
+                        "because_it_gives_you": leads_to.get(k),
                         "can_begin_now": bool(ok),
                         "waiting_on": None if ok else why})
             if len(out) >= limit:
