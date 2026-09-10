@@ -214,3 +214,216 @@ MEDIUM that the behaviour is.
 "EVENT 114: nobody left to keep an eye on 1 concern, so tr_hopper_wagon closed."
 It closed the 600 den/yr concern and kept the 150 den/yr one I had just sneaked open.
 Not exploitable for profit, but the choice of victim is the worst possible one.
+
+### FINDING 13 (confirmed, single-screen arithmetic error) — wage bill vs "each"
+In a scratch game (`scratch_hire.json`, seeded from my own save with capital raised):
+```
+> hire artisan 3   -> you now employ: 3   annual wage bill: 779.9
+> fire artisan 3
+> hire artisan 3   -> annual wage bill: 869.7
+> hire artisan 1   -> you now employ: 4   annual wage bill: 1,190
+> labour
+ON YOUR STAFF:
+  artisan                 4   250 den/yr each
+Total employed: 4     annual wage bill: 1,190 den
+```
+4 x 250 = 1,000, not 1,190. `labour trade artisan` also says "a year of one: 250 den".
+The real behaviour is a rising scarcity premium per extra head (259.97, then 289.9, then
+320.3 for the fourth) that no screen ever shows. Confidence: HIGH that the display is wrong.
+
+### FINDING 14 (confirmed) — bought slaves do nothing at all
+```
+> buy slaves 100
+bought: 100
+slaves: 100                (capital 200,000 -> 134,665, so 65,335 den)
+> labour
+ON YOUR STAFF: nobody      Total employed: 0     annual wage bill: 0 den
+IN TRAINING:
+  None x27.5, ready 110.0          <- the trade is literally named "None"
+> ventures
+free to put behind something new: 1 scholars, 0.33 craftsmen   (unchanged)
+> open tr_hopper_wagon
+REFUSED: nobody free to keep an eye on it: it needs 0.0 scholars and 0.4 craftsmen to
+supervise, and you have 1.0 and 0.3 not already watching something else.
+```
+65,335 denarii of human beings bought and nothing anywhere changed. Worse, the refusal
+message itself advertises them as the fix: "To get more artisans: ... buy slaves N then
+manumit, though they are untrained for three years." Confidence: HIGH that the "None x27.5"
+label is a bug; MEDIUM-HIGH that the three-year delay is the intent and the message is
+merely wrong to offer it as a fix for a same-turn problem.
+
+### FINDING 15 (confirmed) — manumission is a free, unlimited, same-turn reputation pump
+In one turn at 107 AD, with no time passing:
+```
+buy slaves 20 / buy manumit 20   x40
+```
+`buy manumit` is free (capital never moves on the manumit line) and each cycle adds
+reputation. Reputation went 8.1 -> 39.7 inside a single year, past the "EMINENCE is
+dangerous above 26" line, while eminence stayed at 0.04 and scandal at 1.7. 800 freedmen
+and `labour` still says "Total employed: 0". `help money` says freedmen "then work better",
+which they cannot, since they do not work at all.
+Cost was ~1.9M den for +31.6 reputation, so it needs a big purse - but there is no per-turn
+limit, no eminence penalty and no scandal. Confidence: HIGH that unbounded same-turn
+cycling is unintended.
+
+### FINDING 16 (candidate) — a refusal that tells you to do the thing it just refused
+```
+> hire artisan 2
+REFUSED: you can supervise, house and teach 0.00 more people, not 2 - you have no room for
+even one. To get more artisans: hire smith 3 or any trade in labour; or commission smith 400
+...; buy slaves N then manumit
+```
+It refuses hiring on a capacity ground and then advises hiring. Confidence: HIGH that the
+advice is wrong for this refusal.
+
+### Mine standing cost — quote vs behaviour
+`quote mine coal 500` promises "every year it stands: 750" and "The yearly cost is charged
+whether or not you use the output". Ledger shows "mines standing 0" for the whole 3-year
+sinking period (107-110) and 750 only from 111. Confidence: LOW that this is a bug - the
+wording is ambiguous - but a player reading "charged whether or not you use the output"
+will budget for it from the day they buy.
+
+### FINDING 17 (confirmed) — "waiting on money" with the money in hand; and two identical
+### calendar floors behaving differently
+Scratch from `backup1.json` (107 AD, 320 den, revenue 1,005/yr):
+```
+> start tr_wooden_waggonway        (bill 204.9, CALENDAR FLOOR 1 years)
+> step 1
+> state
+  tr_wooden_waggonway   100% of your hours spent, 102.5 still owed - waiting on money
+Money: 904 den
+```
+904 denarii in the purse, 102.5 owed, and the game says it is waiting on money. It is not:
+it finished on the next step regardless. Exactly half the bill (102.4 of 204.9) was paid in
+year one, so there is an undisclosed per-year spend throttle and the status line blames the
+wrong thing.
+
+Control, same starting save, same 1-year calendar floor, same 320 den:
+```
+> start arithmetic_positional      (bill 1,032, CALENDAR FLOOR 1 years)
+> step 1
+  COMPLETED 107: Decimal positional notation ...
+```
+The 1,032-denarius project completed in one year out of a 320-denarius purse without a
+murmur, while the 204.9-denarius one stalled "waiting on money". Confidence: HIGH that at
+least the message is wrong, MEDIUM-HIGH that the throttle rule itself is inconsistent.
+
+(Earlier instance of the same bug with a different wording: `tr_hopper_wagon`, 50 founder
+hours needed, 2,000 free, reported "60% of your hours spent ... waiting on your hours".)
+
+### FINDING 18 (confirmed, and the biggest one) — the currency debasement changes no price
+`start <id>` prints, every single time:
+  "note: This is the price as of today, and it is now fixed for this project. Quotes move
+   with prices, the coinage and what a material costs to get: a figure you read years ago
+   is not what you will pay."
+`risk` lists "[190-275] Currency debasement / real erosion: you take 100% of it".
+Scratch run from 107 AD, `step 100`, `step 100`:
+```
+  EVENT 220: Currency debasement: the coin is worth 85% less than it was
+  EVENT 235: Currency debasement: the coin is worth 94% less than it was
+  EVENT 250: Currency debasement: the coin is worth 97% less than it was
+  EVENT 265: Currency debasement: the coin is worth 99% less than it was
+```
+and the quote for the same technology, read at 107 AD, at 207 AD and at 307 AD:
+```
+COST: 709.4 den total  (261 labour + 173.6 materials + 400 capital, then x0.85 your civ,
+                        x1 distance, x1 scarcity, x1 prices)
+```
+Identical to the decimal, with the price multiplier still x1, after the game has told me
+four times that the coin lost 99% of its value. Revenue fell only about a third
+(1,005 -> 657.9 den/yr) and living costs rose only 282 -> 343. A player who took the
+"quotes move with the coinage" note seriously and hoarded goods instead of coin was misled;
+a player who hoarded coin lost nothing. Confidence: HIGH that the promise is not kept.
+(The save file has a `money_real` field, so there may be a real-terms figure behind the
+scenes - but nothing the player is shown moves.)
+
+### FINDING 14 (revised and sharpened) — `labour` never shows the people you bought
+Clean scratch (capital raised to 5,000,000, 107 AD):
+```
+> buy slaves 20
+bought: 20   slaves: 20   capital: 4,992,201        (7,799 den, ~390 each)
+> labour
+ON YOUR STAFF: nobody
+IN TRAINING:
+  None x11, ready 110.0                    <- trade name "None"; 11, not the 20 I bought
+Total employed: 0     annual wage bill: 0 den
+> step 3
+  EVENT 110: 20 of the people you bought finish learning the work
+> labour
+ON YOUR STAFF: nobody       Total employed: 0     annual wage bill: 0 den
+> ventures
+free to put behind something new: 1 scholars, 14.5 craftsmen
+```
+Three separate defects on one mechanic:
+1. the trade of a bought person prints as the literal string "None";
+2. IN TRAINING shows 55% of the true number every time (20 -> 11, and 50 -> 27.5 in a
+   second run), while the arrival event correctly reports all 20;
+3. once trained, 20 enslaved craftsmen exist and are usable (`ventures` jumps from 0.5 to
+   14.5 free craftsmen) but `labour` - the screen whose entire job is "who you employ and
+   what trades exist here" - still says "nobody", "Total employed: 0".
+Confidence: HIGH on all three. Also there is no `quote` for a person, though the game
+elsewhere insists "ASK THE PRICE FIRST".
+
+### Small things
+- `commission smith 400` -> "400 hours of a smith bought for 115 denarii" = 0.2875 den/hr
+  against a stated smith wage of 0.18 den/hr. A 60% premium for buying a job, undisclosed
+  but reasonable.
+- `train machinist 2` cost 675 den and 900 founder hours, "ready in 2 years". Worked.
+- `bribe 100` at -470 den -> "REFUSED: you have -470 denarii", even though `help money`
+  says "You may spend past what you have, as far as somebody will lend you" and the credit
+  limit was 2,519. Projects may use credit; bribes may not. Nothing says so.
+- People are fractional: "EVENT 110: 170.5 of the people you bought finish learning the
+  work", "IN TRAINING: None x27.5", "free to put behind something new: 0.03 craftsmen".
+
+### FINDING 19 (confirmed, single screen) — the prompt and the EMPLOY block disagree
+Scratch at 115 AD after buying 20 slaves and waiting three years:
+```
+> state full:true
+EMPLOY: 0 people, 0 den/yr in wages
+  nobody
+...
+[115 AD | 4424134 den | you:2000 hr | sch 0 art 14 | rep 6] >
+```
+The status prompt printed at the bottom of that same `state` output says "art 14"; the
+EMPLOY block eight lines above says 0 people, nobody; `labour` says "Total employed: 0".
+Confidence: HIGH.
+
+### Eminence: works, but essentially cannot be triggered by wealth
+With capital hand-set to 1,000,000,000 den (four thousand senatorial fortunes) and
+reputation left alone, over 60 years eminence settles at ~8 against a danger line of 26 and
+the game reports "0% chance of ruin this year" the whole way. `help eminence` says eminence
+"rises with how well known you are and how visibly rich" - visible wealth moves it from
+0.10 to 8 across a 2.5-million-fold increase in money, which is not enough to matter.
+Reputation is doing nearly all the work.
+When eminence IS forced above the line the mechanic does fire and is brutal:
+"EVENT 107: PROMINENCE: property confiscated, 541750380 den lost". So the hazard is
+implemented; it is just very hard to reach the way the help text says you reach it.
+
+### Resolved, not a bug — the `afford` hint
+Opening `available` suggests "what you can pay for: available afford 1,083" with 400 den
+cash and a 1,367 credit limit; later "available afford 8,619" with 6,833 cash and 3,574
+credit. Both are exactly cash + half the credit limit. Internally consistent, never
+explained anywhere.
+
+### Also checked and sound
+- `mothball tex_indigo` -> revenue drops by exactly 306.7 and upkeep by 40, both reflected
+  in `money` immediately; `restore tex_indigo` costs 80 den and restores both exactly.
+- `stop tex_horizontal_loom` on an already-finished work -> "REFUSED: not active". Correct.
+- `close iron` with no iron mine -> "REFUSED: you have no iron workings, and none being sunk".
+- Debt works: overcommitting drove capital to -1,605, interest was charged (131 den at 11%)
+  and the position recovered; the refusal message when overcommitting quotes cash + credit
+  correctly ("between cash and credit you can raise 2,839" = 320 + 2,519).
+
+### FINDING 20 (confirmed, two lines apart on one screen) — 0 artisans or 1.0 craftsmen?
+```
+> why ag2_nitrogen_cycle
+STAFF NEEDED: 0 scholars, 3 artisans   (you have 1, 0)
+...
+STATUS: BLOCKED
+  needs 3 trained craftsmen, on your staff or under contract, and you have 1.0.
+```
+"(you have 1, 0)" and "you have 1.0" [craftsmen] are the same quantity, printed two lines
+apart with different values, on a screen where I employ nobody at all. The same mismatch
+explains FINDING 8: `why tr_hopper_wagon` printed "1 artisans (you have 1, 0)" and
+"STATUS: CAN START NOW" simultaneously - the gate uses the 1.0 figure, the display uses the
+employee count. Confidence: HIGH.

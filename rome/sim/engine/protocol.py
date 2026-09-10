@@ -174,11 +174,20 @@ def _agent_state(s, nodes, cmd=None):
         # Named for what it is. The roll happens after the spending loop, so this
         # is the year just simulated, not the one before it.
         "project_spend_this_year": round(getattr(s, "spend_last_year", 0.0), 1),
+        # INTEREST IS A COST AND BELONGS IN THE NET. A weird-play tester read
+        # "+9.5 a year" for years while their capital fell 105, then 117,
+        # accelerating - with the interest rate printed two lines below on the
+        # same screen. Arrears compound; a net that ignores them tells a
+        # household in a debt spiral that it is recovering.
+        "interest_on_arrears_this_year": round(
+            max(0.0, -s.capital) * s.debt_interest_rate(), 1),
         "net_after_project_spend": round(s.revenue() - s.upkeep() - s.living_cost()
                                          - s.mine_operating_cost()
+                                         - max(0.0, -s.capital) * s.debt_interest_rate()
                                          - getattr(s, "spend_last_year", 0.0), 1),
         "net_per_year": round(s.revenue() - s.upkeep() - s.living_cost()
-                              - s.mine_operating_cost(), 1),
+                              - s.mine_operating_cost()
+                              - max(0.0, -s.capital) * s.debt_interest_rate(), 1),
         # Rows are [capacity, ready_year] for people bought and trained, and
         # [0, ready_year, trade, count] for a trade being taught, so read by
         # index. Unpacking two names off a four-wide row killed `state` outright
@@ -1104,8 +1113,12 @@ def render_state(out):
 
     employees = out.get("employees") or {}
     L.append("")
-    L.append("EMPLOY: %s people, %s den/yr in wages"
-             % (_fmt_num(out.get("employees_total")), _fmt_num(out.get("annual_wage_bill"))))
+    _house = (out.get("slaves") or 0) + (out.get("freedmen") or 0)
+    L.append("EMPLOY: %s people, %s den/yr in wages%s"
+             % (_fmt_num(out.get("employees_total")),
+                _fmt_num(out.get("annual_wage_bill")),
+                ("   (and %s in your household, owned or freed)" % _fmt_num(_house))
+                if _house else ""))
     for t, v in sorted(employees.items()):
         L.append("  %-16s %s" % (t, _fmt_num(v)))
     if not employees:
@@ -1426,10 +1439,27 @@ def render_labour(out):
         return "\n".join(L)
     L = ["LABOUR", "ON YOUR STAFF:"]
     staff = out.get("on_your_staff")
+    _shown = False
     if isinstance(staff, list) and staff:
+        _shown = True
         for r in staff:
-            L.append("  %-16s %8s   %s den/yr each" % (r["trade"], _fmt_num(r["you_employ"]), _fmt_num(r["a_year_of_one"])))
-    else:
+            L.append("  %-16s %8s   %s den/yr each"
+                     % (r["trade"], _fmt_num(r["you_employ"]), _fmt_num(r["a_year_of_one"])))
+    # PEOPLE YOU OWN OR HAVE FREED ARE YOUR HOUSEHOLD TOO. They are not
+    # `employees` and so were never on this list: a weird-play tester bought
+    # ten people and read "ON YOUR STAFF: nobody" and "EMPLOY: 0 people" while
+    # the prompt said art 7, and concluded - reasonably - that the game had
+    # lost track of their household. It had not; it was only showing one third
+    # of it.
+    if out.get("slaves"):
+        _shown = True
+        L.append("  %-16s %8s   held, not paid a wage"
+                 % ("people you own", _fmt_num(out.get("slaves"))))
+    if out.get("freedmen"):
+        _shown = True
+        L.append("  %-16s %8s   freed, and worth more for it"
+                 % ("freedmen", _fmt_num(out.get("freedmen"))))
+    if not _shown:
         L.append("  nobody")
     L.append("")
     L.append("YOU COULD HIRE: " + (", ".join(out.get("you_could_hire_here") or []) or "nobody new"))
@@ -1948,7 +1978,16 @@ def parse_typed(line):
         return {"cmd": "help", "topic": (rest[0].lower() if rest else None)}, None
 
     if op == "step":
-        # A bare 'n' is one year, which is what it has always meant.
+        # A bare 'n' is one year, which is what it has always meant - but
+        # `step abc` is not a bare 'n'. That fell through to the default and
+        # silently advanced a year, while `step 0` and `step -5` were properly
+        # refused: a weird-play tester found the inconsistency and it is the
+        # worst kind, because the accepted case does something other than what
+        # was asked and says nothing.
+        if rest and not nums:
+            return None, ("step takes a number of years, e.g. 'step 5', or "
+                          "nothing at all for one. %r is not a number."
+                          % " ".join(rest))
         return {"cmd": "step", "years": (nums[0] if nums else 1)}, None
 
     if op == "ventures":
@@ -2434,7 +2473,10 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                  "wasted, you paid only for what was sunk.")
             return reply
         if what == "slaves":
+            s._last_buy_refusal = None
             got = s.buy_slaves(int(n))
+            if got <= 0 and getattr(s, "_last_buy_refusal", None):
+                return {"ok": False, "error": s._last_buy_refusal}
             if got <= 0:
                 # Quote the price actually asked. It is no longer 300 flat: a
                 # large purchase bids the local market up, and saying "300 each"
@@ -2485,8 +2527,15 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "upkeep_of_what_you_built": round(s.upkeep(), 1),
                     "living_and_appearances": round(s.living_cost() - s.wage_bill(), 1),
                     "wages": round(s.wage_bill(), 1),
-                    "mines_standing": round(s.mine_operating_cost(), 1)},
-                "net_per_year": round(s.revenue() - fixed, 1),
+                    "mines_standing": round(s.mine_operating_cost(), 1),
+                    # A COST LIKE ANY OTHER. It was printed two lines below the
+                    # net that ignored it, so a tester in a debt spiral read
+                    # "+9.5 a year" while capital fell 105 and then 117.
+                    "interest_on_arrears": round(
+                        max(0.0, -s.capital) * s.debt_interest_rate(), 1)},
+                "net_per_year": round(
+                    s.revenue() - fixed
+                    - max(0.0, -s.capital) * s.debt_interest_rate(), 1),
                 "spent_on_projects_last_year": round(getattr(s, "spend_last_year", 0.0), 1),
                 "credit_limit": round(s.credit_limit(), 1),
                 "interest_rate_on_arrears": round(s.debt_interest_rate(), 4),
@@ -2540,9 +2589,15 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "annual_wage_bill": round(s.wage_bill(), 1),
                 "craftsmen_on_your_staff": round(s.artisans, 2),
                 "scholars_including_you": round(s.effective_scholars(), 2),
+                # A ROW WITH NO TRADE IS PEOPLE YOU BOUGHT, and printing that
+                # as the literal string "None" - "None x3.3", "None x0.55" -
+                # is how two separate testers concluded the game had lost track
+                # of their household. It knows exactly what they are.
                 "in_training": [
-                    {"trade": (r_[2] if len(r_) > 2 else None),
-                     "people": (r_[3] if len(r_) > 3 else round(r_[0], 2)),
+                    {"trade": (r_[2] if len(r_) > 2
+                               else "people you bought, learning the work"),
+                     "people": (r_[3] if len(r_) > 3
+                                else round(r_[0] / 0.55, 2)),
                      "ready_year": r_[1]}
                     for r_ in getattr(s, "training", [])],
                 "one_trade_in_full": '{"cmd":"labour","trade":"smith"}',

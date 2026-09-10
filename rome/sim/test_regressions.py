@@ -130,6 +130,12 @@ check("manumission does not double-count the same person",
 # --- Han WEIRD / Norse BREAK: slicing dodged the volume surcharge
 def spend(slices, per):
     t = sim(capital=1e9)
+    # ROOM TO PUT THEM. Buying now respects the same feed/house/oversee cap
+    # `hire` always did, so a test about PRICING has to make room first or it
+    # is really testing the cap.
+    t.done.add("workshop_first")
+    t.done.add("freedman_staff")
+    t._done_changed()
     c0 = t.capital
     for _ in range(slices):
         t.buy_slaves(per)
@@ -2011,17 +2017,20 @@ check("a name you have not heard of and a name that does not exist read alike",
 #    then recomputed from scratch and threw away. A tester watched their
 #    craftsmen fall from 35 to 3.8 at the moment the training finished.
 s = sim(capital=500000.0)
-s.buy_slaves(20)
+s.done.add("workshop_first")
+s.done.add("freedman_staff")
+s._done_changed()
+s.buy_slaves(12)
 _at_purchase = s.artisans
 for _ in range(4):
     s.step()
 _trained = s.artisans
-s.manumit(20)
+s.manumit(12)
 s._resync_pools()
 check("people you buy are worth nothing until they have learned the work",
-      _at_purchase < 0.5, "%.2f craftsmen the day 20 were bought" % _at_purchase)
+      _at_purchase < 0.5, "%.2f craftsmen the day 12 were bought" % _at_purchase)
 check("...and are worth something once they have, and do not vanish",
-      _trained > 12.0, "%.2f craftsmen after the training lag" % _trained)
+      _trained > 7.0, "%.2f craftsmen after the training lag" % _trained)
 check("freeing them is worth more than holding them, as the model claims",
       s.artisans > _trained * 1.3,
       "%.2f held -> %.2f freed" % (_trained, s.artisans))
@@ -2185,6 +2194,47 @@ for _civ_m in ("england_1300", "rome_100ad", "norse_900ad"):
             _bad_math.append((_civ_m, _k, round(_prod, 1), _e["total"]))
 check("every cost breakdown multiplies out to the total it states",
       not _bad_math, _bad_math[:3])
+
+# --- round 7, the Rome weird-play tester -------------------------------------
+# 1. `money`'s Net/yr omitted interest on arrears, with the interest RATE
+#    printed two lines below it on the same screen. They read "+9.5 a year"
+#    while capital fell 105, then 117, accelerating - a household in a debt
+#    spiral being told it was recovering.
+s = sim(civ="rome_100ad")
+s.capital = -3000.0
+_m = S._agent_dispatch(s, NODES, {"cmd": "money"})
+check("the net counts interest on arrears, which is a cost like any other",
+      _m["net_per_year"] < 0 and _m["what_it_costs_you"]["interest_on_arrears"] > 0,
+      "net %.1f with %.1f of interest"
+      % (_m["net_per_year"], _m["what_it_costs_you"]["interest_on_arrears"]))
+
+# 2. "Told to my face I could take 6 more people, I took 7 with a different
+#    verb." buy went round the feed/house/oversee cap that hire enforces.
+s = sim(capital=1000000.0)
+_room = s.household_room()
+_ok_over = s.buy_slaves(int(_room) + 5)
+check("buying people obeys the same household cap as hiring them",
+      _ok_over == 0 and s.slaves == 0,
+      "room %.2f, bought %s" % (_room, _ok_over))
+check("...and buying within it still works",
+      s.buy_slaves(max(1, int(_room) - 1)) > 0, "room %.2f" % _room)
+
+# 3. Ten people bought showed as "ON YOUR STAFF: nobody" and "EMPLOY: 0
+#    people" while the prompt said art 7, and IN TRAINING printed the trade as
+#    the literal string "None" in fractions.
+_hh, _ = _play(["buy slaves 5", "labour", "quit"], civ="rome_100ad",
+               extra=["--kit", "equestrian"])
+check("people you own appear in your household, not as nobody",
+      "people you own" in _hh, [l for l in _hh.splitlines() if "STAFF" in l][:2])
+check("a training row without a trade is not printed as None",
+      "None x" not in _hh and "None" not in _hh.split("IN TRAINING")[-1][:200],
+      _hh.split("IN TRAINING")[-1][:120])
+
+# 4. `step abc` silently advanced a year while step 0 and step -5 were refused.
+_sa, _ = _play(["step abc", "state", "quit"], civ="rome_100ad")
+check("a step that is not a number is refused, not silently taken as one",
+      "not a number" in _sa and "YEAR 100" in _sa,
+      [l for l in _sa.splitlines() if "YEAR" in l][:2])
 
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)

@@ -300,3 +300,107 @@ Endgame road now legible through the "cannot begin yet" reasons:
 blast_furnace is 270,274 den and "becomes the financial engine of the middle
 game" at 22,000/yr, 35% failure risk, 5-year floor that money cannot shorten.
 
+### 145-169: theory done, the Antonine plague, and staff-mix as a real decision
+
+Theory line finished fast once the school existed: calculus → newtonian_mechanics
+(1,617 den) → em_theory (1,806) → **quantum_solidstate_theory** (4,128 den, 1,800
+founder hours, done 151 AD). The flavour text is right that this is the biggest
+single time saving — band theory cost me four years and less money than one
+merchant venture. The expensive half of a transistor is entirely the *materials
+and instruments*, exactly as the opening briefing said. That is a genuinely good
+lesson and the game lands it hard.
+
+**Staff mix became a real decision.** The school kept granting scholars (+2/yr)
+and they filled up the "supervise, house and teach" cap, squeezing artisans from
+11 down to 3. Concerns started closing themselves for want of a supervisor
+(`nobody left to keep an eye on 1 concern, so water_power_scale closed`) and net
+income fell from +13,800 to +2,400. I fired 8 scholars and hired 8 artisans and
+net went back to +11,192 immediately. So the school's gift is not free: it
+competes for the same capacity as the people who actually run things. I did not
+see that coming and nothing warned me.
+
+**The plague, and hedging that visibly worked.** 168 AD: "Antonine plague: staff
+-20%, 19,630 gone with the trade that stopped (would have been -28%: filtered
+water; fields that do not fail together)". `md2_sand_filtration` cost 292 den and
+`crop_rotation` was already my best earner, and the game told me exactly which
+two things bought the 8 points. That is the best feedback loop in the whole
+simulation — the hazard, the mitigation, and the counterfactual, in one line.
+
+Also: **the patron keeps dying.** "your patron dies; his heir must be courted
+afresh" fired in 157, 164 and 167. I built patron_senatorial (12,000 den) in 163
+and it happened again anyway. I could not find any command to court the heir, or
+any indication of what I lost when it happened. This is the one recurring event
+I never understood or found a response to.
+
+By 169: 64 techs, 142,093 den, +20,540/yr, corpus written (which "changes the
+society: literacy_elite, w_magic_fear").
+
+### 169-197: money stops mattering, and the four instruments finally arrive
+
+Around 169 I started buying every project with net revenue over ~1,000/yr in one
+batch (mirror_amalgam, distillation, telescope, pendulum clock, sewing machine,
+hot bulb engine, hydraulic accumulator, activated carbon, phosphorus...). Eleven
+projects, ~22,000 den, and revenue went 87,270/yr. From there the game changes
+character completely: by 197 I had **1,003,086 den and +120,072/yr**, and money
+was never a constraint again.
+
+blast_furnace was the one genuinely painful purchase: 270,274 den, 35% failure
+risk. It failed once and burned **126,180 denarii** in a single event. It then
+succeeded in 183 and immediately doubled my income. The 35%-risk-on-a-quarter-
+million-denarii design does make the "biggest single technology gap you face"
+line land, but it is a brutal variance spike and I would have been ruined by it
+in year 130.
+
+Then the instruments came in a rush, and it is very satisfying that they are
+exactly the four the opening briefing named:
+- **temperature**: thermometer (1,739 den) → thermodynamics_theory
+- **tolerance**: precision_three_plate → micrometer_gauges → prc_slide_rest →
+  prc_dividing_head → prc_milling_machine
+- **vacuum**: barometer → cap_vac_1torr → gp_glass_metal_seal
+- **purity**: lab_apparatus, sulfuric_retort, hydrochloric_acid, nitric_acid,
+  mercury_supply, mat_copper
+
+Two new failure modes appeared that I had not seen before:
+- "**SHORT OF SALTPETRE: work running at 5% of plan**" — a material shortage
+  throttling everything to 5%. I had built nitre_beds decades earlier. Nothing
+  told me how much saltpetre I needed or how to get more; `available find nitre`
+  returned nothing. I never resolved this and just worked around it.
+- "banditry or a frontier war disrupts supply" — fires occasionally, effect
+  unstated.
+
+By 197: 94 techs of my own, 235 total, 403 years still to run.
+
+### 197-239: automation, eminence, and the crisis
+
+From about 200 AD the game became a loop I could run mechanically: dump
+`available all`, start everything marked RESTS ALL/much/some or netting over
+1,000 den/yr, `step 4-6`, repeat. Money passed 7.5 million and +440,000/yr.
+That is both the game working (compounding is the point) and the game's weakest
+stretch — for ~40 years there was no decision, only throughput.
+
+**Eminence is the one thing that stayed interesting.** It climbed 4 → 27 as
+reputation and wealth grew, and my automated batch cheerfully started
+`patron_senatorial` and then **Imperial patronage**, which is precisely what the
+`help eminence` text warns about ("multiplied by standing close to the throne").
+Eminence crossed the danger line of 26 and I started rolling 1%/yr for ruin,
+with the warning firing every year:
+
+    YOU ARE BECOMING CONSPICUOUS: eminence 27 against a danger line of 26.
+    This is the one thing no patron and no bribe protects you from.
+
+The stated cure worked exactly as advertised: corpus_dispersed (13,866 den,
+8 years) then **academy_network** (56,810 den, 2,500 hours, 10-year floor,
+prereqs corpus_dispersed + endowment_land). The moment academy_network completed,
+"settles near" dropped from 29.8 to 21.8 and the chance of ruin went back to 0%.
+The whole eminence subsystem is well designed: the hazard is legible, the cure is
+expensive and slow, nothing else works, and it punishes exactly the play pattern
+(get rich, get famous, get close to power) that the economy rewards.
+
+Meanwhile: Antonine plague survived at -20%/yr, currency debasement reached "94%
+less than it was" but I "feel less of it (wealth held as land, not as coin; a
+standard the coin can be held to)" — endowment_land and fin_bimetallism both
+paying off decades after I bought them. Third century crisis landed in 235:
+"trade and output fall to 84% of normal", plus a values shift toward religious
+rigidity. Being told *which* of my buildings absorbed which shock, every time, is
+the thing this simulation does better than any tech-tree game I have played.
+

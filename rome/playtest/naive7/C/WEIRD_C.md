@@ -500,3 +500,264 @@ few dozen cheap ones to be accepted and then a refusal on money or on staff ("ST
 NEEDED" appears on the `why` screens and I employ nobody). What I actually want to know is
 whether there is any cap on concurrent projects, because there is no mention of one
 anywhere in `help`.
+
+### 20. Twenty projects at once: 4,577 denarii buys the entire third century
+
+`start` on all 209 ids: **20 accepted, 189 refused**, all with the same refusal, and it is
+a genuinely excellent one:
+
+    REFUSED: you already owe 4,314 denarii on work in hand; this would take it to 4,914,
+    and between cash and credit you can raise 4,866. Finish or stop something first.
+
+Concrete, numeric, tells me the fix. Best message in the game so far. And there is no
+concurrency cap at all beyond money — 20 simultaneous projects, no complaint.
+
+Then `step 5`, and **all twenty finished in the first year.** 2,000 founder-hours cleared
+30h, 40h, 450h (`arithmetic_positional`, listed as CALENDAR FLOOR **1 year**) and a
+tethered observation balloon, in the same twelve months. Three of them failed and retried
+and *still* finished by 293.
+
+The scoreboard consequence: **reputation 0.20 -> 30.6 in five years.** Compare my earlier
+manumission grind, which cost me my entire fortune to move reputation from 1.4 to 6.2.
+Completing twenty of the cheapest possible items is worth five times as much fame as
+freeing eighteen people. So the actual fame engine in this game is "finish lots of small
+things at once", and it is available to anyone with ~4,500 denarii and one turn.
+
+A `scandal` of 1.4 appeared at the same time, from nowhere. Nothing said why. There is a
+`bribe` command for scandal but no screen that explains what caused it.
+
+Reporting problems in that one step:
+- Every completion is announced **twice**, in two different formats:
+  `COMPLETED 292: Composting` and `EVENT 292: completed: Composting. You know how...`.
+  Forty lines for twenty events, in two interleaved orderings.
+- `state` now has **two headings that both say RUNNING**:
+  `RUNNING: nothing` and, two lines later, `RUNNING AS CONCERNS: 0`.
+
+### 21. `start` is blocked by debt; `open` is not
+
+At -1,167 denarii, `available` showed me **0 startable things** — the debt gate is
+absolute.
+
+Then I opened **fourteen** concerns in the same breath, paying to open each one, and drove
+myself from -1,167 to **-1,649**. Not one word of objection. So being overdrawn stops me
+from beginning a five-denarius eraser but does not stop me from taking on fourteen new
+businesses on credit I do not have.
+
+While doing it I hit the one real constraint, and hit it in the stupidest possible order:
+
+    REFUSED: nobody free to keep an eye on it: it needs 0.0 scholars and 0.2 craftsmen to
+    supervise, and you have 1.0 and 0.1 not already watching something else.
+
+I had opened the ventures **alphabetically**. By the time I reached `arithmetic_positional`
+— the one worth 300 den/yr, the most valuable thing I own — my last fraction of a craftsman
+was already committed to a **tethered observation balloon that earns 0 and costs 20 a
+year**. The game let me spend my entire supervisory capacity on three things that earn
+nothing at all (balloon, lightning conductor, truss) and then told me I was too busy to run
+the profitable one. `ventures` lists EARNS/YR right there in the table and never once
+suggests that opening order matters or that supervision is scarce.
+
+Also the same number renders differently on adjacent screens: the refusal says the venture
+"needs 0.0 scholars and 0.2 craftsmen"; the RUNNING table for those same ventures prints
+"0 sch 0 cr", and one of them "0 sch 1 cr". Rounded to death in one place, not the other.
+
+**Expectation next:** revenue is now 837.6/yr against 250.5 upkeep, and I'm 1,649 in debt.
+I expect the concerns to dig me out. But I also expect another INSOLVENCY, and this time I
+actually own things — so I want to see whether bankruptcy takes my ventures away, or
+whether it still just wipes the debt and says "reputation -12" at a reputation of 31.
+
+### 22. Parser robustness (mostly excellent, one hole)
+
+Good: `why nonexistent_thing` -> "you have never heard of any such thing ... Did you mean:
+met_investment_casting, sea_lead_sheathing". `why`/`start`/`stop`/`bounty`/`hire` with no
+argument all give a tailored usage line. `fire labourer 5` -> "you employ no labourers".
+`foo bar baz` -> "no command called 'foo'". A pasted `{"cmd":"state"}` works, as documented.
+`path` under fog gives a lovely in-fiction refusal ("nobody can lay out a road to somewhere
+they have not been").
+
+The hole: **`step 0` and `step -5` are correctly refused ("years must be >= 1"), but
+`step abc` silently advances one year** with no message at all. Garbage is treated more
+permissively than a wrong number, and it costs you a year of game time you didn't ask for.
+
+### 23. `bribe` sells a hidden stat that no screen will show you
+
+`bribe 100` with **scandal already at 0**:
+
+    bribed: scandal 0.00 -> 0.00 for 100 denarii; advocacy and piety bought as well:
+    protection 0.16 -> 0.23
+
+I ran it repeatedly. 700 denarii took protection from 0.07 to 0.37, at which point:
+"you have no scandal to answer and you are already as protected as money can make you
+here, so this would buy nothing."
+
+So `bribe` is really two things: scandal removal, and a cheap purchase of a permanent
+defensive stat. `help commands` describes it only as "spend money to reduce a scandal", and
+`policy` as "pay your way out of a scandal before it kills you". **`protection` appears on
+no screen anywhere** — not `state`, not `state full:true`, not `risk`, not `money`. The
+only way to discover it exists, or to read its current value, is to bribe and watch the
+message. For 700 denarii — a seventh of my net worth at the time, and pocket change later —
+this is the cheapest thing in the game and it is completely undiscoverable.
+
+### 24. The one refusal that doesn't tell you the price
+
+Everything in this game refuses with numbers. `quote mine coal 500` is a model of it:
+"to sink it 4,500; every year it stands 750; years before it produces 3; you have 4,760;
+you can afford about 528.9". `quote mine gold 5000` cheerfully quotes 800,000,000 denarii
+to sink and 210,000,000 a year, and tells me I can afford 0.03 tonnes. Great.
+
+But:
+
+    buy forest 100      -> REFUSED: cannot afford 100 ha of coppice woodland (you have 4760 denarii)
+    buy forest 100000   -> REFUSED: cannot afford 100000 ha of coppice woodland (you have 4760 denarii)
+
+Identical message for a thousandfold difference in order. **No price is ever named, and
+there is no `quote forest`** — `help money` says "ASK THE PRICE FIRST with quote mine coal
+500" for mines and says nothing of the sort for forest. So coppice is the one purchase in
+the game whose price you cannot discover except by binary-searching refusals.
+
+**Expectation for the endgame:** back to being The Publicist. Completing 20 cheap things
+took reputation from 0.2 to 30.6, so I'm going to repeat that as hard as my money allows —
+start everything I can afford, step, repeat — and drive reputation as high as it will go.
+The game has warned me from the first help screen that eminence past **26** rolls every
+year for my ruin, and that *nothing lowers it*. I intend to walk straight into that. I
+expect either (a) to be ruined, which would be the game working exactly as advertised, or
+(b) to find that eminence, which after 218 years of play is still **0.89**, is on a scale
+that a normal game never reaches, in which case the loudest warning in the game is
+decoration.
+
+### 25. Chasing fame: 8 rounds of "start everything, step 6 years" (318 -> 366)
+
+Expectation was (a) ruin by eminence or (b) eminence turns out to be unreachable. It was
+firmly (b).
+
+    year 324:  rep 61.4   eminence 2.9    money  -2,153
+    year 330:  rep 62.9   eminence 4.9    money -12,040
+    year 336:  rep 53.1   eminence 5.3    money -12,736
+    year 366:  rep 43.6   eminence 3.1    money  -7,215
+
+**Peak reputation 63, peak eminence 5.3, danger line 26.** I built 79 technologies, held
+14 businesses and was the most famous man in the empire, and I got to a fifth of the line
+that `help eminence` calls "the one hazard no patron, no bribe and no reputation protects
+you from". Every `state` screen for 500 years carried the words "0% chance of ruin this
+year". The most dramatic warning in the game — with its own help topic and its own Sejanus
+anecdote — never once became relevant to a player actively trying to trigger it. Either
+the thresholds want re-scaling, or the help topic is advertising a mechanic that only
+exists for a strategy nobody plays.
+
+Meanwhile the actual failure state is money, and I hit it properly:
+
+    EVENT 339: CREDIT EXHAUSTED: 12 projects halted, unfinished. Nobody will fund new work
+               here for some years
+    EVENT 339: creditors took what they could: 4 concerns closed and sold up:
+               air_observation_balloon_tethered, civ_truss_triangulated,
+               civ_lightning_conductor, hom_eraser_breadcrumb. You keep the knowledge;
+               reopening means paying for the premises again
+
+The creditors seized **exactly the four concerns that earned nothing** and left the twelve
+profitable ones alone. That is the single best-judged thing that happened in the whole run:
+it's correct, it's specific, it names them, it explains what I keep. More of that.
+
+But note the debt ceiling is not a ceiling. Earlier I was force-settled at 1,036 denarii of
+arrears. This time I reached **-12,736** with no insolvency at all, against a stated credit
+limit that was never above ~4,900. The gate appears to be "is your net income negative",
+not "have you exceeded your credit", so a player with income can borrow several times their
+limit indefinitely while a player without income is wiped at a fifth of it.
+
+### 26. Knowledge is lost properly — but the year is wrong
+
+Running out the clock, 366 -> 600:
+
+    EVENT 386: Adrianople and the Gothic settlement: a site is sacked
+    EVENT 386: KNOWLEDGE LOST: 9 technologies forgotten (the corpus was never printed and dispersed)
+    LOST 387: Town planning and street layout
+    LOST 387: Census and population enumeration
+    LOST 387: Marine insurance
+    ... (9 of them)
+
+This is excellent — it names every technology, it tells you *why* ("the corpus was never
+printed and dispersed"), and one of them helpfully adds "(restore brings it back for a
+fraction of the cost)". I completed Marine insurance in 367 and lost it in 387; it is the
+only thing I built in the last two centuries and the Goths took it.
+
+But **the two halves of the same event disagree about the year**: the sack and the
+KNOWLEDGE LOST summary are stamped 386, the itemised LOST lines are stamped 387. Same for
+398/399, and 408/409. Consistently off by one.
+
+This is also where my headline number silently changed. `state` said **79 built** at 366
+and the end screen said **59 built**. Twenty of my technologies were forgotten across those
+centuries. That is the game working exactly as designed and it is the most interesting
+thing that happened all run — the whole point of the `risk` screen's "hedged by nothing
+yet" nag, which I ignored for five hundred years, paid off precisely as advertised.
+
+Also: `EVENT 579: Recurrent plague: 308 gone with the trade that stopped`. 308 what?
+Denarii, presumably, but the line never says, and "gone with the trade that stopped" is the
+only place in the game where a quantity is printed with no unit.
+
+### 27. The ending
+
+    *** THE RUN HAS ENDED: the horizon at 600 AD is reached. You built 59 things of your
+    own and did not reach point-contact transistor. ***
+
+Clean, correct, and the lockout afterwards is well done: `step`, `start` and `work` all
+refuse with a specific reason and the closing line invites you to keep looking around.
+
+One blemish: after the end, `available` still reports **"AVAILABLE: 175 startable now"**
+and lists them with an AFFORD column, while `start` refuses everything. "Startable now"
+should not survive the end of time.
+
+---
+
+## Summary of what I found
+
+Things that only work if you behave as expected:
+
+1. **The ledger's `Net/yr` omits interest on arrears.** It read "+9.5" while capital fell
+   105, then 117, then more, per year. The rate is printed on the same screen.
+2. **`buy slaves` ignores the supervise/house/teach cap that `hire` enforces.** Told I
+   could take 6 more people, I took 7 by typing a different verb.
+3. **Bought people vanish from the two screens that list your people.** 10 bought; status
+   bar `art 7`; `labour` "nobody"; `state` "EMPLOY: 0 people".
+4. **People who leave still finish their apprenticeships the next year** — 18 dispersed in
+   156, four events in 157 announced them completing training, in fractions (6.2, 3.4, 2.7,
+   2.3) that sum to 14.6 rather than 18.
+5. **The `IN TRAINING` list prints the trade as the literal string `None`.**
+6. **Insolvency is a repeatable free debt-wipe** that settles you at the same ~77 denarii
+   every time and announces "reputation -12" against a reputation already floored at 0.10.
+   Five times, no escalation.
+7. **The debt ceiling only binds if your income is negative** — I reached -12,736 against a
+   ~4,900 limit while earning, and was force-settled at -1,036 while not.
+8. **"A site is sacked" took 62% of my money without printing a number**, while `risk` said
+   "technologies at risk: 0" and I owned no sites. The plague family handles this correctly
+   ("you had nothing it could take"); the sacking family does not.
+9. **`bribe` sells a hidden stat, `protection`, with no scandal present and no UI anywhere.**
+   700 denarii took it 0.07 -> 0.37. It is on no screen, in no help topic.
+10. **`load` inside a running process suppresses hazard announcements** that the same save
+    file produces in a fresh process. Numbers identical, narration silently thinner.
+11. **`step abc` advances a year silently** while `step 0` and `step -5` are properly refused.
+12. **Knowledge-loss events are stamped one year later than the sack that caused them.**
+13. **Currency debasement of 99% moves nothing but my own revenue.** Wages and every
+    project cost are byte-identical in 292 to what they were in 100.
+14. **Eminence, the game's loudest warning, is unreachable.** Peak 5.3 against a stated
+    danger line of 26, while playing to maximise it.
+15. Smaller: `help economy` duplicates `help money`; two headings both called RUNNING on
+    `state`; completions announced twice in two formats; "1-0" pagination when the list is
+    empty; `buy forest` is the only purchase whose price cannot be discovered; `available`
+    reports 0 startable when overdrawn but `open` will happily deepen the overdraft;
+    `available` still says "175 startable now" after the run has ended; the resume command
+    the game prints uses a relative path that doesn't work from the directory it saves into.
+
+Things that are genuinely good and that I want to say so about:
+- The refusal messages. "you already owe 4,314 denarii on work in hand; this would take it
+  to 4,914, and between cash and credit you can raise 4,866. Finish or stop something
+  first." Almost every refusal in this game tells you the number and the fix.
+- "Antonine plague: you had nothing it could take."
+- Creditors seizing precisely the four loss-making concerns and naming them.
+- The `risk` screen's historical writing, which is better than it needs to be.
+- The wealth-scaled cost of living, which quietly killed my day-labour strategy without a
+  lecture.
+- Save/reload is deterministic in every number I could measure. I checked three times.
+
+The strategy the game most rewarded, which I found by accident and which is nothing like
+what it advises: **start twenty of the cheapest possible technologies at once, finish them
+all in a single year with your 2,000 founder-hours, and go from reputation 0.2 to 30.6.**
+Founder-hours are not scarce, calendar floors do not appear to bind, and there is no cap on
+concurrent projects other than money.

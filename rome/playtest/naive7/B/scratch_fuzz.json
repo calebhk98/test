@@ -634,7 +634,7 @@
    747480833,
    3545787415,
    3656373148,
-   434
+   458
   ],
   null
  ],
@@ -656,7 +656,7 @@
   "w_religious_rigidity": 0.2
  },
  "active": {},
- "artisans": 0.4850183333634495,
+ "artisans": 0.9608293300135353,
  "atrocity": 0,
  "binding": null,
  "bondage_debt": 0.0,
@@ -666,7 +666,7 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": 14809.886732443398,
+ "capital": 9916.9036079185,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
@@ -841,11 +841,11 @@
   "units_standards": 115
  },
  "economy": 1.03,
- "eminence": 0.5294899312452874,
+ "eminence": 0.497010524196112,
  "employees": {
-  "artisan": 0.4850183333634495
+  "artisan": 0.9608293300135353
  },
- "familiarity": 0.8173164759472653,
+ "familiarity": 0.8279551361769495,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
@@ -1007,15 +1007,23 @@
  "interest_paid": null,
  "last_patron_death": null,
  "last_settlement": -999,
- "life_left": 999999932.0,
- "living_cost_paid": 52345.98084524155,
+ "life_left": 999999929.0,
+ "living_cost_paid": 54704.33678620901,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
  "mine_cost_paid": 0.0,
- "mine_pending": {},
+ "mine_pending": {
+  "coal": 500.0
+ },
  "mine_ready": {},
- "mine_tranches": [],
+ "mine_tranches": [
+  [
+   "coal",
+   500.0,
+   171.0
+  ]
+ ],
  "money_real": 1.0,
  "mothballed": {
   "__set__": []
@@ -1030,6 +1038,7 @@
    "tex_indigo",
    "tex_mordanting",
    "tr_hopper_wagon",
+   "tx2_retting",
    "units_standards"
   ]
  },
@@ -1044,11 +1053,11 @@
   "auto_mine": false,
   "auto_mothball": true,
   "auto_open": true,
-  "auto_shed": false,
+  "auto_shed": true,
   "auto_train": false
  },
- "protection": 0.139596201623236,
- "reputation": 5.095012422041359,
+ "protection": 0.1389402523175672,
+ "reputation": 4.924465602567475,
  "revealed": {
   "__set__": [
    "ag2_biological_control",
@@ -1090,7 +1099,7 @@
    "world_map"
   ]
  },
- "scandal": 0.01765107141479256,
+ "scandal": 0.012867631061383777,
  "scholars": 0.0,
  "slaves": 0,
  "spend_last_year": 0.0,
@@ -1106,7 +1115,7 @@
  },
  "training": [],
  "wage_hours_this_year": 0.0,
- "wages_earned": 795.5147803125,
+ "wages_earned": 795.9954717478641,
  "wages_paid": 0.0,
- "year": 168
+ "year": 171
 }

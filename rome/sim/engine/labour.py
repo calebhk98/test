@@ -511,8 +511,7 @@ class LabourMixin:
         if fee > self.capital + self.credit_limit() * 0.5:
             return False, ("hiring %g %ss costs %.0f denarii in advance and you have %.0f"
                            % (n, trade, fee, self.capital))
-        room = (self.staff_capacity()[1] + self.supervision_room()
-                - self.headcount())
+        room = self.household_room()
         if n > room:
             # TRUNCATED, NOT ROUNDED, and it says what a whole number of people
             # would be. A weird-play tester was refused `hire artisan 7` and
@@ -804,6 +803,17 @@ class LabourMixin:
         integral = (((already + n) ** e) - (already ** e)) / (e * (depth ** 0.85))
         return 300.0 * (n + integral) * self.price_index
 
+    def household_room(self):
+        """How many more people this household can feed, house and oversee.
+
+        One number, used by `hire` and by `buy` alike. They used different ones
+        - which is to say `buy` used none - and a weird-play tester was told to
+        their face they could take six more people and then took seven with the
+        other verb.
+        """
+        return (self.staff_capacity()[1] + self.supervision_room()
+                - self.headcount())
+
     def buy_slaves(self, n_people):
         """The option the model refuses to hide, and refuses to make costless.
 
@@ -833,6 +843,20 @@ class LabourMixin:
         arrive untrained and become useful over a training lag.
         """
         if n_people <= 0:
+            return 0
+        # THE SAME ROOM `hire` ENFORCES. A weird-play tester was told to their
+        # face that they could supervise, house and teach six more people, and
+        # then took seven with a different verb - "buy slaves bypasses the cap
+        # that hire enforces". The constraint is about your household's
+        # capacity to feed, house and oversee people, and a person you own
+        # needs all three exactly as much as a person you pay. More so.
+        room = self.household_room()
+        if n_people > room:
+            self._last_buy_refusal = (
+                "you can supervise, house and teach %.2f more people, not %g - "
+                "and a person you own needs feeding and housing exactly as much "
+                "as one you pay. %s"
+                % (max(0.0, room), n_people, self._staff_advice("artisans")))
             return 0
         # A town's slave market has a depth. Buying beyond it bids the price up.
         price = self.slave_quote(n_people)
