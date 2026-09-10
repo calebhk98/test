@@ -65,6 +65,10 @@ def _agent_state(s, nodes, cmd=None):
                      "hours_offered_this_year": st.get("hours_offered_this_year", 0.0),
                      "hours_effective_this_year": st.get("hours_effective_this_year", 0.0),
                      "underfunded_this_year": st.get("underfunded_this_year", False),
+                     # Only present when it is underfunded, and it says why: a
+                     # playtester in deep arrears saw hours offered and none
+                     # effective, with nothing anywhere explaining the gap.
+                     "why_underfunded": st.get("why_underfunded"),
                      "bountied": k in s.bountied}
     end_reason = _agent_end_reason(s)
     full = bool((cmd or {}).get("full"))
@@ -771,9 +775,16 @@ def render_state(out):
         total = st.get("founder_hours_total") or 0
         left = st.get("founder_hours_left") or 0
         pct = 100.0 * (total - left) / total if total else 100.0
+        # Clamped. Refunded hours could once exceed hours spent, and a
+        # playtester read the result off this very line: "-67% of your hours
+        # spent". The arithmetic is fixed in core.py; the display refuses to
+        # print an impossible figure either way.
+        pct = max(0.0, min(100.0, pct))
         L.append("  %-28s %3.0f%% of your hours spent, %s den still owed - waiting on %s"
                  % ((st.get("name") or k)[:28], pct, _fmt_num(st.get("still_to_pay")),
                     st.get("waiting_on") or "-"))
+        if st.get("why_underfunded"):
+            L.append("      %s" % st["why_underfunded"])
 
     employees = out.get("employees") or {}
     L.append("")

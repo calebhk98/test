@@ -1,0 +1,12 @@
+{
+ "_civ": "england_1300",
+ "_civ_live": {
+  "literacy_elite": 0.5,
+  "literacy_general": 0.06,
+  "state_capacity": 0.6
+ },
+ "_fog": true,
+ "_said_debasement": null,
+ "_version": 1,
+ "_weights": {
+  "_note": "w_religious_rigidity 0.8 and w_magic_fear 0.7: this is the environment that produced heresy trials and, later, witch trials. Far more dangerous for a natural philosopher than Trajanic Rome, w

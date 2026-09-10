@@ -703,6 +703,18 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 st["stalled_years"] = 0
                 per = min(remaining, max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0))) * self.throttle
                 remaining -= per
+                # WHAT WAS ACTUALLY TAKEN OFF, which is not the same as what was
+                # offered: `per` is allowed to exceed ph_left (the max() above
+                # offers a full year's worth even to a project with an hour to
+                # run), and the subtraction clamps at zero. The refunds below
+                # were computed from `per` regardless, so a project with 10
+                # hours left could be offered 500, have its 10 taken, and be
+                # handed 200 back - ending the year with twenty times the hours
+                # it began with. A playtester found the far end of that: a
+                # progress bar reading "-67% of your hours spent", with
+                # founder_hours_left larger than founder_hours_total. You cannot
+                # be refunded work you never did.
+                spent_hours = min(per, st["ph_left"])
                 st["ph_left"] = max(0.0, st["ph_left"] - per)
                 self.director_hours_spent_founder += per if self.founder_alive else 0
                 # Hours OFFERED this year vs hours that actually did anything.
@@ -721,10 +733,6 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # no bill to pay; give it one now rather than crash on it.
                 if st.get("cost_left") is None:
                     st["cost_left"] = max(0.0, self.project_cost(k) - st["spent"])
-                # material_cost_factor: how far THIS civilization is from
-                # wherever geography.json says this thing actually comes
-                # from. 1.0 for every node that is not a located material.
-                money = min(st["cost_left"], self.project_cost(k) * frac)
                 # LABOUR BY TRADE. The old model pooled every trade into one
                 # bucket of hired hours, so 450 hours of engineer and 450 hours
                 # of labourer were the same resource. They are not, and the wage
@@ -742,11 +750,10 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                         worst = min(worst, max(0.0, have) / need)
                 if worst < 1.0:
                     frac *= worst
-                    money *= worst
                     hh *= worst
-                    give_back = per * 0.4 * (1.0 - worst)
-                    st["ph_left"] += give_back
-                    refunded += give_back
+                    give_back = min(spent_hours - refunded, per * 0.4 * (1.0 - worst))
+                    st["ph_left"] += max(0.0, give_back)
+                    refunded += max(0.0, give_back)
                     # Remember it. A tester sat on 696,350 denarii watching three
                     # projects report waiting_on "money" with 2.3, 84 and 158
                     # denarii left to pay, and reasonably concluded the spend cap
@@ -765,8 +772,19 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                                                 + want * frac)
                 if hh > hired_left:
                     frac *= hired_left / max(hh, 1e-9)
-                    money *= hired_left / max(hh, 1e-9)
                     hh = hired_left
+                # THE INSTALMENT IS WHAT A CONSTRAINED YEAR CAN DO; THE BILL IS
+                # WHAT IS LEFT. This used to work the payment out first and then
+                # multiply it by each shortage in turn, so once the remaining
+                # balance was smaller than a year's instalment you paid a
+                # FRACTION OF WHAT WAS LEFT every year, for ever: a geometric
+                # decay that approaches zero and never reaches it, while
+                # completion needs the bill down to half a denarius. A
+                # playtester watched one project sit at "71% done" for
+                # twenty-five years with cash in hand and no idea why. Working
+                # it out from the already-scaled `frac` means a shortage sets
+                # how FAST you can pay and never stops the last payment landing.
+                money = min(st["cost_left"], self.project_cost(k) * frac)
                 hired_left -= hh
                 # You may spend into debt, up to what someone will lend you, and
                 # no further. Beyond that the work simply does not get paid for
@@ -809,12 +827,29 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                     # this should too.
                     funded_frac = 0.0 if money <= 0 else max(0.0, min(1.0, purse / money))
                     money = max(0.0, purse)
-                    give_back = per * (1.0 - funded_frac)
-                    st["ph_left"] += give_back
-                    refunded += give_back
+                    # Capped at what was actually taken off, and at what has not
+                    # already been handed back by the trade-shortage refund
+                    # above. See spent_hours: you cannot be refunded work you
+                    # never did, and you cannot be refunded the same hour twice.
+                    give_back = min(spent_hours - refunded, per * (1.0 - funded_frac))
+                    st["ph_left"] += max(0.0, give_back)
+                    refunded += max(0.0, give_back)
                     st["underfunded_this_year"] = True
+                    # WHY, not just that. A playtester ran deep into debt and
+                    # watched every project report hours "offered" and none
+                    # "effective", with nothing in help, why, money or risk
+                    # explaining it. Arrears are the reason: the purse a project
+                    # may draw on is what you hold plus part of your credit,
+                    # less what your fixed costs need, and in arrears that is
+                    # nothing at all.
+                    st["why_underfunded"] = (
+                        "in arrears: after fixed costs there is nothing left to "
+                        "draw on, so the hours offered this year did almost "
+                        "nothing" if self.capital < 0 else
+                        "this year's instalment is more than the purse will bear")
                 else:
                     st.pop("underfunded_this_year", None)
+                    st.pop("why_underfunded", None)
                 self.capital -= money
                 self.total_spend += money
                 st["spent"] += money

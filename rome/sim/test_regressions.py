@@ -1143,6 +1143,57 @@ check("a fractional number of years is refused, not silently rounded",
       _fy[0].get("ok") is False and _fy[1].get("ok") is True,
       [r.get("ok") or r.get("error") for r in _fy])
 
+# --- the Mexica play tester: a project's own accounting -----------------------
+# Their three findings, each with the condition that produced it. All three need
+# the SAME year to be short of a trade AND short of money, which is why none of
+# them showed up in an ordinary run.
+
+
+def _starved(cost_left, supply=0.02, arrears=0.9, capital=20000.0):
+    """One project that cannot finish, in a year that is short of both the
+    trade it needs and the money to pay for it."""
+    s = sim(capital=capital)
+    s.start_project("identity_cover")
+    s.active["identity_cover"]["cost_left"] = cost_left
+    _real = s.market_supply
+    s.market_supply = lambda t, _r=_real: _r(t) * supply
+    s.capital = -s.credit_limit() * arrears      # in arrears, inside the limit
+    return s
+
+
+# 1. Hours could be refunded twice - once for the trade shortage and again for
+#    the money - and both refunds were worked out from the hours OFFERED rather
+#    than the hours actually taken off. The tester's project ended with 581.5
+#    hours left against a 450-hour total, which the display read out as "-67%
+#    of your hours spent". Here: 612.5 against 500 before the fix.
+s = _starved(9e5)
+s.step()
+_st = s.active.get("identity_cover") or {}
+check("a project can never be given back more hours than it has spent",
+      _st.get("ph_left", 0) <= NODES["identity_cover"]["ph"] + 1e-6,
+      "%.1f left of a %.1f total" % (_st.get("ph_left", -1),
+                                     NODES["identity_cover"]["ph"]))
+check("an underfunded project says why it is underfunded",
+      _st.get("underfunded_this_year") and "arrears" in (_st.get("why_underfunded") or ""),
+      _st.get("why_underfunded"))
+
+# 2. A shortage used to scale the PAYMENT rather than the instalment, so once
+#    the balance was smaller than a year's instalment you paid a fraction of
+#    what was left, every year, approaching zero without arriving - while
+#    completion needs the bill under half a denarius. The tester watched one sit
+#    at "71% done" for twenty-five years. Sixty years and 15.9 denarii still
+#    owed, before the fix.
+s = _starved(60.0, supply=0.001, arrears=0.0, capital=500000.0)
+s.active["identity_cover"]["ph_left"] = 0.0
+for _i in range(60):
+    s.step()
+    if "identity_cover" not in s.active:
+        break
+check("a small remaining bill is actually paid off, not approached for ever",
+      "identity_cover" not in s.active,
+      "%.4f den still owed after 60 years"
+      % (s.active.get("identity_cover", {}).get("cost_left", 0.0)))
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
