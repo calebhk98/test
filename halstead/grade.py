@@ -470,6 +470,13 @@ class Tee:
 FAIL_MARKERS = (
     r"\bFAIL\b",
     r":\s*(?:UNDER|OVER)\b",
+    # The same verdict without a colon in front of it. `prose_grade.py` ends
+    # the book-length line with a bare OVER or UNDER, so a book one word past
+    # its mean ceiling matched neither list: the line stopped saying "ok",
+    # nothing said "FAIL", and the scorecard quietly went from 59 measures to
+    # 58 and reported all 58 passing. A measure that can leave the count is
+    # worse than a measure that fails.
+    r"\s(?:UNDER|OVER)\s*$",
     r"\bCUT \d+%",
     # The band table's verdict, not its notes. Section 2 prints two things: a
     # band average against the band floor, which is the judgement, and beneath

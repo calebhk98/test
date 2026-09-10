@@ -238,7 +238,7 @@ Four she has sat and taken herself: Python, Excel, Spanish, and the one on brake
 
 The first thing is that almost everyone fails.
 
-So she makes it easier. The generator carries a difficulty figure, she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again; by November it is a version she'd have handed a first-year at Halstead, but the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
+So she makes it easier. The generator carries a difficulty figure, she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again; by November it is a version she'd have handed the thirteens at Halstead, but the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
 
 The second thing is the interviews.
 

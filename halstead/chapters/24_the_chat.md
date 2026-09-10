@@ -148,8 +148,6 @@ kavi: still worth asking
 
 By dinner the group has moved on to something else entirely, and the November date stays exactly as unsettled as it was that morning.
 
-In October the question comes round again, in an email from Iyad to most of the year, everybody's name typed at the head of their own line with the thing under it he wants back from them: Ruth's Providence weekend, whether Theo's leave is the week he said it was, whether the Army has told Sam yet, which stretch Priya expects to have a signal in. Under Chloe's name he has put the weekend, and after the weekend, in the typeface used for everything else in it, whether Aurel is coming down with her. Chloe answers hers inside a minute, the weekend and nothing else, and leaves the rest of the line where it is. By Friday most of the lines have dates against them and there is a weekend in November with a column of names sitting under it, but Nadia's Tuesday is still up in the chat where it was, with eli's count under it.
-
 ________________
 
 Priya's messages land days behind whatever prompted them, sometimes a week, whole conversations she answers into after the group has already moved on twice, and everyone answers her back anyway; she posts whenever the signal holds long enough to send anything at all.
@@ -426,21 +424,21 @@ Reading other people's listings takes her the better part of a fortnight, and mo
 
 ________________
 
-Kavi eats dinner in the hall he always has, at his usual table, a few seats down from where he used to sit before everyone else moved on this year.
+Kavi eats dinner in the hall he always has, at the long table at the back where the research staff sit, a good way from the one he used all the way through school.
 
-sam: whats it like eating with twelve year olds now
+sam: whats it like eating with the researchers now
 
-kavi: the same. theyre not that different from us
+kavi: quiet. half of them dont say anything until theyve finished
 
 sam: we were insufferable
 
 kavi: yes
 
-eli: are you allowed to still sit at our table or do they make you sit with the actual staff
+eli: do they treat you like staff or like somebodys kid theyre being polite to
 
-kavi: nobody has told me not to
+kavi: staff. one of them still calls me by my year
 
-eli: thats not the same as allowed
+eli: thats not the same as staff
 
 kavi: its close enough
 
@@ -498,14 +496,18 @@ kavi: i know that too. i asked twice
 
 chloe: fine
 
-Chloe doesn't answer the thread again. She finds the empty box from the winter before at the back of the bathroom cabinet and reads what's printed on the side of it under the lamp: a name, a dosage, nothing else, the insert long gone with the box. She photographs the label and sends it to Nadia alone, not the group.
+Chloe doesn't answer the thread again. She finds the empty box from the winter before at the back of the bathroom cabinet and reads what's printed on the side of it under the lamp: a name, a dosage, nothing else, the insert long gone with the box. She photographs the label and sends it to Nadia alone, not the group, because Nadia spent two years of placements in a pharmacology lab a bus ride from the school, marking up safety sheets for a woman who never once checked her work twice.
 
-chloe: can you find what this actually is without going through the internal thing
+chloe: can you find what this actually is
 
-nadia: give me the batch number too
+nadia: i dont know it. i was on the sheets, not the formulations
 
-chloe: dont have it. thats gone with the box
+nadia: hold on. my login still works
 
-Nadia comes back an hour later with three names off a supplier's safety sheet, the kind meant for a pharmacist, not a customer. Chloe writes all three down on the back of her hand before she loses the message in the scroll.
+chloe: for what
+
+nadia: the machine on my old desk. i set it up in second year so i could work from my room and nobody has turned it off since
+
+Nadia comes back an hour later with three names off a supplier's safety sheet, the kind meant for a pharmacist, not a customer, read off a screen four hours away and typed out by hand. Chloe writes all three down on the back of her hand before she loses the message in the scroll.
 
 The chat moves on within minutes. Chloe's tab stays open on her desk for the rest of the evening, the group thread gone still and the one with Nadia gone still right behind it.
