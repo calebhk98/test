@@ -1369,8 +1369,14 @@ def render_money(out):
     src = out.get("where_the_money_comes_from") or {}
     if src:
         L.append("  from:")
-        for k, v in sorted(src.items(), key=lambda kv: -(kv[1] if isinstance(kv[1], (int, float)) else 0)):
-            L.append("    %-28s %s" % (k, _fmt_num(v)))
+        for k, v in sorted(src.items(),
+                           key=lambda kv: -(kv[1] if isinstance(kv[1], (int, float)) else 0)):
+            # The engine's own rows are node ids and must stay verbatim; the
+            # aggregate lines are marked with a leading underscore so they sort
+            # and read as what they are rather than as technologies.
+            label = k[1:].replace("_", " ") if k.startswith("_") else k
+            L.append("    %-38s %s" % (label, _fmt_num(v)))
+        L.append("    %-38s %s" % ("(these add up to the revenue above)", ""))
     costs = out.get("what_it_costs_you") or {}
     if costs:
         L.append("Costs:")
@@ -2662,7 +2668,23 @@ def _agent_dispatch_inner(s, nodes, cmd):
                             % (key, ", ".join(sorted(s.policy)))}
                 s.policy[key] = _flag(val)
                 changed[key] = s.policy[key]
-        return {"ok": True, "policy": dict(s.policy), "changed": changed,
+        # WHICH OF THESE CAN ACTUALLY ACT TODAY. A play tester spent about eight
+        # years and 5,952 denarii working out that negative capital silently
+        # disables both hiring and opening: the switches read ON, the engine
+        # did nothing, and the only clue was one refusal string. A switch that
+        # says ON while nothing happens is worse than one that says OFF.
+        _stopped = {}
+        if s.capital <= 0:
+            if s.policy.get("auto_hire"):
+                _stopped["auto_hire"] = ("nothing to hire with: hiring is paid "
+                                         "in advance and you are in arrears")
+            if s.policy.get("auto_open"):
+                _stopped["auto_open"] = ("nothing to open with: opening a "
+                                         "concern costs stock and premises")
+        if s.year < getattr(s, "credit_frozen_until", 0):
+            _stopped["credit"] = ("nobody will fund new work until %d"
+                                  % int(s.credit_frozen_until))
+        _pol = {"ok": True, "policy": dict(s.policy), "changed": changed,
                 "what_each_does": {
                     "auto_hire": "grow the staff toward what you can house and pay",
                     "auto_buy_people": "buy slaves when the workshop is short-handed",
@@ -2700,6 +2722,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                 "being worked once your credit is gone, and "
                                 "creditors take what they are owed. Those follow "
                                 "from having no money, not from a setting."}
+        if _stopped:
+            _pol["switched_on_but_cannot_act_right_now"] = _stopped
+        return _pol
 
     if op in ("save", "load"):
         path = cmd.get("file") or cmd.get("path")

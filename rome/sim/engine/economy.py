@@ -607,9 +607,27 @@ class EconomyMixin:
                 amt *= self.practice_attention()
             if amt > 0.5:
                 rows[k] = round(amt, 1)
-        out = dict(sorted(rows.items(), key=lambda kv: -kv[1])[:15])
+        # ALL OF IT, OR SAY WHAT IS MISSING. This returned the fifteen largest
+        # rows and nothing else, so a break tester summed what the ledger
+        # listed, got 7,101.9 against a stated revenue of 6,738, and correctly
+        # reported that the accounts do not add up - two running earners were
+        # simply not shown, and the workshop's own output and the saturation
+        # that caps the whole figure were never rows at all.
+        ranked = sorted(rows.items(), key=lambda kv: -kv[1])
+        out = dict(ranked[:15])
+        rest = sum(v for _k, v in ranked[15:])
+        if rest > 0.5:
+            out["_and_%d_smaller_concerns" % len(ranked[15:])] = round(rest, 1)
+        wo = self.workshop_output() * (self.economy ** 0.75) * self.output_factor
+        if wo > 0.5:
+            out["_what_your_own_workshop_sells"] = round(wo, 1)
         if self.state_funding() > 0.5:
             out["_state_funding"] = round(self.state_funding() * self.output_factor, 1)
+        # And the difference between the parts and the whole, which is the
+        # market saturating: you cannot sell more inns than the town wants.
+        gap = round(self.revenue() - sum(out.values()), 1)
+        if abs(gap) > 1.0:
+            out["_what_the_market_will_not_absorb"] = gap
         return out
 
     # Of the auto-granted nodes that carry revenue, seven are medicine and two

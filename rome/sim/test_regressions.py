@@ -2093,6 +2093,36 @@ check("...so one hired hand is enough to raise your first workshop",
       s2.start_reason("workshop_first")[0],
       s2.start_reason("workshop_first")[1])
 
+# A break tester summed what the ledger listed - 7,101.9 - against a stated
+# revenue of 6,738 and reported that the accounts do not add up. They were
+# right: it showed the fifteen largest rows and nothing else, so smaller
+# concerns, the workshop's own output, state funding and the market saturation
+# that caps the whole figure were all invisible.
+s = sim(civ="rome_100ad", manual=False)
+for _ in range(120):
+    s.step()
+_src = s.revenue_sources()
+check("the ledger's parts add up to the revenue it states",
+      abs(sum(_src.values()) - s.revenue()) < 1.0,
+      "rows %.1f against revenue %.1f" % (sum(_src.values()), s.revenue()))
+
+# A play tester spent about eight years and 5,952 denarii working out that
+# negative capital silently disables hiring and opening while both switches
+# still read ON.
+s = sim(civ="rome_100ad")
+s.policy["auto_hire"] = True
+s.policy["auto_open"] = True
+s.capital = -500.0
+_pol = S._agent_dispatch(s, NODES, {"cmd": "policy"})
+check("a switch that is on but cannot act says so",
+      set(_pol.get("switched_on_but_cannot_act_right_now") or {})
+      >= {"auto_hire", "auto_open"},
+      _pol.get("switched_on_but_cannot_act_right_now"))
+check("...and says nothing when they all can",
+      "switched_on_but_cannot_act_right_now" not in
+      S._agent_dispatch(sim(capital=50000.0), NODES, {"cmd": "policy"}),
+      "field present on a solvent household")
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 
