@@ -35,16 +35,15 @@
  },
  "bounties_paid": 0,
  "bribes_ytd": 0.0,
- "capital": 3527.1255457793973,
+ "capital": 427.7561980796486,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
  "dead_reason": null,
- "director_hours_spent_founder": 320.0,
+ "director_hours_spent_founder": 0.0,
  "directors_extra": 0.0,
  "done": {
   "__set__": [
-   "ag2_guano",
    "bellows_water_blown",
    "blast_furnace",
    "cap_heat_0700",
@@ -67,7 +66,6 @@
    "fud_heavy_mouldboard_plough_coulter",
    "fud_seed_drill",
    "hom_board_games",
-   "hom_button",
    "hom_candle_beeswax",
    "hom_candle_tallow",
    "hom_flush_latrine_simple",
@@ -80,7 +78,6 @@
    "hom_oil_lamp_simple",
    "hom_perfume_enfleurage",
    "hom_public_bath",
-   "hom_toys_dolls",
    "horse_collar",
    "lnd_axle_pivot_front",
    "lnd_bridge",
@@ -117,7 +114,6 @@
    "mat_linen",
    "mat_mercury",
    "mat_natron",
-   "mat_obsidian_blade",
    "mat_olive_oil",
    "mat_paper",
    "mat_pyrolusite",
@@ -154,7 +150,6 @@
    "prn_scribal_copying",
    "prn_sculpture",
    "prn_seals_stamps",
-   "prn_sizing_surface",
    "prn_theatre_pantomime",
    "prn_wax_tablets",
    "pwr_animal_treadmill",
@@ -179,8 +174,6 @@
    "tex_dye_murex",
    "tex_dye_woad",
    "tex_felting",
-   "tex_indigo",
-   "tex_mordanting",
    "tex_sailcloth",
    "tex_silk_trade",
    "tex_two_beam_loom",
@@ -188,24 +181,16 @@
    "tex_wool"
   ]
  },
- "done_year": {
-  "ag2_guano": 100,
-  "hom_button": 100,
-  "hom_toys_dolls": 100,
-  "mat_obsidian_blade": 100,
-  "prn_sizing_surface": 100,
-  "tex_indigo": 100,
-  "tex_mordanting": 100
- },
- "economy": 1.18,
- "eminence": 0.2481093751994609,
+ "done_year": {},
+ "economy": 1.15,
+ "eminence": 0.0038193464103442177,
  "employees": {},
- "familiarity": 0.4647385714810097,
+ "familiarity": 0.36237184837822667,
  "forest_ha": 0.0,
  "founder_alive": true,
  "freedmen": 0,
  "goal_year": null,
- "gov": -0.7000000000000002,
+ "gov": 0.0,
  "granted": {
   "__set__": [
    "bellows_water_blown",
@@ -354,11 +339,11 @@
   "wage_work": 0.0
  },
  "insolvent_years": 0,
- "interest_paid": 87.5166276583987,
+ "interest_paid": null,
  "last_patron_death": null,
  "last_settlement": -999,
- "life_left": 999999992.0,
- "living_cost_paid": 2449.849358128096,
+ "life_left": 999999999.0,
+ "living_cost_paid": 231.5589062604031,
  "manumitted_total": 0,
  "market_pressure": 0.0,
  "mine_capacity": {},
@@ -372,15 +357,7 @@
  },
  "nitre_bed_m2": 0.0,
  "operating": {
-  "__set__": [
-   "ag2_guano",
-   "hom_button",
-   "hom_toys_dolls",
-   "mat_obsidian_blade",
-   "prn_sizing_surface",
-   "tex_indigo",
-   "tex_mordanting"
-  ]
+  "__set__": []
  },
  "output_factor": 1.0,
  "policy": {
@@ -391,26 +368,16 @@
   "auto_manumit": false,
   "auto_mine": false,
   "auto_mothball": true,
-  "auto_open": true,
+  "auto_open": false,
   "auto_shed": false,
   "auto_train": false
  },
- "protection": 0.059719145595098,
- "reputation": 15.52697785472548,
+ "protection": 0.018711538461538463,
+ "reputation": 4.865,
  "revealed": {
-  "__set__": [
-   "ag2_guano",
-   "hom_button",
-   "hom_doll_fashion",
-   "hom_toys_dolls",
-   "mat_dyes_synthetic",
-   "mat_obsidian_blade",
-   "prn_sizing_surface",
-   "tex_indigo",
-   "tex_mordanting"
-  ]
+  "__set__": []
  },
- "scandal": 1.2397455648000004,
+ "scandal": 0.0,
  "scholars": 0.0,
  "slaves": 0,
  "spend_last_year": 0.0,
@@ -419,7 +386,7 @@
  "suspicion_mult": 1.0,
  "teaching_hours_this_year": 0.0,
  "throttle": 1.0,
- "total_spend": 692.3840625,
+ "total_spend": 0.0,
  "trade_hours_used": {},
  "trades_created": {
   "__set__": []
@@ -428,5 +395,5 @@
  "wage_hours_this_year": 0.0,
  "wages_earned": null,
  "wages_paid": 0.0,
- "year": 108
+ "year": 101
 }

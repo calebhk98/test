@@ -261,3 +261,69 @@ Also unrealistic: 100 people can be bought and freed inside a single turn with n
 - JSON command paste works as advertised: `{"cmd": "work", "trade": "smith", "hours": 100}` ran;
   `{"cmd":"step","years":-3}` was refused by the same guard as the text form; `{"cmd":"capital","amount":999999}`
   -> "REFUSED: unknown cmd 'capital'". No extra powers via the JSON channel that I could find.
+
+## FINDING 17 — a project can be permanently deadlocked while the game blames the wrong resource
+In my long playthrough `logarithms` (Logarithms and computed tables) sat at
+  "Logarithms and computed tabl  94% of your hours spent, 0 den still owed - waiting on your hours"
+for 275 in-game years (325 AD -> 600 AD, the end of the run), while `state` said on every single
+screen "You: alive, 2,000 founder-hours free this year". It needs 400 founder hours; it needed 24.
+The save the game writes shows it wedged: ph_left 23.913461538, hours_offered_this_year 100.0,
+hours_effective_this_year 0.0, unused founder hours 1,900, short_of_trade [].
+Things that did NOT fix it: waiting 275 years; hiring 3 scholars (STAFF NEEDED 2, "you have 3.8");
+`stop logarithms` + `start logarithms` (which cost me the 4,275 den already sunk and then re-stalled
+at exactly the same ph_left 23.913461538); starting and completing other projects in the same years
+(`air_observation_balloon_tethered` and `corpus_written`, 6,000 hours / 10-year floor, both finished
+normally), so it is this project, not a global stall.
+What DID fix it: `hire scribe 3` -> ph_left fell 23.91 -> 0.75 in three years.
+So the real blocker was the 40,000 scribe-hours of HIRED LABOUR the project needs, against a society
+that flatly refuses more than 3.5 scribes: `hire scribe 30` ->
+  "REFUSED: this society's literacy will not supply more than 3.5 scribes in total, ever, at any price"
+  `commission scribe 40000` -> "REFUSED: the scribes here can spare 10022 more hours this year, not 40000"
+Yet `available` offered it as startable, `why logarithms` said "STATUS: CAN START NOW" with no hint
+of the scribe ceiling, the full 4,275 den was charged, the status line blamed founder hours I had
+1,900 of, and the engine's own `short_of_trade` list was empty. It still had not completed 6 years
+after the scribes were hired.
+CONFIDENCE: certain that the reported reason is wrong; high that a startable project that can
+deadlock for 275 years while charging you in full is a defect.
+
+## FINDING 18 — `bribe` charges you in full for a bribe it says bought nothing
+Bribing is otherwise well behaved: it caps out ("already as protected as money can make you"), and
+every other command in this game refuses an impossible request with "Nothing was changed."
+This one takes the money anyway. REPRO (save at 130 AD, scandal already bribed to 0):
+  > money            Capital: 92,122 den
+  > bribe 1000
+    bribed: scandal 0.00 -> 0.00 for 1000 denarii; you had no scandal to answer and are already
+    as protected as money can make you, so this bought nothing
+  > money            Capital: 91,122 den      <- charged 1,000 for nothing
+  > bribe 5000   ... same message ...
+  > money            Capital: 86,122 den      <- charged 5,000 for nothing
+Earlier in the same turn `bribe 50000` took 50,000 den the same way. There is no upper guard, so a
+single mistyped bribe can delete an entire fortune while the game tells you it did nothing.
+CONFIDENCE: certain the money is taken; certain the message says it bought nothing.
+
+## FINDING 19 — `bribe` is accepted with no scandal at all
+From the opening position (scandal 0.00): `bribe 100` -> "bribed: scandal 0.00 -> 0.00 for 100
+denarii; advocacy and piety bought as well: protection 0.00 -> 0.32". The status screens never show
+`protection` anywhere, and `risk` does not change ("sack chance after what you have built: 20%"
+before and after protection went 0.23 -> 0.53), so the one thing bribing does buy is invisible.
+
+## Smaller inconsistencies noticed along the way
+- `risk` prints "chance lost if a site is sacked: 80%" and "sack chance: you take 100% of it" and
+  then "sack chance after what you have built: 20%" while also saying "hedge: nothing yet". Three
+  percentages for what reads like one quantity, with nothing built.
+- The EMPLOY block always prints the same worked example - "1.32 artisans is the wage and output of
+  one artisan plus a third of another's" - regardless of the actual figure (0.42, 0.86, 0.09).
+- `commission smith -400` is refused with "hours must be greater than zero", but `help economy`
+  documents commission as "commission smith 400 - buy a job rather than a person", reading as denarii.
+  It is hours ("commissioned: 400 hours of a smith bought for 60 denarii").
+- `buy` with no argument suggests "e.g. 'buy iron 500'", but `help economy` lists only forest, mine,
+  slaves and manumit; `buy iron 500` is in fact interpreted as sinking an iron mine.
+- `train` with no argument reveals an undocumented form: "train chemist 1 from artisan".
+- `hire smith 1e308` -> "REFUSED: hiring 1e+308 smiths costs inf denarii in advance" (cosmetic).
+
+## Robustness attacks that FAILED to break anything (good)
+5,000-character node names, unicode/emoji ids, `step nan` / `step inf` / `step 1e999`
+("REFUSED: years must be a real number; NaN and Infinity are not quantities"), `work smith 1e308`,
+`available limit 999999999`, `available offset -5`, `available afford -100`, every command with no
+arguments (each gives a helpful one-line hint, not a traceback), `policy nonexistent on`.
+No traceback, no crash, no corrupted save in any of them.

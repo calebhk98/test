@@ -2159,12 +2159,17 @@ def _agent_dispatch(s, nodes, cmd):
         if ended:
             return {"ok": False, "error": "the run has ended (%s)" % ended}
         pay, err = s.work_for_wages(cmd.get("trade"), cmd.get("hours", 0))
-        if err:
+        # A message WITH pay is a warning about a bad trade, not a refusal:
+        # the work happened and the player should be told what it cost them.
+        if err and pay <= 0:
             return {"ok": False, "error": err}
-        return {"ok": True, "trade": cmd.get("trade"), "hours": cmd.get("hours"),
-                "earned": round(pay, 1), "capital": round(s.capital, 1),
-                "your_hours_left_this_year": round(
-                    max(0.0, s.director_pool() - s.wage_hours_this_year), 1)}
+        out = {"ok": True, "trade": cmd.get("trade"), "hours": cmd.get("hours"),
+               "earned": round(pay, 1), "capital": round(s.capital, 1),
+               "your_hours_left_this_year": round(
+                   max(0.0, s.director_pool() - s.wage_hours_this_year), 1)}
+        if err:
+            out["but"] = err
+        return out
 
     if op in ("risk", "hazards"):
         kr = s.knowledge_risk()

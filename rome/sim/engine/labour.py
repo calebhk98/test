@@ -362,9 +362,24 @@ class LabourMixin:
         rate = ANNUAL_WAGE.get(trade, 375.0) / self.HOURS_PER_PERSON_YEAR
         pay = (hours * rate * self.price_index * self.wage_index
                * (1.0 + min(0.5, self.reputation / 200.0)))
+        before_practice = self.revenue()
         self.capital += pay
         self.wage_hours_this_year = getattr(self, "wage_hours_this_year", 0.0) + hours
         self.wages_earned = getattr(self, "wages_earned", 0.0) + pay
+        # SAY WHEN IT IS A BAD TRADE. Selling your hours costs you the practice
+        # those same hours were running (see practice_attention), and for a
+        # physician it is usually a loss: a tester measured a full year of
+        # labour at 66 denarii against a 227 cost of living, and it switched
+        # off 259 a year of practice. That is realistic - a trained man does
+        # not dig ditches for preference - but the game charged it silently and
+        # the player had to work it out from the ledger.
+        lost = before_practice - self.revenue()
+        if lost > pay:
+            return pay, ("you earned %s, and the practice those hours were "
+                         "running was worth %s a year - so this cost you %s. "
+                         "Wage work is for when you have no practice to lose."
+                         % ("{:,.0f}".format(pay), "{:,.0f}".format(lost),
+                            "{:,.0f}".format(lost - pay)))
         return pay, None
 
     def wage_bill(self):

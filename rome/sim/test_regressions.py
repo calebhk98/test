@@ -1317,10 +1317,16 @@ check("nothing that deletes your work is on by default for a player",
 #    practice is your own two hands; that was the same hours sold twice.
 s = sim()
 _rev_before = s.revenue()
-_earned, _err = s.work_for_wages("labourer", s.director_pool())
+_earned, _note = s.work_for_wages("labourer", s.director_pool())
 check("hours sold as a labourer are not also spent practising medicine",
-      _err is None and _rev_before > 0 and s.revenue() < _rev_before * 0.05,
+      _earned > 0 and _rev_before > 0 and s.revenue() < _rev_before * 0.05,
       "revenue %.1f -> %.1f having sold every hour" % (_rev_before, s.revenue()))
+# ...and the player is told, rather than left to find it in the ledger. A
+# tester measured a year of labour at 66 denarii against a 227 cost of living
+# and a 259-a-year practice switched off, and called `work` self-destructive.
+# It is, for a physician; the defect was that nothing said so.
+check("selling your hours at a loss says so, and still happens",
+      _note and "cost you" in _note, _note)
 s2 = sim()
 s2.work_for_wages("labourer", s2.director_pool() * 0.5)
 check("selling half your hours costs you half the practice, not all of it",
