@@ -109,6 +109,12 @@ class FogMixin:
         So the numbers behind the dice are now readable while there is still
         time to act on them.
         """
+        # `has`, NOT running(): every other capability in this engine was moved
+        # onto running() - a school with nobody paid to keep it open trains
+        # nobody - and this one deliberately stays where it is. Books that
+        # exist are books that exist, and a play tester had already reported
+        # the opposite reading as a bug, having lost their corpus to a sacking
+        # and assumed the hedge had followed `operating`.
         if self.has("corpus_dispersed"):   chance, frac, hedge = 0.12, 0.08, "corpus_dispersed"
         elif self.has("corpus_written"):   chance, frac, hedge = 0.45, 0.22, "corpus_written"
         else:                              chance, frac, hedge = 0.80, 0.40, None

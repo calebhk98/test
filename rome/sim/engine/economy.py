@@ -24,13 +24,13 @@ class EconomyMixin:
         """
         earned = len(self.done) - len(self.granted)
         f = 0.5 + 0.55 * math.sqrt(max(0, earned))
-        if self.has("corpus_written"):     f += 3.0
-        if self.has("corpus_dispersed"):   f += 6.0
-        if self.has("school_founded"):     f += 4.0
-        if self.has("academy_network"):    f += 10.0
-        if self.has("patron_senatorial"):  f += 3.0
-        if self.has("patron_imperial"):    f += 8.0
-        if self.has("identity_cover"):     f += 1.0
+        if self.running("corpus_written"):     f += 3.0
+        if self.running("corpus_dispersed"):   f += 6.0
+        if self.running("school_founded"):     f += 4.0
+        if self.running("academy_network"):    f += 10.0
+        if self.running("patron_senatorial"):  f += 3.0
+        if self.running("patron_imperial"):    f += 8.0
+        if self.running("identity_cover"):     f += 1.0
         # Scandal is the one thing that eats into standing rather than sitting
         # alongside it: being notorious is not the same as being unknown.
         return max(0.0, f - 0.5 * self.scandal)
@@ -50,12 +50,12 @@ class EconomyMixin:
         """
         diffused = sum(1 for k in self.done if self.nodes[k]["tier"] >= 2)
         e = 1.0 + 0.055 * diffused
-        if not self.has("corpus_dispersed"):
+        if not self.running("corpus_dispersed"):
             e = 1.0 + 0.030 * diffused      # knowledge locked in one workshop spreads slowly
         return e
 
     def state_funding(self):
-        if not self.has("patron_imperial"):
+        if not self.running("patron_imperial"):
             return 0.0
         return (2500.0 * self.economy * self.state_capacity * self.pop_scale ** 0.4
                 * (1.0 + max(0.0, self.gov) / 25.0) * self.rep_factor())
@@ -95,12 +95,12 @@ class EconomyMixin:
         # was ruin.
         earning = self.revenue_capacity()
         base = earning * 0.5
-        if self.has("identity_cover"):     base += 400.0
-        if self.has("patron_local"):       base += 3000.0
-        if self.has("patron_senatorial"):  base += 15000.0
-        if self.has("patron_imperial"):    base += 60000.0
-        if self.has("collegium_licensed"): base += 4000.0
-        if self.has("endowment_land"):     base += 30000.0      # real collateral
+        if self.running("identity_cover"):     base += 400.0
+        if self.running("patron_local"):       base += 3000.0
+        if self.running("patron_senatorial"):  base += 15000.0
+        if self.running("patron_imperial"):    base += 60000.0
+        if self.running("collegium_licensed"): base += 4000.0
+        if self.running("endowment_land"):     base += 30000.0      # real collateral
         base += max(0.0, self.reputation) * 250.0
         base += self.forest_ha * 120.0                           # also collateral
         # A FLOOR of one year's running costs, because everyone everywhere has
@@ -152,20 +152,34 @@ class EconomyMixin:
             if net >= 0:
                 break
             worst = None
-            # WHAT YOU ARE ACTUALLY PAYING FOR, which since knowing and running
-            # became two states is `operating`, not `done`. This scanned every
-            # completed node, so in a bad year it would pick a loss-maker that
-            # was already shut, unlearn it, and save nothing at all: upkeep
-            # follows `operating` and a closed concern was already costing
-            # nothing. The player lost the knowledge and kept the deficit.
-            for k in sorted(self.operating):
-                n = self.nodes[k]
-                if (n["up"] <= n["rev"] or k in self.granted
-                        or self.never_abandon(k)):
-                    continue
-                if worst is None or (n["rev"] - n["up"]) < (self.nodes[worst]["rev"]
-                                                           - self.nodes[worst]["up"]):
-                    worst = k
+            # THE SCHOOL AND THE PATRON GO LAST. Every one of these loses money
+            # by construction - a school takes 2,500 a year and returns 800 -
+            # and every one of them is what your scholars, your household
+            # places and your credit are gated on, so shedding by margin alone
+            # picked them FIRST and closed the institution that was paying for
+            # everything else. In real ruin you do close the school; you close
+            # it after you have closed everything else. Two passes: ordinary
+            # loss-makers, then, only if that was not enough, these.
+            for _pass in (0, 1):
+                # WHAT YOU ARE ACTUALLY PAYING FOR, which since knowing and
+                # running became two states is `operating`, not `done`. This
+                # scanned every completed node, so in a bad year it would pick
+                # a loss-maker that was already shut, unlearn it, and save
+                # nothing at all: upkeep follows `operating` and a closed
+                # concern was already costing nothing. The player lost the
+                # knowledge and kept the deficit.
+                for k in sorted(self.operating):
+                    n = self.nodes[k]
+                    if (n["up"] <= n["rev"] or k in self.granted
+                            or self.never_abandon(k)):
+                        continue
+                    if (k in self.CAPABILITY_INSTITUTIONS) != bool(_pass):
+                        continue
+                    if worst is None or (n["rev"] - n["up"]) < (self.nodes[worst]["rev"]
+                                                               - self.nodes[worst]["up"]):
+                        worst = k
+                if worst is not None:
+                    break
             if worst is None:
                 break
             # CLOSE IT, do not unlearn it. Shedding a loss-maker in ruin is
@@ -205,11 +219,11 @@ class EconomyMixin:
         currency underneath the currency.
         """
         r = 0.12
-        if self.has("patron_local"):        r -= 0.015
-        if self.has("patron_senatorial"):   r -= 0.03
-        if self.has("patron_imperial"):     r -= 0.03
-        if self.has("endowment_land"):      r -= 0.02          # secured, not personal
-        if self.has("fin_argentarii"):      r -= 0.01          # a banker you know
+        if self.running("patron_local"):        r -= 0.015
+        if self.running("patron_senatorial"):   r -= 0.03
+        if self.running("patron_imperial"):     r -= 0.03
+        if self.running("endowment_land"):      r -= 0.02          # secured, not personal
+        if self.running("fin_argentarii"):      r -= 0.01          # a banker you know
         r -= min(0.03, max(0.0, self.reputation) / 3000.0)
         return max(0.0, r)
 
@@ -748,7 +762,7 @@ class EconomyMixin:
 
     def workshop_output(self):
         """What your standing staff produces and sells, over and above projects."""
-        if not (self.has("workshop_first") or self.has("school_founded")):
+        if not (self.running("workshop_first") or self.running("school_founded")):
             return 0.0
         craft = sum(n for t, n in self.employees.items() if trade_family(t) == "craft")
         craft += self.freedmen + self.slaves * 0.7
@@ -758,8 +772,8 @@ class EconomyMixin:
                 wage += n * ANNUAL_WAGE.get(t, 375.0)
         wage += (self.freedmen + self.slaves * 0.7) * ANNUAL_WAGE.get("artisan", 250.0)
         mark = 1.55
-        if self.has("interchangeable_parts"):  mark += 0.35
-        if self.has("power_grid"):             mark += 0.45
+        if self.running("interchangeable_parts"):  mark += 0.35
+        if self.running("power_grid"):             mark += 0.45
         # AND EVERYTHING YOU KNOW HOW TO DO, which is where the value of a
         # capability actually shows up.
         #
@@ -1069,8 +1083,8 @@ class EconomyMixin:
         # imperial property. Charcoal is exempt because no amount of standing
         # makes a bulky crumbling fuel travel further than it can travel.
         if emp_key != "charcoal":
-            if self.has("patron_imperial"):     share *= 6.0
-            elif self.has("patron_senatorial"): share *= 2.5
+            if self.running("patron_imperial"):     share *= 6.0
+            elif self.running("patron_senatorial"): share *= 2.5
             elif self.has("citizenship"):       share *= 1.4
             share = min(share, 0.60)
         # GEOLOGY, NOT DEMOGRAPHY. This used to be `* self.pop_scale`:
@@ -1088,7 +1102,7 @@ class EconomyMixin:
         market = emp.get(emp_key, {}).get("t_per_yr", 0) * share * scale
         # Bengal saltpetre: an existing annual sea route, not a nitre bed.
         # This is the single most useful thing in the geography file.
-        if emp_key == "saltpetre" and self.has("exp_trade_route_extend"):
+        if emp_key == "saltpetre" and self.running("exp_trade_route_extend"):
             market += 60.0
         return market
 
@@ -1294,8 +1308,8 @@ class EconomyMixin:
         # who can raise a crew can certainly do better than a foreigner with a
         # local lease.
         sc = float(self.civ.get("state_capacity", 0.5))
-        if self.has("patron_imperial"):     ceiling = 20000.0 + 60000.0 * sc
-        elif self.has("patron_senatorial"): ceiling = 9000.0 + 20000.0 * sc
+        if self.running("patron_imperial"):     ceiling = 20000.0 + 60000.0 * sc
+        elif self.running("patron_senatorial"): ceiling = 9000.0 + 20000.0 * sc
         elif self.has("citizenship"):       ceiling = 6000.0 + 8000.0 * sc
         else:                               ceiling = 3000.0 + 4000.0 * sc
         # And scale is buyable. What actually limits a mine is crews, timber,
@@ -1492,8 +1506,8 @@ class EconomyMixin:
         tax = max(0.0, self.revenue()) * 0.06         # portoria, vicesima, local dues
         status = 0.0
         if self.has("citizenship"):        status += 200 * px
-        if self.has("patron_senatorial"):  status += 900 * px
-        if self.has("patron_imperial"):    status += 2500 * px
+        if self.running("patron_senatorial"):  status += 900 * px
+        if self.running("patron_imperial"):    status += 2500 * px
         status += max(0.0, self.capital) * 0.015      # you cannot look poor and rich
         # A RUINED MAN STOPS KEEPING UP APPEARANCES. This was unconditional and
         # there was no way to shed it: a Rome run sat at 1,343 of revenue

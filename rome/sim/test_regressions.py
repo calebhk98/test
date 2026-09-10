@@ -33,6 +33,21 @@ def sim(civ="rome_100ad", capital=None, manual=True, events=False):
     return s
 
 
+def run_it(s, *keys):
+    """Build a concern AND keep its doors open.
+
+    Every capability in the engine is gated on running() - built, and still
+    being maintained - because a school nobody pays for trains no scholars.
+    A check that wants the capability has to open the place, the same as a
+    player would.
+    """
+    for k in keys:
+        s.done.add(k)
+        s.operating.add(k)
+    s._done_changed()
+    return s
+
+
 # SLOW CHECKS ARE OPT-IN. Three of these cost 83 of the suite's 89 seconds,
 # because they each simulate a couple of hundred years to test a long-run
 # property. A suite you run after every change has to be seconds, or you stop
@@ -133,9 +148,7 @@ def spend(slices, per):
     # ROOM TO PUT THEM. Buying now respects the same feed/house/oversee cap
     # `hire` always did, so a test about PRICING has to make room first or it
     # is really testing the cap.
-    t.done.add("workshop_first")
-    t.done.add("freedman_staff")
-    t._done_changed()
+    run_it(t, "workshop_first", "freedman_staff")
     c0 = t.capital
     for _ in range(slices):
         t.buy_slaves(per)
@@ -1988,8 +2001,7 @@ check("...but being received by a patron, and publishing, still do",
 def _persona(has):
     s_ = sim(civ="england_1300")
     if has:
-        s_.done.add("identity_cover")
-        s_._done_changed()
+        run_it(s_, "identity_cover")
     s_.update_protection()
     return s_
 
@@ -2094,9 +2106,7 @@ check("a name you have not heard of and a name that does not exist read alike",
 #    then recomputed from scratch and threw away. A tester watched their
 #    craftsmen fall from 35 to 3.8 at the moment the training finished.
 s = sim(capital=500000.0)
-s.done.add("workshop_first")
-s.done.add("freedman_staff")
-s._done_changed()
+run_it(s, "workshop_first", "freedman_staff")
 s.buy_slaves(12)
 _at_purchase = s.artisans
 for _ in range(4):
@@ -2385,8 +2395,8 @@ check("the same teaching succeeds where enough people can read",
 # --- Q: the institutional scholar ceiling (staff_capacity, which is what
 # auto_hire actually grows) is bounded by literacy_elite too, not only the
 # named `scholar`/`scribe` trades hired one at a time.
-s_hi = sim(civ="rome_100ad", capital=1e9); s_hi.done.add("school_founded")
-s_lo = sim(civ="norse_900ad", capital=1e9); s_lo.done.add("school_founded")
+s_hi = run_it(sim(civ="rome_100ad", capital=1e9), "school_founded")
+s_lo = run_it(sim(civ="norse_900ad", capital=1e9), "school_founded")
 sc_hi, sc_lo = s_hi.staff_capacity()[0], s_lo.staff_capacity()[0]
 check("a school trains fewer scholars where fewer of the propertied class "
       "can read",
@@ -2454,7 +2464,7 @@ check("a bigger trained workforce in a trade makes the same recent demand "
 # --- R, end to end: hiring the same trade repeatedly through `hire` really
 # does cost more each time, not only in the internal factor.
 s = sim(civ="rome_100ad", capital=1e9)
-s.done.update({"workshop_first", "school_founded", "academy_network", "patron_imperial"})
+run_it(s, "workshop_first", "school_founded", "academy_network", "patron_imperial")
 fees = []
 for _ in range(3):
     before = s.capital
@@ -2941,9 +2951,11 @@ check("...but never stops being alarmed altogether",
 _em_shape = {}
 for _acad in (False, True):
     _s = sim(capital=50000000.0)
-    _s.done.update(list(NODES)[:1400]); _s.done.add("patron_imperial")
+    _s.done.update(list(NODES)[:1400])
+    run_it(_s, "patron_imperial", "academy_network")
     if not _acad:
         _s.done.discard("academy_network")
+        _s.operating.discard("academy_network")
     _s._done_changed()
     _s.reputation, _s.year, _s.familiarity = 98.0, 400, 0.9
     _em_shape[_acad] = _s.eminence_report()["settles_at_if_nothing_changes"]
@@ -3439,9 +3451,7 @@ check("...and a trade says which of the two it is",
 # nothing ever said so - the largest change to the resource the game is built
 # on, noticed by accident.
 s_dp = sim(capital=2000000.0, manual=False)
-for _k in ("school_founded", "patron_imperial", "academy_network"):
-    s_dp.done.add(_k)
-s_dp._done_changed()
+run_it(s_dp, "school_founded", "patron_imperial", "academy_network")
 for _ in range(30):
     s_dp.step()
 check("gaining a deputy is announced, with what it does to your year",

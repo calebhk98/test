@@ -44,6 +44,54 @@ class ProjectsMixin:
             return False
         return n["rev"] > 0 or n["up"] > 0
 
+    # Concerns whose whole point is what they let you DO - scholars a school
+    # supports, household places a workshop adds, credit a patron's name
+    # unlocks, knowledge a corpus preserves - as opposed to what they take at
+    # the door. Every one of these is gated through running() somewhere in this
+    # engine, and several of them lose money outright, so the margin test in
+    # auto_open_ventures would leave them shut for ever. Kept honest by a
+    # regression check that greps the engine for running() gates and fails if
+    # any node named in one is missing from this set.
+    CAPABILITY_INSTITUTIONS = frozenset((
+        "academy_network", "blast_furnace", "collegium_licensed",
+        "corpus_dispersed", "corpus_written", "crucible_steel",
+        "endowment_land", "exp_trade_route_extend", "fin_argentarii",
+        "fin_university", "freedman_staff", "identity_cover",
+        "interchangeable_parts", "patron_imperial", "patron_local",
+        "patron_senatorial", "plague_preparedness", "power_grid", "railway",
+        "sanitation_antisepsis", "school_founded", "steam_high_pressure",
+        "telegraph_electric", "workshop_first"))
+
+    # ---- BUILT, versus BUILT AND STILL RUNNING ----------------------------
+    # `has` answers "do you know how / did you build it", and for a piece of
+    # knowledge that is the whole story. For an establishment it is not. A
+    # school with nobody paid to keep it open trains no scholars; a patron you
+    # stopped cultivating does not lend his name; a workshop whose doors are
+    # shut houses nobody. Every capability in this engine was gated on `has`,
+    # which meant a founder collected the twelve scholars a school supports,
+    # the ten household places a workshop adds and the sixty thousand of credit
+    # an imperial patron unlocks WITHOUT EVER OPENING ANY OF THEM - and, since
+    # upkeep follows what you run, without paying a denarius of their running
+    # cost either. A play tester put it exactly right: "I never worked out what
+    # `open` does for a work that earns nothing... paying to open them looked
+    # like pure loss, and I ignored them for two centuries with no visible
+    # penalty." They were correct, and that is the bug.
+    #
+    # This is the honest test, and it is `has` for everything that has no doors
+    # to shut: a technique costs nothing to keep and cannot be closed.
+    def running(self, k):
+        """Built, and still being maintained - which is what a capability needs.
+
+        True for anything you have done that is not a going concern (knowledge
+        does not close), for this society's own crafts, and for a concern you
+        actually have open.
+        """
+        if k not in self.done:
+            return False
+        if k in self.granted or not self.is_venture(k):
+            return True
+        return k in self.operating
+
     def venture_capex(self, k):
         """What it costs to open the doors, over and above having worked out
         how. Stock, premises, the first year's materials: a fraction of what
@@ -78,6 +126,18 @@ class ProjectsMixin:
     def venture_hands(self, k):
         """(scholars, craftsmen) of your own that running this ties up."""
         n = self.nodes[k]
+        # A SCHOOL DOES NOT COST YOU SCHOLARS. What these establishments take
+        # is money - a patron's cultivation, a school's stipends - and what
+        # they hand back is exactly the people every other concern is
+        # supervised by. Charging supervision against them made the loop
+        # impossible to enter: school_founded's build crew is twelve scholars,
+        # so keeping it open wanted three of them, and the only source of three
+        # scholars was the school you could not keep open. A founder opened
+        # the school and the staffing rule shut it the same turn, for ever.
+        # Only the ones that lose money qualify: a blast furnace is in this set
+        # too, and a blast furnace certainly needs somebody watching it.
+        if (k in self.CAPABILITY_INSTITUTIONS and n["rev"] <= n["up"]):
+            return 0.0, 0.0
         f = self.VENTURE_SUPERVISION
         by_size = max(0.0, n["rev"]) / self.VENTURE_HANDS_PER_REVENUE
         return n["sch"] * f, max(n["art"] * f, by_size)
@@ -272,7 +332,21 @@ class ProjectsMixin:
             # for the people it ties up.
             # sorted(): min() over a set returns whichever equal-keyed element
             # came first in iteration order, which is not fixed.
-            worst = min(sorted(self.operating),
+            # ONLY WHAT ACTUALLY HOLDS HANDS. The key divides by
+            # max(0.01, hands), so a concern that ties up NOBODY scored minus
+            # a hundred and seventy thousand and was chosen first every time -
+            # and closing it freed not one pair of hands, so the loop came
+            # round and closed the next, and the next, until nothing was open
+            # at all. That is how a founder who opened a school, an academy
+            # and an imperial patron on the same turn had all three shut by
+            # the staffing rule on the next one. You cannot answer a shortage
+            # of craftsmen by closing something no craftsman was watching.
+            _holders = [k for k in sorted(self.operating)
+                        if self.venture_hands(k)[1] > 0.005
+                        or self.venture_hands(k)[0] > 0.005]
+            if not _holders:
+                break
+            worst = min(_holders,
                         key=lambda k: ((self.nodes[k]["rev"] - self.nodes[k]["up"])
                                        / max(0.01, self.venture_hands(k)[1]),
                                        -self.venture_hands(k)[1]))
@@ -320,6 +394,31 @@ class ProjectsMixin:
         _room = max(0.0, self.capital) + self.credit_limit() * 0.5
         if self.capital < 0 and -self.capital > self.credit_limit() * 0.5:
             return []
+        # AND THE ONES WHOSE WORTH IS NOT AT THE DOOR. A school takes 2,500 a
+        # year and hands back 800, so the margin test above shuts it out for
+        # ever - and a school is where twelve of your scholars come from.
+        # Everything a capability is gated on has to be able to open on the
+        # strength of the capability, at a loss, provided the loss is one the
+        # household can actually carry. Cheapest to keep first, so a poor
+        # founder gets the workshop and the local patron before the academy.
+        caps = sorted((k for k in sorted(self.done)
+                       if k in self.CAPABILITY_INSTITUTIONS
+                       and k not in self.operating and self.is_venture(k)
+                       and self.nodes[k]["rev"] <= self.nodes[k]["up"]),
+                      key=lambda k: (self.nodes[k]["up"] - self.nodes[k]["rev"],
+                                     self.venture_capex(k), k))
+        # WHAT IS LEFT AFTER EVERYTHING YOU ARE ALREADY COMMITTED TO. Opening
+        # an institution you cannot feed is how a household ends up abandoning
+        # the works it already had.
+        _surplus = (self.revenue() - self.upkeep() - self.living_cost())
+        for k in caps:
+            _bleed = self.nodes[k]["up"] - self.nodes[k]["rev"]
+            if _bleed > max(0.0, _surplus) * 0.5:
+                continue
+            ok, _w = self.open_venture(k)
+            if ok:
+                opened.append(k)
+                _surplus -= _bleed
         blocked = None
         for k in cands:
             # NO SECOND, STRICTER GATE. This broke out the moment capital went
@@ -845,10 +944,10 @@ class ProjectsMixin:
         if n["cat"] in ("social", "institution", "foundation", "capability", "material"):
             return True, None
         si = self.state_interest(n)
-        if si < -0.4 and not self.has("patron_local"):
+        if si < -0.4 and not self.running("patron_local"):
             return False, ("the state is wary of this (state interest %.1f); "
                            "get at least a local patron first" % si)
-        if si < -1.2 and not (self.has("patron_senatorial") or self.protection > 0.45):
+        if si < -1.2 and not (self.running("patron_senatorial") or self.protection > 0.45):
             return False, ("the state actively opposes this (state interest %.1f); "
                            "you need senatorial patronage, or protection above 0.45 "
                            "(you have %.2f)" % (si, self.protection))

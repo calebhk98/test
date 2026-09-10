@@ -628,7 +628,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # hiding the acquisition. Buying people on someone's behalf without
         # telling them is the worst version of that.
         if self.policy.get("auto_buy_people", False):
-            if self.capital > 6000 and self.artisans < 12 and self.has("workshop_first"):
+            if self.capital > 6000 and self.artisans < 12 and self.running("workshop_first"):
                 got = self.buy_slaves(min(6, int(self.capital // 1500)))
                 if got:
                     self.log.append((yr, "bought %d people for the workshop" % got))
@@ -1376,7 +1376,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # 7. founder mortality
         if self.founder_alive:
             self.life_left -= 1
-            if self.has("sanitation_antisepsis"):
+            if self.running("sanitation_antisepsis"):
                 self.life_left += 0.12      # you at least do not die of a septic cut
             if self.life_left <= 0:
                 self.founder_alive = False

@@ -230,25 +230,25 @@ class LabourMixin:
         # arrival and never asked for.
         base_sc, base_ar = 0.0, 0.0
         sc = ar = di = 0.0
-        if self.has("workshop_first"):     ar += 6
-        if self.has("freedman_staff"):     ar += 10
-        if self.has("school_founded"):     sc += 12; ar += 12; di += 2.0
-        if self.has("collegium_licensed"): sc += 3
-        if self.has("patron_senatorial"):  sc += 4;  ar += 6
-        if self.has("patron_imperial"):    sc += 14; ar += 50; di += 2.0
-        if self.has("endowment_land"):     sc += 6;  ar += 8;  di += 1.0
-        if self.has("academy_network"):    sc += 40; ar += 50; di += 6.0
-        if self.has("corpus_dispersed"):   sc += 8;  di += 1.0   # people teach themselves from your books
+        if self.running("workshop_first"):     ar += 6
+        if self.running("freedman_staff"):     ar += 10
+        if self.running("school_founded"):     sc += 12; ar += 12; di += 2.0
+        if self.running("collegium_licensed"): sc += 3
+        if self.running("patron_senatorial"):  sc += 4;  ar += 6
+        if self.running("patron_imperial"):    sc += 14; ar += 50; di += 2.0
+        if self.running("endowment_land"):     sc += 6;  ar += 8;  di += 1.0
+        if self.running("academy_network"):    sc += 40; ar += 50; di += 6.0
+        if self.running("corpus_dispersed"):   sc += 8;  di += 1.0   # people teach themselves from your books
         # Industrialisation compounds: each heavy node trains the workforce that
         # makes the next one possible. This is the engine of the late game.
-        if self.has("interchangeable_parts"): ar += 40; sc += 4
-        if self.has("crucible_steel"):     ar += 12
-        if self.has("blast_furnace"):      ar += 15
-        if self.has("telegraph_electric"): ar += 25; sc += 6
-        if self.has("steam_high_pressure"):ar += 45
+        if self.running("interchangeable_parts"): ar += 40; sc += 4
+        if self.running("crucible_steel"):     ar += 12
+        if self.running("blast_furnace"):      ar += 15
+        if self.running("telegraph_electric"): ar += 25; sc += 6
+        if self.running("steam_high_pressure"):ar += 45
         if self.has("bessemer_openhearth"):ar += 65; sc += 6
-        if self.has("railway"):            ar += 95; sc += 8
-        if self.has("power_grid"):         sc += 45; ar += 130; di += 6.0
+        if self.running("railway"):            ar += 95; sc += 8
+        if self.running("power_grid"):         sc += 45; ar += 130; di += 6.0
         # LITERACY BOUNDS THE SCHOLAR CEILING. A school, an academy or an
         # imperial patron can only produce as many scholars as this society
         # has literate, propertied people to draw them from (literacy_factor
@@ -330,19 +330,19 @@ class LabourMixin:
         them every year, and you can only supervise so many.
         """
         room = 6.0 + 14.0 * self.directors_extra
-        if self.has("workshop_first"):  room += 6.0
-        if self.has("school_founded"):  room += 10.0
-        if self.has("academy_network"): room += 30.0
+        if self.running("workshop_first"):  room += 6.0
+        if self.running("school_founded"):  room += 10.0
+        if self.running("academy_network"): room += 30.0
         return room
 
     def hired_cap(self):
         # a civilization of 1.5 million cannot staff what one of 65 million can
         cap = self.cfg["hired_hours_cap_base"] * (0.25 + 0.75 * min(1.0, self.pop_scale))
-        if self.has("school_founded"):    cap *= 2.0
-        if self.has("freedman_staff"):    cap *= 1.5
-        if self.has("patron_imperial"):   cap *= 3.0
-        if self.has("academy_network"):   cap *= 2.5
-        if self.has("interchangeable_parts"): cap *= 1.5
+        if self.running("school_founded"):    cap *= 2.0
+        if self.running("freedman_staff"):    cap *= 1.5
+        if self.running("patron_imperial"):   cap *= 3.0
+        if self.running("academy_network"):   cap *= 2.5
+        if self.running("interchangeable_parts"): cap *= 1.5
         return cap
 
     # ---- how a SOCIETY reacts to a TECHNOLOGY -------------------------------
@@ -540,10 +540,10 @@ class LabourMixin:
         else:
             share = 0.25          # glassblowers, engravers, opticians' forebears
         cap = base * share
-        if self.has("school_founded"):        cap *= 2.0
-        if self.has("patron_imperial"):       cap *= 3.0
-        if self.has("academy_network"):       cap *= 2.5
-        if self.has("interchangeable_parts"): cap *= 1.5
+        if self.running("school_founded"):        cap *= 2.0
+        if self.running("patron_imperial"):       cap *= 3.0
+        if self.running("academy_network"):       cap *= 2.5
+        if self.running("interchangeable_parts"): cap *= 1.5
         # A trade that needs reading cannot be bought past how many people
         # here can read (FINDINGS_ROUND2 section Q). scholar and scribe are
         # the only literate trades that reach this branch - the taught ones

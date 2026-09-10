@@ -45,7 +45,7 @@ class SocietyMixin:
         # A recognised scholar doing something strange is a scholar; a stranger
         # doing the same thing is a sorcerer. This is the persona working, and
         # it is what the node has always said it does.
-        if self.has("identity_cover"):
+        if self.running("identity_cover"):
             a *= 0.75
         return a
 
@@ -55,9 +55,9 @@ class SocietyMixin:
         magistracies and, in a society with a bribability of 0.55, verdicts."""
         p = 0.0
         w = self.w
-        if self.has("patron_local"):        p += 0.18 * w["patronage_weight"]
-        if self.has("patron_senatorial"):   p += 0.26 * w["patronage_weight"]
-        if self.has("patron_imperial"):     p += 0.32 * w["patronage_weight"]
+        if self.running("patron_local"):        p += 0.18 * w["patronage_weight"]
+        if self.running("patron_senatorial"):   p += 0.26 * w["patronage_weight"]
+        if self.running("patron_imperial"):     p += 0.32 * w["patronage_weight"]
         # IT SAYS "REDUCES ALL FUTURE SUSPICION" AND IT DID NOTHING OF THE KIND.
         # identity_cover's entire implementation was +1.0 to the reputation
         # floor and +400 to the credit limit, and the suspicion it promised to
@@ -67,11 +67,11 @@ class SocietyMixin:
         # a persona: books, a house, clothes, a secretary and a reputation for
         # piety. What that buys is that an inexplicable effect coming out of
         # YOUR workshop is read as learning rather than as sorcery.
-        if self.has("identity_cover"):      p += 0.12
+        if self.running("identity_cover"):      p += 0.12
         if self.has("citizenship"):         p += 0.10
-        if self.has("collegium_licensed"):  p += 0.10
-        if self.has("endowment_land"):      p += 0.08   # conspicuous benefaction
-        if self.has("fin_university") or self.has("school_founded"): p += 0.06
+        if self.running("collegium_licensed"):  p += 0.10
+        if self.running("endowment_land"):      p += 0.08   # conspicuous benefaction
+        if self.running("fin_university") or self.running("school_founded"): p += 0.06
         p += min(0.30, self.reputation / 260.0)
         # BRIBERY, ADVOCACY AND PIETY: an explicit, spendable defence.
         income = max(1.0, self.revenue())
@@ -151,10 +151,10 @@ class SocietyMixin:
         settles = yearly / 0.07
         p = max(0.0, (self.eminence - danger) / 90.0)
         helps = []
-        if not self.has("academy_network"):
+        if not self.running("academy_network"):
             helps.append("a wide, dispersed institution is harder to destroy than "
                          "one great man")
-        if self.has("patron_imperial"):
+        if self.running("patron_imperial"):
             helps.append("you are as close to the throne as it is possible to "
                          "stand, which is the most exposed place there is")
         if self.capital > 250000:
@@ -218,10 +218,10 @@ class SocietyMixin:
         rep = max(0.0, self.reputation) / 100.0
         wealth = min(1.0, max(0.0, self.capital) / 250000.0)
         h = 2.2 * w.get("w_eminence_danger", 0.5) * (0.70 * rep * rep + 0.30 * wealth)
-        if self.has("patron_imperial"):
+        if self.running("patron_imperial"):
             h *= 1.5          # nearest the throne, most exposed to its turnover
         # A wide, dispersed institution is harder to destroy than one great man.
-        if self.has("academy_network"):
+        if self.running("academy_network"):
             h *= 0.65
         # AND A CITY GETS USED TO YOU. familiarity is the model's own measure of
         # how unsurprising you have become - it already decays the alarm your
@@ -574,7 +574,7 @@ class SocietyMixin:
         are not a fair fight. None of it is hardcoded here any more.
         """
         r = self.rng
-        prep = self.has("plague_preparedness")
+        prep = self.running("plague_preparedness")
         for h in self.civ.get("hazards", []):
             a, b = h.get("years", [0, 0])
             if not (a <= yr <= b):
@@ -651,8 +651,8 @@ class SocietyMixin:
                                      % (h.get("name", "crisis"),
                                         ", ".join(_took)
                                         or "you had nothing it could take")))
-                    if self.has("corpus_dispersed"):   pl, frac = 0.12, 0.08
-                    elif self.has("corpus_written"):   pl, frac = 0.45, 0.22
+                    if self.running("corpus_dispersed"):   pl, frac = 0.12, 0.08
+                    elif self.running("corpus_written"):   pl, frac = 0.45, 0.22
                     else:                              pl, frac = 0.80, 0.40
                     if r.random() < pl:
                         # sorted() matters: self.done is a SET and iterates in an
@@ -693,7 +693,7 @@ class SocietyMixin:
                                    ", ".join(_named[:8])
                                    + (" and %d more" % (len(_named) - 8)
                                       if len(_named) > 8 else ""),
-                                   "" if self.has("corpus_dispersed")
+                                   "" if self.running("corpus_dispersed")
                                    else " (the corpus was never printed and "
                                         "dispersed)",
                                    ". THE CORPUS ITSELF WENT (%s): your hedge "
@@ -803,7 +803,7 @@ class SocietyMixin:
         # this comment describes never applied to anything: the roll came up
         # five per cent a year for ever, which is precisely the behaviour the
         # fix was written to stop. (The save list carried the unread name too.)
-        if (r.random() < 0.05 and self.has("patron_local")
+        if (r.random() < 0.05 and self.running("patron_local")
                 and yr - getattr(self, "last_patron_death", -99) > 25):
             self.last_patron_death = yr
             self.scandal += 4
