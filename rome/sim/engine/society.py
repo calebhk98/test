@@ -78,6 +78,69 @@ class SocietyMixin:
         p += min(0.30, (self.bribes_ytd / (income * 0.6)) * w["bribability"])
         self.protection = min(0.92, p)
 
+    WITHDRAW_EVERY = 12          # years; being seen to retire twice is not retiring
+
+    def withdraw_from_public_life(self):
+        """Deliberately become a smaller man. The one lever against prominence.
+
+        Both play testers of round eight died to eminence and both said the
+        same thing about it: `help eminence` says "nothing lowers it directly,
+        which is the point", the two counters named are ten-year builds behind
+        long chains, and the steady state the game prints is above the danger
+        line - so playing well is a death sentence and no command reads as
+        "get smaller". That is a mechanic with no decision in it.
+
+        This is the decision. It is what the men this hazard is modelled on
+        actually did, and what the game's own confiscation event already
+        describes ("you withdraw from public life for a while"): stop
+        appearing, stop publishing under your own name, let somebody else take
+        the credit. The price is reputation, which in this model is not
+        cosmetic - it sets your credit limit, your protection, what wages you
+        must pay, how fast the market supplies you and the calendar floor on
+        every project. You cannot get small and stay grand.
+
+        What you BUILT you keep: the floor under reputation is exactly the work
+        that stands, so this takes away the novelty and leaves the corpus.
+        """
+        if not self.founder_alive:
+            return False, "there is nobody left to withdraw"
+        last = getattr(self, "last_withdrawal", -999)
+        if self.year - last < self.WITHDRAW_EVERY:
+            return False, ("you stepped back in %d; doing it again so soon is "
+                           "not retirement, it is a performance, and nobody "
+                           "would believe it. You could again in %d"
+                           % (last, last + self.WITHDRAW_EVERY))
+        floor = self.standing_floor()
+        # DO NOT LET THEM PAY FOR NOTHING. Same rule as `bribe`: work out
+        # whether it would buy anything before taking anything. At an eminence
+        # nobody has noticed, retiring is not modesty, it is throwing away the
+        # standing that gets your work funded and staffed.
+        danger = self.cfg["eminence_danger"]
+        if self.eminence < danger * 0.5:
+            return False, ("nobody is watching you closely enough for this to "
+                           "buy anything: prominence is %.1f against a danger "
+                           "line of %.0f. Withdrawing now would only cost you "
+                           "the standing that gets your work funded. Nothing "
+                           "was changed." % (self.eminence, danger))
+        if self.reputation <= floor + 0.5:
+            return False, ("you are already as obscure as a man who has built "
+                           "what you have built can be. What is left of your "
+                           "standing is the work itself, and that does not go "
+                           "away. Nothing was changed.")
+        self.last_withdrawal = self.year
+        rep_before, em_before = self.reputation, self.eminence
+        # Halfway to the floor, not to zero: the work stands.
+        self.reputation = floor + (self.reputation - floor) * 0.5
+        self.eminence *= 0.5
+        self.update_protection()
+        msg = ("you withdraw from public life: reputation %.1f -> %.1f, "
+               "eminence %.1f -> %.1f. What you built still stands, and that "
+               "is the floor under your standing (%.1f). It costs you credit, "
+               "protection and cheap labour until it grows back."
+               % (rep_before, self.reputation, em_before, self.eminence, floor))
+        self.log.append((self.year, msg))
+        return True, msg
+
     def eminence_report(self):
         """Where you stand against the one danger no patron can protect you from."""
         c = self.cfg
@@ -96,10 +159,35 @@ class SocietyMixin:
                          "stand, which is the most exposed place there is")
         if self.capital > 250000:
             helps.append("visible wealth is half of what makes you a target")
+        # THE LEVER, NAMED. Two play testers read this screen, found no command
+        # in it that meant "get smaller", and died. It is `withdraw`.
+        _last = getattr(self, "last_withdrawal", None)
+        if _last is not None and self.year - _last < self.WITHDRAW_EVERY:
+            _w = ("you stepped back in %d; again no sooner than %d"
+                  % (_last, _last + self.WITHDRAW_EVERY))
+        else:
+            _w = ("'withdraw' halves this now and gives up half the reputation "
+                  "you hold above what your work alone is worth (%.1f). That is "
+                  "a real price - reputation is your credit, your protection, "
+                  "your wages and the pace of your projects - and it is the only "
+                  "thing that lowers prominence the year you do it."
+                  % self.standing_floor())
         return {"now": round(self.eminence, 2),
                 "dangerous_above": danger,
                 "settles_at_if_nothing_changes": round(settles, 1),
                 "chance_of_ruin_this_year": round(p, 4),
+                # WHICH OUTCOME. A play tester survived two confiscations and
+                # was then ended by a third roll, with "7% chance of ruin this
+                # year" shown before all three, and had no way to know the rolls
+                # differed. They do: 45% a confiscation, 35% a patron lost, 20%
+                # the end. Reading "chance of ruin" as "chance of death" was the
+                # game's fault, not theirs.
+                "if_it_lands_it_is": {
+                    "property confiscated and a forced retirement": 0.45,
+                    "your patron destroyed in someone else's quarrel": 0.35,
+                    "the end of the run": 0.20},
+                "chance_the_run_ENDS_this_year": round(p * 0.20, 4),
+                "the_one_lever": _w,
                 "what_would_change_it": helps,
                 "note": "This is prominence, not scandal. It cannot be bribed "
                         "away, and every defence that makes you safer from "
@@ -135,6 +223,16 @@ class SocietyMixin:
         # A wide, dispersed institution is harder to destroy than one great man.
         if self.has("academy_network"):
             h *= 0.65
+        # AND A CITY GETS USED TO YOU. familiarity is the model's own measure of
+        # how unsurprising you have become - it already decays the alarm your
+        # work causes - and it was the one defence prominence ignored. Two play
+        # testers read "EMINENCE is dangerous above 26 (settles near 39.2)" and
+        # correctly described it as the game announcing that a successful run is
+        # scheduled to die. A man who has been the great man of the city for
+        # ninety years is a fixture, not a novelty; he is still exposed, and he
+        # is not what he was in his first decade. Capped at a third off, so this
+        # softens the clock without stopping it.
+        h *= (1.0 - 0.37 * self.familiarity)
         return h
 
     # The FIRST answer to "I have no staff" is now the obvious one, which the

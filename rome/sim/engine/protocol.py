@@ -548,11 +548,27 @@ def _agent_help(s, topic=None):
             "ruin. Sejanus was the most protected man in Rome until the morning "
             "he was not."),
             "what lowers it": (
-                "Nothing lowers it directly, which is the point. What SURVIVES "
-                "it is a wide, dispersed institution - academy_network makes "
-                "the hazard itself smaller, and corpus_dispersed means what you "
+                'One command does, and its price is real: {"cmd":"withdraw"} '
+                "halves your prominence now and gives up half the reputation "
+                "you hold above what your work by itself is worth. Reputation "
+                "here is your credit limit, your protection, the wages you must "
+                "pay and the pace of your projects, so you cannot get small and "
+                "stay grand - and you cannot do it twice in twelve years, "
+                "because being seen to retire repeatedly is not retiring."),
+            "what survives it": (
+                "A wide, dispersed institution - academy_network makes the "
+                "hazard itself smaller, and corpus_dispersed means what you "
                 "know is in too many places to burn. Being merely rich and "
                 "merely famous is the dangerous combination."),
+            "and time helps": (
+                "A city gets used to you. The longer you have been a fixture "
+                "and the more of your work it has already seen, the less "
+                "alarming the next thing is - the same familiarity that decays "
+                "the alarm your work causes takes up to a third off this."),
+            "if it lands": (
+                "45% of the time it is a confiscation and a forced retirement, "
+                "35% your patron is destroyed in somebody else's quarrel, and "
+                "20% it is the end of the run. `state` shows both figures."),
             "where to watch it": '{"cmd":"state"} shows it under STANDING'}
 
     if topic in ("risk", "hazards"):
@@ -1262,11 +1278,20 @@ def render_state(out):
         # "dangerous above 26 ... 0% chance of ruin this year" as a flat
         # contradiction, and wrote the whole mechanic off as inert. It was
         # answering a question they had not asked.
+        # "CHANCE OF RUIN" MEANT "CHANCE SOMETHING HAPPENS", and only a fifth
+        # of those somethings end the run. A play tester survived two
+        # confiscations, was ended by the third roll, and had this same line in
+        # front of them before all three. Print both figures.
         L.append("  EMINENCE is dangerous above %s (settles near %s if nothing "
-                 "changes; %s chance of ruin this year)"
+                 "changes; %s chance something lands this year, of which %s "
+                 "would end the run)"
                  % (_fmt_num(prom.get("dangerous_above")),
                     _fmt_num(prom.get("settles_at_if_nothing_changes")),
-                    _pct(prom.get("chance_of_ruin_this_year"))))
+                    _pct(prom.get("chance_of_ruin_this_year")),
+                    _pct(prom.get("chance_the_run_ENDS_this_year"))))
+        if prom.get("the_one_lever") and (prom.get("now") or 0) > (
+                prom.get("dangerous_above") or 1e9) * 0.6:
+            L.append(_wrap(prom["the_one_lever"], indent="    "))
     L.append("  technologies: %s built by you, %s granted for free (%s total)"
              % (_fmt_num(out.get("done_earned")), _fmt_num(out.get("done_granted")),
                 _fmt_num(out.get("done_count"))))
@@ -2033,7 +2058,7 @@ KNOWN_COMMANDS = (
     "money", "risk", "labour", "policy", "help",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
-    "open", "ventures",
+    "open", "ventures", "withdraw",
     "save", "load", "quit",
 )
 
@@ -2077,6 +2102,7 @@ TYPED_ALIASES = {
     "begin": "start", "research": "start", "build": "start",
     "explain": "why", "look": "why", "inspect": "why",
     "route": "path", "plan": "path",
+    "retire": "withdraw", "step_back": "withdraw", "obscurity": "withdraw",
 }
 
 
@@ -2220,6 +2246,9 @@ def parse_typed(line):
         if want not in NODE_IDS:
             want = NODE_IDS_LOWER.get(want.lower(), want)
         return {"cmd": op, "id": want}, None
+
+    if op in ("withdraw", "retire"):
+        return {"cmd": "withdraw"}, None
 
     if op == "bribe":
         if not nums:
@@ -3013,6 +3042,17 @@ def _agent_dispatch_inner(s, nodes, cmd):
         return {"ok": True, "closed": msg,
                 "mine_operating_cost": round(s.mine_operating_cost(), 1)}
 
+    if op == "withdraw":
+        if ended:
+            return {"ok": False, "error": "the run has ended (%s)" % ended}
+        ok, msg = s.withdraw_from_public_life()
+        if not ok:
+            return {"ok": False, "error": msg}
+        return {"ok": True, "withdrew": msg,
+                "eminence": round(s.eminence, 2),
+                "reputation": round(s.reputation, 1),
+                "protection": round(s.protection, 3)}
+
     if op == "bribe":
         if ended:
             return {"ok": False, "error": "the run has ended (%s)" % ended}
@@ -3276,6 +3316,7 @@ SAVE_FIELDS = (
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
+    "last_withdrawal",
     "wages_prepaid",
     # hours_this_year: last year's founder-hours accounting (see step(), just
     # before the within-year tallies above reset). Without it, `state` right
