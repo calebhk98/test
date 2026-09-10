@@ -569,14 +569,33 @@ class SocietyMixin:
                 relief, why = self.hazard_relief("real_erosion")
                 self.money_real *= (1 - h["real_erosion"])
                 bite = h["real_erosion"] * 0.85 * relief
+                had = max(0.0, self.capital)
                 self.lose_capital(bite)
+                lost = had - max(0.0, self.capital)
                 if not getattr(self, "_said_debasement", 0) or yr - self._said_debasement >= 15:
                     self._said_debasement = yr
-                    self.log.append((yr, "%s: the coin is worth %d%% less than it was%s"
+                    # SAY WHAT IT DID TO YOU, and say what it did NOT do. A
+                    # break tester read "the coin is worth 99% less", checked
+                    # `why horse_collar` in 107, 207 and 307 AD, found the
+                    # quote identical to the denarius, and filed it as the
+                    # debasement doing nothing. It is doing something: every
+                    # price in this game is what a thing really costs in
+                    # labour and materials, which debasement does not change.
+                    # What it destroys is the money you are HOLDING. Quoting
+                    # the bite in coin makes that the visible half.
+                    self.log.append((yr, "%s: the coin is worth %d%% less than it "
+                                         "was%s. Quoted costs are what a thing "
+                                         "really takes to make, so they do not "
+                                         "move; what debases is the money in "
+                                         "your chest, and this year it took %s%s"
                                      % (h.get("name", "debasement"),
                                         (1 - self.money_real) * 100,
                                         "; you feel less of it (%s)" % "; ".join(why)
-                                        if why else "")))
+                                        if why else "",
+                                        "{:,.0f}".format(lost)
+                                        if lost > 0.5 else "nothing, because you "
+                                        "were holding none",
+                                        " denarii" if lost > 0.5 else "")))
             if "values" in h:
                 # A hazard can kill your people, burn a site, or make you
                 # poorer, and that used to be the whole vocabulary. Norse
@@ -622,23 +641,58 @@ class SocietyMixin:
         # A patron dies ONCE and then you have courted his heir. The old model
         # rolled 4% every year forever, so a long run logged the same line six
         # times, which is not how having a patron works.
+        # ONE ATTRIBUTE, NOT TWO. The guard read `_last_patron_death` and the
+        # body set `last_patron_death`, so the twenty-five year cooling-off
+        # this comment describes never applied to anything: the roll came up
+        # five per cent a year for ever, which is precisely the behaviour the
+        # fix was written to stop. (The save list carried the unread name too.)
         if (r.random() < 0.05 and self.has("patron_local")
-                and yr - getattr(self, "_last_patron_death", -99) > 25):
+                and yr - getattr(self, "last_patron_death", -99) > 25):
             self.last_patron_death = yr
             self.scandal += 4
+            was = self.protection
             self.protection *= 0.6
-            self.capital -= 800
-            self.log.append((yr, "your patron dies; his heir must be courted afresh"))
+            gift = 800.0 * self.price_index
+            self.capital -= gift
+            # SAY WHAT IT COST. A play tester read "your patron dies; his heir
+            # must be courted afresh", found nothing in `state` that had
+            # changed by an amount they could point at, and asked whether the
+            # line was decorative. It was not: it takes money, standing and
+            # most of your cover, and it should say so, because the answer to
+            # it - court somebody, spend on standing - is a decision.
+            self.log.append((yr, "your patron dies; his heir must be courted "
+                                 "afresh. The courting cost %s denarii, your "
+                                 "protection falls from %d%% to %d%%, and you "
+                                 "are talked about (scandal +4)"
+                             % ("{:,.0f}".format(gift), was * 100,
+                                self.protection * 100)))
         if r.random() < 0.03:
+            had = max(0.0, self.capital)
             self.lose_capital(0.18)
             # An insula is a Roman tenement block, and a tester playing Han China
             # counted nine fires in the insula district of Luoyang in a hundred
             # years. Every civilization file names its own quarter.
-            self.log.append((yr, "fire in the %s"
-                             % self.civ.get("fire_quarter", "crowded quarter")))
+            self.log.append((yr, "fire in the %s: it destroyed %s"
+                             % (self.civ.get("fire_quarter", "crowded quarter"),
+                                self._loss_words(had))))
         if r.random() < 0.02:
+            had = max(0.0, self.capital)
             self.lose_capital(0.10)
-            self.log.append((yr, "banditry or a frontier war disrupts supply"))
+            self.log.append((yr, "banditry or a frontier war disrupts supply: "
+                                 "it cost you %s" % self._loss_words(had)))
+
+    def _loss_words(self, had_before):
+        """"1,240 denarii" or "nothing, you were holding none".
+
+        Every one of these lines used to name the event and stop. A break
+        tester's standing complaint across two rounds was that the game
+        announces catastrophes and leaves you to diff your own `state` to find
+        out whether anything happened.
+        """
+        lost = had_before - max(0.0, self.capital)
+        if lost <= 0.5:
+            return "nothing, because you were holding none"
+        return "{:,.0f} denarii".format(lost)
 
     def _catastrophe(self, why):
         self.dead_reason = why

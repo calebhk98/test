@@ -1,0 +1,308 @@
+# Playtest notes - "One person, and everything they know" (rome/sim/simulator.py)
+
+Session setup used for most repros (unless stated):
+
+    cd /home/user/test && printf '2\nn\npoor_scholar\nn\n...commands...\n' | python3 rome/sim/simulator.py
+
+(scenario 2 = Rome 100 AD, fog OFF, poor_scholar 400 den, no ageing)
+
+---
+
+## Findings (in discovery order; see TOP PROBLEMS at end/top)
+
+### F1. `ventures` contradicts `money`: you earn 233.5 den/yr from ventures that are "not running"
+
+Repro (turn 1, no commands before):
+
+    money
+    ventures
+
+`money` prints:
+
+    Capital: 400 den     Revenue: 233.5 den/yr
+      from:
+        med_cataract_couching                  166.7
+        med_trepanation                        66.7
+        (these add up to the revenue above)
+
+`ventures` prints:
+
+    RUNNING
+      nothing
+    YOU KNOW HOW, AND HAVE NOT OPENED
+      nothing
+    ... "Only what you are RUNNING earns anything or costs anything."
+
+`state` also prints `RUNNING: nothing`. So the two screens disagree about
+whether anything is running, and the help text's promise ("until you do
+[open], it earns nothing") is false: I am paid 233.5 den/yr on turn 1.
+
+### F2. `why` reports a revenue 3x larger than the ledger actually pays
+
+    why med_cataract_couching   ->  REVENUE: 500 den/yr    (ledger pays 166.7)
+    why med_trepanation         ->  REVENUE: 200 den/yr    (ledger pays  66.7)
+
+Both are paid at exactly 1/3 of the advertised figure, with no explanation
+anywhere on either screen. Also both say "THIS SOCIETY ALREADY HAS THIS. You
+did not build it and do not maintain it." while still crediting you the money.
+
+### F3. Ledger addition is off: 166.7 + 66.7 = 233.4, printed as 233.5
+The line literally says "(these add up to the revenue above)". They do not.
+
+### F4. `ventures` says you have staff; `labour` says you have none
+
+    ventures -> "free to put behind something new: 1 scholars, 1 craftsmen"
+    labour   -> "ON YOUR STAFF: nobody ... Total employed: 0"
+    why med_cataract_couching -> "STAFF NEEDED: 1 scholars, 0 artisans (you have 1, 0)"
+
+Three screens, three different craftsman/artisan counts (1 craftsmen / 0 / 0).
+
+### F5. `help economy` and `help money` print identical text
+`help commands` advertises both `economy` and `money` topics; `help economy`
+silently prints the money topic. (Minor.)
+
+### F6. `why` cost lines do not add up
+
+    why scientific_method
+    -> COST: 230 den total  (100 labour + 0 materials + 100 capital, then x1 your civ,
+                             x1 distance, x1 scarcity, x1 prices)
+
+100 + 0 + 100 = 200, and every multiplier is printed as x1, but the total is 230.
+Same shape elsewhere, smaller:
+
+    why hom_toys_dolls -> COST: 75.5 den total (21.8 labour + 3.6 materials + 50 capital)
+    21.8 + 3.6 + 50 = 75.4, printed 75.5.
+
+So the breakdown the game shows a player is not the number it charges them.
+
+### F7. Hidden 1/3 (really hours/6000) scaling of practice revenue, never stated
+
+`why med_cataract_couching` says REVENUE: 500 den/yr. The ledger pays 166.7.
+Measured by spending founder-hours on wage work:
+
+    work labourer 1000 -> money -> med_cataract_couching 83.3
+    work labourer 1500 -> money -> med_cataract_couching 41.7
+    work labourer 1900 -> money -> med_cataract_couching  8.3
+    work labourer 2000 -> money -> Revenue: 0 den/yr
+
+Revenue = 500 * (founder hours left / 6000). You only ever have 2,000 hours, so
+the advertised 500 den/yr is unreachable by a factor of 3 and nothing on any
+screen says so. (Built ventures like hom_toys_dolls DO pay the advertised
+number, so the rule is not even uniform.)
+
+### F8. **The affordability check is not applied to your first project.**
+
+Fresh game, 400 den in hand, credit limit 1,367:
+
+    start tx2_watch_case      -> "started ... the bill you have taken on: 17,415"
+    start fin_plantation      -> "REFUSED: you already owe 17,415 denarii on work in
+                                  hand; this would take it to 28,245, and between cash
+                                  and credit you can raise 1,767."
+
+The engine clearly knows I can only raise 1,767. It refuses the *second* start on
+exactly that ground, but happily accepted a 17,415-denarius commitment as the
+first one. Stepping from there:
+
+    step 1  -> Money: -820.1 den, "spent on projects last step: 1,224"
+    step 30 -> EVENT 105: CREDIT EXHAUSTED: 1 projects halted, unfinished.
+               EVENT 105: INSOLVENCY SETTLED ... (reputation -12)
+               EVENT 115: INSOLVENCY SETTLED ... (reputation -12)
+               reputation 5 -> 0.20, 1,306 den paid in interest, nothing built.
+
+A new player has no way to know the first `start` is unchecked; the game
+volunteers the check only after it is too late.
+
+### F9. Project status line says "waiting on your hours" when it is waiting on money
+
+Same session, 101 AD with 2,000 founder-hours free:
+
+    RUNNING (1):
+      tx2_watch_case   7% of your hours spent, 16,191 still owed - waiting on your hours
+          this year's instalment is more than the purse will bear
+
+Two lines that contradict each other. Also "7% of your hours spent" is not hours
+at all - 1,224/17,415 = 7.03% is the fraction of the *bill* paid; the project
+only needs 80 founder-hours out of the 2,000 I have free.
+
+### F10. Reputation penalties are silently clamped
+Two INSOLVENCY events each announce "reputation -12" against a reputation of
+4.9. Reputation ends at 0.20, so the second -12 did nothing at all. The number
+announced is not the number applied.
+
+### F11. **Hiring charges a full year's wage twice for one year of work**
+
+Baseline, no staff:
+
+    step 1 ; money  ->  Capital: 403.5 den   (wages 0, net +3.5)
+
+Same start, hire one smith (listed at 281 den/yr):
+
+    hire smith 1   -> "annual wage bill: 282.9 / capital: 118.8"   (400 - 281.2 paid in advance)
+    step 1 ; money -> Capital: -162.4 den    (wages 272 charged for the year)
+
+One year of one smith at 281 den/yr should cost 281. It cost
+403.5 - (-162.4) = 565.9, i.e. roughly two years' wages. The advance payment
+taken by `hire` is never credited against the year that follows.
+
+Firing does not give it back either:
+
+    hire smith 2 -> capital: -162.5 ;  fire smith 2 -> "annual wage bill: 0", capital still -162.5
+
+so hire-then-fire in the same turn destroys 562 den for zero work, with no warning.
+
+### F12. Wage arithmetic disagrees with itself on the same screen
+
+    hire smith 1 ; labour
+      ON YOUR STAFF:  smith  1   281 den/yr each
+      Total employed: 1     annual wage bill: 282.9 den        (1 x 281 = 281)
+
+    hire smith 1 (again) ; labour
+      smith  2   281 den/yr each
+      Total employed: 2     annual wage bill: 574 den          (2 x 281 = 562)
+
+and the cash actually taken differs between two identical hires in the same
+turn: the first smith cost 281.2, the second cost 283.0.
+
+### F13. People come in fractions
+
+    hire smith 1 ; step 1 ; state
+      EMPLOY: 0.96 people, 272 den/yr in wages
+        smith            0.96
+      labour -> "smith  0.96  281 den/yr each   Total employed: 0.96"
+
+You paid for one person in advance and after one year own 0.96 of them.
+(0.96 x 281 = 269.8, and the bill is printed as 272, so even the fraction does
+not multiply out.)
+
+### F14. "YOU COULD HIRE" hides trades you already employ
+After `hire smith 1`, `labour` no longer lists smith under "YOU COULD HIRE",
+which reads as "no more smiths available". `hire smith 1` still works. The list
+is really "trades you do not yet employ", which is not what it says.
+
+### F15. Hiring increases the labour market's supply
+    labour trade smith            -> "you employ: 0   market can supply: 22,500 hours"
+    hire smith 1 ; labour trade smith -> "you employ: 1   market can supply: 24,500 hours"
+    (and 26,500 after a second hire)
+Taking smiths out of the market makes more smith-hours available.
+
+### F16. **`bribe N` charges you N and gives the same result for N=100 as for N=1,000,000**
+
+Start `absurd` (1,000,000 den), Rome, fog off:
+
+    bribe 10      -> protection 0.00 -> 0.06
+    bribe 100     -> protection 0.00 -> 0.32
+    bribe 1000    -> protection 0.00 -> 0.32
+    bribe 10000   -> protection 0.00 -> 0.32
+    bribe 100000  -> protection 0.00 -> 0.32
+    bribe 1000000 -> protection 0.00 -> 0.32   and:  money -> Capital: 0 den
+
+(each from the same fresh save). The effect saturates at ~100 denarii, but the
+command takes every denarius you name, silently, with no warning and no refund.
+One mistyped `bribe` wipes out the entire game. A following `bribe 1` is then
+refused with "you have 0 denarii".
+
+Related: `help protection` says protection "caps at 92%", but the second bribe
+is refused with "you are already as protected as money can make you here" at 32%.
+
+### F17. `why` cost breakdowns disagree with the totals by up to 29%
+
+The line is written as an equation and is not one. Cleanest cases:
+
+    why sc2_notation_positional
+      COST: 258 den total  (0 labour + 0 materials + 200 capital, then x1.2 your civ,
+                            x1 distance, x1 scarcity, x1 prices)
+      -> 200 x 1.2 = 240, shown 258   (a hidden extra x1.075)
+
+    why scientific_method
+      COST: 230 den total  (100 + 0 + 100, then x1 ...)   -> 200, shown 230  (x1.15)
+
+    why mat_papyrus
+      COST: 402.5 den total (12 + 0 + 300, then x1.2 ...) -> 374.4, shown 402.5
+
+    why fin_plantation
+      COST: 10,831 den total (75 + 0 + 10,000, then x1 ...) -> 10,075, shown 10,831
+
+and yet others are exact (units_standards 104+90+250 = 444 x1 = 444;
+horse_collar 261+173.6+400 = 834.6 x0.85 = 709.4). So the hidden factor is
+neither constant nor disclosed. The charged amount is the *total*, so it is the
+breakdown that is wrong.
+
+### F18. A failure announces a penalty it does not charge
+
+    start sc2_notation_positional ; step 1
+      EVENT 100: FAILED at Positional notation and place value: it did not work.
+                 60% of the work is to do again and 80 is gone. Attempt 2.
+      RUNNING (1): sc2_notation_positional  100% of your hours spent, 0 still owed
+                                            - waiting on the calendar
+    step 1
+      COMPLETED 101: Positional notation and place value
+
+"60% of the work is to do again" but 0 is still owed and the next year finishes
+it at no further cost (money 65.5 -> 74.1, which is just the year's net income).
+Also the project is "waiting on the calendar" although `why` reports
+"CALENDAR FLOOR: 0 years".
+
+### F19. Events take money without saying how much
+
+    step 1 (x5 from a fresh game, nothing built)
+      EVENT 104: fire in the insula district, where the tenements stand six storeys in wood
+      money before: Capital 413.8, Net/yr +3.3  -> money after: Capital 342.0
+
+75.1 denarii vanished (18% of everything I had). The event text names no cost and
+the ledger has no line for it.
+
+### F20. `quote` ignores credit, `start` uses it
+    quote mine coal 500 -> "you have: 284.8 / you can afford about: 31.6" (tonnes)
+Cash only. `start` and the `start` refusal message both use cash+credit
+("between cash and credit you can raise 1,767").
+
+### F21. `available` pagination is not ordered - the cheapest item is on page 2
+
+    available afford 1580             -> "1-30", first row tx2_bleaching_sun 6 den,
+                                         ascending to identity_cover 1,580
+    available afford 1580 offset 30   -> "31-60", first row hom_eraser_breadcrumb 5 den,
+                                         ascending again to sea_lead_sheathing 1,445
+
+Each page is sorted internally but the pages are not a sorted sequence, so
+"the cheapest thing I can start" is not on page 1 and a player paging through
+sees costs go 6...1,580 then 5...1,445. (hom_eraser_breadcrumb at 5 den is the
+cheapest node in the game and appears at position 31.)
+
+### F22. The arrears warning quotes a loss that is not the loss
+
+    step 200 ; state ; money
+      !! YOU HAVE BEEN IN ARREARS 63 YEARS AND YOU LOSE 46 DENARII A YEAR ...
+      LEDGER ... Net/yr: -159.5
+
+46 vs 159.5. Same at the horizon: "YOU LOSE 66 DENARII A YEAR" against Net/yr -200.4.
+
+### F23. The escape advice the game gives is advice the game itself calls a mistake
+
+The arrears banner says:
+
+    it is escapable, and none of these need anybody to lend you a denarius
+     - work for wages: you have 2000 of your own hours left this year ...
+
+Taking that advice:
+
+    work labourer 2000
+      earned: 125.1
+      but: you earned 125, and the practice those hours were running was worth 175
+           a year - so this cost you 50. Wage work is for when you have no practice to lose.
+
+The recommendation and the response to following it are contradictory, and the
+recommendation is the losing move.
+
+### F24. The end-of-run screen still tells you to do things it will refuse
+
+At 600 AD ("THE RUN HAS ENDED") `state` still prints the arrears banner with
+"it is escapable ... work for wages: you have 2000 of your own hours left this
+year". Every one of those is refused:
+
+    work labourer 2000 -> REFUSED: the run has ended ...
+    start hom_toys_dolls -> REFUSED: ... nothing more can be started
+    hire smith 1 -> REFUSED: the run has ended ...
+
+### F25. `open <bad id>` gives no "did you mean", `why <bad id>` does
+    why nonexistent_thing -> REFUSED: unknown node 'nonexistent_thing'. did you mean: ...
+    open nonexistent      -> REFUSED: no such node

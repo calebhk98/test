@@ -123,7 +123,13 @@ class EconomyMixin:
             if net >= 0:
                 break
             worst = None
-            for k in sorted(self.done):
+            # WHAT YOU ARE ACTUALLY PAYING FOR, which since knowing and running
+            # became two states is `operating`, not `done`. This scanned every
+            # completed node, so in a bad year it would pick a loss-maker that
+            # was already shut, unlearn it, and save nothing at all: upkeep
+            # follows `operating` and a closed concern was already costing
+            # nothing. The player lost the knowledge and kept the deficit.
+            for k in sorted(self.operating):
                 n = self.nodes[k]
                 if (n["up"] <= n["rev"] or k in self.granted
                         or self.never_abandon(k)):
@@ -136,10 +142,9 @@ class EconomyMixin:
             # CLOSE IT, do not unlearn it. Shedding a loss-maker in ruin is
             # shutting the doors, and what that saves is its running cost. The
             # knowledge stays: you cannot forget how a thing works because you
-            # could not pay for it this year.
+            # could not pay for it this year. (This used to discard it from
+            # `done` two lines under a comment saying it did not.)
             self.operating.discard(worst)
-            self.done.discard(worst)
-            self._done_changed()
             # MOTHBALLED, not merely discarded: this is the plant falling into
             # disrepair, exactly like a deliberate `mothball`, and it must show
             # up the same way - in `state.mothballed`, and NOT back in
@@ -154,8 +159,11 @@ class EconomyMixin:
             # not which one, not how to get it back. A tester asked the fair
             # question - how do you understand what you lost, or why an option
             # reappeared, if you were never told its name?
-            self.log.append((yr, "stopped maintaining %d works that cost more than "
-                                 "they returned: %s" % (len(shed), ", ".join(shed))))
+            self.log.append((yr, "in arrears, so closed %d concern%s that cost more "
+                                 "than they returned: %s. You still know how; "
+                                 "'restore' reopens one when you can pay for it"
+                             % (len(shed), "" if len(shed) == 1 else "s",
+                                ", ".join(shed))))
 
     def debt_interest_rate(self):
         """What arrears cost you a year.
@@ -1105,6 +1113,81 @@ class EconomyMixin:
         self.capital -= cost
         self.forest_ha += ha
         return ha
+
+    # Two denarii the square metre, which is the figure step() has always used
+    # (spend / 2.0) written down where a quote can read it. A nitre bed is a
+    # heap of dung, straw and ash turned for two years; it is cheap to lay and
+    # slow to yield, which is exactly why nobody builds one until they are
+    # already short.
+    NITRE_COST_PER_M2 = 2.0
+    NITRE_YIELD_T_PER_M2 = 0.0008
+
+    def build_nitre(self, m2):
+        """Lay down nitre beds. Saltpetre is not dug and not grown; it is made.
+
+        There was no way for a player to do this at all. The only thing that
+        laid a bed was step(), which took five per cent of your capital every
+        year you were short, said nothing, and did it whether or not you had
+        turned the automatic policies off. A shortage the game will not let you
+        act on is not a constraint, it is a wall.
+        """
+        m2 = float(m2)
+        if m2 <= 0:
+            return 0.0
+        cost = m2 * self.NITRE_COST_PER_M2 * self.price_index
+        if cost > self.capital:
+            return 0.0
+        self.capital -= cost
+        self.nitre_bed_m2 += m2
+        return m2
+
+    def shortage_remedy(self, binding):
+        """One sentence on what would end this shortage, in things you can type.
+
+        The throttle message used to name the material and the percentage and
+        stop, which tells a player they are stuck without telling them it is
+        fixable. Every binding constraint in the model has exactly one answer;
+        this is that answer, said out loud.
+        """
+        if not binding:
+            return ""
+        if binding == "charcoal":
+            need = max(0.0, self.annual_material_demand().get("charcoal_kg", 0.0)
+                       / 1000.0 - self.forest_ha * self.CHARCOAL_PER_HA)
+            ha = max(1.0, round(need / max(self.CHARCOAL_PER_HA, 1e-9)))
+            return ("Charcoal is grown, not bought: about %s more hectare%s of "
+                    "coppice would cover it ('buy forest %d', roughly %s "
+                    "denarii). Ask the price first with 'quote forest %d'."
+                    % ("{:,.0f}".format(ha), "" if ha == 1 else "s", ha,
+                       "{:,.0f}".format(ha * self.FOREST_COST_PER_HA * self.price_index),
+                       ha))
+        if binding == "saltpetre":
+            return ("Saltpetre is made in nitre beds, not mined: 'buy nitre "
+                    "20000' lays twenty thousand square metres. A bed yields "
+                    "%.4f tonnes a square metre a year, so it takes a large "
+                    "one, and it is cheap: %s denarii the square metre."
+                    % (self.NITRE_YIELD_T_PER_M2,
+                       "{:,.2f}".format(self.NITRE_COST_PER_M2 * self.price_index)))
+        if binding in self.MINE_CAPEX_PER_T_YR:
+            dem = self.annual_material_demand()
+            keys = {"coal": ("coal_kg",), "iron": ("iron_bar_kg", "iron_ore_kg"),
+                    "copper": ("copper_kg",), "lead": ("lead_kg",),
+                    "tin": ("tin_kg",), "silver": ("silver_kg",)}.get(binding, ())
+            short = max(0.0, sum(dem.get(kk, 0.0) for kk in keys)
+                        - self.mine_capacity.get(binding, 0.0))
+            t = max(1.0, round(short))
+            return ("The market will not sell you enough %s, so you have to dig "
+                    "it: %s. 'quote mine %s %d' for the price, then 'buy mine "
+                    "%s %d'. A shaft takes a few years to come into production."
+                    % (binding,
+                       ("you are about %s tonnes a year short"
+                        % "{:,.0f}".format(short)) if short >= 1.0
+                       else "your own workings already cover the demand you have "
+                            "today, so this is the market, not you",
+                       binding, t, binding, t))
+        return ("Nothing you own supplies %s and the market is out of it; the "
+                "work waits until something upstream of it is built."
+                % binding)
 
     def living_cost(self):
         """You have to eat, sleep somewhere, pay tax, and look the part.

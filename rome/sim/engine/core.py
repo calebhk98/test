@@ -704,13 +704,26 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                 # ore is only half the answer.
                 if self.binding in ("iron", "copper", "lead"):
                     self.buy_forest(min(200.0, self.capital / 1800.0))
-            elif self.binding == "saltpetre":
+            elif (self.binding == "saltpetre"
+                    and self.policy.get("auto_mine", not self.manual)):
+                # GATED, like every other automatic purchase. This branch sat
+                # outside the policy check and took five per cent of a manual
+                # player's capital every year they were short of nitre,
+                # without a line in the log and without anything they typed.
                 spend = min(self.capital * 0.05, 2000)
                 self.capital -= spend
-                self.nitre_bed_m2 += spend / 2.0
+                self.nitre_bed_m2 += spend / self.NITRE_COST_PER_M2
+                self.log.append((yr, "laid down %d square metres of nitre bed "
+                                     "for %d denarii (auto_mine)"
+                                 % (spend / self.NITRE_COST_PER_M2, spend)))
         if thr < 0.6 and self.binding:
-            self.log.append((yr, "SHORT OF %s: work running at %d%% of plan"
-                             % (self.binding.upper(), thr * 100)))
+            # SAY WHAT TO DO ABOUT IT. A play tester read "SHORT OF SALTPETRE:
+            # work at 5% of plan" for thirty years and could not find out what
+            # saltpetre was for, who wanted it, or what would fix it. A number
+            # that low with no remedy attached reads as the game being stuck.
+            self.log.append((yr, "SHORT OF %s: work running at %d%% of plan. %s"
+                             % (self.binding.upper(), thr * 100,
+                                self.shortage_remedy(self.binding))))
 
         # 5. progress. Director hours go to the HIGHEST-PRIORITY active projects
         #    first, not spread evenly: a director who gives every project equal

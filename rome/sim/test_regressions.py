@@ -653,14 +653,32 @@ check("a loss-making, non-knowledge node is NOT protected (the control case)",
 
 s = sim(capital=-100000.0)
 s.done.add(_LOSS); s.done.add(_KNOW1)
+s._done_changed()
+# IT HAS TO BE OPEN TO BE WORTH CLOSING. Upkeep follows `operating`, so a
+# concern already shut is already costing nothing; shedding it saves nothing
+# and would only destroy what you know. shed_loss_makers scanned `done` and
+# did exactly that.
+s.operating.add(_LOSS); s.operating.add(_KNOW1)
 s.revenue = lambda: 0.0        # force a loss regardless of the rest of the economy
 s.shed_loss_makers(100)
-check("shed_loss_makers cannot make the founder forget knowledge",
-      _LOSS not in s.done and _KNOW1 in s.done,
-      "loss-maker shed=%s knowledge shed=%s" % (_LOSS not in s.done, _KNOW1 not in s.done))
+check("shed_loss_makers closes a loss-making concern, and spares knowledge",
+      _LOSS not in s.operating and _KNOW1 in s.operating,
+      "loss-maker closed=%s knowledge closed=%s"
+      % (_LOSS not in s.operating, _KNOW1 not in s.operating))
+check("...and what it closed is still something you know how to do",
+      _LOSS in s.done and _KNOW1 in s.done,
+      "still known: %s %s" % (_LOSS in s.done, _KNOW1 in s.done))
 check("shed_loss_makers mothballs, and NAMES, what it takes",
       _LOSS in s.mothballed and any(_LOSS in m for _, m in s.log),
       [m for _, m in s.log])
+# The control: a loss-maker that is SHUT is left alone entirely.
+s_sh = sim(capital=-100000.0)
+s_sh.done.add(_LOSS); s_sh._done_changed()
+s_sh.revenue = lambda: 0.0
+s_sh.shed_loss_makers(100)
+check("a loss-maker that is already shut is not unlearned to no purpose",
+      _LOSS in s_sh.done and _LOSS not in s_sh.mothballed,
+      "known=%s mothballed=%s" % (_LOSS in s_sh.done, _LOSS in s_sh.mothballed))
 
 s = sim(capital=-100000.0)
 s.done.add(_LOSS); s.done.add(_KNOW2)

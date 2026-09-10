@@ -219,12 +219,33 @@ class ProjectsMixin:
                         if self.is_venture(k) and k not in self.operating
                         and self.nodes[k]["rev"] > self.nodes[k]["up"]),
                        key=lambda k: -(self.nodes[k]["rev"] - self.nodes[k]["up"]))
+        blocked = None
         for k in cands:
             if self.capital <= 0:
+                blocked = blocked or (cands[0], "you have no money to open it with")
                 break
-            ok, _why = self.open_venture(k)
+            ok, why = self.open_venture(k)
             if ok:
                 opened.append(k)
+            elif blocked is None:
+                blocked = (k, why)
+        # SAY WHY THE BEST ONE STAYED SHUT. A break tester watched a concern
+        # earning 150 a year against 15 of upkeep sit closed for six years with
+        # the policy switched on, because auto_open threw away every refusal
+        # open_venture handed it. A policy that silently declines is
+        # indistinguishable from a policy that is broken.
+        if blocked and not opened:
+            k, why = blocked
+            said = getattr(self, "_said_autoopen", {})
+            if self.year - said.get(k, -99) >= 10:
+                said[k] = self.year
+                self._said_autoopen = said
+                self.log.append((self.year,
+                                 "%s would earn %s a year against %s of upkeep and "
+                                 "is still shut: %s"
+                                 % (k, "{:,.0f}".format(self.nodes[k]["rev"]),
+                                    "{:,.0f}".format(self.nodes[k]["up"]),
+                                    why or "something is in the way")))
         return opened
 
     def mothball_work(self, k):

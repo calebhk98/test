@@ -442,7 +442,7 @@ def _agent_help(s, topic=None):
             "risk": "what history is about to do to you, and what blunts it",
             "labour": "who you employ and what trades exist here",
             "hire / fire / train / commission": "see the labour topic",
-            "buy": "forest, mine, slaves, or manumit; see the economy topic",
+            "buy": "forest, nitre, mine, slaves, or manumit; see the economy topic",
             "work <trade> <hours>": "do an ordinary job for ordinary pay",
             "bounty <id>": "pay someone else to solve it instead",
             "open <id>": "start actually running something you have worked out "
@@ -484,6 +484,7 @@ def _agent_help(s, topic=None):
                               "goes out, including where the income comes from",
                 "buy forest": '{"cmd":"buy","what":"forest","n":100} hectares of '
                               "coppice, which is where charcoal comes from",
+                "buy nitre": '{"cmd":"buy","what":"nitre","n":20000} square metres of nitre bed. Saltpetre is made, not mined, and nothing else supplies it.',
                 "buy mine": '{"cmd":"buy","what":"mine","material":"coal","n":500} '
                             "tonnes a year of your own workings; it takes years "
                             "to sink, and it costs to keep standing whether or "
@@ -588,6 +589,46 @@ def _subject_of(n):
     return SUBJECTS.get(kb[:2], "everything else")
 
 
+def _staff_short(n):
+    """"2s1a" - the standing staff a project needs, in a table cell.
+
+    A play tester picked six projects out of `available` on cost and hours,
+    started all six, and found every one of them waiting on people: the row
+    carried nine numbers and not one of them was the staff, which lived only
+    in `why`, one node at a time. Two characters a trade is enough to see it
+    while scanning.
+    """
+    bits = ""
+    if n["sch"]:
+        bits += "%gs" % round(n["sch"], 1)
+    if n["art"]:
+        bits += "%ga" % round(n["art"], 1)
+    return bits or "-"
+
+
+def _short_of_staff(s, n):
+    """True when you could NOT staff this today. Marks the row with a *."""
+    return bool(n["art"] > s.artisans + 1e-9
+                or n["sch"] > s.effective_scholars() + 1e-9)
+
+
+def _staff_fields(s, n):
+    """The two staff keys, present only when they SAY something.
+
+    A row that needs nobody, or that you can already staff, carries neither.
+    `available` has a size budget - it was 165 kilobytes once - and forty
+    bytes of "needs_staff":"-","short_of_staff":false on every one of two
+    hundred rows is eight kilobytes spent saying nothing.
+    """
+    out = {}
+    short = _staff_short(n)
+    if short != "-":
+        out["needs_staff"] = short
+        if _short_of_staff(s, n):
+            out["short_of_staff"] = True
+    return out
+
+
 def _brief(s, nodes, k, fog):
     """One row of `available`.
     
@@ -614,8 +655,10 @@ def _brief(s, nodes, k, fog):
                 "chance_of_failure": n["risk"],
                 "earns_per_year": round(n["rev"], 1),
                 "costs_per_year_after": round(n["up"], 1),
-                "how_much_rests_on_this": rests}
+                "how_much_rests_on_this": rests,
+                **_staff_fields(s, n)}
     return {"id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"],
+            **_staff_fields(s, n),
             "cost": round(s.project_cost(k), 1), "founder_hours": n["ph"],
             "calendar_floor_years": n["yrs"], "risk": n["risk"],
             "earns_per_year": round(n["rev"], 1),
@@ -711,9 +754,24 @@ def _agent_available(s, nodes, cmd=None):
     if find or want_subject or limit or offset or show_all or afford is not None:
         page = sel if show_all else sel[offset:offset + (limit or 30)]
         out = {"ok": True, "count": len(sel), "of_everything_startable": len(ok),
-               "showing": "%d-%d%s" % (offset + 1, offset + len(page),
-                                       (" " + why_these) if why_these else ""),
+               "showing": ("nothing%s" % ((" " + why_these) if why_these else "")
+                           if not page else
+                           "%d-%d%s" % (offset + 1, offset + len(page),
+                                        (" " + why_these) if why_these else "")),
                "available": [_full_entry(s, nodes, k, fog) for k in page]}
+        if not page:
+            # "1-0 matching 'furnace'" over an empty table is a range that
+            # cannot exist, printed where an answer should be. Say the answer
+            # instead - and, under fog, say only what a player is entitled to
+            # know: that nothing they can begin TODAY matches. Whether the
+            # thing exists at all in the tree is exactly what fog withholds.
+            out["nothing_matched"] = (
+                "Nothing you could begin today matches that."
+                + (" That does not mean there is no such thing; it means "
+                   "nothing in front of you right now answers to it. Try a "
+                   "shorter word, or a subject: 'available metallurgy'."
+                   if fog else
+                   " Try a shorter word, or a subject: 'available metallurgy'."))
         if not show_all and offset + len(page) < len(sel):
             out["more"] = ('%d more; ask again with "offset": %d'
                            % (len(sel) - offset - len(page), offset + len(page)))
@@ -1245,11 +1303,14 @@ def _available_row(e, w=34):
     # `start` refusing an id the table had just printed - with the refusal
     # helpfully suggesting they use `available` to find valid ids. Names get
     # cut instead; nobody has to retype a name.
-    return "%-*s %-22s %9s %7s %5s %5s %8s %7s %6s" % (
-        w, (e.get("id") or ""), (e.get("name") or "")[:22],
+    staff = e.get("needs_staff") or "-"
+    if e.get("short_of_staff"):
+        staff += "*"
+    return "%-*s %-20s %9s %7s %5s %5s %8s %7s %6s %6s" % (
+        w, (e.get("id") or ""), (e.get("name") or "")[:20],
         _fmt_num(e.get("cost")), _fmt_num(hours), _fmt_num(years), _pct(risk),
         _fmt_num(e.get("earns_per_year")), _fmt_num(e.get("costs_per_year_after")),
-        rests)
+        staff, rests)
 
 
 def render_available(out):
@@ -1265,9 +1326,9 @@ def render_available(out):
     _rows_here = (out.get("available") or []) + (out.get("cheapest_now") or [])
     _w = max([34] + [len(r.get("id") or "") for r in _rows_here
                      if isinstance(r, dict)])
-    header = ("%-*s %-22s %9s %7s %5s %5s %8s %7s %6s"
+    header = ("%-*s %-20s %9s %7s %5s %5s %8s %7s %6s %6s"
               % (_w, "ID", "NAME", "COST", "HOURS", "YEARS", "RISK", "EARNS/YR",
-                 "UPKEEP", "RESTS"))
+                 "UPKEEP", "STAFF", "RESTS"))
 
     if "subjects" in out:
         L.append("%-24s %8s %10s %10s %10s" % ("SUBJECT", "THINGS", "CHEAPEST", "DEAREST", "AFFORD"))
@@ -1289,6 +1350,12 @@ def render_available(out):
         L.append("")
         for k, v in (out.get("to_see_more") or {}).items():
             L.append("  %s: %s" % (k, v))
+    elif "available" in out and not out["available"]:
+        # No column headings over no rows. A play tester read "1-0 matching
+        # 'furnace'" above an empty table and could not tell whether the
+        # search had failed or the game had.
+        L.append(out.get("nothing_matched")
+                 or "Nothing you could begin today matches that.")
     elif "available" in out:
         L.append(header)
         for e in sorted(out["available"], key=lambda e: e.get("cost", 0)):
@@ -1296,6 +1363,19 @@ def render_available(out):
         if out.get("more"):
             L.append("")
             L.append(out["more"])
+
+    # LEGEND, once, and only when a table was actually printed. "1a*" means
+    # nothing to a reader who has not been told; the column exists to be read
+    # at a glance and a glance does not include guessing.
+    _shown = ((out.get("available") or []) + (out.get("cheapest_six") or [])
+              + (out.get("most_rests_on_these") or []))
+    if _shown:
+        L.append("")
+        L.append("  STAFF is the standing people it needs: 2s = two scholars, "
+                 "1a = one craftsman.")
+        if any(e.get("short_of_staff") for e in _shown if isinstance(e, dict)):
+            L.append("  A * means you do not have them yet - 'hire' or 'train' "
+                     "first, or the work waits.")
 
     heard = out.get("heard_of_but_cannot_begin")
     if heard:
@@ -1379,9 +1459,17 @@ def render_why(out):
                 L.append("  (%s is how somebody who did not have it would get "
                          "there)" % ", ".join(direct))
         elif missing:
+            # KNOWN, NOT RUNNING. Since knowing a thing and operating it became
+            # two different states, a play tester reasonably asked which one a
+            # prerequisite wants, and nothing anywhere said. It wants the
+            # knowledge: finish the work once and it counts for ever, whether
+            # or not you keep the concern open.
             L.append("MISSING PREREQUISITES: " + ", ".join(missing))
+            L.append("  (a prerequisite has to be FINISHED, not merely started, "
+                     "and it stays finished: you need not keep it running.)")
         elif direct:
-            L.append("PREREQUISITES (all met): " + ", ".join(direct))
+            L.append("PREREQUISITES (all met, and finished counts for ever): "
+                     + ", ".join(direct))
         else:
             L.append("PREREQUISITES: none, you can start this on arrival")
 
@@ -2101,8 +2189,10 @@ def parse_typed(line):
             return None, "say which mineral, e.g. '%s mine coal 500'." % op
         # 'buy coal 500' means the same thing and is what a person types; the
         # protocol wants it spelled out as a mine in a mineral.
-        if out["what"] not in ("forest", "slaves", "mine", "mines", "people",
-                               "manumit", "manumission", "free"):
+        if out["what"] in ("nitre", "saltpetre", "nitre_bed"):
+            out["what"] = "nitre"
+        elif out["what"] not in ("forest", "slaves", "mine", "mines", "people",
+                                 "manumit", "manumission", "free"):
             out["material"], out["what"] = out["what"], "mine"
         if out["what"] == "mines":
             out["what"] = "mine"
@@ -2453,6 +2543,21 @@ def _agent_dispatch_inner(s, nodes, cmd):
                                               "(you have %.0f denarii)" % (n, s.capital)}
             return {"ok": True, "bought_ha": got, "forest_ha": round(s.forest_ha, 1),
                     "capital": round(s.capital, 1)}
+        if what in ("nitre", "nitre_bed", "saltpetre", "nitre beds"):
+            got = s.build_nitre(n)
+            if got <= 0:
+                return {"ok": False,
+                        "error": "cannot afford %.0f square metres of nitre bed "
+                                 "(that is %s denarii and you have %s). Nothing "
+                                 "was changed."
+                                 % (n, "{:,.0f}".format(n * s.NITRE_COST_PER_M2
+                                                        * s.price_index),
+                                    "{:,.0f}".format(s.capital))}
+            return {"ok": True, "laid_m2": got,
+                    "nitre_bed_m2": round(s.nitre_bed_m2, 1),
+                    "saltpetre_it_yields_per_year_tonnes":
+                        round(s.nitre_bed_m2 * s.NITRE_YIELD_T_PER_M2, 3),
+                    "capital": round(s.capital, 1)}
         if what == "mine":
             mat = cmd.get("material")
             if mat not in s.MINE_CAPEX_PER_T_YR:
@@ -2716,6 +2821,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
                         "%.2f tonnes of charcoal, sustainably" % s.CHARCOAL_PER_HA,
                     "note": "Coppice is bought once and yields every year after. "
                             "There is no market to sell it back into."}
+        if what in ("nitre", "nitre_bed", "saltpetre"):
+            n_n, err_n = _qty(cmd, "n", 10000)
+            if err_n:
+                return {"ok": False, "error": err_n}
+            per_n = s.NITRE_COST_PER_M2 * s.price_index
+            return {"ok": True, "what": "nitre bed", "square_metres": n_n,
+                    "to_lay_it": round(per_n * n_n, 1),
+                    "per_square_metre": round(per_n, 2),
+                    "you_have": round(s.capital, 1),
+                    "you_can_afford_about": round(max(0.0, s.capital) / max(per_n, 1e-9), 0),
+                    "it_yields_per_square_metre_per_year":
+                        "%.4f tonnes of saltpetre" % s.NITRE_YIELD_T_PER_M2,
+                    "note": "Saltpetre is made, not mined: dung, straw and ash "
+                            "turned for a couple of years. Cheap by the metre "
+                            "and thin by the metre, so beds are laid in "
+                            "thousands of square metres, not hundreds."}
         if what in ("slaves", "people"):
             n_s, err_s = _qty(cmd, "n", 1)
             if err_s:
@@ -2998,7 +3119,7 @@ SAVE_FIELDS = (
     "interest_paid", "wage_hours_this_year", "teaching_hours_this_year",
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
-    "last_patron_death", "_said_debasement",
+    "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
     # hours_this_year: last year's founder-hours accounting (see step(), just
     # before the within-year tallies above reset). Without it, `state` right
     # after a `--session` reload would report nothing for a figure the player
