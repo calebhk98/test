@@ -1950,6 +1950,60 @@ check("a hazard that took nothing from you says so",
                          for m in _plague),
       _plague)
 
+# --- round 6, the England break tester ---------------------------------------
+# 1. THE EXPLOIT THE VENTURE MODEL CREATED. `open` refused without supervisors
+#    and then nothing ever looked again, so the tester hired five craftsmen,
+#    opened eleven concerns in one turn, fired all six people and watched net
+#    income RISE - seventeen concerns running against "EMPLOY: 0 people", and
+#    the same loom still paying 435 a year in 1800 through the Black Death.
+s = sim(civ="england_1300", capital=500000.0)
+s.hire("artisan", 6)
+_big = [k for k in NODES if 2000 <= NODES[k]["rev"] <= 9000][:4]
+for _k in _big:
+    s.done.add(_k)
+s._done_changed()
+_opened = [k for k in _big if s.open_venture(k)[0]]
+_rev_staffed = s.revenue()
+s.fire("artisan", 6)
+s.step()
+check("a concern nobody is left to watch stops trading",
+      _opened and not s.operating and s.revenue() < _rev_staffed * 0.2,
+      "revenue %.0f -> %.0f, still running %d"
+      % (_rev_staffed, s.revenue(), len(s.operating)))
+check("...and the game says which ones closed and why",
+      any("nobody left to keep an eye on" in m for _y, m in s.log),
+      [m for _y, m in s.log][-2:])
+
+# 2. Failure risk fired correctly and announced nothing, so a tester watched
+#    about 113 builds, expected nine failures and found no occurrence of
+#    "fail", "abandon" or "lost" anywhere, and concluded the mechanic was dead.
+s = sim(capital=5000000.0)
+_risky = [k for k in NODES if NODES[k]["risk"] >= 0.15][:1][0]
+_fails = 0
+for _i in range(120):
+    s.active[_risky] = dict(ph_left=0.0, yrs=99.0, spent=0.0, cost_left=0.0)
+    s.done.discard(_risky)
+    s._complete(_risky)
+    if _risky in s.active:
+        _fails += 1
+        del s.active[_risky]
+check("a failed attempt is announced, not silently absorbed",
+      _fails > 0 and any("FAILED at" in m for _y, m in s.log),
+      "%d failures in 120 at risk %.2f, logged %d"
+      % (_fails, NODES[_risky]["risk"],
+         sum(1 for _y, m in s.log if "FAILED at" in m)))
+
+# 3. Three distinguishable refusals were themselves the tree: real-and-heard-of,
+#    real-but-unheard-of, and nonexistent. Sixteen plain-English guesses
+#    correctly classified ten real technologies and five invented ones.
+_tri, _, _ = proto([{"cmd": "why", "id": "telescope"},
+                    {"cmd": "why", "id": "zzzzznotathing"},
+                    {"cmd": "why", "id": "dynamo"}],
+                   civ="england_1300", fog=True)
+_msgs = {(r.get("error") or "").split("Did you mean")[0].strip() for r in _tri}
+check("a name you have not heard of and a name that does not exist read alike",
+      len(_msgs) == 1, [m[:60] for m in _msgs])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

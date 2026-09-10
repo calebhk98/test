@@ -2072,12 +2072,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
     if getattr(s, "fog", False) and isinstance(cmd.get("cmd"), str):
         _op = cmd["cmd"].strip().lower()
         _k = cmd.get("id")
-        if _op in _ID_COMMANDS and isinstance(_k, str) and _k in nodes \
-                and not s.is_visible(_k):
+        # THE SAME ANSWER WHETHER OR NOT IT EXISTS. Refusing an unheard-of node
+        # with "you have never heard of that" and a nonexistent one with
+        # "unknown node 'X'" makes the two distinguishable, and that difference
+        # IS the tree: a break tester classified ten real technologies and five
+        # invented ones from sixteen plain-English guesses, on a fogged save,
+        # in one pass. `help fog` promises there is no way to view the whole
+        # tree, and a question you can ask about any name at all, and get a
+        # true answer to, is a way to view the whole tree.
+        if _op in _ID_COMMANDS and isinstance(_k, str) and (
+                _k not in nodes or not s.is_visible(_k)):
+            near = _did_you_mean(_k, nodes, s=s)
             return {"ok": False,
-                    "error": "you have never heard of that. You know what you have "
-                             "built and what you could begin next; nothing tells you "
-                             "what lies beyond that."}
+                    "error": "you have never heard of any such thing. You know "
+                             "what you have built and what you could begin next; "
+                             "nothing tells you what lies beyond that.%s"
+                             % ((" Did you mean: " + ", ".join(near)) if near else "")}
     op = cmd.get("cmd")
     ended = _agent_end_reason(s)
 

@@ -559,3 +559,34 @@ me assistants, but the HUD just changes number.
 Endgame road is now legible:
   newtonian_mechanics -> em_theory -> quantum_solidstate_theory -> (transistor)
 plus thermodynamics_theory, electroplating, and the cap_* ladders.
+
+## 1475-1559 — the endgame becomes visible, and the "free node" trap bites twice
+
+At 1475 `why point_contact_transistor` finally printed the goal card:
+  "THE GOAL. An n-type germanium slab with two phosphor bronze points a fraction
+   of a millimetre apart, plus a forming pulse... Getting here from 100 AD is the
+   whole game."
+  missing: galena_detector, gp_whisker_forming, prc_lapping_plate, single_crystal,
+  vacuum_tube
+That is the first time in 175 years that the game showed me a goal-directed plan,
+and it made the remaining play enormously more purposeful. I would have wanted
+this at 1300 — not the whole tree, just "here is what your goal needs".
+
+Useful discovery: `why <garbage>` prints "did you mean: <8 real node ids>". Under
+fog that is a legal way to enumerate node names you have not heard of. I used it
+to hunt for the hidden prerequisite of en_commutator (guessing "magnet", "coil",
+"gp", "rect"). I am fairly sure that is not intended.
+
+The hidden prerequisite turned out to be **cap_power_steam**, and when it finally
+surfaced it cost **0 den and 0 hours**. That is the second time a free node was
+the thing standing between me and a whole branch (the first was
+cap_measure_temp/mass/time, and cap_measure_elec after that). These free
+capability nodes are invisible in every summary the game offers: they sort to the
+top of "cheapest six" where they look like filler, and they never appear in
+"MOST RESTS ON THESE". A player who does not deliberately grep for zero-cost
+nodes will lose decades to them. This is my strongest single piece of feedback.
+
+Scale by 1559: 952 technologies built, capital 8.1M, founder-hours 6,612/yr
+(2,000 mine plus deputies at 1,800 each — the deputies appeared silently around
+1475 and the HUD only explains them if you read `state` closely), 61 scholars,
+191 artisans, reputation 98, eminence 18.4 against a danger line of 26.

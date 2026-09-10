@@ -398,6 +398,14 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
         # the log reported as being "blocked" on a treadle lathe.
         if self.capital < 0 and self.mine_capacity and self.policy.get("auto_mothball", True):
             self.mothball_mines()
+        # A CONCERN NEEDS SOMEBODY WATCHING IT EVERY YEAR, not only on the day
+        # you open it. `open` refused without supervisors and then nothing ever
+        # looked again, so a break tester hired five craftsmen, opened eleven
+        # concerns in one turn, fired all six people, and watched net income
+        # RISE - "EMPLOY: 0 people" with seventeen concerns running, and the
+        # same loom still paying 435 a year in 1800 with nobody employed,
+        # straight through the Black Death.
+        self.close_unstaffed_ventures(yr)
         # Open what plainly pays for itself, before the books are struck: a
         # concern you opened this year is a concern that earns this year.
         if self.policy.get("auto_open", not self.manual):

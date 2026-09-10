@@ -172,6 +172,35 @@ class ProjectsMixin:
         return True, ("%s closed: you stop paying %s a year and stop earning %s"
                       % (k, "{:,.0f}".format(n["up"]), "{:,.0f}".format(n["rev"])))
 
+    def close_unstaffed_ventures(self, yr):
+        """Shut what nobody is left to watch, dearest to supervise first.
+
+        Not a policy and not an automation you can switch off: it is the same
+        rule `open` already applies, applied on the years after the first. A
+        shop whose keeper you dismissed is a shop that stops trading, and the
+        alternative - which is what the game did - is a fortune of concerns
+        running themselves for ever on an empty payroll.
+        """
+        closed = []
+        while self.operating:
+            sch_used, art_used = self.venture_staff_used()
+            own = self.FOUNDER_IS_WORTH if self.founder_alive else 0.0
+            if (sch_used <= self.effective_scholars() + 1e-6
+                    and art_used <= self.artisans + own + 1e-6):
+                break
+            worst = max(self.operating, key=lambda k: self.venture_hands(k)[1])
+            self.operating.discard(worst)
+            self.mothballed.add(worst)
+            closed.append(worst)
+        if closed:
+            self.log.append((yr, "nobody left to keep an eye on %d concern%s, so "
+                                 "%s closed. You still know how; reopen with "
+                                 "'open' once you have the people"
+                             % (len(closed), "" if len(closed) == 1 else "s",
+                                ", ".join(sorted(closed)[:4])
+                                + (" and others" if len(closed) > 4 else ""))))
+        return closed
+
     def auto_open_ventures(self):
         """Open what plainly pays for itself, best margin first, within the
         staff and the money available. Default ON for the optimizer and OFF
@@ -639,7 +668,21 @@ class ProjectsMixin:
             self.failed_attempts[k] += 1
             self.active[k]["ph_left"] = n["ph"] * 0.4
             self.active[k]["yrs"] = 0.0
-            self.capital -= n["_total_cost"] * 0.4 * self.cost_money_factor()
+            _lost = n["_total_cost"] * 0.4 * self.cost_money_factor()
+            self.capital -= _lost
+            # SAY SO. The roll has always worked - 40 failures in 200 at a
+            # stated 20% - and it has never once announced itself: it reset the
+            # project and logged nothing, so a break tester watched about 113
+            # builds, expected nine failures, found no occurrence of "fail",
+            # "abandon" or "lost" anywhere in the output, and concluded the
+            # whole mechanic was dead. A cost you cannot see is a cost the
+            # player is not paying attention to, which is the same as not
+            # charging it.
+            self.log.append((self.year,
+                             "FAILED at %s: it did not work. %s of the work is "
+                             "to do again and %s is gone. Attempt %d."
+                             % (n["name"], "60%", "{:,.0f}".format(max(0.0, _lost)),
+                                self.failed_attempts[k] + 1)))
             return
         del self.active[k]
         self.bountied.discard(k)

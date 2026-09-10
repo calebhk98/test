@@ -444,3 +444,91 @@ start in a `step 25`). A clean single-project test shows it is honoured:
 violation; it was not - hiring 2 scribes had raised the pool to 5,321 first, and
 `commission scribe 100000` / `5000` are then refused with "the scribes here can spare
 2821 more hours this year". The cap holds.
+
+---
+## FINDING 29 — you can buy 27,500 den of woodland blind, and then never see it again
+`help economy` says: "buy forest: buy forest 100 hectares of coppice, which is where
+charcoal comes from", and for mines it shouts "ASK THE PRICE FIRST with quote mine
+coal 500". There is no equivalent for woodland:
+  quote forest 100 -> "REFUSED: only mines can be quoted so far: quote mine coal 500"
+  buy forest 100   -> "bought ha: 100 / forest ha: 100 / capital: 12,911"
+That is 27,500 den (68% of my capital) spent by a three-word command with no price
+shown first and no confirmation. Afterwards:
+  state full:true | grep -ci 'forest|coppice|hectare|charcoal'  ->  0
+  money -> no forest line anywhere (only "mines standing")
+and there is no `close forest` or `sell` in the command list. So the asset is
+invisible on every screen and irreversible. Confidence it's a hole: high.
+
+## FINDING 30 — `state` and `money` print two different numbers both labelled "net"
+Same instant, same save:
+  state -> "Money: 16,644 d    net +3,677 d/yr (after 1,590 d into projects this year)"
+  money -> "Net/yr: 5,266     spent on projects last step: 1,590"
+5,266 - 1,590 = 3,676. The parenthetical explains it if you work it out, but two
+screens give two "net" figures 43% apart. Confidence it's confusing rather than wrong:
+this is presentation, medium.
+
+## FINDING 31 — "AHEAD: technologies at risk" lists things that are not risks
+`state full:true` at 1320 lists 14 entries under "AHEAD: 9 technologies at risk",
+including:
+  [1660-1740] The Royal Society and the end of the witch trials
+  [1688-1720] The financial revolution
+  [1700-1800] Enclosure and the agricultural revolution
+Those are not hazards to my knowledge base. Confidence it's a labelling problem: medium.
+
+## FINDING 2, weaponised — the whole tree can be dictionary-attacked under fog
+Under fog of war, on my live main save, sixteen plain-English guesses:
+  why telescope / thermometer / barometer / calculus / dynamo / vacuum_tube /
+      voltaic_pile / gunpowder / printing_press / radio
+      -> "REFUSED: you have never heard of that."         (= the node EXISTS)
+  why microscope / electricity / germanium / penicillin / bicycle
+      -> "REFUSED: unknown node 'X'. did you mean: ..."   (= the node does NOT exist)
+  why steam_engine -> "unknown node 'steam_engine'. did you mean: sea_log_line,
+      sea_sounding_lines"  (and sea_sounding_lines is a node I had never been shown)
+Ten of sixteen correctly classified in one free turn, no cost, no time, no risk.
+`help fog` says "You cannot see where anything leads, and there is no way to view the
+whole tree" and `available` repeats it. It is not true: the refusal wording is an
+existence oracle and the "did you mean" list hands out node ids directly.
+Confidence this defeats the stated fog guarantee: high.
+
+---
+# SUMMARY OF WHAT I ATTACKED
+
+Broken / self-contradictory (high confidence): 1, 2/3 (fog oracle + id leak), 5
+(ventures vs open), 6 (find filter), 7 (cost card arithmetic), 9 (granted revenue),
+10 (open-then-fire), 11 (frozen revenue), 13/19 (currency), 15 (labour card),
+18 (invisible slaves), 21 (fog "nothing rests on this"), 23 (ledger does not sum),
+24 (hazard applied 1x vs 3x), 26 (failure risk never fires), 27 (wrong wait reason),
+28 (wrong "at most"), 29 (blind woodland purchase).
+
+Content/realism (medium confidence it is a defect): 4 (blast furnace already granted
+in a scenario built on not having it), 8 (pendulum clock in 1300), 16 (undisclosed
+training cost), 17 (capacity cap not applied to purchased people), 20 (goal needs 25
+scholars, cap 2.2), 22 (bronze without copper), 25 (eminence never dangerous),
+31 (good events listed as risks).
+
+Held up under attack: negative and absurd arguments, hour and cash overdraw, save-path
+traversal, save-file tree leakage, the horizon and end-of-run lock, JSON command
+surface (no hidden verbs, no fog override), prerequisite fog on blocked nodes, trade
+supply caps, calendar floors, duplicate start/open, mothball/restore arbitrage.
+
+Not tested for lack of time: mines end-to-end (sinking, output, close), manumission and
+atrocity, bounties actually resolving, the `path` command with fog off in a real run,
+protection/patronage, and whether the goal is reachable at all in 500 years.
+
+---
+## FINDING 32 — a coal mine costs 4,950 to sink plus 825/yr and appears to do nothing you can see
+Repro (rich fork of the main save at 1319):
+  quote mine coal 500 -> "to sink it: 4,950 / every year it stands: 825 / years before it produces: 3"
+  why met_safety_lamps_ventilation (needs coal_kg 50) ->
+      "COST: 1,105 d total (33 labour + 54.6 materials + 900 capital ...)"
+  buy mine coal 500 ; step 4 ; why met_safety_lamps_ventilation ->
+      "COST: 1,102 d total (33 labour + 54.6 materials + 900 capital ...)"
+The materials component is identical to the decimal (54.6). Total moved 3 den, which is
+general price drift over four years. Meanwhile:
+  money -> "mines standing 825" under Costs; Revenue unchanged at 6,738 the whole time.
+  state full:true -> no coal, no tonnage, no stock, nothing.
+So 8,250 den spent over four years bought a line item in the cost column and no visible
+benefit, and there is no screen anywhere that tells you how much coal you have or what
+it is worth. It may only pay at blast-furnace scale (4,500,000 kg of charcoal), but
+nothing in the game lets you find that out.
+Confidence it is at least un-observable: high. Confidence it is broken: medium.
