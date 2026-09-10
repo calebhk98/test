@@ -884,6 +884,33 @@ class Sim:
         p += min(0.30, (self.bribes_ytd / (income * 0.6)) * w["bribability"])
         self.protection = min(0.92, p)
 
+    def eminence_report(self):
+        """Where you stand against the one danger no patron can protect you from."""
+        c = self.cfg
+        danger = c["eminence_danger"]
+        yearly = self.prominence_hazard()
+        # eminence decays 0.93 a year and gains `yearly`, so this is where it
+        # settles if nothing changes.
+        settles = yearly / 0.07
+        p = max(0.0, (self.eminence - danger) / 90.0)
+        helps = []
+        if not self.has("academy_network"):
+            helps.append("a wide, dispersed institution is harder to destroy than "
+                         "one great man")
+        if self.has("patron_imperial"):
+            helps.append("you are as close to the throne as it is possible to "
+                         "stand, which is the most exposed place there is")
+        if self.capital > 250000:
+            helps.append("visible wealth is half of what makes you a target")
+        return {"now": round(self.eminence, 2),
+                "dangerous_above": danger,
+                "settles_at_if_nothing_changes": round(settles, 1),
+                "chance_of_ruin_this_year": round(p, 4),
+                "what_would_change_it": helps,
+                "note": "This is prominence, not scandal. It cannot be bribed "
+                        "away, and every defence that makes you safer from "
+                        "accusation makes you larger and so raises this."}
+
     def prominence_hazard(self):
         """Eminence is its own hazard, and protection does NOT reduce it.
 
@@ -4197,6 +4224,17 @@ def _agent_state(s, nodes, cmd=None):
         "policy": dict(s.policy),
         "in_bondage_for_debt": round(getattr(s, "bondage_years_left", 0.0), 1),
         "debt_still_to_work_off": round(getattr(s, "bondage_debt", 0.0), 1),
+        # HOW CLOSE YOU ARE TO BEING DESTROYED FOR BEING TOO LARGE, and what
+        # changes it. `eminence` was reported as a bare number with no threshold,
+        # no trend and no lever, so a player sat at 24.9 against a danger line of
+        # 26 with nothing telling them they were one bad year from the end. At a
+        # successful late game the equilibrium lands within five per cent of the
+        # threshold, which makes the outcome a coin toss decided by noise rather
+        # than by anything the player chose. The mechanic is sound and the
+        # levers are real - a dispersed academy network cuts it by a third, and
+        # getting close to the throne raises it by half - but neither was
+        # visible, and an unseen lever is not a choice.
+        "prominence": s.eminence_report(),
         "credit_limit": round(s.credit_limit(), 1),
         "debt_interest_rate": round(s.debt_interest_rate(), 4),
         "interest_paid_total": round(getattr(s, "interest_paid", 0.0), 1),
