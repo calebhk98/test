@@ -60,9 +60,9 @@ The grader adds the column a second time with the pen held clear of the paper, c
 
 "That is the top of the scale. Whatever you were about to ask me next, the answer to it is no."
 
-The number surprises him for about a minute. Then it stops being surprising, because a test the Army puts in front of everybody who walks through the door has to be one most of the country can pass, and the people worth having are away at college or being paid to play something.
+The number surprises him for a minute, then stops, because a test everybody who comes through the door has to take must be one most of the country can pass, and the people worth having are off at college or being paid to play something.
 
-What bothers him is the top of it. A score with a lid on it tells him where the lid is and nothing about where he is, and he assumes the men who cleared it with him are stuck behind it too. On the Sunday he talks Okoro into holding a stopwatch behind the barracks and runs the events again on his own time, past where the card stops counting, to find out what the number would have been if the sheet had let it keep going.
+The lid is the part that bothers him. A score with a lid on it says where the lid is and nothing about where he is, and he assumes the men who cleared it are stuck behind it too. On the Sunday he has Okoro hold a stopwatch behind the barracks and runs the events again, past where the card stops counting, to see what the number would have been without it.
 
 "What are you going to do with those," Okoro says.
 
@@ -102,7 +102,7 @@ Later, watching the clock over the serving line, he makes the only gripe anybody
 
 ________________
 
-The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five meters, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a talk about it after. Half the groups coming off the line beside him would cover a dinner plate, from men his own age who have all been to school somewhere, and he cannot account for it. All morning he waits for somebody to say when the practice starts, meaning the kind where the target does not stand still, and nobody says it.
+The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five meters, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a talk about it after. Half the groups coming off the line beside him would cover a dinner plate, from men his own age who have all been to school somewhere, and he cannot account for it. Sam waits all morning for somebody to say when the practice starts, and nobody does.
 
 This is roughly where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it squares with a single thing he knows about himself. At school his was the number that never moved, but Odile was level with him on the mat once and well ahead of him by the spring. Ruth shot ninety-one and found the whole business dull; Kavi beat him at every game with a board in it for years on end.
 
@@ -110,7 +110,7 @@ So he goes looking for the fault in the numbers.
 
 His first thought is that everyone here is tired in a way school could only guess at, since school let you sleep through the night, and this place does not.
 
-His second is that nobody here has been let near the real thing yet. Every school he knows of runs a range the way his did, so a bay full of men who cannot hold a group at twenty-five meters has to be a bay that has been kept off the moving lanes on purpose, and these first weeks are the part before that.
+His second is that nobody here has been let near the real thing yet. Every school he knows of runs a range the way his did, so a bay that cannot hold a group at twenty-five meters must be a bay kept off the moving lanes on purpose, and these weeks are the part before that.
 
 His third covers what the first two leave out, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an outfit does when it wants to know who to send off, which means the men around him are being measured on something nobody has shown him yet, are almost certainly holding a good deal back for it, and will begin the real course once the sorting is finished.
 
@@ -172,7 +172,7 @@ The drill sergeant turns the card face down against his leg.
 
 "So forty percent means four times in ten I get a round onto a round in flight, sir, which is poor. But a girl in my year was on ninety-one and she was bored the entire time she was doing it."
 
-"Private." The captain's voice has come down rather than gone up. "Nobody shoots a bullet out of the air. Not here, not at Benning, not anywhere I have been in sixteen years, and not in any story I have ever heard a man tell about somewhere he used to be. There is no machine, there is no lane, there is no course. It is not a thing that is done." The captain waits, and Sam says nothing, because none of that is a question. "So one of two things is true. Either something was going on at that school that you have got badly wrong, or you are standing on my range at seven in the morning telling me a story. I have already called the number on your file once today, and I intend to call it again this afternoon whichever it turns out to be. Where did you go to school?"
+The captain's voice has come down rather than gone up. "Private, nobody shoots a bullet out of the air. Not here, not at Benning, not anywhere I have been in sixteen years, and not in any story I have heard a man tell about somewhere he used to be. There is no machine and there is no lane. It is not a thing that is done." The captain waits, and Sam says nothing, because none of that is a question. "So one of two things is true. Either something was going on at that school that you have got badly wrong, or you are standing on my range at seven in the morning telling me a story. I have already called the number on your file once today, and I intend to call it again this afternoon whichever it turns out to be. Where did you go to school?"
 
 "Halstead, sir."
 

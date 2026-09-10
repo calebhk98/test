@@ -46,6 +46,14 @@ Chloe says it before she's decided to use it, the comparison just out of her mou
 
 That lands. Deb laughs once and calls the discount the Tyler rate for the rest of the quarter, writing it that way on the internal spreadsheets. The name survives a manager asking what a Tyler rate is and Deb explaining that it's shorthand, not a joke, the client the only one who's ever confused by it.
 
+The coordinator two desks down comes in on a Thursday in November with a cold that has taken his voice, and by the afternoon his forehead is down on his hand between calls. Chloe brings a strip of small white tablets over from her bag.
+
+"One now and one before bed and you will be fine tomorrow. I have taken these since I was seven and they have never once failed, and they don't put you to sleep the way the pharmacy ones do."
+
+The coordinator takes one to end the conversation, and he is back on the phones before the end of the day. On the Friday he wants to know where a person buys them, because he has had that cold most winters of his life and it has never gone in a day and a half.
+
+"You can't. I have looked, and so has a doctor with a computer in front of him, and it is not anywhere," Chloe says.
+
 It happens with other people on the floor too. A coordinator needs a deadline explained twice before it sticks; a translator down the row only follows a pricing rule once it's tied to something he already cares about. On the phone with her mother that week, walking her through why the college won't refund a course she dropped early in the term, Chloe hears herself do it again, this time before she's noticed she's doing it. The policy language doesn't land, and she reaches for the closest thing her mother has actually paid for and lost money on, and it works there too. Chloe gets fast at finding the second version, the comparison half built before anyone's finished asking for it, and thinks of it as ordinary courtesy, the kind you'd offer anybody in a loud room.
 
 ________________
@@ -122,15 +130,15 @@ kavi: 21 out of what denominator, adults total or adults actually tested
 
 ruth: adults total
 
-nadia: ok but sam still failed the reading placement at basic and got held back a week
+nadia: ok but sam got held back a week at basic over the reading placement
 
-sam: that was a DIFFERENT thing, that was a comprehension test about diesel maintenance written like a legal document on purpose
+sam: i didnt fail it. i finished it in a quarter of the time they gave us and the proctor pulled my sheet and sat me down to do it again on the thursday
 
 nadia: sure
 
-theo: on brand for the army to write it that way and then be surprised
+theo: on brand for the army to write a comprehension test about diesel maintenance like a legal document and then not believe anybody who reads it fast
 
-sam: i didnt say i disagreed with the test i said i failed it
+sam: i sat it again slower and got the same score and they filed both
 
 And it moves.
 

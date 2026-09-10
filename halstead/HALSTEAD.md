@@ -6030,9 +6030,9 @@ The grader adds the column a second time with the pen held clear of the paper, c
 
 "That is the top of the scale. Whatever you were about to ask me next, the answer to it is no."
 
-The number surprises him for about a minute. Then it stops being surprising, because a test the Army puts in front of everybody who walks through the door has to be one most of the country can pass, and the people worth having are away at college or being paid to play something.
+The number surprises him for a minute, then stops, because a test everybody who comes through the door has to take must be one most of the country can pass, and the people worth having are off at college or being paid to play something.
 
-What bothers him is the top of it. A score with a lid on it tells him where the lid is and nothing about where he is, and he assumes the men who cleared it with him are stuck behind it too. On the Sunday he talks Okoro into holding a stopwatch behind the barracks and runs the events again on his own time, past where the card stops counting, to find out what the number would have been if the sheet had let it keep going.
+The lid is the part that bothers him. A score with a lid on it says where the lid is and nothing about where he is, and he assumes the men who cleared it are stuck behind it too. On the Sunday he has Okoro hold a stopwatch behind the barracks and runs the events again, past where the card stops counting, to see what the number would have been without it.
 
 "What are you going to do with those," Okoro says.
 
@@ -6072,7 +6072,7 @@ Later, watching the clock over the serving line, he makes the only gripe anybody
 
 ________________
 
-The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five meters, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a talk about it after. Half the groups coming off the line beside him would cover a dinner plate, from men his own age who have all been to school somewhere, and he cannot account for it. All morning he waits for somebody to say when the practice starts, meaning the kind where the target does not stand still, and nobody says it.
+The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five meters, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a talk about it after. Half the groups coming off the line beside him would cover a dinner plate, from men his own age who have all been to school somewhere, and he cannot account for it. Sam waits all morning for somebody to say when the practice starts, and nobody does.
 
 This is roughly where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it squares with a single thing he knows about himself. At school his was the number that never moved, but Odile was level with him on the mat once and well ahead of him by the spring. Ruth shot ninety-one and found the whole business dull; Kavi beat him at every game with a board in it for years on end.
 
@@ -6080,7 +6080,7 @@ So he goes looking for the fault in the numbers.
 
 His first thought is that everyone here is tired in a way school could only guess at, since school let you sleep through the night, and this place does not.
 
-His second is that nobody here has been let near the real thing yet. Every school he knows of runs a range the way his did, so a bay full of men who cannot hold a group at twenty-five meters has to be a bay that has been kept off the moving lanes on purpose, and these first weeks are the part before that.
+His second is that nobody here has been let near the real thing yet. Every school he knows of runs a range the way his did, so a bay that cannot hold a group at twenty-five meters must be a bay kept off the moving lanes on purpose, and these weeks are the part before that.
 
 His third covers what the first two leave out, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an outfit does when it wants to know who to send off, which means the men around him are being measured on something nobody has shown him yet, are almost certainly holding a good deal back for it, and will begin the real course once the sorting is finished.
 
@@ -6142,7 +6142,7 @@ The drill sergeant turns the card face down against his leg.
 
 "So forty percent means four times in ten I get a round onto a round in flight, sir, which is poor. But a girl in my year was on ninety-one and she was bored the entire time she was doing it."
 
-"Private." The captain's voice has come down rather than gone up. "Nobody shoots a bullet out of the air. Not here, not at Benning, not anywhere I have been in sixteen years, and not in any story I have ever heard a man tell about somewhere he used to be. There is no machine, there is no lane, there is no course. It is not a thing that is done." The captain waits, and Sam says nothing, because none of that is a question. "So one of two things is true. Either something was going on at that school that you have got badly wrong, or you are standing on my range at seven in the morning telling me a story. I have already called the number on your file once today, and I intend to call it again this afternoon whichever it turns out to be. Where did you go to school?"
+The captain's voice has come down rather than gone up. "Private, nobody shoots a bullet out of the air. Not here, not at Benning, not anywhere I have been in sixteen years, and not in any story I have heard a man tell about somewhere he used to be. There is no machine and there is no lane. It is not a thing that is done." The captain waits, and Sam says nothing, because none of that is a question. "So one of two things is true. Either something was going on at that school that you have got badly wrong, or you are standing on my range at seven in the morning telling me a story. I have already called the number on your file once today, and I intend to call it again this afternoon whichever it turns out to be. Where did you go to school?"
 
 "Halstead, sir."
 
@@ -6237,7 +6237,7 @@ The culvert has him before he has read it properly, ducked in under the lip beca
 
 Somebody fires a blank two meters from his head and the concrete hands the whole of it back to him at once. After that there is a tone going. There is more than one tone going, five harnesses inside thirty feet of pipe, but no way to sort his own out from the rest.
 
-A hand arrives on his sling from the left. Sam turns the muzzle off his own chest with one hand, puts the man into the wall with the other, then clears the far end past the fourth man shoulder first, and neither of them is upright when he reaches the lip. The tone is still going behind him a few paces up the bank, when a red-lens light comes down at him off the road.
+A hand arrives on his sling from the left, and his own hands deal with it before the rest of him is asked: the muzzle off his chest with one, the man into the wall with the other, the line off the laminated card about no hand-to-hand at any range arriving a second after the man hits the concrete. Sam then clears the far end past the fourth man shoulder first, and neither of them is upright when he reaches the lip. The tone is still going behind him a few paces up the bank, when a red-lens light comes down at him off the road.
 
 The lane goes cold for the better part of an hour.
 
@@ -6275,17 +6275,17 @@ On the fourth night Sam crosses a stretch of ground with the footing gone soft a
 
 There is a shift of weight behind him and off to the left, too sudden and too heavy to be the ground settling.
 
-The rifle is coming round while his mind is still catching up to it, and that is as far as he gets, because the tone starts while the muzzle is still swinging. Only the one of them is going, so the question of whose it is settles itself.
+The rifle is round before he has decided to bring it round. The tone that starts is not his.
 
-Sam comes up out of the cut and stands there in the open with his own harness going into the last hour before dawn, but the man who shot him comes up out of the weed line thirty feet back, so low to the ground on the way up that Sam hears him a full second before he can find him.
+The man comes up out of the weed line thirty feet back, so low on the way up that Sam hears him a second before he can find him, with his harness sounding into the last hour before dawn.
 
 "How long were you in there?"
 
 "Since nine."
 
-Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time. "What gave me away at the end," he says. The man thinks it over. "Nothing did at all. You walked inside six feet of me twice and I still had another twenty minutes in me if you'd kept going straight." Sam files that with the culvert, and says nothing else about it.
+Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time. "You didn't give anything away. You moved once," he says. The man thinks about that. "Once in seven hours." "I know. That is the part I would have got wrong." Sam files it with the culvert and says no more about it.
 
-A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
+A controller comes off the road, keys the man's harness quiet, sends him back to the weed line, and tells Sam to finish the leg, so Sam finishes the leg, because that is still the job.
 
 The last checkpoint comes up gray rather than dark, the sky slowly turning to morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it, and he sleeps a few hours before anybody wants him for anything.
 
@@ -6297,7 +6297,7 @@ Someone behind Sam works dried mud off a boot lace with a fingernail, steadily, 
 
 The opposing element goes first, because they were on the ground much longer than anybody sitting down. Their platoon sergeant stands at the side of the screen for a quarter of an hour, describing whole nights of lying in wet grass entirely in terms of where he positioned people and why. Then the individual lanes, worked off notes on a clipboard and cross-referenced against the overlay with a laser pointer forever drifting onto the ceiling before he retrieves it.
 
-"Night two, you took a wrong bearing off this tree line here," he tells the first soldier up, "which cost you three hours finding the checkpoint again. Walk me through what you were reading off the map at the time." The soldier does, and the major nods once and waves him back to his seat.
+"Night two, you took a wrong bearing off this tree line here, which cost you three hours finding the checkpoint again," he tells the first soldier up. " Walk me through what you were reading off the map at the time." The soldier does, and the major nods once and waves him back to his seat.
 
 "You went the whole exercise untouched," he tells the second, checking the overlay against his clipboard twice before he commits to saying it. "The opposing element apparently failed to locate your line of travel at any point in the whole exercise. That is only sometimes good news, so hold the compliment for later."
 
@@ -6309,7 +6309,7 @@ Sam's turn comes third. Instead of calling him up to the front, the major leaves
 
 The next part he reads the way a form gets read.
 
-"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two meters, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and somebody besides you will be explaining that to his own chain of command tonight, on top of whatever I decide to put in writing about it, and that report doesn't get any shorter just because you're standing here explaining it well. I've already got Ives drafting the second page of it, on the soldier's face, with a photograph attached." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
+"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two meters, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state, and that report does not get any shorter because you are standing here explaining it well. Ives is drafting the second page of it now, on the soldier's face, with a photograph attached." Now he looks up. "What is the contact rule on this exercise, Private Marsh?"
 
 "There is no hand-to-hand, sir." Sam doesn't look away. "At any range."
 
@@ -6323,7 +6323,15 @@ The next part he reads the way a form gets read.
 
 The major looks at him, then writes on the top sheet, unhurried. The room gets the sound of the pen, the projector fan, no comment whatever. Then he turns the page.
 
-"Night four. The man who took you had been in position since twenty-one hundred, which is seven hours without moving through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop, and no amount of being good at the rest of this changes that arithmetic, because patience was the only thing being tested tonight. I have watched two hundred of you fail that exact test, and every single one of you thought your case was the exception." He drops the pointer onto the overlay and leaves it lying there while he locates his next page.
+"Night four. There was a man in that weed line who had been in position since twenty-one hundred, seven hours without moving through the drop in temperature that arrives after midnight, and you had him before he had you. That is patience he was doing, and patience beats a tired soldier at four in the morning, every time, full stop. I have watched two hundred of you fail that test and every one of you thought his case was the exception."
+
+"It didn't, sir."
+
+The pointer stops on the overlay. "Finish it, Marsh."
+
+"He did everything right and seven hours is a hard night, sir. It is one night. It does not get you past somebody who has been listening for that noise for years. If I had been the tired one it goes the other way and he earns it."
+
+The major looks at him a while before he finds his next page.
 
 "Any questions," the major says at the end, closing the clipboard.
 
@@ -6335,7 +6343,7 @@ A few chairs forward of him, somebody's head comes round.
 
 The major regards him across the width of the room for a while, laser pointer off now, clipboard shut under his arm.
 
-"That was the exercise," he says. "It was the exercise rather than a rehearsal for one. Difficulty is set above you, Marsh, and it's set a good way above me as well, and a soldier who wants the next one made harder for him has decided the exercise is about him, when the exercise is about everybody sitting in front of me and a fixed number of hours of somebody else's night, and that is true of you standing here whether you like hearing it or not, and it stays true whether the next exercise is easier than this or harder than this, because difficulty was never yours to set in the first place, Marsh, and it isn't going to become yours because you asked about it twice. You'll write up the contact report tonight, before lights out, in your own hand, and it goes on my desk before breakfast."
+"That was the exercise," he says. "It was the exercise rather than a rehearsal for one. Difficulty is set above you, Marsh, and a good way above me as well, and a soldier who wants the next one made harder has decided the exercise is about him, when it is about every man in front of me and a fixed number of hours of somebody else's night. You'll write up the contact report tonight, before lights out, in your own hand, and it goes on my desk before breakfast."
 
 "Yes, sir."
 
@@ -6350,6 +6358,8 @@ The major puts it on the sheet with the culvert. Which school, he leaves alone.
 Sam waits for a second question.
 
 The soldier who went untouched turns around in the front row to look at him, but turns back before the major has finished writing. Then the major closes the clipboard, checks his watch, and calls the next name on his list.
+
+The platoon runs the perimeter road that evening in boots because a private asked a major to make the next one harder. Nobody says a word to Sam on the road. At the end of it a corporal called Vance, bent over with his hands on his knees, says, "Next time you want it harder, ask the rest of us first and we will tell you no," which is all of it, and the part that lands.
 
 ________________
 
@@ -6805,6 +6815,14 @@ Chloe says it before she's decided to use it, the comparison just out of her mou
 
 That lands. Deb laughs once and calls the discount the Tyler rate for the rest of the quarter, writing it that way on the internal spreadsheets. The name survives a manager asking what a Tyler rate is and Deb explaining that it's shorthand, not a joke, the client the only one who's ever confused by it.
 
+The coordinator two desks down comes in on a Thursday in November with a cold that has taken his voice, and by the afternoon his forehead is down on his hand between calls. Chloe brings a strip of small white tablets over from her bag.
+
+"One now and one before bed and you will be fine tomorrow. I have taken these since I was seven and they have never once failed, and they don't put you to sleep the way the pharmacy ones do."
+
+The coordinator takes one to end the conversation, and he is back on the phones before the end of the day. On the Friday he wants to know where a person buys them, because he has had that cold most winters of his life and it has never gone in a day and a half.
+
+"You can't. I have looked, and so has a doctor with a computer in front of him, and it is not anywhere," Chloe says.
+
 It happens with other people on the floor too. A coordinator needs a deadline explained twice before it sticks; a translator down the row only follows a pricing rule once it's tied to something he already cares about. On the phone with her mother that week, walking her through why the college won't refund a course she dropped early in the term, Chloe hears herself do it again, this time before she's noticed she's doing it. The policy language doesn't land, and she reaches for the closest thing her mother has actually paid for and lost money on, and it works there too. Chloe gets fast at finding the second version, the comparison half built before anyone's finished asking for it, and thinks of it as ordinary courtesy, the kind you'd offer anybody in a loud room.
 
 ________________
@@ -6881,15 +6899,15 @@ kavi: 21 out of what denominator, adults total or adults actually tested
 
 ruth: adults total
 
-nadia: ok but sam still failed the reading placement at basic and got held back a week
+nadia: ok but sam got held back a week at basic over the reading placement
 
-sam: that was a DIFFERENT thing, that was a comprehension test about diesel maintenance written like a legal document on purpose
+sam: i didnt fail it. i finished it in a quarter of the time they gave us and the proctor pulled my sheet and sat me down to do it again on the thursday
 
 nadia: sure
 
-theo: on brand for the army to write it that way and then be surprised
+theo: on brand for the army to write a comprehension test about diesel maintenance like a legal document and then not believe anybody who reads it fast
 
-sam: i didnt say i disagreed with the test i said i failed it
+sam: i sat it again slower and got the same score and they filed both
 
 And it moves.
 
@@ -7657,7 +7675,7 @@ She holds a clearance for things the government keeps away from most people, and
 
 *June 2026*
 
-They open it in seven different places, each at a different hour, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. The government badge is clipped to the strap of her bag, exactly where she dropped it on her way in the door. Ruth is in a lab in Cambridge she has no official reason to be in over the summer. She's sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it's worth. Sam reads his on a phone screen gone dim from the sun, thirty seconds at a time, between whatever a sergeant is telling nineteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till already counted and the drawer locked, and she reads standing, because sitting down for it would mean deciding it deserved the time. Eli reads his at his own kitchen table, his badge from the security job face-down next to the keyboard, and taps two fingers against the wood while he reads. Kavi reads his in the lab down the corridor from where he had his own lessons as a boy, turning a pen over and setting it back exactly where it was between paragraphs. Theo reads his standing up, because he was standing up when the file finished loading. Through the rest of the file he stays on his feet, the twenty minutes outside still ahead of him.
+They open it in seven different places, each at a different hour, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. Ruth is in a Cambridge lab she has no official reason to be in over the summer, sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it is worth. Sam reads his on a phone screen gone dim in the sun, thirty seconds at a time, between whatever a sergeant is telling nineteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till counted and the drawer locked, and reads it standing. Eli reads at his own kitchen table with the badge from the security job face down by the keyboard, and taps two fingers on the wood as he goes, Kavi in the lab down the corridor from where he had his own lessons as a boy, and Theo standing up, because he was standing when the file finished loading, and he stays on his feet the whole way through it, with the twenty minutes outside still ahead of him.
 
 There is a file on all ninety-one of them. Every page carries the same header first: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
