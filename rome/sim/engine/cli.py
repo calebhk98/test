@@ -15,7 +15,7 @@ import argparse, sys
 from .core import Sim
 from .protocol import (
     _agent_available, _agent_dispatch, _agent_end_reason, _agent_help,
-    _agent_state, _node_explain, load_state, save_state)
+    _agent_state, _node_explain, load_state, render_pretty, save_state)
 
 
 def load_strategy(name, nodes, goal):
@@ -353,14 +353,21 @@ def cmd_agent(a):
     tree, prices, nodes, wages, goods = load()
     goal = tree["meta"]["goal_node"]
     label, order, bounties = load_strategy(a.strategy, nodes, goal)
+    # `run`/`compare`/`play` all take --mortal; `agent` silently did not, so
+    # the founder was immortal in every scripted or JSON-driven game no
+    # matter what was asked for - and the menu (below) was printing a
+    # "--mortal" flag on its suggested agent command line that argparse would
+    # have rejected outright, because the flag did not exist here at all.
+    cfg = {"start_capital": STARTING_KITS[a.kit]["den"], "horizon_years": a.horizon,
+           "immortal": not getattr(a, "mortal", False)}
     s = Sim(nodes, order, random.Random(a.seed), events=not a.no_events,
-            cfg={"start_capital": STARTING_KITS[a.kit]["den"], "horizon_years": a.horizon},
-            civ=load_civ(a.civ), bounty_set=set(), manual=True)
+            cfg=cfg, civ=load_civ(a.civ), bounty_set=set(), manual=True)
     s.goal = goal
     s.done_year = {}
     s.end_year = s.cfg["start_year"] + a.horizon
     s.fog = bool(getattr(a, "fog", False))
     s.revealed = set()
+    pretty = bool(getattr(a, "pretty", False))
 
     session = getattr(a, "session", None)
     if session and os.path.exists(session):
@@ -372,9 +379,18 @@ def cmd_agent(a):
             ) + "\n")
             return 1
 
-    def emit(obj):
+    def emit(obj, op=None):
+        # THE JSON LINE IS UNCHANGED, ALWAYS, REGARDLESS OF --pretty. It is
+        # written first, exactly as before pretty rendering existed, so a
+        # script reading only stdout sees byte-identical output whether or
+        # not a human also asked for a readable view. The readable view - if
+        # asked for - is a SEPARATE line on stderr, alongside the JSON, never
+        # instead of it, so nothing that parses stdout has to change either.
         sys.stdout.write(json.dumps(obj) + "\n")
         sys.stdout.flush()
+        if pretty:
+            sys.stderr.write(render_pretty(op, obj) + "\n\n")
+            sys.stderr.flush()
 
     # A player who has been told nothing but the path to this file must still be
     # able to start. On a new game the first line out is the whole briefing,
@@ -400,7 +416,7 @@ def cmd_agent(a):
             emit({"ok": False, "error": "--script file must contain a JSON list of command objects"})
             return 1
         for c in cmds:
-            emit(_agent_dispatch(s, nodes, c))
+            emit(_agent_dispatch(s, nodes, c), c.get("cmd") if isinstance(c, dict) else None)
             if session:
                 save_state(s, session)
         return 0
@@ -429,7 +445,7 @@ def cmd_agent(a):
                     "error": "internal error handling that command: %s: %s. "
                              "The game is intact; try something else."
                              % (type(e).__name__, e)}
-        emit(resp)
+        emit(resp, cmd.get("cmd") if isinstance(cmd, dict) else None)
         if session:
             save_state(s, session)
         if isinstance(cmd, dict) and cmd.get("cmd") == "quit":
@@ -659,6 +675,22 @@ def _wrap(text, width=76, indent="   "):
     return "\n".join(lines)
 
 
+def _pick_session_filename(civ_id):
+    """A save name for a game the menu is about to start, picked so it never
+    silently overwrites an existing one.
+
+    A relative filename in the current directory, which is exactly what
+    `save` will accept (see _unsafe_path in protocol.py) and exactly where it
+    will actually be written.
+    """
+    candidate = "%s.json" % civ_id
+    i = 2
+    while os.path.exists(candidate):
+        candidate = "%s_%d.json" % (civ_id, i)
+        i += 1
+    return candidate
+
+
 def _ask(prompt, options, default=None):
     """Ask until the answer is one of options. Empty input takes the default."""
     while True:
@@ -783,32 +815,43 @@ def cmd_menu(a):
     if mortal is None:
         return
 
-    cmdline = ["python3 rome/sim/simulator.py agent",
-               "--civ %s" % civ["id"]]
-    if fog == "y":
-        cmdline.append("--fog")
-    if kit != "poor_scholar":
-        cmdline.append("--kit %s" % kit)
-    if mortal == "y":
-        cmdline.append("--mortal")
-    cmdline.append("--session mygame.json")
-
+    # THIS USED TO STOP HERE: print the command for the JSON protocol and ASK
+    # whether to play. A tester put it plainly - "it should be the save
+    # starting. It should have you pick, then you immediately jump in" - and
+    # they were right: everything above this point is a choice about WHAT
+    # game to start, not whether to start one, and a menu that ends by
+    # handing you a command line to go run yourself is not a front door, it
+    # is a man page. So: pick where the save goes, say so once, and go.
+    #
+    # This drops into `agent`, not `play`, even though `agent` speaks JSON
+    # rather than plain typed commands. Two reasons. First, only `agent` has
+    # a session file at all, and "then you immediately jump in" is worthless
+    # if the game vanishes the moment this process exits - the whole point of
+    # asking for a save name is that you can come back. Second, `play`
+    # WITHOUT --manual is explicitly not a real choice (see its docstring:
+    # the optimizer keeps starting things on its own regardless of what you
+    # type), and wiring --manual through the menu just to reach the same
+    # guarantee `agent` already provides by default would be reinventing it
+    # worse. --pretty is what actually answers the testers who found raw
+    # JSON hard to read, without giving up the one JSON object per line that
+    # makes the save/resume story work at all.
+    session = _pick_session_filename(civ["id"])
     print()
     print("=" * 78)
-    print(_wrap("Two ways to play from here. At a keyboard, the game asks you "
-                "for a node id and steps a year at a time. Through the JSON "
-                "protocol, one object per line in and one out, which is how a "
-                "script or an agent plays and is also perfectly usable by hand.",
-                indent="   "))
+    print(_wrap(
+        "Starting now. Progress is written to this file after every command, "
+        "so you can stop any time - close the terminal, anything - and come "
+        "back to exactly where you left off with:"))
     print()
-    print("   The command for the JSON protocol, if you want it later:")
+    print("      python3 rome/sim/simulator.py agent --session %s --pretty" % session)
     print()
-    print("      %s" % " \\\n         ".join(cmdline))
+    print(_wrap(
+        "Type one JSON command per line, for example {\"cmd\":\"available\"} or "
+        "{\"cmd\":\"step\",\"years\":5}. Each reply prints as JSON, followed by a "
+        "plain-English reading of the same reply. {\"cmd\":\"help\"} explains "
+        "everything else, and nothing you type here can be typed wrong badly "
+        "enough to lose the game.", indent=""))
     print()
-    how = _ask("   Play at the keyboard now? [Y/n] ", ["y", "n"], "y")
-    if how is None or how == "n":
-        print("\n   Good luck.\n")
-        return
 
     class Args:
         pass
@@ -816,13 +859,15 @@ def cmd_menu(a):
     args.strategy = "recommended"
     args.seed = 1
     args.horizon = 500
-    args.manual = True
     args.civ = civ["id"]
     args.kit = kit
     args.mortal = (mortal == "y")
     args.fog = (fog == "y")
-    print()
-    return cmd_play(args)
+    args.no_events = False
+    args.session = session
+    args.script = None
+    args.pretty = True
+    return cmd_agent(args)
 
 
 def main():
@@ -893,6 +938,9 @@ def main():
     q.add_argument("--fog", action="store_true",
                    help="fog of war: you see what you have built and what you could "
                         "begin next, and nothing about where any of it leads")
+    q.add_argument("--mortal", action="store_true",
+                   help="turn the founder's mortality back on (default: immortal, "
+                        "same meaning as on 'run'/'compare'/'play')")
     q.add_argument("--session", default=None,
                    help="a save file. Loaded if it exists, written after every "
                         "command, so you can play across separate invocations "
@@ -900,6 +948,11 @@ def main():
     q.add_argument("--script", default=None,
                    help="path to a JSON file holding a list of command objects, "
                         "played in order instead of reading stdin")
+    q.add_argument("--pretty", action="store_true",
+                   help="alongside the ordinary JSON line on stdout - unchanged, "
+                        "still exactly one object per line - print a human-readable "
+                        "rendering of each reply to stderr. Never changes stdout; "
+                        "a script reading only stdout sees no difference at all.")
     a = p.parse_args()
     if not a.cmd:
         a.cmd = "menu"
