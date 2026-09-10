@@ -1721,7 +1721,9 @@ s.insolvent_years = 12
 _diag = s.stall_diagnosis()
 check("a run that has effectively stopped says so, and says what would restart it",
       _diag and _diag["what_would_change_it"]
-      and any("work for wages" in w for w in _diag["what_would_change_it"]),
+      # "work for wages" became "work as a <trade>", because advice that does
+      # not say which job to take can be followed into a loss.
+      and any(w.startswith("work as a ") for w in _diag["what_would_change_it"]),
       _diag)
 check("a solvent run is not told it is stuck",
       sim(civ="norse_900ad").stall_diagnosis() is None,
@@ -3042,6 +3044,140 @@ except SystemExit as e:
     _civerr = str(e)
 check("the reference data files are not offered as civilisations to play",
       "_TECH_EFFECTS" not in _civerr and "rome_100ad" in _civerr, _civerr)
+
+
+# --- BREAK: the Mexica menu says "no draught animals, no iron, no wheel in
+# practical use" and horse_collar was startable on arrival in the Valley of
+# Mexico in 1500, with `why` still calling it a collar for a draught horse.
+_mex = sim(civ="mexica_1500")
+_HORSE = "horse_collar"
+_ok_h, _why_h = _mex.start_reason(_HORSE)
+check("a society with no draught animal cannot begin draught-animal work",
+      not _ok_h and "draught animal" in _why_h, _why_h)
+check("...and the refusal names the one thing that would open it",
+      "exp_import_draught_animals" in _why_h, _why_h)
+check("...and it is not in what you could begin today",
+      not any(e["id"] == _HORSE
+              for e in S._agent_available(_mex, NODES, {"all": True})["available"]),
+      _HORSE)
+_mex.done.add("exp_import_draught_animals"); _mex._done_changed()
+check("...and bringing the animals across opens all of it at once",
+      _mex.needs_first(_HORSE)[0] is None, _mex.needs_first(_HORSE))
+_rom = sim(civ="rome_100ad")
+check("a society that HAS horses is not gated at all (the control case)",
+      _rom.needs_first(_HORSE)[0] is None, _rom.needs_first(_HORSE))
+# Every gate has to be liftable, or it is a wall rather than a handicap.
+for _cf in sorted(os.listdir(os.path.join(ROOT, "rome/data/civilizations"))):
+    if not _cf.endswith(".json") or _cf.startswith("_"):
+        continue
+    _cv = json.load(open(os.path.join(ROOT, "rome/data/civilizations", _cf)))
+    for _lbl, _ent in (_cv.get("needs_first") or {}).items():
+        if _lbl.startswith("_"):
+            continue
+        check("%s: the '%s' gate names a real node that lifts it"
+              % (_cv["id"], _lbl),
+              _ent.get("node") in NODES and _ent["node"] not in (_ent.get("ids") or []),
+              _ent.get("node"))
+        check("%s: every id behind the '%s' gate is a real node"
+              % (_cv["id"], _lbl),
+              all(x in NODES for x in (_ent.get("ids") or [])),
+              [x for x in (_ent.get("ids") or []) if x not in NODES])
+
+
+# ======================================================================
+# ROUND 8e: three answers to "can I afford this", and advice you cannot take.
+# ======================================================================
+
+s_af = sim(capital=400.0)
+check("there is ONE affordability rule, and it says which it is using",
+      abs(s_af.spending_power("buy") - (400.0 + s_af.credit_limit() * 0.5)) < 1e-6
+      and abs(s_af.spending_power("start") - (400.0 + s_af.credit_limit())) < 1e-6,
+      (s_af.spending_power("buy"), s_af.spending_power("start")))
+_q, _, _ = proto([{"cmd": "quote", "what": "mine", "material": "coal", "n": 500},
+                  {"cmd": "available"}])
+check("quote counts the credit a lender would actually advance",
+      _q[0].get("you_could_raise", 0) > _q[0].get("you_have", 0), _q[0].get("you_could_raise"))
+check("...and says what its 'afford' figure means",
+      "credit" in str(_q[0].get("afford_means")), _q[0].get("afford_means"))
+_hint = str((_q[1].get("to_see_more") or {}).get("what you can pay for", ""))
+check("the AFFORD hint uses the rule `start` uses, since it is about starting",
+      str(int(sim(capital=400.0).spending_power("start"))).replace(",", "")
+      in _hint.replace(",", ""), _hint)
+
+# --- BREAK: the arrears banner quoted 46 a year against a ledger Net/yr of
+# -159.5, because it left out the interest that exists BECAUSE of the arrears.
+s_ar = sim(capital=-4000.0)
+s_ar.insolvent_years = 20
+s_ar.revenue = lambda: 0.0
+_diag = s_ar.stall_diagnosis()
+_led = (s_ar.revenue() - s_ar.upkeep() - s_ar.living_cost()
+        - s_ar.mine_operating_cost()
+        - max(0.0, -s_ar.capital) * s_ar.debt_interest_rate())
+check("the arrears banner quotes the same loss the ledger does",
+      _diag and "{:,.0f}".format(-_led) in _diag["you_are_stuck"],
+      (_diag or {}).get("you_are_stuck"))
+check("...and names the part of it that is interest on the arrears themselves",
+      any("interest on the arrears" in w for w in _diag["what_would_change_it"]),
+      _diag["what_would_change_it"])
+
+# --- BREAK: the banner recommended wage work, and `work` answered the player
+# who took it with "this cost you 50. Wage work is for when you have no
+# practice to lose." The game recommended a mistake and then named it as one.
+s_w = sim(capital=-4000.0)
+s_w.insolvent_years = 20
+_dw = s_w.stall_diagnosis()
+_wages = [w for w in (_dw or {}).get("what_would_change_it", [])
+          if w.startswith("work as a ")]
+if _wages:
+    _trade = _wages[0].split("work as a ")[1].split(":")[0].strip()
+    _pay, _note = sim(capital=-4000.0).work_for_wages(_trade, 2000)
+    check("the trade the banner names is one that actually gains",
+          not (_note and "cost you" in _note), (_trade, _note))
+else:
+    check("the banner does not recommend wage work when it would lose money",
+          True, "not offered")
+
+# --- BREAK: at the horizon the banner still said "it is escapable ... work for
+# wages", and every action it named was refused with "the run has ended".
+s_end = sim()
+s_end.year = 9999
+check("a finished run is not given advice it will refuse to act on",
+      S._agent_state(s_end, NODES).get("stuck") is None,
+      S._agent_state(s_end, NODES).get("stuck"))
+
+# --- BREAK: `why` on a mistyped id suggested; `open` said "no such node".
+_ro, _, _ = proto([{"cmd": "open", "id": "fin_pawnshopp"}])
+check("open on a mistyped id suggests, the way why does",
+      "did you mean" in (_ro[0].get("error") or ""), _ro[0].get("error"))
+
+# --- BREAK: "hiring 1e+21 smiths costs 281250000000000012058624 denarii".
+_rn, _, _ = proto([{"cmd": "hire", "trade": "smith", "n": 1e21},
+                   {"cmd": "buy", "what": "forest", "n": 1e30},
+                   {"cmd": "buy", "what": "forest", "n": 3}])
+check("an absurd quantity is refused as absurd, not priced in scientific notation",
+      all("e+" not in (r.get("error") or "") for r in _rn[:2])
+      and all(r.get("ok") is False for r in _rn[:2]),
+      [r.get("error", "")[:60] for r in _rn[:2]])
+check("...and an ordinary quantity still goes through the same reader",
+      _rn[2].get("ok") is not None, _rn[2])
+
+# --- BREAK: an idle million bled 15,000 a year with nothing anywhere saying why.
+_rr, _, _ = proto([{"cmd": "money"}], kit="absurd")
+check("the ledger names the part of your living costs that is your wealth",
+      (_rr[0].get("what_it_costs_you") or {}).get("_of_which_because_you_are_rich", 0) > 1000,
+      _rr[0].get("what_it_costs_you"))
+
+# --- BREAK: `path` after a sack never mentioned the one verb that would move
+# the player on, and a run driven mechanically from it sat stuck for 140 years.
+s_pth = sim()
+s_pth.done.add("lead_chamber"); s_pth._done_changed()
+s_pth.mothballed.add("lead_chamber")
+_rp = S._agent_dispatch(s_pth, NODES, {"cmd": "path", "id": GOAL})
+check("path names what on the route is shut rather than unbuilt",
+      "lead_chamber" in (_rp.get("on_this_route_but_shut_down") or []),
+      _rp.get("on_this_route_but_shut_down"))
+check("...and names restore, which is the verb that reopens it",
+      "restore" in str(_rp.get("reopen_them_with")), _rp.get("reopen_them_with"))
 
 
 print("=" * 72)

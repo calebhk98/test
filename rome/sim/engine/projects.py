@@ -507,6 +507,11 @@ class ProjectsMixin:
             return False, "already done"
         if k in self.active:
             return False, "already active"
+        # NOT DEAR HERE, IMPOSSIBLE HERE. See SocietyMixin.needs_first.
+        _nf, _why_nf = self.needs_first(k)
+        if _nf:
+            return False, ("%s. Build %s first and this opens with it"
+                           % (_why_nf, _nf))
         # A MOTHBALL ENTRY WITHOUT THE KNOWLEDGE IS A STALE ENTRY, and it falls
         # through to the ordinary checks below. Refusing here and sending the
         # player to `restore` - which answers "you no longer know how" - was a

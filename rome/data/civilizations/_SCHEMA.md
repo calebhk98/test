@@ -31,6 +31,9 @@ python3 rome/sim/simulator.py civs            # list what is available
 | `institutions` | which legal vehicles exist: partnership, corporation, guild, testament, charter, bank, patent |
 | `values` | the REACTION MODEL. See below. |
 | `hazards` | dated shocks: plagues, invasions, dynastic collapse, with year ranges |
+| `cost_multipliers` | what this society finds harder or easier than Rome, by node category and trait. Above 1 is dearer here. |
+| `handicap_remedies` | per `cost_multipliers` key: `{"node": ..., "residual": ...}`. Building that node drops the multiplier to `residual`. |
+| `needs_first` | HARD gates, as against the soft ones above: `{"<label>": {"node": ..., "because": ..., "ids": [...]}}`. Those ids cannot be STARTED at all until `node` is done, and the refusal quotes `because`. For what is not dear here but impossible - the Mexica had no draught animal of any kind, so a horse collar is not a 1.3x agriculture cost, it is nothing you can build. Always liftable by the node it names. |
 | `notes` | what a newcomer must know |
 
 ## The values vector, and why it replaces `gov` and `sus`

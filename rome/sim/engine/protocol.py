@@ -249,7 +249,11 @@ def _agent_state(s, nodes, cmd=None):
         # how to run and have not opened. Without this the difference is
         # invisible until a player wonders why building things stopped paying.
         # Only present when the run has effectively stopped. See stall_diagnosis.
-        "stuck": s.stall_diagnosis(),
+        # NOT AFTER IT IS OVER. At the horizon this still printed "it is
+        # escapable ... work for wages: you have 2000 of your own hours left
+        # this year", and every action it recommended was then refused with
+        # "the run has ended". Advice you cannot take is not advice.
+        "stuck": (None if _agent_end_reason(s) else s.stall_diagnosis()),
         "concerns_you_run": len(getattr(s, "operating", ())),
         "you_know_how_to_run_but_have_not_opened": sum(
             1 for k in s.done if s.is_venture(k) and k not in s.operating),
@@ -587,10 +591,17 @@ def _agent_help(s, topic=None):
             "a concern you open starts small": (
                 "It reaches its full figure over about three years."),
             "where it goes": (
-                "Living and appearances (which rise with your wealth and your "
-                "standing), wages, the upkeep of what you are RUNNING, mines "
-                "standing whether or not you work them, and interest on "
-                "arrears."),
+                "Living and appearances, wages, the upkeep of what you are "
+                "RUNNING, mines standing whether or not you work them, and "
+                "interest on arrears."),
+            "money costs money to hold": (
+                "Living and appearances is about a sixtieth of your capital a "
+                "year, on top of a subsistence floor and your household, plus "
+                "a fixed sum for each rank you hold. In a patronage society a "
+                "man visibly richer than he lives is suspected, and a man "
+                "seeking standing must spend on it. An idle million bleeds "
+                "about fifteen thousand a year doing nothing, which is why "
+                "money sitting still is money going backwards."),
             "what you can buy": '{"cmd":"help","topic":"economy"}',
             "debt": "You may spend past what you have, as far as somebody will "
                     "lend you and no further. Arrears cost interest."}
@@ -961,7 +972,11 @@ def _agent_available(s, nodes, cmd=None):
     for k in ok:
         g = groups.setdefault(_subject_of(nodes[k]), [])
         g.append(k)
-    purse = s.capital + s.credit_limit() * 0.5
+    # The AFFORD column is about STARTING work, so it uses the rule `start`
+    # uses. It used the purchase rule, which is why the hint under the table
+    # offered "available afford 1,083" for a player `start` would have let
+    # commit 1,767. See Sim.spending_power.
+    purse = s.spending_power("start")
     rows = []
     for name, ks in sorted(groups.items(), key=lambda kv: -len(kv[1])):
         costs = sorted(s.project_cost(k) for k in ks)
@@ -1762,7 +1777,10 @@ def render_money(out):
     if costs:
         L.append("Costs:")
         for k, v in costs.items():
-            L.append("  %-30s %s" % (k.replace("_", " "), _fmt_num(v)))
+            if v is None:
+                continue
+            L.append("  %-30s %s"
+                     % (k.lstrip("_").replace("_", " "), _fmt_num(v)))
     L.append("Net/yr: %s     spent on projects last step: %s"
              % (_fmt_num(out.get("net_per_year")), _fmt_num(out.get("spent_on_projects_last_year"))))
     L.append("Credit limit: %s     interest on arrears: %s     paid so far: %s"
@@ -2159,6 +2177,14 @@ def _qty(cmd, key, default=None):
     if f != f or f in (float("inf"), float("-inf")):
         return None, ("%s must be a real number; NaN and Infinity are not "
                       "quantities" % key)
+    # A QUANTITY, NOT A FLOAT EXPERIMENT. `hire smith 999999999999999999999`
+    # was answered with "hiring 1e+21 smiths costs 281250000000000012058624
+    # denarii" - a refusal, but one written in scientific notation and binary
+    # rounding error, which is the game losing its composure rather than
+    # keeping it. Nothing in this world comes in more than a billion.
+    if abs(f) > 1e9:
+        return None, ("%s must be a quantity of something real. There are not "
+                      "a thousand million of anything here" % key)
     return f, None
 
 
@@ -2722,8 +2748,28 @@ def _agent_dispatch_inner(s, nodes, cmd):
         need = closure(nodes, k)
         order = topo_order(nodes, need)
         remaining = [x for x in order if x not in s.done]
-        return {"ok": True, "id": k, "done": k in s.done,
-                "remaining_count": len(remaining), "remaining": remaining}
+        out = {"ok": True, "id": k, "done": k in s.done,
+               "remaining_count": len(remaining), "remaining": remaining}
+        # A ROUTE THAT DOES NOT SAY "RESTORE" IS A ROUTE YOU CANNOT FOLLOW. A
+        # break tester drove a run mechanically from `path` after a sack:
+        # `path` listed lead_chamber as remaining, `start` answered "you built
+        # this once - restore it", and anything downstream said the same node
+        # was a missing prerequisite. They sat at 106 technologies and 760,403
+        # denarii from 460 AD to the horizon, because `path` never mentioned
+        # the one verb that would have moved them.
+        # A node you know but have SHUT does not appear above: it is done, so
+        # it is not remaining, and nothing downstream is blocked by it. It is
+        # still the thing a player driving from `path` most needs to see after
+        # a bad century, because its plant is gone and its income with it.
+        _shut = sorted(x for x in need
+                       if x in getattr(s, "mothballed", set()) and x in s.done)
+        if _shut:
+            out["on_this_route_but_shut_down"] = _shut[:10]
+            out["reopen_them_with"] = ("'restore <id>' - you still know how, so "
+                                       "putting the plant back costs a fraction "
+                                       "of building it. Nothing downstream is "
+                                       "waiting on them; their income is")
+        return out
 
     if op == "start":
         if ended:
@@ -2835,10 +2881,13 @@ def _agent_dispatch_inner(s, nodes, cmd):
         if ended:
             return {"ok": False, "error": "the run has ended (%s); nothing more can be bought" % ended}
         what = cmd.get("what")
-        try:
-            n = float(cmd.get("n", 0))
-        except (TypeError, ValueError):
-            return {"ok": False, "error": "n must be a number"}
+        # THE SAME READER AS EVERY OTHER QUANTITY. This had its own float()
+        # and so missed the guards _qty carries: a break tester bought
+        # 1e30 hectares of coppice and read the refusal in binary rounding
+        # error.
+        n, _err_n = _qty(cmd, "n", 0)
+        if _err_n:
+            return {"ok": False, "error": _err_n + ". Nothing was changed."}
         # A playtester passed n:-5 and got money from nothing. buy_forest(-5)
         # computed a NEGATIVE cost, passed the affordability test because
         # -1250 > 400 is false, then credited the capital and set forest_ha to
@@ -2987,6 +3036,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
                 "what_it_costs_you": {
                     "upkeep_of_what_you_built": round(s.upkeep(), 1),
                     "living_and_appearances": round(s.living_cost() - s.wage_bill(), 1),
+                    # NAME THE PART THAT IS THERE BECAUSE YOU ARE RICH. A break
+                    # tester started with a million, built nothing, hired
+                    # nobody, and read "living and appearances ~14,990, Net/yr
+                    # -14,990" with no explanation anywhere of why an idle
+                    # fortune bleeds. It is not a fee: it is that a man visibly
+                    # richer than he lives is suspected in a patronage society.
+                    "_of_which_because_you_are_rich":
+                        round(max(0.0, s.capital) * 0.015, 1) or None,
                     "wages": round(s.wage_bill(), 1),
                     "mines_standing": round(s.mine_operating_cost(), 1),
                     # A COST LIKE ANY OTHER. It was printed two lines below the
@@ -3162,7 +3219,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "to_buy_it": round(per * n_f, 1),
                     "per_hectare": round(per, 2),
                     "you_have": round(s.capital, 1),
-                    "you_can_afford_about": round(max(0.0, s.capital) / max(per, 1e-9), 1),
+                    "you_could_raise": round(s.spending_power("buy"), 1),
+                    "you_can_afford_about": round(s.spending_power("buy") / max(per, 1e-9), 1),
+                    "afford_means": "cash plus half the credit line",
                     "it_yields_per_hectare_per_year":
                         "%.2f tonnes of charcoal, sustainably" % s.CHARCOAL_PER_HA,
                     "note": "Coppice is bought once and yields every year after. "
@@ -3176,7 +3235,9 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     "to_lay_it": round(per_n * n_n, 1),
                     "per_square_metre": round(per_n, 2),
                     "you_have": round(s.capital, 1),
-                    "you_can_afford_about": round(max(0.0, s.capital) / max(per_n, 1e-9), 0),
+                    "you_could_raise": round(s.spending_power("buy"), 1),
+                    "you_can_afford_about": round(s.spending_power("buy") / max(per_n, 1e-9), 0),
+                    "afford_means": "cash plus half the credit line",
                     "it_yields_per_square_metre_per_year":
                         "%.4f tonnes of saltpetre" % s.NITRE_YIELD_T_PER_M2,
                     "note": "Saltpetre is made, not mined: dung, straw and ash "
@@ -3244,6 +3305,14 @@ def _agent_dispatch_inner(s, nodes, cmd):
         k = cmd.get("id")
         if not isinstance(k, str):
             return {"ok": False, "error": 'give an id, e.g. {"cmd":"open","id":"fin_pawnshop"}'}
+        if k not in nodes:
+            # `why` on a mistyped id suggests; `open` answered "no such node"
+            # and stopped. Same typo, same player, two different games.
+            near = _did_you_mean(k, nodes, s=s)
+            return {"ok": False,
+                    "error": "no such thing as %r%s"
+                             % (k, (". did you mean: " + ", ".join(near))
+                                if near else "")}
         ok, msg = s.open_venture(k)
         if not ok:
             return {"ok": False, "error": msg}

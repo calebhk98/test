@@ -314,6 +314,29 @@ class SocietyMixin:
         hay = (k + " " + self.nodes[k].get("name", "")).lower()
         return any(m in hay for m in self.FOREIGN_INSTITUTIONS)
 
+    def needs_first(self, k):
+        """(node, why) this society must have before it can begin `k` at all.
+
+        cost_multipliers say a domain is DEARER here. Some things are not dear,
+        they are impossible: a break tester started horse_collar in the Valley
+        of Mexico in 1500, on the same screen as a menu describing a society
+        with "no draught animals, no iron, no wheel in practical use", and
+        `why` there still described it as a collar for a draught horse.
+
+        Data, like everything else about a civilisation, and always liftable -
+        every entry names the node that opens it. See _SCHEMA.md.
+        """
+        spec = self.civ.get("needs_first") or {}
+        for key, ent in spec.items():
+            if key.startswith("_") or not isinstance(ent, dict):
+                continue
+            if k in (ent.get("ids") or ()):
+                node = ent.get("node")
+                if node and node not in self.done:
+                    return node, (ent.get("because") or
+                                  "this society has no %s" % key)
+        return None, None
+
     def civ_cost_factor(self, k):
         """What this society is unusually good or bad at building.
 

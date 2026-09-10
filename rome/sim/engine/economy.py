@@ -360,16 +360,52 @@ class EconomyMixin:
         """
         if self.capital >= 0 or getattr(self, "insolvent_years", 0) < 8:
             return None
+        # THE SAME NET THE LEDGER PRINTS. This left out the interest on the
+        # arrears, which is the one cost that exists BECAUSE you are in
+        # arrears: a break tester read "you lose 46 denarii a year" directly
+        # above "Net/yr: -159.5" and reported the banner as quoting a loss that
+        # is not the loss.
+        interest = max(0.0, -self.capital) * self.debt_interest_rate()
         net = (self.revenue() - self.upkeep() - self.living_cost()
-               - self.mine_operating_cost())
+               - self.mine_operating_cost() - interest)
         if net >= 0:
             return None
         ways = []
         pool = self.director_pool() - getattr(self, "wage_hours_this_year", 0.0)
         if pool > 100:
-            ways.append("work for wages: you have %.0f of your own hours left "
-                        "this year and nobody has to lend you anything for that"
-                        % pool)
+            # ONLY IF IT WOULD ACTUALLY GAIN. Selling your hours takes them out
+            # of your own practice, so with a practice to lose this is often
+            # the losing move - and `work` says so to your face when you take
+            # it. A break tester followed the banner's advice and was answered
+            # "you earned 125, and the practice those hours were running was
+            # worth 175 a year - so this cost you 50", which is the game
+            # recommending a mistake and then naming it as one.
+            # NAME THE TRADE, and pick the one that actually pays best here.
+            # A break tester followed "work for wages" as a labourer, the
+            # cheapest trade in the table, and `work` answered "you earned 125,
+            # and the practice those hours were running was worth 175 a year -
+            # so this cost you 50". Advice that does not say which job to take
+            # is advice that can be followed into a loss.
+            trades = [t for t in WAGES if self.trade_available(t)]
+            best_t = max(trades, key=lambda t: ANNUAL_WAGE.get(t, 375.0),
+                         default=None)
+            if best_t:
+                rate = ANNUAL_WAGE[best_t] / self.HOURS_PER_PERSON_YEAR
+                would_earn = (pool * rate * self.price_index * self.wage_index
+                              * (1.0 + min(0.5, self.reputation / 200.0)))
+                # What those same hours are already earning in the practice.
+                practice = sum(self.nodes[k]["rev"] for k in self._practice_set())
+                would_cost = (practice * self.PRACTICE_SHARE
+                              * (pool / max(1.0, self.director_pool())))
+                if would_earn > would_cost:
+                    ways.append("work as a %s: %.0f of your own hours are left "
+                                "this year and would bring in about %s against "
+                                "the %s of practice they come out of, so you are "
+                                "up %s. Nobody has to lend you anything for that"
+                                % (best_t, pool,
+                                   "{:,.0f}".format(would_earn),
+                                   "{:,.0f}".format(would_cost),
+                                   "{:,.0f}".format(would_earn - would_cost)))
         losers = sorted((k for k in self.operating
                          if self.nodes[k]["up"] > self.nodes[k]["rev"]),
                         key=lambda k: self.nodes[k]["rev"] - self.nodes[k]["up"])
@@ -387,6 +423,11 @@ class EconomyMixin:
         if not ways:
             ways.append("there is nothing left to cut; your living costs alone "
                         "exceed what you earn, and only new income will move it")
+        if interest > 0.5:
+            ways.append("%s of that %s is interest on the arrears themselves, "
+                        "which is the one cost that goes away as the balance "
+                        "comes back up"
+                        % ("{:,.0f}".format(interest), "{:,.0f}".format(-net)))
         return {"you_are_stuck": ("you have been in arrears %d years and you "
                                   "lose %s denarii a year, so nothing you start "
                                   "will ever be paid for"
@@ -396,6 +437,23 @@ class EconomyMixin:
                                                    "these need anybody to lend "
                                                    "you a denarius"),
                 "what_would_change_it": ways}
+
+    # THREE ANSWERS TO "CAN I AFFORD THIS" is two too many. A break tester
+    # collected them: `quote` counted cash alone, `available afford` and `hire`
+    # counted cash plus half the credit line, and `start` counted cash plus the
+    # whole of it. Two of those are a real distinction and one was an
+    # oversight, so the distinction is named here and used everywhere.
+    #
+    # A lender advances against WORK - there is something half-built to point
+    # at - and will not advance against a payroll or a purchase, where the
+    # money is gone the moment it is spent. That is why `start` may draw the
+    # whole line and `hire` and `buy` may draw half of it. `quote` counted
+    # neither, which was simply wrong: it is the command whose entire job is
+    # to tell you what you can pay for.
+    def spending_power(self, kind="buy"):
+        """What you could actually raise, by what you mean to spend it on."""
+        share = 1.0 if kind == "start" else 0.5
+        return max(0.0, self.capital) + self.credit_limit() * share
 
     def cost_money_factor(self):
         """What a denarius of QUOTED cost means, for spending purposes.
@@ -1023,8 +1081,11 @@ class EconomyMixin:
                 "every_year_it_stands": round(opex, 1),
                 "years_before_it_produces": self.MINE_LEAD_YEARS,
                 "you_have": round(self.capital, 1),
+                "you_could_raise": round(self.spending_power("buy"), 1),
                 "you_can_afford_about": round(
-                    max(0.0, self.capital) / max(cap * self.price_index, 1e-9), 3),
+                    self.spending_power("buy") / max(cap * self.price_index, 1e-9), 3),
+                "afford_means": "cash plus half the credit line, which is what "
+                                "a lender will advance against a purchase",
                 "note": "The yearly cost is charged whether or not you use the "
                         "output, and goes on until you close it. Mothballing is "
                         "not free to reverse: the shaft floods and the crew "
