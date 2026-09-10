@@ -767,6 +767,23 @@ class LabourMixin:
         if hours > pool:
             return False, ("teaching %g %ss takes %.0f of your own hours and you have "
                            "%.0f uncommitted this year" % (n, trade, hours, max(0.0, pool)))
+        # THE SAME ROOM `hire` AND `buy` SHARE. household_room exists because
+        # two verbs used different numbers and a tester was told to their face
+        # they could take six more people and then took seven with the other
+        # one. `train` was the third verb and checked nothing at all, so the
+        # optimizer taught its way to a headcount of 26.9 against room for 6 -
+        # minus eighteen places - and then could not hire the artisans it
+        # needed to supervise anything. People you teach have to be fed, housed
+        # and overseen like anybody else.
+        room = self.household_room()
+        if n > room:
+            whole = int(max(0.0, room))
+            return False, ("you can feed, house and oversee %.2f more people, "
+                           "and teaching %g would make %g. %s %s"
+                           % (math.floor(max(0.0, room) * 100) / 100.0, n, n,
+                              "Teach %d instead." % whole if whole >= 1
+                              else "There is no room for even one.",
+                              self._room_advice()))
         # Teaching pulls the SOURCE trade's people off their own bench for the
         # duration, which is exactly what market_pressure prices for buying
         # slaves and labour_price_factor now prices for hiring: the more of

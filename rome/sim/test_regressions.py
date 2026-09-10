@@ -3969,6 +3969,49 @@ check("...and what it cost to keep them while they learn",
       "denarii" in json.dumps(_rt3[0]), _rt3[0])
 
 
+# --- BREAK: household_room exists because `hire` and `buy` used different
+# numbers. `train` was the third verb and checked nothing at all, so the
+# optimizer taught its way to a headcount of 26.9 against room for 6 - minus
+# eighteen places - and then could not hire the artisans to supervise
+# anything.
+s_tr3 = sim(capital=2000000.0)
+# Widen the literacy ceiling first, so the ROOM is what binds rather than the
+# pool of people who can read - the tightest constraint should be the one that
+# speaks, and here we are testing the other one.
+for _k in ("rag_paper", "printing_press", "if_movable_type", "academy_network"):
+    if _k in NODES:
+        s_tr3.apply_tech_effects(_k)
+_room0 = s_tr3.household_room()
+check("a fresh household has room for a few people and no more",
+      0 < _room0 < 20, _room0)
+check("...and the literacy ceiling is not what binds here",
+      s_tr3.literate_capacity("machinist") > _room0 + 1,
+      (s_tr3.literate_capacity("machinist"), _room0))
+# Fill the household first, which is the state the tester was in: the hours
+# check bites long before the room does at any larger number, because teaching
+# costs 450 founder-hours a head.
+s_tr3.hire("smith", int(_room0))
+_ok_t3, _why_t3 = s_tr3.train("machinist", 1)
+check("teaching past what you can feed and house is refused",
+      not _ok_t3 and "feed, house and oversee" in _why_t3, _why_t3)
+check("...and it says there is no room for even one",
+      "no room for even one" in _why_t3, _why_t3)
+check("...and what makes room, which is not what buys people",
+      "built" in _why_t3, _why_t3)
+s_tr4 = sim(capital=2000000.0)
+check("...and teaching within the room still works",
+      s_tr4.train("machinist", 1)[0], s_tr4.train("machinist", 1)[1])
+# The three verbs must agree, which is the whole reason household_room exists.
+s_ag = sim(capital=2000000.0)
+_r = s_ag.household_room()
+s_ag.hire("smith", int(_r))          # fill it exactly
+check("hire, buy and train are all bounded by the same one number",
+      s_ag.hire("smith", 1)[0] is False
+      and s_ag.train("machinist", 1)[0] is False
+      and s_ag.buy_slaves(1) <= 0,
+      (_r, s_ag.household_room()))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
