@@ -343,8 +343,83 @@ for _ in range(2):
     outs.add(p.stdout)
 check("the same seed gives the same result", len(outs) == 1)
 
+# --- round 2 A: the setting is Rome wearing a hat -- notes must generalise
+_ROME_TEMPLATES = ("ROME ALREADY HAS THIS", "ROME HAS THIS", "ROME POSSIBLY HAS THIS")
+bare_rome_notes = [k for k, n in NODES.items()
+                    if any(t in (n.get("note") or "") for t in _ROME_TEMPLATES)]
+check("no node note bluntly claims 'Rome [already] has this'",
+      not bare_rome_notes, str(bare_rome_notes[:5]))
+
+bare_rome_prices = [k for k, v in PRICES["wage_rates_denarii_per_hour"].items()
+                     if not k.startswith("_") and isinstance(v, dict)
+                     and ("Rome has" in (v.get("note") or "")
+                          or "Rome already has" in (v.get("note") or ""))]
+check("no wage-rate note bluntly claims 'Rome has these'",
+      not bare_rome_prices, str(bare_rome_prices))
+
+check("the cover identity is not named after one civilization's version",
+      "Alexandrian" not in NODES["identity_cover"]["name"],
+      NODES["identity_cover"]["name"])
+
+# --- round 2 A: institutions Rome already has must cost real work for
+# anyone else, and still be free for Rome (via starting_techs, not via a
+# zero price tag every civilization can exploit)
+_ROMAN_INSTITUTIONS = ["civ_arch_roman", "fin_annona", "fin_argentarii",
+                       "fin_collegium", "fin_societas", "hom_cosmetics_roman"]
+rome_missing = [k for k in _ROMAN_INSTITUTIONS
+                if k not in (S.load_civ("rome_100ad").get("starting_techs") or [])]
+check("Rome is granted its own institutions through starting_techs",
+      not rome_missing, str(rome_missing))
+still_free = [k for k in _ROMAN_INSTITUTIONS if NODES[k]["cap"] == 0 and NODES[k]["ph"] == 0]
+check("Rome's institutions are not free for whoever starts them",
+      not still_free, str(still_free))
+s = sim(civ="norse_900ad")
+norse_has_them_free = [k for k in _ROMAN_INSTITUTIONS if k in s.done]
+check("a Norse founder is not handed Rome's institutions for nothing",
+      not norse_has_them_free, str(norse_has_them_free))
+
+# --- round 2 A: geography-locked agriculture must not be startable
+# anywhere on earth
+s = sim(civ="norse_900ad")
+ok_chinampa = s.can_start("fud_chinampa")
+check("chinampa agriculture is not startable in Norway",
+      not ok_chinampa)
+s = sim(civ="mexica_1500")
+check("chinampa agriculture is still free for the Mexica",
+      "fud_chinampa" in s.done)
+
+# --- round 2 B: anachronism is gated by nothing much
+s = sim(civ="rome_100ad")
+_ANACHRONISMS = ["mil_chemical_mustard", "mil_trace_italienne", "mil_general_staff",
+                 "mil_conscription_reserve", "mil_trench", "hot_air_balloon",
+                 "mil_observation_balloon", "mil_gunpowder_base"]
+startable_turn_one = [k for k in _ANACHRONISMS if s.can_start(k)]
+check("no anachronistic weapon or doctrine is startable turn one",
+      not startable_turn_one, str(startable_turn_one))
+check("mustard gas needs industrial chlorine and a delivery shell",
+      set(["mat_chlorine", "mil_artillery_shell"]) <= set(NODES["mil_chemical_mustard"]["pre"]),
+      str(NODES["mil_chemical_mustard"]["pre"]))
+check("trace italienne fortification answers an actual cannon",
+      "mil_artillery_piece" in NODES["mil_trace_italienne"]["pre"],
+      str(NODES["mil_trace_italienne"]["pre"]))
+check("a trench answers an actual machine gun and shellfire",
+      set(["mil_machine_gun_recoil", "mil_artillery_shell"]) <= set(NODES["mil_trench"]["pre"]),
+      str(NODES["mil_trench"]["pre"]))
+check("gunpowder claims no saltpetre it has not earned via nitre_beds",
+      "nitre_beds" in NODES["mil_gunpowder_base"]["pre"],
+      str(NODES["mil_gunpowder_base"]["pre"]))
+
+# --- round 2 G: five centuries, two events -- Norse hazards must do something
+norse_hazards = S.load_civ("norse_900ad")["hazards"]
+check("the Norse civilization has more than one dated hazard",
+      len(norse_hazards) > 1, "only %d" % len(norse_hazards))
+_EFFECT_FIELDS = ("staff_loss", "sack_chance", "output_factor", "real_erosion")
+inert = [h["name"] for h in norse_hazards if not any(f in h for f in _EFFECT_FIELDS)]
+check("no Norse hazard is purely decorative (no effect field the engine reads)",
+      not inert, str(inert))
+
 print("=" * 72)
-print("%d checks, %d failures" % (38, len(FAILURES)))
+print("%d checks, %d failures" % (38 + 15, len(FAILURES)))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)

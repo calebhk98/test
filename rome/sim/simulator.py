@@ -761,11 +761,34 @@ class Sim:
         # 32,000, upkeep 17,000, wages 12,000, and exactly nothing left to spend
         # on the work, for two centuries. A programme whose payroll is its whole
         # income is not a programme.
-        spare = max(0.0, (self.revenue() - self.upkeep()) * self.rep_factor()
-                    + max(0.0, self.capital) * 0.06)
+        #
+        # SPARE USED TO BE revenue() MINUS UPKEEP() ALONE, which is the upkeep of
+        # BUILT WORKS and says nothing about living_cost - rent, appearances, tax
+        # and (via wage_bill) the staff you ALREADY carry. On turn one, with 400
+        # denarii, 232/yr of income and a 230/yr household, that left "spare"
+        # reading a healthy 267 while the true surplus was 3.5. auto_hire spent
+        # against the healthy number, not the true one. Subtracting living_cost
+        # here is what "what you can pay for" has to mean if it is to mean
+        # anything: money already going to rent and to people you already
+        # employ is not there to hire more people with.
+        spare = max(0.0, (self.revenue() - self.upkeep() - self.living_cost())
+                    * self.rep_factor() + max(0.0, self.capital) * 0.06)
         budget = spare * 0.40
         afford = budget / (420.0 * self.price_index * self.wage_index)
-        scale = max(0.10, min(1.0, afford / max(1.0, sc + ar)))
+        # EXTRA is supervision_room(), the headroom auto_hire adds on top of
+        # this institutional ceiling (see step(), section 1). It used to be
+        # added with no affordability check of its own at all - this ceiling's
+        # `scale` only ever throttled sc/ar, which are BOTH ZERO before you
+        # have built a workshop or a school, so the extra six-person headroom
+        # went through at full strength regardless of income. A tester's turn
+        # one hired 1.32 artisans and 0.38 scholars on 400 denarii and a net
+        # income of 3.5/yr, taking living cost to 699.9 and capital to -688.
+        # Folding extra into the SAME denominator this ceiling is scaled
+        # against is what makes "grow the staff toward what you can house and
+        # pay" true of the headroom hiring and not just the institutional kind.
+        extra = self.supervision_room()
+        scale = max(0.10, min(1.0, afford / max(1.0, sc + ar + extra * 1.35)))
+        self._staff_scale = scale     # step() applies this to `extra` too
         # A civilization of 1.5 million simply cannot field the trained people a
         # civilization of 65 million can, however rich you are. This is the single
         # biggest structural difference between playing Rome and playing Norway.
@@ -983,17 +1006,42 @@ class Sim:
                 if k in (g.get("options") or {}):
                     self.revealed.add(other)
 
-    def is_visible(self, k):
-        """Can the player see this node at all?"""
+    def is_visible(self, k, _memo=None):
+        """Can the player see this node at all?
+
+        _memo: an optional dict shared across one recursive descent. is_visible
+        calls start_reason, and start_reason calls is_visible on every missing
+        prerequisite of a node with missing prerequisites - which, on a node
+        deep in the tree, is every one of ITS missing prerequisites too. Without
+        sharing one memo down that whole call tree, checking visibility of a
+        single deep node re-derived the visibility of common ancestors once per
+        path to them, which is exponential in the depth of the tree. A profiler
+        on `can_start('dynamo')` on norse_900ad under fog counted 12,465 nested
+        calls to start_reason from three top-level ones, at 0.45s each; a plain
+        `available` call, which checks all ~2,800 nodes this way, did not return
+        in 60 seconds. The memo makes one recursive descent O(nodes touched)
+        instead of O(paths to them); a fresh dict per outward-facing call (the
+        default) keeps it exact - nothing here is cached ACROSS commands, so a
+        node built or revealed between one call and the next is seen correctly
+        next time.
+        """
         if not getattr(self, "fog", False):
             return True
         if k in self.done or k in self.active:
             return True
         if k in getattr(self, "revealed", set()):
             return True
+        memo = {} if _memo is None else _memo
+        if k in memo:
+            return memo[k]
+        memo[k] = False        # provisional: the tree is a DAG so this should
+                                # never actually be read back, but a cycle must
+                                # not recurse forever if one ever sneaks in.
         # anything you could start right now is visible by definition: you can
         # see the work in front of you even if you cannot see past it
-        return self.start_reason(k)[0]
+        result = self.start_reason(k, _memo=memo)[0]
+        memo[k] = result
+        return result
 
     def fog_scrub(self, text):
         """Strip node ids the player has not discovered out of a message."""
@@ -1125,8 +1173,27 @@ class Sim:
     # 1,501 of revenue, so a ruined run could never stop bleeding and recovery
     # took centuries. Both of those are real. A patronage can lapse and a
     # workshop can close; what you cannot lose is who you are and what you know.
+    #
+    # A tester watched creditors make the founder forget Newton's laws
+    # (sc2_physics_newtons_laws, cat "physics", up 40) - already covered above
+    # - and separately watched abstract science and medicine outside pure
+    # mathematics go the same way: cell theory, DNA, the phase diagram of
+    # iron, none of them a building, all of them carrying real upkeep (40 to
+    # 400 denarii, from "keeping up scholarly correspondence" rather than rent)
+    # and so all of them ELIGIBLE under the up-exceeds-revenue test that gates
+    # both shed_loss_makers and enforce_credit_limit's seizure. "theory" and
+    # "knowledge" are what the tree itself calls these categories, which is
+    # the same evidence "physics" and "mathematics" were added on: you cannot
+    # be made to un-know a thing to balance a ledger, whatever it is filed
+    # under. NARROW ON PURPOSE, same lesson as FOREIGN_MARKERS below: most
+    # knowledge (tex_drop_spindle, "basic textile technique", among it) costs
+    # nothing to keep and was never at risk, needing no protection here at
+    # all - see the note on that in never_abandon's caller. This list is only
+    # for the knowledge that DOES carry upkeep and would otherwise be shed for
+    # it.
     NEVER_ABANDON = {"mathematics", "physics", "method", "notation",
-                     "algebra", "geometry", "probability", "analysis"}
+                     "algebra", "geometry", "probability", "analysis",
+                     "theory", "knowledge"}
 
     def never_abandon(self, k):
         """Protected: knowledge, and anything the goal actually needs.
@@ -1377,10 +1444,22 @@ class Sim:
             if worst is None:
                 break
             self.done.discard(worst)
+            # MOTHBALLED, not merely discarded: this is the plant falling into
+            # disrepair, exactly like a deliberate `mothball`, and it must show
+            # up the same way - in `state.mothballed`, and NOT back in
+            # `available` looking like research you have never done. Before
+            # this it was a bare discard, so a repossessed work reappeared
+            # indistinguishable from something you had never built, and
+            # `restore` (a fraction of the cost) was never offered.
+            self.mothballed.add(worst)
             shed.append(worst)
         if shed:
+            # NAME THEM. "stopped maintaining 1 works" told a player nothing:
+            # not which one, not how to get it back. A tester asked the fair
+            # question - how do you understand what you lost, or why an option
+            # reappeared, if you were never told its name?
             self.log.append((yr, "stopped maintaining %d works that cost more than "
-                                 "they returned" % len(shed)))
+                                 "they returned: %s" % (len(shed), ", ".join(shed))))
 
     def work_for_wages(self, trade, hours):
         """Do a job. For money. Like everybody else.
@@ -1492,13 +1571,21 @@ class Sim:
                     break
                 self.done.discard(k)
                 self.capital += self.nodes[k]["up"] * 2.0
+                # MOTHBALLED, not merely discarded - see the identical comment
+                # in shed_loss_makers. Without this a work creditors took stood
+                # indistinguishable from research never begun, and `restore`
+                # (a fraction of the cost) was never offered for it.
+                self.mothballed.add(k)
                 taken.append(k)
             # Only say it if it happened. This line used to fire every year
             # whether or not there was anything left to take, so a run with
             # nothing to lose logged creditors seizing it over and over.
+            # NAME THEM, for the same reason shed_loss_makers now does: a
+            # player cannot understand what they lost, or why it reappeared
+            # mothballed rather than gone, from a bare count.
             if taken:
-                self.log.append((yr, "creditors took what they could: %d works let go"
-                                     % len(taken)))
+                self.log.append((yr, "creditors took what they could: %d works let go: %s"
+                                     % (len(taken), ", ".join(taken))))
         # And the household goes. This was the missing piece: a tester's run sat
         # pinned at the credit floor making no progress for a century because the
         # upkeep of a household they could no longer feed consumed every denarius
@@ -2435,13 +2522,23 @@ class Sim:
             q *= best
         return q, True
 
-    def start_reason(self, k):
+    def start_reason(self, k, ignore_trade=False, _memo=None):
         """Same legality test as `can_start`, but explains a refusal instead of
         just returning False. `can_start` is a thin wrapper around this now;
         the wrapper exists because the optimizer's inner loop calls it a huge
         number of times and does not want to build a string it will discard.
         The reason text is what a PLAYER needs (human or agent): not just "no",
-        but "no, because you need a local patron first"."""
+        but "no, because you need a local patron first".
+
+        ignore_trade skips only the "does the trade exist" check below, so
+        auto_train can ask a narrower question than "what would help
+        eventually": "is THIS the one thing standing between me and starting
+        this, right now?" See its use in step(), 4a2.
+
+        _memo is is_visible()'s shared per-descent cache, passed straight
+        through to the is_visible() calls below for a missing node's own
+        visibility. Not this function's concern otherwise; see is_visible's
+        docstring for why it exists."""
         if k not in self.nodes:
             return False, "no such node"
         n = self.nodes[k]
@@ -2449,6 +2546,18 @@ class Sim:
             return False, "already done"
         if k in self.active:
             return False, "already active"
+        # A MOTHBALLED WORK IS NOT FRESH RESEARCH. You already know how; what
+        # is gone is the plant, at a fraction of the cost to put back up. A
+        # `start` here used to charge the FULL cost again and hand back the
+        # full founder_hours as if this were the first time, which is exactly
+        # what a tester objected to: a repossessed work "reappears in
+        # available looking like fresh research rather than something you
+        # already knew and must rebuild". `restore` is the honest version.
+        if k in getattr(self, "mothballed", set()):
+            return False, ("you built this once and let it go; you already "
+                           'know how, so restoring it is cheaper than starting '
+                           'over: {"cmd":"restore","id":"%s"} for about %.0f '
+                           "denarii" % (k, self.project_cost(k) * 0.3))
         # Tier 9 once meant UNOBTAINABLE: rubber, quinine, New World crops. That
         # concept was abolished, because nothing is unobtainable, only elsewhere,
         # and the tree now routes those through exp_* expedition nodes instead.
@@ -2468,7 +2577,7 @@ class Sim:
             # nodes - the entire ancestor closure of the transistor - in eight
             # rounds, while `why` and `path` dutifully refused every one of them.
             # Fog that one error message undoes is not fog.
-            known = [p for p in missing if self.is_visible(p)]
+            known = [p for p in missing if self.is_visible(p, _memo=_memo)]
             hidden = len(missing) - len(known)
             if not getattr(self, "fog", False) or not hidden:
                 return False, "missing prerequisites: " + ", ".join(missing)
@@ -2521,7 +2630,8 @@ class Sim:
         # THE TRADE HAS TO EXIST. A node wanting 450 hours of an engineer cannot
         # be built by smiths, and in 100 AD there is no such person as a private
         # engineer: the wage table says so itself. You make one by teaching one.
-        absent = sorted(t for t in n["lab"] if not self.trade_available(t))
+        absent = [] if ignore_trade else sorted(t for t in n["lab"]
+                                                if not self.trade_available(t))
         if absent:
             return False, ("this needs %s and there are none in this society. "
                            'Teach one: {"cmd":"train","trade":"%s","n":2} '
@@ -2547,8 +2657,8 @@ class Sim:
                            "(you have %.2f)" % (si, self.protection))
         return True, None
 
-    def can_start(self, k):
-        return self.start_reason(k)[0]
+    def can_start(self, k, _memo=None):
+        return self.start_reason(k, _memo=_memo)[0]
 
     def start_project(self, k):
         """PLAYER-CHOSEN start. This is the whole reason `--manual` and the
@@ -2638,7 +2748,11 @@ class Sim:
             if net >= 0:
                 self.log.append((yr, "you cannot pay everyone, so some of them go"))
         if (self.policy.get("auto_hire", not self.manual) and self.capital > 0):
-            extra = self.supervision_room()
+            # Scaled by the SAME affordability figure staff_capacity() just
+            # used for sc_cap/ar_cap (see the comment there): supervision-room
+            # headroom is not a free six people, it is six people you still
+            # have to pay for.
+            extra = self.supervision_room() * getattr(self, "_staff_scale", 1.0)
             self.scholars += (sc_cap + extra * 0.35 - self.scholars) * 0.18
             self.artisans += (ar_cap + extra - self.artisans) * 0.22
             # Keep the per-trade books honest about the aggregate: staff taken on
@@ -2751,9 +2865,13 @@ class Sim:
                         self.mothballed.add(k)   # you can buy it back
                         shed.append(k)
                     if shed:
+                        # NAME THEM, for the same reason as shed_loss_makers and
+                        # the creditors' seizure below: a bare count does not
+                        # tell a player what they lost or why it later
+                        # reappeared mothballed rather than gone for good.
                         self.log.append((yr, "ABANDONED %d works you could no longer "
-                                             "maintain; they have fallen into disrepair"
-                                             % len(shed)))
+                                             "maintain; they have fallen into disrepair: %s"
+                                             % (len(shed), ", ".join(shed))))
         else:
             self.insolvent_years = 0
         # A standing workforce policy, and ONLY when the optimizer is playing.
@@ -2824,11 +2942,23 @@ class Sim:
                 for t in self.nodes[k]["lab"]:
                     if self.market_supply(t) <= 0.0:
                         want[t] = want.get(t, 0) + 500
+            # WORK THE PLAYER COULD START TODAY, not the whole tree. The old
+            # test was "direct prerequisites satisfied", which is not "wanted":
+            # it looked past cost, staff, state approval and every OTHER trade
+            # a node needs, so it walked deep into the order training engineers,
+            # then chemists, machinists and opticians, with no active project
+            # asking for any of them. Its own description promises "when a
+            # project needs them", and a project three tiers away with money
+            # you do not have is not a project you need anything for yet.
+            # ignore_trade asks the one question that answers that: if this
+            # trade existed, would everything ELSE already let it start?
             for k in self.order:
                 if k in self.done or k in self.active:
                     continue
                 n = self.nodes[k]
-                if any(p not in self.done for p in n["pre"]):
+                if not any(not self.trade_available(t) for t in n["lab"]):
+                    continue
+                if not self.start_reason(k, ignore_trade=True)[0]:
                     continue
                 for t in n["lab"]:
                     if not self.trade_available(t):
@@ -2961,6 +3091,11 @@ class Sim:
         active_sorted = sorted(self.active, key=lambda k: rank.get(k, 9999))
         remaining = pool
         self.trade_hours_used = {}
+        # Summed as the loop runs, not re-read from self.active afterwards,
+        # because a project that completes THIS year is popped from
+        # self.active before we would get to it. See the hours_this_year
+        # summary this feeds, below the loop.
+        hours_effective_total = 0.0
         for k in active_sorted:
                 st = self.active[k]
                 n = self.nodes[k]
@@ -2992,6 +3127,16 @@ class Sim:
                 remaining -= per
                 st["ph_left"] = max(0.0, st["ph_left"] - per)
                 self.director_hours_spent_founder += per if self.founder_alive else 0
+                # Hours OFFERED this year vs hours that actually did anything.
+                # `refunded` tracks the difference: hours credited back to
+                # ph_left below because a trade or the money to pay for it
+                # fell short. Four projects each showed EXACTLY HALF their
+                # founder hours left after one year and a tester called it
+                # "confusing and feels artificial" - it was: nothing told them
+                # `per` had been offered in full and half of it handed straight
+                # back. See hours_this_year in `state`.
+                st["hours_offered_this_year"] = round(per, 1)
+                refunded = 0.0
                 st["yrs"] += 1
                 frac = min(1.0, 1.0 / max(1.0, n["yrs"]))
                 # A project started before this field existed (an old save) has
@@ -3021,7 +3166,9 @@ class Sim:
                     frac *= worst
                     money *= worst
                     hh *= worst
-                    st["ph_left"] += per * 0.4 * (1.0 - worst)
+                    give_back = per * 0.4 * (1.0 - worst)
+                    st["ph_left"] += give_back
+                    refunded += give_back
                     # Remember it. A tester sat on 696,350 denarii watching three
                     # projects report waiting_on "money" with 2.3, 84 and 158
                     # denarii left to pay, and reasonably concluded the spend cap
@@ -3070,12 +3217,32 @@ class Sim:
                 reserve = max(0.0, fixed - self.revenue())
                 purse = self.capital + self.credit_limit() * 0.6 - reserve
                 if money > purse:
+                    # PROPORTIONAL, not a flat half. This used to refund
+                    # exactly per*0.5 whenever the purse fell short AT ALL,
+                    # whether by one denarius or by the whole bill, which is
+                    # what produced the "exactly half" a tester flagged as
+                    # arbitrary-looking: four unrelated projects each showing
+                    # precisely half their founder hours left after one year
+                    # is not a coincidence, it is this constant. A project
+                    # funded to 95% of what it needed lost the same fixed
+                    # half of its hour's progress as one funded to 5%; the
+                    # trade-shortage case two blocks up already scales its
+                    # refund by how much of the need went unmet (worst), and
+                    # this should too.
+                    funded_frac = 0.0 if money <= 0 else max(0.0, min(1.0, purse / money))
                     money = max(0.0, purse)
-                    st["ph_left"] += per * 0.5     # underfunded work stalls
+                    give_back = per * (1.0 - funded_frac)
+                    st["ph_left"] += give_back
+                    refunded += give_back
+                    st["underfunded_this_year"] = True
+                else:
+                    st.pop("underfunded_this_year", None)
                 self.capital -= money
                 self.total_spend += money
                 st["spent"] += money
                 st["cost_left"] = max(0.0, st["cost_left"] - money)
+                st["hours_effective_this_year"] = round(max(0.0, per - refunded), 1)
+                hours_effective_total += st["hours_effective_this_year"]
                 # Count it HERE, after the hired-hours scaling and the
                 # affordability clamp, not before them. Accumulating the
                 # notional figure made project_spend_last_year disagree with
@@ -3092,6 +3259,11 @@ class Sim:
                 elif st["ph_left"] <= 0 and st["yrs"] >= floor and st["cost_left"] > 0.5:
                     st["waiting_on_money"] = True
 
+        # Snapshot BEFORE 5b spends more of `remaining` on wage work: otherwise
+        # offered_to_projects below double-counts wage hours as though they had
+        # been offered to projects too, since 5b draws from the same pool.
+        remaining_after_projects = remaining
+
         # 5b. IF THERE IS NO WORK AND NO MONEY, TAKE A JOB. A man who arrives
         #     with four hundred denarii and a lens does not sit watching his
         #     savings run out; he teaches, or writes, or sets bones for money. It
@@ -3102,7 +3274,12 @@ class Sim:
         if (not self.manual and remaining > 100.0
                 and (self.capital < self.living_cost() * 2 or not self.active)):
             trade = ("scholar" if self.effective_scholars() >= 1 else "scribe")
-            self.work_for_wages(trade, min(remaining, 1200.0))
+            hours = min(remaining, 1200.0)
+            _, err = self.work_for_wages(trade, hours)
+            # Kept in step with `remaining` so hours_this_year (below) does not
+            # count hours sold for wages here as still unused.
+            if err is None:
+                remaining -= hours
 
         # 6. reputation, familiarity, protection, scandal
         #
@@ -3123,6 +3300,27 @@ class Sim:
                   if set(self.nodes[k].get("traits", [])) & {"spectacle", "inexplicable"})
         self.familiarity = min(0.9, 1.0 - math.exp(-self.w["adaptation_rate"] *
                                                    (0.5 * pub + 0.25 * (self.year - 100))))
+        # WHERE THE YEAR'S HOURS WENT. Four projects each showed exactly half
+        # their founder hours left after one year, with 2,400 available and
+        # only about 200 apparently spent, and a tester had no way to see why:
+        # nothing in `state` accounted for a year's hours at all. Captured
+        # here, before the tallies below reset for the next year, the same way
+        # spend_last_year already captures the year's spending. See it as
+        # `hours_this_year` in `state`.
+        self.hours_this_year = {
+            "available": round(self.director_pool(), 1),
+            "wage_work": round(getattr(self, "wage_hours_this_year", 0.0), 1),
+            "teaching": round(getattr(self, "teaching_hours_this_year", 0.0), 1),
+            "offered_to_projects": round(max(0.0, pool - remaining_after_projects), 1),
+            # OFFERED is what projects were given a shot at; EFFECTIVE is what
+            # actually reduced their founder_hours_left. The gap between the
+            # two is hours that went in and came straight back out again
+            # because a trade or the money to pay for it fell short that year
+            # - see hours_offered_this_year / hours_effective_this_year on
+            # each project in `active`, and underfunded_this_year.
+            "effective_on_projects": round(hours_effective_total, 1),
+            "unused": round(max(0.0, remaining), 1),
+        }
         # Reset AFTER the progress pass above, which is where the hours you sold
         # are subtracted from the hours you have left to direct.
         self.wage_hours_this_year = 0.0
@@ -3857,6 +4055,14 @@ def _agent_state(s, nodes, cmd=None):
                          else "money" if st["ph_left"] <= 0 and bill > 0.5
                          else "the calendar" if st["ph_left"] <= 0
                          else "your hours"),
+                     # WHERE THIS YEAR'S HOURS WENT, for this project specifically.
+                     # offered is what step() gave it a shot at; effective is
+                     # how much of that actually came off founder_hours_left.
+                     # The two differ when a trade or the money for it fell
+                     # short - see hours_this_year for the whole year's picture.
+                     "hours_offered_this_year": st.get("hours_offered_this_year", 0.0),
+                     "hours_effective_this_year": st.get("hours_effective_this_year", 0.0),
+                     "underfunded_this_year": st.get("underfunded_this_year", False),
                      "bountied": k in s.bountied}
     end_reason = _agent_end_reason(s)
     full = bool((cmd or {}).get("full"))
@@ -3895,6 +4101,10 @@ def _agent_state(s, nodes, cmd=None):
              "people": (row[3] if len(row) > 3 else None)}
             for row in getattr(s, "training", [])],
         "founder_hours_available": round(s.director_pool(), 1),
+        # LAST YEAR'S HOURS, ACCOUNTED FOR. Set in step(); see the comment
+        # there. available is this year's fresh figure, not last year's -
+        # read it alongside, not in place of, hours_this_year.
+        "hours_this_year": getattr(s, "hours_this_year", None),
         "founder_alive": s.founder_alive,
         "scholars": round(s.scholars, 2), "artisans": round(s.artisans, 2),
         "directors_extra": round(s.directors_extra, 2),
@@ -3924,6 +4134,23 @@ def _agent_state(s, nodes, cmd=None):
         "employees": {t: round(v, 2) for t, v in sorted(s.employees.items()) if v > 0.005},
         "employees_total": round(sum(s.employees.values()), 2),
         "annual_wage_bill": round(s.wage_bill(), 1),
+        # FRACTIONS ARE REAL, NOT A DISPLAY GLITCH. A tester reported "1.32
+        # artisans" and "0.07 engineers" as if something had gone wrong. It
+        # had not: staff grow and decay gradually (hiring phases in, training
+        # takes years, attrition is a yearly 3.5%), so at any given moment a
+        # trade you have IS a partial year's worth of one more or one fewer
+        # person, the same way a company's headcount can be "40.5 FTE". Said
+        # only when it would actually be confusing - a whole-number staff
+        # needs no footnote.
+        "staff_are_fractional_because": (
+            None if (abs(s.scholars - round(s.scholars)) < 0.02
+                     and abs(s.artisans - round(s.artisans)) < 0.02
+                     and all(abs(v - round(v)) < 0.02 for v in s.employees.values()))
+            else ("these are continuous full-time-equivalents, not a count of "
+                  "whole people: hiring phases in, training takes years, and "
+                  "attrition (about 3.5%/yr) trims everyone a little rather "
+                  "than dismissing one person at a time. 1.32 artisans is the "
+                  "wage and output of one artisan plus a third of another's.")),
         "trades_you_created": sorted(s.trades_created),
         "mothballed": sorted(getattr(s, "mothballed", set())),
         "policy": dict(s.policy),
@@ -4177,7 +4404,16 @@ def _agent_available(s, nodes, cmd=None):
     """
     cmd = cmd or {}
     fog = getattr(s, "fog", False)
-    ok = [k for k in s.order if s.can_start(k)]
+    # ONE memo for the whole sweep, not one per node. Under fog, checking
+    # whether a deep node can start asks whether each of its missing
+    # prerequisites is even visible, which asks the same question about
+    # THEIR missing prerequisites, and neighbouring nodes in `order` share
+    # most of that ancestry. Recomputing it fresh per node, 2,800 times, is
+    # what made a single `available` call under fog on norse_900ad take
+    # upward of a minute; sharing the memo across the sweep makes it once
+    # per node actually touched. See is_visible()'s docstring.
+    _memo = {}
+    ok = [k for k in s.order if s.can_start(k, _memo=_memo)]
     # Anything the society is about to be handed for nothing is not a decision.
     ok = [k for k in ok
           if not (nodes[k]["tier"] == 0 and nodes[k]["ph"] == 0
@@ -4488,8 +4724,28 @@ def _agent_dispatch(s, nodes, cmd):
         if not ok:
             return {"ok": False, "error": why}
         n = nodes[k]
-        return {"ok": True, "started": k, "name": n["name"], "founder_hours_needed": n["ph"],
-                "calendar_floor_years": n["yrs"]}
+        out = {"ok": True, "started": k, "name": n["name"], "founder_hours_needed": n["ph"],
+               "calendar_floor_years": n["yrs"]}
+        # WARN, DO NOT SILENTLY ACCEPT. start_reason() already refuses a trade
+        # that does not exist AT ALL (see "THE TRADE HAS TO EXIST" there), but
+        # trade_available() goes true the moment you call `train`, two years
+        # before anyone graduates - market_supply() is the stricter, honest
+        # figure step() actually checks. A tester's `start` came back ok:true
+        # for a project needing an engineer while nobody could yet DO engineer
+        # work, and years later it was HALTED with everything spent on it
+        # lost, with no warning at the point they could still have done
+        # something about it. Name it here instead.
+        short = sorted(t for t in n["lab"] if s.market_supply(t) <= 0.0)
+        if short:
+            out["warning"] = (
+                "no one can do this work YET: %s. The trade exists here or is "
+                "being taught, but nobody is trained and ready, and this "
+                "project cannot progress at all until someone is. If that is "
+                "still true after four years with no progress, it is halted "
+                "and everything spent on it is lost. Check {\"cmd\":\"labour\"}, "
+                "and see {\"cmd\":\"train\"} if nobody is being taught yet."
+                % ", ".join(short))
+        return out
 
     if op == "stop":
         k = cmd.get("id")
@@ -4835,6 +5091,11 @@ SAVE_FIELDS = (
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement",
+    # hours_this_year: last year's founder-hours accounting (see step(), just
+    # before the within-year tallies above reset). Without it, `state` right
+    # after a `--session` reload would report nothing for a figure the player
+    # just saw.
+    "hours_this_year",
 )
 
 
