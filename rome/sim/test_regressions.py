@@ -3847,15 +3847,31 @@ check("...and says so plainly when you already hold every one of them",
 # and commissioning the full 8,750 ON TOP of the standing pool let a
 # 10,000-hour project finish. Real ceiling 17,500; every one of the three
 # statements false.
+# TWO CHANNELS, each bounded and each named. Hiring draws on the people who
+# live here; a commission is a job placed with an outside shop, which
+# subcontracts - dearer per hour, and bounded in turn by what the local trade
+# can spare. Stated as ONE ceiling of 8,750 it was false (the real one was
+# 17,500); collapsed into one it made commissioning buy byte-identical
+# progress and be pointless. Both statements have to be on the screen.
 s_cm = sim(capital=5000000.0)
 _ceiling = s_cm.market_supply("scribe")
 s_cm.commission("scribe", _ceiling * 0.9)
-check("commissioning does not raise what the town can field",
-      s_cm.hours_you_can_call_on("scribe") <= _ceiling + 1e-6,
+check("commissioning does not raise how many of a trade LIVE here",
+      abs(s_cm.market_supply_split("scribe")[0]
+          - sim(capital=5000000.0).market_supply_split("scribe")[0]) < 1e-6,
+      s_cm.market_supply_split("scribe")[0])
+check("...and it does add hours you can actually call on",
+      s_cm.hours_you_can_call_on("scribe") > _ceiling, 
       (_ceiling, s_cm.hours_you_can_call_on("scribe")))
-check("...and you cannot commission past the ceiling either",
+check("...and you cannot commission past what the trade here can spare",
       s_cm.commission("scribe", _ceiling)[0] is False,
       s_cm.commission("scribe", _ceiling)[1])
+_rc2, _, _ = proto([{"cmd": "labour", "trade": "scribe"}])
+check("...and `labour` names both channels, not one ceiling",
+      _rc2[0]["trade"].get("hours_you_could_still_commission") is not None
+      and _rc2[0]["trade"].get("hours_available_to_you_in_all")
+      >= _rc2[0]["trade"].get("hours_the_market_can_supply"),
+      _rc2[0]["trade"])
 
 # --- BREAK: a senatorial patron added 15,000 to the credit line whoever you
 # were, so a household with 1,800 of revenue could owe 23,000 - about 1,500 a
@@ -4051,6 +4067,73 @@ _rl4, _, _ = proto([{"cmd": "why", "id": "horse_collar"}])
 check("...and says nothing of the kind about a node you could staff",
       not _rl4[0].get("more_scholars_than_this_society_can_supply"),
       _rl4[0].get("more_scholars_than_this_society_can_supply"))
+
+
+# ======================================================================
+# ROUND 10: two testers won, and the break tester found four ways the game
+# was wrong about its own numbers.
+# ======================================================================
+
+# --- BREAK: paying off your debt IN FULL made you insolvent. `work scholar
+# 2000` sells the founder's whole year, which takes the practice's income to
+# nothing FOR that year, which collapsed the credit line from 1,397 to 210 in
+# the middle of a step - and the project spending already committed against
+# the old line breached the new one. Owing 628 was safe; owing nothing was
+# ruin.
+_rd, _, _ = proto([{"cmd": "start", "id": "arithmetic_positional"},
+                   {"cmd": "step", "years": 1},
+                   {"cmd": "work", "trade": "scholar", "hours": 2000},
+                   {"cmd": "step", "years": 1},
+                   {"cmd": "state"}])
+check("clearing your debt by working does not make you insolvent",
+      not any("INSOLVENCY" in json.dumps(x) for x in _rd), 
+      [e for x in _rd for e in (x.get("events") or []) if "INSOLVENCY" in str(e)])
+check("...and does not take your whole reputation with it",
+      _rd[-1].get("reputation", 0) > 1.0, _rd[-1].get("reputation"))
+s_cc = sim()
+_full = s_cc.credit_limit()
+s_cc.wage_hours_this_year = s_cc.director_pool()
+check("a lender does not cut your line because you took a job this year",
+      abs(s_cc.credit_limit() - _full) < 1e-6, (_full, s_cc.credit_limit()))
+
+# --- BREAK: a dead founder kept playing - starting projects, hiring staff,
+# and his surgical practice went on taking fees for eleven years.
+s_dd = sim(capital=50000.0)
+_alive = s_dd.revenue()
+s_dd.founder_alive = False
+check("a dead physician has no practice",
+      _alive > 0 and s_dd.revenue() == 0.0, (_alive, s_dd.revenue()))
+check("...and cannot sell hours he does not have",
+      s_dd.work_for_wages("scholar", 100)[0] == 0.0,
+      s_dd.work_for_wages("scholar", 100)[1])
+check("...and cannot take anyone on with no deputy to direct them",
+      S._agent_dispatch(s_dd, NODES,
+                        {"cmd": "hire", "trade": "smith", "n": 1}).get("ok") is False,
+      S._agent_dispatch(s_dd, NODES, {"cmd": "hire", "trade": "smith", "n": 1}))
+
+# --- BREAK: `ventures` understated every concern by a uniform 2.234x against
+# the `money` ledger, and its NEEDS column printed the BUILD crew where the
+# engine charges supervision - a quarter of it, and never the number the
+# refusal quotes.
+s_vv = sim(capital=5000000.0)
+s_vv.done.update(NODES); s_vv._done_changed()
+s_vv.artisans = s_vv.scholars = 40.0
+_opened = 0
+for _k in sorted(NODES):
+    if s_vv.is_venture(_k) and _opened < 5 and s_vv.open_venture(_k)[0]:
+        _opened += 1
+for _ in range(4):
+    s_vv.step()
+_vr = S._agent_dispatch(s_vv, NODES, {"cmd": "ventures"})
+_led = s_vv.revenue_sources()
+check("ventures quotes the same earnings the ledger credits",
+      all(abs(r["earns_a_year"] - _led.get(r["id"], r["earns_a_year"])) < 0.11
+          for r in _vr["running"]),
+      [(r["id"], r["earns_a_year"], _led.get(r["id"])) for r in _vr["running"]][:2])
+check("...and its NEEDS column is the supervision the engine charges",
+      all(abs(r["needs"]["craftsmen"] - s_vv.venture_hands(r["id"])[1]) < 0.011
+          for r in _vr["running"]),
+      [(r["id"], r["needs"]) for r in _vr["running"]][:2])
 
 
 print("=" * 72)

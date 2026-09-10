@@ -82,7 +82,19 @@ class EconomyMixin:
         # denarii handed a newcomer roughly two years of living expenses on
         # nothing but arrival. Credit here is what someone will advance against
         # your income and the people who will stand behind you.
-        base = self.revenue() * 0.5
+        # WHAT YOU NORMALLY EARN, not what this particular year came to. A
+        # lender looks at your practice and your concerns; he does not cut your
+        # line because you spent this year working for somebody else. Without
+        # that, `work scholar 2000` - which sells the founder's whole year and
+        # so takes the practice's income to nothing for it - collapsed the
+        # credit line from 1,397 to 210 in the middle of a step, and the
+        # project spending already committed against the old line breached the
+        # new one. A break tester cleared their debt in full with exactly that
+        # command and was answered, the very next year, with "INSOLVENCY
+        # SETTLED ... reputation -6.6": owing 628 was safe and owing nothing
+        # was ruin.
+        earning = self.revenue_capacity()
+        base = earning * 0.5
         if self.has("identity_cover"):     base += 400.0
         if self.has("patron_local"):       base += 3000.0
         if self.has("patron_senatorial"):  base += 15000.0
@@ -114,7 +126,7 @@ class EconomyMixin:
         # chosen to leave the OPENING where it was: a founder with a practice
         # and nothing else could always just reach a respectable cover
         # identity, and that is the first real decision in the game.
-        serviceable = floor + max(0.0, self.revenue()) * 5.0
+        serviceable = floor + max(0.0, earning) * 5.0
         return max(min(base, serviceable), floor) * self.price_index
 
     def shed_loss_makers(self, yr):
@@ -638,11 +650,28 @@ class EconomyMixin:
         while your practice runs. Whether THAT should compete too is a real
         question and a much larger one; this is the half that is simply wrong.
         """
+        # A DEAD PHYSICIAN HAS NO PRACTICE. This is your own two hands, and a
+        # break tester watched the surgery go on taking fees for eleven years
+        # after the founder was buried. What you built outlives you; what you
+        # personally did does not.
+        if not self.founder_alive:
+            return 0.0
         pool = self.director_pool()
         if pool <= 0:
             return 1.0
         sold = min(pool, getattr(self, "wage_hours_this_year", 0.0))
         return max(0.0, 1.0 - sold / pool)
+
+    def revenue_capacity(self):
+        """What you would earn in an ordinary year, with your own hands on your
+        own work. Used where a swing in ONE year should not count - a lender
+        does not cut your line because you took a job this year."""
+        _sold = getattr(self, "wage_hours_this_year", 0.0)
+        self.wage_hours_this_year = 0.0
+        try:
+            return self.revenue()
+        finally:
+            self.wage_hours_this_year = _sold
 
     def revenue(self):
         r = 0.0

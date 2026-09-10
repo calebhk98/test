@@ -2002,9 +2002,15 @@ def render_labour(out):
                  % (_fmt_num(t.get("you_employ")),
                     _fmt_num(t.get("hours_the_market_can_supply"))))
         if t.get("hours_your_own_people_add"):
-            L.append("your own %ss add %s, so %s hours a year are available to you"
-                     % (t.get("trade"), _fmt_num(t.get("hours_your_own_people_add")),
-                        _fmt_num(t.get("hours_available_to_you_in_all"))))
+            L.append("your own %ss add %s" % (t.get("trade"),
+                                              _fmt_num(t.get("hours_your_own_people_add"))))
+        if t.get("hours_you_could_still_commission"):
+            L.append("and an outside shop would take on %s more hours at a "
+                     "premium ('commission'); you have bought %s"
+                     % (_fmt_num(t.get("hours_you_could_still_commission")),
+                        _fmt_num(t.get("hours_you_have_commissioned"))))
+        L.append("so %s hours a year are available to you in all"
+                 % _fmt_num(t.get("hours_available_to_you_in_all")))
         if t.get("most_this_society_can_ever_supply") is not None:
             L.append("HEADCOUNT CEILING: %s %ss in total, ever, at any price - "
                      "you have or are teaching %s"
@@ -3550,7 +3556,15 @@ def _agent_dispatch_inner(s, nodes, cmd):
                           # like it created smiths out of nothing.
                           "hours_the_market_can_supply": round(s.market_supply_split(t)[0], 0),
                           "hours_your_own_people_add": round(s.market_supply_split(t)[1], 0),
-                          "hours_available_to_you_in_all": round(s.market_supply(t), 0),
+                          # AND THE SECOND CHANNEL. A break tester read one
+                          # ceiling in three places and then commissioned past
+                          # it. There are two: who you can HIRE here, and what
+                          # an outside shop will take on, at a premium.
+                          "hours_you_have_commissioned": round(s.hours_reserved(t), 0),
+                          "hours_you_could_still_commission": round(
+                              max(0.0, s.market_supply(t) - s.hours_reserved(t)), 0),
+                          "hours_available_to_you_in_all": round(
+                              s.hours_you_can_call_on(t), 0),
                           # THE NOTE IS STATIC AND THE WORLD IS NOT. A break
                           # tester read "exists here: True" and "does not exist
                           # yet; you must create this trade" three lines apart,
@@ -3626,6 +3640,11 @@ def _agent_dispatch_inner(s, nodes, cmd):
     if op == "hire":
         if ended:
             return {"ok": False, "error": "the run has ended (%s)" % ended}
+        if not s.founder_alive and s.directors_extra < 0.5:
+            return {"ok": False,
+                    "error": "there is nobody left to take anyone on: the "
+                             "founder is dead and no deputy remains to direct "
+                             "the work"}
         n, err = _qty(cmd, "n", 1)
         if err:
             return {"ok": False, "error": err + ". Nothing was changed."}
@@ -3812,9 +3831,22 @@ def _agent_dispatch_inner(s, nodes, cmd):
 
         def _vrow(k):
             n = nodes[k]
-            return {"id": k, "name": n["name"], "earns_a_year": n["rev"],
-                    "costs_a_year": n["up"],
-                    "needs": {"scholars": n["sch"], "craftsmen": n["art"]}}
+            # AT THE FIGURE THE LEDGER USES. This printed the tree's raw
+            # revenue, and the ledger applies the economy, the output factor,
+            # this society's prices and the ramp - so a break tester measured
+            # `ventures` understating every concern by a uniform 2.234x against
+            # `money` (11,000 against 24,571). And NEEDS printed the BUILD crew
+            # while the engine charges supervision, which is a quarter of it
+            # and never the number the refusal quotes.
+            _scale = (s.economy ** 0.75) * s.output_factor * s.price_index
+            _sup_s, _sup_a = s.venture_hands(k)
+            return {"id": k, "name": n["name"],
+                    "earns_a_year": round(n["rev"] * _scale
+                                          * (s.venture_ramp(k) if k in s.operating
+                                             else 1.0), 1),
+                    "costs_a_year": round(n["up"] * s.price_index, 1),
+                    "needs": {"scholars": round(_sup_s, 2),
+                              "craftsmen": round(_sup_a, 2)}}
 
         out = {"ok": True,
                "running": [_vrow(k) for k in running] or "nothing",

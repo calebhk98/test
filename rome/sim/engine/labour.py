@@ -404,6 +404,10 @@ class LabourMixin:
         usually a bad one once you have anything better to do. That is the
         honest shape of wage labour.
         """
+        if not self.founder_alive:
+            return 0.0, ("there is nobody left to do the work: these are YOUR "
+                         "hours, and the founder is dead. What you built goes "
+                         "on; you do not.")
         w = WAGES.get(trade)
         if w is None:
             here = sorted(t for t in WAGES if self.trade_available(t))
@@ -561,7 +565,22 @@ class LabourMixin:
         somebody else's shop - it is the same scribes. What it really buys is
         certainty: hours reserved for your work rather than competed for.
         """
-        return max(self.market_supply(t), self.contract_hours.get(t, 0.0))
+        # TWO CHANNELS, AND BOTH HAVE TO BE SAID. Hiring draws on the people
+        # who live here, and that pool is what market_supply bounds. A
+        # commission is a job placed with somebody else's shop, and a shop
+        # subcontracts: it is a second channel, dearer per hour, bounded in
+        # turn by what the local trade can spare (see commission()).
+        #
+        # A break tester found this stated as one ceiling of 8,750 in three
+        # places while the real one was 17,500, and then - when the two were
+        # collapsed into one - found that commissioning bought byte-identical
+        # progress and was pointless. Neither is right. Two channels, each
+        # bounded, each named wherever the number is printed.
+        return self.market_supply(t) + self.contract_hours.get(t, 0.0)
+
+    def hours_reserved(self, t):
+        """Hours of this trade you have already bought from an outside shop."""
+        return self.contract_hours.get(t, 0.0)
 
     def market_supply_split(self, t):
         """(the town's hours, your own people's hours). Same total, said honestly.
