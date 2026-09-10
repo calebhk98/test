@@ -777,6 +777,7 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                            if want > 0 and self.market_supply(t) <= 0.0]
                 if blocked:
                     st["stalled_years"] = st.get("stalled_years", 0) + 1
+                    st["blocked_on_trades"] = blocked
                     if st["stalled_years"] >= 4:
                         self.log.append((yr, "HALTED %s: there is nobody here who can "
                                              "do this work (%s). What you spent is lost"
@@ -784,6 +785,19 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
                         self.active.pop(k, None)
                         self.bountied.discard(k)
                     else:
+                        # WARN BEFORE THE MONEY GOES. Six projects were wiped in
+                        # one year for a play tester who had no way to list what
+                        # was at risk: the countdown ran silently for three years
+                        # and then took everything spent. Say it each year, with
+                        # the number of years left and what would fix it.
+                        _left = 4 - st["stalled_years"]
+                        self.log.append((yr, "%s cannot go on: no %s here. It has "
+                                             "%d year%s before it is abandoned and "
+                                             "what you spent on it is lost. Teach "
+                                             "the trade, or 'stop %s' now and keep "
+                                             "your hours"
+                                         % (k, " or ".join(blocked[:2]), _left,
+                                            "" if _left == 1 else "s", k)))
                         # Nothing happened here this year - say so, rather than
                         # leaving last year's hours_offered/effective sitting on
                         # the entry looking like they still applied.

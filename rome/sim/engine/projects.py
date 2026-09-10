@@ -150,6 +150,18 @@ class ProjectsMixin:
                            "else. Hire, teach, or close something."
                            % (need_sch, need_art, sch_free, art_free))
         fee = self.venture_capex(k)
+        # A SHOP THAT LOST ITS KEEPER IS NOT A SHOP YOU HAVE TO BUILD AGAIN.
+        # Staff attrition runs at 3.5% a year, so a household sitting near the
+        # supervision line loses a concern most years and pays the full stock
+        # and premises to reopen it - a play tester watched four close at once,
+        # every year, and wrote that it cost them hundreds a year and they
+        # could never get ahead of it. The premises are still standing and the
+        # stock is still on the shelves; what was missing was somebody to
+        # watch it. Reopening within a few years costs the difference, not the
+        # whole thing.
+        _shut = getattr(self, "shut_for_staff", {})
+        if k in _shut and self.year - _shut[k] <= self.STAFF_CLOSURE_GRACE:
+            fee *= 0.1
         if pay:
             if fee > self.capital + self.credit_limit() * 0.5:
                 return False, ("opening it costs %s denarii in stock and premises "
@@ -158,6 +170,8 @@ class ProjectsMixin:
             self.capital -= fee
         self.operating.add(k)
         self.mothballed.discard(k)
+        _shut.pop(k, None)
+        self.shut_for_staff = _shut
         return True, ("%s open: it earns %s a year and costs %s a year to run"
                       % (k, "{:,.0f}".format(n["rev"]), "{:,.0f}".format(n["up"])))
 
@@ -171,6 +185,10 @@ class ProjectsMixin:
         n = self.nodes[k]
         return True, ("%s closed: you stop paying %s a year and stop earning %s"
                       % (k, "{:,.0f}".format(n["up"]), "{:,.0f}".format(n["rev"])))
+
+    # Years a shop stands with its stock and its lease while you find somebody
+    # to keep an eye on it. Past that it really has been given up.
+    STAFF_CLOSURE_GRACE = 6
 
     def close_unstaffed_ventures(self, yr):
         """Shut what nobody is left to watch, dearest to supervise first.
@@ -200,11 +218,16 @@ class ProjectsMixin:
                                        -self.venture_hands(k)[1]))
             self.operating.discard(worst)
             self.mothballed.add(worst)
+            _sfs = getattr(self, "shut_for_staff", {})
+            _sfs[worst] = yr
+            self.shut_for_staff = _sfs
             closed.append(worst)
         if closed:
             self.log.append((yr, "nobody left to keep an eye on %d concern%s, so "
                                  "%s closed. You still know how; reopen with "
-                                 "'open' once you have the people"
+                                 "'open' once you have the people. The premises "
+                                 "and the stock stand for a few years yet, so "
+                                 "reopening soon costs a tenth of what opening did"
                              % (len(closed), "" if len(closed) == 1 else "s",
                                 ", ".join(sorted(closed)[:4])
                                 + (" and others" if len(closed) > 4 else ""))))

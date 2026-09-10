@@ -3218,6 +3218,77 @@ check("a trade you employ is still listed as one you could hire",
       _rl[1].get("you_could_hire_here"))
 
 
+# ======================================================================
+# ROUND 8g: two losses a player could not see coming or prevent.
+# ======================================================================
+
+# --- BREAK: staff attrition runs at 3.5% a year, so a household near the
+# supervision line loses a concern most years and paid the full stock and
+# premises to reopen it. A play tester watched four close at once, every year.
+s_ch = sim(capital=500000.0)
+s_ch.done.update(NODES); s_ch._done_changed()
+s_ch.artisans = s_ch.scholars = 5.0
+_v = next(k for k in NODES if s_ch.is_venture(k) and NODES[k]["rev"] > 500)
+s_ch.open_venture(_v)
+_full = s_ch.venture_capex(_v)
+s_ch.artisans = s_ch.scholars = 0.0
+s_ch.founder_alive = False
+check("a concern nobody is left to watch is closed",
+      _v in s_ch.close_unstaffed_ventures(105), _v)
+s_ch.artisans = s_ch.scholars = 5.0
+s_ch.founder_alive = True
+s_ch.year = 107
+_cap = s_ch.capital
+s_ch.open_venture(_v)
+check("...and reopening it soon costs the difference, not the whole shop",
+      (_cap - s_ch.capital) < _full * 0.2, (_cap - s_ch.capital, _full))
+# Past the grace it really has been given up.
+s_ch2 = sim(capital=500000.0)
+s_ch2.done.update(NODES); s_ch2._done_changed()
+s_ch2.artisans = s_ch2.scholars = 5.0
+s_ch2.open_venture(_v)
+s_ch2.artisans = s_ch2.scholars = 0.0
+s_ch2.founder_alive = False
+s_ch2.close_unstaffed_ventures(105)
+s_ch2.artisans = s_ch2.scholars = 5.0
+s_ch2.founder_alive = True
+s_ch2.year = 105 + s_ch2.STAFF_CLOSURE_GRACE + 1
+_cap2 = s_ch2.capital
+s_ch2.open_venture(_v)
+check("...but a shop left shut for years is opened again in full",
+      (_cap2 - s_ch2.capital) > _full * 0.8, (_cap2 - s_ch2.capital, _full))
+# A shop you closed BY CHOICE was never cheap, and must not become cheap.
+s_ch3 = sim(capital=500000.0)
+s_ch3.done.update(NODES); s_ch3._done_changed()
+s_ch3.artisans = s_ch3.scholars = 5.0
+s_ch3.open_venture(_v)
+s_ch3.close_venture(_v)
+_cap3 = s_ch3.capital
+s_ch3.open_venture(_v)
+check("a concern you shut on purpose still costs the full price to reopen",
+      (_cap3 - s_ch3.capital) > _full * 0.8, (_cap3 - s_ch3.capital, _full))
+
+# --- BREAK: six projects wiped in one year. The countdown to abandonment ran
+# silently for three years and then took everything spent.
+s_hl = sim(capital=500000.0)
+_need_eng = "ag2_cold_store"
+s_hl.active[_need_eng] = dict(ph_left=float(NODES[_need_eng]["ph"]), yrs=0.0,
+                              spent=0.0, cost_left=s_hl.project_cost(_need_eng))
+s_hl.step()
+check("a project that cannot go on says so the first year, not the fourth",
+      any(_need_eng in m and "before it is abandoned" in m for _, m in s_hl.log),
+      [m for _, m in s_hl.log][:2])
+_st_all = S._agent_state(s_hl, NODES)
+_st_hl = _st_all["active"][_need_eng]
+check("...and state carries the countdown and the trade that would save it",
+      _st_hl.get("will_be_abandoned_in_years") == 3
+      and "engineer" in (_st_hl.get("because_nobody_here_can") or []),
+      _st_hl)
+check("...and the page says the one command that keeps your hours",
+      "stop %s" % _need_eng in _RP("state", _st_all),
+      [l for l in _RP("state", _st_all).splitlines() if "ABANDONED" in l])
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),

@@ -182,11 +182,17 @@ def _agent_state(s, nodes, cmd=None):
     for k, st in s.active.items():
         n = nodes[k]
         bill = st.get("cost_left")
+        _at_risk = st.get("stalled_years", 0)
         if bill is None:
             bill = max(0.0, s.project_cost(k) - st["spent"])
         active[k] = {"name": n["name"], "founder_hours_left": round(st["ph_left"], 1),
                      "founder_hours_total": n["ph"], "years_in_progress": st["yrs"],
                      "spent": round(st["spent"], 1), "still_to_pay": round(bill, 1),
+                     # THE COUNTDOWN, WHERE IT CAN BE SEEN. It ran silently for
+                     # three years and then took everything spent.
+                     **({"will_be_abandoned_in_years": 4 - _at_risk,
+                         "because_nobody_here_can": st.get("blocked_on_trades")}
+                        if _at_risk else {}),
                      # A tester poured 1,200 hours into a project that was
                      # calendar-locked and could not use them, and only noticed by
                      # reading state closely. Say which of the three things it is
@@ -1390,6 +1396,14 @@ def render_state(out):
             L.append("      %s" % st["name"])
         if st.get("why_underfunded"):
             L.append("      %s" % st["why_underfunded"])
+        if st.get("will_be_abandoned_in_years") is not None:
+            _tr = st.get("because_nobody_here_can") or ["trade"]
+            L.append("      !! ABANDONED IN %s YEAR%s unless you can find %s %s: "
+                     "everything spent on it goes. 'stop %s' keeps your hours."
+                     % (_fmt_num(st["will_be_abandoned_in_years"]),
+                        "" if st["will_be_abandoned_in_years"] == 1 else "S",
+                        "an" if _tr[0][0] in "aeiou" else "a",
+                        " or ".join(_tr), k))
 
     stuck = out.get("stuck")
     if stuck:
@@ -3573,6 +3587,7 @@ SAVE_FIELDS = (
     "trade_hours_used", "total_spend", "director_hours_spent_founder",
     "bounties_paid", "atrocity", "suspicion_mult", "gov", "wages_earned",
     "last_patron_death", "_said_debasement", "_said_autoopen", "_said_output",
+    "shut_for_staff",
     "last_withdrawal",
     "wages_prepaid",
     # hours_this_year: last year's founder-hours accounting (see step(), just
