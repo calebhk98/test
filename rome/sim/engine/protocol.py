@@ -460,13 +460,18 @@ def _agent_state(s, nodes, cmd=None):
                     out["in_training"] = len(out[field])
                 del out[field]
                 elided.append('%s -> {"cmd":"%s"}' % (field, where))
+        # THE ONE COMMAND FOR "WHY AM I NOT GETTING ON", advertised where a
+        # player will see it every turn. Three testers described the same
+        # ninety- to two-hundred-and-fifty-year stalls and each found the cause
+        # by typing `why` at a guess.
+        elided.append('why_you_are_not_getting_on -> {"cmd":"stuck"}')
         out["also_available"] = elided
         out["everything_at_once"] = '{"cmd":"state","full":true}'
     return out
 
 
 HELP_TOPICS = ("commands", "labour", "economy", "money", "automatic",
-               "sittings", "fog", "eminence", "risk", "protection")
+               "sittings", "fog", "eminence", "risk", "protection", "stuck")
 
 
 def _agent_help(s, topic=None):
@@ -663,6 +668,21 @@ def _agent_help(s, topic=None):
             "Pass --session FILE on the command line. The game is written to "
             "that file after every command and read back when you start again, "
             "so you do not need to hold a process open or write a script.")}
+
+    if topic in ("stuck", "blocked"):
+        return {"stuck": (
+            "Type 'stuck' at any time. It answers, in one place, why you are "
+            "not getting on: what each piece of work in hand is waiting for, "
+            "whether anything is startable and affordable, whether a raw "
+            "material is throttling everything, whether you have room for more "
+            "people, and how deep in arrears you are."),
+            "the usual answers": (
+                "hours (you only have so many), money (you can raise only so "
+                "much), a trade this society does not have, a material nobody "
+                "is selling, or room for the people it would take."),
+            "where to look next": (
+                '{"cmd":"available"} for what you could begin, '
+                '{"cmd":"labour"} for people, {"cmd":"money"} for the ledger.')}
 
     if topic in ("protection", "standing"):
         return {"protection": (
@@ -1870,6 +1890,34 @@ def render_money(out):
     return "\n".join(L)
 
 
+def render_stuck(out):
+    L = ["WHY YOU ARE NOT GETTING ON"]
+    L.append("  %s things you could begin, %s of them you could pay for"
+             % (_fmt_num(out.get("you_could_begin")),
+                _fmt_num(out.get("and_could_pay_for"))))
+    if out.get("and_the_cheapest_thing_you_could_start_now"):
+        L.append("  cheapest of them: %s"
+                 % out["and_the_cheapest_thing_you_could_start_now"])
+    rs = out.get("what_is_holding_you_up")
+    L.append("")
+    if isinstance(rs, str):
+        L.append("  " + rs)
+    else:
+        for r in rs:
+            L.append("  %s:" % str(r.get("what", "")).upper())
+            if r.get("why"):
+                L.append(_wrap(r["why"], indent="    "))
+            for k, v in sorted((r.get("each_waiting_on") or {}).items()):
+                L.append(_wrap("%s - waiting on %s" % (k, v), indent="    "))
+    hole = out.get("and_you_are_in_a_hole")
+    if hole:
+        L.append("")
+        L.append("  " + str(hole.get("you_are_stuck", "")).upper())
+        for w in hole.get("what_would_change_it") or []:
+            L.append(_wrap("- " + w, indent="    "))
+    return "\n".join(L)
+
+
 def render_mines(out):
     L = ["YOUR OWN WORKINGS"]
     rows = out.get("mines_you_own")
@@ -2141,6 +2189,7 @@ _RENDERERS = {
     "accounts": render_money, "labour": render_labour, "risk": render_risk,
     "hazards": render_risk, "ventures": render_ventures,
     "mines": render_mines, "workings": render_mines,
+    "stuck": render_stuck,
     "final": render_final,
 }
 
@@ -2378,7 +2427,7 @@ KNOWN_COMMANDS = (
     "money", "risk", "labour", "policy", "help",
     "hire", "fire", "train", "commission", "work",
     "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
-    "open", "ventures", "withdraw", "mines",
+    "open", "ventures", "withdraw", "mines", "stuck",
     "save", "load", "quit",
 )
 
@@ -2423,6 +2472,7 @@ TYPED_ALIASES = {
     "explain": "why", "look": "why", "inspect": "why",
     "route": "path", "plan": "path",
     "workings": "mines", "mine": "mines", "pits": "mines",
+    "blocked": "stuck", "help_me": "stuck", "why_stuck": "stuck",
     "retire": "withdraw", "step_back": "withdraw", "obscurity": "withdraw",
 }
 
@@ -2575,6 +2625,9 @@ def parse_typed(line):
 
     if op == "mines":
         return {"cmd": "mines"}, None
+
+    if op == "stuck":
+        return {"cmd": "stuck"}, None
 
     if op == "bribe":
         if not nums:
@@ -3248,6 +3301,80 @@ def _agent_dispatch_inner(s, nodes, cmd):
                     if s.capital < 0 and s.credit_limit() > 0 else "none"),
                 "still_owed_on_work_in_hand": round(
                     sum(st.get("cost_left") or 0.0 for st in s.active.values()), 1)}
+
+    if op in ("stuck", "why_stuck", "blocked"):
+        # THE QUESTION EVERY TESTER ASKED, in different words. "There's no 'why
+        # am I stuck?' view - three separate 90-250-year stalls, each caused by
+        # one node blocked on one thing, each found by typing `why` at a
+        # guess." The pieces were all here; nothing put them in one place, and
+        # stall_diagnosis only spoke after eight years of insolvency.
+        _fog = getattr(s, "fog", False)
+        reasons = []
+        _startable = [k for k in nodes
+                      if k not in s.done and k not in s.active
+                      and (not _fog or s.is_visible(k))
+                      and s.start_reason(k)[0]]
+        _afford = [k for k in _startable
+                   if s.project_cost(k) <= s.spending_power("start")]
+        if s.active:
+            _waits = {}
+            for k, st in sorted(s.active.items()):
+                bill = st.get("cost_left")
+                if bill is None:
+                    bill = max(0.0, s.project_cost(k) - st["spent"])
+                _waits[k] = _waiting_on(s, nodes, k, st, bill)
+            reasons.append({"what": "work in hand",
+                            "how_many": len(s.active),
+                            "each_waiting_on": _waits})
+        if not _startable:
+            reasons.append({"what": "nothing you could begin",
+                            "why": "everything in front of you is either built, "
+                                   "already running, or waiting on something. "
+                                   "'available' says which."})
+        elif not _afford:
+            reasons.append({"what": "money",
+                            "why": "%d things are startable and the cheapest of "
+                                   "them costs %s, against the %s you could "
+                                   "raise"
+                                   % (len(_startable),
+                                      "{:,.0f}".format(min(s.project_cost(k)
+                                                           for k in _startable)),
+                                      "{:,.0f}".format(s.spending_power("start")))})
+        if s.binding and s.resource_throttle() < 0.95:
+            reasons.append({"what": "a raw material",
+                            "why": "%s: work is running at %d%% of plan. %s"
+                                   % (s.binding, s.resource_throttle() * 100,
+                                      s.shortage_remedy(s.binding))})
+        _room = s.household_room()
+        if _room < 1.0:
+            reasons.append({"what": "room for people",
+                            "why": "you can take %.2f more people. %s"
+                                   % (max(0.0, _room), s._room_advice())})
+        if s.capital < 0:
+            reasons.append({"what": "arrears",
+                            "why": "you owe %s of the %s anyone will advance "
+                                   "you, and the interest is %s a year"
+                                   % ("{:,.0f}".format(-s.capital),
+                                      "{:,.0f}".format(s.credit_limit()),
+                                      "{:,.0f}".format(-s.capital
+                                                       * s.debt_interest_rate()))})
+        if s.year < getattr(s, "credit_frozen_until", 0):
+            reasons.append({"what": "a credit freeze",
+                            "why": "nobody will fund new work until %d"
+                                   % int(s.credit_frozen_until)})
+        _stall = s.stall_diagnosis()
+        out = {"ok": True,
+               "you_could_begin": len(_startable),
+               "and_could_pay_for": len(_afford),
+               "what_is_holding_you_up": reasons or "nothing: you have work in "
+                                                    "hand, money to pay for it "
+                                                    "and people to do it",
+               "and_the_cheapest_thing_you_could_start_now": (
+                   min(_startable, key=lambda k: s.project_cost(k))
+                   if _startable else None)}
+        if _stall:
+            out["and_you_are_in_a_hole"] = _stall
+        return out
 
     if op in ("mines", "workings"):
         # A LIST OF YOUR OWN MINES. auto_mine quietly took 353,039 a year

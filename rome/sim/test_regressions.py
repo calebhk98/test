@@ -3887,6 +3887,37 @@ check("a household deep in arrears does not commit to new work",
       len(s_bd.active) <= _before + 1, (len(s_bd.active), _before))
 
 
+# --- BREAK: "There's no 'why am I stuck?' view - three separate 90-250-year
+# stalls, each caused by one node blocked on one thing, each found by typing
+# `why` at a guess." Every tester of rounds eight and nine said some version.
+_rs, _, _ = proto([{"cmd": "stuck"}])
+check("there is one command that answers why you are not getting on",
+      _rs and _rs[0].get("ok") and "what_is_holding_you_up" in _rs[0],
+      list(_rs[0])[:5] if _rs else None)
+check("...and on turn one it says nothing is holding you up",
+      isinstance(_rs[0]["what_is_holding_you_up"], str), _rs[0]["what_is_holding_you_up"])
+check("...and names the cheapest thing you could actually begin",
+      _rs[0].get("and_the_cheapest_thing_you_could_start_now") in NODES,
+      _rs[0].get("and_the_cheapest_thing_you_could_start_now"))
+_rs2, _, _ = proto([{"cmd": "start", "id": "identity_cover"},
+                    {"cmd": "step", "years": 3},
+                    {"cmd": "stuck"}])
+_held = _rs2[-1]["what_is_holding_you_up"]
+check("...and once you are committed and in the red it names both",
+      not isinstance(_held, str)
+      and {"work in hand", "arrears"} <= {r["what"] for r in _held},
+      [r.get("what") for r in _held] if not isinstance(_held, str) else _held)
+check("...and says what each piece of work in hand is waiting for",
+      any(r.get("each_waiting_on") for r in _held if isinstance(r, dict)), _held)
+check("...and it renders as a page, not a dict dump",
+      "WHY YOU ARE NOT GETTING ON" in _RP("stuck", _rs2[-1])
+      and "{" not in _RP("stuck", _rs2[-1]), _RP("stuck", _rs2[-1])[:70])
+_rst, _, _ = proto([{"cmd": "state"}])
+check("...and `state` advertises it every turn",
+      any("stuck" in x for x in (_rst[0].get("also_available") or [])),
+      _rst[0].get("also_available"))
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
