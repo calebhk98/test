@@ -265,6 +265,17 @@ class ProjectsMixin:
                         and self.nodes[k]["rev"] > self.nodes[k]["up"]),
                        key=lambda k: -((self.nodes[k]["rev"] - self.nodes[k]["up"])
                                        / max(1.0, self.venture_capex(k))))
+        # DEEP IN ARREARS IS NOT "IN ARREARS". Removing the old `capital <= 0`
+        # gate broke the catch-22 that trapped England - a household in the red
+        # could never open the shop that would dig it out - but with no gate at
+        # all the optimizer borrowed to the hilt opening concerns that each
+        # return a third in their first year, and Rome logged "ABANDONED 1
+        # works you could no longer maintain" two hundred and six times in five
+        # hundred years. Half the credit line is the line: below it you can
+        # still open your way out, above it you are digging.
+        _room = max(0.0, self.capital) + self.credit_limit() * 0.5
+        if self.capital < 0 and -self.capital > self.credit_limit() * 0.5:
+            return []
         blocked = None
         for k in cands:
             # NO SECOND, STRICTER GATE. This broke out the moment capital went

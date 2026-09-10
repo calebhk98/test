@@ -174,6 +174,49 @@ class LabourMixin:
         share = min(1.5, self.labour_pressure(trade) / supply)
         return 1.0 + 0.9 * share * share
 
+    # What each of these adds to the CEILING on people, taken from
+    # staff_capacity below so the advice and the arithmetic cannot drift apart.
+    ROOM_SOURCES = (
+        ("workshop_first", 6), ("freedman_staff", 10), ("school_founded", 12),
+        ("patron_senatorial", 6), ("endowment_land", 8), ("patron_imperial", 50),
+        ("academy_network", 50), ("interchangeable_parts", 40),
+        ("crucible_steel", 12), ("blast_furnace", 15),
+        ("telegraph_electric", 25), ("steam_high_pressure", 45),
+        ("bessemer_openhearth", 65), ("railway", 95), ("power_grid", 130),
+    )
+
+    def _room_advice(self):
+        """What raises the CEILING on people, which is not what buys people.
+
+        The household-room refusal handed back _staff_advice, which names
+        hiring, commissioning and buying - every one of which needs room you do
+        not have. A play tester ran into a ceiling of 166.9 against a node
+        wanting 200 craftsmen and wrote that none of the three remedies the
+        game's own message suggests works. They were right: the room comes from
+        institutions and heavy industry, and nothing pointed at those.
+        """
+        want = [(k, add) for k, add in self.ROOM_SOURCES
+                if k not in self.done and k in self.nodes
+                and self.is_visible(k)]
+        # NEAREST FIRST, and nearest means how much of the tree stands between
+        # you and it. Sorted on size alone this offered power_grid (+130) to a
+        # founder with six places - the last node in the game, true and
+        # useless - while workshop_first, one prerequisite away, went unnamed.
+        def _distance(k):
+            return len(closure(self.nodes, k) - self.done)
+        want.sort(key=lambda kv: (_distance(kv[0]), -kv[1]))
+        if not want:
+            return ("Room comes from institutions and heavy industry, and you "
+                    "have every one of them this society offers; what is left "
+                    "grows on its own as they run.")
+        _now = [(k, a) for k, a in want if self.start_reason(k)[0]]
+        return ("Room is not bought, it is built: %s. Each is somewhere for "
+                "people to work and somebody to oversee them.%s"
+                % ("; ".join("%s (+%d places)" % (k, a) for k, a in want[:3]),
+                   "" if _now else " None is startable today; they are listed "
+                                   "nearest first, so the first is what to work "
+                                   "towards."))
+
     def staff_capacity(self):
         """How many trained people the institution can support.
 
@@ -597,7 +640,7 @@ class LabourMixin:
                            % (math.floor(room * 100) / 100.0, n,
                               " - %d is the most whole people you can take" % whole
                               if whole else " - you have no room for even one",
-                              self._staff_advice("artisans")))
+                              self._room_advice()))
         self.capital -= fee
         # CARRIED FORWARD, so the next step does not bill the same year twice.
         # See step() 2, where it is netted off living_cost.

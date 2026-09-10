@@ -1069,7 +1069,13 @@ def _rests_band(n):
 
 def _node_explain(s, nodes, k):
     n = nodes[k]
-    need = closure(nodes, k) - {k}
+    # WHAT IS LEFT OF IT, not what it always was. A play tester read identical
+    # figures in year 436 after building 227 technologies as in year 100 with
+    # nothing built, and reasonably said the number never counts down. The
+    # chain BEHIND a node is a fixed fact about the tree; what a player is
+    # deciding with is what they still have to do.
+    _chain_all = closure(nodes, k) - {k}
+    need = _chain_all - s.done
     unlocks = [] if getattr(s, "fog", False) else [m for m in nodes if k in nodes[m]["pre"]]
     # Was: {m for m in nodes if k in closure(nodes, m)} - a full ancestor
     # closure of all 2,831 nodes, per call. Same answers, computed once for the
@@ -1205,6 +1211,8 @@ def _node_explain(s, nodes, k):
         # prerequisites you are still missing, because those have names you have
         # either heard or not.
         "chain_size": (len(need) if not getattr(s, "fog", False) else None),
+        "chain_size_counting_what_you_have_built": (
+            len(_chain_all) if not getattr(s, "fog", False) else None),
         "chain_founder_hours": (sum(nodes[x]["ph"] for x in need)
                                 if not getattr(s, "fog", False) else None),
         # AT THIS SOCIETY'S PRICES, like the COST line four rows above it. This
@@ -1783,8 +1791,10 @@ def render_why(out):
 
     if out.get("chain_size") is not None:
         L.append("")
-        L.append("FULL CHAIN BEHIND IT: %s nodes, %s of your hours, %s den, %s-year serial floor"
-                 % (_fmt_num(out["chain_size"]), _fmt_num(out.get("chain_founder_hours")),
+        L.append("STILL TO BUILD BEHIND IT: %s of %s nodes, %s of your hours, %s den, %s-year serial floor"
+                 % (_fmt_num(out["chain_size"]),
+                    _fmt_num(out.get("chain_size_counting_what_you_have_built")),
+                    _fmt_num(out.get("chain_founder_hours")),
                     _fmt_num(out.get("chain_cost")), _fmt_num(out.get("critical_path_years"))))
 
     unlocks = out.get("unlocks")

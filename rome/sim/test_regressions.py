@@ -3790,6 +3790,46 @@ check("a bribe too small to matter says so, not that you are already covered",
       "too little" in (_rb[0].get("error") or ""), _rb[0].get("error"))
 
 
+# --- BREAK: "FULL CHAIN BEHIND IT" printed identical figures in year 436
+# after 227 technologies as in year 100 with nothing built.
+s_cn = sim()
+_r_before = S._agent_dispatch(s_cn, NODES, {"cmd": "why", "id": "telescope"})
+for _p in ("patron_local", "workshop_first", "identity_cover"):
+    s_cn.done.add(_p)
+s_cn._done_changed()
+_r_after = S._agent_dispatch(s_cn, NODES, {"cmd": "why", "id": "telescope"})
+check("the chain behind a node counts down as you build it",
+      _r_after["chain_size"] < _r_before["chain_size"],
+      (_r_before["chain_size"], _r_after["chain_size"]))
+check("...in hours as well as in nodes",
+      _r_after["chain_founder_hours"] < _r_before["chain_founder_hours"],
+      (_r_before["chain_founder_hours"], _r_after["chain_founder_hours"]))
+check("...and in money",
+      _r_after["chain_cost"] < _r_before["chain_cost"],
+      (_r_before["chain_cost"], _r_after["chain_cost"]))
+check("...and it still says how long the whole road was",
+      _r_after["chain_size_counting_what_you_have_built"]
+      == _r_before["chain_size_counting_what_you_have_built"],
+      _r_after["chain_size_counting_what_you_have_built"])
+
+# --- BREAK: the household-room refusal handed back the advice for BUYING
+# people, every word of which needs room you do not have. A play tester with a
+# ceiling of 166.9 against a node wanting 200 craftsmen wrote that none of the
+# three remedies the message suggests works.
+s_rm = sim(capital=1000000.0)
+_ok_rm, _why_rm = s_rm.hire("smith", 20)
+check("a room refusal names what raises the room, not what buys people",
+      not _ok_rm and "built" in _why_rm and "hire" not in _why_rm.split(".")[1],
+      _why_rm)
+check("...and names the nearest of them first, not the largest",
+      _why_rm.index("workshop_first") < _why_rm.index("school_founded"),
+      _why_rm[_why_rm.index("built"):][:120])
+s_rm2 = sim(capital=1000000.0)
+s_rm2.done.update(NODES); s_rm2._done_changed()
+check("...and says so plainly when you already hold every one of them",
+      "every one of them" in s_rm2._room_advice(), s_rm2._room_advice())
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
