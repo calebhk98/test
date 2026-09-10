@@ -1711,3 +1711,185 @@ rome_100ad       poor_scholar  start cap=400.0    rev=233.5    living=230.0    -
 han_china_100ad  destitute     start cap=0.0      rev=233.5    living=224.0    -> y600 cap=-172.3       rep=0.5    end=ran out of horizon (600 AD) without reaching the goal
 han_china_100ad  poor_scholar  start cap=400.0    rev=233.5    living=230.0    -> y600 cap=-172.3       rep=0.5    end=ran out of horizon (600 AD) without reaching the goal
 norse_900ad      destitute     start cap=0.0      rev=232.7    living=224.0    -> y1400 cap=-200.8       rep=0.5    end=ran out of horizon (1400 AD) without reaching the goal
+norse_900ad      poor_scholar  start cap=400.0    rev=232.7    living=230.0    -> y1400 cap=-234.6       rep=0.5    end=ran out of horizon (1400 AD) without reaching the goal
+england_1300     destitute     start cap=0.0      rev=232.8    living=224.0    -> y1800 cap=1010.5       rep=0.5    end=ran out of horizon (1800 AD) without reaching the goal
+england_1300     poor_scholar  start cap=400.0    rev=232.8    living=230.0    -> y1800 cap=1010.5       rep=0.5    end=ran out of horizon (1800 AD) without reaching the goal
+mexica_1500      destitute     start cap=0.0      rev=232.6    living=224.0    -> y2000 cap=0.0          rep=0.3    end=ran out of horizon (2000 AD) without reaching the goal
+mexica_1500      poor_scholar  start cap=400.0    rev=232.6    living=230.0    -> y2000 cap=0.0          rep=0.3    end=ran out of horizon (2000 AD) without reaching the goal
+
+########################################################
+### R13 F3: eight projects, all of them satisfiable, starved for 300 years by one that is not
+### Command line:
+###   python3 rome/sim/simulator.py agent --civ rome_100ad --kit absurd --seed 7
+### Script: all automation policies on; each year start every startable node on the goal path
+### (cheapest first) plus the ten best-paying others, within half of capital; step 1 year; x200.
+### At year 300 (capital 4,166,180) the entire active list is:
+###   logarithms              "wants 10000 hours a year; this society can field 8750 at most"
+###   scientific_method       "wants 250 hours a year; the scribes here can supply 8750
+###                            but your other work has them booked"
+###   calculus                "wants 600 ..."
+###   hom_printed_books       "wants 120 ..."
+###   fin_newspaper_business  "wants 100 ..."
+###   fin_bond                "wants 50 ..."
+###   fin_commodity_exchange  "wants 75 ..."
+###   fin_customs_house       "wants 100 ..."
+###   (all eight had "years_in_progress": 34.0)
+###   {"cmd":"labour","trade":"scribe"} -> hours_available_to_you_in_all: 8750.0
+###   {"cmd":"hire","trade":"scribe","n":20} -> refused, "will not supply more than 5.9
+###                                             scribes in total, ever, at any price"
+###   {"cmd":"commission","trade":"scribe","hours":5000} -> ok, 1600 denarii
+###   {"cmd":"step","years":3} -> ALL EIGHT COMPLETE
+### The satisfiable demand was 1,295 hours out of a pool of 8,750. In the full 500-year run
+### this state persisted to 600 AD: `scientific_method` (a 230-denarius node startable in
+### year 100) was still unbuilt at the horizon with 10.6 million denarii in the chest.
+
+########################################################
+### R14 F27/F26: train "ready in 2 years" delivers in 3; train accepts a trade that already exists
+train chemist 2: {"ok": true, "training": "2 chemists will be ready in 2 years", "capital": 999250.0, "your_hours_left_this_year": 1100.0}
+hours avail 1100.0 teaching 900.0
+train smith (exists): {"ok": true, "training": "2 smiths will be ready in 2 years", "capital": 998575.0, "your_hours_left_this_year": 200.0}
+ y101 employees=0 trades_created=['chemist', 'smith'] in_training=[{"trade": "chemist", "people": 2.0, "ready_year": 102.0}, {"trade": "smith", "people": 2.0, "ready_year": 102.0}]
+ y102 employees=0 trades_created=['chemist', 'smith'] in_training=[{"trade": "chemist", "people": 2.0, "ready_year": 102.0}, {"trade": "smith", "people": 2.0, "ready_year": 102.0}]
+ y103 employees=4.0 trades_created=['chemist', 'smith'] in_training=[]
+ y104 employees=3.86 trades_created=['chemist', 'smith'] in_training=[]
+ y105 employees=3.72 trades_created=['chemist', 'smith'] in_training=[]
+now work chemist: {"ok": true, "trade": "chemist", "hours": 100, "earned": 31.9, "capital": 922562.0, "your_hours_left_this_year": 1900.0, "it_cost_your_own_practice": 11.7, "so_you_are_up": 20.2, "why": "You cannot be in two places. Hours sold for wages come out of t
+
+########################################################
+### R15 F15: mine ready_year is a year early; close works
+quote: {"ok": true, "material": "coal", "tonnes_per_year": 500.0, "to_sink_it": 4500.0, "every_year_it_stands": 750.0, "years_before_it_produces": 3.0, "you_have": 1000000.0, "you_could_raise": 1007612.0, "you_can_afford_about": 111956.89, "afford_means": "cash plus half the credit line, which is what a lender will advance against a purchase", "note": "The yearly cost is charged whether or not you use th
+buy: {"ok": true, "material": "coal", "you_asked_for_t_per_yr": 500.0, "commissioned_t_per_yr": 500.0, "ready_year": 103.0, "years_until_producing": 3.0, "already_producing_t_per_yr": 0.0, "capital": 995500.0}
+ y 101 cap=980577.0 mine_cost=0.0 cap_mine= {}
+ y 102 cap=965877.9 mine_cost=0.0 cap_mine= {}
+ y 103 cap=951399.3 mine_cost=0.0 cap_mine= {}
+ y 104 cap=937137.8 mine_cost=750.0 cap_mine= {'coal': 500.0}
+ y 105 cap=922340.3 mine_cost=750.0 cap_mine= {'coal': 500.0}
+close: {"ok": true, "closed": "the coal workings are closed. You stop paying 750 a year. What you spent sinking them is gone, and reopening means sinking them again.", "mine_operating_cost": 0.0}
+after close cap 922340.3 {}
+mines_standing after close: 0.0
+
+########################################################
+### R16 F9: chain_cost is the un-multiplied base sum, identical in every civilisation
+norse_900ad      chain_cost=24175.0      sum_of_quoted_totals=35108.1      sum_base=24175.0      err=-31.1%
+mexica_1500      chain_cost=24175.0      sum_of_quoted_totals=20664.7      sum_base=24175.0      err=+17.0%
+han_china_100ad  chain_cost=24175.0      sum_of_quoted_totals=18969.9      sum_base=24175.0      err=+27.4%
+england_1300     chain_cost=24175.0      sum_of_quoted_totals=25183.9      sum_base=24175.0      err=-4.0%
+telescope                  chain_size=8    |anc|=8     chain_cost=24175.0      sum_undone=23848        sum_all=23848        chain_hrs=2810.0    sum_undone_hrs=2810
+blast_furnace              chain_size=11   |anc|=11    chain_cost=80758.0      sum_undone=70105        sum_all=70105        chain_hrs=3230.0    sum_undone_hrs=3230
+voltaic_pile               chain_size=19   |anc|=19    chain_cost=755809.5     sum_undone=643965       sum_all=643965       chain_hrs=6350.0    sum_undone_hrs=6350
+thermometer                chain_size=16   |anc|=16    chain_cost=142900.5     sum_undone=127032       sum_all=127032       chain_hrs=4910.0    sum_undone_hrs=4910
+point_contact_transistor   chain_size=145  |anc|=145   chain_cost=9421124.0    sum_undone=8112732      sum_all=8112732      chain_hrs=55420.0   sum_undone_hrs=55420
+
+########################################################
+### R17 F17: `open` ignores the staff a concern needs (1 artisan employed, 5 concerns opened)
+{"ok": true, "hired": "artisan", "n": 1, "you_now_employ": 1.0, "annual_wage_bill": 251.5, "capital": 150.0}
+tx2_bleaching_sun True already active
+tx2_retting True already active
+tx2_shed True already active
+tx2_count_standard True already active
+tx2_selvedge True already active
+y 102 cap -102.7 done 5
+ventures: {"ok": true, "running": "nothing", "you_know_how_but_have_not_opened": [{"id": "tx2_bleaching_sun", "name": "Bleaching by sunlight: oxidative whitening", "earns_a_year": 0.0, "costs_a_year": 40.0, "needs": {"scholars": 0.0, "craftsmen": 1.0}, "to_open_it": 40.0}, {"id": "tx2_count_standard", "name": "Yarn count standardisation", "earns_a_year": 0.0, "costs_a_year": 40.0, "needs": {"scholars": 0.0, "craftsmen": 1.0}, "to_open_it": 40.0}, {"id": "tx2_retting", "name": "Retting of flax and hemp fibres", "earns_a_year": 0.0, "costs_a_year": 40.0, "needs": {"scholars": 0.0, "craftsmen": 1.0}, "to_open_it": 40.0}, {"id": "tx2_selvedge", "name": "Selvedge: woven cloth edge", "earns_a_year": 0.0, "c
+open tx2_bleaching_sun {"ok": true, "opened": "tx2_bleaching_sun open: it earns 0 a year and costs 40 a year to run", "capital": -142.7, "revenue": 233.5, "upkeep": 40.0}
+open tx2_retting {"ok": true, "opened": "tx2_retting open: it earns 0 a year and costs 40 a year to run", "capital": -182.7, "revenue": 233.5, "upkeep": 80.0}
+open tx2_shed {"ok": true, "opened": "tx2_shed open: it earns 0 a year and costs 40 a year to run", "capital": -222.7, "revenue": 233.5, "upkeep": 120.0}
+open tx2_count_standard {"ok": true, "opened": "tx2_count_standard open: it earns 0 a year and costs 40 a year to run", "capital": -262.7, "revenue": 233.5, "upkeep": 160.0}
+open tx2_selvedge {"ok": true, "opened": "tx2_selvedge open: it earns 0 a year and costs 40 a year to run", "capital": -302.7, "revenue": 233.5, "upkeep": 200.0}
+after opening: cap -302.7 rev 233.5 upkeep 200.0 net -455.9
+10y later cap -1227.0 stuck None
+
+########################################################
+### R18 F14: labour quotes one wage, the annual bill is another
+n=1 smith     quoted a_year_of_one=281.0   x n = 281.0    | reported bill=282.9    | charged upfront=281.2
+n=1 scholar   quoted a_year_of_one=625.0   x n = 625.0    | reported bill=644.5    | charged upfront=625.0
+n=1 scribe    quoted a_year_of_one=312.0   x n = 312.0    | reported bill=322.2    | charged upfront=312.5
+n=1 labourer  quoted a_year_of_one=125.0   x n = 125.0    | reported bill=125.7    | charged upfront=125.0
+n=2 smith     quoted a_year_of_one=281.0   x n = 562.0    | reported bill=574.0    | charged upfront=562.5
+n=2 scholar   quoted a_year_of_one=625.0   x n = 1250.0   | reported bill=1360.7   | charged upfront=1250.0
+n=2 scribe    quoted a_year_of_one=312.0   x n = 624.0    | reported bill=680.4    | charged upfront=625.0
+n=2 labourer  quoted a_year_of_one=125.0   x n = 250.0    | reported bill=255.1    | charged upfront=250.0
+n=3 smith     quoted a_year_of_one=281.0   x n = 843.0    | reported bill=877.4    | charged upfront=843.8
+n=3 scholar   quoted a_year_of_one=625.0   x n = 1875.0   | reported bill=2154.2   | charged upfront=1875.0
+n=3 scribe    quoted a_year_of_one=312.0   x n = 936.0    | reported bill=1077.1   | charged upfront=937.5
+n=3 labourer  quoted a_year_of_one=125.0   x n = 375.0    | reported bill=390.0    | charged upfront=375.0
+
+########################################################
+### R19 input fuzzing - all clean (rome_100ad, equestrian)
+hire negative        ok=False cap=100000.0   n must be greater than zero. Nothing was changed.
+hire zero            ok=False cap=100000.0   n must be greater than zero. Nothing was changed.
+hire frac            ok=True  cap=99859.4    {'hired': 'smith', 'n': 0.5, 'you_now_employ': 0.5, 'annual_wage_bill': 140.9, 'capital': 99859.4}
+hire huge            ok=False cap=100000.0   hiring 100000 smiths costs 28125000 denarii in advance and you have 100000
+fire nobody          ok=False cap=100000.0   you employ no smiths, and none are being taught
+fire negative        ok=False cap=100000.0   you employ no smiths, and none are being taught
+buy slaves neg       ok=False cap=100000.0   n must be greater than zero, got -10. Nothing was changed.
+buy slaves 0         ok=False cap=100000.0   n must be greater than zero, got 0. Nothing was changed.
+manumit none         ok=False cap=100000.0   you have no slaves to free
+manumit neg          ok=False cap=100000.0   n must be greater than zero, got -5. Nothing was changed.
+buy forest neg       ok=False cap=100000.0   n must be greater than zero, got -100. Nothing was changed.
+buy mine neg         ok=False cap=100000.0   n must be greater than zero, got -500. Nothing was changed.
+buy mine unknown     ok=False cap=100000.0   material must be one of: coal, iron, copper, lead, tin, silver, gold
+commission neg       ok=False cap=100000.0   hours must be greater than zero. Nothing was changed.
+train neg            ok=False cap=100000.0   n must be greater than zero. Nothing was changed.
+start unknown        ok=False cap=100000.0   unknown node id 'not_a_tech'. use {"cmd":"available"} or {"cmd":"why","id":...} to find valid ids
+stop unknown         ok=False cap=100000.0   not active
+open unknown         ok=False cap=100000.0   no such thing as 'not_a_tech'. did you mean: med_sterile_technique, prn_etching_technique
+why unknown          ok=False cap=100000.0   unknown node 'not_a_tech'. did you mean: med_sterile_technique, prn_etching_technique
+bounty unknown       ok=False cap=100000.0   unknown node id 'not_a_tech'
+withdraw             ok=False cap=100000.0   nobody is watching you closely enough for this to buy anything: prominence is 0.0 against a danger line of 26. Withdrawing now would only cost you the
+garbage cmd          ok=False cap=100000.0   unknown cmd 'frobnicate'. Use one of: state, available, why, path, start, stop, step, money, risk, labour, policy, help, hire, fire, train, commission
+close nothing        ok=False cap=100000.0   you have no coal workings, and none being sunk
+
+########################################################
+### R20 F25: technology loss when a site is sacked vs what `risk` predicts
+Y243  earned 448 -> 396  (LOST 52)  risk said at_risk=132 expected_lost_per_sack=42.2
+     MSG: Third century crisis: a site is sacked - 24,128 taken, 10.9 of your people gone, 46 projects back to the beginning
+     MSG: KNOWLEDGE LOST: 52 technologies forgotten - air_aerofoil_section, air_parachute, chm_filter_press, civ_harbour_dock, civ_sewer_separate, civ_town_planning, cn_asphalt_roofing, cn_underpinning and 44 more (the corpus was never printed and dispersed)
+Y247  earned 416 -> 376  (LOST 40)  risk said at_risk=100 expected_lost_per_sack=32.0
+     MSG: Third century crisis: a site is sacked - 10.2 of your people gone, 55 projects back to the beginning
+     MSG: KNOWLEDGE LOST: 40 technologies forgotten - ag2_hybrid_maize, ag2_resistant_variety, air_elongated_envelope, air_parachute, civ_canal_pound_lock, com_boolean_algebra, fin_bill_exchange, fin_cartel and 32 more (the corpus was never printed and dispersed)
+Y249  earned 377 -> 353  (LOST 24)  risk said at_risk=61 expected_lost_per_sack=19.5
+     MSG: Third century crisis: a site is sacked - 9.5 of your people gone, 54 projects back to the beginning
+     MSG: KNOWLEDGE LOST: 24 technologies forgotten - ag2_hybridisation, civ_lightning_conductor, civ_town_planning, fin_cheque, fin_lottery, fin_mortgage, fin_postal_service, fin_tariff and 16 more (the corpus was never printed and dispersed)
+Y264  earned 353 -> 339  (LOST 14)  risk said at_risk=37 expected_lost_per_sack=11.8
+     MSG: Third century crisis: a site is sacked - 180 taken, 0.9 of your people gone
+     MSG: KNOWLEDGE LOST: 14 technologies forgotten - cn_arch_dam, fin_arbitrage, fin_bimetallism, fin_chain_store, fin_endorsement, fin_factory, hot_air_balloon, mfg_bill_materials and 6 more (the corpus was never printed and dispersed)
+
+[exited with code 0]
+
+########################################################
+### R21 F22/F28/F23: a brute-force run wins in 522 AD with 1.37 BILLION denarii and prominence never above 18
+### Command line:
+###   python3 rome/sim/simulator.py agent --civ rome_100ad --kit absurd --seed 11
+### Script: all automation policies on (incl. auto_bribe); each year start the 20 cheapest
+### startable things within 40% of capital; step 1 year.
+ y101 cap=9.77e+05 rev=234 done=154 staff=2 rep=33.9 emin=0.6
+ y151 cap=1.01e+06 rev=2.64e+05 done=712 staff=50 rep=97.4 emin=15.8
+ y201 cap=6.22e+07 rev=7.59e+06 done=1648 staff=270 rep=98.7 emin=20.6
+ y251 cap=3.01e+08 rev=1.51e+07 done=2177 staff=538 rep=98.8 emin=17.1
+ y301 cap=4.58e+08 rev=2.18e+07 done=2463 staff=653 rep=98.9 emin=17.1
+ y351 cap=7.82e+08 rev=2.46e+07 done=2600 staff=670 rep=94.0 emin=16.8
+ y401 cap=9.81e+08 rev=2.79e+07 done=2695 staff=905 rep=97.8 emin=16.9
+ y451 cap=1.11e+09 rev=2.84e+07 done=2800 staff=904 rep=98.8 emin=17.0
+ y501 cap=1.17e+09 rev=2.87e+07 done=2824 staff=907 rep=87.4 emin=15.5
+{
+ "year": 523,
+ "capital": 1369921440.0,
+ "revenue": 31134176.4,
+ "living_cost": 22420682.2,
+ "wage_bill": 318235.2,
+ "done_count": 2826,
+ "done_earned": 2682,
+ "employees_total": 906.53,
+ "reputation": 78.8,
+ "eminence": 13.59,
+ "protection": 0.92,
+ "goal_reached": true,
+ "goal_year": 522,
+
+########################################################
+### R22 F24: `run` timings
+###   run --mc 1 --horizon 150 --civ rome_100ad --seed 2  -> 3.6 s, prints a summary
+###   run --mc 1 --horizon 300                            -> 52.5 s
+###   run --mc 1 --horizon 400                            -> 70.9 s
+###   run       --horizon 150 (default --mc)              -> killed at 110 s, no output at all
+###   run --strategy rush --civ rome_100ad --seed 5       -> killed at 600 s, output file 0 bytes

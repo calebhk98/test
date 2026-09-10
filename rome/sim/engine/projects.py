@@ -703,6 +703,25 @@ class ProjectsMixin:
                            'Teach one: {"cmd":"train","trade":"%s","n":2} '
                            "(about 450 of your own hours each, two years)"
                            % (", ".join(a + "s" for a in absent), absent[0]))
+        # AND SOMEBODY HAS TO BE LEFT. A trade you taught still counts as
+        # existing after the last of them has died or been poached, so `why`
+        # and `available` said CAN START NOW while the project, once begun,
+        # counted down four years and was abandoned with the spend lost - the
+        # trade check asked whether the trade existed and never whether anyone
+        # could be had. A play tester lost six projects in one year to it and
+        # could only find out by starting them.
+        # People already being TAUGHT count: they will be ready, and starting
+        # work that lands the year they qualify is the right thing to do.
+        _none_left = [] if ignore_trade else sorted(
+            t for t, want in (n["lab"] or {}).items()
+            if want > 0 and self.market_supply(t) <= 0.0
+            and self._trade_headcount_pending(t) <= 0.0)
+        if _none_left:
+            return False, ("this needs %s and there is not one left here to do "
+                           "it: you taught the trade and nobody is currently "
+                           'holding it. {"cmd":"train","trade":"%s","n":2} makes '
+                           "more, or hire from your own if you have any"
+                           % (", ".join(a + "s" for a in _none_left), _none_left[0]))
         # SOCIAL APPROVAL GATE. Some things the State does not want built, and no
         # amount of money substitutes for someone powerful being willing to be
         # associated with it. See 03_SOCIAL_POLITICS.md section 4.

@@ -11,6 +11,96 @@ n
 ```
 Run as: `cd /home/user/test && printf '<lines>' | python3 rome/sim/simulator.py`
 
+## TOP PROBLEMS
+(ordered by severity; full repro for each is in the findings log below, and the
+raw terminal output is in transcript.txt)
+
+1. **One unfinishable project silently starves every other project in the same trade,
+   for ever.** `logarithms` wants 10,000 scribe-hours a year in a society that
+   "can field 8750 at most". `start` lets you buy it for 12,255 den, warns it "will
+   crawl", and it then makes exactly zero progress for the rest of the game while
+   holding the whole scribe pool. In a 500-year run this froze eight projects -
+   including `scientific_method`, a 230-denarius node startable in year 100 - so
+   the founder still had not built it in 600 AD with 10.6 million denarii in hand.
+   `hire` cannot fix it (hard cap of 5.9 scribes "ever, at any price"); the only
+   fix is `commission`, which nothing mentions.  [F2, F3, F20]
+
+2. **The run can end with no warning and no number the player could have watched.**
+   "RUN ENDS: denounced: as a sorcerer" after eleven quiet years. `state` shows
+   `scandal 33.55` with no danger line, no per-year chance and no note; `state
+   full:true` has exactly one scandal field; `risk` never mentions denunciation; no
+   event fires first. Meanwhile the same screen carefully tells you EMINENCE is
+   "dangerous above 26 ... 0% chance the run ENDS this year". The mechanic is
+   survivable only through `policy auto_bribe`, which is off by default.  [F11]
+
+3. **`--seed` does not reproduce a run.** Identical script, identical seed, three
+   runs: capital 587,300 / 6,664,218 / 6,652,459. Exporting `PYTHONHASHSEED=0`
+   makes them identical, so outcomes depend on Python's string-hash randomisation.
+   This breaks `--seed`, `run --mc`, `compare`, and any "same save, same game"
+   assumption.  [F1]
+
+4. **"FULL CHAIN BEHIND IT: ... N den" ignores every price multiplier the game
+   itself applies two lines above.** It is the raw base sum: the same 8
+   prerequisites of `telescope` are quoted as "24,175" in all five civilisations,
+   while the real bill ranges from 18,970 (Han) to 35,108 (Norse). The error is
+   -31% in the poorest civilisation, where a budget matters most. `chain_size` and
+   `chain_founder_hours` are exactly right; only the money is wrong.  [F9]
+
+5. **The ledger states a rule and then breaks it in the next line.** "A concern you
+   open reaches its full figure over 3 years" - it reaches it in one. And the ramp
+   is keyed to the year the tech was BUILT, not opened, so waiting a year before
+   `open` skips it entirely and is strictly better than opening at once.  [F10]
+
+6. **Doing nothing bankrupts you, and then you cannot get out.** The opening ledger
+   shows "net +3.5 den/yr", i.e. idling is solvent; but fires and the debasement
+   erode the float and from 238 AD the run enters a permanent 10-year cycle of
+   "INSOLVENCY SETTLED ... reputation -12" until reputation floors at 0.10, credit
+   collapses from 1,367 to 219, and 18,081 den of interest has been paid on a
+   starting capital of 400. Once there, the credit ban is quoted as lifting in
+   609 - nine years past the 600 horizon - so every remaining node is permanently
+   unstartable.  [F6, F8]
+
+7. **The economy has no ceiling and the one hazard meant to punish success cannot
+   reach you.** A brute-force strategy reaches the transistor in 522 AD holding
+   1,369,921,440 denarii (the whole 2,831-node tree costs 52.5 million to build) in
+   an empire whose equestrian census the game puts at 100,000. Prominence never
+   passes 18 against a danger line of 26, and over ~3,000 measured run-years the
+   sum of every reported `chance_of_ruin_this_year` was exactly 0.00. A single
+   225.8-den node startable in year 100 returns 370 den/yr net, for ever.
+   [F22, F23, F28]
+
+8. **The advertised price index touches nothing the player feels at the start.**
+   The selection screen sells the civilisations on "prices 0.75x / 1.40x Rome", and
+   `why` applies an explicit "x1.4 prices" to what you build - but revenue is
+   ~233 and living-and-appearances is 230.0 to the decimal in all five, and hired
+   wage rates do not follow the index either (Norse is advertised 1.40x and its
+   labourer costs 0.84x Rome's).  [F12]
+
+9. **A stated hard ceiling that is not one.** Three places say the scribes can
+   supply 8,750 hours a year and no more; commissioning the full 8,750 on top of
+   the standing pool lets a 10,000-hour/year project run and finish. The real
+   ceiling is 17,500.  [F19]
+
+10. **Warnings that misdescribe what is happening.** "CLOSE TO THE LIMIT: you owe
+    228 of the 220 anyone here will advance you (103%). Past it every project in
+    hand is halted" - 103% is past it, and nothing was halted. `bribe 1` is refused
+    with "you are already as protected as money can make you here" at protection
+    0%, where `bribe 2` works. `risk`'s "expected lost per sacking" is 20% below
+    what actually happens because it applies the 80% chance twice. "ready in 2
+    years" / "ready_year 103" both deliver a year later than promised.
+    [F5, F7, F15, F25, F27]
+
+11. **Smaller things.** `open` ignores the staff a concern needs and lets you run
+    five with one artisan; `labour` quotes a wage 4-15% below the annual bill you
+    are then charged; `train` accepts trades that already exist and records that
+    you "created" the smith trade in Trajan's Rome; your credit limit is silently
+    equal to your annual grocery bill; the status bar and the panel under it
+    disagree about money, staff and reputation; the documented `run` command
+    prints nothing at all for over ten minutes at its own defaults; and every
+    invocation drops another `rome_100ad_<n>.json` in the working directory (70
+    accumulated in this session, 66 already committed to the repo root).
+    [F14, F16, F17, F18, F21, F24, F26]
+
 ## Findings log (in discovery order)
 
 ### F1. `--seed` does not make a run reproducible (hash-order nondeterminism)
