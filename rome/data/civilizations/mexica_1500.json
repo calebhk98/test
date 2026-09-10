@@ -82,7 +82,13 @@
   },
   {
    "name": "Spanish invasion",
+   "note": "The conquest does not just take the city, it replaces the religious order that ran it. Franciscan and Dominican friars begin systematic campaigns against indigenous ritual almost immediately, and the colonial administration that follows is far less willing than the tlatoani's court to read an inexplicable effect as divine favour rather than as diabolism or sorcery to be extirpated -- applied gradually below as `values`, over the same short years as the sack_chance, because there is no long war here to spread it across.",
    "sack_chance": 0.9,
+   "values": {
+    "w_religious_rigidity": 0.3,
+    "w_magic_fear": 0.35,
+    "w_novelty": -0.2
+   },
    "years": [
     1519,
     1521

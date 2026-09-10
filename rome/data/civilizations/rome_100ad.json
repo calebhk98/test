@@ -49,8 +49,12 @@
   },
   {
    "name": "Third century crisis",
+   "note": "Rome's baseline `values` note that it is magic, not heterodoxy, that is criminal here, because the state has never before needed everyone to worship the same way. The Decian edict of 250 breaks that: for the first time, sacrifice to the emperor's genius is demanded empire-wide and certified in writing, a loyalty test with no precedent, followed by Valerian's edicts against Christians in 257-258. That is a real tightening of religious rigidity, not merely more of the old magic-suspicion, so it is modelled as its own small shift below rather than folded into w_magic_fear.",
    "output_factor": 0.62,
    "sack_chance": 0.16,
+   "values": {
+    "w_religious_rigidity": 0.15
+   },
    "years": [
     235,
     284

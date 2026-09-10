@@ -416,6 +416,45 @@ class SocietyMixin:
                                         (1 - self.money_real) * 100,
                                         "; you feel less of it (%s)" % "; ".join(why)
                                         if why else "")))
+            if "values" in h:
+                # A hazard can kill your people, burn a site, or make you
+                # poorer, and that used to be the whole vocabulary. Norse
+                # Christianisation is none of those: its real effect is on
+                # what the society BELIEVES, which is exactly what
+                # alarm_of() and update_protection() read out of self.w. This
+                # is apply_tech_effects' mechanism (see there), aimed at a
+                # hazard instead of a technology, with one difference: a
+                # technology is a single event and logs once, but a hazard
+                # like this runs for over a century, so the shift is spread
+                # evenly across every year of `years` rather than dumped on
+                # the first one. Applying 1/Nth of the total delta every
+                # year, for N years, is what "gradual" means here; a single
+                # jump on the first year would be exactly the fake
+                # instantaneous conversion this mechanism exists to avoid.
+                span = max(1, int(b) - int(a) + 1)
+                changed = {}
+                for field, total_delta in h["values"].items():
+                    if field.startswith("_") or not isinstance(total_delta, (int, float)):
+                        continue
+                    if field not in self.w:
+                        continue
+                    before = self.w[field]
+                    self.w[field] = max(-1.0, min(1.5, before + total_delta / span))
+                    if abs(self.w[field] - before) > 1e-9:
+                        changed[field] = self.w[field]
+                # VISIBLE WHILE IT HAPPENS, not only in hindsight: a tester
+                # should be able to watch the society turning against them
+                # year by year, not discover it as a lump sum in the future.
+                # A hundred-odd years of this hazard would be a hundred-odd
+                # near-identical log lines if this fired every year, so it
+                # is throttled to the first year, the last, and every tenth
+                # in between -- the same spirit as the debasement throttle
+                # just above, which exists for the same reason.
+                if changed and (yr == a or yr == b or (yr - a) % 10 == 0):
+                    self.log.append((yr, "%s: the society's values are shifting (%s)"
+                                     % (h.get("name", "hazard"),
+                                        ", ".join("%s now %.2f" % (f, v)
+                                                  for f, v in sorted(changed.items())))))
 
     def _random_events(self, yr):
         r = self.rng
