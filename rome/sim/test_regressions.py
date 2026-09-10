@@ -456,6 +456,31 @@ check("a mine can be closed, and stops costing",
       "before %s after %s" % (r[2].get("mine_operating_cost"),
                               r[4].get("mine_operating_cost")))
 
+# --- Mexica WEIRD: the unknown-command message advertised ten commands while
+#     the game had twenty-four, so a player who mistyped was handed a list that
+#     silently omitted labour, hire, train, money, risk, policy and the rest.
+r, _, _ = proto([{"cmd": "definitely_not_a_command"}], civ="mexica_1500")
+_advertised = r[0].get("error", "")
+_real = [c for c in S.KNOWN_COMMANDS]
+check("the unknown-command message advertises every command there is",
+      all(c in _advertised for c in _real),
+      "missing: %s" % [c for c in _real if c not in _advertised])
+
+# and every command it advertises must actually answer
+_dead = []
+for _c in _real:
+    if _c in ("quit", "save", "load"):
+        continue                      # need arguments or end the session
+    rr, _, _ = proto([{"cmd": _c}], civ="mexica_1500")
+    if rr and "unknown cmd" in str(rr[0].get("error", "")):
+        _dead.append(_c)
+check("every advertised command is one the game answers to", not _dead, str(_dead))
+
+r, _, _ = proto([{"cmd": "why"}], civ="mexica_1500")
+check("a missing id asks for one rather than naming a Python type",
+      "NoneType" not in r[0].get("error", "") and "available" in r[0].get("error", ""),
+      r[0].get("error", "")[:90])
+
 # --- reproducibility: the same seed must give the same answer, and it must not
 #     depend on PYTHONHASHSEED.
 #

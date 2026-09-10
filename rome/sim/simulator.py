@@ -47,7 +47,8 @@ from engine.protocol import (_agent_available, _agent_dispatch,  # noqa: F401
                              _agent_end_reason, _agent_help, _agent_state,
                              _brief, _clean, _flag, _full_entry, _node_explain,
                              _num, _subject_of, load_state, save_state,
-                             SAVE_FIELDS, SUBJECTS, HELP_TOPICS)
+                             SAVE_FIELDS, SUBJECTS, HELP_TOPICS,
+                             KNOWN_COMMANDS)
 from engine.cli import (cmd_agent, cmd_civs, cmd_compare, cmd_costs,  # noqa: F401
                         cmd_path, cmd_play, cmd_run, cmd_sensitivity, cmd_sweep,
                         cmd_validate, cmd_why, cmd_menu, load_strategy, main, topo_stable,

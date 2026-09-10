@@ -1248,6 +1248,18 @@ def _flag(v, default=False):
     return bool(default if v is None else v)
 
 
+# Every command the dispatcher answers to, in the order a player meets them.
+# Kept beside the dispatcher so that adding a command and forgetting to
+# advertise it is a visible omission rather than a silent one.
+KNOWN_COMMANDS = (
+    "state", "available", "why", "path", "start", "stop", "step",
+    "money", "risk", "labour", "policy", "help",
+    "hire", "fire", "train", "commission", "work",
+    "buy", "quote", "close", "bounty", "mothball", "restore", "bribe",
+    "save", "load", "quit",
+)
+
+
 def _agent_dispatch(s, nodes, cmd):
     if not isinstance(cmd, dict) or "cmd" not in cmd:
         return {"ok": False, "error": "each line must be a JSON object with a 'cmd' field, "
@@ -1264,7 +1276,7 @@ def _agent_dispatch(s, nodes, cmd):
     # never the game.
     if "id" in cmd and not isinstance(cmd["id"], str):
         return {"ok": False,
-                "error": "id must be a string, got %s. Nothing was changed."
+                "error": "id must be a name in quotes, not %s. Nothing was changed."
                          % type(cmd["id"]).__name__}
 
     # NaN and Infinity, anywhere in the command, before anything is touched.
@@ -1287,7 +1299,12 @@ def _agent_dispatch(s, nodes, cmd):
                     "error": "you have never heard of that. You know what you have "
                              "built and what you could begin now; use 'available'."}
         if not isinstance(k, str):
-            return {"ok": False, "error": "id must be a string, got %s" % type(k).__name__}
+            return {"ok": False,
+                    "error": 'which one? give an id, for example '
+                             '{"cmd":"why","id":"units_standards"}. '
+                             'Use {"cmd":"available"} to see what you could begin.'
+                    if k is None else
+                    "id must be a name in quotes, not %s" % type(k).__name__}
         if k not in nodes:
             near = [x for x in nodes if str(k).lower() in x.lower()]
             return {"ok": False, "error": "unknown node %r. did you mean: %s"
@@ -1739,8 +1756,15 @@ def _agent_dispatch(s, nodes, cmd):
     if op == "quit":
         return {"ok": True, "bye": True}
 
-    return {"ok": False, "error": "unknown cmd %r. use one of: state, available, why, path, "
-                                  "start, stop, bounty, buy, step, quit" % op}
+    # THE LIST MUST NOT GO STALE. This was ten commands hard-coded into a
+    # string while the game had grown to twenty-four, so a player who mistyped
+    # was handed a list that silently omitted labour, hire, train, commission,
+    # money, risk, policy, quote, close, mothball, restore, work and bribe.
+    # A help message that is wrong is worse than none, because it is believed.
+    return {"ok": False,
+            "error": "unknown cmd %r. Use one of: %s. %s"
+                     % (op, ", ".join(KNOWN_COMMANDS),
+                        'Or {"cmd":"help"} for what each one does.')}
 
 
 SAVE_FIELDS = (
