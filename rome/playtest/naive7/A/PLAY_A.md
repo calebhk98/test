@@ -186,3 +186,80 @@ themselves" with no mention that being broke disables it.
 CANNOT BEGIN YET" list — 25+ lines, identical each time, even when I asked for
 one subject with 2 items in it. It buries the answer to the question I asked.
 
+### 115-120: the two institution gates
+
+Two hard ceilings appeared, both stated as refusals rather than in any list:
+
+1. `hire artisan 6` → "you can supervise, house and teach 1.49 more people, not
+   6 ... build workshop_first (you need somewhere for them to work)". So there is
+   a **housing/supervision cap on headcount** and `workshop_first` (5,757 den,
+   RESTS: ALL, prereq patron_local) lifts it.
+2. `open tr_carvel_planking` → "nobody free to keep an eye on it: it needs 0.0
+   scholars and 0.8 craftsmen to supervise". **Running concerns permanently tie
+   up craftsmen.** With 13 concerns running I now need a standing workforce just
+   to keep the lights on, quite separate from building anything.
+
+Both refusals name the exact fix. That is good design — I was never stuck
+without knowing why.
+
+`why school_founded` is the most emphatic text in the game: "The pivot of the
+entire game... Every year of delay here costs more than any single technology...
+Grants +4 scholars and +2 scholars/yr thereafter." And then: **STATUS BLOCKED,
+"this needs 2 other things you have not heard of yet"**. Under fog I cannot find
+out what they are. So the game shouts "do this first, delay is the worst
+mistake" about a thing it will not let me start or plan toward. That is the most
+frustrating moment so far, and I think it is a genuine design tension between
+the fog and the advice.
+
+Also: **auto_mothball silently closed horse_collar** when craftsmen ran short. I
+lost 900/yr for two turns before I noticed in `ventures`. No event line said so.
+
+By 120: 18 techs, 13 concerns, revenue ~11,700/yr, net **+6,572/yr**, 7.6 staff.
+The economy is solved. From here the question is purely the tech road.
+
+**Expectation for the technical push:** the intro named four missing
+instruments — temperature, tolerance, vacuum, purity. The RESTS:ALL items now
+visible are case_hardening, refractory_fireclay (heat), crank_conrod (power),
+plus lens_grinding marked "much". I expect refractory_fireclay to be the
+temperature gate, the prc_* lathe items (straightedge, mandrel, tailstock) to be
+the tolerance gate, and lens_grinding + a pump to lead to vacuum. Starting all
+four RESTS-heavy ones now.
+
+### 120-130: the instrument ladder appears, and hours become the bottleneck
+
+Once `workshop_first` + `patron_local` were done the tree opened enormously:
+279 → 352 → 414 startable. And the fog started naming the actual road:
+
+    glass_clear        <- cap_heat_1100
+    mirror_amalgam     <- glass_clear
+    drawplate_wire     <- case_hardening
+    crude_cell         <- lead_metallurgy
+    opt_focal_length   <- opt_plano_convex_lens
+
+`cap_heat_1100` ("Sustained 1100 C, hand-blown charcoal", RESTS: ALL) cost 300
+den and 60 hours. That is the temperature instrument from the opening briefing,
+and it is *cheap* — the expensive thing was the 20 years of institution-building
+needed before the game would show it to me. I think that is the intended lesson
+and it landed.
+
+**The bottleneck flipped.** Money went from binding to irrelevant (47,901 den
+banked, +13,818/yr by 130). The constraint is now my own 2,000 founder-hours a
+year, and everything that matters is hour-hungry: atomic_theory 1,000 hours,
+precision_three_plate 500, glass_clear 400, and each trained trade costs ~450
+hours per person. I stopped using `work` entirely around year 122; before that it
+was the best thing to do with spare hours, after that it was the worst.
+
+`bounty charcoal_industrial` → "needs about 122,400 denarii" for a 48,960 den
+project. So a bounty is ~2.5x the cash price and (I assume) costs no founder
+hours. That is exactly the escape valve for an hour-starved late game, and I
+expect to lean on it. The game does not say anywhere that this is the trade;
+I had to try it and read the refusal.
+
+Trades that must be taught: engineer, machinist, optician (done), chemist,
+electrician (outstanding). `policy auto_train on` now handles this and removed a
+lot of tedium — I wish I had found it 20 years earlier.
+
+By 130: 30 techs of my own, 19 concerns running, 17 staff across 5 trades,
++13,818 den/yr. Built the four RESTS:ALL items — precision_three_plate,
+water_power_scale, glass_clear, cementation_steel.
+

@@ -158,3 +158,27 @@ when you sell it and 7.66 den when you buy your way out of it. Confidence: MEDIU
 - Fog of war held: `path point_contact_transistor`, `why point_contact_transistor` and
   `available find transistor` all reveal nothing ("you have never heard of any such thing").
 - `fire scholar 5` with 1 employed succeeded silently rather than refusing (cosmetic).
+
+### FINDING 10 (confirmed, serious) — `load` validates the filename and nothing else
+`save backup1.json`, then edit that file by hand (`capital` -> 1e12, `_fog` -> false),
+then in the running game:
+```
+> load cheat.json
+loaded: cheat.json
+year: 107
+[107 AD | 1000000000000 den | ...] > help fog
+  fog of war: OFF. You can see the whole tree.
+> path arithmetic_positional
+id: arithmetic_positional ...
+```
+The `state` header even flips from "Fog of war is on: you see the next step, never the
+road." to "Goal: point_contact_transistor", and `path` - which had been refusing with
+"not available under fog of war" - starts answering.
+Notable because the path checks ARE careful: `load /nonexistent/x.json` is refused with
+"a save file must be a relative path", `load BREAK_B.md` with "a save file should end in
+.json or .save". So the filename is validated and the contents are not at all.
+Confidence: HIGH that this is unintended for the fog switch specifically - fog is chosen
+once at setup and `help fog` says "there is no way to view the whole tree".
+(I restored `backup1.json` afterwards and kept playing with fog ON. The 1e12 experiment
+also revealed that living-and-appearances is ~1.5% of capital plus a base:
+capital 1e12 -> "living and appearances 15,000,000,270".)

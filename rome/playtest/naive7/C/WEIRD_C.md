@@ -317,3 +317,135 @@ no work, no projects. I expect to burn through 688 den, then through 1,675 of cr
 11%, and then per `policy` ("people you cannot pay leave, creditors take what they are
 owed") something should take my freedmen away and I should hit some kind of floor. I want
 to see whether the game has a bottom, and whether it tells me I've hit it.
+
+### 12. Bankruptcy, and the dead who finish their apprenticeships
+
+`step 10` from 154. The events, in order:
+
+    EVENT 155: interest on 1036 denarii of arrears at 10.8% a year
+    EVENT 156: the household disperses: 18 people leave, because you can no longer feed them
+    EVENT 156: INSOLVENCY SETTLED: most of the debt is written off and you still owe about
+               557 denarii. Your name is worth less for it (reputation -12), and you keep
+               your knowledge and your practice
+    EVENT 157: 6.2 of the people you bought finish learning the work
+    EVENT 157: 3.4 of the people you bought finish learning the work
+    EVENT 157: 2.7 of the people you bought finish learning the work
+    EVENT 157: 2.3 of the people you bought finish learning the work
+    EVENT 159: banditry or a frontier war disrupts supply
+
+**The eighteen people left in 156 and then completed their training in 157.** The game
+announced their apprenticeships finishing a year after it announced they had all walked
+out because I could not feed them. Nobody was there to finish anything.
+
+And the numbers are wrong even on their own terms. I bought in batches of 10, 2, 2, 2, 2 —
+five purchases. The completion events are four, and they read 6.2, 3.4, 2.7, 2.3, which
+sum to 14.6, not 18 and not any of my batch sizes. Earlier, the same events for the first
+ten read "6 ... 1 ... 3", which were whole numbers and did sum correctly. So the same event
+prints whole people sometimes and fractions of people other times.
+
+The insolvency itself is good writing and works: debt written off, reputation -12
+(6.2 -> floored at 0.10), knowledge and practice kept. No complaints there.
+
+Also, in 165: **"EVENT 165: Antonine plague: you had nothing it could take."** That is the
+first time in 65 years the game has acknowledged that I have achieved nothing, and it is a
+genuinely great line. More of that, please.
+
+### 13. A real bug: the ledger's Net/yr ignores debt interest
+
+Three consecutive years, doing nothing at all:
+
+    Capital -1,052   Net/yr: 9.5   (interest paid so far 874.6)
+    Capital -1,157   Net/yr: 9.5   (interest paid so far 989.3)
+    Capital -1,274   Net/yr: 9.5   (interest paid so far 1,115)
+
+`money` reports **Net/yr +9.5** while my capital falls by **105, then 117**, and the
+amount is *accelerating*. The Costs block lists upkeep, living, wages and mines — and no
+line at all for interest — so the totals it prints simply omit the largest thing happening
+to my money. The rate is even printed two lines lower ("interest on arrears: 11%"), so the
+screen contains everything needed to be right and still says +9.5.
+
+A player reading `money` sees "I'm slowly recovering". They are in fact compounding at 11%.
+This is the one thing I found that I'd call an outright bug rather than a rough edge.
+
+Related: **Capital -1,052 with "Credit limit: 224".** I am five times past my own credit
+limit and the game let me get there and does nothing about it. The credit limit appears to
+be decorative once you are already underwater.
+
+**Expectation next:** I will now do the thing I most wanted to try — **nothing, for a
+hundred years.** `step 100`, no commands. I predict the debt compounds to something absurd
+(11% for a century is ~14,000x), and I want to know whether insolvency fires a second time
+or whether the first one is a one-off and I just accumulate an impossible number. I also
+expect to see the Plague of Cyprian, the third-century crisis and the debasement go past.
+
+### 14. A hundred years of doing absolutely nothing (166 -> 266)
+
+One command: `step 100`. Highlights:
+
+    EVENT 166 / 240 / 250 / 260 : INSOLVENCY SETTLED ... you still owe about 77 denarii.
+                                  Your name is worth less for it (reputation -12)
+
+**Insolvency is a repeatable free debt-wipe.** It fired five times. Each time it settles
+me at *the same* ~77 denarii owed, and each time it announces "reputation -12" against a
+reputation that has been floored at 0.10 since the first one. So after the first
+bankruptcy there is no penalty at all: I sit in a stable ten-year orbit — accrue interest,
+get wiped, repeat, forever. A player who wants to never think about money again can simply
+stop paying and the game will keep resetting them.
+
+    EVENT 240/243/246/252/265: Third century crisis: a site is sacked
+
+I own no sites. It said this five times. Compare the plague, which correctly says
+**"Antonine plague: you had nothing it could take"** and **"Plague of Cyprian: you had
+nothing it could take"**. So one hazard family checks whether I have anything and the other
+doesn't. The sacking line reads like something is happening to me when nothing is.
+
+Good things: the nag banner does eventually appear and it is well written and specific —
+"!! YOU HAVE BEEN IN ARREARS 29 YEARS AND YOU LOSE 66 DENARII A YEAR, SO NOTHING YOU START
+WILL EVER BE PAID FOR ... it is escapable ... work for wages". That is the game noticing me,
+110 years late but correctly.
+
+### 15. The coin loses 99% of its value and wages don't move
+
+    EVENT 190: Currency debasement: the coin is worth 6% less
+    EVENT 205: ... 62% less
+    EVENT 220: ... 85% less
+    EVENT 235: ... 94% less
+    EVENT 250: ... 97% less
+    EVENT 265: ... 99% less
+
+My practice income did erode: 233.5 -> 153.7 den/yr. But:
+
+    labour labourer  ->  a year of one: 125 den   wage: 0.07 den/hr   (year 100: identical)
+    labour scholar   ->  a year of one: 625 den   wage: 0.40 den/hr   (year 100: identical)
+
+**The labour market has not moved by a single denarius in 166 years, through a 99%
+debasement.** So after the currency collapses, day labour pays exactly what it did under
+Trajan while my professional practice has lost a third of its real value. In real terms
+`work scholar` is now the best-paid activity in the game *because* the empire's money
+failed. That cannot be intended, and it's the kind of thing a contrary player finds
+immediately: the response to hyperinflation is to go get a day job.
+
+### 16. Save-scumming: deterministic in the numbers, not in what it tells you
+
+`save snap1.json`, `step 5`, `load snap1.json`, `step 5`, `load`, `step 5`. All three
+runs: identical money (-76.7), identical reputation, identical insolvency event in 270.
+Good — the RNG is properly seeded off the state, so reloading does not reroll the dice.
+I checked this three times because save-scumming is the first thing I try in any game.
+
+But one event went missing. Run 1 printed:
+
+    EVENT 266: Third century crisis: trade and output fall to 65% of normal
+
+Runs 2 and 3, from the identical save, did not print it — while producing identical
+numbers. Tighter test at 271, same result: `save s2.json` / `step 1` prints
+"EVENT 271: Third century crisis: trade and output fall to 65% of normal";
+`load s2.json` / `step 1` prints nothing and lands on the same -157.9 den.
+
+Then I loaded the very same file in a **fresh process** — and the event printed again.
+
+    same file, in-process `load` + step  ->  event silently suppressed
+    same file, fresh process   + step    ->  event announced
+
+So `load` does not clear whatever set remembers which hazard announcements have already
+been made; it survives the load. The simulation is right and the narration is wrong. The
+practical effect is that a player who save-scums in-process is quietly shown a *less
+eventful* world than one who quits and comes back, and will conclude the crisis stopped.

@@ -2151,6 +2151,20 @@ check("a trade you taught does not still say it does not exist",
       and "does not exist yet" not in (_row.get("note") or ""),
       (_row.get("exists_here"), (_row.get("note") or "")[:60]))
 
+# "Zero-cost nodes gate whole ages and are invisible... twice one of them was
+# the only thing between me and a branch." The two digest lists deduplicated
+# the wrong way round: the leverage column dropped anything that was also in
+# the cheapest six, and the spine of this game is precisely the nodes that are
+# both - free, zero-revenue, and holding up an age.
+_dg, _, _ = proto([{"cmd": "available"}], fog=True)
+_lev = [x["id"] for x in (_dg[0].get("most_rests_on_these") or [])]
+check("the leverage column is not emptied by things being cheap",
+      len(_lev) >= 4, _lev)
+_by_reach = sorted(_lev, key=lambda k: -S.downstream_count(NODES, k))
+check("...and it really is the highest-leverage work available",
+      _lev and S.downstream_count(NODES, _lev[0]) >= 50,
+      [(k, S.downstream_count(NODES, k)) for k in _lev])
+
 _shutil.rmtree(_loadtest_abs, ignore_errors=True)
 _shutil.rmtree(os.path.join(ROOT, _PLAY_DIR), ignore_errors=True)
 

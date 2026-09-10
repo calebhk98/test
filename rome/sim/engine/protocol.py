@@ -711,7 +711,19 @@ def _agent_available(s, nodes, cmd=None):
                      "cheapest": round(costs[0], 1),
                      "dearest": round(costs[-1], 1),
                      "you_could_pay_for": sum(1 for c in costs if c <= purse)})
-    cheap = sorted(ok, key=lambda k: s.project_cost(k))[:6]
+    # LEVERAGE FIRST, then price. These two lists deduplicated the wrong way
+    # round: the leverage list dropped anything that was also in the cheapest
+    # six, and the spine of this game is precisely the nodes that are BOTH -
+    # free, zero-revenue, and holding up an age. A play tester put it exactly:
+    # "zero-cost nodes gate whole ages and are invisible... twice one of them
+    # was the only thing between me and a branch". Being cheap is the reason
+    # they are easy to miss, not a reason to hide them from the column that
+    # exists to find them.
+    _lev_all = sorted(ok, key=lambda k: (-downstream_count(nodes, k),
+                                         s.project_cost(k)))
+    leverage = _lev_all[:5]
+    cheap = [k for k in sorted(ok, key=lambda k: s.project_cost(k))
+             if k not in leverage][:6]
     # AND THE SIX MOST RESTS ON. A normal-play tester found that the spine of
     # the whole game is a handful of cheap, zero-revenue, tier-0 nodes -
     # units_standards, identity_cover, patron_local, workshop_first - and that
@@ -719,8 +731,6 @@ def _agent_available(s, nodes, cmd=None):
     # id, a hundred at first and four hundred and sixty by the end. The digest
     # sorted by price, which is the one axis on which those nodes look like
     # nothing. Leverage is a column the game already knows.
-    leverage = sorted(ok, key=lambda k: (-downstream_count(nodes, k),
-                                         s.project_cost(k)))[:5]
     out = {"ok": True, "count": len(ok),
            "showing": "a summary by subject, because the full list is %d things"
                       % len(ok),
@@ -734,8 +744,7 @@ def _agent_available(s, nodes, cmd=None):
            # _brief, not _full_entry: the table renders only the columns, and a
            # second block of fog summaries pushed the reply past the size a
            # reply is allowed to be. See the wall-of-text check.
-           "most_rests_on_these": [_brief(s, nodes, k, fog)
-                                   for k in leverage if k not in cheap],
+           "most_rests_on_these": [_brief(s, nodes, k, fog) for k in leverage],
            "to_see_more": {
                "one subject": '{"cmd":"available","subject":"metallurgy"}',
                "by name": '{"cmd":"available","find":"furnace"}',
