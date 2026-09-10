@@ -418,8 +418,143 @@ inert = [h["name"] for h in norse_hazards if not any(f in h for f in _EFFECT_FIE
 check("no Norse hazard is purely decorative (no effect field the engine reads)",
       not inert, str(inert))
 
+# ============================================================================
+# Round two, sections C-F: knowledge vs plant, the automatic policies, warning
+# a player before they commit to work nobody can do, and legible hours.
+# ============================================================================
+import time as _time
+
+# --- C: knowledge is not a building. A tester watched creditors make the
+# founder forget Newton's laws and basic textile technique. "physics" was
+# already protected; "theory" and "knowledge" (what the tree itself calls the
+# rest of abstract science) were not, even though several of those nodes carry
+# real upkeep the same way Newton's laws does. A loss-making node that is
+# neither is the control: it SHOULD still be shed.
+_KNOW1, _KNOW2, _LOSS = "md2_cell_theory", "md2_dna", "hom_eraser_breadcrumb"
+s = sim()
+check("theory and knowledge categories are protected the same way physics is",
+      s.never_abandon(_KNOW1) and s.never_abandon("sc2_physics_newtons_laws"),
+      "%s cat=%s" % (_KNOW1, NODES[_KNOW1]["cat"]))
+check("a loss-making, non-knowledge node is NOT protected (the control case)",
+      not s.never_abandon(_LOSS), NODES[_LOSS]["cat"])
+
+s = sim(capital=-100000.0)
+s.done.add(_LOSS); s.done.add(_KNOW1)
+s.revenue = lambda: 0.0        # force a loss regardless of the rest of the economy
+s.shed_loss_makers(100)
+check("shed_loss_makers cannot make the founder forget knowledge",
+      _LOSS not in s.done and _KNOW1 in s.done,
+      "loss-maker shed=%s knowledge shed=%s" % (_LOSS not in s.done, _KNOW1 not in s.done))
+check("shed_loss_makers mothballs, and NAMES, what it takes",
+      _LOSS in s.mothballed and any(_LOSS in m for _, m in s.log),
+      [m for _, m in s.log])
+
+s = sim(capital=-100000.0)
+s.done.add(_LOSS); s.done.add(_KNOW2)
+s.credit_limit = lambda: 0.0   # force straight past the credit floor
+s.enforce_credit_limit(100)
+check("creditors cannot seize knowledge either",
+      _LOSS not in s.done and _KNOW2 in s.done,
+      "loss-maker taken=%s knowledge taken=%s" % (_LOSS not in s.done, _KNOW2 not in s.done))
+check("creditors' seizure mothballs, and NAMES, what it takes",
+      _LOSS in s.mothballed and any(_LOSS in m for _, m in s.log),
+      [m for _, m in s.log])
+
+# --- C: a repossessed work must not look like fresh research
+s = sim(capital=100000.0)
+s.mothballed.add(_LOSS)
+ok, why = s.start_reason(_LOSS)
+check("a mothballed work refuses to be started as if it were new research",
+      not ok and "restore" in why, why)
+avail = S._agent_available(s, NODES, {"all": True})
+check("a mothballed work does not appear in available looking like new research",
+      not any(e["id"] == _LOSS for e in avail["available"]), avail["count"])
+
+# --- D1: auto_hire must not take on staff this year's income cannot carry
+s = sim(civ="rome_100ad", capital=400.0, manual=False, events=False)
+s.step()
+check("auto_hire does not overcommit turn one against a thin surplus",
+      s.scholars < 0.2 and s.artisans < 0.6,
+      "scholars %.3f artisans %.3f capital %.1f" % (s.scholars, s.artisans, s.capital))
+
+# --- D2/E: auto_train (and a `start` warning) must be demand-led: driven by
+# what is startable now but for the trade, not by every node whose direct
+# prerequisites happen to be satisfied somewhere deep in the tree.
+s = sim(civ="rome_100ad", capital=1e6, manual=True, events=False)
+ok_ig, why_ig = s.start_reason("ag2_hydrometer", ignore_trade=True)
+check("ignore_trade accepts a node that is startable but for the trade alone",
+      ok_ig, why_ig)
+ok_norm, why_norm = s.start_reason("ag2_hydrometer")
+check("without ignore_trade the same node is refused specifically for the trade",
+      not ok_norm and "optician" in why_norm, why_norm)
+ok_staff, why_staff = s.start_reason("ag2_cold_store", ignore_trade=True)
+check("ignore_trade still refuses a node blocked by missing STAFF, not just the trade",
+      not ok_staff and "craftsmen" in why_staff, why_staff)
+
+s = sim(civ="rome_100ad", capital=1e6, manual=True, events=False)
+node = "ag2_cold_store"
+for p in NODES[node]["pre"]:
+    s.done.add(p)
+s.artisans, s.scholars = 10.0, 10.0
+r0 = S._agent_dispatch(s, NODES, {"cmd": "start", "id": node})
+check("start refuses outright when a needed trade has never been taught",
+      not r0["ok"] and "engineer" in r0.get("error", ""), r0)
+s.train("engineer", 2)          # training begun; nobody is ready for two years
+r1 = S._agent_dispatch(s, NODES, {"cmd": "start", "id": node})
+check("start accepts work nobody can do yet only WITH a warning naming the trade",
+      r1["ok"] and "engineer" in r1.get("warning", ""), r1)
+
+# --- D4: fractional staff counts are explained, not silently shown
+s = sim(civ="rome_100ad", capital=400.0, manual=False, events=False)
+s.step()
+st = S._agent_state(s, NODES, {})
+check("a fractional staff count comes with an explanation of what the fraction means",
+      (abs(s.scholars - round(s.scholars)) < 0.02 and abs(s.artisans - round(s.artisans)) < 0.02)
+      or bool(st.get("staff_are_fractional_because")),
+      "scholars %.3f artisans %.3f" % (s.scholars, s.artisans))
+s2 = sim(civ="rome_100ad")
+st2 = S._agent_state(s2, NODES, {})
+check("a whole-number staff carries no fraction footnote",
+      st2.get("staff_are_fractional_because") is None, st2.get("staff_are_fractional_because"))
+
+# --- F: say how the founder's hours were spent
+s = sim(civ="rome_100ad", capital=400.0, manual=False, events=False)
+ratios = []
+for _ in range(6):
+    s.step()
+    h = s.hours_this_year
+    total = h["wage_work"] + h["teaching"] + h["offered_to_projects"] + h["unused"]
+    check("a year's founder hours are fully accounted for (year %d)" % s.year,
+          abs(total - h["available"]) < 1e-6, h)
+    for k, pst in s.active.items():
+        off = pst.get("hours_offered_this_year", 0.0)
+        eff = pst.get("hours_effective_this_year", 0.0)
+        if off > 1:
+            ratios.append(eff / off)
+check("an underfunded project's refund is proportional, not always exactly half",
+      any(abs(r - 0.5) > 0.02 for r in ratios), ratios)
+st = S._agent_state(s, NODES, {})
+check("state reports the year's hours summary",
+      st.get("hours_this_year") == s.hours_this_year, st.get("hours_this_year"))
+check("state reports hours offered/effective per active project",
+      not st["active"] or any("hours_offered_this_year" in v for v in st["active"].values()),
+      st["active"])
+
+# --- performance: `available` must return quickly even deep in the tree under
+# fog. A regression here (start_reason recursing into is_visible, which
+# recurses into start_reason, unmemoised) took a single `available` call under
+# fog on norse_900ad from instant to over a minute.
+s = sim(civ="norse_900ad")
+s.fog = True
+s.revealed = set()
+t0 = _time.time()
+S._agent_available(s, NODES, {})
+elapsed = _time.time() - t0
+check("available returns quickly under fog, not in tens of seconds",
+      elapsed < 5.0, "%.2fs" % elapsed)
+
 print("=" * 72)
-print("%d checks, %d failures" % (38 + 15, len(FAILURES)))
+print("%d checks, %d failures" % (38 + 15 + 20, len(FAILURES)))
 for f in FAILURES:
     print("   FAILED:", f)
 sys.exit(1 if FAILURES else 0)
