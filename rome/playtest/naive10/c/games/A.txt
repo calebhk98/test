@@ -1,0 +1,37 @@
+[350 AD | 871718 den | you:2000 hr | sch 26 art 75 | rep 45] > LEDGER
+Capital: 871,718 den     Revenue: 360,798 den/yr
+  from:
+    what your own workshop sells           215,368
+    and 27 smaller concerns                42,069
+    crucible_steel                         24,571
+    lead_chamber                           20,104
+    finery_puddling                        20,104
+    interchangeable_parts                  17,870
+    high_temp_furnace                      15,636
+    cementation_steel                      13,403
+    electroplating                         12,286
+    mirror_amalgam                         11,169
+    zinc_metal                             8,935
+    glass_clear                            7,818
+    screw_lathe                            7,818
+    lens_grinding                          7,148
+    boring_mill                            5,584
+    water_power_scale                      4,914
+    nitric_acid                            4,914
+    what the market will not absorb        -78,913
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       46,462
+  living and appearances         34,934
+  of which because you are rich  13,076
+  wages                          37,640
+  mines standing                 152,045
+  interest on arrears            0
+Net/yr before the work in hand: 89,718     spent on projects last step: 11,712
+Net/yr after it: 78,006   (this is the figure `state` prints)
+Credit limit: 379,623 (none used)     interest on arrears: 8%     paid so far: 136,022

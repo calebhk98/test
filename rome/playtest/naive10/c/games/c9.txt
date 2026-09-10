@@ -1,0 +1,13 @@
+2
+
+absurd
+
+start fin_lottery
+step 3
+ventures
+open fin_lottery
+state
+mothball fin_lottery
+restore fin_lottery
+state
+quit

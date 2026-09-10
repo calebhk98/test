@@ -1,0 +1,7 @@
+2
+
+absurd
+
+bribe 1000000
+state
+quit

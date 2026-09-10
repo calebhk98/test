@@ -1,0 +1,2361 @@
+################################################################
+### A. Baseline: state / money / available (Rome 100, poor_scholar, fog on, no ageing)
+### INPUT (one command per line; the first blank lines are the menu defaults):
+###   |2
+###   |
+###   |
+###   |
+###   |state
+###   |money
+###   |available
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 400 den    net +3.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > LEDGER
+Capital: 400 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         230
+  of which because you are rich  6
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: 3.5     spent on projects last step: 0
+Net/yr after it: 3.5   (this is the figure `state` prints)
+Credit limit: 1,367 (none used)     interest on arrears: 11%     paid so far: 0
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > AVAILABLE: 207 startable now
+a summary by subject, because the full list is 207 things
+
+SUBJECT                    THINGS   CHEAPEST    DEAREST     AFFORD
+textiles                       54          6     17,415         53
+finance                        24         10     10,831         16
+roads, bridges and canal       20       49.6      1,445         20
+the remaining arts             20       68.8      2,532         19
+power and precision            16       40.4      856.1         16
+farming, in depth              10        119        280         10
+the household                  10          5      285.5         10
+metallurgy                      9       74.4      6,296          6
+transport, in depth             9      200.4      1,258          9
+mathematics and method          7        230      1,032          7
+medicine and biology            7        9.3        580          7
+agriculture and food            5        235      2,070          4
+construction                    5       97.7        531          5
+signals and media               3      271.2      536.6          3
+electricity                     2       71.4      269.6          2
+glass and optics                2      315.9      337.2          2
+the briefing                    1        600        600          1
+society and politics            1      1,580      1,580          1
+everything else                 1        210        210          1
+printing and information        1      217.5      217.5          1
+
+CHEAPEST SIX RIGHT NOW, sorted by cost:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+hom_eraser_breadcrumb              Eraser, breadcrumb s         5      30  0.10    0%        0    0.50      -      ?
+tx2_bleaching_sun                  Bleaching by sunligh         6      30     0   15%        0      40    1a*      ?
+tx2_retting                        Retting of flax and          6      30     0   15%        0      40    1a*    few
+tx2_shed                           Shed: warp separatio         6      30     0   15%        0      40    1a*    few
+tx2_count_standard                 Yarn count standardi         6      40     0   15%        0      40    1a*      ?
+tx2_selvedge                       Selvedge: woven clot       7.5      40     0   15%        0      40    1a*      ?
+
+MOST RESTS ON THESE, of what you could begin today:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+identity_cover                     Establish a respecta     1,580     500  0.50    5%        0     200      -    ALL
+units_standards                    Define and publish s       444     300  0.50    5%        0      30      -    ALL
+arithmetic_positional              Decimal positional n     1,032     450     1   10%      300     100      -    ALL
+scientific_method                  Controlled experimen       230     350     2   20%        0     100      -   much
+horse_collar                       Rigid padded horse c     709.4     200     1   10%      900     150    1a*   some
+
+  one subject: available metallurgy
+  by name: available find furnace
+  what you can pay for: available afford 1,766
+  a page of everything: available limit 30
+  all of it at once: available all (large)
+
+  STAFF is the standing people it needs: 2s = two scholars, 1a = one craftsman.
+  A * means you do not have them yet - 'hire' or 'train' first, or the work waits.
+
+Under fog you see only what you could begin now, and things you have heard
+of. There is no way to see the whole tree.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_16.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_16.json
+
+################################################################
+### B. TOP-1: insolvency declared on a POSITIVE balance; reputation 6.6 -> 0 (work scholar 2000)
+### INPUT (one command per line; the first blank lines are the menu defaults):
+###   |2
+###   |
+###   |
+###   |
+###   |start arithmetic_positional
+###   |step 1
+###   |state
+###   |work scholar 2000
+###   |state
+###   |step 1
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: arithmetic_positional
+name: Decimal positional notation, zero, negative numbers, decimal fractions
+founder hours needed: 450
+calendar floor years: 1
+the bill you have taken on: 1,032
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Decimal positional notation, zero, negative numbers, decimal fractions
+  COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  EVENT 100: Decimal positional notation, zero, negative numbers, decimal fractions changes the society: literacy_elite, state_capacity
+  EVENT 100: completed: Decimal positional notation, zero, negative numbers, decimal fractions. You know how; nothing is earning yet - 'open arithmetic_positional' to run it
+
+============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: -628.5 den    net -1,090 den/yr (after 1,032 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.6   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | -628 den | you:2000 hr | sch 0 art 0 | rep 7] > ============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: -628.5 den    net -1,090 den/yr (after 1,032 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.6   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | -628 den | you:2000 hr | sch 0 art 0 | rep 7] > trade: scholar
+hours: 2,000
+earned: 645.7
+capital: 17.2
+your hours left this year: 0
+it cost your own practice: 233.5
+so you are up: 412.2
+why: You cannot be in two places. Hours sold for wages come out of the practice, so what you really made this year is the wage less what the surgery did not take. Hours you put into your OWN projects do not cost you this.
+
+[101 AD | 17 den | you:0 hr | sch 0 art 0 | rep 7] > ============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 17.2 den    net -1,242 den/yr (after 1,032 den into projects this year)
+You: alive (you do not age), 0 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.6   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | 17 den | you:0 hr | sch 0 art 0 | rep 7] >   EVENT 101: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 74 denarii. Your name is worth less for it (reputation -6.6), and you keep your knowledge and your practice
+
+============================================================
+YEAR 102   (498 years to the horizon at 600)
+============================================================
+
+Money: -73.5 den    net +1.4 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[102 AD | -73 den | you:2000 hr | sch 0 art 0 | rep 0] > ============================================================
+YEAR 102   (498 years to the horizon at 600)
+============================================================
+
+Money: -73.5 den    net +1.4 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[102 AD | -73 den | you:2000 hr | sch 0 art 0 | rep 0] > bye: True
+
+Ended 102 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_17.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_17.json
+
+################################################################
+### C. TOP-1 control: same but work scholar 1800 -> only a CLOSE TO THE LIMIT warning quoting a debt of 261 while state says -47
+### INPUT (one command per line; the first blank lines are the menu defaults):
+###   |2
+###   |
+###   |
+###   |
+###   |start arithmetic_positional
+###   |step 1
+###   |work scholar 1800
+###   |state
+###   |step 1
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: arithmetic_positional
+name: Decimal positional notation, zero, negative numbers, decimal fractions
+founder hours needed: 450
+calendar floor years: 1
+the bill you have taken on: 1,032
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Decimal positional notation, zero, negative numbers, decimal fractions
+  COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  EVENT 100: Decimal positional notation, zero, negative numbers, decimal fractions changes the society: literacy_elite, state_capacity
+  EVENT 100: completed: Decimal positional notation, zero, negative numbers, decimal fractions. You know how; nothing is earning yet - 'open arithmetic_positional' to run it
+
+============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: -628.5 den    net -1,090 den/yr (after 1,032 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.6   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | -628 den | you:2000 hr | sch 0 art 0 | rep 7] > trade: scholar
+hours: 1,800
+earned: 581.1
+capital: -47.3
+your hours left this year: 200
+it cost your own practice: 210.2
+so you are up: 370.9
+why: You cannot be in two places. Hours sold for wages come out of the practice, so what you really made this year is the wage less what the surgery did not take. Hours you put into your OWN projects do not cost you this.
+
+[101 AD | -47 den | you:200 hr | sch 0 art 0 | rep 7] > ============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: -47.3 den    net -1,225 den/yr (after 1,032 den into projects this year)
+You: alive (you do not age), 200 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.6   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | -47 den | you:200 hr | sch 0 art 0 | rep 7] >   EVENT 101: CLOSE TO THE LIMIT: you owe 261 of the 328 anyone here will advance you (79%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+
+============================================================
+YEAR 102   (498 years to the horizon at 600)
+============================================================
+
+Money: -260.7 den    net -18.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.5   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[102 AD | -260 den | you:2000 hr | sch 0 art 0 | rep 6] > ============================================================
+YEAR 102   (498 years to the horizon at 600)
+============================================================
+
+Money: -260.7 den    net -18.6 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 200 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.5   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[102 AD | -260 den | you:2000 hr | sch 0 art 0 | rep 6] > bye: True
+
+Ended 102 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_18.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_18.json
+
+################################################################
+### D. TOP-2: the three projects the game itself recommends wipe out a default start by year 106
+### INPUT (one command per line; the first blank lines are the menu defaults):
+###   |2
+###   |
+###   |
+###   |
+###   |start arithmetic_positional
+###   |start scientific_method
+###   |start units_standards
+###   |step 5
+###   |state
+###   |step 2
+###   |state
+###   |step 8
+###   |available
+###   |stuck
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: arithmetic_positional
+name: Decimal positional notation, zero, negative numbers, decimal fractions
+founder hours needed: 450
+calendar floor years: 1
+the bill you have taken on: 1,032
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: scientific_method
+name: Controlled experiment, hypothesis, replication, publication
+founder hours needed: 350
+calendar floor years: 2
+the bill you have taken on: 230
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > started: units_standards
+name: Define and publish standard length, mass, time and temperature
+founder hours needed: 300
+calendar floor years: 0.50
+the bill you have taken on: 444
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Define and publish standard length, mass, time and temperature
+  COMPLETED 101: Reproducible length standard
+  EVENT 100: completed: Define and publish standard length, mass, time and temperature. You know how; nothing is earning yet - 'open units_standards' to run it
+  EVENT 102: CLOSE TO THE LIMIT: you owe 1,003 of the 1,392 anyone here will advance you (72%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+
+============================================================
+YEAR 105   (495 years to the horizon at 600)
+============================================================
+
+Money: -1,210 den    net -121.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (2):
+  arithmetic_positional               66% of your hours spent, 352.4 still owed - waiting on your hours
+      Decimal positional notation, zero, negative numbers, decimal fractions
+      in arrears: after fixed costs there is nothing left to draw on, so the hours offered this year did almost nothing
+  scientific_method                  100% of your hours spent, 115 still owed - waiting on money: 115 still owed and this year's instalment of 115 is more than you can raise
+      Controlled experiment, hypothesis, replication, publication
+      in arrears: after fixed costs there is nothing left to draw on, so the hours offered this year did almost nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5.1   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 140 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[105 AD | -1209 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 105   (495 years to the horizon at 600)
+============================================================
+
+Money: -1,210 den    net -121.5 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (2):
+  arithmetic_positional               66% of your hours spent, 352.4 still owed - waiting on your hours
+      Decimal positional notation, zero, negative numbers, decimal fractions
+      in arrears: after fixed costs there is nothing left to draw on, so the hours offered this year did almost nothing
+  scientific_method                  100% of your hours spent, 115 still owed - waiting on money: 115 still owed and this year's instalment of 115 is more than you can raise
+      Controlled experiment, hypothesis, replication, publication
+      in arrears: after fixed costs there is nothing left to draw on, so the hours offered this year did almost nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5.1   protection 2%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 140 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[105 AD | -1209 den | you:2000 hr | sch 0 art 0 | rep 5] >   EVENT 106: CREDIT EXHAUSTED: 2 projects halted, unfinished. Nobody will fund new work here for some years
+  EVENT 106: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 475 denarii. Your name is worth less for it (reputation -5.0), and you keep your knowledge and your practice
+  EVENT 106: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+
+============================================================
+YEAR 107   (493 years to the horizon at 600)
+============================================================
+
+Money: -475.3 den    net -42.8 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0   protection 0%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 140 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[107 AD | -475 den | you:2000 hr | sch 0 art 0 | rep 0] > ============================================================
+YEAR 107   (493 years to the horizon at 600)
+============================================================
+
+Money: -475.3 den    net -42.8 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0   protection 0%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 140 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[107 AD | -475 den | you:2000 hr | sch 0 art 0 | rep 0] >   EVENT 108: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+  EVENT 111: fire in the insula district, where the tenements stand six storeys in wood: it destroyed nothing, because you were holding none
+
+============================================================
+YEAR 115   (485 years to the horizon at 600)
+============================================================
+
+Money: -969.6 den    net -97.1 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0.30   protection 0%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 140 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[115 AD | -969 den | you:2000 hr | sch 0 art 0 | rep 0] > AVAILABLE: 0 startable now
+a summary by subject, because the full list is 0 things
+
+SUBJECT                    THINGS   CHEAPEST    DEAREST     AFFORD
+
+CHEAPEST SIX RIGHT NOW, sorted by cost:
+ID                                 NAME                      COST   HOURS YEARS  RISK EARNS/YR  UPKEEP  STAFF  RESTS
+
+  one subject: available metallurgy
+  by name: available find furnace
+  what you can pay for: available afford 224
+  a page of everything: available limit 30
+  all of it at once: available all (large)
+
+HEARD OF, CANNOT BEGIN YET:
+  case_hardening                     this needs 1 other thing you have not heard of yet, and you do not yet know what it is
+  corpus_written                     this needs 1 other thing you have not heard of yet, and you do not yet know what it is
+  precision_three_plate              missing prerequisites: case_hardening
+  thermometer                        this needs 2 other things you have not heard of yet, and you do not yet know what they are
+  opt_standards_laboratory           missing prerequisites: balance_analytical, thermometer
+  prc_standard_meter_wavelength      this needs 2 other things you have not heard of yet, and you do not yet know what they are
+  balance_analytical                 missing prerequisites: precision_three_plate; and 2 other things you have not heard of yet
+
+Under fog you see only what you could begin now, and things you have heard
+of. There is no way to see the whole tree.
+
+[115 AD | -969 den | you:2000 hr | sch 0 art 0 | rep 0] > WHY YOU ARE NOT GETTING ON
+  0 things you could begin, 0 of them you could pay for
+
+  NOTHING YOU COULD BEGIN:
+    everything in front of you is either built, already running, or waiting on
+    something. 'available' says which.
+  ARREARS:
+    you owe 970 of the 224 anyone will advance you, and the interest is 107 a
+    year
+  A CREDIT FREEZE:
+    nobody will fund new work until 118
+
+[115 AD | -969 den | you:2000 hr | sch 0 art 0 | rep 0] > bye: True
+
+Ended 115 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_19.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_19.json
+
+################################################################
+### E. TOP-4 commission: buying exactly the hired labour a project lists changes nothing (WITH commissions)
+### INPUT (one command per line; the first blank lines are the menu defaults):
+###   |2
+###   |
+###   |absurd
+###   |
+###   |commission carpenter 200
+###   |commission smith 400
+###   |start units_standards
+###   |state
+###   |step 1
+###   |money
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > commissioned: 200 hours of a carpenter bought for 51 denarii
+capital: 999,949
+note: These hours are available to your projects this year only.
+
+[100 AD | 999948 den | you:2000 hr | sch 0 art 0 | rep 5] > commissioned: 400 hours of a smith bought for 115 denarii
+capital: 999,834
+note: These hours are available to your projects this year only.
+
+[100 AD | 999833 den | you:2000 hr | sch 0 art 0 | rep 5] > started: units_standards
+name: Define and publish standard length, mass, time and temperature
+founder hours needed: 300
+calendar floor years: 0.50
+the bill you have taken on: 444
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 999833 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 999,834 den    net -14,988 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  units_standards                      0% of your hours spent, 444 still owed - waiting on your hours
+      Define and publish standard length, mass, time and temperature
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 999833 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Define and publish standard length, mass, time and temperature
+  EVENT 100: completed: Define and publish standard length, mass, time and temperature. You know how; nothing is earning yet - 'open units_standards' to run it
+
+============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 984,402 den    net -15,200 den/yr (after 444 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5.6   protection 2%   scandal 0   eminence 0.50
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.2 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | 984401 den | you:2000 hr | sch 0 art 0 | rep 6] > LEDGER
+Capital: 984,402 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         14,990
+  of which because you are rich  14,766
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: -14,756     spent on projects last step: 444
+Net/yr after it: -15,200   (this is the figure `state` prints)
+Credit limit: 14,990 (none used)     interest on arrears: 11%     paid so far: 0
+
+[101 AD | 984401 den | you:2000 hr | sch 0 art 0 | rep 6] > bye: True
+
+Ended 101 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_20.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_20.json
+
+################################################################
+### E2. TOP-4 commission control (WITHOUT commissions) - identical bill and identical spend
+### INPUT (one command per line; the first blank lines are the menu defaults):
+###   |2
+###   |
+###   |absurd
+###   |
+###   |start units_standards
+###   |state
+###   |step 1
+###   |money
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: units_standards
+name: Define and publish standard length, mass, time and temperature
+founder hours needed: 300
+calendar floor years: 0.50
+the bill you have taken on: 444
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 1,000,000 den    net -14,990 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  units_standards                      0% of your hours spent, 444 still owed - waiting on your hours
+      Define and publish standard length, mass, time and temperature
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Define and publish standard length, mass, time and temperature
+  EVENT 100: completed: Define and publish standard length, mass, time and temperature. You know how; nothing is earning yet - 'open units_standards' to run it
+
+============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 984,566 den    net -15,203 den/yr (after 444 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5.6   protection 2%   scandal 0   eminence 0.50
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.2 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | 984565 den | you:2000 hr | sch 0 art 0 | rep 6] > LEDGER
+Capital: 984,566 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         14,992
+  of which because you are rich  14,768
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: -14,759     spent on projects last step: 444
+Net/yr after it: -15,203   (this is the figure `state` prints)
+Credit limit: 14,992 (none used)     interest on arrears: 11%     paid so far: 0
+
+[101 AD | 984565 den | you:2000 hr | sch 0 art 0 | rep 6] > bye: True
+
+Ended 101 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_21.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_21.json
+
+################################################################
+### F. TOP-3 staff: three '1a*'/'1s1a*' projects all finish at full speed with EMPLOY: 0 people
+### INPUT:
+###   |2
+###   |
+###   |absurd
+###   |
+###   |start tx2_retting
+###   |start met_investment_casting
+###   |start fin_census
+###   |state
+###   |step 1
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: tx2_retting
+name: Retting of flax and hemp fibres
+founder hours needed: 30
+calendar floor years: 0
+the bill you have taken on: 6
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: met_investment_casting
+name: Investment casting and lost wax
+founder hours needed: 100
+calendar floor years: 0.80
+the bill you have taken on: 329.8
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: fin_census
+name: Census and population enumeration
+founder hours needed: 200
+calendar floor years: 2
+the bill you have taken on: 2,532
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 1,000,000 den    net -14,990 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (3):
+  fin_census                           0% of your hours spent, 2,532 still owed - waiting on your hours
+      Census and population enumeration
+  met_investment_casting               0% of your hours spent, 329.8 still owed - waiting on your hours
+      Investment casting and lost wax
+  tx2_retting                          0% of your hours spent, 6 still owed - waiting on your hours
+      Retting of flax and hemp fibres
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Investment casting and lost wax
+  COMPLETED 100: Retting of flax and hemp fibres
+  EVENT 100: completed: Investment casting and lost wax. You know how; nothing is earning yet - 'open met_investment_casting' to run it
+  EVENT 100: completed: Retting of flax and hemp fibres. You know how; nothing is earning yet - 'open tx2_retting' to run it
+
+============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 983,408 den    net -16,343 den/yr (after 1,602 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  fin_census                         100% of your hours spent, 1,266 still owed - waiting on the pace it can absorb money: at most 1,266 a year goes into this (1,266 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Census and population enumeration
+
+RUNNING AS CONCERNS: 0   (you know how to run 2 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.1   protection 2%   scandal 0   eminence 0.50
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.2 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 2 built by you, 139 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 2 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | 983407 den | you:2000 hr | sch 0 art 0 | rep 6] > ============================================================
+YEAR 101   (499 years to the horizon at 600)
+============================================================
+
+Money: 983,408 den    net -16,343 den/yr (after 1,602 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  fin_census                         100% of your hours spent, 1,266 still owed - waiting on the pace it can absorb money: at most 1,266 a year goes into this (1,266 still owed, about 1 more year at that rate). Money in hand cannot buy it down faster
+      Census and population enumeration
+
+RUNNING AS CONCERNS: 0   (you know how to run 2 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.1   protection 2%   scandal 0   eminence 0.50
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.2 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 2 built by you, 139 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 2 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[101 AD | 983407 den | you:2000 hr | sch 0 art 0 | rep 6] > bye: True
+
+Ended 101 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_22.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_22.json
+
+################################################################
+### G. TOP-3 staff: supervision IS enforced at open, with fractional needs ventures never shows
+### INPUT:
+###   |2
+###   |
+###   |absurd
+###   |
+###   |start horse_collar
+###   |start arithmetic_positional
+###   |start med_herbal_pharmacy
+###   |start fin_lottery
+###   |step 2
+###   |ventures
+###   |open horse_collar
+###   |open med_herbal_pharmacy
+###   |open fin_lottery
+###   |commission artisan 2000
+###   |open fin_lottery
+###   |ventures
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: horse_collar
+name: Rigid padded horse collar, whippletree, nailed horseshoe
+founder hours needed: 200
+calendar floor years: 1
+the bill you have taken on: 709.4
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: arithmetic_positional
+name: Decimal positional notation, zero, negative numbers, decimal fractions
+founder hours needed: 450
+calendar floor years: 1
+the bill you have taken on: 1,032
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: med_herbal_pharmacy
+name: Herbal pharmacy (Dioscorides Materia medica)
+founder hours needed: 100
+calendar floor years: 0.50
+the bill you have taken on: 580
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: fin_lottery
+name: Lottery and state gambling
+founder hours needed: 150
+calendar floor years: 2
+the bill you have taken on: 2,080
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Decimal positional notation, zero, negative numbers, decimal fractions
+  COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 100: Rigid padded horse collar, whippletree, nailed horseshoe
+  COMPLETED 100: Herbal pharmacy (Dioscorides Materia medica)
+  COMPLETED 101: Lottery and state gambling
+  EVENT 100: completed: Herbal pharmacy (Dioscorides Materia medica). You know how; nothing is earning yet - 'open med_herbal_pharmacy' to run it
+  EVENT 100: Decimal positional notation, zero, negative numbers, decimal fractions changes the society: literacy_elite, state_capacity
+  EVENT 100: completed: Decimal positional notation, zero, negative numbers, decimal fractions. You know how; nothing is earning yet - 'open arithmetic_positional' to run it
+  EVENT 100: completed: Rigid padded horse collar, whippletree, nailed horseshoe. You know how; nothing is earning yet - 'open horse_collar' to run it
+  EVENT 101: completed: Lottery and state gambling. You know how; nothing is earning yet - 'open fin_lottery' to run it
+
+============================================================
+YEAR 102   (498 years to the horizon at 600)
+============================================================
+
+Money: 965,893 den    net -15,519 den/yr (after 1,040 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 4 more and have not opened them - 'ventures')
+  those shut concerns would clear 1,850 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 13.3   protection 5%   scandal 0   eminence 0.99
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.4 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 4 built by you, 139 granted for free (143 total)
+
+AHEAD: 1 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 4 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[102 AD | 965892 den | you:2000 hr | sch 0 art 0 | rep 13] > CONCERNS
+free to put behind something new: 1 scholars, 1 craftsmen   (one of each of those is you)
+you have 1 scholars and 1 craftsmen in all; 0 and 0 of them are watching a concern
+
+  Most concerns want CRAFTSMEN to keep an eye on them. Engineers, chemists and
+  machinists are scholars here, and a scholar cannot watch a workshop. 'labour
+  <trade>' says which of the two a trade is.
+
+RUNNING
+  nothing
+
+YOU KNOW HOW, AND HAVE NOT OPENED
+  ID                                   EARNS/YR   COSTS/YR    TO OPEN
+  arithmetic_positional                     300        100      154.8
+  fin_lottery                               800        100        312
+  horse_collar                              900        150        150
+  med_herbal_pharmacy                       300        100        100
+
+YOUR PRACTICE (not a concern, and not listed above): med_cataract_couching,
+med_trepanation are your own practice, and they pay about a third of what
+the tree quotes for the trade: the difference between one person in a rented
+room and an organised concern. That gap does not close with time. Selling
+your hours for wages takes another bite out of it, because you cannot be in
+two places. You did not open it and you cannot close it; it is not listed
+here, and it is most of your income until you build something. See 'money'.
+
+Knowing how to do a thing and running it are different. Of the things in the
+TREE, only what you are RUNNING earns anything or costs anything. 'open
+<id>' starts one, 'mothball <id>' stops it, and you keep the knowledge
+either way.
+
+[102 AD | 965892 den | you:2000 hr | sch 0 art 0 | rep 13] > opened: horse_collar open: it earns 900 a year and costs 150 a year to run
+capital: 965,743
+revenue: 533.3
+upkeep: 150
+
+[102 AD | 965742 den | you:2000 hr | sch 0 art 0 | rep 13] > opened: med_herbal_pharmacy open: it earns 300 a year and costs 100 a year to run
+capital: 965,643
+revenue: 633.2
+upkeep: 250
+
+[102 AD | 965642 den | you:2000 hr | sch 0 art 0 | rep 13] > REFUSED: nobody free to keep an eye on it: it needs 0.25 scholars and 0.53 craftsmen to supervise, and you have 0.75 and 0.15 not already watching something else. Hire, teach, or close something.
+
+[102 AD | 965642 den | you:2000 hr | sch 0 art 0 | rep 13] > commissioned: 2000 hours of a artisan bought for 480 denarii
+capital: 965,163
+note: These hours are available to your projects this year only.
+
+[102 AD | 965162 den | you:2000 hr | sch 0 art 0 | rep 13] > REFUSED: nobody free to keep an eye on it: it needs 0.25 scholars and 0.53 craftsmen to supervise, and you have 0.75 and 0.15 not already watching something else. Hire, teach, or close something.
+
+[102 AD | 965162 den | you:2000 hr | sch 0 art 0 | rep 13] > CONCERNS
+free to put behind something new: 0.75 scholars, 0.15 craftsmen   (one of each of those is you)
+you have 1 scholars and 1 craftsmen in all; 0.25 and 0.85 of them are watching a concern
+
+  HELD BY                              SCHOLARS  CRAFTSMEN
+  horse_collar                                0       0.60
+  med_herbal_pharmacy                      0.25       0.25
+
+  Most concerns want CRAFTSMEN to keep an eye on them. Engineers, chemists and
+  machinists are scholars here, and a scholar cannot watch a workshop. 'labour
+  <trade>' says which of the two a trade is.
+
+RUNNING
+  ID                                   EARNS/YR   COSTS/YR    NEEDS
+  horse_collar                              900        150    0 sch   1 cr
+  med_herbal_pharmacy                       300        100    1 sch   1 cr
+
+YOU KNOW HOW, AND HAVE NOT OPENED
+  ID                                   EARNS/YR   COSTS/YR    TO OPEN
+  arithmetic_positional                     300        100      154.8
+  fin_lottery                               800        100        312
+
+YOUR PRACTICE (not a concern, and not listed above): med_cataract_couching,
+med_trepanation are your own practice, and they pay about a third of what
+the tree quotes for the trade: the difference between one person in a rented
+room and an organised concern. That gap does not close with time. Selling
+your hours for wages takes another bite out of it, because you cannot be in
+two places. You did not open it and you cannot close it; it is not listed
+here, and it is most of your income until you build something. See 'money'.
+
+Knowing how to do a thing and running it are different. Of the things in the
+TREE, only what you are RUNNING earns anything or costs anything. 'open
+<id>' starts one, 'mothball <id>' stops it, and you keep the knowledge
+either way.
+
+[102 AD | 965162 den | you:2000 hr | sch 0 art 0 | rep 13] > bye: True
+
+Ended 102 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_23.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_23.json
+
+################################################################
+### H. restore costs 624 after open cost 312 (the engine elsewhere says a tenth)
+### INPUT:
+###   |2
+###   |
+###   |absurd
+###   |
+###   |start fin_lottery
+###   |step 3
+###   |ventures
+###   |open fin_lottery
+###   |state
+###   |mothball fin_lottery
+###   |restore fin_lottery
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > started: fin_lottery
+name: Lottery and state gambling
+founder hours needed: 150
+calendar floor years: 2
+the bill you have taken on: 2,080
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  COMPLETED 101: Lottery and state gambling
+  EVENT 101: completed: Lottery and state gambling. You know how; nothing is earning yet - 'open fin_lottery' to run it
+
+============================================================
+YEAR 103   (497 years to the horizon at 600)
+============================================================
+
+Money: 953,671 den    net -14,291 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+  those shut concerns would clear 700 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.9   protection 3%   scandal 0   eminence 1.4
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 1 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[103 AD | 953671 den | you:2000 hr | sch 0 art 0 | rep 7] > CONCERNS
+free to put behind something new: 1 scholars, 1 craftsmen   (one of each of those is you)
+you have 1 scholars and 1 craftsmen in all; 0 and 0 of them are watching a concern
+
+  Most concerns want CRAFTSMEN to keep an eye on them. Engineers, chemists and
+  machinists are scholars here, and a scholar cannot watch a workshop. 'labour
+  <trade>' says which of the two a trade is.
+
+RUNNING
+  nothing
+
+YOU KNOW HOW, AND HAVE NOT OPENED
+  ID                                   EARNS/YR   COSTS/YR    TO OPEN
+  fin_lottery                               800        100        312
+
+YOUR PRACTICE (not a concern, and not listed above): med_cataract_couching,
+med_trepanation are your own practice, and they pay about a third of what
+the tree quotes for the trade: the difference between one person in a rented
+room and an organised concern. That gap does not close with time. Selling
+your hours for wages takes another bite out of it, because you cannot be in
+two places. You did not open it and you cannot close it; it is not listed
+here, and it is most of your income until you build something. See 'money'.
+
+Knowing how to do a thing and running it are different. Of the things in the
+TREE, only what you are RUNNING earns anything or costs anything. 'open
+<id>' starts one, 'mothball <id>' stops it, and you keep the knowledge
+either way.
+
+[103 AD | 953671 den | you:2000 hr | sch 0 art 0 | rep 7] > opened: fin_lottery open: it earns 800 a year and costs 100 a year to run
+capital: 953,359
+revenue: 511.2
+upkeep: 100
+
+[103 AD | 953359 den | you:2000 hr | sch 0 art 0 | rep 7] > ============================================================
+YEAR 103   (497 years to the horizon at 600)
+============================================================
+
+Money: 953,359 den    net -14,130 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 1   (you know how to run 0 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.9   protection 3%   scandal 0   eminence 1.4
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 1 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[103 AD | 953359 den | you:2000 hr | sch 0 art 0 | rep 7] > mothballed: fin_lottery shut down; you stop paying 100 a year for it and stop earning the 800 a year it brought in. You still know how to do it, and 'restore fin_lottery' opens it again
+upkeep: 0
+
+[103 AD | 953359 den | you:2000 hr | sch 0 art 0 | rep 7] > restored: fin_lottery back in service for 624 denarii
+capital: 952,735
+
+[103 AD | 952735 den | you:2000 hr | sch 0 art 0 | rep 7] > ============================================================
+YEAR 103   (497 years to the horizon at 600)
+============================================================
+
+Money: 952,735 den    net -14,120 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 1   (you know how to run 0 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 6.9   protection 3%   scandal 0   eminence 1.4
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 139 granted for free (140 total)
+
+AHEAD: 1 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 1 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[103 AD | 952735 den | you:2000 hr | sch 0 art 0 | rep 7] > bye: True
+
+Ended 103 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_24.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_24.json
+
+################################################################
+### I. a DEAD founder starts projects and hires staff
+### INPUT:
+###   |2
+###   |
+###   |
+###   |y
+###   |step 40
+###   |state
+###   |start units_standards
+###   |hire artisan 2
+###   |state
+###   |step 9
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+  EVENT 102: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 74 denarii
+  EVENT 103: banditry or a frontier war disrupts supply: it cost you 34 denarii
+  EVENT 129: banditry or a frontier war disrupts supply: it cost you 41 denarii
+  EVENT 138: the founder dies, aged about 73
+
+============================================================
+YEAR 140   (460 years to the horizon at 600)
+============================================================
+
+Money: 409.1 den    net +3.4 den/yr (after 0 den into projects this year)
+You: DEAD and ageing, 0 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 1.8   protection 1%   scandal 0   eminence 0.02
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[140 AD | 409 den | you:0 hr | sch 0 art 0 | rep 2] > ============================================================
+YEAR 140   (460 years to the horizon at 600)
+============================================================
+
+Money: 409.1 den    net +3.4 den/yr (after 0 den into projects this year)
+You: DEAD and ageing, 0 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 1.8   protection 1%   scandal 0   eminence 0.02
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[140 AD | 409 den | you:0 hr | sch 0 art 0 | rep 2] > started: units_standards
+name: Define and publish standard length, mass, time and temperature
+founder hours needed: 300
+calendar floor years: 0.50
+the bill you have taken on: 444
+note: This is the price as of today, and it is now fixed for this project. Quotes move with prices, the coinage and what a material costs to get: a figure you read years ago is not what you will pay.
+
+[140 AD | 409 den | you:0 hr | sch 0 art 0 | rep 2] > hired: artisan
+n: 2
+you now employ: 2
+annual wage bill: 510.3
+capital: -90.9
+
+[140 AD | -90 den | you:0 hr | sch 0 art 2 | rep 2] > ============================================================
+YEAR 140   (460 years to the horizon at 600)
+============================================================
+
+Money: -90.9 den    net -510.7 den/yr (after 0 den into projects this year)
+You: DEAD and ageing, 0 founder-hours free this year
+
+RUNNING (1):
+  units_standards                      0% of your hours spent, 444 still owed - waiting on your hours
+      Define and publish standard length, mass, time and temperature
+
+EMPLOY: 2 people, 510.3 den/yr in wages
+  household places: 2.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  artisan          2
+
+STANDING: reputation 1.8   protection 1%   scandal 0   eminence 0.02
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[140 AD | -90 den | you:0 hr | sch 0 art 2 | rep 2] >   EVENT 140: banditry or a frontier war disrupts supply: it cost you nothing, because you were holding none
+  EVENT 141: interest on 601 denarii of arrears at 10.9% a year
+  EVENT 141: CLOSE TO THE LIMIT: you owe 601 of the 693 anyone here will advance you (86%). Past it every project in hand is halted unfinished and nobody funds new work for some years. 'stop' a project, 'mothball' a loss-maker or 'fire' somebody while it is still your choice
+  EVENT 142: you cannot pay everyone: 1.5 of your staff leave for work that pays
+  EVENT 142: CREDIT EXHAUSTED: 1 projects halted, unfinished. Nobody will fund new work here for some years
+  EVENT 142: INSOLVENCY SETTLED: most of the debt is written off and you still owe about 194 denarii. Your name is worth less for it (reputation -1.8), and you keep your knowledge and your practice
+  EVENT 144: you cannot pay everyone: 0.2 of your staff leave for work that pays
+  EVENT 145: you cannot pay everyone: 0.0 of your staff leave for work that pays
+  EVENT 145: interest on 360 denarii of arrears at 11.0% a year
+
+============================================================
+YEAR 149   (451 years to the horizon at 600)
+============================================================
+
+Money: -456.4 den    net -40.7 den/yr (after 0 den into projects this year)
+You: DEAD and ageing, 0 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0.10   protection 0%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[149 AD | -456 den | you:0 hr | sch 0 art 0 | rep 0] > ============================================================
+YEAR 149   (451 years to the horizon at 600)
+============================================================
+
+Money: -456.4 den    net -40.7 den/yr (after 0 den into projects this year)
+You: DEAD and ageing, 0 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0.10   protection 0%   scandal 0   eminence 0.01
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[149 AD | -456 den | you:0 hr | sch 0 art 0 | rep 0] > bye: True
+
+Ended 149 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_25.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_25.json
+
+################################################################
+### J. buying and freeing 5 people yields 6.6 people 'learning the work' and 4 artisans in the prompt
+### INPUT:
+###   |2
+###   |
+###   |absurd
+###   |
+###   |buy slaves 5
+###   |labour
+###   |buy manumit 2
+###   |labour
+###   |step 3
+###   |labour
+###   |step 1
+###   |labour
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > bought: 5
+slaves: 5
+capital: 998,362
+
+[100 AD | 998361 den | you:2000 hr | sch 0 art 0 | rep 5] > LABOUR
+ON YOUR STAFF:
+  people you own          5   held, not paid a wage
+
+HOUSEHOLD PLACES: 5 of 6 used, room for 1 more
+  to make room: To get more artisans: hire smith 3 or any trade in labour; or
+  commission smith 400 to buy one job instead of employing anybody; buy slaves
+  N then manumit, though they are untrained for three years.
+
+YOU COULD HIRE: artisan, carpenter, engraver, furnaceman, glassblower, labourer, mason, master, merchant, millwright, miner, plumber, potter, sailor, scholar, scribe, smith
+MUST BE TAUGHT: chemist, electrician, engineer, machinist, optician
+
+IN TRAINING:
+  people you bought, learning the work x5, ready 103.0
+
+Total employed: 0     annual wage bill: 0 den
+
+A trade that does not exist here cannot be hired at any price; teach one
+with train. Trades are not interchangeable. Buying a job instead of a person
+is commission.
+
+[100 AD | 998361 den | you:2000 hr | sch 0 art 0 | rep 5] > manumitted: 2
+freedmen: 2
+slaves: 3
+
+[100 AD | 998361 den | you:2000 hr | sch 0 art 0 | rep 6] > LABOUR
+ON YOUR STAFF:
+  people you own          3   held, not paid a wage
+  freedmen                2   freed, and worth more for it
+
+HOUSEHOLD PLACES: 5 of 6 used, room for 1 more
+  to make room: To get more artisans: hire smith 3 or any trade in labour; or
+  commission smith 400 to buy one job instead of employing anybody; buy slaves
+  N then manumit, though they are untrained for three years.
+
+YOU COULD HIRE: artisan, carpenter, engraver, furnaceman, glassblower, labourer, mason, master, merchant, millwright, miner, plumber, potter, sailor, scholar, scribe, smith
+MUST BE TAUGHT: chemist, electrician, engineer, machinist, optician
+
+IN TRAINING:
+  people you bought, learning the work x6.6, ready 103.0
+
+Total employed: 0     annual wage bill: 0 den
+
+A trade that does not exist here cannot be hired at any price; teach one
+with train. Trades are not interchangeable. Buying a job instead of a person
+is commission.
+
+[100 AD | 998361 den | you:2000 hr | sch 0 art 0 | rep 6] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+
+============================================================
+YEAR 103   (497 years to the horizon at 600)
+============================================================
+
+Money: 953,589 den    net -14,479 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages   (and 5 in your household, owned or freed)
+  household places: 5.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5.3   protection 2%   scandal 0   eminence 1.4
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[103 AD | 953588 den | you:2000 hr | sch 0 art 0 | rep 5] > LABOUR
+ON YOUR STAFF:
+  people you own          3   held, not paid a wage
+  freedmen                2   freed, and worth more for it
+
+HOUSEHOLD PLACES: 5 of 6 used, room for 1 more
+  to make room: To get more artisans: hire smith 3 or any trade in labour; or
+  commission smith 400 to buy one job instead of employing anybody; buy slaves
+  N then manumit, though they are untrained for three years.
+
+YOU COULD HIRE: artisan, carpenter, engraver, furnaceman, glassblower, labourer, mason, master, merchant, millwright, miner, plumber, potter, sailor, scholar, scribe, smith
+MUST BE TAUGHT: chemist, electrician, engineer, machinist, optician
+
+IN TRAINING:
+  people you bought, learning the work x6.6, ready 103.0
+
+Total employed: 0     annual wage bill: 0 den
+
+A trade that does not exist here cannot be hired at any price; teach one
+with train. Trades are not interchangeable. Buying a job instead of a person
+is commission.
+
+[103 AD | 953588 den | you:2000 hr | sch 0 art 0 | rep 5] >   EVENT 103: 6.6 of the people you bought finish learning the work
+
+============================================================
+YEAR 104   (496 years to the horizon at 600)
+============================================================
+
+Money: 939,110 den    net -14,262 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages   (and 5 in your household, owned or freed)
+  household places: 5.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  these are continuous full-time-equivalents, not a count of whole people:
+  hiring phases in, training takes years, and attrition (about 3.5%/yr) trims
+  everyone a little rather than dismissing one person at a time. 1.32 artisans
+  is the wage and output of one artisan plus a third of another's.
+
+STANDING: reputation 5.1   protection 2%   scandal 0   eminence 1.8
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[104 AD | 939109 den | you:2000 hr | sch 0 art 4 | rep 5] > LABOUR
+ON YOUR STAFF:
+  people you own          3   held, not paid a wage
+  freedmen                2   freed, and worth more for it
+
+HOUSEHOLD PLACES: 5 of 6 used, room for 1 more
+  to make room: To get more artisans: hire smith 3 or any trade in labour; or
+  commission smith 400 to buy one job instead of employing anybody; buy slaves
+  N then manumit, though they are untrained for three years.
+
+YOU COULD HIRE: artisan, carpenter, engraver, furnaceman, glassblower, labourer, mason, master, merchant, millwright, miner, plumber, potter, sailor, scholar, scribe, smith
+MUST BE TAUGHT: chemist, electrician, engineer, machinist, optician
+
+Total employed: 0     annual wage bill: 0 den
+
+A trade that does not exist here cannot be hired at any price; teach one
+with train. Trades are not interchangeable. Buying a job instead of a person
+is commission.
+
+[104 AD | 939109 den | you:2000 hr | sch 0 art 4 | rep 5] > ============================================================
+YEAR 104   (496 years to the horizon at 600)
+============================================================
+
+Money: 939,110 den    net -14,262 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages   (and 5 in your household, owned or freed)
+  household places: 5.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+  these are continuous full-time-equivalents, not a count of whole people:
+  hiring phases in, training takes years, and attrition (about 3.5%/yr) trims
+  everyone a little rather than dismissing one person at a time. 1.32 artisans
+  is the wage and output of one artisan plus a third of another's.
+
+STANDING: reputation 5.1   protection 2%   scandal 0   eminence 1.8
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[104 AD | 939109 den | you:2000 hr | sch 0 art 4 | rep 5] > bye: True
+
+Ended 104 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_26.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_26.json
+
+################################################################
+### K. bribe 10 -> 6% protection
+### INPUT:
+###   |2
+###   |
+###   |
+###   |
+###   |bribe 10
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 400 den | you:2000 hr | sch 0 art 0 | rep 5] > bribed: scandal 0.00 -> 0.00 for 10 denarii; advocacy and piety bought as well: protection 0.00 -> 0.06
+capital: 390
+
+[100 AD | 390 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 390 den    net +3.7 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 6%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0.10 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 390 den | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_27.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_27.json
+
+################################################################
+### L. bribe 1,000,000 -> 76 denarii taken, 32% protection (help says the cap is 30)
+### INPUT:
+###   |2
+###   |
+###   |absurd
+###   |
+###   |bribe 1000000
+###   |state
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > bribed: scandal 0.00 -> 0.00 for 76 denarii; 999,924 denarii of what you offered was not taken, because this is as far as money goes here - you kept it; advocacy and piety bought as well: protection 0.00 -> 0.32
+capital: 999,924
+
+[100 AD | 999923 den | you:2000 hr | sch 0 art 0 | rep 5] > ============================================================
+YEAR 100   (500 years to the horizon at 600)
+============================================================
+
+Money: 999,924 den    net -14,989 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 5   protection 32%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 8.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 137 granted for free (137 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[100 AD | 999923 den | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 100 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_28.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_28.json
+
+################################################################
+### M. mine: quote says 750/yr, ledger says 0, close says 'you stop paying 0 a year'
+### INPUT:
+###   |2
+###   |
+###   |absurd
+###   |
+###   |quote mine coal 500
+###   |buy mine coal 500
+###   |step 3
+###   |money
+###   |close coal
+###   |money
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > material: coal
+tonnes per year: 500
+to sink it: 4,500
+every year it stands: 750
+years before it produces: 3
+you have: 1,000,000
+you could raise: 1,007,612
+you can afford about: 111,957
+afford means: cash plus half the credit line, which is what a lender will advance against a purchase
+note: The yearly cost is charged whether or not you use the output, and goes on until you close it. Mothballing is not free to reverse: the shaft floods and the crew disperses, so reopening means sinking it again.
+
+[100 AD | 1000000 den | you:2000 hr | sch 0 art 0 | rep 5] > material: coal
+you asked for t per yr: 500
+commissioned t per yr: 500
+ready year: 103
+years until producing: 3
+already producing t per yr: 0
+capital: 995,500
+
+[100 AD | 995500 den | you:2000 hr | sch 0 art 0 | rep 5] >   COMPLETED 100: Amphitheatre with tiered seating
+  COMPLETED 100: Barrel vault
+
+============================================================
+YEAR 103   (497 years to the horizon at 600)
+============================================================
+
+Money: 951,399 den    net -14,262 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 4.6   protection 2%   scandal 0   eminence 1.4
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.1 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 0 built by you, 139 granted for free (139 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 0 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[103 AD | 951399 den | you:2000 hr | sch 0 art 0 | rep 5] > LEDGER
+Capital: 951,399 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         14,495
+  of which because you are rich  14,271
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: -14,262     spent on projects last step: 0
+Net/yr after it: -14,262   (this is the figure `state` prints)
+Credit limit: 14,495 (none used)     interest on arrears: 11%     paid so far: 0
+
+[103 AD | 951399 den | you:2000 hr | sch 0 art 0 | rep 5] > closed: the coal workings are closed. You stop paying 0 a year. What you spent sinking them is gone, and reopening means sinking them again.
+mine operating cost: 0
+
+[103 AD | 951399 den | you:2000 hr | sch 0 art 0 | rep 5] > LEDGER
+Capital: 951,399 den     Revenue: 233.5 den/yr
+  from:
+    med_cataract_couching                  166.8
+    med_trepanation                        66.7
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         14,495
+  of which because you are rich  14,271
+  wages                          0
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: -14,262     spent on projects last step: 0
+Net/yr after it: -14,262   (this is the figure `state` prints)
+Credit limit: 14,495 (none used)     interest on arrears: 11%     paid so far: 0
+
+[103 AD | 951399 den | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 103 AD. stopped
+Saved to /root/.rome-saves/rome_100ad_29.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/rome_100ad_29.json
+
+################################################################
+### N. Mexica ('no iron' in its own blurb) quotes an iron mine, and hires plumbers and millwrights
+### INPUT:
+###   |5
+###   |
+###   |
+###   |
+###   |quote mine iron 500
+###   |labour
+###   |quit
+### OUTPUT:
+   Type commands in plain words. The five to start with are 'state' (where you
+   stand), 'available' (what you could begin today), 'why <name>' (what a thing
+   is for and what it costs), 'start <name>' (begin it) and 'step' (let a year
+   pass). When something is FINISHED it earns nothing until you 'open' it.
+   'stuck' says why you are not getting on; 'help' explains the rest; 'quit'
+   leaves.
+
+[1500 AD | 320 beans | you:2000 hr | sch 0 art 0 | rep 5] > material: iron
+tonnes per year: 500
+to sink it: 24,000
+every year it stands: 4,800
+years before it produces: 3
+you have: 320
+you could raise: 766.1
+you can afford about: 16.0
+afford means: cash plus half the credit line, which is what a lender will advance against a purchase
+note: The yearly cost is charged whether or not you use the output, and goes on until you close it. Mothballing is not free to reverse: the shaft floods and the crew disperses, so reopening means sinking it again.
+
+[1500 AD | 320 beans | you:2000 hr | sch 0 art 0 | rep 5] > LABOUR
+ON YOUR STAFF:
+  nobody
+
+HOUSEHOLD PLACES: 0 of 6 used, room for 6 more
+  to make room: To get more artisans: hire smith 3 or any trade in labour; or
+  commission smith 400 to buy one job instead of employing anybody; buy slaves
+  N then manumit, though they are untrained for three years.
+
+YOU COULD HIRE: artisan, carpenter, engraver, furnaceman, glassblower, labourer, mason, master, merchant, millwright, miner, plumber, potter, sailor, scholar, scribe, smith
+MUST BE TAUGHT: chemist, electrician, engineer, machinist, optician
+
+Total employed: 0     annual wage bill: 0 beans
+
+A trade that does not exist here cannot be hired at any price; teach one
+with train. Trades are not interchangeable. Buying a job instead of a person
+is commission.
+
+[1500 AD | 320 beans | you:2000 hr | sch 0 art 0 | rep 5] > bye: True
+
+Ended 1500 AD. stopped
+Saved to /root/.rome-saves/mexica_1500.json. Come back with:
+   python3 rome/sim/simulator.py play --session /root/.rome-saves/mexica_1500.json
+
+################################################################
+### O. TOP-5: identical 250-year script, absurd kit vs poor_scholar kit
+###    The menu says of 'absurd': "a million denarii buys perhaps a tenth off the
+###    time, not a different game."
+###    Script: turn on every auto policy, then every year attempt 'start <id>' for
+###    all 142 ids on 'path point_contact_transistor', then 'step 1'. 250 years.
+### ABSURD (games/cmds_big.txt -> games/big1.txt), final state at 350 AD:
+Money: 871,718 den    net +78,006 den/yr (after 11,712 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING (1):
+  steam_high_pressure                100% of your hours spent, 246,223 still owed - waiting on the pace it can absorb money: at most 11,712 a year goes into this (246,223 still owed, about 22 more years at that rate). Money in hand cannot buy it down faster
+      High pressure steam and adequate boilers
+
+RUNNING AS CONCERNS: 40   (you know how to run 62 more and have not opened them - 'ventures')
+  those shut concerns would clear 20,000 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 101.4 people, 37,640 den/yr in wages
+  household places: 101.4 of 101.4 used - what you can feed, house and oversee. 'labour' says what raises it.
+  artisan          69.4
+  chemist          2
+  electrician      2
+  engineer         2
+  machinist        2
+  optician         2
+  scholar          22.0
+  these are continuous full-time-equivalents, not a count of whole people:
+  hiring phases in, training takes years, and attrition (about 3.5%/yr) trims
+  everyone a little rather than dismissing one person at a time. 1.32 artisans
+  is the wage and output of one artisan plus a third of another's.
+
+STANDING: reputation 45   protection 46%   scandal 0.24   eminence 9.0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.9 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 102 built by you, 141 granted for free (243 total)
+
+AHEAD: 64 technologies at risk if a hazard lands, hedged by nothing yet
+  HAPPENING NOW: The solidus and the end of the debasement, Christianisation of the empire
+  10 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[350 AD | 871718 den | you:2000 hr | sch 26 art 75 | rep 45] > bye: True
+
+Ended 350 AD. stopped
+Saved to rome_100ad_78.json. Come back with:
+   python3 rome/sim/simulator.py play --session rome_100ad_78.json
+
+### POOR_SCHOLAR, exact same script (games/cmds_poor.txt -> games/poor1.txt):
+YEAR 350   (250 years to the horizon at 600)
+============================================================
+
+Money: -93.8 den    net -0.80 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 1 more and have not opened them - 'ventures')
+
+EMPLOY: 0 people, 0 den/yr in wages
+  household places: 0.0 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  nobody
+
+STANDING: reputation 0.40   protection 0%   scandal 0   eminence 0
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 0 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 1 built by you, 140 granted for free (141 total)
+
+AHEAD: 0 technologies at risk if a hazard lands, hedged by nothing yet
+  HAPPENING NOW: The solidus and the end of the debasement, Christianisation of the empire
+  10 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[350 AD | -93 den | you:2000 hr | sch 0 art 0 | rep 0] > bye: True
+
+Ended 350 AD. stopped
+Saved to poorrun.json. Come back with:
+   python3 rome/sim/simulator.py play --session poorrun.json
+
+### POOR_SCHOLAR, a gentler script - ONE start attempt per year, all 500 years
+###    (games/cmds_poor2.txt -> games/poor2.txt): 2 technologies, 34 insolvencies.
+### COMPLETED lines: 2
+### INSOLVENCY events: 34
+[600 AD | -1226 den | you:2000 hr | sch 0 art 0 | rep 0] > LEDGER
+Capital: -1,227 den     Revenue: 153.7 den/yr
+  from:
+    med_cataract_couching                  109.8
+    med_trepanation                        43.9
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         219.2
+  wages                          0
+  mines standing                 0
+  interest on arrears            134.9
+Net/yr before the work in hand: -200.4     spent on projects last step: 0
+Net/yr after it: -200.4   (this is the figure `state` prints)
+Credit limit: 219.2 (559% used)     interest on arrears: 11%     paid so far: 20,298
+
+[600 AD | -1226 den | you:2000 hr | sch 0 art 0 | rep 0] > bye: True
+
+Ended 600 AD. ran out of horizon (600 AD) without reaching the goal
+Saved to poor2.json. Come back with:
+   python3 rome/sim/simulator.py play --session poor2.json
+
+################################################################
+### P. The full 500-year absurd run, ending state and the sack of Rome
+### (games/big2.txt continues games/big1.txt from 350 to 600)
+YEAR 600   (0 years to the horizon at 600)
+============================================================
+
+*** THE RUN HAS ENDED: ran out of horizon (600 AD) without reaching the goal ***
+
+Money: 568,852 den    net +139,916 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 56   (you know how to run 75 more and have not opened them - 'ventures')
+  those shut concerns would clear 34,600 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 114.6 people, 79,474 den/yr in wages
+  household places: 114.6 of 130.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  artisan          88.4
+  chemist          2
+  electrician      2
+  engineer         2
+  machinist        2
+  optician         2
+  scholar          16.2
+  these are continuous full-time-equivalents, not a count of whole people:
+  hiring phases in, training takes years, and attrition (about 3.5%/yr) trims
+  everyone a little rather than dismissing one person at a time. 1.32 artisans
+  is the wage and output of one artisan plus a third of another's.
+
+STANDING: reputation 8   protection 33%   scandal 0.09   eminence 4.6
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 5.4 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 131 built by you, 141 granted for free (272 total)
+
+AHEAD: 91 technologies at risk if a hazard lands, hedged by nothing yet
+  HAPPENING NOW: Recurrent plague, The Lombard invasion
+  2 more hazard(s) known ahead - risk
+
+Goal: point_contact_transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+======================================================================
+THE RUN IS OVER
+======================================================================
+  ran out of horizon (600 AD) without reaching the goal
+
+  ended in 600 AD
+  you built 131 things; this society already had 141
+  568,852 in hand, 114.6 people, reputation 8, 56 concerns running
+  18 attempts failed and had to be begun again
+
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+
+################################################################
+### Q. Determinism check: two identical menu runs of 'step 100' are byte-identical
+###    and read-only commands do not perturb the event stream.
+### (see games/d1.txt d2.txt e1.txt e2.txt)
+diff d1.txt d2.txt:
+  (no differences)
+diff e1.txt e2.txt (event lines only, one prompt-prefix difference):
+6c6
+<   EVENT 150: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 53 denarii
+---
+> [150 AD | 291 den | you:2000 hr | sch 0 art 0 | rep 1] >   EVENT 150: fire in the insula district, where the tenements stand six storeys in wood: it destroyed 53 denarii

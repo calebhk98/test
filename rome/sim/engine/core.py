@@ -405,7 +405,15 @@ class Sim(EconomyMixin, FogMixin, GeographyMixin, LabourMixin,
             generic = self.employees.get("artisan", 0.0)
             specials = sum(v for t, v in self.employees.items()
                            if t not in ("artisan", "scholar") and trade_family(t) == "craft")
-            self.employees["artisan"] = max(0.0, craft - specials)
+            # SPECIALISTS MUST NOT EAT THE GENERALISTS. The generic bucket was
+            # the remainder after every taught trade had taken its share, so
+            # once the top-up kept five specialist trades at two apiece the
+            # artisans were squeezed to nothing - a play tester watched theirs
+            # go 6.0 to 0.03 while scholars filled every place, and since
+            # artisans are what supervise a concern, twenty-two concerns closed
+            # and their net went from +8,010 a year to -3,027. A household of
+            # nothing but specialists cannot keep its own doors open.
+            self.employees["artisan"] = max(craft * 0.25, craft - specials)
             if self.scholars > 0:
                 self.employees["scholar"] = self.scholars
             # REPLACE THE PEOPLE YOU LOSE, trade by trade. Attrition was eating

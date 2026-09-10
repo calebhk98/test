@@ -522,12 +522,22 @@ def _agent_help(s, topic=None):
                 "No employees, no slaves, nobody who owes you anything. Anyone "
                 'who works for you is hired, taught, commissioned or bought. See '
                 '{"cmd":"help","topic":"labour"}.'),
-            "the four you need first": {
+            "the five you need first": {
                 "state": "where you stand",
                 "available": "what you could begin today",
                 "why <id>": "everything known about one thing",
+                "start <id>": "begin it",
                 "step <years>": "let time pass",
             },
+            # See cmd_play's opening screen for why this is not buried in a
+            # topic: a finished concern earns nothing until its doors open, and
+            # a tester left seven of them shut and went bankrupt in year three.
+            "and the one rule that catches everybody": (
+                "Finishing something earns you nothing. A concern earns when "
+                "you 'open' it, and costs its upkeep only then too. "
+                '{"cmd":"ventures"} lists what you know how to run and have '
+                "not opened."),
+            "when you cannot see why you are not getting on": '{"cmd":"stuck"}',
             # Which of the two front ends is reading. `play` types words and
             # `agent` sends JSON, and telling a person at a keyboard to send
             # one JSON object per line - which this did - is telling them to
@@ -1184,6 +1194,28 @@ def _node_explain(s, nodes, k):
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
         "you_have": {"scholars": round(s.effective_scholars(), 1),
                      "artisans": round(s.artisans, 1)},
+        # SAY WHEN THE STAFF IT WANTS IS MORE THAN THIS SOCIETY HAS. The goal
+        # itself needs twenty-five scholars against a ceiling of 6.4, and a
+        # play tester found that ceiling in a refusal message in year 463 of a
+        # 500-year game - the single thing that decided whether their run could
+        # be won, on no screen anywhere.
+        # AGAINST WHAT YOU ACTUALLY HAVE, not against the hiring ceiling alone.
+        # A school and an academy grant scholars outright, on top of anyone you
+        # could hire, so "literacy here will never supply more than 6.4"
+        # printed beside "(you have 210)" - and twice made a play tester think
+        # they were hard-blocked when they were not.
+        "more_scholars_than_this_society_can_supply": (
+            "%s wanted; you have %.1f and literacy here will never let you HIRE "
+            "more than %.1f. Printing, paper, schools and academies raise both."
+            % (n["sch"], s.effective_scholars(), s.literate_capacity("scholar"))
+            if (n["sch"] > s.literate_capacity("scholar")
+                and n["sch"] > s.effective_scholars()) else None),
+        "more_craftsmen_than_your_household_can_hold": (
+            "%s wanted; you have %.1f and could hold %.1f in all. %s"
+            % (n["art"], s.artisans,
+               s.headcount() + max(0.0, s.household_room()), s._room_advice())
+            if (n["art"] > s.headcount() + max(0.0, s.household_room())
+                and n["art"] > s.artisans) else None),
         "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
         "bounty_eligible_by_type": bounty_by_type,
         # NOT CHARGED UNTIL YOU OPEN IT. A tester read the upkeep off `why`,
@@ -1760,6 +1792,10 @@ def render_why(out):
     L.append("STAFF NEEDED: %s scholars, %s artisans   (you have %s, %s)"
              % (_fmt_num(staff.get("scholars")), _fmt_num(staff.get("artisans")),
                 _fmt_num(have.get("scholars")), _fmt_num(have.get("artisans"))))
+    for _k_warn in ("more_scholars_than_this_society_can_supply",
+                    "more_craftsmen_than_your_household_can_hold"):
+        if out.get(_k_warn):
+            L.append(_wrap("  !! " + out[_k_warn], indent="     "))
     lab = out.get("hired_labour") or {}
     if lab:
         L.append("HIRED LABOUR: " + ", ".join("%s %sh" % (t, _fmt_num(h)) for t, h in lab.items()))
@@ -1909,6 +1945,9 @@ def render_stuck(out):
                 L.append(_wrap(r["why"], indent="    "))
             for k, v in sorted((r.get("each_waiting_on") or {}).items()):
                 L.append(_wrap("%s - waiting on %s" % (k, v), indent="    "))
+            if r.get("the_nearest_few"):
+                L.append(_wrap("nearest first: " + ", ".join(r["the_nearest_few"]),
+                               indent="    "))
     hole = out.get("and_you_are_in_a_hole")
     if hole:
         L.append("")
@@ -1966,6 +2005,13 @@ def render_labour(out):
             L.append("your own %ss add %s, so %s hours a year are available to you"
                      % (t.get("trade"), _fmt_num(t.get("hours_your_own_people_add")),
                         _fmt_num(t.get("hours_available_to_you_in_all"))))
+        if t.get("most_this_society_can_ever_supply") is not None:
+            L.append("HEADCOUNT CEILING: %s %ss in total, ever, at any price - "
+                     "you have or are teaching %s"
+                     % (_fmt_num(t["most_this_society_can_ever_supply"]),
+                        t.get("trade"), _fmt_num(t.get("you_have_or_are_teaching"))))
+            L.append(_wrap("what widens it: " + str(t.get("what_widens_it") or ""),
+                           indent="  "))
         if t.get("note"):
             L.append(_wrap(t["note"]))
         return "\n".join(L)
@@ -2038,7 +2084,22 @@ def render_ventures(out):
              % (_fmt_num(free.get("scholars")), _fmt_num(free.get("craftsmen")),
                 "   (one of each of those is you)"
                 if out.get("one_of_each_of_those_is_you") else ""))
+    _hi = out.get("you_have_in_all") or {}
+    _hh = out.get("held_in_all") or {}
+    if _hi:
+        L.append("you have %s scholars and %s craftsmen in all; %s and %s of "
+                 "them are watching a concern"
+                 % (_fmt_num(_hi.get("scholars")), _fmt_num(_hi.get("craftsmen")),
+                    _fmt_num(_hh.get("scholars")), _fmt_num(_hh.get("craftsmen"))))
+    _holders = out.get("and_these_concerns_are_holding_the_rest")
+    if isinstance(_holders, list) and _holders:
+        L.append("")
+        L.append("  %-34s %10s %10s" % ("HELD BY", "SCHOLARS", "CRAFTSMEN"))
+        for r in _holders:
+            L.append("  %-34s %10s %10s"
+                     % (r["id"], _fmt_num(r["scholars"]), _fmt_num(r["craftsmen"])))
     if out.get("these_are_not_interchangeable"):
+        L.append("")
         L.append(_wrap(out["these_are_not_interchangeable"], indent="  "))
     L.append("")
     run = out.get("running")
@@ -3326,6 +3387,24 @@ def _agent_dispatch_inner(s, nodes, cmd):
             reasons.append({"what": "work in hand",
                             "how_many": len(s.active),
                             "each_waiting_on": _waits})
+        # THE ROAD TO THE GOAL, not the tree at large. A play tester with fifty
+        # nodes left and nothing startable was told "you have work in hand,
+        # money to pay for it and people to do it", because two hundred
+        # unrelated things elsewhere in the tree were startable. Nobody is
+        # stuck for want of a bottling shed.
+        _goal = getattr(s, "goal", None)
+        if _goal in nodes and not _fog:
+            _road = closure(nodes, _goal) - s.done
+            _road_open = [k for k in _road if s.start_reason(k)[0]]
+            if _road and not _road_open:
+                _near = sorted(_road, key=lambda k: len(closure(nodes, k) - s.done))
+                reasons.append({
+                    "what": "the road to the goal",
+                    "why": "%d of its nodes are still to build and NONE of them "
+                           "is startable today. The nearest is %s: %s"
+                           % (len(_road), _near[0],
+                              s.start_reason(_near[0])[1]),
+                    "the_nearest_few": _near[:5]})
         if not _startable:
             reasons.append({"what": "nothing you could begin",
                             "why": "everything in front of you is either built, "
@@ -3442,6 +3521,20 @@ def _agent_dispatch_inner(s, nodes, cmd):
                  "a_year_of_one": round(ANNUAL_WAGE.get(t, 375.0) * s.wage_index
                                         * s.price_index * _lpf, 0),
                  "you_employ": round(s.employees.get(t, 0.0), 2)}
+            # THE CEILING, ON THE SCREEN. "This society's literacy will not
+            # supply more than 6.4 scholars in total, ever" gates the goal
+            # itself - which wants twenty-five - and appeared in no screen at
+            # all: a play tester found it in a refusal message in year 463 of a
+            # 500-year game. A wall you can only discover by walking into it is
+            # not a wall, it is a trap.
+            if t in s.LITERATE_TRADES:
+                r["most_this_society_can_ever_supply"] = round(
+                    s.literate_capacity(t), 1)
+                r["you_have_or_are_teaching"] = round(
+                    s._trade_headcount_pending(t), 2)
+                r["what_widens_it"] = ("printing, paper, schools and academies - "
+                                       "they raise how many people here can "
+                                       "read, and this ceiling rises with it")
             if _lpf > 1.005:
                 r["dearer_than_usual_by"] = "%d%%" % ((_lpf - 1.0) * 100)
                 r["because"] = ("you have taken on a large share of the %ss "
@@ -3738,6 +3831,17 @@ def _agent_dispatch_inner(s, nodes, cmd):
                # how every one of these fortunes started; it just has to say
                # that the person is you.
                "one_of_each_of_those_is_you": bool(s.founder_alive),
+               # WHERE THE REST OF THEM ARE. See venture_staff_who_is_watching_what.
+               "and_these_concerns_are_holding_the_rest":
+                   s.venture_staff_who_is_watching_what()[:12] or "none",
+               "held_in_all": {
+                   "scholars": round(s.venture_staff_used()[0], 2),
+                   "craftsmen": round(s.venture_staff_used()[1], 2)},
+               "you_have_in_all": {
+                   "scholars": round(s.effective_scholars(), 2),
+                   "craftsmen": round(s.artisans
+                                      + (s.FOUNDER_IS_WORTH if s.founder_alive
+                                         else 0.0), 2)},
                # SCHOLARS AND CRAFTSMEN ARE NOT INTERCHANGEABLE, and nothing
                # said so. A play tester spent thirty years poor because
                # auto_train had bought them engineers - who count as scholars

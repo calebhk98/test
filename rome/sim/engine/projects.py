@@ -82,6 +82,26 @@ class ProjectsMixin:
         by_size = max(0.0, n["rev"]) / self.VENTURE_HANDS_PER_REVENUE
         return n["sch"] * f, max(n["art"] * f, by_size)
 
+    def venture_staff_who_is_watching_what(self):
+        """Which concerns are holding your people, and how many each holds.
+
+        A play tester spent about seventy in-game years on the endgame's
+        staffing and wrote: "mothballing all 259 running concerns freed zero
+        scholars - about 17 are held by something the game never shows". This
+        is that something, shown. Largest holder first, because that is the one
+        to close.
+        """
+        rows = []
+        for k in sorted(self.operating):
+            if k not in self.nodes:
+                continue
+            a, b = self.venture_hands(k)
+            if a > 0.005 or b > 0.005:
+                rows.append({"id": k, "scholars": round(a, 2),
+                             "craftsmen": round(b, 2)})
+        rows.sort(key=lambda r: -(r["scholars"] + r["craftsmen"]))
+        return rows
+
     def venture_staff_used(self):
         """People of your own tied up supervising what you already have open."""
         # SORTED, for the same reason done_in_order exists: this sums FLOATS
@@ -149,10 +169,16 @@ class ProjectsMixin:
         n = self.nodes[k]
         sch_free, art_free = self.venture_staff_free()
         need_sch, need_art = self.venture_hands(k)
-        if need_sch > sch_free + 1e-9 or need_art > art_free + 1e-9:
-            return False, ("nobody free to keep an eye on it: it needs %.1f "
-                           "scholars and %.1f craftsmen to supervise, and you "
-                           "have %.1f and %.1f not already watching something "
+        # A HUNDREDTH OF A PERSON IS NOBODY. The comparison was exact and the
+        # message rounded to one decimal, so a break tester read "it needs 0.0
+        # craftsmen to supervise, and you have 0.0" - a refusal that
+        # contradicts itself on its own line - and then found that mothballing
+        # two hundred and fifty-nine concerns freed nothing, because every one
+        # of them was holding a rounding error.
+        if need_sch > sch_free + 0.01 or need_art > art_free + 0.01:
+            return False, ("nobody free to keep an eye on it: it needs %.2f "
+                           "scholars and %.2f craftsmen to supervise, and you "
+                           "have %.2f and %.2f not already watching something "
                            "else. Hire, teach, or close something."
                            % (need_sch, need_art, sch_free, art_free))
         fee = self.venture_capex(k)
@@ -169,10 +195,20 @@ class ProjectsMixin:
         if k in _shut and self.year - _shut[k] <= self.STAFF_CLOSURE_GRACE:
             fee *= 0.1
         if pay:
-            if fee > self.capital + self.credit_limit() * 0.5:
-                return False, ("opening it costs %s denarii in stock and premises "
-                               "and you have %s"
-                               % ("{:,.0f}".format(fee), "{:,.0f}".format(self.capital)))
+            if fee > self.spending_power("buy"):
+                # SAY WHAT WAS COUNTED. The test allows cash plus half the
+                # credit line and the refusal quoted the cash alone, so a play
+                # tester at -1,608 with a 3,684 line 44% used read "opening it
+                # costs 40 denarii and you have -1,608" and left seven finished
+                # concerns worth 1,713 a year shut, believing they could not
+                # spend forty denarii they had already been allowed to borrow
+                # sixteen hundred of.
+                return False, ("opening it costs %s denarii in stock and premises, "
+                               "and between %s in cash and what anyone will "
+                               "advance against a purchase you can raise %s"
+                               % ("{:,.0f}".format(fee),
+                                  "{:,.0f}".format(self.capital),
+                                  "{:,.0f}".format(self.spending_power("buy"))))
             self.capital -= fee
         self.operating.add(k)
         self.mothballed.discard(k)

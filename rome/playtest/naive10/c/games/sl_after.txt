@@ -1,0 +1,81 @@
+YEAR 103   (497 years to the horizon at 600)
+============================================================
+
+Money: 779,025 den    net -12,408 den/yr (after 0 den into projects this year)
+You: alive (you do not age), 2,000 founder-hours free this year
+
+RUNNING: nothing
+
+RUNNING AS CONCERNS: 0   (you know how to run 2 more and have not opened them - 'ventures')
+  those shut concerns would clear 1,450 den/yr between them, and earn nothing while they are shut
+
+EMPLOY: 2.7 people, 674 den/yr in wages   (and 2 in your household, owned or freed)
+  household places: 4.7 of 6.0 used - what you can feed, house and oversee. 'labour' says what raises it.
+  artisan          2.7
+  these are continuous full-time-equivalents, not a count of whole people:
+  hiring phases in, training takes years, and attrition (about 3.5%/yr) trims
+  everyone a little rather than dismissing one person at a time. 1.32 artisans
+  is the wage and output of one artisan plus a third of another's.
+
+STANDING: reputation 9.4   protection 18%   scandal 0   eminence 1.4
+  SCANDAL is dangerous above 25 (0% chance of being denounced this year, which ends the run; 'bribe' buys it down and it falls a tenth a year on its own)
+  EMINENCE is dangerous above 26 (settles near 7.2 if nothing changes; 0% chance something lands this year, of which 0% would end the run)
+  technologies: 2 built by you, 139 granted for free (141 total)
+
+AHEAD: 1 technologies at risk if a hazard lands, hedged by nothing yet
+  15 more hazard(s) known ahead - risk
+
+Fog of war is on: you see the next step, never the road. 2 of your own built so far.
+Aiming at: Point-contact transistor
+
+more: knowledge_risk -> risk; how_to_grow_staff -> labour; policy -> policy; where_the_money_comes_from -> money; training_pending -> labour; why_you_are_not_getting_on -> stuck
+
+[103 AD | 779025 den | you:2000 hr | sch 0 art 3 | rep 9] > LEDGER
+Capital: 779,025 den     Revenue: 238.8 den/yr
+  from:
+    med_cataract_couching                  170.6
+    med_trepanation                        68.2
+    (these add up to the revenue above)    
+    YOUR PRACTICE: med_cataract_couching, med_trepanation are your own practice,
+    and they pay about a third of what the tree quotes for the trade: the
+    difference between one person in a rented room and an organised concern.
+    That gap does not close with time. Selling your hours for wages takes
+    another bite out of it, because you cannot be in two places.
+Costs:
+  upkeep of what you built       0
+  living and appearances         11,973
+  of which because you are rich  11,685
+  wages                          674
+  mines standing                 0
+  interest on arrears            0
+Net/yr before the work in hand: -12,408     spent on projects last step: 0
+Net/yr after it: -12,408   (this is the figure `state` prints)
+Credit limit: 12,647 (none used)     interest on arrears: 11%     paid so far: 0
+
+[103 AD | 779025 den | you:2000 hr | sch 0 art 3 | rep 9] > LABOUR
+ON YOUR STAFF:
+  artisan               2.7   250 den/yr each
+  people you own          2   held, not paid a wage
+
+HOUSEHOLD PLACES: 4.7 of 6 used, room for 1.3 more
+  to make room: To get more artisans: hire smith 3 or any trade in labour; or
+  commission smith 400 to buy one job instead of employing anybody; buy slaves
+  N then manumit, though they are untrained for three years.
+
+YOU COULD HIRE: artisan, carpenter, engraver, furnaceman, glassblower, labourer, mason, master, merchant, millwright, miner, plumber, potter, sailor, scholar, scribe, smith
+MUST BE TAUGHT: chemist, electrician, engineer, machinist, optician
+
+IN TRAINING:
+  people you bought, learning the work x2, ready 103.0
+
+Total employed: 2.7     annual wage bill: 674 den
+
+A trade that does not exist here cannot be hired at any price; teach one
+with train. Trades are not interchangeable. Buying a job instead of a person
+is commission.
+
+[103 AD | 779025 den | you:2000 hr | sch 0 art 3 | rep 9] > bye: True
+
+Ended 103 AD. stopped
+Saved to sl.json. Come back with:
+   python3 rome/sim/simulator.py play --session sl.json

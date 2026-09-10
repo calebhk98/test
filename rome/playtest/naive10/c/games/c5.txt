@@ -1,0 +1,11 @@
+2
+
+absurd
+
+commission carpenter 200
+commission smith 400
+start units_standards
+state
+step 1
+money
+quit

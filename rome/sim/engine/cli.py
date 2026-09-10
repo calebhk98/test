@@ -404,11 +404,20 @@ def cmd_play(a):
                     "What you have is everything you know."
                     % (s.year, s.capital, money_word(s.civ))))
         print()
-        print(_wrap("Type commands in plain words. The four to start with are "
+        # `open` BELONGS IN THE OPENING. Finishing a project earns you
+        # nothing until you open its doors, auto_open ships off for a player
+        # by design, and this list of what to type first did not mention it -
+        # so a play tester finished seven concerns worth 1,713 a year, left
+        # every one of them shut, and walked into a debt spiral in year three.
+        # The one rule a first-timer must know cannot be the one thing the
+        # first screen leaves out.
+        print(_wrap("Type commands in plain words. The five to start with are "
                     "'state' (where you stand), 'available' (what you could "
                     "begin today), 'why <name>' (what a thing is for and what "
-                    "it costs) and 'step' (let a year pass). 'help' explains "
-                    "the rest; 'quit' leaves."))
+                    "it costs), 'start <name>' (begin it) and 'step' (let a "
+                    "year pass). When something is FINISHED it earns nothing "
+                    "until you 'open' it. 'stuck' says why you are not getting "
+                    "on; 'help' explains the rest; 'quit' leaves."))
         print()
 
     while True:
@@ -863,10 +872,20 @@ def _pick_session_filename(civ_id):
     # And it counts UP FROM THE HIGHEST rather than filling the first gap, so
     # moving a save out of the directory does not turn its number into a slot
     # some later game takes.
+    # IN A DIRECTORY OF ITS OWN. Eighty-nine save files had accumulated in the
+    # repository root beside the source, and a play tester said so: "saves land
+    # in the repo root, next to eighty others". A game that writes a file after
+    # every command has to put them somewhere a person can find and delete.
+    d = os.path.join(os.path.expanduser("~"), ".rome-saves")
+    try:
+        os.makedirs(d, exist_ok=True)
+    except OSError:
+        d = "."
+    civ_id = os.path.join(d, civ_id)
     highest = 1
     prefix = civ_id + "_"
     try:
-        for nm in os.listdir("."):
+        for nm in (os.path.join(d, x) for x in os.listdir(d)):
             if nm.startswith(prefix) and nm.endswith(".json"):
                 try:
                     highest = max(highest, int(nm[len(prefix):-5]))

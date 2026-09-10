@@ -1026,9 +1026,22 @@ check("the menu says it is starting, not offering a command to run later",
       "Starting now" in _pm.stdout, _pm.stdout[-500:])
 check("the menu names a resumable --session file ending in .json",
       "--session" in _pm.stdout and ".json" in _pm.stdout, _pm.stdout[-500:])
-_saved = [f for f in os.listdir(_menu_dir) if f.endswith(".json")]
+# Saves live in ~/.rome-saves now, not beside the source: eighty-nine of them
+# had piled up in the repository root and a play tester said so.
+_save_dir = os.path.join(os.path.expanduser("~"), ".rome-saves")
+check("saves are written somewhere of their own, not beside the source",
+      os.path.isdir(_save_dir)
+      and not [f for f in os.listdir(_menu_dir) if f.endswith(".json")],
+      _save_dir)
+_saved = ([f for f in os.listdir(_save_dir) if f.endswith(".json")]
+          if os.path.isdir(_save_dir) else [])
+# The one this run chose, by name out of the banner, rather than "exactly one
+# file in the directory" - the save directory is the user's and keeps every
+# game they have played.
+_named = [ln.split("--session")[1].strip()
+          for ln in _pm.stdout.splitlines() if "--session" in ln]
 check("the menu's chosen session file actually exists on disk after playing",
-      len(_saved) == 1, os.listdir(_menu_dir))
+      _named and os.path.exists(_named[0]), (_named[:1], len(_saved)))
 check("the menu drops straight into a playable session, no extra prompt",
       _pm.returncode == 0 and "YEAR" in _pm.stdout and "RUNNING" in _pm.stdout,
       _pm.stdout[-300:])
@@ -4010,6 +4023,34 @@ check("hire, buy and train are all bounded by the same one number",
       and s_ag.train("machinist", 1)[0] is False
       and s_ag.buy_slaves(1) <= 0,
       (_r, s_ag.household_room()))
+
+
+# --- BREAK: "this society's literacy will not supply more than 6.4 scholars
+# in total, ever" gates the GOAL, which wants twenty-five, and appeared in no
+# screen at all: a play tester found it in a refusal message in year 463 of a
+# 500-year game. The single thing that decided whether their run could be won.
+_rl3, _, _ = proto([{"cmd": "labour", "trade": "scholar"},
+                    {"cmd": "labour", "trade": "smith"},
+                    {"cmd": "why", "id": "point_contact_transistor"}])
+check("a lettered trade shows the ceiling on how many can ever exist here",
+      _rl3[0]["trade"].get("most_this_society_can_ever_supply") is not None,
+      _rl3[0]["trade"].get("most_this_society_can_ever_supply"))
+check("...and says what widens it",
+      "printing" in str(_rl3[0]["trade"].get("what_widens_it")),
+      _rl3[0]["trade"].get("what_widens_it"))
+check("...and a trade needing no letters carries no such ceiling",
+      _rl3[1]["trade"].get("most_this_society_can_ever_supply") is None,
+      _rl3[1]["trade"].get("most_this_society_can_ever_supply"))
+check("and `why` warns when a node wants more scholars than can ever exist",
+      _rl3[2].get("more_scholars_than_this_society_can_supply"),
+      _rl3[2].get("more_scholars_than_this_society_can_supply"))
+check("...and more craftsmen than the household could ever hold",
+      _rl3[2].get("more_craftsmen_than_your_household_can_hold"),
+      _rl3[2].get("more_craftsmen_than_your_household_can_hold"))
+_rl4, _, _ = proto([{"cmd": "why", "id": "horse_collar"}])
+check("...and says nothing of the kind about a node you could staff",
+      not _rl4[0].get("more_scholars_than_this_society_can_supply"),
+      _rl4[0].get("more_scholars_than_this_society_can_supply"))
 
 
 print("=" * 72)
