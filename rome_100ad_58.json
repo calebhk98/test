@@ -669,8 +669,8 @@
   "__set__": []
  },
  "bounties_paid": 0,
- "bribes_ytd": 0.0,
- "capital": 400.0,
+ "bribes_ytd": 57.32702215786843,
+ "capital": 502.82922784213156,
  "commissioned": {},
  "contract_hours": {},
  "credit_frozen_until": 0,
@@ -1006,7 +1006,7 @@
   "auto_shed": false,
   "auto_train": false
  },
- "protection": 0.0,
+ "protection": 0.3192307692307692,
  "reputation": 5.0,
  "revealed": {
   "__set__": []
@@ -1027,8 +1027,8 @@
   "__set__": []
  },
  "training": [],
- "wage_hours_this_year": null,
- "wages_earned": null,
+ "wage_hours_this_year": 500.0,
+ "wages_earned": 160.15625,
  "wages_paid": 0.0,
  "wages_prepaid": 0.0,
  "year": 100

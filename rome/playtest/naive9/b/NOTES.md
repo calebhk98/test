@@ -108,3 +108,78 @@ three projects (fin_pawnshop at 61% done, scientific_method, units_standards) du
     `sc2_notation_zero` ("Zero as a number", 5 years), `sc2_notation_negative` ("Negative numbers",
     8 years), `sc2_notation_decimal_fraction`, `sc2_notation_positional`. It looks like the same
     knowledge sold to me twice, and I have no way under fog to tell whether they matter.
+
+### Game A ending (Rome, fog on, poor scholar, immortal)
+```
+  the horizon at 600 AD is reached. You built 132 things of your own and did
+  not reach point-contact transistor.
+  THE ROAD TO POINT_CONTACT_TRANSISTOR
+    146 nodes in all; you had 102 of them and 44 were still to build
+    the next steps would have been: charcoal_industrial, gp_laminated_core,
+    gp_glass_metal_seal, mirror_amalgam, blast_furnace, mercury_supply, ...
+```
+The ending screen is genuinely good - "146 nodes in all; you had 102" is exactly the number
+I wanted all game. **But look at that "next steps" list: I had built charcoal_industrial,
+blast_furnace, mercury_supply and gp_glass_metal_seal - sackings destroyed them.**
+
+15. **`why <goal>` is the best tool in the game and nothing tells you it exists.** Late in the run
+    I idly typed `why point_contact_transistor` and got the complete prerequisite list
+    ("missing prerequisites: galena_detector, gp_whisker_forming, prc_lapping_plate,
+    quantum_solidstate_theory, single_crystal, vacuum_tube") *under fog of war*. That is a
+    roadmap, and it works recursively - `why` on each prerequisite gives its prerequisites.
+    I spent 180 game-years reading "MOST RESTS ON THESE" and guessing, when three `why` calls
+    would have given me the spine of the tree. The tutorial line lists `why <name>` as
+    "what a thing is for and what it costs"; it never hints that you can `why` the goal.
+
+16. **Sacking losses are invisible. You find out by tripping over them.** Events say
+    "a site is sacked - 304,663 taken, 32.4 of your people gone, 5 projects back to the
+    beginning" but never *which technologies you lost*. I discovered the losses only when
+    `start interchangeable_parts` answered "missing prerequisites: master_screw" for a thing
+    I had finished 200 years earlier. I then had to re-derive and rebuild a chain of five
+    nodes (refractory_fireclay -> cementation_steel -> master_screw -> prc_dividing_head ->
+    interchangeable_parts), one at a time, each discovered by another refusal. Late game this
+    consumed about 80 years and is why I lost. A "you lost the following: ..." line, or a
+    `lost` command, would turn a frustrating guessing game into a real setback.
+
+17. **`policy auto_mine on` quietly ate 75% of my income and there is no way to see it.**
+    At 366 AD my ledger read:
+      `Revenue: 467,227 den/yr ... mines standing 353,039 ... Net/yr: -61,884`
+    I had never typed `buy mine`. auto_mine had sunk workings on its own. There is no command
+    that lists your mines - `help commands` has `close <material>` but nothing to enumerate
+    them, and `money` shows only the single aggregate line. I found them by typing
+    `close coal`, `close iron`, `close copper`... until the refusals stopped:
+      "closed: the iron workings are closed. You stop paying 258536 a year."
+    Net went from -61,884/yr to +291,156/yr in one command. That is enormous, invisible, and
+    caused by a policy switch whose description is a harmless-sounding "sink a mine when a
+    mineral is holding work up".
+
+18. **"what the market will not absorb  -144,368"** appeared as a line in `money` with no
+    explanation anywhere in `help money` or `help economy`. A negative revenue row worth a
+    third of my income deserves a sentence.
+
+19. **A halted project blames the society when the real cause is my full household.**
+    "HALTED sulfuric_retort: there is nobody here who can do this work (chemist). What you
+    spent is lost" - while `labour` simultaneously said "YOU COULD HIRE: artisan, carpenter,
+    **chemist**, ... MUST BE TAUGHT: none". The truth was that auto_hire had packed all 89
+    household places with artisans so there was no room for a chemist. This cost me the
+    project twice (about 12,000 den and 6 years) before I worked it out. `start` should refuse
+    or warn up front when the required trade is at zero, instead of accepting the project and
+    killing it three years later.
+
+20. **auto_hire fills every household place with the cheapest trade.** Once on, it hires
+    artisans until the household is exactly full, which then blocks hiring the chemists,
+    engineers and machinists that projects actually need. I had to `fire artisan 20` before I
+    could hire five engineers. The policy has no notion of what my running projects require.
+
+21. **Trade caps are announced only on refusal, and only one at a time.**
+    "this society's literacy will not supply more than 5.9 chemists in total, ever, at any
+    price ... Raise literacy_general or literacy_elite -- printing, schools and libraries do".
+    I then built `school_founded` AND `printing_press` (which the event log confirmed
+    "changes the society: literacy_elite, literacy_general") and the cap was still exactly 5.9
+    chemists. Either the cap does move and far too slowly to notice, or the advice is wrong;
+    from inside the game it looks wrong.
+    `labour` should show, for every trade, "you have N, this society can supply M".
+
+22. Batch/ordering friction: `hire chemist 6` when only 5.9 are available refuses **entirely**
+    rather than hiring what it can. Same for `hire artisan 3` with 2.4 places
+    ("2 is the most whole people you can take" - so hire 2, then).

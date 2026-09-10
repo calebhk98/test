@@ -44,8 +44,12 @@ class LabourMixin:
     # wider literacy_general pool of anyone who can read at all. `merchant` is
     # left out on purpose: an agent working on commission is not, in this
     # period, chiefly a reader.
+    # electrician was simply left out, and a play tester found the hole: their
+    # machinists stopped dead at the literacy ceiling while `train electrician
+    # 20` succeeded and handed them twenty-seven. It is a taught trade that
+    # reads drawings, exactly like the other four.
     LITERATE_TRADES = frozenset({"scholar", "scribe", "engineer", "chemist",
-                                 "machinist", "optician"})
+                                 "machinist", "optician", "electrician"})
     # The literacy this file's trade shares and staff ceilings were already
     # tuned against, before literacy was read anywhere: Rome's own numbers
     # (rome_100ad.json), because every other constant in this economy - price
@@ -66,7 +70,18 @@ class LabourMixin:
             lit, ref = self.civ.get("literacy_elite", 0.0), self.LITERACY_REFERENCE_ELITE
         else:
             lit, ref = self.civ.get("literacy_general", 0.0), self.LITERACY_REFERENCE_GENERAL
-        return max(0.0, min(1.0, float(lit) / ref))
+        # NOT CLAMPED AT ONE. Rome starts AT the reference, so this returned
+        # exactly 1.0 for Rome for ever: printing, movable type, a school and
+        # three academies raised literacy_general from 0.12 to 0.27 and moved
+        # the specialist ceiling not at all. A play tester watched theirs sit
+        # at "5.9 in total, ever, at any price" through all of it and called
+        # the whole mechanism dead. It is the one thing the argument for
+        # printing rests on: a society that reads more can staff more.
+        #
+        # Bounded at four, because a lettered pool cannot outgrow the town
+        # without the town growing, and because the tech effects that feed it
+        # are deliberately small.
+        return max(0.0, min(4.0, float(lit) / ref))
 
     def literate_capacity(self, trade):
         """The most people this society's literacy will EVER let you have in

@@ -3479,6 +3479,35 @@ check("...and says plainly when there was nothing left to take",
       "already at nothing" in _m2, _m2)
 
 
+# --- BREAK: "this society's literacy will not supply more than 5.9 scholars
+# in total, ever, at any price" - and it never moved, through paper, printing,
+# a university and three academies. The factor was clamped at 1.0 and Rome
+# starts AT the reference, so for Rome the whole mechanism was inert.
+s_lit = sim()
+_cap0 = s_lit.literate_capacity("machinist")
+for _k in ("rag_paper", "printing_press", "if_movable_type", "school_founded",
+           "academy_network", "corpus_written"):
+    if _k in NODES:
+        s_lit.apply_tech_effects(_k)
+_cap1 = s_lit.literate_capacity("machinist")
+check("teaching a society to read raises what it can staff",
+      _cap1 > _cap0 * 1.5, (_cap0, _cap1))
+check("...but not without bound",
+      _cap1 < _cap0 * 5, (_cap0, _cap1))
+check("a trade that needs no letters is not capped by literacy at all",
+      s_lit.literate_capacity("smith") == float("inf"),
+      s_lit.literate_capacity("smith"))
+# --- BREAK: `train electrician 20` gave 27 while machinists stopped at 5.9.
+check("every taught trade is bounded by literacy, electrician included",
+      not (set(S.Sim.LITERATE_TRADES) ^ set(S.Sim.LITERATE_TRADES))
+      and all(t in S.Sim.LITERATE_TRADES for t in S.TRADES_ABSENT),
+      sorted(set(S.TRADES_ABSENT) - set(S.Sim.LITERATE_TRADES)))
+s_el = sim(capital=2000000.0)
+_ok_el, _why_el = s_el.train("electrician", 20)
+check("...so twenty electricians cannot be taught into a society of twelve",
+      not _ok_el and "literacy" in str(_why_el), _why_el)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
