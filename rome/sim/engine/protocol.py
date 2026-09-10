@@ -644,6 +644,516 @@ def _node_explain(s, nodes, k):
     return out
 
 
+# ----------------------------------------------------------------------------
+# A rendering for a person, alongside the JSON one, not instead of it.
+#
+# Two testers asked for this in almost the same words: the JSON is precise
+# and correct and a wall to read. Everything below turns an outgoing reply
+# dict - the exact same dict that gets json.dumps()'d to stdout - into text a
+# person can scan. It NEVER changes what goes to stdout; see cli.py's --pretty
+# handling, which prints this to stderr, alongside the unmodified JSON line,
+# only when asked. The renderer reads the reply dict only, never the live Sim,
+# so what a person reads and what a script reads are guaranteed to agree -
+# there is only one source of truth for any number in here.
+# ----------------------------------------------------------------------------
+
+
+def _fmt_num(v):
+    """A number the way a person reads it: thousands separated, and no more
+    precision than is useful. 12345.6 -> "12,346". 4.0 -> "4". 0.375 -> "0.38".
+
+    Whole-feeling numbers (anything 1 and up) carry no decimal at all once
+    they are the size a player actually deals in; a tester said reading raw
+    JSON here "made me double-check arithmetic", which a rounded, comma'd
+    figure does not invite.
+    """
+    if v is None:
+        return "-"
+    if isinstance(v, bool):
+        return str(v)
+    if isinstance(v, (int, float)):
+        f = float(v)
+        if f != f or f in (float("inf"), float("-inf")):
+            return str(v)
+        if f == 0:
+            return "0"
+        if abs(f) >= 1000:
+            return "{:,.0f}".format(f)
+        if abs(f) >= 1:
+            return "{:,.0f}".format(f) if float(f).is_integer() else "{:,.1f}".format(f)
+        return "{:,.2f}".format(f)
+    return str(v)
+
+
+def _pct(v):
+    """A 0..1 fraction as a percentage a person reads at a glance."""
+    if v is None:
+        return "-"
+    try:
+        return "%.0f%%" % (100.0 * float(v))
+    except (TypeError, ValueError):
+        return str(v)
+
+
+def _wrap(text, width=76, indent=""):
+    if not text:
+        return ""
+    words, lines, cur = str(text).split(), [], ""
+    for w in words:
+        if len(cur) + len(w) + 1 > width:
+            lines.append(indent + cur)
+            cur = w
+        else:
+            cur = (cur + " " + w).strip()
+    if cur:
+        lines.append(indent + cur)
+    return "\n".join(lines)
+
+
+def render_error(resp):
+    return "REFUSED: %s" % resp.get("error", "unknown error")
+
+
+def render_state(out):
+    """A position, not a dict: year, money, what is running and what each
+    thing is waiting on, who you employ, what is about to happen to you.
+
+    Works on both the short state() and state(full=true), and on step()'s
+    reply, which is this same shape with completed/events stitched on front.
+    """
+    L = []
+    year = out.get("year")
+    L.append("=" * 60)
+    L.append(("YEAR %s" % year) if year is not None else "STATE")
+    L.append("=" * 60)
+    if out.get("ended"):
+        L.append("")
+        L.append("*** THE RUN HAS ENDED: %s ***" % out.get("end_reason"))
+
+    L.append("")
+    net_after = out.get("net_after_project_spend")
+    net_plain = out.get("net_per_year")
+    spend = out.get("project_spend_this_year")
+    money_line = "Money: %s den" % _fmt_num(out.get("capital"))
+    if net_after is not None:
+        money_line += "    net %s%s den/yr (after %s den into projects this year)" % (
+            "+" if net_after >= 0 else "", _fmt_num(net_after), _fmt_num(spend or 0))
+    elif net_plain is not None:
+        money_line += "    standing net %s%s den/yr (does not count project spend)" % (
+            "+" if net_plain >= 0 else "", _fmt_num(net_plain))
+    L.append(money_line)
+    if out.get("in_bondage_for_debt"):
+        L.append("IN DEBT BONDAGE: %s years left owing %s den"
+                 % (_fmt_num(out["in_bondage_for_debt"]), _fmt_num(out.get("debt_still_to_work_off"))))
+
+    L.append("You: %s, %s founder-hours free this year"
+             % ("alive" if out.get("founder_alive") else "DEAD",
+                _fmt_num(out.get("founder_hours_available"))))
+
+    active = out.get("active") or {}
+    L.append("")
+    L.append("RUNNING (%d):" % len(active) if active else "RUNNING: nothing")
+    for k, st in sorted(active.items(), key=lambda kv: kv[0]):
+        total = st.get("founder_hours_total") or 0
+        left = st.get("founder_hours_left") or 0
+        pct = 100.0 * (total - left) / total if total else 100.0
+        L.append("  %-28s %3.0f%% of your hours spent, %s den still owed - waiting on %s"
+                 % ((st.get("name") or k)[:28], pct, _fmt_num(st.get("still_to_pay")),
+                    st.get("waiting_on") or "-"))
+
+    employees = out.get("employees") or {}
+    L.append("")
+    L.append("EMPLOY: %s people, %s den/yr in wages"
+             % (_fmt_num(out.get("employees_total")), _fmt_num(out.get("annual_wage_bill"))))
+    for t, v in sorted(employees.items()):
+        L.append("  %-16s %s" % (t, _fmt_num(v)))
+    if not employees:
+        L.append("  nobody")
+    if out.get("staff_are_fractional_because"):
+        L.append(_wrap(out["staff_are_fractional_because"], indent="  "))
+
+    L.append("")
+    L.append("STANDING: reputation %s   suspicion %s   scandal %s   eminence %s"
+             % (_fmt_num(out.get("reputation")), _fmt_num(out.get("suspicion")),
+                _fmt_num(out.get("scandal")), _fmt_num(out.get("eminence"))))
+    prom = out.get("prominence") or {}
+    if prom:
+        L.append("  dangerous above %s (settles near %s if nothing changes; %s chance of ruin this year)"
+                 % (_fmt_num(prom.get("dangerous_above")),
+                    _fmt_num(prom.get("settles_at_if_nothing_changes")),
+                    _pct(prom.get("chance_of_ruin_this_year"))))
+    L.append("  technologies: %s built by you, %s granted for free (%s total)"
+             % (_fmt_num(out.get("done_earned")), _fmt_num(out.get("done_granted")),
+                _fmt_num(out.get("done_count"))))
+
+    at_risk = out.get("at_risk")
+    kr = out.get("knowledge_risk")
+    L.append("")
+    if at_risk:
+        L.append("AHEAD: %s technologies at risk if a hazard lands, hedged by %s"
+                 % (_fmt_num(at_risk.get("technologies_you_could_lose")),
+                    at_risk.get("hedged_by") or "nothing yet"))
+        if at_risk.get("happening_now"):
+            L.append("  HAPPENING NOW: %s" % ", ".join(at_risk["happening_now"]))
+        L.append("  %s more hazard(s) known ahead - %s"
+                 % (_fmt_num(at_risk.get("hazards_still_ahead")), at_risk.get("in_full") or ""))
+    elif kr:
+        L.append("AHEAD: %s technologies at risk, %s lost per sacking on average, hedged by %s"
+                 % (_fmt_num(kr.get("technologies_at_risk")),
+                    _fmt_num(kr.get("expected_technologies_lost_per_sacking")),
+                    kr.get("hedged_by") or "nothing yet"))
+        for h in kr.get("known_hazards_ahead") or []:
+            yrs = h.get("years") or [0, 0]
+            tag = "IN PROGRESS" if h.get("in_progress") else "%s-%s" % (yrs[0], yrs[-1])
+            L.append("  [%s] %s" % (tag, h.get("name")))
+
+    if out.get("fog_of_war"):
+        L.append("")
+        L.append("Fog of war is on. No score but what you built: %s of your own so far."
+                 % _fmt_num(out.get("done_earned")))
+    elif out.get("goal"):
+        L.append("")
+        L.append("Goal: %s%s" % (out["goal"],
+                 ("  -- REACHED in %s AD" % out.get("goal_year")) if out.get("goal_reached") else ""))
+
+    completed = out.get("completed")
+    events = out.get("events")
+    if completed or events:
+        head = []
+        for c in completed or []:
+            head.append("  COMPLETED %s: %s" % (c.get("year"), c.get("name")))
+        for e in events or []:
+            head.append("  EVENT %s: %s" % (e.get("year"), e.get("message")))
+        L = head + [""] + L if head else L
+
+    also = out.get("also_available")
+    if also:
+        L.append("")
+        L.append("more: " + "; ".join(also))
+    return "\n".join(L)
+
+
+def _available_row(e):
+    hours = e.get("founder_hours", e.get("your_hours"))
+    years = e.get("calendar_floor_years", e.get("least_years"))
+    risk = e.get("risk", e.get("chance_of_failure"))
+    return "%-32s %-32s %10s %8s %6s %6s" % (
+        (e.get("id") or "")[:32], (e.get("name") or "")[:32],
+        _fmt_num(e.get("cost")), _fmt_num(hours), _fmt_num(years), _pct(risk))
+
+
+def render_available(out):
+    """A scannable table: every column aligned, sorted cheapest-first so the
+    same eye scan works whether you are looking for a bargain or a subject.
+    """
+    L = ["AVAILABLE: %s startable now" % _fmt_num(out.get("count"))]
+    if out.get("showing"):
+        L.append(out["showing"])
+    L.append("")
+    header = "%-32s %-32s %10s %8s %6s %6s" % ("ID", "NAME", "COST", "HOURS", "YEARS", "RISK")
+
+    if "subjects" in out:
+        L.append("%-24s %8s %10s %10s %10s" % ("SUBJECT", "THINGS", "CHEAPEST", "DEAREST", "AFFORD"))
+        for r in out["subjects"]:
+            L.append("%-24s %8s %10s %10s %10s" % (
+                r["subject"][:24], _fmt_num(r["things"]), _fmt_num(r["cheapest"]),
+                _fmt_num(r["dearest"]), _fmt_num(r["you_could_pay_for"])))
+        L.append("")
+        L.append("CHEAPEST SIX RIGHT NOW, sorted by cost:")
+        L.append(header)
+        for e in sorted(out.get("cheapest_six") or [], key=lambda e: e.get("cost", 0)):
+            L.append(_available_row(e))
+        L.append("")
+        for k, v in (out.get("to_see_more") or {}).items():
+            L.append("  %s: %s" % (k, v))
+    elif "available" in out:
+        L.append(header)
+        for e in sorted(out["available"], key=lambda e: e.get("cost", 0)):
+            L.append(_available_row(e))
+        if out.get("more"):
+            L.append("")
+            L.append(out["more"])
+
+    heard = out.get("heard_of_but_cannot_begin")
+    if heard:
+        L.append("")
+        L.append("HEARD OF, CANNOT BEGIN YET:")
+        for h in heard:
+            L.append("  %-28s %s" % (h["id"][:28], h.get("why_not") or ""))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+    return "\n".join(L)
+
+
+def render_why(out):
+    """A page about one thing: what it needs, what it costs, what depends
+    on it, and whether you could start it today.
+    """
+    L = []
+    title = "%s  [%s]" % (out.get("name"), out.get("id"))
+    L.append(title)
+    L.append("=" * min(78, len(title)))
+    bits = []
+    if out.get("tier") is not None:
+        bits.append("tier %s" % out["tier"])
+    if out.get("cat"):
+        bits.append(out["cat"])
+    if out.get("confidence"):
+        bits.append("confidence %s" % out["confidence"])
+    if bits:
+        L.append(", ".join(bits))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+
+    L.append("")
+    cost = out.get("cost") or {}
+    L.append("COST: %s den total  (%s labour + %s materials + %s capital, then x%s your civ, x%s distance, x%s prices)"
+             % (_fmt_num(cost.get("total")), _fmt_num(cost.get("labour")),
+                _fmt_num(cost.get("materials")), _fmt_num(cost.get("capital")),
+                _fmt_num(cost.get("civ_domain_factor")), _fmt_num(cost.get("material_distance_factor")),
+                _fmt_num(cost.get("price_index"))))
+    L.append("YOUR HOURS: %s     CALENDAR FLOOR: %s years     FAILURE RISK: %s"
+             % (_fmt_num(out.get("founder_hours")), _fmt_num(out.get("calendar_floor_years")),
+                _pct(out.get("risk"))))
+    staff, have = out.get("staff_needed") or {}, out.get("you_have") or {}
+    L.append("STAFF NEEDED: %s scholars, %s artisans   (you have %s, %s)"
+             % (_fmt_num(staff.get("scholars")), _fmt_num(staff.get("artisans")),
+                _fmt_num(have.get("scholars")), _fmt_num(have.get("artisans"))))
+    lab = out.get("hired_labour") or {}
+    if lab:
+        L.append("HIRED LABOUR: " + ", ".join("%s %sh" % (t, _fmt_num(h)) for t, h in lab.items()))
+    mat = out.get("materials") or {}
+    if mat:
+        L.append("MATERIALS: " + ", ".join("%s %s" % (m, _fmt_num(q)) for m, q in mat.items()))
+    if out.get("upkeep") or out.get("revenue"):
+        L.append("UPKEEP: %s den/yr     REVENUE: %s den/yr"
+                 % (_fmt_num(out.get("upkeep")), _fmt_num(out.get("revenue"))))
+
+    L.append("")
+    status = ("DONE" if out.get("done") else
+              "ACTIVE" if out.get("active") else
+              "CAN START NOW" if out.get("can_start_now") else "BLOCKED")
+    L.append("STATUS: %s" % status)
+    if out.get("start_blocked_reason"):
+        # start_blocked_reason is already the full, human-authored sentence -
+        # when it is naming missing prerequisites (the common case) it says
+        # so itself, and a second "MISSING PREREQUISITES: ..." line straight
+        # after it was the same list twice, once wrapped in a sentence and
+        # once bare. Show the sentence; it is the more complete of the two.
+        L.append(_wrap(out["start_blocked_reason"], indent="  "))
+    else:
+        missing = out.get("missing_prerequisites")
+        direct = out.get("direct_prerequisites")
+        if missing:
+            L.append("MISSING PREREQUISITES: " + ", ".join(missing))
+        elif direct:
+            L.append("PREREQUISITES (all met): " + ", ".join(direct))
+        else:
+            L.append("PREREQUISITES: none, you can start this on arrival")
+
+    if out.get("chain_size") is not None:
+        L.append("")
+        L.append("FULL CHAIN BEHIND IT: %s nodes, %s of your hours, %s den, %s-year serial floor"
+                 % (_fmt_num(out["chain_size"]), _fmt_num(out.get("chain_founder_hours")),
+                    _fmt_num(out.get("chain_cost")), _fmt_num(out.get("critical_path_years"))))
+
+    unlocks = out.get("unlocks")
+    if unlocks:
+        L.append("")
+        L.append("DIRECTLY UNLOCKS: " + ", ".join(unlocks))
+    dc = out.get("downstream_count")
+    if dc is not None:
+        L.append("TOTAL DOWNSTREAM: %s thing(s) depend on this%s"
+                 % (_fmt_num(dc), " -- INCLUDING THE GOAL" if out.get("on_goal_path") else ""))
+    elif out.get("how_much_rests_on_this"):
+        L.append("HOW MUCH RESTS ON THIS: %s" % out["how_much_rests_on_this"])
+
+    if out.get("bounty_eligible_by_type"):
+        L.append("")
+        L.append("BOUNTY: yes, could be posted as a public prize")
+    if out.get("trades_that_do_not_exist_here"):
+        L.append("")
+        L.append(_wrap(out.get("hired_labour_means") or ""))
+        L.append("TRADES NOT YET TAUGHT HERE: " + ", ".join(out["trades_that_do_not_exist_here"]))
+    if out.get("staff_needed_means"):
+        L.append(_wrap(out["staff_needed_means"]))
+    return "\n".join(L)
+
+
+def render_step(out):
+    # step()'s reply is completed/events stitched onto a full state() reply;
+    # render_state already knows how to read completed/events off the front.
+    return render_state(out)
+
+
+def render_money(out):
+    L = ["LEDGER"]
+    L.append("Capital: %s den     Revenue: %s den/yr" % (_fmt_num(out.get("capital")), _fmt_num(out.get("revenue"))))
+    src = out.get("where_the_money_comes_from") or {}
+    if src:
+        L.append("  from:")
+        for k, v in sorted(src.items(), key=lambda kv: -(kv[1] if isinstance(kv[1], (int, float)) else 0)):
+            L.append("    %-28s %s" % (k, _fmt_num(v)))
+    costs = out.get("what_it_costs_you") or {}
+    if costs:
+        L.append("Costs:")
+        for k, v in costs.items():
+            L.append("  %-30s %s" % (k.replace("_", " "), _fmt_num(v)))
+    L.append("Net/yr: %s     spent on projects last step: %s"
+             % (_fmt_num(out.get("net_per_year")), _fmt_num(out.get("spent_on_projects_last_year"))))
+    L.append("Credit limit: %s     interest on arrears: %s     paid so far: %s"
+             % (_fmt_num(out.get("credit_limit")), _pct(out.get("interest_rate_on_arrears")),
+                _fmt_num(out.get("interest_paid_in_total"))))
+    if out.get("still_owed_on_work_in_hand"):
+        L.append("Still owed on work in hand: %s" % _fmt_num(out["still_owed_on_work_in_hand"]))
+    return "\n".join(L)
+
+
+def render_labour(out):
+    if isinstance(out.get("trade"), dict):
+        t = out["trade"]
+        L = ["TRADE: %s (%s)" % (t.get("trade"), t.get("kind"))]
+        L.append("exists here: %s" % t.get("exists_here"))
+        L.append("a year of one: %s den     wage: %s den/hr" % (_fmt_num(t.get("a_year_of_one")), _fmt_num(t.get("wage_per_hour"))))
+        L.append("you employ: %s     market can supply: %s hours" % (_fmt_num(t.get("you_employ")), _fmt_num(t.get("hours_the_market_can_supply"))))
+        if t.get("note"):
+            L.append(_wrap(t["note"]))
+        return "\n".join(L)
+    L = ["LABOUR", "ON YOUR STAFF:"]
+    staff = out.get("on_your_staff")
+    if isinstance(staff, list) and staff:
+        for r in staff:
+            L.append("  %-16s %8s   %s den/yr each" % (r["trade"], _fmt_num(r["you_employ"]), _fmt_num(r["a_year_of_one"])))
+    else:
+        L.append("  nobody")
+    L.append("")
+    L.append("YOU COULD HIRE: " + (", ".join(out.get("you_could_hire_here") or []) or "nobody new"))
+    L.append("MUST BE TAUGHT: " + (", ".join(out.get("do_not_exist_here") or []) or "none"))
+    training = out.get("in_training")
+    if training:
+        L.append("")
+        L.append("IN TRAINING:")
+        for r in training:
+            L.append("  %s x%s, ready %s" % (r.get("trade"), _fmt_num(r.get("people")), r.get("ready_year")))
+    L.append("")
+    L.append("Total employed: %s     annual wage bill: %s den"
+             % (_fmt_num(out.get("you_employ_in_total")), _fmt_num(out.get("annual_wage_bill"))))
+    if out.get("note"):
+        L.append("")
+        L.append(_wrap(out["note"]))
+    return "\n".join(L)
+
+
+def render_risk(out):
+    kr = out.get("knowledge_risk") or out
+    L = ["KNOWLEDGE AT RISK"]
+    L.append("technologies at risk: %s     chance lost if a site is sacked: %s     fraction lost when it happens: %s"
+             % (_fmt_num(kr.get("technologies_at_risk")), _pct(kr.get("loss_chance_if_a_site_is_sacked")),
+                _pct(kr.get("fraction_lost_when_it_happens"))))
+    L.append("hedge: %s" % (kr.get("hedged_by") or "none yet"))
+    if kr.get("note"):
+        L.append(_wrap(kr["note"]))
+    L.append("")
+    for h in kr.get("known_hazards_ahead") or []:
+        yrs = h.get("years") or [0, 0]
+        tag = "IN PROGRESS" if h.get("in_progress") else "%s-%s" % (yrs[0], yrs[-1])
+        L.append("[%s] %s" % (tag, h.get("name")))
+        if h.get("note"):
+            L.append(_wrap(h["note"], indent="  "))
+        for kind, advice in (h.get("what_you_can_do") or {}).items():
+            L.append(_advice_line(kind, advice))
+        for kind in ("sack_chance", "staff_loss"):
+            after = h.get("%s_after_what_you_have_built" % kind)
+            if after is not None:
+                L.append("  %s after what you have built: %s" % (kind.replace("_", " "), _pct(after)))
+    return "\n".join(L)
+
+
+def _advice_line(kind, advice, indent="  "):
+    """One hazard's exposure, in a sentence rather than a bare dict repr -
+    playing this through a real run, {'you_currently_take': 1.0, 'because_of':
+    [], 'what_would_help': '...'} printed as literal Python was the single
+    worst line in the whole rendering.
+    """
+    if not isinstance(advice, dict):
+        return "%s%s: %s" % (indent, kind.replace("_", " "), advice)
+    take = advice.get("you_currently_take")
+    because = advice.get("because_of") or []
+    line = "%s%s: you take %s of it" % (indent, kind.replace("_", " "), _pct(take))
+    if because:
+        line += " (softened by %s)" % ", ".join(because)
+    help_ = advice.get("what_would_help")
+    if help_:
+        line += "\n%s  what would help: %s" % (indent, help_)
+    return line
+
+
+def render_generic(resp, indent=""):
+    """Every other reply: a plain key: value dump, numbers made readable.
+
+    Nothing here needs a bespoke renderer to be worth reading - hire, buy,
+    quote and the rest are already a handful of fields - so this is the
+    fallback for all of them rather than one function apiece.
+    """
+    L = []
+    for k, v in resp.items():
+        if k == "ok":
+            continue
+        label = k.replace("_", " ")
+        if isinstance(v, dict):
+            if v:
+                L.append("%s%s:" % (indent, label))
+                L.append(render_generic(v, indent + "  "))
+            else:
+                L.append("%s%s: (none)" % (indent, label))
+        elif isinstance(v, list):
+            if not v:
+                L.append("%s%s: (none)" % (indent, label))
+            elif all(isinstance(x, (str, int, float)) and not isinstance(x, bool) for x in v):
+                L.append("%s%s: %s" % (indent, label, ", ".join(_fmt_num(x) if isinstance(x, (int, float)) else str(x) for x in v)))
+            else:
+                L.append("%s%s:" % (indent, label))
+                for item in v:
+                    if isinstance(item, dict):
+                        L.append(indent + "  - " + ", ".join("%s=%s" % (kk, vv) for kk, vv in item.items()))
+                    else:
+                        L.append("%s  - %s" % (indent, item))
+        elif isinstance(v, (int, float)) and not isinstance(v, bool):
+            L.append("%s%s: %s" % (indent, label, _fmt_num(v)))
+        else:
+            L.append("%s%s: %s" % (indent, label, v))
+    return "\n".join(L)
+
+
+_RENDERERS = {
+    "state": render_state, "step": render_step, "available": render_available,
+    "why": render_why, "money": render_money, "ledger": render_money,
+    "accounts": render_money, "labour": render_labour, "risk": render_risk,
+    "hazards": render_risk,
+}
+
+
+def render_pretty(op, resp):
+    """The human rendering of one reply. Never touches stdout or the JSON
+    itself - see cli.py, which prints this to stderr alongside the unchanged
+    JSON line, only when --pretty is on.
+
+    Rendering is best-effort ON PURPOSE: a bug in a formatter must cost the
+    formatting, never the session. The JSON already went to stdout by the
+    time this is called, so the worst this function can do is print an
+    apology instead of a pretty table.
+    """
+    try:
+        if isinstance(resp, dict) and resp.get("ok") is False:
+            return render_error(resp)
+        fn = _RENDERERS.get((op or "").strip().lower(), render_generic)
+        return fn(resp)
+    except Exception as e:
+        return "(could not render a readable view of this reply: %s: %s)" % (type(e).__name__, e)
+
+
 SAVE_SUFFIXES = (".json", ".save")
 
 
@@ -1290,8 +1800,106 @@ def save_state(s, path):
     return path
 
 
+# Required to even consider a file a save from this game. Not all of
+# SAVE_FIELDS: most of it is optional (fields that did not exist yet when an
+# older save was written are just skipped, same as always), but a file
+# missing any of these is not a save, it is some other JSON document.
+REQUIRED_SAVE_FIELDS = ("year", "capital", "done", "active", "_civ", "_version")
+
+# Fields that hold a SET of node ids (see save_state's {"__set__": [...]}
+# encoding). Anything named here is checked against the currently loaded
+# tree, because the tree is data and does get edited: a node can be renamed
+# or removed between when a save was written and when it is read back.
+_SET_FIELDS_OF_NODE_IDS = ("done", "granted", "mothballed", "bountied",
+                           "trades_created", "revealed")
+
+
+def _validate_save(blob, s):
+    """None if `blob` looks like a save this game could have produced and can
+    be loaded into `s` as it stands right now; otherwise a short, plain
+    sentence saying why not.
+
+    `load` used to accept any JSON object at all: a typo'd filename, an
+    unrelated file, a save from a different civilisation, or a save that
+    refers to a node a later edit to the tech tree renamed or removed. Every
+    one of those went straight into setattr() - which either corrupted the
+    running game half-applied (fields earlier in SAVE_FIELDS take, the rest
+    do not, because the loop does not stop for a bad value) or surfaced as a
+    bare Python exception. This runs to completion BEFORE a single attribute
+    of `s` is touched, so a bad file costs exactly one clear sentence and
+    nothing else about the running game changes.
+    """
+    if not isinstance(blob, dict):
+        return ("this is not a save from this game: expected a JSON object, "
+                "got %s" % type(blob).__name__)
+    missing = [f for f in REQUIRED_SAVE_FIELDS if f not in blob]
+    if missing:
+        return ("this is not a save from this game: missing %s. A save this "
+                "game writes always has all of: %s"
+                % (", ".join(missing), ", ".join(REQUIRED_SAVE_FIELDS)))
+    if not isinstance(blob.get("_version"), int):
+        return "this save is corrupt: '_version' should be a whole number"
+    for f in ("year", "capital"):
+        v = blob.get(f)
+        if isinstance(v, bool) or not isinstance(v, (int, float)):
+            return "this save is corrupt: '%s' should be a number, got %r" % (f, v)
+
+    civ_id = blob.get("_civ")
+    have_civ = s.civ.get("id")
+    if civ_id != have_civ:
+        return ("this save is from a different civilisation (%r); this game "
+                "is running %r. Start the agent with --civ %s to load it."
+                % (civ_id, have_civ, civ_id))
+
+    active = blob.get("active")
+    if not isinstance(active, dict):
+        return "this save is corrupt: 'active' should be an object of id -> progress"
+    for k, v in active.items():
+        if not isinstance(k, str) or not isinstance(v, dict):
+            return "this save is corrupt: active[%r] is not a valid entry" % (k,)
+        for f in ("ph_left", "spent"):
+            if f not in v or isinstance(v[f], bool) or not isinstance(v[f], (int, float)):
+                return ("this save is corrupt: active[%r] is missing a numeric "
+                         "'%s'" % (k, f))
+
+    done = blob.get("done")
+    if not (isinstance(done, dict) and isinstance(done.get("__set__"), list)):
+        return "this save is corrupt: 'done' should be a set of ids"
+
+    # Every node id the save refers to must still exist in the tree we have
+    # loaded right now.
+    unknown = set()
+    for f in _SET_FIELDS_OF_NODE_IDS:
+        v = blob.get(f)
+        if v is None:
+            continue
+        ids = v.get("__set__") if isinstance(v, dict) else None
+        if ids is None or not all(isinstance(x, str) for x in ids):
+            return "this save is corrupt: '%s' should be a set of id strings" % f
+        unknown |= {x for x in ids if x not in s.nodes}
+    unknown |= {k for k in active if k not in s.nodes}
+    if unknown:
+        sample = ", ".join(sorted(unknown)[:6])
+        more = "" if len(unknown) <= 6 else " and %d more" % (len(unknown) - 6)
+        return ("this save refers to node(s) the current tech tree does not "
+                "have: %s%s. The tree has changed since this was saved; it "
+                "cannot be loaded against this version of the game."
+                % (sample, more))
+    return None
+
+
 def load_state(s, path):
+    """Read a save from `path` and apply it to `s`, or raise ValueError with
+    a clear reason and leave `s` completely untouched.
+
+    Validation (see _validate_save) always runs to completion first; nothing
+    below it can execute against a file that failed. A half-loaded game is
+    worse than a refused one.
+    """
     blob = json.load(open(path))
+    bad = _validate_save(blob, s)
+    if bad:
+        raise ValueError(bad)
     for f in SAVE_FIELDS:
         if f not in blob:
             continue

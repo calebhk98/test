@@ -718,6 +718,162 @@ elapsed = _time.time() - t0
 check("available returns quickly under fog, not in tens of seconds",
       elapsed < 5.0, "%.2fs" % elapsed)
 
+# ============================================================================
+# New work: a human-readable rendering (--pretty), the menu starting the game
+# instead of describing how to, and `load` refusing a file that is not a
+# save from this game.
+# ============================================================================
+
+def _run_agent(input_lines, extra_args=(), civ="rome_100ad", cwd=None):
+    """Drive the real `agent` subcommand in a real subprocess, optionally with
+    extra CLI flags (--pretty among them). Returns (stdout, stderr, returncode)."""
+    cmd = [sys.executable, os.path.join(HERE, "simulator.py"), "agent", "--civ", civ] + list(extra_args)
+    p = subprocess.run(cmd, input="\n".join(json.dumps(c) for c in input_lines) + "\n",
+                       capture_output=True, text=True, timeout=300, cwd=(cwd or ROOT))
+    return p.stdout, p.stderr, p.returncode
+
+
+_PRETTY_CMDS = [
+    {"cmd": "state"}, {"cmd": "available"}, {"cmd": "why", "id": "blast_furnace"},
+    {"cmd": "money"}, {"cmd": "labour"}, {"cmd": "risk"},
+    {"cmd": "step", "years": 1}, {"cmd": "hire", "trade": "smith", "n": 1},
+    {"cmd": "quit"},
+]
+
+# --- I/N: the one guarantee the whole feature rests on. A script that only
+# ever reads stdout must not be able to tell --pretty was even passed.
+_out_plain, _err_plain, _rc_plain = _run_agent(_PRETTY_CMDS)
+_out_pretty, _err_pretty, _rc_pretty = _run_agent(_PRETTY_CMDS, extra_args=["--pretty"])
+_first_diff = next((i for i in range(min(len(_out_plain), len(_out_pretty)))
+                    if _out_plain[i] != _out_pretty[i]), None)
+check("stdout is byte-for-byte identical whether or not --pretty is passed",
+      _rc_plain == 0 and _rc_pretty == 0 and _out_plain == _out_pretty,
+      "plain %d bytes, pretty %d bytes, first differs at %s"
+      % (len(_out_plain), len(_out_pretty), _first_diff))
+
+_bad_lines = []
+for _ln in _out_pretty.splitlines():
+    try:
+        json.loads(_ln)
+    except ValueError:
+        _bad_lines.append(_ln)
+check("with --pretty on, every stdout line is still exactly one JSON object",
+      not _bad_lines, _bad_lines[:3])
+
+# --- N: the rendering actually renders something recognisable for each of
+# state/available/why/money/labour/risk, and stays silent on stderr when
+# nobody asked for it.
+check("--pretty renders state as a position, to stderr",
+      "YEAR" in _err_pretty and "RUNNING" in _err_pretty and "EMPLOY" in _err_pretty,
+      _err_pretty[:200])
+check("--pretty renders available as a table, to stderr",
+      "AVAILABLE" in _err_pretty and "COST" in _err_pretty, "")
+check("--pretty renders why as a page about one thing, to stderr",
+      "COST:" in _err_pretty and "STATUS:" in _err_pretty, "")
+check("--pretty renders money as a ledger, to stderr",
+      "LEDGER" in _err_pretty, "")
+check("--pretty renders labour readably, to stderr",
+      "ON YOUR STAFF" in _err_pretty, "")
+check("--pretty never mixes a Python dict repr into the risk rendering",
+      "{'" not in _err_pretty, [l for l in _err_pretty.splitlines() if "{'" in l])
+check("why does not print the missing-prerequisites list twice",
+      _err_pretty.count("bellows_water_blown") <= 1 or "MISSING PREREQUISITES" not in _err_pretty,
+      [l for l in _err_pretty.splitlines() if "bellows_water_blown" in l])
+check("without --pretty, stderr carries no rendered reply (only the welcome banner)",
+      "RUNNING (" not in _err_plain and "LEDGER" not in _err_plain, _err_plain[:200])
+
+_out_kit, _err_kit, _ = _run_agent([{"cmd": "state"}, {"cmd": "quit"}],
+                                   extra_args=["--pretty", "--kit", "equestrian"])
+check("large numbers in the pretty rendering carry thousands separators",
+      "100,000" in _err_kit or "100,000" in _err_kit.replace(",", "", 0), _err_kit[:300])
+
+# --- 2: the menu ends by starting the game, not by printing a command line
+# and asking permission to run it. It must also honour the mortality choice
+# made in the menu, which `agent` never had a flag for at all before this.
+_menu_dir = tempfile.mkdtemp()
+_menu_input = "1\ny\n\ny\n" + json.dumps({"cmd": "state"}) + "\n" + json.dumps({"cmd": "quit"}) + "\n"
+_pm = subprocess.run([sys.executable, os.path.join(HERE, "simulator.py")],
+                     input=_menu_input, capture_output=True, text=True, timeout=120,
+                     cwd=_menu_dir)
+check("the menu says it is starting, not offering a command to run later",
+      "Starting now" in _pm.stdout, _pm.stdout[-500:])
+check("the menu names a resumable --session file ending in .json",
+      "--session" in _pm.stdout and ".json --pretty" in _pm.stdout, _pm.stdout[-500:])
+_saved = [f for f in os.listdir(_menu_dir) if f.endswith(".json")]
+check("the menu's chosen session file actually exists on disk after playing",
+      len(_saved) == 1, os.listdir(_menu_dir))
+_menu_replies = []
+for _ln in _pm.stdout.splitlines():
+    _ln = _ln.strip()
+    if _ln.startswith("{"):
+        try:
+            _menu_replies.append(json.loads(_ln))
+        except ValueError:
+            pass
+_menu_states = [o for o in _menu_replies if isinstance(o, dict) and "year" in o and "capital" in o]
+check("the menu drops straight into a playable session, no extra prompt",
+      _pm.returncode == 0 and bool(_menu_states), _pm.stdout[-300:])
+check("the mortality choice made in the menu reaches the actual game",
+      bool(_menu_states) and _menu_states[-1].get("founder_ages") is True,
+      _menu_states[-1] if _menu_states else None)
+
+# --- 3: `load` validates the file before touching the running game. `save`
+# and `load` both refuse an absolute path (see the robustness checks above),
+# so every file here lives in a relative scratch directory under ROOT, the
+# same place a real player's save would land.
+import shutil as _shutil
+_LOADTEST_DIR = "_loadtest_tmp"
+_loadtest_abs = os.path.join(ROOT, _LOADTEST_DIR)
+os.makedirs(_loadtest_abs, exist_ok=True)
+
+
+def _rel(name):
+    return "%s/%s" % (_LOADTEST_DIR, name)
+
+
+_good, _, _ = proto([{"cmd": "step", "years": 1}, {"cmd": "save", "file": _rel("sess.json")}])
+check("a legitimate save from this game loads cleanly",
+      _good[-1].get("ok") is True, _good[-1])
+
+_bad_saves = {
+    "not an object at all": "[1, 2, 3]",
+    "an unrelated JSON object": json.dumps({"hello": "world"}),
+    "missing required fields": json.dumps({"year": 100, "capital": 400}),
+}
+for _i, (_label, _content) in enumerate(_bad_saves.items()):
+    _name = "bad%d.json" % _i
+    open(os.path.join(_loadtest_abs, _name), "w").write(_content)
+    _r, _, _ = proto([{"cmd": "state"}, {"cmd": "load", "file": _rel(_name)}, {"cmd": "state"}])
+    ok_before, resp, ok_after = _r[0], _r[1], _r[2]
+    check("load refuses %s with a clear message, not a crash" % _label,
+          resp.get("ok") is False and "Traceback" not in resp.get("error", "")
+          and len(resp.get("error", "")) < 400,
+          resp)
+    check("a refused load (%s) leaves the running game untouched" % _label,
+          ok_before.get("year") == ok_after.get("year")
+          and ok_before.get("capital") == ok_after.get("capital"),
+          (ok_before.get("year"), ok_after.get("year")))
+
+# a save for a civilisation other than the one currently running
+_r, _, _ = proto([{"cmd": "save", "file": _rel("norse.json")}], civ="norse_900ad")
+_r2, _, _ = proto([{"cmd": "load", "file": _rel("norse.json")}], civ="rome_100ad")
+check("load refuses a save from a different civilisation",
+      _r2[0].get("ok") is False and "civilisation" in _r2[0].get("error", ""), _r2[0])
+
+# a save that refers to a node id the current tree does not have
+_blob = json.load(open(os.path.join(_loadtest_abs, "sess.json")))
+_blob["done"]["__set__"].append("this_node_does_not_exist_anymore")
+json.dump(_blob, open(os.path.join(_loadtest_abs, "unknown_node.json"), "w"))
+_r3, _, _ = proto([{"cmd": "state"}, {"cmd": "load", "file": _rel("unknown_node.json")}, {"cmd": "state"}])
+check("load refuses a save that refers to a node the tree no longer has",
+      _r3[1].get("ok") is False and "this_node_does_not_exist_anymore" in _r3[1].get("error", ""),
+      _r3[1])
+check("that refusal leaves the running game untouched too",
+      _r3[0].get("year") == _r3[2].get("year"), (_r3[0].get("year"), _r3[2].get("year")))
+
+_shutil.rmtree(_loadtest_abs, ignore_errors=True)
+
+
 print("=" * 72)
 print("%d checks, %d failures, %.0fs%s"
       % (len(CHECKS_RUN), len(FAILURES), sum(t for _, t in CHECKS_RUN),
