@@ -321,6 +321,7 @@ class Sim:
         c = self.cfg
         self.capital = float(c["start_capital"])
         self.done = set()
+        self._done_seq = None
         self.training = []        # [[artisan_capacity, year_it_matures], ...]
         self.granted = set()      # held because the SOCIETY has it, not because you built it
         self.active = {}          # id -> dict(ph_left, years_elapsed, spent)
@@ -473,6 +474,7 @@ class Sim:
         for k in self.civ.get("starting_techs", []):
             if k in self.nodes:
                 self.done.add(k)
+                self._done_changed()
                 self.granted.add(k)
             else:
                 missing.append(k)
@@ -961,11 +963,18 @@ class Sim:
     def apply_tech_effects(self, k):
         """Building something changes what this society is like.
 
-        _TECH_EFFECTS.json was written, committed with a description of what it
-        would do, and never referenced by any code. Printing raised nobody's
-        literacy; the scientific method reduced nobody's fear of the
-        inexplicable. The whole argument for teaching and printing early is that
-        they change people, and the model quietly did not implement it.
+        This is what applies _TECH_EFFECTS.json, and it is called from
+        _complete(). Printing raises literacy; the scientific method reduces the
+        fear of the inexplicable. The whole argument for teaching and printing
+        early is that they change people, and this is where that happens.
+
+        It was once true that the effects table was written, committed with a
+        description of what it would do, and never referenced by any code. That
+        was fixed, and this comment then described the fix in the past tense
+        badly enough that an agent reading the file reported the dead mechanic
+        as a live finding. A comment that states a bug without stating plainly
+        that it is fixed will be read as current, because that is the only
+        sensible way to read it.
         """
         eff = TECH_EFFECTS.get(k)
         if not eff:
@@ -1362,6 +1371,7 @@ class Sim:
                 if (n["tier"] == 0 and n["ph"] == 0 and n["_total_cost"] <= 1
                         and all(p in self.done for p in n["pre"])):
                     self.done.add(k)
+                    self._done_changed()
                     self.granted.add(k)
                     # done_year is set by the callers after construction, so do
                     # not assume it exists yet at grant time.
@@ -1444,6 +1454,7 @@ class Sim:
             if worst is None:
                 break
             self.done.discard(worst)
+            self._done_changed()
             # MOTHBALLED, not merely discarded: this is the plant falling into
             # disrepair, exactly like a deliberate `mothball`, and it must show
             # up the same way - in `state.mothballed`, and NOT back in
@@ -1570,6 +1581,7 @@ class Sim:
                 if self.capital >= -limit:
                     break
                 self.done.discard(k)
+                self._done_changed()
                 self.capital += self.nodes[k]["up"] * 2.0
                 # MOTHBALLED, not merely discarded - see the identical comment
                 # in shed_loss_makers. Without this a work creditors took stood
@@ -1680,6 +1692,10 @@ class Sim:
         return (n["_total_cost"] * self.cost_money_factor() * self.opposition_factor(k)
                 * self.civ_cost_factor(k) * self.material_cost_factor(k))
 
+    def _done_changed(self):
+        """Call after anything adds to or removes from self.done."""
+        self._done_seq = None
+
     def done_in_order(self):
         """Everything you have finished, in a FIXED order.
 
@@ -1696,7 +1712,17 @@ class Sim:
 
         `self.order` is a list, and a list is a list.
         """
-        return [k for k in self.order if k in self.done]
+        # CACHED, because this is O(nodes) and revenue() calls it. Uncached it
+        # was 2.2 seconds of a 3.5 second `can_start` once something else began
+        # calling revenue() thousands of times: correct, and quadratic. The
+        # cache is invalidated by hand at the twelve places that add to or
+        # remove from `done`, rather than by a length check, because a year that
+        # abandons one work and completes another leaves the length identical
+        # and the contents different.
+        seq = getattr(self, "_done_seq", None)
+        if seq is None:
+            seq = self._done_seq = [k for k in self.order if k in self.done]
+        return seq
 
     def revenue(self):
         r = 0.0
@@ -2424,6 +2450,7 @@ class Sim:
             warn = ("this is a step on the way to what you are trying to reach; "
                     "you will have to restore or rebuild it before you can go on")
         self.done.discard(k)
+        self._done_changed()
         self.mothballed.add(k)
         msg = ("%s shut down; you stop paying %.0f a year for it, and you stop "
                "getting what it gave you" % (k, self.nodes[k]["up"]))
@@ -2443,6 +2470,7 @@ class Sim:
                            + ", ".join(p for p in n["pre"] if p not in self.done))
         self.capital -= fee
         self.done.add(k)
+        self._done_changed()
         self.mothballed.discard(k)
         return True, ("%s back in service for %.0f denarii" % (k, fee))
 
@@ -2862,6 +2890,7 @@ class Sim:
                         n = self.nodes[k]
                         net += n["up"] - n["rev"]
                         self.done.discard(k)
+                        self._done_changed()
                         self.mothballed.add(k)   # you can buy it back
                         shed.append(k)
                     if shed:
@@ -2922,6 +2951,7 @@ class Sim:
                     and k not in self.done and k not in self.active
                     and all(p in self.done for p in n["pre"])):
                 self.done.add(k)
+                self._done_changed()
                 self.done_year[k] = self.year
                 # This node is granted because THE SOCIETY already has it, not
                 # because you built it. Rome having large merchant ships means
@@ -3121,6 +3151,12 @@ class Sim:
                                          % (k, ", ".join(blocked[:2]))))
                         self.active.pop(k, None)
                         self.bountied.discard(k)
+                    else:
+                        # Nothing happened here this year - say so, rather than
+                        # leaving last year's hours_offered/effective sitting on
+                        # the entry looking like they still applied.
+                        st["hours_offered_this_year"] = 0.0
+                        st["hours_effective_this_year"] = 0.0
                     continue
                 st["stalled_years"] = 0
                 per = min(remaining, max(st["ph_left"], n["ph"] / max(n["yrs"], 1.0))) * self.throttle
@@ -3391,6 +3427,7 @@ class Sim:
                     for pat in ("patron_imperial", "patron_senatorial"):
                         if pat in self.done:
                             self.done.discard(pat)
+                            self._done_changed()
                             self.log.append((yr, "PROMINENCE: your patron is destroyed in "
                                                  "someone else's quarrel and you lose %s" % pat))
                             break
@@ -3438,6 +3475,7 @@ class Sim:
                 if losable:
                     for k in self.rng.sample(losable, max(1, len(losable) // 6)):
                         self.done.discard(k)
+                        self._done_changed()
             if self.stalled >= 12:
                 self._catastrophe("the founder died without training successors; "
                                   "the school dispersed and the work was forgotten")
@@ -3461,6 +3499,7 @@ class Sim:
         del self.active[k]
         self.bountied.discard(k)
         self.done.add(k)
+        self._done_changed()
         self.done_year[k] = self.year
         # A technology changes the society that built it. Only for work YOU
         # completed: a society is not altered by owning something it always had.
@@ -3638,7 +3677,9 @@ class Sim:
                                          and k not in self.granted)
                         if losable:
                             drop = r.sample(losable, max(1, int(len(losable) * frac)))
-                            for k in drop: self.done.discard(k)
+                            for k in drop:
+                                self.done.discard(k)
+                            self._done_changed()
                             self.log.append((yr, "KNOWLEDGE LOST: %d technologies forgotten%s"
                                 % (len(drop), "" if self.has("corpus_dispersed")
                                    else " (the corpus was never printed and dispersed)")))
