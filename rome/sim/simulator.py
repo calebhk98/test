@@ -1204,8 +1204,27 @@ class Sim:
     # ("the difference between a governor executing you and Rome hearing you")
     # sitting in their available list the whole time, and called it what it was:
     # unfinished civilization gating rather than a deliberate choice.
-    FOREIGN_INSTITUTIONS = ("annona", "societas", "collegium", "argentarii",
-                            "latifundi", "citizenship")
+    # NARROW, and I made this too wide first time and broke Han China with it.
+    # Blocking anything with "collegium" in the name cut the licensed
+    # association out of the tree, and with it school_founded, endowment_land,
+    # academy_network and both patronage tiers, which is the entire
+    # institutional ladder: Han finished 156 of the 168 nodes the transistor
+    # needs and then failed for want of eighteen craftsmen it had 320 million
+    # denarii to hire. Every society has partnerships, money-lenders and
+    # licensed associations under its own names, and the Han even had a grain
+    # stabilisation office. What no other society has is Roman citizenship,
+    # because only Rome can confer it. That is the whole list.
+    # And in the end the list is empty, which is the right answer. My first
+    # version blocked six markers and cut Han China off from the whole
+    # institutional ladder. Narrowing it to Roman citizenship alone moved the
+    # wall one node back, because the licensed association requires legal
+    # standing, and a model in which only Romans can have legal standing is
+    # worse than the flavour-text problem it was fixing. `citizenship` is now
+    # what it always modelled - a status the courts will hear - and every
+    # society has one under its own name. What remains civ-specific is which
+    # institutions you are GRANTED for free, which FOREIGN_MARKERS still
+    # handles: the Han are not handed the annona.
+    FOREIGN_INSTITUTIONS = ()
 
     def _is_foreign_institution(self, k):
         if self.civ.get("id") == "rome_100ad":
@@ -3820,8 +3839,15 @@ def _agent_state(s, nodes):
                                          - getattr(s, "spend_last_year", 0.0), 1),
         "net_per_year": round(s.revenue() - s.upkeep() - s.living_cost()
                               - s.mine_operating_cost(), 1),
-        "training_pending": [{"artisan_capacity": round(c, 2), "ready_year": y}
-                             for c, y in getattr(s, "training", [])],
+        # Rows are [capacity, ready_year] for people bought and trained, and
+        # [0, ready_year, trade, count] for a trade being taught, so read by
+        # index. Unpacking two names off a four-wide row killed `state` outright
+        # the moment anybody used `train`.
+        "training_pending": [
+            {"artisan_capacity": round(row[0], 2), "ready_year": row[1],
+             "trade": (row[2] if len(row) > 2 else None),
+             "people": (row[3] if len(row) > 3 else None)}
+            for row in getattr(s, "training", [])],
         "founder_hours_available": round(s.director_pool(), 1),
         "founder_alive": s.founder_alive,
         "scholars": round(s.scholars, 2), "artisans": round(s.artisans, 2),
@@ -4032,7 +4058,21 @@ def _node_explain(s, nodes, k):
     return {
         "id": k, "name": n["name"], "tier": n["tier"], "cat": n["cat"], "confidence": n["conf"],
         "note": n["note"], "kb": n["kb"],
-        "founder_hours": n["ph"], "hired_labour": n["lab"], "materials": n["mat"],
+        "founder_hours": n["ph"],
+        # Two different kinds of people, and a tester reasonably read the two
+        # fields as contradicting each other ("hired_labour names an engineer,
+        # staff_needed asks for artisans; the two labour fields don't agree on
+        # who is actually doing the work"). They are not the same question.
+        # hired_labour is HOURS OF A JOB, bought from whoever does that trade
+        # here, for this project only. staff_needed is PEOPLE ON YOUR OWN BOOKS
+        # who understand your methods and stay afterwards.
+        "hired_labour": n["lab"],
+        "hired_labour_means": "hours of each trade this project buys in, for this "
+                              "job only. A trade that does not exist here has to "
+                              "be taught first; see the labour command.",
+        "trades_that_do_not_exist_here": sorted(t for t in n["lab"]
+                                                if not s.trade_available(t)),
+        "materials": n["mat"],
         # `why` used to quote the BASE cost, identical for every civilization,
         # while step() charged that base multiplied by this society's domain
         # factor and by how far it sits from the material's source. A Han
@@ -4055,6 +4095,12 @@ def _node_explain(s, nodes, k):
         "upkeep": n["up"], "revenue": n["rev"],
         "calendar_floor_years": n["yrs"], "risk": n["risk"],
         "staff_needed": {"scholars": n["sch"], "artisans": n["art"]},
+        "staff_needed_means": "people kept on your own staff, who understand your "
+                              "methods and are still there when this is finished. "
+                              "You are one scholar yourself; the rest are hired, "
+                              "taught or bought.",
+        "you_have": {"scholars": round(s.effective_scholars(), 1),
+                     "artisans": round(s.artisans, 1)},
         "suspicion": n.get("sus", 0), "state_interest_trait_score": n.get("gov", 0),
         "bounty_eligible_by_type": bounty_by_type,
         "direct_prerequisites": n["pre"],

@@ -15845,8 +15845,8 @@
    "kb": "03_SOCIAL_POLITICS.md#citizenship",
    "lab": {},
    "mat": {},
-   "name": "Roman citizenship by grant",
-   "note": "Gives provocatio, the right of appeal, which is the difference between a governor executing you and Rome hearing you. Buy it with a public benefaction.",
+   "name": "Legal standing: a status the courts will hear",
+   "note": "In Rome this is citizenship by grant, and what it buys is provocatio, the right of appeal, which is the difference between a governor executing you and Rome hearing you. Every society has its own version of the same thing and none of them is optional: registered household status and rank under the Han, a free man's standing at the thing in Scandinavia, a burgess of a borough in England, membership of a calpulli among the Mexica. Without it you are a body someone may dispose of. Buy it the way it is bought here, with a public benefaction and the right friends.",
    "ph": 250.0,
    "pre": [
     "patron_local"
